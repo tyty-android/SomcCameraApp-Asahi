@@ -20,7 +20,7 @@
 
 .annotation runtime Lkotlin/Metadata;
     d1 = {
-        "\u0000\\\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0010!\n\u0002\u0018\u0002\n\u0002\u0008\u0005\n\u0002\u0010\u0002\n\u0002\u0008\u0003\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000e\n\u0002\u0008\u0002\n\u0002\u0010\u0008\n\u0002\u0008\u0002\n\u0002\u0010\t\n\u0002\u0008\u0004\n\u0002\u0018\u0002\n\u0002\u0008\u0003\u0008\u0007\u0018\u00002\u000c\u0012\u0008\u0012\u00060\u0002R\u00020\u00000\u0001:\u0001%B\u001d\u0012\u0006\u0010\u0003\u001a\u00020\u0004\u0012\u0006\u0010\u0005\u001a\u00020\u0006\u0012\u0006\u0010\u0007\u001a\u00020\u0008\u00a2\u0006\u0002\u0010\tJ\u001c\u0010\u0011\u001a\u00020\u00122\n\u0010\u0013\u001a\u00060\u0002R\u00020\u00002\u0006\u0010\u0014\u001a\u00020\u000cH\u0003J$\u0010\u0015\u001a\u00020\u00162\u0008\u0010\u0017\u001a\u0004\u0018\u00010\u00182\u0008\u0010\u0019\u001a\u0004\u0018\u00010\u00182\u0006\u0010\u001a\u001a\u00020\u001bH\u0002J\u0008\u0010\u001c\u001a\u00020\u001bH\u0016J\u0010\u0010\u001d\u001a\u00020\u001e2\u0006\u0010\u001f\u001a\u00020\u001bH\u0016J\u001c\u0010 \u001a\u00020\u00122\n\u0010\u0013\u001a\u00060\u0002R\u00020\u00002\u0006\u0010\u001f\u001a\u00020\u001bH\u0017J\u001c\u0010!\u001a\u00060\u0002R\u00020\u00002\u0006\u0010\"\u001a\u00020#2\u0006\u0010$\u001a\u00020\u001bH\u0016R \u0010\n\u001a\u0008\u0012\u0004\u0012\u00020\u000c0\u000bX\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\u0008\r\u0010\u000e\"\u0004\u0008\u000f\u0010\u0010R\u000e\u0010\u0003\u001a\u00020\u0004X\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u0007\u001a\u00020\u0008X\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u0005\u001a\u00020\u0006X\u0082\u0004\u00a2\u0006\u0002\n\u0000\u00a8\u0006&"
+        "\u0000Z\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0003\n\u0002\u0010!\n\u0002\u0018\u0002\n\u0002\u0008\u0006\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0008\n\u0002\u0008\u0002\n\u0002\u0010\t\n\u0002\u0008\u0002\n\u0002\u0010\u0002\n\u0002\u0008\u0004\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000e\n\u0002\u0008\u0004\u0008\u0007\u0018\u00002\u000c\u0012\u0008\u0012\u00060\u0002R\u00020\u00000\u0001:\u0001&B\u001f\u0012\u0006\u0010\u0003\u001a\u00020\u0004\u0012\u0006\u0010\u0005\u001a\u00020\u0006\u0012\u0006\u0010\u0007\u001a\u00020\u0008\u00a2\u0006\u0004\u0008\t\u0010\nJ\u001c\u0010\u0012\u001a\u00060\u0002R\u00020\u00002\u0006\u0010\u0013\u001a\u00020\u00142\u0006\u0010\u0015\u001a\u00020\u0016H\u0016J\u0008\u0010\u0017\u001a\u00020\u0016H\u0016J\u0010\u0010\u0018\u001a\u00020\u00192\u0006\u0010\u001a\u001a\u00020\u0016H\u0016J\u001c\u0010\u001b\u001a\u00020\u001c2\n\u0010\u001d\u001a\u00060\u0002R\u00020\u00002\u0006\u0010\u001a\u001a\u00020\u0016H\u0017J\u001c\u0010\u001e\u001a\u00020\u001c2\n\u0010\u001d\u001a\u00060\u0002R\u00020\u00002\u0006\u0010\u001f\u001a\u00020\rH\u0003J$\u0010 \u001a\u00020!2\u0008\u0010\"\u001a\u0004\u0018\u00010#2\u0008\u0010$\u001a\u0004\u0018\u00010#2\u0006\u0010%\u001a\u00020\u0016H\u0002R\u000e\u0010\u0003\u001a\u00020\u0004X\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u0005\u001a\u00020\u0006X\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u0007\u001a\u00020\u0008X\u0082\u0004\u00a2\u0006\u0002\n\u0000R \u0010\u000b\u001a\u0008\u0012\u0004\u0012\u00020\r0\u000cX\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\u0008\u000e\u0010\u000f\"\u0004\u0008\u0010\u0010\u0011\u00a8\u0006\'"
     }
     d2 = {
         "Ljp/co/sony/mc/camera/rtmp/YoutubeLiveChatAdapter;",
@@ -32,6 +32,7 @@
         "Ljp/co/sony/mc/camera/view/uistate/YoutubeLiveChatUiState;",
         "messageUiState",
         "Ljp/co/sony/mc/camera/view/uistate/MessageUiState;",
+        "<init>",
         "(Landroid/content/Context;Ljp/co/sony/mc/camera/view/uistate/YoutubeLiveChatUiState;Ljp/co/sony/mc/camera/view/uistate/MessageUiState;)V",
         "chatDataList",
         "",
@@ -40,9 +41,19 @@
         "()Ljava/util/List;",
         "setChatDataList",
         "(Ljava/util/List;)V",
-        "createChat",
+        "onCreateViewHolder",
+        "parent",
+        "Landroid/view/ViewGroup;",
+        "viewType",
+        "",
+        "getItemCount",
+        "getItemId",
+        "",
+        "position",
+        "onBindViewHolder",
         "",
         "holder",
+        "createChat",
         "chatData",
         "createChatText",
         "Landroid/text/Spannable;",
@@ -50,23 +61,13 @@
         "",
         "message",
         "color",
-        "",
-        "getItemCount",
-        "getItemId",
-        "",
-        "position",
-        "onBindViewHolder",
-        "onCreateViewHolder",
-        "parent",
-        "Landroid/view/ViewGroup;",
-        "viewType",
         "ChatViewHolder",
         "SomcCamera_release"
     }
     k = 0x1
     mv = {
-        0x1,
-        0x9,
+        0x2,
+        0x0,
         0x0
     }
     xi = 0x30
@@ -183,7 +184,7 @@
 
     move-result-object v2
 
-    const v3, 0x7f060109
+    const v3, 0x7f060100
 
     if-eqz v2, :cond_9
 
@@ -193,7 +194,7 @@
 
     const-string v5, " / "
 
-    const v6, 0x7f060108
+    const v6, 0x7f0600ff
 
     sparse-switch v4, :sswitch_data_0
 
@@ -852,9 +853,9 @@
 
     move-result v2
 
-    const v3, 0x7f070231
+    const v3, 0x7f07026a
 
-    const v4, 0x7f070233
+    const v4, 0x7f07026c
 
     if-ne p2, v2, :cond_0
 
@@ -926,7 +927,7 @@
 
     move-result-object v2
 
-    const v5, 0x7f070232
+    const v5, 0x7f07026b
 
     invoke-virtual {v2, v5}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
@@ -992,7 +993,7 @@
     if-nez p2, :cond_1
 
     .line 91
-    iget-object p1, p1, Ljp/co/sony/mc/camera/rtmp/YoutubeLiveChatAdapter$ChatViewHolder;->itemView:Landroid/view/View;
+    iget-object p1, p1, Landroidx/recyclerview/widget/RecyclerView$ViewHolder;->itemView:Landroid/view/View;
 
     new-instance p2, Ljp/co/sony/mc/camera/rtmp/YoutubeLiveChatAdapter$$ExternalSyntheticLambda0;
 
@@ -1004,7 +1005,7 @@
 
     .line 103
     :cond_1
-    iget-object p0, p1, Ljp/co/sony/mc/camera/rtmp/YoutubeLiveChatAdapter$ChatViewHolder;->itemView:Landroid/view/View;
+    iget-object p0, p1, Landroidx/recyclerview/widget/RecyclerView$ViewHolder;->itemView:Landroid/view/View;
 
     const/4 p1, 0x0
 

@@ -76,7 +76,7 @@
 .method public bridge synthetic invoke(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
 
-    .line 110
+    .line 151
     check-cast p1, Landroidx/compose/ui/layout/Placeable$PlacementScope;
 
     invoke-virtual {p0, p1}, Landroidx/compose/material/MinimumInteractiveComponentSizeModifier$measure$1;->invoke(Landroidx/compose/ui/layout/Placeable$PlacementScope;)V
@@ -89,11 +89,7 @@
 .method public final invoke(Landroidx/compose/ui/layout/Placeable$PlacementScope;)V
     .locals 9
 
-    const-string v0, "$this$layout"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 111
+    .line 152
     iget v0, p0, Landroidx/compose/material/MinimumInteractiveComponentSizeModifier$measure$1;->$width:I
 
     iget-object v1, p0, Landroidx/compose/material/MinimumInteractiveComponentSizeModifier$measure$1;->$placeable:Landroidx/compose/ui/layout/Placeable;
@@ -114,7 +110,7 @@
 
     move-result v4
 
-    .line 112
+    .line 153
     iget v0, p0, Landroidx/compose/material/MinimumInteractiveComponentSizeModifier$measure$1;->$height:I
 
     iget-object v2, p0, Landroidx/compose/material/MinimumInteractiveComponentSizeModifier$measure$1;->$placeable:Landroidx/compose/ui/layout/Placeable;
@@ -133,7 +129,7 @@
 
     move-result v5
 
-    .line 113
+    .line 154
     iget-object v3, p0, Landroidx/compose/material/MinimumInteractiveComponentSizeModifier$measure$1;->$placeable:Landroidx/compose/ui/layout/Placeable;
 
     const/4 v7, 0x4

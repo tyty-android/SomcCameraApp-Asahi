@@ -66,7 +66,7 @@
 .method public final invoke()Landroidx/compose/ui/text/android/selection/WordBoundary;
     .locals 2
 
-    .line 380
+    .line 382
     new-instance v0, Landroidx/compose/ui/text/android/selection/WordBoundary;
 
     iget-object v1, p0, Landroidx/compose/ui/text/AndroidParagraph$wordBoundary$2;->this$0:Landroidx/compose/ui/text/AndroidParagraph;
@@ -93,7 +93,7 @@
 .method public bridge synthetic invoke()Ljava/lang/Object;
     .locals 0
 
-    .line 379
+    .line 381
     invoke-virtual {p0}, Landroidx/compose/ui/text/AndroidParagraph$wordBoundary$2;->invoke()Landroidx/compose/ui/text/android/selection/WordBoundary;
 
     move-result-object p0

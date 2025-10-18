@@ -48,10 +48,6 @@
 
 
 # instance fields
-.field final synthetic $$dirty:I
-
-.field final synthetic $$dirty1:I
-
 .field final synthetic $colors:Landroidx/compose/material/TextFieldColors;
 
 .field final synthetic $enabled:Z
@@ -64,7 +60,7 @@
 
 
 # direct methods
-.method constructor <init>(ZZLandroidx/compose/foundation/interaction/MutableInteractionSource;Landroidx/compose/material/TextFieldColors;Landroidx/compose/ui/graphics/Shape;II)V
+.method constructor <init>(ZZLandroidx/compose/foundation/interaction/MutableInteractionSource;Landroidx/compose/material/TextFieldColors;Landroidx/compose/ui/graphics/Shape;)V
     .locals 0
 
     iput-boolean p1, p0, Landroidx/compose/material/OutlinedTextFieldKt$OutlinedTextField$3$1;->$enabled:Z
@@ -76,10 +72,6 @@
     iput-object p4, p0, Landroidx/compose/material/OutlinedTextFieldKt$OutlinedTextField$3$1;->$colors:Landroidx/compose/material/TextFieldColors;
 
     iput-object p5, p0, Landroidx/compose/material/OutlinedTextFieldKt$OutlinedTextField$3$1;->$shape:Landroidx/compose/ui/graphics/Shape;
-
-    iput p6, p0, Landroidx/compose/material/OutlinedTextFieldKt$OutlinedTextField$3$1;->$$dirty:I
-
-    iput p7, p0, Landroidx/compose/material/OutlinedTextFieldKt$OutlinedTextField$3$1;->$$dirty1:I
 
     const/4 p1, 0x2
 
@@ -93,7 +85,7 @@
 .method public bridge synthetic invoke(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
 
-    .line 205
+    .line 208
     check-cast p1, Landroidx/compose/runtime/Composer;
 
     check-cast p2, Ljava/lang/Number;
@@ -116,7 +108,7 @@
 
     move/from16 v1, p2
 
-    const-string v2, "C205@10637L203:OutlinedTextField.kt#jmzs0o"
+    const-string v2, "C208@10811L203:OutlinedTextField.kt#jmzs0o"
 
     move-object v11, p1
 
@@ -128,7 +120,7 @@
 
     if-ne v2, v3, :cond_1
 
-    .line 206
+    .line 209
     invoke-interface {p1}, Landroidx/compose/runtime/Composer;->getSkipping()Z
 
     move-result v2
@@ -137,13 +129,13 @@
 
     goto :goto_0
 
-    .line 212
+    .line 215
     :cond_0
     invoke-interface {p1}, Landroidx/compose/runtime/Composer;->skipToGroupEnd()V
 
     goto :goto_1
 
-    .line 206
+    .line 209
     :cond_1
     :goto_0
     invoke-static {}, Landroidx/compose/runtime/ComposerKt;->isTraceInProgress()Z
@@ -154,7 +146,7 @@
 
     const/4 v2, -0x1
 
-    const-string v3, "androidx.compose.material.OutlinedTextField.<anonymous>.<anonymous> (OutlinedTextField.kt:204)"
+    const-string v3, "androidx.compose.material.OutlinedTextField.<anonymous>.<anonymous> (OutlinedTextField.kt:208)"
 
     const v4, -0x6cb5a3d1
 
@@ -163,62 +155,26 @@
     :cond_2
     sget-object v3, Landroidx/compose/material/TextFieldDefaults;->INSTANCE:Landroidx/compose/material/TextFieldDefaults;
 
-    .line 207
+    .line 210
     iget-boolean v4, v0, Landroidx/compose/material/OutlinedTextFieldKt$OutlinedTextField$3$1;->$enabled:Z
 
-    .line 208
+    .line 211
     iget-boolean v5, v0, Landroidx/compose/material/OutlinedTextFieldKt$OutlinedTextField$3$1;->$isError:Z
 
-    .line 209
+    .line 212
     iget-object v1, v0, Landroidx/compose/material/OutlinedTextFieldKt$OutlinedTextField$3$1;->$interactionSource:Landroidx/compose/foundation/interaction/MutableInteractionSource;
 
     move-object v6, v1
 
     check-cast v6, Landroidx/compose/foundation/interaction/InteractionSource;
 
-    .line 210
+    .line 213
     iget-object v7, v0, Landroidx/compose/material/OutlinedTextFieldKt$OutlinedTextField$3$1;->$colors:Landroidx/compose/material/TextFieldColors;
 
-    .line 211
+    .line 214
     iget-object v8, v0, Landroidx/compose/material/OutlinedTextFieldKt$OutlinedTextField$3$1;->$shape:Landroidx/compose/ui/graphics/Shape;
 
-    iget v1, v0, Landroidx/compose/material/OutlinedTextFieldKt$OutlinedTextField$3$1;->$$dirty:I
-
-    shr-int/lit8 v1, v1, 0x9
-
-    and-int/lit8 v1, v1, 0xe
-
-    const/high16 v2, 0xc00000
-
-    or-int/2addr v1, v2
-
-    iget v0, v0, Landroidx/compose/material/OutlinedTextFieldKt$OutlinedTextField$3$1;->$$dirty1:I
-
-    shl-int/lit8 v2, v0, 0x3
-
-    and-int/lit8 v2, v2, 0x70
-
-    or-int/2addr v1, v2
-
-    shr-int/lit8 v2, v0, 0xf
-
-    and-int/lit16 v2, v2, 0x380
-
-    or-int/2addr v1, v2
-
-    shr-int/lit8 v2, v0, 0x12
-
-    and-int/lit16 v2, v2, 0x1c00
-
-    or-int/2addr v1, v2
-
-    shr-int/lit8 v0, v0, 0xc
-
-    const v2, 0xe000
-
-    and-int/2addr v0, v2
-
-    or-int v12, v1, v0
+    const/high16 v12, 0xc00000
 
     const/16 v13, 0x60
 
@@ -228,7 +184,7 @@
 
     move-object v11, p1
 
-    .line 206
+    .line 209
     invoke-virtual/range {v3 .. v13}, Landroidx/compose/material/TextFieldDefaults;->BorderBox-nbWgWpA(ZZLandroidx/compose/foundation/interaction/InteractionSource;Landroidx/compose/material/TextFieldColors;Landroidx/compose/ui/graphics/Shape;FFLandroidx/compose/runtime/Composer;II)V
 
     invoke-static {}, Landroidx/compose/runtime/ComposerKt;->isTraceInProgress()Z

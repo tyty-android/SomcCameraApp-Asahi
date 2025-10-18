@@ -367,18 +367,22 @@
 .end method
 
 .method notifyStoreResult(Ljp/co/sony/mc/camera/mediasaving/StoreDataResult;)V
-    .locals 3
+    .locals 5
 
     .line 150
     sget-boolean v0, Ljp/co/sony/mc/camera/util/CamLog;->VERBOSE:Z
 
+    const/4 v1, 0x0
+
+    const/4 v2, 0x1
+
     if-eqz v0, :cond_0
 
-    const-string v0, "notifyStoreResult E"
+    new-array v0, v2, [Ljava/lang/String;
 
-    filled-new-array {v0}, [Ljava/lang/String;
+    const-string v3, "notifyStoreResult E"
 
-    move-result-object v0
+    aput-object v3, v0, v1
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
@@ -395,28 +399,28 @@
     :goto_0
     invoke-interface {v0}, Ljava/util/Iterator;->hasNext()Z
 
-    move-result v1
+    move-result v3
 
-    if-eqz v1, :cond_4
+    if-eqz v3, :cond_4
 
     invoke-interface {v0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
-    move-result-object v1
+    move-result-object v3
 
-    check-cast v1, Ljp/co/sony/mc/camera/storage/Storage$OnStoreCompletedListener;
+    check-cast v3, Ljp/co/sony/mc/camera/storage/Storage$OnStoreCompletedListener;
 
-    if-nez v1, :cond_2
+    if-nez v3, :cond_2
 
     .line 153
     sget-boolean p0, Ljp/co/sony/mc/camera/util/CamLog;->VERBOSE:Z
 
     if-eqz p0, :cond_1
 
-    const-string p0, "notifyStoreResult X - 1"
+    new-array p0, v2, [Ljava/lang/String;
 
-    filled-new-array {p0}, [Ljava/lang/String;
+    const-string p1, "notifyStoreResult X - 1"
 
-    move-result-object p0
+    aput-object p1, p0, v1
 
     invoke-static {p0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
@@ -427,18 +431,18 @@
     :cond_2
     invoke-virtual {p1}, Ljp/co/sony/mc/camera/mediasaving/StoreDataResult;->isSuccess()Z
 
-    move-result v2
+    move-result v4
 
-    if-eqz v2, :cond_3
+    if-eqz v4, :cond_3
 
     .line 157
-    invoke-interface {v1, p0, p1}, Ljp/co/sony/mc/camera/storage/Storage$OnStoreCompletedListener;->onStoreCompleted(Ljp/co/sony/mc/camera/storage/SavingRequest;Ljp/co/sony/mc/camera/mediasaving/StoreDataResult;)V
+    invoke-interface {v3, p0, p1}, Ljp/co/sony/mc/camera/storage/Storage$OnStoreCompletedListener;->onStoreCompleted(Ljp/co/sony/mc/camera/storage/SavingRequest;Ljp/co/sony/mc/camera/mediasaving/StoreDataResult;)V
 
     goto :goto_0
 
     .line 159
     :cond_3
-    invoke-interface {v1, p0, p1}, Ljp/co/sony/mc/camera/storage/Storage$OnStoreCompletedListener;->onStoreFailed(Ljp/co/sony/mc/camera/storage/SavingRequest;Ljp/co/sony/mc/camera/mediasaving/StoreDataResult;)V
+    invoke-interface {v3, p0, p1}, Ljp/co/sony/mc/camera/storage/Storage$OnStoreCompletedListener;->onStoreFailed(Ljp/co/sony/mc/camera/storage/SavingRequest;Ljp/co/sony/mc/camera/mediasaving/StoreDataResult;)V
 
     goto :goto_0
 

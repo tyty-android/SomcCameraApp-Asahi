@@ -18,22 +18,25 @@
 
 .annotation system Ldalvik/annotation/Signature;
     value = {
+        "<T:",
         "Ljava/lang/Object;",
-        "Lkotlinx/coroutines/flow/FlowCollector<",
-        "Landroidx/compose/foundation/interaction/Interaction;",
-        ">;"
+        ">",
+        "Ljava/lang/Object;",
+        "Lkotlinx/coroutines/flow/FlowCollector;"
     }
 .end annotation
 
 .annotation runtime Lkotlin/Metadata;
     d1 = {
-        "\u0000\u000c\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\u0010\u0000\u001a\u00020\u00012\u0006\u0010\u0002\u001a\u00020\u0003H\u008a@"
+        "\u0000\u0010\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0002\u0010\u0000\u001a\u00020\u00012\u0006\u0010\u0002\u001a\u00020\u0003H\u008a@\u00a2\u0006\u0004\u0008\u0004\u0010\u0005"
     }
     d2 = {
         "<anonymous>",
         "",
         "interaction",
-        "Landroidx/compose/foundation/interaction/Interaction;"
+        "Landroidx/compose/foundation/interaction/Interaction;",
+        "emit",
+        "(Landroidx/compose/foundation/interaction/Interaction;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;"
     }
     k = 0x3
     mv = {
@@ -92,7 +95,7 @@
         }
     .end annotation
 
-    .line 225
+    .line 226
     instance-of p2, p1, Landroidx/compose/foundation/interaction/PressInteraction$Press;
 
     if-eqz p2, :cond_0
@@ -103,7 +106,7 @@
 
     goto :goto_0
 
-    .line 226
+    .line 227
     :cond_0
     instance-of p2, p1, Landroidx/compose/foundation/interaction/PressInteraction$Release;
 
@@ -121,7 +124,7 @@
 
     goto :goto_0
 
-    .line 227
+    .line 228
     :cond_1
     instance-of p2, p1, Landroidx/compose/foundation/interaction/PressInteraction$Cancel;
 
@@ -139,7 +142,7 @@
 
     goto :goto_0
 
-    .line 228
+    .line 229
     :cond_2
     instance-of p2, p1, Landroidx/compose/foundation/interaction/DragInteraction$Start;
 
@@ -151,7 +154,7 @@
 
     goto :goto_0
 
-    .line 229
+    .line 230
     :cond_3
     instance-of p2, p1, Landroidx/compose/foundation/interaction/DragInteraction$Stop;
 
@@ -169,7 +172,7 @@
 
     goto :goto_0
 
-    .line 230
+    .line 231
     :cond_4
     instance-of p2, p1, Landroidx/compose/foundation/interaction/DragInteraction$Cancel;
 
@@ -185,7 +188,7 @@
 
     invoke-virtual {p0, p1}, Landroidx/compose/runtime/snapshots/SnapshotStateList;->remove(Ljava/lang/Object;)Z
 
-    .line 232
+    .line 233
     :cond_5
     :goto_0
     sget-object p0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
@@ -196,7 +199,7 @@
 .method public bridge synthetic emit(Ljava/lang/Object;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
     .locals 0
 
-    .line 223
+    .line 224
     check-cast p1, Landroidx/compose/foundation/interaction/Interaction;
 
     invoke-virtual {p0, p1, p2}, Landroidx/compose/material/SwitchKt$SwitchImpl$1$1$1;->emit(Landroidx/compose/foundation/interaction/Interaction;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;

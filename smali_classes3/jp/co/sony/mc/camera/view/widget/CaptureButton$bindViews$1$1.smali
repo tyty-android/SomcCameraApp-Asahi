@@ -27,21 +27,10 @@
 .end annotation
 
 .annotation runtime Lkotlin/Metadata;
-    d1 = {
-        "\u0000\u0010\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0002\u0010\u0000\u001a\u00020\u00012\u0006\u0010\u0002\u001a\u00020\u0003H\u008a@\u00a2\u0006\u0004\u0008\u0004\u0010\u0005"
-    }
-    d2 = {
-        "<anonymous>",
-        "",
-        "state",
-        "Ljp/co/sony/mc/camera/view/widget/CaptureButton$ButtonState;",
-        "emit",
-        "(Ljp/co/sony/mc/camera/view/widget/CaptureButton$ButtonState;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;"
-    }
     k = 0x3
     mv = {
-        0x1,
-        0x9,
+        0x2,
+        0x0,
         0x0
     }
     xi = 0x30
@@ -95,44 +84,24 @@
     .line 288
     instance-of p2, p1, Ljp/co/sony/mc/camera/view/widget/CaptureButton$ButtonState$RequestStartRecording;
 
+    if-nez p2, :cond_3
+
+    instance-of p2, p1, Ljp/co/sony/mc/camera/view/widget/CaptureButton$ButtonState$RequestStopRecording;
+
+    if-nez p2, :cond_3
+
+    .line 289
+    instance-of p2, p1, Ljp/co/sony/mc/camera/view/widget/CaptureButton$ButtonState$RecordingStopping;
+
     if-eqz p2, :cond_0
 
     goto :goto_0
 
-    :cond_0
-    instance-of p2, p1, Ljp/co/sony/mc/camera/view/widget/CaptureButton$ButtonState$RequestStopRecording;
-
-    if-eqz p2, :cond_1
-
-    goto :goto_0
-
-    .line 289
-    :cond_1
-    instance-of p2, p1, Ljp/co/sony/mc/camera/view/widget/CaptureButton$ButtonState$RecordingStopping;
-
-    if-eqz p2, :cond_2
-
-    .line 290
-    :goto_0
-    iget-object p0, p0, Ljp/co/sony/mc/camera/view/widget/CaptureButton$bindViews$1$1;->this$0:Ljp/co/sony/mc/camera/view/widget/CaptureButton;
-
-    invoke-static {p0}, Ljp/co/sony/mc/camera/view/widget/CaptureButton;->access$getBinding$p(Ljp/co/sony/mc/camera/view/widget/CaptureButton;)Ljp/co/sony/mc/camera/databinding/CaptureButtonLayoutBinding;
-
-    move-result-object p0
-
-    iget-object p0, p0, Ljp/co/sony/mc/camera/databinding/CaptureButtonLayoutBinding;->baseButton:Landroid/widget/ImageView;
-
-    const p1, 0x7f08034c
-
-    invoke-virtual {p0, p1}, Landroid/widget/ImageView;->setImageResource(I)V
-
-    goto :goto_1
-
     .line 295
-    :cond_2
+    :cond_0
     instance-of p2, p1, Ljp/co/sony/mc/camera/view/widget/CaptureButton$ButtonState$RecordingLocked;
 
-    if-eqz p2, :cond_3
+    if-eqz p2, :cond_1
 
     .line 296
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/widget/CaptureButton$bindViews$1$1;->this$0:Ljp/co/sony/mc/camera/view/widget/CaptureButton;
@@ -143,17 +112,17 @@
 
     iget-object p0, p0, Ljp/co/sony/mc/camera/databinding/CaptureButtonLayoutBinding;->baseButton:Landroid/widget/ImageView;
 
-    const p1, 0x7f08034e
+    const p1, 0x7f08036c
 
     invoke-virtual {p0, p1}, Landroid/widget/ImageView;->setImageResource(I)V
 
     goto :goto_1
 
     .line 301
-    :cond_3
+    :cond_1
     instance-of p1, p1, Ljp/co/sony/mc/camera/view/widget/CaptureButton$ButtonState$RecordingWithFingerHold;
 
-    if-eqz p1, :cond_4
+    if-eqz p1, :cond_2
 
     .line 302
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/widget/CaptureButton$bindViews$1$1;->this$0:Ljp/co/sony/mc/camera/view/widget/CaptureButton;
@@ -164,14 +133,14 @@
 
     iget-object p0, p0, Ljp/co/sony/mc/camera/databinding/CaptureButtonLayoutBinding;->baseButton:Landroid/widget/ImageView;
 
-    const p1, 0x7f0802d6
+    const p1, 0x7f0802ec
 
     invoke-virtual {p0, p1}, Landroid/widget/ImageView;->setImageResource(I)V
 
     goto :goto_1
 
     .line 308
-    :cond_4
+    :cond_2
     iget-object p1, p0, Ljp/co/sony/mc/camera/view/widget/CaptureButton$bindViews$1$1;->this$0:Ljp/co/sony/mc/camera/view/widget/CaptureButton;
 
     invoke-static {p1}, Ljp/co/sony/mc/camera/view/widget/CaptureButton;->access$getBinding$p(Ljp/co/sony/mc/camera/view/widget/CaptureButton;)Ljp/co/sony/mc/camera/databinding/CaptureButtonLayoutBinding;
@@ -187,6 +156,23 @@
     move-result p0
 
     invoke-virtual {p1, p0}, Landroid/widget/ImageView;->setImageResource(I)V
+
+    goto :goto_1
+
+    .line 290
+    :cond_3
+    :goto_0
+    iget-object p0, p0, Ljp/co/sony/mc/camera/view/widget/CaptureButton$bindViews$1$1;->this$0:Ljp/co/sony/mc/camera/view/widget/CaptureButton;
+
+    invoke-static {p0}, Ljp/co/sony/mc/camera/view/widget/CaptureButton;->access$getBinding$p(Ljp/co/sony/mc/camera/view/widget/CaptureButton;)Ljp/co/sony/mc/camera/databinding/CaptureButtonLayoutBinding;
+
+    move-result-object p0
+
+    iget-object p0, p0, Ljp/co/sony/mc/camera/databinding/CaptureButtonLayoutBinding;->baseButton:Landroid/widget/ImageView;
+
+    const p1, 0x7f08036a
+
+    invoke-virtual {p0, p1}, Landroid/widget/ImageView;->setImageResource(I)V
 
     .line 311
     :goto_1

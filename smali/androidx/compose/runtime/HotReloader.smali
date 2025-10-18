@@ -1,6 +1,6 @@
 .class final Landroidx/compose/runtime/HotReloader;
 .super Ljava/lang/Object;
-.source "Composition.kt"
+.source "HotReloader.kt"
 
 
 # annotations
@@ -53,7 +53,7 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 1191
+    .line 28
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void

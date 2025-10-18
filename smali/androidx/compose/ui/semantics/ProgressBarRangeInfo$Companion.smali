@@ -41,7 +41,7 @@
 .method private constructor <init>()V
     .locals 0
 
-    .line 522
+    .line 611
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -60,7 +60,7 @@
 .method public final getIndeterminate()Landroidx/compose/ui/semantics/ProgressBarRangeInfo;
     .locals 0
 
-    .line 526
+    .line 615
     invoke-static {}, Landroidx/compose/ui/semantics/ProgressBarRangeInfo;->access$getIndeterminate$cp()Landroidx/compose/ui/semantics/ProgressBarRangeInfo;
 
     move-result-object p0

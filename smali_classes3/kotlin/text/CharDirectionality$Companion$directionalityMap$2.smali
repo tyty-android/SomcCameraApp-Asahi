@@ -29,7 +29,7 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/SourceDebugExtension;
-    value = "SMAP\nCharDirectionality.kt\nKotlin\n*S Kotlin\n*F\n+ 1 CharDirectionality.kt\nkotlin/text/CharDirectionality$Companion$directionalityMap$2\n+ 2 _Arrays.kt\nkotlin/collections/ArraysKt___ArraysKt\n*L\n1#1,123:1\n8541#2,2:124\n8801#2,4:126\n*S KotlinDebug\n*F\n+ 1 CharDirectionality.kt\nkotlin/text/CharDirectionality$Companion$directionalityMap$2\n*L\n118#1:124,2\n118#1:126,4\n*E\n"
+    value = "SMAP\nCharDirectionality.kt\nKotlin\n*S Kotlin\n*F\n+ 1 CharDirectionality.kt\nkotlin/text/CharDirectionality$Companion$directionalityMap$2\n+ 2 _Collections.kt\nkotlin/collections/CollectionsKt___CollectionsKt\n*L\n1#1,124:1\n1202#2,2:125\n1230#2,4:127\n*S KotlinDebug\n*F\n+ 1 CharDirectionality.kt\nkotlin/text/CharDirectionality$Companion$directionalityMap$2\n*L\n118#1:125,2\n118#1:127,4\n*E\n"
 .end annotation
 
 .annotation runtime Lkotlin/Metadata;
@@ -94,7 +94,7 @@
 .end method
 
 .method public final invoke()Ljava/util/Map;
-    .locals 5
+    .locals 3
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()",
@@ -106,12 +106,18 @@
     .end annotation
 
     .line 118
-    invoke-static {}, Lkotlin/text/CharDirectionality;->values()[Lkotlin/text/CharDirectionality;
+    invoke-static {}, Lkotlin/text/CharDirectionality;->getEntries()Lkotlin/enums/EnumEntries;
 
     move-result-object p0
 
-    .line 124
-    array-length v0, p0
+    check-cast p0, Ljava/lang/Iterable;
+
+    const/16 v0, 0xa
+
+    .line 125
+    invoke-static {p0, v0}, Lkotlin/collections/CollectionsKt;->collectionSizeOrDefault(Ljava/lang/Iterable;I)I
+
+    move-result v0
 
     invoke-static {v0}, Lkotlin/collections/MapsKt;->mapCapacity(I)I
 
@@ -123,36 +129,45 @@
 
     move-result v0
 
-    .line 125
+    .line 126
     new-instance v1, Ljava/util/LinkedHashMap;
 
     invoke-direct {v1, v0}, Ljava/util/LinkedHashMap;-><init>(I)V
 
     check-cast v1, Ljava/util/Map;
 
-    .line 126
-    array-length v0, p0
+    .line 127
+    invoke-interface {p0}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
 
-    const/4 v2, 0x0
+    move-result-object p0
 
     :goto_0
-    if-ge v2, v0, :cond_0
+    invoke-interface {p0}, Ljava/util/Iterator;->hasNext()Z
 
-    aget-object v3, p0, v2
+    move-result v0
+
+    if-eqz v0, :cond_0
+
+    invoke-interface {p0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+
+    move-result-object v0
+
+    .line 128
+    move-object v2, v0
+
+    check-cast v2, Lkotlin/text/CharDirectionality;
 
     .line 118
-    invoke-virtual {v3}, Lkotlin/text/CharDirectionality;->getValue()I
+    invoke-virtual {v2}, Lkotlin/text/CharDirectionality;->getValue()I
 
-    move-result v4
+    move-result v2
 
-    invoke-static {v4}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+    invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
-    move-result-object v4
+    move-result-object v2
 
-    .line 127
-    invoke-interface {v1, v4, v3}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
-
-    add-int/lit8 v2, v2, 0x1
+    .line 128
+    invoke-interface {v1, v2, v0}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     goto :goto_0
 

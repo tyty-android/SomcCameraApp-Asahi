@@ -44,6 +44,10 @@
 .end annotation
 
 
+# static fields
+.field public static final $stable:I = 0x8
+
+
 # instance fields
 .field private final endIndex:I
 
@@ -53,23 +57,25 @@
 
 
 # direct methods
+.method static constructor <clinit>()V
+    .locals 0
+
+    return-void
+.end method
+
 .method public constructor <init>(Landroidx/compose/ui/text/ParagraphIntrinsics;II)V
-    .locals 1
-
-    const-string v0, "intrinsics"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 148
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    .locals 0
 
     .line 149
-    iput-object p1, p0, Landroidx/compose/ui/text/ParagraphIntrinsicInfo;->intrinsics:Landroidx/compose/ui/text/ParagraphIntrinsics;
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 150
-    iput p2, p0, Landroidx/compose/ui/text/ParagraphIntrinsicInfo;->startIndex:I
+    iput-object p1, p0, Landroidx/compose/ui/text/ParagraphIntrinsicInfo;->intrinsics:Landroidx/compose/ui/text/ParagraphIntrinsics;
 
     .line 151
+    iput p2, p0, Landroidx/compose/ui/text/ParagraphIntrinsicInfo;->startIndex:I
+
+    .line 152
     iput p3, p0, Landroidx/compose/ui/text/ParagraphIntrinsicInfo;->endIndex:I
 
     return-void
@@ -134,10 +140,6 @@
 
 .method public final copy(Landroidx/compose/ui/text/ParagraphIntrinsics;II)Landroidx/compose/ui/text/ParagraphIntrinsicInfo;
     .locals 0
-
-    const-string p0, "intrinsics"
-
-    invoke-static {p1, p0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
     new-instance p0, Landroidx/compose/ui/text/ParagraphIntrinsicInfo;
 
@@ -204,7 +206,7 @@
 .method public final getEndIndex()I
     .locals 0
 
-    .line 151
+    .line 152
     iget p0, p0, Landroidx/compose/ui/text/ParagraphIntrinsicInfo;->endIndex:I
 
     return p0
@@ -213,7 +215,7 @@
 .method public final getIntrinsics()Landroidx/compose/ui/text/ParagraphIntrinsics;
     .locals 0
 
-    .line 149
+    .line 150
     iget-object p0, p0, Landroidx/compose/ui/text/ParagraphIntrinsicInfo;->intrinsics:Landroidx/compose/ui/text/ParagraphIntrinsics;
 
     return-object p0
@@ -222,7 +224,7 @@
 .method public final getStartIndex()I
     .locals 0
 
-    .line 150
+    .line 151
     iget p0, p0, Landroidx/compose/ui/text/ParagraphIntrinsicInfo;->startIndex:I
 
     return p0

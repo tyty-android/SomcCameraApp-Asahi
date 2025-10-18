@@ -161,7 +161,7 @@
 .method private static synthetic $values()[Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;
     .locals 52
 
-    .line 23
+    .line 24
     sget-object v0, Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;->AUTO:Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;
 
     sget-object v1, Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;->N30:Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;
@@ -274,12 +274,12 @@
 .end method
 
 .method static constructor <clinit>()V
-    .locals 19
+    .locals 35
 
-    .line 24
+    .line 25
     new-instance v9, Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;
 
-    .line 30
+    .line 31
     invoke-static {}, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->values()[Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
     move-result-object v0
@@ -294,7 +294,7 @@
 
     const/4 v3, -0x1
 
-    const v4, 0x7f110437
+    const v4, 0x7f11046c
 
     const-string v5, "auto"
 
@@ -308,19 +308,27 @@
 
     sput-object v9, Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;->AUTO:Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;
 
-    .line 31
+    .line 32
     new-instance v0, Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;
 
-    sget-object v1, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->PHOTO_PRO_S:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
+    const/4 v1, 0x2
 
-    sget-object v2, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->PHOTO_PRO_M:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
+    new-array v2, v1, [Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
-    filled-new-array {v1, v2}, [Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
+    sget-object v3, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->PHOTO_PRO_S:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
-    move-result-object v1
+    const/4 v4, 0x0
 
-    .line 37
-    invoke-static {v1}, Ljava/util/Arrays;->asList([Ljava/lang/Object;)Ljava/util/List;
+    aput-object v3, v2, v4
+
+    sget-object v3, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->PHOTO_PRO_M:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
+
+    const/4 v5, 0x1
+
+    aput-object v3, v2, v5
+
+    .line 38
+    invoke-static {v2}, Ljava/util/Arrays;->asList([Ljava/lang/Object;)Ljava/util/List;
 
     move-result-object v18
 
@@ -330,7 +338,7 @@
 
     const/4 v13, -0x1
 
-    const v14, 0x7f1103d2
+    const v14, 0x7f110407
 
     const-string/jumbo v15, "shutter-prio"
 
@@ -344,1857 +352,2171 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;->N30:Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;
 
-    .line 38
+    .line 39
     new-instance v0, Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;
 
-    sget-object v1, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->PHOTO_PRO_S:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
+    new-array v2, v1, [Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
-    sget-object v2, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->PHOTO_PRO_M:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
+    sget-object v3, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->PHOTO_PRO_S:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
-    filled-new-array {v1, v2}, [Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
+    aput-object v3, v2, v4
 
-    move-result-object v1
+    sget-object v3, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->PHOTO_PRO_M:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
-    .line 44
-    invoke-static {v1}, Ljava/util/Arrays;->asList([Ljava/lang/Object;)Ljava/util/List;
+    aput-object v3, v2, v5
 
-    move-result-object v9
+    .line 45
+    invoke-static {v2}, Ljava/util/Arrays;->asList([Ljava/lang/Object;)Ljava/util/List;
 
-    const-string v2, "N15"
+    move-result-object v27
 
-    const/4 v3, 0x2
+    const-string v20, "N15"
 
-    const/4 v4, -0x1
+    const/16 v21, 0x2
 
-    const v5, 0x7f1103ca
+    const/16 v22, -0x1
 
-    const-string/jumbo v6, "shutter-prio"
+    const v23, 0x7f1103ff
 
-    const/16 v7, 0xf
+    const-string/jumbo v24, "shutter-prio"
 
-    const/4 v8, 0x1
+    const/16 v25, 0xf
 
-    move-object v1, v0
+    const/16 v26, 0x1
 
-    invoke-direct/range {v1 .. v9}, Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;-><init>(Ljava/lang/String;IIILjava/lang/String;IILjava/util/List;)V
+    move-object/from16 v19, v0
+
+    invoke-direct/range {v19 .. v27}, Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;-><init>(Ljava/lang/String;IIILjava/lang/String;IILjava/util/List;)V
 
     sput-object v0, Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;->N15:Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;
 
-    .line 45
+    .line 46
     new-instance v0, Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;
 
-    sget-object v1, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->PHOTO_PRO_S:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
+    new-array v2, v1, [Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
-    sget-object v2, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->PHOTO_PRO_M:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
+    sget-object v3, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->PHOTO_PRO_S:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
-    filled-new-array {v1, v2}, [Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
+    aput-object v3, v2, v4
 
-    move-result-object v1
+    sget-object v3, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->PHOTO_PRO_M:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
-    .line 51
-    invoke-static {v1}, Ljava/util/Arrays;->asList([Ljava/lang/Object;)Ljava/util/List;
+    aput-object v3, v2, v5
 
-    move-result-object v18
+    .line 52
+    invoke-static {v2}, Ljava/util/Arrays;->asList([Ljava/lang/Object;)Ljava/util/List;
 
-    const-string v11, "N8"
+    move-result-object v14
 
-    const/4 v12, 0x3
+    const-string v7, "N8"
 
-    const v14, 0x7f1103d7
+    const/4 v8, 0x3
 
-    const-string/jumbo v15, "shutter-prio"
+    const/4 v9, -0x1
 
-    const/16 v16, 0x8
+    const v10, 0x7f11040c
 
-    move-object v10, v0
+    const-string/jumbo v11, "shutter-prio"
 
-    invoke-direct/range {v10 .. v18}, Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;-><init>(Ljava/lang/String;IIILjava/lang/String;IILjava/util/List;)V
+    const/16 v12, 0x8
+
+    const/4 v13, 0x1
+
+    move-object v6, v0
+
+    invoke-direct/range {v6 .. v14}, Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;-><init>(Ljava/lang/String;IIILjava/lang/String;IILjava/util/List;)V
 
     sput-object v0, Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;->N8:Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;
 
-    .line 52
+    .line 53
     new-instance v0, Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;
 
-    sget-object v1, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->PHOTO_PRO_S:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
+    new-array v2, v1, [Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
-    sget-object v2, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->PHOTO_PRO_M:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
+    sget-object v3, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->PHOTO_PRO_S:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
-    filled-new-array {v1, v2}, [Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
+    aput-object v3, v2, v4
 
-    move-result-object v1
+    sget-object v3, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->PHOTO_PRO_M:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
-    .line 58
-    invoke-static {v1}, Ljava/util/Arrays;->asList([Ljava/lang/Object;)Ljava/util/List;
+    aput-object v3, v2, v5
 
-    move-result-object v9
+    .line 59
+    invoke-static {v2}, Ljava/util/Arrays;->asList([Ljava/lang/Object;)Ljava/util/List;
 
-    const-string v2, "N4"
+    move-result-object v23
 
-    const/4 v3, 0x4
+    const-string v16, "N4"
 
-    const v5, 0x7f1103d4
+    const/16 v17, 0x4
 
-    const-string/jumbo v6, "shutter-prio"
+    const/16 v18, -0x1
 
-    const/4 v7, 0x4
+    const v19, 0x7f110409
 
-    move-object v1, v0
+    const-string/jumbo v20, "shutter-prio"
 
-    invoke-direct/range {v1 .. v9}, Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;-><init>(Ljava/lang/String;IIILjava/lang/String;IILjava/util/List;)V
+    const/16 v21, 0x4
+
+    const/16 v22, 0x1
+
+    move-object v15, v0
+
+    invoke-direct/range {v15 .. v23}, Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;-><init>(Ljava/lang/String;IIILjava/lang/String;IILjava/util/List;)V
 
     sput-object v0, Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;->N4:Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;
 
-    .line 59
+    .line 60
     new-instance v0, Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;
 
-    sget-object v1, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->PHOTO_PRO_S:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
+    new-array v2, v1, [Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
-    sget-object v2, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->PHOTO_PRO_M:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
+    sget-object v3, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->PHOTO_PRO_S:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
-    filled-new-array {v1, v2}, [Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
+    aput-object v3, v2, v4
 
-    move-result-object v1
+    sget-object v3, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->PHOTO_PRO_M:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
-    .line 65
-    invoke-static {v1}, Ljava/util/Arrays;->asList([Ljava/lang/Object;)Ljava/util/List;
-
-    move-result-object v18
-
-    const-string v11, "N2"
-
-    const/4 v12, 0x5
-
-    const v14, 0x7f1103d1
-
-    const-string/jumbo v15, "shutter-prio"
-
-    const/16 v16, 0x2
-
-    move-object v10, v0
-
-    invoke-direct/range {v10 .. v18}, Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;-><init>(Ljava/lang/String;IIILjava/lang/String;IILjava/util/List;)V
-
-    sput-object v0, Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;->N2:Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;
+    aput-object v3, v2, v5
 
     .line 66
-    new-instance v0, Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;
+    invoke-static {v2}, Ljava/util/Arrays;->asList([Ljava/lang/Object;)Ljava/util/List;
 
-    sget-object v1, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->PHOTO_PRO_S:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
+    move-result-object v14
 
-    sget-object v2, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->PHOTO_PRO_M:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
-
-    filled-new-array {v1, v2}, [Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
-
-    move-result-object v1
-
-    .line 72
-    invoke-static {v1}, Ljava/util/Arrays;->asList([Ljava/lang/Object;)Ljava/util/List;
-
-    move-result-object v9
-
-    const-string v2, "D1"
-
-    const/4 v3, 0x6
-
-    const v5, 0x7f1103cd
-
-    const-string/jumbo v6, "shutter-prio"
-
-    const/4 v7, 0x1
-
-    move-object v1, v0
-
-    invoke-direct/range {v1 .. v9}, Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;-><init>(Ljava/lang/String;IIILjava/lang/String;IILjava/util/List;)V
-
-    sput-object v0, Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;->D1:Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;
-
-    .line 73
-    new-instance v0, Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;
-
-    sget-object v1, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->PHOTO_PRO_S:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
-
-    sget-object v2, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->PHOTO_PRO_M:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
-
-    filled-new-array {v1, v2}, [Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
-
-    move-result-object v1
-
-    .line 79
-    invoke-static {v1}, Ljava/util/Arrays;->asList([Ljava/lang/Object;)Ljava/util/List;
-
-    move-result-object v18
-
-    const-string v11, "D1_25"
-
-    const/4 v12, 0x7
-
-    const v14, 0x7f1103c7
-
-    const-string/jumbo v15, "shutter-prio"
-
-    const/16 v16, 0x4
-
-    const/16 v17, 0x5
-
-    move-object v10, v0
-
-    invoke-direct/range {v10 .. v18}, Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;-><init>(Ljava/lang/String;IIILjava/lang/String;IILjava/util/List;)V
-
-    sput-object v0, Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;->D1_25:Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;
-
-    .line 80
-    new-instance v0, Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;
-
-    sget-object v1, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->PHOTO_PRO_S:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
-
-    sget-object v2, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->PHOTO_PRO_M:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
-
-    filled-new-array {v1, v2}, [Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
-
-    move-result-object v1
-
-    .line 86
-    invoke-static {v1}, Ljava/util/Arrays;->asList([Ljava/lang/Object;)Ljava/util/List;
-
-    move-result-object v9
-
-    const-string v2, "D1_6"
-
-    const/16 v3, 0x8
-
-    const v5, 0x7f1103c6
-
-    const-string/jumbo v6, "shutter-prio"
-
-    const/4 v7, 0x3
+    const-string v7, "N2"
 
     const/4 v8, 0x5
 
-    move-object v1, v0
+    const v10, 0x7f110406
 
-    invoke-direct/range {v1 .. v9}, Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;-><init>(Ljava/lang/String;IIILjava/lang/String;IILjava/util/List;)V
+    const-string/jumbo v11, "shutter-prio"
 
-    sput-object v0, Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;->D1_6:Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;
+    const/4 v12, 0x2
+
+    move-object v6, v0
+
+    invoke-direct/range {v6 .. v14}, Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;-><init>(Ljava/lang/String;IIILjava/lang/String;IILjava/util/List;)V
+
+    sput-object v0, Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;->N2:Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;
+
+    .line 67
+    new-instance v0, Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;
+
+    new-array v2, v1, [Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
+
+    sget-object v3, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->PHOTO_PRO_S:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
+
+    aput-object v3, v2, v4
+
+    sget-object v3, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->PHOTO_PRO_M:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
+
+    aput-object v3, v2, v5
+
+    .line 73
+    invoke-static {v2}, Ljava/util/Arrays;->asList([Ljava/lang/Object;)Ljava/util/List;
+
+    move-result-object v23
+
+    const-string v16, "D1"
+
+    const/16 v17, 0x6
+
+    const v19, 0x7f110402
+
+    const-string/jumbo v20, "shutter-prio"
+
+    const/16 v21, 0x1
+
+    move-object v15, v0
+
+    invoke-direct/range {v15 .. v23}, Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;-><init>(Ljava/lang/String;IIILjava/lang/String;IILjava/util/List;)V
+
+    sput-object v0, Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;->D1:Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;
+
+    .line 74
+    new-instance v0, Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;
+
+    new-array v2, v1, [Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
+
+    sget-object v3, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->PHOTO_PRO_S:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
+
+    aput-object v3, v2, v4
+
+    sget-object v3, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->PHOTO_PRO_M:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
+
+    aput-object v3, v2, v5
+
+    .line 80
+    invoke-static {v2}, Ljava/util/Arrays;->asList([Ljava/lang/Object;)Ljava/util/List;
+
+    move-result-object v14
+
+    const-string v7, "D1_25"
+
+    const/4 v8, 0x7
+
+    const v10, 0x7f1103fc
+
+    const-string/jumbo v11, "shutter-prio"
+
+    const/4 v12, 0x4
+
+    const/4 v13, 0x5
+
+    move-object v6, v0
+
+    invoke-direct/range {v6 .. v14}, Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;-><init>(Ljava/lang/String;IIILjava/lang/String;IILjava/util/List;)V
+
+    sput-object v0, Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;->D1_25:Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;
+
+    .line 81
+    new-instance v0, Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;
+
+    new-array v2, v1, [Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
+
+    sget-object v3, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->PHOTO_PRO_S:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
+
+    aput-object v3, v2, v4
+
+    sget-object v3, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->PHOTO_PRO_M:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
+
+    aput-object v3, v2, v5
 
     .line 87
-    new-instance v0, Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;
+    invoke-static {v2}, Ljava/util/Arrays;->asList([Ljava/lang/Object;)Ljava/util/List;
 
-    sget-object v1, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->PHOTO_PRO_S:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
+    move-result-object v23
 
-    sget-object v2, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->PHOTO_PRO_M:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
-
-    filled-new-array {v1, v2}, [Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
-
-    move-result-object v1
-
-    .line 93
-    invoke-static {v1}, Ljava/util/Arrays;->asList([Ljava/lang/Object;)Ljava/util/List;
-
-    move-result-object v18
-
-    const-string v11, "D2"
-
-    const/16 v12, 0x9
-
-    const v14, 0x7f1103c5
-
-    const-string/jumbo v15, "shutter-prio"
-
-    const/16 v16, 0x1
-
-    const/16 v17, 0x2
-
-    move-object v10, v0
-
-    invoke-direct/range {v10 .. v18}, Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;-><init>(Ljava/lang/String;IIILjava/lang/String;IILjava/util/List;)V
-
-    sput-object v0, Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;->D2:Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;
-
-    .line 94
-    new-instance v0, Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;
-
-    sget-object v1, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->PHOTO_PRO_S:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
-
-    sget-object v2, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->PHOTO_PRO_M:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
-
-    filled-new-array {v1, v2}, [Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
-
-    move-result-object v1
-
-    .line 100
-    invoke-static {v1}, Ljava/util/Arrays;->asList([Ljava/lang/Object;)Ljava/util/List;
-
-    move-result-object v9
-
-    const-string v2, "D2_5"
-
-    const/16 v3, 0xa
-
-    const v5, 0x7f1103c4
-
-    const-string/jumbo v6, "shutter-prio"
-
-    const/4 v7, 0x2
-
-    move-object v1, v0
-
-    invoke-direct/range {v1 .. v9}, Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;-><init>(Ljava/lang/String;IIILjava/lang/String;IILjava/util/List;)V
-
-    sput-object v0, Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;->D2_5:Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;
-
-    .line 101
-    new-instance v0, Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;
-
-    sget-object v1, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->PHOTO_PRO_S:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
-
-    sget-object v2, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->PHOTO_PRO_M:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
-
-    filled-new-array {v1, v2}, [Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
-
-    move-result-object v1
-
-    .line 107
-    invoke-static {v1}, Ljava/util/Arrays;->asList([Ljava/lang/Object;)Ljava/util/List;
-
-    move-result-object v18
-
-    const-string v11, "D3"
-
-    const/16 v12, 0xb
-
-    const v14, 0x7f1103fc
-
-    const-string/jumbo v15, "shutter-prio"
-
-    const/16 v17, 0x3
-
-    move-object v10, v0
-
-    invoke-direct/range {v10 .. v18}, Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;-><init>(Ljava/lang/String;IIILjava/lang/String;IILjava/util/List;)V
-
-    sput-object v0, Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;->D3:Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;
-
-    .line 108
-    new-instance v0, Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;
-
-    sget-object v1, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->PHOTO_PRO_S:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
-
-    sget-object v2, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->PHOTO_PRO_M:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
-
-    sget-object v3, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->PHOTO_BASIC:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
-
-    filled-new-array {v1, v2, v3}, [Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
-
-    move-result-object v1
-
-    .line 114
-    invoke-static {v1}, Ljava/util/Arrays;->asList([Ljava/lang/Object;)Ljava/util/List;
-
-    move-result-object v9
-
-    const-string v2, "D4"
-
-    const/16 v3, 0xc
-
-    const v5, 0x7f110403
-
-    const-string/jumbo v6, "shutter-prio"
-
-    const/4 v7, 0x1
-
-    const/4 v8, 0x4
-
-    move-object v1, v0
-
-    invoke-direct/range {v1 .. v9}, Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;-><init>(Ljava/lang/String;IIILjava/lang/String;IILjava/util/List;)V
-
-    sput-object v0, Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;->D4:Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;
-
-    .line 116
-    new-instance v0, Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;
-
-    sget-object v1, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->PHOTO_PRO_S:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
-
-    sget-object v2, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->PHOTO_PRO_M:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
-
-    sget-object v3, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->PHOTO_BASIC:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
-
-    filled-new-array {v1, v2, v3}, [Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
-
-    move-result-object v1
-
-    .line 122
-    invoke-static {v1}, Ljava/util/Arrays;->asList([Ljava/lang/Object;)Ljava/util/List;
-
-    move-result-object v18
-
-    const-string v11, "D5"
-
-    const/16 v12, 0xd
-
-    const v14, 0x7f110408
-
-    const-string/jumbo v15, "shutter-prio"
-
-    const/16 v17, 0x5
-
-    move-object v10, v0
-
-    invoke-direct/range {v10 .. v18}, Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;-><init>(Ljava/lang/String;IIILjava/lang/String;IILjava/util/List;)V
-
-    sput-object v0, Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;->D5:Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;
-
-    .line 124
-    new-instance v0, Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;
-
-    sget-object v1, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->PHOTO_PRO_S:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
-
-    sget-object v2, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->PHOTO_PRO_M:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
-
-    sget-object v3, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->PHOTO_BASIC:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
-
-    filled-new-array {v1, v2, v3}, [Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
-
-    move-result-object v1
-
-    .line 130
-    invoke-static {v1}, Ljava/util/Arrays;->asList([Ljava/lang/Object;)Ljava/util/List;
-
-    move-result-object v9
-
-    const-string v2, "D6"
-
-    const/16 v3, 0xe
-
-    const v5, 0x7f11040d
-
-    const-string/jumbo v6, "shutter-prio"
-
-    const/4 v8, 0x6
-
-    move-object v1, v0
-
-    invoke-direct/range {v1 .. v9}, Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;-><init>(Ljava/lang/String;IIILjava/lang/String;IILjava/util/List;)V
-
-    sput-object v0, Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;->D6:Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;
-
-    .line 132
-    new-instance v0, Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;
-
-    sget-object v1, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->PHOTO_PRO_S:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
-
-    sget-object v2, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->PHOTO_PRO_M:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
-
-    sget-object v3, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->PHOTO_BASIC:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
-
-    filled-new-array {v1, v2, v3}, [Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
-
-    move-result-object v1
-
-    .line 138
-    invoke-static {v1}, Ljava/util/Arrays;->asList([Ljava/lang/Object;)Ljava/util/List;
-
-    move-result-object v18
-
-    const-string v11, "D8"
-
-    const/16 v12, 0xf
-
-    const v14, 0x7f110412
-
-    const-string/jumbo v15, "shutter-prio"
+    const-string v16, "D1_6"
 
     const/16 v17, 0x8
 
-    move-object v10, v0
+    const v19, 0x7f1103fb
 
-    invoke-direct/range {v10 .. v18}, Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;-><init>(Ljava/lang/String;IIILjava/lang/String;IILjava/util/List;)V
+    const-string/jumbo v20, "shutter-prio"
 
-    sput-object v0, Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;->D8:Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;
+    const/16 v21, 0x3
 
-    .line 140
+    const/16 v22, 0x5
+
+    move-object v15, v0
+
+    invoke-direct/range {v15 .. v23}, Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;-><init>(Ljava/lang/String;IIILjava/lang/String;IILjava/util/List;)V
+
+    sput-object v0, Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;->D1_6:Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;
+
+    .line 88
     new-instance v0, Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;
 
-    sget-object v1, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->PHOTO_PRO_S:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
+    new-array v2, v1, [Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
-    sget-object v2, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->PHOTO_PRO_M:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
+    sget-object v3, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->PHOTO_PRO_S:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
-    sget-object v3, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->PHOTO_BASIC:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
+    aput-object v3, v2, v4
 
-    filled-new-array {v1, v2, v3}, [Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
+    sget-object v3, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->PHOTO_PRO_M:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
-    move-result-object v1
+    aput-object v3, v2, v5
 
-    .line 146
-    invoke-static {v1}, Ljava/util/Arrays;->asList([Ljava/lang/Object;)Ljava/util/List;
+    .line 94
+    invoke-static {v2}, Ljava/util/Arrays;->asList([Ljava/lang/Object;)Ljava/util/List;
 
-    move-result-object v9
+    move-result-object v14
 
-    const-string v2, "D10"
+    const-string v7, "D2"
 
-    const/16 v3, 0x10
+    const/16 v8, 0x9
 
-    const v5, 0x7f1103dd
+    const v10, 0x7f1103fa
 
-    const-string/jumbo v6, "shutter-prio"
+    const-string/jumbo v11, "shutter-prio"
 
-    const/16 v8, 0xa
+    const/4 v12, 0x1
 
-    move-object v1, v0
+    const/4 v13, 0x2
 
-    invoke-direct/range {v1 .. v9}, Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;-><init>(Ljava/lang/String;IIILjava/lang/String;IILjava/util/List;)V
+    move-object v6, v0
 
-    sput-object v0, Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;->D10:Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;
+    invoke-direct/range {v6 .. v14}, Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;-><init>(Ljava/lang/String;IIILjava/lang/String;IILjava/util/List;)V
 
-    .line 148
+    sput-object v0, Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;->D2:Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;
+
+    .line 95
     new-instance v0, Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;
 
-    sget-object v1, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->PHOTO_PRO_S:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
+    new-array v2, v1, [Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
-    sget-object v2, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->PHOTO_PRO_M:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
+    sget-object v3, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->PHOTO_PRO_S:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
-    sget-object v3, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->PHOTO_BASIC:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
+    aput-object v3, v2, v4
 
-    filled-new-array {v1, v2, v3}, [Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
+    sget-object v3, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->PHOTO_PRO_M:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
-    move-result-object v1
+    aput-object v3, v2, v5
 
-    .line 154
-    invoke-static {v1}, Ljava/util/Arrays;->asList([Ljava/lang/Object;)Ljava/util/List;
+    .line 101
+    invoke-static {v2}, Ljava/util/Arrays;->asList([Ljava/lang/Object;)Ljava/util/List;
 
-    move-result-object v18
+    move-result-object v23
 
-    const-string v11, "D13"
+    const-string v16, "D2_5"
 
-    const/16 v12, 0x11
+    const/16 v17, 0xa
 
-    const v14, 0x7f1103e5
+    const v19, 0x7f1103f9
 
-    const-string/jumbo v15, "shutter-prio"
+    const-string/jumbo v20, "shutter-prio"
 
-    const/16 v17, 0xd
+    const/16 v21, 0x2
 
-    move-object v10, v0
+    move-object v15, v0
 
-    invoke-direct/range {v10 .. v18}, Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;-><init>(Ljava/lang/String;IIILjava/lang/String;IILjava/util/List;)V
+    invoke-direct/range {v15 .. v23}, Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;-><init>(Ljava/lang/String;IIILjava/lang/String;IILjava/util/List;)V
 
-    sput-object v0, Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;->D13:Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;
+    sput-object v0, Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;->D2_5:Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;
 
-    .line 156
+    .line 102
     new-instance v0, Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;
 
-    sget-object v1, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->PHOTO_PRO_S:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
+    new-array v2, v1, [Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
-    sget-object v2, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->PHOTO_PRO_M:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
+    sget-object v3, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->PHOTO_PRO_S:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
-    sget-object v3, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->PHOTO_BASIC:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
+    aput-object v3, v2, v4
 
-    filled-new-array {v1, v2, v3}, [Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
+    sget-object v3, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->PHOTO_PRO_M:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
-    move-result-object v1
+    aput-object v3, v2, v5
 
-    .line 162
-    invoke-static {v1}, Ljava/util/Arrays;->asList([Ljava/lang/Object;)Ljava/util/List;
+    .line 108
+    invoke-static {v2}, Ljava/util/Arrays;->asList([Ljava/lang/Object;)Ljava/util/List;
 
-    move-result-object v9
+    move-result-object v14
 
-    const-string v2, "D15"
+    const-string v7, "D3"
 
-    const/16 v3, 0x12
+    const/16 v8, 0xb
 
-    const v5, 0x7f1103e6
+    const v10, 0x7f110431
 
-    const-string/jumbo v6, "shutter-prio"
+    const-string/jumbo v11, "shutter-prio"
+
+    const/4 v13, 0x3
+
+    move-object v6, v0
+
+    invoke-direct/range {v6 .. v14}, Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;-><init>(Ljava/lang/String;IIILjava/lang/String;IILjava/util/List;)V
+
+    sput-object v0, Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;->D3:Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;
+
+    .line 109
+    new-instance v0, Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;
+
+    const/4 v2, 0x3
+
+    new-array v3, v2, [Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
+
+    sget-object v6, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->PHOTO_PRO_S:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
+
+    aput-object v6, v3, v4
+
+    sget-object v6, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->PHOTO_PRO_M:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
+
+    aput-object v6, v3, v5
+
+    sget-object v6, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->PHOTO_BASIC:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
+
+    aput-object v6, v3, v1
+
+    .line 115
+    invoke-static {v3}, Ljava/util/Arrays;->asList([Ljava/lang/Object;)Ljava/util/List;
+
+    move-result-object v23
+
+    const-string v16, "D4"
+
+    const/16 v17, 0xc
+
+    const v19, 0x7f110438
+
+    const-string/jumbo v20, "shutter-prio"
+
+    const/16 v21, 0x1
+
+    const/16 v22, 0x4
+
+    move-object v15, v0
+
+    invoke-direct/range {v15 .. v23}, Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;-><init>(Ljava/lang/String;IIILjava/lang/String;IILjava/util/List;)V
+
+    sput-object v0, Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;->D4:Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;
+
+    .line 117
+    new-instance v0, Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;
+
+    new-array v3, v2, [Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
+
+    sget-object v6, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->PHOTO_PRO_S:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
+
+    aput-object v6, v3, v4
+
+    sget-object v6, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->PHOTO_PRO_M:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
+
+    aput-object v6, v3, v5
+
+    sget-object v6, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->PHOTO_BASIC:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
+
+    aput-object v6, v3, v1
+
+    .line 123
+    invoke-static {v3}, Ljava/util/Arrays;->asList([Ljava/lang/Object;)Ljava/util/List;
+
+    move-result-object v14
+
+    const-string v7, "D5"
+
+    const/16 v8, 0xd
+
+    const v10, 0x7f11043d
+
+    const-string/jumbo v11, "shutter-prio"
+
+    const/4 v13, 0x5
+
+    move-object v6, v0
+
+    invoke-direct/range {v6 .. v14}, Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;-><init>(Ljava/lang/String;IIILjava/lang/String;IILjava/util/List;)V
+
+    sput-object v0, Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;->D5:Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;
+
+    .line 125
+    new-instance v0, Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;
+
+    new-array v3, v2, [Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
+
+    sget-object v6, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->PHOTO_PRO_S:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
+
+    aput-object v6, v3, v4
+
+    sget-object v6, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->PHOTO_PRO_M:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
+
+    aput-object v6, v3, v5
+
+    sget-object v6, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->PHOTO_BASIC:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
+
+    aput-object v6, v3, v1
+
+    .line 131
+    invoke-static {v3}, Ljava/util/Arrays;->asList([Ljava/lang/Object;)Ljava/util/List;
+
+    move-result-object v23
+
+    const-string v16, "D6"
+
+    const/16 v17, 0xe
+
+    const v19, 0x7f110442
+
+    const-string/jumbo v20, "shutter-prio"
+
+    const/16 v22, 0x6
+
+    move-object v15, v0
+
+    invoke-direct/range {v15 .. v23}, Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;-><init>(Ljava/lang/String;IIILjava/lang/String;IILjava/util/List;)V
+
+    sput-object v0, Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;->D6:Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;
+
+    .line 133
+    new-instance v0, Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;
+
+    new-array v3, v2, [Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
+
+    sget-object v6, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->PHOTO_PRO_S:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
+
+    aput-object v6, v3, v4
+
+    sget-object v6, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->PHOTO_PRO_M:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
+
+    aput-object v6, v3, v5
+
+    sget-object v6, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->PHOTO_BASIC:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
+
+    aput-object v6, v3, v1
+
+    .line 139
+    invoke-static {v3}, Ljava/util/Arrays;->asList([Ljava/lang/Object;)Ljava/util/List;
+
+    move-result-object v14
+
+    const-string v7, "D8"
 
     const/16 v8, 0xf
 
-    move-object v1, v0
+    const v10, 0x7f110447
 
-    invoke-direct/range {v1 .. v9}, Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;-><init>(Ljava/lang/String;IIILjava/lang/String;IILjava/util/List;)V
+    const-string/jumbo v11, "shutter-prio"
+
+    const/16 v13, 0x8
+
+    move-object v6, v0
+
+    invoke-direct/range {v6 .. v14}, Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;-><init>(Ljava/lang/String;IIILjava/lang/String;IILjava/util/List;)V
+
+    sput-object v0, Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;->D8:Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;
+
+    .line 141
+    new-instance v0, Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;
+
+    new-array v3, v2, [Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
+
+    sget-object v6, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->PHOTO_PRO_S:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
+
+    aput-object v6, v3, v4
+
+    sget-object v6, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->PHOTO_PRO_M:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
+
+    aput-object v6, v3, v5
+
+    sget-object v6, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->PHOTO_BASIC:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
+
+    aput-object v6, v3, v1
+
+    .line 147
+    invoke-static {v3}, Ljava/util/Arrays;->asList([Ljava/lang/Object;)Ljava/util/List;
+
+    move-result-object v23
+
+    const-string v16, "D10"
+
+    const/16 v17, 0x10
+
+    const v19, 0x7f110412
+
+    const-string/jumbo v20, "shutter-prio"
+
+    const/16 v22, 0xa
+
+    move-object v15, v0
+
+    invoke-direct/range {v15 .. v23}, Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;-><init>(Ljava/lang/String;IIILjava/lang/String;IILjava/util/List;)V
+
+    sput-object v0, Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;->D10:Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;
+
+    .line 149
+    new-instance v0, Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;
+
+    new-array v3, v2, [Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
+
+    sget-object v6, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->PHOTO_PRO_S:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
+
+    aput-object v6, v3, v4
+
+    sget-object v6, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->PHOTO_PRO_M:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
+
+    aput-object v6, v3, v5
+
+    sget-object v6, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->PHOTO_BASIC:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
+
+    aput-object v6, v3, v1
+
+    .line 155
+    invoke-static {v3}, Ljava/util/Arrays;->asList([Ljava/lang/Object;)Ljava/util/List;
+
+    move-result-object v14
+
+    const-string v7, "D13"
+
+    const/16 v8, 0x11
+
+    const v10, 0x7f11041a
+
+    const-string/jumbo v11, "shutter-prio"
+
+    const/16 v13, 0xd
+
+    move-object v6, v0
+
+    invoke-direct/range {v6 .. v14}, Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;-><init>(Ljava/lang/String;IIILjava/lang/String;IILjava/util/List;)V
+
+    sput-object v0, Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;->D13:Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;
+
+    .line 157
+    new-instance v0, Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;
+
+    new-array v3, v2, [Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
+
+    sget-object v6, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->PHOTO_PRO_S:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
+
+    aput-object v6, v3, v4
+
+    sget-object v6, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->PHOTO_PRO_M:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
+
+    aput-object v6, v3, v5
+
+    sget-object v6, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->PHOTO_BASIC:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
+
+    aput-object v6, v3, v1
+
+    .line 163
+    invoke-static {v3}, Ljava/util/Arrays;->asList([Ljava/lang/Object;)Ljava/util/List;
+
+    move-result-object v23
+
+    const-string v16, "D15"
+
+    const/16 v17, 0x12
+
+    const v19, 0x7f11041b
+
+    const-string/jumbo v20, "shutter-prio"
+
+    const/16 v22, 0xf
+
+    move-object v15, v0
+
+    invoke-direct/range {v15 .. v23}, Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;-><init>(Ljava/lang/String;IIILjava/lang/String;IILjava/util/List;)V
 
     sput-object v0, Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;->D15:Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;
 
-    .line 164
+    .line 165
     new-instance v0, Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;
 
-    sget-object v1, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->PHOTO_PRO_S:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
+    new-array v3, v2, [Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
-    sget-object v2, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->PHOTO_PRO_M:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
+    sget-object v6, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->PHOTO_PRO_S:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
-    sget-object v3, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->PHOTO_BASIC:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
+    aput-object v6, v3, v4
 
-    filled-new-array {v1, v2, v3}, [Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
+    sget-object v6, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->PHOTO_PRO_M:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
-    move-result-object v1
+    aput-object v6, v3, v5
 
-    .line 170
-    invoke-static {v1}, Ljava/util/Arrays;->asList([Ljava/lang/Object;)Ljava/util/List;
+    sget-object v6, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->PHOTO_BASIC:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
-    move-result-object v18
+    aput-object v6, v3, v1
 
-    const-string v11, "D20"
+    .line 171
+    invoke-static {v3}, Ljava/util/Arrays;->asList([Ljava/lang/Object;)Ljava/util/List;
 
-    const/16 v12, 0x13
+    move-result-object v14
 
-    const v14, 0x7f1103ef
+    const-string v7, "D20"
 
-    const-string/jumbo v15, "shutter-prio"
+    const/16 v8, 0x13
 
-    const/16 v17, 0x14
+    const v10, 0x7f110424
 
-    move-object v10, v0
+    const-string/jumbo v11, "shutter-prio"
 
-    invoke-direct/range {v10 .. v18}, Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;-><init>(Ljava/lang/String;IIILjava/lang/String;IILjava/util/List;)V
+    const/16 v13, 0x14
+
+    move-object v6, v0
+
+    invoke-direct/range {v6 .. v14}, Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;-><init>(Ljava/lang/String;IIILjava/lang/String;IILjava/util/List;)V
 
     sput-object v0, Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;->D20:Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;
 
-    .line 172
+    .line 173
     new-instance v0, Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;
 
-    sget-object v1, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->VIDEO_BASIC:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
+    new-array v3, v2, [Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
-    sget-object v2, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->VIDEO_PRO_S:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
+    sget-object v6, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->VIDEO_BASIC:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
-    sget-object v3, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->VIDEO_PRO_M:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
+    aput-object v6, v3, v4
 
-    filled-new-array {v1, v2, v3}, [Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
+    sget-object v6, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->VIDEO_PRO_S:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
-    move-result-object v1
+    aput-object v6, v3, v5
 
-    .line 178
-    invoke-static {v1}, Ljava/util/Arrays;->asList([Ljava/lang/Object;)Ljava/util/List;
+    sget-object v6, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->VIDEO_PRO_M:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
-    move-result-object v9
+    aput-object v6, v3, v1
 
-    const-string v2, "D24"
+    .line 179
+    invoke-static {v3}, Ljava/util/Arrays;->asList([Ljava/lang/Object;)Ljava/util/List;
 
-    const/16 v3, 0x14
+    move-result-object v23
 
-    const v5, 0x7f1103f1
+    const-string v16, "D24"
 
-    const-string/jumbo v6, "shutter-prio"
+    const/16 v17, 0x14
 
-    const/16 v8, 0x18
+    const v19, 0x7f110426
 
-    move-object v1, v0
+    const-string/jumbo v20, "shutter-prio"
 
-    invoke-direct/range {v1 .. v9}, Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;-><init>(Ljava/lang/String;IIILjava/lang/String;IILjava/util/List;)V
+    const/16 v22, 0x18
+
+    move-object v15, v0
+
+    invoke-direct/range {v15 .. v23}, Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;-><init>(Ljava/lang/String;IIILjava/lang/String;IILjava/util/List;)V
 
     sput-object v0, Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;->D24:Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;
 
-    .line 180
+    .line 181
     new-instance v0, Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;
 
-    sget-object v1, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->PHOTO_PRO_S:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
+    const/4 v3, 0x6
 
-    sget-object v2, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->PHOTO_PRO_M:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
+    new-array v6, v3, [Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
-    sget-object v3, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->PHOTO_BASIC:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
+    sget-object v7, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->PHOTO_PRO_S:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
-    sget-object v4, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->VIDEO_BASIC:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
+    aput-object v7, v6, v4
 
-    sget-object v5, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->VIDEO_PRO_S:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
+    sget-object v7, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->PHOTO_PRO_M:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
-    sget-object v6, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->VIDEO_PRO_M:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
+    aput-object v7, v6, v5
 
-    filled-new-array/range {v1 .. v6}, [Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
+    sget-object v7, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->PHOTO_BASIC:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
-    move-result-object v1
+    aput-object v7, v6, v1
 
-    .line 186
-    invoke-static {v1}, Ljava/util/Arrays;->asList([Ljava/lang/Object;)Ljava/util/List;
+    sget-object v7, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->VIDEO_BASIC:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
-    move-result-object v18
+    aput-object v7, v6, v2
 
-    const-string v11, "D25"
+    sget-object v7, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->VIDEO_PRO_S:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
-    const/16 v12, 0x15
+    const/4 v15, 0x4
 
-    const v14, 0x7f1103f6
+    aput-object v7, v6, v15
 
-    const-string/jumbo v15, "shutter-prio"
+    sget-object v7, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->VIDEO_PRO_M:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
-    const/16 v17, 0x19
+    const/4 v14, 0x5
 
-    move-object v10, v0
+    aput-object v7, v6, v14
 
-    invoke-direct/range {v10 .. v18}, Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;-><init>(Ljava/lang/String;IIILjava/lang/String;IILjava/util/List;)V
+    .line 187
+    invoke-static {v6}, Ljava/util/Arrays;->asList([Ljava/lang/Object;)Ljava/util/List;
+
+    move-result-object v16
+
+    const-string v7, "D25"
+
+    const/16 v8, 0x15
+
+    const v10, 0x7f11042b
+
+    const-string/jumbo v11, "shutter-prio"
+
+    const/16 v13, 0x19
+
+    move-object v6, v0
+
+    move-object/from16 v14, v16
+
+    invoke-direct/range {v6 .. v14}, Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;-><init>(Ljava/lang/String;IIILjava/lang/String;IILjava/util/List;)V
 
     sput-object v0, Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;->D25:Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;
 
-    .line 189
+    .line 190
     new-instance v0, Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;
 
-    sget-object v1, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->PHOTO_PRO_S:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
+    new-array v6, v3, [Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
-    sget-object v2, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->PHOTO_PRO_M:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
+    sget-object v7, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->PHOTO_PRO_S:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
-    sget-object v3, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->PHOTO_BASIC:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
+    aput-object v7, v6, v4
 
-    sget-object v4, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->VIDEO_BASIC:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
+    sget-object v7, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->PHOTO_PRO_M:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
-    sget-object v5, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->VIDEO_PRO_S:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
+    aput-object v7, v6, v5
 
-    sget-object v6, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->VIDEO_PRO_M:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
+    sget-object v7, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->PHOTO_BASIC:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
-    filled-new-array/range {v1 .. v6}, [Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
+    aput-object v7, v6, v1
 
-    move-result-object v1
+    sget-object v7, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->VIDEO_BASIC:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
-    .line 195
-    invoke-static {v1}, Ljava/util/Arrays;->asList([Ljava/lang/Object;)Ljava/util/List;
+    aput-object v7, v6, v2
 
-    move-result-object v9
+    sget-object v7, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->VIDEO_PRO_S:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
-    const-string v2, "D30"
+    aput-object v7, v6, v15
 
-    const/16 v3, 0x16
+    sget-object v7, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->VIDEO_PRO_M:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
-    const/4 v4, -0x1
+    const/4 v8, 0x5
 
-    const v5, 0x7f1103f7
+    aput-object v7, v6, v8
 
-    const-string/jumbo v6, "shutter-prio"
+    .line 196
+    invoke-static {v6}, Ljava/util/Arrays;->asList([Ljava/lang/Object;)Ljava/util/List;
 
-    const/16 v8, 0x1e
+    move-result-object v25
 
-    move-object v1, v0
+    const-string v18, "D30"
 
-    invoke-direct/range {v1 .. v9}, Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;-><init>(Ljava/lang/String;IIILjava/lang/String;IILjava/util/List;)V
+    const/16 v19, 0x16
+
+    const/16 v20, -0x1
+
+    const v21, 0x7f11042c
+
+    const-string/jumbo v22, "shutter-prio"
+
+    const/16 v23, 0x1
+
+    const/16 v24, 0x1e
+
+    move-object/from16 v17, v0
+
+    invoke-direct/range {v17 .. v25}, Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;-><init>(Ljava/lang/String;IIILjava/lang/String;IILjava/util/List;)V
 
     sput-object v0, Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;->D30:Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;
 
-    .line 198
+    .line 199
     new-instance v0, Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;
 
-    sget-object v1, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->PHOTO_PRO_S:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
+    new-array v6, v3, [Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
-    sget-object v2, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->PHOTO_PRO_M:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
+    sget-object v7, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->PHOTO_PRO_S:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
-    sget-object v3, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->PHOTO_BASIC:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
+    aput-object v7, v6, v4
 
-    sget-object v4, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->VIDEO_BASIC:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
+    sget-object v7, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->PHOTO_PRO_M:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
-    sget-object v5, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->VIDEO_PRO_S:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
+    aput-object v7, v6, v5
 
-    sget-object v6, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->VIDEO_PRO_M:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
+    sget-object v7, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->PHOTO_BASIC:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
-    filled-new-array/range {v1 .. v6}, [Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
+    aput-object v7, v6, v1
 
-    move-result-object v1
+    sget-object v7, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->VIDEO_BASIC:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
-    .line 204
-    invoke-static {v1}, Ljava/util/Arrays;->asList([Ljava/lang/Object;)Ljava/util/List;
+    aput-object v7, v6, v2
 
-    move-result-object v18
+    sget-object v7, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->VIDEO_PRO_S:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
-    const-string v11, "D40"
+    aput-object v7, v6, v15
 
-    const/16 v12, 0x17
+    sget-object v7, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->VIDEO_PRO_M:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
-    const v14, 0x7f110401
+    aput-object v7, v6, v8
 
-    const-string/jumbo v15, "shutter-prio"
+    .line 205
+    invoke-static {v6}, Ljava/util/Arrays;->asList([Ljava/lang/Object;)Ljava/util/List;
 
-    const/16 v17, 0x28
+    move-result-object v34
 
-    move-object v10, v0
+    const-string v27, "D40"
 
-    invoke-direct/range {v10 .. v18}, Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;-><init>(Ljava/lang/String;IIILjava/lang/String;IILjava/util/List;)V
+    const/16 v28, 0x17
+
+    const/16 v29, -0x1
+
+    const v30, 0x7f110436
+
+    const-string/jumbo v31, "shutter-prio"
+
+    const/16 v32, 0x1
+
+    const/16 v33, 0x28
+
+    move-object/from16 v26, v0
+
+    invoke-direct/range {v26 .. v34}, Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;-><init>(Ljava/lang/String;IIILjava/lang/String;IILjava/util/List;)V
 
     sput-object v0, Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;->D40:Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;
 
-    .line 207
+    .line 208
     new-instance v0, Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;
 
-    sget-object v1, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->VIDEO_BASIC:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
+    new-array v6, v2, [Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
-    sget-object v2, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->VIDEO_PRO_S:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
+    sget-object v7, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->VIDEO_BASIC:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
-    sget-object v3, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->VIDEO_PRO_M:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
+    aput-object v7, v6, v4
 
-    filled-new-array {v1, v2, v3}, [Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
+    sget-object v7, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->VIDEO_PRO_S:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
-    move-result-object v1
+    aput-object v7, v6, v5
 
-    .line 213
-    invoke-static {v1}, Ljava/util/Arrays;->asList([Ljava/lang/Object;)Ljava/util/List;
+    sget-object v7, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->VIDEO_PRO_M:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
-    move-result-object v9
+    aput-object v7, v6, v1
 
-    const-string v2, "D48"
+    .line 214
+    invoke-static {v6}, Ljava/util/Arrays;->asList([Ljava/lang/Object;)Ljava/util/List;
 
-    const/16 v3, 0x18
+    move-result-object v24
 
-    const/4 v4, -0x1
+    const-string v17, "D48"
 
-    const v5, 0x7f110402
+    const/16 v18, 0x18
 
-    const-string/jumbo v6, "shutter-prio"
+    const/16 v19, -0x1
 
-    const/16 v8, 0x30
+    const v20, 0x7f110437
 
-    move-object v1, v0
+    const-string/jumbo v21, "shutter-prio"
 
-    invoke-direct/range {v1 .. v9}, Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;-><init>(Ljava/lang/String;IIILjava/lang/String;IILjava/util/List;)V
+    const/16 v22, 0x1
+
+    const/16 v23, 0x30
+
+    move-object/from16 v16, v0
+
+    invoke-direct/range {v16 .. v24}, Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;-><init>(Ljava/lang/String;IIILjava/lang/String;IILjava/util/List;)V
 
     sput-object v0, Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;->D48:Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;
 
-    .line 215
+    .line 216
     new-instance v0, Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;
 
-    sget-object v1, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->PHOTO_PRO_S:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
+    new-array v6, v3, [Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
-    sget-object v2, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->PHOTO_PRO_M:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
+    sget-object v7, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->PHOTO_PRO_S:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
-    sget-object v3, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->PHOTO_BASIC:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
+    aput-object v7, v6, v4
 
-    sget-object v4, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->VIDEO_BASIC:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
+    sget-object v7, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->PHOTO_PRO_M:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
-    sget-object v5, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->VIDEO_PRO_S:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
+    aput-object v7, v6, v5
 
-    sget-object v6, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->VIDEO_PRO_M:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
+    sget-object v7, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->PHOTO_BASIC:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
-    filled-new-array/range {v1 .. v6}, [Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
+    aput-object v7, v6, v1
 
-    move-result-object v1
+    sget-object v7, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->VIDEO_BASIC:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
-    .line 221
-    invoke-static {v1}, Ljava/util/Arrays;->asList([Ljava/lang/Object;)Ljava/util/List;
+    aput-object v7, v6, v2
 
-    move-result-object v18
+    sget-object v7, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->VIDEO_PRO_S:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
-    const-string v11, "D50"
+    aput-object v7, v6, v15
 
-    const/16 v12, 0x19
+    sget-object v7, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->VIDEO_PRO_M:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
-    const v14, 0x7f110407
+    aput-object v7, v6, v8
 
-    const-string/jumbo v15, "shutter-prio"
+    .line 222
+    invoke-static {v6}, Ljava/util/Arrays;->asList([Ljava/lang/Object;)Ljava/util/List;
 
-    const/16 v17, 0x32
+    move-result-object v33
 
-    move-object v10, v0
+    const-string v26, "D50"
 
-    invoke-direct/range {v10 .. v18}, Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;-><init>(Ljava/lang/String;IIILjava/lang/String;IILjava/util/List;)V
+    const/16 v27, 0x19
+
+    const/16 v28, -0x1
+
+    const v29, 0x7f11043c
+
+    const-string/jumbo v30, "shutter-prio"
+
+    const/16 v31, 0x1
+
+    const/16 v32, 0x32
+
+    move-object/from16 v25, v0
+
+    invoke-direct/range {v25 .. v33}, Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;-><init>(Ljava/lang/String;IIILjava/lang/String;IILjava/util/List;)V
 
     sput-object v0, Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;->D50:Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;
 
-    .line 224
+    .line 225
     new-instance v0, Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;
 
-    sget-object v1, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->PHOTO_PRO_S:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
+    new-array v6, v3, [Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
-    sget-object v2, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->PHOTO_PRO_M:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
+    sget-object v7, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->PHOTO_PRO_S:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
-    sget-object v3, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->PHOTO_BASIC:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
+    aput-object v7, v6, v4
 
-    sget-object v4, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->VIDEO_BASIC:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
+    sget-object v7, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->PHOTO_PRO_M:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
-    sget-object v5, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->VIDEO_PRO_S:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
+    aput-object v7, v6, v5
 
-    sget-object v6, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->VIDEO_PRO_M:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
+    sget-object v7, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->PHOTO_BASIC:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
-    filled-new-array/range {v1 .. v6}, [Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
+    aput-object v7, v6, v1
 
-    move-result-object v1
+    sget-object v7, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->VIDEO_BASIC:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
-    .line 230
-    invoke-static {v1}, Ljava/util/Arrays;->asList([Ljava/lang/Object;)Ljava/util/List;
+    aput-object v7, v6, v2
 
-    move-result-object v9
+    sget-object v7, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->VIDEO_PRO_S:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
-    const-string v2, "D60"
+    aput-object v7, v6, v15
 
-    const/16 v3, 0x1a
+    sget-object v7, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->VIDEO_PRO_M:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
-    const/4 v4, -0x1
+    aput-object v7, v6, v8
 
-    const v5, 0x7f110409
+    .line 231
+    invoke-static {v6}, Ljava/util/Arrays;->asList([Ljava/lang/Object;)Ljava/util/List;
 
-    const-string/jumbo v6, "shutter-prio"
+    move-result-object v24
 
-    const/16 v8, 0x3c
+    const-string v17, "D60"
 
-    move-object v1, v0
+    const/16 v18, 0x1a
 
-    invoke-direct/range {v1 .. v9}, Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;-><init>(Ljava/lang/String;IIILjava/lang/String;IILjava/util/List;)V
+    const v20, 0x7f11043e
+
+    const-string/jumbo v21, "shutter-prio"
+
+    const/16 v23, 0x3c
+
+    move-object/from16 v16, v0
+
+    invoke-direct/range {v16 .. v24}, Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;-><init>(Ljava/lang/String;IIILjava/lang/String;IILjava/util/List;)V
 
     sput-object v0, Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;->D60:Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;
 
-    .line 233
+    .line 234
     new-instance v0, Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;
 
-    sget-object v1, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->PHOTO_PRO_S:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
+    new-array v6, v8, [Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
-    sget-object v2, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->PHOTO_PRO_M:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
+    sget-object v7, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->PHOTO_PRO_S:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
-    sget-object v3, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->PHOTO_BASIC:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
+    aput-object v7, v6, v4
 
-    sget-object v4, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->VIDEO_PRO_S:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
+    sget-object v7, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->PHOTO_PRO_M:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
-    sget-object v5, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->VIDEO_PRO_M:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
+    aput-object v7, v6, v5
 
-    filled-new-array {v1, v2, v3, v4, v5}, [Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
+    sget-object v7, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->PHOTO_BASIC:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
-    move-result-object v1
+    aput-object v7, v6, v1
 
-    .line 239
-    invoke-static {v1}, Ljava/util/Arrays;->asList([Ljava/lang/Object;)Ljava/util/List;
+    sget-object v7, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->VIDEO_PRO_S:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
-    move-result-object v18
+    aput-object v7, v6, v2
 
-    const-string v11, "D80"
+    sget-object v7, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->VIDEO_PRO_M:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
-    const/16 v12, 0x1b
+    aput-object v7, v6, v15
 
-    const v14, 0x7f110411
+    .line 240
+    invoke-static {v6}, Ljava/util/Arrays;->asList([Ljava/lang/Object;)Ljava/util/List;
 
-    const-string/jumbo v15, "shutter-prio"
+    move-result-object v33
 
-    const/16 v17, 0x50
+    const-string v26, "D80"
 
-    move-object v10, v0
+    const/16 v27, 0x1b
 
-    invoke-direct/range {v10 .. v18}, Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;-><init>(Ljava/lang/String;IIILjava/lang/String;IILjava/util/List;)V
+    const v29, 0x7f110446
+
+    const-string/jumbo v30, "shutter-prio"
+
+    const/16 v32, 0x50
+
+    move-object/from16 v25, v0
+
+    invoke-direct/range {v25 .. v33}, Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;-><init>(Ljava/lang/String;IIILjava/lang/String;IILjava/util/List;)V
 
     sput-object v0, Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;->D80:Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;
 
-    .line 242
+    .line 243
     new-instance v0, Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;
 
-    sget-object v1, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->VIDEO_BASIC:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
+    new-array v6, v2, [Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
-    sget-object v2, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->VIDEO_PRO_S:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
+    sget-object v7, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->VIDEO_BASIC:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
-    sget-object v3, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->VIDEO_PRO_M:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
+    aput-object v7, v6, v4
 
-    filled-new-array {v1, v2, v3}, [Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
+    sget-object v7, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->VIDEO_PRO_S:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
-    move-result-object v1
+    aput-object v7, v6, v5
 
-    .line 248
-    invoke-static {v1}, Ljava/util/Arrays;->asList([Ljava/lang/Object;)Ljava/util/List;
+    sget-object v7, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->VIDEO_PRO_M:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
-    move-result-object v9
+    aput-object v7, v6, v1
 
-    const-string v2, "D96"
+    .line 249
+    invoke-static {v6}, Ljava/util/Arrays;->asList([Ljava/lang/Object;)Ljava/util/List;
 
-    const/16 v3, 0x1c
+    move-result-object v24
 
-    const/4 v4, -0x1
+    const-string v17, "D96"
 
-    const v5, 0x7f110413
+    const/16 v18, 0x1c
 
-    const-string/jumbo v6, "shutter-prio"
+    const v20, 0x7f110448
 
-    const/16 v8, 0x60
+    const-string/jumbo v21, "shutter-prio"
 
-    move-object v1, v0
+    const/16 v23, 0x60
 
-    invoke-direct/range {v1 .. v9}, Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;-><init>(Ljava/lang/String;IIILjava/lang/String;IILjava/util/List;)V
+    move-object/from16 v16, v0
+
+    invoke-direct/range {v16 .. v24}, Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;-><init>(Ljava/lang/String;IIILjava/lang/String;IILjava/util/List;)V
 
     sput-object v0, Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;->D96:Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;
 
-    .line 250
+    .line 251
     new-instance v0, Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;
 
-    sget-object v1, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->PHOTO_PRO_S:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
+    new-array v6, v3, [Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
-    sget-object v2, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->PHOTO_PRO_M:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
+    sget-object v7, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->PHOTO_PRO_S:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
-    sget-object v3, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->PHOTO_BASIC:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
+    aput-object v7, v6, v4
 
-    sget-object v4, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->VIDEO_BASIC:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
+    sget-object v7, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->PHOTO_PRO_M:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
-    sget-object v5, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->VIDEO_PRO_S:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
+    aput-object v7, v6, v5
 
-    sget-object v6, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->VIDEO_PRO_M:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
+    sget-object v7, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->PHOTO_BASIC:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
-    filled-new-array/range {v1 .. v6}, [Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
+    aput-object v7, v6, v1
 
-    move-result-object v1
+    sget-object v7, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->VIDEO_BASIC:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
-    .line 256
-    invoke-static {v1}, Ljava/util/Arrays;->asList([Ljava/lang/Object;)Ljava/util/List;
+    aput-object v7, v6, v2
 
-    move-result-object v18
+    sget-object v7, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->VIDEO_PRO_S:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
-    const-string v11, "D100"
+    aput-object v7, v6, v15
 
-    const/16 v12, 0x1d
+    sget-object v7, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->VIDEO_PRO_M:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
-    const v14, 0x7f1103dc
+    aput-object v7, v6, v8
 
-    const-string/jumbo v15, "shutter-prio"
+    .line 257
+    invoke-static {v6}, Ljava/util/Arrays;->asList([Ljava/lang/Object;)Ljava/util/List;
 
-    const/16 v17, 0x64
+    move-result-object v33
 
-    move-object v10, v0
+    const-string v26, "D100"
 
-    invoke-direct/range {v10 .. v18}, Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;-><init>(Ljava/lang/String;IIILjava/lang/String;IILjava/util/List;)V
+    const/16 v27, 0x1d
+
+    const v29, 0x7f110411
+
+    const-string/jumbo v30, "shutter-prio"
+
+    const/16 v32, 0x64
+
+    move-object/from16 v25, v0
+
+    invoke-direct/range {v25 .. v33}, Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;-><init>(Ljava/lang/String;IIILjava/lang/String;IILjava/util/List;)V
 
     sput-object v0, Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;->D100:Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;
 
-    .line 259
+    .line 260
     new-instance v0, Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;
 
-    sget-object v1, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->VIDEO_BASIC:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
+    new-array v6, v2, [Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
-    sget-object v2, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->VIDEO_PRO_S:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
+    sget-object v7, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->VIDEO_BASIC:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
-    sget-object v3, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->VIDEO_PRO_M:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
+    aput-object v7, v6, v4
 
-    filled-new-array {v1, v2, v3}, [Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
+    sget-object v7, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->VIDEO_PRO_S:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
-    move-result-object v1
+    aput-object v7, v6, v5
 
-    .line 265
-    invoke-static {v1}, Ljava/util/Arrays;->asList([Ljava/lang/Object;)Ljava/util/List;
+    sget-object v7, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->VIDEO_PRO_M:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
-    move-result-object v9
+    aput-object v7, v6, v1
 
-    const-string v2, "D120"
+    .line 266
+    invoke-static {v6}, Ljava/util/Arrays;->asList([Ljava/lang/Object;)Ljava/util/List;
 
-    const/16 v3, 0x1e
+    move-result-object v24
 
-    const/4 v4, -0x1
+    const-string v17, "D120"
 
-    const v5, 0x7f1103e0
+    const/16 v18, 0x1e
 
-    const-string/jumbo v6, "shutter-prio"
+    const v20, 0x7f110415
 
-    const/16 v8, 0x78
+    const-string/jumbo v21, "shutter-prio"
 
-    move-object v1, v0
+    const/16 v23, 0x78
 
-    invoke-direct/range {v1 .. v9}, Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;-><init>(Ljava/lang/String;IIILjava/lang/String;IILjava/util/List;)V
+    move-object/from16 v16, v0
+
+    invoke-direct/range {v16 .. v24}, Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;-><init>(Ljava/lang/String;IIILjava/lang/String;IILjava/util/List;)V
 
     sput-object v0, Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;->D120:Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;
 
-    .line 267
+    .line 268
     new-instance v0, Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;
 
-    sget-object v1, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->PHOTO_PRO_S:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
+    new-array v6, v3, [Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
-    sget-object v2, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->PHOTO_PRO_M:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
+    sget-object v7, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->PHOTO_PRO_S:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
-    sget-object v3, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->PHOTO_BASIC:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
+    aput-object v7, v6, v4
 
-    sget-object v4, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->VIDEO_BASIC:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
+    sget-object v7, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->PHOTO_PRO_M:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
-    sget-object v5, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->VIDEO_PRO_S:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
+    aput-object v7, v6, v5
 
-    sget-object v6, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->VIDEO_PRO_M:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
+    sget-object v7, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->PHOTO_BASIC:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
-    filled-new-array/range {v1 .. v6}, [Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
+    aput-object v7, v6, v1
 
-    move-result-object v1
+    sget-object v7, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->VIDEO_BASIC:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
-    .line 273
-    invoke-static {v1}, Ljava/util/Arrays;->asList([Ljava/lang/Object;)Ljava/util/List;
+    aput-object v7, v6, v2
 
-    move-result-object v18
+    sget-object v7, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->VIDEO_PRO_S:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
-    const-string v11, "D125"
+    aput-object v7, v6, v15
 
-    const/16 v12, 0x1f
+    sget-object v7, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->VIDEO_PRO_M:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
-    const v14, 0x7f1103e4
+    aput-object v7, v6, v8
 
-    const-string/jumbo v15, "shutter-prio"
+    .line 274
+    invoke-static {v6}, Ljava/util/Arrays;->asList([Ljava/lang/Object;)Ljava/util/List;
 
-    const/16 v17, 0x7d
+    move-result-object v33
 
-    move-object v10, v0
+    const-string v26, "D125"
 
-    invoke-direct/range {v10 .. v18}, Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;-><init>(Ljava/lang/String;IIILjava/lang/String;IILjava/util/List;)V
+    const/16 v27, 0x1f
+
+    const v29, 0x7f110419
+
+    const-string/jumbo v30, "shutter-prio"
+
+    const/16 v32, 0x7d
+
+    move-object/from16 v25, v0
+
+    invoke-direct/range {v25 .. v33}, Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;-><init>(Ljava/lang/String;IIILjava/lang/String;IILjava/util/List;)V
 
     sput-object v0, Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;->D125:Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;
 
-    .line 276
+    .line 277
     new-instance v0, Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;
 
-    sget-object v1, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->PHOTO_PRO_S:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
+    new-array v6, v8, [Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
-    sget-object v2, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->PHOTO_PRO_M:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
+    sget-object v7, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->PHOTO_PRO_S:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
-    sget-object v3, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->PHOTO_BASIC:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
+    aput-object v7, v6, v4
 
-    sget-object v4, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->VIDEO_PRO_S:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
+    sget-object v7, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->PHOTO_PRO_M:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
-    sget-object v5, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->VIDEO_PRO_M:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
+    aput-object v7, v6, v5
 
-    filled-new-array {v1, v2, v3, v4, v5}, [Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
+    sget-object v7, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->PHOTO_BASIC:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
-    move-result-object v1
+    aput-object v7, v6, v1
 
-    .line 282
-    invoke-static {v1}, Ljava/util/Arrays;->asList([Ljava/lang/Object;)Ljava/util/List;
+    sget-object v7, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->VIDEO_PRO_S:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
-    move-result-object v9
+    aput-object v7, v6, v2
 
-    const-string v2, "D160"
+    sget-object v7, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->VIDEO_PRO_M:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
-    const/16 v3, 0x20
+    aput-object v7, v6, v15
 
-    const/4 v4, -0x1
+    .line 283
+    invoke-static {v6}, Ljava/util/Arrays;->asList([Ljava/lang/Object;)Ljava/util/List;
 
-    const v5, 0x7f1103ea
+    move-result-object v24
 
-    const-string/jumbo v6, "shutter-prio"
+    const-string v17, "D160"
 
-    const/16 v8, 0xa0
+    const/16 v18, 0x20
 
-    move-object v1, v0
+    const v20, 0x7f11041f
 
-    invoke-direct/range {v1 .. v9}, Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;-><init>(Ljava/lang/String;IIILjava/lang/String;IILjava/util/List;)V
+    const-string/jumbo v21, "shutter-prio"
+
+    const/16 v23, 0xa0
+
+    move-object/from16 v16, v0
+
+    invoke-direct/range {v16 .. v24}, Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;-><init>(Ljava/lang/String;IIILjava/lang/String;IILjava/util/List;)V
 
     sput-object v0, Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;->D160:Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;
 
-    .line 285
+    .line 286
     new-instance v0, Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;
 
-    sget-object v1, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->PHOTO_PRO_S:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
+    new-array v6, v8, [Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
-    sget-object v2, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->PHOTO_PRO_M:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
+    sget-object v7, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->PHOTO_PRO_S:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
-    sget-object v3, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->PHOTO_BASIC:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
+    aput-object v7, v6, v4
 
-    sget-object v4, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->VIDEO_PRO_S:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
+    sget-object v7, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->PHOTO_PRO_M:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
-    sget-object v5, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->VIDEO_PRO_M:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
+    aput-object v7, v6, v5
 
-    filled-new-array {v1, v2, v3, v4, v5}, [Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
+    sget-object v7, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->PHOTO_BASIC:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
-    move-result-object v1
+    aput-object v7, v6, v1
 
-    .line 291
-    invoke-static {v1}, Ljava/util/Arrays;->asList([Ljava/lang/Object;)Ljava/util/List;
+    sget-object v7, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->VIDEO_PRO_S:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
-    move-result-object v18
+    aput-object v7, v6, v2
 
-    const-string v11, "D200"
+    sget-object v7, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->VIDEO_PRO_M:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
-    const/16 v12, 0x21
+    aput-object v7, v6, v15
 
-    const v14, 0x7f1103ee
+    .line 292
+    invoke-static {v6}, Ljava/util/Arrays;->asList([Ljava/lang/Object;)Ljava/util/List;
 
-    const-string/jumbo v15, "shutter-prio"
+    move-result-object v33
 
-    const/16 v17, 0xc8
+    const-string v26, "D200"
 
-    move-object v10, v0
+    const/16 v27, 0x21
 
-    invoke-direct/range {v10 .. v18}, Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;-><init>(Ljava/lang/String;IIILjava/lang/String;IILjava/util/List;)V
+    const v29, 0x7f110423
+
+    const-string/jumbo v30, "shutter-prio"
+
+    const/16 v32, 0xc8
+
+    move-object/from16 v25, v0
+
+    invoke-direct/range {v25 .. v33}, Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;-><init>(Ljava/lang/String;IIILjava/lang/String;IILjava/util/List;)V
 
     sput-object v0, Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;->D200:Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;
 
-    .line 294
+    .line 295
     new-instance v0, Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;
 
-    sget-object v1, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->VIDEO_BASIC:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
+    new-array v6, v2, [Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
-    sget-object v2, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->VIDEO_PRO_S:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
+    sget-object v7, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->VIDEO_BASIC:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
-    sget-object v3, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->VIDEO_PRO_M:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
+    aput-object v7, v6, v4
 
-    filled-new-array {v1, v2, v3}, [Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
+    sget-object v7, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->VIDEO_PRO_S:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
-    move-result-object v1
+    aput-object v7, v6, v5
 
-    .line 300
-    invoke-static {v1}, Ljava/util/Arrays;->asList([Ljava/lang/Object;)Ljava/util/List;
+    sget-object v7, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->VIDEO_PRO_M:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
-    move-result-object v9
+    aput-object v7, v6, v1
 
-    const-string v2, "D240"
+    .line 301
+    invoke-static {v6}, Ljava/util/Arrays;->asList([Ljava/lang/Object;)Ljava/util/List;
 
-    const/16 v3, 0x22
+    move-result-object v24
 
-    const/4 v4, -0x1
+    const-string v17, "D240"
 
-    const v5, 0x7f1103f0
+    const/16 v18, 0x22
 
-    const-string/jumbo v6, "shutter-prio"
+    const v20, 0x7f110425
 
-    const/16 v8, 0xf0
+    const-string/jumbo v21, "shutter-prio"
 
-    move-object v1, v0
+    const/16 v23, 0xf0
 
-    invoke-direct/range {v1 .. v9}, Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;-><init>(Ljava/lang/String;IIILjava/lang/String;IILjava/util/List;)V
+    move-object/from16 v16, v0
+
+    invoke-direct/range {v16 .. v24}, Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;-><init>(Ljava/lang/String;IIILjava/lang/String;IILjava/util/List;)V
 
     sput-object v0, Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;->D240:Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;
 
-    .line 302
+    .line 303
     new-instance v0, Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;
 
-    sget-object v1, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->PHOTO_PRO_S:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
+    new-array v6, v3, [Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
-    sget-object v2, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->PHOTO_PRO_M:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
+    sget-object v7, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->PHOTO_PRO_S:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
-    sget-object v3, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->PHOTO_BASIC:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
+    aput-object v7, v6, v4
 
-    sget-object v4, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->VIDEO_BASIC:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
+    sget-object v7, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->PHOTO_PRO_M:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
-    sget-object v5, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->VIDEO_PRO_S:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
+    aput-object v7, v6, v5
 
-    sget-object v6, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->VIDEO_PRO_M:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
+    sget-object v7, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->PHOTO_BASIC:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
-    filled-new-array/range {v1 .. v6}, [Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
+    aput-object v7, v6, v1
 
-    move-result-object v1
+    sget-object v7, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->VIDEO_BASIC:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
-    .line 308
-    invoke-static {v1}, Ljava/util/Arrays;->asList([Ljava/lang/Object;)Ljava/util/List;
+    aput-object v7, v6, v2
 
-    move-result-object v18
+    sget-object v7, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->VIDEO_PRO_S:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
-    const-string v11, "D250"
+    aput-object v7, v6, v15
 
-    const/16 v12, 0x23
+    sget-object v7, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->VIDEO_PRO_M:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
-    const v14, 0x7f1103f5
+    aput-object v7, v6, v8
 
-    const-string/jumbo v15, "shutter-prio"
+    .line 309
+    invoke-static {v6}, Ljava/util/Arrays;->asList([Ljava/lang/Object;)Ljava/util/List;
 
-    const/16 v17, 0xfa
+    move-result-object v33
 
-    move-object v10, v0
+    const-string v26, "D250"
 
-    invoke-direct/range {v10 .. v18}, Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;-><init>(Ljava/lang/String;IIILjava/lang/String;IILjava/util/List;)V
+    const/16 v27, 0x23
+
+    const v29, 0x7f11042a
+
+    const-string/jumbo v30, "shutter-prio"
+
+    const/16 v32, 0xfa
+
+    move-object/from16 v25, v0
+
+    invoke-direct/range {v25 .. v33}, Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;-><init>(Ljava/lang/String;IIILjava/lang/String;IILjava/util/List;)V
 
     sput-object v0, Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;->D250:Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;
 
-    .line 311
+    .line 312
     new-instance v0, Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;
 
-    sget-object v1, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->PHOTO_PRO_S:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
+    new-array v6, v8, [Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
-    sget-object v2, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->PHOTO_PRO_M:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
+    sget-object v7, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->PHOTO_PRO_S:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
-    sget-object v3, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->PHOTO_BASIC:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
+    aput-object v7, v6, v4
 
-    sget-object v4, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->VIDEO_PRO_S:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
+    sget-object v7, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->PHOTO_PRO_M:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
-    sget-object v5, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->VIDEO_PRO_M:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
+    aput-object v7, v6, v5
 
-    filled-new-array {v1, v2, v3, v4, v5}, [Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
+    sget-object v7, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->PHOTO_BASIC:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
-    move-result-object v1
+    aput-object v7, v6, v1
 
-    .line 317
-    invoke-static {v1}, Ljava/util/Arrays;->asList([Ljava/lang/Object;)Ljava/util/List;
+    sget-object v7, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->VIDEO_PRO_S:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
-    move-result-object v9
+    aput-object v7, v6, v2
 
-    const-string v2, "D320"
+    sget-object v7, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->VIDEO_PRO_M:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
-    const/16 v3, 0x24
+    aput-object v7, v6, v15
 
-    const/4 v4, -0x1
+    .line 318
+    invoke-static {v6}, Ljava/util/Arrays;->asList([Ljava/lang/Object;)Ljava/util/List;
 
-    const v5, 0x7f1103fb
+    move-result-object v24
 
-    const-string/jumbo v6, "shutter-prio"
+    const-string v17, "D320"
 
-    const/16 v8, 0x140
+    const/16 v18, 0x24
 
-    move-object v1, v0
+    const v20, 0x7f110430
 
-    invoke-direct/range {v1 .. v9}, Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;-><init>(Ljava/lang/String;IIILjava/lang/String;IILjava/util/List;)V
+    const-string/jumbo v21, "shutter-prio"
+
+    const/16 v23, 0x140
+
+    move-object/from16 v16, v0
+
+    invoke-direct/range {v16 .. v24}, Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;-><init>(Ljava/lang/String;IIILjava/lang/String;IILjava/util/List;)V
 
     sput-object v0, Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;->D320:Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;
 
-    .line 320
+    .line 321
     new-instance v0, Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;
 
-    sget-object v1, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->PHOTO_PRO_S:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
+    new-array v6, v8, [Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
-    sget-object v2, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->PHOTO_PRO_M:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
+    sget-object v7, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->PHOTO_PRO_S:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
-    sget-object v3, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->PHOTO_BASIC:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
+    aput-object v7, v6, v4
 
-    sget-object v4, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->VIDEO_PRO_S:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
+    sget-object v7, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->PHOTO_PRO_M:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
-    sget-object v5, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->VIDEO_PRO_M:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
+    aput-object v7, v6, v5
 
-    filled-new-array {v1, v2, v3, v4, v5}, [Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
+    sget-object v7, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->PHOTO_BASIC:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
-    move-result-object v1
+    aput-object v7, v6, v1
 
-    .line 326
-    invoke-static {v1}, Ljava/util/Arrays;->asList([Ljava/lang/Object;)Ljava/util/List;
+    sget-object v7, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->VIDEO_PRO_S:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
-    move-result-object v18
+    aput-object v7, v6, v2
 
-    const-string v11, "D400"
+    sget-object v7, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->VIDEO_PRO_M:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
-    const/16 v12, 0x25
+    aput-object v7, v6, v15
 
-    const v14, 0x7f110400
+    .line 327
+    invoke-static {v6}, Ljava/util/Arrays;->asList([Ljava/lang/Object;)Ljava/util/List;
 
-    const-string/jumbo v15, "shutter-prio"
+    move-result-object v33
 
-    const/16 v17, 0x190
+    const-string v26, "D400"
 
-    move-object v10, v0
+    const/16 v27, 0x25
 
-    invoke-direct/range {v10 .. v18}, Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;-><init>(Ljava/lang/String;IIILjava/lang/String;IILjava/util/List;)V
+    const v29, 0x7f110435
+
+    const-string/jumbo v30, "shutter-prio"
+
+    const/16 v32, 0x190
+
+    move-object/from16 v25, v0
+
+    invoke-direct/range {v25 .. v33}, Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;-><init>(Ljava/lang/String;IIILjava/lang/String;IILjava/util/List;)V
 
     sput-object v0, Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;->D400:Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;
 
-    .line 329
+    .line 330
     new-instance v0, Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;
 
-    sget-object v1, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->PHOTO_PRO_S:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
+    new-array v6, v3, [Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
-    sget-object v2, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->PHOTO_PRO_M:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
+    sget-object v7, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->PHOTO_PRO_S:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
-    sget-object v3, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->PHOTO_BASIC:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
+    aput-object v7, v6, v4
 
-    sget-object v4, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->VIDEO_BASIC:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
+    sget-object v7, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->PHOTO_PRO_M:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
-    sget-object v5, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->VIDEO_PRO_S:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
+    aput-object v7, v6, v5
 
-    sget-object v6, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->VIDEO_PRO_M:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
+    sget-object v7, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->PHOTO_BASIC:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
-    filled-new-array/range {v1 .. v6}, [Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
+    aput-object v7, v6, v1
 
-    move-result-object v1
+    sget-object v7, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->VIDEO_BASIC:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
-    .line 335
-    invoke-static {v1}, Ljava/util/Arrays;->asList([Ljava/lang/Object;)Ljava/util/List;
+    aput-object v7, v6, v2
 
-    move-result-object v9
+    sget-object v7, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->VIDEO_PRO_S:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
-    const-string v2, "D500"
+    aput-object v7, v6, v15
 
-    const/16 v3, 0x26
+    sget-object v7, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->VIDEO_PRO_M:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
-    const/4 v4, -0x1
+    aput-object v7, v6, v8
 
-    const v5, 0x7f110406
+    .line 336
+    invoke-static {v6}, Ljava/util/Arrays;->asList([Ljava/lang/Object;)Ljava/util/List;
 
-    const-string/jumbo v6, "shutter-prio"
+    move-result-object v24
 
-    const/16 v8, 0x1f4
+    const-string v17, "D500"
 
-    move-object v1, v0
+    const/16 v18, 0x26
 
-    invoke-direct/range {v1 .. v9}, Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;-><init>(Ljava/lang/String;IIILjava/lang/String;IILjava/util/List;)V
+    const v20, 0x7f11043b
+
+    const-string/jumbo v21, "shutter-prio"
+
+    const/16 v23, 0x1f4
+
+    move-object/from16 v16, v0
+
+    invoke-direct/range {v16 .. v24}, Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;-><init>(Ljava/lang/String;IIILjava/lang/String;IILjava/util/List;)V
 
     sput-object v0, Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;->D500:Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;
 
-    .line 338
+    .line 339
     new-instance v0, Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;
 
-    sget-object v1, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->PHOTO_PRO_S:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
+    new-array v6, v8, [Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
-    sget-object v2, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->PHOTO_PRO_M:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
+    sget-object v7, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->PHOTO_PRO_S:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
-    sget-object v3, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->PHOTO_BASIC:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
+    aput-object v7, v6, v4
 
-    sget-object v4, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->VIDEO_PRO_S:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
+    sget-object v7, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->PHOTO_PRO_M:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
-    sget-object v5, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->VIDEO_PRO_M:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
+    aput-object v7, v6, v5
 
-    filled-new-array {v1, v2, v3, v4, v5}, [Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
+    sget-object v7, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->PHOTO_BASIC:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
-    move-result-object v1
+    aput-object v7, v6, v1
 
-    .line 344
-    invoke-static {v1}, Ljava/util/Arrays;->asList([Ljava/lang/Object;)Ljava/util/List;
+    sget-object v7, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->VIDEO_PRO_S:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
-    move-result-object v18
+    aput-object v7, v6, v2
 
-    const-string v11, "D640"
+    sget-object v7, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->VIDEO_PRO_M:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
-    const/16 v12, 0x27
+    aput-object v7, v6, v15
 
-    const v14, 0x7f11040c
+    .line 345
+    invoke-static {v6}, Ljava/util/Arrays;->asList([Ljava/lang/Object;)Ljava/util/List;
 
-    const-string/jumbo v15, "shutter-prio"
+    move-result-object v33
 
-    const/16 v17, 0x280
+    const-string v26, "D640"
 
-    move-object v10, v0
+    const/16 v27, 0x27
 
-    invoke-direct/range {v10 .. v18}, Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;-><init>(Ljava/lang/String;IIILjava/lang/String;IILjava/util/List;)V
+    const v29, 0x7f110441
+
+    const-string/jumbo v30, "shutter-prio"
+
+    const/16 v32, 0x280
+
+    move-object/from16 v25, v0
+
+    invoke-direct/range {v25 .. v33}, Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;-><init>(Ljava/lang/String;IIILjava/lang/String;IILjava/util/List;)V
 
     sput-object v0, Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;->D640:Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;
 
-    .line 347
+    .line 348
     new-instance v0, Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;
 
-    sget-object v1, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->PHOTO_PRO_S:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
+    new-array v6, v8, [Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
-    sget-object v2, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->PHOTO_PRO_M:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
+    sget-object v7, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->PHOTO_PRO_S:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
-    sget-object v3, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->PHOTO_BASIC:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
+    aput-object v7, v6, v4
 
-    sget-object v4, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->VIDEO_PRO_S:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
+    sget-object v7, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->PHOTO_PRO_M:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
-    sget-object v5, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->VIDEO_PRO_M:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
+    aput-object v7, v6, v5
 
-    filled-new-array {v1, v2, v3, v4, v5}, [Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
+    sget-object v7, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->PHOTO_BASIC:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
-    move-result-object v1
+    aput-object v7, v6, v1
 
-    .line 353
-    invoke-static {v1}, Ljava/util/Arrays;->asList([Ljava/lang/Object;)Ljava/util/List;
+    sget-object v7, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->VIDEO_PRO_S:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
-    move-result-object v9
+    aput-object v7, v6, v2
 
-    const-string v2, "D800"
+    sget-object v7, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->VIDEO_PRO_M:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
-    const/16 v3, 0x28
+    aput-object v7, v6, v15
 
-    const/4 v4, -0x1
+    .line 354
+    invoke-static {v6}, Ljava/util/Arrays;->asList([Ljava/lang/Object;)Ljava/util/List;
 
-    const v5, 0x7f110410
+    move-result-object v24
 
-    const-string/jumbo v6, "shutter-prio"
+    const-string v17, "D800"
 
-    const/16 v8, 0x320
+    const/16 v18, 0x28
 
-    move-object v1, v0
+    const v20, 0x7f110445
 
-    invoke-direct/range {v1 .. v9}, Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;-><init>(Ljava/lang/String;IIILjava/lang/String;IILjava/util/List;)V
+    const-string/jumbo v21, "shutter-prio"
+
+    const/16 v23, 0x320
+
+    move-object/from16 v16, v0
+
+    invoke-direct/range {v16 .. v24}, Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;-><init>(Ljava/lang/String;IIILjava/lang/String;IILjava/util/List;)V
 
     sput-object v0, Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;->D800:Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;
 
-    .line 356
+    .line 357
     new-instance v0, Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;
 
-    sget-object v1, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->PHOTO_PRO_S:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
+    new-array v6, v3, [Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
-    sget-object v2, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->PHOTO_PRO_M:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
+    sget-object v7, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->PHOTO_PRO_S:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
-    sget-object v3, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->PHOTO_BASIC:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
+    aput-object v7, v6, v4
 
-    sget-object v4, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->VIDEO_BASIC:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
+    sget-object v7, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->PHOTO_PRO_M:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
-    sget-object v5, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->VIDEO_PRO_S:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
+    aput-object v7, v6, v5
 
-    sget-object v6, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->VIDEO_PRO_M:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
+    sget-object v7, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->PHOTO_BASIC:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
-    filled-new-array/range {v1 .. v6}, [Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
+    aput-object v7, v6, v1
 
-    move-result-object v1
+    sget-object v7, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->VIDEO_BASIC:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
-    .line 362
-    invoke-static {v1}, Ljava/util/Arrays;->asList([Ljava/lang/Object;)Ljava/util/List;
+    aput-object v7, v6, v2
 
-    move-result-object v18
+    sget-object v7, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->VIDEO_PRO_S:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
-    const-string v11, "D1000"
+    aput-object v7, v6, v15
 
-    const/16 v12, 0x29
+    sget-object v7, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->VIDEO_PRO_M:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
-    const v14, 0x7f1103db
+    aput-object v7, v6, v8
 
-    const-string/jumbo v15, "shutter-prio"
+    .line 363
+    invoke-static {v6}, Ljava/util/Arrays;->asList([Ljava/lang/Object;)Ljava/util/List;
 
-    const/16 v17, 0x3e8
+    move-result-object v33
 
-    move-object v10, v0
+    const-string v26, "D1000"
 
-    invoke-direct/range {v10 .. v18}, Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;-><init>(Ljava/lang/String;IIILjava/lang/String;IILjava/util/List;)V
+    const/16 v27, 0x29
+
+    const v29, 0x7f110410
+
+    const-string/jumbo v30, "shutter-prio"
+
+    const/16 v32, 0x3e8
+
+    move-object/from16 v25, v0
+
+    invoke-direct/range {v25 .. v33}, Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;-><init>(Ljava/lang/String;IIILjava/lang/String;IILjava/util/List;)V
 
     sput-object v0, Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;->D1000:Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;
 
-    .line 365
+    .line 366
     new-instance v0, Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;
 
-    sget-object v1, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->PHOTO_PRO_S:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
+    new-array v6, v8, [Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
-    sget-object v2, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->PHOTO_PRO_M:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
+    sget-object v7, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->PHOTO_PRO_S:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
-    sget-object v3, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->PHOTO_BASIC:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
+    aput-object v7, v6, v4
 
-    sget-object v4, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->VIDEO_PRO_S:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
+    sget-object v7, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->PHOTO_PRO_M:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
-    sget-object v5, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->VIDEO_PRO_M:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
+    aput-object v7, v6, v5
 
-    filled-new-array {v1, v2, v3, v4, v5}, [Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
+    sget-object v7, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->PHOTO_BASIC:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
-    move-result-object v1
+    aput-object v7, v6, v1
 
-    .line 371
-    invoke-static {v1}, Ljava/util/Arrays;->asList([Ljava/lang/Object;)Ljava/util/List;
+    sget-object v7, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->VIDEO_PRO_S:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
-    move-result-object v9
+    aput-object v7, v6, v2
 
-    const-string v2, "D1250"
+    sget-object v7, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->VIDEO_PRO_M:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
-    const/16 v3, 0x2a
+    aput-object v7, v6, v15
 
-    const/4 v4, -0x1
+    .line 372
+    invoke-static {v6}, Ljava/util/Arrays;->asList([Ljava/lang/Object;)Ljava/util/List;
 
-    const v5, 0x7f1103e3
+    move-result-object v24
 
-    const-string/jumbo v6, "shutter-prio"
+    const-string v17, "D1250"
 
-    const/16 v8, 0x4e2
+    const/16 v18, 0x2a
 
-    move-object v1, v0
+    const v20, 0x7f110418
 
-    invoke-direct/range {v1 .. v9}, Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;-><init>(Ljava/lang/String;IIILjava/lang/String;IILjava/util/List;)V
+    const-string/jumbo v21, "shutter-prio"
+
+    const/16 v23, 0x4e2
+
+    move-object/from16 v16, v0
+
+    invoke-direct/range {v16 .. v24}, Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;-><init>(Ljava/lang/String;IIILjava/lang/String;IILjava/util/List;)V
 
     sput-object v0, Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;->D1250:Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;
 
-    .line 374
+    .line 375
     new-instance v0, Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;
 
-    sget-object v1, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->PHOTO_PRO_S:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
+    new-array v6, v8, [Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
-    sget-object v2, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->PHOTO_PRO_M:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
+    sget-object v7, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->PHOTO_PRO_S:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
-    sget-object v3, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->PHOTO_BASIC:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
+    aput-object v7, v6, v4
 
-    sget-object v4, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->VIDEO_PRO_S:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
+    sget-object v7, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->PHOTO_PRO_M:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
-    sget-object v5, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->VIDEO_PRO_M:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
+    aput-object v7, v6, v5
 
-    filled-new-array {v1, v2, v3, v4, v5}, [Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
+    sget-object v7, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->PHOTO_BASIC:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
-    move-result-object v1
+    aput-object v7, v6, v1
 
-    .line 380
-    invoke-static {v1}, Ljava/util/Arrays;->asList([Ljava/lang/Object;)Ljava/util/List;
+    sget-object v7, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->VIDEO_PRO_S:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
-    move-result-object v18
+    aput-object v7, v6, v2
 
-    const-string v11, "D1600"
+    sget-object v7, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->VIDEO_PRO_M:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
-    const/16 v12, 0x2b
+    aput-object v7, v6, v15
 
-    const v14, 0x7f1103e9
+    .line 381
+    invoke-static {v6}, Ljava/util/Arrays;->asList([Ljava/lang/Object;)Ljava/util/List;
 
-    const-string/jumbo v15, "shutter-prio"
+    move-result-object v33
 
-    const/16 v17, 0x640
+    const-string v26, "D1600"
 
-    move-object v10, v0
+    const/16 v27, 0x2b
 
-    invoke-direct/range {v10 .. v18}, Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;-><init>(Ljava/lang/String;IIILjava/lang/String;IILjava/util/List;)V
+    const v29, 0x7f11041e
+
+    const-string/jumbo v30, "shutter-prio"
+
+    const/16 v32, 0x640
+
+    move-object/from16 v25, v0
+
+    invoke-direct/range {v25 .. v33}, Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;-><init>(Ljava/lang/String;IIILjava/lang/String;IILjava/util/List;)V
 
     sput-object v0, Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;->D1600:Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;
 
-    .line 383
+    .line 384
     new-instance v0, Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;
 
-    sget-object v1, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->PHOTO_PRO_S:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
+    new-array v6, v3, [Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
-    sget-object v2, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->PHOTO_PRO_M:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
+    sget-object v7, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->PHOTO_PRO_S:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
-    sget-object v3, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->PHOTO_BASIC:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
+    aput-object v7, v6, v4
 
-    sget-object v4, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->VIDEO_BASIC:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
+    sget-object v7, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->PHOTO_PRO_M:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
-    sget-object v5, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->VIDEO_PRO_S:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
+    aput-object v7, v6, v5
 
-    sget-object v6, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->VIDEO_PRO_M:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
+    sget-object v7, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->PHOTO_BASIC:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
-    filled-new-array/range {v1 .. v6}, [Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
+    aput-object v7, v6, v1
 
-    move-result-object v1
+    sget-object v7, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->VIDEO_BASIC:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
-    .line 389
-    invoke-static {v1}, Ljava/util/Arrays;->asList([Ljava/lang/Object;)Ljava/util/List;
+    aput-object v7, v6, v2
 
-    move-result-object v9
+    sget-object v7, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->VIDEO_PRO_S:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
-    const-string v2, "D2000"
+    aput-object v7, v6, v15
 
-    const/16 v3, 0x2c
+    sget-object v7, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->VIDEO_PRO_M:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
-    const/4 v4, -0x1
+    aput-object v7, v6, v8
 
-    const v5, 0x7f1103ed
+    .line 390
+    invoke-static {v6}, Ljava/util/Arrays;->asList([Ljava/lang/Object;)Ljava/util/List;
 
-    const-string/jumbo v6, "shutter-prio"
+    move-result-object v24
 
-    const/16 v8, 0x7d0
+    const-string v17, "D2000"
 
-    move-object v1, v0
+    const/16 v18, 0x2c
 
-    invoke-direct/range {v1 .. v9}, Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;-><init>(Ljava/lang/String;IIILjava/lang/String;IILjava/util/List;)V
+    const v20, 0x7f110422
+
+    const-string/jumbo v21, "shutter-prio"
+
+    const/16 v23, 0x7d0
+
+    move-object/from16 v16, v0
+
+    invoke-direct/range {v16 .. v24}, Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;-><init>(Ljava/lang/String;IIILjava/lang/String;IILjava/util/List;)V
 
     sput-object v0, Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;->D2000:Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;
 
-    .line 392
+    .line 393
     new-instance v0, Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;
 
-    sget-object v1, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->PHOTO_PRO_S:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
+    new-array v6, v8, [Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
-    sget-object v2, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->PHOTO_PRO_M:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
+    sget-object v7, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->PHOTO_PRO_S:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
-    sget-object v3, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->PHOTO_BASIC:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
+    aput-object v7, v6, v4
 
-    sget-object v4, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->VIDEO_PRO_S:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
+    sget-object v7, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->PHOTO_PRO_M:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
-    sget-object v5, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->VIDEO_PRO_M:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
+    aput-object v7, v6, v5
 
-    filled-new-array {v1, v2, v3, v4, v5}, [Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
+    sget-object v7, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->PHOTO_BASIC:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
-    move-result-object v1
+    aput-object v7, v6, v1
 
-    .line 398
-    invoke-static {v1}, Ljava/util/Arrays;->asList([Ljava/lang/Object;)Ljava/util/List;
+    sget-object v7, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->VIDEO_PRO_S:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
-    move-result-object v18
+    aput-object v7, v6, v2
 
-    const-string v11, "D2500"
+    sget-object v7, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->VIDEO_PRO_M:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
-    const/16 v12, 0x2d
+    aput-object v7, v6, v15
 
-    const v14, 0x7f1103f4
+    .line 399
+    invoke-static {v6}, Ljava/util/Arrays;->asList([Ljava/lang/Object;)Ljava/util/List;
 
-    const-string/jumbo v15, "shutter-prio"
+    move-result-object v33
 
-    const/16 v17, 0x9c4
+    const-string v26, "D2500"
 
-    move-object v10, v0
+    const/16 v27, 0x2d
 
-    invoke-direct/range {v10 .. v18}, Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;-><init>(Ljava/lang/String;IIILjava/lang/String;IILjava/util/List;)V
+    const v29, 0x7f110429
+
+    const-string/jumbo v30, "shutter-prio"
+
+    const/16 v32, 0x9c4
+
+    move-object/from16 v25, v0
+
+    invoke-direct/range {v25 .. v33}, Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;-><init>(Ljava/lang/String;IIILjava/lang/String;IILjava/util/List;)V
 
     sput-object v0, Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;->D2500:Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;
 
-    .line 401
+    .line 402
     new-instance v0, Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;
 
-    sget-object v1, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->PHOTO_PRO_S:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
+    new-array v6, v8, [Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
-    sget-object v2, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->PHOTO_PRO_M:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
+    sget-object v7, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->PHOTO_PRO_S:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
-    sget-object v3, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->PHOTO_BASIC:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
+    aput-object v7, v6, v4
 
-    sget-object v4, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->VIDEO_PRO_S:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
+    sget-object v7, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->PHOTO_PRO_M:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
-    sget-object v5, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->VIDEO_PRO_M:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
+    aput-object v7, v6, v5
 
-    filled-new-array {v1, v2, v3, v4, v5}, [Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
+    sget-object v7, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->PHOTO_BASIC:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
-    move-result-object v1
+    aput-object v7, v6, v1
 
-    .line 407
-    invoke-static {v1}, Ljava/util/Arrays;->asList([Ljava/lang/Object;)Ljava/util/List;
+    sget-object v7, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->VIDEO_PRO_S:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
-    move-result-object v9
+    aput-object v7, v6, v2
 
-    const-string v2, "D3200"
+    sget-object v7, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->VIDEO_PRO_M:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
-    const/16 v3, 0x2e
+    aput-object v7, v6, v15
 
-    const/4 v4, -0x1
+    .line 408
+    invoke-static {v6}, Ljava/util/Arrays;->asList([Ljava/lang/Object;)Ljava/util/List;
 
-    const v5, 0x7f1103fa
+    move-result-object v24
 
-    const-string/jumbo v6, "shutter-prio"
+    const-string v17, "D3200"
 
-    const/16 v8, 0xc80
+    const/16 v18, 0x2e
 
-    move-object v1, v0
+    const v20, 0x7f11042f
 
-    invoke-direct/range {v1 .. v9}, Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;-><init>(Ljava/lang/String;IIILjava/lang/String;IILjava/util/List;)V
+    const-string/jumbo v21, "shutter-prio"
+
+    const/16 v23, 0xc80
+
+    move-object/from16 v16, v0
+
+    invoke-direct/range {v16 .. v24}, Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;-><init>(Ljava/lang/String;IIILjava/lang/String;IILjava/util/List;)V
 
     sput-object v0, Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;->D3200:Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;
 
-    .line 410
+    .line 411
     new-instance v0, Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;
 
-    sget-object v1, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->PHOTO_PRO_S:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
+    new-array v6, v3, [Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
-    sget-object v2, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->PHOTO_PRO_M:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
+    sget-object v7, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->PHOTO_PRO_S:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
-    sget-object v3, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->PHOTO_BASIC:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
+    aput-object v7, v6, v4
 
-    sget-object v4, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->VIDEO_BASIC:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
+    sget-object v7, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->PHOTO_PRO_M:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
-    sget-object v5, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->VIDEO_PRO_S:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
+    aput-object v7, v6, v5
 
-    sget-object v6, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->VIDEO_PRO_M:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
+    sget-object v7, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->PHOTO_BASIC:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
-    filled-new-array/range {v1 .. v6}, [Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
+    aput-object v7, v6, v1
 
-    move-result-object v1
+    sget-object v7, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->VIDEO_BASIC:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
-    .line 416
-    invoke-static {v1}, Ljava/util/Arrays;->asList([Ljava/lang/Object;)Ljava/util/List;
+    aput-object v7, v6, v2
 
-    move-result-object v18
+    sget-object v7, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->VIDEO_PRO_S:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
-    const-string v11, "D4000"
+    aput-object v7, v6, v15
 
-    const/16 v12, 0x2f
+    sget-object v7, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->VIDEO_PRO_M:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
-    const v14, 0x7f1103ff
+    aput-object v7, v6, v8
 
-    const-string/jumbo v15, "shutter-prio"
+    .line 417
+    invoke-static {v6}, Ljava/util/Arrays;->asList([Ljava/lang/Object;)Ljava/util/List;
 
-    const/16 v17, 0xfa0
+    move-result-object v33
 
-    move-object v10, v0
+    const-string v26, "D4000"
 
-    invoke-direct/range {v10 .. v18}, Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;-><init>(Ljava/lang/String;IIILjava/lang/String;IILjava/util/List;)V
+    const/16 v27, 0x2f
+
+    const v29, 0x7f110434
+
+    const-string/jumbo v30, "shutter-prio"
+
+    const/16 v32, 0xfa0
+
+    move-object/from16 v25, v0
+
+    invoke-direct/range {v25 .. v33}, Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;-><init>(Ljava/lang/String;IIILjava/lang/String;IILjava/util/List;)V
 
     sput-object v0, Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;->D4000:Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;
 
-    .line 419
+    .line 420
     new-instance v0, Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;
 
-    sget-object v1, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->PHOTO_PRO_S:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
+    new-array v6, v8, [Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
-    sget-object v2, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->PHOTO_PRO_M:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
+    sget-object v7, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->PHOTO_PRO_S:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
-    sget-object v3, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->PHOTO_BASIC:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
+    aput-object v7, v6, v4
 
-    sget-object v4, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->VIDEO_PRO_S:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
+    sget-object v7, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->PHOTO_PRO_M:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
-    sget-object v5, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->VIDEO_PRO_M:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
+    aput-object v7, v6, v5
 
-    filled-new-array {v1, v2, v3, v4, v5}, [Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
+    sget-object v7, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->PHOTO_BASIC:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
-    move-result-object v1
+    aput-object v7, v6, v1
 
-    .line 425
-    invoke-static {v1}, Ljava/util/Arrays;->asList([Ljava/lang/Object;)Ljava/util/List;
+    sget-object v7, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->VIDEO_PRO_S:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
-    move-result-object v9
+    aput-object v7, v6, v2
 
-    const-string v2, "D5000"
+    sget-object v7, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->VIDEO_PRO_M:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
-    const/16 v3, 0x30
+    aput-object v7, v6, v15
 
-    const/4 v4, -0x1
+    .line 426
+    invoke-static {v6}, Ljava/util/Arrays;->asList([Ljava/lang/Object;)Ljava/util/List;
 
-    const v5, 0x7f110405
+    move-result-object v24
 
-    const-string/jumbo v6, "shutter-prio"
+    const-string v17, "D5000"
 
-    const/16 v8, 0x1388
+    const/16 v18, 0x30
 
-    move-object v1, v0
+    const v20, 0x7f11043a
 
-    invoke-direct/range {v1 .. v9}, Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;-><init>(Ljava/lang/String;IIILjava/lang/String;IILjava/util/List;)V
+    const-string/jumbo v21, "shutter-prio"
+
+    const/16 v23, 0x1388
+
+    move-object/from16 v16, v0
+
+    invoke-direct/range {v16 .. v24}, Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;-><init>(Ljava/lang/String;IIILjava/lang/String;IILjava/util/List;)V
 
     sput-object v0, Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;->D5000:Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;
 
-    .line 428
+    .line 429
     new-instance v0, Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;
 
-    sget-object v1, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->PHOTO_PRO_S:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
+    new-array v6, v8, [Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
-    sget-object v2, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->PHOTO_PRO_M:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
+    sget-object v7, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->PHOTO_PRO_S:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
-    sget-object v3, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->PHOTO_BASIC:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
+    aput-object v7, v6, v4
 
-    sget-object v4, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->VIDEO_PRO_S:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
+    sget-object v7, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->PHOTO_PRO_M:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
-    sget-object v5, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->VIDEO_PRO_M:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
+    aput-object v7, v6, v5
 
-    filled-new-array {v1, v2, v3, v4, v5}, [Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
+    sget-object v7, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->PHOTO_BASIC:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
-    move-result-object v1
+    aput-object v7, v6, v1
 
-    .line 434
-    invoke-static {v1}, Ljava/util/Arrays;->asList([Ljava/lang/Object;)Ljava/util/List;
+    sget-object v7, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->VIDEO_PRO_S:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
-    move-result-object v18
+    aput-object v7, v6, v2
 
-    const-string v11, "D6400"
+    sget-object v7, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->VIDEO_PRO_M:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
-    const/16 v12, 0x31
+    aput-object v7, v6, v15
 
-    const v14, 0x7f11040b
+    .line 435
+    invoke-static {v6}, Ljava/util/Arrays;->asList([Ljava/lang/Object;)Ljava/util/List;
 
-    const-string/jumbo v15, "shutter-prio"
+    move-result-object v33
 
-    const/16 v17, 0x1900
+    const-string v26, "D6400"
 
-    move-object v10, v0
+    const/16 v27, 0x31
 
-    invoke-direct/range {v10 .. v18}, Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;-><init>(Ljava/lang/String;IIILjava/lang/String;IILjava/util/List;)V
+    const v29, 0x7f110440
+
+    const-string/jumbo v30, "shutter-prio"
+
+    const/16 v32, 0x1900
+
+    move-object/from16 v25, v0
+
+    invoke-direct/range {v25 .. v33}, Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;-><init>(Ljava/lang/String;IIILjava/lang/String;IILjava/util/List;)V
 
     sput-object v0, Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;->D6400:Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;
 
-    .line 437
+    .line 438
     new-instance v0, Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;
 
-    sget-object v1, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->PHOTO_PRO_S:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
+    new-array v3, v3, [Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
-    sget-object v2, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->PHOTO_PRO_M:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
+    sget-object v6, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->PHOTO_PRO_S:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
-    sget-object v3, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->PHOTO_BASIC:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
+    aput-object v6, v3, v4
 
-    sget-object v4, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->VIDEO_BASIC:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
+    sget-object v6, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->PHOTO_PRO_M:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
-    sget-object v5, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->VIDEO_PRO_S:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
+    aput-object v6, v3, v5
 
-    sget-object v6, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->VIDEO_PRO_M:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
+    sget-object v6, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->PHOTO_BASIC:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
-    filled-new-array/range {v1 .. v6}, [Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
+    aput-object v6, v3, v1
 
-    move-result-object v1
+    sget-object v6, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->VIDEO_BASIC:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
-    .line 443
-    invoke-static {v1}, Ljava/util/Arrays;->asList([Ljava/lang/Object;)Ljava/util/List;
+    aput-object v6, v3, v2
 
-    move-result-object v9
+    sget-object v2, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->VIDEO_PRO_S:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
-    const-string v2, "D8000"
+    aput-object v2, v3, v15
 
-    const/16 v3, 0x32
+    sget-object v2, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->VIDEO_PRO_M:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
-    const/4 v4, -0x1
+    aput-object v2, v3, v8
 
-    const v5, 0x7f11040f
+    .line 444
+    invoke-static {v3}, Ljava/util/Arrays;->asList([Ljava/lang/Object;)Ljava/util/List;
 
-    const-string/jumbo v6, "shutter-prio"
+    move-result-object v24
 
-    const/16 v8, 0x1f40
+    const-string v17, "D8000"
 
-    move-object v1, v0
+    const/16 v18, 0x32
 
-    invoke-direct/range {v1 .. v9}, Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;-><init>(Ljava/lang/String;IIILjava/lang/String;IILjava/util/List;)V
+    const v20, 0x7f110444
+
+    const-string/jumbo v21, "shutter-prio"
+
+    const/16 v23, 0x1f40
+
+    move-object/from16 v16, v0
+
+    invoke-direct/range {v16 .. v24}, Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;-><init>(Ljava/lang/String;IIILjava/lang/String;IILjava/util/List;)V
 
     sput-object v0, Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;->D8000:Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;
 
-    .line 446
+    .line 447
     new-instance v0, Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;
 
-    sget-object v1, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->PHOTO_PRO_S:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
+    new-array v1, v1, [Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
+
+    sget-object v2, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->PHOTO_PRO_S:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
+
+    aput-object v2, v1, v4
 
     sget-object v2, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->PHOTO_PRO_M:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
-    filled-new-array {v1, v2}, [Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
+    aput-object v2, v1, v5
 
-    move-result-object v1
-
-    .line 452
+    .line 453
     invoke-static {v1}, Ljava/util/Arrays;->asList([Ljava/lang/Object;)Ljava/util/List;
 
-    move-result-object v18
+    move-result-object v14
 
-    const-string v11, "D12000"
+    const-string v7, "D12000"
 
-    const/16 v12, 0x33
+    const/16 v8, 0x33
 
-    const v14, 0x7f1103de
+    const v10, 0x7f110413
 
-    const-string/jumbo v15, "shutter-prio"
+    const-string/jumbo v11, "shutter-prio"
 
-    const/16 v17, 0x2ee0
+    const/16 v13, 0x2ee0
 
-    move-object v10, v0
+    move-object v6, v0
 
-    invoke-direct/range {v10 .. v18}, Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;-><init>(Ljava/lang/String;IIILjava/lang/String;IILjava/util/List;)V
+    invoke-direct/range {v6 .. v14}, Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;-><init>(Ljava/lang/String;IIILjava/lang/String;IILjava/util/List;)V
 
     sput-object v0, Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;->D12000:Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;
 
-    .line 23
+    .line 24
     invoke-static {}, Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;->$values()[Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;
 
     move-result-object v0
@@ -2217,25 +2539,25 @@
         }
     .end annotation
 
-    .line 483
+    .line 484
     invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
-    .line 484
+    .line 485
     iput p3, p0, Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;->mIconId:I
 
-    .line 485
+    .line 486
     iput p4, p0, Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;->mTextId:I
 
-    .line 486
+    .line 487
     iput-object p5, p0, Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;->mAeMode:Ljava/lang/String;
 
-    .line 487
+    .line 488
     iput p6, p0, Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;->mNumerator:I
 
-    .line 488
+    .line 489
     iput p7, p0, Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;->mDenominator:I
 
-    .line 489
+    .line 490
     iput-object p8, p0, Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;->mSupportedModeList:Ljava/util/List;
 
     return-void
@@ -2244,7 +2566,7 @@
 .method public static adjustToSupportedValue(Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;Ljp/co/sony/mc/camera/configuration/parameters/CaptureFps;Ljp/co/sony/mc/camera/configuration/parameters/VideoMfHdr;)Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;
     .locals 2
 
-    .line 697
+    .line 698
     invoke-static {p1, p2, p0, p3, p4}, Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;->isSupportedValue(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;Ljp/co/sony/mc/camera/configuration/parameters/CaptureFps;Ljp/co/sony/mc/camera/configuration/parameters/VideoMfHdr;)Z
 
     move-result v0
@@ -2253,7 +2575,7 @@
 
     return-object p0
 
-    .line 701
+    .line 702
     :cond_0
     sget-object v0, Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;->AUTO:Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;
 
@@ -2263,7 +2585,7 @@
 
     return-object p0
 
-    .line 706
+    .line 707
     :cond_1
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;->getShutterSpeedInNanos()J
 
@@ -2273,7 +2595,7 @@
 
     move-result-object p0
 
-    .line 705
+    .line 706
     invoke-static {p1, p2, p3, p0, p4}, Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;->getShutterSpeedByExposureTime(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;Ljp/co/sony/mc/camera/configuration/parameters/CaptureFps;Ljava/lang/Long;Ljp/co/sony/mc/camera/configuration/parameters/VideoMfHdr;)Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;
 
     move-result-object p0
@@ -2284,12 +2606,12 @@
 .method public static getDefaultValue(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;Ljp/co/sony/mc/camera/configuration/parameters/CaptureFps;Ljp/co/sony/mc/camera/configuration/parameters/VideoMfHdr;)Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;
     .locals 7
 
-    .line 526
+    .line 527
     invoke-static {p0, p1, p2, p3}, Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;->getOptions(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;Ljp/co/sony/mc/camera/configuration/parameters/CaptureFps;Ljp/co/sony/mc/camera/configuration/parameters/VideoMfHdr;)[Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;
 
     move-result-object v0
 
-    .line 529
+    .line 530
     array-length v1, v0
 
     const/4 v2, 0x0
@@ -2298,12 +2620,12 @@
 
     if-ne v1, v3, :cond_0
 
-    .line 530
+    .line 531
     aget-object p0, v0, v2
 
     return-object p0
 
-    .line 534
+    .line 535
     :cond_0
     array-length v1, v0
 
@@ -2315,39 +2637,39 @@
 
     if-nez v1, :cond_1
 
-    .line 535
+    .line 536
     aget-object p0, v0, v2
 
     return-object p0
 
-    .line 538
+    .line 539
     :cond_1
     invoke-static {p1}, Ljp/co/sony/mc/camera/util/capability/PlatformCapability;->getMinShutterSpeed(Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;)J
 
     move-result-wide v0
 
-    .line 539
+    .line 540
     invoke-static {p1}, Ljp/co/sony/mc/camera/util/capability/PlatformCapability;->getMaxShutterSpeed(Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;)J
 
     move-result-wide v2
 
-    .line 542
+    .line 543
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->isProVideo()Z
 
     move-result v4
 
     if-eqz v4, :cond_2
 
-    .line 543
+    .line 544
     sget-object v4, Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;->D60:Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;
 
     goto :goto_0
 
-    .line 545
+    .line 546
     :cond_2
     sget-object v4, Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;->D250:Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;
 
-    .line 547
+    .line 548
     :goto_0
     invoke-virtual {v4}, Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;->getShutterSpeedInNanos()J
 
@@ -2357,7 +2679,7 @@
 
     if-gtz v5, :cond_3
 
-    .line 548
+    .line 549
     invoke-virtual {v4}, Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;->getShutterSpeedInNanos()J
 
     move-result-wide v5
@@ -2368,7 +2690,7 @@
 
     return-object v4
 
-    .line 550
+    .line 551
     :cond_3
     invoke-virtual {v4}, Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;->getShutterSpeedInNanos()J
 
@@ -2378,14 +2700,14 @@
 
     if-gez v0, :cond_4
 
-    .line 551
+    .line 552
     invoke-static {p0, p1, p2, p3}, Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;->getSupportedMaxValue(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;Ljp/co/sony/mc/camera/configuration/parameters/CaptureFps;Ljp/co/sony/mc/camera/configuration/parameters/VideoMfHdr;)Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;
 
     move-result-object p0
 
     return-object p0
 
-    .line 553
+    .line 554
     :cond_4
     invoke-static {p0, p1, p2, p3}, Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;->getSupportedMinValue(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;Ljp/co/sony/mc/camera/configuration/parameters/CaptureFps;Ljp/co/sony/mc/camera/configuration/parameters/VideoMfHdr;)Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;
 
@@ -2397,17 +2719,17 @@
 .method public static getOptions(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;Ljp/co/sony/mc/camera/configuration/parameters/CaptureFps;Ljp/co/sony/mc/camera/configuration/parameters/VideoMfHdr;)[Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;
     .locals 6
 
-    .line 583
+    .line 584
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
-    .line 586
+    .line 587
     invoke-static {p1}, Ljp/co/sony/mc/camera/util/capability/PlatformCapability;->getSupportedAeModes(Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;)Ljava/util/List;
 
     move-result-object v1
 
-    .line 587
+    .line 588
     invoke-interface {v1}, Ljava/util/List;->isEmpty()Z
 
     move-result v2
@@ -2416,7 +2738,7 @@
 
     if-eqz v2, :cond_0
 
-    .line 588
+    .line 589
     new-array p0, v3, [Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;
 
     invoke-virtual {v0, p0}, Ljava/util/ArrayList;->toArray([Ljava/lang/Object;)[Ljava/lang/Object;
@@ -2427,7 +2749,7 @@
 
     return-object p0
 
-    .line 589
+    .line 590
     :cond_0
     sget-object v2, Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;->AUTO:Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;
 
@@ -2441,12 +2763,12 @@
 
     if-eqz v4, :cond_1
 
-    .line 590
+    .line 591
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->getLayoutMode()Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
     move-result-object v4
 
-    .line 592
+    .line 593
     invoke-virtual {v4}, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->isProS()Z
 
     move-result v5
@@ -2459,10 +2781,10 @@
 
     if-nez v4, :cond_1
 
-    .line 593
+    .line 594
     invoke-virtual {v0, v2}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
-    .line 597
+    .line 598
     :cond_1
     const-string/jumbo v2, "shutter-prio"
 
@@ -2472,7 +2794,7 @@
 
     if-nez v1, :cond_2
 
-    .line 598
+    .line 599
     new-array p0, v3, [Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;
 
     invoke-virtual {v0, p0}, Ljava/util/ArrayList;->toArray([Ljava/lang/Object;)[Ljava/lang/Object;
@@ -2483,7 +2805,7 @@
 
     return-object p0
 
-    .line 601
+    .line 602
     :cond_2
     invoke-static {p0, p1, p2, p3}, Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;->getOptionsExceptAuto(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;Ljp/co/sony/mc/camera/configuration/parameters/CaptureFps;Ljp/co/sony/mc/camera/configuration/parameters/VideoMfHdr;)[Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;
 
@@ -2495,7 +2817,7 @@
 
     invoke-virtual {v0, p0}, Ljava/util/ArrayList;->addAll(Ljava/util/Collection;)Z
 
-    .line 602
+    .line 603
     new-array p0, v3, [Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;
 
     invoke-virtual {v0, p0}, Ljava/util/ArrayList;->toArray([Ljava/lang/Object;)[Ljava/lang/Object;
@@ -2510,29 +2832,29 @@
 .method private static getOptionsExceptAuto(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;Ljp/co/sony/mc/camera/configuration/parameters/CaptureFps;Ljp/co/sony/mc/camera/configuration/parameters/VideoMfHdr;)[Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;
     .locals 9
 
-    .line 618
+    .line 619
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
-    .line 620
+    .line 621
     invoke-static {p1}, Ljp/co/sony/mc/camera/util/capability/PlatformCapability;->getMinShutterSpeed(Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;)J
 
     move-result-wide v1
 
-    .line 621
+    .line 622
     invoke-static {p1}, Ljp/co/sony/mc/camera/util/capability/PlatformCapability;->getMaxShutterSpeed(Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;)J
 
     move-result-wide v3
 
-    .line 623
+    .line 624
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->isProPhoto()Z
 
     move-result v5
 
     if-nez v5, :cond_2
 
-    .line 626
+    .line 627
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->isVideo()Z
 
     move-result v5
@@ -2541,14 +2863,14 @@
 
     if-eqz p2, :cond_0
 
-    .line 627
+    .line 628
     invoke-static {p0, p1, p2, p3}, Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;->getShutterSpeedByFps(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;Ljp/co/sony/mc/camera/configuration/parameters/CaptureFps;Ljp/co/sony/mc/camera/configuration/parameters/VideoMfHdr;)Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;
 
     move-result-object p1
 
     if-eqz p1, :cond_1
 
-    .line 629
+    .line 630
     invoke-virtual {p1}, Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;->getShutterSpeedInNanos()J
 
     move-result-wide p1
@@ -2559,7 +2881,7 @@
 
     goto :goto_0
 
-    .line 632
+    .line 633
     :cond_0
     sget-object p1, Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;->D4:Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;
 
@@ -2573,7 +2895,7 @@
 
     move-wide v3, p1
 
-    .line 634
+    .line 635
     :cond_1
     :goto_0
     sget-object p1, Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;->D8000:Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;
@@ -2586,7 +2908,7 @@
 
     move-result-wide v1
 
-    .line 637
+    .line 638
     :cond_2
     invoke-static {}, Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;->values()[Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;
 
@@ -2603,7 +2925,7 @@
 
     aget-object v6, p1, v5
 
-    .line 638
+    .line 639
     invoke-virtual {v6}, Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;->getShutterSpeedInNanos()J
 
     move-result-wide v7
@@ -2620,7 +2942,7 @@
 
     if-gtz v7, :cond_3
 
-    .line 639
+    .line 640
     iget-object v7, v6, Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;->mSupportedModeList:Ljava/util/List;
 
     invoke-interface {v7, p0}, Ljava/util/List;->contains(Ljava/lang/Object;)Z
@@ -2629,7 +2951,7 @@
 
     if-eqz v7, :cond_3
 
-    .line 640
+    .line 641
     invoke-virtual {v0, v6}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
     :cond_3
@@ -2637,7 +2959,7 @@
 
     goto :goto_1
 
-    .line 645
+    .line 646
     :cond_4
     new-instance p0, Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed$ShutterSpeedDescendingComparator;
 
@@ -2647,7 +2969,7 @@
 
     invoke-virtual {v0, p0}, Ljava/util/ArrayList;->sort(Ljava/util/Comparator;)V
 
-    .line 647
+    .line 648
     new-array p0, p3, [Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;
 
     invoke-virtual {v0, p0}, Ljava/util/ArrayList;->toArray([Ljava/lang/Object;)[Ljava/lang/Object;
@@ -2662,12 +2984,12 @@
 .method public static getShutterSpeedByExposureTime(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;Ljp/co/sony/mc/camera/configuration/parameters/CaptureFps;Ljava/lang/Long;Ljp/co/sony/mc/camera/configuration/parameters/VideoMfHdr;)Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;
     .locals 7
 
-    .line 730
+    .line 731
     invoke-static {p0, p1, p2, p4}, Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;->getOptionsExceptAuto(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;Ljp/co/sony/mc/camera/configuration/parameters/CaptureFps;Ljp/co/sony/mc/camera/configuration/parameters/VideoMfHdr;)[Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;
 
     move-result-object p0
 
-    .line 731
+    .line 732
     array-length p1, p0
 
     if-nez p1, :cond_0
@@ -2676,7 +2998,7 @@
 
     return-object p0
 
-    .line 735
+    .line 736
     :cond_0
     array-length p1, p0
 
@@ -2696,7 +3018,7 @@
 
     if-lez p1, :cond_1
 
-    .line 737
+    .line 738
     array-length p1, p0
 
     add-int/lit8 p1, p1, -0x1
@@ -2708,7 +3030,7 @@
     :cond_1
     const/4 p1, 0x0
 
-    .line 738
+    .line 739
     aget-object p2, p0, p1
 
     invoke-virtual {p2}, Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;->getShutterSpeedInNanos()J
@@ -2723,12 +3045,12 @@
 
     if-gez p2, :cond_2
 
-    .line 739
+    .line 740
     aget-object p0, p0, p1
 
     return-object p0
 
-    .line 742
+    .line 743
     :cond_2
     array-length p2, p0
 
@@ -2736,10 +3058,10 @@
 
     aget-object p2, p0, p2
 
-    .line 743
+    .line 744
     aget-object p4, p0, p1
 
-    .line 744
+    .line 745
     array-length v0, p0
 
     :goto_0
@@ -2747,7 +3069,7 @@
 
     aget-object v1, p0, p1
 
-    .line 745
+    .line 746
     iget v2, v1, Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;->mTextId:I
 
     invoke-virtual {p3}, Ljava/lang/Long;->longValue()J
@@ -2766,7 +3088,7 @@
 
     return-object v1
 
-    .line 748
+    .line 749
     :cond_3
     invoke-virtual {p3}, Ljava/lang/Long;->longValue()J
 
@@ -2791,7 +3113,7 @@
 
     goto :goto_0
 
-    .line 756
+    .line 757
     :cond_5
     :goto_1
     invoke-virtual {p3}, Ljava/lang/Long;->longValue()J
@@ -2825,7 +3147,7 @@
 .method private static getShutterSpeedByFps(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;Ljp/co/sony/mc/camera/configuration/parameters/CaptureFps;Ljp/co/sony/mc/camera/configuration/parameters/VideoMfHdr;)Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;
     .locals 6
 
-    .line 771
+    .line 772
     invoke-static {}, Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;->values()[Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;
 
     move-result-object v0
@@ -2839,14 +3161,14 @@
 
     aget-object v3, v0, v2
 
-    .line 772
+    .line 773
     invoke-virtual {p3}, Ljp/co/sony/mc/camera/configuration/parameters/VideoMfHdr;->getBooleanValue()Z
 
     move-result v4
 
     if-eqz v4, :cond_0
 
-    .line 773
+    .line 774
     iget v4, v3, Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;->mDenominator:I
 
     invoke-virtual {p2}, Ljp/co/sony/mc/camera/configuration/parameters/CaptureFps;->getFpsIntValue()I
@@ -2859,7 +3181,7 @@
 
     return-object v3
 
-    .line 777
+    .line 778
     :cond_0
     iget v4, v3, Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;->mDenominator:I
 
@@ -2876,7 +3198,7 @@
 
     goto :goto_0
 
-    .line 783
+    .line 784
     :cond_2
     invoke-static {p0, p1, p2, p3}, Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;->getDefaultValue(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;Ljp/co/sony/mc/camera/configuration/parameters/CaptureFps;Ljp/co/sony/mc/camera/configuration/parameters/VideoMfHdr;)Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;
 
@@ -2888,12 +3210,12 @@
 .method private static getSupportedMaxValue(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;Ljp/co/sony/mc/camera/configuration/parameters/CaptureFps;Ljp/co/sony/mc/camera/configuration/parameters/VideoMfHdr;)Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;
     .locals 0
 
-    .line 569
+    .line 570
     invoke-static {p0, p1, p2, p3}, Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;->getOptionsExceptAuto(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;Ljp/co/sony/mc/camera/configuration/parameters/CaptureFps;Ljp/co/sony/mc/camera/configuration/parameters/VideoMfHdr;)[Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;
 
     move-result-object p0
 
-    .line 570
+    .line 571
     array-length p1, p0
 
     if-nez p1, :cond_0
@@ -2905,7 +3227,7 @@
     :cond_0
     const/4 p1, 0x0
 
-    .line 573
+    .line 574
     aget-object p0, p0, p1
 
     return-object p0
@@ -2914,12 +3236,12 @@
 .method private static getSupportedMinValue(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;Ljp/co/sony/mc/camera/configuration/parameters/CaptureFps;Ljp/co/sony/mc/camera/configuration/parameters/VideoMfHdr;)Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;
     .locals 0
 
-    .line 559
+    .line 560
     invoke-static {p0, p1, p2, p3}, Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;->getOptionsExceptAuto(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;Ljp/co/sony/mc/camera/configuration/parameters/CaptureFps;Ljp/co/sony/mc/camera/configuration/parameters/VideoMfHdr;)[Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;
 
     move-result-object p0
 
-    .line 560
+    .line 561
     array-length p1, p0
 
     if-nez p1, :cond_0
@@ -2928,7 +3250,7 @@
 
     return-object p0
 
-    .line 563
+    .line 564
     :cond_0
     array-length p1, p0
 
@@ -2942,12 +3264,12 @@
 .method public static isLongExposureSupported(Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;)Z
     .locals 4
 
-    .line 669
+    .line 670
     invoke-static {p0}, Ljp/co/sony/mc/camera/util/capability/PlatformCapability;->getCameraCapability(Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;)Ljp/co/sony/mc/camera/util/capability/CameraCapabilityList;
 
     move-result-object p0
 
-    .line 670
+    .line 671
     iget-object p0, p0, Ljp/co/sony/mc/camera/util/capability/CameraCapabilityList;->MAX_SHUTTER_SPEED:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
 
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/util/capability/CapabilityItem;->get()Ljava/lang/Object;
@@ -2979,7 +3301,7 @@
 .method public static isSupportedValue(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;Ljp/co/sony/mc/camera/configuration/parameters/CaptureFps;Ljp/co/sony/mc/camera/configuration/parameters/VideoMfHdr;)Z
     .locals 1
 
-    .line 678
+    .line 679
     invoke-static {p0, p1, p3, p4}, Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;->getOptions(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;Ljp/co/sony/mc/camera/configuration/parameters/CaptureFps;Ljp/co/sony/mc/camera/configuration/parameters/VideoMfHdr;)[Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;
 
     move-result-object p0
@@ -3013,7 +3335,7 @@
 .method public static valueOf(Ljava/lang/String;)Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;
     .locals 1
 
-    .line 23
+    .line 24
     const-class v0, Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;
 
     invoke-static {v0, p0}, Ljava/lang/Enum;->valueOf(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
@@ -3028,7 +3350,7 @@
 .method public static values()[Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;
     .locals 1
 
-    .line 23
+    .line 24
     sget-object v0, Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;->$VALUES:[Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;
 
     invoke-virtual {v0}, [Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;->clone()Ljava/lang/Object;
@@ -3045,7 +3367,7 @@
 .method public getIconId()I
     .locals 0
 
-    .line 494
+    .line 495
     iget p0, p0, Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;->mIconId:I
 
     return p0
@@ -3054,7 +3376,7 @@
 .method public getName()Ljava/lang/String;
     .locals 0
 
-    .line 504
+    .line 505
     invoke-virtual {p0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     move-result-object p0
@@ -3069,7 +3391,7 @@
 .method public getSettingKey()Ljp/co/sony/mc/camera/setting/SettingKey$Key;
     .locals 0
 
-    .line 499
+    .line 500
     sget-object p0, Ljp/co/sony/mc/camera/setting/CameraSettings;->SHUTTER_SPEED:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
 
     return-object p0
@@ -3078,7 +3400,7 @@
 .method public getShutterSpeedInNanos()J
     .locals 4
 
-    .line 518
+    .line 519
     iget v0, p0, Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;->mNumerator:I
 
     int-to-long v0, v0
@@ -3099,7 +3421,7 @@
 .method public getTextId()I
     .locals 0
 
-    .line 509
+    .line 510
     iget p0, p0, Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;->mTextId:I
 
     return p0
@@ -3108,7 +3430,7 @@
 .method public getValue()Ljava/lang/String;
     .locals 0
 
-    .line 514
+    .line 515
     iget-object p0, p0, Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;->mAeMode:Ljava/lang/String;
 
     return-object p0
@@ -3117,7 +3439,7 @@
 .method public isAuto()Z
     .locals 1
 
-    .line 795
+    .line 796
     sget-object v0, Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;->AUTO:Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;
 
     if-ne p0, v0, :cond_0
@@ -3136,7 +3458,7 @@
 .method public isBurstAvailable()Z
     .locals 4
 
-    .line 660
+    .line 661
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;->getShutterSpeedInNanos()J
 
     move-result-wide v0
@@ -3169,7 +3491,7 @@
 .method public isLongExposure()Z
     .locals 4
 
-    .line 651
+    .line 652
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;->getShutterSpeedInNanos()J
 
     move-result-wide v0

@@ -21,7 +21,7 @@
 .method constructor <init>()V
     .locals 0
 
-    .line 1960
+    .line 2002
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -42,25 +42,19 @@
         }
     .end annotation
 
-    .line 1964
+    .line 2006
     check-cast p1, Ljp/co/sony/mc/camera/setting/CameraSettings;
 
-    .line 1965
+    .line 2007
     invoke-static {p1}, Ljp/co/sony/mc/camera/setting/CameraSettings;->-$$Nest$fgetmCapturingMode(Ljp/co/sony/mc/camera/setting/CameraSettings;)Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
     move-result-object p0
 
     invoke-static {p1}, Ljp/co/sony/mc/camera/setting/CameraSettings;->-$$Nest$fgetmCameraId(Ljp/co/sony/mc/camera/setting/CameraSettings;)Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;
 
-    move-result-object p2
-
-    .line 1968
-    invoke-static {p1}, Ljp/co/sony/mc/camera/setting/CameraSettings;->-$$Nest$mgetVideoSize(Ljp/co/sony/mc/camera/setting/CameraSettings;)Ljp/co/sony/mc/camera/configuration/parameters/VideoSize;
-
     move-result-object p1
 
-    .line 1965
-    invoke-static {p0, p2, p1}, Ljp/co/sony/mc/camera/configuration/parameters/CaptureFps;->getOptions(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;Ljp/co/sony/mc/camera/configuration/parameters/VideoSize;)[Ljp/co/sony/mc/camera/configuration/parameters/CaptureFps;
+    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/configuration/parameters/FocusMode;->getOptions(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;)[Ljp/co/sony/mc/camera/configuration/parameters/FocusMode;
 
     move-result-object p0
 

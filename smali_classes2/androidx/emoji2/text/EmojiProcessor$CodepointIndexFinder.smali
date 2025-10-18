@@ -22,7 +22,7 @@
 .method private constructor <init>()V
     .locals 0
 
-    .line 788
+    .line 789
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -31,7 +31,7 @@
 .method static findIndexBackward(Ljava/lang/CharSequence;II)I
     .locals 5
 
-    .line 805
+    .line 806
     invoke-interface {p0}, Ljava/lang/CharSequence;->length()I
 
     move-result v0
@@ -72,7 +72,7 @@
     :cond_3
     return v0
 
-    .line 826
+    .line 827
     :cond_4
     invoke-interface {p0, p1}, Ljava/lang/CharSequence;->charAt(I)C
 
@@ -80,7 +80,7 @@
 
     if-eqz v2, :cond_6
 
-    .line 828
+    .line 829
     invoke-static {v3}, Ljava/lang/Character;->isHighSurrogate(C)Z
 
     move-result v2
@@ -94,7 +94,7 @@
 
     goto :goto_0
 
-    .line 835
+    .line 836
     :cond_6
     invoke-static {v3}, Ljava/lang/Character;->isSurrogate(C)Z
 
@@ -106,7 +106,7 @@
 
     goto :goto_1
 
-    .line 839
+    .line 840
     :cond_7
     invoke-static {v3}, Ljava/lang/Character;->isHighSurrogate(C)Z
 
@@ -129,7 +129,7 @@
 .method static findIndexForward(Ljava/lang/CharSequence;II)I
     .locals 6
 
-    .line 861
+    .line 862
     invoke-interface {p0}, Ljava/lang/CharSequence;->length()I
 
     move-result v0
@@ -168,7 +168,7 @@
     :cond_3
     return v0
 
-    .line 882
+    .line 883
     :cond_4
     invoke-interface {p0, p1}, Ljava/lang/CharSequence;->charAt(I)C
 
@@ -176,7 +176,7 @@
 
     if-eqz v3, :cond_6
 
-    .line 884
+    .line 885
     invoke-static {v4}, Ljava/lang/Character;->isLowSurrogate(C)Z
 
     move-result v3
@@ -192,7 +192,7 @@
 
     goto :goto_0
 
-    .line 892
+    .line 893
     :cond_6
     invoke-static {v4}, Ljava/lang/Character;->isSurrogate(C)Z
 
@@ -206,7 +206,7 @@
 
     goto :goto_1
 
-    .line 897
+    .line 898
     :cond_7
     invoke-static {v4}, Ljava/lang/Character;->isLowSurrogate(C)Z
 

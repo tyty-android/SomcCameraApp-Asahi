@@ -6,22 +6,23 @@
 # annotations
 .annotation runtime Lkotlin/Metadata;
     d1 = {
-        "\u0000\"\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0007\n\u0002\u0010\u0002\n\u0002\u0008\u0002\u0008\u0007\u0018\u00002\u00020\u0001B\r\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u00a2\u0006\u0002\u0010\u0004J\u0008\u0010\r\u001a\u00020\u000eH\u0007J\u0008\u0010\u000f\u001a\u00020\u000eH\u0007R\u001a\u0010\u0005\u001a\u00020\u0006X\u0086.\u00a2\u0006\u000e\n\u0000\u001a\u0004\u0008\u0007\u0010\u0008\"\u0004\u0008\t\u0010\nR\u0011\u0010\u0002\u001a\u00020\u0003\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\u000b\u0010\u000c\u00a8\u0006\u0010"
+        "\u0000\"\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0005\n\u0002\u0018\u0002\n\u0002\u0008\u0005\n\u0002\u0010\u0002\n\u0002\u0008\u0002\u0008\u0007\u0018\u00002\u00020\u0001B\u000f\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u00a2\u0006\u0004\u0008\u0004\u0010\u0005J\u0008\u0010\u000e\u001a\u00020\u000fH\u0007J\u0008\u0010\u0010\u001a\u00020\u000fH\u0007R\u0011\u0010\u0002\u001a\u00020\u0003\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\u0006\u0010\u0007R\u001a\u0010\u0008\u001a\u00020\tX\u0086.\u00a2\u0006\u000e\n\u0000\u001a\u0004\u0008\n\u0010\u000b\"\u0004\u0008\u000c\u0010\r\u00a8\u0006\u0011"
     }
     d2 = {
         "Ljp/co/sony/mc/camera/systemmonitor/PhotosServiceConnection;",
         "",
         "context",
         "Landroid/content/Context;",
+        "<init>",
         "(Landroid/content/Context;)V",
+        "getContext",
+        "()Landroid/content/Context;",
         "connection",
         "Landroid/content/ServiceConnection;",
         "getConnection",
         "()Landroid/content/ServiceConnection;",
         "setConnection",
         "(Landroid/content/ServiceConnection;)V",
-        "getContext",
-        "()Landroid/content/Context;",
         "bindService",
         "",
         "unbindService",
@@ -29,8 +30,8 @@
     }
     k = 0x1
     mv = {
-        0x1,
-        0x9,
+        0x2,
+        0x0,
         0x0
     }
     xi = 0x30
@@ -115,13 +116,17 @@
 
     goto :goto_0
 
-    .line 45
     :catch_0
-    const-string p0, "bind service failed: com.google.android.apps.photos.cameraassistant.CameraAssistantService"
+    const/4 p0, 0x1
 
-    filled-new-array {p0}, [Ljava/lang/String;
+    .line 45
+    new-array p0, p0, [Ljava/lang/String;
 
-    move-result-object p0
+    const/4 v0, 0x0
+
+    const-string v1, "bind service failed: com.google.android.apps.photos.cameraassistant.CameraAssistantService"
+
+    aput-object v1, p0, v0
 
     invoke-static {p0}, Ljp/co/sony/mc/camera/util/CamLog;->w([Ljava/lang/String;)V
 

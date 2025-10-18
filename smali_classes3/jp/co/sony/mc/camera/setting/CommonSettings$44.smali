@@ -21,7 +21,7 @@
 .method constructor <init>()V
     .locals 0
 
-    .line 660
+    .line 663
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -42,10 +42,10 @@
         }
     .end annotation
 
-    .line 664
+    .line 667
     check-cast p1, Ljp/co/sony/mc/camera/setting/CommonSettings;
 
-    .line 665
+    .line 668
     invoke-static {p1}, Ljp/co/sony/mc/camera/setting/CommonSettings;->-$$Nest$mgetYoutubeAuthorizationState(Ljp/co/sony/mc/camera/setting/CommonSettings;)Ljava/lang/String;
 
     move-result-object p0

@@ -24,7 +24,7 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/databinding/FragmentBasicSsBindingImpl;->sViewsWithIds:Landroid/util/SparseIntArray;
 
-    const v1, 0x7f09045f
+    const v1, 0x7f09044f
 
     const/4 v2, 0x5
 
@@ -759,7 +759,7 @@
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    const/16 p1, 0x13
+    const/16 p1, 0x16
 
     .line 91
     invoke-virtual {p0, p1}, Ljp/co/sony/mc/camera/databinding/FragmentBasicSsBindingImpl;->notifyPropertyChanged(I)V
@@ -784,7 +784,7 @@
 .method public setVariable(ILjava/lang/Object;)Z
     .locals 1
 
-    const/16 v0, 0x13
+    const/16 v0, 0x16
 
     if-ne v0, p1, :cond_0
 
@@ -796,7 +796,7 @@
     goto :goto_0
 
     :cond_0
-    const/16 v0, 0x22
+    const/16 v0, 0x25
 
     if-ne v0, p1, :cond_1
 
@@ -808,7 +808,7 @@
     goto :goto_0
 
     :cond_1
-    const/4 v0, 0x7
+    const/16 v0, 0x8
 
     if-ne v0, p1, :cond_2
 
@@ -820,7 +820,7 @@
     goto :goto_0
 
     :cond_2
-    const/4 v0, 0x3
+    const/4 v0, 0x4
 
     if-ne v0, p1, :cond_3
 
@@ -865,7 +865,7 @@
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    const/16 p1, 0x22
+    const/16 p1, 0x25
 
     .line 99
     invoke-virtual {p0, p1}, Ljp/co/sony/mc/camera/databinding/FragmentBasicSsBindingImpl;->notifyPropertyChanged(I)V

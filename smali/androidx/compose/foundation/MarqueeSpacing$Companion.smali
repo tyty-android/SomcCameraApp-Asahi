@@ -42,6 +42,16 @@
 
 
 # direct methods
+.method public static synthetic $r8$lambda$SBZMTxTgcJVX_wTtT7ap1LCg9xI(FLandroidx/compose/ui/unit/Density;II)I
+    .locals 0
+
+    invoke-static {p0, p1, p2, p3}, Landroidx/compose/foundation/MarqueeSpacing$Companion;->fractionOfContainer$lambda$0(FLandroidx/compose/ui/unit/Density;II)I
+
+    move-result p0
+
+    return p0
+.end method
+
 .method static constructor <clinit>()V
     .locals 1
 
@@ -57,10 +67,25 @@
 .method private constructor <init>()V
     .locals 0
 
-    .line 482
+    .line 499
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
+.end method
+
+.method private static final fractionOfContainer$lambda$0(FLandroidx/compose/ui/unit/Density;II)I
+    .locals 0
+
+    int-to-float p1, p3
+
+    mul-float/2addr p0, p1
+
+    .line 505
+    invoke-static {p0}, Lkotlin/math/MathKt;->roundToInt(F)I
+
+    move-result p0
+
+    return p0
 .end method
 
 
@@ -68,12 +93,10 @@
 .method public final fractionOfContainer(F)Landroidx/compose/foundation/MarqueeSpacing;
     .locals 0
 
-    .line 487
-    new-instance p0, Landroidx/compose/foundation/MarqueeSpacing$Companion$fractionOfContainer$1;
+    .line 504
+    new-instance p0, Landroidx/compose/foundation/MarqueeSpacing$Companion$$ExternalSyntheticLambda0;
 
-    invoke-direct {p0, p1}, Landroidx/compose/foundation/MarqueeSpacing$Companion$fractionOfContainer$1;-><init>(F)V
-
-    check-cast p0, Landroidx/compose/foundation/MarqueeSpacing;
+    invoke-direct {p0, p1}, Landroidx/compose/foundation/MarqueeSpacing$Companion$$ExternalSyntheticLambda0;-><init>(F)V
 
     return-object p0
 .end method

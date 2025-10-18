@@ -53,7 +53,7 @@
     f = "Slider.kt"
     i = {}
     l = {
-        0x42b
+        0x42f
     }
     m = "invokeSuspend"
     n = {}
@@ -181,7 +181,7 @@
 
     move-result-object v0
 
-    .line 1066
+    .line 1070
     iget v1, p0, Landroidx/compose/material/RangeSliderLogic$captureThumb$1;->label:I
 
     const/4 v2, 0x1
@@ -206,7 +206,7 @@
     :cond_1
     invoke-static {p1}, Lkotlin/ResultKt;->throwOnFailure(Ljava/lang/Object;)V
 
-    .line 1067
+    .line 1071
     iget-object p1, p0, Landroidx/compose/material/RangeSliderLogic$captureThumb$1;->this$0:Landroidx/compose/material/RangeSliderLogic;
 
     iget-boolean v1, p0, Landroidx/compose/material/RangeSliderLogic$captureThumb$1;->$draggingStart:Z
@@ -231,7 +231,7 @@
 
     return-object v0
 
-    .line 1068
+    .line 1072
     :cond_2
     :goto_0
     sget-object p0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;

@@ -43,7 +43,7 @@
 
 # virtual methods
 .method protected afterExecute(Ljava/lang/Runnable;Ljava/lang/Throwable;)V
-    .locals 1
+    .locals 2
 
     .line 192
     invoke-super {p0, p1, p2}, Ljava/util/concurrent/ThreadPoolExecutor;->afterExecute(Ljava/lang/Runnable;Ljava/lang/Throwable;)V
@@ -90,18 +90,22 @@
     :catch_2
     move-exception p0
 
+    const/4 p1, 0x1
+
     .line 198
-    new-instance p1, Ljava/lang/StringBuilder;
+    new-array p1, p1, [Ljava/lang/String;
 
-    const-string v0, "Cancellation detected:"
+    new-instance v0, Ljava/lang/StringBuilder;
 
-    invoke-direct {p1, v0}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+    const-string v1, "Cancellation detected:"
+
+    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
     invoke-virtual {p0}, Ljava/util/concurrent/CancellationException;->toString()Ljava/lang/String;
 
     move-result-object p0
 
-    invoke-virtual {p1, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v0, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object p0
 
@@ -109,11 +113,11 @@
 
     move-result-object p0
 
-    filled-new-array {p0}, [Ljava/lang/String;
+    const/4 v0, 0x0
 
-    move-result-object p0
+    aput-object p0, p1, v0
 
-    invoke-static {p0}, Ljp/co/sony/mc/camera/util/CamLog;->i([Ljava/lang/String;)V
+    invoke-static {p1}, Ljp/co/sony/mc/camera/util/CamLog;->i([Ljava/lang/String;)V
 
     :cond_0
     :goto_0

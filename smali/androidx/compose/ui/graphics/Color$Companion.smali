@@ -15,7 +15,7 @@
 
 .annotation runtime Lkotlin/Metadata;
     d1 = {
-        "\u0000,\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0002\u0008*\n\u0002\u0010\u0007\n\u0002\u0008\u0004\n\u0002\u0018\u0002\n\u0002\u0008\u0004\n\u0002\u0010\u0008\n\u0002\u0008\t\u0008\u0086\u0003\u0018\u00002\u00020\u0001B\u0007\u0008\u0002\u00a2\u0006\u0002\u0010\u0002JB\u0010-\u001a\u00020\u00042\u0006\u0010.\u001a\u00020/2\u0006\u00100\u001a\u00020/2\u0006\u00101\u001a\u00020/2\u0008\u0008\u0002\u00102\u001a\u00020/2\u0008\u0008\u0002\u00103\u001a\u000204\u00f8\u0001\u0002\u00f8\u0001\u0001\u00f8\u0001\u0000\u00a2\u0006\u0004\u00085\u00106J(\u00107\u001a\u00020/2\u0006\u00108\u001a\u0002092\u0006\u0010:\u001a\u00020/2\u0006\u0010;\u001a\u00020/2\u0006\u0010<\u001a\u00020/H\u0002JB\u0010=\u001a\u00020\u00042\u0006\u0010.\u001a\u00020/2\u0006\u00100\u001a\u00020/2\u0006\u0010>\u001a\u00020/2\u0008\u0008\u0002\u00102\u001a\u00020/2\u0008\u0008\u0002\u00103\u001a\u000204\u00f8\u0001\u0002\u00f8\u0001\u0001\u00f8\u0001\u0000\u00a2\u0006\u0004\u0008?\u00106J(\u0010@\u001a\u00020/2\u0006\u00108\u001a\u0002092\u0006\u0010:\u001a\u00020/2\u0006\u0010;\u001a\u00020/2\u0006\u0010A\u001a\u00020/H\u0002R\'\u0010\u0003\u001a\u00020\u00048\u0006X\u0087\u0004\u00f8\u0001\u0000\u00f8\u0001\u0001\u00f8\u0001\u0002\u00a2\u0006\u0010\n\u0002\u0010\u0008\u0012\u0004\u0008\u0005\u0010\u0002\u001a\u0004\u0008\u0006\u0010\u0007R\'\u0010\t\u001a\u00020\u00048\u0006X\u0087\u0004\u00f8\u0001\u0000\u00f8\u0001\u0001\u00f8\u0001\u0002\u00a2\u0006\u0010\n\u0002\u0010\u0008\u0012\u0004\u0008\n\u0010\u0002\u001a\u0004\u0008\u000b\u0010\u0007R\'\u0010\u000c\u001a\u00020\u00048\u0006X\u0087\u0004\u00f8\u0001\u0000\u00f8\u0001\u0001\u00f8\u0001\u0002\u00a2\u0006\u0010\n\u0002\u0010\u0008\u0012\u0004\u0008\r\u0010\u0002\u001a\u0004\u0008\u000e\u0010\u0007R\'\u0010\u000f\u001a\u00020\u00048\u0006X\u0087\u0004\u00f8\u0001\u0000\u00f8\u0001\u0001\u00f8\u0001\u0002\u00a2\u0006\u0010\n\u0002\u0010\u0008\u0012\u0004\u0008\u0010\u0010\u0002\u001a\u0004\u0008\u0011\u0010\u0007R\'\u0010\u0012\u001a\u00020\u00048\u0006X\u0087\u0004\u00f8\u0001\u0000\u00f8\u0001\u0001\u00f8\u0001\u0002\u00a2\u0006\u0010\n\u0002\u0010\u0008\u0012\u0004\u0008\u0013\u0010\u0002\u001a\u0004\u0008\u0014\u0010\u0007R\'\u0010\u0015\u001a\u00020\u00048\u0006X\u0087\u0004\u00f8\u0001\u0000\u00f8\u0001\u0001\u00f8\u0001\u0002\u00a2\u0006\u0010\n\u0002\u0010\u0008\u0012\u0004\u0008\u0016\u0010\u0002\u001a\u0004\u0008\u0017\u0010\u0007R\'\u0010\u0018\u001a\u00020\u00048\u0006X\u0087\u0004\u00f8\u0001\u0000\u00f8\u0001\u0001\u00f8\u0001\u0002\u00a2\u0006\u0010\n\u0002\u0010\u0008\u0012\u0004\u0008\u0019\u0010\u0002\u001a\u0004\u0008\u001a\u0010\u0007R\'\u0010\u001b\u001a\u00020\u00048\u0006X\u0087\u0004\u00f8\u0001\u0000\u00f8\u0001\u0001\u00f8\u0001\u0002\u00a2\u0006\u0010\n\u0002\u0010\u0008\u0012\u0004\u0008\u001c\u0010\u0002\u001a\u0004\u0008\u001d\u0010\u0007R\'\u0010\u001e\u001a\u00020\u00048\u0006X\u0087\u0004\u00f8\u0001\u0000\u00f8\u0001\u0001\u00f8\u0001\u0002\u00a2\u0006\u0010\n\u0002\u0010\u0008\u0012\u0004\u0008\u001f\u0010\u0002\u001a\u0004\u0008 \u0010\u0007R\'\u0010!\u001a\u00020\u00048\u0006X\u0087\u0004\u00f8\u0001\u0000\u00f8\u0001\u0001\u00f8\u0001\u0002\u00a2\u0006\u0010\n\u0002\u0010\u0008\u0012\u0004\u0008\"\u0010\u0002\u001a\u0004\u0008#\u0010\u0007R\'\u0010$\u001a\u00020\u00048\u0006X\u0087\u0004\u00f8\u0001\u0000\u00f8\u0001\u0001\u00f8\u0001\u0002\u00a2\u0006\u0010\n\u0002\u0010\u0008\u0012\u0004\u0008%\u0010\u0002\u001a\u0004\u0008&\u0010\u0007R\'\u0010\'\u001a\u00020\u00048\u0006X\u0087\u0004\u00f8\u0001\u0000\u00f8\u0001\u0001\u00f8\u0001\u0002\u00a2\u0006\u0010\n\u0002\u0010\u0008\u0012\u0004\u0008(\u0010\u0002\u001a\u0004\u0008)\u0010\u0007R\'\u0010*\u001a\u00020\u00048\u0006X\u0087\u0004\u00f8\u0001\u0000\u00f8\u0001\u0001\u00f8\u0001\u0002\u00a2\u0006\u0010\n\u0002\u0010\u0008\u0012\u0004\u0008+\u0010\u0002\u001a\u0004\u0008,\u0010\u0007\u0082\u0002\u000f\n\u0002\u0008\u0019\n\u0005\u0008\u00a1\u001e0\u0001\n\u0002\u0008!\u00a8\u0006B"
+        "\u0000,\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0002\u0008*\n\u0002\u0010\u0007\n\u0002\u0008\u0004\n\u0002\u0018\u0002\n\u0002\u0008\u0004\n\u0002\u0010\u0008\n\u0002\u0008\t\u0008\u0086\u0003\u0018\u00002\u00020\u0001B\u0007\u0008\u0002\u00a2\u0006\u0002\u0010\u0002J?\u0010-\u001a\u00020\u00042\u0006\u0010.\u001a\u00020/2\u0006\u00100\u001a\u00020/2\u0006\u00101\u001a\u00020/2\u0008\u0008\u0002\u00102\u001a\u00020/2\u0008\u0008\u0002\u00103\u001a\u000204\u00f8\u0001\u0001\u00f8\u0001\u0000\u00a2\u0006\u0004\u00085\u00106J(\u00107\u001a\u00020/2\u0006\u00108\u001a\u0002092\u0006\u0010:\u001a\u00020/2\u0006\u0010;\u001a\u00020/2\u0006\u0010<\u001a\u00020/H\u0002J?\u0010=\u001a\u00020\u00042\u0006\u0010.\u001a\u00020/2\u0006\u00100\u001a\u00020/2\u0006\u0010>\u001a\u00020/2\u0008\u0008\u0002\u00102\u001a\u00020/2\u0008\u0008\u0002\u00103\u001a\u000204\u00f8\u0001\u0001\u00f8\u0001\u0000\u00a2\u0006\u0004\u0008?\u00106J(\u0010@\u001a\u00020/2\u0006\u00108\u001a\u0002092\u0006\u0010:\u001a\u00020/2\u0006\u0010;\u001a\u00020/2\u0006\u0010A\u001a\u00020/H\u0002R$\u0010\u0003\u001a\u00020\u00048\u0006X\u0087\u0004\u00f8\u0001\u0000\u00f8\u0001\u0001\u00a2\u0006\u0010\n\u0002\u0010\u0008\u0012\u0004\u0008\u0005\u0010\u0002\u001a\u0004\u0008\u0006\u0010\u0007R$\u0010\t\u001a\u00020\u00048\u0006X\u0087\u0004\u00f8\u0001\u0000\u00f8\u0001\u0001\u00a2\u0006\u0010\n\u0002\u0010\u0008\u0012\u0004\u0008\n\u0010\u0002\u001a\u0004\u0008\u000b\u0010\u0007R$\u0010\u000c\u001a\u00020\u00048\u0006X\u0087\u0004\u00f8\u0001\u0000\u00f8\u0001\u0001\u00a2\u0006\u0010\n\u0002\u0010\u0008\u0012\u0004\u0008\r\u0010\u0002\u001a\u0004\u0008\u000e\u0010\u0007R$\u0010\u000f\u001a\u00020\u00048\u0006X\u0087\u0004\u00f8\u0001\u0000\u00f8\u0001\u0001\u00a2\u0006\u0010\n\u0002\u0010\u0008\u0012\u0004\u0008\u0010\u0010\u0002\u001a\u0004\u0008\u0011\u0010\u0007R$\u0010\u0012\u001a\u00020\u00048\u0006X\u0087\u0004\u00f8\u0001\u0000\u00f8\u0001\u0001\u00a2\u0006\u0010\n\u0002\u0010\u0008\u0012\u0004\u0008\u0013\u0010\u0002\u001a\u0004\u0008\u0014\u0010\u0007R$\u0010\u0015\u001a\u00020\u00048\u0006X\u0087\u0004\u00f8\u0001\u0000\u00f8\u0001\u0001\u00a2\u0006\u0010\n\u0002\u0010\u0008\u0012\u0004\u0008\u0016\u0010\u0002\u001a\u0004\u0008\u0017\u0010\u0007R$\u0010\u0018\u001a\u00020\u00048\u0006X\u0087\u0004\u00f8\u0001\u0000\u00f8\u0001\u0001\u00a2\u0006\u0010\n\u0002\u0010\u0008\u0012\u0004\u0008\u0019\u0010\u0002\u001a\u0004\u0008\u001a\u0010\u0007R$\u0010\u001b\u001a\u00020\u00048\u0006X\u0087\u0004\u00f8\u0001\u0000\u00f8\u0001\u0001\u00a2\u0006\u0010\n\u0002\u0010\u0008\u0012\u0004\u0008\u001c\u0010\u0002\u001a\u0004\u0008\u001d\u0010\u0007R$\u0010\u001e\u001a\u00020\u00048\u0006X\u0087\u0004\u00f8\u0001\u0000\u00f8\u0001\u0001\u00a2\u0006\u0010\n\u0002\u0010\u0008\u0012\u0004\u0008\u001f\u0010\u0002\u001a\u0004\u0008 \u0010\u0007R$\u0010!\u001a\u00020\u00048\u0006X\u0087\u0004\u00f8\u0001\u0000\u00f8\u0001\u0001\u00a2\u0006\u0010\n\u0002\u0010\u0008\u0012\u0004\u0008\"\u0010\u0002\u001a\u0004\u0008#\u0010\u0007R$\u0010$\u001a\u00020\u00048\u0006X\u0087\u0004\u00f8\u0001\u0000\u00f8\u0001\u0001\u00a2\u0006\u0010\n\u0002\u0010\u0008\u0012\u0004\u0008%\u0010\u0002\u001a\u0004\u0008&\u0010\u0007R$\u0010\'\u001a\u00020\u00048\u0006X\u0087\u0004\u00f8\u0001\u0000\u00f8\u0001\u0001\u00a2\u0006\u0010\n\u0002\u0010\u0008\u0012\u0004\u0008(\u0010\u0002\u001a\u0004\u0008)\u0010\u0007R$\u0010*\u001a\u00020\u00048\u0006X\u0087\u0004\u00f8\u0001\u0000\u00f8\u0001\u0001\u00a2\u0006\u0010\n\u0002\u0010\u0008\u0012\u0004\u0008+\u0010\u0002\u001a\u0004\u0008,\u0010\u0007\u0082\u0002\u000b\n\u0005\u0008\u00a1\u001e0\u0001\n\u0002\u0008!\u00a8\u0006B"
     }
     d2 = {
         "Landroidx/compose/ui/graphics/Color$Companion;",
@@ -100,7 +100,7 @@
 .method private constructor <init>()V
     .locals 0
 
-    .line 279
+    .line 283
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -208,7 +208,7 @@
 
     if-eqz p4, :cond_1
 
-    .line 373
+    .line 377
     sget-object p4, Landroidx/compose/ui/graphics/colorspace/ColorSpaces;->INSTANCE:Landroidx/compose/ui/graphics/colorspace/ColorSpaces;
 
     invoke-virtual {p4}, Landroidx/compose/ui/graphics/colorspace/ColorSpaces;->getSrgb()Landroidx/compose/ui/graphics/colorspace/Rgb;
@@ -226,7 +226,7 @@
 
     move v3, p3
 
-    .line 368
+    .line 372
     invoke-virtual/range {v0 .. v5}, Landroidx/compose/ui/graphics/Color$Companion;->hsl-JlNiLsg(FFFFLandroidx/compose/ui/graphics/colorspace/Rgb;)J
 
     move-result-wide p0
@@ -253,7 +253,7 @@
 
     sub-float p2, p1, p4
 
-    .line 386
+    .line 390
     invoke-static {p4, p2}, Ljava/lang/Math;->min(FF)F
 
     move-result p2
@@ -272,7 +272,7 @@
 
     sub-float/2addr v0, p0
 
-    .line 387
+    .line 391
     invoke-static {v0, p1}, Ljava/lang/Math;->min(FF)F
 
     move-result p0
@@ -310,7 +310,7 @@
 
     if-eqz p4, :cond_1
 
-    .line 341
+    .line 345
     sget-object p4, Landroidx/compose/ui/graphics/colorspace/ColorSpaces;->INSTANCE:Landroidx/compose/ui/graphics/colorspace/ColorSpaces;
 
     invoke-virtual {p4}, Landroidx/compose/ui/graphics/colorspace/ColorSpaces;->getSrgb()Landroidx/compose/ui/graphics/colorspace/Rgb;
@@ -328,7 +328,7 @@
 
     move v3, p3
 
-    .line 336
+    .line 340
     invoke-virtual/range {v0 .. v5}, Landroidx/compose/ui/graphics/Color$Companion;->hsv-JlNiLsg(FFFFLandroidx/compose/ui/graphics/colorspace/Rgb;)J
 
     move-result-wide p0
@@ -361,7 +361,7 @@
 
     const/high16 p2, 0x3f800000    # 1.0f
 
-    .line 354
+    .line 358
     invoke-static {p1, p2}, Ljava/lang/Math;->min(FF)F
 
     move-result p1
@@ -388,7 +388,7 @@
 .method public final getBlack-0d7_KjU()J
     .locals 2
 
-    .line 281
+    .line 285
     invoke-static {}, Landroidx/compose/ui/graphics/Color;->access$getBlack$cp()J
 
     move-result-wide v0
@@ -399,7 +399,7 @@
 .method public final getBlue-0d7_KjU()J
     .locals 2
 
-    .line 302
+    .line 306
     invoke-static {}, Landroidx/compose/ui/graphics/Color;->access$getBlue$cp()J
 
     move-result-wide v0
@@ -410,7 +410,7 @@
 .method public final getCyan-0d7_KjU()J
     .locals 2
 
-    .line 308
+    .line 312
     invoke-static {}, Landroidx/compose/ui/graphics/Color;->access$getCyan$cp()J
 
     move-result-wide v0
@@ -421,7 +421,7 @@
 .method public final getDarkGray-0d7_KjU()J
     .locals 2
 
-    .line 284
+    .line 288
     invoke-static {}, Landroidx/compose/ui/graphics/Color;->access$getDarkGray$cp()J
 
     move-result-wide v0
@@ -432,7 +432,7 @@
 .method public final getGray-0d7_KjU()J
     .locals 2
 
-    .line 287
+    .line 291
     invoke-static {}, Landroidx/compose/ui/graphics/Color;->access$getGray$cp()J
 
     move-result-wide v0
@@ -443,7 +443,7 @@
 .method public final getGreen-0d7_KjU()J
     .locals 2
 
-    .line 299
+    .line 303
     invoke-static {}, Landroidx/compose/ui/graphics/Color;->access$getGreen$cp()J
 
     move-result-wide v0
@@ -454,7 +454,7 @@
 .method public final getLightGray-0d7_KjU()J
     .locals 2
 
-    .line 290
+    .line 294
     invoke-static {}, Landroidx/compose/ui/graphics/Color;->access$getLightGray$cp()J
 
     move-result-wide v0
@@ -465,7 +465,7 @@
 .method public final getMagenta-0d7_KjU()J
     .locals 2
 
-    .line 311
+    .line 315
     invoke-static {}, Landroidx/compose/ui/graphics/Color;->access$getMagenta$cp()J
 
     move-result-wide v0
@@ -476,7 +476,7 @@
 .method public final getRed-0d7_KjU()J
     .locals 2
 
-    .line 296
+    .line 300
     invoke-static {}, Landroidx/compose/ui/graphics/Color;->access$getRed$cp()J
 
     move-result-wide v0
@@ -487,7 +487,7 @@
 .method public final getTransparent-0d7_KjU()J
     .locals 2
 
-    .line 314
+    .line 318
     invoke-static {}, Landroidx/compose/ui/graphics/Color;->access$getTransparent$cp()J
 
     move-result-wide v0
@@ -498,7 +498,7 @@
 .method public final getUnspecified-0d7_KjU()J
     .locals 2
 
-    .line 324
+    .line 328
     invoke-static {}, Landroidx/compose/ui/graphics/Color;->access$getUnspecified$cp()J
 
     move-result-wide v0
@@ -509,7 +509,7 @@
 .method public final getWhite-0d7_KjU()J
     .locals 2
 
-    .line 293
+    .line 297
     invoke-static {}, Landroidx/compose/ui/graphics/Color;->access$getWhite$cp()J
 
     move-result-wide v0
@@ -520,7 +520,7 @@
 .method public final getYellow-0d7_KjU()J
     .locals 2
 
-    .line 305
+    .line 309
     invoke-static {}, Landroidx/compose/ui/graphics/Color;->access$getYellow$cp()J
 
     move-result-wide v0
@@ -530,10 +530,6 @@
 
 .method public final hsl-JlNiLsg(FFFFLandroidx/compose/ui/graphics/colorspace/Rgb;)J
     .locals 3
-
-    const-string v0, "colorSpace"
-
-    invoke-static {p5, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
     const/4 v0, 0x0
 
@@ -567,26 +563,26 @@
 
     const/4 v0, 0x0
 
-    .line 378
+    .line 382
     invoke-direct {p0, v0, p1, p2, p3}, Landroidx/compose/ui/graphics/Color$Companion;->hslToRgbComponent(IFFF)F
 
     move-result v0
 
     const/16 v1, 0x8
 
-    .line 379
+    .line 383
     invoke-direct {p0, v1, p1, p2, p3}, Landroidx/compose/ui/graphics/Color$Companion;->hslToRgbComponent(IFFF)F
 
     move-result v1
 
     const/4 v2, 0x4
 
-    .line 380
+    .line 384
     invoke-direct {p0, v2, p1, p2, p3}, Landroidx/compose/ui/graphics/Color$Companion;->hslToRgbComponent(IFFF)F
 
     move-result p0
 
-    .line 381
+    .line 385
     check-cast p5, Landroidx/compose/ui/graphics/colorspace/ColorSpace;
 
     invoke-static {v0, v1, p0, p4, p5}, Landroidx/compose/ui/graphics/ColorKt;->Color(FFFFLandroidx/compose/ui/graphics/colorspace/ColorSpace;)J
@@ -595,7 +591,7 @@
 
     return-wide p0
 
-    .line 376
+    .line 380
     :cond_0
     new-instance p0, Ljava/lang/StringBuilder;
 
@@ -635,7 +631,7 @@
 
     move-result-object p0
 
-    .line 375
+    .line 379
     new-instance p1, Ljava/lang/IllegalArgumentException;
 
     invoke-virtual {p0}, Ljava/lang/Object;->toString()Ljava/lang/String;
@@ -649,10 +645,6 @@
 
 .method public final hsv-JlNiLsg(FFFFLandroidx/compose/ui/graphics/colorspace/Rgb;)J
     .locals 3
-
-    const-string v0, "colorSpace"
-
-    invoke-static {p5, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
     const/4 v0, 0x0
 
@@ -686,26 +678,26 @@
 
     const/4 v0, 0x5
 
-    .line 346
+    .line 350
     invoke-direct {p0, v0, p1, p2, p3}, Landroidx/compose/ui/graphics/Color$Companion;->hsvToRgbComponent(IFFF)F
 
     move-result v0
 
     const/4 v1, 0x3
 
-    .line 347
+    .line 351
     invoke-direct {p0, v1, p1, p2, p3}, Landroidx/compose/ui/graphics/Color$Companion;->hsvToRgbComponent(IFFF)F
 
     move-result v1
 
     const/4 v2, 0x1
 
-    .line 348
+    .line 352
     invoke-direct {p0, v2, p1, p2, p3}, Landroidx/compose/ui/graphics/Color$Companion;->hsvToRgbComponent(IFFF)F
 
     move-result p0
 
-    .line 349
+    .line 353
     check-cast p5, Landroidx/compose/ui/graphics/colorspace/ColorSpace;
 
     invoke-static {v0, v1, p0, p4, p5}, Landroidx/compose/ui/graphics/ColorKt;->Color(FFFFLandroidx/compose/ui/graphics/colorspace/ColorSpace;)J
@@ -714,7 +706,7 @@
 
     return-wide p0
 
-    .line 344
+    .line 348
     :cond_0
     new-instance p0, Ljava/lang/StringBuilder;
 
@@ -754,7 +746,7 @@
 
     move-result-object p0
 
-    .line 343
+    .line 347
     new-instance p1, Ljava/lang/IllegalArgumentException;
 
     invoke-virtual {p0}, Ljava/lang/Object;->toString()Ljava/lang/String;

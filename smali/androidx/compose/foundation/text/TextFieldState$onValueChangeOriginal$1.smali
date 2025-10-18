@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Landroidx/compose/foundation/text/TextFieldState;-><init>(Landroidx/compose/foundation/text/TextDelegate;Landroidx/compose/runtime/RecomposeScope;)V
+    value = Landroidx/compose/foundation/text/TextFieldState;-><init>(Landroidx/compose/foundation/text/TextDelegate;Landroidx/compose/runtime/RecomposeScope;Landroidx/compose/ui/platform/SoftwareKeyboardController;)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -79,7 +79,7 @@
 .method public bridge synthetic invoke(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
 
-    .line 876
+    .line 939
     check-cast p1, Landroidx/compose/ui/text/input/TextFieldValue;
 
     invoke-virtual {p0, p1}, Landroidx/compose/foundation/text/TextFieldState$onValueChangeOriginal$1;->invoke(Landroidx/compose/ui/text/input/TextFieldValue;)V
@@ -91,10 +91,6 @@
 
 .method public final invoke(Landroidx/compose/ui/text/input/TextFieldValue;)V
     .locals 0
-
-    const-string p0, "it"
-
-    invoke-static {p1, p0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
     return-void
 .end method

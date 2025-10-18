@@ -66,7 +66,7 @@
 .method public bridge synthetic invoke()Ljava/lang/Object;
     .locals 0
 
-    .line 265
+    .line 311
     invoke-virtual {p0}, Landroidx/compose/foundation/text/selection/SelectionManager$5;->invoke()V
 
     sget-object p0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
@@ -77,19 +77,21 @@
 .method public final invoke()V
     .locals 2
 
-    .line 266
+    .line 312
     iget-object v0, p0, Landroidx/compose/foundation/text/selection/SelectionManager$5;->this$0:Landroidx/compose/foundation/text/selection/SelectionManager;
 
-    invoke-virtual {v0}, Landroidx/compose/foundation/text/selection/SelectionManager;->showSelectionToolbar$foundation_release()V
+    const/4 v1, 0x1
 
-    .line 269
+    invoke-virtual {v0, v1}, Landroidx/compose/foundation/text/selection/SelectionManager;->setShowToolbar$foundation_release(Z)V
+
+    .line 315
     iget-object v0, p0, Landroidx/compose/foundation/text/selection/SelectionManager$5;->this$0:Landroidx/compose/foundation/text/selection/SelectionManager;
 
     const/4 v1, 0x0
 
     invoke-static {v0, v1}, Landroidx/compose/foundation/text/selection/SelectionManager;->access$setDraggingHandle(Landroidx/compose/foundation/text/selection/SelectionManager;Landroidx/compose/foundation/text/Handle;)V
 
-    .line 270
+    .line 316
     iget-object p0, p0, Landroidx/compose/foundation/text/selection/SelectionManager$5;->this$0:Landroidx/compose/foundation/text/selection/SelectionManager;
 
     invoke-static {p0, v1}, Landroidx/compose/foundation/text/selection/SelectionManager;->access$setCurrentDragPosition-_kEHs6E(Landroidx/compose/foundation/text/selection/SelectionManager;Landroidx/compose/ui/geometry/Offset;)V

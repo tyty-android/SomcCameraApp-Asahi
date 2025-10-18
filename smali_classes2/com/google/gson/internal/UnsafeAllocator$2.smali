@@ -24,7 +24,7 @@
 .method constructor <init>(Ljava/lang/reflect/Method;I)V
     .locals 0
 
-    .line 82
+    .line 84
     iput-object p1, p0, Lcom/google/gson/internal/UnsafeAllocator$2;->val$newInstance:Ljava/lang/reflect/Method;
 
     iput p2, p0, Lcom/google/gson/internal/UnsafeAllocator$2;->val$constructorId:I
@@ -54,10 +54,10 @@
         }
     .end annotation
 
-    .line 86
+    .line 88
     invoke-static {p1}, Lcom/google/gson/internal/UnsafeAllocator;->access$000(Ljava/lang/Class;)V
 
-    .line 87
+    .line 89
     iget-object v0, p0, Lcom/google/gson/internal/UnsafeAllocator$2;->val$newInstance:Ljava/lang/reflect/Method;
 
     iget p0, p0, Lcom/google/gson/internal/UnsafeAllocator$2;->val$constructorId:I

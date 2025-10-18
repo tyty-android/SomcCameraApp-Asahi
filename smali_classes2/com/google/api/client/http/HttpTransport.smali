@@ -11,7 +11,7 @@
 
 # direct methods
 .method static constructor <clinit>()V
-    .locals 4
+    .locals 3
 
     .line 73
     const-class v0, Lcom/google/api/client/http/HttpTransport;
@@ -26,18 +26,34 @@
 
     sput-object v0, Lcom/google/api/client/http/HttpTransport;->LOGGER:Ljava/util/logging/Logger;
 
-    .line 79
-    const-string v0, "POST"
+    const/4 v0, 0x4
 
-    const-string v1, "PUT"
+    .line 79
+    new-array v0, v0, [Ljava/lang/String;
+
+    const/4 v1, 0x0
 
     const-string v2, "DELETE"
 
-    const-string v3, "GET"
+    aput-object v2, v0, v1
 
-    filled-new-array {v2, v3, v0, v1}, [Ljava/lang/String;
+    const/4 v1, 0x1
 
-    move-result-object v0
+    const-string v2, "GET"
+
+    aput-object v2, v0, v1
+
+    const/4 v1, 0x2
+
+    const-string v2, "POST"
+
+    aput-object v2, v0, v1
+
+    const/4 v1, 0x3
+
+    const-string v2, "PUT"
+
+    aput-object v2, v0, v1
 
     sput-object v0, Lcom/google/api/client/http/HttpTransport;->SUPPORTED_METHODS:[Ljava/lang/String;
 
@@ -107,6 +123,14 @@
     .locals 0
 
     const/4 p0, 0x0
+
+    return p0
+.end method
+
+.method public isShutdown()Z
+    .locals 0
+
+    const/4 p0, 0x1
 
     return p0
 .end method

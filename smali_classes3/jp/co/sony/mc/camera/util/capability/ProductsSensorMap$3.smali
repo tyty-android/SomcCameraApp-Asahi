@@ -27,15 +27,15 @@
 .method constructor <init>()V
     .locals 7
 
-    .line 65
+    .line 60
     invoke-direct {p0}, Ljava/util/concurrent/ConcurrentHashMap;-><init>()V
 
-    .line 66
+    .line 61
     sget-object v0, Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;->BACK:Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;
 
     new-instance v1, Ljp/co/sony/mc/camera/device/CameraInfo;
 
-    const-string v2, "SMC12BX3"
+    const-string v2, "SMC12BX8"
 
     const-string v3, "0"
 
@@ -45,7 +45,7 @@
 
     invoke-virtual {p0, v0, v1}, Ljp/co/sony/mc/camera/util/capability/ProductsSensorMap$3;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 68
+    .line 63
     sget-object v0, Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;->FRONT:Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;
 
     new-instance v1, Ljp/co/sony/mc/camera/device/CameraInfo;
@@ -60,12 +60,12 @@
 
     invoke-virtual {p0, v0, v1}, Ljp/co/sony/mc/camera/util/capability/ProductsSensorMap$3;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 70
+    .line 65
     sget-object v0, Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;->WIDE:Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;
 
     new-instance v1, Ljp/co/sony/mc/camera/device/CameraInfo;
 
-    const-string v2, "SEM12BC6"
+    const-string v2, "SEM52BC1"
 
     const-string v5, "2"
 
@@ -73,7 +73,7 @@
 
     invoke-virtual {p0, v0, v1}, Ljp/co/sony/mc/camera/util/capability/ProductsSensorMap$3;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 72
+    .line 67
     sget-object v0, Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;->WIDE_PHYSICAL:Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;
 
     new-instance v1, Ljp/co/sony/mc/camera/device/CameraInfo;
@@ -82,21 +82,12 @@
 
     invoke-virtual {p0, v0, v1}, Ljp/co/sony/mc/camera/util/capability/ProductsSensorMap$3;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 74
-    sget-object v0, Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;->SLOW_MOTION:Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;
-
-    new-instance v1, Ljp/co/sony/mc/camera/device/CameraInfo;
-
-    invoke-direct {v1, v2, v5, v5, v4}, Ljp/co/sony/mc/camera/device/CameraInfo;-><init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Z)V
-
-    invoke-virtual {p0, v0, v1}, Ljp/co/sony/mc/camera/util/capability/ProductsSensorMap$3;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
-
-    .line 76
+    .line 69
     sget-object v0, Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;->TELE:Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;
 
     new-instance v1, Ljp/co/sony/mc/camera/device/CameraInfo;
 
-    const-string v2, "SEM12BC7"
+    const-string v2, "LGI12BC1"
 
     const-string v5, "3"
 
@@ -104,7 +95,7 @@
 
     invoke-virtual {p0, v0, v1}, Ljp/co/sony/mc/camera/util/capability/ProductsSensorMap$3;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 78
+    .line 71
     sget-object v0, Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;->TELE_PHYSICAL:Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;
 
     new-instance v1, Ljp/co/sony/mc/camera/device/CameraInfo;
@@ -113,12 +104,12 @@
 
     invoke-virtual {p0, v0, v1}, Ljp/co/sony/mc/camera/util/capability/ProductsSensorMap$3;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 80
+    .line 73
     sget-object v0, Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;->ULTRA_WIDE:Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;
 
     new-instance v1, Ljp/co/sony/mc/camera/device/CameraInfo;
 
-    const-string v2, "SEM12BC8"
+    const-string v2, "SEM48BC0"
 
     const-string v5, "4"
 
@@ -126,7 +117,7 @@
 
     invoke-virtual {p0, v0, v1}, Ljp/co/sony/mc/camera/util/capability/ProductsSensorMap$3;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 82
+    .line 75
     sget-object v0, Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;->ULTRA_WIDE_PHYSICAL:Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;
 
     new-instance v1, Ljp/co/sony/mc/camera/device/CameraInfo;

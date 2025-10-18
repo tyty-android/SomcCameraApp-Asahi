@@ -31,8 +31,8 @@
         0x1
     }
     l = {
-        0x1dd,
-        0x1df
+        0x334,
+        0x336
     }
     m = "onDragStopped-sF-c-tU"
     n = {

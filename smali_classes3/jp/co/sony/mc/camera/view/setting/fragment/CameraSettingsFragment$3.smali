@@ -25,7 +25,7 @@
 .method constructor <init>(Ljp/co/sony/mc/camera/view/setting/fragment/CameraSettingsFragment;)V
     .locals 0
 
-    .line 152
+    .line 156
     iput-object p1, p0, Ljp/co/sony/mc/camera/view/setting/fragment/CameraSettingsFragment$3;->this$0:Ljp/co/sony/mc/camera/view/setting/fragment/CameraSettingsFragment;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -38,7 +38,7 @@
 .method public onClick(Landroid/view/View;)V
     .locals 0
 
-    .line 155
+    .line 159
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/setting/fragment/CameraSettingsFragment$3;->this$0:Ljp/co/sony/mc/camera/view/setting/fragment/CameraSettingsFragment;
 
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/view/setting/fragment/CameraSettingsFragment;->getActivity()Landroidx/fragment/app/FragmentActivity;
@@ -47,7 +47,7 @@
 
     if-eqz p0, :cond_0
 
-    .line 157
+    .line 161
     invoke-virtual {p0}, Landroid/app/Activity;->onBackPressed()V
 
     :cond_0

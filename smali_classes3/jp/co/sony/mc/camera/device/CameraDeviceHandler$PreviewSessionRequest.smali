@@ -62,27 +62,27 @@
 .method private constructor <init>(Ljp/co/sony/mc/camera/device/CameraDeviceHandler$CameraSessionId;)V
     .locals 1
 
-    .line 6288
+    .line 6552
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     const/4 v0, 0x1
 
-    .line 6284
+    .line 6548
     iput-boolean v0, p0, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$PreviewSessionRequest;->mIsNeedRawCapture:Z
 
     const/4 v0, -0x1
 
-    .line 6286
+    .line 6550
     iput v0, p0, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$PreviewSessionRequest;->mRecordingOrientation:I
 
-    .line 6290
+    .line 6554
     invoke-virtual {p1}, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$CameraSessionId;->toString()Ljava/lang/String;
 
     move-result-object p1
 
     iput-object p1, p0, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$PreviewSessionRequest;->mSessionIdTag:Ljava/lang/String;
 
-    .line 6291
+    .line 6555
     invoke-direct {p0}, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$PreviewSessionRequest;->clear()V
 
     return-void
@@ -101,15 +101,15 @@
 
     const/4 v0, 0x0
 
-    .line 6330
+    .line 6594
     iput-boolean v0, p0, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$PreviewSessionRequest;->mIsNeedCapturedFrame:Z
 
-    .line 6331
+    .line 6595
     iput-boolean v0, p0, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$PreviewSessionRequest;->mIsVideoHdr:Z
 
     const/4 v0, -0x1
 
-    .line 6332
+    .line 6596
     iput v0, p0, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$PreviewSessionRequest;->mRecordingOrientation:I
 
     return-void
@@ -118,7 +118,7 @@
 .method private needCapturedFrame(Z)V
     .locals 0
 
-    .line 6295
+    .line 6559
     iput-boolean p1, p0, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$PreviewSessionRequest;->mIsNeedCapturedFrame:Z
 
     return-void
@@ -127,7 +127,7 @@
 .method private needRawCapture(Z)V
     .locals 0
 
-    .line 6311
+    .line 6575
     iput-boolean p1, p0, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$PreviewSessionRequest;->mIsNeedRawCapture:Z
 
     return-void
@@ -136,7 +136,7 @@
 .method private needVideoHdr(Z)V
     .locals 0
 
-    .line 6299
+    .line 6563
     iput-boolean p1, p0, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$PreviewSessionRequest;->mIsVideoHdr:Z
 
     return-void
@@ -145,7 +145,7 @@
 .method private setRecordingOrientation(I)V
     .locals 0
 
-    .line 6319
+    .line 6583
     iput p1, p0, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$PreviewSessionRequest;->mRecordingOrientation:I
 
     return-void
@@ -156,7 +156,7 @@
 .method public equals(Ljava/lang/Object;)Z
     .locals 1
 
-    .line 6344
+    .line 6608
     instance-of v0, p1, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$PreviewSessionRequest;
 
     if-eqz v0, :cond_0
@@ -189,7 +189,7 @@
 .method public getRecordingOrientation()I
     .locals 0
 
-    .line 6323
+    .line 6587
     iget p0, p0, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$PreviewSessionRequest;->mRecordingOrientation:I
 
     return p0
@@ -198,7 +198,7 @@
 .method public hashCode()I
     .locals 0
 
-    .line 6349
+    .line 6613
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$PreviewSessionRequest;->toString()Ljava/lang/String;
 
     move-result-object p0
@@ -213,7 +213,7 @@
 .method public isNeedCapturedFrame()Z
     .locals 0
 
-    .line 6303
+    .line 6567
     iget-boolean p0, p0, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$PreviewSessionRequest;->mIsNeedCapturedFrame:Z
 
     return p0
@@ -222,7 +222,7 @@
 .method public isNeedRawCapture()Z
     .locals 0
 
-    .line 6315
+    .line 6579
     iget-boolean p0, p0, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$PreviewSessionRequest;->mIsNeedRawCapture:Z
 
     return p0
@@ -231,7 +231,7 @@
 .method public isVideoHdr()Z
     .locals 0
 
-    .line 6307
+    .line 6571
     iget-boolean p0, p0, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$PreviewSessionRequest;->mIsVideoHdr:Z
 
     return p0
@@ -240,7 +240,7 @@
 .method public toString()Ljava/lang/String;
     .locals 2
 
-    .line 6337
+    .line 6601
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V

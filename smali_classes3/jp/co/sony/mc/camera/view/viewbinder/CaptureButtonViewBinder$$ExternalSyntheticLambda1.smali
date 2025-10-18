@@ -3,7 +3,7 @@
 .source "D8$$SyntheticClass"
 
 # interfaces
-.implements Landroid/view/View$OnFocusChangeListener;
+.implements Lkotlin/jvm/functions/Function1;
 
 
 # instance fields
@@ -24,13 +24,17 @@
 
 
 # virtual methods
-.method public final onFocusChange(Landroid/view/View;Z)V
+.method public final invoke(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
 
     .line 0
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/viewbinder/CaptureButtonViewBinder$$ExternalSyntheticLambda1;->f$0:Ljp/co/sony/mc/camera/view/viewbinder/CaptureButtonViewBinder;
 
-    invoke-static {p0, p1, p2}, Ljp/co/sony/mc/camera/view/viewbinder/CaptureButtonViewBinder;->$r8$lambda$bD5v6kehIkl_2ohakcpaIJ7g6Qw(Ljp/co/sony/mc/camera/view/viewbinder/CaptureButtonViewBinder;Landroid/view/View;Z)V
+    check-cast p1, Lkotlin/Triple;
 
-    return-void
+    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/view/viewbinder/CaptureButtonViewBinder;->$r8$lambda$uMgPd7yR4OHVV5bMge6KRxE4WrA(Ljp/co/sony/mc/camera/view/viewbinder/CaptureButtonViewBinder;Lkotlin/Triple;)Lkotlin/Unit;
+
+    move-result-object p0
+
+    return-object p0
 .end method

@@ -72,27 +72,19 @@
 .method public final invoke(Landroidx/compose/foundation/text/selection/Selectable;Landroidx/compose/foundation/text/selection/Selectable;)Ljava/lang/Integer;
     .locals 4
 
-    const-string v0, "a"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string v0, "b"
-
-    invoke-static {p2, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 138
+    .line 151
     invoke-interface {p1}, Landroidx/compose/foundation/text/selection/Selectable;->getLayoutCoordinates()Landroidx/compose/ui/layout/LayoutCoordinates;
 
     move-result-object p1
 
-    .line 139
+    .line 152
     invoke-interface {p2}, Landroidx/compose/foundation/text/selection/Selectable;->getLayoutCoordinates()Landroidx/compose/ui/layout/LayoutCoordinates;
 
     move-result-object p2
 
     if-eqz p1, :cond_0
 
-    .line 142
+    .line 155
     iget-object v0, p0, Landroidx/compose/foundation/text/selection/SelectionRegistrarImpl$sort$1;->$containerLayoutCoordinates:Landroidx/compose/ui/layout/LayoutCoordinates;
 
     sget-object v1, Landroidx/compose/ui/geometry/Offset;->Companion:Landroidx/compose/ui/geometry/Offset$Companion;
@@ -107,7 +99,7 @@
 
     goto :goto_0
 
-    .line 144
+    .line 157
     :cond_0
     sget-object p1, Landroidx/compose/ui/geometry/Offset;->Companion:Landroidx/compose/ui/geometry/Offset$Companion;
 
@@ -118,7 +110,7 @@
     :goto_0
     if-eqz p2, :cond_1
 
-    .line 147
+    .line 160
     iget-object p0, p0, Landroidx/compose/foundation/text/selection/SelectionRegistrarImpl$sort$1;->$containerLayoutCoordinates:Landroidx/compose/ui/layout/LayoutCoordinates;
 
     sget-object p1, Landroidx/compose/ui/geometry/Offset;->Companion:Landroidx/compose/ui/geometry/Offset$Companion;
@@ -133,7 +125,7 @@
 
     goto :goto_1
 
-    .line 149
+    .line 162
     :cond_1
     sget-object p0, Landroidx/compose/ui/geometry/Offset;->Companion:Landroidx/compose/ui/geometry/Offset$Companion;
 
@@ -141,7 +133,7 @@
 
     move-result-wide p0
 
-    .line 152
+    .line 165
     :goto_1
     invoke-static {v0, v1}, Landroidx/compose/ui/geometry/Offset;->getY-impl(J)F
 
@@ -155,7 +147,7 @@
 
     if-nez p2, :cond_2
 
-    .line 153
+    .line 166
     invoke-static {v0, v1}, Landroidx/compose/ui/geometry/Offset;->getX-impl(J)F
 
     move-result p2
@@ -182,7 +174,7 @@
 
     goto :goto_2
 
-    .line 155
+    .line 168
     :cond_2
     invoke-static {v0, v1}, Landroidx/compose/ui/geometry/Offset;->getY-impl(J)F
 
@@ -219,7 +211,7 @@
 .method public bridge synthetic invoke(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
 
-    .line 137
+    .line 150
     check-cast p1, Landroidx/compose/foundation/text/selection/Selectable;
 
     check-cast p2, Landroidx/compose/foundation/text/selection/Selectable;

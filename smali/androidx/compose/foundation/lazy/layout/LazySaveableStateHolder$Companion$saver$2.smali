@@ -91,11 +91,7 @@
         }
     .end annotation
 
-    const-string v0, "restored"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 102
+    .line 104
     new-instance v0, Landroidx/compose/foundation/lazy/layout/LazySaveableStateHolder;
 
     iget-object p0, p0, Landroidx/compose/foundation/lazy/layout/LazySaveableStateHolder$Companion$saver$2;->$parentRegistry:Landroidx/compose/runtime/saveable/SaveableStateRegistry;
@@ -108,7 +104,7 @@
 .method public bridge synthetic invoke(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
 
-    .line 99
+    .line 101
     check-cast p1, Ljava/util/Map;
 
     invoke-virtual {p0, p1}, Landroidx/compose/foundation/lazy/layout/LazySaveableStateHolder$Companion$saver$2;->invoke(Ljava/util/Map;)Landroidx/compose/foundation/lazy/layout/LazySaveableStateHolder;

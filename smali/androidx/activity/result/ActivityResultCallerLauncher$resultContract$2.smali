@@ -20,8 +20,8 @@
     value = {
         "Lkotlin/jvm/internal/Lambda;",
         "Lkotlin/jvm/functions/Function0<",
-        "Landroidx/activity/result/ActivityResultCallerLauncher$resultContract$2$1;",
-        ">;"
+        "Landroidx/activity/result/ActivityResultCallerLauncher$resultContract$2$1<",
+        "TI;TO;>;>;"
     }
 .end annotation
 
@@ -82,6 +82,13 @@
 # virtual methods
 .method public final invoke()Landroidx/activity/result/ActivityResultCallerLauncher$resultContract$2$1;
     .locals 1
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()",
+            "Landroidx/activity/result/ActivityResultCallerLauncher$resultContract$2$1<",
+            "TI;TO;>;"
+        }
+    .end annotation
 
     .line 63
     new-instance v0, Landroidx/activity/result/ActivityResultCallerLauncher$resultContract$2$1;

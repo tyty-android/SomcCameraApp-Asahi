@@ -5,7 +5,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/SourceDebugExtension;
-    value = "SMAP\nJvmAnnotatedString.jvm.kt\nKotlin\n*S Kotlin\n*F\n+ 1 JvmAnnotatedString.jvm.kt\nandroidx/compose/ui/text/JvmAnnotatedString_jvmKt\n+ 2 ListUtils.kt\nandroidx/compose/ui/util/ListUtilsKt\n+ 3 TempListUtils.kt\nandroidx/compose/ui/text/TempListUtilsKt\n*L\n1#1,80:1\n151#2,3:81\n33#2,4:84\n154#2,2:88\n38#2:90\n156#2:91\n151#2,3:92\n33#2,4:95\n154#2,2:99\n38#2:101\n156#2:102\n151#2,3:103\n33#2,4:106\n154#2,2:110\n38#2:112\n156#2:113\n33#2,4:117\n38#2:123\n108#3,3:114\n111#3,2:121\n113#3:124\n*S KotlinDebug\n*F\n+ 1 JvmAnnotatedString.jvm.kt\nandroidx/compose/ui/text/JvmAnnotatedString_jvmKt\n*L\n44#1:81,3\n44#1:84,4\n44#1:88,2\n44#1:90\n44#1:91\n48#1:92,3\n48#1:95,4\n48#1:99,2\n48#1:101\n48#1:102\n51#1:103,3\n51#1:106,4\n51#1:110,2\n51#1:112\n51#1:113\n73#1:117,4\n73#1:123\n73#1:114,3\n73#1:121,2\n73#1:124\n*E\n"
+    value = "SMAP\nJvmAnnotatedString.jvm.kt\nKotlin\n*S Kotlin\n*F\n+ 1 JvmAnnotatedString.jvm.kt\nandroidx/compose/ui/text/JvmAnnotatedString_jvmKt\n+ 2 ListUtils.kt\nandroidx/compose/ui/util/ListUtilsKt\n*L\n1#1,81:1\n151#2,3:82\n33#2,4:85\n154#2,2:89\n38#2:91\n156#2:92\n151#2,3:93\n33#2,4:96\n154#2,2:100\n38#2:102\n156#2:103\n151#2,3:104\n33#2,4:107\n154#2,2:111\n38#2:113\n156#2:114\n256#2,3:115\n33#2,4:118\n259#2,2:122\n38#2:124\n261#2:125\n*S KotlinDebug\n*F\n+ 1 JvmAnnotatedString.jvm.kt\nandroidx/compose/ui/text/JvmAnnotatedString_jvmKt\n*L\n45#1:82,3\n45#1:85,4\n45#1:89,2\n45#1:91\n45#1:92\n49#1:93,3\n49#1:96,4\n49#1:100,2\n49#1:102\n49#1:103\n52#1:104,3\n52#1:107,4\n52#1:111,2\n52#1:113\n52#1:114\n74#1:115,3\n74#1:118,4\n74#1:122,2\n74#1:124\n74#1:125\n*E\n"
 .end annotation
 
 .annotation runtime Lkotlin/Metadata;
@@ -55,7 +55,7 @@
 
     if-eqz p0, :cond_0
 
-    .line 118
+    .line 119
     invoke-interface {p0}, Ljava/util/List;->size()I
 
     move-result v0
@@ -65,15 +65,15 @@
     :goto_0
     if-ge v1, v0, :cond_0
 
-    .line 119
+    .line 120
     invoke-interface {p0, v1}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
     move-result-object v2
 
-    .line 121
+    .line 122
     check-cast v2, Landroidx/compose/ui/text/AnnotatedString$Range;
 
-    .line 75
+    .line 76
     invoke-virtual {v2}, Landroidx/compose/ui/text/AnnotatedString$Range;->getStart()I
 
     move-result v3
@@ -84,7 +84,7 @@
 
     invoke-interface {p1, v3}, Ljava/util/SortedSet;->add(Ljava/lang/Object;)Z
 
-    .line 76
+    .line 77
     invoke-virtual {v2}, Landroidx/compose/ui/text/AnnotatedString$Range;->getEnd()I
 
     move-result v2
@@ -122,73 +122,65 @@
         }
     .end annotation
 
-    const-string v0, "<this>"
+    const/4 v0, 0x2
 
-    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+    .line 33
+    new-array v0, v0, [Ljava/lang/Integer;
 
-    const-string/jumbo v0, "transform"
+    const/4 v1, 0x0
 
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
-    const/4 v0, 0x0
+    move-result-object v2
 
-    .line 32
-    invoke-static {v0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
-
-    move-result-object v1
+    aput-object v2, v0, v1
 
     invoke-virtual {p0}, Landroidx/compose/ui/text/AnnotatedString;->getText()Ljava/lang/String;
 
-    move-result-object v2
+    move-result-object v3
 
-    invoke-virtual {v2}, Ljava/lang/String;->length()I
+    invoke-virtual {v3}, Ljava/lang/String;->length()I
 
-    move-result v2
+    move-result v3
 
-    invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+    invoke-static {v3}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
-    move-result-object v2
-
-    const/4 v3, 0x2
-
-    new-array v3, v3, [Ljava/lang/Integer;
-
-    aput-object v1, v3, v0
+    move-result-object v3
 
     const/4 v4, 0x1
 
-    aput-object v2, v3, v4
+    aput-object v3, v0, v4
 
-    invoke-static {v3}, Lkotlin/collections/SetsKt;->sortedSetOf([Ljava/lang/Object;)Ljava/util/TreeSet;
+    invoke-static {v0}, Lkotlin/collections/SetsKt;->sortedSetOf([Ljava/lang/Object;)Ljava/util/TreeSet;
 
-    move-result-object v2
+    move-result-object v0
 
-    .line 33
+    .line 34
     invoke-virtual {p0}, Landroidx/compose/ui/text/AnnotatedString;->getSpanStylesOrNull$ui_text_release()Ljava/util/List;
 
     move-result-object v3
 
-    move-object v5, v2
+    move-object v5, v0
 
     check-cast v5, Ljava/util/SortedSet;
 
     invoke-static {v3, v5}, Landroidx/compose/ui/text/JvmAnnotatedString_jvmKt;->collectRangeTransitions(Ljava/util/List;Ljava/util/SortedSet;)V
 
-    .line 34
+    .line 35
     invoke-virtual {p0}, Landroidx/compose/ui/text/AnnotatedString;->getParagraphStylesOrNull$ui_text_release()Ljava/util/List;
 
     move-result-object v3
 
     invoke-static {v3, v5}, Landroidx/compose/ui/text/JvmAnnotatedString_jvmKt;->collectRangeTransitions(Ljava/util/List;Ljava/util/SortedSet;)V
 
-    .line 35
+    .line 36
     invoke-virtual {p0}, Landroidx/compose/ui/text/AnnotatedString;->getAnnotations$ui_text_release()Ljava/util/List;
 
     move-result-object v3
 
     invoke-static {v3, v5}, Landroidx/compose/ui/text/JvmAnnotatedString_jvmKt;->collectRangeTransitions(Ljava/util/List;Ljava/util/SortedSet;)V
 
-    .line 37
+    .line 38
     new-instance v3, Lkotlin/jvm/internal/Ref$ObjectRef;
 
     invoke-direct {v3}, Lkotlin/jvm/internal/Ref$ObjectRef;-><init>()V
@@ -197,29 +189,29 @@
 
     iput-object v5, v3, Lkotlin/jvm/internal/Ref$ObjectRef;->element:Ljava/lang/Object;
 
-    .line 38
-    invoke-static {v1, v1}, Lkotlin/TuplesKt;->to(Ljava/lang/Object;Ljava/lang/Object;)Lkotlin/Pair;
-
-    move-result-object v1
-
+    .line 39
     new-array v4, v4, [Lkotlin/Pair;
 
-    aput-object v1, v4, v0
+    invoke-static {v2, v2}, Lkotlin/TuplesKt;->to(Ljava/lang/Object;Ljava/lang/Object;)Lkotlin/Pair;
+
+    move-result-object v2
+
+    aput-object v2, v4, v1
 
     invoke-static {v4}, Lkotlin/collections/MapsKt;->mutableMapOf([Lkotlin/Pair;)Ljava/util/Map;
 
-    move-result-object v1
+    move-result-object v2
 
-    .line 39
-    move-object v4, v2
+    .line 40
+    move-object v4, v0
 
     check-cast v4, Ljava/lang/Iterable;
 
-    new-instance v2, Landroidx/compose/ui/text/JvmAnnotatedString_jvmKt$transform$1;
+    new-instance v0, Landroidx/compose/ui/text/JvmAnnotatedString_jvmKt$transform$1;
 
-    invoke-direct {v2, v3, p1, p0, v1}, Landroidx/compose/ui/text/JvmAnnotatedString_jvmKt$transform$1;-><init>(Lkotlin/jvm/internal/Ref$ObjectRef;Lkotlin/jvm/functions/Function3;Landroidx/compose/ui/text/AnnotatedString;Ljava/util/Map;)V
+    invoke-direct {v0, v3, p1, p0, v2}, Landroidx/compose/ui/text/JvmAnnotatedString_jvmKt$transform$1;-><init>(Lkotlin/jvm/internal/Ref$ObjectRef;Lkotlin/jvm/functions/Function3;Landroidx/compose/ui/text/AnnotatedString;Ljava/util/Map;)V
 
-    move-object v8, v2
+    move-object v8, v0
 
     check-cast v8, Lkotlin/jvm/functions/Function1;
 
@@ -235,16 +227,16 @@
 
     invoke-static/range {v4 .. v10}, Lkotlin/collections/CollectionsKt;->windowed$default(Ljava/lang/Iterable;IIZLkotlin/jvm/functions/Function1;ILjava/lang/Object;)Ljava/util/List;
 
-    .line 44
+    .line 45
     invoke-virtual {p0}, Landroidx/compose/ui/text/AnnotatedString;->getSpanStylesOrNull$ui_text_release()Ljava/util/List;
 
     move-result-object p1
 
-    const/4 v2, 0x0
+    const/4 v0, 0x0
 
     if-eqz p1, :cond_1
 
-    .line 82
+    .line 83
     new-instance v4, Ljava/util/ArrayList;
 
     invoke-interface {p1}, Ljava/util/List;->size()I
@@ -253,29 +245,29 @@
 
     invoke-direct {v4, v5}, Ljava/util/ArrayList;-><init>(I)V
 
-    .line 85
+    .line 86
     invoke-interface {p1}, Ljava/util/List;->size()I
 
     move-result v5
 
-    move v6, v0
+    move v6, v1
 
     :goto_0
     if-ge v6, v5, :cond_0
 
-    .line 86
+    .line 87
     invoke-interface {p1, v6}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
     move-result-object v7
 
-    .line 88
+    .line 89
     move-object v8, v4
 
     check-cast v8, Ljava/util/Collection;
 
     check-cast v7, Landroidx/compose/ui/text/AnnotatedString$Range;
 
-    .line 46
+    .line 47
     new-instance v9, Landroidx/compose/ui/text/AnnotatedString$Range;
 
     invoke-virtual {v7}, Landroidx/compose/ui/text/AnnotatedString$Range;->getItem()Ljava/lang/Object;
@@ -290,7 +282,7 @@
 
     move-result-object v11
 
-    invoke-interface {v1, v11}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-interface {v2, v11}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v11
 
@@ -310,7 +302,7 @@
 
     move-result-object v7
 
-    invoke-interface {v1, v7}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-interface {v2, v7}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v7
 
@@ -324,23 +316,23 @@
 
     invoke-direct {v9, v10, v11, v7}, Landroidx/compose/ui/text/AnnotatedString$Range;-><init>(Ljava/lang/Object;II)V
 
-    .line 88
+    .line 89
     invoke-interface {v8, v9}, Ljava/util/Collection;->add(Ljava/lang/Object;)Z
 
     add-int/lit8 v6, v6, 0x1
 
     goto :goto_0
 
-    .line 91
+    .line 92
     :cond_0
     check-cast v4, Ljava/util/List;
 
     goto :goto_1
 
     :cond_1
-    move-object v4, v2
+    move-object v4, v0
 
-    .line 48
+    .line 49
     :goto_1
     invoke-virtual {p0}, Landroidx/compose/ui/text/AnnotatedString;->getParagraphStylesOrNull$ui_text_release()Ljava/util/List;
 
@@ -348,7 +340,7 @@
 
     if-eqz p1, :cond_3
 
-    .line 93
+    .line 94
     new-instance v5, Ljava/util/ArrayList;
 
     invoke-interface {p1}, Ljava/util/List;->size()I
@@ -357,29 +349,29 @@
 
     invoke-direct {v5, v6}, Ljava/util/ArrayList;-><init>(I)V
 
-    .line 96
+    .line 97
     invoke-interface {p1}, Ljava/util/List;->size()I
 
     move-result v6
 
-    move v7, v0
+    move v7, v1
 
     :goto_2
     if-ge v7, v6, :cond_2
 
-    .line 97
+    .line 98
     invoke-interface {p1, v7}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
     move-result-object v8
 
-    .line 99
+    .line 100
     move-object v9, v5
 
     check-cast v9, Ljava/util/Collection;
 
     check-cast v8, Landroidx/compose/ui/text/AnnotatedString$Range;
 
-    .line 49
+    .line 50
     new-instance v10, Landroidx/compose/ui/text/AnnotatedString$Range;
 
     invoke-virtual {v8}, Landroidx/compose/ui/text/AnnotatedString$Range;->getItem()Ljava/lang/Object;
@@ -394,7 +386,7 @@
 
     move-result-object v12
 
-    invoke-interface {v1, v12}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-interface {v2, v12}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v12
 
@@ -414,7 +406,7 @@
 
     move-result-object v8
 
-    invoke-interface {v1, v8}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-interface {v2, v8}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v8
 
@@ -428,23 +420,23 @@
 
     invoke-direct {v10, v11, v12, v8}, Landroidx/compose/ui/text/AnnotatedString$Range;-><init>(Ljava/lang/Object;II)V
 
-    .line 99
+    .line 100
     invoke-interface {v9, v10}, Ljava/util/Collection;->add(Ljava/lang/Object;)Z
 
     add-int/lit8 v7, v7, 0x1
 
     goto :goto_2
 
-    .line 102
+    .line 103
     :cond_2
     check-cast v5, Ljava/util/List;
 
     goto :goto_3
 
     :cond_3
-    move-object v5, v2
+    move-object v5, v0
 
-    .line 51
+    .line 52
     :goto_3
     invoke-virtual {p0}, Landroidx/compose/ui/text/AnnotatedString;->getAnnotations$ui_text_release()Ljava/util/List;
 
@@ -452,36 +444,36 @@
 
     if-eqz p0, :cond_5
 
-    .line 104
+    .line 105
     new-instance p1, Ljava/util/ArrayList;
 
     invoke-interface {p0}, Ljava/util/List;->size()I
 
-    move-result v2
+    move-result v0
 
-    invoke-direct {p1, v2}, Ljava/util/ArrayList;-><init>(I)V
-
-    .line 107
-    invoke-interface {p0}, Ljava/util/List;->size()I
-
-    move-result v2
-
-    :goto_4
-    if-ge v0, v2, :cond_4
+    invoke-direct {p1, v0}, Ljava/util/ArrayList;-><init>(I)V
 
     .line 108
-    invoke-interface {p0, v0}, Ljava/util/List;->get(I)Ljava/lang/Object;
+    invoke-interface {p0}, Ljava/util/List;->size()I
+
+    move-result v0
+
+    :goto_4
+    if-ge v1, v0, :cond_4
+
+    .line 109
+    invoke-interface {p0, v1}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
     move-result-object v6
 
-    .line 110
+    .line 111
     move-object v7, p1
 
     check-cast v7, Ljava/util/Collection;
 
     check-cast v6, Landroidx/compose/ui/text/AnnotatedString$Range;
 
-    .line 52
+    .line 53
     new-instance v8, Landroidx/compose/ui/text/AnnotatedString$Range;
 
     invoke-virtual {v6}, Landroidx/compose/ui/text/AnnotatedString$Range;->getItem()Ljava/lang/Object;
@@ -496,7 +488,7 @@
 
     move-result-object v10
 
-    invoke-interface {v1, v10}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-interface {v2, v10}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v10
 
@@ -516,7 +508,7 @@
 
     move-result-object v6
 
-    invoke-interface {v1, v6}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-interface {v2, v6}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v6
 
@@ -530,30 +522,30 @@
 
     invoke-direct {v8, v9, v10, v6}, Landroidx/compose/ui/text/AnnotatedString$Range;-><init>(Ljava/lang/Object;II)V
 
-    .line 110
+    .line 111
     invoke-interface {v7, v8}, Ljava/util/Collection;->add(Ljava/lang/Object;)Z
 
-    add-int/lit8 v0, v0, 0x1
+    add-int/lit8 v1, v1, 0x1
 
     goto :goto_4
 
-    .line 113
+    .line 114
     :cond_4
-    move-object v2, p1
+    move-object v0, p1
 
-    check-cast v2, Ljava/util/List;
+    check-cast v0, Ljava/util/List;
 
-    .line 55
+    .line 56
     :cond_5
     new-instance p0, Landroidx/compose/ui/text/AnnotatedString;
 
-    .line 56
+    .line 57
     iget-object p1, v3, Lkotlin/jvm/internal/Ref$ObjectRef;->element:Ljava/lang/Object;
 
     check-cast p1, Ljava/lang/String;
 
-    .line 55
-    invoke-direct {p0, p1, v4, v5, v2}, Landroidx/compose/ui/text/AnnotatedString;-><init>(Ljava/lang/String;Ljava/util/List;Ljava/util/List;Ljava/util/List;)V
+    .line 56
+    invoke-direct {p0, p1, v4, v5, v0}, Landroidx/compose/ui/text/AnnotatedString;-><init>(Ljava/lang/String;Ljava/util/List;Ljava/util/List;Ljava/util/List;)V
 
     return-object p0
 .end method

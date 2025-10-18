@@ -11,12 +11,12 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/SourceDebugExtension;
-    value = "SMAP\nColorSpace.kt\nKotlin\n*S Kotlin\n*F\n+ 1 ColorSpace.kt\nandroidx/compose/ui/graphics/colorspace/ColorSpace\n+ 2 InlineClassHelper.kt\nandroidx/compose/ui/util/InlineClassHelperKt\n*L\n1#1,796:1\n25#2,3:797\n*S KotlinDebug\n*F\n+ 1 ColorSpace.kt\nandroidx/compose/ui/graphics/colorspace/ColorSpace\n*L\n288#1:797,3\n*E\n"
+    value = "SMAP\nColorSpace.kt\nKotlin\n*S Kotlin\n*F\n+ 1 ColorSpace.kt\nandroidx/compose/ui/graphics/colorspace/ColorSpace\n+ 2 InlineClassHelper.kt\nandroidx/compose/ui/util/InlineClassHelperKt\n*L\n1#1,799:1\n25#2,3:800\n*S KotlinDebug\n*F\n+ 1 ColorSpace.kt\nandroidx/compose/ui/graphics/colorspace/ColorSpace\n*L\n290#1:800,3\n*E\n"
 .end annotation
 
 .annotation runtime Lkotlin/Metadata;
     d1 = {
-        "\u0000F\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0010\u000e\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0010\u0008\n\u0002\u0008\u0006\n\u0002\u0010\u000b\n\u0002\u0008\n\n\u0002\u0010\u0014\n\u0000\n\u0002\u0010\u0007\n\u0002\u0008\t\n\u0002\u0010\t\n\u0002\u0008\u000b\n\u0002\u0018\u0002\n\u0002\u0008\u0006\u0008&\u0018\u0000 72\u00020\u0001:\u00017B\u001a\u0008\u0016\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\u0006\u0010\u0004\u001a\u00020\u0005\u00f8\u0001\u0000\u00a2\u0006\u0002\u0010\u0006B\"\u0008\u0000\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\u0006\u0010\u0004\u001a\u00020\u0005\u0012\u0006\u0010\u0007\u001a\u00020\u0008\u00f8\u0001\u0000\u00a2\u0006\u0002\u0010\tJ\u0013\u0010\u0017\u001a\u00020\u000f2\u0008\u0010\u0018\u001a\u0004\u0018\u00010\u0001H\u0096\u0002J\u001e\u0010\u0019\u001a\u00020\u001a2\u0006\u0010\u001b\u001a\u00020\u001c2\u0006\u0010\u001d\u001a\u00020\u001c2\u0006\u0010\u001e\u001a\u00020\u001cJ\u0010\u0010\u0019\u001a\u00020\u001a2\u0006\u0010\u001f\u001a\u00020\u001aH&J\u0010\u0010 \u001a\u00020\u001c2\u0006\u0010!\u001a\u00020\u0008H&J\u0010\u0010\"\u001a\u00020\u001c2\u0006\u0010!\u001a\u00020\u0008H&J\u0008\u0010#\u001a\u00020\u0008H\u0016J\u0008\u0010$\u001a\u00020\u0003H\u0016J%\u0010%\u001a\u00020&2\u0006\u0010\'\u001a\u00020\u001c2\u0006\u0010(\u001a\u00020\u001c2\u0006\u0010)\u001a\u00020\u001cH\u0010\u00a2\u0006\u0002\u0008*J\u001e\u0010+\u001a\u00020\u001a2\u0006\u0010,\u001a\u00020\u001c2\u0006\u0010-\u001a\u00020\u001c2\u0006\u0010.\u001a\u00020\u001cJ\u0010\u0010+\u001a\u00020\u001a2\u0006\u0010\u001f\u001a\u00020\u001aH&J%\u0010/\u001a\u00020\u001c2\u0006\u0010\'\u001a\u00020\u001c2\u0006\u0010(\u001a\u00020\u001c2\u0006\u0010)\u001a\u00020\u001cH\u0010\u00a2\u0006\u0002\u00080J@\u00101\u001a\u0002022\u0006\u0010\u001b\u001a\u00020\u001c2\u0006\u0010\u001d\u001a\u00020\u001c2\u0006\u0010\u001e\u001a\u00020\u001c2\u0006\u00103\u001a\u00020\u001c2\u0006\u00104\u001a\u00020\u0000H\u0010\u00f8\u0001\u0002\u00f8\u0001\u0001\u00f8\u0001\u0000\u00a2\u0006\u0004\u00085\u00106R\u0011\u0010\n\u001a\u00020\u00088F\u00a2\u0006\u0006\u001a\u0004\u0008\u000b\u0010\u000cR\u0014\u0010\u0007\u001a\u00020\u0008X\u0080\u0004\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\r\u0010\u000cR\u0014\u0010\u000e\u001a\u00020\u000f8VX\u0096\u0004\u00a2\u0006\u0006\u001a\u0004\u0008\u000e\u0010\u0010R\u0012\u0010\u0011\u001a\u00020\u000fX\u00a6\u0004\u00a2\u0006\u0006\u001a\u0004\u0008\u0011\u0010\u0010R\u001c\u0010\u0004\u001a\u00020\u0005\u00f8\u0001\u0000\u00f8\u0001\u0001\u00f8\u0001\u0002\u00a2\u0006\n\n\u0002\u0010\u0014\u001a\u0004\u0008\u0012\u0010\u0013R\u0011\u0010\u0002\u001a\u00020\u0003\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\u0015\u0010\u0016\u0082\u0002\u000f\n\u0002\u0008\u0019\n\u0005\u0008\u00a1\u001e0\u0001\n\u0002\u0008!\u00a8\u00068"
+        "\u0000F\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0010\u000e\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0010\u0008\n\u0002\u0008\u0006\n\u0002\u0010\u000b\n\u0002\u0008\n\n\u0002\u0010\u0014\n\u0000\n\u0002\u0010\u0007\n\u0002\u0008\t\n\u0002\u0010\t\n\u0002\u0008\u000b\n\u0002\u0018\u0002\n\u0002\u0008\u0006\u0008&\u0018\u0000 72\u00020\u0001:\u00017B\u0017\u0008\u0016\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\u0006\u0010\u0004\u001a\u00020\u0005\u00a2\u0006\u0002\u0010\u0006B\u001f\u0008\u0000\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\u0006\u0010\u0004\u001a\u00020\u0005\u0012\u0006\u0010\u0007\u001a\u00020\u0008\u00a2\u0006\u0002\u0010\tJ\u0013\u0010\u0017\u001a\u00020\u000f2\u0008\u0010\u0018\u001a\u0004\u0018\u00010\u0001H\u0096\u0002J \u0010\u0019\u001a\u00020\u001a2\u0006\u0010\u001b\u001a\u00020\u001c2\u0006\u0010\u001d\u001a\u00020\u001c2\u0006\u0010\u001e\u001a\u00020\u001cH\u0007J\u0012\u0010\u0019\u001a\u00020\u001a2\u0008\u0008\u0001\u0010\u001f\u001a\u00020\u001aH\'J\u0012\u0010 \u001a\u00020\u001c2\u0008\u0008\u0001\u0010!\u001a\u00020\u0008H&J\u0012\u0010\"\u001a\u00020\u001c2\u0008\u0008\u0001\u0010!\u001a\u00020\u0008H&J\u0008\u0010#\u001a\u00020\u0008H\u0016J\u0008\u0010$\u001a\u00020\u0003H\u0016J%\u0010%\u001a\u00020&2\u0006\u0010\'\u001a\u00020\u001c2\u0006\u0010(\u001a\u00020\u001c2\u0006\u0010)\u001a\u00020\u001cH\u0010\u00a2\u0006\u0002\u0008*J \u0010+\u001a\u00020\u001a2\u0006\u0010,\u001a\u00020\u001c2\u0006\u0010-\u001a\u00020\u001c2\u0006\u0010.\u001a\u00020\u001cH\u0007J\u0012\u0010+\u001a\u00020\u001a2\u0008\u0008\u0001\u0010\u001f\u001a\u00020\u001aH\'J%\u0010/\u001a\u00020\u001c2\u0006\u0010\'\u001a\u00020\u001c2\u0006\u0010(\u001a\u00020\u001c2\u0006\u0010)\u001a\u00020\u001cH\u0010\u00a2\u0006\u0002\u00080J=\u00101\u001a\u0002022\u0006\u0010\u001b\u001a\u00020\u001c2\u0006\u0010\u001d\u001a\u00020\u001c2\u0006\u0010\u001e\u001a\u00020\u001c2\u0006\u00103\u001a\u00020\u001c2\u0006\u00104\u001a\u00020\u0000H\u0010\u00f8\u0001\u0001\u00f8\u0001\u0000\u00a2\u0006\u0004\u00085\u00106R\u0011\u0010\n\u001a\u00020\u00088G\u00a2\u0006\u0006\u001a\u0004\u0008\u000b\u0010\u000cR\u0014\u0010\u0007\u001a\u00020\u0008X\u0080\u0004\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\r\u0010\u000cR\u0014\u0010\u000e\u001a\u00020\u000f8VX\u0096\u0004\u00a2\u0006\u0006\u001a\u0004\u0008\u000e\u0010\u0010R\u0012\u0010\u0011\u001a\u00020\u000fX\u00a6\u0004\u00a2\u0006\u0006\u001a\u0004\u0008\u0011\u0010\u0010R\u0019\u0010\u0004\u001a\u00020\u0005\u00f8\u0001\u0000\u00f8\u0001\u0001\u00a2\u0006\n\n\u0002\u0010\u0014\u001a\u0004\u0008\u0012\u0010\u0013R\u0011\u0010\u0002\u001a\u00020\u0003\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\u0015\u0010\u0016\u0082\u0002\u000b\n\u0005\u0008\u00a1\u001e0\u0001\n\u0002\u0008!\u00a8\u00068"
     }
     d2 = {
         "Landroidx/compose/ui/graphics/colorspace/ColorSpace;",
@@ -119,48 +119,40 @@
 .end method
 
 .method private constructor <init>(Ljava/lang/String;J)V
-    .locals 7
+    .locals 6
 
-    const-string v0, "name"
+    const/4 v4, -0x1
 
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+    const/4 v5, 0x0
 
-    const/4 v5, -0x1
+    move-object v0, p0
 
-    const/4 v6, 0x0
+    move-object v1, p1
 
-    move-object v1, p0
+    move-wide v2, p2
 
-    move-object v2, p1
-
-    move-wide v3, p2
-
-    .line 142
-    invoke-direct/range {v1 .. v6}, Landroidx/compose/ui/graphics/colorspace/ColorSpace;-><init>(Ljava/lang/String;JILkotlin/jvm/internal/DefaultConstructorMarker;)V
+    .line 144
+    invoke-direct/range {v0 .. v5}, Landroidx/compose/ui/graphics/colorspace/ColorSpace;-><init>(Ljava/lang/String;JILkotlin/jvm/internal/DefaultConstructorMarker;)V
 
     return-void
 .end method
 
 .method private constructor <init>(Ljava/lang/String;JI)V
-    .locals 1
+    .locals 0
 
-    const-string v0, "name"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 95
+    .line 97
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 125
+    .line 127
     iput-object p1, p0, Landroidx/compose/ui/graphics/colorspace/ColorSpace;->name:Ljava/lang/String;
 
-    .line 133
+    .line 135
     iput-wide p2, p0, Landroidx/compose/ui/graphics/colorspace/ColorSpace;->model:J
 
-    .line 140
+    .line 142
     iput p4, p0, Landroidx/compose/ui/graphics/colorspace/ColorSpace;->id:I
 
-    .line 200
+    .line 202
     check-cast p1, Ljava/lang/CharSequence;
 
     invoke-interface {p1}, Ljava/lang/CharSequence;->length()I
@@ -179,7 +171,7 @@
 
     return-void
 
-    .line 208
+    .line 210
     :cond_0
     new-instance p0, Ljava/lang/IllegalArgumentException;
 
@@ -189,14 +181,14 @@
 
     throw p0
 
-    .line 201
+    .line 203
     :cond_1
     new-instance p0, Ljava/lang/IllegalArgumentException;
 
-    .line 202
+    .line 204
     const-string p1, "The name of a color space cannot be null and must contain at least 1 character"
 
-    .line 201
+    .line 203
     invoke-direct {p0, p1}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
 
     throw p0
@@ -234,7 +226,7 @@
 
     if-eqz p1, :cond_4
 
-    .line 381
+    .line 383
     invoke-virtual {p0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     move-result-object v1
@@ -247,11 +239,11 @@
 
     goto :goto_0
 
-    .line 385
+    .line 387
     :cond_1
     check-cast p1, Landroidx/compose/ui/graphics/colorspace/ColorSpace;
 
-    .line 387
+    .line 389
     iget v1, p0, Landroidx/compose/ui/graphics/colorspace/ColorSpace;->id:I
 
     iget v2, p1, Landroidx/compose/ui/graphics/colorspace/ColorSpace;->id:I
@@ -260,7 +252,7 @@
 
     return v0
 
-    .line 389
+    .line 391
     :cond_2
     iget-object v1, p0, Landroidx/compose/ui/graphics/colorspace/ColorSpace;->name:Ljava/lang/String;
 
@@ -291,7 +283,7 @@
 .method public final fromXyz(FFF)[F
     .locals 2
 
-    .line 330
+    .line 332
     iget-wide v0, p0, Landroidx/compose/ui/graphics/colorspace/ColorSpace;->model:J
 
     invoke-static {v0, v1}, Landroidx/compose/ui/graphics/colorspace/ColorModel;->getComponentCount-impl(J)I
@@ -302,20 +294,20 @@
 
     const/4 v1, 0x0
 
-    .line 331
+    .line 333
     aput p1, v0, v1
 
     const/4 p1, 0x1
 
-    .line 332
+    .line 334
     aput p2, v0, p1
 
     const/4 p1, 0x2
 
-    .line 333
+    .line 335
     aput p3, v0, p1
 
-    .line 334
+    .line 336
     invoke-virtual {p0, v0}, Landroidx/compose/ui/graphics/colorspace/ColorSpace;->fromXyz([F)[F
 
     move-result-object p0
@@ -329,7 +321,7 @@
 .method public final getComponentCount()I
     .locals 2
 
-    .line 154
+    .line 156
     iget-wide v0, p0, Landroidx/compose/ui/graphics/colorspace/ColorSpace;->model:J
 
     invoke-static {v0, v1}, Landroidx/compose/ui/graphics/colorspace/ColorModel;->getComponentCount-impl(J)I
@@ -342,7 +334,7 @@
 .method public final getId$ui_graphics_release()I
     .locals 0
 
-    .line 140
+    .line 142
     iget p0, p0, Landroidx/compose/ui/graphics/colorspace/ColorSpace;->id:I
 
     return p0
@@ -357,7 +349,7 @@
 .method public final getModel-xdoWZVw()J
     .locals 2
 
-    .line 133
+    .line 135
     iget-wide v0, p0, Landroidx/compose/ui/graphics/colorspace/ColorSpace;->model:J
 
     return-wide v0
@@ -366,7 +358,7 @@
 .method public final getName()Ljava/lang/String;
     .locals 0
 
-    .line 125
+    .line 127
     iget-object p0, p0, Landroidx/compose/ui/graphics/colorspace/ColorSpace;->name:Ljava/lang/String;
 
     return-object p0
@@ -375,7 +367,7 @@
 .method public hashCode()I
     .locals 3
 
-    .line 393
+    .line 395
     iget-object v0, p0, Landroidx/compose/ui/graphics/colorspace/ColorSpace;->name:Ljava/lang/String;
 
     invoke-virtual {v0}, Ljava/lang/String;->hashCode()I
@@ -384,7 +376,7 @@
 
     mul-int/lit8 v0, v0, 0x1f
 
-    .line 394
+    .line 396
     iget-wide v1, p0, Landroidx/compose/ui/graphics/colorspace/ColorSpace;->model:J
 
     invoke-static {v1, v2}, Landroidx/compose/ui/graphics/colorspace/ColorModel;->hashCode-impl(J)I
@@ -395,7 +387,7 @@
 
     mul-int/lit8 v0, v0, 0x1f
 
-    .line 395
+    .line 397
     iget p0, p0, Landroidx/compose/ui/graphics/colorspace/ColorSpace;->id:I
 
     add-int/2addr v0, p0
@@ -417,7 +409,7 @@
 .method public toString()Ljava/lang/String;
     .locals 3
 
-    .line 373
+    .line 375
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
@@ -472,29 +464,29 @@
 .method public toXy$ui_graphics_release(FFF)J
     .locals 2
 
-    .line 287
+    .line 289
     invoke-virtual {p0, p1, p2, p3}, Landroidx/compose/ui/graphics/colorspace/ColorSpace;->toXyz(FFF)[F
 
     move-result-object p0
 
     const/4 p1, 0x0
 
-    .line 288
+    .line 290
     aget p1, p0, p1
 
     const/4 p2, 0x1
 
     aget p0, p0, p2
 
-    .line 797
-    invoke-static {p1}, Ljava/lang/Float;->floatToIntBits(F)I
+    .line 800
+    invoke-static {p1}, Ljava/lang/Float;->floatToRawIntBits(F)I
 
     move-result p1
 
     int-to-long p1, p1
 
-    .line 798
-    invoke-static {p0}, Ljava/lang/Float;->floatToIntBits(F)I
+    .line 801
+    invoke-static {p0}, Ljava/lang/Float;->floatToRawIntBits(F)I
 
     move-result p0
 
@@ -518,7 +510,7 @@
 
     const/4 v0, 0x3
 
-    .line 258
+    .line 260
     new-array v0, v0, [F
 
     const/4 v1, 0x0
@@ -546,34 +538,30 @@
 .method public toZ$ui_graphics_release(FFF)F
     .locals 0
 
-    .line 295
+    .line 297
     invoke-virtual {p0, p1, p2, p3}, Landroidx/compose/ui/graphics/colorspace/ColorSpace;->toXyz(FFF)[F
 
     move-result-object p0
 
     const/4 p1, 0x2
 
-    .line 296
+    .line 298
     aget p0, p0, p1
 
     return p0
 .end method
 
 .method public xyzaToColor-JlNiLsg$ui_graphics_release(FFFFLandroidx/compose/ui/graphics/colorspace/ColorSpace;)J
-    .locals 1
+    .locals 0
 
-    const-string v0, "colorSpace"
-
-    invoke-static {p5, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 311
+    .line 313
     invoke-virtual {p0, p1, p2, p3}, Landroidx/compose/ui/graphics/colorspace/ColorSpace;->fromXyz(FFF)[F
 
     move-result-object p0
 
     const/4 p1, 0x0
 
-    .line 312
+    .line 314
     aget p1, p0, p1
 
     const/4 p2, 0x1

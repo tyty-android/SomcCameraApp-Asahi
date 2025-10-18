@@ -49,22 +49,28 @@
 .end annotation
 
 
+# static fields
+.field public static final $stable:I
+
+
 # instance fields
 .field private final alignmentLine:Landroidx/compose/ui/layout/AlignmentLine;
 
 
 # direct methods
+.method static constructor <clinit>()V
+    .locals 0
+
+    return-void
+.end method
+
 .method public constructor <init>(Landroidx/compose/ui/layout/AlignmentLine;)V
-    .locals 1
+    .locals 0
 
-    const-string v0, "alignmentLine"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 704
+    .line 707
     invoke-direct {p0}, Landroidx/compose/ui/node/ModifierNodeElement;-><init>()V
 
-    .line 703
+    .line 706
     iput-object p1, p0, Landroidx/compose/foundation/layout/WithAlignmentLineElement;->alignmentLine:Landroidx/compose/ui/layout/AlignmentLine;
 
     return-void
@@ -75,7 +81,7 @@
 .method public create()Landroidx/compose/foundation/layout/SiblingsAlignedNode$WithAlignmentLineNode;
     .locals 1
 
-    .line 706
+    .line 709
     new-instance v0, Landroidx/compose/foundation/layout/SiblingsAlignedNode$WithAlignmentLineNode;
 
     iget-object p0, p0, Landroidx/compose/foundation/layout/WithAlignmentLineElement;->alignmentLine:Landroidx/compose/ui/layout/AlignmentLine;
@@ -88,7 +94,7 @@
 .method public bridge synthetic create()Landroidx/compose/ui/Modifier$Node;
     .locals 0
 
-    .line 702
+    .line 705
     invoke-virtual {p0}, Landroidx/compose/foundation/layout/WithAlignmentLineElement;->create()Landroidx/compose/foundation/layout/SiblingsAlignedNode$WithAlignmentLineNode;
 
     move-result-object p0
@@ -107,7 +113,7 @@
 
     return p0
 
-    .line 722
+    .line 725
     :cond_0
     instance-of v0, p1, Landroidx/compose/foundation/layout/WithAlignmentLineElement;
 
@@ -127,7 +133,7 @@
 
     return p0
 
-    .line 723
+    .line 726
     :cond_2
     iget-object p0, p0, Landroidx/compose/foundation/layout/WithAlignmentLineElement;->alignmentLine:Landroidx/compose/ui/layout/AlignmentLine;
 
@@ -143,7 +149,7 @@
 .method public final getAlignmentLine()Landroidx/compose/ui/layout/AlignmentLine;
     .locals 0
 
-    .line 703
+    .line 706
     iget-object p0, p0, Landroidx/compose/foundation/layout/WithAlignmentLineElement;->alignmentLine:Landroidx/compose/ui/layout/AlignmentLine;
 
     return-object p0
@@ -152,7 +158,7 @@
 .method public hashCode()I
     .locals 0
 
-    .line 718
+    .line 721
     iget-object p0, p0, Landroidx/compose/foundation/layout/WithAlignmentLineElement;->alignmentLine:Landroidx/compose/ui/layout/AlignmentLine;
 
     invoke-virtual {p0}, Landroidx/compose/ui/layout/AlignmentLine;->hashCode()I
@@ -165,16 +171,12 @@
 .method public inspectableProperties(Landroidx/compose/ui/platform/InspectorInfo;)V
     .locals 1
 
-    const-string v0, "<this>"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 714
+    .line 717
     const-string v0, "alignBy"
 
     invoke-virtual {p1, v0}, Landroidx/compose/ui/platform/InspectorInfo;->setName(Ljava/lang/String;)V
 
-    .line 715
+    .line 718
     iget-object p0, p0, Landroidx/compose/foundation/layout/WithAlignmentLineElement;->alignmentLine:Landroidx/compose/ui/layout/AlignmentLine;
 
     invoke-virtual {p1, p0}, Landroidx/compose/ui/platform/InspectorInfo;->setValue(Ljava/lang/Object;)V
@@ -183,13 +185,9 @@
 .end method
 
 .method public update(Landroidx/compose/foundation/layout/SiblingsAlignedNode$WithAlignmentLineNode;)V
-    .locals 1
+    .locals 0
 
-    const-string v0, "node"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 710
+    .line 713
     iget-object p0, p0, Landroidx/compose/foundation/layout/WithAlignmentLineElement;->alignmentLine:Landroidx/compose/ui/layout/AlignmentLine;
 
     invoke-virtual {p1, p0}, Landroidx/compose/foundation/layout/SiblingsAlignedNode$WithAlignmentLineNode;->setAlignmentLine(Landroidx/compose/ui/layout/AlignmentLine;)V
@@ -200,7 +198,7 @@
 .method public bridge synthetic update(Landroidx/compose/ui/Modifier$Node;)V
     .locals 0
 
-    .line 702
+    .line 705
     check-cast p1, Landroidx/compose/foundation/layout/SiblingsAlignedNode$WithAlignmentLineNode;
 
     invoke-virtual {p0, p1}, Landroidx/compose/foundation/layout/WithAlignmentLineElement;->update(Landroidx/compose/foundation/layout/SiblingsAlignedNode$WithAlignmentLineNode;)V

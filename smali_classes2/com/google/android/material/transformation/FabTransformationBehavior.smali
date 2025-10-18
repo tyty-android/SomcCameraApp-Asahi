@@ -946,10 +946,6 @@
     .line 241
     sget-object v2, Landroid/view/View;->TRANSLATION_X:Landroid/util/Property;
 
-    const/4 v3, 0x1
-
-    new-array v4, v3, [F
-
     if-eqz p3, :cond_0
 
     goto :goto_0
@@ -959,6 +955,10 @@
     iget v0, p0, Lcom/google/android/material/transformation/FabTransformationBehavior;->dependencyOriginalTranslationX:F
 
     :goto_0
+    const/4 v3, 0x1
+
+    new-array v4, v3, [F
+
     const/4 v5, 0x0
 
     aput v0, v4, v5
@@ -971,8 +971,6 @@
     .line 246
     sget-object v2, Landroid/view/View;->TRANSLATION_Y:Landroid/util/Property;
 
-    new-array v3, v3, [F
-
     if-eqz p3, :cond_1
 
     goto :goto_1
@@ -982,10 +980,12 @@
     iget p2, p0, Lcom/google/android/material/transformation/FabTransformationBehavior;->dependencyOriginalTranslationY:F
 
     :goto_1
-    aput p2, v3, v5
+    new-array p0, v3, [F
+
+    aput p2, p0, v5
 
     .line 247
-    invoke-static {p1, v2, v3}, Landroid/animation/ObjectAnimator;->ofFloat(Ljava/lang/Object;Landroid/util/Property;[F)Landroid/animation/ObjectAnimator;
+    invoke-static {p1, v2, p0}, Landroid/animation/ObjectAnimator;->ofFloat(Ljava/lang/Object;Landroid/util/Property;[F)Landroid/animation/ObjectAnimator;
 
     move-result-object p0
 

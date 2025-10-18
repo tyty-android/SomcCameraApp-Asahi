@@ -27,12 +27,12 @@
 .method constructor <init>(Ljp/co/sony/mc/camera/view/FragmentController;Ljp/co/sony/mc/camera/view/FragmentController;)V
     .locals 0
 
-    .line 8119
+    .line 8395
     iput-object p1, p0, Ljp/co/sony/mc/camera/view/FragmentController$OnHintTextShowListenerImpl;->this$0:Ljp/co/sony/mc/camera/view/FragmentController;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 8120
+    .line 8396
     iput-object p2, p0, Ljp/co/sony/mc/camera/view/FragmentController$OnHintTextShowListenerImpl;->mController:Ljp/co/sony/mc/camera/view/FragmentController;
 
     return-void
@@ -43,7 +43,7 @@
 .method public onHintTextHidden(Ljp/co/sony/mc/camera/view/hint/HintTextContent;)V
     .locals 0
 
-    .line 8130
+    .line 8406
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/FragmentController$OnHintTextShowListenerImpl;->mController:Ljp/co/sony/mc/camera/view/FragmentController;
 
     invoke-virtual {p0, p1}, Ljp/co/sony/mc/camera/view/FragmentController;->onHintTextHidden(Ljp/co/sony/mc/camera/view/hint/HintTextContent;)V
@@ -54,7 +54,7 @@
 .method public onHintTextShown(Ljp/co/sony/mc/camera/view/hint/HintTextContent;)V
     .locals 0
 
-    .line 8125
+    .line 8401
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/FragmentController$OnHintTextShowListenerImpl;->mController:Ljp/co/sony/mc/camera/view/FragmentController;
 
     invoke-virtual {p0, p1}, Ljp/co/sony/mc/camera/view/FragmentController;->onHintTextShown(Ljp/co/sony/mc/camera/view/hint/HintTextContent;)V

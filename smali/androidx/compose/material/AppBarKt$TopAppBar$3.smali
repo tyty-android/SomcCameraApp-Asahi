@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Landroidx/compose/material/AppBarKt;->TopAppBar-HsRjFd4(Landroidx/compose/ui/Modifier;JJFLandroidx/compose/foundation/layout/PaddingValues;Lkotlin/jvm/functions/Function3;Landroidx/compose/runtime/Composer;II)V
+    value = Landroidx/compose/material/AppBarKt;->TopAppBar-xWeB9-s(Lkotlin/jvm/functions/Function2;Landroidx/compose/ui/Modifier;Lkotlin/jvm/functions/Function2;Lkotlin/jvm/functions/Function3;JJFLandroidx/compose/runtime/Composer;II)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -43,9 +43,7 @@
 
 .field final synthetic $$default:I
 
-.field final synthetic $backgroundColor:J
-
-.field final synthetic $content:Lkotlin/jvm/functions/Function3;
+.field final synthetic $actions:Lkotlin/jvm/functions/Function3;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Lkotlin/jvm/functions/Function3<",
@@ -58,24 +56,60 @@
     .end annotation
 .end field
 
-.field final synthetic $contentColor:J
+.field final synthetic $backgroundColor:J
 
-.field final synthetic $contentPadding:Landroidx/compose/foundation/layout/PaddingValues;
+.field final synthetic $contentColor:J
 
 .field final synthetic $elevation:F
 
 .field final synthetic $modifier:Landroidx/compose/ui/Modifier;
 
+.field final synthetic $navigationIcon:Lkotlin/jvm/functions/Function2;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Lkotlin/jvm/functions/Function2<",
+            "Landroidx/compose/runtime/Composer;",
+            "Ljava/lang/Integer;",
+            "Lkotlin/Unit;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field final synthetic $title:Lkotlin/jvm/functions/Function2;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Lkotlin/jvm/functions/Function2<",
+            "Landroidx/compose/runtime/Composer;",
+            "Ljava/lang/Integer;",
+            "Lkotlin/Unit;",
+            ">;"
+        }
+    .end annotation
+.end field
+
 
 # direct methods
-.method constructor <init>(Landroidx/compose/ui/Modifier;JJFLandroidx/compose/foundation/layout/PaddingValues;Lkotlin/jvm/functions/Function3;II)V
+.method constructor <init>(Lkotlin/jvm/functions/Function2;Landroidx/compose/ui/Modifier;Lkotlin/jvm/functions/Function2;Lkotlin/jvm/functions/Function3;JJFII)V
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
+            "Lkotlin/jvm/functions/Function2<",
+            "-",
+            "Landroidx/compose/runtime/Composer;",
+            "-",
+            "Ljava/lang/Integer;",
+            "Lkotlin/Unit;",
+            ">;",
             "Landroidx/compose/ui/Modifier;",
-            "JJF",
-            "Landroidx/compose/foundation/layout/PaddingValues;",
+            "Lkotlin/jvm/functions/Function2<",
+            "-",
+            "Landroidx/compose/runtime/Composer;",
+            "-",
+            "Ljava/lang/Integer;",
+            "Lkotlin/Unit;",
+            ">;",
             "Lkotlin/jvm/functions/Function3<",
             "-",
             "Landroidx/compose/foundation/layout/RowScope;",
@@ -84,25 +118,27 @@
             "-",
             "Ljava/lang/Integer;",
             "Lkotlin/Unit;",
-            ">;II)V"
+            ">;JJFII)V"
         }
     .end annotation
 
-    iput-object p1, p0, Landroidx/compose/material/AppBarKt$TopAppBar$3;->$modifier:Landroidx/compose/ui/Modifier;
+    iput-object p1, p0, Landroidx/compose/material/AppBarKt$TopAppBar$3;->$title:Lkotlin/jvm/functions/Function2;
 
-    iput-wide p2, p0, Landroidx/compose/material/AppBarKt$TopAppBar$3;->$backgroundColor:J
+    iput-object p2, p0, Landroidx/compose/material/AppBarKt$TopAppBar$3;->$modifier:Landroidx/compose/ui/Modifier;
 
-    iput-wide p4, p0, Landroidx/compose/material/AppBarKt$TopAppBar$3;->$contentColor:J
+    iput-object p3, p0, Landroidx/compose/material/AppBarKt$TopAppBar$3;->$navigationIcon:Lkotlin/jvm/functions/Function2;
 
-    iput p6, p0, Landroidx/compose/material/AppBarKt$TopAppBar$3;->$elevation:F
+    iput-object p4, p0, Landroidx/compose/material/AppBarKt$TopAppBar$3;->$actions:Lkotlin/jvm/functions/Function3;
 
-    iput-object p7, p0, Landroidx/compose/material/AppBarKt$TopAppBar$3;->$contentPadding:Landroidx/compose/foundation/layout/PaddingValues;
+    iput-wide p5, p0, Landroidx/compose/material/AppBarKt$TopAppBar$3;->$backgroundColor:J
 
-    iput-object p8, p0, Landroidx/compose/material/AppBarKt$TopAppBar$3;->$content:Lkotlin/jvm/functions/Function3;
+    iput-wide p7, p0, Landroidx/compose/material/AppBarKt$TopAppBar$3;->$contentColor:J
 
-    iput p9, p0, Landroidx/compose/material/AppBarKt$TopAppBar$3;->$$changed:I
+    iput p9, p0, Landroidx/compose/material/AppBarKt$TopAppBar$3;->$elevation:F
 
-    iput p10, p0, Landroidx/compose/material/AppBarKt$TopAppBar$3;->$$default:I
+    iput p10, p0, Landroidx/compose/material/AppBarKt$TopAppBar$3;->$$changed:I
+
+    iput p11, p0, Landroidx/compose/material/AppBarKt$TopAppBar$3;->$$default:I
 
     const/4 p1, 0x2
 
@@ -132,19 +168,21 @@
 .end method
 
 .method public final invoke(Landroidx/compose/runtime/Composer;I)V
-    .locals 11
+    .locals 12
 
-    iget-object v0, p0, Landroidx/compose/material/AppBarKt$TopAppBar$3;->$modifier:Landroidx/compose/ui/Modifier;
+    iget-object v0, p0, Landroidx/compose/material/AppBarKt$TopAppBar$3;->$title:Lkotlin/jvm/functions/Function2;
 
-    iget-wide v1, p0, Landroidx/compose/material/AppBarKt$TopAppBar$3;->$backgroundColor:J
+    iget-object v1, p0, Landroidx/compose/material/AppBarKt$TopAppBar$3;->$modifier:Landroidx/compose/ui/Modifier;
 
-    iget-wide v3, p0, Landroidx/compose/material/AppBarKt$TopAppBar$3;->$contentColor:J
+    iget-object v2, p0, Landroidx/compose/material/AppBarKt$TopAppBar$3;->$navigationIcon:Lkotlin/jvm/functions/Function2;
 
-    iget v5, p0, Landroidx/compose/material/AppBarKt$TopAppBar$3;->$elevation:F
+    iget-object v3, p0, Landroidx/compose/material/AppBarKt$TopAppBar$3;->$actions:Lkotlin/jvm/functions/Function3;
 
-    iget-object v6, p0, Landroidx/compose/material/AppBarKt$TopAppBar$3;->$contentPadding:Landroidx/compose/foundation/layout/PaddingValues;
+    iget-wide v4, p0, Landroidx/compose/material/AppBarKt$TopAppBar$3;->$backgroundColor:J
 
-    iget-object v7, p0, Landroidx/compose/material/AppBarKt$TopAppBar$3;->$content:Lkotlin/jvm/functions/Function3;
+    iget-wide v6, p0, Landroidx/compose/material/AppBarKt$TopAppBar$3;->$contentColor:J
+
+    iget v8, p0, Landroidx/compose/material/AppBarKt$TopAppBar$3;->$elevation:F
 
     iget p2, p0, Landroidx/compose/material/AppBarKt$TopAppBar$3;->$$changed:I
 
@@ -152,13 +190,13 @@
 
     invoke-static {p2}, Landroidx/compose/runtime/RecomposeScopeImplKt;->updateChangedFlags(I)I
 
-    move-result v9
+    move-result v10
 
-    iget v10, p0, Landroidx/compose/material/AppBarKt$TopAppBar$3;->$$default:I
+    iget v11, p0, Landroidx/compose/material/AppBarKt$TopAppBar$3;->$$default:I
 
-    move-object v8, p1
+    move-object v9, p1
 
-    invoke-static/range {v0 .. v10}, Landroidx/compose/material/AppBarKt;->TopAppBar-HsRjFd4(Landroidx/compose/ui/Modifier;JJFLandroidx/compose/foundation/layout/PaddingValues;Lkotlin/jvm/functions/Function3;Landroidx/compose/runtime/Composer;II)V
+    invoke-static/range {v0 .. v11}, Landroidx/compose/material/AppBarKt;->TopAppBar-xWeB9-s(Lkotlin/jvm/functions/Function2;Landroidx/compose/ui/Modifier;Lkotlin/jvm/functions/Function2;Lkotlin/jvm/functions/Function3;JJFLandroidx/compose/runtime/Composer;II)V
 
     return-void
 .end method

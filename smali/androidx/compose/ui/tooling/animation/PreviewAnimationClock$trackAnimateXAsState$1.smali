@@ -1,6 +1,6 @@
 .class final Landroidx/compose/ui/tooling/animation/PreviewAnimationClock$trackAnimateXAsState$1;
 .super Lkotlin/jvm/internal/Lambda;
-.source "PreviewAnimationClock.kt"
+.source "PreviewAnimationClock.android.kt"
 
 # interfaces
 .implements Lkotlin/jvm/functions/Function1;
@@ -89,7 +89,7 @@
 .method public bridge synthetic invoke(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
 
-    .line 137
+    .line 141
     invoke-virtual {p0, p1}, Landroidx/compose/ui/tooling/animation/PreviewAnimationClock$trackAnimateXAsState$1;->invoke(Ljava/lang/Object;)V
 
     sget-object p0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
@@ -100,11 +100,7 @@
 .method public final invoke(Ljava/lang/Object;)V
     .locals 2
 
-    const-string v0, "it"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 138
+    .line 142
     sget-object p1, Landroidx/compose/ui/tooling/animation/AnimateXAsStateComposeAnimation;->Companion:Landroidx/compose/ui/tooling/animation/AnimateXAsStateComposeAnimation$Companion;
 
     iget-object v0, p0, Landroidx/compose/ui/tooling/animation/PreviewAnimationClock$trackAnimateXAsState$1;->$animation:Landroidx/compose/ui/tooling/animation/AnimationSearch$AnimateXAsStateSearchInfo;
@@ -117,7 +113,7 @@
 
     iget-object p0, p0, Landroidx/compose/ui/tooling/animation/PreviewAnimationClock$trackAnimateXAsState$1;->this$0:Landroidx/compose/ui/tooling/animation/PreviewAnimationClock;
 
-    .line 139
+    .line 143
     invoke-virtual {p0}, Landroidx/compose/ui/tooling/animation/PreviewAnimationClock;->getAnimateXAsStateClocks$ui_tooling_release()Ljava/util/Map;
 
     move-result-object v0
@@ -128,11 +124,28 @@
 
     invoke-interface {v0, p1, v1}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 140
+    .line 144
     check-cast p1, Landroidx/compose/animation/tooling/ComposeAnimation;
 
     invoke-virtual {p0, p1}, Landroidx/compose/ui/tooling/animation/PreviewAnimationClock;->notifySubscribe(Landroidx/compose/animation/tooling/ComposeAnimation;)V
 
+    return-void
+
+    .line 149
     :cond_0
+    iget-object p1, p0, Landroidx/compose/ui/tooling/animation/PreviewAnimationClock$trackAnimateXAsState$1;->this$0:Landroidx/compose/ui/tooling/animation/PreviewAnimationClock;
+
+    iget-object p0, p0, Landroidx/compose/ui/tooling/animation/PreviewAnimationClock$trackAnimateXAsState$1;->$animation:Landroidx/compose/ui/tooling/animation/AnimationSearch$AnimateXAsStateSearchInfo;
+
+    invoke-virtual {p0}, Landroidx/compose/ui/tooling/animation/AnimationSearch$AnimateXAsStateSearchInfo;->getAnimatable()Landroidx/compose/animation/core/Animatable;
+
+    move-result-object p0
+
+    invoke-virtual {p0}, Landroidx/compose/animation/core/Animatable;->getLabel()Ljava/lang/String;
+
+    move-result-object p0
+
+    invoke-static {p1, p0}, Landroidx/compose/ui/tooling/animation/PreviewAnimationClock;->access$createUnsupported(Landroidx/compose/ui/tooling/animation/PreviewAnimationClock;Ljava/lang/String;)V
+
     return-void
 .end method

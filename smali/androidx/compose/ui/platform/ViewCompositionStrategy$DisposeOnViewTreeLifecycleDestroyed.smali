@@ -84,10 +84,6 @@
         }
     .end annotation
 
-    const-string/jumbo p0, "view"
-
-    invoke-static {p1, p0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
     .line 153
     invoke-virtual {p1}, Landroidx/compose/ui/platform/AbstractComposeView;->isAttachedToWindow()Z
 

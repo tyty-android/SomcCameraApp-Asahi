@@ -44,7 +44,7 @@
 .method private static synthetic $values()[Ljp/co/sony/mc/camera/view/widget/CameraStatusBarPresenter$FooterTextType;
     .locals 3
 
-    .line 382
+    .line 370
     sget-object v0, Ljp/co/sony/mc/camera/view/widget/CameraStatusBarPresenter$FooterTextType;->SS:Ljp/co/sony/mc/camera/view/widget/CameraStatusBarPresenter$FooterTextType;
 
     sget-object v1, Ljp/co/sony/mc/camera/view/widget/CameraStatusBarPresenter$FooterTextType;->ISO:Ljp/co/sony/mc/camera/view/widget/CameraStatusBarPresenter$FooterTextType;
@@ -85,18 +85,18 @@
 .method static constructor <clinit>()V
     .locals 13
 
-    .line 383
+    .line 371
     new-instance v6, Ljp/co/sony/mc/camera/view/widget/CameraStatusBarPresenter$FooterTextType;
 
     const/4 v4, -0x1
 
-    const v5, 0x7f09027d
+    const v5, 0x7f090278
 
     const-string v1, "SS"
 
     const/4 v2, 0x0
 
-    const v3, 0x7f09045c
+    const v3, 0x7f09044c
 
     move-object v0, v6
 
@@ -104,18 +104,18 @@
 
     sput-object v6, Ljp/co/sony/mc/camera/view/widget/CameraStatusBarPresenter$FooterTextType;->SS:Ljp/co/sony/mc/camera/view/widget/CameraStatusBarPresenter$FooterTextType;
 
-    .line 384
+    .line 372
     new-instance v0, Ljp/co/sony/mc/camera/view/widget/CameraStatusBarPresenter$FooterTextType;
 
-    const v11, 0x7f090266
+    const v11, 0x7f090263
 
-    const v12, 0x7f09027c
+    const v12, 0x7f090277
 
     const-string v8, "ISO"
 
     const/4 v9, 0x1
 
-    const v10, 0x7f090264
+    const v10, 0x7f090261
 
     move-object v7, v0
 
@@ -123,18 +123,18 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/view/widget/CameraStatusBarPresenter$FooterTextType;->ISO:Ljp/co/sony/mc/camera/view/widget/CameraStatusBarPresenter$FooterTextType;
 
-    .line 385
+    .line 373
     new-instance v0, Ljp/co/sony/mc/camera/view/widget/CameraStatusBarPresenter$FooterTextType;
 
-    const v5, 0x7f0901ab
+    const v5, 0x7f0901a9
 
-    const v6, 0x7f09027b
+    const v6, 0x7f090276
 
     const-string v2, "EV"
 
     const/4 v3, 0x2
 
-    const v4, 0x7f0901a9
+    const v4, 0x7f0901a7
 
     move-object v1, v0
 
@@ -142,7 +142,7 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/view/widget/CameraStatusBarPresenter$FooterTextType;->EV:Ljp/co/sony/mc/camera/view/widget/CameraStatusBarPresenter$FooterTextType;
 
-    .line 382
+    .line 370
     invoke-static {}, Ljp/co/sony/mc/camera/view/widget/CameraStatusBarPresenter$FooterTextType;->$values()[Ljp/co/sony/mc/camera/view/widget/CameraStatusBarPresenter$FooterTextType;
 
     move-result-object v0
@@ -160,16 +160,16 @@
         }
     .end annotation
 
-    .line 391
+    .line 379
     invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
-    .line 392
+    .line 380
     iput p3, p0, Ljp/co/sony/mc/camera/view/widget/CameraStatusBarPresenter$FooterTextType;->textResId:I
 
-    .line 393
+    .line 381
     iput p4, p0, Ljp/co/sony/mc/camera/view/widget/CameraStatusBarPresenter$FooterTextType;->imageResId:I
 
-    .line 394
+    .line 382
     iput p5, p0, Ljp/co/sony/mc/camera/view/widget/CameraStatusBarPresenter$FooterTextType;->backgroundResId:I
 
     return-void
@@ -178,7 +178,7 @@
 .method public static valueOf(Ljava/lang/String;)Ljp/co/sony/mc/camera/view/widget/CameraStatusBarPresenter$FooterTextType;
     .locals 1
 
-    .line 382
+    .line 370
     const-class v0, Ljp/co/sony/mc/camera/view/widget/CameraStatusBarPresenter$FooterTextType;
 
     invoke-static {v0, p0}, Ljava/lang/Enum;->valueOf(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
@@ -193,7 +193,7 @@
 .method public static values()[Ljp/co/sony/mc/camera/view/widget/CameraStatusBarPresenter$FooterTextType;
     .locals 1
 
-    .line 382
+    .line 370
     sget-object v0, Ljp/co/sony/mc/camera/view/widget/CameraStatusBarPresenter$FooterTextType;->$VALUES:[Ljp/co/sony/mc/camera/view/widget/CameraStatusBarPresenter$FooterTextType;
 
     invoke-virtual {v0}, [Ljp/co/sony/mc/camera/view/widget/CameraStatusBarPresenter$FooterTextType;->clone()Ljava/lang/Object;

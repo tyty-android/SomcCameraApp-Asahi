@@ -84,12 +84,12 @@
 .method public constructor <init>(I)V
     .locals 0
 
-    .line 279
+    .line 319
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     iput p1, p0, Lkotlin/io/path/ExceptionsCollector;->limit:I
 
-    .line 283
+    .line 323
     new-instance p1, Ljava/util/ArrayList;
 
     invoke-direct {p1}, Ljava/util/ArrayList;-><init>()V
@@ -110,7 +110,7 @@
 
     const/16 p1, 0x40
 
-    .line 279
+    .line 319
     :cond_0
     invoke-direct {p0, p1}, Lkotlin/io/path/ExceptionsCollector;-><init>(I)V
 
@@ -126,14 +126,14 @@
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 297
+    .line 337
     iget v0, p0, Lkotlin/io/path/ExceptionsCollector;->totalExceptions:I
 
     add-int/lit8 v0, v0, 0x1
 
     iput v0, p0, Lkotlin/io/path/ExceptionsCollector;->totalExceptions:I
 
-    .line 298
+    .line 338
     iget-object v0, p0, Lkotlin/io/path/ExceptionsCollector;->collectedExceptions:Ljava/util/List;
 
     invoke-interface {v0}, Ljava/util/List;->size()I
@@ -144,12 +144,12 @@
 
     if-ge v0, v1, :cond_1
 
-    .line 300
+    .line 340
     iget-object v0, p0, Lkotlin/io/path/ExceptionsCollector;->path:Ljava/nio/file/Path;
 
     if-eqz v0, :cond_0
 
-    .line 303
+    .line 343
     new-instance v0, Ljava/nio/file/FileSystemException;
 
     iget-object v1, p0, Lkotlin/io/path/ExceptionsCollector;->path:Ljava/nio/file/Path;
@@ -174,7 +174,7 @@
 
     check-cast p1, Ljava/lang/Exception;
 
-    .line 307
+    .line 347
     :cond_0
     iget-object p0, p0, Lkotlin/io/path/ExceptionsCollector;->collectedExceptions:Ljava/util/List;
 
@@ -191,7 +191,7 @@
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 288
+    .line 328
     iget-object v0, p0, Lkotlin/io/path/ExceptionsCollector;->path:Ljava/nio/file/Path;
 
     if-eqz v0, :cond_0
@@ -218,7 +218,7 @@
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 292
+    .line 332
     iget-object v0, p0, Lkotlin/io/path/ExceptionsCollector;->path:Ljava/nio/file/Path;
 
     const/4 v1, 0x0
@@ -241,7 +241,7 @@
 
     if-eqz p1, :cond_2
 
-    .line 293
+    .line 333
     iget-object p1, p0, Lkotlin/io/path/ExceptionsCollector;->path:Ljava/nio/file/Path;
 
     if-eqz p1, :cond_1
@@ -255,7 +255,7 @@
 
     return-void
 
-    .line 292
+    .line 332
     :cond_2
     new-instance p0, Ljava/lang/IllegalArgumentException;
 
@@ -281,7 +281,7 @@
         }
     .end annotation
 
-    .line 283
+    .line 323
     iget-object p0, p0, Lkotlin/io/path/ExceptionsCollector;->collectedExceptions:Ljava/util/List;
 
     return-object p0
@@ -290,7 +290,7 @@
 .method public final getPath()Ljava/nio/file/Path;
     .locals 0
 
-    .line 285
+    .line 325
     iget-object p0, p0, Lkotlin/io/path/ExceptionsCollector;->path:Ljava/nio/file/Path;
 
     return-object p0
@@ -299,7 +299,7 @@
 .method public final getTotalExceptions()I
     .locals 0
 
-    .line 280
+    .line 320
     iget p0, p0, Lkotlin/io/path/ExceptionsCollector;->totalExceptions:I
 
     return p0
@@ -308,7 +308,7 @@
 .method public final setPath(Ljava/nio/file/Path;)V
     .locals 0
 
-    .line 285
+    .line 325
     iput-object p1, p0, Lkotlin/io/path/ExceptionsCollector;->path:Ljava/nio/file/Path;
 
     return-void

@@ -69,7 +69,7 @@
 .method public bridge synthetic invoke(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
 
-    .line 622
+    .line 623
     check-cast p1, Landroidx/compose/ui/layout/Placeable;
 
     invoke-virtual {p0, p1}, Landroidx/compose/foundation/layout/FlowLayoutKt$breakDownItems$nextSize$1;->invoke(Landroidx/compose/ui/layout/Placeable;)V
@@ -82,7 +82,7 @@
 .method public final invoke(Landroidx/compose/ui/layout/Placeable;)V
     .locals 1
 
-    .line 625
+    .line 626
     iget-object p0, p0, Landroidx/compose/foundation/layout/FlowLayoutKt$breakDownItems$nextSize$1;->$placeables:[Landroidx/compose/ui/layout/Placeable;
 
     const/4 v0, 0x0

@@ -53,7 +53,7 @@
     f = "Clickable.kt"
     i = {}
     l = {
-        0x178
+        0x180
     }
     m = "invokeSuspend"
     n = {}
@@ -174,7 +174,7 @@
 
     move-result-object v0
 
-    .line 376
+    .line 384
     iget v1, p0, Landroidx/compose/foundation/ClickableKt$genericClickableWithoutGesture$detectPressAndClickFromKey$1$1;->label:I
 
     const/4 v2, 0x1

@@ -449,22 +449,10 @@
     invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 44
-    array-length v0, p0
-
-    if-lez v0, :cond_0
-
     invoke-static {p0}, Lkotlin/collections/ArraysKt;->toSet([Ljava/lang/Object;)Ljava/util/Set;
 
     move-result-object p0
 
-    goto :goto_0
-
-    :cond_0
-    invoke-static {}, Lkotlin/collections/SetsKt;->emptySet()Ljava/util/Set;
-
-    move-result-object p0
-
-    :goto_0
     return-object p0
 .end method
 

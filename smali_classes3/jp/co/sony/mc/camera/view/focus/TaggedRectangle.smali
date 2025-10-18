@@ -197,7 +197,7 @@
 .method public final changeRectangleResource(I)V
     .locals 1
 
-    const v0, 0x7f08041f
+    const v0, 0x7f0803fe
 
     if-ne p1, v0, :cond_0
 
@@ -352,18 +352,22 @@
 .end method
 
 .method protected onDetachedFromWindow()V
-    .locals 2
+    .locals 3
 
     .line 186
     sget-boolean v0, Ljp/co/sony/mc/camera/util/CamLog;->VERBOSE:Z
 
     if-eqz v0, :cond_0
 
-    const-string v0, "onDetachedFromWindow() is called."
+    const/4 v0, 0x1
 
-    filled-new-array {v0}, [Ljava/lang/String;
+    new-array v0, v0, [Ljava/lang/String;
 
-    move-result-object v0
+    const/4 v1, 0x0
+
+    const-string v2, "onDetachedFromWindow() is called."
+
+    aput-object v2, v0, v1
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
@@ -493,18 +497,22 @@
 .end method
 
 .method public prepare()V
-    .locals 2
+    .locals 3
 
     .line 111
     sget-boolean v0, Ljp/co/sony/mc/camera/util/CamLog;->VERBOSE:Z
 
     if-eqz v0, :cond_0
 
-    const-string v0, "prepare() is called."
+    const/4 v0, 0x1
 
-    filled-new-array {v0}, [Ljava/lang/String;
+    new-array v0, v0, [Ljava/lang/String;
 
-    move-result-object v0
+    const/4 v1, 0x0
+
+    const-string v2, "prepare() is called."
+
+    aput-object v2, v0, v1
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
@@ -533,7 +541,7 @@
 
     invoke-virtual {p0, v0}, Ljp/co/sony/mc/camera/view/focus/TaggedRectangle;->addView(Landroid/view/View;)V
 
-    const v0, 0x7f0901bf
+    const v0, 0x7f0901be
 
     .line 118
     invoke-virtual {p0, v0}, Ljp/co/sony/mc/camera/view/focus/TaggedRectangle;->findViewById(I)Landroid/view/View;

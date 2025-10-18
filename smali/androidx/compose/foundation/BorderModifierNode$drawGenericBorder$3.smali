@@ -27,7 +27,7 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/SourceDebugExtension;
-    value = "SMAP\nBorder.kt\nKotlin\n*S Kotlin\n*F\n+ 1 Border.kt\nandroidx/compose/foundation/BorderModifierNode$drawGenericBorder$3\n+ 2 DrawScope.kt\nandroidx/compose/ui/graphics/drawscope/DrawScopeKt\n*L\n1#1,512:1\n120#2,4:513\n*S KotlinDebug\n*F\n+ 1 Border.kt\nandroidx/compose/foundation/BorderModifierNode$drawGenericBorder$3\n*L\n290#1:513,4\n*E\n"
+    value = "SMAP\nBorder.kt\nKotlin\n*S Kotlin\n*F\n+ 1 Border.kt\nandroidx/compose/foundation/BorderModifierNode$drawGenericBorder$3\n+ 2 DrawScope.kt\nandroidx/compose/ui/graphics/drawscope/DrawScopeKt\n*L\n1#1,516:1\n121#2,4:517\n*S KotlinDebug\n*F\n+ 1 Border.kt\nandroidx/compose/foundation/BorderModifierNode$drawGenericBorder$3\n*L\n294#1:517,4\n*E\n"
 .end annotation
 
 .annotation runtime Lkotlin/Metadata;
@@ -103,7 +103,7 @@
 .method public bridge synthetic invoke(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
 
-    .line 288
+    .line 292
     check-cast p1, Landroidx/compose/ui/graphics/drawscope/ContentDrawScope;
 
     invoke-virtual {p0, p1}, Landroidx/compose/foundation/BorderModifierNode$drawGenericBorder$3;->invoke(Landroidx/compose/ui/graphics/drawscope/ContentDrawScope;)V
@@ -118,40 +118,36 @@
 
     move-object/from16 v0, p0
 
-    move-object/from16 v1, p1
-
-    const-string v2, "$this$onDrawWithContent"
-
-    invoke-static {v1, v2}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 289
+    .line 293
     invoke-interface/range {p1 .. p1}, Landroidx/compose/ui/graphics/drawscope/ContentDrawScope;->drawContent()V
 
-    .line 290
-    check-cast v1, Landroidx/compose/ui/graphics/drawscope/DrawScope;
+    .line 294
+    move-object/from16 v18, p1
 
-    move-object v3, v1
+    check-cast v18, Landroidx/compose/ui/graphics/drawscope/DrawScope;
+
+    move-object/from16 v1, v18
 
     iget-object v2, v0, Landroidx/compose/foundation/BorderModifierNode$drawGenericBorder$3;->$pathBounds:Landroidx/compose/ui/geometry/Rect;
 
     invoke-virtual {v2}, Landroidx/compose/ui/geometry/Rect;->getLeft()F
 
-    move-result v2
+    move-result v15
 
-    iget-object v4, v0, Landroidx/compose/foundation/BorderModifierNode$drawGenericBorder$3;->$pathBounds:Landroidx/compose/ui/geometry/Rect;
+    iget-object v2, v0, Landroidx/compose/foundation/BorderModifierNode$drawGenericBorder$3;->$pathBounds:Landroidx/compose/ui/geometry/Rect;
 
-    invoke-virtual {v4}, Landroidx/compose/ui/geometry/Rect;->getTop()F
+    invoke-virtual {v2}, Landroidx/compose/ui/geometry/Rect;->getTop()F
 
     move-result v14
 
-    iget-object v4, v0, Landroidx/compose/foundation/BorderModifierNode$drawGenericBorder$3;->$cacheImageBitmap:Lkotlin/jvm/internal/Ref$ObjectRef;
+    iget-object v2, v0, Landroidx/compose/foundation/BorderModifierNode$drawGenericBorder$3;->$cacheImageBitmap:Lkotlin/jvm/internal/Ref$ObjectRef;
 
-    iget-wide v7, v0, Landroidx/compose/foundation/BorderModifierNode$drawGenericBorder$3;->$pathBoundsSize:J
+    iget-wide v5, v0, Landroidx/compose/foundation/BorderModifierNode$drawGenericBorder$3;->$pathBoundsSize:J
 
-    iget-object v15, v0, Landroidx/compose/foundation/BorderModifierNode$drawGenericBorder$3;->$colorFilter:Landroidx/compose/ui/graphics/ColorFilter;
+    iget-object v13, v0, Landroidx/compose/foundation/BorderModifierNode$drawGenericBorder$3;->$colorFilter:Landroidx/compose/ui/graphics/ColorFilter;
 
-    .line 513
-    invoke-interface {v1}, Landroidx/compose/ui/graphics/drawscope/DrawScope;->getDrawContext()Landroidx/compose/ui/graphics/drawscope/DrawContext;
+    .line 517
+    invoke-interface/range {v18 .. v18}, Landroidx/compose/ui/graphics/drawscope/DrawScope;->getDrawContext()Landroidx/compose/ui/graphics/drawscope/DrawContext;
 
     move-result-object v0
 
@@ -159,41 +155,43 @@
 
     move-result-object v0
 
-    invoke-interface {v0, v2, v14}, Landroidx/compose/ui/graphics/drawscope/DrawTransform;->translate(FF)V
+    invoke-interface {v0, v15, v14}, Landroidx/compose/ui/graphics/drawscope/DrawTransform;->translate(FF)V
 
-    .line 291
-    iget-object v0, v4, Lkotlin/jvm/internal/Ref$ObjectRef;->element:Ljava/lang/Object;
+    .line 295
+    iget-object v0, v2, Lkotlin/jvm/internal/Ref$ObjectRef;->element:Ljava/lang/Object;
 
-    move-object v4, v0
+    move-object v2, v0
 
-    check-cast v4, Landroidx/compose/ui/graphics/ImageBitmap;
+    check-cast v2, Landroidx/compose/ui/graphics/ImageBitmap;
 
-    const/16 v18, 0x37a
-
-    const/16 v19, 0x0
-
-    const-wide/16 v5, 0x0
-
-    const-wide/16 v9, 0x0
-
-    const-wide/16 v11, 0x0
-
-    const/4 v13, 0x0
-
-    const/4 v0, 0x0
-
-    move/from16 v20, v14
-
-    move-object v14, v0
-
-    const/16 v16, 0x0
+    const/16 v16, 0x37a
 
     const/16 v17, 0x0
 
-    invoke-static/range {v3 .. v19}, Landroidx/compose/ui/graphics/drawscope/DrawScope;->drawImage-AZ2fEMs$default(Landroidx/compose/ui/graphics/drawscope/DrawScope;Landroidx/compose/ui/graphics/ImageBitmap;JJJJFLandroidx/compose/ui/graphics/drawscope/DrawStyle;Landroidx/compose/ui/graphics/ColorFilter;IIILjava/lang/Object;)V
+    const-wide/16 v3, 0x0
 
-    .line 515
-    invoke-interface {v1}, Landroidx/compose/ui/graphics/drawscope/DrawScope;->getDrawContext()Landroidx/compose/ui/graphics/drawscope/DrawContext;
+    const-wide/16 v7, 0x0
+
+    const-wide/16 v9, 0x0
+
+    const/4 v11, 0x0
+
+    const/4 v12, 0x0
+
+    const/4 v0, 0x0
+
+    move/from16 v19, v14
+
+    move v14, v0
+
+    move/from16 v20, v15
+
+    move v15, v0
+
+    invoke-static/range {v1 .. v17}, Landroidx/compose/ui/graphics/drawscope/DrawScope;->drawImage-AZ2fEMs$default(Landroidx/compose/ui/graphics/drawscope/DrawScope;Landroidx/compose/ui/graphics/ImageBitmap;JJJJFLandroidx/compose/ui/graphics/drawscope/DrawStyle;Landroidx/compose/ui/graphics/ColorFilter;IIILjava/lang/Object;)V
+
+    .line 519
+    invoke-interface/range {v18 .. v18}, Landroidx/compose/ui/graphics/drawscope/DrawScope;->getDrawContext()Landroidx/compose/ui/graphics/drawscope/DrawContext;
 
     move-result-object v0
 
@@ -201,9 +199,11 @@
 
     move-result-object v0
 
-    neg-float v1, v2
+    move/from16 v1, v20
 
-    move/from16 v2, v20
+    neg-float v1, v1
+
+    move/from16 v2, v19
 
     neg-float v2, v2
 

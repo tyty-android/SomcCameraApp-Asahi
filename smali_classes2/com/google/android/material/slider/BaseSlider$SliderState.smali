@@ -50,7 +50,7 @@
 .method static constructor <clinit>()V
     .locals 1
 
-    .line 2719
+    .line 3154
     new-instance v0, Lcom/google/android/material/slider/BaseSlider$SliderState$1;
 
     invoke-direct {v0}, Lcom/google/android/material/slider/BaseSlider$SliderState$1;-><init>()V
@@ -63,31 +63,31 @@
 .method private constructor <init>(Landroid/os/Parcel;)V
     .locals 2
 
-    .line 2740
+    .line 3175
     invoke-direct {p0, p1}, Landroid/view/View$BaseSavedState;-><init>(Landroid/os/Parcel;)V
 
-    .line 2741
+    .line 3176
     invoke-virtual {p1}, Landroid/os/Parcel;->readFloat()F
 
     move-result v0
 
     iput v0, p0, Lcom/google/android/material/slider/BaseSlider$SliderState;->valueFrom:F
 
-    .line 2742
+    .line 3177
     invoke-virtual {p1}, Landroid/os/Parcel;->readFloat()F
 
     move-result v0
 
     iput v0, p0, Lcom/google/android/material/slider/BaseSlider$SliderState;->valueTo:F
 
-    .line 2743
+    .line 3178
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
     iput-object v0, p0, Lcom/google/android/material/slider/BaseSlider$SliderState;->values:Ljava/util/ArrayList;
 
-    .line 2744
+    .line 3179
     const-class v1, Ljava/lang/Float;
 
     invoke-virtual {v1}, Ljava/lang/Class;->getClassLoader()Ljava/lang/ClassLoader;
@@ -96,14 +96,14 @@
 
     invoke-virtual {p1, v0, v1}, Landroid/os/Parcel;->readList(Ljava/util/List;Ljava/lang/ClassLoader;)V
 
-    .line 2745
+    .line 3180
     invoke-virtual {p1}, Landroid/os/Parcel;->readFloat()F
 
     move-result v0
 
     iput v0, p0, Lcom/google/android/material/slider/BaseSlider$SliderState;->stepSize:F
 
-    .line 2746
+    .line 3181
     invoke-virtual {p1}, Landroid/os/Parcel;->createBooleanArray()[Z
 
     move-result-object p1
@@ -120,7 +120,7 @@
 .method synthetic constructor <init>(Landroid/os/Parcel;Lcom/google/android/material/slider/BaseSlider$1;)V
     .locals 0
 
-    .line 2711
+    .line 3146
     invoke-direct {p0, p1}, Lcom/google/android/material/slider/BaseSlider$SliderState;-><init>(Landroid/os/Parcel;)V
 
     return-void
@@ -129,7 +129,7 @@
 .method constructor <init>(Landroid/os/Parcelable;)V
     .locals 0
 
-    .line 2736
+    .line 3171
     invoke-direct {p0, p1}, Landroid/view/View$BaseSavedState;-><init>(Landroid/os/Parcelable;)V
 
     return-void
@@ -140,30 +140,30 @@
 .method public writeToParcel(Landroid/os/Parcel;I)V
     .locals 1
 
-    .line 2751
+    .line 3186
     invoke-super {p0, p1, p2}, Landroid/view/View$BaseSavedState;->writeToParcel(Landroid/os/Parcel;I)V
 
-    .line 2752
+    .line 3187
     iget p2, p0, Lcom/google/android/material/slider/BaseSlider$SliderState;->valueFrom:F
 
     invoke-virtual {p1, p2}, Landroid/os/Parcel;->writeFloat(F)V
 
-    .line 2753
+    .line 3188
     iget p2, p0, Lcom/google/android/material/slider/BaseSlider$SliderState;->valueTo:F
 
     invoke-virtual {p1, p2}, Landroid/os/Parcel;->writeFloat(F)V
 
-    .line 2754
+    .line 3189
     iget-object p2, p0, Lcom/google/android/material/slider/BaseSlider$SliderState;->values:Ljava/util/ArrayList;
 
     invoke-virtual {p1, p2}, Landroid/os/Parcel;->writeList(Ljava/util/List;)V
 
-    .line 2755
+    .line 3190
     iget p2, p0, Lcom/google/android/material/slider/BaseSlider$SliderState;->stepSize:F
 
     invoke-virtual {p1, p2}, Landroid/os/Parcel;->writeFloat(F)V
 
-    .line 2757
+    .line 3192
     iget-boolean p0, p0, Lcom/google/android/material/slider/BaseSlider$SliderState;->hasFocus:Z
 
     const/4 p2, 0x1
@@ -174,7 +174,7 @@
 
     aput-boolean p0, p2, v0
 
-    .line 2758
+    .line 3193
     invoke-virtual {p1, p2}, Landroid/os/Parcel;->writeBooleanArray([Z)V
 
     return-void

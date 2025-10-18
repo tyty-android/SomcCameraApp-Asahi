@@ -81,15 +81,7 @@
 .method public final invoke(Landroidx/compose/runtime/saveable/SaverScope;Landroidx/compose/ui/text/AnnotatedString;)Ljava/lang/Object;
     .locals 3
 
-    const-string p0, "$this$Saver"
-
-    invoke-static {p1, p0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string p0, "it"
-
-    invoke-static {p2, p0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 76
+    .line 97
     invoke-virtual {p2}, Landroidx/compose/ui/text/AnnotatedString;->getText()Ljava/lang/String;
 
     move-result-object p0
@@ -98,7 +90,7 @@
 
     move-result-object p0
 
-    .line 77
+    .line 98
     invoke-virtual {p2}, Landroidx/compose/ui/text/AnnotatedString;->getSpanStyles()Ljava/util/List;
 
     move-result-object v0
@@ -111,7 +103,7 @@
 
     move-result-object v0
 
-    .line 78
+    .line 99
     invoke-virtual {p2}, Landroidx/compose/ui/text/AnnotatedString;->getParagraphStyles()Ljava/util/List;
 
     move-result-object v1
@@ -124,7 +116,7 @@
 
     move-result-object v1
 
-    .line 79
+    .line 100
     invoke-virtual {p2}, Landroidx/compose/ui/text/AnnotatedString;->getAnnotations$ui_text_release()Ljava/util/List;
 
     move-result-object p2
@@ -141,7 +133,7 @@
 
     move-result-object p0
 
-    .line 75
+    .line 96
     invoke-static {p0}, Lkotlin/collections/CollectionsKt;->arrayListOf([Ljava/lang/Object;)Ljava/util/ArrayList;
 
     move-result-object p0
@@ -152,7 +144,7 @@
 .method public bridge synthetic invoke(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
 
-    .line 73
+    .line 94
     check-cast p1, Landroidx/compose/runtime/saveable/SaverScope;
 
     check-cast p2, Landroidx/compose/ui/text/AnnotatedString;

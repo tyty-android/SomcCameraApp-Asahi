@@ -11,20 +11,36 @@
 
 # direct methods
 .method static constructor <clinit>()V
-    .locals 4
+    .locals 3
+
+    const/4 v0, 0x4
 
     .line 38
-    const-string v0, ".mp4"
+    new-array v0, v0, [Ljava/lang/String;
 
-    const-string v1, ".DNG"
+    const/4 v1, 0x0
 
     const-string v2, ".JPG"
 
-    const-string v3, ".3gp"
+    aput-object v2, v0, v1
 
-    filled-new-array {v2, v3, v0, v1}, [Ljava/lang/String;
+    const/4 v1, 0x1
 
-    move-result-object v0
+    const-string v2, ".3gp"
+
+    aput-object v2, v0, v1
+
+    const/4 v1, 0x2
+
+    const-string v2, ".mp4"
+
+    aput-object v2, v0, v1
+
+    const/4 v1, 0x3
+
+    const-string v2, ".DNG"
+
+    aput-object v2, v0, v1
 
     sput-object v0, Ljp/co/sony/mc/camera/view/contentsview/PhotoStackQueryHelper;->CONTENT_EXTENSIONS:[Ljava/lang/String;
 
@@ -298,9 +314,9 @@
 .end method
 
 .method private static createContentInfo(Landroid/content/ContentResolver;Landroid/database/Cursor;Z)Ljp/co/sony/mc/camera/view/contentsview/contents/Content$ContentInfo;
-    .locals 15
+    .locals 16
 
-    move-object v0, p0
+    move-object/from16 v0, p0
 
     move-object/from16 v1, p1
 
@@ -406,7 +422,9 @@
 
     move-result v12
 
-    const/4 v13, 0x1
+    const/4 v13, 0x0
+
+    const/4 v14, 0x1
 
     if-nez v12, :cond_9
 
@@ -450,7 +468,7 @@
 
     move-result v12
 
-    const/4 v14, 0x2
+    const/4 v15, 0x2
 
     if-nez v12, :cond_7
 
@@ -509,7 +527,7 @@
 
     move-result-object v11
 
-    const/4 v14, 0x3
+    const/4 v15, 0x3
 
     goto :goto_5
 
@@ -519,23 +537,23 @@
 
     if-eqz v0, :cond_5
 
-    new-instance v0, Ljava/lang/StringBuilder;
+    new-array v0, v14, [Ljava/lang/String;
 
-    const-string v1, "query error : mime = "
+    new-instance v1, Ljava/lang/StringBuilder;
 
-    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+    const-string v2, "query error : mime = "
 
-    invoke-virtual {v0, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-direct {v1, v2}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
-    move-result-object v0
+    invoke-virtual {v1, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    move-result-object v1
 
-    move-result-object v0
+    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    filled-new-array {v0}, [Ljava/lang/String;
+    move-result-object v1
 
-    move-result-object v0
+    aput-object v1, v0, v13
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
@@ -611,10 +629,10 @@
     move-result-object v11
 
     :goto_4
-    move v14, v13
+    move v15, v14
 
     :goto_5
-    if-ne v14, v13, :cond_a
+    if-ne v15, v14, :cond_a
 
     .line 277
     const-string v12, "orientation"
@@ -627,26 +645,21 @@
     .line 277
     invoke-interface {v1, v12}, Landroid/database/Cursor;->getInt(I)I
 
-    move-result v1
-
-    goto :goto_6
-
-    :cond_a
-    const/4 v1, 0x0
+    move-result v13
 
     .line 283
-    :goto_6
-    new-instance v12, Ljp/co/sony/mc/camera/view/contentsview/contents/Content$ContentInfo;
+    :cond_a
+    new-instance v1, Ljp/co/sony/mc/camera/view/contentsview/contents/Content$ContentInfo;
 
-    invoke-direct {v12}, Ljp/co/sony/mc/camera/view/contentsview/contents/Content$ContentInfo;-><init>()V
+    invoke-direct {v1}, Ljp/co/sony/mc/camera/view/contentsview/contents/Content$ContentInfo;-><init>()V
 
     int-to-long v2, v3
 
     .line 284
-    iput-wide v2, v12, Ljp/co/sony/mc/camera/view/contentsview/contents/Content$ContentInfo;->mId:J
+    iput-wide v2, v1, Ljp/co/sony/mc/camera/view/contentsview/contents/Content$ContentInfo;->mId:J
 
     .line 285
-    iput-object v11, v12, Ljp/co/sony/mc/camera/view/contentsview/contents/Content$ContentInfo;->mOriginalUri:Landroid/net/Uri;
+    iput-object v11, v1, Ljp/co/sony/mc/camera/view/contentsview/contents/Content$ContentInfo;->mOriginalUri:Landroid/net/Uri;
 
     .line 286
     new-instance v2, Ljava/lang/StringBuilder;
@@ -665,66 +678,66 @@
 
     move-result-object v2
 
-    iput-object v2, v12, Ljp/co/sony/mc/camera/view/contentsview/contents/Content$ContentInfo;->mOriginalPath:Ljava/lang/String;
+    iput-object v2, v1, Ljp/co/sony/mc/camera/view/contentsview/contents/Content$ContentInfo;->mOriginalPath:Ljava/lang/String;
 
     .line 287
-    iput v14, v12, Ljp/co/sony/mc/camera/view/contentsview/contents/Content$ContentInfo;->mType:I
+    iput v15, v1, Ljp/co/sony/mc/camera/view/contentsview/contents/Content$ContentInfo;->mType:I
 
     .line 288
-    iput v8, v12, Ljp/co/sony/mc/camera/view/contentsview/contents/Content$ContentInfo;->mWidth:I
+    iput v8, v1, Ljp/co/sony/mc/camera/view/contentsview/contents/Content$ContentInfo;->mWidth:I
 
     .line 289
-    iput v9, v12, Ljp/co/sony/mc/camera/view/contentsview/contents/Content$ContentInfo;->mHeight:I
+    iput v9, v1, Ljp/co/sony/mc/camera/view/contentsview/contents/Content$ContentInfo;->mHeight:I
 
     .line 290
-    iput v1, v12, Ljp/co/sony/mc/camera/view/contentsview/contents/Content$ContentInfo;->mOrientation:I
+    iput v13, v1, Ljp/co/sony/mc/camera/view/contentsview/contents/Content$ContentInfo;->mOrientation:I
 
     .line 291
-    iput-object v4, v12, Ljp/co/sony/mc/camera/view/contentsview/contents/Content$ContentInfo;->mMimeType:Ljava/lang/String;
+    iput-object v4, v1, Ljp/co/sony/mc/camera/view/contentsview/contents/Content$ContentInfo;->mMimeType:Ljava/lang/String;
 
     .line 292
-    iput v10, v12, Ljp/co/sony/mc/camera/view/contentsview/contents/Content$ContentInfo;->mBucketId:I
+    iput v10, v1, Ljp/co/sony/mc/camera/view/contentsview/contents/Content$ContentInfo;->mBucketId:I
 
-    move/from16 v1, p2
+    move/from16 v2, p2
 
     .line 293
-    iput-boolean v1, v12, Ljp/co/sony/mc/camera/view/contentsview/contents/Content$ContentInfo;->mIsContainDetails:Z
+    iput-boolean v2, v1, Ljp/co/sony/mc/camera/view/contentsview/contents/Content$ContentInfo;->mIsContainDetails:Z
 
     .line 294
-    iput-object v7, v12, Ljp/co/sony/mc/camera/view/contentsview/contents/Content$ContentInfo;->mVolumeName:Ljava/lang/String;
+    iput-object v7, v1, Ljp/co/sony/mc/camera/view/contentsview/contents/Content$ContentInfo;->mVolumeName:Ljava/lang/String;
 
-    if-eqz v1, :cond_b
+    if-eqz v2, :cond_b
 
     .line 297
-    invoke-static {p0, v10}, Ljp/co/sony/mc/camera/view/contentsview/PhotoStackQueryHelper;->getGroupedImageCount(Landroid/content/ContentResolver;I)I
+    invoke-static {v0, v10}, Ljp/co/sony/mc/camera/view/contentsview/PhotoStackQueryHelper;->getGroupedImageCount(Landroid/content/ContentResolver;I)I
 
-    move-result v1
+    move-result v2
 
-    iput v1, v12, Ljp/co/sony/mc/camera/view/contentsview/contents/Content$ContentInfo;->mGroupedImage:I
+    iput v2, v1, Ljp/co/sony/mc/camera/view/contentsview/contents/Content$ContentInfo;->mGroupedImage:I
 
     .line 298
-    invoke-static {v12}, Ljp/co/sony/mc/camera/view/contentsview/PhotoStackQueryHelper;->getContentType(Ljp/co/sony/mc/camera/view/contentsview/contents/Content$ContentInfo;)Ljp/co/sony/mc/camera/view/contentsview/contents/Content$ContentsType;
+    invoke-static {v1}, Ljp/co/sony/mc/camera/view/contentsview/PhotoStackQueryHelper;->getContentType(Ljp/co/sony/mc/camera/view/contentsview/contents/Content$ContentInfo;)Ljp/co/sony/mc/camera/view/contentsview/contents/Content$ContentsType;
 
-    move-result-object v1
+    move-result-object v2
 
-    iput-object v1, v12, Ljp/co/sony/mc/camera/view/contentsview/contents/Content$ContentInfo;->mContentType:Ljp/co/sony/mc/camera/view/contentsview/contents/Content$ContentsType;
+    iput-object v2, v1, Ljp/co/sony/mc/camera/view/contentsview/contents/Content$ContentInfo;->mContentType:Ljp/co/sony/mc/camera/view/contentsview/contents/Content$ContentsType;
 
     .line 299
-    iget-object v1, v12, Ljp/co/sony/mc/camera/view/contentsview/contents/Content$ContentInfo;->mContentType:Ljp/co/sony/mc/camera/view/contentsview/contents/Content$ContentsType;
+    iget-object v2, v1, Ljp/co/sony/mc/camera/view/contentsview/contents/Content$ContentInfo;->mContentType:Ljp/co/sony/mc/camera/view/contentsview/contents/Content$ContentsType;
 
-    sget-object v2, Ljp/co/sony/mc/camera/view/contentsview/contents/Content$ContentsType;->BURST:Ljp/co/sony/mc/camera/view/contentsview/contents/Content$ContentsType;
+    sget-object v3, Ljp/co/sony/mc/camera/view/contentsview/contents/Content$ContentsType;->BURST:Ljp/co/sony/mc/camera/view/contentsview/contents/Content$ContentsType;
 
-    if-ne v1, v2, :cond_b
+    if-ne v2, v3, :cond_b
 
     .line 300
-    invoke-static {p0, v10, v12}, Ljp/co/sony/mc/camera/view/contentsview/PhotoStackQueryHelper;->getGroupedImageMediaID(Landroid/content/ContentResolver;ILjp/co/sony/mc/camera/view/contentsview/contents/Content$ContentInfo;)Ljava/util/List;
+    invoke-static {v0, v10, v1}, Ljp/co/sony/mc/camera/view/contentsview/PhotoStackQueryHelper;->getGroupedImageMediaID(Landroid/content/ContentResolver;ILjp/co/sony/mc/camera/view/contentsview/contents/Content$ContentInfo;)Ljava/util/List;
 
     move-result-object v0
 
-    iput-object v0, v12, Ljp/co/sony/mc/camera/view/contentsview/contents/Content$ContentInfo;->mMediaStoreIds:Ljava/util/List;
+    iput-object v0, v1, Ljp/co/sony/mc/camera/view/contentsview/contents/Content$ContentInfo;->mMediaStoreIds:Ljava/util/List;
 
     :cond_b
-    return-object v12
+    return-object v1
 .end method
 
 .method public static createContentInfoForMediaUris(Landroid/content/ContentResolver;Landroid/database/Cursor;)Ljp/co/sony/mc/camera/view/contentsview/contents/Content$ContentInfo;
@@ -952,37 +965,77 @@
 .end method
 
 .method public static getBurstCaptureImageInfo(Landroid/content/ContentResolver;I)Landroid/database/Cursor;
-    .locals 11
+    .locals 6
 
     .line 538
     new-instance v0, Ljp/co/sony/mc/camera/mediasaving/updator/CrQueryParameter;
 
     invoke-direct {v0}, Ljp/co/sony/mc/camera/mediasaving/updator/CrQueryParameter;-><init>()V
 
+    const/16 v1, 0xa
+
     .line 539
-    const-string v9, "orientation"
+    new-array v1, v1, [Ljava/lang/String;
 
-    const-string v10, "bucket_id"
+    const-string v2, "_id"
 
-    const-string v1, "_id"
+    const/4 v3, 0x0
+
+    aput-object v2, v1, v3
 
     const-string v2, "relative_path"
 
-    const-string v3, "_display_name"
+    const/4 v4, 0x1
 
-    const-string/jumbo v4, "volume_name"
+    aput-object v2, v1, v4
+
+    const/4 v2, 0x2
+
+    const-string v5, "_display_name"
+
+    aput-object v5, v1, v2
+
+    const/4 v2, 0x3
+
+    const-string/jumbo v5, "volume_name"
+
+    aput-object v5, v1, v2
+
+    const/4 v2, 0x4
 
     const-string v5, "mime_type"
 
-    const-string v6, "datetaken"
+    aput-object v5, v1, v2
 
-    const-string/jumbo v7, "width"
+    const/4 v2, 0x5
 
-    const-string v8, "height"
+    const-string v5, "datetaken"
 
-    filled-new-array/range {v1 .. v10}, [Ljava/lang/String;
+    aput-object v5, v1, v2
 
-    move-result-object v1
+    const/4 v2, 0x6
+
+    const-string/jumbo v5, "width"
+
+    aput-object v5, v1, v2
+
+    const/4 v2, 0x7
+
+    const-string v5, "height"
+
+    aput-object v5, v1, v2
+
+    const/16 v2, 0x8
+
+    const-string v5, "orientation"
+
+    aput-object v5, v1, v2
+
+    const/16 v2, 0x9
+
+    const-string v5, "bucket_id"
+
+    aput-object v5, v1, v2
 
     iput-object v1, v0, Ljp/co/sony/mc/camera/mediasaving/updator/CrQueryParameter;->projection:[Ljava/lang/String;
 
@@ -995,9 +1048,9 @@
 
     move-result-object v2
 
-    const-string v3, "%s DESC"
+    const-string v5, "%s DESC"
 
-    invoke-static {v1, v3, v2}, Ljava/lang/String;->format(Ljava/util/Locale;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
+    invoke-static {v1, v5, v2}, Ljava/lang/String;->format(Ljava/util/Locale;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
 
     move-result-object v1
 
@@ -1013,9 +1066,9 @@
     .line 567
     new-instance v2, Ljava/lang/StringBuilder;
 
-    const-string v3, "(bucket_id=="
+    const-string v5, "(bucket_id=="
 
-    invoke-direct {v2, v3}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+    invoke-direct {v2, v5}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
     invoke-virtual {v2, p1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
@@ -1067,11 +1120,11 @@
 
     if-eqz p0, :cond_0
 
-    const-string p0, "getBurstCaptureImageInfo: null"
+    new-array p0, v4, [Ljava/lang/String;
 
-    filled-new-array {p0}, [Ljava/lang/String;
+    const-string v0, "getBurstCaptureImageInfo: null"
 
-    move-result-object p0
+    aput-object v0, p0, v3
 
     invoke-static {p0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
@@ -1092,11 +1145,11 @@
     if-eqz v0, :cond_2
 
     .line 582
-    const-string v0, "getBurstCaptureImageInfo: row: 0"
+    new-array v0, v4, [Ljava/lang/String;
 
-    filled-new-array {v0}, [Ljava/lang/String;
+    const-string v1, "getBurstCaptureImageInfo: row: 0"
 
-    move-result-object v0
+    aput-object v1, v0, v3
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
@@ -1123,7 +1176,7 @@
     .line 444
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/contentsview/contents/Content$ContentInfo;->mOriginalPath:Ljava/lang/String;
 
-    invoke-static {p0}, Ljp/co/sony/mc/camera/storage/ManualBurstPathBuilder;->isBurstCaptureImage(Ljava/lang/String;)Z
+    invoke-static {p0}, Ljp/co/sony/mc/camera/storage/PathBuilder;->isBurstFilePath(Ljava/lang/String;)Z
 
     move-result p0
 
@@ -1159,11 +1212,13 @@
 
     if-eqz p0, :cond_3
 
-    const-string p0, "Unsupported file type"
+    new-array p0, v1, [Ljava/lang/String;
 
-    filled-new-array {p0}, [Ljava/lang/String;
+    const/4 v0, 0x0
 
-    move-result-object p0
+    const-string v1, "Unsupported file type"
+
+    aput-object v1, p0, v0
 
     invoke-static {p0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
@@ -1175,37 +1230,77 @@
 .end method
 
 .method public static getCoverImageInfo(Landroid/content/ContentResolver;I)Landroid/database/Cursor;
-    .locals 11
+    .locals 6
 
     .line 651
     new-instance v0, Ljp/co/sony/mc/camera/mediasaving/updator/CrQueryParameter;
 
     invoke-direct {v0}, Ljp/co/sony/mc/camera/mediasaving/updator/CrQueryParameter;-><init>()V
 
+    const/16 v1, 0xa
+
     .line 652
-    const-string v9, "orientation"
+    new-array v1, v1, [Ljava/lang/String;
 
-    const-string v10, "bucket_id"
+    const-string v2, "_id"
 
-    const-string v1, "_id"
+    const/4 v3, 0x0
+
+    aput-object v2, v1, v3
 
     const-string v2, "relative_path"
 
-    const-string v3, "_display_name"
+    const/4 v4, 0x1
 
-    const-string/jumbo v4, "volume_name"
+    aput-object v2, v1, v4
+
+    const/4 v2, 0x2
+
+    const-string v5, "_display_name"
+
+    aput-object v5, v1, v2
+
+    const/4 v2, 0x3
+
+    const-string/jumbo v5, "volume_name"
+
+    aput-object v5, v1, v2
+
+    const/4 v2, 0x4
 
     const-string v5, "mime_type"
 
-    const-string v6, "datetaken"
+    aput-object v5, v1, v2
 
-    const-string/jumbo v7, "width"
+    const/4 v2, 0x5
 
-    const-string v8, "height"
+    const-string v5, "datetaken"
 
-    filled-new-array/range {v1 .. v10}, [Ljava/lang/String;
+    aput-object v5, v1, v2
 
-    move-result-object v1
+    const/4 v2, 0x6
+
+    const-string/jumbo v5, "width"
+
+    aput-object v5, v1, v2
+
+    const/4 v2, 0x7
+
+    const-string v5, "height"
+
+    aput-object v5, v1, v2
+
+    const/16 v2, 0x8
+
+    const-string v5, "orientation"
+
+    aput-object v5, v1, v2
+
+    const/16 v2, 0x9
+
+    const-string v5, "bucket_id"
+
+    aput-object v5, v1, v2
 
     iput-object v1, v0, Ljp/co/sony/mc/camera/mediasaving/updator/CrQueryParameter;->projection:[Ljava/lang/String;
 
@@ -1217,9 +1312,9 @@
     .line 665
     new-instance v2, Ljava/lang/StringBuilder;
 
-    const-string v3, "(_id like \'"
+    const-string v5, "(_id like \'"
 
-    invoke-direct {v2, v3}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+    invoke-direct {v2, v5}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
     invoke-virtual {v2, p1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
@@ -1271,11 +1366,11 @@
 
     if-eqz p0, :cond_0
 
-    const-string p0, "getCoverImageInfo: null"
+    new-array p0, v4, [Ljava/lang/String;
 
-    filled-new-array {p0}, [Ljava/lang/String;
+    const-string v0, "getCoverImageInfo: null"
 
-    move-result-object p0
+    aput-object v0, p0, v3
 
     invoke-static {p0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
@@ -1295,11 +1390,11 @@
 
     if-eqz v0, :cond_2
 
-    const-string v0, "getCoverImageInfo: row: 0"
+    new-array v0, v4, [Ljava/lang/String;
 
-    filled-new-array {v0}, [Ljava/lang/String;
+    const-string v1, "getCoverImageInfo: row: 0"
 
-    move-result-object v0
+    aput-object v1, v0, v3
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
@@ -1314,30 +1409,34 @@
 .end method
 
 .method private static getGroupedImageCount(Landroid/content/ContentResolver;I)I
-    .locals 4
+    .locals 5
 
     .line 396
     sget-boolean v0, Ljp/co/sony/mc/camera/util/CamLog;->VERBOSE:Z
 
+    const/4 v1, 0x0
+
+    const/4 v2, 0x1
+
     if-eqz v0, :cond_0
 
-    new-instance v0, Ljava/lang/StringBuilder;
+    new-array v0, v2, [Ljava/lang/String;
 
-    const-string v1, "getGroupedImageCount bucketId : "
+    new-instance v3, Ljava/lang/StringBuilder;
 
-    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+    const-string v4, "getGroupedImageCount bucketId : "
 
-    invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+    invoke-direct {v3, v4}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
-    move-result-object v0
+    invoke-virtual {v3, p1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    move-result-object v3
 
-    move-result-object v0
+    invoke-virtual {v3}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    filled-new-array {v0}, [Ljava/lang/String;
+    move-result-object v3
 
-    move-result-object v0
+    aput-object v3, v0, v1
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
@@ -1348,28 +1447,28 @@
     invoke-direct {v0}, Ljp/co/sony/mc/camera/mediasaving/updator/CrQueryParameter;-><init>()V
 
     .line 400
-    const-string v1, "bucket_id"
+    new-array v3, v2, [Ljava/lang/String;
 
-    filled-new-array {v1}, [Ljava/lang/String;
+    const-string v4, "bucket_id"
 
-    move-result-object v1
+    aput-object v4, v3, v1
 
-    iput-object v1, v0, Ljp/co/sony/mc/camera/mediasaving/updator/CrQueryParameter;->projection:[Ljava/lang/String;
+    iput-object v3, v0, Ljp/co/sony/mc/camera/mediasaving/updator/CrQueryParameter;->projection:[Ljava/lang/String;
 
     .line 403
     sget-object v1, Ljava/util/Locale;->US:Ljava/util/Locale;
 
-    const-string v2, "datetaken"
+    const-string v3, "datetaken"
 
-    const-string v3, "_id"
+    const-string v4, "_id"
 
-    filled-new-array {v2, v3}, [Ljava/lang/Object;
+    filled-new-array {v3, v4}, [Ljava/lang/Object;
 
-    move-result-object v2
+    move-result-object v3
 
-    const-string v3, "%s DESC, %s DESC"
+    const-string v4, "%s DESC, %s DESC"
 
-    invoke-static {v1, v3, v2}, Ljava/lang/String;->format(Ljava/util/Locale;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
+    invoke-static {v1, v4, v3}, Ljava/lang/String;->format(Ljava/util/Locale;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
 
     move-result-object v1
 
@@ -1381,19 +1480,19 @@
     invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
 
     .line 406
-    new-instance v2, Ljava/lang/StringBuilder;
+    new-instance v3, Ljava/lang/StringBuilder;
 
-    const-string v3, "(bucket_id like \'"
+    const-string v4, "(bucket_id like \'"
 
-    invoke-direct {v2, v3}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+    invoke-direct {v3, v4}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
-    invoke-virtual {v2, p1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+    invoke-virtual {v3, p1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
     move-result-object p1
 
-    const-string v2, "\')"
+    const-string v3, "\')"
 
-    invoke-virtual {p1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {p1, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object p1
 
@@ -1430,9 +1529,7 @@
 
     if-nez p0, :cond_1
 
-    const/4 p0, 0x1
-
-    return p0
+    return v2
 
     .line 430
     :cond_1
@@ -1471,29 +1568,37 @@
 
     invoke-direct {v1}, Ljp/co/sony/mc/camera/mediasaving/updator/CrQueryParameter;-><init>()V
 
+    const/4 v2, 0x2
+
     .line 311
-    const-string v2, "bucket_id"
+    new-array v2, v2, [Ljava/lang/String;
 
-    const-string v3, "_id"
+    const/4 v3, 0x0
 
-    filled-new-array {v2, v3}, [Ljava/lang/String;
+    const-string v4, "bucket_id"
 
-    move-result-object v2
+    aput-object v4, v2, v3
+
+    const/4 v3, 0x1
+
+    const-string v4, "_id"
+
+    aput-object v4, v2, v3
 
     iput-object v2, v1, Ljp/co/sony/mc/camera/mediasaving/updator/CrQueryParameter;->projection:[Ljava/lang/String;
 
     .line 315
     sget-object v2, Ljava/util/Locale;->US:Ljava/util/Locale;
 
-    const-string v4, "datetaken"
+    const-string v3, "datetaken"
 
-    filled-new-array {v4, v3}, [Ljava/lang/Object;
+    filled-new-array {v3, v4}, [Ljava/lang/Object;
 
-    move-result-object v4
+    move-result-object v3
 
     const-string v5, "%s DESC, %s DESC"
 
-    invoke-static {v2, v5, v4}, Ljava/lang/String;->format(Ljava/util/Locale;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
+    invoke-static {v2, v5, v3}, Ljava/lang/String;->format(Ljava/util/Locale;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
 
     move-result-object v2
 
@@ -1505,19 +1610,19 @@
     invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
 
     .line 318
-    new-instance v4, Ljava/lang/StringBuilder;
+    new-instance v3, Ljava/lang/StringBuilder;
 
     const-string v5, "(bucket_id like \'"
 
-    invoke-direct {v4, v5}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+    invoke-direct {v3, v5}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
-    invoke-virtual {v4, p1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+    invoke-virtual {v3, p1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
     move-result-object p1
 
-    const-string v4, "\')"
+    const-string v3, "\')"
 
-    invoke-virtual {p1, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {p1, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object p1
 
@@ -1576,7 +1681,7 @@
 
     .line 342
     :try_start_0
-    invoke-interface {p0, v3}, Landroid/database/Cursor;->getColumnIndex(Ljava/lang/String;)I
+    invoke-interface {p0, v4}, Landroid/database/Cursor;->getColumnIndex(Ljava/lang/String;)I
 
     move-result p1
 
@@ -1622,7 +1727,7 @@
 .end method
 
 .method public static getImagesInfo(Landroid/content/ContentResolver;Ljava/util/ArrayList;)Landroid/database/Cursor;
-    .locals 12
+    .locals 7
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -1639,7 +1744,9 @@
 
     move-result v0
 
-    add-int/lit8 v0, v0, -0x1
+    const/4 v1, 0x1
+
+    sub-int/2addr v0, v1
 
     invoke-virtual {p1, v0}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
 
@@ -1655,10 +1762,10 @@
 
     move-result v0
 
-    const/4 v1, 0x0
+    const/4 v2, 0x0
 
     .line 704
-    invoke-virtual {p1, v1}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
+    invoke-virtual {p1, v2}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
 
     move-result-object p1
 
@@ -1675,7 +1782,7 @@
     .line 705
     invoke-static {v0, p1}, Ljava/lang/Math;->min(II)I
 
-    move-result v1
+    move-result v3
 
     .line 706
     invoke-static {v0, p1}, Ljava/lang/Math;->max(II)I
@@ -1687,62 +1794,98 @@
 
     invoke-direct {v0}, Ljp/co/sony/mc/camera/mediasaving/updator/CrQueryParameter;-><init>()V
 
+    const/16 v4, 0xa
+
     .line 710
-    const-string v10, "orientation"
+    new-array v4, v4, [Ljava/lang/String;
 
-    const-string v11, "bucket_id"
+    const-string v5, "_id"
 
-    const-string v2, "_id"
+    aput-object v5, v4, v2
 
-    const-string v3, "relative_path"
+    const-string v5, "relative_path"
 
-    const-string v4, "_display_name"
+    aput-object v5, v4, v1
 
-    const-string/jumbo v5, "volume_name"
+    const/4 v5, 0x2
+
+    const-string v6, "_display_name"
+
+    aput-object v6, v4, v5
+
+    const/4 v5, 0x3
+
+    const-string/jumbo v6, "volume_name"
+
+    aput-object v6, v4, v5
+
+    const/4 v5, 0x4
 
     const-string v6, "mime_type"
 
-    const-string v7, "datetaken"
+    aput-object v6, v4, v5
 
-    const-string/jumbo v8, "width"
+    const/4 v5, 0x5
 
-    const-string v9, "height"
+    const-string v6, "datetaken"
 
-    filled-new-array/range {v2 .. v11}, [Ljava/lang/String;
+    aput-object v6, v4, v5
 
-    move-result-object v2
+    const/4 v5, 0x6
 
-    iput-object v2, v0, Ljp/co/sony/mc/camera/mediasaving/updator/CrQueryParameter;->projection:[Ljava/lang/String;
+    const-string/jumbo v6, "width"
+
+    aput-object v6, v4, v5
+
+    const/4 v5, 0x7
+
+    const-string v6, "height"
+
+    aput-object v6, v4, v5
+
+    const/16 v5, 0x8
+
+    const-string v6, "orientation"
+
+    aput-object v6, v4, v5
+
+    const/16 v5, 0x9
+
+    const-string v6, "bucket_id"
+
+    aput-object v6, v4, v5
+
+    iput-object v4, v0, Ljp/co/sony/mc/camera/mediasaving/updator/CrQueryParameter;->projection:[Ljava/lang/String;
 
     .line 722
-    new-instance v2, Ljava/lang/StringBuilder;
+    new-instance v4, Ljava/lang/StringBuilder;
 
-    invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
+    invoke-direct {v4}, Ljava/lang/StringBuilder;-><init>()V
 
     .line 723
-    new-instance v3, Ljava/lang/StringBuilder;
+    new-instance v5, Ljava/lang/StringBuilder;
 
-    const-string v4, "(_id >= \'"
+    const-string v6, "(_id >= \'"
 
-    invoke-direct {v3, v4}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+    invoke-direct {v5, v6}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
-    invoke-virtual {v3, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+    invoke-virtual {v5, v3}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
-    move-result-object v1
+    move-result-object v3
 
-    const-string v3, "\' AND _id <= \'"
+    const-string v5, "\' AND _id <= \'"
 
-    invoke-virtual {v1, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v3, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    move-result-object v1
+    move-result-object v3
 
-    invoke-virtual {v1, p1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+    invoke-virtual {v3, p1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
     move-result-object p1
 
-    const-string v1, "\')"
+    const-string v3, "\')"
 
-    invoke-virtual {p1, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {p1, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object p1
 
@@ -1750,15 +1893,15 @@
 
     move-result-object p1
 
-    invoke-virtual {v2, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v4, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     .line 732
     const-string p1, " AND (media_type==1 OR media_type==3)"
 
-    invoke-virtual {v2, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v4, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     .line 741
-    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-virtual {v4}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object p1
 
@@ -1786,11 +1929,11 @@
 
     if-eqz p0, :cond_0
 
-    const-string p0, "getImagesInfo: null"
+    new-array p0, v1, [Ljava/lang/String;
 
-    filled-new-array {p0}, [Ljava/lang/String;
+    const-string v0, "getImagesInfo: null"
 
-    move-result-object p0
+    aput-object v0, p0, v2
 
     invoke-static {p0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
@@ -1810,11 +1953,11 @@
 
     if-eqz v0, :cond_2
 
-    const-string v0, "getImagesInfo: row: 0"
+    new-array v0, v1, [Ljava/lang/String;
 
-    filled-new-array {v0}, [Ljava/lang/String;
+    const-string v1, "getImagesInfo: row: 0"
 
-    move-result-object v0
+    aput-object v1, v0, v2
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
@@ -1829,7 +1972,7 @@
 .end method
 
 .method public static getLatestImageInfo(Landroid/content/ContentResolver;Ljp/co/sony/mc/camera/mediasaving/updator/CrQueryParameter;)Landroid/database/Cursor;
-    .locals 1
+    .locals 3
 
     .line 627
     const-string v0, "external"
@@ -1846,6 +1989,10 @@
 
     const/4 p1, 0x0
 
+    const/4 v0, 0x1
+
+    const/4 v1, 0x0
+
     if-nez p0, :cond_1
 
     .line 632
@@ -1853,35 +2000,35 @@
 
     if-eqz p0, :cond_0
 
-    const-string p0, "getLatestImageInfo: null"
+    new-array p0, v0, [Ljava/lang/String;
 
-    filled-new-array {p0}, [Ljava/lang/String;
+    const-string v0, "getLatestImageInfo: null"
 
-    move-result-object p0
+    aput-object v0, p0, p1
 
     invoke-static {p0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
     :cond_0
-    return-object p1
+    return-object v1
 
     .line 634
     :cond_1
     invoke-interface {p0}, Landroid/database/Cursor;->moveToFirst()Z
 
-    move-result v0
+    move-result v2
 
-    if-nez v0, :cond_3
+    if-nez v2, :cond_3
 
     .line 635
-    sget-boolean v0, Ljp/co/sony/mc/camera/util/CamLog;->VERBOSE:Z
+    sget-boolean v2, Ljp/co/sony/mc/camera/util/CamLog;->VERBOSE:Z
 
-    if-eqz v0, :cond_2
+    if-eqz v2, :cond_2
 
-    const-string v0, "getLatestImageInfo: row: 0"
+    new-array v0, v0, [Ljava/lang/String;
 
-    filled-new-array {v0}, [Ljava/lang/String;
+    const-string v2, "getLatestImageInfo: row: 0"
 
-    move-result-object v0
+    aput-object v2, v0, p1
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
@@ -1889,14 +2036,14 @@
     :cond_2
     invoke-interface {p0}, Landroid/database/Cursor;->close()V
 
-    return-object p1
+    return-object v1
 
     :cond_3
     return-object p0
 .end method
 
 .method private static getMediaId(Landroid/database/Cursor;)I
-    .locals 2
+    .locals 3
 
     .line 382
     const-string v0, "_id"
@@ -1914,23 +2061,27 @@
 
     if-eqz v0, :cond_0
 
-    new-instance v0, Ljava/lang/StringBuilder;
+    const/4 v0, 0x1
 
-    const-string v1, "getMediaId: "
+    new-array v0, v0, [Ljava/lang/String;
 
-    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+    new-instance v1, Ljava/lang/StringBuilder;
 
-    invoke-virtual {v0, p0}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+    const-string v2, "getMediaId: "
 
-    move-result-object v0
+    invoke-direct {v1, v2}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-virtual {v1, p0}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
-    move-result-object v0
+    move-result-object v1
 
-    filled-new-array {v0}, [Ljava/lang/String;
+    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    move-result-object v0
+    move-result-object v1
+
+    const/4 v2, 0x0
+
+    aput-object v1, v0, v2
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
@@ -1939,7 +2090,7 @@
 .end method
 
 .method public static getMediaPath(Landroid/content/ContentResolver;JI)Ljava/lang/String;
-    .locals 10
+    .locals 11
 
     .line 459
     new-instance v0, Ljp/co/sony/mc/camera/mediasaving/updator/CrQueryParameter;
@@ -1960,41 +2111,43 @@
 
     const-string v5, "relative_path"
 
-    const/4 v6, 0x0
+    const/4 v6, 0x2
 
     const/4 v7, 0x0
 
-    const/4 v8, 0x1
+    const/4 v8, 0x0
 
-    if-eq p3, v8, :cond_1
-
-    const/4 v9, 0x2
-
-    if-eq p3, v9, :cond_0
-
-    const/4 v9, 0x3
+    const/4 v9, 0x1
 
     if-eq p3, v9, :cond_1
 
-    return-object v6
+    if-eq p3, v6, :cond_0
+
+    const/4 v10, 0x3
+
+    if-eq p3, v10, :cond_1
+
+    return-object v7
 
     .line 486
     :cond_0
     sget-object p3, Landroid/provider/MediaStore$Video$Media;->EXTERNAL_CONTENT_URI:Landroid/net/Uri;
 
     .line 487
-    filled-new-array {v5, v4}, [Ljava/lang/String;
+    new-array v6, v6, [Ljava/lang/String;
 
-    move-result-object v9
+    aput-object v5, v6, v8
 
-    iput-object v9, v0, Ljp/co/sony/mc/camera/mediasaving/updator/CrQueryParameter;->projection:[Ljava/lang/String;
+    aput-object v4, v6, v9
+
+    iput-object v6, v0, Ljp/co/sony/mc/camera/mediasaving/updator/CrQueryParameter;->projection:[Ljava/lang/String;
 
     .line 491
-    new-instance v9, Ljava/lang/StringBuilder;
+    new-instance v6, Ljava/lang/StringBuilder;
 
-    invoke-direct {v9, v3}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+    invoke-direct {v6, v3}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
-    invoke-virtual {v9, p1, p2}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
+    invoke-virtual {v6, p1, p2}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
 
     move-result-object p1
 
@@ -2021,10 +2174,10 @@
     iput-object p1, v0, Ljp/co/sony/mc/camera/mediasaving/updator/CrQueryParameter;->where:Ljava/lang/String;
 
     .line 502
-    iput v7, v0, Ljp/co/sony/mc/camera/mediasaving/updator/CrQueryParameter;->offset:I
+    iput v8, v0, Ljp/co/sony/mc/camera/mediasaving/updator/CrQueryParameter;->offset:I
 
     .line 503
-    iput v8, v0, Ljp/co/sony/mc/camera/mediasaving/updator/CrQueryParameter;->limit:I
+    iput v9, v0, Ljp/co/sony/mc/camera/mediasaving/updator/CrQueryParameter;->limit:I
 
     goto :goto_0
 
@@ -2033,18 +2186,20 @@
     sget-object p3, Landroid/provider/MediaStore$Images$Media;->EXTERNAL_CONTENT_URI:Landroid/net/Uri;
 
     .line 466
-    filled-new-array {v5, v4}, [Ljava/lang/String;
+    new-array v6, v6, [Ljava/lang/String;
 
-    move-result-object v9
+    aput-object v5, v6, v8
 
-    iput-object v9, v0, Ljp/co/sony/mc/camera/mediasaving/updator/CrQueryParameter;->projection:[Ljava/lang/String;
+    aput-object v4, v6, v9
+
+    iput-object v6, v0, Ljp/co/sony/mc/camera/mediasaving/updator/CrQueryParameter;->projection:[Ljava/lang/String;
 
     .line 470
-    new-instance v9, Ljava/lang/StringBuilder;
+    new-instance v6, Ljava/lang/StringBuilder;
 
-    invoke-direct {v9, v3}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+    invoke-direct {v6, v3}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
-    invoke-virtual {v9, p1, p2}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
+    invoke-virtual {v6, p1, p2}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
 
     move-result-object p1
 
@@ -2071,10 +2226,10 @@
     iput-object p1, v0, Ljp/co/sony/mc/camera/mediasaving/updator/CrQueryParameter;->where:Ljava/lang/String;
 
     .line 481
-    iput v7, v0, Ljp/co/sony/mc/camera/mediasaving/updator/CrQueryParameter;->offset:I
+    iput v8, v0, Ljp/co/sony/mc/camera/mediasaving/updator/CrQueryParameter;->offset:I
 
     .line 482
-    iput v8, v0, Ljp/co/sony/mc/camera/mediasaving/updator/CrQueryParameter;->limit:I
+    iput v9, v0, Ljp/co/sony/mc/camera/mediasaving/updator/CrQueryParameter;->limit:I
 
     .line 510
     :goto_0
@@ -2084,12 +2239,12 @@
 
     if-nez p0, :cond_2
 
-    return-object v6
+    return-object v7
 
     .line 516
     :cond_2
     :try_start_0
-    invoke-interface {p0, v7}, Landroid/database/Cursor;->moveToPosition(I)Z
+    invoke-interface {p0, v8}, Landroid/database/Cursor;->moveToPosition(I)Z
 
     move-result p1
 
@@ -2143,7 +2298,7 @@
     :cond_3
     invoke-interface {p0}, Landroid/database/Cursor;->close()V
 
-    return-object v6
+    return-object v7
 
     :catchall_0
     move-exception p1
@@ -2153,11 +2308,11 @@
     .line 524
     :catch_0
     :try_start_1
-    new-array p1, v8, [Ljava/lang/String;
+    new-array p1, v9, [Ljava/lang/String;
 
     const-string p2, "The specified column isn\'t found."
 
-    aput-object p2, p1, v7
+    aput-object p2, p1, v8
 
     invoke-static {p1}, Ljp/co/sony/mc/camera/util/CamLog;->e([Ljava/lang/String;)V
     :try_end_1
@@ -2166,7 +2321,7 @@
     .line 527
     invoke-interface {p0}, Landroid/database/Cursor;->close()V
 
-    return-object v6
+    return-object v7
 
     :goto_1
     invoke-interface {p0}, Landroid/database/Cursor;->close()V
@@ -2209,7 +2364,7 @@
 .end method
 
 .method public static setupQueryParam(Ljava/util/List;I)Ljp/co/sony/mc/camera/mediasaving/updator/CrQueryParameter;
-    .locals 11
+    .locals 8
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -2223,25 +2378,29 @@
     .line 85
     sget-boolean v0, Ljp/co/sony/mc/camera/util/CamLog;->VERBOSE:Z
 
+    const/4 v1, 0x1
+
+    const/4 v2, 0x0
+
     if-eqz v0, :cond_0
 
-    new-instance v0, Ljava/lang/StringBuilder;
+    new-array v0, v1, [Ljava/lang/String;
 
-    const-string/jumbo v1, "setupQueryParam() has been called. offset = "
+    new-instance v3, Ljava/lang/StringBuilder;
 
-    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+    const-string/jumbo v4, "setupQueryParam() has been called. offset = "
 
-    invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+    invoke-direct {v3, v4}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
-    move-result-object v0
+    invoke-virtual {v3, p1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    move-result-object v3
 
-    move-result-object v0
+    invoke-virtual {v3}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    filled-new-array {v0}, [Ljava/lang/String;
+    move-result-object v3
 
-    move-result-object v0
+    aput-object v3, v0, v2
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
@@ -2259,55 +2418,85 @@
 
     invoke-direct {p0}, Ljp/co/sony/mc/camera/mediasaving/updator/CrQueryParameter;-><init>()V
 
+    const/16 v3, 0xa
+
     .line 92
-    const-string v9, "orientation"
+    new-array v3, v3, [Ljava/lang/String;
 
-    const-string v10, "bucket_id"
+    const-string v4, "_id"
 
-    const-string v1, "_id"
+    aput-object v4, v3, v2
 
-    const-string v2, "relative_path"
+    const-string v5, "relative_path"
 
-    const-string v3, "_display_name"
+    aput-object v5, v3, v1
 
-    const-string/jumbo v4, "volume_name"
+    const/4 v5, 0x2
 
-    const-string v5, "mime_type"
+    const-string v6, "_display_name"
+
+    aput-object v6, v3, v5
+
+    const/4 v5, 0x3
+
+    const-string/jumbo v6, "volume_name"
+
+    aput-object v6, v3, v5
+
+    const/4 v5, 0x4
+
+    const-string v6, "mime_type"
+
+    aput-object v6, v3, v5
+
+    const/4 v5, 0x5
 
     const-string v6, "datetaken"
 
+    aput-object v6, v3, v5
+
+    const/4 v5, 0x6
+
     const-string/jumbo v7, "width"
 
-    const-string v8, "height"
+    aput-object v7, v3, v5
 
-    filled-new-array/range {v1 .. v10}, [Ljava/lang/String;
+    const/4 v5, 0x7
 
-    move-result-object v1
+    const-string v7, "height"
 
-    iput-object v1, p0, Ljp/co/sony/mc/camera/mediasaving/updator/CrQueryParameter;->projection:[Ljava/lang/String;
+    aput-object v7, v3, v5
+
+    const/16 v5, 0x8
+
+    const-string v7, "orientation"
+
+    aput-object v7, v3, v5
+
+    const/16 v5, 0x9
+
+    const-string v7, "bucket_id"
+
+    aput-object v7, v3, v5
+
+    iput-object v3, p0, Ljp/co/sony/mc/camera/mediasaving/updator/CrQueryParameter;->projection:[Ljava/lang/String;
 
     .line 104
     iput p1, p0, Ljp/co/sony/mc/camera/mediasaving/updator/CrQueryParameter;->offset:I
 
-    const/4 p1, 0x1
-
     .line 105
-    iput p1, p0, Ljp/co/sony/mc/camera/mediasaving/updator/CrQueryParameter;->limit:I
+    iput v1, p0, Ljp/co/sony/mc/camera/mediasaving/updator/CrQueryParameter;->limit:I
 
     .line 106
     sget-object p1, Ljava/util/Locale;->US:Ljava/util/Locale;
 
-    const-string v1, "datetaken"
+    const-string v1, "%s DESC, %s DESC"
 
-    const-string v2, "_id"
+    filled-new-array {v6, v4}, [Ljava/lang/Object;
 
-    filled-new-array {v1, v2}, [Ljava/lang/Object;
+    move-result-object v3
 
-    move-result-object v1
-
-    const-string v2, "%s DESC, %s DESC"
-
-    invoke-static {p1, v2, v1}, Ljava/lang/String;->format(Ljava/util/Locale;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
+    invoke-static {p1, v1, v3}, Ljava/lang/String;->format(Ljava/util/Locale;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
 
     move-result-object p1
 
@@ -2318,10 +2507,8 @@
 
     invoke-direct {p1}, Ljava/lang/StringBuilder;-><init>()V
 
-    const/4 v1, 0x0
-
     .line 111
-    invoke-static {p1, v0, v1}, Ljp/co/sony/mc/camera/view/contentsview/PhotoStackQueryHelper;->appendWhere(Ljava/lang/StringBuilder;Ljava/util/List;Z)V
+    invoke-static {p1, v0, v2}, Ljp/co/sony/mc/camera/view/contentsview/PhotoStackQueryHelper;->appendWhere(Ljava/lang/StringBuilder;Ljava/util/List;Z)V
 
     .line 112
     const-string v0, " AND (media_type==1 OR media_type==3)"

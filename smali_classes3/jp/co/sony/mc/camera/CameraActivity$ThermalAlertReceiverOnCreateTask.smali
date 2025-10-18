@@ -25,7 +25,7 @@
 .method private constructor <init>(Ljp/co/sony/mc/camera/CameraActivity;)V
     .locals 0
 
-    .line 931
+    .line 944
     iput-object p1, p0, Ljp/co/sony/mc/camera/CameraActivity$ThermalAlertReceiverOnCreateTask;->this$0:Ljp/co/sony/mc/camera/CameraActivity;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -46,7 +46,7 @@
 .method public run()V
     .locals 2
 
-    .line 934
+    .line 947
     iget-object v0, p0, Ljp/co/sony/mc/camera/CameraActivity$ThermalAlertReceiverOnCreateTask;->this$0:Ljp/co/sony/mc/camera/CameraActivity;
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/CameraActivity;->-$$Nest$fgetmBackgroundWorkLock(Ljp/co/sony/mc/camera/CameraActivity;)Ljava/lang/Object;
@@ -55,7 +55,7 @@
 
     monitor-enter v0
 
-    .line 935
+    .line 948
     :try_start_0
     iget-object v1, p0, Ljp/co/sony/mc/camera/CameraActivity$ThermalAlertReceiverOnCreateTask;->this$0:Ljp/co/sony/mc/camera/CameraActivity;
 
@@ -65,7 +65,7 @@
 
     if-nez v1, :cond_0
 
-    .line 936
+    .line 949
     iget-object v1, p0, Ljp/co/sony/mc/camera/CameraActivity$ThermalAlertReceiverOnCreateTask;->this$0:Ljp/co/sony/mc/camera/CameraActivity;
 
     invoke-static {v1}, Ljp/co/sony/mc/camera/CameraActivity;->-$$Nest$fgetmThermalAlertReceiver(Ljp/co/sony/mc/camera/CameraActivity;)Ljp/co/sony/mc/camera/systemmonitor/ThermalAlertReceiver;
@@ -74,7 +74,7 @@
 
     invoke-virtual {v1}, Ljp/co/sony/mc/camera/systemmonitor/ThermalAlertReceiver;->onCreate()V
 
-    .line 937
+    .line 950
     iget-object v1, p0, Ljp/co/sony/mc/camera/CameraActivity$ThermalAlertReceiverOnCreateTask;->this$0:Ljp/co/sony/mc/camera/CameraActivity;
 
     invoke-static {v1}, Ljp/co/sony/mc/camera/CameraActivity;->-$$Nest$fgetmBatteryChangedReceiver(Ljp/co/sony/mc/camera/CameraActivity;)Ljp/co/sony/mc/camera/systemmonitor/BatteryChangedReceiver;
@@ -83,7 +83,7 @@
 
     invoke-virtual {v1}, Ljp/co/sony/mc/camera/systemmonitor/BatteryChangedReceiver;->onCreate()V
 
-    .line 938
+    .line 951
     iget-object v1, p0, Ljp/co/sony/mc/camera/CameraActivity$ThermalAlertReceiverOnCreateTask;->this$0:Ljp/co/sony/mc/camera/CameraActivity;
 
     invoke-static {v1}, Ljp/co/sony/mc/camera/CameraActivity;->-$$Nest$fgetmPowerConnectionReceiver(Ljp/co/sony/mc/camera/CameraActivity;)Ljp/co/sony/mc/camera/systemmonitor/PowerConnectionReceiver;
@@ -92,7 +92,7 @@
 
     invoke-virtual {v1}, Ljp/co/sony/mc/camera/systemmonitor/PowerConnectionReceiver;->onCreate()V
 
-    .line 939
+    .line 952
     sget-object v1, Ljp/co/sony/mc/camera/idd/event/IddLaunchEvent;->Context:Ljp/co/sony/mc/camera/idd/event/IddLaunchEvent$Context;
 
     iget-object p0, p0, Ljp/co/sony/mc/camera/CameraActivity$ThermalAlertReceiverOnCreateTask;->this$0:Ljp/co/sony/mc/camera/CameraActivity;
@@ -103,7 +103,7 @@
 
     invoke-virtual {v1, p0}, Ljp/co/sony/mc/camera/idd/event/IddLaunchEvent$Context;->setBatteryChangedReceiver(Ljp/co/sony/mc/camera/systemmonitor/BatteryChangedReceiver;)V
 
-    .line 941
+    .line 954
     :cond_0
     monitor-exit v0
 

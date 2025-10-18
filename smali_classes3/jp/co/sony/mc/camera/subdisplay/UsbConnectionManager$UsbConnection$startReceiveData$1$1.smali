@@ -32,7 +32,7 @@
 
 .annotation runtime Lkotlin/Metadata;
     d1 = {
-        "\u0000\n\n\u0000\n\u0002\u0010\u0002\n\u0002\u0018\u0002\u0010\u0000\u001a\u00020\u0001*\u00020\u0002H\u008a@"
+        "\u0000\n\n\u0000\n\u0002\u0010\u0002\n\u0002\u0018\u0002\u0010\u0000\u001a\u00020\u0001*\u00020\u0002H\n"
     }
     d2 = {
         "<anonymous>",
@@ -41,8 +41,8 @@
     }
     k = 0x3
     mv = {
-        0x1,
-        0x9,
+        0x2,
+        0x0,
         0x0
     }
     xi = 0x30
@@ -206,11 +206,15 @@
 
     check-cast v2, Ljava/lang/CharSequence;
 
+    const/4 p1, 0x1
+
+    new-array v3, p1, [Ljava/lang/String;
+
     const-string p1, "\r"
 
-    filled-new-array {p1}, [Ljava/lang/String;
+    const/4 v0, 0x0
 
-    move-result-object v3
+    aput-object p1, v3, v0
 
     const/4 v6, 0x6
 
@@ -223,8 +227,6 @@
     invoke-static/range {v2 .. v7}, Lkotlin/text/StringsKt;->split$default(Ljava/lang/CharSequence;[Ljava/lang/String;ZIILjava/lang/Object;)Ljava/util/List;
 
     move-result-object p1
-
-    const/4 v0, 0x0
 
     invoke-interface {p1, v0}, Ljava/util/List;->get(I)Ljava/lang/Object;
 

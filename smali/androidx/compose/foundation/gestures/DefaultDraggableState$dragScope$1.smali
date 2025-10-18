@@ -49,7 +49,7 @@
 
     iput-object p1, p0, Landroidx/compose/foundation/gestures/DefaultDraggableState$dragScope$1;->this$0:Landroidx/compose/foundation/gestures/DefaultDraggableState;
 
-    .line 553
+    .line 650
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -60,7 +60,7 @@
 .method public dragBy(F)V
     .locals 0
 
-    .line 554
+    .line 651
     iget-object p0, p0, Landroidx/compose/foundation/gestures/DefaultDraggableState$dragScope$1;->this$0:Landroidx/compose/foundation/gestures/DefaultDraggableState;
 
     invoke-virtual {p0}, Landroidx/compose/foundation/gestures/DefaultDraggableState;->getOnDelta()Lkotlin/jvm/functions/Function1;

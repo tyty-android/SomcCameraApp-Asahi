@@ -1,6 +1,6 @@
 .class final synthetic Landroidx/compose/ui/tooling/ComposeViewAdapter$findAndTrackAnimations$1;
 .super Lkotlin/jvm/internal/MutablePropertyReference0Impl;
-.source "ComposeViewAdapter.kt"
+.source "ComposeViewAdapter.android.kt"
 
 
 # annotations
@@ -50,7 +50,7 @@
 .method public get()Ljava/lang/Object;
     .locals 0
 
-    .line 320
+    .line 318
     iget-object p0, p0, Landroidx/compose/ui/tooling/ComposeViewAdapter$findAndTrackAnimations$1;->receiver:Ljava/lang/Object;
 
     check-cast p0, Landroidx/compose/ui/tooling/ComposeViewAdapter;
@@ -65,7 +65,7 @@
 .method public set(Ljava/lang/Object;)V
     .locals 0
 
-    .line 320
+    .line 318
     iget-object p0, p0, Landroidx/compose/ui/tooling/ComposeViewAdapter$findAndTrackAnimations$1;->receiver:Ljava/lang/Object;
 
     check-cast p0, Landroidx/compose/ui/tooling/ComposeViewAdapter;

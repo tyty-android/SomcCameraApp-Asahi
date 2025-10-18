@@ -25,7 +25,7 @@
 .method constructor <init>(Ljp/co/sony/mc/camera/view/setting/fragment/RemoconPairFragment;)V
     .locals 0
 
-    .line 186
+    .line 190
     iput-object p1, p0, Ljp/co/sony/mc/camera/view/setting/fragment/RemoconPairFragment$4;->this$0:Ljp/co/sony/mc/camera/view/setting/fragment/RemoconPairFragment;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -38,7 +38,7 @@
 .method public onKeyDown(Lcom/sonymobile/camera/bleremotecontrol/RemoconManager$BleRemoteKeyEvents;Ljava/lang/Integer;)V
     .locals 1
 
-    .line 195
+    .line 199
     iget-object p2, p0, Ljp/co/sony/mc/camera/view/setting/fragment/RemoconPairFragment$4;->this$0:Ljp/co/sony/mc/camera/view/setting/fragment/RemoconPairFragment;
 
     invoke-virtual {p2}, Ljp/co/sony/mc/camera/view/setting/fragment/RemoconPairFragment;->getActivity()Landroidx/fragment/app/FragmentActivity;

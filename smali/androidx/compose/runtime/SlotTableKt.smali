@@ -5,12 +5,12 @@
 
 # annotations
 .annotation system Ldalvik/annotation/SourceDebugExtension;
-    value = "SMAP\nSlotTable.kt\nKotlin\n*S Kotlin\n*F\n+ 1 SlotTable.kt\nandroidx/compose/runtime/SlotTableKt\n+ 2 ListUtils.kt\nandroidx/compose/runtime/snapshots/ListUtilsKt\n+ 3 fake.kt\nkotlin/jvm/internal/FakeKt\n*L\n1#1,3471:1\n82#2,3:3472\n33#2,4:3475\n85#2,2:3479\n38#2:3481\n87#2:3482\n1#3:3483\n*S KotlinDebug\n*F\n+ 1 SlotTable.kt\nandroidx/compose/runtime/SlotTableKt\n*L\n3274#1:3472,3\n3274#1:3475,4\n3274#1:3479,2\n3274#1:3481\n3274#1:3482\n*E\n"
+    value = "SMAP\nSlotTable.kt\nKotlin\n*S Kotlin\n*F\n+ 1 SlotTable.kt\nandroidx/compose/runtime/SlotTableKt\n+ 2 ListUtils.kt\nandroidx/compose/runtime/snapshots/ListUtilsKt\n+ 3 fake.kt\nkotlin/jvm/internal/FakeKt\n*L\n1#1,3745:1\n82#2,3:3746\n33#2,4:3749\n85#2,2:3753\n38#2:3755\n87#2:3756\n1#3:3757\n*S KotlinDebug\n*F\n+ 1 SlotTable.kt\nandroidx/compose/runtime/SlotTableKt\n*L\n3539#1:3746,3\n3539#1:3749,4\n3539#1:3753,2\n3539#1:3755\n3539#1:3756\n*E\n"
 .end annotation
 
 .annotation runtime Lkotlin/Metadata;
     d1 = {
-        "\u0000F\n\u0000\n\u0002\u0010\u0008\n\u0002\u0008\u0014\n\u0002\u0010\u0002\n\u0002\u0010\u0015\n\u0002\u0008\u0003\n\u0002\u0010\u000b\n\u0002\u0008\u0003\n\u0002\u0010 \n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0003\n\u0002\u0018\u0002\n\u0002\u0008\u0017\n\u0002\u0010\u001c\n\u0002\u0008\n\u001a\u0010\u0010\u0013\u001a\u00020\u00012\u0006\u0010\u0014\u001a\u00020\u0001H\u0002\u001a\u0014\u0010\u0015\u001a\u00020\u0016*\u00020\u00172\u0006\u0010\u0018\u001a\u00020\u0001H\u0002\u001a\u0014\u0010\u0019\u001a\u00020\u0001*\u00020\u00172\u0006\u0010\u0018\u001a\u00020\u0001H\u0002\u001a\u0014\u0010\u001a\u001a\u00020\u001b*\u00020\u00172\u0006\u0010\u0018\u001a\u00020\u0001H\u0002\u001a\u0014\u0010\u001c\u001a\u00020\u001b*\u00020\u00172\u0006\u0010\u0018\u001a\u00020\u0001H\u0002\u001a\u0014\u0010\u001d\u001a\u00020\u0001*\u00020\u00172\u0006\u0010\u0018\u001a\u00020\u0001H\u0002\u001a\u001c\u0010\u001e\u001a\u0008\u0012\u0004\u0012\u00020\u00010\u001f*\u00020\u00172\u0008\u0008\u0002\u0010 \u001a\u00020\u0001H\u0002\u001a;\u0010!\u001a\u00020\"*\u0012\u0012\u0004\u0012\u00020\"0#j\u0008\u0012\u0004\u0012\u00020\"`$2\u0006\u0010%\u001a\u00020\u00012\u0006\u0010&\u001a\u00020\u00012\u000c\u0010\'\u001a\u0008\u0012\u0004\u0012\u00020\"0(H\u0082\u0008\u001a\u0014\u0010)\u001a\u00020\u0001*\u00020\u00172\u0006\u0010\u0018\u001a\u00020\u0001H\u0002\u001a\u0014\u0010*\u001a\u00020\u0001*\u00020\u00172\u0006\u0010\u0018\u001a\u00020\u0001H\u0002\u001a\u001c\u0010+\u001a\u0008\u0012\u0004\u0012\u00020\u00010\u001f*\u00020\u00172\u0008\u0008\u0002\u0010 \u001a\u00020\u0001H\u0002\u001a\u0014\u0010,\u001a\u00020\u001b*\u00020\u00172\u0006\u0010\u0018\u001a\u00020\u0001H\u0002\u001a\u0014\u0010-\u001a\u00020\u001b*\u00020\u00172\u0006\u0010\u0018\u001a\u00020\u0001H\u0002\u001a\u0014\u0010.\u001a\u00020\u001b*\u00020\u00172\u0006\u0010\u0018\u001a\u00020\u0001H\u0002\u001aD\u0010/\u001a\u00020\u0016*\u00020\u00172\u0006\u0010\u0018\u001a\u00020\u00012\u0006\u00100\u001a\u00020\u00012\u0006\u00101\u001a\u00020\u001b2\u0006\u00102\u001a\u00020\u001b2\u0006\u00103\u001a\u00020\u001b2\u0006\u00104\u001a\u00020\u00012\u0006\u0010\u001d\u001a\u00020\u0001H\u0002\u001a\u0014\u00101\u001a\u00020\u001b*\u00020\u00172\u0006\u0010\u0018\u001a\u00020\u0001H\u0002\u001a\u0014\u00100\u001a\u00020\u0001*\u00020\u00172\u0006\u0010\u0018\u001a\u00020\u0001H\u0002\u001a\u001c\u00105\u001a\u0008\u0012\u0004\u0012\u00020\u00010\u001f*\u00020\u00172\u0008\u0008\u0002\u0010 \u001a\u00020\u0001H\u0002\u001a,\u00106\u001a\u00020\u0001*\u0012\u0012\u0004\u0012\u00020\"0#j\u0008\u0012\u0004\u0012\u00020\"`$2\u0006\u0010%\u001a\u00020\u00012\u0006\u0010&\u001a\u00020\u0001H\u0002\u001a\u0014\u00107\u001a\u00020\u0001*\u00020\u00172\u0006\u0010\u0018\u001a\u00020\u0001H\u0002\u001a\u001c\u00108\u001a\u0008\u0012\u0004\u0012\u00020\u00010\u001f*\u00020\u00172\u0008\u0008\u0002\u0010 \u001a\u00020\u0001H\u0002\u001a\u0014\u00109\u001a\u00020\u0001*\u00020\u00172\u0006\u0010\u0018\u001a\u00020\u0001H\u0002\u001a\u0014\u0010:\u001a\u00020\u0001*\u00020\u00172\u0006\u0010\u0018\u001a\u00020\u0001H\u0002\u001a\u0014\u00104\u001a\u00020\u0001*\u00020\u00172\u0006\u0010\u0018\u001a\u00020\u0001H\u0002\u001a\u001c\u0010;\u001a\u0008\u0012\u0004\u0012\u00020\u00010\u001f*\u00020\u00172\u0008\u0008\u0002\u0010 \u001a\u00020\u0001H\u0002\u001a,\u0010<\u001a\u00020\u0001*\u0012\u0012\u0004\u0012\u00020\"0#j\u0008\u0012\u0004\u0012\u00020\"`$2\u0006\u0010=\u001a\u00020\u00012\u0006\u0010&\u001a\u00020\u0001H\u0002\u001a \u0010>\u001a\u0008\u0012\u0004\u0012\u00020\u00010\u001f*\u00020\u00172\u000c\u0010?\u001a\u0008\u0012\u0004\u0012\u00020\u00010@H\u0002\u001a\u0014\u0010A\u001a\u00020\u0001*\u00020\u00172\u0006\u0010\u0018\u001a\u00020\u0001H\u0002\u001a\u001c\u0010B\u001a\u00020\u0016*\u00020\u00172\u0006\u0010\u0018\u001a\u00020\u00012\u0006\u0010\u0014\u001a\u00020\u001bH\u0002\u001a\u001c\u0010C\u001a\u00020\u0016*\u00020\u00172\u0006\u0010\u0018\u001a\u00020\u00012\u0006\u0010D\u001a\u00020\u0001H\u0002\u001a\u001c\u0010E\u001a\u00020\u0016*\u00020\u00172\u0006\u0010\u0018\u001a\u00020\u00012\u0006\u00100\u001a\u00020\u0001H\u0002\u001a\u001c\u0010F\u001a\u00020\u0016*\u00020\u00172\u0006\u0010\u0018\u001a\u00020\u00012\u0006\u0010\u0014\u001a\u00020\u0001H\u0002\u001a\u001c\u0010G\u001a\u00020\u0016*\u00020\u00172\u0006\u0010\u0018\u001a\u00020\u00012\u0006\u0010\u0014\u001a\u00020\u001bH\u0002\u001a\u001c\u0010H\u001a\u00020\u0016*\u00020\u00172\u0006\u0010\u0018\u001a\u00020\u00012\u0006\u0010\u0014\u001a\u00020\u0001H\u0002\u001a\u001c\u0010I\u001a\u00020\u0016*\u00020\u00172\u0006\u0010\u0018\u001a\u00020\u00012\u0006\u0010\u0014\u001a\u00020\u0001H\u0002\"\u000e\u0010\u0000\u001a\u00020\u0001X\u0082T\u00a2\u0006\u0002\n\u0000\"\u000e\u0010\u0002\u001a\u00020\u0001X\u0082T\u00a2\u0006\u0002\n\u0000\"\u000e\u0010\u0003\u001a\u00020\u0001X\u0082T\u00a2\u0006\u0002\n\u0000\"\u000e\u0010\u0004\u001a\u00020\u0001X\u0082T\u00a2\u0006\u0002\n\u0000\"\u000e\u0010\u0005\u001a\u00020\u0001X\u0082T\u00a2\u0006\u0002\n\u0000\"\u000e\u0010\u0006\u001a\u00020\u0001X\u0082T\u00a2\u0006\u0002\n\u0000\"\u000e\u0010\u0007\u001a\u00020\u0001X\u0082T\u00a2\u0006\u0002\n\u0000\"\u000e\u0010\u0008\u001a\u00020\u0001X\u0082T\u00a2\u0006\u0002\n\u0000\"\u000e\u0010\t\u001a\u00020\u0001X\u0082T\u00a2\u0006\u0002\n\u0000\"\u000e\u0010\n\u001a\u00020\u0001X\u0082T\u00a2\u0006\u0002\n\u0000\"\u000e\u0010\u000b\u001a\u00020\u0001X\u0082T\u00a2\u0006\u0002\n\u0000\"\u000e\u0010\u000c\u001a\u00020\u0001X\u0082T\u00a2\u0006\u0002\n\u0000\"\u000e\u0010\r\u001a\u00020\u0001X\u0082T\u00a2\u0006\u0002\n\u0000\"\u000e\u0010\u000e\u001a\u00020\u0001X\u0082T\u00a2\u0006\u0002\n\u0000\"\u000e\u0010\u000f\u001a\u00020\u0001X\u0082T\u00a2\u0006\u0002\n\u0000\"\u000e\u0010\u0010\u001a\u00020\u0001X\u0082T\u00a2\u0006\u0002\n\u0000\"\u000e\u0010\u0011\u001a\u00020\u0001X\u0082T\u00a2\u0006\u0002\n\u0000\"\u000e\u0010\u0012\u001a\u00020\u0001X\u0082T\u00a2\u0006\u0002\n\u0000\u00a8\u0006J"
+        "\u0000P\n\u0000\n\u0002\u0010\u0008\n\u0002\u0008\u0015\n\u0002\u0010\u0002\n\u0002\u0010\u0015\n\u0002\u0008\u0003\n\u0002\u0010\u000b\n\u0002\u0008\u0003\n\u0002\u0010 \n\u0002\u0008\u0003\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0003\n\u0002\u0018\u0002\n\u0002\u0008\u0004\n\u0002\u0018\u0002\n\u0002\u0008\u0017\n\u0002\u0010\u001c\n\u0002\u0008\n\u001a\u0010\u0010\u0014\u001a\u00020\u00012\u0006\u0010\u0015\u001a\u00020\u0001H\u0002\u001a\u0014\u0010\u0016\u001a\u00020\u0017*\u00020\u00182\u0006\u0010\u0019\u001a\u00020\u0001H\u0002\u001a\u0014\u0010\u001a\u001a\u00020\u0001*\u00020\u00182\u0006\u0010\u0019\u001a\u00020\u0001H\u0002\u001a\u0014\u0010\u001b\u001a\u00020\u001c*\u00020\u00182\u0006\u0010\u0019\u001a\u00020\u0001H\u0002\u001a\u0014\u0010\u001d\u001a\u00020\u001c*\u00020\u00182\u0006\u0010\u0019\u001a\u00020\u0001H\u0002\u001a\u0014\u0010\u001e\u001a\u00020\u0001*\u00020\u00182\u0006\u0010\u0019\u001a\u00020\u0001H\u0002\u001a\u001c\u0010\u001f\u001a\u0008\u0012\u0004\u0012\u00020\u00010 *\u00020\u00182\u0008\u0008\u0002\u0010!\u001a\u00020\u0001H\u0002\u001a7\u0010\"\u001a\u00020\u0001\"\u0004\u0008\u0000\u0010#*\u0012\u0012\u0004\u0012\u0002H#0$j\u0008\u0012\u0004\u0012\u0002H#`%2\u0012\u0010&\u001a\u000e\u0012\u0004\u0012\u0002H#\u0012\u0004\u0012\u00020\u001c0\'H\u0082\u0008\u001a>\u0010(\u001a\u0004\u0018\u0001H#\"\u0004\u0008\u0000\u0010#*\u0012\u0012\u0004\u0012\u0002H#0$j\u0008\u0012\u0004\u0012\u0002H#`%2\u0012\u0010&\u001a\u000e\u0012\u0004\u0012\u0002H#\u0012\u0004\u0012\u00020\u001c0\'H\u0082\u0008\u00a2\u0006\u0002\u0010)\u001a.\u0010*\u001a\u0004\u0018\u00010+*\u0012\u0012\u0004\u0012\u00020+0$j\u0008\u0012\u0004\u0012\u00020+`%2\u0006\u0010,\u001a\u00020\u00012\u0006\u0010-\u001a\u00020\u0001H\u0002\u001a;\u0010.\u001a\u00020+*\u0012\u0012\u0004\u0012\u00020+0$j\u0008\u0012\u0004\u0012\u00020+`%2\u0006\u0010,\u001a\u00020\u00012\u0006\u0010-\u001a\u00020\u00012\u000c\u0010/\u001a\u0008\u0012\u0004\u0012\u00020+00H\u0082\u0008\u001a\u0014\u00101\u001a\u00020\u0001*\u00020\u00182\u0006\u0010\u0019\u001a\u00020\u0001H\u0002\u001a\u0014\u00102\u001a\u00020\u0001*\u00020\u00182\u0006\u0010\u0019\u001a\u00020\u0001H\u0002\u001a\u001c\u00103\u001a\u0008\u0012\u0004\u0012\u00020\u00010 *\u00020\u00182\u0008\u0008\u0002\u0010!\u001a\u00020\u0001H\u0002\u001a\u0014\u00104\u001a\u00020\u001c*\u00020\u00182\u0006\u0010\u0019\u001a\u00020\u0001H\u0002\u001a\u0014\u00105\u001a\u00020\u001c*\u00020\u00182\u0006\u0010\u0019\u001a\u00020\u0001H\u0002\u001a\u0014\u00106\u001a\u00020\u001c*\u00020\u00182\u0006\u0010\u0019\u001a\u00020\u0001H\u0002\u001aD\u00107\u001a\u00020\u0017*\u00020\u00182\u0006\u0010\u0019\u001a\u00020\u00012\u0006\u00108\u001a\u00020\u00012\u0006\u00109\u001a\u00020\u001c2\u0006\u0010:\u001a\u00020\u001c2\u0006\u0010;\u001a\u00020\u001c2\u0006\u0010<\u001a\u00020\u00012\u0006\u0010\u001e\u001a\u00020\u0001H\u0002\u001a\u0014\u00109\u001a\u00020\u001c*\u00020\u00182\u0006\u0010\u0019\u001a\u00020\u0001H\u0002\u001a\u0014\u00108\u001a\u00020\u0001*\u00020\u00182\u0006\u0010\u0019\u001a\u00020\u0001H\u0002\u001a\u001c\u0010=\u001a\u0008\u0012\u0004\u0012\u00020\u00010 *\u00020\u00182\u0008\u0008\u0002\u0010!\u001a\u00020\u0001H\u0002\u001a,\u0010>\u001a\u00020\u0001*\u0012\u0012\u0004\u0012\u00020+0$j\u0008\u0012\u0004\u0012\u00020+`%2\u0006\u0010,\u001a\u00020\u00012\u0006\u0010-\u001a\u00020\u0001H\u0002\u001a\u0014\u0010?\u001a\u00020\u0001*\u00020\u00182\u0006\u0010\u0019\u001a\u00020\u0001H\u0002\u001a\u001c\u0010@\u001a\u0008\u0012\u0004\u0012\u00020\u00010 *\u00020\u00182\u0008\u0008\u0002\u0010!\u001a\u00020\u0001H\u0002\u001a\u0014\u0010A\u001a\u00020\u0001*\u00020\u00182\u0006\u0010\u0019\u001a\u00020\u0001H\u0002\u001a\u0014\u0010B\u001a\u00020\u0001*\u00020\u00182\u0006\u0010\u0019\u001a\u00020\u0001H\u0002\u001a\u0014\u0010<\u001a\u00020\u0001*\u00020\u00182\u0006\u0010\u0019\u001a\u00020\u0001H\u0002\u001a\u001c\u0010C\u001a\u0008\u0012\u0004\u0012\u00020\u00010 *\u00020\u00182\u0008\u0008\u0002\u0010!\u001a\u00020\u0001H\u0002\u001a,\u0010D\u001a\u00020\u0001*\u0012\u0012\u0004\u0012\u00020+0$j\u0008\u0012\u0004\u0012\u00020+`%2\u0006\u0010E\u001a\u00020\u00012\u0006\u0010-\u001a\u00020\u0001H\u0002\u001a \u0010F\u001a\u0008\u0012\u0004\u0012\u00020\u00010 *\u00020\u00182\u000c\u0010G\u001a\u0008\u0012\u0004\u0012\u00020\u00010HH\u0002\u001a\u0014\u0010I\u001a\u00020\u0001*\u00020\u00182\u0006\u0010\u0019\u001a\u00020\u0001H\u0002\u001a\u001c\u0010J\u001a\u00020\u0017*\u00020\u00182\u0006\u0010\u0019\u001a\u00020\u00012\u0006\u0010\u0015\u001a\u00020\u001cH\u0002\u001a\u001c\u0010K\u001a\u00020\u0017*\u00020\u00182\u0006\u0010\u0019\u001a\u00020\u00012\u0006\u0010L\u001a\u00020\u0001H\u0002\u001a\u001c\u0010M\u001a\u00020\u0017*\u00020\u00182\u0006\u0010\u0019\u001a\u00020\u00012\u0006\u00108\u001a\u00020\u0001H\u0002\u001a\u001c\u0010N\u001a\u00020\u0017*\u00020\u00182\u0006\u0010\u0019\u001a\u00020\u00012\u0006\u0010\u0015\u001a\u00020\u0001H\u0002\u001a\u001c\u0010O\u001a\u00020\u0017*\u00020\u00182\u0006\u0010\u0019\u001a\u00020\u00012\u0006\u0010\u0015\u001a\u00020\u001cH\u0002\u001a\u001c\u0010P\u001a\u00020\u0017*\u00020\u00182\u0006\u0010\u0019\u001a\u00020\u00012\u0006\u0010\u0015\u001a\u00020\u0001H\u0002\u001a\u001c\u0010Q\u001a\u00020\u0017*\u00020\u00182\u0006\u0010\u0019\u001a\u00020\u00012\u0006\u0010\u0015\u001a\u00020\u0001H\u0002\"\u000e\u0010\u0000\u001a\u00020\u0001X\u0082T\u00a2\u0006\u0002\n\u0000\"\u000e\u0010\u0002\u001a\u00020\u0001X\u0082T\u00a2\u0006\u0002\n\u0000\"\u000e\u0010\u0003\u001a\u00020\u0001X\u0082T\u00a2\u0006\u0002\n\u0000\"\u000e\u0010\u0004\u001a\u00020\u0001X\u0082T\u00a2\u0006\u0002\n\u0000\"\u000e\u0010\u0005\u001a\u00020\u0001X\u0082T\u00a2\u0006\u0002\n\u0000\"\u000e\u0010\u0006\u001a\u00020\u0001X\u0082T\u00a2\u0006\u0002\n\u0000\"\u000e\u0010\u0007\u001a\u00020\u0001X\u0082T\u00a2\u0006\u0002\n\u0000\"\u000e\u0010\u0008\u001a\u00020\u0001X\u0082T\u00a2\u0006\u0002\n\u0000\"\u000e\u0010\t\u001a\u00020\u0001X\u0082T\u00a2\u0006\u0002\n\u0000\"\u000e\u0010\n\u001a\u00020\u0001X\u0082T\u00a2\u0006\u0002\n\u0000\"\u000e\u0010\u000b\u001a\u00020\u0001X\u0082T\u00a2\u0006\u0002\n\u0000\"\u000e\u0010\u000c\u001a\u00020\u0001X\u0082T\u00a2\u0006\u0002\n\u0000\"\u000e\u0010\r\u001a\u00020\u0001X\u0082T\u00a2\u0006\u0002\n\u0000\"\u000e\u0010\u000e\u001a\u00020\u0001X\u0082T\u00a2\u0006\u0002\n\u0000\"\u000e\u0010\u000f\u001a\u00020\u0001X\u0082T\u00a2\u0006\u0002\n\u0000\"\u000e\u0010\u0010\u001a\u00020\u0001X\u0082T\u00a2\u0006\u0002\n\u0000\"\u000e\u0010\u0011\u001a\u00020\u0001X\u0082T\u00a2\u0006\u0002\n\u0000\"\u000e\u0010\u0012\u001a\u00020\u0001X\u0082T\u00a2\u0006\u0002\n\u0000\"\u000e\u0010\u0013\u001a\u00020\u0001X\u0082T\u00a2\u0006\u0002\n\u0000\u00a8\u0006R"
     }
     d2 = {
         "Aux_Mask",
@@ -21,6 +21,7 @@
         "GroupInfo_Offset",
         "Group_Fields_Size",
         "Key_Offset",
+        "LIVE_EDIT_INVALID_KEY",
         "Mark_Mask",
         "MinGroupGrowthSize",
         "MinSlotsGrowthSize",
@@ -46,12 +47,19 @@
         "dataAnchors",
         "",
         "len",
-        "getOrAdd",
-        "Landroidx/compose/runtime/Anchor;",
+        "fastIndexOf",
+        "T",
         "Ljava/util/ArrayList;",
         "Lkotlin/collections/ArrayList;",
+        "predicate",
+        "Lkotlin/Function1;",
+        "fastLastOrNull",
+        "(Ljava/util/ArrayList;Lkotlin/jvm/functions/Function1;)Ljava/lang/Object;",
+        "find",
+        "Landroidx/compose/runtime/Anchor;",
         "index",
         "effectiveSize",
+        "getOrAdd",
         "block",
         "Lkotlin/Function0;",
         "groupInfo",
@@ -113,6 +121,8 @@
 .field private static final Group_Fields_Size:I = 0x5
 
 .field private static final Key_Offset:I = 0x0
+
+.field private static final LIVE_EDIT_INVALID_KEY:I = -0x3
 
 .field private static final Mark_Mask:I = 0x8000000
 
@@ -207,6 +217,17 @@
 
     .line 1
     invoke-static {p0, p1}, Landroidx/compose/runtime/SlotTableKt;->dataAnchors([II)Ljava/util/List;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method public static final synthetic access$find(Ljava/util/ArrayList;II)Landroidx/compose/runtime/Anchor;
+    .locals 0
+
+    .line 1
+    invoke-static {p0, p1, p2}, Landroidx/compose/runtime/SlotTableKt;->find(Ljava/util/ArrayList;II)Landroidx/compose/runtime/Anchor;
 
     move-result-object p0
 
@@ -438,6 +459,15 @@
     return-void
 .end method
 
+.method public static final synthetic access$updateGroupKey([III)V
+    .locals 0
+
+    .line 1
+    invoke-static {p0, p1, p2}, Landroidx/compose/runtime/SlotTableKt;->updateGroupKey([III)V
+
+    return-void
+.end method
+
 .method public static final synthetic access$updateGroupSize([III)V
     .locals 0
 
@@ -481,7 +511,7 @@
 
     add-int/lit8 p1, p1, 0x1
 
-    .line 3202
+    .line 3467
     aget v0, p0, p1
 
     const/high16 v1, 0x10000000
@@ -498,7 +528,7 @@
 
     mul-int/lit8 p1, p1, 0x5
 
-    .line 3234
+    .line 3499
     array-length v0, p0
 
     if-lt p1, v0, :cond_0
@@ -510,12 +540,12 @@
     :cond_0
     add-int/lit8 v0, p1, 0x4
 
-    .line 3235
+    .line 3500
     aget v0, p0, v0
 
     add-int/lit8 p1, p1, 0x1
 
-    .line 3236
+    .line 3501
     aget p0, p0, p1
 
     shr-int/lit8 p0, p0, 0x1d
@@ -539,7 +569,7 @@
 
     add-int/2addr p1, v0
 
-    .line 3230
+    .line 3495
     aget p0, p0, p1
 
     const/high16 p1, 0xc000000
@@ -566,7 +596,7 @@
 
     add-int/2addr p1, v0
 
-    .line 3218
+    .line 3483
     aget p0, p0, p1
 
     const/high16 p1, 0x4000000
@@ -630,7 +660,7 @@
 
     add-int/lit8 p1, p1, 0x4
 
-    .line 3308
+    .line 3573
     aget p0, p0, p1
 
     return p0
@@ -649,7 +679,7 @@
 
     const/4 v0, 0x4
 
-    .line 3315
+    .line 3580
     invoke-static {v0, p1}, Lkotlin/ranges/RangesKt;->until(II)Lkotlin/ranges/IntRange;
 
     move-result-object p1
@@ -678,7 +708,7 @@
 
     if-eqz p2, :cond_0
 
-    .line 3314
+    .line 3579
     array-length p1, p0
 
     :cond_0
@@ -686,6 +716,155 @@
 
     move-result-object p0
 
+    return-object p0
+.end method
+
+.method private static final fastIndexOf(Ljava/util/ArrayList;Lkotlin/jvm/functions/Function1;)I
+    .locals 3
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "<T:",
+            "Ljava/lang/Object;",
+            ">(",
+            "Ljava/util/ArrayList<",
+            "TT;>;",
+            "Lkotlin/jvm/functions/Function1<",
+            "-TT;",
+            "Ljava/lang/Boolean;",
+            ">;)I"
+        }
+    .end annotation
+
+    .line 789
+    invoke-virtual {p0}, Ljava/util/ArrayList;->size()I
+
+    move-result v0
+
+    const/4 v1, 0x0
+
+    :goto_0
+    if-ge v1, v0, :cond_1
+
+    .line 791
+    invoke-virtual {p0, v1}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
+
+    move-result-object v2
+
+    .line 792
+    invoke-interface {p1, v2}, Lkotlin/jvm/functions/Function1;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object v2
+
+    check-cast v2, Ljava/lang/Boolean;
+
+    invoke-virtual {v2}, Ljava/lang/Boolean;->booleanValue()Z
+
+    move-result v2
+
+    if-eqz v2, :cond_0
+
+    return v1
+
+    :cond_0
+    add-int/lit8 v1, v1, 0x1
+
+    goto :goto_0
+
+    :cond_1
+    const/4 p0, -0x1
+
+    return p0
+.end method
+
+.method private static final fastLastOrNull(Ljava/util/ArrayList;Lkotlin/jvm/functions/Function1;)Ljava/lang/Object;
+    .locals 3
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "<T:",
+            "Ljava/lang/Object;",
+            ">(",
+            "Ljava/util/ArrayList<",
+            "TT;>;",
+            "Lkotlin/jvm/functions/Function1<",
+            "-TT;",
+            "Ljava/lang/Boolean;",
+            ">;)TT;"
+        }
+    .end annotation
+
+    .line 778
+    invoke-virtual {p0}, Ljava/util/ArrayList;->size()I
+
+    move-result v0
+
+    add-int/lit8 v0, v0, -0x1
+
+    :goto_0
+    if-ltz v0, :cond_1
+
+    .line 780
+    invoke-virtual {p0, v0}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
+
+    move-result-object v1
+
+    .line 781
+    invoke-interface {p1, v1}, Lkotlin/jvm/functions/Function1;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object v2
+
+    check-cast v2, Ljava/lang/Boolean;
+
+    invoke-virtual {v2}, Ljava/lang/Boolean;->booleanValue()Z
+
+    move-result v2
+
+    if-eqz v2, :cond_0
+
+    return-object v1
+
+    :cond_0
+    add-int/lit8 v0, v0, -0x1
+
+    goto :goto_0
+
+    :cond_1
+    const/4 p0, 0x0
+
+    return-object p0
+.end method
+
+.method private static final find(Ljava/util/ArrayList;II)Landroidx/compose/runtime/Anchor;
+    .locals 0
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Ljava/util/ArrayList<",
+            "Landroidx/compose/runtime/Anchor;",
+            ">;II)",
+            "Landroidx/compose/runtime/Anchor;"
+        }
+    .end annotation
+
+    .line 3625
+    invoke-static {p0, p1, p2}, Landroidx/compose/runtime/SlotTableKt;->search(Ljava/util/ArrayList;II)I
+
+    move-result p1
+
+    if-ltz p1, :cond_0
+
+    .line 3626
+    invoke-virtual {p0, p1}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
+
+    move-result-object p0
+
+    check-cast p0, Landroidx/compose/runtime/Anchor;
+
+    goto :goto_0
+
+    :cond_0
+    const/4 p0, 0x0
+
+    :goto_0
     return-object p0
 .end method
 
@@ -704,14 +883,14 @@
         }
     .end annotation
 
-    .line 3351
+    .line 3616
     invoke-static {p0, p1, p2}, Landroidx/compose/runtime/SlotTableKt;->access$search(Ljava/util/ArrayList;II)I
 
     move-result p1
 
     if-gez p1, :cond_0
 
-    .line 3353
+    .line 3618
     invoke-interface {p3}, Lkotlin/jvm/functions/Function0;->invoke()Ljava/lang/Object;
 
     move-result-object p2
@@ -722,20 +901,16 @@
 
     neg-int p1, p1
 
-    .line 3354
+    .line 3619
     invoke-virtual {p0, p1, p2}, Ljava/util/ArrayList;->add(ILjava/lang/Object;)V
 
     goto :goto_0
 
-    .line 3356
+    .line 3621
     :cond_0
     invoke-virtual {p0, p1}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
 
     move-result-object p0
-
-    const-string p1, "get(location)"
-
-    invoke-static {p0, p1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
 
     move-object p2, p0
 
@@ -752,7 +927,7 @@
 
     add-int/lit8 p1, p1, 0x1
 
-    .line 3183
+    .line 3448
     aget p0, p0, p1
 
     return p0
@@ -765,7 +940,7 @@
 
     add-int/lit8 p1, p1, 0x3
 
-    .line 3288
+    .line 3553
     aget p0, p0, p1
 
     return p0
@@ -784,7 +959,7 @@
 
     const/4 v0, 0x3
 
-    .line 3304
+    .line 3569
     invoke-static {v0, p1}, Lkotlin/ranges/RangesKt;->until(II)Lkotlin/ranges/IntRange;
 
     move-result-object p1
@@ -813,7 +988,7 @@
 
     if-eqz p2, :cond_0
 
-    .line 3303
+    .line 3568
     array-length p1, p0
 
     :cond_0
@@ -833,7 +1008,7 @@
 
     add-int/2addr p1, v0
 
-    .line 3198
+    .line 3463
     aget p0, p0, p1
 
     const/high16 p1, 0x10000000
@@ -860,7 +1035,7 @@
 
     add-int/2addr p1, v0
 
-    .line 3206
+    .line 3471
     aget p0, p0, p1
 
     const/high16 p1, 0x8000000
@@ -887,7 +1062,7 @@
 
     add-int/2addr p1, v0
 
-    .line 3190
+    .line 3455
     aget p0, p0, p1
 
     const/high16 p1, 0x20000000
@@ -942,7 +1117,7 @@
     :goto_2
     mul-int/lit8 p1, p1, 0x5
 
-    .line 3331
+    .line 3596
     aput p2, p0, p1
 
     add-int/lit8 p2, p1, 0x1
@@ -951,22 +1126,22 @@
 
     or-int/2addr p3, p5
 
-    .line 3332
+    .line 3597
     aput p3, p0, p2
 
     add-int/lit8 p2, p1, 0x2
 
-    .line 3333
+    .line 3598
     aput p6, p0, p2
 
     add-int/lit8 p2, p1, 0x3
 
-    .line 3334
+    .line 3599
     aput v0, p0, p2
 
     add-int/lit8 p1, p1, 0x4
 
-    .line 3335
+    .line 3600
     aput p7, p0, p1
 
     return-void
@@ -981,7 +1156,7 @@
 
     add-int/2addr p1, v0
 
-    .line 3186
+    .line 3451
     aget p0, p0, p1
 
     const/high16 p1, 0x40000000    # 2.0f
@@ -1004,7 +1179,7 @@
 
     mul-int/lit8 p1, p1, 0x5
 
-    .line 3257
+    .line 3522
     aget p0, p0, p1
 
     return p0
@@ -1023,7 +1198,7 @@
 
     const/4 v0, 0x0
 
-    .line 3259
+    .line 3524
     invoke-static {v0, p1}, Lkotlin/ranges/RangesKt;->until(II)Lkotlin/ranges/IntRange;
 
     move-result-object p1
@@ -1052,7 +1227,7 @@
 
     if-eqz p2, :cond_0
 
-    .line 3258
+    .line 3523
     array-length p1, p0
 
     :cond_0
@@ -1074,7 +1249,7 @@
         }
     .end annotation
 
-    .line 3385
+    .line 3655
     invoke-static {p0, p1, p2}, Landroidx/compose/runtime/SlotTableKt;->search(Ljava/util/ArrayList;II)I
 
     move-result p0
@@ -1099,7 +1274,7 @@
 
     add-int/lit8 p1, p1, 0x1
 
-    .line 3263
+    .line 3528
     aget p0, p0, p1
 
     const p1, 0x3ffffff
@@ -1122,7 +1297,7 @@
 
     const/4 v0, 0x1
 
-    .line 3273
+    .line 3538
     invoke-static {v0, p1}, Lkotlin/ranges/RangesKt;->until(II)Lkotlin/ranges/IntRange;
 
     move-result-object p1
@@ -1141,7 +1316,7 @@
 
     move-result-object p0
 
-    .line 3473
+    .line 3747
     new-instance p1, Ljava/util/ArrayList;
 
     invoke-interface {p0}, Ljava/util/List;->size()I
@@ -1150,7 +1325,7 @@
 
     invoke-direct {p1, v0}, Ljava/util/ArrayList;-><init>(I)V
 
-    .line 3476
+    .line 3750
     invoke-interface {p0}, Ljava/util/List;->size()I
 
     move-result v0
@@ -1160,12 +1335,12 @@
     :goto_0
     if-ge v1, v0, :cond_0
 
-    .line 3477
+    .line 3751
     invoke-interface {p0, v1}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
     move-result-object v2
 
-    .line 3479
+    .line 3753
     move-object v3, p1
 
     check-cast v3, Ljava/util/Collection;
@@ -1180,19 +1355,19 @@
 
     and-int/2addr v2, v4
 
-    .line 3274
+    .line 3539
     invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object v2
 
-    .line 3479
+    .line 3753
     invoke-interface {v3, v2}, Ljava/util/Collection;->add(Ljava/lang/Object;)Z
 
     add-int/lit8 v1, v1, 0x1
 
     goto :goto_0
 
-    .line 3482
+    .line 3756
     :cond_0
     check-cast p1, Ljava/util/List;
 
@@ -1206,7 +1381,7 @@
 
     if-eqz p2, :cond_0
 
-    .line 3272
+    .line 3537
     array-length p1, p0
 
     :cond_0
@@ -1224,7 +1399,7 @@
 
     add-int/lit8 p1, p1, 0x4
 
-    .line 3188
+    .line 3453
     aget p0, p0, p1
 
     return p0
@@ -1237,12 +1412,12 @@
 
     add-int/lit8 v0, p1, 0x4
 
-    .line 3193
+    .line 3458
     aget v0, p0, v0
 
     add-int/lit8 p1, p1, 0x1
 
-    .line 3194
+    .line 3459
     aget p0, p0, p1
 
     shr-int/lit8 p0, p0, 0x1e
@@ -1263,7 +1438,7 @@
 
     add-int/lit8 p1, p1, 0x2
 
-    .line 3278
+    .line 3543
     aget p0, p0, p1
 
     return p0
@@ -1282,7 +1457,7 @@
 
     const/4 v0, 0x2
 
-    .line 3285
+    .line 3550
     invoke-static {v0, p1}, Lkotlin/ranges/RangesKt;->until(II)Lkotlin/ranges/IntRange;
 
     move-result-object p1
@@ -1311,7 +1486,7 @@
 
     if-eqz p2, :cond_0
 
-    .line 3284
+    .line 3549
     array-length p1, p0
 
     :cond_0
@@ -1333,7 +1508,7 @@
         }
     .end annotation
 
-    .line 3364
+    .line 3634
     invoke-virtual {p0}, Ljava/util/ArrayList;->size()I
 
     move-result v0
@@ -1349,7 +1524,7 @@
 
     ushr-int/lit8 v2, v2, 0x1
 
-    .line 3368
+    .line 3638
     invoke-virtual {p0, v2}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
 
     move-result-object v3
@@ -1364,7 +1539,7 @@
 
     add-int/2addr v3, p2
 
-    .line 3369
+    .line 3639
     :cond_0
     invoke-static {v3, p1}, Lkotlin/jvm/internal/Intrinsics;->compare(II)I
 
@@ -1408,14 +1583,14 @@
         }
     .end annotation
 
-    .line 3295
+    .line 3560
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
     check-cast v0, Ljava/util/List;
 
-    .line 3296
+    .line 3561
     invoke-interface {p1}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
 
     move-result-object p1
@@ -1437,7 +1612,7 @@
 
     move-result v1
 
-    .line 3297
+    .line 3562
     aget v1, p0, v1
 
     invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
@@ -1459,12 +1634,12 @@
 
     add-int/lit8 v0, p1, 0x4
 
-    .line 3240
+    .line 3505
     aget v0, p0, v0
 
     add-int/lit8 p1, p1, 0x1
 
-    .line 3241
+    .line 3506
     aget p0, p0, p1
 
     shr-int/lit8 p0, p0, 0x1c
@@ -1487,7 +1662,7 @@
 
     if-eqz p2, :cond_0
 
-    .line 3223
+    .line 3488
     aget p2, p0, p1
 
     const/high16 v0, 0x4000000
@@ -1498,7 +1673,7 @@
 
     goto :goto_0
 
-    .line 3225
+    .line 3490
     :cond_0
     aget p2, p0, p1
 
@@ -1519,7 +1694,7 @@
 
     add-int/lit8 p1, p1, 0x4
 
-    .line 3311
+    .line 3576
     aput p2, p0, p1
 
     return-void
@@ -1530,7 +1705,7 @@
 
     mul-int/lit8 p1, p1, 0x5
 
-    .line 3343
+    .line 3608
     aput p2, p0, p1
 
     return-void
@@ -1548,7 +1723,7 @@
     :cond_0
     const/4 v0, 0x0
 
-    .line 3290
+    .line 3555
     :goto_0
     invoke-static {v0}, Landroidx/compose/runtime/ComposerKt;->runtimeCheck(Z)V
 
@@ -1556,7 +1731,7 @@
 
     add-int/lit8 p1, p1, 0x3
 
-    .line 3291
+    .line 3556
     aput p2, p0, p1
 
     return-void
@@ -1571,7 +1746,7 @@
 
     if-eqz p2, :cond_0
 
-    .line 3211
+    .line 3476
     aget p2, p0, p1
 
     const/high16 v0, 0x8000000
@@ -1582,7 +1757,7 @@
 
     goto :goto_0
 
-    .line 3213
+    .line 3478
     :cond_0
     aget p2, p0, p1
 
@@ -1614,7 +1789,7 @@
     :cond_0
     const/4 v1, 0x0
 
-    .line 3267
+    .line 3532
     :goto_0
     invoke-static {v1}, Landroidx/compose/runtime/ComposerKt;->runtimeCheck(Z)V
 
@@ -1622,7 +1797,7 @@
 
     add-int/2addr p1, v0
 
-    .line 3269
+    .line 3534
     aget v0, p0, p1
 
     const/high16 v1, -0x4000000
@@ -1643,7 +1818,7 @@
 
     add-int/lit8 p1, p1, 0x2
 
-    .line 3281
+    .line 3546
     aput p2, p0, p1
 
     return-void

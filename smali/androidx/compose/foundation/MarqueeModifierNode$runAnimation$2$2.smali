@@ -57,10 +57,10 @@
         0x0
     }
     l = {
-        0x16d,
-        0x16f,
-        0x171,
-        0x171
+        0x17c,
+        0x17e,
+        0x182,
+        0x182
     }
     m = "invokeSuspend"
     n = {
@@ -188,7 +188,7 @@
 
     move-result-object v2
 
-    .line 352
+    .line 367
     iget v0, v1, Landroidx/compose/foundation/MarqueeModifierNode$runAnimation$2$2;->label:I
 
     const/4 v3, 0x4
@@ -274,12 +274,12 @@
 
     if-nez v0, :cond_5
 
-    .line 354
+    .line 369
     sget-object v0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
 
     return-object v0
 
-    .line 357
+    .line 372
     :cond_5
     iget-object v9, v1, Landroidx/compose/foundation/MarqueeModifierNode$runAnimation$2$2;->this$0:Landroidx/compose/foundation/MarqueeModifierNode;
 
@@ -287,33 +287,33 @@
 
     move-result v10
 
-    .line 358
+    .line 373
     invoke-virtual {v0}, Ljava/lang/Float;->floatValue()F
 
     move-result v11
 
-    .line 359
+    .line 374
     iget-object v9, v1, Landroidx/compose/foundation/MarqueeModifierNode$runAnimation$2$2;->this$0:Landroidx/compose/foundation/MarqueeModifierNode;
 
     invoke-static {v9}, Landroidx/compose/foundation/MarqueeModifierNode;->access$getInitialDelayMillis$p(Landroidx/compose/foundation/MarqueeModifierNode;)I
 
     move-result v12
 
-    .line 360
+    .line 375
     iget-object v9, v1, Landroidx/compose/foundation/MarqueeModifierNode$runAnimation$2$2;->this$0:Landroidx/compose/foundation/MarqueeModifierNode;
 
     invoke-static {v9}, Landroidx/compose/foundation/MarqueeModifierNode;->access$getDelayMillis$p(Landroidx/compose/foundation/MarqueeModifierNode;)I
 
     move-result v13
 
-    .line 361
+    .line 376
     iget-object v9, v1, Landroidx/compose/foundation/MarqueeModifierNode$runAnimation$2$2;->this$0:Landroidx/compose/foundation/MarqueeModifierNode;
 
     invoke-static {v9}, Landroidx/compose/foundation/MarqueeModifierNode;->access$getVelocity$p(Landroidx/compose/foundation/MarqueeModifierNode;)F
 
     move-result v14
 
-    .line 362
+    .line 377
     iget-object v9, v1, Landroidx/compose/foundation/MarqueeModifierNode$runAnimation$2$2;->this$0:Landroidx/compose/foundation/MarqueeModifierNode;
 
     check-cast v9, Landroidx/compose/ui/node/DelegatableNode;
@@ -322,12 +322,12 @@
 
     move-result-object v15
 
-    .line 356
+    .line 371
     invoke-static/range {v10 .. v15}, Landroidx/compose/foundation/BasicMarqueeKt;->access$createMarqueeAnimationSpec-Z4HSEVQ(IFIIFLandroidx/compose/ui/unit/Density;)Landroidx/compose/animation/core/AnimationSpec;
 
     move-result-object v9
 
-    .line 365
+    .line 380
     iget-object v10, v1, Landroidx/compose/foundation/MarqueeModifierNode$runAnimation$2$2;->this$0:Landroidx/compose/foundation/MarqueeModifierNode;
 
     invoke-static {v10}, Landroidx/compose/foundation/MarqueeModifierNode;->access$getOffset$p(Landroidx/compose/foundation/MarqueeModifierNode;)Landroidx/compose/animation/core/Animatable;
@@ -361,7 +361,7 @@
 
     move-object v12, v9
 
-    .line 367
+    .line 382
     :goto_0
     :try_start_1
     iget-object v0, v1, Landroidx/compose/foundation/MarqueeModifierNode$runAnimation$2$2;->this$0:Landroidx/compose/foundation/MarqueeModifierNode;
@@ -398,7 +398,7 @@
 
     return-object v2
 
-    .line 369
+    .line 386
     :cond_7
     :goto_1
     iget-object v0, v1, Landroidx/compose/foundation/MarqueeModifierNode$runAnimation$2$2;->this$0:Landroidx/compose/foundation/MarqueeModifierNode;
@@ -425,14 +425,14 @@
 
     return-object v2
 
-    .line 371
+    .line 388
     :cond_8
     :goto_2
     sget-object v0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
 
     return-object v0
 
-    .line 369
+    .line 386
     :goto_3
     iget-object v4, v1, Landroidx/compose/foundation/MarqueeModifierNode$runAnimation$2$2;->this$0:Landroidx/compose/foundation/MarqueeModifierNode;
 
@@ -462,7 +462,7 @@
 
     return-object v2
 
-    .line 371
+    .line 388
     :cond_9
     :goto_4
     throw v0

@@ -21,7 +21,7 @@
 .method constructor <init>()V
     .locals 0
 
-    .line 3266
+    .line 3363
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -42,15 +42,15 @@
         }
     .end annotation
 
-    .line 3270
+    .line 3367
     check-cast p1, Ljp/co/sony/mc/camera/setting/CameraSettings;
 
-    .line 3271
-    invoke-static {p1}, Ljp/co/sony/mc/camera/setting/CameraSettings;->-$$Nest$mgetBurstFeedback(Ljp/co/sony/mc/camera/setting/CameraSettings;)Ljp/co/sony/mc/camera/configuration/parameters/BurstFeedback;
+    .line 3368
+    invoke-static {p1}, Ljp/co/sony/mc/camera/setting/CameraSettings;->-$$Nest$mgetFocusMagnificationPosition(Ljp/co/sony/mc/camera/setting/CameraSettings;)Landroid/graphics/Point;
 
     move-result-object p0
 
-    invoke-static {p1}, Ljp/co/sony/mc/camera/setting/CameraSettings;->-$$Nest$fgetmBurstFeedback(Ljp/co/sony/mc/camera/setting/CameraSettings;)Ljp/co/sony/mc/camera/configuration/parameters/BurstFeedback;
+    invoke-static {p1}, Ljp/co/sony/mc/camera/setting/CameraSettings;->-$$Nest$fgetmFocusMagnificationPosition(Ljp/co/sony/mc/camera/setting/CameraSettings;)Landroid/graphics/Point;
 
     move-result-object p1
 

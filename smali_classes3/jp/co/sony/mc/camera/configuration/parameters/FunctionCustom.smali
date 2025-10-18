@@ -643,7 +643,7 @@
 .method private static getCustomSettingKey(Ljp/co/sony/mc/camera/configuration/parameters/FunctionCustom;)Ljp/co/sony/mc/camera/setting/SettingKey$Key;
     .locals 1
 
-    .line 297
+    .line 301
     sget-object v0, Ljp/co/sony/mc/camera/configuration/parameters/FunctionCustom$1;->$SwitchMap$jp$co$sony$mc$camera$configuration$parameters$FunctionCustom:[I
 
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/configuration/parameters/FunctionCustom;->ordinal()I
@@ -658,169 +658,169 @@
 
     goto/16 :goto_0
 
-    .line 380
+    .line 384
     :pswitch_0
     sget-object p0, Ljp/co/sony/mc/camera/setting/CameraSettings;->PRODUCT_SHOWCASE:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
 
     goto/16 :goto_0
 
-    .line 377
+    .line 381
     :pswitch_1
     sget-object p0, Ljp/co/sony/mc/camera/setting/CameraSettings;->PHOTO_LIGHT:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
 
     goto/16 :goto_0
 
-    .line 374
+    .line 378
     :pswitch_2
     sget-object p0, Ljp/co/sony/mc/camera/setting/CameraSettings;->VIDEO_MF_HDR:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
 
     goto :goto_0
 
-    .line 371
+    .line 375
     :pswitch_3
     sget-object p0, Ljp/co/sony/mc/camera/setting/CameraSettings;->VIDEO_HDR:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
 
     goto :goto_0
 
-    .line 368
+    .line 372
     :pswitch_4
     sget-object p0, Ljp/co/sony/mc/camera/setting/CameraSettings;->MIC:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
 
     goto :goto_0
 
-    .line 365
+    .line 369
     :pswitch_5
     sget-object p0, Ljp/co/sony/mc/camera/setting/CameraSettings;->VIDEO_STABILIZER:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
 
     goto :goto_0
 
-    .line 362
+    .line 366
     :pswitch_6
     sget-object p0, Ljp/co/sony/mc/camera/setting/CameraSettings;->VIDEO_FPS:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
 
     goto :goto_0
 
-    .line 359
+    .line 363
     :pswitch_7
     sget-object p0, Ljp/co/sony/mc/camera/setting/CameraSettings;->VIDEO_SIZE:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
 
     goto :goto_0
 
-    .line 356
+    .line 360
     :pswitch_8
     sget-object p0, Ljp/co/sony/mc/camera/setting/CameraSettings;->COMPUTATIONAL_MODE:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
 
     goto :goto_0
 
-    .line 353
+    .line 357
     :pswitch_9
     sget-object p0, Ljp/co/sony/mc/camera/setting/CameraSettings;->COLOR_TONE_PROFILE:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
 
     goto :goto_0
 
-    .line 350
+    .line 354
     :pswitch_a
     sget-object p0, Ljp/co/sony/mc/camera/setting/CameraSettings;->PEAKING:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
 
     goto :goto_0
 
-    .line 326
+    .line 330
     :pswitch_b
     sget-object p0, Ljp/co/sony/mc/camera/setting/CameraSettings;->ISO:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
 
     goto :goto_0
 
-    .line 323
+    .line 327
     :pswitch_c
     sget-object p0, Ljp/co/sony/mc/camera/setting/CameraSettings;->EV:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
 
     goto :goto_0
 
-    .line 347
+    .line 351
     :pswitch_d
     sget-object p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->SHUTTER_SOUND:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
 
     goto :goto_0
 
-    .line 344
+    .line 348
     :pswitch_e
     sget-object p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->GRID_LINE:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
 
     goto :goto_0
 
-    .line 341
+    .line 345
     :pswitch_f
     sget-object p0, Ljp/co/sony/mc/camera/setting/CameraSettings;->TOUCH_INTENTION:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
 
     goto :goto_0
 
-    .line 338
+    .line 342
     :pswitch_10
     sget-object p0, Ljp/co/sony/mc/camera/setting/CameraSettings;->FACE_DETECTION:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
 
     goto :goto_0
 
-    .line 335
+    .line 339
     :pswitch_11
     sget-object p0, Ljp/co/sony/mc/camera/setting/CameraSettings;->FOCUS_FRAME_COLOR:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
 
     goto :goto_0
 
-    .line 332
+    .line 336
     :pswitch_12
     sget-object p0, Ljp/co/sony/mc/camera/setting/CameraSettings;->FOCUS_AREA:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
 
     goto :goto_0
 
-    .line 329
+    .line 333
     :pswitch_13
     sget-object p0, Ljp/co/sony/mc/camera/setting/CameraSettings;->FOCUS_MODE:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
 
     goto :goto_0
 
-    .line 320
+    .line 324
     :pswitch_14
     sget-object p0, Ljp/co/sony/mc/camera/setting/CameraSettings;->WHITE_BALANCE:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
 
     goto :goto_0
 
-    .line 317
+    .line 321
     :pswitch_15
     sget-object p0, Ljp/co/sony/mc/camera/setting/CameraSettings;->BACK_SOFT_SKIN:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
 
     goto :goto_0
 
-    .line 314
+    .line 318
     :pswitch_16
     sget-object p0, Ljp/co/sony/mc/camera/setting/CameraSettings;->HDR:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
 
     goto :goto_0
 
-    .line 311
+    .line 315
     :pswitch_17
     sget-object p0, Ljp/co/sony/mc/camera/setting/CameraSettings;->FLASH:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
 
     goto :goto_0
 
-    .line 308
+    .line 312
     :pswitch_18
     sget-object p0, Ljp/co/sony/mc/camera/setting/CameraSettings;->METERING:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
 
     goto :goto_0
 
-    .line 305
+    .line 309
     :pswitch_19
     sget-object p0, Ljp/co/sony/mc/camera/setting/CameraSettings;->DRIVE_MODE:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
 
     goto :goto_0
 
-    .line 302
+    .line 306
     :pswitch_1a
     sget-object p0, Ljp/co/sony/mc/camera/setting/CameraSettings;->ASPECT_RATIO:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
 
     goto :goto_0
 
-    .line 299
+    .line 303
     :pswitch_1b
     sget-object p0, Ljp/co/sony/mc/camera/setting/CameraSettings;->PHOTO_FORMAT:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
 
@@ -863,7 +863,7 @@
 .method public static getDefaultValue()Ljp/co/sony/mc/camera/configuration/parameters/FunctionCustom;
     .locals 1
 
-    .line 389
+    .line 393
     sget-object v0, Ljp/co/sony/mc/camera/configuration/parameters/FunctionCustom;->NO_ASSIGN:Ljp/co/sony/mc/camera/configuration/parameters/FunctionCustom;
 
     return-object v0
@@ -872,7 +872,7 @@
 .method public static getOptions()[Ljp/co/sony/mc/camera/configuration/parameters/FunctionCustom;
     .locals 1
 
-    .line 279
+    .line 283
     invoke-static {}, Ljp/co/sony/mc/camera/configuration/parameters/FunctionCustom;->values()[Ljp/co/sony/mc/camera/configuration/parameters/FunctionCustom;
 
     move-result-object v0
@@ -915,7 +915,7 @@
 .method public getCustomSettingKey()Ljp/co/sony/mc/camera/setting/SettingKey$Key;
     .locals 0
 
-    .line 288
+    .line 292
     invoke-static {p0}, Ljp/co/sony/mc/camera/configuration/parameters/FunctionCustom;->getCustomSettingKey(Ljp/co/sony/mc/camera/configuration/parameters/FunctionCustom;)Ljp/co/sony/mc/camera/setting/SettingKey$Key;
 
     move-result-object p0
@@ -926,14 +926,14 @@
 .method public getFnType()Ljp/co/sony/mc/camera/view/widget/FnButtonBase$Type;
     .locals 0
 
-    .line 292
+    .line 296
     iget-object p0, p0, Ljp/co/sony/mc/camera/configuration/parameters/FunctionCustom;->mFnType:Ljp/co/sony/mc/camera/view/widget/FnButtonBase$Type;
 
     return-object p0
 .end method
 
 .method public getIconId()I
-    .locals 5
+    .locals 7
 
     .line 179
     invoke-static {}, Ljp/co/sony/mc/camera/setting/CameraProSetting;->getInstance()Ljp/co/sony/mc/camera/setting/CameraProSetting;
@@ -1007,22 +1007,32 @@
     move-result-object v2
 
     .line 190
-    sget-object v3, Ljp/co/sony/mc/camera/configuration/parameters/FunctionCustom$1;->$SwitchMap$jp$co$sony$mc$camera$configuration$parameters$FunctionCustom:[I
+    invoke-static {v1, v0}, Ljp/co/sony/mc/camera/configuration/parameters/AutoFramingMode;->getDefaultValue(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;)Ljp/co/sony/mc/camera/configuration/parameters/AutoFramingMode;
+
+    move-result-object v3
+
+    .line 192
+    invoke-static {v1}, Ljp/co/sony/mc/camera/configuration/parameters/AutoFramingRecordingMode;->getDefaultValue(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;)Ljp/co/sony/mc/camera/configuration/parameters/AutoFramingRecordingMode;
+
+    move-result-object v4
+
+    .line 193
+    sget-object v5, Ljp/co/sony/mc/camera/configuration/parameters/FunctionCustom$1;->$SwitchMap$jp$co$sony$mc$camera$configuration$parameters$FunctionCustom:[I
 
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/configuration/parameters/FunctionCustom;->ordinal()I
 
-    move-result v4
+    move-result v6
 
-    aget v3, v3, v4
+    aget v5, v5, v6
 
-    packed-switch v3, :pswitch_data_0
+    packed-switch v5, :pswitch_data_0
 
-    .line 249
+    .line 253
     iget p0, p0, Ljp/co/sony/mc/camera/configuration/parameters/FunctionCustom;->mIconId:I
 
     return p0
 
-    .line 247
+    .line 251
     :pswitch_0
     invoke-static {}, Ljp/co/sony/mc/camera/configuration/parameters/ProductShowcase;->getDefaultValue()Ljp/co/sony/mc/camera/configuration/parameters/ProductShowcase;
 
@@ -1034,7 +1044,7 @@
 
     return p0
 
-    .line 245
+    .line 249
     :pswitch_1
     sget-object p0, Ljp/co/sony/mc/camera/configuration/parameters/PhotoLight;->OFF:Ljp/co/sony/mc/camera/configuration/parameters/PhotoLight;
 
@@ -1044,7 +1054,7 @@
 
     return p0
 
-    .line 243
+    .line 247
     :pswitch_2
     invoke-static {}, Ljp/co/sony/mc/camera/configuration/parameters/VideoMfHdr;->getDefault()Ljp/co/sony/mc/camera/configuration/parameters/VideoMfHdr;
 
@@ -1056,7 +1066,7 @@
 
     return p0
 
-    .line 241
+    .line 245
     :pswitch_3
     invoke-static {}, Ljp/co/sony/mc/camera/configuration/parameters/VideoHdr;->getDefault()Ljp/co/sony/mc/camera/configuration/parameters/VideoHdr;
 
@@ -1068,7 +1078,7 @@
 
     return p0
 
-    .line 239
+    .line 243
     :pswitch_4
     invoke-static {v0}, Ljp/co/sony/mc/camera/configuration/parameters/Mic;->getDefaultValue(Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;)Ljp/co/sony/mc/camera/configuration/parameters/Mic;
 
@@ -1080,7 +1090,7 @@
 
     return p0
 
-    .line 237
+    .line 241
     :pswitch_5
     invoke-static {}, Ljp/co/sony/mc/camera/configuration/parameters/VideoStabilizer;->getRecommendedValue()Ljp/co/sony/mc/camera/configuration/parameters/VideoStabilizer;
 
@@ -1092,19 +1102,20 @@
 
     return p0
 
-    .line 235
+    .line 238
     :pswitch_6
-    invoke-static {v1, v0, v2}, Ljp/co/sony/mc/camera/configuration/parameters/VideoFps;->getDefaultValue(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;Ljp/co/sony/mc/camera/configuration/parameters/VideoSize;)Ljp/co/sony/mc/camera/configuration/parameters/VideoFps;
+    invoke-static {v1, v0, v2, v3, v4}, Ljp/co/sony/mc/camera/configuration/parameters/VideoFps;->getDefaultValue(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;Ljp/co/sony/mc/camera/configuration/parameters/VideoSize;Ljp/co/sony/mc/camera/configuration/parameters/AutoFramingMode;Ljp/co/sony/mc/camera/configuration/parameters/AutoFramingRecordingMode;)Ljp/co/sony/mc/camera/configuration/parameters/VideoFps;
 
     move-result-object p0
 
+    .line 239
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/configuration/parameters/VideoFps;->getIconId()I
 
     move-result p0
 
     return p0
 
-    .line 233
+    .line 236
     :pswitch_7
     invoke-virtual {v2}, Ljp/co/sony/mc/camera/configuration/parameters/VideoSize;->getIconId()I
 
@@ -1112,7 +1123,7 @@
 
     return p0
 
-    .line 231
+    .line 234
     :pswitch_8
     invoke-static {v1}, Ljp/co/sony/mc/camera/configuration/parameters/ComputationalMode;->getDefaultValue(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;)Ljp/co/sony/mc/camera/configuration/parameters/ComputationalMode;
 
@@ -1124,7 +1135,7 @@
 
     return p0
 
-    .line 229
+    .line 232
     :pswitch_9
     invoke-static {}, Ljp/co/sony/mc/camera/configuration/parameters/ColorToneProfile;->getDefaultValue()Ljp/co/sony/mc/camera/configuration/parameters/ColorToneProfile;
 
@@ -1136,7 +1147,7 @@
 
     return p0
 
-    .line 227
+    .line 230
     :pswitch_a
     invoke-static {}, Ljp/co/sony/mc/camera/configuration/parameters/Peaking;->getDefaultValue()Ljp/co/sony/mc/camera/configuration/parameters/Peaking;
 
@@ -1149,16 +1160,16 @@
     return p0
 
     :pswitch_b
-    const p0, 0x7f080227
+    const p0, 0x7f080235
 
     return p0
 
     :pswitch_c
-    const p0, 0x7f080163
+    const p0, 0x7f080168
 
     return p0
 
-    .line 221
+    .line 224
     :pswitch_d
     invoke-static {}, Ljp/co/sony/mc/camera/configuration/parameters/ShutterSound;->getDefaultValue()Ljp/co/sony/mc/camera/configuration/parameters/ShutterSound;
 
@@ -1170,7 +1181,7 @@
 
     return p0
 
-    .line 219
+    .line 222
     :pswitch_e
     invoke-static {}, Ljp/co/sony/mc/camera/configuration/parameters/GridLine;->getDefaultValue()Ljp/co/sony/mc/camera/configuration/parameters/GridLine;
 
@@ -1182,7 +1193,7 @@
 
     return p0
 
-    .line 217
+    .line 220
     :pswitch_f
     invoke-static {v1, v0}, Ljp/co/sony/mc/camera/configuration/parameters/TouchIntention;->getDefaultValue(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;)Ljp/co/sony/mc/camera/configuration/parameters/TouchIntention;
 
@@ -1194,7 +1205,7 @@
 
     return p0
 
-    .line 215
+    .line 218
     :pswitch_10
     invoke-static {v1, v0}, Ljp/co/sony/mc/camera/configuration/parameters/FaceDetection;->getDefaultValue(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;)Ljp/co/sony/mc/camera/configuration/parameters/FaceDetection;
 
@@ -1206,7 +1217,7 @@
 
     return p0
 
-    .line 213
+    .line 216
     :pswitch_11
     invoke-static {}, Ljp/co/sony/mc/camera/configuration/parameters/FocusFrameColor;->getDefaultValue()Ljp/co/sony/mc/camera/configuration/parameters/FocusFrameColor;
 
@@ -1218,7 +1229,7 @@
 
     return p0
 
-    .line 211
+    .line 214
     :pswitch_12
     invoke-static {v0}, Ljp/co/sony/mc/camera/configuration/parameters/FocusArea;->getDefaultValue(Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;)Ljp/co/sony/mc/camera/configuration/parameters/FocusArea;
 
@@ -1230,7 +1241,7 @@
 
     return p0
 
-    .line 209
+    .line 212
     :pswitch_13
     invoke-static {v1, v0}, Ljp/co/sony/mc/camera/configuration/parameters/FocusMode;->getDefaultValue(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;)Ljp/co/sony/mc/camera/configuration/parameters/FocusMode;
 
@@ -1242,7 +1253,7 @@
 
     return p0
 
-    .line 207
+    .line 210
     :pswitch_14
     invoke-static {}, Ljp/co/sony/mc/camera/configuration/parameters/WhiteBalance;->getDefaultValue()Ljp/co/sony/mc/camera/configuration/parameters/WhiteBalance;
 
@@ -1254,7 +1265,7 @@
 
     return p0
 
-    .line 204
+    .line 207
     :pswitch_15
     invoke-static {}, Ljp/co/sony/mc/camera/CameraApplication;->getContext()Landroid/content/Context;
 
@@ -1264,14 +1275,14 @@
 
     move-result-object p0
 
-    .line 205
+    .line 208
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/configuration/parameters/BackSoftSkin;->getIconId()I
 
     move-result p0
 
     return p0
 
-    .line 202
+    .line 205
     :pswitch_16
     invoke-static {v1, v0}, Ljp/co/sony/mc/camera/configuration/parameters/Hdr;->getDefaultValue(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;)Ljp/co/sony/mc/camera/configuration/parameters/Hdr;
 
@@ -1283,7 +1294,7 @@
 
     return p0
 
-    .line 200
+    .line 203
     :pswitch_17
     invoke-static {}, Ljp/co/sony/mc/camera/configuration/parameters/Flash;->getDefaultValue()Ljp/co/sony/mc/camera/configuration/parameters/Flash;
 
@@ -1295,7 +1306,7 @@
 
     return p0
 
-    .line 198
+    .line 201
     :pswitch_18
     invoke-static {}, Ljp/co/sony/mc/camera/configuration/parameters/Metering;->getDefaultValue()Ljp/co/sony/mc/camera/configuration/parameters/Metering;
 
@@ -1307,7 +1318,7 @@
 
     return p0
 
-    .line 196
+    .line 199
     :pswitch_19
     invoke-static {}, Ljp/co/sony/mc/camera/configuration/parameters/DriveMode;->getDefaultValue()Ljp/co/sony/mc/camera/configuration/parameters/DriveMode;
 
@@ -1319,7 +1330,7 @@
 
     return p0
 
-    .line 194
+    .line 197
     :pswitch_1a
     invoke-static {v1, v0}, Ljp/co/sony/mc/camera/configuration/parameters/AspectRatio;->getDefaultValue(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;)Ljp/co/sony/mc/camera/configuration/parameters/AspectRatio;
 
@@ -1331,7 +1342,7 @@
 
     return p0
 
-    .line 192
+    .line 195
     :pswitch_1b
     invoke-static {}, Ljp/co/sony/mc/camera/configuration/parameters/PhotoFormat;->getDefaultValue()Ljp/co/sony/mc/camera/configuration/parameters/PhotoFormat;
 
@@ -1401,7 +1412,7 @@
 .method public getSettingValueTextId()I
     .locals 1
 
-    .line 263
+    .line 267
     sget-object v0, Ljp/co/sony/mc/camera/configuration/parameters/FunctionCustom$1;->$SwitchMap$jp$co$sony$mc$camera$configuration$parameters$FunctionCustom:[I
 
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/configuration/parameters/FunctionCustom;->ordinal()I
@@ -1422,7 +1433,7 @@
 
     return p0
 
-    .line 267
+    .line 271
     :cond_0
     invoke-static {}, Ljp/co/sony/mc/camera/configuration/parameters/Iso;->getDefaultValue()Ljp/co/sony/mc/camera/configuration/parameters/Iso;
 
@@ -1434,7 +1445,7 @@
 
     return p0
 
-    .line 265
+    .line 269
     :cond_1
     invoke-static {}, Ljp/co/sony/mc/camera/configuration/parameters/Ev;->getDefaultValue()Ljp/co/sony/mc/camera/configuration/parameters/Ev;
 
@@ -1450,16 +1461,16 @@
 .method public getTextId()I
     .locals 1
 
-    .line 255
+    .line 259
     sget-object v0, Ljp/co/sony/mc/camera/configuration/parameters/FunctionCustom;->NO_ASSIGN:Ljp/co/sony/mc/camera/configuration/parameters/FunctionCustom;
 
     if-ne p0, v0, :cond_0
 
-    const p0, 0x7f110180
+    const p0, 0x7f110183
 
     return p0
 
-    .line 258
+    .line 262
     :cond_0
     invoke-static {p0}, Ljp/co/sony/mc/camera/configuration/parameters/FunctionCustom;->getCustomSettingKey(Ljp/co/sony/mc/camera/configuration/parameters/FunctionCustom;)Ljp/co/sony/mc/camera/setting/SettingKey$Key;
 
@@ -1475,7 +1486,7 @@
 .method public getValue()Ljava/lang/String;
     .locals 0
 
-    .line 275
+    .line 279
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/configuration/parameters/FunctionCustom;->toString()Ljava/lang/String;
 
     move-result-object p0

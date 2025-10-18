@@ -78,17 +78,17 @@
 
 .field public static final accessibility_custom_action_9:I = 0x7f090032
 
-.field public static final androidx_compose_ui_view_composition_context:I = 0x7f09005f
+.field public static final androidx_compose_ui_view_composition_context:I = 0x7f09005b
 
 .field public static final compose_view_saveable_id_tag:I = 0x7f090122
 
 .field public static final consume_window_insets_tag:I = 0x7f090130
 
-.field public static final hide_in_inspector_tag:I = 0x7f090229
+.field public static final hide_in_inspector_tag:I = 0x7f090226
 
-.field public static final inspection_slot_table_set:I = 0x7f09025f
+.field public static final inspection_slot_table_set:I = 0x7f09025c
 
-.field public static final wrapped_composition_tag:I = 0x7f09052f
+.field public static final wrapped_composition_tag:I = 0x7f090516
 
 
 # direct methods

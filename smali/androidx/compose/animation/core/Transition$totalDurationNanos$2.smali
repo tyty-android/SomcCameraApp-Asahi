@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Landroidx/compose/animation/core/Transition;-><init>(Landroidx/compose/animation/core/MutableTransitionState;Ljava/lang/String;)V
+    value = Landroidx/compose/animation/core/Transition;-><init>(Landroidx/compose/animation/core/TransitionState;Ljava/lang/String;)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -26,7 +26,7 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/SourceDebugExtension;
-    value = "SMAP\nTransition.kt\nKotlin\n*S Kotlin\n*F\n+ 1 Transition.kt\nandroidx/compose/animation/core/Transition$totalDurationNanos$2\n+ 2 _Collections.kt\nkotlin/collections/CollectionsKt___CollectionsKt\n*L\n1#1,1156:1\n1855#2,2:1157\n1855#2,2:1159\n*S KotlinDebug\n*F\n+ 1 Transition.kt\nandroidx/compose/animation/core/Transition$totalDurationNanos$2\n*L\n273#1:1157,2\n276#1:1159,2\n*E\n"
+    value = "SMAP\nTransition.kt\nKotlin\n*S Kotlin\n*F\n+ 1 Transition.kt\nandroidx/compose/animation/core/Transition$totalDurationNanos$2\n+ 2 ListUtils.kt\nandroidx/compose/ui/util/ListUtilsKt\n*L\n1#1,1382:1\n33#2,6:1383\n33#2,6:1389\n*S KotlinDebug\n*F\n+ 1 Transition.kt\nandroidx/compose/animation/core/Transition$totalDurationNanos$2\n*L\n469#1:1383,6\n472#1:1389,6\n*E\n"
 .end annotation
 
 .annotation runtime Lkotlin/Metadata;
@@ -84,49 +84,53 @@
 
 # virtual methods
 .method public final invoke()Ljava/lang/Long;
-    .locals 5
+    .locals 8
 
-    .line 273
+    .line 469
     iget-object v0, p0, Landroidx/compose/animation/core/Transition$totalDurationNanos$2;->this$0:Landroidx/compose/animation/core/Transition;
 
     invoke-static {v0}, Landroidx/compose/animation/core/Transition;->access$get_animations$p(Landroidx/compose/animation/core/Transition;)Landroidx/compose/runtime/snapshots/SnapshotStateList;
 
     move-result-object v0
 
-    check-cast v0, Ljava/lang/Iterable;
+    check-cast v0, Ljava/util/List;
 
-    .line 1157
-    invoke-interface {v0}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
+    .line 1384
+    invoke-interface {v0}, Ljava/util/List;->size()I
 
-    move-result-object v0
+    move-result v1
 
-    const-wide/16 v1, 0x0
+    const-wide/16 v2, 0x0
+
+    const/4 v4, 0x0
+
+    move v5, v4
 
     :goto_0
-    invoke-interface {v0}, Ljava/util/Iterator;->hasNext()Z
+    if-ge v5, v1, :cond_0
 
-    move-result v3
+    .line 1385
+    invoke-interface {v0, v5}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
-    if-eqz v3, :cond_0
+    move-result-object v6
 
-    invoke-interface {v0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+    .line 1386
+    check-cast v6, Landroidx/compose/animation/core/Transition$TransitionAnimationState;
 
-    move-result-object v3
+    .line 470
+    invoke-virtual {v6}, Landroidx/compose/animation/core/Transition$TransitionAnimationState;->getDurationNanos$animation_core_release()J
 
-    check-cast v3, Landroidx/compose/animation/core/Transition$TransitionAnimationState;
+    move-result-wide v6
 
-    .line 274
-    invoke-virtual {v3}, Landroidx/compose/animation/core/Transition$TransitionAnimationState;->getDurationNanos$animation_core_release()J
+    invoke-static {v2, v3, v6, v7}, Ljava/lang/Math;->max(JJ)J
 
-    move-result-wide v3
+    move-result-wide v2
 
-    invoke-static {v1, v2, v3, v4}, Ljava/lang/Math;->max(JJ)J
-
-    move-result-wide v1
+    add-int/lit8 v5, v5, 0x1
 
     goto :goto_0
 
-    .line 276
+    .line 472
     :cond_0
     iget-object p0, p0, Landroidx/compose/animation/core/Transition$totalDurationNanos$2;->this$0:Landroidx/compose/animation/core/Transition;
 
@@ -134,40 +138,40 @@
 
     move-result-object p0
 
-    check-cast p0, Ljava/lang/Iterable;
+    check-cast p0, Ljava/util/List;
 
-    .line 1159
-    invoke-interface {p0}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
-
-    move-result-object p0
-
-    :goto_1
-    invoke-interface {p0}, Ljava/util/Iterator;->hasNext()Z
+    .line 1390
+    invoke-interface {p0}, Ljava/util/List;->size()I
 
     move-result v0
 
-    if-eqz v0, :cond_1
+    :goto_1
+    if-ge v4, v0, :cond_1
 
-    invoke-interface {p0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+    .line 1391
+    invoke-interface {p0, v4}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
-    move-result-object v0
+    move-result-object v1
 
-    check-cast v0, Landroidx/compose/animation/core/Transition;
+    .line 1392
+    check-cast v1, Landroidx/compose/animation/core/Transition;
 
-    .line 279
-    invoke-virtual {v0}, Landroidx/compose/animation/core/Transition;->getTotalDurationNanos()J
+    .line 475
+    invoke-virtual {v1}, Landroidx/compose/animation/core/Transition;->getTotalDurationNanos()J
 
-    move-result-wide v3
+    move-result-wide v5
 
-    invoke-static {v1, v2, v3, v4}, Ljava/lang/Math;->max(JJ)J
+    invoke-static {v2, v3, v5, v6}, Ljava/lang/Math;->max(JJ)J
 
-    move-result-wide v1
+    move-result-wide v2
+
+    add-int/lit8 v4, v4, 0x1
 
     goto :goto_1
 
-    .line 282
+    .line 478
     :cond_1
-    invoke-static {v1, v2}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
+    invoke-static {v2, v3}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
 
     move-result-object p0
 
@@ -177,7 +181,7 @@
 .method public bridge synthetic invoke()Ljava/lang/Object;
     .locals 0
 
-    .line 271
+    .line 467
     invoke-virtual {p0}, Landroidx/compose/animation/core/Transition$totalDurationNanos$2;->invoke()Ljava/lang/Long;
 
     move-result-object p0

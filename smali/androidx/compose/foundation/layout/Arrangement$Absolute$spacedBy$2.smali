@@ -70,11 +70,7 @@
 
 # virtual methods
 .method public final invoke(ILandroidx/compose/ui/unit/LayoutDirection;)Ljava/lang/Integer;
-    .locals 1
-
-    const-string v0, "<anonymous parameter 1>"
-
-    invoke-static {p2, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+    .locals 0
 
     .line 543
     iget-object p0, p0, Landroidx/compose/foundation/layout/Arrangement$Absolute$spacedBy$2;->$alignment:Landroidx/compose/ui/Alignment$Vertical;

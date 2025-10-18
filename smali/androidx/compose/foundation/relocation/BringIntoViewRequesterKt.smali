@@ -29,7 +29,7 @@
 .method public static final BringIntoViewRequester()Landroidx/compose/foundation/relocation/BringIntoViewRequester;
     .locals 1
 
-    .line 79
+    .line 85
     new-instance v0, Landroidx/compose/foundation/relocation/BringIntoViewRequesterImpl;
 
     invoke-direct {v0}, Landroidx/compose/foundation/relocation/BringIntoViewRequesterImpl;-><init>()V
@@ -42,15 +42,7 @@
 .method public static final bringIntoViewRequester(Landroidx/compose/ui/Modifier;Landroidx/compose/foundation/relocation/BringIntoViewRequester;)Landroidx/compose/ui/Modifier;
     .locals 1
 
-    const-string v0, "<this>"
-
-    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string v0, "bringIntoViewRequester"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 102
+    .line 111
     new-instance v0, Landroidx/compose/foundation/relocation/BringIntoViewRequesterElement;
 
     invoke-direct {v0, p1}, Landroidx/compose/foundation/relocation/BringIntoViewRequesterElement;-><init>(Landroidx/compose/foundation/relocation/BringIntoViewRequester;)V

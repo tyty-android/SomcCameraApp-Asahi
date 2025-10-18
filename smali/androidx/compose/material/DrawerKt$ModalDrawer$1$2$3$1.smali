@@ -75,7 +75,7 @@
 .method public final invoke()Ljava/lang/Float;
     .locals 2
 
-    .line 563
+    .line 560
     iget v0, p0, Landroidx/compose/material/DrawerKt$ModalDrawer$1$2$3$1;->$minValue:F
 
     iget v1, p0, Landroidx/compose/material/DrawerKt$ModalDrawer$1$2$3$1;->$maxValue:F
@@ -100,7 +100,7 @@
 .method public bridge synthetic invoke()Ljava/lang/Object;
     .locals 0
 
-    .line 562
+    .line 559
     invoke-virtual {p0}, Landroidx/compose/material/DrawerKt$ModalDrawer$1$2$3$1;->invoke()Ljava/lang/Float;
 
     move-result-object p0

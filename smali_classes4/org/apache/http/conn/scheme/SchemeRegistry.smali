@@ -40,7 +40,7 @@
 
 
 # virtual methods
-.method public final get(Ljava/lang/String;)Lorg/apache/http/conn/scheme/Scheme;
+.method public get(Ljava/lang/String;)Lorg/apache/http/conn/scheme/Scheme;
     .locals 1
 
     .line 106
@@ -60,7 +60,7 @@
     return-object p0
 .end method
 
-.method public final getScheme(Ljava/lang/String;)Lorg/apache/http/conn/scheme/Scheme;
+.method public getScheme(Ljava/lang/String;)Lorg/apache/http/conn/scheme/Scheme;
     .locals 2
 
     .line 73
@@ -101,7 +101,7 @@
     throw p0
 .end method
 
-.method public final getScheme(Lorg/apache/http/HttpHost;)Lorg/apache/http/conn/scheme/Scheme;
+.method public getScheme(Lorg/apache/http/HttpHost;)Lorg/apache/http/conn/scheme/Scheme;
     .locals 1
 
     .line 93
@@ -121,7 +121,7 @@
     return-object p0
 .end method
 
-.method public final getSchemeNames()Ljava/util/List;
+.method public getSchemeNames()Ljava/util/List;
     .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -146,7 +146,7 @@
     return-object v0
 .end method
 
-.method public final register(Lorg/apache/http/conn/scheme/Scheme;)Lorg/apache/http/conn/scheme/Scheme;
+.method public register(Lorg/apache/http/conn/scheme/Scheme;)Lorg/apache/http/conn/scheme/Scheme;
     .locals 1
 
     .line 124
@@ -200,7 +200,7 @@
     return-void
 .end method
 
-.method public final unregister(Ljava/lang/String;)Lorg/apache/http/conn/scheme/Scheme;
+.method public unregister(Ljava/lang/String;)Lorg/apache/http/conn/scheme/Scheme;
     .locals 1
 
     .line 138

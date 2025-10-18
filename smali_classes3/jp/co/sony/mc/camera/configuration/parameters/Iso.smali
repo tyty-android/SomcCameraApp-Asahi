@@ -248,7 +248,7 @@
 
     const/4 v3, -0x1
 
-    const v4, 0x7f110437
+    const v4, 0x7f11046c
 
     const-string v5, "auto"
 
@@ -284,7 +284,7 @@
 
     const/4 v12, -0x1
 
-    const v13, 0x7f1102b2
+    const v13, 0x7f1102d6
 
     const-string v14, "iso-prio"
 
@@ -324,7 +324,7 @@
 
     const/16 v19, -0x1
 
-    const v20, 0x7f1102b6
+    const v20, 0x7f1102da
 
     const-string v21, "iso-prio"
 
@@ -362,7 +362,7 @@
 
     const/4 v11, 0x3
 
-    const v13, 0x7f11028e
+    const v13, 0x7f1102b2
 
     const-string v14, "iso-prio"
 
@@ -400,7 +400,7 @@
 
     const/16 v18, 0x4
 
-    const v20, 0x7f110294
+    const v20, 0x7f1102b8
 
     const-string v21, "iso-prio"
 
@@ -438,7 +438,7 @@
 
     const/4 v11, 0x5
 
-    const v13, 0x7f110298
+    const v13, 0x7f1102bc
 
     const-string v14, "iso-prio"
 
@@ -476,7 +476,7 @@
 
     const/16 v18, 0x6
 
-    const v20, 0x7f11029c
+    const v20, 0x7f1102c0
 
     const-string v21, "iso-prio"
 
@@ -514,7 +514,7 @@
 
     const/4 v11, 0x7
 
-    const v13, 0x7f1102a0
+    const v13, 0x7f1102c4
 
     const-string v14, "iso-prio"
 
@@ -552,7 +552,7 @@
 
     const/16 v18, 0x8
 
-    const v20, 0x7f1102a5
+    const v20, 0x7f1102c9
 
     const-string v21, "iso-prio"
 
@@ -590,7 +590,7 @@
 
     const/16 v11, 0x9
 
-    const v13, 0x7f1102a9
+    const v13, 0x7f1102cd
 
     const-string v14, "iso-prio"
 
@@ -628,7 +628,7 @@
 
     const/16 v18, 0xa
 
-    const v20, 0x7f1102ac
+    const v20, 0x7f1102d0
 
     const-string v21, "iso-prio"
 
@@ -666,7 +666,7 @@
 
     const/16 v11, 0xb
 
-    const v13, 0x7f1102b1
+    const v13, 0x7f1102d5
 
     const-string v14, "iso-prio"
 
@@ -704,7 +704,7 @@
 
     const/16 v18, 0xc
 
-    const v20, 0x7f1102b5
+    const v20, 0x7f1102d9
 
     const-string v21, "iso-prio"
 
@@ -742,7 +742,7 @@
 
     const/16 v11, 0xd
 
-    const v13, 0x7f11028d
+    const v13, 0x7f1102b1
 
     const-string v14, "iso-prio"
 
@@ -780,7 +780,7 @@
 
     const/16 v18, 0xe
 
-    const v20, 0x7f110292
+    const v20, 0x7f1102b6
 
     const-string v21, "iso-prio"
 
@@ -818,7 +818,7 @@
 
     const/16 v11, 0xf
 
-    const v13, 0x7f110297
+    const v13, 0x7f1102bb
 
     const-string v14, "iso-prio"
 
@@ -856,7 +856,7 @@
 
     const/16 v18, 0x10
 
-    const v20, 0x7f11029b
+    const v20, 0x7f1102bf
 
     const-string v21, "iso-prio"
 
@@ -894,7 +894,7 @@
 
     const/16 v11, 0x11
 
-    const v13, 0x7f11029e
+    const v13, 0x7f1102c2
 
     const-string v14, "iso-prio"
 
@@ -932,7 +932,7 @@
 
     const/16 v18, 0x12
 
-    const v20, 0x7f1102a4
+    const v20, 0x7f1102c8
 
     const-string v21, "iso-prio"
 
@@ -970,7 +970,7 @@
 
     const/16 v11, 0x13
 
-    const v13, 0x7f1102a8
+    const v13, 0x7f1102cc
 
     const-string v14, "iso-prio"
 
@@ -1008,7 +1008,7 @@
 
     const/16 v18, 0x14
 
-    const v20, 0x7f1102ab
+    const v20, 0x7f1102cf
 
     const-string v21, "iso-prio"
 
@@ -1046,7 +1046,7 @@
 
     const/16 v11, 0x15
 
-    const v13, 0x7f1102b0
+    const v13, 0x7f1102d4
 
     const-string v14, "iso-prio"
 
@@ -1084,7 +1084,7 @@
 
     const/16 v18, 0x16
 
-    const v20, 0x7f1102b4
+    const v20, 0x7f1102d8
 
     const-string v21, "iso-prio"
 
@@ -1122,7 +1122,7 @@
 
     const/16 v11, 0x17
 
-    const v13, 0x7f11028c
+    const v13, 0x7f1102b0
 
     const-string v14, "iso-prio"
 
@@ -1160,7 +1160,7 @@
 
     const/16 v18, 0x18
 
-    const v20, 0x7f110291
+    const v20, 0x7f1102b5
 
     const-string v21, "iso-prio"
 
@@ -1198,7 +1198,7 @@
 
     const/16 v11, 0x19
 
-    const v13, 0x7f110296
+    const v13, 0x7f1102ba
 
     const-string v14, "iso-prio"
 
@@ -1236,7 +1236,7 @@
 
     const/16 v18, 0x1a
 
-    const v20, 0x7f11029a
+    const v20, 0x7f1102be
 
     const-string v21, "iso-prio"
 
@@ -1274,7 +1274,7 @@
 
     const/16 v11, 0x1b
 
-    const v13, 0x7f11029d
+    const v13, 0x7f1102c1
 
     const-string v14, "iso-prio"
 
@@ -1312,7 +1312,7 @@
 
     const/16 v18, 0x1c
 
-    const v20, 0x7f1102a3
+    const v20, 0x7f1102c7
 
     const-string v21, "iso-prio"
 
@@ -1350,7 +1350,7 @@
 
     const/16 v11, 0x1d
 
-    const v13, 0x7f1102a7
+    const v13, 0x7f1102cb
 
     const-string v14, "iso-prio"
 
@@ -1388,7 +1388,7 @@
 
     const/16 v18, 0x1e
 
-    const v20, 0x7f1102aa
+    const v20, 0x7f1102ce
 
     const-string v21, "iso-prio"
 
@@ -1426,7 +1426,7 @@
 
     const/16 v11, 0x1f
 
-    const v13, 0x7f1102af
+    const v13, 0x7f1102d3
 
     const-string v14, "iso-prio"
 
@@ -1464,7 +1464,7 @@
 
     const/16 v18, 0x20
 
-    const v20, 0x7f1102b3
+    const v20, 0x7f1102d7
 
     const-string v21, "iso-prio"
 
@@ -1502,7 +1502,7 @@
 
     const/16 v11, 0x21
 
-    const v13, 0x7f11028b
+    const v13, 0x7f1102af
 
     const-string v14, "iso-prio"
 
@@ -1540,7 +1540,7 @@
 
     const/16 v18, 0x22
 
-    const v20, 0x7f110293
+    const v20, 0x7f1102b7
 
     const-string v21, "iso-prio"
 
@@ -1578,7 +1578,7 @@
 
     const/16 v11, 0x23
 
-    const v13, 0x7f110295
+    const v13, 0x7f1102b9
 
     const-string v14, "iso-prio"
 
@@ -1616,7 +1616,7 @@
 
     const/16 v18, 0x24
 
-    const v20, 0x7f110299
+    const v20, 0x7f1102bd
 
     const-string v21, "iso-prio"
 
@@ -1654,7 +1654,7 @@
 
     const/16 v11, 0x25
 
-    const v13, 0x7f11029f
+    const v13, 0x7f1102c3
 
     const-string v14, "iso-prio"
 
@@ -1692,7 +1692,7 @@
 
     const/16 v18, 0x26
 
-    const v20, 0x7f1102a2
+    const v20, 0x7f1102c6
 
     const-string v21, "iso-prio"
 
@@ -1730,7 +1730,7 @@
 
     const/16 v11, 0x27
 
-    const v13, 0x7f1102a6
+    const v13, 0x7f1102ca
 
     const-string v14, "iso-prio"
 
@@ -1768,7 +1768,7 @@
 
     const/16 v18, 0x28
 
-    const v20, 0x7f1102ad
+    const v20, 0x7f1102d1
 
     const-string v21, "iso-prio"
 
@@ -1806,7 +1806,7 @@
 
     const/16 v11, 0x29
 
-    const v13, 0x7f1102ae
+    const v13, 0x7f1102d2
 
     const-string v14, "iso-prio"
 
@@ -1870,7 +1870,7 @@
 .method public static adjustToSupportedValue(Ljp/co/sony/mc/camera/configuration/parameters/Iso;[Ljp/co/sony/mc/camera/configuration/parameters/Iso;)Ljp/co/sony/mc/camera/configuration/parameters/Iso;
     .locals 4
 
-    .line 437
+    .line 415
     sget-object v0, Ljp/co/sony/mc/camera/configuration/parameters/Iso;->ISO_AUTO:Ljp/co/sony/mc/camera/configuration/parameters/Iso;
 
     const/4 v1, 0x0
@@ -1890,7 +1890,7 @@
 
     return-object v0
 
-    .line 443
+    .line 421
     :cond_1
     aget-object v3, p1, v1
 
@@ -1901,7 +1901,7 @@
     :cond_2
     move v1, v2
 
-    .line 445
+    .line 423
     :goto_0
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/configuration/parameters/Iso;->getIsoValue()I
 
@@ -1915,12 +1915,12 @@
 
     if-ge v0, v3, :cond_3
 
-    .line 446
+    .line 424
     aget-object p0, p1, v1
 
     goto :goto_1
 
-    .line 447
+    .line 425
     :cond_3
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/configuration/parameters/Iso;->getIsoValue()I
 
@@ -1938,7 +1938,7 @@
 
     if-le v0, v1, :cond_4
 
-    .line 448
+    .line 426
     array-length p0, p1
 
     sub-int/2addr p0, v2
@@ -1948,80 +1948,6 @@
     :cond_4
     :goto_1
     return-object p0
-.end method
-
-.method public static canBeManuallySetWith(Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;Ljp/co/sony/mc/camera/configuration/parameters/Resolution;)Z
-    .locals 3
-
-    .line 415
-    invoke-static {p0}, Ljp/co/sony/mc/camera/util/capability/PlatformCapability;->getCameraCapability(Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;)Ljp/co/sony/mc/camera/util/capability/CameraCapabilityList;
-
-    move-result-object p0
-
-    .line 417
-    iget-object p0, p0, Ljp/co/sony/mc/camera/util/capability/CameraCapabilityList;->MANUAL_ISO_SUPPORTED_PICTURE_SIZE:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
-
-    invoke-virtual {p0}, Ljp/co/sony/mc/camera/util/capability/CapabilityItem;->get()Ljava/lang/Object;
-
-    move-result-object p0
-
-    check-cast p0, Ljava/util/List;
-
-    invoke-interface {p0}, Ljava/util/List;->iterator()Ljava/util/Iterator;
-
-    move-result-object p0
-
-    :cond_0
-    invoke-interface {p0}, Ljava/util/Iterator;->hasNext()Z
-
-    move-result v0
-
-    if-eqz v0, :cond_1
-
-    invoke-interface {p0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
-
-    move-result-object v0
-
-    check-cast v0, Landroid/graphics/Rect;
-
-    .line 418
-    invoke-virtual {v0}, Landroid/graphics/Rect;->width()I
-
-    move-result v1
-
-    invoke-virtual {p1}, Ljp/co/sony/mc/camera/configuration/parameters/Resolution;->getPictureRect()Landroid/graphics/Rect;
-
-    move-result-object v2
-
-    invoke-virtual {v2}, Landroid/graphics/Rect;->width()I
-
-    move-result v2
-
-    if-ne v1, v2, :cond_0
-
-    .line 419
-    invoke-virtual {v0}, Landroid/graphics/Rect;->height()I
-
-    move-result v0
-
-    invoke-virtual {p1}, Ljp/co/sony/mc/camera/configuration/parameters/Resolution;->getPictureRect()Landroid/graphics/Rect;
-
-    move-result-object v1
-
-    invoke-virtual {v1}, Landroid/graphics/Rect;->height()I
-
-    move-result v1
-
-    if-ne v0, v1, :cond_0
-
-    const/4 p0, 0x1
-
-    return p0
-
-    :cond_1
-    const/4 p0, 0x0
-
-    return p0
 .end method
 
 .method public static getDefaultValue()Ljp/co/sony/mc/camera/configuration/parameters/Iso;
@@ -2036,10 +1962,10 @@
 .method public static getIsoFromIsoValue(Ljava/lang/Integer;)Ljp/co/sony/mc/camera/configuration/parameters/Iso;
     .locals 7
 
-    .line 455
+    .line 433
     sget-object v0, Ljp/co/sony/mc/camera/configuration/parameters/Iso;->ISO_AUTO:Ljp/co/sony/mc/camera/configuration/parameters/Iso;
 
-    .line 456
+    .line 434
     invoke-static {}, Ljp/co/sony/mc/camera/configuration/parameters/Iso;->values()[Ljp/co/sony/mc/camera/configuration/parameters/Iso;
 
     move-result-object v1
@@ -2053,7 +1979,7 @@
 
     aget-object v4, v1, v3
 
-    .line 457
+    .line 435
     iget-object v5, v4, Ljp/co/sony/mc/camera/configuration/parameters/Iso;->mIsoRange:Landroid/util/Range;
 
     invoke-virtual {v5}, Landroid/util/Range;->getLower()Ljava/lang/Comparable;
@@ -2072,7 +1998,7 @@
 
     if-gt v5, v6, :cond_0
 
-    .line 458
+    .line 436
     invoke-virtual {p0}, Ljava/lang/Integer;->intValue()I
 
     move-result v5
@@ -2105,20 +2031,20 @@
     return-object v0
 .end method
 
-.method public static getOptions(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;Ljp/co/sony/mc/camera/configuration/parameters/Resolution;Ljp/co/sony/mc/camera/configuration/parameters/HybridZoom;Ljp/co/sony/mc/camera/configuration/parameters/VideoHdr;Ljp/co/sony/mc/camera/configuration/parameters/ColorToneProfile;)[Ljp/co/sony/mc/camera/configuration/parameters/Iso;
+.method public static getOptions(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;Ljp/co/sony/mc/camera/configuration/parameters/HybridZoom;Ljp/co/sony/mc/camera/configuration/parameters/VideoHdr;Ljp/co/sony/mc/camera/configuration/parameters/ColorToneProfile;)[Ljp/co/sony/mc/camera/configuration/parameters/Iso;
     .locals 5
 
-    .line 365
+    .line 364
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
-    .line 368
+    .line 367
     invoke-static {p1}, Ljp/co/sony/mc/camera/util/capability/PlatformCapability;->getSupportedAeModes(Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;)Ljava/util/List;
 
     move-result-object v1
 
-    .line 369
+    .line 368
     invoke-interface {v1}, Ljava/util/List;->isEmpty()Z
 
     move-result v2
@@ -2127,7 +2053,7 @@
 
     if-eqz v2, :cond_0
 
-    .line 370
+    .line 369
     new-array p0, v3, [Ljp/co/sony/mc/camera/configuration/parameters/Iso;
 
     invoke-virtual {v0, p0}, Ljava/util/ArrayList;->toArray([Ljava/lang/Object;)[Ljava/lang/Object;
@@ -2138,7 +2064,7 @@
 
     return-object p0
 
-    .line 371
+    .line 370
     :cond_0
     sget-object v2, Ljp/co/sony/mc/camera/configuration/parameters/Iso;->ISO_AUTO:Ljp/co/sony/mc/camera/configuration/parameters/Iso;
 
@@ -2152,16 +2078,16 @@
 
     if-eqz v4, :cond_1
 
-    .line 373
+    .line 372
     invoke-virtual {v0, v2}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
-    .line 376
+    .line 375
     :cond_1
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->getLayoutMode()Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
     move-result-object v2
 
-    .line 377
+    .line 376
     invoke-virtual {v2}, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->isAutoPhotoMode()Z
 
     move-result v4
@@ -2174,7 +2100,7 @@
 
     if-nez v4, :cond_7
 
-    .line 378
+    .line 377
     invoke-virtual {v2}, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->isVideo()Z
 
     move-result v4
@@ -2189,7 +2115,7 @@
 
     goto :goto_2
 
-    .line 383
+    .line 382
     :cond_2
     const-string v2, "iso-prio"
 
@@ -2199,7 +2125,7 @@
 
     if-nez v1, :cond_3
 
-    .line 384
+    .line 383
     new-array p0, v3, [Ljp/co/sony/mc/camera/configuration/parameters/Iso;
 
     invoke-virtual {v0, p0}, Ljava/util/ArrayList;->toArray([Ljava/lang/Object;)[Ljava/lang/Object;
@@ -2212,43 +2138,36 @@
 
     .line 387
     :cond_3
-    invoke-static {p1, p2}, Ljp/co/sony/mc/camera/configuration/parameters/Iso;->canBeManuallySetWith(Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;Ljp/co/sony/mc/camera/configuration/parameters/Resolution;)Z
-
-    move-result p2
-
-    if-eqz p2, :cond_6
-
-    .line 389
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->isVideo()Z
 
     move-result p0
 
     if-eqz p0, :cond_4
 
-    .line 391
-    invoke-virtual {p3}, Ljp/co/sony/mc/camera/configuration/parameters/HybridZoom;->getValue()Ljava/lang/String;
+    .line 389
+    invoke-virtual {p2}, Ljp/co/sony/mc/camera/configuration/parameters/HybridZoom;->getValue()Ljava/lang/String;
 
     move-result-object p0
 
-    .line 390
-    invoke-static {p1, p0, p4, p5}, Ljp/co/sony/mc/camera/util/capability/PlatformCapability;->getSupportedVideoIsoRange(Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;Ljava/lang/String;Ljp/co/sony/mc/camera/configuration/parameters/VideoHdr;Ljp/co/sony/mc/camera/configuration/parameters/ColorToneProfile;)Landroid/util/Range;
+    .line 388
+    invoke-static {p1, p0, p3, p4}, Ljp/co/sony/mc/camera/util/capability/PlatformCapability;->getSupportedVideoIsoRange(Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;Ljava/lang/String;Ljp/co/sony/mc/camera/configuration/parameters/VideoHdr;Ljp/co/sony/mc/camera/configuration/parameters/ColorToneProfile;)Landroid/util/Range;
 
     move-result-object p0
 
     goto :goto_0
 
-    .line 394
+    .line 392
     :cond_4
-    invoke-virtual {p3}, Ljp/co/sony/mc/camera/configuration/parameters/HybridZoom;->getValue()Ljava/lang/String;
+    invoke-virtual {p2}, Ljp/co/sony/mc/camera/configuration/parameters/HybridZoom;->getValue()Ljava/lang/String;
 
     move-result-object p0
 
-    .line 393
+    .line 391
     invoke-static {p1, p0}, Ljp/co/sony/mc/camera/util/capability/PlatformCapability;->getSupportedIsoRange(Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;Ljava/lang/String;)Landroid/util/Range;
 
     move-result-object p0
 
-    .line 396
+    .line 394
     :goto_0
     invoke-static {}, Ljp/co/sony/mc/camera/configuration/parameters/Iso;->values()[Ljp/co/sony/mc/camera/configuration/parameters/Iso;
 
@@ -2263,29 +2182,8 @@
 
     aget-object p4, p1, p3
 
-    .line 397
+    .line 395
     invoke-virtual {p0}, Landroid/util/Range;->getLower()Ljava/lang/Comparable;
-
-    move-result-object p5
-
-    check-cast p5, Ljava/lang/Integer;
-
-    invoke-virtual {p5}, Ljava/lang/Integer;->intValue()I
-
-    move-result p5
-
-    invoke-virtual {p4}, Ljp/co/sony/mc/camera/configuration/parameters/Iso;->getIsoValue()I
-
-    move-result v1
-
-    if-gt p5, v1, :cond_5
-
-    .line 398
-    invoke-virtual {p4}, Ljp/co/sony/mc/camera/configuration/parameters/Iso;->getIsoValue()I
-
-    move-result p5
-
-    invoke-virtual {p0}, Landroid/util/Range;->getUpper()Ljava/lang/Comparable;
 
     move-result-object v1
 
@@ -2295,9 +2193,30 @@
 
     move-result v1
 
-    if-gt p5, v1, :cond_5
+    invoke-virtual {p4}, Ljp/co/sony/mc/camera/configuration/parameters/Iso;->getIsoValue()I
 
-    .line 399
+    move-result v2
+
+    if-gt v1, v2, :cond_5
+
+    .line 396
+    invoke-virtual {p4}, Ljp/co/sony/mc/camera/configuration/parameters/Iso;->getIsoValue()I
+
+    move-result v1
+
+    invoke-virtual {p0}, Landroid/util/Range;->getUpper()Ljava/lang/Comparable;
+
+    move-result-object v2
+
+    check-cast v2, Ljava/lang/Integer;
+
+    invoke-virtual {v2}, Ljava/lang/Integer;->intValue()I
+
+    move-result v2
+
+    if-gt v1, v2, :cond_5
+
+    .line 397
     invoke-virtual {v0, p4}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
     :cond_5
@@ -2305,7 +2224,7 @@
 
     goto :goto_1
 
-    .line 404
+    .line 401
     :cond_6
     new-array p0, v3, [Ljp/co/sony/mc/camera/configuration/parameters/Iso;
 
@@ -2317,7 +2236,7 @@
 
     return-object p0
 
-    .line 379
+    .line 378
     :cond_7
     :goto_2
     new-array p0, v3, [Ljp/co/sony/mc/camera/configuration/parameters/Iso;

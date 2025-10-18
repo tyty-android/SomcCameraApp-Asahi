@@ -144,13 +144,9 @@
         }
     .end annotation
 
-    const-string v0, "<name for destructuring parameter 0>"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
     const/4 v0, 0x0
 
-    .line 39
+    .line 40
     invoke-interface {p1, v0}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
     move-result-object v0
@@ -173,7 +169,7 @@
 
     move-result p1
 
-    .line 40
+    .line 41
     iget-object v1, p0, Landroidx/compose/ui/text/JvmAnnotatedString_jvmKt$transform$1;->$resultStr:Lkotlin/jvm/internal/Ref$ObjectRef;
 
     new-instance v2, Ljava/lang/StringBuilder;
@@ -222,7 +218,7 @@
 
     iput-object v0, v1, Lkotlin/jvm/internal/Ref$ObjectRef;->element:Ljava/lang/Object;
 
-    .line 41
+    .line 42
     iget-object v0, p0, Landroidx/compose/ui/text/JvmAnnotatedString_jvmKt$transform$1;->$offsetMap:Ljava/util/Map;
 
     invoke-static {p1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
@@ -255,7 +251,7 @@
 .method public bridge synthetic invoke(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
 
-    .line 39
+    .line 40
     check-cast p1, Ljava/util/List;
 
     invoke-virtual {p0, p1}, Landroidx/compose/ui/text/JvmAnnotatedString_jvmKt$transform$1;->invoke(Ljava/util/List;)Ljava/lang/Integer;

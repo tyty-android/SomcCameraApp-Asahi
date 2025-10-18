@@ -33,7 +33,7 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/SourceDebugExtension;
-    value = "SMAP\nSavers.kt\nKotlin\n*S Kotlin\n*F\n+ 1 Savers.kt\nandroidx/compose/ui/text/SaversKt$AnnotationRangeListSaver$1\n+ 2 ListUtils.kt\nandroidx/compose/ui/util/ListUtilsKt\n*L\n1#1,421:1\n151#2,3:422\n33#2,4:425\n154#2,2:429\n38#2:431\n156#2:432\n*S KotlinDebug\n*F\n+ 1 Savers.kt\nandroidx/compose/ui/text/SaversKt$AnnotationRangeListSaver$1\n*L\n100#1:422,3\n100#1:425,4\n100#1:429,2\n100#1:431\n100#1:432\n*E\n"
+    value = "SMAP\nSavers.kt\nKotlin\n*S Kotlin\n*F\n+ 1 Savers.kt\nandroidx/compose/ui/text/SaversKt$AnnotationRangeListSaver$1\n+ 2 ListUtils.kt\nandroidx/compose/ui/util/ListUtilsKt\n*L\n1#1,454:1\n151#2,3:455\n33#2,4:458\n154#2,2:462\n38#2:464\n156#2:465\n*S KotlinDebug\n*F\n+ 1 Savers.kt\nandroidx/compose/ui/text/SaversKt$AnnotationRangeListSaver$1\n*L\n121#1:455,3\n121#1:458,4\n121#1:462,2\n121#1:464\n121#1:465\n*E\n"
 .end annotation
 
 .annotation runtime Lkotlin/Metadata;
@@ -104,15 +104,7 @@
         }
     .end annotation
 
-    const-string p0, "$this$Saver"
-
-    invoke-static {p1, p0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string p0, "it"
-
-    invoke-static {p2, p0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 423
+    .line 456
     new-instance p0, Ljava/util/ArrayList;
 
     invoke-interface {p2}, Ljava/util/List;->size()I
@@ -121,7 +113,7 @@
 
     invoke-direct {p0, v0}, Ljava/util/ArrayList;-><init>(I)V
 
-    .line 426
+    .line 459
     invoke-interface {p2}, Ljava/util/List;->size()I
 
     move-result v0
@@ -131,19 +123,19 @@
     :goto_0
     if-ge v1, v0, :cond_0
 
-    .line 427
+    .line 460
     invoke-interface {p2, v1}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
     move-result-object v2
 
-    .line 429
+    .line 462
     move-object v3, p0
 
     check-cast v3, Ljava/util/Collection;
 
     check-cast v2, Landroidx/compose/ui/text/AnnotatedString$Range;
 
-    .line 101
+    .line 122
     invoke-static {}, Landroidx/compose/ui/text/SaversKt;->access$getAnnotationRangeSaver$p()Landroidx/compose/runtime/saveable/Saver;
 
     move-result-object v4
@@ -152,14 +144,14 @@
 
     move-result-object v2
 
-    .line 429
+    .line 462
     invoke-interface {v3, v2}, Ljava/util/Collection;->add(Ljava/lang/Object;)Z
 
     add-int/lit8 v1, v1, 0x1
 
     goto :goto_0
 
-    .line 432
+    .line 465
     :cond_0
     check-cast p0, Ljava/util/List;
 
@@ -169,7 +161,7 @@
 .method public bridge synthetic invoke(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
 
-    .line 98
+    .line 119
     check-cast p1, Landroidx/compose/runtime/saveable/SaverScope;
 
     check-cast p2, Ljava/util/List;

@@ -1,9 +1,8 @@
 .class public Landroidx/compose/runtime/SnapshotMutableFloatStateImpl;
-.super Ljava/lang/Object;
+.super Landroidx/compose/runtime/snapshots/StateObjectImpl;
 .source "SnapshotFloatState.kt"
 
 # interfaces
-.implements Landroidx/compose/runtime/snapshots/StateObject;
 .implements Landroidx/compose/runtime/MutableFloatState;
 .implements Landroidx/compose/runtime/snapshots/SnapshotMutableState;
 
@@ -17,8 +16,7 @@
 
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Ljava/lang/Object;",
-        "Landroidx/compose/runtime/snapshots/StateObject;",
+        "Landroidx/compose/runtime/snapshots/StateObjectImpl;",
         "Landroidx/compose/runtime/MutableFloatState;",
         "Landroidx/compose/runtime/snapshots/SnapshotMutableState<",
         "Ljava/lang/Float;",
@@ -27,7 +25,7 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/SourceDebugExtension;
-    value = "SMAP\nSnapshotFloatState.kt\nKotlin\n*S Kotlin\n*F\n+ 1 SnapshotFloatState.kt\nandroidx/compose/runtime/SnapshotMutableFloatStateImpl\n+ 2 Snapshot.kt\nandroidx/compose/runtime/snapshots/SnapshotKt\n+ 3 ActualJvm.jvm.kt\nandroidx/compose/runtime/ActualJvm_jvmKt\n*L\n1#1,182:1\n2279#2:183\n2200#2,2:184\n1722#2:186\n2202#2,5:188\n2279#2:193\n70#3:187\n*S KotlinDebug\n*F\n+ 1 SnapshotFloatState.kt\nandroidx/compose/runtime/SnapshotMutableFloatStateImpl\n*L\n135#1:183\n137#1:184,2\n137#1:186\n137#1:188,5\n168#1:193\n137#1:187\n*E\n"
+    value = "SMAP\nSnapshotFloatState.kt\nKotlin\n*S Kotlin\n*F\n+ 1 SnapshotFloatState.kt\nandroidx/compose/runtime/SnapshotMutableFloatStateImpl\n+ 2 Snapshot.kt\nandroidx/compose/runtime/snapshots/SnapshotKt\n+ 3 FloatingPointEquality.android.kt\nandroidx/compose/runtime/internal/FloatingPointEquality_androidKt\n+ 4 ActualJvm.jvm.kt\nandroidx/compose/runtime/ActualJvm_jvmKt\n*L\n1#1,183:1\n2283#2:184\n2204#2,2:190\n1714#2:192\n2206#2,5:194\n2283#2:204\n41#3,5:185\n41#3,5:199\n82#4:193\n*S KotlinDebug\n*F\n+ 1 SnapshotFloatState.kt\nandroidx/compose/runtime/SnapshotMutableFloatStateImpl\n*L\n136#1:184\n138#1:190,2\n138#1:192\n138#1:194,5\n169#1:204\n137#1:185,5\n162#1:199,5\n138#1:193\n*E\n"
 .end annotation
 
 .annotation runtime Lkotlin/Metadata;
@@ -36,7 +34,7 @@
     }
     d2 = {
         "Landroidx/compose/runtime/SnapshotMutableFloatStateImpl;",
-        "Landroidx/compose/runtime/snapshots/StateObject;",
+        "Landroidx/compose/runtime/snapshots/StateObjectImpl;",
         "Landroidx/compose/runtime/MutableFloatState;",
         "Landroidx/compose/runtime/snapshots/SnapshotMutableState;",
         "",
@@ -81,18 +79,28 @@
 .end annotation
 
 
+# static fields
+.field public static final $stable:I
+
+
 # instance fields
 .field private next:Landroidx/compose/runtime/SnapshotMutableFloatStateImpl$FloatStateStateRecord;
 
 
 # direct methods
+.method static constructor <clinit>()V
+    .locals 0
+
+    return-void
+.end method
+
 .method public constructor <init>(F)V
     .locals 1
 
-    .line 124
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    .line 127
+    invoke-direct {p0}, Landroidx/compose/runtime/snapshots/StateObjectImpl;-><init>()V
 
-    .line 128
+    .line 129
     new-instance v0, Landroidx/compose/runtime/SnapshotMutableFloatStateImpl$FloatStateStateRecord;
 
     invoke-direct {v0, p1}, Landroidx/compose/runtime/SnapshotMutableFloatStateImpl$FloatStateStateRecord;-><init>(F)V
@@ -107,7 +115,7 @@
 .method public component1()Ljava/lang/Float;
     .locals 0
 
-    .line 146
+    .line 147
     invoke-virtual {p0}, Landroidx/compose/runtime/SnapshotMutableFloatStateImpl;->getFloatValue()F
 
     move-result p0
@@ -122,7 +130,7 @@
 .method public bridge synthetic component1()Ljava/lang/Object;
     .locals 0
 
-    .line 124
+    .line 125
     invoke-virtual {p0}, Landroidx/compose/runtime/SnapshotMutableFloatStateImpl;->component1()Ljava/lang/Float;
 
     move-result-object p0
@@ -142,7 +150,7 @@
         }
     .end annotation
 
-    .line 148
+    .line 149
     new-instance v0, Landroidx/compose/runtime/SnapshotMutableFloatStateImpl$component2$1;
 
     invoke-direct {v0, p0}, Landroidx/compose/runtime/SnapshotMutableFloatStateImpl$component2$1;-><init>(Landroidx/compose/runtime/SnapshotMutableFloatStateImpl;)V
@@ -155,7 +163,7 @@
 .method public getFirstStateRecord()Landroidx/compose/runtime/snapshots/StateRecord;
     .locals 0
 
-    .line 131
+    .line 132
     iget-object p0, p0, Landroidx/compose/runtime/SnapshotMutableFloatStateImpl;->next:Landroidx/compose/runtime/SnapshotMutableFloatStateImpl$FloatStateStateRecord;
 
     check-cast p0, Landroidx/compose/runtime/snapshots/StateRecord;
@@ -166,7 +174,7 @@
 .method public getFloatValue()F
     .locals 1
 
-    .line 134
+    .line 135
     iget-object v0, p0, Landroidx/compose/runtime/SnapshotMutableFloatStateImpl;->next:Landroidx/compose/runtime/SnapshotMutableFloatStateImpl$FloatStateStateRecord;
 
     check-cast v0, Landroidx/compose/runtime/snapshots/StateRecord;
@@ -197,7 +205,7 @@
         }
     .end annotation
 
-    .line 144
+    .line 145
     invoke-static {}, Landroidx/compose/runtime/SnapshotStateKt;->structuralEqualityPolicy()Landroidx/compose/runtime/SnapshotMutationPolicy;
 
     move-result-object p0
@@ -208,28 +216,22 @@
 .method public mergeRecords(Landroidx/compose/runtime/snapshots/StateRecord;Landroidx/compose/runtime/snapshots/StateRecord;Landroidx/compose/runtime/snapshots/StateRecord;)Landroidx/compose/runtime/snapshots/StateRecord;
     .locals 0
 
-    const-string p0, "previous"
-
-    invoke-static {p1, p0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string p0, "current"
-
-    invoke-static {p2, p0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string p0, "applied"
-
-    invoke-static {p3, p0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 159
-    move-object p0, p2
-
-    check-cast p0, Landroidx/compose/runtime/SnapshotMutableFloatStateImpl$FloatStateStateRecord;
-
     .line 160
-    check-cast p3, Landroidx/compose/runtime/SnapshotMutableFloatStateImpl$FloatStateStateRecord;
+    const-string p0, "null cannot be cast to non-null type androidx.compose.runtime.SnapshotMutableFloatStateImpl.FloatStateStateRecord"
+
+    invoke-static {p2, p0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;Ljava/lang/String;)V
+
+    move-object p1, p2
+
+    check-cast p1, Landroidx/compose/runtime/SnapshotMutableFloatStateImpl$FloatStateStateRecord;
 
     .line 161
-    invoke-virtual {p0}, Landroidx/compose/runtime/SnapshotMutableFloatStateImpl$FloatStateStateRecord;->getValue()F
+    invoke-static {p3, p0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;Ljava/lang/String;)V
+
+    check-cast p3, Landroidx/compose/runtime/SnapshotMutableFloatStateImpl$FloatStateStateRecord;
+
+    .line 162
+    invoke-virtual {p1}, Landroidx/compose/runtime/SnapshotMutableFloatStateImpl$FloatStateStateRecord;->getValue()F
 
     move-result p0
 
@@ -253,11 +255,11 @@
 .method public prependStateRecord(Landroidx/compose/runtime/snapshots/StateRecord;)V
     .locals 1
 
-    const-string/jumbo v0, "value"
+    .line 152
+    const-string v0, "null cannot be cast to non-null type androidx.compose.runtime.SnapshotMutableFloatStateImpl.FloatStateStateRecord"
 
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 151
     check-cast p1, Landroidx/compose/runtime/SnapshotMutableFloatStateImpl$FloatStateStateRecord;
 
     iput-object p1, p0, Landroidx/compose/runtime/SnapshotMutableFloatStateImpl;->next:Landroidx/compose/runtime/SnapshotMutableFloatStateImpl$FloatStateStateRecord;
@@ -268,19 +270,19 @@
 .method public setFloatValue(F)V
     .locals 5
 
-    .line 135
+    .line 136
     iget-object v0, p0, Landroidx/compose/runtime/SnapshotMutableFloatStateImpl;->next:Landroidx/compose/runtime/SnapshotMutableFloatStateImpl$FloatStateStateRecord;
 
     check-cast v0, Landroidx/compose/runtime/snapshots/StateRecord;
 
-    .line 183
+    .line 184
     invoke-static {v0}, Landroidx/compose/runtime/snapshots/SnapshotKt;->current(Landroidx/compose/runtime/snapshots/StateRecord;)Landroidx/compose/runtime/snapshots/StateRecord;
 
     move-result-object v0
 
     check-cast v0, Landroidx/compose/runtime/SnapshotMutableFloatStateImpl$FloatStateStateRecord;
 
-    .line 136
+    .line 137
     invoke-virtual {v0}, Landroidx/compose/runtime/SnapshotMutableFloatStateImpl$FloatStateStateRecord;->getValue()F
 
     move-result v1
@@ -291,24 +293,24 @@
 
     goto :goto_0
 
-    .line 137
+    .line 138
     :cond_0
     iget-object v1, p0, Landroidx/compose/runtime/SnapshotMutableFloatStateImpl;->next:Landroidx/compose/runtime/SnapshotMutableFloatStateImpl$FloatStateStateRecord;
 
     check-cast v1, Landroidx/compose/runtime/snapshots/StateRecord;
 
-    .line 184
+    .line 190
     invoke-static {}, Landroidx/compose/runtime/snapshots/SnapshotKt;->getSnapshotInitializer()Landroidx/compose/runtime/snapshots/Snapshot;
 
-    .line 186
+    .line 192
     invoke-static {}, Landroidx/compose/runtime/snapshots/SnapshotKt;->getLock()Ljava/lang/Object;
 
     move-result-object v2
 
-    .line 187
+    .line 193
     monitor-enter v2
 
-    .line 188
+    .line 194
     :try_start_0
     sget-object v3, Landroidx/compose/runtime/snapshots/Snapshot;->Companion:Landroidx/compose/runtime/snapshots/Snapshot$Companion;
 
@@ -316,7 +318,7 @@
 
     move-result-object v3
 
-    .line 189
+    .line 195
     move-object v4, p0
 
     check-cast v4, Landroidx/compose/runtime/snapshots/StateObject;
@@ -329,17 +331,17 @@
 
     check-cast v0, Landroidx/compose/runtime/SnapshotMutableFloatStateImpl$FloatStateStateRecord;
 
-    .line 137
+    .line 138
     invoke-virtual {v0, p1}, Landroidx/compose/runtime/SnapshotMutableFloatStateImpl$FloatStateStateRecord;->setValue(F)V
 
     sget-object p1, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 187
+    .line 193
     monitor-exit v2
 
-    .line 191
+    .line 197
     check-cast p0, Landroidx/compose/runtime/snapshots/StateObject;
 
     invoke-static {v3, p0}, Landroidx/compose/runtime/snapshots/SnapshotKt;->notifyWrite(Landroidx/compose/runtime/snapshots/Snapshot;Landroidx/compose/runtime/snapshots/StateObject;)V
@@ -350,7 +352,7 @@
     :catchall_0
     move-exception p0
 
-    .line 187
+    .line 193
     monitor-exit v2
 
     throw p0
@@ -359,19 +361,19 @@
 .method public toString()Ljava/lang/String;
     .locals 3
 
-    .line 168
+    .line 169
     iget-object v0, p0, Landroidx/compose/runtime/SnapshotMutableFloatStateImpl;->next:Landroidx/compose/runtime/SnapshotMutableFloatStateImpl$FloatStateStateRecord;
 
     check-cast v0, Landroidx/compose/runtime/snapshots/StateRecord;
 
-    .line 193
+    .line 204
     invoke-static {v0}, Landroidx/compose/runtime/snapshots/SnapshotKt;->current(Landroidx/compose/runtime/snapshots/StateRecord;)Landroidx/compose/runtime/snapshots/StateRecord;
 
     move-result-object v0
 
     check-cast v0, Landroidx/compose/runtime/SnapshotMutableFloatStateImpl$FloatStateStateRecord;
 
-    .line 169
+    .line 170
     new-instance v1, Ljava/lang/StringBuilder;
 
     const-string v2, "MutableFloatState(value="

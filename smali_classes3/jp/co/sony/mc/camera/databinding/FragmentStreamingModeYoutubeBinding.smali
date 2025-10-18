@@ -18,6 +18,11 @@
     .end annotation
 .end field
 
+.field protected mViewFinderUiState:Ljp/co/sony/mc/camera/view/uistate/ViewFinderUiState;
+    .annotation runtime Landroidx/databinding/Bindable;
+    .end annotation
+.end field
+
 .field public final youtube:Landroid/widget/LinearLayout;
 
 .field public final youtubeAccount:Landroid/widget/LinearLayout;
@@ -31,25 +36,25 @@
 .method protected constructor <init>(Ljava/lang/Object;Landroid/view/View;ILandroid/widget/TextView;Landroid/widget/Button;Landroid/widget/LinearLayout;Landroid/widget/LinearLayout;Landroid/widget/TextView;Landroid/widget/TextView;)V
     .locals 0
 
-    .line 49
+    .line 53
     invoke-direct {p0, p1, p2, p3}, Landroidx/databinding/ViewDataBinding;-><init>(Ljava/lang/Object;Landroid/view/View;I)V
 
-    .line 50
+    .line 54
     iput-object p4, p0, Ljp/co/sony/mc/camera/databinding/FragmentStreamingModeYoutubeBinding;->liveEventUrlText:Landroid/widget/TextView;
 
-    .line 51
+    .line 55
     iput-object p5, p0, Ljp/co/sony/mc/camera/databinding/FragmentStreamingModeYoutubeBinding;->login:Landroid/widget/Button;
 
-    .line 52
+    .line 56
     iput-object p6, p0, Ljp/co/sony/mc/camera/databinding/FragmentStreamingModeYoutubeBinding;->youtube:Landroid/widget/LinearLayout;
 
-    .line 53
+    .line 57
     iput-object p7, p0, Ljp/co/sony/mc/camera/databinding/FragmentStreamingModeYoutubeBinding;->youtubeAccount:Landroid/widget/LinearLayout;
 
-    .line 54
+    .line 58
     iput-object p8, p0, Ljp/co/sony/mc/camera/databinding/FragmentStreamingModeYoutubeBinding;->youtubeAccountText:Landroid/widget/TextView;
 
-    .line 55
+    .line 59
     iput-object p9, p0, Ljp/co/sony/mc/camera/databinding/FragmentStreamingModeYoutubeBinding;->youtubeEventText:Landroid/widget/TextView;
 
     return-void
@@ -58,7 +63,7 @@
 .method public static bind(Landroid/view/View;)Ljp/co/sony/mc/camera/databinding/FragmentStreamingModeYoutubeBinding;
     .locals 1
 
-    .line 113
+    .line 124
     invoke-static {}, Landroidx/databinding/DataBindingUtil;->getDefaultComponent()Landroidx/databinding/DataBindingComponent;
 
     move-result-object v0
@@ -77,7 +82,7 @@
 
     const v0, 0x7f0c00c2
 
-    .line 126
+    .line 137
     invoke-static {p1, p0, v0}, Ljp/co/sony/mc/camera/databinding/FragmentStreamingModeYoutubeBinding;->bind(Ljava/lang/Object;Landroid/view/View;I)Landroidx/databinding/ViewDataBinding;
 
     move-result-object p0
@@ -90,7 +95,7 @@
 .method public static inflate(Landroid/view/LayoutInflater;)Ljp/co/sony/mc/camera/databinding/FragmentStreamingModeYoutubeBinding;
     .locals 1
 
-    .line 95
+    .line 106
     invoke-static {}, Landroidx/databinding/DataBindingUtil;->getDefaultComponent()Landroidx/databinding/DataBindingComponent;
 
     move-result-object v0
@@ -105,7 +110,7 @@
 .method public static inflate(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Z)Ljp/co/sony/mc/camera/databinding/FragmentStreamingModeYoutubeBinding;
     .locals 1
 
-    .line 76
+    .line 87
     invoke-static {}, Landroidx/databinding/DataBindingUtil;->getDefaultComponent()Landroidx/databinding/DataBindingComponent;
 
     move-result-object v0
@@ -124,7 +129,7 @@
 
     const v0, 0x7f0c00c2
 
-    .line 90
+    .line 101
     invoke-static {p0, v0, p1, p2, p3}, Landroidx/databinding/ViewDataBinding;->inflateInternal(Landroid/view/LayoutInflater;ILandroid/view/ViewGroup;ZLjava/lang/Object;)Landroidx/databinding/ViewDataBinding;
 
     move-result-object p0
@@ -145,7 +150,7 @@
 
     const v2, 0x7f0c00c2
 
-    .line 109
+    .line 120
     invoke-static {p0, v2, v0, v1, p1}, Landroidx/databinding/ViewDataBinding;->inflateInternal(Landroid/view/LayoutInflater;ILandroid/view/ViewGroup;ZLjava/lang/Object;)Landroidx/databinding/ViewDataBinding;
 
     move-result-object p0
@@ -160,7 +165,7 @@
 .method public getBasicModeQuickSettingUiState()Ljp/co/sony/mc/camera/view/uistate/BasicModeQuickSettingUiState;
     .locals 0
 
-    .line 63
+    .line 67
     iget-object p0, p0, Ljp/co/sony/mc/camera/databinding/FragmentStreamingModeYoutubeBinding;->mBasicModeQuickSettingUiState:Ljp/co/sony/mc/camera/view/uistate/BasicModeQuickSettingUiState;
 
     return-object p0
@@ -169,8 +174,17 @@
 .method public getStreamingUiState()Ljp/co/sony/mc/camera/view/uistate/StreamingUiState;
     .locals 0
 
-    .line 70
+    .line 74
     iget-object p0, p0, Ljp/co/sony/mc/camera/databinding/FragmentStreamingModeYoutubeBinding;->mStreamingUiState:Ljp/co/sony/mc/camera/view/uistate/StreamingUiState;
+
+    return-object p0
+.end method
+
+.method public getViewFinderUiState()Ljp/co/sony/mc/camera/view/uistate/ViewFinderUiState;
+    .locals 0
+
+    .line 81
+    iget-object p0, p0, Ljp/co/sony/mc/camera/databinding/FragmentStreamingModeYoutubeBinding;->mViewFinderUiState:Ljp/co/sony/mc/camera/view/uistate/ViewFinderUiState;
 
     return-object p0
 .end method
@@ -179,4 +193,7 @@
 .end method
 
 .method public abstract setStreamingUiState(Ljp/co/sony/mc/camera/view/uistate/StreamingUiState;)V
+.end method
+
+.method public abstract setViewFinderUiState(Ljp/co/sony/mc/camera/view/uistate/ViewFinderUiState;)V
 .end method

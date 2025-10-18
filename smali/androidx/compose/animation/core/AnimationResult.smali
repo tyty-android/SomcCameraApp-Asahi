@@ -73,7 +73,7 @@
 .end method
 
 .method public constructor <init>(Landroidx/compose/animation/core/AnimationState;Landroidx/compose/animation/core/AnimationEndReason;)V
-    .locals 1
+    .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -84,21 +84,13 @@
         }
     .end annotation
 
-    const-string v0, "endState"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string v0, "endReason"
-
-    invoke-static {p2, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 460
+    .line 467
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 466
+    .line 473
     iput-object p1, p0, Landroidx/compose/animation/core/AnimationResult;->endState:Landroidx/compose/animation/core/AnimationState;
 
-    .line 474
+    .line 481
     iput-object p2, p0, Landroidx/compose/animation/core/AnimationResult;->endReason:Landroidx/compose/animation/core/AnimationEndReason;
 
     return-void
@@ -109,7 +101,7 @@
 .method public final getEndReason()Landroidx/compose/animation/core/AnimationEndReason;
     .locals 0
 
-    .line 474
+    .line 481
     iget-object p0, p0, Landroidx/compose/animation/core/AnimationResult;->endReason:Landroidx/compose/animation/core/AnimationEndReason;
 
     return-object p0
@@ -125,7 +117,7 @@
         }
     .end annotation
 
-    .line 466
+    .line 473
     iget-object p0, p0, Landroidx/compose/animation/core/AnimationResult;->endState:Landroidx/compose/animation/core/AnimationState;
 
     return-object p0
@@ -134,7 +126,7 @@
 .method public toString()Ljava/lang/String;
     .locals 2
 
-    .line 476
+    .line 483
     new-instance v0, Ljava/lang/StringBuilder;
 
     const-string v1, "AnimationResult(endReason="

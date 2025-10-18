@@ -49,7 +49,17 @@
 .end annotation
 
 
+# static fields
+.field public static final $stable:I
+
+
 # direct methods
+.method static constructor <clinit>()V
+    .locals 0
+
+    return-void
+.end method
+
 .method public constructor <init>()V
     .locals 0
 
@@ -90,10 +100,6 @@
             "(TE;)Z"
         }
     .end annotation
-
-    const-string v0, "element"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 13
     instance-of v0, p1, Ljava/lang/Object;
@@ -164,10 +170,6 @@
             "(TE;)Z"
         }
     .end annotation
-
-    const-string v0, "element"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 21
     instance-of v0, p1, Ljava/lang/Object;

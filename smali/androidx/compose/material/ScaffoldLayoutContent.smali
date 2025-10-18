@@ -75,7 +75,7 @@
 .method static constructor <clinit>()V
     .locals 3
 
-    .line 374
+    .line 817
     new-instance v0, Landroidx/compose/material/ScaffoldLayoutContent;
 
     const-string v1, "TopBar"
@@ -143,7 +143,7 @@
         }
     .end annotation
 
-    .line 374
+    .line 817
     invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
     return-void

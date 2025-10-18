@@ -25,7 +25,7 @@
 .method private constructor <init>(Ljp/co/sony/mc/camera/interaction/TouchActionTranslator;)V
     .locals 0
 
-    .line 284
+    .line 191
     iput-object p1, p0, Ljp/co/sony/mc/camera/interaction/TouchActionTranslator$Idle;->this$0:Ljp/co/sony/mc/camera/interaction/TouchActionTranslator;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -46,7 +46,7 @@
 .method public handleMotionEvent(Landroid/view/MotionEvent;)V
     .locals 4
 
-    .line 287
+    .line 194
     invoke-virtual {p1}, Landroid/view/MotionEvent;->getActionMasked()I
 
     move-result v0
@@ -55,7 +55,7 @@
 
     return-void
 
-    .line 289
+    .line 196
     :cond_0
     iget-object v0, p0, Ljp/co/sony/mc/camera/interaction/TouchActionTranslator$Idle;->this$0:Ljp/co/sony/mc/camera/interaction/TouchActionTranslator;
 
@@ -65,7 +65,7 @@
 
     invoke-static {v0, v1}, Ljp/co/sony/mc/camera/interaction/TouchActionTranslator;->-$$Nest$fputmPreDownMotionEvent(Ljp/co/sony/mc/camera/interaction/TouchActionTranslator;Landroid/view/MotionEvent;)V
 
-    .line 290
+    .line 197
     iget-object v0, p0, Ljp/co/sony/mc/camera/interaction/TouchActionTranslator$Idle;->this$0:Ljp/co/sony/mc/camera/interaction/TouchActionTranslator;
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/interaction/TouchActionTranslator;->-$$Nest$fgetmClientListener(Ljp/co/sony/mc/camera/interaction/TouchActionTranslator;)Ljp/co/sony/mc/camera/interaction/TouchActionTranslator$TouchActionListener;
@@ -76,7 +76,7 @@
 
     const/4 v2, 0x0
 
-    .line 291
+    .line 198
     invoke-virtual {p1, v2}, Landroid/view/MotionEvent;->getX(I)F
 
     move-result v3
@@ -91,10 +91,10 @@
 
     invoke-direct {v1, v3, p1}, Landroid/graphics/Point;-><init>(II)V
 
-    .line 290
+    .line 197
     invoke-interface {v0, v1}, Ljp/co/sony/mc/camera/interaction/TouchActionTranslator$TouchActionListener;->onSingleTouched(Landroid/graphics/Point;)V
 
-    .line 292
+    .line 199
     iget-object p1, p0, Ljp/co/sony/mc/camera/interaction/TouchActionTranslator$Idle;->this$0:Ljp/co/sony/mc/camera/interaction/TouchActionTranslator;
 
     new-instance v0, Ljp/co/sony/mc/camera/interaction/TouchActionTranslator$SingleDown;

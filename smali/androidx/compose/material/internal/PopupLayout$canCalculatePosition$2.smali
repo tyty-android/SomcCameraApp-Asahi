@@ -1,6 +1,6 @@
 .class final Landroidx/compose/material/internal/PopupLayout$canCalculatePosition$2;
 .super Lkotlin/jvm/internal/Lambda;
-.source "ExposedDropdownMenuPopup.kt"
+.source "ExposedDropdownMenuPopup.android.kt"
 
 # interfaces
 .implements Lkotlin/jvm/functions/Function0;

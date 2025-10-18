@@ -5,12 +5,12 @@
 
 # annotations
 .annotation system Ldalvik/annotation/SourceDebugExtension;
-    value = "SMAP\nDragGestureDetectorCopy.kt\nKotlin\n*S Kotlin\n*F\n+ 1 DragGestureDetectorCopy.kt\nandroidx/compose/material/DragGestureDetectorCopyKt\n+ 2 ListUtils.kt\nandroidx/compose/ui/util/ListUtilsKt\n+ 3 Dp.kt\nandroidx/compose/ui/unit/DpKt\n+ 4 Dp.kt\nandroidx/compose/ui/unit/Dp\n*L\n1#1,114:1\n53#1,10:115\n63#1,4:134\n67#1,29:145\n116#2,2:125\n33#2,6:127\n118#2:133\n33#2,6:138\n118#2:144\n116#2,2:174\n33#2,6:176\n118#2:182\n116#2,2:183\n33#2,6:185\n118#2:191\n116#2,2:192\n33#2,6:194\n118#2:200\n164#3:201\n154#3:202\n81#4:203\n*S KotlinDebug\n*F\n+ 1 DragGestureDetectorCopy.kt\nandroidx/compose/material/DragGestureDetectorCopyKt\n*L\n40#1:115,10\n40#1:134,4\n40#1:145,29\n40#1:125,2\n40#1:127,6\n40#1:133\n40#1:138,6\n40#1:144\n62#1:174,2\n62#1:176,6\n62#1:182\n66#1:183,2\n66#1:185,6\n66#1:191\n103#1:192,2\n103#1:194,6\n103#1:200\n105#1:201\n106#1:202\n107#1:203\n*E\n"
+    value = "SMAP\nDragGestureDetectorCopy.kt\nKotlin\n*S Kotlin\n*F\n+ 1 DragGestureDetectorCopy.kt\nandroidx/compose/material/DragGestureDetectorCopyKt\n+ 2 ListUtils.kt\nandroidx/compose/ui/util/ListUtilsKt\n+ 3 Dp.kt\nandroidx/compose/ui/unit/DpKt\n+ 4 Dp.kt\nandroidx/compose/ui/unit/Dp\n*L\n1#1,115:1\n53#1,10:116\n63#1,4:135\n67#1,29:146\n116#2,2:126\n33#2,6:128\n118#2:134\n33#2,6:139\n118#2:145\n116#2,2:175\n33#2,6:177\n118#2:183\n116#2,2:184\n33#2,6:186\n118#2:192\n116#2,2:193\n33#2,6:195\n118#2:201\n164#3:202\n154#3:203\n81#4:204\n*S KotlinDebug\n*F\n+ 1 DragGestureDetectorCopy.kt\nandroidx/compose/material/DragGestureDetectorCopyKt\n*L\n40#1:116,10\n40#1:135,4\n40#1:146,29\n40#1:126,2\n40#1:128,6\n40#1:134\n40#1:139,6\n40#1:145\n62#1:175,2\n62#1:177,6\n62#1:183\n66#1:184,2\n66#1:186,6\n66#1:192\n103#1:193,2\n103#1:195,6\n103#1:201\n105#1:202\n106#1:203\n107#1:204\n*E\n"
 .end annotation
 
 .annotation runtime Lkotlin/Metadata;
     d1 = {
-        "\u0000Z\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0003\n\u0002\u0010\u0007\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0003\n\u0002\u0010\u0002\n\u0002\u0008\u0004\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0003\n\u0002\u0010\u000b\n\u0002\u0018\u0002\n\u0002\u0008\u0003\n\u0002\u0018\u0002\n\u0002\u0008\u0003\u001ag\u0010\u0006\u001a\u0004\u0018\u00010\u0007*\u00020\u00082\u0006\u0010\t\u001a\u00020\n2\u0006\u0010\u000b\u001a\u00020\u000c26\u0010\r\u001a2\u0012\u0013\u0012\u00110\u0007\u00a2\u0006\u000c\u0008\u000f\u0012\u0008\u0008\u0010\u0012\u0004\u0008\u0008(\u0011\u0012\u0013\u0012\u00110\u0005\u00a2\u0006\u000c\u0008\u000f\u0012\u0008\u0008\u0010\u0012\u0004\u0008\u0008(\u0012\u0012\u0004\u0012\u00020\u00130\u000eH\u0080@\u00f8\u0001\u0001\u00f8\u0001\u0000\u00f8\u0001\u0000\u00a2\u0006\u0004\u0008\u0014\u0010\u0015\u001a]\u0010\u0016\u001a\u0004\u0018\u00010\u0007*\u00020\u00082\u0006\u0010\t\u001a\u00020\n2\u0006\u0010\u000b\u001a\u00020\u000c2\u0018\u0010\r\u001a\u0014\u0012\u0004\u0012\u00020\u0007\u0012\u0004\u0012\u00020\u0005\u0012\u0004\u0012\u00020\u00130\u000e2\u0012\u0010\u0017\u001a\u000e\u0012\u0004\u0012\u00020\u0019\u0012\u0004\u0012\u00020\u00050\u0018H\u0082H\u00f8\u0001\u0001\u00f8\u0001\u0000\u00f8\u0001\u0000\u00a2\u0006\u0004\u0008\u001a\u0010\u001b\u001a!\u0010\u001c\u001a\u00020\u001d*\u00020\u001e2\u0006\u0010\t\u001a\u00020\nH\u0002\u00f8\u0001\u0001\u00f8\u0001\u0000\u00a2\u0006\u0004\u0008\u001f\u0010 \u001a!\u0010!\u001a\u00020\u0005*\u00020\"2\u0006\u0010\u000b\u001a\u00020\u000cH\u0000\u00f8\u0001\u0001\u00f8\u0001\u0000\u00a2\u0006\u0004\u0008#\u0010$\"\u0013\u0010\u0000\u001a\u00020\u0001X\u0082\u0004\u00f8\u0001\u0000\u00a2\u0006\u0004\n\u0002\u0010\u0002\"\u0013\u0010\u0003\u001a\u00020\u0001X\u0082\u0004\u00f8\u0001\u0000\u00a2\u0006\u0004\n\u0002\u0010\u0002\"\u000e\u0010\u0004\u001a\u00020\u0005X\u0082\u0004\u00a2\u0006\u0002\n\u0000\u0082\u0002\u000b\n\u0002\u0008\u0019\n\u0005\u0008\u00a1\u001e0\u0001\u00a8\u0006%"
+        "\u0000Z\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0003\n\u0002\u0010\u0007\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0003\n\u0002\u0010\u0002\n\u0002\u0008\u0004\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0003\n\u0002\u0010\u000b\n\u0002\u0018\u0002\n\u0002\u0008\u0003\n\u0002\u0018\u0002\n\u0002\u0008\u0003\u001aa\u0010\u0006\u001a\u0004\u0018\u00010\u0007*\u00020\u00082\u0006\u0010\t\u001a\u00020\n2\u0006\u0010\u000b\u001a\u00020\u000c26\u0010\r\u001a2\u0012\u0013\u0012\u00110\u0007\u00a2\u0006\u000c\u0008\u000f\u0012\u0008\u0008\u0010\u0012\u0004\u0008\u0008(\u0011\u0012\u0013\u0012\u00110\u0005\u00a2\u0006\u000c\u0008\u000f\u0012\u0008\u0008\u0010\u0012\u0004\u0008\u0008(\u0012\u0012\u0004\u0012\u00020\u00130\u000eH\u0080@\u00f8\u0001\u0000\u00a2\u0006\u0004\u0008\u0014\u0010\u0015\u001aW\u0010\u0016\u001a\u0004\u0018\u00010\u0007*\u00020\u00082\u0006\u0010\t\u001a\u00020\n2\u0006\u0010\u000b\u001a\u00020\u000c2\u0018\u0010\r\u001a\u0014\u0012\u0004\u0012\u00020\u0007\u0012\u0004\u0012\u00020\u0005\u0012\u0004\u0012\u00020\u00130\u000e2\u0012\u0010\u0017\u001a\u000e\u0012\u0004\u0012\u00020\u0019\u0012\u0004\u0012\u00020\u00050\u0018H\u0082H\u00f8\u0001\u0000\u00a2\u0006\u0004\u0008\u001a\u0010\u001b\u001a\u001e\u0010\u001c\u001a\u00020\u001d*\u00020\u001e2\u0006\u0010\t\u001a\u00020\nH\u0002\u00f8\u0001\u0000\u00a2\u0006\u0004\u0008\u001f\u0010 \u001a\u001e\u0010!\u001a\u00020\u0005*\u00020\"2\u0006\u0010\u000b\u001a\u00020\u000cH\u0000\u00f8\u0001\u0000\u00a2\u0006\u0004\u0008#\u0010$\"\u0010\u0010\u0000\u001a\u00020\u0001X\u0082\u0004\u00a2\u0006\u0004\n\u0002\u0010\u0002\"\u0010\u0010\u0003\u001a\u00020\u0001X\u0082\u0004\u00a2\u0006\u0004\n\u0002\u0010\u0002\"\u000e\u0010\u0004\u001a\u00020\u0005X\u0082\u0004\u00a2\u0006\u0002\n\u0000\u0082\u0002\u0007\n\u0005\u0008\u00a1\u001e0\u0001\u00a8\u0006%"
     }
     d2 = {
         "defaultTouchSlop",
@@ -78,7 +78,7 @@
 
     double-to-float v0, v0
 
-    .line 201
+    .line 202
     invoke-static {v0}, Landroidx/compose/ui/unit/Dp;->constructor-impl(F)F
 
     move-result v0
@@ -90,7 +90,7 @@
 
     int-to-float v1, v1
 
-    .line 202
+    .line 203
     invoke-static {v1}, Landroidx/compose/ui/unit/Dp;->constructor-impl(F)F
 
     move-result v1
@@ -268,7 +268,7 @@
     :cond_3
     invoke-static {v2}, Lkotlin/ResultKt;->throwOnFailure(Ljava/lang/Object;)V
 
-    .line 115
+    .line 116
     invoke-interface/range {p0 .. p0}, Landroidx/compose/ui/input/pointer/AwaitPointerEventScope;->getCurrentEvent()Landroidx/compose/ui/input/pointer/PointerEvent;
 
     move-result-object v2
@@ -281,7 +281,7 @@
 
     goto/16 :goto_a
 
-    .line 118
+    .line 119
     :cond_4
     invoke-interface/range {p0 .. p0}, Landroidx/compose/ui/input/pointer/AwaitPointerEventScope;->getViewConfiguration()Landroidx/compose/ui/platform/ViewConfiguration;
 
@@ -293,7 +293,7 @@
 
     move-result v2
 
-    .line 119
+    .line 120
     new-instance v5, Lkotlin/jvm/internal/Ref$LongRef;
 
     invoke-direct {v5}, Lkotlin/jvm/internal/Ref$LongRef;-><init>()V
@@ -312,7 +312,7 @@
 
     const/4 v2, 0x0
 
-    .line 123
+    .line 124
     :goto_1
     iput-object v1, v5, Landroidx/compose/material/DragGestureDetectorCopyKt$awaitHorizontalPointerSlopOrCancellation$1;->L$0:Ljava/lang/Object;
 
@@ -353,12 +353,12 @@
     :goto_2
     check-cast v2, Landroidx/compose/ui/input/pointer/PointerEvent;
 
-    .line 124
+    .line 125
     invoke-virtual {v2}, Landroidx/compose/ui/input/pointer/PointerEvent;->getChanges()Ljava/util/List;
 
     move-result-object v12
 
-    .line 128
+    .line 129
     invoke-interface {v12}, Ljava/util/List;->size()I
 
     move-result v13
@@ -370,17 +370,17 @@
     :goto_3
     if-ge v15, v13, :cond_7
 
-    .line 129
+    .line 130
     invoke-interface {v12, v15}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
     move-result-object v16
 
-    .line 126
+    .line 127
     move-object/from16 v17, v16
 
     check-cast v17, Landroidx/compose/ui/input/pointer/PointerInputChange;
 
-    .line 124
+    .line 125
     invoke-virtual/range {v17 .. v17}, Landroidx/compose/ui/input/pointer/PointerInputChange;->getId-J3iCeTQ()J
 
     move-result-wide v8
@@ -416,7 +416,7 @@
 
     check-cast v6, Landroidx/compose/ui/input/pointer/PointerInputChange;
 
-    .line 134
+    .line 135
     invoke-virtual {v6}, Landroidx/compose/ui/input/pointer/PointerInputChange;->isConsumed()Z
 
     move-result v7
@@ -425,7 +425,7 @@
 
     goto/16 :goto_8
 
-    .line 136
+    .line 137
     :cond_8
     invoke-static {v6}, Landroidx/compose/ui/input/pointer/PointerEventKt;->changedToUpIgnoreConsumed(Landroidx/compose/ui/input/pointer/PointerInputChange;)Z
 
@@ -433,12 +433,12 @@
 
     if-eqz v7, :cond_c
 
-    .line 137
+    .line 138
     invoke-virtual {v2}, Landroidx/compose/ui/input/pointer/PointerEvent;->getChanges()Ljava/util/List;
 
     move-result-object v2
 
-    .line 139
+    .line 140
     invoke-interface {v2}, Ljava/util/List;->size()I
 
     move-result v6
@@ -446,17 +446,17 @@
     :goto_5
     if-ge v14, v6, :cond_a
 
-    .line 140
+    .line 141
     invoke-interface {v2, v14}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
     move-result-object v7
 
-    .line 126
+    .line 127
     move-object v8, v7
 
     check-cast v8, Landroidx/compose/ui/input/pointer/PointerInputChange;
 
-    .line 137
+    .line 138
     invoke-virtual {v8}, Landroidx/compose/ui/input/pointer/PointerInputChange;->getPressed()Z
 
     move-result v8
@@ -480,7 +480,7 @@
 
     goto :goto_8
 
-    .line 149
+    .line 150
     :cond_b
     invoke-virtual {v7}, Landroidx/compose/ui/input/pointer/PointerInputChange;->getId-J3iCeTQ()J
 
@@ -500,13 +500,13 @@
 
     goto :goto_9
 
-    .line 152
+    .line 153
     :cond_c
     invoke-virtual {v6}, Landroidx/compose/ui/input/pointer/PointerInputChange;->getPosition-F1C5BW0()J
 
     move-result-wide v7
 
-    .line 153
+    .line 154
     invoke-virtual {v6}, Landroidx/compose/ui/input/pointer/PointerInputChange;->getPreviousPosition-F1C5BW0()J
 
     move-result-wide v12
@@ -524,7 +524,7 @@
 
     add-float/2addr v2, v3
 
-    .line 158
+    .line 159
     invoke-static {v2}, Ljava/lang/Math;->abs(F)F
 
     move-result v3
@@ -533,7 +533,7 @@
 
     if-gez v3, :cond_f
 
-    .line 161
+    .line 162
     sget-object v3, Landroidx/compose/ui/input/pointer/PointerEventPass;->Final:Landroidx/compose/ui/input/pointer/PointerEventPass;
 
     iput-object v1, v10, Landroidx/compose/material/DragGestureDetectorCopyKt$awaitHorizontalPointerSlopOrCancellation$1;->L$0:Ljava/lang/Object;
@@ -565,7 +565,7 @@
 
     move-object v5, v6
 
-    .line 162
+    .line 163
     :goto_7
     invoke-virtual {v5}, Landroidx/compose/ui/input/pointer/PointerInputChange;->isConsumed()Z
 
@@ -593,7 +593,7 @@
     :cond_f
     const/4 v7, 0x2
 
-    .line 168
+    .line 169
     invoke-static {v2}, Ljava/lang/Math;->signum(F)F
 
     move-result v3
@@ -606,10 +606,10 @@
 
     move-result-object v2
 
-    .line 166
+    .line 167
     invoke-interface {v1, v6, v2}, Lkotlin/jvm/functions/Function2;->invoke(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 170
+    .line 171
     invoke-virtual {v6}, Landroidx/compose/ui/input/pointer/PointerInputChange;->isConsumed()Z
 
     move-result v2
@@ -725,7 +725,7 @@
 
     move-result-object v11
 
-    .line 177
+    .line 178
     invoke-interface {v11}, Ljava/util/List;->size()I
 
     move-result v12
@@ -735,12 +735,12 @@
     :goto_1
     if-ge v13, v12, :cond_2
 
-    .line 178
+    .line 179
     invoke-interface {v11, v13}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
     move-result-object v14
 
-    .line 175
+    .line 176
     move-object v15, v14
 
     check-cast v15, Landroidx/compose/ui/input/pointer/PointerInputChange;
@@ -762,7 +762,7 @@
 
     move-result-object v1
 
-    .line 175
+    .line 176
     move-object v2, v1
 
     check-cast v2, Ljava/lang/Boolean;
@@ -819,7 +819,7 @@
 
     move-result-object v1
 
-    .line 186
+    .line 187
     invoke-interface {v1}, Ljava/util/List;->size()I
 
     move-result v2
@@ -829,12 +829,12 @@
     :goto_3
     if-ge v8, v2, :cond_5
 
-    .line 187
+    .line 188
     invoke-interface {v1, v8}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
     move-result-object v9
 
-    .line 184
+    .line 185
     move-object v10, v9
 
     check-cast v10, Landroidx/compose/ui/input/pointer/PointerInputChange;
@@ -848,7 +848,7 @@
 
     move-result-object v10
 
-    .line 184
+    .line 185
     move-object v11, v10
 
     check-cast v11, Ljava/lang/Boolean;
@@ -1016,7 +1016,7 @@
 
     move-result-object p0
 
-    .line 195
+    .line 196
     invoke-interface {p0}, Ljava/util/List;->size()I
 
     move-result v0
@@ -1028,12 +1028,12 @@
     :goto_0
     if-ge v2, v0, :cond_1
 
-    .line 196
+    .line 197
     invoke-interface {p0, v2}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
     move-result-object v3
 
-    .line 193
+    .line 194
     move-object v4, v3
 
     check-cast v4, Landroidx/compose/ui/input/pointer/PointerInputChange;
@@ -1082,10 +1082,6 @@
 
 .method public static final pointerSlop-E8SPZFQ(Landroidx/compose/ui/platform/ViewConfiguration;I)F
     .locals 1
-
-    const-string v0, "$this$pointerSlop"
-
-    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 111
     sget-object v0, Landroidx/compose/ui/input/pointer/PointerType;->Companion:Landroidx/compose/ui/input/pointer/PointerType$Companion;

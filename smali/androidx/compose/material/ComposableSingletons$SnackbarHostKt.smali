@@ -44,7 +44,7 @@
 
     const/4 v0, 0x0
 
-    .line 154
+    .line 157
     sget-object v1, Landroidx/compose/material/ComposableSingletons$SnackbarHostKt$lambda-1$1;->INSTANCE:Landroidx/compose/material/ComposableSingletons$SnackbarHostKt$lambda-1$1;
 
     const v2, 0x3b67813e

@@ -40,7 +40,7 @@
         }
     .end annotation
 
-    .line 31
+    .line 30
     new-instance v0, Landroidx/compose/runtime/ThreadLocal;
 
     sget-object v1, Landroidx/compose/runtime/ExpectKt$ThreadLocal$1;->INSTANCE:Landroidx/compose/runtime/ExpectKt$ThreadLocal$1;
@@ -54,10 +54,6 @@
 
 .method public static final postIncrement(Landroidx/compose/runtime/AtomicInt;)I
     .locals 1
-
-    const-string v0, "<this>"
-
-    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
     const/4 v0, 0x1
 

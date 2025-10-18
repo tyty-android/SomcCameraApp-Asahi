@@ -36,7 +36,7 @@
 .method static constructor <clinit>()V
     .locals 2
 
-    .line 418
+    .line 424
     new-instance v0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon;
 
     const/4 v1, 0x1
@@ -45,10 +45,10 @@
 
     sput-object v0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon;->defaultInstance:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon;
 
-    .line 419
+    .line 425
     invoke-static {}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp;->internalForceInit()V
 
-    .line 420
+    .line 426
     invoke-direct {v0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon;->initFields()V
 
     return-void
@@ -62,7 +62,7 @@
 
     const/4 v0, -0x1
 
-    .line 241
+    .line 247
     iput v0, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon;->memoizedSerializedSize:I
 
     .line 15
@@ -87,7 +87,7 @@
 
     const/4 p1, -0x1
 
-    .line 241
+    .line 247
     iput p1, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon;->memoizedSerializedSize:I
 
     return-void
@@ -111,7 +111,7 @@
 .method public static newBuilder()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$Builder;
     .locals 1
 
-    .line 318
+    .line 324
     invoke-static {}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$Builder;->-$$Nest$smcreate()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$Builder;
 
     move-result-object v0
@@ -122,7 +122,7 @@
 .method public static newBuilder(Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon;)Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$Builder;
     .locals 1
 
-    .line 321
+    .line 327
     invoke-static {}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon;->newBuilder()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$Builder;
 
     move-result-object v0
@@ -142,19 +142,19 @@
         }
     .end annotation
 
-    .line 287
+    .line 293
     invoke-static {}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon;->newBuilder()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$Builder;
 
     move-result-object v0
 
-    .line 288
+    .line 294
     invoke-virtual {v0, p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$Builder;->mergeDelimitedFrom(Ljava/io/InputStream;)Z
 
     move-result p0
 
     if-eqz p0, :cond_0
 
-    .line 289
+    .line 295
     invoke-static {v0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$Builder;->-$$Nest$mbuildParsed(Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$Builder;)Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon;
 
     move-result-object p0
@@ -175,19 +175,19 @@
         }
     .end annotation
 
-    .line 298
+    .line 304
     invoke-static {}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon;->newBuilder()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$Builder;
 
     move-result-object v0
 
-    .line 299
+    .line 305
     invoke-virtual {v0, p0, p1}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$Builder;->mergeDelimitedFrom(Ljava/io/InputStream;Lcom/google/protobuf/ExtensionRegistryLite;)Z
 
     move-result p0
 
     if-eqz p0, :cond_0
 
-    .line 300
+    .line 306
     invoke-static {v0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$Builder;->-$$Nest$mbuildParsed(Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$Builder;)Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon;
 
     move-result-object p0
@@ -208,7 +208,7 @@
         }
     .end annotation
 
-    .line 254
+    .line 260
     invoke-static {}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon;->newBuilder()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$Builder;
 
     move-result-object v0
@@ -234,7 +234,7 @@
         }
     .end annotation
 
-    .line 260
+    .line 266
     invoke-static {}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon;->newBuilder()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$Builder;
 
     move-result-object v0
@@ -245,7 +245,7 @@
 
     check-cast p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$Builder;
 
-    .line 261
+    .line 267
     invoke-static {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$Builder;->-$$Nest$mbuildParsed(Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$Builder;)Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon;
 
     move-result-object p0
@@ -261,7 +261,7 @@
         }
     .end annotation
 
-    .line 308
+    .line 314
     invoke-static {}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon;->newBuilder()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$Builder;
 
     move-result-object v0
@@ -287,7 +287,7 @@
         }
     .end annotation
 
-    .line 314
+    .line 320
     invoke-static {}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon;->newBuilder()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$Builder;
 
     move-result-object v0
@@ -296,7 +296,7 @@
 
     move-result-object p0
 
-    .line 315
+    .line 321
     invoke-static {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$Builder;->-$$Nest$mbuildParsed(Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$Builder;)Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon;
 
     move-result-object p0
@@ -312,7 +312,7 @@
         }
     .end annotation
 
-    .line 276
+    .line 282
     invoke-static {}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon;->newBuilder()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$Builder;
 
     move-result-object v0
@@ -338,7 +338,7 @@
         }
     .end annotation
 
-    .line 282
+    .line 288
     invoke-static {}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon;->newBuilder()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$Builder;
 
     move-result-object v0
@@ -349,7 +349,7 @@
 
     check-cast p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$Builder;
 
-    .line 283
+    .line 289
     invoke-static {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$Builder;->-$$Nest$mbuildParsed(Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$Builder;)Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon;
 
     move-result-object p0
@@ -365,7 +365,7 @@
         }
     .end annotation
 
-    .line 265
+    .line 271
     invoke-static {}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon;->newBuilder()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$Builder;
 
     move-result-object v0
@@ -391,7 +391,7 @@
         }
     .end annotation
 
-    .line 271
+    .line 277
     invoke-static {}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon;->newBuilder()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$Builder;
 
     move-result-object v0
@@ -402,7 +402,7 @@
 
     check-cast p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$Builder;
 
-    .line 272
+    .line 278
     invoke-static {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$Builder;->-$$Nest$mbuildParsed(Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$Builder;)Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon;
 
     move-result-object p0
@@ -435,7 +435,7 @@
 .method public getSerializedSize()I
     .locals 2
 
-    .line 243
+    .line 249
     iget v0, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon;->memoizedSerializedSize:I
 
     const/4 v1, -0x1
@@ -447,7 +447,7 @@
     :cond_0
     const/4 v0, 0x0
 
-    .line 247
+    .line 253
     iput v0, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon;->memoizedSerializedSize:I
 
     return v0
@@ -475,7 +475,7 @@
 .method public newBuilderForType()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$Builder;
     .locals 0
 
-    .line 319
+    .line 325
     invoke-static {}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon;->newBuilder()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$Builder;
 
     move-result-object p0
@@ -497,7 +497,7 @@
 .method public toBuilder()Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$Builder;
     .locals 0
 
-    .line 323
+    .line 329
     invoke-static {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon;->newBuilder(Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon;)Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$Builder;
 
     move-result-object p0
@@ -513,7 +513,7 @@
         }
     .end annotation
 
-    .line 238
+    .line 244
     invoke-virtual {p0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon;->getSerializedSize()I
 
     return-void

@@ -1,6 +1,6 @@
 .class public interface abstract annotation Landroidx/annotation/InspectableProperty;
 .super Ljava/lang/Object;
-.source "InspectableProperty.kt"
+.source "InspectableProperty.jvm.kt"
 
 # interfaces
 .implements Ljava/lang/annotation/Annotation;
@@ -20,9 +20,9 @@
 
 .annotation system Ldalvik/annotation/MemberClasses;
     value = {
-        Landroidx/annotation/InspectableProperty$ValueType;,
         Landroidx/annotation/InspectableProperty$EnumEntry;,
-        Landroidx/annotation/InspectableProperty$FlagEntry;
+        Landroidx/annotation/InspectableProperty$FlagEntry;,
+        Landroidx/annotation/InspectableProperty$ValueType;
     }
 .end annotation
 
@@ -37,7 +37,7 @@
 .end annotation
 
 .annotation runtime Lkotlin/Deprecated;
-    message = "Replaced by the {@code androidx.resourceinpsection} package."
+    message = "Replaced by the androidx.resourceinpsection package."
 .end annotation
 
 .annotation runtime Lkotlin/Metadata;
@@ -74,7 +74,7 @@
     k = 0x1
     mv = {
         0x1,
-        0x8,
+        0x7,
         0x0
     }
     xi = 0x30

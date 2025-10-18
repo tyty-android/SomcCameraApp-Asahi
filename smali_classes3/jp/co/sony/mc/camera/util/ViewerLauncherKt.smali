@@ -23,8 +23,8 @@
     }
     k = 0x2
     mv = {
-        0x1,
-        0x9,
+        0x2,
+        0x0,
         0x0
     }
     xi = 0x30
@@ -250,7 +250,11 @@
     new-array p2, p2, [J
 
     .line 39
-    invoke-interface {v2}, Ljava/util/List;->size()I
+    move-object v3, v2
+
+    check-cast v3, Ljava/util/Collection;
+
+    invoke-interface {v3}, Ljava/util/Collection;->size()I
 
     move-result v3
 

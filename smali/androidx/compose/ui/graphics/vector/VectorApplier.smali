@@ -64,11 +64,7 @@
 .end method
 
 .method public constructor <init>(Landroidx/compose/ui/graphics/vector/VNode;)V
-    .locals 1
-
-    const-string v0, "root"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+    .locals 0
 
     .line 137
     invoke-direct {p0, p1}, Landroidx/compose/runtime/AbstractApplier;-><init>(Ljava/lang/Object;)V
@@ -106,11 +102,20 @@
 
 # virtual methods
 .method public insertBottomUp(ILandroidx/compose/ui/graphics/vector/VNode;)V
-    .locals 0
+    .locals 1
 
-    const-string p0, "instance"
+    .line 143
+    invoke-virtual {p0}, Landroidx/compose/ui/graphics/vector/VectorApplier;->getCurrent()Ljava/lang/Object;
 
-    invoke-static {p2, p0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+    move-result-object v0
+
+    check-cast v0, Landroidx/compose/ui/graphics/vector/VNode;
+
+    invoke-direct {p0, v0}, Landroidx/compose/ui/graphics/vector/VectorApplier;->asGroup(Landroidx/compose/ui/graphics/vector/VNode;)Landroidx/compose/ui/graphics/vector/GroupComponent;
+
+    move-result-object p0
+
+    invoke-virtual {p0, p1, p2}, Landroidx/compose/ui/graphics/vector/GroupComponent;->insertAt(ILandroidx/compose/ui/graphics/vector/VNode;)V
 
     return-void
 .end method
@@ -127,24 +132,7 @@
 .end method
 
 .method public insertTopDown(ILandroidx/compose/ui/graphics/vector/VNode;)V
-    .locals 1
-
-    const-string v0, "instance"
-
-    invoke-static {p2, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 139
-    invoke-virtual {p0}, Landroidx/compose/ui/graphics/vector/VectorApplier;->getCurrent()Ljava/lang/Object;
-
-    move-result-object v0
-
-    check-cast v0, Landroidx/compose/ui/graphics/vector/VNode;
-
-    invoke-direct {p0, v0}, Landroidx/compose/ui/graphics/vector/VectorApplier;->asGroup(Landroidx/compose/ui/graphics/vector/VNode;)Landroidx/compose/ui/graphics/vector/GroupComponent;
-
-    move-result-object p0
-
-    invoke-virtual {p0, p1, p2}, Landroidx/compose/ui/graphics/vector/GroupComponent;->insertAt(ILandroidx/compose/ui/graphics/vector/VNode;)V
+    .locals 0
 
     return-void
 .end method

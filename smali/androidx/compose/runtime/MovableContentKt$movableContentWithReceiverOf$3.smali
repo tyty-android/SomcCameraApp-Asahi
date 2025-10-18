@@ -180,39 +180,39 @@
     or-int/2addr v0, v1
 
     :cond_3
-    and-int/lit16 v1, p5, 0x380
+    and-int/lit16 p5, p5, 0x380
 
-    if-nez v1, :cond_5
+    if-nez p5, :cond_5
 
     invoke-interface {p4, p3}, Landroidx/compose/runtime/Composer;->changed(Ljava/lang/Object;)Z
 
-    move-result v1
+    move-result p5
 
-    if-eqz v1, :cond_4
+    if-eqz p5, :cond_4
 
-    const/16 v1, 0x100
+    const/16 p5, 0x100
 
     goto :goto_3
 
     :cond_4
-    const/16 v1, 0x80
+    const/16 p5, 0x80
 
     :goto_3
-    or-int/2addr v0, v1
+    or-int/2addr v0, p5
 
     :cond_5
-    and-int/lit16 v0, v0, 0x16db
+    and-int/lit16 p5, v0, 0x16db
 
     const/16 v1, 0x492
 
-    if-ne v0, v1, :cond_7
+    if-ne p5, v1, :cond_7
 
     .line 229
     invoke-interface {p4}, Landroidx/compose/runtime/Composer;->getSkipping()Z
 
-    move-result v0
+    move-result p5
 
-    if-nez v0, :cond_6
+    if-nez p5, :cond_6
 
     goto :goto_4
 
@@ -225,17 +225,17 @@
     :goto_4
     invoke-static {}, Landroidx/compose/runtime/ComposerKt;->isTraceInProgress()Z
 
-    move-result v0
+    move-result p5
 
-    if-eqz v0, :cond_8
+    if-eqz p5, :cond_8
 
-    const/4 v0, -0x1
+    const/4 p5, -0x1
 
-    const-string v1, "androidx.compose.runtime.movableContentWithReceiverOf.<anonymous> (MovableContent.kt:227)"
+    const-string v1, "androidx.compose.runtime.movableContentWithReceiverOf.<anonymous> (MovableContent.kt:228)"
 
     const v2, 0x22c605c5
 
-    invoke-static {v2, p5, v0, v1}, Landroidx/compose/runtime/ComposerKt;->traceEventStart(IIILjava/lang/String;)V
+    invoke-static {v2, v0, p5, v1}, Landroidx/compose/runtime/ComposerKt;->traceEventStart(IIILjava/lang/String;)V
 
     :cond_8
     iget-object p0, p0, Landroidx/compose/runtime/MovableContentKt$movableContentWithReceiverOf$3;->$movableContent:Landroidx/compose/runtime/MovableContent;

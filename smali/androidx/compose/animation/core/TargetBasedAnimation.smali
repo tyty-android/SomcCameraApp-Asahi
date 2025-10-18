@@ -160,7 +160,7 @@
 .end method
 
 .method public constructor <init>(Landroidx/compose/animation/core/AnimationSpec;Landroidx/compose/animation/core/TwoWayConverter;Ljava/lang/Object;Ljava/lang/Object;Landroidx/compose/animation/core/AnimationVector;)V
-    .locals 7
+    .locals 6
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -171,31 +171,23 @@
         }
     .end annotation
 
-    const-string v0, "animationSpec"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string/jumbo v0, "typeConverter"
-
-    invoke-static {p2, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 219
+    .line 221
     invoke-interface {p1, p2}, Landroidx/compose/animation/core/AnimationSpec;->vectorize(Landroidx/compose/animation/core/TwoWayConverter;)Landroidx/compose/animation/core/VectorizedAnimationSpec;
 
-    move-result-object v2
+    move-result-object v1
 
-    move-object v1, p0
+    move-object v0, p0
 
-    move-object v3, p2
+    move-object v2, p2
 
-    move-object v4, p3
+    move-object v3, p3
 
-    move-object v5, p4
+    move-object v4, p4
 
-    move-object v6, p5
+    move-object v5, p5
 
-    .line 218
-    invoke-direct/range {v1 .. v6}, Landroidx/compose/animation/core/TargetBasedAnimation;-><init>(Landroidx/compose/animation/core/VectorizedAnimationSpec;Landroidx/compose/animation/core/TwoWayConverter;Ljava/lang/Object;Ljava/lang/Object;Landroidx/compose/animation/core/AnimationVector;)V
+    .line 220
+    invoke-direct/range {v0 .. v5}, Landroidx/compose/animation/core/TargetBasedAnimation;-><init>(Landroidx/compose/animation/core/VectorizedAnimationSpec;Landroidx/compose/animation/core/TwoWayConverter;Ljava/lang/Object;Ljava/lang/Object;Landroidx/compose/animation/core/AnimationVector;)V
 
     return-void
 .end method
@@ -222,7 +214,7 @@
 
     move-object v4, p4
 
-    .line 212
+    .line 214
     invoke-direct/range {v0 .. v5}, Landroidx/compose/animation/core/TargetBasedAnimation;-><init>(Landroidx/compose/animation/core/AnimationSpec;Landroidx/compose/animation/core/TwoWayConverter;Ljava/lang/Object;Ljava/lang/Object;Landroidx/compose/animation/core/AnimationVector;)V
 
     return-void
@@ -240,30 +232,22 @@
         }
     .end annotation
 
-    const-string v0, "animationSpec"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string/jumbo v0, "typeConverter"
-
-    invoke-static {p2, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 183
+    .line 185
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 184
+    .line 186
     iput-object p1, p0, Landroidx/compose/animation/core/TargetBasedAnimation;->animationSpec:Landroidx/compose/animation/core/VectorizedAnimationSpec;
 
-    .line 185
+    .line 187
     iput-object p2, p0, Landroidx/compose/animation/core/TargetBasedAnimation;->typeConverter:Landroidx/compose/animation/core/TwoWayConverter;
 
-    .line 186
+    .line 188
     iput-object p3, p0, Landroidx/compose/animation/core/TargetBasedAnimation;->initialValue:Ljava/lang/Object;
 
-    .line 187
+    .line 189
     iput-object p4, p0, Landroidx/compose/animation/core/TargetBasedAnimation;->targetValue:Ljava/lang/Object;
 
-    .line 226
+    .line 228
     invoke-virtual {p0}, Landroidx/compose/animation/core/TargetBasedAnimation;->getTypeConverter()Landroidx/compose/animation/core/TwoWayConverter;
 
     move-result-object p2
@@ -280,7 +264,7 @@
 
     iput-object p2, p0, Landroidx/compose/animation/core/TargetBasedAnimation;->initialValueVector:Landroidx/compose/animation/core/AnimationVector;
 
-    .line 227
+    .line 229
     invoke-virtual {p0}, Landroidx/compose/animation/core/TargetBasedAnimation;->getTypeConverter()Landroidx/compose/animation/core/TwoWayConverter;
 
     move-result-object p4
@@ -303,7 +287,7 @@
 
     if-eqz p5, :cond_0
 
-    .line 229
+    .line 231
     invoke-static {p5}, Landroidx/compose/animation/core/AnimationVectorsKt;->copy(Landroidx/compose/animation/core/AnimationVector;)Landroidx/compose/animation/core/AnimationVector;
 
     move-result-object p5
@@ -325,23 +309,23 @@
 
     check-cast p3, Landroidx/compose/animation/core/AnimationVector;
 
-    .line 230
+    .line 232
     invoke-static {p3}, Landroidx/compose/animation/core/AnimationVectorsKt;->newInstance(Landroidx/compose/animation/core/AnimationVector;)Landroidx/compose/animation/core/AnimationVector;
 
     move-result-object p5
 
-    .line 229
+    .line 231
     :cond_1
     iput-object p5, p0, Landroidx/compose/animation/core/TargetBasedAnimation;->initialVelocityVector:Landroidx/compose/animation/core/AnimationVector;
 
-    .line 254
+    .line 256
     invoke-interface {p1, p2, p4, p5}, Landroidx/compose/animation/core/VectorizedAnimationSpec;->getDurationNanos(Landroidx/compose/animation/core/AnimationVector;Landroidx/compose/animation/core/AnimationVector;Landroidx/compose/animation/core/AnimationVector;)J
 
     move-result-wide v0
 
     iput-wide v0, p0, Landroidx/compose/animation/core/TargetBasedAnimation;->durationNanos:J
 
-    .line 260
+    .line 262
     invoke-interface {p1, p2, p4, p5}, Landroidx/compose/animation/core/VectorizedAnimationSpec;->getEndVelocity(Landroidx/compose/animation/core/AnimationVector;Landroidx/compose/animation/core/AnimationVector;Landroidx/compose/animation/core/AnimationVector;)Landroidx/compose/animation/core/AnimationVector;
 
     move-result-object p1
@@ -373,7 +357,7 @@
 
     move-object v4, p4
 
-    .line 183
+    .line 185
     invoke-direct/range {v0 .. v5}, Landroidx/compose/animation/core/TargetBasedAnimation;-><init>(Landroidx/compose/animation/core/VectorizedAnimationSpec;Landroidx/compose/animation/core/TwoWayConverter;Ljava/lang/Object;Ljava/lang/Object;Landroidx/compose/animation/core/AnimationVector;)V
 
     return-void
@@ -391,7 +375,7 @@
         }
     .end annotation
 
-    .line 184
+    .line 186
     iget-object p0, p0, Landroidx/compose/animation/core/TargetBasedAnimation;->animationSpec:Landroidx/compose/animation/core/VectorizedAnimationSpec;
 
     return-object p0
@@ -400,7 +384,7 @@
 .method public getDurationNanos()J
     .locals 2
 
-    .line 254
+    .line 256
     iget-wide v0, p0, Landroidx/compose/animation/core/TargetBasedAnimation;->durationNanos:J
 
     return-wide v0
@@ -414,7 +398,7 @@
         }
     .end annotation
 
-    .line 186
+    .line 188
     iget-object p0, p0, Landroidx/compose/animation/core/TargetBasedAnimation;->initialValue:Ljava/lang/Object;
 
     return-object p0
@@ -428,7 +412,7 @@
         }
     .end annotation
 
-    .line 187
+    .line 189
     iget-object p0, p0, Landroidx/compose/animation/core/TargetBasedAnimation;->targetValue:Ljava/lang/Object;
 
     return-object p0
@@ -444,7 +428,7 @@
         }
     .end annotation
 
-    .line 185
+    .line 187
     iget-object p0, p0, Landroidx/compose/animation/core/TargetBasedAnimation;->typeConverter:Landroidx/compose/animation/core/TwoWayConverter;
 
     return-object p0
@@ -458,32 +442,32 @@
         }
     .end annotation
 
-    .line 234
+    .line 236
     invoke-virtual {p0, p1, p2}, Landroidx/compose/animation/core/TargetBasedAnimation;->isFinishedFromNanos(J)Z
 
     move-result v0
 
     if-nez v0, :cond_2
 
-    .line 235
+    .line 237
     iget-object v1, p0, Landroidx/compose/animation/core/TargetBasedAnimation;->animationSpec:Landroidx/compose/animation/core/VectorizedAnimationSpec;
 
-    .line 236
+    .line 238
     iget-object v4, p0, Landroidx/compose/animation/core/TargetBasedAnimation;->initialValueVector:Landroidx/compose/animation/core/AnimationVector;
 
-    .line 237
+    .line 239
     iget-object v5, p0, Landroidx/compose/animation/core/TargetBasedAnimation;->targetValueVector:Landroidx/compose/animation/core/AnimationVector;
 
     iget-object v6, p0, Landroidx/compose/animation/core/TargetBasedAnimation;->initialVelocityVector:Landroidx/compose/animation/core/AnimationVector;
 
     move-wide v2, p1
 
-    .line 235
+    .line 237
     invoke-interface/range {v1 .. v6}, Landroidx/compose/animation/core/VectorizedAnimationSpec;->getValueFromNanos(JLandroidx/compose/animation/core/AnimationVector;Landroidx/compose/animation/core/AnimationVector;Landroidx/compose/animation/core/AnimationVector;)Landroidx/compose/animation/core/AnimationVector;
 
     move-result-object v0
 
-    .line 240
+    .line 242
     invoke-virtual {v0}, Landroidx/compose/animation/core/AnimationVector;->getSize$animation_core_release()I
 
     move-result v1
@@ -493,7 +477,7 @@
     :goto_0
     if-ge v2, v1, :cond_1
 
-    .line 241
+    .line 243
     invoke-virtual {v0, v2}, Landroidx/compose/animation/core/AnimationVector;->get$animation_core_release(I)F
 
     move-result v3
@@ -510,7 +494,7 @@
 
     goto :goto_0
 
-    .line 242
+    .line 244
     :cond_0
     new-instance v1, Ljava/lang/StringBuilder;
 
@@ -546,7 +530,7 @@
 
     move-result-object p0
 
-    .line 241
+    .line 243
     new-instance p1, Ljava/lang/IllegalStateException;
 
     invoke-virtual {p0}, Ljava/lang/Object;->toString()Ljava/lang/String;
@@ -557,7 +541,7 @@
 
     throw p1
 
-    .line 246
+    .line 248
     :cond_1
     invoke-virtual {p0}, Landroidx/compose/animation/core/TargetBasedAnimation;->getTypeConverter()Landroidx/compose/animation/core/TwoWayConverter;
 
@@ -573,7 +557,7 @@
 
     goto :goto_1
 
-    .line 249
+    .line 251
     :cond_2
     invoke-virtual {p0}, Landroidx/compose/animation/core/TargetBasedAnimation;->getTargetValue()Ljava/lang/Object;
 
@@ -591,35 +575,35 @@
         }
     .end annotation
 
-    .line 267
+    .line 269
     invoke-virtual {p0, p1, p2}, Landroidx/compose/animation/core/TargetBasedAnimation;->isFinishedFromNanos(J)Z
 
     move-result v0
 
     if-nez v0, :cond_0
 
-    .line 268
+    .line 270
     iget-object v1, p0, Landroidx/compose/animation/core/TargetBasedAnimation;->animationSpec:Landroidx/compose/animation/core/VectorizedAnimationSpec;
 
-    .line 270
+    .line 272
     iget-object v4, p0, Landroidx/compose/animation/core/TargetBasedAnimation;->initialValueVector:Landroidx/compose/animation/core/AnimationVector;
 
-    .line 271
+    .line 273
     iget-object v5, p0, Landroidx/compose/animation/core/TargetBasedAnimation;->targetValueVector:Landroidx/compose/animation/core/AnimationVector;
 
-    .line 272
+    .line 274
     iget-object v6, p0, Landroidx/compose/animation/core/TargetBasedAnimation;->initialVelocityVector:Landroidx/compose/animation/core/AnimationVector;
 
     move-wide v2, p1
 
-    .line 268
+    .line 270
     invoke-interface/range {v1 .. v6}, Landroidx/compose/animation/core/VectorizedAnimationSpec;->getVelocityFromNanos(JLandroidx/compose/animation/core/AnimationVector;Landroidx/compose/animation/core/AnimationVector;Landroidx/compose/animation/core/AnimationVector;)Landroidx/compose/animation/core/AnimationVector;
 
     move-result-object p0
 
     goto :goto_0
 
-    .line 275
+    .line 277
     :cond_0
     iget-object p0, p0, Landroidx/compose/animation/core/TargetBasedAnimation;->endVelocity:Landroidx/compose/animation/core/AnimationVector;
 
@@ -630,7 +614,7 @@
 .method public isInfinite()Z
     .locals 0
 
-    .line 232
+    .line 234
     iget-object p0, p0, Landroidx/compose/animation/core/TargetBasedAnimation;->animationSpec:Landroidx/compose/animation/core/VectorizedAnimationSpec;
 
     invoke-interface {p0}, Landroidx/compose/animation/core/VectorizedAnimationSpec;->isInfinite()Z
@@ -643,7 +627,7 @@
 .method public toString()Ljava/lang/String;
     .locals 3
 
-    .line 280
+    .line 282
     new-instance v0, Ljava/lang/StringBuilder;
 
     const-string v1, "TargetBasedAnimation: "
@@ -676,23 +660,23 @@
 
     move-result-object v0
 
-    .line 281
+    .line 283
     iget-object v1, p0, Landroidx/compose/animation/core/TargetBasedAnimation;->initialVelocityVector:Landroidx/compose/animation/core/AnimationVector;
 
-    .line 280
+    .line 282
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
     move-result-object v0
 
-    .line 281
+    .line 283
     const-string v1, ", duration: "
 
-    .line 280
+    .line 282
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v0
 
-    .line 281
+    .line 283
     move-object v1, p0
 
     check-cast v1, Landroidx/compose/animation/core/Animation;
@@ -701,23 +685,23 @@
 
     move-result-wide v1
 
-    .line 280
+    .line 282
     invoke-virtual {v0, v1, v2}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
 
     move-result-object v0
 
-    .line 281
+    .line 283
     const-string v1, " ms,animationSpec: "
 
-    .line 280
+    .line 282
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v0
 
-    .line 282
+    .line 284
     iget-object p0, p0, Landroidx/compose/animation/core/TargetBasedAnimation;->animationSpec:Landroidx/compose/animation/core/VectorizedAnimationSpec;
 
-    .line 280
+    .line 282
     invoke-virtual {v0, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
     move-result-object p0

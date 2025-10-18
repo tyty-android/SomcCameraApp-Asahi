@@ -21,7 +21,7 @@
 .method constructor <init>()V
     .locals 0
 
-    .line 692
+    .line 695
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -42,10 +42,10 @@
         }
     .end annotation
 
-    .line 696
+    .line 699
     check-cast p1, Ljp/co/sony/mc/camera/setting/CommonSettings;
 
-    .line 697
+    .line 700
     invoke-static {p1}, Ljp/co/sony/mc/camera/setting/CommonSettings;->-$$Nest$mgetFacebookLiveType(Ljp/co/sony/mc/camera/setting/CommonSettings;)Ljp/co/sony/mc/camera/configuration/parameters/FacebookLiveType;
 
     move-result-object p0

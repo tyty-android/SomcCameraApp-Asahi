@@ -14,25 +14,25 @@
 
 
 # static fields
-.field public static final fastScrollEnabled:I = 0x7f0401f2
+.field public static final fastScrollEnabled:I = 0x7f0401fb
 
-.field public static final fastScrollHorizontalThumbDrawable:I = 0x7f0401f3
+.field public static final fastScrollHorizontalThumbDrawable:I = 0x7f0401fc
 
-.field public static final fastScrollHorizontalTrackDrawable:I = 0x7f0401f4
+.field public static final fastScrollHorizontalTrackDrawable:I = 0x7f0401fd
 
-.field public static final fastScrollVerticalThumbDrawable:I = 0x7f0401f5
+.field public static final fastScrollVerticalThumbDrawable:I = 0x7f0401fe
 
-.field public static final fastScrollVerticalTrackDrawable:I = 0x7f0401f6
+.field public static final fastScrollVerticalTrackDrawable:I = 0x7f0401ff
 
-.field public static final layoutManager:I = 0x7f040296
+.field public static final layoutManager:I = 0x7f0402a2
 
-.field public static final recyclerViewStyle:I = 0x7f0403d6
+.field public static final recyclerViewStyle:I = 0x7f0403e5
 
-.field public static final reverseLayout:I = 0x7f0403dc
+.field public static final reverseLayout:I = 0x7f0403eb
 
-.field public static final spanCount:I = 0x7f04041f
+.field public static final spanCount:I = 0x7f04042e
 
-.field public static final stackFromEnd:I = 0x7f04042e
+.field public static final stackFromEnd:I = 0x7f04043d
 
 
 # direct methods

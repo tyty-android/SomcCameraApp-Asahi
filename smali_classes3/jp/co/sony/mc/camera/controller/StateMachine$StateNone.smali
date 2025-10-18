@@ -22,14 +22,14 @@
 .method private constructor <init>(Ljp/co/sony/mc/camera/controller/StateMachine;)V
     .locals 1
 
-    .line 2045
+    .line 2068
     iput-object p1, p0, Ljp/co/sony/mc/camera/controller/StateMachine$StateNone;->this$0:Ljp/co/sony/mc/camera/controller/StateMachine;
 
     const/4 v0, 0x0
 
     invoke-direct {p0, p1, v0}, Ljp/co/sony/mc/camera/controller/StateMachine$State;-><init>(Ljp/co/sony/mc/camera/controller/StateMachine;Ljp/co/sony/mc/camera/controller/StateMachine$State-IA;)V
 
-    .line 2046
+    .line 2069
     sget-object p1, Ljp/co/sony/mc/camera/controller/StateMachine$CaptureState;->STATE_NONE:Ljp/co/sony/mc/camera/controller/StateMachine$CaptureState;
 
     iput-object p1, p0, Ljp/co/sony/mc/camera/controller/StateMachine$StateNone;->mCaptureState:Ljp/co/sony/mc/camera/controller/StateMachine$CaptureState;
@@ -52,14 +52,14 @@
 
     if-eqz p1, :cond_0
 
-    .line 2051
+    .line 2074
     array-length v0, p1
 
     const/4 v1, 0x1
 
     if-lt v0, v1, :cond_0
 
-    .line 2052
+    .line 2075
     iget-object v0, p0, Ljp/co/sony/mc/camera/controller/StateMachine$StateNone;->this$0:Ljp/co/sony/mc/camera/controller/StateMachine;
 
     new-instance v1, Ljp/co/sony/mc/camera/controller/StateMachine$StateInitialize;
@@ -85,7 +85,7 @@
 .method public varargs handlePause([Ljava/lang/Object;)V
     .locals 3
 
-    .line 2058
+    .line 2081
     iget-object v0, p0, Ljp/co/sony/mc/camera/controller/StateMachine$StateNone;->this$0:Ljp/co/sony/mc/camera/controller/StateMachine;
 
     new-instance v1, Ljp/co/sony/mc/camera/controller/StateMachine$StatePause;

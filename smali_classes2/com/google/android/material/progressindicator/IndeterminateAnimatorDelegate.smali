@@ -15,32 +15,52 @@
 
 
 # instance fields
+.field protected final activeIndicators:Ljava/util/List;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljava/util/List<",
+            "Lcom/google/android/material/progressindicator/DrawingDelegate$ActiveIndicator;",
+            ">;"
+        }
+    .end annotation
+.end field
+
 .field protected drawable:Lcom/google/android/material/progressindicator/IndeterminateDrawable;
-
-.field protected final segmentColors:[I
-
-.field protected final segmentPositions:[F
 
 
 # direct methods
 .method protected constructor <init>(I)V
-    .locals 1
+    .locals 3
 
     .line 40
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    mul-int/lit8 v0, p1, 0x2
-
     .line 41
-    new-array v0, v0, [F
+    new-instance v0, Ljava/util/ArrayList;
 
-    iput-object v0, p0, Lcom/google/android/material/progressindicator/IndeterminateAnimatorDelegate;->segmentPositions:[F
+    invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
-    .line 42
-    new-array p1, p1, [I
+    iput-object v0, p0, Lcom/google/android/material/progressindicator/IndeterminateAnimatorDelegate;->activeIndicators:Ljava/util/List;
 
-    iput-object p1, p0, Lcom/google/android/material/progressindicator/IndeterminateAnimatorDelegate;->segmentColors:[I
+    const/4 v0, 0x0
 
+    :goto_0
+    if-ge v0, p1, :cond_0
+
+    .line 43
+    iget-object v1, p0, Lcom/google/android/material/progressindicator/IndeterminateAnimatorDelegate;->activeIndicators:Ljava/util/List;
+
+    new-instance v2, Lcom/google/android/material/progressindicator/DrawingDelegate$ActiveIndicator;
+
+    invoke-direct {v2}, Lcom/google/android/material/progressindicator/DrawingDelegate$ActiveIndicator;-><init>()V
+
+    invoke-interface {v1, v2}, Ljava/util/List;->add(Ljava/lang/Object;)Z
+
+    add-int/lit8 v0, v0, 0x1
+
+    goto :goto_0
+
+    :cond_0
     return-void
 .end method
 
@@ -72,13 +92,19 @@
 .method protected registerDrawable(Lcom/google/android/material/progressindicator/IndeterminateDrawable;)V
     .locals 0
 
-    .line 47
+    .line 49
     iput-object p1, p0, Lcom/google/android/material/progressindicator/IndeterminateAnimatorDelegate;->drawable:Lcom/google/android/material/progressindicator/IndeterminateDrawable;
 
     return-void
 .end method
 
 .method abstract requestCancelAnimatorAfterCurrentCycle()V
+.end method
+
+.method abstract resetPropertiesForNewStart()V
+.end method
+
+.method abstract setAnimationFraction(F)V
 .end method
 
 .method abstract startAnimator()V

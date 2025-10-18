@@ -76,7 +76,7 @@
 .method public final invoke()Landroidx/compose/ui/hapticfeedback/HapticFeedback;
     .locals 0
 
-    .line 117
+    .line 116
     const-string p0, "LocalHapticFeedback"
 
     invoke-static {p0}, Landroidx/compose/ui/platform/CompositionLocalsKt;->access$noLocalProvidedFor(Ljava/lang/String;)Ljava/lang/Void;
@@ -91,7 +91,7 @@
 .method public bridge synthetic invoke()Ljava/lang/Object;
     .locals 0
 
-    .line 116
+    .line 115
     invoke-virtual {p0}, Landroidx/compose/ui/platform/CompositionLocalsKt$LocalHapticFeedback$1;->invoke()Landroidx/compose/ui/hapticfeedback/HapticFeedback;
 
     move-result-object p0

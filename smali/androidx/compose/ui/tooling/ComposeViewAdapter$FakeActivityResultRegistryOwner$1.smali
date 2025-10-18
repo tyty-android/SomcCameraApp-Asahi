@@ -1,6 +1,6 @@
 .class public final Landroidx/compose/ui/tooling/ComposeViewAdapter$FakeActivityResultRegistryOwner$1;
 .super Ljava/lang/Object;
-.source "ComposeViewAdapter.kt"
+.source "ComposeViewAdapter.android.kt"
 
 # interfaces
 .implements Landroidx/activity/result/ActivityResultRegistryOwner;
@@ -48,10 +48,10 @@
 .method constructor <init>()V
     .locals 1
 
-    .line 662
+    .line 655
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 663
+    .line 656
     new-instance v0, Landroidx/compose/ui/tooling/ComposeViewAdapter$FakeActivityResultRegistryOwner$1$activityResultRegistry$1;
 
     invoke-direct {v0}, Landroidx/compose/ui/tooling/ComposeViewAdapter$FakeActivityResultRegistryOwner$1$activityResultRegistry$1;-><init>()V
@@ -66,7 +66,7 @@
 .method public bridge synthetic getActivityResultRegistry()Landroidx/activity/result/ActivityResultRegistry;
     .locals 0
 
-    .line 662
+    .line 655
     invoke-virtual {p0}, Landroidx/compose/ui/tooling/ComposeViewAdapter$FakeActivityResultRegistryOwner$1;->getActivityResultRegistry()Landroidx/compose/ui/tooling/ComposeViewAdapter$FakeActivityResultRegistryOwner$1$activityResultRegistry$1;
 
     move-result-object p0
@@ -79,7 +79,7 @@
 .method public getActivityResultRegistry()Landroidx/compose/ui/tooling/ComposeViewAdapter$FakeActivityResultRegistryOwner$1$activityResultRegistry$1;
     .locals 0
 
-    .line 663
+    .line 656
     iget-object p0, p0, Landroidx/compose/ui/tooling/ComposeViewAdapter$FakeActivityResultRegistryOwner$1;->activityResultRegistry:Landroidx/compose/ui/tooling/ComposeViewAdapter$FakeActivityResultRegistryOwner$1$activityResultRegistry$1;
 
     return-object p0

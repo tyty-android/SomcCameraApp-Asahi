@@ -39,6 +39,8 @@
 
 
 # static fields
+.field public static final $stable:I
+
 .field public static final INSTANCE:Landroidx/compose/ui/modifier/EmptyMap;
 
 
@@ -60,7 +62,7 @@
 
     const/4 v0, 0x0
 
-    .line 97
+    .line 98
     invoke-direct {p0, v0}, Landroidx/compose/ui/modifier/ModifierLocalMap;-><init>(Lkotlin/jvm/internal/DefaultConstructorMarker;)V
 
     return-void
@@ -77,10 +79,6 @@
             "*>;)Z"
         }
     .end annotation
-
-    const-string p0, "key"
-
-    invoke-static {p1, p0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
     const/4 p0, 0x0
 
@@ -99,13 +97,9 @@
         }
     .end annotation
 
-    const-string p0, "key"
-
-    invoke-static {p1, p0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
     new-instance p0, Ljava/lang/IllegalStateException;
 
-    .line 99
+    .line 100
     const-string p1, ""
 
     invoke-virtual {p1}, Ljava/lang/Object;->toString()Ljava/lang/String;
@@ -130,13 +124,9 @@
         }
     .end annotation
 
-    const-string p0, "key"
-
-    invoke-static {p1, p0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
     new-instance p0, Ljava/lang/IllegalStateException;
 
-    .line 98
+    .line 99
     const-string p1, ""
 
     invoke-virtual {p1}, Ljava/lang/Object;->toString()Ljava/lang/String;
@@ -151,7 +141,7 @@
 .method public bridge synthetic set$ui_release(Landroidx/compose/ui/modifier/ModifierLocal;Ljava/lang/Object;)V
     .locals 0
 
-    .line 97
+    .line 98
     invoke-virtual {p0, p1, p2}, Landroidx/compose/ui/modifier/EmptyMap;->set$ui_release(Landroidx/compose/ui/modifier/ModifierLocal;Ljava/lang/Object;)Ljava/lang/Void;
 
     return-void

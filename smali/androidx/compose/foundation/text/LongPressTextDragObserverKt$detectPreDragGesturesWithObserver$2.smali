@@ -31,7 +31,7 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/SourceDebugExtension;
-    value = "SMAP\nLongPressTextDragObserver.kt\nKotlin\n*S Kotlin\n*F\n+ 1 LongPressTextDragObserver.kt\nandroidx/compose/foundation/text/LongPressTextDragObserverKt$detectPreDragGesturesWithObserver$2\n+ 2 ListUtils.kt\nandroidx/compose/ui/util/ListUtilsKt\n*L\n1#1,125:1\n101#2,2:126\n33#2,6:128\n103#2:134\n*S KotlinDebug\n*F\n+ 1 LongPressTextDragObserver.kt\nandroidx/compose/foundation/text/LongPressTextDragObserverKt$detectPreDragGesturesWithObserver$2\n*L\n104#1:126,2\n104#1:128,6\n104#1:134\n*E\n"
+    value = "SMAP\nLongPressTextDragObserver.kt\nKotlin\n*S Kotlin\n*F\n+ 1 LongPressTextDragObserver.kt\nandroidx/compose/foundation/text/LongPressTextDragObserverKt$detectPreDragGesturesWithObserver$2\n+ 2 ListUtils.kt\nandroidx/compose/ui/util/ListUtilsKt\n*L\n1#1,126:1\n101#2,2:127\n33#2,6:129\n103#2:135\n*S KotlinDebug\n*F\n+ 1 LongPressTextDragObserver.kt\nandroidx/compose/foundation/text/LongPressTextDragObserverKt$detectPreDragGesturesWithObserver$2\n*L\n104#1:127,2\n104#1:129,6\n104#1:135\n*E\n"
 .end annotation
 
 .annotation runtime Lkotlin/Metadata;
@@ -255,7 +255,7 @@
 
     const/4 v6, 0x0
 
-    const/4 v8, 0x3
+    const/4 v8, 0x2
 
     const/4 v9, 0x0
 
@@ -319,7 +319,7 @@
 
     move-result-object p1
 
-    .line 129
+    .line 130
     invoke-interface {p1}, Ljava/util/List;->size()I
 
     move-result v5
@@ -329,12 +329,12 @@
     :goto_3
     if-ge v6, v5, :cond_6
 
-    .line 130
+    .line 131
     invoke-interface {p1, v6}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
     move-result-object v7
 
-    .line 127
+    .line 128
     check-cast v7, Landroidx/compose/ui/input/pointer/PointerInputChange;
 
     .line 104

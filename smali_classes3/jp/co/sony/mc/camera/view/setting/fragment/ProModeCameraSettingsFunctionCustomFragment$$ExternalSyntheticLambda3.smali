@@ -3,28 +3,44 @@
 .source "D8$$SyntheticClass"
 
 # interfaces
-.implements Landroid/widget/ExpandableListView$OnGroupClickListener;
+.implements Landroid/view/View$OnScrollChangeListener;
+
+
+# instance fields
+.field public final synthetic f$0:Ljp/co/sony/mc/camera/view/setting/fragment/ProModeCameraSettingsFunctionCustomFragment;
 
 
 # direct methods
-.method public synthetic constructor <init>()V
+.method public synthetic constructor <init>(Ljp/co/sony/mc/camera/view/setting/fragment/ProModeCameraSettingsFunctionCustomFragment;)V
     .locals 0
 
     .line 0
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    iput-object p1, p0, Ljp/co/sony/mc/camera/view/setting/fragment/ProModeCameraSettingsFunctionCustomFragment$$ExternalSyntheticLambda3;->f$0:Ljp/co/sony/mc/camera/view/setting/fragment/ProModeCameraSettingsFunctionCustomFragment;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final onGroupClick(Landroid/widget/ExpandableListView;Landroid/view/View;IJ)Z
-    .locals 0
+.method public final onScrollChange(Landroid/view/View;IIII)V
+    .locals 6
 
     .line 0
-    invoke-static {p1, p2, p3, p4, p5}, Ljp/co/sony/mc/camera/view/setting/fragment/ProModeCameraSettingsFunctionCustomFragment;->$r8$lambda$kEwjVH7vDnAc0Ow4vwbnt_AR3Ok(Landroid/widget/ExpandableListView;Landroid/view/View;IJ)Z
+    iget-object v0, p0, Ljp/co/sony/mc/camera/view/setting/fragment/ProModeCameraSettingsFunctionCustomFragment$$ExternalSyntheticLambda3;->f$0:Ljp/co/sony/mc/camera/view/setting/fragment/ProModeCameraSettingsFunctionCustomFragment;
 
-    move-result p0
+    move-object v1, p1
 
-    return p0
+    move v2, p2
+
+    move v3, p3
+
+    move v4, p4
+
+    move v5, p5
+
+    invoke-static/range {v0 .. v5}, Ljp/co/sony/mc/camera/view/setting/fragment/ProModeCameraSettingsFunctionCustomFragment;->$r8$lambda$DbbkEJ7fsg_6E7Dq8YrrwzcvFJE(Ljp/co/sony/mc/camera/view/setting/fragment/ProModeCameraSettingsFunctionCustomFragment;Landroid/view/View;IIII)V
+
+    return-void
 .end method

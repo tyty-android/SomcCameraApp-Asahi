@@ -1,6 +1,6 @@
 .class public final Landroidx/compose/ui/tooling/animation/AnimationSearch$InfiniteTransitionSearchInfo;
 .super Ljava/lang/Object;
-.source "AnimationSearch.kt"
+.source "AnimationSearch.android.kt"
 
 
 # annotations
@@ -82,7 +82,7 @@
 .end method
 
 .method public constructor <init>(Landroidx/compose/animation/core/InfiniteTransition;Landroidx/compose/ui/tooling/animation/ToolingState;)V
-    .locals 1
+    .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -93,21 +93,13 @@
         }
     .end annotation
 
-    const-string v0, "infiniteTransition"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string/jumbo v0, "toolingState"
-
-    invoke-static {p2, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 194
+    .line 214
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 195
+    .line 215
     iput-object p1, p0, Landroidx/compose/ui/tooling/animation/AnimationSearch$InfiniteTransitionSearchInfo;->infiniteTransition:Landroidx/compose/animation/core/InfiniteTransition;
 
-    .line 196
+    .line 216
     iput-object p2, p0, Landroidx/compose/ui/tooling/animation/AnimationSearch$InfiniteTransitionSearchInfo;->toolingState:Landroidx/compose/ui/tooling/animation/ToolingState;
 
     return-void
@@ -176,14 +168,6 @@
         }
     .end annotation
 
-    const-string p0, "infiniteTransition"
-
-    invoke-static {p1, p0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string/jumbo p0, "toolingState"
-
-    invoke-static {p2, p0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
     new-instance p0, Landroidx/compose/ui/tooling/animation/AnimationSearch$InfiniteTransitionSearchInfo;
 
     invoke-direct {p0, p1, p2}, Landroidx/compose/ui/tooling/animation/AnimationSearch$InfiniteTransitionSearchInfo;-><init>(Landroidx/compose/animation/core/InfiniteTransition;Landroidx/compose/ui/tooling/animation/ToolingState;)V
@@ -244,7 +228,7 @@
 .method public final getInfiniteTransition()Landroidx/compose/animation/core/InfiniteTransition;
     .locals 0
 
-    .line 195
+    .line 215
     iget-object p0, p0, Landroidx/compose/ui/tooling/animation/AnimationSearch$InfiniteTransitionSearchInfo;->infiniteTransition:Landroidx/compose/animation/core/InfiniteTransition;
 
     return-object p0
@@ -261,7 +245,7 @@
         }
     .end annotation
 
-    .line 196
+    .line 216
     iget-object p0, p0, Landroidx/compose/ui/tooling/animation/AnimationSearch$InfiniteTransitionSearchInfo;->toolingState:Landroidx/compose/ui/tooling/animation/ToolingState;
 
     return-object p0

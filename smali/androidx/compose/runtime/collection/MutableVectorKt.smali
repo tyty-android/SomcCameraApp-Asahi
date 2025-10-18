@@ -5,12 +5,12 @@
 
 # annotations
 .annotation system Ldalvik/annotation/SourceDebugExtension;
-    value = "SMAP\nMutableVector.kt\nKotlin\n*S Kotlin\n*F\n+ 1 MutableVector.kt\nandroidx/compose/runtime/collection/MutableVectorKt\n*L\n1#1,1194:1\n1161#1,2:1195\n*S KotlinDebug\n*F\n+ 1 MutableVector.kt\nandroidx/compose/runtime/collection/MutableVectorKt\n*L\n1182#1:1195,2\n*E\n"
+    value = "SMAP\nMutableVector.kt\nKotlin\n*S Kotlin\n*F\n+ 1 MutableVector.kt\nandroidx/compose/runtime/collection/MutableVectorKt\n*L\n1#1,1220:1\n1187#1,2:1221\n*S KotlinDebug\n*F\n+ 1 MutableVector.kt\nandroidx/compose/runtime/collection/MutableVectorKt\n*L\n1208#1:1221,2\n*E\n"
 .end annotation
 
 .annotation runtime Lkotlin/Metadata;
     d1 = {
-        "\u0000.\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0010\u0008\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0010\u0011\n\u0002\u0008\u0002\n\u0002\u0010\u0002\n\u0002\u0010 \n\u0002\u0008\u0005\u001a!\u0010\u0000\u001a\u0008\u0012\u0004\u0012\u0002H\u00020\u0001\"\u0006\u0008\u0000\u0010\u0002\u0018\u00012\u0008\u0008\u0002\u0010\u0003\u001a\u00020\u0004H\u0086\u0008\u001aC\u0010\u0000\u001a\u0008\u0012\u0004\u0012\u0002H\u00020\u0001\"\u0006\u0008\u0000\u0010\u0002\u0018\u00012\u0006\u0010\u0005\u001a\u00020\u00042\u0014\u0008\u0008\u0010\u0006\u001a\u000e\u0012\u0004\u0012\u00020\u0004\u0012\u0004\u0012\u0002H\u00020\u0007H\u0086\u0008\u00f8\u0001\u0000\u0082\u0002\u0008\n\u0006\u0008\u0001\u0012\u0002\u0010\u0002\u001a\u0017\u0010\u0008\u001a\u0008\u0012\u0004\u0012\u0002H\u00020\u0001\"\u0006\u0008\u0000\u0010\u0002\u0018\u0001H\u0086\u0008\u001a0\u0010\u0008\u001a\u0008\u0012\u0004\u0012\u0002H\u00020\u0001\"\u0006\u0008\u0000\u0010\u0002\u0018\u00012\u0012\u0010\t\u001a\n\u0012\u0006\u0008\u0001\u0012\u0002H\u00020\n\"\u0002H\u0002H\u0086\u0008\u00a2\u0006\u0002\u0010\u000b\u001a\u0018\u0010\u000c\u001a\u00020\r*\u0006\u0012\u0002\u0008\u00030\u000e2\u0006\u0010\u000f\u001a\u00020\u0004H\u0002\u001a \u0010\u0010\u001a\u00020\r*\u0006\u0012\u0002\u0008\u00030\u000e2\u0006\u0010\u0011\u001a\u00020\u00042\u0006\u0010\u0012\u001a\u00020\u0004H\u0002\u0082\u0002\u0007\n\u0005\u0008\u009920\u0001\u00a8\u0006\u0013"
+        "\u0000.\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0010\u0008\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0010\u0011\n\u0002\u0008\u0002\n\u0002\u0010\u0002\n\u0002\u0010 \n\u0002\u0008\u0005\u001a!\u0010\u0000\u001a\u0008\u0012\u0004\u0012\u0002H\u00020\u0001\"\u0006\u0008\u0000\u0010\u0002\u0018\u00012\u0008\u0008\u0002\u0010\u0003\u001a\u00020\u0004H\u0086\u0008\u001a@\u0010\u0000\u001a\u0008\u0012\u0004\u0012\u0002H\u00020\u0001\"\u0006\u0008\u0000\u0010\u0002\u0018\u00012\u0006\u0010\u0005\u001a\u00020\u00042\u0014\u0008\u0008\u0010\u0006\u001a\u000e\u0012\u0004\u0012\u00020\u0004\u0012\u0004\u0012\u0002H\u00020\u0007H\u0086\u0008\u0082\u0002\u0008\n\u0006\u0008\u0001\u0012\u0002\u0010\u0002\u001a\u0017\u0010\u0008\u001a\u0008\u0012\u0004\u0012\u0002H\u00020\u0001\"\u0006\u0008\u0000\u0010\u0002\u0018\u0001H\u0086\u0008\u001a0\u0010\u0008\u001a\u0008\u0012\u0004\u0012\u0002H\u00020\u0001\"\u0006\u0008\u0000\u0010\u0002\u0018\u00012\u0012\u0010\t\u001a\n\u0012\u0006\u0008\u0001\u0012\u0002H\u00020\n\"\u0002H\u0002H\u0086\u0008\u00a2\u0006\u0002\u0010\u000b\u001a\u0018\u0010\u000c\u001a\u00020\r*\u0006\u0012\u0002\u0008\u00030\u000e2\u0006\u0010\u000f\u001a\u00020\u0004H\u0002\u001a \u0010\u0010\u001a\u00020\r*\u0006\u0012\u0002\u0008\u00030\u000e2\u0006\u0010\u0011\u001a\u00020\u00042\u0006\u0010\u0012\u001a\u00020\u0004H\u0002\u00a8\u0006\u0013"
     }
     d2 = {
         "MutableVector",
@@ -57,7 +57,7 @@
         }
     .end annotation
 
-    .line 1162
+    .line 1188
     new-instance v0, Landroidx/compose/runtime/collection/MutableVector;
 
     const-string v1, "T?"
@@ -89,11 +89,7 @@
         }
     .end annotation
 
-    const-string v0, "init"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 1174
+    .line 1200
     const-string v0, "T"
 
     const/4 v1, 0x0
@@ -119,7 +115,7 @@
 
     goto :goto_0
 
-    .line 1175
+    .line 1201
     :cond_0
     new-instance p1, Landroidx/compose/runtime/collection/MutableVector;
 
@@ -137,7 +133,7 @@
 
     const/16 p0, 0x10
 
-    .line 1162
+    .line 1188
     :cond_0
     new-instance p1, Landroidx/compose/runtime/collection/MutableVector;
 
@@ -182,7 +178,7 @@
         }
     .end annotation
 
-    .line 1133
+    .line 1159
     invoke-interface {p0}, Ljava/util/List;->size()I
 
     move-result p0
@@ -193,7 +189,7 @@
 
     return-void
 
-    .line 1135
+    .line 1161
     :cond_0
     new-instance v0, Ljava/lang/IndexOutOfBoundsException;
 
@@ -217,10 +213,10 @@
 
     move-result-object p0
 
-    .line 1136
+    .line 1162
     const-string p1, " elements."
 
-    .line 1135
+    .line 1161
     invoke-virtual {p0, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object p0
@@ -244,7 +240,7 @@
         }
     .end annotation
 
-    .line 1141
+    .line 1167
     invoke-interface {p0}, Ljava/util/List;->size()I
 
     move-result p0
@@ -257,11 +253,11 @@
 
     return-void
 
-    .line 1150
+    .line 1176
     :cond_0
     new-instance p1, Ljava/lang/IndexOutOfBoundsException;
 
-    .line 1151
+    .line 1177
     new-instance v0, Ljava/lang/StringBuilder;
 
     const-string/jumbo v1, "toIndex ("
@@ -292,12 +288,12 @@
 
     move-result-object p0
 
-    .line 1150
+    .line 1176
     invoke-direct {p1, p0}, Ljava/lang/IndexOutOfBoundsException;-><init>(Ljava/lang/String;)V
 
     throw p1
 
-    .line 1147
+    .line 1173
     :cond_1
     new-instance p0, Ljava/lang/IndexOutOfBoundsException;
 
@@ -325,7 +321,7 @@
 
     throw p0
 
-    .line 1143
+    .line 1169
     :cond_2
     new-instance p0, Ljava/lang/IllegalArgumentException;
 
@@ -349,10 +345,10 @@
 
     move-result-object p1
 
-    .line 1144
+    .line 1170
     const-string p2, ")."
 
-    .line 1143
+    .line 1169
     invoke-virtual {p1, p2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object p1
@@ -378,7 +374,7 @@
         }
     .end annotation
 
-    .line 1196
+    .line 1222
     new-instance v0, Landroidx/compose/runtime/collection/MutableVector;
 
     const-string v1, "T?"
@@ -408,17 +404,13 @@
         }
     .end annotation
 
-    const-string v0, "elements"
-
-    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 1189
+    .line 1215
     new-instance v0, Landroidx/compose/runtime/collection/MutableVector;
 
-    .line 1191
+    .line 1217
     array-length v1, p0
 
-    .line 1189
+    .line 1215
     invoke-direct {v0, p0, v1}, Landroidx/compose/runtime/collection/MutableVector;-><init>([Ljava/lang/Object;I)V
 
     return-object v0

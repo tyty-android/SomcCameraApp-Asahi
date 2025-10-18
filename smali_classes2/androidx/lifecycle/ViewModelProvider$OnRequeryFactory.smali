@@ -1,6 +1,6 @@
 .class public Landroidx/lifecycle/ViewModelProvider$OnRequeryFactory;
 .super Ljava/lang/Object;
-.source "ViewModelProvider.kt"
+.source "ViewModelProvider.android.kt"
 
 
 # annotations
@@ -41,7 +41,7 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 101
+    .line 175
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void

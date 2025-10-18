@@ -68,41 +68,47 @@
 .end method
 
 .method public constructor <init>()V
-    .locals 3
+    .locals 5
 
     .line 39
     invoke-direct {p0}, Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogBuilder;-><init>()V
 
+    const/4 v0, 0x3
+
     .line 50
-    sget-object v0, Ljp/co/sony/mc/camera/rtmp/FacebookApi$Privacy;->PUBLIC:Ljp/co/sony/mc/camera/rtmp/FacebookApi$Privacy;
+    new-array v0, v0, [Ljp/co/sony/mc/camera/rtmp/FacebookApi$Privacy;
+
+    sget-object v1, Ljp/co/sony/mc/camera/rtmp/FacebookApi$Privacy;->PUBLIC:Ljp/co/sony/mc/camera/rtmp/FacebookApi$Privacy;
+
+    const/4 v2, 0x0
+
+    aput-object v1, v0, v2
 
     sget-object v1, Ljp/co/sony/mc/camera/rtmp/FacebookApi$Privacy;->FRIENDS:Ljp/co/sony/mc/camera/rtmp/FacebookApi$Privacy;
 
-    sget-object v2, Ljp/co/sony/mc/camera/rtmp/FacebookApi$Privacy;->ONLY_ME:Ljp/co/sony/mc/camera/rtmp/FacebookApi$Privacy;
+    const/4 v3, 0x1
 
-    filled-new-array {v0, v1, v2}, [Ljp/co/sony/mc/camera/rtmp/FacebookApi$Privacy;
+    aput-object v1, v0, v3
 
-    move-result-object v0
+    sget-object v1, Ljp/co/sony/mc/camera/rtmp/FacebookApi$Privacy;->ONLY_ME:Ljp/co/sony/mc/camera/rtmp/FacebookApi$Privacy;
+
+    const/4 v4, 0x2
+
+    aput-object v1, v0, v4
 
     iput-object v0, p0, Ljp/co/sony/mc/camera/view/messagedialog/StartStreamingDialogBuilder;->FACEBOOK_PRIVACY:[Ljp/co/sony/mc/camera/rtmp/FacebookApi$Privacy;
 
-    const/4 v0, 0x2
-
     .line 57
-    iput v0, p0, Ljp/co/sony/mc/camera/view/messagedialog/StartStreamingDialogBuilder;->FACEBOOK_PRIVACY_ONLY_ME:I
-
-    const/4 v0, 0x1
+    iput v4, p0, Ljp/co/sony/mc/camera/view/messagedialog/StartStreamingDialogBuilder;->FACEBOOK_PRIVACY_ONLY_ME:I
 
     .line 66
-    new-array v0, v0, [Landroid/text/InputFilter;
+    new-array v0, v3, [Landroid/text/InputFilter;
 
     new-instance v1, Ljp/co/sony/mc/camera/util/TextInputUtil$InputLengthFilter;
 
-    const/16 v2, 0x3e8
+    const/16 v3, 0x3e8
 
-    invoke-direct {v1, v2}, Ljp/co/sony/mc/camera/util/TextInputUtil$InputLengthFilter;-><init>(I)V
-
-    const/4 v2, 0x0
+    invoke-direct {v1, v3}, Ljp/co/sony/mc/camera/util/TextInputUtil$InputLengthFilter;-><init>(I)V
 
     aput-object v1, v0, v2
 
@@ -186,7 +192,7 @@
     .line 87
     new-instance v3, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Builder;
 
-    const v4, 0x7f1202a9
+    const v4, 0x7f1202ab
 
     invoke-direct {v3, p1, v4}, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Builder;-><init>(Landroid/content/Context;I)V
 
@@ -202,7 +208,7 @@
 
     move-result-object v4
 
-    const v5, 0x7f0c004e
+    const v5, 0x7f0c004d
 
     const/4 v6, 0x0
 
@@ -211,7 +217,7 @@
 
     move-result-object v4
 
-    const v5, 0x7f09047a
+    const v5, 0x7f090469
 
     .line 96
     invoke-virtual {v4, v5}, Landroid/view/View;->findViewById(I)Landroid/view/View;
@@ -222,7 +228,7 @@
 
     iput-object v5, v0, Ljp/co/sony/mc/camera/view/messagedialog/StartStreamingDialogBuilder;->mStreamingSetting1:Landroid/widget/TextView;
 
-    const v5, 0x7f09047b
+    const v5, 0x7f09046a
 
     .line 97
     invoke-virtual {v4, v5}, Landroid/view/View;->findViewById(I)Landroid/view/View;
@@ -233,7 +239,7 @@
 
     iput-object v5, v0, Ljp/co/sony/mc/camera/view/messagedialog/StartStreamingDialogBuilder;->mStreamingSetting2:Landroid/widget/TextView;
 
-    const v5, 0x7f09047c
+    const v5, 0x7f09046b
 
     .line 98
     invoke-virtual {v4, v5}, Landroid/view/View;->findViewById(I)Landroid/view/View;
@@ -244,7 +250,7 @@
 
     iput-object v5, v0, Ljp/co/sony/mc/camera/view/messagedialog/StartStreamingDialogBuilder;->mStreamingSetting3:Landroid/widget/TextView;
 
-    const v5, 0x7f090474
+    const v5, 0x7f090463
 
     .line 99
     invoke-virtual {v4, v5}, Landroid/view/View;->findViewById(I)Landroid/view/View;
@@ -255,7 +261,7 @@
 
     iput-object v5, v0, Ljp/co/sony/mc/camera/view/messagedialog/StartStreamingDialogBuilder;->mStreamingConsentText:Landroid/widget/TextView;
 
-    const v5, 0x7f0901c5
+    const v5, 0x7f0901c4
 
     .line 100
     invoke-virtual {v4, v5}, Landroid/view/View;->findViewById(I)Landroid/view/View;
@@ -266,7 +272,7 @@
 
     iput-object v5, v0, Ljp/co/sony/mc/camera/view/messagedialog/StartStreamingDialogBuilder;->mFacebookPrivacy:Landroid/widget/Spinner;
 
-    const v5, 0x7f0901c2
+    const v5, 0x7f0901c1
 
     .line 101
     invoke-virtual {v4, v5}, Landroid/view/View;->findViewById(I)Landroid/view/View;
@@ -277,7 +283,7 @@
 
     iput-object v5, v0, Ljp/co/sony/mc/camera/view/messagedialog/StartStreamingDialogBuilder;->mFacebookDescription:Landroid/widget/EditText;
 
-    const v5, 0x7f09010b
+    const v5, 0x7f090107
 
     .line 102
     invoke-virtual {v4, v5}, Landroid/view/View;->findViewById(I)Landroid/view/View;
@@ -291,7 +297,7 @@
 
     invoke-direct {v7}, Ljava/lang/StringBuilder;-><init>()V
 
-    const v8, 0x7f1101b4
+    const v8, 0x7f1101b7
 
     invoke-virtual {p1, v8}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -366,7 +372,7 @@
 
     invoke-direct {v9}, Ljava/lang/StringBuilder;-><init>()V
 
-    const v10, 0x7f1101ba
+    const v10, 0x7f1101bd
 
     invoke-virtual {p1, v10}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -401,7 +407,7 @@
 
     move-result-object v8
 
-    const v9, 0x7f1101b9
+    const v9, 0x7f1101bc
 
     .line 115
     invoke-virtual {p1, v9}, Landroid/content/Context;->getString(I)Ljava/lang/String;
@@ -475,7 +481,7 @@
 
     invoke-direct {v5}, Ljava/lang/StringBuilder;-><init>()V
 
-    const v9, 0x7f1101b3
+    const v9, 0x7f1101b6
 
     invoke-virtual {p1, v9}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -515,7 +521,7 @@
 
     invoke-direct {v9}, Ljava/lang/StringBuilder;-><init>()V
 
-    const v10, 0x7f1101b6
+    const v10, 0x7f1101b9
 
     invoke-virtual {p1, v10}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -573,7 +579,7 @@
 
     invoke-direct {v8}, Ljava/lang/StringBuilder;-><init>()V
 
-    const v9, 0x7f110212
+    const v9, 0x7f110215
 
     invoke-virtual {p1, v9}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -639,7 +645,7 @@
 
     move-result-object v10
 
-    const v13, 0x7f0c004f
+    const v13, 0x7f0c004e
 
     invoke-direct {v9, p1, v13, v10}, Landroid/widget/ArrayAdapter;-><init>(Landroid/content/Context;I[Ljava/lang/Object;)V
 
@@ -669,7 +675,7 @@
 
     invoke-virtual {v9, v10}, Landroid/widget/Spinner;->setSelection(I)V
 
-    const v9, 0x7f0901c4
+    const v9, 0x7f0901c3
 
     .line 171
     invoke-virtual {v4, v9}, Landroid/view/View;->findViewById(I)Landroid/view/View;
@@ -706,7 +712,7 @@
 
     invoke-virtual {v5, v9}, Landroid/widget/EditText;->addTextChangedListener(Landroid/text/TextWatcher;)V
 
-    const v5, 0x7f0901c3
+    const v5, 0x7f0901c2
 
     .line 191
     invoke-virtual {v4, v5}, Landroid/view/View;->findViewById(I)Landroid/view/View;
@@ -721,13 +727,13 @@
     const-string v9, ""
 
     :goto_0
-    const v5, 0x7f1101bb
+    const v5, 0x7f1101be
 
     invoke-virtual {p1, v5}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
     move-result-object v5
 
-    const v10, 0x7f1102fa
+    const v10, 0x7f110327
 
     .line 198
     invoke-virtual {p1, v10}, Landroid/content/Context;->getString(I)Ljava/lang/String;

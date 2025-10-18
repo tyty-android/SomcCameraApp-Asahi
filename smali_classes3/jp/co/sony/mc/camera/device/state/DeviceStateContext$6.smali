@@ -32,7 +32,7 @@
         }
     .end annotation
 
-    .line 3450
+    .line 3534
     iput-object p1, p0, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$6;->this$0:Ljp/co/sony/mc/camera/device/state/DeviceStateContext;
 
     iput-object p2, p0, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$6;->val$processAdapter:Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CaptureProcessAdapter;
@@ -47,7 +47,7 @@
 .method public run()V
     .locals 1
 
-    .line 3453
+    .line 3537
     iget-object v0, p0, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$6;->this$0:Ljp/co/sony/mc/camera/device/state/DeviceStateContext;
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/device/state/DeviceStateContext;->-$$Nest$fgetmCaptureProcessQueue(Ljp/co/sony/mc/camera/device/state/DeviceStateContext;)Ljava/util/Deque;

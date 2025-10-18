@@ -133,7 +133,7 @@
 .end method
 
 .method public varargs handleError(Ljp/co/sony/mc/camera/device/state/DeviceStateContext;[Ljava/lang/Object;)V
-    .locals 3
+    .locals 4
 
     const/4 v0, 0x0
 
@@ -154,17 +154,19 @@
     move-result p2
 
     .line 120
-    new-instance v2, Ljava/lang/StringBuilder;
+    new-array v2, v2, [Ljava/lang/String;
 
-    invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
+    new-instance v3, Ljava/lang/StringBuilder;
 
-    invoke-virtual {v2, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-direct {v3}, Ljava/lang/StringBuilder;-><init>()V
+
+    invoke-virtual {v3, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v1
 
-    const-string v2, " errorCode:"
+    const-string v3, " errorCode:"
 
-    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v1, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v1
 
@@ -176,11 +178,9 @@
 
     move-result-object p2
 
-    filled-new-array {p2}, [Ljava/lang/String;
+    aput-object p2, v2, v0
 
-    move-result-object p2
-
-    invoke-static {p2}, Ljp/co/sony/mc/camera/util/CamLog;->e([Ljava/lang/String;)V
+    invoke-static {v2}, Ljp/co/sony/mc/camera/util/CamLog;->e([Ljava/lang/String;)V
 
     .line 122
     invoke-virtual {p1}, Ljp/co/sony/mc/camera/device/state/DeviceStateContext;->getCaptureSessionInfo()Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CaptureSessionInfo;
@@ -346,10 +346,12 @@
     :goto_0
     invoke-interface {v5, v1, v3, v4, p2}, Ljp/co/sony/mc/camera/device/state/IDeviceStateMachineCallback;->onShutterDone(IIZLjp/co/sony/mc/camera/device/SnapshotRequest;)V
 
-    if-nez v2, :cond_4
+    move v0, v2
+
+    :cond_3
+    if-nez v0, :cond_4
 
     .line 88
-    :cond_3
     invoke-virtual {p1}, Ljp/co/sony/mc/camera/device/state/DeviceStateContext;->removeSnapshotResultChecker()Z
 
     :cond_4

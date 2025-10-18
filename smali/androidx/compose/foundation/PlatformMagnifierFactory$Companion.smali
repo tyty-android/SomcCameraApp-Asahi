@@ -1,6 +1,6 @@
 .class public final Landroidx/compose/foundation/PlatformMagnifierFactory$Companion;
 .super Ljava/lang/Object;
-.source "PlatformMagnifier.kt"
+.source "PlatformMagnifier.android.kt"
 
 
 # annotations
@@ -55,7 +55,7 @@
 .method private constructor <init>()V
     .locals 0
 
-    .line 48
+    .line 53
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -72,28 +72,28 @@
 
     const/4 v1, 0x0
 
-    .line 52
-    invoke-static {v1, p0, v0}, Landroidx/compose/foundation/MagnifierKt;->isPlatformMagnifierSupported$default(IILjava/lang/Object;)Z
+    .line 57
+    invoke-static {v1, p0, v0}, Landroidx/compose/foundation/Magnifier_androidKt;->isPlatformMagnifierSupported$default(IILjava/lang/Object;)Z
 
     move-result p0
 
     if-eqz p0, :cond_0
 
-    .line 58
+    .line 63
     sget-object p0, Landroidx/compose/foundation/PlatformMagnifierFactoryApi29Impl;->INSTANCE:Landroidx/compose/foundation/PlatformMagnifierFactoryApi29Impl;
 
     check-cast p0, Landroidx/compose/foundation/PlatformMagnifierFactory;
 
     return-object p0
 
-    .line 53
+    .line 58
     :cond_0
     new-instance p0, Ljava/lang/UnsupportedOperationException;
 
-    .line 54
+    .line 59
     const-string v0, "Magnifier is only supported on API level 28 and higher."
 
-    .line 53
+    .line 58
     invoke-direct {p0, v0}, Ljava/lang/UnsupportedOperationException;-><init>(Ljava/lang/String;)V
 
     throw p0

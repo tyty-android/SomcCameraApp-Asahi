@@ -12,7 +12,7 @@
 
 .annotation runtime Lkotlin/Metadata;
     d1 = {
-        "\u0000D\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0010\u000b\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0006\n\u0002\u0018\u0002\n\u0002\u0008\u000c\n\u0002\u0010\u0007\n\u0002\u0008\u0003\n\u0002\u0018\u0002\n\u0002\u0008\u000c\n\u0002\u0010\u0002\n\u0002\u0008\u0014\u0008\u0007\u0018\u0000 A2\u00020\u0001:\u0001AB%\u0008\u0007\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\u0014\u0008\u0002\u0010\u0004\u001a\u000e\u0012\u0004\u0012\u00020\u0003\u0012\u0004\u0012\u00020\u00060\u0005\u00a2\u0006\u0002\u0010\u0007J%\u0010-\u001a\u00020.2\u0006\u0010/\u001a\u00020\u00032\u0008\u0008\u0002\u00100\u001a\u00020\u001dH\u0080@\u00f8\u0001\u0000\u00a2\u0006\u0004\u00081\u00102J\u0011\u00103\u001a\u00020.H\u0086@\u00f8\u0001\u0000\u00a2\u0006\u0002\u00104J\u0015\u0010\u0004\u001a\u00020\u00062\u0006\u00105\u001a\u00020\u0003H\u0000\u00a2\u0006\u0002\u00086J\u0011\u00107\u001a\u00020.H\u0086@\u00f8\u0001\u0000\u00a2\u0006\u0002\u00104J\u0011\u00108\u001a\u00020.H\u0086@\u00f8\u0001\u0000\u00a2\u0006\u0002\u00104J\u0008\u00109\u001a\u00020\u0010H\u0002J\r\u0010:\u001a\u00020\u001dH\u0000\u00a2\u0006\u0002\u0008;J\u001b\u0010<\u001a\u00020.2\u0006\u0010/\u001a\u00020\u0003H\u0080@\u00f8\u0001\u0000\u00a2\u0006\u0004\u0008=\u0010>J\u0015\u0010?\u001a\u00020\u00062\u0006\u0010/\u001a\u00020\u0003H\u0000\u00a2\u0006\u0002\u0008@R\u001a\u0010\u0008\u001a\u0008\u0012\u0004\u0012\u00020\u00030\tX\u0080\u0004\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\n\u0010\u000bR\u0011\u0010\u000c\u001a\u00020\u00038F\u00a2\u0006\u0006\u001a\u0004\u0008\r\u0010\u000eR\u001c\u0010\u000f\u001a\u0004\u0018\u00010\u0010X\u0080\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\u0008\u0011\u0010\u0012\"\u0004\u0008\u0013\u0010\u0014R\u0014\u0010\u0015\u001a\u00020\u00068@X\u0080\u0004\u00a2\u0006\u0006\u001a\u0004\u0008\u0016\u0010\u0017R\u0011\u0010\u0018\u001a\u00020\u00068F\u00a2\u0006\u0006\u001a\u0004\u0008\u0018\u0010\u0017R\u0011\u0010\u0019\u001a\u00020\u00068F\u00a2\u0006\u0006\u001a\u0004\u0008\u0019\u0010\u0017R\u0011\u0010\u001a\u001a\u00020\u00068F\u00a2\u0006\u0006\u001a\u0004\u0008\u001a\u0010\u0017R\u0014\u0010\u001b\u001a\u00020\u00068BX\u0082\u0004\u00a2\u0006\u0006\u001a\u0004\u0008\u001b\u0010\u0017R\u0014\u0010\u001c\u001a\u00020\u001d8@X\u0080\u0004\u00a2\u0006\u0006\u001a\u0004\u0008\u001e\u0010\u001fR\u0014\u0010 \u001a\u00020!X\u0080\u0004\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\"\u0010#R\u0017\u0010$\u001a\u00020\u001d8F\u00a2\u0006\u000c\u0012\u0004\u0008%\u0010&\u001a\u0004\u0008\'\u0010\u001fR\u001a\u0010(\u001a\u00020\u001d8FX\u0087\u0004\u00a2\u0006\u000c\u0012\u0004\u0008)\u0010&\u001a\u0004\u0008*\u0010\u001fR\u0011\u0010+\u001a\u00020\u00038F\u00a2\u0006\u0006\u001a\u0004\u0008,\u0010\u000e\u0082\u0002\u0004\n\u0002\u0008\u0019\u00a8\u0006B"
+        "\u0000D\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0010\u000b\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0006\n\u0002\u0018\u0002\n\u0002\u0008\n\n\u0002\u0018\u0002\n\u0002\u0008\u0003\n\u0002\u0010\u0007\n\u0002\u0008\n\n\u0002\u0010\u0002\n\u0002\u0008\u0012\u0008\u0007\u0018\u0000 ;2\u00020\u0001:\u0001;B%\u0008\u0007\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\u0014\u0008\u0002\u0010\u0004\u001a\u000e\u0012\u0004\u0012\u00020\u0003\u0012\u0004\u0012\u00020\u00060\u0005\u00a2\u0006\u0002\u0010\u0007J\"\u0010)\u001a\u00020*2\u0006\u0010+\u001a\u00020\u00032\u0008\u0008\u0002\u0010,\u001a\u00020\u001fH\u0080@\u00a2\u0006\u0004\u0008-\u0010.J\u000e\u0010/\u001a\u00020*H\u0086@\u00a2\u0006\u0002\u00100J\u0015\u0010\u0004\u001a\u00020\u00062\u0006\u00101\u001a\u00020\u0003H\u0000\u00a2\u0006\u0002\u00082J\u000e\u00103\u001a\u00020*H\u0086@\u00a2\u0006\u0002\u00100J\u000e\u00104\u001a\u00020*H\u0086@\u00a2\u0006\u0002\u00100J\u0008\u00105\u001a\u00020\u0010H\u0002J\r\u00106\u001a\u00020\u001fH\u0000\u00a2\u0006\u0002\u00087J\u0018\u00108\u001a\u00020*2\u0006\u0010+\u001a\u00020\u0003H\u0080@\u00a2\u0006\u0004\u00089\u0010:R\u001a\u0010\u0008\u001a\u0008\u0012\u0004\u0012\u00020\u00030\tX\u0080\u0004\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\n\u0010\u000bR\u0011\u0010\u000c\u001a\u00020\u00038F\u00a2\u0006\u0006\u001a\u0004\u0008\r\u0010\u000eR\u001c\u0010\u000f\u001a\u0004\u0018\u00010\u0010X\u0080\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\u0008\u0011\u0010\u0012\"\u0004\u0008\u0013\u0010\u0014R\u0011\u0010\u0015\u001a\u00020\u00068F\u00a2\u0006\u0006\u001a\u0004\u0008\u0015\u0010\u0016R\u0011\u0010\u0017\u001a\u00020\u00068F\u00a2\u0006\u0006\u001a\u0004\u0008\u0017\u0010\u0016R\u0011\u0010\u0018\u001a\u00020\u00068F\u00a2\u0006\u0006\u001a\u0004\u0008\u0018\u0010\u0016R\u0014\u0010\u0019\u001a\u00020\u00068BX\u0082\u0004\u00a2\u0006\u0006\u001a\u0004\u0008\u0019\u0010\u0016R\u0014\u0010\u001a\u001a\u00020\u001bX\u0080\u0004\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\u001c\u0010\u001dR\u0017\u0010\u001e\u001a\u00020\u001f8F\u00a2\u0006\u000c\u0012\u0004\u0008 \u0010!\u001a\u0004\u0008\"\u0010#R\u001a\u0010$\u001a\u00020\u001f8GX\u0087\u0004\u00a2\u0006\u000c\u0012\u0004\u0008%\u0010!\u001a\u0004\u0008&\u0010#R\u0011\u0010\'\u001a\u00020\u00038F\u00a2\u0006\u0006\u001a\u0004\u0008(\u0010\u000e\u00a8\u0006<"
     }
     d2 = {
         "Landroidx/compose/material/BottomDrawerState;",
@@ -36,25 +36,21 @@
         "()Landroidx/compose/ui/unit/Density;",
         "setDensity$material_release",
         "(Landroidx/compose/ui/unit/Density;)V",
-        "isAnimationRunning",
-        "isAnimationRunning$material_release",
-        "()Z",
         "isClosed",
+        "()Z",
         "isExpanded",
         "isOpen",
         "isOpenEnabled",
-        "lastVelocity",
-        "",
-        "getLastVelocity$material_release",
-        "()F",
         "nestedScrollConnection",
         "Landroidx/compose/ui/input/nestedscroll/NestedScrollConnection;",
         "getNestedScrollConnection$material_release",
         "()Landroidx/compose/ui/input/nestedscroll/NestedScrollConnection;",
         "offset",
+        "",
         "getOffset$annotations",
         "()V",
         "getOffset",
+        "()F",
         "progress",
         "getProgress$annotations",
         "getProgress",
@@ -78,8 +74,6 @@
         "snapTo",
         "snapTo$material_release",
         "(Landroidx/compose/material/BottomDrawerValue;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;",
-        "trySnapTo",
-        "trySnapTo$material_release",
         "Companion",
         "material_release"
     }
@@ -156,26 +150,18 @@
         .end subannotation
     .end annotation
 
-    const-string v0, "initialValue"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string v0, "confirmStateChange"
-
-    invoke-static {p2, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 280
+    .line 279
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 300
+    .line 299
     invoke-static {}, Landroidx/compose/material/DrawerKt;->access$getAnimationSpec$p()Landroidx/compose/animation/core/TweenSpec;
 
     move-result-object v0
 
-    .line 298
+    .line 297
     new-instance v7, Landroidx/compose/material/AnchoredDraggableState;
 
-    .line 302
+    .line 301
     new-instance v1, Landroidx/compose/material/BottomDrawerState$anchoredDraggableState$1;
 
     invoke-direct {v1, p0}, Landroidx/compose/material/BottomDrawerState$anchoredDraggableState$1;-><init>(Landroidx/compose/material/BottomDrawerState;)V
@@ -184,7 +170,7 @@
 
     check-cast v3, Lkotlin/jvm/functions/Function1;
 
-    .line 303
+    .line 302
     new-instance v1, Landroidx/compose/material/BottomDrawerState$anchoredDraggableState$2;
 
     invoke-direct {v1, p0}, Landroidx/compose/material/BottomDrawerState$anchoredDraggableState$2;-><init>(Landroidx/compose/material/BottomDrawerState;)V
@@ -193,7 +179,7 @@
 
     check-cast v4, Lkotlin/jvm/functions/Function0;
 
-    .line 300
+    .line 299
     move-object v5, v0
 
     check-cast v5, Landroidx/compose/animation/core/AnimationSpec;
@@ -204,12 +190,12 @@
 
     move-object v6, p2
 
-    .line 298
+    .line 297
     invoke-direct/range {v1 .. v6}, Landroidx/compose/material/AnchoredDraggableState;-><init>(Ljava/lang/Object;Lkotlin/jvm/functions/Function1;Lkotlin/jvm/functions/Function0;Landroidx/compose/animation/core/AnimationSpec;Lkotlin/jvm/functions/Function1;)V
 
     iput-object v7, p0, Landroidx/compose/material/BottomDrawerState;->anchoredDraggableState:Landroidx/compose/material/AnchoredDraggableState;
 
-    .line 402
+    .line 399
     invoke-static {v7}, Landroidx/compose/material/DrawerKt;->access$ConsumeSwipeWithinBottomSheetBoundsNestedScrollConnection(Landroidx/compose/material/AnchoredDraggableState;)Landroidx/compose/ui/input/nestedscroll/NestedScrollConnection;
 
     move-result-object p1
@@ -226,12 +212,12 @@
 
     if-eqz p3, :cond_0
 
-    .line 296
+    .line 295
     sget-object p2, Landroidx/compose/material/BottomDrawerState$1;->INSTANCE:Landroidx/compose/material/BottomDrawerState$1;
 
     check-cast p2, Lkotlin/jvm/functions/Function1;
 
-    .line 294
+    .line 293
     :cond_0
     invoke-direct {p0, p1, p2}, Landroidx/compose/material/BottomDrawerState;-><init>(Landroidx/compose/material/BottomDrawerValue;Lkotlin/jvm/functions/Function1;)V
 
@@ -241,7 +227,7 @@
 .method public static final synthetic access$requireDensity(Landroidx/compose/material/BottomDrawerState;)Landroidx/compose/ui/unit/Density;
     .locals 0
 
-    .line 280
+    .line 279
     invoke-direct {p0}, Landroidx/compose/material/BottomDrawerState;->requireDensity()Landroidx/compose/ui/unit/Density;
 
     move-result-object p0
@@ -256,14 +242,14 @@
 
     if-eqz p4, :cond_0
 
-    .line 389
+    .line 388
     iget-object p2, p0, Landroidx/compose/material/BottomDrawerState;->anchoredDraggableState:Landroidx/compose/material/AnchoredDraggableState;
 
     invoke-virtual {p2}, Landroidx/compose/material/AnchoredDraggableState;->getLastVelocity()F
 
     move-result p2
 
-    .line 387
+    .line 386
     :cond_0
     invoke-virtual {p0, p1, p2, p3}, Landroidx/compose/material/BottomDrawerState;->animateTo$material_release(Landroidx/compose/material/BottomDrawerValue;FLkotlin/coroutines/Continuation;)Ljava/lang/Object;
 
@@ -287,12 +273,16 @@
 .method private final isOpenEnabled()Z
     .locals 1
 
-    .line 400
+    .line 397
     iget-object p0, p0, Landroidx/compose/material/BottomDrawerState;->anchoredDraggableState:Landroidx/compose/material/AnchoredDraggableState;
+
+    invoke-virtual {p0}, Landroidx/compose/material/AnchoredDraggableState;->getAnchors()Landroidx/compose/material/DraggableAnchors;
+
+    move-result-object p0
 
     sget-object v0, Landroidx/compose/material/BottomDrawerValue;->Open:Landroidx/compose/material/BottomDrawerValue;
 
-    invoke-virtual {p0, v0}, Landroidx/compose/material/AnchoredDraggableState;->hasAnchorForValue(Ljava/lang/Object;)Z
+    invoke-interface {p0, v0}, Landroidx/compose/material/DraggableAnchors;->hasAnchorFor(Ljava/lang/Object;)Z
 
     move-result p0
 
@@ -302,14 +292,14 @@
 .method private final requireDensity()Landroidx/compose/ui/unit/Density;
     .locals 2
 
-    .line 408
+    .line 405
     iget-object v0, p0, Landroidx/compose/material/BottomDrawerState;->density:Landroidx/compose/ui/unit/Density;
 
     if-eqz v0, :cond_0
 
     return-object v0
 
-    .line 409
+    .line 406
     :cond_0
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -331,7 +321,7 @@
 
     move-result-object p0
 
-    .line 408
+    .line 405
     new-instance v0, Ljava/lang/IllegalArgumentException;
 
     invoke-virtual {p0}, Ljava/lang/Object;->toString()Ljava/lang/String;
@@ -360,7 +350,7 @@
         }
     .end annotation
 
-    .line 390
+    .line 389
     iget-object p0, p0, Landroidx/compose/material/BottomDrawerState;->anchoredDraggableState:Landroidx/compose/material/AnchoredDraggableState;
 
     invoke-static {p0, p1, p2, p3}, Landroidx/compose/material/AnchoredDraggableKt;->animateTo(Landroidx/compose/material/AnchoredDraggableState;Ljava/lang/Object;FLkotlin/coroutines/Continuation;)Ljava/lang/Object;
@@ -394,7 +384,7 @@
         }
     .end annotation
 
-    .line 376
+    .line 375
     iget-object v0, p0, Landroidx/compose/material/BottomDrawerState;->anchoredDraggableState:Landroidx/compose/material/AnchoredDraggableState;
 
     sget-object v1, Landroidx/compose/material/BottomDrawerValue;->Closed:Landroidx/compose/material/BottomDrawerValue;
@@ -426,13 +416,9 @@
 .end method
 
 .method public final confirmStateChange$material_release(Landroidx/compose/material/BottomDrawerValue;)Z
-    .locals 1
+    .locals 0
 
-    const-string/jumbo v0, "value"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 397
+    .line 394
     iget-object p0, p0, Landroidx/compose/material/BottomDrawerState;->anchoredDraggableState:Landroidx/compose/material/AnchoredDraggableState;
 
     invoke-virtual {p0}, Landroidx/compose/material/AnchoredDraggableState;->getConfirmValueChange$material_release()Lkotlin/jvm/functions/Function1;
@@ -465,7 +451,7 @@
         }
     .end annotation
 
-    .line 385
+    .line 384
     iget-object v0, p0, Landroidx/compose/material/BottomDrawerState;->anchoredDraggableState:Landroidx/compose/material/AnchoredDraggableState;
 
     sget-object v1, Landroidx/compose/material/BottomDrawerValue;->Expanded:Landroidx/compose/material/BottomDrawerValue;
@@ -507,7 +493,7 @@
         }
     .end annotation
 
-    .line 298
+    .line 297
     iget-object p0, p0, Landroidx/compose/material/BottomDrawerState;->anchoredDraggableState:Landroidx/compose/material/AnchoredDraggableState;
 
     return-object p0
@@ -516,7 +502,7 @@
 .method public final getCurrentValue()Landroidx/compose/material/BottomDrawerValue;
     .locals 0
 
-    .line 326
+    .line 325
     iget-object p0, p0, Landroidx/compose/material/BottomDrawerState;->anchoredDraggableState:Landroidx/compose/material/AnchoredDraggableState;
 
     invoke-virtual {p0}, Landroidx/compose/material/AnchoredDraggableState;->getCurrentValue()Ljava/lang/Object;
@@ -531,29 +517,16 @@
 .method public final getDensity$material_release()Landroidx/compose/ui/unit/Density;
     .locals 0
 
-    .line 406
+    .line 403
     iget-object p0, p0, Landroidx/compose/material/BottomDrawerState;->density:Landroidx/compose/ui/unit/Density;
 
     return-object p0
 .end method
 
-.method public final getLastVelocity$material_release()F
-    .locals 0
-
-    .line 414
-    iget-object p0, p0, Landroidx/compose/material/BottomDrawerState;->anchoredDraggableState:Landroidx/compose/material/AnchoredDraggableState;
-
-    invoke-virtual {p0}, Landroidx/compose/material/AnchoredDraggableState;->getLastVelocity()F
-
-    move-result p0
-
-    return p0
-.end method
-
 .method public final getNestedScrollConnection$material_release()Landroidx/compose/ui/input/nestedscroll/NestedScrollConnection;
     .locals 0
 
-    .line 402
+    .line 399
     iget-object p0, p0, Landroidx/compose/material/BottomDrawerState;->nestedScrollConnection:Landroidx/compose/ui/input/nestedscroll/NestedScrollConnection;
 
     return-object p0
@@ -562,7 +535,7 @@
 .method public final getOffset()F
     .locals 0
 
-    .line 319
+    .line 318
     iget-object p0, p0, Landroidx/compose/material/BottomDrawerState;->anchoredDraggableState:Landroidx/compose/material/AnchoredDraggableState;
 
     invoke-virtual {p0}, Landroidx/compose/material/AnchoredDraggableState;->getOffset()F
@@ -575,7 +548,7 @@
 .method public final getProgress()F
     .locals 0
 
-    .line 335
+    .line 334
     iget-object p0, p0, Landroidx/compose/material/BottomDrawerState;->anchoredDraggableState:Landroidx/compose/material/AnchoredDraggableState;
 
     invoke-virtual {p0}, Landroidx/compose/material/AnchoredDraggableState;->getProgress()F
@@ -588,7 +561,7 @@
 .method public final getTargetValue()Landroidx/compose/material/BottomDrawerValue;
     .locals 0
 
-    .line 312
+    .line 311
     iget-object p0, p0, Landroidx/compose/material/BottomDrawerState;->anchoredDraggableState:Landroidx/compose/material/AnchoredDraggableState;
 
     invoke-virtual {p0}, Landroidx/compose/material/AnchoredDraggableState;->getTargetValue()Ljava/lang/Object;
@@ -600,23 +573,10 @@
     return-object p0
 .end method
 
-.method public final isAnimationRunning$material_release()Z
-    .locals 0
-
-    .line 413
-    iget-object p0, p0, Landroidx/compose/material/BottomDrawerState;->anchoredDraggableState:Landroidx/compose/material/AnchoredDraggableState;
-
-    invoke-virtual {p0}, Landroidx/compose/material/AnchoredDraggableState;->isAnimationRunning()Z
-
-    move-result p0
-
-    return p0
-.end method
-
 .method public final isClosed()Z
     .locals 1
 
-    .line 347
+    .line 346
     iget-object p0, p0, Landroidx/compose/material/BottomDrawerState;->anchoredDraggableState:Landroidx/compose/material/AnchoredDraggableState;
 
     invoke-virtual {p0}, Landroidx/compose/material/AnchoredDraggableState;->getCurrentValue()Ljava/lang/Object;
@@ -641,7 +601,7 @@
 .method public final isExpanded()Z
     .locals 1
 
-    .line 353
+    .line 352
     iget-object p0, p0, Landroidx/compose/material/BottomDrawerState;->anchoredDraggableState:Landroidx/compose/material/AnchoredDraggableState;
 
     invoke-virtual {p0}, Landroidx/compose/material/AnchoredDraggableState;->getCurrentValue()Ljava/lang/Object;
@@ -666,7 +626,7 @@
 .method public final isOpen()Z
     .locals 1
 
-    .line 341
+    .line 340
     iget-object p0, p0, Landroidx/compose/material/BottomDrawerState;->anchoredDraggableState:Landroidx/compose/material/AnchoredDraggableState;
 
     invoke-virtual {p0}, Landroidx/compose/material/AnchoredDraggableState;->getCurrentValue()Ljava/lang/Object;
@@ -701,7 +661,7 @@
         }
     .end annotation
 
-    .line 365
+    .line 364
     invoke-direct {p0}, Landroidx/compose/material/BottomDrawerState;->isOpenEnabled()Z
 
     move-result v0
@@ -718,7 +678,7 @@
     :goto_0
     move-object v2, v0
 
-    .line 366
+    .line 365
     iget-object v1, p0, Landroidx/compose/material/BottomDrawerState;->anchoredDraggableState:Landroidx/compose/material/AnchoredDraggableState;
 
     const/4 v5, 0x2
@@ -750,7 +710,7 @@
 .method public final requireOffset$material_release()F
     .locals 0
 
-    .line 321
+    .line 320
     iget-object p0, p0, Landroidx/compose/material/BottomDrawerState;->anchoredDraggableState:Landroidx/compose/material/AnchoredDraggableState;
 
     invoke-virtual {p0}, Landroidx/compose/material/AnchoredDraggableState;->requireOffset()F
@@ -763,7 +723,7 @@
 .method public final setDensity$material_release(Landroidx/compose/ui/unit/Density;)V
     .locals 0
 
-    .line 406
+    .line 403
     iput-object p1, p0, Landroidx/compose/material/BottomDrawerState;->density:Landroidx/compose/ui/unit/Density;
 
     return-void
@@ -783,7 +743,7 @@
         }
     .end annotation
 
-    .line 392
+    .line 391
     iget-object p0, p0, Landroidx/compose/material/BottomDrawerState;->anchoredDraggableState:Landroidx/compose/material/AnchoredDraggableState;
 
     invoke-static {p0, p1, p2}, Landroidx/compose/material/AnchoredDraggableKt;->snapTo(Landroidx/compose/material/AnchoredDraggableState;Ljava/lang/Object;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
@@ -802,21 +762,4 @@
     sget-object p0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
 
     return-object p0
-.end method
-
-.method public final trySnapTo$material_release(Landroidx/compose/material/BottomDrawerValue;)Z
-    .locals 1
-
-    const-string/jumbo v0, "target"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 394
-    iget-object p0, p0, Landroidx/compose/material/BottomDrawerState;->anchoredDraggableState:Landroidx/compose/material/AnchoredDraggableState;
-
-    invoke-virtual {p0, p1}, Landroidx/compose/material/AnchoredDraggableState;->trySnapTo$material_release(Ljava/lang/Object;)Z
-
-    move-result p0
-
-    return p0
 .end method

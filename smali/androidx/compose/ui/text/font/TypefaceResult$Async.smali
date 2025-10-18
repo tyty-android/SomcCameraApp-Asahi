@@ -76,13 +76,9 @@
 .end method
 
 .method public constructor <init>(Landroidx/compose/ui/text/font/AsyncFontListLoader;)V
-    .locals 1
+    .locals 0
 
-    const-string v0, "current"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 150
+    .line 157
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     iput-object p1, p0, Landroidx/compose/ui/text/font/TypefaceResult$Async;->current:Landroidx/compose/ui/text/font/AsyncFontListLoader;
@@ -95,7 +91,7 @@
 .method public getCacheable()Z
     .locals 0
 
-    .line 152
+    .line 159
     iget-object p0, p0, Landroidx/compose/ui/text/font/TypefaceResult$Async;->current:Landroidx/compose/ui/text/font/AsyncFontListLoader;
 
     invoke-virtual {p0}, Landroidx/compose/ui/text/font/AsyncFontListLoader;->getCacheable$ui_text_release()Z
@@ -108,7 +104,7 @@
 .method public final getCurrent$ui_text_release()Landroidx/compose/ui/text/font/AsyncFontListLoader;
     .locals 0
 
-    .line 150
+    .line 157
     iget-object p0, p0, Landroidx/compose/ui/text/font/TypefaceResult$Async;->current:Landroidx/compose/ui/text/font/AsyncFontListLoader;
 
     return-object p0

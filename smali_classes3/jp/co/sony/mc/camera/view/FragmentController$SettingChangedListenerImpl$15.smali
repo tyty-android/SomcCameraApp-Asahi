@@ -25,7 +25,7 @@
 .method constructor <init>(Ljp/co/sony/mc/camera/view/FragmentController$SettingChangedListenerImpl;)V
     .locals 0
 
-    .line 5333
+    .line 5507
     iput-object p1, p0, Ljp/co/sony/mc/camera/view/FragmentController$SettingChangedListenerImpl$15;->this$1:Ljp/co/sony/mc/camera/view/FragmentController$SettingChangedListenerImpl;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -38,7 +38,7 @@
 .method public run()V
     .locals 1
 
-    .line 5336
+    .line 5510
     new-instance p0, Ljp/co/sony/mc/camera/idd/event/IddSettingEvent;
 
     invoke-direct {p0}, Ljp/co/sony/mc/camera/idd/event/IddSettingEvent;-><init>()V
@@ -51,12 +51,12 @@
 
     sget-object v0, Ljp/co/sony/mc/camera/setting/CommonSettings;->SOFTWARE_LICENSE:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
 
-    .line 5337
+    .line 5511
     invoke-virtual {p0, v0}, Ljp/co/sony/mc/camera/idd/event/IddSettingEvent;->setting(Ljp/co/sony/mc/camera/setting/SettingKey$Key;)Ljp/co/sony/mc/camera/idd/event/IddSettingEvent;
 
     move-result-object p0
 
-    .line 5338
+    .line 5512
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/idd/event/IddSettingEvent;->send()V
 
     return-void

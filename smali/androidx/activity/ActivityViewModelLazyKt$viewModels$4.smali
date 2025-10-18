@@ -115,10 +115,6 @@
 
     move-result-object v0
 
-    const-string/jumbo p0, "this.defaultViewModelCreationExtras"
-
-    invoke-static {v0, p0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
-
     :cond_1
     return-object v0
 .end method

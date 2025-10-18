@@ -4,20 +4,4 @@
         <item quantity="other">%d yeni bildirim</item>
         <item quantity="one">%d yeni bildirim</item>
     </plurals>
-    <plurals name="mv_minute_remaining_txt">
-        <item quantity="other">%1$d dk kaldı</item>
-        <item quantity="one">1 dk kaldı</item>
-    </plurals>
-    <plurals name="mv_minute_txt">
-        <item quantity="other">%1$d dakika</item>
-        <item quantity="one">1 dakika</item>
-    </plurals>
-    <plurals name="mv_second_remaining_txt">
-        <item quantity="other">%1$d sn kaldı</item>
-        <item quantity="one">1 sn kaldı</item>
-    </plurals>
-    <plurals name="mv_second_txt">
-        <item quantity="other">%1$d saniye</item>
-        <item quantity="one">1 saniye</item>
-    </plurals>
 </resources>

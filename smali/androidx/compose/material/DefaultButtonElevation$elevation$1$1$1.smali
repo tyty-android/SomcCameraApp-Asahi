@@ -18,22 +18,25 @@
 
 .annotation system Ldalvik/annotation/Signature;
     value = {
+        "<T:",
         "Ljava/lang/Object;",
-        "Lkotlinx/coroutines/flow/FlowCollector<",
-        "Landroidx/compose/foundation/interaction/Interaction;",
-        ">;"
+        ">",
+        "Ljava/lang/Object;",
+        "Lkotlinx/coroutines/flow/FlowCollector;"
     }
 .end annotation
 
 .annotation runtime Lkotlin/Metadata;
     d1 = {
-        "\u0000\u000c\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\u0010\u0000\u001a\u00020\u00012\u0006\u0010\u0002\u001a\u00020\u0003H\u008a@"
+        "\u0000\u0010\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0002\u0010\u0000\u001a\u00020\u00012\u0006\u0010\u0002\u001a\u00020\u0003H\u008a@\u00a2\u0006\u0004\u0008\u0004\u0010\u0005"
     }
     d2 = {
         "<anonymous>",
         "",
         "interaction",
-        "Landroidx/compose/foundation/interaction/Interaction;"
+        "Landroidx/compose/foundation/interaction/Interaction;",
+        "emit",
+        "(Landroidx/compose/foundation/interaction/Interaction;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;"
     }
     k = 0x3
     mv = {
@@ -92,25 +95,25 @@
         }
     .end annotation
 
-    .line 511
+    .line 510
     instance-of p2, p1, Landroidx/compose/foundation/interaction/HoverInteraction$Enter;
 
     if-eqz p2, :cond_0
 
-    .line 512
+    .line 511
     iget-object p0, p0, Landroidx/compose/material/DefaultButtonElevation$elevation$1$1$1;->$interactions:Landroidx/compose/runtime/snapshots/SnapshotStateList;
 
     invoke-virtual {p0, p1}, Landroidx/compose/runtime/snapshots/SnapshotStateList;->add(Ljava/lang/Object;)Z
 
     goto :goto_0
 
-    .line 514
+    .line 513
     :cond_0
     instance-of p2, p1, Landroidx/compose/foundation/interaction/HoverInteraction$Exit;
 
     if-eqz p2, :cond_1
 
-    .line 515
+    .line 514
     iget-object p0, p0, Landroidx/compose/material/DefaultButtonElevation$elevation$1$1$1;->$interactions:Landroidx/compose/runtime/snapshots/SnapshotStateList;
 
     check-cast p1, Landroidx/compose/foundation/interaction/HoverInteraction$Exit;
@@ -123,26 +126,26 @@
 
     goto :goto_0
 
-    .line 517
+    .line 516
     :cond_1
     instance-of p2, p1, Landroidx/compose/foundation/interaction/FocusInteraction$Focus;
 
     if-eqz p2, :cond_2
 
-    .line 518
+    .line 517
     iget-object p0, p0, Landroidx/compose/material/DefaultButtonElevation$elevation$1$1$1;->$interactions:Landroidx/compose/runtime/snapshots/SnapshotStateList;
 
     invoke-virtual {p0, p1}, Landroidx/compose/runtime/snapshots/SnapshotStateList;->add(Ljava/lang/Object;)Z
 
     goto :goto_0
 
-    .line 520
+    .line 519
     :cond_2
     instance-of p2, p1, Landroidx/compose/foundation/interaction/FocusInteraction$Unfocus;
 
     if-eqz p2, :cond_3
 
-    .line 521
+    .line 520
     iget-object p0, p0, Landroidx/compose/material/DefaultButtonElevation$elevation$1$1$1;->$interactions:Landroidx/compose/runtime/snapshots/SnapshotStateList;
 
     check-cast p1, Landroidx/compose/foundation/interaction/FocusInteraction$Unfocus;
@@ -155,26 +158,26 @@
 
     goto :goto_0
 
-    .line 523
+    .line 522
     :cond_3
     instance-of p2, p1, Landroidx/compose/foundation/interaction/PressInteraction$Press;
 
     if-eqz p2, :cond_4
 
-    .line 524
+    .line 523
     iget-object p0, p0, Landroidx/compose/material/DefaultButtonElevation$elevation$1$1$1;->$interactions:Landroidx/compose/runtime/snapshots/SnapshotStateList;
 
     invoke-virtual {p0, p1}, Landroidx/compose/runtime/snapshots/SnapshotStateList;->add(Ljava/lang/Object;)Z
 
     goto :goto_0
 
-    .line 526
+    .line 525
     :cond_4
     instance-of p2, p1, Landroidx/compose/foundation/interaction/PressInteraction$Release;
 
     if-eqz p2, :cond_5
 
-    .line 527
+    .line 526
     iget-object p0, p0, Landroidx/compose/material/DefaultButtonElevation$elevation$1$1$1;->$interactions:Landroidx/compose/runtime/snapshots/SnapshotStateList;
 
     check-cast p1, Landroidx/compose/foundation/interaction/PressInteraction$Release;
@@ -187,13 +190,13 @@
 
     goto :goto_0
 
-    .line 529
+    .line 528
     :cond_5
     instance-of p2, p1, Landroidx/compose/foundation/interaction/PressInteraction$Cancel;
 
     if-eqz p2, :cond_6
 
-    .line 530
+    .line 529
     iget-object p0, p0, Landroidx/compose/material/DefaultButtonElevation$elevation$1$1$1;->$interactions:Landroidx/compose/runtime/snapshots/SnapshotStateList;
 
     check-cast p1, Landroidx/compose/foundation/interaction/PressInteraction$Cancel;
@@ -204,7 +207,7 @@
 
     invoke-virtual {p0, p1}, Landroidx/compose/runtime/snapshots/SnapshotStateList;->remove(Ljava/lang/Object;)Z
 
-    .line 533
+    .line 532
     :cond_6
     :goto_0
     sget-object p0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
@@ -215,7 +218,7 @@
 .method public bridge synthetic emit(Ljava/lang/Object;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
     .locals 0
 
-    .line 509
+    .line 508
     check-cast p1, Landroidx/compose/foundation/interaction/Interaction;
 
     invoke-virtual {p0, p1, p2}, Landroidx/compose/material/DefaultButtonElevation$elevation$1$1$1;->emit(Landroidx/compose/foundation/interaction/Interaction;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;

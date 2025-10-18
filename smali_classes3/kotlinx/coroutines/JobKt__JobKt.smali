@@ -5,7 +5,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/SourceDebugExtension;
-    value = "SMAP\nJob.kt\nKotlin\n*S Kotlin\n*F\n+ 1 Job.kt\nkotlinx/coroutines/JobKt__JobKt\n+ 2 CompletionHandler.kt\nkotlinx/coroutines/CompletionHandlerKt\n+ 3 _Sequences.kt\nkotlin/sequences/SequencesKt___SequencesKt\n*L\n1#1,670:1\n13#2:671\n1290#3,2:672\n1290#3,2:674\n1290#3,2:676\n1290#3,2:678\n*S KotlinDebug\n*F\n+ 1 Job.kt\nkotlinx/coroutines/JobKt__JobKt\n*L\n479#1:671\n506#1:672,2\n520#1:674,2\n614#1:676,2\n638#1:678,2\n*E\n"
+    value = "SMAP\nJob.kt\nKotlin\n*S Kotlin\n*F\n+ 1 Job.kt\nkotlinx/coroutines/JobKt__JobKt\n+ 2 CompletionHandler.kt\nkotlinx/coroutines/CompletionHandlerKt\n+ 3 _Sequences.kt\nkotlin/sequences/SequencesKt___SequencesKt\n*L\n1#1,685:1\n13#2:686\n1295#3,2:687\n1295#3,2:689\n1295#3,2:691\n1295#3,2:693\n*S KotlinDebug\n*F\n+ 1 Job.kt\nkotlinx/coroutines/JobKt__JobKt\n*L\n494#1:686\n521#1:687,2\n535#1:689,2\n629#1:691,2\n653#1:693,2\n*E\n"
 .end annotation
 
 .annotation runtime Lkotlin/Metadata;
@@ -47,7 +47,7 @@
     k = 0x5
     mv = {
         0x1,
-        0x6,
+        0x8,
         0x0
     }
     xi = 0x30
@@ -59,7 +59,7 @@
 .method public static final Job(Lkotlinx/coroutines/Job;)Lkotlinx/coroutines/CompletableJob;
     .locals 1
 
-    .line 379
+    .line 394
     new-instance v0, Lkotlinx/coroutines/JobImpl;
 
     invoke-direct {v0, p0}, Lkotlinx/coroutines/JobImpl;-><init>(Lkotlinx/coroutines/Job;)V
@@ -76,7 +76,7 @@
         message = "Since 1.2.0, binary compatibility with versions <= 1.1.x"
     .end annotation
 
-    .line 385
+    .line 400
     invoke-static {p0}, Lkotlinx/coroutines/JobKt;->Job(Lkotlinx/coroutines/Job;)Lkotlinx/coroutines/CompletableJob;
 
     move-result-object p0
@@ -95,7 +95,7 @@
 
     const/4 p0, 0x0
 
-    .line 379
+    .line 394
     :cond_0
     invoke-static {p0}, Lkotlinx/coroutines/JobKt;->Job(Lkotlinx/coroutines/Job;)Lkotlinx/coroutines/CompletableJob;
 
@@ -113,7 +113,7 @@
 
     const/4 p0, 0x0
 
-    .line 385
+    .line 400
     :cond_0
     invoke-static {p0}, Lkotlinx/coroutines/JobKt;->Job(Lkotlinx/coroutines/Job;)Lkotlinx/coroutines/Job;
 
@@ -131,7 +131,7 @@
 
     const/4 v0, 0x0
 
-    .line 556
+    .line 571
     invoke-static {p0, v0}, Lkotlinx/coroutines/JobKt;->cancel(Lkotlin/coroutines/CoroutineContext;Ljava/util/concurrent/CancellationException;)V
 
     return-void
@@ -140,7 +140,7 @@
 .method public static final cancel(Lkotlin/coroutines/CoroutineContext;Ljava/util/concurrent/CancellationException;)V
     .locals 1
 
-    .line 549
+    .line 564
     sget-object v0, Lkotlinx/coroutines/Job;->Key:Lkotlinx/coroutines/Job$Key;
 
     check-cast v0, Lkotlin/coroutines/CoroutineContext$Key;
@@ -162,7 +162,7 @@
 .method public static final cancel(Lkotlinx/coroutines/Job;Ljava/lang/String;Ljava/lang/Throwable;)V
     .locals 0
 
-    .line 596
+    .line 611
     invoke-static {p1, p2}, Lkotlinx/coroutines/ExceptionsKt;->CancellationException(Ljava/lang/String;Ljava/lang/Throwable;)Ljava/util/concurrent/CancellationException;
 
     move-result-object p1
@@ -179,7 +179,7 @@
         message = "Since 1.2.0, binary compatibility with versions <= 1.1.x"
     .end annotation
 
-    .line 603
+    .line 618
     sget-object v0, Lkotlinx/coroutines/Job;->Key:Lkotlinx/coroutines/Job$Key;
 
     check-cast v0, Lkotlin/coroutines/CoroutineContext$Key;
@@ -206,7 +206,7 @@
 
     return p0
 
-    .line 604
+    .line 619
     :cond_1
     move-object v0, p0
 
@@ -232,7 +232,7 @@
 
     const/4 p1, 0x0
 
-    .line 548
+    .line 563
     :cond_0
     invoke-static {p0, p1}, Lkotlinx/coroutines/JobKt;->cancel(Lkotlin/coroutines/CoroutineContext;Ljava/util/concurrent/CancellationException;)V
 
@@ -248,7 +248,7 @@
 
     const/4 p2, 0x0
 
-    .line 596
+    .line 611
     :cond_0
     invoke-static {p0, p1, p2}, Lkotlinx/coroutines/JobKt;->cancel(Lkotlinx/coroutines/Job;Ljava/lang/String;Ljava/lang/Throwable;)V
 
@@ -264,7 +264,7 @@
 
     const/4 p1, 0x0
 
-    .line 602
+    .line 617
     :cond_0
     invoke-static {p0, p1}, Lkotlinx/coroutines/JobKt;->cancel(Lkotlin/coroutines/CoroutineContext;Ljava/lang/Throwable;)Z
 
@@ -291,10 +291,10 @@
 
     const/4 v1, 0x1
 
-    .line 496
+    .line 511
     invoke-static {p0, v0, v1, v0}, Lkotlinx/coroutines/Job$DefaultImpls;->cancel$default(Lkotlinx/coroutines/Job;Ljava/util/concurrent/CancellationException;ILjava/lang/Object;)V
 
-    .line 497
+    .line 512
     invoke-interface {p0, p1}, Lkotlinx/coroutines/Job;->join(Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
 
     move-result-object p0
@@ -322,7 +322,7 @@
 
     const/4 v0, 0x0
 
-    .line 621
+    .line 636
     invoke-static {p0, v0}, Lkotlinx/coroutines/JobKt;->cancelChildren(Lkotlin/coroutines/CoroutineContext;Ljava/util/concurrent/CancellationException;)V
 
     return-void
@@ -335,7 +335,7 @@
         message = "Since 1.2.0, binary compatibility with versions <= 1.1.x"
     .end annotation
 
-    .line 637
+    .line 652
     sget-object v0, Lkotlinx/coroutines/Job;->Key:Lkotlinx/coroutines/Job$Key;
 
     check-cast v0, Lkotlin/coroutines/CoroutineContext$Key;
@@ -350,13 +350,13 @@
 
     return-void
 
-    .line 638
+    .line 653
     :cond_0
     invoke-interface {p0}, Lkotlinx/coroutines/Job;->getChildren()Lkotlin/sequences/Sequence;
 
     move-result-object v0
 
-    .line 678
+    .line 693
     invoke-interface {v0}, Lkotlin/sequences/Sequence;->iterator()Ljava/util/Iterator;
 
     move-result-object v0
@@ -375,7 +375,7 @@
 
     check-cast v1, Lkotlinx/coroutines/Job;
 
-    .line 638
+    .line 653
     instance-of v2, v1, Lkotlinx/coroutines/JobSupport;
 
     if-eqz v2, :cond_2
@@ -405,7 +405,7 @@
 .method public static final cancelChildren(Lkotlin/coroutines/CoroutineContext;Ljava/util/concurrent/CancellationException;)V
     .locals 1
 
-    .line 614
+    .line 629
     sget-object v0, Lkotlinx/coroutines/Job;->Key:Lkotlinx/coroutines/Job$Key;
 
     check-cast v0, Lkotlin/coroutines/CoroutineContext$Key;
@@ -424,7 +424,7 @@
 
     if-eqz p0, :cond_0
 
-    .line 676
+    .line 691
     invoke-interface {p0}, Lkotlin/sequences/Sequence;->iterator()Ljava/util/Iterator;
 
     move-result-object p0
@@ -442,7 +442,7 @@
 
     check-cast v0, Lkotlinx/coroutines/Job;
 
-    .line 614
+    .line 629
     invoke-interface {v0, p1}, Lkotlinx/coroutines/Job;->cancel(Ljava/util/concurrent/CancellationException;)V
 
     goto :goto_0
@@ -460,7 +460,7 @@
 
     const/4 v0, 0x0
 
-    .line 513
+    .line 528
     invoke-static {p0, v0}, Lkotlinx/coroutines/JobKt;->cancelChildren(Lkotlinx/coroutines/Job;Ljava/util/concurrent/CancellationException;)V
 
     return-void
@@ -473,12 +473,12 @@
         message = "Since 1.2.0, binary compatibility with versions <= 1.1.x"
     .end annotation
 
-    .line 520
+    .line 535
     invoke-interface {p0}, Lkotlinx/coroutines/Job;->getChildren()Lkotlin/sequences/Sequence;
 
     move-result-object v0
 
-    .line 674
+    .line 689
     invoke-interface {v0}, Lkotlin/sequences/Sequence;->iterator()Ljava/util/Iterator;
 
     move-result-object v0
@@ -497,7 +497,7 @@
 
     check-cast v1, Lkotlinx/coroutines/Job;
 
-    .line 520
+    .line 535
     instance-of v2, v1, Lkotlinx/coroutines/JobSupport;
 
     if-eqz v2, :cond_1
@@ -527,12 +527,12 @@
 .method public static final cancelChildren(Lkotlinx/coroutines/Job;Ljava/util/concurrent/CancellationException;)V
     .locals 1
 
-    .line 506
+    .line 521
     invoke-interface {p0}, Lkotlinx/coroutines/Job;->getChildren()Lkotlin/sequences/Sequence;
 
     move-result-object p0
 
-    .line 672
+    .line 687
     invoke-interface {p0}, Lkotlin/sequences/Sequence;->iterator()Ljava/util/Iterator;
 
     move-result-object p0
@@ -550,7 +550,7 @@
 
     check-cast v0, Lkotlinx/coroutines/Job;
 
-    .line 506
+    .line 521
     invoke-interface {v0, p1}, Lkotlinx/coroutines/Job;->cancel(Ljava/util/concurrent/CancellationException;)V
 
     goto :goto_0
@@ -568,7 +568,7 @@
 
     const/4 p1, 0x0
 
-    .line 636
+    .line 651
     :cond_0
     invoke-static {p0, p1}, Lkotlinx/coroutines/JobKt;->cancelChildren(Lkotlin/coroutines/CoroutineContext;Ljava/lang/Throwable;)V
 
@@ -584,7 +584,7 @@
 
     const/4 p1, 0x0
 
-    .line 613
+    .line 628
     :cond_0
     invoke-static {p0, p1}, Lkotlinx/coroutines/JobKt;->cancelChildren(Lkotlin/coroutines/CoroutineContext;Ljava/util/concurrent/CancellationException;)V
 
@@ -600,7 +600,7 @@
 
     const/4 p1, 0x0
 
-    .line 519
+    .line 534
     :cond_0
     invoke-static {p0, p1}, Lkotlinx/coroutines/JobKt;->cancelChildren(Lkotlinx/coroutines/Job;Ljava/lang/Throwable;)V
 
@@ -616,7 +616,7 @@
 
     const/4 p1, 0x0
 
-    .line 505
+    .line 520
     :cond_0
     invoke-static {p0, p1}, Lkotlinx/coroutines/JobKt;->cancelChildren(Lkotlinx/coroutines/Job;Ljava/util/concurrent/CancellationException;)V
 
@@ -626,17 +626,17 @@
 .method public static final disposeOnCompletion(Lkotlinx/coroutines/Job;Lkotlinx/coroutines/DisposableHandle;)Lkotlinx/coroutines/DisposableHandle;
     .locals 1
 
-    .line 479
+    .line 494
     new-instance v0, Lkotlinx/coroutines/DisposeOnCompletion;
 
     invoke-direct {v0, p1}, Lkotlinx/coroutines/DisposeOnCompletion;-><init>(Lkotlinx/coroutines/DisposableHandle;)V
 
     check-cast v0, Lkotlinx/coroutines/CompletionHandlerBase;
 
-    .line 671
+    .line 686
     check-cast v0, Lkotlin/jvm/functions/Function1;
 
-    .line 479
+    .line 494
     invoke-interface {p0, v0}, Lkotlinx/coroutines/Job;->invokeOnCompletion(Lkotlin/jvm/functions/Function1;)Lkotlinx/coroutines/DisposableHandle;
 
     move-result-object p0
@@ -647,7 +647,7 @@
 .method public static final ensureActive(Lkotlin/coroutines/CoroutineContext;)V
     .locals 1
 
-    .line 589
+    .line 604
     sget-object v0, Lkotlinx/coroutines/Job;->Key:Lkotlinx/coroutines/Job$Key;
 
     check-cast v0, Lkotlin/coroutines/CoroutineContext$Key;
@@ -669,7 +669,7 @@
 .method public static final ensureActive(Lkotlinx/coroutines/Job;)V
     .locals 1
 
-    .line 571
+    .line 586
     invoke-interface {p0}, Lkotlinx/coroutines/Job;->isActive()Z
 
     move-result v0
@@ -689,7 +689,7 @@
 .method public static final getJob(Lkotlin/coroutines/CoroutineContext;)Lkotlinx/coroutines/Job;
     .locals 3
 
-    .line 630
+    .line 645
     sget-object v0, Lkotlinx/coroutines/Job;->Key:Lkotlinx/coroutines/Job$Key;
 
     check-cast v0, Lkotlin/coroutines/CoroutineContext$Key;
@@ -731,9 +731,9 @@
 .end method
 
 .method public static final isActive(Lkotlin/coroutines/CoroutineContext;)Z
-    .locals 2
+    .locals 1
 
-    .line 542
+    .line 557
     sget-object v0, Lkotlinx/coroutines/Job;->Key:Lkotlinx/coroutines/Job$Key;
 
     check-cast v0, Lkotlin/coroutines/CoroutineContext$Key;
@@ -744,22 +744,19 @@
 
     check-cast p0, Lkotlinx/coroutines/Job;
 
-    const/4 v0, 0x0
-
     if-eqz p0, :cond_0
 
     invoke-interface {p0}, Lkotlinx/coroutines/Job;->isActive()Z
 
     move-result p0
 
-    const/4 v1, 0x1
-
-    if-ne p0, v1, :cond_0
-
-    move v0, v1
+    goto :goto_0
 
     :cond_0
-    return v0
+    const/4 p0, 0x1
+
+    :goto_0
+    return p0
 .end method
 
 .method private static final orCancellation$JobKt__JobKt(Ljava/lang/Throwable;Lkotlinx/coroutines/Job;)Ljava/lang/Throwable;
@@ -767,7 +764,7 @@
 
     if-nez p0, :cond_0
 
-    .line 641
+    .line 656
     new-instance p0, Lkotlinx/coroutines/JobCancellationException;
 
     const-string v0, "Job was cancelled"

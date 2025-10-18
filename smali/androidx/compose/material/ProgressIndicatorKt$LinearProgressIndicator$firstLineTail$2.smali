@@ -81,7 +81,7 @@
 .method public bridge synthetic invoke(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
 
-    .line 132
+    .line 163
     check-cast p1, Landroidx/compose/animation/core/KeyframesSpec$KeyframesSpecConfig;
 
     invoke-virtual {p0, p1}, Landroidx/compose/material/ProgressIndicatorKt$LinearProgressIndicator$firstLineTail$2;->invoke(Landroidx/compose/animation/core/KeyframesSpec$KeyframesSpecConfig;)V
@@ -102,18 +102,14 @@
         }
     .end annotation
 
-    const-string p0, "$this$keyframes"
-
-    invoke-static {p1, p0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
     const/16 p0, 0x708
 
-    .line 133
+    .line 164
     invoke-virtual {p1, p0}, Landroidx/compose/animation/core/KeyframesSpec$KeyframesSpecConfig;->setDurationMillis(I)V
 
     const/4 p0, 0x0
 
-    .line 134
+    .line 165
     invoke-static {p0}, Ljava/lang/Float;->valueOf(F)Ljava/lang/Float;
 
     move-result-object p0
@@ -124,17 +120,19 @@
 
     move-result-object p0
 
+    check-cast p0, Landroidx/compose/animation/core/KeyframeBaseEntity;
+
     invoke-static {}, Landroidx/compose/material/ProgressIndicatorKt;->access$getFirstLineTailEasing$p()Landroidx/compose/animation/core/CubicBezierEasing;
 
     move-result-object v0
 
     check-cast v0, Landroidx/compose/animation/core/Easing;
 
-    invoke-virtual {p1, p0, v0}, Landroidx/compose/animation/core/KeyframesSpec$KeyframesSpecConfig;->with(Landroidx/compose/animation/core/KeyframesSpec$KeyframeEntity;Landroidx/compose/animation/core/Easing;)V
+    invoke-virtual {p1, p0, v0}, Landroidx/compose/animation/core/KeyframesSpec$KeyframesSpecConfig;->using(Landroidx/compose/animation/core/KeyframeBaseEntity;Landroidx/compose/animation/core/Easing;)Landroidx/compose/animation/core/KeyframeBaseEntity;
 
     const/high16 p0, 0x3f800000    # 1.0f
 
-    .line 135
+    .line 166
     invoke-static {p0}, Ljava/lang/Float;->valueOf(F)Ljava/lang/Float;
 
     move-result-object p0

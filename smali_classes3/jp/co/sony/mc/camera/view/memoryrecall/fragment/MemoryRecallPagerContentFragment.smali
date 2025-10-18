@@ -12,11 +12,12 @@
 
 .annotation runtime Lkotlin/Metadata;
     d1 = {
-        "\u0000>\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0010\u0008\n\u0002\u0008\u0008\n\u0002\u0018\u0002\n\u0002\u0008\u0003\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0004\u0008\u0007\u0018\u0000 \u001d2\u00020\u0001:\u0001\u001dB\u0005\u00a2\u0006\u0002\u0010\u0002J\u0010\u0010\u0010\u001a\u00020\u00112\u0006\u0010\u0012\u001a\u00020\u0013H\u0002J&\u0010\u0014\u001a\u0004\u0018\u00010\u00132\u0006\u0010\u0015\u001a\u00020\u00162\u0008\u0010\u0017\u001a\u0004\u0018\u00010\u00182\u0008\u0010\u0019\u001a\u0004\u0018\u00010\u001aH\u0016J\u0010\u0010\u001b\u001a\u00020\u00112\u0006\u0010\u001c\u001a\u00020\u001aH\u0016R+\u0010\u0005\u001a\u00020\u00042\u0006\u0010\u0003\u001a\u00020\u00048F@FX\u0086\u008e\u0002\u00a2\u0006\u0012\n\u0004\u0008\n\u0010\u000b\u001a\u0004\u0008\u0006\u0010\u0007\"\u0004\u0008\u0008\u0010\tR\u0014\u0010\u000c\u001a\u00020\r8BX\u0082\u0004\u00a2\u0006\u0006\u001a\u0004\u0008\u000e\u0010\u000f\u00a8\u0006\u001e"
+        "\u0000<\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0003\n\u0002\u0010\u0008\n\u0002\u0008\u0008\n\u0002\u0018\u0002\n\u0002\u0008\u0003\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0002\n\u0002\u0008\u0005\u0008\u0007\u0018\u0000 \u001e2\u00020\u0001:\u0001\u001eB\t\u0008\u0007\u00a2\u0006\u0004\u0008\u0002\u0010\u0003J&\u0010\u0011\u001a\u0004\u0018\u00010\u00122\u0006\u0010\u0013\u001a\u00020\u00142\u0008\u0010\u0015\u001a\u0004\u0018\u00010\u00162\u0008\u0010\u0017\u001a\u0004\u0018\u00010\u0018H\u0016J\u0010\u0010\u0019\u001a\u00020\u001a2\u0006\u0010\u001b\u001a\u00020\u0018H\u0016J\u0010\u0010\u001c\u001a\u00020\u001a2\u0006\u0010\u001d\u001a\u00020\u0012H\u0002R+\u0010\u0006\u001a\u00020\u00052\u0006\u0010\u0004\u001a\u00020\u00058F@FX\u0086\u008e\u0002\u00a2\u0006\u0012\n\u0004\u0008\u000b\u0010\u000c\u001a\u0004\u0008\u0007\u0010\u0008\"\u0004\u0008\t\u0010\nR\u0014\u0010\r\u001a\u00020\u000e8BX\u0082\u0004\u00a2\u0006\u0006\u001a\u0004\u0008\u000f\u0010\u0010\u00a8\u0006\u001f"
     }
     d2 = {
         "Ljp/co/sony/mc/camera/view/memoryrecall/fragment/MemoryRecallPagerContentFragment;",
         "Landroidx/fragment/app/Fragment;",
+        "<init>",
         "()V",
         "<set-?>",
         "",
@@ -31,11 +32,8 @@
         "Ljp/co/sony/mc/camera/view/memoryrecall/viewmodel/MemoryRecallViewModel;",
         "getMrViewModel",
         "()Ljp/co/sony/mc/camera/view/memoryrecall/viewmodel/MemoryRecallViewModel;",
-        "bindData",
-        "",
-        "layout",
-        "Landroid/view/View;",
         "onCreateView",
+        "Landroid/view/View;",
         "inflater",
         "Landroid/view/LayoutInflater;",
         "container",
@@ -43,14 +41,17 @@
         "savedInstanceState",
         "Landroid/os/Bundle;",
         "onSaveInstanceState",
+        "",
         "outState",
+        "bindData",
+        "layout",
         "Companion",
         "SomcCamera_release"
     }
     k = 0x1
     mv = {
-        0x1,
-        0x9,
+        0x2,
+        0x0,
         0x0
     }
     xi = 0x30
@@ -182,14 +183,14 @@
 
     invoke-direct {v0, v1, p0}, Ljp/co/sony/mc/camera/view/memoryrecall/widget/MemoryRecallViewBindHelper;-><init>(Landroid/content/Context;Ljp/co/sony/mc/camera/setting/CameraSettingsHolder;)V
 
-    const p0, 0x7f0902dc
+    const p0, 0x7f0902d5
 
     .line 54
     invoke-virtual {p1, p0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
     move-result-object p0
 
-    const v1, 0x7f0902de
+    const v1, 0x7f0902d7
 
     .line 55
     invoke-virtual {p0, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
@@ -210,7 +211,7 @@
     .line 59
     invoke-virtual {v0, v1}, Ljp/co/sony/mc/camera/view/memoryrecall/widget/MemoryRecallViewBindHelper;->setIso(Landroid/view/View;)V
 
-    const v1, 0x7f0902dd
+    const v1, 0x7f0902d6
 
     .line 62
     invoke-virtual {p0, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
@@ -231,7 +232,7 @@
     .line 66
     invoke-virtual {v0, v1}, Ljp/co/sony/mc/camera/view/memoryrecall/widget/MemoryRecallViewBindHelper;->setFileFormat(Landroid/view/View;)V
 
-    const v1, 0x7f0902e0
+    const v1, 0x7f0902d9
 
     .line 69
     invoke-virtual {p0, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
@@ -264,7 +265,7 @@
     .line 77
     invoke-virtual {v0, v1}, Ljp/co/sony/mc/camera/view/memoryrecall/widget/MemoryRecallViewBindHelper;->setFaceEye(Landroid/view/View;)V
 
-    const v1, 0x7f0902e1
+    const v1, 0x7f0902da
 
     .line 80
     invoke-virtual {p0, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
@@ -279,7 +280,7 @@
     .line 82
     invoke-virtual {v0, v1}, Ljp/co/sony/mc/camera/view/memoryrecall/widget/MemoryRecallViewBindHelper;->setTemperature(Landroid/view/View;)V
 
-    const v1, 0x7f0902df
+    const v1, 0x7f0902d8
 
     .line 85
     invoke-virtual {p0, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
@@ -292,7 +293,7 @@
 
     invoke-virtual {v0, p0}, Ljp/co/sony/mc/camera/view/memoryrecall/widget/MemoryRecallViewBindHelper;->setEV(Landroid/view/View;)V
 
-    const p0, 0x7f0902da
+    const p0, 0x7f0902d3
 
     .line 88
     invoke-virtual {p1, p0}, Landroid/view/View;->findViewById(I)Landroid/view/View;

@@ -22,7 +22,7 @@
 .method constructor <init>(Ljp/co/sony/mc/camera/GoogleLensActivity;)V
     .locals 0
 
-    .line 46
+    .line 44
     iput-object p1, p0, Ljp/co/sony/mc/camera/GoogleLensActivity$2;->this$0:Ljp/co/sony/mc/camera/GoogleLensActivity;
 
     invoke-direct {p0}, Ljp/co/sony/mc/camera/ScreenOffReceiverBase;-><init>()V
@@ -35,14 +35,14 @@
 .method public onScreenOff()V
     .locals 2
 
-    .line 49
+    .line 47
     iget-object v0, p0, Ljp/co/sony/mc/camera/GoogleLensActivity$2;->this$0:Ljp/co/sony/mc/camera/GoogleLensActivity;
 
     const/4 v1, 0x0
 
     invoke-virtual {v0, v1}, Ljp/co/sony/mc/camera/GoogleLensActivity;->setShowWhenLocked(Z)V
 
-    .line 50
+    .line 48
     iget-object p0, p0, Ljp/co/sony/mc/camera/GoogleLensActivity$2;->this$0:Ljp/co/sony/mc/camera/GoogleLensActivity;
 
     invoke-virtual {p0, v1}, Ljp/co/sony/mc/camera/GoogleLensActivity;->setTurnScreenOn(Z)V

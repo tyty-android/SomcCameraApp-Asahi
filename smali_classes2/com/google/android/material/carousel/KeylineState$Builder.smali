@@ -21,6 +21,8 @@
 
 
 # instance fields
+.field private final availableSpace:F
+
 .field private firstFocalKeylineIndex:I
 
 .field private final itemSize:F
@@ -28,6 +30,8 @@
 .field private lastFocalKeylineIndex:I
 
 .field private lastKeylineMaskedSize:F
+
+.field private latestAnchorKeylineIndex:I
 
 .field private tmpFirstFocalKeyline:Lcom/google/android/material/carousel/KeylineState$Keyline;
 
@@ -45,13 +49,13 @@
 
 
 # direct methods
-.method constructor <init>(F)V
-    .locals 1
+.method constructor <init>(FF)V
+    .locals 2
 
-    .line 217
+    .line 272
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 203
+    .line 255
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
@@ -60,19 +64,25 @@
 
     const/4 v0, -0x1
 
-    .line 206
+    .line 258
     iput v0, p0, Lcom/google/android/material/carousel/KeylineState$Builder;->firstFocalKeylineIndex:I
 
-    .line 207
+    .line 259
     iput v0, p0, Lcom/google/android/material/carousel/KeylineState$Builder;->lastFocalKeylineIndex:I
 
-    const/4 v0, 0x0
+    const/4 v1, 0x0
 
-    .line 209
-    iput v0, p0, Lcom/google/android/material/carousel/KeylineState$Builder;->lastKeylineMaskedSize:F
+    .line 261
+    iput v1, p0, Lcom/google/android/material/carousel/KeylineState$Builder;->lastKeylineMaskedSize:F
 
-    .line 218
+    .line 263
+    iput v0, p0, Lcom/google/android/material/carousel/KeylineState$Builder;->latestAnchorKeylineIndex:I
+
+    .line 273
     iput p1, p0, Lcom/google/android/material/carousel/KeylineState$Builder;->itemSize:F
+
+    .line 274
+    iput p2, p0, Lcom/google/android/material/carousel/KeylineState$Builder;->availableSpace:F
 
     return-void
 .end method
@@ -97,12 +107,35 @@
 
 
 # virtual methods
+.method addAnchorKeyline(FFF)Lcom/google/android/material/carousel/KeylineState$Builder;
+    .locals 6
+
+    const/4 v4, 0x0
+
+    const/4 v5, 0x1
+
+    move-object v0, p0
+
+    move v1, p1
+
+    move v2, p2
+
+    move v3, p3
+
+    .line 514
+    invoke-virtual/range {v0 .. v5}, Lcom/google/android/material/carousel/KeylineState$Builder;->addKeyline(FFFZZ)Lcom/google/android/material/carousel/KeylineState$Builder;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
 .method addKeyline(FFF)Lcom/google/android/material/carousel/KeylineState$Builder;
     .locals 1
 
     const/4 v0, 0x0
 
-    .line 231
+    .line 315
     invoke-virtual {p0, p1, p2, p3, v0}, Lcom/google/android/material/carousel/KeylineState$Builder;->addKeyline(FFFZ)Lcom/google/android/material/carousel/KeylineState$Builder;
 
     move-result-object p0
@@ -111,178 +144,373 @@
 .end method
 
 .method addKeyline(FFFZ)Lcom/google/android/material/carousel/KeylineState$Builder;
-    .locals 2
+    .locals 6
 
-    const/4 v0, 0x0
+    const/4 v5, 0x0
 
-    cmpg-float v0, p3, v0
+    move-object v0, p0
 
-    if-gtz v0, :cond_0
+    move v1, p1
+
+    move v2, p2
+
+    move v3, p3
+
+    move v4, p4
+
+    .line 302
+    invoke-virtual/range {v0 .. v5}, Lcom/google/android/material/carousel/KeylineState$Builder;->addKeyline(FFFZZ)Lcom/google/android/material/carousel/KeylineState$Builder;
+
+    move-result-object p0
 
     return-object p0
+.end method
 
-    .line 262
-    :cond_0
-    new-instance v0, Lcom/google/android/material/carousel/KeylineState$Keyline;
+.method addKeyline(FFFZZ)Lcom/google/android/material/carousel/KeylineState$Builder;
+    .locals 8
 
-    const/4 v1, 0x1
+    const/high16 v0, 0x40000000    # 2.0f
 
-    invoke-direct {v0, v1, p1, p2, p3}, Lcom/google/android/material/carousel/KeylineState$Keyline;-><init>(FFFF)V
+    div-float v0, p3, v0
 
-    if-eqz p4, :cond_5
+    sub-float v1, p1, v0
 
-    .line 264
-    iget-object p1, p0, Lcom/google/android/material/carousel/KeylineState$Builder;->tmpFirstFocalKeyline:Lcom/google/android/material/carousel/KeylineState$Keyline;
+    add-float/2addr v0, p1
 
-    if-nez p1, :cond_1
+    .line 482
+    iget v2, p0, Lcom/google/android/material/carousel/KeylineState$Builder;->availableSpace:F
 
-    .line 265
-    iput-object v0, p0, Lcom/google/android/material/carousel/KeylineState$Builder;->tmpFirstFocalKeyline:Lcom/google/android/material/carousel/KeylineState$Keyline;
+    cmpl-float v3, v0, v2
 
-    .line 266
-    iget-object p1, p0, Lcom/google/android/material/carousel/KeylineState$Builder;->tmpKeylines:Ljava/util/List;
+    if-lez v3, :cond_0
 
-    invoke-interface {p1}, Ljava/util/List;->size()I
+    sub-float v1, v0, p3
 
-    move-result p1
+    .line 483
+    invoke-static {v1, v2}, Ljava/lang/Math;->max(FF)F
 
-    iput p1, p0, Lcom/google/android/material/carousel/KeylineState$Builder;->firstFocalKeylineIndex:I
+    move-result v1
 
-    .line 269
-    :cond_1
-    iget p1, p0, Lcom/google/android/material/carousel/KeylineState$Builder;->lastFocalKeylineIndex:I
+    sub-float/2addr v0, v1
 
-    const/4 p2, -0x1
+    invoke-static {v0}, Ljava/lang/Math;->abs(F)F
 
-    if-eq p1, p2, :cond_3
-
-    iget-object p1, p0, Lcom/google/android/material/carousel/KeylineState$Builder;->tmpKeylines:Ljava/util/List;
-
-    invoke-interface {p1}, Ljava/util/List;->size()I
-
-    move-result p1
-
-    iget p2, p0, Lcom/google/android/material/carousel/KeylineState$Builder;->lastFocalKeylineIndex:I
-
-    sub-int/2addr p1, p2
-
-    const/4 p2, 0x1
-
-    if-gt p1, p2, :cond_2
+    move-result v0
 
     goto :goto_0
 
-    .line 270
-    :cond_2
-    new-instance p0, Ljava/lang/IllegalArgumentException;
+    :cond_0
+    const/4 v0, 0x0
 
-    const-string p1, "Keylines marked as focal must be placed next to each other. There cannot be non-focal keylines between focal keylines."
+    cmpg-float v2, v1, v0
 
-    invoke-direct {p0, p1}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
+    if-gez v2, :cond_1
 
-    throw p0
+    add-float v2, v1, p3
 
-    .line 274
-    :cond_3
+    .line 485
+    invoke-static {v2, v0}, Ljava/lang/Math;->min(FF)F
+
+    move-result v0
+
+    sub-float/2addr v1, v0
+
+    invoke-static {v1}, Ljava/lang/Math;->abs(F)F
+
+    move-result v0
+
+    :cond_1
     :goto_0
-    iget-object p1, p0, Lcom/google/android/material/carousel/KeylineState$Builder;->tmpFirstFocalKeyline:Lcom/google/android/material/carousel/KeylineState$Keyline;
+    move v7, v0
 
-    iget p1, p1, Lcom/google/android/material/carousel/KeylineState$Keyline;->maskedItemSize:F
+    move-object v1, p0
 
-    cmpl-float p1, p3, p1
+    move v2, p1
 
-    if-nez p1, :cond_4
+    move v3, p2
 
-    .line 278
-    iput-object v0, p0, Lcom/google/android/material/carousel/KeylineState$Builder;->tmpLastFocalKeyline:Lcom/google/android/material/carousel/KeylineState$Keyline;
+    move v4, p3
 
-    .line 279
-    iget-object p1, p0, Lcom/google/android/material/carousel/KeylineState$Builder;->tmpKeylines:Ljava/util/List;
+    move v5, p4
 
-    invoke-interface {p1}, Ljava/util/List;->size()I
+    move v6, p5
 
-    move-result p1
+    .line 488
+    invoke-virtual/range {v1 .. v7}, Lcom/google/android/material/carousel/KeylineState$Builder;->addKeyline(FFFZZF)Lcom/google/android/material/carousel/KeylineState$Builder;
 
-    iput p1, p0, Lcom/google/android/material/carousel/KeylineState$Builder;->lastFocalKeylineIndex:I
+    move-result-object p0
 
-    goto :goto_2
+    return-object p0
+.end method
 
-    .line 275
-    :cond_4
-    new-instance p0, Ljava/lang/IllegalArgumentException;
+.method addKeyline(FFFZZF)Lcom/google/android/material/carousel/KeylineState$Builder;
+    .locals 9
 
-    const-string p1, "Keylines that are marked as focal must all have the same masked item size."
+    const/4 v7, 0x0
 
-    invoke-direct {p0, p1}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
+    const/4 v8, 0x0
 
-    throw p0
+    move-object v0, p0
 
-    .line 281
-    :cond_5
-    iget-object p1, p0, Lcom/google/android/material/carousel/KeylineState$Builder;->tmpFirstFocalKeyline:Lcom/google/android/material/carousel/KeylineState$Keyline;
+    move v1, p1
 
-    if-nez p1, :cond_7
+    move v2, p2
 
-    iget p1, v0, Lcom/google/android/material/carousel/KeylineState$Keyline;->maskedItemSize:F
+    move v3, p3
 
-    iget p2, p0, Lcom/google/android/material/carousel/KeylineState$Builder;->lastKeylineMaskedSize:F
+    move v4, p4
 
-    cmpg-float p1, p1, p2
+    move v5, p5
 
-    if-ltz p1, :cond_6
+    move v6, p6
+
+    .line 439
+    invoke-virtual/range {v0 .. v8}, Lcom/google/android/material/carousel/KeylineState$Builder;->addKeyline(FFFZZFFF)Lcom/google/android/material/carousel/KeylineState$Builder;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method addKeyline(FFFZZFFF)Lcom/google/android/material/carousel/KeylineState$Builder;
+    .locals 12
+
+    move-object v0, p0
+
+    const/4 v1, 0x0
+
+    cmpg-float v1, p3, v1
+
+    if-gtz v1, :cond_0
+
+    return-object v0
+
+    :cond_0
+    const/4 v10, -0x1
+
+    if-eqz p5, :cond_4
+
+    if-nez p4, :cond_3
+
+    .line 361
+    iget v1, v0, Lcom/google/android/material/carousel/KeylineState$Builder;->latestAnchorKeylineIndex:I
+
+    if-eq v1, v10, :cond_2
+
+    if-nez v1, :cond_1
+
+    goto :goto_0
+
+    .line 362
+    :cond_1
+    new-instance v0, Ljava/lang/IllegalArgumentException;
+
+    const-string v1, "Anchor keylines must be either the first or last keyline."
+
+    invoke-direct {v0, v1}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
+
+    throw v0
+
+    .line 365
+    :cond_2
+    :goto_0
+    iget-object v1, v0, Lcom/google/android/material/carousel/KeylineState$Builder;->tmpKeylines:Ljava/util/List;
+
+    invoke-interface {v1}, Ljava/util/List;->size()I
+
+    move-result v1
+
+    iput v1, v0, Lcom/google/android/material/carousel/KeylineState$Builder;->latestAnchorKeylineIndex:I
 
     goto :goto_1
 
-    .line 282
-    :cond_6
-    new-instance p0, Ljava/lang/IllegalArgumentException;
+    .line 359
+    :cond_3
+    new-instance v0, Ljava/lang/IllegalArgumentException;
 
-    const-string p1, "Keylines before the first focal keyline must be ordered by incrementing masked item size."
+    const-string v1, "Anchor keylines cannot be focal."
 
-    invoke-direct {p0, p1}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
+    invoke-direct {v0, v1}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
 
-    throw p0
+    throw v0
 
-    .line 285
-    :cond_7
+    .line 368
+    :cond_4
     :goto_1
-    iget-object p1, p0, Lcom/google/android/material/carousel/KeylineState$Builder;->tmpLastFocalKeyline:Lcom/google/android/material/carousel/KeylineState$Keyline;
+    new-instance v11, Lcom/google/android/material/carousel/KeylineState$Keyline;
 
-    if-eqz p1, :cond_9
+    const/4 v2, 0x1
 
-    iget p1, v0, Lcom/google/android/material/carousel/KeylineState$Keyline;->maskedItemSize:F
+    move-object v1, v11
 
-    iget p2, p0, Lcom/google/android/material/carousel/KeylineState$Builder;->lastKeylineMaskedSize:F
+    move v3, p1
 
-    cmpl-float p1, p1, p2
+    move v4, p2
 
-    if-gtz p1, :cond_8
+    move v5, p3
+
+    move/from16 v6, p5
+
+    move/from16 v7, p6
+
+    move/from16 v8, p7
+
+    move/from16 v9, p8
+
+    invoke-direct/range {v1 .. v9}, Lcom/google/android/material/carousel/KeylineState$Keyline;-><init>(FFFFZFFF)V
+
+    if-eqz p4, :cond_9
+
+    .line 372
+    iget-object v1, v0, Lcom/google/android/material/carousel/KeylineState$Builder;->tmpFirstFocalKeyline:Lcom/google/android/material/carousel/KeylineState$Keyline;
+
+    if-nez v1, :cond_5
+
+    .line 373
+    iput-object v11, v0, Lcom/google/android/material/carousel/KeylineState$Builder;->tmpFirstFocalKeyline:Lcom/google/android/material/carousel/KeylineState$Keyline;
+
+    .line 374
+    iget-object v1, v0, Lcom/google/android/material/carousel/KeylineState$Builder;->tmpKeylines:Ljava/util/List;
+
+    invoke-interface {v1}, Ljava/util/List;->size()I
+
+    move-result v1
+
+    iput v1, v0, Lcom/google/android/material/carousel/KeylineState$Builder;->firstFocalKeylineIndex:I
+
+    .line 377
+    :cond_5
+    iget v1, v0, Lcom/google/android/material/carousel/KeylineState$Builder;->lastFocalKeylineIndex:I
+
+    if-eq v1, v10, :cond_7
+
+    iget-object v1, v0, Lcom/google/android/material/carousel/KeylineState$Builder;->tmpKeylines:Ljava/util/List;
+
+    invoke-interface {v1}, Ljava/util/List;->size()I
+
+    move-result v1
+
+    iget v2, v0, Lcom/google/android/material/carousel/KeylineState$Builder;->lastFocalKeylineIndex:I
+
+    sub-int/2addr v1, v2
+
+    const/4 v2, 0x1
+
+    if-gt v1, v2, :cond_6
 
     goto :goto_2
 
-    .line 287
-    :cond_8
-    new-instance p0, Ljava/lang/IllegalArgumentException;
+    .line 378
+    :cond_6
+    new-instance v0, Ljava/lang/IllegalArgumentException;
 
-    const-string p1, "Keylines after the last focal keyline must be ordered by decreasing masked item size."
+    const-string v1, "Keylines marked as focal must be placed next to each other. There cannot be non-focal keylines between focal keylines."
 
-    invoke-direct {p0, p1}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
+    invoke-direct {v0, v1}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
 
-    throw p0
+    throw v0
 
-    .line 292
-    :cond_9
+    .line 382
+    :cond_7
     :goto_2
-    iget p1, v0, Lcom/google/android/material/carousel/KeylineState$Keyline;->maskedItemSize:F
+    iget-object v1, v0, Lcom/google/android/material/carousel/KeylineState$Builder;->tmpFirstFocalKeyline:Lcom/google/android/material/carousel/KeylineState$Keyline;
 
-    iput p1, p0, Lcom/google/android/material/carousel/KeylineState$Builder;->lastKeylineMaskedSize:F
+    iget v1, v1, Lcom/google/android/material/carousel/KeylineState$Keyline;->maskedItemSize:F
 
-    .line 293
-    iget-object p1, p0, Lcom/google/android/material/carousel/KeylineState$Builder;->tmpKeylines:Ljava/util/List;
+    cmpl-float v1, p3, v1
 
-    invoke-interface {p1, v0}, Ljava/util/List;->add(Ljava/lang/Object;)Z
+    if-nez v1, :cond_8
 
-    return-object p0
+    .line 386
+    iput-object v11, v0, Lcom/google/android/material/carousel/KeylineState$Builder;->tmpLastFocalKeyline:Lcom/google/android/material/carousel/KeylineState$Keyline;
+
+    .line 387
+    iget-object v1, v0, Lcom/google/android/material/carousel/KeylineState$Builder;->tmpKeylines:Ljava/util/List;
+
+    invoke-interface {v1}, Ljava/util/List;->size()I
+
+    move-result v1
+
+    iput v1, v0, Lcom/google/android/material/carousel/KeylineState$Builder;->lastFocalKeylineIndex:I
+
+    goto :goto_4
+
+    .line 383
+    :cond_8
+    new-instance v0, Ljava/lang/IllegalArgumentException;
+
+    const-string v1, "Keylines that are marked as focal must all have the same masked item size."
+
+    invoke-direct {v0, v1}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
+
+    throw v0
+
+    .line 389
+    :cond_9
+    iget-object v1, v0, Lcom/google/android/material/carousel/KeylineState$Builder;->tmpFirstFocalKeyline:Lcom/google/android/material/carousel/KeylineState$Keyline;
+
+    if-nez v1, :cond_b
+
+    iget v1, v11, Lcom/google/android/material/carousel/KeylineState$Keyline;->maskedItemSize:F
+
+    iget v2, v0, Lcom/google/android/material/carousel/KeylineState$Builder;->lastKeylineMaskedSize:F
+
+    cmpg-float v1, v1, v2
+
+    if-ltz v1, :cond_a
+
+    goto :goto_3
+
+    .line 390
+    :cond_a
+    new-instance v0, Ljava/lang/IllegalArgumentException;
+
+    const-string v1, "Keylines before the first focal keyline must be ordered by incrementing masked item size."
+
+    invoke-direct {v0, v1}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
+
+    throw v0
+
+    .line 393
+    :cond_b
+    :goto_3
+    iget-object v1, v0, Lcom/google/android/material/carousel/KeylineState$Builder;->tmpLastFocalKeyline:Lcom/google/android/material/carousel/KeylineState$Keyline;
+
+    if-eqz v1, :cond_d
+
+    iget v1, v11, Lcom/google/android/material/carousel/KeylineState$Keyline;->maskedItemSize:F
+
+    iget v2, v0, Lcom/google/android/material/carousel/KeylineState$Builder;->lastKeylineMaskedSize:F
+
+    cmpl-float v1, v1, v2
+
+    if-gtz v1, :cond_c
+
+    goto :goto_4
+
+    .line 395
+    :cond_c
+    new-instance v0, Ljava/lang/IllegalArgumentException;
+
+    const-string v1, "Keylines after the last focal keyline must be ordered by decreasing masked item size."
+
+    invoke-direct {v0, v1}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
+
+    throw v0
+
+    .line 400
+    :cond_d
+    :goto_4
+    iget v1, v11, Lcom/google/android/material/carousel/KeylineState$Keyline;->maskedItemSize:F
+
+    iput v1, v0, Lcom/google/android/material/carousel/KeylineState$Builder;->lastKeylineMaskedSize:F
+
+    .line 401
+    iget-object v1, v0, Lcom/google/android/material/carousel/KeylineState$Builder;->tmpKeylines:Ljava/util/List;
+
+    invoke-interface {v1, v11}, Ljava/util/List;->add(Ljava/lang/Object;)Z
+
+    return-object v0
 .end method
 
 .method addKeylineRange(FFFI)Lcom/google/android/material/carousel/KeylineState$Builder;
@@ -300,7 +528,7 @@
 
     move v4, p4
 
-    .line 311
+    .line 532
     invoke-virtual/range {v0 .. v5}, Lcom/google/android/material/carousel/KeylineState$Builder;->addKeylineRange(FFFIZ)Lcom/google/android/material/carousel/KeylineState$Builder;
 
     move-result-object p0
@@ -333,7 +561,7 @@
 
     add-float/2addr v1, p1
 
-    .line 347
+    .line 568
     invoke-virtual {p0, v1, p2, p3, p5}, Lcom/google/android/material/carousel/KeylineState$Builder;->addKeyline(FFFZ)Lcom/google/android/material/carousel/KeylineState$Builder;
 
     add-int/lit8 v0, v0, 0x1
@@ -346,21 +574,21 @@
 .end method
 
 .method build()Lcom/google/android/material/carousel/KeylineState;
-    .locals 7
+    .locals 13
 
-    .line 356
+    .line 577
     iget-object v0, p0, Lcom/google/android/material/carousel/KeylineState$Builder;->tmpFirstFocalKeyline:Lcom/google/android/material/carousel/KeylineState$Keyline;
 
     if-eqz v0, :cond_1
 
-    .line 360
+    .line 581
     new-instance v3, Ljava/util/ArrayList;
 
     invoke-direct {v3}, Ljava/util/ArrayList;-><init>()V
 
     const/4 v0, 0x0
 
-    .line 361
+    .line 582
     :goto_0
     iget-object v1, p0, Lcom/google/android/material/carousel/KeylineState$Builder;->tmpKeylines:Ljava/util/List;
 
@@ -370,7 +598,7 @@
 
     if-ge v0, v1, :cond_0
 
-    .line 362
+    .line 583
     iget-object v1, p0, Lcom/google/android/material/carousel/KeylineState$Builder;->tmpKeylines:Ljava/util/List;
 
     invoke-interface {v1, v0}, Ljava/util/List;->get(I)Ljava/lang/Object;
@@ -379,7 +607,7 @@
 
     check-cast v1, Lcom/google/android/material/carousel/KeylineState$Keyline;
 
-    .line 363
+    .line 584
     new-instance v2, Lcom/google/android/material/carousel/KeylineState$Keyline;
 
     iget-object v4, p0, Lcom/google/android/material/carousel/KeylineState$Builder;->tmpFirstFocalKeyline:Lcom/google/android/material/carousel/KeylineState$Keyline;
@@ -390,27 +618,37 @@
 
     iget v6, p0, Lcom/google/android/material/carousel/KeylineState$Builder;->firstFocalKeylineIndex:I
 
-    .line 365
+    .line 586
     invoke-static {v4, v5, v6, v0}, Lcom/google/android/material/carousel/KeylineState$Builder;->calculateKeylineLocationForItemPosition(FFII)F
 
-    move-result v4
+    move-result v5
 
-    iget v5, v1, Lcom/google/android/material/carousel/KeylineState$Keyline;->locOffset:F
+    iget v6, v1, Lcom/google/android/material/carousel/KeylineState$Keyline;->locOffset:F
 
-    iget v6, v1, Lcom/google/android/material/carousel/KeylineState$Keyline;->mask:F
+    iget v7, v1, Lcom/google/android/material/carousel/KeylineState$Keyline;->mask:F
 
-    iget v1, v1, Lcom/google/android/material/carousel/KeylineState$Keyline;->maskedItemSize:F
+    iget v8, v1, Lcom/google/android/material/carousel/KeylineState$Keyline;->maskedItemSize:F
 
-    invoke-direct {v2, v4, v5, v6, v1}, Lcom/google/android/material/carousel/KeylineState$Keyline;-><init>(FFFF)V
+    iget-boolean v9, v1, Lcom/google/android/material/carousel/KeylineState$Keyline;->isAnchor:Z
 
-    .line 370
+    iget v10, v1, Lcom/google/android/material/carousel/KeylineState$Keyline;->cutoff:F
+
+    iget v11, v1, Lcom/google/android/material/carousel/KeylineState$Keyline;->leftOrTopPaddingShift:F
+
+    iget v12, v1, Lcom/google/android/material/carousel/KeylineState$Keyline;->rightOrBottomPaddingShift:F
+
+    move-object v4, v2
+
+    invoke-direct/range {v4 .. v12}, Lcom/google/android/material/carousel/KeylineState$Keyline;-><init>(FFFFZFFF)V
+
+    .line 595
     invoke-interface {v3, v2}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
     add-int/lit8 v0, v0, 0x1
 
     goto :goto_0
 
-    .line 373
+    .line 598
     :cond_0
     new-instance v0, Lcom/google/android/material/carousel/KeylineState;
 
@@ -428,7 +666,7 @@
 
     return-object v0
 
-    .line 357
+    .line 578
     :cond_1
     new-instance p0, Ljava/lang/IllegalStateException;
 

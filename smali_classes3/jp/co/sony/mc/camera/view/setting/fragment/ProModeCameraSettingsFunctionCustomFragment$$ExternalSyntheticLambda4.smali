@@ -3,7 +3,7 @@
 .source "D8$$SyntheticClass"
 
 # interfaces
-.implements Landroid/widget/ExpandableListView$OnChildClickListener;
+.implements Landroid/view/View$OnClickListener;
 
 
 # instance fields
@@ -24,25 +24,13 @@
 
 
 # virtual methods
-.method public final onChildClick(Landroid/widget/ExpandableListView;Landroid/view/View;IIJ)Z
-    .locals 7
+.method public final onClick(Landroid/view/View;)V
+    .locals 0
 
     .line 0
-    iget-object v0, p0, Ljp/co/sony/mc/camera/view/setting/fragment/ProModeCameraSettingsFunctionCustomFragment$$ExternalSyntheticLambda4;->f$0:Ljp/co/sony/mc/camera/view/setting/fragment/ProModeCameraSettingsFunctionCustomFragment;
+    iget-object p0, p0, Ljp/co/sony/mc/camera/view/setting/fragment/ProModeCameraSettingsFunctionCustomFragment$$ExternalSyntheticLambda4;->f$0:Ljp/co/sony/mc/camera/view/setting/fragment/ProModeCameraSettingsFunctionCustomFragment;
 
-    move-object v1, p1
+    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/view/setting/fragment/ProModeCameraSettingsFunctionCustomFragment;->$r8$lambda$pOa77tc45eL201SbAaNwZpllx1o(Ljp/co/sony/mc/camera/view/setting/fragment/ProModeCameraSettingsFunctionCustomFragment;Landroid/view/View;)V
 
-    move-object v2, p2
-
-    move v3, p3
-
-    move v4, p4
-
-    move-wide v5, p5
-
-    invoke-static/range {v0 .. v6}, Ljp/co/sony/mc/camera/view/setting/fragment/ProModeCameraSettingsFunctionCustomFragment;->$r8$lambda$791CYDu0JV783CtlcoZE6YolwZU(Ljp/co/sony/mc/camera/view/setting/fragment/ProModeCameraSettingsFunctionCustomFragment;Landroid/widget/ExpandableListView;Landroid/view/View;IIJ)Z
-
-    move-result p0
-
-    return p0
+    return-void
 .end method

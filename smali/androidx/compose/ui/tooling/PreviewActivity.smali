@@ -1,11 +1,11 @@
 .class public final Landroidx/compose/ui/tooling/PreviewActivity;
 .super Landroidx/activity/ComponentActivity;
-.source "PreviewActivity.kt"
+.source "PreviewActivity.android.kt"
 
 
 # annotations
 .annotation system Ldalvik/annotation/SourceDebugExtension;
-    value = "SMAP\nPreviewActivity.kt\nKotlin\n*S Kotlin\n*F\n+ 1 PreviewActivity.kt\nandroidx/compose/ui/tooling/PreviewActivity\n+ 2 fake.kt\nkotlin/jvm/internal/FakeKt\n*L\n1#1,145:1\n1#2:146\n*E\n"
+    value = "SMAP\nPreviewActivity.android.kt\nKotlin\n*S Kotlin\n*F\n+ 1 PreviewActivity.android.kt\nandroidx/compose/ui/tooling/PreviewActivity\n+ 2 fake.kt\nkotlin/jvm/internal/FakeKt\n*L\n1#1,145:1\n1#2:146\n*E\n"
 .end annotation
 
 .annotation runtime Lkotlin/Metadata;
@@ -158,7 +158,7 @@
 
     invoke-direct {v0, v3, p1}, Landroidx/compose/ui/tooling/PreviewActivity$setComposableContent$2;-><init>(Ljava/lang/String;Ljava/lang/String;)V
 
-    const p1, -0x9992ae3
+    const p1, -0x321af304
 
     const/4 v2, 0x1
 
@@ -212,7 +212,7 @@
     invoke-static {v0, v1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
     .line 101
-    invoke-static {p3}, Landroidx/compose/ui/tooling/PreviewUtilsKt;->asPreviewProviderClass(Ljava/lang/String;)Ljava/lang/Class;
+    invoke-static {p3}, Landroidx/compose/ui/tooling/PreviewUtils_androidKt;->asPreviewProviderClass(Ljava/lang/String;)Ljava/lang/Class;
 
     move-result-object p3
 
@@ -230,7 +230,7 @@
     move-result v0
 
     .line 100
-    invoke-static {p3, v0}, Landroidx/compose/ui/tooling/PreviewUtilsKt;->getPreviewProviderParameters(Ljava/lang/Class;I)[Ljava/lang/Object;
+    invoke-static {p3, v0}, Landroidx/compose/ui/tooling/PreviewUtils_androidKt;->getPreviewProviderParameters(Ljava/lang/Class;I)[Ljava/lang/Object;
 
     move-result-object p3
 
@@ -250,7 +250,7 @@
 
     invoke-direct {v0, p3, p1, p2}, Landroidx/compose/ui/tooling/PreviewActivity$setParameterizedContent$1;-><init>([Ljava/lang/Object;Ljava/lang/String;Ljava/lang/String;)V
 
-    const p1, -0x6776ed02
+    const p1, -0x33602623    # -8.3807976E7f
 
     invoke-static {p1, v2, v0}, Landroidx/compose/runtime/internal/ComposableLambdaKt;->composableLambdaInstance(IZLjava/lang/Object;)Landroidx/compose/runtime/internal/ComposableLambda;
 
@@ -270,7 +270,7 @@
 
     invoke-direct {v0, p1, p2, p3}, Landroidx/compose/ui/tooling/PreviewActivity$setParameterizedContent$2;-><init>(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/Object;)V
 
-    const p1, 0x59dd48c7
+    const p1, -0x7155c95a
 
     invoke-static {p1, v2, v0}, Landroidx/compose/runtime/internal/ComposableLambdaKt;->composableLambdaInstance(IZLjava/lang/Object;)Landroidx/compose/runtime/internal/ComposableLambda;
 

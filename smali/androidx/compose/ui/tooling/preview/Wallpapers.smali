@@ -1,6 +1,6 @@
 .class public final Landroidx/compose/ui/tooling/preview/Wallpapers;
 .super Ljava/lang/Object;
-.source "Wallpaper.kt"
+.source "Wallpaper.android.kt"
 
 
 # annotations

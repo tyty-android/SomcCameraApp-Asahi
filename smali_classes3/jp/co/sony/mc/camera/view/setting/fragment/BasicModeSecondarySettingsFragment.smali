@@ -16,25 +16,27 @@
 
 .annotation runtime Lkotlin/Metadata;
     d1 = {
-        "\u0000f\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010 \n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000b\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0008\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\u0008\u0006\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\n\u0008\u0007\u0018\u0000 +2\u00020\u00012\u00020\u0002:\u0002+,B\u0005\u00a2\u0006\u0002\u0010\u0003J&\u0010\u0018\u001a\u0004\u0018\u00010\u00192\u0006\u0010\u001a\u001a\u00020\u001b2\u0008\u0010\u001c\u001a\u0004\u0018\u00010\u001d2\u0008\u0010\u001e\u001a\u0004\u0018\u00010\u001fH\u0016J\u0010\u0010 \u001a\u00020!2\u0006\u0010\"\u001a\u00020#H\u0016J\u0016\u0010$\u001a\u00020!2\u000c\u0010%\u001a\u0008\u0012\u0004\u0012\u00020\u00080\u0007H\u0016J\u0008\u0010&\u001a\u00020!H\u0016J\u0008\u0010\'\u001a\u00020!H\u0016J\u0010\u0010(\u001a\u00020!2\u0006\u0010)\u001a\u00020\u001fH\u0016J\u0008\u0010*\u001a\u00020!H\u0002R\u0010\u0010\u0004\u001a\u0004\u0018\u00010\u0005X\u0082\u000e\u00a2\u0006\u0002\n\u0000R\u0014\u0010\u0006\u001a\u0008\u0012\u0004\u0012\u00020\u00080\u0007X\u0082\u000e\u00a2\u0006\u0002\n\u0000R\u000e\u0010\t\u001a\u00020\nX\u0082\u000e\u00a2\u0006\u0002\n\u0000R\u0010\u0010\u000b\u001a\u0004\u0018\u00010\u000cX\u0082\u000e\u00a2\u0006\u0002\n\u0000R\u000e\u0010\r\u001a\u00020\u000eX\u0082\u000e\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u000f\u001a\u00020\u000eX\u0082\u000e\u00a2\u0006\u0002\n\u0000R&\u0010\u0010\u001a\u000e\u0012\u0008\u0008\u0001\u0012\u0004\u0018\u00010\u0012\u0018\u00010\u0011X\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\u0008\u0013\u0010\u0014\"\u0004\u0008\u0015\u0010\u0016R\u000e\u0010\u0017\u001a\u00020\nX\u0082\u000e\u00a2\u0006\u0002\n\u0000\u00a8\u0006-"
+        "\u0000j\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0003\n\u0002\u0010 \n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0008\n\u0002\u0008\u0002\n\u0002\u0010\u000b\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\u0008\u0005\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0002\n\u0002\u0008\u0007\n\u0002\u0018\u0002\n\u0002\u0008\u0004\u0008\u0007\u0018\u0000 -2\u00020\u00012\u00020\u0002:\u0002,-B\t\u0008\u0007\u00a2\u0006\u0004\u0008\u0003\u0010\u0004J&\u0010\u0019\u001a\u0004\u0018\u00010\u001a2\u0006\u0010\u001b\u001a\u00020\u001c2\u0008\u0010\u001d\u001a\u0004\u0018\u00010\u001e2\u0008\u0010\u001f\u001a\u0004\u0018\u00010 H\u0016J\u0008\u0010!\u001a\u00020\"H\u0016J\u0008\u0010#\u001a\u00020\"H\u0016J\u0010\u0010$\u001a\u00020\"2\u0006\u0010%\u001a\u00020 H\u0016J\u0016\u0010&\u001a\u00020\"2\u000c\u0010\'\u001a\u0008\u0012\u0004\u0012\u00020\u00070\u0006H\u0016J\u0010\u0010(\u001a\u00020\"2\u0006\u0010)\u001a\u00020*H\u0016J\u0008\u0010+\u001a\u00020\"H\u0002R\u0014\u0010\u0005\u001a\u0008\u0012\u0004\u0012\u00020\u00070\u0006X\u0082\u000e\u00a2\u0006\u0002\n\u0000R\u0010\u0010\u0008\u001a\u0004\u0018\u00010\tX\u0082\u000e\u00a2\u0006\u0002\n\u0000R\u0010\u0010\n\u001a\u0004\u0018\u00010\u000bX\u0082\u000e\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u000c\u001a\u00020\rX\u0082\u000e\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u000e\u001a\u00020\rX\u0082\u000e\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u000f\u001a\u00020\u0010X\u0082\u000e\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u0011\u001a\u00020\u0010X\u0082\u000e\u00a2\u0006\u0002\n\u0000R&\u0010\u0012\u001a\u000e\u0012\u0008\u0008\u0001\u0012\u0004\u0018\u00010\u0014\u0018\u00010\u0013X\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\u0008\u0015\u0010\u0016\"\u0004\u0008\u0017\u0010\u0018\u00a8\u0006."
     }
     d2 = {
         "Ljp/co/sony/mc/camera/view/setting/fragment/BasicModeSecondarySettingsFragment;",
         "Landroidx/fragment/app/Fragment;",
         "Ljp/co/sony/mc/camera/view/setting/settingitem/CameraSettingItemChangedListener;",
+        "<init>",
         "()V",
-        "mAdapter",
-        "Ljp/co/sony/mc/camera/view/setting/fragment/BasicModeSecondarySettingsAdapter;",
         "mCategoryItems",
         "",
         "Ljp/co/sony/mc/camera/view/setting/settingitem/CameraSettingCategoryItem;",
-        "mIsShowValueSettingDialog",
-        "",
         "mOnListItemClickListener",
         "Ljp/co/sony/mc/camera/view/setting/fragment/BasicModeSecondarySettingsFragment$OnListItemClickListener;",
-        "mPosition",
-        "",
+        "mAdapter",
+        "Ljp/co/sony/mc/camera/view/setting/fragment/BasicModeSecondarySettingsAdapter;",
         "mScrollY",
+        "",
+        "mPosition",
+        "mShouldNotRemainRecentTask",
+        "",
+        "mIsShowValueSettingDialog",
         "mSettingKey",
         "Ljp/co/sony/mc/camera/setting/SettingKey$Key;",
         "",
@@ -42,7 +44,6 @@
         "()Ljp/co/sony/mc/camera/setting/SettingKey$Key;",
         "setMSettingKey",
         "(Ljp/co/sony/mc/camera/setting/SettingKey$Key;)V",
-        "mShouldNotRemainRecentTask",
         "onCreateView",
         "Landroid/view/View;",
         "inflater",
@@ -51,25 +52,25 @@
         "Landroid/view/ViewGroup;",
         "savedInstanceState",
         "Landroid/os/Bundle;",
-        "onItemChanged",
-        "",
-        "newItem",
-        "Ljp/co/sony/mc/camera/view/setting/settingitem/CameraSettingItem;",
-        "onItemListChanged",
-        "newItems",
-        "onPause",
         "onResume",
+        "",
+        "onPause",
         "onSaveInstanceState",
         "outState",
+        "onItemListChanged",
+        "newItems",
+        "onItemChanged",
+        "newItem",
+        "Ljp/co/sony/mc/camera/view/setting/settingitem/CameraSettingItem;",
         "saveScrollPosition",
-        "Companion",
         "OnListItemClickListener",
+        "Companion",
         "SomcCamera_release"
     }
     k = 0x1
     mv = {
-        0x1,
-        0x9,
+        0x2,
+        0x0,
         0x0
     }
     xi = 0x30
@@ -127,10 +128,10 @@
 
 
 # direct methods
-.method public static synthetic $r8$lambda$d3b8CqQKqTT6n7sAOa31GjQNNiU(Ljp/co/sony/mc/camera/view/setting/fragment/BasicModeSecondarySettingsFragment;)V
+.method public static synthetic $r8$lambda$UWpt8nDrg3GjYxhREYK3pfesZvU(Ljp/co/sony/mc/camera/view/setting/fragment/BasicModeSecondarySettingsFragment;Landroid/view/View;)V
     .locals 0
 
-    invoke-static {p0}, Ljp/co/sony/mc/camera/view/setting/fragment/BasicModeSecondarySettingsFragment;->onResume$lambda$1(Ljp/co/sony/mc/camera/view/setting/fragment/BasicModeSecondarySettingsFragment;)V
+    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/view/setting/fragment/BasicModeSecondarySettingsFragment;->onCreateView$lambda$1(Ljp/co/sony/mc/camera/view/setting/fragment/BasicModeSecondarySettingsFragment;Landroid/view/View;)V
 
     return-void
 .end method
@@ -139,6 +140,14 @@
     .locals 0
 
     invoke-static/range {p0 .. p5}, Ljp/co/sony/mc/camera/view/setting/fragment/BasicModeSecondarySettingsFragment;->onCreateView$lambda$0(Ljp/co/sony/mc/camera/view/setting/fragment/BasicModeSecondarySettingsFragment;Landroid/widget/AdapterView;Landroid/view/View;IJ)V
+
+    return-void
+.end method
+
+.method public static synthetic $r8$lambda$xq3FfoiBDYMiouCtq94u-fXFBUM(Ljp/co/sony/mc/camera/view/setting/fragment/BasicModeSecondarySettingsFragment;)V
+    .locals 0
+
+    invoke-static {p0}, Ljp/co/sony/mc/camera/view/setting/fragment/BasicModeSecondarySettingsFragment;->onResume$lambda$2(Ljp/co/sony/mc/camera/view/setting/fragment/BasicModeSecondarySettingsFragment;)V
 
     return-void
 .end method
@@ -164,10 +173,10 @@
 .method public constructor <init>()V
     .locals 1
 
-    .line 25
+    .line 26
     invoke-direct {p0}, Landroidx/fragment/app/Fragment;-><init>()V
 
-    .line 27
+    .line 28
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
@@ -182,7 +191,7 @@
 .method public static final synthetic access$setMCategoryItems$p(Ljp/co/sony/mc/camera/view/setting/fragment/BasicModeSecondarySettingsFragment;Ljava/util/List;)V
     .locals 0
 
-    .line 25
+    .line 26
     iput-object p1, p0, Ljp/co/sony/mc/camera/view/setting/fragment/BasicModeSecondarySettingsFragment;->mCategoryItems:Ljava/util/List;
 
     return-void
@@ -191,7 +200,7 @@
 .method public static final synthetic access$setMIsShowValueSettingDialog$p(Ljp/co/sony/mc/camera/view/setting/fragment/BasicModeSecondarySettingsFragment;Z)V
     .locals 0
 
-    .line 25
+    .line 26
     iput-boolean p1, p0, Ljp/co/sony/mc/camera/view/setting/fragment/BasicModeSecondarySettingsFragment;->mIsShowValueSettingDialog:Z
 
     return-void
@@ -200,7 +209,7 @@
 .method public static final synthetic access$setMShouldNotRemainRecentTask$p(Ljp/co/sony/mc/camera/view/setting/fragment/BasicModeSecondarySettingsFragment;Z)V
     .locals 0
 
-    .line 25
+    .line 26
     iput-boolean p1, p0, Ljp/co/sony/mc/camera/view/setting/fragment/BasicModeSecondarySettingsFragment;->mShouldNotRemainRecentTask:Z
 
     return-void
@@ -213,12 +222,12 @@
 
     invoke-static {p0, p2}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 66
+    .line 65
     invoke-virtual {p1}, Landroid/widget/AdapterView;->getAdapter()Landroid/widget/Adapter;
 
     move-result-object p1
 
-    .line 67
+    .line 66
     invoke-interface {p1, p3}, Landroid/widget/Adapter;->getItem(I)Ljava/lang/Object;
 
     move-result-object p1
@@ -229,12 +238,12 @@
 
     check-cast p1, Ljp/co/sony/mc/camera/view/setting/settingitem/CameraSettingItem;
 
-    .line 68
+    .line 67
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/setting/fragment/BasicModeSecondarySettingsFragment;->mOnListItemClickListener:Ljp/co/sony/mc/camera/view/setting/fragment/BasicModeSecondarySettingsFragment$OnListItemClickListener;
 
     if-eqz p0, :cond_0
 
-    .line 69
+    .line 68
     invoke-static {p0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;)V
 
     invoke-interface {p0, p1}, Ljp/co/sony/mc/camera/view/setting/fragment/BasicModeSecondarySettingsFragment$OnListItemClickListener;->onClick(Ljp/co/sony/mc/camera/view/setting/settingitem/CameraSettingItem;)V
@@ -243,19 +252,42 @@
     return-void
 .end method
 
-.method private static final onResume$lambda$1(Ljp/co/sony/mc/camera/view/setting/fragment/BasicModeSecondarySettingsFragment;)V
+.method private static final onCreateView$lambda$1(Ljp/co/sony/mc/camera/view/setting/fragment/BasicModeSecondarySettingsFragment;Landroid/view/View;)V
+    .locals 0
+
+    const-string/jumbo p1, "this$0"
+
+    invoke-static {p0, p1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 75
+    invoke-virtual {p0}, Ljp/co/sony/mc/camera/view/setting/fragment/BasicModeSecondarySettingsFragment;->getActivity()Landroidx/fragment/app/FragmentActivity;
+
+    move-result-object p0
+
+    check-cast p0, Landroid/app/Activity;
+
+    if-eqz p0, :cond_0
+
+    .line 76
+    invoke-virtual {p0}, Landroid/app/Activity;->onBackPressed()V
+
+    :cond_0
+    return-void
+.end method
+
+.method private static final onResume$lambda$2(Ljp/co/sony/mc/camera/view/setting/fragment/BasicModeSecondarySettingsFragment;)V
     .locals 3
 
     const-string/jumbo v0, "this$0"
 
     invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 91
+    .line 95
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/setting/fragment/BasicModeSecondarySettingsFragment;->mAdapter:Ljp/co/sony/mc/camera/view/setting/fragment/BasicModeSecondarySettingsAdapter;
 
     if-eqz v0, :cond_0
 
-    .line 92
+    .line 96
     invoke-static {v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;)V
 
     sget-object v1, Ljp/co/sony/mc/camera/setting/CommonSettings;->SAVE_DESTINATION:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
@@ -275,7 +307,7 @@
     :cond_0
     const/4 v0, 0x0
 
-    .line 94
+    .line 98
     :goto_0
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/setting/fragment/BasicModeSecondarySettingsFragment;->mOnListItemClickListener:Ljp/co/sony/mc/camera/view/setting/fragment/BasicModeSecondarySettingsFragment$OnListItemClickListener;
 
@@ -283,7 +315,7 @@
 
     if-eqz v0, :cond_1
 
-    .line 95
+    .line 99
     invoke-static {p0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;)V
 
     invoke-interface {p0, v0}, Ljp/co/sony/mc/camera/view/setting/fragment/BasicModeSecondarySettingsFragment$OnListItemClickListener;->onClick(Ljp/co/sony/mc/camera/view/setting/settingitem/CameraSettingItem;)V
@@ -295,21 +327,21 @@
 .method private final saveScrollPosition()V
     .locals 2
 
-    .line 129
+    .line 133
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/view/setting/fragment/BasicModeSecondarySettingsFragment;->getView()Landroid/view/View;
 
     move-result-object v0
 
     if-eqz v0, :cond_0
 
-    .line 130
+    .line 134
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/view/setting/fragment/BasicModeSecondarySettingsFragment;->getView()Landroid/view/View;
 
     move-result-object v0
 
     invoke-static {v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;)V
 
-    const v1, 0x7f090422
+    const v1, 0x7f090412
 
     invoke-virtual {v0, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -317,14 +349,14 @@
 
     check-cast v0, Landroid/widget/ListView;
 
-    .line 131
+    .line 135
     invoke-virtual {v0}, Landroid/widget/ListView;->getChildCount()I
 
     move-result v1
 
     if-eqz v1, :cond_0
 
-    .line 132
+    .line 136
     invoke-virtual {v0}, Landroid/widget/ListView;->getFirstVisiblePosition()I
 
     move-result v1
@@ -333,7 +365,7 @@
 
     const/4 v1, 0x0
 
-    .line 133
+    .line 137
     invoke-virtual {v0, v1}, Landroid/widget/ListView;->getChildAt(I)Landroid/view/View;
 
     move-result-object v0
@@ -362,14 +394,14 @@
         }
     .end annotation
 
-    .line 34
+    .line 35
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/setting/fragment/BasicModeSecondarySettingsFragment;->mSettingKey:Ljp/co/sony/mc/camera/setting/SettingKey$Key;
 
     return-object p0
 .end method
 
 .method public onCreateView(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;
-    .locals 5
+    .locals 2
 
     const-string v0, "inflater"
 
@@ -377,61 +409,35 @@
 
     const/4 v0, 0x1
 
-    .line 38
+    .line 39
     invoke-virtual {p0, v0}, Ljp/co/sony/mc/camera/view/setting/fragment/BasicModeSecondarySettingsFragment;->setHasOptionsMenu(Z)V
 
     const v0, 0x7f0c006c
 
     const/4 v1, 0x0
 
-    .line 39
+    .line 40
     invoke-virtual {p1, v0, p2, v1}, Landroid/view/LayoutInflater;->inflate(ILandroid/view/ViewGroup;Z)Landroid/view/View;
 
     move-result-object p1
 
-    .line 42
+    .line 43
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/view/setting/fragment/BasicModeSecondarySettingsFragment;->getActivity()Landroidx/fragment/app/FragmentActivity;
 
     move-result-object p2
 
     check-cast p2, Landroid/app/Activity;
 
-    .line 43
-    instance-of v0, p2, Ljp/co/sony/mc/camera/BasicModeCameraSettingsActivity;
+    if-eqz p3, :cond_0
 
-    if-eqz v0, :cond_0
-
-    .line 44
-    move-object v0, p2
-
-    check-cast v0, Ljp/co/sony/mc/camera/BasicModeCameraSettingsActivity;
-
-    const v2, 0x7f11027d
-
-    invoke-virtual {p0, v2}, Ljp/co/sony/mc/camera/view/setting/fragment/BasicModeSecondarySettingsFragment;->getString(I)Ljava/lang/String;
-
-    move-result-object v3
-
-    const-string v4, "getString(...)"
-
-    invoke-static {v3, v4}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
-
-    invoke-virtual {v0, v3}, Ljp/co/sony/mc/camera/BasicModeCameraSettingsActivity;->setActionBarTitle(Ljava/lang/String;)V
-
-    .line 45
-    invoke-virtual {v0, v2}, Ljp/co/sony/mc/camera/BasicModeCameraSettingsActivity;->setTitle(I)V
-
-    :cond_0
-    if-eqz p3, :cond_1
-
-    .line 49
+    .line 46
     const-string v0, "itemListChanged"
 
     invoke-virtual {p3, v0, v1}, Landroid/os/Bundle;->getBoolean(Ljava/lang/String;Z)Z
 
     move-result v0
 
-    .line 50
+    .line 47
     const-string v1, "position"
 
     invoke-virtual {p3, v1}, Landroid/os/Bundle;->getInt(Ljava/lang/String;)I
@@ -440,7 +446,7 @@
 
     iput v1, p0, Ljp/co/sony/mc/camera/view/setting/fragment/BasicModeSecondarySettingsFragment;->mPosition:I
 
-    .line 51
+    .line 48
     const-string v1, "scroll_y"
 
     invoke-virtual {p3, v1}, Landroid/os/Bundle;->getInt(Ljava/lang/String;)I
@@ -449,24 +455,24 @@
 
     iput v1, p0, Ljp/co/sony/mc/camera/view/setting/fragment/BasicModeSecondarySettingsFragment;->mScrollY:I
 
-    .line 53
+    .line 50
     const-string/jumbo v1, "shouldNotRemainRecentTask"
 
     invoke-virtual {p3, v1}, Landroid/os/Bundle;->getBoolean(Ljava/lang/String;)Z
 
     move-result p3
 
-    .line 52
+    .line 49
     iput-boolean p3, p0, Ljp/co/sony/mc/camera/view/setting/fragment/BasicModeSecondarySettingsFragment;->mShouldNotRemainRecentTask:Z
 
-    if-eqz v0, :cond_1
+    if-eqz v0, :cond_0
 
-    .line 55
+    .line 52
     instance-of p3, p2, Ljp/co/sony/mc/camera/view/setting/fragment/BasicModeSecondarySettingsFragment$OnListItemClickListener;
 
-    if-eqz p3, :cond_1
+    if-eqz p3, :cond_0
 
-    .line 57
+    .line 54
     check-cast p2, Ljp/co/sony/mc/camera/view/setting/fragment/BasicModeSecondarySettingsFragment$OnListItemClickListener;
 
     iget-object p3, p0, Ljp/co/sony/mc/camera/view/setting/fragment/BasicModeSecondarySettingsFragment;->mSettingKey:Ljp/co/sony/mc/camera/setting/SettingKey$Key;
@@ -475,11 +481,25 @@
 
     move-result-object p2
 
-    .line 56
+    .line 53
     iput-object p2, p0, Ljp/co/sony/mc/camera/view/setting/fragment/BasicModeSecondarySettingsFragment;->mCategoryItems:Ljava/util/List;
 
-    .line 62
-    :cond_1
+    :cond_0
+    const p2, 0x7f0904a9
+
+    .line 59
+    invoke-virtual {p1, p2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
+
+    move-result-object p2
+
+    check-cast p2, Landroid/widget/TextView;
+
+    const p3, 0x7f110327
+
+    .line 60
+    invoke-virtual {p2, p3}, Landroid/widget/TextView;->setText(I)V
+
+    .line 61
     new-instance p2, Ljp/co/sony/mc/camera/view/setting/fragment/BasicModeSecondarySettingsAdapter;
 
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/view/setting/fragment/BasicModeSecondarySettingsFragment;->getContext()Landroid/content/Context;
@@ -494,9 +514,9 @@
 
     iput-object p2, p0, Ljp/co/sony/mc/camera/view/setting/fragment/BasicModeSecondarySettingsFragment;->mAdapter:Ljp/co/sony/mc/camera/view/setting/fragment/BasicModeSecondarySettingsAdapter;
 
-    const p2, 0x7f090422
+    const p2, 0x7f090412
 
-    .line 63
+    .line 62
     invoke-virtual {p1, p2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
     move-result-object p2
@@ -507,26 +527,39 @@
 
     check-cast p2, Landroid/widget/ListView;
 
-    .line 64
+    .line 63
     iget-object p3, p0, Ljp/co/sony/mc/camera/view/setting/fragment/BasicModeSecondarySettingsFragment;->mAdapter:Ljp/co/sony/mc/camera/view/setting/fragment/BasicModeSecondarySettingsAdapter;
 
     check-cast p3, Landroid/widget/ListAdapter;
 
     invoke-virtual {p2, p3}, Landroid/widget/ListView;->setAdapter(Landroid/widget/ListAdapter;)V
 
-    .line 65
+    .line 64
     new-instance p3, Ljp/co/sony/mc/camera/view/setting/fragment/BasicModeSecondarySettingsFragment$$ExternalSyntheticLambda1;
 
     invoke-direct {p3, p0}, Ljp/co/sony/mc/camera/view/setting/fragment/BasicModeSecondarySettingsFragment$$ExternalSyntheticLambda1;-><init>(Ljp/co/sony/mc/camera/view/setting/fragment/BasicModeSecondarySettingsFragment;)V
 
     invoke-virtual {p2, p3}, Landroid/widget/ListView;->setOnItemClickListener(Landroid/widget/AdapterView$OnItemClickListener;)V
 
-    .line 73
+    .line 72
     iget p3, p0, Ljp/co/sony/mc/camera/view/setting/fragment/BasicModeSecondarySettingsFragment;->mPosition:I
 
-    iget p0, p0, Ljp/co/sony/mc/camera/view/setting/fragment/BasicModeSecondarySettingsFragment;->mScrollY:I
+    iget v0, p0, Ljp/co/sony/mc/camera/view/setting/fragment/BasicModeSecondarySettingsFragment;->mScrollY:I
 
-    invoke-virtual {p2, p3, p0}, Landroid/widget/ListView;->setSelectionFromTop(II)V
+    invoke-virtual {p2, p3, v0}, Landroid/widget/ListView;->setSelectionFromTop(II)V
+
+    const p2, 0x7f0900a3
+
+    .line 74
+    invoke-virtual {p1, p2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
+
+    move-result-object p2
+
+    new-instance p3, Ljp/co/sony/mc/camera/view/setting/fragment/BasicModeSecondarySettingsFragment$$ExternalSyntheticLambda2;
+
+    invoke-direct {p3, p0}, Ljp/co/sony/mc/camera/view/setting/fragment/BasicModeSecondarySettingsFragment$$ExternalSyntheticLambda2;-><init>(Ljp/co/sony/mc/camera/view/setting/fragment/BasicModeSecondarySettingsFragment;)V
+
+    invoke-virtual {p2, p3}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     return-object p1
 .end method
@@ -557,20 +590,20 @@
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 116
+    .line 120
     iput-object p1, p0, Ljp/co/sony/mc/camera/view/setting/fragment/BasicModeSecondarySettingsFragment;->mCategoryItems:Ljava/util/List;
 
-    .line 117
+    .line 121
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/setting/fragment/BasicModeSecondarySettingsFragment;->mAdapter:Ljp/co/sony/mc/camera/view/setting/fragment/BasicModeSecondarySettingsAdapter;
 
     if-eqz v0, :cond_0
 
-    .line 118
+    .line 122
     invoke-static {v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;)V
 
     invoke-virtual {v0, p1}, Ljp/co/sony/mc/camera/view/setting/fragment/BasicModeSecondarySettingsAdapter;->setSettingItems(Ljava/util/List;)V
 
-    .line 119
+    .line 123
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/setting/fragment/BasicModeSecondarySettingsFragment;->mAdapter:Ljp/co/sony/mc/camera/view/setting/fragment/BasicModeSecondarySettingsAdapter;
 
     invoke-static {p0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;)V
@@ -584,15 +617,15 @@
 .method public onPause()V
     .locals 1
 
-    .line 102
+    .line 106
     invoke-super {p0}, Landroidx/fragment/app/Fragment;->onPause()V
 
-    .line 103
+    .line 107
     invoke-direct {p0}, Ljp/co/sony/mc/camera/view/setting/fragment/BasicModeSecondarySettingsFragment;->saveScrollPosition()V
 
     const/4 v0, 0x0
 
-    .line 104
+    .line 108
     iput-object v0, p0, Ljp/co/sony/mc/camera/view/setting/fragment/BasicModeSecondarySettingsFragment;->mOnListItemClickListener:Ljp/co/sony/mc/camera/view/setting/fragment/BasicModeSecondarySettingsFragment$OnListItemClickListener;
 
     return-void
@@ -601,10 +634,10 @@
 .method public onResume()V
     .locals 2
 
-    .line 79
+    .line 83
     invoke-super {p0}, Landroidx/fragment/app/Fragment;->onResume()V
 
-    .line 80
+    .line 84
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/view/setting/fragment/BasicModeSecondarySettingsFragment;->getActivity()Landroidx/fragment/app/FragmentActivity;
 
     move-result-object v0
@@ -613,17 +646,17 @@
 
     if-eqz v0, :cond_0
 
-    .line 82
+    .line 86
     instance-of v1, v0, Ljp/co/sony/mc/camera/view/setting/fragment/BasicModeSecondarySettingsFragment$OnListItemClickListener;
 
     if-eqz v1, :cond_0
 
-    .line 83
+    .line 87
     check-cast v0, Ljp/co/sony/mc/camera/view/setting/fragment/BasicModeSecondarySettingsFragment$OnListItemClickListener;
 
     iput-object v0, p0, Ljp/co/sony/mc/camera/view/setting/fragment/BasicModeSecondarySettingsFragment;->mOnListItemClickListener:Ljp/co/sony/mc/camera/view/setting/fragment/BasicModeSecondarySettingsFragment$OnListItemClickListener;
 
-    .line 87
+    .line 91
     :cond_0
     iget-boolean v0, p0, Ljp/co/sony/mc/camera/view/setting/fragment/BasicModeSecondarySettingsFragment;->mIsShowValueSettingDialog:Z
 
@@ -631,10 +664,10 @@
 
     const/4 v0, 0x0
 
-    .line 88
+    .line 92
     iput-boolean v0, p0, Ljp/co/sony/mc/camera/view/setting/fragment/BasicModeSecondarySettingsFragment;->mIsShowValueSettingDialog:Z
 
-    .line 89
+    .line 93
     new-instance v0, Landroid/os/Handler;
 
     invoke-direct {v0}, Landroid/os/Handler;-><init>()V
@@ -656,35 +689,35 @@
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 108
+    .line 112
     const-string v0, "position"
 
     iget v1, p0, Ljp/co/sony/mc/camera/view/setting/fragment/BasicModeSecondarySettingsFragment;->mPosition:I
 
     invoke-virtual {p1, v0, v1}, Landroid/os/Bundle;->putInt(Ljava/lang/String;I)V
 
-    .line 109
+    .line 113
     const-string v0, "scroll_y"
 
     iget v1, p0, Ljp/co/sony/mc/camera/view/setting/fragment/BasicModeSecondarySettingsFragment;->mScrollY:I
 
     invoke-virtual {p1, v0, v1}, Landroid/os/Bundle;->putInt(Ljava/lang/String;I)V
 
-    .line 110
+    .line 114
     const-string v0, "itemListChanged"
 
     const/4 v1, 0x1
 
     invoke-virtual {p1, v0, v1}, Landroid/os/Bundle;->putBoolean(Ljava/lang/String;Z)V
 
-    .line 111
+    .line 115
     const-string/jumbo v0, "shouldNotRemainRecentTask"
 
     iget-boolean v1, p0, Ljp/co/sony/mc/camera/view/setting/fragment/BasicModeSecondarySettingsFragment;->mShouldNotRemainRecentTask:Z
 
     invoke-virtual {p1, v0, v1}, Landroid/os/Bundle;->putBoolean(Ljava/lang/String;Z)V
 
-    .line 112
+    .line 116
     invoke-super {p0, p1}, Landroidx/fragment/app/Fragment;->onSaveInstanceState(Landroid/os/Bundle;)V
 
     return-void
@@ -702,7 +735,7 @@
         }
     .end annotation
 
-    .line 34
+    .line 35
     iput-object p1, p0, Ljp/co/sony/mc/camera/view/setting/fragment/BasicModeSecondarySettingsFragment;->mSettingKey:Ljp/co/sony/mc/camera/setting/SettingKey$Key;
 
     return-void

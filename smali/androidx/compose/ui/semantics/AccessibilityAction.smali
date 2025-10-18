@@ -84,7 +84,7 @@
         }
     .end annotation
 
-    .line 435
+    .line 525
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     iput-object p1, p0, Landroidx/compose/ui/semantics/AccessibilityAction;->label:Ljava/lang/String;
@@ -105,7 +105,7 @@
 
     return v0
 
-    .line 438
+    .line 528
     :cond_0
     instance-of v1, p1, Landroidx/compose/ui/semantics/AccessibilityAction;
 
@@ -115,7 +115,7 @@
 
     return v2
 
-    .line 440
+    .line 530
     :cond_1
     iget-object v1, p0, Landroidx/compose/ui/semantics/AccessibilityAction;->label:Ljava/lang/String;
 
@@ -131,7 +131,7 @@
 
     return v2
 
-    .line 441
+    .line 531
     :cond_2
     iget-object p0, p0, Landroidx/compose/ui/semantics/AccessibilityAction;->action:Lkotlin/Function;
 
@@ -157,7 +157,7 @@
         }
     .end annotation
 
-    .line 435
+    .line 525
     iget-object p0, p0, Landroidx/compose/ui/semantics/AccessibilityAction;->action:Lkotlin/Function;
 
     return-object p0
@@ -166,7 +166,7 @@
 .method public final getLabel()Ljava/lang/String;
     .locals 0
 
-    .line 435
+    .line 525
     iget-object p0, p0, Landroidx/compose/ui/semantics/AccessibilityAction;->label:Ljava/lang/String;
 
     return-object p0
@@ -175,7 +175,7 @@
 .method public hashCode()I
     .locals 2
 
-    .line 447
+    .line 537
     iget-object v0, p0, Landroidx/compose/ui/semantics/AccessibilityAction;->label:Ljava/lang/String;
 
     const/4 v1, 0x0
@@ -194,7 +194,7 @@
     :goto_0
     mul-int/lit8 v0, v0, 0x1f
 
-    .line 448
+    .line 538
     iget-object p0, p0, Landroidx/compose/ui/semantics/AccessibilityAction;->action:Lkotlin/Function;
 
     if-eqz p0, :cond_1
@@ -212,7 +212,7 @@
 .method public toString()Ljava/lang/String;
     .locals 2
 
-    .line 453
+    .line 543
     new-instance v0, Ljava/lang/StringBuilder;
 
     const-string v1, "AccessibilityAction(label="

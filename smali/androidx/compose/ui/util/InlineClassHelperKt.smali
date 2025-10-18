@@ -38,14 +38,14 @@
     .locals 4
 
     .line 25
-    invoke-static {p0}, Ljava/lang/Float;->floatToIntBits(F)I
+    invoke-static {p0}, Ljava/lang/Float;->floatToRawIntBits(F)I
 
     move-result p0
 
     int-to-long v0, p0
 
     .line 26
-    invoke-static {p1}, Ljava/lang/Float;->floatToIntBits(F)I
+    invoke-static {p1}, Ljava/lang/Float;->floatToRawIntBits(F)I
 
     move-result p0
 

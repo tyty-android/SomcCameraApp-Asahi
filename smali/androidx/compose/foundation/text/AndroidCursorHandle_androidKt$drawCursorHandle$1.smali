@@ -29,7 +29,7 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/SourceDebugExtension;
-    value = "SMAP\nAndroidCursorHandle.android.kt\nKotlin\n*S Kotlin\n*F\n+ 1 AndroidCursorHandle.android.kt\nandroidx/compose/foundation/text/AndroidCursorHandle_androidKt$drawCursorHandle$1\n+ 2 CompositionLocal.kt\nandroidx/compose/runtime/CompositionLocal\n+ 3 Composables.kt\nandroidx/compose/runtime/ComposablesKt\n+ 4 Composer.kt\nandroidx/compose/runtime/ComposerKt\n*L\n1#1,81:1\n76#2:82\n36#3:83\n1097#4,6:84\n*S KotlinDebug\n*F\n+ 1 AndroidCursorHandle.android.kt\nandroidx/compose/foundation/text/AndroidCursorHandle_androidKt$drawCursorHandle$1\n*L\n63#1:82\n65#1:83\n65#1:84,6\n*E\n"
+    value = "SMAP\nAndroidCursorHandle.android.kt\nKotlin\n*S Kotlin\n*F\n+ 1 AndroidCursorHandle.android.kt\nandroidx/compose/foundation/text/AndroidCursorHandle_androidKt$drawCursorHandle$1\n+ 2 CompositionLocal.kt\nandroidx/compose/runtime/CompositionLocal\n+ 3 Composer.kt\nandroidx/compose/runtime/ComposerKt\n*L\n1#1,82:1\n74#2:83\n1116#3,6:84\n*S KotlinDebug\n*F\n+ 1 AndroidCursorHandle.android.kt\nandroidx/compose/foundation/text/AndroidCursorHandle_androidKt$drawCursorHandle$1\n*L\n63#1:83\n65#1:84,6\n*E\n"
 .end annotation
 
 .annotation runtime Lkotlin/Metadata;
@@ -84,15 +84,11 @@
 .method public final invoke(Landroidx/compose/ui/Modifier;Landroidx/compose/runtime/Composer;I)Landroidx/compose/ui/Modifier;
     .locals 3
 
-    const-string p0, "$this$composed"
-
-    invoke-static {p1, p0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
     const p0, -0x7ec5e7f9
 
     invoke-interface {p2, p0}, Landroidx/compose/runtime/Composer;->startReplaceableGroup(I)V
 
-    const-string v0, "C62@2212L7,64@2278L602:AndroidCursorHandle.android.kt#423gt5"
+    const-string v0, "C62@2224L7:AndroidCursorHandle.android.kt#423gt5"
 
     invoke-static {p2, v0}, Landroidx/compose/runtime/ComposerKt;->sourceInformation(Landroidx/compose/runtime/Composer;Ljava/lang/String;)V
 
@@ -104,7 +100,7 @@
 
     const/4 v0, -0x1
 
-    const-string v1, "androidx.compose.foundation.text.drawCursorHandle.<anonymous> (AndroidCursorHandle.android.kt:61)"
+    const-string v1, "androidx.compose.foundation.text.drawCursorHandle.<anonymous> (AndroidCursorHandle.android.kt:62)"
 
     .line 63
     invoke-static {p0, p3, v0, v1}, Landroidx/compose/runtime/ComposerKt;->traceEventStart(IIILjava/lang/String;)V
@@ -120,7 +116,7 @@
 
     const-string v0, "CC:CompositionLocal.kt#9igjgp"
 
-    .line 82
+    .line 83
     invoke-static {p2, p3, v0}, Landroidx/compose/runtime/ComposerKt;->sourceInformationMarkerStart(Landroidx/compose/runtime/Composer;ILjava/lang/String;)V
 
     invoke-interface {p2, p0}, Landroidx/compose/runtime/Composer;->consume(Landroidx/compose/runtime/CompositionLocal;)Ljava/lang/Object;
@@ -141,20 +137,11 @@
 
     check-cast p0, Landroidx/compose/ui/Modifier;
 
-    invoke-static {v0, v1}, Landroidx/compose/ui/graphics/Color;->box-impl(J)Landroidx/compose/ui/graphics/Color;
+    const p3, -0x67acbe39
 
-    move-result-object p3
+    invoke-interface {p2, p3}, Landroidx/compose/runtime/Composer;->startReplaceableGroup(I)V
 
-    const v2, 0x44faf204
-
-    invoke-interface {p2, v2}, Landroidx/compose/runtime/Composer;->startReplaceableGroup(I)V
-
-    const-string v2, "CC(remember)P(1):Composables.kt#9igjgp"
-
-    invoke-static {p2, v2}, Landroidx/compose/runtime/ComposerKt;->sourceInformation(Landroidx/compose/runtime/Composer;Ljava/lang/String;)V
-
-    .line 83
-    invoke-interface {p2, p3}, Landroidx/compose/runtime/Composer;->changed(Ljava/lang/Object;)Z
+    invoke-interface {p2, v0, v1}, Landroidx/compose/runtime/Composer;->changed(J)Z
 
     move-result p3
 
@@ -187,13 +174,12 @@
     .line 87
     invoke-interface {p2, v2}, Landroidx/compose/runtime/Composer;->updateRememberedValue(Ljava/lang/Object;)V
 
-    .line 83
+    .line 65
     :cond_2
-    invoke-interface {p2}, Landroidx/compose/runtime/Composer;->endReplaceableGroup()V
-
     check-cast v2, Lkotlin/jvm/functions/Function1;
 
-    .line 65
+    invoke-interface {p2}, Landroidx/compose/runtime/Composer;->endReplaceableGroup()V
+
     invoke-static {p0, v2}, Landroidx/compose/ui/draw/DrawModifierKt;->drawWithCache(Landroidx/compose/ui/Modifier;Lkotlin/jvm/functions/Function1;)Landroidx/compose/ui/Modifier;
 
     move-result-object p0

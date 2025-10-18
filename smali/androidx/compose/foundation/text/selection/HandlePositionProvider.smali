@@ -13,20 +13,27 @@
     }
 .end annotation
 
+.annotation system Ldalvik/annotation/SourceDebugExtension;
+    value = "SMAP\nAndroidSelectionHandles.android.kt\nKotlin\n*S Kotlin\n*F\n+ 1 AndroidSelectionHandles.android.kt\nandroidx/compose/foundation/text/selection/HandlePositionProvider\n+ 2 Offset.kt\nandroidx/compose/ui/geometry/OffsetKt\n+ 3 IntOffset.kt\nandroidx/compose/ui/unit/IntOffsetKt\n*L\n1#1,327:1\n265#2:328\n179#3:329\n*S KotlinDebug\n*F\n+ 1 AndroidSelectionHandles.android.kt\nandroidx/compose/foundation/text/selection/HandlePositionProvider\n*L\n276#1:328\n287#1:329\n*E\n"
+.end annotation
+
 .annotation runtime Lkotlin/Metadata;
     d1 = {
-        "\u0000,\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0004\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0004\u0008\u0000\u0018\u00002\u00020\u0001B\u0018\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\u0006\u0010\u0004\u001a\u00020\u0005\u00f8\u0001\u0000\u00a2\u0006\u0002\u0010\u0006J5\u0010\u0008\u001a\u00020\u00052\u0006\u0010\t\u001a\u00020\n2\u0006\u0010\u000b\u001a\u00020\u000c2\u0006\u0010\r\u001a\u00020\u000e2\u0006\u0010\u000f\u001a\u00020\u000cH\u0016\u00f8\u0001\u0001\u00f8\u0001\u0000\u00a2\u0006\u0004\u0008\u0010\u0010\u0011R\u000e\u0010\u0002\u001a\u00020\u0003X\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u0019\u0010\u0004\u001a\u00020\u0005X\u0082\u0004\u00f8\u0001\u0000\u00f8\u0001\u0001\u00f8\u0001\u0002\u00a2\u0006\u0004\n\u0002\u0010\u0007\u0082\u0002\u000f\n\u0002\u0008\u0019\n\u0005\u0008\u00a1\u001e0\u0001\n\u0002\u0008!\u00a8\u0006\u0012"
+        "\u0000:\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0004\u0008\u0000\u0018\u00002\u00020\u0001B\u0015\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\u0006\u0010\u0004\u001a\u00020\u0005\u00a2\u0006\u0002\u0010\u0006J2\u0010\n\u001a\u00020\u000b2\u0006\u0010\u000c\u001a\u00020\r2\u0006\u0010\u000e\u001a\u00020\u000f2\u0006\u0010\u0010\u001a\u00020\u00112\u0006\u0010\u0012\u001a\u00020\u000fH\u0016\u00f8\u0001\u0000\u00a2\u0006\u0004\u0008\u0013\u0010\u0014R\u000e\u0010\u0002\u001a\u00020\u0003X\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u0004\u001a\u00020\u0005X\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u0016\u0010\u0007\u001a\u00020\u0008X\u0082\u000e\u00f8\u0001\u0000\u00f8\u0001\u0001\u00a2\u0006\u0004\n\u0002\u0010\t\u0082\u0002\u000b\n\u0005\u0008\u00a1\u001e0\u0001\n\u0002\u0008!\u00a8\u0006\u0015"
     }
     d2 = {
         "Landroidx/compose/foundation/text/selection/HandlePositionProvider;",
         "Landroidx/compose/ui/window/PopupPositionProvider;",
         "handleReferencePoint",
         "Landroidx/compose/foundation/text/selection/HandleReferencePoint;",
-        "offset",
-        "Landroidx/compose/ui/unit/IntOffset;",
-        "(Landroidx/compose/foundation/text/selection/HandleReferencePoint;JLkotlin/jvm/internal/DefaultConstructorMarker;)V",
+        "positionProvider",
+        "Landroidx/compose/foundation/text/selection/OffsetProvider;",
+        "(Landroidx/compose/foundation/text/selection/HandleReferencePoint;Landroidx/compose/foundation/text/selection/OffsetProvider;)V",
+        "prevPosition",
+        "Landroidx/compose/ui/geometry/Offset;",
         "J",
         "calculatePosition",
+        "Landroidx/compose/ui/unit/IntOffset;",
         "anchorBounds",
         "Landroidx/compose/ui/unit/IntRect;",
         "windowSize",
@@ -48,36 +55,45 @@
 .end annotation
 
 
+# static fields
+.field public static final $stable:I
+
+
 # instance fields
 .field private final handleReferencePoint:Landroidx/compose/foundation/text/selection/HandleReferencePoint;
 
-.field private final offset:J
+.field private final positionProvider:Landroidx/compose/foundation/text/selection/OffsetProvider;
+
+.field private prevPosition:J
 
 
 # direct methods
-.method private constructor <init>(Landroidx/compose/foundation/text/selection/HandleReferencePoint;J)V
-    .locals 1
-
-    const-string v0, "handleReferencePoint"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 267
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    .line 268
-    iput-object p1, p0, Landroidx/compose/foundation/text/selection/HandlePositionProvider;->handleReferencePoint:Landroidx/compose/foundation/text/selection/HandleReferencePoint;
-
-    .line 269
-    iput-wide p2, p0, Landroidx/compose/foundation/text/selection/HandlePositionProvider;->offset:J
+.method static constructor <clinit>()V
+    .locals 0
 
     return-void
 .end method
 
-.method public synthetic constructor <init>(Landroidx/compose/foundation/text/selection/HandleReferencePoint;JLkotlin/jvm/internal/DefaultConstructorMarker;)V
+.method public constructor <init>(Landroidx/compose/foundation/text/selection/HandleReferencePoint;Landroidx/compose/foundation/text/selection/OffsetProvider;)V
     .locals 0
 
-    invoke-direct {p0, p1, p2, p3}, Landroidx/compose/foundation/text/selection/HandlePositionProvider;-><init>(Landroidx/compose/foundation/text/selection/HandleReferencePoint;J)V
+    .line 256
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 257
+    iput-object p1, p0, Landroidx/compose/foundation/text/selection/HandlePositionProvider;->handleReferencePoint:Landroidx/compose/foundation/text/selection/HandleReferencePoint;
+
+    .line 258
+    iput-object p2, p0, Landroidx/compose/foundation/text/selection/HandlePositionProvider;->positionProvider:Landroidx/compose/foundation/text/selection/OffsetProvider;
+
+    .line 268
+    sget-object p1, Landroidx/compose/ui/geometry/Offset;->Companion:Landroidx/compose/ui/geometry/Offset$Companion;
+
+    invoke-virtual {p1}, Landroidx/compose/ui/geometry/Offset$Companion;->getZero-F1C5BW0()J
+
+    move-result-wide p1
+
+    iput-wide p1, p0, Landroidx/compose/foundation/text/selection/HandlePositionProvider;->prevPosition:J
 
     return-void
 .end method
@@ -85,159 +101,132 @@
 
 # virtual methods
 .method public calculatePosition-llwVHH4(Landroidx/compose/ui/unit/IntRect;JLandroidx/compose/ui/unit/LayoutDirection;J)J
-    .locals 2
+    .locals 0
 
-    const-string p2, "anchorBounds"
+    .line 276
+    iget-object p2, p0, Landroidx/compose/foundation/text/selection/HandlePositionProvider;->positionProvider:Landroidx/compose/foundation/text/selection/OffsetProvider;
 
-    invoke-static {p1, p2}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-interface {p2}, Landroidx/compose/foundation/text/selection/OffsetProvider;->provide-F1C5BW0()J
 
-    const-string p2, "layoutDirection"
+    move-result-wide p2
 
-    invoke-static {p4, p2}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 277
-    iget-object p2, p0, Landroidx/compose/foundation/text/selection/HandlePositionProvider;->handleReferencePoint:Landroidx/compose/foundation/text/selection/HandleReferencePoint;
-
-    sget-object p3, Landroidx/compose/foundation/text/selection/HandlePositionProvider$WhenMappings;->$EnumSwitchMapping$0:[I
-
-    invoke-virtual {p2}, Landroidx/compose/foundation/text/selection/HandleReferencePoint;->ordinal()I
-
-    move-result p2
-
-    aget p2, p3, p2
-
-    const/4 p3, 0x1
-
-    if-eq p2, p3, :cond_2
-
-    const/4 p3, 0x2
-
-    if-eq p2, p3, :cond_1
-
-    const/4 p4, 0x3
-
-    if-ne p2, p4, :cond_0
-
-    .line 290
-    invoke-virtual {p1}, Landroidx/compose/ui/unit/IntRect;->getLeft()I
-
-    move-result p2
-
-    iget-wide v0, p0, Landroidx/compose/foundation/text/selection/HandlePositionProvider;->offset:J
-
-    invoke-static {v0, v1}, Landroidx/compose/ui/unit/IntOffset;->getX-impl(J)I
+    .line 328
+    invoke-static {p2, p3}, Landroidx/compose/ui/geometry/OffsetKt;->isSpecified-k-4lQ0M(J)Z
 
     move-result p4
 
-    add-int/2addr p2, p4
-
-    invoke-static {p5, p6}, Landroidx/compose/ui/unit/IntSize;->getWidth-impl(J)I
-
-    move-result p4
-
-    div-int/2addr p4, p3
-
-    sub-int/2addr p2, p4
-
-    .line 291
-    invoke-virtual {p1}, Landroidx/compose/ui/unit/IntRect;->getTop()I
-
-    move-result p1
-
-    iget-wide p3, p0, Landroidx/compose/foundation/text/selection/HandlePositionProvider;->offset:J
-
-    invoke-static {p3, p4}, Landroidx/compose/ui/unit/IntOffset;->getY-impl(J)I
-
-    move-result p0
-
-    add-int/2addr p1, p0
-
-    .line 289
-    invoke-static {p2, p1}, Landroidx/compose/ui/unit/IntOffsetKt;->IntOffset(II)J
-
-    move-result-wide p0
+    if-eqz p4, :cond_0
 
     goto :goto_0
 
+    .line 276
     :cond_0
+    iget-wide p2, p0, Landroidx/compose/foundation/text/selection/HandlePositionProvider;->prevPosition:J
+
+    .line 277
+    :goto_0
+    iput-wide p2, p0, Landroidx/compose/foundation/text/selection/HandlePositionProvider;->prevPosition:J
+
+    .line 281
+    iget-object p0, p0, Landroidx/compose/foundation/text/selection/HandlePositionProvider;->handleReferencePoint:Landroidx/compose/foundation/text/selection/HandleReferencePoint;
+
+    sget-object p4, Landroidx/compose/foundation/text/selection/HandlePositionProvider$WhenMappings;->$EnumSwitchMapping$0:[I
+
+    invoke-virtual {p0}, Landroidx/compose/foundation/text/selection/HandleReferencePoint;->ordinal()I
+
+    move-result p0
+
+    aget p0, p4, p0
+
+    const/4 p4, 0x1
+
+    if-eq p0, p4, :cond_3
+
+    const/4 p4, 0x2
+
+    if-eq p0, p4, :cond_2
+
+    const/4 p4, 0x3
+
+    if-ne p0, p4, :cond_1
+
+    .line 284
+    invoke-static {p5, p6}, Landroidx/compose/ui/unit/IntSize;->getWidth-impl(J)I
+
+    move-result p0
+
+    goto :goto_1
+
+    :cond_1
     new-instance p0, Lkotlin/NoWhenBranchMatchedException;
 
     invoke-direct {p0}, Lkotlin/NoWhenBranchMatchedException;-><init>()V
 
     throw p0
 
-    .line 285
-    :cond_1
-    invoke-virtual {p1}, Landroidx/compose/ui/unit/IntRect;->getLeft()I
-
-    move-result p2
-
-    iget-wide p3, p0, Landroidx/compose/foundation/text/selection/HandlePositionProvider;->offset:J
-
-    invoke-static {p3, p4}, Landroidx/compose/ui/unit/IntOffset;->getX-impl(J)I
-
-    move-result p3
-
-    add-int/2addr p2, p3
-
+    .line 283
+    :cond_2
     invoke-static {p5, p6}, Landroidx/compose/ui/unit/IntSize;->getWidth-impl(J)I
 
-    move-result p3
-
-    sub-int/2addr p2, p3
-
-    .line 286
-    invoke-virtual {p1}, Landroidx/compose/ui/unit/IntRect;->getTop()I
-
-    move-result p1
-
-    iget-wide p3, p0, Landroidx/compose/foundation/text/selection/HandlePositionProvider;->offset:J
-
-    invoke-static {p3, p4}, Landroidx/compose/ui/unit/IntOffset;->getY-impl(J)I
-
     move-result p0
 
-    add-int/2addr p1, p0
+    div-int/2addr p0, p4
 
-    .line 284
-    invoke-static {p2, p1}, Landroidx/compose/ui/unit/IntOffsetKt;->IntOffset(II)J
+    goto :goto_1
 
-    move-result-wide p0
+    :cond_3
+    const/4 p0, 0x0
 
-    goto :goto_0
+    .line 329
+    :goto_1
+    invoke-static {p2, p3}, Landroidx/compose/ui/geometry/Offset;->getX-impl(J)F
 
-    .line 280
-    :cond_2
-    invoke-virtual {p1}, Landroidx/compose/ui/unit/IntRect;->getLeft()I
+    move-result p4
+
+    invoke-static {p4}, Lkotlin/math/MathKt;->roundToInt(F)I
+
+    move-result p4
+
+    invoke-static {p2, p3}, Landroidx/compose/ui/geometry/Offset;->getY-impl(J)F
 
     move-result p2
 
-    iget-wide p3, p0, Landroidx/compose/foundation/text/selection/HandlePositionProvider;->offset:J
+    invoke-static {p2}, Lkotlin/math/MathKt;->roundToInt(F)I
 
-    invoke-static {p3, p4}, Landroidx/compose/ui/unit/IntOffset;->getX-impl(J)I
+    move-result p2
 
-    move-result p3
+    invoke-static {p4, p2}, Landroidx/compose/ui/unit/IntOffsetKt;->IntOffset(II)J
 
-    add-int/2addr p2, p3
+    move-result-wide p2
 
-    .line 281
+    .line 288
+    invoke-virtual {p1}, Landroidx/compose/ui/unit/IntRect;->getLeft()I
+
+    move-result p4
+
+    invoke-static {p2, p3}, Landroidx/compose/ui/unit/IntOffset;->getX-impl(J)I
+
+    move-result p5
+
+    add-int/2addr p4, p5
+
+    sub-int/2addr p4, p0
+
+    .line 289
     invoke-virtual {p1}, Landroidx/compose/ui/unit/IntRect;->getTop()I
-
-    move-result p1
-
-    iget-wide p3, p0, Landroidx/compose/foundation/text/selection/HandlePositionProvider;->offset:J
-
-    invoke-static {p3, p4}, Landroidx/compose/ui/unit/IntOffset;->getY-impl(J)I
 
     move-result p0
 
-    add-int/2addr p1, p0
+    invoke-static {p2, p3}, Landroidx/compose/ui/unit/IntOffset;->getY-impl(J)I
 
-    .line 279
-    invoke-static {p2, p1}, Landroidx/compose/ui/unit/IntOffsetKt;->IntOffset(II)J
+    move-result p1
+
+    add-int/2addr p0, p1
+
+    .line 290
+    invoke-static {p4, p0}, Landroidx/compose/ui/unit/IntOffsetKt;->IntOffset(II)J
 
     move-result-wide p0
 
-    :goto_0
     return-wide p0
 .end method

@@ -30,7 +30,7 @@
     .line 0
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/viewbinder/BasicModeThumbnailBindingHelper$$ExternalSyntheticLambda1;->f$0:Ljp/co/sony/mc/camera/view/viewbinder/BasicModeThumbnailBindingHelper;
 
-    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/view/viewbinder/BasicModeThumbnailBindingHelper;->lambda$4$lambda$1(Ljp/co/sony/mc/camera/view/viewbinder/BasicModeThumbnailBindingHelper;Landroid/view/View;)V
+    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/view/viewbinder/BasicModeThumbnailBindingHelper;->$r8$lambda$HpQUqikc2RlXLwVT5eMvufKsPHE(Ljp/co/sony/mc/camera/view/viewbinder/BasicModeThumbnailBindingHelper;Landroid/view/View;)V
 
     return-void
 .end method

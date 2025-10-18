@@ -22,7 +22,7 @@
 .method private constructor <init>(Ljp/co/sony/mc/camera/CameraActivity;)V
     .locals 0
 
-    .line 532
+    .line 536
     iput-object p1, p0, Ljp/co/sony/mc/camera/CameraActivity$ShutDownReceiver;->this$0:Ljp/co/sony/mc/camera/CameraActivity;
 
     invoke-direct {p0}, Landroid/content/BroadcastReceiver;-><init>()V
@@ -43,7 +43,7 @@
 .method public onReceive(Landroid/content/Context;Landroid/content/Intent;)V
     .locals 0
 
-    .line 535
+    .line 539
     const-string p1, "android.intent.action.ACTION_SHUTDOWN"
 
     invoke-virtual {p2}, Landroid/content/Intent;->getAction()Ljava/lang/String;
@@ -56,7 +56,7 @@
 
     if-eqz p1, :cond_0
 
-    .line 536
+    .line 540
     iget-object p0, p0, Ljp/co/sony/mc/camera/CameraActivity$ShutDownReceiver;->this$0:Ljp/co/sony/mc/camera/CameraActivity;
 
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/CameraActivity;->getCameraDevice()Ljp/co/sony/mc/camera/device/CameraDeviceHandler;

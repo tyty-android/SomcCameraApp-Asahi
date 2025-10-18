@@ -17,7 +17,7 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/SourceDebugExtension;
-    value = "SMAP\nVectorizedAnimationSpec.kt\nKotlin\n*S Kotlin\n*F\n+ 1 VectorizedAnimationSpec.kt\nandroidx/compose/animation/core/VectorizedAnimationSpecKt$createSpringAnimations$1\n+ 2 _Collections.kt\nkotlin/collections/CollectionsKt___CollectionsKt\n*L\n1#1,813:1\n1549#2:814\n1620#2,3:815\n*S KotlinDebug\n*F\n+ 1 VectorizedAnimationSpec.kt\nandroidx/compose/animation/core/VectorizedAnimationSpecKt$createSpringAnimations$1\n*L\n671#1:814\n671#1:815,3\n*E\n"
+    value = "SMAP\nVectorizedAnimationSpec.kt\nKotlin\n*S Kotlin\n*F\n+ 1 VectorizedAnimationSpec.kt\nandroidx/compose/animation/core/VectorizedAnimationSpecKt$createSpringAnimations$1\n+ 2 _Collections.kt\nkotlin/collections/CollectionsKt___CollectionsKt\n*L\n1#1,818:1\n1549#2:819\n1620#2,3:820\n*S KotlinDebug\n*F\n+ 1 VectorizedAnimationSpec.kt\nandroidx/compose/animation/core/VectorizedAnimationSpecKt$createSpringAnimations$1\n*L\n676#1:819\n676#1:820,3\n*E\n"
 .end annotation
 
 .annotation runtime Lkotlin/Metadata;
@@ -66,12 +66,12 @@
         }
     .end annotation
 
-    .line 670
+    .line 675
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     const/4 v0, 0x0
 
-    .line 671
+    .line 676
     invoke-virtual {p1}, Landroidx/compose/animation/core/AnimationVector;->getSize$animation_core_release()I
 
     move-result v1
@@ -82,7 +82,7 @@
 
     check-cast v0, Ljava/lang/Iterable;
 
-    .line 814
+    .line 819
     new-instance v1, Ljava/util/ArrayList;
 
     const/16 v2, 0xa
@@ -95,7 +95,7 @@
 
     check-cast v1, Ljava/util/Collection;
 
-    .line 815
+    .line 820
     invoke-interface {v0}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
 
     move-result-object v0
@@ -115,7 +115,7 @@
 
     move-result v2
 
-    .line 672
+    .line 677
     new-instance v3, Landroidx/compose/animation/core/FloatSpringSpec;
 
     invoke-virtual {p1, v2}, Landroidx/compose/animation/core/AnimationVector;->get$animation_core_release(I)F
@@ -124,16 +124,16 @@
 
     invoke-direct {v3, p2, p3, v2}, Landroidx/compose/animation/core/FloatSpringSpec;-><init>(FFF)V
 
-    .line 816
+    .line 821
     invoke-interface {v1, v3}, Ljava/util/Collection;->add(Ljava/lang/Object;)Z
 
     goto :goto_0
 
-    .line 817
+    .line 822
     :cond_0
     check-cast v1, Ljava/util/List;
 
-    .line 671
+    .line 676
     iput-object v1, p0, Landroidx/compose/animation/core/VectorizedAnimationSpecKt$createSpringAnimations$1;->anims:Ljava/util/List;
 
     return-void
@@ -144,7 +144,7 @@
 .method public bridge synthetic get(I)Landroidx/compose/animation/core/FloatAnimationSpec;
     .locals 0
 
-    .line 670
+    .line 675
     invoke-virtual {p0, p1}, Landroidx/compose/animation/core/VectorizedAnimationSpecKt$createSpringAnimations$1;->get(I)Landroidx/compose/animation/core/FloatSpringSpec;
 
     move-result-object p0
@@ -157,7 +157,7 @@
 .method public get(I)Landroidx/compose/animation/core/FloatSpringSpec;
     .locals 0
 
-    .line 675
+    .line 680
     iget-object p0, p0, Landroidx/compose/animation/core/VectorizedAnimationSpecKt$createSpringAnimations$1;->anims:Ljava/util/List;
 
     invoke-interface {p0, p1}, Ljava/util/List;->get(I)Ljava/lang/Object;

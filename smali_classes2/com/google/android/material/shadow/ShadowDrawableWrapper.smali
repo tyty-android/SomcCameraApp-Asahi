@@ -1,5 +1,5 @@
 .class public Lcom/google/android/material/shadow/ShadowDrawableWrapper;
-.super Landroidx/appcompat/graphics/drawable/DrawableWrapper;
+.super Landroidx/appcompat/graphics/drawable/DrawableWrapperCompat;
 .source "ShadowDrawableWrapper.java"
 
 
@@ -78,7 +78,7 @@
     .locals 1
 
     .line 87
-    invoke-direct {p0, p2}, Landroidx/appcompat/graphics/drawable/DrawableWrapper;-><init>(Landroid/graphics/drawable/Drawable;)V
+    invoke-direct {p0, p2}, Landroidx/appcompat/graphics/drawable/DrawableWrapperCompat;-><init>(Landroid/graphics/drawable/Drawable;)V
 
     const/4 p2, 0x1
 
@@ -210,7 +210,7 @@
     invoke-virtual {v1, v2, v3, v4, p1}, Landroid/graphics/RectF;->set(FFFF)V
 
     .line 368
-    invoke-virtual {p0}, Lcom/google/android/material/shadow/ShadowDrawableWrapper;->getWrappedDrawable()Landroid/graphics/drawable/Drawable;
+    invoke-virtual {p0}, Lcom/google/android/material/shadow/ShadowDrawableWrapper;->getDrawable()Landroid/graphics/drawable/Drawable;
 
     move-result-object p1
 
@@ -1050,7 +1050,7 @@
     invoke-direct {p0, p1}, Lcom/google/android/material/shadow/ShadowDrawableWrapper;->drawShadow(Landroid/graphics/Canvas;)V
 
     .line 211
-    invoke-super {p0, p1}, Landroidx/appcompat/graphics/drawable/DrawableWrapper;->draw(Landroid/graphics/Canvas;)V
+    invoke-super {p0, p1}, Landroidx/appcompat/graphics/drawable/DrawableWrapperCompat;->draw(Landroid/graphics/Canvas;)V
 
     return-void
 .end method
@@ -1237,7 +1237,7 @@
     .locals 1
 
     .line 115
-    invoke-super {p0, p1}, Landroidx/appcompat/graphics/drawable/DrawableWrapper;->setAlpha(I)V
+    invoke-super {p0, p1}, Landroidx/appcompat/graphics/drawable/DrawableWrapperCompat;->setAlpha(I)V
 
     .line 116
     iget-object v0, p0, Lcom/google/android/material/shadow/ShadowDrawableWrapper;->cornerShadowPaint:Landroid/graphics/Paint;

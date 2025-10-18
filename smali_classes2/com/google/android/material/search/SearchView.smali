@@ -4,6 +4,7 @@
 
 # interfaces
 .implements Landroidx/coordinatorlayout/widget/CoordinatorLayout$AttachedBehavior;
+.implements Lcom/google/android/material/motion/MaterialBackHandler;
 
 
 # annotations
@@ -29,6 +30,12 @@
 .field private animatedNavigationIcon:Z
 
 .field private autoShowKeyboard:Z
+
+.field private final backHandlingEnabled:Z
+
+.field private final backOrchestrator:Lcom/google/android/material/motion/MaterialBackOrchestrator;
+
+.field private final backgroundColor:I
 
 .field final backgroundView:Landroid/view/View;
 
@@ -98,7 +105,7 @@
 .method static constructor <clinit>()V
     .locals 1
 
-    .line 124
+    .line 137
     sget v0, Lcom/google/android/material/R$style;->Widget_Material3_SearchView:I
 
     sput v0, Lcom/google/android/material/search/SearchView;->DEF_STYLE_RES:I
@@ -111,7 +118,7 @@
 
     const/4 v0, 0x0
 
-    .line 156
+    .line 175
     invoke-direct {p0, p1, v0}, Lcom/google/android/material/search/SearchView;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
     return-void
@@ -120,7 +127,7 @@
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 1
 
-    .line 160
+    .line 179
     sget v0, Lcom/google/android/material/R$attr;->materialSearchViewStyle:I
 
     invoke-direct {p0, p1, p2, v0}, Lcom/google/android/material/search/SearchView;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
@@ -131,7 +138,7 @@
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
     .locals 8
 
-    .line 164
+    .line 183
     sget v4, Lcom/google/android/material/search/SearchView;->DEF_STYLE_RES:I
 
     invoke-static {p1, p2, p3, v4}, Lcom/google/android/material/theme/overlay/MaterialThemeOverlay;->wrap(Landroid/content/Context;Landroid/util/AttributeSet;II)Landroid/content/Context;
@@ -140,7 +147,14 @@
 
     invoke-direct {p0, p1, p2, p3}, Landroid/widget/FrameLayout;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
 
-    .line 143
+    .line 156
+    new-instance p1, Lcom/google/android/material/motion/MaterialBackOrchestrator;
+
+    invoke-direct {p1, p0}, Lcom/google/android/material/motion/MaterialBackOrchestrator;-><init>(Landroid/view/View;)V
+
+    iput-object p1, p0, Lcom/google/android/material/search/SearchView;->backOrchestrator:Lcom/google/android/material/motion/MaterialBackOrchestrator;
+
+    .line 161
     new-instance p1, Ljava/util/LinkedHashSet;
 
     invoke-direct {p1}, Ljava/util/LinkedHashSet;-><init>()V
@@ -149,20 +163,20 @@
 
     const/16 p1, 0x10
 
-    .line 146
+    .line 164
     iput p1, p0, Lcom/google/android/material/search/SearchView;->softInputMode:I
 
-    .line 152
+    .line 171
     sget-object p1, Lcom/google/android/material/search/SearchView$TransitionState;->HIDDEN:Lcom/google/android/material/search/SearchView$TransitionState;
 
     iput-object p1, p0, Lcom/google/android/material/search/SearchView;->currentTransitionState:Lcom/google/android/material/search/SearchView$TransitionState;
 
-    .line 166
+    .line 185
     invoke-virtual {p0}, Lcom/google/android/material/search/SearchView;->getContext()Landroid/content/Context;
 
     move-result-object p1
 
-    .line 168
+    .line 187
     sget-object v2, Lcom/google/android/material/R$styleable;->SearchView:[I
 
     const/4 v6, 0x0
@@ -175,12 +189,21 @@
 
     move v3, p3
 
-    .line 169
+    .line 188
     invoke-static/range {v0 .. v5}, Lcom/google/android/material/internal/ThemeEnforcement;->obtainStyledAttributes(Landroid/content/Context;Landroid/util/AttributeSet;[III[I)Landroid/content/res/TypedArray;
 
     move-result-object p2
 
-    .line 172
+    .line 191
+    sget p3, Lcom/google/android/material/R$styleable;->SearchView_backgroundTint:I
+
+    invoke-virtual {p2, p3, v6}, Landroid/content/res/TypedArray;->getColor(II)I
+
+    move-result p3
+
+    iput p3, p0, Lcom/google/android/material/search/SearchView;->backgroundColor:I
+
+    .line 192
     sget p3, Lcom/google/android/material/R$styleable;->SearchView_headerLayout:I
 
     const/4 v0, -0x1
@@ -189,43 +212,43 @@
 
     move-result p3
 
-    .line 173
+    .line 193
     sget v1, Lcom/google/android/material/R$styleable;->SearchView_android_textAppearance:I
 
     invoke-virtual {p2, v1, v0}, Landroid/content/res/TypedArray;->getResourceId(II)I
 
     move-result v0
 
-    .line 174
+    .line 194
     sget v1, Lcom/google/android/material/R$styleable;->SearchView_android_text:I
 
     invoke-virtual {p2, v1}, Landroid/content/res/TypedArray;->getString(I)Ljava/lang/String;
 
     move-result-object v1
 
-    .line 175
+    .line 195
     sget v2, Lcom/google/android/material/R$styleable;->SearchView_android_hint:I
 
     invoke-virtual {p2, v2}, Landroid/content/res/TypedArray;->getString(I)Ljava/lang/String;
 
     move-result-object v2
 
-    .line 176
+    .line 196
     sget v3, Lcom/google/android/material/R$styleable;->SearchView_searchPrefixText:I
 
     invoke-virtual {p2, v3}, Landroid/content/res/TypedArray;->getString(I)Ljava/lang/String;
 
     move-result-object v3
 
-    .line 177
+    .line 197
     sget v4, Lcom/google/android/material/R$styleable;->SearchView_useDrawerArrowDrawable:I
 
-    .line 178
+    .line 198
     invoke-virtual {p2, v4, v6}, Landroid/content/res/TypedArray;->getBoolean(IZ)Z
 
     move-result v4
 
-    .line 179
+    .line 199
     sget v5, Lcom/google/android/material/R$styleable;->SearchView_animateNavigationIcon:I
 
     const/4 v7, 0x1
@@ -236,7 +259,7 @@
 
     iput-boolean v5, p0, Lcom/google/android/material/search/SearchView;->animatedNavigationIcon:Z
 
-    .line 180
+    .line 200
     sget v5, Lcom/google/android/material/R$styleable;->SearchView_animateMenuItems:I
 
     invoke-virtual {p2, v5, v7}, Landroid/content/res/TypedArray;->getBoolean(IZ)Z
@@ -245,14 +268,14 @@
 
     iput-boolean v5, p0, Lcom/google/android/material/search/SearchView;->animatedMenuItems:Z
 
-    .line 181
+    .line 201
     sget v5, Lcom/google/android/material/R$styleable;->SearchView_hideNavigationIcon:I
 
     invoke-virtual {p2, v5, v6}, Landroid/content/res/TypedArray;->getBoolean(IZ)Z
 
     move-result v5
 
-    .line 182
+    .line 202
     sget v6, Lcom/google/android/material/R$styleable;->SearchView_autoShowKeyboard:I
 
     invoke-virtual {p2, v6, v7}, Landroid/content/res/TypedArray;->getBoolean(IZ)Z
@@ -261,10 +284,19 @@
 
     iput-boolean v6, p0, Lcom/google/android/material/search/SearchView;->autoShowKeyboard:Z
 
-    .line 184
+    .line 203
+    sget v6, Lcom/google/android/material/R$styleable;->SearchView_backHandlingEnabled:I
+
+    invoke-virtual {p2, v6, v7}, Landroid/content/res/TypedArray;->getBoolean(IZ)Z
+
+    move-result v6
+
+    iput-boolean v6, p0, Lcom/google/android/material/search/SearchView;->backHandlingEnabled:Z
+
+    .line 205
     invoke-virtual {p2}, Landroid/content/res/TypedArray;->recycle()V
 
-    .line 186
+    .line 207
     invoke-static {p1}, Landroid/view/LayoutInflater;->from(Landroid/content/Context;)Landroid/view/LayoutInflater;
 
     move-result-object p2
@@ -273,11 +305,11 @@
 
     invoke-virtual {p2, v6, p0}, Landroid/view/LayoutInflater;->inflate(ILandroid/view/ViewGroup;)Landroid/view/View;
 
-    .line 187
+    .line 208
     iput-boolean v7, p0, Lcom/google/android/material/search/SearchView;->layoutInflated:Z
 
-    .line 189
-    sget p2, Lcom/google/android/material/R$id;->search_view_scrim:I
+    .line 210
+    sget p2, Lcom/google/android/material/R$id;->open_search_view_scrim:I
 
     invoke-virtual {p0, p2}, Lcom/google/android/material/search/SearchView;->findViewById(I)Landroid/view/View;
 
@@ -285,8 +317,8 @@
 
     iput-object p2, p0, Lcom/google/android/material/search/SearchView;->scrim:Landroid/view/View;
 
-    .line 190
-    sget p2, Lcom/google/android/material/R$id;->search_view_root:I
+    .line 211
+    sget p2, Lcom/google/android/material/R$id;->open_search_view_root:I
 
     invoke-virtual {p0, p2}, Lcom/google/android/material/search/SearchView;->findViewById(I)Landroid/view/View;
 
@@ -296,8 +328,8 @@
 
     iput-object p2, p0, Lcom/google/android/material/search/SearchView;->rootView:Lcom/google/android/material/internal/ClippableRoundedCornerLayout;
 
-    .line 191
-    sget p2, Lcom/google/android/material/R$id;->search_view_background:I
+    .line 212
+    sget p2, Lcom/google/android/material/R$id;->open_search_view_background:I
 
     invoke-virtual {p0, p2}, Lcom/google/android/material/search/SearchView;->findViewById(I)Landroid/view/View;
 
@@ -305,8 +337,8 @@
 
     iput-object p2, p0, Lcom/google/android/material/search/SearchView;->backgroundView:Landroid/view/View;
 
-    .line 192
-    sget p2, Lcom/google/android/material/R$id;->search_view_status_bar_spacer:I
+    .line 213
+    sget p2, Lcom/google/android/material/R$id;->open_search_view_status_bar_spacer:I
 
     invoke-virtual {p0, p2}, Lcom/google/android/material/search/SearchView;->findViewById(I)Landroid/view/View;
 
@@ -314,8 +346,8 @@
 
     iput-object p2, p0, Lcom/google/android/material/search/SearchView;->statusBarSpacer:Landroid/view/View;
 
-    .line 193
-    sget p2, Lcom/google/android/material/R$id;->search_view_header_container:I
+    .line 214
+    sget p2, Lcom/google/android/material/R$id;->open_search_view_header_container:I
 
     invoke-virtual {p0, p2}, Lcom/google/android/material/search/SearchView;->findViewById(I)Landroid/view/View;
 
@@ -325,8 +357,8 @@
 
     iput-object p2, p0, Lcom/google/android/material/search/SearchView;->headerContainer:Landroid/widget/FrameLayout;
 
-    .line 194
-    sget p2, Lcom/google/android/material/R$id;->search_view_toolbar_container:I
+    .line 215
+    sget p2, Lcom/google/android/material/R$id;->open_search_view_toolbar_container:I
 
     invoke-virtual {p0, p2}, Lcom/google/android/material/search/SearchView;->findViewById(I)Landroid/view/View;
 
@@ -336,8 +368,8 @@
 
     iput-object p2, p0, Lcom/google/android/material/search/SearchView;->toolbarContainer:Landroid/widget/FrameLayout;
 
-    .line 195
-    sget p2, Lcom/google/android/material/R$id;->search_view_toolbar:I
+    .line 216
+    sget p2, Lcom/google/android/material/R$id;->open_search_view_toolbar:I
 
     invoke-virtual {p0, p2}, Lcom/google/android/material/search/SearchView;->findViewById(I)Landroid/view/View;
 
@@ -347,8 +379,8 @@
 
     iput-object p2, p0, Lcom/google/android/material/search/SearchView;->toolbar:Lcom/google/android/material/appbar/MaterialToolbar;
 
-    .line 196
-    sget p2, Lcom/google/android/material/R$id;->search_view_dummy_toolbar:I
+    .line 217
+    sget p2, Lcom/google/android/material/R$id;->open_search_view_dummy_toolbar:I
 
     invoke-virtual {p0, p2}, Lcom/google/android/material/search/SearchView;->findViewById(I)Landroid/view/View;
 
@@ -358,8 +390,8 @@
 
     iput-object p2, p0, Lcom/google/android/material/search/SearchView;->dummyToolbar:Landroidx/appcompat/widget/Toolbar;
 
-    .line 197
-    sget p2, Lcom/google/android/material/R$id;->search_view_search_prefix:I
+    .line 218
+    sget p2, Lcom/google/android/material/R$id;->open_search_view_search_prefix:I
 
     invoke-virtual {p0, p2}, Lcom/google/android/material/search/SearchView;->findViewById(I)Landroid/view/View;
 
@@ -369,8 +401,8 @@
 
     iput-object p2, p0, Lcom/google/android/material/search/SearchView;->searchPrefix:Landroid/widget/TextView;
 
-    .line 198
-    sget p2, Lcom/google/android/material/R$id;->search_view_edit_text:I
+    .line 219
+    sget p2, Lcom/google/android/material/R$id;->open_search_view_edit_text:I
 
     invoke-virtual {p0, p2}, Lcom/google/android/material/search/SearchView;->findViewById(I)Landroid/view/View;
 
@@ -380,8 +412,8 @@
 
     iput-object p2, p0, Lcom/google/android/material/search/SearchView;->editText:Landroid/widget/EditText;
 
-    .line 199
-    sget p2, Lcom/google/android/material/R$id;->search_view_clear_button:I
+    .line 220
+    sget p2, Lcom/google/android/material/R$id;->open_search_view_clear_button:I
 
     invoke-virtual {p0, p2}, Lcom/google/android/material/search/SearchView;->findViewById(I)Landroid/view/View;
 
@@ -391,8 +423,8 @@
 
     iput-object p2, p0, Lcom/google/android/material/search/SearchView;->clearButton:Landroid/widget/ImageButton;
 
-    .line 200
-    sget p2, Lcom/google/android/material/R$id;->search_view_divider:I
+    .line 221
+    sget p2, Lcom/google/android/material/R$id;->open_search_view_divider:I
 
     invoke-virtual {p0, p2}, Lcom/google/android/material/search/SearchView;->findViewById(I)Landroid/view/View;
 
@@ -400,8 +432,8 @@
 
     iput-object p2, p0, Lcom/google/android/material/search/SearchView;->divider:Landroid/view/View;
 
-    .line 201
-    sget p2, Lcom/google/android/material/R$id;->search_view_content_container:I
+    .line 222
+    sget p2, Lcom/google/android/material/R$id;->open_search_view_content_container:I
 
     invoke-virtual {p0, p2}, Lcom/google/android/material/search/SearchView;->findViewById(I)Landroid/view/View;
 
@@ -411,45 +443,45 @@
 
     iput-object p2, p0, Lcom/google/android/material/search/SearchView;->contentContainer:Lcom/google/android/material/internal/TouchObserverFrameLayout;
 
-    .line 203
+    .line 224
     new-instance p2, Lcom/google/android/material/search/SearchViewAnimationHelper;
 
     invoke-direct {p2, p0}, Lcom/google/android/material/search/SearchViewAnimationHelper;-><init>(Lcom/google/android/material/search/SearchView;)V
 
     iput-object p2, p0, Lcom/google/android/material/search/SearchView;->searchViewAnimationHelper:Lcom/google/android/material/search/SearchViewAnimationHelper;
 
-    .line 204
+    .line 225
     new-instance p2, Lcom/google/android/material/elevation/ElevationOverlayProvider;
 
     invoke-direct {p2, p1}, Lcom/google/android/material/elevation/ElevationOverlayProvider;-><init>(Landroid/content/Context;)V
 
     iput-object p2, p0, Lcom/google/android/material/search/SearchView;->elevationOverlayProvider:Lcom/google/android/material/elevation/ElevationOverlayProvider;
 
-    .line 206
+    .line 227
     invoke-direct {p0}, Lcom/google/android/material/search/SearchView;->setUpRootView()V
 
-    .line 207
+    .line 228
     invoke-direct {p0}, Lcom/google/android/material/search/SearchView;->setUpBackgroundViewElevationOverlay()V
 
-    .line 208
+    .line 229
     invoke-direct {p0, p3}, Lcom/google/android/material/search/SearchView;->setUpHeaderLayout(I)V
 
-    .line 209
+    .line 230
     invoke-virtual {p0, v3}, Lcom/google/android/material/search/SearchView;->setSearchPrefixText(Ljava/lang/CharSequence;)V
 
-    .line 210
+    .line 231
     invoke-direct {p0, v0, v1, v2}, Lcom/google/android/material/search/SearchView;->setUpEditText(ILjava/lang/String;Ljava/lang/String;)V
 
-    .line 211
+    .line 232
     invoke-direct {p0, v4, v5}, Lcom/google/android/material/search/SearchView;->setUpBackButton(ZZ)V
 
-    .line 212
+    .line 233
     invoke-direct {p0}, Lcom/google/android/material/search/SearchView;->setUpClearButton()V
 
-    .line 213
+    .line 234
     invoke-direct {p0}, Lcom/google/android/material/search/SearchView;->setUpContentOnTouchListener()V
 
-    .line 214
+    .line 235
     invoke-direct {p0}, Lcom/google/android/material/search/SearchView;->setUpInsetListeners()V
 
     return-void
@@ -458,7 +490,7 @@
 .method private getActivityWindow()Landroid/view/Window;
     .locals 0
 
-    .line 255
+    .line 330
     invoke-virtual {p0}, Lcom/google/android/material/search/SearchView;->getContext()Landroid/content/Context;
 
     move-result-object p0
@@ -473,7 +505,7 @@
 
     goto :goto_0
 
-    .line 256
+    .line 331
     :cond_0
     invoke-virtual {p0}, Landroid/app/Activity;->getWindow()Landroid/view/Window;
 
@@ -486,19 +518,19 @@
 .method private getOverlayElevation()F
     .locals 1
 
-    .line 278
+    .line 353
     iget-object v0, p0, Lcom/google/android/material/search/SearchView;->searchBar:Lcom/google/android/material/search/SearchBar;
 
     if-eqz v0, :cond_0
 
-    .line 279
+    .line 354
     invoke-virtual {v0}, Lcom/google/android/material/search/SearchBar;->getCompatElevation()F
 
     move-result p0
 
     return p0
 
-    .line 281
+    .line 356
     :cond_0
     invoke-virtual {p0}, Lcom/google/android/material/search/SearchView;->getResources()Landroid/content/res/Resources;
 
@@ -516,7 +548,7 @@
 .method private getStatusBarHeight()I
     .locals 4
 
-    .line 362
+    .line 437
     invoke-virtual {p0}, Lcom/google/android/material/search/SearchView;->getResources()Landroid/content/res/Resources;
 
     move-result-object v0
@@ -533,7 +565,7 @@
 
     if-lez v0, :cond_0
 
-    .line 364
+    .line 439
     invoke-virtual {p0}, Lcom/google/android/material/search/SearchView;->getResources()Landroid/content/res/Resources;
 
     move-result-object p0
@@ -550,10 +582,50 @@
     return p0
 .end method
 
+.method private isHiddenOrHiding()Z
+    .locals 2
+
+    .line 324
+    iget-object v0, p0, Lcom/google/android/material/search/SearchView;->currentTransitionState:Lcom/google/android/material/search/SearchView$TransitionState;
+
+    sget-object v1, Lcom/google/android/material/search/SearchView$TransitionState;->HIDDEN:Lcom/google/android/material/search/SearchView$TransitionState;
+
+    invoke-virtual {v0, v1}, Lcom/google/android/material/search/SearchView$TransitionState;->equals(Ljava/lang/Object;)Z
+
+    move-result v0
+
+    if-nez v0, :cond_1
+
+    iget-object p0, p0, Lcom/google/android/material/search/SearchView;->currentTransitionState:Lcom/google/android/material/search/SearchView$TransitionState;
+
+    sget-object v0, Lcom/google/android/material/search/SearchView$TransitionState;->HIDING:Lcom/google/android/material/search/SearchView$TransitionState;
+
+    .line 325
+    invoke-virtual {p0, v0}, Lcom/google/android/material/search/SearchView$TransitionState;->equals(Ljava/lang/Object;)Z
+
+    move-result p0
+
+    if-eqz p0, :cond_0
+
+    goto :goto_0
+
+    :cond_0
+    const/4 p0, 0x0
+
+    goto :goto_1
+
+    :cond_1
+    :goto_0
+    const/4 p0, 0x1
+
+    :goto_1
+    return p0
+.end method
+
 .method private isNavigationIconDrawerArrowDrawable(Landroidx/appcompat/widget/Toolbar;)Z
     .locals 0
 
-    .line 400
+    .line 475
     invoke-virtual {p1}, Landroidx/appcompat/widget/Toolbar;->getNavigationIcon()Landroid/graphics/drawable/Drawable;
 
     move-result-object p0
@@ -570,7 +642,7 @@
 .method static synthetic lambda$setUpDividerInsetListener$6(Landroid/view/ViewGroup$MarginLayoutParams;IILandroid/view/View;Landroidx/core/view/WindowInsetsCompat;)Landroidx/core/view/WindowInsetsCompat;
     .locals 0
 
-    .line 458
+    .line 533
     invoke-virtual {p4}, Landroidx/core/view/WindowInsetsCompat;->getSystemWindowInsetLeft()I
 
     move-result p3
@@ -579,7 +651,7 @@
 
     iput p1, p0, Landroid/view/ViewGroup$MarginLayoutParams;->leftMargin:I
 
-    .line 459
+    .line 534
     invoke-virtual {p4}, Landroidx/core/view/WindowInsetsCompat;->getSystemWindowInsetRight()I
 
     move-result p1
@@ -602,7 +674,7 @@
 .method private setStatusBarSpacerEnabledInternal(Z)V
     .locals 0
 
-    .line 699
+    .line 784
     iget-object p0, p0, Lcom/google/android/material/search/SearchView;->statusBarSpacer:Landroid/view/View;
 
     if-eqz p1, :cond_0
@@ -620,12 +692,97 @@
     return-void
 .end method
 
+.method private setTransitionState(Lcom/google/android/material/search/SearchView$TransitionState;Z)V
+    .locals 2
+
+    .line 799
+    iget-object v0, p0, Lcom/google/android/material/search/SearchView;->currentTransitionState:Lcom/google/android/material/search/SearchView$TransitionState;
+
+    invoke-virtual {v0, p1}, Lcom/google/android/material/search/SearchView$TransitionState;->equals(Ljava/lang/Object;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_0
+
+    return-void
+
+    :cond_0
+    if-eqz p2, :cond_2
+
+    .line 804
+    sget-object p2, Lcom/google/android/material/search/SearchView$TransitionState;->SHOWN:Lcom/google/android/material/search/SearchView$TransitionState;
+
+    if-ne p1, p2, :cond_1
+
+    const/4 p2, 0x1
+
+    .line 805
+    invoke-virtual {p0, p2}, Lcom/google/android/material/search/SearchView;->setModalForAccessibility(Z)V
+
+    goto :goto_0
+
+    .line 806
+    :cond_1
+    sget-object p2, Lcom/google/android/material/search/SearchView$TransitionState;->HIDDEN:Lcom/google/android/material/search/SearchView$TransitionState;
+
+    if-ne p1, p2, :cond_2
+
+    const/4 p2, 0x0
+
+    .line 807
+    invoke-virtual {p0, p2}, Lcom/google/android/material/search/SearchView;->setModalForAccessibility(Z)V
+
+    .line 811
+    :cond_2
+    :goto_0
+    iget-object p2, p0, Lcom/google/android/material/search/SearchView;->currentTransitionState:Lcom/google/android/material/search/SearchView$TransitionState;
+
+    .line 812
+    iput-object p1, p0, Lcom/google/android/material/search/SearchView;->currentTransitionState:Lcom/google/android/material/search/SearchView$TransitionState;
+
+    .line 813
+    new-instance v0, Ljava/util/LinkedHashSet;
+
+    iget-object v1, p0, Lcom/google/android/material/search/SearchView;->transitionListeners:Ljava/util/Set;
+
+    invoke-direct {v0, v1}, Ljava/util/LinkedHashSet;-><init>(Ljava/util/Collection;)V
+
+    .line 814
+    invoke-interface {v0}, Ljava/util/Set;->iterator()Ljava/util/Iterator;
+
+    move-result-object v0
+
+    :goto_1
+    invoke-interface {v0}, Ljava/util/Iterator;->hasNext()Z
+
+    move-result v1
+
+    if-eqz v1, :cond_3
+
+    invoke-interface {v0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+
+    move-result-object v1
+
+    check-cast v1, Lcom/google/android/material/search/SearchView$TransitionListener;
+
+    .line 815
+    invoke-interface {v1, p0, p2, p1}, Lcom/google/android/material/search/SearchView$TransitionListener;->onStateChanged(Lcom/google/android/material/search/SearchView;Lcom/google/android/material/search/SearchView$TransitionState;Lcom/google/android/material/search/SearchView$TransitionState;)V
+
+    goto :goto_1
+
+    .line 818
+    :cond_3
+    invoke-direct {p0, p1}, Lcom/google/android/material/search/SearchView;->updateListeningForBackCallbacks(Lcom/google/android/material/search/SearchView$TransitionState;)V
+
+    return-void
+.end method
+
 .method private setUpBackButton(ZZ)V
     .locals 1
 
     if-eqz p2, :cond_0
 
-    .line 303
+    .line 378
     iget-object p0, p0, Lcom/google/android/material/search/SearchView;->toolbar:Lcom/google/android/material/appbar/MaterialToolbar;
 
     const/4 p1, 0x0
@@ -634,19 +791,19 @@
 
     return-void
 
-    .line 307
+    .line 382
     :cond_0
     iget-object p2, p0, Lcom/google/android/material/search/SearchView;->toolbar:Lcom/google/android/material/appbar/MaterialToolbar;
 
-    new-instance v0, Lcom/google/android/material/search/SearchView$$ExternalSyntheticLambda7;
+    new-instance v0, Lcom/google/android/material/search/SearchView$$ExternalSyntheticLambda9;
 
-    invoke-direct {v0, p0}, Lcom/google/android/material/search/SearchView$$ExternalSyntheticLambda7;-><init>(Lcom/google/android/material/search/SearchView;)V
+    invoke-direct {v0, p0}, Lcom/google/android/material/search/SearchView$$ExternalSyntheticLambda9;-><init>(Lcom/google/android/material/search/SearchView;)V
 
     invoke-virtual {p2, v0}, Lcom/google/android/material/appbar/MaterialToolbar;->setNavigationOnClickListener(Landroid/view/View$OnClickListener;)V
 
     if-eqz p1, :cond_1
 
-    .line 310
+    .line 385
     new-instance p1, Landroidx/appcompat/graphics/drawable/DrawerArrowDrawable;
 
     invoke-virtual {p0}, Lcom/google/android/material/search/SearchView;->getContext()Landroid/content/Context;
@@ -655,7 +812,7 @@
 
     invoke-direct {p1, p2}, Landroidx/appcompat/graphics/drawable/DrawerArrowDrawable;-><init>(Landroid/content/Context;)V
 
-    .line 311
+    .line 386
     sget p2, Lcom/google/android/material/R$attr;->colorOnSurface:I
 
     invoke-static {p0, p2}, Lcom/google/android/material/color/MaterialColors;->getColor(Landroid/view/View;I)I
@@ -664,7 +821,7 @@
 
     invoke-virtual {p1, p2}, Landroidx/appcompat/graphics/drawable/DrawerArrowDrawable;->setColor(I)V
 
-    .line 312
+    .line 387
     iget-object p0, p0, Lcom/google/android/material/search/SearchView;->toolbar:Lcom/google/android/material/appbar/MaterialToolbar;
 
     invoke-virtual {p0, p1}, Lcom/google/android/material/appbar/MaterialToolbar;->setNavigationIcon(Landroid/graphics/drawable/Drawable;)V
@@ -676,7 +833,7 @@
 .method private setUpBackgroundViewElevationOverlay()V
     .locals 1
 
-    .line 265
+    .line 340
     invoke-direct {p0}, Lcom/google/android/material/search/SearchView;->getOverlayElevation()F
 
     move-result v0
@@ -689,7 +846,7 @@
 .method private setUpBackgroundViewElevationOverlay(F)V
     .locals 2
 
-    .line 269
+    .line 344
     iget-object v0, p0, Lcom/google/android/material/search/SearchView;->elevationOverlayProvider:Lcom/google/android/material/elevation/ElevationOverlayProvider;
 
     if-eqz v0, :cond_1
@@ -700,13 +857,16 @@
 
     goto :goto_0
 
-    .line 273
+    .line 347
     :cond_0
-    invoke-virtual {v0, p1}, Lcom/google/android/material/elevation/ElevationOverlayProvider;->compositeOverlayWithThemeSurfaceColorIfNeeded(F)I
+    iget v1, p0, Lcom/google/android/material/search/SearchView;->backgroundColor:I
+
+    .line 348
+    invoke-virtual {v0, v1, p1}, Lcom/google/android/material/elevation/ElevationOverlayProvider;->compositeOverlayIfNeeded(IF)I
 
     move-result p1
 
-    .line 274
+    .line 349
     iget-object p0, p0, Lcom/google/android/material/search/SearchView;->backgroundView:Landroid/view/View;
 
     invoke-virtual {p0, p1}, Landroid/view/View;->setBackgroundColor(I)V
@@ -719,16 +879,16 @@
 .method private setUpClearButton()V
     .locals 2
 
-    .line 317
+    .line 392
     iget-object v0, p0, Lcom/google/android/material/search/SearchView;->clearButton:Landroid/widget/ImageButton;
 
-    new-instance v1, Lcom/google/android/material/search/SearchView$$ExternalSyntheticLambda9;
+    new-instance v1, Lcom/google/android/material/search/SearchView$$ExternalSyntheticLambda1;
 
-    invoke-direct {v1, p0}, Lcom/google/android/material/search/SearchView$$ExternalSyntheticLambda9;-><init>(Lcom/google/android/material/search/SearchView;)V
+    invoke-direct {v1, p0}, Lcom/google/android/material/search/SearchView$$ExternalSyntheticLambda1;-><init>(Lcom/google/android/material/search/SearchView;)V
 
     invoke-virtual {v0, v1}, Landroid/widget/ImageButton;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
-    .line 323
+    .line 398
     iget-object v0, p0, Lcom/google/android/material/search/SearchView;->editText:Landroid/widget/EditText;
 
     new-instance v1, Lcom/google/android/material/search/SearchView$1;
@@ -743,12 +903,12 @@
 .method private setUpContentOnTouchListener()V
     .locals 2
 
-    .line 340
+    .line 415
     iget-object v0, p0, Lcom/google/android/material/search/SearchView;->contentContainer:Lcom/google/android/material/internal/TouchObserverFrameLayout;
 
-    new-instance v1, Lcom/google/android/material/search/SearchView$$ExternalSyntheticLambda6;
+    new-instance v1, Lcom/google/android/material/search/SearchView$$ExternalSyntheticLambda8;
 
-    invoke-direct {v1, p0}, Lcom/google/android/material/search/SearchView$$ExternalSyntheticLambda6;-><init>(Lcom/google/android/material/search/SearchView;)V
+    invoke-direct {v1, p0}, Lcom/google/android/material/search/SearchView$$ExternalSyntheticLambda8;-><init>(Lcom/google/android/material/search/SearchView;)V
 
     invoke-virtual {v0, v1}, Lcom/google/android/material/internal/TouchObserverFrameLayout;->setOnTouchListener(Landroid/view/View$OnTouchListener;)V
 
@@ -758,7 +918,7 @@
 .method private setUpDividerInsetListener()V
     .locals 4
 
-    .line 452
+    .line 527
     iget-object v0, p0, Lcom/google/android/material/search/SearchView;->divider:Landroid/view/View;
 
     invoke-virtual {v0}, Landroid/view/View;->getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
@@ -767,13 +927,13 @@
 
     check-cast v0, Landroid/view/ViewGroup$MarginLayoutParams;
 
-    .line 453
+    .line 528
     iget v1, v0, Landroid/view/ViewGroup$MarginLayoutParams;->leftMargin:I
 
-    .line 454
+    .line 529
     iget v2, v0, Landroid/view/ViewGroup$MarginLayoutParams;->rightMargin:I
 
-    .line 455
+    .line 530
     iget-object p0, p0, Lcom/google/android/material/search/SearchView;->divider:Landroid/view/View;
 
     new-instance v3, Lcom/google/android/material/search/SearchView$$ExternalSyntheticLambda0;
@@ -792,18 +952,18 @@
 
     if-eq p1, v0, :cond_0
 
-    .line 295
+    .line 370
     iget-object v0, p0, Lcom/google/android/material/search/SearchView;->editText:Landroid/widget/EditText;
 
     invoke-static {v0, p1}, Landroidx/core/widget/TextViewCompat;->setTextAppearance(Landroid/widget/TextView;I)V
 
-    .line 297
+    .line 372
     :cond_0
     iget-object p1, p0, Lcom/google/android/material/search/SearchView;->editText:Landroid/widget/EditText;
 
     invoke-virtual {p1, p2}, Landroid/widget/EditText;->setText(Ljava/lang/CharSequence;)V
 
-    .line 298
+    .line 373
     iget-object p0, p0, Lcom/google/android/material/search/SearchView;->editText:Landroid/widget/EditText;
 
     invoke-virtual {p0, p3}, Landroid/widget/EditText;->setHint(Ljava/lang/CharSequence;)V
@@ -818,7 +978,7 @@
 
     if-eq p1, v0, :cond_0
 
-    .line 288
+    .line 363
     invoke-virtual {p0}, Lcom/google/android/material/search/SearchView;->getContext()Landroid/content/Context;
 
     move-result-object v0
@@ -835,7 +995,7 @@
 
     move-result-object p1
 
-    .line 289
+    .line 364
     invoke-virtual {p0, p1}, Lcom/google/android/material/search/SearchView;->addHeaderView(Landroid/view/View;)V
 
     :cond_0
@@ -845,13 +1005,13 @@
 .method private setUpInsetListeners()V
     .locals 0
 
-    .line 415
+    .line 490
     invoke-direct {p0}, Lcom/google/android/material/search/SearchView;->setUpToolbarInsetListener()V
 
-    .line 416
+    .line 491
     invoke-direct {p0}, Lcom/google/android/material/search/SearchView;->setUpDividerInsetListener()V
 
-    .line 417
+    .line 492
     invoke-direct {p0}, Lcom/google/android/material/search/SearchView;->setUpStatusBarSpacerInsetListener()V
 
     return-void
@@ -860,12 +1020,12 @@
 .method private setUpRootView()V
     .locals 1
 
-    .line 261
+    .line 336
     iget-object p0, p0, Lcom/google/android/material/search/SearchView;->rootView:Lcom/google/android/material/internal/ClippableRoundedCornerLayout;
 
-    new-instance v0, Lcom/google/android/material/search/SearchView$$ExternalSyntheticLambda5;
+    new-instance v0, Lcom/google/android/material/search/SearchView$$ExternalSyntheticLambda7;
 
-    invoke-direct {v0}, Lcom/google/android/material/search/SearchView$$ExternalSyntheticLambda5;-><init>()V
+    invoke-direct {v0}, Lcom/google/android/material/search/SearchView$$ExternalSyntheticLambda7;-><init>()V
 
     invoke-virtual {p0, v0}, Lcom/google/android/material/internal/ClippableRoundedCornerLayout;->setOnTouchListener(Landroid/view/View$OnTouchListener;)V
 
@@ -875,7 +1035,7 @@
 .method private setUpStatusBarSpacer(I)V
     .locals 1
 
-    .line 350
+    .line 425
     iget-object v0, p0, Lcom/google/android/material/search/SearchView;->statusBarSpacer:Landroid/view/View;
 
     invoke-virtual {v0}, Landroid/view/View;->getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
@@ -886,7 +1046,7 @@
 
     if-eq v0, p1, :cond_0
 
-    .line 351
+    .line 426
     iget-object v0, p0, Lcom/google/android/material/search/SearchView;->statusBarSpacer:Landroid/view/View;
 
     invoke-virtual {v0}, Landroid/view/View;->getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
@@ -895,7 +1055,7 @@
 
     iput p1, v0, Landroid/view/ViewGroup$LayoutParams;->height:I
 
-    .line 352
+    .line 427
     iget-object p0, p0, Lcom/google/android/material/search/SearchView;->statusBarSpacer:Landroid/view/View;
 
     invoke-virtual {p0}, Landroid/view/View;->requestLayout()V
@@ -907,19 +1067,19 @@
 .method private setUpStatusBarSpacerInsetListener()V
     .locals 2
 
-    .line 436
+    .line 511
     invoke-direct {p0}, Lcom/google/android/material/search/SearchView;->getStatusBarHeight()I
 
     move-result v0
 
     invoke-direct {p0, v0}, Lcom/google/android/material/search/SearchView;->setUpStatusBarSpacer(I)V
 
-    .line 439
+    .line 514
     iget-object v0, p0, Lcom/google/android/material/search/SearchView;->statusBarSpacer:Landroid/view/View;
 
-    new-instance v1, Lcom/google/android/material/search/SearchView$$ExternalSyntheticLambda3;
+    new-instance v1, Lcom/google/android/material/search/SearchView$$ExternalSyntheticLambda4;
 
-    invoke-direct {v1, p0}, Lcom/google/android/material/search/SearchView$$ExternalSyntheticLambda3;-><init>(Lcom/google/android/material/search/SearchView;)V
+    invoke-direct {v1, p0}, Lcom/google/android/material/search/SearchView$$ExternalSyntheticLambda4;-><init>(Lcom/google/android/material/search/SearchView;)V
 
     invoke-static {v0, v1}, Landroidx/core/view/ViewCompat;->setOnApplyWindowInsetsListener(Landroid/view/View;Landroidx/core/view/OnApplyWindowInsetsListener;)V
 
@@ -929,12 +1089,12 @@
 .method private setUpToolbarInsetListener()V
     .locals 2
 
-    .line 421
+    .line 496
     iget-object v0, p0, Lcom/google/android/material/search/SearchView;->toolbar:Lcom/google/android/material/appbar/MaterialToolbar;
 
-    new-instance v1, Lcom/google/android/material/search/SearchView$$ExternalSyntheticLambda2;
+    new-instance v1, Lcom/google/android/material/search/SearchView$$ExternalSyntheticLambda3;
 
-    invoke-direct {v1, p0}, Lcom/google/android/material/search/SearchView$$ExternalSyntheticLambda2;-><init>(Lcom/google/android/material/search/SearchView;)V
+    invoke-direct {v1, p0}, Lcom/google/android/material/search/SearchView$$ExternalSyntheticLambda3;-><init>(Lcom/google/android/material/search/SearchView;)V
 
     invoke-static {v0, v1}, Lcom/google/android/material/internal/ViewUtils;->doOnApplyWindowInsets(Landroid/view/View;Lcom/google/android/material/internal/ViewUtils$OnApplyWindowInsetsListener;)V
 
@@ -946,7 +1106,7 @@
 
     const/4 v0, 0x0
 
-    .line 855
+    .line 964
     :goto_0
     invoke-virtual {p1}, Landroid/view/ViewGroup;->getChildCount()I
 
@@ -954,7 +1114,7 @@
 
     if-ge v0, v1, :cond_4
 
-    .line 856
+    .line 965
     invoke-virtual {p1, v0}, Landroid/view/ViewGroup;->getChildAt(I)Landroid/view/View;
 
     move-result-object v1
@@ -963,7 +1123,7 @@
 
     goto :goto_1
 
-    .line 861
+    .line 970
     :cond_0
     iget-object v2, p0, Lcom/google/android/material/search/SearchView;->rootView:Lcom/google/android/material/internal/ClippableRoundedCornerLayout;
 
@@ -977,7 +1137,7 @@
 
     if-eqz v2, :cond_1
 
-    .line 863
+    .line 972
     check-cast v1, Landroid/view/ViewGroup;
 
     invoke-direct {p0, v1, p2}, Lcom/google/android/material/search/SearchView;->updateChildImportantForAccessibility(Landroid/view/ViewGroup;Z)V
@@ -987,22 +1147,22 @@
     :cond_1
     if-nez p2, :cond_2
 
-    .line 868
+    .line 977
     iget-object v2, p0, Lcom/google/android/material/search/SearchView;->childImportantForAccessibilityMap:Ljava/util/Map;
 
     if-eqz v2, :cond_3
 
-    .line 869
+    .line 978
     invoke-interface {v2, v1}, Ljava/util/Map;->containsKey(Ljava/lang/Object;)Z
 
     move-result v2
 
     if-eqz v2, :cond_3
 
-    .line 871
+    .line 980
     iget-object v2, p0, Lcom/google/android/material/search/SearchView;->childImportantForAccessibilityMap:Ljava/util/Map;
 
-    .line 872
+    .line 981
     invoke-interface {v2, v1}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v2
@@ -1013,12 +1173,12 @@
 
     move-result v2
 
-    .line 871
+    .line 980
     invoke-static {v1, v2}, Landroidx/core/view/ViewCompat;->setImportantForAccessibility(Landroid/view/View;I)V
 
     goto :goto_1
 
-    .line 877
+    .line 986
     :cond_2
     iget-object v2, p0, Lcom/google/android/material/search/SearchView;->childImportantForAccessibilityMap:Ljava/util/Map;
 
@@ -1034,7 +1194,7 @@
 
     const/4 v2, 0x4
 
-    .line 880
+    .line 989
     invoke-static {v1, v2}, Landroidx/core/view/ViewCompat;->setImportantForAccessibility(Landroid/view/View;I)V
 
     :cond_3
@@ -1047,17 +1207,65 @@
     return-void
 .end method
 
+.method private updateListeningForBackCallbacks(Lcom/google/android/material/search/SearchView$TransitionState;)V
+    .locals 1
+
+    .line 824
+    iget-object v0, p0, Lcom/google/android/material/search/SearchView;->searchBar:Lcom/google/android/material/search/SearchBar;
+
+    if-eqz v0, :cond_1
+
+    iget-boolean v0, p0, Lcom/google/android/material/search/SearchView;->backHandlingEnabled:Z
+
+    if-eqz v0, :cond_1
+
+    .line 825
+    sget-object v0, Lcom/google/android/material/search/SearchView$TransitionState;->SHOWN:Lcom/google/android/material/search/SearchView$TransitionState;
+
+    invoke-virtual {p1, v0}, Lcom/google/android/material/search/SearchView$TransitionState;->equals(Ljava/lang/Object;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_0
+
+    .line 826
+    iget-object p0, p0, Lcom/google/android/material/search/SearchView;->backOrchestrator:Lcom/google/android/material/motion/MaterialBackOrchestrator;
+
+    invoke-virtual {p0}, Lcom/google/android/material/motion/MaterialBackOrchestrator;->startListeningForBackCallbacks()V
+
+    goto :goto_0
+
+    .line 827
+    :cond_0
+    sget-object v0, Lcom/google/android/material/search/SearchView$TransitionState;->HIDDEN:Lcom/google/android/material/search/SearchView$TransitionState;
+
+    invoke-virtual {p1, v0}, Lcom/google/android/material/search/SearchView$TransitionState;->equals(Ljava/lang/Object;)Z
+
+    move-result p1
+
+    if-eqz p1, :cond_1
+
+    .line 828
+    iget-object p0, p0, Lcom/google/android/material/search/SearchView;->backOrchestrator:Lcom/google/android/material/motion/MaterialBackOrchestrator;
+
+    invoke-virtual {p0}, Lcom/google/android/material/motion/MaterialBackOrchestrator;->stopListeningForBackCallbacks()V
+
+    :cond_1
+    :goto_0
+    return-void
+.end method
+
 .method private updateNavigationIconIfNeeded()V
     .locals 4
 
-    .line 375
+    .line 450
     iget-object v0, p0, Lcom/google/android/material/search/SearchView;->toolbar:Lcom/google/android/material/appbar/MaterialToolbar;
 
     if-nez v0, :cond_0
 
     return-void
 
-    .line 379
+    .line 454
     :cond_0
     invoke-direct {p0, v0}, Lcom/google/android/material/search/SearchView;->isNavigationIconDrawerArrowDrawable(Landroidx/appcompat/widget/Toolbar;)Z
 
@@ -1067,23 +1275,25 @@
 
     return-void
 
-    .line 383
+    .line 458
     :cond_1
-    sget v0, Lcom/google/android/material/R$drawable;->ic_arrow_back_black_24:I
+    invoke-virtual {p0}, Lcom/google/android/material/search/SearchView;->getDefaultNavigationIconResource()I
 
-    .line 384
+    move-result v0
+
+    .line 459
     iget-object v1, p0, Lcom/google/android/material/search/SearchView;->searchBar:Lcom/google/android/material/search/SearchBar;
 
     if-nez v1, :cond_2
 
-    .line 385
+    .line 460
     iget-object p0, p0, Lcom/google/android/material/search/SearchView;->toolbar:Lcom/google/android/material/appbar/MaterialToolbar;
 
     invoke-virtual {p0, v0}, Lcom/google/android/material/appbar/MaterialToolbar;->setNavigationIcon(I)V
 
     goto :goto_0
 
-    .line 389
+    .line 464
     :cond_2
     invoke-virtual {p0}, Lcom/google/android/material/search/SearchView;->getContext()Landroid/content/Context;
 
@@ -1097,12 +1307,12 @@
 
     move-result-object v0
 
-    .line 388
+    .line 463
     invoke-static {v0}, Landroidx/core/graphics/drawable/DrawableCompat;->wrap(Landroid/graphics/drawable/Drawable;)Landroid/graphics/drawable/Drawable;
 
     move-result-object v0
 
-    .line 390
+    .line 465
     iget-object v1, p0, Lcom/google/android/material/search/SearchView;->toolbar:Lcom/google/android/material/appbar/MaterialToolbar;
 
     invoke-virtual {v1}, Lcom/google/android/material/appbar/MaterialToolbar;->getNavigationIconTint()Ljava/lang/Integer;
@@ -1111,7 +1321,7 @@
 
     if-eqz v1, :cond_3
 
-    .line 391
+    .line 466
     iget-object v1, p0, Lcom/google/android/material/search/SearchView;->toolbar:Lcom/google/android/material/appbar/MaterialToolbar;
 
     invoke-virtual {v1}, Lcom/google/android/material/appbar/MaterialToolbar;->getNavigationIconTint()Ljava/lang/Integer;
@@ -1124,7 +1334,7 @@
 
     invoke-static {v0, v1}, Landroidx/core/graphics/drawable/DrawableCompat;->setTint(Landroid/graphics/drawable/Drawable;I)V
 
-    .line 393
+    .line 468
     :cond_3
     iget-object v1, p0, Lcom/google/android/material/search/SearchView;->toolbar:Lcom/google/android/material/appbar/MaterialToolbar;
 
@@ -1132,17 +1342,17 @@
 
     iget-object v3, p0, Lcom/google/android/material/search/SearchView;->searchBar:Lcom/google/android/material/search/SearchBar;
 
-    .line 394
+    .line 469
     invoke-virtual {v3}, Lcom/google/android/material/search/SearchBar;->getNavigationIcon()Landroid/graphics/drawable/Drawable;
 
     move-result-object v3
 
     invoke-direct {v2, v3, v0}, Lcom/google/android/material/internal/FadeThroughDrawable;-><init>(Landroid/graphics/drawable/Drawable;Landroid/graphics/drawable/Drawable;)V
 
-    .line 393
+    .line 468
     invoke-virtual {v1, v2}, Lcom/google/android/material/appbar/MaterialToolbar;->setNavigationIcon(Landroid/graphics/drawable/Drawable;)V
 
-    .line 395
+    .line 470
     invoke-direct {p0}, Lcom/google/android/material/search/SearchView;->updateNavigationIconProgressIfNeeded()V
 
     :goto_0
@@ -1152,7 +1362,7 @@
 .method private updateNavigationIconProgressIfNeeded()V
     .locals 3
 
-    .line 769
+    .line 878
     iget-object v0, p0, Lcom/google/android/material/search/SearchView;->toolbar:Lcom/google/android/material/appbar/MaterialToolbar;
 
     invoke-static {v0}, Lcom/google/android/material/internal/ToolbarUtils;->getNavigationIconButton(Landroidx/appcompat/widget/Toolbar;)Landroid/widget/ImageButton;
@@ -1163,7 +1373,7 @@
 
     return-void
 
-    .line 774
+    .line 883
     :cond_0
     iget-object p0, p0, Lcom/google/android/material/search/SearchView;->rootView:Lcom/google/android/material/internal/ClippableRoundedCornerLayout;
 
@@ -1180,7 +1390,7 @@
     :cond_1
     const/4 p0, 0x0
 
-    .line 775
+    .line 884
     :goto_0
     invoke-virtual {v0}, Landroid/widget/ImageButton;->getDrawable()Landroid/graphics/drawable/Drawable;
 
@@ -1190,12 +1400,12 @@
 
     move-result-object v0
 
-    .line 776
+    .line 885
     instance-of v1, v0, Landroidx/appcompat/graphics/drawable/DrawerArrowDrawable;
 
     if-eqz v1, :cond_2
 
-    .line 777
+    .line 886
     move-object v1, v0
 
     check-cast v1, Landroidx/appcompat/graphics/drawable/DrawerArrowDrawable;
@@ -1204,13 +1414,13 @@
 
     invoke-virtual {v1, v2}, Landroidx/appcompat/graphics/drawable/DrawerArrowDrawable;->setProgress(F)V
 
-    .line 779
+    .line 888
     :cond_2
     instance-of v1, v0, Lcom/google/android/material/internal/FadeThroughDrawable;
 
     if-eqz v1, :cond_3
 
-    .line 780
+    .line 889
     check-cast v0, Lcom/google/android/material/internal/FadeThroughDrawable;
 
     int-to-float p0, p0
@@ -1226,12 +1436,12 @@
 .method public addHeaderView(Landroid/view/View;)V
     .locals 1
 
-    .line 493
+    .line 578
     iget-object v0, p0, Lcom/google/android/material/search/SearchView;->headerContainer:Landroid/widget/FrameLayout;
 
     invoke-virtual {v0, p1}, Landroid/widget/FrameLayout;->addView(Landroid/view/View;)V
 
-    .line 494
+    .line 579
     iget-object p0, p0, Lcom/google/android/material/search/SearchView;->headerContainer:Landroid/widget/FrameLayout;
 
     const/4 p1, 0x0
@@ -1244,7 +1454,7 @@
 .method public addTransitionListener(Lcom/google/android/material/search/SearchView$TransitionListener;)V
     .locals 0
 
-    .line 575
+    .line 660
     iget-object p0, p0, Lcom/google/android/material/search/SearchView;->transitionListeners:Ljava/util/Set;
 
     invoke-interface {p0, p1}, Ljava/util/Set;->add(Ljava/lang/Object;)Z
@@ -1255,19 +1465,19 @@
 .method public addView(Landroid/view/View;ILandroid/view/ViewGroup$LayoutParams;)V
     .locals 1
 
-    .line 219
+    .line 240
     iget-boolean v0, p0, Lcom/google/android/material/search/SearchView;->layoutInflated:Z
 
     if-eqz v0, :cond_0
 
-    .line 220
+    .line 241
     iget-object p0, p0, Lcom/google/android/material/search/SearchView;->contentContainer:Lcom/google/android/material/internal/TouchObserverFrameLayout;
 
     invoke-virtual {p0, p1, p2, p3}, Lcom/google/android/material/internal/TouchObserverFrameLayout;->addView(Landroid/view/View;ILandroid/view/ViewGroup$LayoutParams;)V
 
     goto :goto_0
 
-    .line 222
+    .line 243
     :cond_0
     invoke-super {p0, p1, p2, p3}, Landroid/widget/FrameLayout;->addView(Landroid/view/View;ILandroid/view/ViewGroup$LayoutParams;)V
 
@@ -1275,15 +1485,38 @@
     return-void
 .end method
 
+.method public cancelBackProgress()V
+    .locals 1
+
+    .line 310
+    invoke-direct {p0}, Lcom/google/android/material/search/SearchView;->isHiddenOrHiding()Z
+
+    move-result v0
+
+    if-nez v0, :cond_0
+
+    iget-object v0, p0, Lcom/google/android/material/search/SearchView;->searchBar:Lcom/google/android/material/search/SearchBar;
+
+    if-eqz v0, :cond_0
+
+    .line 315
+    iget-object p0, p0, Lcom/google/android/material/search/SearchView;->searchViewAnimationHelper:Lcom/google/android/material/search/SearchViewAnimationHelper;
+
+    invoke-virtual {p0}, Lcom/google/android/material/search/SearchViewAnimationHelper;->cancelBackProgress()V
+
+    :cond_0
+    return-void
+.end method
+
 .method public clearFocusAndHideKeyboard()V
     .locals 2
 
-    .line 810
+    .line 919
     iget-object v0, p0, Lcom/google/android/material/search/SearchView;->editText:Landroid/widget/EditText;
 
-    new-instance v1, Lcom/google/android/material/search/SearchView$$ExternalSyntheticLambda8;
+    new-instance v1, Lcom/google/android/material/search/SearchView$$ExternalSyntheticLambda10;
 
-    invoke-direct {v1, p0}, Lcom/google/android/material/search/SearchView$$ExternalSyntheticLambda8;-><init>(Lcom/google/android/material/search/SearchView;)V
+    invoke-direct {v1, p0}, Lcom/google/android/material/search/SearchView$$ExternalSyntheticLambda10;-><init>(Lcom/google/android/material/search/SearchView;)V
 
     invoke-virtual {v0, v1}, Landroid/widget/EditText;->post(Ljava/lang/Runnable;)Z
 
@@ -1293,7 +1526,7 @@
 .method public clearText()V
     .locals 1
 
-    .line 644
+    .line 729
     iget-object p0, p0, Lcom/google/android/material/search/SearchView;->editText:Landroid/widget/EditText;
 
     const-string v0, ""
@@ -1301,6 +1534,19 @@
     invoke-virtual {p0, v0}, Landroid/widget/EditText;->setText(Ljava/lang/CharSequence;)V
 
     return-void
+.end method
+
+.method getBackHelper()Lcom/google/android/material/motion/MaterialMainContainerBackHelper;
+    .locals 0
+
+    .line 320
+    iget-object p0, p0, Lcom/google/android/material/search/SearchView;->searchViewAnimationHelper:Lcom/google/android/material/search/SearchViewAnimationHelper;
+
+    invoke-virtual {p0}, Lcom/google/android/material/search/SearchViewAnimationHelper;->getBackHelper()Lcom/google/android/material/motion/MaterialMainContainerBackHelper;
+
+    move-result-object p0
+
+    return-object p0
 .end method
 
 .method public getBehavior()Landroidx/coordinatorlayout/widget/CoordinatorLayout$Behavior;
@@ -1314,7 +1560,7 @@
         }
     .end annotation
 
-    .line 250
+    .line 271
     new-instance p0, Lcom/google/android/material/search/SearchView$Behavior;
 
     invoke-direct {p0}, Lcom/google/android/material/search/SearchView$Behavior;-><init>()V
@@ -1325,16 +1571,25 @@
 .method public getCurrentTransitionState()Lcom/google/android/material/search/SearchView$TransitionState;
     .locals 0
 
-    .line 705
+    .line 790
     iget-object p0, p0, Lcom/google/android/material/search/SearchView;->currentTransitionState:Lcom/google/android/material/search/SearchView$TransitionState;
 
     return-object p0
 .end method
 
+.method protected getDefaultNavigationIconResource()I
+    .locals 0
+
+    .line 1003
+    sget p0, Lcom/google/android/material/R$drawable;->ic_arrow_back_black_24:I
+
+    return p0
+.end method
+
 .method public getEditText()Landroid/widget/EditText;
     .locals 0
 
-    .line 621
+    .line 706
     iget-object p0, p0, Lcom/google/android/material/search/SearchView;->editText:Landroid/widget/EditText;
 
     return-object p0
@@ -1343,7 +1598,7 @@
 .method public getHint()Ljava/lang/CharSequence;
     .locals 0
 
-    .line 650
+    .line 735
     iget-object p0, p0, Lcom/google/android/material/search/SearchView;->editText:Landroid/widget/EditText;
 
     invoke-virtual {p0}, Landroid/widget/EditText;->getHint()Ljava/lang/CharSequence;
@@ -1356,7 +1611,7 @@
 .method public getSearchPrefix()Landroid/widget/TextView;
     .locals 0
 
-    .line 597
+    .line 682
     iget-object p0, p0, Lcom/google/android/material/search/SearchView;->searchPrefix:Landroid/widget/TextView;
 
     return-object p0
@@ -1365,7 +1620,7 @@
 .method public getSearchPrefixText()Ljava/lang/CharSequence;
     .locals 0
 
-    .line 609
+    .line 694
     iget-object p0, p0, Lcom/google/android/material/search/SearchView;->searchPrefix:Landroid/widget/TextView;
 
     invoke-virtual {p0}, Landroid/widget/TextView;->getText()Ljava/lang/CharSequence;
@@ -1378,7 +1633,7 @@
 .method public getSoftInputMode()I
     .locals 0
 
-    .line 666
+    .line 751
     iget p0, p0, Lcom/google/android/material/search/SearchView;->softInputMode:I
 
     return p0
@@ -1387,7 +1642,7 @@
 .method public getText()Landroid/text/Editable;
     .locals 0
 
-    .line 628
+    .line 713
     iget-object p0, p0, Lcom/google/android/material/search/SearchView;->editText:Landroid/widget/EditText;
 
     invoke-virtual {p0}, Landroid/widget/EditText;->getText()Landroid/text/Editable;
@@ -1400,16 +1655,58 @@
 .method public getToolbar()Landroidx/appcompat/widget/Toolbar;
     .locals 0
 
-    .line 615
+    .line 700
     iget-object p0, p0, Lcom/google/android/material/search/SearchView;->toolbar:Lcom/google/android/material/appbar/MaterialToolbar;
 
     return-object p0
 .end method
 
+.method public handleBackInvoked()V
+    .locals 2
+
+    .line 294
+    invoke-direct {p0}, Lcom/google/android/material/search/SearchView;->isHiddenOrHiding()Z
+
+    move-result v0
+
+    if-eqz v0, :cond_0
+
+    return-void
+
+    .line 298
+    :cond_0
+    iget-object v0, p0, Lcom/google/android/material/search/SearchView;->searchViewAnimationHelper:Lcom/google/android/material/search/SearchViewAnimationHelper;
+
+    invoke-virtual {v0}, Lcom/google/android/material/search/SearchViewAnimationHelper;->onHandleBackInvoked()Landroidx/activity/BackEventCompat;
+
+    move-result-object v0
+
+    .line 299
+    iget-object v1, p0, Lcom/google/android/material/search/SearchView;->searchBar:Lcom/google/android/material/search/SearchBar;
+
+    if-eqz v1, :cond_1
+
+    if-eqz v0, :cond_1
+
+    .line 302
+    iget-object p0, p0, Lcom/google/android/material/search/SearchView;->searchViewAnimationHelper:Lcom/google/android/material/search/SearchViewAnimationHelper;
+
+    invoke-virtual {p0}, Lcom/google/android/material/search/SearchViewAnimationHelper;->finishBackProgress()V
+
+    goto :goto_0
+
+    .line 304
+    :cond_1
+    invoke-virtual {p0}, Lcom/google/android/material/search/SearchView;->hide()V
+
+    :goto_0
+    return-void
+.end method
+
 .method public hide()V
     .locals 2
 
-    .line 749
+    .line 860
     iget-object v0, p0, Lcom/google/android/material/search/SearchView;->currentTransitionState:Lcom/google/android/material/search/SearchView$TransitionState;
 
     sget-object v1, Lcom/google/android/material/search/SearchView$TransitionState;->HIDDEN:Lcom/google/android/material/search/SearchView$TransitionState;
@@ -1424,7 +1721,7 @@
 
     sget-object v1, Lcom/google/android/material/search/SearchView$TransitionState;->HIDING:Lcom/google/android/material/search/SearchView$TransitionState;
 
-    .line 750
+    .line 861
     invoke-virtual {v0, v1}, Lcom/google/android/material/search/SearchView$TransitionState;->equals(Ljava/lang/Object;)Z
 
     move-result v0
@@ -1433,16 +1730,11 @@
 
     goto :goto_0
 
-    .line 753
+    .line 864
     :cond_0
-    iget-object v0, p0, Lcom/google/android/material/search/SearchView;->searchViewAnimationHelper:Lcom/google/android/material/search/SearchViewAnimationHelper;
+    iget-object p0, p0, Lcom/google/android/material/search/SearchView;->searchViewAnimationHelper:Lcom/google/android/material/search/SearchViewAnimationHelper;
 
-    invoke-virtual {v0}, Lcom/google/android/material/search/SearchViewAnimationHelper;->hide()V
-
-    const/4 v0, 0x0
-
-    .line 754
-    invoke-virtual {p0, v0}, Lcom/google/android/material/search/SearchView;->setModalForAccessibility(Z)V
+    invoke-virtual {p0}, Lcom/google/android/material/search/SearchViewAnimationHelper;->hide()Landroid/animation/AnimatorSet;
 
     :cond_1
     :goto_0
@@ -1452,7 +1744,7 @@
 .method public inflateMenu(I)V
     .locals 0
 
-    .line 585
+    .line 670
     iget-object p0, p0, Lcom/google/android/material/search/SearchView;->toolbar:Lcom/google/android/material/appbar/MaterialToolbar;
 
     invoke-virtual {p0, p1}, Lcom/google/android/material/appbar/MaterialToolbar;->inflateMenu(I)V
@@ -1463,7 +1755,7 @@
 .method isAdjustNothingSoftInputMode()Z
     .locals 1
 
-    .line 821
+    .line 930
     iget p0, p0, Lcom/google/android/material/search/SearchView;->softInputMode:I
 
     const/16 v0, 0x30
@@ -1484,7 +1776,7 @@
 .method public isAnimatedNavigationIcon()Z
     .locals 0
 
-    .line 524
+    .line 609
     iget-boolean p0, p0, Lcom/google/android/material/search/SearchView;->animatedNavigationIcon:Z
 
     return p0
@@ -1493,7 +1785,7 @@
 .method public isAutoShowKeyboard()Z
     .locals 0
 
-    .line 550
+    .line 635
     iget-boolean p0, p0, Lcom/google/android/material/search/SearchView;->autoShowKeyboard:Z
 
     return p0
@@ -1502,7 +1794,7 @@
 .method public isMenuItemsAnimated()Z
     .locals 0
 
-    .line 540
+    .line 625
     iget-boolean p0, p0, Lcom/google/android/material/search/SearchView;->animatedMenuItems:Z
 
     return p0
@@ -1511,7 +1803,7 @@
 .method public isSetupWithSearchBar()Z
     .locals 0
 
-    .line 466
+    .line 541
     iget-object p0, p0, Lcom/google/android/material/search/SearchView;->searchBar:Lcom/google/android/material/search/SearchBar;
 
     if-eqz p0, :cond_0
@@ -1530,7 +1822,7 @@
 .method public isShowing()Z
     .locals 2
 
-    .line 723
+    .line 835
     iget-object v0, p0, Lcom/google/android/material/search/SearchView;->currentTransitionState:Lcom/google/android/material/search/SearchView$TransitionState;
 
     sget-object v1, Lcom/google/android/material/search/SearchView$TransitionState;->SHOWN:Lcom/google/android/material/search/SearchView$TransitionState;
@@ -1545,7 +1837,7 @@
 
     sget-object v0, Lcom/google/android/material/search/SearchView$TransitionState;->SHOWING:Lcom/google/android/material/search/SearchView$TransitionState;
 
-    .line 724
+    .line 836
     invoke-virtual {p0, v0}, Lcom/google/android/material/search/SearchView$TransitionState;->equals(Ljava/lang/Object;)Z
 
     move-result p0
@@ -1570,7 +1862,7 @@
 .method public isUseWindowInsetsController()Z
     .locals 0
 
-    .line 570
+    .line 655
     iget-boolean p0, p0, Lcom/google/android/material/search/SearchView;->useWindowInsetsController:Z
 
     return p0
@@ -1579,20 +1871,20 @@
 .method synthetic lambda$clearFocusAndHideKeyboard$9$com-google-android-material-search-SearchView()V
     .locals 1
 
-    .line 812
+    .line 921
     iget-object v0, p0, Lcom/google/android/material/search/SearchView;->editText:Landroid/widget/EditText;
 
     invoke-virtual {v0}, Landroid/widget/EditText;->clearFocus()V
 
-    .line 813
+    .line 922
     iget-object v0, p0, Lcom/google/android/material/search/SearchView;->searchBar:Lcom/google/android/material/search/SearchBar;
 
     if-eqz v0, :cond_0
 
-    .line 814
+    .line 923
     invoke-virtual {v0}, Lcom/google/android/material/search/SearchBar;->requestFocus()Z
 
-    .line 816
+    .line 925
     :cond_0
     iget-object v0, p0, Lcom/google/android/material/search/SearchView;->editText:Landroid/widget/EditText;
 
@@ -1606,7 +1898,7 @@
 .method synthetic lambda$requestFocusAndShowKeyboard$8$com-google-android-material-search-SearchView()V
     .locals 2
 
-    .line 799
+    .line 908
     iget-object v0, p0, Lcom/google/android/material/search/SearchView;->editText:Landroid/widget/EditText;
 
     invoke-virtual {v0}, Landroid/widget/EditText;->requestFocus()Z
@@ -1615,14 +1907,14 @@
 
     if-eqz v0, :cond_0
 
-    .line 801
+    .line 910
     iget-object v0, p0, Lcom/google/android/material/search/SearchView;->editText:Landroid/widget/EditText;
 
     const/16 v1, 0x8
 
     invoke-virtual {v0, v1}, Landroid/widget/EditText;->sendAccessibilityEvent(I)V
 
-    .line 803
+    .line 912
     :cond_0
     iget-object v0, p0, Lcom/google/android/material/search/SearchView;->editText:Landroid/widget/EditText;
 
@@ -1636,7 +1928,7 @@
 .method synthetic lambda$setUpBackButton$1$com-google-android-material-search-SearchView(Landroid/view/View;)V
     .locals 0
 
-    .line 307
+    .line 382
     invoke-virtual {p0}, Lcom/google/android/material/search/SearchView;->hide()V
 
     return-void
@@ -1645,10 +1937,10 @@
 .method synthetic lambda$setUpClearButton$2$com-google-android-material-search-SearchView(Landroid/view/View;)V
     .locals 0
 
-    .line 319
+    .line 394
     invoke-virtual {p0}, Lcom/google/android/material/search/SearchView;->clearText()V
 
-    .line 320
+    .line 395
     invoke-virtual {p0}, Lcom/google/android/material/search/SearchView;->requestFocusAndShowKeyboardIfNeeded()V
 
     return-void
@@ -1657,14 +1949,14 @@
 .method synthetic lambda$setUpContentOnTouchListener$3$com-google-android-material-search-SearchView(Landroid/view/View;Landroid/view/MotionEvent;)Z
     .locals 0
 
-    .line 342
+    .line 417
     invoke-virtual {p0}, Lcom/google/android/material/search/SearchView;->isAdjustNothingSoftInputMode()Z
 
     move-result p1
 
     if-eqz p1, :cond_0
 
-    .line 343
+    .line 418
     invoke-virtual {p0}, Lcom/google/android/material/search/SearchView;->clearFocusAndHideKeyboard()V
 
     :cond_0
@@ -1676,15 +1968,15 @@
 .method synthetic lambda$setUpStatusBarSpacerInsetListener$5$com-google-android-material-search-SearchView(Landroid/view/View;Landroidx/core/view/WindowInsetsCompat;)Landroidx/core/view/WindowInsetsCompat;
     .locals 1
 
-    .line 442
+    .line 517
     invoke-virtual {p2}, Landroidx/core/view/WindowInsetsCompat;->getSystemWindowInsetTop()I
 
     move-result p1
 
-    .line 443
+    .line 518
     invoke-direct {p0, p1}, Lcom/google/android/material/search/SearchView;->setUpStatusBarSpacer(I)V
 
-    .line 444
+    .line 519
     iget-boolean v0, p0, Lcom/google/android/material/search/SearchView;->statusBarSpacerEnabledOverride:Z
 
     if-nez v0, :cond_1
@@ -1698,7 +1990,7 @@
     :cond_0
     const/4 p1, 0x0
 
-    .line 445
+    .line 520
     :goto_0
     invoke-direct {p0, p1}, Lcom/google/android/material/search/SearchView;->setStatusBarSpacerEnabledInternal(Z)V
 
@@ -1709,7 +2001,7 @@
 .method synthetic lambda$setUpToolbarInsetListener$4$com-google-android-material-search-SearchView(Landroid/view/View;Landroidx/core/view/WindowInsetsCompat;Lcom/google/android/material/internal/ViewUtils$RelativePadding;)Landroidx/core/view/WindowInsetsCompat;
     .locals 3
 
-    .line 424
+    .line 499
     iget-object p1, p0, Lcom/google/android/material/search/SearchView;->toolbar:Lcom/google/android/material/appbar/MaterialToolbar;
 
     invoke-static {p1}, Lcom/google/android/material/internal/ViewUtils;->isLayoutRtl(Landroid/view/View;)Z
@@ -1718,7 +2010,7 @@
 
     if-eqz p1, :cond_0
 
-    .line 425
+    .line 500
     iget v0, p3, Lcom/google/android/material/internal/ViewUtils$RelativePadding;->end:I
 
     goto :goto_0
@@ -1729,7 +2021,7 @@
     :goto_0
     if-eqz p1, :cond_1
 
-    .line 426
+    .line 501
     iget p1, p3, Lcom/google/android/material/internal/ViewUtils$RelativePadding;->start:I
 
     goto :goto_1
@@ -1737,11 +2029,11 @@
     :cond_1
     iget p1, p3, Lcom/google/android/material/internal/ViewUtils$RelativePadding;->end:I
 
-    .line 427
+    .line 502
     :goto_1
     iget-object p0, p0, Lcom/google/android/material/search/SearchView;->toolbar:Lcom/google/android/material/appbar/MaterialToolbar;
 
-    .line 428
+    .line 503
     invoke-virtual {p2}, Landroidx/core/view/WindowInsetsCompat;->getSystemWindowInsetLeft()I
 
     move-result v1
@@ -1750,7 +2042,7 @@
 
     iget v1, p3, Lcom/google/android/material/internal/ViewUtils$RelativePadding;->top:I
 
-    .line 429
+    .line 504
     invoke-virtual {p2}, Landroidx/core/view/WindowInsetsCompat;->getSystemWindowInsetRight()I
 
     move-result v2
@@ -1759,7 +2051,7 @@
 
     iget p3, p3, Lcom/google/android/material/internal/ViewUtils$RelativePadding;->bottom:I
 
-    .line 427
+    .line 502
     invoke-virtual {p0, v0, v1, p1, p3}, Lcom/google/android/material/appbar/MaterialToolbar;->setPadding(IIII)V
 
     return-object p2
@@ -1768,7 +2060,7 @@
 .method synthetic lambda$setupWithSearchBar$7$com-google-android-material-search-SearchView(Landroid/view/View;)V
     .locals 0
 
-    .line 479
+    .line 554
     invoke-virtual {p0}, Lcom/google/android/material/search/SearchView;->show()V
 
     return-void
@@ -1777,10 +2069,10 @@
 .method protected onAttachedToWindow()V
     .locals 0
 
-    .line 242
+    .line 263
     invoke-super {p0}, Landroid/widget/FrameLayout;->onAttachedToWindow()V
 
-    .line 244
+    .line 265
     invoke-static {p0}, Lcom/google/android/material/shape/MaterialShapeUtils;->setParentAbsoluteElevation(Landroid/view/View;)V
 
     return-void
@@ -1789,10 +2081,10 @@
 .method protected onFinishInflate()V
     .locals 0
 
-    .line 228
+    .line 249
     invoke-super {p0}, Landroid/widget/FrameLayout;->onFinishInflate()V
 
-    .line 230
+    .line 251
     invoke-virtual {p0}, Lcom/google/android/material/search/SearchView;->updateSoftInputMode()V
 
     return-void
@@ -1801,33 +2093,33 @@
 .method protected onRestoreInstanceState(Landroid/os/Parcelable;)V
     .locals 1
 
-    .line 935
+    .line 1055
     instance-of v0, p1, Lcom/google/android/material/search/SearchView$SavedState;
 
     if-nez v0, :cond_0
 
-    .line 936
+    .line 1056
     invoke-super {p0, p1}, Landroid/widget/FrameLayout;->onRestoreInstanceState(Landroid/os/Parcelable;)V
 
     return-void
 
-    .line 940
+    .line 1060
     :cond_0
     check-cast p1, Lcom/google/android/material/search/SearchView$SavedState;
 
-    .line 941
+    .line 1061
     invoke-virtual {p1}, Lcom/google/android/material/search/SearchView$SavedState;->getSuperState()Landroid/os/Parcelable;
 
     move-result-object v0
 
     invoke-super {p0, v0}, Landroid/widget/FrameLayout;->onRestoreInstanceState(Landroid/os/Parcelable;)V
 
-    .line 942
+    .line 1062
     iget-object v0, p1, Lcom/google/android/material/search/SearchView$SavedState;->text:Ljava/lang/String;
 
     invoke-virtual {p0, v0}, Lcom/google/android/material/search/SearchView;->setText(Ljava/lang/CharSequence;)V
 
-    .line 943
+    .line 1063
     iget p1, p1, Lcom/google/android/material/search/SearchView$SavedState;->visibility:I
 
     if-nez p1, :cond_1
@@ -1848,7 +2140,7 @@
 .method protected onSaveInstanceState()Landroid/os/Parcelable;
     .locals 2
 
-    .line 926
+    .line 1046
     new-instance v0, Lcom/google/android/material/search/SearchView$SavedState;
 
     invoke-super {p0}, Landroid/widget/FrameLayout;->onSaveInstanceState()Landroid/os/Parcelable;
@@ -1857,7 +2149,7 @@
 
     invoke-direct {v0, v1}, Lcom/google/android/material/search/SearchView$SavedState;-><init>(Landroid/os/Parcelable;)V
 
-    .line 927
+    .line 1047
     invoke-virtual {p0}, Lcom/google/android/material/search/SearchView;->getText()Landroid/text/Editable;
 
     move-result-object v1
@@ -1868,7 +2160,7 @@
 
     goto :goto_0
 
-    .line 928
+    .line 1048
     :cond_0
     invoke-interface {v1}, Ljava/lang/CharSequence;->toString()Ljava/lang/String;
 
@@ -1877,7 +2169,7 @@
     :goto_0
     iput-object v1, v0, Lcom/google/android/material/search/SearchView$SavedState;->text:Ljava/lang/String;
 
-    .line 929
+    .line 1049
     iget-object p0, p0, Lcom/google/android/material/search/SearchView;->rootView:Lcom/google/android/material/internal/ClippableRoundedCornerLayout;
 
     invoke-virtual {p0}, Lcom/google/android/material/internal/ClippableRoundedCornerLayout;->getVisibility()I
@@ -1892,12 +2184,12 @@
 .method public removeAllHeaderViews()V
     .locals 1
 
-    .line 507
+    .line 592
     iget-object v0, p0, Lcom/google/android/material/search/SearchView;->headerContainer:Landroid/widget/FrameLayout;
 
     invoke-virtual {v0}, Landroid/widget/FrameLayout;->removeAllViews()V
 
-    .line 508
+    .line 593
     iget-object p0, p0, Lcom/google/android/material/search/SearchView;->headerContainer:Landroid/widget/FrameLayout;
 
     const/16 v0, 0x8
@@ -1910,12 +2202,12 @@
 .method public removeHeaderView(Landroid/view/View;)V
     .locals 1
 
-    .line 499
+    .line 584
     iget-object v0, p0, Lcom/google/android/material/search/SearchView;->headerContainer:Landroid/widget/FrameLayout;
 
     invoke-virtual {v0, p1}, Landroid/widget/FrameLayout;->removeView(Landroid/view/View;)V
 
-    .line 500
+    .line 585
     iget-object p1, p0, Lcom/google/android/material/search/SearchView;->headerContainer:Landroid/widget/FrameLayout;
 
     invoke-virtual {p1}, Landroid/widget/FrameLayout;->getChildCount()I
@@ -1924,7 +2216,7 @@
 
     if-nez p1, :cond_0
 
-    .line 501
+    .line 586
     iget-object p0, p0, Lcom/google/android/material/search/SearchView;->headerContainer:Landroid/widget/FrameLayout;
 
     const/16 p1, 0x8
@@ -1938,7 +2230,7 @@
 .method public removeTransitionListener(Lcom/google/android/material/search/SearchView$TransitionListener;)V
     .locals 0
 
-    .line 580
+    .line 665
     iget-object p0, p0, Lcom/google/android/material/search/SearchView;->transitionListeners:Ljava/util/Set;
 
     invoke-interface {p0, p1}, Ljava/util/Set;->remove(Ljava/lang/Object;)Z
@@ -1949,12 +2241,12 @@
 .method public requestFocusAndShowKeyboard()V
     .locals 4
 
-    .line 797
+    .line 906
     iget-object v0, p0, Lcom/google/android/material/search/SearchView;->editText:Landroid/widget/EditText;
 
-    new-instance v1, Lcom/google/android/material/search/SearchView$$ExternalSyntheticLambda1;
+    new-instance v1, Lcom/google/android/material/search/SearchView$$ExternalSyntheticLambda2;
 
-    invoke-direct {v1, p0}, Lcom/google/android/material/search/SearchView$$ExternalSyntheticLambda1;-><init>(Lcom/google/android/material/search/SearchView;)V
+    invoke-direct {v1, p0}, Lcom/google/android/material/search/SearchView$$ExternalSyntheticLambda2;-><init>(Lcom/google/android/material/search/SearchView;)V
 
     const-wide/16 v2, 0x64
 
@@ -1966,12 +2258,12 @@
 .method requestFocusAndShowKeyboardIfNeeded()V
     .locals 1
 
-    .line 789
+    .line 898
     iget-boolean v0, p0, Lcom/google/android/material/search/SearchView;->autoShowKeyboard:Z
 
     if-eqz v0, :cond_0
 
-    .line 790
+    .line 899
     invoke-virtual {p0}, Lcom/google/android/material/search/SearchView;->requestFocusAndShowKeyboard()V
 
     :cond_0
@@ -1981,7 +2273,7 @@
 .method public setAnimatedNavigationIcon(Z)V
     .locals 0
 
-    .line 516
+    .line 601
     iput-boolean p1, p0, Lcom/google/android/material/search/SearchView;->animatedNavigationIcon:Z
 
     return-void
@@ -1990,7 +2282,7 @@
 .method public setAutoShowKeyboard(Z)V
     .locals 0
 
-    .line 545
+    .line 630
     iput-boolean p1, p0, Lcom/google/android/material/search/SearchView;->autoShowKeyboard:Z
 
     return-void
@@ -1999,10 +2291,10 @@
 .method public setElevation(F)V
     .locals 0
 
-    .line 236
+    .line 257
     invoke-super {p0, p1}, Landroid/widget/FrameLayout;->setElevation(F)V
 
-    .line 237
+    .line 258
     invoke-direct {p0, p1}, Lcom/google/android/material/search/SearchView;->setUpBackgroundViewElevationOverlay(F)V
 
     return-void
@@ -2011,7 +2303,7 @@
 .method public setHint(I)V
     .locals 0
 
-    .line 660
+    .line 745
     iget-object p0, p0, Lcom/google/android/material/search/SearchView;->editText:Landroid/widget/EditText;
 
     invoke-virtual {p0, p1}, Landroid/widget/EditText;->setHint(I)V
@@ -2022,7 +2314,7 @@
 .method public setHint(Ljava/lang/CharSequence;)V
     .locals 0
 
-    .line 655
+    .line 740
     iget-object p0, p0, Lcom/google/android/material/search/SearchView;->editText:Landroid/widget/EditText;
 
     invoke-virtual {p0, p1}, Landroid/widget/EditText;->setHint(Ljava/lang/CharSequence;)V
@@ -2033,7 +2325,7 @@
 .method public setMenuItemsAnimated(Z)V
     .locals 0
 
-    .line 532
+    .line 617
     iput-boolean p1, p0, Lcom/google/android/material/search/SearchView;->animatedMenuItems:Z
 
     return-void
@@ -2042,7 +2334,7 @@
 .method public setModalForAccessibility(Z)V
     .locals 3
 
-    .line 829
+    .line 938
     invoke-virtual {p0}, Lcom/google/android/material/search/SearchView;->getRootView()Landroid/view/View;
 
     move-result-object v0
@@ -2051,7 +2343,7 @@
 
     if-eqz p1, :cond_0
 
-    .line 832
+    .line 941
     new-instance v1, Ljava/util/HashMap;
 
     invoke-virtual {v0}, Landroid/view/ViewGroup;->getChildCount()I
@@ -2062,7 +2354,7 @@
 
     iput-object v1, p0, Lcom/google/android/material/search/SearchView;->childImportantForAccessibilityMap:Ljava/util/Map;
 
-    .line 834
+    .line 943
     :cond_0
     invoke-direct {p0, v0, p1}, Lcom/google/android/material/search/SearchView;->updateChildImportantForAccessibility(Landroid/view/ViewGroup;Z)V
 
@@ -2070,7 +2362,7 @@
 
     const/4 p1, 0x0
 
-    .line 838
+    .line 947
     iput-object p1, p0, Lcom/google/android/material/search/SearchView;->childImportantForAccessibilityMap:Ljava/util/Map;
 
     :cond_1
@@ -2080,7 +2372,7 @@
 .method public setOnMenuItemClickListener(Landroidx/appcompat/widget/Toolbar$OnMenuItemClickListener;)V
     .locals 0
 
-    .line 591
+    .line 676
     iget-object p0, p0, Lcom/google/android/material/search/SearchView;->toolbar:Lcom/google/android/material/appbar/MaterialToolbar;
 
     invoke-virtual {p0, p1}, Lcom/google/android/material/appbar/MaterialToolbar;->setOnMenuItemClickListener(Landroidx/appcompat/widget/Toolbar$OnMenuItemClickListener;)V
@@ -2091,12 +2383,12 @@
 .method public setSearchPrefixText(Ljava/lang/CharSequence;)V
     .locals 1
 
-    .line 602
+    .line 687
     iget-object v0, p0, Lcom/google/android/material/search/SearchView;->searchPrefix:Landroid/widget/TextView;
 
     invoke-virtual {v0, p1}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
-    .line 603
+    .line 688
     iget-object p0, p0, Lcom/google/android/material/search/SearchView;->searchPrefix:Landroid/widget/TextView;
 
     invoke-static {p1}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
@@ -2123,10 +2415,10 @@
 
     const/4 v0, 0x1
 
-    .line 694
+    .line 779
     iput-boolean v0, p0, Lcom/google/android/material/search/SearchView;->statusBarSpacerEnabledOverride:Z
 
-    .line 695
+    .line 780
     invoke-direct {p0, p1}, Lcom/google/android/material/search/SearchView;->setStatusBarSpacerEnabledInternal(Z)V
 
     return-void
@@ -2135,7 +2427,7 @@
 .method public setText(I)V
     .locals 0
 
-    .line 639
+    .line 724
     iget-object p0, p0, Lcom/google/android/material/search/SearchView;->editText:Landroid/widget/EditText;
 
     invoke-virtual {p0, p1}, Landroid/widget/EditText;->setText(I)V
@@ -2146,7 +2438,7 @@
 .method public setText(Ljava/lang/CharSequence;)V
     .locals 0
 
-    .line 634
+    .line 719
     iget-object p0, p0, Lcom/google/android/material/search/SearchView;->editText:Landroid/widget/EditText;
 
     invoke-virtual {p0, p1}, Landroid/widget/EditText;->setText(Ljava/lang/CharSequence;)V
@@ -2157,7 +2449,7 @@
 .method public setToolbarTouchscreenBlocksFocus(Z)V
     .locals 0
 
-    .line 849
+    .line 958
     iget-object p0, p0, Lcom/google/android/material/search/SearchView;->toolbar:Lcom/google/android/material/appbar/MaterialToolbar;
 
     invoke-virtual {p0, p1}, Lcom/google/android/material/appbar/MaterialToolbar;->setTouchscreenBlocksFocus(Z)V
@@ -2166,125 +2458,88 @@
 .end method
 
 .method setTransitionState(Lcom/google/android/material/search/SearchView$TransitionState;)V
-    .locals 3
+    .locals 1
 
-    .line 709
-    iget-object v0, p0, Lcom/google/android/material/search/SearchView;->currentTransitionState:Lcom/google/android/material/search/SearchView$TransitionState;
+    const/4 v0, 0x1
 
-    invoke-virtual {v0, p1}, Lcom/google/android/material/search/SearchView$TransitionState;->equals(Ljava/lang/Object;)Z
+    .line 794
+    invoke-direct {p0, p1, v0}, Lcom/google/android/material/search/SearchView;->setTransitionState(Lcom/google/android/material/search/SearchView$TransitionState;Z)V
 
-    move-result v0
-
-    if-eqz v0, :cond_0
-
-    return-void
-
-    .line 713
-    :cond_0
-    iget-object v0, p0, Lcom/google/android/material/search/SearchView;->currentTransitionState:Lcom/google/android/material/search/SearchView$TransitionState;
-
-    .line 714
-    iput-object p1, p0, Lcom/google/android/material/search/SearchView;->currentTransitionState:Lcom/google/android/material/search/SearchView$TransitionState;
-
-    .line 715
-    new-instance v1, Ljava/util/LinkedHashSet;
-
-    iget-object v2, p0, Lcom/google/android/material/search/SearchView;->transitionListeners:Ljava/util/Set;
-
-    invoke-direct {v1, v2}, Ljava/util/LinkedHashSet;-><init>(Ljava/util/Collection;)V
-
-    .line 716
-    invoke-interface {v1}, Ljava/util/Set;->iterator()Ljava/util/Iterator;
-
-    move-result-object v1
-
-    :goto_0
-    invoke-interface {v1}, Ljava/util/Iterator;->hasNext()Z
-
-    move-result v2
-
-    if-eqz v2, :cond_1
-
-    invoke-interface {v1}, Ljava/util/Iterator;->next()Ljava/lang/Object;
-
-    move-result-object v2
-
-    check-cast v2, Lcom/google/android/material/search/SearchView$TransitionListener;
-
-    .line 717
-    invoke-interface {v2, p0, v0, p1}, Lcom/google/android/material/search/SearchView$TransitionListener;->onStateChanged(Lcom/google/android/material/search/SearchView;Lcom/google/android/material/search/SearchView$TransitionState;Lcom/google/android/material/search/SearchView$TransitionState;)V
-
-    goto :goto_0
-
-    :cond_1
     return-void
 .end method
 
 .method public setUseWindowInsetsController(Z)V
     .locals 0
 
-    .line 560
+    .line 645
     iput-boolean p1, p0, Lcom/google/android/material/search/SearchView;->useWindowInsetsController:Z
 
     return-void
 .end method
 
 .method public setVisible(Z)V
-    .locals 3
+    .locals 5
 
-    .line 759
+    .line 869
     iget-object v0, p0, Lcom/google/android/material/search/SearchView;->rootView:Lcom/google/android/material/internal/ClippableRoundedCornerLayout;
 
     invoke-virtual {v0}, Lcom/google/android/material/internal/ClippableRoundedCornerLayout;->getVisibility()I
 
     move-result v0
 
-    const/4 v1, 0x0
+    const/4 v1, 0x1
+
+    const/4 v2, 0x0
 
     if-nez v0, :cond_0
 
-    const/4 v0, 0x1
+    move v0, v1
 
     goto :goto_0
 
     :cond_0
-    move v0, v1
+    move v0, v2
 
-    .line 760
+    .line 870
     :goto_0
-    iget-object v2, p0, Lcom/google/android/material/search/SearchView;->rootView:Lcom/google/android/material/internal/ClippableRoundedCornerLayout;
+    iget-object v3, p0, Lcom/google/android/material/search/SearchView;->rootView:Lcom/google/android/material/internal/ClippableRoundedCornerLayout;
 
     if-eqz p1, :cond_1
+
+    move v4, v2
 
     goto :goto_1
 
     :cond_1
-    const/16 v1, 0x8
+    const/16 v4, 0x8
 
     :goto_1
-    invoke-virtual {v2, v1}, Lcom/google/android/material/internal/ClippableRoundedCornerLayout;->setVisibility(I)V
+    invoke-virtual {v3, v4}, Lcom/google/android/material/internal/ClippableRoundedCornerLayout;->setVisibility(I)V
 
-    .line 761
+    .line 871
     invoke-direct {p0}, Lcom/google/android/material/search/SearchView;->updateNavigationIconProgressIfNeeded()V
 
-    if-eq v0, p1, :cond_2
+    if-eqz p1, :cond_2
 
-    .line 763
-    invoke-virtual {p0, p1}, Lcom/google/android/material/search/SearchView;->setModalForAccessibility(Z)V
-
-    :cond_2
-    if-eqz p1, :cond_3
-
-    .line 765
-    sget-object p1, Lcom/google/android/material/search/SearchView$TransitionState;->SHOWN:Lcom/google/android/material/search/SearchView$TransitionState;
+    .line 873
+    sget-object v3, Lcom/google/android/material/search/SearchView$TransitionState;->SHOWN:Lcom/google/android/material/search/SearchView$TransitionState;
 
     goto :goto_2
 
-    :cond_3
-    sget-object p1, Lcom/google/android/material/search/SearchView$TransitionState;->HIDDEN:Lcom/google/android/material/search/SearchView$TransitionState;
+    :cond_2
+    sget-object v3, Lcom/google/android/material/search/SearchView$TransitionState;->HIDDEN:Lcom/google/android/material/search/SearchView$TransitionState;
 
     :goto_2
-    invoke-virtual {p0, p1}, Lcom/google/android/material/search/SearchView;->setTransitionState(Lcom/google/android/material/search/SearchView$TransitionState;)V
+    if-eq v0, p1, :cond_3
+
+    goto :goto_3
+
+    :cond_3
+    move v1, v2
+
+    .line 872
+    :goto_3
+    invoke-direct {p0, v3, v1}, Lcom/google/android/material/search/SearchView;->setTransitionState(Lcom/google/android/material/search/SearchView$TransitionState;Z)V
 
     return-void
 .end method
@@ -2292,29 +2547,54 @@
 .method public setupWithSearchBar(Lcom/google/android/material/search/SearchBar;)V
     .locals 1
 
-    .line 476
+    .line 551
     iput-object p1, p0, Lcom/google/android/material/search/SearchView;->searchBar:Lcom/google/android/material/search/SearchBar;
 
-    .line 477
+    .line 552
     iget-object v0, p0, Lcom/google/android/material/search/SearchView;->searchViewAnimationHelper:Lcom/google/android/material/search/SearchViewAnimationHelper;
 
     invoke-virtual {v0, p1}, Lcom/google/android/material/search/SearchViewAnimationHelper;->setSearchBar(Lcom/google/android/material/search/SearchBar;)V
 
     if-eqz p1, :cond_0
 
-    .line 479
-    new-instance v0, Lcom/google/android/material/search/SearchView$$ExternalSyntheticLambda4;
+    .line 554
+    new-instance v0, Lcom/google/android/material/search/SearchView$$ExternalSyntheticLambda5;
 
-    invoke-direct {v0, p0}, Lcom/google/android/material/search/SearchView$$ExternalSyntheticLambda4;-><init>(Lcom/google/android/material/search/SearchView;)V
+    invoke-direct {v0, p0}, Lcom/google/android/material/search/SearchView$$ExternalSyntheticLambda5;-><init>(Lcom/google/android/material/search/SearchView;)V
 
     invoke-virtual {p1, v0}, Lcom/google/android/material/search/SearchBar;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
-    .line 481
+    .line 557
+    :try_start_0
+    new-instance v0, Lcom/google/android/material/search/SearchView$$ExternalSyntheticLambda6;
+
+    invoke-direct {v0, p0}, Lcom/google/android/material/search/SearchView$$ExternalSyntheticLambda6;-><init>(Lcom/google/android/material/search/SearchView;)V
+
+    invoke-virtual {p1, v0}, Lcom/google/android/material/search/SearchBar;->setHandwritingDelegatorCallback(Ljava/lang/Runnable;)V
+
+    .line 558
+    iget-object p1, p0, Lcom/google/android/material/search/SearchView;->editText:Landroid/widget/EditText;
+
+    const/4 v0, 0x1
+
+    invoke-virtual {p1, v0}, Landroid/widget/EditText;->setIsHandwritingDelegate(Z)V
+    :try_end_0
+    .catch Ljava/lang/LinkageError; {:try_start_0 .. :try_end_0} :catch_0
+
+    .line 565
+    :catch_0
     :cond_0
     invoke-direct {p0}, Lcom/google/android/material/search/SearchView;->updateNavigationIconIfNeeded()V
 
-    .line 482
+    .line 566
     invoke-direct {p0}, Lcom/google/android/material/search/SearchView;->setUpBackgroundViewElevationOverlay()V
+
+    .line 567
+    invoke-virtual {p0}, Lcom/google/android/material/search/SearchView;->getCurrentTransitionState()Lcom/google/android/material/search/SearchView$TransitionState;
+
+    move-result-object p1
+
+    invoke-direct {p0, p1}, Lcom/google/android/material/search/SearchView;->updateListeningForBackCallbacks(Lcom/google/android/material/search/SearchView$TransitionState;)V
 
     return-void
 .end method
@@ -2322,7 +2602,7 @@
 .method public show()V
     .locals 2
 
-    .line 734
+    .line 846
     iget-object v0, p0, Lcom/google/android/material/search/SearchView;->currentTransitionState:Lcom/google/android/material/search/SearchView$TransitionState;
 
     sget-object v1, Lcom/google/android/material/search/SearchView$TransitionState;->SHOWN:Lcom/google/android/material/search/SearchView$TransitionState;
@@ -2337,7 +2617,7 @@
 
     sget-object v1, Lcom/google/android/material/search/SearchView$TransitionState;->SHOWING:Lcom/google/android/material/search/SearchView$TransitionState;
 
-    .line 735
+    .line 847
     invoke-virtual {v0, v1}, Lcom/google/android/material/search/SearchView$TransitionState;->equals(Ljava/lang/Object;)Z
 
     move-result v0
@@ -2346,33 +2626,78 @@
 
     goto :goto_0
 
-    .line 738
+    .line 850
     :cond_0
-    iget-object v0, p0, Lcom/google/android/material/search/SearchView;->searchViewAnimationHelper:Lcom/google/android/material/search/SearchViewAnimationHelper;
+    iget-object p0, p0, Lcom/google/android/material/search/SearchView;->searchViewAnimationHelper:Lcom/google/android/material/search/SearchViewAnimationHelper;
 
-    invoke-virtual {v0}, Lcom/google/android/material/search/SearchViewAnimationHelper;->show()V
-
-    const/4 v0, 0x1
-
-    .line 739
-    invoke-virtual {p0, v0}, Lcom/google/android/material/search/SearchView;->setModalForAccessibility(Z)V
+    invoke-virtual {p0}, Lcom/google/android/material/search/SearchViewAnimationHelper;->show()V
 
     :cond_1
     :goto_0
     return-void
 .end method
 
+.method public startBackProgress(Landroidx/activity/BackEventCompat;)V
+    .locals 1
+
+    .line 276
+    invoke-direct {p0}, Lcom/google/android/material/search/SearchView;->isHiddenOrHiding()Z
+
+    move-result v0
+
+    if-nez v0, :cond_1
+
+    iget-object v0, p0, Lcom/google/android/material/search/SearchView;->searchBar:Lcom/google/android/material/search/SearchBar;
+
+    if-nez v0, :cond_0
+
+    goto :goto_0
+
+    .line 279
+    :cond_0
+    iget-object p0, p0, Lcom/google/android/material/search/SearchView;->searchViewAnimationHelper:Lcom/google/android/material/search/SearchViewAnimationHelper;
+
+    invoke-virtual {p0, p1}, Lcom/google/android/material/search/SearchViewAnimationHelper;->startBackProgress(Landroidx/activity/BackEventCompat;)V
+
+    :cond_1
+    :goto_0
+    return-void
+.end method
+
+.method public updateBackProgress(Landroidx/activity/BackEventCompat;)V
+    .locals 1
+
+    .line 284
+    invoke-direct {p0}, Lcom/google/android/material/search/SearchView;->isHiddenOrHiding()Z
+
+    move-result v0
+
+    if-nez v0, :cond_0
+
+    iget-object v0, p0, Lcom/google/android/material/search/SearchView;->searchBar:Lcom/google/android/material/search/SearchBar;
+
+    if-eqz v0, :cond_0
+
+    .line 289
+    iget-object p0, p0, Lcom/google/android/material/search/SearchView;->searchViewAnimationHelper:Lcom/google/android/material/search/SearchViewAnimationHelper;
+
+    invoke-virtual {p0, p1}, Lcom/google/android/material/search/SearchViewAnimationHelper;->updateBackProgress(Landroidx/activity/BackEventCompat;)V
+
+    :cond_0
+    return-void
+.end method
+
 .method public updateSoftInputMode()V
     .locals 1
 
-    .line 678
+    .line 763
     invoke-direct {p0}, Lcom/google/android/material/search/SearchView;->getActivityWindow()Landroid/view/Window;
 
     move-result-object v0
 
     if-eqz v0, :cond_0
 
-    .line 680
+    .line 765
     invoke-virtual {v0}, Landroid/view/Window;->getAttributes()Landroid/view/WindowManager$LayoutParams;
 
     move-result-object v0

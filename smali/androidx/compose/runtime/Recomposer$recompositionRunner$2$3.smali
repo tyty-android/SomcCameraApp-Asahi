@@ -53,7 +53,7 @@
     f = "Recomposer.kt"
     i = {}
     l = {
-        0x3b2
+        0x3ec
     }
     m = "invokeSuspend"
     n = {}
@@ -203,7 +203,7 @@
 
     move-result-object v0
 
-    .line 945
+    .line 1003
     iget v1, p0, Landroidx/compose/runtime/Recomposer$recompositionRunner$2$3;->label:I
 
     const/4 v2, 0x1
@@ -232,7 +232,7 @@
 
     check-cast p1, Lkotlinx/coroutines/CoroutineScope;
 
-    .line 946
+    .line 1004
     iget-object v1, p0, Landroidx/compose/runtime/Recomposer$recompositionRunner$2$3;->$block:Lkotlin/jvm/functions/Function3;
 
     iget-object v3, p0, Landroidx/compose/runtime/Recomposer$recompositionRunner$2$3;->$parentFrameClock:Landroidx/compose/runtime/MonotonicFrameClock;
@@ -247,7 +247,7 @@
 
     return-object v0
 
-    .line 947
+    .line 1005
     :cond_2
     :goto_0
     sget-object p0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;

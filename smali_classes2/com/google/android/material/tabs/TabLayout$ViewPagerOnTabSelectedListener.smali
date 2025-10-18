@@ -25,10 +25,10 @@
 .method public constructor <init>(Landroidx/viewpager/widget/ViewPager;)V
     .locals 0
 
-    .line 3617
+    .line 3620
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 3618
+    .line 3621
     iput-object p1, p0, Lcom/google/android/material/tabs/TabLayout$ViewPagerOnTabSelectedListener;->viewPager:Landroidx/viewpager/widget/ViewPager;
 
     return-void
@@ -45,7 +45,7 @@
 .method public onTabSelected(Lcom/google/android/material/tabs/TabLayout$Tab;)V
     .locals 0
 
-    .line 3623
+    .line 3626
     iget-object p0, p0, Lcom/google/android/material/tabs/TabLayout$ViewPagerOnTabSelectedListener;->viewPager:Landroidx/viewpager/widget/ViewPager;
 
     invoke-virtual {p1}, Lcom/google/android/material/tabs/TabLayout$Tab;->getPosition()I

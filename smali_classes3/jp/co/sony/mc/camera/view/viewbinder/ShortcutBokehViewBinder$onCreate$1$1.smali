@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Ljp/co/sony/mc/camera/view/viewbinder/ShortcutBokehViewBinder$onCreate$1;->invoke(Ljava/lang/Boolean;)V
+    value = Ljp/co/sony/mc/camera/view/viewbinder/ShortcutBokehViewBinder;->onCreate(Landroidx/lifecycle/LifecycleOwner;)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -29,8 +29,8 @@
     }
     k = 0x1
     mv = {
-        0x1,
-        0x9,
+        0x2,
+        0x0,
         0x0
     }
     xi = 0x30

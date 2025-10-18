@@ -29,20 +29,36 @@
 
 # direct methods
 .method static constructor <clinit>()V
-    .locals 4
+    .locals 3
+
+    const/4 v0, 0x4
 
     .line 70
-    const-string v0, "Digest"
+    new-array v0, v0, [Ljava/lang/String;
 
-    const-string v1, "Basic"
+    const/4 v1, 0x0
 
     const-string v2, "Negotiate"
 
-    const-string v3, "NTLM"
+    aput-object v2, v0, v1
 
-    filled-new-array {v2, v3, v0, v1}, [Ljava/lang/String;
+    const/4 v1, 0x1
 
-    move-result-object v0
+    const-string v2, "NTLM"
+
+    aput-object v2, v0, v1
+
+    const/4 v1, 0x2
+
+    const-string v2, "Digest"
+
+    aput-object v2, v0, v1
+
+    const/4 v1, 0x3
+
+    const-string v2, "Basic"
+
+    aput-object v2, v0, v1
 
     invoke-static {v0}, Ljava/util/Arrays;->asList([Ljava/lang/Object;)Ljava/util/List;
 
@@ -60,7 +76,7 @@
 .method public constructor <init>()V
     .locals 1
 
-    .line 79
+    .line 78
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 68
@@ -90,7 +106,7 @@
         }
     .end annotation
 
-    .line 121
+    .line 120
     sget-object p0, Lorg/apache/http/impl/client/AbstractAuthenticationHandler;->DEFAULT_SCHEME_PRIORITY:Ljava/util/List;
 
     return-object p0
@@ -110,7 +126,7 @@
         }
     .end annotation
 
-    .line 136
+    .line 135
     invoke-virtual {p0}, Lorg/apache/http/impl/client/AbstractAuthenticationHandler;->getAuthPreferences()Ljava/util/List;
 
     move-result-object p0
@@ -138,14 +154,14 @@
         }
     .end annotation
 
-    .line 85
+    .line 84
     new-instance p0, Ljava/util/HashMap;
 
     array-length v0, p1
 
     invoke-direct {p0, v0}, Ljava/util/HashMap;-><init>(I)V
 
-    .line 86
+    .line 85
     array-length v0, p1
 
     const/4 v1, 0x0
@@ -157,12 +173,12 @@
 
     aget-object v3, p1, v2
 
-    .line 89
+    .line 88
     instance-of v4, v3, Lorg/apache/http/FormattedHeader;
 
     if-eqz v4, :cond_0
 
-    .line 90
+    .line 89
     move-object v4, v3
 
     check-cast v4, Lorg/apache/http/FormattedHeader;
@@ -171,14 +187,14 @@
 
     move-result-object v5
 
-    .line 91
+    .line 90
     invoke-interface {v4}, Lorg/apache/http/FormattedHeader;->getValuePos()I
 
     move-result v4
 
     goto :goto_1
 
-    .line 93
+    .line 92
     :cond_0
     invoke-interface {v3}, Lorg/apache/http/Header;->getValue()Ljava/lang/String;
 
@@ -186,7 +202,7 @@
 
     if-eqz v4, :cond_3
 
-    .line 97
+    .line 96
     new-instance v5, Lorg/apache/http/util/CharArrayBuffer;
 
     invoke-virtual {v4}, Ljava/lang/String;->length()I
@@ -195,12 +211,12 @@
 
     invoke-direct {v5, v6}, Lorg/apache/http/util/CharArrayBuffer;-><init>(I)V
 
-    .line 98
+    .line 97
     invoke-virtual {v5, v4}, Lorg/apache/http/util/CharArrayBuffer;->append(Ljava/lang/String;)V
 
     move v4, v1
 
-    .line 101
+    .line 100
     :goto_1
     invoke-virtual {v5}, Lorg/apache/http/util/CharArrayBuffer;->length()I
 
@@ -225,7 +241,7 @@
     :cond_1
     move v6, v4
 
-    .line 105
+    .line 104
     :goto_2
     invoke-virtual {v5}, Lorg/apache/http/util/CharArrayBuffer;->length()I
 
@@ -247,13 +263,13 @@
 
     goto :goto_2
 
-    .line 109
+    .line 108
     :cond_2
     invoke-virtual {v5, v4, v6}, Lorg/apache/http/util/CharArrayBuffer;->substring(II)Ljava/lang/String;
 
     move-result-object v4
 
-    .line 110
+    .line 109
     sget-object v5, Ljava/util/Locale;->ROOT:Ljava/util/Locale;
 
     invoke-virtual {v4, v5}, Ljava/lang/String;->toLowerCase(Ljava/util/Locale;)Ljava/lang/String;
@@ -266,7 +282,7 @@
 
     goto :goto_0
 
-    .line 95
+    .line 94
     :cond_3
     new-instance p0, Lorg/apache/http/auth/MalformedChallengeException;
 
@@ -302,7 +318,7 @@
         }
     .end annotation
 
-    .line 145
+    .line 144
     const-string v0, "http.authscheme-registry"
 
     invoke-interface {p3, v0}, Lorg/apache/http/protocol/HttpContext;->getAttribute(Ljava/lang/String;)Ljava/lang/Object;
@@ -311,22 +327,22 @@
 
     check-cast v0, Lorg/apache/http/auth/AuthSchemeRegistry;
 
-    .line 147
+    .line 146
     const-string v1, "AuthScheme registry"
 
     invoke-static {v0, v1}, Lorg/apache/http/util/Asserts;->notNull(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 148
+    .line 147
     invoke-virtual {p0, p2, p3}, Lorg/apache/http/impl/client/AbstractAuthenticationHandler;->getAuthPreferences(Lorg/apache/http/HttpResponse;Lorg/apache/http/protocol/HttpContext;)Ljava/util/List;
 
     move-result-object p3
 
     if-nez p3, :cond_0
 
-    .line 150
+    .line 149
     sget-object p3, Lorg/apache/http/impl/client/AbstractAuthenticationHandler;->DEFAULT_SCHEME_PRIORITY:Ljava/util/List;
 
-    .line 153
+    .line 152
     :cond_0
     iget-object v1, p0, Lorg/apache/http/impl/client/AbstractAuthenticationHandler;->log:Lorg/apache/commons/logging/Log;
 
@@ -336,7 +352,7 @@
 
     if-eqz v1, :cond_1
 
-    .line 154
+    .line 153
     iget-object v1, p0, Lorg/apache/http/impl/client/AbstractAuthenticationHandler;->log:Lorg/apache/commons/logging/Log;
 
     new-instance v2, Ljava/lang/StringBuilder;
@@ -355,7 +371,7 @@
 
     invoke-interface {v1, v2}, Lorg/apache/commons/logging/Log;->debug(Ljava/lang/Object;)V
 
-    .line 159
+    .line 158
     :cond_1
     invoke-interface {p3}, Ljava/util/Collection;->iterator()Ljava/util/Iterator;
 
@@ -375,7 +391,7 @@
 
     check-cast v1, Ljava/lang/String;
 
-    .line 160
+    .line 159
     sget-object v2, Ljava/util/Locale;->ENGLISH:Ljava/util/Locale;
 
     invoke-virtual {v1, v2}, Ljava/lang/String;->toLowerCase(Ljava/util/Locale;)Ljava/lang/String;
@@ -390,7 +406,7 @@
 
     if-eqz v2, :cond_4
 
-    .line 163
+    .line 162
     iget-object v2, p0, Lorg/apache/http/impl/client/AbstractAuthenticationHandler;->log:Lorg/apache/commons/logging/Log;
 
     invoke-interface {v2}, Lorg/apache/commons/logging/Log;->isDebugEnabled()Z
@@ -399,7 +415,7 @@
 
     if-eqz v2, :cond_3
 
-    .line 164
+    .line 163
     iget-object v2, p0, Lorg/apache/http/impl/client/AbstractAuthenticationHandler;->log:Lorg/apache/commons/logging/Log;
 
     new-instance v3, Ljava/lang/StringBuilder;
@@ -422,7 +438,7 @@
 
     invoke-interface {v2, v3}, Lorg/apache/commons/logging/Log;->debug(Ljava/lang/Object;)V
 
-    .line 167
+    .line 166
     :cond_3
     :try_start_0
     invoke-interface {p2}, Lorg/apache/http/HttpResponse;->getParams()Lorg/apache/http/params/HttpParams;
@@ -437,7 +453,7 @@
 
     goto :goto_1
 
-    .line 170
+    .line 169
     :catch_0
     iget-object v2, p0, Lorg/apache/http/impl/client/AbstractAuthenticationHandler;->log:Lorg/apache/commons/logging/Log;
 
@@ -447,7 +463,7 @@
 
     if-eqz v2, :cond_2
 
-    .line 171
+    .line 170
     iget-object v2, p0, Lorg/apache/http/impl/client/AbstractAuthenticationHandler;->log:Lorg/apache/commons/logging/Log;
 
     new-instance v3, Ljava/lang/StringBuilder;
@@ -474,7 +490,7 @@
 
     goto :goto_0
 
-    .line 176
+    .line 175
     :cond_4
     iget-object v2, p0, Lorg/apache/http/impl/client/AbstractAuthenticationHandler;->log:Lorg/apache/commons/logging/Log;
 
@@ -484,7 +500,7 @@
 
     if-eqz v2, :cond_2
 
-    .line 177
+    .line 176
     iget-object v2, p0, Lorg/apache/http/impl/client/AbstractAuthenticationHandler;->log:Lorg/apache/commons/logging/Log;
 
     new-instance v3, Ljava/lang/StringBuilder;
@@ -519,7 +535,7 @@
 
     return-object p0
 
-    .line 184
+    .line 183
     :cond_6
     new-instance p0, Lorg/apache/http/auth/AuthenticationException;
 

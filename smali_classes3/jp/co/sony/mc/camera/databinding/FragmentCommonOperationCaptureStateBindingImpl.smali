@@ -31,14 +31,14 @@
     .line 17
     invoke-virtual {v0, v1, v2}, Landroid/util/SparseIntArray;->put(II)V
 
-    const v1, 0x7f0900d8
+    const v1, 0x7f0900d6
 
     const/4 v2, 0x2
 
     .line 18
     invoke-virtual {v0, v1, v2}, Landroid/util/SparseIntArray;->put(II)V
 
-    const v1, 0x7f0900d7
+    const v1, 0x7f0900d5
 
     const/4 v2, 0x3
 
@@ -285,7 +285,7 @@
 .method public setVariable(ILjava/lang/Object;)Z
     .locals 1
 
-    const/4 v0, 0x7
+    const/16 v0, 0x8
 
     if-ne v0, p1, :cond_0
 
@@ -297,7 +297,7 @@
     goto :goto_0
 
     :cond_0
-    const/16 v0, 0x13
+    const/16 v0, 0x16
 
     if-ne v0, p1, :cond_1
 
@@ -309,7 +309,7 @@
     goto :goto_0
 
     :cond_1
-    const/16 v0, 0x16
+    const/16 v0, 0x19
 
     if-ne v0, p1, :cond_2
 
@@ -321,7 +321,7 @@
     goto :goto_0
 
     :cond_2
-    const/16 v0, 0x8
+    const/16 v0, 0x9
 
     if-ne v0, p1, :cond_3
 

@@ -21,7 +21,7 @@
 .method constructor <init>()V
     .locals 0
 
-    .line 2819
+    .line 2912
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -42,26 +42,8 @@
         }
     .end annotation
 
-    .line 2823
-    check-cast p1, Ljp/co/sony/mc/camera/setting/CameraSettings;
-
-    .line 2824
-    invoke-static {p1}, Ljp/co/sony/mc/camera/setting/CameraSettings;->-$$Nest$fgetmCapturingMode(Ljp/co/sony/mc/camera/setting/CameraSettings;)Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
-
-    move-result-object p0
-
-    invoke-virtual {p0}, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->getLayoutMode()Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
-
-    move-result-object p0
-
-    .line 2825
-    invoke-static {p1}, Ljp/co/sony/mc/camera/setting/CameraSettings;->-$$Nest$fgetmCameraId(Ljp/co/sony/mc/camera/setting/CameraSettings;)Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;
-
-    move-result-object p1
-
-    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/configuration/parameters/FallbackMode;->getDefaultValue(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;)Ljp/co/sony/mc/camera/configuration/parameters/FallbackMode;
-
-    move-result-object p0
+    .line 2916
+    sget-object p0, Ljp/co/sony/mc/camera/configuration/parameters/AutoFocusLock;->OFF:Ljp/co/sony/mc/camera/configuration/parameters/AutoFocusLock;
 
     return-object p0
 .end method

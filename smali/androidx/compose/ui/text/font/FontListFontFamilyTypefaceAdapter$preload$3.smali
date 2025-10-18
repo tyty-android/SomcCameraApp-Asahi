@@ -31,7 +31,7 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/SourceDebugExtension;
-    value = "SMAP\nFontListFontFamilyTypefaceAdapter.kt\nKotlin\n*S Kotlin\n*F\n+ 1 FontListFontFamilyTypefaceAdapter.kt\nandroidx/compose/ui/text/font/FontListFontFamilyTypefaceAdapter$preload$3\n+ 2 TempListUtils.kt\nandroidx/compose/ui/text/TempListUtilsKt\n+ 3 ListUtils.kt\nandroidx/compose/ui/util/ListUtilsKt\n*L\n1#1,427:1\n56#2,4:428\n60#2,3:436\n63#2:440\n33#3,4:432\n38#3:439\n151#3,3:441\n33#3,4:444\n154#3,2:448\n38#3:450\n156#3:451\n*S KotlinDebug\n*F\n+ 1 FontListFontFamilyTypefaceAdapter.kt\nandroidx/compose/ui/text/font/FontListFontFamilyTypefaceAdapter$preload$3\n*L\n100#1:428,4\n100#1:436,3\n100#1:440\n100#1:432,4\n100#1:439\n101#1:441,3\n101#1:444,4\n101#1:448,2\n101#1:450\n101#1:451\n*E\n"
+    value = "SMAP\nFontListFontFamilyTypefaceAdapter.kt\nKotlin\n*S Kotlin\n*F\n+ 1 FontListFontFamilyTypefaceAdapter.kt\nandroidx/compose/ui/text/font/FontListFontFamilyTypefaceAdapter$preload$3\n+ 2 ListUtils.kt\nandroidx/compose/ui/util/ListUtilsKt\n*L\n1#1,432:1\n461#2,4:433\n33#2,4:437\n465#2,3:441\n38#2:444\n468#2:445\n151#2,3:446\n33#2,4:449\n154#2,2:453\n38#2:455\n156#2:456\n*S KotlinDebug\n*F\n+ 1 FontListFontFamilyTypefaceAdapter.kt\nandroidx/compose/ui/text/font/FontListFontFamilyTypefaceAdapter$preload$3\n*L\n104#1:433,4\n104#1:437,4\n104#1:441,3\n104#1:444\n104#1:445\n105#1:446,3\n105#1:449,4\n105#1:453,2\n105#1:455\n105#1:456\n*E\n"
 .end annotation
 
 .annotation runtime Lkotlin/Metadata;
@@ -57,7 +57,7 @@
     f = "FontListFontFamilyTypefaceAdapter.kt"
     i = {}
     l = {
-        0x71
+        0x75
     }
     m = "invokeSuspend"
     n = {}
@@ -201,7 +201,7 @@
 
     move-result-object v1
 
-    .line 98
+    .line 102
     iget v2, v0, Landroidx/compose/ui/text/font/FontListFontFamilyTypefaceAdapter$preload$3;->label:I
 
     const/4 v3, 0x1
@@ -230,10 +230,10 @@
 
     check-cast v2, Lkotlinx/coroutines/CoroutineScope;
 
-    .line 99
+    .line 103
     iget-object v4, v0, Landroidx/compose/ui/text/font/FontListFontFamilyTypefaceAdapter$preload$3;->$asyncLoads:Ljava/util/List;
 
-    .line 429
+    .line 434
     new-instance v5, Ljava/util/HashSet;
 
     invoke-interface {v4}, Ljava/util/List;->size()I
@@ -242,7 +242,7 @@
 
     invoke-direct {v5, v6}, Ljava/util/HashSet;-><init>(I)V
 
-    .line 430
+    .line 435
     new-instance v6, Ljava/util/ArrayList;
 
     invoke-interface {v4}, Ljava/util/List;->size()I
@@ -251,7 +251,7 @@
 
     invoke-direct {v6, v7}, Ljava/util/ArrayList;-><init>(I)V
 
-    .line 433
+    .line 438
     invoke-interface {v4}, Ljava/util/List;->size()I
 
     move-result v7
@@ -263,17 +263,17 @@
     :goto_0
     if-ge v9, v7, :cond_3
 
-    .line 434
+    .line 439
     invoke-interface {v4, v9}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
     move-result-object v10
 
-    .line 436
+    .line 441
     move-object v11, v10
 
     check-cast v11, Landroidx/compose/ui/text/font/Font;
 
-    .line 437
+    .line 442
     invoke-virtual {v5, v11}, Ljava/util/HashSet;->add(Ljava/lang/Object;)Z
 
     move-result v11
@@ -291,18 +291,18 @@
 
     goto :goto_0
 
-    .line 440
+    .line 445
     :cond_3
     move-object v10, v6
 
     check-cast v10, Ljava/util/List;
 
-    .line 101
+    .line 105
     iget-object v11, v0, Landroidx/compose/ui/text/font/FontListFontFamilyTypefaceAdapter$preload$3;->this$0:Landroidx/compose/ui/text/font/FontListFontFamilyTypefaceAdapter;
 
     iget-object v12, v0, Landroidx/compose/ui/text/font/FontListFontFamilyTypefaceAdapter$preload$3;->$resourceLoader:Landroidx/compose/ui/text/font/PlatformFontLoader;
 
-    .line 442
+    .line 447
     new-instance v13, Ljava/util/ArrayList;
 
     invoke-interface {v10}, Ljava/util/List;->size()I
@@ -311,7 +311,7 @@
 
     invoke-direct {v13, v4}, Ljava/util/ArrayList;-><init>(I)V
 
-    .line 445
+    .line 450
     invoke-interface {v10}, Ljava/util/List;->size()I
 
     move-result v14
@@ -321,19 +321,19 @@
     :goto_1
     if-ge v15, v14, :cond_4
 
-    .line 446
+    .line 451
     invoke-interface {v10, v15}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
     move-result-object v4
 
-    .line 448
+    .line 453
     move-object v9, v13
 
     check-cast v9, Ljava/util/Collection;
 
     check-cast v4, Landroidx/compose/ui/text/font/Font;
 
-    .line 102
+    .line 106
     new-instance v5, Landroidx/compose/ui/text/font/FontListFontFamilyTypefaceAdapter$preload$3$2$1;
 
     const/4 v6, 0x0
@@ -360,7 +360,7 @@
 
     move-result-object v4
 
-    .line 448
+    .line 453
     invoke-interface {v3, v4}, Ljava/util/Collection;->add(Ljava/lang/Object;)Z
 
     add-int/lit8 v15, v15, 0x1
@@ -369,7 +369,7 @@
 
     goto :goto_1
 
-    .line 451
+    .line 456
     :cond_4
     check-cast v13, Ljava/util/List;
 
@@ -381,7 +381,7 @@
 
     const/4 v3, 0x1
 
-    .line 113
+    .line 117
     iput v3, v0, Landroidx/compose/ui/text/font/FontListFontFamilyTypefaceAdapter$preload$3;->label:I
 
     invoke-static {v13, v2}, Lkotlinx/coroutines/AwaitKt;->joinAll(Ljava/util/Collection;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
@@ -392,7 +392,7 @@
 
     return-object v1
 
-    .line 114
+    .line 118
     :cond_5
     :goto_2
     sget-object v0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;

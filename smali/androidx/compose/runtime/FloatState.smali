@@ -52,7 +52,7 @@
 .method public static synthetic access$getValue$jd(Landroidx/compose/runtime/FloatState;)F
     .locals 0
 
-    .line 61
+    .line 62
     invoke-super {p0}, Landroidx/compose/runtime/FloatState;->getValue()Ljava/lang/Float;
 
     move-result-object p0
@@ -72,7 +72,7 @@
 .method public getValue()Ljava/lang/Float;
     .locals 0
 
-    .line 66
+    .line 67
     invoke-interface {p0}, Landroidx/compose/runtime/FloatState;->getFloatValue()F
 
     move-result p0
@@ -87,7 +87,7 @@
 .method public bridge synthetic getValue()Ljava/lang/Object;
     .locals 0
 
-    .line 61
+    .line 62
     invoke-interface {p0}, Landroidx/compose/runtime/FloatState;->getValue()Ljava/lang/Float;
 
     move-result-object p0

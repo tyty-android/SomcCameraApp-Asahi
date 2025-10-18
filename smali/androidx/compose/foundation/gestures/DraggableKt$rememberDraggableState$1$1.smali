@@ -91,7 +91,7 @@
 .method public bridge synthetic invoke(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
 
-    .line 142
+    .line 144
     check-cast p1, Ljava/lang/Number;
 
     invoke-virtual {p1}, Ljava/lang/Number;->floatValue()F
@@ -108,7 +108,7 @@
 .method public final invoke(F)V
     .locals 0
 
-    .line 142
+    .line 144
     iget-object p0, p0, Landroidx/compose/foundation/gestures/DraggableKt$rememberDraggableState$1$1;->$onDeltaState:Landroidx/compose/runtime/State;
 
     invoke-interface {p0}, Landroidx/compose/runtime/State;->getValue()Ljava/lang/Object;

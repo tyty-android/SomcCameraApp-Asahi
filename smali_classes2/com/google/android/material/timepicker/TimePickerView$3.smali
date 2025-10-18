@@ -27,7 +27,7 @@
 .method constructor <init>(Lcom/google/android/material/timepicker/TimePickerView;Landroid/view/GestureDetector;)V
     .locals 0
 
-    .line 145
+    .line 149
     iput-object p1, p0, Lcom/google/android/material/timepicker/TimePickerView$3;->this$0:Lcom/google/android/material/timepicker/TimePickerView;
 
     iput-object p2, p0, Lcom/google/android/material/timepicker/TimePickerView$3;->val$gestureDetector:Landroid/view/GestureDetector;
@@ -42,7 +42,7 @@
 .method public onTouch(Landroid/view/View;Landroid/view/MotionEvent;)Z
     .locals 0
 
-    .line 148
+    .line 152
     check-cast p1, Landroid/widget/Checkable;
 
     invoke-interface {p1}, Landroid/widget/Checkable;->isChecked()Z
@@ -51,7 +51,7 @@
 
     if-eqz p1, :cond_0
 
-    .line 149
+    .line 153
     iget-object p0, p0, Lcom/google/android/material/timepicker/TimePickerView$3;->val$gestureDetector:Landroid/view/GestureDetector;
 
     invoke-virtual {p0, p2}, Landroid/view/GestureDetector;->onTouchEvent(Landroid/view/MotionEvent;)Z

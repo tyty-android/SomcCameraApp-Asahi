@@ -20,7 +20,7 @@
 
     const/4 v0, 0x0
 
-    .line 130
+    .line 127
     invoke-direct {p0, v0}, Landroidx/transition/Slide$CalculateSlideHorizontal;-><init>(Landroidx/transition/Slide$1;)V
 
     return-void
@@ -31,8 +31,8 @@
 .method public getGoneX(Landroid/view/ViewGroup;Landroid/view/View;)F
     .locals 1
 
-    .line 133
-    invoke-static {p1}, Landroidx/core/view/ViewCompat;->getLayoutDirection(Landroid/view/View;)I
+    .line 130
+    invoke-virtual {p1}, Landroid/view/ViewGroup;->getLayoutDirection()I
 
     move-result p0
 
@@ -40,7 +40,7 @@
 
     if-ne p0, v0, :cond_0
 
-    .line 137
+    .line 134
     invoke-virtual {p2}, Landroid/view/View;->getTranslationX()F
 
     move-result p0
@@ -55,7 +55,7 @@
 
     goto :goto_0
 
-    .line 139
+    .line 136
     :cond_0
     invoke-virtual {p2}, Landroid/view/View;->getTranslationX()F
 

@@ -101,7 +101,7 @@
 .end method
 
 .method private changeTo(Ljp/co/sony/mc/camera/device/PreCaptureResultChecker$State;)V
-    .locals 2
+    .locals 3
 
     .line 152
     iget-object v0, p0, Ljp/co/sony/mc/camera/device/PreCaptureResultChecker;->mState:Ljp/co/sony/mc/camera/device/PreCaptureResultChecker$State;
@@ -113,43 +113,47 @@
 
     if-eqz v0, :cond_0
 
-    new-instance v0, Ljava/lang/StringBuilder;
+    const/4 v0, 0x1
 
-    const-string v1, "invoke current:"
+    new-array v0, v0, [Ljava/lang/String;
 
-    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+    new-instance v1, Ljava/lang/StringBuilder;
 
-    iget-object v1, p0, Ljp/co/sony/mc/camera/device/PreCaptureResultChecker;->mState:Ljp/co/sony/mc/camera/device/PreCaptureResultChecker$State;
+    const-string v2, "invoke current:"
 
-    invoke-virtual {v1}, Ljp/co/sony/mc/camera/device/PreCaptureResultChecker$State;->name()Ljava/lang/String;
+    invoke-direct {v1, v2}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+
+    iget-object v2, p0, Ljp/co/sony/mc/camera/device/PreCaptureResultChecker;->mState:Ljp/co/sony/mc/camera/device/PreCaptureResultChecker$State;
+
+    invoke-virtual {v2}, Ljp/co/sony/mc/camera/device/PreCaptureResultChecker$State;->name()Ljava/lang/String;
+
+    move-result-object v2
+
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v1
 
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    const-string v2, ", to:"
 
-    move-result-object v0
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    const-string v1, ", to:"
-
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v0
+    move-result-object v1
 
     invoke-virtual {p1}, Ljp/co/sony/mc/camera/device/PreCaptureResultChecker$State;->name()Ljava/lang/String;
 
+    move-result-object v2
+
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
     move-result-object v1
 
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    move-result-object v0
+    move-result-object v1
 
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    const/4 v2, 0x0
 
-    move-result-object v0
-
-    filled-new-array {v0}, [Ljava/lang/String;
-
-    move-result-object v0
+    aput-object v1, v0, v2
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
@@ -169,6 +173,8 @@
 
     sget-object v1, Ljp/co/sony/mc/camera/device/PreCaptureResultChecker$State;->PRECAPTURE_REQUESTED:Ljp/co/sony/mc/camera/device/PreCaptureResultChecker$State;
 
+    const/4 v2, 0x1
+
     if-ne v0, v1, :cond_0
 
     .line 96
@@ -182,14 +188,12 @@
 
     if-eqz v0, :cond_5
 
-    const/4 v1, 0x1
-
     .line 98
     invoke-virtual {v0}, Ljava/lang/Integer;->intValue()I
 
     move-result v0
 
-    if-ne v1, v0, :cond_5
+    if-ne v2, v0, :cond_5
 
     .line 99
     sget-object v0, Ljp/co/sony/mc/camera/device/PreCaptureResultChecker$State;->PRECAPTURING:Ljp/co/sony/mc/camera/device/PreCaptureResultChecker$State;
@@ -221,9 +225,9 @@
 
     invoke-virtual {p2}, Landroid/hardware/camera2/CaptureResult;->getFrameNumber()J
 
-    move-result-wide v2
+    move-result-wide v3
 
-    cmp-long p1, v0, v2
+    cmp-long p1, v0, v3
 
     if-lez p1, :cond_1
 
@@ -291,78 +295,80 @@
     .line 116
     invoke-direct {p0, p2}, Ljp/co/sony/mc/camera/device/PreCaptureResultChecker;->getDurationWithVendorTag(Landroid/hardware/camera2/CaptureResult;)J
 
-    move-result-wide v1
+    move-result-wide v3
 
-    invoke-static {v1, v2}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
+    invoke-static {v3, v4}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
 
     move-result-object v1
 
     .line 117
     invoke-direct {p0, p2}, Ljp/co/sony/mc/camera/device/PreCaptureResultChecker;->getPreviewLatencyWithVendorTag(Landroid/hardware/camera2/CaptureResult;)J
 
-    move-result-wide v2
+    move-result-wide v3
 
-    invoke-static {v2, v3}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
+    invoke-static {v3, v4}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
 
     move-result-object p2
 
     .line 119
-    sget-object v2, Ljp/co/sony/mc/camera/device/PreCaptureResultChecker$State;->FINAL:Ljp/co/sony/mc/camera/device/PreCaptureResultChecker$State;
+    sget-object v3, Ljp/co/sony/mc/camera/device/PreCaptureResultChecker$State;->FINAL:Ljp/co/sony/mc/camera/device/PreCaptureResultChecker$State;
 
-    invoke-direct {p0, v2}, Ljp/co/sony/mc/camera/device/PreCaptureResultChecker;->changeTo(Ljp/co/sony/mc/camera/device/PreCaptureResultChecker$State;)V
+    invoke-direct {p0, v3}, Ljp/co/sony/mc/camera/device/PreCaptureResultChecker;->changeTo(Ljp/co/sony/mc/camera/device/PreCaptureResultChecker$State;)V
 
     .line 121
-    sget-boolean v2, Ljp/co/sony/mc/camera/util/CamLog;->DEBUG:Z
+    sget-boolean v3, Ljp/co/sony/mc/camera/util/CamLog;->DEBUG:Z
 
-    if-eqz v2, :cond_3
+    if-eqz v3, :cond_3
 
     .line 122
-    new-instance v2, Ljava/lang/StringBuilder;
+    new-instance v3, Ljava/lang/StringBuilder;
 
-    const-string v3, "aeState["
+    const-string v4, "aeState["
 
-    invoke-direct {v2, v3}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+    invoke-direct {v3, v4}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
     .line 124
-    invoke-virtual {v2, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+    invoke-virtual {v3, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
     .line 125
     const-string p1, " ], startPoint["
 
-    invoke-virtual {v2, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v3, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     .line 126
-    invoke-virtual {v2, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+    invoke-virtual {v3, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
     .line 127
     const-string p1, " ], duration["
 
-    invoke-virtual {v2, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v3, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     .line 128
-    invoke-virtual {v2, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+    invoke-virtual {v3, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
     .line 129
     const-string p1, " ], previewLatency["
 
-    invoke-virtual {v2, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v3, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     .line 130
-    invoke-virtual {v2, p2}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+    invoke-virtual {v3, p2}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
     .line 131
     const-string p1, " ]"
 
-    invoke-virtual {v2, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v3, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     .line 132
-    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    new-array p1, v2, [Ljava/lang/String;
 
-    move-result-object p1
+    const/4 v2, 0x0
 
-    filled-new-array {p1}, [Ljava/lang/String;
+    invoke-virtual {v3}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    move-result-object p1
+    move-result-object v3
+
+    aput-object v3, p1, v2
 
     invoke-static {p1}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 

@@ -30,7 +30,7 @@
 .method constructor <init>()V
     .locals 0
 
-    .line 966
+    .line 1086
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -41,7 +41,7 @@
 .method public createFromParcel(Landroid/os/Parcel;)Lcom/google/android/material/search/SearchView$SavedState;
     .locals 0
 
-    .line 975
+    .line 1095
     new-instance p0, Lcom/google/android/material/search/SearchView$SavedState;
 
     invoke-direct {p0, p1}, Lcom/google/android/material/search/SearchView$SavedState;-><init>(Landroid/os/Parcel;)V
@@ -52,7 +52,7 @@
 .method public createFromParcel(Landroid/os/Parcel;Ljava/lang/ClassLoader;)Lcom/google/android/material/search/SearchView$SavedState;
     .locals 0
 
-    .line 970
+    .line 1090
     new-instance p0, Lcom/google/android/material/search/SearchView$SavedState;
 
     invoke-direct {p0, p1, p2}, Lcom/google/android/material/search/SearchView$SavedState;-><init>(Landroid/os/Parcel;Ljava/lang/ClassLoader;)V
@@ -63,7 +63,7 @@
 .method public bridge synthetic createFromParcel(Landroid/os/Parcel;)Ljava/lang/Object;
     .locals 0
 
-    .line 966
+    .line 1086
     invoke-virtual {p0, p1}, Lcom/google/android/material/search/SearchView$SavedState$1;->createFromParcel(Landroid/os/Parcel;)Lcom/google/android/material/search/SearchView$SavedState;
 
     move-result-object p0
@@ -74,7 +74,7 @@
 .method public bridge synthetic createFromParcel(Landroid/os/Parcel;Ljava/lang/ClassLoader;)Ljava/lang/Object;
     .locals 0
 
-    .line 966
+    .line 1086
     invoke-virtual {p0, p1, p2}, Lcom/google/android/material/search/SearchView$SavedState$1;->createFromParcel(Landroid/os/Parcel;Ljava/lang/ClassLoader;)Lcom/google/android/material/search/SearchView$SavedState;
 
     move-result-object p0
@@ -85,7 +85,7 @@
 .method public newArray(I)[Lcom/google/android/material/search/SearchView$SavedState;
     .locals 0
 
-    .line 980
+    .line 1100
     new-array p0, p1, [Lcom/google/android/material/search/SearchView$SavedState;
 
     return-object p0
@@ -94,7 +94,7 @@
 .method public bridge synthetic newArray(I)[Ljava/lang/Object;
     .locals 0
 
-    .line 966
+    .line 1086
     invoke-virtual {p0, p1}, Lcom/google/android/material/search/SearchView$SavedState$1;->newArray(I)[Lcom/google/android/material/search/SearchView$SavedState;
 
     move-result-object p0

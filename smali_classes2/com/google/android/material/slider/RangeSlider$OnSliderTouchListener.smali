@@ -33,7 +33,7 @@
 .method public bridge synthetic onStartTrackingTouch(Ljava/lang/Object;)V
     .locals 0
 
-    .line 93
+    .line 98
     check-cast p1, Lcom/google/android/material/slider/RangeSlider;
 
     invoke-interface {p0, p1}, Lcom/google/android/material/slider/RangeSlider$OnSliderTouchListener;->onStartTrackingTouch(Lcom/google/android/material/slider/RangeSlider;)V
@@ -47,7 +47,7 @@
 .method public bridge synthetic onStopTrackingTouch(Ljava/lang/Object;)V
     .locals 0
 
-    .line 93
+    .line 98
     check-cast p1, Lcom/google/android/material/slider/RangeSlider;
 
     invoke-interface {p0, p1}, Lcom/google/android/material/slider/RangeSlider$OnSliderTouchListener;->onStopTrackingTouch(Lcom/google/android/material/slider/RangeSlider;)V

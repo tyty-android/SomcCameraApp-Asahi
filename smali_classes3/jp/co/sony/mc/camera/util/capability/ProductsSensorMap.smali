@@ -4,15 +4,9 @@
 
 
 # static fields
-.field public static final PRODUCT_NAME_PDX_223:Ljava/lang/String; = "PDX-223"
-
-.field public static final PRODUCT_NAME_PDX_224:Ljava/lang/String; = "PDX-224"
-
-.field public static final PRODUCT_NAME_PDX_234:Ljava/lang/String; = "PDX-234"
-
-.field public static final PRODUCT_NAME_PDX_237:Ljava/lang/String; = "PDX-237"
-
 .field public static final PRODUCT_NAME_PDX_245:Ljava/lang/String; = "PDX-245"
+
+.field public static final PRODUCT_NAME_PDX_256:Ljava/lang/String; = "PDX-256"
 
 .field public static final PRODUCT_NAME_UNKNOWN:Ljava/lang/String; = "Unknown"
 
@@ -34,14 +28,14 @@
 .method static constructor <clinit>()V
     .locals 3
 
-    .line 27
+    .line 24
     new-instance v0, Ljava/util/LinkedHashMap;
 
     invoke-direct {v0}, Ljava/util/LinkedHashMap;-><init>()V
 
     sput-object v0, Ljp/co/sony/mc/camera/util/capability/ProductsSensorMap;->sMap:Ljava/util/Map;
 
-    .line 30
+    .line 27
     new-instance v1, Ljp/co/sony/mc/camera/util/capability/ProductsSensorMap$1;
 
     invoke-direct {v1}, Ljp/co/sony/mc/camera/util/capability/ProductsSensorMap$1;-><init>()V
@@ -50,58 +44,25 @@
 
     invoke-interface {v0, v2, v1}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 43
+    .line 40
     sget-object v0, Ljp/co/sony/mc/camera/util/capability/ProductsSensorMap;->sMap:Ljava/util/Map;
 
     new-instance v1, Ljp/co/sony/mc/camera/util/capability/ProductsSensorMap$2;
 
     invoke-direct {v1}, Ljp/co/sony/mc/camera/util/capability/ProductsSensorMap$2;-><init>()V
 
-    const-string v2, "PDX-223"
+    const-string v2, "PDX-245"
 
     invoke-interface {v0, v2, v1}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 64
+    .line 59
     sget-object v0, Ljp/co/sony/mc/camera/util/capability/ProductsSensorMap;->sMap:Ljava/util/Map;
 
     new-instance v1, Ljp/co/sony/mc/camera/util/capability/ProductsSensorMap$3;
 
     invoke-direct {v1}, Ljp/co/sony/mc/camera/util/capability/ProductsSensorMap$3;-><init>()V
 
-    const-string v2, "PDX-224"
-
-    invoke-interface {v0, v2, v1}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
-
-    .line 85
-    sget-object v0, Ljp/co/sony/mc/camera/util/capability/ProductsSensorMap;->sMap:Ljava/util/Map;
-
-    new-instance v1, Ljp/co/sony/mc/camera/util/capability/ProductsSensorMap$4;
-
-    invoke-direct {v1}, Ljp/co/sony/mc/camera/util/capability/ProductsSensorMap$4;-><init>()V
-
-    const-string v2, "PDX-234"
-
-    invoke-interface {v0, v2, v1}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
-
-    .line 106
-    sget-object v0, Ljp/co/sony/mc/camera/util/capability/ProductsSensorMap;->sMap:Ljava/util/Map;
-
-    new-instance v1, Ljp/co/sony/mc/camera/util/capability/ProductsSensorMap$5;
-
-    invoke-direct {v1}, Ljp/co/sony/mc/camera/util/capability/ProductsSensorMap$5;-><init>()V
-
-    const-string v2, "PDX-237"
-
-    invoke-interface {v0, v2, v1}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
-
-    .line 121
-    sget-object v0, Ljp/co/sony/mc/camera/util/capability/ProductsSensorMap;->sMap:Ljava/util/Map;
-
-    new-instance v1, Ljp/co/sony/mc/camera/util/capability/ProductsSensorMap$6;
-
-    invoke-direct {v1}, Ljp/co/sony/mc/camera/util/capability/ProductsSensorMap$6;-><init>()V
-
-    const-string v2, "PDX-245"
+    const-string v2, "PDX-256"
 
     invoke-interface {v0, v2, v1}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -131,7 +92,7 @@
         }
     .end annotation
 
-    .line 143
+    .line 81
     sget-object v0, Ljp/co/sony/mc/camera/util/capability/ProductsSensorMap;->sMap:Ljava/util/Map;
 
     invoke-interface {v0, p0}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
@@ -157,7 +118,7 @@
         }
     .end annotation
 
-    .line 147
+    .line 85
     sget-object v0, Ljp/co/sony/mc/camera/util/capability/ProductsSensorMap;->sMap:Ljava/util/Map;
 
     return-object v0

@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Landroidx/compose/material/ScaffoldKt;->Scaffold-27mzLpw(Landroidx/compose/ui/Modifier;Landroidx/compose/material/ScaffoldState;Lkotlin/jvm/functions/Function2;Lkotlin/jvm/functions/Function2;Lkotlin/jvm/functions/Function3;Lkotlin/jvm/functions/Function2;IZLkotlin/jvm/functions/Function3;ZLandroidx/compose/ui/graphics/Shape;FJJJJJLkotlin/jvm/functions/Function3;Landroidx/compose/runtime/Composer;III)V
+    value = Landroidx/compose/material/ScaffoldKt;->Scaffold-u4IkXBM(Landroidx/compose/foundation/layout/WindowInsets;Landroidx/compose/ui/Modifier;Landroidx/compose/material/ScaffoldState;Lkotlin/jvm/functions/Function2;Lkotlin/jvm/functions/Function2;Lkotlin/jvm/functions/Function3;Lkotlin/jvm/functions/Function2;IZLkotlin/jvm/functions/Function3;ZLandroidx/compose/ui/graphics/Shape;FJJJJJLkotlin/jvm/functions/Function3;Landroidx/compose/runtime/Composer;III)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -94,7 +94,7 @@
 .method public bridge synthetic invoke(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
 
-    .line 206
+    .line 245
     check-cast p1, Landroidx/compose/runtime/Composer;
 
     check-cast p2, Ljava/lang/Number;
@@ -113,7 +113,7 @@
 .method public final invoke(Landroidx/compose/runtime/Composer;I)V
     .locals 3
 
-    const-string v0, "C205@9096L15:Scaffold.kt#jmzs0o"
+    const-string v0, "C244@11015L15:Scaffold.kt#jmzs0o"
 
     invoke-static {p1, v0}, Landroidx/compose/runtime/ComposerKt;->sourceInformation(Landroidx/compose/runtime/Composer;Ljava/lang/String;)V
 
@@ -123,7 +123,7 @@
 
     if-ne v0, v1, :cond_1
 
-    .line 206
+    .line 245
     invoke-interface {p1}, Landroidx/compose/runtime/Composer;->getSkipping()Z
 
     move-result v0
@@ -147,9 +147,9 @@
 
     const/4 v0, -0x1
 
-    const-string v1, "androidx.compose.material.Scaffold.<anonymous> (Scaffold.kt:205)"
+    const-string v1, "androidx.compose.material.Scaffold.<anonymous> (Scaffold.kt:244)"
 
-    const v2, 0x602bdb4
+    const v2, -0x53fea1a0
 
     invoke-static {v2, p2, v0, v1}, Landroidx/compose/runtime/ComposerKt;->traceEventStart(IIILjava/lang/String;)V
 

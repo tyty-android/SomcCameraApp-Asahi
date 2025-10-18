@@ -19,5 +19,4 @@
     <string name="camera_strings_runtime_permission_rationale_network_cta_txt">"Това приложение използва безжична локална мрежа и мобилни данни за изпращане на потребителски данни (т.е. записани снимки/видеоклипове, гласови данни, информация за акаунта за използваните услуги и др.) към интернет.
 Имайте предвид, че може да бъдете таксувани за данни в зависимост от договорите с вашия мрежов оператор или доставчик на интернет услуги."</string>
     <string name="camera_strings_streaming_error_wifi_disconnected_txt">Няма WLAN връзка</string>
-    <string name="mv_wireless_network_txt">Изп. WLAN и мобил. данни</string>
 </resources>

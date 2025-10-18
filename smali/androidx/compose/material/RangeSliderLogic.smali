@@ -94,7 +94,7 @@
 
 # direct methods
 .method public constructor <init>(Landroidx/compose/foundation/interaction/MutableInteractionSource;Landroidx/compose/foundation/interaction/MutableInteractionSource;Landroidx/compose/runtime/State;Landroidx/compose/runtime/State;Landroidx/compose/runtime/State;)V
-    .locals 1
+    .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -118,42 +118,22 @@
         }
     .end annotation
 
-    const-string/jumbo v0, "startInteractionSource"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string v0, "endInteractionSource"
-
-    invoke-static {p2, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string v0, "rawOffsetStart"
-
-    invoke-static {p3, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string v0, "rawOffsetEnd"
-
-    invoke-static {p4, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string v0, "onDrag"
-
-    invoke-static {p5, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 1040
+    .line 1044
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 1041
+    .line 1045
     iput-object p1, p0, Landroidx/compose/material/RangeSliderLogic;->startInteractionSource:Landroidx/compose/foundation/interaction/MutableInteractionSource;
 
-    .line 1042
+    .line 1046
     iput-object p2, p0, Landroidx/compose/material/RangeSliderLogic;->endInteractionSource:Landroidx/compose/foundation/interaction/MutableInteractionSource;
 
-    .line 1043
+    .line 1047
     iput-object p3, p0, Landroidx/compose/material/RangeSliderLogic;->rawOffsetStart:Landroidx/compose/runtime/State;
 
-    .line 1044
+    .line 1048
     iput-object p4, p0, Landroidx/compose/material/RangeSliderLogic;->rawOffsetEnd:Landroidx/compose/runtime/State;
 
-    .line 1045
+    .line 1049
     iput-object p5, p0, Landroidx/compose/material/RangeSliderLogic;->onDrag:Landroidx/compose/runtime/State;
 
     return-void
@@ -166,7 +146,7 @@
 
     if-eqz p1, :cond_0
 
-    .line 1048
+    .line 1052
     iget-object p0, p0, Landroidx/compose/material/RangeSliderLogic;->startInteractionSource:Landroidx/compose/foundation/interaction/MutableInteractionSource;
 
     goto :goto_0
@@ -181,15 +161,7 @@
 .method public final captureThumb(ZFLandroidx/compose/foundation/interaction/Interaction;Lkotlinx/coroutines/CoroutineScope;)V
     .locals 7
 
-    const-string v0, "interaction"
-
-    invoke-static {p3, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string v0, "scope"
-
-    invoke-static {p4, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 1062
+    .line 1066
     iget-object v0, p0, Landroidx/compose/material/RangeSliderLogic;->onDrag:Landroidx/compose/runtime/State;
 
     invoke-interface {v0}, Landroidx/compose/runtime/State;->getValue()Ljava/lang/Object;
@@ -198,14 +170,14 @@
 
     check-cast v0, Lkotlin/jvm/functions/Function2;
 
-    .line 1063
+    .line 1067
     invoke-static {p1}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
     move-result-object v1
 
     if-eqz p1, :cond_0
 
-    .line 1064
+    .line 1068
     iget-object v2, p0, Landroidx/compose/material/RangeSliderLogic;->rawOffsetStart:Landroidx/compose/runtime/State;
 
     goto :goto_0
@@ -230,10 +202,10 @@
 
     move-result-object p2
 
-    .line 1062
+    .line 1066
     invoke-interface {v0, v1, p2}, Lkotlin/jvm/functions/Function2;->invoke(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 1066
+    .line 1070
     new-instance p2, Landroidx/compose/material/RangeSliderLogic$captureThumb$1;
 
     const/4 v0, 0x0
@@ -262,7 +234,7 @@
 .method public final compareOffsets(F)I
     .locals 1
 
-    .line 1051
+    .line 1055
     iget-object v0, p0, Landroidx/compose/material/RangeSliderLogic;->rawOffsetStart:Landroidx/compose/runtime/State;
 
     invoke-interface {v0}, Landroidx/compose/runtime/State;->getValue()Ljava/lang/Object;
@@ -281,7 +253,7 @@
 
     move-result v0
 
-    .line 1052
+    .line 1056
     iget-object p0, p0, Landroidx/compose/material/RangeSliderLogic;->rawOffsetEnd:Landroidx/compose/runtime/State;
 
     invoke-interface {p0}, Landroidx/compose/runtime/State;->getValue()Ljava/lang/Object;
@@ -300,7 +272,7 @@
 
     move-result p0
 
-    .line 1053
+    .line 1057
     invoke-static {v0, p0}, Ljava/lang/Float;->compare(FF)I
 
     move-result p0
@@ -311,7 +283,7 @@
 .method public final getEndInteractionSource()Landroidx/compose/foundation/interaction/MutableInteractionSource;
     .locals 0
 
-    .line 1042
+    .line 1046
     iget-object p0, p0, Landroidx/compose/material/RangeSliderLogic;->endInteractionSource:Landroidx/compose/foundation/interaction/MutableInteractionSource;
 
     return-object p0
@@ -331,7 +303,7 @@
         }
     .end annotation
 
-    .line 1045
+    .line 1049
     iget-object p0, p0, Landroidx/compose/material/RangeSliderLogic;->onDrag:Landroidx/compose/runtime/State;
 
     return-object p0
@@ -348,7 +320,7 @@
         }
     .end annotation
 
-    .line 1044
+    .line 1048
     iget-object p0, p0, Landroidx/compose/material/RangeSliderLogic;->rawOffsetEnd:Landroidx/compose/runtime/State;
 
     return-object p0
@@ -365,7 +337,7 @@
         }
     .end annotation
 
-    .line 1043
+    .line 1047
     iget-object p0, p0, Landroidx/compose/material/RangeSliderLogic;->rawOffsetStart:Landroidx/compose/runtime/State;
 
     return-object p0
@@ -374,7 +346,7 @@
 .method public final getStartInteractionSource()Landroidx/compose/foundation/interaction/MutableInteractionSource;
     .locals 0
 
-    .line 1041
+    .line 1045
     iget-object p0, p0, Landroidx/compose/material/RangeSliderLogic;->startInteractionSource:Landroidx/compose/foundation/interaction/MutableInteractionSource;
 
     return-object p0

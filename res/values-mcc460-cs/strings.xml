@@ -19,5 +19,4 @@ Zapněte WLAN v nabídce NASTAVENÍ."</string>
     <string name="camera_strings_runtime_permission_rationale_network_cta_txt">"Tato aplikace pomocí sítě WLAN a mobilních dat odesílá data uživatele (tj. zaznamenané snímky/videa, hlasová data, informace o účtech pro používané služby atd.) na internet.
 V závislosti na vašich smlouvách s mobilním operátorem nebo poskytovatele internetových služeb vám mohou být účtovány poplatky."</string>
     <string name="camera_strings_streaming_error_wifi_disconnected_txt">Žádné připojení WLAN</string>
-    <string name="mv_wireless_network_txt">Použít WLAN a mobilní data</string>
 </resources>

@@ -21,7 +21,7 @@
 .method constructor <init>()V
     .locals 0
 
-    .line 1337
+    .line 1394
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -46,13 +46,13 @@
         }
     .end annotation
 
-    .line 1341
+    .line 1398
     check-cast p1, Ljp/co/sony/mc/camera/setting/CameraSettings;
 
-    .line 1342
-    check-cast p3, Ljp/co/sony/mc/camera/configuration/parameters/BackSoftSkin;
+    .line 1399
+    check-cast p3, Ljp/co/sony/mc/camera/configuration/parameters/FocusFrameColor;
 
-    invoke-static {p1, p3}, Ljp/co/sony/mc/camera/setting/CameraSettings;->-$$Nest$msetBackSoftSkin(Ljp/co/sony/mc/camera/setting/CameraSettings;Ljp/co/sony/mc/camera/configuration/parameters/BackSoftSkin;)Z
+    invoke-static {p1, p3}, Ljp/co/sony/mc/camera/setting/CameraSettings;->-$$Nest$msetFocusFrameColor(Ljp/co/sony/mc/camera/setting/CameraSettings;Ljp/co/sony/mc/camera/configuration/parameters/FocusFrameColor;)Z
 
     move-result p0
 

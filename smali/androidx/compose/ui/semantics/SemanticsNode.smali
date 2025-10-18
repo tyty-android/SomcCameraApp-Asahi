@@ -5,12 +5,12 @@
 
 # annotations
 .annotation system Ldalvik/annotation/SourceDebugExtension;
-    value = "SMAP\nSemanticsNode.kt\nKotlin\n*S Kotlin\n*F\n+ 1 SemanticsNode.kt\nandroidx/compose/ui/semantics/SemanticsNode\n+ 2 fake.kt\nkotlin/jvm/internal/FakeKt\n+ 3 ListUtils.kt\nandroidx/compose/ui/util/ListUtilsKt\n+ 4 MutableVector.kt\nandroidx/compose/runtime/collection/MutableVector\n+ 5 NodeKind.kt\nandroidx/compose/ui/node/Nodes\n*L\n1#1,457:1\n1#2:458\n33#3,6:459\n33#3,6:477\n460#4,7:465\n467#4,4:473\n76#5:472\n76#5:483\n*S KotlinDebug\n*F\n+ 1 SemanticsNode.kt\nandroidx/compose/ui/semantics/SemanticsNode\n*L\n215#1:459,6\n343#1:477,6\n250#1:465,7\n250#1:473,4\n251#1:472\n364#1:483\n*E\n"
+    value = "SMAP\nSemanticsNode.kt\nKotlin\n*S Kotlin\n*F\n+ 1 SemanticsNode.kt\nandroidx/compose/ui/semantics/SemanticsNode\n+ 2 fake.kt\nkotlin/jvm/internal/FakeKt\n+ 3 NodeKind.kt\nandroidx/compose/ui/node/Nodes\n+ 4 ListUtils.kt\nandroidx/compose/ui/util/ListUtilsKt\n+ 5 MutableVector.kt\nandroidx/compose/runtime/collection/MutableVector\n*L\n1#1,475:1\n1#2:476\n76#3:477\n76#3:491\n76#3:502\n33#4,6:478\n33#4,6:496\n460#5,7:484\n467#5,4:492\n*S KotlinDebug\n*F\n+ 1 SemanticsNode.kt\nandroidx/compose/ui/semantics/SemanticsNode\n*L\n185#1:477\n267#1:491\n381#1:502\n227#1:478,6\n360#1:496,6\n262#1:484,7\n262#1:492,4\n*E\n"
 .end annotation
 
 .annotation runtime Lkotlin/Metadata;
     d1 = {
-        "\u0000\u0090\u0001\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000b\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0005\n\u0002\u0010 \n\u0002\u0008\u0007\n\u0002\u0010\u0008\n\u0002\u0008\u000e\n\u0002\u0018\u0002\n\u0002\u0008\u000b\n\u0002\u0018\u0002\n\u0002\u0008\u0007\n\u0002\u0018\u0002\n\u0002\u0008\u0003\n\u0002\u0018\u0002\n\u0002\u0008\u0007\n\u0002\u0010\u0002\n\u0000\n\u0002\u0010!\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0005\n\u0002\u0018\u0002\n\u0002\u0008\u0007\u0008\u0007\u0018\u00002\u00020\u0001B\'\u0008\u0000\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\u0006\u0010\u0004\u001a\u00020\u0005\u0012\u0006\u0010\u0006\u001a\u00020\u0007\u0012\u0006\u0010\u0008\u001a\u00020\t\u00a2\u0006\u0002\u0010\nJ\r\u0010F\u001a\u00020\u0000H\u0000\u00a2\u0006\u0002\u0008GJ\u0016\u0010H\u001a\u00020I2\u000c\u0010J\u001a\u0008\u0012\u0004\u0012\u00020\u00000KH\u0002J6\u0010L\u001a\u00020\u00002\u0008\u0010M\u001a\u0004\u0018\u00010N2\u0017\u0010O\u001a\u0013\u0012\u0004\u0012\u00020Q\u0012\u0004\u0012\u00020I0P\u00a2\u0006\u0002\u0008RH\u0002\u00f8\u0001\u0001\u00f8\u0001\u0000\u00a2\u0006\u0002\u0008SJ\u000f\u0010T\u001a\u0004\u0018\u00010UH\u0000\u00a2\u0006\u0002\u0008VJ\u001e\u0010W\u001a\u0008\u0012\u0004\u0012\u00020\u00000\u00122\u000e\u0008\u0002\u0010X\u001a\u0008\u0012\u0004\u0012\u00020\u00000KH\u0002J\u000e\u0010Y\u001a\u00020\u001a2\u0006\u0010Z\u001a\u00020[J\u001e\u0010\u0013\u001a\u0008\u0012\u0004\u0012\u00020\u00000\u00122\u0006\u0010\\\u001a\u00020\u00052\u0006\u0010]\u001a\u00020\u0005H\u0002J\u0010\u0010^\u001a\u00020I2\u0006\u0010_\u001a\u00020\tH\u0002J\u001d\u0010J\u001a\u0008\u0012\u0004\u0012\u00020\u00000\u00122\u0008\u0008\u0002\u0010]\u001a\u00020\u0005H\u0000\u00a2\u0006\u0002\u0008`J\u001a\u0010a\u001a\u00020I*\u00020\u00072\u000c\u0010X\u001a\u0008\u0012\u0004\u0012\u00020\u00000KH\u0002R\u0011\u0010\u000b\u001a\u00020\u000c8F\u00a2\u0006\u0006\u001a\u0004\u0008\r\u0010\u000eR\u0011\u0010\u000f\u001a\u00020\u000c8F\u00a2\u0006\u0006\u001a\u0004\u0008\u0010\u0010\u000eR\u0017\u0010\u0011\u001a\u0008\u0012\u0004\u0012\u00020\u00000\u00128F\u00a2\u0006\u0006\u001a\u0004\u0008\u0013\u0010\u0014R\u0011\u0010\u0015\u001a\u00020\t8F\u00a2\u0006\u0006\u001a\u0004\u0008\u0016\u0010\u0017R\u0010\u0010\u0018\u001a\u0004\u0018\u00010\u0000X\u0082\u000e\u00a2\u0006\u0002\n\u0000R\u0011\u0010\u0019\u001a\u00020\u001a\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\u001b\u0010\u001cR\u001a\u0010\u001d\u001a\u00020\u0005X\u0080\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\u0008\u001e\u0010\u001f\"\u0004\u0008 \u0010!R\u0014\u0010\"\u001a\u00020\u00058BX\u0082\u0004\u00a2\u0006\u0006\u001a\u0004\u0008\"\u0010\u001fR\u0011\u0010#\u001a\u00020\u00058F\u00a2\u0006\u0006\u001a\u0004\u0008#\u0010\u001fR\u0014\u0010$\u001a\u00020\u00058@X\u0080\u0004\u00a2\u0006\u0006\u001a\u0004\u0008%\u0010\u001fR\u0014\u0010&\u001a\u00020\u00058@X\u0080\u0004\u00a2\u0006\u0006\u001a\u0004\u0008\'\u0010\u001fR\u0011\u0010(\u001a\u00020)8F\u00a2\u0006\u0006\u001a\u0004\u0008*\u0010+R\u0014\u0010\u0006\u001a\u00020\u0007X\u0080\u0004\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008,\u0010-R\u0011\u0010\u0004\u001a\u00020\u0005\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008.\u0010\u001fR\u0014\u0010\u0002\u001a\u00020\u0003X\u0080\u0004\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008/\u00100R\u0013\u00101\u001a\u0004\u0018\u00010\u00008F\u00a2\u0006\u0006\u001a\u0004\u00082\u00103R\u001a\u00104\u001a\u0002058F\u00f8\u0001\u0000\u00f8\u0001\u0001\u00f8\u0001\u0002\u00a2\u0006\u0006\u001a\u0004\u00086\u00107R\u001a\u00108\u001a\u0002058F\u00f8\u0001\u0000\u00f8\u0001\u0001\u00f8\u0001\u0002\u00a2\u0006\u0006\u001a\u0004\u00089\u00107R\u001a\u0010:\u001a\u0008\u0012\u0004\u0012\u00020\u00000\u00128@X\u0080\u0004\u00a2\u0006\u0006\u001a\u0004\u0008;\u0010\u0014R\u0013\u0010<\u001a\u0004\u0018\u00010=8F\u00a2\u0006\u0006\u001a\u0004\u0008>\u0010?R\u001a\u0010@\u001a\u00020A8F\u00f8\u0001\u0000\u00f8\u0001\u0001\u00f8\u0001\u0002\u00a2\u0006\u0006\u001a\u0004\u0008B\u00107R\u0011\u0010C\u001a\u00020\u000c8F\u00a2\u0006\u0006\u001a\u0004\u0008D\u0010\u000eR\u0014\u0010\u0008\u001a\u00020\tX\u0080\u0004\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008E\u0010\u0017\u0082\u0002\u000f\n\u0002\u0008\u0019\n\u0005\u0008\u00a1\u001e0\u0001\n\u0002\u0008!\u00a8\u0006b"
+        "\u0000\u0090\u0001\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000b\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0007\n\u0002\u0010 \n\u0002\u0008\u0007\n\u0002\u0010\u0008\n\u0002\u0008\u000e\n\u0002\u0018\u0002\n\u0002\u0008\u000b\n\u0002\u0018\u0002\n\u0002\u0008\u0007\n\u0002\u0018\u0002\n\u0002\u0008\u0003\n\u0002\u0018\u0002\n\u0002\u0008\u0007\n\u0002\u0010\u0002\n\u0000\n\u0002\u0010!\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0005\n\u0002\u0018\u0002\n\u0002\u0008\u0007\u0008\u0007\u0018\u00002\u00020\u0001B\'\u0008\u0000\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\u0006\u0010\u0004\u001a\u00020\u0005\u0012\u0006\u0010\u0006\u001a\u00020\u0007\u0012\u0006\u0010\u0008\u001a\u00020\t\u00a2\u0006\u0002\u0010\nJ\r\u0010H\u001a\u00020\u0000H\u0000\u00a2\u0006\u0002\u0008IJ\u0016\u0010J\u001a\u00020K2\u000c\u0010L\u001a\u0008\u0012\u0004\u0012\u00020\u00000MH\u0002J3\u0010N\u001a\u00020\u00002\u0008\u0010O\u001a\u0004\u0018\u00010P2\u0017\u0010Q\u001a\u0013\u0012\u0004\u0012\u00020S\u0012\u0004\u0012\u00020K0R\u00a2\u0006\u0002\u0008TH\u0002\u00f8\u0001\u0000\u00a2\u0006\u0002\u0008UJ\u000f\u0010V\u001a\u0004\u0018\u00010WH\u0000\u00a2\u0006\u0002\u0008XJ\u001e\u0010Y\u001a\u0008\u0012\u0004\u0012\u00020\u00000\u00142\u000e\u0008\u0002\u0010Z\u001a\u0008\u0012\u0004\u0012\u00020\u00000MH\u0002J\u000e\u0010[\u001a\u00020\u001c2\u0006\u0010\\\u001a\u00020]J\u001e\u0010\u0015\u001a\u0008\u0012\u0004\u0012\u00020\u00000\u00142\u0006\u0010^\u001a\u00020\u00052\u0006\u0010_\u001a\u00020\u0005H\u0002J\u0010\u0010`\u001a\u00020K2\u0006\u0010a\u001a\u00020\tH\u0002J\u001d\u0010L\u001a\u0008\u0012\u0004\u0012\u00020\u00000\u00142\u0008\u0008\u0002\u0010_\u001a\u00020\u0005H\u0000\u00a2\u0006\u0002\u0008bJ\u001a\u0010c\u001a\u00020K*\u00020\u00072\u000c\u0010Z\u001a\u0008\u0012\u0004\u0012\u00020\u00000MH\u0002R\u0014\u0010\u000b\u001a\u00020\u000c8@X\u0080\u0004\u00a2\u0006\u0006\u001a\u0004\u0008\r\u0010\u000eR\u0011\u0010\u000f\u001a\u00020\u000c8F\u00a2\u0006\u0006\u001a\u0004\u0008\u0010\u0010\u000eR\u0011\u0010\u0011\u001a\u00020\u000c8F\u00a2\u0006\u0006\u001a\u0004\u0008\u0012\u0010\u000eR\u0017\u0010\u0013\u001a\u0008\u0012\u0004\u0012\u00020\u00000\u00148F\u00a2\u0006\u0006\u001a\u0004\u0008\u0015\u0010\u0016R\u0011\u0010\u0017\u001a\u00020\t8F\u00a2\u0006\u0006\u001a\u0004\u0008\u0018\u0010\u0019R\u0010\u0010\u001a\u001a\u0004\u0018\u00010\u0000X\u0082\u000e\u00a2\u0006\u0002\n\u0000R\u0011\u0010\u001b\u001a\u00020\u001c\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\u001d\u0010\u001eR\u001a\u0010\u001f\u001a\u00020\u0005X\u0080\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\u0008 \u0010!\"\u0004\u0008\"\u0010#R\u0014\u0010$\u001a\u00020\u00058BX\u0082\u0004\u00a2\u0006\u0006\u001a\u0004\u0008$\u0010!R\u0011\u0010%\u001a\u00020\u00058F\u00a2\u0006\u0006\u001a\u0004\u0008%\u0010!R\u0014\u0010&\u001a\u00020\u00058@X\u0080\u0004\u00a2\u0006\u0006\u001a\u0004\u0008\'\u0010!R\u0014\u0010(\u001a\u00020\u00058@X\u0080\u0004\u00a2\u0006\u0006\u001a\u0004\u0008)\u0010!R\u0011\u0010*\u001a\u00020+8F\u00a2\u0006\u0006\u001a\u0004\u0008,\u0010-R\u0014\u0010\u0006\u001a\u00020\u0007X\u0080\u0004\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008.\u0010/R\u0011\u0010\u0004\u001a\u00020\u0005\u00a2\u0006\u0008\n\u0000\u001a\u0004\u00080\u0010!R\u0014\u0010\u0002\u001a\u00020\u0003X\u0080\u0004\u00a2\u0006\u0008\n\u0000\u001a\u0004\u00081\u00102R\u0013\u00103\u001a\u0004\u0018\u00010\u00008F\u00a2\u0006\u0006\u001a\u0004\u00084\u00105R\u0017\u00106\u001a\u0002078F\u00f8\u0001\u0000\u00f8\u0001\u0001\u00a2\u0006\u0006\u001a\u0004\u00088\u00109R\u0017\u0010:\u001a\u0002078F\u00f8\u0001\u0000\u00f8\u0001\u0001\u00a2\u0006\u0006\u001a\u0004\u0008;\u00109R\u001a\u0010<\u001a\u0008\u0012\u0004\u0012\u00020\u00000\u00148@X\u0080\u0004\u00a2\u0006\u0006\u001a\u0004\u0008=\u0010\u0016R\u0013\u0010>\u001a\u0004\u0018\u00010?8F\u00a2\u0006\u0006\u001a\u0004\u0008@\u0010AR\u0017\u0010B\u001a\u00020C8F\u00f8\u0001\u0000\u00f8\u0001\u0001\u00a2\u0006\u0006\u001a\u0004\u0008D\u00109R\u0011\u0010E\u001a\u00020\u000c8F\u00a2\u0006\u0006\u001a\u0004\u0008F\u0010\u000eR\u0014\u0010\u0008\u001a\u00020\tX\u0080\u0004\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008G\u0010\u0019\u0082\u0002\u000b\n\u0005\u0008\u00a1\u001e0\u0001\n\u0002\u0008!\u00a8\u0006d"
     }
     d2 = {
         "Landroidx/compose/ui/semantics/SemanticsNode;",
@@ -24,10 +24,12 @@
         "unmergedConfig",
         "Landroidx/compose/ui/semantics/SemanticsConfiguration;",
         "(Landroidx/compose/ui/Modifier$Node;ZLandroidx/compose/ui/node/LayoutNode;Landroidx/compose/ui/semantics/SemanticsConfiguration;)V",
-        "boundsInRoot",
+        "boundsInParent",
         "Landroidx/compose/ui/geometry/Rect;",
-        "getBoundsInRoot",
+        "getBoundsInParent$ui_release",
         "()Landroidx/compose/ui/geometry/Rect;",
+        "boundsInRoot",
+        "getBoundsInRoot",
         "boundsInWindow",
         "getBoundsInWindow",
         "children",
@@ -151,19 +153,7 @@
 .end method
 
 .method public constructor <init>(Landroidx/compose/ui/Modifier$Node;ZLandroidx/compose/ui/node/LayoutNode;Landroidx/compose/ui/semantics/SemanticsConfiguration;)V
-    .locals 1
-
-    const-string v0, "outerSemanticsNode"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string v0, "layoutNode"
-
-    invoke-static {p3, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string/jumbo v0, "unmergedConfig"
-
-    invoke-static {p4, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+    .locals 0
 
     .line 86
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -201,14 +191,14 @@
         }
     .end annotation
 
-    .line 369
+    .line 386
     invoke-static {p0}, Landroidx/compose/ui/semantics/SemanticsNodeKt;->access$getRole(Landroidx/compose/ui/semantics/SemanticsNode;)Landroidx/compose/ui/semantics/Role;
 
     move-result-object v0
 
     if-eqz v0, :cond_0
 
-    .line 370
+    .line 387
     iget-object v1, p0, Landroidx/compose/ui/semantics/SemanticsNode;->unmergedConfig:Landroidx/compose/ui/semantics/SemanticsConfiguration;
 
     invoke-virtual {v1}, Landroidx/compose/ui/semantics/SemanticsConfiguration;->isMergingSemanticsOfDescendants()Z
@@ -217,7 +207,7 @@
 
     if-eqz v1, :cond_0
 
-    .line 371
+    .line 388
     move-object v1, p1
 
     check-cast v1, Ljava/util/Collection;
@@ -230,7 +220,7 @@
 
     if-eqz v1, :cond_0
 
-    .line 373
+    .line 390
     new-instance v1, Landroidx/compose/ui/semantics/SemanticsNode$emitFakeNodes$fakeNode$1;
 
     invoke-direct {v1, v0}, Landroidx/compose/ui/semantics/SemanticsNode$emitFakeNodes$fakeNode$1;-><init>(Landroidx/compose/ui/semantics/Role;)V
@@ -241,10 +231,10 @@
 
     move-result-object v0
 
-    .line 376
+    .line 393
     invoke-interface {p1, v0}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    .line 380
+    .line 397
     :cond_0
     iget-object v0, p0, Landroidx/compose/ui/semantics/SemanticsNode;->unmergedConfig:Landroidx/compose/ui/semantics/SemanticsConfiguration;
 
@@ -260,7 +250,7 @@
 
     if-eqz v0, :cond_2
 
-    .line 381
+    .line 398
     move-object v0, p1
 
     check-cast v0, Ljava/util/Collection;
@@ -281,7 +271,7 @@
 
     if-eqz v0, :cond_2
 
-    .line 384
+    .line 401
     iget-object v0, p0, Landroidx/compose/ui/semantics/SemanticsNode;->unmergedConfig:Landroidx/compose/ui/semantics/SemanticsConfiguration;
 
     sget-object v1, Landroidx/compose/ui/semantics/SemanticsProperties;->INSTANCE:Landroidx/compose/ui/semantics/SemanticsProperties;
@@ -314,7 +304,7 @@
     :goto_0
     if-eqz v0, :cond_2
 
-    .line 386
+    .line 403
     new-instance v2, Landroidx/compose/ui/semantics/SemanticsNode$emitFakeNodes$fakeNode$2;
 
     invoke-direct {v2, v0}, Landroidx/compose/ui/semantics/SemanticsNode$emitFakeNodes$fakeNode$2;-><init>(Ljava/lang/String;)V
@@ -327,7 +317,7 @@
 
     const/4 v0, 0x0
 
-    .line 389
+    .line 406
     invoke-interface {p1, v0, p0}, Ljava/util/List;->add(ILjava/lang/Object;)V
 
     :cond_2
@@ -349,38 +339,38 @@
         }
     .end annotation
 
-    .line 398
+    .line 415
     new-instance v0, Landroidx/compose/ui/semantics/SemanticsConfiguration;
 
     invoke-direct {v0}, Landroidx/compose/ui/semantics/SemanticsConfiguration;-><init>()V
 
     const/4 v1, 0x0
 
-    .line 399
+    .line 416
     invoke-virtual {v0, v1}, Landroidx/compose/ui/semantics/SemanticsConfiguration;->setMergingSemanticsOfDescendants(Z)V
 
-    .line 400
+    .line 417
     invoke-virtual {v0, v1}, Landroidx/compose/ui/semantics/SemanticsConfiguration;->setClearingSemantics(Z)V
 
-    .line 401
+    .line 418
     invoke-interface {p2, v0}, Lkotlin/jvm/functions/Function1;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 403
+    .line 420
     new-instance v2, Landroidx/compose/ui/semantics/SemanticsNode;
 
-    .line 404
+    .line 421
     new-instance v3, Landroidx/compose/ui/semantics/SemanticsNode$fakeSemanticsNode$fakeNode$1;
 
     invoke-direct {v3, p2}, Landroidx/compose/ui/semantics/SemanticsNode$fakeSemanticsNode$fakeNode$1;-><init>(Lkotlin/jvm/functions/Function1;)V
 
     check-cast v3, Landroidx/compose/ui/Modifier$Node;
 
-    .line 410
+    .line 427
     new-instance p2, Landroidx/compose/ui/node/LayoutNode;
 
     if-eqz p1, :cond_0
 
-    .line 413
+    .line 430
     invoke-static {p0}, Landroidx/compose/ui/semantics/SemanticsNodeKt;->access$roleFakeNodeId(Landroidx/compose/ui/semantics/SemanticsNode;)I
 
     move-result p1
@@ -395,16 +385,16 @@
     :goto_0
     const/4 v4, 0x1
 
-    .line 410
+    .line 427
     invoke-direct {p2, v4, p1}, Landroidx/compose/ui/node/LayoutNode;-><init>(ZI)V
 
-    .line 403
+    .line 420
     invoke-direct {v2, v3, v1, p2, v0}, Landroidx/compose/ui/semantics/SemanticsNode;-><init>(Landroidx/compose/ui/Modifier$Node;ZLandroidx/compose/ui/node/LayoutNode;Landroidx/compose/ui/semantics/SemanticsConfiguration;)V
 
-    .line 417
+    .line 434
     iput-boolean v4, v2, Landroidx/compose/ui/semantics/SemanticsNode;->isFake:Z
 
-    .line 418
+    .line 435
     iput-object p0, v2, Landroidx/compose/ui/semantics/SemanticsNode;->fakeNodeParent:Landroidx/compose/ui/semantics/SemanticsNode;
 
     return-object v2
@@ -422,51 +412,58 @@
         }
     .end annotation
 
-    .line 250
+    .line 262
     invoke-virtual {p1}, Landroidx/compose/ui/node/LayoutNode;->getZSortedChildren()Landroidx/compose/runtime/collection/MutableVector;
 
     move-result-object p1
 
-    .line 466
+    .line 485
     invoke-virtual {p1}, Landroidx/compose/runtime/collection/MutableVector;->getSize()I
 
     move-result v0
 
-    if-lez v0, :cond_2
+    if-lez v0, :cond_3
 
-    .line 469
+    .line 488
     invoke-virtual {p1}, Landroidx/compose/runtime/collection/MutableVector;->getContent()[Ljava/lang/Object;
 
     move-result-object p1
 
     const/4 v1, 0x0
 
-    .line 471
+    .line 490
     :cond_0
     aget-object v2, p1, v1
 
     check-cast v2, Landroidx/compose/ui/node/LayoutNode;
 
-    .line 251
+    .line 266
+    invoke-virtual {v2}, Landroidx/compose/ui/node/LayoutNode;->isAttached()Z
+
+    move-result v3
+
+    if-eqz v3, :cond_2
+
+    .line 267
     invoke-virtual {v2}, Landroidx/compose/ui/node/LayoutNode;->getNodes$ui_release()Landroidx/compose/ui/node/NodeChain;
 
     move-result-object v3
 
     const/16 v4, 0x8
 
-    .line 472
+    .line 491
     invoke-static {v4}, Landroidx/compose/ui/node/NodeKind;->constructor-impl(I)I
 
     move-result v4
 
-    .line 251
+    .line 267
     invoke-virtual {v3, v4}, Landroidx/compose/ui/node/NodeChain;->has-H91voCI$ui_release(I)Z
 
     move-result v3
 
     if-eqz v3, :cond_1
 
-    .line 252
+    .line 268
     iget-boolean v3, p0, Landroidx/compose/ui/semantics/SemanticsNode;->mergingEnabled:Z
 
     invoke-static {v2, v3}, Landroidx/compose/ui/semantics/SemanticsNodeKt;->SemanticsNode(Landroidx/compose/ui/node/LayoutNode;Z)Landroidx/compose/ui/semantics/SemanticsNode;
@@ -477,16 +474,17 @@
 
     goto :goto_0
 
-    .line 254
+    .line 270
     :cond_1
     invoke-direct {p0, v2, p2}, Landroidx/compose/ui/semantics/SemanticsNode;->fillOneLayerOfSemanticsWrappers(Landroidx/compose/ui/node/LayoutNode;Ljava/util/List;)V
 
+    :cond_2
     :goto_0
     add-int/lit8 v1, v1, 0x1
 
     if-lt v1, v0, :cond_0
 
-    :cond_2
+    :cond_3
     return-void
 .end method
 
@@ -510,12 +508,12 @@
 
     const/4 v2, 0x0
 
-    .line 343
+    .line 360
     invoke-static {p0, v2, v0, v1}, Landroidx/compose/ui/semantics/SemanticsNode;->unmergedChildren$ui_release$default(Landroidx/compose/ui/semantics/SemanticsNode;ZILjava/lang/Object;)Ljava/util/List;
 
     move-result-object p0
 
-    .line 478
+    .line 497
     invoke-interface {p0}, Ljava/util/List;->size()I
 
     move-result v0
@@ -523,27 +521,27 @@
     :goto_0
     if-ge v2, v0, :cond_2
 
-    .line 479
+    .line 498
     invoke-interface {p0, v2}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
     move-result-object v1
 
-    .line 480
+    .line 499
     check-cast v1, Landroidx/compose/ui/semantics/SemanticsNode;
 
-    .line 344
+    .line 361
     invoke-direct {v1}, Landroidx/compose/ui/semantics/SemanticsNode;->isMergingSemanticsOfDescendants()Z
 
     move-result v3
 
     if-eqz v3, :cond_0
 
-    .line 345
+    .line 362
     invoke-interface {p1, v1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
     goto :goto_1
 
-    .line 347
+    .line 364
     :cond_0
     iget-object v3, v1, Landroidx/compose/ui/semantics/SemanticsNode;->unmergedConfig:Landroidx/compose/ui/semantics/SemanticsConfiguration;
 
@@ -553,7 +551,7 @@
 
     if-nez v3, :cond_1
 
-    .line 348
+    .line 365
     invoke-direct {v1, p1}, Landroidx/compose/ui/semantics/SemanticsNode;->findOneLayerOfMergingSemanticsNodes(Ljava/util/List;)Ljava/util/List;
 
     :cond_1
@@ -573,14 +571,14 @@
 
     if-eqz p2, :cond_0
 
-    .line 341
+    .line 358
     new-instance p1, Ljava/util/ArrayList;
 
     invoke-direct {p1}, Ljava/util/ArrayList;-><init>()V
 
     check-cast p1, Ljava/util/List;
 
-    .line 340
+    .line 357
     :cond_0
     invoke-direct {p0, p1}, Landroidx/compose/ui/semantics/SemanticsNode;->findOneLayerOfMergingSemanticsNodes(Ljava/util/List;)Ljava/util/List;
 
@@ -602,7 +600,7 @@
 
     if-nez p1, :cond_0
 
-    .line 299
+    .line 316
     iget-object p1, p0, Landroidx/compose/ui/semantics/SemanticsNode;->unmergedConfig:Landroidx/compose/ui/semantics/SemanticsConfiguration;
 
     invoke-virtual {p1}, Landroidx/compose/ui/semantics/SemanticsConfiguration;->isClearingSemantics()Z
@@ -611,14 +609,14 @@
 
     if-eqz p1, :cond_0
 
-    .line 300
+    .line 317
     invoke-static {}, Lkotlin/collections/CollectionsKt;->emptyList()Ljava/util/List;
 
     move-result-object p0
 
     return-object p0
 
-    .line 303
+    .line 320
     :cond_0
     invoke-direct {p0}, Landroidx/compose/ui/semantics/SemanticsNode;->isMergingSemanticsOfDescendants()Z
 
@@ -630,14 +628,14 @@
 
     const/4 p2, 0x0
 
-    .line 307
+    .line 324
     invoke-static {p0, p2, p1, p2}, Landroidx/compose/ui/semantics/SemanticsNode;->findOneLayerOfMergingSemanticsNodes$default(Landroidx/compose/ui/semantics/SemanticsNode;Ljava/util/List;ILjava/lang/Object;)Ljava/util/List;
 
     move-result-object p0
 
     return-object p0
 
-    .line 310
+    .line 327
     :cond_1
     invoke-virtual {p0, p2}, Landroidx/compose/ui/semantics/SemanticsNode;->unmergedChildren$ui_release(Z)Ljava/util/List;
 
@@ -649,7 +647,7 @@
 .method private final isMergingSemanticsOfDescendants()Z
     .locals 1
 
-    .line 227
+    .line 239
     iget-boolean v0, p0, Landroidx/compose/ui/semantics/SemanticsNode;->mergingEnabled:Z
 
     if-eqz v0, :cond_0
@@ -676,7 +674,7 @@
 .method private final mergeConfig(Landroidx/compose/ui/semantics/SemanticsConfiguration;)V
     .locals 4
 
-    .line 214
+    .line 226
     iget-object v0, p0, Landroidx/compose/ui/semantics/SemanticsNode;->unmergedConfig:Landroidx/compose/ui/semantics/SemanticsConfiguration;
 
     invoke-virtual {v0}, Landroidx/compose/ui/semantics/SemanticsConfiguration;->isClearingSemantics()Z
@@ -691,12 +689,12 @@
 
     const/4 v2, 0x1
 
-    .line 215
+    .line 227
     invoke-static {p0, v1, v2, v0}, Landroidx/compose/ui/semantics/SemanticsNode;->unmergedChildren$ui_release$default(Landroidx/compose/ui/semantics/SemanticsNode;ZILjava/lang/Object;)Ljava/util/List;
 
     move-result-object p0
 
-    .line 460
+    .line 479
     invoke-interface {p0}, Ljava/util/List;->size()I
 
     move-result v0
@@ -704,27 +702,27 @@
     :goto_0
     if-ge v1, v0, :cond_1
 
-    .line 461
+    .line 480
     invoke-interface {p0, v1}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
     move-result-object v2
 
-    .line 462
+    .line 481
     check-cast v2, Landroidx/compose/ui/semantics/SemanticsNode;
 
-    .line 218
+    .line 230
     invoke-direct {v2}, Landroidx/compose/ui/semantics/SemanticsNode;->isMergingSemanticsOfDescendants()Z
 
     move-result v3
 
     if-nez v3, :cond_0
 
-    .line 219
+    .line 231
     iget-object v3, v2, Landroidx/compose/ui/semantics/SemanticsNode;->unmergedConfig:Landroidx/compose/ui/semantics/SemanticsConfiguration;
 
     invoke-virtual {p1, v3}, Landroidx/compose/ui/semantics/SemanticsConfiguration;->mergeChild$ui_release(Landroidx/compose/ui/semantics/SemanticsConfiguration;)V
 
-    .line 220
+    .line 232
     invoke-direct {v2, p1}, Landroidx/compose/ui/semantics/SemanticsNode;->mergeConfig(Landroidx/compose/ui/semantics/SemanticsConfiguration;)V
 
     :cond_0
@@ -745,7 +743,7 @@
 
     const/4 p1, 0x0
 
-    .line 229
+    .line 241
     :cond_0
     invoke-virtual {p0, p1}, Landroidx/compose/ui/semantics/SemanticsNode;->unmergedChildren$ui_release(Z)Ljava/util/List;
 
@@ -759,21 +757,21 @@
 .method public final copyWithMergingEnabled$ui_release()Landroidx/compose/ui/semantics/SemanticsNode;
     .locals 4
 
-    .line 423
+    .line 440
     new-instance v0, Landroidx/compose/ui/semantics/SemanticsNode;
 
-    .line 424
+    .line 441
     iget-object v1, p0, Landroidx/compose/ui/semantics/SemanticsNode;->outerSemanticsNode:Landroidx/compose/ui/Modifier$Node;
 
-    .line 426
+    .line 443
     iget-object v2, p0, Landroidx/compose/ui/semantics/SemanticsNode;->layoutNode:Landroidx/compose/ui/node/LayoutNode;
 
-    .line 427
+    .line 444
     iget-object p0, p0, Landroidx/compose/ui/semantics/SemanticsNode;->unmergedConfig:Landroidx/compose/ui/semantics/SemanticsConfiguration;
 
     const/4 v3, 0x1
 
-    .line 423
+    .line 440
     invoke-direct {v0, v1, v3, v2, p0}, Landroidx/compose/ui/semantics/SemanticsNode;-><init>(Landroidx/compose/ui/Modifier$Node;ZLandroidx/compose/ui/node/LayoutNode;Landroidx/compose/ui/semantics/SemanticsConfiguration;)V
 
     return-object v0
@@ -782,7 +780,7 @@
 .method public final findCoordinatorToGetBounds$ui_release()Landroidx/compose/ui/node/NodeCoordinator;
     .locals 1
 
-    .line 362
+    .line 379
     iget-boolean v0, p0, Landroidx/compose/ui/semantics/SemanticsNode;->isFake:Z
 
     if-eqz v0, :cond_1
@@ -805,7 +803,7 @@
     :goto_0
     return-object p0
 
-    .line 363
+    .line 380
     :cond_1
     iget-object v0, p0, Landroidx/compose/ui/semantics/SemanticsNode;->layoutNode:Landroidx/compose/ui/node/LayoutNode;
 
@@ -829,12 +827,12 @@
     :goto_1
     const/16 p0, 0x8
 
-    .line 483
+    .line 502
     invoke-static {p0}, Landroidx/compose/ui/node/NodeKind;->constructor-impl(I)I
 
     move-result p0
 
-    .line 364
+    .line 381
     invoke-static {v0, p0}, Landroidx/compose/ui/node/DelegatableNodeKt;->requireCoordinator-64DMado(Landroidx/compose/ui/node/DelegatableNode;I)Landroidx/compose/ui/node/NodeCoordinator;
 
     move-result-object p0
@@ -843,13 +841,9 @@
 .end method
 
 .method public final getAlignmentLinePosition(Landroidx/compose/ui/layout/AlignmentLine;)I
-    .locals 1
+    .locals 0
 
-    const-string v0, "alignmentLine"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 188
+    .line 200
     invoke-virtual {p0}, Landroidx/compose/ui/semantics/SemanticsNode;->findCoordinatorToGetBounds$ui_release()Landroidx/compose/ui/node/NodeCoordinator;
 
     move-result-object p0
@@ -867,6 +861,96 @@
 
     :goto_0
     return p0
+.end method
+
+.method public final getBoundsInParent$ui_release()Landroidx/compose/ui/geometry/Rect;
+    .locals 4
+
+    .line 182
+    invoke-virtual {p0}, Landroidx/compose/ui/semantics/SemanticsNode;->getParent()Landroidx/compose/ui/semantics/SemanticsNode;
+
+    move-result-object v0
+
+    if-nez v0, :cond_0
+
+    sget-object p0, Landroidx/compose/ui/geometry/Rect;->Companion:Landroidx/compose/ui/geometry/Rect$Companion;
+
+    invoke-virtual {p0}, Landroidx/compose/ui/geometry/Rect$Companion;->getZero()Landroidx/compose/ui/geometry/Rect;
+
+    move-result-object p0
+
+    return-object p0
+
+    .line 183
+    :cond_0
+    invoke-virtual {p0}, Landroidx/compose/ui/semantics/SemanticsNode;->findCoordinatorToGetBounds$ui_release()Landroidx/compose/ui/node/NodeCoordinator;
+
+    move-result-object p0
+
+    if-eqz p0, :cond_2
+
+    invoke-virtual {p0}, Landroidx/compose/ui/node/NodeCoordinator;->isAttached()Z
+
+    move-result v1
+
+    const/4 v2, 0x0
+
+    if-eqz v1, :cond_1
+
+    goto :goto_0
+
+    :cond_1
+    move-object p0, v2
+
+    :goto_0
+    if-eqz p0, :cond_2
+
+    .line 184
+    invoke-virtual {p0}, Landroidx/compose/ui/node/NodeCoordinator;->getCoordinates()Landroidx/compose/ui/layout/LayoutCoordinates;
+
+    move-result-object p0
+
+    if-eqz p0, :cond_2
+
+    .line 185
+    iget-object v0, v0, Landroidx/compose/ui/semantics/SemanticsNode;->outerSemanticsNode:Landroidx/compose/ui/Modifier$Node;
+
+    check-cast v0, Landroidx/compose/ui/node/DelegatableNode;
+
+    const/16 v1, 0x8
+
+    .line 477
+    invoke-static {v1}, Landroidx/compose/ui/node/NodeKind;->constructor-impl(I)I
+
+    move-result v1
+
+    .line 185
+    invoke-static {v0, v1}, Landroidx/compose/ui/node/DelegatableNodeKt;->requireCoordinator-64DMado(Landroidx/compose/ui/node/DelegatableNode;I)Landroidx/compose/ui/node/NodeCoordinator;
+
+    move-result-object v0
+
+    check-cast v0, Landroidx/compose/ui/layout/LayoutCoordinates;
+
+    const/4 v1, 0x0
+
+    const/4 v3, 0x2
+
+    .line 186
+    invoke-static {v0, p0, v1, v3, v2}, Landroidx/compose/ui/layout/LayoutCoordinates;->localBoundingBoxOf$default(Landroidx/compose/ui/layout/LayoutCoordinates;Landroidx/compose/ui/layout/LayoutCoordinates;ZILjava/lang/Object;)Landroidx/compose/ui/geometry/Rect;
+
+    move-result-object p0
+
+    return-object p0
+
+    .line 184
+    :cond_2
+    sget-object p0, Landroidx/compose/ui/geometry/Rect;->Companion:Landroidx/compose/ui/geometry/Rect$Companion;
+
+    invoke-virtual {p0}, Landroidx/compose/ui/geometry/Rect$Companion;->getZero()Landroidx/compose/ui/geometry/Rect;
+
+    move-result-object p0
+
+    return-object p0
 .end method
 
 .method public final getBoundsInRoot()Landroidx/compose/ui/geometry/Rect;
@@ -968,14 +1052,14 @@
         }
     .end annotation
 
-    .line 269
+    .line 286
     iget-boolean v0, p0, Landroidx/compose/ui/semantics/SemanticsNode;->mergingEnabled:Z
 
     xor-int/lit8 v0, v0, 0x1
 
     const/4 v1, 0x0
 
-    .line 268
+    .line 285
     invoke-direct {p0, v0, v1}, Landroidx/compose/ui/semantics/SemanticsNode;->getChildren(ZZ)Ljava/util/List;
 
     move-result-object p0
@@ -986,26 +1070,26 @@
 .method public final getConfig()Landroidx/compose/ui/semantics/SemanticsConfiguration;
     .locals 1
 
-    .line 204
+    .line 216
     invoke-direct {p0}, Landroidx/compose/ui/semantics/SemanticsNode;->isMergingSemanticsOfDescendants()Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
-    .line 205
+    .line 217
     iget-object v0, p0, Landroidx/compose/ui/semantics/SemanticsNode;->unmergedConfig:Landroidx/compose/ui/semantics/SemanticsConfiguration;
 
     invoke-virtual {v0}, Landroidx/compose/ui/semantics/SemanticsConfiguration;->copy()Landroidx/compose/ui/semantics/SemanticsConfiguration;
 
     move-result-object v0
 
-    .line 206
+    .line 218
     invoke-direct {p0, v0}, Landroidx/compose/ui/semantics/SemanticsNode;->mergeConfig(Landroidx/compose/ui/semantics/SemanticsConfiguration;)V
 
     return-object v0
 
-    .line 209
+    .line 221
     :cond_0
     iget-object p0, p0, Landroidx/compose/ui/semantics/SemanticsNode;->unmergedConfig:Landroidx/compose/ui/semantics/SemanticsConfiguration;
 
@@ -1062,14 +1146,14 @@
 .method public final getParent()Landroidx/compose/ui/semantics/SemanticsNode;
     .locals 3
 
-    .line 322
+    .line 339
     iget-object v0, p0, Landroidx/compose/ui/semantics/SemanticsNode;->fakeNodeParent:Landroidx/compose/ui/semantics/SemanticsNode;
 
     if-eqz v0, :cond_0
 
     return-object v0
 
-    .line 324
+    .line 341
     :cond_0
     iget-boolean v0, p0, Landroidx/compose/ui/semantics/SemanticsNode;->mergingEnabled:Z
 
@@ -1077,7 +1161,7 @@
 
     if-eqz v0, :cond_1
 
-    .line 325
+    .line 342
     iget-object v0, p0, Landroidx/compose/ui/semantics/SemanticsNode;->layoutNode:Landroidx/compose/ui/node/LayoutNode;
 
     sget-object v2, Landroidx/compose/ui/semantics/SemanticsNode$parent$1;->INSTANCE:Landroidx/compose/ui/semantics/SemanticsNode$parent$1;
@@ -1096,7 +1180,7 @@
     :goto_0
     if-nez v0, :cond_2
 
-    .line 331
+    .line 348
     iget-object v0, p0, Landroidx/compose/ui/semantics/SemanticsNode;->layoutNode:Landroidx/compose/ui/node/LayoutNode;
 
     sget-object v2, Landroidx/compose/ui/semantics/SemanticsNode$parent$2;->INSTANCE:Landroidx/compose/ui/semantics/SemanticsNode$parent$2;
@@ -1112,7 +1196,7 @@
 
     return-object v1
 
-    .line 337
+    .line 354
     :cond_3
     iget-boolean p0, p0, Landroidx/compose/ui/semantics/SemanticsNode;->mergingEnabled:Z
 
@@ -1226,7 +1310,7 @@
 
     const/4 v1, 0x1
 
-    .line 281
+    .line 298
     invoke-direct {p0, v0, v1}, Landroidx/compose/ui/semantics/SemanticsNode;->getChildren(ZZ)Ljava/util/List;
 
     move-result-object p0
@@ -1363,7 +1447,7 @@
 .method public final isRoot()Z
     .locals 0
 
-    .line 317
+    .line 334
     invoke-virtual {p0}, Landroidx/compose/ui/semantics/SemanticsNode;->getParent()Landroidx/compose/ui/semantics/SemanticsNode;
 
     move-result-object p0
@@ -1384,7 +1468,7 @@
 .method public final isTransparent$ui_release()Z
     .locals 0
 
-    .line 181
+    .line 193
     invoke-virtual {p0}, Landroidx/compose/ui/semantics/SemanticsNode;->findCoordinatorToGetBounds$ui_release()Landroidx/compose/ui/node/NodeCoordinator;
 
     move-result-object p0
@@ -1465,7 +1549,7 @@
         }
     .end annotation
 
-    .line 233
+    .line 245
     iget-boolean v0, p0, Landroidx/compose/ui/semantics/SemanticsNode;->isFake:Z
 
     if-eqz v0, :cond_0
@@ -1476,7 +1560,7 @@
 
     return-object p0
 
-    .line 234
+    .line 246
     :cond_0
     new-instance v0, Ljava/util/ArrayList;
 
@@ -1484,14 +1568,14 @@
 
     check-cast v0, Ljava/util/List;
 
-    .line 236
+    .line 248
     iget-object v1, p0, Landroidx/compose/ui/semantics/SemanticsNode;->layoutNode:Landroidx/compose/ui/node/LayoutNode;
 
     invoke-direct {p0, v1, v0}, Landroidx/compose/ui/semantics/SemanticsNode;->fillOneLayerOfSemanticsWrappers(Landroidx/compose/ui/node/LayoutNode;Ljava/util/List;)V
 
     if-eqz p1, :cond_1
 
-    .line 239
+    .line 251
     invoke-direct {p0, v0}, Landroidx/compose/ui/semantics/SemanticsNode;->emitFakeNodes(Ljava/util/List;)V
 
     :cond_1

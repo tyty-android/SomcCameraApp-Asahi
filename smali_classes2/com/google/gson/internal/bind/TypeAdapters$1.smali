@@ -26,7 +26,7 @@
 .method constructor <init>()V
     .locals 0
 
-    .line 72
+    .line 73
     invoke-direct {p0}, Lcom/google/gson/TypeAdapter;-><init>()V
 
     return-void
@@ -35,17 +35,36 @@
 
 # virtual methods
 .method public read(Lcom/google/gson/stream/JsonReader;)Ljava/lang/Class;
-    .locals 0
+    .locals 1
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
         }
     .end annotation
 
-    .line 80
+    .line 86
     new-instance p0, Ljava/lang/UnsupportedOperationException;
 
-    const-string p1, "Attempted to deserialize a java.lang.Class. Forgot to register a type adapter?"
+    new-instance p1, Ljava/lang/StringBuilder;
+
+    const-string v0, "Attempted to deserialize a java.lang.Class. Forgot to register a type adapter?\nSee "
+
+    invoke-direct {p1, v0}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+
+    const-string v0, "java-lang-class-unsupported"
+
+    .line 89
+    invoke-static {v0}, Lcom/google/gson/internal/TroubleshootingGuide;->createUrl(Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v0
+
+    invoke-virtual {p1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object p1
+
+    invoke-virtual {p1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object p1
 
     invoke-direct {p0, p1}, Ljava/lang/UnsupportedOperationException;-><init>(Ljava/lang/String;)V
 
@@ -60,7 +79,7 @@
         }
     .end annotation
 
-    .line 72
+    .line 73
     invoke-virtual {p0, p1}, Lcom/google/gson/internal/bind/TypeAdapters$1;->read(Lcom/google/gson/stream/JsonReader;)Ljava/lang/Class;
 
     move-result-object p0
@@ -76,7 +95,7 @@
         }
     .end annotation
 
-    .line 75
+    .line 76
     new-instance p0, Ljava/lang/UnsupportedOperationException;
 
     new-instance p1, Ljava/lang/StringBuilder;
@@ -85,7 +104,7 @@
 
     invoke-direct {p1, v0}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
-    .line 76
+    .line 78
     invoke-virtual {p2}, Ljava/lang/Class;->getName()Ljava/lang/String;
 
     move-result-object p2
@@ -94,7 +113,18 @@
 
     move-result-object p1
 
-    const-string p2, ". Forgot to register a type adapter?"
+    const-string p2, ". Forgot to register a type adapter?\nSee "
+
+    invoke-virtual {p1, p2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object p1
+
+    const-string p2, "java-lang-class-unsupported"
+
+    .line 81
+    invoke-static {p2}, Lcom/google/gson/internal/TroubleshootingGuide;->createUrl(Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object p2
 
     invoke-virtual {p1, p2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -117,7 +147,7 @@
         }
     .end annotation
 
-    .line 72
+    .line 73
     check-cast p2, Ljava/lang/Class;
 
     invoke-virtual {p0, p1, p2}, Lcom/google/gson/internal/bind/TypeAdapters$1;->write(Lcom/google/gson/stream/JsonWriter;Ljava/lang/Class;)V

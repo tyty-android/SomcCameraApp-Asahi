@@ -48,8 +48,6 @@
 
 
 # instance fields
-.field final synthetic $$dirty:I
-
 .field final synthetic $index:I
 
 .field final synthetic $itemProvider:Landroidx/compose/foundation/lazy/layout/LazyLayoutItemProvider;
@@ -58,7 +56,7 @@
 
 
 # direct methods
-.method constructor <init>(Landroidx/compose/foundation/lazy/layout/LazyLayoutItemProvider;ILjava/lang/Object;I)V
+.method constructor <init>(Landroidx/compose/foundation/lazy/layout/LazyLayoutItemProvider;ILjava/lang/Object;)V
     .locals 0
 
     iput-object p1, p0, Landroidx/compose/foundation/lazy/layout/LazyLayoutItemContentFactoryKt$SkippableItem$1;->$itemProvider:Landroidx/compose/foundation/lazy/layout/LazyLayoutItemProvider;
@@ -66,8 +64,6 @@
     iput p2, p0, Landroidx/compose/foundation/lazy/layout/LazyLayoutItemContentFactoryKt$SkippableItem$1;->$index:I
 
     iput-object p3, p0, Landroidx/compose/foundation/lazy/layout/LazyLayoutItemContentFactoryKt$SkippableItem$1;->$key:Ljava/lang/Object;
-
-    iput p4, p0, Landroidx/compose/foundation/lazy/layout/LazyLayoutItemContentFactoryKt$SkippableItem$1;->$$dirty:I
 
     const/4 p1, 0x2
 
@@ -100,7 +96,7 @@
 .method public final invoke(Landroidx/compose/runtime/Composer;I)V
     .locals 3
 
-    const-string v0, "C134@4765L22:LazyLayoutItemContentFactory.kt#wow0x6"
+    const-string v0, "C134@4764L22:LazyLayoutItemContentFactory.kt#wow0x6"
 
     invoke-static {p1, v0}, Landroidx/compose/runtime/ComposerKt;->sourceInformation(Landroidx/compose/runtime/Composer;Ljava/lang/String;)V
 
@@ -134,7 +130,7 @@
 
     const/4 v0, -0x1
 
-    const-string v1, "androidx.compose.foundation.lazy.layout.SkippableItem.<anonymous> (LazyLayoutItemContentFactory.kt:133)"
+    const-string v1, "androidx.compose.foundation.lazy.layout.SkippableItem.<anonymous> (LazyLayoutItemContentFactory.kt:134)"
 
     const v2, 0x3a785bde
 
@@ -145,23 +141,11 @@
 
     iget v0, p0, Landroidx/compose/foundation/lazy/layout/LazyLayoutItemContentFactoryKt$SkippableItem$1;->$index:I
 
-    iget-object v1, p0, Landroidx/compose/foundation/lazy/layout/LazyLayoutItemContentFactoryKt$SkippableItem$1;->$key:Ljava/lang/Object;
+    iget-object p0, p0, Landroidx/compose/foundation/lazy/layout/LazyLayoutItemContentFactoryKt$SkippableItem$1;->$key:Ljava/lang/Object;
 
-    iget p0, p0, Landroidx/compose/foundation/lazy/layout/LazyLayoutItemContentFactoryKt$SkippableItem$1;->$$dirty:I
+    const/16 v1, 0x40
 
-    shr-int/lit8 v2, p0, 0x6
-
-    and-int/lit8 v2, v2, 0xe
-
-    or-int/lit8 v2, v2, 0x40
-
-    shl-int/lit8 p0, p0, 0x6
-
-    and-int/lit16 p0, p0, 0x380
-
-    or-int/2addr p0, v2
-
-    invoke-interface {p2, v0, v1, p1, p0}, Landroidx/compose/foundation/lazy/layout/LazyLayoutItemProvider;->Item(ILjava/lang/Object;Landroidx/compose/runtime/Composer;I)V
+    invoke-interface {p2, v0, p0, p1, v1}, Landroidx/compose/foundation/lazy/layout/LazyLayoutItemProvider;->Item(ILjava/lang/Object;Landroidx/compose/runtime/Composer;I)V
 
     invoke-static {}, Landroidx/compose/runtime/ComposerKt;->isTraceInProgress()Z
 

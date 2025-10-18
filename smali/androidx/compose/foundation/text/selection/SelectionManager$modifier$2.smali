@@ -69,7 +69,7 @@
 .method public bridge synthetic invoke(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
 
-    .line 120
+    .line 146
     check-cast p1, Landroidx/compose/ui/layout/LayoutCoordinates;
 
     invoke-virtual {p0, p1}, Landroidx/compose/foundation/text/selection/SelectionManager$modifier$2;->invoke(Landroidx/compose/ui/layout/LayoutCoordinates;)V
@@ -80,13 +80,9 @@
 .end method
 
 .method public final invoke(Landroidx/compose/ui/layout/LayoutCoordinates;)V
-    .locals 1
+    .locals 0
 
-    const-string v0, "it"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 120
+    .line 146
     iget-object p0, p0, Landroidx/compose/foundation/text/selection/SelectionManager$modifier$2;->this$0:Landroidx/compose/foundation/text/selection/SelectionManager;
 
     invoke-virtual {p0, p1}, Landroidx/compose/foundation/text/selection/SelectionManager;->setContainerLayoutCoordinates(Landroidx/compose/ui/layout/LayoutCoordinates;)V

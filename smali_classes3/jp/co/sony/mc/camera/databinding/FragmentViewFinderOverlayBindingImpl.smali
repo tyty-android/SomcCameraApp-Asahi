@@ -17,7 +17,7 @@
 
 # direct methods
 .method static constructor <clinit>()V
-    .locals 5
+    .locals 7
 
     .line 15
     new-instance v0, Landroidx/databinding/ViewDataBinding$IncludedLayouts;
@@ -28,34 +28,40 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/databinding/FragmentViewFinderOverlayBindingImpl;->sIncludes:Landroidx/databinding/ViewDataBinding$IncludedLayouts;
 
+    const/4 v1, 0x2
+
     .line 16
-    const-string v1, "recording_info"
+    new-array v2, v1, [Ljava/lang/String;
 
-    const-string v2, "indicator_view"
-
-    filled-new-array {v1, v2}, [Ljava/lang/String;
-
-    move-result-object v1
-
-    const/4 v2, 0x3
-
-    const/4 v3, 0x4
-
-    filled-new-array {v2, v3}, [I
-
-    move-result-object v2
-
-    const v3, 0x7f0c0143
-
-    const v4, 0x7f0c00ce
-
-    filled-new-array {v3, v4}, [I
-
-    move-result-object v3
+    const-string v3, "recording_info"
 
     const/4 v4, 0x0
 
-    invoke-virtual {v0, v4, v1, v2, v3}, Landroidx/databinding/ViewDataBinding$IncludedLayouts;->setIncludes(I[Ljava/lang/String;[I[I)V
+    aput-object v3, v2, v4
+
+    const/4 v3, 0x1
+
+    const-string v5, "indicator_view"
+
+    aput-object v5, v2, v3
+
+    const/4 v3, 0x3
+
+    const/4 v5, 0x4
+
+    filled-new-array {v3, v5}, [I
+
+    move-result-object v3
+
+    const v5, 0x7f0c0132
+
+    const v6, 0x7f0c00ce
+
+    filled-new-array {v5, v6}, [I
+
+    move-result-object v5
+
+    invoke-virtual {v0, v4, v2, v3, v5}, Landroidx/databinding/ViewDataBinding$IncludedLayouts;->setIncludes(I[Ljava/lang/String;[I[I)V
 
     .line 21
     new-instance v0, Landroid/util/SparseIntArray;
@@ -64,12 +70,10 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/databinding/FragmentViewFinderOverlayBindingImpl;->sViewsWithIds:Landroid/util/SparseIntArray;
 
-    const v1, 0x7f09041a
-
-    const/4 v2, 0x2
+    const v2, 0x7f09040b
 
     .line 22
-    invoke-virtual {v0, v1, v2}, Landroid/util/SparseIntArray;->put(II)V
+    invoke-virtual {v0, v2, v1}, Landroid/util/SparseIntArray;->put(II)V
 
     return-void
 .end method
@@ -129,7 +133,7 @@
 
     check-cast v8, Landroid/view/View;
 
-    const/4 v4, 0x4
+    const/4 v4, 0x5
 
     move-object v1, p0
 
@@ -141,7 +145,7 @@
 
     const-wide/16 v0, -0x1
 
-    .line 254
+    .line 298
     iput-wide v0, p0, Ljp/co/sony/mc/camera/databinding/FragmentViewFinderOverlayBindingImpl;->mDirtyFlags:J
 
     .line 42
@@ -187,10 +191,10 @@
 
     if-nez p2, :cond_0
 
-    .line 133
+    .line 135
     monitor-enter p0
 
-    .line 134
+    .line 136
     :try_start_0
     iget-wide p1, p0, Ljp/co/sony/mc/camera/databinding/FragmentViewFinderOverlayBindingImpl;->mDirtyFlags:J
 
@@ -200,7 +204,7 @@
 
     iput-wide p1, p0, Ljp/co/sony/mc/camera/databinding/FragmentViewFinderOverlayBindingImpl;->mDirtyFlags:J
 
-    .line 135
+    .line 137
     monitor-exit p0
 
     const/4 p0, 0x1
@@ -235,10 +239,10 @@
 
     if-nez p2, :cond_0
 
-    .line 151
+    .line 153
     monitor-enter p0
 
-    .line 152
+    .line 154
     :try_start_0
     iget-wide p1, p0, Ljp/co/sony/mc/camera/databinding/FragmentViewFinderOverlayBindingImpl;->mDirtyFlags:J
 
@@ -248,7 +252,7 @@
 
     iput-wide p1, p0, Ljp/co/sony/mc/camera/databinding/FragmentViewFinderOverlayBindingImpl;->mDirtyFlags:J
 
-    .line 153
+    .line 155
     monitor-exit p0
 
     const/4 p0, 0x1
@@ -275,10 +279,10 @@
 
     if-nez p2, :cond_0
 
-    .line 160
+    .line 162
     monitor-enter p0
 
-    .line 161
+    .line 163
     :try_start_0
     iget-wide p1, p0, Ljp/co/sony/mc/camera/databinding/FragmentViewFinderOverlayBindingImpl;->mDirtyFlags:J
 
@@ -288,7 +292,7 @@
 
     iput-wide p1, p0, Ljp/co/sony/mc/camera/databinding/FragmentViewFinderOverlayBindingImpl;->mDirtyFlags:J
 
-    .line 162
+    .line 164
     monitor-exit p0
 
     const/4 p0, 0x1
@@ -323,10 +327,10 @@
 
     if-nez p2, :cond_0
 
-    .line 142
+    .line 144
     monitor-enter p0
 
-    .line 143
+    .line 145
     :try_start_0
     iget-wide p1, p0, Ljp/co/sony/mc/camera/databinding/FragmentViewFinderOverlayBindingImpl;->mDirtyFlags:J
 
@@ -336,7 +340,55 @@
 
     iput-wide p1, p0, Ljp/co/sony/mc/camera/databinding/FragmentViewFinderOverlayBindingImpl;->mDirtyFlags:J
 
-    .line 144
+    .line 146
+    monitor-exit p0
+
+    const/4 p0, 0x1
+
+    return p0
+
+    :catchall_0
+    move-exception p1
+
+    monitor-exit p0
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    throw p1
+
+    :cond_0
+    const/4 p0, 0x0
+
+    return p0
+.end method
+
+.method private onChangeViewFinderUiStateIsViewFinderItemClickable(Landroidx/lifecycle/LiveData;I)Z
+    .locals 2
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Landroidx/lifecycle/LiveData<",
+            "Ljava/lang/Boolean;",
+            ">;I)Z"
+        }
+    .end annotation
+
+    if-nez p2, :cond_0
+
+    .line 171
+    monitor-enter p0
+
+    .line 172
+    :try_start_0
+    iget-wide p1, p0, Ljp/co/sony/mc/camera/databinding/FragmentViewFinderOverlayBindingImpl;->mDirtyFlags:J
+
+    const-wide/16 v0, 0x10
+
+    or-long/2addr p1, v0
+
+    iput-wide p1, p0, Ljp/co/sony/mc/camera/databinding/FragmentViewFinderOverlayBindingImpl;->mDirtyFlags:J
+
+    .line 173
     monitor-exit p0
 
     const/4 p0, 0x1
@@ -361,198 +413,297 @@
 
 # virtual methods
 .method protected executeBindings()V
-    .locals 14
+    .locals 19
 
-    .line 171
+    move-object/from16 v1, p0
+
+    .line 182
     monitor-enter p0
 
-    .line 172
+    .line 183
     :try_start_0
-    iget-wide v0, p0, Ljp/co/sony/mc/camera/databinding/FragmentViewFinderOverlayBindingImpl;->mDirtyFlags:J
+    iget-wide v2, v1, Ljp/co/sony/mc/camera/databinding/FragmentViewFinderOverlayBindingImpl;->mDirtyFlags:J
 
-    const-wide/16 v2, 0x0
+    const-wide/16 v4, 0x0
 
-    .line 173
-    iput-wide v2, p0, Ljp/co/sony/mc/camera/databinding/FragmentViewFinderOverlayBindingImpl;->mDirtyFlags:J
+    .line 184
+    iput-wide v4, v1, Ljp/co/sony/mc/camera/databinding/FragmentViewFinderOverlayBindingImpl;->mDirtyFlags:J
 
-    .line 174
+    .line 185
     monitor-exit p0
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 177
-    iget-object v4, p0, Ljp/co/sony/mc/camera/databinding/FragmentViewFinderOverlayBindingImpl;->mProModeCommonUiState:Ljp/co/sony/mc/camera/view/uistate/ProModeCommonUiState;
+    .line 189
+    iget-object v0, v1, Ljp/co/sony/mc/camera/databinding/FragmentViewFinderOverlayBindingImpl;->mProModeCommonUiState:Ljp/co/sony/mc/camera/view/uistate/ProModeCommonUiState;
 
-    .line 178
-    iget-object v5, p0, Ljp/co/sony/mc/camera/databinding/FragmentViewFinderOverlayBindingImpl;->mViewFinderUiState:Ljp/co/sony/mc/camera/view/uistate/ViewFinderUiState;
+    .line 190
+    iget-object v6, v1, Ljp/co/sony/mc/camera/databinding/FragmentViewFinderOverlayBindingImpl;->mViewFinderUiState:Ljp/co/sony/mc/camera/view/uistate/ViewFinderUiState;
 
-    const-wide/16 v6, 0x54
+    const-wide/16 v7, 0xa4
 
-    and-long v8, v0, v6
+    and-long v9, v2, v7
 
-    cmp-long v8, v8, v2
+    cmp-long v9, v9, v4
 
-    const/4 v9, 0x0
+    const/4 v10, 0x0
 
-    if-eqz v8, :cond_2
+    if-eqz v9, :cond_2
 
-    if-eqz v4, :cond_0
+    if-eqz v0, :cond_0
 
-    .line 191
-    invoke-virtual {v4}, Ljp/co/sony/mc/camera/view/uistate/ProModeCommonUiState;->getProductShowcaseModeVisible()Landroidx/lifecycle/LiveData;
+    .line 205
+    invoke-virtual {v0}, Ljp/co/sony/mc/camera/view/uistate/ProModeCommonUiState;->getProductShowcaseModeVisible()Landroidx/lifecycle/LiveData;
 
-    move-result-object v4
+    move-result-object v0
 
     goto :goto_0
 
     :cond_0
-    move-object v4, v9
+    const/4 v0, 0x0
 
     :goto_0
-    const/4 v8, 0x2
+    const/4 v9, 0x2
 
-    .line 193
-    invoke-virtual {p0, v8, v4}, Ljp/co/sony/mc/camera/databinding/FragmentViewFinderOverlayBindingImpl;->updateLiveDataRegistration(ILandroidx/lifecycle/LiveData;)Z
+    .line 207
+    invoke-virtual {v1, v9, v0}, Ljp/co/sony/mc/camera/databinding/FragmentViewFinderOverlayBindingImpl;->updateLiveDataRegistration(ILandroidx/lifecycle/LiveData;)Z
 
-    if-eqz v4, :cond_1
+    if-eqz v0, :cond_1
 
-    .line 198
-    invoke-virtual {v4}, Landroidx/lifecycle/LiveData;->getValue()Ljava/lang/Object;
+    .line 212
+    invoke-virtual {v0}, Landroidx/lifecycle/LiveData;->getValue()Ljava/lang/Object;
 
-    move-result-object v4
+    move-result-object v0
 
-    check-cast v4, Ljava/lang/Boolean;
+    check-cast v0, Ljava/lang/Boolean;
 
     goto :goto_1
 
     :cond_1
-    move-object v4, v9
+    const/4 v0, 0x0
 
-    .line 203
+    .line 217
     :goto_1
-    invoke-static {v4}, Landroidx/databinding/ViewDataBinding;->safeUnbox(Ljava/lang/Boolean;)Z
+    invoke-static {v0}, Landroidx/databinding/ViewDataBinding;->safeUnbox(Ljava/lang/Boolean;)Z
 
-    move-result v4
+    move-result v0
 
     goto :goto_2
 
     :cond_2
-    const/4 v4, 0x0
+    move v0, v10
 
     :goto_2
-    const-wide/16 v10, 0x62
+    const-wide/16 v12, 0xd2
 
-    and-long v12, v0, v10
+    and-long/2addr v12, v2
 
-    cmp-long v8, v12, v2
+    cmp-long v9, v12, v4
 
-    if-eqz v8, :cond_8
+    const-wide/16 v12, 0xc2
 
-    if-eqz v5, :cond_3
+    const-wide/16 v14, 0xd0
 
-    .line 211
-    invoke-virtual {v5}, Ljp/co/sony/mc/camera/view/uistate/ViewFinderUiState;->isProductShowcaseModeEnabled()Landroidx/lifecycle/LiveData;
+    const/16 v16, 0x0
 
-    move-result-object v5
+    if-eqz v9, :cond_b
+
+    and-long v17, v2, v12
+
+    cmp-long v9, v17, v4
+
+    if-eqz v9, :cond_8
+
+    if-eqz v6, :cond_3
+
+    .line 226
+    invoke-virtual {v6}, Ljp/co/sony/mc/camera/view/uistate/ViewFinderUiState;->isProductShowcaseModeEnabled()Landroidx/lifecycle/LiveData;
+
+    move-result-object v16
+
+    move-object/from16 v11, v16
 
     goto :goto_3
 
     :cond_3
-    move-object v5, v9
+    const/4 v11, 0x0
 
     :goto_3
-    const/4 v12, 0x1
+    const/4 v7, 0x1
 
-    .line 213
-    invoke-virtual {p0, v12, v5}, Ljp/co/sony/mc/camera/databinding/FragmentViewFinderOverlayBindingImpl;->updateLiveDataRegistration(ILandroidx/lifecycle/LiveData;)Z
+    .line 228
+    invoke-virtual {v1, v7, v11}, Ljp/co/sony/mc/camera/databinding/FragmentViewFinderOverlayBindingImpl;->updateLiveDataRegistration(ILandroidx/lifecycle/LiveData;)Z
 
-    if-eqz v5, :cond_4
+    if-eqz v11, :cond_4
 
-    .line 218
-    invoke-virtual {v5}, Landroidx/lifecycle/LiveData;->getValue()Ljava/lang/Object;
+    .line 233
+    invoke-virtual {v11}, Landroidx/lifecycle/LiveData;->getValue()Ljava/lang/Object;
 
-    move-result-object v5
+    move-result-object v7
 
-    move-object v9, v5
-
-    check-cast v9, Ljava/lang/Boolean;
-
-    .line 223
-    :cond_4
-    invoke-static {v9}, Landroidx/databinding/ViewDataBinding;->safeUnbox(Ljava/lang/Boolean;)Z
-
-    move-result v5
-
-    if-eqz v8, :cond_6
-
-    if-eqz v5, :cond_5
-
-    const-wide/16 v8, 0x100
+    check-cast v7, Ljava/lang/Boolean;
 
     goto :goto_4
 
-    :cond_5
-    const-wide/16 v8, 0x80
+    :cond_4
+    const/4 v7, 0x0
 
+    .line 238
     :goto_4
-    or-long/2addr v0, v8
+    invoke-static {v7}, Landroidx/databinding/ViewDataBinding;->safeUnbox(Ljava/lang/Boolean;)Z
 
-    :cond_6
-    if-eqz v5, :cond_7
+    move-result v7
 
-    const/high16 v5, 0x3f800000    # 1.0f
+    if-eqz v9, :cond_6
 
-    goto :goto_5
+    if-eqz v7, :cond_5
 
-    :cond_7
-    const v5, 0x3ecccccd    # 0.4f
+    const-wide/16 v8, 0x200
 
     goto :goto_5
 
-    :cond_8
-    const/4 v5, 0x0
+    :cond_5
+    const-wide/16 v8, 0x100
 
     :goto_5
-    and-long v8, v0, v10
+    or-long/2addr v2, v8
 
-    cmp-long v8, v8, v2
+    :cond_6
+    if-eqz v7, :cond_7
 
-    if-eqz v8, :cond_9
+    const/high16 v7, 0x3f800000    # 1.0f
 
-    .line 241
-    iget-object v8, p0, Ljp/co/sony/mc/camera/databinding/FragmentViewFinderOverlayBindingImpl;->proVideoProductShowcase:Landroid/widget/TextView;
+    goto :goto_6
 
-    invoke-static {v8, v5}, Ljp/co/sony/mc/camera/view/viewbinder/BindingAdapters;->setAlpha(Landroid/view/View;F)V
+    :cond_7
+    const v7, 0x3ecccccd    # 0.4f
+
+    :goto_6
+    move/from16 v16, v7
+
+    :cond_8
+    and-long v7, v2, v14
+
+    cmp-long v7, v7, v4
+
+    if-eqz v7, :cond_b
+
+    if-eqz v6, :cond_9
+
+    .line 256
+    invoke-virtual {v6}, Ljp/co/sony/mc/camera/view/uistate/ViewFinderUiState;->isViewFinderItemClickable()Landroidx/lifecycle/LiveData;
+
+    move-result-object v6
+
+    goto :goto_7
 
     :cond_9
-    and-long/2addr v0, v6
+    const/4 v6, 0x0
 
-    cmp-long v0, v0, v2
+    :goto_7
+    const/4 v7, 0x4
 
-    if-eqz v0, :cond_a
+    .line 258
+    invoke-virtual {v1, v7, v6}, Ljp/co/sony/mc/camera/databinding/FragmentViewFinderOverlayBindingImpl;->updateLiveDataRegistration(ILandroidx/lifecycle/LiveData;)Z
 
-    .line 246
-    iget-object v0, p0, Ljp/co/sony/mc/camera/databinding/FragmentViewFinderOverlayBindingImpl;->proVideoProductShowcase:Landroid/widget/TextView;
+    if-eqz v6, :cond_a
 
-    invoke-static {v0, v4}, Ljp/co/sony/mc/camera/view/viewbinder/BindingAdapters;->setVisible(Landroid/view/View;Z)V
+    .line 263
+    invoke-virtual {v6}, Landroidx/lifecycle/LiveData;->getValue()Ljava/lang/Object;
 
-    .line 248
+    move-result-object v6
+
+    move-object v11, v6
+
+    check-cast v11, Ljava/lang/Boolean;
+
+    goto :goto_8
+
     :cond_a
-    iget-object v0, p0, Ljp/co/sony/mc/camera/databinding/FragmentViewFinderOverlayBindingImpl;->recordingInfo:Ljp/co/sony/mc/camera/databinding/RecordingInfoBinding;
+    const/4 v11, 0x0
+
+    .line 268
+    :goto_8
+    invoke-static {v11}, Landroidx/databinding/ViewDataBinding;->safeUnbox(Ljava/lang/Boolean;)Z
+
+    move-result v6
+
+    goto :goto_9
+
+    :cond_b
+    move v6, v10
+
+    :goto_9
+    move/from16 v7, v16
+
+    and-long v8, v2, v14
+
+    cmp-long v8, v8, v4
+
+    if-eqz v8, :cond_c
+
+    .line 275
+    iget-object v8, v1, Ljp/co/sony/mc/camera/databinding/FragmentViewFinderOverlayBindingImpl;->proVideoProductShowcase:Landroid/widget/TextView;
+
+    invoke-virtual {v8, v6}, Landroid/widget/TextView;->setClickable(Z)V
+
+    :cond_c
+    const-wide/16 v8, 0x80
+
+    and-long/2addr v8, v2
+
+    cmp-long v6, v8, v4
+
+    if-eqz v6, :cond_d
+
+    .line 280
+    iget-object v6, v1, Ljp/co/sony/mc/camera/databinding/FragmentViewFinderOverlayBindingImpl;->proVideoProductShowcase:Landroid/widget/TextView;
+
+    invoke-static {v6, v10}, Ljp/co/sony/mc/camera/view/viewbinder/BindingAdapters;->setAccessibilityClickable(Landroid/view/View;Z)V
+
+    :cond_d
+    and-long v8, v2, v12
+
+    cmp-long v6, v8, v4
+
+    if-eqz v6, :cond_e
+
+    .line 285
+    iget-object v6, v1, Ljp/co/sony/mc/camera/databinding/FragmentViewFinderOverlayBindingImpl;->proVideoProductShowcase:Landroid/widget/TextView;
+
+    invoke-static {v6, v7}, Ljp/co/sony/mc/camera/view/viewbinder/BindingAdapters;->setAlpha(Landroid/view/View;F)V
+
+    :cond_e
+    const-wide/16 v6, 0xa4
+
+    and-long/2addr v2, v6
+
+    cmp-long v2, v2, v4
+
+    if-eqz v2, :cond_f
+
+    .line 290
+    iget-object v2, v1, Ljp/co/sony/mc/camera/databinding/FragmentViewFinderOverlayBindingImpl;->proVideoProductShowcase:Landroid/widget/TextView;
+
+    invoke-static {v2, v0}, Ljp/co/sony/mc/camera/view/viewbinder/BindingAdapters;->setVisible(Landroid/view/View;Z)V
+
+    .line 292
+    :cond_f
+    iget-object v0, v1, Ljp/co/sony/mc/camera/databinding/FragmentViewFinderOverlayBindingImpl;->recordingInfo:Ljp/co/sony/mc/camera/databinding/RecordingInfoBinding;
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/databinding/FragmentViewFinderOverlayBindingImpl;->executeBindingsOn(Landroidx/databinding/ViewDataBinding;)V
 
-    .line 249
-    iget-object p0, p0, Ljp/co/sony/mc/camera/databinding/FragmentViewFinderOverlayBindingImpl;->indicatorRootView:Ljp/co/sony/mc/camera/databinding/IndicatorViewBinding;
+    .line 293
+    iget-object v0, v1, Ljp/co/sony/mc/camera/databinding/FragmentViewFinderOverlayBindingImpl;->indicatorRootView:Ljp/co/sony/mc/camera/databinding/IndicatorViewBinding;
 
-    invoke-static {p0}, Ljp/co/sony/mc/camera/databinding/FragmentViewFinderOverlayBindingImpl;->executeBindingsOn(Landroidx/databinding/ViewDataBinding;)V
+    invoke-static {v0}, Ljp/co/sony/mc/camera/databinding/FragmentViewFinderOverlayBindingImpl;->executeBindingsOn(Landroidx/databinding/ViewDataBinding;)V
 
     return-void
 
     :catchall_0
     move-exception v0
 
-    .line 174
+    .line 185
     :try_start_1
     monitor-exit p0
     :try_end_1
@@ -636,7 +787,7 @@
     .line 54
     monitor-enter p0
 
-    const-wide/16 v0, 0x40
+    const-wide/16 v0, 0x80
 
     .line 55
     :try_start_0
@@ -677,17 +828,21 @@
 .method protected onFieldChange(ILjava/lang/Object;I)Z
     .locals 1
 
-    if-eqz p1, :cond_3
+    if-eqz p1, :cond_4
 
     const/4 v0, 0x1
 
-    if-eq p1, v0, :cond_2
+    if-eq p1, v0, :cond_3
 
     const/4 v0, 0x2
 
-    if-eq p1, v0, :cond_1
+    if-eq p1, v0, :cond_2
 
     const/4 v0, 0x3
+
+    if-eq p1, v0, :cond_1
+
+    const/4 v0, 0x4
 
     if-eq p1, v0, :cond_0
 
@@ -695,8 +850,18 @@
 
     return p0
 
-    .line 127
+    .line 129
     :cond_0
+    check-cast p2, Landroidx/lifecycle/LiveData;
+
+    invoke-direct {p0, p2, p3}, Ljp/co/sony/mc/camera/databinding/FragmentViewFinderOverlayBindingImpl;->onChangeViewFinderUiStateIsViewFinderItemClickable(Landroidx/lifecycle/LiveData;I)Z
+
+    move-result p0
+
+    return p0
+
+    .line 127
+    :cond_1
     check-cast p2, Ljp/co/sony/mc/camera/databinding/RecordingInfoBinding;
 
     invoke-direct {p0, p2, p3}, Ljp/co/sony/mc/camera/databinding/FragmentViewFinderOverlayBindingImpl;->onChangeRecordingInfo(Ljp/co/sony/mc/camera/databinding/RecordingInfoBinding;I)Z
@@ -706,7 +871,7 @@
     return p0
 
     .line 125
-    :cond_1
+    :cond_2
     check-cast p2, Landroidx/lifecycle/LiveData;
 
     invoke-direct {p0, p2, p3}, Ljp/co/sony/mc/camera/databinding/FragmentViewFinderOverlayBindingImpl;->onChangeProModeCommonUiStateProductShowcaseModeVisible(Landroidx/lifecycle/LiveData;I)Z
@@ -716,7 +881,7 @@
     return p0
 
     .line 123
-    :cond_2
+    :cond_3
     check-cast p2, Landroidx/lifecycle/LiveData;
 
     invoke-direct {p0, p2, p3}, Ljp/co/sony/mc/camera/databinding/FragmentViewFinderOverlayBindingImpl;->onChangeViewFinderUiStateIsProductShowcaseModeEnabled(Landroidx/lifecycle/LiveData;I)Z
@@ -726,7 +891,7 @@
     return p0
 
     .line 121
-    :cond_3
+    :cond_4
     check-cast p2, Ljp/co/sony/mc/camera/databinding/IndicatorViewBinding;
 
     invoke-direct {p0, p2, p3}, Ljp/co/sony/mc/camera/databinding/FragmentViewFinderOverlayBindingImpl;->onChangeIndicatorRootView(Ljp/co/sony/mc/camera/databinding/IndicatorViewBinding;I)Z
@@ -768,7 +933,7 @@
     :try_start_0
     iget-wide v0, p0, Ljp/co/sony/mc/camera/databinding/FragmentViewFinderOverlayBindingImpl;->mDirtyFlags:J
 
-    const-wide/16 v2, 0x10
+    const-wide/16 v2, 0x20
 
     or-long/2addr v0, v2
 
@@ -779,7 +944,7 @@
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    const/16 p1, 0x15
+    const/16 p1, 0x18
 
     .line 98
     invoke-virtual {p0, p1}, Ljp/co/sony/mc/camera/databinding/FragmentViewFinderOverlayBindingImpl;->notifyPropertyChanged(I)V
@@ -804,7 +969,7 @@
 .method public setVariable(ILjava/lang/Object;)Z
     .locals 1
 
-    const/16 v0, 0x15
+    const/16 v0, 0x18
 
     if-ne v0, p1, :cond_0
 
@@ -816,7 +981,7 @@
     goto :goto_0
 
     :cond_0
-    const/16 v0, 0x22
+    const/16 v0, 0x25
 
     if-ne v0, p1, :cond_1
 
@@ -850,7 +1015,7 @@
     :try_start_0
     iget-wide v0, p0, Ljp/co/sony/mc/camera/databinding/FragmentViewFinderOverlayBindingImpl;->mDirtyFlags:J
 
-    const-wide/16 v2, 0x20
+    const-wide/16 v2, 0x40
 
     or-long/2addr v0, v2
 
@@ -861,7 +1026,7 @@
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    const/16 p1, 0x22
+    const/16 p1, 0x25
 
     .line 106
     invoke-virtual {p0, p1}, Ljp/co/sony/mc/camera/databinding/FragmentViewFinderOverlayBindingImpl;->notifyPropertyChanged(I)V

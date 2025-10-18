@@ -131,7 +131,7 @@
 
     long-to-double v4, v4
 
-    const-wide v6, 0x4051800000000000L    # 70.0
+    const-wide v6, 0x4050400000000000L    # 65.0
 
     cmpg-double p0, v4, v6
 

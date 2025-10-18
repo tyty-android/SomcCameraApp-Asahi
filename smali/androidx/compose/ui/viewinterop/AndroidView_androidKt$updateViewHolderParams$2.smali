@@ -83,7 +83,7 @@
 .method public bridge synthetic invoke(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
 
-    .line 292
+    .line 296
     check-cast p1, Landroidx/compose/ui/node/LayoutNode;
 
     check-cast p2, Landroidx/compose/ui/unit/Density;
@@ -98,15 +98,7 @@
 .method public final invoke(Landroidx/compose/ui/node/LayoutNode;Landroidx/compose/ui/unit/Density;)V
     .locals 0
 
-    const-string p0, "$this$set"
-
-    invoke-static {p1, p0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string p0, "it"
-
-    invoke-static {p2, p0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 292
+    .line 296
     invoke-static {p1}, Landroidx/compose/ui/viewinterop/AndroidView_androidKt;->access$requireViewFactoryHolder(Landroidx/compose/ui/node/LayoutNode;)Landroidx/compose/ui/viewinterop/ViewFactoryHolder;
 
     move-result-object p0

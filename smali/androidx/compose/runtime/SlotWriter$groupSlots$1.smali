@@ -72,10 +72,10 @@
 
     iput-object p3, p0, Landroidx/compose/runtime/SlotWriter$groupSlots$1;->this$0:Landroidx/compose/runtime/SlotWriter;
 
-    .line 1828
+    .line 2040
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 1829
+    .line 2041
     iput p1, p0, Landroidx/compose/runtime/SlotWriter$groupSlots$1;->current:I
 
     return-void
@@ -86,7 +86,7 @@
 .method public final getCurrent()I
     .locals 0
 
-    .line 1829
+    .line 2041
     iget p0, p0, Landroidx/compose/runtime/SlotWriter$groupSlots$1;->current:I
 
     return p0
@@ -95,7 +95,7 @@
 .method public hasNext()Z
     .locals 1
 
-    .line 1830
+    .line 2042
     iget v0, p0, Landroidx/compose/runtime/SlotWriter$groupSlots$1;->current:I
 
     iget p0, p0, Landroidx/compose/runtime/SlotWriter$groupSlots$1;->$end:I
@@ -116,7 +116,7 @@
 .method public next()Ljava/lang/Object;
     .locals 4
 
-    .line 1832
+    .line 2044
     invoke-virtual {p0}, Landroidx/compose/runtime/SlotWriter$groupSlots$1;->hasNext()Z
 
     move-result v0
@@ -167,7 +167,7 @@
 .method public final setCurrent(I)V
     .locals 0
 
-    .line 1829
+    .line 2041
     iput p1, p0, Landroidx/compose/runtime/SlotWriter$groupSlots$1;->current:I
 
     return-void

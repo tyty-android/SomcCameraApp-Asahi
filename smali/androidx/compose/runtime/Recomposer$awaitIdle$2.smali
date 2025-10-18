@@ -161,7 +161,7 @@
 
     invoke-static {}, Lkotlin/coroutines/intrinsics/IntrinsicsKt;->getCOROUTINE_SUSPENDED()Ljava/lang/Object;
 
-    .line 1215
+    .line 1273
     iget v0, p0, Landroidx/compose/runtime/Recomposer$awaitIdle$2;->label:I
 
     if-nez v0, :cond_1

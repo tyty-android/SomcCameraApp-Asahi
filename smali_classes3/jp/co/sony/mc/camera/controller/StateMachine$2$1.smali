@@ -32,7 +32,7 @@
         }
     .end annotation
 
-    .line 503
+    .line 500
     iput-object p1, p0, Ljp/co/sony/mc/camera/controller/StateMachine$2$1;->this$1:Ljp/co/sony/mc/camera/controller/StateMachine$2;
 
     iput-object p2, p0, Ljp/co/sony/mc/camera/controller/StateMachine$2$1;->val$result:Ljp/co/sony/mc/camera/mediasaving/StoreDataResult;
@@ -47,7 +47,7 @@
 .method public run()V
     .locals 6
 
-    .line 506
+    .line 503
     iget-object v0, p0, Ljp/co/sony/mc/camera/controller/StateMachine$2$1;->this$1:Ljp/co/sony/mc/camera/controller/StateMachine$2;
 
     iget-object v0, v0, Ljp/co/sony/mc/camera/controller/StateMachine$2;->this$0:Ljp/co/sony/mc/camera/controller/StateMachine;
@@ -64,7 +64,7 @@
 
     invoke-static {v0, v1}, Ljp/co/sony/mc/camera/controller/StateMachine;->-$$Nest$mcalculateRemainStorage(Ljp/co/sony/mc/camera/controller/StateMachine;Ljp/co/sony/mc/camera/storage/Storage$StorageType;)V
 
-    .line 507
+    .line 504
     iget-object v0, p0, Ljp/co/sony/mc/camera/controller/StateMachine$2$1;->this$1:Ljp/co/sony/mc/camera/controller/StateMachine$2;
 
     iget-object v0, v0, Ljp/co/sony/mc/camera/controller/StateMachine$2;->this$0:Ljp/co/sony/mc/camera/controller/StateMachine;
@@ -87,7 +87,7 @@
 
     if-nez v0, :cond_0
 
-    .line 508
+    .line 505
     iget-object v0, p0, Ljp/co/sony/mc/camera/controller/StateMachine$2$1;->this$1:Ljp/co/sony/mc/camera/controller/StateMachine$2;
 
     iget-object v0, v0, Ljp/co/sony/mc/camera/controller/StateMachine$2;->this$0:Ljp/co/sony/mc/camera/controller/StateMachine;
@@ -110,7 +110,7 @@
 
     invoke-static {v0, v1, v2}, Ljp/co/sony/mc/camera/controller/StateMachine;->-$$Nest$mchangeTo(Ljp/co/sony/mc/camera/controller/StateMachine;Ljp/co/sony/mc/camera/controller/StateMachine$State;[Ljava/lang/Object;)V
 
-    .line 510
+    .line 507
     :cond_0
     iget-object v0, p0, Ljp/co/sony/mc/camera/controller/StateMachine$2$1;->this$1:Ljp/co/sony/mc/camera/controller/StateMachine$2;
 

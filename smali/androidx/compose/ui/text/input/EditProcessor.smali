@@ -5,7 +5,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/SourceDebugExtension;
-    value = "SMAP\nEditProcessor.kt\nKotlin\n*S Kotlin\n*F\n+ 1 EditProcessor.kt\nandroidx/compose/ui/text/input/EditProcessor\n+ 2 ListUtils.kt\nandroidx/compose/ui/util/ListUtilsKt\n*L\n1#1,173:1\n33#2,6:174\n*S KotlinDebug\n*F\n+ 1 EditProcessor.kt\nandroidx/compose/ui/text/input/EditProcessor\n*L\n112#1:174,6\n*E\n"
+    value = "SMAP\nEditProcessor.kt\nKotlin\n*S Kotlin\n*F\n+ 1 EditProcessor.kt\nandroidx/compose/ui/text/input/EditProcessor\n+ 2 ListUtils.kt\nandroidx/compose/ui/util/ListUtilsKt\n+ 3 fake.kt\nkotlin/jvm/internal/FakeKt\n*L\n1#1,179:1\n33#2,6:180\n1#3:186\n*S KotlinDebug\n*F\n+ 1 EditProcessor.kt\nandroidx/compose/ui/text/input/EditProcessor\n*L\n112#1:180,6\n*E\n"
 .end annotation
 
 .annotation runtime Lkotlin/Metadata;
@@ -151,66 +151,66 @@
         }
     .end annotation
 
-    .line 138
+    .line 143
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
 
-    .line 140
+    .line 145
     new-instance v1, Ljava/lang/StringBuilder;
 
     const-string v2, "Error while applying EditCommand batch to buffer (length="
 
     invoke-direct {v1, v2}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
-    .line 141
+    .line 146
     iget-object v2, p0, Landroidx/compose/ui/text/input/EditProcessor;->mBuffer:Landroidx/compose/ui/text/input/EditingBuffer;
 
     invoke-virtual {v2}, Landroidx/compose/ui/text/input/EditingBuffer;->getLength$ui_text_release()I
 
     move-result v2
 
-    .line 140
+    .line 145
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
     move-result-object v1
 
-    .line 141
+    .line 146
     const-string v2, ", composition="
 
-    .line 140
+    .line 145
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v1
 
-    .line 142
+    .line 147
     iget-object v2, p0, Landroidx/compose/ui/text/input/EditProcessor;->mBuffer:Landroidx/compose/ui/text/input/EditingBuffer;
 
     invoke-virtual {v2}, Landroidx/compose/ui/text/input/EditingBuffer;->getComposition-MzsxiRA$ui_text_release()Landroidx/compose/ui/text/TextRange;
 
     move-result-object v2
 
-    .line 140
+    .line 145
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
     move-result-object v1
 
-    .line 142
+    .line 147
     const-string v2, ", selection="
 
-    .line 140
+    .line 145
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v1
 
-    .line 143
+    .line 148
     iget-object v2, p0, Landroidx/compose/ui/text/input/EditProcessor;->mBuffer:Landroidx/compose/ui/text/input/EditingBuffer;
 
     invoke-virtual {v2}, Landroidx/compose/ui/text/input/EditingBuffer;->getSelection-d9O1mEE$ui_text_release()J
 
     move-result-wide v2
 
-    .line 140
+    .line 145
     invoke-static {v2, v3}, Landroidx/compose/ui/text/TextRange;->toString-impl(J)Ljava/lang/String;
 
     move-result-object v2
@@ -219,10 +219,10 @@
 
     move-result-object v1
 
-    .line 143
+    .line 148
     const-string v2, "):"
 
-    .line 140
+    .line 145
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v1
@@ -249,7 +249,7 @@
 
     invoke-static {v1, v2}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 146
+    .line 151
     move-object v3, p1
 
     check-cast v3, Ljava/lang/Iterable;
@@ -286,7 +286,7 @@
 
     invoke-static/range {v3 .. v12}, Lkotlin/collections/CollectionsKt;->joinTo$default(Ljava/lang/Iterable;Ljava/lang/Appendable;Ljava/lang/CharSequence;Ljava/lang/CharSequence;Ljava/lang/CharSequence;ILjava/lang/CharSequence;Lkotlin/jvm/functions/Function1;ILjava/lang/Object;)Ljava/lang/Appendable;
 
-    .line 138
+    .line 143
     invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object p0
@@ -301,7 +301,7 @@
 .method private final toStringForLog(Landroidx/compose/ui/text/input/EditCommand;)Ljava/lang/String;
     .locals 3
 
-    .line 157
+    .line 162
     instance-of p0, p1, Landroidx/compose/ui/text/input/CommitTextCommand;
 
     const/16 v0, 0x29
@@ -310,7 +310,7 @@
 
     if-eqz p0, :cond_0
 
-    .line 158
+    .line 163
     new-instance p0, Ljava/lang/StringBuilder;
 
     const-string v2, "CommitTextCommand(text.length="
@@ -353,13 +353,13 @@
 
     goto/16 :goto_0
 
-    .line 159
+    .line 164
     :cond_0
     instance-of p0, p1, Landroidx/compose/ui/text/input/SetComposingTextCommand;
 
     if-eqz p0, :cond_1
 
-    .line 160
+    .line 165
     new-instance p0, Ljava/lang/StringBuilder;
 
     const-string v2, "SetComposingTextCommand(text.length="
@@ -384,12 +384,12 @@
 
     move-result-object p0
 
-    .line 161
+    .line 166
     invoke-virtual {p1}, Landroidx/compose/ui/text/input/SetComposingTextCommand;->getNewCursorPosition()I
 
     move-result p1
 
-    .line 160
+    .line 165
     invoke-virtual {p0, p1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
     move-result-object p0
@@ -404,7 +404,7 @@
 
     goto/16 :goto_0
 
-    .line 162
+    .line 167
     :cond_1
     instance-of p0, p1, Landroidx/compose/ui/text/input/SetComposingRegionCommand;
 
@@ -416,7 +416,7 @@
 
     goto :goto_0
 
-    .line 163
+    .line 168
     :cond_2
     instance-of p0, p1, Landroidx/compose/ui/text/input/DeleteSurroundingTextCommand;
 
@@ -428,7 +428,7 @@
 
     goto :goto_0
 
-    .line 164
+    .line 169
     :cond_3
     instance-of p0, p1, Landroidx/compose/ui/text/input/DeleteSurroundingTextInCodePointsCommand;
 
@@ -440,7 +440,7 @@
 
     goto :goto_0
 
-    .line 165
+    .line 170
     :cond_4
     instance-of p0, p1, Landroidx/compose/ui/text/input/SetSelectionCommand;
 
@@ -452,7 +452,7 @@
 
     goto :goto_0
 
-    .line 166
+    .line 171
     :cond_5
     instance-of p0, p1, Landroidx/compose/ui/text/input/FinishComposingTextCommand;
 
@@ -464,7 +464,7 @@
 
     goto :goto_0
 
-    .line 167
+    .line 172
     :cond_6
     instance-of p0, p1, Landroidx/compose/ui/text/input/BackspaceCommand;
 
@@ -476,7 +476,7 @@
 
     goto :goto_0
 
-    .line 168
+    .line 173
     :cond_7
     instance-of p0, p1, Landroidx/compose/ui/text/input/MoveCursorCommand;
 
@@ -488,7 +488,7 @@
 
     goto :goto_0
 
-    .line 169
+    .line 174
     :cond_8
     instance-of p0, p1, Landroidx/compose/ui/text/input/DeleteAllCommand;
 
@@ -500,7 +500,7 @@
 
     goto :goto_0
 
-    .line 171
+    .line 176
     :cond_9
     new-instance p0, Ljava/lang/StringBuilder;
 
@@ -540,7 +540,7 @@
 
 # virtual methods
 .method public final apply(Ljava/util/List;)Landroidx/compose/ui/text/input/TextFieldValue;
-    .locals 8
+    .locals 7
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -552,90 +552,143 @@
         }
     .end annotation
 
-    const-string v0, "editCommands"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
     const/4 v0, 0x0
 
-    .line 175
+    .line 181
     :try_start_0
     invoke-interface {p1}, Ljava/util/List;->size()I
 
     move-result v1
+    :try_end_0
+    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_2
 
     const/4 v2, 0x0
+
+    move-object v3, v0
 
     :goto_0
     if-ge v2, v1, :cond_0
 
-    .line 176
+    .line 182
+    :try_start_1
     invoke-interface {p1, v2}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
-    move-result-object v3
+    move-result-object v4
 
-    .line 177
-    check-cast v3, Landroidx/compose/ui/text/input/EditCommand;
-    :try_end_0
-    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_1
+    .line 183
+    check-cast v4, Landroidx/compose/ui/text/input/EditCommand;
+    :try_end_1
+    .catch Ljava/lang/Exception; {:try_start_1 .. :try_end_1} :catch_1
 
     .line 114
-    :try_start_1
-    iget-object v0, p0, Landroidx/compose/ui/text/input/EditProcessor;->mBuffer:Landroidx/compose/ui/text/input/EditingBuffer;
+    :try_start_2
+    iget-object v3, p0, Landroidx/compose/ui/text/input/EditProcessor;->mBuffer:Landroidx/compose/ui/text/input/EditingBuffer;
 
-    invoke-interface {v3, v0}, Landroidx/compose/ui/text/input/EditCommand;->applyTo(Landroidx/compose/ui/text/input/EditingBuffer;)V
-    :try_end_1
-    .catch Ljava/lang/Exception; {:try_start_1 .. :try_end_1} :catch_0
+    invoke-interface {v4, v3}, Landroidx/compose/ui/text/input/EditCommand;->applyTo(Landroidx/compose/ui/text/input/EditingBuffer;)V
+    :try_end_2
+    .catch Ljava/lang/Exception; {:try_start_2 .. :try_end_2} :catch_0
 
     add-int/lit8 v2, v2, 0x1
 
-    move-object v0, v3
+    move-object v3, v4
 
     goto :goto_0
 
     :catch_0
     move-exception v0
 
-    goto :goto_1
+    move-object v3, v4
 
-    .line 120
-    :cond_0
-    new-instance p1, Landroidx/compose/ui/text/input/TextFieldValue;
+    goto :goto_2
+
+    :catch_1
+    move-exception v0
+
+    goto :goto_2
 
     .line 121
-    iget-object v0, p0, Landroidx/compose/ui/text/input/EditProcessor;->mBuffer:Landroidx/compose/ui/text/input/EditingBuffer;
+    :cond_0
+    iget-object p1, p0, Landroidx/compose/ui/text/input/EditProcessor;->mBuffer:Landroidx/compose/ui/text/input/EditingBuffer;
 
-    invoke-virtual {v0}, Landroidx/compose/ui/text/input/EditingBuffer;->toAnnotatedString$ui_text_release()Landroidx/compose/ui/text/AnnotatedString;
+    invoke-virtual {p1}, Landroidx/compose/ui/text/input/EditingBuffer;->toAnnotatedString$ui_text_release()Landroidx/compose/ui/text/AnnotatedString;
 
-    move-result-object v3
+    move-result-object v2
 
-    .line 122
-    iget-object v0, p0, Landroidx/compose/ui/text/input/EditProcessor;->mBuffer:Landroidx/compose/ui/text/input/EditingBuffer;
+    .line 125
+    iget-object p1, p0, Landroidx/compose/ui/text/input/EditProcessor;->mBuffer:Landroidx/compose/ui/text/input/EditingBuffer;
 
-    invoke-virtual {v0}, Landroidx/compose/ui/text/input/EditingBuffer;->getSelection-d9O1mEE$ui_text_release()J
+    invoke-virtual {p1}, Landroidx/compose/ui/text/input/EditingBuffer;->getSelection-d9O1mEE$ui_text_release()J
 
-    move-result-wide v4
-
-    .line 123
-    iget-object v0, p0, Landroidx/compose/ui/text/input/EditProcessor;->mBuffer:Landroidx/compose/ui/text/input/EditingBuffer;
-
-    invoke-virtual {v0}, Landroidx/compose/ui/text/input/EditingBuffer;->getComposition-MzsxiRA$ui_text_release()Landroidx/compose/ui/text/TextRange;
-
-    move-result-object v6
-
-    const/4 v7, 0x0
-
-    move-object v2, p1
-
-    .line 120
-    invoke-direct/range {v2 .. v7}, Landroidx/compose/ui/text/input/TextFieldValue;-><init>(Landroidx/compose/ui/text/AnnotatedString;JLandroidx/compose/ui/text/TextRange;Lkotlin/jvm/internal/DefaultConstructorMarker;)V
+    move-result-wide v3
 
     .line 126
+    invoke-static {v3, v4}, Landroidx/compose/ui/text/TextRange;->box-impl(J)Landroidx/compose/ui/text/TextRange;
+
+    move-result-object p1
+
+    invoke-virtual {p1}, Landroidx/compose/ui/text/TextRange;->unbox-impl()J
+
+    iget-object v1, p0, Landroidx/compose/ui/text/input/EditProcessor;->mBufferState:Landroidx/compose/ui/text/input/TextFieldValue;
+
+    invoke-virtual {v1}, Landroidx/compose/ui/text/input/TextFieldValue;->getSelection-d9O1mEE()J
+
+    move-result-wide v5
+
+    invoke-static {v5, v6}, Landroidx/compose/ui/text/TextRange;->getReversed-impl(J)Z
+
+    move-result v1
+
+    if-nez v1, :cond_1
+
+    move-object v0, p1
+
+    :cond_1
+    if-eqz v0, :cond_2
+
+    invoke-virtual {v0}, Landroidx/compose/ui/text/TextRange;->unbox-impl()J
+
+    move-result-wide v0
+
+    goto :goto_1
+
+    :cond_2
+    invoke-static {v3, v4}, Landroidx/compose/ui/text/TextRange;->getMax-impl(J)I
+
+    move-result p1
+
+    invoke-static {v3, v4}, Landroidx/compose/ui/text/TextRange;->getMin-impl(J)I
+
+    move-result v0
+
+    invoke-static {p1, v0}, Landroidx/compose/ui/text/TextRangeKt;->TextRange(II)J
+
+    move-result-wide v0
+
+    :goto_1
+    move-wide v3, v0
+
+    .line 128
+    iget-object p1, p0, Landroidx/compose/ui/text/input/EditProcessor;->mBuffer:Landroidx/compose/ui/text/input/EditingBuffer;
+
+    invoke-virtual {p1}, Landroidx/compose/ui/text/input/EditingBuffer;->getComposition-MzsxiRA$ui_text_release()Landroidx/compose/ui/text/TextRange;
+
+    move-result-object v5
+
+    .line 120
+    new-instance p1, Landroidx/compose/ui/text/input/TextFieldValue;
+
+    const/4 v6, 0x0
+
+    move-object v1, p1
+
+    invoke-direct/range {v1 .. v6}, Landroidx/compose/ui/text/input/TextFieldValue;-><init>(Landroidx/compose/ui/text/AnnotatedString;JLandroidx/compose/ui/text/TextRange;Lkotlin/jvm/internal/DefaultConstructorMarker;)V
+
+    .line 131
     iput-object p1, p0, Landroidx/compose/ui/text/input/EditProcessor;->mBufferState:Landroidx/compose/ui/text/input/TextFieldValue;
 
     return-object p1
 
-    :catch_1
+    :catch_2
     move-exception v1
 
     move-object v3, v0
@@ -643,7 +696,7 @@
     move-object v0, v1
 
     .line 117
-    :goto_1
+    :goto_2
     new-instance v1, Ljava/lang/RuntimeException;
 
     move-object v2, v3
@@ -681,10 +734,6 @@
 
 .method public final reset(Landroidx/compose/ui/text/input/TextFieldValue;Landroidx/compose/ui/text/input/TextInputSession;)V
     .locals 9
-
-    const-string/jumbo v0, "value"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 64
     invoke-virtual {p1}, Landroidx/compose/ui/text/input/TextFieldValue;->getComposition-MzsxiRA()Landroidx/compose/ui/text/TextRange;
@@ -906,7 +955,7 @@
 .method public final toTextFieldValue()Landroidx/compose/ui/text/input/TextFieldValue;
     .locals 0
 
-    .line 133
+    .line 138
     iget-object p0, p0, Landroidx/compose/ui/text/input/EditProcessor;->mBufferState:Landroidx/compose/ui/text/input/TextFieldValue;
 
     return-object p0

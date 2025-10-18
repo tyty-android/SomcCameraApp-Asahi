@@ -21,7 +21,7 @@
 .method constructor <init>()V
     .locals 0
 
-    .line 736
+    .line 789
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -42,11 +42,11 @@
         }
     .end annotation
 
-    .line 740
+    .line 793
     check-cast p1, Ljp/co/sony/mc/camera/setting/CameraSettings;
 
-    .line 741
-    invoke-static {p1}, Ljp/co/sony/mc/camera/setting/CameraSettings;->-$$Nest$mgetBackSoftSkin(Ljp/co/sony/mc/camera/setting/CameraSettings;)Ljp/co/sony/mc/camera/configuration/parameters/BackSoftSkin;
+    .line 794
+    invoke-static {p1}, Ljp/co/sony/mc/camera/setting/CameraSettings;->-$$Nest$mgetHandShutter(Ljp/co/sony/mc/camera/setting/CameraSettings;)Ljp/co/sony/mc/camera/configuration/parameters/HandShutter;
 
     move-result-object p0
 

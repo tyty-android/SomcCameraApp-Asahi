@@ -69,7 +69,7 @@
 .method public bridge synthetic invoke(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
 
-    .line 724
+    .line 734
     check-cast p1, Landroidx/compose/ui/unit/Density;
 
     invoke-virtual {p0, p1}, Landroidx/compose/material/DrawerKt$BottomDrawer$2$1$3;->invoke-Bjo55l4(Landroidx/compose/ui/unit/Density;)J
@@ -84,28 +84,24 @@
 .end method
 
 .method public final invoke-Bjo55l4(Landroidx/compose/ui/unit/Density;)J
-    .locals 1
+    .locals 0
 
-    const-string v0, "$this$offset"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 727
+    .line 737
     iget-object p0, p0, Landroidx/compose/material/DrawerKt$BottomDrawer$2$1$3;->$drawerState:Landroidx/compose/material/BottomDrawerState;
 
-    .line 728
+    .line 738
     invoke-virtual {p0}, Landroidx/compose/material/BottomDrawerState;->requireOffset$material_release()F
 
     move-result p0
 
-    .line 729
+    .line 739
     invoke-static {p0}, Lkotlin/math/MathKt;->roundToInt(F)I
 
     move-result p0
 
     const/4 p1, 0x0
 
-    .line 725
+    .line 735
     invoke-static {p1, p0}, Landroidx/compose/ui/unit/IntOffsetKt;->IntOffset(II)J
 
     move-result-wide p0

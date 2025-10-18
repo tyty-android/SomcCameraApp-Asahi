@@ -142,7 +142,7 @@
 
 # virtual methods
 .method public load(Landroidx/compose/ui/text/font/Font;)Ljava/lang/Object;
-    .locals 8
+    .locals 7
     .annotation runtime Lkotlin/Deprecated;
         message = "Replaced by FontFamily.Resolver, this method should not be called"
         replaceWith = .subannotation Lkotlin/ReplaceWith;
@@ -151,36 +151,32 @@
         .end subannotation
     .end annotation
 
-    const-string v0, "font"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
     .line 269
-    iget-object v1, p0, Landroidx/compose/ui/text/DeprecatedBridgeFontResourceLoader;->fontFamilyResolver:Landroidx/compose/ui/text/font/FontFamily$Resolver;
+    iget-object v0, p0, Landroidx/compose/ui/text/DeprecatedBridgeFontResourceLoader;->fontFamilyResolver:Landroidx/compose/ui/text/font/FontFamily$Resolver;
 
     .line 270
     invoke-static {p1}, Landroidx/compose/ui/text/font/FontKt;->toFontFamily(Landroidx/compose/ui/text/font/Font;)Landroidx/compose/ui/text/font/FontFamily;
 
-    move-result-object v2
+    move-result-object v1
 
     .line 271
     invoke-interface {p1}, Landroidx/compose/ui/text/font/Font;->getWeight()Landroidx/compose/ui/text/font/FontWeight;
 
-    move-result-object v3
+    move-result-object v2
 
     .line 272
     invoke-interface {p1}, Landroidx/compose/ui/text/font/Font;->getStyle-_-LCdwA()I
 
-    move-result v4
+    move-result v3
 
-    const/16 v6, 0x8
+    const/16 v5, 0x8
 
-    const/4 v7, 0x0
+    const/4 v6, 0x0
 
-    const/4 v5, 0x0
+    const/4 v4, 0x0
 
     .line 269
-    invoke-static/range {v1 .. v7}, Landroidx/compose/ui/text/font/FontFamily$Resolver;->resolve-DPcqOEQ$default(Landroidx/compose/ui/text/font/FontFamily$Resolver;Landroidx/compose/ui/text/font/FontFamily;Landroidx/compose/ui/text/font/FontWeight;IIILjava/lang/Object;)Landroidx/compose/runtime/State;
+    invoke-static/range {v0 .. v6}, Landroidx/compose/ui/text/font/FontFamily$Resolver;->resolve-DPcqOEQ$default(Landroidx/compose/ui/text/font/FontFamily$Resolver;Landroidx/compose/ui/text/font/FontFamily;Landroidx/compose/ui/text/font/FontWeight;IIILjava/lang/Object;)Landroidx/compose/runtime/State;
 
     move-result-object p0
 

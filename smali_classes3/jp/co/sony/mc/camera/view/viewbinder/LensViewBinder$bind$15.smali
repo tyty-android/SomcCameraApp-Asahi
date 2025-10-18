@@ -31,8 +31,8 @@
     }
     k = 0x1
     mv = {
-        0x1,
-        0x9,
+        0x2,
+        0x0,
         0x0
     }
     xi = 0x30
@@ -49,7 +49,7 @@
 
     iput-object p1, p0, Ljp/co/sony/mc/camera/view/viewbinder/LensViewBinder$bind$15;->$vm:Ljp/co/sony/mc/camera/view/uistate/SingleLensViewModel;
 
-    .line 440
+    .line 452
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -60,7 +60,7 @@
 .method public onZoomSliderStateChanged(Z)V
     .locals 0
 
-    .line 442
+    .line 454
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/viewbinder/LensViewBinder$bind$15;->$vm:Ljp/co/sony/mc/camera/view/uistate/SingleLensViewModel;
 
     invoke-virtual {p0, p1}, Ljp/co/sony/mc/camera/view/uistate/SingleLensViewModel;->onSliderOpened(Z)V

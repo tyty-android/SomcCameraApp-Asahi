@@ -34,7 +34,7 @@
 .method private constructor <init>(Ljp/co/sony/mc/camera/view/widget/DialPicker;)V
     .locals 0
 
-    .line 1092
+    .line 1098
     iput-object p1, p0, Ljp/co/sony/mc/camera/view/widget/DialPicker$HorizontalCenterSnapHelper;->this$0:Ljp/co/sony/mc/camera/view/widget/DialPicker;
 
     invoke-direct {p0}, Landroidx/recyclerview/widget/LinearSnapHelper;-><init>()V
@@ -60,10 +60,10 @@
         }
     .end annotation
 
-    .line 1100
+    .line 1106
     iput-object p1, p0, Ljp/co/sony/mc/camera/view/widget/DialPicker$HorizontalCenterSnapHelper;->mRecyclerView:Landroidx/recyclerview/widget/RecyclerView;
 
-    .line 1101
+    .line 1107
     invoke-super {p0, p1}, Landroidx/recyclerview/widget/LinearSnapHelper;->attachToRecyclerView(Landroidx/recyclerview/widget/RecyclerView;)V
 
     return-void
@@ -72,7 +72,7 @@
 .method protected createScroller(Landroidx/recyclerview/widget/RecyclerView$LayoutManager;)Landroidx/recyclerview/widget/RecyclerView$SmoothScroller;
     .locals 2
 
-    .line 1112
+    .line 1118
     new-instance v0, Ljp/co/sony/mc/camera/view/widget/DialPicker$HorizontalCenterSnapHelper$1;
 
     iget-object v1, p0, Ljp/co/sony/mc/camera/view/widget/DialPicker$HorizontalCenterSnapHelper;->mRecyclerView:Landroidx/recyclerview/widget/RecyclerView;
@@ -89,7 +89,7 @@
 .method public findSnapView(Landroidx/recyclerview/widget/RecyclerView$LayoutManager;)Landroid/view/View;
     .locals 0
 
-    .line 1106
+    .line 1112
     iget-object p1, p0, Ljp/co/sony/mc/camera/view/widget/DialPicker$HorizontalCenterSnapHelper;->this$0:Ljp/co/sony/mc/camera/view/widget/DialPicker;
 
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/widget/DialPicker$HorizontalCenterSnapHelper;->mRecyclerView:Landroidx/recyclerview/widget/RecyclerView;
@@ -104,7 +104,7 @@
 .method setViewKind(Ljp/co/sony/mc/camera/view/widget/DialPicker$ViewKind;)V
     .locals 0
 
-    .line 1143
+    .line 1149
     iput-object p1, p0, Ljp/co/sony/mc/camera/view/widget/DialPicker$HorizontalCenterSnapHelper;->mViewKind:Ljp/co/sony/mc/camera/view/widget/DialPicker$ViewKind;
 
     return-void

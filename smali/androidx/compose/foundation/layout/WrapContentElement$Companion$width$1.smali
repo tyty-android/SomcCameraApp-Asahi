@@ -73,7 +73,7 @@
 .method public bridge synthetic invoke(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
     .locals 2
 
-    .line 946
+    .line 948
     check-cast p1, Landroidx/compose/ui/unit/IntSize;
 
     invoke-virtual {p1}, Landroidx/compose/ui/unit/IntSize;->unbox-impl()J
@@ -94,13 +94,9 @@
 .end method
 
 .method public final invoke-5SAbXVA(JLandroidx/compose/ui/unit/LayoutDirection;)J
-    .locals 1
+    .locals 0
 
-    const-string v0, "layoutDirection"
-
-    invoke-static {p3, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 947
+    .line 949
     iget-object p0, p0, Landroidx/compose/foundation/layout/WrapContentElement$Companion$width$1;->$align:Landroidx/compose/ui/Alignment$Horizontal;
 
     invoke-static {p1, p2}, Landroidx/compose/ui/unit/IntSize;->getWidth-impl(J)I

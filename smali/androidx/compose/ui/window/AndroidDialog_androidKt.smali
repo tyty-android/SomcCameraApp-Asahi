@@ -5,7 +5,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/SourceDebugExtension;
-    value = "SMAP\nAndroidDialog.android.kt\nKotlin\n*S Kotlin\n*F\n+ 1 AndroidDialog.android.kt\nandroidx/compose/ui/window/AndroidDialog_androidKt\n+ 2 CompositionLocal.kt\nandroidx/compose/runtime/CompositionLocal\n+ 3 Composables.kt\nandroidx/compose/runtime/ComposablesKt\n+ 4 Composer.kt\nandroidx/compose/runtime/ComposerKt\n+ 5 Layout.kt\nandroidx/compose/ui/layout/LayoutKt\n+ 6 Composer.kt\nandroidx/compose/runtime/Updater\n+ 7 SnapshotState.kt\nandroidx/compose/runtime/SnapshotStateKt__SnapshotStateKt\n*L\n1#1,466:1\n76#2:467\n76#2:468\n76#2:469\n50#3:470\n49#3:471\n456#3,8:489\n464#3,6:503\n1097#4,6:472\n78#5,11:478\n91#5:509\n4144#6,6:497\n81#7:510\n*S KotlinDebug\n*F\n+ 1 AndroidDialog.android.kt\nandroidx/compose/ui/window/AndroidDialog_androidKt\n*L\n156#1:467\n157#1:468\n158#1:469\n162#1:470\n162#1:471\n454#1:489,8\n454#1:503,6\n162#1:472,6\n454#1:478,11\n454#1:509\n454#1:497,6\n160#1:510\n*E\n"
+    value = "SMAP\nAndroidDialog.android.kt\nKotlin\n*S Kotlin\n*F\n+ 1 AndroidDialog.android.kt\nandroidx/compose/ui/window/AndroidDialog_androidKt\n+ 2 CompositionLocal.kt\nandroidx/compose/runtime/CompositionLocal\n+ 3 Composables.kt\nandroidx/compose/runtime/ComposablesKt\n+ 4 Composer.kt\nandroidx/compose/runtime/ComposerKt\n+ 5 Layout.kt\nandroidx/compose/ui/layout/LayoutKt\n+ 6 Composer.kt\nandroidx/compose/runtime/Updater\n+ 7 SnapshotState.kt\nandroidx/compose/runtime/SnapshotStateKt__SnapshotStateKt\n*L\n1#1,466:1\n74#2:467\n74#2:468\n74#2:469\n50#3:470\n49#3:471\n456#3,8:489\n464#3,6:503\n1116#4,6:472\n79#5,11:478\n92#5:509\n3737#6,6:497\n81#7:510\n*S KotlinDebug\n*F\n+ 1 AndroidDialog.android.kt\nandroidx/compose/ui/window/AndroidDialog_androidKt\n*L\n156#1:467\n157#1:468\n158#1:469\n162#1:470\n162#1:471\n454#1:489,8\n454#1:503,6\n162#1:472,6\n454#1:478,11\n454#1:509\n454#1:497,6\n160#1:510\n*E\n"
 .end annotation
 
 .annotation runtime Lkotlin/Metadata;
@@ -66,14 +66,6 @@
     move-object/from16 v8, p2
 
     move/from16 v9, p4
-
-    const-string v0, "onDismissRequest"
-
-    invoke-static {v7, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string v0, "content"
-
-    invoke-static {v8, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
     const v0, -0x792b3ec6
 
@@ -253,7 +245,7 @@
 
     const/4 v2, -0x1
 
-    const-string v3, "androidx.compose.ui.window.Dialog (AndroidDialog.android.kt:150)"
+    const-string v3, "androidx.compose.ui.window.Dialog (AndroidDialog.android.kt:154)"
 
     .line 155
     invoke-static {v0, v1, v2, v3}, Landroidx/compose/runtime/ComposerKt;->traceEventStart(IIILjava/lang/String;)V
@@ -423,11 +415,6 @@
     :goto_9
     new-instance v12, Landroidx/compose/ui/window/DialogWrapper;
 
-    .line 169
-    const-string v11, "dialogId"
-
-    invoke-static {v10, v11}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
-
     move-object v11, v0
 
     move-object v0, v12
@@ -454,7 +441,6 @@
 
     move-object v6, v10
 
-    .line 163
     invoke-direct/range {v0 .. v6}, Landroidx/compose/ui/window/DialogWrapper;-><init>(Lkotlin/jvm/functions/Function0;Landroidx/compose/ui/window/DialogProperties;Landroid/view/View;Landroidx/compose/ui/unit/LayoutDirection;Landroidx/compose/ui/unit/Density;Ljava/util/UUID;)V
 
     .line 171
@@ -525,11 +511,8 @@
 
     move-result-object v6
 
-    if-nez v6, :cond_10
+    if-eqz v6, :cond_10
 
-    goto :goto_c
-
-    :cond_10
     new-instance v10, Landroidx/compose/ui/window/AndroidDialog_androidKt$Dialog$3;
 
     move-object v0, v10
@@ -548,7 +531,7 @@
 
     invoke-interface {v6, v10}, Landroidx/compose/runtime/ScopeUpdateScope;->updateScope(Lkotlin/jvm/functions/Function2;)V
 
-    :goto_c
+    :cond_10
     return-void
 .end method
 
@@ -717,12 +700,12 @@
 
     const/4 v1, -0x1
 
-    const-string v3, "androidx.compose.ui.window.DialogLayout (AndroidDialog.android.kt:449)"
+    const-string v3, "androidx.compose.ui.window.DialogLayout (AndroidDialog.android.kt:452)"
 
     .line 453
     invoke-static {v0, v2, v1, v3}, Landroidx/compose/runtime/ComposerKt;->traceEventStart(IIILjava/lang/String;)V
 
-    .line 457
+    .line 454
     :cond_9
     sget-object v0, Landroidx/compose/ui/window/AndroidDialog_androidKt$DialogLayout$1;->INSTANCE:Landroidx/compose/ui/window/AndroidDialog_androidKt$DialogLayout$1;
 
@@ -732,6 +715,8 @@
 
     and-int/lit8 v1, v1, 0xe
 
+    or-int/lit16 v1, v1, 0x180
+
     shl-int/lit8 v2, v2, 0x3
 
     and-int/lit8 v2, v2, 0x70
@@ -740,10 +725,9 @@
 
     const v2, -0x4ee9b9da
 
-    .line 454
     invoke-interface {p2, v2}, Landroidx/compose/runtime/Composer;->startReplaceableGroup(I)V
 
-    const-string v2, "CC(Layout)P(!1,2)77@3132L23,79@3222L420:Layout.kt#80mrfh"
+    const-string v2, "CC(Layout)P(!1,2)78@3182L23,80@3272L420:Layout.kt#80mrfh"
 
     invoke-static {p2, v2}, Landroidx/compose/runtime/ComposerKt;->sourceInformation(Landroidx/compose/runtime/Composer;Ljava/lang/String;)V
 
@@ -932,11 +916,8 @@
 
     move-result-object p2
 
-    if-nez p2, :cond_f
+    if-eqz p2, :cond_f
 
-    goto :goto_7
-
-    :cond_f
     new-instance v0, Landroidx/compose/ui/window/AndroidDialog_androidKt$DialogLayout$2;
 
     invoke-direct {v0, p0, p1, p3, p4}, Landroidx/compose/ui/window/AndroidDialog_androidKt$DialogLayout$2;-><init>(Landroidx/compose/ui/Modifier;Lkotlin/jvm/functions/Function2;II)V
@@ -945,7 +926,7 @@
 
     invoke-interface {p2, v0}, Landroidx/compose/runtime/ScopeUpdateScope;->updateScope(Lkotlin/jvm/functions/Function2;)V
 
-    :goto_7
+    :cond_f
     return-void
 .end method
 

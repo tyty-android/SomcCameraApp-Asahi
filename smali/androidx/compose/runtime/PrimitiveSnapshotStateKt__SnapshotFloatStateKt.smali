@@ -47,15 +47,7 @@
         }
     .end annotation
 
-    const-string p1, "<this>"
-
-    invoke-static {p0, p1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string p1, "property"
-
-    invoke-static {p2, p1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 75
+    .line 76
     invoke-interface {p0}, Landroidx/compose/runtime/FloatState;->getFloatValue()F
 
     move-result p0
@@ -66,7 +58,7 @@
 .method public static final mutableFloatStateOf(F)Landroidx/compose/runtime/MutableFloatState;
     .locals 0
 
-    .line 52
+    .line 53
     invoke-static {p0}, Landroidx/compose/runtime/ActualAndroid_androidKt;->createSnapshotMutableFloatState(F)Landroidx/compose/runtime/MutableFloatState;
 
     move-result-object p0
@@ -86,15 +78,7 @@
         }
     .end annotation
 
-    const-string p1, "<this>"
-
-    invoke-static {p0, p1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string p1, "property"
-
-    invoke-static {p2, p1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 108
+    .line 109
     invoke-interface {p0, p3}, Landroidx/compose/runtime/MutableFloatState;->setFloatValue(F)V
 
     return-void

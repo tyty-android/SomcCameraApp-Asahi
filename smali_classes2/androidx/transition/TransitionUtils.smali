@@ -6,16 +6,13 @@
 # annotations
 .annotation system Ldalvik/annotation/MemberClasses;
     value = {
+        Landroidx/transition/TransitionUtils$Api28Impl;,
         Landroidx/transition/TransitionUtils$MatrixEvaluator;
     }
 .end annotation
 
 
 # static fields
-.field private static final HAS_IS_ATTACHED_TO_WINDOW:Z
-
-.field private static final HAS_OVERLAY:Z
-
 .field private static final HAS_PICTURE_BITMAP:Z
 
 .field private static final MAX_IMAGE_SIZE:I = 0x100000
@@ -27,12 +24,6 @@
 
     const/4 v0, 0x1
 
-    .line 35
-    sput-boolean v0, Landroidx/transition/TransitionUtils;->HAS_IS_ATTACHED_TO_WINDOW:Z
-
-    .line 37
-    sput-boolean v0, Landroidx/transition/TransitionUtils;->HAS_OVERLAY:Z
-
     .line 39
     sput-boolean v0, Landroidx/transition/TransitionUtils;->HAS_PICTURE_BITMAP:Z
 
@@ -42,7 +33,7 @@
 .method private constructor <init>()V
     .locals 0
 
-    .line 177
+    .line 174
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -182,85 +173,80 @@
 .end method
 
 .method private static createViewBitmap(Landroid/view/View;Landroid/graphics/Matrix;Landroid/graphics/RectF;Landroid/view/ViewGroup;)Landroid/graphics/Bitmap;
-    .locals 8
+    .locals 7
 
     .line 93
-    sget-boolean v0, Landroidx/transition/TransitionUtils;->HAS_IS_ATTACHED_TO_WINDOW:Z
-
-    const/4 v1, 0x0
-
-    if-eqz v0, :cond_1
-
-    .line 94
     invoke-virtual {p0}, Landroid/view/View;->isAttachedToWindow()Z
 
     move-result v0
 
-    xor-int/lit8 v0, v0, 0x1
+    const/4 v1, 0x1
 
-    if-nez p3, :cond_0
+    xor-int/2addr v0, v1
 
-    move v2, v1
+    const/4 v2, 0x0
 
-    goto :goto_0
+    if-eqz p3, :cond_0
 
-    .line 95
-    :cond_0
+    .line 94
     invoke-virtual {p3}, Landroid/view/ViewGroup;->isAttachedToWindow()Z
 
-    move-result v2
+    move-result v3
+
+    if-eqz v3, :cond_0
 
     goto :goto_0
 
-    :cond_1
-    move v0, v1
+    :cond_0
+    move v1, v2
 
-    move v2, v0
-
-    .line 102
     :goto_0
-    sget-boolean v3, Landroidx/transition/TransitionUtils;->HAS_OVERLAY:Z
+    const/4 v3, 0x0
 
-    const/4 v4, 0x0
+    if-eqz v0, :cond_2
 
-    if-eqz v3, :cond_3
+    if-nez v1, :cond_1
 
-    if-eqz v0, :cond_3
+    return-object v3
 
-    if-nez v2, :cond_2
-
-    return-object v4
-
-    .line 106
-    :cond_2
+    .line 101
+    :cond_1
     invoke-virtual {p0}, Landroid/view/View;->getParent()Landroid/view/ViewParent;
 
     move-result-object v1
 
     check-cast v1, Landroid/view/ViewGroup;
 
-    .line 107
+    .line 102
     invoke-virtual {v1, p0}, Landroid/view/ViewGroup;->indexOfChild(Landroid/view/View;)I
 
     move-result v2
 
-    .line 108
+    .line 103
     invoke-virtual {p3}, Landroid/view/ViewGroup;->getOverlay()Landroid/view/ViewGroupOverlay;
 
-    move-result-object v5
+    move-result-object v4
 
-    invoke-virtual {v5, p0}, Landroid/view/ViewGroupOverlay;->add(Landroid/view/View;)V
+    .line 104
+    invoke-virtual {v4, p0}, Landroid/view/ViewGroupOverlay;->add(Landroid/view/View;)V
 
     goto :goto_1
 
-    :cond_3
-    move v2, v1
+    :cond_2
+    move-object v1, v3
 
-    move-object v1, v4
-
-    .line 111
+    .line 107
     :goto_1
     invoke-virtual {p2}, Landroid/graphics/RectF;->width()F
+
+    move-result v4
+
+    invoke-static {v4}, Ljava/lang/Math;->round(F)I
+
+    move-result v4
+
+    .line 108
+    invoke-virtual {p2}, Landroid/graphics/RectF;->height()F
 
     move-result v5
 
@@ -268,134 +254,124 @@
 
     move-result v5
 
-    .line 112
-    invoke-virtual {p2}, Landroid/graphics/RectF;->height()F
+    if-lez v4, :cond_4
 
-    move-result v6
+    if-lez v5, :cond_4
 
-    invoke-static {v6}, Ljava/lang/Math;->round(F)I
+    mul-int v3, v4, v5
 
-    move-result v6
+    int-to-float v3, v3
 
-    if-lez v5, :cond_5
+    const/high16 v6, 0x49800000    # 1048576.0f
 
-    if-lez v6, :cond_5
+    div-float/2addr v6, v3
 
-    mul-int v4, v5, v6
+    const/high16 v3, 0x3f800000    # 1.0f
+
+    .line 110
+    invoke-static {v3, v6}, Ljava/lang/Math;->min(FF)F
+
+    move-result v3
 
     int-to-float v4, v4
 
-    const/high16 v7, 0x49800000    # 1048576.0f
+    mul-float/2addr v4, v3
 
-    div-float/2addr v7, v4
-
-    const/high16 v4, 0x3f800000    # 1.0f
-
-    .line 114
-    invoke-static {v4, v7}, Ljava/lang/Math;->min(FF)F
+    .line 111
+    invoke-static {v4}, Ljava/lang/Math;->round(F)I
 
     move-result v4
 
     int-to-float v5, v5
 
-    mul-float/2addr v5, v4
+    mul-float/2addr v5, v3
 
-    .line 115
+    .line 112
     invoke-static {v5}, Ljava/lang/Math;->round(F)I
 
     move-result v5
 
-    int-to-float v6, v6
+    .line 113
+    iget v6, p2, Landroid/graphics/RectF;->left:F
 
-    mul-float/2addr v6, v4
-
-    .line 116
-    invoke-static {v6}, Ljava/lang/Math;->round(F)I
-
-    move-result v6
-
-    .line 117
-    iget v7, p2, Landroid/graphics/RectF;->left:F
-
-    neg-float v7, v7
+    neg-float v6, v6
 
     iget p2, p2, Landroid/graphics/RectF;->top:F
 
     neg-float p2, p2
 
-    invoke-virtual {p1, v7, p2}, Landroid/graphics/Matrix;->postTranslate(FF)Z
+    invoke-virtual {p1, v6, p2}, Landroid/graphics/Matrix;->postTranslate(FF)Z
 
-    .line 118
-    invoke-virtual {p1, v4, v4}, Landroid/graphics/Matrix;->postScale(FF)Z
+    .line 114
+    invoke-virtual {p1, v3, v3}, Landroid/graphics/Matrix;->postScale(FF)Z
 
-    .line 120
+    .line 116
     sget-boolean p2, Landroidx/transition/TransitionUtils;->HAS_PICTURE_BITMAP:Z
 
-    if-eqz p2, :cond_4
+    if-eqz p2, :cond_3
 
-    .line 122
+    .line 118
     new-instance p2, Landroid/graphics/Picture;
 
     invoke-direct {p2}, Landroid/graphics/Picture;-><init>()V
 
-    .line 123
-    invoke-virtual {p2, v5, v6}, Landroid/graphics/Picture;->beginRecording(II)Landroid/graphics/Canvas;
+    .line 119
+    invoke-virtual {p2, v4, v5}, Landroid/graphics/Picture;->beginRecording(II)Landroid/graphics/Canvas;
 
-    move-result-object v4
+    move-result-object v3
 
-    .line 124
-    invoke-virtual {v4, p1}, Landroid/graphics/Canvas;->concat(Landroid/graphics/Matrix;)V
+    .line 120
+    invoke-virtual {v3, p1}, Landroid/graphics/Canvas;->concat(Landroid/graphics/Matrix;)V
 
-    .line 125
-    invoke-virtual {p0, v4}, Landroid/view/View;->draw(Landroid/graphics/Canvas;)V
+    .line 121
+    invoke-virtual {p0, v3}, Landroid/view/View;->draw(Landroid/graphics/Canvas;)V
 
-    .line 126
+    .line 122
     invoke-virtual {p2}, Landroid/graphics/Picture;->endRecording()V
 
-    .line 127
-    invoke-static {p2}, Landroid/graphics/Bitmap;->createBitmap(Landroid/graphics/Picture;)Landroid/graphics/Bitmap;
+    .line 123
+    invoke-static {p2}, Landroidx/transition/TransitionUtils$Api28Impl;->createBitmap(Landroid/graphics/Picture;)Landroid/graphics/Bitmap;
 
-    move-result-object v4
+    move-result-object v3
 
     goto :goto_2
 
-    .line 130
-    :cond_4
+    .line 126
+    :cond_3
     sget-object p2, Landroid/graphics/Bitmap$Config;->ARGB_8888:Landroid/graphics/Bitmap$Config;
 
-    invoke-static {v5, v6, p2}, Landroid/graphics/Bitmap;->createBitmap(IILandroid/graphics/Bitmap$Config;)Landroid/graphics/Bitmap;
+    invoke-static {v4, v5, p2}, Landroid/graphics/Bitmap;->createBitmap(IILandroid/graphics/Bitmap$Config;)Landroid/graphics/Bitmap;
 
-    move-result-object v4
+    move-result-object v3
 
-    .line 131
+    .line 127
     new-instance p2, Landroid/graphics/Canvas;
 
-    invoke-direct {p2, v4}, Landroid/graphics/Canvas;-><init>(Landroid/graphics/Bitmap;)V
+    invoke-direct {p2, v3}, Landroid/graphics/Canvas;-><init>(Landroid/graphics/Bitmap;)V
 
-    .line 132
+    .line 128
     invoke-virtual {p2, p1}, Landroid/graphics/Canvas;->concat(Landroid/graphics/Matrix;)V
 
-    .line 133
+    .line 129
     invoke-virtual {p0, p2}, Landroid/view/View;->draw(Landroid/graphics/Canvas;)V
 
-    :cond_5
+    :cond_4
     :goto_2
-    if-eqz v3, :cond_6
+    if-eqz v0, :cond_5
 
-    if-eqz v0, :cond_6
-
-    .line 137
+    .line 133
     invoke-virtual {p3}, Landroid/view/ViewGroup;->getOverlay()Landroid/view/ViewGroupOverlay;
 
     move-result-object p1
 
+    .line 134
     invoke-virtual {p1, p0}, Landroid/view/ViewGroupOverlay;->remove(Landroid/view/View;)V
 
-    .line 138
+    .line 135
     invoke-virtual {v1, p0, v2}, Landroid/view/ViewGroup;->addView(Landroid/view/View;I)V
 
-    :cond_6
-    return-object v4
+    :cond_5
+    return-object v3
 .end method
 
 .method static mergeAnimators(Landroid/animation/Animator;Landroid/animation/Animator;)Landroid/animation/Animator;
@@ -410,7 +386,7 @@
 
     return-object p0
 
-    .line 149
+    .line 146
     :cond_1
     new-instance v0, Landroid/animation/AnimatorSet;
 
@@ -418,7 +394,7 @@
 
     const/4 v1, 0x2
 
-    .line 150
+    .line 147
     new-array v1, v1, [Landroid/animation/Animator;
 
     const/4 v2, 0x0

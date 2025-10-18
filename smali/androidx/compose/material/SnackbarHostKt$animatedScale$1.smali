@@ -53,7 +53,7 @@
     f = "SnackbarHost.kt"
     i = {}
     l = {
-        0x16b
+        0x172
     }
     m = "invokeSuspend"
     n = {}
@@ -202,7 +202,7 @@
 
     move-result-object v0
 
-    .line 65535
+    .line 369
     iget v1, p0, Landroidx/compose/material/SnackbarHostKt$animatedScale$1;->label:I
 
     const/4 v2, 0x1
@@ -227,10 +227,10 @@
     :cond_1
     invoke-static {p1}, Lkotlin/ResultKt;->throwOnFailure(Ljava/lang/Object;)V
 
-    .line 363
+    .line 370
     iget-object v1, p0, Landroidx/compose/material/SnackbarHostKt$animatedScale$1;->$scale:Landroidx/compose/animation/core/Animatable;
 
-    .line 364
+    .line 371
     iget-boolean p1, p0, Landroidx/compose/material/SnackbarHostKt$animatedScale$1;->$visible:Z
 
     if-eqz p1, :cond_2
@@ -247,10 +247,10 @@
 
     move-result-object p1
 
-    .line 365
+    .line 372
     iget-object v3, p0, Landroidx/compose/material/SnackbarHostKt$animatedScale$1;->$animation:Landroidx/compose/animation/core/AnimationSpec;
 
-    .line 363
+    .line 370
     move-object v6, p0
 
     check-cast v6, Lkotlin/coroutines/Continuation;
@@ -275,7 +275,7 @@
 
     return-object v0
 
-    .line 367
+    .line 374
     :cond_3
     :goto_1
     sget-object p0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;

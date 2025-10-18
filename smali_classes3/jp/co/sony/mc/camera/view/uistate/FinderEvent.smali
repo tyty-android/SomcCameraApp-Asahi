@@ -31,11 +31,11 @@
     d2 = {
         "Ljp/co/sony/mc/camera/view/uistate/FinderEvent;",
         "",
-        "OnAdjustFinderItem",
-        "OnReset",
-        "OnTouchAdjustCanceled",
         "OnTouchAdjustStarted",
+        "OnTouchAdjustCanceled",
+        "OnAdjustFinderItem",
         "OnTransParentShowingItem",
+        "OnReset",
         "Ljp/co/sony/mc/camera/view/uistate/FinderEvent$OnAdjustFinderItem;",
         "Ljp/co/sony/mc/camera/view/uistate/FinderEvent$OnReset;",
         "Ljp/co/sony/mc/camera/view/uistate/FinderEvent$OnTouchAdjustCanceled;",
@@ -45,8 +45,8 @@
     }
     k = 0x1
     mv = {
-        0x1,
-        0x9,
+        0x2,
+        0x0,
         0x0
     }
     xi = 0x30

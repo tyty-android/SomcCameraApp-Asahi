@@ -29,16 +29,12 @@
 .method public static final getRootLookaheadDelegate(Landroidx/compose/ui/node/LookaheadDelegate;)Landroidx/compose/ui/node/LookaheadDelegate;
     .locals 2
 
-    const-string v0, "<this>"
-
-    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 137
+    .line 123
     invoke-virtual {p0}, Landroidx/compose/ui/node/LookaheadDelegate;->getLayoutNode()Landroidx/compose/ui/node/LayoutNode;
 
     move-result-object p0
 
-    .line 138
+    .line 124
     :goto_0
     invoke-virtual {p0}, Landroidx/compose/ui/node/LayoutNode;->getParent$ui_release()Landroidx/compose/ui/node/LayoutNode;
 
@@ -60,7 +56,7 @@
     :goto_1
     if-eqz v0, :cond_3
 
-    .line 139
+    .line 125
     invoke-virtual {p0}, Landroidx/compose/ui/node/LayoutNode;->getParent$ui_release()Landroidx/compose/ui/node/LayoutNode;
 
     move-result-object v0
@@ -74,14 +70,14 @@
     :cond_1
     invoke-static {v1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;)V
 
-    .line 140
+    .line 126
     invoke-virtual {v1}, Landroidx/compose/ui/node/LayoutNode;->isVirtualLookaheadRoot$ui_release()Z
 
     move-result v0
 
     if-eqz v0, :cond_2
 
-    .line 141
+    .line 127
     invoke-virtual {p0}, Landroidx/compose/ui/node/LayoutNode;->getParent$ui_release()Landroidx/compose/ui/node/LayoutNode;
 
     move-result-object p0
@@ -90,7 +86,7 @@
 
     goto :goto_0
 
-    .line 143
+    .line 129
     :cond_2
     invoke-virtual {p0}, Landroidx/compose/ui/node/LayoutNode;->getParent$ui_release()Landroidx/compose/ui/node/LayoutNode;
 
@@ -106,7 +102,7 @@
 
     goto :goto_0
 
-    .line 146
+    .line 132
     :cond_3
     invoke-virtual {p0}, Landroidx/compose/ui/node/LayoutNode;->getOuterCoordinator$ui_release()Landroidx/compose/ui/node/NodeCoordinator;
 

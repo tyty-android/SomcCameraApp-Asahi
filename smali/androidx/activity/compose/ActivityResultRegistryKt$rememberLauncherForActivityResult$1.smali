@@ -31,6 +31,17 @@
 .end annotation
 
 .annotation runtime Lkotlin/Metadata;
+    d1 = {
+        "\u0000\u0010\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0000\u0010\u0000\u001a\u00020\u0001\"\u0004\u0008\u0000\u0010\u0002\"\u0004\u0008\u0001\u0010\u0003*\u00020\u0004H\n\u00a2\u0006\u0002\u0008\u0005"
+    }
+    d2 = {
+        "<anonymous>",
+        "Landroidx/compose/runtime/DisposableEffectResult;",
+        "I",
+        "O",
+        "Landroidx/compose/runtime/DisposableEffectScope;",
+        "invoke"
+    }
     k = 0x3
     mv = {
         0x1,
@@ -78,6 +89,14 @@
 
 
 # direct methods
+.method public static synthetic $r8$lambda$li5zFnZIGklg6qYh4W157KrzSgE(Landroidx/compose/runtime/State;Ljava/lang/Object;)V
+    .locals 0
+
+    invoke-static {p0, p1}, Landroidx/activity/compose/ActivityResultRegistryKt$rememberLauncherForActivityResult$1;->invoke$lambda$0(Landroidx/compose/runtime/State;Ljava/lang/Object;)V
+
+    return-void
+.end method
+
 .method constructor <init>(Landroidx/activity/compose/ActivityResultLauncherHolder;Landroidx/activity/result/ActivityResultRegistry;Ljava/lang/String;Landroidx/activity/result/contract/ActivityResultContract;Landroidx/compose/runtime/State;)V
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
@@ -115,14 +134,25 @@
     return-void
 .end method
 
+.method private static final invoke$lambda$0(Landroidx/compose/runtime/State;Ljava/lang/Object;)V
+    .locals 0
+
+    .line 106
+    invoke-interface {p0}, Landroidx/compose/runtime/State;->getValue()Ljava/lang/Object;
+
+    move-result-object p0
+
+    check-cast p0, Lkotlin/jvm/functions/Function1;
+
+    invoke-interface {p0, p1}, Lkotlin/jvm/functions/Function1;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
+
+    return-void
+.end method
+
 
 # virtual methods
 .method public final invoke(Landroidx/compose/runtime/DisposableEffectScope;)Landroidx/compose/runtime/DisposableEffectResult;
     .locals 5
-
-    const-string v0, "$this$DisposableEffect"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 105
     iget-object p1, p0, Landroidx/activity/compose/ActivityResultRegistryKt$rememberLauncherForActivityResult$1;->$realLauncher:Landroidx/activity/compose/ActivityResultLauncherHolder;
@@ -133,15 +163,13 @@
 
     iget-object v2, p0, Landroidx/activity/compose/ActivityResultRegistryKt$rememberLauncherForActivityResult$1;->$contract:Landroidx/activity/result/contract/ActivityResultContract;
 
-    new-instance v3, Landroidx/activity/compose/ActivityResultRegistryKt$rememberLauncherForActivityResult$1$1;
+    iget-object v3, p0, Landroidx/activity/compose/ActivityResultRegistryKt$rememberLauncherForActivityResult$1;->$currentOnResult:Landroidx/compose/runtime/State;
 
-    iget-object v4, p0, Landroidx/activity/compose/ActivityResultRegistryKt$rememberLauncherForActivityResult$1;->$currentOnResult:Landroidx/compose/runtime/State;
+    new-instance v4, Landroidx/activity/compose/ActivityResultRegistryKt$rememberLauncherForActivityResult$1$$ExternalSyntheticLambda0;
 
-    invoke-direct {v3, v4}, Landroidx/activity/compose/ActivityResultRegistryKt$rememberLauncherForActivityResult$1$1;-><init>(Landroidx/compose/runtime/State;)V
+    invoke-direct {v4, v3}, Landroidx/activity/compose/ActivityResultRegistryKt$rememberLauncherForActivityResult$1$$ExternalSyntheticLambda0;-><init>(Landroidx/compose/runtime/State;)V
 
-    check-cast v3, Landroidx/activity/result/ActivityResultCallback;
-
-    invoke-virtual {v0, v1, v2, v3}, Landroidx/activity/result/ActivityResultRegistry;->register(Ljava/lang/String;Landroidx/activity/result/contract/ActivityResultContract;Landroidx/activity/result/ActivityResultCallback;)Landroidx/activity/result/ActivityResultLauncher;
+    invoke-virtual {v0, v1, v2, v4}, Landroidx/activity/result/ActivityResultRegistry;->register(Ljava/lang/String;Landroidx/activity/result/contract/ActivityResultContract;Landroidx/activity/result/ActivityResultCallback;)Landroidx/activity/result/ActivityResultLauncher;
 
     move-result-object v0
 

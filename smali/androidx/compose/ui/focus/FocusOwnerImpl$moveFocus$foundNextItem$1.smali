@@ -33,7 +33,7 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/SourceDebugExtension;
-    value = "SMAP\nFocusOwnerImpl.kt\nKotlin\n*S Kotlin\n*F\n+ 1 FocusOwnerImpl.kt\nandroidx/compose/ui/focus/FocusOwnerImpl$moveFocus$foundNextItem$1\n+ 2 NodeKind.kt\nandroidx/compose/ui/node/Nodes\n+ 3 DelegatableNode.kt\nandroidx/compose/ui/node/DelegatableNodeKt\n+ 4 fake.kt\nkotlin/jvm/internal/FakeKt\n+ 5 Modifier.kt\nandroidx/compose/ui/Modifier$Node\n+ 6 DelegatingNode.kt\nandroidx/compose/ui/node/DelegatingNode\n+ 7 MutableVector.kt\nandroidx/compose/runtime/collection/MutableVectorKt\n*L\n1#1,290:1\n90#2:291\n262#3:292\n230#3,5:293\n58#3:298\n59#3,8:300\n383#3,5:308\n263#3:313\n388#3:314\n393#3,2:316\n395#3,8:321\n403#3,9:332\n412#3,8:344\n68#3,7:352\n265#3:359\n1#4:299\n261#5:315\n234#6,3:318\n237#6,3:341\n1182#7:329\n1161#7,2:330\n*S KotlinDebug\n*F\n+ 1 FocusOwnerImpl.kt\nandroidx/compose/ui/focus/FocusOwnerImpl$moveFocus$foundNextItem$1\n*L\n164#1:291\n164#1:292\n164#1:293,5\n164#1:298\n164#1:300,8\n164#1:308,5\n164#1:313\n164#1:314\n164#1:316,2\n164#1:321,8\n164#1:332,9\n164#1:344,8\n164#1:352,7\n164#1:359\n164#1:299\n164#1:315\n164#1:318,3\n164#1:341,3\n164#1:329\n164#1:330,2\n*E\n"
+    value = "SMAP\nFocusOwnerImpl.kt\nKotlin\n*S Kotlin\n*F\n+ 1 FocusOwnerImpl.kt\nandroidx/compose/ui/focus/FocusOwnerImpl$moveFocus$foundNextItem$1\n+ 2 NodeKind.kt\nandroidx/compose/ui/node/Nodes\n+ 3 DelegatableNode.kt\nandroidx/compose/ui/node/DelegatableNodeKt\n+ 4 fake.kt\nkotlin/jvm/internal/FakeKt\n+ 5 Modifier.kt\nandroidx/compose/ui/Modifier$Node\n+ 6 DelegatingNode.kt\nandroidx/compose/ui/node/DelegatingNode\n+ 7 MutableVector.kt\nandroidx/compose/runtime/collection/MutableVectorKt\n+ 8 FocusTransactionManager.kt\nandroidx/compose/ui/focus/FocusTransactionManager\n+ 9 MutableVector.kt\nandroidx/compose/runtime/collection/MutableVector\n*L\n1#1,335:1\n90#2:336\n262#3:337\n230#3,5:338\n58#3:343\n59#3,8:345\n385#3,5:353\n263#3:358\n390#3:359\n395#3,2:361\n397#3,8:366\n405#3,9:377\n414#3,8:389\n68#3,7:397\n265#3:404\n1#4:344\n1#4:412\n261#5:360\n234#6,3:363\n237#6,3:386\n1208#7:374\n1187#7,2:375\n39#8,7:405\n46#8,4:415\n728#9,2:413\n*S KotlinDebug\n*F\n+ 1 FocusOwnerImpl.kt\nandroidx/compose/ui/focus/FocusOwnerImpl$moveFocus$foundNextItem$1\n*L\n182#1:336\n182#1:337\n182#1:338,5\n182#1:343\n182#1:345,8\n182#1:353,5\n182#1:358\n182#1:359\n182#1:361,2\n182#1:366,8\n182#1:377,9\n182#1:389,8\n182#1:397,7\n182#1:404\n182#1:344\n187#1:412\n182#1:360\n182#1:363,3\n182#1:386,3\n182#1:374\n182#1:375,2\n187#1:405,7\n187#1:415,4\n187#1:413,2\n*E\n"
 .end annotation
 
 .annotation runtime Lkotlin/Metadata;
@@ -65,16 +65,20 @@
 
 .field final synthetic $source:Landroidx/compose/ui/focus/FocusTargetNode;
 
+.field final synthetic this$0:Landroidx/compose/ui/focus/FocusOwnerImpl;
+
 
 # direct methods
-.method constructor <init>(Landroidx/compose/ui/focus/FocusTargetNode;ILkotlin/jvm/internal/Ref$BooleanRef;)V
+.method constructor <init>(Landroidx/compose/ui/focus/FocusTargetNode;Landroidx/compose/ui/focus/FocusOwnerImpl;ILkotlin/jvm/internal/Ref$BooleanRef;)V
     .locals 0
 
     iput-object p1, p0, Landroidx/compose/ui/focus/FocusOwnerImpl$moveFocus$foundNextItem$1;->$source:Landroidx/compose/ui/focus/FocusTargetNode;
 
-    iput p2, p0, Landroidx/compose/ui/focus/FocusOwnerImpl$moveFocus$foundNextItem$1;->$focusDirection:I
+    iput-object p2, p0, Landroidx/compose/ui/focus/FocusOwnerImpl$moveFocus$foundNextItem$1;->this$0:Landroidx/compose/ui/focus/FocusOwnerImpl;
 
-    iput-object p3, p0, Landroidx/compose/ui/focus/FocusOwnerImpl$moveFocus$foundNextItem$1;->$isCancelled:Lkotlin/jvm/internal/Ref$BooleanRef;
+    iput p3, p0, Landroidx/compose/ui/focus/FocusOwnerImpl$moveFocus$foundNextItem$1;->$focusDirection:I
+
+    iput-object p4, p0, Landroidx/compose/ui/focus/FocusOwnerImpl$moveFocus$foundNextItem$1;->$isCancelled:Lkotlin/jvm/internal/Ref$BooleanRef;
 
     const/4 p1, 0x1
 
@@ -88,11 +92,7 @@
 .method public final invoke(Landroidx/compose/ui/focus/FocusTargetNode;)Ljava/lang/Boolean;
     .locals 11
 
-    const-string v0, "destination"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 163
+    .line 181
     iget-object v0, p0, Landroidx/compose/ui/focus/FocusOwnerImpl$moveFocus$foundNextItem$1;->$source:Landroidx/compose/ui/focus/FocusTargetNode;
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->areEqual(Ljava/lang/Object;Ljava/lang/Object;)Z
@@ -109,7 +109,7 @@
 
     return-object p0
 
-    .line 164
+    .line 182
     :cond_0
     move-object v0, p1
 
@@ -117,12 +117,12 @@
 
     const/16 v2, 0x400
 
-    .line 291
+    .line 336
     invoke-static {v2}, Landroidx/compose/ui/node/NodeKind;->constructor-impl(I)I
 
     move-result v2
 
-    .line 298
+    .line 343
     invoke-interface {v0}, Landroidx/compose/ui/node/DelegatableNode;->getNode()Landroidx/compose/ui/Modifier$Node;
 
     move-result-object v3
@@ -131,9 +131,9 @@
 
     move-result v3
 
-    if-eqz v3, :cond_11
+    if-eqz v3, :cond_12
 
-    .line 300
+    .line 345
     invoke-interface {v0}, Landroidx/compose/ui/node/DelegatableNode;->getNode()Landroidx/compose/ui/Modifier$Node;
 
     move-result-object v3
@@ -142,7 +142,7 @@
 
     move-result-object v3
 
-    .line 301
+    .line 346
     invoke-static {v0}, Landroidx/compose/ui/node/DelegatableNodeKt;->requireLayoutNode(Landroidx/compose/ui/node/DelegatableNode;)Landroidx/compose/ui/node/LayoutNode;
 
     move-result-object v0
@@ -154,7 +154,7 @@
 
     if-eqz v0, :cond_c
 
-    .line 303
+    .line 348
     invoke-virtual {v0}, Landroidx/compose/ui/node/LayoutNode;->getNodes$ui_release()Landroidx/compose/ui/node/NodeChain;
 
     move-result-object v6
@@ -163,7 +163,7 @@
 
     move-result-object v6
 
-    .line 304
+    .line 349
     invoke-virtual {v6}, Landroidx/compose/ui/Modifier$Node;->getAggregateChildKindSet$ui_release()I
 
     move-result v6
@@ -175,7 +175,7 @@
     :goto_1
     if-eqz v3, :cond_a
 
-    .line 306
+    .line 351
     invoke-virtual {v3}, Landroidx/compose/ui/Modifier$Node;->getKindSet$ui_release()I
 
     move-result v6
@@ -191,7 +191,7 @@
     :goto_2
     if-eqz v6, :cond_9
 
-    .line 311
+    .line 356
     instance-of v8, v6, Landroidx/compose/ui/focus/FocusTargetNode;
 
     if-eqz v8, :cond_1
@@ -200,7 +200,7 @@
 
     goto/16 :goto_5
 
-    .line 315
+    .line 360
     :cond_1
     invoke-virtual {v6}, Landroidx/compose/ui/Modifier$Node;->getKindSet$ui_release()I
 
@@ -210,17 +210,17 @@
 
     if-eqz v8, :cond_8
 
-    .line 314
+    .line 359
     instance-of v8, v6, Landroidx/compose/ui/node/DelegatingNode;
 
     if-eqz v8, :cond_8
 
-    .line 317
+    .line 362
     move-object v8, v6
 
     check-cast v8, Landroidx/compose/ui/node/DelegatingNode;
 
-    .line 318
+    .line 363
     invoke-virtual {v8}, Landroidx/compose/ui/node/DelegatingNode;->getDelegate$ui_release()Landroidx/compose/ui/Modifier$Node;
 
     move-result-object v8
@@ -230,7 +230,7 @@
     :goto_3
     if-eqz v8, :cond_7
 
-    .line 315
+    .line 360
     invoke-virtual {v8}, Landroidx/compose/ui/Modifier$Node;->getKindSet$ui_release()I
 
     move-result v10
@@ -250,7 +250,7 @@
     :cond_2
     if-nez v7, :cond_3
 
-    .line 331
+    .line 376
     new-instance v7, Landroidx/compose/runtime/collection/MutableVector;
 
     const/16 v10, 0x10
@@ -264,7 +264,7 @@
 
     if-eqz v7, :cond_4
 
-    .line 334
+    .line 379
     invoke-virtual {v7, v6}, Landroidx/compose/runtime/collection/MutableVector;->add(Ljava/lang/Object;)Z
 
     :cond_4
@@ -273,10 +273,10 @@
     :cond_5
     if-eqz v7, :cond_6
 
-    .line 337
+    .line 382
     invoke-virtual {v7, v8}, Landroidx/compose/runtime/collection/MutableVector;->add(Ljava/lang/Object;)Z
 
-    .line 341
+    .line 386
     :cond_6
     :goto_4
     invoke-virtual {v8}, Landroidx/compose/ui/Modifier$Node;->getChild$ui_release()Landroidx/compose/ui/Modifier$Node;
@@ -290,7 +290,7 @@
 
     goto :goto_2
 
-    .line 349
+    .line 394
     :cond_8
     invoke-static {v7}, Landroidx/compose/ui/node/DelegatableNodeKt;->access$pop(Landroidx/compose/runtime/collection/MutableVector;)Landroidx/compose/ui/Modifier$Node;
 
@@ -298,7 +298,7 @@
 
     goto :goto_2
 
-    .line 352
+    .line 397
     :cond_9
     invoke-virtual {v3}, Landroidx/compose/ui/Modifier$Node;->getParent$ui_release()Landroidx/compose/ui/Modifier$Node;
 
@@ -306,7 +306,7 @@
 
     goto :goto_1
 
-    .line 355
+    .line 400
     :cond_a
     invoke-virtual {v0}, Landroidx/compose/ui/node/LayoutNode;->getParent$ui_release()Landroidx/compose/ui/node/LayoutNode;
 
@@ -314,7 +314,7 @@
 
     if-eqz v0, :cond_b
 
-    .line 356
+    .line 401
     invoke-virtual {v0}, Landroidx/compose/ui/node/LayoutNode;->getNodes$ui_release()Landroidx/compose/ui/node/NodeChain;
 
     move-result-object v3
@@ -334,68 +334,101 @@
 
     :cond_c
     :goto_5
-    if-eqz v4, :cond_10
+    if-eqz v4, :cond_11
 
-    .line 169
-    iget v0, p0, Landroidx/compose/ui/focus/FocusOwnerImpl$moveFocus$foundNextItem$1;->$focusDirection:I
+    .line 187
+    iget-object v0, p0, Landroidx/compose/ui/focus/FocusOwnerImpl$moveFocus$foundNextItem$1;->this$0:Landroidx/compose/ui/focus/FocusOwnerImpl;
 
-    invoke-static {p1, v0}, Landroidx/compose/ui/focus/FocusTransactionsKt;->performCustomRequestFocus-Mxy_nc0(Landroidx/compose/ui/focus/FocusTargetNode;I)Landroidx/compose/ui/focus/CustomDestinationResult;
+    invoke-virtual {v0}, Landroidx/compose/ui/focus/FocusOwnerImpl;->getFocusTransactionManager()Landroidx/compose/ui/focus/FocusTransactionManager;
 
     move-result-object v0
 
-    sget-object v1, Landroidx/compose/ui/focus/FocusOwnerImpl$moveFocus$foundNextItem$1$WhenMappings;->$EnumSwitchMapping$0:[I
+    iget v1, p0, Landroidx/compose/ui/focus/FocusOwnerImpl$moveFocus$foundNextItem$1;->$focusDirection:I
 
-    invoke-virtual {v0}, Landroidx/compose/ui/focus/CustomDestinationResult;->ordinal()I
+    iget-object p0, p0, Landroidx/compose/ui/focus/FocusOwnerImpl$moveFocus$foundNextItem$1;->$isCancelled:Lkotlin/jvm/internal/Ref$BooleanRef;
 
-    move-result v0
+    .line 409
+    :try_start_0
+    invoke-static {v0}, Landroidx/compose/ui/focus/FocusTransactionManager;->access$getOngoingTransaction$p(Landroidx/compose/ui/focus/FocusTransactionManager;)Z
 
-    aget v0, v1, v0
+    move-result v2
 
-    if-eq v0, v5, :cond_f
+    if-eqz v2, :cond_d
 
-    const/4 v1, 0x2
+    invoke-static {v0}, Landroidx/compose/ui/focus/FocusTransactionManager;->access$cancelTransaction(Landroidx/compose/ui/focus/FocusTransactionManager;)V
 
-    if-eq v0, v1, :cond_e
+    .line 410
+    :cond_d
+    invoke-static {v0}, Landroidx/compose/ui/focus/FocusTransactionManager;->access$beginTransaction(Landroidx/compose/ui/focus/FocusTransactionManager;)V
 
-    const/4 v1, 0x3
+    .line 188
+    invoke-static {p1, v1}, Landroidx/compose/ui/focus/FocusTransactionsKt;->performCustomRequestFocus-Mxy_nc0(Landroidx/compose/ui/focus/FocusTargetNode;I)Landroidx/compose/ui/focus/CustomDestinationResult;
 
-    if-eq v0, v1, :cond_e
+    move-result-object v1
+
+    sget-object v2, Landroidx/compose/ui/focus/FocusOwnerImpl$moveFocus$foundNextItem$1$WhenMappings;->$EnumSwitchMapping$0:[I
+
+    invoke-virtual {v1}, Landroidx/compose/ui/focus/CustomDestinationResult;->ordinal()I
+
+    move-result v1
+
+    aget v1, v2, v1
+
+    if-eq v1, v5, :cond_10
+
+    const/4 v2, 0x2
+
+    if-eq v1, v2, :cond_f
+
+    const/4 v2, 0x3
+
+    if-eq v1, v2, :cond_f
 
     const/4 p0, 0x4
 
-    if-ne v0, p0, :cond_d
+    if-ne v1, p0, :cond_e
 
-    .line 172
+    .line 191
     invoke-static {p1}, Landroidx/compose/ui/focus/FocusTransactionsKt;->performRequestFocus(Landroidx/compose/ui/focus/FocusTargetNode;)Z
 
     move-result v5
 
     goto :goto_6
 
-    :cond_d
+    :cond_e
     new-instance p0, Lkotlin/NoWhenBranchMatchedException;
 
     invoke-direct {p0}, Lkotlin/NoWhenBranchMatchedException;-><init>()V
 
     throw p0
 
-    .line 171
-    :cond_e
-    iget-object p0, p0, Landroidx/compose/ui/focus/FocusOwnerImpl$moveFocus$foundNextItem$1;->$isCancelled:Lkotlin/jvm/internal/Ref$BooleanRef;
-
+    .line 190
+    :cond_f
     iput-boolean v5, p0, Lkotlin/jvm/internal/Ref$BooleanRef;->element:Z
 
-    .line 172
-    :cond_f
+    .line 188
+    :cond_10
     :goto_6
     invoke-static {v5}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
     move-result-object p0
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    .line 417
+    invoke-static {v0}, Landroidx/compose/ui/focus/FocusTransactionManager;->access$commitTransaction(Landroidx/compose/ui/focus/FocusTransactionManager;)V
 
     return-object p0
 
-    .line 164
-    :cond_10
+    :catchall_0
+    move-exception p0
+
+    invoke-static {v0}, Landroidx/compose/ui/focus/FocusTransactionManager;->access$commitTransaction(Landroidx/compose/ui/focus/FocusTransactionManager;)V
+
+    throw p0
+
+    .line 182
+    :cond_11
     new-instance p0, Ljava/lang/IllegalStateException;
 
     const-string p1, "Focus search landed at the root."
@@ -408,8 +441,8 @@
 
     throw p0
 
-    .line 298
-    :cond_11
+    .line 343
+    :cond_12
     new-instance p0, Ljava/lang/IllegalStateException;
 
     const-string/jumbo p1, "visitAncestors called on an unattached node"
@@ -426,7 +459,7 @@
 .method public bridge synthetic invoke(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
 
-    .line 162
+    .line 180
     check-cast p1, Landroidx/compose/ui/focus/FocusTargetNode;
 
     invoke-virtual {p0, p1}, Landroidx/compose/ui/focus/FocusOwnerImpl$moveFocus$foundNextItem$1;->invoke(Landroidx/compose/ui/focus/FocusTargetNode;)Ljava/lang/Boolean;

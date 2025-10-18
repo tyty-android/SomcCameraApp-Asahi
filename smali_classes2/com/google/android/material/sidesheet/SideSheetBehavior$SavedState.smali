@@ -34,7 +34,7 @@
 .method static constructor <clinit>()V
     .locals 1
 
-    .line 892
+    .line 1139
     new-instance v0, Lcom/google/android/material/sidesheet/SideSheetBehavior$SavedState$1;
 
     invoke-direct {v0}, Lcom/google/android/material/sidesheet/SideSheetBehavior$SavedState$1;-><init>()V
@@ -49,7 +49,7 @@
 
     const/4 v0, 0x0
 
-    .line 872
+    .line 1119
     invoke-direct {p0, p1, v0}, Lcom/google/android/material/sidesheet/SideSheetBehavior$SavedState;-><init>(Landroid/os/Parcel;Ljava/lang/ClassLoader;)V
 
     return-void
@@ -58,10 +58,10 @@
 .method public constructor <init>(Landroid/os/Parcel;Ljava/lang/ClassLoader;)V
     .locals 0
 
-    .line 876
+    .line 1123
     invoke-direct {p0, p1, p2}, Landroidx/customview/view/AbsSavedState;-><init>(Landroid/os/Parcel;Ljava/lang/ClassLoader;)V
 
-    .line 878
+    .line 1125
     invoke-virtual {p1}, Landroid/os/Parcel;->readInt()I
 
     move-result p1
@@ -82,10 +82,10 @@
         }
     .end annotation
 
-    .line 882
+    .line 1129
     invoke-direct {p0, p1}, Landroidx/customview/view/AbsSavedState;-><init>(Landroid/os/Parcelable;)V
 
-    .line 883
+    .line 1130
     invoke-static {p2}, Lcom/google/android/material/sidesheet/SideSheetBehavior;->access$000(Lcom/google/android/material/sidesheet/SideSheetBehavior;)I
 
     move-result p1
@@ -100,10 +100,10 @@
 .method public writeToParcel(Landroid/os/Parcel;I)V
     .locals 0
 
-    .line 888
+    .line 1135
     invoke-super {p0, p1, p2}, Landroidx/customview/view/AbsSavedState;->writeToParcel(Landroid/os/Parcel;I)V
 
-    .line 889
+    .line 1136
     iget p0, p0, Lcom/google/android/material/sidesheet/SideSheetBehavior$SavedState;->state:I
 
     invoke-virtual {p1, p0}, Landroid/os/Parcel;->writeInt(I)V

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:tag="layout/tutorial_dialog_view_pager_item_0" android:layout_width="fill_parent" android:layout_height="fill_parent" android:paddingHorizontal="@dimen/tutorial_dialog_view_pager_item_padding_horizontal"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/tutorial_dialog_view_pager_item_title_textSize" android:textColor="@color/tutorial_dialog_item_title_color" android:id="@id/title" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/tutorial_dialog_view_pager_item_title_marginTop" android:layout_marginBottom="@dimen/tutorial_dialog_view_pager_item_title_marginBottom" android:layout_centerHorizontal="true" />
+    <include android:id="@id/content_layout_port" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/tutorial_dialog_view_pager_item_content_port" />
+    <include android:id="@id/content_layout_land" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="fill_parent" layout="@layout/tutorial_dialog_view_pager_item_content_land" />
+</LinearLayout>

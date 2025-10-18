@@ -178,7 +178,7 @@
 
     move-result-object v0
 
-    .line 65535
+    .line 135
     iget v1, p0, Landroidx/compose/material/ripple/Ripple$rememberUpdatedInstance$1;->label:I
 
     const/4 v2, 0x1

@@ -50,24 +50,48 @@
 
 # direct methods
 .method static constructor <clinit>()V
-    .locals 6
+    .locals 3
+
+    const/4 v0, 0x6
 
     .line 628
-    const-string v4, "dimension"
+    new-array v0, v0, [Ljava/lang/String;
 
-    const-string v5, "refrence"
+    const/4 v1, 0x0
 
-    const-string v0, "float"
+    const-string v2, "float"
 
-    const-string v1, "color"
+    aput-object v2, v0, v1
+
+    const/4 v1, 0x1
+
+    const-string v2, "color"
+
+    aput-object v2, v0, v1
+
+    const/4 v1, 0x2
 
     const-string/jumbo v2, "string"
 
-    const-string v3, "boolean"
+    aput-object v2, v0, v1
 
-    filled-new-array/range {v0 .. v5}, [Ljava/lang/String;
+    const/4 v1, 0x3
 
-    move-result-object v0
+    const-string v2, "boolean"
+
+    aput-object v2, v0, v1
+
+    const/4 v1, 0x4
+
+    const-string v2, "dimension"
+
+    aput-object v2, v0, v1
+
+    const/4 v1, 0x5
+
+    const-string v2, "refrence"
+
+    aput-object v2, v0, v1
 
     sput-object v0, Landroidx/constraintlayout/core/motion/utils/TypedValues$Custom;->KEY_WORDS:[Ljava/lang/String;
 

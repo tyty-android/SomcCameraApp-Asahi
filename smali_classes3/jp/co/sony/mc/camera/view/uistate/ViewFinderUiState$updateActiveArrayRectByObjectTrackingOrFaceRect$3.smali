@@ -1,9 +1,9 @@
 .class final Ljp/co/sony/mc/camera/view/uistate/ViewFinderUiState$updateActiveArrayRectByObjectTrackingOrFaceRect$3;
-.super Ljava/lang/Object;
+.super Lkotlin/coroutines/jvm/internal/SuspendLambda;
 .source "ViewFinderUiState.kt"
 
 # interfaces
-.implements Lkotlinx/coroutines/flow/FlowCollector;
+.implements Lkotlin/jvm/functions/Function2;
 
 
 # annotations
@@ -18,69 +18,130 @@
 
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "<T:",
+        "Lkotlin/coroutines/jvm/internal/SuspendLambda;",
+        "Lkotlin/jvm/functions/Function2<",
+        "Lkotlin/Pair<",
+        "+",
+        "Landroid/graphics/Rect;",
+        "+",
+        "Landroid/graphics/Rect;",
+        ">;",
+        "Lkotlin/coroutines/Continuation<",
+        "-",
+        "Ljava/lang/Boolean;",
+        ">;",
         "Ljava/lang/Object;",
-        ">",
-        "Ljava/lang/Object;",
-        "Lkotlinx/coroutines/flow/FlowCollector;"
+        ">;"
     }
 .end annotation
 
 .annotation runtime Lkotlin/Metadata;
     d1 = {
-        "\u0000\u0014\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0002\u0010\u0000\u001a\u00020\u00012\u0012\u0010\u0002\u001a\u000e\u0012\u0004\u0012\u00020\u0004\u0012\u0004\u0012\u00020\u00040\u0003H\u008a@\u00a2\u0006\u0004\u0008\u0005\u0010\u0006"
+        "\u0000\u0018\n\u0000\n\u0002\u0010\u000b\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0003\u0010\u0000\u001a\u00020\u000120\u0010\u0002\u001a,\u0012\u0013\u0012\u00110\u0004\u00a2\u0006\u000c\u0008\u0005\u0012\u0008\u0008\u0006\u0012\u0004\u0008\u0008(\u0007\u0012\u0013\u0012\u00110\u0004\u00a2\u0006\u000c\u0008\u0005\u0012\u0008\u0008\u0006\u0012\u0004\u0008\u0008(\u00080\u0003H\n"
     }
     d2 = {
         "<anonymous>",
         "",
-        "<name for destructuring parameter 0>",
+        "it",
         "Lkotlin/Pair;",
         "Landroid/graphics/Rect;",
-        "emit",
-        "(Lkotlin/Pair;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;"
+        "Lkotlin/ParameterName;",
+        "name",
+        "a",
+        "b"
     }
     k = 0x3
     mv = {
-        0x1,
-        0x9,
+        0x2,
+        0x0,
         0x0
     }
     xi = 0x30
 .end annotation
 
+.annotation runtime Lkotlin/coroutines/jvm/internal/DebugMetadata;
+    c = "jp.co.sony.mc.camera.view.uistate.ViewFinderUiState$updateActiveArrayRectByObjectTrackingOrFaceRect$3"
+    f = "ViewFinderUiState.kt"
+    i = {}
+    l = {}
+    m = "invokeSuspend"
+    n = {}
+    s = {}
+.end annotation
+
 
 # instance fields
+.field label:I
+
 .field final synthetic this$0:Ljp/co/sony/mc/camera/view/uistate/ViewFinderUiState;
 
 
 # direct methods
-.method constructor <init>(Ljp/co/sony/mc/camera/view/uistate/ViewFinderUiState;)V
+.method constructor <init>(Ljp/co/sony/mc/camera/view/uistate/ViewFinderUiState;Lkotlin/coroutines/Continuation;)V
     .locals 0
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Ljp/co/sony/mc/camera/view/uistate/ViewFinderUiState;",
+            "Lkotlin/coroutines/Continuation<",
+            "-",
+            "Ljp/co/sony/mc/camera/view/uistate/ViewFinderUiState$updateActiveArrayRectByObjectTrackingOrFaceRect$3;",
+            ">;)V"
+        }
+    .end annotation
 
     iput-object p1, p0, Ljp/co/sony/mc/camera/view/uistate/ViewFinderUiState$updateActiveArrayRectByObjectTrackingOrFaceRect$3;->this$0:Ljp/co/sony/mc/camera/view/uistate/ViewFinderUiState;
 
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    const/4 p1, 0x2
+
+    invoke-direct {p0, p1, p2}, Lkotlin/coroutines/jvm/internal/SuspendLambda;-><init>(ILkotlin/coroutines/Continuation;)V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public bridge synthetic emit(Ljava/lang/Object;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+.method public final create(Ljava/lang/Object;Lkotlin/coroutines/Continuation;)Lkotlin/coroutines/Continuation;
+    .locals 0
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Ljava/lang/Object;",
+            "Lkotlin/coroutines/Continuation<",
+            "*>;)",
+            "Lkotlin/coroutines/Continuation<",
+            "Lkotlin/Unit;",
+            ">;"
+        }
+    .end annotation
+
+    new-instance p1, Ljp/co/sony/mc/camera/view/uistate/ViewFinderUiState$updateActiveArrayRectByObjectTrackingOrFaceRect$3;
+
+    iget-object p0, p0, Ljp/co/sony/mc/camera/view/uistate/ViewFinderUiState$updateActiveArrayRectByObjectTrackingOrFaceRect$3;->this$0:Ljp/co/sony/mc/camera/view/uistate/ViewFinderUiState;
+
+    invoke-direct {p1, p0, p2}, Ljp/co/sony/mc/camera/view/uistate/ViewFinderUiState$updateActiveArrayRectByObjectTrackingOrFaceRect$3;-><init>(Ljp/co/sony/mc/camera/view/uistate/ViewFinderUiState;Lkotlin/coroutines/Continuation;)V
+
+    check-cast p1, Lkotlin/coroutines/Continuation;
+
+    return-object p1
+.end method
+
+.method public bridge synthetic invoke(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
 
-    .line 401
     check-cast p1, Lkotlin/Pair;
 
-    invoke-virtual {p0, p1, p2}, Ljp/co/sony/mc/camera/view/uistate/ViewFinderUiState$updateActiveArrayRectByObjectTrackingOrFaceRect$3;->emit(Lkotlin/Pair;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+    check-cast p2, Lkotlin/coroutines/Continuation;
+
+    invoke-virtual {p0, p1, p2}, Ljp/co/sony/mc/camera/view/uistate/ViewFinderUiState$updateActiveArrayRectByObjectTrackingOrFaceRect$3;->invoke(Lkotlin/Pair;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
 
     move-result-object p0
 
     return-object p0
 .end method
 
-.method public final emit(Lkotlin/Pair;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
-    .locals 1
+.method public final invoke(Lkotlin/Pair;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+    .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -90,64 +151,77 @@
             ">;",
             "Lkotlin/coroutines/Continuation<",
             "-",
-            "Lkotlin/Unit;",
+            "Ljava/lang/Boolean;",
             ">;)",
             "Ljava/lang/Object;"
         }
     .end annotation
 
-    .line 401
-    invoke-virtual {p1}, Lkotlin/Pair;->component1()Ljava/lang/Object;
+    invoke-virtual {p0, p1, p2}, Ljp/co/sony/mc/camera/view/uistate/ViewFinderUiState$updateActiveArrayRectByObjectTrackingOrFaceRect$3;->create(Ljava/lang/Object;Lkotlin/coroutines/Continuation;)Lkotlin/coroutines/Continuation;
 
-    move-result-object p2
+    move-result-object p0
 
-    check-cast p2, Landroid/graphics/Rect;
+    check-cast p0, Ljp/co/sony/mc/camera/view/uistate/ViewFinderUiState$updateActiveArrayRectByObjectTrackingOrFaceRect$3;
 
-    invoke-virtual {p1}, Lkotlin/Pair;->component2()Ljava/lang/Object;
+    sget-object p1, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
 
-    move-result-object p1
+    invoke-virtual {p0, p1}, Ljp/co/sony/mc/camera/view/uistate/ViewFinderUiState$updateActiveArrayRectByObjectTrackingOrFaceRect$3;->invokeSuspend(Ljava/lang/Object;)Ljava/lang/Object;
 
-    check-cast p1, Landroid/graphics/Rect;
+    move-result-object p0
 
-    .line 402
-    invoke-static {}, Ljp/co/sony/mc/camera/view/uistate/ViewFinderUiState;->access$getEmptyRect$cp()Landroid/graphics/Rect;
+    return-object p0
+.end method
 
-    move-result-object v0
+.method public final invokeSuspend(Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 1
 
-    invoke-static {p2, v0}, Lkotlin/jvm/internal/Intrinsics;->areEqual(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {}, Lkotlin/coroutines/intrinsics/IntrinsicsKt;->getCOROUTINE_SUSPENDED()Ljava/lang/Object;
 
-    move-result v0
+    .line 399
+    iget v0, p0, Ljp/co/sony/mc/camera/view/uistate/ViewFinderUiState$updateActiveArrayRectByObjectTrackingOrFaceRect$3;->label:I
 
     if-nez v0, :cond_0
 
-    .line 403
+    invoke-static {p1}, Lkotlin/ResultKt;->throwOnFailure(Ljava/lang/Object;)V
+
+    .line 400
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/uistate/ViewFinderUiState$updateActiveArrayRectByObjectTrackingOrFaceRect$3;->this$0:Ljp/co/sony/mc/camera/view/uistate/ViewFinderUiState;
 
-    invoke-static {p0, p2}, Ljp/co/sony/mc/camera/view/uistate/ViewFinderUiState;->access$setActiveTrackingRect$p(Ljp/co/sony/mc/camera/view/uistate/ViewFinderUiState;Landroid/graphics/Rect;)V
+    invoke-static {p0}, Ljp/co/sony/mc/camera/view/uistate/ViewFinderUiState;->access$getCameraStatusModel$p(Ljp/co/sony/mc/camera/view/uistate/ViewFinderUiState;)Ljp/co/sony/mc/camera/view/viewmodel/CameraStatusModel;
 
-    goto :goto_0
+    move-result-object p0
 
-    .line 404
-    :cond_0
-    invoke-static {}, Ljp/co/sony/mc/camera/view/uistate/ViewFinderUiState;->access$getEmptyRect$cp()Landroid/graphics/Rect;
+    invoke-virtual {p0}, Ljp/co/sony/mc/camera/view/viewmodel/CameraStatusModel;->isObjectTracking()Landroidx/lifecycle/LiveData;
 
-    move-result-object p2
+    move-result-object p0
 
-    invoke-static {p1, p2}, Lkotlin/jvm/internal/Intrinsics;->areEqual(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-virtual {p0}, Landroidx/lifecycle/LiveData;->getValue()Ljava/lang/Object;
 
-    move-result p2
+    move-result-object p0
 
-    if-nez p2, :cond_1
+    const/4 p1, 0x1
 
-    .line 405
-    iget-object p0, p0, Ljp/co/sony/mc/camera/view/uistate/ViewFinderUiState$updateActiveArrayRectByObjectTrackingOrFaceRect$3;->this$0:Ljp/co/sony/mc/camera/view/uistate/ViewFinderUiState;
+    invoke-static {p1}, Lkotlin/coroutines/jvm/internal/Boxing;->boxBoolean(Z)Ljava/lang/Boolean;
 
-    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/view/uistate/ViewFinderUiState;->access$setActiveTrackingRect$p(Ljp/co/sony/mc/camera/view/uistate/ViewFinderUiState;Landroid/graphics/Rect;)V
+    move-result-object p1
 
-    .line 407
-    :cond_1
-    :goto_0
-    sget-object p0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
+    invoke-static {p0, p1}, Lkotlin/jvm/internal/Intrinsics;->areEqual(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    move-result p0
+
+    invoke-static {p0}, Lkotlin/coroutines/jvm/internal/Boxing;->boxBoolean(Z)Ljava/lang/Boolean;
+
+    move-result-object p0
 
     return-object p0
+
+    .line 399
+    :cond_0
+    new-instance p0, Ljava/lang/IllegalStateException;
+
+    const-string p1, "call to \'resume\' before \'invoke\' with coroutine"
+
+    invoke-direct {p0, p1}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
+
+    throw p0
 .end method

@@ -80,7 +80,7 @@
 .method public final invoke(FF)Ljava/lang/Boolean;
     .locals 8
 
-    .line 286
+    .line 291
     iget-object v0, p0, Landroidx/compose/foundation/ScrollKt$scroll$2$semantics$1$1;->$coroutineScope:Lkotlinx/coroutines/CoroutineScope;
 
     new-instance v7, Landroidx/compose/foundation/ScrollKt$scroll$2$semantics$1$1$1;
@@ -115,7 +115,7 @@
 
     const/4 p0, 0x1
 
-    .line 293
+    .line 298
     invoke-static {p0}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
     move-result-object p0
@@ -126,7 +126,7 @@
 .method public bridge synthetic invoke(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
 
-    .line 284
+    .line 289
     check-cast p1, Ljava/lang/Number;
 
     invoke-virtual {p1}, Ljava/lang/Number;->floatValue()F

@@ -296,41 +296,41 @@
 
     aput-object v10, v9, v1
 
-    sget-object v1, Ljava/nio/file/attribute/AclEntryPermission;->SYNCHRONIZE:Ljava/nio/file/attribute/AclEntryPermission;
+    const/4 v1, 0x1
 
-    const/4 v10, 0x1
+    sget-object v10, Ljava/nio/file/attribute/AclEntryPermission;->SYNCHRONIZE:Ljava/nio/file/attribute/AclEntryPermission;
 
-    aput-object v1, v9, v10
+    aput-object v10, v9, v1
 
-    sget-object v1, Ljava/nio/file/attribute/AclEntryPermission;->WRITE_ACL:Ljava/nio/file/attribute/AclEntryPermission;
+    const/4 v1, 0x2
 
-    const/4 v10, 0x2
+    sget-object v10, Ljava/nio/file/attribute/AclEntryPermission;->WRITE_ACL:Ljava/nio/file/attribute/AclEntryPermission;
 
-    aput-object v1, v9, v10
+    aput-object v10, v9, v1
 
-    sget-object v1, Ljava/nio/file/attribute/AclEntryPermission;->WRITE_ATTRIBUTES:Ljava/nio/file/attribute/AclEntryPermission;
+    const/4 v1, 0x3
 
-    const/4 v10, 0x3
+    sget-object v10, Ljava/nio/file/attribute/AclEntryPermission;->WRITE_ATTRIBUTES:Ljava/nio/file/attribute/AclEntryPermission;
 
-    aput-object v1, v9, v10
+    aput-object v10, v9, v1
 
-    sget-object v1, Ljava/nio/file/attribute/AclEntryPermission;->WRITE_DATA:Ljava/nio/file/attribute/AclEntryPermission;
+    const/4 v1, 0x4
 
-    const/4 v10, 0x4
+    sget-object v10, Ljava/nio/file/attribute/AclEntryPermission;->WRITE_DATA:Ljava/nio/file/attribute/AclEntryPermission;
 
-    aput-object v1, v9, v10
+    aput-object v10, v9, v1
 
-    sget-object v1, Ljava/nio/file/attribute/AclEntryPermission;->WRITE_NAMED_ATTRS:Ljava/nio/file/attribute/AclEntryPermission;
+    const/4 v1, 0x5
 
-    const/4 v10, 0x5
+    sget-object v10, Ljava/nio/file/attribute/AclEntryPermission;->WRITE_NAMED_ATTRS:Ljava/nio/file/attribute/AclEntryPermission;
 
-    aput-object v1, v9, v10
+    aput-object v10, v9, v1
 
-    sget-object v1, Ljava/nio/file/attribute/AclEntryPermission;->WRITE_OWNER:Ljava/nio/file/attribute/AclEntryPermission;
+    const/4 v1, 0x6
 
-    const/4 v10, 0x6
+    sget-object v10, Ljava/nio/file/attribute/AclEntryPermission;->WRITE_OWNER:Ljava/nio/file/attribute/AclEntryPermission;
 
-    aput-object v1, v9, v10
+    aput-object v10, v9, v1
 
     .line 164
     invoke-static/range {v3 .. v9}, Lcom/google/common/collect/ImmutableSet;->of(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;[Ljava/lang/Object;)Lcom/google/common/collect/ImmutableSet;

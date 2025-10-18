@@ -45,101 +45,144 @@
 .end method
 
 .method private readIntent(Landroid/content/Intent;)V
-    .locals 14
+    .locals 11
 
     .line 73
     invoke-virtual {p1}, Landroid/content/Intent;->getAction()Ljava/lang/String;
 
-    move-result-object v0
+    move-result-object v1
 
     .line 74
-    sget-boolean v1, Ljp/co/sony/mc/camera/util/CamLog;->VERBOSE:Z
+    sget-boolean v2, Ljp/co/sony/mc/camera/util/CamLog;->VERBOSE:Z
 
-    if-eqz v1, :cond_0
+    const/4 v7, 0x0
 
-    new-instance v1, Ljava/lang/StringBuilder;
+    const/4 v8, 0x1
 
-    const-string v2, "#### intent action : "
+    if-eqz v2, :cond_0
 
-    invoke-direct {v1, v2}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+    new-array v2, v8, [Ljava/lang/String;
 
-    invoke-virtual {v1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    new-instance v3, Ljava/lang/StringBuilder;
 
-    move-result-object v1
+    const-string v4, "#### intent action : "
 
-    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-direct {v3, v4}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
-    move-result-object v1
+    invoke-virtual {v3, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    filled-new-array {v1}, [Ljava/lang/String;
+    move-result-object v3
 
-    move-result-object v1
+    invoke-virtual {v3}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    invoke-static {v1}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
+    move-result-object v3
+
+    aput-object v3, v2, v7
+
+    invoke-static {v2}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
     .line 75
     :cond_0
-    sget-boolean v1, Ljp/co/sony/mc/camera/util/CamLog;->VERBOSE:Z
+    sget-boolean v2, Ljp/co/sony/mc/camera/util/CamLog;->VERBOSE:Z
 
-    if-eqz v1, :cond_1
+    if-eqz v2, :cond_1
 
-    new-instance v1, Ljava/lang/StringBuilder;
+    new-array v2, v8, [Ljava/lang/String;
 
-    const-string v2, "#### dump all extra: "
+    new-instance v3, Ljava/lang/StringBuilder;
 
-    invoke-direct {v1, v2}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+    const-string v4, "#### dump all extra: "
+
+    invoke-direct {v3, v4}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
     .line 76
     invoke-virtual {p1}, Landroid/content/Intent;->getExtras()Landroid/os/Bundle;
 
-    move-result-object v2
+    move-result-object v4
 
-    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+    invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
-    move-result-object v1
+    move-result-object v3
 
-    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-virtual {v3}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    move-result-object v1
+    move-result-object v3
 
-    filled-new-array {v1}, [Ljava/lang/String;
-
-    move-result-object v1
+    aput-object v3, v2, v7
 
     .line 75
-    invoke-static {v1}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
+    invoke-static {v2}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
     .line 78
     :cond_1
-    const-string v1, "android.media.action.VIDEO_CAPTURE"
+    const-string v2, "android.media.action.VIDEO_CAPTURE"
 
-    invoke-virtual {v0, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+    invoke-virtual {v1, v2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
-    move-result v0
+    move-result v1
 
-    const-wide/16 v1, -0x1
+    const-wide/16 v2, -0x1
 
-    if-eqz v0, :cond_7
+    if-eqz v1, :cond_7
 
     .line 81
-    const-string v0, "android.intent.extra.sizeLimit"
+    const-string v1, "android.intent.extra.sizeLimit"
 
-    invoke-virtual {p1, v0, v1, v2}, Landroid/content/Intent;->getLongExtra(Ljava/lang/String;J)J
+    invoke-virtual {p1, v1, v2, v3}, Landroid/content/Intent;->getLongExtra(Ljava/lang/String;J)J
 
-    move-result-wide v3
+    move-result-wide v4
 
     .line 83
-    sget-boolean v5, Ljp/co/sony/mc/camera/util/CamLog;->VERBOSE:Z
+    sget-boolean v6, Ljp/co/sony/mc/camera/util/CamLog;->VERBOSE:Z
 
-    if-eqz v5, :cond_2
+    if-eqz v6, :cond_2
+
+    new-array v6, v8, [Ljava/lang/String;
+
+    new-instance v9, Ljava/lang/StringBuilder;
+
+    const-string v10, "#### extra MediaStore.EXTRA_SIZE_LIMIT long: "
+
+    invoke-direct {v9, v10}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+
+    invoke-virtual {v9, v4, v5}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
+
+    move-result-object v9
+
+    invoke-virtual {v9}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v9
+
+    aput-object v9, v6, v7
+
+    invoke-static {v6}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
+
+    :cond_2
+    cmp-long v6, v4, v2
+
+    const/4 v9, -0x1
+
+    if-nez v6, :cond_4
+
+    .line 89
+    invoke-virtual {p1, v1, v9}, Landroid/content/Intent;->getIntExtra(Ljava/lang/String;I)I
+
+    move-result v1
+
+    .line 91
+    sget-boolean v4, Ljp/co/sony/mc/camera/util/CamLog;->VERBOSE:Z
+
+    if-eqz v4, :cond_3
+
+    new-array v4, v8, [Ljava/lang/String;
 
     new-instance v5, Ljava/lang/StringBuilder;
 
-    const-string v6, "#### extra MediaStore.EXTRA_SIZE_LIMIT long: "
+    const-string v6, "#### extra MediaStore.EXTRA_SIZE_LIMIT int: "
 
     invoke-direct {v5, v6}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
-    invoke-virtual {v5, v3, v4}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
+    invoke-virtual {v5, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
     move-result-object v5
 
@@ -147,123 +190,84 @@
 
     move-result-object v5
 
-    filled-new-array {v5}, [Ljava/lang/String;
+    aput-object v5, v4, v7
 
-    move-result-object v5
-
-    invoke-static {v5}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
-
-    :cond_2
-    cmp-long v5, v3, v1
-
-    const/4 v6, -0x1
-
-    if-nez v5, :cond_4
-
-    .line 89
-    invoke-virtual {p1, v0, v6}, Landroid/content/Intent;->getIntExtra(Ljava/lang/String;I)I
-
-    move-result v0
-
-    .line 91
-    sget-boolean v3, Ljp/co/sony/mc/camera/util/CamLog;->VERBOSE:Z
-
-    if-eqz v3, :cond_3
-
-    new-instance v3, Ljava/lang/StringBuilder;
-
-    const-string v4, "#### extra MediaStore.EXTRA_SIZE_LIMIT int: "
-
-    invoke-direct {v3, v4}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
-
-    invoke-virtual {v3, v0}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
-
-    move-result-object v3
-
-    invoke-virtual {v3}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v3
-
-    filled-new-array {v3}, [Ljava/lang/String;
-
-    move-result-object v3
-
-    invoke-static {v3}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
+    invoke-static {v4}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
     :cond_3
-    int-to-long v3, v0
+    int-to-long v4, v1
 
     .line 94
-    invoke-direct {p0, v3, v4}, Ljp/co/sony/mc/camera/configuration/IntentReader;->setVideoMaxFileSizeInBytes(J)V
+    invoke-direct {p0, v4, v5}, Ljp/co/sony/mc/camera/configuration/IntentReader;->setVideoMaxFileSizeInBytes(J)V
 
     goto :goto_0
 
     .line 96
     :cond_4
-    invoke-direct {p0, v3, v4}, Ljp/co/sony/mc/camera/configuration/IntentReader;->setVideoMaxFileSizeInBytes(J)V
+    invoke-direct {p0, v4, v5}, Ljp/co/sony/mc/camera/configuration/IntentReader;->setVideoMaxFileSizeInBytes(J)V
 
     .line 100
     :goto_0
-    const-string v0, "android.intent.extra.durationLimit"
+    const-string v1, "android.intent.extra.durationLimit"
 
-    invoke-virtual {p1, v0, v6}, Landroid/content/Intent;->getIntExtra(Ljava/lang/String;I)I
+    invoke-virtual {p1, v1, v9}, Landroid/content/Intent;->getIntExtra(Ljava/lang/String;I)I
 
-    move-result v0
+    move-result v1
 
     .line 102
-    sget-boolean v3, Ljp/co/sony/mc/camera/util/CamLog;->VERBOSE:Z
+    sget-boolean v4, Ljp/co/sony/mc/camera/util/CamLog;->VERBOSE:Z
 
-    if-eqz v3, :cond_5
+    if-eqz v4, :cond_5
 
-    new-instance v3, Ljava/lang/StringBuilder;
+    new-array v4, v8, [Ljava/lang/String;
 
-    const-string v4, "#### extra MediaStore.EXTRA_DURATION_LIMIT: "
+    new-instance v5, Ljava/lang/StringBuilder;
 
-    invoke-direct {v3, v4}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+    const-string v6, "#### extra MediaStore.EXTRA_DURATION_LIMIT: "
 
-    invoke-virtual {v3, v0}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+    invoke-direct {v5, v6}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
-    move-result-object v3
+    invoke-virtual {v5, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v3}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    move-result-object v5
 
-    move-result-object v3
+    invoke-virtual {v5}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    filled-new-array {v3}, [Ljava/lang/String;
+    move-result-object v5
 
-    move-result-object v3
+    aput-object v5, v4, v7
 
-    invoke-static {v3}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
+    invoke-static {v4}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
     :cond_5
-    int-to-long v3, v0
+    int-to-long v4, v1
 
-    cmp-long v0, v3, v1
+    cmp-long v1, v4, v2
 
-    if-nez v0, :cond_6
+    if-nez v1, :cond_6
 
     .line 106
-    invoke-direct {p0, v1, v2}, Ljp/co/sony/mc/camera/configuration/IntentReader;->setVideoMaxDurationInMillisecs(J)V
+    invoke-direct {p0, v2, v3}, Ljp/co/sony/mc/camera/configuration/IntentReader;->setVideoMaxDurationInMillisecs(J)V
 
     goto :goto_1
 
     :cond_6
-    const-wide/16 v0, 0x3e8
+    const-wide/16 v1, 0x3e8
 
-    mul-long/2addr v3, v0
+    mul-long/2addr v4, v1
 
     .line 108
-    invoke-direct {p0, v3, v4}, Ljp/co/sony/mc/camera/configuration/IntentReader;->setVideoMaxDurationInMillisecs(J)V
+    invoke-direct {p0, v4, v5}, Ljp/co/sony/mc/camera/configuration/IntentReader;->setVideoMaxDurationInMillisecs(J)V
 
     .line 112
     :goto_1
-    const-string v0, "android.intent.extra.videoQuality"
+    const-string v1, "android.intent.extra.videoQuality"
 
-    invoke-virtual {p1, v0, v6}, Landroid/content/Intent;->getIntExtra(Ljava/lang/String;I)I
+    invoke-virtual {p1, v1, v9}, Landroid/content/Intent;->getIntExtra(Ljava/lang/String;I)I
 
-    move-result p1
+    move-result v0
 
-    int-to-long v1, p1
+    int-to-long v1, v0
 
     iget-wide v3, p0, Ljp/co/sony/mc/camera/configuration/IntentReader;->mVideoMaxFileSizeInBytes:J
 
@@ -277,105 +281,105 @@
 
     .line 115
     :cond_7
-    invoke-direct {p0, v1, v2}, Ljp/co/sony/mc/camera/configuration/IntentReader;->setVideoMaxFileSizeInBytes(J)V
+    invoke-direct {p0, v2, v3}, Ljp/co/sony/mc/camera/configuration/IntentReader;->setVideoMaxFileSizeInBytes(J)V
 
     .line 116
-    invoke-direct {p0, v1, v2}, Ljp/co/sony/mc/camera/configuration/IntentReader;->setVideoMaxDurationInMillisecs(J)V
+    invoke-direct {p0, v2, v3}, Ljp/co/sony/mc/camera/configuration/IntentReader;->setVideoMaxDurationInMillisecs(J)V
 
     .line 117
-    iget-wide v10, p0, Ljp/co/sony/mc/camera/configuration/IntentReader;->mVideoMaxFileSizeInBytes:J
+    iget-wide v3, p0, Ljp/co/sony/mc/camera/configuration/IntentReader;->mVideoMaxFileSizeInBytes:J
 
-    iget-wide v12, p0, Ljp/co/sony/mc/camera/configuration/IntentReader;->mVideoMaxDurationInMillisecs:J
+    iget-wide v5, p0, Ljp/co/sony/mc/camera/configuration/IntentReader;->mVideoMaxDurationInMillisecs:J
 
-    const-wide/16 v8, -0x1
+    const-wide/16 v1, -0x1
 
-    move-object v7, p0
+    move-object v0, p0
 
-    invoke-direct/range {v7 .. v13}, Ljp/co/sony/mc/camera/configuration/IntentReader;->setVideoQuality(JJJ)V
+    invoke-direct/range {v0 .. v6}, Ljp/co/sony/mc/camera/configuration/IntentReader;->setVideoQuality(JJJ)V
 
     .line 119
     :goto_2
-    sget-boolean p1, Ljp/co/sony/mc/camera/util/CamLog;->VERBOSE:Z
+    sget-boolean v0, Ljp/co/sony/mc/camera/util/CamLog;->VERBOSE:Z
 
-    if-eqz p1, :cond_8
+    if-eqz v0, :cond_8
 
-    new-instance p1, Ljava/lang/StringBuilder;
+    new-array v0, v8, [Ljava/lang/String;
 
-    const-string v0, "#### intent extra.maxFileSize      : "
+    new-instance v1, Ljava/lang/StringBuilder;
 
-    invoke-direct {p1, v0}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+    const-string v2, "#### intent extra.maxFileSize      : "
 
-    iget-wide v0, p0, Ljp/co/sony/mc/camera/configuration/IntentReader;->mVideoMaxFileSizeInBytes:J
+    invoke-direct {v1, v2}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
-    invoke-virtual {p1, v0, v1}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
+    iget-wide v2, p0, Ljp/co/sony/mc/camera/configuration/IntentReader;->mVideoMaxFileSizeInBytes:J
 
-    move-result-object p1
+    invoke-virtual {v1, v2, v3}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
 
-    invoke-virtual {p1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    move-result-object v1
 
-    move-result-object p1
+    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    filled-new-array {p1}, [Ljava/lang/String;
+    move-result-object v1
 
-    move-result-object p1
+    aput-object v1, v0, v7
 
-    invoke-static {p1}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
+    invoke-static {v0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
     .line 121
     :cond_8
-    sget-boolean p1, Ljp/co/sony/mc/camera/util/CamLog;->VERBOSE:Z
+    sget-boolean v0, Ljp/co/sony/mc/camera/util/CamLog;->VERBOSE:Z
 
-    if-eqz p1, :cond_9
+    if-eqz v0, :cond_9
 
-    new-instance p1, Ljava/lang/StringBuilder;
+    new-array v0, v8, [Ljava/lang/String;
 
-    const-string v0, "#### intent extra.maxDuration      : "
+    new-instance v1, Ljava/lang/StringBuilder;
 
-    invoke-direct {p1, v0}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+    const-string v2, "#### intent extra.maxDuration      : "
 
-    iget-wide v0, p0, Ljp/co/sony/mc/camera/configuration/IntentReader;->mVideoMaxDurationInMillisecs:J
+    invoke-direct {v1, v2}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
-    invoke-virtual {p1, v0, v1}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
+    iget-wide v2, p0, Ljp/co/sony/mc/camera/configuration/IntentReader;->mVideoMaxDurationInMillisecs:J
 
-    move-result-object p1
+    invoke-virtual {v1, v2, v3}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
 
-    invoke-virtual {p1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    move-result-object v1
 
-    move-result-object p1
+    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    filled-new-array {p1}, [Ljava/lang/String;
+    move-result-object v1
 
-    move-result-object p1
+    aput-object v1, v0, v7
 
-    invoke-static {p1}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
+    invoke-static {v0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
     .line 123
     :cond_9
-    sget-boolean p1, Ljp/co/sony/mc/camera/util/CamLog;->VERBOSE:Z
+    sget-boolean v0, Ljp/co/sony/mc/camera/util/CamLog;->VERBOSE:Z
 
-    if-eqz p1, :cond_a
+    if-eqz v0, :cond_a
 
-    new-instance p1, Ljava/lang/StringBuilder;
+    new-array v0, v8, [Ljava/lang/String;
 
-    const-string v0, "#### intent extra.quality          : "
+    new-instance v1, Ljava/lang/StringBuilder;
 
-    invoke-direct {p1, v0}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+    const-string v2, "#### intent extra.quality          : "
 
-    iget p0, p0, Ljp/co/sony/mc/camera/configuration/IntentReader;->mVideoQuality:I
+    invoke-direct {v1, v2}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
-    invoke-virtual {p1, p0}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+    iget v2, p0, Ljp/co/sony/mc/camera/configuration/IntentReader;->mVideoQuality:I
 
-    move-result-object p0
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
-    invoke-virtual {p0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    move-result-object v1
 
-    move-result-object p0
+    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    filled-new-array {p0}, [Ljava/lang/String;
+    move-result-object v1
 
-    move-result-object p0
+    aput-object v1, v0, v7
 
-    invoke-static {p0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
+    invoke-static {v0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
     :cond_a
     return-void

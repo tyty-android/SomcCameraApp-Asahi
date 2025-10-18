@@ -8,9 +8,13 @@
 
 
 # annotations
+.annotation system Ldalvik/annotation/SourceDebugExtension;
+    value = "SMAP\nLayout.kt\nKotlin\n*S Kotlin\n*F\n+ 1 Layout.kt\nandroidx/compose/ui/layout/IntrinsicsMeasureScope\n+ 2 LookaheadDelegate.kt\nandroidx/compose/ui/node/LookaheadDelegateKt\n*L\n1#1,390:1\n120#2,5:391\n*S KotlinDebug\n*F\n+ 1 Layout.kt\nandroidx/compose/ui/layout/IntrinsicsMeasureScope\n*L\n375#1:391,5\n*E\n"
+.end annotation
+
 .annotation runtime Lkotlin/Metadata;
     d1 = {
-        "\u0000T\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0010\u0007\n\u0002\u0008\u0005\n\u0002\u0010\u000b\n\u0002\u0008\u0004\n\u0002\u0010\u0008\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0002\u0008\t\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0006\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0008\u0008\u0000\u0018\u00002\u00020\u00012\u00020\u0002B\u0015\u0012\u0006\u0010\u0003\u001a\u00020\u0002\u0012\u0006\u0010\u0004\u001a\u00020\u0005\u00a2\u0006\u0002\u0010\u0006J\u001a\u0010\u0012\u001a\u00020\u0013*\u00020\u0014H\u0097\u0001\u00f8\u0001\u0000\u00f8\u0001\u0001\u00a2\u0006\u0004\u0008\u0015\u0010\u0016J\u001a\u0010\u0012\u001a\u00020\u0013*\u00020\u0017H\u0097\u0001\u00f8\u0001\u0000\u00f8\u0001\u0001\u00a2\u0006\u0004\u0008\u0018\u0010\u0019J\u001a\u0010\u001a\u001a\u00020\u0014*\u00020\u0017H\u0097\u0001\u00f8\u0001\u0000\u00f8\u0001\u0001\u00a2\u0006\u0004\u0008\u001b\u0010\u001cJ\u001d\u0010\u001a\u001a\u00020\u0014*\u00020\u0008H\u0097\u0001\u00f8\u0001\u0002\u00f8\u0001\u0000\u00f8\u0001\u0001\u00a2\u0006\u0004\u0008\u001d\u0010\u001eJ\u001d\u0010\u001a\u001a\u00020\u0014*\u00020\u0013H\u0097\u0001\u00f8\u0001\u0002\u00f8\u0001\u0000\u00f8\u0001\u0001\u00a2\u0006\u0004\u0008\u001d\u0010\u001fJ\u001a\u0010 \u001a\u00020!*\u00020\"H\u0097\u0001\u00f8\u0001\u0000\u00f8\u0001\u0001\u00a2\u0006\u0004\u0008#\u0010$J\u001a\u0010%\u001a\u00020\u0008*\u00020\u0014H\u0097\u0001\u00f8\u0001\u0000\u00f8\u0001\u0001\u00a2\u0006\u0004\u0008&\u0010\u001eJ\u001a\u0010%\u001a\u00020\u0008*\u00020\u0017H\u0097\u0001\u00f8\u0001\u0000\u00f8\u0001\u0001\u00a2\u0006\u0004\u0008\'\u0010\u001cJ\r\u0010(\u001a\u00020)*\u00020*H\u0097\u0001J\u001a\u0010+\u001a\u00020\"*\u00020!H\u0097\u0001\u00f8\u0001\u0000\u00f8\u0001\u0001\u00a2\u0006\u0004\u0008,\u0010$J\u001a\u0010-\u001a\u00020\u0017*\u00020\u0014H\u0097\u0001\u00f8\u0001\u0000\u00f8\u0001\u0001\u00a2\u0006\u0004\u0008.\u0010/J\u001d\u0010-\u001a\u00020\u0017*\u00020\u0008H\u0097\u0001\u00f8\u0001\u0002\u00f8\u0001\u0000\u00f8\u0001\u0001\u00a2\u0006\u0004\u00080\u0010/J\u001d\u0010-\u001a\u00020\u0017*\u00020\u0013H\u0097\u0001\u00f8\u0001\u0002\u00f8\u0001\u0000\u00f8\u0001\u0001\u00a2\u0006\u0004\u00080\u00101R\u0014\u0010\u0007\u001a\u00020\u00088\u0016X\u0097\u0005\u00a2\u0006\u0006\u001a\u0004\u0008\t\u0010\nR\u0014\u0010\u000b\u001a\u00020\u00088\u0016X\u0097\u0005\u00a2\u0006\u0006\u001a\u0004\u0008\u000c\u0010\nR\u0014\u0010\r\u001a\u00020\u000e8WX\u0097\u0005\u00a2\u0006\u0006\u001a\u0004\u0008\r\u0010\u000fR\u0014\u0010\u0004\u001a\u00020\u0005X\u0096\u0004\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\u0010\u0010\u0011\u0082\u0002\u000f\n\u0005\u0008\u00a1\u001e0\u0001\n\u0002\u0008\u0019\n\u0002\u0008!\u00a8\u00062"
+        "\u0000z\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0010\u0007\n\u0002\u0008\u0005\n\u0002\u0010\u000b\n\u0002\u0008\u0004\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0008\n\u0002\u0008\u0002\n\u0002\u0010$\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0010\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0002\u0008\t\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0006\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0008\u0008\u0000\u0018\u00002\u00020\u00012\u00020\u0002B\u0015\u0012\u0006\u0010\u0003\u001a\u00020\u0002\u0012\u0006\u0010\u0004\u001a\u00020\u0005\u00a2\u0006\u0002\u0010\u0006JE\u0010\u0012\u001a\u00020\u00132\u0006\u0010\u0014\u001a\u00020\u00152\u0006\u0010\u0016\u001a\u00020\u00152\u0012\u0010\u0017\u001a\u000e\u0012\u0004\u0012\u00020\u0019\u0012\u0004\u0012\u00020\u00150\u00182\u0017\u0010\u001a\u001a\u0013\u0012\u0004\u0012\u00020\u001c\u0012\u0004\u0012\u00020\u001d0\u001b\u00a2\u0006\u0002\u0008\u001eH\u0016J\u0017\u0010\u001f\u001a\u00020\u0015*\u00020 H\u0097\u0001\u00f8\u0001\u0000\u00a2\u0006\u0004\u0008!\u0010\"J\u0017\u0010\u001f\u001a\u00020\u0015*\u00020#H\u0097\u0001\u00f8\u0001\u0000\u00a2\u0006\u0004\u0008$\u0010%J\u0017\u0010&\u001a\u00020 *\u00020#H\u0097\u0001\u00f8\u0001\u0000\u00a2\u0006\u0004\u0008\'\u0010(J\u001a\u0010&\u001a\u00020 *\u00020\u0008H\u0097\u0001\u00f8\u0001\u0001\u00f8\u0001\u0000\u00a2\u0006\u0004\u0008)\u0010*J\u001a\u0010&\u001a\u00020 *\u00020\u0015H\u0097\u0001\u00f8\u0001\u0001\u00f8\u0001\u0000\u00a2\u0006\u0004\u0008)\u0010+J\u0017\u0010,\u001a\u00020-*\u00020.H\u0097\u0001\u00f8\u0001\u0000\u00a2\u0006\u0004\u0008/\u00100J\u0017\u00101\u001a\u00020\u0008*\u00020 H\u0097\u0001\u00f8\u0001\u0000\u00a2\u0006\u0004\u00082\u0010*J\u0017\u00101\u001a\u00020\u0008*\u00020#H\u0097\u0001\u00f8\u0001\u0000\u00a2\u0006\u0004\u00083\u0010(J\r\u00104\u001a\u000205*\u000206H\u0097\u0001J\u0017\u00107\u001a\u00020.*\u00020-H\u0097\u0001\u00f8\u0001\u0000\u00a2\u0006\u0004\u00088\u00100J\u0017\u00109\u001a\u00020#*\u00020 H\u0097\u0001\u00f8\u0001\u0000\u00a2\u0006\u0004\u0008:\u0010;J\u001a\u00109\u001a\u00020#*\u00020\u0008H\u0097\u0001\u00f8\u0001\u0001\u00f8\u0001\u0000\u00a2\u0006\u0004\u0008<\u0010;J\u001a\u00109\u001a\u00020#*\u00020\u0015H\u0097\u0001\u00f8\u0001\u0001\u00f8\u0001\u0000\u00a2\u0006\u0004\u0008<\u0010=R\u0014\u0010\u0007\u001a\u00020\u00088\u0016X\u0097\u0005\u00a2\u0006\u0006\u001a\u0004\u0008\t\u0010\nR\u0014\u0010\u000b\u001a\u00020\u00088\u0016X\u0097\u0005\u00a2\u0006\u0006\u001a\u0004\u0008\u000c\u0010\nR\u0014\u0010\r\u001a\u00020\u000e8VX\u0096\u0005\u00a2\u0006\u0006\u001a\u0004\u0008\r\u0010\u000fR\u0014\u0010\u0004\u001a\u00020\u0005X\u0096\u0004\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\u0010\u0010\u0011\u0082\u0002\u000b\n\u0005\u0008\u00a1\u001e0\u0001\n\u0002\u0008!\u00a8\u0006>"
     }
     d2 = {
         "Landroidx/compose/ui/layout/IntrinsicsMeasureScope;",
@@ -31,8 +35,20 @@
         "()Z",
         "getLayoutDirection",
         "()Landroidx/compose/ui/unit/LayoutDirection;",
-        "roundToPx",
+        "layout",
+        "Landroidx/compose/ui/layout/MeasureResult;",
+        "width",
         "",
+        "height",
+        "alignmentLines",
+        "",
+        "Landroidx/compose/ui/layout/AlignmentLine;",
+        "placementBlock",
+        "Lkotlin/Function1;",
+        "Landroidx/compose/ui/layout/Placeable$PlacementScope;",
+        "",
+        "Lkotlin/ExtensionFunctionType;",
+        "roundToPx",
         "Landroidx/compose/ui/unit/Dp;",
         "roundToPx-0680j_4",
         "(F)I",
@@ -75,6 +91,10 @@
 .end annotation
 
 
+# static fields
+.field public static final $stable:I
+
+
 # instance fields
 .field private final synthetic $$delegate_0:Landroidx/compose/ui/layout/IntrinsicMeasureScope;
 
@@ -82,24 +102,22 @@
 
 
 # direct methods
+.method static constructor <clinit>()V
+    .locals 0
+
+    return-void
+.end method
+
 .method public constructor <init>(Landroidx/compose/ui/layout/IntrinsicMeasureScope;Landroidx/compose/ui/unit/LayoutDirection;)V
-    .locals 1
+    .locals 0
 
-    const-string v0, "intrinsicMeasureScope"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string v0, "layoutDirection"
-
-    invoke-static {p2, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 349
+    .line 363
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 351
+    .line 365
     iput-object p2, p0, Landroidx/compose/ui/layout/IntrinsicsMeasureScope;->layoutDirection:Landroidx/compose/ui/unit/LayoutDirection;
 
-    .line 352
+    .line 366
     iput-object p1, p0, Landroidx/compose/ui/layout/IntrinsicsMeasureScope;->$$delegate_0:Landroidx/compose/ui/layout/IntrinsicMeasureScope;
 
     return-void
@@ -134,7 +152,7 @@
 .method public getLayoutDirection()Landroidx/compose/ui/unit/LayoutDirection;
     .locals 0
 
-    .line 351
+    .line 365
     iget-object p0, p0, Landroidx/compose/ui/layout/IntrinsicsMeasureScope;->layoutDirection:Landroidx/compose/ui/unit/LayoutDirection;
 
     return-object p0
@@ -150,6 +168,99 @@
     move-result p0
 
     return p0
+.end method
+
+.method public layout(IILjava/util/Map;Lkotlin/jvm/functions/Function1;)Landroidx/compose/ui/layout/MeasureResult;
+    .locals 0
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(II",
+            "Ljava/util/Map<",
+            "Landroidx/compose/ui/layout/AlignmentLine;",
+            "Ljava/lang/Integer;",
+            ">;",
+            "Lkotlin/jvm/functions/Function1<",
+            "-",
+            "Landroidx/compose/ui/layout/Placeable$PlacementScope;",
+            "Lkotlin/Unit;",
+            ">;)",
+            "Landroidx/compose/ui/layout/MeasureResult;"
+        }
+    .end annotation
+
+    const/4 p0, 0x0
+
+    .line 373
+    invoke-static {p1, p0}, Lkotlin/ranges/RangesKt;->coerceAtLeast(II)I
+
+    move-result p1
+
+    .line 374
+    invoke-static {p2, p0}, Lkotlin/ranges/RangesKt;->coerceAtLeast(II)I
+
+    move-result p0
+
+    const/high16 p2, -0x1000000
+
+    and-int p4, p1, p2
+
+    if-nez p4, :cond_0
+
+    and-int/2addr p2, p0
+
+    if-nez p2, :cond_0
+
+    .line 376
+    new-instance p2, Landroidx/compose/ui/layout/IntrinsicsMeasureScope$layout$1;
+
+    invoke-direct {p2, p1, p0, p3}, Landroidx/compose/ui/layout/IntrinsicsMeasureScope$layout$1;-><init>(IILjava/util/Map;)V
+
+    check-cast p2, Landroidx/compose/ui/layout/MeasureResult;
+
+    return-object p2
+
+    .line 392
+    :cond_0
+    new-instance p2, Ljava/lang/StringBuilder;
+
+    const-string p3, "Size("
+
+    invoke-direct {p2, p3}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+
+    invoke-virtual {p2, p1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    move-result-object p1
+
+    const-string p2, " x "
+
+    invoke-virtual {p1, p2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object p1
+
+    invoke-virtual {p1, p0}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    move-result-object p0
+
+    const-string p1, ") is out of range. Each dimension must be between 0 and 16777215."
+
+    invoke-virtual {p0, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object p0
+
+    invoke-virtual {p0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object p0
+
+    .line 391
+    new-instance p1, Ljava/lang/IllegalStateException;
+
+    invoke-virtual {p0}, Ljava/lang/Object;->toString()Ljava/lang/String;
+
+    move-result-object p0
+
+    invoke-direct {p1, p0}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
+
+    throw p1
 .end method
 
 .method public roundToPx--R2X_6o(J)I
@@ -249,11 +360,7 @@
 .end method
 
 .method public toRect(Landroidx/compose/ui/unit/DpRect;)Landroidx/compose/ui/geometry/Rect;
-    .locals 1
-
-    const-string v0, "<this>"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+    .locals 0
 
     iget-object p0, p0, Landroidx/compose/ui/layout/IntrinsicsMeasureScope;->$$delegate_0:Landroidx/compose/ui/layout/IntrinsicMeasureScope;
 

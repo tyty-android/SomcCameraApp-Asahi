@@ -43,14 +43,6 @@
     .annotation runtime Landroidx/compose/runtime/ComposeCompilerApi;
     .end annotation
 
-    const-string v0, "composer"
-
-    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string v0, "block"
-
-    invoke-static {p4, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
     .line 152
     invoke-interface {p0, p1}, Landroidx/compose/runtime/Composer;->startReplaceableGroup(I)V
 
@@ -103,10 +95,6 @@
     .locals 1
     .annotation runtime Landroidx/compose/runtime/ComposeCompilerApi;
     .end annotation
-
-    const-string v0, "block"
-
-    invoke-static {p3, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 174
     new-instance v0, Landroidx/compose/runtime/internal/ComposableLambdaNImpl;

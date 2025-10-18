@@ -49,7 +49,7 @@
 
     iput-object p1, p0, Landroidx/compose/foundation/lazy/grid/LazyGridState$remeasurementModifier$1;->this$0:Landroidx/compose/foundation/lazy/grid/LazyGridState;
 
-    .line 211
+    .line 218
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -58,13 +58,9 @@
 
 # virtual methods
 .method public onRemeasurementAvailable(Landroidx/compose/ui/layout/Remeasurement;)V
-    .locals 1
+    .locals 0
 
-    const-string v0, "remeasurement"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 213
+    .line 220
     iget-object p0, p0, Landroidx/compose/foundation/lazy/grid/LazyGridState$remeasurementModifier$1;->this$0:Landroidx/compose/foundation/lazy/grid/LazyGridState;
 
     invoke-virtual {p0, p1}, Landroidx/compose/foundation/lazy/grid/LazyGridState;->setRemeasurement$foundation_release(Landroidx/compose/ui/layout/Remeasurement;)V

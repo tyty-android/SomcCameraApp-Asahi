@@ -143,26 +143,28 @@
 
 # virtual methods
 .method public pause()V
-    .locals 2
+    .locals 3
 
     .line 137
     sget-boolean v0, Ljp/co/sony/mc/camera/util/CamLog;->VERBOSE:Z
 
+    const/4 v1, 0x0
+
     if-eqz v0, :cond_0
 
-    const-string v0, "pause() has been called."
+    const/4 v0, 0x1
 
-    filled-new-array {v0}, [Ljava/lang/String;
+    new-array v0, v0, [Ljava/lang/String;
 
-    move-result-object v0
+    const-string v2, "pause() has been called."
+
+    aput-object v2, v0, v1
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
     .line 139
     :cond_0
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/contentsview/ContentLoader;->mThumbnailManager:Ljp/co/sony/mc/camera/view/contentsview/ThumbnailManager;
-
-    const/4 v1, 0x0
 
     invoke-virtual {v0, v1}, Ljp/co/sony/mc/camera/view/contentsview/ThumbnailManager;->cancelDataLoad(Z)V
 
@@ -175,18 +177,22 @@
 .end method
 
 .method public release()V
-    .locals 1
+    .locals 3
 
     .line 149
     sget-boolean v0, Ljp/co/sony/mc/camera/util/CamLog;->VERBOSE:Z
 
     if-eqz v0, :cond_0
 
-    const-string v0, "release() has been called."
+    const/4 v0, 0x1
 
-    filled-new-array {v0}, [Ljava/lang/String;
+    new-array v0, v0, [Ljava/lang/String;
 
-    move-result-object v0
+    const/4 v1, 0x0
+
+    const-string v2, "release() has been called."
+
+    aput-object v2, v0, v1
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
@@ -215,13 +221,17 @@
     .line 181
     sget-boolean v0, Ljp/co/sony/mc/camera/util/CamLog;->VERBOSE:Z
 
+    const/4 v1, 0x0
+
+    const/4 v2, 0x1
+
     if-eqz v0, :cond_0
 
-    const-string v0, "reload() has been called."
+    new-array v0, v2, [Ljava/lang/String;
 
-    filled-new-array {v0}, [Ljava/lang/String;
+    const-string v3, "reload() has been called."
 
-    move-result-object v0
+    aput-object v3, v0, v1
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
@@ -229,28 +239,26 @@
     :cond_0
     sget-object v0, Ljp/co/sony/mc/camera/view/contentsview/ContentLoader$2;->$SwitchMap$jp$co$sony$mc$camera$view$contentsview$ContentLoader$SecurityLevel:[I
 
-    iget-object v1, p0, Ljp/co/sony/mc/camera/view/contentsview/ContentLoader;->mSecurityLevel:Ljp/co/sony/mc/camera/view/contentsview/ContentLoader$SecurityLevel;
+    iget-object v3, p0, Ljp/co/sony/mc/camera/view/contentsview/ContentLoader;->mSecurityLevel:Ljp/co/sony/mc/camera/view/contentsview/ContentLoader$SecurityLevel;
 
-    invoke-virtual {v1}, Ljp/co/sony/mc/camera/view/contentsview/ContentLoader$SecurityLevel;->ordinal()I
+    invoke-virtual {v3}, Ljp/co/sony/mc/camera/view/contentsview/ContentLoader$SecurityLevel;->ordinal()I
 
-    move-result v1
+    move-result v3
 
-    aget v0, v0, v1
+    aget v0, v0, v3
 
-    const/4 v1, 0x1
-
-    if-eq v0, v1, :cond_2
+    if-eq v0, v2, :cond_2
 
     .line 195
     sget-boolean v0, Ljp/co/sony/mc/camera/util/CamLog;->VERBOSE:Z
 
     if-eqz v0, :cond_1
 
-    const-string v0, "reload() : SecurityLevel = NORMAL"
+    new-array v0, v2, [Ljava/lang/String;
 
-    filled-new-array {v0}, [Ljava/lang/String;
+    const-string v2, "reload() : SecurityLevel = NORMAL"
 
-    move-result-object v0
+    aput-object v2, v0, v1
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
@@ -261,8 +269,6 @@
     invoke-interface {v0}, Ljp/co/sony/mc/camera/storage/Storage;->getReadableStorageVolumes()Ljava/util/List;
 
     move-result-object v0
-
-    const/4 v1, 0x0
 
     move v2, v1
 
@@ -287,11 +293,11 @@
     if-eqz p1, :cond_3
 
     .line 186
-    const-string p1, "reload() : SecurityLevel = NEWLY_ADDED_CONTENT_ONLY "
+    new-array p1, v2, [Ljava/lang/String;
 
-    filled-new-array {p1}, [Ljava/lang/String;
+    const-string v0, "reload() : SecurityLevel = NEWLY_ADDED_CONTENT_ONLY "
 
-    move-result-object p1
+    aput-object v0, p1, v1
 
     invoke-static {p1}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
@@ -329,73 +335,75 @@
 .end method
 
 .method public request(ILandroid/net/Uri;)V
-    .locals 2
+    .locals 5
 
     .line 167
     sget-boolean v0, Ljp/co/sony/mc/camera/util/CamLog;->VERBOSE:Z
 
+    const/4 v1, 0x1
+
     if-eqz v0, :cond_0
 
     .line 168
-    const-string v0, "request() has been called."
+    new-array v0, v1, [Ljava/lang/String;
 
-    filled-new-array {v0}, [Ljava/lang/String;
+    const-string v2, "request() has been called."
 
-    move-result-object v0
+    const/4 v3, 0x0
+
+    aput-object v2, v0, v3
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
     .line 169
-    new-instance v0, Ljava/lang/StringBuilder;
+    new-array v0, v1, [Ljava/lang/String;
 
-    const-string v1, "  requestId:"
+    new-instance v2, Ljava/lang/StringBuilder;
 
-    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+    const-string v4, "  requestId:"
 
-    invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+    invoke-direct {v2, v4}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
-    move-result-object v0
+    invoke-virtual {v2, p1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    move-result-object v2
 
-    move-result-object v0
+    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    filled-new-array {v0}, [Ljava/lang/String;
+    move-result-object v2
 
-    move-result-object v0
+    aput-object v2, v0, v3
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
     .line 170
-    new-instance v0, Ljava/lang/StringBuilder;
+    new-array v0, v1, [Ljava/lang/String;
 
-    const-string v1, "  uri:"
+    new-instance v2, Ljava/lang/StringBuilder;
 
-    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+    const-string v4, "  uri:"
+
+    invoke-direct {v2, v4}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
     invoke-virtual {p2}, Landroid/net/Uri;->toString()Ljava/lang/String;
 
-    move-result-object v1
+    move-result-object v4
 
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v2, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    move-result-object v0
+    move-result-object v2
 
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    move-result-object v0
+    move-result-object v2
 
-    filled-new-array {v0}, [Ljava/lang/String;
-
-    move-result-object v0
+    aput-object v2, v0, v3
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
     .line 172
     :cond_0
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/contentsview/ContentLoader;->mThumbnailManager:Ljp/co/sony/mc/camera/view/contentsview/ThumbnailManager;
-
-    const/4 v1, 0x1
 
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/contentsview/ContentLoader;->mOnLoadCompleteListener:Ljp/co/sony/mc/camera/storage/Storage$OnLoadCompletedListener;
 

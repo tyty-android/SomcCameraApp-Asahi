@@ -5,7 +5,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/SourceDebugExtension;
-    value = "SMAP\nGapBuffer.kt\nKotlin\n*S Kotlin\n*F\n+ 1 GapBuffer.kt\nandroidx/compose/ui/text/input/GapBuffer\n+ 2 fake.kt\nkotlin/jvm/internal/FakeKt\n*L\n1#1,338:1\n1#2:339\n*E\n"
+    value = "SMAP\nGapBuffer.kt\nKotlin\n*S Kotlin\n*F\n+ 1 GapBuffer.kt\nandroidx/compose/ui/text/input/GapBuffer\n+ 2 fake.kt\nkotlin/jvm/internal/FakeKt\n*L\n1#1,337:1\n1#2:338\n*E\n"
 .end annotation
 
 .annotation runtime Lkotlin/Metadata;
@@ -69,10 +69,6 @@
 # direct methods
 .method public constructor <init>([CII)V
     .locals 1
-
-    const-string v0, "initBuffer"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 56
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -281,10 +277,6 @@
 .method public final append(Ljava/lang/StringBuilder;)V
     .locals 3
 
-    const-string v0, "builder"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
     .line 205
     iget-object v0, p0, Landroidx/compose/ui/text/input/GapBuffer;->buffer:[C
 
@@ -356,10 +348,6 @@
 .method public final replace(IILjava/lang/String;)V
     .locals 2
 
-    const-string/jumbo v0, "text"
-
-    invoke-static {p3, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
     .line 192
     invoke-virtual {p3}, Ljava/lang/String;->length()I
 
@@ -412,10 +400,6 @@
     invoke-virtual {p0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object p0
-
-    const-string v0, "StringBuilder().apply { append(this) }.toString()"
-
-    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
 
     return-object p0
 .end method

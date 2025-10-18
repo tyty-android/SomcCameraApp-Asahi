@@ -1,9 +1,8 @@
 .class public Landroidx/compose/runtime/SnapshotMutableDoubleStateImpl;
-.super Ljava/lang/Object;
+.super Landroidx/compose/runtime/snapshots/StateObjectImpl;
 .source "SnapshotDoubleState.kt"
 
 # interfaces
-.implements Landroidx/compose/runtime/snapshots/StateObject;
 .implements Landroidx/compose/runtime/MutableDoubleState;
 .implements Landroidx/compose/runtime/snapshots/SnapshotMutableState;
 
@@ -17,8 +16,7 @@
 
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Ljava/lang/Object;",
-        "Landroidx/compose/runtime/snapshots/StateObject;",
+        "Landroidx/compose/runtime/snapshots/StateObjectImpl;",
         "Landroidx/compose/runtime/MutableDoubleState;",
         "Landroidx/compose/runtime/snapshots/SnapshotMutableState<",
         "Ljava/lang/Double;",
@@ -27,7 +25,7 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/SourceDebugExtension;
-    value = "SMAP\nSnapshotDoubleState.kt\nKotlin\n*S Kotlin\n*F\n+ 1 SnapshotDoubleState.kt\nandroidx/compose/runtime/SnapshotMutableDoubleStateImpl\n+ 2 Snapshot.kt\nandroidx/compose/runtime/snapshots/SnapshotKt\n+ 3 ActualJvm.jvm.kt\nandroidx/compose/runtime/ActualJvm_jvmKt\n*L\n1#1,186:1\n2279#2:187\n2200#2,2:188\n1722#2:190\n2202#2,5:192\n2279#2:197\n70#3:191\n*S KotlinDebug\n*F\n+ 1 SnapshotDoubleState.kt\nandroidx/compose/runtime/SnapshotMutableDoubleStateImpl\n*L\n139#1:187\n141#1:188,2\n141#1:190\n141#1:192,5\n172#1:197\n141#1:191\n*E\n"
+    value = "SMAP\nSnapshotDoubleState.kt\nKotlin\n*S Kotlin\n*F\n+ 1 SnapshotDoubleState.kt\nandroidx/compose/runtime/SnapshotMutableDoubleStateImpl\n+ 2 Snapshot.kt\nandroidx/compose/runtime/snapshots/SnapshotKt\n+ 3 FloatingPointEquality.android.kt\nandroidx/compose/runtime/internal/FloatingPointEquality_androidKt\n+ 4 ActualJvm.jvm.kt\nandroidx/compose/runtime/ActualJvm_jvmKt\n*L\n1#1,187:1\n2283#2:188\n2204#2,2:194\n1714#2:196\n2206#2,5:198\n2283#2:208\n49#3,5:189\n49#3,5:203\n82#4:197\n*S KotlinDebug\n*F\n+ 1 SnapshotDoubleState.kt\nandroidx/compose/runtime/SnapshotMutableDoubleStateImpl\n*L\n140#1:188\n142#1:194,2\n142#1:196\n142#1:198,5\n173#1:208\n141#1:189,5\n166#1:203,5\n142#1:197\n*E\n"
 .end annotation
 
 .annotation runtime Lkotlin/Metadata;
@@ -36,7 +34,7 @@
     }
     d2 = {
         "Landroidx/compose/runtime/SnapshotMutableDoubleStateImpl;",
-        "Landroidx/compose/runtime/snapshots/StateObject;",
+        "Landroidx/compose/runtime/snapshots/StateObjectImpl;",
         "Landroidx/compose/runtime/MutableDoubleState;",
         "Landroidx/compose/runtime/snapshots/SnapshotMutableState;",
         "",
@@ -81,18 +79,28 @@
 .end annotation
 
 
+# static fields
+.field public static final $stable:I
+
+
 # instance fields
 .field private next:Landroidx/compose/runtime/SnapshotMutableDoubleStateImpl$DoubleStateStateRecord;
 
 
 # direct methods
+.method static constructor <clinit>()V
+    .locals 0
+
+    return-void
+.end method
+
 .method public constructor <init>(D)V
     .locals 1
 
-    .line 128
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    .line 131
+    invoke-direct {p0}, Landroidx/compose/runtime/snapshots/StateObjectImpl;-><init>()V
 
-    .line 132
+    .line 133
     new-instance v0, Landroidx/compose/runtime/SnapshotMutableDoubleStateImpl$DoubleStateStateRecord;
 
     invoke-direct {v0, p1, p2}, Landroidx/compose/runtime/SnapshotMutableDoubleStateImpl$DoubleStateStateRecord;-><init>(D)V
@@ -107,7 +115,7 @@
 .method public component1()Ljava/lang/Double;
     .locals 2
 
-    .line 150
+    .line 151
     invoke-virtual {p0}, Landroidx/compose/runtime/SnapshotMutableDoubleStateImpl;->getDoubleValue()D
 
     move-result-wide v0
@@ -122,7 +130,7 @@
 .method public bridge synthetic component1()Ljava/lang/Object;
     .locals 0
 
-    .line 128
+    .line 129
     invoke-virtual {p0}, Landroidx/compose/runtime/SnapshotMutableDoubleStateImpl;->component1()Ljava/lang/Double;
 
     move-result-object p0
@@ -142,7 +150,7 @@
         }
     .end annotation
 
-    .line 152
+    .line 153
     new-instance v0, Landroidx/compose/runtime/SnapshotMutableDoubleStateImpl$component2$1;
 
     invoke-direct {v0, p0}, Landroidx/compose/runtime/SnapshotMutableDoubleStateImpl$component2$1;-><init>(Landroidx/compose/runtime/SnapshotMutableDoubleStateImpl;)V
@@ -155,7 +163,7 @@
 .method public getDoubleValue()D
     .locals 2
 
-    .line 138
+    .line 139
     iget-object v0, p0, Landroidx/compose/runtime/SnapshotMutableDoubleStateImpl;->next:Landroidx/compose/runtime/SnapshotMutableDoubleStateImpl$DoubleStateStateRecord;
 
     check-cast v0, Landroidx/compose/runtime/snapshots/StateRecord;
@@ -178,7 +186,7 @@
 .method public getFirstStateRecord()Landroidx/compose/runtime/snapshots/StateRecord;
     .locals 0
 
-    .line 135
+    .line 136
     iget-object p0, p0, Landroidx/compose/runtime/SnapshotMutableDoubleStateImpl;->next:Landroidx/compose/runtime/SnapshotMutableDoubleStateImpl$DoubleStateStateRecord;
 
     check-cast p0, Landroidx/compose/runtime/snapshots/StateRecord;
@@ -197,7 +205,7 @@
         }
     .end annotation
 
-    .line 148
+    .line 149
     invoke-static {}, Landroidx/compose/runtime/SnapshotStateKt;->structuralEqualityPolicy()Landroidx/compose/runtime/SnapshotMutationPolicy;
 
     move-result-object p0
@@ -208,28 +216,22 @@
 .method public mergeRecords(Landroidx/compose/runtime/snapshots/StateRecord;Landroidx/compose/runtime/snapshots/StateRecord;Landroidx/compose/runtime/snapshots/StateRecord;)Landroidx/compose/runtime/snapshots/StateRecord;
     .locals 2
 
-    const-string p0, "previous"
-
-    invoke-static {p1, p0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string p0, "current"
-
-    invoke-static {p2, p0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string p0, "applied"
-
-    invoke-static {p3, p0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 163
-    move-object p0, p2
-
-    check-cast p0, Landroidx/compose/runtime/SnapshotMutableDoubleStateImpl$DoubleStateStateRecord;
-
     .line 164
-    check-cast p3, Landroidx/compose/runtime/SnapshotMutableDoubleStateImpl$DoubleStateStateRecord;
+    const-string p0, "null cannot be cast to non-null type androidx.compose.runtime.SnapshotMutableDoubleStateImpl.DoubleStateStateRecord"
+
+    invoke-static {p2, p0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;Ljava/lang/String;)V
+
+    move-object p1, p2
+
+    check-cast p1, Landroidx/compose/runtime/SnapshotMutableDoubleStateImpl$DoubleStateStateRecord;
 
     .line 165
-    invoke-virtual {p0}, Landroidx/compose/runtime/SnapshotMutableDoubleStateImpl$DoubleStateStateRecord;->getValue()D
+    invoke-static {p3, p0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;Ljava/lang/String;)V
+
+    check-cast p3, Landroidx/compose/runtime/SnapshotMutableDoubleStateImpl$DoubleStateStateRecord;
+
+    .line 166
+    invoke-virtual {p1}, Landroidx/compose/runtime/SnapshotMutableDoubleStateImpl$DoubleStateStateRecord;->getValue()D
 
     move-result-wide p0
 
@@ -253,11 +255,11 @@
 .method public prependStateRecord(Landroidx/compose/runtime/snapshots/StateRecord;)V
     .locals 1
 
-    const-string/jumbo v0, "value"
+    .line 156
+    const-string v0, "null cannot be cast to non-null type androidx.compose.runtime.SnapshotMutableDoubleStateImpl.DoubleStateStateRecord"
 
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 155
     check-cast p1, Landroidx/compose/runtime/SnapshotMutableDoubleStateImpl$DoubleStateStateRecord;
 
     iput-object p1, p0, Landroidx/compose/runtime/SnapshotMutableDoubleStateImpl;->next:Landroidx/compose/runtime/SnapshotMutableDoubleStateImpl$DoubleStateStateRecord;
@@ -268,19 +270,19 @@
 .method public setDoubleValue(D)V
     .locals 5
 
-    .line 139
+    .line 140
     iget-object v0, p0, Landroidx/compose/runtime/SnapshotMutableDoubleStateImpl;->next:Landroidx/compose/runtime/SnapshotMutableDoubleStateImpl$DoubleStateStateRecord;
 
     check-cast v0, Landroidx/compose/runtime/snapshots/StateRecord;
 
-    .line 187
+    .line 188
     invoke-static {v0}, Landroidx/compose/runtime/snapshots/SnapshotKt;->current(Landroidx/compose/runtime/snapshots/StateRecord;)Landroidx/compose/runtime/snapshots/StateRecord;
 
     move-result-object v0
 
     check-cast v0, Landroidx/compose/runtime/SnapshotMutableDoubleStateImpl$DoubleStateStateRecord;
 
-    .line 140
+    .line 141
     invoke-virtual {v0}, Landroidx/compose/runtime/SnapshotMutableDoubleStateImpl$DoubleStateStateRecord;->getValue()D
 
     move-result-wide v1
@@ -291,24 +293,24 @@
 
     goto :goto_0
 
-    .line 141
+    .line 142
     :cond_0
     iget-object v1, p0, Landroidx/compose/runtime/SnapshotMutableDoubleStateImpl;->next:Landroidx/compose/runtime/SnapshotMutableDoubleStateImpl$DoubleStateStateRecord;
 
     check-cast v1, Landroidx/compose/runtime/snapshots/StateRecord;
 
-    .line 188
+    .line 194
     invoke-static {}, Landroidx/compose/runtime/snapshots/SnapshotKt;->getSnapshotInitializer()Landroidx/compose/runtime/snapshots/Snapshot;
 
-    .line 190
+    .line 196
     invoke-static {}, Landroidx/compose/runtime/snapshots/SnapshotKt;->getLock()Ljava/lang/Object;
 
     move-result-object v2
 
-    .line 191
+    .line 197
     monitor-enter v2
 
-    .line 192
+    .line 198
     :try_start_0
     sget-object v3, Landroidx/compose/runtime/snapshots/Snapshot;->Companion:Landroidx/compose/runtime/snapshots/Snapshot$Companion;
 
@@ -316,7 +318,7 @@
 
     move-result-object v3
 
-    .line 193
+    .line 199
     move-object v4, p0
 
     check-cast v4, Landroidx/compose/runtime/snapshots/StateObject;
@@ -329,17 +331,17 @@
 
     check-cast v0, Landroidx/compose/runtime/SnapshotMutableDoubleStateImpl$DoubleStateStateRecord;
 
-    .line 141
+    .line 142
     invoke-virtual {v0, p1, p2}, Landroidx/compose/runtime/SnapshotMutableDoubleStateImpl$DoubleStateStateRecord;->setValue(D)V
 
     sget-object p1, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 191
+    .line 197
     monitor-exit v2
 
-    .line 195
+    .line 201
     check-cast p0, Landroidx/compose/runtime/snapshots/StateObject;
 
     invoke-static {v3, p0}, Landroidx/compose/runtime/snapshots/SnapshotKt;->notifyWrite(Landroidx/compose/runtime/snapshots/Snapshot;Landroidx/compose/runtime/snapshots/StateObject;)V
@@ -350,7 +352,7 @@
     :catchall_0
     move-exception p0
 
-    .line 191
+    .line 197
     monitor-exit v2
 
     throw p0
@@ -359,19 +361,19 @@
 .method public toString()Ljava/lang/String;
     .locals 4
 
-    .line 172
+    .line 173
     iget-object v0, p0, Landroidx/compose/runtime/SnapshotMutableDoubleStateImpl;->next:Landroidx/compose/runtime/SnapshotMutableDoubleStateImpl$DoubleStateStateRecord;
 
     check-cast v0, Landroidx/compose/runtime/snapshots/StateRecord;
 
-    .line 197
+    .line 208
     invoke-static {v0}, Landroidx/compose/runtime/snapshots/SnapshotKt;->current(Landroidx/compose/runtime/snapshots/StateRecord;)Landroidx/compose/runtime/snapshots/StateRecord;
 
     move-result-object v0
 
     check-cast v0, Landroidx/compose/runtime/SnapshotMutableDoubleStateImpl$DoubleStateStateRecord;
 
-    .line 173
+    .line 174
     new-instance v1, Ljava/lang/StringBuilder;
 
     const-string v2, "MutableDoubleState(value="

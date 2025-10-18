@@ -50,6 +50,10 @@
 .end annotation
 
 
+# static fields
+.field public static final $stable:I
+
+
 # instance fields
 .field private final block:Lkotlin/jvm/functions/Function1;
     .annotation system Ldalvik/annotation/Signature;
@@ -64,8 +68,14 @@
 
 
 # direct methods
+.method static constructor <clinit>()V
+    .locals 0
+
+    return-void
+.end method
+
 .method public constructor <init>(Lkotlin/jvm/functions/Function1;)V
-    .locals 1
+    .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -77,14 +87,10 @@
         }
     .end annotation
 
-    const-string v0, "block"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 679
+    .line 682
     invoke-direct {p0}, Landroidx/compose/ui/node/ModifierNodeElement;-><init>()V
 
-    .line 678
+    .line 681
     iput-object p1, p0, Landroidx/compose/foundation/layout/WithAlignmentLineBlockElement;->block:Lkotlin/jvm/functions/Function1;
 
     return-void
@@ -95,7 +101,7 @@
 .method public create()Landroidx/compose/foundation/layout/SiblingsAlignedNode$WithAlignmentLineBlockNode;
     .locals 1
 
-    .line 681
+    .line 684
     new-instance v0, Landroidx/compose/foundation/layout/SiblingsAlignedNode$WithAlignmentLineBlockNode;
 
     iget-object p0, p0, Landroidx/compose/foundation/layout/WithAlignmentLineBlockElement;->block:Lkotlin/jvm/functions/Function1;
@@ -108,7 +114,7 @@
 .method public bridge synthetic create()Landroidx/compose/ui/Modifier$Node;
     .locals 0
 
-    .line 677
+    .line 680
     invoke-virtual {p0}, Landroidx/compose/foundation/layout/WithAlignmentLineBlockElement;->create()Landroidx/compose/foundation/layout/SiblingsAlignedNode$WithAlignmentLineBlockNode;
 
     move-result-object p0
@@ -127,7 +133,7 @@
 
     return p0
 
-    .line 690
+    .line 693
     :cond_0
     instance-of v0, p1, Landroidx/compose/foundation/layout/WithAlignmentLineBlockElement;
 
@@ -147,7 +153,7 @@
 
     return p0
 
-    .line 691
+    .line 694
     :cond_2
     iget-object p0, p0, Landroidx/compose/foundation/layout/WithAlignmentLineBlockElement;->block:Lkotlin/jvm/functions/Function1;
 
@@ -172,7 +178,7 @@
         }
     .end annotation
 
-    .line 678
+    .line 681
     iget-object p0, p0, Landroidx/compose/foundation/layout/WithAlignmentLineBlockElement;->block:Lkotlin/jvm/functions/Function1;
 
     return-object p0
@@ -181,7 +187,7 @@
 .method public hashCode()I
     .locals 0
 
-    .line 694
+    .line 697
     iget-object p0, p0, Landroidx/compose/foundation/layout/WithAlignmentLineBlockElement;->block:Lkotlin/jvm/functions/Function1;
 
     invoke-virtual {p0}, Ljava/lang/Object;->hashCode()I
@@ -194,16 +200,12 @@
 .method public inspectableProperties(Landroidx/compose/ui/platform/InspectorInfo;)V
     .locals 1
 
-    const-string v0, "<this>"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 697
+    .line 700
     const-string v0, "alignBy"
 
     invoke-virtual {p1, v0}, Landroidx/compose/ui/platform/InspectorInfo;->setName(Ljava/lang/String;)V
 
-    .line 698
+    .line 701
     iget-object p0, p0, Landroidx/compose/foundation/layout/WithAlignmentLineBlockElement;->block:Lkotlin/jvm/functions/Function1;
 
     invoke-virtual {p1, p0}, Landroidx/compose/ui/platform/InspectorInfo;->setValue(Ljava/lang/Object;)V
@@ -212,13 +214,9 @@
 .end method
 
 .method public update(Landroidx/compose/foundation/layout/SiblingsAlignedNode$WithAlignmentLineBlockNode;)V
-    .locals 1
+    .locals 0
 
-    const-string v0, "node"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 685
+    .line 688
     iget-object p0, p0, Landroidx/compose/foundation/layout/WithAlignmentLineBlockElement;->block:Lkotlin/jvm/functions/Function1;
 
     invoke-virtual {p1, p0}, Landroidx/compose/foundation/layout/SiblingsAlignedNode$WithAlignmentLineBlockNode;->setBlock(Lkotlin/jvm/functions/Function1;)V
@@ -229,7 +227,7 @@
 .method public bridge synthetic update(Landroidx/compose/ui/Modifier$Node;)V
     .locals 0
 
-    .line 677
+    .line 680
     check-cast p1, Landroidx/compose/foundation/layout/SiblingsAlignedNode$WithAlignmentLineBlockNode;
 
     invoke-virtual {p0, p1}, Landroidx/compose/foundation/layout/WithAlignmentLineBlockElement;->update(Landroidx/compose/foundation/layout/SiblingsAlignedNode$WithAlignmentLineBlockNode;)V

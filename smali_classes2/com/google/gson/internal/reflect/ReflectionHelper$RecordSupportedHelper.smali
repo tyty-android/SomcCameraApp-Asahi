@@ -29,16 +29,17 @@
     .locals 4
     .annotation system Ldalvik/annotation/Throws;
         value = {
-            Ljava/lang/NoSuchMethodException;
+            Ljava/lang/NoSuchMethodException;,
+            Ljava/lang/ClassNotFoundException;
         }
     .end annotation
 
     const/4 v0, 0x0
 
-    .line 189
+    .line 238
     invoke-direct {p0, v0}, Lcom/google/gson/internal/reflect/ReflectionHelper$RecordHelper;-><init>(Lcom/google/gson/internal/reflect/ReflectionHelper$1;)V
 
-    .line 190
+    .line 239
     const-class v0, Ljava/lang/Class;
 
     const/4 v1, 0x0
@@ -53,7 +54,7 @@
 
     iput-object v0, p0, Lcom/google/gson/internal/reflect/ReflectionHelper$RecordSupportedHelper;->isRecord:Ljava/lang/reflect/Method;
 
-    .line 191
+    .line 240
     const-class v0, Ljava/lang/Class;
 
     const-string v2, "getRecordComponents"
@@ -66,16 +67,14 @@
 
     iput-object v0, p0, Lcom/google/gson/internal/reflect/ReflectionHelper$RecordSupportedHelper;->getRecordComponents:Ljava/lang/reflect/Method;
 
-    .line 193
-    invoke-virtual {v0}, Ljava/lang/reflect/Method;->getReturnType()Ljava/lang/Class;
+    .line 241
+    const-string v0, "java.lang.reflect.RecordComponent"
+
+    invoke-static {v0}, Ljava/lang/Class;->forName(Ljava/lang/String;)Ljava/lang/Class;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Ljava/lang/Class;->getComponentType()Ljava/lang/Class;
-
-    move-result-object v0
-
-    .line 194
+    .line 242
     const-string v2, "getName"
 
     new-array v3, v1, [Ljava/lang/Class;
@@ -86,7 +85,7 @@
 
     iput-object v2, p0, Lcom/google/gson/internal/reflect/ReflectionHelper$RecordSupportedHelper;->getName:Ljava/lang/reflect/Method;
 
-    .line 195
+    .line 243
     const-string v2, "getType"
 
     new-array v1, v1, [Ljava/lang/Class;
@@ -104,11 +103,12 @@
     .locals 0
     .annotation system Ldalvik/annotation/Throws;
         value = {
-            Ljava/lang/NoSuchMethodException;
+            Ljava/lang/NoSuchMethodException;,
+            Ljava/lang/ClassNotFoundException;
         }
     .end annotation
 
-    .line 183
+    .line 232
     invoke-direct {p0}, Lcom/google/gson/internal/reflect/ReflectionHelper$RecordSupportedHelper;-><init>()V
 
     return-void
@@ -129,7 +129,7 @@
         }
     .end annotation
 
-    .line 242
+    .line 291
     :try_start_0
     invoke-virtual {p2}, Ljava/lang/reflect/Field;->getName()Ljava/lang/String;
 
@@ -150,7 +150,7 @@
     :catch_0
     move-exception p0
 
-    .line 244
+    .line 293
     invoke-static {p0}, Lcom/google/gson/internal/reflect/ReflectionHelper;->access$300(Ljava/lang/ReflectiveOperationException;)Ljava/lang/RuntimeException;
 
     move-result-object p0
@@ -172,7 +172,7 @@
         }
     .end annotation
 
-    .line 224
+    .line 272
     :try_start_0
     iget-object v0, p0, Lcom/google/gson/internal/reflect/ReflectionHelper$RecordSupportedHelper;->getRecordComponents:Ljava/lang/reflect/Method;
 
@@ -186,20 +186,20 @@
 
     check-cast v0, [Ljava/lang/Object;
 
-    .line 225
+    .line 273
     array-length v2, v0
 
     new-array v2, v2, [Ljava/lang/Class;
 
     move v3, v1
 
-    .line 226
+    .line 274
     :goto_0
     array-length v4, v0
 
     if-ge v3, v4, :cond_0
 
-    .line 227
+    .line 275
     iget-object v4, p0, Lcom/google/gson/internal/reflect/ReflectionHelper$RecordSupportedHelper;->getType:Ljava/lang/reflect/Method;
 
     aget-object v5, v0, v3
@@ -218,7 +218,7 @@
 
     goto :goto_0
 
-    .line 231
+    .line 279
     :cond_0
     invoke-virtual {p1, v2}, Ljava/lang/Class;->getDeclaredConstructor([Ljava/lang/Class;)Ljava/lang/reflect/Constructor;
 
@@ -231,7 +231,7 @@
     :catch_0
     move-exception p0
 
-    .line 233
+    .line 281
     invoke-static {p0}, Lcom/google/gson/internal/reflect/ReflectionHelper;->access$300(Ljava/lang/ReflectiveOperationException;)Ljava/lang/RuntimeException;
 
     move-result-object p0
@@ -250,7 +250,7 @@
         }
     .end annotation
 
-    .line 210
+    .line 258
     :try_start_0
     iget-object v0, p0, Lcom/google/gson/internal/reflect/ReflectionHelper$RecordSupportedHelper;->getRecordComponents:Ljava/lang/reflect/Method;
 
@@ -264,20 +264,20 @@
 
     check-cast p1, [Ljava/lang/Object;
 
-    .line 211
+    .line 259
     array-length v0, p1
 
     new-array v0, v0, [Ljava/lang/String;
 
     move v2, v1
 
-    .line 212
+    .line 260
     :goto_0
     array-length v3, p1
 
     if-ge v2, v3, :cond_0
 
-    .line 213
+    .line 261
     iget-object v3, p0, Lcom/google/gson/internal/reflect/ReflectionHelper$RecordSupportedHelper;->getName:Ljava/lang/reflect/Method;
 
     aget-object v4, p1, v2
@@ -304,7 +304,7 @@
     :catch_0
     move-exception p0
 
-    .line 217
+    .line 265
     invoke-static {p0}, Lcom/google/gson/internal/reflect/ReflectionHelper;->access$300(Ljava/lang/ReflectiveOperationException;)Ljava/lang/RuntimeException;
 
     move-result-object p0
@@ -322,7 +322,7 @@
         }
     .end annotation
 
-    .line 201
+    .line 249
     :try_start_0
     iget-object p0, p0, Lcom/google/gson/internal/reflect/ReflectionHelper$RecordSupportedHelper;->isRecord:Ljava/lang/reflect/Method;
 
@@ -347,7 +347,7 @@
     :catch_0
     move-exception p0
 
-    .line 203
+    .line 251
     invoke-static {p0}, Lcom/google/gson/internal/reflect/ReflectionHelper;->access$300(Ljava/lang/ReflectiveOperationException;)Ljava/lang/RuntimeException;
 
     move-result-object p0

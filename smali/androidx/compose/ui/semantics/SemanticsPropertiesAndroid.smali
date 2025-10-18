@@ -48,7 +48,7 @@
 
 # direct methods
 .method static constructor <clinit>()V
-    .locals 3
+    .locals 4
 
     new-instance v0, Landroidx/compose/ui/semantics/SemanticsPropertiesAndroid;
 
@@ -59,7 +59,7 @@
     .line 29
     new-instance v0, Landroidx/compose/ui/semantics/SemanticsPropertyKey;
 
-    .line 31
+    .line 32
     sget-object v1, Landroidx/compose/ui/semantics/SemanticsPropertiesAndroid$TestTagsAsResourceId$1;->INSTANCE:Landroidx/compose/ui/semantics/SemanticsPropertiesAndroid$TestTagsAsResourceId$1;
 
     check-cast v1, Lkotlin/jvm/functions/Function2;
@@ -67,9 +67,15 @@
     .line 29
     const-string v2, "TestTagsAsResourceId"
 
-    invoke-direct {v0, v2, v1}, Landroidx/compose/ui/semantics/SemanticsPropertyKey;-><init>(Ljava/lang/String;Lkotlin/jvm/functions/Function2;)V
+    const/4 v3, 0x0
+
+    invoke-direct {v0, v2, v3, v1}, Landroidx/compose/ui/semantics/SemanticsPropertyKey;-><init>(Ljava/lang/String;ZLkotlin/jvm/functions/Function2;)V
 
     sput-object v0, Landroidx/compose/ui/semantics/SemanticsPropertiesAndroid;->TestTagsAsResourceId:Landroidx/compose/ui/semantics/SemanticsPropertyKey;
+
+    const/16 v0, 0x8
+
+    sput v0, Landroidx/compose/ui/semantics/SemanticsPropertiesAndroid;->$stable:I
 
     return-void
 .end method

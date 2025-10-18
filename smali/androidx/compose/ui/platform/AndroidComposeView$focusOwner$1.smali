@@ -72,7 +72,7 @@
 .method public bridge synthetic invoke(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
 
-    .line 194
+    .line 223
     check-cast p1, Lkotlin/jvm/functions/Function0;
 
     invoke-virtual {p0, p1}, Landroidx/compose/ui/platform/AndroidComposeView$focusOwner$1;->invoke(Lkotlin/jvm/functions/Function0;)V
@@ -83,7 +83,7 @@
 .end method
 
 .method public final invoke(Lkotlin/jvm/functions/Function0;)V
-    .locals 1
+    .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -93,11 +93,7 @@
         }
     .end annotation
 
-    const-string v0, "it"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 194
+    .line 223
     iget-object p0, p0, Landroidx/compose/ui/platform/AndroidComposeView$focusOwner$1;->this$0:Landroidx/compose/ui/platform/AndroidComposeView;
 
     invoke-virtual {p0, p1}, Landroidx/compose/ui/platform/AndroidComposeView;->registerOnEndApplyChangesListener(Lkotlin/jvm/functions/Function0;)V

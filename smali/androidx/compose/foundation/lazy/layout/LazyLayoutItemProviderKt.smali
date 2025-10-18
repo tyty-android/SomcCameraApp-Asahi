@@ -31,13 +31,9 @@
 .method public static final findIndexByKey(Landroidx/compose/foundation/lazy/layout/LazyLayoutItemProvider;Ljava/lang/Object;I)I
     .locals 1
 
-    const-string v0, "<this>"
-
-    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
     if-eqz p1, :cond_2
 
-    .line 73
+    .line 77
     invoke-interface {p0}, Landroidx/compose/foundation/lazy/layout/LazyLayoutItemProvider;->getItemCount()I
 
     move-result v0
@@ -46,7 +42,7 @@
 
     goto :goto_0
 
-    .line 77
+    .line 81
     :cond_0
     invoke-interface {p0}, Landroidx/compose/foundation/lazy/layout/LazyLayoutItemProvider;->getItemCount()I
 
@@ -54,7 +50,7 @@
 
     if-ge p2, v0, :cond_1
 
-    .line 78
+    .line 82
     invoke-interface {p0, p2}, Landroidx/compose/foundation/lazy/layout/LazyLayoutItemProvider;->getKey(I)Ljava/lang/Object;
 
     move-result-object v0
@@ -67,7 +63,7 @@
 
     return p2
 
-    .line 83
+    .line 87
     :cond_1
     invoke-interface {p0, p1}, Landroidx/compose/foundation/lazy/layout/LazyLayoutItemProvider;->getIndex(Ljava/lang/Object;)I
 

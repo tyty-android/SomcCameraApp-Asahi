@@ -1,6 +1,6 @@
 .class public Landroidx/lifecycle/ReportFragment;
 .super Landroid/app/Fragment;
-.source "ReportFragment.kt"
+.source "ReportFragment.android.kt"
 
 
 # annotations
@@ -82,7 +82,7 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 32
+    .line 30
     invoke-direct {p0}, Landroid/app/Fragment;-><init>()V
 
     return-void
@@ -111,7 +111,7 @@
 
     if-eqz p1, :cond_0
 
-    .line 36
+    .line 34
     invoke-interface {p1}, Landroidx/lifecycle/ReportFragment$ActivityInitializationListener;->onCreate()V
 
     :cond_0
@@ -123,7 +123,7 @@
 
     if-eqz p1, :cond_0
 
-    .line 44
+    .line 42
     invoke-interface {p1}, Landroidx/lifecycle/ReportFragment$ActivityInitializationListener;->onResume()V
 
     :cond_0
@@ -135,7 +135,7 @@
 
     if-eqz p1, :cond_0
 
-    .line 40
+    .line 38
     invoke-interface {p1}, Landroidx/lifecycle/ReportFragment$ActivityInitializationListener;->onStart()V
 
     :cond_0
@@ -171,15 +171,15 @@
 .method public onActivityCreated(Landroid/os/Bundle;)V
     .locals 0
 
-    .line 48
+    .line 46
     invoke-super {p0, p1}, Landroid/app/Fragment;->onActivityCreated(Landroid/os/Bundle;)V
 
-    .line 49
+    .line 47
     iget-object p1, p0, Landroidx/lifecycle/ReportFragment;->processListener:Landroidx/lifecycle/ReportFragment$ActivityInitializationListener;
 
     invoke-direct {p0, p1}, Landroidx/lifecycle/ReportFragment;->dispatchCreate(Landroidx/lifecycle/ReportFragment$ActivityInitializationListener;)V
 
-    .line 50
+    .line 48
     sget-object p1, Landroidx/lifecycle/Lifecycle$Event;->ON_CREATE:Landroidx/lifecycle/Lifecycle$Event;
 
     invoke-direct {p0, p1}, Landroidx/lifecycle/ReportFragment;->dispatch(Landroidx/lifecycle/Lifecycle$Event;)V
@@ -190,17 +190,17 @@
 .method public onDestroy()V
     .locals 1
 
-    .line 76
+    .line 74
     invoke-super {p0}, Landroid/app/Fragment;->onDestroy()V
 
-    .line 77
+    .line 75
     sget-object v0, Landroidx/lifecycle/Lifecycle$Event;->ON_DESTROY:Landroidx/lifecycle/Lifecycle$Event;
 
     invoke-direct {p0, v0}, Landroidx/lifecycle/ReportFragment;->dispatch(Landroidx/lifecycle/Lifecycle$Event;)V
 
     const/4 v0, 0x0
 
-    .line 79
+    .line 77
     iput-object v0, p0, Landroidx/lifecycle/ReportFragment;->processListener:Landroidx/lifecycle/ReportFragment$ActivityInitializationListener;
 
     return-void
@@ -209,10 +209,10 @@
 .method public onPause()V
     .locals 1
 
-    .line 66
+    .line 64
     invoke-super {p0}, Landroid/app/Fragment;->onPause()V
 
-    .line 67
+    .line 65
     sget-object v0, Landroidx/lifecycle/Lifecycle$Event;->ON_PAUSE:Landroidx/lifecycle/Lifecycle$Event;
 
     invoke-direct {p0, v0}, Landroidx/lifecycle/ReportFragment;->dispatch(Landroidx/lifecycle/Lifecycle$Event;)V
@@ -223,15 +223,15 @@
 .method public onResume()V
     .locals 1
 
-    .line 60
+    .line 58
     invoke-super {p0}, Landroid/app/Fragment;->onResume()V
 
-    .line 61
+    .line 59
     iget-object v0, p0, Landroidx/lifecycle/ReportFragment;->processListener:Landroidx/lifecycle/ReportFragment$ActivityInitializationListener;
 
     invoke-direct {p0, v0}, Landroidx/lifecycle/ReportFragment;->dispatchResume(Landroidx/lifecycle/ReportFragment$ActivityInitializationListener;)V
 
-    .line 62
+    .line 60
     sget-object v0, Landroidx/lifecycle/Lifecycle$Event;->ON_RESUME:Landroidx/lifecycle/Lifecycle$Event;
 
     invoke-direct {p0, v0}, Landroidx/lifecycle/ReportFragment;->dispatch(Landroidx/lifecycle/Lifecycle$Event;)V
@@ -242,15 +242,15 @@
 .method public onStart()V
     .locals 1
 
-    .line 54
+    .line 52
     invoke-super {p0}, Landroid/app/Fragment;->onStart()V
 
-    .line 55
+    .line 53
     iget-object v0, p0, Landroidx/lifecycle/ReportFragment;->processListener:Landroidx/lifecycle/ReportFragment$ActivityInitializationListener;
 
     invoke-direct {p0, v0}, Landroidx/lifecycle/ReportFragment;->dispatchStart(Landroidx/lifecycle/ReportFragment$ActivityInitializationListener;)V
 
-    .line 56
+    .line 54
     sget-object v0, Landroidx/lifecycle/Lifecycle$Event;->ON_START:Landroidx/lifecycle/Lifecycle$Event;
 
     invoke-direct {p0, v0}, Landroidx/lifecycle/ReportFragment;->dispatch(Landroidx/lifecycle/Lifecycle$Event;)V
@@ -261,10 +261,10 @@
 .method public onStop()V
     .locals 1
 
-    .line 71
+    .line 69
     invoke-super {p0}, Landroid/app/Fragment;->onStop()V
 
-    .line 72
+    .line 70
     sget-object v0, Landroidx/lifecycle/Lifecycle$Event;->ON_STOP:Landroidx/lifecycle/Lifecycle$Event;
 
     invoke-direct {p0, v0}, Landroidx/lifecycle/ReportFragment;->dispatch(Landroidx/lifecycle/Lifecycle$Event;)V
@@ -275,7 +275,7 @@
 .method public final setProcessListener(Landroidx/lifecycle/ReportFragment$ActivityInitializationListener;)V
     .locals 0
 
-    .line 92
+    .line 90
     iput-object p1, p0, Landroidx/lifecycle/ReportFragment;->processListener:Landroidx/lifecycle/ReportFragment$ActivityInitializationListener;
 
     return-void

@@ -19,18 +19,23 @@
     .end annotation
 .end field
 
-.field public final zoomIcon:Landroid/widget/ImageView;
+.field protected mViewFinderUiState:Ljp/co/sony/mc/camera/view/uistate/ViewFinderUiState;
+    .annotation runtime Landroidx/databinding/Bindable;
+    .end annotation
+.end field
+
+.field public final zoomIcon:Ljp/co/sony/mc/camera/view/widget/PenetrableImageView;
 
 
 # direct methods
-.method protected constructor <init>(Ljava/lang/Object;Landroid/view/View;ILandroid/widget/ImageView;)V
+.method protected constructor <init>(Ljava/lang/Object;Landroid/view/View;ILjp/co/sony/mc/camera/view/widget/PenetrableImageView;)V
     .locals 0
 
-    .line 35
+    .line 39
     invoke-direct {p0, p1, p2, p3}, Landroidx/databinding/ViewDataBinding;-><init>(Ljava/lang/Object;Landroid/view/View;I)V
 
-    .line 36
-    iput-object p4, p0, Ljp/co/sony/mc/camera/databinding/ProModeZoomIconBinding;->zoomIcon:Landroid/widget/ImageView;
+    .line 40
+    iput-object p4, p0, Ljp/co/sony/mc/camera/databinding/ProModeZoomIconBinding;->zoomIcon:Ljp/co/sony/mc/camera/view/widget/PenetrableImageView;
 
     return-void
 .end method
@@ -38,7 +43,7 @@
 .method public static bind(Landroid/view/View;)Ljp/co/sony/mc/camera/databinding/ProModeZoomIconBinding;
     .locals 1
 
-    .line 101
+    .line 112
     invoke-static {}, Landroidx/databinding/DataBindingUtil;->getDefaultComponent()Landroidx/databinding/DataBindingComponent;
 
     move-result-object v0
@@ -55,9 +60,9 @@
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
-    const v0, 0x7f0c013e
+    const v0, 0x7f0c012d
 
-    .line 113
+    .line 124
     invoke-static {p1, p0, v0}, Ljp/co/sony/mc/camera/databinding/ProModeZoomIconBinding;->bind(Ljava/lang/Object;Landroid/view/View;I)Landroidx/databinding/ViewDataBinding;
 
     move-result-object p0
@@ -70,7 +75,7 @@
 .method public static inflate(Landroid/view/LayoutInflater;)Ljp/co/sony/mc/camera/databinding/ProModeZoomIconBinding;
     .locals 1
 
-    .line 83
+    .line 94
     invoke-static {}, Landroidx/databinding/DataBindingUtil;->getDefaultComponent()Landroidx/databinding/DataBindingComponent;
 
     move-result-object v0
@@ -85,7 +90,7 @@
 .method public static inflate(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Z)Ljp/co/sony/mc/camera/databinding/ProModeZoomIconBinding;
     .locals 1
 
-    .line 64
+    .line 75
     invoke-static {}, Landroidx/databinding/DataBindingUtil;->getDefaultComponent()Landroidx/databinding/DataBindingComponent;
 
     move-result-object v0
@@ -102,9 +107,9 @@
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
-    const v0, 0x7f0c013e
+    const v0, 0x7f0c012d
 
-    .line 78
+    .line 89
     invoke-static {p0, v0, p1, p2, p3}, Landroidx/databinding/ViewDataBinding;->inflateInternal(Landroid/view/LayoutInflater;ILandroid/view/ViewGroup;ZLjava/lang/Object;)Landroidx/databinding/ViewDataBinding;
 
     move-result-object p0
@@ -123,9 +128,9 @@
 
     const/4 v1, 0x0
 
-    const v2, 0x7f0c013e
+    const v2, 0x7f0c012d
 
-    .line 97
+    .line 108
     invoke-static {p0, v2, v0, v1, p1}, Landroidx/databinding/ViewDataBinding;->inflateInternal(Landroid/view/LayoutInflater;ILandroid/view/ViewGroup;ZLjava/lang/Object;)Landroidx/databinding/ViewDataBinding;
 
     move-result-object p0
@@ -140,7 +145,7 @@
 .method public getOrientationViewModel()Ljp/co/sony/mc/camera/view/viewmodel/OrientationViewModel;
     .locals 0
 
-    .line 58
+    .line 62
     iget-object p0, p0, Ljp/co/sony/mc/camera/databinding/ProModeZoomIconBinding;->mOrientationViewModel:Ljp/co/sony/mc/camera/view/viewmodel/OrientationViewModel;
 
     return-object p0
@@ -149,7 +154,7 @@
 .method public getProModeCommonUiState()Ljp/co/sony/mc/camera/view/uistate/ProModeCommonUiState;
     .locals 0
 
-    .line 51
+    .line 55
     iget-object p0, p0, Ljp/co/sony/mc/camera/databinding/ProModeZoomIconBinding;->mProModeCommonUiState:Ljp/co/sony/mc/camera/view/uistate/ProModeCommonUiState;
 
     return-object p0
@@ -158,8 +163,17 @@
 .method public getProModeFinderOverlayUiState()Ljp/co/sony/mc/camera/view/uistate/ProModeFinderOverlayUiState;
     .locals 0
 
-    .line 44
+    .line 48
     iget-object p0, p0, Ljp/co/sony/mc/camera/databinding/ProModeZoomIconBinding;->mProModeFinderOverlayUiState:Ljp/co/sony/mc/camera/view/uistate/ProModeFinderOverlayUiState;
+
+    return-object p0
+.end method
+
+.method public getViewFinderUiState()Ljp/co/sony/mc/camera/view/uistate/ViewFinderUiState;
+    .locals 0
+
+    .line 69
+    iget-object p0, p0, Ljp/co/sony/mc/camera/databinding/ProModeZoomIconBinding;->mViewFinderUiState:Ljp/co/sony/mc/camera/view/uistate/ViewFinderUiState;
 
     return-object p0
 .end method
@@ -171,4 +185,7 @@
 .end method
 
 .method public abstract setProModeFinderOverlayUiState(Ljp/co/sony/mc/camera/view/uistate/ProModeFinderOverlayUiState;)V
+.end method
+
+.method public abstract setViewFinderUiState(Ljp/co/sony/mc/camera/view/uistate/ViewFinderUiState;)V
 .end method

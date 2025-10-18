@@ -3,7 +3,7 @@
 .source "CameraSettings.java"
 
 # interfaces
-.implements Ljp/co/sony/mc/camera/setting/SettingsBase$GetDefaultCommand;
+.implements Ljp/co/sony/mc/camera/setting/SettingsBase$GetOptionsCommand;
 
 
 # annotations
@@ -21,7 +21,7 @@
 .method constructor <init>()V
     .locals 0
 
-    .line 2325
+    .line 2393
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -29,8 +29,8 @@
 
 
 # virtual methods
-.method public getDefaultValue(Ljp/co/sony/mc/camera/setting/SettingsBase;Ljp/co/sony/mc/camera/setting/SettingKey$Key;)Ljava/lang/Object;
-    .locals 0
+.method public getOptions(Ljp/co/sony/mc/camera/setting/SettingsBase;Ljp/co/sony/mc/camera/setting/SettingKey$Key;)[Ljava/lang/Object;
+    .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<T:",
@@ -38,34 +38,51 @@
             ">(",
             "Ljp/co/sony/mc/camera/setting/SettingsBase;",
             "Ljp/co/sony/mc/camera/setting/SettingKey$Key<",
-            "TT;>;)TT;"
+            "TT;>;)[TT;"
         }
     .end annotation
 
-    .line 2329
-    check-cast p1, Ljp/co/sony/mc/camera/setting/CameraSettings;
+    .line 2397
+    move-object p0, p1
 
-    .line 2330
-    invoke-static {p1}, Ljp/co/sony/mc/camera/setting/CameraSettings;->-$$Nest$fgetmCameraId(Ljp/co/sony/mc/camera/setting/CameraSettings;)Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;
+    check-cast p0, Ljp/co/sony/mc/camera/setting/CameraSettings;
 
-    move-result-object p0
+    .line 2398
+    sget-object p2, Ljp/co/sony/mc/camera/setting/CameraSettings;->CAPTURE_FPS:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
 
-    invoke-static {p0}, Ljp/co/sony/mc/camera/util/capability/PlatformCapability;->getActiveArraySize(Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;)Landroid/graphics/Rect;
+    invoke-virtual {p1, p2}, Ljp/co/sony/mc/camera/setting/SettingsBase;->get(Ljp/co/sony/mc/camera/setting/SettingKey$Key;)Ljava/lang/Object;
 
-    move-result-object p0
+    move-result-object p2
 
-    .line 2331
-    new-instance p1, Landroid/graphics/Point;
+    check-cast p2, Ljp/co/sony/mc/camera/configuration/parameters/CaptureFps;
 
-    invoke-virtual {p0}, Landroid/graphics/Rect;->centerX()I
+    invoke-virtual {p2}, Ljp/co/sony/mc/camera/configuration/parameters/CaptureFps;->isHfr()Z
 
     move-result p2
 
-    invoke-virtual {p0}, Landroid/graphics/Rect;->centerY()I
+    .line 2399
+    sget-object v0, Ljp/co/sony/mc/camera/setting/CameraSettings;->VIDEO_MF_HDR:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
 
-    move-result p0
+    invoke-virtual {p1, v0}, Ljp/co/sony/mc/camera/setting/SettingsBase;->get(Ljp/co/sony/mc/camera/setting/SettingKey$Key;)Ljava/lang/Object;
 
-    invoke-direct {p1, p2, p0}, Landroid/graphics/Point;-><init>(II)V
+    move-result-object p1
 
-    return-object p1
+    check-cast p1, Ljp/co/sony/mc/camera/configuration/parameters/VideoMfHdr;
+
+    .line 2400
+    invoke-static {p0}, Ljp/co/sony/mc/camera/setting/CameraSettings;->-$$Nest$fgetmCapturingMode(Ljp/co/sony/mc/camera/setting/CameraSettings;)Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
+
+    move-result-object v0
+
+    invoke-static {p0}, Ljp/co/sony/mc/camera/setting/CameraSettings;->-$$Nest$fgetmCameraId(Ljp/co/sony/mc/camera/setting/CameraSettings;)Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;
+
+    move-result-object p0
+
+    invoke-static {v0, p0, p1, p2}, Ljp/co/sony/mc/camera/configuration/parameters/HybridZoom;->getOptions(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;Ljp/co/sony/mc/camera/configuration/parameters/VideoMfHdr;Z)[Ljp/co/sony/mc/camera/configuration/parameters/HybridZoom;
+
+    move-result-object p0
+
+    check-cast p0, [Ljava/lang/Object;
+
+    return-object p0
 .end method

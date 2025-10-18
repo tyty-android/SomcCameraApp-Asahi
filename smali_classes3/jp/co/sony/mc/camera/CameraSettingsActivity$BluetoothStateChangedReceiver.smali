@@ -22,7 +22,7 @@
 .method private constructor <init>(Ljp/co/sony/mc/camera/CameraSettingsActivity;)V
     .locals 0
 
-    .line 1485
+    .line 1488
     iput-object p1, p0, Ljp/co/sony/mc/camera/CameraSettingsActivity$BluetoothStateChangedReceiver;->this$0:Ljp/co/sony/mc/camera/CameraSettingsActivity;
 
     invoke-direct {p0}, Landroid/content/BroadcastReceiver;-><init>()V
@@ -43,12 +43,12 @@
 .method public onReceive(Landroid/content/Context;Landroid/content/Intent;)V
     .locals 2
 
-    .line 1489
+    .line 1492
     invoke-virtual {p2}, Landroid/content/Intent;->getAction()Ljava/lang/String;
 
     move-result-object p1
 
-    .line 1490
+    .line 1493
     const-string v0, "android.bluetooth.adapter.extra.STATE"
 
     const/4 v1, 0x0
@@ -57,7 +57,7 @@
 
     move-result p2
 
-    .line 1491
+    .line 1494
     const-string v0, "android.bluetooth.adapter.action.STATE_CHANGED"
 
     invoke-virtual {v0, p1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
@@ -70,7 +70,7 @@
 
     if-ne p1, p2, :cond_0
 
-    .line 1493
+    .line 1496
     invoke-static {}, Ljp/co/sony/mc/camera/setting/CameraProSetting;->getInstance()Ljp/co/sony/mc/camera/setting/CameraProSetting;
 
     move-result-object p1
@@ -81,7 +81,7 @@
 
     invoke-virtual {p1, p2, v0}, Ljp/co/sony/mc/camera/setting/CameraProSetting;->set(Ljp/co/sony/mc/camera/setting/SettingKey$Key;Ljava/lang/Object;)V
 
-    .line 1495
+    .line 1498
     iget-object p0, p0, Ljp/co/sony/mc/camera/CameraSettingsActivity$BluetoothStateChangedReceiver;->this$0:Ljp/co/sony/mc/camera/CameraSettingsActivity;
 
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/CameraSettingsActivity;->updateSetting()V

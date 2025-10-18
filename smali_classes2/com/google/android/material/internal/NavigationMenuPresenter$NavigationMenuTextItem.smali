@@ -27,10 +27,10 @@
 .method constructor <init>(Landroidx/appcompat/view/menu/MenuItemImpl;)V
     .locals 0
 
-    .line 877
+    .line 882
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 878
+    .line 883
     iput-object p1, p0, Lcom/google/android/material/internal/NavigationMenuPresenter$NavigationMenuTextItem;->menuItem:Landroidx/appcompat/view/menu/MenuItemImpl;
 
     return-void
@@ -41,7 +41,7 @@
 .method public getMenuItem()Landroidx/appcompat/view/menu/MenuItemImpl;
     .locals 0
 
-    .line 882
+    .line 887
     iget-object p0, p0, Lcom/google/android/material/internal/NavigationMenuPresenter$NavigationMenuTextItem;->menuItem:Landroidx/appcompat/view/menu/MenuItemImpl;
 
     return-object p0

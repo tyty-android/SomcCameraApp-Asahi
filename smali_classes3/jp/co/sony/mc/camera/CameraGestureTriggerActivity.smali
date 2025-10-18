@@ -78,11 +78,11 @@
 
 
 # virtual methods
-.method public onStop()V
+.method public onUserLeaveHint()V
     .locals 1
 
     .line 40
-    invoke-super {p0}, Ljp/co/sony/mc/camera/CameraActivity;->onStop()V
+    invoke-super {p0}, Ljp/co/sony/mc/camera/CameraActivity;->onUserLeaveHint()V
 
     .line 41
     invoke-direct {p0}, Ljp/co/sony/mc/camera/CameraGestureTriggerActivity;->isTopActivity()Z

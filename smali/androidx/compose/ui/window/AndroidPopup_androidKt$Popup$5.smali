@@ -55,7 +55,7 @@
         0x0
     }
     l = {
-        0x12d
+        0x12f
     }
     m = "invokeSuspend"
     n = {
@@ -177,7 +177,7 @@
 
     move-result-object v0
 
-    .line 65535
+    .line 301
     iget v1, p0, Landroidx/compose/ui/window/AndroidPopup_androidKt$Popup$5;->label:I
 
     const/4 v2, 0x1
@@ -212,7 +212,7 @@
 
     move-object v1, p1
 
-    .line 300
+    .line 302
     :goto_0
     invoke-static {v1}, Lkotlinx/coroutines/CoroutineScopeKt;->isActive(Lkotlinx/coroutines/CoroutineScope;)Z
 
@@ -220,7 +220,7 @@
 
     if-eqz p1, :cond_3
 
-    .line 301
+    .line 303
     sget-object p1, Landroidx/compose/ui/window/AndroidPopup_androidKt$Popup$5$1;->INSTANCE:Landroidx/compose/ui/window/AndroidPopup_androidKt$Popup$5$1;
 
     check-cast p1, Lkotlin/jvm/functions/Function1;
@@ -241,7 +241,7 @@
 
     return-object v0
 
-    .line 302
+    .line 304
     :cond_2
     :goto_1
     iget-object p1, p0, Landroidx/compose/ui/window/AndroidPopup_androidKt$Popup$5;->$popupLayout:Landroidx/compose/ui/window/PopupLayout;
@@ -250,7 +250,7 @@
 
     goto :goto_0
 
-    .line 304
+    .line 306
     :cond_3
     sget-object p0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
 

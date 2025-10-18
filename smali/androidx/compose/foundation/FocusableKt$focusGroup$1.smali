@@ -78,7 +78,7 @@
 .method public bridge synthetic invoke(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
 
-    .line 108
+    .line 109
     check-cast p1, Landroidx/compose/ui/focus/FocusProperties;
 
     invoke-virtual {p0, p1}, Landroidx/compose/foundation/FocusableKt$focusGroup$1;->invoke(Landroidx/compose/ui/focus/FocusProperties;)V
@@ -91,13 +91,9 @@
 .method public final invoke(Landroidx/compose/ui/focus/FocusProperties;)V
     .locals 0
 
-    const-string p0, "$this$focusProperties"
-
-    invoke-static {p1, p0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
     const/4 p0, 0x0
 
-    .line 108
+    .line 109
     invoke-interface {p1, p0}, Landroidx/compose/ui/focus/FocusProperties;->setCanFocus(Z)V
 
     return-void

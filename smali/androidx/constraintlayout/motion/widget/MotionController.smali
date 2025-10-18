@@ -6939,13 +6939,15 @@
 
     array-length v2, v2
 
-    filled-new-array {v4, v2}, [I
+    new-array v7, v1, [I
 
-    move-result-object v2
+    aput v2, v7, v10
 
-    sget-object v7, Ljava/lang/Double;->TYPE:Ljava/lang/Class;
+    aput v4, v7, v5
 
-    invoke-static {v7, v2}, Ljava/lang/reflect/Array;->newInstance(Ljava/lang/Class;[I)Ljava/lang/Object;
+    sget-object v2, Ljava/lang/Double;->TYPE:Ljava/lang/Class;
+
+    invoke-static {v2, v7}, Ljava/lang/reflect/Array;->newInstance(Ljava/lang/Class;[I)Ljava/lang/Object;
 
     move-result-object v2
 
@@ -7121,13 +7123,15 @@
 
     move-result v14
 
-    filled-new-array {v4, v14}, [I
+    new-array v15, v1, [I
 
-    move-result-object v14
+    aput v14, v15, v10
 
-    sget-object v15, Ljava/lang/Double;->TYPE:Ljava/lang/Class;
+    aput v4, v15, v5
 
-    invoke-static {v15, v14}, Ljava/lang/reflect/Array;->newInstance(Ljava/lang/Class;[I)Ljava/lang/Object;
+    sget-object v14, Ljava/lang/Double;->TYPE:Ljava/lang/Class;
+
+    invoke-static {v14, v15}, Ljava/lang/reflect/Array;->newInstance(Ljava/lang/Class;[I)Ljava/lang/Object;
 
     move-result-object v14
 
@@ -7236,13 +7240,15 @@
     const/4 v7, 0x2
 
     .line 927
-    filled-new-array {v4, v7}, [I
+    new-array v8, v7, [I
 
-    move-result-object v7
+    aput v7, v8, v10
 
-    sget-object v8, Ljava/lang/Double;->TYPE:Ljava/lang/Class;
+    aput v4, v8, v5
 
-    invoke-static {v8, v7}, Ljava/lang/reflect/Array;->newInstance(Ljava/lang/Class;[I)Ljava/lang/Object;
+    sget-object v7, Ljava/lang/Double;->TYPE:Ljava/lang/Class;
+
+    invoke-static {v7, v8}, Ljava/lang/reflect/Array;->newInstance(Ljava/lang/Class;[I)Ljava/lang/Object;
 
     move-result-object v7
 

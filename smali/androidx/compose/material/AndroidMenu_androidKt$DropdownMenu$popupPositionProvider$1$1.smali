@@ -87,7 +87,7 @@
 .method public bridge synthetic invoke(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
 
-    .line 165
+    .line 130
     check-cast p1, Landroidx/compose/ui/unit/IntRect;
 
     check-cast p2, Landroidx/compose/ui/unit/IntRect;
@@ -100,17 +100,9 @@
 .end method
 
 .method public final invoke(Landroidx/compose/ui/unit/IntRect;Landroidx/compose/ui/unit/IntRect;)V
-    .locals 1
+    .locals 0
 
-    const-string v0, "parentBounds"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string v0, "menuBounds"
-
-    invoke-static {p2, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 166
+    .line 131
     iget-object p0, p0, Landroidx/compose/material/AndroidMenu_androidKt$DropdownMenu$popupPositionProvider$1$1;->$transformOriginState:Landroidx/compose/runtime/MutableState;
 
     invoke-static {p1, p2}, Landroidx/compose/material/MenuKt;->calculateTransformOrigin(Landroidx/compose/ui/unit/IntRect;Landroidx/compose/ui/unit/IntRect;)J

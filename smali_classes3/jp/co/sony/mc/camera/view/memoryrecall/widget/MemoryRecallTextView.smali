@@ -6,7 +6,7 @@
 # annotations
 .annotation runtime Lkotlin/Metadata;
     d1 = {
-        "\u0000N\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0007\n\u0002\u0008\u0003\n\u0002\u0018\u0002\n\u0002\u0008\u0003\n\u0002\u0010\u0008\n\u0000\n\u0002\u0010\u0014\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0010\u000b\n\u0000\u0008\u0007\u0018\u00002\u00020\u0001B\u0019\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\n\u0008\u0002\u0010\u0004\u001a\u0004\u0018\u00010\u0005\u00a2\u0006\u0002\u0010\u0006J\u0012\u0010\u0013\u001a\u00020\u00142\u0008\u0010\u0004\u001a\u0004\u0018\u00010\u0005H\u0002J\u0010\u0010\u0015\u001a\u00020\u00162\u0006\u0010\u0017\u001a\u00020\u0018H\u0014J\u0010\u0010\u0019\u001a\u00020\u00162\u0006\u0010\u001a\u001a\u00020\u001bH\u0016R\u000e\u0010\u0007\u001a\u00020\u0008X\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u000e\u0010\t\u001a\u00020\nX\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u000b\u001a\u00020\nX\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u000c\u001a\u00020\nX\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u0011\u0010\r\u001a\u00020\u000e\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\u000f\u0010\u0010R\u000e\u0010\u0011\u001a\u00020\u0012X\u0082\u0004\u00a2\u0006\u0002\n\u0000\u00a8\u0006\u001c"
+        "\u0000N\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0003\n\u0002\u0010\u0007\n\u0002\u0008\u0003\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0008\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0003\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0010\u000b\n\u0000\n\u0002\u0010\u0014\n\u0000\u0008\u0007\u0018\u00002\u00020\u0001B\u001b\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\n\u0008\u0002\u0010\u0004\u001a\u0004\u0018\u00010\u0005\u00a2\u0006\u0004\u0008\u0006\u0010\u0007J\u0010\u0010\u0014\u001a\u00020\u00152\u0006\u0010\u0016\u001a\u00020\u0017H\u0014J\u0010\u0010\u0018\u001a\u00020\u00152\u0006\u0010\u0019\u001a\u00020\u001aH\u0016J\u0012\u0010\u001b\u001a\u00020\u001c2\u0008\u0010\u0004\u001a\u0004\u0018\u00010\u0005H\u0002R\u000e\u0010\u0008\u001a\u00020\tX\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u000e\u0010\n\u001a\u00020\tX\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u000b\u001a\u00020\tX\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u000c\u001a\u00020\rX\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u000e\u001a\u00020\u000fX\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u0011\u0010\u0010\u001a\u00020\u0011\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\u0012\u0010\u0013\u00a8\u0006\u001d"
     }
     d2 = {
         "Ljp/co/sony/mc/camera/view/memoryrecall/widget/MemoryRecallTextView;",
@@ -15,21 +15,20 @@
         "Landroid/content/Context;",
         "attr",
         "Landroid/util/AttributeSet;",
+        "<init>",
         "(Landroid/content/Context;Landroid/util/AttributeSet;)V",
+        "linePaddingHorizontal",
+        "",
+        "linePaddingBottom",
+        "lineWidth",
         "initColorStateList",
         "Landroid/content/res/ColorStateList;",
-        "linePaddingBottom",
+        "selectedColor",
         "",
-        "linePaddingHorizontal",
-        "lineWidth",
         "paint",
         "Landroid/graphics/Paint;",
         "getPaint",
         "()Landroid/graphics/Paint;",
-        "selectedColor",
-        "",
-        "calculatePosition",
-        "",
         "onDraw",
         "",
         "canvas",
@@ -37,12 +36,14 @@
         "setSelected",
         "selected",
         "",
+        "calculatePosition",
+        "",
         "SomcCamera_release"
     }
     k = 0x1
     mv = {
-        0x1,
-        0x9,
+        0x2,
+        0x0,
         0x0
     }
     xi = 0x30
@@ -95,7 +96,7 @@
 
     iput-object v0, p0, Ljp/co/sony/mc/camera/view/memoryrecall/widget/MemoryRecallTextView;->initColorStateList:Landroid/content/res/ColorStateList;
 
-    const v0, 0x7f06038b
+    const v0, 0x7f0603a3
 
     .line 27
     invoke-virtual {p1, v0}, Landroid/content/Context;->getColor(I)I
@@ -173,6 +174,14 @@
 
     const/4 v0, 0x3
 
+    const/4 v1, 0x2
+
+    const/4 v2, 0x1
+
+    const/4 v3, 0x0
+
+    const/4 v4, 0x0
+
     if-eqz p1, :cond_0
 
     .line 71
@@ -180,34 +189,26 @@
 
     move-result-object p0
 
-    sget-object v1, Ljp/co/sony/mc/camera/R$styleable;->MemoryRecallTextView:[I
+    sget-object v5, Ljp/co/sony/mc/camera/R$styleable;->MemoryRecallTextView:[I
 
-    invoke-virtual {p0, p1, v1}, Landroid/content/Context;->obtainStyledAttributes(Landroid/util/AttributeSet;[I)Landroid/content/res/TypedArray;
+    invoke-virtual {p0, p1, v5}, Landroid/content/Context;->obtainStyledAttributes(Landroid/util/AttributeSet;[I)Landroid/content/res/TypedArray;
 
     move-result-object p0
 
-    const/4 p1, 0x1
-
-    const/4 v1, 0x0
-
     .line 72
-    invoke-virtual {p0, p1, v1}, Landroid/content/res/TypedArray;->getDimension(IF)F
+    invoke-virtual {p0, v2, v4}, Landroid/content/res/TypedArray;->getDimension(IF)F
 
-    move-result v2
-
-    const/4 v3, 0x0
+    move-result p1
 
     .line 73
-    invoke-virtual {p0, v3, v1}, Landroid/content/res/TypedArray;->getDimension(IF)F
+    invoke-virtual {p0, v3, v4}, Landroid/content/res/TypedArray;->getDimension(IF)F
 
-    move-result v4
-
-    const/4 v5, 0x2
+    move-result v5
 
     .line 74
-    invoke-virtual {p0, v5, v1}, Landroid/content/res/TypedArray;->getDimension(IF)F
+    invoke-virtual {p0, v1, v4}, Landroid/content/res/TypedArray;->getDimension(IF)F
 
-    move-result v1
+    move-result v4
 
     .line 75
     invoke-virtual {p0}, Landroid/content/res/TypedArray;->recycle()V
@@ -215,11 +216,11 @@
     .line 76
     new-array p0, v0, [F
 
-    aput v2, p0, v3
+    aput p1, p0, v3
 
-    aput v4, p0, p1
+    aput v5, p0, v2
 
-    aput v1, p0, v5
+    aput v4, p0, v1
 
     goto :goto_0
 
@@ -227,19 +228,14 @@
     :cond_0
     new-array p0, v0, [F
 
-    fill-array-data p0, :array_0
+    aput v4, p0, v3
+
+    aput v4, p0, v2
+
+    aput v4, p0, v1
 
     :goto_0
     return-object p0
-
-    nop
-
-    :array_0
-    .array-data 4
-        0x0
-        0x0
-        0x0
-    .end array-data
 .end method
 
 

@@ -19,5 +19,4 @@ Active WLAN desde los AJUSTES."</string>
     <string name="camera_strings_runtime_permission_rationale_network_cta_txt">"Esta aplicación usa WLAN y datos celulares para enviar datos del usuario (por ejemplo, imágenes/videos grabados, datos de voz, información de la cuenta de los servicios en uso, etc.) a Internet.
 Tenga en cuenta que podrían aplicarse cargos por datos, según su operador de red o los contratos del proveedor de servicio de Internet."</string>
     <string name="camera_strings_streaming_error_wifi_disconnected_txt">No hay conexión WLAN</string>
-    <string name="mv_wireless_network_txt">Use datos celulares y WLAN</string>
 </resources>

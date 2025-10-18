@@ -11,20 +11,19 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/SourceDebugExtension;
-    value = "SMAP\nPointerInputEventProcessor.kt\nKotlin\n*S Kotlin\n*F\n+ 1 PointerInputEventProcessor.kt\nandroidx/compose/ui/input/pointer/PointerInputChangeEventProducer\n+ 2 ListUtils.kt\nandroidx/compose/ui/util/ListUtilsKt\n*L\n1#1,235:1\n33#2,6:236\n*S KotlinDebug\n*F\n+ 1 PointerInputEventProcessor.kt\nandroidx/compose/ui/input/pointer/PointerInputChangeEventProducer\n*L\n145#1:236,6\n*E\n"
+    value = "SMAP\nPointerInputEventProcessor.kt\nKotlin\n*S Kotlin\n*F\n+ 1 PointerInputEventProcessor.kt\nandroidx/compose/ui/input/pointer/PointerInputChangeEventProducer\n+ 2 ListUtils.kt\nandroidx/compose/ui/util/ListUtilsKt\n*L\n1#1,261:1\n33#2,6:262\n*S KotlinDebug\n*F\n+ 1 PointerInputEventProcessor.kt\nandroidx/compose/ui/input/pointer/PointerInputChangeEventProducer\n*L\n169#1:262,6\n*E\n"
 .end annotation
 
 .annotation runtime Lkotlin/Metadata;
     d1 = {
-        "\u00004\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\u0008\u0002\n\u0002\u0010%\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0002\u0008\u0002\u0018\u00002\u00020\u0001:\u0001\u000fB\u0005\u00a2\u0006\u0002\u0010\u0002J\u0006\u0010\u0007\u001a\u00020\u0008J\u0016\u0010\t\u001a\u00020\n2\u0006\u0010\u000b\u001a\u00020\u000c2\u0006\u0010\r\u001a\u00020\u000eR\u001d\u0010\u0003\u001a\u000e\u0012\u0004\u0012\u00020\u0005\u0012\u0004\u0012\u00020\u00060\u0004X\u0082\u0004\u00f8\u0001\u0000\u00a2\u0006\u0002\n\u0000\u0082\u0002\u0004\n\u0002\u0008\u0019\u00a8\u0006\u0010"
+        "\u00000\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0002\u0008\u0002\u0018\u00002\u00020\u0001:\u0001\u000eB\u0005\u00a2\u0006\u0002\u0010\u0002J\u0006\u0010\u0006\u001a\u00020\u0007J\u0016\u0010\u0008\u001a\u00020\t2\u0006\u0010\n\u001a\u00020\u000b2\u0006\u0010\u000c\u001a\u00020\rR\u0014\u0010\u0003\u001a\u0008\u0012\u0004\u0012\u00020\u00050\u0004X\u0082\u0004\u00a2\u0006\u0002\n\u0000\u00a8\u0006\u000f"
     }
     d2 = {
         "Landroidx/compose/ui/input/pointer/PointerInputChangeEventProducer;",
         "",
         "()V",
         "previousPointerInputData",
-        "",
-        "Landroidx/compose/ui/input/pointer/PointerId;",
+        "Landroidx/collection/LongSparseArray;",
         "Landroidx/compose/ui/input/pointer/PointerInputChangeEventProducer$PointerInputData;",
         "clear",
         "",
@@ -48,11 +47,10 @@
 
 
 # instance fields
-.field private final previousPointerInputData:Ljava/util/Map;
+.field private final previousPointerInputData:Landroidx/collection/LongSparseArray;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Ljava/util/Map<",
-            "Landroidx/compose/ui/input/pointer/PointerId;",
+            "Landroidx/collection/LongSparseArray<",
             "Landroidx/compose/ui/input/pointer/PointerInputChangeEventProducer$PointerInputData;",
             ">;"
         }
@@ -62,19 +60,23 @@
 
 # direct methods
 .method public constructor <init>()V
-    .locals 1
+    .locals 4
 
-    .line 131
+    .line 155
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 133
-    new-instance v0, Ljava/util/LinkedHashMap;
+    .line 157
+    new-instance v0, Landroidx/collection/LongSparseArray;
 
-    invoke-direct {v0}, Ljava/util/LinkedHashMap;-><init>()V
+    const/4 v1, 0x1
 
-    check-cast v0, Ljava/util/Map;
+    const/4 v2, 0x0
 
-    iput-object v0, p0, Landroidx/compose/ui/input/pointer/PointerInputChangeEventProducer;->previousPointerInputData:Ljava/util/Map;
+    const/4 v3, 0x0
+
+    invoke-direct {v0, v3, v1, v2}, Landroidx/collection/LongSparseArray;-><init>(IILkotlin/jvm/internal/DefaultConstructorMarker;)V
+
+    iput-object v0, p0, Landroidx/compose/ui/input/pointer/PointerInputChangeEventProducer;->previousPointerInputData:Landroidx/collection/LongSparseArray;
 
     return-void
 .end method
@@ -84,10 +86,10 @@
 .method public final clear()V
     .locals 0
 
-    .line 196
-    iget-object p0, p0, Landroidx/compose/ui/input/pointer/PointerInputChangeEventProducer;->previousPointerInputData:Ljava/util/Map;
+    .line 222
+    iget-object p0, p0, Landroidx/compose/ui/input/pointer/PointerInputChangeEventProducer;->previousPointerInputData:Landroidx/collection/LongSparseArray;
 
-    invoke-interface {p0}, Ljava/util/Map;->clear()V
+    invoke-virtual {p0}, Landroidx/collection/LongSparseArray;->clear()V
 
     return-void
 .end method
@@ -97,266 +99,248 @@
 
     move-object/from16 v0, p0
 
-    move-object/from16 v1, p1
-
-    move-object/from16 v2, p2
-
-    const-string v3, "pointerInputEvent"
-
-    invoke-static {v1, v3}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string v3, "positionCalculator"
-
-    invoke-static {v2, v3}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 144
-    new-instance v3, Ljava/util/LinkedHashMap;
+    .line 168
+    new-instance v1, Landroidx/collection/LongSparseArray;
 
     invoke-virtual/range {p1 .. p1}, Landroidx/compose/ui/input/pointer/PointerInputEvent;->getPointers()Ljava/util/List;
 
-    move-result-object v4
+    move-result-object v2
 
-    invoke-interface {v4}, Ljava/util/List;->size()I
+    invoke-interface {v2}, Ljava/util/List;->size()I
 
-    move-result v4
+    move-result v2
 
-    invoke-direct {v3, v4}, Ljava/util/LinkedHashMap;-><init>(I)V
+    invoke-direct {v1, v2}, Landroidx/collection/LongSparseArray;-><init>(I)V
 
-    check-cast v3, Ljava/util/Map;
-
-    .line 145
+    .line 169
     invoke-virtual/range {p1 .. p1}, Landroidx/compose/ui/input/pointer/PointerInputEvent;->getPointers()Ljava/util/List;
 
-    move-result-object v4
+    move-result-object v2
 
-    .line 237
-    invoke-interface {v4}, Ljava/util/List;->size()I
+    .line 263
+    invoke-interface {v2}, Ljava/util/List;->size()I
 
-    move-result v5
+    move-result v3
 
-    const/4 v7, 0x0
+    const/4 v5, 0x0
 
     :goto_0
-    if-ge v7, v5, :cond_2
+    if-ge v5, v3, :cond_2
 
-    .line 238
-    invoke-interface {v4, v7}, Ljava/util/List;->get(I)Ljava/lang/Object;
+    .line 264
+    invoke-interface {v2, v5}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
-    move-result-object v8
+    move-result-object v6
 
-    .line 239
-    check-cast v8, Landroidx/compose/ui/input/pointer/PointerInputEventData;
+    .line 265
+    check-cast v6, Landroidx/compose/ui/input/pointer/PointerInputEventData;
 
-    .line 150
-    iget-object v9, v0, Landroidx/compose/ui/input/pointer/PointerInputChangeEventProducer;->previousPointerInputData:Ljava/util/Map;
+    .line 174
+    iget-object v7, v0, Landroidx/compose/ui/input/pointer/PointerInputChangeEventProducer;->previousPointerInputData:Landroidx/collection/LongSparseArray;
 
-    invoke-virtual {v8}, Landroidx/compose/ui/input/pointer/PointerInputEventData;->getId-J3iCeTQ()J
+    invoke-virtual {v6}, Landroidx/compose/ui/input/pointer/PointerInputEventData;->getId-J3iCeTQ()J
 
-    move-result-wide v10
+    move-result-wide v8
 
-    invoke-static {v10, v11}, Landroidx/compose/ui/input/pointer/PointerId;->box-impl(J)Landroidx/compose/ui/input/pointer/PointerId;
+    invoke-virtual {v7, v8, v9}, Landroidx/collection/LongSparseArray;->get(J)Ljava/lang/Object;
 
-    move-result-object v10
+    move-result-object v7
 
-    invoke-interface {v9, v10}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
+    check-cast v7, Landroidx/compose/ui/input/pointer/PointerInputChangeEventProducer$PointerInputData;
 
-    move-result-object v9
+    if-nez v7, :cond_0
 
-    check-cast v9, Landroidx/compose/ui/input/pointer/PointerInputChangeEventProducer$PointerInputData;
+    .line 176
+    invoke-virtual {v6}, Landroidx/compose/ui/input/pointer/PointerInputEventData;->getUptime()J
 
-    if-nez v9, :cond_0
+    move-result-wide v7
 
-    .line 152
-    invoke-virtual {v8}, Landroidx/compose/ui/input/pointer/PointerInputEventData;->getUptime()J
+    .line 177
+    invoke-virtual {v6}, Landroidx/compose/ui/input/pointer/PointerInputEventData;->getPosition-F1C5BW0()J
 
     move-result-wide v9
 
-    .line 153
-    invoke-virtual {v8}, Landroidx/compose/ui/input/pointer/PointerInputEventData;->getPosition-F1C5BW0()J
-
-    move-result-wide v11
+    move-wide/from16 v22, v7
 
     move-wide/from16 v24, v9
 
-    move-wide/from16 v26, v11
+    const/16 v26, 0x0
 
-    const/16 v28, 0x0
+    move-object/from16 v7, p2
 
     goto :goto_1
 
-    .line 156
+    .line 180
     :cond_0
-    invoke-virtual {v9}, Landroidx/compose/ui/input/pointer/PointerInputChangeEventProducer$PointerInputData;->getUptime()J
+    invoke-virtual {v7}, Landroidx/compose/ui/input/pointer/PointerInputChangeEventProducer$PointerInputData;->getUptime()J
 
-    move-result-wide v10
+    move-result-wide v8
 
-    .line 157
-    invoke-virtual {v9}, Landroidx/compose/ui/input/pointer/PointerInputChangeEventProducer$PointerInputData;->getDown()Z
+    .line 181
+    invoke-virtual {v7}, Landroidx/compose/ui/input/pointer/PointerInputChangeEventProducer$PointerInputData;->getDown()Z
 
-    move-result v12
+    move-result v10
 
-    .line 159
-    invoke-virtual {v9}, Landroidx/compose/ui/input/pointer/PointerInputChangeEventProducer$PointerInputData;->getPositionOnScreen-F1C5BW0()J
+    .line 183
+    invoke-virtual {v7}, Landroidx/compose/ui/input/pointer/PointerInputChangeEventProducer$PointerInputData;->getPositionOnScreen-F1C5BW0()J
 
-    move-result-wide v13
+    move-result-wide v11
 
-    invoke-interface {v2, v13, v14}, Landroidx/compose/ui/input/pointer/PositionCalculator;->screenToLocal-MK-Hz9U(J)J
+    move-object/from16 v7, p2
 
-    move-result-wide v13
+    invoke-interface {v7, v11, v12}, Landroidx/compose/ui/input/pointer/PositionCalculator;->screenToLocal-MK-Hz9U(J)J
 
-    move-wide/from16 v24, v10
+    move-result-wide v11
 
-    move/from16 v28, v12
+    move-wide/from16 v22, v8
 
-    move-wide/from16 v26, v13
+    move/from16 v26, v10
 
-    .line 162
+    move-wide/from16 v24, v11
+
+    .line 186
     :goto_1
-    invoke-virtual {v8}, Landroidx/compose/ui/input/pointer/PointerInputEventData;->getId-J3iCeTQ()J
+    invoke-virtual {v6}, Landroidx/compose/ui/input/pointer/PointerInputEventData;->getId-J3iCeTQ()J
 
-    move-result-wide v9
+    move-result-wide v8
 
-    invoke-static {v9, v10}, Landroidx/compose/ui/input/pointer/PointerId;->box-impl(J)Landroidx/compose/ui/input/pointer/PointerId;
-
-    move-result-object v9
-
-    .line 163
+    .line 187
     new-instance v10, Landroidx/compose/ui/input/pointer/PointerInputChange;
 
-    move-object v15, v10
+    move-object v13, v10
 
-    .line 164
-    invoke-virtual {v8}, Landroidx/compose/ui/input/pointer/PointerInputEventData;->getId-J3iCeTQ()J
+    .line 188
+    invoke-virtual {v6}, Landroidx/compose/ui/input/pointer/PointerInputEventData;->getId-J3iCeTQ()J
+
+    move-result-wide v14
+
+    .line 189
+    invoke-virtual {v6}, Landroidx/compose/ui/input/pointer/PointerInputEventData;->getUptime()J
 
     move-result-wide v16
 
-    .line 165
-    invoke-virtual {v8}, Landroidx/compose/ui/input/pointer/PointerInputEventData;->getUptime()J
+    .line 190
+    invoke-virtual {v6}, Landroidx/compose/ui/input/pointer/PointerInputEventData;->getPosition-F1C5BW0()J
 
     move-result-wide v18
 
-    .line 166
-    invoke-virtual {v8}, Landroidx/compose/ui/input/pointer/PointerInputEventData;->getPosition-F1C5BW0()J
+    .line 191
+    invoke-virtual {v6}, Landroidx/compose/ui/input/pointer/PointerInputEventData;->getDown()Z
 
-    move-result-wide v20
+    move-result v20
 
-    .line 167
-    invoke-virtual {v8}, Landroidx/compose/ui/input/pointer/PointerInputEventData;->getDown()Z
+    .line 192
+    invoke-virtual {v6}, Landroidx/compose/ui/input/pointer/PointerInputEventData;->getPressure()F
 
-    move-result v22
+    move-result v21
 
-    .line 168
-    invoke-virtual {v8}, Landroidx/compose/ui/input/pointer/PointerInputEventData;->getPressure()F
+    .line 197
+    invoke-virtual {v6}, Landroidx/compose/ui/input/pointer/PointerInputEventData;->getType-T8wyACA()I
 
-    move-result v23
+    move-result v28
 
-    .line 173
-    invoke-virtual {v8}, Landroidx/compose/ui/input/pointer/PointerInputEventData;->getType-T8wyACA()I
+    .line 198
+    invoke-virtual {v6}, Landroidx/compose/ui/input/pointer/PointerInputEventData;->getHistorical()Ljava/util/List;
 
-    move-result v30
+    move-result-object v29
 
-    .line 174
-    invoke-virtual {v8}, Landroidx/compose/ui/input/pointer/PointerInputEventData;->getHistorical()Ljava/util/List;
+    .line 199
+    invoke-virtual {v6}, Landroidx/compose/ui/input/pointer/PointerInputEventData;->getScrollDelta-F1C5BW0()J
 
-    move-result-object v31
+    move-result-wide v30
 
-    .line 175
-    invoke-virtual {v8}, Landroidx/compose/ui/input/pointer/PointerInputEventData;->getScrollDelta-F1C5BW0()J
+    .line 200
+    invoke-virtual {v6}, Landroidx/compose/ui/input/pointer/PointerInputEventData;->getOriginalEventPosition-F1C5BW0()J
 
     move-result-wide v32
 
     const/16 v34, 0x0
 
-    const/16 v29, 0x0
+    const/16 v27, 0x0
 
-    .line 163
-    invoke-direct/range {v15 .. v34}, Landroidx/compose/ui/input/pointer/PointerInputChange;-><init>(JJJZFJJZZILjava/util/List;JLkotlin/jvm/internal/DefaultConstructorMarker;)V
+    .line 187
+    invoke-direct/range {v13 .. v34}, Landroidx/compose/ui/input/pointer/PointerInputChange;-><init>(JJJZFJJZZILjava/util/List;JJLkotlin/jvm/internal/DefaultConstructorMarker;)V
 
-    invoke-interface {v3, v9, v10}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    .line 186
+    invoke-virtual {v1, v8, v9, v10}, Landroidx/collection/LongSparseArray;->put(JLjava/lang/Object;)V
 
-    .line 177
-    invoke-virtual {v8}, Landroidx/compose/ui/input/pointer/PointerInputEventData;->getDown()Z
+    .line 203
+    invoke-virtual {v6}, Landroidx/compose/ui/input/pointer/PointerInputEventData;->getDown()Z
 
-    move-result v9
+    move-result v8
 
-    if-eqz v9, :cond_1
+    if-eqz v8, :cond_1
 
-    .line 178
-    iget-object v9, v0, Landroidx/compose/ui/input/pointer/PointerInputChangeEventProducer;->previousPointerInputData:Ljava/util/Map;
+    .line 204
+    iget-object v8, v0, Landroidx/compose/ui/input/pointer/PointerInputChangeEventProducer;->previousPointerInputData:Landroidx/collection/LongSparseArray;
 
-    invoke-virtual {v8}, Landroidx/compose/ui/input/pointer/PointerInputEventData;->getId-J3iCeTQ()J
+    invoke-virtual {v6}, Landroidx/compose/ui/input/pointer/PointerInputEventData;->getId-J3iCeTQ()J
 
-    move-result-wide v10
-
-    invoke-static {v10, v11}, Landroidx/compose/ui/input/pointer/PointerId;->box-impl(J)Landroidx/compose/ui/input/pointer/PointerId;
-
-    move-result-object v10
+    move-result-wide v9
 
     new-instance v14, Landroidx/compose/ui/input/pointer/PointerInputChangeEventProducer$PointerInputData;
 
-    .line 179
-    invoke-virtual {v8}, Landroidx/compose/ui/input/pointer/PointerInputEventData;->getUptime()J
+    .line 205
+    invoke-virtual {v6}, Landroidx/compose/ui/input/pointer/PointerInputEventData;->getUptime()J
 
     move-result-wide v12
 
-    .line 180
-    invoke-virtual {v8}, Landroidx/compose/ui/input/pointer/PointerInputEventData;->getPositionOnScreen-F1C5BW0()J
+    .line 206
+    invoke-virtual {v6}, Landroidx/compose/ui/input/pointer/PointerInputEventData;->getPositionOnScreen-F1C5BW0()J
 
     move-result-wide v15
 
-    .line 181
-    invoke-virtual {v8}, Landroidx/compose/ui/input/pointer/PointerInputEventData;->getDown()Z
+    .line 207
+    invoke-virtual {v6}, Landroidx/compose/ui/input/pointer/PointerInputEventData;->getDown()Z
 
     move-result v17
 
-    .line 182
-    invoke-virtual {v8}, Landroidx/compose/ui/input/pointer/PointerInputEventData;->getType-T8wyACA()I
+    .line 208
+    invoke-virtual {v6}, Landroidx/compose/ui/input/pointer/PointerInputEventData;->getType-T8wyACA()I
 
-    move-result v8
+    move-result v6
 
     const/16 v18, 0x0
 
     move-object v11, v14
 
-    move-object v6, v14
+    move-object v4, v14
 
     move-wide v14, v15
 
     move/from16 v16, v17
 
-    move/from16 v17, v8
+    move/from16 v17, v6
 
-    .line 178
+    .line 204
     invoke-direct/range {v11 .. v18}, Landroidx/compose/ui/input/pointer/PointerInputChangeEventProducer$PointerInputData;-><init>(JJZILkotlin/jvm/internal/DefaultConstructorMarker;)V
 
-    invoke-interface {v9, v10, v6}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v8, v9, v10, v4}, Landroidx/collection/LongSparseArray;->put(JLjava/lang/Object;)V
 
     goto :goto_2
 
-    .line 185
+    .line 211
     :cond_1
-    iget-object v6, v0, Landroidx/compose/ui/input/pointer/PointerInputChangeEventProducer;->previousPointerInputData:Ljava/util/Map;
+    iget-object v4, v0, Landroidx/compose/ui/input/pointer/PointerInputChangeEventProducer;->previousPointerInputData:Landroidx/collection/LongSparseArray;
 
-    invoke-virtual {v8}, Landroidx/compose/ui/input/pointer/PointerInputEventData;->getId-J3iCeTQ()J
+    invoke-virtual {v6}, Landroidx/compose/ui/input/pointer/PointerInputEventData;->getId-J3iCeTQ()J
 
     move-result-wide v8
 
-    invoke-static {v8, v9}, Landroidx/compose/ui/input/pointer/PointerId;->box-impl(J)Landroidx/compose/ui/input/pointer/PointerId;
-
-    move-result-object v8
-
-    invoke-interface {v6, v8}, Ljava/util/Map;->remove(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v4, v8, v9}, Landroidx/collection/LongSparseArray;->remove(J)V
 
     :goto_2
-    add-int/lit8 v7, v7, 0x1
+    add-int/lit8 v5, v5, 0x1
 
     goto/16 :goto_0
 
-    .line 189
+    .line 215
     :cond_2
     new-instance v0, Landroidx/compose/ui/input/pointer/InternalPointerEvent;
 
-    invoke-direct {v0, v3, v1}, Landroidx/compose/ui/input/pointer/InternalPointerEvent;-><init>(Ljava/util/Map;Landroidx/compose/ui/input/pointer/PointerInputEvent;)V
+    move-object/from16 v2, p1
+
+    invoke-direct {v0, v1, v2}, Landroidx/compose/ui/input/pointer/InternalPointerEvent;-><init>(Landroidx/collection/LongSparseArray;Landroidx/compose/ui/input/pointer/PointerInputEvent;)V
 
     return-object v0
 .end method

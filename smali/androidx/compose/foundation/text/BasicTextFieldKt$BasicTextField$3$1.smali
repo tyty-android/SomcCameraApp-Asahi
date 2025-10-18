@@ -87,7 +87,7 @@
 .method public bridge synthetic invoke()Ljava/lang/Object;
     .locals 0
 
-    .line 150
+    .line 155
     invoke-virtual {p0}, Landroidx/compose/foundation/text/BasicTextFieldKt$BasicTextField$3$1;->invoke()V
 
     sget-object p0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
@@ -98,7 +98,7 @@
 .method public final invoke()V
     .locals 4
 
-    .line 151
+    .line 156
     iget-object v0, p0, Landroidx/compose/foundation/text/BasicTextFieldKt$BasicTextField$3$1;->$textFieldValue:Landroidx/compose/ui/text/input/TextFieldValue;
 
     invoke-virtual {v0}, Landroidx/compose/ui/text/input/TextFieldValue;->getSelection-d9O1mEE()J
@@ -121,7 +121,7 @@
 
     if-eqz v0, :cond_0
 
-    .line 152
+    .line 157
     iget-object v0, p0, Landroidx/compose/foundation/text/BasicTextFieldKt$BasicTextField$3$1;->$textFieldValue:Landroidx/compose/ui/text/input/TextFieldValue;
 
     invoke-virtual {v0}, Landroidx/compose/ui/text/input/TextFieldValue;->getComposition-MzsxiRA()Landroidx/compose/ui/text/TextRange;
@@ -144,7 +144,7 @@
 
     if-nez v0, :cond_1
 
-    .line 153
+    .line 158
     :cond_0
     iget-object v0, p0, Landroidx/compose/foundation/text/BasicTextFieldKt$BasicTextField$3$1;->$textFieldValueState$delegate:Landroidx/compose/runtime/MutableState;
 

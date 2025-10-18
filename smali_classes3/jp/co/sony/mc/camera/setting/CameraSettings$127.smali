@@ -21,7 +21,7 @@
 .method constructor <init>()V
     .locals 0
 
-    .line 1578
+    .line 1635
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -46,13 +46,13 @@
         }
     .end annotation
 
-    .line 1582
+    .line 1639
     check-cast p1, Ljp/co/sony/mc/camera/setting/CameraSettings;
 
-    .line 1583
-    check-cast p3, Ljp/co/sony/mc/camera/configuration/parameters/SuperResolutionZoom;
+    .line 1640
+    check-cast p3, Ljp/co/sony/mc/camera/configuration/parameters/SemiAutoMode;
 
-    invoke-static {p1, p3}, Ljp/co/sony/mc/camera/setting/CameraSettings;->-$$Nest$msetSuperResolutionZoom(Ljp/co/sony/mc/camera/setting/CameraSettings;Ljp/co/sony/mc/camera/configuration/parameters/SuperResolutionZoom;)Z
+    invoke-virtual {p1, p3}, Ljp/co/sony/mc/camera/setting/CameraSettings;->setSemiAutoMode(Ljp/co/sony/mc/camera/configuration/parameters/SemiAutoMode;)Z
 
     move-result p0
 

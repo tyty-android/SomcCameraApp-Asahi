@@ -87,10 +87,6 @@
 .method public final invoke(Ljava/lang/Object;)Ljava/lang/Integer;
     .locals 3
 
-    const-string v0, "needle"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
     .line 58
     iget-object p0, p0, Landroidx/compose/foundation/lazy/layout/LazyLayoutSemanticsKt$lazyLayoutSemantics$1$indexForKeyMapping$1;->$itemProviderLambda:Lkotlin/jvm/functions/Function0;
 

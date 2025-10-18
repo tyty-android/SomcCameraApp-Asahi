@@ -27,7 +27,7 @@
 .method constructor <init>(Ljava/lang/Class;Lcom/google/gson/TypeAdapter;)V
     .locals 0
 
-    .line 947
+    .line 1057
     iput-object p1, p0, Lcom/google/gson/internal/bind/TypeAdapters$31;->val$type:Ljava/lang/Class;
 
     iput-object p2, p0, Lcom/google/gson/internal/bind/TypeAdapters$31;->val$typeAdapter:Lcom/google/gson/TypeAdapter;
@@ -54,7 +54,7 @@
         }
     .end annotation
 
-    .line 950
+    .line 1061
     invoke-virtual {p2}, Lcom/google/gson/reflect/TypeToken;->getRawType()Ljava/lang/Class;
 
     move-result-object p1
@@ -77,7 +77,7 @@
 .method public toString()Ljava/lang/String;
     .locals 2
 
-    .line 953
+    .line 1066
     new-instance v0, Ljava/lang/StringBuilder;
 
     const-string v1, "Factory[type="

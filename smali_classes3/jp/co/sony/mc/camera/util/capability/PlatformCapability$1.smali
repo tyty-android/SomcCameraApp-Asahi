@@ -28,7 +28,7 @@
 .method constructor <init>([ZLandroid/hardware/camera2/CameraManager;Ljava/lang/String;Ljava/util/concurrent/CountDownLatch;)V
     .locals 0
 
-    .line 407
+    .line 411
     iput-object p1, p0, Ljp/co/sony/mc/camera/util/capability/PlatformCapability$1;->val$isInitCameraInfoSuccess:[Z
 
     iput-object p2, p0, Ljp/co/sony/mc/camera/util/capability/PlatformCapability$1;->val$cameraManager:Landroid/hardware/camera2/CameraManager;
@@ -47,17 +47,17 @@
 .method public onCameraAvailable(Ljava/lang/String;)V
     .locals 2
 
-    .line 410
+    .line 414
     invoke-super {p0, p1}, Landroid/hardware/camera2/CameraManager$AvailabilityCallback;->onCameraAvailable(Ljava/lang/String;)V
 
-    .line 412
+    .line 416
     iget-object p1, p0, Ljp/co/sony/mc/camera/util/capability/PlatformCapability$1;->val$isInitCameraInfoSuccess:[Z
 
     iget-object v0, p0, Ljp/co/sony/mc/camera/util/capability/PlatformCapability$1;->val$cameraManager:Landroid/hardware/camera2/CameraManager;
 
     iget-object v1, p0, Ljp/co/sony/mc/camera/util/capability/PlatformCapability$1;->val$productName:Ljava/lang/String;
 
-    .line 413
+    .line 417
     invoke-static {v1}, Ljp/co/sony/mc/camera/util/capability/ProductsSensorMap;->get(Ljava/lang/String;)Ljava/util/Map;
 
     move-result-object v1
@@ -70,7 +70,7 @@
 
     aput-boolean v0, p1, v1
 
-    .line 414
+    .line 418
     iget-object p0, p0, Ljp/co/sony/mc/camera/util/capability/PlatformCapability$1;->val$initCameraInfoLatch:Ljava/util/concurrent/CountDownLatch;
 
     invoke-virtual {p0}, Ljava/util/concurrent/CountDownLatch;->countDown()V

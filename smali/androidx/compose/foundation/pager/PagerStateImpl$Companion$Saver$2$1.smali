@@ -84,7 +84,7 @@
 .method public final invoke()Ljava/lang/Integer;
     .locals 1
 
-    .line 152
+    .line 118
     iget-object p0, p0, Landroidx/compose/foundation/pager/PagerStateImpl$Companion$Saver$2$1;->$it:Ljava/util/List;
 
     const/4 v0, 0x2
@@ -105,7 +105,7 @@
 .method public bridge synthetic invoke()Ljava/lang/Object;
     .locals 0
 
-    .line 152
+    .line 118
     invoke-virtual {p0}, Landroidx/compose/foundation/pager/PagerStateImpl$Companion$Saver$2$1;->invoke()Ljava/lang/Integer;
 
     move-result-object p0

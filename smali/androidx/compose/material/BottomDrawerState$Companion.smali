@@ -46,7 +46,7 @@
 .method private constructor <init>()V
     .locals 0
 
-    .line 416
+    .line 410
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -80,15 +80,7 @@
         }
     .end annotation
 
-    const-string p0, "density"
-
-    invoke-static {p1, p0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string p0, "confirmStateChange"
-
-    invoke-static {p2, p0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 421
+    .line 415
     sget-object p0, Landroidx/compose/material/BottomDrawerState$Companion$Saver$1;->INSTANCE:Landroidx/compose/material/BottomDrawerState$Companion$Saver$1;
 
     check-cast p0, Lkotlin/jvm/functions/Function2;
@@ -131,11 +123,7 @@
         .end subannotation
     .end annotation
 
-    const-string p0, "confirmStateChange"
-
-    invoke-static {p1, p0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 438
+    .line 432
     sget-object p0, Landroidx/compose/material/BottomDrawerState$Companion$Saver$3;->INSTANCE:Landroidx/compose/material/BottomDrawerState$Companion$Saver$3;
 
     check-cast p0, Lkotlin/jvm/functions/Function2;

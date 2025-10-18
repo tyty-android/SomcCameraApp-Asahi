@@ -22,7 +22,7 @@
 .method private constructor <init>(Ljp/co/sony/mc/camera/AutoPowerOffTimer;)V
     .locals 0
 
-    .line 154
+    .line 160
     iput-object p1, p0, Ljp/co/sony/mc/camera/AutoPowerOffTimer$AutoPowerOffTask;->this$0:Ljp/co/sony/mc/camera/AutoPowerOffTimer;
 
     invoke-direct {p0}, Ljava/util/TimerTask;-><init>()V
@@ -43,7 +43,7 @@
 .method public run()V
     .locals 0
 
-    .line 158
+    .line 164
     iget-object p0, p0, Ljp/co/sony/mc/camera/AutoPowerOffTimer$AutoPowerOffTask;->this$0:Ljp/co/sony/mc/camera/AutoPowerOffTimer;
 
     invoke-static {p0}, Ljp/co/sony/mc/camera/AutoPowerOffTimer;->-$$Nest$fgetmHandler(Ljp/co/sony/mc/camera/AutoPowerOffTimer;)Ljp/co/sony/mc/camera/AutoPowerOffTimer$AutoPowerOffHandler;

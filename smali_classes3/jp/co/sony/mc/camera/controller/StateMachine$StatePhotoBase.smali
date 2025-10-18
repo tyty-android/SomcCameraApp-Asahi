@@ -22,14 +22,14 @@
 .method private constructor <init>(Ljp/co/sony/mc/camera/controller/StateMachine;)V
     .locals 1
 
-    .line 2687
+    .line 2710
     iput-object p1, p0, Ljp/co/sony/mc/camera/controller/StateMachine$StatePhotoBase;->this$0:Ljp/co/sony/mc/camera/controller/StateMachine;
 
     const/4 v0, 0x0
 
     invoke-direct {p0, p1, v0}, Ljp/co/sony/mc/camera/controller/StateMachine$State;-><init>(Ljp/co/sony/mc/camera/controller/StateMachine;Ljp/co/sony/mc/camera/controller/StateMachine$State-IA;)V
 
-    .line 2688
+    .line 2711
     sget-object p1, Ljp/co/sony/mc/camera/controller/StateMachine$CaptureState;->STATE_PHOTO_BASE:Ljp/co/sony/mc/camera/controller/StateMachine$CaptureState;
 
     iput-object p1, p0, Ljp/co/sony/mc/camera/controller/StateMachine$StatePhotoBase;->mCaptureState:Ljp/co/sony/mc/camera/controller/StateMachine$CaptureState;
@@ -50,7 +50,7 @@
 .method public varargs handleOnAutoFlashChanged([Ljava/lang/Object;)V
     .locals 1
 
-    .line 2695
+    .line 2718
     iget-object p0, p0, Ljp/co/sony/mc/camera/controller/StateMachine$StatePhotoBase;->this$0:Ljp/co/sony/mc/camera/controller/StateMachine;
 
     invoke-static {p0}, Ljp/co/sony/mc/camera/controller/StateMachine;->-$$Nest$fgetmCameraStatusNotifier(Ljp/co/sony/mc/camera/controller/StateMachine;)Ljp/co/sony/mc/camera/CameraStatusNotifierImpl;
@@ -75,7 +75,7 @@
 .method public varargs handleOnAutoHdrChanged([Ljava/lang/Object;)V
     .locals 1
 
-    .line 2702
+    .line 2725
     iget-object p0, p0, Ljp/co/sony/mc/camera/controller/StateMachine$StatePhotoBase;->this$0:Ljp/co/sony/mc/camera/controller/StateMachine;
 
     invoke-static {p0}, Ljp/co/sony/mc/camera/controller/StateMachine;->-$$Nest$fgetmCameraStatusNotifier(Ljp/co/sony/mc/camera/controller/StateMachine;)Ljp/co/sony/mc/camera/CameraStatusNotifierImpl;

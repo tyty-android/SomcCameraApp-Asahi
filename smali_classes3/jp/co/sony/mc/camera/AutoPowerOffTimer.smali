@@ -86,15 +86,15 @@
 .method public constructor <init>(Ljp/co/sony/mc/camera/CameraActivity;Ljp/co/sony/mc/camera/AutoPowerOffTimer$AutoPowerOffListener;)V
     .locals 2
 
-    .line 37
+    .line 38
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     const/4 v0, 0x0
 
-    .line 31
+    .line 32
     iput-boolean v0, p0, Ljp/co/sony/mc/camera/AutoPowerOffTimer;->mIsAutoPowerOffTimerEnabled:Z
 
-    .line 35
+    .line 36
     new-instance v0, Ljp/co/sony/mc/camera/AutoPowerOffTimer$AutoPowerOffHandler;
 
     const/4 v1, 0x0
@@ -103,10 +103,10 @@
 
     iput-object v0, p0, Ljp/co/sony/mc/camera/AutoPowerOffTimer;->mHandler:Ljp/co/sony/mc/camera/AutoPowerOffTimer$AutoPowerOffHandler;
 
-    .line 38
+    .line 39
     iput-object p1, p0, Ljp/co/sony/mc/camera/AutoPowerOffTimer;->mActivity:Ljp/co/sony/mc/camera/CameraActivity;
 
-    .line 39
+    .line 40
     iput-object p2, p0, Ljp/co/sony/mc/camera/AutoPowerOffTimer;->mListener:Ljp/co/sony/mc/camera/AutoPowerOffTimer$AutoPowerOffListener;
 
     return-void
@@ -117,7 +117,7 @@
 
     monitor-enter p0
 
-    .line 139
+    .line 145
     :try_start_0
     iget-object v0, p0, Ljp/co/sony/mc/camera/AutoPowerOffTimer;->mActivity:Ljp/co/sony/mc/camera/CameraActivity;
 
@@ -131,19 +131,19 @@
 
     if-eqz v0, :cond_0
 
-    .line 140
+    .line 146
     monitor-exit p0
 
     return v1
 
-    .line 143
+    .line 149
     :cond_0
     :try_start_1
     iget-object v0, p0, Ljp/co/sony/mc/camera/AutoPowerOffTimer;->mTimer:Ljava/util/Timer;
 
     if-nez v0, :cond_1
 
-    .line 145
+    .line 151
     new-instance v0, Ljava/util/Timer;
 
     const/4 v1, 0x1
@@ -152,7 +152,7 @@
 
     iput-object v0, p0, Ljp/co/sony/mc/camera/AutoPowerOffTimer;->mTimer:Ljava/util/Timer;
 
-    .line 148
+    .line 154
     new-instance v2, Ljp/co/sony/mc/camera/AutoPowerOffTimer$AutoPowerOffTask;
 
     const/4 v3, 0x0
@@ -165,12 +165,12 @@
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
-    .line 149
+    .line 155
     monitor-exit p0
 
     return v1
 
-    .line 151
+    .line 157
     :cond_1
     monitor-exit p0
 
@@ -189,7 +189,7 @@
 
     monitor-enter p0
 
-    .line 86
+    .line 92
     :try_start_0
     sget-object v0, Ljp/co/sony/mc/camera/debug/DebugParameterUtils;->INSTANCE:Ljp/co/sony/mc/camera/debug/DebugParameterUtils;
 
@@ -203,12 +203,12 @@
 
     if-eqz v0, :cond_0
 
-    .line 87
+    .line 93
     monitor-exit p0
 
     return-void
 
-    .line 90
+    .line 96
     :cond_0
     :try_start_1
     iget-boolean v0, p0, Ljp/co/sony/mc/camera/AutoPowerOffTimer;->mIsAutoPowerOffTimerEnabled:Z
@@ -217,12 +217,12 @@
 
     if-nez v0, :cond_1
 
-    .line 91
+    .line 97
     monitor-exit p0
 
     return-void
 
-    .line 94
+    .line 100
     :cond_1
     :try_start_2
     iget v0, p0, Ljp/co/sony/mc/camera/AutoPowerOffTimer;->mAutoPowerOffTimeOutDuration:I
@@ -231,7 +231,7 @@
 
     if-ge v0, v1, :cond_2
 
-    .line 95
+    .line 101
     invoke-direct {p0, v0}, Ljp/co/sony/mc/camera/AutoPowerOffTimer;->startAutoPowerOff(I)Z
 
     goto :goto_0
@@ -239,12 +239,12 @@
     :cond_2
     sub-int/2addr v0, v1
 
-    .line 97
+    .line 103
     invoke-direct {p0, v0}, Ljp/co/sony/mc/camera/AutoPowerOffTimer;->startAutoPowerOffWarning(I)Z
     :try_end_2
     .catchall {:try_start_2 .. :try_end_2} :catchall_0
 
-    .line 100
+    .line 106
     :goto_0
     monitor-exit p0
 
@@ -263,7 +263,7 @@
 
     monitor-enter p0
 
-    .line 113
+    .line 119
     :try_start_0
     iget-object v0, p0, Ljp/co/sony/mc/camera/AutoPowerOffTimer;->mActivity:Ljp/co/sony/mc/camera/CameraActivity;
 
@@ -277,19 +277,19 @@
 
     if-eqz v0, :cond_0
 
-    .line 114
+    .line 120
     monitor-exit p0
 
     return v1
 
-    .line 117
+    .line 123
     :cond_0
     :try_start_1
     iget-object v0, p0, Ljp/co/sony/mc/camera/AutoPowerOffTimer;->mTimer:Ljava/util/Timer;
 
     if-nez v0, :cond_1
 
-    .line 119
+    .line 125
     new-instance v0, Ljava/util/Timer;
 
     const/4 v1, 0x1
@@ -298,7 +298,7 @@
 
     iput-object v0, p0, Ljp/co/sony/mc/camera/AutoPowerOffTimer;->mTimer:Ljava/util/Timer;
 
-    .line 122
+    .line 128
     new-instance v2, Ljp/co/sony/mc/camera/AutoPowerOffTimer$AutoPowerOffWarningTask;
 
     const/4 v3, 0x0
@@ -311,12 +311,12 @@
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
-    .line 123
+    .line 129
     monitor-exit p0
 
     return v1
 
-    .line 125
+    .line 131
     :cond_1
     monitor-exit p0
 
@@ -335,28 +335,28 @@
 
     monitor-enter p0
 
-    .line 103
+    .line 109
     :try_start_0
     iget-object v0, p0, Ljp/co/sony/mc/camera/AutoPowerOffTimer;->mTimer:Ljava/util/Timer;
 
     if-eqz v0, :cond_0
 
-    .line 104
+    .line 110
     invoke-virtual {v0}, Ljava/util/Timer;->cancel()V
 
-    .line 105
+    .line 111
     iget-object v0, p0, Ljp/co/sony/mc/camera/AutoPowerOffTimer;->mTimer:Ljava/util/Timer;
 
     invoke-virtual {v0}, Ljava/util/Timer;->purge()I
 
     const/4 v0, 0x0
 
-    .line 106
+    .line 112
     iput-object v0, p0, Ljp/co/sony/mc/camera/AutoPowerOffTimer;->mTimer:Ljava/util/Timer;
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 108
+    .line 114
     :cond_0
     monitor-exit p0
 
@@ -373,86 +373,115 @@
 
 # virtual methods
 .method public final disableAutoPowerOffTimer()V
-    .locals 1
+    .locals 3
 
-    .line 68
+    .line 69
     sget-boolean v0, Ljp/co/sony/mc/camera/util/CamLog;->VERBOSE:Z
+
+    const/4 v1, 0x0
 
     if-eqz v0, :cond_0
 
-    const-string v0, "disableAutoPowerOffTimer: "
+    const/4 v0, 0x1
 
-    filled-new-array {v0}, [Ljava/lang/String;
+    new-array v0, v0, [Ljava/lang/String;
 
-    move-result-object v0
+    const-string v2, "disableAutoPowerOffTimer: "
+
+    aput-object v2, v0, v1
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
-    .line 69
+    .line 70
     :cond_0
     iget-object v0, p0, Ljp/co/sony/mc/camera/AutoPowerOffTimer;->mHandler:Ljp/co/sony/mc/camera/AutoPowerOffTimer$AutoPowerOffHandler;
 
     invoke-virtual {v0}, Ljp/co/sony/mc/camera/AutoPowerOffTimer$AutoPowerOffHandler;->removeAllMessages()V
 
-    .line 70
+    .line 71
     invoke-direct {p0}, Ljp/co/sony/mc/camera/AutoPowerOffTimer;->stopAutoPowerOffTimer()V
 
-    const/4 v0, 0x0
-
-    .line 71
-    iput-boolean v0, p0, Ljp/co/sony/mc/camera/AutoPowerOffTimer;->mIsAutoPowerOffTimerEnabled:Z
+    .line 72
+    iput-boolean v1, p0, Ljp/co/sony/mc/camera/AutoPowerOffTimer;->mIsAutoPowerOffTimerEnabled:Z
 
     return-void
 .end method
 
 .method public final enableAutoPowerOffTimer()V
-    .locals 1
+    .locals 4
 
-    .line 59
+    .line 60
     sget-boolean v0, Ljp/co/sony/mc/camera/util/CamLog;->VERBOSE:Z
+
+    const/4 v1, 0x1
 
     if-eqz v0, :cond_0
 
-    const-string v0, "enableAutoPowerOffTimer: "
+    new-array v0, v1, [Ljava/lang/String;
 
-    filled-new-array {v0}, [Ljava/lang/String;
+    const/4 v2, 0x0
 
-    move-result-object v0
+    const-string v3, "enableAutoPowerOffTimer: "
+
+    aput-object v3, v0, v2
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
-    :cond_0
-    const/4 v0, 0x1
-
-    .line 60
-    iput-boolean v0, p0, Ljp/co/sony/mc/camera/AutoPowerOffTimer;->mIsAutoPowerOffTimerEnabled:Z
-
     .line 61
+    :cond_0
+    iput-boolean v1, p0, Ljp/co/sony/mc/camera/AutoPowerOffTimer;->mIsAutoPowerOffTimerEnabled:Z
+
+    .line 62
     invoke-direct {p0}, Ljp/co/sony/mc/camera/AutoPowerOffTimer;->startAutoPowerOffTimer()V
 
     return-void
 .end method
 
 .method public final declared-synchronized restartAutoPowerOffTimer()V
-    .locals 1
+    .locals 2
 
     monitor-enter p0
 
-    .line 80
+    .line 81
     :try_start_0
     iget-object v0, p0, Ljp/co/sony/mc/camera/AutoPowerOffTimer;->mHandler:Ljp/co/sony/mc/camera/AutoPowerOffTimer$AutoPowerOffHandler;
 
     invoke-virtual {v0}, Ljp/co/sony/mc/camera/AutoPowerOffTimer$AutoPowerOffHandler;->removeAllMessages()V
 
-    .line 81
+    .line 82
     invoke-direct {p0}, Ljp/co/sony/mc/camera/AutoPowerOffTimer;->stopAutoPowerOffTimer()V
 
-    .line 82
+    .line 83
     invoke-direct {p0}, Ljp/co/sony/mc/camera/AutoPowerOffTimer;->startAutoPowerOffTimer()V
+
+    .line 84
+    sget-object v0, Ljp/co/sony/mc/camera/idd/event/IddAutoPowerOffNotificationEvent;->Context:Ljp/co/sony/mc/camera/idd/event/IddAutoPowerOffNotificationEvent$Context;
+
+    invoke-virtual {v0}, Ljp/co/sony/mc/camera/idd/event/IddAutoPowerOffNotificationEvent$Context;->isAutoPowerOffWarning()Z
+
+    move-result v0
+
+    if-eqz v0, :cond_0
+
+    .line 85
+    new-instance v0, Ljp/co/sony/mc/camera/idd/event/IddAutoPowerOffNotificationEvent;
+
+    invoke-direct {v0}, Ljp/co/sony/mc/camera/idd/event/IddAutoPowerOffNotificationEvent;-><init>()V
+
+    const/4 v1, 0x1
+
+    .line 86
+    invoke-virtual {v0, v1}, Ljp/co/sony/mc/camera/idd/event/IddAutoPowerOffNotificationEvent;->isResumed(Z)Ljp/co/sony/mc/camera/idd/event/IddAutoPowerOffNotificationEvent;
+
+    move-result-object v0
+
+    .line 87
+    invoke-virtual {v0}, Ljp/co/sony/mc/camera/idd/event/IddAutoPowerOffNotificationEvent;->send()V
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 83
+    .line 89
+    :cond_0
     monitor-exit p0
 
     return-void
@@ -470,19 +499,19 @@
 
     monitor-enter p0
 
-    .line 50
+    .line 51
     :try_start_0
     iput p1, p0, Ljp/co/sony/mc/camera/AutoPowerOffTimer;->mAutoPowerOffTimeOutDuration:I
 
-    .line 51
+    .line 52
     iput p2, p0, Ljp/co/sony/mc/camera/AutoPowerOffTimer;->mAutoPowerOffWarningTimeOutOffset:I
 
-    .line 52
+    .line 53
     iput-object p3, p0, Ljp/co/sony/mc/camera/AutoPowerOffTimer;->mUserdata:Ljava/lang/Object;
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 53
+    .line 54
     monitor-exit p0
 
     return-void

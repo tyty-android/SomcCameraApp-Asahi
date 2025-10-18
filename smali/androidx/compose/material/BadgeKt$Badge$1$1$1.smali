@@ -48,10 +48,6 @@
 
 
 # instance fields
-.field final synthetic $$changed:I
-
-.field final synthetic $$dirty:I
-
 .field final synthetic $content:Lkotlin/jvm/functions/Function3;
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -69,7 +65,7 @@
 
 
 # direct methods
-.method constructor <init>(Lkotlin/jvm/functions/Function3;Landroidx/compose/foundation/layout/RowScope;II)V
+.method constructor <init>(Lkotlin/jvm/functions/Function3;Landroidx/compose/foundation/layout/RowScope;)V
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -84,17 +80,13 @@
             "Lkotlin/Unit;",
             ">;",
             "Landroidx/compose/foundation/layout/RowScope;",
-            "II)V"
+            ")V"
         }
     .end annotation
 
     iput-object p1, p0, Landroidx/compose/material/BadgeKt$Badge$1$1$1;->$content:Lkotlin/jvm/functions/Function3;
 
     iput-object p2, p0, Landroidx/compose/material/BadgeKt$Badge$1$1$1;->$this_Row:Landroidx/compose/foundation/layout/RowScope;
-
-    iput p3, p0, Landroidx/compose/material/BadgeKt$Badge$1$1$1;->$$changed:I
-
-    iput p4, p0, Landroidx/compose/material/BadgeKt$Badge$1$1$1;->$$dirty:I
 
     const/4 p1, 0x2
 
@@ -108,7 +100,7 @@
 .method public bridge synthetic invoke(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
 
-    .line 161
+    .line 162
     check-cast p1, Landroidx/compose/runtime/Composer;
 
     check-cast p2, Ljava/lang/Number;
@@ -127,7 +119,7 @@
 .method public final invoke(Landroidx/compose/runtime/Composer;I)V
     .locals 3
 
-    const-string v0, "C160@6256L9:Badge.kt#jmzs0o"
+    const-string v0, "C161@6306L9:Badge.kt#jmzs0o"
 
     invoke-static {p1, v0}, Landroidx/compose/runtime/ComposerKt;->sourceInformation(Landroidx/compose/runtime/Composer;Ljava/lang/String;)V
 
@@ -137,7 +129,7 @@
 
     if-ne v0, v1, :cond_1
 
-    .line 161
+    .line 162
     invoke-interface {p1}, Landroidx/compose/runtime/Composer;->getSkipping()Z
 
     move-result v0
@@ -161,7 +153,7 @@
 
     const/4 v0, -0x1
 
-    const-string v1, "androidx.compose.material.Badge.<anonymous>.<anonymous>.<anonymous> (Badge.kt:160)"
+    const-string v1, "androidx.compose.material.Badge.<anonymous>.<anonymous>.<anonymous> (Badge.kt:161)"
 
     const v2, 0x368c28c6
 
@@ -170,25 +162,15 @@
     :cond_2
     iget-object p2, p0, Landroidx/compose/material/BadgeKt$Badge$1$1$1;->$content:Lkotlin/jvm/functions/Function3;
 
-    iget-object v0, p0, Landroidx/compose/material/BadgeKt$Badge$1$1$1;->$this_Row:Landroidx/compose/foundation/layout/RowScope;
+    iget-object p0, p0, Landroidx/compose/material/BadgeKt$Badge$1$1$1;->$this_Row:Landroidx/compose/foundation/layout/RowScope;
 
-    iget v1, p0, Landroidx/compose/material/BadgeKt$Badge$1$1$1;->$$changed:I
+    const/4 v0, 0x0
 
-    and-int/lit8 v1, v1, 0xe
+    invoke-static {v0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
-    iget p0, p0, Landroidx/compose/material/BadgeKt$Badge$1$1$1;->$$dirty:I
+    move-result-object v0
 
-    shr-int/lit8 p0, p0, 0x6
-
-    and-int/lit8 p0, p0, 0x70
-
-    or-int/2addr p0, v1
-
-    invoke-static {p0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
-
-    move-result-object p0
-
-    invoke-interface {p2, v0, p1, p0}, Lkotlin/jvm/functions/Function3;->invoke(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-interface {p2, p0, p1, v0}, Lkotlin/jvm/functions/Function3;->invoke(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     invoke-static {}, Landroidx/compose/runtime/ComposerKt;->isTraceInProgress()Z
 

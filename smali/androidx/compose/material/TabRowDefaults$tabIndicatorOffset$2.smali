@@ -29,7 +29,7 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/SourceDebugExtension;
-    value = "SMAP\nTabRow.kt\nKotlin\n*S Kotlin\n*F\n+ 1 TabRow.kt\nandroidx/compose/material/TabRowDefaults$tabIndicatorOffset$2\n+ 2 SnapshotState.kt\nandroidx/compose/runtime/SnapshotStateKt__SnapshotStateKt\n*L\n1#1,517:1\n81#2:518\n81#2:519\n*S KotlinDebug\n*F\n+ 1 TabRow.kt\nandroidx/compose/material/TabRowDefaults$tabIndicatorOffset$2\n*L\n409#1:518\n413#1:519\n*E\n"
+    value = "SMAP\nTabRow.kt\nKotlin\n*S Kotlin\n*F\n+ 1 TabRow.kt\nandroidx/compose/material/TabRowDefaults$tabIndicatorOffset$2\n+ 2 SnapshotState.kt\nandroidx/compose/runtime/SnapshotStateKt__SnapshotStateKt\n*L\n1#1,521:1\n81#2:522\n81#2:523\n*S KotlinDebug\n*F\n+ 1 TabRow.kt\nandroidx/compose/material/TabRowDefaults$tabIndicatorOffset$2\n*L\n413#1:522\n417#1:523\n*E\n"
 .end annotation
 
 .annotation runtime Lkotlin/Metadata;
@@ -80,7 +80,7 @@
         }
     .end annotation
 
-    .line 518
+    .line 522
     invoke-interface {p0}, Landroidx/compose/runtime/State;->getValue()Ljava/lang/Object;
 
     move-result-object p0
@@ -105,7 +105,7 @@
         }
     .end annotation
 
-    .line 519
+    .line 523
     invoke-interface {p0}, Landroidx/compose/runtime/State;->getValue()Ljava/lang/Object;
 
     move-result-object p0
@@ -124,15 +124,11 @@
 .method public final invoke(Landroidx/compose/ui/Modifier;Landroidx/compose/runtime/Composer;I)Landroidx/compose/ui/Modifier;
     .locals 11
 
-    const-string v0, "$this$composed"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
     const v0, -0x17c48fe7
 
     invoke-interface {p2, v0}, Landroidx/compose/runtime/Composer;->startReplaceableGroup(I)V
 
-    const-string v1, "C408@17682L165,412@17879L164:TabRow.kt#jmzs0o"
+    const-string v1, "C412@17893L165,416@18090L164:TabRow.kt#jmzs0o"
 
     invoke-static {p2, v1}, Landroidx/compose/runtime/ComposerKt;->sourceInformation(Landroidx/compose/runtime/Composer;Ljava/lang/String;)V
 
@@ -144,12 +140,12 @@
 
     const/4 v1, -0x1
 
-    const-string v2, "androidx.compose.material.TabRowDefaults.tabIndicatorOffset.<anonymous> (TabRow.kt:407)"
+    const-string v2, "androidx.compose.material.TabRowDefaults.tabIndicatorOffset.<anonymous> (TabRow.kt:412)"
 
-    .line 409
+    .line 413
     invoke-static {v0, p3, v1, v2}, Landroidx/compose/runtime/ComposerKt;->traceEventStart(IIILjava/lang/String;)V
 
-    .line 410
+    .line 414
     :cond_0
     iget-object p3, p0, Landroidx/compose/material/TabRowDefaults$tabIndicatorOffset$2;->$currentTabPosition:Landroidx/compose/material/TabPosition;
 
@@ -157,7 +153,7 @@
 
     move-result v0
 
-    .line 411
+    .line 415
     invoke-static {}, Landroidx/compose/animation/core/EasingKt;->getFastOutSlowInEasing()Landroidx/compose/animation/core/Easing;
 
     move-result-object p3
@@ -188,19 +184,19 @@
 
     move-object v4, p2
 
-    .line 409
+    .line 413
     invoke-static/range {v0 .. v6}, Landroidx/compose/animation/core/AnimateAsStateKt;->animateDpAsState-AjpBEmI(FLandroidx/compose/animation/core/AnimationSpec;Ljava/lang/String;Lkotlin/jvm/functions/Function1;Landroidx/compose/runtime/Composer;II)Landroidx/compose/runtime/State;
 
     move-result-object p3
 
-    .line 414
+    .line 418
     iget-object p0, p0, Landroidx/compose/material/TabRowDefaults$tabIndicatorOffset$2;->$currentTabPosition:Landroidx/compose/material/TabPosition;
 
     invoke-virtual {p0}, Landroidx/compose/material/TabPosition;->getLeft-D9Ej5fM()F
 
     move-result v0
 
-    .line 415
+    .line 419
     invoke-static {}, Landroidx/compose/animation/core/EasingKt;->getFastOutSlowInEasing()Landroidx/compose/animation/core/Easing;
 
     move-result-object p0
@@ -213,7 +209,7 @@
 
     check-cast v1, Landroidx/compose/animation/core/AnimationSpec;
 
-    .line 413
+    .line 417
     invoke-static/range {v0 .. v6}, Landroidx/compose/animation/core/AnimateAsStateKt;->animateDpAsState-AjpBEmI(FLandroidx/compose/animation/core/AnimationSpec;Ljava/lang/String;Lkotlin/jvm/functions/Function1;Landroidx/compose/runtime/Composer;II)Landroidx/compose/runtime/State;
 
     move-result-object p0
@@ -222,12 +218,12 @@
 
     const/4 v1, 0x0
 
-    .line 417
+    .line 421
     invoke-static {p1, v1, v0, v10}, Landroidx/compose/foundation/layout/SizeKt;->fillMaxWidth$default(Landroidx/compose/ui/Modifier;FILjava/lang/Object;)Landroidx/compose/ui/Modifier;
 
     move-result-object p1
 
-    .line 418
+    .line 422
     sget-object v0, Landroidx/compose/ui/Alignment;->Companion:Landroidx/compose/ui/Alignment$Companion;
 
     invoke-virtual {v0}, Landroidx/compose/ui/Alignment$Companion;->getBottomStart()Landroidx/compose/ui/Alignment;
@@ -238,7 +234,7 @@
 
     move-result-object p1
 
-    .line 419
+    .line 423
     invoke-static {p0}, Landroidx/compose/material/TabRowDefaults$tabIndicatorOffset$2;->invoke$lambda$1(Landroidx/compose/runtime/State;)F
 
     move-result p0
@@ -247,7 +243,7 @@
 
     move-result-object p0
 
-    .line 420
+    .line 424
     invoke-static {p3}, Landroidx/compose/material/TabRowDefaults$tabIndicatorOffset$2;->invoke$lambda$0(Landroidx/compose/runtime/State;)F
 
     move-result p1
@@ -273,7 +269,7 @@
 .method public bridge synthetic invoke(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
 
-    .line 403
+    .line 407
     check-cast p1, Landroidx/compose/ui/Modifier;
 
     check-cast p2, Landroidx/compose/runtime/Composer;

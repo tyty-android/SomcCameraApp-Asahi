@@ -160,7 +160,7 @@
 
     invoke-static {}, Lkotlin/coroutines/intrinsics/IntrinsicsKt;->getCOROUTINE_SUSPENDED()Ljava/lang/Object;
 
-    .line 65535
+    .line 926
     iget v0, p0, Landroidx/compose/material/SliderKt$sliderTapModifier$2$1$2$1$1;->label:I
 
     if-nez v0, :cond_0
@@ -173,15 +173,15 @@
 
     const/4 p1, 0x0
 
-    .line 924
+    .line 928
     invoke-interface {p0, p1}, Landroidx/compose/foundation/gestures/DragScope;->dragBy(F)V
 
-    .line 925
+    .line 929
     sget-object p0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
 
     return-object p0
 
-    .line 65535
+    .line 926
     :cond_0
     new-instance p0, Ljava/lang/IllegalStateException;
 

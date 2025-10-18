@@ -19,5 +19,4 @@ Ative o WLAN em CONFIGURAÇÕES."</string>
     <string name="camera_strings_runtime_permission_rationale_network_cta_txt">"Este aplicativo usa WLAN e dados móveis para enviar dados do usuário (ou seja, fotos/vídeos gravados, dados de voz, informações de conta dos serviços em uso, etc.) para a Internet.
 Observe que os dados podem ser cobrados, dependendo dos contratos da operadora de rede ou do provedor de serviços de Internet."</string>
     <string name="camera_strings_streaming_error_wifi_disconnected_txt">Nenhuma conexão WLAN</string>
-    <string name="mv_wireless_network_txt">Utilize WLAN e dados móveis</string>
 </resources>

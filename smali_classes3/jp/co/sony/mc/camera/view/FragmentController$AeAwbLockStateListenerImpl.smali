@@ -25,10 +25,10 @@
 .method public constructor <init>(Ljp/co/sony/mc/camera/view/FragmentController;)V
     .locals 0
 
-    .line 7674
+    .line 7926
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 7675
+    .line 7927
     iput-object p1, p0, Ljp/co/sony/mc/camera/view/FragmentController$AeAwbLockStateListenerImpl;->mController:Ljp/co/sony/mc/camera/view/FragmentController;
 
     return-void
@@ -39,7 +39,7 @@
 .method public onAeAwbLockStateChanged(ZZ)V
     .locals 0
 
-    .line 7680
+    .line 7932
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/FragmentController$AeAwbLockStateListenerImpl;->mController:Ljp/co/sony/mc/camera/view/FragmentController;
 
     invoke-static {p0}, Ljp/co/sony/mc/camera/view/FragmentController;->-$$Nest$fgetmCameraEventNotifier(Ljp/co/sony/mc/camera/view/FragmentController;)Ljp/co/sony/mc/camera/view/CameraEventListener;

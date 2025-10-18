@@ -1,9 +1,9 @@
 .class final Landroidx/compose/foundation/ImageKt$Image$2;
-.super Ljava/lang/Object;
+.super Lkotlin/jvm/internal/Lambda;
 .source "Image.kt"
 
 # interfaces
-.implements Landroidx/compose/ui/layout/MeasurePolicy;
+.implements Lkotlin/jvm/functions/Function2;
 
 
 # annotations
@@ -16,20 +16,18 @@
     name = null
 .end annotation
 
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Lkotlin/jvm/internal/Lambda;",
+        "Lkotlin/jvm/functions/Function2<",
+        "Landroidx/compose/runtime/Composer;",
+        "Ljava/lang/Integer;",
+        "Lkotlin/Unit;",
+        ">;"
+    }
+.end annotation
+
 .annotation runtime Lkotlin/Metadata;
-    d1 = {
-        "\u0000\u001a\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010 \n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\u0010\u0000\u001a\u00020\u0001*\u00020\u00022\u000c\u0010\u0003\u001a\u0008\u0012\u0004\u0012\u00020\u00050\u00042\u0006\u0010\u0006\u001a\u00020\u0007H\n"
-    }
-    d2 = {
-        "<anonymous>",
-        "Landroidx/compose/ui/layout/MeasureResult;",
-        "Landroidx/compose/ui/layout/MeasureScope;",
-        "<anonymous parameter 0>",
-        "",
-        "Landroidx/compose/ui/layout/Measurable;",
-        "constraints",
-        "Landroidx/compose/ui/unit/Constraints;"
-    }
     k = 0x3
     mv = {
         0x1,
@@ -40,81 +38,105 @@
 .end annotation
 
 
-# static fields
-.field public static final INSTANCE:Landroidx/compose/foundation/ImageKt$Image$2;
+# instance fields
+.field final synthetic $$changed:I
+
+.field final synthetic $$default:I
+
+.field final synthetic $alignment:Landroidx/compose/ui/Alignment;
+
+.field final synthetic $alpha:F
+
+.field final synthetic $colorFilter:Landroidx/compose/ui/graphics/ColorFilter;
+
+.field final synthetic $contentDescription:Ljava/lang/String;
+
+.field final synthetic $contentScale:Landroidx/compose/ui/layout/ContentScale;
+
+.field final synthetic $modifier:Landroidx/compose/ui/Modifier;
+
+.field final synthetic $painter:Landroidx/compose/ui/graphics/painter/Painter;
 
 
 # direct methods
-.method static constructor <clinit>()V
-    .locals 1
-
-    new-instance v0, Landroidx/compose/foundation/ImageKt$Image$2;
-
-    invoke-direct {v0}, Landroidx/compose/foundation/ImageKt$Image$2;-><init>()V
-
-    sput-object v0, Landroidx/compose/foundation/ImageKt$Image$2;->INSTANCE:Landroidx/compose/foundation/ImageKt$Image$2;
-
-    return-void
-.end method
-
-.method constructor <init>()V
+.method constructor <init>(Landroidx/compose/ui/graphics/painter/Painter;Ljava/lang/String;Landroidx/compose/ui/Modifier;Landroidx/compose/ui/Alignment;Landroidx/compose/ui/layout/ContentScale;FLandroidx/compose/ui/graphics/ColorFilter;II)V
     .locals 0
 
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    iput-object p1, p0, Landroidx/compose/foundation/ImageKt$Image$2;->$painter:Landroidx/compose/ui/graphics/painter/Painter;
+
+    iput-object p2, p0, Landroidx/compose/foundation/ImageKt$Image$2;->$contentDescription:Ljava/lang/String;
+
+    iput-object p3, p0, Landroidx/compose/foundation/ImageKt$Image$2;->$modifier:Landroidx/compose/ui/Modifier;
+
+    iput-object p4, p0, Landroidx/compose/foundation/ImageKt$Image$2;->$alignment:Landroidx/compose/ui/Alignment;
+
+    iput-object p5, p0, Landroidx/compose/foundation/ImageKt$Image$2;->$contentScale:Landroidx/compose/ui/layout/ContentScale;
+
+    iput p6, p0, Landroidx/compose/foundation/ImageKt$Image$2;->$alpha:F
+
+    iput-object p7, p0, Landroidx/compose/foundation/ImageKt$Image$2;->$colorFilter:Landroidx/compose/ui/graphics/ColorFilter;
+
+    iput p8, p0, Landroidx/compose/foundation/ImageKt$Image$2;->$$changed:I
+
+    iput p9, p0, Landroidx/compose/foundation/ImageKt$Image$2;->$$default:I
+
+    const/4 p1, 0x2
+
+    invoke-direct {p0, p1}, Lkotlin/jvm/internal/Lambda;-><init>(I)V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final measure-3p2s80s(Landroidx/compose/ui/layout/MeasureScope;Ljava/util/List;J)Landroidx/compose/ui/layout/MeasureResult;
-    .locals 7
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(",
-            "Landroidx/compose/ui/layout/MeasureScope;",
-            "Ljava/util/List<",
-            "+",
-            "Landroidx/compose/ui/layout/Measurable;",
-            ">;J)",
-            "Landroidx/compose/ui/layout/MeasureResult;"
-        }
-    .end annotation
+.method public bridge synthetic invoke(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 0
 
-    const-string p0, "$this$Layout"
+    check-cast p1, Landroidx/compose/runtime/Composer;
 
-    invoke-static {p1, p0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+    check-cast p2, Ljava/lang/Number;
 
-    const-string p0, "<anonymous parameter 0>"
+    invoke-virtual {p2}, Ljava/lang/Number;->intValue()I
 
-    invoke-static {p2, p0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+    move-result p2
 
-    .line 266
-    invoke-static {p3, p4}, Landroidx/compose/ui/unit/Constraints;->getMinWidth-impl(J)I
+    invoke-virtual {p0, p1, p2}, Landroidx/compose/foundation/ImageKt$Image$2;->invoke(Landroidx/compose/runtime/Composer;I)V
 
-    move-result v1
-
-    invoke-static {p3, p4}, Landroidx/compose/ui/unit/Constraints;->getMinHeight-impl(J)I
-
-    move-result v2
-
-    sget-object p0, Landroidx/compose/foundation/ImageKt$Image$2$measure$1;->INSTANCE:Landroidx/compose/foundation/ImageKt$Image$2$measure$1;
-
-    move-object v4, p0
-
-    check-cast v4, Lkotlin/jvm/functions/Function1;
-
-    const/4 v5, 0x4
-
-    const/4 v6, 0x0
-
-    const/4 v3, 0x0
-
-    move-object v0, p1
-
-    invoke-static/range {v0 .. v6}, Landroidx/compose/ui/layout/MeasureScope;->layout$default(Landroidx/compose/ui/layout/MeasureScope;IILjava/util/Map;Lkotlin/jvm/functions/Function1;ILjava/lang/Object;)Landroidx/compose/ui/layout/MeasureResult;
-
-    move-result-object p0
+    sget-object p0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
 
     return-object p0
+.end method
+
+.method public final invoke(Landroidx/compose/runtime/Composer;I)V
+    .locals 10
+
+    iget-object v0, p0, Landroidx/compose/foundation/ImageKt$Image$2;->$painter:Landroidx/compose/ui/graphics/painter/Painter;
+
+    iget-object v1, p0, Landroidx/compose/foundation/ImageKt$Image$2;->$contentDescription:Ljava/lang/String;
+
+    iget-object v2, p0, Landroidx/compose/foundation/ImageKt$Image$2;->$modifier:Landroidx/compose/ui/Modifier;
+
+    iget-object v3, p0, Landroidx/compose/foundation/ImageKt$Image$2;->$alignment:Landroidx/compose/ui/Alignment;
+
+    iget-object v4, p0, Landroidx/compose/foundation/ImageKt$Image$2;->$contentScale:Landroidx/compose/ui/layout/ContentScale;
+
+    iget v5, p0, Landroidx/compose/foundation/ImageKt$Image$2;->$alpha:F
+
+    iget-object v6, p0, Landroidx/compose/foundation/ImageKt$Image$2;->$colorFilter:Landroidx/compose/ui/graphics/ColorFilter;
+
+    iget p2, p0, Landroidx/compose/foundation/ImageKt$Image$2;->$$changed:I
+
+    or-int/lit8 p2, p2, 0x1
+
+    invoke-static {p2}, Landroidx/compose/runtime/RecomposeScopeImplKt;->updateChangedFlags(I)I
+
+    move-result v8
+
+    iget v9, p0, Landroidx/compose/foundation/ImageKt$Image$2;->$$default:I
+
+    move-object v7, p1
+
+    invoke-static/range {v0 .. v9}, Landroidx/compose/foundation/ImageKt;->Image(Landroidx/compose/ui/graphics/painter/Painter;Ljava/lang/String;Landroidx/compose/ui/Modifier;Landroidx/compose/ui/Alignment;Landroidx/compose/ui/layout/ContentScale;FLandroidx/compose/ui/graphics/ColorFilter;Landroidx/compose/runtime/Composer;II)V
+
+    return-void
 .end method

@@ -5,7 +5,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/SourceDebugExtension;
-    value = "SMAP\nLazyStaggeredGridState.kt\nKotlin\n*S Kotlin\n*F\n+ 1 LazyStaggeredGridState.kt\nandroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridStateKt\n+ 2 Composables.kt\nandroidx/compose/runtime/ComposablesKt\n+ 3 Composer.kt\nandroidx/compose/runtime/ComposerKt\n*L\n1#1,504:1\n50#2:505\n49#2:506\n1097#3,6:507\n*S KotlinDebug\n*F\n+ 1 LazyStaggeredGridState.kt\nandroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridStateKt\n*L\n69#1:505\n69#1:506\n69#1:507,6\n*E\n"
+    value = "SMAP\nLazyStaggeredGridState.kt\nKotlin\n*S Kotlin\n*F\n+ 1 LazyStaggeredGridState.kt\nandroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridStateKt\n+ 2 Composer.kt\nandroidx/compose/runtime/ComposerKt\n*L\n1#1,524:1\n1116#2,6:525\n*S KotlinDebug\n*F\n+ 1 LazyStaggeredGridState.kt\nandroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridStateKt\n*L\n69#1:525,6\n*E\n"
 .end annotation
 
 .annotation runtime Lkotlin/Metadata;
@@ -39,7 +39,7 @@
 
     invoke-interface {p2, v0}, Landroidx/compose/runtime/Composer;->startReplaceableGroup(I)V
 
-    const-string v1, "C(rememberLazyStaggeredGridState)68@3273L139,68@3218L194:LazyStaggeredGridState.kt#fzvcnm"
+    const-string v1, "C(rememberLazyStaggeredGridState)68@3276L194:LazyStaggeredGridState.kt#fzvcnm"
 
     invoke-static {p2, v1}, Landroidx/compose/runtime/ComposerKt;->sourceInformation(Landroidx/compose/runtime/Composer;Ljava/lang/String;)V
 
@@ -68,7 +68,7 @@
 
     const/4 p4, -0x1
 
-    const-string v1, "androidx.compose.foundation.lazy.staggeredgrid.rememberLazyStaggeredGridState (LazyStaggeredGridState.kt:64)"
+    const-string v1, "androidx.compose.foundation.lazy.staggeredgrid.rememberLazyStaggeredGridState (LazyStaggeredGridState.kt:68)"
 
     .line 69
     invoke-static {v0, p3, p4, v1}, Landroidx/compose/runtime/ComposerKt;->traceEventStart(IIILjava/lang/String;)V
@@ -82,41 +82,28 @@
 
     move-result-object v4
 
-    invoke-static {p0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+    const p3, -0x650f0d04
 
-    move-result-object p3
+    invoke-interface {p2, p3}, Landroidx/compose/runtime/Composer;->startReplaceableGroup(I)V
 
-    invoke-static {p1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
-
-    move-result-object p4
-
-    const v0, 0x1e7b2b64
-
-    invoke-interface {p2, v0}, Landroidx/compose/runtime/Composer;->startReplaceableGroup(I)V
-
-    const-string v0, "CC(remember)P(1,2):Composables.kt#9igjgp"
-
-    invoke-static {p2, v0}, Landroidx/compose/runtime/ComposerKt;->sourceInformation(Landroidx/compose/runtime/Composer;Ljava/lang/String;)V
-
-    .line 505
-    invoke-interface {p2, p3}, Landroidx/compose/runtime/Composer;->changed(Ljava/lang/Object;)Z
+    invoke-interface {p2, p0}, Landroidx/compose/runtime/Composer;->changed(I)Z
 
     move-result p3
 
-    invoke-interface {p2, p4}, Landroidx/compose/runtime/Composer;->changed(Ljava/lang/Object;)Z
+    invoke-interface {p2, p1}, Landroidx/compose/runtime/Composer;->changed(I)Z
 
     move-result p4
 
     or-int/2addr p3, p4
 
-    .line 507
+    .line 525
     invoke-interface {p2}, Landroidx/compose/runtime/Composer;->rememberedValue()Ljava/lang/Object;
 
     move-result-object p4
 
     if-nez p3, :cond_3
 
-    .line 508
+    .line 526
     sget-object p3, Landroidx/compose/runtime/Composer;->Companion:Landroidx/compose/runtime/Composer$Companion;
 
     invoke-virtual {p3}, Landroidx/compose/runtime/Composer$Companion;->getEmpty()Ljava/lang/Object;
@@ -135,16 +122,16 @@
 
     check-cast p4, Lkotlin/jvm/functions/Function0;
 
-    .line 510
+    .line 528
     invoke-interface {p2, p4}, Landroidx/compose/runtime/Composer;->updateRememberedValue(Ljava/lang/Object;)V
 
-    .line 506
+    .line 69
     :cond_4
-    invoke-interface {p2}, Landroidx/compose/runtime/Composer;->endReplaceableGroup()V
-
     move-object v6, p4
 
     check-cast v6, Lkotlin/jvm/functions/Function0;
+
+    invoke-interface {p2}, Landroidx/compose/runtime/Composer;->endReplaceableGroup()V
 
     const/16 v8, 0x48
 
@@ -154,7 +141,6 @@
 
     move-object v7, p2
 
-    .line 69
     invoke-static/range {v3 .. v9}, Landroidx/compose/runtime/saveable/RememberSaveableKt;->rememberSaveable([Ljava/lang/Object;Landroidx/compose/runtime/saveable/Saver;Ljava/lang/String;Lkotlin/jvm/functions/Function0;Landroidx/compose/runtime/Composer;II)Ljava/lang/Object;
 
     move-result-object p0

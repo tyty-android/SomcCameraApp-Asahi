@@ -59,51 +59,51 @@
 
 # virtual methods
 .method protected acquire()Z
-    .locals 6
+    .locals 5
 
     .line 77
     sget-boolean v0, Ljp/co/sony/mc/camera/util/CamLog;->DEBUG:Z
 
+    const/4 v1, 0x1
+
+    const/4 v2, 0x0
+
     if-eqz v0, :cond_0
 
-    new-instance v0, Ljava/lang/StringBuilder;
+    new-array v0, v1, [Ljava/lang/String;
 
-    const-string v1, "invoke: id: "
+    new-instance v3, Ljava/lang/StringBuilder;
 
-    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+    const-string v4, "invoke: id: "
+
+    invoke-direct {v3, v4}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
     invoke-virtual {p0}, Ljava/lang/Object;->hashCode()I
 
-    move-result v1
+    move-result v4
 
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+    invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
-    move-result-object v0
+    move-result-object v3
 
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-virtual {v3}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    move-result-object v0
+    move-result-object v3
 
-    filled-new-array {v0}, [Ljava/lang/String;
-
-    move-result-object v0
+    aput-object v3, v0, v2
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
-    :cond_0
-    const/4 v0, 0x1
-
-    const/4 v1, 0x0
-
     .line 79
+    :cond_0
     :try_start_0
     iget-object p0, p0, Ljp/co/sony/mc/camera/storage/updater/StorageUpdateTask;->mStorageAccessSemaphore:Ljava/util/concurrent/Semaphore;
 
-    sget-object v2, Ljava/util/concurrent/TimeUnit;->MILLISECONDS:Ljava/util/concurrent/TimeUnit;
+    sget-object v0, Ljava/util/concurrent/TimeUnit;->MILLISECONDS:Ljava/util/concurrent/TimeUnit;
 
     const-wide/16 v3, 0xfa0
 
-    invoke-virtual {p0, v3, v4, v2}, Ljava/util/concurrent/Semaphore;->tryAcquire(JLjava/util/concurrent/TimeUnit;)Z
+    invoke-virtual {p0, v3, v4, v0}, Ljava/util/concurrent/Semaphore;->tryAcquire(JLjava/util/concurrent/TimeUnit;)Z
 
     move-result p0
     :try_end_0
@@ -111,47 +111,45 @@
 
     .line 81
     :try_start_1
-    sget-boolean v2, Ljp/co/sony/mc/camera/util/CamLog;->DEBUG:Z
+    sget-boolean v0, Ljp/co/sony/mc/camera/util/CamLog;->DEBUG:Z
 
-    if-eqz v2, :cond_1
+    if-eqz v0, :cond_1
 
-    new-array v2, v0, [Ljava/lang/String;
+    new-array v0, v1, [Ljava/lang/String;
 
     const-string v3, "Semaphore acquired."
 
-    aput-object v3, v2, v1
+    aput-object v3, v0, v2
 
-    invoke-static {v2}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
+    invoke-static {v0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
     :try_end_1
     .catch Ljava/lang/InterruptedException; {:try_start_1 .. :try_end_1} :catch_0
 
     goto :goto_1
 
     :catch_0
-    move-exception v1
+    move-exception v0
+
+    move v2, p0
 
     goto :goto_0
 
     :catch_1
-    move-exception p0
-
-    move v5, v1
-
-    move-object v1, p0
-
-    move p0, v5
+    move-exception v0
 
     .line 83
     :goto_0
-    const-string v2, "Unintended interrupt occurred."
+    const-string p0, "Unintended interrupt occurred."
 
-    invoke-static {v2, v1}, Ljp/co/sony/mc/camera/util/CamLog;->e(Ljava/lang/String;Ljava/lang/Throwable;)V
+    invoke-static {p0, v0}, Ljp/co/sony/mc/camera/util/CamLog;->e(Ljava/lang/String;Ljava/lang/Throwable;)V
+
+    move p0, v2
 
     :cond_1
     :goto_1
     if-eqz p0, :cond_2
 
-    return v0
+    return v1
 
     .line 87
     :cond_2
@@ -226,34 +224,38 @@
 .end method
 
 .method protected release()V
-    .locals 2
+    .locals 3
 
     .line 102
     sget-boolean v0, Ljp/co/sony/mc/camera/util/CamLog;->DEBUG:Z
 
     if-eqz v0, :cond_0
 
-    new-instance v0, Ljava/lang/StringBuilder;
+    const/4 v0, 0x1
 
-    const-string v1, "invoke: id: "
+    new-array v0, v0, [Ljava/lang/String;
 
-    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+    new-instance v1, Ljava/lang/StringBuilder;
+
+    const-string v2, "invoke: id: "
+
+    invoke-direct {v1, v2}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
     invoke-virtual {p0}, Ljava/lang/Object;->hashCode()I
 
-    move-result v1
+    move-result v2
 
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
-    move-result-object v0
+    move-result-object v1
 
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    move-result-object v0
+    move-result-object v1
 
-    filled-new-array {v0}, [Ljava/lang/String;
+    const/4 v2, 0x0
 
-    move-result-object v0
+    aput-object v1, v0, v2
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
@@ -267,34 +269,38 @@
 .end method
 
 .method protected tryAcquire()Z
-    .locals 2
+    .locals 3
 
     .line 97
     sget-boolean v0, Ljp/co/sony/mc/camera/util/CamLog;->DEBUG:Z
 
     if-eqz v0, :cond_0
 
-    new-instance v0, Ljava/lang/StringBuilder;
+    const/4 v0, 0x1
 
-    const-string v1, "invoke: id: "
+    new-array v0, v0, [Ljava/lang/String;
 
-    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+    new-instance v1, Ljava/lang/StringBuilder;
+
+    const-string v2, "invoke: id: "
+
+    invoke-direct {v1, v2}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
     invoke-virtual {p0}, Ljava/lang/Object;->hashCode()I
 
-    move-result v1
+    move-result v2
 
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
-    move-result-object v0
+    move-result-object v1
 
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    move-result-object v0
+    move-result-object v1
 
-    filled-new-array {v0}, [Ljava/lang/String;
+    const/4 v2, 0x0
 
-    move-result-object v0
+    aput-object v1, v0, v2
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 

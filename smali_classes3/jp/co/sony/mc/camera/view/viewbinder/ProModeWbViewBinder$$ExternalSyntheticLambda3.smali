@@ -3,7 +3,7 @@
 .source "D8$$SyntheticClass"
 
 # interfaces
-.implements Landroid/view/View$OnClickListener;
+.implements Lkotlin/jvm/functions/Function1;
 
 
 # instance fields
@@ -24,13 +24,17 @@
 
 
 # virtual methods
-.method public final onClick(Landroid/view/View;)V
+.method public final invoke(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
 
     .line 0
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/viewbinder/ProModeWbViewBinder$$ExternalSyntheticLambda3;->f$0:Ljp/co/sony/mc/camera/view/viewbinder/ProModeWbViewBinder;
 
-    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/view/viewbinder/ProModeWbViewBinder;->$r8$lambda$FIQMP5RVx3z62yrj0VwsPCcStX4(Ljp/co/sony/mc/camera/view/viewbinder/ProModeWbViewBinder;Landroid/view/View;)V
+    check-cast p1, Lkotlin/Pair;
 
-    return-void
+    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/view/viewbinder/ProModeWbViewBinder;->$r8$lambda$51JWmCC89lP-begG2oPSZyWI5OA(Ljp/co/sony/mc/camera/view/viewbinder/ProModeWbViewBinder;Lkotlin/Pair;)Lkotlin/Unit;
+
+    move-result-object p0
+
+    return-object p0
 .end method

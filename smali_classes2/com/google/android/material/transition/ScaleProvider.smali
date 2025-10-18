@@ -68,7 +68,7 @@
 .end method
 
 .method private static createScaleAnimator(Landroid/view/View;FF)Landroid/animation/Animator;
-    .locals 8
+    .locals 9
 
     .line 172
     invoke-virtual {p0}, Landroid/view/View;->getScaleX()F
@@ -80,29 +80,33 @@
 
     move-result v1
 
+    const/4 v2, 0x2
+
     .line 174
-    sget-object v2, Landroid/view/View;->SCALE_X:Landroid/util/Property;
+    new-array v3, v2, [Landroid/animation/PropertyValuesHolder;
 
-    mul-float v3, v0, p1
+    sget-object v4, Landroid/view/View;->SCALE_X:Landroid/util/Property;
 
-    mul-float v4, v0, p2
+    mul-float v5, v0, p1
 
-    const/4 v5, 0x2
+    mul-float v6, v0, p2
 
-    new-array v6, v5, [F
+    new-array v7, v2, [F
 
-    const/4 v7, 0x0
+    const/4 v8, 0x0
 
-    aput v3, v6, v7
+    aput v5, v7, v8
 
-    const/4 v3, 0x1
+    const/4 v5, 0x1
 
-    aput v4, v6, v3
+    aput v6, v7, v5
 
     .line 177
-    invoke-static {v2, v6}, Landroid/animation/PropertyValuesHolder;->ofFloat(Landroid/util/Property;[F)Landroid/animation/PropertyValuesHolder;
+    invoke-static {v4, v7}, Landroid/animation/PropertyValuesHolder;->ofFloat(Landroid/util/Property;[F)Landroid/animation/PropertyValuesHolder;
 
-    move-result-object v2
+    move-result-object v4
+
+    aput-object v4, v3, v8
 
     sget-object v4, Landroid/view/View;->SCALE_Y:Landroid/util/Property;
 
@@ -110,25 +114,21 @@
 
     mul-float/2addr p2, v1
 
-    new-array v6, v5, [F
+    new-array v2, v2, [F
 
-    aput p1, v6, v7
+    aput p1, v2, v8
 
-    aput p2, v6, v3
+    aput p2, v2, v5
 
     .line 179
-    invoke-static {v4, v6}, Landroid/animation/PropertyValuesHolder;->ofFloat(Landroid/util/Property;[F)Landroid/animation/PropertyValuesHolder;
+    invoke-static {v4, v2}, Landroid/animation/PropertyValuesHolder;->ofFloat(Landroid/util/Property;[F)Landroid/animation/PropertyValuesHolder;
 
     move-result-object p1
 
-    new-array p2, v5, [Landroid/animation/PropertyValuesHolder;
-
-    aput-object v2, p2, v7
-
-    aput-object p1, p2, v3
+    aput-object p1, v3, v5
 
     .line 175
-    invoke-static {p0, p2}, Landroid/animation/ObjectAnimator;->ofPropertyValuesHolder(Ljava/lang/Object;[Landroid/animation/PropertyValuesHolder;)Landroid/animation/ObjectAnimator;
+    invoke-static {p0, v3}, Landroid/animation/ObjectAnimator;->ofPropertyValuesHolder(Ljava/lang/Object;[Landroid/animation/PropertyValuesHolder;)Landroid/animation/ObjectAnimator;
 
     move-result-object p1
 

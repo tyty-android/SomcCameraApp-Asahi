@@ -21,7 +21,7 @@
 .method constructor <init>()V
     .locals 0
 
-    .line 1535
+    .line 1539
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -42,8 +42,16 @@
         }
     .end annotation
 
-    .line 1539
-    invoke-static {}, Ljp/co/sony/mc/camera/configuration/parameters/GridLine;->getDefaultValue()Ljp/co/sony/mc/camera/configuration/parameters/GridLine;
+    .line 1543
+    check-cast p1, Ljp/co/sony/mc/camera/setting/CommonSettings;
+
+    .line 1544
+    invoke-static {p1}, Ljp/co/sony/mc/camera/setting/CommonSettings;->-$$Nest$mgetLastCapturingMode(Ljp/co/sony/mc/camera/setting/CommonSettings;)Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
+
+    move-result-object p0
+
+    .line 1545
+    invoke-virtual {p0}, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->getDefaultCameraId()Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;
 
     move-result-object p0
 

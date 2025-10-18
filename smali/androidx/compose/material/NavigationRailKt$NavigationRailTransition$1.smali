@@ -48,8 +48,6 @@
 
 
 # instance fields
-.field final synthetic $$dirty:I
-
 .field final synthetic $animationProgress$delegate:Landroidx/compose/runtime/State;
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -75,7 +73,7 @@
 
 
 # direct methods
-.method constructor <init>(Lkotlin/jvm/functions/Function3;ILandroidx/compose/runtime/State;)V
+.method constructor <init>(Lkotlin/jvm/functions/Function3;Landroidx/compose/runtime/State;)V
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -88,7 +86,7 @@
             "-",
             "Ljava/lang/Integer;",
             "Lkotlin/Unit;",
-            ">;I",
+            ">;",
             "Landroidx/compose/runtime/State<",
             "Ljava/lang/Float;",
             ">;)V"
@@ -97,9 +95,7 @@
 
     iput-object p1, p0, Landroidx/compose/material/NavigationRailKt$NavigationRailTransition$1;->$content:Lkotlin/jvm/functions/Function3;
 
-    iput p2, p0, Landroidx/compose/material/NavigationRailKt$NavigationRailTransition$1;->$$dirty:I
-
-    iput-object p3, p0, Landroidx/compose/material/NavigationRailKt$NavigationRailTransition$1;->$animationProgress$delegate:Landroidx/compose/runtime/State;
+    iput-object p2, p0, Landroidx/compose/material/NavigationRailKt$NavigationRailTransition$1;->$animationProgress$delegate:Landroidx/compose/runtime/State;
 
     const/4 p1, 0x2
 
@@ -113,7 +109,7 @@
 .method public bridge synthetic invoke(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
 
-    .line 243
+    .line 309
     check-cast p1, Landroidx/compose/runtime/Composer;
 
     check-cast p2, Ljava/lang/Number;
@@ -132,7 +128,7 @@
 .method public final invoke(Landroidx/compose/runtime/Composer;I)V
     .locals 3
 
-    const-string v0, "C243@10259L26:NavigationRail.kt#jmzs0o"
+    const-string v0, "C309@13327L26:NavigationRail.kt#jmzs0o"
 
     invoke-static {p1, v0}, Landroidx/compose/runtime/ComposerKt;->sourceInformation(Landroidx/compose/runtime/Composer;Ljava/lang/String;)V
 
@@ -142,7 +138,7 @@
 
     if-ne v0, v1, :cond_1
 
-    .line 244
+    .line 310
     invoke-interface {p1}, Landroidx/compose/runtime/Composer;->getSkipping()Z
 
     move-result v0
@@ -166,7 +162,7 @@
 
     const/4 v0, -0x1
 
-    const-string v1, "androidx.compose.material.NavigationRailTransition.<anonymous> (NavigationRail.kt:242)"
+    const-string v1, "androidx.compose.material.NavigationRailTransition.<anonymous> (NavigationRail.kt:309)"
 
     const v2, -0x649ff6f2
 
@@ -175,27 +171,23 @@
     :cond_2
     iget-object p2, p0, Landroidx/compose/material/NavigationRailKt$NavigationRailTransition$1;->$content:Lkotlin/jvm/functions/Function3;
 
-    iget-object v0, p0, Landroidx/compose/material/NavigationRailKt$NavigationRailTransition$1;->$animationProgress$delegate:Landroidx/compose/runtime/State;
+    iget-object p0, p0, Landroidx/compose/material/NavigationRailKt$NavigationRailTransition$1;->$animationProgress$delegate:Landroidx/compose/runtime/State;
 
-    invoke-static {v0}, Landroidx/compose/material/NavigationRailKt;->access$NavigationRailTransition_Klgx_Pg$lambda$3(Landroidx/compose/runtime/State;)F
+    invoke-static {p0}, Landroidx/compose/material/NavigationRailKt;->access$NavigationRailTransition_Klgx_Pg$lambda$3(Landroidx/compose/runtime/State;)F
 
-    move-result v0
+    move-result p0
 
-    invoke-static {v0}, Ljava/lang/Float;->valueOf(F)Ljava/lang/Float;
-
-    move-result-object v0
-
-    iget p0, p0, Landroidx/compose/material/NavigationRailKt$NavigationRailTransition$1;->$$dirty:I
-
-    shr-int/lit8 p0, p0, 0x6
-
-    and-int/lit8 p0, p0, 0x70
-
-    invoke-static {p0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+    invoke-static {p0}, Ljava/lang/Float;->valueOf(F)Ljava/lang/Float;
 
     move-result-object p0
 
-    invoke-interface {p2, v0, p1, p0}, Lkotlin/jvm/functions/Function3;->invoke(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    const/4 v0, 0x0
+
+    invoke-static {v0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v0
+
+    invoke-interface {p2, p0, p1, v0}, Lkotlin/jvm/functions/Function3;->invoke(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     invoke-static {}, Landroidx/compose/runtime/ComposerKt;->isTraceInProgress()Z
 

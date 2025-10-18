@@ -1,6 +1,6 @@
 .class public Landroidx/compose/ui/tooling/preview/datasource/CollectionPreviewParameterProvider;
 .super Ljava/lang/Object;
-.source "CollectionPreviewParameterProvider.kt"
+.source "CollectionPreviewParameterProvider.android.kt"
 
 # interfaces
 .implements Landroidx/compose/ui/tooling/preview/PreviewParameterProvider;
@@ -68,7 +68,7 @@
 .end method
 
 .method public constructor <init>(Ljava/util/Collection;)V
-    .locals 1
+    .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -76,10 +76,6 @@
             "+TT;>;)V"
         }
     .end annotation
-
-    const-string v0, "collection"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 21
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V

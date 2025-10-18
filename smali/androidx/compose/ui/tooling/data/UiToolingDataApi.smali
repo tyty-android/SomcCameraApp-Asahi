@@ -1,6 +1,6 @@
 .class public interface abstract annotation Landroidx/compose/ui/tooling/data/UiToolingDataApi;
 .super Ljava/lang/Object;
-.source "UiToolingDataApi.kt"
+.source "UiToolingDataApi.jvm.kt"
 
 # interfaces
 .implements Ljava/lang/annotation/Annotation;

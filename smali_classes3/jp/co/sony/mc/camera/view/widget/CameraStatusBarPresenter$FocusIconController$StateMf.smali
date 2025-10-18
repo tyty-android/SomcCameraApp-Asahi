@@ -22,7 +22,7 @@
 .method private constructor <init>(Ljp/co/sony/mc/camera/view/widget/CameraStatusBarPresenter$FocusIconController;)V
     .locals 1
 
-    .line 492
+    .line 480
     iput-object p1, p0, Ljp/co/sony/mc/camera/view/widget/CameraStatusBarPresenter$FocusIconController$StateMf;->this$1:Ljp/co/sony/mc/camera/view/widget/CameraStatusBarPresenter$FocusIconController;
 
     const/4 v0, 0x0
@@ -63,7 +63,7 @@
 .method updateIcon()V
     .locals 1
 
-    .line 495
+    .line 483
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/widget/CameraStatusBarPresenter$FocusIconController$StateMf;->this$1:Ljp/co/sony/mc/camera/view/widget/CameraStatusBarPresenter$FocusIconController;
 
     const/4 v0, -0x1

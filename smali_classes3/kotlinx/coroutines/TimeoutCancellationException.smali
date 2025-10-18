@@ -17,7 +17,7 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/SourceDebugExtension;
-    value = "SMAP\nTimeout.kt\nKotlin\n*S Kotlin\n*F\n+ 1 Timeout.kt\nkotlinx/coroutines/TimeoutCancellationException\n+ 2 fake.kt\nkotlin/jvm/internal/FakeKt\n*L\n1#1,185:1\n1#2:186\n*E\n"
+    value = "SMAP\nTimeout.kt\nKotlin\n*S Kotlin\n*F\n+ 1 Timeout.kt\nkotlinx/coroutines/TimeoutCancellationException\n+ 2 fake.kt\nkotlin/jvm/internal/FakeKt\n*L\n1#1,193:1\n1#2:194\n*E\n"
 .end annotation
 
 .annotation runtime Lkotlin/Metadata;
@@ -41,7 +41,7 @@
     k = 0x1
     mv = {
         0x1,
-        0x6,
+        0x8,
         0x0
     }
     xi = 0x30
@@ -58,7 +58,7 @@
 
     const/4 v0, 0x0
 
-    .line 173
+    .line 177
     invoke-direct {p0, p1, v0}, Lkotlinx/coroutines/TimeoutCancellationException;-><init>(Ljava/lang/String;Lkotlinx/coroutines/Job;)V
 
     return-void
@@ -67,10 +67,10 @@
 .method public constructor <init>(Ljava/lang/String;Lkotlinx/coroutines/Job;)V
     .locals 0
 
-    .line 167
+    .line 172
     invoke-direct {p0, p1}, Ljava/util/concurrent/CancellationException;-><init>(Ljava/lang/String;)V
 
-    .line 166
+    .line 171
     iput-object p2, p0, Lkotlinx/coroutines/TimeoutCancellationException;->coroutine:Lkotlinx/coroutines/Job;
 
     return-void
@@ -81,7 +81,7 @@
 .method public bridge synthetic createCopy()Ljava/lang/Throwable;
     .locals 0
 
-    .line 164
+    .line 169
     invoke-virtual {p0}, Lkotlinx/coroutines/TimeoutCancellationException;->createCopy()Lkotlinx/coroutines/TimeoutCancellationException;
 
     move-result-object p0
@@ -94,7 +94,7 @@
 .method public createCopy()Lkotlinx/coroutines/TimeoutCancellationException;
     .locals 3
 
-    .line 177
+    .line 181
     new-instance v0, Lkotlinx/coroutines/TimeoutCancellationException;
 
     invoke-virtual {p0}, Lkotlinx/coroutines/TimeoutCancellationException;->getMessage()Ljava/lang/String;

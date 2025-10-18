@@ -72,7 +72,7 @@
 .method private constructor <init>()V
     .locals 0
 
-    .line 264
+    .line 347
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -85,7 +85,7 @@
 
     invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 286
+    .line 369
     invoke-interface {p0}, Lkotlin/jvm/functions/Function0;->invoke()Ljava/lang/Object;
 
     return-void
@@ -109,7 +109,7 @@
 
     invoke-static {p1, p0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 286
+    .line 369
     new-instance p0, Landroidx/activity/OnBackPressedDispatcher$Api33Impl$$ExternalSyntheticLambda0;
 
     invoke-direct {p0, p1}, Landroidx/activity/OnBackPressedDispatcher$Api33Impl$$ExternalSyntheticLambda0;-><init>(Lkotlin/jvm/functions/Function0;)V
@@ -128,13 +128,13 @@
 
     invoke-static {p3, p0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 272
+    .line 355
     check-cast p1, Landroid/window/OnBackInvokedDispatcher;
 
-    .line 273
+    .line 356
     check-cast p3, Landroid/window/OnBackInvokedCallback;
 
-    .line 274
+    .line 357
     invoke-interface {p1, p2, p3}, Landroid/window/OnBackInvokedDispatcher;->registerOnBackInvokedCallback(ILandroid/window/OnBackInvokedCallback;)V
 
     return-void
@@ -151,13 +151,13 @@
 
     invoke-static {p2, p0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 279
+    .line 362
     check-cast p1, Landroid/window/OnBackInvokedDispatcher;
 
-    .line 280
+    .line 363
     check-cast p2, Landroid/window/OnBackInvokedCallback;
 
-    .line 281
+    .line 364
     invoke-interface {p1, p2}, Landroid/window/OnBackInvokedDispatcher;->unregisterOnBackInvokedCallback(Landroid/window/OnBackInvokedCallback;)V
 
     return-void

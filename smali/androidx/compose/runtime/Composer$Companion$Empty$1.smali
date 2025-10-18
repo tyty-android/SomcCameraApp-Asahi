@@ -38,7 +38,7 @@
 .method constructor <init>()V
     .locals 0
 
-    .line 1072
+    .line 1091
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -49,7 +49,7 @@
 .method public toString()Ljava/lang/String;
     .locals 0
 
-    .line 1073
+    .line 1092
     const-string p0, "Empty"
 
     return-object p0

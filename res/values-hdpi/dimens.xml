@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <dimen name="dashboard_poster_height">98.0dip</dimen>
-    <dimen name="dashboard_poster_width">98.0dip</dimen>
-    <dimen name="scale_indicator_height">95.0dip</dimen>
-    <dimen name="scale_indicator_margin_left">10.0dip</dimen>
-    <dimen name="scale_indicator_margin_top">75.0dip</dimen>
-    <dimen name="scale_indicator_width">95.0dip</dimen>
-</resources>

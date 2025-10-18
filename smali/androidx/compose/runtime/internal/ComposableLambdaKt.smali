@@ -5,7 +5,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/SourceDebugExtension;
-    value = "SMAP\nComposableLambda.kt\nKotlin\n*S Kotlin\n*F\n+ 1 ComposableLambda.kt\nandroidx/compose/runtime/internal/ComposableLambdaKt\n+ 2 fake.kt\nkotlin/jvm/internal/FakeKt\n*L\n1#1,353:1\n1#2:354\n*E\n"
+    value = "SMAP\nComposableLambda.kt\nKotlin\n*S Kotlin\n*F\n+ 1 ComposableLambda.kt\nandroidx/compose/runtime/internal/ComposableLambdaKt\n+ 2 BitwiseOperators.kt\nandroidx/compose/runtime/BitwiseOperatorsKt\n*L\n1#1,617:1\n26#2:618\n*S KotlinDebug\n*F\n+ 1 ComposableLambda.kt\nandroidx/compose/runtime/internal/ComposableLambdaKt\n*L\n594#1:618\n*E\n"
 .end annotation
 
 .annotation runtime Lkotlin/Metadata;
@@ -56,7 +56,7 @@
 .method public static final bitsForSlot(II)I
     .locals 0
 
-    .line 31
+    .line 32
     rem-int/lit8 p1, p1, 0xa
 
     mul-int/lit8 p1, p1, 0x3
@@ -73,23 +73,22 @@
     .annotation runtime Landroidx/compose/runtime/ComposeCompilerApi;
     .end annotation
 
-    const-string v0, "composer"
+    const/4 v0, 0x1
 
-    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+    .line 618
+    invoke-static {p1, v0}, Ljava/lang/Integer;->rotateLeft(II)I
 
-    const-string v0, "block"
+    move-result v0
 
-    invoke-static {p3, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+    .line 594
+    invoke-interface {p0, v0}, Landroidx/compose/runtime/Composer;->startReplaceableGroup(I)V
 
-    .line 331
-    invoke-interface {p0, p1}, Landroidx/compose/runtime/Composer;->startReplaceableGroup(I)V
-
-    .line 332
+    .line 595
     invoke-interface {p0}, Landroidx/compose/runtime/Composer;->rememberedValue()Ljava/lang/Object;
 
     move-result-object v0
 
-    .line 333
+    .line 596
     sget-object v1, Landroidx/compose/runtime/Composer;->Companion:Landroidx/compose/runtime/Composer$Companion;
 
     invoke-virtual {v1}, Landroidx/compose/runtime/Composer$Companion;->getEmpty()Ljava/lang/Object;
@@ -98,17 +97,17 @@
 
     if-ne v0, v1, :cond_0
 
-    .line 334
+    .line 597
     new-instance v0, Landroidx/compose/runtime/internal/ComposableLambdaImpl;
 
-    invoke-direct {v0, p1, p2}, Landroidx/compose/runtime/internal/ComposableLambdaImpl;-><init>(IZ)V
+    invoke-direct {v0, p1, p2, p3}, Landroidx/compose/runtime/internal/ComposableLambdaImpl;-><init>(IZLjava/lang/Object;)V
 
-    .line 335
+    .line 598
     invoke-interface {p0, v0}, Landroidx/compose/runtime/Composer;->updateRememberedValue(Ljava/lang/Object;)V
 
     goto :goto_0
 
-    .line 338
+    .line 601
     :cond_0
     const-string p1, "null cannot be cast to non-null type androidx.compose.runtime.internal.ComposableLambdaImpl"
 
@@ -116,14 +115,14 @@
 
     check-cast v0, Landroidx/compose/runtime/internal/ComposableLambdaImpl;
 
-    .line 340
-    :goto_0
+    .line 602
     invoke-virtual {v0, p3}, Landroidx/compose/runtime/internal/ComposableLambdaImpl;->update(Ljava/lang/Object;)V
 
-    .line 341
+    .line 605
+    :goto_0
     invoke-interface {p0}, Landroidx/compose/runtime/Composer;->endReplaceableGroup()V
 
-    .line 342
+    .line 606
     check-cast v0, Landroidx/compose/runtime/internal/ComposableLambda;
 
     return-object v0
@@ -134,16 +133,10 @@
     .annotation runtime Landroidx/compose/runtime/ComposeCompilerApi;
     .end annotation
 
-    const-string v0, "block"
-
-    invoke-static {p2, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 352
+    .line 616
     new-instance v0, Landroidx/compose/runtime/internal/ComposableLambdaImpl;
 
-    invoke-direct {v0, p0, p1}, Landroidx/compose/runtime/internal/ComposableLambdaImpl;-><init>(IZ)V
-
-    invoke-virtual {v0, p2}, Landroidx/compose/runtime/internal/ComposableLambdaImpl;->update(Ljava/lang/Object;)V
+    invoke-direct {v0, p0, p1, p2}, Landroidx/compose/runtime/internal/ComposableLambdaImpl;-><init>(IZLjava/lang/Object;)V
 
     check-cast v0, Landroidx/compose/runtime/internal/ComposableLambda;
 
@@ -155,7 +148,7 @@
 
     const/4 v0, 0x2
 
-    .line 36
+    .line 37
     invoke-static {v0, p0}, Landroidx/compose/runtime/internal/ComposableLambdaKt;->bitsForSlot(II)I
 
     move-result p0
@@ -166,13 +159,9 @@
 .method public static final replacableWith(Landroidx/compose/runtime/RecomposeScope;Landroidx/compose/runtime/RecomposeScope;)Z
     .locals 2
 
-    const-string v0, "other"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
     if-eqz p0, :cond_1
 
-    .line 57
+    .line 316
     instance-of v0, p0, Landroidx/compose/runtime/RecomposeScopeImpl;
 
     if-eqz v0, :cond_0
@@ -181,7 +170,7 @@
 
     if-eqz v0, :cond_0
 
-    .line 58
+    .line 317
     move-object v0, p0
 
     check-cast v0, Landroidx/compose/runtime/RecomposeScopeImpl;
@@ -234,7 +223,7 @@
 
     const/4 v0, 0x1
 
-    .line 35
+    .line 36
     invoke-static {v0, p0}, Landroidx/compose/runtime/internal/ComposableLambdaKt;->bitsForSlot(II)I
 
     move-result p0

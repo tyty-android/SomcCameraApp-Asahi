@@ -54,30 +54,64 @@
 
 # direct methods
 .method static constructor <clinit>()V
-    .locals 9
+    .locals 4
+
+    const/16 v0, 0x9
 
     .line 733
-    const-string v7, "from"
+    new-array v0, v0, [Ljava/lang/String;
 
-    const-string/jumbo v8, "transitionFlags"
+    const/4 v1, 0x0
 
-    const-string v0, "duration"
+    const-string v2, "duration"
 
-    const-string v1, "from"
+    aput-object v2, v0, v1
 
-    const-string/jumbo v2, "to"
+    const/4 v1, 0x1
+
+    const-string v2, "from"
+
+    aput-object v2, v0, v1
+
+    const/4 v1, 0x2
+
+    const-string/jumbo v3, "to"
+
+    aput-object v3, v0, v1
+
+    const/4 v1, 0x3
 
     const-string v3, "pathMotionArc"
 
-    const-string v4, "autoTransition"
+    aput-object v3, v0, v1
 
-    const-string v5, "motionInterpolator"
+    const/4 v1, 0x4
 
-    const-string/jumbo v6, "staggered"
+    const-string v3, "autoTransition"
 
-    filled-new-array/range {v0 .. v8}, [Ljava/lang/String;
+    aput-object v3, v0, v1
 
-    move-result-object v0
+    const/4 v1, 0x5
+
+    const-string v3, "motionInterpolator"
+
+    aput-object v3, v0, v1
+
+    const/4 v1, 0x6
+
+    const-string/jumbo v3, "staggered"
+
+    aput-object v3, v0, v1
+
+    const/4 v1, 0x7
+
+    aput-object v2, v0, v1
+
+    const/16 v1, 0x8
+
+    const-string/jumbo v2, "transitionFlags"
+
+    aput-object v2, v0, v1
 
     sput-object v0, Landroidx/constraintlayout/core/motion/utils/TypedValues$TransitionType;->KEY_WORDS:[Ljava/lang/String;
 

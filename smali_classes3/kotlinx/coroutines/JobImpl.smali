@@ -33,7 +33,7 @@
     k = 0x1
     mv = {
         0x1,
-        0x6,
+        0x8,
         0x0
     }
     xi = 0x30
@@ -50,13 +50,13 @@
 
     const/4 v0, 0x1
 
-    .line 1316
+    .line 1309
     invoke-direct {p0, v0}, Lkotlinx/coroutines/JobSupport;-><init>(Z)V
 
-    .line 1317
+    .line 1310
     invoke-virtual {p0, p1}, Lkotlinx/coroutines/JobImpl;->initParentJob(Lkotlinx/coroutines/Job;)V
 
-    .line 1329
+    .line 1322
     invoke-direct {p0}, Lkotlinx/coroutines/JobImpl;->handlesException()Z
 
     move-result p1
@@ -69,7 +69,7 @@
 .method private final handlesException()Z
     .locals 3
 
-    .line 1336
+    .line 1329
     invoke-virtual {p0}, Lkotlinx/coroutines/JobImpl;->getParentHandle$kotlinx_coroutines_core()Lkotlinx/coroutines/ChildHandle;
 
     move-result-object p0
@@ -100,7 +100,7 @@
 
     goto :goto_2
 
-    .line 1338
+    .line 1331
     :cond_1
     invoke-virtual {p0}, Lkotlinx/coroutines/JobSupport;->getHandlesException$kotlinx_coroutines_core()Z
 
@@ -112,7 +112,7 @@
 
     return p0
 
-    .line 1339
+    .line 1332
     :cond_2
     invoke-virtual {p0}, Lkotlinx/coroutines/JobSupport;->getParentHandle$kotlinx_coroutines_core()Lkotlinx/coroutines/ChildHandle;
 
@@ -148,7 +148,7 @@
 .method public complete()Z
     .locals 1
 
-    .line 1330
+    .line 1323
     sget-object v0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
 
     invoke-virtual {p0, v0}, Lkotlinx/coroutines/JobImpl;->makeCompleting$kotlinx_coroutines_core(Ljava/lang/Object;)Z
@@ -161,7 +161,7 @@
 .method public completeExceptionally(Ljava/lang/Throwable;)Z
     .locals 4
 
-    .line 1332
+    .line 1325
     new-instance v0, Lkotlinx/coroutines/CompletedExceptionally;
 
     const/4 v1, 0x2
@@ -182,7 +182,7 @@
 .method public getHandlesException$kotlinx_coroutines_core()Z
     .locals 0
 
-    .line 1329
+    .line 1322
     iget-boolean p0, p0, Lkotlinx/coroutines/JobImpl;->handlesException:Z
 
     return p0

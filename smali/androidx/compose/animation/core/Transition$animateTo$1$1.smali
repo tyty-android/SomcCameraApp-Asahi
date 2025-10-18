@@ -56,7 +56,7 @@
         0x0
     }
     l = {
-        0x1b3
+        0x289
     }
     m = "invokeSuspend"
     n = {
@@ -186,7 +186,7 @@
 
     move-result-object v0
 
-    .line 65535
+    .line 646
     iget v1, p0, Landroidx/compose/animation/core/Transition$animateTo$1$1;->label:I
 
     const/4 v2, 0x1
@@ -221,7 +221,7 @@
 
     move-object v1, p1
 
-    .line 434
+    .line 648
     :cond_2
     :goto_0
     invoke-interface {v1}, Lkotlinx/coroutines/CoroutineScope;->getCoroutineContext()Lkotlin/coroutines/CoroutineContext;
@@ -232,7 +232,7 @@
 
     move-result p1
 
-    .line 435
+    .line 649
     new-instance v3, Landroidx/compose/animation/core/Transition$animateTo$1$1$1;
 
     iget-object v4, p0, Landroidx/compose/animation/core/Transition$animateTo$1$1;->this$0:Landroidx/compose/animation/core/Transition;

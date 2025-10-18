@@ -18,7 +18,7 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 956
+    .line 1001
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -26,37 +26,11 @@
 
 
 # virtual methods
-.method public attach(Lio/grpc/Context;)V
-    .locals 0
-    .annotation runtime Ljava/lang/Deprecated;
-    .end annotation
-
-    .line 962
-    new-instance p0, Ljava/lang/UnsupportedOperationException;
-
-    const-string p1, "Deprecated. Do not call."
-
-    invoke-direct {p0, p1}, Ljava/lang/UnsupportedOperationException;-><init>(Ljava/lang/String;)V
-
-    throw p0
-.end method
-
 .method public abstract current()Lio/grpc/Context;
 .end method
 
 .method public abstract detach(Lio/grpc/Context;Lio/grpc/Context;)V
 .end method
 
-.method public doAttach(Lio/grpc/Context;)Lio/grpc/Context;
-    .locals 1
-
-    .line 981
-    invoke-virtual {p0}, Lio/grpc/Context$Storage;->current()Lio/grpc/Context;
-
-    move-result-object v0
-
-    .line 982
-    invoke-virtual {p0, p1}, Lio/grpc/Context$Storage;->attach(Lio/grpc/Context;)V
-
-    return-object v0
+.method public abstract doAttach(Lio/grpc/Context;)Lio/grpc/Context;
 .end method

@@ -5,7 +5,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/SourceDebugExtension;
-    value = "SMAP\nWindowInfo.kt\nKotlin\n*S Kotlin\n*F\n+ 1 WindowInfo.kt\nandroidx/compose/ui/platform/WindowInfoKt\n+ 2 CompositionLocal.kt\nandroidx/compose/runtime/CompositionLocal\n+ 3 Composables.kt\nandroidx/compose/runtime/ComposablesKt\n+ 4 Composer.kt\nandroidx/compose/runtime/ComposerKt\n*L\n1#1,81:1\n76#2:82\n50#3:83\n49#3:84\n1097#4,6:85\n*S KotlinDebug\n*F\n+ 1 WindowInfo.kt\nandroidx/compose/ui/platform/WindowInfoKt\n*L\n55#1:82\n57#1:83\n57#1:84\n57#1:85,6\n*E\n"
+    value = "SMAP\nWindowInfo.kt\nKotlin\n*S Kotlin\n*F\n+ 1 WindowInfo.kt\nandroidx/compose/ui/platform/WindowInfoKt\n+ 2 CompositionLocal.kt\nandroidx/compose/runtime/CompositionLocal\n+ 3 Composer.kt\nandroidx/compose/runtime/ComposerKt\n*L\n1#1,81:1\n74#2:82\n1116#3,6:83\n*S KotlinDebug\n*F\n+ 1 WindowInfo.kt\nandroidx/compose/ui/platform/WindowInfoKt\n*L\n55#1:82\n57#1:83,6\n*E\n"
 .end annotation
 
 .annotation runtime Lkotlin/Metadata;
@@ -50,10 +50,6 @@
         }
     .end annotation
 
-    const-string v0, "onWindowFocusChanged"
-
-    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
     const v0, 0x79e8727
 
     .line 54
@@ -61,7 +57,7 @@
 
     move-result-object p1
 
-    const-string v1, "C(WindowFocusObserver)54@2046L7,55@2073L42,56@2147L90,56@2120L117:WindowInfo.kt#itgzvw"
+    const-string v1, "C(WindowFocusObserver)54@2046L7,55@2073L42,56@2120L117:WindowInfo.kt#itgzvw"
 
     invoke-static {p1, v1}, Landroidx/compose/runtime/ComposerKt;->sourceInformation(Landroidx/compose/runtime/Composer;Ljava/lang/String;)V
 
@@ -157,16 +153,11 @@
 
     move-result-object v1
 
-    const v2, 0x1e7b2b64
+    const v2, -0x3b4b1964
 
     .line 57
     invoke-interface {p1, v2}, Landroidx/compose/runtime/Composer;->startReplaceableGroup(I)V
 
-    const-string v2, "CC(remember)P(1,2):Composables.kt#9igjgp"
-
-    invoke-static {p1, v2}, Landroidx/compose/runtime/ComposerKt;->sourceInformation(Landroidx/compose/runtime/Composer;Ljava/lang/String;)V
-
-    .line 83
     invoke-interface {p1, v0}, Landroidx/compose/runtime/Composer;->changed(Ljava/lang/Object;)Z
 
     move-result v2
@@ -177,14 +168,14 @@
 
     or-int/2addr v2, v3
 
-    .line 85
+    .line 83
     invoke-interface {p1}, Landroidx/compose/runtime/Composer;->rememberedValue()Ljava/lang/Object;
 
     move-result-object v3
 
     if-nez v2, :cond_5
 
-    .line 86
+    .line 84
     sget-object v2, Landroidx/compose/runtime/Composer;->Companion:Landroidx/compose/runtime/Composer$Companion;
 
     invoke-virtual {v2}, Landroidx/compose/runtime/Composer$Companion;->getEmpty()Ljava/lang/Object;
@@ -205,18 +196,17 @@
 
     check-cast v3, Lkotlin/jvm/functions/Function2;
 
-    .line 88
+    .line 86
     invoke-interface {p1, v3}, Landroidx/compose/runtime/Composer;->updateRememberedValue(Ljava/lang/Object;)V
 
-    .line 84
+    .line 57
     :cond_6
-    invoke-interface {p1}, Landroidx/compose/runtime/Composer;->endReplaceableGroup()V
-
     check-cast v3, Lkotlin/jvm/functions/Function2;
+
+    invoke-interface {p1}, Landroidx/compose/runtime/Composer;->endReplaceableGroup()V
 
     const/16 v1, 0x40
 
-    .line 57
     invoke-static {v0, v3, p1, v1}, Landroidx/compose/runtime/EffectsKt;->LaunchedEffect(Ljava/lang/Object;Lkotlin/jvm/functions/Function2;Landroidx/compose/runtime/Composer;I)V
 
     invoke-static {}, Landroidx/compose/runtime/ComposerKt;->isTraceInProgress()Z
@@ -234,11 +224,8 @@
 
     move-result-object p1
 
-    if-nez p1, :cond_8
+    if-eqz p1, :cond_8
 
-    goto :goto_4
-
-    :cond_8
     new-instance v0, Landroidx/compose/ui/platform/WindowInfoKt$WindowFocusObserver$2;
 
     invoke-direct {v0, p0, p2}, Landroidx/compose/ui/platform/WindowInfoKt$WindowFocusObserver$2;-><init>(Lkotlin/jvm/functions/Function1;I)V
@@ -247,6 +234,6 @@
 
     invoke-interface {p1, v0}, Landroidx/compose/runtime/ScopeUpdateScope;->updateScope(Lkotlin/jvm/functions/Function2;)V
 
-    :goto_4
+    :cond_8
     return-void
 .end method

@@ -52,21 +52,17 @@
 
 # direct methods
 .method public constructor <init>(Landroidx/compose/ui/text/android/TextLayout;)V
-    .locals 1
+    .locals 0
 
-    const-string v0, "layout"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 753
+    .line 751
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 754
+    .line 752
     iput-object p1, p0, Landroidx/compose/ui/text/android/HorizontalPositionCache;->layout:Landroidx/compose/ui/text/android/TextLayout;
 
     const/4 p1, -0x1
 
-    .line 755
+    .line 753
     iput p1, p0, Landroidx/compose/ui/text/android/HorizontalPositionCache;->cachedKey:I
 
     return-void
@@ -81,7 +77,7 @@
 
     if-eqz p2, :cond_1
 
-    .line 800
+    .line 798
     iget-object v2, p0, Landroidx/compose/ui/text/android/HorizontalPositionCache;->layout:Landroidx/compose/ui/text/android/TextLayout;
 
     invoke-virtual {v2}, Landroidx/compose/ui/text/android/TextLayout;->getLayout()Landroid/text/Layout;
@@ -92,14 +88,14 @@
 
     move-result v2
 
-    .line 801
+    .line 799
     iget-object v3, p0, Landroidx/compose/ui/text/android/HorizontalPositionCache;->layout:Landroidx/compose/ui/text/android/TextLayout;
 
     invoke-virtual {v3, v2}, Landroidx/compose/ui/text/android/TextLayout;->getLineStart(I)I
 
     move-result v3
 
-    .line 802
+    .line 800
     iget-object v4, p0, Landroidx/compose/ui/text/android/HorizontalPositionCache;->layout:Landroidx/compose/ui/text/android/TextLayout;
 
     invoke-virtual {v4, v2}, Landroidx/compose/ui/text/android/TextLayout;->getLineEnd(I)I
@@ -143,7 +139,7 @@
     :goto_1
     add-int/2addr v3, v0
 
-    .line 815
+    .line 813
     iget v0, p0, Landroidx/compose/ui/text/android/HorizontalPositionCache;->cachedKey:I
 
     if-ne v0, v3, :cond_5
@@ -155,7 +151,7 @@
     :cond_5
     if-eqz p4, :cond_6
 
-    .line 818
+    .line 816
     iget-object p4, p0, Landroidx/compose/ui/text/android/HorizontalPositionCache;->layout:Landroidx/compose/ui/text/android/TextLayout;
 
     invoke-virtual {p4, p1, p2}, Landroidx/compose/ui/text/android/TextLayout;->getPrimaryHorizontal(IZ)F
@@ -164,7 +160,7 @@
 
     goto :goto_2
 
-    .line 820
+    .line 818
     :cond_6
     iget-object p4, p0, Landroidx/compose/ui/text/android/HorizontalPositionCache;->layout:Landroidx/compose/ui/text/android/TextLayout;
 
@@ -175,10 +171,10 @@
     :goto_2
     if-eqz p3, :cond_7
 
-    .line 824
+    .line 822
     iput v3, p0, Landroidx/compose/ui/text/android/HorizontalPositionCache;->cachedKey:I
 
-    .line 825
+    .line 823
     iput p1, p0, Landroidx/compose/ui/text/android/HorizontalPositionCache;->cachedValue:F
 
     :cond_7
@@ -190,7 +186,7 @@
 .method public final getLayout()Landroidx/compose/ui/text/android/TextLayout;
     .locals 0
 
-    .line 754
+    .line 752
     iget-object p0, p0, Landroidx/compose/ui/text/android/HorizontalPositionCache;->layout:Landroidx/compose/ui/text/android/TextLayout;
 
     return-object p0
@@ -203,7 +199,7 @@
 
     const/4 v1, 0x1
 
-    .line 760
+    .line 758
     invoke-direct {p0, p1, v0, v0, v1}, Landroidx/compose/ui/text/android/HorizontalPositionCache;->get(IZZZ)F
 
     move-result p0
@@ -216,7 +212,7 @@
 
     const/4 v0, 0x1
 
-    .line 765
+    .line 763
     invoke-direct {p0, p1, v0, v0, v0}, Landroidx/compose/ui/text/android/HorizontalPositionCache;->get(IZZZ)F
 
     move-result p0
@@ -229,7 +225,7 @@
 
     const/4 v0, 0x0
 
-    .line 770
+    .line 768
     invoke-direct {p0, p1, v0, v0, v0}, Landroidx/compose/ui/text/android/HorizontalPositionCache;->get(IZZZ)F
 
     move-result p0
@@ -244,7 +240,7 @@
 
     const/4 v1, 0x0
 
-    .line 775
+    .line 773
     invoke-direct {p0, p1, v0, v0, v1}, Landroidx/compose/ui/text/android/HorizontalPositionCache;->get(IZZZ)F
 
     move-result p0

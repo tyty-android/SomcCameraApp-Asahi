@@ -67,7 +67,7 @@
 .method public final invoke()Ljava/lang/Float;
     .locals 3
 
-    .line 349
+    .line 364
     iget-object v0, p0, Landroidx/compose/foundation/MarqueeModifierNode$runAnimation$2$1;->this$0:Landroidx/compose/foundation/MarqueeModifierNode;
 
     invoke-static {v0}, Landroidx/compose/foundation/MarqueeModifierNode;->access$getContentWidth(Landroidx/compose/foundation/MarqueeModifierNode;)I
@@ -86,7 +86,7 @@
 
     return-object v2
 
-    .line 350
+    .line 365
     :cond_0
     iget-object v0, p0, Landroidx/compose/foundation/MarqueeModifierNode$runAnimation$2$1;->this$0:Landroidx/compose/foundation/MarqueeModifierNode;
 
@@ -116,7 +116,7 @@
 
     return-object v2
 
-    .line 351
+    .line 366
     :cond_1
     iget-object v0, p0, Landroidx/compose/foundation/MarqueeModifierNode$runAnimation$2$1;->this$0:Landroidx/compose/foundation/MarqueeModifierNode;
 
@@ -144,7 +144,7 @@
 .method public bridge synthetic invoke()Ljava/lang/Object;
     .locals 0
 
-    .line 346
+    .line 361
     invoke-virtual {p0}, Landroidx/compose/foundation/MarqueeModifierNode$runAnimation$2$1;->invoke()Ljava/lang/Float;
 
     move-result-object p0

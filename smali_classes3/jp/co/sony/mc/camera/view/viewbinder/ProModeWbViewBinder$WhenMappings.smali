@@ -16,8 +16,8 @@
 .annotation runtime Lkotlin/Metadata;
     k = 0x3
     mv = {
-        0x1,
-        0x9,
+        0x2,
+        0x0,
         0x0
     }
     xi = 0x30
@@ -29,10 +29,12 @@
 
 .field public static final synthetic $EnumSwitchMapping$1:[I
 
+.field public static final synthetic $EnumSwitchMapping$2:[I
+
 
 # direct methods
 .method static constructor <clinit>()V
-    .locals 4
+    .locals 5
 
     invoke-static {}, Ljp/co/sony/mc/camera/view/uistate/WbSubmenuType;->values()[Ljp/co/sony/mc/camera/view/uistate/WbSubmenuType;
 
@@ -70,7 +72,97 @@
     .catch Ljava/lang/NoSuchFieldError; {:try_start_1 .. :try_end_1} :catch_1
 
     :catch_1
+    :try_start_2
+    sget-object v3, Ljp/co/sony/mc/camera/view/uistate/WbSubmenuType;->CONFIRM:Ljp/co/sony/mc/camera/view/uistate/WbSubmenuType;
+
+    invoke-virtual {v3}, Ljp/co/sony/mc/camera/view/uistate/WbSubmenuType;->ordinal()I
+
+    move-result v3
+
+    const/4 v4, 0x3
+
+    aput v4, v0, v3
+    :try_end_2
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_2 .. :try_end_2} :catch_2
+
+    :catch_2
+    :try_start_3
+    sget-object v3, Ljp/co/sony/mc/camera/view/uistate/WbSubmenuType;->PALETTE:Ljp/co/sony/mc/camera/view/uistate/WbSubmenuType;
+
+    invoke-virtual {v3}, Ljp/co/sony/mc/camera/view/uistate/WbSubmenuType;->ordinal()I
+
+    move-result v3
+
+    const/4 v4, 0x4
+
+    aput v4, v0, v3
+    :try_end_3
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_3 .. :try_end_3} :catch_3
+
+    :catch_3
+    :try_start_4
+    sget-object v3, Ljp/co/sony/mc/camera/view/uistate/WbSubmenuType;->FAIL:Ljp/co/sony/mc/camera/view/uistate/WbSubmenuType;
+
+    invoke-virtual {v3}, Ljp/co/sony/mc/camera/view/uistate/WbSubmenuType;->ordinal()I
+
+    move-result v3
+
+    const/4 v4, 0x5
+
+    aput v4, v0, v3
+    :try_end_4
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_4 .. :try_end_4} :catch_4
+
+    :catch_4
+    :try_start_5
+    sget-object v3, Ljp/co/sony/mc/camera/view/uistate/WbSubmenuType;->TEMPERATURE:Ljp/co/sony/mc/camera/view/uistate/WbSubmenuType;
+
+    invoke-virtual {v3}, Ljp/co/sony/mc/camera/view/uistate/WbSubmenuType;->ordinal()I
+
+    move-result v3
+
+    const/4 v4, 0x6
+
+    aput v4, v0, v3
+    :try_end_5
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_5 .. :try_end_5} :catch_5
+
+    :catch_5
     sput-object v0, Ljp/co/sony/mc/camera/view/viewbinder/ProModeWbViewBinder$WhenMappings;->$EnumSwitchMapping$0:[I
+
+    invoke-static {}, Ljp/co/sony/mc/camera/setting/SettingAppearance;->values()[Ljp/co/sony/mc/camera/setting/SettingAppearance;
+
+    move-result-object v0
+
+    array-length v0, v0
+
+    new-array v0, v0, [I
+
+    :try_start_6
+    sget-object v3, Ljp/co/sony/mc/camera/setting/SettingAppearance;->ENABLED:Ljp/co/sony/mc/camera/setting/SettingAppearance;
+
+    invoke-virtual {v3}, Ljp/co/sony/mc/camera/setting/SettingAppearance;->ordinal()I
+
+    move-result v3
+
+    aput v1, v0, v3
+    :try_end_6
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_6 .. :try_end_6} :catch_6
+
+    :catch_6
+    :try_start_7
+    sget-object v3, Ljp/co/sony/mc/camera/setting/SettingAppearance;->DISABLED_WITH_DIALOG_MESSAGE:Ljp/co/sony/mc/camera/setting/SettingAppearance;
+
+    invoke-virtual {v3}, Ljp/co/sony/mc/camera/setting/SettingAppearance;->ordinal()I
+
+    move-result v3
+
+    aput v2, v0, v3
+    :try_end_7
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_7 .. :try_end_7} :catch_7
+
+    :catch_7
+    sput-object v0, Ljp/co/sony/mc/camera/view/viewbinder/ProModeWbViewBinder$WhenMappings;->$EnumSwitchMapping$1:[I
 
     invoke-static {}, Ljp/co/sony/mc/camera/view/orientation/LayoutOrientation;->values()[Ljp/co/sony/mc/camera/view/orientation/LayoutOrientation;
 
@@ -80,7 +172,7 @@
 
     new-array v0, v0, [I
 
-    :try_start_2
+    :try_start_8
     sget-object v3, Ljp/co/sony/mc/camera/view/orientation/LayoutOrientation;->LANDSCAPE:Ljp/co/sony/mc/camera/view/orientation/LayoutOrientation;
 
     invoke-virtual {v3}, Ljp/co/sony/mc/camera/view/orientation/LayoutOrientation;->ordinal()I
@@ -88,11 +180,11 @@
     move-result v3
 
     aput v1, v0, v3
-    :try_end_2
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_2 .. :try_end_2} :catch_2
+    :try_end_8
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_8 .. :try_end_8} :catch_8
 
-    :catch_2
-    :try_start_3
+    :catch_8
+    :try_start_9
     sget-object v1, Ljp/co/sony/mc/camera/view/orientation/LayoutOrientation;->REVERSE_LANDSCAPE:Ljp/co/sony/mc/camera/view/orientation/LayoutOrientation;
 
     invoke-virtual {v1}, Ljp/co/sony/mc/camera/view/orientation/LayoutOrientation;->ordinal()I
@@ -100,11 +192,11 @@
     move-result v1
 
     aput v2, v0, v1
-    :try_end_3
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_3 .. :try_end_3} :catch_3
+    :try_end_9
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_9 .. :try_end_9} :catch_9
 
-    :catch_3
-    sput-object v0, Ljp/co/sony/mc/camera/view/viewbinder/ProModeWbViewBinder$WhenMappings;->$EnumSwitchMapping$1:[I
+    :catch_9
+    sput-object v0, Ljp/co/sony/mc/camera/view/viewbinder/ProModeWbViewBinder$WhenMappings;->$EnumSwitchMapping$2:[I
 
     return-void
 .end method

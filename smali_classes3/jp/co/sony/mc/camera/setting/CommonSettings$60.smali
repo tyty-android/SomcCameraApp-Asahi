@@ -21,7 +21,7 @@
 .method constructor <init>()V
     .locals 0
 
-    .line 792
+    .line 795
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -46,13 +46,13 @@
         }
     .end annotation
 
-    .line 796
+    .line 799
     check-cast p1, Ljp/co/sony/mc/camera/setting/CommonSettings;
 
-    .line 797
-    check-cast p3, Ljp/co/sony/mc/camera/configuration/parameters/Geotag;
+    .line 800
+    check-cast p3, Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;
 
-    invoke-static {p1, p3}, Ljp/co/sony/mc/camera/setting/CommonSettings;->-$$Nest$msetGeotag(Ljp/co/sony/mc/camera/setting/CommonSettings;Ljp/co/sony/mc/camera/configuration/parameters/Geotag;)Z
+    invoke-static {p1, p3}, Ljp/co/sony/mc/camera/setting/CommonSettings;->-$$Nest$msetLastCameraId(Ljp/co/sony/mc/camera/setting/CommonSettings;Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;)Z
 
     move-result p0
 

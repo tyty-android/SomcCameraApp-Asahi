@@ -97,7 +97,7 @@
 .method public constructor <init>(CCI)V
     .locals 1
 
-    .line 15
+    .line 16
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     if-eqz p3, :cond_1
@@ -106,10 +106,10 @@
 
     if-eq p3, v0, :cond_0
 
-    .line 30
+    .line 31
     iput-char p1, p0, Lkotlin/ranges/CharProgression;->first:C
 
-    .line 35
+    .line 36
     invoke-static {p1, p2, p3}, Lkotlin/internal/ProgressionUtilKt;->getProgressionLastElement(III)I
 
     move-result p1
@@ -118,12 +118,12 @@
 
     iput-char p1, p0, Lkotlin/ranges/CharProgression;->last:C
 
-    .line 40
+    .line 41
     iput p3, p0, Lkotlin/ranges/CharProgression;->step:I
 
     return-void
 
-    .line 24
+    .line 25
     :cond_0
     new-instance p0, Ljava/lang/IllegalArgumentException;
 
@@ -133,7 +133,7 @@
 
     throw p0
 
-    .line 23
+    .line 24
     :cond_1
     new-instance p0, Ljava/lang/IllegalArgumentException;
 
@@ -149,7 +149,7 @@
 .method public equals(Ljava/lang/Object;)Z
     .locals 2
 
-    .line 53
+    .line 54
     instance-of v0, p1, Lkotlin/ranges/CharProgression;
 
     if-eqz v0, :cond_2
@@ -170,7 +170,7 @@
 
     if-nez v0, :cond_1
 
-    .line 54
+    .line 55
     :cond_0
     iget-char v0, p0, Lkotlin/ranges/CharProgression;->first:C
 
@@ -207,7 +207,7 @@
 .method public final getFirst()C
     .locals 0
 
-    .line 30
+    .line 31
     iget-char p0, p0, Lkotlin/ranges/CharProgression;->first:C
 
     return p0
@@ -216,7 +216,7 @@
 .method public final getLast()C
     .locals 0
 
-    .line 35
+    .line 36
     iget-char p0, p0, Lkotlin/ranges/CharProgression;->last:C
 
     return p0
@@ -225,7 +225,7 @@
 .method public final getStep()I
     .locals 0
 
-    .line 40
+    .line 41
     iget p0, p0, Lkotlin/ranges/CharProgression;->step:I
 
     return p0
@@ -234,7 +234,7 @@
 .method public hashCode()I
     .locals 2
 
-    .line 57
+    .line 58
     invoke-virtual {p0}, Lkotlin/ranges/CharProgression;->isEmpty()Z
 
     move-result v0
@@ -267,7 +267,7 @@
 .method public isEmpty()Z
     .locals 3
 
-    .line 50
+    .line 51
     iget v0, p0, Lkotlin/ranges/CharProgression;->step:I
 
     const/4 v1, 0x1
@@ -311,7 +311,7 @@
 .method public bridge synthetic iterator()Ljava/util/Iterator;
     .locals 0
 
-    .line 15
+    .line 16
     invoke-virtual {p0}, Lkotlin/ranges/CharProgression;->iterator()Lkotlin/collections/CharIterator;
 
     move-result-object p0
@@ -324,7 +324,7 @@
 .method public iterator()Lkotlin/collections/CharIterator;
     .locals 3
 
-    .line 42
+    .line 43
     new-instance v0, Lkotlin/ranges/CharProgressionIterator;
 
     iget-char v1, p0, Lkotlin/ranges/CharProgression;->first:C
@@ -343,7 +343,7 @@
 .method public toString()Ljava/lang/String;
     .locals 3
 
-    .line 59
+    .line 60
     iget v0, p0, Lkotlin/ranges/CharProgression;->step:I
 
     const-string v1, " step "

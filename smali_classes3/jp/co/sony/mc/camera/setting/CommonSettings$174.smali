@@ -21,7 +21,7 @@
 .method constructor <init>()V
     .locals 0
 
-    .line 1647
+    .line 1653
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -42,8 +42,12 @@
         }
     .end annotation
 
-    .line 1651
-    sget-object p0, Ljp/co/sony/mc/camera/configuration/parameters/DispCustom;->HEADER:Ljp/co/sony/mc/camera/configuration/parameters/DispCustom;
+    const/4 p0, 0x0
+
+    .line 1657
+    invoke-static {p0}, Ljava/lang/Float;->valueOf(F)Ljava/lang/Float;
+
+    move-result-object p0
 
     return-object p0
 .end method

@@ -66,7 +66,7 @@
 .method public final invoke()Landroidx/compose/ui/text/android/LayoutHelper;
     .locals 1
 
-    .line 342
+    .line 340
     new-instance v0, Landroidx/compose/ui/text/android/LayoutHelper;
 
     iget-object p0, p0, Landroidx/compose/ui/text/android/TextLayout$layoutHelper$2;->this$0:Landroidx/compose/ui/text/android/TextLayout;
@@ -83,7 +83,7 @@
 .method public bridge synthetic invoke()Ljava/lang/Object;
     .locals 0
 
-    .line 342
+    .line 340
     invoke-virtual {p0}, Landroidx/compose/ui/text/android/TextLayout$layoutHelper$2;->invoke()Landroidx/compose/ui/text/android/LayoutHelper;
 
     move-result-object p0

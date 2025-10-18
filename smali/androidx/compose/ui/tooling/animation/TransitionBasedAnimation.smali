@@ -1,6 +1,6 @@
 .class public interface abstract Landroidx/compose/ui/tooling/animation/TransitionBasedAnimation;
 .super Ljava/lang/Object;
-.source "TransitionBasedAnimation.kt"
+.source "TransitionBasedAnimation.android.kt"
 
 # interfaces
 .implements Landroidx/compose/animation/tooling/ComposeAnimation;

@@ -57,9 +57,9 @@
         0x1
     }
     l = {
-        0x21b,
-        0x21d,
-        0x228
+        0x21a,
+        0x21c,
+        0x227
     }
     m = "invokeSuspend"
     n = {
@@ -261,7 +261,7 @@
 
     move-result-object v0
 
-    .line 538
+    .line 537
     iget v1, p0, Landroidx/compose/foundation/gestures/DragGestureDetectorKt$detectHorizontalDragGestures$5;->label:I
 
     const/4 v2, 0x3
@@ -320,7 +320,7 @@
 
     check-cast p1, Landroidx/compose/ui/input/pointer/AwaitPointerEventScope;
 
-    .line 539
+    .line 538
     move-object v8, p0
 
     check-cast v8, Lkotlin/coroutines/Continuation;
@@ -354,26 +354,26 @@
 
     move-object p1, v11
 
-    .line 538
+    .line 537
     :goto_0
     check-cast p1, Landroidx/compose/ui/input/pointer/PointerInputChange;
 
-    .line 540
+    .line 539
     new-instance v10, Lkotlin/jvm/internal/Ref$FloatRef;
 
     invoke-direct {v10}, Lkotlin/jvm/internal/Ref$FloatRef;-><init>()V
 
-    .line 542
+    .line 541
     invoke-virtual {p1}, Landroidx/compose/ui/input/pointer/PointerInputChange;->getId-J3iCeTQ()J
 
     move-result-wide v5
 
-    .line 543
+    .line 542
     invoke-virtual {p1}, Landroidx/compose/ui/input/pointer/PointerInputChange;->getType-T8wyACA()I
 
     move-result v7
 
-    .line 541
+    .line 540
     new-instance p1, Landroidx/compose/foundation/gestures/DragGestureDetectorKt$detectHorizontalDragGestures$5$drag$1;
 
     invoke-direct {p1, v10}, Landroidx/compose/foundation/gestures/DragGestureDetectorKt$detectHorizontalDragGestures$5$drag$1;-><init>(Lkotlin/jvm/internal/Ref$FloatRef;)V
@@ -407,13 +407,13 @@
 
     move-object v1, v10
 
-    .line 538
+    .line 537
     :goto_1
     check-cast p1, Landroidx/compose/ui/input/pointer/PointerInputChange;
 
     if-eqz p1, :cond_8
 
-    .line 549
+    .line 548
     iget-object v4, p0, Landroidx/compose/foundation/gestures/DragGestureDetectorKt$detectHorizontalDragGestures$5;->$onDragStart:Lkotlin/jvm/functions/Function1;
 
     invoke-virtual {p1}, Landroidx/compose/ui/input/pointer/PointerInputChange;->getPosition-F1C5BW0()J
@@ -426,7 +426,7 @@
 
     invoke-interface {v4, v5}, Lkotlin/jvm/functions/Function1;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 550
+    .line 549
     iget-object v4, p0, Landroidx/compose/foundation/gestures/DragGestureDetectorKt$detectHorizontalDragGestures$5;->$onHorizontalDrag:Lkotlin/jvm/functions/Function2;
 
     iget v1, v1, Lkotlin/jvm/internal/Ref$FloatRef;->element:F
@@ -437,7 +437,7 @@
 
     invoke-interface {v4, p1, v1}, Lkotlin/jvm/functions/Function2;->invoke(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 552
+    .line 551
     invoke-virtual {p1}, Landroidx/compose/ui/input/pointer/PointerInputChange;->getId-J3iCeTQ()J
 
     move-result-wide v4
@@ -480,20 +480,20 @@
 
     if-eqz p1, :cond_7
 
-    .line 557
+    .line 556
     iget-object p0, p0, Landroidx/compose/foundation/gestures/DragGestureDetectorKt$detectHorizontalDragGestures$5;->$onDragEnd:Lkotlin/jvm/functions/Function0;
 
     invoke-interface {p0}, Lkotlin/jvm/functions/Function0;->invoke()Ljava/lang/Object;
 
     goto :goto_3
 
-    .line 559
+    .line 558
     :cond_7
     iget-object p0, p0, Landroidx/compose/foundation/gestures/DragGestureDetectorKt$detectHorizontalDragGestures$5;->$onDragCancel:Lkotlin/jvm/functions/Function0;
 
     invoke-interface {p0}, Lkotlin/jvm/functions/Function0;->invoke()Ljava/lang/Object;
 
-    .line 562
+    .line 561
     :cond_8
     :goto_3
     sget-object p0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;

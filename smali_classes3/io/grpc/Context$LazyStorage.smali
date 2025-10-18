@@ -22,19 +22,19 @@
 .method static constructor <clinit>()V
     .locals 4
 
-    .line 132
+    .line 117
     new-instance v0, Ljava/util/concurrent/atomic/AtomicReference;
 
     invoke-direct {v0}, Ljava/util/concurrent/atomic/AtomicReference;-><init>()V
 
-    .line 133
+    .line 118
     invoke-static {v0}, Lio/grpc/Context$LazyStorage;->createStorage(Ljava/util/concurrent/atomic/AtomicReference;)Lio/grpc/Context$Storage;
 
     move-result-object v1
 
     sput-object v1, Lio/grpc/Context$LazyStorage;->storage:Lio/grpc/Context$Storage;
 
-    .line 134
+    .line 119
     invoke-virtual {v0}, Ljava/util/concurrent/atomic/AtomicReference;->get()Ljava/lang/Object;
 
     move-result-object v0
@@ -43,7 +43,7 @@
 
     if-eqz v0, :cond_0
 
-    .line 137
+    .line 122
     sget-object v1, Lio/grpc/Context;->log:Ljava/util/logging/Logger;
 
     sget-object v2, Ljava/util/logging/Level;->FINE:Ljava/util/logging/Level;
@@ -59,7 +59,7 @@
 .method private constructor <init>()V
     .locals 0
 
-    .line 128
+    .line 113
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -78,7 +78,7 @@
         }
     .end annotation
 
-    .line 144
+    .line 129
     :try_start_0
     const-string v0, "io.grpc.override.ContextStorageOverride"
 
@@ -86,7 +86,7 @@
 
     move-result-object v0
 
-    .line 147
+    .line 132
     const-class v1, Lio/grpc/Context$Storage;
 
     invoke-virtual {v0, v1}, Ljava/lang/Class;->asSubclass(Ljava/lang/Class;)Ljava/lang/Class;
@@ -117,7 +117,7 @@
     :catch_0
     move-exception p0
 
-    .line 152
+    .line 137
     new-instance v0, Ljava/lang/RuntimeException;
 
     const-string v1, "Storage override failed to initialize"
@@ -129,10 +129,10 @@
     :catch_1
     move-exception v0
 
-    .line 149
+    .line 134
     invoke-virtual {p0, v0}, Ljava/util/concurrent/atomic/AtomicReference;->set(Ljava/lang/Object;)V
 
-    .line 150
+    .line 135
     new-instance p0, Lio/grpc/ThreadLocalContextStorage;
 
     invoke-direct {p0}, Lio/grpc/ThreadLocalContextStorage;-><init>()V

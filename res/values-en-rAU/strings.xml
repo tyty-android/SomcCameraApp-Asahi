@@ -62,6 +62,8 @@
     <string name="switch_role">Switch</string>
     <string name="tab">Tab</string>
     <string name="template_percent">%1$d per cent.</string>
+    <string name="tooltip_description">tooltip</string>
+    <string name="tooltip_label">show tooltip</string>
     <string name="v7_preference_off">OFF</string>
     <string name="v7_preference_on">ON</string>
 </resources>

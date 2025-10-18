@@ -20,7 +20,7 @@
 
 # direct methods
 .method public constructor <init>(Lcom/google/api/client/googleapis/auth/oauth2/GooglePublicKeysManager;)V
-    .locals 1
+    .locals 2
 
     .line 231
     invoke-direct {p0}, Lcom/google/api/client/auth/openidconnect/IdTokenVerifier$Builder;-><init>()V
@@ -34,14 +34,22 @@
 
     iput-object p1, p0, Lcom/google/api/client/googleapis/auth/oauth2/GoogleIdTokenVerifier$Builder;->publicKeys:Lcom/google/api/client/googleapis/auth/oauth2/GooglePublicKeysManager;
 
+    const/4 p1, 0x2
+
     .line 233
-    const-string p1, "accounts.google.com"
+    new-array p1, p1, [Ljava/lang/String;
 
-    const-string v0, "https://accounts.google.com"
+    const/4 v0, 0x0
 
-    filled-new-array {p1, v0}, [Ljava/lang/String;
+    const-string v1, "accounts.google.com"
 
-    move-result-object p1
+    aput-object v1, p1, v0
+
+    const/4 v0, 0x1
+
+    const-string v1, "https://accounts.google.com"
+
+    aput-object v1, p1, v0
 
     invoke-static {p1}, Ljava/util/Arrays;->asList([Ljava/lang/Object;)Ljava/util/List;
 

@@ -17,7 +17,7 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/SourceDebugExtension;
-    value = "SMAP\nLazyGridDsl.kt\nKotlin\n*S Kotlin\n*F\n+ 1 LazyGridDsl.kt\nandroidx/compose/foundation/lazy/grid/GridCells$Fixed\n+ 2 fake.kt\nkotlin/jvm/internal/FakeKt\n*L\n1#1,557:1\n1#2:558\n*E\n"
+    value = "SMAP\nLazyGridDsl.kt\nKotlin\n*S Kotlin\n*F\n+ 1 LazyGridDsl.kt\nandroidx/compose/foundation/lazy/grid/GridCells$Fixed\n+ 2 fake.kt\nkotlin/jvm/internal/FakeKt\n*L\n1#1,563:1\n1#2:564\n*E\n"
 .end annotation
 
 .annotation runtime Lkotlin/Metadata;
@@ -70,7 +70,7 @@
 .method public constructor <init>(I)V
     .locals 1
 
-    .line 266
+    .line 272
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     iput p1, p0, Landroidx/compose/foundation/lazy/grid/GridCells$Fixed;->count:I
@@ -79,7 +79,7 @@
 
     return-void
 
-    .line 268
+    .line 274
     :cond_0
     new-instance p0, Ljava/lang/StringBuilder;
 
@@ -115,7 +115,7 @@
 
 # virtual methods
 .method public calculateCrossAxisCellSizes(Landroidx/compose/ui/unit/Density;II)Ljava/util/List;
-    .locals 1
+    .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -127,11 +127,7 @@
         }
     .end annotation
 
-    const-string v0, "<this>"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 275
+    .line 281
     iget p0, p0, Landroidx/compose/foundation/lazy/grid/GridCells$Fixed;->count:I
 
     invoke-static {p2, p0, p3}, Landroidx/compose/foundation/lazy/grid/LazyGridDslKt;->access$calculateCellsCrossAxisSizeImpl(III)Ljava/util/List;
@@ -144,7 +140,7 @@
 .method public equals(Ljava/lang/Object;)Z
     .locals 1
 
-    .line 283
+    .line 289
     instance-of v0, p1, Landroidx/compose/foundation/lazy/grid/GridCells$Fixed;
 
     if-eqz v0, :cond_0
@@ -171,7 +167,7 @@
 .method public hashCode()I
     .locals 0
 
-    .line 279
+    .line 285
     iget p0, p0, Landroidx/compose/foundation/lazy/grid/GridCells$Fixed;->count:I
 
     neg-int p0, p0

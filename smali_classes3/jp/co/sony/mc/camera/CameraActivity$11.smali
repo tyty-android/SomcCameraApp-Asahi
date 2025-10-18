@@ -3,12 +3,12 @@
 .source "CameraActivity.java"
 
 # interfaces
-.implements Ljava/lang/Runnable;
+.implements Landroid/preference/PreferenceManager$OnActivityResultListener;
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Ljp/co/sony/mc/camera/CameraActivity;->checkAndRequestSelfPermissions(I)Z
+    value = Ljp/co/sony/mc/camera/CameraActivity;->setupWizardRequestIfNeeded()Z
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -20,22 +20,13 @@
 # instance fields
 .field final synthetic this$0:Ljp/co/sony/mc/camera/CameraActivity;
 
-.field final synthetic val$requestCode:I
-
 
 # direct methods
-.method constructor <init>(Ljp/co/sony/mc/camera/CameraActivity;I)V
+.method constructor <init>(Ljp/co/sony/mc/camera/CameraActivity;)V
     .locals 0
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "()V"
-        }
-    .end annotation
 
-    .line 2437
+    .line 1200
     iput-object p1, p0, Ljp/co/sony/mc/camera/CameraActivity$11;->this$0:Ljp/co/sony/mc/camera/CameraActivity;
-
-    iput p2, p0, Ljp/co/sony/mc/camera/CameraActivity$11;->val$requestCode:I
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -44,26 +35,10 @@
 
 
 # virtual methods
-.method public run()V
-    .locals 2
+.method public onActivityResult(IILandroid/content/Intent;)Z
+    .locals 0
 
-    .line 2440
-    const-string v0, "CheckAndRequestSelfPermissionsTask run"
+    const/4 p0, 0x1
 
-    filled-new-array {v0}, [Ljava/lang/String;
-
-    move-result-object v0
-
-    invoke-static {v0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
-
-    .line 2441
-    iget-object v0, p0, Ljp/co/sony/mc/camera/CameraActivity$11;->this$0:Ljp/co/sony/mc/camera/CameraActivity;
-
-    iget p0, p0, Ljp/co/sony/mc/camera/CameraActivity$11;->val$requestCode:I
-
-    const/4 v1, 0x0
-
-    invoke-virtual {v0, p0, v1}, Ljp/co/sony/mc/camera/CameraActivity;->checkAndRequestSelfPermissions(ILjp/co/sony/mc/camera/CameraActivity$PermissionCheckCallback;)Z
-
-    return-void
+    return p0
 .end method

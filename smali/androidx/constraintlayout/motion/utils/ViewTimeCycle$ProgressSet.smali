@@ -36,7 +36,7 @@
 
 # virtual methods
 .method public setProperty(Landroid/view/View;FJLandroidx/constraintlayout/core/motion/utils/KeyCache;)Z
-    .locals 13
+    .locals 9
     .annotation system Ldalvik/annotation/MethodParameters;
         accessFlags = {
             0x0,
@@ -52,70 +52,66 @@
         }
     .end annotation
 
-    move-object v7, p0
-
-    move-object v0, p1
-
     .line 293
-    const-string/jumbo v8, "unable to setProgress"
+    const-string/jumbo v0, "unable to setProgress"
 
-    const-string v9, "ViewTimeCycle"
+    const-string v1, "ViewTimeCycle"
 
-    instance-of v1, v0, Landroidx/constraintlayout/motion/widget/MotionLayout;
+    instance-of v2, p1, Landroidx/constraintlayout/motion/widget/MotionLayout;
 
-    if-eqz v1, :cond_0
+    if-eqz v2, :cond_0
 
     .line 294
-    move-object v8, v0
+    move-object v0, p1
 
-    check-cast v8, Landroidx/constraintlayout/motion/widget/MotionLayout;
+    check-cast v0, Landroidx/constraintlayout/motion/widget/MotionLayout;
 
     move-object v1, p0
 
     move v2, p2
 
-    move-wide/from16 v3, p3
+    move-wide v3, p3
 
     move-object v5, p1
 
-    move-object/from16 v6, p5
+    move-object v6, p5
 
     invoke-virtual/range {v1 .. v6}, Landroidx/constraintlayout/motion/utils/ViewTimeCycle$ProgressSet;->get(FJLandroid/view/View;Landroidx/constraintlayout/core/motion/utils/KeyCache;)F
 
-    move-result v0
+    move-result p1
 
-    invoke-virtual {v8, v0}, Landroidx/constraintlayout/motion/widget/MotionLayout;->setProgress(F)V
+    invoke-virtual {v0, p1}, Landroidx/constraintlayout/motion/widget/MotionLayout;->setProgress(F)V
 
     goto :goto_1
 
     .line 296
     :cond_0
-    iget-boolean v1, v7, Landroidx/constraintlayout/motion/utils/ViewTimeCycle$ProgressSet;->mNoMethod:Z
+    iget-boolean v2, p0, Landroidx/constraintlayout/motion/utils/ViewTimeCycle$ProgressSet;->mNoMethod:Z
 
-    const/4 v10, 0x0
+    const/4 v3, 0x0
 
-    if-eqz v1, :cond_1
+    if-eqz v2, :cond_1
 
-    return v10
+    return v3
 
     :cond_1
-    const/4 v1, 0x1
+    const/4 v2, 0x1
 
     .line 301
     :try_start_0
     invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
-    move-result-object v2
+    move-result-object v4
 
-    const-string/jumbo v3, "setProgress"
+    const-string/jumbo v5, "setProgress"
 
-    new-array v4, v1, [Ljava/lang/Class;
+    new-array v6, v2, [Ljava/lang/Class;
 
-    sget-object v5, Ljava/lang/Float;->TYPE:Ljava/lang/Class;
+    sget-object v7, Ljava/lang/Float;->TYPE:Ljava/lang/Class;
 
-    aput-object v5, v4, v10
+    aput-object v7, v6, v3
 
-    invoke-virtual {v2, v3, v4}, Ljava/lang/Class;->getMethod(Ljava/lang/String;[Ljava/lang/Class;)Ljava/lang/reflect/Method;
+    invoke-virtual {v4, v5, v6}, Ljava/lang/Class;->getMethod(Ljava/lang/String;[Ljava/lang/Class;)Ljava/lang/reflect/Method;
 
     move-result-object v2
     :try_end_0
@@ -125,40 +121,38 @@
 
     .line 303
     :catch_0
-    iput-boolean v1, v7, Landroidx/constraintlayout/motion/utils/ViewTimeCycle$ProgressSet;->mNoMethod:Z
+    iput-boolean v2, p0, Landroidx/constraintlayout/motion/utils/ViewTimeCycle$ProgressSet;->mNoMethod:Z
 
     const/4 v2, 0x0
 
     :goto_0
-    move-object v11, v2
+    if-eqz v2, :cond_2
 
-    if-eqz v11, :cond_2
+    move-object v3, p0
+
+    move v4, p2
+
+    move-wide v5, p3
+
+    move-object v7, p1
+
+    move-object v8, p5
 
     .line 307
     :try_start_1
-    new-array v12, v1, [Ljava/lang/Object;
+    invoke-virtual/range {v3 .. v8}, Landroidx/constraintlayout/motion/utils/ViewTimeCycle$ProgressSet;->get(FJLandroid/view/View;Landroidx/constraintlayout/core/motion/utils/KeyCache;)F
 
-    move-object v1, p0
+    move-result p2
 
-    move v2, p2
+    invoke-static {p2}, Ljava/lang/Float;->valueOf(F)Ljava/lang/Float;
 
-    move-wide/from16 v3, p3
+    move-result-object p2
 
-    move-object v5, p1
+    filled-new-array {p2}, [Ljava/lang/Object;
 
-    move-object/from16 v6, p5
+    move-result-object p2
 
-    invoke-virtual/range {v1 .. v6}, Landroidx/constraintlayout/motion/utils/ViewTimeCycle$ProgressSet;->get(FJLandroid/view/View;Landroidx/constraintlayout/core/motion/utils/KeyCache;)F
-
-    move-result v1
-
-    invoke-static {v1}, Ljava/lang/Float;->valueOf(F)Ljava/lang/Float;
-
-    move-result-object v1
-
-    aput-object v1, v12, v10
-
-    invoke-virtual {v11, p1, v12}, Ljava/lang/reflect/Method;->invoke(Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v2, p1, p2}, Ljava/lang/reflect/Method;->invoke(Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;
     :try_end_1
     .catch Ljava/lang/IllegalAccessException; {:try_start_1 .. :try_end_1} :catch_2
     .catch Ljava/lang/reflect/InvocationTargetException; {:try_start_1 .. :try_end_1} :catch_1
@@ -166,23 +160,23 @@
     goto :goto_1
 
     :catch_1
-    move-exception v0
+    move-exception p1
 
     .line 311
-    invoke-static {v9, v8, v0}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)I
+    invoke-static {v1, v0, p1}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)I
 
     goto :goto_1
 
     :catch_2
-    move-exception v0
+    move-exception p1
 
     .line 309
-    invoke-static {v9, v8, v0}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)I
+    invoke-static {v1, v0, p1}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)I
 
     .line 315
     :cond_2
     :goto_1
-    iget-boolean v0, v7, Landroidx/constraintlayout/motion/utils/ViewTimeCycle$ProgressSet;->mContinue:Z
+    iget-boolean p0, p0, Landroidx/constraintlayout/motion/utils/ViewTimeCycle$ProgressSet;->mContinue:Z
 
-    return v0
+    return p0
 .end method

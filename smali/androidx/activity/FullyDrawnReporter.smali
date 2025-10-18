@@ -5,7 +5,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/SourceDebugExtension;
-    value = "SMAP\nFullyDrawnReporter.kt\nKotlin\n*S Kotlin\n*F\n+ 1 FullyDrawnReporter.kt\nandroidx/activity/FullyDrawnReporter\n+ 2 fake.kt\nkotlin/jvm/internal/FakeKt\n+ 3 _Collections.kt\nkotlin/collections/CollectionsKt___CollectionsKt\n*L\n1#1,192:1\n1#2:193\n1855#3,2:194\n*S KotlinDebug\n*F\n+ 1 FullyDrawnReporter.kt\nandroidx/activity/FullyDrawnReporter\n*L\n157#1:194,2\n*E\n"
+    value = "SMAP\nFullyDrawnReporter.kt\nKotlin\n*S Kotlin\n*F\n+ 1 FullyDrawnReporter.kt\nandroidx/activity/FullyDrawnReporter\n+ 2 fake.kt\nkotlin/jvm/internal/FakeKt\n+ 3 _Collections.kt\nkotlin/collections/CollectionsKt___CollectionsKt\n*L\n1#1,190:1\n1#2:191\n1855#3,2:192\n*S KotlinDebug\n*F\n+ 1 FullyDrawnReporter.kt\nandroidx/activity/FullyDrawnReporter\n*L\n154#1:192,2\n*E\n"
 .end annotation
 
 .annotation runtime Lkotlin/Metadata;
@@ -154,7 +154,7 @@
 .method private final postWhenReportersAreDone()V
     .locals 1
 
-    .line 168
+    .line 165
     iget-boolean v0, p0, Landroidx/activity/FullyDrawnReporter;->reportPosted:Z
 
     if-nez v0, :cond_0
@@ -165,10 +165,10 @@
 
     const/4 v0, 0x1
 
-    .line 169
+    .line 166
     iput-boolean v0, p0, Landroidx/activity/FullyDrawnReporter;->reportPosted:Z
 
-    .line 170
+    .line 167
     iget-object v0, p0, Landroidx/activity/FullyDrawnReporter;->executor:Ljava/util/concurrent/Executor;
 
     iget-object p0, p0, Landroidx/activity/FullyDrawnReporter;->reportRunnable:Ljava/lang/Runnable;
@@ -250,12 +250,12 @@
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 125
+    .line 122
     iget-object v0, p0, Landroidx/activity/FullyDrawnReporter;->lock:Ljava/lang/Object;
 
     monitor-enter v0
 
-    .line 126
+    .line 123
     :try_start_0
     iget-boolean v1, p0, Landroidx/activity/FullyDrawnReporter;->reportedFullyDrawn:Z
 
@@ -265,7 +265,7 @@
 
     goto :goto_0
 
-    .line 129
+    .line 126
     :cond_0
     iget-object p0, p0, Landroidx/activity/FullyDrawnReporter;->onReportCallbacks:Ljava/util/List;
 
@@ -277,13 +277,13 @@
 
     const/4 p0, 0x0
 
-    .line 125
+    .line 122
     :goto_0
     monitor-exit v0
 
     if-eqz p0, :cond_1
 
-    .line 134
+    .line 131
     invoke-interface {p1}, Lkotlin/jvm/functions/Function0;->invoke()Ljava/lang/Object;
 
     :cond_1
@@ -292,7 +292,7 @@
     :catchall_0
     move-exception p0
 
-    .line 125
+    .line 122
     monitor-exit v0
 
     throw p0
@@ -341,23 +341,23 @@
 .method public final fullyDrawnReported()V
     .locals 3
 
-    .line 155
+    .line 152
     iget-object v0, p0, Landroidx/activity/FullyDrawnReporter;->lock:Ljava/lang/Object;
 
     monitor-enter v0
 
     const/4 v1, 0x1
 
-    .line 156
+    .line 153
     :try_start_0
     iput-boolean v1, p0, Landroidx/activity/FullyDrawnReporter;->reportedFullyDrawn:Z
 
-    .line 157
+    .line 154
     iget-object v1, p0, Landroidx/activity/FullyDrawnReporter;->onReportCallbacks:Ljava/util/List;
 
     check-cast v1, Ljava/lang/Iterable;
 
-    .line 194
+    .line 192
     invoke-interface {v1}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
 
     move-result-object v1
@@ -375,23 +375,23 @@
 
     check-cast v2, Lkotlin/jvm/functions/Function0;
 
-    .line 157
+    .line 154
     invoke-interface {v2}, Lkotlin/jvm/functions/Function0;->invoke()Ljava/lang/Object;
 
     goto :goto_0
 
-    .line 158
+    .line 155
     :cond_0
     iget-object p0, p0, Landroidx/activity/FullyDrawnReporter;->onReportCallbacks:Ljava/util/List;
 
     invoke-interface {p0}, Ljava/util/List;->clear()V
 
-    .line 159
+    .line 156
     sget-object p0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 155
+    .line 152
     monitor-exit v0
 
     return-void
@@ -444,12 +444,12 @@
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 143
+    .line 140
     iget-object v0, p0, Landroidx/activity/FullyDrawnReporter;->lock:Ljava/lang/Object;
 
     monitor-enter v0
 
-    .line 144
+    .line 141
     :try_start_0
     iget-object p0, p0, Landroidx/activity/FullyDrawnReporter;->onReportCallbacks:Ljava/util/List;
 
@@ -457,12 +457,12 @@
 
     invoke-interface {p0, p1}, Ljava/util/Collection;->remove(Ljava/lang/Object;)Z
 
-    .line 145
+    .line 142
     sget-object p0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 143
+    .line 140
     monitor-exit v0
 
     return-void
@@ -487,41 +487,22 @@
     :try_start_0
     iget-boolean v1, p0, Landroidx/activity/FullyDrawnReporter;->reportedFullyDrawn:Z
 
-    if-nez v1, :cond_1
+    if-nez v1, :cond_0
 
-    .line 107
     iget v1, p0, Landroidx/activity/FullyDrawnReporter;->reporterCount:I
 
     if-lez v1, :cond_0
 
     add-int/lit8 v1, v1, -0x1
 
-    .line 110
+    .line 107
     iput v1, p0, Landroidx/activity/FullyDrawnReporter;->reporterCount:I
 
-    .line 111
+    .line 108
     invoke-direct {p0}, Landroidx/activity/FullyDrawnReporter;->postWhenReportersAreDone()V
 
-    goto :goto_0
-
-    .line 108
+    .line 110
     :cond_0
-    const-string p0, "removeReporter() called when all reporters have already been removed."
-
-    .line 107
-    new-instance v1, Ljava/lang/IllegalStateException;
-
-    invoke-virtual {p0}, Ljava/lang/Object;->toString()Ljava/lang/String;
-
-    move-result-object p0
-
-    invoke-direct {v1, p0}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
-
-    throw v1
-
-    .line 113
-    :cond_1
-    :goto_0
     sget-object p0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0

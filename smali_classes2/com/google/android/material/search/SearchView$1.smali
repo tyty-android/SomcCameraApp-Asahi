@@ -25,7 +25,7 @@
 .method constructor <init>(Lcom/google/android/material/search/SearchView;)V
     .locals 0
 
-    .line 324
+    .line 399
     iput-object p1, p0, Lcom/google/android/material/search/SearchView$1;->this$0:Lcom/google/android/material/search/SearchView;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -50,7 +50,7 @@
 .method public onTextChanged(Ljava/lang/CharSequence;III)V
     .locals 0
 
-    .line 330
+    .line 405
     iget-object p0, p0, Lcom/google/android/material/search/SearchView$1;->this$0:Lcom/google/android/material/search/SearchView;
 
     iget-object p0, p0, Lcom/google/android/material/search/SearchView;->clearButton:Landroid/widget/ImageButton;

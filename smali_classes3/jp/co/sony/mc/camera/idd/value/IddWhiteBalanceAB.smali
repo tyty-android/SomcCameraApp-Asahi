@@ -6,13 +6,14 @@
 # annotations
 .annotation runtime Lkotlin/Metadata;
     d1 = {
-        "\u0000\u0018\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0010\u0007\n\u0002\u0008\u0004\n\u0002\u0010\u000e\n\u0000\u0008\u0007\u0018\u00002\u00020\u0001B\r\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u00a2\u0006\u0002\u0010\u0004J\u0008\u0010\u0007\u001a\u00020\u0008H\u0016R\u0011\u0010\u0002\u001a\u00020\u0003\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\u0005\u0010\u0006\u00a8\u0006\t"
+        "\u0000\u0018\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0010\u0007\n\u0002\u0008\u0005\n\u0002\u0010\u000e\n\u0000\u0008\u0007\u0018\u00002\u00020\u0001B\u000f\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u00a2\u0006\u0004\u0008\u0004\u0010\u0005J\u0008\u0010\u0008\u001a\u00020\tH\u0016R\u0011\u0010\u0002\u001a\u00020\u0003\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\u0006\u0010\u0007\u00a8\u0006\n"
     }
     d2 = {
         "Ljp/co/sony/mc/camera/idd/value/IddWhiteBalanceAB;",
         "",
         "ab",
         "",
+        "<init>",
         "(F)V",
         "getAb",
         "()F",
@@ -22,8 +23,8 @@
     }
     k = 0x1
     mv = {
-        0x1,
-        0x9,
+        0x2,
+        0x0,
         0x0
     }
     xi = 0x30
@@ -48,7 +49,7 @@
 .method public constructor <init>(F)V
     .locals 0
 
-    .line 320
+    .line 355
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     iput p1, p0, Ljp/co/sony/mc/camera/idd/value/IddWhiteBalanceAB;->ab:F
@@ -61,7 +62,7 @@
 .method public final getAb()F
     .locals 0
 
-    .line 320
+    .line 355
     iget p0, p0, Ljp/co/sony/mc/camera/idd/value/IddWhiteBalanceAB;->ab:F
 
     return p0
@@ -70,7 +71,7 @@
 .method public toString()Ljava/lang/String;
     .locals 3
 
-    .line 323
+    .line 358
     iget p0, p0, Ljp/co/sony/mc/camera/idd/value/IddWhiteBalanceAB;->ab:F
 
     const/4 v0, 0x0
@@ -94,12 +95,12 @@
 
     if-nez v0, :cond_1
 
-    .line 324
+    .line 359
     const-string p0, "ZERO"
 
     goto :goto_0
 
-    .line 325
+    .line 360
     :cond_1
     invoke-static {p0}, Ljp/co/sony/mc/camera/configuration/parameters/WhiteBalance;->getAbDisplayText(F)Ljava/lang/String;
 

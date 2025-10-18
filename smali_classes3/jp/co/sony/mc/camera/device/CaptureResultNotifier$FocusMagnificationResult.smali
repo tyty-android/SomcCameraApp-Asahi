@@ -30,7 +30,7 @@
 .method static constructor <clinit>()V
     .locals 4
 
-    .line 606
+    .line 613
     new-instance v0, Ljp/co/sony/mc/camera/device/CaptureResultNotifier$FocusMagnificationResult;
 
     new-instance v1, Landroid/graphics/Point;
@@ -53,24 +53,24 @@
 .method public constructor <init>(FFLandroid/graphics/Point;)V
     .locals 0
 
-    .line 615
+    .line 622
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 616
+    .line 623
     invoke-static {p1}, Ljava/lang/Float;->valueOf(F)Ljava/lang/Float;
 
     move-result-object p1
 
     iput-object p1, p0, Ljp/co/sony/mc/camera/device/CaptureResultNotifier$FocusMagnificationResult;->mZoomRatio:Ljava/lang/Float;
 
-    .line 617
+    .line 624
     invoke-static {p2}, Ljava/lang/Float;->valueOf(F)Ljava/lang/Float;
 
     move-result-object p1
 
     iput-object p1, p0, Ljp/co/sony/mc/camera/device/CaptureResultNotifier$FocusMagnificationResult;->mFocusMagnificationRatio:Ljava/lang/Float;
 
-    .line 618
+    .line 625
     iput-object p3, p0, Ljp/co/sony/mc/camera/device/CaptureResultNotifier$FocusMagnificationResult;->mFocusMagnificationPosition:Landroid/graphics/Point;
 
     return-void
@@ -87,7 +87,7 @@
 
     return v0
 
-    .line 644
+    .line 651
     :cond_0
     instance-of v1, p1, Ljp/co/sony/mc/camera/device/CaptureResultNotifier$FocusMagnificationResult;
 
@@ -97,11 +97,11 @@
 
     return v2
 
-    .line 648
+    .line 655
     :cond_1
     check-cast p1, Ljp/co/sony/mc/camera/device/CaptureResultNotifier$FocusMagnificationResult;
 
-    .line 649
+    .line 656
     iget-object v1, p1, Ljp/co/sony/mc/camera/device/CaptureResultNotifier$FocusMagnificationResult;->mFocusMagnificationPosition:Landroid/graphics/Point;
 
     iget-object v3, p0, Ljp/co/sony/mc/camera/device/CaptureResultNotifier$FocusMagnificationResult;->mFocusMagnificationPosition:Landroid/graphics/Point;
@@ -116,7 +116,7 @@
 
     iget-object v3, p0, Ljp/co/sony/mc/camera/device/CaptureResultNotifier$FocusMagnificationResult;->mFocusMagnificationRatio:Ljava/lang/Float;
 
-    .line 650
+    .line 657
     invoke-virtual {v1, v3}, Ljava/lang/Float;->equals(Ljava/lang/Object;)Z
 
     move-result v1
@@ -127,7 +127,7 @@
 
     iget-object p0, p0, Ljp/co/sony/mc/camera/device/CaptureResultNotifier$FocusMagnificationResult;->mZoomRatio:Ljava/lang/Float;
 
-    .line 651
+    .line 658
     invoke-virtual {p1, p0}, Ljava/lang/Float;->equals(Ljava/lang/Object;)Z
 
     move-result p0
@@ -146,7 +146,7 @@
 .method public getFocusMagnificationPosition()Landroid/graphics/Point;
     .locals 0
 
-    .line 630
+    .line 637
     iget-object p0, p0, Ljp/co/sony/mc/camera/device/CaptureResultNotifier$FocusMagnificationResult;->mFocusMagnificationPosition:Landroid/graphics/Point;
 
     return-object p0
@@ -155,7 +155,7 @@
 .method public getFocusMagnificationRatio()F
     .locals 0
 
-    .line 626
+    .line 633
     iget-object p0, p0, Ljp/co/sony/mc/camera/device/CaptureResultNotifier$FocusMagnificationResult;->mFocusMagnificationRatio:Ljava/lang/Float;
 
     invoke-virtual {p0}, Ljava/lang/Float;->floatValue()F
@@ -168,7 +168,7 @@
 .method public getZoomRatio()F
     .locals 0
 
-    .line 622
+    .line 629
     iget-object p0, p0, Ljp/co/sony/mc/camera/device/CaptureResultNotifier$FocusMagnificationResult;->mZoomRatio:Ljava/lang/Float;
 
     invoke-virtual {p0}, Ljava/lang/Float;->floatValue()F
@@ -181,7 +181,7 @@
 .method public hashCode()I
     .locals 2
 
-    .line 635
+    .line 642
     iget-object v0, p0, Ljp/co/sony/mc/camera/device/CaptureResultNotifier$FocusMagnificationResult;->mFocusMagnificationRatio:Ljava/lang/Float;
 
     iget-object v1, p0, Ljp/co/sony/mc/camera/device/CaptureResultNotifier$FocusMagnificationResult;->mZoomRatio:Ljava/lang/Float;

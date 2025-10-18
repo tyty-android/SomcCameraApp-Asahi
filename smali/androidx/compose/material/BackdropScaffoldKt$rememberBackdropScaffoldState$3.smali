@@ -111,22 +111,22 @@
 .method public final invoke()Landroidx/compose/material/BackdropScaffoldState;
     .locals 4
 
-    .line 184
+    .line 186
     new-instance v0, Landroidx/compose/material/BackdropScaffoldState;
 
-    .line 185
+    .line 187
     iget-object v1, p0, Landroidx/compose/material/BackdropScaffoldKt$rememberBackdropScaffoldState$3;->$initialValue:Landroidx/compose/material/BackdropValue;
 
-    .line 186
+    .line 188
     iget-object v2, p0, Landroidx/compose/material/BackdropScaffoldKt$rememberBackdropScaffoldState$3;->$animationSpec:Landroidx/compose/animation/core/AnimationSpec;
 
-    .line 187
+    .line 189
     iget-object v3, p0, Landroidx/compose/material/BackdropScaffoldKt$rememberBackdropScaffoldState$3;->$confirmStateChange:Lkotlin/jvm/functions/Function1;
 
-    .line 188
+    .line 190
     iget-object p0, p0, Landroidx/compose/material/BackdropScaffoldKt$rememberBackdropScaffoldState$3;->$snackbarHostState:Landroidx/compose/material/SnackbarHostState;
 
-    .line 184
+    .line 186
     invoke-direct {v0, v1, v2, v3, p0}, Landroidx/compose/material/BackdropScaffoldState;-><init>(Landroidx/compose/material/BackdropValue;Landroidx/compose/animation/core/AnimationSpec;Lkotlin/jvm/functions/Function1;Landroidx/compose/material/SnackbarHostState;)V
 
     return-object v0
@@ -135,7 +135,7 @@
 .method public bridge synthetic invoke()Ljava/lang/Object;
     .locals 0
 
-    .line 174
+    .line 176
     invoke-virtual {p0}, Landroidx/compose/material/BackdropScaffoldKt$rememberBackdropScaffoldState$3;->invoke()Landroidx/compose/material/BackdropScaffoldState;
 
     move-result-object p0

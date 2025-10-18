@@ -30,7 +30,7 @@
     .line 0
     iget-boolean p0, p0, Ljp/co/sony/mc/camera/view/viewbinder/ProModeMfSliderViewBinder$$ExternalSyntheticLambda0;->f$0:Z
 
-    invoke-static {p0, p1, p2}, Ljp/co/sony/mc/camera/view/viewbinder/ProModeMfSliderViewBinder;->$r8$lambda$VjcL3g6dTddCBhHH0KiJg_boL1E(ZLandroid/view/View;Landroid/view/MotionEvent;)Z
+    invoke-static {p0, p1, p2}, Ljp/co/sony/mc/camera/view/viewbinder/ProModeMfSliderViewBinder;->$r8$lambda$jOUSeVieBszi1cGoCgGqsvpKACU(ZLandroid/view/View;Landroid/view/MotionEvent;)Z
 
     move-result p0
 

@@ -86,7 +86,7 @@
 .method public final invoke()Landroidx/compose/foundation/lazy/layout/LazyLayoutItemProvider;
     .locals 0
 
-    .line 63
+    .line 83
     iget-object p0, p0, Landroidx/compose/foundation/lazy/layout/LazyLayoutKt$LazyLayout$3$itemContentFactory$1$1;->$currentItemProvider:Landroidx/compose/runtime/State;
 
     invoke-interface {p0}, Landroidx/compose/runtime/State;->getValue()Ljava/lang/Object;
@@ -107,7 +107,7 @@
 .method public bridge synthetic invoke()Ljava/lang/Object;
     .locals 0
 
-    .line 63
+    .line 83
     invoke-virtual {p0}, Landroidx/compose/foundation/lazy/layout/LazyLayoutKt$LazyLayout$3$itemContentFactory$1$1;->invoke()Landroidx/compose/foundation/lazy/layout/LazyLayoutItemProvider;
 
     move-result-object p0

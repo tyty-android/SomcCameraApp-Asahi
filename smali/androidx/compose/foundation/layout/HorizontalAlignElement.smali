@@ -49,22 +49,28 @@
 .end annotation
 
 
+# static fields
+.field public static final $stable:I
+
+
 # instance fields
 .field private final horizontal:Landroidx/compose/ui/Alignment$Horizontal;
 
 
 # direct methods
+.method static constructor <clinit>()V
+    .locals 0
+
+    return-void
+.end method
+
 .method public constructor <init>(Landroidx/compose/ui/Alignment$Horizontal;)V
-    .locals 1
+    .locals 0
 
-    const-string v0, "horizontal"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 755
+    .line 758
     invoke-direct {p0}, Landroidx/compose/ui/node/ModifierNodeElement;-><init>()V
 
-    .line 754
+    .line 757
     iput-object p1, p0, Landroidx/compose/foundation/layout/HorizontalAlignElement;->horizontal:Landroidx/compose/ui/Alignment$Horizontal;
 
     return-void
@@ -75,7 +81,7 @@
 .method public create()Landroidx/compose/foundation/layout/HorizontalAlignNode;
     .locals 1
 
-    .line 757
+    .line 760
     new-instance v0, Landroidx/compose/foundation/layout/HorizontalAlignNode;
 
     iget-object p0, p0, Landroidx/compose/foundation/layout/HorizontalAlignElement;->horizontal:Landroidx/compose/ui/Alignment$Horizontal;
@@ -88,7 +94,7 @@
 .method public bridge synthetic create()Landroidx/compose/ui/Modifier$Node;
     .locals 0
 
-    .line 753
+    .line 756
     invoke-virtual {p0}, Landroidx/compose/foundation/layout/HorizontalAlignElement;->create()Landroidx/compose/foundation/layout/HorizontalAlignNode;
 
     move-result-object p0
@@ -107,7 +113,7 @@
 
     return p0
 
-    .line 772
+    .line 775
     :cond_0
     instance-of v0, p1, Landroidx/compose/foundation/layout/HorizontalAlignElement;
 
@@ -127,7 +133,7 @@
 
     return p0
 
-    .line 773
+    .line 776
     :cond_2
     iget-object p0, p0, Landroidx/compose/foundation/layout/HorizontalAlignElement;->horizontal:Landroidx/compose/ui/Alignment$Horizontal;
 
@@ -143,7 +149,7 @@
 .method public final getHorizontal()Landroidx/compose/ui/Alignment$Horizontal;
     .locals 0
 
-    .line 754
+    .line 757
     iget-object p0, p0, Landroidx/compose/foundation/layout/HorizontalAlignElement;->horizontal:Landroidx/compose/ui/Alignment$Horizontal;
 
     return-object p0
@@ -152,7 +158,7 @@
 .method public hashCode()I
     .locals 0
 
-    .line 768
+    .line 771
     iget-object p0, p0, Landroidx/compose/foundation/layout/HorizontalAlignElement;->horizontal:Landroidx/compose/ui/Alignment$Horizontal;
 
     invoke-virtual {p0}, Ljava/lang/Object;->hashCode()I
@@ -165,16 +171,12 @@
 .method public inspectableProperties(Landroidx/compose/ui/platform/InspectorInfo;)V
     .locals 1
 
-    const-string v0, "<this>"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 765
+    .line 768
     const-string v0, "align"
 
     invoke-virtual {p1, v0}, Landroidx/compose/ui/platform/InspectorInfo;->setName(Ljava/lang/String;)V
 
-    .line 766
+    .line 769
     iget-object p0, p0, Landroidx/compose/foundation/layout/HorizontalAlignElement;->horizontal:Landroidx/compose/ui/Alignment$Horizontal;
 
     invoke-virtual {p1, p0}, Landroidx/compose/ui/platform/InspectorInfo;->setValue(Ljava/lang/Object;)V
@@ -183,13 +185,9 @@
 .end method
 
 .method public update(Landroidx/compose/foundation/layout/HorizontalAlignNode;)V
-    .locals 1
+    .locals 0
 
-    const-string v0, "node"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 761
+    .line 764
     iget-object p0, p0, Landroidx/compose/foundation/layout/HorizontalAlignElement;->horizontal:Landroidx/compose/ui/Alignment$Horizontal;
 
     invoke-virtual {p1, p0}, Landroidx/compose/foundation/layout/HorizontalAlignNode;->setHorizontal(Landroidx/compose/ui/Alignment$Horizontal;)V
@@ -200,7 +198,7 @@
 .method public bridge synthetic update(Landroidx/compose/ui/Modifier$Node;)V
     .locals 0
 
-    .line 753
+    .line 756
     check-cast p1, Landroidx/compose/foundation/layout/HorizontalAlignNode;
 
     invoke-virtual {p0, p1}, Landroidx/compose/foundation/layout/HorizontalAlignElement;->update(Landroidx/compose/foundation/layout/HorizontalAlignNode;)V

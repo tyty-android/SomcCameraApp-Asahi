@@ -168,7 +168,7 @@
 
     invoke-static {}, Lkotlin/coroutines/intrinsics/IntrinsicsKt;->getCOROUTINE_SUSPENDED()Ljava/lang/Object;
 
-    .line 65535
+    .line 240
     iget v0, p0, Landroidx/compose/material/SliderKt$Slider$3$drag$1$1;->label:I
 
     if-nez v0, :cond_0
@@ -177,7 +177,6 @@
 
     iget p1, p0, Landroidx/compose/material/SliderKt$Slider$3$drag$1$1;->F$0:F
 
-    .line 237
     iget-object p0, p0, Landroidx/compose/material/SliderKt$Slider$3$drag$1$1;->$gestureEndAction:Landroidx/compose/runtime/State;
 
     invoke-interface {p0}, Landroidx/compose/runtime/State;->getValue()Ljava/lang/Object;
@@ -196,7 +195,6 @@
 
     return-object p0
 
-    .line 65535
     :cond_0
     new-instance p0, Ljava/lang/IllegalStateException;
 

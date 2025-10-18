@@ -30,7 +30,7 @@
 .method private constructor <init>()V
     .locals 0
 
-    .line 710
+    .line 711
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -49,7 +49,7 @@
 .method public bridge synthetic compare(Ljava/lang/Object;Ljava/lang/Object;)I
     .locals 0
 
-    .line 710
+    .line 711
     check-cast p1, Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;
 
     check-cast p2, Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;
@@ -72,7 +72,7 @@
 
     goto :goto_0
 
-    .line 713
+    .line 714
     :cond_0
     invoke-virtual {p1}, Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;->getShutterSpeedInNanos()J
 
@@ -83,13 +83,13 @@
 
     goto :goto_1
 
-    .line 714
+    .line 715
     :cond_1
     invoke-virtual {p2}, Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;->getShutterSpeedInNanos()J
 
     move-result-wide v0
 
-    .line 715
+    .line 716
     :goto_1
     invoke-static {p0, p1, v0, v1}, Ljava/lang/Long;->compare(JJ)I
 

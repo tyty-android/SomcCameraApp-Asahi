@@ -70,7 +70,7 @@
 
 # direct methods
 .method public constructor <init>(Lkotlin/jvm/functions/Function1;)V
-    .locals 1
+    .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -81,10 +81,6 @@
             ">;)V"
         }
     .end annotation
-
-    const-string v0, "block"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 543
     invoke-direct {p0}, Landroidx/compose/ui/node/ModifierNodeElement;-><init>()V
@@ -144,10 +140,6 @@
             "Landroidx/compose/ui/graphics/BlockGraphicsLayerElement;"
         }
     .end annotation
-
-    const-string p0, "block"
-
-    invoke-static {p1, p0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
     new-instance p0, Landroidx/compose/ui/graphics/BlockGraphicsLayerElement;
 
@@ -252,10 +244,6 @@
 .method public inspectableProperties(Landroidx/compose/ui/platform/InspectorInfo;)V
     .locals 1
 
-    const-string v0, "<this>"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
     .line 552
     const-string v0, "graphicsLayer"
 
@@ -315,11 +303,7 @@
 .end method
 
 .method public update(Landroidx/compose/ui/graphics/BlockGraphicsLayerModifier;)V
-    .locals 1
-
-    const-string v0, "node"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+    .locals 0
 
     .line 547
     iget-object p0, p0, Landroidx/compose/ui/graphics/BlockGraphicsLayerElement;->block:Lkotlin/jvm/functions/Function1;

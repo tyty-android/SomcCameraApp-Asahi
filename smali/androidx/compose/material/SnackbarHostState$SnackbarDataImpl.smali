@@ -72,7 +72,7 @@
 
 # direct methods
 .method public constructor <init>(Ljava/lang/String;Ljava/lang/String;Landroidx/compose/material/SnackbarDuration;Lkotlinx/coroutines/CancellableContinuation;)V
-    .locals 1
+    .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -86,31 +86,19 @@
         }
     .end annotation
 
-    const-string v0, "message"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string v0, "duration"
-
-    invoke-static {p3, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string v0, "continuation"
-
-    invoke-static {p4, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 112
+    .line 115
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 114
+    .line 117
     iput-object p1, p0, Landroidx/compose/material/SnackbarHostState$SnackbarDataImpl;->message:Ljava/lang/String;
 
-    .line 115
+    .line 118
     iput-object p2, p0, Landroidx/compose/material/SnackbarHostState$SnackbarDataImpl;->actionLabel:Ljava/lang/String;
 
-    .line 116
+    .line 119
     iput-object p3, p0, Landroidx/compose/material/SnackbarHostState$SnackbarDataImpl;->duration:Landroidx/compose/material/SnackbarDuration;
 
-    .line 117
+    .line 120
     iput-object p4, p0, Landroidx/compose/material/SnackbarHostState$SnackbarDataImpl;->continuation:Lkotlinx/coroutines/CancellableContinuation;
 
     return-void
@@ -121,7 +109,7 @@
 .method public dismiss()V
     .locals 1
 
-    .line 125
+    .line 128
     iget-object v0, p0, Landroidx/compose/material/SnackbarHostState$SnackbarDataImpl;->continuation:Lkotlinx/coroutines/CancellableContinuation;
 
     invoke-interface {v0}, Lkotlinx/coroutines/CancellableContinuation;->isActive()Z
@@ -151,7 +139,7 @@
 .method public getActionLabel()Ljava/lang/String;
     .locals 0
 
-    .line 115
+    .line 118
     iget-object p0, p0, Landroidx/compose/material/SnackbarHostState$SnackbarDataImpl;->actionLabel:Ljava/lang/String;
 
     return-object p0
@@ -160,7 +148,7 @@
 .method public getDuration()Landroidx/compose/material/SnackbarDuration;
     .locals 0
 
-    .line 116
+    .line 119
     iget-object p0, p0, Landroidx/compose/material/SnackbarHostState$SnackbarDataImpl;->duration:Landroidx/compose/material/SnackbarDuration;
 
     return-object p0
@@ -169,7 +157,7 @@
 .method public getMessage()Ljava/lang/String;
     .locals 0
 
-    .line 114
+    .line 117
     iget-object p0, p0, Landroidx/compose/material/SnackbarHostState$SnackbarDataImpl;->message:Ljava/lang/String;
 
     return-object p0
@@ -178,7 +166,7 @@
 .method public performAction()V
     .locals 1
 
-    .line 121
+    .line 124
     iget-object v0, p0, Landroidx/compose/material/SnackbarHostState$SnackbarDataImpl;->continuation:Lkotlinx/coroutines/CancellableContinuation;
 
     invoke-interface {v0}, Lkotlinx/coroutines/CancellableContinuation;->isActive()Z

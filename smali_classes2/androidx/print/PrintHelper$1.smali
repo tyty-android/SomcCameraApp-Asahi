@@ -435,11 +435,11 @@
 
     new-array p1, p1, [Landroid/print/PageRange;
 
-    sget-object v0, Landroid/print/PageRange;->ALL_PAGES:Landroid/print/PageRange;
+    const/4 v0, 0x0
 
-    const/4 v1, 0x0
+    sget-object v1, Landroid/print/PageRange;->ALL_PAGES:Landroid/print/PageRange;
 
-    aput-object v0, p1, v1
+    aput-object v1, p1, v0
 
     invoke-virtual {p0, p1}, Landroid/print/PrintDocumentAdapter$WriteResultCallback;->onWriteFinished([Landroid/print/PageRange;)V
 

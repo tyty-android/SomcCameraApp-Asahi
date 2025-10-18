@@ -53,19 +53,15 @@
 
 # direct methods
 .method public constructor <init>(ZLjava/lang/Exception;)V
-    .locals 1
+    .locals 0
 
-    const-string v0, "cause"
-
-    invoke-static {p2, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 407
+    .line 417
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 408
+    .line 418
     iput-boolean p1, p0, Landroidx/compose/runtime/Recomposer$RecomposerErrorState;->recoverable:Z
 
-    .line 409
+    .line 419
     iput-object p2, p0, Landroidx/compose/runtime/Recomposer$RecomposerErrorState;->cause:Ljava/lang/Exception;
 
     return-void
@@ -76,7 +72,7 @@
 .method public getCause()Ljava/lang/Exception;
     .locals 0
 
-    .line 409
+    .line 419
     iget-object p0, p0, Landroidx/compose/runtime/Recomposer$RecomposerErrorState;->cause:Ljava/lang/Exception;
 
     return-object p0
@@ -85,7 +81,7 @@
 .method public getRecoverable()Z
     .locals 0
 
-    .line 408
+    .line 418
     iget-boolean p0, p0, Landroidx/compose/runtime/Recomposer$RecomposerErrorState;->recoverable:Z
 
     return p0

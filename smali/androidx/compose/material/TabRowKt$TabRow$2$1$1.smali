@@ -28,7 +28,7 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/SourceDebugExtension;
-    value = "SMAP\nTabRow.kt\nKotlin\n*S Kotlin\n*F\n+ 1 TabRow.kt\nandroidx/compose/material/TabRowKt$TabRow$2$1$1\n+ 2 _Collections.kt\nkotlin/collections/CollectionsKt___CollectionsKt\n+ 3 Dp.kt\nandroidx/compose/ui/unit/Dp\n*L\n1#1,517:1\n1549#2:518\n1620#2,3:519\n1963#2,14:522\n92#3:536\n*S KotlinDebug\n*F\n+ 1 TabRow.kt\nandroidx/compose/material/TabRowKt$TabRow$2$1$1\n*L\n156#1:518\n156#1:519,3\n160#1:522,14\n163#1:536\n*E\n"
+    value = "SMAP\nTabRow.kt\nKotlin\n*S Kotlin\n*F\n+ 1 TabRow.kt\nandroidx/compose/material/TabRowKt$TabRow$2$1$1\n+ 2 ListUtils.kt\nandroidx/compose/ui/util/ListUtilsKt\n+ 3 Dp.kt\nandroidx/compose/ui/unit/Dp\n*L\n1#1,521:1\n151#2,3:522\n33#2,4:525\n154#2,2:529\n38#2:531\n156#2:532\n171#2,13:533\n92#3:546\n*S KotlinDebug\n*F\n+ 1 TabRow.kt\nandroidx/compose/material/TabRowKt$TabRow$2$1$1\n*L\n160#1:522,3\n160#1:525,4\n160#1:529,2\n160#1:531\n160#1:532\n164#1:533,13\n167#1:546\n*E\n"
 .end annotation
 
 .annotation runtime Lkotlin/Metadata;
@@ -55,8 +55,6 @@
 
 
 # instance fields
-.field final synthetic $$dirty:I
-
 .field final synthetic $divider:Lkotlin/jvm/functions/Function2;
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -98,7 +96,7 @@
 
 
 # direct methods
-.method constructor <init>(Lkotlin/jvm/functions/Function2;Lkotlin/jvm/functions/Function2;Lkotlin/jvm/functions/Function3;I)V
+.method constructor <init>(Lkotlin/jvm/functions/Function2;Lkotlin/jvm/functions/Function2;Lkotlin/jvm/functions/Function3;)V
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -126,7 +124,7 @@
             "-",
             "Ljava/lang/Integer;",
             "Lkotlin/Unit;",
-            ">;I)V"
+            ">;)V"
         }
     .end annotation
 
@@ -135,8 +133,6 @@
     iput-object p2, p0, Landroidx/compose/material/TabRowKt$TabRow$2$1$1;->$divider:Lkotlin/jvm/functions/Function2;
 
     iput-object p3, p0, Landroidx/compose/material/TabRowKt$TabRow$2$1$1;->$indicator:Lkotlin/jvm/functions/Function3;
-
-    iput p4, p0, Landroidx/compose/material/TabRowKt$TabRow$2$1$1;->$$dirty:I
 
     const/4 p1, 0x2
 
@@ -150,7 +146,7 @@
 .method public bridge synthetic invoke(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
     .locals 2
 
-    .line 151
+    .line 155
     check-cast p1, Landroidx/compose/ui/layout/SubcomposeMeasureScope;
 
     check-cast p2, Landroidx/compose/ui/unit/Constraints;
@@ -167,22 +163,18 @@
 .end method
 
 .method public final invoke-0kLqBqw(Landroidx/compose/ui/layout/SubcomposeMeasureScope;J)Landroidx/compose/ui/layout/MeasureResult;
-    .locals 17
+    .locals 20
 
     move-object/from16 v0, p0
 
     move-object/from16 v2, p1
 
-    const-string v1, "$this$SubcomposeLayout"
-
-    invoke-static {v2, v1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 152
+    .line 156
     invoke-static/range {p2 .. p3}, Landroidx/compose/ui/unit/Constraints;->getMaxWidth-impl(J)I
 
-    move-result v12
+    move-result v11
 
-    .line 153
+    .line 157
     sget-object v1, Landroidx/compose/material/TabSlots;->Tabs:Landroidx/compose/material/TabSlots;
 
     iget-object v3, v0, Landroidx/compose/material/TabRowKt$TabRow$2$1$1;->$tabs:Lkotlin/jvm/functions/Function2;
@@ -191,273 +183,251 @@
 
     move-result-object v1
 
-    .line 154
+    .line 158
     invoke-interface {v1}, Ljava/util/List;->size()I
 
     move-result v3
 
-    .line 155
-    div-int v13, v12, v3
+    .line 159
+    div-int v4, v11, v3
 
-    .line 156
-    check-cast v1, Ljava/lang/Iterable;
+    .line 523
+    new-instance v5, Ljava/util/ArrayList;
 
-    .line 518
-    new-instance v4, Ljava/util/ArrayList;
+    invoke-interface {v1}, Ljava/util/List;->size()I
 
-    const/16 v5, 0xa
+    move-result v6
 
-    invoke-static {v1, v5}, Lkotlin/collections/CollectionsKt;->collectionSizeOrDefault(Ljava/lang/Iterable;I)I
+    invoke-direct {v5, v6}, Ljava/util/ArrayList;-><init>(I)V
 
-    move-result v5
+    .line 526
+    invoke-interface {v1}, Ljava/util/List;->size()I
 
-    invoke-direct {v4, v5}, Ljava/util/ArrayList;-><init>(I)V
+    move-result v6
 
-    move-object v14, v4
+    const/4 v7, 0x0
 
-    check-cast v14, Ljava/util/Collection;
-
-    .line 519
-    invoke-interface {v1}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
-
-    move-result-object v1
+    move v8, v7
 
     :goto_0
-    invoke-interface {v1}, Ljava/util/Iterator;->hasNext()Z
+    if-ge v8, v6, :cond_0
 
-    move-result v4
+    .line 527
+    invoke-interface {v1, v8}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
-    if-eqz v4, :cond_0
+    move-result-object v9
 
-    invoke-interface {v1}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+    .line 529
+    move-object v10, v5
 
-    move-result-object v4
+    check-cast v10, Ljava/util/Collection;
 
-    .line 520
-    move-object v15, v4
+    check-cast v9, Landroidx/compose/ui/layout/Measurable;
 
-    check-cast v15, Landroidx/compose/ui/layout/Measurable;
+    const/16 v18, 0xc
 
-    const/16 v10, 0xc
+    const/16 v19, 0x0
 
-    const/4 v11, 0x0
+    const/16 v16, 0x0
 
-    const/4 v8, 0x0
+    const/16 v17, 0x0
 
-    const/4 v9, 0x0
+    move-wide/from16 v12, p2
 
-    move-wide/from16 v4, p2
+    move v14, v4
 
-    move v6, v13
+    move v15, v4
 
-    move v7, v13
+    .line 161
+    invoke-static/range {v12 .. v19}, Landroidx/compose/ui/unit/Constraints;->copy-Zbe2FdA$default(JIIIIILjava/lang/Object;)J
 
-    .line 157
-    invoke-static/range {v4 .. v11}, Landroidx/compose/ui/unit/Constraints;->copy-Zbe2FdA$default(JIIIIILjava/lang/Object;)J
+    move-result-wide v12
 
-    move-result-wide v4
+    invoke-interface {v9, v12, v13}, Landroidx/compose/ui/layout/Measurable;->measure-BRTryo0(J)Landroidx/compose/ui/layout/Placeable;
 
-    invoke-interface {v15, v4, v5}, Landroidx/compose/ui/layout/Measurable;->measure-BRTryo0(J)Landroidx/compose/ui/layout/Placeable;
+    move-result-object v9
 
-    move-result-object v4
+    .line 529
+    invoke-interface {v10, v9}, Ljava/util/Collection;->add(Ljava/lang/Object;)Z
 
-    .line 520
-    invoke-interface {v14, v4}, Ljava/util/Collection;->add(Ljava/lang/Object;)Z
+    add-int/lit8 v8, v8, 0x1
 
     goto :goto_0
 
-    .line 521
+    .line 532
     :cond_0
-    move-object v1, v14
+    move-object v1, v5
 
     check-cast v1, Ljava/util/List;
 
-    .line 160
-    move-object v4, v1
-
-    check-cast v4, Ljava/lang/Iterable;
-
-    .line 522
-    invoke-interface {v4}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
-
-    move-result-object v4
-
-    .line 523
-    invoke-interface {v4}, Ljava/util/Iterator;->hasNext()Z
+    .line 534
+    invoke-interface {v1}, Ljava/util/List;->isEmpty()Z
 
     move-result v5
 
     const/4 v6, 0x0
 
-    if-nez v5, :cond_1
+    if-eqz v5, :cond_1
 
     move-object v5, v6
 
-    goto :goto_1
+    goto :goto_2
 
-    .line 524
+    .line 535
     :cond_1
-    invoke-interface {v4}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+    invoke-interface {v1, v7}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
     move-result-object v5
 
-    .line 525
-    invoke-interface {v4}, Ljava/util/Iterator;->hasNext()Z
+    .line 536
+    move-object v8, v5
 
-    move-result v7
+    check-cast v8, Landroidx/compose/ui/layout/Placeable;
 
-    if-nez v7, :cond_2
-
-    goto :goto_1
-
-    .line 526
-    :cond_2
-    move-object v7, v5
-
-    check-cast v7, Landroidx/compose/ui/layout/Placeable;
-
-    .line 160
-    invoke-virtual {v7}, Landroidx/compose/ui/layout/Placeable;->getHeight()I
-
-    move-result v7
-
-    .line 528
-    :cond_3
-    invoke-interface {v4}, Ljava/util/Iterator;->next()Ljava/lang/Object;
-
-    move-result-object v8
-
-    .line 529
-    move-object v9, v8
-
-    check-cast v9, Landroidx/compose/ui/layout/Placeable;
-
-    .line 160
-    invoke-virtual {v9}, Landroidx/compose/ui/layout/Placeable;->getHeight()I
-
-    move-result v9
-
-    if-ge v7, v9, :cond_4
-
-    move-object v5, v8
-
-    move v7, v9
-
-    .line 534
-    :cond_4
-    invoke-interface {v4}, Ljava/util/Iterator;->hasNext()Z
+    .line 164
+    invoke-virtual {v8}, Landroidx/compose/ui/layout/Placeable;->getHeight()I
 
     move-result v8
 
-    if-nez v8, :cond_3
+    .line 537
+    invoke-static {v1}, Lkotlin/collections/CollectionsKt;->getLastIndex(Ljava/util/List;)I
 
-    .line 160
+    move-result v9
+
+    const/4 v10, 0x1
+
+    if-gt v10, v9, :cond_3
+
+    .line 538
     :goto_1
+    invoke-interface {v1, v10}, Ljava/util/List;->get(I)Ljava/lang/Object;
+
+    move-result-object v12
+
+    .line 539
+    move-object v13, v12
+
+    check-cast v13, Landroidx/compose/ui/layout/Placeable;
+
+    .line 164
+    invoke-virtual {v13}, Landroidx/compose/ui/layout/Placeable;->getHeight()I
+
+    move-result v13
+
+    if-ge v8, v13, :cond_2
+
+    move-object v5, v12
+
+    move v8, v13
+
+    :cond_2
+    if-eq v10, v9, :cond_3
+
+    add-int/lit8 v10, v10, 0x1
+
+    goto :goto_1
+
+    :cond_3
+    :goto_2
     check-cast v5, Landroidx/compose/ui/layout/Placeable;
 
-    const/4 v4, 0x0
-
-    if-eqz v5, :cond_5
+    if-eqz v5, :cond_4
 
     invoke-virtual {v5}, Landroidx/compose/ui/layout/Placeable;->getHeight()I
 
     move-result v5
 
-    move v14, v5
+    move v12, v5
 
-    goto :goto_2
+    goto :goto_3
 
-    :cond_5
-    move v14, v4
+    :cond_4
+    move v12, v7
 
-    .line 162
-    :goto_2
+    .line 166
+    :goto_3
     new-instance v5, Ljava/util/ArrayList;
 
     invoke-direct {v5, v3}, Ljava/util/ArrayList;-><init>(I)V
 
-    :goto_3
-    if-ge v4, v3, :cond_6
+    :goto_4
+    if-ge v7, v3, :cond_5
 
-    .line 163
-    new-instance v7, Landroidx/compose/material/TabPosition;
+    .line 167
+    new-instance v8, Landroidx/compose/material/TabPosition;
 
-    invoke-interface {v2, v13}, Landroidx/compose/ui/layout/SubcomposeMeasureScope;->toDp-u2uoSUM(I)F
-
-    move-result v8
-
-    int-to-float v9, v4
-
-    mul-float/2addr v8, v9
-
-    .line 536
-    invoke-static {v8}, Landroidx/compose/ui/unit/Dp;->constructor-impl(F)F
-
-    move-result v8
-
-    .line 163
-    invoke-interface {v2, v13}, Landroidx/compose/ui/layout/SubcomposeMeasureScope;->toDp-u2uoSUM(I)F
+    invoke-interface {v2, v4}, Landroidx/compose/ui/layout/SubcomposeMeasureScope;->toDp-u2uoSUM(I)F
 
     move-result v9
 
-    invoke-direct {v7, v8, v9, v6}, Landroidx/compose/material/TabPosition;-><init>(FFLkotlin/jvm/internal/DefaultConstructorMarker;)V
+    int-to-float v10, v7
 
-    .line 162
-    invoke-virtual {v5, v7}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+    mul-float/2addr v9, v10
 
-    add-int/lit8 v4, v4, 0x1
+    .line 546
+    invoke-static {v9}, Landroidx/compose/ui/unit/Dp;->constructor-impl(F)F
 
-    goto :goto_3
+    move-result v9
 
-    :cond_6
+    .line 167
+    invoke-interface {v2, v4}, Landroidx/compose/ui/layout/SubcomposeMeasureScope;->toDp-u2uoSUM(I)F
+
+    move-result v10
+
+    invoke-direct {v8, v9, v10, v6}, Landroidx/compose/material/TabPosition;-><init>(FFLkotlin/jvm/internal/DefaultConstructorMarker;)V
+
+    .line 166
+    invoke-virtual {v5, v8}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+
+    add-int/lit8 v7, v7, 0x1
+
+    goto :goto_4
+
+    :cond_5
     move-object v9, v5
 
     check-cast v9, Ljava/util/List;
 
-    .line 166
-    move-object v15, v2
+    .line 170
+    move-object v13, v2
 
-    check-cast v15, Landroidx/compose/ui/layout/MeasureScope;
+    check-cast v13, Landroidx/compose/ui/layout/MeasureScope;
 
-    new-instance v16, Landroidx/compose/material/TabRowKt$TabRow$2$1$1$1;
+    new-instance v14, Landroidx/compose/material/TabRowKt$TabRow$2$1$1$1;
 
     iget-object v3, v0, Landroidx/compose/material/TabRowKt$TabRow$2$1$1;->$divider:Lkotlin/jvm/functions/Function2;
 
     iget-object v8, v0, Landroidx/compose/material/TabRowKt$TabRow$2$1$1;->$indicator:Lkotlin/jvm/functions/Function3;
 
-    iget v10, v0, Landroidx/compose/material/TabRowKt$TabRow$2$1$1;->$$dirty:I
-
-    move-object/from16 v0, v16
+    move-object v0, v14
 
     move-object/from16 v2, p1
 
-    move v4, v13
-
     move-wide/from16 v5, p2
 
-    move v7, v14
+    move v7, v12
 
-    move v11, v12
+    move v10, v11
 
-    invoke-direct/range {v0 .. v11}, Landroidx/compose/material/TabRowKt$TabRow$2$1$1$1;-><init>(Ljava/util/List;Landroidx/compose/ui/layout/SubcomposeMeasureScope;Lkotlin/jvm/functions/Function2;IJILkotlin/jvm/functions/Function3;Ljava/util/List;II)V
+    invoke-direct/range {v0 .. v10}, Landroidx/compose/material/TabRowKt$TabRow$2$1$1$1;-><init>(Ljava/util/List;Landroidx/compose/ui/layout/SubcomposeMeasureScope;Lkotlin/jvm/functions/Function2;IJILkotlin/jvm/functions/Function3;Ljava/util/List;I)V
 
-    move-object/from16 v6, v16
+    move-object v4, v14
 
-    check-cast v6, Lkotlin/jvm/functions/Function1;
+    check-cast v4, Lkotlin/jvm/functions/Function1;
 
-    const/4 v7, 0x4
+    const/4 v5, 0x4
 
-    const/4 v8, 0x0
+    const/4 v6, 0x0
 
-    const/4 v5, 0x0
+    const/4 v3, 0x0
 
-    move-object v2, v15
+    move-object v0, v13
 
-    move v3, v12
+    move v1, v11
 
-    move v4, v14
+    move v2, v12
 
-    invoke-static/range {v2 .. v8}, Landroidx/compose/ui/layout/MeasureScope;->layout$default(Landroidx/compose/ui/layout/MeasureScope;IILjava/util/Map;Lkotlin/jvm/functions/Function1;ILjava/lang/Object;)Landroidx/compose/ui/layout/MeasureResult;
+    invoke-static/range {v0 .. v6}, Landroidx/compose/ui/layout/MeasureScope;->layout$default(Landroidx/compose/ui/layout/MeasureScope;IILjava/util/Map;Lkotlin/jvm/functions/Function1;ILjava/lang/Object;)Landroidx/compose/ui/layout/MeasureResult;
 
     move-result-object v0
 

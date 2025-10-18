@@ -51,16 +51,12 @@
 
 # direct methods
 .method public constructor <init>(Landroidx/compose/foundation/layout/PaddingValues;)V
-    .locals 1
+    .locals 0
 
-    const-string v0, "paddingValues"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 533
+    .line 535
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 534
+    .line 536
     iput-object p1, p0, Landroidx/compose/foundation/layout/PaddingValuesInsets;->paddingValues:Landroidx/compose/foundation/layout/PaddingValues;
 
     return-void
@@ -77,7 +73,7 @@
 
     return p0
 
-    .line 564
+    .line 566
     :cond_0
     instance-of v0, p1, Landroidx/compose/foundation/layout/PaddingValuesInsets;
 
@@ -87,7 +83,7 @@
 
     return p0
 
-    .line 568
+    .line 570
     :cond_1
     check-cast p1, Landroidx/compose/foundation/layout/PaddingValuesInsets;
 
@@ -103,13 +99,9 @@
 .end method
 
 .method public getBottom(Landroidx/compose/ui/unit/Density;)I
-    .locals 1
+    .locals 0
 
-    const-string v0, "density"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 548
+    .line 550
     iget-object p0, p0, Landroidx/compose/foundation/layout/PaddingValuesInsets;->paddingValues:Landroidx/compose/foundation/layout/PaddingValues;
 
     invoke-interface {p0}, Landroidx/compose/foundation/layout/PaddingValues;->calculateBottomPadding-D9Ej5fM()F
@@ -124,17 +116,9 @@
 .end method
 
 .method public getLeft(Landroidx/compose/ui/unit/Density;Landroidx/compose/ui/unit/LayoutDirection;)I
-    .locals 1
+    .locals 0
 
-    const-string v0, "density"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string v0, "layoutDirection"
-
-    invoke-static {p2, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 536
+    .line 538
     iget-object p0, p0, Landroidx/compose/foundation/layout/PaddingValuesInsets;->paddingValues:Landroidx/compose/foundation/layout/PaddingValues;
 
     invoke-interface {p0, p2}, Landroidx/compose/foundation/layout/PaddingValues;->calculateLeftPadding-u2uoSUM(Landroidx/compose/ui/unit/LayoutDirection;)F
@@ -149,17 +133,9 @@
 .end method
 
 .method public getRight(Landroidx/compose/ui/unit/Density;Landroidx/compose/ui/unit/LayoutDirection;)I
-    .locals 1
+    .locals 0
 
-    const-string v0, "density"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string v0, "layoutDirection"
-
-    invoke-static {p2, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 544
+    .line 546
     iget-object p0, p0, Landroidx/compose/foundation/layout/PaddingValuesInsets;->paddingValues:Landroidx/compose/foundation/layout/PaddingValues;
 
     invoke-interface {p0, p2}, Landroidx/compose/foundation/layout/PaddingValues;->calculateRightPadding-u2uoSUM(Landroidx/compose/ui/unit/LayoutDirection;)F
@@ -174,13 +150,9 @@
 .end method
 
 .method public getTop(Landroidx/compose/ui/unit/Density;)I
-    .locals 1
+    .locals 0
 
-    const-string v0, "density"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 540
+    .line 542
     iget-object p0, p0, Landroidx/compose/foundation/layout/PaddingValuesInsets;->paddingValues:Landroidx/compose/foundation/layout/PaddingValues;
 
     invoke-interface {p0}, Landroidx/compose/foundation/layout/PaddingValues;->calculateTopPadding-D9Ej5fM()F
@@ -197,7 +169,7 @@
 .method public hashCode()I
     .locals 0
 
-    .line 571
+    .line 573
     iget-object p0, p0, Landroidx/compose/foundation/layout/PaddingValuesInsets;->paddingValues:Landroidx/compose/foundation/layout/PaddingValues;
 
     invoke-virtual {p0}, Ljava/lang/Object;->hashCode()I
@@ -210,38 +182,38 @@
 .method public toString()Ljava/lang/String;
     .locals 5
 
-    .line 552
+    .line 554
     sget-object v0, Landroidx/compose/ui/unit/LayoutDirection;->Ltr:Landroidx/compose/ui/unit/LayoutDirection;
 
-    .line 553
+    .line 555
     iget-object v1, p0, Landroidx/compose/foundation/layout/PaddingValuesInsets;->paddingValues:Landroidx/compose/foundation/layout/PaddingValues;
 
     invoke-interface {v1, v0}, Landroidx/compose/foundation/layout/PaddingValues;->calculateLeftPadding-u2uoSUM(Landroidx/compose/ui/unit/LayoutDirection;)F
 
     move-result v1
 
-    .line 554
+    .line 556
     iget-object v2, p0, Landroidx/compose/foundation/layout/PaddingValuesInsets;->paddingValues:Landroidx/compose/foundation/layout/PaddingValues;
 
     invoke-interface {v2}, Landroidx/compose/foundation/layout/PaddingValues;->calculateTopPadding-D9Ej5fM()F
 
     move-result v2
 
-    .line 555
+    .line 557
     iget-object v3, p0, Landroidx/compose/foundation/layout/PaddingValuesInsets;->paddingValues:Landroidx/compose/foundation/layout/PaddingValues;
 
     invoke-interface {v3, v0}, Landroidx/compose/foundation/layout/PaddingValues;->calculateRightPadding-u2uoSUM(Landroidx/compose/ui/unit/LayoutDirection;)F
 
     move-result v0
 
-    .line 556
+    .line 558
     iget-object p0, p0, Landroidx/compose/foundation/layout/PaddingValuesInsets;->paddingValues:Landroidx/compose/foundation/layout/PaddingValues;
 
     invoke-interface {p0}, Landroidx/compose/foundation/layout/PaddingValues;->calculateBottomPadding-D9Ej5fM()F
 
     move-result p0
 
-    .line 557
+    .line 559
     new-instance v3, Ljava/lang/StringBuilder;
 
     const-string v4, "PaddingValues("

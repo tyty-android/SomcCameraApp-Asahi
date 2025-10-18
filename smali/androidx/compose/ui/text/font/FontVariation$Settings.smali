@@ -14,7 +14,7 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/SourceDebugExtension;
-    value = "SMAP\nFontVariation.kt\nKotlin\n*S Kotlin\n*F\n+ 1 FontVariation.kt\nandroidx/compose/ui/text/font/FontVariation$Settings\n+ 2 _Arrays.kt\nkotlin/collections/ArraysKt___ArraysKt\n+ 3 Maps.kt\nkotlin/collections/MapsKt__MapsKt\n+ 4 _Maps.kt\nkotlin/collections/MapsKt___MapsKt\n+ 5 ListUtils.kt\nandroidx/compose/ui/util/ListUtilsKt\n*L\n1#1,372:1\n10783#2:373\n11008#2,3:374\n11011#2,3:384\n361#3,7:377\n76#4:387\n96#4,5:388\n101#5,2:393\n33#5,6:395\n103#5:401\n*S KotlinDebug\n*F\n+ 1 FontVariation.kt\nandroidx/compose/ui/text/font/FontVariation$Settings\n*L\n52#1:373\n52#1:374,3\n52#1:384,3\n52#1:377,7\n53#1:387\n53#1:388,5\n60#1:393,2\n60#1:395,6\n60#1:401\n*E\n"
+    value = "SMAP\nFontVariation.kt\nKotlin\n*S Kotlin\n*F\n+ 1 FontVariation.kt\nandroidx/compose/ui/text/font/FontVariation$Settings\n+ 2 _Arrays.kt\nkotlin/collections/ArraysKt___ArraysKt\n+ 3 Maps.kt\nkotlin/collections/MapsKt__MapsKt\n+ 4 _Maps.kt\nkotlin/collections/MapsKt___MapsKt\n+ 5 ListUtils.kt\nandroidx/compose/ui/util/ListUtilsKt\n*L\n1#1,373:1\n10783#2:374\n11008#2,3:375\n11011#2,3:385\n361#3,7:378\n76#4:388\n96#4,5:389\n101#5,2:394\n33#5,6:396\n103#5:402\n*S KotlinDebug\n*F\n+ 1 FontVariation.kt\nandroidx/compose/ui/text/font/FontVariation$Settings\n*L\n52#1:374\n52#1:375,3\n52#1:385,3\n52#1:378,7\n53#1:388\n53#1:389,5\n60#1:394,2\n60#1:396,6\n60#1:402\n*E\n"
 .end annotation
 
 .annotation runtime Lkotlin/Metadata;
@@ -79,21 +79,17 @@
 .method public varargs constructor <init>([Landroidx/compose/ui/text/font/FontVariation$Setting;)V
     .locals 11
 
-    const-string/jumbo v0, "settings"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
     .line 36
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 373
+    .line 374
     new-instance v0, Ljava/util/LinkedHashMap;
 
     invoke-direct {v0}, Ljava/util/LinkedHashMap;-><init>()V
 
     check-cast v0, Ljava/util/Map;
 
-    .line 374
+    .line 375
     array-length v1, p1
 
     const/4 v2, 0x0
@@ -110,35 +106,35 @@
 
     move-result-object v5
 
-    .line 377
+    .line 378
     invoke-interface {v0, v5}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v6
 
     if-nez v6, :cond_0
 
-    .line 376
+    .line 377
     new-instance v6, Ljava/util/ArrayList;
 
     invoke-direct {v6}, Ljava/util/ArrayList;-><init>()V
 
     check-cast v6, Ljava/util/List;
 
-    .line 380
+    .line 381
     invoke-interface {v0, v5, v6}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 376
+    .line 377
     :cond_0
     check-cast v6, Ljava/util/List;
 
-    .line 384
+    .line 385
     invoke-interface {v6, v4}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
     add-int/lit8 v3, v3, 0x1
 
     goto :goto_0
 
-    .line 387
+    .line 388
     :cond_1
     new-instance p1, Ljava/util/ArrayList;
 
@@ -146,7 +142,7 @@
 
     check-cast p1, Ljava/util/Collection;
 
-    .line 388
+    .line 389
     invoke-interface {v0}, Ljava/util/Map;->entrySet()Ljava/util/Set;
 
     move-result-object v0
@@ -190,10 +186,10 @@
 
     if-ne v5, v3, :cond_2
 
-    .line 389
+    .line 390
     check-cast v1, Ljava/lang/Iterable;
 
-    .line 390
+    .line 391
     invoke-static {p1, v1}, Lkotlin/collections/CollectionsKt;->addAll(Ljava/util/Collection;Ljava/lang/Iterable;)Z
 
     goto :goto_1
@@ -265,11 +261,11 @@
 
     throw p1
 
-    .line 392
+    .line 393
     :cond_3
     check-cast p1, Ljava/util/List;
 
-    .line 387
+    .line 388
     check-cast p1, Ljava/util/Collection;
 
     .line 51
@@ -281,7 +277,7 @@
 
     iput-object v0, p0, Landroidx/compose/ui/text/font/FontVariation$Settings;->settings:Ljava/util/List;
 
-    .line 396
+    .line 397
     invoke-interface {v0}, Ljava/util/List;->size()I
 
     move-result p1
@@ -291,12 +287,12 @@
     :goto_2
     if-ge v1, p1, :cond_5
 
-    .line 397
+    .line 398
     invoke-interface {v0, v1}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
     move-result-object v4
 
-    .line 394
+    .line 395
     check-cast v4, Landroidx/compose/ui/text/font/FontVariation$Setting;
 
     .line 60

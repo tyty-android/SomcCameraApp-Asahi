@@ -63,11 +63,7 @@
 
 # direct methods
 .method public constructor <init>(Landroidx/compose/ui/focus/FocusRequester;)V
-    .locals 1
-
-    const-string v0, "focusRequester"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+    .locals 0
 
     .line 53
     invoke-direct {p0}, Landroidx/compose/ui/node/ModifierNodeElement;-><init>()V
@@ -107,10 +103,6 @@
 
 .method public final copy(Landroidx/compose/ui/focus/FocusRequester;)Landroidx/compose/ui/focus/FocusRequesterElement;
     .locals 0
-
-    const-string p0, "focusRequester"
-
-    invoke-static {p1, p0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
     new-instance p0, Landroidx/compose/ui/focus/FocusRequesterElement;
 
@@ -206,10 +198,6 @@
 .method public inspectableProperties(Landroidx/compose/ui/platform/InspectorInfo;)V
     .locals 1
 
-    const-string v0, "<this>"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
     .line 63
     const-string v0, "focusRequester"
 
@@ -268,10 +256,6 @@
 
 .method public update(Landroidx/compose/ui/focus/FocusRequesterNode;)V
     .locals 1
-
-    const-string v0, "node"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 57
     invoke-virtual {p1}, Landroidx/compose/ui/focus/FocusRequesterNode;->getFocusRequester()Landroidx/compose/ui/focus/FocusRequester;

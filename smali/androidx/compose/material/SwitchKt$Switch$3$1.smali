@@ -53,7 +53,7 @@
     f = "Switch.kt"
     i = {}
     l = {
-        0x7e
+        0x87
     }
     m = "invokeSuspend"
     n = {}
@@ -72,61 +72,18 @@
     .end annotation
 .end field
 
-.field final synthetic $currentChecked$delegate:Landroidx/compose/runtime/State;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Landroidx/compose/runtime/State<",
-            "Ljava/lang/Boolean;",
-            ">;"
-        }
-    .end annotation
-.end field
-
-.field final synthetic $currentOnCheckedChange$delegate:Landroidx/compose/runtime/State;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Landroidx/compose/runtime/State<",
-            "Lkotlin/jvm/functions/Function1<",
-            "Ljava/lang/Boolean;",
-            "Lkotlin/Unit;",
-            ">;>;"
-        }
-    .end annotation
-.end field
-
-.field final synthetic $forceAnimationCheck$delegate:Landroidx/compose/runtime/MutableState;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Landroidx/compose/runtime/MutableState<",
-            "Ljava/lang/Boolean;",
-            ">;"
-        }
-    .end annotation
-.end field
+.field final synthetic $checked:Z
 
 .field label:I
 
 
 # direct methods
-.method constructor <init>(Landroidx/compose/material/AnchoredDraggableState;Landroidx/compose/runtime/State;Landroidx/compose/runtime/State;Landroidx/compose/runtime/MutableState;Lkotlin/coroutines/Continuation;)V
+.method constructor <init>(ZLandroidx/compose/material/AnchoredDraggableState;Lkotlin/coroutines/Continuation;)V
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "(",
+            "(Z",
             "Landroidx/compose/material/AnchoredDraggableState<",
-            "Ljava/lang/Boolean;",
-            ">;",
-            "Landroidx/compose/runtime/State<",
-            "Ljava/lang/Boolean;",
-            ">;",
-            "Landroidx/compose/runtime/State<",
-            "+",
-            "Lkotlin/jvm/functions/Function1<",
-            "-",
-            "Ljava/lang/Boolean;",
-            "Lkotlin/Unit;",
-            ">;>;",
-            "Landroidx/compose/runtime/MutableState<",
             "Ljava/lang/Boolean;",
             ">;",
             "Lkotlin/coroutines/Continuation<",
@@ -136,17 +93,13 @@
         }
     .end annotation
 
-    iput-object p1, p0, Landroidx/compose/material/SwitchKt$Switch$3$1;->$anchoredDraggableState:Landroidx/compose/material/AnchoredDraggableState;
+    iput-boolean p1, p0, Landroidx/compose/material/SwitchKt$Switch$3$1;->$checked:Z
 
-    iput-object p2, p0, Landroidx/compose/material/SwitchKt$Switch$3$1;->$currentChecked$delegate:Landroidx/compose/runtime/State;
-
-    iput-object p3, p0, Landroidx/compose/material/SwitchKt$Switch$3$1;->$currentOnCheckedChange$delegate:Landroidx/compose/runtime/State;
-
-    iput-object p4, p0, Landroidx/compose/material/SwitchKt$Switch$3$1;->$forceAnimationCheck$delegate:Landroidx/compose/runtime/MutableState;
+    iput-object p2, p0, Landroidx/compose/material/SwitchKt$Switch$3$1;->$anchoredDraggableState:Landroidx/compose/material/AnchoredDraggableState;
 
     const/4 p1, 0x2
 
-    invoke-direct {p0, p1, p5}, Lkotlin/coroutines/jvm/internal/SuspendLambda;-><init>(ILkotlin/coroutines/Continuation;)V
+    invoke-direct {p0, p1, p3}, Lkotlin/coroutines/jvm/internal/SuspendLambda;-><init>(ILkotlin/coroutines/Continuation;)V
 
     return-void
 .end method
@@ -154,7 +107,7 @@
 
 # virtual methods
 .method public final create(Ljava/lang/Object;Lkotlin/coroutines/Continuation;)Lkotlin/coroutines/Continuation;
-    .locals 6
+    .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -169,19 +122,11 @@
 
     new-instance p1, Landroidx/compose/material/SwitchKt$Switch$3$1;
 
-    iget-object v1, p0, Landroidx/compose/material/SwitchKt$Switch$3$1;->$anchoredDraggableState:Landroidx/compose/material/AnchoredDraggableState;
+    iget-boolean v0, p0, Landroidx/compose/material/SwitchKt$Switch$3$1;->$checked:Z
 
-    iget-object v2, p0, Landroidx/compose/material/SwitchKt$Switch$3$1;->$currentChecked$delegate:Landroidx/compose/runtime/State;
+    iget-object p0, p0, Landroidx/compose/material/SwitchKt$Switch$3$1;->$anchoredDraggableState:Landroidx/compose/material/AnchoredDraggableState;
 
-    iget-object v3, p0, Landroidx/compose/material/SwitchKt$Switch$3$1;->$currentOnCheckedChange$delegate:Landroidx/compose/runtime/State;
-
-    iget-object v4, p0, Landroidx/compose/material/SwitchKt$Switch$3$1;->$forceAnimationCheck$delegate:Landroidx/compose/runtime/MutableState;
-
-    move-object v0, p1
-
-    move-object v5, p2
-
-    invoke-direct/range {v0 .. v5}, Landroidx/compose/material/SwitchKt$Switch$3$1;-><init>(Landroidx/compose/material/AnchoredDraggableState;Landroidx/compose/runtime/State;Landroidx/compose/runtime/State;Landroidx/compose/runtime/MutableState;Lkotlin/coroutines/Continuation;)V
+    invoke-direct {p1, v0, p0, p2}, Landroidx/compose/material/SwitchKt$Switch$3$1;-><init>(ZLandroidx/compose/material/AnchoredDraggableState;Lkotlin/coroutines/Continuation;)V
 
     check-cast p1, Lkotlin/coroutines/Continuation;
 
@@ -232,13 +177,13 @@
 .end method
 
 .method public final invokeSuspend(Ljava/lang/Object;)Ljava/lang/Object;
-    .locals 7
+    .locals 9
 
     invoke-static {}, Lkotlin/coroutines/intrinsics/IntrinsicsKt;->getCOROUTINE_SUSPENDED()Ljava/lang/Object;
 
     move-result-object v0
 
-    .line 65535
+    .line 133
     iget v1, p0, Landroidx/compose/material/SwitchKt$Switch$3$1;->label:I
 
     const/4 v2, 0x1
@@ -263,41 +208,45 @@
     :cond_1
     invoke-static {p1}, Lkotlin/ResultKt;->throwOnFailure(Ljava/lang/Object;)V
 
-    .line 125
-    new-instance p1, Landroidx/compose/material/SwitchKt$Switch$3$1$1;
+    .line 134
+    iget-boolean p1, p0, Landroidx/compose/material/SwitchKt$Switch$3$1;->$checked:Z
 
     iget-object v1, p0, Landroidx/compose/material/SwitchKt$Switch$3$1;->$anchoredDraggableState:Landroidx/compose/material/AnchoredDraggableState;
 
-    invoke-direct {p1, v1}, Landroidx/compose/material/SwitchKt$Switch$3$1$1;-><init>(Landroidx/compose/material/AnchoredDraggableState;)V
+    invoke-virtual {v1}, Landroidx/compose/material/AnchoredDraggableState;->getCurrentValue()Ljava/lang/Object;
 
-    check-cast p1, Lkotlin/jvm/functions/Function0;
+    move-result-object v1
 
-    invoke-static {p1}, Landroidx/compose/runtime/SnapshotStateKt;->snapshotFlow(Lkotlin/jvm/functions/Function0;)Lkotlinx/coroutines/flow/Flow;
+    check-cast v1, Ljava/lang/Boolean;
 
-    move-result-object p1
+    invoke-virtual {v1}, Ljava/lang/Boolean;->booleanValue()Z
 
-    .line 126
-    new-instance v1, Landroidx/compose/material/SwitchKt$Switch$3$1$2;
+    move-result v1
 
-    iget-object v3, p0, Landroidx/compose/material/SwitchKt$Switch$3$1;->$currentChecked$delegate:Landroidx/compose/runtime/State;
+    if-eq p1, v1, :cond_2
 
-    iget-object v4, p0, Landroidx/compose/material/SwitchKt$Switch$3$1;->$currentOnCheckedChange$delegate:Landroidx/compose/runtime/State;
+    .line 135
+    iget-object v3, p0, Landroidx/compose/material/SwitchKt$Switch$3$1;->$anchoredDraggableState:Landroidx/compose/material/AnchoredDraggableState;
 
-    iget-object v5, p0, Landroidx/compose/material/SwitchKt$Switch$3$1;->$forceAnimationCheck$delegate:Landroidx/compose/runtime/MutableState;
+    iget-boolean p1, p0, Landroidx/compose/material/SwitchKt$Switch$3$1;->$checked:Z
 
-    const/4 v6, 0x0
+    invoke-static {p1}, Lkotlin/coroutines/jvm/internal/Boxing;->boxBoolean(Z)Ljava/lang/Boolean;
 
-    invoke-direct {v1, v3, v4, v5, v6}, Landroidx/compose/material/SwitchKt$Switch$3$1$2;-><init>(Landroidx/compose/runtime/State;Landroidx/compose/runtime/State;Landroidx/compose/runtime/MutableState;Lkotlin/coroutines/Continuation;)V
+    move-result-object v4
 
-    check-cast v1, Lkotlin/jvm/functions/Function2;
+    move-object v6, p0
 
-    move-object v3, p0
-
-    check-cast v3, Lkotlin/coroutines/Continuation;
+    check-cast v6, Lkotlin/coroutines/Continuation;
 
     iput v2, p0, Landroidx/compose/material/SwitchKt$Switch$3$1;->label:I
 
-    invoke-static {p1, v1, v3}, Lkotlinx/coroutines/flow/FlowKt;->collectLatest(Lkotlinx/coroutines/flow/Flow;Lkotlin/jvm/functions/Function2;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+    const/4 v5, 0x0
+
+    const/4 v7, 0x2
+
+    const/4 v8, 0x0
+
+    invoke-static/range {v3 .. v8}, Landroidx/compose/material/AnchoredDraggableKt;->animateTo$default(Landroidx/compose/material/AnchoredDraggableState;Ljava/lang/Object;FLkotlin/coroutines/Continuation;ILjava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p0
 
@@ -305,7 +254,7 @@
 
     return-object v0
 
-    .line 132
+    .line 137
     :cond_2
     :goto_0
     sget-object p0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;

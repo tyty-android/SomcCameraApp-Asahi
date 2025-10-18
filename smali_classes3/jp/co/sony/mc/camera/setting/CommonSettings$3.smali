@@ -21,7 +21,7 @@
 .method constructor <init>()V
     .locals 0
 
-    .line 343
+    .line 346
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -42,10 +42,10 @@
         }
     .end annotation
 
-    .line 347
+    .line 350
     check-cast p1, Ljp/co/sony/mc/camera/setting/CommonSettings;
 
-    .line 348
+    .line 351
     invoke-static {p1}, Ljp/co/sony/mc/camera/setting/CommonSettings;->-$$Nest$mgetMemoryRecallData(Ljp/co/sony/mc/camera/setting/CommonSettings;)Ljp/co/sony/mc/camera/configuration/parameters/MemoryRecallData;
 
     move-result-object p0

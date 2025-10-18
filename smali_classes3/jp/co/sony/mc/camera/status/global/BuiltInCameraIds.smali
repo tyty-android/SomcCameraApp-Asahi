@@ -11,7 +11,7 @@
 
 .field public static final KEY:Ljava/lang/String; = "built_in_camera_ids"
 
-.field private static REQUIRED_PROVIDER_VERSION:I = 0xa
+.field private static REQUIRED_PROVIDER_VERSION:I
 
 
 # direct methods
@@ -24,6 +24,11 @@
     new-array v0, v0, [Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;
 
     sput-object v0, Ljp/co/sony/mc/camera/status/global/BuiltInCameraIds;->DEFAULT_VALUE:[Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;
+
+    const/16 v0, 0xa
+
+    .line 29
+    sput v0, Ljp/co/sony/mc/camera/status/global/BuiltInCameraIds;->REQUIRED_PROVIDER_VERSION:I
 
     return-void
 .end method

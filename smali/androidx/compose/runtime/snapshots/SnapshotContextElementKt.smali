@@ -28,10 +28,6 @@
 .method public static final asContextElement(Landroidx/compose/runtime/snapshots/Snapshot;)Landroidx/compose/runtime/snapshots/SnapshotContextElement;
     .locals 1
 
-    const-string v0, "<this>"
-
-    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
     .line 32
     new-instance v0, Landroidx/compose/runtime/snapshots/SnapshotContextElementImpl;
 

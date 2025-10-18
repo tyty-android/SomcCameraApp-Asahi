@@ -21,12 +21,12 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/SourceDebugExtension;
-    value = "SMAP\nIdentityArraySet.kt\nKotlin\n*S Kotlin\n*F\n+ 1 IdentityArraySet.kt\nandroidx/compose/runtime/collection/IdentityArraySet\n+ 2 _Collections.kt\nkotlin/collections/CollectionsKt___CollectionsKt\n*L\n1#1,389:1\n1726#2,3:390\n*S KotlinDebug\n*F\n+ 1 IdentityArraySet.kt\nandroidx/compose/runtime/collection/IdentityArraySet\n*L\n366#1:390,3\n*E\n"
+    value = "SMAP\nIdentityArraySet.kt\nKotlin\n*S Kotlin\n*F\n+ 1 IdentityArraySet.kt\nandroidx/compose/runtime/collection/IdentityArraySet\n+ 2 _Collections.kt\nkotlin/collections/CollectionsKt___CollectionsKt\n*L\n1#1,402:1\n1726#2,3:403\n*S KotlinDebug\n*F\n+ 1 IdentityArraySet.kt\nandroidx/compose/runtime/collection/IdentityArraySet\n*L\n378#1:403,3\n*E\n"
 .end annotation
 
 .annotation runtime Lkotlin/Metadata;
     d1 = {
-        "\u0000N\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0000\n\u0002\u0010\"\n\u0002\u0008\u0002\n\u0002\u0010\u0008\n\u0002\u0008\u0003\n\u0002\u0010\u0011\n\u0002\u0008\u0005\n\u0002\u0010\u000b\n\u0002\u0008\u0003\n\u0002\u0010\u0002\n\u0000\n\u0002\u0010\u001e\n\u0002\u0008\t\n\u0002\u0018\u0002\n\u0002\u0008\t\n\u0002\u0010(\n\u0002\u0008\u0004\n\u0002\u0010\u000e\n\u0000\u0008\u0000\u0018\u0000*\u0008\u0008\u0000\u0010\u0001*\u00020\u00022\u0008\u0012\u0004\u0012\u0002H\u00010\u0003B\u0005\u00a2\u0006\u0002\u0010\u0004J\u0013\u0010\u000f\u001a\u00020\u00102\u0006\u0010\u0011\u001a\u00028\u0000\u00a2\u0006\u0002\u0010\u0012J\u0014\u0010\u0013\u001a\u00020\u00142\u000c\u0010\u0015\u001a\u0008\u0012\u0004\u0012\u00028\u00000\u0016J\u0010\u0010\u0017\u001a\u00020\u00142\u0006\u0010\u0018\u001a\u00020\u0006H\u0002J\u0006\u0010\u0019\u001a\u00020\u0014J\u0016\u0010\u001a\u001a\u00020\u00102\u0006\u0010\u001b\u001a\u00028\u0000H\u0096\u0002\u00a2\u0006\u0002\u0010\u0012J\u0016\u0010\u001c\u001a\u00020\u00102\u000c\u0010\u001d\u001a\u0008\u0012\u0004\u0012\u00028\u00000\u0016H\u0016J+\u0010\u001e\u001a\u00020\u00142\u0012\u0010\u001f\u001a\u000e\u0012\u0004\u0012\u00028\u0000\u0012\u0004\u0012\u00020\u00140 H\u0086\u0008\u00f8\u0001\u0000\u0082\u0002\u0008\n\u0006\u0008\u0001\u0012\u0002\u0010\u0001J\u0012\u0010!\u001a\u00020\u00062\u0008\u0010\u0011\u001a\u0004\u0018\u00010\u0002H\u0002J\"\u0010\"\u001a\u00020\u00062\u0006\u0010#\u001a\u00020\u00062\u0008\u0010\u0011\u001a\u0004\u0018\u00010\u00022\u0006\u0010$\u001a\u00020\u0006H\u0002J\u0016\u0010%\u001a\u00028\u00002\u0006\u0010\u0018\u001a\u00020\u0006H\u0086\u0002\u00a2\u0006\u0002\u0010&J\u0008\u0010\'\u001a\u00020\u0010H\u0016J\u0006\u0010(\u001a\u00020\u0010J\u000f\u0010)\u001a\u0008\u0012\u0004\u0012\u00028\u00000*H\u0096\u0002J\u0013\u0010+\u001a\u00020\u00102\u0006\u0010\u0011\u001a\u00028\u0000\u00a2\u0006\u0002\u0010\u0012J \u0010,\u001a\u00020\u00142\u0012\u0010-\u001a\u000e\u0012\u0004\u0012\u00028\u0000\u0012\u0004\u0012\u00020\u00100 H\u0086\u0008\u00f8\u0001\u0000J\u0008\u0010.\u001a\u00020/H\u0016R\u001e\u0010\u0007\u001a\u00020\u00062\u0006\u0010\u0005\u001a\u00020\u0006@RX\u0096\u000e\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\u0008\u0010\tR0\u0010\u000b\u001a\n\u0012\u0006\u0012\u0004\u0018\u00010\u00020\n2\u000e\u0010\u0005\u001a\n\u0012\u0006\u0012\u0004\u0018\u00010\u00020\n@BX\u0086\u000e\u00a2\u0006\n\n\u0002\u0010\u000e\u001a\u0004\u0008\u000c\u0010\r\u0082\u0002\u0007\n\u0005\u0008\u009920\u0001\u00a8\u00060"
+        "\u0000N\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0000\n\u0002\u0010\"\n\u0002\u0008\u0002\n\u0002\u0010\u0008\n\u0002\u0008\u0003\n\u0002\u0010\u0011\n\u0002\u0008\u0005\n\u0002\u0010\u000b\n\u0002\u0008\u0003\n\u0002\u0010\u0002\n\u0000\n\u0002\u0010\u001e\n\u0002\u0008\t\n\u0002\u0018\u0002\n\u0002\u0008\n\n\u0002\u0010(\n\u0002\u0008\u0004\n\u0002\u0010\u000e\n\u0000\u0008\u0000\u0018\u0000*\u0008\u0008\u0000\u0010\u0001*\u00020\u00022\u0008\u0012\u0004\u0012\u0002H\u00010\u0003B\u0005\u00a2\u0006\u0002\u0010\u0004J\u0013\u0010\u000f\u001a\u00020\u00102\u0006\u0010\u0011\u001a\u00028\u0000\u00a2\u0006\u0002\u0010\u0012J\u0014\u0010\u0013\u001a\u00020\u00142\u000c\u0010\u0015\u001a\u0008\u0012\u0004\u0012\u00028\u00000\u0016J\u0010\u0010\u0017\u001a\u00020\u00142\u0006\u0010\u0018\u001a\u00020\u0006H\u0002J\u0006\u0010\u0019\u001a\u00020\u0014J\u0016\u0010\u001a\u001a\u00020\u00102\u0006\u0010\u001b\u001a\u00028\u0000H\u0096\u0002\u00a2\u0006\u0002\u0010\u0012J\u0016\u0010\u001c\u001a\u00020\u00102\u000c\u0010\u001d\u001a\u0008\u0012\u0004\u0012\u00028\u00000\u0016H\u0016J(\u0010\u001e\u001a\u00020\u00102\u0012\u0010\u001f\u001a\u000e\u0012\u0004\u0012\u00028\u0000\u0012\u0004\u0012\u00020\u00100 H\u0086\u0008\u0082\u0002\u0008\n\u0006\u0008\u0001\u0012\u0002\u0010\u0001J(\u0010!\u001a\u00020\u00142\u0012\u0010\u001f\u001a\u000e\u0012\u0004\u0012\u00028\u0000\u0012\u0004\u0012\u00020\u00140 H\u0086\u0008\u0082\u0002\u0008\n\u0006\u0008\u0001\u0012\u0002\u0010\u0001J\u0012\u0010\"\u001a\u00020\u00062\u0008\u0010\u0011\u001a\u0004\u0018\u00010\u0002H\u0002J\"\u0010#\u001a\u00020\u00062\u0006\u0010$\u001a\u00020\u00062\u0008\u0010\u0011\u001a\u0004\u0018\u00010\u00022\u0006\u0010%\u001a\u00020\u0006H\u0002J\u0016\u0010&\u001a\u00028\u00002\u0006\u0010\u0018\u001a\u00020\u0006H\u0086\u0002\u00a2\u0006\u0002\u0010\'J\u0008\u0010(\u001a\u00020\u0010H\u0016J\u0006\u0010)\u001a\u00020\u0010J\u000f\u0010*\u001a\u0008\u0012\u0004\u0012\u00028\u00000+H\u0096\u0002J\u0013\u0010,\u001a\u00020\u00102\u0006\u0010\u0011\u001a\u00028\u0000\u00a2\u0006\u0002\u0010\u0012J\u001d\u0010-\u001a\u00020\u00142\u0012\u0010.\u001a\u000e\u0012\u0004\u0012\u00028\u0000\u0012\u0004\u0012\u00020\u00100 H\u0086\u0008J\u0008\u0010/\u001a\u000200H\u0016R\u001e\u0010\u0007\u001a\u00020\u00062\u0006\u0010\u0005\u001a\u00020\u0006@RX\u0096\u000e\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\u0008\u0010\tR0\u0010\u000b\u001a\n\u0012\u0006\u0012\u0004\u0018\u00010\u00020\n2\u000e\u0010\u0005\u001a\n\u0012\u0006\u0012\u0004\u0018\u00010\u00020\n@BX\u0086\u000e\u00a2\u0006\n\n\u0002\u0010\u000e\u001a\u0004\u0008\u000c\u0010\r\u00a8\u00061"
     }
     d2 = {
         "Landroidx/compose/runtime/collection/IdentityArraySet;",
@@ -59,9 +59,10 @@
         "element",
         "containsAll",
         "elements",
-        "fastForEach",
+        "fastAny",
         "block",
         "Lkotlin/Function1;",
+        "fastForEach",
         "find",
         "findExactIndex",
         "midIndex",
@@ -89,6 +90,10 @@
 .end annotation
 
 
+# static fields
+.field public static final $stable:I = 0x8
+
+
 # instance fields
 .field private size:I
 
@@ -96,6 +101,12 @@
 
 
 # direct methods
+.method static constructor <clinit>()V
+    .locals 0
+
+    return-void
+.end method
+
 .method public constructor <init>()V
     .locals 1
 
@@ -126,7 +137,7 @@
 
     if-ltz p1, :cond_0
 
-    .line 358
+    .line 370
     invoke-virtual {p0}, Landroidx/compose/runtime/collection/IdentityArraySet;->size()I
 
     move-result v0
@@ -135,7 +146,7 @@
 
     return-void
 
-    .line 359
+    .line 371
     :cond_0
     new-instance v0, Ljava/lang/IndexOutOfBoundsException;
 
@@ -175,19 +186,19 @@
 .method private final find(Ljava/lang/Object;)I
     .locals 7
 
-    .line 295
+    .line 307
     invoke-virtual {p0}, Landroidx/compose/runtime/collection/IdentityArraySet;->size()I
 
     move-result v0
 
     add-int/lit8 v0, v0, -0x1
 
-    .line 296
+    .line 308
     invoke-static {p1}, Landroidx/compose/runtime/ActualJvm_jvmKt;->identityHashCode(Ljava/lang/Object;)I
 
     move-result v1
 
-    .line 297
+    .line 309
     iget-object v2, p0, Landroidx/compose/runtime/collection/IdentityArraySet;->values:[Ljava/lang/Object;
 
     const/4 v3, 0x0
@@ -199,10 +210,10 @@
 
     ushr-int/lit8 v4, v4, 0x1
 
-    .line 301
+    .line 313
     aget-object v5, v2, v4
 
-    .line 302
+    .line 314
     invoke-static {v5}, Landroidx/compose/runtime/ActualJvm_jvmKt;->identityHashCode(Ljava/lang/Object;)I
 
     move-result v6
@@ -225,7 +236,7 @@
 
     return v4
 
-    .line 307
+    .line 319
     :cond_2
     invoke-direct {p0, v4, p1, v1}, Landroidx/compose/runtime/collection/IdentityArraySet;->findExactIndex(ILjava/lang/Object;I)I
 
@@ -244,10 +255,10 @@
 .method private final findExactIndex(ILjava/lang/Object;I)I
     .locals 3
 
-    .line 325
+    .line 337
     iget-object v0, p0, Landroidx/compose/runtime/collection/IdentityArraySet;->values:[Ljava/lang/Object;
 
-    .line 326
+    .line 338
     invoke-virtual {p0}, Landroidx/compose/runtime/collection/IdentityArraySet;->size()I
 
     move-result p0
@@ -259,14 +270,14 @@
 
     if-ge v2, v1, :cond_2
 
-    .line 330
+    .line 342
     aget-object v2, v0, v1
 
     if-ne v2, p2, :cond_0
 
     return v1
 
-    .line 334
+    .line 346
     :cond_0
     invoke-static {v2}, Landroidx/compose/runtime/ActualJvm_jvmKt;->identityHashCode(Ljava/lang/Object;)I
 
@@ -287,14 +298,14 @@
 
     if-ge p1, p0, :cond_4
 
-    .line 340
+    .line 352
     aget-object v1, v0, p1
 
     if-ne v1, p2, :cond_3
 
     return p1
 
-    .line 344
+    .line 356
     :cond_3
     invoke-static {v1}, Landroidx/compose/runtime/ActualJvm_jvmKt;->identityHashCode(Ljava/lang/Object;)I
 
@@ -325,10 +336,6 @@
             "(TT;)Z"
         }
     .end annotation
-
-    const-string/jumbo v0, "value"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 55
     invoke-virtual {p0}, Landroidx/compose/runtime/collection/IdentityArraySet;->size()I
@@ -432,11 +439,7 @@
         }
     .end annotation
 
-    const-string v0, "collection"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 117
+    .line 129
     invoke-interface {p1}, Ljava/util/Collection;->isEmpty()Z
 
     move-result v0
@@ -445,13 +448,13 @@
 
     return-void
 
-    .line 119
+    .line 131
     :cond_0
     instance-of v0, p1, Landroidx/compose/runtime/collection/IdentityArraySet;
 
     if-nez v0, :cond_1
 
-    .line 121
+    .line 133
     invoke-interface {p1}, Ljava/util/Collection;->iterator()Ljava/util/Iterator;
 
     move-result-object p1
@@ -467,33 +470,33 @@
 
     move-result-object v0
 
-    .line 122
+    .line 134
     invoke-virtual {p0, v0}, Landroidx/compose/runtime/collection/IdentityArraySet;->add(Ljava/lang/Object;)Z
 
     goto :goto_0
 
-    .line 126
+    .line 138
     :cond_1
     iget-object v0, p0, Landroidx/compose/runtime/collection/IdentityArraySet;->values:[Ljava/lang/Object;
 
-    .line 127
+    .line 139
     check-cast p1, Landroidx/compose/runtime/collection/IdentityArraySet;
 
     iget-object v1, p1, Landroidx/compose/runtime/collection/IdentityArraySet;->values:[Ljava/lang/Object;
 
-    .line 128
+    .line 140
     invoke-virtual {p0}, Landroidx/compose/runtime/collection/IdentityArraySet;->size()I
 
     move-result v2
 
-    .line 129
+    .line 141
     invoke-virtual {p1}, Landroidx/compose/runtime/collection/IdentityArraySet;->size()I
 
     move-result p1
 
     add-int v3, v2, p1
 
-    .line 132
+    .line 144
     iget-object v4, p0, Landroidx/compose/runtime/collection/IdentityArraySet;->values:[Ljava/lang/Object;
 
     array-length v4, v4
@@ -516,7 +519,7 @@
 
     add-int/lit8 v7, v2, -0x1
 
-    .line 134
+    .line 146
     aget-object v7, v0, v7
 
     invoke-static {v7}, Landroidx/compose/runtime/ActualJvm_jvmKt;->identityHashCode(Ljava/lang/Object;)I
@@ -547,10 +550,10 @@
 
     if-eqz v7, :cond_5
 
-    .line 138
+    .line 150
     invoke-static {v1, v0, v2, v5, p1}, Lkotlin/collections/ArraysKt;->copyInto([Ljava/lang/Object;[Ljava/lang/Object;III)[Ljava/lang/Object;
 
-    .line 144
+    .line 156
     invoke-virtual {p0}, Landroidx/compose/runtime/collection/IdentityArraySet;->size()I
 
     move-result v0
@@ -573,7 +576,7 @@
     :cond_6
     mul-int/lit8 v4, p1, 0x2
 
-    .line 148
+    .line 160
     :goto_4
     new-array v4, v4, [Ljava/lang/Object;
 
@@ -601,7 +604,7 @@
 
     add-int/lit8 p1, v7, 0x1
 
-    .line 214
+    .line 226
     invoke-static {v4, v4, v5, p1, v3}, Lkotlin/collections/ArraysKt;->copyInto([Ljava/lang/Object;[Ljava/lang/Object;III)[Ljava/lang/Object;
 
     :cond_9
@@ -611,13 +614,13 @@
 
     const/4 v0, 0x0
 
-    .line 223
+    .line 235
     invoke-static {v4, v0, p1, v3}, Lkotlin/collections/ArraysKt;->fill([Ljava/lang/Object;Ljava/lang/Object;II)V
 
-    .line 225
+    .line 237
     iput-object v4, p0, Landroidx/compose/runtime/collection/IdentityArraySet;->values:[Ljava/lang/Object;
 
-    .line 226
+    .line 238
     iput p1, p0, Landroidx/compose/runtime/collection/IdentityArraySet;->size:I
 
     :cond_a
@@ -630,7 +633,7 @@
 
     add-int/lit8 v8, p1, -0x1
 
-    .line 157
+    .line 169
     aget-object p1, v1, p1
 
     goto :goto_b
@@ -640,7 +643,7 @@
 
     add-int/lit8 v8, v2, -0x1
 
-    .line 158
+    .line 170
     aget-object v2, v0, v2
 
     move v13, v8
@@ -653,19 +656,19 @@
 
     goto :goto_b
 
-    .line 160
+    .line 172
     :cond_d
     aget-object v8, v0, v2
 
-    .line 161
+    .line 173
     aget-object v9, v1, p1
 
-    .line 163
+    .line 175
     invoke-static {v8}, Landroidx/compose/runtime/ActualJvm_jvmKt;->identityHashCode(Ljava/lang/Object;)I
 
     move-result v10
 
-    .line 164
+    .line 176
     invoke-static {v9}, Landroidx/compose/runtime/ActualJvm_jvmKt;->identityHashCode(Ljava/lang/Object;)I
 
     move-result v11
@@ -712,10 +715,10 @@
 
     add-int/lit8 v10, v8, -0x1
 
-    .line 185
+    .line 197
     aget-object v8, v0, v8
 
-    .line 186
+    .line 198
     invoke-static {v8}, Landroidx/compose/runtime/ActualJvm_jvmKt;->identityHashCode(Ljava/lang/Object;)I
 
     move-result v12
@@ -736,7 +739,7 @@
     :goto_b
     add-int/lit8 v9, v7, -0x1
 
-    .line 209
+    .line 221
     aput-object p1, v4, v7
 
     move p1, v8
@@ -826,14 +829,16 @@
         }
     .end annotation
 
-    const-string v0, "elements"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 366
+    .line 378
     check-cast p1, Ljava/lang/Iterable;
 
-    .line 390
+    .line 403
+    instance-of v0, p1, Ljava/util/Collection;
+
+    const/4 v1, 0x1
+
+    if-eqz v0, :cond_0
+
     move-object v0, p1
 
     check-cast v0, Ljava/util/Collection;
@@ -842,13 +847,11 @@
 
     move-result v0
 
-    const/4 v1, 0x1
-
     if-eqz v0, :cond_0
 
     goto :goto_0
 
-    .line 391
+    .line 404
     :cond_0
     invoke-interface {p1}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
 
@@ -865,7 +868,7 @@
 
     move-result-object v0
 
-    .line 366
+    .line 378
     invoke-virtual {p0, v0}, Landroidx/compose/runtime/collection/IdentityArraySet;->contains(Ljava/lang/Object;)Z
 
     move-result v0
@@ -876,6 +879,72 @@
 
     :cond_2
     :goto_0
+    return v1
+.end method
+
+.method public final fastAny(Lkotlin/jvm/functions/Function1;)Z
+    .locals 5
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Lkotlin/jvm/functions/Function1<",
+            "-TT;",
+            "Ljava/lang/Boolean;",
+            ">;)Z"
+        }
+    .end annotation
+
+    .line 118
+    invoke-virtual {p0}, Landroidx/compose/runtime/collection/IdentityArraySet;->size()I
+
+    move-result v0
+
+    const/4 v1, 0x0
+
+    if-nez v0, :cond_0
+
+    return v1
+
+    .line 120
+    :cond_0
+    invoke-virtual {p0}, Landroidx/compose/runtime/collection/IdentityArraySet;->getValues()[Ljava/lang/Object;
+
+    move-result-object p0
+
+    move v2, v1
+
+    :goto_0
+    if-ge v2, v0, :cond_2
+
+    .line 123
+    aget-object v3, p0, v2
+
+    const-string v4, "null cannot be cast to non-null type T of androidx.compose.runtime.collection.IdentityArraySet"
+
+    invoke-static {v3, v4}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;Ljava/lang/String;)V
+
+    invoke-interface {p1, v3}, Lkotlin/jvm/functions/Function1;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object v3
+
+    check-cast v3, Ljava/lang/Boolean;
+
+    invoke-virtual {v3}, Ljava/lang/Boolean;->booleanValue()Z
+
+    move-result v3
+
+    if-eqz v3, :cond_1
+
+    const/4 p0, 0x1
+
+    return p0
+
+    :cond_1
+    add-int/lit8 v2, v2, 0x1
+
+    goto :goto_0
+
+    :cond_2
     return v1
 .end method
 
@@ -890,10 +959,6 @@
             ">;)V"
         }
     .end annotation
-
-    const-string v0, "block"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 109
     invoke-virtual {p0}, Landroidx/compose/runtime/collection/IdentityArraySet;->getValues()[Ljava/lang/Object;
@@ -971,7 +1036,7 @@
 .method public isEmpty()Z
     .locals 0
 
-    .line 234
+    .line 246
     invoke-virtual {p0}, Landroidx/compose/runtime/collection/IdentityArraySet;->size()I
 
     move-result p0
@@ -992,7 +1057,7 @@
 .method public final isNotEmpty()Z
     .locals 0
 
-    .line 239
+    .line 251
     invoke-virtual {p0}, Landroidx/compose/runtime/collection/IdentityArraySet;->size()I
 
     move-result p0
@@ -1020,7 +1085,7 @@
         }
     .end annotation
 
-    .line 372
+    .line 384
     new-instance v0, Landroidx/compose/runtime/collection/IdentityArraySet$iterator$1;
 
     invoke-direct {v0, p0}, Landroidx/compose/runtime/collection/IdentityArraySet$iterator$1;-><init>(Landroidx/compose/runtime/collection/IdentityArraySet;)V
@@ -1044,16 +1109,16 @@
 
     return v0
 
-    .line 245
+    .line 257
     :cond_0
     invoke-direct {p0, p1}, Landroidx/compose/runtime/collection/IdentityArraySet;->find(Ljava/lang/Object;)I
 
     move-result p1
 
-    .line 246
+    .line 258
     iget-object v1, p0, Landroidx/compose/runtime/collection/IdentityArraySet;->values:[Ljava/lang/Object;
 
-    .line 247
+    .line 259
     invoke-virtual {p0}, Landroidx/compose/runtime/collection/IdentityArraySet;->size()I
 
     move-result v2
@@ -1066,16 +1131,16 @@
 
     add-int/lit8 v3, p1, 0x1
 
-    .line 251
+    .line 263
     invoke-static {v1, v1, p1, v3, v2}, Lkotlin/collections/ArraysKt;->copyInto([Ljava/lang/Object;[Ljava/lang/Object;III)[Ljava/lang/Object;
 
     :cond_1
     const/4 p1, 0x0
 
-    .line 258
+    .line 270
     aput-object p1, v1, v0
 
-    .line 259
+    .line 271
     invoke-virtual {p0}, Landroidx/compose/runtime/collection/IdentityArraySet;->size()I
 
     move-result p1
@@ -1125,16 +1190,12 @@
         }
     .end annotation
 
-    const-string v0, "predicate"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 269
+    .line 281
     invoke-virtual {p0}, Landroidx/compose/runtime/collection/IdentityArraySet;->getValues()[Ljava/lang/Object;
 
     move-result-object v0
 
-    .line 270
+    .line 282
     invoke-virtual {p0}, Landroidx/compose/runtime/collection/IdentityArraySet;->size()I
 
     move-result v1
@@ -1146,14 +1207,14 @@
     :goto_0
     if-ge v2, v1, :cond_2
 
-    .line 275
+    .line 287
     aget-object v4, v0, v2
 
     const-string v5, "null cannot be cast to non-null type T of androidx.compose.runtime.collection.IdentityArraySet"
 
     invoke-static {v4, v5}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 276
+    .line 288
     invoke-interface {p1, v4}, Lkotlin/jvm/functions/Function1;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v5
@@ -1168,7 +1229,7 @@
 
     if-eq v3, v2, :cond_0
 
-    .line 278
+    .line 290
     aput-object v4, v0, v3
 
     :cond_0
@@ -1187,14 +1248,14 @@
 
     const/4 v2, 0x0
 
-    .line 284
+    .line 296
     aput-object v2, v0, p1
 
     add-int/lit8 p1, p1, 0x1
 
     goto :goto_1
 
-    .line 286
+    .line 298
     :cond_3
     invoke-static {p0, v3}, Landroidx/compose/runtime/collection/IdentityArraySet;->access$setSize$p(Landroidx/compose/runtime/collection/IdentityArraySet;I)V
 
@@ -1246,7 +1307,7 @@
 .end method
 
 .method public toArray([Ljava/lang/Object;)[Ljava/lang/Object;
-    .locals 1
+    .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<T:",
@@ -1254,10 +1315,6 @@
             ">([TT;)[TT;"
         }
     .end annotation
-
-    const-string v0, "array"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
     check-cast p0, Ljava/util/Collection;
 
@@ -1271,7 +1328,7 @@
 .method public toString()Ljava/lang/String;
     .locals 9
 
-    .line 379
+    .line 391
     move-object v0, p0
 
     check-cast v0, Ljava/lang/Iterable;

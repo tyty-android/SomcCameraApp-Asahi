@@ -58,6 +58,10 @@
 .end annotation
 
 
+# static fields
+.field public static final $stable:I
+
+
 # instance fields
 .field private _block:Ljava/lang/Object;
 
@@ -81,6 +85,12 @@
 
 
 # direct methods
+.method static constructor <clinit>()V
+    .locals 0
+
+    return-void
+.end method
+
 .method public constructor <init>(IZI)V
     .locals 0
 
@@ -301,10 +311,6 @@
 .method public varargs invoke([Ljava/lang/Object;)Ljava/lang/Object;
     .locals 7
 
-    const-string v0, "args"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
     .line 109
     array-length v0, p1
 
@@ -452,11 +458,7 @@
 .end method
 
 .method public final update(Ljava/lang/Object;)V
-    .locals 1
-
-    const-string v0, "block"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+    .locals 2
 
     .line 87
     iget-object v0, p0, Landroidx/compose/runtime/internal/ComposableLambdaNImpl;->_block:Ljava/lang/Object;
@@ -481,6 +483,10 @@
 
     .line 89
     :goto_0
+    const-string v1, "null cannot be cast to non-null type kotlin.jvm.functions.FunctionN<*>"
+
+    invoke-static {p1, v1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;Ljava/lang/String;)V
+
     check-cast p1, Lkotlin/jvm/functions/FunctionN;
 
     iput-object p1, p0, Landroidx/compose/runtime/internal/ComposableLambdaNImpl;->_block:Ljava/lang/Object;

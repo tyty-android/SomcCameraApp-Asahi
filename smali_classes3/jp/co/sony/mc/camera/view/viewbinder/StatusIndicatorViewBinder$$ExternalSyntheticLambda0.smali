@@ -3,54 +3,36 @@
 .source "D8$$SyntheticClass"
 
 # interfaces
-.implements Landroid/view/View$OnLayoutChangeListener;
-
-
-# instance fields
-.field public final synthetic f$0:Ljp/co/sony/mc/camera/view/viewbinder/StatusIndicatorViewBinder;
+.implements Lkotlin/jvm/functions/Function2;
 
 
 # direct methods
-.method public synthetic constructor <init>(Ljp/co/sony/mc/camera/view/viewbinder/StatusIndicatorViewBinder;)V
+.method public synthetic constructor <init>()V
     .locals 0
 
     .line 0
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    iput-object p1, p0, Ljp/co/sony/mc/camera/view/viewbinder/StatusIndicatorViewBinder$$ExternalSyntheticLambda0;->f$0:Ljp/co/sony/mc/camera/view/viewbinder/StatusIndicatorViewBinder;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final onLayoutChange(Landroid/view/View;IIIIIIII)V
-    .locals 10
+.method public final invoke(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 0
 
     .line 0
-    move-object v0, p0
+    check-cast p1, Landroidx/constraintlayout/widget/ConstraintSet;
 
-    iget-object v0, v0, Ljp/co/sony/mc/camera/view/viewbinder/StatusIndicatorViewBinder$$ExternalSyntheticLambda0;->f$0:Ljp/co/sony/mc/camera/view/viewbinder/StatusIndicatorViewBinder;
+    check-cast p2, Ljava/lang/Integer;
 
-    move-object v1, p1
+    invoke-virtual {p2}, Ljava/lang/Integer;->intValue()I
 
-    move v2, p2
+    move-result p0
 
-    move v3, p3
+    invoke-static {p1, p0}, Ljp/co/sony/mc/camera/view/viewbinder/StatusIndicatorViewBinder;->$r8$lambda$yTOBJneR7R52r4XsCmekBjbKfvQ(Landroidx/constraintlayout/widget/ConstraintSet;I)Lkotlin/Unit;
 
-    move v4, p4
+    move-result-object p0
 
-    move v5, p5
-
-    move/from16 v6, p6
-
-    move/from16 v7, p7
-
-    move/from16 v8, p8
-
-    move/from16 v9, p9
-
-    invoke-static/range {v0 .. v9}, Ljp/co/sony/mc/camera/view/viewbinder/StatusIndicatorViewBinder;->$r8$lambda$xvBKBqi8AYOglpiv8PE35JGIhtQ(Ljp/co/sony/mc/camera/view/viewbinder/StatusIndicatorViewBinder;Landroid/view/View;IIIIIIII)V
-
-    return-void
+    return-object p0
 .end method

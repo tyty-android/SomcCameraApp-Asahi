@@ -25,10 +25,10 @@
 .method public constructor <init>(Ljp/co/sony/mc/camera/view/FragmentController;)V
     .locals 0
 
-    .line 7654
+    .line 7906
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 7655
+    .line 7907
     iput-object p1, p0, Ljp/co/sony/mc/camera/view/FragmentController$FocusMagnificationResultListenerImpl;->mController:Ljp/co/sony/mc/camera/view/FragmentController;
 
     return-void
@@ -39,12 +39,12 @@
 .method public onFocusMagnificationResultChanged(Ljp/co/sony/mc/camera/device/CaptureResultNotifier$FocusMagnificationResult;)V
     .locals 3
 
-    .line 7661
+    .line 7913
     invoke-static {}, Ljp/co/sony/mc/camera/setting/CameraProSetting;->getInstance()Ljp/co/sony/mc/camera/setting/CameraProSetting;
 
     move-result-object v0
 
-    .line 7662
+    .line 7914
     sget-object v1, Ljp/co/sony/mc/camera/setting/CameraSettings;->FOCUS_MAGNIFICATION:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
 
     invoke-virtual {v0, v1}, Ljp/co/sony/mc/camera/setting/CameraProSetting;->get(Ljp/co/sony/mc/camera/setting/SettingKey$Key;)Ljava/lang/Object;
@@ -53,7 +53,7 @@
 
     check-cast v1, Ljp/co/sony/mc/camera/configuration/parameters/FocusMagnification;
 
-    .line 7663
+    .line 7915
     sget-object v2, Ljp/co/sony/mc/camera/setting/CameraSettings;->FOCUS_MAGNIFICATION_RATIO:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
 
     invoke-virtual {v0, v2}, Ljp/co/sony/mc/camera/setting/CameraProSetting;->get(Ljp/co/sony/mc/camera/setting/SettingKey$Key;)Ljava/lang/Object;
@@ -66,7 +66,7 @@
 
     move-result v0
 
-    .line 7664
+    .line 7916
     invoke-virtual {v1}, Ljp/co/sony/mc/camera/configuration/parameters/FocusMagnification;->getBooleanValue()Z
 
     move-result v1
@@ -81,7 +81,7 @@
 
     if-nez v0, :cond_0
 
-    .line 7665
+    .line 7917
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/FragmentController$FocusMagnificationResultListenerImpl;->mController:Ljp/co/sony/mc/camera/view/FragmentController;
 
     invoke-static {p0}, Ljp/co/sony/mc/camera/view/FragmentController;->-$$Nest$fgetmCameraEventNotifier(Ljp/co/sony/mc/camera/view/FragmentController;)Ljp/co/sony/mc/camera/view/CameraEventListener;

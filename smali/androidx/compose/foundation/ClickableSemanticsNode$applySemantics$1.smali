@@ -67,7 +67,7 @@
 .method public final invoke()Ljava/lang/Boolean;
     .locals 0
 
-    .line 819
+    .line 911
     iget-object p0, p0, Landroidx/compose/foundation/ClickableSemanticsNode$applySemantics$1;->this$0:Landroidx/compose/foundation/ClickableSemanticsNode;
 
     invoke-static {p0}, Landroidx/compose/foundation/ClickableSemanticsNode;->access$getOnClick$p(Landroidx/compose/foundation/ClickableSemanticsNode;)Lkotlin/jvm/functions/Function0;
@@ -88,7 +88,7 @@
 .method public bridge synthetic invoke()Ljava/lang/Object;
     .locals 0
 
-    .line 818
+    .line 910
     invoke-virtual {p0}, Landroidx/compose/foundation/ClickableSemanticsNode$applySemantics$1;->invoke()Ljava/lang/Boolean;
 
     move-result-object p0

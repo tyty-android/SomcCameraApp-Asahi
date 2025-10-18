@@ -60,7 +60,7 @@
 .method public static synthetic access$isTransitioningTo$jd(Landroidx/compose/animation/core/Transition$Segment;Ljava/lang/Object;Ljava/lang/Object;)Z
     .locals 0
 
-    .line 620
+    .line 844
     invoke-super {p0, p1, p2}, Landroidx/compose/animation/core/Transition$Segment;->isTransitioningTo(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result p0
@@ -94,7 +94,7 @@
         }
     .end annotation
 
-    .line 637
+    .line 861
     invoke-interface {p0}, Landroidx/compose/animation/core/Transition$Segment;->getInitialState()Ljava/lang/Object;
 
     move-result-object v0

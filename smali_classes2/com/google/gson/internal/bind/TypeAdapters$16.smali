@@ -26,7 +26,7 @@
 .method constructor <init>()V
     .locals 0
 
-    .line 429
+    .line 481
     invoke-direct {p0}, Lcom/google/gson/TypeAdapter;-><init>()V
 
     return-void
@@ -42,7 +42,7 @@
         }
     .end annotation
 
-    .line 429
+    .line 481
     invoke-virtual {p0, p1}, Lcom/google/gson/internal/bind/TypeAdapters$16;->read(Lcom/google/gson/stream/JsonReader;)Ljava/math/BigDecimal;
 
     move-result-object p0
@@ -58,7 +58,7 @@
         }
     .end annotation
 
-    .line 431
+    .line 484
     invoke-virtual {p1}, Lcom/google/gson/stream/JsonReader;->peek()Lcom/google/gson/stream/JsonToken;
 
     move-result-object p0
@@ -67,33 +67,33 @@
 
     if-ne p0, v0, :cond_0
 
-    .line 432
+    .line 485
     invoke-virtual {p1}, Lcom/google/gson/stream/JsonReader;->nextNull()V
 
     const/4 p0, 0x0
 
     return-object p0
 
-    .line 435
+    .line 488
     :cond_0
     invoke-virtual {p1}, Lcom/google/gson/stream/JsonReader;->nextString()Ljava/lang/String;
 
     move-result-object p0
 
-    .line 437
+    .line 490
     :try_start_0
-    new-instance v0, Ljava/math/BigDecimal;
+    invoke-static {p0}, Lcom/google/gson/internal/NumberLimits;->parseBigDecimal(Ljava/lang/String;)Ljava/math/BigDecimal;
 
-    invoke-direct {v0, p0}, Ljava/math/BigDecimal;-><init>(Ljava/lang/String;)V
+    move-result-object p0
     :try_end_0
     .catch Ljava/lang/NumberFormatException; {:try_start_0 .. :try_end_0} :catch_0
 
-    return-object v0
+    return-object p0
 
     :catch_0
     move-exception v0
 
-    .line 439
+    .line 492
     new-instance v1, Lcom/google/gson/JsonSyntaxException;
 
     new-instance v2, Ljava/lang/StringBuilder;
@@ -112,6 +112,7 @@
 
     move-result-object p0
 
+    .line 493
     invoke-virtual {p1}, Lcom/google/gson/stream/JsonReader;->getPreviousPath()Ljava/lang/String;
 
     move-result-object p1
@@ -137,7 +138,7 @@
         }
     .end annotation
 
-    .line 429
+    .line 481
     check-cast p2, Ljava/math/BigDecimal;
 
     invoke-virtual {p0, p1, p2}, Lcom/google/gson/internal/bind/TypeAdapters$16;->write(Lcom/google/gson/stream/JsonWriter;Ljava/math/BigDecimal;)V
@@ -153,7 +154,7 @@
         }
     .end annotation
 
-    .line 444
+    .line 499
     invoke-virtual {p1, p2}, Lcom/google/gson/stream/JsonWriter;->value(Ljava/lang/Number;)Lcom/google/gson/stream/JsonWriter;
 
     return-void

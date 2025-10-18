@@ -40,17 +40,23 @@
 .end annotation
 
 
+# static fields
+.field public static final $stable:I = 0x8
+
+
 # instance fields
 .field private final javaLocale:Ljava/util/Locale;
 
 
 # direct methods
+.method static constructor <clinit>()V
+    .locals 0
+
+    return-void
+.end method
+
 .method public constructor <init>(Ljava/util/Locale;)V
-    .locals 1
-
-    const-string v0, "javaLocale"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+    .locals 0
 
     .line 27
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -72,7 +78,7 @@
 .end method
 
 .method public getLanguage()Ljava/lang/String;
-    .locals 1
+    .locals 0
 
     .line 29
     iget-object p0, p0, Landroidx/compose/ui/text/intl/AndroidLocale;->javaLocale:Ljava/util/Locale;
@@ -81,15 +87,11 @@
 
     move-result-object p0
 
-    const-string v0, "javaLocale.language"
-
-    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
-
     return-object p0
 .end method
 
 .method public getRegion()Ljava/lang/String;
-    .locals 1
+    .locals 0
 
     .line 35
     iget-object p0, p0, Landroidx/compose/ui/text/intl/AndroidLocale;->javaLocale:Ljava/util/Locale;
@@ -98,15 +100,11 @@
 
     move-result-object p0
 
-    const-string v0, "javaLocale.country"
-
-    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
-
     return-object p0
 .end method
 
 .method public getScript()Ljava/lang/String;
-    .locals 1
+    .locals 0
 
     .line 32
     iget-object p0, p0, Landroidx/compose/ui/text/intl/AndroidLocale;->javaLocale:Ljava/util/Locale;
@@ -115,15 +113,11 @@
 
     move-result-object p0
 
-    const-string v0, "javaLocale.script"
-
-    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
-
     return-object p0
 .end method
 
 .method public toLanguageTag()Ljava/lang/String;
-    .locals 1
+    .locals 0
 
     .line 37
     iget-object p0, p0, Landroidx/compose/ui/text/intl/AndroidLocale;->javaLocale:Ljava/util/Locale;
@@ -131,10 +125,6 @@
     invoke-virtual {p0}, Ljava/util/Locale;->toLanguageTag()Ljava/lang/String;
 
     move-result-object p0
-
-    const-string v0, "javaLocale.toLanguageTag()"
-
-    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
 
     return-object p0
 .end method

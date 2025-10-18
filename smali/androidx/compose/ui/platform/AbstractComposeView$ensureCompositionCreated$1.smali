@@ -122,7 +122,7 @@
 
     const/4 v0, -0x1
 
-    const-string v1, "androidx.compose.ui.platform.AbstractComposeView.ensureCompositionCreated.<anonymous> (ComposeView.android.kt:250)"
+    const-string v1, "androidx.compose.ui.platform.AbstractComposeView.ensureCompositionCreated.<anonymous> (ComposeView.android.kt:251)"
 
     const v2, -0x271bffc0
 

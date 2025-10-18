@@ -70,7 +70,7 @@
 .method public bridge synthetic invoke(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 2
 
-    .line 250
+    .line 252
     check-cast p1, Landroidx/compose/ui/unit/IntSize;
 
     invoke-virtual {p1}, Landroidx/compose/ui/unit/IntSize;->unbox-impl()J
@@ -87,7 +87,7 @@
 .method public final invoke-ozmzZPI(J)V
     .locals 1
 
-    .line 251
+    .line 253
     iget-object v0, p0, Landroidx/compose/ui/window/AndroidPopup_androidKt$Popup$popupLayout$1$1$1$2;->$this_apply:Landroidx/compose/ui/window/PopupLayout;
 
     invoke-static {p1, p2}, Landroidx/compose/ui/unit/IntSize;->box-impl(J)Landroidx/compose/ui/unit/IntSize;
@@ -96,7 +96,7 @@
 
     invoke-virtual {v0, p1}, Landroidx/compose/ui/window/PopupLayout;->setPopupContentSize-fhxjrPA(Landroidx/compose/ui/unit/IntSize;)V
 
-    .line 252
+    .line 254
     iget-object p0, p0, Landroidx/compose/ui/window/AndroidPopup_androidKt$Popup$popupLayout$1$1$1$2;->$this_apply:Landroidx/compose/ui/window/PopupLayout;
 
     invoke-virtual {p0}, Landroidx/compose/ui/window/PopupLayout;->updatePosition()V

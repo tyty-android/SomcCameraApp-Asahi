@@ -40,7 +40,7 @@
     k = 0x1
     mv = {
         0x1,
-        0x8,
+        0x7,
         0x0
     }
     xi = 0x30
@@ -115,7 +115,7 @@
 
     sput-object v0, Landroidx/annotation/RestrictTo$Scope;->LIBRARY_GROUP:Landroidx/annotation/RestrictTo$Scope;
 
-    .line 97
+    .line 93
     new-instance v0, Landroidx/annotation/RestrictTo$Scope;
 
     const-string v1, "LIBRARY_GROUP_PREFIX"
@@ -126,7 +126,7 @@
 
     sput-object v0, Landroidx/annotation/RestrictTo$Scope;->LIBRARY_GROUP_PREFIX:Landroidx/annotation/RestrictTo$Scope;
 
-    .line 105
+    .line 101
     new-instance v0, Landroidx/annotation/RestrictTo$Scope;
 
     const-string v1, "GROUP_ID"
@@ -137,7 +137,7 @@
 
     sput-object v0, Landroidx/annotation/RestrictTo$Scope;->GROUP_ID:Landroidx/annotation/RestrictTo$Scope;
 
-    .line 111
+    .line 104
     new-instance v0, Landroidx/annotation/RestrictTo$Scope;
 
     const-string v1, "TESTS"
@@ -148,7 +148,7 @@
 
     sput-object v0, Landroidx/annotation/RestrictTo$Scope;->TESTS:Landroidx/annotation/RestrictTo$Scope;
 
-    .line 119
+    .line 111
     new-instance v0, Landroidx/annotation/RestrictTo$Scope;
 
     const-string v1, "SUBCLASSES"

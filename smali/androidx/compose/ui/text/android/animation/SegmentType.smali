@@ -14,7 +14,7 @@
 
 .annotation runtime Lkotlin/Metadata;
     d1 = {
-        "\u0000\u000c\n\u0002\u0018\u0002\n\u0002\u0010\u0010\n\u0002\u0008\u0007\u0008\u0087\u0001\u0018\u00002\u0008\u0012\u0004\u0012\u00020\u00000\u0001B\u0007\u0008\u0002\u00a2\u0006\u0002\u0010\u0002j\u0002\u0008\u0003j\u0002\u0008\u0004j\u0002\u0008\u0005j\u0002\u0008\u0006j\u0002\u0008\u0007\u00a8\u0006\u0008"
+        "\u0000\u000c\n\u0002\u0018\u0002\n\u0002\u0010\u0010\n\u0002\u0008\u0007\u0008\u0080\u0001\u0018\u00002\u0008\u0012\u0004\u0012\u00020\u00000\u0001B\u0007\u0008\u0002\u00a2\u0006\u0002\u0010\u0002j\u0002\u0008\u0003j\u0002\u0008\u0004j\u0002\u0008\u0005j\u0002\u0008\u0006j\u0002\u0008\u0007\u00a8\u0006\u0008"
     }
     d2 = {
         "Landroidx/compose/ui/text/android/animation/SegmentType;",
@@ -75,7 +75,7 @@
 .method static constructor <clinit>()V
     .locals 3
 
-    .line 31
+    .line 26
     new-instance v0, Landroidx/compose/ui/text/android/animation/SegmentType;
 
     const-string v1, "Document"
@@ -86,7 +86,7 @@
 
     sput-object v0, Landroidx/compose/ui/text/android/animation/SegmentType;->Document:Landroidx/compose/ui/text/android/animation/SegmentType;
 
-    .line 36
+    .line 31
     new-instance v0, Landroidx/compose/ui/text/android/animation/SegmentType;
 
     const-string v1, "Paragraph"
@@ -97,7 +97,7 @@
 
     sput-object v0, Landroidx/compose/ui/text/android/animation/SegmentType;->Paragraph:Landroidx/compose/ui/text/android/animation/SegmentType;
 
-    .line 41
+    .line 36
     new-instance v0, Landroidx/compose/ui/text/android/animation/SegmentType;
 
     const-string v1, "Line"
@@ -108,7 +108,7 @@
 
     sput-object v0, Landroidx/compose/ui/text/android/animation/SegmentType;->Line:Landroidx/compose/ui/text/android/animation/SegmentType;
 
-    .line 49
+    .line 44
     new-instance v0, Landroidx/compose/ui/text/android/animation/SegmentType;
 
     const-string v1, "Word"
@@ -119,7 +119,7 @@
 
     sput-object v0, Landroidx/compose/ui/text/android/animation/SegmentType;->Word:Landroidx/compose/ui/text/android/animation/SegmentType;
 
-    .line 54
+    .line 49
     new-instance v0, Landroidx/compose/ui/text/android/animation/SegmentType;
 
     const-string v1, "Character"
@@ -147,7 +147,7 @@
         }
     .end annotation
 
-    .line 26
+    .line 22
     invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
     return-void

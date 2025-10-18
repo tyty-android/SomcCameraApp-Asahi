@@ -35,6 +35,8 @@
 
 .field public static final MEDIA_RECORDER_TRACK_INFO_ENCODED_FRAMES:I = 0x3ed
 
+.field public static final MEDIA_RECORDER_TRACK_INFO_FRAME_END:I = 0x3f2
+
 .field public static final MEDIA_RECORDER_TRACK_INFO_INITIAL_DELAY_MS:I = 0x3ef
 
 .field public static final MEDIA_RECORDER_TRACK_INFO_LIST_END:I = 0x7d0
@@ -50,6 +52,8 @@
 .field public static final MEDIA_RECORDER_TRACK_INFO_TYPE:I = 0x3ea
 
 .field public static final MEDIA_RECORDER_TRACK_INTER_CHUNK_TIME_MS:I = 0x3ee
+
+.field private static final REQUEST_PROGRESS_INTERVAL_IN_MILLIS:I = 0x64
 
 .field private static final TAG:Ljava/lang/String; = "MediaRecorder"
 
@@ -92,24 +96,24 @@
 .method public constructor <init>()V
     .locals 3
 
-    .line 325
+    .line 318
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 327
+    .line 320
     invoke-static {}, Landroid/os/Looper;->myLooper()Landroid/os/Looper;
 
     move-result-object v0
 
     if-eqz v0, :cond_0
 
-    .line 328
+    .line 321
     new-instance v0, Lcom/sonymobile/android/media/MediaRecorder$CallbackHandler;
 
     new-instance v1, Ljava/lang/ref/WeakReference;
 
     invoke-direct {v1, p0}, Ljava/lang/ref/WeakReference;-><init>(Ljava/lang/Object;)V
 
-    .line 330
+    .line 323
     invoke-static {}, Landroid/os/Looper;->myLooper()Landroid/os/Looper;
 
     move-result-object v2
@@ -118,7 +122,7 @@
 
     goto :goto_0
 
-    .line 331
+    .line 324
     :cond_0
     invoke-static {}, Landroid/os/Looper;->getMainLooper()Landroid/os/Looper;
 
@@ -126,21 +130,21 @@
 
     if-eqz v0, :cond_1
 
-    .line 332
+    .line 325
     new-instance v0, Lcom/sonymobile/android/media/MediaRecorder$CallbackHandler;
 
     new-instance v1, Ljava/lang/ref/WeakReference;
 
     invoke-direct {v1, p0}, Ljava/lang/ref/WeakReference;-><init>(Ljava/lang/Object;)V
 
-    .line 334
+    .line 327
     invoke-static {}, Landroid/os/Looper;->getMainLooper()Landroid/os/Looper;
 
     move-result-object v2
 
     invoke-direct {v0, p0, v1, v2}, Lcom/sonymobile/android/media/MediaRecorder$CallbackHandler;-><init>(Lcom/sonymobile/android/media/MediaRecorder;Ljava/lang/ref/WeakReference;Landroid/os/Looper;)V
 
-    .line 340
+    .line 333
     :goto_0
     new-instance v1, Lcom/sonymobile/android/media/internal/SomcMediaRecorder;
 
@@ -150,7 +154,7 @@
 
     return-void
 
-    .line 336
+    .line 329
     :cond_1
     new-instance p0, Ljava/lang/IllegalArgumentException;
 
@@ -164,7 +168,7 @@
 .method public static final getAudioSourceMax()I
     .locals 1
 
-    .line 446
+    .line 434
     invoke-static {}, Lcom/sonymobile/android/media/internal/SomcMediaRecorder;->getAudioSourceMax()I
 
     move-result v0
@@ -177,7 +181,7 @@
 .method public adjustAudioStartVolume(I)V
     .locals 0
 
-    .line 1065
+    .line 1047
     iget-object p0, p0, Lcom/sonymobile/android/media/MediaRecorder;->mSomcMediaRecorder:Lcom/sonymobile/android/media/internal/SomcMediaRecorder;
 
     invoke-virtual {p0, p1}, Lcom/sonymobile/android/media/internal/SomcMediaRecorder;->adjustAudioStartVolume(I)V
@@ -188,7 +192,7 @@
 .method public adjustAudioTimestamp(J)V
     .locals 0
 
-    .line 1061
+    .line 1043
     iget-object p0, p0, Lcom/sonymobile/android/media/MediaRecorder;->mSomcMediaRecorder:Lcom/sonymobile/android/media/internal/SomcMediaRecorder;
 
     invoke-virtual {p0, p1, p2}, Lcom/sonymobile/android/media/internal/SomcMediaRecorder;->adjustAudioTimestamp(J)V
@@ -196,21 +200,32 @@
     return-void
 .end method
 
+.method public createVideoTrack(Ljp/co/sony/mc/camera/recorder/RecorderParameters$VideoTrackId;)V
+    .locals 0
+
+    .line 382
+    iget-object p0, p0, Lcom/sonymobile/android/media/MediaRecorder;->mSomcMediaRecorder:Lcom/sonymobile/android/media/internal/SomcMediaRecorder;
+
+    invoke-virtual {p0, p1}, Lcom/sonymobile/android/media/internal/SomcMediaRecorder;->createVideoTrack(Ljp/co/sony/mc/camera/recorder/RecorderParameters$VideoTrackId;)V
+
+    return-void
+.end method
+
 .method protected finalize()V
     .locals 1
 
-    .line 1147
+    .line 1138
     iget-object v0, p0, Lcom/sonymobile/android/media/MediaRecorder;->mSomcMediaRecorder:Lcom/sonymobile/android/media/internal/SomcMediaRecorder;
 
     if-eqz v0, :cond_0
 
-    .line 1149
+    .line 1140
     :try_start_0
     invoke-virtual {v0}, Lcom/sonymobile/android/media/internal/SomcMediaRecorder;->reset()V
     :try_end_0
     .catch Ljava/lang/IllegalStateException; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 1154
+    .line 1145
     :catch_0
     :try_start_1
     iget-object p0, p0, Lcom/sonymobile/android/media/MediaRecorder;->mSomcMediaRecorder:Lcom/sonymobile/android/media/internal/SomcMediaRecorder;
@@ -232,7 +247,7 @@
         }
     .end annotation
 
-    .line 1041
+    .line 1024
     new-instance p0, Ljava/lang/UnsupportedOperationException;
 
     const-string v0, " getMaxAmplitude unsupported"
@@ -240,19 +255,6 @@
     invoke-direct {p0, v0}, Ljava/lang/UnsupportedOperationException;-><init>(Ljava/lang/String;)V
 
     throw p0
-.end method
-
-.method public getSurface()Landroid/view/Surface;
-    .locals 0
-
-    .line 375
-    iget-object p0, p0, Lcom/sonymobile/android/media/MediaRecorder;->mSomcMediaRecorder:Lcom/sonymobile/android/media/internal/SomcMediaRecorder;
-
-    invoke-virtual {p0}, Lcom/sonymobile/android/media/internal/SomcMediaRecorder;->getSurface()Landroid/view/Surface;
-
-    move-result-object p0
-
-    return-object p0
 .end method
 
 .method public pause()V
@@ -263,7 +265,7 @@
         }
     .end annotation
 
-    .line 867
+    .line 847
     iget-object p0, p0, Lcom/sonymobile/android/media/MediaRecorder;->mSomcMediaRecorder:Lcom/sonymobile/android/media/internal/SomcMediaRecorder;
 
     invoke-virtual {p0}, Lcom/sonymobile/android/media/internal/SomcMediaRecorder;->pause()V
@@ -280,14 +282,14 @@
         }
     .end annotation
 
-    .line 775
+    .line 755
     iget-object v0, p0, Lcom/sonymobile/android/media/MediaRecorder;->mSomcMediaRecorder:Lcom/sonymobile/android/media/internal/SomcMediaRecorder;
 
     invoke-virtual {v0}, Lcom/sonymobile/android/media/internal/SomcMediaRecorder;->prepare()V
 
     const/4 v0, 0x1
 
-    .line 776
+    .line 756
     iput-boolean v0, p0, Lcom/sonymobile/android/media/MediaRecorder;->mIsAvailable:Z
 
     return-void
@@ -296,7 +298,7 @@
 .method public release()V
     .locals 0
 
-    .line 1028
+    .line 1011
     iget-object p0, p0, Lcom/sonymobile/android/media/MediaRecorder;->mSomcMediaRecorder:Lcom/sonymobile/android/media/internal/SomcMediaRecorder;
 
     invoke-virtual {p0}, Lcom/sonymobile/android/media/internal/SomcMediaRecorder;->release()V
@@ -304,13 +306,15 @@
     return-void
 .end method
 
-.method public requestProgressInfo(I)V
-    .locals 0
+.method public requestProgressInfo()V
+    .locals 1
 
-    .line 1053
+    .line 1035
     iget-object p0, p0, Lcom/sonymobile/android/media/MediaRecorder;->mSomcMediaRecorder:Lcom/sonymobile/android/media/internal/SomcMediaRecorder;
 
-    invoke-virtual {p0, p1}, Lcom/sonymobile/android/media/internal/SomcMediaRecorder;->requestProgressInfo(I)V
+    const/16 v0, 0x64
+
+    invoke-virtual {p0, v0}, Lcom/sonymobile/android/media/internal/SomcMediaRecorder;->requestProgressInfo(I)V
 
     return-void
 .end method
@@ -320,10 +324,10 @@
 
     const/4 v0, 0x0
 
-    .line 890
+    .line 870
     iput-boolean v0, p0, Lcom/sonymobile/android/media/MediaRecorder;->mIsAvailable:Z
 
-    .line 891
+    .line 871
     iget-object p0, p0, Lcom/sonymobile/android/media/MediaRecorder;->mSomcMediaRecorder:Lcom/sonymobile/android/media/internal/SomcMediaRecorder;
 
     invoke-virtual {p0}, Lcom/sonymobile/android/media/internal/SomcMediaRecorder;->reset()V
@@ -339,7 +343,7 @@
         }
     .end annotation
 
-    .line 879
+    .line 859
     iget-object p0, p0, Lcom/sonymobile/android/media/MediaRecorder;->mSomcMediaRecorder:Lcom/sonymobile/android/media/internal/SomcMediaRecorder;
 
     invoke-virtual {p0}, Lcom/sonymobile/android/media/internal/SomcMediaRecorder;->resume()V
@@ -350,7 +354,7 @@
 .method public setAudioChannels(I)V
     .locals 0
 
-    .line 703
+    .line 680
     iget-object p0, p0, Lcom/sonymobile/android/media/MediaRecorder;->mSomcMediaRecorder:Lcom/sonymobile/android/media/internal/SomcMediaRecorder;
 
     invoke-virtual {p0, p1}, Lcom/sonymobile/android/media/internal/SomcMediaRecorder;->setAudioChannels(I)V
@@ -366,7 +370,7 @@
         }
     .end annotation
 
-    .line 660
+    .line 636
     iget-object p0, p0, Lcom/sonymobile/android/media/MediaRecorder;->mSomcMediaRecorder:Lcom/sonymobile/android/media/internal/SomcMediaRecorder;
 
     invoke-virtual {p0, p1}, Lcom/sonymobile/android/media/internal/SomcMediaRecorder;->setAudioEncoder(I)V
@@ -377,7 +381,7 @@
 .method public setAudioEncodingBitRate(I)V
     .locals 0
 
-    .line 716
+    .line 693
     iget-object p0, p0, Lcom/sonymobile/android/media/MediaRecorder;->mSomcMediaRecorder:Lcom/sonymobile/android/media/internal/SomcMediaRecorder;
 
     invoke-virtual {p0, p1}, Lcom/sonymobile/android/media/internal/SomcMediaRecorder;->setAudioEncodingBitRate(I)V
@@ -388,7 +392,7 @@
 .method public setAudioSamplingRate(I)V
     .locals 0
 
-    .line 691
+    .line 668
     iget-object p0, p0, Lcom/sonymobile/android/media/MediaRecorder;->mSomcMediaRecorder:Lcom/sonymobile/android/media/internal/SomcMediaRecorder;
 
     invoke-virtual {p0, p1}, Lcom/sonymobile/android/media/internal/SomcMediaRecorder;->setAudioSamplingRate(I)V
@@ -404,7 +408,7 @@
         }
     .end annotation
 
-    .line 427
+    .line 415
     iget-object p0, p0, Lcom/sonymobile/android/media/MediaRecorder;->mSomcMediaRecorder:Lcom/sonymobile/android/media/internal/SomcMediaRecorder;
 
     invoke-virtual {p0, p1}, Lcom/sonymobile/android/media/internal/SomcMediaRecorder;->setAudioSource(I)V
@@ -415,10 +419,10 @@
 .method public setAuxiliaryOutputFile(Ljava/io/FileDescriptor;)V
     .locals 0
 
-    .line 739
+    .line 717
     new-instance p0, Ljava/lang/UnsupportedOperationException;
 
-    const-string/jumbo p1, "setAuxiliaryOutputFile(FileDescriptor) unsupported"
+    const-string p1, "setAuxiliaryOutputFile(FileDescriptor) unsupported"
 
     invoke-direct {p0, p1}, Ljava/lang/UnsupportedOperationException;-><init>(Ljava/lang/String;)V
 
@@ -428,10 +432,10 @@
 .method public setAuxiliaryOutputFile(Ljava/lang/String;)V
     .locals 0
 
-    .line 750
+    .line 728
     new-instance p0, Ljava/lang/UnsupportedOperationException;
 
-    const-string/jumbo p1, "setAuxiliaryOutputFile unsupported"
+    const-string p1, "setAuxiliaryOutputFile unsupported"
 
     invoke-direct {p0, p1}, Ljava/lang/UnsupportedOperationException;-><init>(Ljava/lang/String;)V
 
@@ -446,7 +450,7 @@
         }
     .end annotation
 
-    .line 361
+    .line 354
     new-instance p0, Ljava/lang/UnsupportedOperationException;
 
     const-string p1, "Camera source not supported"
@@ -459,7 +463,7 @@
 .method public setCaptureRate(D)V
     .locals 0
 
-    .line 494
+    .line 469
     iget-object p0, p0, Lcom/sonymobile/android/media/MediaRecorder;->mSomcMediaRecorder:Lcom/sonymobile/android/media/internal/SomcMediaRecorder;
 
     invoke-virtual {p0, p1, p2}, Lcom/sonymobile/android/media/internal/SomcMediaRecorder;->setCaptureRate(D)V
@@ -470,7 +474,7 @@
 .method public setHalfFps()V
     .locals 0
 
-    .line 1073
+    .line 1055
     iget-object p0, p0, Lcom/sonymobile/android/media/MediaRecorder;->mSomcMediaRecorder:Lcom/sonymobile/android/media/internal/SomcMediaRecorder;
 
     invoke-virtual {p0}, Lcom/sonymobile/android/media/internal/SomcMediaRecorder;->setHalfFps()V
@@ -481,7 +485,7 @@
 .method public setIframeInterval(I)V
     .locals 0
 
-    .line 604
+    .line 580
     iget-object p0, p0, Lcom/sonymobile/android/media/MediaRecorder;->mSomcMediaRecorder:Lcom/sonymobile/android/media/internal/SomcMediaRecorder;
 
     invoke-virtual {p0, p1}, Lcom/sonymobile/android/media/internal/SomcMediaRecorder;->setIFrameInterval(I)V
@@ -489,13 +493,13 @@
     return-void
 .end method
 
-.method public setInputSurface(Landroid/view/Surface;)V
+.method public setInputSurface(Ljp/co/sony/mc/camera/recorder/RecorderParameters$VideoTrackId;Landroid/view/Surface;)V
     .locals 0
 
-    .line 394
+    .line 373
     iget-object p0, p0, Lcom/sonymobile/android/media/MediaRecorder;->mSomcMediaRecorder:Lcom/sonymobile/android/media/internal/SomcMediaRecorder;
 
-    invoke-virtual {p0, p1}, Lcom/sonymobile/android/media/internal/SomcMediaRecorder;->setInputSurface(Landroid/view/Surface;)V
+    invoke-virtual {p0, p1, p2}, Lcom/sonymobile/android/media/internal/SomcMediaRecorder;->setInputSurface(Ljp/co/sony/mc/camera/recorder/RecorderParameters$VideoTrackId;Landroid/view/Surface;)V
 
     return-void
 .end method
@@ -503,7 +507,7 @@
 .method public setLocation(FF)V
     .locals 0
 
-    .line 532
+    .line 508
     iget-object p0, p0, Lcom/sonymobile/android/media/MediaRecorder;->mSomcMediaRecorder:Lcom/sonymobile/android/media/internal/SomcMediaRecorder;
 
     invoke-virtual {p0, p1, p2}, Lcom/sonymobile/android/media/internal/SomcMediaRecorder;->setLocation(FF)V
@@ -519,7 +523,7 @@
         }
     .end annotation
 
-    .line 628
+    .line 604
     iget-object p0, p0, Lcom/sonymobile/android/media/MediaRecorder;->mSomcMediaRecorder:Lcom/sonymobile/android/media/internal/SomcMediaRecorder;
 
     invoke-virtual {p0, p1}, Lcom/sonymobile/android/media/internal/SomcMediaRecorder;->setMaxDuration(I)V
@@ -535,7 +539,7 @@
         }
     .end annotation
 
-    .line 645
+    .line 621
     iget-object p0, p0, Lcom/sonymobile/android/media/MediaRecorder;->mSomcMediaRecorder:Lcom/sonymobile/android/media/internal/SomcMediaRecorder;
 
     invoke-virtual {p0, p1, p2}, Lcom/sonymobile/android/media/internal/SomcMediaRecorder;->setMaxFileSize(J)V
@@ -546,7 +550,7 @@
 .method public setOnErrorListener(Landroid/media/MediaRecorder$OnErrorListener;)V
     .locals 0
 
-    .line 922
+    .line 902
     iput-object p1, p0, Lcom/sonymobile/android/media/MediaRecorder;->mOnErrorListener:Landroid/media/MediaRecorder$OnErrorListener;
 
     return-void
@@ -555,24 +559,24 @@
 .method public setOnInfoListener(Landroid/media/MediaRecorder$OnInfoListener;)V
     .locals 0
 
-    .line 1006
+    .line 989
     iput-object p1, p0, Lcom/sonymobile/android/media/MediaRecorder;->mOnInfoListener:Landroid/media/MediaRecorder$OnInfoListener;
 
     return-void
 .end method
 
-.method public setOrientationHint(I)V
+.method public setOrientationHint(Ljp/co/sony/mc/camera/recorder/RecorderParameters$VideoTrackId;I)V
     .locals 0
 
-    .line 512
+    .line 488
     iget-object p0, p0, Lcom/sonymobile/android/media/MediaRecorder;->mSomcMediaRecorder:Lcom/sonymobile/android/media/internal/SomcMediaRecorder;
 
-    invoke-virtual {p0, p1}, Lcom/sonymobile/android/media/internal/SomcMediaRecorder;->setOrientationHint(I)V
+    invoke-virtual {p0, p1, p2}, Lcom/sonymobile/android/media/internal/SomcMediaRecorder;->setOrientationHint(Ljp/co/sony/mc/camera/recorder/RecorderParameters$VideoTrackId;I)V
 
     return-void
 .end method
 
-.method public setOutputFile(Ljava/io/FileDescriptor;)V
+.method public setOutputFile(Ljp/co/sony/mc/camera/recorder/RecorderParameters$VideoTrackId;Ljava/io/FileDescriptor;)V
     .locals 0
     .annotation system Ldalvik/annotation/Throws;
         value = {
@@ -580,10 +584,10 @@
         }
     .end annotation
 
-    .line 762
+    .line 742
     iget-object p0, p0, Lcom/sonymobile/android/media/MediaRecorder;->mSomcMediaRecorder:Lcom/sonymobile/android/media/internal/SomcMediaRecorder;
 
-    invoke-virtual {p0, p1}, Lcom/sonymobile/android/media/internal/SomcMediaRecorder;->setOutputFile(Ljava/io/FileDescriptor;)V
+    invoke-virtual {p0, p1, p2}, Lcom/sonymobile/android/media/internal/SomcMediaRecorder;->setOutputFile(Ljp/co/sony/mc/camera/recorder/RecorderParameters$VideoTrackId;Ljava/io/FileDescriptor;)V
 
     return-void
 .end method
@@ -596,7 +600,7 @@
         }
     .end annotation
 
-    .line 551
+    .line 527
     iget-object p0, p0, Lcom/sonymobile/android/media/MediaRecorder;->mSomcMediaRecorder:Lcom/sonymobile/android/media/internal/SomcMediaRecorder;
 
     invoke-virtual {p0, p1}, Lcom/sonymobile/android/media/internal/SomcMediaRecorder;->setOutputFormat(I)V
@@ -607,7 +611,7 @@
 .method public setPreferredDevice(Landroid/media/AudioDeviceInfo;)V
     .locals 0
 
-    .line 437
+    .line 425
     iget-object p0, p0, Lcom/sonymobile/android/media/MediaRecorder;->mSomcMediaRecorder:Lcom/sonymobile/android/media/internal/SomcMediaRecorder;
 
     invoke-virtual {p0, p1}, Lcom/sonymobile/android/media/internal/SomcMediaRecorder;->setPreferredDevice(Landroid/media/AudioDeviceInfo;)V
@@ -618,7 +622,7 @@
 .method public setPreviewDisplay(Landroid/view/Surface;)V
     .locals 0
 
-    .line 412
+    .line 400
     new-instance p0, Ljava/lang/UnsupportedOperationException;
 
     const-string/jumbo p1, "setPreviewDisplay not supported"
@@ -628,21 +632,10 @@
     throw p0
 .end method
 
-.method public setProfile(Landroid/media/CamcorderProfile;)V
-    .locals 0
-
-    .line 474
-    iget-object p0, p0, Lcom/sonymobile/android/media/MediaRecorder;->mSomcMediaRecorder:Lcom/sonymobile/android/media/internal/SomcMediaRecorder;
-
-    invoke-virtual {p0, p1}, Lcom/sonymobile/android/media/internal/SomcMediaRecorder;->setProfile(Landroid/media/CamcorderProfile;)V
-
-    return-void
-.end method
-
 .method public setStreamingMode(Z)V
     .locals 0
 
-    .line 1069
+    .line 1051
     iget-object p0, p0, Lcom/sonymobile/android/media/MediaRecorder;->mSomcMediaRecorder:Lcom/sonymobile/android/media/internal/SomcMediaRecorder;
 
     invoke-virtual {p0, p1}, Lcom/sonymobile/android/media/internal/SomcMediaRecorder;->setStreamingMode(Z)V
@@ -653,7 +646,7 @@
 .method public setStreamingOrientation(I)V
     .locals 0
 
-    .line 1077
+    .line 1059
     iget-object p0, p0, Lcom/sonymobile/android/media/MediaRecorder;->mSomcMediaRecorder:Lcom/sonymobile/android/media/internal/SomcMediaRecorder;
 
     invoke-virtual {p0, p1}, Lcom/sonymobile/android/media/internal/SomcMediaRecorder;->setStreamingOrientation(I)V
@@ -664,7 +657,7 @@
 .method public setVideoBitRateMode(I)V
     .locals 0
 
-    .line 597
+    .line 573
     iget-object p0, p0, Lcom/sonymobile/android/media/MediaRecorder;->mSomcMediaRecorder:Lcom/sonymobile/android/media/internal/SomcMediaRecorder;
 
     invoke-virtual {p0, p1}, Lcom/sonymobile/android/media/internal/SomcMediaRecorder;->setVideoBitRateMode(I)V
@@ -675,7 +668,7 @@
 .method public setVideoColorAspects(III)V
     .locals 0
 
-    .line 611
+    .line 587
     iget-object p0, p0, Lcom/sonymobile/android/media/MediaRecorder;->mSomcMediaRecorder:Lcom/sonymobile/android/media/internal/SomcMediaRecorder;
 
     invoke-virtual {p0, p1, p2, p3}, Lcom/sonymobile/android/media/internal/SomcMediaRecorder;->setVideoColorAspects(III)V
@@ -683,7 +676,7 @@
     return-void
 .end method
 
-.method public setVideoEncoder(I)V
+.method public setVideoEncoder(Ljp/co/sony/mc/camera/recorder/RecorderParameters$VideoTrackId;Ljava/lang/Integer;)V
     .locals 0
     .annotation system Ldalvik/annotation/Throws;
         value = {
@@ -691,21 +684,21 @@
         }
     .end annotation
 
-    .line 675
+    .line 652
     iget-object p0, p0, Lcom/sonymobile/android/media/MediaRecorder;->mSomcMediaRecorder:Lcom/sonymobile/android/media/internal/SomcMediaRecorder;
 
-    invoke-virtual {p0, p1}, Lcom/sonymobile/android/media/internal/SomcMediaRecorder;->setVideoEncoder(I)V
+    invoke-virtual {p0, p1, p2}, Lcom/sonymobile/android/media/internal/SomcMediaRecorder;->setVideoEncoder(Ljp/co/sony/mc/camera/recorder/RecorderParameters$VideoTrackId;Ljava/lang/Integer;)V
 
     return-void
 .end method
 
-.method public setVideoEncodingBitRate(I)V
+.method public setVideoEncodingBitRate(Ljp/co/sony/mc/camera/recorder/RecorderParameters$VideoTrackId;I)V
     .locals 0
 
-    .line 729
+    .line 707
     iget-object p0, p0, Lcom/sonymobile/android/media/MediaRecorder;->mSomcMediaRecorder:Lcom/sonymobile/android/media/internal/SomcMediaRecorder;
 
-    invoke-virtual {p0, p1}, Lcom/sonymobile/android/media/internal/SomcMediaRecorder;->setVideoEncodingBitRate(I)V
+    invoke-virtual {p0, p1, p2}, Lcom/sonymobile/android/media/internal/SomcMediaRecorder;->setVideoEncodingBitRate(Ljp/co/sony/mc/camera/recorder/RecorderParameters$VideoTrackId;I)V
 
     return-void
 .end method
@@ -713,7 +706,7 @@
 .method public setVideoEncodingProfileLevel(II)V
     .locals 0
 
-    .line 590
+    .line 566
     iget-object p0, p0, Lcom/sonymobile/android/media/MediaRecorder;->mSomcMediaRecorder:Lcom/sonymobile/android/media/internal/SomcMediaRecorder;
 
     invoke-virtual {p0, p1, p2}, Lcom/sonymobile/android/media/internal/SomcMediaRecorder;->setVideoEncodingProfileLevel(II)V
@@ -729,7 +722,7 @@
         }
     .end annotation
 
-    .line 583
+    .line 559
     iget-object p0, p0, Lcom/sonymobile/android/media/MediaRecorder;->mSomcMediaRecorder:Lcom/sonymobile/android/media/internal/SomcMediaRecorder;
 
     invoke-virtual {p0, p1}, Lcom/sonymobile/android/media/internal/SomcMediaRecorder;->setVideoFrameRate(I)V
@@ -737,7 +730,7 @@
     return-void
 .end method
 
-.method public setVideoSize(II)V
+.method public setVideoSize(Ljp/co/sony/mc/camera/recorder/RecorderParameters$VideoTrackId;Landroid/graphics/Rect;)V
     .locals 0
     .annotation system Ldalvik/annotation/Throws;
         value = {
@@ -745,10 +738,10 @@
         }
     .end annotation
 
-    .line 566
+    .line 542
     iget-object p0, p0, Lcom/sonymobile/android/media/MediaRecorder;->mSomcMediaRecorder:Lcom/sonymobile/android/media/internal/SomcMediaRecorder;
 
-    invoke-virtual {p0, p1, p2}, Lcom/sonymobile/android/media/internal/SomcMediaRecorder;->setVideoSize(II)V
+    invoke-virtual {p0, p1, p2}, Lcom/sonymobile/android/media/internal/SomcMediaRecorder;->setVideoSize(Ljp/co/sony/mc/camera/recorder/RecorderParameters$VideoTrackId;Landroid/graphics/Rect;)V
 
     return-void
 .end method
@@ -761,7 +754,7 @@
         }
     .end annotation
 
-    .line 461
+    .line 449
     iget-object p0, p0, Lcom/sonymobile/android/media/MediaRecorder;->mSomcMediaRecorder:Lcom/sonymobile/android/media/internal/SomcMediaRecorder;
 
     invoke-virtual {p0, p1}, Lcom/sonymobile/android/media/internal/SomcMediaRecorder;->setVideoSource(I)V
@@ -777,7 +770,7 @@
         }
     .end annotation
 
-    .line 793
+    .line 773
     iget-object p0, p0, Lcom/sonymobile/android/media/MediaRecorder;->mSomcMediaRecorder:Lcom/sonymobile/android/media/internal/SomcMediaRecorder;
 
     invoke-virtual {p0}, Lcom/sonymobile/android/media/internal/SomcMediaRecorder;->start()V
@@ -795,7 +788,7 @@
 
     const/4 v0, 0x0
 
-    .line 810
+    .line 790
     :try_start_0
     iget-object v1, p0, Lcom/sonymobile/android/media/MediaRecorder;->mSomcMediaRecorder:Lcom/sonymobile/android/media/internal/SomcMediaRecorder;
 
@@ -803,7 +796,7 @@
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 812
+    .line 792
     iput-boolean v0, p0, Lcom/sonymobile/android/media/MediaRecorder;->mIsAvailable:Z
 
     return-void
@@ -813,7 +806,7 @@
 
     iput-boolean v0, p0, Lcom/sonymobile/android/media/MediaRecorder;->mIsAvailable:Z
 
-    .line 813
+    .line 793
     throw v1
 .end method
 
@@ -825,7 +818,7 @@
         }
     .end annotation
 
-    .line 837
+    .line 817
     iget-object p0, p0, Lcom/sonymobile/android/media/MediaRecorder;->mSomcMediaRecorder:Lcom/sonymobile/android/media/internal/SomcMediaRecorder;
 
     invoke-virtual {p0}, Lcom/sonymobile/android/media/internal/SomcMediaRecorder;->stopAsync()V
@@ -836,7 +829,7 @@
 .method public stopAudioRecording()V
     .locals 0
 
-    .line 348
+    .line 341
     iget-object p0, p0, Lcom/sonymobile/android/media/MediaRecorder;->mSomcMediaRecorder:Lcom/sonymobile/android/media/internal/SomcMediaRecorder;
 
     invoke-virtual {p0}, Lcom/sonymobile/android/media/internal/SomcMediaRecorder;->stopAudioRecording()V
@@ -849,7 +842,7 @@
 
     const/4 v0, 0x0
 
-    .line 822
+    .line 802
     :try_start_0
     iget-object v1, p0, Lcom/sonymobile/android/media/MediaRecorder;->mSomcMediaRecorder:Lcom/sonymobile/android/media/internal/SomcMediaRecorder;
 
@@ -857,7 +850,7 @@
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 824
+    .line 804
     iput-boolean v0, p0, Lcom/sonymobile/android/media/MediaRecorder;->mIsAvailable:Z
 
     return-void
@@ -867,14 +860,14 @@
 
     iput-boolean v0, p0, Lcom/sonymobile/android/media/MediaRecorder;->mIsAvailable:Z
 
-    .line 825
+    .line 805
     throw v1
 .end method
 
 .method public useIntelligentActive(Z)V
     .locals 0
 
-    .line 1057
+    .line 1039
     iget-object p0, p0, Lcom/sonymobile/android/media/MediaRecorder;->mSomcMediaRecorder:Lcom/sonymobile/android/media/internal/SomcMediaRecorder;
 
     invoke-virtual {p0, p1}, Lcom/sonymobile/android/media/internal/SomcMediaRecorder;->useIntelligentActive(Z)V
@@ -892,7 +885,7 @@
 
     const/4 v0, 0x0
 
-    .line 848
+    .line 828
     :try_start_0
     iget-object v1, p0, Lcom/sonymobile/android/media/MediaRecorder;->mSomcMediaRecorder:Lcom/sonymobile/android/media/internal/SomcMediaRecorder;
 
@@ -900,7 +893,7 @@
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 850
+    .line 830
     iput-boolean v0, p0, Lcom/sonymobile/android/media/MediaRecorder;->mIsAvailable:Z
 
     return-void
@@ -910,6 +903,6 @@
 
     iput-boolean v0, p0, Lcom/sonymobile/android/media/MediaRecorder;->mIsAvailable:Z
 
-    .line 851
+    .line 831
     throw v1
 .end method

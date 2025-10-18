@@ -65,7 +65,7 @@
 
 # direct methods
 .method public constructor <init>(Lkotlin/jvm/functions/Function1;)V
-    .locals 1
+    .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -76,10 +76,6 @@
             ">;)V"
         }
     .end annotation
-
-    const-string v0, "onGloballyPositioned"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 49
     invoke-direct {p0}, Landroidx/compose/ui/node/ModifierNodeElement;-><init>()V
@@ -186,10 +182,6 @@
 .method public inspectableProperties(Landroidx/compose/ui/platform/InspectorInfo;)V
     .locals 1
 
-    const-string v0, "<this>"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
     .line 69
     const-string v0, "onGloballyPositioned"
 
@@ -219,11 +211,7 @@
 .end method
 
 .method public update(Landroidx/compose/ui/layout/OnGloballyPositionedNode;)V
-    .locals 1
-
-    const-string v0, "node"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+    .locals 0
 
     .line 65
     iget-object p0, p0, Landroidx/compose/ui/layout/OnGloballyPositionedElement;->onGloballyPositioned:Lkotlin/jvm/functions/Function1;

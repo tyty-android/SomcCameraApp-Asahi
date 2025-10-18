@@ -48,8 +48,6 @@
 
 
 # instance fields
-.field final synthetic $$dirty:I
-
 .field final synthetic $content:Lkotlin/jvm/functions/Function3;
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -67,7 +65,7 @@
 
 
 # direct methods
-.method constructor <init>(Lkotlin/jvm/functions/Function3;Landroidx/compose/foundation/layout/BoxWithConstraintsScopeImpl;I)V
+.method constructor <init>(Lkotlin/jvm/functions/Function3;Landroidx/compose/foundation/layout/BoxWithConstraintsScopeImpl;)V
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -82,15 +80,13 @@
             "Lkotlin/Unit;",
             ">;",
             "Landroidx/compose/foundation/layout/BoxWithConstraintsScopeImpl;",
-            "I)V"
+            ")V"
         }
     .end annotation
 
     iput-object p1, p0, Landroidx/compose/foundation/layout/BoxWithConstraintsKt$BoxWithConstraints$1$1$measurables$1;->$content:Lkotlin/jvm/functions/Function3;
 
     iput-object p2, p0, Landroidx/compose/foundation/layout/BoxWithConstraintsKt$BoxWithConstraints$1$1$measurables$1;->$scope:Landroidx/compose/foundation/layout/BoxWithConstraintsScopeImpl;
-
-    iput p3, p0, Landroidx/compose/foundation/layout/BoxWithConstraintsKt$BoxWithConstraints$1$1$measurables$1;->$$dirty:I
 
     const/4 p1, 0x2
 
@@ -166,19 +162,15 @@
     :cond_2
     iget-object p2, p0, Landroidx/compose/foundation/layout/BoxWithConstraintsKt$BoxWithConstraints$1$1$measurables$1;->$content:Lkotlin/jvm/functions/Function3;
 
-    iget-object v0, p0, Landroidx/compose/foundation/layout/BoxWithConstraintsKt$BoxWithConstraints$1$1$measurables$1;->$scope:Landroidx/compose/foundation/layout/BoxWithConstraintsScopeImpl;
+    iget-object p0, p0, Landroidx/compose/foundation/layout/BoxWithConstraintsKt$BoxWithConstraints$1$1$measurables$1;->$scope:Landroidx/compose/foundation/layout/BoxWithConstraintsScopeImpl;
 
-    iget p0, p0, Landroidx/compose/foundation/layout/BoxWithConstraintsKt$BoxWithConstraints$1$1$measurables$1;->$$dirty:I
+    const/4 v0, 0x0
 
-    shr-int/lit8 p0, p0, 0x6
+    invoke-static {v0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
-    and-int/lit8 p0, p0, 0x70
+    move-result-object v0
 
-    invoke-static {p0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
-
-    move-result-object p0
-
-    invoke-interface {p2, v0, p1, p0}, Lkotlin/jvm/functions/Function3;->invoke(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-interface {p2, p0, p1, v0}, Lkotlin/jvm/functions/Function3;->invoke(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     invoke-static {}, Landroidx/compose/runtime/ComposerKt;->isTraceInProgress()Z
 

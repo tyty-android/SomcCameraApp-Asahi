@@ -98,6 +98,10 @@
 .end annotation
 
 
+# static fields
+.field public static final $stable:I = 0x8
+
+
 # instance fields
 .field private _size:I
 
@@ -107,6 +111,12 @@
 
 
 # direct methods
+.method static constructor <clinit>()V
+    .locals 0
+
+    return-void
+.end method
+
 .method public constructor <init>()V
     .locals 3
 
@@ -665,10 +675,6 @@
 .method protected final indexOf(Ljava/lang/Object;I)I
     .locals 5
 
-    const-string v0, "key"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
     .line 55
     iget v0, p0, Landroidx/compose/ui/text/caches/SimpleArrayMap;->_size:I
 
@@ -1210,10 +1216,6 @@
         }
     .end annotation
 
-    const-string v0, "array"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
     .line 376
     iget v0, p1, Landroidx/compose/ui/text/caches/SimpleArrayMap;->_size:I
 
@@ -1731,10 +1733,6 @@
     invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object p0
-
-    const-string v0, "buffer.toString()"
-
-    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
 
     return-object p0
 .end method

@@ -111,26 +111,22 @@
 .method public constructor <init>(IILandroidx/compose/animation/core/Easing;)V
     .locals 2
 
-    const-string v0, "easing"
-
-    invoke-static {p3, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 696
+    .line 701
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 697
+    .line 702
     iput p1, p0, Landroidx/compose/animation/core/VectorizedTweenSpec;->durationMillis:I
 
-    .line 698
+    .line 703
     iput p2, p0, Landroidx/compose/animation/core/VectorizedTweenSpec;->delayMillis:I
 
-    .line 699
+    .line 704
     iput-object p3, p0, Landroidx/compose/animation/core/VectorizedTweenSpec;->easing:Landroidx/compose/animation/core/Easing;
 
-    .line 702
+    .line 707
     new-instance p1, Landroidx/compose/animation/core/VectorizedFloatAnimationSpec;
 
-    .line 703
+    .line 708
     new-instance p2, Landroidx/compose/animation/core/FloatTweenSpec;
 
     invoke-virtual {p0}, Landroidx/compose/animation/core/VectorizedTweenSpec;->getDurationMillis()I
@@ -145,7 +141,7 @@
 
     check-cast p2, Landroidx/compose/animation/core/FloatAnimationSpec;
 
-    .line 702
+    .line 707
     invoke-direct {p1, p2}, Landroidx/compose/animation/core/VectorizedFloatAnimationSpec;-><init>(Landroidx/compose/animation/core/FloatAnimationSpec;)V
 
     iput-object p1, p0, Landroidx/compose/animation/core/VectorizedTweenSpec;->anim:Landroidx/compose/animation/core/VectorizedFloatAnimationSpec;
@@ -174,12 +170,12 @@
 
     if-eqz p4, :cond_2
 
-    .line 699
+    .line 704
     invoke-static {}, Landroidx/compose/animation/core/EasingKt;->getFastOutSlowInEasing()Landroidx/compose/animation/core/Easing;
 
     move-result-object p3
 
-    .line 696
+    .line 701
     :cond_2
     invoke-direct {p0, p1, p2, p3}, Landroidx/compose/animation/core/VectorizedTweenSpec;-><init>(IILandroidx/compose/animation/core/Easing;)V
 
@@ -191,7 +187,7 @@
 .method public getDelayMillis()I
     .locals 0
 
-    .line 698
+    .line 703
     iget p0, p0, Landroidx/compose/animation/core/VectorizedTweenSpec;->delayMillis:I
 
     return p0
@@ -200,7 +196,7 @@
 .method public getDurationMillis()I
     .locals 0
 
-    .line 697
+    .line 702
     iget p0, p0, Landroidx/compose/animation/core/VectorizedTweenSpec;->durationMillis:I
 
     return p0
@@ -209,44 +205,32 @@
 .method public final getEasing()Landroidx/compose/animation/core/Easing;
     .locals 0
 
-    .line 699
+    .line 704
     iget-object p0, p0, Landroidx/compose/animation/core/VectorizedTweenSpec;->easing:Landroidx/compose/animation/core/Easing;
 
     return-object p0
 .end method
 
 .method public getValueFromNanos(JLandroidx/compose/animation/core/AnimationVector;Landroidx/compose/animation/core/AnimationVector;Landroidx/compose/animation/core/AnimationVector;)Landroidx/compose/animation/core/AnimationVector;
-    .locals 7
+    .locals 6
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(JTV;TV;TV;)TV;"
         }
     .end annotation
 
-    const-string v0, "initialValue"
+    .line 717
+    iget-object v0, p0, Landroidx/compose/animation/core/VectorizedTweenSpec;->anim:Landroidx/compose/animation/core/VectorizedFloatAnimationSpec;
 
-    invoke-static {p3, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+    move-wide v1, p1
 
-    const-string/jumbo v0, "targetValue"
+    move-object v3, p3
 
-    invoke-static {p4, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+    move-object v4, p4
 
-    const-string v0, "initialVelocity"
+    move-object v5, p5
 
-    invoke-static {p5, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 712
-    iget-object v1, p0, Landroidx/compose/animation/core/VectorizedTweenSpec;->anim:Landroidx/compose/animation/core/VectorizedFloatAnimationSpec;
-
-    move-wide v2, p1
-
-    move-object v4, p3
-
-    move-object v5, p4
-
-    move-object v6, p5
-
-    invoke-virtual/range {v1 .. v6}, Landroidx/compose/animation/core/VectorizedFloatAnimationSpec;->getValueFromNanos(JLandroidx/compose/animation/core/AnimationVector;Landroidx/compose/animation/core/AnimationVector;Landroidx/compose/animation/core/AnimationVector;)Landroidx/compose/animation/core/AnimationVector;
+    invoke-virtual/range {v0 .. v5}, Landroidx/compose/animation/core/VectorizedFloatAnimationSpec;->getValueFromNanos(JLandroidx/compose/animation/core/AnimationVector;Landroidx/compose/animation/core/AnimationVector;Landroidx/compose/animation/core/AnimationVector;)Landroidx/compose/animation/core/AnimationVector;
 
     move-result-object p0
 
@@ -254,37 +238,25 @@
 .end method
 
 .method public getVelocityFromNanos(JLandroidx/compose/animation/core/AnimationVector;Landroidx/compose/animation/core/AnimationVector;Landroidx/compose/animation/core/AnimationVector;)Landroidx/compose/animation/core/AnimationVector;
-    .locals 7
+    .locals 6
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(JTV;TV;TV;)TV;"
         }
     .end annotation
 
-    const-string v0, "initialValue"
+    .line 726
+    iget-object v0, p0, Landroidx/compose/animation/core/VectorizedTweenSpec;->anim:Landroidx/compose/animation/core/VectorizedFloatAnimationSpec;
 
-    invoke-static {p3, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+    move-wide v1, p1
 
-    const-string/jumbo v0, "targetValue"
+    move-object v3, p3
 
-    invoke-static {p4, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+    move-object v4, p4
 
-    const-string v0, "initialVelocity"
+    move-object v5, p5
 
-    invoke-static {p5, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 721
-    iget-object v1, p0, Landroidx/compose/animation/core/VectorizedTweenSpec;->anim:Landroidx/compose/animation/core/VectorizedFloatAnimationSpec;
-
-    move-wide v2, p1
-
-    move-object v4, p3
-
-    move-object v5, p4
-
-    move-object v6, p5
-
-    invoke-virtual/range {v1 .. v6}, Landroidx/compose/animation/core/VectorizedFloatAnimationSpec;->getVelocityFromNanos(JLandroidx/compose/animation/core/AnimationVector;Landroidx/compose/animation/core/AnimationVector;Landroidx/compose/animation/core/AnimationVector;)Landroidx/compose/animation/core/AnimationVector;
+    invoke-virtual/range {v0 .. v5}, Landroidx/compose/animation/core/VectorizedFloatAnimationSpec;->getVelocityFromNanos(JLandroidx/compose/animation/core/AnimationVector;Landroidx/compose/animation/core/AnimationVector;Landroidx/compose/animation/core/AnimationVector;)Landroidx/compose/animation/core/AnimationVector;
 
     move-result-object p0
 

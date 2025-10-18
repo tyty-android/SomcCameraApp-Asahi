@@ -27,7 +27,7 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/SourceDebugExtension;
-    value = "SMAP\nRecomposeScopeImpl.kt\nKotlin\n*S Kotlin\n*F\n+ 1 RecomposeScopeImpl.kt\nandroidx/compose/runtime/RecomposeScopeImpl$end$1$2\n+ 2 IdentityArrayIntMap.kt\nandroidx/compose/runtime/collection/IdentityArrayIntMap\n*L\n1#1,388:1\n137#2,22:389\n*S KotlinDebug\n*F\n+ 1 RecomposeScopeImpl.kt\nandroidx/compose/runtime/RecomposeScopeImpl$end$1$2\n*L\n344#1:389,22\n*E\n"
+    value = "SMAP\nRecomposeScopeImpl.kt\nKotlin\n*S Kotlin\n*F\n+ 1 RecomposeScopeImpl.kt\nandroidx/compose/runtime/RecomposeScopeImpl$end$1$2\n+ 2 ObjectIntMap.kt\nandroidx/collection/MutableObjectIntMap\n+ 3 ObjectIntMap.kt\nandroidx/collection/ObjectIntMap\n+ 4 ScatterMap.kt\nandroidx/collection/ScatterMapKt\n*L\n1#1,444:1\n843#2:445\n845#2,4:459\n849#2:469\n373#3,6:446\n383#3,3:453\n386#3,2:457\n389#3,6:463\n1810#4:452\n1672#4:456\n*S KotlinDebug\n*F\n+ 1 RecomposeScopeImpl.kt\nandroidx/compose/runtime/RecomposeScopeImpl$end$1$2\n*L\n400#1:445\n400#1:459,4\n400#1:469\n400#1:446,6\n400#1:453,3\n400#1:457,2\n400#1:463,6\n400#1:452\n400#1:456\n*E\n"
 .end annotation
 
 .annotation runtime Lkotlin/Metadata;
@@ -52,7 +52,15 @@
 
 
 # instance fields
-.field final synthetic $instances:Landroidx/compose/runtime/collection/IdentityArrayIntMap;
+.field final synthetic $instances:Landroidx/collection/MutableObjectIntMap;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Landroidx/collection/MutableObjectIntMap<",
+            "Ljava/lang/Object;",
+            ">;"
+        }
+    .end annotation
+.end field
 
 .field final synthetic $token:I
 
@@ -60,14 +68,24 @@
 
 
 # direct methods
-.method constructor <init>(Landroidx/compose/runtime/RecomposeScopeImpl;ILandroidx/compose/runtime/collection/IdentityArrayIntMap;)V
+.method constructor <init>(Landroidx/compose/runtime/RecomposeScopeImpl;ILandroidx/collection/MutableObjectIntMap;)V
     .locals 0
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Landroidx/compose/runtime/RecomposeScopeImpl;",
+            "I",
+            "Landroidx/collection/MutableObjectIntMap<",
+            "Ljava/lang/Object;",
+            ">;)V"
+        }
+    .end annotation
 
     iput-object p1, p0, Landroidx/compose/runtime/RecomposeScopeImpl$end$1$2;->this$0:Landroidx/compose/runtime/RecomposeScopeImpl;
 
     iput p2, p0, Landroidx/compose/runtime/RecomposeScopeImpl$end$1$2;->$token:I
 
-    iput-object p3, p0, Landroidx/compose/runtime/RecomposeScopeImpl$end$1$2;->$instances:Landroidx/compose/runtime/collection/IdentityArrayIntMap;
+    iput-object p3, p0, Landroidx/compose/runtime/RecomposeScopeImpl$end$1$2;->$instances:Landroidx/collection/MutableObjectIntMap;
 
     const/4 p1, 0x1
 
@@ -81,7 +99,7 @@
 .method public bridge synthetic invoke(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
 
-    .line 339
+    .line 395
     check-cast p1, Landroidx/compose/runtime/Composition;
 
     invoke-virtual {p0, p1}, Landroidx/compose/runtime/RecomposeScopeImpl$end$1$2;->invoke(Landroidx/compose/runtime/Composition;)V
@@ -92,17 +110,13 @@
 .end method
 
 .method public final invoke(Landroidx/compose/runtime/Composition;)V
-    .locals 16
+    .locals 19
 
     move-object/from16 v0, p0
 
     move-object/from16 v1, p1
 
-    const-string v2, "composition"
-
-    invoke-static {v1, v2}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 341
+    .line 397
     iget-object v2, v0, Landroidx/compose/runtime/RecomposeScopeImpl$end$1$2;->this$0:Landroidx/compose/runtime/RecomposeScopeImpl;
 
     invoke-static {v2}, Landroidx/compose/runtime/RecomposeScopeImpl;->access$getCurrentToken$p(Landroidx/compose/runtime/RecomposeScopeImpl;)I
@@ -111,13 +125,13 @@
 
     iget v3, v0, Landroidx/compose/runtime/RecomposeScopeImpl$end$1$2;->$token:I
 
-    if-ne v2, v3, :cond_7
+    if-ne v2, v3, :cond_8
 
-    iget-object v2, v0, Landroidx/compose/runtime/RecomposeScopeImpl$end$1$2;->$instances:Landroidx/compose/runtime/collection/IdentityArrayIntMap;
+    iget-object v2, v0, Landroidx/compose/runtime/RecomposeScopeImpl$end$1$2;->$instances:Landroidx/collection/MutableObjectIntMap;
 
     iget-object v3, v0, Landroidx/compose/runtime/RecomposeScopeImpl$end$1$2;->this$0:Landroidx/compose/runtime/RecomposeScopeImpl;
 
-    invoke-static {v3}, Landroidx/compose/runtime/RecomposeScopeImpl;->access$getTrackedInstances$p(Landroidx/compose/runtime/RecomposeScopeImpl;)Landroidx/compose/runtime/collection/IdentityArrayIntMap;
+    invoke-static {v3}, Landroidx/compose/runtime/RecomposeScopeImpl;->access$getTrackedInstances$p(Landroidx/compose/runtime/RecomposeScopeImpl;)Landroidx/collection/MutableObjectIntMap;
 
     move-result-object v3
 
@@ -125,162 +139,211 @@
 
     move-result v2
 
-    if-eqz v2, :cond_7
+    if-eqz v2, :cond_8
 
-    .line 342
+    .line 398
     instance-of v2, v1, Landroidx/compose/runtime/CompositionImpl;
 
-    if-eqz v2, :cond_7
+    if-eqz v2, :cond_8
 
-    .line 344
-    iget-object v2, v0, Landroidx/compose/runtime/RecomposeScopeImpl$end$1$2;->$instances:Landroidx/compose/runtime/collection/IdentityArrayIntMap;
+    .line 400
+    iget-object v2, v0, Landroidx/compose/runtime/RecomposeScopeImpl$end$1$2;->$instances:Landroidx/collection/MutableObjectIntMap;
 
     iget v3, v0, Landroidx/compose/runtime/RecomposeScopeImpl$end$1$2;->$token:I
 
     iget-object v4, v0, Landroidx/compose/runtime/RecomposeScopeImpl$end$1$2;->this$0:Landroidx/compose/runtime/RecomposeScopeImpl;
 
-    .line 389
-    invoke-virtual {v2}, Landroidx/compose/runtime/collection/IdentityArrayIntMap;->getKeys()[Ljava/lang/Object;
+    .line 445
+    move-object v5, v2
 
-    move-result-object v5
+    check-cast v5, Landroidx/collection/ObjectIntMap;
 
-    .line 390
-    invoke-virtual {v2}, Landroidx/compose/runtime/collection/IdentityArrayIntMap;->getValues()[I
+    .line 446
+    iget-object v5, v5, Landroidx/collection/ObjectIntMap;->metadata:[J
 
-    move-result-object v6
+    .line 447
+    array-length v6, v5
 
-    .line 391
-    invoke-virtual {v2}, Landroidx/compose/runtime/collection/IdentityArrayIntMap;->getSize()I
+    add-int/lit8 v6, v6, -0x2
 
-    move-result v7
+    if-ltz v6, :cond_7
 
     const/4 v9, 0x0
 
-    const/4 v10, 0x0
-
+    .line 450
     :goto_0
-    const/4 v11, 0x0
+    aget-wide v10, v5, v9
 
-    if-ge v9, v7, :cond_5
+    not-long v12, v10
 
-    .line 396
-    aget-object v12, v5, v9
+    const/4 v14, 0x7
 
-    const-string v13, "null cannot be cast to non-null type kotlin.Any"
+    shl-long/2addr v12, v14
 
-    invoke-static {v12, v13}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;Ljava/lang/String;)V
+    and-long/2addr v12, v10
 
-    .line 397
-    aget v13, v6, v9
+    const-wide v14, -0x7f7f7f7f7f7f7f80L    # -2.937446524422997E-306
 
-    if-eq v13, v3, :cond_0
+    and-long/2addr v12, v14
 
-    const/4 v14, 0x1
+    cmp-long v12, v12, v14
 
-    goto :goto_1
+    if-eqz v12, :cond_6
 
-    :cond_0
+    sub-int v12, v9, v6
+
+    not-int v12, v12
+
+    ushr-int/lit8 v12, v12, 0x1f
+
+    const/16 v13, 0x8
+
+    rsub-int/lit8 v12, v12, 0x8
+
     const/4 v14, 0x0
 
     :goto_1
-    if-eqz v14, :cond_2
+    if-ge v14, v12, :cond_5
 
-    .line 347
-    move-object v15, v1
+    const-wide/16 v15, 0xff
 
-    check-cast v15, Landroidx/compose/runtime/CompositionImpl;
+    and-long/2addr v15, v10
 
-    invoke-virtual {v15, v12, v4}, Landroidx/compose/runtime/CompositionImpl;->removeObservation$runtime_release(Ljava/lang/Object;Landroidx/compose/runtime/RecomposeScopeImpl;)V
+    const-wide/16 v17, 0x80
 
-    .line 348
-    instance-of v8, v12, Landroidx/compose/runtime/DerivedState;
+    cmp-long v15, v15, v17
 
-    if-eqz v8, :cond_1
+    if-gez v15, :cond_4
 
-    move-object v8, v12
+    shl-int/lit8 v15, v9, 0x3
 
-    check-cast v8, Landroidx/compose/runtime/DerivedState;
+    add-int/2addr v15, v14
+
+    .line 459
+    iget-object v8, v2, Landroidx/collection/MutableObjectIntMap;->keys:[Ljava/lang/Object;
+
+    aget-object v8, v8, v15
+
+    iget-object v13, v2, Landroidx/collection/MutableObjectIntMap;->values:[I
+
+    aget v13, v13, v15
+
+    if-eq v13, v3, :cond_0
+
+    const/4 v13, 0x1
 
     goto :goto_2
 
-    :cond_1
-    move-object v8, v11
+    :cond_0
+    const/4 v13, 0x0
 
     :goto_2
-    if-eqz v8, :cond_2
+    if-eqz v13, :cond_2
 
-    .line 349
-    invoke-virtual {v15, v8}, Landroidx/compose/runtime/CompositionImpl;->removeDerivedStateObservation$runtime_release(Landroidx/compose/runtime/DerivedState;)V
+    .line 403
+    move-object v7, v1
 
-    .line 350
-    invoke-static {v4}, Landroidx/compose/runtime/RecomposeScopeImpl;->access$getTrackedDependencies$p(Landroidx/compose/runtime/RecomposeScopeImpl;)Landroidx/compose/runtime/collection/IdentityArrayMap;
+    check-cast v7, Landroidx/compose/runtime/CompositionImpl;
 
-    move-result-object v15
+    invoke-virtual {v7, v8, v4}, Landroidx/compose/runtime/CompositionImpl;->removeObservation$runtime_release(Ljava/lang/Object;Landroidx/compose/runtime/RecomposeScopeImpl;)V
 
-    if-eqz v15, :cond_2
+    .line 404
+    instance-of v1, v8, Landroidx/compose/runtime/DerivedState;
 
-    .line 351
-    invoke-virtual {v15, v8}, Landroidx/compose/runtime/collection/IdentityArrayMap;->remove(Ljava/lang/Object;)Ljava/lang/Object;
+    if-eqz v1, :cond_1
 
-    .line 352
-    invoke-virtual {v15}, Landroidx/compose/runtime/collection/IdentityArrayMap;->getSize()I
+    move-object v1, v8
 
-    move-result v8
-
-    if-nez v8, :cond_2
-
-    .line 353
-    invoke-static {v4, v11}, Landroidx/compose/runtime/RecomposeScopeImpl;->access$setTrackedDependencies$p(Landroidx/compose/runtime/RecomposeScopeImpl;Landroidx/compose/runtime/collection/IdentityArrayMap;)V
-
-    :cond_2
-    if-nez v14, :cond_4
-
-    if-eq v10, v9, :cond_3
-
-    .line 400
-    aput-object v12, v5, v10
-
-    .line 401
-    aput v13, v6, v10
-
-    :cond_3
-    add-int/lit8 v10, v10, 0x1
-
-    :cond_4
-    add-int/lit8 v9, v9, 0x1
-
-    goto :goto_0
-
-    :cond_5
-    move v1, v10
-
-    :goto_3
-    if-ge v1, v7, :cond_6
-
-    .line 407
-    aput-object v11, v5, v1
-
-    add-int/lit8 v1, v1, 0x1
+    check-cast v1, Landroidx/compose/runtime/DerivedState;
 
     goto :goto_3
 
-    .line 409
-    :cond_6
-    invoke-static {v2, v10}, Landroidx/compose/runtime/collection/IdentityArrayIntMap;->access$setSize$p(Landroidx/compose/runtime/collection/IdentityArrayIntMap;I)V
+    :cond_1
+    const/4 v1, 0x0
 
-    .line 360
-    iget-object v1, v0, Landroidx/compose/runtime/RecomposeScopeImpl$end$1$2;->$instances:Landroidx/compose/runtime/collection/IdentityArrayIntMap;
+    :goto_3
+    if-eqz v1, :cond_2
 
-    invoke-virtual {v1}, Landroidx/compose/runtime/collection/IdentityArrayIntMap;->getSize()I
+    .line 405
+    invoke-virtual {v7, v1}, Landroidx/compose/runtime/CompositionImpl;->removeDerivedStateObservation$runtime_release(Landroidx/compose/runtime/DerivedState;)V
+
+    .line 406
+    invoke-static {v4}, Landroidx/compose/runtime/RecomposeScopeImpl;->access$getTrackedDependencies$p(Landroidx/compose/runtime/RecomposeScopeImpl;)Landroidx/collection/MutableScatterMap;
+
+    move-result-object v7
+
+    if-eqz v7, :cond_2
+
+    .line 407
+    invoke-virtual {v7, v1}, Landroidx/collection/MutableScatterMap;->remove(Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 408
+    invoke-virtual {v7}, Landroidx/collection/MutableScatterMap;->getSize()I
 
     move-result v1
 
-    if-nez v1, :cond_7
+    if-nez v1, :cond_2
+
+    const/4 v1, 0x0
+
+    .line 409
+    invoke-static {v4, v1}, Landroidx/compose/runtime/RecomposeScopeImpl;->access$setTrackedDependencies$p(Landroidx/compose/runtime/RecomposeScopeImpl;Landroidx/collection/MutableScatterMap;)V
+
+    :cond_2
+    if-eqz v13, :cond_3
+
+    .line 460
+    invoke-virtual {v2, v15}, Landroidx/collection/MutableObjectIntMap;->removeValueAt(I)V
+
+    :cond_3
+    const/16 v1, 0x8
+
+    goto :goto_4
+
+    :cond_4
+    move v1, v13
+
+    :goto_4
+    shr-long/2addr v10, v1
+
+    add-int/lit8 v14, v14, 0x1
+
+    move v13, v1
+
+    move-object/from16 v1, p1
+
+    goto :goto_1
+
+    :cond_5
+    move v1, v13
+
+    if-ne v12, v1, :cond_7
+
+    :cond_6
+    if-eq v9, v6, :cond_7
+
+    add-int/lit8 v9, v9, 0x1
+
+    move-object/from16 v1, p1
+
+    goto :goto_0
+
+    .line 416
+    :cond_7
+    iget-object v1, v0, Landroidx/compose/runtime/RecomposeScopeImpl$end$1$2;->$instances:Landroidx/collection/MutableObjectIntMap;
+
+    invoke-virtual {v1}, Landroidx/collection/MutableObjectIntMap;->getSize()I
+
+    move-result v1
+
+    if-nez v1, :cond_8
 
     iget-object v0, v0, Landroidx/compose/runtime/RecomposeScopeImpl$end$1$2;->this$0:Landroidx/compose/runtime/RecomposeScopeImpl;
 
-    invoke-static {v0, v11}, Landroidx/compose/runtime/RecomposeScopeImpl;->access$setTrackedInstances$p(Landroidx/compose/runtime/RecomposeScopeImpl;Landroidx/compose/runtime/collection/IdentityArrayIntMap;)V
+    const/4 v1, 0x0
 
-    :cond_7
+    invoke-static {v0, v1}, Landroidx/compose/runtime/RecomposeScopeImpl;->access$setTrackedInstances$p(Landroidx/compose/runtime/RecomposeScopeImpl;Landroidx/collection/MutableObjectIntMap;)V
+
+    :cond_8
     return-void
 .end method

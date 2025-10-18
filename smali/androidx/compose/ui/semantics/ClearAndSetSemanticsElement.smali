@@ -64,6 +64,10 @@
 .end annotation
 
 
+# static fields
+.field public static final $stable:I
+
+
 # instance fields
 .field private final properties:Lkotlin/jvm/functions/Function1;
     .annotation system Ldalvik/annotation/Signature;
@@ -78,8 +82,14 @@
 
 
 # direct methods
+.method static constructor <clinit>()V
+    .locals 0
+
+    return-void
+.end method
+
 .method public constructor <init>(Lkotlin/jvm/functions/Function1;)V
-    .locals 1
+    .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -90,10 +100,6 @@
             ">;)V"
         }
     .end annotation
-
-    const-string v0, "properties"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 174
     invoke-direct {p0}, Landroidx/compose/ui/node/ModifierNodeElement;-><init>()V
@@ -153,10 +159,6 @@
             "Landroidx/compose/ui/semantics/ClearAndSetSemanticsElement;"
         }
     .end annotation
-
-    const-string p0, "properties"
-
-    invoke-static {p1, p0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
     new-instance p0, Landroidx/compose/ui/semantics/ClearAndSetSemanticsElement;
 
@@ -293,10 +295,6 @@
 .method public inspectableProperties(Landroidx/compose/ui/platform/InspectorInfo;)V
     .locals 1
 
-    const-string v0, "<this>"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
     .line 197
     const-string v0, "clearAndSetSemantics"
 
@@ -352,11 +350,7 @@
 .end method
 
 .method public update(Landroidx/compose/ui/semantics/CoreSemanticsModifierNode;)V
-    .locals 1
-
-    const-string v0, "node"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+    .locals 0
 
     .line 193
     iget-object p0, p0, Landroidx/compose/ui/semantics/ClearAndSetSemanticsElement;->properties:Lkotlin/jvm/functions/Function1;

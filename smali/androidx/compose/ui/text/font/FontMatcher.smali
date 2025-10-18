@@ -5,12 +5,12 @@
 
 # annotations
 .annotation system Ldalvik/annotation/SourceDebugExtension;
-    value = "SMAP\nFontMatcher.kt\nKotlin\n*S Kotlin\n*F\n+ 1 FontMatcher.kt\nandroidx/compose/ui/text/font/FontMatcher\n+ 2 TempListUtils.kt\nandroidx/compose/ui/text/TempListUtilsKt\n+ 3 ListUtils.kt\nandroidx/compose/ui/util/ListUtilsKt\n+ 4 fake.kt\nkotlin/jvm/internal/FakeKt\n*L\n1#1,165:1\n102#1,34:189\n102#1,34:234\n108#1,28:279\n108#1,28:318\n35#2,3:166\n38#2,2:173\n40#2:176\n35#2,3:177\n38#2,2:184\n40#2:187\n35#2,3:223\n38#2,2:230\n40#2:233\n35#2,3:268\n38#2,2:275\n40#2:278\n35#2,3:307\n38#2,2:314\n40#2:317\n35#2,3:346\n38#2,2:353\n40#2:356\n35#2,3:357\n38#2,2:364\n40#2:367\n35#2,3:368\n38#2,2:375\n40#2:378\n33#3,4:169\n38#3:175\n33#3,4:180\n38#3:186\n33#3,4:226\n38#3:232\n33#3,4:271\n38#3:277\n33#3,4:310\n38#3:316\n33#3,4:349\n38#3:355\n33#3,4:360\n38#3:366\n33#3,4:371\n38#3:377\n1#4:188\n*S KotlinDebug\n*F\n+ 1 FontMatcher.kt\nandroidx/compose/ui/text/font/FontMatcher\n*L\n65#1:189,34\n71#1:234,34\n80#1:279,28\n87#1:318,28\n49#1:166,3\n49#1:173,2\n49#1:176\n57#1:177,3\n57#1:184,2\n57#1:187\n65#1:223,3\n65#1:230,2\n65#1:233\n71#1:268,3\n71#1:275,2\n71#1:278\n80#1:307,3\n80#1:314,2\n80#1:317\n87#1:346,3\n87#1:353,2\n87#1:356\n135#1:357,3\n135#1:364,2\n135#1:367\n135#1:368,3\n135#1:375,2\n135#1:378\n49#1:169,4\n49#1:175\n57#1:180,4\n57#1:186\n65#1:226,4\n65#1:232\n71#1:271,4\n71#1:277\n80#1:310,4\n80#1:316\n87#1:349,4\n87#1:355\n135#1:360,4\n135#1:366\n135#1:371,4\n135#1:377\n*E\n"
+    value = "SMAP\nFontMatcher.kt\nKotlin\n*S Kotlin\n*F\n+ 1 FontMatcher.kt\nandroidx/compose/ui/text/font/FontMatcher\n+ 2 ListUtils.kt\nandroidx/compose/ui/util/ListUtilsKt\n+ 3 fake.kt\nkotlin/jvm/internal/FakeKt\n*L\n1#1,166:1\n102#1,34:190\n102#1,34:235\n108#1,28:280\n108#1,28:319\n235#2,3:167\n33#2,4:170\n238#2,2:174\n38#2:176\n240#2:177\n235#2,3:178\n33#2,4:181\n238#2,2:185\n38#2:187\n240#2:188\n235#2,3:224\n33#2,4:227\n238#2,2:231\n38#2:233\n240#2:234\n235#2,3:269\n33#2,4:272\n238#2,2:276\n38#2:278\n240#2:279\n235#2,3:308\n33#2,4:311\n238#2,2:315\n38#2:317\n240#2:318\n235#2,3:347\n33#2,4:350\n238#2,2:354\n38#2:356\n240#2:357\n235#2,3:358\n33#2,4:361\n238#2,2:365\n38#2:367\n240#2:368\n235#2,3:369\n33#2,4:372\n238#2,2:376\n38#2:378\n240#2:379\n1#3:189\n*S KotlinDebug\n*F\n+ 1 FontMatcher.kt\nandroidx/compose/ui/text/font/FontMatcher\n*L\n65#1:190,34\n71#1:235,34\n80#1:280,28\n87#1:319,28\n49#1:167,3\n49#1:170,4\n49#1:174,2\n49#1:176\n49#1:177\n57#1:178,3\n57#1:181,4\n57#1:185,2\n57#1:187\n57#1:188\n65#1:224,3\n65#1:227,4\n65#1:231,2\n65#1:233\n65#1:234\n71#1:269,3\n71#1:272,4\n71#1:276,2\n71#1:278\n71#1:279\n80#1:308,3\n80#1:311,4\n80#1:315,2\n80#1:317\n80#1:318\n87#1:347,3\n87#1:350,4\n87#1:354,2\n87#1:356\n87#1:357\n135#1:358,3\n135#1:361,4\n135#1:365,2\n135#1:367\n135#1:368\n135#1:369,3\n135#1:372,4\n135#1:376,2\n135#1:378\n135#1:379\n*E\n"
 .end annotation
 
 .annotation runtime Lkotlin/Metadata;
     d1 = {
-        "\u0000:\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\u0008\u0002\n\u0002\u0010 \n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0005\n\u0002\u0010\u000b\n\u0002\u0008\u0004\u0008\u0000\u0018\u00002\u00020\u0001B\u0005\u00a2\u0006\u0002\u0010\u0002J1\u0010\u0003\u001a\u0008\u0012\u0004\u0012\u00020\u00050\u00042\u0006\u0010\u0006\u001a\u00020\u00072\u0006\u0010\u0008\u001a\u00020\t2\u0006\u0010\n\u001a\u00020\u000b\u00f8\u0001\u0000\u00f8\u0001\u0001\u00a2\u0006\u0004\u0008\u000c\u0010\rJ1\u0010\u0003\u001a\u0008\u0012\u0004\u0012\u00020\u00050\u00042\u0006\u0010\u0006\u001a\u00020\u000e2\u0006\u0010\u0008\u001a\u00020\t2\u0006\u0010\n\u001a\u00020\u000b\u00f8\u0001\u0000\u00f8\u0001\u0001\u00a2\u0006\u0004\u0008\u000c\u0010\u000fJ7\u0010\u0003\u001a\u0008\u0012\u0004\u0012\u00020\u00050\u00042\u000c\u0010\u0010\u001a\u0008\u0012\u0004\u0012\u00020\u00050\u00042\u0006\u0010\u0008\u001a\u00020\t2\u0006\u0010\n\u001a\u00020\u000b\u00f8\u0001\u0000\u00f8\u0001\u0001\u00a2\u0006\u0004\u0008\u000c\u0010\u0011JF\u0010\u0012\u001a\u0008\u0012\u0004\u0012\u00020\u00050\u0004*\u0008\u0012\u0004\u0012\u00020\u00050\u00042\u0006\u0010\u0008\u001a\u00020\t2\u0006\u0010\u0013\u001a\u00020\u00142\n\u0008\u0002\u0010\u0015\u001a\u0004\u0018\u00010\t2\n\u0008\u0002\u0010\u0016\u001a\u0004\u0018\u00010\tH\u0080\u0008\u00a2\u0006\u0002\u0008\u0017\u0082\u0002\u000b\n\u0005\u0008\u00a1\u001e0\u0001\n\u0002\u0008\u0019\u00a8\u0006\u0018"
+        "\u0000:\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\u0008\u0002\n\u0002\u0010 \n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0005\n\u0002\u0010\u000b\n\u0002\u0008\u0004\u0008\u0000\u0018\u00002\u00020\u0001B\u0005\u00a2\u0006\u0002\u0010\u0002J.\u0010\u0003\u001a\u0008\u0012\u0004\u0012\u00020\u00050\u00042\u0006\u0010\u0006\u001a\u00020\u00072\u0006\u0010\u0008\u001a\u00020\t2\u0006\u0010\n\u001a\u00020\u000b\u00f8\u0001\u0000\u00a2\u0006\u0004\u0008\u000c\u0010\rJ.\u0010\u0003\u001a\u0008\u0012\u0004\u0012\u00020\u00050\u00042\u0006\u0010\u0006\u001a\u00020\u000e2\u0006\u0010\u0008\u001a\u00020\t2\u0006\u0010\n\u001a\u00020\u000b\u00f8\u0001\u0000\u00a2\u0006\u0004\u0008\u000c\u0010\u000fJ4\u0010\u0003\u001a\u0008\u0012\u0004\u0012\u00020\u00050\u00042\u000c\u0010\u0010\u001a\u0008\u0012\u0004\u0012\u00020\u00050\u00042\u0006\u0010\u0008\u001a\u00020\t2\u0006\u0010\n\u001a\u00020\u000b\u00f8\u0001\u0000\u00a2\u0006\u0004\u0008\u000c\u0010\u0011JF\u0010\u0012\u001a\u0008\u0012\u0004\u0012\u00020\u00050\u0004*\u0008\u0012\u0004\u0012\u00020\u00050\u00042\u0006\u0010\u0008\u001a\u00020\t2\u0006\u0010\u0013\u001a\u00020\u00142\n\u0008\u0002\u0010\u0015\u001a\u0004\u0018\u00010\t2\n\u0008\u0002\u0010\u0016\u001a\u0004\u0018\u00010\tH\u0080\u0008\u00a2\u0006\u0002\u0008\u0017\u0082\u0002\u0007\n\u0005\u0008\u00a1\u001e0\u0001\u00a8\u0006\u0018"
     }
     d2 = {
         "Landroidx/compose/ui/text/font/FontMatcher;",
@@ -49,7 +49,17 @@
 .end annotation
 
 
+# static fields
+.field public static final $stable:I
+
+
 # direct methods
+.method static constructor <clinit>()V
+    .locals 0
+
+    return-void
+.end method
+
 .method public constructor <init>()V
     .locals 0
 
@@ -77,17 +87,8 @@
 
     move-object p5, p7
 
-    .line 102
-    :cond_1
-    const-string p0, "<this>"
-
-    invoke-static {p1, p0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string p0, "fontWeight"
-
-    invoke-static {p2, p0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
     .line 110
+    :cond_1
     invoke-interface {p1}, Ljava/util/List;->size()I
 
     move-result p0
@@ -201,7 +202,7 @@
     :goto_2
     move-object p7, v0
 
-    .line 369
+    .line 370
     :cond_c
     :goto_3
     new-instance p0, Ljava/util/ArrayList;
@@ -212,7 +213,7 @@
 
     invoke-direct {p0, p2}, Ljava/util/ArrayList;-><init>(I)V
 
-    .line 372
+    .line 373
     invoke-interface {p1}, Ljava/util/List;->size()I
 
     move-result p2
@@ -220,12 +221,12 @@
     :goto_4
     if-ge p6, p2, :cond_e
 
-    .line 373
+    .line 374
     invoke-interface {p1, p6}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
     move-result-object p3
 
-    .line 375
+    .line 376
     move-object p4, p3
 
     check-cast p4, Landroidx/compose/ui/text/font/Font;
@@ -241,7 +242,7 @@
 
     if-eqz p4, :cond_d
 
-    .line 375
+    .line 376
     move-object p4, p0
 
     check-cast p4, Ljava/util/Collection;
@@ -253,7 +254,7 @@
 
     goto :goto_4
 
-    .line 378
+    .line 379
     :cond_e
     check-cast p0, Ljava/util/List;
 
@@ -281,14 +282,6 @@
             ">;"
         }
     .end annotation
-
-    const-string p0, "<this>"
-
-    invoke-static {p1, p0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string p0, "fontWeight"
-
-    invoke-static {p2, p0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 110
     invoke-interface {p1}, Ljava/util/List;->size()I
@@ -406,7 +399,7 @@
     :goto_2
     move-object v0, v2
 
-    .line 358
+    .line 359
     :cond_a
     :goto_3
     new-instance p0, Ljava/util/ArrayList;
@@ -417,7 +410,7 @@
 
     invoke-direct {p0, p2}, Ljava/util/ArrayList;-><init>(I)V
 
-    .line 361
+    .line 362
     invoke-interface {p1}, Ljava/util/List;->size()I
 
     move-result p2
@@ -425,12 +418,12 @@
     :goto_4
     if-ge v1, p2, :cond_c
 
-    .line 362
+    .line 363
     invoke-interface {p1, v1}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
     move-result-object p3
 
-    .line 364
+    .line 365
     move-object p4, p3
 
     check-cast p4, Landroidx/compose/ui/text/font/Font;
@@ -446,7 +439,7 @@
 
     if-eqz p4, :cond_b
 
-    .line 364
+    .line 365
     move-object p4, p0
 
     check-cast p4, Ljava/util/Collection;
@@ -458,7 +451,7 @@
 
     goto :goto_4
 
-    .line 367
+    .line 368
     :cond_c
     check-cast p0, Ljava/util/List;
 
@@ -478,14 +471,6 @@
             ">;"
         }
     .end annotation
-
-    const-string v0, "fontFamily"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string v0, "fontWeight"
-
-    invoke-static {p2, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 146
     instance-of v0, p1, Landroidx/compose/ui/text/font/FontListFontFamily;
@@ -515,7 +500,7 @@
 .end method
 
 .method public final matchFont-RetOiIg(Landroidx/compose/ui/text/font/FontListFontFamily;Landroidx/compose/ui/text/font/FontWeight;I)Ljava/util/List;
-    .locals 1
+    .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -527,14 +512,6 @@
             ">;"
         }
     .end annotation
-
-    const-string v0, "fontFamily"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string v0, "fontWeight"
-
-    invoke-static {p2, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 163
     invoke-virtual {p1}, Landroidx/compose/ui/text/font/FontListFontFamily;->getFonts()Ljava/util/List;
@@ -565,15 +542,7 @@
         }
     .end annotation
 
-    const-string p0, "fontList"
-
-    invoke-static {p1, p0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string p0, "fontWeight"
-
-    invoke-static {p2, p0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 167
+    .line 168
     new-instance p0, Ljava/util/ArrayList;
 
     invoke-interface {p1}, Ljava/util/List;->size()I
@@ -582,7 +551,7 @@
 
     invoke-direct {p0, v0}, Ljava/util/ArrayList;-><init>(I)V
 
-    .line 170
+    .line 171
     invoke-interface {p1}, Ljava/util/List;->size()I
 
     move-result v0
@@ -594,12 +563,12 @@
     :goto_0
     if-ge v2, v0, :cond_1
 
-    .line 171
+    .line 172
     invoke-interface {p1, v2}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
     move-result-object v3
 
-    .line 173
+    .line 174
     move-object v4, v3
 
     check-cast v4, Landroidx/compose/ui/text/font/Font;
@@ -625,7 +594,7 @@
 
     if-eqz v4, :cond_0
 
-    .line 173
+    .line 174
     move-object v4, p0
 
     check-cast v4, Ljava/util/Collection;
@@ -637,7 +606,7 @@
 
     goto :goto_0
 
-    .line 176
+    .line 177
     :cond_1
     check-cast p0, Ljava/util/List;
 
@@ -656,7 +625,7 @@
 
     return-object p0
 
-    .line 178
+    .line 179
     :cond_2
     new-instance p0, Ljava/util/ArrayList;
 
@@ -666,7 +635,7 @@
 
     invoke-direct {p0, v0}, Ljava/util/ArrayList;-><init>(I)V
 
-    .line 181
+    .line 182
     invoke-interface {p1}, Ljava/util/List;->size()I
 
     move-result v0
@@ -676,12 +645,12 @@
     :goto_1
     if-ge v2, v0, :cond_4
 
-    .line 182
+    .line 183
     invoke-interface {p1, v2}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
     move-result-object v3
 
-    .line 184
+    .line 185
     move-object v4, v3
 
     check-cast v4, Landroidx/compose/ui/text/font/Font;
@@ -697,7 +666,7 @@
 
     if-eqz v4, :cond_3
 
-    .line 184
+    .line 185
     move-object v4, p0
 
     check-cast v4, Ljava/util/Collection;
@@ -709,7 +678,7 @@
 
     goto :goto_1
 
-    .line 187
+    .line 188
     :cond_4
     check-cast p0, Ljava/util/List;
 
@@ -745,7 +714,7 @@
 
     if-gez p0, :cond_f
 
-    .line 197
+    .line 198
     invoke-interface {p1}, Ljava/util/List;->size()I
 
     move-result p0
@@ -757,19 +726,19 @@
     :goto_3
     if-ge v2, p0, :cond_b
 
-    .line 198
+    .line 199
     invoke-interface {p1, v2}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
     move-result-object v3
 
     check-cast v3, Landroidx/compose/ui/text/font/Font;
 
-    .line 199
+    .line 200
     invoke-interface {v3}, Landroidx/compose/ui/text/font/Font;->getWeight()Landroidx/compose/ui/text/font/FontWeight;
 
     move-result-object v3
 
-    .line 202
+    .line 203
     invoke-virtual {v3, p2}, Landroidx/compose/ui/text/font/FontWeight;->compareTo(Landroidx/compose/ui/text/font/FontWeight;)I
 
     move-result v4
@@ -778,7 +747,7 @@
 
     if-eqz p3, :cond_6
 
-    .line 203
+    .line 204
     invoke-virtual {v3, p3}, Landroidx/compose/ui/text/font/FontWeight;->compareTo(Landroidx/compose/ui/text/font/FontWeight;)I
 
     move-result v4
@@ -790,7 +759,7 @@
 
     goto :goto_4
 
-    .line 206
+    .line 207
     :cond_7
     invoke-virtual {v3, p2}, Landroidx/compose/ui/text/font/FontWeight;->compareTo(Landroidx/compose/ui/text/font/FontWeight;)I
 
@@ -800,7 +769,7 @@
 
     if-eqz v0, :cond_8
 
-    .line 207
+    .line 208
     invoke-virtual {v3, v0}, Landroidx/compose/ui/text/font/FontWeight;->compareTo(Landroidx/compose/ui/text/font/FontWeight;)I
 
     move-result v4
@@ -826,7 +795,7 @@
 
     move-object p3, v0
 
-    .line 224
+    .line 225
     :cond_c
     new-instance p0, Ljava/util/ArrayList;
 
@@ -836,7 +805,7 @@
 
     invoke-direct {p0, p2}, Ljava/util/ArrayList;-><init>(I)V
 
-    .line 227
+    .line 228
     invoke-interface {p1}, Ljava/util/List;->size()I
 
     move-result p2
@@ -844,17 +813,17 @@
     :goto_5
     if-ge v1, p2, :cond_e
 
-    .line 228
+    .line 229
     invoke-interface {p1, v1}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
     move-result-object v0
 
-    .line 230
+    .line 231
     move-object v2, v0
 
     check-cast v2, Landroidx/compose/ui/text/font/Font;
 
-    .line 222
+    .line 223
     invoke-interface {v2}, Landroidx/compose/ui/text/font/Font;->getWeight()Landroidx/compose/ui/text/font/FontWeight;
 
     move-result-object v2
@@ -865,7 +834,7 @@
 
     if-eqz v2, :cond_d
 
-    .line 230
+    .line 231
     move-object v2, p0
 
     check-cast v2, Ljava/util/Collection;
@@ -877,7 +846,7 @@
 
     goto :goto_5
 
-    .line 233
+    .line 234
     :cond_e
     check-cast p0, Ljava/util/List;
 
@@ -897,7 +866,7 @@
 
     if-lez p0, :cond_19
 
-    .line 242
+    .line 243
     invoke-interface {p1}, Ljava/util/List;->size()I
 
     move-result p0
@@ -909,19 +878,19 @@
     :goto_6
     if-ge v2, p0, :cond_15
 
-    .line 243
+    .line 244
     invoke-interface {p1, v2}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
     move-result-object v3
 
     check-cast v3, Landroidx/compose/ui/text/font/Font;
 
-    .line 244
+    .line 245
     invoke-interface {v3}, Landroidx/compose/ui/text/font/Font;->getWeight()Landroidx/compose/ui/text/font/FontWeight;
 
     move-result-object v3
 
-    .line 247
+    .line 248
     invoke-virtual {v3, p2}, Landroidx/compose/ui/text/font/FontWeight;->compareTo(Landroidx/compose/ui/text/font/FontWeight;)I
 
     move-result v4
@@ -930,7 +899,7 @@
 
     if-eqz p3, :cond_10
 
-    .line 248
+    .line 249
     invoke-virtual {v3, p3}, Landroidx/compose/ui/text/font/FontWeight;->compareTo(Landroidx/compose/ui/text/font/FontWeight;)I
 
     move-result v4
@@ -942,7 +911,7 @@
 
     goto :goto_7
 
-    .line 251
+    .line 252
     :cond_11
     invoke-virtual {v3, p2}, Landroidx/compose/ui/text/font/FontWeight;->compareTo(Landroidx/compose/ui/text/font/FontWeight;)I
 
@@ -952,7 +921,7 @@
 
     if-eqz v0, :cond_12
 
-    .line 252
+    .line 253
     invoke-virtual {v3, v0}, Landroidx/compose/ui/text/font/FontWeight;->compareTo(Landroidx/compose/ui/text/font/FontWeight;)I
 
     move-result v4
@@ -981,7 +950,7 @@
     :cond_16
     move-object p3, v0
 
-    .line 269
+    .line 270
     :goto_8
     new-instance p0, Ljava/util/ArrayList;
 
@@ -991,7 +960,7 @@
 
     invoke-direct {p0, p2}, Ljava/util/ArrayList;-><init>(I)V
 
-    .line 272
+    .line 273
     invoke-interface {p1}, Ljava/util/List;->size()I
 
     move-result p2
@@ -999,17 +968,17 @@
     :goto_9
     if-ge v1, p2, :cond_18
 
-    .line 273
+    .line 274
     invoke-interface {p1, v1}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
     move-result-object v0
 
-    .line 275
+    .line 276
     move-object v2, v0
 
     check-cast v2, Landroidx/compose/ui/text/font/Font;
 
-    .line 267
+    .line 268
     invoke-interface {v2}, Landroidx/compose/ui/text/font/Font;->getWeight()Landroidx/compose/ui/text/font/FontWeight;
 
     move-result-object v2
@@ -1020,7 +989,7 @@
 
     if-eqz v2, :cond_17
 
-    .line 275
+    .line 276
     move-object v2, p0
 
     check-cast v2, Ljava/util/Collection;
@@ -1032,7 +1001,7 @@
 
     goto :goto_9
 
-    .line 278
+    .line 279
     :cond_18
     check-cast p0, Ljava/util/List;
 
@@ -1046,7 +1015,7 @@
 
     move-result-object p0
 
-    .line 281
+    .line 282
     invoke-interface {p1}, Ljava/util/List;->size()I
 
     move-result v0
@@ -1060,28 +1029,28 @@
     :goto_a
     if-ge v2, v0, :cond_20
 
-    .line 282
+    .line 283
     invoke-interface {p1, v2}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
     move-result-object v5
 
     check-cast v5, Landroidx/compose/ui/text/font/Font;
 
-    .line 283
+    .line 284
     invoke-interface {v5}, Landroidx/compose/ui/text/font/Font;->getWeight()Landroidx/compose/ui/text/font/FontWeight;
 
     move-result-object v5
 
     if-eqz p0, :cond_1a
 
-    .line 285
+    .line 286
     invoke-virtual {v5, p0}, Landroidx/compose/ui/text/font/FontWeight;->compareTo(Landroidx/compose/ui/text/font/FontWeight;)I
 
     move-result v6
 
     if-gtz v6, :cond_1e
 
-    .line 286
+    .line 287
     :cond_1a
     invoke-virtual {v5, p2}, Landroidx/compose/ui/text/font/FontWeight;->compareTo(Landroidx/compose/ui/text/font/FontWeight;)I
 
@@ -1091,7 +1060,7 @@
 
     if-eqz v3, :cond_1b
 
-    .line 287
+    .line 288
     invoke-virtual {v5, v3}, Landroidx/compose/ui/text/font/FontWeight;->compareTo(Landroidx/compose/ui/text/font/FontWeight;)I
 
     move-result v6
@@ -1103,7 +1072,7 @@
 
     goto :goto_b
 
-    .line 290
+    .line 291
     :cond_1c
     invoke-virtual {v5, p2}, Landroidx/compose/ui/text/font/FontWeight;->compareTo(Landroidx/compose/ui/text/font/FontWeight;)I
 
@@ -1113,7 +1082,7 @@
 
     if-eqz v4, :cond_1d
 
-    .line 291
+    .line 292
     invoke-virtual {v5, v4}, Landroidx/compose/ui/text/font/FontWeight;->compareTo(Landroidx/compose/ui/text/font/FontWeight;)I
 
     move-result v6
@@ -1142,7 +1111,7 @@
     :cond_21
     move-object v3, v4
 
-    .line 308
+    .line 309
     :goto_c
     new-instance p0, Ljava/util/ArrayList;
 
@@ -1152,7 +1121,7 @@
 
     invoke-direct {p0, v0}, Ljava/util/ArrayList;-><init>(I)V
 
-    .line 311
+    .line 312
     invoke-interface {p1}, Ljava/util/List;->size()I
 
     move-result v0
@@ -1162,17 +1131,17 @@
     :goto_d
     if-ge v2, v0, :cond_23
 
-    .line 312
+    .line 313
     invoke-interface {p1, v2}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
     move-result-object v4
 
-    .line 314
+    .line 315
     move-object v5, v4
 
     check-cast v5, Landroidx/compose/ui/text/font/Font;
 
-    .line 306
+    .line 307
     invoke-interface {v5}, Landroidx/compose/ui/text/font/Font;->getWeight()Landroidx/compose/ui/text/font/FontWeight;
 
     move-result-object v5
@@ -1183,7 +1152,7 @@
 
     if-eqz v5, :cond_22
 
-    .line 314
+    .line 315
     move-object v5, p0
 
     check-cast v5, Ljava/util/Collection;
@@ -1195,11 +1164,11 @@
 
     goto :goto_d
 
-    .line 317
+    .line 318
     :cond_23
     check-cast p0, Ljava/util/List;
 
-    .line 306
+    .line 307
     check-cast p0, Ljava/util/Collection;
 
     .line 86
@@ -1216,7 +1185,7 @@
 
     move-result-object p0
 
-    .line 320
+    .line 321
     invoke-interface {p1}, Ljava/util/List;->size()I
 
     move-result v0
@@ -1228,28 +1197,28 @@
     :goto_e
     if-ge v3, v0, :cond_2a
 
-    .line 321
+    .line 322
     invoke-interface {p1, v3}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
     move-result-object v4
 
     check-cast v4, Landroidx/compose/ui/text/font/Font;
 
-    .line 322
+    .line 323
     invoke-interface {v4}, Landroidx/compose/ui/text/font/Font;->getWeight()Landroidx/compose/ui/text/font/FontWeight;
 
     move-result-object v4
 
     if-eqz p0, :cond_24
 
-    .line 323
+    .line 324
     invoke-virtual {v4, p0}, Landroidx/compose/ui/text/font/FontWeight;->compareTo(Landroidx/compose/ui/text/font/FontWeight;)I
 
     move-result v5
 
     if-ltz v5, :cond_28
 
-    .line 325
+    .line 326
     :cond_24
     invoke-virtual {v4, p2}, Landroidx/compose/ui/text/font/FontWeight;->compareTo(Landroidx/compose/ui/text/font/FontWeight;)I
 
@@ -1259,7 +1228,7 @@
 
     if-eqz p3, :cond_25
 
-    .line 326
+    .line 327
     invoke-virtual {v4, p3}, Landroidx/compose/ui/text/font/FontWeight;->compareTo(Landroidx/compose/ui/text/font/FontWeight;)I
 
     move-result v5
@@ -1271,7 +1240,7 @@
 
     goto :goto_f
 
-    .line 329
+    .line 330
     :cond_26
     invoke-virtual {v4, p2}, Landroidx/compose/ui/text/font/FontWeight;->compareTo(Landroidx/compose/ui/text/font/FontWeight;)I
 
@@ -1281,7 +1250,7 @@
 
     if-eqz v2, :cond_27
 
-    .line 330
+    .line 331
     invoke-virtual {v4, v2}, Landroidx/compose/ui/text/font/FontWeight;->compareTo(Landroidx/compose/ui/text/font/FontWeight;)I
 
     move-result v5
@@ -1310,7 +1279,7 @@
     :cond_2b
     move-object p3, v2
 
-    .line 347
+    .line 348
     :goto_10
     new-instance p0, Ljava/util/ArrayList;
 
@@ -1320,7 +1289,7 @@
 
     invoke-direct {p0, p2}, Ljava/util/ArrayList;-><init>(I)V
 
-    .line 350
+    .line 351
     invoke-interface {p1}, Ljava/util/List;->size()I
 
     move-result p2
@@ -1328,17 +1297,17 @@
     :goto_11
     if-ge v1, p2, :cond_2d
 
-    .line 351
+    .line 352
     invoke-interface {p1, v1}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
     move-result-object v0
 
-    .line 353
+    .line 354
     move-object v2, v0
 
     check-cast v2, Landroidx/compose/ui/text/font/Font;
 
-    .line 345
+    .line 346
     invoke-interface {v2}, Landroidx/compose/ui/text/font/Font;->getWeight()Landroidx/compose/ui/text/font/FontWeight;
 
     move-result-object v2
@@ -1349,7 +1318,7 @@
 
     if-eqz v2, :cond_2c
 
-    .line 353
+    .line 354
     move-object v2, p0
 
     check-cast v2, Ljava/util/Collection;
@@ -1361,7 +1330,7 @@
 
     goto :goto_11
 
-    .line 356
+    .line 357
     :cond_2d
     check-cast p0, Ljava/util/List;
 

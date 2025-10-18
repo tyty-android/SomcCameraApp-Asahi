@@ -1,6 +1,6 @@
 .class final Landroidx/compose/ui/tooling/ComposeViewAdapter$findDesignInfoProviders$1$1;
 .super Lkotlin/jvm/internal/Lambda;
-.source "ComposeViewAdapter.kt"
+.source "ComposeViewAdapter.android.kt"
 
 # interfaces
 .implements Lkotlin/jvm/functions/Function1;
@@ -27,7 +27,7 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/SourceDebugExtension;
-    value = "SMAP\nComposeViewAdapter.kt\nKotlin\n*S Kotlin\n*F\n+ 1 ComposeViewAdapter.kt\nandroidx/compose/ui/tooling/ComposeViewAdapter$findDesignInfoProviders$1$1\n+ 2 _Collections.kt\nkotlin/collections/CollectionsKt___CollectionsKt\n*L\n1#1,675:1\n1747#2,3:676\n*S KotlinDebug\n*F\n+ 1 ComposeViewAdapter.kt\nandroidx/compose/ui/tooling/ComposeViewAdapter$findDesignInfoProviders$1$1\n*L\n338#1:676,3\n*E\n"
+    value = "SMAP\nComposeViewAdapter.android.kt\nKotlin\n*S Kotlin\n*F\n+ 1 ComposeViewAdapter.android.kt\nandroidx/compose/ui/tooling/ComposeViewAdapter$findDesignInfoProviders$1$1\n+ 2 _Collections.kt\nkotlin/collections/CollectionsKt___CollectionsKt\n*L\n1#1,668:1\n1747#2,3:669\n*S KotlinDebug\n*F\n+ 1 ComposeViewAdapter.android.kt\nandroidx/compose/ui/tooling/ComposeViewAdapter$findDesignInfoProviders$1$1\n*L\n335#1:669,3\n*E\n"
 .end annotation
 
 .annotation runtime Lkotlin/Metadata;
@@ -74,11 +74,7 @@
 .method public final invoke(Landroidx/compose/ui/tooling/data/Group;)Ljava/lang/Boolean;
     .locals 3
 
-    const-string v0, "group"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 338
+    .line 335
     invoke-virtual {p1}, Landroidx/compose/ui/tooling/data/Group;->getName()Ljava/lang/String;
 
     move-result-object v0
@@ -108,7 +104,7 @@
 
     iget-object p0, p0, Landroidx/compose/ui/tooling/ComposeViewAdapter$findDesignInfoProviders$1$1;->this$0:Landroidx/compose/ui/tooling/ComposeViewAdapter;
 
-    .line 676
+    .line 669
     instance-of v0, p1, Ljava/util/Collection;
 
     if-eqz v0, :cond_1
@@ -125,7 +121,7 @@
 
     goto :goto_0
 
-    .line 677
+    .line 670
     :cond_1
     invoke-interface {p1}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
 
@@ -144,7 +140,7 @@
 
     check-cast v0, Landroidx/compose/ui/tooling/data/Group;
 
-    .line 339
+    .line 336
     invoke-virtual {v0}, Landroidx/compose/ui/tooling/data/Group;->getName()Ljava/lang/String;
 
     move-result-object v2
@@ -170,7 +166,7 @@
     :goto_0
     const/4 p0, 0x0
 
-    .line 678
+    .line 671
     :goto_1
     invoke-static {p0}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
@@ -182,7 +178,7 @@
 .method public bridge synthetic invoke(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
 
-    .line 337
+    .line 334
     check-cast p1, Landroidx/compose/ui/tooling/data/Group;
 
     invoke-virtual {p0, p1}, Landroidx/compose/ui/tooling/ComposeViewAdapter$findDesignInfoProviders$1$1;->invoke(Landroidx/compose/ui/tooling/data/Group;)Ljava/lang/Boolean;

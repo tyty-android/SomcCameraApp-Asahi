@@ -22,9 +22,13 @@
 
 .field public static final enum FIDELITY:Lcom/google/android/material/color/utilities/Variant;
 
+.field public static final enum FRUIT_SALAD:Lcom/google/android/material/color/utilities/Variant;
+
 .field public static final enum MONOCHROME:Lcom/google/android/material/color/utilities/Variant;
 
 .field public static final enum NEUTRAL:Lcom/google/android/material/color/utilities/Variant;
+
+.field public static final enum RAINBOW:Lcom/google/android/material/color/utilities/Variant;
 
 .field public static final enum TONAL_SPOT:Lcom/google/android/material/color/utilities/Variant;
 
@@ -33,7 +37,7 @@
 
 # direct methods
 .method static constructor <clinit>()V
-    .locals 9
+    .locals 11
 
     .line 30
     new-instance v0, Lcom/google/android/material/color/utilities/Variant;
@@ -112,8 +116,30 @@
 
     sput-object v6, Lcom/google/android/material/color/utilities/Variant;->CONTENT:Lcom/google/android/material/color/utilities/Variant;
 
+    .line 37
+    new-instance v7, Lcom/google/android/material/color/utilities/Variant;
+
+    const-string v8, "RAINBOW"
+
+    const/4 v9, 0x7
+
+    invoke-direct {v7, v8, v9}, Lcom/google/android/material/color/utilities/Variant;-><init>(Ljava/lang/String;I)V
+
+    sput-object v7, Lcom/google/android/material/color/utilities/Variant;->RAINBOW:Lcom/google/android/material/color/utilities/Variant;
+
+    .line 38
+    new-instance v8, Lcom/google/android/material/color/utilities/Variant;
+
+    const-string v9, "FRUIT_SALAD"
+
+    const/16 v10, 0x8
+
+    invoke-direct {v8, v9, v10}, Lcom/google/android/material/color/utilities/Variant;-><init>(Ljava/lang/String;I)V
+
+    sput-object v8, Lcom/google/android/material/color/utilities/Variant;->FRUIT_SALAD:Lcom/google/android/material/color/utilities/Variant;
+
     .line 28
-    filled-new-array/range {v0 .. v6}, [Lcom/google/android/material/color/utilities/Variant;
+    filled-new-array/range {v0 .. v8}, [Lcom/google/android/material/color/utilities/Variant;
 
     move-result-object v0
 

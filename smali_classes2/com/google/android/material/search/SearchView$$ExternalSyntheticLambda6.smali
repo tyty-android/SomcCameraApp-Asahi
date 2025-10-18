@@ -3,7 +3,7 @@
 .source "D8$$SyntheticClass"
 
 # interfaces
-.implements Landroid/view/View$OnTouchListener;
+.implements Ljava/lang/Runnable;
 
 
 # instance fields
@@ -24,15 +24,13 @@
 
 
 # virtual methods
-.method public final onTouch(Landroid/view/View;Landroid/view/MotionEvent;)Z
+.method public final run()V
     .locals 0
 
     .line 0
     iget-object p0, p0, Lcom/google/android/material/search/SearchView$$ExternalSyntheticLambda6;->f$0:Lcom/google/android/material/search/SearchView;
 
-    invoke-virtual {p0, p1, p2}, Lcom/google/android/material/search/SearchView;->lambda$setUpContentOnTouchListener$3$com-google-android-material-search-SearchView(Landroid/view/View;Landroid/view/MotionEvent;)Z
+    invoke-virtual {p0}, Lcom/google/android/material/search/SearchView;->show()V
 
-    move-result p0
-
-    return p0
+    return-void
 .end method

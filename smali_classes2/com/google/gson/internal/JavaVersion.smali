@@ -24,7 +24,7 @@
 .method private constructor <init>()V
     .locals 0
 
-    .line 91
+    .line 96
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -41,7 +41,7 @@
     move-result-object v0
 
     .line 30
-    invoke-static {v0}, Lcom/google/gson/internal/JavaVersion;->getMajorJavaVersion(Ljava/lang/String;)I
+    invoke-static {v0}, Lcom/google/gson/internal/JavaVersion;->parseMajorJavaVersion(Ljava/lang/String;)I
 
     move-result v0
 
@@ -109,44 +109,16 @@
 .method public static getMajorJavaVersion()I
     .locals 1
 
-    .line 81
+    .line 83
     sget v0, Lcom/google/gson/internal/JavaVersion;->majorJavaVersion:I
 
-    return v0
-.end method
-
-.method static getMajorJavaVersion(Ljava/lang/String;)I
-    .locals 2
-
-    .line 35
-    invoke-static {p0}, Lcom/google/gson/internal/JavaVersion;->parseDotted(Ljava/lang/String;)I
-
-    move-result v0
-
-    const/4 v1, -0x1
-
-    if-ne v0, v1, :cond_0
-
-    .line 37
-    invoke-static {p0}, Lcom/google/gson/internal/JavaVersion;->extractBeginningInt(Ljava/lang/String;)I
-
-    move-result v0
-
-    :cond_0
-    if-ne v0, v1, :cond_1
-
-    const/4 p0, 0x6
-
-    return p0
-
-    :cond_1
     return v0
 .end method
 
 .method public static isJava9OrLater()Z
     .locals 2
 
-    .line 88
+    .line 93
     sget v0, Lcom/google/gson/internal/JavaVersion;->majorJavaVersion:I
 
     const/16 v1, 0x9
@@ -171,7 +143,9 @@
     :try_start_0
     const-string v0, "[._]"
 
-    invoke-virtual {p0, v0}, Ljava/lang/String;->split(Ljava/lang/String;)[Ljava/lang/String;
+    const/4 v1, 0x3
+
+    invoke-virtual {p0, v0, v1}, Ljava/lang/String;->split(Ljava/lang/String;I)[Ljava/lang/String;
 
     move-result-object p0
 
@@ -211,4 +185,32 @@
     const/4 p0, -0x1
 
     return p0
+.end method
+
+.method static parseMajorJavaVersion(Ljava/lang/String;)I
+    .locals 2
+
+    .line 35
+    invoke-static {p0}, Lcom/google/gson/internal/JavaVersion;->parseDotted(Ljava/lang/String;)I
+
+    move-result v0
+
+    const/4 v1, -0x1
+
+    if-ne v0, v1, :cond_0
+
+    .line 37
+    invoke-static {p0}, Lcom/google/gson/internal/JavaVersion;->extractBeginningInt(Ljava/lang/String;)I
+
+    move-result v0
+
+    :cond_0
+    if-ne v0, v1, :cond_1
+
+    const/4 p0, 0x6
+
+    return p0
+
+    :cond_1
+    return v0
 .end method

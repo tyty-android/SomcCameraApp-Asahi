@@ -21,7 +21,7 @@
 .method constructor <init>()V
     .locals 0
 
-    .line 1542
+    .line 1548
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -42,8 +42,8 @@
         }
     .end annotation
 
-    .line 1546
-    sget-object p0, Ljp/co/sony/mc/camera/configuration/parameters/HorizontalLevelCalibration;->DUMMY_OFF:Ljp/co/sony/mc/camera/configuration/parameters/HorizontalLevelCalibration;
+    .line 1552
+    sget-object p0, Ljp/co/sony/mc/camera/configuration/parameters/Geotag;->OFF:Ljp/co/sony/mc/camera/configuration/parameters/Geotag;
 
     return-object p0
 .end method

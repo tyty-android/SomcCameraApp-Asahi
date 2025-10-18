@@ -72,7 +72,7 @@
 
     iput-object p2, p0, Landroidx/compose/foundation/gestures/ScrollingLogic$doFlingAnimation$2$scope$1;->$outerScopeScroll:Lkotlin/jvm/functions/Function1;
 
-    .line 492
+    .line 835
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -83,7 +83,7 @@
 .method public scrollBy(F)F
     .locals 3
 
-    .line 494
+    .line 837
     iget-object v0, p0, Landroidx/compose/foundation/gestures/ScrollingLogic$doFlingAnimation$2$scope$1;->this$0:Landroidx/compose/foundation/gestures/ScrollingLogic;
 
     iget-object p0, p0, Landroidx/compose/foundation/gestures/ScrollingLogic$doFlingAnimation$2$scope$1;->$outerScopeScroll:Lkotlin/jvm/functions/Function1;

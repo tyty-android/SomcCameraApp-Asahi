@@ -4,20 +4,4 @@
         <item quantity="other">%d नवीन सूचना</item>
         <item quantity="one">%d नवीन सूचना</item>
     </plurals>
-    <plurals name="mv_minute_remaining_txt">
-        <item quantity="other">%1$d मिनिटे शिल्लक</item>
-        <item quantity="one">1 मिनिट शिल्लक</item>
-    </plurals>
-    <plurals name="mv_minute_txt">
-        <item quantity="other">%1$d मिनिटे</item>
-        <item quantity="one">1 मिनिट</item>
-    </plurals>
-    <plurals name="mv_second_remaining_txt">
-        <item quantity="other">%1$d सेकंद शिल्लक</item>
-        <item quantity="one">1 सेकंद शिल्लक</item>
-    </plurals>
-    <plurals name="mv_second_txt">
-        <item quantity="other">%1$d सेकंद</item>
-        <item quantity="one">1 सेकंद</item>
-    </plurals>
 </resources>

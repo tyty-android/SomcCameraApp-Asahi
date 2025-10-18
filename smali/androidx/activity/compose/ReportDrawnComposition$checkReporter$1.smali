@@ -79,7 +79,7 @@
 .end method
 
 .method public final invoke(Lkotlin/jvm/functions/Function0;)V
-    .locals 1
+    .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -88,10 +88,6 @@
             ">;)V"
         }
     .end annotation
-
-    const-string v0, "p0"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 49
     iget-object p0, p0, Landroidx/activity/compose/ReportDrawnComposition$checkReporter$1;->receiver:Ljava/lang/Object;

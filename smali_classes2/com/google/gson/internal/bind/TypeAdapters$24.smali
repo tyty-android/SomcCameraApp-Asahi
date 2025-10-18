@@ -26,7 +26,7 @@
 .method constructor <init>()V
     .locals 0
 
-    .line 581
+    .line 658
     invoke-direct {p0}, Lcom/google/gson/TypeAdapter;-><init>()V
 
     return-void
@@ -42,7 +42,7 @@
         }
     .end annotation
 
-    .line 581
+    .line 658
     invoke-virtual {p0, p1}, Lcom/google/gson/internal/bind/TypeAdapters$24;->read(Lcom/google/gson/stream/JsonReader;)Ljava/util/UUID;
 
     move-result-object p0
@@ -58,7 +58,7 @@
         }
     .end annotation
 
-    .line 584
+    .line 661
     invoke-virtual {p1}, Lcom/google/gson/stream/JsonReader;->peek()Lcom/google/gson/stream/JsonToken;
 
     move-result-object p0
@@ -67,20 +67,20 @@
 
     if-ne p0, v0, :cond_0
 
-    .line 585
+    .line 662
     invoke-virtual {p1}, Lcom/google/gson/stream/JsonReader;->nextNull()V
 
     const/4 p0, 0x0
 
     return-object p0
 
-    .line 588
+    .line 665
     :cond_0
     invoke-virtual {p1}, Lcom/google/gson/stream/JsonReader;->nextString()Ljava/lang/String;
 
     move-result-object p0
 
-    .line 590
+    .line 667
     :try_start_0
     invoke-static {p0}, Ljava/util/UUID;->fromString(Ljava/lang/String;)Ljava/util/UUID;
 
@@ -93,7 +93,7 @@
     :catch_0
     move-exception v0
 
-    .line 592
+    .line 669
     new-instance v1, Lcom/google/gson/JsonSyntaxException;
 
     new-instance v2, Ljava/lang/StringBuilder;
@@ -112,6 +112,7 @@
 
     move-result-object p0
 
+    .line 670
     invoke-virtual {p1}, Lcom/google/gson/stream/JsonReader;->getPreviousPath()Ljava/lang/String;
 
     move-result-object p1
@@ -137,7 +138,7 @@
         }
     .end annotation
 
-    .line 581
+    .line 658
     check-cast p2, Ljava/util/UUID;
 
     invoke-virtual {p0, p1, p2}, Lcom/google/gson/internal/bind/TypeAdapters$24;->write(Lcom/google/gson/stream/JsonWriter;Ljava/util/UUID;)V
@@ -159,7 +160,7 @@
 
     goto :goto_0
 
-    .line 597
+    .line 676
     :cond_0
     invoke-virtual {p2}, Ljava/util/UUID;->toString()Ljava/lang/String;
 

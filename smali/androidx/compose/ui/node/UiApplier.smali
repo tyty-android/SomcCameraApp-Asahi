@@ -47,13 +47,19 @@
 .end annotation
 
 
+# static fields
+.field public static final $stable:I
+
+
 # direct methods
+.method static constructor <clinit>()V
+    .locals 0
+
+    return-void
+.end method
+
 .method public constructor <init>(Landroidx/compose/ui/node/LayoutNode;)V
-    .locals 1
-
-    const-string v0, "root"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+    .locals 0
 
     .line 23
     invoke-direct {p0, p1}, Landroidx/compose/runtime/AbstractApplier;-><init>(Ljava/lang/Object;)V
@@ -64,11 +70,7 @@
 
 # virtual methods
 .method public insertBottomUp(ILandroidx/compose/ui/node/LayoutNode;)V
-    .locals 1
-
-    const-string v0, "instance"
-
-    invoke-static {p2, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+    .locals 0
 
     .line 31
     invoke-virtual {p0}, Landroidx/compose/ui/node/UiApplier;->getCurrent()Ljava/lang/Object;
@@ -95,10 +97,6 @@
 
 .method public insertTopDown(ILandroidx/compose/ui/node/LayoutNode;)V
     .locals 0
-
-    const-string p0, "instance"
-
-    invoke-static {p2, p0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
     return-void
 .end method

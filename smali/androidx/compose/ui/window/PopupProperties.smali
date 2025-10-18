@@ -103,30 +103,26 @@
 .end method
 
 .method public constructor <init>(ZZZLandroidx/compose/ui/window/SecureFlagPolicy;ZZ)V
-    .locals 9
+    .locals 8
 
-    const-string v0, "securePolicy"
+    const/4 v7, 0x0
 
-    invoke-static {p4, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+    move-object v0, p0
 
-    const/4 v8, 0x0
+    move v1, p1
 
-    move-object v1, p0
+    move v2, p2
 
-    move v2, p1
+    move v3, p3
 
-    move v3, p2
+    move-object v4, p4
 
-    move v4, p3
+    move v5, p5
 
-    move-object v5, p4
+    move v6, p6
 
-    move v6, p5
-
-    move v7, p6
-
-    .line 128
-    invoke-direct/range {v1 .. v8}, Landroidx/compose/ui/window/PopupProperties;-><init>(ZZZLandroidx/compose/ui/window/SecureFlagPolicy;ZZZ)V
+    .line 130
+    invoke-direct/range {v0 .. v7}, Landroidx/compose/ui/window/PopupProperties;-><init>(ZZZLandroidx/compose/ui/window/SecureFlagPolicy;ZZZ)V
 
     return-void
 .end method
@@ -171,7 +167,7 @@
 
     if-eqz p2, :cond_3
 
-    .line 125
+    .line 127
     sget-object p4, Landroidx/compose/ui/window/SecureFlagPolicy;->Inherit:Landroidx/compose/ui/window/SecureFlagPolicy;
 
     :cond_3
@@ -213,41 +209,37 @@
 
     move p8, v0
 
-    .line 121
+    .line 123
     invoke-direct/range {p2 .. p8}, Landroidx/compose/ui/window/PopupProperties;-><init>(ZZZLandroidx/compose/ui/window/SecureFlagPolicy;ZZ)V
 
     return-void
 .end method
 
 .method public constructor <init>(ZZZLandroidx/compose/ui/window/SecureFlagPolicy;ZZZ)V
-    .locals 1
-
-    const-string v0, "securePolicy"
-
-    invoke-static {p4, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 110
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    .locals 0
 
     .line 112
-    iput-boolean p1, p0, Landroidx/compose/ui/window/PopupProperties;->focusable:Z
-
-    .line 113
-    iput-boolean p2, p0, Landroidx/compose/ui/window/PopupProperties;->dismissOnBackPress:Z
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 114
-    iput-boolean p3, p0, Landroidx/compose/ui/window/PopupProperties;->dismissOnClickOutside:Z
+    iput-boolean p1, p0, Landroidx/compose/ui/window/PopupProperties;->focusable:Z
 
     .line 115
-    iput-object p4, p0, Landroidx/compose/ui/window/PopupProperties;->securePolicy:Landroidx/compose/ui/window/SecureFlagPolicy;
+    iput-boolean p2, p0, Landroidx/compose/ui/window/PopupProperties;->dismissOnBackPress:Z
 
     .line 116
-    iput-boolean p5, p0, Landroidx/compose/ui/window/PopupProperties;->excludeFromSystemGesture:Z
+    iput-boolean p3, p0, Landroidx/compose/ui/window/PopupProperties;->dismissOnClickOutside:Z
 
     .line 117
-    iput-boolean p6, p0, Landroidx/compose/ui/window/PopupProperties;->clippingEnabled:Z
+    iput-object p4, p0, Landroidx/compose/ui/window/PopupProperties;->securePolicy:Landroidx/compose/ui/window/SecureFlagPolicy;
 
     .line 118
+    iput-boolean p5, p0, Landroidx/compose/ui/window/PopupProperties;->excludeFromSystemGesture:Z
+
+    .line 119
+    iput-boolean p6, p0, Landroidx/compose/ui/window/PopupProperties;->clippingEnabled:Z
+
+    .line 120
     iput-boolean p7, p0, Landroidx/compose/ui/window/PopupProperties;->usePlatformDefaultWidth:Z
 
     return-void
@@ -285,7 +277,7 @@
 
     if-eqz p9, :cond_3
 
-    .line 115
+    .line 117
     sget-object p4, Landroidx/compose/ui/window/SecureFlagPolicy;->Inherit:Landroidx/compose/ui/window/SecureFlagPolicy;
 
     :cond_3
@@ -309,7 +301,7 @@
 
     move p7, v0
 
-    .line 111
+    .line 113
     :cond_6
     invoke-direct/range {p0 .. p7}, Landroidx/compose/ui/window/PopupProperties;-><init>(ZZZLandroidx/compose/ui/window/SecureFlagPolicy;ZZZ)V
 
@@ -327,7 +319,7 @@
 
     return v0
 
-    .line 140
+    .line 142
     :cond_0
     instance-of v1, p1, Landroidx/compose/ui/window/PopupProperties;
 
@@ -337,7 +329,7 @@
 
     return v2
 
-    .line 142
+    .line 144
     :cond_1
     iget-boolean v1, p0, Landroidx/compose/ui/window/PopupProperties;->focusable:Z
 
@@ -349,7 +341,7 @@
 
     return v2
 
-    .line 143
+    .line 145
     :cond_2
     iget-boolean v1, p0, Landroidx/compose/ui/window/PopupProperties;->dismissOnBackPress:Z
 
@@ -359,7 +351,7 @@
 
     return v2
 
-    .line 144
+    .line 146
     :cond_3
     iget-boolean v1, p0, Landroidx/compose/ui/window/PopupProperties;->dismissOnClickOutside:Z
 
@@ -369,7 +361,7 @@
 
     return v2
 
-    .line 145
+    .line 147
     :cond_4
     iget-object v1, p0, Landroidx/compose/ui/window/PopupProperties;->securePolicy:Landroidx/compose/ui/window/SecureFlagPolicy;
 
@@ -379,7 +371,7 @@
 
     return v2
 
-    .line 146
+    .line 148
     :cond_5
     iget-boolean v1, p0, Landroidx/compose/ui/window/PopupProperties;->excludeFromSystemGesture:Z
 
@@ -389,7 +381,7 @@
 
     return v2
 
-    .line 147
+    .line 149
     :cond_6
     iget-boolean v1, p0, Landroidx/compose/ui/window/PopupProperties;->clippingEnabled:Z
 
@@ -399,7 +391,7 @@
 
     return v2
 
-    .line 148
+    .line 150
     :cond_7
     iget-boolean p0, p0, Landroidx/compose/ui/window/PopupProperties;->usePlatformDefaultWidth:Z
 
@@ -416,7 +408,7 @@
 .method public final getClippingEnabled()Z
     .locals 0
 
-    .line 117
+    .line 119
     iget-boolean p0, p0, Landroidx/compose/ui/window/PopupProperties;->clippingEnabled:Z
 
     return p0
@@ -425,7 +417,7 @@
 .method public final getDismissOnBackPress()Z
     .locals 0
 
-    .line 113
+    .line 115
     iget-boolean p0, p0, Landroidx/compose/ui/window/PopupProperties;->dismissOnBackPress:Z
 
     return p0
@@ -434,7 +426,7 @@
 .method public final getDismissOnClickOutside()Z
     .locals 0
 
-    .line 114
+    .line 116
     iget-boolean p0, p0, Landroidx/compose/ui/window/PopupProperties;->dismissOnClickOutside:Z
 
     return p0
@@ -443,7 +435,7 @@
 .method public final getExcludeFromSystemGesture()Z
     .locals 0
 
-    .line 116
+    .line 118
     iget-boolean p0, p0, Landroidx/compose/ui/window/PopupProperties;->excludeFromSystemGesture:Z
 
     return p0
@@ -452,7 +444,7 @@
 .method public final getFocusable()Z
     .locals 0
 
-    .line 112
+    .line 114
     iget-boolean p0, p0, Landroidx/compose/ui/window/PopupProperties;->focusable:Z
 
     return p0
@@ -461,7 +453,7 @@
 .method public final getSecurePolicy()Landroidx/compose/ui/window/SecureFlagPolicy;
     .locals 0
 
-    .line 115
+    .line 117
     iget-object p0, p0, Landroidx/compose/ui/window/PopupProperties;->securePolicy:Landroidx/compose/ui/window/SecureFlagPolicy;
 
     return-object p0
@@ -470,7 +462,7 @@
 .method public final getUsePlatformDefaultWidth()Z
     .locals 0
 
-    .line 118
+    .line 120
     iget-boolean p0, p0, Landroidx/compose/ui/window/PopupProperties;->usePlatformDefaultWidth:Z
 
     return p0
@@ -479,7 +471,7 @@
 .method public hashCode()I
     .locals 2
 
-    .line 154
+    .line 156
     iget-boolean v0, p0, Landroidx/compose/ui/window/PopupProperties;->dismissOnBackPress:Z
 
     invoke-static {v0}, Ljava/lang/Boolean;->hashCode(Z)I
@@ -488,7 +480,7 @@
 
     mul-int/lit8 v0, v0, 0x1f
 
-    .line 155
+    .line 157
     iget-boolean v1, p0, Landroidx/compose/ui/window/PopupProperties;->focusable:Z
 
     invoke-static {v1}, Ljava/lang/Boolean;->hashCode(Z)I
@@ -499,7 +491,7 @@
 
     mul-int/lit8 v0, v0, 0x1f
 
-    .line 156
+    .line 158
     iget-boolean v1, p0, Landroidx/compose/ui/window/PopupProperties;->dismissOnBackPress:Z
 
     invoke-static {v1}, Ljava/lang/Boolean;->hashCode(Z)I
@@ -510,7 +502,7 @@
 
     mul-int/lit8 v0, v0, 0x1f
 
-    .line 157
+    .line 159
     iget-boolean v1, p0, Landroidx/compose/ui/window/PopupProperties;->dismissOnClickOutside:Z
 
     invoke-static {v1}, Ljava/lang/Boolean;->hashCode(Z)I
@@ -521,7 +513,7 @@
 
     mul-int/lit8 v0, v0, 0x1f
 
-    .line 158
+    .line 160
     iget-object v1, p0, Landroidx/compose/ui/window/PopupProperties;->securePolicy:Landroidx/compose/ui/window/SecureFlagPolicy;
 
     invoke-virtual {v1}, Landroidx/compose/ui/window/SecureFlagPolicy;->hashCode()I
@@ -532,7 +524,7 @@
 
     mul-int/lit8 v0, v0, 0x1f
 
-    .line 159
+    .line 161
     iget-boolean v1, p0, Landroidx/compose/ui/window/PopupProperties;->excludeFromSystemGesture:Z
 
     invoke-static {v1}, Ljava/lang/Boolean;->hashCode(Z)I
@@ -543,7 +535,7 @@
 
     mul-int/lit8 v0, v0, 0x1f
 
-    .line 160
+    .line 162
     iget-boolean v1, p0, Landroidx/compose/ui/window/PopupProperties;->clippingEnabled:Z
 
     invoke-static {v1}, Ljava/lang/Boolean;->hashCode(Z)I
@@ -554,7 +546,7 @@
 
     mul-int/lit8 v0, v0, 0x1f
 
-    .line 161
+    .line 163
     iget-boolean p0, p0, Landroidx/compose/ui/window/PopupProperties;->usePlatformDefaultWidth:Z
 
     invoke-static {p0}, Ljava/lang/Boolean;->hashCode(Z)I

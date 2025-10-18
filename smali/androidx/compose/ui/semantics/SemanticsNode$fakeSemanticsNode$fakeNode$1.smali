@@ -68,7 +68,7 @@
 
     iput-object p1, p0, Landroidx/compose/ui/semantics/SemanticsNode$fakeSemanticsNode$fakeNode$1;->$properties:Lkotlin/jvm/functions/Function1;
 
-    .line 404
+    .line 421
     invoke-direct {p0}, Landroidx/compose/ui/Modifier$Node;-><init>()V
 
     return-void
@@ -77,13 +77,9 @@
 
 # virtual methods
 .method public applySemantics(Landroidx/compose/ui/semantics/SemanticsPropertyReceiver;)V
-    .locals 1
+    .locals 0
 
-    const-string v0, "<this>"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 406
+    .line 423
     iget-object p0, p0, Landroidx/compose/ui/semantics/SemanticsNode$fakeSemanticsNode$fakeNode$1;->$properties:Lkotlin/jvm/functions/Function1;
 
     invoke-interface {p0, p1}, Lkotlin/jvm/functions/Function1;->invoke(Ljava/lang/Object;)Ljava/lang/Object;

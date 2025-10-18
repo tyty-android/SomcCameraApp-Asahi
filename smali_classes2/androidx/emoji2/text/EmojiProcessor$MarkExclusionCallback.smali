@@ -34,10 +34,10 @@
 .method constructor <init>(Ljava/lang/String;)V
     .locals 0
 
-    .line 979
+    .line 980
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 980
+    .line 981
     iput-object p1, p0, Landroidx/emoji2/text/EmojiProcessor$MarkExclusionCallback;->mExclusion:Ljava/lang/String;
 
     return-void
@@ -54,7 +54,7 @@
 .method public bridge synthetic getResult()Ljava/lang/Object;
     .locals 0
 
-    .line 974
+    .line 975
     invoke-virtual {p0}, Landroidx/emoji2/text/EmojiProcessor$MarkExclusionCallback;->getResult()Landroidx/emoji2/text/EmojiProcessor$MarkExclusionCallback;
 
     move-result-object p0
@@ -65,7 +65,7 @@
 .method public handleEmoji(Ljava/lang/CharSequence;IILandroidx/emoji2/text/TypefaceEmojiRasterizer;)Z
     .locals 0
 
-    .line 986
+    .line 987
     invoke-interface {p1, p2, p3}, Ljava/lang/CharSequence;->subSequence(II)Ljava/lang/CharSequence;
 
     move-result-object p1
@@ -80,7 +80,7 @@
 
     if-eqz p0, :cond_0
 
-    .line 987
+    .line 988
     invoke-virtual {p4, p1}, Landroidx/emoji2/text/TypefaceEmojiRasterizer;->setExclusion(Z)V
 
     const/4 p0, 0x0

@@ -243,12 +243,12 @@
         }
     .end annotation
 
-    .line 464
+    .line 468
     invoke-virtual {p0}, Lcom/google/api/client/http/HttpResponse;->getStatusCode()I
 
     move-result v0
 
-    .line 465
+    .line 469
     invoke-virtual {p0}, Lcom/google/api/client/http/HttpResponse;->getRequest()Lcom/google/api/client/http/HttpRequest;
 
     move-result-object v1
@@ -284,7 +284,7 @@
     :cond_0
     return v2
 
-    .line 469
+    .line 473
     :cond_1
     :goto_0
     invoke-virtual {p0}, Lcom/google/api/client/http/HttpResponse;->ignore()V
@@ -321,20 +321,20 @@
 
 # virtual methods
 .method public disconnect()V
-    .locals 1
+    .locals 0
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
         }
     .end annotation
 
-    .line 440
-    iget-object v0, p0, Lcom/google/api/client/http/HttpResponse;->response:Lcom/google/api/client/http/LowLevelHttpResponse;
-
-    invoke-virtual {v0}, Lcom/google/api/client/http/LowLevelHttpResponse;->disconnect()V
-
-    .line 441
+    .line 444
     invoke-virtual {p0}, Lcom/google/api/client/http/HttpResponse;->ignore()V
+
+    .line 445
+    iget-object p0, p0, Lcom/google/api/client/http/HttpResponse;->response:Lcom/google/api/client/http/LowLevelHttpResponse;
+
+    invoke-virtual {p0}, Lcom/google/api/client/http/LowLevelHttpResponse;->disconnect()V
 
     return-void
 .end method
@@ -347,12 +347,12 @@
         }
     .end annotation
 
-    .line 416
+    .line 422
     invoke-virtual {p0}, Lcom/google/api/client/http/HttpResponse;->getContent()Ljava/io/InputStream;
 
     move-result-object p0
 
-    .line 417
+    .line 423
     invoke-static {p0, p1}, Lcom/google/api/client/util/IOUtils;->copy(Ljava/io/InputStream;Ljava/io/OutputStream;)V
 
     return-void
@@ -369,7 +369,7 @@
     .line 345
     iget-boolean v0, p0, Lcom/google/api/client/http/HttpResponse;->contentRead:Z
 
-    if-nez v0, :cond_4
+    if-nez v0, :cond_5
 
     .line 346
     iget-object v0, p0, Lcom/google/api/client/http/HttpResponse;->response:Lcom/google/api/client/http/LowLevelHttpResponse;
@@ -378,7 +378,7 @@
 
     move-result-object v0
 
-    if-eqz v0, :cond_3
+    if-eqz v0, :cond_4
 
     .line 353
     :try_start_0
@@ -421,15 +421,14 @@
 
     .line 363
     :cond_0
-    new-instance v1, Ljava/util/zip/GZIPInputStream;
+    new-instance v1, Lcom/google/api/client/http/ConsumingInputStream;
 
-    new-instance v2, Lcom/google/api/client/http/ConsumingInputStream;
+    invoke-direct {v1, v0}, Lcom/google/api/client/http/ConsumingInputStream;-><init>(Ljava/io/InputStream;)V
 
-    invoke-direct {v2, v0}, Lcom/google/api/client/http/ConsumingInputStream;-><init>(Ljava/io/InputStream;)V
+    .line 364
+    invoke-static {v1}, Lcom/google/api/client/http/GzipSupport;->newGzipInputStream(Ljava/io/InputStream;)Ljava/util/zip/GZIPInputStream;
 
-    invoke-direct {v1, v2}, Ljava/util/zip/GZIPInputStream;-><init>(Ljava/io/InputStream;)V
-
-    move-object v0, v1
+    move-result-object v0
 
     .line 368
     :cond_1
@@ -461,7 +460,22 @@
 
     .line 374
     :cond_2
+    iget-boolean v1, p0, Lcom/google/api/client/http/HttpResponse;->returnRawInputStream:Z
+
+    if-eqz v1, :cond_3
+
+    .line 375
     iput-object v0, p0, Lcom/google/api/client/http/HttpResponse;->content:Ljava/io/InputStream;
+
+    goto :goto_0
+
+    .line 379
+    :cond_3
+    new-instance v1, Ljava/io/BufferedInputStream;
+
+    invoke-direct {v1, v0}, Ljava/io/BufferedInputStream;-><init>(Ljava/io/InputStream;)V
+
+    iput-object v1, p0, Lcom/google/api/client/http/HttpResponse;->content:Ljava/io/InputStream;
     :try_end_0
     .catch Ljava/io/EOFException; {:try_start_0 .. :try_end_0} :catch_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
@@ -471,25 +485,25 @@
     :catchall_0
     move-exception p0
 
-    .line 381
+    .line 387
     invoke-virtual {v0}, Ljava/io/InputStream;->close()V
 
-    .line 383
+    .line 389
     throw p0
 
-    .line 381
+    .line 387
     :catch_0
     invoke-virtual {v0}, Ljava/io/InputStream;->close()V
 
-    :cond_3
+    :cond_4
     :goto_0
     const/4 v0, 0x1
 
-    .line 385
+    .line 391
     iput-boolean v0, p0, Lcom/google/api/client/http/HttpResponse;->contentRead:Z
 
-    .line 387
-    :cond_4
+    .line 393
+    :cond_5
     iget-object p0, p0, Lcom/google/api/client/http/HttpResponse;->content:Ljava/io/InputStream;
 
     return-object p0
@@ -498,19 +512,19 @@
 .method public getContentCharset()Ljava/nio/charset/Charset;
     .locals 2
 
-    .line 520
+    .line 524
     iget-object v0, p0, Lcom/google/api/client/http/HttpResponse;->mediaType:Lcom/google/api/client/http/HttpMediaType;
 
-    if-eqz v0, :cond_1
+    if-eqz v0, :cond_2
 
-    .line 522
+    .line 526
     invoke-virtual {v0}, Lcom/google/api/client/http/HttpMediaType;->getCharsetParameter()Ljava/nio/charset/Charset;
 
     move-result-object v0
 
     if-eqz v0, :cond_0
 
-    .line 523
+    .line 527
     iget-object p0, p0, Lcom/google/api/client/http/HttpResponse;->mediaType:Lcom/google/api/client/http/HttpMediaType;
 
     invoke-virtual {p0}, Lcom/google/api/client/http/HttpMediaType;->getCharsetParameter()Ljava/nio/charset/Charset;
@@ -519,7 +533,7 @@
 
     return-object p0
 
-    .line 526
+    .line 530
     :cond_0
     iget-object v0, p0, Lcom/google/api/client/http/HttpResponse;->mediaType:Lcom/google/api/client/http/HttpMediaType;
 
@@ -535,27 +549,62 @@
 
     if-eqz v0, :cond_1
 
+    iget-object v0, p0, Lcom/google/api/client/http/HttpResponse;->mediaType:Lcom/google/api/client/http/HttpMediaType;
+
+    invoke-virtual {v0}, Lcom/google/api/client/http/HttpMediaType;->getSubType()Ljava/lang/String;
+
+    move-result-object v0
+
+    const-string v1, "json"
+
+    invoke-virtual {v1, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_1
+
+    .line 532
+    sget-object p0, Ljava/nio/charset/StandardCharsets;->UTF_8:Ljava/nio/charset/Charset;
+
+    return-object p0
+
+    .line 535
+    :cond_1
+    iget-object v0, p0, Lcom/google/api/client/http/HttpResponse;->mediaType:Lcom/google/api/client/http/HttpMediaType;
+
+    invoke-virtual {v0}, Lcom/google/api/client/http/HttpMediaType;->getType()Ljava/lang/String;
+
+    move-result-object v0
+
+    const-string v1, "text"
+
+    invoke-virtual {v1, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_2
+
     iget-object p0, p0, Lcom/google/api/client/http/HttpResponse;->mediaType:Lcom/google/api/client/http/HttpMediaType;
 
     invoke-virtual {p0}, Lcom/google/api/client/http/HttpMediaType;->getSubType()Ljava/lang/String;
 
     move-result-object p0
 
-    const-string v0, "json"
+    const-string v0, "csv"
 
     invoke-virtual {v0, p0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result p0
 
-    if-eqz p0, :cond_1
+    if-eqz p0, :cond_2
 
-    .line 528
+    .line 537
     sget-object p0, Ljava/nio/charset/StandardCharsets;->UTF_8:Ljava/nio/charset/Charset;
 
     return-object p0
 
-    .line 531
-    :cond_1
+    .line 540
+    :cond_2
     sget-object p0, Ljava/nio/charset/StandardCharsets;->ISO_8859_1:Ljava/nio/charset/Charset;
 
     return-object p0
@@ -658,14 +707,14 @@
         }
     .end annotation
 
-    .line 422
+    .line 428
     iget-object p0, p0, Lcom/google/api/client/http/HttpResponse;->response:Lcom/google/api/client/http/LowLevelHttpResponse;
 
     if-nez p0, :cond_0
 
     return-void
 
-    .line 425
+    .line 431
     :cond_0
     invoke-virtual {p0}, Lcom/google/api/client/http/LowLevelHttpResponse;->getContent()Ljava/io/InputStream;
 
@@ -673,7 +722,7 @@
 
     if-eqz p0, :cond_1
 
-    .line 427
+    .line 433
     invoke-virtual {p0}, Ljava/io/InputStream;->close()V
 
     :cond_1
@@ -720,7 +769,7 @@
         }
     .end annotation
 
-    .line 453
+    .line 457
     invoke-direct {p0}, Lcom/google/api/client/http/HttpResponse;->hasMessageBody()Z
 
     move-result v0
@@ -731,7 +780,7 @@
 
     return-object p0
 
-    .line 456
+    .line 460
     :cond_0
     iget-object v0, p0, Lcom/google/api/client/http/HttpResponse;->request:Lcom/google/api/client/http/HttpRequest;
 
@@ -762,7 +811,7 @@
         }
     .end annotation
 
-    .line 483
+    .line 487
     invoke-direct {p0}, Lcom/google/api/client/http/HttpResponse;->hasMessageBody()Z
 
     move-result v0
@@ -773,7 +822,7 @@
 
     return-object p0
 
-    .line 486
+    .line 490
     :cond_0
     iget-object v0, p0, Lcom/google/api/client/http/HttpResponse;->request:Lcom/google/api/client/http/HttpRequest;
 
@@ -804,28 +853,28 @@
         }
     .end annotation
 
-    .line 504
+    .line 508
     invoke-virtual {p0}, Lcom/google/api/client/http/HttpResponse;->getContent()Ljava/io/InputStream;
 
     move-result-object v0
 
     if-nez v0, :cond_0
 
-    .line 506
+    .line 510
     const-string p0, ""
 
     return-object p0
 
-    .line 508
+    .line 512
     :cond_0
     new-instance v1, Ljava/io/ByteArrayOutputStream;
 
     invoke-direct {v1}, Ljava/io/ByteArrayOutputStream;-><init>()V
 
-    .line 509
+    .line 513
     invoke-static {v0, v1}, Lcom/google/api/client/util/IOUtils;->copy(Ljava/io/InputStream;Ljava/io/OutputStream;)V
 
-    .line 510
+    .line 514
     invoke-virtual {p0}, Lcom/google/api/client/http/HttpResponse;->getContentCharset()Ljava/nio/charset/Charset;
 
     move-result-object p0

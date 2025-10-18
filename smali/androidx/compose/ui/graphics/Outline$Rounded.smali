@@ -14,7 +14,7 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/SourceDebugExtension;
-    value = "SMAP\nOutline.kt\nKotlin\n*S Kotlin\n*F\n+ 1 Outline.kt\nandroidx/compose/ui/graphics/Outline$Rounded\n+ 2 fake.kt\nkotlin/jvm/internal/FakeKt\n*L\n1#1,307:1\n1#2:308\n*E\n"
+    value = "SMAP\nOutline.kt\nKotlin\n*S Kotlin\n*F\n+ 1 Outline.kt\nandroidx/compose/ui/graphics/Outline$Rounded\n+ 2 fake.kt\nkotlin/jvm/internal/FakeKt\n*L\n1#1,306:1\n1#2:307\n*E\n"
 .end annotation
 
 .annotation runtime Lkotlin/Metadata;
@@ -65,32 +65,28 @@
 .method public constructor <init>(Landroidx/compose/ui/geometry/RoundRect;)V
     .locals 2
 
-    const-string v0, "roundRect"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
     const/4 v0, 0x0
 
-    .line 63
+    .line 64
     invoke-direct {p0, v0}, Landroidx/compose/ui/graphics/Outline;-><init>(Lkotlin/jvm/internal/DefaultConstructorMarker;)V
 
     iput-object p1, p0, Landroidx/compose/ui/graphics/Outline$Rounded;->roundRect:Landroidx/compose/ui/geometry/RoundRect;
 
-    .line 74
+    .line 75
     invoke-static {p1}, Landroidx/compose/ui/graphics/OutlineKt;->access$hasSameCornerRadius(Landroidx/compose/ui/geometry/RoundRect;)Z
 
     move-result v1
 
     if-nez v1, :cond_0
 
-    .line 75
+    .line 76
     invoke-static {}, Landroidx/compose/ui/graphics/AndroidPath_androidKt;->Path()Landroidx/compose/ui/graphics/Path;
 
     move-result-object v0
 
     invoke-interface {v0, p1}, Landroidx/compose/ui/graphics/Path;->addRoundRect(Landroidx/compose/ui/geometry/RoundRect;)V
 
-    .line 74
+    .line 75
     :cond_0
     iput-object v0, p0, Landroidx/compose/ui/graphics/Outline$Rounded;->roundRectPath:Landroidx/compose/ui/graphics/Path;
 
@@ -108,7 +104,7 @@
 
     return v0
 
-    .line 86
+    .line 87
     :cond_0
     instance-of v1, p1, Landroidx/compose/ui/graphics/Outline$Rounded;
 
@@ -118,7 +114,7 @@
 
     return v2
 
-    .line 88
+    .line 89
     :cond_1
     iget-object p0, p0, Landroidx/compose/ui/graphics/Outline$Rounded;->roundRect:Landroidx/compose/ui/geometry/RoundRect;
 
@@ -141,7 +137,7 @@
 .method public getBounds()Landroidx/compose/ui/geometry/Rect;
     .locals 0
 
-    .line 82
+    .line 83
     iget-object p0, p0, Landroidx/compose/ui/graphics/Outline$Rounded;->roundRect:Landroidx/compose/ui/geometry/RoundRect;
 
     invoke-static {p0}, Landroidx/compose/ui/geometry/RoundRectKt;->getBoundingRect(Landroidx/compose/ui/geometry/RoundRect;)Landroidx/compose/ui/geometry/Rect;
@@ -154,7 +150,7 @@
 .method public final getRoundRect()Landroidx/compose/ui/geometry/RoundRect;
     .locals 0
 
-    .line 63
+    .line 64
     iget-object p0, p0, Landroidx/compose/ui/graphics/Outline$Rounded;->roundRect:Landroidx/compose/ui/geometry/RoundRect;
 
     return-object p0
@@ -163,7 +159,7 @@
 .method public final getRoundRectPath$ui_graphics_release()Landroidx/compose/ui/graphics/Path;
     .locals 0
 
-    .line 71
+    .line 72
     iget-object p0, p0, Landroidx/compose/ui/graphics/Outline$Rounded;->roundRectPath:Landroidx/compose/ui/graphics/Path;
 
     return-object p0
@@ -172,7 +168,7 @@
 .method public hashCode()I
     .locals 0
 
-    .line 94
+    .line 95
     iget-object p0, p0, Landroidx/compose/ui/graphics/Outline$Rounded;->roundRect:Landroidx/compose/ui/geometry/RoundRect;
 
     invoke-virtual {p0}, Landroidx/compose/ui/geometry/RoundRect;->hashCode()I

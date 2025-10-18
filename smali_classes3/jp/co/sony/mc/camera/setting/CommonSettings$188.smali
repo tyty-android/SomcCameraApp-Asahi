@@ -21,7 +21,7 @@
 .method constructor <init>()V
     .locals 0
 
-    .line 1747
+    .line 1753
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -42,8 +42,8 @@
         }
     .end annotation
 
-    .line 1751
-    invoke-static {}, Ljp/co/sony/mc/camera/configuration/parameters/YoutubeStreamKey;->getDefaultValue()Ljava/lang/String;
+    .line 1757
+    invoke-static {}, Ljp/co/sony/mc/camera/configuration/parameters/RtmpStreamKey;->getDefaultValue()Ljava/lang/String;
 
     move-result-object p0
 

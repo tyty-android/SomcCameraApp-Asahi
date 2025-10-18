@@ -1,6 +1,6 @@
 .class final Landroidx/compose/ui/tooling/PreviewActivity$setParameterizedContent$2;
 .super Lkotlin/jvm/internal/Lambda;
-.source "PreviewActivity.kt"
+.source "PreviewActivity.android.kt"
 
 # interfaces
 .implements Lkotlin/jvm/functions/Function2;
@@ -96,7 +96,7 @@
 .method public final invoke(Landroidx/compose/runtime/Composer;I)V
     .locals 3
 
-    const-string v0, "C:PreviewActivity.kt#hevd2p"
+    const-string v0, "C:PreviewActivity.android.kt#hevd2p"
 
     invoke-static {p1, v0}, Landroidx/compose/runtime/ComposerKt;->sourceInformation(Landroidx/compose/runtime/Composer;Ljava/lang/String;)V
 
@@ -132,9 +132,9 @@
 
     const/4 v0, -0x1
 
-    const-string v1, "androidx.compose.ui.tooling.PreviewActivity.setParameterizedContent.<anonymous> (PreviewActivity.kt:133)"
+    const-string v1, "androidx.compose.ui.tooling.PreviewActivity.setParameterizedContent.<anonymous> (PreviewActivity.android.kt:134)"
 
-    const v2, 0x59dd48c7
+    const v2, -0x7155c95a
 
     invoke-static {v2, p2, v0, v1}, Landroidx/compose/runtime/ComposerKt;->traceEventStart(IIILjava/lang/String;)V
 

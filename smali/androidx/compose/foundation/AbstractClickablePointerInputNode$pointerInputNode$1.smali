@@ -53,7 +53,7 @@
     f = "Clickable.kt"
     i = {}
     l = {
-        0x34e
+        0x3aa
     }
     m = "invokeSuspend"
     n = {}
@@ -171,7 +171,7 @@
 
     move-result-object v0
 
-    .line 846
+    .line 938
     iget v1, p0, Landroidx/compose/foundation/AbstractClickablePointerInputNode$pointerInputNode$1;->label:I
 
     const/4 v2, 0x1

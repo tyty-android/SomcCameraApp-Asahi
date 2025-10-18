@@ -118,7 +118,7 @@
 .end method
 
 .method private static expandSquare([Lcom/google/zxing/ResultPoint;II)[Lcom/google/zxing/ResultPoint;
-    .locals 8
+    .locals 10
 
     int-to-float p2, p2
 
@@ -182,140 +182,148 @@
     div-float/2addr v4, v0
 
     .line 532
-    aget-object p1, p0, p1
+    aget-object v5, p0, p1
 
-    invoke-virtual {p1}, Lcom/google/zxing/ResultPoint;->getY()F
+    invoke-virtual {v5}, Lcom/google/zxing/ResultPoint;->getY()F
 
-    move-result p1
+    move-result v5
 
-    aget-object v2, p0, v2
-
-    invoke-virtual {v2}, Lcom/google/zxing/ResultPoint;->getY()F
-
-    move-result v2
-
-    add-float/2addr p1, v2
-
-    div-float/2addr p1, v0
-
-    .line 534
-    new-instance v2, Lcom/google/zxing/ResultPoint;
-
-    mul-float/2addr v1, p2
-
-    add-float v5, v4, v1
-
-    mul-float/2addr v3, p2
-
-    add-float v6, p1, v3
-
-    invoke-direct {v2, v5, v6}, Lcom/google/zxing/ResultPoint;-><init>(FF)V
-
-    .line 535
-    new-instance v5, Lcom/google/zxing/ResultPoint;
-
-    sub-float/2addr v4, v1
-
-    sub-float/2addr p1, v3
-
-    invoke-direct {v5, v4, p1}, Lcom/google/zxing/ResultPoint;-><init>(FF)V
-
-    const/4 p1, 0x1
-
-    .line 537
-    aget-object v1, p0, p1
-
-    invoke-virtual {v1}, Lcom/google/zxing/ResultPoint;->getX()F
-
-    move-result v1
-
-    const/4 v3, 0x3
-
-    aget-object v4, p0, v3
-
-    invoke-virtual {v4}, Lcom/google/zxing/ResultPoint;->getX()F
-
-    move-result v4
-
-    sub-float/2addr v1, v4
-
-    .line 538
-    aget-object v4, p0, p1
-
-    invoke-virtual {v4}, Lcom/google/zxing/ResultPoint;->getY()F
-
-    move-result v4
-
-    aget-object v6, p0, v3
+    aget-object v6, p0, v2
 
     invoke-virtual {v6}, Lcom/google/zxing/ResultPoint;->getY()F
 
     move-result v6
 
-    sub-float/2addr v4, v6
+    add-float/2addr v5, v6
+
+    div-float/2addr v5, v0
+
+    .line 534
+    new-instance v6, Lcom/google/zxing/ResultPoint;
+
+    mul-float/2addr v1, p2
+
+    add-float v7, v4, v1
+
+    mul-float/2addr v3, p2
+
+    add-float v8, v5, v3
+
+    invoke-direct {v6, v7, v8}, Lcom/google/zxing/ResultPoint;-><init>(FF)V
+
+    .line 535
+    new-instance v7, Lcom/google/zxing/ResultPoint;
+
+    sub-float/2addr v4, v1
+
+    sub-float/2addr v5, v3
+
+    invoke-direct {v7, v4, v5}, Lcom/google/zxing/ResultPoint;-><init>(FF)V
+
+    const/4 v1, 0x1
+
+    .line 537
+    aget-object v3, p0, v1
+
+    invoke-virtual {v3}, Lcom/google/zxing/ResultPoint;->getX()F
+
+    move-result v3
+
+    const/4 v4, 0x3
+
+    aget-object v5, p0, v4
+
+    invoke-virtual {v5}, Lcom/google/zxing/ResultPoint;->getX()F
+
+    move-result v5
+
+    sub-float/2addr v3, v5
+
+    .line 538
+    aget-object v5, p0, v1
+
+    invoke-virtual {v5}, Lcom/google/zxing/ResultPoint;->getY()F
+
+    move-result v5
+
+    aget-object v8, p0, v4
+
+    invoke-virtual {v8}, Lcom/google/zxing/ResultPoint;->getY()F
+
+    move-result v8
+
+    sub-float/2addr v5, v8
 
     .line 539
-    aget-object v6, p0, p1
+    aget-object v8, p0, v1
 
-    invoke-virtual {v6}, Lcom/google/zxing/ResultPoint;->getX()F
+    invoke-virtual {v8}, Lcom/google/zxing/ResultPoint;->getX()F
 
-    move-result v6
+    move-result v8
 
-    aget-object v7, p0, v3
+    aget-object v9, p0, v4
 
-    invoke-virtual {v7}, Lcom/google/zxing/ResultPoint;->getX()F
+    invoke-virtual {v9}, Lcom/google/zxing/ResultPoint;->getX()F
 
-    move-result v7
+    move-result v9
 
-    add-float/2addr v6, v7
+    add-float/2addr v8, v9
 
-    div-float/2addr v6, v0
+    div-float/2addr v8, v0
 
     .line 540
-    aget-object p1, p0, p1
+    aget-object v9, p0, v1
 
-    invoke-virtual {p1}, Lcom/google/zxing/ResultPoint;->getY()F
+    invoke-virtual {v9}, Lcom/google/zxing/ResultPoint;->getY()F
 
-    move-result p1
+    move-result v9
 
-    aget-object p0, p0, v3
+    aget-object p0, p0, v4
 
     invoke-virtual {p0}, Lcom/google/zxing/ResultPoint;->getY()F
 
     move-result p0
 
-    add-float/2addr p1, p0
+    add-float/2addr v9, p0
 
-    div-float/2addr p1, v0
+    div-float/2addr v9, v0
 
     .line 541
     new-instance p0, Lcom/google/zxing/ResultPoint;
 
-    mul-float/2addr v1, p2
+    mul-float/2addr v3, p2
 
-    add-float v0, v6, v1
+    add-float v0, v8, v3
 
-    mul-float/2addr p2, v4
+    mul-float/2addr p2, v5
 
-    add-float v3, p1, p2
+    add-float v5, v9, p2
 
-    invoke-direct {p0, v0, v3}, Lcom/google/zxing/ResultPoint;-><init>(FF)V
+    invoke-direct {p0, v0, v5}, Lcom/google/zxing/ResultPoint;-><init>(FF)V
 
     .line 542
     new-instance v0, Lcom/google/zxing/ResultPoint;
 
-    sub-float/2addr v6, v1
+    sub-float/2addr v8, v3
 
-    sub-float/2addr p1, p2
+    sub-float/2addr v9, p2
 
-    invoke-direct {v0, v6, p1}, Lcom/google/zxing/ResultPoint;-><init>(FF)V
+    invoke-direct {v0, v8, v9}, Lcom/google/zxing/ResultPoint;-><init>(FF)V
+
+    const/4 p2, 0x4
 
     .line 544
-    filled-new-array {v2, p0, v5, v0}, [Lcom/google/zxing/ResultPoint;
+    new-array p2, p2, [Lcom/google/zxing/ResultPoint;
 
-    move-result-object p0
+    aput-object v6, p2, p1
 
-    return-object p0
+    aput-object p0, p2, v1
+
+    aput-object v7, p2, v2
+
+    aput-object v0, p2, v4
+
+    return-object p2
 .end method
 
 .method private extractParameters([Lcom/google/zxing/ResultPoint;)V
@@ -684,29 +692,33 @@
 
     :cond_3
     :goto_2
+    const/4 v6, 0x0
+
     if-ne v4, v5, :cond_4
+
+    move v4, v0
 
     goto :goto_3
 
     :cond_4
-    const/4 v0, 0x0
+    move v4, v6
 
     .line 273
     :goto_3
-    iput-boolean v0, p0, Lcom/google/zxing/aztec/detector/Detector;->compact:Z
+    iput-boolean v4, p0, Lcom/google/zxing/aztec/detector/Detector;->compact:Z
 
     .line 277
-    new-instance v0, Lcom/google/zxing/ResultPoint;
+    new-instance v4, Lcom/google/zxing/ResultPoint;
 
     invoke-virtual {p1}, Lcom/google/zxing/aztec/detector/Detector$Point;->getX()I
 
-    move-result v4
+    move-result v5
 
-    int-to-float v4, v4
+    int-to-float v5, v5
 
-    const/high16 v5, 0x3f000000    # 0.5f
+    const/high16 v8, 0x3f000000    # 0.5f
 
-    add-float/2addr v4, v5
+    add-float/2addr v5, v8
 
     invoke-virtual {p1}, Lcom/google/zxing/aztec/detector/Detector$Point;->getY()I
 
@@ -714,20 +726,20 @@
 
     int-to-float p1, p1
 
-    sub-float/2addr p1, v5
+    sub-float/2addr p1, v8
 
-    invoke-direct {v0, v4, p1}, Lcom/google/zxing/ResultPoint;-><init>(FF)V
+    invoke-direct {v4, v5, p1}, Lcom/google/zxing/ResultPoint;-><init>(FF)V
 
     .line 278
     new-instance p1, Lcom/google/zxing/ResultPoint;
 
     invoke-virtual {v1}, Lcom/google/zxing/aztec/detector/Detector$Point;->getX()I
 
-    move-result v4
+    move-result v5
 
-    int-to-float v4, v4
+    int-to-float v5, v5
 
-    add-float/2addr v4, v5
+    add-float/2addr v5, v8
 
     invoke-virtual {v1}, Lcom/google/zxing/aztec/detector/Detector$Point;->getY()I
 
@@ -735,20 +747,20 @@
 
     int-to-float v1, v1
 
-    add-float/2addr v1, v5
+    add-float/2addr v1, v8
 
-    invoke-direct {p1, v4, v1}, Lcom/google/zxing/ResultPoint;-><init>(FF)V
+    invoke-direct {p1, v5, v1}, Lcom/google/zxing/ResultPoint;-><init>(FF)V
 
     .line 279
     new-instance v1, Lcom/google/zxing/ResultPoint;
 
     invoke-virtual {v2}, Lcom/google/zxing/aztec/detector/Detector$Point;->getX()I
 
-    move-result v4
+    move-result v5
 
-    int-to-float v4, v4
+    int-to-float v5, v5
 
-    sub-float/2addr v4, v5
+    sub-float/2addr v5, v8
 
     invoke-virtual {v2}, Lcom/google/zxing/aztec/detector/Detector$Point;->getY()I
 
@@ -756,20 +768,20 @@
 
     int-to-float v2, v2
 
-    add-float/2addr v2, v5
+    add-float/2addr v2, v8
 
-    invoke-direct {v1, v4, v2}, Lcom/google/zxing/ResultPoint;-><init>(FF)V
+    invoke-direct {v1, v5, v2}, Lcom/google/zxing/ResultPoint;-><init>(FF)V
 
     .line 280
     new-instance v2, Lcom/google/zxing/ResultPoint;
 
     invoke-virtual {v3}, Lcom/google/zxing/aztec/detector/Detector$Point;->getX()I
 
-    move-result v4
+    move-result v5
 
-    int-to-float v4, v4
+    int-to-float v5, v5
 
-    sub-float/2addr v4, v5
+    sub-float/2addr v5, v8
 
     invoke-virtual {v3}, Lcom/google/zxing/aztec/detector/Detector$Point;->getY()I
 
@@ -777,24 +789,34 @@
 
     int-to-float v3, v3
 
-    sub-float/2addr v3, v5
+    sub-float/2addr v3, v8
 
-    invoke-direct {v2, v4, v3}, Lcom/google/zxing/ResultPoint;-><init>(FF)V
+    invoke-direct {v2, v5, v3}, Lcom/google/zxing/ResultPoint;-><init>(FF)V
+
+    const/4 v3, 0x4
 
     .line 284
-    filled-new-array {v0, p1, v1, v2}, [Lcom/google/zxing/ResultPoint;
+    new-array v3, v3, [Lcom/google/zxing/ResultPoint;
 
-    move-result-object p1
+    aput-object v4, v3, v6
+
+    aput-object p1, v3, v0
+
+    aput-object v1, v3, v7
+
+    const/4 p1, 0x3
+
+    aput-object v2, v3, p1
 
     iget p0, p0, Lcom/google/zxing/aztec/detector/Detector;->nbCenterLayers:I
 
     mul-int/lit8 v0, p0, 0x2
 
-    add-int/lit8 v0, v0, -0x3
+    sub-int/2addr v0, p1
 
     mul-int/2addr p0, v7
 
-    invoke-static {p1, v0, p0}, Lcom/google/zxing/aztec/detector/Detector;->expandSquare([Lcom/google/zxing/ResultPoint;II)[Lcom/google/zxing/ResultPoint;
+    invoke-static {v3, v0, p0}, Lcom/google/zxing/aztec/detector/Detector;->expandSquare([Lcom/google/zxing/ResultPoint;II)[Lcom/google/zxing/ResultPoint;
 
     move-result-object p0
 

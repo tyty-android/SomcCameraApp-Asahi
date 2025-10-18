@@ -19,6 +19,9 @@
 .method public abstract onAutoFocusDone(Ljp/co/sony/mc/camera/device/CameraDeviceHandler$CameraSessionId;Z)V
 .end method
 
+.method public abstract onAutoFramingObjectTrackResultChanged(Z)V
+.end method
+
 .method public abstract onAutoHdrResultChanged(Z)V
 .end method
 
@@ -105,6 +108,12 @@
 .method public abstract onFocusMagnificationResultChanged(Ljp/co/sony/mc/camera/device/CaptureResultNotifier$FocusMagnificationResult;)V
 .end method
 
+.method public abstract onFocusStateChanged(Z)V
+.end method
+
+.method public abstract onFramingAssistCroppedPositionChanged(Ljp/co/sony/mc/camera/device/CaptureResultNotifier$FramingAssistCroppedPosition;)V
+.end method
+
 .method public abstract onHistogramChanged(Ljp/co/sony/mc/camera/device/CaptureResultNotifier$HistogramResult;)V
 .end method
 
@@ -150,7 +159,16 @@
 .method public abstract onRecordError(II)V
 .end method
 
-.method public abstract onRecordFinished(Ljp/co/sony/mc/camera/recorder/RecorderController$Result;Ljp/co/sony/mc/camera/storage/RequestFactory$VideoSavingRequestBuilder;)V
+.method public abstract onRecordFinished(Ljp/co/sony/mc/camera/recorder/RecorderController$Result;Ljava/util/List;)V
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Ljp/co/sony/mc/camera/recorder/RecorderController$Result;",
+            "Ljava/util/List<",
+            "Ljp/co/sony/mc/camera/storage/RequestFactory$VideoSavingRequestBuilder;",
+            ">;)V"
+        }
+    .end annotation
 .end method
 
 .method public abstract onRecordProgress(J)V

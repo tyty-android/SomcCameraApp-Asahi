@@ -1,23 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <plurals name="mtrl_badge_content_description">
-        <item quantity="other">%d ಹೊಸ ಅಧಿಸೂಚನೆಗಳು</item>
-        <item quantity="one">%d ಹೊಸ ಅಧಿಸೂಚನೆಗಳು</item>
-    </plurals>
-    <plurals name="mv_minute_remaining_txt">
-        <item quantity="other">%1$d ನಿಮಿಷಗಳು ಉಳಿದಿದೆ</item>
-        <item quantity="one">1 ನಿಮಿಷ ಉಳಿದಿದೆ</item>
-    </plurals>
-    <plurals name="mv_minute_txt">
-        <item quantity="other">%1$d ನಿಮಿಷಗಳು</item>
-        <item quantity="one">1 ನಿಮಿಷ</item>
-    </plurals>
-    <plurals name="mv_second_remaining_txt">
-        <item quantity="other">%1$d ಸೆಕೆಂಡುಗಳು ಉಳಿದಿದೆ</item>
-        <item quantity="one">1 ಸೆಕೆಂಡ್ ಉಳಿದಿದೆ</item>
-    </plurals>
-    <plurals name="mv_second_txt">
-        <item quantity="other">%1$d ಸೆಕೆಂಡುಗಳು</item>
-        <item quantity="one">1 ಕ್ಷಣ</item>
+        <item quantity="other">%d ಹೊಸ ನೋಟಿಫಿಕೇಶನ್‍ಗಳು</item>
+        <item quantity="one">%d ಹೊಸ ನೋಟಿಫಿಕೇಶನ್‍ಗಳು</item>
     </plurals>
 </resources>

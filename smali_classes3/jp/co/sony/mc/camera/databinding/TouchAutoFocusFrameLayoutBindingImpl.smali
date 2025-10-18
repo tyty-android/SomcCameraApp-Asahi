@@ -24,7 +24,7 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/databinding/TouchAutoFocusFrameLayoutBindingImpl;->sViewsWithIds:Landroid/util/SparseIntArray;
 
-    const v1, 0x7f0900a1
+    const v1, 0x7f09009d
 
     const/4 v2, 0x1
 

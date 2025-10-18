@@ -73,7 +73,7 @@
 .method public bridge synthetic invoke(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
 
-    .line 891
+    .line 892
     check-cast p1, Ljava/lang/String;
 
     check-cast p2, Ljava/lang/Number;
@@ -98,16 +98,12 @@
 .method public final invoke(Ljava/lang/String;II)Ljava/lang/String;
     .locals 1
 
-    const-string/jumbo v0, "str"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 892
+    .line 893
     const-string/jumbo v0, "this as java.lang.String\u2026ing(startIndex, endIndex)"
 
     if-nez p2, :cond_0
 
-    .line 893
+    .line 894
     invoke-virtual {p1, p2, p3}, Ljava/lang/String;->substring(II)Ljava/lang/String;
 
     move-result-object p1
@@ -122,7 +118,7 @@
 
     goto :goto_0
 
-    .line 895
+    .line 896
     :cond_0
     invoke-virtual {p1, p2, p3}, Ljava/lang/String;->substring(II)Ljava/lang/String;
 

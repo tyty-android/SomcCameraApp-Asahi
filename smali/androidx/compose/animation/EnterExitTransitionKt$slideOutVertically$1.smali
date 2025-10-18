@@ -81,7 +81,7 @@
 
     neg-int p0, p1
 
-    .line 758
+    .line 767
     div-int/lit8 p0, p0, 0x2
 
     invoke-static {p0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
@@ -94,7 +94,7 @@
 .method public bridge synthetic invoke(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
 
-    .line 758
+    .line 767
     check-cast p1, Ljava/lang/Number;
 
     invoke-virtual {p1}, Ljava/lang/Number;->intValue()I

@@ -28,7 +28,7 @@
     k = 0x1
     mv = {
         0x1,
-        0x6,
+        0x8,
         0x0
     }
     xi = 0x30
@@ -39,7 +39,7 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 7
+    .line 11
     invoke-direct {p0}, Lkotlinx/coroutines/EventLoop;-><init>()V
 
     return-void
@@ -53,7 +53,7 @@
 .method protected reschedule(JLkotlinx/coroutines/EventLoopImplBase$DelayedTask;)V
     .locals 0
 
-    .line 17
+    .line 21
     sget-object p0, Lkotlinx/coroutines/DefaultExecutor;->INSTANCE:Lkotlinx/coroutines/DefaultExecutor;
 
     invoke-virtual {p0, p1, p2, p3}, Lkotlinx/coroutines/DefaultExecutor;->schedule(JLkotlinx/coroutines/EventLoopImplBase$DelayedTask;)V
@@ -64,19 +64,19 @@
 .method protected final unpark()V
     .locals 1
 
-    .line 11
+    .line 15
     invoke-virtual {p0}, Lkotlinx/coroutines/EventLoopImplPlatform;->getThread()Ljava/lang/Thread;
 
     move-result-object p0
 
-    .line 12
+    .line 16
     invoke-static {}, Ljava/lang/Thread;->currentThread()Ljava/lang/Thread;
 
     move-result-object v0
 
     if-eq v0, p0, :cond_1
 
-    .line 13
+    .line 17
     invoke-static {}, Lkotlinx/coroutines/AbstractTimeSourceKt;->getTimeSource()Lkotlinx/coroutines/AbstractTimeSource;
 
     move-result-object v0

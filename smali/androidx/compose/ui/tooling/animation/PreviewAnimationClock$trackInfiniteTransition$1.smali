@@ -1,6 +1,6 @@
 .class final Landroidx/compose/ui/tooling/animation/PreviewAnimationClock$trackInfiniteTransition$1;
 .super Lkotlin/jvm/internal/Lambda;
-.source "PreviewAnimationClock.kt"
+.source "PreviewAnimationClock.android.kt"
 
 # interfaces
 .implements Lkotlin/jvm/functions/Function1;
@@ -73,7 +73,7 @@
 .method public bridge synthetic invoke(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
 
-    .line 167
+    .line 178
     invoke-virtual {p0, p1}, Landroidx/compose/ui/tooling/animation/PreviewAnimationClock$trackInfiniteTransition$1;->invoke(Ljava/lang/Object;)V
 
     sget-object p0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
@@ -84,11 +84,7 @@
 .method public final invoke(Ljava/lang/Object;)V
     .locals 3
 
-    const-string v0, "it"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 168
+    .line 179
     sget-object p1, Landroidx/compose/ui/tooling/animation/InfiniteTransitionComposeAnimation;->Companion:Landroidx/compose/ui/tooling/animation/InfiniteTransitionComposeAnimation$Companion;
 
     iget-object v0, p0, Landroidx/compose/ui/tooling/animation/PreviewAnimationClock$trackInfiniteTransition$1;->$animation:Landroidx/compose/ui/tooling/animation/AnimationSearch$InfiniteTransitionSearchInfo;
@@ -101,7 +97,7 @@
 
     iget-object p0, p0, Landroidx/compose/ui/tooling/animation/PreviewAnimationClock$trackInfiniteTransition$1;->this$0:Landroidx/compose/ui/tooling/animation/PreviewAnimationClock;
 
-    .line 169
+    .line 180
     invoke-virtual {p0}, Landroidx/compose/ui/tooling/animation/PreviewAnimationClock;->getInfiniteTransitionClocks$ui_tooling_release()Ljava/util/Map;
 
     move-result-object v0
@@ -118,7 +114,7 @@
 
     invoke-interface {v0, p1, v1}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 179
+    .line 190
     check-cast p1, Landroidx/compose/animation/tooling/ComposeAnimation;
 
     invoke-virtual {p0, p1}, Landroidx/compose/ui/tooling/animation/PreviewAnimationClock;->notifySubscribe(Landroidx/compose/animation/tooling/ComposeAnimation;)V

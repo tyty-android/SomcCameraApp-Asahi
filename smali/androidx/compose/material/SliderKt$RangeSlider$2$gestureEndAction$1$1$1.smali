@@ -138,7 +138,7 @@
 .method public bridge synthetic invoke(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
 
-    .line 361
+    .line 364
     check-cast p1, Landroidx/compose/animation/core/Animatable;
 
     invoke-virtual {p0, p1}, Landroidx/compose/material/SliderKt$RangeSlider$2$gestureEndAction$1$1$1;->invoke(Landroidx/compose/animation/core/Animatable;)V
@@ -160,11 +160,7 @@
         }
     .end annotation
 
-    const-string v0, "$this$animateTo"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 365
+    .line 368
     iget-boolean v0, p0, Landroidx/compose/material/SliderKt$RangeSlider$2$gestureEndAction$1$1$1;->$isStart:Z
 
     if-eqz v0, :cond_0
@@ -189,7 +185,7 @@
 
     invoke-interface {v0, p1}, Landroidx/compose/runtime/MutableFloatState;->setFloatValue(F)V
 
-    .line 366
+    .line 369
     iget-object p1, p0, Landroidx/compose/material/SliderKt$RangeSlider$2$gestureEndAction$1$1$1;->$onValueChangeState:Landroidx/compose/runtime/State;
 
     invoke-interface {p1}, Landroidx/compose/runtime/State;->getValue()Ljava/lang/Object;
@@ -198,7 +194,7 @@
 
     check-cast p1, Lkotlin/jvm/functions/Function1;
 
-    .line 367
+    .line 370
     iget-object v0, p0, Landroidx/compose/material/SliderKt$RangeSlider$2$gestureEndAction$1$1$1;->$minPx:Lkotlin/jvm/internal/Ref$FloatRef;
 
     iget-object v1, p0, Landroidx/compose/material/SliderKt$RangeSlider$2$gestureEndAction$1$1$1;->$maxPx:Lkotlin/jvm/internal/Ref$FloatRef;
@@ -225,7 +221,7 @@
 
     move-result-object p0
 
-    .line 366
+    .line 369
     invoke-interface {p1, p0}, Lkotlin/jvm/functions/Function1;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
 
     return-void

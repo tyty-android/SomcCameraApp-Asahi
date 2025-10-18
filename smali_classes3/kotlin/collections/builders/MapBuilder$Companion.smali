@@ -51,7 +51,7 @@
 .method private constructor <init>()V
     .locals 0
 
-    .line 463
+    .line 483
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -68,7 +68,7 @@
 .method public static final synthetic access$computeHashSize(Lkotlin/collections/builders/MapBuilder$Companion;I)I
     .locals 0
 
-    .line 463
+    .line 483
     invoke-direct {p0, p1}, Lkotlin/collections/builders/MapBuilder$Companion;->computeHashSize(I)I
 
     move-result p0
@@ -79,7 +79,7 @@
 .method public static final synthetic access$computeShift(Lkotlin/collections/builders/MapBuilder$Companion;I)I
     .locals 0
 
-    .line 463
+    .line 483
     invoke-direct {p0, p1}, Lkotlin/collections/builders/MapBuilder$Companion;->computeShift(I)I
 
     move-result p0
@@ -92,7 +92,7 @@
 
     const/4 p0, 0x1
 
-    .line 471
+    .line 491
     invoke-static {p1, p0}, Lkotlin/ranges/RangesKt;->coerceAtLeast(II)I
 
     move-result p0
@@ -109,7 +109,7 @@
 .method private final computeShift(I)I
     .locals 0
 
-    .line 473
+    .line 493
     invoke-static {p1}, Ljava/lang/Integer;->numberOfLeadingZeros(I)I
 
     move-result p0
@@ -124,7 +124,7 @@
 .method public final getEmpty$kotlin_stdlib()Lkotlin/collections/builders/MapBuilder;
     .locals 0
 
-    .line 469
+    .line 489
     invoke-static {}, Lkotlin/collections/builders/MapBuilder;->access$getEmpty$cp()Lkotlin/collections/builders/MapBuilder;
 
     move-result-object p0

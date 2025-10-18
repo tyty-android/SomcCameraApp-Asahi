@@ -1,6 +1,6 @@
 .class public Landroidx/lifecycle/AndroidViewModel;
 .super Landroidx/lifecycle/ViewModel;
-.source "AndroidViewModel.kt"
+.source "AndroidViewModel.android.kt"
 
 
 # annotations

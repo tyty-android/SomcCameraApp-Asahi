@@ -21,7 +21,7 @@
 .method constructor <init>()V
     .locals 0
 
-    .line 1626
+    .line 1683
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -46,13 +46,13 @@
         }
     .end annotation
 
-    .line 1630
+    .line 1687
     check-cast p1, Ljp/co/sony/mc/camera/setting/CameraSettings;
 
-    .line 1631
-    check-cast p3, Ljp/co/sony/mc/camera/configuration/parameters/ProductShowcase;
+    .line 1688
+    check-cast p3, Ljp/co/sony/mc/camera/configuration/parameters/QrCodeDetection;
 
-    invoke-static {p1, p3}, Ljp/co/sony/mc/camera/setting/CameraSettings;->-$$Nest$msetProductShowcase(Ljp/co/sony/mc/camera/setting/CameraSettings;Ljp/co/sony/mc/camera/configuration/parameters/ProductShowcase;)Z
+    invoke-static {p1, p3}, Ljp/co/sony/mc/camera/setting/CameraSettings;->-$$Nest$msetQrCodeDetection(Ljp/co/sony/mc/camera/setting/CameraSettings;Ljp/co/sony/mc/camera/configuration/parameters/QrCodeDetection;)Z
 
     move-result p0
 

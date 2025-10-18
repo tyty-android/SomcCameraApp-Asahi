@@ -52,6 +52,10 @@
 .end annotation
 
 
+# static fields
+.field public static final $stable:I = 0x8
+
+
 # instance fields
 .field private crossAxisAlignment:Landroidx/compose/foundation/layout/CrossAxisAlignment;
 
@@ -61,6 +65,12 @@
 
 
 # direct methods
+.method static constructor <clinit>()V
+    .locals 0
+
+    return-void
+.end method
+
 .method public constructor <init>()V
     .locals 6
 
@@ -84,16 +94,16 @@
 .method public constructor <init>(FZLandroidx/compose/foundation/layout/CrossAxisAlignment;)V
     .locals 0
 
-    .line 825
+    .line 828
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 826
+    .line 829
     iput p1, p0, Landroidx/compose/foundation/layout/RowColumnParentData;->weight:F
 
-    .line 827
+    .line 830
     iput-boolean p2, p0, Landroidx/compose/foundation/layout/RowColumnParentData;->fill:Z
 
-    .line 828
+    .line 831
     iput-object p3, p0, Landroidx/compose/foundation/layout/RowColumnParentData;->crossAxisAlignment:Landroidx/compose/foundation/layout/CrossAxisAlignment;
 
     return-void
@@ -122,7 +132,7 @@
 
     const/4 p3, 0x0
 
-    .line 825
+    .line 828
     :cond_2
     invoke-direct {p0, p1, p2, p3}, Landroidx/compose/foundation/layout/RowColumnParentData;-><init>(FZLandroidx/compose/foundation/layout/CrossAxisAlignment;)V
 
@@ -258,7 +268,7 @@
 .method public final getCrossAxisAlignment()Landroidx/compose/foundation/layout/CrossAxisAlignment;
     .locals 0
 
-    .line 828
+    .line 831
     iget-object p0, p0, Landroidx/compose/foundation/layout/RowColumnParentData;->crossAxisAlignment:Landroidx/compose/foundation/layout/CrossAxisAlignment;
 
     return-object p0
@@ -267,7 +277,7 @@
 .method public final getFill()Z
     .locals 0
 
-    .line 827
+    .line 830
     iget-boolean p0, p0, Landroidx/compose/foundation/layout/RowColumnParentData;->fill:Z
 
     return p0
@@ -276,7 +286,7 @@
 .method public final getWeight()F
     .locals 0
 
-    .line 826
+    .line 829
     iget p0, p0, Landroidx/compose/foundation/layout/RowColumnParentData;->weight:F
 
     return p0
@@ -295,24 +305,23 @@
 
     iget-boolean v1, p0, Landroidx/compose/foundation/layout/RowColumnParentData;->fill:Z
 
-    if-eqz v1, :cond_0
+    invoke-static {v1}, Ljava/lang/Boolean;->hashCode(Z)I
 
-    const/4 v1, 0x1
+    move-result v1
 
-    :cond_0
     add-int/2addr v0, v1
 
     mul-int/lit8 v0, v0, 0x1f
 
     iget-object p0, p0, Landroidx/compose/foundation/layout/RowColumnParentData;->crossAxisAlignment:Landroidx/compose/foundation/layout/CrossAxisAlignment;
 
-    if-nez p0, :cond_1
+    if-nez p0, :cond_0
 
     const/4 p0, 0x0
 
     goto :goto_0
 
-    :cond_1
+    :cond_0
     invoke-virtual {p0}, Landroidx/compose/foundation/layout/CrossAxisAlignment;->hashCode()I
 
     move-result p0
@@ -326,7 +335,7 @@
 .method public final setCrossAxisAlignment(Landroidx/compose/foundation/layout/CrossAxisAlignment;)V
     .locals 0
 
-    .line 828
+    .line 831
     iput-object p1, p0, Landroidx/compose/foundation/layout/RowColumnParentData;->crossAxisAlignment:Landroidx/compose/foundation/layout/CrossAxisAlignment;
 
     return-void
@@ -335,7 +344,7 @@
 .method public final setFill(Z)V
     .locals 0
 
-    .line 827
+    .line 830
     iput-boolean p1, p0, Landroidx/compose/foundation/layout/RowColumnParentData;->fill:Z
 
     return-void
@@ -344,7 +353,7 @@
 .method public final setWeight(F)V
     .locals 0
 
-    .line 826
+    .line 829
     iput p1, p0, Landroidx/compose/foundation/layout/RowColumnParentData;->weight:F
 
     return-void

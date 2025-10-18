@@ -163,7 +163,7 @@
 .method private static final abs(J)J
     .locals 0
 
-    .line 1249
+    .line 1245
     invoke-static {p0, p1}, Ljava/lang/Math;->abs(J)J
 
     move-result-wide p0
@@ -833,7 +833,7 @@
 .method private static final getAbsoluteValue(J)J
     .locals 0
 
-    .line 1275
+    .line 1271
     invoke-static {p0, p1}, Ljava/lang/Math;->abs(J)J
 
     move-result-wide p0
@@ -890,50 +890,22 @@
 .method public static final getSign(I)I
     .locals 0
 
-    if-gez p0, :cond_0
+    .line 1231
+    invoke-static {p0}, Ljava/lang/Integer;->signum(I)I
 
-    const/4 p0, -0x1
+    move-result p0
 
-    goto :goto_0
-
-    :cond_0
-    if-lez p0, :cond_1
-
-    const/4 p0, 0x1
-
-    goto :goto_0
-
-    :cond_1
-    const/4 p0, 0x0
-
-    :goto_0
     return p0
 .end method
 
 .method public static final getSign(J)I
-    .locals 2
+    .locals 0
 
-    const-wide/16 v0, 0x0
+    .line 1280
+    invoke-static {p0, p1}, Ljava/lang/Long;->signum(J)I
 
-    cmp-long p0, p0, v0
+    move-result p0
 
-    if-gez p0, :cond_0
-
-    const/4 p0, -0x1
-
-    goto :goto_0
-
-    :cond_0
-    if-lez p0, :cond_1
-
-    const/4 p0, 0x1
-
-    goto :goto_0
-
-    :cond_1
-    const/4 p0, 0x0
-
-    :goto_0
     return p0
 .end method
 
@@ -1253,7 +1225,7 @@
 .method private static final max(JJ)J
     .locals 0
 
-    .line 1263
+    .line 1259
     invoke-static {p0, p1, p2, p3}, Ljava/lang/Math;->max(JJ)J
 
     move-result-wide p0
@@ -1297,7 +1269,7 @@
 .method private static final min(JJ)J
     .locals 0
 
-    .line 1256
+    .line 1252
     invoke-static {p0, p1, p2, p3}, Ljava/lang/Math;->min(JJ)J
 
     move-result-wide p0

@@ -63,11 +63,11 @@
     .line 83
     new-array v0, v0, [Ljava/lang/Class;
 
-    const-class v1, Landroid/content/Context;
+    const/4 v1, 0x0
 
-    const/4 v2, 0x0
+    const-class v2, Landroid/content/Context;
 
-    aput-object v1, v0, v2
+    aput-object v2, v0, v1
 
     sput-object v0, Landroidx/appcompat/view/SupportMenuInflater;->ACTION_VIEW_CONSTRUCTOR_SIGNATURE:[Ljava/lang/Class;
 

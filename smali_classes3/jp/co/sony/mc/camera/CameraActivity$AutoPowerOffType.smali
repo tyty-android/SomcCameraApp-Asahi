@@ -44,7 +44,7 @@
 .method private static synthetic $values()[Ljp/co/sony/mc/camera/CameraActivity$AutoPowerOffType;
     .locals 3
 
-    .line 189
+    .line 193
     sget-object v0, Ljp/co/sony/mc/camera/CameraActivity$AutoPowerOffType;->DEFAULT:Ljp/co/sony/mc/camera/CameraActivity$AutoPowerOffType;
 
     sget-object v1, Ljp/co/sony/mc/camera/CameraActivity$AutoPowerOffType;->ON_LOCKSCREEN:Ljp/co/sony/mc/camera/CameraActivity$AutoPowerOffType;
@@ -61,7 +61,7 @@
 .method static constructor <clinit>()V
     .locals 13
 
-    .line 190
+    .line 194
     new-instance v6, Ljp/co/sony/mc/camera/CameraActivity$AutoPowerOffType;
 
     const-string v4, "DEFAULT"
@@ -80,7 +80,7 @@
 
     sput-object v6, Ljp/co/sony/mc/camera/CameraActivity$AutoPowerOffType;->DEFAULT:Ljp/co/sony/mc/camera/CameraActivity$AutoPowerOffType;
 
-    .line 191
+    .line 195
     new-instance v0, Ljp/co/sony/mc/camera/CameraActivity$AutoPowerOffType;
 
     const-string v11, "ON_LOCKSCREEN"
@@ -99,7 +99,7 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/CameraActivity$AutoPowerOffType;->ON_LOCKSCREEN:Ljp/co/sony/mc/camera/CameraActivity$AutoPowerOffType;
 
-    .line 192
+    .line 196
     new-instance v0, Ljp/co/sony/mc/camera/CameraActivity$AutoPowerOffType;
 
     const-string v5, "REMOCON"
@@ -118,7 +118,7 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/CameraActivity$AutoPowerOffType;->REMOCON:Ljp/co/sony/mc/camera/CameraActivity$AutoPowerOffType;
 
-    .line 189
+    .line 193
     invoke-static {}, Ljp/co/sony/mc/camera/CameraActivity$AutoPowerOffType;->$values()[Ljp/co/sony/mc/camera/CameraActivity$AutoPowerOffType;
 
     move-result-object v0
@@ -139,16 +139,16 @@
         }
     .end annotation
 
-    .line 198
+    .line 202
     invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
-    .line 199
+    .line 203
     iput p3, p0, Ljp/co/sony/mc/camera/CameraActivity$AutoPowerOffType;->mDuration:I
 
-    .line 200
+    .line 204
     iput-object p4, p0, Ljp/co/sony/mc/camera/CameraActivity$AutoPowerOffType;->mReason:Ljava/lang/String;
 
-    .line 201
+    .line 205
     iput-object p5, p0, Ljp/co/sony/mc/camera/CameraActivity$AutoPowerOffType;->mAction:Ljp/co/sony/mc/camera/research/parameters/Event$AutoPowerOffAction;
 
     return-void
@@ -157,7 +157,7 @@
 .method public static valueOf(Ljava/lang/String;)Ljp/co/sony/mc/camera/CameraActivity$AutoPowerOffType;
     .locals 1
 
-    .line 189
+    .line 193
     const-class v0, Ljp/co/sony/mc/camera/CameraActivity$AutoPowerOffType;
 
     invoke-static {v0, p0}, Ljava/lang/Enum;->valueOf(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
@@ -172,7 +172,7 @@
 .method public static values()[Ljp/co/sony/mc/camera/CameraActivity$AutoPowerOffType;
     .locals 1
 
-    .line 189
+    .line 193
     sget-object v0, Ljp/co/sony/mc/camera/CameraActivity$AutoPowerOffType;->$VALUES:[Ljp/co/sony/mc/camera/CameraActivity$AutoPowerOffType;
 
     invoke-virtual {v0}, [Ljp/co/sony/mc/camera/CameraActivity$AutoPowerOffType;->clone()Ljava/lang/Object;
@@ -189,7 +189,7 @@
 .method public getAction()Ljp/co/sony/mc/camera/research/parameters/Event$AutoPowerOffAction;
     .locals 0
 
-    .line 213
+    .line 217
     iget-object p0, p0, Ljp/co/sony/mc/camera/CameraActivity$AutoPowerOffType;->mAction:Ljp/co/sony/mc/camera/research/parameters/Event$AutoPowerOffAction;
 
     return-object p0
@@ -198,7 +198,7 @@
 .method public getDuration()I
     .locals 0
 
-    .line 205
+    .line 209
     iget p0, p0, Ljp/co/sony/mc/camera/CameraActivity$AutoPowerOffType;->mDuration:I
 
     return p0
@@ -207,7 +207,7 @@
 .method public getReason()Ljava/lang/String;
     .locals 0
 
-    .line 209
+    .line 213
     iget-object p0, p0, Ljp/co/sony/mc/camera/CameraActivity$AutoPowerOffType;->mReason:Ljava/lang/String;
 
     return-object p0

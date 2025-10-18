@@ -25,7 +25,7 @@
 .method constructor <init>(Ljp/co/sony/mc/camera/view/FragmentController$16;)V
     .locals 0
 
-    .line 3133
+    .line 3276
     iput-object p1, p0, Ljp/co/sony/mc/camera/view/FragmentController$16$1;->this$1:Ljp/co/sony/mc/camera/view/FragmentController$16;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -38,7 +38,7 @@
 .method public run()V
     .locals 2
 
-    .line 3136
+    .line 3279
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/FragmentController$16$1;->this$1:Ljp/co/sony/mc/camera/view/FragmentController$16;
 
     iget-object v0, v0, Ljp/co/sony/mc/camera/view/FragmentController$16;->this$0:Ljp/co/sony/mc/camera/view/FragmentController;
@@ -51,7 +51,7 @@
 
     invoke-virtual {v0}, Ljp/co/sony/mc/camera/view/fragment/BasicModeMainFragment;->updateFacebookLoginStatus()V
 
-    .line 3137
+    .line 3280
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/FragmentController$16$1;->this$1:Ljp/co/sony/mc/camera/view/FragmentController$16;
 
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/FragmentController$16;->this$0:Ljp/co/sony/mc/camera/view/FragmentController;

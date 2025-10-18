@@ -16,8 +16,8 @@
 .annotation runtime Lkotlin/Metadata;
     k = 0x3
     mv = {
-        0x1,
-        0x9,
+        0x2,
+        0x0,
         0x0
     }
     xi = 0x30
@@ -44,6 +44,12 @@
 .end method
 
 .method public static onAutoFlashChanged(Ljp/co/sony/mc/camera/view/CameraEventListener;Z)V
+    .locals 0
+
+    return-void
+.end method
+
+.method public static onAutoFramingObjectTrackResultChanged(Ljp/co/sony/mc/camera/view/CameraEventListener;Z)V
     .locals 0
 
     return-void
@@ -138,7 +144,7 @@
 
     invoke-static {p2, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 63
+    .line 64
     invoke-interface {p0, p1}, Ljp/co/sony/mc/camera/view/CameraEventListener;->onCameraSettingsChanged(Ljp/co/sony/mc/camera/setting/CameraSettingsHolder;)V
 
     return-void
@@ -151,6 +157,12 @@
 .end method
 
 .method public static onCaptureInRecording(Ljp/co/sony/mc/camera/view/CameraEventListener;)V
+    .locals 0
+
+    return-void
+.end method
+
+.method public static onChangeToCoolMode(Ljp/co/sony/mc/camera/view/CameraEventListener;)V
     .locals 0
 
     return-void
@@ -182,6 +194,16 @@
 
 .method public static onExposureStarted(Ljp/co/sony/mc/camera/view/CameraEventListener;IIZZ)V
     .locals 0
+
+    return-void
+.end method
+
+.method public static onFaceSelected(Ljp/co/sony/mc/camera/view/CameraEventListener;Landroid/graphics/Point;)V
+    .locals 0
+
+    const-string p0, "activeArrayPoint"
+
+    invoke-static {p1, p0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
     return-void
 .end method
@@ -236,6 +258,16 @@
 
 .method public static onFocusMagnifierPreparing(Ljp/co/sony/mc/camera/view/CameraEventListener;Z)V
     .locals 0
+
+    return-void
+.end method
+
+.method public static onFramingAssistCroppedPositionChanged(Ljp/co/sony/mc/camera/view/CameraEventListener;Ljp/co/sony/mc/camera/device/CaptureResultNotifier$FramingAssistCroppedPosition;)V
+    .locals 0
+
+    const-string p0, "position"
+
+    invoke-static {p1, p0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
     return-void
 .end method
@@ -302,6 +334,12 @@
     return-void
 .end method
 
+.method public static onMoreModeSelectorOpened(Ljp/co/sony/mc/camera/view/CameraEventListener;Z)V
+    .locals 0
+
+    return-void
+.end method
+
 .method public static onObjectTrackingStateChanged(Ljp/co/sony/mc/camera/view/CameraEventListener;Z)V
     .locals 0
 
@@ -354,12 +392,6 @@
     const-string p0, "rtmpStreamUrl"
 
     invoke-static {p1, p0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    return-void
-.end method
-
-.method public static onSelectedFaceChanged(Ljp/co/sony/mc/camera/view/CameraEventListener;Z)V
-    .locals 0
 
     return-void
 .end method

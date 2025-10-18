@@ -22,10 +22,10 @@
 .method constructor <init>(Ljava/lang/String;)V
     .locals 0
 
-    .line 513
+    .line 514
     invoke-direct {p0}, Lorg/apache/http/client/methods/HttpEntityEnclosingRequestBase;-><init>()V
 
-    .line 514
+    .line 515
     iput-object p1, p0, Lorg/apache/http/client/methods/RequestBuilder$InternalEntityEclosingRequest;->method:Ljava/lang/String;
 
     return-void
@@ -36,7 +36,7 @@
 .method public getMethod()Ljava/lang/String;
     .locals 0
 
-    .line 519
+    .line 520
     iget-object p0, p0, Lorg/apache/http/client/methods/RequestBuilder$InternalEntityEclosingRequest;->method:Ljava/lang/String;
 
     return-object p0

@@ -31,8 +31,8 @@
     }
     k = 0x1
     mv = {
-        0x1,
-        0x9,
+        0x2,
+        0x0,
         0x0
     }
     xi = 0x30
@@ -49,7 +49,7 @@
 
     iput-object p1, p0, Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter$enableSeekBarDrag$1;->this$0:Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter;
 
-    .line 437
+    .line 459
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -60,7 +60,7 @@
 .method public onTouchEvent(Landroid/view/MotionEvent;)Z
     .locals 0
 
-    .line 439
+    .line 461
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter$enableSeekBarDrag$1;->this$0:Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter;
 
     invoke-static {p0}, Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter;->access$getBinding$p(Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter;)Ljp/co/sony/mc/camera/databinding/ViewLensSliderBinding;

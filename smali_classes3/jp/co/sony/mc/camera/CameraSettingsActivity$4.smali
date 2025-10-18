@@ -25,7 +25,7 @@
 .method constructor <init>(Ljp/co/sony/mc/camera/CameraSettingsActivity;)V
     .locals 0
 
-    .line 587
+    .line 589
     iput-object p1, p0, Ljp/co/sony/mc/camera/CameraSettingsActivity$4;->this$0:Ljp/co/sony/mc/camera/CameraSettingsActivity;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -38,7 +38,7 @@
 .method public run()V
     .locals 0
 
-    .line 590
+    .line 592
     iget-object p0, p0, Ljp/co/sony/mc/camera/CameraSettingsActivity$4;->this$0:Ljp/co/sony/mc/camera/CameraSettingsActivity;
 
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/CameraSettingsActivity;->updateSetting()V

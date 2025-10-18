@@ -21,7 +21,7 @@
 .method constructor <init>()V
     .locals 0
 
-    .line 1605
+    .line 1611
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -42,10 +42,8 @@
         }
     .end annotation
 
-    .line 1609
-    invoke-static {}, Ljp/co/sony/mc/camera/configuration/parameters/StreamingNotesOnUse;->getDefaultValue()Ljp/co/sony/mc/camera/configuration/parameters/StreamingNotesOnUse;
-
-    move-result-object p0
+    .line 1615
+    sget-object p0, Ljp/co/sony/mc/camera/configuration/parameters/Accessibility;->DUMMY_OFF:Ljp/co/sony/mc/camera/configuration/parameters/Accessibility;
 
     return-object p0
 .end method

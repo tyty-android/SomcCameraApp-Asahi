@@ -5,7 +5,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/SourceDebugExtension;
-    value = "SMAP\nModifierLocalModifierNode.kt\nKotlin\n*S Kotlin\n*F\n+ 1 ModifierLocalModifierNode.kt\nandroidx/compose/ui/modifier/ModifierLocalModifierNodeKt\n+ 2 fake.kt\nkotlin/jvm/internal/FakeKt\n+ 3 _Arrays.kt\nkotlin/collections/ArraysKt___ArraysKt\n+ 4 ArraysJVM.kt\nkotlin/collections/ArraysKt__ArraysJVMKt\n*L\n1#1,208:1\n1#2:209\n11335#3:210\n11670#3,3:211\n37#4,2:214\n*S KotlinDebug\n*F\n+ 1 ModifierLocalModifierNode.kt\nandroidx/compose/ui/modifier/ModifierLocalModifierNodeKt\n*L\n198#1:210\n198#1:211,3\n198#1:214,2\n*E\n"
+    value = "SMAP\nModifierLocalModifierNode.kt\nKotlin\n*S Kotlin\n*F\n+ 1 ModifierLocalModifierNode.kt\nandroidx/compose/ui/modifier/ModifierLocalModifierNodeKt\n+ 2 fake.kt\nkotlin/jvm/internal/FakeKt\n+ 3 _Arrays.kt\nkotlin/collections/ArraysKt___ArraysKt\n+ 4 ArraysJVM.kt\nkotlin/collections/ArraysKt__ArraysJVMKt\n*L\n1#1,209:1\n1#2:210\n11335#3:211\n11670#3,3:212\n37#4,2:215\n*S KotlinDebug\n*F\n+ 1 ModifierLocalModifierNode.kt\nandroidx/compose/ui/modifier/ModifierLocalModifierNodeKt\n*L\n199#1:211\n199#1:212,3\n199#1:215,2\n*E\n"
 .end annotation
 
 .annotation runtime Lkotlin/Metadata;
@@ -42,7 +42,7 @@
 .method public static final modifierLocalMapOf()Landroidx/compose/ui/modifier/ModifierLocalMap;
     .locals 1
 
-    .line 176
+    .line 177
     sget-object v0, Landroidx/compose/ui/modifier/EmptyMap;->INSTANCE:Landroidx/compose/ui/modifier/EmptyMap;
 
     check-cast v0, Landroidx/compose/ui/modifier/ModifierLocalMap;
@@ -63,11 +63,7 @@
         }
     .end annotation
 
-    const-string v0, "key"
-
-    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 183
+    .line 184
     new-instance v0, Landroidx/compose/ui/modifier/SingleLocalMap;
 
     invoke-direct {v0, p0}, Landroidx/compose/ui/modifier/SingleLocalMap;-><init>(Landroidx/compose/ui/modifier/ModifierLocal;)V
@@ -92,11 +88,7 @@
         }
     .end annotation
 
-    const-string v0, "entry"
-
-    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 191
+    .line 192
     new-instance v0, Landroidx/compose/ui/modifier/SingleLocalMap;
 
     invoke-virtual {p0}, Lkotlin/Pair;->getFirst()Ljava/lang/Object;
@@ -135,11 +127,7 @@
         }
     .end annotation
 
-    const-string v0, "keys"
-
-    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 210
+    .line 211
     new-instance v0, Ljava/util/ArrayList;
 
     array-length v1, p0
@@ -148,7 +136,7 @@
 
     check-cast v0, Ljava/util/Collection;
 
-    .line 211
+    .line 212
     array-length v1, p0
 
     const/4 v2, 0x0
@@ -162,33 +150,33 @@
 
     const/4 v5, 0x0
 
-    .line 198
+    .line 199
     invoke-static {v4, v5}, Lkotlin/TuplesKt;->to(Ljava/lang/Object;Ljava/lang/Object;)Lkotlin/Pair;
 
     move-result-object v4
 
-    .line 212
+    .line 213
     invoke-interface {v0, v4}, Ljava/util/Collection;->add(Ljava/lang/Object;)Z
 
     add-int/lit8 v3, v3, 0x1
 
     goto :goto_0
 
-    .line 213
+    .line 214
     :cond_0
     check-cast v0, Ljava/util/List;
 
-    .line 210
+    .line 211
     check-cast v0, Ljava/util/Collection;
 
-    .line 215
+    .line 216
     new-array p0, v2, [Lkotlin/Pair;
 
     invoke-interface {v0, p0}, Ljava/util/Collection;->toArray([Ljava/lang/Object;)[Ljava/lang/Object;
 
     move-result-object p0
 
-    .line 198
+    .line 199
     check-cast p0, [Lkotlin/Pair;
 
     array-length v0, p0
@@ -223,11 +211,7 @@
         }
     .end annotation
 
-    const-string v0, "entries"
-
-    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 207
+    .line 208
     new-instance v0, Landroidx/compose/ui/modifier/MultiLocalMap;
 
     array-length v1, p0

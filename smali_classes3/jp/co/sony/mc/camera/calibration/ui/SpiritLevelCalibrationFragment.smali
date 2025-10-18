@@ -2189,7 +2189,7 @@
     .line 457
     invoke-super {p0, p1, p2}, Landroidx/fragment/app/Fragment;->onViewCreated(Landroid/view/View;Landroid/os/Bundle;)V
 
-    const p2, 0x7f0904b4
+    const p2, 0x7f0904a2
 
     .line 458
     invoke-virtual {p1, p2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
@@ -2200,7 +2200,7 @@
 
     iput-object p2, p0, Ljp/co/sony/mc/camera/calibration/ui/SpiritLevelCalibrationFragment;->mTextureView:Ljp/co/sony/mc/camera/calibration/ui/AutoFitTextureView;
 
-    const p2, 0x7f0900dc
+    const p2, 0x7f0900da
 
     .line 459
     invoke-virtual {p1, p2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
@@ -2211,7 +2211,7 @@
 
     iput-object p2, p0, Ljp/co/sony/mc/camera/calibration/ui/SpiritLevelCalibrationFragment;->mLayoutMain:Landroidx/constraintlayout/widget/ConstraintLayout;
 
-    const p2, 0x7f0900db
+    const p2, 0x7f0900d9
 
     .line 460
     invoke-virtual {p1, p2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
@@ -2227,7 +2227,7 @@
 
     invoke-virtual {p2, v0}, Landroid/widget/TextView;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
-    const p2, 0x7f0903c4
+    const p2, 0x7f0903c3
 
     .line 462
     invoke-virtual {p1, p2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
@@ -2243,7 +2243,7 @@
 
     invoke-virtual {p2, v0}, Landroid/widget/TextView;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
-    const p2, 0x7f0900a2
+    const p2, 0x7f0900a3
 
     .line 464
     invoke-virtual {p1, p2}, Landroid/view/View;->findViewById(I)Landroid/view/View;

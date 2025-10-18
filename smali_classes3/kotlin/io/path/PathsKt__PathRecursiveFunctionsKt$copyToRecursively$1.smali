@@ -73,7 +73,7 @@
 .method public bridge synthetic invoke(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
 
-    .line 67
+    .line 76
     check-cast p1, Ljava/nio/file/Path;
 
     check-cast p2, Ljava/nio/file/Path;
@@ -102,6 +102,6 @@
 
     invoke-static {p3, p0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 67
+    .line 76
     throw p3
 .end method

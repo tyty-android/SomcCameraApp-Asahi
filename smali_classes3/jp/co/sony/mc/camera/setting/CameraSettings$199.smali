@@ -21,7 +21,7 @@
 .method constructor <init>()V
     .locals 0
 
-    .line 2207
+    .line 2262
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -42,8 +42,8 @@
         }
     .end annotation
 
-    .line 2211
-    invoke-static {}, Ljp/co/sony/mc/camera/configuration/parameters/BasicModeShutterSpeedDisplay;->getOptions()[Ljp/co/sony/mc/camera/configuration/parameters/BasicModeShutterSpeedDisplay;
+    .line 2266
+    invoke-static {}, Ljp/co/sony/mc/camera/configuration/parameters/SemiAutoMode;->getOptions()[Ljp/co/sony/mc/camera/configuration/parameters/SemiAutoMode;
 
     move-result-object p0
 

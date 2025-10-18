@@ -20,7 +20,7 @@
 
     const/4 v0, 0x0
 
-    .line 1089
+    .line 1101
     invoke-direct {p0, v0}, Lcom/google/android/material/navigation/NavigationBarItemView$ActiveIndicatorTransform;-><init>(Lcom/google/android/material/navigation/NavigationBarItemView$1;)V
 
     return-void
@@ -29,7 +29,7 @@
 .method synthetic constructor <init>(Lcom/google/android/material/navigation/NavigationBarItemView$1;)V
     .locals 0
 
-    .line 1089
+    .line 1101
     invoke-direct {p0}, Lcom/google/android/material/navigation/NavigationBarItemView$ActiveIndicatorUnlabeledTransform;-><init>()V
 
     return-void
@@ -40,7 +40,7 @@
 .method protected calculateScaleY(FF)F
     .locals 0
 
-    .line 1093
+    .line 1105
     invoke-virtual {p0, p1, p2}, Lcom/google/android/material/navigation/NavigationBarItemView$ActiveIndicatorUnlabeledTransform;->calculateScaleX(FF)F
 
     move-result p0

@@ -30,18 +30,22 @@
 
 # virtual methods
 .method public onDismiss(Landroid/content/DialogInterface;)V
-    .locals 0
+    .locals 1
 
     .line 240
     sget-boolean p0, Ljp/co/sony/mc/camera/util/CamLog;->DEBUG:Z
 
     if-eqz p0, :cond_0
 
-    const-string p0, "OnDismissListener onDismiss()"
+    const/4 p0, 0x1
 
-    filled-new-array {p0}, [Ljava/lang/String;
+    new-array p0, p0, [Ljava/lang/String;
 
-    move-result-object p0
+    const/4 p1, 0x0
+
+    const-string v0, "OnDismissListener onDismiss()"
+
+    aput-object v0, p0, p1
 
     invoke-static {p0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 

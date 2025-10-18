@@ -13,152 +13,161 @@
 
 .annotation runtime Lkotlin/Metadata;
     d1 = {
-        "\u0000\u008c\u0001\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0010\u000b\n\u0002\u0008\u0004\n\u0002\u0010\u0007\n\u0002\u0008\u0006\n\u0002\u0010\u0008\n\u0002\u0008\u000c\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010 \n\u0002\u0010\u000e\n\u0002\u0008\u0019\n\u0002\u0018\u0002\n\u0002\u0008\u0006\n\u0002\u0018\u0002\n\u0002\u0008\u001a\n\u0002\u0018\u0002\n\u0002\u0008\u0003\n\u0002\u0010\t\n\u0002\u0008\u0004\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0007\n\u0002\u0010\u0015\n\u0002\u0008\u000f\u0008f\u0018\u00002\u00020\u0001:\u0002\u0088\u0001J\u0018\u0010\u0002\u001a\u00020\u00032\u0006\u0010\u0004\u001a\u00020\u00052\u0006\u0010\u0006\u001a\u00020\u0005H\u0016J\u0008\u0010\u0007\u001a\u00020\u0003H\u0016J\u0010\u0010\u0008\u001a\u00020\u00032\u0006\u0010\t\u001a\u00020\nH\u0016J\u0010\u0010\u000b\u001a\u00020\u00032\u0006\u0010\u000c\u001a\u00020\u0005H\u0016J\u0010\u0010\r\u001a\u00020\u00032\u0006\u0010\u000e\u001a\u00020\u0005H\u0016J\u0018\u0010\u000f\u001a\u00020\u00032\u0006\u0010\u0010\u001a\u00020\u00112\u0006\u0010\u0012\u001a\u00020\u0005H\u0016J\u0010\u0010\u0013\u001a\u00020\u00032\u0006\u0010\u0014\u001a\u00020\u0011H\u0016J\u0010\u0010\u0015\u001a\u00020\u00032\u0006\u0010\u0014\u001a\u00020\u0011H\u0016J\u0010\u0010\u0016\u001a\u00020\u00032\u0006\u0010\u0014\u001a\u00020\u0011H\u0016J\u0010\u0010\u0017\u001a\u00020\u00032\u0006\u0010\u0018\u001a\u00020\u0011H\u0016J\u0018\u0010\u0019\u001a\u00020\u00032\u0006\u0010\u0014\u001a\u00020\u00112\u0006\u0010\u001a\u001a\u00020\u0011H\u0016J\u0010\u0010\u001b\u001a\u00020\u00032\u0006\u0010\u0014\u001a\u00020\u0011H\u0016J\u0010\u0010\u001c\u001a\u00020\u00032\u0006\u0010\u001d\u001a\u00020\u001eH\u0016J\u0010\u0010\u001f\u001a\u00020\u00032\u0006\u0010 \u001a\u00020!H\u0016J\u001e\u0010\u001f\u001a\u00020\u00032\u0006\u0010 \u001a\u00020!2\u000c\u0010\"\u001a\u0008\u0012\u0004\u0012\u00020$0#H\u0016J\u0008\u0010%\u001a\u00020\u0003H\u0016J\u0008\u0010&\u001a\u00020\u0003H\u0016J\u0008\u0010\'\u001a\u00020\u0003H\u0016J\u0008\u0010(\u001a\u00020\u0003H\u0016J\u0010\u0010)\u001a\u00020\u00032\u0006\u0010*\u001a\u00020\u0005H\u0016J\u0010\u0010+\u001a\u00020\u00032\u0006\u0010\u0014\u001a\u00020\u0011H\u0016J(\u0010,\u001a\u00020\u00032\u0006\u0010\u0014\u001a\u00020\u00112\u0006\u0010-\u001a\u00020\u00112\u0006\u0010.\u001a\u00020\u00052\u0006\u0010/\u001a\u00020\u0005H\u0016J\u0010\u00100\u001a\u00020\u00032\u0006\u00101\u001a\u00020$H\u0016J\u0010\u00102\u001a\u00020\u00032\u0006\u00103\u001a\u00020$H\u0016J\u0010\u00104\u001a\u00020\u00032\u0006\u00105\u001a\u00020\u0005H\u0016J\u0018\u00106\u001a\u00020\u00032\u0006\u00107\u001a\u00020\u00052\u0006\u00108\u001a\u00020\u0005H\u0016J\u0018\u00109\u001a\u00020\u00032\u0006\u0010:\u001a\u00020\u00052\u0006\u0010;\u001a\u00020\u0005H\u0016J\u0010\u0010<\u001a\u00020\u00032\u0006\u0010=\u001a\u00020>H\u0016J\u0010\u0010?\u001a\u00020\u00032\u0006\u0010@\u001a\u00020\u0005H\u0016J\u0010\u0010A\u001a\u00020\u00032\u0006\u0010B\u001a\u00020\u0005H\u0016J\u0010\u0010C\u001a\u00020\u00032\u0006\u0010D\u001a\u00020EH\u0016J\u0010\u0010F\u001a\u00020\u00032\u0006\u0010D\u001a\u00020EH\u0016J\u0010\u0010G\u001a\u00020\u00032\u0006\u00105\u001a\u00020\u0005H\u0016J\u0008\u0010H\u001a\u00020\u0003H\u0016J\u0010\u0010I\u001a\u00020\u00032\u0006\u0010J\u001a\u00020\u0005H\u0016J\u0008\u0010K\u001a\u00020\u0003H\u0016J\u0008\u0010L\u001a\u00020\u0003H\u0016J\u0010\u0010M\u001a\u00020\u00032\u0006\u00105\u001a\u00020\u0005H\u0016J\u0010\u0010N\u001a\u00020\u00032\u0006\u0010O\u001a\u00020\u0005H\u0016J\u0010\u0010P\u001a\u00020\u00032\u0006\u0010\u0014\u001a\u00020\u0011H\u0016J\u0010\u0010Q\u001a\u00020\u00032\u0006\u0010\u0014\u001a\u00020\u0011H\u0016J\u0010\u0010R\u001a\u00020\u00032\u0006\u0010\u0014\u001a\u00020\u0011H\u0016J\u0010\u0010S\u001a\u00020\u00032\u0006\u0010T\u001a\u00020\u0011H\u0016J\u0010\u0010U\u001a\u00020\u00032\u0006\u0010V\u001a\u00020\u0005H\u0016J\u0010\u0010W\u001a\u00020\u00032\u0006\u0010X\u001a\u00020$H\u0016J\u0010\u0010Y\u001a\u00020\u00032\u0006\u0010Z\u001a\u00020$H\u0016J\u0010\u0010[\u001a\u00020\u00032\u0006\u0010\\\u001a\u00020\u0005H\u0016J\u0010\u0010]\u001a\u00020\u00032\u0006\u0010\u0014\u001a\u00020\u0011H\u0016J\u001a\u0010^\u001a\u00020\u00032\u0006\u0010\u0014\u001a\u00020\u00112\u0008\u0010_\u001a\u0004\u0018\u00010`H\u0016J\u0010\u0010a\u001a\u00020\u00032\u0006\u0010\u0014\u001a\u00020\u0011H\u0016J \u0010b\u001a\u00020\u00032\u0006\u0010c\u001a\u00020d2\u0006\u0010e\u001a\u00020\u00112\u0006\u0010f\u001a\u00020\u0011H\u0016J\u0018\u0010g\u001a\u00020\u00032\u0006\u0010h\u001a\u00020i2\u0006\u0010\u001d\u001a\u00020jH\u0016J\u0010\u0010k\u001a\u00020\u00032\u0006\u0010\u0014\u001a\u00020\u0011H\u0016J\u0018\u0010l\u001a\u00020\u00032\u0006\u0010\u0014\u001a\u00020\u00112\u0006\u0010=\u001a\u00020mH\u0016J\u0010\u0010n\u001a\u00020\u00032\u0006\u0010o\u001a\u00020pH\u0016J\u0010\u0010q\u001a\u00020\u00032\u0006\u0010\u0010\u001a\u00020rH\u0016J\u0008\u0010s\u001a\u00020\u0003H\u0016J\u0008\u0010t\u001a\u00020\u0003H\u0016J\u0010\u0010u\u001a\u00020\u00032\u0006\u0010v\u001a\u00020\u0005H\u0016J\u0010\u0010w\u001a\u00020\u00032\u0006\u0010\u0014\u001a\u00020\u0011H\u0016J=\u0010x\u001a\u00020\u00032\u0006\u0010=\u001a\u00020\u00112\u0008\u0010y\u001a\u0004\u0018\u00010z2\u0008\u0010{\u001a\u0004\u0018\u00010\n2\u0008\u0010|\u001a\u0004\u0018\u00010\n2\u0008\u0010}\u001a\u0004\u0018\u00010$H\u0016\u00a2\u0006\u0002\u0010~J\u0008\u0010\u007f\u001a\u00020\u0003H\u0016J\u0012\u0010\u0080\u0001\u001a\u00020\u00032\u0007\u0010\u0081\u0001\u001a\u00020$H\u0016J\u0012\u0010\u0082\u0001\u001a\u00020\u00032\u0007\u0010\u0083\u0001\u001a\u00020$H\u0016J\u0012\u0010\u0084\u0001\u001a\u00020\u00032\u0007\u0010\u0085\u0001\u001a\u00020$H\u0016J\u0012\u0010\u0086\u0001\u001a\u00020\u00032\u0007\u0010\u0087\u0001\u001a\u00020\u0005H\u0016\u00a8\u0006\u0089\u0001"
+        "\u0000\u009a\u0001\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0010\u000b\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010 \n\u0002\u0010\u000e\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0004\n\u0002\u0010\u0008\n\u0000\n\u0002\u0010\u0015\n\u0000\n\u0002\u0010\u0007\n\u0002\u0008\u0011\n\u0002\u0018\u0002\n\u0002\u0008\u000f\n\u0002\u0018\u0002\n\u0002\u0008\u0007\n\u0002\u0018\u0002\n\u0002\u0008\u0005\n\u0002\u0010\t\n\u0002\u0008\'\n\u0002\u0018\u0002\n\u0002\u0008\u0004\n\u0002\u0018\u0002\n\u0002\u0008\n\n\u0002\u0018\u0002\n\u0002\u0008\u0007\n\u0002\u0018\u0002\n\u0002\u0008\u0004\u0008f\u0018\u00002\u00020\u0001:\u0002\u0091\u0001J\u0010\u0010\u0002\u001a\u00020\u00032\u0006\u0010\u0004\u001a\u00020\u0005H\u0016J\u0010\u0010\u0006\u001a\u00020\u00032\u0006\u0010\u0007\u001a\u00020\u0008H\u0016J\u0010\u0010\t\u001a\u00020\u00032\u0006\u0010\n\u001a\u00020\u000bH\u0016J\u001e\u0010\t\u001a\u00020\u00032\u0006\u0010\n\u001a\u00020\u000b2\u000c\u0010\u000c\u001a\u0008\u0012\u0004\u0012\u00020\u000e0\rH\u0016J\u0018\u0010\u000f\u001a\u00020\u00032\u0006\u0010\u0010\u001a\u00020\u00112\u0006\u0010\u0004\u001a\u00020\u0012H\u0016J\u0010\u0010\u0013\u001a\u00020\u00032\u0006\u0010\u0014\u001a\u00020\u0015H\u0016J\u0008\u0010\u0016\u001a\u00020\u0003H\u0016J\u0008\u0010\u0017\u001a\u00020\u0003H\u0016J=\u0010\u0018\u001a\u00020\u00032\u0006\u0010\u0019\u001a\u00020\u001a2\u0008\u0010\u001b\u001a\u0004\u0018\u00010\u001c2\u0008\u0010\u001d\u001a\u0004\u0018\u00010\u001e2\u0008\u0010\u001f\u001a\u0004\u0018\u00010\u001e2\u0008\u0010 \u001a\u0004\u0018\u00010\u000eH\u0016\u00a2\u0006\u0002\u0010!J\u0018\u0010\"\u001a\u00020\u00032\u0006\u0010\u0014\u001a\u00020\u001a2\u0006\u0010#\u001a\u00020\u0008H\u0016J\u0010\u0010$\u001a\u00020\u00032\u0006\u0010%\u001a\u00020\u0008H\u0016J\u0010\u0010&\u001a\u00020\u00032\u0006\u0010\'\u001a\u00020\u0008H\u0016J\u0010\u0010(\u001a\u00020\u00032\u0006\u0010)\u001a\u00020\u001aH\u0016J\u0010\u0010*\u001a\u00020\u00032\u0006\u0010)\u001a\u00020\u001aH\u0016J\u0010\u0010+\u001a\u00020\u00032\u0006\u0010)\u001a\u00020\u001aH\u0016J\u0010\u0010,\u001a\u00020\u00032\u0006\u0010)\u001a\u00020\u001aH\u0016J\u0010\u0010-\u001a\u00020\u00032\u0006\u0010)\u001a\u00020\u001aH\u0016J\u001a\u0010.\u001a\u00020\u00032\u0006\u0010)\u001a\u00020\u001a2\u0008\u0010/\u001a\u0004\u0018\u000100H\u0016J\u0010\u00101\u001a\u00020\u00032\u0006\u0010)\u001a\u00020\u001aH\u0016J\u0010\u00102\u001a\u00020\u00032\u0006\u0010)\u001a\u00020\u001aH\u0016J\u0018\u00103\u001a\u00020\u00032\u0006\u0010)\u001a\u00020\u001a2\u0006\u00104\u001a\u00020\u001aH\u0016J(\u00105\u001a\u00020\u00032\u0006\u0010)\u001a\u00020\u001a2\u0006\u00106\u001a\u00020\u001a2\u0006\u00107\u001a\u00020\u00082\u0006\u00108\u001a\u00020\u0008H\u0016J\u0010\u00109\u001a\u00020\u00032\u0006\u0010)\u001a\u00020\u001aH\u0016J\u0010\u0010:\u001a\u00020\u00032\u0006\u0010)\u001a\u00020\u001aH\u0016J\u0010\u0010;\u001a\u00020\u00032\u0006\u0010)\u001a\u00020\u001aH\u0016J\u0010\u0010<\u001a\u00020\u00032\u0006\u0010=\u001a\u00020\u001aH\u0016J\u0010\u0010>\u001a\u00020\u00032\u0006\u0010?\u001a\u00020@H\u0016J\u0010\u0010A\u001a\u00020\u00032\u0006\u0010?\u001a\u00020@H\u0016J\u0008\u0010B\u001a\u00020\u0003H\u0016J\u0008\u0010C\u001a\u00020\u0003H\u0016J\u0010\u0010D\u001a\u00020\u00032\u0006\u0010)\u001a\u00020\u001aH\u0016J\u0010\u0010E\u001a\u00020\u00032\u0006\u0010F\u001a\u00020\u001aH\u0016J\u0018\u0010G\u001a\u00020\u00032\u0006\u0010)\u001a\u00020\u001a2\u0006\u0010\u0019\u001a\u00020HH\u0016J\u0010\u0010I\u001a\u00020\u00032\u0006\u0010)\u001a\u00020\u001aH\u0016J\u0010\u0010J\u001a\u00020\u00032\u0006\u0010K\u001a\u00020\u0008H\u0016J \u0010L\u001a\u00020\u00032\u0006\u0010M\u001a\u00020N2\u0006\u0010O\u001a\u00020\u001a2\u0006\u0010P\u001a\u00020\u001aH\u0016J\u0010\u0010Q\u001a\u00020\u00032\u0006\u0010R\u001a\u00020\u000eH\u0016J\u0010\u0010S\u001a\u00020\u00032\u0006\u0010T\u001a\u00020\u000eH\u0016J\u0010\u0010U\u001a\u00020\u00032\u0006\u0010V\u001a\u00020\u000eH\u0016J\u0010\u0010W\u001a\u00020\u00032\u0006\u0010X\u001a\u00020\u000eH\u0016J\u0010\u0010Y\u001a\u00020\u00032\u0006\u0010Z\u001a\u00020\u000eH\u0016J\u0008\u0010[\u001a\u00020\u0003H\u0016J\u0008\u0010\\\u001a\u00020\u0003H\u0016J\u0010\u0010]\u001a\u00020\u00032\u0006\u0010^\u001a\u00020\u0008H\u0016J\u0008\u0010_\u001a\u00020\u0003H\u0016J\u0010\u0010`\u001a\u00020\u00032\u0006\u0010a\u001a\u00020\u0008H\u0016J\u0010\u0010b\u001a\u00020\u00032\u0006\u0010a\u001a\u00020\u0008H\u0016J\u0008\u0010c\u001a\u00020\u0003H\u0016J\u0008\u0010d\u001a\u00020\u0003H\u0016J\u0018\u0010e\u001a\u00020\u00032\u0006\u0010f\u001a\u00020\u00082\u0006\u0010g\u001a\u00020\u0008H\u0016J\u0010\u0010h\u001a\u00020\u00032\u0006\u0010i\u001a\u00020\u001eH\u0016J\u0010\u0010j\u001a\u00020\u00032\u0006\u0010k\u001a\u00020\u0008H\u0016J\u0008\u0010l\u001a\u00020\u0003H\u0016J\u0008\u0010m\u001a\u00020\u0003H\u0016J\u0010\u0010n\u001a\u00020\u00032\u0006\u0010o\u001a\u00020\u0008H\u0016J\u0010\u0010p\u001a\u00020\u00032\u0006\u0010q\u001a\u00020\u0008H\u0016J\u0010\u0010r\u001a\u00020\u00032\u0006\u0010s\u001a\u00020\u0008H\u0016J\u0010\u0010t\u001a\u00020\u00032\u0006\u0010u\u001a\u00020vH\u0016J\u0008\u0010w\u001a\u00020\u0003H\u0016J\u0010\u0010x\u001a\u00020\u00032\u0006\u0010y\u001a\u00020\u0008H\u0016J\u0010\u0010z\u001a\u00020\u00032\u0006\u0010\u0019\u001a\u00020{H\u0016J\u0018\u0010|\u001a\u00020\u00032\u0006\u0010}\u001a\u00020\u00082\u0006\u0010~\u001a\u00020\u0008H\u0016J\u0010\u0010\u007f\u001a\u00020\u00032\u0006\u0010a\u001a\u00020\u0008H\u0016J\u0012\u0010\u0080\u0001\u001a\u00020\u00032\u0007\u0010\u0081\u0001\u001a\u00020\u000eH\u0016J\u0012\u0010\u0082\u0001\u001a\u00020\u00032\u0007\u0010\u0083\u0001\u001a\u00020\u000eH\u0016J\u0013\u0010\u0084\u0001\u001a\u00020\u00032\u0008\u0010\u0085\u0001\u001a\u00030\u0086\u0001H\u0016J\u001b\u0010\u0087\u0001\u001a\u00020\u00032\u0007\u0010\u0088\u0001\u001a\u00020\u00082\u0007\u0010\u0089\u0001\u001a\u00020\u0008H\u0016J\u0012\u0010\u008a\u0001\u001a\u00020\u00032\u0007\u0010\u008b\u0001\u001a\u00020\u0008H\u0016J\u0013\u0010\u008c\u0001\u001a\u00020\u00032\u0008\u0010\u008d\u0001\u001a\u00030\u008e\u0001H\u0016J\u0012\u0010\u008f\u0001\u001a\u00020\u00032\u0007\u0010\u0090\u0001\u001a\u00020\u0008H\u0016\u00a8\u0006\u0092\u0001"
     }
     d2 = {
         "Ljp/co/sony/mc/camera/view/CameraEventListener;",
         "",
-        "onAeAwbLockStateChanged",
-        "",
-        "aeLocked",
-        "",
-        "awbLocked",
-        "onAfOnStateChangedByRemocon",
-        "onApertureDetected",
-        "aperture",
-        "",
-        "onAutoFlashChanged",
-        "isFlashRequired",
-        "onAutoHdrChanged",
-        "isHdrRequired",
-        "onBokehResultChanged",
-        "status",
-        "",
-        "isQualityLow",
-        "onBurstCaptureDone",
-        "requestId",
-        "onBurstCaptureRejected",
-        "onBurstCaptureRequested",
-        "onBurstQueueingCountUpdated",
-        "queueingCount",
-        "onBurstShutterAction",
-        "burstCount",
-        "onBurstShutterDone",
         "onCameraEvent",
+        "",
         "state",
         "Ljp/co/sony/mc/camera/view/CameraEventListener$CameraEvent;",
+        "onZoomStateChanged",
+        "zooming",
+        "",
         "onCameraSettingsChanged",
         "holder",
         "Ljp/co/sony/mc/camera/setting/CameraSettingsHolder;",
         "changedKeyNames",
         "",
         "",
-        "onCameraSettingsReset",
-        "onCaptureInRecording",
-        "onDismissKeyguard",
-        "onDismissKeyguardCanceled",
-        "onEnduranceModeActivationChanged",
-        "activate",
-        "onExposureDone",
+        "onStorageStateChanged",
+        "type",
+        "Ljp/co/sony/mc/camera/storage/Storage$StorageType;",
+        "Ljp/co/sony/mc/camera/storage/Storage$StorageState;",
+        "onThermalStateChanged",
+        "status",
+        "Ljp/co/sony/mc/camera/SystemEventNotifier$ThermalStatus;",
+        "onChangeToCoolMode",
+        "onWbCustomStarted",
+        "onWbCustomFinished",
+        "result",
+        "",
+        "ratio",
+        "",
+        "temperature",
+        "",
+        "gm",
+        "whiteBalance",
+        "(I[ILjava/lang/Float;Ljava/lang/Float;Ljava/lang/String;)V",
+        "onBokehResultChanged",
+        "isQualityLow",
+        "onAutoFlashChanged",
+        "isFlashRequired",
+        "onAutoHdrChanged",
+        "isHdrRequired",
+        "onSnapshotRequested",
+        "requestId",
+        "onBurstCaptureRequested",
+        "onRecordRequested",
+        "onRecordFinished",
+        "onVideoSnapshotRequested",
+        "onSnapshotRequestDone",
+        "bitmap",
+        "Landroid/graphics/Bitmap;",
+        "onPrepareBurstDone",
+        "onShutterAction",
+        "onBurstShutterAction",
+        "burstCount",
         "onExposureStarted",
         "duration",
         "isSoundDivided",
         "isLongExposure",
-        "onFacebookAccountSettingChanged",
-        "facebookAccount",
-        "onFacebookLiveSelectSettingChanged",
-        "facebookLiveSelect",
-        "onFallbackModeChanging",
-        "isChanging",
-        "onFallbackStateChanged",
-        "fallbackable",
-        "fallbackEnabled",
-        "onFocusChangedByRemocon",
-        "isPlusKey",
-        "isKeyDown",
-        "onFocusMagnificationResultChanged",
-        "result",
-        "Ljp/co/sony/mc/camera/device/CaptureResultNotifier$FocusMagnificationResult;",
-        "onFocusMagnifierPreparing",
-        "isFocusMagnifierPreparing",
-        "onGoogleLensAvailableChanged",
-        "available",
-        "onHintTextHidden",
+        "onExposureDone",
+        "onBurstShutterDone",
+        "onBurstCaptureDone",
+        "onBurstQueueingCountUpdated",
+        "queueingCount",
+        "onHintTextShown",
         "content",
         "Ljp/co/sony/mc/camera/view/hint/HintTextContent;",
-        "onHintTextShown",
-        "onLensChange",
-        "onLensChangedByRemocon",
-        "onLowLightStateChanged",
-        "isActive",
-        "onMessageDialogHidden",
+        "onHintTextHidden",
         "onMessageDialogShown",
-        "onModeChange",
-        "onObjectTrackingStateChanged",
-        "isTracking",
-        "onPrepareBurstDone",
-        "onRecordFinished",
-        "onRecordRequested",
+        "onMessageDialogHidden",
+        "onBurstCaptureRejected",
         "onRecordingProgress",
         "durationMs",
-        "onRemoteControlStateChanged",
-        "isConnected",
-        "onRtmpStreamKeySettingChanged",
-        "rtmpStreamKey",
-        "onRtmpStreamUrlSettingChanged",
-        "rtmpStreamUrl",
-        "onSelectedFaceChanged",
-        "isSelectedFaceChanged",
-        "onShutterAction",
-        "onSnapshotRequestDone",
-        "bitmap",
-        "Landroid/graphics/Bitmap;",
-        "onSnapshotRequested",
+        "onStoreFinished",
+        "Ljp/co/sony/mc/camera/mediasaving/StoreDataResult;",
+        "onStoreError",
+        "onGoogleLensAvailableChanged",
+        "available",
         "onSsIsoEvDetected",
         "ss",
         "",
         "iso",
         "ev",
-        "onStorageStateChanged",
-        "type",
-        "Ljp/co/sony/mc/camera/storage/Storage$StorageType;",
-        "Ljp/co/sony/mc/camera/storage/Storage$StorageState;",
-        "onStoreError",
-        "onStoreFinished",
-        "Ljp/co/sony/mc/camera/mediasaving/StoreDataResult;",
-        "onSurfaceRequested",
-        "request",
-        "Ljp/co/sony/mc/camera/view/SurfaceRequest;",
-        "onThermalStateChanged",
-        "Ljp/co/sony/mc/camera/SystemEventNotifier$ThermalStatus;",
-        "onToggleCapturingMode",
-        "onToggleFacing",
-        "onTouchFocusVisibilityChanged",
-        "isVisible",
-        "onVideoSnapshotRequested",
-        "onWbCustomFinished",
-        "ratio",
-        "",
-        "temperature",
-        "gm",
-        "whiteBalance",
-        "(I[ILjava/lang/Float;Ljava/lang/Float;Ljava/lang/String;)V",
-        "onWbCustomStarted",
         "onYoutubeAccountSettingChanged",
         "youtubeAccount",
         "onYoutubeLiveEventSettingChanged",
         "youtubeLiveEvent",
         "onYoutubeLiveIdSettingChanged",
         "youtubeLiveId",
-        "onZoomStateChanged",
-        "zooming",
+        "onFacebookAccountSettingChanged",
+        "facebookAccount",
+        "onFacebookLiveSelectSettingChanged",
+        "facebookLiveSelect",
+        "onDismissKeyguard",
+        "onDismissKeyguardCanceled",
+        "onRemoteControlStateChanged",
+        "isConnected",
+        "onCaptureInRecording",
+        "onModeChange",
+        "isChanging",
+        "onLensChange",
+        "onLensChangedByRemocon",
+        "onAfOnStateChangedByRemocon",
+        "onFocusChangedByRemocon",
+        "isPlusKey",
+        "isKeyDown",
+        "onApertureDetected",
+        "aperture",
+        "onEnduranceModeActivationChanged",
+        "activate",
+        "onToggleFacing",
+        "onToggleCapturingMode",
+        "onLowLightStateChanged",
+        "isActive",
+        "onObjectTrackingStateChanged",
+        "isTracking",
+        "onTouchFocusVisibilityChanged",
+        "isVisible",
+        "onFaceSelected",
+        "activeArrayPoint",
+        "Landroid/graphics/Point;",
+        "onCameraSettingsReset",
+        "onFocusMagnifierPreparing",
+        "isFocusMagnifierPreparing",
+        "onFocusMagnificationResultChanged",
+        "Ljp/co/sony/mc/camera/device/CaptureResultNotifier$FocusMagnificationResult;",
+        "onFallbackStateChanged",
+        "fallbackable",
+        "fallbackEnabled",
+        "onFallbackModeChanging",
+        "onRtmpStreamUrlSettingChanged",
+        "rtmpStreamUrl",
+        "onRtmpStreamKeySettingChanged",
+        "rtmpStreamKey",
+        "onSurfaceRequested",
+        "request",
+        "Ljp/co/sony/mc/camera/view/SurfaceRequest;",
+        "onAeAwbLockStateChanged",
+        "aeLocked",
+        "awbLocked",
+        "onAutoFramingObjectTrackResultChanged",
+        "isLost",
+        "onFramingAssistCroppedPositionChanged",
+        "position",
+        "Ljp/co/sony/mc/camera/device/CaptureResultNotifier$FramingAssistCroppedPosition;",
+        "onMoreModeSelectorOpened",
+        "isOpened",
         "CameraEvent",
         "SomcCamera_release"
     }
     k = 0x1
     mv = {
-        0x1,
-        0x9,
+        0x2,
+        0x0,
         0x0
     }
     xi = 0x30
@@ -176,6 +185,9 @@
 .end method
 
 .method public abstract onAutoFlashChanged(Z)V
+.end method
+
+.method public abstract onAutoFramingObjectTrackResultChanged(Z)V
 .end method
 
 .method public abstract onAutoHdrChanged(Z)V
@@ -226,6 +238,9 @@
 .method public abstract onCaptureInRecording()V
 .end method
 
+.method public abstract onChangeToCoolMode()V
+.end method
+
 .method public abstract onDismissKeyguard()V
 .end method
 
@@ -239,6 +254,9 @@
 .end method
 
 .method public abstract onExposureStarted(IIZZ)V
+.end method
+
+.method public abstract onFaceSelected(Landroid/graphics/Point;)V
 .end method
 
 .method public abstract onFacebookAccountSettingChanged(Ljava/lang/String;)V
@@ -260,6 +278,9 @@
 .end method
 
 .method public abstract onFocusMagnifierPreparing(Z)V
+.end method
+
+.method public abstract onFramingAssistCroppedPositionChanged(Ljp/co/sony/mc/camera/device/CaptureResultNotifier$FramingAssistCroppedPosition;)V
 .end method
 
 .method public abstract onGoogleLensAvailableChanged(Z)V
@@ -289,6 +310,9 @@
 .method public abstract onModeChange(Z)V
 .end method
 
+.method public abstract onMoreModeSelectorOpened(Z)V
+.end method
+
 .method public abstract onObjectTrackingStateChanged(Z)V
 .end method
 
@@ -311,9 +335,6 @@
 .end method
 
 .method public abstract onRtmpStreamUrlSettingChanged(Ljava/lang/String;)V
-.end method
-
-.method public abstract onSelectedFaceChanged(Z)V
 .end method
 
 .method public abstract onShutterAction(I)V

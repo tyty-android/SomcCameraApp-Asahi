@@ -102,7 +102,7 @@
 .method public final invoke(I)Ljava/lang/Integer;
     .locals 5
 
-    .line 534
+    .line 520
     iget-object v0, p0, Landroidx/compose/animation/AnimatedContentTransitionScopeImpl$slideOutOfContainer$4;->this$0:Landroidx/compose/animation/AnimatedContentTransitionScopeImpl;
 
     invoke-virtual {v0}, Landroidx/compose/animation/AnimatedContentTransitionScopeImpl;->getTargetSizeMap$animation_release()Ljava/util/Map;
@@ -146,11 +146,11 @@
 
     move-result-wide v0
 
-    .line 535
+    .line 521
     :goto_0
     iget-object v2, p0, Landroidx/compose/animation/AnimatedContentTransitionScopeImpl$slideOutOfContainer$4;->$targetOffset:Lkotlin/jvm/functions/Function1;
 
-    .line 536
+    .line 522
     iget-object p0, p0, Landroidx/compose/animation/AnimatedContentTransitionScopeImpl$slideOutOfContainer$4;->this$0:Landroidx/compose/animation/AnimatedContentTransitionScopeImpl;
 
     invoke-static {p1, p1}, Landroidx/compose/ui/unit/IntSizeKt;->IntSize(II)J
@@ -177,7 +177,7 @@
 
     move-result-object p0
 
-    .line 535
+    .line 521
     invoke-interface {v2, p0}, Lkotlin/jvm/functions/Function1;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p0
@@ -190,7 +190,7 @@
 .method public bridge synthetic invoke(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
 
-    .line 533
+    .line 519
     check-cast p1, Ljava/lang/Number;
 
     invoke-virtual {p1}, Ljava/lang/Number;->intValue()I

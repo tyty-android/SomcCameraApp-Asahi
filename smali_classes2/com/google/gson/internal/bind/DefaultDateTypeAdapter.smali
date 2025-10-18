@@ -22,6 +22,8 @@
 
 
 # static fields
+.field public static final DEFAULT_STYLE_FACTORY:Lcom/google/gson/TypeAdapterFactory;
+
 .field private static final SIMPLE_NAME:Ljava/lang/String; = "DefaultDateTypeAdapter"
 
 
@@ -47,80 +49,16 @@
 
 
 # direct methods
-.method private constructor <init>(Lcom/google/gson/internal/bind/DefaultDateTypeAdapter$DateType;I)V
+.method static constructor <clinit>()V
     .locals 1
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(",
-            "Lcom/google/gson/internal/bind/DefaultDateTypeAdapter$DateType<",
-            "TT;>;I)V"
-        }
-    .end annotation
 
-    .line 102
-    invoke-direct {p0}, Lcom/google/gson/TypeAdapter;-><init>()V
+    .line 59
+    new-instance v0, Lcom/google/gson/internal/bind/DefaultDateTypeAdapter$1;
 
-    .line 92
-    new-instance v0, Ljava/util/ArrayList;
+    invoke-direct {v0}, Lcom/google/gson/internal/bind/DefaultDateTypeAdapter$1;-><init>()V
 
-    invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
+    sput-object v0, Lcom/google/gson/internal/bind/DefaultDateTypeAdapter;->DEFAULT_STYLE_FACTORY:Lcom/google/gson/TypeAdapterFactory;
 
-    iput-object v0, p0, Lcom/google/gson/internal/bind/DefaultDateTypeAdapter;->dateFormats:Ljava/util/List;
-
-    .line 103
-    invoke-static {p1}, Ljava/util/Objects;->requireNonNull(Ljava/lang/Object;)Ljava/lang/Object;
-
-    move-result-object p1
-
-    check-cast p1, Lcom/google/gson/internal/bind/DefaultDateTypeAdapter$DateType;
-
-    iput-object p1, p0, Lcom/google/gson/internal/bind/DefaultDateTypeAdapter;->dateType:Lcom/google/gson/internal/bind/DefaultDateTypeAdapter$DateType;
-
-    .line 104
-    sget-object p0, Ljava/util/Locale;->US:Ljava/util/Locale;
-
-    invoke-static {p2, p0}, Ljava/text/DateFormat;->getDateInstance(ILjava/util/Locale;)Ljava/text/DateFormat;
-
-    move-result-object p0
-
-    invoke-interface {v0, p0}, Ljava/util/List;->add(Ljava/lang/Object;)Z
-
-    .line 105
-    invoke-static {}, Ljava/util/Locale;->getDefault()Ljava/util/Locale;
-
-    move-result-object p0
-
-    sget-object p1, Ljava/util/Locale;->US:Ljava/util/Locale;
-
-    invoke-virtual {p0, p1}, Ljava/util/Locale;->equals(Ljava/lang/Object;)Z
-
-    move-result p0
-
-    if-nez p0, :cond_0
-
-    .line 106
-    invoke-static {p2}, Ljava/text/DateFormat;->getDateInstance(I)Ljava/text/DateFormat;
-
-    move-result-object p0
-
-    invoke-interface {v0, p0}, Ljava/util/List;->add(Ljava/lang/Object;)Z
-
-    .line 108
-    :cond_0
-    invoke-static {}, Lcom/google/gson/internal/JavaVersion;->isJava9OrLater()Z
-
-    move-result p0
-
-    if-eqz p0, :cond_1
-
-    .line 109
-    invoke-static {p2}, Lcom/google/gson/internal/PreJava9DateFormatProvider;->getUSDateFormat(I)Ljava/text/DateFormat;
-
-    move-result-object p0
-
-    invoke-interface {v0, p0}, Ljava/util/List;->add(Ljava/lang/Object;)Z
-
-    :cond_1
     return-void
 .end method
 
@@ -134,17 +72,17 @@
         }
     .end annotation
 
-    .line 113
+    .line 128
     invoke-direct {p0}, Lcom/google/gson/TypeAdapter;-><init>()V
 
-    .line 92
+    .line 118
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
     iput-object v0, p0, Lcom/google/gson/internal/bind/DefaultDateTypeAdapter;->dateFormats:Ljava/util/List;
 
-    .line 114
+    .line 129
     invoke-static {p1}, Ljava/util/Objects;->requireNonNull(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p1
@@ -153,7 +91,7 @@
 
     iput-object p1, p0, Lcom/google/gson/internal/bind/DefaultDateTypeAdapter;->dateType:Lcom/google/gson/internal/bind/DefaultDateTypeAdapter$DateType;
 
-    .line 115
+    .line 130
     sget-object p0, Ljava/util/Locale;->US:Ljava/util/Locale;
 
     invoke-static {p2, p3, p0}, Ljava/text/DateFormat;->getDateTimeInstance(IILjava/util/Locale;)Ljava/text/DateFormat;
@@ -162,7 +100,7 @@
 
     invoke-interface {v0, p0}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    .line 116
+    .line 131
     invoke-static {}, Ljava/util/Locale;->getDefault()Ljava/util/Locale;
 
     move-result-object p0
@@ -175,14 +113,14 @@
 
     if-nez p0, :cond_0
 
-    .line 117
+    .line 132
     invoke-static {p2, p3}, Ljava/text/DateFormat;->getDateTimeInstance(II)Ljava/text/DateFormat;
 
     move-result-object p0
 
     invoke-interface {v0, p0}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    .line 119
+    .line 134
     :cond_0
     invoke-static {}, Lcom/google/gson/internal/JavaVersion;->isJava9OrLater()Z
 
@@ -190,8 +128,8 @@
 
     if-eqz p0, :cond_1
 
-    .line 120
-    invoke-static {p2, p3}, Lcom/google/gson/internal/PreJava9DateFormatProvider;->getUSDateTimeFormat(II)Ljava/text/DateFormat;
+    .line 135
+    invoke-static {p2, p3}, Lcom/google/gson/internal/PreJava9DateFormatProvider;->getUsDateTimeFormat(II)Ljava/text/DateFormat;
 
     move-result-object p0
 
@@ -204,17 +142,8 @@
 .method synthetic constructor <init>(Lcom/google/gson/internal/bind/DefaultDateTypeAdapter$DateType;IILcom/google/gson/internal/bind/DefaultDateTypeAdapter$1;)V
     .locals 0
 
-    .line 47
+    .line 55
     invoke-direct {p0, p1, p2, p3}, Lcom/google/gson/internal/bind/DefaultDateTypeAdapter;-><init>(Lcom/google/gson/internal/bind/DefaultDateTypeAdapter$DateType;II)V
-
-    return-void
-.end method
-
-.method synthetic constructor <init>(Lcom/google/gson/internal/bind/DefaultDateTypeAdapter$DateType;ILcom/google/gson/internal/bind/DefaultDateTypeAdapter$1;)V
-    .locals 0
-
-    .line 47
-    invoke-direct {p0, p1, p2}, Lcom/google/gson/internal/bind/DefaultDateTypeAdapter;-><init>(Lcom/google/gson/internal/bind/DefaultDateTypeAdapter$DateType;I)V
 
     return-void
 .end method
@@ -231,17 +160,17 @@
         }
     .end annotation
 
-    .line 94
+    .line 120
     invoke-direct {p0}, Lcom/google/gson/TypeAdapter;-><init>()V
 
-    .line 92
+    .line 118
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
     iput-object v0, p0, Lcom/google/gson/internal/bind/DefaultDateTypeAdapter;->dateFormats:Ljava/util/List;
 
-    .line 95
+    .line 121
     invoke-static {p1}, Ljava/util/Objects;->requireNonNull(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p1
@@ -250,7 +179,7 @@
 
     iput-object p1, p0, Lcom/google/gson/internal/bind/DefaultDateTypeAdapter;->dateType:Lcom/google/gson/internal/bind/DefaultDateTypeAdapter$DateType;
 
-    .line 96
+    .line 122
     new-instance p0, Ljava/text/SimpleDateFormat;
 
     sget-object p1, Ljava/util/Locale;->US:Ljava/util/Locale;
@@ -259,7 +188,7 @@
 
     invoke-interface {v0, p0}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    .line 97
+    .line 123
     invoke-static {}, Ljava/util/Locale;->getDefault()Ljava/util/Locale;
 
     move-result-object p0
@@ -272,7 +201,7 @@
 
     if-nez p0, :cond_0
 
-    .line 98
+    .line 124
     new-instance p0, Ljava/text/SimpleDateFormat;
 
     invoke-direct {p0, p2}, Ljava/text/SimpleDateFormat;-><init>(Ljava/lang/String;)V
@@ -286,7 +215,7 @@
 .method synthetic constructor <init>(Lcom/google/gson/internal/bind/DefaultDateTypeAdapter$DateType;Ljava/lang/String;Lcom/google/gson/internal/bind/DefaultDateTypeAdapter$1;)V
     .locals 0
 
-    .line 47
+    .line 55
     invoke-direct {p0, p1, p2}, Lcom/google/gson/internal/bind/DefaultDateTypeAdapter;-><init>(Lcom/google/gson/internal/bind/DefaultDateTypeAdapter$DateType;Ljava/lang/String;)V
 
     return-void
@@ -300,17 +229,17 @@
         }
     .end annotation
 
-    .line 152
+    .line 166
     invoke-virtual {p1}, Lcom/google/gson/stream/JsonReader;->nextString()Ljava/lang/String;
 
     move-result-object v0
 
-    .line 153
+    .line 168
     iget-object v1, p0, Lcom/google/gson/internal/bind/DefaultDateTypeAdapter;->dateFormats:Ljava/util/List;
 
     monitor-enter v1
 
-    .line 154
+    .line 169
     :try_start_0
     iget-object p0, p0, Lcom/google/gson/internal/bind/DefaultDateTypeAdapter;->dateFormats:Ljava/util/List;
 
@@ -318,7 +247,7 @@
 
     move-result-object p0
 
-    :catch_0
+    :goto_0
     invoke-interface {p0}, Ljava/util/Iterator;->hasNext()Z
 
     move-result v2
@@ -330,10 +259,15 @@
     move-result-object v2
 
     check-cast v2, Ljava/text/DateFormat;
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 156
+    .line 170
+    invoke-virtual {v2}, Ljava/text/DateFormat;->getTimeZone()Ljava/util/TimeZone;
+
+    move-result-object v3
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_1
+
+    .line 172
     :try_start_1
     invoke-virtual {v2, v0}, Ljava/text/DateFormat;->parse(Ljava/lang/String;)Ljava/util/Date;
 
@@ -342,18 +276,35 @@
     .catch Ljava/text/ParseException; {:try_start_1 .. :try_end_1} :catch_0
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
+    .line 176
     :try_start_2
+    invoke-virtual {v2, v3}, Ljava/text/DateFormat;->setTimeZone(Ljava/util/TimeZone;)V
+
     monitor-exit v1
 
     return-object p0
 
-    .line 159
+    :catchall_0
+    move-exception p0
+
+    invoke-virtual {v2, v3}, Ljava/text/DateFormat;->setTimeZone(Ljava/util/TimeZone;)V
+
+    .line 177
+    throw p0
+
+    .line 176
+    :catch_0
+    invoke-virtual {v2, v3}, Ljava/text/DateFormat;->setTimeZone(Ljava/util/TimeZone;)V
+
+    goto :goto_0
+
+    .line 179
     :cond_0
     monitor-exit v1
     :try_end_2
-    .catchall {:try_start_2 .. :try_end_2} :catchall_0
+    .catchall {:try_start_2 .. :try_end_2} :catchall_1
 
-    .line 162
+    .line 182
     :try_start_3
     new-instance p0, Ljava/text/ParsePosition;
 
@@ -372,7 +323,7 @@
     :catch_1
     move-exception p0
 
-    .line 164
+    .line 184
     new-instance v1, Lcom/google/gson/JsonSyntaxException;
 
     new-instance v2, Ljava/lang/StringBuilder;
@@ -391,6 +342,7 @@
 
     move-result-object v0
 
+    .line 185
     invoke-virtual {p1}, Lcom/google/gson/stream/JsonReader;->getPreviousPath()Ljava/lang/String;
 
     move-result-object p1
@@ -407,14 +359,14 @@
 
     throw v1
 
-    :catchall_0
+    :catchall_1
     move-exception p0
 
-    .line 159
+    .line 179
     :try_start_4
     monitor-exit v1
     :try_end_4
-    .catchall {:try_start_4 .. :try_end_4} :catchall_0
+    .catchall {:try_start_4 .. :try_end_4} :catchall_1
 
     throw p0
 .end method
@@ -429,7 +381,7 @@
         }
     .end annotation
 
-    .line 47
+    .line 55
     invoke-virtual {p0, p1}, Lcom/google/gson/internal/bind/DefaultDateTypeAdapter;->read(Lcom/google/gson/stream/JsonReader;)Ljava/util/Date;
 
     move-result-object p0
@@ -453,7 +405,7 @@
         }
     .end annotation
 
-    .line 143
+    .line 157
     invoke-virtual {p1}, Lcom/google/gson/stream/JsonReader;->peek()Lcom/google/gson/stream/JsonToken;
 
     move-result-object v0
@@ -462,20 +414,20 @@
 
     if-ne v0, v1, :cond_0
 
-    .line 144
+    .line 158
     invoke-virtual {p1}, Lcom/google/gson/stream/JsonReader;->nextNull()V
 
     const/4 p0, 0x0
 
     return-object p0
 
-    .line 147
+    .line 161
     :cond_0
     invoke-direct {p0, p1}, Lcom/google/gson/internal/bind/DefaultDateTypeAdapter;->deserializeToDate(Lcom/google/gson/stream/JsonReader;)Ljava/util/Date;
 
     move-result-object p1
 
-    .line 148
+    .line 162
     iget-object p0, p0, Lcom/google/gson/internal/bind/DefaultDateTypeAdapter;->dateType:Lcom/google/gson/internal/bind/DefaultDateTypeAdapter$DateType;
 
     invoke-virtual {p0, p1}, Lcom/google/gson/internal/bind/DefaultDateTypeAdapter$DateType;->deserialize(Ljava/util/Date;)Ljava/util/Date;
@@ -488,7 +440,7 @@
 .method public toString()Ljava/lang/String;
     .locals 3
 
-    .line 170
+    .line 191
     iget-object p0, p0, Lcom/google/gson/internal/bind/DefaultDateTypeAdapter;->dateFormats:Ljava/util/List;
 
     const/4 v0, 0x0
@@ -499,7 +451,7 @@
 
     check-cast p0, Ljava/text/DateFormat;
 
-    .line 171
+    .line 192
     instance-of v0, p0, Ljava/text/SimpleDateFormat;
 
     const/16 v1, 0x29
@@ -508,7 +460,7 @@
 
     if-eqz v0, :cond_0
 
-    .line 172
+    .line 193
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0, v2}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
@@ -533,7 +485,7 @@
 
     return-object p0
 
-    .line 174
+    .line 195
     :cond_0
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -570,7 +522,7 @@
         }
     .end annotation
 
-    .line 47
+    .line 55
     check-cast p2, Ljava/util/Date;
 
     invoke-virtual {p0, p1, p2}, Lcom/google/gson/internal/bind/DefaultDateTypeAdapter;->write(Lcom/google/gson/stream/JsonWriter;Ljava/util/Date;)V
@@ -588,12 +540,12 @@
 
     if-nez p2, :cond_0
 
-    .line 129
+    .line 142
     invoke-virtual {p1}, Lcom/google/gson/stream/JsonWriter;->nullValue()Lcom/google/gson/stream/JsonWriter;
 
     return-void
 
-    .line 133
+    .line 146
     :cond_0
     iget-object v0, p0, Lcom/google/gson/internal/bind/DefaultDateTypeAdapter;->dateFormats:Ljava/util/List;
 
@@ -605,23 +557,23 @@
 
     check-cast v0, Ljava/text/DateFormat;
 
-    .line 135
+    .line 149
     iget-object p0, p0, Lcom/google/gson/internal/bind/DefaultDateTypeAdapter;->dateFormats:Ljava/util/List;
 
     monitor-enter p0
 
-    .line 136
+    .line 150
     :try_start_0
     invoke-virtual {v0, p2}, Ljava/text/DateFormat;->format(Ljava/util/Date;)Ljava/lang/String;
 
     move-result-object p2
 
-    .line 137
+    .line 151
     monitor-exit p0
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 138
+    .line 152
     invoke-virtual {p1, p2}, Lcom/google/gson/stream/JsonWriter;->value(Ljava/lang/String;)Lcom/google/gson/stream/JsonWriter;
 
     return-void
@@ -629,7 +581,7 @@
     :catchall_0
     move-exception p1
 
-    .line 137
+    .line 151
     :try_start_1
     monitor-exit p0
     :try_end_1

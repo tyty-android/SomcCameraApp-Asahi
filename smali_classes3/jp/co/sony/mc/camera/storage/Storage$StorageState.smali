@@ -75,107 +75,113 @@
 .end method
 
 .method static constructor <clinit>()V
-    .locals 4
+    .locals 7
 
     .line 43
     new-instance v0, Ljp/co/sony/mc/camera/storage/Storage$StorageState;
 
-    sget-object v1, Ljp/co/sony/mc/camera/storage/CameraStorageManager$DetailStorageState;->MEMORY_NO_MEMORY_CARD:Ljp/co/sony/mc/camera/storage/CameraStorageManager$DetailStorageState;
+    const/4 v1, 0x1
 
-    filled-new-array {v1}, [Ljp/co/sony/mc/camera/storage/CameraStorageManager$DetailStorageState;
+    new-array v2, v1, [Ljp/co/sony/mc/camera/storage/CameraStorageManager$DetailStorageState;
 
-    move-result-object v1
+    sget-object v3, Ljp/co/sony/mc/camera/storage/CameraStorageManager$DetailStorageState;->MEMORY_NO_MEMORY_CARD:Ljp/co/sony/mc/camera/storage/CameraStorageManager$DetailStorageState;
 
-    const-string v2, "REMOVED"
+    const/4 v4, 0x0
 
-    const/4 v3, 0x0
+    aput-object v3, v2, v4
 
-    invoke-direct {v0, v2, v3, v1}, Ljp/co/sony/mc/camera/storage/Storage$StorageState;-><init>(Ljava/lang/String;I[Ljp/co/sony/mc/camera/storage/CameraStorageManager$DetailStorageState;)V
+    const-string v3, "REMOVED"
+
+    invoke-direct {v0, v3, v4, v2}, Ljp/co/sony/mc/camera/storage/Storage$StorageState;-><init>(Ljava/lang/String;I[Ljp/co/sony/mc/camera/storage/CameraStorageManager$DetailStorageState;)V
 
     sput-object v0, Ljp/co/sony/mc/camera/storage/Storage$StorageState;->REMOVED:Ljp/co/sony/mc/camera/storage/Storage$StorageState;
 
     .line 44
     new-instance v0, Ljp/co/sony/mc/camera/storage/Storage$StorageState;
 
-    sget-object v1, Ljp/co/sony/mc/camera/storage/CameraStorageManager$DetailStorageState;->MEMORY_READY:Ljp/co/sony/mc/camera/storage/CameraStorageManager$DetailStorageState;
+    new-array v2, v1, [Ljp/co/sony/mc/camera/storage/CameraStorageManager$DetailStorageState;
 
-    filled-new-array {v1}, [Ljp/co/sony/mc/camera/storage/CameraStorageManager$DetailStorageState;
+    sget-object v3, Ljp/co/sony/mc/camera/storage/CameraStorageManager$DetailStorageState;->MEMORY_READY:Ljp/co/sony/mc/camera/storage/CameraStorageManager$DetailStorageState;
 
-    move-result-object v1
+    aput-object v3, v2, v4
 
-    const-string v2, "AVAILABLE"
+    const-string v3, "AVAILABLE"
 
-    const/4 v3, 0x1
-
-    invoke-direct {v0, v2, v3, v1}, Ljp/co/sony/mc/camera/storage/Storage$StorageState;-><init>(Ljava/lang/String;I[Ljp/co/sony/mc/camera/storage/CameraStorageManager$DetailStorageState;)V
+    invoke-direct {v0, v3, v1, v2}, Ljp/co/sony/mc/camera/storage/Storage$StorageState;-><init>(Ljava/lang/String;I[Ljp/co/sony/mc/camera/storage/CameraStorageManager$DetailStorageState;)V
 
     sput-object v0, Ljp/co/sony/mc/camera/storage/Storage$StorageState;->AVAILABLE:Ljp/co/sony/mc/camera/storage/Storage$StorageState;
 
     .line 45
     new-instance v0, Ljp/co/sony/mc/camera/storage/Storage$StorageState;
 
-    sget-object v1, Ljp/co/sony/mc/camera/storage/CameraStorageManager$DetailStorageState;->MEMORY_ERR_ACCESS:Ljp/co/sony/mc/camera/storage/CameraStorageManager$DetailStorageState;
+    const/4 v2, 0x3
 
-    sget-object v2, Ljp/co/sony/mc/camera/storage/CameraStorageManager$DetailStorageState;->MEMORY_ERR_FORMAT:Ljp/co/sony/mc/camera/storage/CameraStorageManager$DetailStorageState;
+    new-array v3, v2, [Ljp/co/sony/mc/camera/storage/CameraStorageManager$DetailStorageState;
 
-    sget-object v3, Ljp/co/sony/mc/camera/storage/CameraStorageManager$DetailStorageState;->MEMORY_ERR_SHARED:Ljp/co/sony/mc/camera/storage/CameraStorageManager$DetailStorageState;
+    sget-object v5, Ljp/co/sony/mc/camera/storage/CameraStorageManager$DetailStorageState;->MEMORY_ERR_ACCESS:Ljp/co/sony/mc/camera/storage/CameraStorageManager$DetailStorageState;
 
-    filled-new-array {v1, v2, v3}, [Ljp/co/sony/mc/camera/storage/CameraStorageManager$DetailStorageState;
+    aput-object v5, v3, v4
 
-    move-result-object v1
+    sget-object v5, Ljp/co/sony/mc/camera/storage/CameraStorageManager$DetailStorageState;->MEMORY_ERR_FORMAT:Ljp/co/sony/mc/camera/storage/CameraStorageManager$DetailStorageState;
 
-    const-string v2, "UNAVAILABLE"
+    aput-object v5, v3, v1
 
-    const/4 v3, 0x2
+    sget-object v5, Ljp/co/sony/mc/camera/storage/CameraStorageManager$DetailStorageState;->MEMORY_ERR_SHARED:Ljp/co/sony/mc/camera/storage/CameraStorageManager$DetailStorageState;
 
-    invoke-direct {v0, v2, v3, v1}, Ljp/co/sony/mc/camera/storage/Storage$StorageState;-><init>(Ljava/lang/String;I[Ljp/co/sony/mc/camera/storage/CameraStorageManager$DetailStorageState;)V
+    const/4 v6, 0x2
+
+    aput-object v5, v3, v6
+
+    const-string v5, "UNAVAILABLE"
+
+    invoke-direct {v0, v5, v6, v3}, Ljp/co/sony/mc/camera/storage/Storage$StorageState;-><init>(Ljava/lang/String;I[Ljp/co/sony/mc/camera/storage/CameraStorageManager$DetailStorageState;)V
 
     sput-object v0, Ljp/co/sony/mc/camera/storage/Storage$StorageState;->UNAVAILABLE:Ljp/co/sony/mc/camera/storage/Storage$StorageState;
 
     .line 47
     new-instance v0, Ljp/co/sony/mc/camera/storage/Storage$StorageState;
 
-    sget-object v1, Ljp/co/sony/mc/camera/storage/CameraStorageManager$DetailStorageState;->MEMORY_ERR_READ_ONLY:Ljp/co/sony/mc/camera/storage/CameraStorageManager$DetailStorageState;
+    new-array v3, v1, [Ljp/co/sony/mc/camera/storage/CameraStorageManager$DetailStorageState;
 
-    filled-new-array {v1}, [Ljp/co/sony/mc/camera/storage/CameraStorageManager$DetailStorageState;
+    sget-object v5, Ljp/co/sony/mc/camera/storage/CameraStorageManager$DetailStorageState;->MEMORY_ERR_READ_ONLY:Ljp/co/sony/mc/camera/storage/CameraStorageManager$DetailStorageState;
 
-    move-result-object v1
+    aput-object v5, v3, v4
 
-    const-string v2, "READ_ONLY"
+    const-string v5, "READ_ONLY"
 
-    const/4 v3, 0x3
-
-    invoke-direct {v0, v2, v3, v1}, Ljp/co/sony/mc/camera/storage/Storage$StorageState;-><init>(Ljava/lang/String;I[Ljp/co/sony/mc/camera/storage/CameraStorageManager$DetailStorageState;)V
+    invoke-direct {v0, v5, v2, v3}, Ljp/co/sony/mc/camera/storage/Storage$StorageState;-><init>(Ljava/lang/String;I[Ljp/co/sony/mc/camera/storage/CameraStorageManager$DetailStorageState;)V
 
     sput-object v0, Ljp/co/sony/mc/camera/storage/Storage$StorageState;->READ_ONLY:Ljp/co/sony/mc/camera/storage/Storage$StorageState;
 
     .line 48
     new-instance v0, Ljp/co/sony/mc/camera/storage/Storage$StorageState;
 
-    sget-object v1, Ljp/co/sony/mc/camera/storage/CameraStorageManager$DetailStorageState;->MEMORY_ERR_FULL:Ljp/co/sony/mc/camera/storage/CameraStorageManager$DetailStorageState;
+    new-array v2, v6, [Ljp/co/sony/mc/camera/storage/CameraStorageManager$DetailStorageState;
 
-    sget-object v2, Ljp/co/sony/mc/camera/storage/CameraStorageManager$DetailStorageState;->MEMORY_ERR_FULL_COUNT:Ljp/co/sony/mc/camera/storage/CameraStorageManager$DetailStorageState;
+    sget-object v3, Ljp/co/sony/mc/camera/storage/CameraStorageManager$DetailStorageState;->MEMORY_ERR_FULL:Ljp/co/sony/mc/camera/storage/CameraStorageManager$DetailStorageState;
 
-    filled-new-array {v1, v2}, [Ljp/co/sony/mc/camera/storage/CameraStorageManager$DetailStorageState;
+    aput-object v3, v2, v4
 
-    move-result-object v1
+    sget-object v3, Ljp/co/sony/mc/camera/storage/CameraStorageManager$DetailStorageState;->MEMORY_ERR_FULL_COUNT:Ljp/co/sony/mc/camera/storage/CameraStorageManager$DetailStorageState;
 
-    const-string v2, "FULL"
+    aput-object v3, v2, v1
 
-    const/4 v3, 0x4
+    const-string v3, "FULL"
 
-    invoke-direct {v0, v2, v3, v1}, Ljp/co/sony/mc/camera/storage/Storage$StorageState;-><init>(Ljava/lang/String;I[Ljp/co/sony/mc/camera/storage/CameraStorageManager$DetailStorageState;)V
+    const/4 v5, 0x4
+
+    invoke-direct {v0, v3, v5, v2}, Ljp/co/sony/mc/camera/storage/Storage$StorageState;-><init>(Ljava/lang/String;I[Ljp/co/sony/mc/camera/storage/CameraStorageManager$DetailStorageState;)V
 
     sput-object v0, Ljp/co/sony/mc/camera/storage/Storage$StorageState;->FULL:Ljp/co/sony/mc/camera/storage/Storage$StorageState;
 
     .line 49
     new-instance v0, Ljp/co/sony/mc/camera/storage/Storage$StorageState;
 
-    sget-object v1, Ljp/co/sony/mc/camera/storage/CameraStorageManager$DetailStorageState;->MEMORY_ERR_TIMED_OUT:Ljp/co/sony/mc/camera/storage/CameraStorageManager$DetailStorageState;
+    new-array v1, v1, [Ljp/co/sony/mc/camera/storage/CameraStorageManager$DetailStorageState;
 
-    filled-new-array {v1}, [Ljp/co/sony/mc/camera/storage/CameraStorageManager$DetailStorageState;
+    sget-object v2, Ljp/co/sony/mc/camera/storage/CameraStorageManager$DetailStorageState;->MEMORY_ERR_TIMED_OUT:Ljp/co/sony/mc/camera/storage/CameraStorageManager$DetailStorageState;
 
-    move-result-object v1
+    aput-object v2, v1, v4
 
     const-string v2, "CORRUPT"
 

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item type="dimen" name="auto_framing_recording_mode_indicator_line_spacing">0.8</item>
+</resources>

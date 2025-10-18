@@ -53,11 +53,7 @@
 
 # direct methods
 .method public constructor <init>(Landroidx/compose/foundation/interaction/MutableInteractionSource;)V
-    .locals 1
-
-    const-string v0, "interactionSource"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+    .locals 0
 
     .line 47
     invoke-direct {p0}, Landroidx/compose/ui/node/ModifierNodeElement;-><init>()V
@@ -153,10 +149,6 @@
 .method public inspectableProperties(Landroidx/compose/ui/platform/InspectorInfo;)V
     .locals 1
 
-    const-string v0, "<this>"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
     .line 66
     const-string v0, "hoverable"
 
@@ -177,11 +169,7 @@
 .end method
 
 .method public update(Landroidx/compose/foundation/HoverableNode;)V
-    .locals 1
-
-    const-string v0, "node"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+    .locals 0
 
     .line 51
     iget-object p0, p0, Landroidx/compose/foundation/HoverableElement;->interactionSource:Landroidx/compose/foundation/interaction/MutableInteractionSource;

@@ -3,7 +3,7 @@
 .source "D8$$SyntheticClass"
 
 # interfaces
-.implements Landroid/widget/CompoundButton$OnCheckedChangeListener;
+.implements Landroid/view/View$OnClickListener;
 
 
 # instance fields
@@ -24,13 +24,13 @@
 
 
 # virtual methods
-.method public final onCheckedChanged(Landroid/widget/CompoundButton;Z)V
+.method public final onClick(Landroid/view/View;)V
     .locals 0
 
     .line 0
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/setting/fragment/RemoconMenuFragment$$ExternalSyntheticLambda3;->f$0:Ljp/co/sony/mc/camera/view/setting/fragment/RemoconMenuFragment;
 
-    invoke-static {p0, p1, p2}, Ljp/co/sony/mc/camera/view/setting/fragment/RemoconMenuFragment;->$r8$lambda$-9z7AeiSwuKD-Ygc451q0CqcY0M(Ljp/co/sony/mc/camera/view/setting/fragment/RemoconMenuFragment;Landroid/widget/CompoundButton;Z)V
+    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/view/setting/fragment/RemoconMenuFragment;->$r8$lambda$4BdpYqzgTTrcClFQjiOAypwlti0(Ljp/co/sony/mc/camera/view/setting/fragment/RemoconMenuFragment;Landroid/view/View;)V
 
     return-void
 .end method

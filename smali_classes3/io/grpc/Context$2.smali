@@ -35,7 +35,7 @@
 .method constructor <init>(Lio/grpc/Context;Ljava/util/concurrent/Callable;)V
     .locals 0
 
-    .line 644
+    .line 578
     iput-object p1, p0, Lio/grpc/Context$2;->this$0:Lio/grpc/Context;
 
     iput-object p2, p0, Lio/grpc/Context$2;->val$c:Ljava/util/concurrent/Callable;
@@ -61,14 +61,14 @@
         }
     .end annotation
 
-    .line 647
+    .line 581
     iget-object v0, p0, Lio/grpc/Context$2;->this$0:Lio/grpc/Context;
 
     invoke-virtual {v0}, Lio/grpc/Context;->attach()Lio/grpc/Context;
 
     move-result-object v0
 
-    .line 649
+    .line 583
     :try_start_0
     iget-object v1, p0, Lio/grpc/Context$2;->val$c:Ljava/util/concurrent/Callable;
 
@@ -78,7 +78,7 @@
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 651
+    .line 585
     iget-object p0, p0, Lio/grpc/Context$2;->this$0:Lio/grpc/Context;
 
     invoke-virtual {p0, v0}, Lio/grpc/Context;->detach(Lio/grpc/Context;)V
@@ -92,5 +92,6 @@
 
     invoke-virtual {p0, v0}, Lio/grpc/Context;->detach(Lio/grpc/Context;)V
 
+    .line 586
     throw v1
 .end method

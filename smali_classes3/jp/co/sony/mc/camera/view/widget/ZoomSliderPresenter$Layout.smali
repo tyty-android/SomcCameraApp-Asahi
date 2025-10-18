@@ -15,7 +15,7 @@
 
 .annotation runtime Lkotlin/Metadata;
     d1 = {
-        "\u0000.\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0010\u0007\n\u0002\u0008\u0004\n\u0002\u0010 \n\u0002\u0008\u0015\n\u0002\u0010\u000b\n\u0002\u0008\u0002\n\u0002\u0010\u0008\n\u0000\n\u0002\u0010\u000e\n\u0000\u0008\u0087\u0008\u0018\u00002\u00020\u0001BU\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\u0006\u0010\u0004\u001a\u00020\u0003\u0012\u0006\u0010\u0005\u001a\u00020\u0003\u0012\u0006\u0010\u0006\u001a\u00020\u0003\u0012\u000e\u0010\u0007\u001a\n\u0012\u0006\u0012\u0004\u0018\u00010\u00030\u0008\u0012\u000e\u0010\t\u001a\n\u0012\u0006\u0012\u0004\u0018\u00010\u00030\u0008\u0012\u000e\u0010\n\u001a\n\u0012\u0006\u0012\u0004\u0018\u00010\u00030\u0008\u00a2\u0006\u0002\u0010\u000bJ\t\u0010\u0015\u001a\u00020\u0003H\u00c6\u0003J\t\u0010\u0016\u001a\u00020\u0003H\u00c6\u0003J\t\u0010\u0017\u001a\u00020\u0003H\u00c6\u0003J\t\u0010\u0018\u001a\u00020\u0003H\u00c6\u0003J\u0011\u0010\u0019\u001a\n\u0012\u0006\u0012\u0004\u0018\u00010\u00030\u0008H\u00c6\u0003J\u0011\u0010\u001a\u001a\n\u0012\u0006\u0012\u0004\u0018\u00010\u00030\u0008H\u00c6\u0003J\u0011\u0010\u001b\u001a\n\u0012\u0006\u0012\u0004\u0018\u00010\u00030\u0008H\u00c6\u0003Jg\u0010\u001c\u001a\u00020\u00002\u0008\u0008\u0002\u0010\u0002\u001a\u00020\u00032\u0008\u0008\u0002\u0010\u0004\u001a\u00020\u00032\u0008\u0008\u0002\u0010\u0005\u001a\u00020\u00032\u0008\u0008\u0002\u0010\u0006\u001a\u00020\u00032\u0010\u0008\u0002\u0010\u0007\u001a\n\u0012\u0006\u0012\u0004\u0018\u00010\u00030\u00082\u0010\u0008\u0002\u0010\t\u001a\n\u0012\u0006\u0012\u0004\u0018\u00010\u00030\u00082\u0010\u0008\u0002\u0010\n\u001a\n\u0012\u0006\u0012\u0004\u0018\u00010\u00030\u0008H\u00c6\u0001J\u0013\u0010\u001d\u001a\u00020\u001e2\u0008\u0010\u001f\u001a\u0004\u0018\u00010\u0001H\u00d6\u0003J\t\u0010 \u001a\u00020!H\u00d6\u0001J\t\u0010\"\u001a\u00020#H\u00d6\u0001R\u0011\u0010\u0005\u001a\u00020\u0003\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\u000c\u0010\rR\u0019\u0010\n\u001a\n\u0012\u0006\u0012\u0004\u0018\u00010\u00030\u0008\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\u000e\u0010\u000fR\u0011\u0010\u0006\u001a\u00020\u0003\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\u0010\u0010\rR\u0011\u0010\u0002\u001a\u00020\u0003\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\u0011\u0010\rR\u0019\u0010\u0007\u001a\n\u0012\u0006\u0012\u0004\u0018\u00010\u00030\u0008\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\u0012\u0010\u000fR\u0019\u0010\t\u001a\n\u0012\u0006\u0012\u0004\u0018\u00010\u00030\u0008\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\u0013\u0010\u000fR\u0011\u0010\u0004\u001a\u00020\u0003\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\u0014\u0010\r\u00a8\u0006$"
+        "\u0000.\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0010\u0007\n\u0002\u0008\u0004\n\u0002\u0010 \n\u0002\u0008\u0016\n\u0002\u0010\u000b\n\u0002\u0008\u0002\n\u0002\u0010\u0008\n\u0000\n\u0002\u0010\u000e\n\u0000\u0008\u0087\u0008\u0018\u00002\u00020\u0001BW\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\u0006\u0010\u0004\u001a\u00020\u0003\u0012\u0006\u0010\u0005\u001a\u00020\u0003\u0012\u0006\u0010\u0006\u001a\u00020\u0003\u0012\u000e\u0010\u0007\u001a\n\u0012\u0006\u0012\u0004\u0018\u00010\u00030\u0008\u0012\u000e\u0010\t\u001a\n\u0012\u0006\u0012\u0004\u0018\u00010\u00030\u0008\u0012\u000e\u0010\n\u001a\n\u0012\u0006\u0012\u0004\u0018\u00010\u00030\u0008\u00a2\u0006\u0004\u0008\u000b\u0010\u000cJ\t\u0010\u0016\u001a\u00020\u0003H\u00c6\u0003J\t\u0010\u0017\u001a\u00020\u0003H\u00c6\u0003J\t\u0010\u0018\u001a\u00020\u0003H\u00c6\u0003J\t\u0010\u0019\u001a\u00020\u0003H\u00c6\u0003J\u0011\u0010\u001a\u001a\n\u0012\u0006\u0012\u0004\u0018\u00010\u00030\u0008H\u00c6\u0003J\u0011\u0010\u001b\u001a\n\u0012\u0006\u0012\u0004\u0018\u00010\u00030\u0008H\u00c6\u0003J\u0011\u0010\u001c\u001a\n\u0012\u0006\u0012\u0004\u0018\u00010\u00030\u0008H\u00c6\u0003Jg\u0010\u001d\u001a\u00020\u00002\u0008\u0008\u0002\u0010\u0002\u001a\u00020\u00032\u0008\u0008\u0002\u0010\u0004\u001a\u00020\u00032\u0008\u0008\u0002\u0010\u0005\u001a\u00020\u00032\u0008\u0008\u0002\u0010\u0006\u001a\u00020\u00032\u0010\u0008\u0002\u0010\u0007\u001a\n\u0012\u0006\u0012\u0004\u0018\u00010\u00030\u00082\u0010\u0008\u0002\u0010\t\u001a\n\u0012\u0006\u0012\u0004\u0018\u00010\u00030\u00082\u0010\u0008\u0002\u0010\n\u001a\n\u0012\u0006\u0012\u0004\u0018\u00010\u00030\u0008H\u00c7\u0001J\u0013\u0010\u001e\u001a\u00020\u001f2\u0008\u0010 \u001a\u0004\u0018\u00010\u0001H\u00d7\u0003J\t\u0010!\u001a\u00020\"H\u00d7\u0001J\t\u0010#\u001a\u00020$H\u00d7\u0001R\u0011\u0010\u0002\u001a\u00020\u0003\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\r\u0010\u000eR\u0011\u0010\u0004\u001a\u00020\u0003\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\u000f\u0010\u000eR\u0011\u0010\u0005\u001a\u00020\u0003\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\u0010\u0010\u000eR\u0011\u0010\u0006\u001a\u00020\u0003\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\u0011\u0010\u000eR\u0019\u0010\u0007\u001a\n\u0012\u0006\u0012\u0004\u0018\u00010\u00030\u0008\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\u0012\u0010\u0013R\u0019\u0010\t\u001a\n\u0012\u0006\u0012\u0004\u0018\u00010\u00030\u0008\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\u0014\u0010\u0013R\u0019\u0010\n\u001a\n\u0012\u0006\u0012\u0004\u0018\u00010\u00030\u0008\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\u0015\u0010\u0013\u00a8\u0006%"
     }
     d2 = {
         "Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter$Layout;",
@@ -29,16 +29,17 @@
         "",
         "opticalRangeWidthList",
         "labelTranslationXList",
+        "<init>",
         "(FFFFLjava/util/List;Ljava/util/List;Ljava/util/List;)V",
-        "getContentContainerWidth",
-        "()F",
-        "getLabelTranslationXList",
-        "()Ljava/util/List;",
-        "getLineWidth",
         "getMainCircleTranslationX",
-        "getOpticalRangeTranslationXList",
-        "getOpticalRangeWidthList",
+        "()F",
         "getSeekBarWidth",
+        "getContentContainerWidth",
+        "getLineWidth",
+        "getOpticalRangeTranslationXList",
+        "()Ljava/util/List;",
+        "getOpticalRangeWidthList",
+        "getLabelTranslationXList",
         "component1",
         "component2",
         "component3",
@@ -58,8 +59,8 @@
     }
     k = 0x1
     mv = {
-        0x1,
-        0x9,
+        0x2,
+        0x0,
         0x0
     }
     xi = 0x30
@@ -146,28 +147,28 @@
 
     invoke-static {p7, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 838
+    .line 874
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 839
+    .line 875
     iput p1, p0, Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter$Layout;->mainCircleTranslationX:F
 
-    .line 840
+    .line 876
     iput p2, p0, Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter$Layout;->seekBarWidth:F
 
-    .line 841
+    .line 877
     iput p3, p0, Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter$Layout;->contentContainerWidth:F
 
-    .line 842
+    .line 878
     iput p4, p0, Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter$Layout;->lineWidth:F
 
-    .line 843
+    .line 879
     iput-object p5, p0, Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter$Layout;->opticalRangeTranslationXList:Ljava/util/List;
 
-    .line 844
+    .line 880
     iput-object p6, p0, Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter$Layout;->opticalRangeWidthList:Ljava/util/List;
 
-    .line 845
+    .line 881
     iput-object p7, p0, Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter$Layout;->labelTranslationXList:Ljava/util/List;
 
     return-void
@@ -513,7 +514,7 @@
 .method public final getContentContainerWidth()F
     .locals 0
 
-    .line 841
+    .line 877
     iget p0, p0, Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter$Layout;->contentContainerWidth:F
 
     return p0
@@ -530,7 +531,7 @@
         }
     .end annotation
 
-    .line 845
+    .line 881
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter$Layout;->labelTranslationXList:Ljava/util/List;
 
     return-object p0
@@ -539,7 +540,7 @@
 .method public final getLineWidth()F
     .locals 0
 
-    .line 842
+    .line 878
     iget p0, p0, Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter$Layout;->lineWidth:F
 
     return p0
@@ -548,7 +549,7 @@
 .method public final getMainCircleTranslationX()F
     .locals 0
 
-    .line 839
+    .line 875
     iget p0, p0, Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter$Layout;->mainCircleTranslationX:F
 
     return p0
@@ -565,7 +566,7 @@
         }
     .end annotation
 
-    .line 843
+    .line 879
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter$Layout;->opticalRangeTranslationXList:Ljava/util/List;
 
     return-object p0
@@ -582,7 +583,7 @@
         }
     .end annotation
 
-    .line 844
+    .line 880
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter$Layout;->opticalRangeWidthList:Ljava/util/List;
 
     return-object p0
@@ -591,7 +592,7 @@
 .method public final getSeekBarWidth()F
     .locals 0
 
-    .line 840
+    .line 876
     iget p0, p0, Ljp/co/sony/mc/camera/view/widget/ZoomSliderPresenter$Layout;->seekBarWidth:F
 
     return p0

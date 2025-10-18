@@ -8,12 +8,12 @@
 
 # annotations
 .annotation system Ldalvik/annotation/SourceDebugExtension;
-    value = "SMAP\nTextField.kt\nKotlin\n*S Kotlin\n*F\n+ 1 TextField.kt\nandroidx/compose/material/TextFieldMeasurePolicy\n+ 2 fake.kt\nkotlin/jvm/internal/FakeKt\n+ 3 _Collections.kt\nkotlin/collections/CollectionsKt___CollectionsKt\n*L\n1#1,929:1\n1#2:930\n223#3,2:931\n223#3,2:933\n223#3,2:935\n*S KotlinDebug\n*F\n+ 1 TextField.kt\nandroidx/compose/material/TextFieldMeasurePolicy\n*L\n599#1:931,2\n704#1:933,2\n733#1:935,2\n*E\n"
+    value = "SMAP\nTextField.kt\nKotlin\n*S Kotlin\n*F\n+ 1 TextField.kt\nandroidx/compose/material/TextFieldMeasurePolicy\n+ 2 ListUtils.kt\nandroidx/compose/ui/util/ListUtilsKt\n*L\n1#1,940:1\n116#2,2:941\n33#2,6:943\n118#2:949\n116#2,2:950\n33#2,6:952\n118#2:958\n116#2,2:959\n33#2,6:961\n118#2:967\n544#2,2:968\n33#2,6:970\n546#2:976\n116#2,2:977\n33#2,6:979\n118#2:985\n544#2,2:986\n33#2,6:988\n546#2:994\n116#2,2:995\n33#2,6:997\n118#2:1003\n116#2,2:1004\n33#2,6:1006\n118#2:1012\n116#2,2:1013\n33#2,6:1015\n118#2:1021\n116#2,2:1022\n33#2,6:1024\n118#2:1030\n116#2,2:1031\n33#2,6:1033\n118#2:1039\n116#2,2:1040\n33#2,6:1042\n118#2:1048\n116#2,2:1049\n33#2,6:1051\n118#2:1057\n544#2,2:1058\n33#2,6:1060\n546#2:1066\n116#2,2:1067\n33#2,6:1069\n118#2:1075\n*S KotlinDebug\n*F\n+ 1 TextField.kt\nandroidx/compose/material/TextFieldMeasurePolicy\n*L\n564#1:941,2\n564#1:943,6\n564#1:949\n570#1:950,2\n570#1:952,6\n570#1:958\n583#1:959,2\n583#1:961,6\n583#1:967\n603#1:968,2\n603#1:970,6\n603#1:976\n609#1:977,2\n609#1:979,6\n609#1:985\n708#1:986,2\n708#1:988,6\n708#1:994\n709#1:995,2\n709#1:997,6\n709#1:1003\n712#1:1004,2\n712#1:1006,6\n712#1:1012\n715#1:1013,2\n715#1:1015,6\n715#1:1021\n718#1:1022,2\n718#1:1024,6\n718#1:1030\n737#1:1031,2\n737#1:1033,6\n737#1:1039\n741#1:1040,2\n741#1:1042,6\n741#1:1048\n746#1:1049,2\n746#1:1051,6\n746#1:1057\n751#1:1058,2\n751#1:1060,6\n751#1:1066\n752#1:1067,2\n752#1:1069,6\n752#1:1075\n*E\n"
 .end annotation
 
 .annotation runtime Lkotlin/Metadata;
     d1 = {
-        "\u0000T\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000b\n\u0000\n\u0002\u0010\u0007\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0010\u0008\n\u0000\n\u0002\u0010 \n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0004\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0005\u0008\u0002\u0018\u00002\u00020\u0001B\u001d\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\u0006\u0010\u0004\u001a\u00020\u0005\u0012\u0006\u0010\u0006\u001a\u00020\u0007\u00a2\u0006\u0002\u0010\u0008J8\u0010\t\u001a\u00020\n2\u000c\u0010\u000b\u001a\u0008\u0012\u0004\u0012\u00020\r0\u000c2\u0006\u0010\u000e\u001a\u00020\n2\u0018\u0010\u000f\u001a\u0014\u0012\u0004\u0012\u00020\r\u0012\u0004\u0012\u00020\n\u0012\u0004\u0012\u00020\n0\u0010H\u0002J<\u0010\u0011\u001a\u00020\n*\u00020\u00122\u000c\u0010\u000b\u001a\u0008\u0012\u0004\u0012\u00020\r0\u000c2\u0006\u0010\u0013\u001a\u00020\n2\u0018\u0010\u000f\u001a\u0014\u0012\u0004\u0012\u00020\r\u0012\u0004\u0012\u00020\n\u0012\u0004\u0012\u00020\n0\u0010H\u0002J\"\u0010\u0014\u001a\u00020\n*\u00020\u00122\u000c\u0010\u000b\u001a\u0008\u0012\u0004\u0012\u00020\r0\u000c2\u0006\u0010\u0013\u001a\u00020\nH\u0016J\"\u0010\u0015\u001a\u00020\n*\u00020\u00122\u000c\u0010\u000b\u001a\u0008\u0012\u0004\u0012\u00020\r0\u000c2\u0006\u0010\u000e\u001a\u00020\nH\u0016J/\u0010\u0016\u001a\u00020\u0017*\u00020\u00182\u000c\u0010\u000b\u001a\u0008\u0012\u0004\u0012\u00020\u00190\u000c2\u0006\u0010\u001a\u001a\u00020\u001bH\u0016\u00f8\u0001\u0000\u00f8\u0001\u0001\u00a2\u0006\u0004\u0008\u001c\u0010\u001dJ\"\u0010\u001e\u001a\u00020\n*\u00020\u00122\u000c\u0010\u000b\u001a\u0008\u0012\u0004\u0012\u00020\r0\u000c2\u0006\u0010\u0013\u001a\u00020\nH\u0016J\"\u0010\u001f\u001a\u00020\n*\u00020\u00122\u000c\u0010\u000b\u001a\u0008\u0012\u0004\u0012\u00020\r0\u000c2\u0006\u0010\u000e\u001a\u00020\nH\u0016R\u000e\u0010\u0004\u001a\u00020\u0005X\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u0006\u001a\u00020\u0007X\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u0002\u001a\u00020\u0003X\u0082\u0004\u00a2\u0006\u0002\n\u0000\u0082\u0002\u000b\n\u0005\u0008\u00a1\u001e0\u0001\n\u0002\u0008\u0019\u00a8\u0006 "
+        "\u0000T\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000b\n\u0000\n\u0002\u0010\u0007\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0010\u0008\n\u0000\n\u0002\u0010 \n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0004\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0005\u0008\u0002\u0018\u00002\u00020\u0001B\u001d\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\u0006\u0010\u0004\u001a\u00020\u0005\u0012\u0006\u0010\u0006\u001a\u00020\u0007\u00a2\u0006\u0002\u0010\u0008J8\u0010\t\u001a\u00020\n2\u000c\u0010\u000b\u001a\u0008\u0012\u0004\u0012\u00020\r0\u000c2\u0006\u0010\u000e\u001a\u00020\n2\u0018\u0010\u000f\u001a\u0014\u0012\u0004\u0012\u00020\r\u0012\u0004\u0012\u00020\n\u0012\u0004\u0012\u00020\n0\u0010H\u0002J<\u0010\u0011\u001a\u00020\n*\u00020\u00122\u000c\u0010\u000b\u001a\u0008\u0012\u0004\u0012\u00020\r0\u000c2\u0006\u0010\u0013\u001a\u00020\n2\u0018\u0010\u000f\u001a\u0014\u0012\u0004\u0012\u00020\r\u0012\u0004\u0012\u00020\n\u0012\u0004\u0012\u00020\n0\u0010H\u0002J\"\u0010\u0014\u001a\u00020\n*\u00020\u00122\u000c\u0010\u000b\u001a\u0008\u0012\u0004\u0012\u00020\r0\u000c2\u0006\u0010\u0013\u001a\u00020\nH\u0016J\"\u0010\u0015\u001a\u00020\n*\u00020\u00122\u000c\u0010\u000b\u001a\u0008\u0012\u0004\u0012\u00020\r0\u000c2\u0006\u0010\u000e\u001a\u00020\nH\u0016J,\u0010\u0016\u001a\u00020\u0017*\u00020\u00182\u000c\u0010\u000b\u001a\u0008\u0012\u0004\u0012\u00020\u00190\u000c2\u0006\u0010\u001a\u001a\u00020\u001bH\u0016\u00f8\u0001\u0000\u00a2\u0006\u0004\u0008\u001c\u0010\u001dJ\"\u0010\u001e\u001a\u00020\n*\u00020\u00122\u000c\u0010\u000b\u001a\u0008\u0012\u0004\u0012\u00020\r0\u000c2\u0006\u0010\u0013\u001a\u00020\nH\u0016J\"\u0010\u001f\u001a\u00020\n*\u00020\u00122\u000c\u0010\u000b\u001a\u0008\u0012\u0004\u0012\u00020\r0\u000c2\u0006\u0010\u000e\u001a\u00020\nH\u0016R\u000e\u0010\u0004\u001a\u00020\u0005X\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u0006\u001a\u00020\u0007X\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u0002\u001a\u00020\u0003X\u0082\u0004\u00a2\u0006\u0002\n\u0000\u0082\u0002\u0007\n\u0005\u0008\u00a1\u001e0\u0001\u00a8\u0006 "
     }
     d2 = {
         "Landroidx/compose/material/TextFieldMeasurePolicy;",
@@ -70,22 +70,18 @@
 
 # direct methods
 .method public constructor <init>(ZFLandroidx/compose/foundation/layout/PaddingValues;)V
-    .locals 1
+    .locals 0
 
-    const-string v0, "paddingValues"
-
-    invoke-static {p3, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 541
+    .line 545
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 542
+    .line 546
     iput-boolean p1, p0, Landroidx/compose/material/TextFieldMeasurePolicy;->singleLine:Z
 
-    .line 543
+    .line 547
     iput p2, p0, Landroidx/compose/material/TextFieldMeasurePolicy;->animationProgress:F
 
-    .line 544
+    .line 548
     iput-object p3, p0, Landroidx/compose/material/TextFieldMeasurePolicy;->paddingValues:Landroidx/compose/foundation/layout/PaddingValues;
 
     return-void
@@ -94,7 +90,7 @@
 .method public static final synthetic access$getAnimationProgress$p(Landroidx/compose/material/TextFieldMeasurePolicy;)F
     .locals 0
 
-    .line 541
+    .line 545
     iget p0, p0, Landroidx/compose/material/TextFieldMeasurePolicy;->animationProgress:F
 
     return p0
@@ -103,7 +99,7 @@
 .method public static final synthetic access$getPaddingValues$p(Landroidx/compose/material/TextFieldMeasurePolicy;)Landroidx/compose/foundation/layout/PaddingValues;
     .locals 0
 
-    .line 541
+    .line 545
     iget-object p0, p0, Landroidx/compose/material/TextFieldMeasurePolicy;->paddingValues:Landroidx/compose/foundation/layout/PaddingValues;
 
     return-object p0
@@ -112,14 +108,14 @@
 .method public static final synthetic access$getSingleLine$p(Landroidx/compose/material/TextFieldMeasurePolicy;)Z
     .locals 0
 
-    .line 541
+    .line 545
     iget-boolean p0, p0, Landroidx/compose/material/TextFieldMeasurePolicy;->singleLine:Z
 
     return p0
 .end method
 
 .method private final intrinsicHeight(Landroidx/compose/ui/layout/IntrinsicMeasureScope;Ljava/util/List;ILkotlin/jvm/functions/Function2;)I
-    .locals 11
+    .locals 16
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -138,210 +134,35 @@
         }
     .end annotation
 
-    .line 733
-    check-cast p2, Ljava/lang/Iterable;
+    move-object/from16 v0, p2
 
-    .line 935
-    invoke-interface {p2}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
+    move-object/from16 v1, p4
 
-    move-result-object v0
-
-    :cond_0
-    invoke-interface {v0}, Ljava/util/Iterator;->hasNext()Z
-
-    move-result v1
-
-    if-eqz v1, :cond_e
-
-    invoke-interface {v0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
-
-    move-result-object v1
-
-    move-object v2, v1
-
-    check-cast v2, Landroidx/compose/ui/layout/IntrinsicMeasurable;
-
-    .line 733
-    invoke-static {v2}, Landroidx/compose/material/TextFieldImplKt;->getLayoutId(Landroidx/compose/ui/layout/IntrinsicMeasurable;)Ljava/lang/Object;
-
-    move-result-object v2
-
-    const-string v3, "TextField"
-
-    invoke-static {v2, v3}, Lkotlin/jvm/internal/Intrinsics;->areEqual(Ljava/lang/Object;Ljava/lang/Object;)Z
-
-    move-result v2
-
-    if-eqz v2, :cond_0
-
-    invoke-static {p3}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
-
-    move-result-object v0
-
-    invoke-interface {p4, v1, v0}, Lkotlin/jvm/functions/Function2;->invoke(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
-
-    move-result-object v0
-
-    check-cast v0, Ljava/lang/Number;
-
-    invoke-virtual {v0}, Ljava/lang/Number;->intValue()I
-
-    move-result v1
-
-    .line 734
-    invoke-interface {p2}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
-
-    move-result-object v0
-
-    :cond_1
-    invoke-interface {v0}, Ljava/util/Iterator;->hasNext()Z
+    .line 1034
+    invoke-interface/range {p2 .. p2}, Ljava/util/List;->size()I
 
     move-result v2
 
     const/4 v3, 0x0
 
-    if-eqz v2, :cond_2
-
-    invoke-interface {v0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
-
-    move-result-object v2
-
-    move-object v4, v2
-
-    check-cast v4, Landroidx/compose/ui/layout/IntrinsicMeasurable;
-
-    invoke-static {v4}, Landroidx/compose/material/TextFieldImplKt;->getLayoutId(Landroidx/compose/ui/layout/IntrinsicMeasurable;)Ljava/lang/Object;
-
-    move-result-object v4
-
-    const-string v5, "Label"
-
-    invoke-static {v4, v5}, Lkotlin/jvm/internal/Intrinsics;->areEqual(Ljava/lang/Object;Ljava/lang/Object;)Z
-
-    move-result v4
-
-    if-eqz v4, :cond_1
-
-    goto :goto_0
-
-    :cond_2
-    move-object v2, v3
+    move v4, v3
 
     :goto_0
-    check-cast v2, Landroidx/compose/ui/layout/IntrinsicMeasurable;
+    const/4 v5, 0x0
 
-    const/4 v0, 0x0
+    if-ge v4, v2, :cond_1
 
-    if-eqz v2, :cond_3
-
-    .line 735
-    invoke-static {p3}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
-
-    move-result-object v4
-
-    invoke-interface {p4, v2, v4}, Lkotlin/jvm/functions/Function2;->invoke(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
-
-    move-result-object v2
-
-    check-cast v2, Ljava/lang/Number;
-
-    invoke-virtual {v2}, Ljava/lang/Number;->intValue()I
-
-    move-result v2
-
-    move v4, v2
-
-    goto :goto_1
-
-    :cond_3
-    move v4, v0
-
-    .line 737
-    :goto_1
-    invoke-interface {p2}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
-
-    move-result-object v2
-
-    :cond_4
-    invoke-interface {v2}, Ljava/util/Iterator;->hasNext()Z
-
-    move-result v5
-
-    if-eqz v5, :cond_5
-
-    invoke-interface {v2}, Ljava/util/Iterator;->next()Ljava/lang/Object;
-
-    move-result-object v5
-
-    move-object v6, v5
-
-    check-cast v6, Landroidx/compose/ui/layout/IntrinsicMeasurable;
-
-    invoke-static {v6}, Landroidx/compose/material/TextFieldImplKt;->getLayoutId(Landroidx/compose/ui/layout/IntrinsicMeasurable;)Ljava/lang/Object;
+    .line 1035
+    invoke-interface {v0, v4}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
     move-result-object v6
 
-    const-string v7, "Trailing"
-
-    invoke-static {v6, v7}, Lkotlin/jvm/internal/Intrinsics;->areEqual(Ljava/lang/Object;Ljava/lang/Object;)Z
-
-    move-result v6
-
-    if-eqz v6, :cond_4
-
-    goto :goto_2
-
-    :cond_5
-    move-object v5, v3
-
-    :goto_2
-    check-cast v5, Landroidx/compose/ui/layout/IntrinsicMeasurable;
-
-    if-eqz v5, :cond_6
-
-    .line 738
-    invoke-static {p3}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
-
-    move-result-object v2
-
-    invoke-interface {p4, v5, v2}, Lkotlin/jvm/functions/Function2;->invoke(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
-
-    move-result-object v2
-
-    check-cast v2, Ljava/lang/Number;
-
-    invoke-virtual {v2}, Ljava/lang/Number;->intValue()I
-
-    move-result v2
-
-    move v5, v2
-
-    goto :goto_3
-
-    :cond_6
-    move v5, v0
-
-    .line 740
-    :goto_3
-    invoke-interface {p2}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
-
-    move-result-object v2
-
-    :cond_7
-    invoke-interface {v2}, Ljava/util/Iterator;->hasNext()Z
-
-    move-result v6
-
-    if-eqz v6, :cond_8
-
-    invoke-interface {v2}, Ljava/util/Iterator;->next()Ljava/lang/Object;
-
-    move-result-object v6
-
+    .line 1032
     move-object v7, v6
 
     check-cast v7, Landroidx/compose/ui/layout/IntrinsicMeasurable;
 
+    .line 737
     invoke-static {v7}, Landroidx/compose/material/TextFieldImplKt;->getLayoutId(Landroidx/compose/ui/layout/IntrinsicMeasurable;)Ljava/lang/Object;
 
     move-result-object v7
@@ -352,24 +173,118 @@
 
     move-result v7
 
-    if-eqz v7, :cond_7
+    if-eqz v7, :cond_0
+
+    goto :goto_1
+
+    :cond_0
+    add-int/lit8 v4, v4, 0x1
+
+    goto :goto_0
+
+    :cond_1
+    move-object v6, v5
+
+    :goto_1
+    check-cast v6, Landroidx/compose/ui/layout/IntrinsicMeasurable;
+
+    const v2, 0x7fffffff
+
+    if-eqz v6, :cond_2
+
+    .line 738
+    invoke-interface {v6, v2}, Landroidx/compose/ui/layout/IntrinsicMeasurable;->maxIntrinsicWidth(I)I
+
+    move-result v4
+
+    sub-int v4, p3, v4
+
+    .line 739
+    invoke-static/range {p3 .. p3}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v7
+
+    invoke-interface {v1, v6, v7}, Lkotlin/jvm/functions/Function2;->invoke(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object v6
+
+    check-cast v6, Ljava/lang/Number;
+
+    invoke-virtual {v6}, Ljava/lang/Number;->intValue()I
+
+    move-result v6
+
+    move v9, v6
+
+    goto :goto_2
+
+    :cond_2
+    move/from16 v4, p3
+
+    move v9, v3
+
+    .line 1043
+    :goto_2
+    invoke-interface/range {p2 .. p2}, Ljava/util/List;->size()I
+
+    move-result v6
+
+    move v7, v3
+
+    :goto_3
+    if-ge v7, v6, :cond_4
+
+    .line 1044
+    invoke-interface {v0, v7}, Ljava/util/List;->get(I)Ljava/lang/Object;
+
+    move-result-object v8
+
+    .line 1041
+    move-object v10, v8
+
+    check-cast v10, Landroidx/compose/ui/layout/IntrinsicMeasurable;
+
+    .line 741
+    invoke-static {v10}, Landroidx/compose/material/TextFieldImplKt;->getLayoutId(Landroidx/compose/ui/layout/IntrinsicMeasurable;)Ljava/lang/Object;
+
+    move-result-object v10
+
+    const-string v11, "Trailing"
+
+    invoke-static {v10, v11}, Lkotlin/jvm/internal/Intrinsics;->areEqual(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    move-result v10
+
+    if-eqz v10, :cond_3
 
     goto :goto_4
 
-    :cond_8
-    move-object v6, v3
+    :cond_3
+    add-int/lit8 v7, v7, 0x1
+
+    goto :goto_3
+
+    :cond_4
+    move-object v8, v5
 
     :goto_4
-    check-cast v6, Landroidx/compose/ui/layout/IntrinsicMeasurable;
+    check-cast v8, Landroidx/compose/ui/layout/IntrinsicMeasurable;
 
-    if-eqz v6, :cond_9
+    if-eqz v8, :cond_5
 
-    .line 741
-    invoke-static {p3}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+    .line 742
+    invoke-interface {v8, v2}, Landroidx/compose/ui/layout/IntrinsicMeasurable;->maxIntrinsicWidth(I)I
+
+    move-result v2
+
+    sub-int/2addr v4, v2
+
+    .line 743
+    invoke-static/range {p3 .. p3}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object v2
 
-    invoke-interface {p4, v6, v2}, Lkotlin/jvm/functions/Function2;->invoke(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-interface {v1, v8, v2}, Lkotlin/jvm/functions/Function2;->invoke(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v2
 
@@ -379,125 +294,252 @@
 
     move-result v2
 
-    move v6, v2
+    move v10, v2
 
     goto :goto_5
 
-    :cond_9
-    move v6, v0
+    :cond_5
+    move v10, v3
 
-    .line 743
+    .line 1052
     :goto_5
-    invoke-interface {p2}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
-
-    move-result-object p2
-
-    :cond_a
-    invoke-interface {p2}, Ljava/util/Iterator;->hasNext()Z
+    invoke-interface/range {p2 .. p2}, Ljava/util/List;->size()I
 
     move-result v2
 
-    if-eqz v2, :cond_b
+    move v6, v3
 
-    invoke-interface {p2}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+    :goto_6
+    if-ge v6, v2, :cond_7
 
-    move-result-object v2
-
-    move-object v7, v2
-
-    check-cast v7, Landroidx/compose/ui/layout/IntrinsicMeasurable;
-
-    invoke-static {v7}, Landroidx/compose/material/TextFieldImplKt;->getLayoutId(Landroidx/compose/ui/layout/IntrinsicMeasurable;)Ljava/lang/Object;
+    .line 1053
+    invoke-interface {v0, v6}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
     move-result-object v7
 
-    const-string v8, "Hint"
+    .line 1050
+    move-object v8, v7
 
-    invoke-static {v7, v8}, Lkotlin/jvm/internal/Intrinsics;->areEqual(Ljava/lang/Object;Ljava/lang/Object;)Z
+    check-cast v8, Landroidx/compose/ui/layout/IntrinsicMeasurable;
 
-    move-result v7
+    .line 746
+    invoke-static {v8}, Landroidx/compose/material/TextFieldImplKt;->getLayoutId(Landroidx/compose/ui/layout/IntrinsicMeasurable;)Ljava/lang/Object;
 
-    if-eqz v7, :cond_a
+    move-result-object v8
 
-    move-object v3, v2
+    const-string v11, "Label"
 
-    :cond_b
-    check-cast v3, Landroidx/compose/ui/layout/IntrinsicMeasurable;
+    invoke-static {v8, v11}, Lkotlin/jvm/internal/Intrinsics;->areEqual(Ljava/lang/Object;Ljava/lang/Object;)Z
 
-    if-eqz v3, :cond_c
+    move-result v8
 
-    .line 744
-    invoke-static {p3}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
-
-    move-result-object p2
-
-    invoke-interface {p4, v3, p2}, Lkotlin/jvm/functions/Function2;->invoke(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
-
-    move-result-object p2
-
-    check-cast p2, Ljava/lang/Number;
-
-    invoke-virtual {p2}, Ljava/lang/Number;->intValue()I
-
-    move-result p2
-
-    goto :goto_6
-
-    :cond_c
-    move p2, v0
-
-    :goto_6
-    if-lez v4, :cond_d
-
-    const/4 p3, 0x1
-
-    move v2, p3
+    if-eqz v8, :cond_6
 
     goto :goto_7
 
-    :cond_d
-    move v2, v0
+    :cond_6
+    add-int/lit8 v6, v6, 0x1
+
+    goto :goto_6
+
+    :cond_7
+    move-object v7, v5
+
+    :goto_7
+    check-cast v7, Landroidx/compose/ui/layout/IntrinsicMeasurable;
+
+    if-eqz v7, :cond_8
+
+    .line 747
+    invoke-static {v4}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v2
+
+    invoke-interface {v1, v7, v2}, Lkotlin/jvm/functions/Function2;->invoke(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object v2
+
+    check-cast v2, Ljava/lang/Number;
+
+    invoke-virtual {v2}, Ljava/lang/Number;->intValue()I
+
+    move-result v2
+
+    move v8, v2
+
+    goto :goto_8
+
+    :cond_8
+    move v8, v3
+
+    .line 1061
+    :goto_8
+    invoke-interface/range {p2 .. p2}, Ljava/util/List;->size()I
+
+    move-result v2
+
+    move v6, v3
+
+    :goto_9
+    if-ge v6, v2, :cond_e
+
+    .line 1062
+    invoke-interface {v0, v6}, Ljava/util/List;->get(I)Ljava/lang/Object;
+
+    move-result-object v7
+
+    .line 1059
+    move-object v11, v7
+
+    check-cast v11, Landroidx/compose/ui/layout/IntrinsicMeasurable;
+
+    .line 751
+    invoke-static {v11}, Landroidx/compose/material/TextFieldImplKt;->getLayoutId(Landroidx/compose/ui/layout/IntrinsicMeasurable;)Ljava/lang/Object;
+
+    move-result-object v11
+
+    const-string v12, "TextField"
+
+    invoke-static {v11, v12}, Lkotlin/jvm/internal/Intrinsics;->areEqual(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    move-result v11
+
+    if-eqz v11, :cond_d
+
+    invoke-static {v4}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v2
+
+    invoke-interface {v1, v7, v2}, Lkotlin/jvm/functions/Function2;->invoke(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object v2
+
+    check-cast v2, Ljava/lang/Number;
+
+    invoke-virtual {v2}, Ljava/lang/Number;->intValue()I
+
+    move-result v6
+
+    .line 1070
+    invoke-interface/range {p2 .. p2}, Ljava/util/List;->size()I
+
+    move-result v2
+
+    move v7, v3
+
+    :goto_a
+    if-ge v7, v2, :cond_a
+
+    .line 1071
+    invoke-interface {v0, v7}, Ljava/util/List;->get(I)Ljava/lang/Object;
+
+    move-result-object v11
+
+    .line 1068
+    move-object v12, v11
+
+    check-cast v12, Landroidx/compose/ui/layout/IntrinsicMeasurable;
+
+    .line 752
+    invoke-static {v12}, Landroidx/compose/material/TextFieldImplKt;->getLayoutId(Landroidx/compose/ui/layout/IntrinsicMeasurable;)Ljava/lang/Object;
+
+    move-result-object v12
+
+    const-string v13, "Hint"
+
+    invoke-static {v12, v13}, Lkotlin/jvm/internal/Intrinsics;->areEqual(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    move-result v12
+
+    if-eqz v12, :cond_9
+
+    move-object v5, v11
+
+    goto :goto_b
+
+    :cond_9
+    add-int/lit8 v7, v7, 0x1
+
+    goto :goto_a
+
+    :cond_a
+    :goto_b
+    check-cast v5, Landroidx/compose/ui/layout/IntrinsicMeasurable;
+
+    if-eqz v5, :cond_b
 
     .line 753
-    :goto_7
+    invoke-static {v4}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v0
+
+    invoke-interface {v1, v5, v0}, Lkotlin/jvm/functions/Function2;->invoke(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, Ljava/lang/Number;
+
+    invoke-virtual {v0}, Ljava/lang/Number;->intValue()I
+
+    move-result v0
+
+    move v11, v0
+
+    goto :goto_c
+
+    :cond_b
+    move v11, v3
+
+    :goto_c
+    if-lez v8, :cond_c
+
+    const/4 v3, 0x1
+
+    :cond_c
+    move v7, v3
+
+    .line 763
     invoke-static {}, Landroidx/compose/material/TextFieldImplKt;->getZeroConstraints()J
 
-    move-result-wide v7
+    move-result-wide v12
 
-    .line 754
-    invoke-interface {p1}, Landroidx/compose/ui/layout/IntrinsicMeasureScope;->getDensity()F
+    .line 764
+    invoke-interface/range {p1 .. p1}, Landroidx/compose/ui/layout/IntrinsicMeasureScope;->getDensity()F
 
-    move-result v9
+    move-result v14
 
-    .line 755
-    iget-object v10, p0, Landroidx/compose/material/TextFieldMeasurePolicy;->paddingValues:Landroidx/compose/foundation/layout/PaddingValues;
+    move-object/from16 v15, p0
 
-    move v3, v4
+    .line 765
+    iget-object v15, v15, Landroidx/compose/material/TextFieldMeasurePolicy;->paddingValues:Landroidx/compose/foundation/layout/PaddingValues;
 
-    move v4, v6
+    .line 756
+    invoke-static/range {v6 .. v15}, Landroidx/compose/material/TextFieldKt;->access$calculateHeight-O3s9Psw(IZIIIIJFLandroidx/compose/foundation/layout/PaddingValues;)I
 
-    move v6, p2
+    move-result v0
 
-    .line 746
-    invoke-static/range {v1 .. v10}, Landroidx/compose/material/TextFieldKt;->access$calculateHeight-O3s9Psw(IZIIIIJFLandroidx/compose/foundation/layout/PaddingValues;)I
+    return v0
 
-    move-result p0
+    :cond_d
+    move-object/from16 v15, p0
 
-    return p0
+    add-int/lit8 v6, v6, 0x1
 
-    .line 936
+    goto :goto_9
+
+    .line 1066
     :cond_e
-    new-instance p0, Ljava/util/NoSuchElementException;
+    new-instance v0, Ljava/util/NoSuchElementException;
 
-    const-string p1, "Collection contains no element matching the predicate."
+    const-string v1, "Collection contains no element matching the predicate."
 
-    invoke-direct {p0, p1}, Ljava/util/NoSuchElementException;-><init>(Ljava/lang/String;)V
+    invoke-direct {v0, v1}, Ljava/util/NoSuchElementException;-><init>(Ljava/lang/String;)V
 
-    throw p0
+    throw v0
 .end method
 
 .method private final intrinsicWidth(Ljava/util/List;ILkotlin/jvm/functions/Function2;)I
-    .locals 8
+    .locals 10
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -515,298 +557,111 @@
         }
     .end annotation
 
-    .line 704
-    check-cast p1, Ljava/lang/Iterable;
+    .line 989
+    invoke-interface {p1}, Ljava/util/List;->size()I
 
-    .line 933
-    invoke-interface {p1}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
+    move-result p0
 
-    move-result-object p0
+    const/4 v0, 0x0
 
-    :cond_0
-    invoke-interface {p0}, Ljava/util/Iterator;->hasNext()Z
+    move v1, v0
 
-    move-result v0
+    :goto_0
+    if-ge v1, p0, :cond_d
 
-    if-eqz v0, :cond_d
+    .line 990
+    invoke-interface {p1, v1}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
-    invoke-interface {p0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+    move-result-object v2
 
-    move-result-object v0
-
-    move-object v1, v0
-
-    check-cast v1, Landroidx/compose/ui/layout/IntrinsicMeasurable;
-
-    .line 704
-    invoke-static {v1}, Landroidx/compose/material/TextFieldImplKt;->getLayoutId(Landroidx/compose/ui/layout/IntrinsicMeasurable;)Ljava/lang/Object;
-
-    move-result-object v1
-
-    const-string v2, "TextField"
-
-    invoke-static {v1, v2}, Lkotlin/jvm/internal/Intrinsics;->areEqual(Ljava/lang/Object;Ljava/lang/Object;)Z
-
-    move-result v1
-
-    if-eqz v1, :cond_0
-
-    invoke-static {p2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
-
-    move-result-object p0
-
-    invoke-interface {p3, v0, p0}, Lkotlin/jvm/functions/Function2;->invoke(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
-
-    move-result-object p0
-
-    check-cast p0, Ljava/lang/Number;
-
-    invoke-virtual {p0}, Ljava/lang/Number;->intValue()I
-
-    move-result v2
-
-    .line 705
-    invoke-interface {p1}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
-
-    move-result-object p0
-
-    :cond_1
-    invoke-interface {p0}, Ljava/util/Iterator;->hasNext()Z
-
-    move-result v0
-
-    const/4 v1, 0x0
-
-    if-eqz v0, :cond_2
-
-    invoke-interface {p0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
-
-    move-result-object v0
-
-    move-object v3, v0
+    .line 987
+    move-object v3, v2
 
     check-cast v3, Landroidx/compose/ui/layout/IntrinsicMeasurable;
 
+    .line 708
     invoke-static {v3}, Landroidx/compose/material/TextFieldImplKt;->getLayoutId(Landroidx/compose/ui/layout/IntrinsicMeasurable;)Ljava/lang/Object;
 
     move-result-object v3
 
-    const-string v4, "Label"
+    const-string v4, "TextField"
 
     invoke-static {v3, v4}, Lkotlin/jvm/internal/Intrinsics;->areEqual(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v3
 
-    if-eqz v3, :cond_1
+    if-eqz v3, :cond_c
 
-    goto :goto_0
-
-    :cond_2
-    move-object v0, v1
-
-    :goto_0
-    check-cast v0, Landroidx/compose/ui/layout/IntrinsicMeasurable;
-
-    const/4 p0, 0x0
-
-    if-eqz v0, :cond_3
-
-    .line 706
     invoke-static {p2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
-    move-result-object v3
+    move-result-object p0
 
-    invoke-interface {p3, v0, v3}, Lkotlin/jvm/functions/Function2;->invoke(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-interface {p3, v2, p0}, Lkotlin/jvm/functions/Function2;->invoke(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    move-result-object v0
+    move-result-object p0
 
-    check-cast v0, Ljava/lang/Number;
+    check-cast p0, Ljava/lang/Number;
 
-    invoke-virtual {v0}, Ljava/lang/Number;->intValue()I
+    invoke-virtual {p0}, Ljava/lang/Number;->intValue()I
 
-    move-result v0
+    move-result v3
 
-    move v3, v0
+    .line 998
+    invoke-interface {p1}, Ljava/util/List;->size()I
 
-    goto :goto_1
+    move-result p0
 
-    :cond_3
-    move v3, p0
+    move v1, v0
 
-    .line 708
     :goto_1
-    invoke-interface {p1}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
+    const/4 v2, 0x0
 
-    move-result-object v0
+    if-ge v1, p0, :cond_1
 
-    :cond_4
-    invoke-interface {v0}, Ljava/util/Iterator;->hasNext()Z
-
-    move-result v4
-
-    if-eqz v4, :cond_5
-
-    invoke-interface {v0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+    .line 999
+    invoke-interface {p1, v1}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
     move-result-object v4
 
+    .line 996
     move-object v5, v4
 
     check-cast v5, Landroidx/compose/ui/layout/IntrinsicMeasurable;
 
+    .line 709
     invoke-static {v5}, Landroidx/compose/material/TextFieldImplKt;->getLayoutId(Landroidx/compose/ui/layout/IntrinsicMeasurable;)Ljava/lang/Object;
 
     move-result-object v5
 
-    const-string v6, "Trailing"
+    const-string v6, "Label"
 
     invoke-static {v5, v6}, Lkotlin/jvm/internal/Intrinsics;->areEqual(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v5
 
-    if-eqz v5, :cond_4
+    if-eqz v5, :cond_0
 
     goto :goto_2
 
-    :cond_5
-    move-object v4, v1
+    :cond_0
+    add-int/lit8 v1, v1, 0x1
+
+    goto :goto_1
+
+    :cond_1
+    move-object v4, v2
 
     :goto_2
     check-cast v4, Landroidx/compose/ui/layout/IntrinsicMeasurable;
 
-    if-eqz v4, :cond_6
+    if-eqz v4, :cond_2
 
-    .line 709
-    invoke-static {p2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
-
-    move-result-object v0
-
-    invoke-interface {p3, v4, v0}, Lkotlin/jvm/functions/Function2;->invoke(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
-
-    move-result-object v0
-
-    check-cast v0, Ljava/lang/Number;
-
-    invoke-virtual {v0}, Ljava/lang/Number;->intValue()I
-
-    move-result v0
-
-    move v4, v0
-
-    goto :goto_3
-
-    :cond_6
-    move v4, p0
-
-    .line 711
-    :goto_3
-    invoke-interface {p1}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
-
-    move-result-object v0
-
-    :cond_7
-    invoke-interface {v0}, Ljava/util/Iterator;->hasNext()Z
-
-    move-result v5
-
-    if-eqz v5, :cond_8
-
-    invoke-interface {v0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
-
-    move-result-object v5
-
-    move-object v6, v5
-
-    check-cast v6, Landroidx/compose/ui/layout/IntrinsicMeasurable;
-
-    invoke-static {v6}, Landroidx/compose/material/TextFieldImplKt;->getLayoutId(Landroidx/compose/ui/layout/IntrinsicMeasurable;)Ljava/lang/Object;
-
-    move-result-object v6
-
-    const-string v7, "Leading"
-
-    invoke-static {v6, v7}, Lkotlin/jvm/internal/Intrinsics;->areEqual(Ljava/lang/Object;Ljava/lang/Object;)Z
-
-    move-result v6
-
-    if-eqz v6, :cond_7
-
-    goto :goto_4
-
-    :cond_8
-    move-object v5, v1
-
-    :goto_4
-    check-cast v5, Landroidx/compose/ui/layout/IntrinsicMeasurable;
-
-    if-eqz v5, :cond_9
-
-    .line 712
-    invoke-static {p2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
-
-    move-result-object v0
-
-    invoke-interface {p3, v5, v0}, Lkotlin/jvm/functions/Function2;->invoke(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
-
-    move-result-object v0
-
-    check-cast v0, Ljava/lang/Number;
-
-    invoke-virtual {v0}, Ljava/lang/Number;->intValue()I
-
-    move-result v0
-
-    goto :goto_5
-
-    :cond_9
-    move v0, p0
-
-    .line 714
-    :goto_5
-    invoke-interface {p1}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
-
-    move-result-object p1
-
-    :cond_a
-    invoke-interface {p1}, Ljava/util/Iterator;->hasNext()Z
-
-    move-result v5
-
-    if-eqz v5, :cond_b
-
-    invoke-interface {p1}, Ljava/util/Iterator;->next()Ljava/lang/Object;
-
-    move-result-object v5
-
-    move-object v6, v5
-
-    check-cast v6, Landroidx/compose/ui/layout/IntrinsicMeasurable;
-
-    invoke-static {v6}, Landroidx/compose/material/TextFieldImplKt;->getLayoutId(Landroidx/compose/ui/layout/IntrinsicMeasurable;)Ljava/lang/Object;
-
-    move-result-object v6
-
-    const-string v7, "Hint"
-
-    invoke-static {v6, v7}, Lkotlin/jvm/internal/Intrinsics;->areEqual(Ljava/lang/Object;Ljava/lang/Object;)Z
-
-    move-result v6
-
-    if-eqz v6, :cond_a
-
-    move-object v1, v5
-
-    :cond_b
-    check-cast v1, Landroidx/compose/ui/layout/IntrinsicMeasurable;
-
-    if-eqz v1, :cond_c
-
-    .line 715
+    .line 710
     invoke-static {p2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object p0
 
-    invoke-interface {p3, v1, p0}, Lkotlin/jvm/functions/Function2;->invoke(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-interface {p3, v4, p0}, Lkotlin/jvm/functions/Function2;->invoke(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p0
 
@@ -816,24 +671,238 @@
 
     move-result p0
 
-    .line 723
-    :cond_c
-    invoke-static {}, Landroidx/compose/material/TextFieldImplKt;->getZeroConstraints()J
-
-    move-result-wide v5
-
-    move v1, v4
-
     move v4, p0
 
-    .line 717
-    invoke-static/range {v0 .. v6}, Landroidx/compose/material/TextFieldKt;->access$calculateWidth-VsPV1Ek(IIIIIJ)I
+    goto :goto_3
+
+    :cond_2
+    move v4, v0
+
+    .line 1007
+    :goto_3
+    invoke-interface {p1}, Ljava/util/List;->size()I
+
+    move-result p0
+
+    move v1, v0
+
+    :goto_4
+    if-ge v1, p0, :cond_4
+
+    .line 1008
+    invoke-interface {p1, v1}, Ljava/util/List;->get(I)Ljava/lang/Object;
+
+    move-result-object v5
+
+    .line 1005
+    move-object v6, v5
+
+    check-cast v6, Landroidx/compose/ui/layout/IntrinsicMeasurable;
+
+    .line 712
+    invoke-static {v6}, Landroidx/compose/material/TextFieldImplKt;->getLayoutId(Landroidx/compose/ui/layout/IntrinsicMeasurable;)Ljava/lang/Object;
+
+    move-result-object v6
+
+    const-string v7, "Trailing"
+
+    invoke-static {v6, v7}, Lkotlin/jvm/internal/Intrinsics;->areEqual(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    move-result v6
+
+    if-eqz v6, :cond_3
+
+    goto :goto_5
+
+    :cond_3
+    add-int/lit8 v1, v1, 0x1
+
+    goto :goto_4
+
+    :cond_4
+    move-object v5, v2
+
+    :goto_5
+    check-cast v5, Landroidx/compose/ui/layout/IntrinsicMeasurable;
+
+    if-eqz v5, :cond_5
+
+    .line 713
+    invoke-static {p2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object p0
+
+    invoke-interface {p3, v5, p0}, Lkotlin/jvm/functions/Function2;->invoke(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object p0
+
+    check-cast p0, Ljava/lang/Number;
+
+    invoke-virtual {p0}, Ljava/lang/Number;->intValue()I
+
+    move-result p0
+
+    goto :goto_6
+
+    :cond_5
+    move p0, v0
+
+    .line 1016
+    :goto_6
+    invoke-interface {p1}, Ljava/util/List;->size()I
+
+    move-result v1
+
+    move v5, v0
+
+    :goto_7
+    if-ge v5, v1, :cond_7
+
+    .line 1017
+    invoke-interface {p1, v5}, Ljava/util/List;->get(I)Ljava/lang/Object;
+
+    move-result-object v6
+
+    .line 1014
+    move-object v7, v6
+
+    check-cast v7, Landroidx/compose/ui/layout/IntrinsicMeasurable;
+
+    .line 715
+    invoke-static {v7}, Landroidx/compose/material/TextFieldImplKt;->getLayoutId(Landroidx/compose/ui/layout/IntrinsicMeasurable;)Ljava/lang/Object;
+
+    move-result-object v7
+
+    const-string v8, "Leading"
+
+    invoke-static {v7, v8}, Lkotlin/jvm/internal/Intrinsics;->areEqual(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    move-result v7
+
+    if-eqz v7, :cond_6
+
+    goto :goto_8
+
+    :cond_6
+    add-int/lit8 v5, v5, 0x1
+
+    goto :goto_7
+
+    :cond_7
+    move-object v6, v2
+
+    :goto_8
+    check-cast v6, Landroidx/compose/ui/layout/IntrinsicMeasurable;
+
+    if-eqz v6, :cond_8
+
+    .line 716
+    invoke-static {p2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v1
+
+    invoke-interface {p3, v6, v1}, Lkotlin/jvm/functions/Function2;->invoke(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object v1
+
+    check-cast v1, Ljava/lang/Number;
+
+    invoke-virtual {v1}, Ljava/lang/Number;->intValue()I
+
+    move-result v1
+
+    goto :goto_9
+
+    :cond_8
+    move v1, v0
+
+    .line 1025
+    :goto_9
+    invoke-interface {p1}, Ljava/util/List;->size()I
+
+    move-result v5
+
+    move v6, v0
+
+    :goto_a
+    if-ge v6, v5, :cond_a
+
+    .line 1026
+    invoke-interface {p1, v6}, Ljava/util/List;->get(I)Ljava/lang/Object;
+
+    move-result-object v7
+
+    .line 1023
+    move-object v8, v7
+
+    check-cast v8, Landroidx/compose/ui/layout/IntrinsicMeasurable;
+
+    .line 718
+    invoke-static {v8}, Landroidx/compose/material/TextFieldImplKt;->getLayoutId(Landroidx/compose/ui/layout/IntrinsicMeasurable;)Ljava/lang/Object;
+
+    move-result-object v8
+
+    const-string v9, "Hint"
+
+    invoke-static {v8, v9}, Lkotlin/jvm/internal/Intrinsics;->areEqual(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    move-result v8
+
+    if-eqz v8, :cond_9
+
+    move-object v2, v7
+
+    goto :goto_b
+
+    :cond_9
+    add-int/lit8 v6, v6, 0x1
+
+    goto :goto_a
+
+    :cond_a
+    :goto_b
+    check-cast v2, Landroidx/compose/ui/layout/IntrinsicMeasurable;
+
+    if-eqz v2, :cond_b
+
+    .line 719
+    invoke-static {p2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object p1
+
+    invoke-interface {p3, v2, p1}, Lkotlin/jvm/functions/Function2;->invoke(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object p1
+
+    check-cast p1, Ljava/lang/Number;
+
+    invoke-virtual {p1}, Ljava/lang/Number;->intValue()I
+
+    move-result v0
+
+    :cond_b
+    move v5, v0
+
+    .line 727
+    invoke-static {}, Landroidx/compose/material/TextFieldImplKt;->getZeroConstraints()J
+
+    move-result-wide v6
+
+    move v2, p0
+
+    .line 721
+    invoke-static/range {v1 .. v7}, Landroidx/compose/material/TextFieldKt;->access$calculateWidth-VsPV1Ek(IIIIIJ)I
 
     move-result p0
 
     return p0
 
-    .line 934
+    :cond_c
+    add-int/lit8 v1, v1, 0x1
+
+    goto/16 :goto_0
+
+    .line 994
     :cond_d
     new-instance p0, Ljava/util/NoSuchElementException;
 
@@ -859,15 +928,7 @@
         }
     .end annotation
 
-    const-string v0, "<this>"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string v0, "measurables"
-
-    invoke-static {p2, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 666
+    .line 670
     sget-object v0, Landroidx/compose/material/TextFieldMeasurePolicy$maxIntrinsicHeight$1;->INSTANCE:Landroidx/compose/material/TextFieldMeasurePolicy$maxIntrinsicHeight$1;
 
     check-cast v0, Lkotlin/jvm/functions/Function2;
@@ -880,7 +941,7 @@
 .end method
 
 .method public maxIntrinsicWidth(Landroidx/compose/ui/layout/IntrinsicMeasureScope;Ljava/util/List;I)I
-    .locals 1
+    .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -892,15 +953,7 @@
         }
     .end annotation
 
-    const-string v0, "<this>"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string p1, "measurables"
-
-    invoke-static {p2, p1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 684
+    .line 688
     sget-object p1, Landroidx/compose/material/TextFieldMeasurePolicy$maxIntrinsicWidth$1;->INSTANCE:Landroidx/compose/material/TextFieldMeasurePolicy$maxIntrinsicWidth$1;
 
     check-cast p1, Lkotlin/jvm/functions/Function2;
@@ -913,7 +966,7 @@
 .end method
 
 .method public measure-3p2s80s(Landroidx/compose/ui/layout/MeasureScope;Ljava/util/List;J)Landroidx/compose/ui/layout/MeasureResult;
-    .locals 27
+    .locals 28
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -932,15 +985,7 @@
 
     move-object/from16 v0, p2
 
-    const-string v1, "$this$measure"
-
-    invoke-static {v14, v1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string v1, "measurables"
-
-    invoke-static {v0, v1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 550
+    .line 554
     iget-object v1, v10, Landroidx/compose/material/TextFieldMeasurePolicy;->paddingValues:Landroidx/compose/foundation/layout/PaddingValues;
 
     invoke-interface {v1}, Landroidx/compose/foundation/layout/PaddingValues;->calculateTopPadding-D9Ej5fM()F
@@ -951,7 +996,7 @@
 
     move-result v2
 
-    .line 551
+    .line 555
     iget-object v1, v10, Landroidx/compose/material/TextFieldMeasurePolicy;->paddingValues:Landroidx/compose/foundation/layout/PaddingValues;
 
     invoke-interface {v1}, Landroidx/compose/foundation/layout/PaddingValues;->calculateBottomPadding-D9Ej5fM()F
@@ -962,7 +1007,7 @@
 
     move-result v1
 
-    .line 554
+    .line 558
     invoke-static {}, Landroidx/compose/material/TextFieldKt;->getTextFieldTopPadding()F
 
     move-result v3
@@ -985,135 +1030,145 @@
 
     move-wide/from16 v15, p3
 
-    .line 558
+    .line 562
     invoke-static/range {v15 .. v22}, Landroidx/compose/ui/unit/Constraints;->copy-Zbe2FdA$default(JIIIIILjava/lang/Object;)J
 
     move-result-wide v8
 
-    .line 560
-    check-cast v0, Ljava/lang/Iterable;
+    .line 944
+    invoke-interface/range {p2 .. p2}, Ljava/util/List;->size()I
 
-    invoke-interface {v0}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
+    move-result v3
 
-    move-result-object v3
+    const/4 v4, 0x0
 
-    :cond_0
-    invoke-interface {v3}, Ljava/util/Iterator;->hasNext()Z
+    :goto_0
+    if-ge v4, v3, :cond_1
 
-    move-result v4
-
-    if-eqz v4, :cond_1
-
-    invoke-interface {v3}, Ljava/util/Iterator;->next()Ljava/lang/Object;
-
-    move-result-object v4
-
-    move-object v5, v4
-
-    check-cast v5, Landroidx/compose/ui/layout/Measurable;
-
-    invoke-static {v5}, Landroidx/compose/ui/layout/LayoutIdKt;->getLayoutId(Landroidx/compose/ui/layout/Measurable;)Ljava/lang/Object;
+    .line 945
+    invoke-interface {v0, v4}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
     move-result-object v5
 
-    const-string v6, "Leading"
+    .line 942
+    move-object v6, v5
 
-    invoke-static {v5, v6}, Lkotlin/jvm/internal/Intrinsics;->areEqual(Ljava/lang/Object;Ljava/lang/Object;)Z
+    check-cast v6, Landroidx/compose/ui/layout/Measurable;
 
-    move-result v5
+    .line 564
+    invoke-static {v6}, Landroidx/compose/ui/layout/LayoutIdKt;->getLayoutId(Landroidx/compose/ui/layout/Measurable;)Ljava/lang/Object;
 
-    if-eqz v5, :cond_0
+    move-result-object v6
+
+    const-string v7, "Leading"
+
+    invoke-static {v6, v7}, Lkotlin/jvm/internal/Intrinsics;->areEqual(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    move-result v6
+
+    if-eqz v6, :cond_0
+
+    goto :goto_1
+
+    :cond_0
+    add-int/lit8 v4, v4, 0x1
 
     goto :goto_0
 
     :cond_1
-    const/4 v4, 0x0
+    const/4 v5, 0x0
 
-    :goto_0
-    check-cast v4, Landroidx/compose/ui/layout/Measurable;
-
-    if-eqz v4, :cond_2
-
-    invoke-interface {v4, v8, v9}, Landroidx/compose/ui/layout/Measurable;->measure-BRTryo0(J)Landroidx/compose/ui/layout/Placeable;
-
-    move-result-object v3
-
-    move-object v13, v3
-
-    goto :goto_1
-
-    :cond_2
-    const/4 v13, 0x0
-
-    .line 561
     :goto_1
-    invoke-static {v13}, Landroidx/compose/material/TextFieldImplKt;->widthOrZero(Landroidx/compose/ui/layout/Placeable;)I
-
-    move-result v15
-
-    .line 566
-    invoke-interface {v0}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
-
-    move-result-object v3
-
-    :cond_3
-    invoke-interface {v3}, Ljava/util/Iterator;->hasNext()Z
-
-    move-result v4
-
-    if-eqz v4, :cond_4
-
-    invoke-interface {v3}, Ljava/util/Iterator;->next()Ljava/lang/Object;
-
-    move-result-object v4
-
-    move-object v5, v4
-
     check-cast v5, Landroidx/compose/ui/layout/Measurable;
 
-    invoke-static {v5}, Landroidx/compose/ui/layout/LayoutIdKt;->getLayoutId(Landroidx/compose/ui/layout/Measurable;)Ljava/lang/Object;
+    if-eqz v5, :cond_2
 
-    move-result-object v5
+    invoke-interface {v5, v8, v9}, Landroidx/compose/ui/layout/Measurable;->measure-BRTryo0(J)Landroidx/compose/ui/layout/Placeable;
 
-    const-string v6, "Trailing"
+    move-result-object v3
 
-    invoke-static {v5, v6}, Lkotlin/jvm/internal/Intrinsics;->areEqual(Ljava/lang/Object;Ljava/lang/Object;)Z
-
-    move-result v5
-
-    if-eqz v5, :cond_3
+    move-object v15, v3
 
     goto :goto_2
 
-    :cond_4
+    :cond_2
+    const/4 v15, 0x0
+
+    .line 565
+    :goto_2
+    invoke-static {v15}, Landroidx/compose/material/TextFieldImplKt;->widthOrZero(Landroidx/compose/ui/layout/Placeable;)I
+
+    move-result v7
+
+    .line 953
+    invoke-interface/range {p2 .. p2}, Ljava/util/List;->size()I
+
+    move-result v3
+
     const/4 v4, 0x0
 
-    :goto_2
-    move-object v7, v4
+    :goto_3
+    if-ge v4, v3, :cond_4
 
-    check-cast v7, Landroidx/compose/ui/layout/Measurable;
+    .line 954
+    invoke-interface {v0, v4}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
-    if-eqz v7, :cond_5
+    move-result-object v5
 
-    neg-int v5, v15
+    .line 951
+    move-object v6, v5
 
-    const/16 v16, 0x2
+    check-cast v6, Landroidx/compose/ui/layout/Measurable;
 
-    const/16 v17, 0x0
+    .line 570
+    invoke-static {v6}, Landroidx/compose/ui/layout/LayoutIdKt;->getLayoutId(Landroidx/compose/ui/layout/Measurable;)Ljava/lang/Object;
+
+    move-result-object v6
+
+    const-string v11, "Trailing"
+
+    invoke-static {v6, v11}, Lkotlin/jvm/internal/Intrinsics;->areEqual(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    move-result v6
+
+    if-eqz v6, :cond_3
+
+    goto :goto_4
+
+    :cond_3
+    add-int/lit8 v4, v4, 0x1
+
+    goto :goto_3
+
+    :cond_4
+    const/4 v5, 0x0
+
+    :goto_4
+    move-object v11, v5
+
+    check-cast v11, Landroidx/compose/ui/layout/Measurable;
+
+    if-eqz v11, :cond_5
+
+    neg-int v5, v7
+
+    const/16 v17, 0x2
+
+    const/16 v18, 0x0
 
     const/4 v6, 0x0
 
     move-wide v3, v8
 
-    move-object v11, v7
+    move/from16 v19, v7
 
-    move/from16 v7, v16
+    move/from16 v7, v17
 
-    move-wide v9, v8
+    move-wide v13, v8
 
-    move-object/from16 v8, v17
+    move-object/from16 v8, v18
 
-    .line 567
+    .line 571
     invoke-static/range {v3 .. v8}, Landroidx/compose/ui/unit/ConstraintsKt;->offset-NN6Ew-U$default(JIIILjava/lang/Object;)J
 
     move-result-wide v3
@@ -1122,378 +1177,393 @@
 
     move-result-object v3
 
-    move-object v11, v3
+    move-object v9, v3
 
-    goto :goto_3
+    goto :goto_5
 
     :cond_5
-    move-wide v9, v8
+    move/from16 v19, v7
 
-    const/4 v11, 0x0
+    move-wide v13, v8
 
-    .line 568
-    :goto_3
-    invoke-static {v11}, Landroidx/compose/material/TextFieldImplKt;->widthOrZero(Landroidx/compose/ui/layout/Placeable;)I
+    const/4 v9, 0x0
+
+    .line 572
+    :goto_5
+    invoke-static {v9}, Landroidx/compose/material/TextFieldImplKt;->widthOrZero(Landroidx/compose/ui/layout/Placeable;)I
 
     move-result v3
 
-    add-int/2addr v15, v3
+    add-int v7, v19, v3
 
     neg-int v3, v1
 
-    neg-int v4, v15
+    neg-int v4, v7
 
-    .line 574
-    invoke-static {v9, v10, v4, v3}, Landroidx/compose/ui/unit/ConstraintsKt;->offset-NN6Ew-U(JII)J
+    .line 578
+    invoke-static {v13, v14, v4, v3}, Landroidx/compose/ui/unit/ConstraintsKt;->offset-NN6Ew-U(JII)J
 
     move-result-wide v5
 
-    .line 579
-    invoke-interface {v0}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
+    .line 962
+    invoke-interface/range {p2 .. p2}, Ljava/util/List;->size()I
 
-    move-result-object v7
+    move-result v7
 
-    :cond_6
-    invoke-interface {v7}, Ljava/util/Iterator;->hasNext()Z
-
-    move-result v8
-
-    if-eqz v8, :cond_7
-
-    invoke-interface {v7}, Ljava/util/Iterator;->next()Ljava/lang/Object;
-
-    move-result-object v8
-
-    move-object v9, v8
-
-    check-cast v9, Landroidx/compose/ui/layout/Measurable;
-
-    invoke-static {v9}, Landroidx/compose/ui/layout/LayoutIdKt;->getLayoutId(Landroidx/compose/ui/layout/Measurable;)Ljava/lang/Object;
-
-    move-result-object v9
-
-    const-string v10, "Label"
-
-    invoke-static {v9, v10}, Lkotlin/jvm/internal/Intrinsics;->areEqual(Ljava/lang/Object;Ljava/lang/Object;)Z
-
-    move-result v9
-
-    if-eqz v9, :cond_6
-
-    goto :goto_4
-
-    :cond_7
     const/4 v8, 0x0
 
-    :goto_4
-    check-cast v8, Landroidx/compose/ui/layout/Measurable;
+    :goto_6
+    if-ge v8, v7, :cond_7
 
-    if-eqz v8, :cond_8
+    .line 963
+    invoke-interface {v0, v8}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
-    invoke-interface {v8, v5, v6}, Landroidx/compose/ui/layout/Measurable;->measure-BRTryo0(J)Landroidx/compose/ui/layout/Placeable;
+    move-result-object v11
+
+    .line 960
+    move-object v13, v11
+
+    check-cast v13, Landroidx/compose/ui/layout/Measurable;
+
+    .line 583
+    invoke-static {v13}, Landroidx/compose/ui/layout/LayoutIdKt;->getLayoutId(Landroidx/compose/ui/layout/Measurable;)Ljava/lang/Object;
+
+    move-result-object v13
+
+    const-string v14, "Label"
+
+    invoke-static {v13, v14}, Lkotlin/jvm/internal/Intrinsics;->areEqual(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    move-result v13
+
+    if-eqz v13, :cond_6
+
+    goto :goto_7
+
+    :cond_6
+    add-int/lit8 v8, v8, 0x1
+
+    goto :goto_6
+
+    :cond_7
+    const/4 v11, 0x0
+
+    :goto_7
+    check-cast v11, Landroidx/compose/ui/layout/Measurable;
+
+    if-eqz v11, :cond_8
+
+    invoke-interface {v11, v5, v6}, Landroidx/compose/ui/layout/Measurable;->measure-BRTryo0(J)Landroidx/compose/ui/layout/Placeable;
 
     move-result-object v5
 
-    goto :goto_5
+    goto :goto_8
 
     :cond_8
     const/4 v5, 0x0
 
-    :goto_5
-    const/4 v6, 0x0
-
+    :goto_8
     if-eqz v5, :cond_a
 
-    .line 580
+    .line 584
     invoke-static {}, Landroidx/compose/ui/layout/AlignmentLineKt;->getLastBaseline()Landroidx/compose/ui/layout/HorizontalAlignmentLine;
 
-    move-result-object v7
+    move-result-object v6
 
-    check-cast v7, Landroidx/compose/ui/layout/AlignmentLine;
+    check-cast v6, Landroidx/compose/ui/layout/AlignmentLine;
 
-    invoke-virtual {v5, v7}, Landroidx/compose/ui/layout/Placeable;->get(Landroidx/compose/ui/layout/AlignmentLine;)I
+    invoke-virtual {v5, v6}, Landroidx/compose/ui/layout/Placeable;->get(Landroidx/compose/ui/layout/AlignmentLine;)I
 
-    move-result v7
+    move-result v6
 
-    const/high16 v8, -0x80000000
+    const/high16 v7, -0x80000000
 
-    if-eq v7, v8, :cond_9
+    if-eq v6, v7, :cond_9
 
-    goto :goto_6
+    goto :goto_9
 
-    .line 581
+    .line 585
     :cond_9
     invoke-virtual {v5}, Landroidx/compose/ui/layout/Placeable;->getHeight()I
 
-    move-result v7
+    move-result v6
 
-    goto :goto_6
+    goto :goto_9
 
     :cond_a
-    move v7, v6
+    const/4 v6, 0x0
 
-    .line 583
-    :goto_6
-    invoke-static {v7, v2}, Ljava/lang/Math;->max(II)I
+    .line 587
+    :goto_9
+    invoke-static {v6, v2}, Ljava/lang/Math;->max(II)I
 
-    move-result v25
+    move-result v11
 
     if-eqz v5, :cond_b
 
     sub-int/2addr v3, v12
 
-    sub-int v3, v3, v25
+    sub-int/2addr v3, v11
 
-    goto :goto_7
+    goto :goto_a
 
     :cond_b
     neg-int v3, v2
 
     sub-int/2addr v3, v1
 
-    :goto_7
-    const/16 v21, 0xb
+    :goto_a
+    const/16 v24, 0xb
 
-    const/16 v22, 0x0
-
-    const/16 v17, 0x0
-
-    const/16 v18, 0x0
-
-    const/16 v19, 0x0
+    const/16 v25, 0x0
 
     const/16 v20, 0x0
 
-    move-wide/from16 v15, p3
-
-    .line 593
-    invoke-static/range {v15 .. v22}, Landroidx/compose/ui/unit/Constraints;->copy-Zbe2FdA$default(JIIIIILjava/lang/Object;)J
-
-    move-result-wide v8
-
-    .line 594
-    invoke-static {v8, v9, v4, v3}, Landroidx/compose/ui/unit/ConstraintsKt;->offset-NN6Ew-U(JII)J
-
-    move-result-wide v3
-
-    .line 931
-    invoke-interface {v0}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
-
-    move-result-object v1
-
-    :goto_8
-    invoke-interface {v1}, Ljava/util/Iterator;->hasNext()Z
-
-    move-result v8
-
-    if-eqz v8, :cond_11
-
-    invoke-interface {v1}, Ljava/util/Iterator;->next()Ljava/lang/Object;
-
-    move-result-object v8
-
-    check-cast v8, Landroidx/compose/ui/layout/Measurable;
-
-    .line 599
-    invoke-static {v8}, Landroidx/compose/ui/layout/LayoutIdKt;->getLayoutId(Landroidx/compose/ui/layout/Measurable;)Ljava/lang/Object;
-
-    move-result-object v9
-
-    const-string v10, "TextField"
-
-    invoke-static {v9, v10}, Lkotlin/jvm/internal/Intrinsics;->areEqual(Ljava/lang/Object;Ljava/lang/Object;)Z
-
-    move-result v9
-
-    if-eqz v9, :cond_10
-
-    .line 600
-    invoke-interface {v8, v3, v4}, Landroidx/compose/ui/layout/Measurable;->measure-BRTryo0(J)Landroidx/compose/ui/layout/Placeable;
-
-    move-result-object v8
-
-    const/16 v21, 0xe
+    const/16 v21, 0x0
 
     const/16 v22, 0x0
 
-    const/16 v17, 0x0
+    const/16 v23, 0x0
 
-    const/16 v18, 0x0
+    move-wide/from16 v18, p3
 
-    const/16 v19, 0x0
+    .line 597
+    invoke-static/range {v18 .. v25}, Landroidx/compose/ui/unit/Constraints;->copy-Zbe2FdA$default(JIIIIILjava/lang/Object;)J
 
-    const/16 v20, 0x0
+    move-result-wide v7
 
-    move-wide v15, v3
-
-    .line 603
-    invoke-static/range {v15 .. v22}, Landroidx/compose/ui/unit/Constraints;->copy-Zbe2FdA$default(JIIIIILjava/lang/Object;)J
+    .line 598
+    invoke-static {v7, v8, v4, v3}, Landroidx/compose/ui/unit/ConstraintsKt;->offset-NN6Ew-U(JII)J
 
     move-result-wide v3
 
-    .line 605
-    invoke-interface {v0}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
-
-    move-result-object v0
-
-    :cond_c
-    invoke-interface {v0}, Ljava/util/Iterator;->hasNext()Z
+    .line 971
+    invoke-interface/range {p2 .. p2}, Ljava/util/List;->size()I
 
     move-result v1
 
-    if-eqz v1, :cond_d
+    const/4 v7, 0x0
 
-    invoke-interface {v0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+    :goto_b
+    if-ge v7, v1, :cond_11
 
-    move-result-object v1
+    .line 972
+    invoke-interface {v0, v7}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
-    move-object v9, v1
+    move-result-object v8
 
-    check-cast v9, Landroidx/compose/ui/layout/Measurable;
+    .line 969
+    check-cast v8, Landroidx/compose/ui/layout/Measurable;
 
-    invoke-static {v9}, Landroidx/compose/ui/layout/LayoutIdKt;->getLayoutId(Landroidx/compose/ui/layout/Measurable;)Ljava/lang/Object;
+    .line 603
+    invoke-static {v8}, Landroidx/compose/ui/layout/LayoutIdKt;->getLayoutId(Landroidx/compose/ui/layout/Measurable;)Ljava/lang/Object;
 
-    move-result-object v9
+    move-result-object v13
 
-    const-string v10, "Hint"
+    const-string v14, "TextField"
 
-    invoke-static {v9, v10}, Lkotlin/jvm/internal/Intrinsics;->areEqual(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v13, v14}, Lkotlin/jvm/internal/Intrinsics;->areEqual(Ljava/lang/Object;Ljava/lang/Object;)Z
 
-    move-result v9
+    move-result v13
 
-    if-eqz v9, :cond_c
+    if-eqz v13, :cond_10
 
-    goto :goto_9
+    .line 604
+    invoke-interface {v8, v3, v4}, Landroidx/compose/ui/layout/Measurable;->measure-BRTryo0(J)Landroidx/compose/ui/layout/Placeable;
+
+    move-result-object v7
+
+    const/16 v24, 0xe
+
+    const/16 v25, 0x0
+
+    const/16 v20, 0x0
+
+    const/16 v21, 0x0
+
+    const/16 v22, 0x0
+
+    const/16 v23, 0x0
+
+    move-wide/from16 v18, v3
+
+    .line 607
+    invoke-static/range {v18 .. v25}, Landroidx/compose/ui/unit/Constraints;->copy-Zbe2FdA$default(JIIIIILjava/lang/Object;)J
+
+    move-result-wide v3
+
+    .line 980
+    invoke-interface/range {p2 .. p2}, Ljava/util/List;->size()I
+
+    move-result v1
+
+    const/4 v8, 0x0
+
+    :goto_c
+    if-ge v8, v1, :cond_d
+
+    .line 981
+    invoke-interface {v0, v8}, Ljava/util/List;->get(I)Ljava/lang/Object;
+
+    move-result-object v13
+
+    .line 978
+    move-object v14, v13
+
+    check-cast v14, Landroidx/compose/ui/layout/Measurable;
+
+    .line 609
+    invoke-static {v14}, Landroidx/compose/ui/layout/LayoutIdKt;->getLayoutId(Landroidx/compose/ui/layout/Measurable;)Ljava/lang/Object;
+
+    move-result-object v14
+
+    const-string v0, "Hint"
+
+    invoke-static {v14, v0}, Lkotlin/jvm/internal/Intrinsics;->areEqual(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_c
+
+    goto :goto_d
+
+    :cond_c
+    add-int/lit8 v8, v8, 0x1
+
+    move-object/from16 v0, p2
+
+    goto :goto_c
 
     :cond_d
-    const/4 v1, 0x0
+    const/4 v13, 0x0
 
-    :goto_9
-    check-cast v1, Landroidx/compose/ui/layout/Measurable;
+    :goto_d
+    check-cast v13, Landroidx/compose/ui/layout/Measurable;
 
-    if-eqz v1, :cond_e
+    if-eqz v13, :cond_e
 
-    .line 606
-    invoke-interface {v1, v3, v4}, Landroidx/compose/ui/layout/Measurable;->measure-BRTryo0(J)Landroidx/compose/ui/layout/Placeable;
+    .line 610
+    invoke-interface {v13, v3, v4}, Landroidx/compose/ui/layout/Measurable;->measure-BRTryo0(J)Landroidx/compose/ui/layout/Placeable;
 
     move-result-object v0
 
-    move-object v9, v0
+    move-object/from16 v17, v0
 
-    goto :goto_a
+    goto :goto_e
 
     :cond_e
-    const/4 v9, 0x0
+    const/16 v17, 0x0
 
-    .line 609
-    :goto_a
-    invoke-static {v13}, Landroidx/compose/material/TextFieldImplKt;->widthOrZero(Landroidx/compose/ui/layout/Placeable;)I
-
-    move-result v15
-
-    .line 610
-    invoke-static {v11}, Landroidx/compose/material/TextFieldImplKt;->widthOrZero(Landroidx/compose/ui/layout/Placeable;)I
-
-    move-result v16
-
-    .line 611
-    invoke-virtual {v8}, Landroidx/compose/ui/layout/Placeable;->getWidth()I
-
-    move-result v17
-
-    .line 612
-    invoke-static {v5}, Landroidx/compose/material/TextFieldImplKt;->widthOrZero(Landroidx/compose/ui/layout/Placeable;)I
+    .line 613
+    :goto_e
+    invoke-static {v15}, Landroidx/compose/material/TextFieldImplKt;->widthOrZero(Landroidx/compose/ui/layout/Placeable;)I
 
     move-result v18
 
-    .line 613
+    .line 614
     invoke-static {v9}, Landroidx/compose/material/TextFieldImplKt;->widthOrZero(Landroidx/compose/ui/layout/Placeable;)I
 
     move-result v19
 
-    move-wide/from16 v20, p3
-
-    .line 608
-    invoke-static/range {v15 .. v21}, Landroidx/compose/material/TextFieldKt;->access$calculateWidth-VsPV1Ek(IIIIIJ)I
-
-    move-result v26
-
-    .line 617
-    invoke-virtual {v8}, Landroidx/compose/ui/layout/Placeable;->getHeight()I
-
-    move-result v15
-
-    if-eqz v5, :cond_f
-
-    const/4 v6, 0x1
-
-    :cond_f
-    move/from16 v16, v6
-
-    .line 620
-    invoke-static {v13}, Landroidx/compose/material/TextFieldImplKt;->heightOrZero(Landroidx/compose/ui/layout/Placeable;)I
-
-    move-result v18
-
-    .line 621
-    invoke-static {v11}, Landroidx/compose/material/TextFieldImplKt;->heightOrZero(Landroidx/compose/ui/layout/Placeable;)I
-
-    move-result v19
-
-    .line 622
-    invoke-static {v9}, Landroidx/compose/material/TextFieldImplKt;->heightOrZero(Landroidx/compose/ui/layout/Placeable;)I
+    .line 615
+    invoke-virtual {v7}, Landroidx/compose/ui/layout/Placeable;->getWidth()I
 
     move-result v20
 
+    .line 616
+    invoke-static {v5}, Landroidx/compose/material/TextFieldImplKt;->widthOrZero(Landroidx/compose/ui/layout/Placeable;)I
+
+    move-result v21
+
+    .line 617
+    invoke-static/range {v17 .. v17}, Landroidx/compose/material/TextFieldImplKt;->widthOrZero(Landroidx/compose/ui/layout/Placeable;)I
+
+    move-result v22
+
+    move-wide/from16 v23, p3
+
+    .line 612
+    invoke-static/range {v18 .. v24}, Landroidx/compose/material/TextFieldKt;->access$calculateWidth-VsPV1Ek(IIIIIJ)I
+
+    move-result v14
+
+    .line 621
+    invoke-virtual {v7}, Landroidx/compose/ui/layout/Placeable;->getHeight()I
+
+    move-result v18
+
+    if-eqz v5, :cond_f
+
+    const/4 v0, 0x1
+
+    move/from16 v19, v0
+
+    goto :goto_f
+
+    :cond_f
+    const/16 v19, 0x0
+
     .line 624
-    invoke-interface/range {p1 .. p1}, Landroidx/compose/ui/layout/MeasureScope;->getDensity()F
+    :goto_f
+    invoke-static {v15}, Landroidx/compose/material/TextFieldImplKt;->heightOrZero(Landroidx/compose/ui/layout/Placeable;)I
+
+    move-result v21
+
+    .line 625
+    invoke-static {v9}, Landroidx/compose/material/TextFieldImplKt;->heightOrZero(Landroidx/compose/ui/layout/Placeable;)I
+
+    move-result v22
+
+    .line 626
+    invoke-static/range {v17 .. v17}, Landroidx/compose/material/TextFieldImplKt;->heightOrZero(Landroidx/compose/ui/layout/Placeable;)I
 
     move-result v23
 
-    move-object/from16 v10, p0
+    .line 628
+    invoke-interface/range {p1 .. p1}, Landroidx/compose/ui/layout/MeasureScope;->getDensity()F
 
-    .line 625
+    move-result v26
+
+    .line 629
     iget-object v0, v10, Landroidx/compose/material/TextFieldMeasurePolicy;->paddingValues:Landroidx/compose/foundation/layout/PaddingValues;
 
-    move/from16 v17, v25
+    move/from16 v20, v11
 
-    move-wide/from16 v21, p3
+    move-wide/from16 v24, p3
 
-    move-object/from16 v24, v0
+    move-object/from16 v27, v0
 
-    .line 616
-    invoke-static/range {v15 .. v24}, Landroidx/compose/material/TextFieldKt;->access$calculateHeight-O3s9Psw(IZIIIIJFLandroidx/compose/foundation/layout/PaddingValues;)I
+    .line 620
+    invoke-static/range {v18 .. v27}, Landroidx/compose/material/TextFieldKt;->access$calculateHeight-O3s9Psw(IZIIIIJFLandroidx/compose/foundation/layout/PaddingValues;)I
 
-    move-result v15
+    move-result v16
 
-    .line 628
-    new-instance v16, Landroidx/compose/material/TextFieldMeasurePolicy$measure$1;
+    .line 632
+    new-instance v18, Landroidx/compose/material/TextFieldMeasurePolicy$measure$1;
 
-    move-object/from16 v0, v16
+    move-object/from16 v0, v18
 
     move-object v1, v5
 
-    move v3, v7
+    move v3, v6
 
-    move/from16 v4, v26
+    move v4, v14
 
-    move v5, v15
+    move/from16 v5, v16
 
-    move-object v6, v8
+    move-object v6, v7
 
-    move-object v7, v9
+    move-object/from16 v7, v17
 
-    move-object v8, v13
+    move-object v8, v15
 
-    move-object v9, v11
-
-    move/from16 v11, v25
+    move-object/from16 v10, p0
 
     move-object/from16 v13, p1
 
     invoke-direct/range {v0 .. v13}, Landroidx/compose/material/TextFieldMeasurePolicy$measure$1;-><init>(Landroidx/compose/ui/layout/Placeable;IIIILandroidx/compose/ui/layout/Placeable;Landroidx/compose/ui/layout/Placeable;Landroidx/compose/ui/layout/Placeable;Landroidx/compose/ui/layout/Placeable;Landroidx/compose/material/TextFieldMeasurePolicy;IILandroidx/compose/ui/layout/MeasureScope;)V
 
-    move-object/from16 v4, v16
+    move-object/from16 v4, v18
 
     check-cast v4, Lkotlin/jvm/functions/Function1;
 
@@ -1505,9 +1575,9 @@
 
     move-object/from16 v0, p1
 
-    move/from16 v1, v26
+    move v1, v14
 
-    move v2, v15
+    move/from16 v2, v16
 
     invoke-static/range {v0 .. v6}, Landroidx/compose/ui/layout/MeasureScope;->layout$default(Landroidx/compose/ui/layout/MeasureScope;IILjava/util/Map;Lkotlin/jvm/functions/Function1;ILjava/lang/Object;)Landroidx/compose/ui/layout/MeasureResult;
 
@@ -1516,11 +1586,13 @@
     return-object v0
 
     :cond_10
-    move-object/from16 v10, p0
+    add-int/lit8 v7, v7, 0x1
 
-    goto/16 :goto_8
+    move-object/from16 v0, p2
 
-    .line 932
+    goto/16 :goto_b
+
+    .line 976
     :cond_11
     new-instance v0, Ljava/util/NoSuchElementException;
 
@@ -1544,15 +1616,7 @@
         }
     .end annotation
 
-    const-string v0, "<this>"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string v0, "measurables"
-
-    invoke-static {p2, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 675
+    .line 679
     sget-object v0, Landroidx/compose/material/TextFieldMeasurePolicy$minIntrinsicHeight$1;->INSTANCE:Landroidx/compose/material/TextFieldMeasurePolicy$minIntrinsicHeight$1;
 
     check-cast v0, Lkotlin/jvm/functions/Function2;
@@ -1565,7 +1629,7 @@
 .end method
 
 .method public minIntrinsicWidth(Landroidx/compose/ui/layout/IntrinsicMeasureScope;Ljava/util/List;I)I
-    .locals 1
+    .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -1577,15 +1641,7 @@
         }
     .end annotation
 
-    const-string v0, "<this>"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string p1, "measurables"
-
-    invoke-static {p2, p1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 693
+    .line 697
     sget-object p1, Landroidx/compose/material/TextFieldMeasurePolicy$minIntrinsicWidth$1;->INSTANCE:Landroidx/compose/material/TextFieldMeasurePolicy$minIntrinsicWidth$1;
 
     check-cast p1, Lkotlin/jvm/functions/Function2;

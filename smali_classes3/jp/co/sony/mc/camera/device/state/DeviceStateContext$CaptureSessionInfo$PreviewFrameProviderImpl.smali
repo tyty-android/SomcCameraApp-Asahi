@@ -25,7 +25,7 @@
 .method private constructor <init>(Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CaptureSessionInfo;)V
     .locals 0
 
-    .line 1115
+    .line 1129
     iput-object p1, p0, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CaptureSessionInfo$PreviewFrameProviderImpl;->this$1:Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CaptureSessionInfo;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -48,7 +48,7 @@
 
     monitor-enter p0
 
-    .line 1120
+    .line 1134
     :try_start_0
     iget-object v0, p0, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CaptureSessionInfo$PreviewFrameProviderImpl;->this$1:Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CaptureSessionInfo;
 
@@ -58,12 +58,12 @@
 
     if-nez v0, :cond_0
 
-    .line 1121
+    .line 1135
     monitor-exit p0
 
     return-void
 
-    .line 1123
+    .line 1137
     :cond_0
     :try_start_1
     iget-object v0, p0, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CaptureSessionInfo$PreviewFrameProviderImpl;->this$1:Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CaptureSessionInfo;
@@ -80,7 +80,7 @@
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
-    .line 1125
+    .line 1139
     monitor-exit p0
 
     return-void
@@ -98,7 +98,7 @@
 
     monitor-enter p0
 
-    .line 1130
+    .line 1144
     :try_start_0
     iget-object v0, p0, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CaptureSessionInfo$PreviewFrameProviderImpl;->this$1:Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CaptureSessionInfo;
 
@@ -108,12 +108,12 @@
 
     if-nez v0, :cond_0
 
-    .line 1131
+    .line 1145
     monitor-exit p0
 
     return-void
 
-    .line 1133
+    .line 1147
     :cond_0
     :try_start_1
     iget-object v0, p0, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CaptureSessionInfo$PreviewFrameProviderImpl;->this$1:Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CaptureSessionInfo;
@@ -126,7 +126,7 @@
 
     if-eqz p1, :cond_1
 
-    .line 1134
+    .line 1148
     iget-object p1, p0, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CaptureSessionInfo$PreviewFrameProviderImpl;->this$1:Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CaptureSessionInfo;
 
     iget-object p1, p1, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CaptureSessionInfo;->previewFrameReceiver:Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CaptureSessionInfo$PreviewFrameReceiver;
@@ -137,7 +137,7 @@
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
-    .line 1136
+    .line 1150
     :cond_1
     monitor-exit p0
 

@@ -128,10 +128,6 @@
         }
     .end annotation
 
-    const-string v0, "$this$listSaver"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
     .line 35
     new-instance v0, Ljava/util/ArrayList;
 

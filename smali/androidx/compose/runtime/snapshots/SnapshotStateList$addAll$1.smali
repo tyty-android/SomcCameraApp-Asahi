@@ -98,11 +98,7 @@
         }
     .end annotation
 
-    const-string v0, "it"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 104
+    .line 108
     iget v0, p0, Landroidx/compose/runtime/snapshots/SnapshotStateList$addAll$1;->$index:I
 
     iget-object p0, p0, Landroidx/compose/runtime/snapshots/SnapshotStateList$addAll$1;->$elements:Ljava/util/Collection;
@@ -121,7 +117,7 @@
 .method public bridge synthetic invoke(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
 
-    .line 103
+    .line 107
     check-cast p1, Ljava/util/List;
 
     invoke-virtual {p0, p1}, Landroidx/compose/runtime/snapshots/SnapshotStateList$addAll$1;->invoke(Ljava/util/List;)Ljava/lang/Boolean;

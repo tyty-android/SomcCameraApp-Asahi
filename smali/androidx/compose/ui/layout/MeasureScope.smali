@@ -13,6 +13,10 @@
     }
 .end annotation
 
+.annotation system Ldalvik/annotation/SourceDebugExtension;
+    value = "SMAP\nMeasureScope.kt\nKotlin\n*S Kotlin\n*F\n+ 1 MeasureScope.kt\nandroidx/compose/ui/layout/MeasureScope\n+ 2 LookaheadDelegate.kt\nandroidx/compose/ui/node/LookaheadDelegateKt\n*L\n1#1,79:1\n120#2,5:80\n*S KotlinDebug\n*F\n+ 1 MeasureScope.kt\nandroidx/compose/ui/layout/MeasureScope\n*L\n50#1:80,5\n*E\n"
+.end annotation
+
 .annotation runtime Lkotlin/Metadata;
     d1 = {
         "\u00004\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0008\n\u0002\u0008\u0002\n\u0002\u0010$\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0010\u0002\n\u0002\u0018\u0002\n\u0000\u0008f\u0018\u00002\u00020\u0001JG\u0010\u0002\u001a\u00020\u00032\u0006\u0010\u0004\u001a\u00020\u00052\u0006\u0010\u0006\u001a\u00020\u00052\u0014\u0008\u0002\u0010\u0007\u001a\u000e\u0012\u0004\u0012\u00020\t\u0012\u0004\u0012\u00020\u00050\u00082\u0017\u0010\n\u001a\u0013\u0012\u0004\u0012\u00020\u000c\u0012\u0004\u0012\u00020\r0\u000b\u00a2\u0006\u0002\u0008\u000eH\u0016\u00f8\u0001\u0000\u0082\u0002\u0006\n\u0004\u0008!0\u0001\u00a8\u0006\u000f\u00c0\u0006\u0003"
@@ -49,7 +53,7 @@
 .method public static synthetic access$isLookingAhead$jd(Landroidx/compose/ui/layout/MeasureScope;)Z
     .locals 0
 
-    .line 26
+    .line 28
     invoke-super {p0}, Landroidx/compose/ui/layout/MeasureScope;->isLookingAhead()Z
 
     move-result p0
@@ -60,7 +64,7 @@
 .method public static synthetic access$layout$jd(Landroidx/compose/ui/layout/MeasureScope;IILjava/util/Map;Lkotlin/jvm/functions/Function1;)Landroidx/compose/ui/layout/MeasureResult;
     .locals 0
 
-    .line 26
+    .line 28
     invoke-super {p0, p1, p2, p3, p4}, Landroidx/compose/ui/layout/MeasureScope;->layout(IILjava/util/Map;Lkotlin/jvm/functions/Function1;)Landroidx/compose/ui/layout/MeasureResult;
 
     move-result-object p0
@@ -71,7 +75,7 @@
 .method public static synthetic access$roundToPx--R2X_6o$jd(Landroidx/compose/ui/layout/MeasureScope;J)I
     .locals 0
 
-    .line 26
+    .line 28
     invoke-super {p0, p1, p2}, Landroidx/compose/ui/layout/MeasureScope;->roundToPx--R2X_6o(J)I
 
     move-result p0
@@ -82,7 +86,7 @@
 .method public static synthetic access$roundToPx-0680j_4$jd(Landroidx/compose/ui/layout/MeasureScope;F)I
     .locals 0
 
-    .line 26
+    .line 28
     invoke-super {p0, p1}, Landroidx/compose/ui/layout/MeasureScope;->roundToPx-0680j_4(F)I
 
     move-result p0
@@ -93,7 +97,7 @@
 .method public static synthetic access$toDp-GaN1DYA$jd(Landroidx/compose/ui/layout/MeasureScope;J)F
     .locals 0
 
-    .line 26
+    .line 28
     invoke-super {p0, p1, p2}, Landroidx/compose/ui/layout/MeasureScope;->toDp-GaN1DYA(J)F
 
     move-result p0
@@ -104,7 +108,7 @@
 .method public static synthetic access$toDp-u2uoSUM$jd(Landroidx/compose/ui/layout/MeasureScope;F)F
     .locals 0
 
-    .line 26
+    .line 28
     invoke-super {p0, p1}, Landroidx/compose/ui/layout/MeasureScope;->toDp-u2uoSUM(F)F
 
     move-result p0
@@ -115,7 +119,7 @@
 .method public static synthetic access$toDp-u2uoSUM$jd(Landroidx/compose/ui/layout/MeasureScope;I)F
     .locals 0
 
-    .line 26
+    .line 28
     invoke-super {p0, p1}, Landroidx/compose/ui/layout/MeasureScope;->toDp-u2uoSUM(I)F
 
     move-result p0
@@ -126,7 +130,7 @@
 .method public static synthetic access$toDpSize-k-rfVVM$jd(Landroidx/compose/ui/layout/MeasureScope;J)J
     .locals 0
 
-    .line 26
+    .line 28
     invoke-super {p0, p1, p2}, Landroidx/compose/ui/layout/MeasureScope;->toDpSize-k-rfVVM(J)J
 
     move-result-wide p0
@@ -137,7 +141,7 @@
 .method public static synthetic access$toPx--R2X_6o$jd(Landroidx/compose/ui/layout/MeasureScope;J)F
     .locals 0
 
-    .line 26
+    .line 28
     invoke-super {p0, p1, p2}, Landroidx/compose/ui/layout/MeasureScope;->toPx--R2X_6o(J)F
 
     move-result p0
@@ -148,7 +152,7 @@
 .method public static synthetic access$toPx-0680j_4$jd(Landroidx/compose/ui/layout/MeasureScope;F)F
     .locals 0
 
-    .line 26
+    .line 28
     invoke-super {p0, p1}, Landroidx/compose/ui/layout/MeasureScope;->toPx-0680j_4(F)F
 
     move-result p0
@@ -159,7 +163,7 @@
 .method public static synthetic access$toRect$jd(Landroidx/compose/ui/layout/MeasureScope;Landroidx/compose/ui/unit/DpRect;)Landroidx/compose/ui/geometry/Rect;
     .locals 0
 
-    .line 26
+    .line 28
     invoke-super {p0, p1}, Landroidx/compose/ui/layout/MeasureScope;->toRect(Landroidx/compose/ui/unit/DpRect;)Landroidx/compose/ui/geometry/Rect;
 
     move-result-object p0
@@ -170,7 +174,7 @@
 .method public static synthetic access$toSize-XkaWNTQ$jd(Landroidx/compose/ui/layout/MeasureScope;J)J
     .locals 0
 
-    .line 26
+    .line 28
     invoke-super {p0, p1, p2}, Landroidx/compose/ui/layout/MeasureScope;->toSize-XkaWNTQ(J)J
 
     move-result-wide p0
@@ -181,7 +185,7 @@
 .method public static synthetic access$toSp-0xMU5do$jd(Landroidx/compose/ui/layout/MeasureScope;F)J
     .locals 0
 
-    .line 26
+    .line 28
     invoke-super {p0, p1}, Landroidx/compose/ui/layout/MeasureScope;->toSp-0xMU5do(F)J
 
     move-result-wide p0
@@ -192,7 +196,7 @@
 .method public static synthetic access$toSp-kPz2Gy4$jd(Landroidx/compose/ui/layout/MeasureScope;F)J
     .locals 0
 
-    .line 26
+    .line 28
     invoke-super {p0, p1}, Landroidx/compose/ui/layout/MeasureScope;->toSp-kPz2Gy4(F)J
 
     move-result-wide p0
@@ -203,7 +207,7 @@
 .method public static synthetic access$toSp-kPz2Gy4$jd(Landroidx/compose/ui/layout/MeasureScope;I)J
     .locals 0
 
-    .line 26
+    .line 28
     invoke-super {p0, p1}, Landroidx/compose/ui/layout/MeasureScope;->toSp-kPz2Gy4(I)J
 
     move-result-wide p0
@@ -220,12 +224,12 @@
 
     if-eqz p5, :cond_0
 
-    .line 45
+    .line 47
     invoke-static {}, Lkotlin/collections/MapsKt;->emptyMap()Ljava/util/Map;
 
     move-result-object p3
 
-    .line 42
+    .line 44
     :cond_0
     invoke-interface {p0, p1, p2, p3, p4}, Landroidx/compose/ui/layout/MeasureScope;->layout(IILjava/util/Map;Lkotlin/jvm/functions/Function1;)Landroidx/compose/ui/layout/MeasureResult;
 
@@ -263,15 +267,17 @@
         }
     .end annotation
 
-    const-string v0, "alignmentLines"
+    const/high16 v0, -0x1000000
 
-    invoke-static {p3, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+    and-int v1, p1, v0
 
-    const-string v0, "placementBlock"
+    if-nez v1, :cond_0
 
-    invoke-static {p4, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+    and-int/2addr v0, p2
 
-    .line 47
+    if-nez v0, :cond_0
+
+    .line 51
     new-instance v0, Landroidx/compose/ui/layout/MeasureScope$layout$1;
 
     move-object v1, v0
@@ -291,4 +297,47 @@
     check-cast v0, Landroidx/compose/ui/layout/MeasureResult;
 
     return-object v0
+
+    .line 81
+    :cond_0
+    new-instance p0, Ljava/lang/StringBuilder;
+
+    const-string p3, "Size("
+
+    invoke-direct {p0, p3}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+
+    invoke-virtual {p0, p1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    move-result-object p0
+
+    const-string p1, " x "
+
+    invoke-virtual {p0, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object p0
+
+    invoke-virtual {p0, p2}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    move-result-object p0
+
+    const-string p1, ") is out of range. Each dimension must be between 0 and 16777215."
+
+    invoke-virtual {p0, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object p0
+
+    invoke-virtual {p0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object p0
+
+    .line 80
+    new-instance p1, Ljava/lang/IllegalStateException;
+
+    invoke-virtual {p0}, Ljava/lang/Object;->toString()Ljava/lang/String;
+
+    move-result-object p0
+
+    invoke-direct {p1, p0}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
+
+    throw p1
 .end method

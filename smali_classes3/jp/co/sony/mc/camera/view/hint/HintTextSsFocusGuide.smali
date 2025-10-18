@@ -87,7 +87,7 @@
 .method public getLeftButtonResourceId()I
     .locals 0
 
-    const p0, 0x7f080109
+    const p0, 0x7f08010e
 
     return p0
 .end method
@@ -113,7 +113,7 @@
 
     move-result-object p0
 
-    const v0, 0x7f11043f
+    const v0, 0x7f110474
 
     .line 36
     invoke-virtual {p0, v0}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
@@ -144,7 +144,7 @@
 .method public getRightButtonResourceId()I
     .locals 0
 
-    const p0, 0x7f080228
+    const p0, 0x7f080236
 
     return p0
 .end method

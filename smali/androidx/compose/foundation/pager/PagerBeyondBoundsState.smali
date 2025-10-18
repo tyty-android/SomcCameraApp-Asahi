@@ -44,6 +44,10 @@
 .end annotation
 
 
+# static fields
+.field public static final $stable:I
+
+
 # instance fields
 .field private final beyondBoundsPageCount:I
 
@@ -51,20 +55,22 @@
 
 
 # direct methods
+.method static constructor <clinit>()V
+    .locals 0
+
+    return-void
+.end method
+
 .method public constructor <init>(Landroidx/compose/foundation/pager/PagerState;I)V
-    .locals 1
+    .locals 0
 
-    const-string/jumbo v0, "state"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 58
+    .line 34
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 60
+    .line 36
     iput-object p1, p0, Landroidx/compose/foundation/pager/PagerBeyondBoundsState;->state:Landroidx/compose/foundation/pager/PagerState;
 
-    .line 61
+    .line 37
     iput p2, p0, Landroidx/compose/foundation/pager/PagerBeyondBoundsState;->beyondBoundsPageCount:I
 
     return-void
@@ -75,7 +81,7 @@
 .method public getFirstPlacedIndex()I
     .locals 1
 
-    .line 72
+    .line 48
     iget-object v0, p0, Landroidx/compose/foundation/pager/PagerBeyondBoundsState;->state:Landroidx/compose/foundation/pager/PagerState;
 
     invoke-virtual {v0}, Landroidx/compose/foundation/pager/PagerState;->getFirstVisiblePage$foundation_release()I
@@ -98,10 +104,10 @@
 .method public getHasVisibleItems()Z
     .locals 0
 
-    .line 70
+    .line 46
     iget-object p0, p0, Landroidx/compose/foundation/pager/PagerBeyondBoundsState;->state:Landroidx/compose/foundation/pager/PagerState;
 
-    invoke-virtual {p0}, Landroidx/compose/foundation/pager/PagerState;->getLayoutInfo$foundation_release()Landroidx/compose/foundation/pager/PagerLayoutInfo;
+    invoke-virtual {p0}, Landroidx/compose/foundation/pager/PagerState;->getLayoutInfo()Landroidx/compose/foundation/pager/PagerLayoutInfo;
 
     move-result-object p0
 
@@ -123,14 +129,10 @@
 .method public getItemCount()I
     .locals 0
 
-    .line 68
+    .line 44
     iget-object p0, p0, Landroidx/compose/foundation/pager/PagerBeyondBoundsState;->state:Landroidx/compose/foundation/pager/PagerState;
 
-    invoke-virtual {p0}, Landroidx/compose/foundation/pager/PagerState;->getLayoutInfo$foundation_release()Landroidx/compose/foundation/pager/PagerLayoutInfo;
-
-    move-result-object p0
-
-    invoke-interface {p0}, Landroidx/compose/foundation/pager/PagerLayoutInfo;->getPagesCount()I
+    invoke-virtual {p0}, Landroidx/compose/foundation/pager/PagerState;->getPageCount()I
 
     move-result p0
 
@@ -140,17 +142,17 @@
 .method public getLastPlacedIndex()I
     .locals 2
 
-    .line 75
+    .line 51
     invoke-virtual {p0}, Landroidx/compose/foundation/pager/PagerBeyondBoundsState;->getItemCount()I
 
     move-result v0
 
     add-int/lit8 v0, v0, -0x1
 
-    .line 76
+    .line 52
     iget-object v1, p0, Landroidx/compose/foundation/pager/PagerBeyondBoundsState;->state:Landroidx/compose/foundation/pager/PagerState;
 
-    invoke-virtual {v1}, Landroidx/compose/foundation/pager/PagerState;->getLayoutInfo$foundation_release()Landroidx/compose/foundation/pager/PagerLayoutInfo;
+    invoke-virtual {v1}, Landroidx/compose/foundation/pager/PagerState;->getLayoutInfo()Landroidx/compose/foundation/pager/PagerLayoutInfo;
 
     move-result-object v1
 
@@ -182,7 +184,7 @@
 .method public remeasure()V
     .locals 0
 
-    .line 64
+    .line 40
     iget-object p0, p0, Landroidx/compose/foundation/pager/PagerBeyondBoundsState;->state:Landroidx/compose/foundation/pager/PagerState;
 
     invoke-virtual {p0}, Landroidx/compose/foundation/pager/PagerState;->getRemeasurement$foundation_release()Landroidx/compose/ui/layout/Remeasurement;

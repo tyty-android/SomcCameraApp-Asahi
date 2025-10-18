@@ -641,14 +641,6 @@
 
     sput-object v0, Lkotlin/text/CharCategory;->$VALUES:[Lkotlin/text/CharCategory;
 
-    new-instance v1, Lkotlin/text/CharCategory$Companion;
-
-    const/4 v2, 0x0
-
-    invoke-direct {v1, v2}, Lkotlin/text/CharCategory$Companion;-><init>(Lkotlin/jvm/internal/DefaultConstructorMarker;)V
-
-    sput-object v1, Lkotlin/text/CharCategory;->Companion:Lkotlin/text/CharCategory$Companion;
-
     check-cast v0, [Ljava/lang/Enum;
 
     invoke-static {v0}, Lkotlin/enums/EnumEntriesKt;->enumEntries([Ljava/lang/Enum;)Lkotlin/enums/EnumEntries;
@@ -656,6 +648,14 @@
     move-result-object v0
 
     sput-object v0, Lkotlin/text/CharCategory;->$ENTRIES:Lkotlin/enums/EnumEntries;
+
+    new-instance v0, Lkotlin/text/CharCategory$Companion;
+
+    const/4 v1, 0x0
+
+    invoke-direct {v0, v1}, Lkotlin/text/CharCategory$Companion;-><init>(Lkotlin/jvm/internal/DefaultConstructorMarker;)V
+
+    sput-object v0, Lkotlin/text/CharCategory;->Companion:Lkotlin/text/CharCategory$Companion;
 
     return-void
 .end method
@@ -715,7 +715,7 @@
 
     sget-object v0, Lkotlin/text/CharCategory;->$VALUES:[Lkotlin/text/CharCategory;
 
-    invoke-virtual {v0}, [Ljava/lang/Object;->clone()Ljava/lang/Object;
+    invoke-virtual {v0}, Ljava/lang/Object;->clone()Ljava/lang/Object;
 
     move-result-object v0
 

@@ -50,23 +50,15 @@
 
 # direct methods
 .method public constructor <init>(Landroidx/compose/foundation/ScrollState;Lkotlinx/coroutines/CoroutineScope;)V
-    .locals 1
+    .locals 0
 
-    const-string v0, "scrollState"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string v0, "coroutineScope"
-
-    invoke-static {p2, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 453
+    .line 457
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 454
+    .line 458
     iput-object p1, p0, Landroidx/compose/material/ScrollableTabData;->scrollState:Landroidx/compose/foundation/ScrollState;
 
-    .line 455
+    .line 459
     iput-object p2, p0, Landroidx/compose/material/ScrollableTabData;->coroutineScope:Lkotlinx/coroutines/CoroutineScope;
 
     return-void
@@ -75,7 +67,7 @@
 .method public static final synthetic access$getScrollState$p(Landroidx/compose/material/ScrollableTabData;)Landroidx/compose/foundation/ScrollState;
     .locals 0
 
-    .line 453
+    .line 457
     iget-object p0, p0, Landroidx/compose/material/ScrollableTabData;->scrollState:Landroidx/compose/foundation/ScrollState;
 
     return-object p0
@@ -95,7 +87,7 @@
         }
     .end annotation
 
-    .line 495
+    .line 499
     invoke-static {p4}, Lkotlin/collections/CollectionsKt;->last(Ljava/util/List;)Ljava/lang/Object;
 
     move-result-object p4
@@ -112,7 +104,7 @@
 
     add-int/2addr p4, p3
 
-    .line 496
+    .line 500
     iget-object p0, p0, Landroidx/compose/material/ScrollableTabData;->scrollState:Landroidx/compose/foundation/ScrollState;
 
     invoke-virtual {p0}, Landroidx/compose/foundation/ScrollState;->getMaxValue()I
@@ -121,7 +113,7 @@
 
     sub-int p0, p4, p0
 
-    .line 497
+    .line 501
     invoke-virtual {p1}, Landroidx/compose/material/TabPosition;->getLeft-D9Ej5fM()F
 
     move-result p3
@@ -130,10 +122,10 @@
 
     move-result p3
 
-    .line 498
+    .line 502
     div-int/lit8 v0, p0, 0x2
 
-    .line 499
+    .line 503
     invoke-virtual {p1}, Landroidx/compose/material/TabPosition;->getWidth-D9Ej5fM()F
 
     move-result p1
@@ -142,7 +134,7 @@
 
     move-result p1
 
-    .line 500
+    .line 504
     div-int/lit8 p1, p1, 0x2
 
     sub-int/2addr v0, p1
@@ -153,12 +145,12 @@
 
     const/4 p0, 0x0
 
-    .line 503
+    .line 507
     invoke-static {p4, p0}, Lkotlin/ranges/RangesKt;->coerceAtLeast(II)I
 
     move-result p1
 
-    .line 504
+    .line 508
     invoke-static {p3, p0, p1}, Lkotlin/ranges/RangesKt;->coerceIn(III)I
 
     move-result p0
@@ -181,15 +173,7 @@
         }
     .end annotation
 
-    const-string v0, "density"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string/jumbo v0, "tabPositions"
-
-    invoke-static {p3, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 467
+    .line 471
     iget-object v0, p0, Landroidx/compose/material/ScrollableTabData;->selectedTab:Ljava/lang/Integer;
 
     if-nez v0, :cond_0
@@ -203,7 +187,7 @@
 
     if-eq v0, p4, :cond_1
 
-    .line 468
+    .line 472
     :goto_0
     invoke-static {p4}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -211,7 +195,7 @@
 
     iput-object v0, p0, Landroidx/compose/material/ScrollableTabData;->selectedTab:Ljava/lang/Integer;
 
-    .line 469
+    .line 473
     invoke-static {p3, p4}, Lkotlin/collections/CollectionsKt;->getOrNull(Ljava/util/List;I)Ljava/lang/Object;
 
     move-result-object p4
@@ -220,12 +204,12 @@
 
     if-eqz p4, :cond_1
 
-    .line 472
+    .line 476
     invoke-direct {p0, p4, p1, p2, p3}, Landroidx/compose/material/ScrollableTabData;->calculateTabOffset(Landroidx/compose/material/TabPosition;Landroidx/compose/ui/unit/Density;ILjava/util/List;)I
 
     move-result p1
 
-    .line 473
+    .line 477
     iget-object p2, p0, Landroidx/compose/material/ScrollableTabData;->scrollState:Landroidx/compose/foundation/ScrollState;
 
     invoke-virtual {p2}, Landroidx/compose/foundation/ScrollState;->getValue()I
@@ -234,7 +218,7 @@
 
     if-eq p2, p1, :cond_1
 
-    .line 474
+    .line 478
     iget-object v0, p0, Landroidx/compose/material/ScrollableTabData;->coroutineScope:Lkotlinx/coroutines/CoroutineScope;
 
     new-instance p2, Landroidx/compose/material/ScrollableTabData$onLaidOut$1$1;

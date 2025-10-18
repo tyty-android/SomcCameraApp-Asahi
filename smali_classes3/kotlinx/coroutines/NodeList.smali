@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/SourceDebugExtension;
-    value = "SMAP\nJobSupport.kt\nKotlin\n*S Kotlin\n*F\n+ 1 JobSupport.kt\nkotlinx/coroutines/NodeList\n+ 2 LockFreeLinkedList.kt\nkotlinx/coroutines/internal/LockFreeLinkedListHead\n*L\n1#1,1479:1\n645#2,6:1480\n*S KotlinDebug\n*F\n+ 1 JobSupport.kt\nkotlinx/coroutines/NodeList\n*L\n1371#1:1480,6\n*E\n"
+    value = "SMAP\nJobSupport.kt\nKotlin\n*S Kotlin\n*F\n+ 1 JobSupport.kt\nkotlinx/coroutines/NodeList\n+ 2 LockFreeLinkedList.kt\nkotlinx/coroutines/internal/LockFreeLinkedListHead\n*L\n1#1,1454:1\n341#2,6:1455\n*S KotlinDebug\n*F\n+ 1 JobSupport.kt\nkotlinx/coroutines/NodeList\n*L\n1364#1:1455,6\n*E\n"
 .end annotation
 
 .annotation runtime Lkotlin/Metadata;
@@ -35,7 +35,7 @@
     k = 0x1
     mv = {
         0x1,
-        0x6,
+        0x8,
         0x0
     }
     xi = 0x30
@@ -46,7 +46,7 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 1362
+    .line 1355
     invoke-direct {p0}, Lkotlinx/coroutines/internal/LockFreeLinkedListHead;-><init>()V
 
     return-void
@@ -63,34 +63,38 @@
 .method public final getString(Ljava/lang/String;)Ljava/lang/String;
     .locals 4
 
-    .line 1366
+    .line 1359
     new-instance v0, Ljava/lang/StringBuilder;
 
     const-string v1, "List{"
 
     invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
-    .line 1368
+    .line 1361
     invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 1369
+    .line 1362
     const-string/jumbo p1, "}["
 
     invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 1371
+    .line 1364
     check-cast p0, Lkotlinx/coroutines/internal/LockFreeLinkedListHead;
 
-    .line 1480
+    .line 1455
     invoke-virtual {p0}, Lkotlinx/coroutines/internal/LockFreeLinkedListHead;->getNext()Ljava/lang/Object;
 
     move-result-object p1
+
+    const-string v1, "null cannot be cast to non-null type kotlinx.coroutines.internal.LockFreeLinkedListNode{ kotlinx.coroutines.internal.LockFreeLinkedListKt.Node }"
+
+    invoke-static {p1, v1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;Ljava/lang/String;)V
 
     check-cast p1, Lkotlinx/coroutines/internal/LockFreeLinkedListNode;
 
     const/4 v1, 0x1
 
-    .line 1481
+    .line 1456
     :goto_0
     invoke-static {p1, p0}, Lkotlin/jvm/internal/Intrinsics;->areEqual(Ljava/lang/Object;Ljava/lang/Object;)Z
 
@@ -98,7 +102,7 @@
 
     if-nez v2, :cond_2
 
-    .line 1482
+    .line 1457
     instance-of v2, p1, Lkotlinx/coroutines/JobNode;
 
     if-eqz v2, :cond_1
@@ -113,17 +117,17 @@
 
     goto :goto_1
 
-    .line 1372
+    .line 1365
     :cond_0
     const-string v3, ", "
 
     invoke-virtual {v0, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 1373
+    .line 1366
     :goto_1
     invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
-    .line 1483
+    .line 1458
     :cond_1
     invoke-virtual {p1}, Lkotlinx/coroutines/internal/LockFreeLinkedListNode;->getNextNode()Lkotlinx/coroutines/internal/LockFreeLinkedListNode;
 
@@ -131,13 +135,13 @@
 
     goto :goto_0
 
-    .line 1375
+    .line 1368
     :cond_2
     const-string p0, "]"
 
     invoke-virtual {v0, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 1366
+    .line 1359
     invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object p0
@@ -160,7 +164,7 @@
 .method public toString()Ljava/lang/String;
     .locals 1
 
-    .line 1379
+    .line 1372
     invoke-static {}, Lkotlinx/coroutines/DebugKt;->getDEBUG()Z
 
     move-result v0

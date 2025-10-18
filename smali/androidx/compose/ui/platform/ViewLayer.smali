@@ -16,12 +16,12 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/SourceDebugExtension;
-    value = "SMAP\nViewLayer.android.kt\nKotlin\n*S Kotlin\n*F\n+ 1 ViewLayer.android.kt\nandroidx/compose/ui/platform/ViewLayer\n+ 2 AndroidCanvas.android.kt\nandroidx/compose/ui/graphics/CanvasHolder\n*L\n1#1,476:1\n47#2,5:477\n*S KotlinDebug\n*F\n+ 1 ViewLayer.android.kt\nandroidx/compose/ui/platform/ViewLayer\n*L\n290#1:477,5\n*E\n"
+    value = "SMAP\nViewLayer.android.kt\nKotlin\n*S Kotlin\n*F\n+ 1 ViewLayer.android.kt\nandroidx/compose/ui/platform/ViewLayer\n+ 2 AndroidCanvas.android.kt\nandroidx/compose/ui/graphics/CanvasHolder\n*L\n1#1,505:1\n47#2,5:506\n*S KotlinDebug\n*F\n+ 1 ViewLayer.android.kt\nandroidx/compose/ui/platform/ViewLayer\n*L\n318#1:506,5\n*E\n"
 .end annotation
 
 .annotation runtime Lkotlin/Metadata;
     d1 = {
-        "\u0000\u00d8\u0001\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0010\u0007\n\u0002\u0008\u0006\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000b\n\u0002\u0008\u0008\n\u0002\u0010\t\n\u0002\u0008\u0004\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0003\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0007\n\u0002\u0018\u0002\n\u0002\u0008\u0006\n\u0002\u0018\u0002\n\u0002\u0008\u0004\n\u0002\u0018\u0002\n\u0002\u0008\u0004\n\u0002\u0018\u0002\n\u0002\u0008\u0006\n\u0002\u0018\u0002\n\u0002\u0008\u0005\n\u0002\u0010\u0008\n\u0002\u0008\u0006\n\u0002\u0018\u0002\n\u0002\u0008\u0012\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0006\u0008\u0000\u0018\u0000 \u0082\u00012\u00020\u00012\u00020\u00022\u00020\u0003:\u0004\u0082\u0001\u0083\u0001B7\u0012\u0006\u0010\u0004\u001a\u00020\u0005\u0012\u0006\u0010\u0006\u001a\u00020\u0007\u0012\u0012\u0010\u0008\u001a\u000e\u0012\u0004\u0012\u00020\n\u0012\u0004\u0012\u00020\u000b0\t\u0012\u000c\u0010\u000c\u001a\u0008\u0012\u0004\u0012\u00020\u000b0\r\u00a2\u0006\u0002\u0010\u000eJ\u0008\u00107\u001a\u00020\u000bH\u0016J\u0010\u00108\u001a\u00020\u000b2\u0006\u00109\u001a\u00020:H\u0014J\u0010\u0010;\u001a\u00020\u000b2\u0006\u00109\u001a\u00020\nH\u0016J\u0008\u0010<\u001a\u00020\u000bH\u0016J\u0008\u0010=\u001a\u00020\u001bH\u0016J\u0008\u0010>\u001a\u00020\u000bH\u0016J\u001d\u0010?\u001a\u00020\u000b2\u0006\u0010@\u001a\u00020AH\u0016\u00f8\u0001\u0001\u00f8\u0001\u0000\u00a2\u0006\u0004\u0008B\u0010CJ\u001d\u0010D\u001a\u00020\u001b2\u0006\u0010E\u001a\u00020FH\u0016\u00f8\u0001\u0001\u00f8\u0001\u0000\u00a2\u0006\u0004\u0008G\u0010HJ\u0018\u0010I\u001a\u00020\u000b2\u0006\u0010J\u001a\u00020K2\u0006\u0010L\u001a\u00020\u001bH\u0016J%\u0010M\u001a\u00020F2\u0006\u0010N\u001a\u00020F2\u0006\u0010L\u001a\u00020\u001bH\u0016\u00f8\u0001\u0001\u00f8\u0001\u0000\u00a2\u0006\u0004\u0008O\u0010PJ\u001d\u0010Q\u001a\u00020\u000b2\u0006\u0010E\u001a\u00020RH\u0016\u00f8\u0001\u0001\u00f8\u0001\u0000\u00a2\u0006\u0004\u0008S\u0010TJ0\u0010U\u001a\u00020\u000b2\u0006\u0010V\u001a\u00020\u001b2\u0006\u0010W\u001a\u00020X2\u0006\u0010Y\u001a\u00020X2\u0006\u0010Z\u001a\u00020X2\u0006\u0010[\u001a\u00020XH\u0014J\u0008\u0010\\\u001a\u00020\u000bH\u0002J\u001d\u0010]\u001a\u00020\u000b2\u0006\u0010^\u001a\u00020_H\u0016\u00f8\u0001\u0001\u00f8\u0001\u0000\u00a2\u0006\u0004\u0008`\u0010TJ*\u0010a\u001a\u00020\u000b2\u0012\u0010\u0008\u001a\u000e\u0012\u0004\u0012\u00020\n\u0012\u0004\u0012\u00020\u000b0\t2\u000c\u0010\u000c\u001a\u0008\u0012\u0004\u0012\u00020\u000b0\rH\u0016J\u001d\u0010b\u001a\u00020\u000b2\u0006\u0010@\u001a\u00020AH\u0016\u00f8\u0001\u0001\u00f8\u0001\u0000\u00a2\u0006\u0004\u0008c\u0010CJ\u0008\u0010d\u001a\u00020\u000bH\u0016J\u00b0\u0001\u0010e\u001a\u00020\u000b2\u0006\u0010f\u001a\u00020\u00102\u0006\u0010g\u001a\u00020\u00102\u0006\u0010h\u001a\u00020\u00102\u0006\u0010i\u001a\u00020\u00102\u0006\u0010j\u001a\u00020\u00102\u0006\u0010k\u001a\u00020\u00102\u0006\u0010l\u001a\u00020\u00102\u0006\u0010m\u001a\u00020\u00102\u0006\u0010n\u001a\u00020\u00102\u0006\u0010o\u001a\u00020\u00102\u0006\u0010p\u001a\u00020)2\u0006\u0010q\u001a\u00020r2\u0006\u0010s\u001a\u00020\u001b2\u0008\u0010t\u001a\u0004\u0018\u00010u2\u0006\u0010v\u001a\u00020w2\u0006\u0010x\u001a\u00020w2\u0006\u0010y\u001a\u00020z2\u0006\u0010{\u001a\u00020|2\u0006\u0010}\u001a\u00020~H\u0016\u00f8\u0001\u0001\u00f8\u0001\u0000\u00a2\u0006\u0005\u0008\u007f\u0010\u0080\u0001J\t\u0010\u0081\u0001\u001a\u00020\u000bH\u0002R$\u0010\u0011\u001a\u00020\u00102\u0006\u0010\u000f\u001a\u00020\u00108F@FX\u0086\u000e\u00a2\u0006\u000c\u001a\u0004\u0008\u0012\u0010\u0013\"\u0004\u0008\u0014\u0010\u0015R\u000e\u0010\u0016\u001a\u00020\u0017X\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u0010\u0010\u0018\u001a\u0004\u0018\u00010\u0019X\u0082\u000e\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u001a\u001a\u00020\u001bX\u0082\u000e\u00a2\u0006\u0002\n\u0000R\u0011\u0010\u0006\u001a\u00020\u0007\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\u001c\u0010\u001dR\u001c\u0010\u0008\u001a\u0010\u0012\u0004\u0012\u00020\n\u0012\u0004\u0012\u00020\u000b\u0018\u00010\tX\u0082\u000e\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u001e\u001a\u00020\u001bX\u0082\u000e\u00a2\u0006\u0002\n\u0000R\u0016\u0010\u000c\u001a\n\u0012\u0004\u0012\u00020\u000b\u0018\u00010\rX\u0082\u000e\u00a2\u0006\u0002\n\u0000R$\u0010\u001f\u001a\u00020\u001b2\u0006\u0010\u000f\u001a\u00020\u001b@BX\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\u0008\u001f\u0010 \"\u0004\u0008!\u0010\"R\u0014\u0010#\u001a\u00020$X\u0096\u0004\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008%\u0010&R\u000e\u0010\'\u001a\u00020\u001bX\u0082\u000e\u00a2\u0006\u0002\n\u0000R\u0019\u0010(\u001a\u00020)X\u0082\u000e\u00f8\u0001\u0000\u00f8\u0001\u0001\u00f8\u0001\u0002\u00a2\u0006\u0004\n\u0002\u0010*R\u0016\u0010+\u001a\u0004\u0018\u00010,8BX\u0082\u0004\u00a2\u0006\u0006\u001a\u0004\u0008-\u0010.R\u0014\u0010/\u001a\u0008\u0012\u0004\u0012\u00020\u000100X\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u000e\u00101\u001a\u000202X\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u0011\u0010\u0004\u001a\u00020\u0005\u00a2\u0006\u0008\n\u0000\u001a\u0004\u00083\u00104R\u0014\u00105\u001a\u00020$8VX\u0096\u0004\u00a2\u0006\u0006\u001a\u0004\u00086\u0010&\u0082\u0002\u000f\n\u0002\u0008\u0019\n\u0005\u0008\u00a1\u001e0\u0001\n\u0002\u0008!\u00a8\u0006\u0084\u0001"
+        "\u0000\u00c0\u0001\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0010\u0007\n\u0002\u0008\u0006\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000b\n\u0002\u0008\u0008\n\u0002\u0010\t\n\u0002\u0008\u0004\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0003\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0008\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0007\n\u0002\u0018\u0002\n\u0002\u0008\u0006\n\u0002\u0018\u0002\n\u0002\u0008\u0004\n\u0002\u0018\u0002\n\u0002\u0008\u0004\n\u0002\u0018\u0002\n\u0002\u0008\u0006\n\u0002\u0018\u0002\n\u0002\u0008\u000b\n\u0002\u0018\u0002\n\u0002\u0008\u0007\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0004\u0008\u0000\u0018\u0000 n2\u00020\u00012\u00020\u00022\u00020\u0003:\u0002noB7\u0012\u0006\u0010\u0004\u001a\u00020\u0005\u0012\u0006\u0010\u0006\u001a\u00020\u0007\u0012\u0012\u0010\u0008\u001a\u000e\u0012\u0004\u0012\u00020\n\u0012\u0004\u0012\u00020\u000b0\t\u0012\u000c\u0010\u000c\u001a\u0008\u0012\u0004\u0012\u00020\u000b0\r\u00a2\u0006\u0002\u0010\u000eJ\u0008\u00109\u001a\u00020\u000bH\u0016J\u0010\u0010:\u001a\u00020\u000b2\u0006\u0010;\u001a\u00020<H\u0014J\u0010\u0010=\u001a\u00020\u000b2\u0006\u0010;\u001a\u00020\nH\u0016J\u0008\u0010>\u001a\u00020\u000bH\u0016J\u0008\u0010?\u001a\u00020\u001bH\u0016J\u0008\u0010@\u001a\u00020\u000bH\u0016J\u001a\u0010A\u001a\u00020\u000b2\u0006\u0010B\u001a\u00020CH\u0016\u00f8\u0001\u0000\u00a2\u0006\u0004\u0008D\u0010EJ\u001a\u0010F\u001a\u00020\u001b2\u0006\u0010G\u001a\u00020HH\u0016\u00f8\u0001\u0000\u00a2\u0006\u0004\u0008I\u0010JJ\u0018\u0010K\u001a\u00020\u000b2\u0006\u0010L\u001a\u00020M2\u0006\u0010N\u001a\u00020\u001bH\u0016J\"\u0010O\u001a\u00020H2\u0006\u0010P\u001a\u00020H2\u0006\u0010N\u001a\u00020\u001bH\u0016\u00f8\u0001\u0000\u00a2\u0006\u0004\u0008Q\u0010RJ\u001a\u0010S\u001a\u00020\u000b2\u0006\u0010G\u001a\u00020TH\u0016\u00f8\u0001\u0000\u00a2\u0006\u0004\u0008U\u0010VJ0\u0010W\u001a\u00020\u000b2\u0006\u0010X\u001a\u00020\u001b2\u0006\u0010Y\u001a\u0002022\u0006\u0010Z\u001a\u0002022\u0006\u0010[\u001a\u0002022\u0006\u0010\\\u001a\u000202H\u0014J\u0008\u0010]\u001a\u00020\u000bH\u0002J\u001a\u0010^\u001a\u00020\u000b2\u0006\u0010_\u001a\u00020`H\u0016\u00f8\u0001\u0000\u00a2\u0006\u0004\u0008a\u0010VJ*\u0010b\u001a\u00020\u000b2\u0012\u0010\u0008\u001a\u000e\u0012\u0004\u0012\u00020\n\u0012\u0004\u0012\u00020\u000b0\t2\u000c\u0010\u000c\u001a\u0008\u0012\u0004\u0012\u00020\u000b0\rH\u0016J\u001a\u0010c\u001a\u00020\u000b2\u0006\u0010B\u001a\u00020CH\u0016\u00f8\u0001\u0000\u00a2\u0006\u0004\u0008d\u0010EJ\u0008\u0010e\u001a\u00020\u000bH\u0016J \u0010f\u001a\u00020\u000b2\u0006\u0010g\u001a\u00020h2\u0006\u0010i\u001a\u00020j2\u0006\u0010k\u001a\u00020lH\u0016J\u0008\u0010m\u001a\u00020\u000bH\u0002R$\u0010\u0011\u001a\u00020\u00102\u0006\u0010\u000f\u001a\u00020\u00108F@FX\u0086\u000e\u00a2\u0006\u000c\u001a\u0004\u0008\u0012\u0010\u0013\"\u0004\u0008\u0014\u0010\u0015R\u000e\u0010\u0016\u001a\u00020\u0017X\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u0010\u0010\u0018\u001a\u0004\u0018\u00010\u0019X\u0082\u000e\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u001a\u001a\u00020\u001bX\u0082\u000e\u00a2\u0006\u0002\n\u0000R\u0011\u0010\u0006\u001a\u00020\u0007\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\u001c\u0010\u001dR\u001c\u0010\u0008\u001a\u0010\u0012\u0004\u0012\u00020\n\u0012\u0004\u0012\u00020\u000b\u0018\u00010\tX\u0082\u000e\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u001e\u001a\u00020\u001bX\u0082\u000e\u00a2\u0006\u0002\n\u0000R\u0016\u0010\u000c\u001a\n\u0012\u0004\u0012\u00020\u000b\u0018\u00010\rX\u0082\u000e\u00a2\u0006\u0002\n\u0000R$\u0010\u001f\u001a\u00020\u001b2\u0006\u0010\u000f\u001a\u00020\u001b@BX\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\u0008\u001f\u0010 \"\u0004\u0008!\u0010\"R\u0014\u0010#\u001a\u00020$X\u0096\u0004\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008%\u0010&R\u000e\u0010\'\u001a\u00020\u001bX\u0082\u000e\u00a2\u0006\u0002\n\u0000R\u0016\u0010(\u001a\u00020)X\u0082\u000e\u00f8\u0001\u0000\u00f8\u0001\u0001\u00a2\u0006\u0004\n\u0002\u0010*R\u0016\u0010+\u001a\u0004\u0018\u00010,8BX\u0082\u0004\u00a2\u0006\u0006\u001a\u0004\u0008-\u0010.R\u0014\u0010/\u001a\u0008\u0012\u0004\u0012\u00020\u000100X\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u000e\u00101\u001a\u000202X\u0082\u000e\u00a2\u0006\u0002\n\u0000R\u000e\u00103\u001a\u000204X\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u0011\u0010\u0004\u001a\u00020\u0005\u00a2\u0006\u0008\n\u0000\u001a\u0004\u00085\u00106R\u0014\u00107\u001a\u00020$8VX\u0096\u0004\u00a2\u0006\u0006\u001a\u0004\u00088\u0010&\u0082\u0002\u000b\n\u0005\u0008\u00a1\u001e0\u0001\n\u0002\u0008!\u00a8\u0006p"
     }
     d2 = {
         "Landroidx/compose/ui/platform/ViewLayer;",
@@ -73,6 +73,8 @@
         "()Landroidx/compose/ui/graphics/Path;",
         "matrixCache",
         "Landroidx/compose/ui/platform/LayerMatrixCache;",
+        "mutatedFields",
+        "",
         "outlineResolver",
         "Landroidx/compose/ui/platform/OutlineResolver;",
         "getOwnerView",
@@ -112,7 +114,6 @@
         "onLayout",
         "changed",
         "l",
-        "",
         "t",
         "r",
         "b",
@@ -126,33 +127,12 @@
         "transform-58bKbWc",
         "updateDisplayList",
         "updateLayerProperties",
-        "scaleX",
-        "scaleY",
-        "alpha",
-        "translationX",
-        "translationY",
-        "shadowElevation",
-        "rotationX",
-        "rotationY",
-        "rotationZ",
-        "cameraDistance",
-        "transformOrigin",
-        "shape",
-        "Landroidx/compose/ui/graphics/Shape;",
-        "clip",
-        "renderEffect",
-        "Landroidx/compose/ui/graphics/RenderEffect;",
-        "ambientShadowColor",
-        "Landroidx/compose/ui/graphics/Color;",
-        "spotShadowColor",
-        "compositingStrategy",
-        "Landroidx/compose/ui/graphics/CompositingStrategy;",
+        "scope",
+        "Landroidx/compose/ui/graphics/ReusableGraphicsLayerScope;",
         "layoutDirection",
         "Landroidx/compose/ui/unit/LayoutDirection;",
         "density",
         "Landroidx/compose/ui/unit/Density;",
-        "updateLayerProperties-dDxr-wY",
-        "(FFFFFFFFFFJLandroidx/compose/ui/graphics/Shape;ZLandroidx/compose/ui/graphics/RenderEffect;JJILandroidx/compose/ui/unit/LayoutDirection;Landroidx/compose/ui/unit/Density;)V",
         "updateOutlineResolver",
         "Companion",
         "UniqueDrawingIdApi29",
@@ -169,6 +149,8 @@
 
 
 # static fields
+.field public static final $stable:I
+
 .field public static final Companion:Landroidx/compose/ui/platform/ViewLayer$Companion;
 
 .field private static final OutlineProvider:Landroid/view/ViewOutlineProvider;
@@ -245,6 +227,8 @@
     .end annotation
 .end field
 
+.field private mutatedFields:I
+
 .field private final outlineResolver:Landroidx/compose/ui/platform/OutlineResolver;
 
 .field private final ownerView:Landroidx/compose/ui/platform/AndroidComposeView;
@@ -262,14 +246,18 @@
 
     sput-object v0, Landroidx/compose/ui/platform/ViewLayer;->Companion:Landroidx/compose/ui/platform/ViewLayer$Companion;
 
-    .line 394
+    const/16 v0, 0x8
+
+    sput v0, Landroidx/compose/ui/platform/ViewLayer;->$stable:I
+
+    .line 423
     sget-object v0, Landroidx/compose/ui/platform/ViewLayer$Companion$getMatrix$1;->INSTANCE:Landroidx/compose/ui/platform/ViewLayer$Companion$getMatrix$1;
 
     check-cast v0, Lkotlin/jvm/functions/Function2;
 
     sput-object v0, Landroidx/compose/ui/platform/ViewLayer;->getMatrix:Lkotlin/jvm/functions/Function2;
 
-    .line 399
+    .line 428
     new-instance v0, Landroidx/compose/ui/platform/ViewLayer$Companion$OutlineProvider$1;
 
     invoke-direct {v0}, Landroidx/compose/ui/platform/ViewLayer$Companion$OutlineProvider$1;-><init>()V
@@ -298,22 +286,6 @@
             ">;)V"
         }
     .end annotation
-
-    const-string v0, "ownerView"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string v0, "container"
-
-    invoke-static {p2, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string v0, "drawBlock"
-
-    invoke-static {p3, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string v0, "invalidateParentLayer"
-
-    invoke-static {p4, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 55
     invoke-virtual {p1}, Landroidx/compose/ui/platform/AndroidComposeView;->getContext()Landroid/content/Context;
@@ -530,19 +502,19 @@
 .method private final resetClipBounds()V
     .locals 4
 
-    .line 237
+    .line 266
     iget-boolean v0, p0, Landroidx/compose/ui/platform/ViewLayer;->clipToBounds:Z
 
     if-eqz v0, :cond_1
 
-    .line 238
+    .line 267
     iget-object v0, p0, Landroidx/compose/ui/platform/ViewLayer;->clipBoundsCache:Landroid/graphics/Rect;
 
     const/4 v1, 0x0
 
     if-nez v0, :cond_0
 
-    .line 239
+    .line 268
     new-instance v0, Landroid/graphics/Rect;
 
     invoke-virtual {p0}, Landroidx/compose/ui/platform/ViewLayer;->getWidth()I
@@ -559,7 +531,7 @@
 
     goto :goto_0
 
-    .line 241
+    .line 270
     :cond_0
     invoke-static {v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;)V
 
@@ -573,7 +545,7 @@
 
     invoke-virtual {v0, v1, v1, v2, v3}, Landroid/graphics/Rect;->set(IIII)V
 
-    .line 243
+    .line 272
     :goto_0
     iget-object v0, p0, Landroidx/compose/ui/platform/ViewLayer;->clipBoundsCache:Landroid/graphics/Rect;
 
@@ -582,7 +554,7 @@
     :cond_1
     const/4 v0, 0x0
 
-    .line 237
+    .line 266
     :goto_1
     invoke-virtual {p0, v0}, Landroidx/compose/ui/platform/ViewLayer;->setClipBounds(Landroid/graphics/Rect;)V
 
@@ -614,7 +586,7 @@
 .method private final updateOutlineResolver()V
     .locals 1
 
-    .line 229
+    .line 258
     iget-object v0, p0, Landroidx/compose/ui/platform/ViewLayer;->outlineResolver:Landroidx/compose/ui/platform/OutlineResolver;
 
     invoke-virtual {v0}, Landroidx/compose/ui/platform/OutlineResolver;->getOutline()Landroid/graphics/Outline;
@@ -623,7 +595,7 @@
 
     if-eqz v0, :cond_0
 
-    .line 230
+    .line 259
     sget-object v0, Landroidx/compose/ui/platform/ViewLayer;->OutlineProvider:Landroid/view/ViewOutlineProvider;
 
     goto :goto_0
@@ -631,7 +603,7 @@
     :cond_0
     const/4 v0, 0x0
 
-    .line 229
+    .line 258
     :goto_0
     invoke-virtual {p0, v0}, Landroidx/compose/ui/platform/ViewLayer;->setOutlineProvider(Landroid/view/ViewOutlineProvider;)V
 
@@ -645,23 +617,23 @@
 
     const/4 v0, 0x0
 
-    .line 317
+    .line 346
     invoke-direct {p0, v0}, Landroidx/compose/ui/platform/ViewLayer;->setInvalidated(Z)V
 
-    .line 318
+    .line 347
     iget-object v0, p0, Landroidx/compose/ui/platform/ViewLayer;->ownerView:Landroidx/compose/ui/platform/AndroidComposeView;
 
     invoke-virtual {v0}, Landroidx/compose/ui/platform/AndroidComposeView;->requestClearInvalidObservations()V
 
     const/4 v0, 0x0
 
-    .line 319
+    .line 348
     iput-object v0, p0, Landroidx/compose/ui/platform/ViewLayer;->drawBlock:Lkotlin/jvm/functions/Function1;
 
-    .line 320
+    .line 349
     iput-object v0, p0, Landroidx/compose/ui/platform/ViewLayer;->invalidateParentLayer:Lkotlin/jvm/functions/Function0;
 
-    .line 327
+    .line 356
     iget-object v0, p0, Landroidx/compose/ui/platform/ViewLayer;->ownerView:Landroidx/compose/ui/platform/AndroidComposeView;
 
     move-object v1, p0
@@ -670,7 +642,7 @@
 
     invoke-virtual {v0, v1}, Landroidx/compose/ui/platform/AndroidComposeView;->recycle$ui_release(Landroidx/compose/ui/node/OwnedLayer;)Z
 
-    .line 330
+    .line 359
     iget-object v0, p0, Landroidx/compose/ui/platform/ViewLayer;->container:Landroidx/compose/ui/platform/DrawChildContainer;
 
     check-cast p0, Landroid/view/View;
@@ -683,87 +655,91 @@
 .method protected dispatchDraw(Landroid/graphics/Canvas;)V
     .locals 5
 
-    const-string v0, "canvas"
+    .line 318
+    iget-object v0, p0, Landroidx/compose/ui/platform/ViewLayer;->canvasHolder:Landroidx/compose/ui/graphics/CanvasHolder;
 
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+    .line 506
+    invoke-virtual {v0}, Landroidx/compose/ui/graphics/CanvasHolder;->getAndroidCanvas()Landroidx/compose/ui/graphics/AndroidCanvas;
 
-    const/4 v0, 0x0
+    move-result-object v1
 
-    .line 289
-    invoke-direct {p0, v0}, Landroidx/compose/ui/platform/ViewLayer;->setInvalidated(Z)V
+    invoke-virtual {v1}, Landroidx/compose/ui/graphics/AndroidCanvas;->getInternalCanvas()Landroid/graphics/Canvas;
 
-    .line 290
-    iget-object v1, p0, Landroidx/compose/ui/platform/ViewLayer;->canvasHolder:Landroidx/compose/ui/graphics/CanvasHolder;
+    move-result-object v1
 
-    .line 477
-    invoke-virtual {v1}, Landroidx/compose/ui/graphics/CanvasHolder;->getAndroidCanvas()Landroidx/compose/ui/graphics/AndroidCanvas;
-
-    move-result-object v2
-
-    invoke-virtual {v2}, Landroidx/compose/ui/graphics/AndroidCanvas;->getInternalCanvas()Landroid/graphics/Canvas;
+    .line 507
+    invoke-virtual {v0}, Landroidx/compose/ui/graphics/CanvasHolder;->getAndroidCanvas()Landroidx/compose/ui/graphics/AndroidCanvas;
 
     move-result-object v2
 
-    .line 478
-    invoke-virtual {v1}, Landroidx/compose/ui/graphics/CanvasHolder;->getAndroidCanvas()Landroidx/compose/ui/graphics/AndroidCanvas;
+    invoke-virtual {v2, p1}, Landroidx/compose/ui/graphics/AndroidCanvas;->setInternalCanvas(Landroid/graphics/Canvas;)V
 
-    move-result-object v3
+    .line 508
+    invoke-virtual {v0}, Landroidx/compose/ui/graphics/CanvasHolder;->getAndroidCanvas()Landroidx/compose/ui/graphics/AndroidCanvas;
 
-    invoke-virtual {v3, p1}, Landroidx/compose/ui/graphics/AndroidCanvas;->setInternalCanvas(Landroid/graphics/Canvas;)V
+    move-result-object v2
 
-    .line 479
-    invoke-virtual {v1}, Landroidx/compose/ui/graphics/CanvasHolder;->getAndroidCanvas()Landroidx/compose/ui/graphics/AndroidCanvas;
+    check-cast v2, Landroidx/compose/ui/graphics/Canvas;
 
-    move-result-object v3
-
-    check-cast v3, Landroidx/compose/ui/graphics/Canvas;
-
-    .line 292
+    .line 320
     invoke-direct {p0}, Landroidx/compose/ui/platform/ViewLayer;->getManualClipPath()Landroidx/compose/ui/graphics/Path;
 
-    move-result-object v4
+    move-result-object v3
 
-    if-nez v4, :cond_0
+    const/4 v4, 0x0
 
-    .line 293
+    if-nez v3, :cond_1
+
+    .line 321
     invoke-virtual {p1}, Landroid/graphics/Canvas;->isHardwareAccelerated()Z
 
     move-result p1
 
-    if-nez p1, :cond_1
+    if-nez p1, :cond_0
 
-    .line 295
+    goto :goto_0
+
     :cond_0
-    invoke-interface {v3}, Landroidx/compose/ui/graphics/Canvas;->save()V
+    move p1, v4
 
-    .line 296
+    goto :goto_1
+
+    .line 323
+    :cond_1
+    :goto_0
+    invoke-interface {v2}, Landroidx/compose/ui/graphics/Canvas;->save()V
+
+    .line 324
     iget-object p1, p0, Landroidx/compose/ui/platform/ViewLayer;->outlineResolver:Landroidx/compose/ui/platform/OutlineResolver;
 
-    invoke-virtual {p1, v3}, Landroidx/compose/ui/platform/OutlineResolver;->clipToOutline(Landroidx/compose/ui/graphics/Canvas;)V
+    invoke-virtual {p1, v2}, Landroidx/compose/ui/platform/OutlineResolver;->clipToOutline(Landroidx/compose/ui/graphics/Canvas;)V
 
-    const/4 v0, 0x1
+    const/4 p1, 0x1
 
-    .line 298
-    :cond_1
-    iget-object p0, p0, Landroidx/compose/ui/platform/ViewLayer;->drawBlock:Lkotlin/jvm/functions/Function1;
+    .line 326
+    :goto_1
+    iget-object v3, p0, Landroidx/compose/ui/platform/ViewLayer;->drawBlock:Lkotlin/jvm/functions/Function1;
 
-    if-eqz p0, :cond_2
+    if-eqz v3, :cond_2
 
-    invoke-interface {p0, v3}, Lkotlin/jvm/functions/Function1;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-interface {v3, v2}, Lkotlin/jvm/functions/Function1;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
 
     :cond_2
-    if-eqz v0, :cond_3
+    if-eqz p1, :cond_3
 
-    .line 300
-    invoke-interface {v3}, Landroidx/compose/ui/graphics/Canvas;->restore()V
+    .line 328
+    invoke-interface {v2}, Landroidx/compose/ui/graphics/Canvas;->restore()V
 
-    .line 480
+    .line 509
     :cond_3
-    invoke-virtual {v1}, Landroidx/compose/ui/graphics/CanvasHolder;->getAndroidCanvas()Landroidx/compose/ui/graphics/AndroidCanvas;
+    invoke-virtual {v0}, Landroidx/compose/ui/graphics/CanvasHolder;->getAndroidCanvas()Landroidx/compose/ui/graphics/AndroidCanvas;
 
-    move-result-object p0
+    move-result-object p1
 
-    invoke-virtual {p0, v2}, Landroidx/compose/ui/graphics/AndroidCanvas;->setInternalCanvas(Landroid/graphics/Canvas;)V
+    invoke-virtual {p1, v1}, Landroidx/compose/ui/graphics/AndroidCanvas;->setInternalCanvas(Landroid/graphics/Canvas;)V
+
+    .line 331
+    invoke-direct {p0, v4}, Landroidx/compose/ui/platform/ViewLayer;->setInvalidated(Z)V
 
     return-void
 .end method
@@ -771,11 +747,7 @@
 .method public drawLayer(Landroidx/compose/ui/graphics/Canvas;)V
     .locals 4
 
-    const-string v0, "canvas"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 278
+    .line 307
     invoke-virtual {p0}, Landroidx/compose/ui/platform/ViewLayer;->getElevation()F
 
     move-result v0
@@ -798,10 +770,10 @@
 
     if-eqz v0, :cond_1
 
-    .line 280
+    .line 309
     invoke-interface {p1}, Landroidx/compose/ui/graphics/Canvas;->enableZ()V
 
-    .line 282
+    .line 311
     :cond_1
     iget-object v0, p0, Landroidx/compose/ui/platform/ViewLayer;->container:Landroidx/compose/ui/platform/DrawChildContainer;
 
@@ -815,12 +787,12 @@
 
     invoke-virtual {v0, p1, v1, v2, v3}, Landroidx/compose/ui/platform/DrawChildContainer;->drawChild$ui_release(Landroidx/compose/ui/graphics/Canvas;Landroid/view/View;J)V
 
-    .line 283
+    .line 312
     iget-boolean p0, p0, Landroidx/compose/ui/platform/ViewLayer;->drawnWithZ:Z
 
     if-eqz p0, :cond_2
 
-    .line 284
+    .line 313
     invoke-interface {p1}, Landroidx/compose/ui/graphics/Canvas;->disableZ()V
 
     :cond_2
@@ -903,7 +875,7 @@
 .method public hasOverlappingRendering()Z
     .locals 0
 
-    .line 211
+    .line 240
     iget-boolean p0, p0, Landroidx/compose/ui/platform/ViewLayer;->mHasOverlappingRendering:Z
 
     return p0
@@ -912,20 +884,20 @@
 .method public invalidate()V
     .locals 1
 
-    .line 306
+    .line 335
     iget-boolean v0, p0, Landroidx/compose/ui/platform/ViewLayer;->isInvalidated:Z
 
     if-nez v0, :cond_0
 
     const/4 v0, 0x1
 
-    .line 307
+    .line 336
     invoke-direct {p0, v0}, Landroidx/compose/ui/platform/ViewLayer;->setInvalidated(Z)V
 
-    .line 308
+    .line 337
     invoke-super {p0}, Landroid/view/View;->invalidate()V
 
-    .line 309
+    .line 338
     iget-object p0, p0, Landroidx/compose/ui/platform/ViewLayer;->ownerView:Landroidx/compose/ui/platform/AndroidComposeView;
 
     invoke-virtual {p0}, Landroidx/compose/ui/platform/AndroidComposeView;->invalidate()V
@@ -937,11 +909,7 @@
 .method public inverseTransform-58bKbWc([F)V
     .locals 1
 
-    const-string v0, "matrix"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 387
+    .line 416
     iget-object v0, p0, Landroidx/compose/ui/platform/ViewLayer;->matrixCache:Landroidx/compose/ui/platform/LayerMatrixCache;
 
     invoke-virtual {v0, p0}, Landroidx/compose/ui/platform/LayerMatrixCache;->calculateInverseMatrix-bWbORWo(Ljava/lang/Object;)[F
@@ -950,7 +918,7 @@
 
     if-eqz p0, :cond_0
 
-    .line 389
+    .line 418
     invoke-static {p1, p0}, Landroidx/compose/ui/graphics/Matrix;->timesAssign-58bKbWc([F[F)V
 
     :cond_0
@@ -960,17 +928,17 @@
 .method public isInLayer-k-4lQ0M(J)Z
     .locals 4
 
-    .line 215
+    .line 244
     invoke-static {p1, p2}, Landroidx/compose/ui/geometry/Offset;->getX-impl(J)F
 
     move-result v0
 
-    .line 216
+    .line 245
     invoke-static {p1, p2}, Landroidx/compose/ui/geometry/Offset;->getY-impl(J)F
 
     move-result v1
 
-    .line 217
+    .line 246
     iget-boolean v2, p0, Landroidx/compose/ui/platform/ViewLayer;->clipToBounds:Z
 
     const/4 v3, 0x1
@@ -983,7 +951,7 @@
 
     if-gtz p2, :cond_0
 
-    .line 218
+    .line 247
     invoke-virtual {p0}, Landroidx/compose/ui/platform/ViewLayer;->getWidth()I
 
     move-result p2
@@ -1016,7 +984,7 @@
     :goto_0
     return v3
 
-    .line 221
+    .line 250
     :cond_1
     invoke-virtual {p0}, Landroidx/compose/ui/platform/ViewLayer;->getClipToOutline()Z
 
@@ -1024,7 +992,7 @@
 
     if-eqz v0, :cond_2
 
-    .line 222
+    .line 251
     iget-object p0, p0, Landroidx/compose/ui/platform/ViewLayer;->outlineResolver:Landroidx/compose/ui/platform/OutlineResolver;
 
     invoke-virtual {p0, p1, p2}, Landroidx/compose/ui/platform/OutlineResolver;->isInOutline-k-4lQ0M(J)Z
@@ -1047,15 +1015,11 @@
 .end method
 
 .method public mapBounds(Landroidx/compose/ui/geometry/MutableRect;Z)V
-    .locals 1
-
-    const-string v0, "rect"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+    .locals 0
 
     if-eqz p2, :cond_1
 
-    .line 358
+    .line 387
     iget-object p2, p0, Landroidx/compose/ui/platform/ViewLayer;->matrixCache:Landroidx/compose/ui/platform/LayerMatrixCache;
 
     invoke-virtual {p2, p0}, Landroidx/compose/ui/platform/LayerMatrixCache;->calculateInverseMatrix-bWbORWo(Ljava/lang/Object;)[F
@@ -1064,7 +1028,7 @@
 
     if-eqz p0, :cond_0
 
-    .line 360
+    .line 389
     invoke-static {p0, p1}, Landroidx/compose/ui/graphics/Matrix;->map-impl([FLandroidx/compose/ui/geometry/MutableRect;)V
 
     goto :goto_0
@@ -1072,12 +1036,12 @@
     :cond_0
     const/4 p0, 0x0
 
-    .line 362
+    .line 391
     invoke-virtual {p1, p0, p0, p0, p0}, Landroidx/compose/ui/geometry/MutableRect;->set(FFFF)V
 
     goto :goto_0
 
-    .line 365
+    .line 394
     :cond_1
     iget-object p2, p0, Landroidx/compose/ui/platform/ViewLayer;->matrixCache:Landroidx/compose/ui/platform/LayerMatrixCache;
 
@@ -1096,7 +1060,7 @@
 
     if-eqz p3, :cond_1
 
-    .line 350
+    .line 379
     iget-object p3, p0, Landroidx/compose/ui/platform/ViewLayer;->matrixCache:Landroidx/compose/ui/platform/LayerMatrixCache;
 
     invoke-virtual {p3, p0}, Landroidx/compose/ui/platform/LayerMatrixCache;->calculateInverseMatrix-bWbORWo(Ljava/lang/Object;)[F
@@ -1120,7 +1084,7 @@
 
     goto :goto_0
 
-    .line 352
+    .line 381
     :cond_1
     iget-object p3, p0, Landroidx/compose/ui/platform/ViewLayer;->matrixCache:Landroidx/compose/ui/platform/LayerMatrixCache;
 
@@ -1139,19 +1103,19 @@
 .method public move--gyyYBs(J)V
     .locals 2
 
-    .line 264
+    .line 293
     invoke-static {p1, p2}, Landroidx/compose/ui/unit/IntOffset;->getX-impl(J)I
 
     move-result v0
 
-    .line 266
+    .line 295
     invoke-virtual {p0}, Landroidx/compose/ui/platform/ViewLayer;->getLeft()I
 
     move-result v1
 
     if-eq v0, v1, :cond_0
 
-    .line 267
+    .line 296
     invoke-virtual {p0}, Landroidx/compose/ui/platform/ViewLayer;->getLeft()I
 
     move-result v1
@@ -1160,25 +1124,25 @@
 
     invoke-virtual {p0, v0}, Landroidx/compose/ui/platform/ViewLayer;->offsetLeftAndRight(I)V
 
-    .line 268
+    .line 297
     iget-object v0, p0, Landroidx/compose/ui/platform/ViewLayer;->matrixCache:Landroidx/compose/ui/platform/LayerMatrixCache;
 
     invoke-virtual {v0}, Landroidx/compose/ui/platform/LayerMatrixCache;->invalidate()V
 
-    .line 270
+    .line 299
     :cond_0
     invoke-static {p1, p2}, Landroidx/compose/ui/unit/IntOffset;->getY-impl(J)I
 
     move-result p1
 
-    .line 271
+    .line 300
     invoke-virtual {p0}, Landroidx/compose/ui/platform/ViewLayer;->getTop()I
 
     move-result p2
 
     if-eq p1, p2, :cond_1
 
-    .line 272
+    .line 301
     invoke-virtual {p0}, Landroidx/compose/ui/platform/ViewLayer;->getTop()I
 
     move-result p2
@@ -1187,7 +1151,7 @@
 
     invoke-virtual {p0, p1}, Landroidx/compose/ui/platform/ViewLayer;->offsetTopAndBottom(I)V
 
-    .line 273
+    .line 302
     iget-object p0, p0, Landroidx/compose/ui/platform/ViewLayer;->matrixCache:Landroidx/compose/ui/platform/LayerMatrixCache;
 
     invoke-virtual {p0}, Landroidx/compose/ui/platform/LayerMatrixCache;->invalidate()V
@@ -1205,17 +1169,17 @@
 .method public resize-ozmzZPI(J)V
     .locals 4
 
-    .line 250
+    .line 279
     invoke-static {p1, p2}, Landroidx/compose/ui/unit/IntSize;->getWidth-impl(J)I
 
     move-result v0
 
-    .line 251
+    .line 280
     invoke-static {p1, p2}, Landroidx/compose/ui/unit/IntSize;->getHeight-impl(J)I
 
     move-result p1
 
-    .line 252
+    .line 281
     invoke-virtual {p0}, Landroidx/compose/ui/platform/ViewLayer;->getWidth()I
 
     move-result p2
@@ -1228,7 +1192,7 @@
 
     if-eq p1, p2, :cond_1
 
-    .line 253
+    .line 282
     :cond_0
     iget-wide v1, p0, Landroidx/compose/ui/platform/ViewLayer;->mTransformOrigin:J
 
@@ -1242,7 +1206,7 @@
 
     invoke-virtual {p0, p2}, Landroidx/compose/ui/platform/ViewLayer;->setPivotX(F)V
 
-    .line 254
+    .line 283
     iget-wide v2, p0, Landroidx/compose/ui/platform/ViewLayer;->mTransformOrigin:J
 
     invoke-static {v2, v3}, Landroidx/compose/ui/graphics/TransformOrigin;->getPivotFractionY-impl(J)F
@@ -1255,7 +1219,7 @@
 
     invoke-virtual {p0, p2}, Landroidx/compose/ui/platform/ViewLayer;->setPivotY(F)V
 
-    .line 255
+    .line 284
     iget-object p2, p0, Landroidx/compose/ui/platform/ViewLayer;->outlineResolver:Landroidx/compose/ui/platform/OutlineResolver;
 
     invoke-static {v1, v2}, Landroidx/compose/ui/geometry/SizeKt;->Size(FF)J
@@ -1264,10 +1228,10 @@
 
     invoke-virtual {p2, v1, v2}, Landroidx/compose/ui/platform/OutlineResolver;->update-uvyYCjk(J)V
 
-    .line 256
+    .line 285
     invoke-direct {p0}, Landroidx/compose/ui/platform/ViewLayer;->updateOutlineResolver()V
 
-    .line 257
+    .line 286
     invoke-virtual {p0}, Landroidx/compose/ui/platform/ViewLayer;->getLeft()I
 
     move-result p2
@@ -1290,10 +1254,10 @@
 
     invoke-virtual {p0, p2, v1, v2, v0}, Landroidx/compose/ui/platform/ViewLayer;->layout(IIII)V
 
-    .line 258
+    .line 287
     invoke-direct {p0}, Landroidx/compose/ui/platform/ViewLayer;->resetClipBounds()V
 
-    .line 259
+    .line 288
     iget-object p0, p0, Landroidx/compose/ui/platform/ViewLayer;->matrixCache:Landroidx/compose/ui/platform/LayerMatrixCache;
 
     invoke-virtual {p0}, Landroidx/compose/ui/platform/LayerMatrixCache;->invalidate()V
@@ -1318,15 +1282,7 @@
         }
     .end annotation
 
-    const-string v0, "drawBlock"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string v0, "invalidateParentLayer"
-
-    invoke-static {p2, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 371
+    .line 400
     iget-object v0, p0, Landroidx/compose/ui/platform/ViewLayer;->container:Landroidx/compose/ui/platform/DrawChildContainer;
 
     move-object v1, p0
@@ -1337,13 +1293,13 @@
 
     const/4 v0, 0x0
 
-    .line 375
+    .line 404
     iput-boolean v0, p0, Landroidx/compose/ui/platform/ViewLayer;->clipToBounds:Z
 
-    .line 376
+    .line 405
     iput-boolean v0, p0, Landroidx/compose/ui/platform/ViewLayer;->drawnWithZ:Z
 
-    .line 377
+    .line 406
     sget-object v0, Landroidx/compose/ui/graphics/TransformOrigin;->Companion:Landroidx/compose/ui/graphics/TransformOrigin$Companion;
 
     invoke-virtual {v0}, Landroidx/compose/ui/graphics/TransformOrigin$Companion;->getCenter-SzJe1aQ()J
@@ -1352,10 +1308,10 @@
 
     iput-wide v0, p0, Landroidx/compose/ui/platform/ViewLayer;->mTransformOrigin:J
 
-    .line 378
+    .line 407
     iput-object p1, p0, Landroidx/compose/ui/platform/ViewLayer;->drawBlock:Lkotlin/jvm/functions/Function1;
 
-    .line 379
+    .line 408
     iput-object p2, p0, Landroidx/compose/ui/platform/ViewLayer;->invalidateParentLayer:Lkotlin/jvm/functions/Function0;
 
     return-void
@@ -1387,11 +1343,7 @@
 .method public transform-58bKbWc([F)V
     .locals 1
 
-    const-string v0, "matrix"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 383
+    .line 412
     iget-object v0, p0, Landroidx/compose/ui/platform/ViewLayer;->matrixCache:Landroidx/compose/ui/platform/LayerMatrixCache;
 
     invoke-virtual {v0, p0}, Landroidx/compose/ui/platform/LayerMatrixCache;->calculateMatrix-GrdbGEg(Ljava/lang/Object;)[F
@@ -1404,9 +1356,9 @@
 .end method
 
 .method public updateDisplayList()V
-    .locals 1
+    .locals 2
 
-    .line 337
+    .line 366
     iget-boolean v0, p0, Landroidx/compose/ui/platform/ViewLayer;->isInvalidated:Z
 
     if-eqz v0, :cond_0
@@ -1415,374 +1367,525 @@
 
     if-nez v0, :cond_0
 
-    const/4 v0, 0x0
-
-    .line 338
-    invoke-direct {p0, v0}, Landroidx/compose/ui/platform/ViewLayer;->setInvalidated(Z)V
-
-    .line 339
+    .line 367
     sget-object v0, Landroidx/compose/ui/platform/ViewLayer;->Companion:Landroidx/compose/ui/platform/ViewLayer$Companion;
 
-    check-cast p0, Landroid/view/View;
+    move-object v1, p0
 
-    invoke-virtual {v0, p0}, Landroidx/compose/ui/platform/ViewLayer$Companion;->updateDisplayList(Landroid/view/View;)V
+    check-cast v1, Landroid/view/View;
+
+    invoke-virtual {v0, v1}, Landroidx/compose/ui/platform/ViewLayer$Companion;->updateDisplayList(Landroid/view/View;)V
+
+    const/4 v0, 0x0
+
+    .line 368
+    invoke-direct {p0, v0}, Landroidx/compose/ui/platform/ViewLayer;->setInvalidated(Z)V
 
     :cond_0
     return-void
 .end method
 
-.method public updateLayerProperties-dDxr-wY(FFFFFFFFFFJLandroidx/compose/ui/graphics/Shape;ZLandroidx/compose/ui/graphics/RenderEffect;JJILandroidx/compose/ui/unit/LayoutDirection;Landroidx/compose/ui/unit/Density;)V
-    .locals 12
+.method public updateLayerProperties(Landroidx/compose/ui/graphics/ReusableGraphicsLayerScope;Landroidx/compose/ui/unit/LayoutDirection;Landroidx/compose/ui/unit/Density;)V
+    .locals 14
 
     move-object v0, p0
 
-    move-object/from16 v1, p13
+    .line 134
+    invoke-virtual {p1}, Landroidx/compose/ui/graphics/ReusableGraphicsLayerScope;->getMutatedFields$ui_release()I
 
-    move/from16 v2, p20
+    move-result v1
 
-    const-string/jumbo v3, "shape"
+    iget v2, v0, Landroidx/compose/ui/platform/ViewLayer;->mutatedFields:I
 
-    invoke-static {v1, v3}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+    or-int/2addr v1, v2
 
-    const-string v3, "layoutDirection"
+    and-int/lit16 v2, v1, 0x1000
 
-    move-object/from16 v4, p21
+    if-eqz v2, :cond_0
 
-    invoke-static {v4, v3}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+    .line 136
+    invoke-virtual {p1}, Landroidx/compose/ui/graphics/ReusableGraphicsLayerScope;->getTransformOrigin-SzJe1aQ()J
 
-    const-string v3, "density"
+    move-result-wide v2
 
-    move-object/from16 v5, p22
+    iput-wide v2, v0, Landroidx/compose/ui/platform/ViewLayer;->mTransformOrigin:J
 
-    invoke-static {v5, v3}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+    .line 137
+    invoke-static {v2, v3}, Landroidx/compose/ui/graphics/TransformOrigin;->getPivotFractionX-impl(J)F
 
-    move-wide/from16 v6, p11
-
-    .line 148
-    iput-wide v6, v0, Landroidx/compose/ui/platform/ViewLayer;->mTransformOrigin:J
-
-    .line 149
-    invoke-virtual {p0, p1}, Landroidx/compose/ui/platform/ViewLayer;->setScaleX(F)V
-
-    move v3, p2
-
-    .line 150
-    invoke-virtual {p0, p2}, Landroidx/compose/ui/platform/ViewLayer;->setScaleY(F)V
-
-    move v3, p3
-
-    .line 151
-    invoke-virtual {p0, p3}, Landroidx/compose/ui/platform/ViewLayer;->setAlpha(F)V
-
-    move/from16 v3, p4
-
-    .line 152
-    invoke-virtual {p0, v3}, Landroidx/compose/ui/platform/ViewLayer;->setTranslationX(F)V
-
-    move/from16 v3, p5
-
-    .line 153
-    invoke-virtual {p0, v3}, Landroidx/compose/ui/platform/ViewLayer;->setTranslationY(F)V
-
-    move/from16 v3, p6
-
-    .line 154
-    invoke-virtual {p0, v3}, Landroidx/compose/ui/platform/ViewLayer;->setElevation(F)V
-
-    move/from16 v3, p9
-
-    .line 155
-    invoke-virtual {p0, v3}, Landroidx/compose/ui/platform/ViewLayer;->setRotation(F)V
-
-    move/from16 v3, p7
-
-    .line 156
-    invoke-virtual {p0, v3}, Landroidx/compose/ui/platform/ViewLayer;->setRotationX(F)V
-
-    move/from16 v3, p8
-
-    .line 157
-    invoke-virtual {p0, v3}, Landroidx/compose/ui/platform/ViewLayer;->setRotationY(F)V
-
-    .line 158
-    iget-wide v6, v0, Landroidx/compose/ui/platform/ViewLayer;->mTransformOrigin:J
-
-    invoke-static {v6, v7}, Landroidx/compose/ui/graphics/TransformOrigin;->getPivotFractionX-impl(J)F
-
-    move-result v3
+    move-result v2
 
     invoke-virtual {p0}, Landroidx/compose/ui/platform/ViewLayer;->getWidth()I
 
-    move-result v6
-
-    int-to-float v6, v6
-
-    mul-float/2addr v3, v6
-
-    invoke-virtual {p0, v3}, Landroidx/compose/ui/platform/ViewLayer;->setPivotX(F)V
-
-    .line 159
-    iget-wide v6, v0, Landroidx/compose/ui/platform/ViewLayer;->mTransformOrigin:J
-
-    invoke-static {v6, v7}, Landroidx/compose/ui/graphics/TransformOrigin;->getPivotFractionY-impl(J)F
-
     move-result v3
+
+    int-to-float v3, v3
+
+    mul-float/2addr v2, v3
+
+    invoke-virtual {p0, v2}, Landroidx/compose/ui/platform/ViewLayer;->setPivotX(F)V
+
+    .line 138
+    iget-wide v2, v0, Landroidx/compose/ui/platform/ViewLayer;->mTransformOrigin:J
+
+    invoke-static {v2, v3}, Landroidx/compose/ui/graphics/TransformOrigin;->getPivotFractionY-impl(J)F
+
+    move-result v2
 
     invoke-virtual {p0}, Landroidx/compose/ui/platform/ViewLayer;->getHeight()I
 
-    move-result v6
+    move-result v3
 
-    int-to-float v6, v6
+    int-to-float v3, v3
 
-    mul-float/2addr v3, v6
+    mul-float/2addr v2, v3
 
-    invoke-virtual {p0, v3}, Landroidx/compose/ui/platform/ViewLayer;->setPivotY(F)V
+    invoke-virtual {p0, v2}, Landroidx/compose/ui/platform/ViewLayer;->setPivotY(F)V
 
-    move/from16 v3, p10
+    :cond_0
+    and-int/lit8 v2, v1, 0x1
 
-    .line 160
-    invoke-virtual {p0, v3}, Landroidx/compose/ui/platform/ViewLayer;->setCameraDistancePx(F)V
+    if-eqz v2, :cond_1
 
-    const/4 v3, 0x1
+    .line 141
+    invoke-virtual {p1}, Landroidx/compose/ui/graphics/ReusableGraphicsLayerScope;->getScaleX()F
 
-    const/4 v6, 0x0
+    move-result v2
 
-    if-eqz p14, :cond_0
+    invoke-virtual {p0, v2}, Landroidx/compose/ui/platform/ViewLayer;->setScaleX(F)V
 
-    .line 161
-    invoke-static {}, Landroidx/compose/ui/graphics/RectangleShapeKt;->getRectangleShape()Landroidx/compose/ui/graphics/Shape;
+    :cond_1
+    and-int/lit8 v2, v1, 0x2
 
-    move-result-object v7
+    if-eqz v2, :cond_2
 
-    if-ne v1, v7, :cond_0
+    .line 144
+    invoke-virtual {p1}, Landroidx/compose/ui/graphics/ReusableGraphicsLayerScope;->getScaleY()F
 
-    move v7, v3
+    move-result v2
+
+    invoke-virtual {p0, v2}, Landroidx/compose/ui/platform/ViewLayer;->setScaleY(F)V
+
+    :cond_2
+    and-int/lit8 v2, v1, 0x4
+
+    if-eqz v2, :cond_3
+
+    .line 147
+    invoke-virtual {p1}, Landroidx/compose/ui/graphics/ReusableGraphicsLayerScope;->getAlpha()F
+
+    move-result v2
+
+    invoke-virtual {p0, v2}, Landroidx/compose/ui/platform/ViewLayer;->setAlpha(F)V
+
+    :cond_3
+    and-int/lit8 v2, v1, 0x8
+
+    if-eqz v2, :cond_4
+
+    .line 150
+    invoke-virtual {p1}, Landroidx/compose/ui/graphics/ReusableGraphicsLayerScope;->getTranslationX()F
+
+    move-result v2
+
+    invoke-virtual {p0, v2}, Landroidx/compose/ui/platform/ViewLayer;->setTranslationX(F)V
+
+    :cond_4
+    and-int/lit8 v2, v1, 0x10
+
+    if-eqz v2, :cond_5
+
+    .line 153
+    invoke-virtual {p1}, Landroidx/compose/ui/graphics/ReusableGraphicsLayerScope;->getTranslationY()F
+
+    move-result v2
+
+    invoke-virtual {p0, v2}, Landroidx/compose/ui/platform/ViewLayer;->setTranslationY(F)V
+
+    :cond_5
+    and-int/lit8 v2, v1, 0x20
+
+    if-eqz v2, :cond_6
+
+    .line 156
+    invoke-virtual {p1}, Landroidx/compose/ui/graphics/ReusableGraphicsLayerScope;->getShadowElevation()F
+
+    move-result v2
+
+    invoke-virtual {p0, v2}, Landroidx/compose/ui/platform/ViewLayer;->setElevation(F)V
+
+    :cond_6
+    and-int/lit16 v2, v1, 0x400
+
+    if-eqz v2, :cond_7
+
+    .line 159
+    invoke-virtual {p1}, Landroidx/compose/ui/graphics/ReusableGraphicsLayerScope;->getRotationZ()F
+
+    move-result v2
+
+    invoke-virtual {p0, v2}, Landroidx/compose/ui/platform/ViewLayer;->setRotation(F)V
+
+    :cond_7
+    and-int/lit16 v2, v1, 0x100
+
+    if-eqz v2, :cond_8
+
+    .line 162
+    invoke-virtual {p1}, Landroidx/compose/ui/graphics/ReusableGraphicsLayerScope;->getRotationX()F
+
+    move-result v2
+
+    invoke-virtual {p0, v2}, Landroidx/compose/ui/platform/ViewLayer;->setRotationX(F)V
+
+    :cond_8
+    and-int/lit16 v2, v1, 0x200
+
+    if-eqz v2, :cond_9
+
+    .line 165
+    invoke-virtual {p1}, Landroidx/compose/ui/graphics/ReusableGraphicsLayerScope;->getRotationY()F
+
+    move-result v2
+
+    invoke-virtual {p0, v2}, Landroidx/compose/ui/platform/ViewLayer;->setRotationY(F)V
+
+    :cond_9
+    and-int/lit16 v2, v1, 0x800
+
+    if-eqz v2, :cond_a
+
+    .line 168
+    invoke-virtual {p1}, Landroidx/compose/ui/graphics/ReusableGraphicsLayerScope;->getCameraDistance()F
+
+    move-result v2
+
+    invoke-virtual {p0, v2}, Landroidx/compose/ui/platform/ViewLayer;->setCameraDistancePx(F)V
+
+    .line 170
+    :cond_a
+    invoke-direct {p0}, Landroidx/compose/ui/platform/ViewLayer;->getManualClipPath()Landroidx/compose/ui/graphics/Path;
+
+    move-result-object v2
+
+    const/4 v3, 0x0
+
+    const/4 v4, 0x1
+
+    if-eqz v2, :cond_b
+
+    move v2, v4
 
     goto :goto_0
 
-    :cond_0
-    move v7, v6
+    :cond_b
+    move v2, v3
 
+    .line 171
     :goto_0
-    iput-boolean v7, v0, Landroidx/compose/ui/platform/ViewLayer;->clipToBounds:Z
+    invoke-virtual {p1}, Landroidx/compose/ui/graphics/ReusableGraphicsLayerScope;->getClip()Z
 
-    .line 162
-    invoke-direct {p0}, Landroidx/compose/ui/platform/ViewLayer;->resetClipBounds()V
+    move-result v5
 
-    .line 163
-    invoke-direct {p0}, Landroidx/compose/ui/platform/ViewLayer;->getManualClipPath()Landroidx/compose/ui/graphics/Path;
+    if-eqz v5, :cond_c
 
-    move-result-object v7
+    invoke-virtual {p1}, Landroidx/compose/ui/graphics/ReusableGraphicsLayerScope;->getShape()Landroidx/compose/ui/graphics/Shape;
 
-    if-eqz v7, :cond_1
+    move-result-object v5
 
-    move v7, v3
+    invoke-static {}, Landroidx/compose/ui/graphics/RectangleShapeKt;->getRectangleShape()Landroidx/compose/ui/graphics/Shape;
+
+    move-result-object v6
+
+    if-eq v5, v6, :cond_c
+
+    move v10, v4
 
     goto :goto_1
 
-    :cond_1
-    move v7, v6
+    :cond_c
+    move v10, v3
 
     :goto_1
-    if-eqz p14, :cond_2
+    and-int/lit16 v5, v1, 0x6000
 
-    .line 164
+    if-eqz v5, :cond_e
+
+    .line 173
+    invoke-virtual {p1}, Landroidx/compose/ui/graphics/ReusableGraphicsLayerScope;->getClip()Z
+
+    move-result v5
+
+    if-eqz v5, :cond_d
+
+    invoke-virtual {p1}, Landroidx/compose/ui/graphics/ReusableGraphicsLayerScope;->getShape()Landroidx/compose/ui/graphics/Shape;
+
+    move-result-object v5
+
     invoke-static {}, Landroidx/compose/ui/graphics/RectangleShapeKt;->getRectangleShape()Landroidx/compose/ui/graphics/Shape;
 
-    move-result-object v8
+    move-result-object v6
 
-    if-eq v1, v8, :cond_2
+    if-ne v5, v6, :cond_d
 
-    move v8, v3
+    move v5, v4
 
     goto :goto_2
 
-    :cond_2
-    move v8, v6
+    :cond_d
+    move v5, v3
 
     :goto_2
-    invoke-virtual {p0, v8}, Landroidx/compose/ui/platform/ViewLayer;->setClipToOutline(Z)V
+    iput-boolean v5, v0, Landroidx/compose/ui/platform/ViewLayer;->clipToBounds:Z
 
-    .line 165
-    iget-object v8, v0, Landroidx/compose/ui/platform/ViewLayer;->outlineResolver:Landroidx/compose/ui/platform/OutlineResolver;
+    .line 174
+    invoke-direct {p0}, Landroidx/compose/ui/platform/ViewLayer;->resetClipBounds()V
 
-    .line 167
-    invoke-virtual {p0}, Landroidx/compose/ui/platform/ViewLayer;->getAlpha()F
+    .line 175
+    invoke-virtual {p0, v10}, Landroidx/compose/ui/platform/ViewLayer;->setClipToOutline(Z)V
+
+    .line 177
+    :cond_e
+    iget-object v7, v0, Landroidx/compose/ui/platform/ViewLayer;->outlineResolver:Landroidx/compose/ui/platform/OutlineResolver;
+
+    .line 178
+    invoke-virtual {p1}, Landroidx/compose/ui/graphics/ReusableGraphicsLayerScope;->getShape()Landroidx/compose/ui/graphics/Shape;
+
+    move-result-object v8
+
+    .line 179
+    invoke-virtual {p1}, Landroidx/compose/ui/graphics/ReusableGraphicsLayerScope;->getAlpha()F
 
     move-result v9
 
-    .line 168
-    invoke-virtual {p0}, Landroidx/compose/ui/platform/ViewLayer;->getClipToOutline()Z
-
-    move-result v10
-
-    .line 169
-    invoke-virtual {p0}, Landroidx/compose/ui/platform/ViewLayer;->getElevation()F
+    .line 181
+    invoke-virtual {p1}, Landroidx/compose/ui/graphics/ReusableGraphicsLayerScope;->getShadowElevation()F
 
     move-result v11
 
-    move-object p1, v8
+    move-object/from16 v12, p2
 
-    move-object/from16 p2, p13
+    move-object/from16 v13, p3
 
-    move p3, v9
+    .line 177
+    invoke-virtual/range {v7 .. v13}, Landroidx/compose/ui/platform/OutlineResolver;->update(Landroidx/compose/ui/graphics/Shape;FZFLandroidx/compose/ui/unit/LayoutDirection;Landroidx/compose/ui/unit/Density;)Z
 
-    move/from16 p4, v10
+    move-result v5
 
-    move/from16 p5, v11
+    .line 185
+    iget-object v6, v0, Landroidx/compose/ui/platform/ViewLayer;->outlineResolver:Landroidx/compose/ui/platform/OutlineResolver;
 
-    move-object/from16 p6, p21
+    invoke-virtual {v6}, Landroidx/compose/ui/platform/OutlineResolver;->getCacheIsDirty$ui_release()Z
 
-    move-object/from16 p7, p22
+    move-result v6
 
-    .line 165
-    invoke-virtual/range {p1 .. p7}, Landroidx/compose/ui/platform/OutlineResolver;->update(Landroidx/compose/ui/graphics/Shape;FZFLandroidx/compose/ui/unit/LayoutDirection;Landroidx/compose/ui/unit/Density;)Z
+    if-eqz v6, :cond_f
 
-    move-result v1
-
-    .line 173
+    .line 186
     invoke-direct {p0}, Landroidx/compose/ui/platform/ViewLayer;->updateOutlineResolver()V
 
-    .line 174
+    .line 188
+    :cond_f
     invoke-direct {p0}, Landroidx/compose/ui/platform/ViewLayer;->getManualClipPath()Landroidx/compose/ui/graphics/Path;
 
-    move-result-object v4
+    move-result-object v6
 
-    if-eqz v4, :cond_3
+    if-eqz v6, :cond_10
 
-    move v4, v3
+    move v6, v4
 
     goto :goto_3
 
-    :cond_3
-    move v4, v6
+    :cond_10
+    move v6, v3
 
     :goto_3
-    if-ne v7, v4, :cond_4
+    if-ne v2, v6, :cond_11
 
-    if-eqz v4, :cond_5
+    if-eqz v6, :cond_12
 
-    if-eqz v1, :cond_5
+    if-eqz v5, :cond_12
 
-    .line 176
-    :cond_4
+    .line 190
+    :cond_11
     invoke-virtual {p0}, Landroidx/compose/ui/platform/ViewLayer;->invalidate()V
 
-    .line 178
-    :cond_5
-    iget-boolean v1, v0, Landroidx/compose/ui/platform/ViewLayer;->drawnWithZ:Z
+    .line 192
+    :cond_12
+    iget-boolean v2, v0, Landroidx/compose/ui/platform/ViewLayer;->drawnWithZ:Z
 
-    if-nez v1, :cond_6
+    if-nez v2, :cond_13
 
     invoke-virtual {p0}, Landroidx/compose/ui/platform/ViewLayer;->getElevation()F
 
+    move-result v2
+
+    const/4 v5, 0x0
+
+    cmpl-float v2, v2, v5
+
+    if-lez v2, :cond_13
+
+    .line 193
+    iget-object v2, v0, Landroidx/compose/ui/platform/ViewLayer;->invalidateParentLayer:Lkotlin/jvm/functions/Function0;
+
+    if-eqz v2, :cond_13
+
+    invoke-interface {v2}, Lkotlin/jvm/functions/Function0;->invoke()Ljava/lang/Object;
+
+    :cond_13
+    and-int/lit16 v2, v1, 0x1f1b
+
+    if-eqz v2, :cond_14
+
+    .line 196
+    iget-object v2, v0, Landroidx/compose/ui/platform/ViewLayer;->matrixCache:Landroidx/compose/ui/platform/LayerMatrixCache;
+
+    invoke-virtual {v2}, Landroidx/compose/ui/platform/LayerMatrixCache;->invalidate()V
+
+    :cond_14
+    and-int/lit8 v2, v1, 0x40
+
+    if-eqz v2, :cond_15
+
+    .line 200
+    sget-object v2, Landroidx/compose/ui/platform/ViewLayerVerificationHelper28;->INSTANCE:Landroidx/compose/ui/platform/ViewLayerVerificationHelper28;
+
+    .line 201
+    move-object v5, v0
+
+    check-cast v5, Landroid/view/View;
+
+    .line 202
+    invoke-virtual {p1}, Landroidx/compose/ui/graphics/ReusableGraphicsLayerScope;->getAmbientShadowColor-0d7_KjU()J
+
+    move-result-wide v6
+
+    invoke-static {v6, v7}, Landroidx/compose/ui/graphics/ColorKt;->toArgb-8_81llA(J)I
+
+    move-result v6
+
+    .line 200
+    invoke-virtual {v2, v5, v6}, Landroidx/compose/ui/platform/ViewLayerVerificationHelper28;->setOutlineAmbientShadowColor(Landroid/view/View;I)V
+
+    :cond_15
+    and-int/lit16 v2, v1, 0x80
+
+    if-eqz v2, :cond_16
+
+    .line 206
+    sget-object v2, Landroidx/compose/ui/platform/ViewLayerVerificationHelper28;->INSTANCE:Landroidx/compose/ui/platform/ViewLayerVerificationHelper28;
+
+    .line 207
+    move-object v5, v0
+
+    check-cast v5, Landroid/view/View;
+
+    .line 208
+    invoke-virtual {p1}, Landroidx/compose/ui/graphics/ReusableGraphicsLayerScope;->getSpotShadowColor-0d7_KjU()J
+
+    move-result-wide v6
+
+    invoke-static {v6, v7}, Landroidx/compose/ui/graphics/ColorKt;->toArgb-8_81llA(J)I
+
+    move-result v6
+
+    .line 206
+    invoke-virtual {v2, v5, v6}, Landroidx/compose/ui/platform/ViewLayerVerificationHelper28;->setOutlineSpotShadowColor(Landroid/view/View;I)V
+
+    :cond_16
+    const/high16 v2, 0x20000
+
+    and-int/2addr v2, v1
+
+    if-eqz v2, :cond_17
+
+    .line 214
+    sget-object v2, Landroidx/compose/ui/platform/ViewLayerVerificationHelper31;->INSTANCE:Landroidx/compose/ui/platform/ViewLayerVerificationHelper31;
+
+    move-object v5, v0
+
+    check-cast v5, Landroid/view/View;
+
+    invoke-virtual {p1}, Landroidx/compose/ui/graphics/ReusableGraphicsLayerScope;->getRenderEffect()Landroidx/compose/ui/graphics/RenderEffect;
+
+    move-result-object v6
+
+    invoke-virtual {v2, v5, v6}, Landroidx/compose/ui/platform/ViewLayerVerificationHelper31;->setRenderEffect(Landroid/view/View;Landroidx/compose/ui/graphics/RenderEffect;)V
+
+    :cond_17
+    const v2, 0x8000
+
+    and-int/2addr v1, v2
+
+    if-eqz v1, :cond_1a
+
+    .line 219
+    invoke-virtual {p1}, Landroidx/compose/ui/graphics/ReusableGraphicsLayerScope;->getCompositingStrategy--NrFUSI()I
+
     move-result v1
 
-    const/4 v4, 0x0
+    .line 220
+    sget-object v2, Landroidx/compose/ui/graphics/CompositingStrategy;->Companion:Landroidx/compose/ui/graphics/CompositingStrategy$Companion;
 
-    cmpl-float v1, v1, v4
+    invoke-virtual {v2}, Landroidx/compose/ui/graphics/CompositingStrategy$Companion;->getOffscreen--NrFUSI()I
 
-    if-lez v1, :cond_6
+    move-result v2
 
-    .line 179
-    iget-object v1, v0, Landroidx/compose/ui/platform/ViewLayer;->invalidateParentLayer:Lkotlin/jvm/functions/Function0;
+    invoke-static {v1, v2}, Landroidx/compose/ui/graphics/CompositingStrategy;->equals-impl0(II)Z
 
-    if-eqz v1, :cond_6
+    move-result v2
 
-    invoke-interface {v1}, Lkotlin/jvm/functions/Function0;->invoke()Ljava/lang/Object;
+    const/4 v5, 0x0
 
-    .line 181
-    :cond_6
-    iget-object v1, v0, Landroidx/compose/ui/platform/ViewLayer;->matrixCache:Landroidx/compose/ui/platform/LayerMatrixCache;
-
-    invoke-virtual {v1}, Landroidx/compose/ui/platform/LayerMatrixCache;->invalidate()V
-
-    .line 183
-    sget-object v1, Landroidx/compose/ui/platform/ViewLayerVerificationHelper28;->INSTANCE:Landroidx/compose/ui/platform/ViewLayerVerificationHelper28;
-
-    .line 184
-    move-object v4, v0
-
-    check-cast v4, Landroid/view/View;
-
-    .line 185
-    invoke-static/range {p16 .. p17}, Landroidx/compose/ui/graphics/ColorKt;->toArgb-8_81llA(J)I
-
-    move-result v5
-
-    .line 183
-    invoke-virtual {v1, v4, v5}, Landroidx/compose/ui/platform/ViewLayerVerificationHelper28;->setOutlineAmbientShadowColor(Landroid/view/View;I)V
-
-    .line 187
-    sget-object v1, Landroidx/compose/ui/platform/ViewLayerVerificationHelper28;->INSTANCE:Landroidx/compose/ui/platform/ViewLayerVerificationHelper28;
-
-    invoke-static/range {p18 .. p19}, Landroidx/compose/ui/graphics/ColorKt;->toArgb-8_81llA(J)I
-
-    move-result v5
-
-    invoke-virtual {v1, v4, v5}, Landroidx/compose/ui/platform/ViewLayerVerificationHelper28;->setOutlineSpotShadowColor(Landroid/view/View;I)V
-
-    .line 190
-    sget-object v1, Landroidx/compose/ui/platform/ViewLayerVerificationHelper31;->INSTANCE:Landroidx/compose/ui/platform/ViewLayerVerificationHelper31;
-
-    move-object v4, v0
-
-    check-cast v4, Landroid/view/View;
-
-    move-object/from16 v5, p15
-
-    invoke-virtual {v1, v4, v5}, Landroidx/compose/ui/platform/ViewLayerVerificationHelper31;->setRenderEffect(Landroid/view/View;Landroidx/compose/ui/graphics/RenderEffect;)V
-
-    .line 194
-    sget-object v1, Landroidx/compose/ui/graphics/CompositingStrategy;->Companion:Landroidx/compose/ui/graphics/CompositingStrategy$Companion;
-
-    invoke-virtual {v1}, Landroidx/compose/ui/graphics/CompositingStrategy$Companion;->getOffscreen--NrFUSI()I
-
-    move-result v1
-
-    invoke-static {v2, v1}, Landroidx/compose/ui/graphics/CompositingStrategy;->equals-impl0(II)Z
-
-    move-result v1
-
-    const/4 v4, 0x0
-
-    if-eqz v1, :cond_7
+    if-eqz v2, :cond_18
 
     const/4 v1, 0x2
 
-    .line 195
-    invoke-virtual {p0, v1, v4}, Landroidx/compose/ui/platform/ViewLayer;->setLayerType(ILandroid/graphics/Paint;)V
+    .line 221
+    invoke-virtual {p0, v1, v5}, Landroidx/compose/ui/platform/ViewLayer;->setLayerType(ILandroid/graphics/Paint;)V
 
-    goto :goto_4
-
-    .line 199
-    :cond_7
-    sget-object v1, Landroidx/compose/ui/graphics/CompositingStrategy;->Companion:Landroidx/compose/ui/graphics/CompositingStrategy$Companion;
-
-    invoke-virtual {v1}, Landroidx/compose/ui/graphics/CompositingStrategy$Companion;->getModulateAlpha--NrFUSI()I
-
-    move-result v1
-
-    invoke-static {v2, v1}, Landroidx/compose/ui/graphics/CompositingStrategy;->equals-impl0(II)Z
-
-    move-result v1
-
-    if-eqz v1, :cond_8
-
-    .line 200
-    invoke-virtual {p0, v6, v4}, Landroidx/compose/ui/platform/ViewLayer;->setLayerType(ILandroid/graphics/Paint;)V
-
-    move v3, v6
-
-    goto :goto_4
-
-    .line 204
-    :cond_8
-    invoke-virtual {p0, v6, v4}, Landroidx/compose/ui/platform/ViewLayer;->setLayerType(ILandroid/graphics/Paint;)V
-
-    .line 193
     :goto_4
+    move v3, v4
+
+    goto :goto_5
+
+    .line 225
+    :cond_18
+    sget-object v2, Landroidx/compose/ui/graphics/CompositingStrategy;->Companion:Landroidx/compose/ui/graphics/CompositingStrategy$Companion;
+
+    invoke-virtual {v2}, Landroidx/compose/ui/graphics/CompositingStrategy$Companion;->getModulateAlpha--NrFUSI()I
+
+    move-result v2
+
+    invoke-static {v1, v2}, Landroidx/compose/ui/graphics/CompositingStrategy;->equals-impl0(II)Z
+
+    move-result v1
+
+    if-eqz v1, :cond_19
+
+    .line 226
+    invoke-virtual {p0, v3, v5}, Landroidx/compose/ui/platform/ViewLayer;->setLayerType(ILandroid/graphics/Paint;)V
+
+    goto :goto_5
+
+    .line 231
+    :cond_19
+    invoke-virtual {p0, v3, v5}, Landroidx/compose/ui/platform/ViewLayer;->setLayerType(ILandroid/graphics/Paint;)V
+
+    goto :goto_4
+
+    .line 219
+    :goto_5
     iput-boolean v3, v0, Landroidx/compose/ui/platform/ViewLayer;->mHasOverlappingRendering:Z
+
+    .line 236
+    :cond_1a
+    invoke-virtual {p1}, Landroidx/compose/ui/graphics/ReusableGraphicsLayerScope;->getMutatedFields$ui_release()I
+
+    move-result v1
+
+    iput v1, v0, Landroidx/compose/ui/platform/ViewLayer;->mutatedFields:I
 
     return-void
 .end method

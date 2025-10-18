@@ -21,7 +21,7 @@
 .method constructor <init>()V
     .locals 0
 
-    .line 964
+    .line 1017
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -42,11 +42,11 @@
         }
     .end annotation
 
-    .line 968
+    .line 1021
     check-cast p1, Ljp/co/sony/mc/camera/setting/CameraSettings;
 
-    .line 969
-    invoke-static {p1}, Ljp/co/sony/mc/camera/setting/CameraSettings;->-$$Nest$mgetPreviewRect(Ljp/co/sony/mc/camera/setting/CameraSettings;)Landroid/graphics/Rect;
+    .line 1022
+    invoke-static {p1}, Ljp/co/sony/mc/camera/setting/CameraSettings;->-$$Nest$mgetBurstFeedback(Ljp/co/sony/mc/camera/setting/CameraSettings;)Ljp/co/sony/mc/camera/configuration/parameters/BurstFeedback;
 
     move-result-object p0
 

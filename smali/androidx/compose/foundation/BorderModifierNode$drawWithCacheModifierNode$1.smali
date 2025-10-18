@@ -68,11 +68,7 @@
 .method public final invoke(Landroidx/compose/ui/draw/CacheDrawScope;)Landroidx/compose/ui/draw/DrawResult;
     .locals 13
 
-    const-string v0, "$this$CacheDrawModifierNode"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 158
+    .line 162
     iget-object v0, p0, Landroidx/compose/foundation/BorderModifierNode$drawWithCacheModifierNode$1;->this$0:Landroidx/compose/foundation/BorderModifierNode;
 
     invoke-virtual {v0}, Landroidx/compose/foundation/BorderModifierNode;->getWidth-D9Ej5fM()F
@@ -101,7 +97,7 @@
 
     if-lez v0, :cond_5
 
-    .line 163
+    .line 167
     iget-object v0, p0, Landroidx/compose/foundation/BorderModifierNode$drawWithCacheModifierNode$1;->this$0:Landroidx/compose/foundation/BorderModifierNode;
 
     invoke-virtual {v0}, Landroidx/compose/foundation/BorderModifierNode;->getWidth-D9Ej5fM()F
@@ -143,7 +139,7 @@
 
     double-to-float v0, v0
 
-    .line 164
+    .line 168
     :goto_0
     invoke-virtual {p1}, Landroidx/compose/ui/draw/CacheDrawScope;->getSize-NH-jbRc()J
 
@@ -173,12 +169,12 @@
 
     div-float v1, v0, v2
 
-    .line 167
+    .line 171
     invoke-static {v1, v1}, Landroidx/compose/ui/geometry/OffsetKt;->Offset(FF)J
 
     move-result-wide v7
 
-    .line 169
+    .line 173
     invoke-virtual {p1}, Landroidx/compose/ui/draw/CacheDrawScope;->getSize-NH-jbRc()J
 
     move-result-wide v3
@@ -189,7 +185,7 @@
 
     sub-float/2addr v1, v0
 
-    .line 170
+    .line 174
     invoke-virtual {p1}, Landroidx/compose/ui/draw/CacheDrawScope;->getSize-NH-jbRc()J
 
     move-result-wide v3
@@ -200,14 +196,14 @@
 
     sub-float/2addr v3, v0
 
-    .line 168
+    .line 172
     invoke-static {v1, v3}, Landroidx/compose/ui/geometry/SizeKt;->Size(FF)J
 
     move-result-wide v9
 
     mul-float/2addr v2, v0
 
-    .line 173
+    .line 177
     invoke-virtual {p1}, Landroidx/compose/ui/draw/CacheDrawScope;->getSize-NH-jbRc()J
 
     move-result-wide v3
@@ -227,7 +223,7 @@
     :cond_1
     const/4 v1, 0x0
 
-    .line 174
+    .line 178
     :goto_1
     iget-object v2, p0, Landroidx/compose/foundation/BorderModifierNode$drawWithCacheModifierNode$1;->this$0:Landroidx/compose/foundation/BorderModifierNode;
 
@@ -251,20 +247,20 @@
 
     move-result-object v2
 
-    .line 175
+    .line 179
     instance-of v3, v2, Landroidx/compose/ui/graphics/Outline$Generic;
 
     if-eqz v3, :cond_2
 
-    .line 176
+    .line 180
     iget-object v3, p0, Landroidx/compose/foundation/BorderModifierNode$drawWithCacheModifierNode$1;->this$0:Landroidx/compose/foundation/BorderModifierNode;
 
-    .line 177
+    .line 181
     invoke-virtual {v3}, Landroidx/compose/foundation/BorderModifierNode;->getBrush()Landroidx/compose/ui/graphics/Brush;
 
     move-result-object v5
 
-    .line 178
+    .line 182
     move-object v6, v2
 
     check-cast v6, Landroidx/compose/ui/graphics/Outline$Generic;
@@ -275,28 +271,28 @@
 
     move v8, v0
 
-    .line 176
+    .line 180
     invoke-static/range {v3 .. v8}, Landroidx/compose/foundation/BorderModifierNode;->access$drawGenericBorder(Landroidx/compose/foundation/BorderModifierNode;Landroidx/compose/ui/draw/CacheDrawScope;Landroidx/compose/ui/graphics/Brush;Landroidx/compose/ui/graphics/Outline$Generic;ZF)Landroidx/compose/ui/draw/DrawResult;
 
     move-result-object p0
 
     goto :goto_2
 
-    .line 183
+    .line 187
     :cond_2
     instance-of v3, v2, Landroidx/compose/ui/graphics/Outline$Rounded;
 
     if-eqz v3, :cond_3
 
-    .line 184
+    .line 188
     iget-object v3, p0, Landroidx/compose/foundation/BorderModifierNode$drawWithCacheModifierNode$1;->this$0:Landroidx/compose/foundation/BorderModifierNode;
 
-    .line 185
+    .line 189
     invoke-virtual {v3}, Landroidx/compose/foundation/BorderModifierNode;->getBrush()Landroidx/compose/ui/graphics/Brush;
 
     move-result-object v5
 
-    .line 186
+    .line 190
     move-object v6, v2
 
     check-cast v6, Landroidx/compose/ui/graphics/Outline$Rounded;
@@ -307,20 +303,20 @@
 
     move v12, v0
 
-    .line 184
+    .line 188
     invoke-static/range {v3 .. v12}, Landroidx/compose/foundation/BorderModifierNode;->access$drawRoundRectBorder-JqoCqck(Landroidx/compose/foundation/BorderModifierNode;Landroidx/compose/ui/draw/CacheDrawScope;Landroidx/compose/ui/graphics/Brush;Landroidx/compose/ui/graphics/Outline$Rounded;JJZF)Landroidx/compose/ui/draw/DrawResult;
 
     move-result-object p0
 
     goto :goto_2
 
-    .line 193
+    .line 197
     :cond_3
     instance-of v2, v2, Landroidx/compose/ui/graphics/Outline$Rectangle;
 
     if-eqz v2, :cond_4
 
-    .line 195
+    .line 199
     iget-object p0, p0, Landroidx/compose/foundation/BorderModifierNode$drawWithCacheModifierNode$1;->this$0:Landroidx/compose/foundation/BorderModifierNode;
 
     invoke-virtual {p0}, Landroidx/compose/foundation/BorderModifierNode;->getBrush()Landroidx/compose/ui/graphics/Brush;
@@ -337,7 +333,7 @@
 
     move v10, v0
 
-    .line 194
+    .line 198
     invoke-static/range {v3 .. v10}, Landroidx/compose/foundation/BorderKt;->access$drawRectBorder-NsqcLGU(Landroidx/compose/ui/draw/CacheDrawScope;Landroidx/compose/ui/graphics/Brush;JJZF)Landroidx/compose/ui/draw/DrawResult;
 
     move-result-object p0
@@ -351,7 +347,7 @@
 
     throw p0
 
-    .line 160
+    .line 164
     :cond_5
     invoke-static {p1}, Landroidx/compose/foundation/BorderKt;->access$drawContentWithoutBorder(Landroidx/compose/ui/draw/CacheDrawScope;)Landroidx/compose/ui/draw/DrawResult;
 
@@ -364,7 +360,7 @@
 .method public bridge synthetic invoke(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
 
-    .line 157
+    .line 161
     check-cast p1, Landroidx/compose/ui/draw/CacheDrawScope;
 
     invoke-virtual {p0, p1}, Landroidx/compose/foundation/BorderModifierNode$drawWithCacheModifierNode$1;->invoke(Landroidx/compose/ui/draw/CacheDrawScope;)Landroidx/compose/ui/draw/DrawResult;

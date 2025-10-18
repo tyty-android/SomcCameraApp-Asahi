@@ -1,6 +1,6 @@
 .class final Landroidx/compose/ui/tooling/ComposeViewAdapter$init$3$1;
 .super Lkotlin/jvm/internal/Lambda;
-.source "ComposeViewAdapter.kt"
+.source "ComposeViewAdapter.android.kt"
 
 # interfaces
 .implements Lkotlin/jvm/functions/Function2;
@@ -110,7 +110,7 @@
 .method public bridge synthetic invoke(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
 
-    .line 502
+    .line 497
     check-cast p1, Landroidx/compose/runtime/Composer;
 
     check-cast p2, Ljava/lang/Number;
@@ -129,7 +129,7 @@
 .method public final invoke(Landroidx/compose/runtime/Composer;I)V
     .locals 10
 
-    const-string v0, "C:ComposeViewAdapter.kt#hevd2p"
+    const-string v0, "C:ComposeViewAdapter.android.kt#hevd2p"
 
     invoke-static {p1, v0}, Landroidx/compose/runtime/ComposerKt;->sourceInformation(Landroidx/compose/runtime/Composer;Ljava/lang/String;)V
 
@@ -139,7 +139,7 @@
 
     if-ne v0, v1, :cond_1
 
-    .line 503
+    .line 498
     invoke-interface {p1}, Landroidx/compose/runtime/Composer;->getSkipping()Z
 
     move-result v0
@@ -148,13 +148,13 @@
 
     goto :goto_0
 
-    .line 544
+    .line 539
     :cond_0
     invoke-interface {p1}, Landroidx/compose/runtime/Composer;->skipToGroupEnd()V
 
     goto :goto_1
 
-    .line 503
+    .line 498
     :cond_1
     :goto_0
     invoke-static {}, Landroidx/compose/runtime/ComposerKt;->isTraceInProgress()Z
@@ -165,13 +165,13 @@
 
     const/4 v0, -0x1
 
-    const-string v1, "androidx.compose.ui.tooling.ComposeViewAdapter.init.<anonymous>.<anonymous> (ComposeViewAdapter.kt:501)"
+    const-string v1, "androidx.compose.ui.tooling.ComposeViewAdapter.init.<anonymous>.<anonymous> (ComposeViewAdapter.android.kt:497)"
 
-    const v2, 0x7388e4a2
+    const v2, 0x1315c781
 
     invoke-static {v2, p2, v0, v1}, Landroidx/compose/runtime/ComposerKt;->traceEventStart(IIILjava/lang/String;)V
 
-    .line 507
+    .line 502
     :cond_2
     new-instance p2, Landroidx/compose/ui/tooling/ComposeViewAdapter$init$3$1$composable$1;
 
@@ -193,7 +193,7 @@
 
     check-cast p2, Lkotlin/jvm/functions/Function0;
 
-    .line 527
+    .line 522
     iget-wide v0, p0, Landroidx/compose/ui/tooling/ComposeViewAdapter$init$3$1;->$animationClockStartTime:J
 
     const-wide/16 v2, 0x0
@@ -202,7 +202,7 @@
 
     if-ltz p1, :cond_3
 
-    .line 532
+    .line 527
     iget-object p1, p0, Landroidx/compose/ui/tooling/ComposeViewAdapter$init$3$1;->this$0:Landroidx/compose/ui/tooling/ComposeViewAdapter;
 
     new-instance v0, Landroidx/compose/ui/tooling/animation/PreviewAnimationClock;
@@ -219,7 +219,7 @@
 
     invoke-virtual {p1, v0}, Landroidx/compose/ui/tooling/ComposeViewAdapter;->setClock$ui_tooling_release(Landroidx/compose/ui/tooling/animation/PreviewAnimationClock;)V
 
-    .line 544
+    .line 539
     :cond_3
     invoke-interface {p2}, Lkotlin/jvm/functions/Function0;->invoke()Ljava/lang/Object;
 

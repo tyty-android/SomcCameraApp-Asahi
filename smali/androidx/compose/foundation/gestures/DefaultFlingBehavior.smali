@@ -9,7 +9,7 @@
 # annotations
 .annotation runtime Lkotlin/Metadata;
     d1 = {
-        "\u0000,\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0010\u0007\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0010\u0008\n\u0002\u0008\u0005\n\u0002\u0018\u0002\n\u0002\u0008\u0003\u0008\u0000\u0018\u00002\u00020\u0001B\u001d\u0012\u000c\u0010\u0002\u001a\u0008\u0012\u0004\u0012\u00020\u00040\u0003\u0012\u0008\u0008\u0002\u0010\u0005\u001a\u00020\u0006\u00a2\u0006\u0002\u0010\u0007J\u001d\u0010\u000e\u001a\u00020\u0004*\u00020\u000f2\u0006\u0010\u0010\u001a\u00020\u0004H\u0096@\u00f8\u0001\u0000\u00a2\u0006\u0002\u0010\u0011R\u0014\u0010\u0002\u001a\u0008\u0012\u0004\u0012\u00020\u00040\u0003X\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u001a\u0010\u0008\u001a\u00020\tX\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\u0008\n\u0010\u000b\"\u0004\u0008\u000c\u0010\rR\u000e\u0010\u0005\u001a\u00020\u0006X\u0082\u0004\u00a2\u0006\u0002\n\u0000\u0082\u0002\u0004\n\u0002\u0008\u0019\u00a8\u0006\u0012"
+        "\u0000,\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0010\u0007\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0006\n\u0002\u0010\u0008\n\u0002\u0008\u0005\n\u0002\u0018\u0002\n\u0002\u0008\u0003\u0008\u0000\u0018\u00002\u00020\u0001B\u001d\u0012\u000c\u0010\u0002\u001a\u0008\u0012\u0004\u0012\u00020\u00040\u0003\u0012\u0008\u0008\u0002\u0010\u0005\u001a\u00020\u0006\u00a2\u0006\u0002\u0010\u0007J\u001a\u0010\u0012\u001a\u00020\u0004*\u00020\u00132\u0006\u0010\u0014\u001a\u00020\u0004H\u0096@\u00a2\u0006\u0002\u0010\u0015R \u0010\u0002\u001a\u0008\u0012\u0004\u0012\u00020\u00040\u0003X\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\u0008\u0008\u0010\t\"\u0004\u0008\n\u0010\u000bR\u001a\u0010\u000c\u001a\u00020\rX\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\u0008\u000e\u0010\u000f\"\u0004\u0008\u0010\u0010\u0011R\u000e\u0010\u0005\u001a\u00020\u0006X\u0082\u0004\u00a2\u0006\u0002\n\u0000\u00a8\u0006\u0016"
     }
     d2 = {
         "Landroidx/compose/foundation/gestures/DefaultFlingBehavior;",
@@ -20,6 +20,10 @@
         "motionDurationScale",
         "Landroidx/compose/ui/MotionDurationScale;",
         "(Landroidx/compose/animation/core/DecayAnimationSpec;Landroidx/compose/ui/MotionDurationScale;)V",
+        "getFlingDecay",
+        "()Landroidx/compose/animation/core/DecayAnimationSpec;",
+        "setFlingDecay",
+        "(Landroidx/compose/animation/core/DecayAnimationSpec;)V",
         "lastAnimationCycleCount",
         "",
         "getLastAnimationCycleCount",
@@ -42,8 +46,12 @@
 .end annotation
 
 
+# static fields
+.field public static final $stable:I
+
+
 # instance fields
-.field private final flingDecay:Landroidx/compose/animation/core/DecayAnimationSpec;
+.field private flingDecay:Landroidx/compose/animation/core/DecayAnimationSpec;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Landroidx/compose/animation/core/DecayAnimationSpec<",
@@ -59,8 +67,14 @@
 
 
 # direct methods
+.method static constructor <clinit>()V
+    .locals 0
+
+    return-void
+.end method
+
 .method public constructor <init>(Landroidx/compose/animation/core/DecayAnimationSpec;Landroidx/compose/ui/MotionDurationScale;)V
-    .locals 1
+    .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -72,21 +86,13 @@
         }
     .end annotation
 
-    const-string v0, "flingDecay"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string v0, "motionDurationScale"
-
-    invoke-static {p2, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 585
+    .line 945
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 586
+    .line 946
     iput-object p1, p0, Landroidx/compose/foundation/gestures/DefaultFlingBehavior;->flingDecay:Landroidx/compose/animation/core/DecayAnimationSpec;
 
-    .line 587
+    .line 947
     iput-object p2, p0, Landroidx/compose/foundation/gestures/DefaultFlingBehavior;->motionDurationScale:Landroidx/compose/ui/MotionDurationScale;
 
     return-void
@@ -99,33 +105,41 @@
 
     if-eqz p3, :cond_0
 
-    .line 587
+    .line 947
     invoke-static {}, Landroidx/compose/foundation/gestures/ScrollableKt;->getDefaultScrollMotionDurationScale()Landroidx/compose/ui/MotionDurationScale;
 
     move-result-object p2
 
-    .line 585
+    .line 945
     :cond_0
     invoke-direct {p0, p1, p2}, Landroidx/compose/foundation/gestures/DefaultFlingBehavior;-><init>(Landroidx/compose/animation/core/DecayAnimationSpec;Landroidx/compose/ui/MotionDurationScale;)V
 
     return-void
 .end method
 
-.method public static final synthetic access$getFlingDecay$p(Landroidx/compose/foundation/gestures/DefaultFlingBehavior;)Landroidx/compose/animation/core/DecayAnimationSpec;
-    .locals 0
 
-    .line 585
+# virtual methods
+.method public final getFlingDecay()Landroidx/compose/animation/core/DecayAnimationSpec;
+    .locals 0
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()",
+            "Landroidx/compose/animation/core/DecayAnimationSpec<",
+            "Ljava/lang/Float;",
+            ">;"
+        }
+    .end annotation
+
+    .line 946
     iget-object p0, p0, Landroidx/compose/foundation/gestures/DefaultFlingBehavior;->flingDecay:Landroidx/compose/animation/core/DecayAnimationSpec;
 
     return-object p0
 .end method
 
-
-# virtual methods
 .method public final getLastAnimationCycleCount()I
     .locals 0
 
-    .line 591
+    .line 951
     iget p0, p0, Landroidx/compose/foundation/gestures/DefaultFlingBehavior;->lastAnimationCycleCount:I
 
     return p0
@@ -148,10 +162,10 @@
 
     const/4 v0, 0x0
 
-    .line 594
+    .line 954
     iput v0, p0, Landroidx/compose/foundation/gestures/DefaultFlingBehavior;->lastAnimationCycleCount:I
 
-    .line 596
+    .line 956
     iget-object v0, p0, Landroidx/compose/foundation/gestures/DefaultFlingBehavior;->motionDurationScale:Landroidx/compose/ui/MotionDurationScale;
 
     check-cast v0, Lkotlin/coroutines/CoroutineContext;
@@ -171,10 +185,27 @@
     return-object p0
 .end method
 
+.method public final setFlingDecay(Landroidx/compose/animation/core/DecayAnimationSpec;)V
+    .locals 0
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Landroidx/compose/animation/core/DecayAnimationSpec<",
+            "Ljava/lang/Float;",
+            ">;)V"
+        }
+    .end annotation
+
+    .line 946
+    iput-object p1, p0, Landroidx/compose/foundation/gestures/DefaultFlingBehavior;->flingDecay:Landroidx/compose/animation/core/DecayAnimationSpec;
+
+    return-void
+.end method
+
 .method public final setLastAnimationCycleCount(I)V
     .locals 0
 
-    .line 591
+    .line 951
     iput p1, p0, Landroidx/compose/foundation/gestures/DefaultFlingBehavior;->lastAnimationCycleCount:I
 
     return-void

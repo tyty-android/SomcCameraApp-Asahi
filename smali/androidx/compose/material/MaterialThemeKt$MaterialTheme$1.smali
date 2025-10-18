@@ -48,8 +48,6 @@
 
 
 # instance fields
-.field final synthetic $$dirty:I
-
 .field final synthetic $content:Lkotlin/jvm/functions/Function2;
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -66,7 +64,7 @@
 
 
 # direct methods
-.method constructor <init>(Landroidx/compose/material/Typography;Lkotlin/jvm/functions/Function2;I)V
+.method constructor <init>(Landroidx/compose/material/Typography;Lkotlin/jvm/functions/Function2;)V
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -78,15 +76,13 @@
             "-",
             "Ljava/lang/Integer;",
             "Lkotlin/Unit;",
-            ">;I)V"
+            ">;)V"
         }
     .end annotation
 
     iput-object p1, p0, Landroidx/compose/material/MaterialThemeKt$MaterialTheme$1;->$typography:Landroidx/compose/material/Typography;
 
     iput-object p2, p0, Landroidx/compose/material/MaterialThemeKt$MaterialTheme$1;->$content:Lkotlin/jvm/functions/Function2;
-
-    iput p3, p0, Landroidx/compose/material/MaterialThemeKt$MaterialTheme$1;->$$dirty:I
 
     const/4 p1, 0x2
 
@@ -155,7 +151,7 @@
 
     const/4 v0, -0x1
 
-    const-string v1, "androidx.compose.material.MaterialTheme.<anonymous> (MaterialTheme.kt:79)"
+    const-string v1, "androidx.compose.material.MaterialTheme.<anonymous> (MaterialTheme.kt:80)"
 
     const v2, -0x67b7dd37
 
@@ -170,11 +166,9 @@
 
     new-instance v0, Landroidx/compose/material/MaterialThemeKt$MaterialTheme$1$1;
 
-    iget-object v1, p0, Landroidx/compose/material/MaterialThemeKt$MaterialTheme$1;->$content:Lkotlin/jvm/functions/Function2;
+    iget-object p0, p0, Landroidx/compose/material/MaterialThemeKt$MaterialTheme$1;->$content:Lkotlin/jvm/functions/Function2;
 
-    iget p0, p0, Landroidx/compose/material/MaterialThemeKt$MaterialTheme$1;->$$dirty:I
-
-    invoke-direct {v0, v1, p0}, Landroidx/compose/material/MaterialThemeKt$MaterialTheme$1$1;-><init>(Lkotlin/jvm/functions/Function2;I)V
+    invoke-direct {v0, p0}, Landroidx/compose/material/MaterialThemeKt$MaterialTheme$1$1;-><init>(Lkotlin/jvm/functions/Function2;)V
 
     const p0, 0xad0597a
 

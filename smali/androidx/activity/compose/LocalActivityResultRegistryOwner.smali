@@ -165,10 +165,6 @@
 
     move-result-object p0
 
-    const-string p2, "innerContext.baseContext"
-
-    invoke-static {p0, p2}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
-
     goto :goto_0
 
     :cond_1
@@ -197,10 +193,6 @@
             ">;"
         }
     .end annotation
-
-    const-string p0, "registryOwner"
-
-    invoke-static {p1, p0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 57
     sget-object p0, Landroidx/activity/compose/LocalActivityResultRegistryOwner;->LocalComposition:Landroidx/compose/runtime/ProvidableCompositionLocal;

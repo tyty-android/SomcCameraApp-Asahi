@@ -3,7 +3,7 @@
 .source "D8$$SyntheticClass"
 
 # interfaces
-.implements Ljp/co/sony/mc/camera/CameraAccessor$PreviewCallback;
+.implements Ljava/lang/Runnable;
 
 
 # instance fields
@@ -24,13 +24,13 @@
 
 
 # virtual methods
-.method public final onPreviewStarted()V
+.method public final run()V
     .locals 0
 
     .line 0
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/FragmentController$$ExternalSyntheticLambda2;->f$0:Ljp/co/sony/mc/camera/view/FragmentController;
 
-    invoke-static {p0}, Ljp/co/sony/mc/camera/view/FragmentController;->$r8$lambda$wdhvlWSf_1JH_1oNRmQlQVSBW44(Ljp/co/sony/mc/camera/view/FragmentController;)V
+    invoke-static {p0}, Ljp/co/sony/mc/camera/view/FragmentController;->$r8$lambda$SGXb69DJN-MPuJk4v_Zw6iZKDQk(Ljp/co/sony/mc/camera/view/FragmentController;)V
 
     return-void
 .end method

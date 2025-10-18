@@ -78,11 +78,7 @@
 .end method
 
 .method public constructor <init>(Landroidx/compose/ui/text/intl/PlatformLocale;)V
-    .locals 1
-
-    const-string v0, "platformLocale"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+    .locals 0
 
     .line 33
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -95,10 +91,6 @@
 
 .method public constructor <init>(Ljava/lang/String;)V
     .locals 1
-
-    const-string v0, "languageTag"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 49
     invoke-static {}, Landroidx/compose/ui/text/intl/PlatformLocaleKt;->getPlatformLocaleDelegate()Landroidx/compose/ui/text/intl/PlatformLocaleDelegate;

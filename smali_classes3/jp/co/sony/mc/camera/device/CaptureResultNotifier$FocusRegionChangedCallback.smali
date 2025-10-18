@@ -17,3 +17,6 @@
 # virtual methods
 .method public abstract onFocusAreaUpdate(Z[Landroid/hardware/camera2/params/MeteringRectangle;)V
 .end method
+
+.method public abstract onFocusStateChanged(Z)V
+.end method

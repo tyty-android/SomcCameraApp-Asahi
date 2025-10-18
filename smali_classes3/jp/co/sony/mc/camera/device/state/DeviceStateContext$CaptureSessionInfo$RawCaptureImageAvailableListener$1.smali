@@ -32,7 +32,7 @@
         }
     .end annotation
 
-    .line 883
+    .line 897
     iput-object p1, p0, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CaptureSessionInfo$RawCaptureImageAvailableListener$1;->this$2:Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CaptureSessionInfo$RawCaptureImageAvailableListener;
 
     iput-object p2, p0, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CaptureSessionInfo$RawCaptureImageAvailableListener$1;->val$image:Landroid/media/Image;
@@ -47,7 +47,7 @@
 .method public run()V
     .locals 7
 
-    .line 887
+    .line 901
     iget-object v0, p0, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CaptureSessionInfo$RawCaptureImageAvailableListener$1;->this$2:Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CaptureSessionInfo$RawCaptureImageAvailableListener;
 
     iget-object v0, v0, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CaptureSessionInfo$RawCaptureImageAvailableListener;->this$1:Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CaptureSessionInfo;
@@ -64,7 +64,7 @@
 
     if-nez v0, :cond_1
 
-    .line 893
+    .line 907
     iget-object v0, p0, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CaptureSessionInfo$RawCaptureImageAvailableListener$1;->this$2:Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CaptureSessionInfo$RawCaptureImageAvailableListener;
 
     iget-object v0, v0, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CaptureSessionInfo$RawCaptureImageAvailableListener;->this$1:Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CaptureSessionInfo;
@@ -81,7 +81,7 @@
 
     check-cast v0, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CaptureProcessAdapter;
 
-    .line 894
+    .line 908
     invoke-virtual {v0}, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CaptureProcessAdapter;->getSnapshotRequest()Ljp/co/sony/mc/camera/device/SnapshotRequest;
 
     move-result-object v1
@@ -92,7 +92,7 @@
 
     if-eq v1, v2, :cond_2
 
-    .line 895
+    .line 909
     iget-object v1, p0, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CaptureSessionInfo$RawCaptureImageAvailableListener$1;->this$2:Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CaptureSessionInfo$RawCaptureImageAvailableListener;
 
     iget-object v1, v1, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CaptureSessionInfo$RawCaptureImageAvailableListener;->this$1:Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CaptureSessionInfo;
@@ -120,7 +120,7 @@
 
     check-cast v2, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CaptureProcessAdapter;
 
-    .line 896
+    .line 910
     invoke-static {v2}, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CaptureProcessAdapter;->-$$Nest$fgetmRawImageQueue(Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CaptureProcessAdapter;)Ljava/util/Deque;
 
     move-result-object v3
@@ -142,7 +142,7 @@
     :goto_0
     if-eqz v0, :cond_3
 
-    .line 904
+    .line 918
     iget-object v1, p0, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CaptureSessionInfo$RawCaptureImageAvailableListener$1;->val$image:Landroid/media/Image;
 
     invoke-virtual {v1}, Landroid/media/Image;->getTimestamp()J
@@ -153,33 +153,33 @@
 
     div-long/2addr v1, v3
 
-    .line 905
+    .line 919
     invoke-static {}, Landroid/os/SystemClock;->elapsedRealtime()J
 
     move-result-wide v3
 
-    .line 906
+    .line 920
     invoke-static {}, Landroid/os/SystemClock;->uptimeMillis()J
 
     move-result-wide v5
 
     sub-long/2addr v3, v5
 
-    .line 907
+    .line 921
     sget-object v5, Ljp/co/sony/mc/camera/util/PerfLog;->IMAGE_CAPTURED:Ljp/co/sony/mc/camera/util/PerfLog;
 
     sub-long/2addr v1, v3
 
     invoke-virtual {v5, v1, v2}, Ljp/co/sony/mc/camera/util/PerfLog;->transit(J)V
 
-    .line 908
+    .line 922
     iget-object p0, p0, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CaptureSessionInfo$RawCaptureImageAvailableListener$1;->val$image:Landroid/media/Image;
 
     invoke-static {v0, p0}, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CaptureProcessAdapter;->-$$Nest$monImageAvailable(Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CaptureProcessAdapter;Landroid/media/Image;)V
 
     goto :goto_1
 
-    .line 910
+    .line 924
     :cond_3
     iget-object p0, p0, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CaptureSessionInfo$RawCaptureImageAvailableListener$1;->val$image:Landroid/media/Image;
 

@@ -1,6 +1,6 @@
 .class public interface abstract Landroidx/compose/ui/tooling/CompositionDataRecord;
 .super Ljava/lang/Object;
-.source "Inspectable.kt"
+.source "Inspectable.android.kt"
 
 
 # annotations

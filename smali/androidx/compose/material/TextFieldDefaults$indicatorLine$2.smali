@@ -90,15 +90,11 @@
 .method public final invoke(Landroidx/compose/ui/Modifier;Landroidx/compose/runtime/Composer;I)Landroidx/compose/ui/Modifier;
     .locals 10
 
-    const-string v0, "$this$composed"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
     const p1, 0x5361fd9d
 
     invoke-interface {p2, p1}, Landroidx/compose/runtime/Composer;->startReplaceableGroup(I)V
 
-    const-string v0, "C281@10437L217:TextFieldDefaults.kt#jmzs0o"
+    const-string v0, "C299@11111L217:TextFieldDefaults.kt#jmzs0o"
 
     invoke-static {p2, v0}, Landroidx/compose/runtime/ComposerKt;->sourceInformation(Landroidx/compose/runtime/Composer;Ljava/lang/String;)V
 
@@ -110,40 +106,40 @@
 
     const/4 v0, -0x1
 
-    const-string v1, "androidx.compose.material.TextFieldDefaults.indicatorLine.<anonymous> (TextFieldDefaults.kt:280)"
+    const-string v1, "androidx.compose.material.TextFieldDefaults.indicatorLine.<anonymous> (TextFieldDefaults.kt:299)"
 
-    .line 282
+    .line 300
     invoke-static {p1, p3, v0, v1}, Landroidx/compose/runtime/ComposerKt;->traceEventStart(IIILjava/lang/String;)V
 
-    .line 283
+    .line 301
     :cond_0
     iget-boolean v2, p0, Landroidx/compose/material/TextFieldDefaults$indicatorLine$2;->$enabled:Z
 
-    .line 284
+    .line 302
     iget-boolean v3, p0, Landroidx/compose/material/TextFieldDefaults$indicatorLine$2;->$isError:Z
 
-    .line 285
+    .line 303
     iget-object v4, p0, Landroidx/compose/material/TextFieldDefaults$indicatorLine$2;->$interactionSource:Landroidx/compose/foundation/interaction/InteractionSource;
 
-    .line 286
+    .line 304
     iget-object v5, p0, Landroidx/compose/material/TextFieldDefaults$indicatorLine$2;->$colors:Landroidx/compose/material/TextFieldColors;
 
-    .line 287
+    .line 305
     iget v6, p0, Landroidx/compose/material/TextFieldDefaults$indicatorLine$2;->$focusedIndicatorLineThickness:F
 
-    .line 288
+    .line 306
     iget v7, p0, Landroidx/compose/material/TextFieldDefaults$indicatorLine$2;->$unfocusedIndicatorLineThickness:F
 
     const/4 v9, 0x0
 
     move-object v8, p2
 
-    .line 282
+    .line 300
     invoke-static/range {v2 .. v9}, Landroidx/compose/material/TextFieldDefaultsKt;->access$animateBorderStrokeAsState-NuRrP5Q(ZZLandroidx/compose/foundation/interaction/InteractionSource;Landroidx/compose/material/TextFieldColors;FFLandroidx/compose/runtime/Composer;I)Landroidx/compose/runtime/State;
 
     move-result-object p0
 
-    .line 290
+    .line 308
     sget-object p1, Landroidx/compose/ui/Modifier;->Companion:Landroidx/compose/ui/Modifier$Companion;
 
     check-cast p1, Landroidx/compose/ui/Modifier;
@@ -175,7 +171,7 @@
 .method public bridge synthetic invoke(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
 
-    .line 273
+    .line 291
     check-cast p1, Landroidx/compose/ui/Modifier;
 
     check-cast p2, Landroidx/compose/runtime/Composer;

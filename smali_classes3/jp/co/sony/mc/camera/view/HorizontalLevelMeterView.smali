@@ -6,7 +6,7 @@
 # annotations
 .annotation system Ldalvik/annotation/MemberClasses;
     value = {
-        Ljp/co/sony/mc/camera/view/HorizontalLevelMeterView$AccessibilitySoundPlayer;,
+        Ljp/co/sony/mc/camera/view/HorizontalLevelMeterView$LevelMeterFeedbackPlayer;,
         Ljp/co/sony/mc/camera/view/HorizontalLevelMeterView$SoundType;,
         Ljp/co/sony/mc/camera/view/HorizontalLevelMeterView$LayoutOrientation;
     }
@@ -14,7 +14,9 @@
 
 
 # static fields
-.field private static final BASE_LINE_ANIMATION_DURATION_TIMER_MILLIS:J = 0x28L
+.field private static final BASE_LINE_ANIMATION_DURATION_TIME_MILLIS:J = 0x28L
+
+.field private static final IGNORE_LEVEL_NOTICE_TIME_MILLIS:J = 0xc8L
 
 .field private static final MAX_ANGLE_RANGE:F = 20.0f
 
@@ -22,19 +24,25 @@
 
 .field private static final PREVENT_JITTER_VALUE:F = 1.0f
 
-.field private static final UPDATE_INTERVAL_TIMER_MILLIS:J = 0x28L
+.field private static final UPDATE_INTERVAL_TIME_MILLIS:J = 0x28L
+
+.field private static final VISIBLE_DELAY_TIME_MILLIS:J = 0x32L
 
 
 # instance fields
-.field private mAccessibilitySoundPlayer:Ljp/co/sony/mc/camera/view/HorizontalLevelMeterView$AccessibilitySoundPlayer;
-
 .field private mActivity:Ljp/co/sony/mc/camera/CameraActivity;
 
 .field private mAdjustingLine:Landroid/widget/ImageView;
 
 .field private mBaseLine:Landroid/widget/ImageView;
 
+.field private mCameraViewModel:Ljp/co/sony/mc/camera/view/viewmodel/CameraViewModel;
+
+.field private mEnableTime:J
+
 .field private mFrame:Landroid/widget/ImageView;
+
+.field private final mHandler:Landroid/os/Handler;
 
 .field private mHorizontalLine:Landroid/widget/ImageView;
 
@@ -44,18 +52,20 @@
 
 .field private mLastUpdateTime:J
 
+.field private mLevelMeterFeedbackPlayer:Ljp/co/sony/mc/camera/view/HorizontalLevelMeterView$LevelMeterFeedbackPlayer;
+
 .field private volatile mOrientation:I
 
 .field private volatile mRollOffset:F
 
-.field private final mTouchExplorationStateChangeListener:Landroid/view/accessibility/AccessibilityManager$TouchExplorationStateChangeListener;
+.field private mVisibleRequest:Ljava/lang/Runnable;
 
 
 # direct methods
-.method public static synthetic $r8$lambda$E1C6bUeWGZ222hS1rFAcspwHUS8(Ljp/co/sony/mc/camera/view/HorizontalLevelMeterView;Z)V
+.method public static synthetic $r8$lambda$7JYfTTBerdeaLiiYUbdrix1HPU0(Ljp/co/sony/mc/camera/view/HorizontalLevelMeterView;)V
     .locals 0
 
-    invoke-direct {p0, p1}, Ljp/co/sony/mc/camera/view/HorizontalLevelMeterView;->lambda$new$0(Z)V
+    invoke-direct {p0}, Ljp/co/sony/mc/camera/view/HorizontalLevelMeterView;->lambda$setVisible$0()V
 
     return-void
 .end method
@@ -68,6 +78,14 @@
     return-object p0
 .end method
 
+.method static bridge synthetic -$$Nest$fgetmCameraViewModel(Ljp/co/sony/mc/camera/view/HorizontalLevelMeterView;)Ljp/co/sony/mc/camera/view/viewmodel/CameraViewModel;
+    .locals 0
+
+    iget-object p0, p0, Ljp/co/sony/mc/camera/view/HorizontalLevelMeterView;->mCameraViewModel:Ljp/co/sony/mc/camera/view/viewmodel/CameraViewModel;
+
+    return-object p0
+.end method
+
 .method static bridge synthetic -$$Nest$fgetmFrame(Ljp/co/sony/mc/camera/view/HorizontalLevelMeterView;)Landroid/widget/ImageView;
     .locals 0
 
@@ -76,26 +94,56 @@
     return-object p0
 .end method
 
+.method static bridge synthetic -$$Nest$fgetmHandler(Ljp/co/sony/mc/camera/view/HorizontalLevelMeterView;)Landroid/os/Handler;
+    .locals 0
+
+    iget-object p0, p0, Ljp/co/sony/mc/camera/view/HorizontalLevelMeterView;->mHandler:Landroid/os/Handler;
+
+    return-object p0
+.end method
+
+.method static bridge synthetic -$$Nest$fgetmVisibleRequest(Ljp/co/sony/mc/camera/view/HorizontalLevelMeterView;)Ljava/lang/Runnable;
+    .locals 0
+
+    iget-object p0, p0, Ljp/co/sony/mc/camera/view/HorizontalLevelMeterView;->mVisibleRequest:Ljava/lang/Runnable;
+
+    return-object p0
+.end method
+
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 2
 
-    .line 76
+    .line 91
     invoke-direct {p0, p1, p2}, Landroid/widget/FrameLayout;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
     const/4 p2, 0x0
 
-    .line 42
+    .line 49
     iput p2, p0, Ljp/co/sony/mc/camera/view/HorizontalLevelMeterView;->mRollOffset:F
 
     const-wide/16 v0, 0x0
 
-    .line 55
+    .line 62
     iput-wide v0, p0, Ljp/co/sony/mc/camera/view/HorizontalLevelMeterView;->mLastUpdateTime:J
 
-    .line 58
+    .line 65
+    iput-wide v0, p0, Ljp/co/sony/mc/camera/view/HorizontalLevelMeterView;->mEnableTime:J
+
+    .line 68
     iput p2, p0, Ljp/co/sony/mc/camera/view/HorizontalLevelMeterView;->mLastAngle:F
 
-    .line 77
+    .line 74
+    new-instance p2, Landroid/os/Handler;
+
+    invoke-static {}, Landroid/os/Looper;->getMainLooper()Landroid/os/Looper;
+
+    move-result-object v0
+
+    invoke-direct {p2, v0}, Landroid/os/Handler;-><init>(Landroid/os/Looper;)V
+
+    iput-object p2, p0, Ljp/co/sony/mc/camera/view/HorizontalLevelMeterView;->mHandler:Landroid/os/Handler;
+
+    .line 92
     move-object p2, p1
 
     check-cast p2, Ljp/co/sony/mc/camera/CameraActivity;
@@ -104,35 +152,36 @@
 
     const/4 p2, 0x4
 
-    .line 78
+    .line 93
     iput p2, p0, Ljp/co/sony/mc/camera/view/HorizontalLevelMeterView;->mOrientation:I
 
-    .line 79
+    .line 94
     iput p2, p0, Ljp/co/sony/mc/camera/view/HorizontalLevelMeterView;->mLastLayoutOrientation:I
 
-    .line 81
-    sget-object p2, Ljp/co/sony/mc/camera/util/AccessibilityUtil;->INSTANCE:Ljp/co/sony/mc/camera/util/AccessibilityUtil;
+    .line 95
+    iget-object p2, p0, Ljp/co/sony/mc/camera/view/HorizontalLevelMeterView;->mActivity:Ljp/co/sony/mc/camera/CameraActivity;
 
-    invoke-virtual {p2}, Ljp/co/sony/mc/camera/util/AccessibilityUtil;->isTalkBackEnabled()Z
+    invoke-static {p2}, Ljp/co/sony/mc/camera/view/viewmodel/ViewModelProviderExtensionsKt;->getViewModelProvider(Landroid/app/Activity;)Landroidx/lifecycle/ViewModelProvider;
 
-    move-result p2
+    move-result-object p2
 
-    if-eqz p2, :cond_0
+    const-class v0, Ljp/co/sony/mc/camera/view/viewmodel/CameraViewModel;
 
-    .line 82
-    new-instance p2, Ljp/co/sony/mc/camera/view/HorizontalLevelMeterView$AccessibilitySoundPlayer;
+    .line 96
+    invoke-virtual {p2, v0}, Landroidx/lifecycle/ViewModelProvider;->get(Ljava/lang/Class;)Landroidx/lifecycle/ViewModel;
 
-    invoke-direct {p2, p0, p1}, Ljp/co/sony/mc/camera/view/HorizontalLevelMeterView$AccessibilitySoundPlayer;-><init>(Ljp/co/sony/mc/camera/view/HorizontalLevelMeterView;Landroid/content/Context;)V
+    move-result-object p2
 
-    iput-object p2, p0, Ljp/co/sony/mc/camera/view/HorizontalLevelMeterView;->mAccessibilitySoundPlayer:Ljp/co/sony/mc/camera/view/HorizontalLevelMeterView$AccessibilitySoundPlayer;
+    check-cast p2, Ljp/co/sony/mc/camera/view/viewmodel/CameraViewModel;
 
-    .line 85
-    :cond_0
-    new-instance p1, Ljp/co/sony/mc/camera/view/HorizontalLevelMeterView$$ExternalSyntheticLambda0;
+    iput-object p2, p0, Ljp/co/sony/mc/camera/view/HorizontalLevelMeterView;->mCameraViewModel:Ljp/co/sony/mc/camera/view/viewmodel/CameraViewModel;
 
-    invoke-direct {p1, p0}, Ljp/co/sony/mc/camera/view/HorizontalLevelMeterView$$ExternalSyntheticLambda0;-><init>(Ljp/co/sony/mc/camera/view/HorizontalLevelMeterView;)V
+    .line 98
+    new-instance p2, Ljp/co/sony/mc/camera/view/HorizontalLevelMeterView$LevelMeterFeedbackPlayer;
 
-    iput-object p1, p0, Ljp/co/sony/mc/camera/view/HorizontalLevelMeterView;->mTouchExplorationStateChangeListener:Landroid/view/accessibility/AccessibilityManager$TouchExplorationStateChangeListener;
+    invoke-direct {p2, p0, p1}, Ljp/co/sony/mc/camera/view/HorizontalLevelMeterView$LevelMeterFeedbackPlayer;-><init>(Ljp/co/sony/mc/camera/view/HorizontalLevelMeterView;Landroid/content/Context;)V
+
+    iput-object p2, p0, Ljp/co/sony/mc/camera/view/HorizontalLevelMeterView;->mLevelMeterFeedbackPlayer:Ljp/co/sony/mc/camera/view/HorizontalLevelMeterView$LevelMeterFeedbackPlayer;
 
     return-void
 .end method
@@ -168,7 +217,7 @@
 .method private isMatchEarthLevel(F)Z
     .locals 3
 
-    .line 334
+    .line 356
     iget v0, p0, Ljp/co/sony/mc/camera/view/HorizontalLevelMeterView;->mOrientation:I
 
     const/4 v1, 0x1
@@ -192,7 +241,7 @@
     :cond_0
     const/high16 v0, 0x42b40000    # 90.0f
 
-    .line 350
+    .line 372
     invoke-direct {p0, p1, v0}, Ljp/co/sony/mc/camera/view/HorizontalLevelMeterView;->in(FF)Z
 
     move-result p0
@@ -204,7 +253,7 @@
     :cond_1
     const/high16 v0, -0x3d4c0000    # -90.0f
 
-    .line 344
+    .line 366
     invoke-direct {p0, p1, v0}, Ljp/co/sony/mc/camera/view/HorizontalLevelMeterView;->in(FF)Z
 
     move-result p0
@@ -216,7 +265,7 @@
     :cond_2
     const/4 v0, 0x0
 
-    .line 338
+    .line 360
     invoke-direct {p0, p1, v0}, Ljp/co/sony/mc/camera/view/HorizontalLevelMeterView;->in(FF)Z
 
     move-result p0
@@ -233,43 +282,31 @@
     return v1
 .end method
 
-.method private synthetic lambda$new$0(Z)V
+.method private synthetic lambda$setVisible$0()V
     .locals 1
 
-    if-eqz p1, :cond_0
+    .line 181
+    invoke-virtual {p0}, Ljp/co/sony/mc/camera/view/HorizontalLevelMeterView;->getVisibility()I
 
-    .line 87
-    iget-object p1, p0, Ljp/co/sony/mc/camera/view/HorizontalLevelMeterView;->mAccessibilitySoundPlayer:Ljp/co/sony/mc/camera/view/HorizontalLevelMeterView$AccessibilitySoundPlayer;
+    move-result v0
 
-    if-nez p1, :cond_1
+    if-eqz v0, :cond_0
 
-    .line 88
-    new-instance p1, Ljp/co/sony/mc/camera/view/HorizontalLevelMeterView$AccessibilitySoundPlayer;
+    iget-object v0, p0, Ljp/co/sony/mc/camera/view/HorizontalLevelMeterView;->mVisibleRequest:Ljava/lang/Runnable;
 
-    iget-object v0, p0, Ljp/co/sony/mc/camera/view/HorizontalLevelMeterView;->mActivity:Ljp/co/sony/mc/camera/CameraActivity;
+    if-eqz v0, :cond_0
 
-    invoke-direct {p1, p0, v0}, Ljp/co/sony/mc/camera/view/HorizontalLevelMeterView$AccessibilitySoundPlayer;-><init>(Ljp/co/sony/mc/camera/view/HorizontalLevelMeterView;Landroid/content/Context;)V
+    const/4 v0, 0x0
 
-    iput-object p1, p0, Ljp/co/sony/mc/camera/view/HorizontalLevelMeterView;->mAccessibilitySoundPlayer:Ljp/co/sony/mc/camera/view/HorizontalLevelMeterView$AccessibilitySoundPlayer;
+    .line 182
+    invoke-virtual {p0, v0}, Ljp/co/sony/mc/camera/view/HorizontalLevelMeterView;->setVisibility(I)V
 
-    goto :goto_0
-
-    .line 91
     :cond_0
-    iget-object p1, p0, Ljp/co/sony/mc/camera/view/HorizontalLevelMeterView;->mAccessibilitySoundPlayer:Ljp/co/sony/mc/camera/view/HorizontalLevelMeterView$AccessibilitySoundPlayer;
+    const/4 v0, 0x0
 
-    if-eqz p1, :cond_1
+    .line 184
+    iput-object v0, p0, Ljp/co/sony/mc/camera/view/HorizontalLevelMeterView;->mVisibleRequest:Ljava/lang/Runnable;
 
-    .line 92
-    invoke-virtual {p1}, Ljp/co/sony/mc/camera/view/HorizontalLevelMeterView$AccessibilitySoundPlayer;->release()V
-
-    const/4 p1, 0x0
-
-    .line 93
-    iput-object p1, p0, Ljp/co/sony/mc/camera/view/HorizontalLevelMeterView;->mAccessibilitySoundPlayer:Ljp/co/sony/mc/camera/view/HorizontalLevelMeterView$AccessibilitySoundPlayer;
-
-    :cond_1
-    :goto_0
     return-void
 .end method
 
@@ -308,7 +345,7 @@
     :goto_0
     move v6, v4
 
-    .line 230
+    .line 252
     :goto_1
     iget-object v7, p0, Ljp/co/sony/mc/camera/view/HorizontalLevelMeterView;->mHorizontalLine:Landroid/widget/ImageView;
 
@@ -340,7 +377,7 @@
 
     goto/16 :goto_4
 
-    .line 259
+    .line 281
     :cond_3
     iget-object p1, p0, Ljp/co/sony/mc/camera/view/HorizontalLevelMeterView;->mFrame:Landroid/widget/ImageView;
 
@@ -364,7 +401,7 @@
 
     goto/16 :goto_6
 
-    .line 261
+    .line 283
     :cond_4
     iget-object p1, p0, Ljp/co/sony/mc/camera/view/HorizontalLevelMeterView;->mFrame:Landroid/widget/ImageView;
 
@@ -380,7 +417,7 @@
 
     goto/16 :goto_6
 
-    .line 252
+    .line 274
     :cond_5
     iget-object p1, p0, Ljp/co/sony/mc/camera/view/HorizontalLevelMeterView;->mFrame:Landroid/widget/ImageView;
 
@@ -404,7 +441,7 @@
 
     goto :goto_2
 
-    .line 254
+    .line 276
     :cond_6
     iget-object p1, p0, Ljp/co/sony/mc/camera/view/HorizontalLevelMeterView;->mFrame:Landroid/widget/ImageView;
 
@@ -437,7 +474,7 @@
 
     goto :goto_6
 
-    .line 243
+    .line 265
     :cond_9
     iget-object p1, p0, Ljp/co/sony/mc/camera/view/HorizontalLevelMeterView;->mFrame:Landroid/widget/ImageView;
 
@@ -451,7 +488,7 @@
 
     iget-object p1, p0, Ljp/co/sony/mc/camera/view/HorizontalLevelMeterView;->mFrame:Landroid/widget/ImageView;
 
-    .line 244
+    .line 266
     invoke-virtual {p1}, Landroid/widget/ImageView;->getRotation()F
 
     move-result p1
@@ -462,7 +499,7 @@
 
     iget-object p1, p0, Ljp/co/sony/mc/camera/view/HorizontalLevelMeterView;->mFrame:Landroid/widget/ImageView;
 
-    .line 245
+    .line 267
     invoke-virtual {p1}, Landroid/widget/ImageView;->getRotation()F
 
     move-result p1
@@ -473,7 +510,7 @@
 
     goto :goto_3
 
-    .line 247
+    .line 269
     :cond_a
     iget-object p1, p0, Ljp/co/sony/mc/camera/view/HorizontalLevelMeterView;->mFrame:Landroid/widget/ImageView;
 
@@ -495,7 +532,7 @@
 
     goto :goto_6
 
-    .line 234
+    .line 256
     :cond_c
     iget-object p1, p0, Ljp/co/sony/mc/camera/view/HorizontalLevelMeterView;->mFrame:Landroid/widget/ImageView;
 
@@ -519,7 +556,7 @@
 
     goto :goto_5
 
-    .line 236
+    .line 258
     :cond_d
     iget-object p1, p0, Ljp/co/sony/mc/camera/view/HorizontalLevelMeterView;->mFrame:Landroid/widget/ImageView;
 
@@ -535,7 +572,7 @@
 
     goto :goto_6
 
-    .line 238
+    .line 260
     :cond_e
     iget-object p1, p0, Ljp/co/sony/mc/camera/view/HorizontalLevelMeterView;->mFrame:Landroid/widget/ImageView;
 
@@ -561,7 +598,7 @@
     :goto_5
     move v0, v4
 
-    .line 269
+    .line 291
     :cond_11
     :goto_6
     iget-object p1, p0, Ljp/co/sony/mc/camera/view/HorizontalLevelMeterView;->mFrame:Landroid/widget/ImageView;
@@ -580,29 +617,29 @@
 
     const-wide/16 v6, 0x28
 
-    .line 270
+    .line 292
     invoke-virtual {p1, v6, v7}, Landroid/animation/ObjectAnimator;->setDuration(J)Landroid/animation/ObjectAnimator;
 
     move-result-object p1
 
-    .line 271
+    .line 293
     new-instance v1, Landroid/view/animation/LinearInterpolator;
 
     invoke-direct {v1}, Landroid/view/animation/LinearInterpolator;-><init>()V
 
     invoke-virtual {p1, v1}, Landroid/animation/ObjectAnimator;->setInterpolator(Landroid/animation/TimeInterpolator;)V
 
-    .line 272
+    .line 294
     invoke-virtual {p1}, Landroid/animation/ObjectAnimator;->start()V
 
-    .line 273
+    .line 295
     new-instance v1, Ljp/co/sony/mc/camera/view/HorizontalLevelMeterView$2;
 
     invoke-direct {v1, p0}, Ljp/co/sony/mc/camera/view/HorizontalLevelMeterView$2;-><init>(Ljp/co/sony/mc/camera/view/HorizontalLevelMeterView;)V
 
     invoke-virtual {p1, v1}, Landroid/animation/ObjectAnimator;->addListener(Landroid/animation/Animator$AnimatorListener;)V
 
-    .line 297
+    .line 319
     iget-object p1, p0, Ljp/co/sony/mc/camera/view/HorizontalLevelMeterView;->mBaseLine:Landroid/widget/ImageView;
 
     new-array v1, v5, [F
@@ -613,22 +650,22 @@
 
     move-result-object p1
 
-    .line 298
+    .line 320
     invoke-virtual {p1, v6, v7}, Landroid/animation/ObjectAnimator;->setDuration(J)Landroid/animation/ObjectAnimator;
 
     move-result-object p1
 
-    .line 299
+    .line 321
     new-instance v0, Landroid/view/animation/LinearInterpolator;
 
     invoke-direct {v0}, Landroid/view/animation/LinearInterpolator;-><init>()V
 
     invoke-virtual {p1, v0}, Landroid/animation/ObjectAnimator;->setInterpolator(Landroid/animation/TimeInterpolator;)V
 
-    .line 300
+    .line 322
     invoke-virtual {p1}, Landroid/animation/ObjectAnimator;->start()V
 
-    .line 301
+    .line 323
     new-instance v0, Ljp/co/sony/mc/camera/view/HorizontalLevelMeterView$3;
 
     invoke-direct {v0, p0}, Ljp/co/sony/mc/camera/view/HorizontalLevelMeterView$3;-><init>(Ljp/co/sony/mc/camera/view/HorizontalLevelMeterView;)V
@@ -641,55 +678,25 @@
 
 # virtual methods
 .method public disable()V
-    .locals 1
+    .locals 2
 
-    const/16 v0, 0x8
+    const-wide/16 v0, 0x0
 
     .line 170
-    invoke-virtual {p0, v0}, Ljp/co/sony/mc/camera/view/HorizontalLevelMeterView;->setVisibility(I)V
+    iput-wide v0, p0, Ljp/co/sony/mc/camera/view/HorizontalLevelMeterView;->mEnableTime:J
 
     return-void
 .end method
 
 .method public enable()V
-    .locals 1
-
-    const/4 v0, 0x0
+    .locals 2
 
     .line 163
-    invoke-virtual {p0, v0}, Ljp/co/sony/mc/camera/view/HorizontalLevelMeterView;->setVisibility(I)V
+    invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
 
-    return-void
-.end method
+    move-result-wide v0
 
-.method protected onAttachedToWindow()V
-    .locals 1
-
-    .line 120
-    invoke-super {p0}, Landroid/widget/FrameLayout;->onAttachedToWindow()V
-
-    .line 122
-    sget-object v0, Ljp/co/sony/mc/camera/util/AccessibilityUtil;->INSTANCE:Ljp/co/sony/mc/camera/util/AccessibilityUtil;
-
-    iget-object p0, p0, Ljp/co/sony/mc/camera/view/HorizontalLevelMeterView;->mTouchExplorationStateChangeListener:Landroid/view/accessibility/AccessibilityManager$TouchExplorationStateChangeListener;
-
-    invoke-virtual {v0, p0}, Ljp/co/sony/mc/camera/util/AccessibilityUtil;->register(Ljava/lang/Object;)V
-
-    return-void
-.end method
-
-.method protected onDetachedFromWindow()V
-    .locals 1
-
-    .line 127
-    invoke-super {p0}, Landroid/widget/FrameLayout;->onDetachedFromWindow()V
-
-    .line 129
-    sget-object v0, Ljp/co/sony/mc/camera/util/AccessibilityUtil;->INSTANCE:Ljp/co/sony/mc/camera/util/AccessibilityUtil;
-
-    iget-object p0, p0, Ljp/co/sony/mc/camera/view/HorizontalLevelMeterView;->mTouchExplorationStateChangeListener:Landroid/view/accessibility/AccessibilityManager$TouchExplorationStateChangeListener;
-
-    invoke-virtual {v0, p0}, Ljp/co/sony/mc/camera/util/AccessibilityUtil;->unregister(Ljava/lang/Object;)V
+    iput-wide v0, p0, Ljp/co/sony/mc/camera/view/HorizontalLevelMeterView;->mEnableTime:J
 
     return-void
 .end method
@@ -697,32 +704,10 @@
 .method public onFinishInflate()V
     .locals 1
 
-    .line 101
+    .line 103
     invoke-super {p0}, Landroid/widget/FrameLayout;->onFinishInflate()V
 
-    const v0, 0x7f0900a8
-
-    .line 102
-    invoke-virtual {p0, v0}, Ljp/co/sony/mc/camera/view/HorizontalLevelMeterView;->findViewById(I)Landroid/view/View;
-
-    move-result-object v0
-
-    check-cast v0, Landroid/widget/ImageView;
-
-    iput-object v0, p0, Ljp/co/sony/mc/camera/view/HorizontalLevelMeterView;->mBaseLine:Landroid/widget/ImageView;
-
-    const v0, 0x7f090053
-
-    .line 103
-    invoke-virtual {p0, v0}, Ljp/co/sony/mc/camera/view/HorizontalLevelMeterView;->findViewById(I)Landroid/view/View;
-
-    move-result-object v0
-
-    check-cast v0, Landroid/widget/ImageView;
-
-    iput-object v0, p0, Ljp/co/sony/mc/camera/view/HorizontalLevelMeterView;->mAdjustingLine:Landroid/widget/ImageView;
-
-    const v0, 0x7f090236
+    const v0, 0x7f0900a9
 
     .line 104
     invoke-virtual {p0, v0}, Ljp/co/sony/mc/camera/view/HorizontalLevelMeterView;->findViewById(I)Landroid/view/View;
@@ -731,9 +716,9 @@
 
     check-cast v0, Landroid/widget/ImageView;
 
-    iput-object v0, p0, Ljp/co/sony/mc/camera/view/HorizontalLevelMeterView;->mHorizontalLine:Landroid/widget/ImageView;
+    iput-object v0, p0, Ljp/co/sony/mc/camera/view/HorizontalLevelMeterView;->mBaseLine:Landroid/widget/ImageView;
 
-    const v0, 0x7f090206
+    const v0, 0x7f09004f
 
     .line 105
     invoke-virtual {p0, v0}, Ljp/co/sony/mc/camera/view/HorizontalLevelMeterView;->findViewById(I)Landroid/view/View;
@@ -742,9 +727,31 @@
 
     check-cast v0, Landroid/widget/ImageView;
 
-    iput-object v0, p0, Ljp/co/sony/mc/camera/view/HorizontalLevelMeterView;->mFrame:Landroid/widget/ImageView;
+    iput-object v0, p0, Ljp/co/sony/mc/camera/view/HorizontalLevelMeterView;->mAdjustingLine:Landroid/widget/ImageView;
+
+    const v0, 0x7f090233
 
     .line 106
+    invoke-virtual {p0, v0}, Ljp/co/sony/mc/camera/view/HorizontalLevelMeterView;->findViewById(I)Landroid/view/View;
+
+    move-result-object v0
+
+    check-cast v0, Landroid/widget/ImageView;
+
+    iput-object v0, p0, Ljp/co/sony/mc/camera/view/HorizontalLevelMeterView;->mHorizontalLine:Landroid/widget/ImageView;
+
+    const v0, 0x7f090203
+
+    .line 107
+    invoke-virtual {p0, v0}, Ljp/co/sony/mc/camera/view/HorizontalLevelMeterView;->findViewById(I)Landroid/view/View;
+
+    move-result-object v0
+
+    check-cast v0, Landroid/widget/ImageView;
+
+    iput-object v0, p0, Ljp/co/sony/mc/camera/view/HorizontalLevelMeterView;->mFrame:Landroid/widget/ImageView;
+
+    .line 108
     iget v0, p0, Ljp/co/sony/mc/camera/view/HorizontalLevelMeterView;->mOrientation:I
 
     invoke-direct {p0, v0}, Ljp/co/sony/mc/camera/view/HorizontalLevelMeterView;->updateUiOrientation(I)V
@@ -753,17 +760,44 @@
 .end method
 
 .method public onSpiritLevelChanged(IFF)V
-    .locals 3
+    .locals 4
 
-    .line 133
+    .line 123
+    iget-wide v0, p0, Ljp/co/sony/mc/camera/view/HorizontalLevelMeterView;->mEnableTime:J
+
+    const-wide/16 v2, 0x0
+
+    cmp-long v0, v0, v2
+
+    if-eqz v0, :cond_5
+
+    .line 124
+    invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
+
+    move-result-wide v0
+
+    iget-wide v2, p0, Ljp/co/sony/mc/camera/view/HorizontalLevelMeterView;->mEnableTime:J
+
+    sub-long/2addr v0, v2
+
+    const-wide/16 v2, 0xc8
+
+    cmp-long v0, v0, v2
+
+    if-gez v0, :cond_0
+
+    goto :goto_4
+
+    .line 128
+    :cond_0
     iput p1, p0, Ljp/co/sony/mc/camera/view/HorizontalLevelMeterView;->mOrientation:I
 
-    .line 135
+    .line 130
     iget v0, p0, Ljp/co/sony/mc/camera/view/HorizontalLevelMeterView;->mRollOffset:F
 
     sub-float v0, p3, v0
 
-    .line 136
+    .line 131
     iget v1, p0, Ljp/co/sony/mc/camera/view/HorizontalLevelMeterView;->mRollOffset:F
 
     sub-float/2addr p3, v1
@@ -772,27 +806,27 @@
 
     cmpl-float v2, v0, v1
 
-    if-ltz v2, :cond_0
+    if-ltz v2, :cond_1
 
     :goto_0
     move v0, v1
 
     goto :goto_1
 
-    :cond_0
+    :cond_1
     const/high16 v1, -0x3e600000    # -20.0f
 
     cmpg-float v2, v0, v1
 
-    if-gtz v2, :cond_1
+    if-gtz v2, :cond_2
 
     goto :goto_0
 
-    :cond_1
+    :cond_2
     :goto_1
     const/4 v1, 0x2
 
-    if-ne p1, v1, :cond_2
+    if-ne p1, v1, :cond_3
 
     const/high16 p1, -0x3d4c0000    # -90.0f
 
@@ -801,17 +835,17 @@
 
     goto :goto_3
 
-    :cond_2
+    :cond_3
     const/4 v1, 0x4
 
-    if-ne p1, v1, :cond_3
+    if-ne p1, v1, :cond_4
 
     const/high16 p1, 0x42b40000    # 90.0f
 
     goto :goto_2
 
-    .line 148
-    :cond_3
+    .line 143
+    :cond_4
     :goto_3
     iget-object p1, p0, Ljp/co/sony/mc/camera/view/HorizontalLevelMeterView;->mActivity:Ljp/co/sony/mc/camera/CameraActivity;
 
@@ -822,28 +856,29 @@
     invoke-virtual {p1, v1}, Ljp/co/sony/mc/camera/CameraActivity;->runOnUiThread(Ljava/lang/Runnable;)V
 
     .line 154
-    iget-object p0, p0, Ljp/co/sony/mc/camera/view/HorizontalLevelMeterView;->mAccessibilitySoundPlayer:Ljp/co/sony/mc/camera/view/HorizontalLevelMeterView$AccessibilitySoundPlayer;
+    iget-object p0, p0, Ljp/co/sony/mc/camera/view/HorizontalLevelMeterView;->mLevelMeterFeedbackPlayer:Ljp/co/sony/mc/camera/view/HorizontalLevelMeterView$LevelMeterFeedbackPlayer;
 
-    if-eqz p0, :cond_4
+    if-eqz p0, :cond_5
 
     .line 155
     sget-object p1, Ljp/co/sony/mc/camera/view/HorizontalLevelMeterView$SoundType;->TILT:Ljp/co/sony/mc/camera/view/HorizontalLevelMeterView$SoundType;
 
-    invoke-virtual {p0, p3, p2, p1}, Ljp/co/sony/mc/camera/view/HorizontalLevelMeterView$AccessibilitySoundPlayer;->playSound(FFLjp/co/sony/mc/camera/view/HorizontalLevelMeterView$SoundType;)V
+    invoke-virtual {p0, p3, p2, p1}, Ljp/co/sony/mc/camera/view/HorizontalLevelMeterView$LevelMeterFeedbackPlayer;->playSound(FFLjp/co/sony/mc/camera/view/HorizontalLevelMeterView$SoundType;)V
 
-    :cond_4
+    :cond_5
+    :goto_4
     return-void
 .end method
 
 .method public onVisibilityAggregated(Z)V
     .locals 1
 
-    .line 111
+    .line 113
     invoke-super {p0, p1}, Landroid/widget/FrameLayout;->onVisibilityAggregated(Z)V
 
     if-eqz p1, :cond_0
 
-    .line 113
+    .line 115
     invoke-static {}, Ljp/co/sony/mc/camera/setting/CameraProSetting;->getInstance()Ljp/co/sony/mc/camera/setting/CameraProSetting;
 
     move-result-object p1
@@ -869,18 +904,18 @@
 .method public release()V
     .locals 1
 
-    .line 177
-    iget-object v0, p0, Ljp/co/sony/mc/camera/view/HorizontalLevelMeterView;->mAccessibilitySoundPlayer:Ljp/co/sony/mc/camera/view/HorizontalLevelMeterView$AccessibilitySoundPlayer;
+    .line 199
+    iget-object v0, p0, Ljp/co/sony/mc/camera/view/HorizontalLevelMeterView;->mLevelMeterFeedbackPlayer:Ljp/co/sony/mc/camera/view/HorizontalLevelMeterView$LevelMeterFeedbackPlayer;
 
     if-eqz v0, :cond_0
 
-    .line 178
-    invoke-virtual {v0}, Ljp/co/sony/mc/camera/view/HorizontalLevelMeterView$AccessibilitySoundPlayer;->release()V
+    .line 200
+    invoke-virtual {v0}, Ljp/co/sony/mc/camera/view/HorizontalLevelMeterView$LevelMeterFeedbackPlayer;->release()V
 
     const/4 v0, 0x0
 
-    .line 179
-    iput-object v0, p0, Ljp/co/sony/mc/camera/view/HorizontalLevelMeterView;->mAccessibilitySoundPlayer:Ljp/co/sony/mc/camera/view/HorizontalLevelMeterView$AccessibilitySoundPlayer;
+    .line 201
+    iput-object v0, p0, Ljp/co/sony/mc/camera/view/HorizontalLevelMeterView;->mLevelMeterFeedbackPlayer:Ljp/co/sony/mc/camera/view/HorizontalLevelMeterView$LevelMeterFeedbackPlayer;
 
     :cond_0
     return-void
@@ -889,30 +924,30 @@
 .method public setOrientationDegree(F)V
     .locals 8
 
-    .line 189
+    .line 211
     iget v0, p0, Ljp/co/sony/mc/camera/view/HorizontalLevelMeterView;->mOrientation:I
 
     iget v1, p0, Ljp/co/sony/mc/camera/view/HorizontalLevelMeterView;->mLastLayoutOrientation:I
 
     if-eq v0, v1, :cond_0
 
-    .line 190
+    .line 212
     iget v0, p0, Ljp/co/sony/mc/camera/view/HorizontalLevelMeterView;->mOrientation:I
 
     iput v0, p0, Ljp/co/sony/mc/camera/view/HorizontalLevelMeterView;->mLastLayoutOrientation:I
 
-    .line 191
+    .line 213
     iget v0, p0, Ljp/co/sony/mc/camera/view/HorizontalLevelMeterView;->mOrientation:I
 
     invoke-direct {p0, v0}, Ljp/co/sony/mc/camera/view/HorizontalLevelMeterView;->updateUiOrientation(I)V
 
-    .line 194
+    .line 216
     :cond_0
     invoke-direct {p0, p1}, Ljp/co/sony/mc/camera/view/HorizontalLevelMeterView;->isMatchEarthLevel(F)Z
 
     move-result v0
 
-    const v1, 0x7f1100c0
+    const v1, 0x7f1100be
 
     const/4 v2, 0x0
 
@@ -920,22 +955,22 @@
 
     if-eqz v0, :cond_1
 
-    .line 196
+    .line 218
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/HorizontalLevelMeterView;->mBaseLine:Landroid/widget/ImageView;
 
     invoke-virtual {v0, v3}, Landroid/widget/ImageView;->setVisibility(I)V
 
-    .line 197
+    .line 219
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/HorizontalLevelMeterView;->mAdjustingLine:Landroid/widget/ImageView;
 
     invoke-virtual {v0, v3}, Landroid/widget/ImageView;->setVisibility(I)V
 
-    .line 198
+    .line 220
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/HorizontalLevelMeterView;->mHorizontalLine:Landroid/widget/ImageView;
 
     invoke-virtual {v0, v2}, Landroid/widget/ImageView;->setVisibility(I)V
 
-    .line 199
+    .line 221
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/HorizontalLevelMeterView;->mFrame:Landroid/widget/ImageView;
 
     new-instance v2, Ljava/lang/StringBuilder;
@@ -946,7 +981,7 @@
 
     move-result-object v3
 
-    .line 200
+    .line 222
     invoke-virtual {v3, v1}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
     move-result-object v1
@@ -959,9 +994,9 @@
 
     move-result-object v2
 
-    const v3, 0x7f1100be
+    const v3, 0x7f1100bc
 
-    .line 201
+    .line 223
     invoke-virtual {v2, v3}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
     move-result-object v2
@@ -974,24 +1009,24 @@
 
     move-result-object v1
 
-    .line 199
+    .line 221
     invoke-virtual {v0, v1}, Landroid/widget/ImageView;->setContentDescription(Ljava/lang/CharSequence;)V
 
-    .line 202
-    iget-object v0, p0, Ljp/co/sony/mc/camera/view/HorizontalLevelMeterView;->mAccessibilitySoundPlayer:Ljp/co/sony/mc/camera/view/HorizontalLevelMeterView$AccessibilitySoundPlayer;
+    .line 224
+    iget-object v0, p0, Ljp/co/sony/mc/camera/view/HorizontalLevelMeterView;->mLevelMeterFeedbackPlayer:Ljp/co/sony/mc/camera/view/HorizontalLevelMeterView$LevelMeterFeedbackPlayer;
 
     if-eqz v0, :cond_3
 
-    .line 203
+    .line 225
     sget-object v1, Ljp/co/sony/mc/camera/view/HorizontalLevelMeterView$SoundType;->HORIZONTAL:Ljp/co/sony/mc/camera/view/HorizontalLevelMeterView$SoundType;
 
     const/4 v2, 0x0
 
-    invoke-virtual {v0, v2, v2, v1}, Ljp/co/sony/mc/camera/view/HorizontalLevelMeterView$AccessibilitySoundPlayer;->playSound(FFLjp/co/sony/mc/camera/view/HorizontalLevelMeterView$SoundType;)V
+    invoke-virtual {v0, v2, v2, v1}, Ljp/co/sony/mc/camera/view/HorizontalLevelMeterView$LevelMeterFeedbackPlayer;->playSound(FFLjp/co/sony/mc/camera/view/HorizontalLevelMeterView$SoundType;)V
 
     goto :goto_0
 
-    .line 205
+    .line 227
     :cond_1
     invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
 
@@ -1009,23 +1044,23 @@
 
     return-void
 
-    .line 208
+    .line 230
     :cond_2
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/HorizontalLevelMeterView;->mBaseLine:Landroid/widget/ImageView;
 
     invoke-virtual {v0, v2}, Landroid/widget/ImageView;->setVisibility(I)V
 
-    .line 209
+    .line 231
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/HorizontalLevelMeterView;->mAdjustingLine:Landroid/widget/ImageView;
 
     invoke-virtual {v0, v2}, Landroid/widget/ImageView;->setVisibility(I)V
 
-    .line 210
+    .line 232
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/HorizontalLevelMeterView;->mHorizontalLine:Landroid/widget/ImageView;
 
     invoke-virtual {v0, v3}, Landroid/widget/ImageView;->setVisibility(I)V
 
-    .line 211
+    .line 233
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/HorizontalLevelMeterView;->mFrame:Landroid/widget/ImageView;
 
     new-instance v2, Ljava/lang/StringBuilder;
@@ -1036,7 +1071,7 @@
 
     move-result-object v3
 
-    .line 212
+    .line 234
     invoke-virtual {v3, v1}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
     move-result-object v1
@@ -1049,9 +1084,9 @@
 
     move-result-object v2
 
-    const v3, 0x7f1100bf
+    const v3, 0x7f1100bd
 
-    .line 213
+    .line 235
     invoke-virtual {v2, v3}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
     move-result-object v2
@@ -1064,10 +1099,10 @@
 
     move-result-object v1
 
-    .line 211
+    .line 233
     invoke-virtual {v0, v1}, Landroid/widget/ImageView;->setContentDescription(Ljava/lang/CharSequence;)V
 
-    .line 216
+    .line 238
     :cond_3
     :goto_0
     invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
@@ -1076,15 +1111,55 @@
 
     iput-wide v0, p0, Ljp/co/sony/mc/camera/view/HorizontalLevelMeterView;->mLastUpdateTime:J
 
-    .line 217
+    .line 239
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/HorizontalLevelMeterView;->mAdjustingLine:Landroid/widget/ImageView;
 
     neg-float v1, p1
 
     invoke-virtual {v0, v1}, Landroid/widget/ImageView;->setRotation(F)V
 
-    .line 218
+    .line 240
     iput p1, p0, Ljp/co/sony/mc/camera/view/HorizontalLevelMeterView;->mLastAngle:F
 
+    return-void
+.end method
+
+.method public setVisible(Z)V
+    .locals 1
+
+    if-eqz p1, :cond_0
+
+    .line 180
+    new-instance p1, Ljp/co/sony/mc/camera/view/HorizontalLevelMeterView$$ExternalSyntheticLambda0;
+
+    invoke-direct {p1, p0}, Ljp/co/sony/mc/camera/view/HorizontalLevelMeterView$$ExternalSyntheticLambda0;-><init>(Ljp/co/sony/mc/camera/view/HorizontalLevelMeterView;)V
+
+    iput-object p1, p0, Ljp/co/sony/mc/camera/view/HorizontalLevelMeterView;->mVisibleRequest:Ljava/lang/Runnable;
+
+    goto :goto_0
+
+    .line 187
+    :cond_0
+    iget-object p1, p0, Ljp/co/sony/mc/camera/view/HorizontalLevelMeterView;->mVisibleRequest:Ljava/lang/Runnable;
+
+    if-eqz p1, :cond_1
+
+    .line 188
+    iget-object v0, p0, Ljp/co/sony/mc/camera/view/HorizontalLevelMeterView;->mHandler:Landroid/os/Handler;
+
+    invoke-virtual {v0, p1}, Landroid/os/Handler;->removeCallbacks(Ljava/lang/Runnable;)V
+
+    const/4 p1, 0x0
+
+    .line 189
+    iput-object p1, p0, Ljp/co/sony/mc/camera/view/HorizontalLevelMeterView;->mVisibleRequest:Ljava/lang/Runnable;
+
+    :cond_1
+    const/16 p1, 0x8
+
+    .line 191
+    invoke-virtual {p0, p1}, Ljp/co/sony/mc/camera/view/HorizontalLevelMeterView;->setVisibility(I)V
+
+    :goto_0
     return-void
 .end method

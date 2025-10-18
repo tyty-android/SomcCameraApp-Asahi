@@ -65,7 +65,7 @@
 .method static constructor <clinit>()V
     .locals 3
 
-    .line 220
+    .line 223
     new-instance v0, Landroidx/compose/material/SnackbarDuration;
 
     const-string v1, "Short"
@@ -76,7 +76,7 @@
 
     sput-object v0, Landroidx/compose/material/SnackbarDuration;->Short:Landroidx/compose/material/SnackbarDuration;
 
-    .line 225
+    .line 228
     new-instance v0, Landroidx/compose/material/SnackbarDuration;
 
     const-string v1, "Long"
@@ -87,7 +87,7 @@
 
     sput-object v0, Landroidx/compose/material/SnackbarDuration;->Long:Landroidx/compose/material/SnackbarDuration;
 
-    .line 230
+    .line 233
     new-instance v0, Landroidx/compose/material/SnackbarDuration;
 
     const-string v1, "Indefinite"
@@ -115,7 +115,7 @@
         }
     .end annotation
 
-    .line 216
+    .line 219
     invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
     return-void

@@ -6,9 +6,9 @@
 # annotations
 .annotation system Ldalvik/annotation/MemberClasses;
     value = {
+        Landroidx/transition/Slide$CalculateSlide;,
         Landroidx/transition/Slide$CalculateSlideVertical;,
         Landroidx/transition/Slide$CalculateSlideHorizontal;,
-        Landroidx/transition/Slide$CalculateSlide;,
         Landroidx/transition/Slide$GravityFlag;
     }
 .end annotation
@@ -44,56 +44,56 @@
 .method static constructor <clinit>()V
     .locals 1
 
-    .line 56
+    .line 54
     new-instance v0, Landroid/view/animation/DecelerateInterpolator;
 
     invoke-direct {v0}, Landroid/view/animation/DecelerateInterpolator;-><init>()V
 
     sput-object v0, Landroidx/transition/Slide;->sDecelerate:Landroid/animation/TimeInterpolator;
 
-    .line 57
+    .line 55
     new-instance v0, Landroid/view/animation/AccelerateInterpolator;
 
     invoke-direct {v0}, Landroid/view/animation/AccelerateInterpolator;-><init>()V
 
     sput-object v0, Landroidx/transition/Slide;->sAccelerate:Landroid/animation/TimeInterpolator;
 
-    .line 94
+    .line 91
     new-instance v0, Landroidx/transition/Slide$1;
 
     invoke-direct {v0}, Landroidx/transition/Slide$1;-><init>()V
 
     sput-object v0, Landroidx/transition/Slide;->sCalculateLeft:Landroidx/transition/Slide$CalculateSlide;
 
-    .line 101
+    .line 98
     new-instance v0, Landroidx/transition/Slide$2;
 
     invoke-direct {v0}, Landroidx/transition/Slide$2;-><init>()V
 
     sput-object v0, Landroidx/transition/Slide;->sCalculateStart:Landroidx/transition/Slide$CalculateSlide;
 
-    .line 116
+    .line 113
     new-instance v0, Landroidx/transition/Slide$3;
 
     invoke-direct {v0}, Landroidx/transition/Slide$3;-><init>()V
 
     sput-object v0, Landroidx/transition/Slide;->sCalculateTop:Landroidx/transition/Slide$CalculateSlide;
 
-    .line 123
+    .line 120
     new-instance v0, Landroidx/transition/Slide$4;
 
     invoke-direct {v0}, Landroidx/transition/Slide$4;-><init>()V
 
     sput-object v0, Landroidx/transition/Slide;->sCalculateRight:Landroidx/transition/Slide$CalculateSlide;
 
-    .line 130
+    .line 127
     new-instance v0, Landroidx/transition/Slide$5;
 
     invoke-direct {v0}, Landroidx/transition/Slide$5;-><init>()V
 
     sput-object v0, Landroidx/transition/Slide;->sCalculateEnd:Landroidx/transition/Slide$CalculateSlide;
 
-    .line 145
+    .line 142
     new-instance v0, Landroidx/transition/Slide$6;
 
     invoke-direct {v0}, Landroidx/transition/Slide$6;-><init>()V
@@ -106,20 +106,20 @@
 .method public constructor <init>()V
     .locals 1
 
-    .line 156
+    .line 153
     invoke-direct {p0}, Landroidx/transition/Visibility;-><init>()V
 
-    .line 59
+    .line 57
     sget-object v0, Landroidx/transition/Slide;->sCalculateBottom:Landroidx/transition/Slide$CalculateSlide;
 
     iput-object v0, p0, Landroidx/transition/Slide;->mSlideCalculator:Landroidx/transition/Slide$CalculateSlide;
 
     const/16 v0, 0x50
 
-    .line 60
+    .line 58
     iput v0, p0, Landroidx/transition/Slide;->mSlideEdge:I
 
-    .line 157
+    .line 154
     invoke-virtual {p0, v0}, Landroidx/transition/Slide;->setSlideEdge(I)V
 
     return-void
@@ -128,20 +128,20 @@
 .method public constructor <init>(I)V
     .locals 1
 
-    .line 163
+    .line 160
     invoke-direct {p0}, Landroidx/transition/Visibility;-><init>()V
 
-    .line 59
+    .line 57
     sget-object v0, Landroidx/transition/Slide;->sCalculateBottom:Landroidx/transition/Slide$CalculateSlide;
 
     iput-object v0, p0, Landroidx/transition/Slide;->mSlideCalculator:Landroidx/transition/Slide$CalculateSlide;
 
     const/16 v0, 0x50
 
-    .line 60
+    .line 58
     iput v0, p0, Landroidx/transition/Slide;->mSlideEdge:I
 
-    .line 164
+    .line 161
     invoke-virtual {p0, p1}, Landroidx/transition/Slide;->setSlideEdge(I)V
 
     return-void
@@ -150,27 +150,27 @@
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 3
 
-    .line 170
+    .line 165
     invoke-direct {p0, p1, p2}, Landroidx/transition/Visibility;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
-    .line 59
+    .line 57
     sget-object v0, Landroidx/transition/Slide;->sCalculateBottom:Landroidx/transition/Slide$CalculateSlide;
 
     iput-object v0, p0, Landroidx/transition/Slide;->mSlideCalculator:Landroidx/transition/Slide$CalculateSlide;
 
     const/16 v0, 0x50
 
-    .line 60
+    .line 58
     iput v0, p0, Landroidx/transition/Slide;->mSlideEdge:I
 
-    .line 171
+    .line 166
     sget-object v1, Landroidx/transition/Styleable;->SLIDE:[I
 
     invoke-virtual {p1, p2, v1}, Landroid/content/Context;->obtainStyledAttributes(Landroid/util/AttributeSet;[I)Landroid/content/res/TypedArray;
 
     move-result-object p1
 
-    .line 172
+    .line 167
     check-cast p2, Lorg/xmlpull/v1/XmlPullParser;
 
     const-string v1, "slideEdge"
@@ -181,10 +181,10 @@
 
     move-result p2
 
-    .line 174
+    .line 169
     invoke-virtual {p1}, Landroid/content/res/TypedArray;->recycle()V
 
-    .line 176
+    .line 171
     invoke-virtual {p0, p2}, Landroidx/transition/Slide;->setSlideEdge(I)V
 
     return-void
@@ -193,18 +193,18 @@
 .method private captureValues(Landroidx/transition/TransitionValues;)V
     .locals 1
 
-    .line 180
+    .line 175
     iget-object p0, p1, Landroidx/transition/TransitionValues;->view:Landroid/view/View;
 
     const/4 v0, 0x2
 
-    .line 181
+    .line 176
     new-array v0, v0, [I
 
-    .line 182
+    .line 177
     invoke-virtual {p0, v0}, Landroid/view/View;->getLocationOnScreen([I)V
 
-    .line 183
+    .line 178
     iget-object p0, p1, Landroidx/transition/TransitionValues;->values:Ljava/util/Map;
 
     const-string p1, "android:slide:screenPosition"
@@ -219,10 +219,10 @@
 .method public captureEndValues(Landroidx/transition/TransitionValues;)V
     .locals 0
 
-    .line 194
+    .line 189
     invoke-super {p0, p1}, Landroidx/transition/Visibility;->captureEndValues(Landroidx/transition/TransitionValues;)V
 
-    .line 195
+    .line 190
     invoke-direct {p0, p1}, Landroidx/transition/Slide;->captureValues(Landroidx/transition/TransitionValues;)V
 
     return-void
@@ -231,10 +231,10 @@
 .method public captureStartValues(Landroidx/transition/TransitionValues;)V
     .locals 0
 
-    .line 188
+    .line 183
     invoke-super {p0, p1}, Landroidx/transition/Visibility;->captureStartValues(Landroidx/transition/TransitionValues;)V
 
-    .line 189
+    .line 184
     invoke-direct {p0, p1}, Landroidx/transition/Slide;->captureValues(Landroidx/transition/TransitionValues;)V
 
     return-void
@@ -245,6 +245,14 @@
 
     .line 245
     iget p0, p0, Landroidx/transition/Slide;->mSlideEdge:I
+
+    return p0
+.end method
+
+.method public isSeekingSupported()Z
+    .locals 0
+
+    const/4 p0, 0x1
 
     return p0
 .end method

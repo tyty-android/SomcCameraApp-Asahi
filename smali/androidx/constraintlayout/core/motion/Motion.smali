@@ -6164,13 +6164,19 @@
 
     array-length v4, v4
 
-    filled-new-array {v2, v4}, [I
+    new-array v6, v1, [I
 
-    move-result-object v4
+    const/4 v7, 0x1
 
-    sget-object v6, Ljava/lang/Double;->TYPE:Ljava/lang/Class;
+    aput v4, v6, v7
 
-    invoke-static {v6, v4}, Ljava/lang/reflect/Array;->newInstance(Ljava/lang/Class;[I)Ljava/lang/Object;
+    const/4 v4, 0x0
+
+    aput v2, v6, v4
+
+    sget-object v4, Ljava/lang/Double;->TYPE:Ljava/lang/Class;
+
+    invoke-static {v4, v6}, Ljava/lang/reflect/Array;->newInstance(Ljava/lang/Class;[I)Ljava/lang/Object;
 
     move-result-object v4
 
@@ -6357,13 +6363,19 @@
 
     move-result v13
 
-    filled-new-array {v2, v13}, [I
+    new-array v14, v1, [I
 
-    move-result-object v13
+    const/4 v15, 0x1
 
-    sget-object v14, Ljava/lang/Double;->TYPE:Ljava/lang/Class;
+    aput v13, v14, v15
 
-    invoke-static {v14, v13}, Ljava/lang/reflect/Array;->newInstance(Ljava/lang/Class;[I)Ljava/lang/Object;
+    const/4 v13, 0x0
+
+    aput v2, v14, v13
+
+    sget-object v13, Ljava/lang/Double;->TYPE:Ljava/lang/Class;
+
+    invoke-static {v13, v14}, Ljava/lang/reflect/Array;->newInstance(Ljava/lang/Class;[I)Ljava/lang/Object;
 
     move-result-object v13
 
@@ -6444,24 +6456,28 @@
 
     iget v4, v4, Landroidx/constraintlayout/core/motion/MotionPaths;->mPathMotionArc:I
 
-    const/4 v6, -0x1
+    const/4 v7, -0x1
 
-    if-eq v4, v6, :cond_36
+    if-eq v4, v7, :cond_36
 
     .line 904
     new-array v4, v2, [I
 
     .line 905
-    new-array v6, v2, [D
+    new-array v7, v2, [D
 
     .line 906
-    filled-new-array {v2, v1}, [I
+    new-array v8, v1, [I
 
-    move-result-object v1
+    const/4 v9, 0x1
 
-    sget-object v7, Ljava/lang/Double;->TYPE:Ljava/lang/Class;
+    aput v1, v8, v9
 
-    invoke-static {v7, v1}, Ljava/lang/reflect/Array;->newInstance(Ljava/lang/Class;[I)Ljava/lang/Object;
+    aput v2, v8, v6
+
+    sget-object v1, Ljava/lang/Double;->TYPE:Ljava/lang/Class;
+
+    invoke-static {v1, v8}, Ljava/lang/reflect/Array;->newInstance(Ljava/lang/Class;[I)Ljava/lang/Object;
 
     move-result-object v1
 
@@ -6473,23 +6489,23 @@
     if-ge v9, v2, :cond_35
 
     .line 908
-    aget-object v7, v3, v9
+    aget-object v6, v3, v9
 
-    iget v7, v7, Landroidx/constraintlayout/core/motion/MotionPaths;->mPathMotionArc:I
+    iget v6, v6, Landroidx/constraintlayout/core/motion/MotionPaths;->mPathMotionArc:I
 
-    aput v7, v4, v9
+    aput v6, v4, v9
 
     .line 909
-    aget-object v7, v3, v9
+    aget-object v6, v3, v9
 
-    iget v7, v7, Landroidx/constraintlayout/core/motion/MotionPaths;->time:F
+    iget v6, v6, Landroidx/constraintlayout/core/motion/MotionPaths;->time:F
 
-    float-to-double v7, v7
+    float-to-double v10, v6
 
-    aput-wide v7, v6, v9
+    aput-wide v10, v7, v9
 
     .line 910
-    aget-object v7, v1, v9
+    aget-object v6, v1, v9
 
     aget-object v8, v3, v9
 
@@ -6499,10 +6515,10 @@
 
     const/4 v8, 0x0
 
-    aput-wide v10, v7, v8
+    aput-wide v10, v6, v8
 
     .line 911
-    aget-object v7, v1, v9
+    aget-object v6, v1, v9
 
     aget-object v10, v3, v9
 
@@ -6512,7 +6528,7 @@
 
     const/4 v12, 0x1
 
-    aput-wide v10, v7, v12
+    aput-wide v10, v6, v12
 
     add-int/lit8 v9, v9, 0x1
 
@@ -6520,7 +6536,7 @@
 
     .line 914
     :cond_35
-    invoke-static {v4, v6, v1}, Landroidx/constraintlayout/core/motion/utils/CurveFit;->getArc([I[D[[D)Landroidx/constraintlayout/core/motion/utils/CurveFit;
+    invoke-static {v4, v7, v1}, Landroidx/constraintlayout/core/motion/utils/CurveFit;->getArc([I[D[[D)Landroidx/constraintlayout/core/motion/utils/CurveFit;
 
     move-result-object v1
 

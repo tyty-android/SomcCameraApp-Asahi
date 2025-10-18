@@ -21,7 +21,7 @@
 .method constructor <init>()V
     .locals 0
 
-    .line 1079
+    .line 1134
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -42,8 +42,13 @@
         }
     .end annotation
 
-    .line 1082
-    sget-object p0, Ljp/co/sony/mc/camera/configuration/parameters/RecommendedSettings;->DUMMY_OFF:Ljp/co/sony/mc/camera/configuration/parameters/RecommendedSettings;
+    .line 1137
+    check-cast p1, Ljp/co/sony/mc/camera/setting/CameraSettings;
+
+    .line 1138
+    invoke-static {p1}, Ljp/co/sony/mc/camera/setting/CameraSettings;->-$$Nest$mgetLowLightMode(Ljp/co/sony/mc/camera/setting/CameraSettings;)Ljp/co/sony/mc/camera/configuration/parameters/LowLightMode;
+
+    move-result-object p0
 
     return-object p0
 .end method

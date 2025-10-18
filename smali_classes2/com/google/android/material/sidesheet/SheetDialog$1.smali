@@ -22,7 +22,7 @@
 .method constructor <init>(Lcom/google/android/material/sidesheet/SheetDialog;)V
     .locals 0
 
-    .line 243
+    .line 279
     iput-object p1, p0, Lcom/google/android/material/sidesheet/SheetDialog$1;->this$0:Lcom/google/android/material/sidesheet/SheetDialog;
 
     invoke-direct {p0}, Landroidx/core/view/AccessibilityDelegateCompat;-><init>()V
@@ -35,10 +35,10 @@
 .method public onInitializeAccessibilityNodeInfo(Landroid/view/View;Landroidx/core/view/accessibility/AccessibilityNodeInfoCompat;)V
     .locals 0
 
-    .line 247
+    .line 283
     invoke-super {p0, p1, p2}, Landroidx/core/view/AccessibilityDelegateCompat;->onInitializeAccessibilityNodeInfo(Landroid/view/View;Landroidx/core/view/accessibility/AccessibilityNodeInfoCompat;)V
 
-    .line 248
+    .line 284
     iget-object p0, p0, Lcom/google/android/material/sidesheet/SheetDialog$1;->this$0:Lcom/google/android/material/sidesheet/SheetDialog;
 
     iget-boolean p0, p0, Lcom/google/android/material/sidesheet/SheetDialog;->cancelable:Z
@@ -47,12 +47,12 @@
 
     const/high16 p0, 0x100000
 
-    .line 249
+    .line 285
     invoke-virtual {p2, p0}, Landroidx/core/view/accessibility/AccessibilityNodeInfoCompat;->addAction(I)V
 
     const/4 p0, 0x1
 
-    .line 250
+    .line 286
     invoke-virtual {p2, p0}, Landroidx/core/view/accessibility/AccessibilityNodeInfoCompat;->setDismissable(Z)V
 
     goto :goto_0
@@ -60,7 +60,7 @@
     :cond_0
     const/4 p0, 0x0
 
-    .line 252
+    .line 288
     invoke-virtual {p2, p0}, Landroidx/core/view/accessibility/AccessibilityNodeInfoCompat;->setDismissable(Z)V
 
     :goto_0
@@ -74,14 +74,14 @@
 
     if-ne p2, v0, :cond_0
 
-    .line 258
+    .line 294
     iget-object v0, p0, Lcom/google/android/material/sidesheet/SheetDialog$1;->this$0:Lcom/google/android/material/sidesheet/SheetDialog;
 
     iget-boolean v0, v0, Lcom/google/android/material/sidesheet/SheetDialog;->cancelable:Z
 
     if-eqz v0, :cond_0
 
-    .line 259
+    .line 295
     iget-object p0, p0, Lcom/google/android/material/sidesheet/SheetDialog$1;->this$0:Lcom/google/android/material/sidesheet/SheetDialog;
 
     invoke-virtual {p0}, Lcom/google/android/material/sidesheet/SheetDialog;->cancel()V
@@ -90,7 +90,7 @@
 
     return p0
 
-    .line 262
+    .line 298
     :cond_0
     invoke-super {p0, p1, p2, p3}, Landroidx/core/view/AccessibilityDelegateCompat;->performAccessibilityAction(Landroid/view/View;ILandroid/os/Bundle;)Z
 

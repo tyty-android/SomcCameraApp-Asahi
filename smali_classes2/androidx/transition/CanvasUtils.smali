@@ -3,6 +3,14 @@
 .source "CanvasUtils.java"
 
 
+# annotations
+.annotation system Ldalvik/annotation/MemberClasses;
+    value = {
+        Landroidx/transition/CanvasUtils$Api29Impl;
+    }
+.end annotation
+
+
 # static fields
 .field private static sInorderBarrierMethod:Ljava/lang/reflect/Method;
 
@@ -15,7 +23,7 @@
 .method private constructor <init>()V
     .locals 0
 
-    .line 81
+    .line 83
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -26,14 +34,14 @@
 
     if-eqz p1, :cond_0
 
-    .line 45
-    invoke-virtual {p0}, Landroid/graphics/Canvas;->enableZ()V
+    .line 47
+    invoke-static {p0}, Landroidx/transition/CanvasUtils$Api29Impl;->enableZ(Landroid/graphics/Canvas;)V
 
     goto :goto_0
 
-    .line 47
+    .line 49
     :cond_0
-    invoke-virtual {p0}, Landroid/graphics/Canvas;->disableZ()V
+    invoke-static {p0}, Landroidx/transition/CanvasUtils$Api29Impl;->disableZ(Landroid/graphics/Canvas;)V
 
     :goto_0
     return-void

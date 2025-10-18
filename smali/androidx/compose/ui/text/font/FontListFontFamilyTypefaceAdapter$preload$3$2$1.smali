@@ -53,7 +53,7 @@
     f = "FontListFontFamilyTypefaceAdapter.kt"
     i = {}
     l = {
-        0x67
+        0x6b
     }
     m = "invokeSuspend"
     n = {}
@@ -180,7 +180,7 @@
 
     move-result-object v0
 
-    .line 102
+    .line 106
     iget v1, p0, Landroidx/compose/ui/text/font/FontListFontFamilyTypefaceAdapter$preload$3$2$1;->label:I
 
     const/4 v2, 0x1
@@ -205,7 +205,7 @@
     :cond_1
     invoke-static {p1}, Lkotlin/ResultKt;->throwOnFailure(Ljava/lang/Object;)V
 
-    .line 103
+    .line 107
     iget-object p1, p0, Landroidx/compose/ui/text/font/FontListFontFamilyTypefaceAdapter$preload$3$2$1;->this$0:Landroidx/compose/ui/text/font/FontListFontFamilyTypefaceAdapter;
 
     invoke-static {p1}, Landroidx/compose/ui/text/font/FontListFontFamilyTypefaceAdapter;->access$getAsyncTypefaceCache$p(Landroidx/compose/ui/text/font/FontListFontFamilyTypefaceAdapter;)Landroidx/compose/ui/text/font/AsyncTypefaceCache;

@@ -14,11 +14,12 @@
 
 .annotation runtime Lkotlin/Metadata;
     d1 = {
-        "\u0000\u000c\n\u0002\u0018\u0002\n\u0002\u0010\u0010\n\u0002\u0008\u0007\u0008\u0086\u0081\u0002\u0018\u00002\u0008\u0012\u0004\u0012\u00020\u00000\u0001B\u0007\u0008\u0002\u00a2\u0006\u0002\u0010\u0002j\u0002\u0008\u0003j\u0002\u0008\u0004j\u0002\u0008\u0005j\u0002\u0008\u0006j\u0002\u0008\u0007\u00a8\u0006\u0008"
+        "\u0000\u000c\n\u0002\u0018\u0002\n\u0002\u0010\u0010\n\u0002\u0008\u0008\u0008\u0086\u0081\u0002\u0018\u00002\u0008\u0012\u0004\u0012\u00020\u00000\u0001B\t\u0008\u0002\u00a2\u0006\u0004\u0008\u0002\u0010\u0003j\u0002\u0008\u0004j\u0002\u0008\u0005j\u0002\u0008\u0006j\u0002\u0008\u0007j\u0002\u0008\u0008\u00a8\u0006\t"
     }
     d2 = {
         "Ljp/co/sony/mc/camera/setting/SettingAppearance;",
         "",
+        "<init>",
         "(Ljava/lang/String;I)V",
         "ENABLED",
         "DISABLED",
@@ -29,8 +30,8 @@
     }
     k = 0x1
     mv = {
-        0x1,
-        0x9,
+        0x2,
+        0x0,
         0x0
     }
     xi = 0x30
@@ -77,7 +78,7 @@
 .method static constructor <clinit>()V
     .locals 3
 
-    .line 25
+    .line 26
     new-instance v0, Ljp/co/sony/mc/camera/setting/SettingAppearance;
 
     const-string v1, "ENABLED"
@@ -88,7 +89,7 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/setting/SettingAppearance;->ENABLED:Ljp/co/sony/mc/camera/setting/SettingAppearance;
 
-    .line 26
+    .line 27
     new-instance v0, Ljp/co/sony/mc/camera/setting/SettingAppearance;
 
     const-string v1, "DISABLED"
@@ -99,7 +100,7 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/setting/SettingAppearance;->DISABLED:Ljp/co/sony/mc/camera/setting/SettingAppearance;
 
-    .line 27
+    .line 28
     new-instance v0, Ljp/co/sony/mc/camera/setting/SettingAppearance;
 
     const-string v1, "DISABLED_WITH_DIALOG_MESSAGE"
@@ -110,7 +111,7 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/setting/SettingAppearance;->DISABLED_WITH_DIALOG_MESSAGE:Ljp/co/sony/mc/camera/setting/SettingAppearance;
 
-    .line 28
+    .line 29
     new-instance v0, Ljp/co/sony/mc/camera/setting/SettingAppearance;
 
     const-string v1, "DISABLED_WITH_HINT_MESSAGE"
@@ -121,7 +122,7 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/setting/SettingAppearance;->DISABLED_WITH_HINT_MESSAGE:Ljp/co/sony/mc/camera/setting/SettingAppearance;
 
-    .line 29
+    .line 30
     new-instance v0, Ljp/co/sony/mc/camera/setting/SettingAppearance;
 
     const-string v1, "INVISIBLE"
@@ -157,7 +158,7 @@
         }
     .end annotation
 
-    .line 24
+    .line 25
     invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
     return-void
@@ -188,6 +189,7 @@
 
     move-result-object p0
 
+    .line 31
     check-cast p0, Ljp/co/sony/mc/camera/setting/SettingAppearance;
 
     return-object p0
@@ -198,10 +200,11 @@
 
     sget-object v0, Ljp/co/sony/mc/camera/setting/SettingAppearance;->$VALUES:[Ljp/co/sony/mc/camera/setting/SettingAppearance;
 
-    invoke-virtual {v0}, [Ljava/lang/Object;->clone()Ljava/lang/Object;
+    invoke-virtual {v0}, Ljava/lang/Object;->clone()Ljava/lang/Object;
 
     move-result-object v0
 
+    .line 31
     check-cast v0, [Ljp/co/sony/mc/camera/setting/SettingAppearance;
 
     return-object v0

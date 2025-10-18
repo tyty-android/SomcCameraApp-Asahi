@@ -55,7 +55,7 @@
 
     :catch_0
     :try_start_1
-    sget-object v1, Landroidx/compose/foundation/text/selection/HandleReferencePoint;->TopRight:Landroidx/compose/foundation/text/selection/HandleReferencePoint;
+    sget-object v1, Landroidx/compose/foundation/text/selection/HandleReferencePoint;->TopMiddle:Landroidx/compose/foundation/text/selection/HandleReferencePoint;
 
     invoke-virtual {v1}, Landroidx/compose/foundation/text/selection/HandleReferencePoint;->ordinal()I
 
@@ -69,7 +69,7 @@
 
     :catch_1
     :try_start_2
-    sget-object v1, Landroidx/compose/foundation/text/selection/HandleReferencePoint;->TopMiddle:Landroidx/compose/foundation/text/selection/HandleReferencePoint;
+    sget-object v1, Landroidx/compose/foundation/text/selection/HandleReferencePoint;->TopRight:Landroidx/compose/foundation/text/selection/HandleReferencePoint;
 
     invoke-virtual {v1}, Landroidx/compose/foundation/text/selection/HandleReferencePoint;->ordinal()I
 

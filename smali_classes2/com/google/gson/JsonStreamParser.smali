@@ -37,10 +37,10 @@
 
     iput-object v0, p0, Lcom/google/gson/JsonStreamParser;->parser:Lcom/google/gson/stream/JsonReader;
 
-    const/4 p1, 0x1
-
     .line 69
-    invoke-virtual {v0, p1}, Lcom/google/gson/stream/JsonReader;->setLenient(Z)V
+    sget-object p1, Lcom/google/gson/Strictness;->LENIENT:Lcom/google/gson/Strictness;
+
+    invoke-virtual {v0, p1}, Lcom/google/gson/stream/JsonReader;->setStrictness(Lcom/google/gson/Strictness;)V
 
     .line 70
     new-instance p1, Ljava/lang/Object;
@@ -70,12 +70,12 @@
 .method public hasNext()Z
     .locals 2
 
-    .line 105
+    .line 106
     iget-object v0, p0, Lcom/google/gson/JsonStreamParser;->lock:Ljava/lang/Object;
 
     monitor-enter v0
 
-    .line 107
+    .line 108
     :try_start_0
     iget-object p0, p0, Lcom/google/gson/JsonStreamParser;->parser:Lcom/google/gson/stream/JsonReader;
 
@@ -112,7 +112,7 @@
     :catch_0
     move-exception p0
 
-    .line 111
+    .line 112
     new-instance v1, Lcom/google/gson/JsonIOException;
 
     invoke-direct {v1, p0}, Lcom/google/gson/JsonIOException;-><init>(Ljava/lang/Throwable;)V
@@ -122,14 +122,14 @@
     :catch_1
     move-exception p0
 
-    .line 109
+    .line 110
     new-instance v1, Lcom/google/gson/JsonSyntaxException;
 
     invoke-direct {v1, p0}, Lcom/google/gson/JsonSyntaxException;-><init>(Ljava/lang/Throwable;)V
 
     throw v1
 
-    .line 113
+    .line 114
     :goto_1
     monitor-exit v0
     :try_end_1
@@ -211,7 +211,7 @@
 .method public remove()V
     .locals 0
 
-    .line 123
+    .line 125
     new-instance p0, Ljava/lang/UnsupportedOperationException;
 
     invoke-direct {p0}, Ljava/lang/UnsupportedOperationException;-><init>()V

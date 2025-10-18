@@ -25,7 +25,7 @@
 .method constructor <init>(Ljp/co/sony/mc/camera/view/FragmentController$ModeAndCameraSwitchCallbackImpl$10;)V
     .locals 0
 
-    .line 7061
+    .line 7310
     iput-object p1, p0, Ljp/co/sony/mc/camera/view/FragmentController$ModeAndCameraSwitchCallbackImpl$10$1;->this$1:Ljp/co/sony/mc/camera/view/FragmentController$ModeAndCameraSwitchCallbackImpl$10;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -46,7 +46,7 @@
 .method public getDurationInMillisecond()I
     .locals 0
 
-    .line 7064
+    .line 7313
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/FragmentController$ModeAndCameraSwitchCallbackImpl$10$1;->this$1:Ljp/co/sony/mc/camera/view/FragmentController$ModeAndCameraSwitchCallbackImpl$10;
 
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/FragmentController$ModeAndCameraSwitchCallbackImpl$10;->this$0:Ljp/co/sony/mc/camera/view/FragmentController$ModeAndCameraSwitchCallbackImpl;
@@ -69,7 +69,7 @@
 .method public getSoundType()Ljp/co/sony/mc/camera/sound/SoundPlayer$Type;
     .locals 2
 
-    .line 7075
+    .line 7324
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/view/FragmentController$ModeAndCameraSwitchCallbackImpl$10$1;->getDurationInMillisecond()I
 
     move-result v0
@@ -78,12 +78,12 @@
 
     if-ge v0, v1, :cond_0
 
-    .line 7076
+    .line 7325
     sget-object p0, Ljp/co/sony/mc/camera/sound/SoundPlayer$Type;->SELF_TIMER_3SEC:Ljp/co/sony/mc/camera/sound/SoundPlayer$Type;
 
     goto :goto_0
 
-    .line 7077
+    .line 7326
     :cond_0
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/view/FragmentController$ModeAndCameraSwitchCallbackImpl$10$1;->getDurationInMillisecond()I
 
@@ -91,12 +91,12 @@
 
     if-ne p0, v1, :cond_1
 
-    .line 7078
+    .line 7327
     sget-object p0, Ljp/co/sony/mc/camera/sound/SoundPlayer$Type;->SELF_TIMER_4SEC:Ljp/co/sony/mc/camera/sound/SoundPlayer$Type;
 
     goto :goto_0
 
-    .line 7080
+    .line 7329
     :cond_1
     sget-object p0, Ljp/co/sony/mc/camera/sound/SoundPlayer$Type;->SELF_TIMER_1SEC:Ljp/co/sony/mc/camera/sound/SoundPlayer$Type;
 

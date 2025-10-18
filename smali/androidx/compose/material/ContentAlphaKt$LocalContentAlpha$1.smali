@@ -79,7 +79,7 @@
 
     const/high16 p0, 0x3f800000    # 1.0f
 
-    .line 101
+    .line 102
     invoke-static {p0}, Ljava/lang/Float;->valueOf(F)Ljava/lang/Float;
 
     move-result-object p0
@@ -90,7 +90,7 @@
 .method public bridge synthetic invoke()Ljava/lang/Object;
     .locals 0
 
-    .line 101
+    .line 102
     invoke-virtual {p0}, Landroidx/compose/material/ContentAlphaKt$LocalContentAlpha$1;->invoke()Ljava/lang/Float;
 
     move-result-object p0

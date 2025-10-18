@@ -67,7 +67,7 @@
 .method public static synthetic access$isFinishedFromNanos$jd(Landroidx/compose/animation/core/Animation;J)Z
     .locals 0
 
-    .line 38
+    .line 37
     invoke-super {p0, p1, p2}, Landroidx/compose/animation/core/Animation;->isFinishedFromNanos(J)Z
 
     move-result p0
@@ -117,7 +117,7 @@
 .method public isFinishedFromNanos(J)Z
     .locals 2
 
-    .line 85
+    .line 84
     invoke-interface {p0}, Landroidx/compose/animation/core/Animation;->getDurationNanos()J
 
     move-result-wide v0

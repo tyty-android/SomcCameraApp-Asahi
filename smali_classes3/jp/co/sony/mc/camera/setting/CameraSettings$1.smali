@@ -21,7 +21,7 @@
 .method constructor <init>()V
     .locals 0
 
-    .line 534
+    .line 588
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -42,10 +42,10 @@
         }
     .end annotation
 
-    .line 538
+    .line 592
     check-cast p1, Ljp/co/sony/mc/camera/setting/CameraSettings;
 
-    .line 539
+    .line 593
     invoke-static {p1}, Ljp/co/sony/mc/camera/setting/CameraSettings;->-$$Nest$mgetAspectRatio(Ljp/co/sony/mc/camera/setting/CameraSettings;)Ljp/co/sony/mc/camera/configuration/parameters/AspectRatio;
 
     move-result-object p0

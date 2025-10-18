@@ -47,26 +47,26 @@
 .method private constructor <init>(Ljp/co/sony/mc/camera/recorder/defaultrecorder/DefaultRecorder;Ljp/co/sony/mc/camera/recorder/RecorderInterface$RecordTrackListener;Ljp/co/sony/mc/camera/recorder/RecorderInterface$RecordTrackListener;Ljp/co/sony/mc/camera/recorder/RecorderInterface$OnMaxReachedListener;)V
     .locals 0
 
-    .line 607
+    .line 620
     iput-object p1, p0, Ljp/co/sony/mc/camera/recorder/defaultrecorder/DefaultRecorder$OnInfoListener;->this$0:Ljp/co/sony/mc/camera/recorder/defaultrecorder/DefaultRecorder;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 608
+    .line 621
     iput-object p2, p0, Ljp/co/sony/mc/camera/recorder/defaultrecorder/DefaultRecorder$OnInfoListener;->mAudioTrackListener:Ljp/co/sony/mc/camera/recorder/RecorderInterface$RecordTrackListener;
 
-    .line 609
+    .line 622
     iput-object p3, p0, Ljp/co/sony/mc/camera/recorder/defaultrecorder/DefaultRecorder$OnInfoListener;->mVideoTrackListener:Ljp/co/sony/mc/camera/recorder/RecorderInterface$RecordTrackListener;
 
-    .line 610
+    .line 623
     iput-object p4, p0, Ljp/co/sony/mc/camera/recorder/defaultrecorder/DefaultRecorder$OnInfoListener;->mOnMaxReachedListener:Ljp/co/sony/mc/camera/recorder/RecorderInterface$OnMaxReachedListener;
 
     const/4 p1, 0x0
 
-    .line 611
+    .line 624
     iput-boolean p1, p0, Ljp/co/sony/mc/camera/recorder/defaultrecorder/DefaultRecorder$OnInfoListener;->mIsAudioTrackStarted:Z
 
-    .line 612
+    .line 625
     iput-boolean p1, p0, Ljp/co/sony/mc/camera/recorder/defaultrecorder/DefaultRecorder$OnInfoListener;->mIsVideoTrackStarted:Z
 
     return-void
@@ -83,7 +83,7 @@
 .method private onCompleted(I)V
     .locals 1
 
-    .line 655
+    .line 673
     iget-object v0, p0, Ljp/co/sony/mc/camera/recorder/defaultrecorder/DefaultRecorder$OnInfoListener;->this$0:Ljp/co/sony/mc/camera/recorder/defaultrecorder/DefaultRecorder;
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/recorder/defaultrecorder/DefaultRecorder;->-$$Nest$fgetmIsMicrophoneEnabled(Ljp/co/sony/mc/camera/recorder/defaultrecorder/DefaultRecorder;)Z
@@ -96,14 +96,14 @@
 
     if-ne p1, v0, :cond_0
 
-    .line 657
+    .line 675
     iget-object p0, p0, Ljp/co/sony/mc/camera/recorder/defaultrecorder/DefaultRecorder$OnInfoListener;->mAudioTrackListener:Ljp/co/sony/mc/camera/recorder/RecorderInterface$RecordTrackListener;
 
     invoke-interface {p0}, Ljp/co/sony/mc/camera/recorder/RecorderInterface$RecordTrackListener;->onCompleted()V
 
     goto :goto_0
 
-    .line 658
+    .line 676
     :cond_0
     iget-object v0, p0, Ljp/co/sony/mc/camera/recorder/defaultrecorder/DefaultRecorder$OnInfoListener;->this$0:Ljp/co/sony/mc/camera/recorder/defaultrecorder/DefaultRecorder;
 
@@ -117,10 +117,39 @@
 
     if-ne p1, v0, :cond_1
 
-    .line 660
+    .line 678
     iget-object p0, p0, Ljp/co/sony/mc/camera/recorder/defaultrecorder/DefaultRecorder$OnInfoListener;->mVideoTrackListener:Ljp/co/sony/mc/camera/recorder/RecorderInterface$RecordTrackListener;
 
     invoke-interface {p0}, Ljp/co/sony/mc/camera/recorder/RecorderInterface$RecordTrackListener;->onCompleted()V
+
+    :cond_1
+    :goto_0
+    return-void
+.end method
+
+.method private onFrameEnd(I)V
+    .locals 1
+
+    const/4 v0, 0x2
+
+    if-ne p1, v0, :cond_0
+
+    .line 716
+    iget-object p0, p0, Ljp/co/sony/mc/camera/recorder/defaultrecorder/DefaultRecorder$OnInfoListener;->mAudioTrackListener:Ljp/co/sony/mc/camera/recorder/RecorderInterface$RecordTrackListener;
+
+    invoke-interface {p0}, Ljp/co/sony/mc/camera/recorder/RecorderInterface$RecordTrackListener;->onFrameEnd()V
+
+    goto :goto_0
+
+    :cond_0
+    const/4 v0, 0x1
+
+    if-ne p1, v0, :cond_1
+
+    .line 719
+    iget-object p0, p0, Ljp/co/sony/mc/camera/recorder/defaultrecorder/DefaultRecorder$OnInfoListener;->mVideoTrackListener:Ljp/co/sony/mc/camera/recorder/RecorderInterface$RecordTrackListener;
+
+    invoke-interface {p0}, Ljp/co/sony/mc/camera/recorder/RecorderInterface$RecordTrackListener;->onFrameEnd()V
 
     :cond_1
     :goto_0
@@ -140,44 +169,54 @@
 
     const/16 v0, 0x320
 
-    if-eq p1, v0, :cond_3
+    if-eq p1, v0, :cond_4
 
     const/16 v0, 0x321
 
-    if-eq p1, v0, :cond_2
+    if-eq p1, v0, :cond_3
 
     const/16 v0, 0x3e8
 
-    if-eq p1, v0, :cond_1
+    if-eq p1, v0, :cond_2
 
     const/16 v0, 0x3e9
 
-    if-eq p1, v0, :cond_0
+    if-eq p1, v0, :cond_1
+
+    const/16 p3, 0x3f2
+
+    if-eq p1, p3, :cond_0
 
     goto :goto_0
 
-    .line 630
+    .line 658
     :cond_0
+    invoke-direct {p0, p2}, Ljp/co/sony/mc/camera/recorder/defaultrecorder/DefaultRecorder$OnInfoListener;->onFrameEnd(I)V
+
+    goto :goto_0
+
+    .line 643
+    :cond_1
     invoke-direct {p0, p3, p2}, Ljp/co/sony/mc/camera/recorder/defaultrecorder/DefaultRecorder$OnInfoListener;->onProgress(II)V
 
     goto :goto_0
 
-    .line 625
-    :cond_1
+    .line 638
+    :cond_2
     invoke-direct {p0, p2}, Ljp/co/sony/mc/camera/recorder/defaultrecorder/DefaultRecorder$OnInfoListener;->onCompleted(I)V
 
     goto :goto_0
 
-    .line 640
-    :cond_2
+    .line 653
+    :cond_3
     iget-object p0, p0, Ljp/co/sony/mc/camera/recorder/defaultrecorder/DefaultRecorder$OnInfoListener;->mOnMaxReachedListener:Ljp/co/sony/mc/camera/recorder/RecorderInterface$OnMaxReachedListener;
 
     invoke-interface {p0}, Ljp/co/sony/mc/camera/recorder/RecorderInterface$OnMaxReachedListener;->onMaxFileSizeReached()V
 
     goto :goto_0
 
-    .line 635
-    :cond_3
+    .line 648
+    :cond_4
     iget-object p0, p0, Ljp/co/sony/mc/camera/recorder/defaultrecorder/DefaultRecorder$OnInfoListener;->mOnMaxReachedListener:Ljp/co/sony/mc/camera/recorder/RecorderInterface$OnMaxReachedListener;
 
     invoke-interface {p0}, Ljp/co/sony/mc/camera/recorder/RecorderInterface$OnMaxReachedListener;->onMaxDurationReached()V
@@ -189,7 +228,7 @@
 .method private onProgress(II)V
     .locals 2
 
-    .line 665
+    .line 683
     iget-object v0, p0, Ljp/co/sony/mc/camera/recorder/defaultrecorder/DefaultRecorder$OnInfoListener;->this$0:Ljp/co/sony/mc/camera/recorder/defaultrecorder/DefaultRecorder;
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/recorder/defaultrecorder/DefaultRecorder;->-$$Nest$fgetmIsMicrophoneEnabled(Ljp/co/sony/mc/camera/recorder/defaultrecorder/DefaultRecorder;)Z
@@ -204,20 +243,20 @@
 
     if-ne p2, v0, :cond_1
 
-    .line 669
+    .line 687
     iget-boolean p2, p0, Ljp/co/sony/mc/camera/recorder/defaultrecorder/DefaultRecorder$OnInfoListener;->mIsAudioTrackStarted:Z
 
     if-nez p2, :cond_0
 
-    .line 670
+    .line 688
     iget-object p2, p0, Ljp/co/sony/mc/camera/recorder/defaultrecorder/DefaultRecorder$OnInfoListener;->mAudioTrackListener:Ljp/co/sony/mc/camera/recorder/RecorderInterface$RecordTrackListener;
 
     invoke-interface {p2}, Ljp/co/sony/mc/camera/recorder/RecorderInterface$RecordTrackListener;->onStarted()V
 
-    .line 671
+    .line 689
     iput-boolean v1, p0, Ljp/co/sony/mc/camera/recorder/defaultrecorder/DefaultRecorder$OnInfoListener;->mIsAudioTrackStarted:Z
 
-    .line 673
+    .line 691
     :cond_0
     iget-object p0, p0, Ljp/co/sony/mc/camera/recorder/defaultrecorder/DefaultRecorder$OnInfoListener;->mAudioTrackListener:Ljp/co/sony/mc/camera/recorder/RecorderInterface$RecordTrackListener;
 
@@ -230,17 +269,17 @@
     :cond_1
     if-ne p2, v1, :cond_4
 
-    .line 677
+    .line 695
     iget-boolean p1, p0, Ljp/co/sony/mc/camera/recorder/defaultrecorder/DefaultRecorder$OnInfoListener;->mIsVideoTrackStarted:Z
 
     if-nez p1, :cond_4
 
-    .line 678
+    .line 696
     iget-object p1, p0, Ljp/co/sony/mc/camera/recorder/defaultrecorder/DefaultRecorder$OnInfoListener;->mVideoTrackListener:Ljp/co/sony/mc/camera/recorder/RecorderInterface$RecordTrackListener;
 
     invoke-interface {p1}, Ljp/co/sony/mc/camera/recorder/RecorderInterface$RecordTrackListener;->onStarted()V
 
-    .line 679
+    .line 697
     iput-boolean v1, p0, Ljp/co/sony/mc/camera/recorder/defaultrecorder/DefaultRecorder$OnInfoListener;->mIsVideoTrackStarted:Z
 
     goto :goto_0
@@ -248,20 +287,20 @@
     :cond_2
     if-ne p2, v1, :cond_4
 
-    .line 686
+    .line 704
     iget-boolean p2, p0, Ljp/co/sony/mc/camera/recorder/defaultrecorder/DefaultRecorder$OnInfoListener;->mIsVideoTrackStarted:Z
 
     if-nez p2, :cond_3
 
-    .line 687
+    .line 705
     iget-object p2, p0, Ljp/co/sony/mc/camera/recorder/defaultrecorder/DefaultRecorder$OnInfoListener;->mVideoTrackListener:Ljp/co/sony/mc/camera/recorder/RecorderInterface$RecordTrackListener;
 
     invoke-interface {p2}, Ljp/co/sony/mc/camera/recorder/RecorderInterface$RecordTrackListener;->onStarted()V
 
-    .line 688
+    .line 706
     iput-boolean v1, p0, Ljp/co/sony/mc/camera/recorder/defaultrecorder/DefaultRecorder$OnInfoListener;->mIsVideoTrackStarted:Z
 
-    .line 690
+    .line 708
     :cond_3
     iget-object p0, p0, Ljp/co/sony/mc/camera/recorder/defaultrecorder/DefaultRecorder$OnInfoListener;->mVideoTrackListener:Ljp/co/sony/mc/camera/recorder/RecorderInterface$RecordTrackListener;
 
@@ -281,7 +320,7 @@
 
     const/4 p1, 0x0
 
-    .line 651
+    .line 669
     move-object v0, p1
 
     check-cast v0, Lcom/sonymobile/android/media/MediaRecorder;

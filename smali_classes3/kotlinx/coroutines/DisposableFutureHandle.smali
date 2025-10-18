@@ -26,7 +26,7 @@
     k = 0x1
     mv = {
         0x1,
-        0x6,
+        0x8,
         0x0
     }
     xi = 0x30
@@ -55,7 +55,7 @@
         }
     .end annotation
 
-    .line 194
+    .line 201
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     iput-object p1, p0, Lkotlinx/coroutines/DisposableFutureHandle;->future:Ljava/util/concurrent/Future;
@@ -68,7 +68,7 @@
 .method public dispose()V
     .locals 1
 
-    .line 196
+    .line 203
     iget-object p0, p0, Lkotlinx/coroutines/DisposableFutureHandle;->future:Ljava/util/concurrent/Future;
 
     const/4 v0, 0x0
@@ -81,7 +81,7 @@
 .method public toString()Ljava/lang/String;
     .locals 2
 
-    .line 198
+    .line 205
     new-instance v0, Ljava/lang/StringBuilder;
 
     const-string v1, "DisposableFutureHandle["

@@ -65,7 +65,7 @@
 .method public bridge synthetic invoke(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
 
-    .line 135
+    .line 117
     check-cast p1, Ljava/lang/Number;
 
     invoke-virtual {p1}, Ljava/lang/Number;->intValue()I
@@ -88,7 +88,7 @@
 .method public final invoke(II)[I
     .locals 0
 
-    .line 135
+    .line 117
     iget-object p0, p0, Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridState$scrollPosition$1;->receiver:Ljava/lang/Object;
 
     check-cast p0, Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridState;

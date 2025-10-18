@@ -156,57 +156,61 @@
     .line 62
     sget-boolean v1, Ljp/co/sony/mc/camera/util/CamLog;->VERBOSE:Z
 
+    const/4 v2, 0x0
+
+    const/4 v3, 0x1
+
     if-eqz v1, :cond_0
 
-    new-instance v1, Ljava/lang/StringBuilder;
+    new-array v1, v3, [Ljava/lang/String;
 
-    const-string v2, "createMicroThumbnail(type:"
+    new-instance v4, Ljava/lang/StringBuilder;
 
-    invoke-direct {v1, v2}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+    const-string v5, "createMicroThumbnail(type:"
 
-    iget v2, p0, Ljp/co/sony/mc/camera/view/contentsview/contents/Content$ContentInfo;->mType:I
+    invoke-direct {v4, v5}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
-    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+    iget v5, p0, Ljp/co/sony/mc/camera/view/contentsview/contents/Content$ContentInfo;->mType:I
 
-    move-result-object v1
+    invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
-    const-string v2, ",id;"
+    move-result-object v4
 
-    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    const-string v5, ",id;"
 
-    move-result-object v1
+    invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-wide v2, p0, Ljp/co/sony/mc/camera/view/contentsview/contents/Content$ContentInfo;->mId:J
+    move-result-object v4
 
-    invoke-virtual {v1, v2, v3}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
+    iget-wide v5, p0, Ljp/co/sony/mc/camera/view/contentsview/contents/Content$ContentInfo;->mId:J
 
-    move-result-object v1
+    invoke-virtual {v4, v5, v6}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
 
-    const-string v2, ",data:"
+    move-result-object v4
 
-    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    const-string v5, ",data:"
 
-    move-result-object v1
+    invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-object v2, p0, Ljp/co/sony/mc/camera/view/contentsview/contents/Content$ContentInfo;->mOriginalPath:Ljava/lang/String;
+    move-result-object v4
 
-    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    iget-object v5, p0, Ljp/co/sony/mc/camera/view/contentsview/contents/Content$ContentInfo;->mOriginalPath:Ljava/lang/String;
 
-    move-result-object v1
+    invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    const-string v2, ")"
+    move-result-object v4
 
-    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    const-string v5, ")"
 
-    move-result-object v1
+    invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    move-result-object v4
 
-    move-result-object v1
+    invoke-virtual {v4}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    filled-new-array {v1}, [Ljava/lang/String;
+    move-result-object v4
 
-    move-result-object v1
+    aput-object v4, v1, v2
 
     invoke-static {v1}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
@@ -219,43 +223,39 @@
 
     move-result-object p1
 
-    iget-object v2, p0, Ljp/co/sony/mc/camera/view/contentsview/contents/Content$ContentInfo;->mOriginalUri:Landroid/net/Uri;
+    iget-object v4, p0, Ljp/co/sony/mc/camera/view/contentsview/contents/Content$ContentInfo;->mOriginalUri:Landroid/net/Uri;
 
-    const-string v3, "r"
+    const-string v5, "r"
 
-    invoke-virtual {p1, v2, v3}, Landroid/content/ContentResolver;->openFileDescriptor(Landroid/net/Uri;Ljava/lang/String;)Landroid/os/ParcelFileDescriptor;
+    invoke-virtual {p1, v4, v5}, Landroid/content/ContentResolver;->openFileDescriptor(Landroid/net/Uri;Ljava/lang/String;)Landroid/os/ParcelFileDescriptor;
 
     move-result-object p1
 
     .line 70
-    iget v2, p0, Ljp/co/sony/mc/camera/view/contentsview/contents/Content$ContentInfo;->mType:I
+    iget v4, p0, Ljp/co/sony/mc/camera/view/contentsview/contents/Content$ContentInfo;->mType:I
 
-    const/16 v3, 0x60
+    const/16 v5, 0x60
 
-    const/4 v4, 0x0
-
-    const/4 v5, 0x1
-
-    if-eq v2, v5, :cond_2
+    if-eq v4, v3, :cond_2
 
     const/4 v6, 0x2
 
-    if-eq v2, v6, :cond_1
+    if-eq v4, v6, :cond_1
 
     const/4 v6, 0x3
 
-    if-eq v2, v6, :cond_2
+    if-eq v4, v6, :cond_2
 
     .line 103
-    new-array v2, v5, [Ljava/lang/String;
+    new-array v4, v3, [Ljava/lang/String;
 
-    new-instance v5, Ljava/lang/StringBuilder;
+    new-instance v6, Ljava/lang/StringBuilder;
 
-    invoke-direct {v5, v0}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+    invoke-direct {v6, v0}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
     iget v0, p0, Ljp/co/sony/mc/camera/view/contentsview/contents/Content$ContentInfo;->mType:I
 
-    invoke-virtual {v5, v0}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+    invoke-virtual {v6, v0}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
     move-result-object v0
 
@@ -263,9 +263,9 @@
 
     move-result-object v0
 
-    aput-object v0, v2, v4
+    aput-object v0, v4, v2
 
-    invoke-static {v2}, Ljp/co/sony/mc/camera/util/CamLog;->e([Ljava/lang/String;)V
+    invoke-static {v4}, Ljp/co/sony/mc/camera/util/CamLog;->e([Ljava/lang/String;)V
 
     goto :goto_0
 
@@ -290,69 +290,69 @@
     invoke-direct {v0}, Landroid/graphics/BitmapFactory$Options;-><init>()V
 
     .line 80
-    iput v5, v0, Landroid/graphics/BitmapFactory$Options;->inSampleSize:I
+    iput v3, v0, Landroid/graphics/BitmapFactory$Options;->inSampleSize:I
 
     .line 81
-    iput-boolean v5, v0, Landroid/graphics/BitmapFactory$Options;->inJustDecodeBounds:Z
+    iput-boolean v3, v0, Landroid/graphics/BitmapFactory$Options;->inJustDecodeBounds:Z
 
     if-eqz p1, :cond_3
 
     .line 85
     invoke-virtual {p1}, Landroid/os/ParcelFileDescriptor;->getFileDescriptor()Ljava/io/FileDescriptor;
 
-    move-result-object v2
+    move-result-object v4
 
     .line 84
-    invoke-static {v2, v1, v0}, Landroid/graphics/BitmapFactory;->decodeFileDescriptor(Ljava/io/FileDescriptor;Landroid/graphics/Rect;Landroid/graphics/BitmapFactory$Options;)Landroid/graphics/Bitmap;
+    invoke-static {v4, v1, v0}, Landroid/graphics/BitmapFactory;->decodeFileDescriptor(Ljava/io/FileDescriptor;Landroid/graphics/Rect;Landroid/graphics/BitmapFactory$Options;)Landroid/graphics/Bitmap;
 
     .line 87
     :cond_3
-    iget-boolean v2, v0, Landroid/graphics/BitmapFactory$Options;->mCancel:Z
+    iget-boolean v4, v0, Landroid/graphics/BitmapFactory$Options;->mCancel:Z
 
-    if-nez v2, :cond_7
+    if-nez v4, :cond_7
 
-    iget v2, v0, Landroid/graphics/BitmapFactory$Options;->outWidth:I
+    iget v4, v0, Landroid/graphics/BitmapFactory$Options;->outWidth:I
 
-    const/4 v5, -0x1
+    const/4 v6, -0x1
 
-    if-eq v2, v5, :cond_7
+    if-eq v4, v6, :cond_7
 
-    iget v2, v0, Landroid/graphics/BitmapFactory$Options;->outHeight:I
+    iget v4, v0, Landroid/graphics/BitmapFactory$Options;->outHeight:I
 
-    if-ne v2, v5, :cond_4
+    if-ne v4, v6, :cond_4
 
     goto :goto_3
 
     :cond_4
-    const/16 v2, 0x4b00
+    const/16 v4, 0x4b00
 
     .line 90
-    invoke-static {v0, v3, v2}, Ljp/co/sony/mc/camera/view/contentsview/ThumbnailFactory;->computeSampleSize(Landroid/graphics/BitmapFactory$Options;II)I
+    invoke-static {v0, v5, v4}, Ljp/co/sony/mc/camera/view/contentsview/ThumbnailFactory;->computeSampleSize(Landroid/graphics/BitmapFactory$Options;II)I
 
-    move-result v2
+    move-result v4
 
-    iput v2, v0, Landroid/graphics/BitmapFactory$Options;->inSampleSize:I
+    iput v4, v0, Landroid/graphics/BitmapFactory$Options;->inSampleSize:I
 
     .line 93
-    iput-boolean v4, v0, Landroid/graphics/BitmapFactory$Options;->inJustDecodeBounds:Z
+    iput-boolean v2, v0, Landroid/graphics/BitmapFactory$Options;->inJustDecodeBounds:Z
 
     .line 94
-    iput-boolean v4, v0, Landroid/graphics/BitmapFactory$Options;->inDither:Z
+    iput-boolean v2, v0, Landroid/graphics/BitmapFactory$Options;->inDither:Z
 
     .line 95
-    sget-object v2, Landroid/graphics/Bitmap$Config;->ARGB_8888:Landroid/graphics/Bitmap$Config;
+    sget-object v4, Landroid/graphics/Bitmap$Config;->ARGB_8888:Landroid/graphics/Bitmap$Config;
 
-    iput-object v2, v0, Landroid/graphics/BitmapFactory$Options;->inPreferredConfig:Landroid/graphics/Bitmap$Config;
+    iput-object v4, v0, Landroid/graphics/BitmapFactory$Options;->inPreferredConfig:Landroid/graphics/Bitmap$Config;
 
     if-eqz p1, :cond_5
 
     .line 98
     invoke-virtual {p1}, Landroid/os/ParcelFileDescriptor;->getFileDescriptor()Ljava/io/FileDescriptor;
 
-    move-result-object v2
+    move-result-object v4
 
     .line 97
-    invoke-static {v2, v1, v0}, Landroid/graphics/BitmapFactory;->decodeFileDescriptor(Ljava/io/FileDescriptor;Landroid/graphics/Rect;Landroid/graphics/BitmapFactory$Options;)Landroid/graphics/Bitmap;
+    invoke-static {v4, v1, v0}, Landroid/graphics/BitmapFactory;->decodeFileDescriptor(Ljava/io/FileDescriptor;Landroid/graphics/Rect;Landroid/graphics/BitmapFactory$Options;)Landroid/graphics/Bitmap;
 
     move-result-object v0
 
@@ -366,9 +366,9 @@
     if-eqz v0, :cond_6
 
     .line 108
-    invoke-static {v0, v3, v3}, Landroid/media/ThumbnailUtils;->extractThumbnail(Landroid/graphics/Bitmap;II)Landroid/graphics/Bitmap;
+    invoke-static {v0, v5, v5}, Landroid/media/ThumbnailUtils;->extractThumbnail(Landroid/graphics/Bitmap;II)Landroid/graphics/Bitmap;
 
-    move-result-object v2
+    move-result-object v4
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_3
     .catch Ljava/lang/OutOfMemoryError; {:try_start_0 .. :try_end_0} :catch_2
@@ -380,7 +380,7 @@
     goto :goto_2
 
     :cond_6
-    move-object v2, v1
+    move-object v4, v1
 
     :goto_2
     if-eqz p1, :cond_8
@@ -410,36 +410,38 @@
     :catch_2
     move-exception p1
 
-    move-object v2, v1
+    move-object v4, v1
 
     .line 119
     :goto_4
+    new-array v0, v3, [Ljava/lang/String;
+
     invoke-virtual {p1}, Ljava/lang/OutOfMemoryError;->toString()Ljava/lang/String;
 
     move-result-object p1
 
-    filled-new-array {p1}, [Ljava/lang/String;
+    aput-object p1, v0, v2
 
-    move-result-object p1
-
-    invoke-static {p1}, Ljp/co/sony/mc/camera/util/CamLog;->e([Ljava/lang/String;)V
+    invoke-static {v0}, Ljp/co/sony/mc/camera/util/CamLog;->e([Ljava/lang/String;)V
 
     goto :goto_6
 
     :catch_3
     move-exception p1
 
-    move-object v2, v1
+    move-object v4, v1
 
     .line 117
     :goto_5
-    new-instance v0, Ljava/lang/StringBuilder;
+    new-array v0, v3, [Ljava/lang/String;
 
-    const-string v3, "createMicroThumbnail() got exception ex :"
+    new-instance v5, Ljava/lang/StringBuilder;
 
-    invoke-direct {v0, v3}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+    const-string v6, "createMicroThumbnail() got exception ex :"
 
-    invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+    invoke-direct {v5, v6}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+
+    invoke-virtual {v5, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
     move-result-object p1
 
@@ -447,22 +449,20 @@
 
     move-result-object p1
 
-    filled-new-array {p1}, [Ljava/lang/String;
+    aput-object p1, v0, v2
 
-    move-result-object p1
-
-    invoke-static {p1}, Ljp/co/sony/mc/camera/util/CamLog;->e([Ljava/lang/String;)V
+    invoke-static {v0}, Ljp/co/sony/mc/camera/util/CamLog;->e([Ljava/lang/String;)V
 
     :cond_8
     :goto_6
-    if-nez v2, :cond_9
+    if-nez v4, :cond_9
 
     .line 123
-    const-string p0, "createMicroThumbnail() can\'t create a Micro thumbnail."
+    new-array p0, v3, [Ljava/lang/String;
 
-    filled-new-array {p0}, [Ljava/lang/String;
+    const-string p1, "createMicroThumbnail() can\'t create a Micro thumbnail."
 
-    move-result-object p0
+    aput-object p1, p0, v2
 
     invoke-static {p0}, Ljp/co/sony/mc/camera/util/CamLog;->e([Ljava/lang/String;)V
 
@@ -472,7 +472,7 @@
     :cond_9
     iget p0, p0, Ljp/co/sony/mc/camera/view/contentsview/contents/Content$ContentInfo;->mOrientation:I
 
-    invoke-static {v2, p0}, Ljp/co/sony/mc/camera/view/contentsview/ThumbnailFactory;->rotateThumbnail(Landroid/graphics/Bitmap;I)Landroid/graphics/Bitmap;
+    invoke-static {v4, p0}, Ljp/co/sony/mc/camera/view/contentsview/ThumbnailFactory;->rotateThumbnail(Landroid/graphics/Bitmap;I)Landroid/graphics/Bitmap;
 
     move-result-object p0
 
@@ -522,9 +522,9 @@
 
     .line 187
     :catch_0
-    filled-new-array {v1}, [Ljava/lang/String;
+    new-array p1, v4, [Ljava/lang/String;
 
-    move-result-object p1
+    aput-object v1, p1, v3
 
     invoke-static {p1}, Ljp/co/sony/mc/camera/util/CamLog;->e([Ljava/lang/String;)V
 
@@ -557,9 +557,9 @@
 
     .line 187
     :catch_2
-    filled-new-array {v1}, [Ljava/lang/String;
+    new-array p0, v4, [Ljava/lang/String;
 
-    move-result-object p0
+    aput-object v1, p0, v3
 
     invoke-static {p0}, Ljp/co/sony/mc/camera/util/CamLog;->e([Ljava/lang/String;)V
 
@@ -587,9 +587,9 @@
 
     .line 187
     :catch_4
-    filled-new-array {v1}, [Ljava/lang/String;
+    new-array p0, v4, [Ljava/lang/String;
 
-    move-result-object p0
+    aput-object v1, p0, v3
 
     invoke-static {p0}, Ljp/co/sony/mc/camera/util/CamLog;->e([Ljava/lang/String;)V
 
@@ -611,9 +611,9 @@
 
     .line 187
     :catch_5
-    filled-new-array {v1}, [Ljava/lang/String;
+    new-array p1, v4, [Ljava/lang/String;
 
-    move-result-object p1
+    aput-object v1, p1, v3
 
     invoke-static {p1}, Ljp/co/sony/mc/camera/util/CamLog;->e([Ljava/lang/String;)V
 
@@ -680,9 +680,9 @@
 
     .line 166
     :catch_0
-    filled-new-array {v1}, [Ljava/lang/String;
+    new-array v0, v4, [Ljava/lang/String;
 
-    move-result-object v0
+    aput-object v1, v0, v3
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/util/CamLog;->e([Ljava/lang/String;)V
 
@@ -715,9 +715,9 @@
 
     .line 166
     :catch_2
-    filled-new-array {v1}, [Ljava/lang/String;
+    new-array p0, v4, [Ljava/lang/String;
 
-    move-result-object p0
+    aput-object v1, p0, v3
 
     invoke-static {p0}, Ljp/co/sony/mc/camera/util/CamLog;->e([Ljava/lang/String;)V
 
@@ -745,9 +745,9 @@
 
     .line 166
     :catch_4
-    filled-new-array {v1}, [Ljava/lang/String;
+    new-array p0, v4, [Ljava/lang/String;
 
-    move-result-object p0
+    aput-object v1, p0, v3
 
     invoke-static {p0}, Ljp/co/sony/mc/camera/util/CamLog;->e([Ljava/lang/String;)V
 
@@ -769,9 +769,9 @@
 
     .line 166
     :catch_5
-    filled-new-array {v1}, [Ljava/lang/String;
+    new-array v0, v4, [Ljava/lang/String;
 
-    move-result-object v0
+    aput-object v1, v0, v3
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/util/CamLog;->e([Ljava/lang/String;)V
 
@@ -781,7 +781,7 @@
 .end method
 
 .method private static rotateThumbnail(Landroid/graphics/Bitmap;I)Landroid/graphics/Bitmap;
-    .locals 10
+    .locals 12
 
     .line 132
     const-string v0, ", height = "
@@ -796,6 +796,10 @@
     move-result v9
 
     if-eqz p1, :cond_0
+
+    const/4 v10, 0x0
+
+    const/4 v11, 0x1
 
     .line 137
     :try_start_0
@@ -847,31 +851,31 @@
 
     .line 146
     :catch_0
-    new-instance p1, Ljava/lang/StringBuilder;
+    new-array p1, v11, [Ljava/lang/String;
 
-    const-string v1, "Exception : width = "
+    new-instance v1, Ljava/lang/StringBuilder;
 
-    invoke-direct {p1, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+    const-string v2, "Exception : width = "
 
-    invoke-virtual {p1, v8}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+    invoke-direct {v1, v2}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
-    move-result-object p1
+    invoke-virtual {v1, v8}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
-    invoke-virtual {p1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    move-result-object v1
 
-    move-result-object p1
+    invoke-virtual {v1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {p1, v9}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+    move-result-object v0
 
-    move-result-object p1
+    invoke-virtual {v0, v9}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
-    invoke-virtual {p1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    move-result-object v0
 
-    move-result-object p1
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    filled-new-array {p1}, [Ljava/lang/String;
+    move-result-object v0
 
-    move-result-object p1
+    aput-object v0, p1, v10
 
     invoke-static {p1}, Ljp/co/sony/mc/camera/util/CamLog;->e([Ljava/lang/String;)V
 
@@ -879,31 +883,31 @@
 
     .line 144
     :catch_1
-    new-instance p1, Ljava/lang/StringBuilder;
+    new-array p1, v11, [Ljava/lang/String;
 
-    const-string v1, "IllegalArgumentException : width = "
+    new-instance v1, Ljava/lang/StringBuilder;
 
-    invoke-direct {p1, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+    const-string v2, "IllegalArgumentException : width = "
 
-    invoke-virtual {p1, v8}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+    invoke-direct {v1, v2}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
-    move-result-object p1
+    invoke-virtual {v1, v8}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
-    invoke-virtual {p1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    move-result-object v1
 
-    move-result-object p1
+    invoke-virtual {v1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {p1, v9}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+    move-result-object v0
 
-    move-result-object p1
+    invoke-virtual {v0, v9}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
-    invoke-virtual {p1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    move-result-object v0
 
-    move-result-object p1
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    filled-new-array {p1}, [Ljava/lang/String;
+    move-result-object v0
 
-    move-result-object p1
+    aput-object v0, p1, v10
 
     invoke-static {p1}, Ljp/co/sony/mc/camera/util/CamLog;->e([Ljava/lang/String;)V
 

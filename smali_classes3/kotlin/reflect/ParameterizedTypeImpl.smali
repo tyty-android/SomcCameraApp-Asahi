@@ -324,7 +324,7 @@
 
     move-result-object p0
 
-    const-string v0, "StringBuilder().apply(builderAction).toString()"
+    const-string/jumbo v0, "toString(...)"
 
     invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
 

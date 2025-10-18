@@ -53,9 +53,9 @@
     .line 20
     new-instance v0, Ljp/co/sony/mc/camera/configuration/parameters/ComputationalMode;
 
-    const v1, 0x7f08010c
+    const v1, 0x7f080111
 
-    const v2, 0x7f1103bd
+    const v2, 0x7f1103f2
 
     const-string v3, "ON"
 
@@ -68,9 +68,9 @@
     .line 23
     new-instance v0, Ljp/co/sony/mc/camera/configuration/parameters/ComputationalMode;
 
-    const v1, 0x7f08010d
+    const v1, 0x7f080112
 
-    const v2, 0x7f1103be
+    const v2, 0x7f1103f3
 
     const-string v3, "OFF"
 

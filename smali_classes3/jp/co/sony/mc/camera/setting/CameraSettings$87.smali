@@ -21,7 +21,7 @@
 .method constructor <init>()V
     .locals 0
 
-    .line 1257
+    .line 1313
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -46,13 +46,13 @@
         }
     .end annotation
 
-    .line 1261
+    .line 1317
     check-cast p1, Ljp/co/sony/mc/camera/setting/CameraSettings;
 
-    .line 1262
-    check-cast p3, Ljp/co/sony/mc/camera/configuration/parameters/FocusFrameColor;
+    .line 1318
+    check-cast p3, Ljp/co/sony/mc/camera/configuration/parameters/VolumeDistortionCorrection;
 
-    invoke-static {p1, p3}, Ljp/co/sony/mc/camera/setting/CameraSettings;->-$$Nest$msetFocusFrameColor(Ljp/co/sony/mc/camera/setting/CameraSettings;Ljp/co/sony/mc/camera/configuration/parameters/FocusFrameColor;)Z
+    invoke-static {p1, p3}, Ljp/co/sony/mc/camera/setting/CameraSettings;->-$$Nest$msetVolumeDistortionCorrection(Ljp/co/sony/mc/camera/setting/CameraSettings;Ljp/co/sony/mc/camera/configuration/parameters/VolumeDistortionCorrection;)Z
 
     move-result p0
 

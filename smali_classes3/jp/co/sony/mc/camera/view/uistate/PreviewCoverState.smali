@@ -36,11 +36,11 @@
         "",
         "getPreviewVisible",
         "()Z",
-        "Black",
-        "FakeAdjusted",
-        "FakeInitial",
-        "FakeRequested",
         "Invisible",
+        "FakeRequested",
+        "FakeInitial",
+        "FakeAdjusted",
+        "Black",
         "Ljp/co/sony/mc/camera/view/uistate/PreviewCoverState$Black;",
         "Ljp/co/sony/mc/camera/view/uistate/PreviewCoverState$FakeAdjusted;",
         "Ljp/co/sony/mc/camera/view/uistate/PreviewCoverState$FakeInitial;",
@@ -50,8 +50,8 @@
     }
     k = 0x1
     mv = {
-        0x1,
-        0x9,
+        0x2,
+        0x0,
         0x0
     }
     xi = 0x30

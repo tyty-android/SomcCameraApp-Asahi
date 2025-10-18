@@ -1,6 +1,6 @@
 .class public final enum Landroidx/annotation/InspectableProperty$ValueType;
 .super Ljava/lang/Enum;
-.source "InspectableProperty.kt"
+.source "InspectableProperty.jvm.kt"
 
 
 # annotations
@@ -41,7 +41,7 @@
     k = 0x1
     mv = {
         0x1,
-        0x8,
+        0x7,
         0x0
     }
     xi = 0x30
@@ -94,7 +94,7 @@
 .method static constructor <clinit>()V
     .locals 3
 
-    .line 140
+    .line 131
     new-instance v0, Landroidx/annotation/InspectableProperty$ValueType;
 
     const-string v1, "NONE"
@@ -105,7 +105,7 @@
 
     sput-object v0, Landroidx/annotation/InspectableProperty$ValueType;->NONE:Landroidx/annotation/InspectableProperty$ValueType;
 
-    .line 145
+    .line 134
     new-instance v0, Landroidx/annotation/InspectableProperty$ValueType;
 
     const-string v1, "INFERRED"
@@ -116,7 +116,7 @@
 
     sput-object v0, Landroidx/annotation/InspectableProperty$ValueType;->INFERRED:Landroidx/annotation/InspectableProperty$ValueType;
 
-    .line 154
+    .line 143
     new-instance v0, Landroidx/annotation/InspectableProperty$ValueType;
 
     const-string v1, "INT_ENUM"
@@ -127,7 +127,7 @@
 
     sput-object v0, Landroidx/annotation/InspectableProperty$ValueType;->INT_ENUM:Landroidx/annotation/InspectableProperty$ValueType;
 
-    .line 163
+    .line 152
     new-instance v0, Landroidx/annotation/InspectableProperty$ValueType;
 
     const-string v1, "INT_FLAG"
@@ -138,7 +138,7 @@
 
     sput-object v0, Landroidx/annotation/InspectableProperty$ValueType;->INT_FLAG:Landroidx/annotation/InspectableProperty$ValueType;
 
-    .line 170
+    .line 159
     new-instance v0, Landroidx/annotation/InspectableProperty$ValueType;
 
     const-string v1, "COLOR"
@@ -149,7 +149,7 @@
 
     sput-object v0, Landroidx/annotation/InspectableProperty$ValueType;->COLOR:Landroidx/annotation/InspectableProperty$ValueType;
 
-    .line 177
+    .line 166
     new-instance v0, Landroidx/annotation/InspectableProperty$ValueType;
 
     const-string v1, "GRAVITY"
@@ -160,7 +160,7 @@
 
     sput-object v0, Landroidx/annotation/InspectableProperty$ValueType;->GRAVITY:Landroidx/annotation/InspectableProperty$ValueType;
 
-    .line 185
+    .line 173
     new-instance v0, Landroidx/annotation/InspectableProperty$ValueType;
 
     const-string v1, "RESOURCE_ID"
@@ -188,7 +188,7 @@
         }
     .end annotation
 
-    .line 136
+    .line 129
     invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
     return-void

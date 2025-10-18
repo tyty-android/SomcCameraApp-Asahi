@@ -25,7 +25,7 @@
 .method constructor <init>(Lcom/google/android/material/search/SearchBar;)V
     .locals 0
 
-    .line 218
+    .line 230
     iput-object p1, p0, Lcom/google/android/material/search/SearchBar$1;->this$0:Lcom/google/android/material/search/SearchBar;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -38,10 +38,10 @@
 .method public onViewAttachedToWindow(Landroid/view/View;)V
     .locals 0
 
-    .line 221
+    .line 233
     iget-object p1, p0, Lcom/google/android/material/search/SearchBar$1;->this$0:Lcom/google/android/material/search/SearchBar;
 
-    .line 222
+    .line 234
     invoke-static {p1}, Lcom/google/android/material/search/SearchBar;->access$000(Lcom/google/android/material/search/SearchBar;)Landroid/view/accessibility/AccessibilityManager;
 
     move-result-object p1
@@ -52,7 +52,7 @@
 
     move-result-object p0
 
-    .line 221
+    .line 233
     invoke-static {p1, p0}, Landroidx/core/view/accessibility/AccessibilityManagerCompat;->addTouchExplorationStateChangeListener(Landroid/view/accessibility/AccessibilityManager;Landroidx/core/view/accessibility/AccessibilityManagerCompat$TouchExplorationStateChangeListener;)Z
 
     return-void
@@ -61,10 +61,10 @@
 .method public onViewDetachedFromWindow(Landroid/view/View;)V
     .locals 0
 
-    .line 227
+    .line 239
     iget-object p1, p0, Lcom/google/android/material/search/SearchBar$1;->this$0:Lcom/google/android/material/search/SearchBar;
 
-    .line 228
+    .line 240
     invoke-static {p1}, Lcom/google/android/material/search/SearchBar;->access$000(Lcom/google/android/material/search/SearchBar;)Landroid/view/accessibility/AccessibilityManager;
 
     move-result-object p1
@@ -75,7 +75,7 @@
 
     move-result-object p0
 
-    .line 227
+    .line 239
     invoke-static {p1, p0}, Landroidx/core/view/accessibility/AccessibilityManagerCompat;->removeTouchExplorationStateChangeListener(Landroid/view/accessibility/AccessibilityManager;Landroidx/core/view/accessibility/AccessibilityManagerCompat$TouchExplorationStateChangeListener;)Z
 
     return-void

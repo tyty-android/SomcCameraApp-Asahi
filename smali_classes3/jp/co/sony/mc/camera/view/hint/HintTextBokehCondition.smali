@@ -21,17 +21,17 @@
 
     const/4 v0, -0x1
 
-    const v1, 0x7f110128
+    const v1, 0x7f11012b
 
-    const v2, 0x7f110129
+    const v2, 0x7f11012c
 
-    const v3, 0x7f11012b
+    const v3, 0x7f11012e
 
-    const v4, 0x7f11012a
+    const v4, 0x7f11012d
 
-    const v5, 0x7f11012c
+    const v5, 0x7f11012f
 
-    const v6, 0x7f11012d
+    const v6, 0x7f110130
 
     if-eqz p2, :cond_0
 

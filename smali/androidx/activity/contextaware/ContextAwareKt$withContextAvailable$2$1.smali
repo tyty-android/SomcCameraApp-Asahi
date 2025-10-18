@@ -27,7 +27,7 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/SourceDebugExtension;
-    value = "SMAP\nContextAware.kt\nKotlin\n*S Kotlin\n*F\n+ 1 ContextAware.kt\nandroidx/activity/contextaware/ContextAwareKt$withContextAvailable$2$1\n*L\n1#1,93:1\n*E\n"
+    value = "SMAP\nContextAware.kt\nKotlin\n*S Kotlin\n*F\n+ 1 ContextAware.kt\nandroidx/activity/contextaware/ContextAwareKt$withContextAvailable$2$1\n*L\n1#1,94:1\n*E\n"
 .end annotation
 
 .annotation runtime Lkotlin/Metadata;
@@ -54,6 +54,13 @@
 
 # instance fields
 .field final synthetic $listener:Landroidx/activity/contextaware/ContextAwareKt$withContextAvailable$2$listener$1;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Landroidx/activity/contextaware/ContextAwareKt$withContextAvailable$2$listener$1<",
+            "TR;>;"
+        }
+    .end annotation
+.end field
 
 .field final synthetic $this_withContextAvailable:Landroidx/activity/contextaware/ContextAware;
 
@@ -61,6 +68,14 @@
 # direct methods
 .method public constructor <init>(Landroidx/activity/contextaware/ContextAware;Landroidx/activity/contextaware/ContextAwareKt$withContextAvailable$2$listener$1;)V
     .locals 0
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Landroidx/activity/contextaware/ContextAware;",
+            "Landroidx/activity/contextaware/ContextAwareKt$withContextAvailable$2$listener$1<",
+            "TR;>;)V"
+        }
+    .end annotation
 
     iput-object p1, p0, Landroidx/activity/contextaware/ContextAwareKt$withContextAvailable$2$1;->$this_withContextAvailable:Landroidx/activity/contextaware/ContextAware;
 

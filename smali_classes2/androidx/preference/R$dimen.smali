@@ -14,19 +14,19 @@
 
 
 # static fields
-.field public static final preference_dropdown_padding_start:I = 0x7f070688
+.field public static final preference_dropdown_padding_start:I = 0x7f0706ec
 
-.field public static final preference_icon_minWidth:I = 0x7f070689
+.field public static final preference_icon_minWidth:I = 0x7f0706ed
 
-.field public static final preference_seekbar_padding_horizontal:I = 0x7f07068a
+.field public static final preference_seekbar_padding_horizontal:I = 0x7f0706ee
 
-.field public static final preference_seekbar_padding_vertical:I = 0x7f07068b
+.field public static final preference_seekbar_padding_vertical:I = 0x7f0706ef
 
-.field public static final preference_seekbar_value_minWidth:I = 0x7f07068c
+.field public static final preference_seekbar_value_minWidth:I = 0x7f0706f0
 
-.field public static final preferences_detail_width:I = 0x7f07068d
+.field public static final preferences_detail_width:I = 0x7f0706f1
 
-.field public static final preferences_header_width:I = 0x7f07068e
+.field public static final preferences_header_width:I = 0x7f0706f2
 
 
 # direct methods

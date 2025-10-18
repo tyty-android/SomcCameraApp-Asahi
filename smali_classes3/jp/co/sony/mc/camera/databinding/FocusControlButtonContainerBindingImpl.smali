@@ -26,7 +26,7 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/databinding/FocusControlButtonContainerBindingImpl;->sViewsWithIds:Landroid/util/SparseIntArray;
 
-    const v1, 0x7f0901f1
+    const v1, 0x7f0901ee
 
     const/4 v2, 0x1
 

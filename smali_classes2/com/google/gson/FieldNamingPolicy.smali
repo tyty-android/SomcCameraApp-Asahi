@@ -37,9 +37,9 @@
 
 # direct methods
 .method static constructor <clinit>()V
-    .locals 15
+    .locals 9
 
-    .line 37
+    .line 34
     new-instance v0, Lcom/google/gson/FieldNamingPolicy$1;
 
     const-string v1, "IDENTITY"
@@ -50,92 +50,78 @@
 
     sput-object v0, Lcom/google/gson/FieldNamingPolicy;->IDENTITY:Lcom/google/gson/FieldNamingPolicy;
 
-    .line 53
+    .line 52
     new-instance v1, Lcom/google/gson/FieldNamingPolicy$2;
 
-    const-string v3, "UPPER_CAMEL_CASE"
+    const-string v2, "UPPER_CAMEL_CASE"
 
-    const/4 v4, 0x1
+    const/4 v3, 0x1
 
-    invoke-direct {v1, v3, v4}, Lcom/google/gson/FieldNamingPolicy$2;-><init>(Ljava/lang/String;I)V
+    invoke-direct {v1, v2, v3}, Lcom/google/gson/FieldNamingPolicy$2;-><init>(Ljava/lang/String;I)V
 
     sput-object v1, Lcom/google/gson/FieldNamingPolicy;->UPPER_CAMEL_CASE:Lcom/google/gson/FieldNamingPolicy;
 
     .line 72
-    new-instance v3, Lcom/google/gson/FieldNamingPolicy$3;
+    new-instance v2, Lcom/google/gson/FieldNamingPolicy$3;
 
-    const-string v5, "UPPER_CAMEL_CASE_WITH_SPACES"
+    const-string v3, "UPPER_CAMEL_CASE_WITH_SPACES"
 
-    const/4 v6, 0x2
+    const/4 v4, 0x2
 
-    invoke-direct {v3, v5, v6}, Lcom/google/gson/FieldNamingPolicy$3;-><init>(Ljava/lang/String;I)V
+    invoke-direct {v2, v3, v4}, Lcom/google/gson/FieldNamingPolicy$3;-><init>(Ljava/lang/String;I)V
 
-    sput-object v3, Lcom/google/gson/FieldNamingPolicy;->UPPER_CAMEL_CASE_WITH_SPACES:Lcom/google/gson/FieldNamingPolicy;
+    sput-object v2, Lcom/google/gson/FieldNamingPolicy;->UPPER_CAMEL_CASE_WITH_SPACES:Lcom/google/gson/FieldNamingPolicy;
 
-    .line 92
-    new-instance v5, Lcom/google/gson/FieldNamingPolicy$4;
+    .line 94
+    new-instance v3, Lcom/google/gson/FieldNamingPolicy$4;
 
-    const-string v7, "UPPER_CASE_WITH_UNDERSCORES"
+    const-string v4, "UPPER_CASE_WITH_UNDERSCORES"
 
-    const/4 v8, 0x3
+    const/4 v5, 0x3
 
-    invoke-direct {v5, v7, v8}, Lcom/google/gson/FieldNamingPolicy$4;-><init>(Ljava/lang/String;I)V
+    invoke-direct {v3, v4, v5}, Lcom/google/gson/FieldNamingPolicy$4;-><init>(Ljava/lang/String;I)V
 
-    sput-object v5, Lcom/google/gson/FieldNamingPolicy;->UPPER_CASE_WITH_UNDERSCORES:Lcom/google/gson/FieldNamingPolicy;
+    sput-object v3, Lcom/google/gson/FieldNamingPolicy;->UPPER_CASE_WITH_UNDERSCORES:Lcom/google/gson/FieldNamingPolicy;
 
-    .line 110
-    new-instance v7, Lcom/google/gson/FieldNamingPolicy$5;
+    .line 114
+    new-instance v4, Lcom/google/gson/FieldNamingPolicy$5;
 
-    const-string v9, "LOWER_CASE_WITH_UNDERSCORES"
+    const-string v5, "LOWER_CASE_WITH_UNDERSCORES"
 
-    const/4 v10, 0x4
+    const/4 v6, 0x4
 
-    invoke-direct {v7, v9, v10}, Lcom/google/gson/FieldNamingPolicy$5;-><init>(Ljava/lang/String;I)V
+    invoke-direct {v4, v5, v6}, Lcom/google/gson/FieldNamingPolicy$5;-><init>(Ljava/lang/String;I)V
 
-    sput-object v7, Lcom/google/gson/FieldNamingPolicy;->LOWER_CASE_WITH_UNDERSCORES:Lcom/google/gson/FieldNamingPolicy;
+    sput-object v4, Lcom/google/gson/FieldNamingPolicy;->LOWER_CASE_WITH_UNDERSCORES:Lcom/google/gson/FieldNamingPolicy;
 
-    .line 134
-    new-instance v9, Lcom/google/gson/FieldNamingPolicy$6;
+    .line 141
+    new-instance v5, Lcom/google/gson/FieldNamingPolicy$6;
 
-    const-string v11, "LOWER_CASE_WITH_DASHES"
+    const-string v6, "LOWER_CASE_WITH_DASHES"
 
-    const/4 v12, 0x5
+    const/4 v7, 0x5
 
-    invoke-direct {v9, v11, v12}, Lcom/google/gson/FieldNamingPolicy$6;-><init>(Ljava/lang/String;I)V
+    invoke-direct {v5, v6, v7}, Lcom/google/gson/FieldNamingPolicy$6;-><init>(Ljava/lang/String;I)V
 
-    sput-object v9, Lcom/google/gson/FieldNamingPolicy;->LOWER_CASE_WITH_DASHES:Lcom/google/gson/FieldNamingPolicy;
+    sput-object v5, Lcom/google/gson/FieldNamingPolicy;->LOWER_CASE_WITH_DASHES:Lcom/google/gson/FieldNamingPolicy;
 
-    .line 158
-    new-instance v11, Lcom/google/gson/FieldNamingPolicy$7;
+    .line 168
+    new-instance v6, Lcom/google/gson/FieldNamingPolicy$7;
 
-    const-string v13, "LOWER_CASE_WITH_DOTS"
+    const-string v7, "LOWER_CASE_WITH_DOTS"
 
-    const/4 v14, 0x6
+    const/4 v8, 0x6
 
-    invoke-direct {v11, v13, v14}, Lcom/google/gson/FieldNamingPolicy$7;-><init>(Ljava/lang/String;I)V
+    invoke-direct {v6, v7, v8}, Lcom/google/gson/FieldNamingPolicy$7;-><init>(Ljava/lang/String;I)V
 
-    sput-object v11, Lcom/google/gson/FieldNamingPolicy;->LOWER_CASE_WITH_DOTS:Lcom/google/gson/FieldNamingPolicy;
-
-    const/4 v13, 0x7
+    sput-object v6, Lcom/google/gson/FieldNamingPolicy;->LOWER_CASE_WITH_DOTS:Lcom/google/gson/FieldNamingPolicy;
 
     .line 31
-    new-array v13, v13, [Lcom/google/gson/FieldNamingPolicy;
+    filled-new-array/range {v0 .. v6}, [Lcom/google/gson/FieldNamingPolicy;
 
-    aput-object v0, v13, v2
+    move-result-object v0
 
-    aput-object v1, v13, v4
-
-    aput-object v3, v13, v6
-
-    aput-object v5, v13, v8
-
-    aput-object v7, v13, v10
-
-    aput-object v9, v13, v12
-
-    aput-object v11, v13, v14
-
-    sput-object v13, Lcom/google/gson/FieldNamingPolicy;->$VALUES:[Lcom/google/gson/FieldNamingPolicy;
+    sput-object v0, Lcom/google/gson/FieldNamingPolicy;->$VALUES:[Lcom/google/gson/FieldNamingPolicy;
 
     return-void
 .end method
@@ -166,12 +152,12 @@
 .method static separateCamelCase(Ljava/lang/String;C)Ljava/lang/String;
     .locals 5
 
-    .line 169
+    .line 180
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
 
-    .line 170
+    .line 181
     invoke-virtual {p0}, Ljava/lang/String;->length()I
 
     move-result v1
@@ -181,12 +167,12 @@
     :goto_0
     if-ge v2, v1, :cond_1
 
-    .line 171
+    .line 182
     invoke-virtual {p0, v2}, Ljava/lang/String;->charAt(I)C
 
     move-result v3
 
-    .line 172
+    .line 183
     invoke-static {v3}, Ljava/lang/Character;->isUpperCase(C)Z
 
     move-result v4
@@ -199,10 +185,10 @@
 
     if-eqz v4, :cond_0
 
-    .line 173
+    .line 184
     invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
 
-    .line 175
+    .line 186
     :cond_0
     invoke-virtual {v0, v3}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
 
@@ -210,7 +196,7 @@
 
     goto :goto_0
 
-    .line 177
+    .line 188
     :cond_1
     invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
@@ -222,7 +208,7 @@
 .method static upperCaseFirstLetter(Ljava/lang/String;)Ljava/lang/String;
     .locals 5
 
-    .line 184
+    .line 193
     invoke-virtual {p0}, Ljava/lang/String;->length()I
 
     move-result v0
@@ -234,19 +220,19 @@
     :goto_0
     if-ge v2, v0, :cond_3
 
-    .line 186
+    .line 195
     invoke-virtual {p0, v2}, Ljava/lang/String;->charAt(I)C
 
     move-result v3
 
-    .line 187
+    .line 196
     invoke-static {v3}, Ljava/lang/Character;->isLetter(C)Z
 
     move-result v4
 
     if-eqz v4, :cond_2
 
-    .line 188
+    .line 197
     invoke-static {v3}, Ljava/lang/Character;->isUpperCase(C)Z
 
     move-result v0
@@ -255,7 +241,7 @@
 
     return-object p0
 
-    .line 192
+    .line 201
     :cond_0
     invoke-static {v3}, Ljava/lang/Character;->toUpperCase(C)C
 
@@ -265,7 +251,7 @@
 
     if-nez v2, :cond_1
 
-    .line 195
+    .line 204
     new-instance v1, Ljava/lang/StringBuilder;
 
     invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
@@ -288,7 +274,7 @@
 
     return-object p0
 
-    .line 197
+    .line 206
     :cond_1
     new-instance v4, Ljava/lang/StringBuilder;
 

@@ -80,7 +80,7 @@
 .method public bridge synthetic invoke(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
 
-    .line 188
+    .line 189
     check-cast p1, Ljava/lang/String;
 
     check-cast p2, Ljava/lang/String;
@@ -94,10 +94,6 @@
 
 .method public final invoke(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
     .locals 0
-
-    const-string p0, "<anonymous parameter 1>"
-
-    invoke-static {p2, p0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
     return-object p1
 .end method

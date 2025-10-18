@@ -29,7 +29,7 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/SourceDebugExtension;
-    value = "SMAP\nSlider.kt\nKotlin\n*S Kotlin\n*F\n+ 1 Slider.kt\nandroidx/compose/material/SliderKt$Slider$3\n+ 2 CompositionLocal.kt\nandroidx/compose/runtime/CompositionLocal\n+ 3 Effects.kt\nandroidx/compose/runtime/EffectsKt\n+ 4 Composables.kt\nandroidx/compose/runtime/ComposablesKt\n+ 5 Composer.kt\nandroidx/compose/runtime/ComposerKt\n+ 6 Effects.kt\nandroidx/compose/runtime/EffectsKt$rememberCoroutineScope$1\n*L\n1#1,1190:1\n76#2:1191\n76#2:1192\n486#3,4:1193\n490#3,2:1201\n494#3:1207\n25#4:1197\n25#4:1208\n25#4:1215\n67#4,3:1222\n66#4:1225\n36#4:1232\n1097#5,3:1198\n1100#5,3:1204\n1097#5,6:1209\n1097#5,6:1216\n1097#5,6:1226\n1097#5,6:1233\n486#6:1203\n*S KotlinDebug\n*F\n+ 1 Slider.kt\nandroidx/compose/material/SliderKt$Slider$3\n*L\n177#1:1191\n182#1:1192\n193#1:1193,4\n193#1:1201,2\n193#1:1207\n193#1:1197\n194#1:1208\n195#1:1215\n197#1:1222,3\n197#1:1225\n237#1:1232\n193#1:1198,3\n193#1:1204,3\n194#1:1209,6\n195#1:1216,6\n197#1:1226,6\n237#1:1233,6\n193#1:1203\n*E\n"
+    value = "SMAP\nSlider.kt\nKotlin\n*S Kotlin\n*F\n+ 1 Slider.kt\nandroidx/compose/material/SliderKt$Slider$3\n+ 2 CompositionLocal.kt\nandroidx/compose/runtime/CompositionLocal\n+ 3 Effects.kt\nandroidx/compose/runtime/EffectsKt\n+ 4 Composables.kt\nandroidx/compose/runtime/ComposablesKt\n+ 5 Composer.kt\nandroidx/compose/runtime/ComposerKt\n+ 6 Effects.kt\nandroidx/compose/runtime/EffectsKt$rememberCoroutineScope$1\n*L\n1#1,1195:1\n74#2:1196\n74#2:1197\n487#3,4:1198\n491#3,2:1206\n495#3:1212\n25#4:1202\n25#4:1213\n25#4:1220\n67#4,3:1227\n66#4:1230\n1116#5,3:1203\n1119#5,3:1209\n1116#5,6:1214\n1116#5,6:1221\n1116#5,6:1231\n1116#5,6:1237\n487#6:1208\n*S KotlinDebug\n*F\n+ 1 Slider.kt\nandroidx/compose/material/SliderKt$Slider$3\n*L\n180#1:1196\n185#1:1197\n196#1:1198,4\n196#1:1206,2\n196#1:1212\n196#1:1202\n197#1:1213\n198#1:1220\n200#1:1227,3\n200#1:1230\n196#1:1203,3\n196#1:1209,3\n197#1:1214,6\n198#1:1221,6\n200#1:1231,6\n240#1:1237,6\n196#1:1208\n*E\n"
 .end annotation
 
 .annotation runtime Lkotlin/Metadata;
@@ -54,8 +54,6 @@
 
 
 # instance fields
-.field final synthetic $$dirty:I
-
 .field final synthetic $colors:Landroidx/compose/material/SliderColors;
 
 .field final synthetic $enabled:Z
@@ -108,14 +106,14 @@
 
 
 # direct methods
-.method constructor <init>(Lkotlin/ranges/ClosedFloatingPointRange;IFLandroidx/compose/foundation/interaction/MutableInteractionSource;ZLjava/util/List;Landroidx/compose/material/SliderColors;Landroidx/compose/runtime/State;Lkotlin/jvm/functions/Function0;)V
+.method constructor <init>(Lkotlin/ranges/ClosedFloatingPointRange;FLandroidx/compose/foundation/interaction/MutableInteractionSource;ZLjava/util/List;Landroidx/compose/material/SliderColors;Landroidx/compose/runtime/State;Lkotlin/jvm/functions/Function0;)V
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
             "Lkotlin/ranges/ClosedFloatingPointRange<",
             "Ljava/lang/Float;",
-            ">;IF",
+            ">;F",
             "Landroidx/compose/foundation/interaction/MutableInteractionSource;",
             "Z",
             "Ljava/util/List<",
@@ -137,21 +135,19 @@
 
     iput-object p1, p0, Landroidx/compose/material/SliderKt$Slider$3;->$valueRange:Lkotlin/ranges/ClosedFloatingPointRange;
 
-    iput p2, p0, Landroidx/compose/material/SliderKt$Slider$3;->$$dirty:I
+    iput p2, p0, Landroidx/compose/material/SliderKt$Slider$3;->$value:F
 
-    iput p3, p0, Landroidx/compose/material/SliderKt$Slider$3;->$value:F
+    iput-object p3, p0, Landroidx/compose/material/SliderKt$Slider$3;->$interactionSource:Landroidx/compose/foundation/interaction/MutableInteractionSource;
 
-    iput-object p4, p0, Landroidx/compose/material/SliderKt$Slider$3;->$interactionSource:Landroidx/compose/foundation/interaction/MutableInteractionSource;
+    iput-boolean p4, p0, Landroidx/compose/material/SliderKt$Slider$3;->$enabled:Z
 
-    iput-boolean p5, p0, Landroidx/compose/material/SliderKt$Slider$3;->$enabled:Z
+    iput-object p5, p0, Landroidx/compose/material/SliderKt$Slider$3;->$tickFractions:Ljava/util/List;
 
-    iput-object p6, p0, Landroidx/compose/material/SliderKt$Slider$3;->$tickFractions:Ljava/util/List;
+    iput-object p6, p0, Landroidx/compose/material/SliderKt$Slider$3;->$colors:Landroidx/compose/material/SliderColors;
 
-    iput-object p7, p0, Landroidx/compose/material/SliderKt$Slider$3;->$colors:Landroidx/compose/material/SliderColors;
+    iput-object p7, p0, Landroidx/compose/material/SliderKt$Slider$3;->$onValueChangeState:Landroidx/compose/runtime/State;
 
-    iput-object p8, p0, Landroidx/compose/material/SliderKt$Slider$3;->$onValueChangeState:Landroidx/compose/runtime/State;
-
-    iput-object p9, p0, Landroidx/compose/material/SliderKt$Slider$3;->$onValueChangeFinished:Lkotlin/jvm/functions/Function0;
+    iput-object p8, p0, Landroidx/compose/material/SliderKt$Slider$3;->$onValueChangeFinished:Lkotlin/jvm/functions/Function0;
 
     const/4 p1, 0x3
 
@@ -163,7 +159,7 @@
 .method public static final synthetic access$invoke$scaleToOffset(Lkotlin/ranges/ClosedFloatingPointRange;Lkotlin/jvm/internal/Ref$FloatRef;Lkotlin/jvm/internal/Ref$FloatRef;F)F
     .locals 0
 
-    .line 176
+    .line 179
     invoke-static {p0, p1, p2, p3}, Landroidx/compose/material/SliderKt$Slider$3;->invoke$scaleToOffset(Lkotlin/ranges/ClosedFloatingPointRange;Lkotlin/jvm/internal/Ref$FloatRef;Lkotlin/jvm/internal/Ref$FloatRef;F)F
 
     move-result p0
@@ -174,7 +170,7 @@
 .method public static final synthetic access$invoke$scaleToUserValue(Lkotlin/jvm/internal/Ref$FloatRef;Lkotlin/jvm/internal/Ref$FloatRef;Lkotlin/ranges/ClosedFloatingPointRange;F)F
     .locals 0
 
-    .line 176
+    .line 179
     invoke-static {p0, p1, p2, p3}, Landroidx/compose/material/SliderKt$Slider$3;->invoke$scaleToUserValue(Lkotlin/jvm/internal/Ref$FloatRef;Lkotlin/jvm/internal/Ref$FloatRef;Lkotlin/ranges/ClosedFloatingPointRange;F)F
 
     move-result p0
@@ -196,7 +192,7 @@
         }
     .end annotation
 
-    .line 191
+    .line 194
     invoke-interface {p0}, Lkotlin/ranges/ClosedFloatingPointRange;->getStart()Ljava/lang/Comparable;
 
     move-result-object v0
@@ -241,7 +237,7 @@
         }
     .end annotation
 
-    .line 188
+    .line 191
     iget p0, p0, Lkotlin/jvm/internal/Ref$FloatRef;->element:F
 
     iget p1, p1, Lkotlin/jvm/internal/Ref$FloatRef;->element:F
@@ -278,7 +274,7 @@
 .method public bridge synthetic invoke(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
 
-    .line 176
+    .line 179
     check-cast p1, Landroidx/compose/foundation/layout/BoxWithConstraintsScope;
 
     check-cast p2, Landroidx/compose/runtime/Composer;
@@ -301,53 +297,49 @@
 
     move-object/from16 v0, p0
 
-    move-object/from16 v1, p1
-
     move-object/from16 v8, p2
 
-    move/from16 v2, p3
+    const-string v1, "C179@8337L7,*184@8498L7,195@8912L24,196@8961L54,197@9042L36,199@9109L392,208@9511L83,210@9627L623,246@11085L209:Slider.kt#jmzs0o"
 
-    const-string v3, "$this$BoxWithConstraints"
+    invoke-static {v8, v1}, Landroidx/compose/runtime/ComposerKt;->sourceInformation(Landroidx/compose/runtime/Composer;Ljava/lang/String;)V
 
-    invoke-static {v1, v3}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+    and-int/lit8 v1, p3, 0xe
 
-    const-string v3, "C176@8217L7,*181@8378L7,192@8792L24,193@8841L54,194@8922L36,196@8989L392,205@9391L83,207@9507L623,236@10624L55,243@10965L209:Slider.kt#jmzs0o"
+    if-nez v1, :cond_1
 
-    invoke-static {v8, v3}, Landroidx/compose/runtime/ComposerKt;->sourceInformation(Landroidx/compose/runtime/Composer;Ljava/lang/String;)V
-
-    and-int/lit8 v3, v2, 0xe
-
-    if-nez v3, :cond_1
+    move-object/from16 v1, p1
 
     invoke-interface {v8, v1}, Landroidx/compose/runtime/Composer;->changed(Ljava/lang/Object;)Z
 
-    move-result v3
+    move-result v2
 
-    if-eqz v3, :cond_0
+    if-eqz v2, :cond_0
 
-    const/4 v3, 0x4
+    const/4 v2, 0x4
 
     goto :goto_0
 
     :cond_0
-    const/4 v3, 0x2
+    const/4 v2, 0x2
 
     :goto_0
-    or-int/2addr v3, v2
+    or-int v2, p3, v2
 
     goto :goto_1
 
     :cond_1
-    move v3, v2
+    move-object/from16 v1, p1
+
+    move/from16 v2, p3
 
     :goto_1
-    and-int/lit8 v3, v3, 0x5b
+    and-int/lit8 v3, v2, 0x5b
 
     const/16 v4, 0x12
 
     if-ne v3, v4, :cond_3
 
-    .line 177
+    .line 180
     invoke-interface/range {p2 .. p2}, Landroidx/compose/runtime/Composer;->getSkipping()Z
 
     move-result v3
@@ -356,13 +348,13 @@
 
     goto :goto_2
 
-    .line 252
+    .line 255
     :cond_2
     invoke-interface/range {p2 .. p2}, Landroidx/compose/runtime/Composer;->skipToGroupEnd()V
 
     goto/16 :goto_4
 
-    .line 177
+    .line 180
     :cond_3
     :goto_2
     invoke-static {}, Landroidx/compose/runtime/ComposerKt;->isTraceInProgress()Z
@@ -373,7 +365,7 @@
 
     const/4 v3, -0x1
 
-    const-string v4, "androidx.compose.material.Slider.<anonymous> (Slider.kt:175)"
+    const-string v4, "androidx.compose.material.Slider.<anonymous> (Slider.kt:179)"
 
     const v5, 0x7c485b8e
 
@@ -388,7 +380,7 @@
 
     const v3, 0x789c5f52
 
-    .line 1191
+    .line 1196
     const-string v4, "CC:CompositionLocal.kt#9igjgp"
 
     invoke-static {v8, v3, v4}, Landroidx/compose/runtime/ComposerKt;->sourceInformationMarkerStart(Landroidx/compose/runtime/Composer;ILjava/lang/String;)V
@@ -399,7 +391,7 @@
 
     invoke-static/range {p2 .. p2}, Landroidx/compose/runtime/ComposerKt;->sourceInformationMarkerEnd(Landroidx/compose/runtime/Composer;)V
 
-    .line 177
+    .line 180
     sget-object v5, Landroidx/compose/ui/unit/LayoutDirection;->Rtl:Landroidx/compose/ui/unit/LayoutDirection;
 
     const/4 v9, 0x0
@@ -415,7 +407,7 @@
     :cond_5
     move/from16 v19, v9
 
-    .line 178
+    .line 181
     :goto_3
     invoke-interface/range {p1 .. p1}, Landroidx/compose/foundation/layout/BoxWithConstraintsScope;->getConstraints-msEJaDk()J
 
@@ -427,24 +419,24 @@
 
     int-to-float v13, v1
 
-    .line 179
+    .line 182
     new-instance v15, Lkotlin/jvm/internal/Ref$FloatRef;
 
     invoke-direct {v15}, Lkotlin/jvm/internal/Ref$FloatRef;-><init>()V
 
-    .line 180
+    .line 183
     new-instance v14, Lkotlin/jvm/internal/Ref$FloatRef;
 
     invoke-direct {v14}, Lkotlin/jvm/internal/Ref$FloatRef;-><init>()V
 
-    .line 182
+    .line 185
     invoke-static {}, Landroidx/compose/ui/platform/CompositionLocalsKt;->getLocalDensity()Landroidx/compose/runtime/ProvidableCompositionLocal;
 
     move-result-object v1
 
     check-cast v1, Landroidx/compose/runtime/CompositionLocal;
 
-    .line 1192
+    .line 1197
     invoke-static {v8, v3, v4}, Landroidx/compose/runtime/ComposerKt;->sourceInformationMarkerStart(Landroidx/compose/runtime/Composer;ILjava/lang/String;)V
 
     invoke-interface {v8, v1}, Landroidx/compose/runtime/Composer;->consume(Landroidx/compose/runtime/CompositionLocal;)Ljava/lang/Object;
@@ -453,10 +445,10 @@
 
     invoke-static/range {p2 .. p2}, Landroidx/compose/runtime/ComposerKt;->sourceInformationMarkerEnd(Landroidx/compose/runtime/Composer;)V
 
-    .line 182
+    .line 185
     check-cast v1, Landroidx/compose/ui/unit/Density;
 
-    .line 183
+    .line 186
     invoke-static {}, Landroidx/compose/material/SliderKt;->getThumbRadius()F
 
     move-result v2
@@ -475,7 +467,7 @@
 
     iput v2, v15, Lkotlin/jvm/internal/Ref$FloatRef;->element:F
 
-    .line 184
+    .line 187
     invoke-static {}, Landroidx/compose/material/SliderKt;->getThumbRadius()F
 
     move-result v2
@@ -494,28 +486,28 @@
 
     const v1, 0x2e20b340
 
-    .line 193
+    .line 196
     invoke-interface {v8, v1}, Landroidx/compose/runtime/Composer;->startReplaceableGroup(I)V
 
-    const-string v1, "CC(rememberCoroutineScope)488@20446L144:Effects.kt#9igjgp"
+    const-string v1, "CC(rememberCoroutineScope)489@20472L144:Effects.kt#9igjgp"
 
     invoke-static {v8, v1}, Landroidx/compose/runtime/ComposerKt;->sourceInformation(Landroidx/compose/runtime/Composer;Ljava/lang/String;)V
 
     const v1, -0x1d58f75c
 
-    .line 1196
+    .line 1201
     invoke-interface {v8, v1}, Landroidx/compose/runtime/Composer;->startReplaceableGroup(I)V
 
     const-string v2, "CC(remember):Composables.kt#9igjgp"
 
     invoke-static {v8, v2}, Landroidx/compose/runtime/ComposerKt;->sourceInformation(Landroidx/compose/runtime/Composer;Ljava/lang/String;)V
 
-    .line 1198
+    .line 1203
     invoke-interface/range {p2 .. p2}, Landroidx/compose/runtime/Composer;->rememberedValue()Ljava/lang/Object;
 
     move-result-object v4
 
-    .line 1199
+    .line 1204
     sget-object v5, Landroidx/compose/runtime/Composer;->Companion:Landroidx/compose/runtime/Composer$Companion;
 
     invoke-virtual {v5}, Landroidx/compose/runtime/Composer$Companion;->getEmpty()Ljava/lang/Object;
@@ -524,41 +516,41 @@
 
     if-ne v4, v5, :cond_6
 
-    .line 1203
+    .line 1208
     sget-object v4, Lkotlin/coroutines/EmptyCoroutineContext;->INSTANCE:Lkotlin/coroutines/EmptyCoroutineContext;
 
-    .line 1202
+    .line 1207
     check-cast v4, Lkotlin/coroutines/CoroutineContext;
 
     invoke-static {v4, v8}, Landroidx/compose/runtime/EffectsKt;->createCompositionCoroutineScope(Lkotlin/coroutines/CoroutineContext;Landroidx/compose/runtime/Composer;)Lkotlinx/coroutines/CoroutineScope;
 
     move-result-object v4
 
-    .line 1201
+    .line 1206
     new-instance v5, Landroidx/compose/runtime/CompositionScopedCoroutineScopeCanceller;
 
     invoke-direct {v5, v4}, Landroidx/compose/runtime/CompositionScopedCoroutineScopeCanceller;-><init>(Lkotlinx/coroutines/CoroutineScope;)V
 
-    .line 1204
+    .line 1209
     invoke-interface {v8, v5}, Landroidx/compose/runtime/Composer;->updateRememberedValue(Ljava/lang/Object;)V
 
     move-object v4, v5
 
-    .line 1197
+    .line 1202
     :cond_6
     invoke-interface/range {p2 .. p2}, Landroidx/compose/runtime/Composer;->endReplaceableGroup()V
 
-    .line 1196
+    .line 1201
     check-cast v4, Landroidx/compose/runtime/CompositionScopedCoroutineScopeCanceller;
 
-    .line 1207
+    .line 1212
     invoke-virtual {v4}, Landroidx/compose/runtime/CompositionScopedCoroutineScopeCanceller;->getCoroutineScope()Lkotlinx/coroutines/CoroutineScope;
 
     move-result-object v10
 
     invoke-interface/range {p2 .. p2}, Landroidx/compose/runtime/Composer;->endReplaceableGroup()V
 
-    .line 194
+    .line 197
     iget v4, v0, Landroidx/compose/material/SliderKt$Slider$3;->$value:F
 
     iget-object v5, v0, Landroidx/compose/material/SliderKt$Slider$3;->$valueRange:Lkotlin/ranges/ClosedFloatingPointRange;
@@ -567,12 +559,12 @@
 
     invoke-static {v8, v2}, Landroidx/compose/runtime/ComposerKt;->sourceInformation(Landroidx/compose/runtime/Composer;Ljava/lang/String;)V
 
-    .line 1209
+    .line 1214
     invoke-interface/range {p2 .. p2}, Landroidx/compose/runtime/Composer;->rememberedValue()Ljava/lang/Object;
 
     move-result-object v6
 
-    .line 1210
+    .line 1215
     sget-object v7, Landroidx/compose/runtime/Composer;->Companion:Landroidx/compose/runtime/Composer$Companion;
 
     invoke-virtual {v7}, Landroidx/compose/runtime/Composer$Companion;->getEmpty()Ljava/lang/Object;
@@ -581,7 +573,7 @@
 
     if-ne v6, v7, :cond_7
 
-    .line 194
+    .line 197
     invoke-static {v5, v14, v15, v4}, Landroidx/compose/material/SliderKt$Slider$3;->access$invoke$scaleToOffset(Lkotlin/ranges/ClosedFloatingPointRange;Lkotlin/jvm/internal/Ref$FloatRef;Lkotlin/jvm/internal/Ref$FloatRef;F)F
 
     move-result v4
@@ -590,29 +582,29 @@
 
     move-result-object v6
 
-    .line 1212
+    .line 1217
     invoke-interface {v8, v6}, Landroidx/compose/runtime/Composer;->updateRememberedValue(Ljava/lang/Object;)V
 
-    .line 1208
+    .line 1213
     :cond_7
     invoke-interface/range {p2 .. p2}, Landroidx/compose/runtime/Composer;->endReplaceableGroup()V
 
-    .line 194
+    .line 197
     move-object v11, v6
 
     check-cast v11, Landroidx/compose/runtime/MutableFloatState;
 
-    .line 195
+    .line 198
     invoke-interface {v8, v1}, Landroidx/compose/runtime/Composer;->startReplaceableGroup(I)V
 
     invoke-static {v8, v2}, Landroidx/compose/runtime/ComposerKt;->sourceInformation(Landroidx/compose/runtime/Composer;Ljava/lang/String;)V
 
-    .line 1216
+    .line 1221
     invoke-interface/range {p2 .. p2}, Landroidx/compose/runtime/Composer;->rememberedValue()Ljava/lang/Object;
 
     move-result-object v1
 
-    .line 1217
+    .line 1222
     sget-object v2, Landroidx/compose/runtime/Composer;->Companion:Landroidx/compose/runtime/Composer$Companion;
 
     invoke-virtual {v2}, Landroidx/compose/runtime/Composer$Companion;->getEmpty()Ljava/lang/Object;
@@ -621,24 +613,24 @@
 
     if-ne v1, v2, :cond_8
 
-    .line 195
+    .line 198
     invoke-static {v3}, Landroidx/compose/runtime/PrimitiveSnapshotStateKt;->mutableFloatStateOf(F)Landroidx/compose/runtime/MutableFloatState;
 
     move-result-object v1
 
-    .line 1219
+    .line 1224
     invoke-interface {v8, v1}, Landroidx/compose/runtime/Composer;->updateRememberedValue(Ljava/lang/Object;)V
 
-    .line 1215
+    .line 1220
     :cond_8
     invoke-interface/range {p2 .. p2}, Landroidx/compose/runtime/Composer;->endReplaceableGroup()V
 
-    .line 195
+    .line 198
     move-object v12, v1
 
     check-cast v12, Landroidx/compose/runtime/MutableFloatState;
 
-    .line 197
+    .line 200
     iget v1, v14, Lkotlin/jvm/internal/Ref$FloatRef;->element:F
 
     invoke-static {v1}, Ljava/lang/Float;->valueOf(F)Ljava/lang/Float;
@@ -663,33 +655,33 @@
 
     invoke-static {v8, v5}, Landroidx/compose/runtime/ComposerKt;->sourceInformation(Landroidx/compose/runtime/Composer;Ljava/lang/String;)V
 
-    .line 1222
+    .line 1227
     invoke-interface {v8, v1}, Landroidx/compose/runtime/Composer;->changed(Ljava/lang/Object;)Z
 
     move-result v1
 
-    .line 1223
+    .line 1228
     invoke-interface {v8, v2}, Landroidx/compose/runtime/Composer;->changed(Ljava/lang/Object;)Z
 
     move-result v2
 
     or-int/2addr v1, v2
 
-    .line 1224
+    .line 1229
     invoke-interface {v8, v3}, Landroidx/compose/runtime/Composer;->changed(Ljava/lang/Object;)Z
 
     move-result v2
 
     or-int/2addr v1, v2
 
-    .line 1226
+    .line 1231
     invoke-interface/range {p2 .. p2}, Landroidx/compose/runtime/Composer;->rememberedValue()Ljava/lang/Object;
 
     move-result-object v2
 
     if-nez v1, :cond_9
 
-    .line 1227
+    .line 1232
     sget-object v1, Landroidx/compose/runtime/Composer;->Companion:Landroidx/compose/runtime/Composer$Companion;
 
     invoke-virtual {v1}, Landroidx/compose/runtime/Composer$Companion;->getEmpty()Ljava/lang/Object;
@@ -698,7 +690,7 @@
 
     if-ne v2, v1, :cond_a
 
-    .line 198
+    .line 201
     :cond_9
     new-instance v2, Landroidx/compose/material/SliderDraggableState;
 
@@ -724,19 +716,19 @@
 
     invoke-direct {v2, v1}, Landroidx/compose/material/SliderDraggableState;-><init>(Lkotlin/jvm/functions/Function1;)V
 
-    .line 1229
+    .line 1234
     invoke-interface {v8, v2}, Landroidx/compose/runtime/Composer;->updateRememberedValue(Ljava/lang/Object;)V
 
-    .line 1225
+    .line 1230
     :cond_a
     invoke-interface/range {p2 .. p2}, Landroidx/compose/runtime/Composer;->endReplaceableGroup()V
 
-    .line 197
+    .line 200
     move-object/from16 v28, v2
 
     check-cast v28, Landroidx/compose/material/SliderDraggableState;
 
-    .line 206
+    .line 209
     new-instance v1, Landroidx/compose/material/SliderKt$Slider$3$2;
 
     iget-object v2, v0, Landroidx/compose/material/SliderKt$Slider$3;->$valueRange:Lkotlin/ranges/ClosedFloatingPointRange;
@@ -761,27 +753,13 @@
 
     iget v5, v0, Landroidx/compose/material/SliderKt$Slider$3;->$value:F
 
-    iget v6, v0, Landroidx/compose/material/SliderKt$Slider$3;->$$dirty:I
-
-    shr-int/lit8 v7, v6, 0x9
-
-    and-int/lit8 v7, v7, 0x70
-
-    or-int/lit16 v7, v7, 0xc00
-
-    shl-int/lit8 v6, v6, 0xc
-
-    const v16, 0xe000
-
-    and-int v6, v6, v16
-
-    or-int/2addr v7, v6
+    const/16 v7, 0xc00
 
     move-object/from16 v6, p2
 
     invoke-static/range {v1 .. v7}, Landroidx/compose/material/SliderKt;->access$CorrectValueSideEffect(Lkotlin/jvm/functions/Function1;Lkotlin/ranges/ClosedFloatingPointRange;Lkotlin/ranges/ClosedFloatingPointRange;Landroidx/compose/runtime/MutableState;FLandroidx/compose/runtime/Composer;I)V
 
-    .line 208
+    .line 211
     new-instance v1, Landroidx/compose/material/SliderKt$Slider$3$gestureEndAction$1;
 
     iget-object v2, v0, Landroidx/compose/material/SliderKt$Slider$3;->$tickFractions:Ljava/util/List;
@@ -810,32 +788,32 @@
 
     move-result-object v1
 
-    .line 221
+    .line 224
     sget-object v2, Landroidx/compose/ui/Modifier;->Companion:Landroidx/compose/ui/Modifier$Companion;
 
     move-object v10, v2
 
     check-cast v10, Landroidx/compose/ui/Modifier;
 
-    .line 222
+    .line 225
     move-object/from16 v2, v28
 
     check-cast v2, Landroidx/compose/foundation/gestures/DraggableState;
 
-    .line 223
+    .line 226
     iget-object v3, v0, Landroidx/compose/material/SliderKt$Slider$3;->$interactionSource:Landroidx/compose/foundation/interaction/MutableInteractionSource;
 
-    .line 226
+    .line 229
     move-object v4, v11
 
     check-cast v4, Landroidx/compose/runtime/State;
 
-    .line 228
+    .line 231
     move-object/from16 v17, v12
 
     check-cast v17, Landroidx/compose/runtime/MutableState;
 
-    .line 229
+    .line 232
     iget-boolean v5, v0, Landroidx/compose/material/SliderKt$Slider$3;->$enabled:Z
 
     move-object v11, v2
@@ -854,55 +832,50 @@
 
     move/from16 v18, v5
 
-    .line 221
+    .line 224
     invoke-static/range {v10 .. v18}, Landroidx/compose/material/SliderKt;->access$sliderTapModifier(Landroidx/compose/ui/Modifier;Landroidx/compose/foundation/gestures/DraggableState;Landroidx/compose/foundation/interaction/MutableInteractionSource;FZLandroidx/compose/runtime/State;Landroidx/compose/runtime/State;Landroidx/compose/runtime/MutableState;Z)Landroidx/compose/ui/Modifier;
 
     move-result-object v4
 
-    .line 232
+    .line 235
     sget-object v5, Landroidx/compose/ui/Modifier;->Companion:Landroidx/compose/ui/Modifier$Companion;
 
-    .line 233
+    .line 236
     sget-object v12, Landroidx/compose/foundation/gestures/Orientation;->Horizontal:Landroidx/compose/foundation/gestures/Orientation;
 
-    .line 238
+    .line 241
     invoke-virtual/range {v28 .. v28}, Landroidx/compose/material/SliderDraggableState;->isDragging()Z
 
     move-result v15
 
-    .line 232
+    .line 235
     move-object v10, v5
 
     check-cast v10, Landroidx/compose/ui/Modifier;
 
-    .line 235
+    .line 238
     iget-boolean v13, v0, Landroidx/compose/material/SliderKt$Slider$3;->$enabled:Z
 
-    .line 236
+    .line 239
     iget-object v14, v0, Landroidx/compose/material/SliderKt$Slider$3;->$interactionSource:Landroidx/compose/foundation/interaction/MutableInteractionSource;
 
-    const v5, 0x44faf204
+    const v5, 0x10797e9
 
-    .line 237
+    .line 235
     invoke-interface {v8, v5}, Landroidx/compose/runtime/Composer;->startReplaceableGroup(I)V
 
-    const-string v5, "CC(remember)P(1):Composables.kt#9igjgp"
-
-    invoke-static {v8, v5}, Landroidx/compose/runtime/ComposerKt;->sourceInformation(Landroidx/compose/runtime/Composer;Ljava/lang/String;)V
-
-    .line 1232
     invoke-interface {v8, v1}, Landroidx/compose/runtime/Composer;->changed(Ljava/lang/Object;)Z
 
     move-result v5
 
-    .line 1233
+    .line 1237
     invoke-interface/range {p2 .. p2}, Landroidx/compose/runtime/Composer;->rememberedValue()Ljava/lang/Object;
 
     move-result-object v7
 
     if-nez v5, :cond_b
 
-    .line 1234
+    .line 1238
     sget-object v5, Landroidx/compose/runtime/Composer;->Companion:Landroidx/compose/runtime/Composer$Companion;
 
     invoke-virtual {v5}, Landroidx/compose/runtime/Composer$Companion;->getEmpty()Ljava/lang/Object;
@@ -911,7 +884,7 @@
 
     if-ne v7, v5, :cond_c
 
-    .line 237
+    .line 240
     :cond_b
     new-instance v5, Landroidx/compose/material/SliderKt$Slider$3$drag$1$1;
 
@@ -923,16 +896,16 @@
 
     check-cast v7, Lkotlin/jvm/functions/Function3;
 
-    .line 1236
+    .line 1240
     invoke-interface {v8, v7}, Landroidx/compose/runtime/Composer;->updateRememberedValue(Ljava/lang/Object;)V
 
-    .line 1232
+    .line 240
     :cond_c
-    invoke-interface/range {p2 .. p2}, Landroidx/compose/runtime/Composer;->endReplaceableGroup()V
-
     move-object/from16 v17, v7
 
     check-cast v17, Lkotlin/jvm/functions/Function3;
+
+    invoke-interface/range {p2 .. p2}, Landroidx/compose/runtime/Composer;->endReplaceableGroup()V
 
     const/16 v1, 0x20
 
@@ -946,12 +919,12 @@
 
     move/from16 v19, v1
 
-    .line 232
+    .line 235
     invoke-static/range {v10 .. v20}, Landroidx/compose/foundation/gestures/DraggableKt;->draggable$default(Landroidx/compose/ui/Modifier;Landroidx/compose/foundation/gestures/DraggableState;Landroidx/compose/foundation/gestures/Orientation;ZLandroidx/compose/foundation/interaction/MutableInteractionSource;ZLkotlin/jvm/functions/Function3;Lkotlin/jvm/functions/Function3;ZILjava/lang/Object;)Landroidx/compose/ui/Modifier;
 
     move-result-object v1
 
-    .line 242
+    .line 245
     iget v2, v0, Landroidx/compose/material/SliderKt$Slider$3;->$value:F
 
     iget-object v5, v0, Landroidx/compose/material/SliderKt$Slider$3;->$valueRange:Lkotlin/ranges/ClosedFloatingPointRange;
@@ -982,7 +955,7 @@
 
     move-result v2
 
-    .line 243
+    .line 246
     iget-object v5, v0, Landroidx/compose/material/SliderKt$Slider$3;->$valueRange:Lkotlin/ranges/ClosedFloatingPointRange;
 
     invoke-interface {v5}, Lkotlin/ranges/ClosedFloatingPointRange;->getStart()Ljava/lang/Comparable;
@@ -1011,51 +984,31 @@
 
     move-result v2
 
-    .line 245
+    .line 248
     iget-boolean v5, v0, Landroidx/compose/material/SliderKt$Slider$3;->$enabled:Z
 
-    .line 247
+    .line 250
     iget-object v7, v0, Landroidx/compose/material/SliderKt$Slider$3;->$tickFractions:Ljava/util/List;
 
-    .line 248
+    .line 251
     iget-object v9, v0, Landroidx/compose/material/SliderKt$Slider$3;->$colors:Landroidx/compose/material/SliderColors;
 
-    .line 249
+    .line 252
     iget v6, v6, Lkotlin/jvm/internal/Ref$FloatRef;->element:F
 
     iget v3, v3, Lkotlin/jvm/internal/Ref$FloatRef;->element:F
 
     sub-float/2addr v6, v3
 
-    .line 250
+    .line 253
     iget-object v10, v0, Landroidx/compose/material/SliderKt$Slider$3;->$interactionSource:Landroidx/compose/foundation/interaction/MutableInteractionSource;
 
-    .line 251
+    .line 254
     invoke-interface {v4, v1}, Landroidx/compose/ui/Modifier;->then(Landroidx/compose/ui/Modifier;)Landroidx/compose/ui/Modifier;
 
     move-result-object v11
 
-    iget v0, v0, Landroidx/compose/material/SliderKt$Slider$3;->$$dirty:I
-
-    shr-int/lit8 v1, v0, 0x9
-
-    and-int/lit8 v1, v1, 0xe
-
-    or-int/lit16 v1, v1, 0x200
-
-    shr-int/lit8 v3, v0, 0xf
-
-    and-int/lit16 v3, v3, 0x1c00
-
-    or-int/2addr v1, v3
-
-    shr-int/lit8 v0, v0, 0x6
-
-    const/high16 v3, 0x70000
-
-    and-int/2addr v0, v3
-
-    or-int v12, v1, v0
+    const/16 v12, 0x200
 
     move v0, v5
 
@@ -1075,7 +1028,7 @@
 
     move v8, v12
 
-    .line 244
+    .line 247
     invoke-static/range {v0 .. v8}, Landroidx/compose/material/SliderKt;->access$SliderImpl(ZFLjava/util/List;Landroidx/compose/material/SliderColors;FLandroidx/compose/foundation/interaction/MutableInteractionSource;Landroidx/compose/ui/Modifier;Landroidx/compose/runtime/Composer;I)V
 
     invoke-static {}, Landroidx/compose/runtime/ComposerKt;->isTraceInProgress()Z

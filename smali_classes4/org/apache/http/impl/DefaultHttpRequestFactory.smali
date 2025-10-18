@@ -29,49 +29,71 @@
 
     sput-object v0, Lorg/apache/http/impl/DefaultHttpRequestFactory;->INSTANCE:Lorg/apache/http/impl/DefaultHttpRequestFactory;
 
+    const/4 v0, 0x1
+
     .line 50
-    const-string v0, "GET"
+    new-array v1, v0, [Ljava/lang/String;
 
-    filled-new-array {v0}, [Ljava/lang/String;
+    const-string v2, "GET"
 
-    move-result-object v0
+    const/4 v3, 0x0
 
-    sput-object v0, Lorg/apache/http/impl/DefaultHttpRequestFactory;->RFC2616_COMMON_METHODS:[Ljava/lang/String;
+    aput-object v2, v1, v3
+
+    sput-object v1, Lorg/apache/http/impl/DefaultHttpRequestFactory;->RFC2616_COMMON_METHODS:[Ljava/lang/String;
+
+    const/4 v1, 0x2
 
     .line 54
-    const-string v0, "POST"
+    new-array v2, v1, [Ljava/lang/String;
 
-    const-string v1, "PUT"
+    const-string v4, "POST"
 
-    filled-new-array {v0, v1}, [Ljava/lang/String;
+    aput-object v4, v2, v3
 
-    move-result-object v0
+    const-string v4, "PUT"
 
-    sput-object v0, Lorg/apache/http/impl/DefaultHttpRequestFactory;->RFC2616_ENTITY_ENC_METHODS:[Ljava/lang/String;
+    aput-object v4, v2, v0
+
+    sput-object v2, Lorg/apache/http/impl/DefaultHttpRequestFactory;->RFC2616_ENTITY_ENC_METHODS:[Ljava/lang/String;
+
+    const/4 v2, 0x5
 
     .line 59
-    const-string v0, "TRACE"
+    new-array v2, v2, [Ljava/lang/String;
 
-    const-string v1, "CONNECT"
+    const-string v4, "HEAD"
 
-    const-string v2, "HEAD"
+    aput-object v4, v2, v3
 
-    const-string v3, "OPTIONS"
+    const-string v4, "OPTIONS"
+
+    aput-object v4, v2, v0
 
     const-string v4, "DELETE"
 
-    filled-new-array {v2, v3, v4, v0, v1}, [Ljava/lang/String;
+    aput-object v4, v2, v1
 
-    move-result-object v0
+    const/4 v1, 0x3
 
-    sput-object v0, Lorg/apache/http/impl/DefaultHttpRequestFactory;->RFC2616_SPECIAL_METHODS:[Ljava/lang/String;
+    const-string v4, "TRACE"
+
+    aput-object v4, v2, v1
+
+    const/4 v1, 0x4
+
+    const-string v4, "CONNECT"
+
+    aput-object v4, v2, v1
+
+    sput-object v2, Lorg/apache/http/impl/DefaultHttpRequestFactory;->RFC2616_SPECIAL_METHODS:[Ljava/lang/String;
 
     .line 67
-    const-string v0, "PATCH"
+    new-array v0, v0, [Ljava/lang/String;
 
-    filled-new-array {v0}, [Ljava/lang/String;
+    const-string v1, "PATCH"
 
-    move-result-object v0
+    aput-object v1, v0, v3
 
     sput-object v0, Lorg/apache/http/impl/DefaultHttpRequestFactory;->RFC5789_ENTITY_ENC_METHODS:[Ljava/lang/String;
 

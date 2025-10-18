@@ -22,7 +22,7 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/SourceDebugExtension;
-    value = "SMAP\nDelegates.kt\nKotlin\n*S Kotlin\n*F\n+ 1 Delegates.kt\nkotlin/properties/Delegates$observable$1\n+ 2 RotatableDialogFragment.kt\njp/co/sony/mc/camera/view/setting/fragment/RotatableDialogFragment\n*L\n1#1,73:1\n28#2,5:74\n*E\n"
+    value = "SMAP\nDelegates.kt\nKotlin\n*S Kotlin\n*F\n+ 1 Delegates.kt\nkotlin/properties/Delegates$observable$1\n+ 2 RotatableDialogFragment.kt\njp/co/sony/mc/camera/view/setting/fragment/RotatableDialogFragment\n*L\n1#1,34:1\n28#2,5:35\n*E\n"
 .end annotation
 
 .annotation runtime Lkotlin/Metadata;
@@ -43,8 +43,8 @@
     }
     k = 0x1
     mv = {
-        0x1,
-        0x9,
+        0x2,
+        0x0,
         0x0
     }
     xi = 0x30
@@ -97,7 +97,7 @@
 
     invoke-virtual {p2}, Ljava/lang/Number;->intValue()I
 
-    .line 74
+    .line 35
     iget-object p2, p0, Ljp/co/sony/mc/camera/view/setting/fragment/RotatableDialogFragment$special$$inlined$observable$1;->this$0:Ljp/co/sony/mc/camera/view/setting/fragment/RotatableDialogFragment;
 
     invoke-virtual {p2}, Ljp/co/sony/mc/camera/view/setting/fragment/RotatableDialogFragment;->getDialog()Landroid/app/Dialog;
@@ -112,12 +112,12 @@
 
     if-eqz p2, :cond_0
 
-    .line 75
+    .line 36
     iget-object p2, p0, Ljp/co/sony/mc/camera/view/setting/fragment/RotatableDialogFragment$special$$inlined$observable$1;->this$0:Ljp/co/sony/mc/camera/view/setting/fragment/RotatableDialogFragment;
 
     invoke-static {p2, p1}, Ljp/co/sony/mc/camera/view/setting/fragment/RotatableDialogFragment;->access$setWindowAnimations(Ljp/co/sony/mc/camera/view/setting/fragment/RotatableDialogFragment;I)V
 
-    .line 76
+    .line 37
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/setting/fragment/RotatableDialogFragment$special$$inlined$observable$1;->this$0:Ljp/co/sony/mc/camera/view/setting/fragment/RotatableDialogFragment;
 
     invoke-static {p0, p1}, Ljp/co/sony/mc/camera/view/setting/fragment/RotatableDialogFragment;->access$updateLayout(Ljp/co/sony/mc/camera/view/setting/fragment/RotatableDialogFragment;I)V

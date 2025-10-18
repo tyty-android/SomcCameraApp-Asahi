@@ -3,54 +3,44 @@
 .source "D8$$SyntheticClass"
 
 # interfaces
-.implements Landroid/view/View$OnLayoutChangeListener;
-
-
-# instance fields
-.field public final synthetic f$0:Ljp/co/sony/mc/camera/view/viewbinder/ProModePopupFnSubmenuViewBinder;
+.implements Lkotlin/jvm/functions/Function2;
 
 
 # direct methods
-.method public synthetic constructor <init>(Ljp/co/sony/mc/camera/view/viewbinder/ProModePopupFnSubmenuViewBinder;)V
+.method public synthetic constructor <init>()V
     .locals 0
 
     .line 0
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    iput-object p1, p0, Ljp/co/sony/mc/camera/view/viewbinder/ProModePopupFnSubmenuViewBinder$$ExternalSyntheticLambda1;->f$0:Ljp/co/sony/mc/camera/view/viewbinder/ProModePopupFnSubmenuViewBinder;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final onLayoutChange(Landroid/view/View;IIIIIIII)V
-    .locals 10
+.method public final invoke(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 0
 
     .line 0
-    move-object v0, p0
+    check-cast p1, Ljava/lang/Boolean;
 
-    iget-object v0, v0, Ljp/co/sony/mc/camera/view/viewbinder/ProModePopupFnSubmenuViewBinder$$ExternalSyntheticLambda1;->f$0:Ljp/co/sony/mc/camera/view/viewbinder/ProModePopupFnSubmenuViewBinder;
+    invoke-virtual {p1}, Ljava/lang/Boolean;->booleanValue()Z
 
-    move-object v1, p1
+    move-result p0
 
-    move v2, p2
+    check-cast p2, Ljava/lang/Boolean;
 
-    move v3, p3
+    invoke-virtual {p2}, Ljava/lang/Boolean;->booleanValue()Z
 
-    move v4, p4
+    move-result p1
 
-    move v5, p5
+    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/view/viewbinder/ProModePopupFnSubmenuViewBinder;->$r8$lambda$tcPmYahOeDnI4dIKdrUnNXUNkKg(ZZ)Z
 
-    move/from16 v6, p6
+    move-result p0
 
-    move/from16 v7, p7
+    invoke-static {p0}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
-    move/from16 v8, p8
+    move-result-object p0
 
-    move/from16 v9, p9
-
-    invoke-static/range {v0 .. v9}, Ljp/co/sony/mc/camera/view/viewbinder/ProModePopupFnSubmenuViewBinder;->$r8$lambda$lvlohrAzJ-U-3b-unEHNk4102yA(Ljp/co/sony/mc/camera/view/viewbinder/ProModePopupFnSubmenuViewBinder;Landroid/view/View;IIIIIIII)V
-
-    return-void
+    return-object p0
 .end method

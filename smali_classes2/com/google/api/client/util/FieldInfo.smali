@@ -88,7 +88,7 @@
 .method public static getFieldValue(Ljava/lang/reflect/Field;Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
 
-    .line 247
+    .line 253
     :try_start_0
     invoke-virtual {p0, p1}, Ljava/lang/reflect/Field;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -101,7 +101,7 @@
     :catch_0
     move-exception p0
 
-    .line 249
+    .line 255
     new-instance p1, Ljava/lang/IllegalArgumentException;
 
     invoke-direct {p1, p0}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/Throwable;)V
@@ -328,7 +328,7 @@
 .method public static setFieldValue(Ljava/lang/reflect/Field;Ljava/lang/Object;Ljava/lang/Object;)V
     .locals 4
 
-    .line 260
+    .line 266
     invoke-virtual {p0}, Ljava/lang/reflect/Field;->getModifiers()I
 
     move-result v0
@@ -339,7 +339,7 @@
 
     if-eqz v0, :cond_2
 
-    .line 261
+    .line 267
     invoke-static {p0, p1}, Lcom/google/api/client/util/FieldInfo;->getFieldValue(Ljava/lang/reflect/Field;Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v0
@@ -350,7 +350,7 @@
 
     goto :goto_0
 
-    .line 262
+    .line 268
     :cond_0
     invoke-virtual {p2, v0}, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
 
@@ -360,7 +360,7 @@
 
     goto :goto_0
 
-    .line 263
+    .line 269
     :cond_1
     new-instance v1, Ljava/lang/IllegalArgumentException;
 
@@ -390,7 +390,7 @@
 
     move-result-object p2
 
-    .line 269
+    .line 275
     invoke-virtual {p0}, Ljava/lang/reflect/Field;->getName()Ljava/lang/String;
 
     move-result-object p0
@@ -405,7 +405,7 @@
 
     move-result-object p0
 
-    .line 271
+    .line 277
     invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     move-result-object p1
@@ -426,7 +426,7 @@
 
     throw v1
 
-    .line 275
+    .line 281
     :cond_2
     :try_start_0
     invoke-virtual {p0, p1, p2}, Ljava/lang/reflect/Field;->set(Ljava/lang/Object;Ljava/lang/Object;)V
@@ -440,7 +440,7 @@
     :catch_0
     move-exception p0
 
-    .line 279
+    .line 285
     new-instance p1, Ljava/lang/IllegalArgumentException;
 
     invoke-direct {p1, p0}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/Throwable;)V
@@ -450,7 +450,7 @@
     :catch_1
     move-exception p0
 
-    .line 277
+    .line 283
     new-instance p1, Ljava/lang/IllegalArgumentException;
 
     invoke-direct {p1, p0}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/Throwable;)V
@@ -467,83 +467,147 @@
     invoke-direct {p0}, Ljava/util/ArrayList;-><init>()V
 
     .line 139
-    invoke-virtual {p1}, Ljava/lang/reflect/Field;->getDeclaringClass()Ljava/lang/Class;
+    new-instance v0, Ljava/lang/StringBuilder;
 
-    move-result-object v0
+    const-string v1, "set"
 
-    invoke-virtual {v0}, Ljava/lang/Class;->getDeclaredMethods()[Ljava/lang/reflect/Method;
-
-    move-result-object v0
-
-    array-length v1, v0
-
-    const/4 v2, 0x0
-
-    move v3, v2
-
-    :goto_0
-    if-ge v3, v1, :cond_1
-
-    aget-object v4, v0, v3
-
-    .line 140
-    invoke-virtual {v4}, Ljava/lang/reflect/Method;->getName()Ljava/lang/String;
-
-    move-result-object v5
-
-    invoke-static {v5}, Lcom/google/common/base/Ascii;->toLowerCase(Ljava/lang/String;)Ljava/lang/String;
-
-    move-result-object v5
-
-    new-instance v6, Ljava/lang/StringBuilder;
-
-    const-string v7, "set"
-
-    invoke-direct {v6, v7}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
     invoke-virtual {p1}, Ljava/lang/reflect/Field;->getName()Ljava/lang/String;
 
-    move-result-object v7
+    move-result-object v1
 
-    invoke-static {v7}, Lcom/google/common/base/Ascii;->toLowerCase(Ljava/lang/String;)Ljava/lang/String;
+    const/4 v2, 0x0
 
-    move-result-object v7
+    const/4 v3, 0x1
 
-    invoke-virtual {v6, v7}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v1, v2, v3}, Ljava/lang/String;->substring(II)Ljava/lang/String;
 
-    move-result-object v6
+    move-result-object v1
 
-    invoke-virtual {v6}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-static {v1}, Lcom/google/common/base/Ascii;->toUpperCase(Ljava/lang/String;)Ljava/lang/String;
 
-    move-result-object v6
+    move-result-object v1
 
-    invoke-virtual {v5, v6}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    move-result v5
+    move-result-object v0
 
-    if-eqz v5, :cond_0
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v0
+
+    .line 140
+    invoke-virtual {p1}, Ljava/lang/reflect/Field;->getName()Ljava/lang/String;
+
+    move-result-object v1
+
+    invoke-virtual {v1}, Ljava/lang/String;->length()I
+
+    move-result v1
+
+    if-le v1, v3, :cond_0
 
     .line 141
-    invoke-virtual {v4}, Ljava/lang/reflect/Method;->getParameterTypes()[Ljava/lang/Class;
+    new-instance v1, Ljava/lang/StringBuilder;
 
-    move-result-object v5
+    invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
 
-    array-length v5, v5
+    invoke-virtual {v1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    const/4 v6, 0x1
+    move-result-object v0
 
-    if-ne v5, v6, :cond_0
+    invoke-virtual {p1}, Ljava/lang/reflect/Field;->getName()Ljava/lang/String;
 
-    .line 142
-    invoke-interface {p0, v4}, Ljava/util/List;->add(Ljava/lang/Object;)Z
+    move-result-object v1
 
+    invoke-virtual {v1, v3}, Ljava/lang/String;->substring(I)Ljava/lang/String;
+
+    move-result-object v1
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v0
+
+    .line 143
     :cond_0
-    add-int/lit8 v3, v3, 0x1
+    invoke-virtual {p1}, Ljava/lang/reflect/Field;->getDeclaringClass()Ljava/lang/Class;
+
+    move-result-object p1
+
+    invoke-virtual {p1}, Ljava/lang/Class;->getDeclaredMethods()[Ljava/lang/reflect/Method;
+
+    move-result-object p1
+
+    array-length v1, p1
+
+    move v4, v2
+
+    :goto_0
+    if-ge v4, v1, :cond_3
+
+    aget-object v5, p1, v4
+
+    .line 144
+    invoke-virtual {v5}, Ljava/lang/reflect/Method;->getParameterTypes()[Ljava/lang/Class;
+
+    move-result-object v6
+
+    array-length v6, v6
+
+    if-ne v6, v3, :cond_2
+
+    .line 146
+    invoke-virtual {v5}, Ljava/lang/reflect/Method;->getName()Ljava/lang/String;
+
+    move-result-object v6
+
+    invoke-virtual {v6, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v6
+
+    if-eqz v6, :cond_1
+
+    .line 147
+    invoke-interface {p0, v2, v5}, Ljava/util/List;->add(ILjava/lang/Object;)V
+
+    goto :goto_1
+
+    .line 148
+    :cond_1
+    invoke-virtual {v5}, Ljava/lang/reflect/Method;->getName()Ljava/lang/String;
+
+    move-result-object v6
+
+    invoke-static {v6}, Lcom/google/common/base/Ascii;->toLowerCase(Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v6
+
+    invoke-static {v0}, Lcom/google/common/base/Ascii;->toLowerCase(Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v7
+
+    invoke-virtual {v6, v7}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v6
+
+    if-eqz v6, :cond_2
+
+    .line 149
+    invoke-interface {p0, v5}, Ljava/util/List;->add(Ljava/lang/Object;)Z
+
+    :cond_2
+    :goto_1
+    add-int/lit8 v4, v4, 0x1
 
     goto :goto_0
 
-    .line 145
-    :cond_1
+    .line 153
+    :cond_3
     new-array p1, v2, [Ljava/lang/reflect/Method;
 
     invoke-interface {p0, p1}, Ljava/util/List;->toArray([Ljava/lang/Object;)[Ljava/lang/Object;
@@ -567,7 +631,7 @@
         }
     .end annotation
 
-    .line 241
+    .line 247
     iget-object v0, p0, Lcom/google/api/client/util/FieldInfo;->field:Ljava/lang/reflect/Field;
 
     invoke-virtual {v0}, Ljava/lang/reflect/Field;->getDeclaringClass()Ljava/lang/Class;
@@ -590,7 +654,7 @@
 .method public getClassInfo()Lcom/google/api/client/util/ClassInfo;
     .locals 0
 
-    .line 236
+    .line 242
     iget-object p0, p0, Lcom/google/api/client/util/FieldInfo;->field:Ljava/lang/reflect/Field;
 
     invoke-virtual {p0}, Ljava/lang/reflect/Field;->getDeclaringClass()Ljava/lang/Class;
@@ -607,7 +671,7 @@
 .method public getField()Ljava/lang/reflect/Field;
     .locals 0
 
-    .line 154
+    .line 162
     iget-object p0, p0, Lcom/google/api/client/util/FieldInfo;->field:Ljava/lang/reflect/Field;
 
     return-object p0
@@ -616,7 +680,7 @@
 .method public getGenericType()Ljava/lang/reflect/Type;
     .locals 0
 
-    .line 186
+    .line 194
     iget-object p0, p0, Lcom/google/api/client/util/FieldInfo;->field:Ljava/lang/reflect/Field;
 
     invoke-virtual {p0}, Ljava/lang/reflect/Field;->getGenericType()Ljava/lang/reflect/Type;
@@ -629,7 +693,7 @@
 .method public getName()Ljava/lang/String;
     .locals 0
 
-    .line 167
+    .line 175
     iget-object p0, p0, Lcom/google/api/client/util/FieldInfo;->name:Ljava/lang/String;
 
     return-object p0
@@ -645,7 +709,7 @@
         }
     .end annotation
 
-    .line 176
+    .line 184
     iget-object p0, p0, Lcom/google/api/client/util/FieldInfo;->field:Ljava/lang/reflect/Field;
 
     invoke-virtual {p0}, Ljava/lang/reflect/Field;->getType()Ljava/lang/Class;
@@ -658,7 +722,7 @@
 .method public getValue(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
 
-    .line 209
+    .line 217
     iget-object p0, p0, Lcom/google/api/client/util/FieldInfo;->field:Ljava/lang/reflect/Field;
 
     invoke-static {p0, p1}, Lcom/google/api/client/util/FieldInfo;->getFieldValue(Ljava/lang/reflect/Field;Ljava/lang/Object;)Ljava/lang/Object;
@@ -671,7 +735,7 @@
 .method public isFinal()Z
     .locals 0
 
-    .line 195
+    .line 203
     iget-object p0, p0, Lcom/google/api/client/util/FieldInfo;->field:Ljava/lang/reflect/Field;
 
     invoke-virtual {p0}, Ljava/lang/reflect/Field;->getModifiers()I
@@ -688,7 +752,7 @@
 .method public isPrimitive()Z
     .locals 0
 
-    .line 204
+    .line 212
     iget-boolean p0, p0, Lcom/google/api/client/util/FieldInfo;->isPrimitive:Z
 
     return p0
@@ -697,14 +761,9 @@
 .method public setValue(Ljava/lang/Object;Ljava/lang/Object;)V
     .locals 7
 
-    .line 219
+    .line 227
     iget-object v0, p0, Lcom/google/api/client/util/FieldInfo;->setters:[Ljava/lang/reflect/Method;
 
-    array-length v1, v0
-
-    if-lez v1, :cond_2
-
-    .line 220
     array-length v1, v0
 
     const/4 v2, 0x0
@@ -718,7 +777,7 @@
 
     if-eqz p2, :cond_0
 
-    .line 221
+    .line 228
     invoke-virtual {v4}, Ljava/lang/reflect/Method;->getParameterTypes()[Ljava/lang/Class;
 
     move-result-object v5
@@ -735,7 +794,7 @@
 
     if-eqz v5, :cond_1
 
-    .line 223
+    .line 230
     :cond_0
     :try_start_0
     filled-new-array {p2}, [Ljava/lang/Object;
@@ -755,7 +814,7 @@
 
     goto :goto_0
 
-    .line 231
+    .line 237
     :cond_2
     iget-object p0, p0, Lcom/google/api/client/util/FieldInfo;->field:Ljava/lang/reflect/Field;
 

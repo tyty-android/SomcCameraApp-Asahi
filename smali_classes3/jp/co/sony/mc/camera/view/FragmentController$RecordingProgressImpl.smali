@@ -25,10 +25,10 @@
 .method constructor <init>(Ljp/co/sony/mc/camera/view/FragmentController;)V
     .locals 0
 
-    .line 7528
+    .line 7780
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 7529
+    .line 7781
     iput-object p1, p0, Ljp/co/sony/mc/camera/view/FragmentController$RecordingProgressImpl;->mController:Ljp/co/sony/mc/camera/view/FragmentController;
 
     return-void
@@ -39,7 +39,7 @@
 .method public onRecordingProgress(I)V
     .locals 0
 
-    .line 7534
+    .line 7786
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/FragmentController$RecordingProgressImpl;->mController:Ljp/co/sony/mc/camera/view/FragmentController;
 
     invoke-static {p0}, Ljp/co/sony/mc/camera/view/FragmentController;->-$$Nest$fgetmCameraEventNotifier(Ljp/co/sony/mc/camera/view/FragmentController;)Ljp/co/sony/mc/camera/view/CameraEventListener;

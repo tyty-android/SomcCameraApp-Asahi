@@ -21,7 +21,7 @@
 .method constructor <init>()V
     .locals 0
 
-    .line 955
+    .line 1009
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -42,11 +42,11 @@
         }
     .end annotation
 
-    .line 959
+    .line 1013
     check-cast p1, Ljp/co/sony/mc/camera/setting/CameraSettings;
 
-    .line 960
-    invoke-static {p1}, Ljp/co/sony/mc/camera/setting/CameraSettings;->-$$Nest$mgetBurstFeedback(Ljp/co/sony/mc/camera/setting/CameraSettings;)Ljp/co/sony/mc/camera/configuration/parameters/BurstFeedback;
+    .line 1014
+    invoke-static {p1}, Ljp/co/sony/mc/camera/setting/CameraSettings;->-$$Nest$mgetPhotoFormat(Ljp/co/sony/mc/camera/setting/CameraSettings;)Ljp/co/sony/mc/camera/configuration/parameters/PhotoFormat;
 
     move-result-object p0
 

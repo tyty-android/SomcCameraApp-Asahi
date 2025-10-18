@@ -32,6 +32,8 @@
 
 
 # static fields
+.field public static final $stable:I
+
 .field public static final Companion:Landroidx/compose/ui/tooling/PreviewLogger$Companion;
 
 

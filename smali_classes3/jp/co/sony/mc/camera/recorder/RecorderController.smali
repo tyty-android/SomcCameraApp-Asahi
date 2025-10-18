@@ -39,7 +39,7 @@
     .end annotation
 .end method
 
-.method public abstract prepare(Ljp/co/sony/mc/camera/recorder/RecorderParameters;Landroid/view/Surface;)Z
+.method public abstract prepare(Ljp/co/sony/mc/camera/recorder/RecorderParameters;)Z
 .end method
 
 .method public abstract release()Z
@@ -72,6 +72,9 @@
 .end method
 
 .method public abstract setPreferredDevice(Landroid/media/AudioDeviceInfo;)V
+.end method
+
+.method public abstract setStopVibration(Z)V
 .end method
 
 .method public abstract setStorageWriteNotifier(Ljp/co/sony/mc/camera/storage/Storage$StorageWriteNotifier;)V

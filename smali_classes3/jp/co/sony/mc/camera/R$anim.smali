@@ -106,21 +106,21 @@
 
 .field public static final m3_motion_fade_exit:I = 0x7f01002d
 
-.field public static final m3_side_sheet_slide_in:I = 0x7f01002e
+.field public static final m3_side_sheet_enter_from_left:I = 0x7f01002e
 
-.field public static final m3_side_sheet_slide_out:I = 0x7f01002f
+.field public static final m3_side_sheet_enter_from_right:I = 0x7f01002f
 
-.field public static final mtrl_bottom_sheet_slide_in:I = 0x7f010030
+.field public static final m3_side_sheet_exit_to_left:I = 0x7f010030
 
-.field public static final mtrl_bottom_sheet_slide_out:I = 0x7f010031
+.field public static final m3_side_sheet_exit_to_right:I = 0x7f010031
 
-.field public static final mtrl_card_lowers_interpolator:I = 0x7f010032
+.field public static final mtrl_bottom_sheet_slide_in:I = 0x7f010032
 
-.field public static final notification_fade_out:I = 0x7f010033
+.field public static final mtrl_bottom_sheet_slide_out:I = 0x7f010033
 
-.field public static final overlay_fade_in:I = 0x7f010034
+.field public static final mtrl_card_lowers_interpolator:I = 0x7f010034
 
-.field public static final overlay_fade_out:I = 0x7f010035
+.field public static final notification_fade_out:I = 0x7f010035
 
 .field public static final predictive_capture_indicator_fade_out:I = 0x7f010036
 

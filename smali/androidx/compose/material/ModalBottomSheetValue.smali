@@ -65,7 +65,7 @@
 .method static constructor <clinit>()V
     .locals 3
 
-    .line 83
+    .line 82
     new-instance v0, Landroidx/compose/material/ModalBottomSheetValue;
 
     const-string v1, "Hidden"
@@ -76,7 +76,7 @@
 
     sput-object v0, Landroidx/compose/material/ModalBottomSheetValue;->Hidden:Landroidx/compose/material/ModalBottomSheetValue;
 
-    .line 88
+    .line 87
     new-instance v0, Landroidx/compose/material/ModalBottomSheetValue;
 
     const-string v1, "Expanded"
@@ -87,7 +87,7 @@
 
     sput-object v0, Landroidx/compose/material/ModalBottomSheetValue;->Expanded:Landroidx/compose/material/ModalBottomSheetValue;
 
-    .line 94
+    .line 93
     new-instance v0, Landroidx/compose/material/ModalBottomSheetValue;
 
     const-string v1, "HalfExpanded"
@@ -115,7 +115,7 @@
         }
     .end annotation
 
-    .line 78
+    .line 77
     invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
     return-void

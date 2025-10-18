@@ -22,7 +22,7 @@
 .method constructor <init>(Lcom/google/android/material/sidesheet/SideSheetDialog;)V
     .locals 0
 
-    .line 50
+    .line 57
     iput-object p1, p0, Lcom/google/android/material/sidesheet/SideSheetDialog$1;->this$0:Lcom/google/android/material/sidesheet/SideSheetDialog;
 
     invoke-direct {p0}, Lcom/google/android/material/sidesheet/SideSheetCallback;-><init>()V
@@ -45,7 +45,7 @@
 
     if-ne p2, p1, :cond_0
 
-    .line 54
+    .line 61
     iget-object p0, p0, Lcom/google/android/material/sidesheet/SideSheetDialog$1;->this$0:Lcom/google/android/material/sidesheet/SideSheetDialog;
 
     invoke-virtual {p0}, Lcom/google/android/material/sidesheet/SideSheetDialog;->cancel()V

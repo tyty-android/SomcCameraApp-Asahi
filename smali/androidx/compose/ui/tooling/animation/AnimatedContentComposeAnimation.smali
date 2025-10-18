@@ -1,6 +1,6 @@
 .class public final Landroidx/compose/ui/tooling/animation/AnimatedContentComposeAnimation;
 .super Ljava/lang/Object;
-.source "AnimatedContentComposeAnimation.kt"
+.source "AnimatedContentComposeAnimation.android.kt"
 
 # interfaces
 .implements Landroidx/compose/animation/tooling/ComposeAnimation;
@@ -27,7 +27,7 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/SourceDebugExtension;
-    value = "SMAP\nAnimatedContentComposeAnimation.kt\nKotlin\n*S Kotlin\n*F\n+ 1 AnimatedContentComposeAnimation.kt\nandroidx/compose/ui/tooling/animation/AnimatedContentComposeAnimation\n+ 2 _Arrays.kt\nkotlin/collections/ArraysKt___ArraysKt\n*L\n1#1,63:1\n12744#2,2:64\n*S KotlinDebug\n*F\n+ 1 AnimatedContentComposeAnimation.kt\nandroidx/compose/ui/tooling/animation/AnimatedContentComposeAnimation\n*L\n41#1:64,2\n*E\n"
+    value = "SMAP\nAnimatedContentComposeAnimation.android.kt\nKotlin\n*S Kotlin\n*F\n+ 1 AnimatedContentComposeAnimation.android.kt\nandroidx/compose/ui/tooling/animation/AnimatedContentComposeAnimation\n+ 2 _Arrays.kt\nkotlin/collections/ArraysKt___ArraysKt\n*L\n1#1,64:1\n12744#2,2:65\n*S KotlinDebug\n*F\n+ 1 AnimatedContentComposeAnimation.android.kt\nandroidx/compose/ui/tooling/animation/AnimatedContentComposeAnimation\n*L\n41#1:65,2\n*E\n"
 .end annotation
 
 .annotation runtime Lkotlin/Metadata;
@@ -71,6 +71,8 @@
 
 
 # static fields
+.field public static final $stable:I
+
 .field public static final Companion:Landroidx/compose/ui/tooling/animation/AnimatedContentComposeAnimation$Companion;
 
 .field private static apiAvailable:Z
@@ -113,12 +115,16 @@
 
     sput-object v0, Landroidx/compose/ui/tooling/animation/AnimatedContentComposeAnimation;->Companion:Landroidx/compose/ui/tooling/animation/AnimatedContentComposeAnimation$Companion;
 
+    const/16 v0, 0x8
+
+    sput v0, Landroidx/compose/ui/tooling/animation/AnimatedContentComposeAnimation;->$stable:I
+
     .line 41
     invoke-static {}, Landroidx/compose/animation/tooling/ComposeAnimationType;->values()[Landroidx/compose/animation/tooling/ComposeAnimationType;
 
     move-result-object v0
 
-    .line 64
+    .line 65
     array-length v1, v0
 
     const/4 v2, 0x0

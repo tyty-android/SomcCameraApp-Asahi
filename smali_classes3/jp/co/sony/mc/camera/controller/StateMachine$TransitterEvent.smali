@@ -222,7 +222,7 @@
 .method private static synthetic $values()[Ljp/co/sony/mc/camera/controller/StateMachine$TransitterEvent;
     .locals 96
 
-    .line 675
+    .line 672
     sget-object v0, Ljp/co/sony/mc/camera/controller/StateMachine$TransitterEvent;->EVENT_INITIALIZE:Ljp/co/sony/mc/camera/controller/StateMachine$TransitterEvent;
 
     sget-object v1, Ljp/co/sony/mc/camera/controller/StateMachine$TransitterEvent;->EVENT_RESUME:Ljp/co/sony/mc/camera/controller/StateMachine$TransitterEvent;
@@ -425,7 +425,7 @@
 .method static constructor <clinit>()V
     .locals 3
 
-    .line 677
+    .line 674
     new-instance v0, Ljp/co/sony/mc/camera/controller/StateMachine$TransitterEvent;
 
     const-string v1, "EVENT_INITIALIZE"
@@ -436,7 +436,7 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/controller/StateMachine$TransitterEvent;->EVENT_INITIALIZE:Ljp/co/sony/mc/camera/controller/StateMachine$TransitterEvent;
 
-    .line 678
+    .line 675
     new-instance v0, Ljp/co/sony/mc/camera/controller/StateMachine$TransitterEvent;
 
     const-string v1, "EVENT_RESUME"
@@ -447,7 +447,7 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/controller/StateMachine$TransitterEvent;->EVENT_RESUME:Ljp/co/sony/mc/camera/controller/StateMachine$TransitterEvent;
 
-    .line 679
+    .line 676
     new-instance v0, Ljp/co/sony/mc/camera/controller/StateMachine$TransitterEvent;
 
     const-string v1, "EVENT_RESUME_TIMEOUT"
@@ -458,7 +458,7 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/controller/StateMachine$TransitterEvent;->EVENT_RESUME_TIMEOUT:Ljp/co/sony/mc/camera/controller/StateMachine$TransitterEvent;
 
-    .line 680
+    .line 677
     new-instance v0, Ljp/co/sony/mc/camera/controller/StateMachine$TransitterEvent;
 
     const-string v1, "EVENT_PAUSE"
@@ -469,7 +469,7 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/controller/StateMachine$TransitterEvent;->EVENT_PAUSE:Ljp/co/sony/mc/camera/controller/StateMachine$TransitterEvent;
 
-    .line 681
+    .line 678
     new-instance v0, Ljp/co/sony/mc/camera/controller/StateMachine$TransitterEvent;
 
     const-string v1, "EVENT_FINALIZE"
@@ -480,7 +480,7 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/controller/StateMachine$TransitterEvent;->EVENT_FINALIZE:Ljp/co/sony/mc/camera/controller/StateMachine$TransitterEvent;
 
-    .line 684
+    .line 681
     new-instance v0, Ljp/co/sony/mc/camera/controller/StateMachine$TransitterEvent;
 
     const-string v1, "EVENT_ON_HEATED_OVER_COOLING_LOW"
@@ -491,7 +491,7 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/controller/StateMachine$TransitterEvent;->EVENT_ON_HEATED_OVER_COOLING_LOW:Ljp/co/sony/mc/camera/controller/StateMachine$TransitterEvent;
 
-    .line 685
+    .line 682
     new-instance v0, Ljp/co/sony/mc/camera/controller/StateMachine$TransitterEvent;
 
     const-string v1, "EVENT_ON_HEATED_OVER_COOLING_ULTRA_LOW"
@@ -502,7 +502,7 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/controller/StateMachine$TransitterEvent;->EVENT_ON_HEATED_OVER_COOLING_ULTRA_LOW:Ljp/co/sony/mc/camera/controller/StateMachine$TransitterEvent;
 
-    .line 686
+    .line 683
     new-instance v0, Ljp/co/sony/mc/camera/controller/StateMachine$TransitterEvent;
 
     const-string v1, "EVENT_ON_HEATED_OVER_CRITICAL"
@@ -513,7 +513,7 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/controller/StateMachine$TransitterEvent;->EVENT_ON_HEATED_OVER_CRITICAL:Ljp/co/sony/mc/camera/controller/StateMachine$TransitterEvent;
 
-    .line 687
+    .line 684
     new-instance v0, Ljp/co/sony/mc/camera/controller/StateMachine$TransitterEvent;
 
     const-string v1, "EVENT_ON_HEATED_OVER_NORMAL"
@@ -524,7 +524,7 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/controller/StateMachine$TransitterEvent;->EVENT_ON_HEATED_OVER_NORMAL:Ljp/co/sony/mc/camera/controller/StateMachine$TransitterEvent;
 
-    .line 693
+    .line 690
     new-instance v0, Ljp/co/sony/mc/camera/controller/StateMachine$TransitterEvent;
 
     const-string v1, "EVENT_ON_REACH_BATTERY_LOW"
@@ -535,7 +535,7 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/controller/StateMachine$TransitterEvent;->EVENT_ON_REACH_BATTERY_LOW:Ljp/co/sony/mc/camera/controller/StateMachine$TransitterEvent;
 
-    .line 697
+    .line 694
     new-instance v0, Ljp/co/sony/mc/camera/controller/StateMachine$TransitterEvent;
 
     const-string v1, "EVENT_ON_REACH_BATTERY_LIMIT"
@@ -546,7 +546,7 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/controller/StateMachine$TransitterEvent;->EVENT_ON_REACH_BATTERY_LIMIT:Ljp/co/sony/mc/camera/controller/StateMachine$TransitterEvent;
 
-    .line 698
+    .line 695
     new-instance v0, Ljp/co/sony/mc/camera/controller/StateMachine$TransitterEvent;
 
     const-string v1, "EVENT_ON_BATTERY_LEVEL_CHANGED"
@@ -557,7 +557,7 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/controller/StateMachine$TransitterEvent;->EVENT_ON_BATTERY_LEVEL_CHANGED:Ljp/co/sony/mc/camera/controller/StateMachine$TransitterEvent;
 
-    .line 701
+    .line 698
     new-instance v0, Ljp/co/sony/mc/camera/controller/StateMachine$TransitterEvent;
 
     const-string v1, "EVENT_ON_SURFACE_PREPARED"
@@ -568,7 +568,7 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/controller/StateMachine$TransitterEvent;->EVENT_ON_SURFACE_PREPARED:Ljp/co/sony/mc/camera/controller/StateMachine$TransitterEvent;
 
-    .line 702
+    .line 699
     new-instance v0, Ljp/co/sony/mc/camera/controller/StateMachine$TransitterEvent;
 
     const-string v1, "EVENT_RESTART_PREVIEW_SESSION"
@@ -579,7 +579,7 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/controller/StateMachine$TransitterEvent;->EVENT_RESTART_PREVIEW_SESSION:Ljp/co/sony/mc/camera/controller/StateMachine$TransitterEvent;
 
-    .line 703
+    .line 700
     new-instance v0, Ljp/co/sony/mc/camera/controller/StateMachine$TransitterEvent;
 
     const-string v1, "EVENT_REQUEST_STOP_PREVIEW"
@@ -590,7 +590,7 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/controller/StateMachine$TransitterEvent;->EVENT_REQUEST_STOP_PREVIEW:Ljp/co/sony/mc/camera/controller/StateMachine$TransitterEvent;
 
-    .line 706
+    .line 703
     new-instance v0, Ljp/co/sony/mc/camera/controller/StateMachine$TransitterEvent;
 
     const-string v1, "EVENT_APPLY_CHANGED_SETTING"
@@ -601,7 +601,7 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/controller/StateMachine$TransitterEvent;->EVENT_APPLY_CHANGED_SETTING:Ljp/co/sony/mc/camera/controller/StateMachine$TransitterEvent;
 
-    .line 709
+    .line 706
     new-instance v0, Ljp/co/sony/mc/camera/controller/StateMachine$TransitterEvent;
 
     const-string v1, "EVENT_ON_AUTO_FOCUS_DONE"
@@ -612,7 +612,7 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/controller/StateMachine$TransitterEvent;->EVENT_ON_AUTO_FOCUS_DONE:Ljp/co/sony/mc/camera/controller/StateMachine$TransitterEvent;
 
-    .line 710
+    .line 707
     new-instance v0, Ljp/co/sony/mc/camera/controller/StateMachine$TransitterEvent;
 
     const-string v1, "EVENT_ON_AUTO_FOCUS_CANCELED"
@@ -623,7 +623,7 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/controller/StateMachine$TransitterEvent;->EVENT_ON_AUTO_FOCUS_CANCELED:Ljp/co/sony/mc/camera/controller/StateMachine$TransitterEvent;
 
-    .line 711
+    .line 708
     new-instance v0, Ljp/co/sony/mc/camera/controller/StateMachine$TransitterEvent;
 
     const-string v1, "EVENT_ON_PRE_SHUTTER_DONE"
@@ -634,7 +634,7 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/controller/StateMachine$TransitterEvent;->EVENT_ON_PRE_SHUTTER_DONE:Ljp/co/sony/mc/camera/controller/StateMachine$TransitterEvent;
 
-    .line 712
+    .line 709
     new-instance v0, Ljp/co/sony/mc/camera/controller/StateMachine$TransitterEvent;
 
     const-string v1, "EVENT_ON_SNAPSHOT_REQUEST_DONE"
@@ -645,7 +645,7 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/controller/StateMachine$TransitterEvent;->EVENT_ON_SNAPSHOT_REQUEST_DONE:Ljp/co/sony/mc/camera/controller/StateMachine$TransitterEvent;
 
-    .line 713
+    .line 710
     new-instance v0, Ljp/co/sony/mc/camera/controller/StateMachine$TransitterEvent;
 
     const-string v1, "EVENT_ON_SNAPSHOT_REQUEST_REJECTED"
@@ -656,7 +656,7 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/controller/StateMachine$TransitterEvent;->EVENT_ON_SNAPSHOT_REQUEST_REJECTED:Ljp/co/sony/mc/camera/controller/StateMachine$TransitterEvent;
 
-    .line 714
+    .line 711
     new-instance v0, Ljp/co/sony/mc/camera/controller/StateMachine$TransitterEvent;
 
     const-string v1, "EVENT_ON_EXPOSURE_DONE"
@@ -667,7 +667,7 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/controller/StateMachine$TransitterEvent;->EVENT_ON_EXPOSURE_DONE:Ljp/co/sony/mc/camera/controller/StateMachine$TransitterEvent;
 
-    .line 715
+    .line 712
     new-instance v0, Ljp/co/sony/mc/camera/controller/StateMachine$TransitterEvent;
 
     const-string v1, "EVENT_ON_EXPOSURE_FAILED"
@@ -678,7 +678,7 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/controller/StateMachine$TransitterEvent;->EVENT_ON_EXPOSURE_FAILED:Ljp/co/sony/mc/camera/controller/StateMachine$TransitterEvent;
 
-    .line 716
+    .line 713
     new-instance v0, Ljp/co/sony/mc/camera/controller/StateMachine$TransitterEvent;
 
     const-string v1, "EVENT_ON_PREPARE_SNAPSHOT_CANCELED"
@@ -689,7 +689,7 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/controller/StateMachine$TransitterEvent;->EVENT_ON_PREPARE_SNAPSHOT_CANCELED:Ljp/co/sony/mc/camera/controller/StateMachine$TransitterEvent;
 
-    .line 717
+    .line 714
     new-instance v0, Ljp/co/sony/mc/camera/controller/StateMachine$TransitterEvent;
 
     const-string v1, "EVENT_ON_PREPARE_BURST_DONE"
@@ -700,7 +700,7 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/controller/StateMachine$TransitterEvent;->EVENT_ON_PREPARE_BURST_DONE:Ljp/co/sony/mc/camera/controller/StateMachine$TransitterEvent;
 
-    .line 718
+    .line 715
     new-instance v0, Ljp/co/sony/mc/camera/controller/StateMachine$TransitterEvent;
 
     const-string v1, "EVENT_ON_BURST_CAPTURE_DONE"
@@ -711,7 +711,7 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/controller/StateMachine$TransitterEvent;->EVENT_ON_BURST_CAPTURE_DONE:Ljp/co/sony/mc/camera/controller/StateMachine$TransitterEvent;
 
-    .line 719
+    .line 716
     new-instance v0, Ljp/co/sony/mc/camera/controller/StateMachine$TransitterEvent;
 
     const-string v1, "EVENT_ON_BURST_QUEUEING_COUNT_CHANGED"
@@ -722,7 +722,7 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/controller/StateMachine$TransitterEvent;->EVENT_ON_BURST_QUEUEING_COUNT_CHANGED:Ljp/co/sony/mc/camera/controller/StateMachine$TransitterEvent;
 
-    .line 720
+    .line 717
     new-instance v0, Ljp/co/sony/mc/camera/controller/StateMachine$TransitterEvent;
 
     const-string v1, "EVENT_ON_PRE_TAKE_PICTURE_DONE"
@@ -733,7 +733,7 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/controller/StateMachine$TransitterEvent;->EVENT_ON_PRE_TAKE_PICTURE_DONE:Ljp/co/sony/mc/camera/controller/StateMachine$TransitterEvent;
 
-    .line 721
+    .line 718
     new-instance v0, Ljp/co/sony/mc/camera/controller/StateMachine$TransitterEvent;
 
     const-string v1, "EVENT_ON_TAKE_PICTURE_DONE"
@@ -744,7 +744,7 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/controller/StateMachine$TransitterEvent;->EVENT_ON_TAKE_PICTURE_DONE:Ljp/co/sony/mc/camera/controller/StateMachine$TransitterEvent;
 
-    .line 722
+    .line 719
     new-instance v0, Ljp/co/sony/mc/camera/controller/StateMachine$TransitterEvent;
 
     const-string v1, "EVENT_ON_VIDEO_RECORDING_DONE"
@@ -755,7 +755,7 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/controller/StateMachine$TransitterEvent;->EVENT_ON_VIDEO_RECORDING_DONE:Ljp/co/sony/mc/camera/controller/StateMachine$TransitterEvent;
 
-    .line 723
+    .line 720
     new-instance v0, Ljp/co/sony/mc/camera/controller/StateMachine$TransitterEvent;
 
     const-string v1, "EVENT_ON_ONE_PREVIEW_FRAME_UPDATED"
@@ -766,7 +766,7 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/controller/StateMachine$TransitterEvent;->EVENT_ON_ONE_PREVIEW_FRAME_UPDATED:Ljp/co/sony/mc/camera/controller/StateMachine$TransitterEvent;
 
-    .line 724
+    .line 721
     new-instance v0, Ljp/co/sony/mc/camera/controller/StateMachine$TransitterEvent;
 
     const-string v1, "EVENT_ON_CONTINUOUS_PREVIEW_FRAME_UPDATED"
@@ -777,7 +777,7 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/controller/StateMachine$TransitterEvent;->EVENT_ON_CONTINUOUS_PREVIEW_FRAME_UPDATED:Ljp/co/sony/mc/camera/controller/StateMachine$TransitterEvent;
 
-    .line 725
+    .line 722
     new-instance v0, Ljp/co/sony/mc/camera/controller/StateMachine$TransitterEvent;
 
     const-string v1, "EVENT_ON_BOKEH_CONDITION_CHANGED"
@@ -788,7 +788,7 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/controller/StateMachine$TransitterEvent;->EVENT_ON_BOKEH_CONDITION_CHANGED:Ljp/co/sony/mc/camera/controller/StateMachine$TransitterEvent;
 
-    .line 726
+    .line 723
     new-instance v0, Ljp/co/sony/mc/camera/controller/StateMachine$TransitterEvent;
 
     const-string v1, "EVENT_START_CREATING_SESSION"
@@ -799,7 +799,7 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/controller/StateMachine$TransitterEvent;->EVENT_START_CREATING_SESSION:Ljp/co/sony/mc/camera/controller/StateMachine$TransitterEvent;
 
-    .line 727
+    .line 724
     new-instance v0, Ljp/co/sony/mc/camera/controller/StateMachine$TransitterEvent;
 
     const-string v1, "EVENT_ON_FOCUS_AREA_UPDATED"
@@ -810,7 +810,7 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/controller/StateMachine$TransitterEvent;->EVENT_ON_FOCUS_AREA_UPDATED:Ljp/co/sony/mc/camera/controller/StateMachine$TransitterEvent;
 
-    .line 730
+    .line 727
     new-instance v0, Ljp/co/sony/mc/camera/controller/StateMachine$TransitterEvent;
 
     const-string v1, "EVENT_ON_BURST_SHUTTER_DONE"
@@ -821,7 +821,7 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/controller/StateMachine$TransitterEvent;->EVENT_ON_BURST_SHUTTER_DONE:Ljp/co/sony/mc/camera/controller/StateMachine$TransitterEvent;
 
-    .line 731
+    .line 728
     new-instance v0, Ljp/co/sony/mc/camera/controller/StateMachine$TransitterEvent;
 
     const-string v1, "EVENT_ON_BURST_STORE_COMPLETED"
@@ -832,7 +832,7 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/controller/StateMachine$TransitterEvent;->EVENT_ON_BURST_STORE_COMPLETED:Ljp/co/sony/mc/camera/controller/StateMachine$TransitterEvent;
 
-    .line 732
+    .line 729
     new-instance v0, Ljp/co/sony/mc/camera/controller/StateMachine$TransitterEvent;
 
     const-string v1, "EVENT_ON_BURST_GROUP_STORE_COMPLETED"
@@ -843,7 +843,7 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/controller/StateMachine$TransitterEvent;->EVENT_ON_BURST_GROUP_STORE_COMPLETED:Ljp/co/sony/mc/camera/controller/StateMachine$TransitterEvent;
 
-    .line 735
+    .line 732
     new-instance v0, Ljp/co/sony/mc/camera/controller/StateMachine$TransitterEvent;
 
     const-string v1, "EVENT_ON_STORE_REQUESTED"
@@ -854,7 +854,7 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/controller/StateMachine$TransitterEvent;->EVENT_ON_STORE_REQUESTED:Ljp/co/sony/mc/camera/controller/StateMachine$TransitterEvent;
 
-    .line 736
+    .line 733
     new-instance v0, Ljp/co/sony/mc/camera/controller/StateMachine$TransitterEvent;
 
     const-string v1, "EVENT_ON_STORE_COMPLETED"
@@ -865,7 +865,7 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/controller/StateMachine$TransitterEvent;->EVENT_ON_STORE_COMPLETED:Ljp/co/sony/mc/camera/controller/StateMachine$TransitterEvent;
 
-    .line 737
+    .line 734
     new-instance v0, Ljp/co/sony/mc/camera/controller/StateMachine$TransitterEvent;
 
     const-string v1, "EVENT_STORAGE_ERROR"
@@ -876,7 +876,7 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/controller/StateMachine$TransitterEvent;->EVENT_STORAGE_ERROR:Ljp/co/sony/mc/camera/controller/StateMachine$TransitterEvent;
 
-    .line 738
+    .line 735
     new-instance v0, Ljp/co/sony/mc/camera/controller/StateMachine$TransitterEvent;
 
     const-string v1, "EVENT_STORAGE_MOUNTED"
@@ -887,7 +887,7 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/controller/StateMachine$TransitterEvent;->EVENT_STORAGE_MOUNTED:Ljp/co/sony/mc/camera/controller/StateMachine$TransitterEvent;
 
-    .line 739
+    .line 736
     new-instance v0, Ljp/co/sony/mc/camera/controller/StateMachine$TransitterEvent;
 
     const-string v1, "EVENT_STORAGE_READY_STATE_CHANGED"
@@ -898,7 +898,7 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/controller/StateMachine$TransitterEvent;->EVENT_STORAGE_READY_STATE_CHANGED:Ljp/co/sony/mc/camera/controller/StateMachine$TransitterEvent;
 
-    .line 742
+    .line 739
     new-instance v0, Ljp/co/sony/mc/camera/controller/StateMachine$TransitterEvent;
 
     const-string v1, "EVENT_SET_TOUCHED_POSITION"
@@ -909,7 +909,7 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/controller/StateMachine$TransitterEvent;->EVENT_SET_TOUCHED_POSITION:Ljp/co/sony/mc/camera/controller/StateMachine$TransitterEvent;
 
-    .line 743
+    .line 740
     new-instance v0, Ljp/co/sony/mc/camera/controller/StateMachine$TransitterEvent;
 
     const-string v1, "EVENT_CHANGE_SELECTED_FACE"
@@ -920,7 +920,7 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/controller/StateMachine$TransitterEvent;->EVENT_CHANGE_SELECTED_FACE:Ljp/co/sony/mc/camera/controller/StateMachine$TransitterEvent;
 
-    .line 744
+    .line 741
     new-instance v0, Ljp/co/sony/mc/camera/controller/StateMachine$TransitterEvent;
 
     const-string v1, "EVENT_SET_SELECTED_OBJECT_POSITION"
@@ -931,7 +931,7 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/controller/StateMachine$TransitterEvent;->EVENT_SET_SELECTED_OBJECT_POSITION:Ljp/co/sony/mc/camera/controller/StateMachine$TransitterEvent;
 
-    .line 745
+    .line 742
     new-instance v0, Ljp/co/sony/mc/camera/controller/StateMachine$TransitterEvent;
 
     const-string v1, "EVENT_STOP_OBJECT_TRACKING"
@@ -942,7 +942,7 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/controller/StateMachine$TransitterEvent;->EVENT_STOP_OBJECT_TRACKING:Ljp/co/sony/mc/camera/controller/StateMachine$TransitterEvent;
 
-    .line 746
+    .line 743
     new-instance v0, Ljp/co/sony/mc/camera/controller/StateMachine$TransitterEvent;
 
     const-string v1, "EVENT_START_AF_AFTER_OBJECT_TRACKED"
@@ -953,7 +953,7 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/controller/StateMachine$TransitterEvent;->EVENT_START_AF_AFTER_OBJECT_TRACKED:Ljp/co/sony/mc/camera/controller/StateMachine$TransitterEvent;
 
-    .line 747
+    .line 744
     new-instance v0, Ljp/co/sony/mc/camera/controller/StateMachine$TransitterEvent;
 
     const-string v1, "EVENT_CLEAR_FOCUS"
@@ -964,7 +964,7 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/controller/StateMachine$TransitterEvent;->EVENT_CLEAR_FOCUS:Ljp/co/sony/mc/camera/controller/StateMachine$TransitterEvent;
 
-    .line 748
+    .line 745
     new-instance v0, Ljp/co/sony/mc/camera/controller/StateMachine$TransitterEvent;
 
     const-string v1, "EVENT_TOUCH_CONTENT_PROGRESS"
@@ -975,7 +975,7 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/controller/StateMachine$TransitterEvent;->EVENT_TOUCH_CONTENT_PROGRESS:Ljp/co/sony/mc/camera/controller/StateMachine$TransitterEvent;
 
-    .line 749
+    .line 746
     new-instance v0, Ljp/co/sony/mc/camera/controller/StateMachine$TransitterEvent;
 
     const-string v1, "EVENT_SELFTIMER_CANCEL"
@@ -986,7 +986,7 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/controller/StateMachine$TransitterEvent;->EVENT_SELFTIMER_CANCEL:Ljp/co/sony/mc/camera/controller/StateMachine$TransitterEvent;
 
-    .line 750
+    .line 747
     new-instance v0, Ljp/co/sony/mc/camera/controller/StateMachine$TransitterEvent;
 
     const-string v1, "EVENT_STOP_RECORDING_SLOW_MOTION_BUTTON_RELEASE"
@@ -997,7 +997,7 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/controller/StateMachine$TransitterEvent;->EVENT_STOP_RECORDING_SLOW_MOTION_BUTTON_RELEASE:Ljp/co/sony/mc/camera/controller/StateMachine$TransitterEvent;
 
-    .line 751
+    .line 748
     new-instance v0, Ljp/co/sony/mc/camera/controller/StateMachine$TransitterEvent;
 
     const-string v1, "EVENT_SLOW_MOTION_FEEDBACK_ANIMATION_END"
@@ -1008,7 +1008,7 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/controller/StateMachine$TransitterEvent;->EVENT_SLOW_MOTION_FEEDBACK_ANIMATION_END:Ljp/co/sony/mc/camera/controller/StateMachine$TransitterEvent;
 
-    .line 752
+    .line 749
     new-instance v0, Ljp/co/sony/mc/camera/controller/StateMachine$TransitterEvent;
 
     const-string v1, "EVENT_HIGH_FRAME_RATE_RECORDING_DONE"
@@ -1019,7 +1019,7 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/controller/StateMachine$TransitterEvent;->EVENT_HIGH_FRAME_RATE_RECORDING_DONE:Ljp/co/sony/mc/camera/controller/StateMachine$TransitterEvent;
 
-    .line 753
+    .line 750
     new-instance v0, Ljp/co/sony/mc/camera/controller/StateMachine$TransitterEvent;
 
     const-string v1, "EVENT_ANGLE_CHANGE_START"
@@ -1030,7 +1030,7 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/controller/StateMachine$TransitterEvent;->EVENT_ANGLE_CHANGE_START:Ljp/co/sony/mc/camera/controller/StateMachine$TransitterEvent;
 
-    .line 754
+    .line 751
     new-instance v0, Ljp/co/sony/mc/camera/controller/StateMachine$TransitterEvent;
 
     const-string v1, "EVENT_ANGLE_CHANGE_COMPLETED"
@@ -1041,7 +1041,7 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/controller/StateMachine$TransitterEvent;->EVENT_ANGLE_CHANGE_COMPLETED:Ljp/co/sony/mc/camera/controller/StateMachine$TransitterEvent;
 
-    .line 757
+    .line 754
     new-instance v0, Ljp/co/sony/mc/camera/controller/StateMachine$TransitterEvent;
 
     const-string v1, "EVENT_START_CAPTURE_COUNTDOWN"
@@ -1052,7 +1052,7 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/controller/StateMachine$TransitterEvent;->EVENT_START_CAPTURE_COUNTDOWN:Ljp/co/sony/mc/camera/controller/StateMachine$TransitterEvent;
 
-    .line 760
+    .line 757
     new-instance v0, Ljp/co/sony/mc/camera/controller/StateMachine$TransitterEvent;
 
     const-string v1, "EVENT_ON_RECORDING_START_WAIT_DONE"
@@ -1063,7 +1063,7 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/controller/StateMachine$TransitterEvent;->EVENT_ON_RECORDING_START_WAIT_DONE:Ljp/co/sony/mc/camera/controller/StateMachine$TransitterEvent;
 
-    .line 761
+    .line 758
     new-instance v0, Ljp/co/sony/mc/camera/controller/StateMachine$TransitterEvent;
 
     const-string v1, "EVENT_ON_RECORDING_ERROR"
@@ -1074,7 +1074,7 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/controller/StateMachine$TransitterEvent;->EVENT_ON_RECORDING_ERROR:Ljp/co/sony/mc/camera/controller/StateMachine$TransitterEvent;
 
-    .line 764
+    .line 761
     new-instance v0, Ljp/co/sony/mc/camera/controller/StateMachine$TransitterEvent;
 
     const-string v1, "EVENT_START_WB_CUSTOM_TRIGGER"
@@ -1085,7 +1085,7 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/controller/StateMachine$TransitterEvent;->EVENT_START_WB_CUSTOM_TRIGGER:Ljp/co/sony/mc/camera/controller/StateMachine$TransitterEvent;
 
-    .line 765
+    .line 762
     new-instance v0, Ljp/co/sony/mc/camera/controller/StateMachine$TransitterEvent;
 
     const-string v1, "EVENT_STOP_WB_CUSTOM_TRIGGER"
@@ -1096,7 +1096,7 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/controller/StateMachine$TransitterEvent;->EVENT_STOP_WB_CUSTOM_TRIGGER:Ljp/co/sony/mc/camera/controller/StateMachine$TransitterEvent;
 
-    .line 768
+    .line 765
     new-instance v0, Ljp/co/sony/mc/camera/controller/StateMachine$TransitterEvent;
 
     const-string v1, "EVENT_ON_CAMERA_DEVICE_OPENED"
@@ -1107,7 +1107,7 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/controller/StateMachine$TransitterEvent;->EVENT_ON_CAMERA_DEVICE_OPENED:Ljp/co/sony/mc/camera/controller/StateMachine$TransitterEvent;
 
-    .line 769
+    .line 766
     new-instance v0, Ljp/co/sony/mc/camera/controller/StateMachine$TransitterEvent;
 
     const-string v1, "EVENT_ON_CAMERA_DEVICE_CLOSED"
@@ -1118,7 +1118,7 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/controller/StateMachine$TransitterEvent;->EVENT_ON_CAMERA_DEVICE_CLOSED:Ljp/co/sony/mc/camera/controller/StateMachine$TransitterEvent;
 
-    .line 770
+    .line 767
     new-instance v0, Ljp/co/sony/mc/camera/controller/StateMachine$TransitterEvent;
 
     const-string v1, "EVENT_ON_CAMERA_ACTIVATED"
@@ -1129,7 +1129,7 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/controller/StateMachine$TransitterEvent;->EVENT_ON_CAMERA_ACTIVATED:Ljp/co/sony/mc/camera/controller/StateMachine$TransitterEvent;
 
-    .line 773
+    .line 770
     new-instance v0, Ljp/co/sony/mc/camera/controller/StateMachine$TransitterEvent;
 
     const-string v1, "EVENT_ON_DEVICE_ERROR"
@@ -1140,7 +1140,7 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/controller/StateMachine$TransitterEvent;->EVENT_ON_DEVICE_ERROR:Ljp/co/sony/mc/camera/controller/StateMachine$TransitterEvent;
 
-    .line 776
+    .line 773
     new-instance v0, Ljp/co/sony/mc/camera/controller/StateMachine$TransitterEvent;
 
     const-string v1, "EVENT_CAPTURE_READY"
@@ -1151,7 +1151,7 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/controller/StateMachine$TransitterEvent;->EVENT_CAPTURE_READY:Ljp/co/sony/mc/camera/controller/StateMachine$TransitterEvent;
 
-    .line 777
+    .line 774
     new-instance v0, Ljp/co/sony/mc/camera/controller/StateMachine$TransitterEvent;
 
     const-string v1, "EVENT_CAPTURE"
@@ -1162,7 +1162,7 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/controller/StateMachine$TransitterEvent;->EVENT_CAPTURE:Ljp/co/sony/mc/camera/controller/StateMachine$TransitterEvent;
 
-    .line 778
+    .line 775
     new-instance v0, Ljp/co/sony/mc/camera/controller/StateMachine$TransitterEvent;
 
     const-string v1, "EVENT_CAPTURE_CANCEL"
@@ -1173,7 +1173,7 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/controller/StateMachine$TransitterEvent;->EVENT_CAPTURE_CANCEL:Ljp/co/sony/mc/camera/controller/StateMachine$TransitterEvent;
 
-    .line 779
+    .line 776
     new-instance v0, Ljp/co/sony/mc/camera/controller/StateMachine$TransitterEvent;
 
     const-string v1, "EVENT_CAPTURE_BURST"
@@ -1184,7 +1184,7 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/controller/StateMachine$TransitterEvent;->EVENT_CAPTURE_BURST:Ljp/co/sony/mc/camera/controller/StateMachine$TransitterEvent;
 
-    .line 780
+    .line 777
     new-instance v0, Ljp/co/sony/mc/camera/controller/StateMachine$TransitterEvent;
 
     const-string v1, "EVENT_RECORD_READY"
@@ -1195,7 +1195,7 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/controller/StateMachine$TransitterEvent;->EVENT_RECORD_READY:Ljp/co/sony/mc/camera/controller/StateMachine$TransitterEvent;
 
-    .line 781
+    .line 778
     new-instance v0, Ljp/co/sony/mc/camera/controller/StateMachine$TransitterEvent;
 
     const-string v1, "EVENT_START_RECORDING"
@@ -1206,7 +1206,7 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/controller/StateMachine$TransitterEvent;->EVENT_START_RECORDING:Ljp/co/sony/mc/camera/controller/StateMachine$TransitterEvent;
 
-    .line 782
+    .line 779
     new-instance v0, Ljp/co/sony/mc/camera/controller/StateMachine$TransitterEvent;
 
     const-string v1, "EVENT_STOP_RECORDING"
@@ -1217,7 +1217,7 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/controller/StateMachine$TransitterEvent;->EVENT_STOP_RECORDING:Ljp/co/sony/mc/camera/controller/StateMachine$TransitterEvent;
 
-    .line 783
+    .line 780
     new-instance v0, Ljp/co/sony/mc/camera/controller/StateMachine$TransitterEvent;
 
     const-string v1, "EVENT_RESUME_RECORDING"
@@ -1228,7 +1228,7 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/controller/StateMachine$TransitterEvent;->EVENT_RESUME_RECORDING:Ljp/co/sony/mc/camera/controller/StateMachine$TransitterEvent;
 
-    .line 784
+    .line 781
     new-instance v0, Ljp/co/sony/mc/camera/controller/StateMachine$TransitterEvent;
 
     const-string v1, "EVENT_PAUSE_RECORDING"
@@ -1239,7 +1239,7 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/controller/StateMachine$TransitterEvent;->EVENT_PAUSE_RECORDING:Ljp/co/sony/mc/camera/controller/StateMachine$TransitterEvent;
 
-    .line 785
+    .line 782
     new-instance v0, Ljp/co/sony/mc/camera/controller/StateMachine$TransitterEvent;
 
     const-string v1, "EVENT_TRIGGER_SLOW_MOTION"
@@ -1250,7 +1250,7 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/controller/StateMachine$TransitterEvent;->EVENT_TRIGGER_SLOW_MOTION:Ljp/co/sony/mc/camera/controller/StateMachine$TransitterEvent;
 
-    .line 786
+    .line 783
     new-instance v0, Ljp/co/sony/mc/camera/controller/StateMachine$TransitterEvent;
 
     const-string v1, "EVENT_REQUEST_SWITCH_MODE_AND_CAMERA"
@@ -1261,7 +1261,7 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/controller/StateMachine$TransitterEvent;->EVENT_REQUEST_SWITCH_MODE_AND_CAMERA:Ljp/co/sony/mc/camera/controller/StateMachine$TransitterEvent;
 
-    .line 787
+    .line 784
     new-instance v0, Ljp/co/sony/mc/camera/controller/StateMachine$TransitterEvent;
 
     const-string v1, "EVENT_REQUEST_SWITCH_LENS_DURING_STREAMING"
@@ -1272,7 +1272,7 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/controller/StateMachine$TransitterEvent;->EVENT_REQUEST_SWITCH_LENS_DURING_STREAMING:Ljp/co/sony/mc/camera/controller/StateMachine$TransitterEvent;
 
-    .line 790
+    .line 787
     new-instance v0, Ljp/co/sony/mc/camera/controller/StateMachine$TransitterEvent;
 
     const-string v1, "EVENT_ZOOM_PREPARE"
@@ -1283,7 +1283,7 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/controller/StateMachine$TransitterEvent;->EVENT_ZOOM_PREPARE:Ljp/co/sony/mc/camera/controller/StateMachine$TransitterEvent;
 
-    .line 791
+    .line 788
     new-instance v0, Ljp/co/sony/mc/camera/controller/StateMachine$TransitterEvent;
 
     const-string v1, "EVENT_ZOOM_PERFORM"
@@ -1294,7 +1294,7 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/controller/StateMachine$TransitterEvent;->EVENT_ZOOM_PERFORM:Ljp/co/sony/mc/camera/controller/StateMachine$TransitterEvent;
 
-    .line 792
+    .line 789
     new-instance v0, Ljp/co/sony/mc/camera/controller/StateMachine$TransitterEvent;
 
     const-string v1, "EVENT_ZOOM_FINISH"
@@ -1305,7 +1305,7 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/controller/StateMachine$TransitterEvent;->EVENT_ZOOM_FINISH:Ljp/co/sony/mc/camera/controller/StateMachine$TransitterEvent;
 
-    .line 795
+    .line 792
     new-instance v0, Ljp/co/sony/mc/camera/controller/StateMachine$TransitterEvent;
 
     const-string v1, "EVENT_CANCEL_PREPARE_CAPTURE"
@@ -1316,7 +1316,7 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/controller/StateMachine$TransitterEvent;->EVENT_CANCEL_PREPARE_CAPTURE:Ljp/co/sony/mc/camera/controller/StateMachine$TransitterEvent;
 
-    .line 796
+    .line 793
     new-instance v0, Ljp/co/sony/mc/camera/controller/StateMachine$TransitterEvent;
 
     const-string v1, "EVENT_REQUEST_AF_LOCK"
@@ -1327,7 +1327,7 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/controller/StateMachine$TransitterEvent;->EVENT_REQUEST_AF_LOCK:Ljp/co/sony/mc/camera/controller/StateMachine$TransitterEvent;
 
-    .line 797
+    .line 794
     new-instance v0, Ljp/co/sony/mc/camera/controller/StateMachine$TransitterEvent;
 
     const-string v1, "EVENT_REQUEST_AF_UNLOCK"
@@ -1338,7 +1338,7 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/controller/StateMachine$TransitterEvent;->EVENT_REQUEST_AF_UNLOCK:Ljp/co/sony/mc/camera/controller/StateMachine$TransitterEvent;
 
-    .line 800
+    .line 797
     new-instance v0, Ljp/co/sony/mc/camera/controller/StateMachine$TransitterEvent;
 
     const-string v1, "EVENT_START_MONITOR_POSEROTATION"
@@ -1349,7 +1349,7 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/controller/StateMachine$TransitterEvent;->EVENT_START_MONITOR_POSEROTATION:Ljp/co/sony/mc/camera/controller/StateMachine$TransitterEvent;
 
-    .line 801
+    .line 798
     new-instance v0, Ljp/co/sony/mc/camera/controller/StateMachine$TransitterEvent;
 
     const-string v1, "EVENT_STOP_MONITOR_POSEROTATION"
@@ -1360,7 +1360,7 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/controller/StateMachine$TransitterEvent;->EVENT_STOP_MONITOR_POSEROTATION:Ljp/co/sony/mc/camera/controller/StateMachine$TransitterEvent;
 
-    .line 804
+    .line 801
     new-instance v0, Ljp/co/sony/mc/camera/controller/StateMachine$TransitterEvent;
 
     const-string v1, "EVENT_START_MONITOR_HISTOGRAM"
@@ -1371,7 +1371,7 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/controller/StateMachine$TransitterEvent;->EVENT_START_MONITOR_HISTOGRAM:Ljp/co/sony/mc/camera/controller/StateMachine$TransitterEvent;
 
-    .line 805
+    .line 802
     new-instance v0, Ljp/co/sony/mc/camera/controller/StateMachine$TransitterEvent;
 
     const-string v1, "EVENT_STOP_MONITOR_HISTOGRAM"
@@ -1382,7 +1382,7 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/controller/StateMachine$TransitterEvent;->EVENT_STOP_MONITOR_HISTOGRAM:Ljp/co/sony/mc/camera/controller/StateMachine$TransitterEvent;
 
-    .line 807
+    .line 804
     new-instance v0, Ljp/co/sony/mc/camera/controller/StateMachine$TransitterEvent;
 
     const-string v1, "EVENT_PREPARE_SURFACE_SWITCH"
@@ -1393,7 +1393,7 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/controller/StateMachine$TransitterEvent;->EVENT_PREPARE_SURFACE_SWITCH:Ljp/co/sony/mc/camera/controller/StateMachine$TransitterEvent;
 
-    .line 810
+    .line 807
     new-instance v0, Ljp/co/sony/mc/camera/controller/StateMachine$TransitterEvent;
 
     const-string v1, "EVENT_START_MONITOR_LOW_LIGHT_STATE"
@@ -1404,7 +1404,7 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/controller/StateMachine$TransitterEvent;->EVENT_START_MONITOR_LOW_LIGHT_STATE:Ljp/co/sony/mc/camera/controller/StateMachine$TransitterEvent;
 
-    .line 811
+    .line 808
     new-instance v0, Ljp/co/sony/mc/camera/controller/StateMachine$TransitterEvent;
 
     const-string v1, "EVENT_STOP_MONITOR_LOW_LIGHT_STATE"
@@ -1415,7 +1415,7 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/controller/StateMachine$TransitterEvent;->EVENT_STOP_MONITOR_LOW_LIGHT_STATE:Ljp/co/sony/mc/camera/controller/StateMachine$TransitterEvent;
 
-    .line 814
+    .line 811
     new-instance v0, Ljp/co/sony/mc/camera/controller/StateMachine$TransitterEvent;
 
     const-string v1, "EVENT_START_MONITOR_FALLBACK_STATE"
@@ -1426,7 +1426,7 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/controller/StateMachine$TransitterEvent;->EVENT_START_MONITOR_FALLBACK_STATE:Ljp/co/sony/mc/camera/controller/StateMachine$TransitterEvent;
 
-    .line 815
+    .line 812
     new-instance v0, Ljp/co/sony/mc/camera/controller/StateMachine$TransitterEvent;
 
     const-string v1, "EVENT_STOP_MONITOR_FALLBACK_STATE"
@@ -1437,7 +1437,7 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/controller/StateMachine$TransitterEvent;->EVENT_STOP_MONITOR_FALLBACK_STATE:Ljp/co/sony/mc/camera/controller/StateMachine$TransitterEvent;
 
-    .line 817
+    .line 814
     new-instance v0, Ljp/co/sony/mc/camera/controller/StateMachine$TransitterEvent;
 
     const-string v1, "EVENT_PREPARE_OBJECT_TRACKING"
@@ -1448,7 +1448,7 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/controller/StateMachine$TransitterEvent;->EVENT_PREPARE_OBJECT_TRACKING:Ljp/co/sony/mc/camera/controller/StateMachine$TransitterEvent;
 
-    .line 818
+    .line 815
     new-instance v0, Ljp/co/sony/mc/camera/controller/StateMachine$TransitterEvent;
 
     const-string v1, "EVENT_ENABLE_YUV_FRAME_DRAW_MODE"
@@ -1459,7 +1459,7 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/controller/StateMachine$TransitterEvent;->EVENT_ENABLE_YUV_FRAME_DRAW_MODE:Ljp/co/sony/mc/camera/controller/StateMachine$TransitterEvent;
 
-    .line 819
+    .line 816
     new-instance v0, Ljp/co/sony/mc/camera/controller/StateMachine$TransitterEvent;
 
     const-string v1, "EVENT_DISABLE_YUV_FRAME_DRAW_MODE"
@@ -1470,7 +1470,7 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/controller/StateMachine$TransitterEvent;->EVENT_DISABLE_YUV_FRAME_DRAW_MODE:Ljp/co/sony/mc/camera/controller/StateMachine$TransitterEvent;
 
-    .line 820
+    .line 817
     new-instance v0, Ljp/co/sony/mc/camera/controller/StateMachine$TransitterEvent;
 
     const-string v1, "EVENT_FORCE_FALLBACK_ON"
@@ -1481,7 +1481,7 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/controller/StateMachine$TransitterEvent;->EVENT_FORCE_FALLBACK_ON:Ljp/co/sony/mc/camera/controller/StateMachine$TransitterEvent;
 
-    .line 675
+    .line 672
     invoke-static {}, Ljp/co/sony/mc/camera/controller/StateMachine$TransitterEvent;->$values()[Ljp/co/sony/mc/camera/controller/StateMachine$TransitterEvent;
 
     move-result-object v0
@@ -1499,7 +1499,7 @@
         }
     .end annotation
 
-    .line 675
+    .line 672
     invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
     return-void
@@ -1508,7 +1508,7 @@
 .method public static valueOf(Ljava/lang/String;)Ljp/co/sony/mc/camera/controller/StateMachine$TransitterEvent;
     .locals 1
 
-    .line 675
+    .line 672
     const-class v0, Ljp/co/sony/mc/camera/controller/StateMachine$TransitterEvent;
 
     invoke-static {v0, p0}, Ljava/lang/Enum;->valueOf(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
@@ -1523,7 +1523,7 @@
 .method public static values()[Ljp/co/sony/mc/camera/controller/StateMachine$TransitterEvent;
     .locals 1
 
-    .line 675
+    .line 672
     sget-object v0, Ljp/co/sony/mc/camera/controller/StateMachine$TransitterEvent;->$VALUES:[Ljp/co/sony/mc/camera/controller/StateMachine$TransitterEvent;
 
     invoke-virtual {v0}, [Ljp/co/sony/mc/camera/controller/StateMachine$TransitterEvent;->clone()Ljava/lang/Object;

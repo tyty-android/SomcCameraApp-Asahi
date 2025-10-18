@@ -30,10 +30,6 @@
 .method public static final setAlpha(Landroid/text/TextPaint;F)V
     .locals 2
 
-    const-string v0, "<this>"
-
-    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
     .line 139
     invoke-static {p1}, Ljava/lang/Float;->isNaN(F)Z
 

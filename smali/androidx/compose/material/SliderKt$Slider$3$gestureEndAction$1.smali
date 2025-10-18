@@ -125,7 +125,7 @@
 .method public bridge synthetic invoke(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
 
-    .line 208
+    .line 211
     check-cast p1, Ljava/lang/Number;
 
     invoke-virtual {p1}, Ljava/lang/Number;->floatValue()F
@@ -142,14 +142,14 @@
 .method public final invoke(F)V
     .locals 9
 
-    .line 209
+    .line 212
     iget-object v0, p0, Landroidx/compose/material/SliderKt$Slider$3$gestureEndAction$1;->$rawOffset:Landroidx/compose/runtime/MutableFloatState;
 
     invoke-interface {v0}, Landroidx/compose/runtime/MutableFloatState;->getFloatValue()F
 
     move-result v3
 
-    .line 210
+    .line 213
     iget-object v0, p0, Landroidx/compose/material/SliderKt$Slider$3$gestureEndAction$1;->$tickFractions:Ljava/util/List;
 
     iget-object v1, p0, Landroidx/compose/material/SliderKt$Slider$3$gestureEndAction$1;->$minPx:Lkotlin/jvm/internal/Ref$FloatRef;
@@ -168,7 +168,7 @@
 
     if-nez v0, :cond_0
 
-    .line 216
+    .line 219
     iget-object p1, p0, Landroidx/compose/material/SliderKt$Slider$3$gestureEndAction$1;->$draggableState:Landroidx/compose/material/SliderDraggableState;
 
     invoke-virtual {p1}, Landroidx/compose/material/SliderDraggableState;->isDragging()Z
@@ -177,7 +177,7 @@
 
     if-nez p1, :cond_1
 
-    .line 218
+    .line 221
     iget-object p0, p0, Landroidx/compose/material/SliderKt$Slider$3$gestureEndAction$1;->$onValueChangeFinished:Lkotlin/jvm/functions/Function0;
 
     if-eqz p0, :cond_1
@@ -186,7 +186,7 @@
 
     goto :goto_0
 
-    .line 212
+    .line 215
     :cond_0
     iget-object v0, p0, Landroidx/compose/material/SliderKt$Slider$3$gestureEndAction$1;->$scope:Lkotlinx/coroutines/CoroutineScope;
 

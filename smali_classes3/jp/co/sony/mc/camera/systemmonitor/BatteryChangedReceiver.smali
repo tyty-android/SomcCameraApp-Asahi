@@ -218,7 +218,7 @@
 
 # virtual methods
 .method public checkStartupStatus()V
-    .locals 3
+    .locals 6
 
     const/4 v0, 0x0
 
@@ -226,57 +226,57 @@
     iput-boolean v0, p0, Ljp/co/sony/mc/camera/systemmonitor/BatteryChangedReceiver;->mIsAlreadyBcl:Z
 
     .line 174
-    iget-object v0, p0, Ljp/co/sony/mc/camera/systemmonitor/BatteryChangedReceiver;->mContext:Landroid/content/Context;
+    iget-object v1, p0, Ljp/co/sony/mc/camera/systemmonitor/BatteryChangedReceiver;->mContext:Landroid/content/Context;
 
-    const-string v1, "batterymanager"
+    const-string v2, "batterymanager"
 
     .line 175
-    invoke-virtual {v0, v1}, Landroid/content/Context;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
+    invoke-virtual {v1, v2}, Landroid/content/Context;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
 
-    move-result-object v0
+    move-result-object v1
 
-    check-cast v0, Landroid/os/BatteryManager;
+    check-cast v1, Landroid/os/BatteryManager;
 
-    const/4 v1, 0x4
+    const/4 v2, 0x4
 
     .line 176
-    invoke-virtual {v0, v1}, Landroid/os/BatteryManager;->getIntProperty(I)I
+    invoke-virtual {v1, v2}, Landroid/os/BatteryManager;->getIntProperty(I)I
 
-    move-result v0
+    move-result v1
 
     .line 178
-    sget-boolean v1, Ljp/co/sony/mc/camera/util/CamLog;->VERBOSE:Z
+    sget-boolean v2, Ljp/co/sony/mc/camera/util/CamLog;->VERBOSE:Z
 
-    if-eqz v1, :cond_0
+    const/4 v3, 0x1
 
-    new-instance v1, Ljava/lang/StringBuilder;
+    if-eqz v2, :cond_0
 
-    const-string v2, "checkStartupStatus() : Battery Capacity = "
+    new-array v2, v3, [Ljava/lang/String;
 
-    invoke-direct {v1, v2}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+    new-instance v4, Ljava/lang/StringBuilder;
 
-    invoke-virtual {v1, v0}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+    const-string v5, "checkStartupStatus() : Battery Capacity = "
 
-    move-result-object v1
+    invoke-direct {v4, v5}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
-    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-virtual {v4, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
-    move-result-object v1
+    move-result-object v4
 
-    filled-new-array {v1}, [Ljava/lang/String;
+    invoke-virtual {v4}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    move-result-object v1
+    move-result-object v4
 
-    invoke-static {v1}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
+    aput-object v4, v2, v0
+
+    invoke-static {v2}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
     .line 180
     :cond_0
-    iput v0, p0, Ljp/co/sony/mc/camera/systemmonitor/BatteryChangedReceiver;->mBatteryLevel:I
-
-    const/4 v1, 0x1
+    iput v1, p0, Ljp/co/sony/mc/camera/systemmonitor/BatteryChangedReceiver;->mBatteryLevel:I
 
     .line 182
-    invoke-direct {p0, v0, v1}, Ljp/co/sony/mc/camera/systemmonitor/BatteryChangedReceiver;->checkBcl(IZ)Z
+    invoke-direct {p0, v1, v3}, Ljp/co/sony/mc/camera/systemmonitor/BatteryChangedReceiver;->checkBcl(IZ)Z
 
     move-result v0
 
@@ -352,18 +352,22 @@
 .end method
 
 .method public onCreate()V
-    .locals 2
+    .locals 3
 
     .line 82
     sget-boolean v0, Ljp/co/sony/mc/camera/util/CamLog;->VERBOSE:Z
 
     if-eqz v0, :cond_0
 
-    const-string v0, "onCreate"
+    const/4 v0, 0x1
 
-    filled-new-array {v0}, [Ljava/lang/String;
+    new-array v0, v0, [Ljava/lang/String;
 
-    move-result-object v0
+    const/4 v1, 0x0
+
+    const-string v2, "onCreate"
+
+    aput-object v2, v0, v1
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
@@ -389,18 +393,22 @@
 .end method
 
 .method public onDestroy()V
-    .locals 1
+    .locals 3
 
     .line 92
     sget-boolean v0, Ljp/co/sony/mc/camera/util/CamLog;->VERBOSE:Z
 
     if-eqz v0, :cond_0
 
-    const-string v0, "onDestroy"
+    const/4 v0, 0x1
 
-    filled-new-array {v0}, [Ljava/lang/String;
+    new-array v0, v0, [Ljava/lang/String;
 
-    move-result-object v0
+    const/4 v1, 0x0
+
+    const-string v2, "onDestroy"
+
+    aput-object v2, v0, v1
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
@@ -414,31 +422,31 @@
 .end method
 
 .method public onPause()V
-    .locals 1
+    .locals 4
 
     .line 109
     sget-boolean v0, Ljp/co/sony/mc/camera/util/CamLog;->VERBOSE:Z
 
+    const/4 v1, 0x1
+
+    const/4 v2, 0x0
+
     if-eqz v0, :cond_0
 
-    const-string v0, "onPause"
+    new-array v0, v1, [Ljava/lang/String;
 
-    filled-new-array {v0}, [Ljava/lang/String;
+    const-string v3, "onPause"
 
-    move-result-object v0
+    aput-object v3, v0, v2
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
-    :cond_0
-    const/4 v0, 0x0
-
     .line 110
-    iput-boolean v0, p0, Ljp/co/sony/mc/camera/systemmonitor/BatteryChangedReceiver;->mIsAlreadyBcl:Z
-
-    const/4 v0, 0x1
+    :cond_0
+    iput-boolean v2, p0, Ljp/co/sony/mc/camera/systemmonitor/BatteryChangedReceiver;->mIsAlreadyBcl:Z
 
     .line 111
-    iput-boolean v0, p0, Ljp/co/sony/mc/camera/systemmonitor/BatteryChangedReceiver;->mIsActive:Z
+    iput-boolean v1, p0, Ljp/co/sony/mc/camera/systemmonitor/BatteryChangedReceiver;->mIsActive:Z
 
     return-void
 .end method
@@ -449,6 +457,10 @@
     .line 117
     iget-boolean p1, p0, Ljp/co/sony/mc/camera/systemmonitor/BatteryChangedReceiver;->mIsActive:Z
 
+    const/4 v0, 0x1
+
+    const/4 v1, 0x0
+
     if-eqz p1, :cond_1
 
     .line 118
@@ -457,11 +469,11 @@
     if-eqz p0, :cond_0
 
     .line 119
-    const-string p0, "Activity is onPause, ignore bcl intent."
+    new-array p0, v0, [Ljava/lang/String;
 
-    filled-new-array {p0}, [Ljava/lang/String;
+    const-string p1, "Activity is onPause, ignore bcl intent."
 
-    move-result-object p0
+    aput-object p1, p0, v1
 
     invoke-static {p0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
@@ -474,27 +486,27 @@
 
     if-eqz p1, :cond_2
 
-    new-instance p1, Ljava/lang/StringBuilder;
+    new-array p1, v0, [Ljava/lang/String;
 
-    const-string v0, "Receive action: "
+    new-instance v2, Ljava/lang/StringBuilder;
 
-    invoke-direct {p1, v0}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+    const-string v3, "Receive action: "
+
+    invoke-direct {v2, v3}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
     invoke-virtual {p2}, Landroid/content/Intent;->getAction()Ljava/lang/String;
 
-    move-result-object v0
+    move-result-object v3
 
-    invoke-virtual {p1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    move-result-object p1
+    move-result-object v2
 
-    invoke-virtual {p1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    move-result-object p1
+    move-result-object v2
 
-    filled-new-array {p1}, [Ljava/lang/String;
-
-    move-result-object p1
+    aput-object v2, p1, v1
 
     invoke-static {p1}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
@@ -505,9 +517,9 @@
     move-result-object p1
 
     .line 126
-    const-string v0, "android.intent.action.BATTERY_CHANGED"
+    const-string v2, "android.intent.action.BATTERY_CHANGED"
 
-    invoke-virtual {p1, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+    invoke-virtual {p1, v2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result p1
 
@@ -517,51 +529,47 @@
     iget p1, p0, Ljp/co/sony/mc/camera/systemmonitor/BatteryChangedReceiver;->mBatteryLevel:I
 
     .line 128
-    const-string v0, "level"
+    const-string v2, "level"
 
-    const/16 v1, 0x64
+    const/16 v3, 0x64
 
-    invoke-virtual {p2, v0, v1}, Landroid/content/Intent;->getIntExtra(Ljava/lang/String;I)I
+    invoke-virtual {p2, v2, v3}, Landroid/content/Intent;->getIntExtra(Ljava/lang/String;I)I
 
-    move-result v0
+    move-result v2
 
-    iput v0, p0, Ljp/co/sony/mc/camera/systemmonitor/BatteryChangedReceiver;->mBatteryLevel:I
+    iput v2, p0, Ljp/co/sony/mc/camera/systemmonitor/BatteryChangedReceiver;->mBatteryLevel:I
 
     .line 129
-    iget v0, p0, Ljp/co/sony/mc/camera/systemmonitor/BatteryChangedReceiver;->mBatteryStatus:I
+    iget v2, p0, Ljp/co/sony/mc/camera/systemmonitor/BatteryChangedReceiver;->mBatteryStatus:I
 
     .line 130
-    const-string/jumbo v1, "status"
+    const-string/jumbo v3, "status"
 
-    const/4 v2, 0x1
-
-    invoke-virtual {p2, v1, v2}, Landroid/content/Intent;->getIntExtra(Ljava/lang/String;I)I
-
-    move-result v1
-
-    iput v1, p0, Ljp/co/sony/mc/camera/systemmonitor/BatteryChangedReceiver;->mBatteryStatus:I
-
-    .line 132
-    iget v1, p0, Ljp/co/sony/mc/camera/systemmonitor/BatteryChangedReceiver;->mPlugType:I
-
-    .line 133
-    const-string v3, "plugged"
-
-    const/4 v4, 0x0
-
-    invoke-virtual {p2, v3, v4}, Landroid/content/Intent;->getIntExtra(Ljava/lang/String;I)I
+    invoke-virtual {p2, v3, v0}, Landroid/content/Intent;->getIntExtra(Ljava/lang/String;I)I
 
     move-result v3
 
-    iput v3, p0, Ljp/co/sony/mc/camera/systemmonitor/BatteryChangedReceiver;->mPlugType:I
+    iput v3, p0, Ljp/co/sony/mc/camera/systemmonitor/BatteryChangedReceiver;->mBatteryStatus:I
+
+    .line 132
+    iget v3, p0, Ljp/co/sony/mc/camera/systemmonitor/BatteryChangedReceiver;->mPlugType:I
+
+    .line 133
+    const-string v4, "plugged"
+
+    invoke-virtual {p2, v4, v1}, Landroid/content/Intent;->getIntExtra(Ljava/lang/String;I)I
+
+    move-result v4
+
+    iput v4, p0, Ljp/co/sony/mc/camera/systemmonitor/BatteryChangedReceiver;->mPlugType:I
 
     .line 134
-    iget v3, p0, Ljp/co/sony/mc/camera/systemmonitor/BatteryChangedReceiver;->mBatteryTemperature:I
+    iget v4, p0, Ljp/co/sony/mc/camera/systemmonitor/BatteryChangedReceiver;->mBatteryTemperature:I
 
     .line 135
     const-string/jumbo v5, "temperature"
 
-    invoke-virtual {p2, v5, v4}, Landroid/content/Intent;->getIntExtra(Ljava/lang/String;I)I
+    invoke-virtual {p2, v5, v1}, Landroid/content/Intent;->getIntExtra(Ljava/lang/String;I)I
 
     move-result v5
 
@@ -573,7 +581,7 @@
     .line 137
     const-string v6, "health"
 
-    invoke-virtual {p2, v6, v2}, Landroid/content/Intent;->getIntExtra(Ljava/lang/String;I)I
+    invoke-virtual {p2, v6, v0}, Landroid/content/Intent;->getIntExtra(Ljava/lang/String;I)I
 
     move-result p2
 
@@ -584,20 +592,20 @@
 
     if-eqz p2, :cond_3
 
-    move p2, v2
+    move p2, v0
 
     goto :goto_0
 
     :cond_3
-    move p2, v4
+    move p2, v1
 
     :goto_0
-    if-eqz v1, :cond_4
+    if-eqz v3, :cond_4
 
     goto :goto_1
 
     :cond_4
-    move v2, v4
+    move v0, v1
 
     .line 144
     :goto_1
@@ -643,61 +651,61 @@
 
     invoke-direct {v6, v9}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
-    invoke-virtual {v6, v0}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+    invoke-virtual {v6, v2}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
-    move-result-object v0
+    move-result-object v2
 
-    invoke-virtual {v0, v7}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v2, v7}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    move-result-object v0
+    move-result-object v2
 
     iget v6, p0, Ljp/co/sony/mc/camera/systemmonitor/BatteryChangedReceiver;->mBatteryStatus:I
 
-    invoke-virtual {v0, v6}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+    invoke-virtual {v2, v6}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
-    move-result-object v0
+    move-result-object v2
 
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    move-result-object v0
+    move-result-object v2
 
-    invoke-static {v8, v0}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+    invoke-static {v8, v2}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
     .line 147
-    new-instance v0, Ljava/lang/StringBuilder;
+    new-instance v2, Ljava/lang/StringBuilder;
 
     const-string v6, "plugType       "
 
-    invoke-direct {v0, v6}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+    invoke-direct {v2, v6}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
-    move-result-object v0
+    move-result-object v2
 
-    invoke-virtual {v0, v7}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v2, v7}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    move-result-object v0
+    move-result-object v2
 
-    iget v1, p0, Ljp/co/sony/mc/camera/systemmonitor/BatteryChangedReceiver;->mPlugType:I
+    iget v3, p0, Ljp/co/sony/mc/camera/systemmonitor/BatteryChangedReceiver;->mPlugType:I
 
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
-    move-result-object v0
+    move-result-object v2
 
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    move-result-object v0
+    move-result-object v2
 
-    invoke-static {v8, v0}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+    invoke-static {v8, v2}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
     .line 148
-    new-instance v0, Ljava/lang/StringBuilder;
+    new-instance v2, Ljava/lang/StringBuilder;
 
-    const-string v1, "plugged        "
+    const-string v3, "plugged        "
 
-    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+    invoke-direct {v2, v3}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
-    invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
+    invoke-virtual {v2, v0}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
 
     move-result-object v0
 
@@ -722,7 +730,7 @@
 
     invoke-direct {p2, v0}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
-    invoke-virtual {p2, v3}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+    invoke-virtual {p2, v4}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
     move-result-object p2
 
@@ -773,7 +781,7 @@
     :cond_5
     iget p2, p0, Ljp/co/sony/mc/camera/systemmonitor/BatteryChangedReceiver;->mBatteryLevel:I
 
-    invoke-direct {p0, p2, v4}, Ljp/co/sony/mc/camera/systemmonitor/BatteryChangedReceiver;->checkBcl(IZ)Z
+    invoke-direct {p0, p2, v1}, Ljp/co/sony/mc/camera/systemmonitor/BatteryChangedReceiver;->checkBcl(IZ)Z
 
     move-result p2
 
@@ -820,29 +828,31 @@
 .end method
 
 .method public onResume()V
-    .locals 1
+    .locals 3
 
     .line 100
     sget-boolean v0, Ljp/co/sony/mc/camera/util/CamLog;->VERBOSE:Z
 
+    const/4 v1, 0x0
+
     if-eqz v0, :cond_0
 
-    const-string v0, "onResume"
+    const/4 v0, 0x1
 
-    filled-new-array {v0}, [Ljava/lang/String;
+    new-array v0, v0, [Ljava/lang/String;
 
-    move-result-object v0
+    const-string v2, "onResume"
+
+    aput-object v2, v0, v1
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
-    :cond_0
-    const/4 v0, 0x0
-
     .line 101
-    iput-boolean v0, p0, Ljp/co/sony/mc/camera/systemmonitor/BatteryChangedReceiver;->mIsAlreadyBcl:Z
+    :cond_0
+    iput-boolean v1, p0, Ljp/co/sony/mc/camera/systemmonitor/BatteryChangedReceiver;->mIsAlreadyBcl:Z
 
     .line 102
-    iput-boolean v0, p0, Ljp/co/sony/mc/camera/systemmonitor/BatteryChangedReceiver;->mIsActive:Z
+    iput-boolean v1, p0, Ljp/co/sony/mc/camera/systemmonitor/BatteryChangedReceiver;->mIsActive:Z
 
     return-void
 .end method

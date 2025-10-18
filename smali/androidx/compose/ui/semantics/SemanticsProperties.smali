@@ -6,7 +6,7 @@
 # annotations
 .annotation runtime Lkotlin/Metadata;
     d1 = {
-        "\u0000\u0090\u0001\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0003\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0010 \n\u0002\u0010\u000e\n\u0002\u0008\u0002\n\u0002\u0010\u0002\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0004\n\u0002\u0010\u000b\n\u0002\u0008\u0004\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0002\u0010\u0008\n\u0002\u0008\u000e\n\u0002\u0018\u0002\n\u0002\u0008\u0006\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u000c\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0010\u0007\n\u0002\u0008\u0004\u0008\u00c7\u0002\u0018\u00002\u00020\u0001B\u0007\u0008\u0002\u00a2\u0006\u0002\u0010\u0002R\u0017\u0010\u0003\u001a\u0008\u0012\u0004\u0012\u00020\u00050\u0004\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\u0006\u0010\u0007R\u0017\u0010\u0008\u001a\u0008\u0012\u0004\u0012\u00020\t0\u0004\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\n\u0010\u0007R\u001d\u0010\u000b\u001a\u000e\u0012\n\u0012\u0008\u0012\u0004\u0012\u00020\r0\u000c0\u0004\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\u000e\u0010\u0007R\u0017\u0010\u000f\u001a\u0008\u0012\u0004\u0012\u00020\u00100\u0004\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\u0011\u0010\u0007R\u0017\u0010\u0012\u001a\u0008\u0012\u0004\u0012\u00020\u00130\u0004\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\u0014\u0010\u0007R\u0017\u0010\u0015\u001a\u0008\u0012\u0004\u0012\u00020\r0\u0004\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\u0016\u0010\u0007R\u0017\u0010\u0017\u001a\u0008\u0012\u0004\u0012\u00020\u00180\u0004\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\u0019\u0010\u0007R\u0017\u0010\u001a\u001a\u0008\u0012\u0004\u0012\u00020\u00100\u0004\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\u001b\u0010\u0007R\u0017\u0010\u001c\u001a\u0008\u0012\u0004\u0012\u00020\u001d0\u0004\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\u001e\u0010\u0007R\u001a\u0010\u001f\u001a\u0008\u0012\u0004\u0012\u00020 0\u0004\u00f8\u0001\u0000\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008!\u0010\u0007R#\u0010\"\u001a\u0014\u0012\u0010\u0012\u000e\u0012\u0004\u0012\u00020\u0001\u0012\u0004\u0012\u00020$0#0\u0004\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008%\u0010\u0007R\"\u0010&\u001a\u0008\u0012\u0004\u0012\u00020\u00100\u00048\u0006X\u0087\u0004\u00a2\u0006\u000e\n\u0000\u0012\u0004\u0008\'\u0010\u0002\u001a\u0004\u0008(\u0010\u0007R \u0010)\u001a\u0008\u0012\u0004\u0012\u00020\u00180\u00048FX\u0087\u0004\u00a2\u0006\u000c\u0012\u0004\u0008*\u0010\u0002\u001a\u0004\u0008+\u0010\u0007R\u0017\u0010,\u001a\u0008\u0012\u0004\u0012\u00020\u00100\u0004\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008-\u0010\u0007R\u0017\u0010.\u001a\u0008\u0012\u0004\u0012\u00020\u00100\u0004\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008/\u0010\u0007R\u0017\u00100\u001a\u0008\u0012\u0004\u0012\u00020\u00180\u0004\u00a2\u0006\u0008\n\u0000\u001a\u0004\u00081\u0010\u0007R\u001a\u00102\u001a\u0008\u0012\u0004\u0012\u0002030\u0004\u00f8\u0001\u0000\u00a2\u0006\u0008\n\u0000\u001a\u0004\u00084\u0010\u0007R\u0017\u00105\u001a\u0008\u0012\u0004\u0012\u00020\r0\u0004\u00a2\u0006\u0008\n\u0000\u001a\u0004\u00086\u0010\u0007R\u0017\u00107\u001a\u0008\u0012\u0004\u0012\u00020\u00100\u0004\u00a2\u0006\u0008\n\u0000\u001a\u0004\u00088\u0010\u0007R\u0017\u00109\u001a\u0008\u0012\u0004\u0012\u00020:0\u0004\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008;\u0010\u0007R\u001a\u0010<\u001a\u0008\u0012\u0004\u0012\u00020=0\u0004\u00f8\u0001\u0000\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008>\u0010\u0007R\u0017\u0010?\u001a\u0008\u0012\u0004\u0012\u00020\u00100\u0004\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008@\u0010\u0007R\u0017\u0010A\u001a\u0008\u0012\u0004\u0012\u00020\u00180\u0004\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008B\u0010\u0007R\u0017\u0010C\u001a\u0008\u0012\u0004\u0012\u00020\r0\u0004\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008D\u0010\u0007R\u0017\u0010E\u001a\u0008\u0012\u0004\u0012\u00020\r0\u0004\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008F\u0010\u0007R\u001d\u0010G\u001a\u000e\u0012\n\u0012\u0008\u0012\u0004\u0012\u00020\u00130\u000c0\u0004\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008H\u0010\u0007R\u001a\u0010I\u001a\u0008\u0012\u0004\u0012\u00020J0\u0004\u00f8\u0001\u0000\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008K\u0010\u0007R\u0017\u0010L\u001a\u0008\u0012\u0004\u0012\u00020M0\u0004\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008N\u0010\u0007R\u0017\u0010O\u001a\u0008\u0012\u0004\u0012\u00020P0\u0004\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008Q\u0010\u0007R\u0017\u0010R\u001a\u0008\u0012\u0004\u0012\u00020\u001d0\u0004\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008S\u0010\u0007\u0082\u0002\u0004\n\u0002\u0008\u0019\u00a8\u0006T"
+        "\u0000\u0090\u0001\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0003\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0010 \n\u0002\u0010\u000e\n\u0002\u0008\u0002\n\u0002\u0010\u0002\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0004\n\u0002\u0010\u000b\n\u0002\u0008\u0004\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0002\u0010\u0008\n\u0002\u0008\u0010\n\u0002\u0018\u0002\n\u0002\u0008\u0006\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u000c\n\u0002\u0018\u0002\n\u0002\u0008\u0004\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0010\u0007\n\u0002\u0008\u0004\u0008\u00c7\u0002\u0018\u00002\u00020\u0001B\u0007\u0008\u0002\u00a2\u0006\u0002\u0010\u0002R\u0017\u0010\u0003\u001a\u0008\u0012\u0004\u0012\u00020\u00050\u0004\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\u0006\u0010\u0007R\u0017\u0010\u0008\u001a\u0008\u0012\u0004\u0012\u00020\t0\u0004\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\n\u0010\u0007R\u001d\u0010\u000b\u001a\u000e\u0012\n\u0012\u0008\u0012\u0004\u0012\u00020\r0\u000c0\u0004\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\u000e\u0010\u0007R\u0017\u0010\u000f\u001a\u0008\u0012\u0004\u0012\u00020\u00100\u0004\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\u0011\u0010\u0007R\u0017\u0010\u0012\u001a\u0008\u0012\u0004\u0012\u00020\u00130\u0004\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\u0014\u0010\u0007R\u0017\u0010\u0015\u001a\u0008\u0012\u0004\u0012\u00020\r0\u0004\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\u0016\u0010\u0007R\u0017\u0010\u0017\u001a\u0008\u0012\u0004\u0012\u00020\u00180\u0004\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\u0019\u0010\u0007R\u0017\u0010\u001a\u001a\u0008\u0012\u0004\u0012\u00020\u00100\u0004\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\u001b\u0010\u0007R\u0017\u0010\u001c\u001a\u0008\u0012\u0004\u0012\u00020\u001d0\u0004\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\u001e\u0010\u0007R\u0017\u0010\u001f\u001a\u0008\u0012\u0004\u0012\u00020 0\u0004\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008!\u0010\u0007R#\u0010\"\u001a\u0014\u0012\u0010\u0012\u000e\u0012\u0004\u0012\u00020\u0001\u0012\u0004\u0012\u00020$0#0\u0004\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008%\u0010\u0007R\"\u0010&\u001a\u0008\u0012\u0004\u0012\u00020\u00100\u00048\u0006X\u0087\u0004\u00a2\u0006\u000e\n\u0000\u0012\u0004\u0008\'\u0010\u0002\u001a\u0004\u0008(\u0010\u0007R \u0010)\u001a\u0008\u0012\u0004\u0012\u00020\u00180\u00048FX\u0087\u0004\u00a2\u0006\u000c\u0012\u0004\u0008*\u0010\u0002\u001a\u0004\u0008+\u0010\u0007R\u0017\u0010,\u001a\u0008\u0012\u0004\u0012\u00020\u00100\u0004\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008-\u0010\u0007R\u0017\u0010.\u001a\u0008\u0012\u0004\u0012\u00020\u00100\u0004\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008/\u0010\u0007R\u0017\u00100\u001a\u0008\u0012\u0004\u0012\u00020\u00180\u0004\u00a2\u0006\u0008\n\u0000\u001a\u0004\u00081\u0010\u0007R\u0017\u00102\u001a\u0008\u0012\u0004\u0012\u00020\u00180\u0004\u00a2\u0006\u0008\n\u0000\u001a\u0004\u00083\u0010\u0007R\u0017\u00104\u001a\u0008\u0012\u0004\u0012\u0002050\u0004\u00a2\u0006\u0008\n\u0000\u001a\u0004\u00086\u0010\u0007R\u0017\u00107\u001a\u0008\u0012\u0004\u0012\u00020\r0\u0004\u00a2\u0006\u0008\n\u0000\u001a\u0004\u00088\u0010\u0007R\u0017\u00109\u001a\u0008\u0012\u0004\u0012\u00020\u00100\u0004\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008:\u0010\u0007R\u0017\u0010;\u001a\u0008\u0012\u0004\u0012\u00020<0\u0004\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008=\u0010\u0007R\u0017\u0010>\u001a\u0008\u0012\u0004\u0012\u00020?0\u0004\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008@\u0010\u0007R\u0017\u0010A\u001a\u0008\u0012\u0004\u0012\u00020\u00100\u0004\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008B\u0010\u0007R\u0017\u0010C\u001a\u0008\u0012\u0004\u0012\u00020\u00180\u0004\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008D\u0010\u0007R\u0017\u0010E\u001a\u0008\u0012\u0004\u0012\u00020\r0\u0004\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008F\u0010\u0007R\u0017\u0010G\u001a\u0008\u0012\u0004\u0012\u00020\r0\u0004\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008H\u0010\u0007R\u001d\u0010I\u001a\u000e\u0012\n\u0012\u0008\u0012\u0004\u0012\u00020\u00130\u000c0\u0004\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008J\u0010\u0007R\u0017\u0010K\u001a\u0008\u0012\u0004\u0012\u00020L0\u0004\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008M\u0010\u0007R\u0017\u0010N\u001a\u0008\u0012\u0004\u0012\u00020\u00130\u0004\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008O\u0010\u0007R\u0017\u0010P\u001a\u0008\u0012\u0004\u0012\u00020Q0\u0004\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008R\u0010\u0007R\u0017\u0010S\u001a\u0008\u0012\u0004\u0012\u00020T0\u0004\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008U\u0010\u0007R\u0017\u0010V\u001a\u0008\u0012\u0004\u0012\u00020\u001d0\u0004\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008W\u0010\u0007\u00a8\u0006X"
     }
     d2 = {
         "Landroidx/compose/ui/semantics/SemanticsProperties;",
@@ -57,6 +57,8 @@
         "getIsDialog",
         "IsPopup",
         "getIsPopup",
+        "IsShowingTextSubstitution",
+        "getIsShowingTextSubstitution",
         "IsTraversalGroup",
         "getIsTraversalGroup",
         "LiveRegion",
@@ -85,6 +87,8 @@
         "TextSelectionRange",
         "Landroidx/compose/ui/text/TextRange;",
         "getTextSelectionRange",
+        "TextSubstitution",
+        "getTextSubstitution",
         "ToggleableState",
         "Landroidx/compose/ui/state/ToggleableState;",
         "getToggleableState",
@@ -253,6 +257,16 @@
     .end annotation
 .end field
 
+.field private static final IsShowingTextSubstitution:Landroidx/compose/ui/semantics/SemanticsPropertyKey;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Landroidx/compose/ui/semantics/SemanticsPropertyKey<",
+            "Ljava/lang/Boolean;",
+            ">;"
+        }
+    .end annotation
+.end field
+
 .field private static final IsTraversalGroup:Landroidx/compose/ui/semantics/SemanticsPropertyKey;
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -374,6 +388,16 @@
     .end annotation
 .end field
 
+.field private static final TextSubstitution:Landroidx/compose/ui/semantics/SemanticsPropertyKey;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Landroidx/compose/ui/semantics/SemanticsPropertyKey<",
+            "Landroidx/compose/ui/text/AnnotatedString;",
+            ">;"
+        }
+    .end annotation
+.end field
+
 .field private static final ToggleableState:Landroidx/compose/ui/semantics/SemanticsPropertyKey;
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -407,7 +431,7 @@
 
 # direct methods
 .method static constructor <clinit>()V
-    .locals 5
+    .locals 4
 
     new-instance v0, Landroidx/compose/ui/semantics/SemanticsProperties;
 
@@ -416,126 +440,118 @@
     sput-object v0, Landroidx/compose/ui/semantics/SemanticsProperties;->INSTANCE:Landroidx/compose/ui/semantics/SemanticsProperties;
 
     .line 39
-    new-instance v0, Landroidx/compose/ui/semantics/SemanticsPropertyKey;
+    sget-object v0, Landroidx/compose/ui/semantics/SemanticsProperties$ContentDescription$1;->INSTANCE:Landroidx/compose/ui/semantics/SemanticsProperties$ContentDescription$1;
 
-    .line 41
-    sget-object v1, Landroidx/compose/ui/semantics/SemanticsProperties$ContentDescription$1;->INSTANCE:Landroidx/compose/ui/semantics/SemanticsProperties$ContentDescription$1;
+    check-cast v0, Lkotlin/jvm/functions/Function2;
 
-    check-cast v1, Lkotlin/jvm/functions/Function2;
+    const-string v1, "ContentDescription"
 
-    .line 39
-    const-string v2, "ContentDescription"
+    invoke-static {v1, v0}, Landroidx/compose/ui/semantics/SemanticsPropertiesKt;->AccessibilityKey(Ljava/lang/String;Lkotlin/jvm/functions/Function2;)Landroidx/compose/ui/semantics/SemanticsPropertyKey;
 
-    invoke-direct {v0, v2, v1}, Landroidx/compose/ui/semantics/SemanticsPropertyKey;-><init>(Ljava/lang/String;Lkotlin/jvm/functions/Function2;)V
+    move-result-object v0
 
     sput-object v0, Landroidx/compose/ui/semantics/SemanticsProperties;->ContentDescription:Landroidx/compose/ui/semantics/SemanticsPropertyKey;
 
     .line 49
-    new-instance v0, Landroidx/compose/ui/semantics/SemanticsPropertyKey;
+    const-string v0, "StateDescription"
 
-    const-string v1, "StateDescription"
+    invoke-static {v0}, Landroidx/compose/ui/semantics/SemanticsPropertiesKt;->AccessibilityKey(Ljava/lang/String;)Landroidx/compose/ui/semantics/SemanticsPropertyKey;
 
-    const/4 v2, 0x0
-
-    const/4 v3, 0x2
-
-    invoke-direct {v0, v1, v2, v3, v2}, Landroidx/compose/ui/semantics/SemanticsPropertyKey;-><init>(Ljava/lang/String;Lkotlin/jvm/functions/Function2;ILkotlin/jvm/internal/DefaultConstructorMarker;)V
+    move-result-object v0
 
     sput-object v0, Landroidx/compose/ui/semantics/SemanticsProperties;->StateDescription:Landroidx/compose/ui/semantics/SemanticsPropertyKey;
 
     .line 55
-    new-instance v0, Landroidx/compose/ui/semantics/SemanticsPropertyKey;
+    const-string v0, "ProgressBarRangeInfo"
 
-    const-string v1, "ProgressBarRangeInfo"
+    invoke-static {v0}, Landroidx/compose/ui/semantics/SemanticsPropertiesKt;->AccessibilityKey(Ljava/lang/String;)Landroidx/compose/ui/semantics/SemanticsPropertyKey;
 
-    invoke-direct {v0, v1, v2, v3, v2}, Landroidx/compose/ui/semantics/SemanticsPropertyKey;-><init>(Ljava/lang/String;Lkotlin/jvm/functions/Function2;ILkotlin/jvm/internal/DefaultConstructorMarker;)V
+    move-result-object v0
 
     sput-object v0, Landroidx/compose/ui/semantics/SemanticsProperties;->ProgressBarRangeInfo:Landroidx/compose/ui/semantics/SemanticsPropertyKey;
 
     .line 60
-    new-instance v0, Landroidx/compose/ui/semantics/SemanticsPropertyKey;
+    sget-object v0, Landroidx/compose/ui/semantics/SemanticsProperties$PaneTitle$1;->INSTANCE:Landroidx/compose/ui/semantics/SemanticsProperties$PaneTitle$1;
 
-    .line 62
-    sget-object v1, Landroidx/compose/ui/semantics/SemanticsProperties$PaneTitle$1;->INSTANCE:Landroidx/compose/ui/semantics/SemanticsProperties$PaneTitle$1;
+    check-cast v0, Lkotlin/jvm/functions/Function2;
 
-    check-cast v1, Lkotlin/jvm/functions/Function2;
+    const-string v1, "PaneTitle"
 
-    .line 60
-    const-string v4, "PaneTitle"
+    invoke-static {v1, v0}, Landroidx/compose/ui/semantics/SemanticsPropertiesKt;->AccessibilityKey(Ljava/lang/String;Lkotlin/jvm/functions/Function2;)Landroidx/compose/ui/semantics/SemanticsPropertyKey;
 
-    invoke-direct {v0, v4, v1}, Landroidx/compose/ui/semantics/SemanticsPropertyKey;-><init>(Ljava/lang/String;Lkotlin/jvm/functions/Function2;)V
+    move-result-object v0
 
     sput-object v0, Landroidx/compose/ui/semantics/SemanticsProperties;->PaneTitle:Landroidx/compose/ui/semantics/SemanticsPropertyKey;
 
     .line 70
-    new-instance v0, Landroidx/compose/ui/semantics/SemanticsPropertyKey;
+    const-string v0, "SelectableGroup"
 
-    const-string v1, "SelectableGroup"
+    invoke-static {v0}, Landroidx/compose/ui/semantics/SemanticsPropertiesKt;->AccessibilityKey(Ljava/lang/String;)Landroidx/compose/ui/semantics/SemanticsPropertyKey;
 
-    invoke-direct {v0, v1, v2, v3, v2}, Landroidx/compose/ui/semantics/SemanticsPropertyKey;-><init>(Ljava/lang/String;Lkotlin/jvm/functions/Function2;ILkotlin/jvm/internal/DefaultConstructorMarker;)V
+    move-result-object v0
 
     sput-object v0, Landroidx/compose/ui/semantics/SemanticsProperties;->SelectableGroup:Landroidx/compose/ui/semantics/SemanticsPropertyKey;
 
     .line 73
-    new-instance v0, Landroidx/compose/ui/semantics/SemanticsPropertyKey;
+    const-string v0, "CollectionInfo"
 
-    const-string v1, "CollectionInfo"
+    invoke-static {v0}, Landroidx/compose/ui/semantics/SemanticsPropertiesKt;->AccessibilityKey(Ljava/lang/String;)Landroidx/compose/ui/semantics/SemanticsPropertyKey;
 
-    invoke-direct {v0, v1, v2, v3, v2}, Landroidx/compose/ui/semantics/SemanticsPropertyKey;-><init>(Ljava/lang/String;Lkotlin/jvm/functions/Function2;ILkotlin/jvm/internal/DefaultConstructorMarker;)V
+    move-result-object v0
 
     sput-object v0, Landroidx/compose/ui/semantics/SemanticsProperties;->CollectionInfo:Landroidx/compose/ui/semantics/SemanticsPropertyKey;
 
     .line 76
-    new-instance v0, Landroidx/compose/ui/semantics/SemanticsPropertyKey;
+    const-string v0, "CollectionItemInfo"
 
-    const-string v1, "CollectionItemInfo"
+    invoke-static {v0}, Landroidx/compose/ui/semantics/SemanticsPropertiesKt;->AccessibilityKey(Ljava/lang/String;)Landroidx/compose/ui/semantics/SemanticsPropertyKey;
 
-    invoke-direct {v0, v1, v2, v3, v2}, Landroidx/compose/ui/semantics/SemanticsPropertyKey;-><init>(Ljava/lang/String;Lkotlin/jvm/functions/Function2;ILkotlin/jvm/internal/DefaultConstructorMarker;)V
+    move-result-object v0
 
     sput-object v0, Landroidx/compose/ui/semantics/SemanticsProperties;->CollectionItemInfo:Landroidx/compose/ui/semantics/SemanticsPropertyKey;
 
     .line 81
-    new-instance v0, Landroidx/compose/ui/semantics/SemanticsPropertyKey;
+    const-string v0, "Heading"
 
-    const-string v1, "Heading"
+    invoke-static {v0}, Landroidx/compose/ui/semantics/SemanticsPropertiesKt;->AccessibilityKey(Ljava/lang/String;)Landroidx/compose/ui/semantics/SemanticsPropertyKey;
 
-    invoke-direct {v0, v1, v2, v3, v2}, Landroidx/compose/ui/semantics/SemanticsPropertyKey;-><init>(Ljava/lang/String;Lkotlin/jvm/functions/Function2;ILkotlin/jvm/internal/DefaultConstructorMarker;)V
+    move-result-object v0
 
     sput-object v0, Landroidx/compose/ui/semantics/SemanticsProperties;->Heading:Landroidx/compose/ui/semantics/SemanticsPropertyKey;
 
     .line 86
-    new-instance v0, Landroidx/compose/ui/semantics/SemanticsPropertyKey;
+    const-string v0, "Disabled"
 
-    const-string v1, "Disabled"
+    invoke-static {v0}, Landroidx/compose/ui/semantics/SemanticsPropertiesKt;->AccessibilityKey(Ljava/lang/String;)Landroidx/compose/ui/semantics/SemanticsPropertyKey;
 
-    invoke-direct {v0, v1, v2, v3, v2}, Landroidx/compose/ui/semantics/SemanticsPropertyKey;-><init>(Ljava/lang/String;Lkotlin/jvm/functions/Function2;ILkotlin/jvm/internal/DefaultConstructorMarker;)V
+    move-result-object v0
 
     sput-object v0, Landroidx/compose/ui/semantics/SemanticsProperties;->Disabled:Landroidx/compose/ui/semantics/SemanticsPropertyKey;
 
     .line 91
-    new-instance v0, Landroidx/compose/ui/semantics/SemanticsPropertyKey;
+    const-string v0, "LiveRegion"
 
-    const-string v1, "LiveRegion"
+    invoke-static {v0}, Landroidx/compose/ui/semantics/SemanticsPropertiesKt;->AccessibilityKey(Ljava/lang/String;)Landroidx/compose/ui/semantics/SemanticsPropertyKey;
 
-    invoke-direct {v0, v1, v2, v3, v2}, Landroidx/compose/ui/semantics/SemanticsPropertyKey;-><init>(Ljava/lang/String;Lkotlin/jvm/functions/Function2;ILkotlin/jvm/internal/DefaultConstructorMarker;)V
+    move-result-object v0
 
     sput-object v0, Landroidx/compose/ui/semantics/SemanticsProperties;->LiveRegion:Landroidx/compose/ui/semantics/SemanticsPropertyKey;
 
     .line 96
-    new-instance v0, Landroidx/compose/ui/semantics/SemanticsPropertyKey;
+    const-string v0, "Focused"
 
-    const-string v1, "Focused"
+    invoke-static {v0}, Landroidx/compose/ui/semantics/SemanticsPropertiesKt;->AccessibilityKey(Ljava/lang/String;)Landroidx/compose/ui/semantics/SemanticsPropertyKey;
 
-    invoke-direct {v0, v1, v2, v3, v2}, Landroidx/compose/ui/semantics/SemanticsPropertyKey;-><init>(Ljava/lang/String;Lkotlin/jvm/functions/Function2;ILkotlin/jvm/internal/DefaultConstructorMarker;)V
+    move-result-object v0
 
     sput-object v0, Landroidx/compose/ui/semantics/SemanticsProperties;->Focused:Landroidx/compose/ui/semantics/SemanticsPropertyKey;
 
     .line 110
-    new-instance v0, Landroidx/compose/ui/semantics/SemanticsPropertyKey;
+    const-string v0, "IsTraversalGroup"
 
-    const-string v1, "IsTraversalGroup"
+    invoke-static {v0}, Landroidx/compose/ui/semantics/SemanticsPropertiesKt;->AccessibilityKey(Ljava/lang/String;)Landroidx/compose/ui/semantics/SemanticsPropertyKey;
 
-    invoke-direct {v0, v1, v2, v3, v2}, Landroidx/compose/ui/semantics/SemanticsPropertyKey;-><init>(Ljava/lang/String;Lkotlin/jvm/functions/Function2;ILkotlin/jvm/internal/DefaultConstructorMarker;)V
+    move-result-object v0
 
     sput-object v0, Landroidx/compose/ui/semantics/SemanticsProperties;->IsTraversalGroup:Landroidx/compose/ui/semantics/SemanticsPropertyKey;
 
@@ -548,182 +564,198 @@
     check-cast v1, Lkotlin/jvm/functions/Function2;
 
     .line 116
-    const-string v4, "InvisibleToUser"
+    const-string v2, "InvisibleToUser"
 
-    invoke-direct {v0, v4, v1}, Landroidx/compose/ui/semantics/SemanticsPropertyKey;-><init>(Ljava/lang/String;Lkotlin/jvm/functions/Function2;)V
+    invoke-direct {v0, v2, v1}, Landroidx/compose/ui/semantics/SemanticsPropertyKey;-><init>(Ljava/lang/String;Lkotlin/jvm/functions/Function2;)V
 
     sput-object v0, Landroidx/compose/ui/semantics/SemanticsProperties;->InvisibleToUser:Landroidx/compose/ui/semantics/SemanticsPropertyKey;
 
     .line 126
-    new-instance v0, Landroidx/compose/ui/semantics/SemanticsPropertyKey;
+    sget-object v0, Landroidx/compose/ui/semantics/SemanticsProperties$TraversalIndex$1;->INSTANCE:Landroidx/compose/ui/semantics/SemanticsProperties$TraversalIndex$1;
 
-    .line 128
-    sget-object v1, Landroidx/compose/ui/semantics/SemanticsProperties$TraversalIndex$1;->INSTANCE:Landroidx/compose/ui/semantics/SemanticsProperties$TraversalIndex$1;
+    check-cast v0, Lkotlin/jvm/functions/Function2;
 
-    check-cast v1, Lkotlin/jvm/functions/Function2;
+    const-string v1, "TraversalIndex"
 
-    .line 126
-    const-string v4, "TraversalIndex"
+    invoke-static {v1, v0}, Landroidx/compose/ui/semantics/SemanticsPropertiesKt;->AccessibilityKey(Ljava/lang/String;Lkotlin/jvm/functions/Function2;)Landroidx/compose/ui/semantics/SemanticsPropertyKey;
 
-    invoke-direct {v0, v4, v1}, Landroidx/compose/ui/semantics/SemanticsPropertyKey;-><init>(Ljava/lang/String;Lkotlin/jvm/functions/Function2;)V
+    move-result-object v0
 
     sput-object v0, Landroidx/compose/ui/semantics/SemanticsProperties;->TraversalIndex:Landroidx/compose/ui/semantics/SemanticsPropertyKey;
 
     .line 138
-    new-instance v0, Landroidx/compose/ui/semantics/SemanticsPropertyKey;
+    const-string v0, "HorizontalScrollAxisRange"
 
-    const-string v1, "HorizontalScrollAxisRange"
+    invoke-static {v0}, Landroidx/compose/ui/semantics/SemanticsPropertiesKt;->AccessibilityKey(Ljava/lang/String;)Landroidx/compose/ui/semantics/SemanticsPropertyKey;
 
-    invoke-direct {v0, v1, v2, v3, v2}, Landroidx/compose/ui/semantics/SemanticsPropertyKey;-><init>(Ljava/lang/String;Lkotlin/jvm/functions/Function2;ILkotlin/jvm/internal/DefaultConstructorMarker;)V
+    move-result-object v0
 
     sput-object v0, Landroidx/compose/ui/semantics/SemanticsProperties;->HorizontalScrollAxisRange:Landroidx/compose/ui/semantics/SemanticsPropertyKey;
 
     .line 144
-    new-instance v0, Landroidx/compose/ui/semantics/SemanticsPropertyKey;
+    const-string v0, "VerticalScrollAxisRange"
 
-    const-string v1, "VerticalScrollAxisRange"
+    invoke-static {v0}, Landroidx/compose/ui/semantics/SemanticsPropertiesKt;->AccessibilityKey(Ljava/lang/String;)Landroidx/compose/ui/semantics/SemanticsPropertyKey;
 
-    invoke-direct {v0, v1, v2, v3, v2}, Landroidx/compose/ui/semantics/SemanticsPropertyKey;-><init>(Ljava/lang/String;Lkotlin/jvm/functions/Function2;ILkotlin/jvm/internal/DefaultConstructorMarker;)V
+    move-result-object v0
 
     sput-object v0, Landroidx/compose/ui/semantics/SemanticsProperties;->VerticalScrollAxisRange:Landroidx/compose/ui/semantics/SemanticsPropertyKey;
 
     .line 149
-    new-instance v0, Landroidx/compose/ui/semantics/SemanticsPropertyKey;
+    sget-object v0, Landroidx/compose/ui/semantics/SemanticsProperties$IsPopup$1;->INSTANCE:Landroidx/compose/ui/semantics/SemanticsProperties$IsPopup$1;
 
-    .line 151
-    sget-object v1, Landroidx/compose/ui/semantics/SemanticsProperties$IsPopup$1;->INSTANCE:Landroidx/compose/ui/semantics/SemanticsProperties$IsPopup$1;
+    check-cast v0, Lkotlin/jvm/functions/Function2;
 
-    check-cast v1, Lkotlin/jvm/functions/Function2;
+    const-string v1, "IsPopup"
 
-    .line 149
-    const-string v4, "IsPopup"
+    invoke-static {v1, v0}, Landroidx/compose/ui/semantics/SemanticsPropertiesKt;->AccessibilityKey(Ljava/lang/String;Lkotlin/jvm/functions/Function2;)Landroidx/compose/ui/semantics/SemanticsPropertyKey;
 
-    invoke-direct {v0, v4, v1}, Landroidx/compose/ui/semantics/SemanticsPropertyKey;-><init>(Ljava/lang/String;Lkotlin/jvm/functions/Function2;)V
+    move-result-object v0
 
     sput-object v0, Landroidx/compose/ui/semantics/SemanticsProperties;->IsPopup:Landroidx/compose/ui/semantics/SemanticsPropertyKey;
 
     .line 162
-    new-instance v0, Landroidx/compose/ui/semantics/SemanticsPropertyKey;
+    sget-object v0, Landroidx/compose/ui/semantics/SemanticsProperties$IsDialog$1;->INSTANCE:Landroidx/compose/ui/semantics/SemanticsProperties$IsDialog$1;
 
-    .line 164
-    sget-object v1, Landroidx/compose/ui/semantics/SemanticsProperties$IsDialog$1;->INSTANCE:Landroidx/compose/ui/semantics/SemanticsProperties$IsDialog$1;
+    check-cast v0, Lkotlin/jvm/functions/Function2;
 
-    check-cast v1, Lkotlin/jvm/functions/Function2;
+    const-string v1, "IsDialog"
 
-    .line 162
-    const-string v4, "IsDialog"
+    invoke-static {v1, v0}, Landroidx/compose/ui/semantics/SemanticsPropertiesKt;->AccessibilityKey(Ljava/lang/String;Lkotlin/jvm/functions/Function2;)Landroidx/compose/ui/semantics/SemanticsPropertyKey;
 
-    invoke-direct {v0, v4, v1}, Landroidx/compose/ui/semantics/SemanticsPropertyKey;-><init>(Ljava/lang/String;Lkotlin/jvm/functions/Function2;)V
+    move-result-object v0
 
     sput-object v0, Landroidx/compose/ui/semantics/SemanticsProperties;->IsDialog:Landroidx/compose/ui/semantics/SemanticsPropertyKey;
 
     .line 181
-    new-instance v0, Landroidx/compose/ui/semantics/SemanticsPropertyKey;
+    sget-object v0, Landroidx/compose/ui/semantics/SemanticsProperties$Role$1;->INSTANCE:Landroidx/compose/ui/semantics/SemanticsProperties$Role$1;
 
-    sget-object v1, Landroidx/compose/ui/semantics/SemanticsProperties$Role$1;->INSTANCE:Landroidx/compose/ui/semantics/SemanticsProperties$Role$1;
+    check-cast v0, Lkotlin/jvm/functions/Function2;
 
-    check-cast v1, Lkotlin/jvm/functions/Function2;
+    const-string v1, "Role"
 
-    const-string v4, "Role"
+    invoke-static {v1, v0}, Landroidx/compose/ui/semantics/SemanticsPropertiesKt;->AccessibilityKey(Ljava/lang/String;Lkotlin/jvm/functions/Function2;)Landroidx/compose/ui/semantics/SemanticsPropertyKey;
 
-    invoke-direct {v0, v4, v1}, Landroidx/compose/ui/semantics/SemanticsPropertyKey;-><init>(Ljava/lang/String;Lkotlin/jvm/functions/Function2;)V
+    move-result-object v0
 
     sput-object v0, Landroidx/compose/ui/semantics/SemanticsProperties;->Role:Landroidx/compose/ui/semantics/SemanticsPropertyKey;
 
     .line 186
     new-instance v0, Landroidx/compose/ui/semantics/SemanticsPropertyKey;
 
-    .line 188
+    .line 189
     sget-object v1, Landroidx/compose/ui/semantics/SemanticsProperties$TestTag$1;->INSTANCE:Landroidx/compose/ui/semantics/SemanticsProperties$TestTag$1;
 
     check-cast v1, Lkotlin/jvm/functions/Function2;
 
     .line 186
-    const-string v4, "TestTag"
+    const-string v2, "TestTag"
 
-    invoke-direct {v0, v4, v1}, Landroidx/compose/ui/semantics/SemanticsPropertyKey;-><init>(Ljava/lang/String;Lkotlin/jvm/functions/Function2;)V
+    const/4 v3, 0x0
+
+    invoke-direct {v0, v2, v3, v1}, Landroidx/compose/ui/semantics/SemanticsPropertyKey;-><init>(Ljava/lang/String;ZLkotlin/jvm/functions/Function2;)V
 
     sput-object v0, Landroidx/compose/ui/semantics/SemanticsProperties;->TestTag:Landroidx/compose/ui/semantics/SemanticsPropertyKey;
 
-    .line 197
-    new-instance v0, Landroidx/compose/ui/semantics/SemanticsPropertyKey;
+    .line 198
+    sget-object v0, Landroidx/compose/ui/semantics/SemanticsProperties$Text$1;->INSTANCE:Landroidx/compose/ui/semantics/SemanticsProperties$Text$1;
 
-    .line 199
-    sget-object v1, Landroidx/compose/ui/semantics/SemanticsProperties$Text$1;->INSTANCE:Landroidx/compose/ui/semantics/SemanticsProperties$Text$1;
+    check-cast v0, Lkotlin/jvm/functions/Function2;
 
-    check-cast v1, Lkotlin/jvm/functions/Function2;
+    const-string v1, "Text"
 
-    .line 197
-    const-string v4, "Text"
+    invoke-static {v1, v0}, Landroidx/compose/ui/semantics/SemanticsPropertiesKt;->AccessibilityKey(Ljava/lang/String;Lkotlin/jvm/functions/Function2;)Landroidx/compose/ui/semantics/SemanticsPropertyKey;
 
-    invoke-direct {v0, v4, v1}, Landroidx/compose/ui/semantics/SemanticsPropertyKey;-><init>(Ljava/lang/String;Lkotlin/jvm/functions/Function2;)V
+    move-result-object v0
 
     sput-object v0, Landroidx/compose/ui/semantics/SemanticsProperties;->Text:Landroidx/compose/ui/semantics/SemanticsPropertyKey;
 
-    .line 207
+    .line 208
     new-instance v0, Landroidx/compose/ui/semantics/SemanticsPropertyKey;
 
-    const-string v1, "EditableText"
+    const-string v1, "TextSubstitution"
+
+    const/4 v2, 0x0
+
+    const/4 v3, 0x2
 
     invoke-direct {v0, v1, v2, v3, v2}, Landroidx/compose/ui/semantics/SemanticsPropertyKey;-><init>(Ljava/lang/String;Lkotlin/jvm/functions/Function2;ILkotlin/jvm/internal/DefaultConstructorMarker;)V
+
+    sput-object v0, Landroidx/compose/ui/semantics/SemanticsProperties;->TextSubstitution:Landroidx/compose/ui/semantics/SemanticsPropertyKey;
+
+    .line 213
+    new-instance v0, Landroidx/compose/ui/semantics/SemanticsPropertyKey;
+
+    const-string v1, "IsShowingTextSubstitution"
+
+    invoke-direct {v0, v1, v2, v3, v2}, Landroidx/compose/ui/semantics/SemanticsPropertyKey;-><init>(Ljava/lang/String;Lkotlin/jvm/functions/Function2;ILkotlin/jvm/internal/DefaultConstructorMarker;)V
+
+    sput-object v0, Landroidx/compose/ui/semantics/SemanticsProperties;->IsShowingTextSubstitution:Landroidx/compose/ui/semantics/SemanticsPropertyKey;
+
+    .line 218
+    const-string v0, "EditableText"
+
+    invoke-static {v0}, Landroidx/compose/ui/semantics/SemanticsPropertiesKt;->AccessibilityKey(Ljava/lang/String;)Landroidx/compose/ui/semantics/SemanticsPropertyKey;
+
+    move-result-object v0
 
     sput-object v0, Landroidx/compose/ui/semantics/SemanticsProperties;->EditableText:Landroidx/compose/ui/semantics/SemanticsPropertyKey;
 
-    .line 212
-    new-instance v0, Landroidx/compose/ui/semantics/SemanticsPropertyKey;
+    .line 223
+    const-string v0, "TextSelectionRange"
 
-    const-string v1, "TextSelectionRange"
+    invoke-static {v0}, Landroidx/compose/ui/semantics/SemanticsPropertiesKt;->AccessibilityKey(Ljava/lang/String;)Landroidx/compose/ui/semantics/SemanticsPropertyKey;
 
-    invoke-direct {v0, v1, v2, v3, v2}, Landroidx/compose/ui/semantics/SemanticsPropertyKey;-><init>(Ljava/lang/String;Lkotlin/jvm/functions/Function2;ILkotlin/jvm/internal/DefaultConstructorMarker;)V
+    move-result-object v0
 
     sput-object v0, Landroidx/compose/ui/semantics/SemanticsProperties;->TextSelectionRange:Landroidx/compose/ui/semantics/SemanticsPropertyKey;
 
-    .line 217
-    new-instance v0, Landroidx/compose/ui/semantics/SemanticsPropertyKey;
+    .line 228
+    const-string v0, "ImeAction"
 
-    const-string v1, "ImeAction"
+    invoke-static {v0}, Landroidx/compose/ui/semantics/SemanticsPropertiesKt;->AccessibilityKey(Ljava/lang/String;)Landroidx/compose/ui/semantics/SemanticsPropertyKey;
 
-    invoke-direct {v0, v1, v2, v3, v2}, Landroidx/compose/ui/semantics/SemanticsPropertyKey;-><init>(Ljava/lang/String;Lkotlin/jvm/functions/Function2;ILkotlin/jvm/internal/DefaultConstructorMarker;)V
+    move-result-object v0
 
     sput-object v0, Landroidx/compose/ui/semantics/SemanticsProperties;->ImeAction:Landroidx/compose/ui/semantics/SemanticsPropertyKey;
 
-    .line 222
-    new-instance v0, Landroidx/compose/ui/semantics/SemanticsPropertyKey;
+    .line 233
+    const-string v0, "Selected"
 
-    const-string v1, "Selected"
+    invoke-static {v0}, Landroidx/compose/ui/semantics/SemanticsPropertiesKt;->AccessibilityKey(Ljava/lang/String;)Landroidx/compose/ui/semantics/SemanticsPropertyKey;
 
-    invoke-direct {v0, v1, v2, v3, v2}, Landroidx/compose/ui/semantics/SemanticsPropertyKey;-><init>(Ljava/lang/String;Lkotlin/jvm/functions/Function2;ILkotlin/jvm/internal/DefaultConstructorMarker;)V
+    move-result-object v0
 
     sput-object v0, Landroidx/compose/ui/semantics/SemanticsProperties;->Selected:Landroidx/compose/ui/semantics/SemanticsPropertyKey;
 
-    .line 227
-    new-instance v0, Landroidx/compose/ui/semantics/SemanticsPropertyKey;
+    .line 238
+    const-string v0, "ToggleableState"
 
-    const-string v1, "ToggleableState"
+    invoke-static {v0}, Landroidx/compose/ui/semantics/SemanticsPropertiesKt;->AccessibilityKey(Ljava/lang/String;)Landroidx/compose/ui/semantics/SemanticsPropertyKey;
 
-    invoke-direct {v0, v1, v2, v3, v2}, Landroidx/compose/ui/semantics/SemanticsPropertyKey;-><init>(Ljava/lang/String;Lkotlin/jvm/functions/Function2;ILkotlin/jvm/internal/DefaultConstructorMarker;)V
+    move-result-object v0
 
     sput-object v0, Landroidx/compose/ui/semantics/SemanticsProperties;->ToggleableState:Landroidx/compose/ui/semantics/SemanticsPropertyKey;
 
-    .line 232
-    new-instance v0, Landroidx/compose/ui/semantics/SemanticsPropertyKey;
+    .line 243
+    const-string v0, "Password"
 
-    const-string v1, "Password"
+    invoke-static {v0}, Landroidx/compose/ui/semantics/SemanticsPropertiesKt;->AccessibilityKey(Ljava/lang/String;)Landroidx/compose/ui/semantics/SemanticsPropertyKey;
 
-    invoke-direct {v0, v1, v2, v3, v2}, Landroidx/compose/ui/semantics/SemanticsPropertyKey;-><init>(Ljava/lang/String;Lkotlin/jvm/functions/Function2;ILkotlin/jvm/internal/DefaultConstructorMarker;)V
+    move-result-object v0
 
     sput-object v0, Landroidx/compose/ui/semantics/SemanticsProperties;->Password:Landroidx/compose/ui/semantics/SemanticsPropertyKey;
 
-    .line 237
-    new-instance v0, Landroidx/compose/ui/semantics/SemanticsPropertyKey;
+    .line 248
+    const-string v0, "Error"
 
-    const-string v1, "Error"
+    invoke-static {v0}, Landroidx/compose/ui/semantics/SemanticsPropertiesKt;->AccessibilityKey(Ljava/lang/String;)Landroidx/compose/ui/semantics/SemanticsPropertyKey;
 
-    invoke-direct {v0, v1, v2, v3, v2}, Landroidx/compose/ui/semantics/SemanticsPropertyKey;-><init>(Ljava/lang/String;Lkotlin/jvm/functions/Function2;ILkotlin/jvm/internal/DefaultConstructorMarker;)V
+    move-result-object v0
 
     sput-object v0, Landroidx/compose/ui/semantics/SemanticsProperties;->Error:Landroidx/compose/ui/semantics/SemanticsPropertyKey;
 
-    .line 242
+    .line 253
     new-instance v0, Landroidx/compose/ui/semantics/SemanticsPropertyKey;
 
     const-string v1, "IndexForKey"
@@ -731,6 +763,10 @@
     invoke-direct {v0, v1, v2, v3, v2}, Landroidx/compose/ui/semantics/SemanticsPropertyKey;-><init>(Ljava/lang/String;Lkotlin/jvm/functions/Function2;ILkotlin/jvm/internal/DefaultConstructorMarker;)V
 
     sput-object v0, Landroidx/compose/ui/semantics/SemanticsProperties;->IndexForKey:Landroidx/compose/ui/semantics/SemanticsPropertyKey;
+
+    const/16 v0, 0x8
+
+    sput v0, Landroidx/compose/ui/semantics/SemanticsProperties;->$stable:I
 
     return-void
 .end method
@@ -845,7 +881,7 @@
         }
     .end annotation
 
-    .line 207
+    .line 218
     sget-object p0, Landroidx/compose/ui/semantics/SemanticsProperties;->EditableText:Landroidx/compose/ui/semantics/SemanticsPropertyKey;
 
     return-object p0
@@ -862,7 +898,7 @@
         }
     .end annotation
 
-    .line 237
+    .line 248
     sget-object p0, Landroidx/compose/ui/semantics/SemanticsProperties;->Error:Landroidx/compose/ui/semantics/SemanticsPropertyKey;
 
     return-object p0
@@ -930,7 +966,7 @@
         }
     .end annotation
 
-    .line 217
+    .line 228
     sget-object p0, Landroidx/compose/ui/semantics/SemanticsProperties;->ImeAction:Landroidx/compose/ui/semantics/SemanticsPropertyKey;
 
     return-object p0
@@ -949,7 +985,7 @@
         }
     .end annotation
 
-    .line 242
+    .line 253
     sget-object p0, Landroidx/compose/ui/semantics/SemanticsProperties;->IndexForKey:Landroidx/compose/ui/semantics/SemanticsPropertyKey;
 
     return-object p0
@@ -1023,6 +1059,23 @@
     return-object p0
 .end method
 
+.method public final getIsShowingTextSubstitution()Landroidx/compose/ui/semantics/SemanticsPropertyKey;
+    .locals 0
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()",
+            "Landroidx/compose/ui/semantics/SemanticsPropertyKey<",
+            "Ljava/lang/Boolean;",
+            ">;"
+        }
+    .end annotation
+
+    .line 213
+    sget-object p0, Landroidx/compose/ui/semantics/SemanticsProperties;->IsShowingTextSubstitution:Landroidx/compose/ui/semantics/SemanticsPropertyKey;
+
+    return-object p0
+.end method
+
 .method public final getIsTraversalGroup()Landroidx/compose/ui/semantics/SemanticsPropertyKey;
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
@@ -1085,7 +1138,7 @@
         }
     .end annotation
 
-    .line 232
+    .line 243
     sget-object p0, Landroidx/compose/ui/semantics/SemanticsProperties;->Password:Landroidx/compose/ui/semantics/SemanticsPropertyKey;
 
     return-object p0
@@ -1153,7 +1206,7 @@
         }
     .end annotation
 
-    .line 222
+    .line 233
     sget-object p0, Landroidx/compose/ui/semantics/SemanticsProperties;->Selected:Landroidx/compose/ui/semantics/SemanticsPropertyKey;
 
     return-object p0
@@ -1205,7 +1258,7 @@
         }
     .end annotation
 
-    .line 197
+    .line 198
     sget-object p0, Landroidx/compose/ui/semantics/SemanticsProperties;->Text:Landroidx/compose/ui/semantics/SemanticsPropertyKey;
 
     return-object p0
@@ -1222,8 +1275,25 @@
         }
     .end annotation
 
-    .line 212
+    .line 223
     sget-object p0, Landroidx/compose/ui/semantics/SemanticsProperties;->TextSelectionRange:Landroidx/compose/ui/semantics/SemanticsPropertyKey;
+
+    return-object p0
+.end method
+
+.method public final getTextSubstitution()Landroidx/compose/ui/semantics/SemanticsPropertyKey;
+    .locals 0
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()",
+            "Landroidx/compose/ui/semantics/SemanticsPropertyKey<",
+            "Landroidx/compose/ui/text/AnnotatedString;",
+            ">;"
+        }
+    .end annotation
+
+    .line 208
+    sget-object p0, Landroidx/compose/ui/semantics/SemanticsProperties;->TextSubstitution:Landroidx/compose/ui/semantics/SemanticsPropertyKey;
 
     return-object p0
 .end method
@@ -1239,7 +1309,7 @@
         }
     .end annotation
 
-    .line 227
+    .line 238
     sget-object p0, Landroidx/compose/ui/semantics/SemanticsProperties;->ToggleableState:Landroidx/compose/ui/semantics/SemanticsPropertyKey;
 
     return-object p0

@@ -138,7 +138,7 @@
 
     const/4 v0, -0x1
 
-    const-string v1, "androidx.compose.runtime.movableContentOf.<anonymous> (MovableContent.kt:38)"
+    const-string v1, "androidx.compose.runtime.movableContentOf.<anonymous> (MovableContent.kt:39)"
 
     const v2, -0x26495411
 

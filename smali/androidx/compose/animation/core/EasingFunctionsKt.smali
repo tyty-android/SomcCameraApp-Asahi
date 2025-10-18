@@ -162,6 +162,66 @@
 
 
 # direct methods
+.method public static synthetic $r8$lambda$0mT70ha04S60Nb7kj5GmrRTBujI(F)F
+    .locals 0
+
+    invoke-static {p0}, Landroidx/compose/animation/core/EasingFunctionsKt;->EaseInElastic$lambda$0(F)F
+
+    move-result p0
+
+    return p0
+.end method
+
+.method public static synthetic $r8$lambda$IM0lvmKM4abXPeEETz8MZPm1uPA(F)F
+    .locals 0
+
+    invoke-static {p0}, Landroidx/compose/animation/core/EasingFunctionsKt;->EaseOutBounce$lambda$3(F)F
+
+    move-result p0
+
+    return p0
+.end method
+
+.method public static synthetic $r8$lambda$Rw_gAMuJSae-_PfDuqUI-Jv2CnE(F)F
+    .locals 0
+
+    invoke-static {p0}, Landroidx/compose/animation/core/EasingFunctionsKt;->EaseInOutElastic$lambda$2(F)F
+
+    move-result p0
+
+    return p0
+.end method
+
+.method public static synthetic $r8$lambda$Th_2_OW0nSNGWQlUpYyXgUsD8Kg(F)F
+    .locals 0
+
+    invoke-static {p0}, Landroidx/compose/animation/core/EasingFunctionsKt;->EaseOutElastic$lambda$1(F)F
+
+    move-result p0
+
+    return p0
+.end method
+
+.method public static synthetic $r8$lambda$haH0mB4KwVWLBMbjhosFFDIQ4bk(F)F
+    .locals 0
+
+    invoke-static {p0}, Landroidx/compose/animation/core/EasingFunctionsKt;->EaseInOutBounce$lambda$5(F)F
+
+    move-result p0
+
+    return p0
+.end method
+
+.method public static synthetic $r8$lambda$lrLe4bTzQ5p7bBLUaZZav2gblT4(F)F
+    .locals 0
+
+    invoke-static {p0}, Landroidx/compose/animation/core/EasingFunctionsKt;->EaseInBounce$lambda$4(F)F
+
+    move-result p0
+
+    return p0
+.end method
+
 .method static constructor <clinit>()V
     .locals 12
 
@@ -510,48 +570,466 @@
     sput-object v0, Landroidx/compose/animation/core/EasingFunctionsKt;->EaseInOutBack:Landroidx/compose/animation/core/Easing;
 
     .line 176
-    sget-object v0, Landroidx/compose/animation/core/EasingFunctionsKt$EaseInElastic$1;->INSTANCE:Landroidx/compose/animation/core/EasingFunctionsKt$EaseInElastic$1;
+    new-instance v0, Landroidx/compose/animation/core/EasingFunctionsKt$$ExternalSyntheticLambda0;
 
-    check-cast v0, Landroidx/compose/animation/core/Easing;
+    invoke-direct {v0}, Landroidx/compose/animation/core/EasingFunctionsKt$$ExternalSyntheticLambda0;-><init>()V
 
     sput-object v0, Landroidx/compose/animation/core/EasingFunctionsKt;->EaseInElastic:Landroidx/compose/animation/core/Easing;
 
     .line 191
-    sget-object v0, Landroidx/compose/animation/core/EasingFunctionsKt$EaseOutElastic$1;->INSTANCE:Landroidx/compose/animation/core/EasingFunctionsKt$EaseOutElastic$1;
+    new-instance v0, Landroidx/compose/animation/core/EasingFunctionsKt$$ExternalSyntheticLambda1;
 
-    check-cast v0, Landroidx/compose/animation/core/Easing;
+    invoke-direct {v0}, Landroidx/compose/animation/core/EasingFunctionsKt$$ExternalSyntheticLambda1;-><init>()V
 
     sput-object v0, Landroidx/compose/animation/core/EasingFunctionsKt;->EaseOutElastic:Landroidx/compose/animation/core/Easing;
 
     .line 206
-    sget-object v0, Landroidx/compose/animation/core/EasingFunctionsKt$EaseInOutElastic$1;->INSTANCE:Landroidx/compose/animation/core/EasingFunctionsKt$EaseInOutElastic$1;
+    new-instance v0, Landroidx/compose/animation/core/EasingFunctionsKt$$ExternalSyntheticLambda2;
 
-    check-cast v0, Landroidx/compose/animation/core/Easing;
+    invoke-direct {v0}, Landroidx/compose/animation/core/EasingFunctionsKt$$ExternalSyntheticLambda2;-><init>()V
 
     sput-object v0, Landroidx/compose/animation/core/EasingFunctionsKt;->EaseInOutElastic:Landroidx/compose/animation/core/Easing;
 
     .line 223
-    sget-object v0, Landroidx/compose/animation/core/EasingFunctionsKt$EaseOutBounce$1;->INSTANCE:Landroidx/compose/animation/core/EasingFunctionsKt$EaseOutBounce$1;
+    new-instance v0, Landroidx/compose/animation/core/EasingFunctionsKt$$ExternalSyntheticLambda3;
 
-    check-cast v0, Landroidx/compose/animation/core/Easing;
+    invoke-direct {v0}, Landroidx/compose/animation/core/EasingFunctionsKt$$ExternalSyntheticLambda3;-><init>()V
 
     sput-object v0, Landroidx/compose/animation/core/EasingFunctionsKt;->EaseOutBounce:Landroidx/compose/animation/core/Easing;
 
     .line 245
-    sget-object v0, Landroidx/compose/animation/core/EasingFunctionsKt$EaseInBounce$1;->INSTANCE:Landroidx/compose/animation/core/EasingFunctionsKt$EaseInBounce$1;
+    new-instance v0, Landroidx/compose/animation/core/EasingFunctionsKt$$ExternalSyntheticLambda4;
 
-    check-cast v0, Landroidx/compose/animation/core/Easing;
+    invoke-direct {v0}, Landroidx/compose/animation/core/EasingFunctionsKt$$ExternalSyntheticLambda4;-><init>()V
 
     sput-object v0, Landroidx/compose/animation/core/EasingFunctionsKt;->EaseInBounce:Landroidx/compose/animation/core/Easing;
 
     .line 252
-    sget-object v0, Landroidx/compose/animation/core/EasingFunctionsKt$EaseInOutBounce$1;->INSTANCE:Landroidx/compose/animation/core/EasingFunctionsKt$EaseInOutBounce$1;
+    new-instance v0, Landroidx/compose/animation/core/EasingFunctionsKt$$ExternalSyntheticLambda5;
 
-    check-cast v0, Landroidx/compose/animation/core/Easing;
+    invoke-direct {v0}, Landroidx/compose/animation/core/EasingFunctionsKt$$ExternalSyntheticLambda5;-><init>()V
 
     sput-object v0, Landroidx/compose/animation/core/EasingFunctionsKt;->EaseInOutBounce:Landroidx/compose/animation/core/Easing;
 
     return-void
+.end method
+
+.method private static final EaseInBounce$lambda$4(F)F
+    .locals 3
+
+    const/4 v0, 0x1
+
+    int-to-float v0, v0
+
+    .line 246
+    sget-object v1, Landroidx/compose/animation/core/EasingFunctionsKt;->EaseOutBounce:Landroidx/compose/animation/core/Easing;
+
+    const/high16 v2, 0x3f800000    # 1.0f
+
+    sub-float/2addr v2, p0
+
+    invoke-interface {v1, v2}, Landroidx/compose/animation/core/Easing;->transform(F)F
+
+    move-result p0
+
+    sub-float/2addr v0, p0
+
+    return v0
+.end method
+
+.method private static final EaseInElastic$lambda$0(F)F
+    .locals 6
+
+    const/4 v0, 0x0
+
+    cmpg-float v1, p0, v0
+
+    if-nez v1, :cond_0
+
+    goto :goto_0
+
+    :cond_0
+    const/high16 v0, 0x3f800000    # 1.0f
+
+    cmpg-float v1, p0, v0
+
+    if-nez v1, :cond_1
+
+    goto :goto_0
+
+    :cond_1
+    const/high16 v0, 0x40000000    # 2.0f
+
+    float-to-double v0, v0
+
+    const/high16 v2, 0x41200000    # 10.0f
+
+    mul-float/2addr p0, v2
+
+    sub-float v2, p0, v2
+
+    float-to-double v2, v2
+
+    .line 183
+    invoke-static {v0, v1, v2, v3}, Ljava/lang/Math;->pow(DD)D
+
+    move-result-wide v0
+
+    double-to-float v0, v0
+
+    neg-float v0, v0
+
+    float-to-double v0, v0
+
+    const/high16 v2, 0x412c0000    # 10.75f
+
+    sub-float/2addr p0, v2
+
+    float-to-double v2, p0
+
+    const-wide v4, 0x4000c152382d7365L    # 2.0943951023931953
+
+    mul-double/2addr v2, v4
+
+    .line 184
+    invoke-static {v2, v3}, Ljava/lang/Math;->sin(D)D
+
+    move-result-wide v2
+
+    mul-double/2addr v0, v2
+
+    double-to-float v0, v0
+
+    :goto_0
+    return v0
+.end method
+
+.method private static final EaseInOutBounce$lambda$5(F)F
+    .locals 4
+
+    float-to-double v0, p0
+
+    const-wide/high16 v2, 0x3fe0000000000000L    # 0.5
+
+    cmpg-double v0, v0, v2
+
+    const/high16 v1, 0x3f800000    # 1.0f
+
+    const/4 v2, 0x1
+
+    const/high16 v3, 0x40000000    # 2.0f
+
+    if-gez v0, :cond_0
+
+    int-to-float v0, v2
+
+    .line 254
+    sget-object v2, Landroidx/compose/animation/core/EasingFunctionsKt;->EaseOutBounce:Landroidx/compose/animation/core/Easing;
+
+    mul-float/2addr p0, v3
+
+    sub-float/2addr v1, p0
+
+    invoke-interface {v2, v1}, Landroidx/compose/animation/core/Easing;->transform(F)F
+
+    move-result p0
+
+    sub-float/2addr v0, p0
+
+    goto :goto_0
+
+    :cond_0
+    int-to-float v0, v2
+
+    .line 256
+    sget-object v2, Landroidx/compose/animation/core/EasingFunctionsKt;->EaseOutBounce:Landroidx/compose/animation/core/Easing;
+
+    mul-float/2addr p0, v3
+
+    sub-float/2addr p0, v1
+
+    invoke-interface {v2, p0}, Landroidx/compose/animation/core/Easing;->transform(F)F
+
+    move-result p0
+
+    add-float/2addr v0, p0
+
+    :goto_0
+    div-float/2addr v0, v3
+
+    return v0
+.end method
+
+.method private static final EaseInOutElastic$lambda$2(F)F
+    .locals 10
+
+    const/4 v0, 0x0
+
+    cmpg-float v1, p0, v0
+
+    if-nez v1, :cond_0
+
+    goto :goto_0
+
+    :cond_0
+    const/high16 v1, 0x3f800000    # 1.0f
+
+    cmpg-float v2, p0, v1
+
+    if-nez v2, :cond_1
+
+    move v0, v1
+
+    goto :goto_0
+
+    :cond_1
+    cmpg-float v0, v0, p0
+
+    const/high16 v2, 0x41320000    # 11.125f
+
+    const/high16 v3, 0x41a00000    # 20.0f
+
+    const/high16 v4, 0x41200000    # 10.0f
+
+    const/high16 v5, 0x40000000    # 2.0f
+
+    const-wide v6, 0x3ff657184ae74487L    # 1.3962634015954636
+
+    if-gtz v0, :cond_2
+
+    const/high16 v0, 0x3f000000    # 0.5f
+
+    cmpg-float v0, p0, v0
+
+    if-gtz v0, :cond_2
+
+    float-to-double v0, v5
+
+    mul-float/2addr p0, v3
+
+    sub-float v3, p0, v4
+
+    float-to-double v3, v3
+
+    .line 212
+    invoke-static {v0, v1, v3, v4}, Ljava/lang/Math;->pow(DD)D
+
+    move-result-wide v3
+
+    double-to-float v3, v3
+
+    float-to-double v3, v3
+
+    sub-float/2addr p0, v2
+
+    float-to-double v8, p0
+
+    mul-double/2addr v8, v6
+
+    .line 213
+    invoke-static {v8, v9}, Ljava/lang/Math;->sin(D)D
+
+    move-result-wide v5
+
+    mul-double/2addr v3, v5
+
+    neg-double v2, v3
+
+    div-double/2addr v2, v0
+
+    double-to-float v0, v2
+
+    goto :goto_0
+
+    :cond_2
+    float-to-double v8, v5
+
+    const/high16 v0, -0x3e600000    # -20.0f
+
+    mul-float/2addr v0, p0
+
+    add-float/2addr v0, v4
+
+    float-to-double v4, v0
+
+    .line 215
+    invoke-static {v8, v9, v4, v5}, Ljava/lang/Math;->pow(DD)D
+
+    move-result-wide v4
+
+    double-to-float v0, v4
+
+    float-to-double v4, v0
+
+    mul-float/2addr p0, v3
+
+    sub-float/2addr p0, v2
+
+    float-to-double v2, p0
+
+    mul-double/2addr v2, v6
+
+    .line 216
+    invoke-static {v2, v3}, Ljava/lang/Math;->sin(D)D
+
+    move-result-wide v2
+
+    mul-double/2addr v4, v2
+
+    div-double/2addr v4, v8
+
+    double-to-float p0, v4
+
+    add-float v0, p0, v1
+
+    :goto_0
+    return v0
+.end method
+
+.method private static final EaseOutBounce$lambda$3(F)F
+    .locals 2
+
+    const v0, 0x3eba2e8c
+
+    cmpg-float v0, p0, v0
+
+    const/high16 v1, 0x40f20000    # 7.5625f
+
+    if-gez v0, :cond_0
+
+    mul-float/2addr v1, p0
+
+    mul-float/2addr v1, p0
+
+    goto :goto_1
+
+    :cond_0
+    const v0, 0x3f3a2e8c
+
+    cmpg-float v0, p0, v0
+
+    if-gez v0, :cond_1
+
+    const v0, 0x3f0ba2e9
+
+    sub-float/2addr p0, v0
+
+    mul-float/2addr v1, p0
+
+    mul-float/2addr v1, p0
+
+    const/high16 p0, 0x3f400000    # 0.75f
+
+    :goto_0
+    add-float/2addr v1, p0
+
+    goto :goto_1
+
+    :cond_1
+    const v0, 0x3f68ba2f
+
+    cmpg-float v0, p0, v0
+
+    if-gez v0, :cond_2
+
+    const v0, 0x3f51745d
+
+    sub-float/2addr p0, v0
+
+    mul-float/2addr v1, p0
+
+    mul-float/2addr v1, p0
+
+    const/high16 p0, 0x3f700000    # 0.9375f
+
+    goto :goto_0
+
+    :cond_2
+    const v0, 0x3f745d17
+
+    sub-float/2addr p0, v0
+
+    mul-float/2addr v1, p0
+
+    mul-float/2addr v1, p0
+
+    const/high16 p0, 0x3f7c0000    # 0.984375f
+
+    goto :goto_0
+
+    :goto_1
+    return v1
+.end method
+
+.method private static final EaseOutElastic$lambda$1(F)F
+    .locals 7
+
+    const/4 v0, 0x0
+
+    cmpg-float v1, p0, v0
+
+    if-nez v1, :cond_0
+
+    goto :goto_0
+
+    :cond_0
+    const/high16 v0, 0x3f800000    # 1.0f
+
+    cmpg-float v1, p0, v0
+
+    if-nez v1, :cond_1
+
+    goto :goto_0
+
+    :cond_1
+    const/high16 v1, 0x40000000    # 2.0f
+
+    float-to-double v1, v1
+
+    const/high16 v3, -0x3ee00000    # -10.0f
+
+    mul-float/2addr v3, p0
+
+    float-to-double v3, v3
+
+    .line 198
+    invoke-static {v1, v2, v3, v4}, Ljava/lang/Math;->pow(DD)D
+
+    move-result-wide v1
+
+    double-to-float v1, v1
+
+    float-to-double v1, v1
+
+    const/high16 v3, 0x41200000    # 10.0f
+
+    mul-float/2addr p0, v3
+
+    const/high16 v3, 0x3f400000    # 0.75f
+
+    sub-float/2addr p0, v3
+
+    float-to-double v3, p0
+
+    const-wide v5, 0x4000c152382d7365L    # 2.0943951023931953
+
+    mul-double/2addr v3, v5
+
+    .line 199
+    invoke-static {v3, v4}, Ljava/lang/Math;->sin(D)D
+
+    move-result-wide v3
+
+    mul-double/2addr v1, v3
+
+    float-to-double v3, v0
+
+    add-double/2addr v1, v3
+
+    double-to-float v0, v1
+
+    :goto_0
+    return v0
 .end method
 
 .method public static final getEase()Landroidx/compose/animation/core/Easing;

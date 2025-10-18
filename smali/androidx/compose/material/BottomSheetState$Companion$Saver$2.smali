@@ -108,20 +108,16 @@
 .method public final invoke(Landroidx/compose/material/BottomSheetValue;)Landroidx/compose/material/BottomSheetState;
     .locals 2
 
-    const-string v0, "it"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 261
+    .line 259
     iget-object v0, p0, Landroidx/compose/material/BottomSheetState$Companion$Saver$2;->$density:Landroidx/compose/ui/unit/Density;
 
-    .line 262
+    .line 260
     iget-object v1, p0, Landroidx/compose/material/BottomSheetState$Companion$Saver$2;->$animationSpec:Landroidx/compose/animation/core/AnimationSpec;
 
-    .line 263
+    .line 261
     iget-object p0, p0, Landroidx/compose/material/BottomSheetState$Companion$Saver$2;->$confirmStateChange:Lkotlin/jvm/functions/Function1;
 
-    .line 259
+    .line 257
     invoke-static {p1, v0, v1, p0}, Landroidx/compose/material/BottomSheetScaffoldKt;->BottomSheetState(Landroidx/compose/material/BottomSheetValue;Landroidx/compose/ui/unit/Density;Landroidx/compose/animation/core/AnimationSpec;Lkotlin/jvm/functions/Function1;)Landroidx/compose/material/BottomSheetState;
 
     move-result-object p0
@@ -132,7 +128,7 @@
 .method public bridge synthetic invoke(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
 
-    .line 256
+    .line 254
     check-cast p1, Landroidx/compose/material/BottomSheetValue;
 
     invoke-virtual {p0, p1}, Landroidx/compose/material/BottomSheetState$Companion$Saver$2;->invoke(Landroidx/compose/material/BottomSheetValue;)Landroidx/compose/material/BottomSheetState;

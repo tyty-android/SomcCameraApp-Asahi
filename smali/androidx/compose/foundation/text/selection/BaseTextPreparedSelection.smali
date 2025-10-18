@@ -20,12 +20,12 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/SourceDebugExtension;
-    value = "SMAP\nTextPreparedSelection.kt\nKotlin\n*S Kotlin\n*F\n+ 1 TextPreparedSelection.kt\nandroidx/compose/foundation/text/selection/BaseTextPreparedSelection\n+ 2 fake.kt\nkotlin/jvm/internal/FakeKt\n*L\n1#1,432:1\n73#1,8:433\n73#1,8:441\n73#1,8:449\n73#1,8:457\n73#1,8:465\n73#1,8:473\n73#1,8:481\n73#1,8:489\n73#1,8:497\n73#1,8:505\n73#1,8:513\n73#1,8:521\n73#1,6:529\n80#1:536\n73#1,8:537\n73#1,8:545\n73#1,8:553\n74#1,7:561\n74#1,7:568\n73#1,8:575\n73#1,8:583\n73#1,8:591\n73#1,8:599\n74#1,7:607\n1#2:535\n*S KotlinDebug\n*F\n+ 1 TextPreparedSelection.kt\nandroidx/compose/foundation/text/selection/BaseTextPreparedSelection\n*L\n91#1:433,8\n95#1:441,8\n99#1:449,8\n107#1:457,8\n118#1:465,8\n134#1:473,8\n158#1:481,8\n163#1:489,8\n168#1:497,8\n172#1:505,8\n176#1:513,8\n184#1:521,8\n194#1:529,6\n194#1:536\n200#1:537,8\n204#1:545,8\n208#1:553,8\n212#1:561,7\n216#1:568,7\n222#1:575,8\n228#1:583,8\n232#1:591,8\n240#1:599,8\n249#1:607,7\n*E\n"
+    value = "SMAP\nTextPreparedSelection.kt\nKotlin\n*S Kotlin\n*F\n+ 1 TextPreparedSelection.kt\nandroidx/compose/foundation/text/selection/BaseTextPreparedSelection\n+ 2 fake.kt\nkotlin/jvm/internal/FakeKt\n*L\n1#1,437:1\n73#1,8:438\n73#1,8:446\n73#1,8:454\n73#1,8:462\n73#1,8:470\n73#1,8:478\n73#1,8:486\n73#1,8:494\n73#1,8:502\n73#1,8:510\n73#1,8:518\n73#1,8:526\n73#1,6:534\n80#1:541\n73#1,8:542\n73#1,8:550\n73#1,8:558\n74#1,7:566\n74#1,7:573\n73#1,8:580\n73#1,8:588\n73#1,8:596\n73#1,8:604\n74#1,7:612\n1#2:540\n*S KotlinDebug\n*F\n+ 1 TextPreparedSelection.kt\nandroidx/compose/foundation/text/selection/BaseTextPreparedSelection\n*L\n91#1:438,8\n95#1:446,8\n99#1:454,8\n107#1:462,8\n118#1:470,8\n134#1:478,8\n158#1:486,8\n163#1:494,8\n168#1:502,8\n172#1:510,8\n176#1:518,8\n184#1:526,8\n194#1:534,6\n194#1:541\n200#1:542,8\n204#1:550,8\n212#1:558,8\n220#1:566,7\n224#1:573,7\n230#1:580,8\n236#1:588,8\n240#1:596,8\n248#1:604,8\n257#1:612,7\n*E\n"
 .end annotation
 
 .annotation runtime Lkotlin/Metadata;
     d1 = {
-        "\u0000T\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0000\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0015\n\u0002\u0010\u000e\n\u0002\u0008\u0003\n\u0002\u0010\u0008\n\u0002\u0008\u0003\n\u0002\u0018\u0002\n\u0002\u0010\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u000e\n\u0002\u0010\u000b\n\u0002\u0008)\u0008 \u0018\u0000 c*\u000e\u0008\u0000\u0010\u0001*\u0008\u0012\u0004\u0012\u0002H\u00010\u00002\u00020\u0002:\u0001cB2\u0012\u0006\u0010\u0003\u001a\u00020\u0004\u0012\u0006\u0010\u0005\u001a\u00020\u0006\u0012\u0008\u0010\u0007\u001a\u0004\u0018\u00010\u0008\u0012\u0006\u0010\t\u001a\u00020\n\u0012\u0006\u0010\u000b\u001a\u00020\u000c\u00f8\u0001\u0000\u00a2\u0006\u0002\u0010\rJ\u0010\u0010%\u001a\u00020&2\u0006\u0010\'\u001a\u00020&H\u0002J$\u0010(\u001a\u00028\u00002\u0017\u0010)\u001a\u0013\u0012\u0004\u0012\u00028\u0000\u0012\u0004\u0012\u00020+0*\u00a2\u0006\u0002\u0008,\u00a2\u0006\u0002\u0010-J$\u0010.\u001a\u00028\u00002\u0017\u0010)\u001a\u0013\u0012\u0004\u0012\u00028\u0000\u0012\u0004\u0012\u00020+0*\u00a2\u0006\u0002\u0008,\u00a2\u0006\u0002\u0010-J\u000b\u0010/\u001a\u00028\u0000\u00a2\u0006\u0002\u00100J\r\u00101\u001a\u0004\u0018\u00010&\u00a2\u0006\u0002\u00102J\r\u00103\u001a\u0004\u0018\u00010&\u00a2\u0006\u0002\u00102J\u0006\u00104\u001a\u00020&J\r\u00105\u001a\u0004\u0018\u00010&\u00a2\u0006\u0002\u00102J\u0008\u00106\u001a\u00020&H\u0002J\u0008\u00107\u001a\u00020&H\u0002J\u0006\u00108\u001a\u00020&J\r\u00109\u001a\u0004\u0018\u00010&\u00a2\u0006\u0002\u00102J\u0008\u0010:\u001a\u00020;H\u0002J\u000b\u0010<\u001a\u00028\u0000\u00a2\u0006\u0002\u00100J\u000b\u0010=\u001a\u00028\u0000\u00a2\u0006\u0002\u00100J\u000b\u0010>\u001a\u00028\u0000\u00a2\u0006\u0002\u00100J\r\u0010?\u001a\u00028\u0000H\u0002\u00a2\u0006\u0002\u00100J\u000b\u0010@\u001a\u00028\u0000\u00a2\u0006\u0002\u00100J\r\u0010A\u001a\u00028\u0000H\u0002\u00a2\u0006\u0002\u00100J\r\u0010B\u001a\u00028\u0000H\u0002\u00a2\u0006\u0002\u00100J\u000b\u0010C\u001a\u00028\u0000\u00a2\u0006\u0002\u00100J\r\u0010D\u001a\u00028\u0000H\u0002\u00a2\u0006\u0002\u00100J\u000b\u0010E\u001a\u00028\u0000\u00a2\u0006\u0002\u00100J\u000b\u0010F\u001a\u00028\u0000\u00a2\u0006\u0002\u00100J\u000b\u0010G\u001a\u00028\u0000\u00a2\u0006\u0002\u00100J\u000b\u0010H\u001a\u00028\u0000\u00a2\u0006\u0002\u00100J\u000b\u0010I\u001a\u00028\u0000\u00a2\u0006\u0002\u00100J\u000b\u0010J\u001a\u00028\u0000\u00a2\u0006\u0002\u00100J\u000b\u0010K\u001a\u00028\u0000\u00a2\u0006\u0002\u00100J\u000b\u0010L\u001a\u00028\u0000\u00a2\u0006\u0002\u00100J\u000b\u0010M\u001a\u00028\u0000\u00a2\u0006\u0002\u00100J\u000b\u0010N\u001a\u00028\u0000\u00a2\u0006\u0002\u00100J\u000b\u0010O\u001a\u00028\u0000\u00a2\u0006\u0002\u00100J\u0010\u0010P\u001a\u00020+2\u0006\u0010\'\u001a\u00020&H\u0004J\u0018\u0010Q\u001a\u00020+2\u0006\u0010R\u001a\u00020&2\u0006\u0010S\u001a\u00020&H\u0004J\u0008\u0010T\u001a\u00020&H\u0002J\u0008\u0010U\u001a\u00020&H\u0002J\u0008\u0010V\u001a\u00020&H\u0002J>\u0010W\u001a\u00028\u0000\"\u0004\u0008\u0001\u0010X*\u0002HX2\u0008\u0008\u0002\u0010Y\u001a\u00020;2\u0017\u0010Z\u001a\u0013\u0012\u0004\u0012\u0002HX\u0012\u0004\u0012\u00020+0*\u00a2\u0006\u0002\u0008,H\u0084\u0008\u00f8\u0001\u0003\u00a2\u0006\u0002\u0010[J\u0016\u0010\\\u001a\u00020&*\u00020\u00082\u0008\u0008\u0002\u0010]\u001a\u00020&H\u0002J\u0016\u0010^\u001a\u00020&*\u00020\u00082\u0008\u0008\u0002\u0010]\u001a\u00020&H\u0002J\u0017\u0010_\u001a\u00020&*\u00020\u00082\u0008\u0008\u0002\u0010]\u001a\u00020&H\u0082\u0010J\u0017\u0010`\u001a\u00020&*\u00020\u00082\u0008\u0008\u0002\u0010]\u001a\u00020&H\u0082\u0010J\u0014\u0010a\u001a\u00020&*\u00020\u00082\u0006\u0010b\u001a\u00020&H\u0002R\u001a\u0010\u000e\u001a\u00020\u0004X\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\u0008\u000f\u0010\u0010\"\u0004\u0008\u0011\u0010\u0012R\u0013\u0010\u0007\u001a\u0004\u0018\u00010\u0008\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\u0013\u0010\u0014R\u0011\u0010\t\u001a\u00020\n\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\u0015\u0010\u0016R\u001c\u0010\u0005\u001a\u00020\u0006\u00f8\u0001\u0000\u00f8\u0001\u0001\u00f8\u0001\u0002\u00a2\u0006\n\n\u0002\u0010\u0019\u001a\u0004\u0008\u0017\u0010\u0018R\u0011\u0010\u0003\u001a\u00020\u0004\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\u001a\u0010\u0010R%\u0010\u001b\u001a\u00020\u0006X\u0086\u000e\u00f8\u0001\u0000\u00f8\u0001\u0001\u00f8\u0001\u0002\u00a2\u0006\u0010\n\u0002\u0010\u0019\u001a\u0004\u0008\u001c\u0010\u0018\"\u0004\u0008\u001d\u0010\u001eR\u0011\u0010\u000b\u001a\u00020\u000c\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\u001f\u0010 R\u0014\u0010!\u001a\u00020\"8@X\u0080\u0004\u00a2\u0006\u0006\u001a\u0004\u0008#\u0010$\u0082\u0002\u0016\n\u0002\u0008\u0019\n\u0005\u0008\u00a1\u001e0\u0001\n\u0002\u0008!\n\u0005\u0008\u009920\u0001\u00a8\u0006d"
+        "\u0000T\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0000\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0015\n\u0002\u0010\u000e\n\u0002\u0008\u0003\n\u0002\u0010\u0008\n\u0002\u0008\u0003\n\u0002\u0018\u0002\n\u0002\u0010\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u000c\n\u0002\u0010\u000b\n\u0002\u0008)\u0008 \u0018\u0000 a*\u000e\u0008\u0000\u0010\u0001*\u0008\u0012\u0004\u0012\u0002H\u00010\u00002\u00020\u0002:\u0001aB/\u0012\u0006\u0010\u0003\u001a\u00020\u0004\u0012\u0006\u0010\u0005\u001a\u00020\u0006\u0012\u0008\u0010\u0007\u001a\u0004\u0018\u00010\u0008\u0012\u0006\u0010\t\u001a\u00020\n\u0012\u0006\u0010\u000b\u001a\u00020\u000c\u00a2\u0006\u0002\u0010\rJ\u0010\u0010%\u001a\u00020&2\u0006\u0010\'\u001a\u00020&H\u0002J$\u0010(\u001a\u00028\u00002\u0017\u0010)\u001a\u0013\u0012\u0004\u0012\u00028\u0000\u0012\u0004\u0012\u00020+0*\u00a2\u0006\u0002\u0008,\u00a2\u0006\u0002\u0010-J$\u0010.\u001a\u00028\u00002\u0017\u0010)\u001a\u0013\u0012\u0004\u0012\u00028\u0000\u0012\u0004\u0012\u00020+0*\u00a2\u0006\u0002\u0008,\u00a2\u0006\u0002\u0010-J\u000b\u0010/\u001a\u00028\u0000\u00a2\u0006\u0002\u00100J\r\u00101\u001a\u0004\u0018\u00010&\u00a2\u0006\u0002\u00102J\r\u00103\u001a\u0004\u0018\u00010&\u00a2\u0006\u0002\u00102J\u0006\u00104\u001a\u00020&J\r\u00105\u001a\u0004\u0018\u00010&\u00a2\u0006\u0002\u00102J\u0006\u00106\u001a\u00020&J\r\u00107\u001a\u0004\u0018\u00010&\u00a2\u0006\u0002\u00102J\u0008\u00108\u001a\u000209H\u0002J\u000b\u0010:\u001a\u00028\u0000\u00a2\u0006\u0002\u00100J\u000b\u0010;\u001a\u00028\u0000\u00a2\u0006\u0002\u00100J\u000b\u0010<\u001a\u00028\u0000\u00a2\u0006\u0002\u00100J\r\u0010=\u001a\u00028\u0000H\u0002\u00a2\u0006\u0002\u00100J\u000b\u0010>\u001a\u00028\u0000\u00a2\u0006\u0002\u00100J\r\u0010?\u001a\u00028\u0000H\u0002\u00a2\u0006\u0002\u00100J\r\u0010@\u001a\u00028\u0000H\u0002\u00a2\u0006\u0002\u00100J\u000b\u0010A\u001a\u00028\u0000\u00a2\u0006\u0002\u00100J\r\u0010B\u001a\u00028\u0000H\u0002\u00a2\u0006\u0002\u00100J\u000b\u0010C\u001a\u00028\u0000\u00a2\u0006\u0002\u00100J\u000b\u0010D\u001a\u00028\u0000\u00a2\u0006\u0002\u00100J\u000b\u0010E\u001a\u00028\u0000\u00a2\u0006\u0002\u00100J\u000b\u0010F\u001a\u00028\u0000\u00a2\u0006\u0002\u00100J\u000b\u0010G\u001a\u00028\u0000\u00a2\u0006\u0002\u00100J\u000b\u0010H\u001a\u00028\u0000\u00a2\u0006\u0002\u00100J\u000b\u0010I\u001a\u00028\u0000\u00a2\u0006\u0002\u00100J\u000b\u0010J\u001a\u00028\u0000\u00a2\u0006\u0002\u00100J\u000b\u0010K\u001a\u00028\u0000\u00a2\u0006\u0002\u00100J\u000b\u0010L\u001a\u00028\u0000\u00a2\u0006\u0002\u00100J\u000b\u0010M\u001a\u00028\u0000\u00a2\u0006\u0002\u00100J\u0010\u0010N\u001a\u00020+2\u0006\u0010\'\u001a\u00020&H\u0004J\u0018\u0010O\u001a\u00020+2\u0006\u0010P\u001a\u00020&2\u0006\u0010Q\u001a\u00020&H\u0004J\u0008\u0010R\u001a\u00020&H\u0002J\u0008\u0010S\u001a\u00020&H\u0002J\u0008\u0010T\u001a\u00020&H\u0002J;\u0010U\u001a\u00028\u0000\"\u0004\u0008\u0001\u0010V*\u0002HV2\u0008\u0008\u0002\u0010W\u001a\u0002092\u0017\u0010X\u001a\u0013\u0012\u0004\u0012\u0002HV\u0012\u0004\u0012\u00020+0*\u00a2\u0006\u0002\u0008,H\u0084\u0008\u00a2\u0006\u0002\u0010YJ\u0016\u0010Z\u001a\u00020&*\u00020\u00082\u0008\u0008\u0002\u0010[\u001a\u00020&H\u0002J\u0016\u0010\\\u001a\u00020&*\u00020\u00082\u0008\u0008\u0002\u0010[\u001a\u00020&H\u0002J\u0017\u0010]\u001a\u00020&*\u00020\u00082\u0008\u0008\u0002\u0010[\u001a\u00020&H\u0082\u0010J\u0017\u0010^\u001a\u00020&*\u00020\u00082\u0008\u0008\u0002\u0010[\u001a\u00020&H\u0082\u0010J\u0014\u0010_\u001a\u00020&*\u00020\u00082\u0006\u0010`\u001a\u00020&H\u0002R\u001a\u0010\u000e\u001a\u00020\u0004X\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\u0008\u000f\u0010\u0010\"\u0004\u0008\u0011\u0010\u0012R\u0013\u0010\u0007\u001a\u0004\u0018\u00010\u0008\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\u0013\u0010\u0014R\u0011\u0010\t\u001a\u00020\n\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\u0015\u0010\u0016R\u0019\u0010\u0005\u001a\u00020\u0006\u00f8\u0001\u0000\u00f8\u0001\u0001\u00a2\u0006\n\n\u0002\u0010\u0019\u001a\u0004\u0008\u0017\u0010\u0018R\u0011\u0010\u0003\u001a\u00020\u0004\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\u001a\u0010\u0010R\"\u0010\u001b\u001a\u00020\u0006X\u0086\u000e\u00f8\u0001\u0000\u00f8\u0001\u0001\u00a2\u0006\u0010\n\u0002\u0010\u0019\u001a\u0004\u0008\u001c\u0010\u0018\"\u0004\u0008\u001d\u0010\u001eR\u0011\u0010\u000b\u001a\u00020\u000c\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\u001f\u0010 R\u0014\u0010!\u001a\u00020\"8@X\u0080\u0004\u00a2\u0006\u0006\u001a\u0004\u0008#\u0010$\u0082\u0002\u000b\n\u0005\u0008\u00a1\u001e0\u0001\n\u0002\u0008!\u00a8\u0006b"
     }
     d2 = {
         "Landroidx/compose/foundation/text/selection/BaseTextPreparedSelection;",
@@ -82,8 +82,6 @@
         "getLineStartByOffset",
         "getNextCharacterIndex",
         "getNextWordOffset",
-        "getParagraphEnd",
-        "getParagraphStart",
         "getPrecedingCharacterIndex",
         "getPreviousWordOffset",
         "isLtr",
@@ -141,6 +139,8 @@
 
 
 # static fields
+.field public static final $stable:I
+
 .field public static final Companion:Landroidx/compose/foundation/text/selection/BaseTextPreparedSelection$Companion;
 
 .field public static final NoCharacterFound:I = -0x1
@@ -174,23 +174,15 @@
 
     sput-object v0, Landroidx/compose/foundation/text/selection/BaseTextPreparedSelection;->Companion:Landroidx/compose/foundation/text/selection/BaseTextPreparedSelection$Companion;
 
+    const/16 v0, 0x8
+
+    sput v0, Landroidx/compose/foundation/text/selection/BaseTextPreparedSelection;->$stable:I
+
     return-void
 .end method
 
 .method private constructor <init>(Landroidx/compose/ui/text/AnnotatedString;JLandroidx/compose/ui/text/TextLayoutResult;Landroidx/compose/ui/text/input/OffsetMapping;Landroidx/compose/foundation/text/selection/TextPreparedSelectionState;)V
-    .locals 1
-
-    const-string v0, "originalText"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string v0, "offsetMapping"
-
-    invoke-static {p5, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string/jumbo v0, "state"
-
-    invoke-static {p6, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+    .locals 0
 
     .line 59
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -240,12 +232,7 @@
 
     move p2, p5
 
-    .line 73
     :cond_0
-    const-string p4, "block"
-
-    invoke-static {p3, p4}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
     if-eqz p2, :cond_1
 
     .line 75
@@ -296,7 +283,7 @@
 .method private final charOffset(I)I
     .locals 0
 
-    .line 346
+    .line 354
     invoke-virtual {p0}, Landroidx/compose/foundation/text/selection/BaseTextPreparedSelection;->getText$foundation_release()Ljava/lang/String;
 
     move-result-object p0
@@ -317,12 +304,12 @@
 .method private final getLineEndByOffsetForLayout(Landroidx/compose/ui/text/TextLayoutResult;I)I
     .locals 1
 
-    .line 296
+    .line 304
     invoke-virtual {p1, p2}, Landroidx/compose/ui/text/TextLayoutResult;->getLineForOffset(I)I
 
     move-result p2
 
-    .line 297
+    .line 305
     iget-object p0, p0, Landroidx/compose/foundation/text/selection/BaseTextPreparedSelection;->offsetMapping:Landroidx/compose/ui/text/input/OffsetMapping;
 
     const/4 v0, 0x1
@@ -347,12 +334,12 @@
 
     if-eqz p3, :cond_0
 
-    .line 294
+    .line 302
     invoke-direct {p0}, Landroidx/compose/foundation/text/selection/BaseTextPreparedSelection;->transformedMaxOffset()I
 
     move-result p2
 
-    .line 293
+    .line 301
     :cond_0
     invoke-direct {p0, p1, p2}, Landroidx/compose/foundation/text/selection/BaseTextPreparedSelection;->getLineEndByOffsetForLayout(Landroidx/compose/ui/text/TextLayoutResult;I)I
 
@@ -373,12 +360,12 @@
 .method private final getLineStartByOffsetForLayout(Landroidx/compose/ui/text/TextLayoutResult;I)I
     .locals 0
 
-    .line 289
+    .line 297
     invoke-virtual {p1, p2}, Landroidx/compose/ui/text/TextLayoutResult;->getLineForOffset(I)I
 
     move-result p2
 
-    .line 290
+    .line 298
     iget-object p0, p0, Landroidx/compose/foundation/text/selection/BaseTextPreparedSelection;->offsetMapping:Landroidx/compose/ui/text/input/OffsetMapping;
 
     invoke-virtual {p1, p2}, Landroidx/compose/ui/text/TextLayoutResult;->getLineStart(I)I
@@ -401,12 +388,12 @@
 
     if-eqz p3, :cond_0
 
-    .line 287
+    .line 295
     invoke-direct {p0}, Landroidx/compose/foundation/text/selection/BaseTextPreparedSelection;->transformedMinOffset()I
 
     move-result p2
 
-    .line 286
+    .line 294
     :cond_0
     invoke-direct {p0, p1, p2}, Landroidx/compose/foundation/text/selection/BaseTextPreparedSelection;->getLineStartByOffsetForLayout(Landroidx/compose/ui/text/TextLayoutResult;I)I
 
@@ -427,7 +414,7 @@
 .method private final getNextWordOffsetForLayout(Landroidx/compose/ui/text/TextLayoutResult;I)I
     .locals 3
 
-    .line 261
+    .line 269
     :goto_0
     iget-object v0, p0, Landroidx/compose/foundation/text/selection/BaseTextPreparedSelection;->originalText:Landroidx/compose/ui/text/AnnotatedString;
 
@@ -437,7 +424,7 @@
 
     if-lt p2, v0, :cond_0
 
-    .line 262
+    .line 270
     iget-object p0, p0, Landroidx/compose/foundation/text/selection/BaseTextPreparedSelection;->originalText:Landroidx/compose/ui/text/AnnotatedString;
 
     invoke-virtual {p0}, Landroidx/compose/ui/text/AnnotatedString;->length()I
@@ -446,7 +433,7 @@
 
     return p0
 
-    .line 264
+    .line 272
     :cond_0
     invoke-direct {p0, p2}, Landroidx/compose/foundation/text/selection/BaseTextPreparedSelection;->charOffset(I)I
 
@@ -456,7 +443,7 @@
 
     move-result-wide v0
 
-    .line 265
+    .line 273
     invoke-static {v0, v1}, Landroidx/compose/ui/text/TextRange;->getEnd-impl(J)I
 
     move-result v2
@@ -467,7 +454,7 @@
 
     goto :goto_0
 
-    .line 268
+    .line 276
     :cond_1
     iget-object p0, p0, Landroidx/compose/foundation/text/selection/BaseTextPreparedSelection;->offsetMapping:Landroidx/compose/ui/text/input/OffsetMapping;
 
@@ -491,12 +478,12 @@
 
     if-eqz p3, :cond_0
 
-    .line 259
+    .line 267
     invoke-direct {p0}, Landroidx/compose/foundation/text/selection/BaseTextPreparedSelection;->transformedEndOffset()I
 
     move-result p2
 
-    .line 258
+    .line 266
     :cond_0
     invoke-direct {p0, p1, p2}, Landroidx/compose/foundation/text/selection/BaseTextPreparedSelection;->getNextWordOffsetForLayout(Landroidx/compose/ui/text/TextLayoutResult;I)I
 
@@ -514,52 +501,6 @@
     throw p0
 .end method
 
-.method private final getParagraphEnd()I
-    .locals 3
-
-    .line 350
-    invoke-virtual {p0}, Landroidx/compose/foundation/text/selection/BaseTextPreparedSelection;->getText$foundation_release()Ljava/lang/String;
-
-    move-result-object v0
-
-    check-cast v0, Ljava/lang/CharSequence;
-
-    iget-wide v1, p0, Landroidx/compose/foundation/text/selection/BaseTextPreparedSelection;->selection:J
-
-    invoke-static {v1, v2}, Landroidx/compose/ui/text/TextRange;->getMax-impl(J)I
-
-    move-result p0
-
-    invoke-static {v0, p0}, Landroidx/compose/foundation/text/StringHelpersKt;->findParagraphEnd(Ljava/lang/CharSequence;I)I
-
-    move-result p0
-
-    return p0
-.end method
-
-.method private final getParagraphStart()I
-    .locals 3
-
-    .line 348
-    invoke-virtual {p0}, Landroidx/compose/foundation/text/selection/BaseTextPreparedSelection;->getText$foundation_release()Ljava/lang/String;
-
-    move-result-object v0
-
-    check-cast v0, Ljava/lang/CharSequence;
-
-    iget-wide v1, p0, Landroidx/compose/foundation/text/selection/BaseTextPreparedSelection;->selection:J
-
-    invoke-static {v1, v2}, Landroidx/compose/ui/text/TextRange;->getMin-impl(J)I
-
-    move-result p0
-
-    invoke-static {v0, p0}, Landroidx/compose/foundation/text/StringHelpersKt;->findParagraphStart(Ljava/lang/CharSequence;I)I
-
-    move-result p0
-
-    return p0
-.end method
-
 .method private final getPrevWordOffset(Landroidx/compose/ui/text/TextLayoutResult;I)I
     .locals 3
 
@@ -570,7 +511,7 @@
 
     return p0
 
-    .line 278
+    .line 286
     :cond_0
     invoke-direct {p0, p2}, Landroidx/compose/foundation/text/selection/BaseTextPreparedSelection;->charOffset(I)I
 
@@ -580,7 +521,7 @@
 
     move-result-wide v0
 
-    .line 279
+    .line 287
     invoke-static {v0, v1}, Landroidx/compose/ui/text/TextRange;->getStart-impl(J)I
 
     move-result v2
@@ -591,7 +532,7 @@
 
     goto :goto_0
 
-    .line 282
+    .line 290
     :cond_1
     iget-object p0, p0, Landroidx/compose/foundation/text/selection/BaseTextPreparedSelection;->offsetMapping:Landroidx/compose/ui/text/input/OffsetMapping;
 
@@ -615,12 +556,12 @@
 
     if-eqz p3, :cond_0
 
-    .line 273
+    .line 281
     invoke-direct {p0}, Landroidx/compose/foundation/text/selection/BaseTextPreparedSelection;->transformedEndOffset()I
 
     move-result p2
 
-    .line 272
+    .line 280
     :cond_0
     invoke-direct {p0, p1, p2}, Landroidx/compose/foundation/text/selection/BaseTextPreparedSelection;->getPrevWordOffset(Landroidx/compose/ui/text/TextLayoutResult;I)I
 
@@ -641,7 +582,7 @@
 .method private final isLtr()Z
     .locals 1
 
-    .line 254
+    .line 262
     iget-object v0, p0, Landroidx/compose/foundation/text/selection/BaseTextPreparedSelection;->layoutResult:Landroidx/compose/ui/text/TextLayoutResult;
 
     if-eqz v0, :cond_0
@@ -659,7 +600,7 @@
     :cond_0
     const/4 p0, 0x0
 
-    .line 255
+    .line 263
     :goto_0
     sget-object v0, Landroidx/compose/ui/text/style/ResolvedTextDirection;->Rtl:Landroidx/compose/ui/text/style/ResolvedTextDirection;
 
@@ -679,12 +620,12 @@
 .method private final jumpByLinesOffset(Landroidx/compose/ui/text/TextLayoutResult;I)I
     .locals 5
 
-    .line 301
+    .line 309
     invoke-direct {p0}, Landroidx/compose/foundation/text/selection/BaseTextPreparedSelection;->transformedEndOffset()I
 
     move-result v0
 
-    .line 303
+    .line 311
     iget-object v1, p0, Landroidx/compose/foundation/text/selection/BaseTextPreparedSelection;->state:Landroidx/compose/foundation/text/selection/TextPreparedSelectionState;
 
     invoke-virtual {v1}, Landroidx/compose/foundation/text/selection/TextPreparedSelectionState;->getCachedX()Ljava/lang/Float;
@@ -693,7 +634,7 @@
 
     if-nez v1, :cond_0
 
-    .line 304
+    .line 312
     iget-object v1, p0, Landroidx/compose/foundation/text/selection/BaseTextPreparedSelection;->state:Landroidx/compose/foundation/text/selection/TextPreparedSelectionState;
 
     invoke-virtual {p1, v0}, Landroidx/compose/ui/text/TextLayoutResult;->getCursorRect(I)Landroidx/compose/ui/geometry/Rect;
@@ -710,7 +651,7 @@
 
     invoke-virtual {v1, v2}, Landroidx/compose/foundation/text/selection/TextPreparedSelectionState;->setCachedX(Ljava/lang/Float;)V
 
-    .line 307
+    .line 315
     :cond_0
     invoke-virtual {p1, v0}, Landroidx/compose/ui/text/TextLayoutResult;->getLineForOffset(I)I
 
@@ -724,7 +665,7 @@
 
     return p0
 
-    .line 312
+    .line 320
     :cond_1
     invoke-virtual {p1}, Landroidx/compose/ui/text/TextLayoutResult;->getLineCount()I
 
@@ -732,7 +673,7 @@
 
     if-lt v0, p2, :cond_2
 
-    .line 313
+    .line 321
     invoke-virtual {p0}, Landroidx/compose/foundation/text/selection/BaseTextPreparedSelection;->getText$foundation_release()Ljava/lang/String;
 
     move-result-object p0
@@ -743,7 +684,7 @@
 
     return p0
 
-    .line 317
+    .line 325
     :cond_2
     invoke-virtual {p1, v0}, Landroidx/compose/ui/text/TextLayoutResult;->getLineBottom(I)F
 
@@ -755,7 +696,7 @@
 
     sub-float/2addr p2, v2
 
-    .line 318
+    .line 326
     iget-object v2, p0, Landroidx/compose/foundation/text/selection/BaseTextPreparedSelection;->state:Landroidx/compose/foundation/text/selection/TextPreparedSelectionState;
 
     invoke-virtual {v2}, Landroidx/compose/foundation/text/selection/TextPreparedSelectionState;->getCachedX()Ljava/lang/Float;
@@ -770,7 +711,7 @@
 
     move-result v3
 
-    .line 319
+    .line 327
     invoke-direct {p0}, Landroidx/compose/foundation/text/selection/BaseTextPreparedSelection;->isLtr()Z
 
     move-result v4
@@ -785,7 +726,7 @@
 
     if-gez v4, :cond_4
 
-    .line 320
+    .line 328
     :cond_3
     invoke-direct {p0}, Landroidx/compose/foundation/text/selection/BaseTextPreparedSelection;->isLtr()Z
 
@@ -801,7 +742,7 @@
 
     if-gtz v3, :cond_5
 
-    .line 322
+    .line 330
     :cond_4
     invoke-virtual {p1, v0, v1}, Landroidx/compose/ui/text/TextLayoutResult;->getLineEnd(IZ)I
 
@@ -809,13 +750,13 @@
 
     return p0
 
-    .line 318
+    .line 326
     :cond_5
     invoke-virtual {v2}, Ljava/lang/Number;->floatValue()F
 
     move-result v0
 
-    .line 326
+    .line 334
     invoke-static {v0, p2}, Landroidx/compose/ui/geometry/OffsetKt;->Offset(FF)J
 
     move-result-wide v0
@@ -824,7 +765,7 @@
 
     move-result p1
 
-    .line 327
+    .line 335
     iget-object p0, p0, Landroidx/compose/foundation/text/selection/BaseTextPreparedSelection;->offsetMapping:Landroidx/compose/ui/text/input/OffsetMapping;
 
     invoke-interface {p0, p1}, Landroidx/compose/ui/text/input/OffsetMapping;->transformedToOriginal(I)I
@@ -842,14 +783,14 @@
         }
     .end annotation
 
-    .line 491
+    .line 496
     invoke-virtual {p0}, Landroidx/compose/foundation/text/selection/BaseTextPreparedSelection;->getState()Landroidx/compose/foundation/text/selection/TextPreparedSelectionState;
 
     move-result-object v0
 
     invoke-virtual {v0}, Landroidx/compose/foundation/text/selection/TextPreparedSelectionState;->resetCachedX()V
 
-    .line 493
+    .line 498
     invoke-virtual {p0}, Landroidx/compose/foundation/text/selection/BaseTextPreparedSelection;->getText$foundation_release()Ljava/lang/String;
 
     move-result-object v0
@@ -862,7 +803,7 @@
 
     if-lez v0, :cond_0
 
-    .line 494
+    .line 499
     move-object v0, p0
 
     check-cast v0, Landroidx/compose/foundation/text/selection/BaseTextPreparedSelection;
@@ -879,7 +820,7 @@
     .line 165
     invoke-virtual {p0, v0}, Landroidx/compose/foundation/text/selection/BaseTextPreparedSelection;->setCursor(I)V
 
-    .line 496
+    .line 501
     :cond_0
     const-string v0, "null cannot be cast to non-null type T of androidx.compose.foundation.text.selection.BaseTextPreparedSelection"
 
@@ -900,14 +841,14 @@
         }
     .end annotation
 
-    .line 531
+    .line 536
     invoke-virtual {p0}, Landroidx/compose/foundation/text/selection/BaseTextPreparedSelection;->getState()Landroidx/compose/foundation/text/selection/TextPreparedSelectionState;
 
     move-result-object v0
 
     invoke-virtual {v0}, Landroidx/compose/foundation/text/selection/TextPreparedSelectionState;->resetCachedX()V
 
-    .line 533
+    .line 538
     invoke-virtual {p0}, Landroidx/compose/foundation/text/selection/BaseTextPreparedSelection;->getText$foundation_release()Ljava/lang/String;
 
     move-result-object v0
@@ -920,7 +861,7 @@
 
     if-lez v0, :cond_0
 
-    .line 534
+    .line 539
     move-object v0, p0
 
     check-cast v0, Landroidx/compose/foundation/text/selection/BaseTextPreparedSelection;
@@ -940,7 +881,7 @@
 
     invoke-virtual {p0, v0}, Landroidx/compose/foundation/text/selection/BaseTextPreparedSelection;->setCursor(I)V
 
-    .line 536
+    .line 541
     :cond_0
     const-string v0, "null cannot be cast to non-null type T of androidx.compose.foundation.text.selection.BaseTextPreparedSelection"
 
@@ -961,14 +902,14 @@
         }
     .end annotation
 
-    .line 483
+    .line 488
     invoke-virtual {p0}, Landroidx/compose/foundation/text/selection/BaseTextPreparedSelection;->getState()Landroidx/compose/foundation/text/selection/TextPreparedSelectionState;
 
     move-result-object v0
 
     invoke-virtual {v0}, Landroidx/compose/foundation/text/selection/TextPreparedSelectionState;->resetCachedX()V
 
-    .line 485
+    .line 490
     invoke-virtual {p0}, Landroidx/compose/foundation/text/selection/BaseTextPreparedSelection;->getText$foundation_release()Ljava/lang/String;
 
     move-result-object v0
@@ -981,7 +922,7 @@
 
     if-lez v0, :cond_0
 
-    .line 486
+    .line 491
     move-object v0, p0
 
     check-cast v0, Landroidx/compose/foundation/text/selection/BaseTextPreparedSelection;
@@ -998,7 +939,7 @@
     .line 160
     invoke-virtual {p0, v0}, Landroidx/compose/foundation/text/selection/BaseTextPreparedSelection;->setCursor(I)V
 
-    .line 488
+    .line 493
     :cond_0
     const-string v0, "null cannot be cast to non-null type T of androidx.compose.foundation.text.selection.BaseTextPreparedSelection"
 
@@ -1019,14 +960,14 @@
         }
     .end annotation
 
-    .line 539
+    .line 544
     invoke-virtual {p0}, Landroidx/compose/foundation/text/selection/BaseTextPreparedSelection;->getState()Landroidx/compose/foundation/text/selection/TextPreparedSelectionState;
 
     move-result-object v0
 
     invoke-virtual {v0}, Landroidx/compose/foundation/text/selection/TextPreparedSelectionState;->resetCachedX()V
 
-    .line 541
+    .line 546
     invoke-virtual {p0}, Landroidx/compose/foundation/text/selection/BaseTextPreparedSelection;->getText$foundation_release()Ljava/lang/String;
 
     move-result-object v0
@@ -1039,7 +980,7 @@
 
     if-lez v0, :cond_0
 
-    .line 542
+    .line 547
     move-object v0, p0
 
     check-cast v0, Landroidx/compose/foundation/text/selection/BaseTextPreparedSelection;
@@ -1059,7 +1000,7 @@
 
     invoke-virtual {p0, v0}, Landroidx/compose/foundation/text/selection/BaseTextPreparedSelection;->setCursor(I)V
 
-    .line 544
+    .line 549
     :cond_0
     const-string v0, "null cannot be cast to non-null type T of androidx.compose.foundation.text.selection.BaseTextPreparedSelection"
 
@@ -1075,7 +1016,7 @@
 .method private final transformedEndOffset()I
     .locals 3
 
-    .line 334
+    .line 342
     iget-object v0, p0, Landroidx/compose/foundation/text/selection/BaseTextPreparedSelection;->offsetMapping:Landroidx/compose/ui/text/input/OffsetMapping;
 
     iget-wide v1, p0, Landroidx/compose/foundation/text/selection/BaseTextPreparedSelection;->selection:J
@@ -1094,7 +1035,7 @@
 .method private final transformedMaxOffset()I
     .locals 3
 
-    .line 342
+    .line 350
     iget-object v0, p0, Landroidx/compose/foundation/text/selection/BaseTextPreparedSelection;->offsetMapping:Landroidx/compose/ui/text/input/OffsetMapping;
 
     iget-wide v1, p0, Landroidx/compose/foundation/text/selection/BaseTextPreparedSelection;->selection:J
@@ -1113,7 +1054,7 @@
 .method private final transformedMinOffset()I
     .locals 3
 
-    .line 338
+    .line 346
     iget-object v0, p0, Landroidx/compose/foundation/text/selection/BaseTextPreparedSelection;->offsetMapping:Landroidx/compose/ui/text/input/OffsetMapping;
 
     iget-wide v1, p0, Landroidx/compose/foundation/text/selection/BaseTextPreparedSelection;->selection:J
@@ -1132,7 +1073,7 @@
 
 # virtual methods
 .method protected final apply(Ljava/lang/Object;ZLkotlin/jvm/functions/Function1;)Landroidx/compose/foundation/text/selection/BaseTextPreparedSelection;
-    .locals 1
+    .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<U:",
@@ -1144,10 +1085,6 @@
             ">;)TT;"
         }
     .end annotation
-
-    const-string v0, "block"
-
-    invoke-static {p3, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
     if-eqz p2, :cond_0
 
@@ -1198,18 +1135,14 @@
         }
     .end annotation
 
-    const-string v0, "or"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 467
+    .line 472
     invoke-virtual {p0}, Landroidx/compose/foundation/text/selection/BaseTextPreparedSelection;->getState()Landroidx/compose/foundation/text/selection/TextPreparedSelectionState;
 
     move-result-object v0
 
     invoke-virtual {v0}, Landroidx/compose/foundation/text/selection/TextPreparedSelectionState;->resetCachedX()V
 
-    .line 469
+    .line 474
     invoke-virtual {p0}, Landroidx/compose/foundation/text/selection/BaseTextPreparedSelection;->getText$foundation_release()Ljava/lang/String;
 
     move-result-object v0
@@ -1222,7 +1155,7 @@
 
     if-lez v0, :cond_2
 
-    .line 470
+    .line 475
     move-object v0, p0
 
     check-cast v0, Landroidx/compose/foundation/text/selection/BaseTextPreparedSelection;
@@ -1274,7 +1207,7 @@
 
     invoke-virtual {p0, p1}, Landroidx/compose/foundation/text/selection/BaseTextPreparedSelection;->setCursor(I)V
 
-    .line 472
+    .line 477
     :cond_2
     :goto_0
     const-string p1, "null cannot be cast to non-null type T of androidx.compose.foundation.text.selection.BaseTextPreparedSelection"
@@ -1300,18 +1233,14 @@
         }
     .end annotation
 
-    const-string v0, "or"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 475
+    .line 480
     invoke-virtual {p0}, Landroidx/compose/foundation/text/selection/BaseTextPreparedSelection;->getState()Landroidx/compose/foundation/text/selection/TextPreparedSelectionState;
 
     move-result-object v0
 
     invoke-virtual {v0}, Landroidx/compose/foundation/text/selection/TextPreparedSelectionState;->resetCachedX()V
 
-    .line 477
+    .line 482
     invoke-virtual {p0}, Landroidx/compose/foundation/text/selection/BaseTextPreparedSelection;->getText$foundation_release()Ljava/lang/String;
 
     move-result-object v0
@@ -1324,7 +1253,7 @@
 
     if-lez v0, :cond_2
 
-    .line 478
+    .line 483
     move-object v0, p0
 
     check-cast v0, Landroidx/compose/foundation/text/selection/BaseTextPreparedSelection;
@@ -1376,7 +1305,7 @@
 
     invoke-virtual {p0, p1}, Landroidx/compose/foundation/text/selection/BaseTextPreparedSelection;->setCursor(I)V
 
-    .line 480
+    .line 485
     :cond_2
     :goto_0
     const-string p1, "null cannot be cast to non-null type T of androidx.compose.foundation.text.selection.BaseTextPreparedSelection"
@@ -1398,14 +1327,14 @@
         }
     .end annotation
 
-    .line 443
+    .line 448
     invoke-virtual {p0}, Landroidx/compose/foundation/text/selection/BaseTextPreparedSelection;->getState()Landroidx/compose/foundation/text/selection/TextPreparedSelectionState;
 
     move-result-object v0
 
     invoke-virtual {v0}, Landroidx/compose/foundation/text/selection/TextPreparedSelectionState;->resetCachedX()V
 
-    .line 445
+    .line 450
     invoke-virtual {p0}, Landroidx/compose/foundation/text/selection/BaseTextPreparedSelection;->getText$foundation_release()Ljava/lang/String;
 
     move-result-object v0
@@ -1418,7 +1347,7 @@
 
     if-lez v0, :cond_0
 
-    .line 446
+    .line 451
     move-object v0, p0
 
     check-cast v0, Landroidx/compose/foundation/text/selection/BaseTextPreparedSelection;
@@ -1432,7 +1361,7 @@
 
     invoke-virtual {p0, v0}, Landroidx/compose/foundation/text/selection/BaseTextPreparedSelection;->setCursor(I)V
 
-    .line 448
+    .line 453
     :cond_0
     const-string v0, "null cannot be cast to non-null type T of androidx.compose.foundation.text.selection.BaseTextPreparedSelection"
 
@@ -1466,7 +1395,7 @@
 .method public final getLineEndByOffset()Ljava/lang/Integer;
     .locals 4
 
-    .line 226
+    .line 234
     iget-object v0, p0, Landroidx/compose/foundation/text/selection/BaseTextPreparedSelection;->layoutResult:Landroidx/compose/ui/text/TextLayoutResult;
 
     const/4 v1, 0x0
@@ -1492,7 +1421,7 @@
 .method public final getLineStartByOffset()Ljava/lang/Integer;
     .locals 4
 
-    .line 220
+    .line 228
     iget-object v0, p0, Landroidx/compose/foundation/text/selection/BaseTextPreparedSelection;->layoutResult:Landroidx/compose/ui/text/TextLayoutResult;
 
     const/4 v1, 0x0
@@ -1679,7 +1608,7 @@
         }
     .end annotation
 
-    .line 571
+    .line 576
     invoke-virtual {p0}, Landroidx/compose/foundation/text/selection/BaseTextPreparedSelection;->getText$foundation_release()Ljava/lang/String;
 
     move-result-object v0
@@ -1692,12 +1621,12 @@
 
     if-lez v0, :cond_0
 
-    .line 572
+    .line 577
     move-object v0, p0
 
     check-cast v0, Landroidx/compose/foundation/text/selection/BaseTextPreparedSelection;
 
-    .line 217
+    .line 225
     iget-object v0, p0, Landroidx/compose/foundation/text/selection/BaseTextPreparedSelection;->layoutResult:Landroidx/compose/ui/text/TextLayoutResult;
 
     if-eqz v0, :cond_0
@@ -1710,7 +1639,7 @@
 
     invoke-virtual {p0, v0}, Landroidx/compose/foundation/text/selection/BaseTextPreparedSelection;->setCursor(I)V
 
-    .line 574
+    .line 579
     :cond_0
     const-string v0, "null cannot be cast to non-null type T of androidx.compose.foundation.text.selection.BaseTextPreparedSelection"
 
@@ -1731,14 +1660,14 @@
         }
     .end annotation
 
-    .line 451
+    .line 456
     invoke-virtual {p0}, Landroidx/compose/foundation/text/selection/BaseTextPreparedSelection;->getState()Landroidx/compose/foundation/text/selection/TextPreparedSelectionState;
 
     move-result-object v0
 
     invoke-virtual {v0}, Landroidx/compose/foundation/text/selection/TextPreparedSelectionState;->resetCachedX()V
 
-    .line 453
+    .line 458
     invoke-virtual {p0}, Landroidx/compose/foundation/text/selection/BaseTextPreparedSelection;->getText$foundation_release()Ljava/lang/String;
 
     move-result-object v0
@@ -1751,7 +1680,7 @@
 
     if-lez v0, :cond_1
 
-    .line 454
+    .line 459
     move-object v0, p0
 
     check-cast v0, Landroidx/compose/foundation/text/selection/BaseTextPreparedSelection;
@@ -1772,7 +1701,7 @@
     :cond_0
     invoke-direct {p0}, Landroidx/compose/foundation/text/selection/BaseTextPreparedSelection;->moveCursorNext()Landroidx/compose/foundation/text/selection/BaseTextPreparedSelection;
 
-    .line 456
+    .line 461
     :cond_1
     :goto_0
     const-string v0, "null cannot be cast to non-null type T of androidx.compose.foundation.text.selection.BaseTextPreparedSelection"
@@ -1794,14 +1723,14 @@
         }
     .end annotation
 
-    .line 515
+    .line 520
     invoke-virtual {p0}, Landroidx/compose/foundation/text/selection/BaseTextPreparedSelection;->getState()Landroidx/compose/foundation/text/selection/TextPreparedSelectionState;
 
     move-result-object v0
 
     invoke-virtual {v0}, Landroidx/compose/foundation/text/selection/TextPreparedSelectionState;->resetCachedX()V
 
-    .line 517
+    .line 522
     invoke-virtual {p0}, Landroidx/compose/foundation/text/selection/BaseTextPreparedSelection;->getText$foundation_release()Ljava/lang/String;
 
     move-result-object v0
@@ -1814,7 +1743,7 @@
 
     if-lez v0, :cond_1
 
-    .line 518
+    .line 523
     move-object v0, p0
 
     check-cast v0, Landroidx/compose/foundation/text/selection/BaseTextPreparedSelection;
@@ -1835,7 +1764,7 @@
     :cond_0
     invoke-direct {p0}, Landroidx/compose/foundation/text/selection/BaseTextPreparedSelection;->moveCursorNextByWord()Landroidx/compose/foundation/text/selection/BaseTextPreparedSelection;
 
-    .line 520
+    .line 525
     :cond_1
     :goto_0
     const-string v0, "null cannot be cast to non-null type T of androidx.compose.foundation.text.selection.BaseTextPreparedSelection"
@@ -1850,21 +1779,21 @@
 .end method
 
 .method public final moveCursorNextByParagraph()Landroidx/compose/foundation/text/selection/BaseTextPreparedSelection;
-    .locals 1
+    .locals 3
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()TT;"
         }
     .end annotation
 
-    .line 555
+    .line 560
     invoke-virtual {p0}, Landroidx/compose/foundation/text/selection/BaseTextPreparedSelection;->getState()Landroidx/compose/foundation/text/selection/TextPreparedSelectionState;
 
     move-result-object v0
 
     invoke-virtual {v0}, Landroidx/compose/foundation/text/selection/TextPreparedSelectionState;->resetCachedX()V
 
-    .line 557
+    .line 562
     invoke-virtual {p0}, Landroidx/compose/foundation/text/selection/BaseTextPreparedSelection;->getText$foundation_release()Ljava/lang/String;
 
     move-result-object v0
@@ -1875,22 +1804,68 @@
 
     move-result v0
 
-    if-lez v0, :cond_0
+    if-lez v0, :cond_1
 
-    .line 558
+    .line 563
     move-object v0, p0
 
     check-cast v0, Landroidx/compose/foundation/text/selection/BaseTextPreparedSelection;
 
-    .line 209
-    invoke-direct {p0}, Landroidx/compose/foundation/text/selection/BaseTextPreparedSelection;->getParagraphEnd()I
+    .line 213
+    invoke-virtual {p0}, Landroidx/compose/foundation/text/selection/BaseTextPreparedSelection;->getText$foundation_release()Ljava/lang/String;
+
+    move-result-object v0
+
+    check-cast v0, Ljava/lang/CharSequence;
+
+    iget-wide v1, p0, Landroidx/compose/foundation/text/selection/BaseTextPreparedSelection;->selection:J
+
+    invoke-static {v1, v2}, Landroidx/compose/ui/text/TextRange;->getMax-impl(J)I
+
+    move-result v1
+
+    invoke-static {v0, v1}, Landroidx/compose/foundation/text/StringHelpersKt;->findParagraphEnd(Ljava/lang/CharSequence;I)I
 
     move-result v0
 
+    .line 214
+    iget-wide v1, p0, Landroidx/compose/foundation/text/selection/BaseTextPreparedSelection;->selection:J
+
+    invoke-static {v1, v2}, Landroidx/compose/ui/text/TextRange;->getMax-impl(J)I
+
+    move-result v1
+
+    if-ne v0, v1, :cond_0
+
+    invoke-virtual {p0}, Landroidx/compose/foundation/text/selection/BaseTextPreparedSelection;->getText$foundation_release()Ljava/lang/String;
+
+    move-result-object v1
+
+    invoke-virtual {v1}, Ljava/lang/String;->length()I
+
+    move-result v1
+
+    if-eq v0, v1, :cond_0
+
+    .line 215
+    invoke-virtual {p0}, Landroidx/compose/foundation/text/selection/BaseTextPreparedSelection;->getText$foundation_release()Ljava/lang/String;
+
+    move-result-object v1
+
+    check-cast v1, Ljava/lang/CharSequence;
+
+    add-int/lit8 v0, v0, 0x1
+
+    invoke-static {v1, v0}, Landroidx/compose/foundation/text/StringHelpersKt;->findParagraphEnd(Ljava/lang/CharSequence;I)I
+
+    move-result v0
+
+    .line 217
+    :cond_0
     invoke-virtual {p0, v0}, Landroidx/compose/foundation/text/selection/BaseTextPreparedSelection;->setCursor(I)V
 
-    .line 560
-    :cond_0
+    .line 565
+    :cond_1
     const-string v0, "null cannot be cast to non-null type T of androidx.compose.foundation.text.selection.BaseTextPreparedSelection"
 
     invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;Ljava/lang/String;)V
@@ -1903,21 +1878,21 @@
 .end method
 
 .method public final moveCursorPrevByParagraph()Landroidx/compose/foundation/text/selection/BaseTextPreparedSelection;
-    .locals 1
+    .locals 3
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()TT;"
         }
     .end annotation
 
-    .line 547
+    .line 552
     invoke-virtual {p0}, Landroidx/compose/foundation/text/selection/BaseTextPreparedSelection;->getState()Landroidx/compose/foundation/text/selection/TextPreparedSelectionState;
 
     move-result-object v0
 
     invoke-virtual {v0}, Landroidx/compose/foundation/text/selection/TextPreparedSelectionState;->resetCachedX()V
 
-    .line 549
+    .line 554
     invoke-virtual {p0}, Landroidx/compose/foundation/text/selection/BaseTextPreparedSelection;->getText$foundation_release()Ljava/lang/String;
 
     move-result-object v0
@@ -1928,22 +1903,60 @@
 
     move-result v0
 
-    if-lez v0, :cond_0
+    if-lez v0, :cond_1
 
-    .line 550
+    .line 555
     move-object v0, p0
 
     check-cast v0, Landroidx/compose/foundation/text/selection/BaseTextPreparedSelection;
 
     .line 205
-    invoke-direct {p0}, Landroidx/compose/foundation/text/selection/BaseTextPreparedSelection;->getParagraphStart()I
+    invoke-virtual {p0}, Landroidx/compose/foundation/text/selection/BaseTextPreparedSelection;->getText$foundation_release()Ljava/lang/String;
+
+    move-result-object v0
+
+    check-cast v0, Ljava/lang/CharSequence;
+
+    iget-wide v1, p0, Landroidx/compose/foundation/text/selection/BaseTextPreparedSelection;->selection:J
+
+    invoke-static {v1, v2}, Landroidx/compose/ui/text/TextRange;->getMin-impl(J)I
+
+    move-result v1
+
+    invoke-static {v0, v1}, Landroidx/compose/foundation/text/StringHelpersKt;->findParagraphStart(Ljava/lang/CharSequence;I)I
 
     move-result v0
 
+    .line 206
+    iget-wide v1, p0, Landroidx/compose/foundation/text/selection/BaseTextPreparedSelection;->selection:J
+
+    invoke-static {v1, v2}, Landroidx/compose/ui/text/TextRange;->getMin-impl(J)I
+
+    move-result v1
+
+    if-ne v0, v1, :cond_0
+
+    if-eqz v0, :cond_0
+
+    .line 207
+    invoke-virtual {p0}, Landroidx/compose/foundation/text/selection/BaseTextPreparedSelection;->getText$foundation_release()Ljava/lang/String;
+
+    move-result-object v1
+
+    check-cast v1, Ljava/lang/CharSequence;
+
+    add-int/lit8 v0, v0, -0x1
+
+    invoke-static {v1, v0}, Landroidx/compose/foundation/text/StringHelpersKt;->findParagraphStart(Ljava/lang/CharSequence;I)I
+
+    move-result v0
+
+    .line 209
+    :cond_0
     invoke-virtual {p0, v0}, Landroidx/compose/foundation/text/selection/BaseTextPreparedSelection;->setCursor(I)V
 
-    .line 552
-    :cond_0
+    .line 557
+    :cond_1
     const-string v0, "null cannot be cast to non-null type T of androidx.compose.foundation.text.selection.BaseTextPreparedSelection"
 
     invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;Ljava/lang/String;)V
@@ -1963,14 +1976,14 @@
         }
     .end annotation
 
-    .line 459
+    .line 464
     invoke-virtual {p0}, Landroidx/compose/foundation/text/selection/BaseTextPreparedSelection;->getState()Landroidx/compose/foundation/text/selection/TextPreparedSelectionState;
 
     move-result-object v0
 
     invoke-virtual {v0}, Landroidx/compose/foundation/text/selection/TextPreparedSelectionState;->resetCachedX()V
 
-    .line 461
+    .line 466
     invoke-virtual {p0}, Landroidx/compose/foundation/text/selection/BaseTextPreparedSelection;->getText$foundation_release()Ljava/lang/String;
 
     move-result-object v0
@@ -1983,7 +1996,7 @@
 
     if-lez v0, :cond_1
 
-    .line 462
+    .line 467
     move-object v0, p0
 
     check-cast v0, Landroidx/compose/foundation/text/selection/BaseTextPreparedSelection;
@@ -2004,7 +2017,7 @@
     :cond_0
     invoke-direct {p0}, Landroidx/compose/foundation/text/selection/BaseTextPreparedSelection;->moveCursorPrev()Landroidx/compose/foundation/text/selection/BaseTextPreparedSelection;
 
-    .line 464
+    .line 469
     :cond_1
     :goto_0
     const-string v0, "null cannot be cast to non-null type T of androidx.compose.foundation.text.selection.BaseTextPreparedSelection"
@@ -2026,14 +2039,14 @@
         }
     .end annotation
 
-    .line 523
+    .line 528
     invoke-virtual {p0}, Landroidx/compose/foundation/text/selection/BaseTextPreparedSelection;->getState()Landroidx/compose/foundation/text/selection/TextPreparedSelectionState;
 
     move-result-object v0
 
     invoke-virtual {v0}, Landroidx/compose/foundation/text/selection/TextPreparedSelectionState;->resetCachedX()V
 
-    .line 525
+    .line 530
     invoke-virtual {p0}, Landroidx/compose/foundation/text/selection/BaseTextPreparedSelection;->getText$foundation_release()Ljava/lang/String;
 
     move-result-object v0
@@ -2046,7 +2059,7 @@
 
     if-lez v0, :cond_1
 
-    .line 526
+    .line 531
     move-object v0, p0
 
     check-cast v0, Landroidx/compose/foundation/text/selection/BaseTextPreparedSelection;
@@ -2067,7 +2080,7 @@
     :cond_0
     invoke-direct {p0}, Landroidx/compose/foundation/text/selection/BaseTextPreparedSelection;->moveCursorPrevByWord()Landroidx/compose/foundation/text/selection/BaseTextPreparedSelection;
 
-    .line 528
+    .line 533
     :cond_1
     :goto_0
     const-string v0, "null cannot be cast to non-null type T of androidx.compose.foundation.text.selection.BaseTextPreparedSelection"
@@ -2089,14 +2102,14 @@
         }
     .end annotation
 
-    .line 507
+    .line 512
     invoke-virtual {p0}, Landroidx/compose/foundation/text/selection/BaseTextPreparedSelection;->getState()Landroidx/compose/foundation/text/selection/TextPreparedSelectionState;
 
     move-result-object v0
 
     invoke-virtual {v0}, Landroidx/compose/foundation/text/selection/TextPreparedSelectionState;->resetCachedX()V
 
-    .line 509
+    .line 514
     invoke-virtual {p0}, Landroidx/compose/foundation/text/selection/BaseTextPreparedSelection;->getText$foundation_release()Ljava/lang/String;
 
     move-result-object v0
@@ -2109,7 +2122,7 @@
 
     if-lez v0, :cond_0
 
-    .line 510
+    .line 515
     move-object v0, p0
 
     check-cast v0, Landroidx/compose/foundation/text/selection/BaseTextPreparedSelection;
@@ -2125,7 +2138,7 @@
 
     invoke-virtual {p0, v0}, Landroidx/compose/foundation/text/selection/BaseTextPreparedSelection;->setCursor(I)V
 
-    .line 512
+    .line 517
     :cond_0
     const-string v0, "null cannot be cast to non-null type T of androidx.compose.foundation.text.selection.BaseTextPreparedSelection"
 
@@ -2146,14 +2159,14 @@
         }
     .end annotation
 
-    .line 499
+    .line 504
     invoke-virtual {p0}, Landroidx/compose/foundation/text/selection/BaseTextPreparedSelection;->getState()Landroidx/compose/foundation/text/selection/TextPreparedSelectionState;
 
     move-result-object v0
 
     invoke-virtual {v0}, Landroidx/compose/foundation/text/selection/TextPreparedSelectionState;->resetCachedX()V
 
-    .line 501
+    .line 506
     invoke-virtual {p0}, Landroidx/compose/foundation/text/selection/BaseTextPreparedSelection;->getText$foundation_release()Ljava/lang/String;
 
     move-result-object v0
@@ -2166,7 +2179,7 @@
 
     if-lez v0, :cond_0
 
-    .line 502
+    .line 507
     move-object v0, p0
 
     check-cast v0, Landroidx/compose/foundation/text/selection/BaseTextPreparedSelection;
@@ -2176,7 +2189,7 @@
     .line 169
     invoke-virtual {p0, v0}, Landroidx/compose/foundation/text/selection/BaseTextPreparedSelection;->setCursor(I)V
 
-    .line 504
+    .line 509
     :cond_0
     const-string v0, "null cannot be cast to non-null type T of androidx.compose.foundation.text.selection.BaseTextPreparedSelection"
 
@@ -2197,14 +2210,14 @@
         }
     .end annotation
 
-    .line 585
+    .line 590
     invoke-virtual {p0}, Landroidx/compose/foundation/text/selection/BaseTextPreparedSelection;->getState()Landroidx/compose/foundation/text/selection/TextPreparedSelectionState;
 
     move-result-object v0
 
     invoke-virtual {v0}, Landroidx/compose/foundation/text/selection/TextPreparedSelectionState;->resetCachedX()V
 
-    .line 587
+    .line 592
     invoke-virtual {p0}, Landroidx/compose/foundation/text/selection/BaseTextPreparedSelection;->getText$foundation_release()Ljava/lang/String;
 
     move-result-object v0
@@ -2217,12 +2230,12 @@
 
     if-lez v0, :cond_0
 
-    .line 588
+    .line 593
     move-object v0, p0
 
     check-cast v0, Landroidx/compose/foundation/text/selection/BaseTextPreparedSelection;
 
-    .line 229
+    .line 237
     invoke-virtual {p0}, Landroidx/compose/foundation/text/selection/BaseTextPreparedSelection;->getLineEndByOffset()Ljava/lang/Integer;
 
     move-result-object v0
@@ -2237,7 +2250,7 @@
 
     invoke-virtual {p0, v0}, Landroidx/compose/foundation/text/selection/BaseTextPreparedSelection;->setCursor(I)V
 
-    .line 590
+    .line 595
     :cond_0
     const-string v0, "null cannot be cast to non-null type T of androidx.compose.foundation.text.selection.BaseTextPreparedSelection"
 
@@ -2258,14 +2271,14 @@
         }
     .end annotation
 
-    .line 593
+    .line 598
     invoke-virtual {p0}, Landroidx/compose/foundation/text/selection/BaseTextPreparedSelection;->getState()Landroidx/compose/foundation/text/selection/TextPreparedSelectionState;
 
     move-result-object v0
 
     invoke-virtual {v0}, Landroidx/compose/foundation/text/selection/TextPreparedSelectionState;->resetCachedX()V
 
-    .line 595
+    .line 600
     invoke-virtual {p0}, Landroidx/compose/foundation/text/selection/BaseTextPreparedSelection;->getText$foundation_release()Ljava/lang/String;
 
     move-result-object v0
@@ -2278,28 +2291,28 @@
 
     if-lez v0, :cond_1
 
-    .line 596
+    .line 601
     move-object v0, p0
 
     check-cast v0, Landroidx/compose/foundation/text/selection/BaseTextPreparedSelection;
 
-    .line 233
+    .line 241
     invoke-direct {p0}, Landroidx/compose/foundation/text/selection/BaseTextPreparedSelection;->isLtr()Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
-    .line 234
+    .line 242
     invoke-virtual {p0}, Landroidx/compose/foundation/text/selection/BaseTextPreparedSelection;->moveCursorToLineStart()Landroidx/compose/foundation/text/selection/BaseTextPreparedSelection;
 
     goto :goto_0
 
-    .line 236
+    .line 244
     :cond_0
     invoke-virtual {p0}, Landroidx/compose/foundation/text/selection/BaseTextPreparedSelection;->moveCursorToLineEnd()Landroidx/compose/foundation/text/selection/BaseTextPreparedSelection;
 
-    .line 598
+    .line 603
     :cond_1
     :goto_0
     const-string v0, "null cannot be cast to non-null type T of androidx.compose.foundation.text.selection.BaseTextPreparedSelection"
@@ -2321,14 +2334,14 @@
         }
     .end annotation
 
-    .line 601
+    .line 606
     invoke-virtual {p0}, Landroidx/compose/foundation/text/selection/BaseTextPreparedSelection;->getState()Landroidx/compose/foundation/text/selection/TextPreparedSelectionState;
 
     move-result-object v0
 
     invoke-virtual {v0}, Landroidx/compose/foundation/text/selection/TextPreparedSelectionState;->resetCachedX()V
 
-    .line 603
+    .line 608
     invoke-virtual {p0}, Landroidx/compose/foundation/text/selection/BaseTextPreparedSelection;->getText$foundation_release()Ljava/lang/String;
 
     move-result-object v0
@@ -2341,28 +2354,28 @@
 
     if-lez v0, :cond_1
 
-    .line 604
+    .line 609
     move-object v0, p0
 
     check-cast v0, Landroidx/compose/foundation/text/selection/BaseTextPreparedSelection;
 
-    .line 241
+    .line 249
     invoke-direct {p0}, Landroidx/compose/foundation/text/selection/BaseTextPreparedSelection;->isLtr()Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
-    .line 242
+    .line 250
     invoke-virtual {p0}, Landroidx/compose/foundation/text/selection/BaseTextPreparedSelection;->moveCursorToLineEnd()Landroidx/compose/foundation/text/selection/BaseTextPreparedSelection;
 
     goto :goto_0
 
-    .line 244
+    .line 252
     :cond_0
     invoke-virtual {p0}, Landroidx/compose/foundation/text/selection/BaseTextPreparedSelection;->moveCursorToLineStart()Landroidx/compose/foundation/text/selection/BaseTextPreparedSelection;
 
-    .line 606
+    .line 611
     :cond_1
     :goto_0
     const-string v0, "null cannot be cast to non-null type T of androidx.compose.foundation.text.selection.BaseTextPreparedSelection"
@@ -2384,14 +2397,14 @@
         }
     .end annotation
 
-    .line 577
+    .line 582
     invoke-virtual {p0}, Landroidx/compose/foundation/text/selection/BaseTextPreparedSelection;->getState()Landroidx/compose/foundation/text/selection/TextPreparedSelectionState;
 
     move-result-object v0
 
     invoke-virtual {v0}, Landroidx/compose/foundation/text/selection/TextPreparedSelectionState;->resetCachedX()V
 
-    .line 579
+    .line 584
     invoke-virtual {p0}, Landroidx/compose/foundation/text/selection/BaseTextPreparedSelection;->getText$foundation_release()Ljava/lang/String;
 
     move-result-object v0
@@ -2404,12 +2417,12 @@
 
     if-lez v0, :cond_0
 
-    .line 580
+    .line 585
     move-object v0, p0
 
     check-cast v0, Landroidx/compose/foundation/text/selection/BaseTextPreparedSelection;
 
-    .line 223
+    .line 231
     invoke-virtual {p0}, Landroidx/compose/foundation/text/selection/BaseTextPreparedSelection;->getLineStartByOffset()Ljava/lang/Integer;
 
     move-result-object v0
@@ -2424,7 +2437,7 @@
 
     invoke-virtual {p0, v0}, Landroidx/compose/foundation/text/selection/BaseTextPreparedSelection;->setCursor(I)V
 
-    .line 582
+    .line 587
     :cond_0
     const-string v0, "null cannot be cast to non-null type T of androidx.compose.foundation.text.selection.BaseTextPreparedSelection"
 
@@ -2445,7 +2458,7 @@
         }
     .end annotation
 
-    .line 564
+    .line 569
     invoke-virtual {p0}, Landroidx/compose/foundation/text/selection/BaseTextPreparedSelection;->getText$foundation_release()Ljava/lang/String;
 
     move-result-object v0
@@ -2458,12 +2471,12 @@
 
     if-lez v0, :cond_0
 
-    .line 565
+    .line 570
     move-object v0, p0
 
     check-cast v0, Landroidx/compose/foundation/text/selection/BaseTextPreparedSelection;
 
-    .line 213
+    .line 221
     iget-object v0, p0, Landroidx/compose/foundation/text/selection/BaseTextPreparedSelection;->layoutResult:Landroidx/compose/ui/text/TextLayoutResult;
 
     if-eqz v0, :cond_0
@@ -2476,7 +2489,7 @@
 
     invoke-virtual {p0, v0}, Landroidx/compose/foundation/text/selection/BaseTextPreparedSelection;->setCursor(I)V
 
-    .line 567
+    .line 572
     :cond_0
     const-string v0, "null cannot be cast to non-null type T of androidx.compose.foundation.text.selection.BaseTextPreparedSelection"
 
@@ -2497,14 +2510,14 @@
         }
     .end annotation
 
-    .line 435
+    .line 440
     invoke-virtual {p0}, Landroidx/compose/foundation/text/selection/BaseTextPreparedSelection;->getState()Landroidx/compose/foundation/text/selection/TextPreparedSelectionState;
 
     move-result-object v0
 
     invoke-virtual {v0}, Landroidx/compose/foundation/text/selection/TextPreparedSelectionState;->resetCachedX()V
 
-    .line 437
+    .line 442
     invoke-virtual {p0}, Landroidx/compose/foundation/text/selection/BaseTextPreparedSelection;->getText$foundation_release()Ljava/lang/String;
 
     move-result-object v0
@@ -2517,7 +2530,7 @@
 
     if-lez v0, :cond_0
 
-    .line 438
+    .line 443
     move-object v0, p0
 
     check-cast v0, Landroidx/compose/foundation/text/selection/BaseTextPreparedSelection;
@@ -2535,7 +2548,7 @@
 
     invoke-virtual {p0, v1, v0}, Landroidx/compose/foundation/text/selection/BaseTextPreparedSelection;->setSelection(II)V
 
-    .line 440
+    .line 445
     :cond_0
     const-string v0, "null cannot be cast to non-null type T of androidx.compose.foundation.text.selection.BaseTextPreparedSelection"
 
@@ -2556,7 +2569,7 @@
         }
     .end annotation
 
-    .line 610
+    .line 615
     invoke-virtual {p0}, Landroidx/compose/foundation/text/selection/BaseTextPreparedSelection;->getText$foundation_release()Ljava/lang/String;
 
     move-result-object v0
@@ -2569,12 +2582,12 @@
 
     if-lez v0, :cond_0
 
-    .line 611
+    .line 616
     move-object v0, p0
 
     check-cast v0, Landroidx/compose/foundation/text/selection/BaseTextPreparedSelection;
 
-    .line 250
+    .line 258
     iget-wide v0, p0, Landroidx/compose/foundation/text/selection/BaseTextPreparedSelection;->originalSelection:J
 
     invoke-static {v0, v1}, Landroidx/compose/ui/text/TextRange;->getStart-impl(J)I
@@ -2593,7 +2606,7 @@
 
     iput-wide v0, p0, Landroidx/compose/foundation/text/selection/BaseTextPreparedSelection;->selection:J
 
-    .line 613
+    .line 618
     :cond_0
     const-string v0, "null cannot be cast to non-null type T of androidx.compose.foundation.text.selection.BaseTextPreparedSelection"
 
@@ -2607,11 +2620,7 @@
 .end method
 
 .method public final setAnnotatedString(Landroidx/compose/ui/text/AnnotatedString;)V
-    .locals 1
-
-    const-string v0, "<set-?>"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+    .locals 0
 
     .line 68
     iput-object p1, p0, Landroidx/compose/foundation/text/selection/BaseTextPreparedSelection;->annotatedString:Landroidx/compose/ui/text/AnnotatedString;

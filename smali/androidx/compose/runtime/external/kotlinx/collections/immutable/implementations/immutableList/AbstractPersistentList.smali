@@ -69,7 +69,17 @@
 .end annotation
 
 
+# static fields
+.field public static final $stable:I
+
+
 # direct methods
+.method static constructor <clinit>()V
+    .locals 0
+
+    return-void
+.end method
+
 .method public constructor <init>()V
     .locals 0
 
@@ -106,10 +116,6 @@
         }
     .end annotation
 
-    const-string v0, "c"
-
-    invoke-static {p2, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
     .line 22
     check-cast p0, Landroidx/compose/runtime/external/kotlinx/collections/immutable/PersistentList;
 
@@ -144,10 +150,6 @@
             "TE;>;"
         }
     .end annotation
-
-    const-string v0, "elements"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 18
     check-cast p0, Landroidx/compose/runtime/external/kotlinx/collections/immutable/PersistentList;
@@ -238,14 +240,16 @@
         }
     .end annotation
 
-    const-string v0, "elements"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
     .line 50
     check-cast p1, Ljava/lang/Iterable;
 
     .line 63
+    instance-of v0, p1, Ljava/util/Collection;
+
+    const/4 v1, 0x1
+
+    if-eqz v0, :cond_0
+
     move-object v0, p1
 
     check-cast v0, Ljava/util/Collection;
@@ -253,8 +257,6 @@
     invoke-interface {v0}, Ljava/util/Collection;->isEmpty()Z
 
     move-result v0
-
-    const/4 v1, 0x1
 
     if-eqz v0, :cond_0
 
@@ -402,10 +404,6 @@
         }
     .end annotation
 
-    const-string v0, "elements"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
     .line 34
     new-instance v0, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableList/AbstractPersistentList$removeAll$1;
 
@@ -444,10 +442,6 @@
             "TE;>;"
         }
     .end annotation
-
-    const-string v0, "elements"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 38
     new-instance v0, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableList/AbstractPersistentList$retainAll$1;

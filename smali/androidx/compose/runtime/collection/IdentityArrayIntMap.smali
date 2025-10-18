@@ -6,7 +6,7 @@
 # annotations
 .annotation runtime Lkotlin/Metadata;
     d1 = {
-        "\u0000:\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\u0008\u0002\n\u0002\u0010\u0011\n\u0002\u0008\u0004\n\u0002\u0010\u0008\n\u0002\u0008\u0003\n\u0002\u0010\u0015\n\u0002\u0008\u0007\n\u0002\u0010\u000b\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0005\n\u0002\u0010\u0002\n\u0002\u0008\u0005\u0008\u0000\u0018\u00002\u00020\u0001B\u0005\u00a2\u0006\u0002\u0010\u0002J\u0016\u0010\u0011\u001a\u00020\t2\u0006\u0010\u0012\u001a\u00020\u00012\u0006\u0010\u0013\u001a\u00020\tJ&\u0010\u0014\u001a\u00020\u00152\u0018\u0010\u0016\u001a\u0014\u0012\u0004\u0012\u00020\u0001\u0012\u0004\u0012\u00020\t\u0012\u0004\u0012\u00020\u00150\u0017H\u0086\u0008\u00f8\u0001\u0000J\u0012\u0010\u0018\u001a\u00020\t2\u0008\u0010\u0012\u001a\u0004\u0018\u00010\u0001H\u0002J\"\u0010\u0019\u001a\u00020\t2\u0006\u0010\u001a\u001a\u00020\t2\u0008\u0010\u0013\u001a\u0004\u0018\u00010\u00012\u0006\u0010\u001b\u001a\u00020\tH\u0002J&\u0010\u001c\u001a\u00020\u001d2\u0018\u0010\u001e\u001a\u0014\u0012\u0004\u0012\u00020\u0001\u0012\u0004\u0012\u00020\t\u0012\u0004\u0012\u00020\u001d0\u0017H\u0086\u0008\u00f8\u0001\u0000J\u0011\u0010\u001f\u001a\u00020\t2\u0006\u0010\u0012\u001a\u00020\u0001H\u0086\u0002J\u000e\u0010 \u001a\u00020\u00152\u0006\u0010\u0012\u001a\u00020\u0001J&\u0010!\u001a\u00020\u001d2\u0018\u0010\u0016\u001a\u0014\u0012\u0004\u0012\u00020\u0001\u0012\u0004\u0012\u00020\t\u0012\u0004\u0012\u00020\u00150\u0017H\u0086\u0008\u00f8\u0001\u0000R0\u0010\u0005\u001a\n\u0012\u0006\u0012\u0004\u0018\u00010\u00010\u00042\u000e\u0010\u0003\u001a\n\u0012\u0006\u0012\u0004\u0018\u00010\u00010\u0004@BX\u0086\u000e\u00a2\u0006\n\n\u0002\u0010\u0008\u001a\u0004\u0008\u0006\u0010\u0007R\u001e\u0010\n\u001a\u00020\t2\u0006\u0010\u0003\u001a\u00020\t@BX\u0086\u000e\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\u000b\u0010\u000cR\u001e\u0010\u000e\u001a\u00020\r2\u0006\u0010\u0003\u001a\u00020\r@BX\u0086\u000e\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\u000f\u0010\u0010\u0082\u0002\u0007\n\u0005\u0008\u009920\u0001\u00a8\u0006\""
+        "\u0000:\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\u0008\u0002\n\u0002\u0010\u0011\n\u0002\u0008\u0004\n\u0002\u0010\u0008\n\u0002\u0008\u0003\n\u0002\u0010\u0015\n\u0002\u0008\u0007\n\u0002\u0010\u000b\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0005\n\u0002\u0010\u0002\n\u0002\u0008\u0005\u0008\u0000\u0018\u00002\u00020\u0001B\u0005\u00a2\u0006\u0002\u0010\u0002J\u0016\u0010\u0011\u001a\u00020\t2\u0006\u0010\u0012\u001a\u00020\u00012\u0006\u0010\u0013\u001a\u00020\tJ#\u0010\u0014\u001a\u00020\u00152\u0018\u0010\u0016\u001a\u0014\u0012\u0004\u0012\u00020\u0001\u0012\u0004\u0012\u00020\t\u0012\u0004\u0012\u00020\u00150\u0017H\u0086\u0008J\u0012\u0010\u0018\u001a\u00020\t2\u0008\u0010\u0012\u001a\u0004\u0018\u00010\u0001H\u0002J\"\u0010\u0019\u001a\u00020\t2\u0006\u0010\u001a\u001a\u00020\t2\u0008\u0010\u0013\u001a\u0004\u0018\u00010\u00012\u0006\u0010\u001b\u001a\u00020\tH\u0002J#\u0010\u001c\u001a\u00020\u001d2\u0018\u0010\u001e\u001a\u0014\u0012\u0004\u0012\u00020\u0001\u0012\u0004\u0012\u00020\t\u0012\u0004\u0012\u00020\u001d0\u0017H\u0086\u0008J\u0011\u0010\u001f\u001a\u00020\t2\u0006\u0010\u0012\u001a\u00020\u0001H\u0086\u0002J\u000e\u0010 \u001a\u00020\u00152\u0006\u0010\u0012\u001a\u00020\u0001J#\u0010!\u001a\u00020\u001d2\u0018\u0010\u0016\u001a\u0014\u0012\u0004\u0012\u00020\u0001\u0012\u0004\u0012\u00020\t\u0012\u0004\u0012\u00020\u00150\u0017H\u0086\u0008R0\u0010\u0005\u001a\n\u0012\u0006\u0012\u0004\u0018\u00010\u00010\u00042\u000e\u0010\u0003\u001a\n\u0012\u0006\u0012\u0004\u0018\u00010\u00010\u0004@BX\u0086\u000e\u00a2\u0006\n\n\u0002\u0010\u0008\u001a\u0004\u0008\u0006\u0010\u0007R\u001e\u0010\n\u001a\u00020\t2\u0006\u0010\u0003\u001a\u00020\t@BX\u0086\u000e\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\u000b\u0010\u000cR\u001e\u0010\u000e\u001a\u00020\r2\u0006\u0010\u0003\u001a\u00020\r@BX\u0086\u000e\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\u000f\u0010\u0010\u00a8\u0006\""
     }
     d2 = {
         "Landroidx/compose/runtime/collection/IdentityArrayIntMap;",
@@ -55,6 +55,10 @@
 .end annotation
 
 
+# static fields
+.field public static final $stable:I = 0x8
+
+
 # instance fields
 .field private keys:[Ljava/lang/Object;
 
@@ -64,6 +68,12 @@
 
 
 # direct methods
+.method static constructor <clinit>()V
+    .locals 0
+
+    return-void
+.end method
+
 .method public constructor <init>()V
     .locals 2
 
@@ -237,23 +247,17 @@
 
 # virtual methods
 .method public final add(Ljava/lang/Object;I)I
-    .locals 18
+    .locals 16
 
     move-object/from16 v0, p0
 
-    move-object/from16 v1, p1
-
-    const-string v2, "key"
-
-    invoke-static {v1, v2}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
     .line 37
-    iget-object v3, v0, Landroidx/compose/runtime/collection/IdentityArrayIntMap;->values:[I
+    iget-object v1, v0, Landroidx/compose/runtime/collection/IdentityArrayIntMap;->values:[I
 
     .line 40
     iget v2, v0, Landroidx/compose/runtime/collection/IdentityArrayIntMap;->size:I
 
-    const/4 v10, -0x1
+    const/4 v8, -0x1
 
     if-lez v2, :cond_0
 
@@ -265,119 +269,121 @@
     if-ltz v2, :cond_1
 
     .line 43
-    aget v0, v3, v2
+    aget v0, v1, v2
 
     .line 44
-    aput p2, v3, v2
+    aput p2, v1, v2
 
     return v0
 
     :cond_0
-    move v2, v10
+    move v2, v8
 
     :cond_1
     add-int/lit8 v2, v2, 0x1
 
-    neg-int v2, v2
+    neg-int v7, v2
 
     .line 53
-    iget-object v11, v0, Landroidx/compose/runtime/collection/IdentityArrayIntMap;->keys:[Ljava/lang/Object;
+    iget-object v9, v0, Landroidx/compose/runtime/collection/IdentityArrayIntMap;->keys:[Ljava/lang/Object;
 
     .line 54
-    iget v4, v0, Landroidx/compose/runtime/collection/IdentityArrayIntMap;->size:I
+    iget v2, v0, Landroidx/compose/runtime/collection/IdentityArrayIntMap;->size:I
 
     .line 55
-    array-length v5, v11
+    array-length v3, v9
 
-    if-ne v4, v5, :cond_2
+    if-ne v2, v3, :cond_2
 
     .line 56
-    array-length v5, v11
+    array-length v3, v9
 
-    mul-int/lit8 v5, v5, 0x2
+    mul-int/lit8 v3, v3, 0x2
 
-    new-array v9, v5, [Ljava/lang/Object;
+    new-array v6, v3, [Ljava/lang/Object;
 
     .line 57
-    array-length v5, v11
+    array-length v3, v9
 
-    mul-int/lit8 v5, v5, 0x2
+    mul-int/lit8 v3, v3, 0x2
 
-    new-array v8, v5, [I
+    new-array v5, v3, [I
 
-    add-int/lit8 v5, v2, 0x1
+    add-int/lit8 v3, v7, 0x1
 
     .line 58
-    invoke-static {v11, v9, v5, v2, v4}, Lkotlin/collections/ArraysKt;->copyInto([Ljava/lang/Object;[Ljava/lang/Object;III)[Ljava/lang/Object;
+    invoke-static {v9, v6, v3, v7, v2}, Lkotlin/collections/ArraysKt;->copyInto([Ljava/lang/Object;[Ljava/lang/Object;III)[Ljava/lang/Object;
 
     .line 64
-    invoke-static {v3, v8, v5, v2, v4}, Lkotlin/collections/ArraysKt;->copyInto([I[IIII)[I
+    invoke-static {v1, v5, v3, v7, v2}, Lkotlin/collections/ArraysKt;->copyInto([I[IIII)[I
 
-    const/16 v16, 0x6
+    const/4 v14, 0x6
 
-    const/16 v17, 0x0
+    const/4 v15, 0x0
 
-    const/4 v13, 0x0
-
-    const/4 v14, 0x0
-
-    move-object v12, v9
-
-    move v15, v2
-
-    .line 70
-    invoke-static/range {v11 .. v17}, Lkotlin/collections/ArraysKt;->copyInto$default([Ljava/lang/Object;[Ljava/lang/Object;IIIILjava/lang/Object;)[Ljava/lang/Object;
-
-    const/4 v11, 0x6
+    const/4 v11, 0x0
 
     const/4 v12, 0x0
 
-    const/4 v5, 0x0
+    move-object v10, v6
 
-    const/4 v6, 0x0
+    move v13, v7
 
-    move-object v4, v8
+    .line 70
+    invoke-static/range {v9 .. v15}, Lkotlin/collections/ArraysKt;->copyInto$default([Ljava/lang/Object;[Ljava/lang/Object;IIIILjava/lang/Object;)[Ljava/lang/Object;
 
-    move v7, v2
+    const/4 v9, 0x6
 
-    move-object v13, v8
+    const/4 v10, 0x0
 
-    move v8, v11
+    const/4 v3, 0x0
 
-    move-object v11, v9
+    const/4 v4, 0x0
 
-    move-object v9, v12
+    move-object v2, v5
+
+    move-object v11, v5
+
+    move v5, v7
+
+    move-object v12, v6
+
+    move v6, v9
+
+    move-object v7, v10
 
     .line 74
-    invoke-static/range {v3 .. v9}, Lkotlin/collections/ArraysKt;->copyInto$default([I[IIIIILjava/lang/Object;)[I
+    invoke-static/range {v1 .. v7}, Lkotlin/collections/ArraysKt;->copyInto$default([I[IIIIILjava/lang/Object;)[I
 
     .line 78
-    iput-object v11, v0, Landroidx/compose/runtime/collection/IdentityArrayIntMap;->keys:[Ljava/lang/Object;
+    iput-object v12, v0, Landroidx/compose/runtime/collection/IdentityArrayIntMap;->keys:[Ljava/lang/Object;
 
     .line 79
-    iput-object v13, v0, Landroidx/compose/runtime/collection/IdentityArrayIntMap;->values:[I
+    iput-object v11, v0, Landroidx/compose/runtime/collection/IdentityArrayIntMap;->values:[I
 
     goto :goto_0
 
     :cond_2
-    add-int/lit8 v5, v2, 0x1
+    move v13, v7
+
+    add-int/lit8 v7, v13, 0x1
 
     .line 81
-    invoke-static {v11, v11, v5, v2, v4}, Lkotlin/collections/ArraysKt;->copyInto([Ljava/lang/Object;[Ljava/lang/Object;III)[Ljava/lang/Object;
+    invoke-static {v9, v9, v7, v13, v2}, Lkotlin/collections/ArraysKt;->copyInto([Ljava/lang/Object;[Ljava/lang/Object;III)[Ljava/lang/Object;
 
     .line 87
-    invoke-static {v3, v3, v5, v2, v4}, Lkotlin/collections/ArraysKt;->copyInto([I[IIII)[I
+    invoke-static {v1, v1, v7, v13, v2}, Lkotlin/collections/ArraysKt;->copyInto([I[IIII)[I
 
     .line 94
     :goto_0
-    iget-object v3, v0, Landroidx/compose/runtime/collection/IdentityArrayIntMap;->keys:[Ljava/lang/Object;
+    iget-object v1, v0, Landroidx/compose/runtime/collection/IdentityArrayIntMap;->keys:[Ljava/lang/Object;
 
-    aput-object v1, v3, v2
+    aput-object p1, v1, v13
 
     .line 95
     iget-object v1, v0, Landroidx/compose/runtime/collection/IdentityArrayIntMap;->values:[I
 
-    aput p2, v1, v2
+    aput p2, v1, v13
 
     .line 96
     iget v1, v0, Landroidx/compose/runtime/collection/IdentityArrayIntMap;->size:I
@@ -386,7 +392,7 @@
 
     iput v1, v0, Landroidx/compose/runtime/collection/IdentityArrayIntMap;->size:I
 
-    return v10
+    return v8
 .end method
 
 .method public final any(Lkotlin/jvm/functions/Function2;)Z
@@ -402,10 +408,6 @@
             ">;)Z"
         }
     .end annotation
-
-    const-string v0, "predicate"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 161
     invoke-virtual {p0}, Landroidx/compose/runtime/collection/IdentityArrayIntMap;->getKeys()[Ljava/lang/Object;
@@ -481,10 +483,6 @@
         }
     .end annotation
 
-    const-string v0, "block"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
     .line 172
     invoke-virtual {p0}, Landroidx/compose/runtime/collection/IdentityArrayIntMap;->getKeys()[Ljava/lang/Object;
 
@@ -529,11 +527,7 @@
 .end method
 
 .method public final get(Ljava/lang/Object;)I
-    .locals 1
-
-    const-string v0, "key"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+    .locals 0
 
     .line 30
     invoke-direct {p0, p1}, Landroidx/compose/runtime/collection/IdentityArrayIntMap;->find(Ljava/lang/Object;)I
@@ -592,10 +586,6 @@
 
 .method public final remove(Ljava/lang/Object;)Z
     .locals 5
-
-    const-string v0, "key"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 105
     invoke-direct {p0, p1}, Landroidx/compose/runtime/collection/IdentityArrayIntMap;->find(Ljava/lang/Object;)I
@@ -657,10 +647,6 @@
             ">;)V"
         }
     .end annotation
-
-    const-string v0, "predicate"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 137
     invoke-virtual {p0}, Landroidx/compose/runtime/collection/IdentityArrayIntMap;->getKeys()[Ljava/lang/Object;

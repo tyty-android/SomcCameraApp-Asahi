@@ -32,31 +32,31 @@
 .method constructor <init>(Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;)V
     .locals 1
 
-    .line 471
+    .line 491
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     const/4 v0, 0x0
 
-    .line 464
+    .line 484
     iput-boolean v0, p0, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$CameraSessionInfo;->mIsCameraEvicted:Z
 
-    .line 465
+    .line 485
     iput-boolean v0, p0, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$CameraSessionInfo;->mIsCameraError:Z
 
-    .line 467
+    .line 487
     iput-boolean v0, p0, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$CameraSessionInfo;->mIsOtherError:Z
 
-    .line 472
+    .line 492
     sget-object v0, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$OpenCloseRequestStatus;->NONE:Ljp/co/sony/mc/camera/device/CameraDeviceHandler$OpenCloseRequestStatus;
 
     iput-object v0, p0, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$CameraSessionInfo;->mRequested:Ljp/co/sony/mc/camera/device/CameraDeviceHandler$OpenCloseRequestStatus;
 
-    .line 473
+    .line 493
     sget-object v0, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$OpenClosePerformStatus;->NONE:Ljp/co/sony/mc/camera/device/CameraDeviceHandler$OpenClosePerformStatus;
 
     iput-object v0, p0, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$CameraSessionInfo;->mPerformed:Ljp/co/sony/mc/camera/device/CameraDeviceHandler$OpenClosePerformStatus;
 
-    .line 474
+    .line 494
     new-instance v0, Ljp/co/sony/mc/camera/device/CameraParameters;
 
     invoke-direct {v0, p1}, Ljp/co/sony/mc/camera/device/CameraParameters;-><init>(Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;)V
@@ -69,14 +69,14 @@
 .method static addOpenCloseStatusInfo(Ljp/co/sony/mc/camera/device/CameraDeviceHandler$CameraSessionId;Ljp/co/sony/mc/camera/device/CameraDeviceHandler$CameraSessionInfo;)V
     .locals 2
 
-    .line 480
+    .line 500
     invoke-static {}, Ljp/co/sony/mc/camera/device/CameraDeviceHandler;->-$$Nest$sfgetsCameraSessionInfoMap()Ljava/util/Map;
 
     move-result-object v0
 
     monitor-enter v0
 
-    .line 481
+    .line 501
     :try_start_0
     invoke-static {}, Ljp/co/sony/mc/camera/device/CameraDeviceHandler;->-$$Nest$sfgetsCameraSessionInfoMap()Ljava/util/Map;
 
@@ -84,7 +84,7 @@
 
     invoke-interface {v1, p0, p1}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 482
+    .line 502
     monitor-exit v0
 
     return-void
@@ -102,14 +102,14 @@
 .method public static dump(Ljava/lang/StringBuilder;)V
     .locals 4
 
-    .line 573
+    .line 593
     invoke-static {}, Ljp/co/sony/mc/camera/device/CameraDeviceHandler;->-$$Nest$sfgetsCameraSessionInfoMap()Ljava/util/Map;
 
     move-result-object v0
 
     monitor-enter v0
 
-    .line 575
+    .line 595
     :try_start_0
     invoke-static {}, Ljp/co/sony/mc/camera/device/CameraDeviceHandler;->-$$Nest$sfgetsCameraSessionInfoMap()Ljava/util/Map;
 
@@ -136,7 +136,7 @@
 
     check-cast v2, Ljava/util/Map$Entry;
 
-    .line 576
+    .line 596
     invoke-interface {v2}, Ljava/util/Map$Entry;->getKey()Ljava/lang/Object;
 
     move-result-object v3
@@ -145,10 +145,10 @@
 
     const/16 v3, 0x20
 
-    .line 577
+    .line 597
     invoke-virtual {p0, v3}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
 
-    .line 578
+    .line 598
     invoke-interface {v2}, Ljava/util/Map$Entry;->getValue()Ljava/lang/Object;
 
     move-result-object v2
@@ -163,12 +163,12 @@
 
     const/16 v2, 0xa
 
-    .line 579
+    .line 599
     invoke-virtual {p0, v2}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
 
     goto :goto_0
 
-    .line 581
+    .line 601
     :cond_0
     monitor-exit v0
 
@@ -187,14 +187,14 @@
 .method public static getOpenCloseStatusInfo(Ljp/co/sony/mc/camera/device/CameraDeviceHandler$CameraSessionId;)Ljp/co/sony/mc/camera/device/CameraDeviceHandler$CameraSessionInfo;
     .locals 2
 
-    .line 487
+    .line 507
     invoke-static {}, Ljp/co/sony/mc/camera/device/CameraDeviceHandler;->-$$Nest$sfgetsCameraSessionInfoMap()Ljava/util/Map;
 
     move-result-object v0
 
     monitor-enter v0
 
-    .line 488
+    .line 508
     :try_start_0
     invoke-static {}, Ljp/co/sony/mc/camera/device/CameraDeviceHandler;->-$$Nest$sfgetsCameraSessionInfoMap()Ljava/util/Map;
 
@@ -213,7 +213,7 @@
     :catchall_0
     move-exception p0
 
-    .line 489
+    .line 509
     monitor-exit v0
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
@@ -228,7 +228,7 @@
 
     monitor-enter p0
 
-    .line 565
+    .line 585
     :try_start_0
     new-instance v1, Ljava/lang/StringBuilder;
 
@@ -252,7 +252,7 @@
 
     iget-object v1, p0, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$CameraSessionInfo;->mPerformed:Ljp/co/sony/mc/camera/device/CameraDeviceHandler$OpenClosePerformStatus;
 
-    .line 566
+    .line 586
     invoke-virtual {v1}, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$OpenClosePerformStatus;->name()Ljava/lang/String;
 
     move-result-object v1
@@ -309,7 +309,7 @@
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 565
+    .line 585
     monitor-exit p0
 
     return-object v0
@@ -325,14 +325,14 @@
 .method static removeOpenCloseStatusInfo(Ljp/co/sony/mc/camera/device/CameraDeviceHandler$CameraSessionId;)V
     .locals 2
 
-    .line 494
+    .line 514
     invoke-static {}, Ljp/co/sony/mc/camera/device/CameraDeviceHandler;->-$$Nest$sfgetsCameraSessionInfoMap()Ljava/util/Map;
 
     move-result-object v0
 
     monitor-enter v0
 
-    .line 495
+    .line 515
     :try_start_0
     invoke-static {}, Ljp/co/sony/mc/camera/device/CameraDeviceHandler;->-$$Nest$sfgetsCameraSessionInfoMap()Ljava/util/Map;
 
@@ -344,14 +344,14 @@
 
     if-eqz v1, :cond_0
 
-    .line 496
+    .line 516
     invoke-static {}, Ljp/co/sony/mc/camera/device/CameraDeviceHandler;->-$$Nest$sfgetsCameraSessionInfoMap()Ljava/util/Map;
 
     move-result-object v1
 
     invoke-interface {v1, p0}, Ljava/util/Map;->remove(Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 498
+    .line 518
     :cond_0
     monitor-exit v0
 
@@ -372,7 +372,7 @@
 .method getCameraInfo()Ljp/co/sony/mc/camera/device/CameraInfo;
     .locals 0
 
-    .line 589
+    .line 609
     iget-object p0, p0, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$CameraSessionInfo;->mCameraParameters:Ljp/co/sony/mc/camera/device/CameraParameters;
 
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/device/CameraParameters;->getCameraId()Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;
@@ -389,7 +389,7 @@
 .method public getParameters()Ljp/co/sony/mc/camera/device/CameraParameters;
     .locals 0
 
-    .line 585
+    .line 605
     iget-object p0, p0, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$CameraSessionInfo;->mCameraParameters:Ljp/co/sony/mc/camera/device/CameraParameters;
 
     return-object p0
@@ -400,9 +400,9 @@
 
     monitor-enter p0
 
-    .line 523
+    .line 543
     :try_start_0
-    sget-object v0, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$3;->$SwitchMap$jp$co$sony$mc$camera$device$CameraDeviceHandler$OpenClosePerformStatus:[I
+    sget-object v0, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$2;->$SwitchMap$jp$co$sony$mc$camera$device$CameraDeviceHandler$OpenClosePerformStatus:[I
 
     iget-object v1, p0, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$CameraSessionInfo;->mPerformed:Ljp/co/sony/mc/camera/device/CameraDeviceHandler$OpenClosePerformStatus;
 
@@ -418,14 +418,14 @@
 
     if-eq v0, v1, :cond_0
 
-    .line 527
+    .line 547
     monitor-exit p0
 
     const/4 p0, 0x0
 
     return p0
 
-    .line 525
+    .line 545
     :cond_0
     monitor-exit p0
 
@@ -444,9 +444,9 @@
 
     monitor-enter p0
 
-    .line 514
+    .line 534
     :try_start_0
-    sget-object v0, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$3;->$SwitchMap$jp$co$sony$mc$camera$device$CameraDeviceHandler$OpenCloseRequestStatus:[I
+    sget-object v0, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$2;->$SwitchMap$jp$co$sony$mc$camera$device$CameraDeviceHandler$OpenCloseRequestStatus:[I
 
     iget-object v1, p0, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$CameraSessionInfo;->mRequested:Ljp/co/sony/mc/camera/device/CameraDeviceHandler$OpenCloseRequestStatus;
 
@@ -462,14 +462,14 @@
 
     if-eq v0, v1, :cond_0
 
-    .line 518
+    .line 538
     monitor-exit p0
 
     const/4 p0, 0x0
 
     return p0
 
-    .line 516
+    .line 536
     :cond_0
     monitor-exit p0
 
@@ -492,7 +492,7 @@
 
     const/4 v1, 0x1
 
-    .line 557
+    .line 577
     :try_start_0
     new-array v2, v1, [Ljava/lang/String;
 
@@ -540,7 +540,7 @@
 
     invoke-static {v2}, Ljp/co/sony/mc/camera/util/CamLog;->i([Ljava/lang/String;)V
 
-    .line 561
+    .line 581
     iget-boolean v0, p0, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$CameraSessionInfo;->mIsCameraEvicted:Z
 
     if-nez v0, :cond_1
@@ -581,13 +581,13 @@
 
     const/4 v0, 0x1
 
-    .line 542
+    .line 562
     :try_start_0
     iput-boolean v0, p0, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$CameraSessionInfo;->mIsCameraError:Z
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 543
+    .line 563
     monitor-exit p0
 
     return-void
@@ -607,13 +607,13 @@
 
     const/4 v0, 0x1
 
-    .line 535
+    .line 555
     :try_start_0
     iput-boolean v0, p0, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$CameraSessionInfo;->mIsCameraEvicted:Z
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 536
+    .line 556
     monitor-exit p0
 
     return-void
@@ -633,13 +633,13 @@
 
     const/4 v0, 0x1
 
-    .line 549
+    .line 569
     :try_start_0
     iput-boolean v0, p0, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$CameraSessionInfo;->mIsOtherError:Z
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 550
+    .line 570
     monitor-exit p0
 
     return-void
@@ -657,13 +657,13 @@
 
     monitor-enter p0
 
-    .line 510
+    .line 530
     :try_start_0
     iput-object p1, p0, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$CameraSessionInfo;->mPerformed:Ljp/co/sony/mc/camera/device/CameraDeviceHandler$OpenClosePerformStatus;
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 511
+    .line 531
     monitor-exit p0
 
     return-void
@@ -681,13 +681,13 @@
 
     monitor-enter p0
 
-    .line 506
+    .line 526
     :try_start_0
     iput-object p1, p0, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$CameraSessionInfo;->mRequested:Ljp/co/sony/mc/camera/device/CameraDeviceHandler$OpenCloseRequestStatus;
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 507
+    .line 527
     monitor-exit p0
 
     return-void
@@ -705,7 +705,7 @@
 
     monitor-enter p0
 
-    .line 502
+    .line 522
     :try_start_0
     new-instance v0, Ljp/co/sony/mc/camera/device/CameraParameters;
 
@@ -715,7 +715,7 @@
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 503
+    .line 523
     monitor-exit p0
 
     return-void

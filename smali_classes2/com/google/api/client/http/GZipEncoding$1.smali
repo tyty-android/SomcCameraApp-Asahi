@@ -22,7 +22,7 @@
 .method constructor <init>(Lcom/google/api/client/http/GZipEncoding;Ljava/io/OutputStream;)V
     .locals 0
 
-    .line 38
+    .line 40
     iput-object p1, p0, Lcom/google/api/client/http/GZipEncoding$1;->this$0:Lcom/google/api/client/http/GZipEncoding;
 
     invoke-direct {p0, p2}, Ljava/io/BufferedOutputStream;-><init>(Ljava/io/OutputStream;)V
@@ -40,7 +40,7 @@
         }
     .end annotation
 
-    .line 44
+    .line 46
     :try_start_0
     invoke-virtual {p0}, Lcom/google/api/client/http/GZipEncoding$1;->flush()V
     :try_end_0

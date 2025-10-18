@@ -30,7 +30,7 @@
 .method constructor <init>(Lcom/google/gson/Gson;)V
     .locals 0
 
-    .line 423
+    .line 481
     iput-object p1, p0, Lcom/google/gson/Gson$2;->this$0:Lcom/google/gson/Gson;
 
     invoke-direct {p0}, Lcom/google/gson/TypeAdapter;-><init>()V
@@ -48,7 +48,7 @@
         }
     .end annotation
 
-    .line 425
+    .line 484
     invoke-virtual {p1}, Lcom/google/gson/stream/JsonReader;->peek()Lcom/google/gson/stream/JsonToken;
 
     move-result-object p0
@@ -57,14 +57,14 @@
 
     if-ne p0, v0, :cond_0
 
-    .line 426
+    .line 485
     invoke-virtual {p1}, Lcom/google/gson/stream/JsonReader;->nextNull()V
 
     const/4 p0, 0x0
 
     return-object p0
 
-    .line 429
+    .line 488
     :cond_0
     invoke-virtual {p1}, Lcom/google/gson/stream/JsonReader;->nextDouble()D
 
@@ -87,7 +87,7 @@
         }
     .end annotation
 
-    .line 423
+    .line 481
     invoke-virtual {p0, p1}, Lcom/google/gson/Gson$2;->read(Lcom/google/gson/stream/JsonReader;)Ljava/lang/Float;
 
     move-result-object p0
@@ -105,12 +105,12 @@
 
     if-nez p2, :cond_0
 
-    .line 433
+    .line 494
     invoke-virtual {p1}, Lcom/google/gson/stream/JsonWriter;->nullValue()Lcom/google/gson/stream/JsonWriter;
 
     return-void
 
-    .line 436
+    .line 497
     :cond_0
     invoke-virtual {p2}, Ljava/lang/Number;->floatValue()F
 
@@ -118,10 +118,10 @@
 
     float-to-double v0, p0
 
-    .line 437
+    .line 498
     invoke-static {v0, v1}, Lcom/google/gson/Gson;->checkValidFloatingPoint(D)V
 
-    .line 440
+    .line 501
     instance-of v0, p2, Ljava/lang/Float;
 
     if-eqz v0, :cond_1
@@ -133,7 +133,7 @@
 
     move-result-object p2
 
-    .line 441
+    .line 502
     :goto_0
     invoke-virtual {p1, p2}, Lcom/google/gson/stream/JsonWriter;->value(Ljava/lang/Number;)Lcom/google/gson/stream/JsonWriter;
 
@@ -148,7 +148,7 @@
         }
     .end annotation
 
-    .line 423
+    .line 481
     check-cast p2, Ljava/lang/Number;
 
     invoke-virtual {p0, p1, p2}, Lcom/google/gson/Gson$2;->write(Lcom/google/gson/stream/JsonWriter;Ljava/lang/Number;)V

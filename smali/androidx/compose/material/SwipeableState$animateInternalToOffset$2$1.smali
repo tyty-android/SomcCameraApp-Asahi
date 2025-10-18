@@ -78,7 +78,7 @@
 .method public bridge synthetic invoke(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
 
-    .line 223
+    .line 228
     check-cast p1, Landroidx/compose/animation/core/Animatable;
 
     invoke-virtual {p0, p1}, Landroidx/compose/material/SwipeableState$animateInternalToOffset$2$1;->invoke(Landroidx/compose/animation/core/Animatable;)V
@@ -100,11 +100,7 @@
         }
     .end annotation
 
-    const-string v0, "$this$animateTo"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 224
+    .line 229
     iget-object v0, p0, Landroidx/compose/material/SwipeableState$animateInternalToOffset$2$1;->$$this$drag:Landroidx/compose/foundation/gestures/DragScope;
 
     invoke-virtual {p1}, Landroidx/compose/animation/core/Animatable;->getValue()Ljava/lang/Object;
@@ -125,7 +121,7 @@
 
     invoke-interface {v0, v1}, Landroidx/compose/foundation/gestures/DragScope;->dragBy(F)V
 
-    .line 225
+    .line 230
     iget-object p0, p0, Landroidx/compose/material/SwipeableState$animateInternalToOffset$2$1;->$prevValue:Lkotlin/jvm/internal/Ref$FloatRef;
 
     invoke-virtual {p1}, Landroidx/compose/animation/core/Animatable;->getValue()Ljava/lang/Object;

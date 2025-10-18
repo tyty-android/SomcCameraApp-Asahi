@@ -123,39 +123,40 @@
 
     invoke-direct {v0}, Landroid/animation/AnimatorSet;-><init>()V
 
+    const/4 v1, 0x3
+
+    .line 153
+    new-array v1, v1, [Landroid/animation/Animator;
+
+    const/4 v2, 0x0
+
     .line 154
     invoke-direct {p0, p1}, Lcom/google/android/material/internal/ExpandCollapseAnimationHelper;->getExpandCollapseAnimator(Z)Landroid/animation/Animator;
 
-    move-result-object v1
+    move-result-object v3
+
+    aput-object v3, v1, v2
+
+    const/4 v2, 0x1
 
     .line 155
     invoke-direct {p0, p1}, Lcom/google/android/material/internal/ExpandCollapseAnimationHelper;->getExpandedViewChildrenAlphaAnimator(Z)Landroid/animation/Animator;
 
-    move-result-object v2
+    move-result-object v3
+
+    aput-object v3, v1, v2
+
+    const/4 v2, 0x2
 
     .line 156
     invoke-direct {p0, p1}, Lcom/google/android/material/internal/ExpandCollapseAnimationHelper;->getEndAnchoredViewsTranslateAnimator(Z)Landroid/animation/Animator;
 
     move-result-object p0
 
-    const/4 p1, 0x3
-
-    new-array p1, p1, [Landroid/animation/Animator;
-
-    const/4 v3, 0x0
-
-    aput-object v1, p1, v3
-
-    const/4 v1, 0x1
-
-    aput-object v2, p1, v1
-
-    const/4 v1, 0x2
-
-    aput-object p0, p1, v1
+    aput-object p0, v1, v2
 
     .line 153
-    invoke-virtual {v0, p1}, Landroid/animation/AnimatorSet;->playTogether([Landroid/animation/Animator;)V
+    invoke-virtual {v0, v1}, Landroid/animation/AnimatorSet;->playTogether([Landroid/animation/Animator;)V
 
     return-object v0
 .end method

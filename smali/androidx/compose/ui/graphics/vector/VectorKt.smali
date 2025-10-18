@@ -6,7 +6,7 @@
 # annotations
 .annotation runtime Lkotlin/Metadata;
     d1 = {
-        "\u0000Z\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0004\n\u0002\u0010\u000e\n\u0002\u0008\u0002\n\u0002\u0010\u0007\n\u0002\u0008\u0005\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0004\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0002\u0008\t\n\u0002\u0010 \n\u0002\u0018\u0002\n\u0002\u0008\u0004\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0010\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0003\u001a+\u0010(\u001a\u0008\u0012\u0004\u0012\u00020%0$2\u0017\u0010)\u001a\u0013\u0012\u0004\u0012\u00020+\u0012\u0004\u0012\u00020,0*\u00a2\u0006\u0002\u0008-H\u0086\u0008\u00f8\u0001\u0001\u001a\u0016\u0010.\u001a\u0008\u0012\u0004\u0012\u00020%0$2\u0008\u0010/\u001a\u0004\u0018\u00010\u0006\"\u0016\u0010\u0000\u001a\u00020\u0001\u00f8\u0001\u0000\u00a2\u0006\n\n\u0002\u0010\u0004\u001a\u0004\u0008\u0002\u0010\u0003\"\u000e\u0010\u0005\u001a\u00020\u0006X\u0086T\u00a2\u0006\u0002\n\u0000\"\u000e\u0010\u0007\u001a\u00020\u0006X\u0086T\u00a2\u0006\u0002\n\u0000\"\u000e\u0010\u0008\u001a\u00020\tX\u0086T\u00a2\u0006\u0002\n\u0000\"\u000e\u0010\n\u001a\u00020\tX\u0086T\u00a2\u0006\u0002\n\u0000\"\u000e\u0010\u000b\u001a\u00020\tX\u0086T\u00a2\u0006\u0002\n\u0000\"\u000e\u0010\u000c\u001a\u00020\tX\u0086T\u00a2\u0006\u0002\n\u0000\"\u000e\u0010\r\u001a\u00020\tX\u0086T\u00a2\u0006\u0002\n\u0000\"\u0016\u0010\u000e\u001a\u00020\u000f\u00f8\u0001\u0000\u00a2\u0006\n\n\u0002\u0010\u0004\u001a\u0004\u0008\u0010\u0010\u0003\"\u0016\u0010\u0011\u001a\u00020\u0012\u00f8\u0001\u0000\u00a2\u0006\n\n\u0002\u0010\u0004\u001a\u0004\u0008\u0013\u0010\u0003\"\u000e\u0010\u0014\u001a\u00020\tX\u0086T\u00a2\u0006\u0002\n\u0000\"\u000e\u0010\u0015\u001a\u00020\tX\u0086T\u00a2\u0006\u0002\n\u0000\"\u0016\u0010\u0016\u001a\u00020\u0017\u00f8\u0001\u0000\u00a2\u0006\n\n\u0002\u0010\u0004\u001a\u0004\u0008\u0018\u0010\u0003\"\u0016\u0010\u0019\u001a\u00020\u001a\u00f8\u0001\u0000\u00a2\u0006\n\n\u0002\u0010\u001d\u001a\u0004\u0008\u001b\u0010\u001c\"\u000e\u0010\u001e\u001a\u00020\tX\u0086T\u00a2\u0006\u0002\n\u0000\"\u000e\u0010\u001f\u001a\u00020\tX\u0086T\u00a2\u0006\u0002\n\u0000\"\u000e\u0010 \u001a\u00020\tX\u0086T\u00a2\u0006\u0002\n\u0000\"\u000e\u0010!\u001a\u00020\tX\u0086T\u00a2\u0006\u0002\n\u0000\"\u000e\u0010\"\u001a\u00020\tX\u0086T\u00a2\u0006\u0002\n\u0000\"\u0017\u0010#\u001a\u0008\u0012\u0004\u0012\u00020%0$\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008&\u0010\'\u0082\u0002\u000b\n\u0002\u0008\u0019\n\u0005\u0008\u009920\u0001\u00a8\u00060"
+        "\u0000h\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0004\n\u0002\u0010\u000e\n\u0002\u0008\u0002\n\u0002\u0010\u0007\n\u0002\u0008\u0005\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0004\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0002\u0008\t\n\u0002\u0010 \n\u0002\u0018\u0002\n\u0002\u0008\u0004\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0010\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0003\n\u0002\u0010\u000b\n\u0002\u0008\u0004\n\u0002\u0018\u0002\n\u0000\u001a(\u0010(\u001a\u0008\u0012\u0004\u0012\u00020%0$2\u0017\u0010)\u001a\u0013\u0012\u0004\u0012\u00020+\u0012\u0004\u0012\u00020,0*\u00a2\u0006\u0002\u0008-H\u0086\u0008\u001a\u0016\u0010.\u001a\u0008\u0012\u0004\u0012\u00020%0$2\u0008\u0010/\u001a\u0004\u0018\u00010\u0006\u001a\u001e\u00100\u001a\u000201*\u00020\u001a2\u0006\u00102\u001a\u00020\u001aH\u0000\u00f8\u0001\u0000\u00a2\u0006\u0004\u00083\u00104\u001a\u000e\u00105\u001a\u000201*\u0004\u0018\u000106H\u0000\"\u0013\u0010\u0000\u001a\u00020\u0001\u00a2\u0006\n\n\u0002\u0010\u0004\u001a\u0004\u0008\u0002\u0010\u0003\"\u000e\u0010\u0005\u001a\u00020\u0006X\u0086T\u00a2\u0006\u0002\n\u0000\"\u000e\u0010\u0007\u001a\u00020\u0006X\u0086T\u00a2\u0006\u0002\n\u0000\"\u000e\u0010\u0008\u001a\u00020\tX\u0086T\u00a2\u0006\u0002\n\u0000\"\u000e\u0010\n\u001a\u00020\tX\u0086T\u00a2\u0006\u0002\n\u0000\"\u000e\u0010\u000b\u001a\u00020\tX\u0086T\u00a2\u0006\u0002\n\u0000\"\u000e\u0010\u000c\u001a\u00020\tX\u0086T\u00a2\u0006\u0002\n\u0000\"\u000e\u0010\r\u001a\u00020\tX\u0086T\u00a2\u0006\u0002\n\u0000\"\u0013\u0010\u000e\u001a\u00020\u000f\u00a2\u0006\n\n\u0002\u0010\u0004\u001a\u0004\u0008\u0010\u0010\u0003\"\u0013\u0010\u0011\u001a\u00020\u0012\u00a2\u0006\n\n\u0002\u0010\u0004\u001a\u0004\u0008\u0013\u0010\u0003\"\u000e\u0010\u0014\u001a\u00020\tX\u0086T\u00a2\u0006\u0002\n\u0000\"\u000e\u0010\u0015\u001a\u00020\tX\u0086T\u00a2\u0006\u0002\n\u0000\"\u0013\u0010\u0016\u001a\u00020\u0017\u00a2\u0006\n\n\u0002\u0010\u0004\u001a\u0004\u0008\u0018\u0010\u0003\"\u0013\u0010\u0019\u001a\u00020\u001a\u00a2\u0006\n\n\u0002\u0010\u001d\u001a\u0004\u0008\u001b\u0010\u001c\"\u000e\u0010\u001e\u001a\u00020\tX\u0086T\u00a2\u0006\u0002\n\u0000\"\u000e\u0010\u001f\u001a\u00020\tX\u0086T\u00a2\u0006\u0002\n\u0000\"\u000e\u0010 \u001a\u00020\tX\u0086T\u00a2\u0006\u0002\n\u0000\"\u000e\u0010!\u001a\u00020\tX\u0086T\u00a2\u0006\u0002\n\u0000\"\u000e\u0010\"\u001a\u00020\tX\u0086T\u00a2\u0006\u0002\n\u0000\"\u0017\u0010#\u001a\u0008\u0012\u0004\u0012\u00020%0$\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008&\u0010\'\u0082\u0002\u0007\n\u0005\u0008\u00a1\u001e0\u0001\u00a8\u00067"
     }
     d2 = {
         "DefaultFillType",
@@ -57,6 +57,13 @@
         "Lkotlin/ExtensionFunctionType;",
         "addPathNodes",
         "pathStr",
+        "rgbEqual",
+        "",
+        "other",
+        "rgbEqual--OWjLjI",
+        "(JJ)Z",
+        "tintableWithAlphaMask",
+        "Landroidx/compose/ui/graphics/ColorFilter;",
         "ui_release"
     }
     k = 0x2
@@ -123,14 +130,14 @@
 .method static constructor <clinit>()V
     .locals 2
 
-    .line 49
+    .line 57
     invoke-static {}, Lkotlin/collections/CollectionsKt;->emptyList()Ljava/util/List;
 
     move-result-object v0
 
     sput-object v0, Landroidx/compose/ui/graphics/vector/VectorKt;->EmptyPath:Ljava/util/List;
 
-    .line 58
+    .line 66
     sget-object v0, Landroidx/compose/ui/graphics/StrokeCap;->Companion:Landroidx/compose/ui/graphics/StrokeCap$Companion;
 
     invoke-virtual {v0}, Landroidx/compose/ui/graphics/StrokeCap$Companion;->getButt-KaPHkGw()I
@@ -139,7 +146,7 @@
 
     sput v0, Landroidx/compose/ui/graphics/vector/VectorKt;->DefaultStrokeLineCap:I
 
-    .line 59
+    .line 67
     sget-object v0, Landroidx/compose/ui/graphics/StrokeJoin;->Companion:Landroidx/compose/ui/graphics/StrokeJoin$Companion;
 
     invoke-virtual {v0}, Landroidx/compose/ui/graphics/StrokeJoin$Companion;->getMiter-LxFBmk8()I
@@ -148,7 +155,7 @@
 
     sput v0, Landroidx/compose/ui/graphics/vector/VectorKt;->DefaultStrokeLineJoin:I
 
-    .line 60
+    .line 68
     sget-object v0, Landroidx/compose/ui/graphics/BlendMode;->Companion:Landroidx/compose/ui/graphics/BlendMode$Companion;
 
     invoke-virtual {v0}, Landroidx/compose/ui/graphics/BlendMode$Companion;->getSrcIn-0nO6VwU()I
@@ -157,7 +164,7 @@
 
     sput v0, Landroidx/compose/ui/graphics/vector/VectorKt;->DefaultTintBlendMode:I
 
-    .line 61
+    .line 69
     sget-object v0, Landroidx/compose/ui/graphics/Color;->Companion:Landroidx/compose/ui/graphics/Color$Companion;
 
     invoke-virtual {v0}, Landroidx/compose/ui/graphics/Color$Companion;->getTransparent-0d7_KjU()J
@@ -166,7 +173,7 @@
 
     sput-wide v0, Landroidx/compose/ui/graphics/vector/VectorKt;->DefaultTintColor:J
 
-    .line 62
+    .line 70
     sget-object v0, Landroidx/compose/ui/graphics/PathFillType;->Companion:Landroidx/compose/ui/graphics/PathFillType$Companion;
 
     invoke-virtual {v0}, Landroidx/compose/ui/graphics/PathFillType$Companion;->getNonZero-Rg-k1Os()I
@@ -194,19 +201,15 @@
         }
     .end annotation
 
-    const-string v0, "block"
-
-    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 64
+    .line 72
     new-instance v0, Landroidx/compose/ui/graphics/vector/PathBuilder;
 
     invoke-direct {v0}, Landroidx/compose/ui/graphics/vector/PathBuilder;-><init>()V
 
-    .line 65
+    .line 73
     invoke-interface {p0, v0}, Lkotlin/jvm/functions/Function1;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 66
+    .line 74
     invoke-virtual {v0}, Landroidx/compose/ui/graphics/vector/PathBuilder;->getNodes()Ljava/util/List;
 
     move-result-object p0
@@ -229,12 +232,12 @@
 
     if-nez p0, :cond_0
 
-    .line 70
+    .line 78
     sget-object p0, Landroidx/compose/ui/graphics/vector/VectorKt;->EmptyPath:Ljava/util/List;
 
     goto :goto_0
 
-    .line 72
+    .line 80
     :cond_0
     new-instance v0, Landroidx/compose/ui/graphics/vector/PathParser;
 
@@ -255,7 +258,7 @@
 .method public static final getDefaultFillType()I
     .locals 1
 
-    .line 62
+    .line 70
     sget v0, Landroidx/compose/ui/graphics/vector/VectorKt;->DefaultFillType:I
 
     return v0
@@ -264,7 +267,7 @@
 .method public static final getDefaultStrokeLineCap()I
     .locals 1
 
-    .line 58
+    .line 66
     sget v0, Landroidx/compose/ui/graphics/vector/VectorKt;->DefaultStrokeLineCap:I
 
     return v0
@@ -273,7 +276,7 @@
 .method public static final getDefaultStrokeLineJoin()I
     .locals 1
 
-    .line 59
+    .line 67
     sget v0, Landroidx/compose/ui/graphics/vector/VectorKt;->DefaultStrokeLineJoin:I
 
     return v0
@@ -282,7 +285,7 @@
 .method public static final getDefaultTintBlendMode()I
     .locals 1
 
-    .line 60
+    .line 68
     sget v0, Landroidx/compose/ui/graphics/vector/VectorKt;->DefaultTintBlendMode:I
 
     return v0
@@ -291,7 +294,7 @@
 .method public static final getDefaultTintColor()J
     .locals 2
 
-    .line 61
+    .line 69
     sget-wide v0, Landroidx/compose/ui/graphics/vector/VectorKt;->DefaultTintColor:J
 
     return-wide v0
@@ -308,8 +311,123 @@
         }
     .end annotation
 
-    .line 49
+    .line 57
     sget-object v0, Landroidx/compose/ui/graphics/vector/VectorKt;->EmptyPath:Ljava/util/List;
 
     return-object v0
+.end method
+
+.method public static final rgbEqual--OWjLjI(JJ)Z
+    .locals 2
+
+    .line 638
+    invoke-static {p0, p1}, Landroidx/compose/ui/graphics/Color;->getRed-impl(J)F
+
+    move-result v0
+
+    invoke-static {p2, p3}, Landroidx/compose/ui/graphics/Color;->getRed-impl(J)F
+
+    move-result v1
+
+    cmpg-float v0, v0, v1
+
+    if-nez v0, :cond_0
+
+    .line 639
+    invoke-static {p0, p1}, Landroidx/compose/ui/graphics/Color;->getGreen-impl(J)F
+
+    move-result v0
+
+    invoke-static {p2, p3}, Landroidx/compose/ui/graphics/Color;->getGreen-impl(J)F
+
+    move-result v1
+
+    cmpg-float v0, v0, v1
+
+    if-nez v0, :cond_0
+
+    .line 640
+    invoke-static {p0, p1}, Landroidx/compose/ui/graphics/Color;->getBlue-impl(J)F
+
+    move-result p0
+
+    invoke-static {p2, p3}, Landroidx/compose/ui/graphics/Color;->getBlue-impl(J)F
+
+    move-result p1
+
+    cmpg-float p0, p0, p1
+
+    if-nez p0, :cond_0
+
+    const/4 p0, 0x1
+
+    goto :goto_0
+
+    :cond_0
+    const/4 p0, 0x0
+
+    :goto_0
+    return p0
+.end method
+
+.method public static final tintableWithAlphaMask(Landroidx/compose/ui/graphics/ColorFilter;)Z
+    .locals 4
+
+    .line 646
+    instance-of v0, p0, Landroidx/compose/ui/graphics/BlendModeColorFilter;
+
+    const/4 v1, 0x1
+
+    const/4 v2, 0x0
+
+    if-eqz v0, :cond_0
+
+    .line 647
+    check-cast p0, Landroidx/compose/ui/graphics/BlendModeColorFilter;
+
+    invoke-virtual {p0}, Landroidx/compose/ui/graphics/BlendModeColorFilter;->getBlendMode-0nO6VwU()I
+
+    move-result v0
+
+    sget-object v3, Landroidx/compose/ui/graphics/BlendMode;->Companion:Landroidx/compose/ui/graphics/BlendMode$Companion;
+
+    invoke-virtual {v3}, Landroidx/compose/ui/graphics/BlendMode$Companion;->getSrcIn-0nO6VwU()I
+
+    move-result v3
+
+    invoke-static {v0, v3}, Landroidx/compose/ui/graphics/BlendMode;->equals-impl0(II)Z
+
+    move-result v0
+
+    if-nez v0, :cond_2
+
+    invoke-virtual {p0}, Landroidx/compose/ui/graphics/BlendModeColorFilter;->getBlendMode-0nO6VwU()I
+
+    move-result p0
+
+    sget-object v0, Landroidx/compose/ui/graphics/BlendMode;->Companion:Landroidx/compose/ui/graphics/BlendMode$Companion;
+
+    invoke-virtual {v0}, Landroidx/compose/ui/graphics/BlendMode$Companion;->getSrcOver-0nO6VwU()I
+
+    move-result v0
+
+    invoke-static {p0, v0}, Landroidx/compose/ui/graphics/BlendMode;->equals-impl0(II)Z
+
+    move-result p0
+
+    if-eqz p0, :cond_1
+
+    goto :goto_0
+
+    :cond_0
+    if-nez p0, :cond_1
+
+    goto :goto_0
+
+    :cond_1
+    move v1, v2
+
+    :cond_2
+    :goto_0
+    return v1
 .end method

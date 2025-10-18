@@ -76,7 +76,7 @@
 .method public bridge synthetic invoke()Ljava/lang/Object;
     .locals 0
 
-    .line 172
+    .line 171
     invoke-virtual {p0}, Landroidx/compose/foundation/gestures/DragGestureDetectorKt$detectDragGestures$4;->invoke()V
 
     sget-object p0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;

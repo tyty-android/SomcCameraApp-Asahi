@@ -26,7 +26,7 @@
 .method constructor <init>()V
     .locals 0
 
-    .line 208
+    .line 231
     invoke-direct {p0}, Lcom/google/gson/TypeAdapter;-><init>()V
 
     return-void
@@ -42,7 +42,7 @@
         }
     .end annotation
 
-    .line 211
+    .line 234
     invoke-virtual {p1}, Lcom/google/gson/stream/JsonReader;->peek()Lcom/google/gson/stream/JsonToken;
 
     move-result-object p0
@@ -51,14 +51,14 @@
 
     if-ne p0, v0, :cond_0
 
-    .line 212
+    .line 235
     invoke-virtual {p1}, Lcom/google/gson/stream/JsonReader;->nextNull()V
 
     const/4 p0, 0x0
 
     return-object p0
 
-    .line 218
+    .line 241
     :cond_0
     :try_start_0
     invoke-virtual {p1}, Lcom/google/gson/stream/JsonReader;->nextInt()I
@@ -77,14 +77,14 @@
 
     int-to-short p0, p0
 
-    .line 226
+    .line 250
     invoke-static {p0}, Ljava/lang/Short;->valueOf(S)Ljava/lang/Short;
 
     move-result-object p0
 
     return-object p0
 
-    .line 224
+    .line 247
     :cond_1
     new-instance v0, Lcom/google/gson/JsonSyntaxException;
 
@@ -104,6 +104,7 @@
 
     move-result-object p0
 
+    .line 248
     invoke-virtual {p1}, Lcom/google/gson/stream/JsonReader;->getPreviousPath()Ljava/lang/String;
 
     move-result-object p1
@@ -123,7 +124,7 @@
     :catch_0
     move-exception p0
 
-    .line 220
+    .line 243
     new-instance p1, Lcom/google/gson/JsonSyntaxException;
 
     invoke-direct {p1, p0}, Lcom/google/gson/JsonSyntaxException;-><init>(Ljava/lang/Throwable;)V
@@ -139,7 +140,7 @@
         }
     .end annotation
 
-    .line 208
+    .line 231
     invoke-virtual {p0, p1}, Lcom/google/gson/internal/bind/TypeAdapters$6;->read(Lcom/google/gson/stream/JsonReader;)Ljava/lang/Number;
 
     move-result-object p0
@@ -157,12 +158,12 @@
 
     if-nez p2, :cond_0
 
-    .line 231
+    .line 256
     invoke-virtual {p1}, Lcom/google/gson/stream/JsonWriter;->nullValue()Lcom/google/gson/stream/JsonWriter;
 
     goto :goto_0
 
-    .line 233
+    .line 258
     :cond_0
     invoke-virtual {p2}, Ljava/lang/Number;->shortValue()S
 
@@ -184,7 +185,7 @@
         }
     .end annotation
 
-    .line 208
+    .line 231
     check-cast p2, Ljava/lang/Number;
 
     invoke-virtual {p0, p1, p2}, Lcom/google/gson/internal/bind/TypeAdapters$6;->write(Lcom/google/gson/stream/JsonWriter;Ljava/lang/Number;)V

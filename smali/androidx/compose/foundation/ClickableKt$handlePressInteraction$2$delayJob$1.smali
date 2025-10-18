@@ -55,8 +55,8 @@
         0x1
     }
     l = {
-        0x125,
-        0x128
+        0x12d,
+        0x130
     }
     m = "invokeSuspend"
     n = {
@@ -210,7 +210,7 @@
 
     move-result-object v0
 
-    .line 291
+    .line 299
     iget v1, p0, Landroidx/compose/foundation/ClickableKt$handlePressInteraction$2$delayJob$1;->label:I
 
     const/4 v2, 0x2
@@ -248,7 +248,7 @@
     :cond_2
     invoke-static {p1}, Lkotlin/ResultKt;->throwOnFailure(Ljava/lang/Object;)V
 
-    .line 292
+    .line 300
     iget-object p1, p0, Landroidx/compose/foundation/ClickableKt$handlePressInteraction$2$delayJob$1;->$delayPressInteraction:Lkotlin/jvm/functions/Function0;
 
     invoke-interface {p1}, Lkotlin/jvm/functions/Function0;->invoke()Ljava/lang/Object;
@@ -263,7 +263,7 @@
 
     if-eqz p1, :cond_3
 
-    .line 293
+    .line 301
     invoke-static {}, Landroidx/compose/foundation/Clickable_androidKt;->getTapIndicationDelay()J
 
     move-result-wide v4
@@ -282,7 +282,7 @@
 
     return-object v0
 
-    .line 295
+    .line 303
     :cond_3
     :goto_0
     new-instance p1, Landroidx/compose/foundation/interaction/PressInteraction$Press;
@@ -293,7 +293,7 @@
 
     invoke-direct {p1, v3, v4, v1}, Landroidx/compose/foundation/interaction/PressInteraction$Press;-><init>(JLkotlin/jvm/internal/DefaultConstructorMarker;)V
 
-    .line 296
+    .line 304
     iget-object v1, p0, Landroidx/compose/foundation/ClickableKt$handlePressInteraction$2$delayJob$1;->$interactionSource:Landroidx/compose/foundation/interaction/MutableInteractionSource;
 
     move-object v3, p1
@@ -319,13 +319,13 @@
     :cond_4
     move-object v0, p1
 
-    .line 297
+    .line 305
     :goto_1
     iget-object p0, p0, Landroidx/compose/foundation/ClickableKt$handlePressInteraction$2$delayJob$1;->$interactionData:Landroidx/compose/foundation/AbstractClickableNode$InteractionData;
 
     invoke-virtual {p0, v0}, Landroidx/compose/foundation/AbstractClickableNode$InteractionData;->setPressInteraction(Landroidx/compose/foundation/interaction/PressInteraction$Press;)V
 
-    .line 298
+    .line 306
     sget-object p0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
 
     return-object p0

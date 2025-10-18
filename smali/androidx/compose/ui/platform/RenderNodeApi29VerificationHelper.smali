@@ -61,10 +61,6 @@
 .method public final setRenderEffect(Landroid/graphics/RenderNode;Landroidx/compose/ui/graphics/RenderEffect;)V
     .locals 0
 
-    const-string p0, "renderNode"
-
-    invoke-static {p1, p0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
     if-eqz p2, :cond_0
 
     .line 271

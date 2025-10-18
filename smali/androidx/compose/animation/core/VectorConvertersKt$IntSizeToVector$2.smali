@@ -97,10 +97,6 @@
 .method public final invoke-YEO4UFw(Landroidx/compose/animation/core/AnimationVector2D;)J
     .locals 0
 
-    const-string p0, "it"
-
-    invoke-static {p1, p0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
     .line 181
     invoke-virtual {p1}, Landroidx/compose/animation/core/AnimationVector2D;->getV1()F
 

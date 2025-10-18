@@ -72,22 +72,22 @@
         }
     .end annotation
 
-    .line 1114
+    .line 1125
     iput-object p1, p0, Ljp/co/sony/mc/camera/setting/CameraProSetting$TakeOverSettingsTask;->this$0:Ljp/co/sony/mc/camera/setting/CameraProSetting;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 1115
+    .line 1126
     new-instance p1, Landroid/util/Pair;
 
     invoke-direct {p1, p2, p3}, Landroid/util/Pair;-><init>(Ljava/lang/Object;Ljava/lang/Object;)V
 
     iput-object p1, p0, Ljp/co/sony/mc/camera/setting/CameraProSetting$TakeOverSettingsTask;->mCurrentPk:Landroid/util/Pair;
 
-    .line 1116
+    .line 1127
     iput-object p4, p0, Ljp/co/sony/mc/camera/setting/CameraProSetting$TakeOverSettingsTask;->mTargetKey:Ljp/co/sony/mc/camera/setting/SettingKey$Key;
 
-    .line 1117
+    .line 1128
     iput-object p5, p0, Ljp/co/sony/mc/camera/setting/CameraProSetting$TakeOverSettingsTask;->mTargetValue:Ljava/lang/Object;
 
     return-void
@@ -106,12 +106,12 @@
         }
     .end annotation
 
-    .line 1138
+    .line 1149
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
-    .line 1140
+    .line 1151
     iget-object v1, p0, Ljp/co/sony/mc/camera/setting/CameraProSetting$TakeOverSettingsTask;->mTargetKey:Ljp/co/sony/mc/camera/setting/SettingKey$Key;
 
     invoke-virtual {v1}, Ljp/co/sony/mc/camera/setting/SettingKey$Key;->getTakeOverFlag()I
@@ -120,7 +120,7 @@
 
     if-eqz v1, :cond_3
 
-    .line 1141
+    .line 1152
     invoke-static {}, Ljp/co/sony/mc/camera/setting/CameraProSetting;->-$$Nest$sfgetAVAILABLE_PRIMARY_KEYS()Ljava/util/List;
 
     move-result-object v1
@@ -143,7 +143,7 @@
 
     check-cast v2, Landroid/util/Pair;
 
-    .line 1142
+    .line 1153
     iget-object v3, v2, Landroid/util/Pair;->second:Ljava/lang/Object;
 
     check-cast v3, Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;
@@ -156,7 +156,7 @@
 
     goto :goto_0
 
-    .line 1146
+    .line 1157
     :cond_1
     iget-object v3, p0, Ljp/co/sony/mc/camera/setting/CameraProSetting$TakeOverSettingsTask;->mCurrentPk:Landroid/util/Pair;
 
@@ -168,7 +168,7 @@
 
     goto :goto_0
 
-    .line 1150
+    .line 1161
     :cond_2
     iget-object v3, p0, Ljp/co/sony/mc/camera/setting/CameraProSetting$TakeOverSettingsTask;->mCurrentPk:Landroid/util/Pair;
 
@@ -198,7 +198,7 @@
 
     if-eqz v3, :cond_0
 
-    .line 1152
+    .line 1163
     invoke-interface {v0, v2}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
     goto :goto_0
@@ -212,7 +212,7 @@
 .method public run()V
     .locals 7
 
-    .line 1122
+    .line 1133
     invoke-direct {p0}, Ljp/co/sony/mc/camera/setting/CameraProSetting$TakeOverSettingsTask;->getApplyTargetPk()Ljava/util/List;
 
     move-result-object v0
@@ -234,7 +234,7 @@
 
     check-cast v1, Landroid/util/Pair;
 
-    .line 1123
+    .line 1134
     iget-object v2, p0, Ljp/co/sony/mc/camera/setting/CameraProSetting$TakeOverSettingsTask;->this$0:Ljp/co/sony/mc/camera/setting/CameraProSetting;
 
     invoke-static {v2}, Ljp/co/sony/mc/camera/setting/CameraProSetting;->-$$Nest$fgetmSettingsMapLock(Ljp/co/sony/mc/camera/setting/CameraProSetting;)Ljava/lang/Object;
@@ -243,7 +243,7 @@
 
     monitor-enter v2
 
-    .line 1124
+    .line 1135
     :try_start_0
     iget-object v3, p0, Ljp/co/sony/mc/camera/setting/CameraProSetting$TakeOverSettingsTask;->this$0:Ljp/co/sony/mc/camera/setting/CameraProSetting;
 
@@ -257,7 +257,7 @@
 
     if-eqz v3, :cond_1
 
-    .line 1125
+    .line 1136
     iget-object v3, p0, Ljp/co/sony/mc/camera/setting/CameraProSetting$TakeOverSettingsTask;->this$0:Ljp/co/sony/mc/camera/setting/CameraProSetting;
 
     invoke-static {v3}, Ljp/co/sony/mc/camera/setting/CameraProSetting;->-$$Nest$fgetmCameraSettingsMap(Ljp/co/sony/mc/camera/setting/CameraProSetting;)Ljava/util/Map;
@@ -272,7 +272,7 @@
 
     if-eqz v3, :cond_1
 
-    .line 1128
+    .line 1139
     sget-boolean v4, Ljp/co/sony/mc/camera/util/CamLog;->DEBUG:Z
 
     if-eqz v4, :cond_0
@@ -333,7 +333,7 @@
 
     invoke-static {v4}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
-    .line 1130
+    .line 1141
     :cond_0
     iget-object v1, p0, Ljp/co/sony/mc/camera/setting/CameraProSetting$TakeOverSettingsTask;->mTargetKey:Ljp/co/sony/mc/camera/setting/SettingKey$Key;
 
@@ -343,7 +343,7 @@
 
     invoke-virtual {v3, v1, v4, v5}, Ljp/co/sony/mc/camera/setting/CameraSettings;->set(Ljp/co/sony/mc/camera/setting/SettingKey$Key;Ljava/lang/Object;Ljava/util/Map;)Z
 
-    .line 1133
+    .line 1144
     :cond_1
     monitor-exit v2
 

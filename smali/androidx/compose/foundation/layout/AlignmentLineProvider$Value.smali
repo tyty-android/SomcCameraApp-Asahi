@@ -68,13 +68,9 @@
 .method public constructor <init>(Landroidx/compose/ui/layout/AlignmentLine;)V
     .locals 1
 
-    const-string v0, "alignmentLine"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
     const/4 v0, 0x0
 
-    .line 844
+    .line 847
     invoke-direct {p0, v0}, Landroidx/compose/foundation/layout/AlignmentLineProvider;-><init>(Lkotlin/jvm/internal/DefaultConstructorMarker;)V
 
     iput-object p1, p0, Landroidx/compose/foundation/layout/AlignmentLineProvider$Value;->alignmentLine:Landroidx/compose/ui/layout/AlignmentLine;
@@ -102,13 +98,9 @@
 
 # virtual methods
 .method public calculateAlignmentLinePosition(Landroidx/compose/ui/layout/Placeable;)I
-    .locals 1
+    .locals 0
 
-    const-string v0, "placeable"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 846
+    .line 849
     iget-object p0, p0, Landroidx/compose/foundation/layout/AlignmentLineProvider$Value;->alignmentLine:Landroidx/compose/ui/layout/AlignmentLine;
 
     invoke-virtual {p1, p0}, Landroidx/compose/ui/layout/Placeable;->get(Landroidx/compose/ui/layout/AlignmentLine;)I
@@ -128,10 +120,6 @@
 
 .method public final copy(Landroidx/compose/ui/layout/AlignmentLine;)Landroidx/compose/foundation/layout/AlignmentLineProvider$Value;
     .locals 0
-
-    const-string p0, "alignmentLine"
-
-    invoke-static {p1, p0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
     new-instance p0, Landroidx/compose/foundation/layout/AlignmentLineProvider$Value;
 
@@ -180,7 +168,7 @@
 .method public final getAlignmentLine()Landroidx/compose/ui/layout/AlignmentLine;
     .locals 0
 
-    .line 844
+    .line 847
     iget-object p0, p0, Landroidx/compose/foundation/layout/AlignmentLineProvider$Value;->alignmentLine:Landroidx/compose/ui/layout/AlignmentLine;
 
     return-object p0

@@ -28,24 +28,48 @@
 
 # direct methods
 .method static constructor <clinit>()V
-    .locals 6
+    .locals 3
+
+    const/4 v0, 0x6
 
     .line 71
-    const-string v4, "Digest"
+    new-array v0, v0, [Ljava/lang/String;
 
-    const-string v5, "Basic"
+    const/4 v1, 0x0
 
-    const-string v0, "Negotiate"
+    const-string v2, "Negotiate"
 
-    const-string v1, "Kerberos"
+    aput-object v2, v0, v1
+
+    const/4 v1, 0x1
+
+    const-string v2, "Kerberos"
+
+    aput-object v2, v0, v1
+
+    const/4 v1, 0x2
 
     const-string v2, "NTLM"
 
-    const-string v3, "CredSSP"
+    aput-object v2, v0, v1
 
-    filled-new-array/range {v0 .. v5}, [Ljava/lang/String;
+    const/4 v1, 0x3
 
-    move-result-object v0
+    const-string v2, "CredSSP"
+
+    aput-object v2, v0, v1
+
+    const/4 v1, 0x4
+
+    const-string v2, "Digest"
+
+    aput-object v2, v0, v1
+
+    const/4 v1, 0x5
+
+    const-string v2, "Basic"
+
+    aput-object v2, v0, v1
 
     invoke-static {v0}, Ljava/util/Arrays;->asList([Ljava/lang/Object;)Ljava/util/List;
 

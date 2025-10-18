@@ -243,16 +243,12 @@
 .end method
 
 .method private final onLocaleChanged(Ljava/util/Locale;)V
-    .locals 1
+    .locals 0
 
     .line 190
     invoke-static {p1}, Ljava/text/BreakIterator;->getWordInstance(Ljava/util/Locale;)Ljava/text/BreakIterator;
 
     move-result-object p1
-
-    const-string v0, "getWordInstance(locale)"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
 
     iput-object p1, p0, Landroidx/compose/ui/platform/AccessibilityIterators$WordTextSegmentIterator;->impl:Ljava/text/BreakIterator;
 
@@ -374,11 +370,7 @@
 .end method
 
 .method public initialize(Ljava/lang/String;)V
-    .locals 1
-
-    const-string/jumbo v0, "text"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+    .locals 0
 
     .line 185
     invoke-super {p0, p1}, Landroidx/compose/ui/platform/AccessibilityIterators$AbstractTextSegmentIterator;->initialize(Ljava/lang/String;)V

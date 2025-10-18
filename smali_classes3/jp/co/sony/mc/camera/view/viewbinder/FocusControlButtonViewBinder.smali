@@ -19,7 +19,7 @@
 
 .annotation runtime Lkotlin/Metadata;
     d1 = {
-        "\u0000Z\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0003\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0004\u0008\u0007\u0018\u00002\u00020\u0001B=\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\u0006\u0010\u0004\u001a\u00020\u0005\u0012\u0006\u0010\u0006\u001a\u00020\u0007\u0012\u0006\u0010\u0008\u001a\u00020\t\u0012\u0006\u0010\n\u001a\u00020\u000b\u0012\u0006\u0010\u000c\u001a\u00020\r\u0012\u0006\u0010\u000e\u001a\u00020\u000f\u00a2\u0006\u0002\u0010\u0010J\u0010\u0010\u001a\u001a\u00020\u001b2\u0006\u0010\u001c\u001a\u00020\u001dH\u0002J\u0010\u0010\u001e\u001a\u00020\u001b2\u0006\u0010\u001f\u001a\u00020\u0017H\u0016J\u0010\u0010 \u001a\u00020\u001b2\u0006\u0010\u001f\u001a\u00020\u0017H\u0016R\u000e\u0010\u0002\u001a\u00020\u0003X\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u0006\u001a\u00020\u0007X\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u0004\u001a\u00020\u0005X\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u0016\u0010\u0011\u001a\n \u0013*\u0004\u0018\u00010\u00120\u0012X\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u000c\u001a\u00020\rX\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u0014\u001a\u00020\u0015X\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u0014\u0010\u0016\u001a\u00020\u00178BX\u0082\u0004\u00a2\u0006\u0006\u001a\u0004\u0008\u0018\u0010\u0019R\u000e\u0010\u000e\u001a\u00020\u000fX\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u000e\u0010\n\u001a\u00020\u000bX\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u0008\u001a\u00020\tX\u0082\u0004\u00a2\u0006\u0002\n\u0000\u00a8\u0006!"
+        "\u0000\\\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0003\n\u0002\u0018\u0002\n\u0002\u0008\u0003\n\u0002\u0018\u0002\n\u0002\u0008\u0003\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0002\n\u0002\u0008\u0003\n\u0002\u0018\u0002\n\u0002\u0008\u0002\u0008\u0007\u0018\u00002\u00020\u0001B?\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\u0006\u0010\u0004\u001a\u00020\u0005\u0012\u0006\u0010\u0006\u001a\u00020\u0007\u0012\u0006\u0010\u0008\u001a\u00020\t\u0012\u0006\u0010\n\u001a\u00020\u000b\u0012\u0006\u0010\u000c\u001a\u00020\r\u0012\u0006\u0010\u000e\u001a\u00020\u000f\u00a2\u0006\u0004\u0008\u0010\u0010\u0011J\u0010\u0010\u001c\u001a\u00020\u001d2\u0006\u0010\u001e\u001a\u00020\u0017H\u0016J\u0010\u0010\u001f\u001a\u00020\u001d2\u0006\u0010 \u001a\u00020!H\u0002J\u0010\u0010\"\u001a\u00020\u001d2\u0006\u0010\u001e\u001a\u00020\u0017H\u0016R\u000e\u0010\u0002\u001a\u00020\u0003X\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u0004\u001a\u00020\u0005X\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u0006\u001a\u00020\u0007X\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u0008\u001a\u00020\tX\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u000e\u0010\n\u001a\u00020\u000bX\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u000c\u001a\u00020\rX\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u000e\u001a\u00020\u000fX\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u0018\u0010\u0012\u001a\n \u0014*\u0004\u0018\u00010\u00130\u0013X\u0082\u0004\u00a2\u0006\u0004\n\u0002\u0010\u0015R\u0014\u0010\u0016\u001a\u00020\u00178BX\u0082\u0004\u00a2\u0006\u0006\u001a\u0004\u0008\u0018\u0010\u0019R\u000e\u0010\u001a\u001a\u00020\u001bX\u0082\u0004\u00a2\u0006\u0002\n\u0000\u00a8\u0006#"
     }
     d2 = {
         "Ljp/co/sony/mc/camera/view/viewbinder/FocusControlButtonViewBinder;",
@@ -38,29 +38,31 @@
         "Ljp/co/sony/mc/camera/view/uistate/FocusControlButtonUiState;",
         "orientationViewModel",
         "Ljp/co/sony/mc/camera/view/viewmodel/OrientationViewModel;",
+        "<init>",
         "(Ljp/co/sony/mc/camera/databinding/FocusControlButtonContainerBinding;Ljp/co/sony/mc/camera/view/viewmodel/CameraStatusModel;Ljp/co/sony/mc/camera/view/viewmodel/CameraSettingsModel;Ljp/co/sony/mc/camera/view/uistate/ProModeCommonUiState;Ljp/co/sony/mc/camera/view/uistate/ProModeBottomPaneUiState;Ljp/co/sony/mc/camera/view/uistate/FocusControlButtonUiState;Ljp/co/sony/mc/camera/view/viewmodel/OrientationViewModel;)V",
         "context",
         "Landroid/content/Context;",
         "kotlin.jvm.PlatformType",
-        "layoutChangeListener",
-        "Landroid/view/View$OnLayoutChangeListener;",
+        "Landroid/content/Context;",
         "lifecycleOwner",
         "Landroidx/lifecycle/LifecycleOwner;",
         "getLifecycleOwner",
         "()Landroidx/lifecycle/LifecycleOwner;",
-        "adjustFocusControlButtonLocation",
+        "layoutChangeListener",
+        "Landroid/view/View$OnLayoutChangeListener;",
+        "onCreate",
         "",
+        "owner",
+        "adjustFocusControlButtonLocation",
         "orientation",
         "Ljp/co/sony/mc/camera/view/orientation/LayoutOrientation;",
-        "onCreate",
-        "owner",
         "onDestroy",
         "SomcCamera_release"
     }
     k = 0x1
     mv = {
-        0x1,
-        0x9,
+        0x2,
+        0x0,
         0x0
     }
     xi = 0x30
@@ -92,12 +94,122 @@
 
 
 # direct methods
+.method public static synthetic $r8$lambda$1Ea1MnDTI1PhUo1pXl4QDhSkGGo(Ljp/co/sony/mc/camera/view/viewbinder/FocusControlButtonViewBinder;Ljp/co/sony/mc/camera/view/widget/FocusControlButton$OnClickListener;)Lkotlin/Unit;
+    .locals 0
+
+    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/view/viewbinder/FocusControlButtonViewBinder;->onCreate$lambda$6(Ljp/co/sony/mc/camera/view/viewbinder/FocusControlButtonViewBinder;Ljp/co/sony/mc/camera/view/widget/FocusControlButton$OnClickListener;)Lkotlin/Unit;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method public static synthetic $r8$lambda$5RB-Uy5flMC_9nsJfnaJXOxFst8(Ljp/co/sony/mc/camera/view/viewbinder/FocusControlButtonViewBinder;Ljava/lang/Boolean;)Lkotlin/Unit;
+    .locals 0
+
+    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/view/viewbinder/FocusControlButtonViewBinder;->onCreate$lambda$4(Ljp/co/sony/mc/camera/view/viewbinder/FocusControlButtonViewBinder;Ljava/lang/Boolean;)Lkotlin/Unit;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method public static synthetic $r8$lambda$9bIeNMbi6xPxXYwuMAXA49Iq2VI(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Ljava/lang/Boolean;)Lkotlin/Pair;
+    .locals 0
+
+    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/view/viewbinder/FocusControlButtonViewBinder;->onCreate$lambda$2(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Ljava/lang/Boolean;)Lkotlin/Pair;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method public static synthetic $r8$lambda$E7QxFLaU7-SrcQ4dPYs-worBjaY(Ljp/co/sony/mc/camera/view/viewbinder/FocusControlButtonViewBinder;Ljp/co/sony/mc/camera/view/orientation/LayoutOrientation;)Lkotlin/Unit;
+    .locals 0
+
+    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/view/viewbinder/FocusControlButtonViewBinder;->onCreate$lambda$10(Ljp/co/sony/mc/camera/view/viewbinder/FocusControlButtonViewBinder;Ljp/co/sony/mc/camera/view/orientation/LayoutOrientation;)Lkotlin/Unit;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
 .method public static synthetic $r8$lambda$R0YT3vj2x3Q8J8eQeHt_x2j_sq8(Ljp/co/sony/mc/camera/view/viewbinder/FocusControlButtonViewBinder;Landroid/view/View;IIIIIIII)V
     .locals 0
 
     invoke-static/range {p0 .. p9}, Ljp/co/sony/mc/camera/view/viewbinder/FocusControlButtonViewBinder;->layoutChangeListener$lambda$1(Ljp/co/sony/mc/camera/view/viewbinder/FocusControlButtonViewBinder;Landroid/view/View;IIIIIIII)V
 
     return-void
+.end method
+
+.method public static synthetic $r8$lambda$SHLIQfE2y0upR6GFtbuN4jXVy2I(Ljp/co/sony/mc/camera/view/viewbinder/FocusControlButtonViewBinder;Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;)Lkotlin/Unit;
+    .locals 0
+
+    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/view/viewbinder/FocusControlButtonViewBinder;->onCreate$lambda$9(Ljp/co/sony/mc/camera/view/viewbinder/FocusControlButtonViewBinder;Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;)Lkotlin/Unit;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method public static synthetic $r8$lambda$SW2A-sI6a3IRLdZdxz1Lx2Xe5RY(Ljp/co/sony/mc/camera/view/viewbinder/FocusControlButtonViewBinder;Ljava/lang/Boolean;)Lkotlin/Unit;
+    .locals 0
+
+    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/view/viewbinder/FocusControlButtonViewBinder;->onCreate$lambda$13(Ljp/co/sony/mc/camera/view/viewbinder/FocusControlButtonViewBinder;Ljava/lang/Boolean;)Lkotlin/Unit;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method public static synthetic $r8$lambda$Z94crWfWKRAc7MtpAM4Ux4t_p6Y(Ljp/co/sony/mc/camera/view/viewbinder/FocusControlButtonViewBinder;Lkotlin/Pair;)Lkotlin/Unit;
+    .locals 0
+
+    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/view/viewbinder/FocusControlButtonViewBinder;->onCreate$lambda$3(Ljp/co/sony/mc/camera/view/viewbinder/FocusControlButtonViewBinder;Lkotlin/Pair;)Lkotlin/Unit;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method public static synthetic $r8$lambda$bl6FMDC64zA-fQwNi1_ICsr2NMY(Ljp/co/sony/mc/camera/view/viewbinder/FocusControlButtonViewBinder;Ljava/lang/Boolean;)Lkotlin/Unit;
+    .locals 0
+
+    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/view/viewbinder/FocusControlButtonViewBinder;->onCreate$lambda$7(Ljp/co/sony/mc/camera/view/viewbinder/FocusControlButtonViewBinder;Ljava/lang/Boolean;)Lkotlin/Unit;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method public static synthetic $r8$lambda$eYJRdEteWAU4pct9RmuuaRNzfcc(Ljp/co/sony/mc/camera/view/viewbinder/FocusControlButtonViewBinder;Ljp/co/sony/mc/camera/view/widget/FocusControlButton$ButtonType;)Lkotlin/Unit;
+    .locals 0
+
+    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/view/viewbinder/FocusControlButtonViewBinder;->onCreate$lambda$5(Ljp/co/sony/mc/camera/view/viewbinder/FocusControlButtonViewBinder;Ljp/co/sony/mc/camera/view/widget/FocusControlButton$ButtonType;)Lkotlin/Unit;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method public static synthetic $r8$lambda$niVy_ZlOdMEs9IgYO3cbrgtrgh0(Landroidx/constraintlayout/widget/ConstraintSet;I)Lkotlin/Unit;
+    .locals 0
+
+    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/view/viewbinder/FocusControlButtonViewBinder;->onCreate$lambda$13$lambda$11(Landroidx/constraintlayout/widget/ConstraintSet;I)Lkotlin/Unit;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method public static synthetic $r8$lambda$q37vj-K6hmuHGzK2M8GMOHvA-wY(Landroidx/constraintlayout/widget/ConstraintSet;I)Lkotlin/Unit;
+    .locals 0
+
+    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/view/viewbinder/FocusControlButtonViewBinder;->onCreate$lambda$13$lambda$12(Landroidx/constraintlayout/widget/ConstraintSet;I)Lkotlin/Unit;
+
+    move-result-object p0
+
+    return-object p0
 .end method
 
 .method static constructor <clinit>()V
@@ -199,33 +311,6 @@
     return-void
 .end method
 
-.method public static final synthetic access$adjustFocusControlButtonLocation(Ljp/co/sony/mc/camera/view/viewbinder/FocusControlButtonViewBinder;Ljp/co/sony/mc/camera/view/orientation/LayoutOrientation;)V
-    .locals 0
-
-    .line 31
-    invoke-direct {p0, p1}, Ljp/co/sony/mc/camera/view/viewbinder/FocusControlButtonViewBinder;->adjustFocusControlButtonLocation(Ljp/co/sony/mc/camera/view/orientation/LayoutOrientation;)V
-
-    return-void
-.end method
-
-.method public static final synthetic access$getBinding$p(Ljp/co/sony/mc/camera/view/viewbinder/FocusControlButtonViewBinder;)Ljp/co/sony/mc/camera/databinding/FocusControlButtonContainerBinding;
-    .locals 0
-
-    .line 31
-    iget-object p0, p0, Ljp/co/sony/mc/camera/view/viewbinder/FocusControlButtonViewBinder;->binding:Ljp/co/sony/mc/camera/databinding/FocusControlButtonContainerBinding;
-
-    return-object p0
-.end method
-
-.method public static final synthetic access$getOrientationViewModel$p(Ljp/co/sony/mc/camera/view/viewbinder/FocusControlButtonViewBinder;)Ljp/co/sony/mc/camera/view/viewmodel/OrientationViewModel;
-    .locals 0
-
-    .line 31
-    iget-object p0, p0, Ljp/co/sony/mc/camera/view/viewbinder/FocusControlButtonViewBinder;->orientationViewModel:Ljp/co/sony/mc/camera/view/viewmodel/OrientationViewModel;
-
-    return-object p0
-.end method
-
 .method private final adjustFocusControlButtonLocation(Ljp/co/sony/mc/camera/view/orientation/LayoutOrientation;)V
     .locals 3
 
@@ -259,7 +344,7 @@
 
     move-result-object v0
 
-    const v2, 0x7f0706ee
+    const v2, 0x7f07074b
 
     invoke-virtual {v0, v2}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
@@ -293,7 +378,7 @@
 
     move-result-object v0
 
-    const v2, 0x7f0706bc
+    const v2, 0x7f070714
 
     invoke-virtual {v0, v2}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
@@ -309,7 +394,7 @@
 
     move-result-object v0
 
-    const v2, 0x7f0706e4
+    const v2, 0x7f070743
 
     invoke-virtual {v0, v2}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
@@ -341,7 +426,6 @@
 
     goto :goto_1
 
-    .line 152
     :cond_2
     new-instance p0, Lkotlin/NoWhenBranchMatchedException;
 
@@ -509,6 +593,354 @@
     return-void
 .end method
 
+.method private static final onCreate$lambda$10(Ljp/co/sony/mc/camera/view/viewbinder/FocusControlButtonViewBinder;Ljp/co/sony/mc/camera/view/orientation/LayoutOrientation;)Lkotlin/Unit;
+    .locals 2
+
+    const-string/jumbo v0, "this$0"
+
+    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 99
+    iget-object v0, p0, Ljp/co/sony/mc/camera/view/viewbinder/FocusControlButtonViewBinder;->binding:Ljp/co/sony/mc/camera/databinding/FocusControlButtonContainerBinding;
+
+    iget-object v0, v0, Ljp/co/sony/mc/camera/databinding/FocusControlButtonContainerBinding;->focusControlButton:Ljp/co/sony/mc/camera/view/widget/FocusControlButton;
+
+    invoke-static {p1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;)V
+
+    invoke-static {p1}, Ljp/co/sony/mc/camera/view/orientation/LayoutOrientationKt;->toRotation(Ljp/co/sony/mc/camera/view/orientation/LayoutOrientation;)F
+
+    move-result v1
+
+    invoke-virtual {v0, v1}, Ljp/co/sony/mc/camera/view/widget/FocusControlButton;->setRotation(F)V
+
+    .line 100
+    invoke-direct {p0, p1}, Ljp/co/sony/mc/camera/view/viewbinder/FocusControlButtonViewBinder;->adjustFocusControlButtonLocation(Ljp/co/sony/mc/camera/view/orientation/LayoutOrientation;)V
+
+    .line 101
+    sget-object p0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
+
+    return-object p0
+.end method
+
+.method private static final onCreate$lambda$13(Ljp/co/sony/mc/camera/view/viewbinder/FocusControlButtonViewBinder;Ljava/lang/Boolean;)Lkotlin/Unit;
+    .locals 1
+
+    const-string/jumbo v0, "this$0"
+
+    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 104
+    invoke-virtual {p1}, Ljava/lang/Boolean;->booleanValue()Z
+
+    move-result p1
+
+    const-string v0, "getRoot(...)"
+
+    if-eqz p1, :cond_0
+
+    .line 105
+    iget-object p0, p0, Ljp/co/sony/mc/camera/view/viewbinder/FocusControlButtonViewBinder;->binding:Ljp/co/sony/mc/camera/databinding/FocusControlButtonContainerBinding;
+
+    invoke-virtual {p0}, Ljp/co/sony/mc/camera/databinding/FocusControlButtonContainerBinding;->getRoot()Landroid/view/View;
+
+    move-result-object p0
+
+    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
+
+    new-instance p1, Ljp/co/sony/mc/camera/view/viewbinder/FocusControlButtonViewBinder$$ExternalSyntheticLambda1;
+
+    invoke-direct {p1}, Ljp/co/sony/mc/camera/view/viewbinder/FocusControlButtonViewBinder$$ExternalSyntheticLambda1;-><init>()V
+
+    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/util/ViewExtensionsKt;->adjustConstrain(Landroid/view/View;Lkotlin/jvm/functions/Function2;)Landroid/view/View;
+
+    goto :goto_0
+
+    .line 114
+    :cond_0
+    iget-object p0, p0, Ljp/co/sony/mc/camera/view/viewbinder/FocusControlButtonViewBinder;->binding:Ljp/co/sony/mc/camera/databinding/FocusControlButtonContainerBinding;
+
+    invoke-virtual {p0}, Ljp/co/sony/mc/camera/databinding/FocusControlButtonContainerBinding;->getRoot()Landroid/view/View;
+
+    move-result-object p0
+
+    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
+
+    new-instance p1, Ljp/co/sony/mc/camera/view/viewbinder/FocusControlButtonViewBinder$$ExternalSyntheticLambda2;
+
+    invoke-direct {p1}, Ljp/co/sony/mc/camera/view/viewbinder/FocusControlButtonViewBinder$$ExternalSyntheticLambda2;-><init>()V
+
+    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/util/ViewExtensionsKt;->adjustConstrain(Landroid/view/View;Lkotlin/jvm/functions/Function2;)Landroid/view/View;
+
+    .line 123
+    :goto_0
+    sget-object p0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
+
+    return-object p0
+.end method
+
+.method private static final onCreate$lambda$13$lambda$11(Landroidx/constraintlayout/widget/ConstraintSet;I)Lkotlin/Unit;
+    .locals 3
+
+    const-string v0, "$this$adjustConstrain"
+
+    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+
+    const v0, 0x7f0904dd
+
+    const/4 v1, 0x3
+
+    const/4 v2, 0x4
+
+    .line 106
+    invoke-virtual {p0, p1, v2, v0, v1}, Landroidx/constraintlayout/widget/ConstraintSet;->connect(IIII)V
+
+    .line 112
+    sget-object p0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
+
+    return-object p0
+.end method
+
+.method private static final onCreate$lambda$13$lambda$12(Landroidx/constraintlayout/widget/ConstraintSet;I)Lkotlin/Unit;
+    .locals 3
+
+    const-string v0, "$this$adjustConstrain"
+
+    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+
+    const v0, 0x7f090399
+
+    const/4 v1, 0x3
+
+    const/4 v2, 0x4
+
+    .line 115
+    invoke-virtual {p0, p1, v2, v0, v1}, Landroidx/constraintlayout/widget/ConstraintSet;->connect(IIII)V
+
+    .line 121
+    sget-object p0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
+
+    return-object p0
+.end method
+
+.method private static final onCreate$lambda$2(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Ljava/lang/Boolean;)Lkotlin/Pair;
+    .locals 1
+
+    .line 61
+    new-instance v0, Lkotlin/Pair;
+
+    invoke-direct {v0, p0, p1}, Lkotlin/Pair;-><init>(Ljava/lang/Object;Ljava/lang/Object;)V
+
+    return-object v0
+.end method
+
+.method private static final onCreate$lambda$3(Ljp/co/sony/mc/camera/view/viewbinder/FocusControlButtonViewBinder;Lkotlin/Pair;)Lkotlin/Unit;
+    .locals 3
+
+    const-string/jumbo v0, "this$0"
+
+    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 63
+    invoke-virtual {p1}, Lkotlin/Pair;->component1()Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
+
+    invoke-virtual {p1}, Lkotlin/Pair;->component2()Ljava/lang/Object;
+
+    move-result-object p1
+
+    check-cast p1, Ljava/lang/Boolean;
+
+    .line 64
+    iget-object p0, p0, Ljp/co/sony/mc/camera/view/viewbinder/FocusControlButtonViewBinder;->binding:Ljp/co/sony/mc/camera/databinding/FocusControlButtonContainerBinding;
+
+    iget-object p0, p0, Ljp/co/sony/mc/camera/databinding/FocusControlButtonContainerBinding;->focusControlButton:Ljp/co/sony/mc/camera/view/widget/FocusControlButton;
+
+    const/4 v1, 0x0
+
+    if-eqz v0, :cond_0
+
+    .line 65
+    invoke-virtual {v0}, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->isPro()Z
+
+    move-result v0
+
+    const/4 v2, 0x1
+
+    if-ne v0, v2, :cond_0
+
+    invoke-static {v1}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
+
+    move-result-object v0
+
+    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->areEqual(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    move-result p1
+
+    if-eqz p1, :cond_0
+
+    move v1, v2
+
+    .line 64
+    :cond_0
+    invoke-virtual {p0, v1}, Ljp/co/sony/mc/camera/view/widget/FocusControlButton;->setEnabled(Z)V
+
+    .line 66
+    sget-object p0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
+
+    return-object p0
+.end method
+
+.method private static final onCreate$lambda$4(Ljp/co/sony/mc/camera/view/viewbinder/FocusControlButtonViewBinder;Ljava/lang/Boolean;)Lkotlin/Unit;
+    .locals 1
+
+    const-string/jumbo v0, "this$0"
+
+    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+
+    const/4 v0, 0x1
+
+    .line 69
+    invoke-static {v0}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
+
+    move-result-object v0
+
+    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->areEqual(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    move-result p1
+
+    if-eqz p1, :cond_0
+
+    .line 70
+    iget-object p0, p0, Ljp/co/sony/mc/camera/view/viewbinder/FocusControlButtonViewBinder;->binding:Ljp/co/sony/mc/camera/databinding/FocusControlButtonContainerBinding;
+
+    iget-object p0, p0, Ljp/co/sony/mc/camera/databinding/FocusControlButtonContainerBinding;->focusControlButton:Ljp/co/sony/mc/camera/view/widget/FocusControlButton;
+
+    invoke-virtual {p0}, Ljp/co/sony/mc/camera/view/widget/FocusControlButton;->show()V
+
+    goto :goto_0
+
+    .line 72
+    :cond_0
+    iget-object p0, p0, Ljp/co/sony/mc/camera/view/viewbinder/FocusControlButtonViewBinder;->binding:Ljp/co/sony/mc/camera/databinding/FocusControlButtonContainerBinding;
+
+    iget-object p0, p0, Ljp/co/sony/mc/camera/databinding/FocusControlButtonContainerBinding;->focusControlButton:Ljp/co/sony/mc/camera/view/widget/FocusControlButton;
+
+    invoke-virtual {p0}, Ljp/co/sony/mc/camera/view/widget/FocusControlButton;->hide()V
+
+    .line 74
+    :goto_0
+    sget-object p0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
+
+    return-object p0
+.end method
+
+.method private static final onCreate$lambda$5(Ljp/co/sony/mc/camera/view/viewbinder/FocusControlButtonViewBinder;Ljp/co/sony/mc/camera/view/widget/FocusControlButton$ButtonType;)Lkotlin/Unit;
+    .locals 1
+
+    const-string/jumbo v0, "this$0"
+
+    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+
+    if-eqz p1, :cond_0
+
+    .line 78
+    iget-object p0, p0, Ljp/co/sony/mc/camera/view/viewbinder/FocusControlButtonViewBinder;->binding:Ljp/co/sony/mc/camera/databinding/FocusControlButtonContainerBinding;
+
+    iget-object p0, p0, Ljp/co/sony/mc/camera/databinding/FocusControlButtonContainerBinding;->focusControlButton:Ljp/co/sony/mc/camera/view/widget/FocusControlButton;
+
+    invoke-virtual {p0, p1}, Ljp/co/sony/mc/camera/view/widget/FocusControlButton;->setButtonType(Ljp/co/sony/mc/camera/view/widget/FocusControlButton$ButtonType;)V
+
+    .line 80
+    :cond_0
+    sget-object p0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
+
+    return-object p0
+.end method
+
+.method private static final onCreate$lambda$6(Ljp/co/sony/mc/camera/view/viewbinder/FocusControlButtonViewBinder;Ljp/co/sony/mc/camera/view/widget/FocusControlButton$OnClickListener;)Lkotlin/Unit;
+    .locals 1
+
+    const-string/jumbo v0, "this$0"
+
+    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+
+    if-eqz p1, :cond_0
+
+    .line 84
+    iget-object p0, p0, Ljp/co/sony/mc/camera/view/viewbinder/FocusControlButtonViewBinder;->binding:Ljp/co/sony/mc/camera/databinding/FocusControlButtonContainerBinding;
+
+    iget-object p0, p0, Ljp/co/sony/mc/camera/databinding/FocusControlButtonContainerBinding;->focusControlButton:Ljp/co/sony/mc/camera/view/widget/FocusControlButton;
+
+    invoke-virtual {p0, p1}, Ljp/co/sony/mc/camera/view/widget/FocusControlButton;->setClickListener(Ljp/co/sony/mc/camera/view/widget/FocusControlButton$OnClickListener;)V
+
+    .line 86
+    :cond_0
+    sget-object p0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
+
+    return-object p0
+.end method
+
+.method private static final onCreate$lambda$7(Ljp/co/sony/mc/camera/view/viewbinder/FocusControlButtonViewBinder;Ljava/lang/Boolean;)Lkotlin/Unit;
+    .locals 1
+
+    const-string/jumbo v0, "this$0"
+
+    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 89
+    iget-object p0, p0, Ljp/co/sony/mc/camera/view/viewbinder/FocusControlButtonViewBinder;->binding:Ljp/co/sony/mc/camera/databinding/FocusControlButtonContainerBinding;
+
+    iget-object p0, p0, Ljp/co/sony/mc/camera/databinding/FocusControlButtonContainerBinding;->focusControlButton:Ljp/co/sony/mc/camera/view/widget/FocusControlButton;
+
+    invoke-virtual {p1}, Ljava/lang/Boolean;->booleanValue()Z
+
+    move-result p1
+
+    xor-int/lit8 p1, p1, 0x1
+
+    invoke-virtual {p0, p1}, Ljp/co/sony/mc/camera/view/widget/FocusControlButton;->setClickable(Z)V
+
+    .line 90
+    sget-object p0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
+
+    return-object p0
+.end method
+
+.method private static final onCreate$lambda$9(Ljp/co/sony/mc/camera/view/viewbinder/FocusControlButtonViewBinder;Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;)Lkotlin/Unit;
+    .locals 0
+
+    const-string/jumbo p1, "this$0"
+
+    invoke-static {p0, p1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 93
+    iget-object p1, p0, Ljp/co/sony/mc/camera/view/viewbinder/FocusControlButtonViewBinder;->orientationViewModel:Ljp/co/sony/mc/camera/view/viewmodel/OrientationViewModel;
+
+    invoke-virtual {p1}, Ljp/co/sony/mc/camera/view/viewmodel/OrientationViewModel;->getLayoutOrientation()Landroidx/lifecycle/LiveData;
+
+    move-result-object p1
+
+    invoke-virtual {p1}, Landroidx/lifecycle/LiveData;->getValue()Ljava/lang/Object;
+
+    move-result-object p1
+
+    check-cast p1, Ljp/co/sony/mc/camera/view/orientation/LayoutOrientation;
+
+    if-eqz p1, :cond_0
+
+    .line 94
+    invoke-direct {p0, p1}, Ljp/co/sony/mc/camera/view/viewbinder/FocusControlButtonViewBinder;->adjustFocusControlButtonLocation(Ljp/co/sony/mc/camera/view/orientation/LayoutOrientation;)V
+
+    .line 96
+    :cond_0
+    sget-object p0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
+
+    return-object p0
+.end method
+
 
 # virtual methods
 .method public onCreate(Landroidx/lifecycle/LifecycleOwner;)V
@@ -546,11 +978,11 @@
 
     move-result-object v1
 
+    new-instance v2, Ljp/co/sony/mc/camera/view/viewbinder/FocusControlButtonViewBinder$$ExternalSyntheticLambda3;
+
+    invoke-direct {v2}, Ljp/co/sony/mc/camera/view/viewbinder/FocusControlButtonViewBinder$$ExternalSyntheticLambda3;-><init>()V
+
     .line 57
-    sget-object v2, Ljp/co/sony/mc/camera/view/viewbinder/FocusControlButtonViewBinder$onCreate$1;->INSTANCE:Ljp/co/sony/mc/camera/view/viewbinder/FocusControlButtonViewBinder$onCreate$1;
-
-    check-cast v2, Lkotlin/jvm/functions/Function2;
-
     invoke-virtual {p1, v0, v1, v2}, Ljp/co/sony/mc/camera/view/viewmodel/LiveDataMediators;->nullable(Landroidx/lifecycle/LiveData;Landroidx/lifecycle/LiveData;Lkotlin/jvm/functions/Function2;)Landroidx/lifecycle/LiveData;
 
     move-result-object p1
@@ -560,11 +992,9 @@
 
     move-result-object v0
 
-    new-instance v1, Ljp/co/sony/mc/camera/view/viewbinder/FocusControlButtonViewBinder$onCreate$2;
+    new-instance v1, Ljp/co/sony/mc/camera/view/viewbinder/FocusControlButtonViewBinder$$ExternalSyntheticLambda4;
 
-    invoke-direct {v1, p0}, Ljp/co/sony/mc/camera/view/viewbinder/FocusControlButtonViewBinder$onCreate$2;-><init>(Ljp/co/sony/mc/camera/view/viewbinder/FocusControlButtonViewBinder;)V
-
-    check-cast v1, Lkotlin/jvm/functions/Function1;
+    invoke-direct {v1, p0}, Ljp/co/sony/mc/camera/view/viewbinder/FocusControlButtonViewBinder$$ExternalSyntheticLambda4;-><init>(Ljp/co/sony/mc/camera/view/viewbinder/FocusControlButtonViewBinder;)V
 
     new-instance v2, Ljp/co/sony/mc/camera/view/viewbinder/FocusControlButtonViewBinder$sam$androidx_lifecycle_Observer$0;
 
@@ -585,11 +1015,9 @@
 
     move-result-object v0
 
-    new-instance v1, Ljp/co/sony/mc/camera/view/viewbinder/FocusControlButtonViewBinder$onCreate$3;
+    new-instance v1, Ljp/co/sony/mc/camera/view/viewbinder/FocusControlButtonViewBinder$$ExternalSyntheticLambda5;
 
-    invoke-direct {v1, p0}, Ljp/co/sony/mc/camera/view/viewbinder/FocusControlButtonViewBinder$onCreate$3;-><init>(Ljp/co/sony/mc/camera/view/viewbinder/FocusControlButtonViewBinder;)V
-
-    check-cast v1, Lkotlin/jvm/functions/Function1;
+    invoke-direct {v1, p0}, Ljp/co/sony/mc/camera/view/viewbinder/FocusControlButtonViewBinder$$ExternalSyntheticLambda5;-><init>(Ljp/co/sony/mc/camera/view/viewbinder/FocusControlButtonViewBinder;)V
 
     new-instance v2, Ljp/co/sony/mc/camera/view/viewbinder/FocusControlButtonViewBinder$sam$androidx_lifecycle_Observer$0;
 
@@ -610,11 +1038,9 @@
 
     move-result-object v0
 
-    new-instance v1, Ljp/co/sony/mc/camera/view/viewbinder/FocusControlButtonViewBinder$onCreate$4;
+    new-instance v1, Ljp/co/sony/mc/camera/view/viewbinder/FocusControlButtonViewBinder$$ExternalSyntheticLambda6;
 
-    invoke-direct {v1, p0}, Ljp/co/sony/mc/camera/view/viewbinder/FocusControlButtonViewBinder$onCreate$4;-><init>(Ljp/co/sony/mc/camera/view/viewbinder/FocusControlButtonViewBinder;)V
-
-    check-cast v1, Lkotlin/jvm/functions/Function1;
+    invoke-direct {v1, p0}, Ljp/co/sony/mc/camera/view/viewbinder/FocusControlButtonViewBinder$$ExternalSyntheticLambda6;-><init>(Ljp/co/sony/mc/camera/view/viewbinder/FocusControlButtonViewBinder;)V
 
     new-instance v2, Ljp/co/sony/mc/camera/view/viewbinder/FocusControlButtonViewBinder$sam$androidx_lifecycle_Observer$0;
 
@@ -635,11 +1061,9 @@
 
     move-result-object v0
 
-    new-instance v1, Ljp/co/sony/mc/camera/view/viewbinder/FocusControlButtonViewBinder$onCreate$5;
+    new-instance v1, Ljp/co/sony/mc/camera/view/viewbinder/FocusControlButtonViewBinder$$ExternalSyntheticLambda7;
 
-    invoke-direct {v1, p0}, Ljp/co/sony/mc/camera/view/viewbinder/FocusControlButtonViewBinder$onCreate$5;-><init>(Ljp/co/sony/mc/camera/view/viewbinder/FocusControlButtonViewBinder;)V
-
-    check-cast v1, Lkotlin/jvm/functions/Function1;
+    invoke-direct {v1, p0}, Ljp/co/sony/mc/camera/view/viewbinder/FocusControlButtonViewBinder$$ExternalSyntheticLambda7;-><init>(Ljp/co/sony/mc/camera/view/viewbinder/FocusControlButtonViewBinder;)V
 
     new-instance v2, Ljp/co/sony/mc/camera/view/viewbinder/FocusControlButtonViewBinder$sam$androidx_lifecycle_Observer$0;
 
@@ -660,11 +1084,9 @@
 
     move-result-object v0
 
-    new-instance v1, Ljp/co/sony/mc/camera/view/viewbinder/FocusControlButtonViewBinder$onCreate$6;
+    new-instance v1, Ljp/co/sony/mc/camera/view/viewbinder/FocusControlButtonViewBinder$$ExternalSyntheticLambda8;
 
-    invoke-direct {v1, p0}, Ljp/co/sony/mc/camera/view/viewbinder/FocusControlButtonViewBinder$onCreate$6;-><init>(Ljp/co/sony/mc/camera/view/viewbinder/FocusControlButtonViewBinder;)V
-
-    check-cast v1, Lkotlin/jvm/functions/Function1;
+    invoke-direct {v1, p0}, Ljp/co/sony/mc/camera/view/viewbinder/FocusControlButtonViewBinder$$ExternalSyntheticLambda8;-><init>(Ljp/co/sony/mc/camera/view/viewbinder/FocusControlButtonViewBinder;)V
 
     new-instance v2, Ljp/co/sony/mc/camera/view/viewbinder/FocusControlButtonViewBinder$sam$androidx_lifecycle_Observer$0;
 
@@ -685,11 +1107,9 @@
 
     move-result-object v0
 
-    new-instance v1, Ljp/co/sony/mc/camera/view/viewbinder/FocusControlButtonViewBinder$onCreate$7;
+    new-instance v1, Ljp/co/sony/mc/camera/view/viewbinder/FocusControlButtonViewBinder$$ExternalSyntheticLambda9;
 
-    invoke-direct {v1, p0}, Ljp/co/sony/mc/camera/view/viewbinder/FocusControlButtonViewBinder$onCreate$7;-><init>(Ljp/co/sony/mc/camera/view/viewbinder/FocusControlButtonViewBinder;)V
-
-    check-cast v1, Lkotlin/jvm/functions/Function1;
+    invoke-direct {v1, p0}, Ljp/co/sony/mc/camera/view/viewbinder/FocusControlButtonViewBinder$$ExternalSyntheticLambda9;-><init>(Ljp/co/sony/mc/camera/view/viewbinder/FocusControlButtonViewBinder;)V
 
     new-instance v2, Ljp/co/sony/mc/camera/view/viewbinder/FocusControlButtonViewBinder$sam$androidx_lifecycle_Observer$0;
 
@@ -710,11 +1130,9 @@
 
     move-result-object v0
 
-    new-instance v1, Ljp/co/sony/mc/camera/view/viewbinder/FocusControlButtonViewBinder$onCreate$8;
+    new-instance v1, Ljp/co/sony/mc/camera/view/viewbinder/FocusControlButtonViewBinder$$ExternalSyntheticLambda10;
 
-    invoke-direct {v1, p0}, Ljp/co/sony/mc/camera/view/viewbinder/FocusControlButtonViewBinder$onCreate$8;-><init>(Ljp/co/sony/mc/camera/view/viewbinder/FocusControlButtonViewBinder;)V
-
-    check-cast v1, Lkotlin/jvm/functions/Function1;
+    invoke-direct {v1, p0}, Ljp/co/sony/mc/camera/view/viewbinder/FocusControlButtonViewBinder$$ExternalSyntheticLambda10;-><init>(Ljp/co/sony/mc/camera/view/viewbinder/FocusControlButtonViewBinder;)V
 
     new-instance v2, Ljp/co/sony/mc/camera/view/viewbinder/FocusControlButtonViewBinder$sam$androidx_lifecycle_Observer$0;
 
@@ -735,11 +1153,9 @@
 
     move-result-object v0
 
-    new-instance v1, Ljp/co/sony/mc/camera/view/viewbinder/FocusControlButtonViewBinder$onCreate$9;
+    new-instance v1, Ljp/co/sony/mc/camera/view/viewbinder/FocusControlButtonViewBinder$$ExternalSyntheticLambda11;
 
-    invoke-direct {v1, p0}, Ljp/co/sony/mc/camera/view/viewbinder/FocusControlButtonViewBinder$onCreate$9;-><init>(Ljp/co/sony/mc/camera/view/viewbinder/FocusControlButtonViewBinder;)V
-
-    check-cast v1, Lkotlin/jvm/functions/Function1;
+    invoke-direct {v1, p0}, Ljp/co/sony/mc/camera/view/viewbinder/FocusControlButtonViewBinder$$ExternalSyntheticLambda11;-><init>(Ljp/co/sony/mc/camera/view/viewbinder/FocusControlButtonViewBinder;)V
 
     new-instance p0, Ljp/co/sony/mc/camera/view/viewbinder/FocusControlButtonViewBinder$sam$androidx_lifecycle_Observer$0;
 

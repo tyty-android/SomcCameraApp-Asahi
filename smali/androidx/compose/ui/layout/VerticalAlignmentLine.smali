@@ -53,10 +53,6 @@
         }
     .end annotation
 
-    const-string v0, "merger"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
     const/4 v0, 0x0
 
     .line 82

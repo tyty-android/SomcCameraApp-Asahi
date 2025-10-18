@@ -6,18 +6,12 @@
 .implements Landroid/view/View$OnTouchListener;
 
 
-# instance fields
-.field public final synthetic f$0:Z
-
-
 # direct methods
-.method public synthetic constructor <init>(Z)V
+.method public synthetic constructor <init>()V
     .locals 0
 
     .line 0
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    iput-boolean p1, p0, Ljp/co/sony/mc/camera/view/viewbinder/BasicModeFocusViewBinder$$ExternalSyntheticLambda0;->f$0:Z
 
     return-void
 .end method
@@ -28,9 +22,7 @@
     .locals 0
 
     .line 0
-    iget-boolean p0, p0, Ljp/co/sony/mc/camera/view/viewbinder/BasicModeFocusViewBinder$$ExternalSyntheticLambda0;->f$0:Z
-
-    invoke-static {p0, p1, p2}, Ljp/co/sony/mc/camera/view/viewbinder/BasicModeFocusViewBinder;->$r8$lambda$LKbWveRWYrk6MNjYc_T3KPDhFZk(ZLandroid/view/View;Landroid/view/MotionEvent;)Z
+    invoke-static {p1, p2}, Ljp/co/sony/mc/camera/view/viewbinder/BasicModeFocusViewBinder;->$r8$lambda$wA3lL4bQhDig7eLQxAJbOi3uj_0(Landroid/view/View;Landroid/view/MotionEvent;)Z
 
     move-result p0
 

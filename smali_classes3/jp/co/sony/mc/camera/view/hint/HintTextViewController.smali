@@ -204,39 +204,43 @@
 .end method
 
 .method private cancelFromContentStack(Ljp/co/sony/mc/camera/view/hint/HintTextContent;)Z
-    .locals 2
+    .locals 5
 
-    .line 524
+    .line 531
     sget-boolean v0, Ljp/co/sony/mc/camera/util/CamLog;->VERBOSE:Z
+
+    const/4 v1, 0x0
+
+    const/4 v2, 0x1
 
     if-eqz v0, :cond_0
 
-    .line 525
-    new-instance v0, Ljava/lang/StringBuilder;
+    .line 532
+    new-array v0, v2, [Ljava/lang/String;
 
-    const-string v1, "cancel: content = "
+    new-instance v3, Ljava/lang/StringBuilder;
 
-    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+    const-string v4, "cancel: content = "
+
+    invoke-direct {v3, v4}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
     invoke-virtual {p1}, Ljp/co/sony/mc/camera/view/hint/HintTextContent;->getTag()Ljava/lang/String;
 
-    move-result-object v1
+    move-result-object v4
 
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    move-result-object v0
+    move-result-object v3
 
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-virtual {v3}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    move-result-object v0
+    move-result-object v3
 
-    filled-new-array {v0}, [Ljava/lang/String;
-
-    move-result-object v0
+    aput-object v3, v0, v1
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
-    .line 527
+    .line 534
     :cond_0
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/hint/HintTextViewController;->mContentPrioritizedStack:Ljava/util/concurrent/BlockingQueue;
 
@@ -246,53 +250,51 @@
 
     if-nez v0, :cond_2
 
-    .line 529
+    .line 536
     sget-boolean p0, Ljp/co/sony/mc/camera/util/CamLog;->VERBOSE:Z
 
     if-eqz p0, :cond_1
 
-    .line 530
-    new-instance p0, Ljava/lang/StringBuilder;
+    .line 537
+    new-array p0, v2, [Ljava/lang/String;
 
-    const-string v0, "cancel: content is not queued, content = "
+    new-instance v0, Ljava/lang/StringBuilder;
 
-    invoke-direct {p0, v0}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+    const-string v2, "cancel: content is not queued, content = "
+
+    invoke-direct {v0, v2}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
     invoke-virtual {p1}, Ljp/co/sony/mc/camera/view/hint/HintTextContent;->getTag()Ljava/lang/String;
 
     move-result-object p1
 
-    invoke-virtual {p0, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    move-result-object p0
+    move-result-object p1
 
-    invoke-virtual {p0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-virtual {p1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    move-result-object p0
+    move-result-object p1
 
-    filled-new-array {p0}, [Ljava/lang/String;
-
-    move-result-object p0
+    aput-object p1, p0, v1
 
     invoke-static {p0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
     :cond_1
-    const/4 p0, 0x0
+    return v1
 
-    return p0
-
-    .line 535
+    .line 542
     :cond_2
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/view/hint/HintTextViewController;->referTop()Ljp/co/sony/mc/camera/view/hint/HintTextContent;
 
     move-result-object v0
 
-    .line 537
+    .line 544
     iget-object v1, p0, Ljp/co/sony/mc/camera/view/hint/HintTextViewController;->mContentPrioritizedStack:Ljava/util/concurrent/BlockingQueue;
 
     invoke-interface {v1, p1}, Ljava/util/concurrent/BlockingQueue;->remove(Ljava/lang/Object;)Z
 
-    .line 539
+    .line 546
     iget-object v1, p0, Ljp/co/sony/mc/camera/view/hint/HintTextViewController;->mContentPrioritizedStack:Ljava/util/concurrent/BlockingQueue;
 
     invoke-interface {v1}, Ljava/util/concurrent/BlockingQueue;->isEmpty()Z
@@ -301,10 +303,10 @@
 
     if-eqz v1, :cond_3
 
-    .line 541
+    .line 548
     invoke-direct {p0, p1}, Ljp/co/sony/mc/camera/view/hint/HintTextViewController;->hideInternal(Ljp/co/sony/mc/camera/view/hint/HintTextContent;)V
 
-    .line 545
+    .line 552
     :cond_3
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/view/hint/HintTextViewController;->referTop()Ljp/co/sony/mc/camera/view/hint/HintTextContent;
 
@@ -312,24 +314,24 @@
 
     if-eqz v1, :cond_5
 
-    .line 546
+    .line 553
     invoke-direct {p0, v0, v1}, Ljp/co/sony/mc/camera/view/hint/HintTextViewController;->isSameContent(Ljp/co/sony/mc/camera/view/hint/HintTextContent;Ljp/co/sony/mc/camera/view/hint/HintTextContent;)Z
 
     move-result v0
 
     if-nez v0, :cond_5
 
-    .line 547
+    .line 554
     invoke-virtual {p1}, Ljp/co/sony/mc/camera/view/hint/HintTextContent;->isToast()Z
 
     move-result v0
 
     if-eqz v0, :cond_4
 
-    .line 548
+    .line 555
     invoke-direct {p0, p1}, Ljp/co/sony/mc/camera/view/hint/HintTextViewController;->hideInternal(Ljp/co/sony/mc/camera/view/hint/HintTextContent;)V
 
-    .line 550
+    .line 557
     :cond_4
     iget-object p1, p0, Ljp/co/sony/mc/camera/view/hint/HintTextViewController;->mContentDisplayThreshold:Ljp/co/sony/mc/camera/view/hint/HintTextContent$HintPriority;
 
@@ -341,36 +343,34 @@
 
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/hint/HintTextViewController;->mContentDisplayThreshold:Ljp/co/sony/mc/camera/view/hint/HintTextContent$HintPriority;
 
-    .line 551
+    .line 558
     invoke-virtual {p1, v0}, Ljp/co/sony/mc/camera/view/hint/HintTextContent$HintPriority;->compareTo(Ljava/lang/Enum;)I
 
     move-result p1
 
     if-gtz p1, :cond_5
 
-    .line 552
+    .line 559
     invoke-direct {p0, v1}, Ljp/co/sony/mc/camera/view/hint/HintTextViewController;->showInternal(Ljp/co/sony/mc/camera/view/hint/HintTextContent;)V
 
     :cond_5
-    const/4 p0, 0x1
-
-    return p0
+    return v2
 .end method
 
 .method private cancelTimeoutCount()V
     .locals 1
 
-    .line 574
+    .line 581
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/hint/HintTextViewController;->mHandler:Ljp/co/sony/mc/camera/view/hint/HintTextViewController$TimeoutHandler;
 
     if-eqz v0, :cond_0
 
-    .line 575
+    .line 582
     invoke-virtual {v0}, Ljp/co/sony/mc/camera/view/hint/HintTextViewController$TimeoutHandler;->cancelCount()V
 
     const/4 v0, 0x0
 
-    .line 576
+    .line 583
     iput-object v0, p0, Ljp/co/sony/mc/camera/view/hint/HintTextViewController;->mHandler:Ljp/co/sony/mc/camera/view/hint/HintTextViewController$TimeoutHandler;
 
     :cond_0
@@ -378,64 +378,68 @@
 .end method
 
 .method private hideInternal(Ljp/co/sony/mc/camera/view/hint/HintTextContent;)V
-    .locals 1
+    .locals 3
+
+    const/4 v0, 0x0
+
+    const/4 v1, 0x1
 
     if-nez p1, :cond_1
 
-    .line 504
+    .line 511
     sget-boolean p0, Ljp/co/sony/mc/camera/util/CamLog;->VERBOSE:Z
 
     if-eqz p0, :cond_0
 
-    .line 505
-    const-string p0, "hideInternal: content is null"
+    .line 512
+    new-array p0, v1, [Ljava/lang/String;
 
-    filled-new-array {p0}, [Ljava/lang/String;
+    const-string p1, "hideInternal: content is null"
 
-    move-result-object p0
+    aput-object p1, p0, v0
 
     invoke-static {p0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
     :cond_0
     return-void
 
-    .line 510
+    .line 517
     :cond_1
     invoke-direct {p0}, Ljp/co/sony/mc/camera/view/hint/HintTextViewController;->cancelTimeoutCount()V
 
-    .line 511
-    iget-object v0, p0, Ljp/co/sony/mc/camera/view/hint/HintTextViewController;->mHintTextView:Ljp/co/sony/mc/camera/view/hint/HintTextView;
+    .line 518
+    iget-object v2, p0, Ljp/co/sony/mc/camera/view/hint/HintTextViewController;->mHintTextView:Ljp/co/sony/mc/camera/view/hint/HintTextView;
 
-    invoke-virtual {p1, v0}, Ljp/co/sony/mc/camera/view/hint/HintTextContent;->detach(Ljp/co/sony/mc/camera/view/hint/HintTextView;)V
+    invoke-virtual {p1, v2}, Ljp/co/sony/mc/camera/view/hint/HintTextContent;->detach(Ljp/co/sony/mc/camera/view/hint/HintTextView;)V
 
-    .line 513
+    .line 520
     invoke-virtual {p1}, Ljp/co/sony/mc/camera/view/hint/HintTextContent;->isToast()Z
 
-    move-result v0
+    move-result v2
 
-    if-eqz v0, :cond_3
+    if-eqz v2, :cond_3
 
-    .line 515
-    sget-boolean v0, Ljp/co/sony/mc/camera/util/CamLog;->VERBOSE:Z
+    .line 522
+    sget-boolean v2, Ljp/co/sony/mc/camera/util/CamLog;->VERBOSE:Z
 
-    if-eqz v0, :cond_2
+    if-eqz v2, :cond_2
 
-    .line 516
-    const-string v0, "hideInternal: remove onetime content"
+    .line 523
+    new-array v1, v1, [Ljava/lang/String;
 
-    filled-new-array {v0}, [Ljava/lang/String;
+    const-string v2, "hideInternal: remove onetime content"
 
-    move-result-object v0
+    aput-object v2, v1, v0
 
-    invoke-static {v0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
+    invoke-static {v1}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
-    .line 518
+    .line 525
     :cond_2
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/hint/HintTextViewController;->mContentPrioritizedStack:Ljava/util/concurrent/BlockingQueue;
 
     invoke-interface {v0, p1}, Ljava/util/concurrent/BlockingQueue;->remove(Ljava/lang/Object;)Z
 
-    .line 520
+    .line 527
     :cond_3
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/hint/HintTextViewController;->mListener:Ljp/co/sony/mc/camera/view/hint/HintTextViewController$HintTextContentListener;
 
@@ -447,22 +451,22 @@
 .method private initHintTextBackground(Landroid/view/ViewGroup;)V
     .locals 2
 
-    .line 690
+    .line 697
     invoke-virtual {p1}, Landroid/view/ViewGroup;->getContext()Landroid/content/Context;
 
     move-result-object v0
 
-    .line 692
+    .line 699
     new-instance v1, Ljp/co/sony/mc/camera/view/hint/HintTextViewController$Background;
 
     invoke-direct {v1, p0, v0}, Ljp/co/sony/mc/camera/view/hint/HintTextViewController$Background;-><init>(Ljp/co/sony/mc/camera/view/hint/HintTextViewController;Landroid/content/Context;)V
 
     iput-object v1, p0, Ljp/co/sony/mc/camera/view/hint/HintTextViewController;->mHintTextBackground:Landroid/view/ViewGroup;
 
-    .line 693
+    .line 700
     invoke-virtual {p1, v1}, Landroid/view/ViewGroup;->addView(Landroid/view/View;)V
 
-    .line 694
+    .line 701
     iget-object p1, p0, Ljp/co/sony/mc/camera/view/hint/HintTextViewController;->mHintTextBackground:Landroid/view/ViewGroup;
 
     invoke-virtual {p1}, Landroid/view/ViewGroup;->getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
@@ -473,7 +477,7 @@
 
     iput v0, p1, Landroid/view/ViewGroup$LayoutParams;->width:I
 
-    .line 695
+    .line 702
     iget-object p1, p0, Ljp/co/sony/mc/camera/view/hint/HintTextViewController;->mHintTextBackground:Landroid/view/ViewGroup;
 
     invoke-virtual {p1}, Landroid/view/ViewGroup;->getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
@@ -482,14 +486,14 @@
 
     iput v0, p1, Landroid/view/ViewGroup$LayoutParams;->height:I
 
-    .line 696
+    .line 703
     iget-object p1, p0, Ljp/co/sony/mc/camera/view/hint/HintTextViewController;->mHintTextBackground:Landroid/view/ViewGroup;
 
     const/4 v0, 0x0
 
     invoke-virtual {p1, v0}, Landroid/view/ViewGroup;->setClickable(Z)V
 
-    .line 697
+    .line 704
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/hint/HintTextViewController;->mHintTextBackground:Landroid/view/ViewGroup;
 
     invoke-virtual {p0, v0}, Landroid/view/ViewGroup;->setFocusable(Z)V
@@ -502,21 +506,21 @@
 
     const v0, 0x7f0903cd
 
-    .line 701
+    .line 708
     invoke-virtual {p1, v0}, Landroid/view/ViewGroup;->findViewById(I)Landroid/view/View;
 
     move-result-object p1
 
     check-cast p1, Landroid/view/ViewStub;
 
-    .line 702
+    .line 709
     invoke-virtual {p1}, Landroid/view/ViewStub;->getContext()Landroid/content/Context;
 
     move-result-object v0
 
     iput-object v0, p0, Ljp/co/sony/mc/camera/view/hint/HintTextViewController;->mContext:Landroid/content/Context;
 
-    .line 704
+    .line 711
     invoke-virtual {p1}, Landroid/view/ViewStub;->inflate()Landroid/view/View;
 
     move-result-object p1
@@ -525,7 +529,7 @@
 
     iput-object p1, p0, Ljp/co/sony/mc/camera/view/hint/HintTextViewController;->mHintTextContainer:Landroid/widget/FrameLayout;
 
-    .line 706
+    .line 713
     iget-object p1, p0, Ljp/co/sony/mc/camera/view/hint/HintTextViewController;->mContext:Landroid/content/Context;
 
     invoke-static {p1}, Ljp/co/sony/mc/camera/view/hint/HintTextView;->inflate(Landroid/content/Context;)Ljp/co/sony/mc/camera/view/hint/HintTextView;
@@ -534,12 +538,12 @@
 
     iput-object p1, p0, Ljp/co/sony/mc/camera/view/hint/HintTextViewController;->mHintTextView:Ljp/co/sony/mc/camera/view/hint/HintTextView;
 
-    .line 707
+    .line 714
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/hint/HintTextViewController;->mCapturingMode:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
     invoke-virtual {p1, v0}, Ljp/co/sony/mc/camera/view/hint/HintTextView;->setCapturingMode(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;)V
 
-    .line 709
+    .line 716
     iget-object p1, p0, Ljp/co/sony/mc/camera/view/hint/HintTextViewController;->mHintTextContainer:Landroid/widget/FrameLayout;
 
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/hint/HintTextViewController;->mHintTextView:Ljp/co/sony/mc/camera/view/hint/HintTextView;
@@ -633,7 +637,7 @@
 
     if-eqz p1, :cond_0
 
-    .line 657
+    .line 664
     invoke-virtual {p1, p2}, Ljp/co/sony/mc/camera/view/hint/HintTextContent;->equals(Ljava/lang/Object;)Z
 
     move-result p0
@@ -658,38 +662,42 @@
 
     if-nez p1, :cond_1
 
-    .line 470
+    .line 477
     sget-boolean p0, Ljp/co/sony/mc/camera/util/CamLog;->VERBOSE:Z
 
     if-eqz p0, :cond_0
 
-    .line 471
-    const-string/jumbo p0, "showInternal: content is null"
+    const/4 p0, 0x1
 
-    filled-new-array {p0}, [Ljava/lang/String;
+    .line 478
+    new-array p0, p0, [Ljava/lang/String;
 
-    move-result-object p0
+    const/4 p1, 0x0
+
+    const-string/jumbo v0, "showInternal: content is null"
+
+    aput-object v0, p0, p1
 
     invoke-static {p0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
     :cond_0
     return-void
 
-    .line 476
+    .line 483
     :cond_1
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/hint/HintTextViewController;->mMessageSettings:Ljp/co/sony/mc/camera/setting/MessageSettings;
 
     invoke-virtual {p1, v0}, Ljp/co/sony/mc/camera/view/hint/HintTextContent;->increaseDisplayCount(Ljp/co/sony/mc/camera/setting/MessageSettings;)V
 
-    .line 478
+    .line 485
     invoke-direct {p0}, Ljp/co/sony/mc/camera/view/hint/HintTextViewController;->cancelTimeoutCount()V
 
-    .line 479
+    .line 486
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/hint/HintTextViewController;->mHintTextView:Ljp/co/sony/mc/camera/view/hint/HintTextView;
 
     invoke-virtual {p1, v0}, Ljp/co/sony/mc/camera/view/hint/HintTextContent;->attach(Ljp/co/sony/mc/camera/view/hint/HintTextView;)V
 
-    .line 481
+    .line 488
     invoke-virtual {p1}, Ljp/co/sony/mc/camera/view/hint/HintTextContent;->getTimedOutDuration()J
 
     move-result-wide v0
@@ -700,7 +708,7 @@
 
     if-eqz v2, :cond_3
 
-    .line 483
+    .line 490
     invoke-virtual {p1}, Ljp/co/sony/mc/camera/view/hint/HintTextContent;->getFadeDuration()I
 
     move-result v2
@@ -709,16 +717,16 @@
 
     if-eq v2, v3, :cond_2
 
-    .line 485
+    .line 492
     invoke-direct {p0, v0, v1, v2, p1}, Ljp/co/sony/mc/camera/view/hint/HintTextViewController;->startFadeOut(JILjp/co/sony/mc/camera/view/hint/HintTextContent;)V
 
     goto :goto_0
 
-    .line 487
+    .line 494
     :cond_2
     invoke-direct {p0, v0, v1, p1}, Ljp/co/sony/mc/camera/view/hint/HintTextViewController;->startTimeoutCount(JLjp/co/sony/mc/camera/view/hint/HintTextContent;)V
 
-    .line 490
+    .line 497
     :cond_3
     :goto_0
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/hint/HintTextViewController;->mListener:Ljp/co/sony/mc/camera/view/hint/HintTextViewController$HintTextContentListener;
@@ -731,12 +739,12 @@
 .method private startFadeOut(JILjp/co/sony/mc/camera/view/hint/HintTextContent;)V
     .locals 2
 
-    .line 567
+    .line 574
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/hint/HintTextViewController;->mHandler:Ljp/co/sony/mc/camera/view/hint/HintTextViewController$TimeoutHandler;
 
     if-nez v0, :cond_0
 
-    .line 568
+    .line 575
     new-instance v0, Ljp/co/sony/mc/camera/view/hint/HintTextViewController$TimeoutHandler;
 
     const/4 v1, 0x0
@@ -745,7 +753,7 @@
 
     iput-object v0, p0, Ljp/co/sony/mc/camera/view/hint/HintTextViewController;->mHandler:Ljp/co/sony/mc/camera/view/hint/HintTextViewController$TimeoutHandler;
 
-    .line 570
+    .line 577
     :cond_0
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/hint/HintTextViewController;->mHandler:Ljp/co/sony/mc/camera/view/hint/HintTextViewController$TimeoutHandler;
 
@@ -757,12 +765,12 @@
 .method private startTimeoutCount(JLjp/co/sony/mc/camera/view/hint/HintTextContent;)V
     .locals 2
 
-    .line 559
+    .line 566
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/hint/HintTextViewController;->mHandler:Ljp/co/sony/mc/camera/view/hint/HintTextViewController$TimeoutHandler;
 
     if-nez v0, :cond_0
 
-    .line 560
+    .line 567
     new-instance v0, Ljp/co/sony/mc/camera/view/hint/HintTextViewController$TimeoutHandler;
 
     const/4 v1, 0x0
@@ -771,7 +779,7 @@
 
     iput-object v0, p0, Ljp/co/sony/mc/camera/view/hint/HintTextViewController;->mHandler:Ljp/co/sony/mc/camera/view/hint/HintTextViewController$TimeoutHandler;
 
-    .line 562
+    .line 569
     :cond_0
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/hint/HintTextViewController;->mHandler:Ljp/co/sony/mc/camera/view/hint/HintTextViewController$TimeoutHandler;
 
@@ -783,7 +791,7 @@
 
 # virtual methods
 .method public cancel(Ljava/lang/String;)Z
-    .locals 4
+    .locals 5
 
     .line 323
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/hint/HintTextViewController;->mContentPrioritizedStack:Ljava/util/concurrent/BlockingQueue;
@@ -792,7 +800,9 @@
 
     move-result v0
 
-    const/4 v1, 0x0
+    const/4 v1, 0x1
+
+    const/4 v2, 0x0
 
     if-eqz v0, :cond_1
 
@@ -802,28 +812,28 @@
     if-eqz p0, :cond_0
 
     .line 325
-    new-instance p0, Ljava/lang/StringBuilder;
+    new-array p0, v1, [Ljava/lang/String;
 
-    const-string v0, "cancel: content is empty = "
+    new-instance v0, Ljava/lang/StringBuilder;
 
-    invoke-direct {p0, v0}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+    const-string v1, "cancel: content is empty = "
 
-    invoke-virtual {p0, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
-    move-result-object p0
+    invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {p0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    move-result-object p1
 
-    move-result-object p0
+    invoke-virtual {p1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    filled-new-array {p0}, [Ljava/lang/String;
+    move-result-object p1
 
-    move-result-object p0
+    aput-object p1, p0, v2
 
     invoke-static {p0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
     :cond_0
-    return v1
+    return v2
 
     .line 331
     :cond_1
@@ -836,34 +846,34 @@
     :cond_2
     invoke-interface {v0}, Ljava/util/Iterator;->hasNext()Z
 
-    move-result v2
+    move-result v3
 
-    if-eqz v2, :cond_3
+    if-eqz v3, :cond_3
 
     invoke-interface {v0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
-    move-result-object v2
-
-    check-cast v2, Ljp/co/sony/mc/camera/view/hint/HintTextContent;
-
-    .line 332
-    invoke-virtual {v2}, Ljp/co/sony/mc/camera/view/hint/HintTextContent;->getTag()Ljava/lang/String;
-
     move-result-object v3
 
-    invoke-virtual {v3, p1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+    check-cast v3, Ljp/co/sony/mc/camera/view/hint/HintTextContent;
 
-    move-result v3
+    .line 332
+    invoke-virtual {v3}, Ljp/co/sony/mc/camera/view/hint/HintTextContent;->getTag()Ljava/lang/String;
 
-    if-eqz v3, :cond_2
+    move-result-object v4
+
+    invoke-virtual {v4, p1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v4
+
+    if-eqz v4, :cond_2
 
     goto :goto_0
 
     :cond_3
-    const/4 v2, 0x0
+    const/4 v3, 0x0
 
     :goto_0
-    if-nez v2, :cond_5
+    if-nez v3, :cond_5
 
     .line 341
     sget-boolean p0, Ljp/co/sony/mc/camera/util/CamLog;->VERBOSE:Z
@@ -871,32 +881,32 @@
     if-eqz p0, :cond_4
 
     .line 342
-    new-instance p0, Ljava/lang/StringBuilder;
+    new-array p0, v1, [Ljava/lang/String;
 
-    const-string v0, "cancel: content is not queued, tag = "
+    new-instance v0, Ljava/lang/StringBuilder;
 
-    invoke-direct {p0, v0}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+    const-string v1, "cancel: content is not queued, tag = "
 
-    invoke-virtual {p0, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
-    move-result-object p0
+    invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {p0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    move-result-object p1
 
-    move-result-object p0
+    invoke-virtual {p1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    filled-new-array {p0}, [Ljava/lang/String;
+    move-result-object p1
 
-    move-result-object p0
+    aput-object p1, p0, v2
 
     invoke-static {p0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
     :cond_4
-    return v1
+    return v2
 
     .line 346
     :cond_5
-    invoke-direct {p0, v2}, Ljp/co/sony/mc/camera/view/hint/HintTextViewController;->cancelFromContentStack(Ljp/co/sony/mc/camera/view/hint/HintTextContent;)Z
+    invoke-direct {p0, v3}, Ljp/co/sony/mc/camera/view/hint/HintTextViewController;->cancelFromContentStack(Ljp/co/sony/mc/camera/view/hint/HintTextContent;)Z
 
     move-result p0
 
@@ -904,7 +914,7 @@
 .end method
 
 .method public clearAll()V
-    .locals 1
+    .locals 2
 
     .line 188
     invoke-direct {p0}, Ljp/co/sony/mc/camera/view/hint/HintTextViewController;->cancelTimeoutCount()V
@@ -939,12 +949,16 @@
 
     if-eqz p0, :cond_1
 
+    const/4 p0, 0x1
+
     .line 198
-    const-string p0, "clear: removed all entry"
+    new-array p0, p0, [Ljava/lang/String;
 
-    filled-new-array {p0}, [Ljava/lang/String;
+    const/4 v0, 0x0
 
-    move-result-object p0
+    const-string v1, "clear: removed all entry"
+
+    aput-object v1, p0, v0
 
     invoke-static {p0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
@@ -977,7 +991,7 @@
 .end method
 
 .method public hide()Z
-    .locals 2
+    .locals 3
 
     const/4 v0, 0x0
 
@@ -986,6 +1000,8 @@
 
     .line 414
     iget-object v1, p0, Ljp/co/sony/mc/camera/view/hint/HintTextViewController;->mContentDisplayThreshold:Ljp/co/sony/mc/camera/view/hint/HintTextContent$HintPriority;
+
+    const/4 v2, 0x1
 
     if-eqz v1, :cond_0
 
@@ -1001,9 +1017,7 @@
     .line 416
     iput-object v0, p0, Ljp/co/sony/mc/camera/view/hint/HintTextViewController;->mContentDisplayThreshold:Ljp/co/sony/mc/camera/view/hint/HintTextContent$HintPriority;
 
-    const/4 p0, 0x1
-
-    return p0
+    return v2
 
     .line 419
     :cond_0
@@ -1012,11 +1026,11 @@
     if-eqz p0, :cond_1
 
     .line 420
-    const-string p0, "hide: hint text was already hidden"
+    new-array p0, v2, [Ljava/lang/String;
 
-    filled-new-array {p0}, [Ljava/lang/String;
+    const-string v1, "hide: hint text was already hidden"
 
-    move-result-object p0
+    aput-object v1, p0, v0
 
     invoke-static {p0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
@@ -1027,12 +1041,12 @@
 .method public isHintTextDisplayed(Ljava/lang/String;)Z
     .locals 2
 
-    .line 447
+    .line 454
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/view/hint/HintTextViewController;->referTop()Ljp/co/sony/mc/camera/view/hint/HintTextContent;
 
     move-result-object v0
 
-    .line 449
+    .line 456
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/hint/HintTextViewController;->mHintTextView:Ljp/co/sony/mc/camera/view/hint/HintTextView;
 
     const/4 v1, 0x0
@@ -1043,7 +1057,7 @@
 
     goto :goto_0
 
-    .line 453
+    .line 460
     :cond_0
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/view/hint/HintTextView;->getVisibility()I
 
@@ -1071,35 +1085,39 @@
 .end method
 
 .method public post(Ljp/co/sony/mc/camera/view/hint/HintTextContent;)Z
-    .locals 4
+    .locals 7
 
     .line 237
     sget-boolean v0, Ljp/co/sony/mc/camera/util/CamLog;->DEBUG:Z
 
+    const/4 v1, 0x1
+
+    const/4 v2, 0x0
+
     if-eqz v0, :cond_0
 
     .line 238
-    new-instance v0, Ljava/lang/StringBuilder;
+    new-array v0, v1, [Ljava/lang/String;
 
-    const-string v1, "post: content = "
+    new-instance v3, Ljava/lang/StringBuilder;
 
-    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+    const-string v4, "post: content = "
+
+    invoke-direct {v3, v4}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
     invoke-virtual {p1}, Ljp/co/sony/mc/camera/view/hint/HintTextContent;->getTag()Ljava/lang/String;
 
-    move-result-object v1
+    move-result-object v4
 
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    move-result-object v0
+    move-result-object v3
 
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-virtual {v3}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    move-result-object v0
+    move-result-object v3
 
-    filled-new-array {v0}, [Ljava/lang/String;
-
-    move-result-object v0
+    aput-object v3, v0, v2
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
@@ -1111,8 +1129,6 @@
 
     move-result v0
 
-    const/4 v1, 0x0
-
     if-eqz v0, :cond_2
 
     .line 243
@@ -1121,32 +1137,32 @@
     if-eqz p0, :cond_1
 
     .line 244
-    new-instance p0, Ljava/lang/StringBuilder;
+    new-array p0, v1, [Ljava/lang/String;
 
-    const-string v0, "post: content has been queued, content = "
+    new-instance v0, Ljava/lang/StringBuilder;
 
-    invoke-direct {p0, v0}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+    const-string v1, "post: content has been queued, content = "
+
+    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
     invoke-virtual {p1}, Ljp/co/sony/mc/camera/view/hint/HintTextContent;->getTag()Ljava/lang/String;
 
     move-result-object p1
 
-    invoke-virtual {p0, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    move-result-object p0
+    move-result-object p1
 
-    invoke-virtual {p0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-virtual {p1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    move-result-object p0
+    move-result-object p1
 
-    filled-new-array {p0}, [Ljava/lang/String;
-
-    move-result-object p0
+    aput-object p1, p0, v2
 
     invoke-static {p0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
     :cond_1
-    return v1
+    return v2
 
     .line 249
     :cond_2
@@ -1157,17 +1173,17 @@
     .line 251
     invoke-direct {p0, p1, v0}, Ljp/co/sony/mc/camera/view/hint/HintTextViewController;->isPostAccepted(Ljp/co/sony/mc/camera/view/hint/HintTextContent;Ljp/co/sony/mc/camera/view/hint/HintTextContent;)Z
 
-    move-result v2
+    move-result v3
 
-    if-nez v2, :cond_3
+    if-nez v3, :cond_3
 
-    return v1
+    return v2
 
     .line 255
     :cond_3
-    iget-object v1, p0, Ljp/co/sony/mc/camera/view/hint/HintTextViewController;->mContentPrioritizedStack:Ljava/util/concurrent/BlockingQueue;
+    iget-object v3, p0, Ljp/co/sony/mc/camera/view/hint/HintTextViewController;->mContentPrioritizedStack:Ljava/util/concurrent/BlockingQueue;
 
-    invoke-interface {v1, p1}, Ljava/util/concurrent/BlockingQueue;->add(Ljava/lang/Object;)Z
+    invoke-interface {v3, p1}, Ljava/util/concurrent/BlockingQueue;->add(Ljava/lang/Object;)Z
 
     .line 257
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/view/hint/HintTextViewController;->referTop()Ljp/co/sony/mc/camera/view/hint/HintTextContent;
@@ -1177,79 +1193,79 @@
     .line 258
     invoke-direct {p0, v0, p1}, Ljp/co/sony/mc/camera/view/hint/HintTextViewController;->isSameContent(Ljp/co/sony/mc/camera/view/hint/HintTextContent;Ljp/co/sony/mc/camera/view/hint/HintTextContent;)Z
 
-    move-result v1
+    move-result v3
 
-    if-nez v1, :cond_7
+    if-nez v3, :cond_7
 
     .line 260
-    sget-boolean v1, Ljp/co/sony/mc/camera/util/CamLog;->VERBOSE:Z
+    sget-boolean v3, Ljp/co/sony/mc/camera/util/CamLog;->VERBOSE:Z
 
-    if-eqz v1, :cond_5
+    if-eqz v3, :cond_5
 
     if-eqz p1, :cond_4
 
     .line 261
     invoke-virtual {p1}, Ljp/co/sony/mc/camera/view/hint/HintTextContent;->getTag()Ljava/lang/String;
 
-    move-result-object v1
+    move-result-object v3
 
     goto :goto_0
 
     :cond_4
-    const-string v1, ""
+    const-string v3, ""
 
     .line 262
     :goto_0
-    new-instance v2, Ljava/lang/StringBuilder;
+    new-array v4, v1, [Ljava/lang/String;
 
-    const-string v3, "post: top is changed, old = "
+    new-instance v5, Ljava/lang/StringBuilder;
 
-    invoke-direct {v2, v3}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+    const-string v6, "post: top is changed, old = "
 
-    invoke-virtual {v2, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+    invoke-direct {v5, v6}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
-    move-result-object v2
+    invoke-virtual {v5, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
-    const-string v3, ", new = "
+    move-result-object v5
 
-    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    const-string v6, ", new = "
 
-    move-result-object v2
+    invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v2, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    move-result-object v5
 
-    move-result-object v1
+    invoke-virtual {v5, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    move-result-object v3
 
-    move-result-object v1
+    invoke-virtual {v3}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    filled-new-array {v1}, [Ljava/lang/String;
+    move-result-object v3
 
-    move-result-object v1
+    aput-object v3, v4, v2
 
-    invoke-static {v1}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
+    invoke-static {v4}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
     .line 267
     :cond_5
-    iget-object v1, p0, Ljp/co/sony/mc/camera/view/hint/HintTextViewController;->mContentDisplayThreshold:Ljp/co/sony/mc/camera/view/hint/HintTextContent$HintPriority;
+    iget-object v2, p0, Ljp/co/sony/mc/camera/view/hint/HintTextViewController;->mContentDisplayThreshold:Ljp/co/sony/mc/camera/view/hint/HintTextContent$HintPriority;
 
-    if-eqz v1, :cond_7
+    if-eqz v2, :cond_7
 
     if-eqz p1, :cond_7
 
     invoke-virtual {p1}, Ljp/co/sony/mc/camera/view/hint/HintTextContent;->getPriority()Ljp/co/sony/mc/camera/view/hint/HintTextContent$HintPriority;
 
-    move-result-object v1
+    move-result-object v2
 
-    iget-object v2, p0, Ljp/co/sony/mc/camera/view/hint/HintTextViewController;->mContentDisplayThreshold:Ljp/co/sony/mc/camera/view/hint/HintTextContent$HintPriority;
+    iget-object v3, p0, Ljp/co/sony/mc/camera/view/hint/HintTextViewController;->mContentDisplayThreshold:Ljp/co/sony/mc/camera/view/hint/HintTextContent$HintPriority;
 
     .line 268
-    invoke-virtual {v1, v2}, Ljp/co/sony/mc/camera/view/hint/HintTextContent$HintPriority;->compareTo(Ljava/lang/Enum;)I
+    invoke-virtual {v2, v3}, Ljp/co/sony/mc/camera/view/hint/HintTextContent$HintPriority;->compareTo(Ljava/lang/Enum;)I
 
-    move-result v1
+    move-result v2
 
-    if-gtz v1, :cond_7
+    if-gtz v2, :cond_7
 
     if-eqz v0, :cond_6
 
@@ -1261,15 +1277,13 @@
     invoke-direct {p0, p1}, Ljp/co/sony/mc/camera/view/hint/HintTextViewController;->showInternal(Ljp/co/sony/mc/camera/view/hint/HintTextContent;)V
 
     :cond_7
-    const/4 p0, 0x1
-
-    return p0
+    return v1
 .end method
 
 .method public referTop()Ljp/co/sony/mc/camera/view/hint/HintTextContent;
-    .locals 1
+    .locals 2
 
-    .line 635
+    .line 642
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/hint/HintTextViewController;->mContentPrioritizedStack:Ljava/util/concurrent/BlockingQueue;
 
     invoke-interface {v0}, Ljava/util/concurrent/BlockingQueue;->isEmpty()Z
@@ -1278,7 +1292,7 @@
 
     if-nez v0, :cond_0
 
-    .line 636
+    .line 643
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/hint/HintTextViewController;->mContentPrioritizedStack:Ljava/util/concurrent/BlockingQueue;
 
     invoke-interface {p0}, Ljava/util/concurrent/BlockingQueue;->peek()Ljava/lang/Object;
@@ -1289,18 +1303,22 @@
 
     return-object p0
 
-    .line 638
+    .line 645
     :cond_0
     sget-boolean p0, Ljp/co/sony/mc/camera/util/CamLog;->VERBOSE:Z
 
     if-eqz p0, :cond_1
 
-    .line 639
-    const-string p0, "referTop: queue is empty"
+    const/4 p0, 0x1
 
-    filled-new-array {p0}, [Ljava/lang/String;
+    .line 646
+    new-array p0, p0, [Ljava/lang/String;
 
-    move-result-object p0
+    const/4 v0, 0x0
+
+    const-string v1, "referTop: queue is empty"
+
+    aput-object v1, p0, v0
 
     invoke-static {p0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
@@ -1324,6 +1342,48 @@
 .method public resizeHintTextMessageBackground()V
     .locals 0
 
+    .line 441
+    iget-object p0, p0, Ljp/co/sony/mc/camera/view/hint/HintTextViewController;->mHintTextView:Ljp/co/sony/mc/camera/view/hint/HintTextView;
+
+    if-nez p0, :cond_0
+
+    return-void
+
+    .line 444
+    :cond_0
+    invoke-virtual {p0}, Ljp/co/sony/mc/camera/view/hint/HintTextView;->resizeMessageBackground()V
+
+    return-void
+.end method
+
+.method public setAccessibilityInitialFocusable(Z)V
+    .locals 0
+
+    .line 725
+    iget-object p0, p0, Ljp/co/sony/mc/camera/view/hint/HintTextViewController;->mHintTextView:Ljp/co/sony/mc/camera/view/hint/HintTextView;
+
+    invoke-virtual {p0, p1}, Ljp/co/sony/mc/camera/view/hint/HintTextView;->setAccessibilityInitialFocusable(Z)V
+
+    return-void
+.end method
+
+.method public setCapturingMode(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;)V
+    .locals 0
+
+    .line 720
+    iput-object p1, p0, Ljp/co/sony/mc/camera/view/hint/HintTextViewController;->mCapturingMode:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
+
+    .line 721
+    iget-object p0, p0, Ljp/co/sony/mc/camera/view/hint/HintTextViewController;->mHintTextView:Ljp/co/sony/mc/camera/view/hint/HintTextView;
+
+    invoke-virtual {p0, p1}, Ljp/co/sony/mc/camera/view/hint/HintTextView;->setCapturingMode(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;)V
+
+    return-void
+.end method
+
+.method public setTalkBackState(Z)V
+    .locals 0
+
     .line 434
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/hint/HintTextViewController;->mHintTextView:Ljp/co/sony/mc/camera/view/hint/HintTextView;
 
@@ -1333,21 +1393,7 @@
 
     .line 437
     :cond_0
-    invoke-virtual {p0}, Ljp/co/sony/mc/camera/view/hint/HintTextView;->resizeMessageBackground()V
-
-    return-void
-.end method
-
-.method public setCapturingMode(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;)V
-    .locals 0
-
-    .line 713
-    iput-object p1, p0, Ljp/co/sony/mc/camera/view/hint/HintTextViewController;->mCapturingMode:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
-
-    .line 714
-    iget-object p0, p0, Ljp/co/sony/mc/camera/view/hint/HintTextViewController;->mHintTextView:Ljp/co/sony/mc/camera/view/hint/HintTextView;
-
-    invoke-virtual {p0, p1}, Ljp/co/sony/mc/camera/view/hint/HintTextView;->setCapturingMode(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;)V
+    invoke-virtual {p0, p1}, Ljp/co/sony/mc/camera/view/hint/HintTextView;->setTalkBackState(Z)V
 
     return-void
 .end method
@@ -1392,21 +1438,21 @@
     .line 380
     sget-boolean p0, Ljp/co/sony/mc/camera/util/CamLog;->VERBOSE:Z
 
+    const/4 p1, 0x0
+
     if-eqz p0, :cond_0
 
     .line 381
-    const-string/jumbo p0, "show: hint text was already shown"
+    new-array p0, v0, [Ljava/lang/String;
 
-    filled-new-array {p0}, [Ljava/lang/String;
+    const-string/jumbo v0, "show: hint text was already shown"
 
-    move-result-object p0
+    aput-object v0, p0, p1
 
     invoke-static {p0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
     :cond_0
-    const/4 p0, 0x0
-
-    return p0
+    return p1
 
     .line 386
     :cond_1

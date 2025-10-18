@@ -25,7 +25,7 @@
 .method constructor <init>(Ljp/co/sony/mc/camera/GoogleLensActivity;)V
     .locals 0
 
-    .line 35
+    .line 33
     iput-object p1, p0, Ljp/co/sony/mc/camera/GoogleLensActivity$1;->this$0:Ljp/co/sony/mc/camera/GoogleLensActivity;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -36,23 +36,27 @@
 
 # virtual methods
 .method public run()V
-    .locals 1
+    .locals 3
 
-    .line 39
-    const-string v0, "Finish. Timeout of launch Google Lens."
+    const/4 v0, 0x1
 
-    filled-new-array {v0}, [Ljava/lang/String;
+    .line 37
+    new-array v0, v0, [Ljava/lang/String;
 
-    move-result-object v0
+    const/4 v1, 0x0
+
+    const-string v2, "Finish. Timeout of launch Google Lens."
+
+    aput-object v2, v0, v1
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/util/CamLog;->e([Ljava/lang/String;)V
 
-    .line 40
+    .line 38
     iget-object v0, p0, Ljp/co/sony/mc/camera/GoogleLensActivity$1;->this$0:Ljp/co/sony/mc/camera/GoogleLensActivity;
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/GoogleLensActivity;->-$$Nest$mshowErrorToast(Ljp/co/sony/mc/camera/GoogleLensActivity;)V
 
-    .line 41
+    .line 39
     iget-object p0, p0, Ljp/co/sony/mc/camera/GoogleLensActivity$1;->this$0:Ljp/co/sony/mc/camera/GoogleLensActivity;
 
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/GoogleLensActivity;->finish()V

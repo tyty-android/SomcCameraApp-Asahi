@@ -26,14 +26,14 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/databinding/ProModeMfSliderBindingImpl;->sViewsWithIds:Landroid/util/SparseIntArray;
 
-    const v1, 0x7f09005e
+    const v1, 0x7f09005a
 
     const/4 v2, 0x5
 
     .line 17
     invoke-virtual {v0, v1, v2}, Landroid/util/SparseIntArray;->put(II)V
 
-    const v1, 0x7f09005d
+    const v1, 0x7f090059
 
     const/4 v2, 0x6
 
@@ -114,7 +114,7 @@
 
     check-cast v10, Ljp/co/sony/mc/camera/view/widget/SliderView;
 
-    const/4 v4, 0x3
+    const/4 v4, 0x4
 
     move-object v1, p0
 
@@ -126,7 +126,7 @@
 
     const-wide/16 v0, -0x1
 
-    .line 251
+    .line 307
     iput-wide v0, p0, Ljp/co/sony/mc/camera/databinding/ProModeMfSliderBindingImpl;->mDirtyFlags:J
 
     const/4 p1, 0x0
@@ -185,20 +185,20 @@
 
     if-nez p2, :cond_0
 
-    .line 136
+    .line 158
     monitor-enter p0
 
-    .line 137
+    .line 159
     :try_start_0
     iget-wide p1, p0, Ljp/co/sony/mc/camera/databinding/ProModeMfSliderBindingImpl;->mDirtyFlags:J
 
-    const-wide/16 v0, 0x2
+    const-wide/16 v0, 0x4
 
     or-long/2addr p1, v0
 
     iput-wide p1, p0, Ljp/co/sony/mc/camera/databinding/ProModeMfSliderBindingImpl;->mDirtyFlags:J
 
-    .line 138
+    .line 160
     monitor-exit p0
 
     const/4 p0, 0x1
@@ -233,20 +233,20 @@
 
     if-nez p2, :cond_0
 
-    .line 145
+    .line 167
     monitor-enter p0
 
-    .line 146
+    .line 168
     :try_start_0
     iget-wide p1, p0, Ljp/co/sony/mc/camera/databinding/ProModeMfSliderBindingImpl;->mDirtyFlags:J
 
-    const-wide/16 v0, 0x4
+    const-wide/16 v0, 0x8
 
     or-long/2addr p1, v0
 
     iput-wide p1, p0, Ljp/co/sony/mc/camera/databinding/ProModeMfSliderBindingImpl;->mDirtyFlags:J
 
-    .line 147
+    .line 169
     monitor-exit p0
 
     const/4 p0, 0x1
@@ -281,10 +281,10 @@
 
     if-nez p2, :cond_0
 
-    .line 127
+    .line 140
     monitor-enter p0
 
-    .line 128
+    .line 141
     :try_start_0
     iget-wide p1, p0, Ljp/co/sony/mc/camera/databinding/ProModeMfSliderBindingImpl;->mDirtyFlags:J
 
@@ -294,7 +294,55 @@
 
     iput-wide p1, p0, Ljp/co/sony/mc/camera/databinding/ProModeMfSliderBindingImpl;->mDirtyFlags:J
 
-    .line 129
+    .line 142
+    monitor-exit p0
+
+    const/4 p0, 0x1
+
+    return p0
+
+    :catchall_0
+    move-exception p1
+
+    monitor-exit p0
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    throw p1
+
+    :cond_0
+    const/4 p0, 0x0
+
+    return p0
+.end method
+
+.method private onChangeViewFinderUiStateIsViewFinderItemClickable(Landroidx/lifecycle/LiveData;I)Z
+    .locals 2
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Landroidx/lifecycle/LiveData<",
+            "Ljava/lang/Boolean;",
+            ">;I)Z"
+        }
+    .end annotation
+
+    if-nez p2, :cond_0
+
+    .line 149
+    monitor-enter p0
+
+    .line 150
+    :try_start_0
+    iget-wide p1, p0, Ljp/co/sony/mc/camera/databinding/ProModeMfSliderBindingImpl;->mDirtyFlags:J
+
+    const-wide/16 v0, 0x2
+
+    or-long/2addr p1, v0
+
+    iput-wide p1, p0, Ljp/co/sony/mc/camera/databinding/ProModeMfSliderBindingImpl;->mDirtyFlags:J
+
+    .line 151
     monitor-exit p0
 
     const/4 p0, 0x1
@@ -319,46 +367,47 @@
 
 # virtual methods
 .method protected executeBindings()V
-    .locals 18
+    .locals 20
 
     move-object/from16 v1, p0
 
-    .line 156
+    .line 178
     monitor-enter p0
 
-    .line 157
+    .line 179
     :try_start_0
     iget-wide v2, v1, Ljp/co/sony/mc/camera/databinding/ProModeMfSliderBindingImpl;->mDirtyFlags:J
 
     const-wide/16 v4, 0x0
 
-    .line 158
+    .line 180
     iput-wide v4, v1, Ljp/co/sony/mc/camera/databinding/ProModeMfSliderBindingImpl;->mDirtyFlags:J
 
-    .line 159
+    .line 181
     monitor-exit p0
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 160
+    .line 182
     iget-object v0, v1, Ljp/co/sony/mc/camera/databinding/ProModeMfSliderBindingImpl;->mOrientationViewModel:Ljp/co/sony/mc/camera/view/viewmodel/OrientationViewModel;
 
-    .line 167
-    iget-object v6, v1, Ljp/co/sony/mc/camera/databinding/ProModeMfSliderBindingImpl;->mProModeFocusUiState:Ljp/co/sony/mc/camera/view/uistate/ProModeFocusUiState;
+    .line 183
+    iget-object v6, v1, Ljp/co/sony/mc/camera/databinding/ProModeMfSliderBindingImpl;->mViewFinderUiState:Ljp/co/sony/mc/camera/view/uistate/ViewFinderUiState;
 
-    const-wide/16 v7, 0x8a
+    .line 193
+    iget-object v7, v1, Ljp/co/sony/mc/camera/databinding/ProModeMfSliderBindingImpl;->mProModeFocusUiState:Ljp/co/sony/mc/camera/view/uistate/ProModeFocusUiState;
 
-    and-long/2addr v7, v2
+    const-wide/16 v8, 0x214
 
-    cmp-long v7, v7, v4
+    and-long/2addr v8, v2
 
-    const/4 v8, 0x0
+    cmp-long v8, v8, v4
 
-    if-eqz v7, :cond_1
+    if-eqz v8, :cond_1
 
     if-eqz v0, :cond_0
 
-    .line 177
+    .line 203
     invoke-virtual {v0}, Ljp/co/sony/mc/camera/view/viewmodel/OrientationViewModel;->getLayoutOrientation()Landroidx/lifecycle/LiveData;
 
     move-result-object v0
@@ -366,17 +415,17 @@
     goto :goto_0
 
     :cond_0
-    move-object v0, v8
+    const/4 v0, 0x0
 
     :goto_0
-    const/4 v9, 0x1
+    const/4 v10, 0x2
 
-    .line 179
-    invoke-virtual {v1, v9, v0}, Ljp/co/sony/mc/camera/databinding/ProModeMfSliderBindingImpl;->updateLiveDataRegistration(ILandroidx/lifecycle/LiveData;)Z
+    .line 205
+    invoke-virtual {v1, v10, v0}, Ljp/co/sony/mc/camera/databinding/ProModeMfSliderBindingImpl;->updateLiveDataRegistration(ILandroidx/lifecycle/LiveData;)Z
 
     if-eqz v0, :cond_1
 
-    .line 184
+    .line 210
     invoke-virtual {v0}, Landroidx/lifecycle/LiveData;->getValue()Ljava/lang/Object;
 
     move-result-object v0
@@ -386,168 +435,260 @@
     goto :goto_1
 
     :cond_1
-    move-object v0, v8
+    const/4 v0, 0x0
 
     :goto_1
-    const-wide/16 v9, 0xa5
+    const-wide/16 v10, 0x222
 
-    and-long/2addr v9, v2
+    and-long/2addr v10, v2
 
-    cmp-long v9, v9, v4
+    cmp-long v10, v10, v4
 
-    const-wide/16 v10, 0xa4
+    const/4 v11, 0x0
 
-    const-wide/16 v12, 0xa1
-
-    const/4 v14, 0x0
-
-    const/4 v15, 0x0
-
-    if-eqz v9, :cond_7
-
-    and-long v16, v2, v12
-
-    cmp-long v9, v16, v4
-
-    if-eqz v9, :cond_4
+    if-eqz v10, :cond_4
 
     if-eqz v6, :cond_2
 
-    .line 194
-    invoke-virtual {v6}, Ljp/co/sony/mc/camera/view/uistate/ProModeFocusUiState;->getMfSliderEnabled()Landroidx/lifecycle/LiveData;
+    .line 219
+    invoke-virtual {v6}, Ljp/co/sony/mc/camera/view/uistate/ViewFinderUiState;->isViewFinderItemClickable()Landroidx/lifecycle/LiveData;
 
-    move-result-object v9
+    move-result-object v6
 
     goto :goto_2
 
     :cond_2
-    move-object v9, v8
+    const/4 v6, 0x0
 
-    .line 196
     :goto_2
-    invoke-virtual {v1, v14, v9}, Ljp/co/sony/mc/camera/databinding/ProModeMfSliderBindingImpl;->updateLiveDataRegistration(ILandroidx/lifecycle/LiveData;)Z
+    const/4 v12, 0x1
 
-    if-eqz v9, :cond_3
+    .line 221
+    invoke-virtual {v1, v12, v6}, Ljp/co/sony/mc/camera/databinding/ProModeMfSliderBindingImpl;->updateLiveDataRegistration(ILandroidx/lifecycle/LiveData;)Z
 
-    .line 201
-    invoke-virtual {v9}, Landroidx/lifecycle/LiveData;->getValue()Ljava/lang/Object;
+    if-eqz v6, :cond_3
 
-    move-result-object v9
-
-    check-cast v9, Ljava/lang/Boolean;
-
-    goto :goto_3
-
-    :cond_3
-    move-object v9, v8
-
-    .line 206
-    :goto_3
-    invoke-static {v9}, Landroidx/databinding/ViewDataBinding;->safeUnbox(Ljava/lang/Boolean;)Z
-
-    move-result v14
-
-    :cond_4
-    and-long v16, v2, v10
-
-    cmp-long v9, v16, v4
-
-    if-eqz v9, :cond_7
-
-    if-eqz v6, :cond_5
-
-    .line 212
-    invoke-virtual {v6}, Ljp/co/sony/mc/camera/view/uistate/ProModeFocusUiState;->getMfSliderAlpha()Landroidx/lifecycle/LiveData;
-
-    move-result-object v6
-
-    goto :goto_4
-
-    :cond_5
-    move-object v6, v8
-
-    :goto_4
-    const/4 v9, 0x2
-
-    .line 214
-    invoke-virtual {v1, v9, v6}, Ljp/co/sony/mc/camera/databinding/ProModeMfSliderBindingImpl;->updateLiveDataRegistration(ILandroidx/lifecycle/LiveData;)Z
-
-    if-eqz v6, :cond_6
-
-    .line 219
+    .line 226
     invoke-virtual {v6}, Landroidx/lifecycle/LiveData;->getValue()Ljava/lang/Object;
 
     move-result-object v6
 
-    move-object v8, v6
+    check-cast v6, Ljava/lang/Boolean;
 
-    check-cast v8, Ljava/lang/Float;
+    goto :goto_3
 
-    .line 224
-    :cond_6
-    invoke-static {v8}, Landroidx/databinding/ViewDataBinding;->safeUnbox(Ljava/lang/Float;)F
-
-    move-result v15
-
-    :cond_7
-    if-eqz v7, :cond_8
+    :cond_3
+    const/4 v6, 0x0
 
     .line 231
-    iget-object v6, v1, Ljp/co/sony/mc/camera/databinding/ProModeMfSliderBindingImpl;->mfSlider:Landroidx/constraintlayout/widget/ConstraintLayout;
+    :goto_3
+    invoke-static {v6}, Landroidx/databinding/ViewDataBinding;->safeUnbox(Ljava/lang/Boolean;)Z
 
-    invoke-static {v6, v0}, Ljp/co/sony/mc/camera/view/viewbinder/BindingAdapters;->setOrientation(Landroid/view/View;Ljp/co/sony/mc/camera/view/orientation/LayoutOrientation;)V
+    move-result v6
+
+    goto :goto_4
+
+    :cond_4
+    move v6, v11
+
+    :goto_4
+    const-wide/16 v12, 0x289
+
+    and-long/2addr v12, v2
+
+    cmp-long v12, v12, v4
+
+    const-wide/16 v13, 0x288
+
+    const-wide/16 v15, 0x281
+
+    const/16 v17, 0x0
+
+    if-eqz v12, :cond_a
+
+    and-long v18, v2, v15
+
+    cmp-long v12, v18, v4
+
+    if-eqz v12, :cond_7
+
+    if-eqz v7, :cond_5
+
+    .line 240
+    invoke-virtual {v7}, Ljp/co/sony/mc/camera/view/uistate/ProModeFocusUiState;->getMfSliderEnabled()Landroidx/lifecycle/LiveData;
+
+    move-result-object v12
+
+    goto :goto_5
+
+    :cond_5
+    const/4 v12, 0x0
+
+    .line 242
+    :goto_5
+    invoke-virtual {v1, v11, v12}, Ljp/co/sony/mc/camera/databinding/ProModeMfSliderBindingImpl;->updateLiveDataRegistration(ILandroidx/lifecycle/LiveData;)Z
+
+    if-eqz v12, :cond_6
+
+    .line 247
+    invoke-virtual {v12}, Landroidx/lifecycle/LiveData;->getValue()Ljava/lang/Object;
+
+    move-result-object v12
+
+    check-cast v12, Ljava/lang/Boolean;
+
+    goto :goto_6
+
+    :cond_6
+    const/4 v12, 0x0
+
+    .line 252
+    :goto_6
+    invoke-static {v12}, Landroidx/databinding/ViewDataBinding;->safeUnbox(Ljava/lang/Boolean;)Z
+
+    move-result v12
+
+    goto :goto_7
+
+    :cond_7
+    move v12, v11
+
+    :goto_7
+    and-long v18, v2, v13
+
+    cmp-long v18, v18, v4
+
+    if-eqz v18, :cond_b
+
+    if-eqz v7, :cond_8
+
+    .line 258
+    invoke-virtual {v7}, Ljp/co/sony/mc/camera/view/uistate/ProModeFocusUiState;->getMfSliderAlpha()Landroidx/lifecycle/LiveData;
+
+    move-result-object v7
+
+    goto :goto_8
 
     :cond_8
-    and-long v6, v2, v10
+    const/4 v7, 0x0
 
-    cmp-long v0, v6, v4
+    :goto_8
+    const/4 v9, 0x3
 
-    if-eqz v0, :cond_9
+    .line 260
+    invoke-virtual {v1, v9, v7}, Ljp/co/sony/mc/camera/databinding/ProModeMfSliderBindingImpl;->updateLiveDataRegistration(ILandroidx/lifecycle/LiveData;)Z
 
-    .line 236
-    iget-object v0, v1, Ljp/co/sony/mc/camera/databinding/ProModeMfSliderBindingImpl;->mfSliderFar:Ljp/co/sony/mc/camera/view/widget/PressButton;
+    if-eqz v7, :cond_9
 
-    invoke-static {v0, v15}, Ljp/co/sony/mc/camera/view/viewbinder/BindingAdapters;->setAnimatedAlpha(Landroid/view/View;F)V
+    .line 265
+    invoke-virtual {v7}, Landroidx/lifecycle/LiveData;->getValue()Ljava/lang/Object;
 
-    .line 237
-    iget-object v0, v1, Ljp/co/sony/mc/camera/databinding/ProModeMfSliderBindingImpl;->mfSliderNear:Ljp/co/sony/mc/camera/view/widget/PressButton;
+    move-result-object v7
 
-    invoke-static {v0, v15}, Ljp/co/sony/mc/camera/view/viewbinder/BindingAdapters;->setAnimatedAlpha(Landroid/view/View;F)V
+    move-object v9, v7
 
-    .line 238
-    iget-object v0, v1, Ljp/co/sony/mc/camera/databinding/ProModeMfSliderBindingImpl;->mfSliderSeekBar:Ljp/co/sony/mc/camera/view/widget/SliderView;
+    check-cast v9, Ljava/lang/Float;
 
-    invoke-static {v0, v15}, Ljp/co/sony/mc/camera/view/viewbinder/BindingAdapters;->setAnimatedAlpha(Landroid/view/View;F)V
+    goto :goto_9
 
     :cond_9
-    and-long/2addr v2, v12
+    const/4 v9, 0x0
+
+    .line 270
+    :goto_9
+    invoke-static {v9}, Landroidx/databinding/ViewDataBinding;->safeUnbox(Ljava/lang/Float;)F
+
+    move-result v17
+
+    goto :goto_a
+
+    :cond_a
+    move v12, v11
+
+    :cond_b
+    :goto_a
+    move/from16 v7, v17
+
+    if-eqz v8, :cond_c
+
+    .line 277
+    iget-object v8, v1, Ljp/co/sony/mc/camera/databinding/ProModeMfSliderBindingImpl;->mfSlider:Landroidx/constraintlayout/widget/ConstraintLayout;
+
+    invoke-static {v8, v0}, Ljp/co/sony/mc/camera/view/viewbinder/BindingAdapters;->setOrientation(Landroid/view/View;Ljp/co/sony/mc/camera/view/orientation/LayoutOrientation;)V
+
+    :cond_c
+    and-long v8, v2, v13
+
+    cmp-long v0, v8, v4
+
+    if-eqz v0, :cond_d
+
+    .line 282
+    iget-object v0, v1, Ljp/co/sony/mc/camera/databinding/ProModeMfSliderBindingImpl;->mfSliderFar:Ljp/co/sony/mc/camera/view/widget/PressButton;
+
+    invoke-static {v0, v7}, Ljp/co/sony/mc/camera/view/viewbinder/BindingAdapters;->setAnimatedAlpha(Landroid/view/View;F)V
+
+    .line 283
+    iget-object v0, v1, Ljp/co/sony/mc/camera/databinding/ProModeMfSliderBindingImpl;->mfSliderNear:Ljp/co/sony/mc/camera/view/widget/PressButton;
+
+    invoke-static {v0, v7}, Ljp/co/sony/mc/camera/view/viewbinder/BindingAdapters;->setAnimatedAlpha(Landroid/view/View;F)V
+
+    .line 284
+    iget-object v0, v1, Ljp/co/sony/mc/camera/databinding/ProModeMfSliderBindingImpl;->mfSliderSeekBar:Ljp/co/sony/mc/camera/view/widget/SliderView;
+
+    invoke-static {v0, v7}, Ljp/co/sony/mc/camera/view/viewbinder/BindingAdapters;->setAnimatedAlpha(Landroid/view/View;F)V
+
+    :cond_d
+    and-long v7, v2, v15
+
+    cmp-long v0, v7, v4
+
+    if-eqz v0, :cond_e
+
+    .line 289
+    iget-object v0, v1, Ljp/co/sony/mc/camera/databinding/ProModeMfSliderBindingImpl;->mfSliderFar:Ljp/co/sony/mc/camera/view/widget/PressButton;
+
+    invoke-static {v0, v12}, Ljp/co/sony/mc/camera/view/viewbinder/BindingAdapters;->setEnabled(Landroid/view/View;Z)V
+
+    .line 290
+    iget-object v0, v1, Ljp/co/sony/mc/camera/databinding/ProModeMfSliderBindingImpl;->mfSliderNear:Ljp/co/sony/mc/camera/view/widget/PressButton;
+
+    invoke-static {v0, v12}, Ljp/co/sony/mc/camera/view/viewbinder/BindingAdapters;->setEnabled(Landroid/view/View;Z)V
+
+    .line 291
+    iget-object v0, v1, Ljp/co/sony/mc/camera/databinding/ProModeMfSliderBindingImpl;->mfSliderSeekBar:Ljp/co/sony/mc/camera/view/widget/SliderView;
+
+    invoke-static {v0, v12}, Ljp/co/sony/mc/camera/view/viewbinder/BindingAdapters;->setEnabled(Landroid/view/View;Z)V
+
+    :cond_e
+    if-eqz v10, :cond_f
+
+    .line 296
+    iget-object v0, v1, Ljp/co/sony/mc/camera/databinding/ProModeMfSliderBindingImpl;->mfSliderSeekBar:Ljp/co/sony/mc/camera/view/widget/SliderView;
+
+    invoke-virtual {v0, v6}, Ljp/co/sony/mc/camera/view/widget/SliderView;->setClickable(Z)V
+
+    :cond_f
+    const-wide/16 v6, 0x200
+
+    and-long/2addr v2, v6
 
     cmp-long v0, v2, v4
 
-    if-eqz v0, :cond_a
+    if-eqz v0, :cond_10
 
-    .line 243
-    iget-object v0, v1, Ljp/co/sony/mc/camera/databinding/ProModeMfSliderBindingImpl;->mfSliderFar:Ljp/co/sony/mc/camera/view/widget/PressButton;
-
-    invoke-static {v0, v14}, Ljp/co/sony/mc/camera/view/viewbinder/BindingAdapters;->setEnabled(Landroid/view/View;Z)V
-
-    .line 244
-    iget-object v0, v1, Ljp/co/sony/mc/camera/databinding/ProModeMfSliderBindingImpl;->mfSliderNear:Ljp/co/sony/mc/camera/view/widget/PressButton;
-
-    invoke-static {v0, v14}, Ljp/co/sony/mc/camera/view/viewbinder/BindingAdapters;->setEnabled(Landroid/view/View;Z)V
-
-    .line 245
+    .line 301
     iget-object v0, v1, Ljp/co/sony/mc/camera/databinding/ProModeMfSliderBindingImpl;->mfSliderSeekBar:Ljp/co/sony/mc/camera/view/widget/SliderView;
 
-    invoke-static {v0, v14}, Ljp/co/sony/mc/camera/view/viewbinder/BindingAdapters;->setEnabled(Landroid/view/View;Z)V
+    invoke-static {v0, v11}, Ljp/co/sony/mc/camera/view/viewbinder/BindingAdapters;->setAccessibilityClickable(Landroid/view/View;Z)V
 
-    :cond_a
+    :cond_10
     return-void
 
     :catchall_0
     move-exception v0
 
-    .line 159
+    .line 181
     :try_start_1
     monitor-exit p0
     :try_end_1
@@ -603,7 +744,7 @@
     .line 53
     monitor-enter p0
 
-    const-wide/16 v0, 0x80
+    const-wide/16 v0, 0x200
 
     .line 54
     :try_start_0
@@ -634,13 +775,17 @@
 .method protected onFieldChange(ILjava/lang/Object;I)Z
     .locals 1
 
-    if-eqz p1, :cond_2
+    if-eqz p1, :cond_3
 
     const/4 v0, 0x1
 
-    if-eq p1, v0, :cond_1
+    if-eq p1, v0, :cond_2
 
     const/4 v0, 0x2
+
+    if-eq p1, v0, :cond_1
+
+    const/4 v0, 0x3
 
     if-eq p1, v0, :cond_0
 
@@ -648,7 +793,7 @@
 
     return p0
 
-    .line 121
+    .line 134
     :cond_0
     check-cast p2, Landroidx/lifecycle/LiveData;
 
@@ -658,7 +803,7 @@
 
     return p0
 
-    .line 119
+    .line 132
     :cond_1
     check-cast p2, Landroidx/lifecycle/LiveData;
 
@@ -668,8 +813,18 @@
 
     return p0
 
-    .line 117
+    .line 130
     :cond_2
+    check-cast p2, Landroidx/lifecycle/LiveData;
+
+    invoke-direct {p0, p2, p3}, Ljp/co/sony/mc/camera/databinding/ProModeMfSliderBindingImpl;->onChangeViewFinderUiStateIsViewFinderItemClickable(Landroidx/lifecycle/LiveData;I)Z
+
+    move-result p0
+
+    return p0
+
+    .line 128
+    :cond_3
     check-cast p2, Landroidx/lifecycle/LiveData;
 
     invoke-direct {p0, p2, p3}, Ljp/co/sony/mc/camera/databinding/ProModeMfSliderBindingImpl;->onChangeProModeFocusUiStateMfSliderEnabled(Landroidx/lifecycle/LiveData;I)Z
@@ -682,7 +837,7 @@
 .method public setCameraStatusModel(Ljp/co/sony/mc/camera/view/viewmodel/CameraStatusModel;)V
     .locals 0
 
-    .line 110
+    .line 121
     iput-object p1, p0, Ljp/co/sony/mc/camera/databinding/ProModeMfSliderBindingImpl;->mCameraStatusModel:Ljp/co/sony/mc/camera/view/viewmodel/CameraStatusModel;
 
     return-void
@@ -691,33 +846,33 @@
 .method public setOrientationViewModel(Ljp/co/sony/mc/camera/view/viewmodel/OrientationViewModel;)V
     .locals 4
 
-    .line 91
+    .line 94
     iput-object p1, p0, Ljp/co/sony/mc/camera/databinding/ProModeMfSliderBindingImpl;->mOrientationViewModel:Ljp/co/sony/mc/camera/view/viewmodel/OrientationViewModel;
 
-    .line 92
+    .line 95
     monitor-enter p0
 
-    .line 93
+    .line 96
     :try_start_0
     iget-wide v0, p0, Ljp/co/sony/mc/camera/databinding/ProModeMfSliderBindingImpl;->mDirtyFlags:J
 
-    const-wide/16 v2, 0x8
+    const-wide/16 v2, 0x10
 
     or-long/2addr v0, v2
 
     iput-wide v0, p0, Ljp/co/sony/mc/camera/databinding/ProModeMfSliderBindingImpl;->mDirtyFlags:J
 
-    .line 94
+    .line 97
     monitor-exit p0
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    const/16 p1, 0x13
+    const/16 p1, 0x16
 
-    .line 95
+    .line 98
     invoke-virtual {p0, p1}, Ljp/co/sony/mc/camera/databinding/ProModeMfSliderBindingImpl;->notifyPropertyChanged(I)V
 
-    .line 96
+    .line 99
     invoke-super {p0}, Ljp/co/sony/mc/camera/databinding/ProModeMfSliderBinding;->requestRebind()V
 
     return-void
@@ -725,7 +880,7 @@
     :catchall_0
     move-exception p1
 
-    .line 94
+    .line 97
     :try_start_1
     monitor-exit p0
     :try_end_1
@@ -737,7 +892,7 @@
 .method public setProModeBottomPaneUiState(Ljp/co/sony/mc/camera/view/uistate/ProModeBottomPaneUiState;)V
     .locals 0
 
-    .line 99
+    .line 110
     iput-object p1, p0, Ljp/co/sony/mc/camera/databinding/ProModeMfSliderBindingImpl;->mProModeBottomPaneUiState:Ljp/co/sony/mc/camera/view/uistate/ProModeBottomPaneUiState;
 
     return-void
@@ -746,8 +901,126 @@
 .method public setProModeFocusUiState(Ljp/co/sony/mc/camera/view/uistate/ProModeFocusUiState;)V
     .locals 4
 
-    .line 102
+    .line 113
     iput-object p1, p0, Ljp/co/sony/mc/camera/databinding/ProModeMfSliderBindingImpl;->mProModeFocusUiState:Ljp/co/sony/mc/camera/view/uistate/ProModeFocusUiState;
+
+    .line 114
+    monitor-enter p0
+
+    .line 115
+    :try_start_0
+    iget-wide v0, p0, Ljp/co/sony/mc/camera/databinding/ProModeMfSliderBindingImpl;->mDirtyFlags:J
+
+    const-wide/16 v2, 0x80
+
+    or-long/2addr v0, v2
+
+    iput-wide v0, p0, Ljp/co/sony/mc/camera/databinding/ProModeMfSliderBindingImpl;->mDirtyFlags:J
+
+    .line 116
+    monitor-exit p0
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    const/16 p1, 0x1b
+
+    .line 117
+    invoke-virtual {p0, p1}, Ljp/co/sony/mc/camera/databinding/ProModeMfSliderBindingImpl;->notifyPropertyChanged(I)V
+
+    .line 118
+    invoke-super {p0}, Ljp/co/sony/mc/camera/databinding/ProModeMfSliderBinding;->requestRebind()V
+
+    return-void
+
+    :catchall_0
+    move-exception p1
+
+    .line 116
+    :try_start_1
+    monitor-exit p0
+    :try_end_1
+    .catchall {:try_start_1 .. :try_end_1} :catchall_0
+
+    throw p1
+.end method
+
+.method public setVariable(ILjava/lang/Object;)Z
+    .locals 1
+
+    const/16 v0, 0x16
+
+    if-ne v0, p1, :cond_0
+
+    .line 73
+    check-cast p2, Ljp/co/sony/mc/camera/view/viewmodel/OrientationViewModel;
+
+    invoke-virtual {p0, p2}, Ljp/co/sony/mc/camera/databinding/ProModeMfSliderBindingImpl;->setOrientationViewModel(Ljp/co/sony/mc/camera/view/viewmodel/OrientationViewModel;)V
+
+    goto :goto_0
+
+    :cond_0
+    const/16 v0, 0x25
+
+    if-ne v0, p1, :cond_1
+
+    .line 76
+    check-cast p2, Ljp/co/sony/mc/camera/view/uistate/ViewFinderUiState;
+
+    invoke-virtual {p0, p2}, Ljp/co/sony/mc/camera/databinding/ProModeMfSliderBindingImpl;->setViewFinderUiState(Ljp/co/sony/mc/camera/view/uistate/ViewFinderUiState;)V
+
+    goto :goto_0
+
+    :cond_1
+    const/16 v0, 0x17
+
+    if-ne v0, p1, :cond_2
+
+    .line 79
+    check-cast p2, Ljp/co/sony/mc/camera/view/uistate/ProModeBottomPaneUiState;
+
+    invoke-virtual {p0, p2}, Ljp/co/sony/mc/camera/databinding/ProModeMfSliderBindingImpl;->setProModeBottomPaneUiState(Ljp/co/sony/mc/camera/view/uistate/ProModeBottomPaneUiState;)V
+
+    goto :goto_0
+
+    :cond_2
+    const/16 v0, 0x1b
+
+    if-ne v0, p1, :cond_3
+
+    .line 82
+    check-cast p2, Ljp/co/sony/mc/camera/view/uistate/ProModeFocusUiState;
+
+    invoke-virtual {p0, p2}, Ljp/co/sony/mc/camera/databinding/ProModeMfSliderBindingImpl;->setProModeFocusUiState(Ljp/co/sony/mc/camera/view/uistate/ProModeFocusUiState;)V
+
+    goto :goto_0
+
+    :cond_3
+    const/16 v0, 0x9
+
+    if-ne v0, p1, :cond_4
+
+    .line 85
+    check-cast p2, Ljp/co/sony/mc/camera/view/viewmodel/CameraStatusModel;
+
+    invoke-virtual {p0, p2}, Ljp/co/sony/mc/camera/databinding/ProModeMfSliderBindingImpl;->setCameraStatusModel(Ljp/co/sony/mc/camera/view/viewmodel/CameraStatusModel;)V
+
+    :goto_0
+    const/4 p0, 0x1
+
+    goto :goto_1
+
+    :cond_4
+    const/4 p0, 0x0
+
+    :goto_1
+    return p0
+.end method
+
+.method public setViewFinderUiState(Ljp/co/sony/mc/camera/view/uistate/ViewFinderUiState;)V
+    .locals 4
+
+    .line 102
+    iput-object p1, p0, Ljp/co/sony/mc/camera/databinding/ProModeMfSliderBindingImpl;->mViewFinderUiState:Ljp/co/sony/mc/camera/view/uistate/ViewFinderUiState;
 
     .line 103
     monitor-enter p0
@@ -767,7 +1040,7 @@
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    const/16 p1, 0x19
+    const/16 p1, 0x25
 
     .line 106
     invoke-virtual {p0, p1}, Ljp/co/sony/mc/camera/databinding/ProModeMfSliderBindingImpl;->notifyPropertyChanged(I)V
@@ -787,64 +1060,4 @@
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
     throw p1
-.end method
-
-.method public setVariable(ILjava/lang/Object;)Z
-    .locals 1
-
-    const/16 v0, 0x13
-
-    if-ne v0, p1, :cond_0
-
-    .line 73
-    check-cast p2, Ljp/co/sony/mc/camera/view/viewmodel/OrientationViewModel;
-
-    invoke-virtual {p0, p2}, Ljp/co/sony/mc/camera/databinding/ProModeMfSliderBindingImpl;->setOrientationViewModel(Ljp/co/sony/mc/camera/view/viewmodel/OrientationViewModel;)V
-
-    goto :goto_0
-
-    :cond_0
-    const/16 v0, 0x14
-
-    if-ne v0, p1, :cond_1
-
-    .line 76
-    check-cast p2, Ljp/co/sony/mc/camera/view/uistate/ProModeBottomPaneUiState;
-
-    invoke-virtual {p0, p2}, Ljp/co/sony/mc/camera/databinding/ProModeMfSliderBindingImpl;->setProModeBottomPaneUiState(Ljp/co/sony/mc/camera/view/uistate/ProModeBottomPaneUiState;)V
-
-    goto :goto_0
-
-    :cond_1
-    const/16 v0, 0x19
-
-    if-ne v0, p1, :cond_2
-
-    .line 79
-    check-cast p2, Ljp/co/sony/mc/camera/view/uistate/ProModeFocusUiState;
-
-    invoke-virtual {p0, p2}, Ljp/co/sony/mc/camera/databinding/ProModeMfSliderBindingImpl;->setProModeFocusUiState(Ljp/co/sony/mc/camera/view/uistate/ProModeFocusUiState;)V
-
-    goto :goto_0
-
-    :cond_2
-    const/16 v0, 0x8
-
-    if-ne v0, p1, :cond_3
-
-    .line 82
-    check-cast p2, Ljp/co/sony/mc/camera/view/viewmodel/CameraStatusModel;
-
-    invoke-virtual {p0, p2}, Ljp/co/sony/mc/camera/databinding/ProModeMfSliderBindingImpl;->setCameraStatusModel(Ljp/co/sony/mc/camera/view/viewmodel/CameraStatusModel;)V
-
-    :goto_0
-    const/4 p0, 0x1
-
-    goto :goto_1
-
-    :cond_3
-    const/4 p0, 0x0
-
-    :goto_1
-    return p0
 .end method

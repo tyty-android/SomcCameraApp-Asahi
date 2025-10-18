@@ -270,6 +270,14 @@
     return-object p0
 .end method
 
+.method public isSeekingSupported()Z
+    .locals 0
+
+    const/4 p0, 0x1
+
+    return p0
+.end method
+
 .method public onAppear(Landroid/view/ViewGroup;Landroid/view/View;Landroidx/transition/TransitionValues;Landroidx/transition/TransitionValues;)Landroid/animation/Animator;
     .locals 0
 

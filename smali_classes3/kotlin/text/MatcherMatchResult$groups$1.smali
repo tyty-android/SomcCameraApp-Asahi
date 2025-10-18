@@ -68,7 +68,7 @@
 
     iput-object p1, p0, Lkotlin/text/MatcherMatchResult$groups$1;->this$0:Lkotlin/text/MatcherMatchResult;
 
-    .line 356
+    .line 357
     invoke-direct {p0}, Lkotlin/collections/AbstractCollection;-><init>()V
 
     return-void
@@ -81,12 +81,15 @@
 
     if-nez p1, :cond_0
 
+    const/4 v0, 0x1
+
     goto :goto_0
 
-    .line 356
+    .line 357
     :cond_0
     instance-of v0, p1, Lkotlin/text/MatchGroup;
 
+    :goto_0
     if-nez v0, :cond_1
 
     const/4 p0, 0x0
@@ -94,7 +97,6 @@
     return p0
 
     :cond_1
-    :goto_0
     check-cast p1, Lkotlin/text/MatchGroup;
 
     invoke-virtual {p0, p1}, Lkotlin/text/MatcherMatchResult$groups$1;->contains(Lkotlin/text/MatchGroup;)Z
@@ -107,7 +109,7 @@
 .method public bridge contains(Lkotlin/text/MatchGroup;)Z
     .locals 0
 
-    .line 356
+    .line 357
     invoke-super {p0, p1}, Lkotlin/collections/AbstractCollection;->contains(Ljava/lang/Object;)Z
 
     move-result p0
@@ -118,7 +120,7 @@
 .method public get(I)Lkotlin/text/MatchGroup;
     .locals 2
 
-    .line 362
+    .line 363
     iget-object v0, p0, Lkotlin/text/MatcherMatchResult$groups$1;->this$0:Lkotlin/text/MatcherMatchResult;
 
     invoke-static {v0}, Lkotlin/text/MatcherMatchResult;->access$getMatchResult(Lkotlin/text/MatcherMatchResult;)Ljava/util/regex/MatchResult;
@@ -129,7 +131,7 @@
 
     move-result-object v0
 
-    .line 363
+    .line 364
     invoke-virtual {v0}, Lkotlin/ranges/IntRange;->getStart()Ljava/lang/Integer;
 
     move-result-object v1
@@ -140,7 +142,7 @@
 
     if-ltz v1, :cond_0
 
-    .line 364
+    .line 365
     new-instance v1, Lkotlin/text/MatchGroup;
 
     iget-object p0, p0, Lkotlin/text/MatcherMatchResult$groups$1;->this$0:Lkotlin/text/MatcherMatchResult;
@@ -153,7 +155,7 @@
 
     move-result-object p0
 
-    const-string p1, "matchResult.group(index)"
+    const-string p1, "group(...)"
 
     invoke-static {p0, p1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
 
@@ -175,7 +177,7 @@
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 370
+    .line 371
     sget-object v0, Lkotlin/internal/PlatformImplementationsKt;->IMPLEMENTATIONS:Lkotlin/internal/PlatformImplementations;
 
     iget-object p0, p0, Lkotlin/text/MatcherMatchResult$groups$1;->this$0:Lkotlin/text/MatcherMatchResult;
@@ -194,7 +196,7 @@
 .method public getSize()I
     .locals 0
 
-    .line 357
+    .line 358
     iget-object p0, p0, Lkotlin/text/MatcherMatchResult$groups$1;->this$0:Lkotlin/text/MatcherMatchResult;
 
     invoke-static {p0}, Lkotlin/text/MatcherMatchResult;->access$getMatchResult(Lkotlin/text/MatcherMatchResult;)Ljava/util/regex/MatchResult;
@@ -229,7 +231,7 @@
         }
     .end annotation
 
-    .line 360
+    .line 361
     move-object v0, p0
 
     check-cast v0, Ljava/util/Collection;

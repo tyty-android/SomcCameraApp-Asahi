@@ -26,7 +26,7 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/SourceDebugExtension;
-    value = "SMAP\nRecomposer.kt\nKotlin\n*S Kotlin\n*F\n+ 1 Recomposer.kt\nandroidx/compose/runtime/Recomposer$broadcastFrameClock$1\n+ 2 ActualJvm.jvm.kt\nandroidx/compose/runtime/ActualJvm_jvmKt\n*L\n1#1,1502:1\n70#2:1503\n*S KotlinDebug\n*F\n+ 1 Recomposer.kt\nandroidx/compose/runtime/Recomposer$broadcastFrameClock$1\n*L\n138#1:1503\n*E\n"
+    value = "SMAP\nRecomposer.kt\nKotlin\n*S Kotlin\n*F\n+ 1 Recomposer.kt\nandroidx/compose/runtime/Recomposer$broadcastFrameClock$1\n+ 2 ActualJvm.jvm.kt\nandroidx/compose/runtime/ActualJvm_jvmKt\n*L\n1#1,1564:1\n82#2:1565\n*S KotlinDebug\n*F\n+ 1 Recomposer.kt\nandroidx/compose/runtime/Recomposer$broadcastFrameClock$1\n*L\n141#1:1565\n*E\n"
 .end annotation
 
 .annotation runtime Lkotlin/Metadata;
@@ -70,7 +70,7 @@
 .method public bridge synthetic invoke()Ljava/lang/Object;
     .locals 0
 
-    .line 137
+    .line 140
     invoke-virtual {p0}, Landroidx/compose/runtime/Recomposer$broadcastFrameClock$1;->invoke()V
 
     sget-object p0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
@@ -81,7 +81,7 @@
 .method public final invoke()V
     .locals 4
 
-    .line 138
+    .line 141
     iget-object v0, p0, Landroidx/compose/runtime/Recomposer$broadcastFrameClock$1;->this$0:Landroidx/compose/runtime/Recomposer;
 
     invoke-static {v0}, Landroidx/compose/runtime/Recomposer;->access$getStateLock$p(Landroidx/compose/runtime/Recomposer;)Ljava/lang/Object;
@@ -90,16 +90,16 @@
 
     iget-object p0, p0, Landroidx/compose/runtime/Recomposer$broadcastFrameClock$1;->this$0:Landroidx/compose/runtime/Recomposer;
 
-    .line 1503
+    .line 1565
     monitor-enter v0
 
-    .line 139
+    .line 142
     :try_start_0
     invoke-static {p0}, Landroidx/compose/runtime/Recomposer;->access$deriveStateLocked(Landroidx/compose/runtime/Recomposer;)Lkotlinx/coroutines/CancellableContinuation;
 
     move-result-object v1
 
-    .line 140
+    .line 143
     invoke-static {p0}, Landroidx/compose/runtime/Recomposer;->access$get_state$p(Landroidx/compose/runtime/Recomposer;)Lkotlinx/coroutines/flow/MutableStateFlow;
 
     move-result-object v2
@@ -122,17 +122,17 @@
 
     if-lez v2, :cond_1
 
-    .line 1503
+    .line 1565
     monitor-exit v0
 
     if-eqz v1, :cond_0
 
-    .line 138
+    .line 141
     check-cast v1, Lkotlin/coroutines/Continuation;
 
     sget-object p0, Lkotlin/Result;->Companion:Lkotlin/Result$Companion;
 
-    .line 145
+    .line 148
     sget-object p0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
 
     invoke-static {p0}, Lkotlin/Result;->constructor-impl(Ljava/lang/Object;)Ljava/lang/Object;
@@ -144,17 +144,17 @@
     :cond_0
     return-void
 
-    .line 141
+    .line 144
     :cond_1
     :try_start_1
     const-string v1, "Recomposer shutdown; frame clock awaiter will never resume"
 
-    .line 142
+    .line 145
     invoke-static {p0}, Landroidx/compose/runtime/Recomposer;->access$getCloseCause$p(Landroidx/compose/runtime/Recomposer;)Ljava/lang/Throwable;
 
     move-result-object p0
 
-    .line 140
+    .line 143
     invoke-static {v1, p0}, Lkotlinx/coroutines/ExceptionsKt;->CancellationException(Ljava/lang/String;Ljava/lang/Throwable;)Ljava/util/concurrent/CancellationException;
 
     move-result-object p0
@@ -166,7 +166,7 @@
     :catchall_0
     move-exception p0
 
-    .line 1503
+    .line 1565
     monitor-exit v0
 
     throw p0

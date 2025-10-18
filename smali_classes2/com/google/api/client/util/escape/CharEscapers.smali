@@ -53,7 +53,7 @@
     .line 38
     new-instance v0, Lcom/google/api/client/util/escape/PercentEscaper;
 
-    const-string v1, "-_.!~*\'()@:$&,;=+/?"
+    const-string v1, "-_.!~*\'()@:$&,;=+/?#[]"
 
     invoke-direct {v0, v1}, Lcom/google/api/client/util/escape/PercentEscaper;-><init>(Ljava/lang/String;)V
 

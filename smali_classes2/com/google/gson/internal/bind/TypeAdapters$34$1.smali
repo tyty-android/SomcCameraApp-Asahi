@@ -31,7 +31,7 @@
 .method constructor <init>(Lcom/google/gson/internal/bind/TypeAdapters$34;Ljava/lang/Class;)V
     .locals 0
 
-    .line 1001
+    .line 1136
     iput-object p1, p0, Lcom/google/gson/internal/bind/TypeAdapters$34$1;->this$0:Lcom/google/gson/internal/bind/TypeAdapters$34;
 
     iput-object p2, p0, Lcom/google/gson/internal/bind/TypeAdapters$34$1;->val$requestedType:Ljava/lang/Class;
@@ -59,7 +59,7 @@
         }
     .end annotation
 
-    .line 1007
+    .line 1144
     iget-object v0, p0, Lcom/google/gson/internal/bind/TypeAdapters$34$1;->this$0:Lcom/google/gson/internal/bind/TypeAdapters$34;
 
     iget-object v0, v0, Lcom/google/gson/internal/bind/TypeAdapters$34;->val$typeAdapter:Lcom/google/gson/TypeAdapter;
@@ -70,7 +70,7 @@
 
     if-eqz v0, :cond_1
 
-    .line 1008
+    .line 1145
     iget-object v1, p0, Lcom/google/gson/internal/bind/TypeAdapters$34$1;->val$requestedType:Ljava/lang/Class;
 
     invoke-virtual {v1, v0}, Ljava/lang/Class;->isInstance(Ljava/lang/Object;)Z
@@ -81,7 +81,7 @@
 
     goto :goto_0
 
-    .line 1009
+    .line 1146
     :cond_0
     new-instance v1, Lcom/google/gson/JsonSyntaxException;
 
@@ -93,6 +93,7 @@
 
     iget-object p0, p0, Lcom/google/gson/internal/bind/TypeAdapters$34$1;->val$requestedType:Ljava/lang/Class;
 
+    .line 1148
     invoke-virtual {p0}, Ljava/lang/Class;->getName()Ljava/lang/String;
 
     move-result-object p0
@@ -107,7 +108,7 @@
 
     move-result-object p0
 
-    .line 1010
+    .line 1150
     invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     move-result-object v0
@@ -126,6 +127,7 @@
 
     move-result-object p0
 
+    .line 1152
     invoke-virtual {p1}, Lcom/google/gson/stream/JsonReader;->getPreviousPath()Ljava/lang/String;
 
     move-result-object p1
@@ -163,7 +165,7 @@
         }
     .end annotation
 
-    .line 1003
+    .line 1139
     iget-object p0, p0, Lcom/google/gson/internal/bind/TypeAdapters$34$1;->this$0:Lcom/google/gson/internal/bind/TypeAdapters$34;
 
     iget-object p0, p0, Lcom/google/gson/internal/bind/TypeAdapters$34;->val$typeAdapter:Lcom/google/gson/TypeAdapter;

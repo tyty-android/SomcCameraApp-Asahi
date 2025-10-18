@@ -1,14 +1,11 @@
 .class Landroidx/transition/FragmentTransitionSupport$5;
-.super Ljava/lang/Object;
+.super Landroidx/transition/Transition$EpicenterCallback;
 .source "FragmentTransitionSupport.java"
-
-# interfaces
-.implements Landroidx/transition/Transition$TransitionListener;
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Landroidx/transition/FragmentTransitionSupport;->setListenerForTransitionEnd(Landroidx/fragment/app/Fragment;Ljava/lang/Object;Landroidx/core/os/CancellationSignal;Ljava/lang/Runnable;)V
+    value = Landroidx/transition/FragmentTransitionSupport;->setEpicenter(Ljava/lang/Object;Landroid/graphics/Rect;)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -20,56 +17,50 @@
 # instance fields
 .field final synthetic this$0:Landroidx/transition/FragmentTransitionSupport;
 
-.field final synthetic val$transitionCompleteRunnable:Ljava/lang/Runnable;
+.field final synthetic val$epicenter:Landroid/graphics/Rect;
 
 
 # direct methods
-.method constructor <init>(Landroidx/transition/FragmentTransitionSupport;Ljava/lang/Runnable;)V
+.method constructor <init>(Landroidx/transition/FragmentTransitionSupport;Landroid/graphics/Rect;)V
     .locals 0
 
-    .line 274
+    .line 425
     iput-object p1, p0, Landroidx/transition/FragmentTransitionSupport$5;->this$0:Landroidx/transition/FragmentTransitionSupport;
 
-    iput-object p2, p0, Landroidx/transition/FragmentTransitionSupport$5;->val$transitionCompleteRunnable:Ljava/lang/Runnable;
+    iput-object p2, p0, Landroidx/transition/FragmentTransitionSupport$5;->val$epicenter:Landroid/graphics/Rect;
 
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    invoke-direct {p0}, Landroidx/transition/Transition$EpicenterCallback;-><init>()V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public onTransitionCancel(Landroidx/transition/Transition;)V
+.method public onGetEpicenter(Landroidx/transition/Transition;)Landroid/graphics/Rect;
     .locals 0
 
-    return-void
-.end method
+    .line 428
+    iget-object p1, p0, Landroidx/transition/FragmentTransitionSupport$5;->val$epicenter:Landroid/graphics/Rect;
 
-.method public onTransitionEnd(Landroidx/transition/Transition;)V
-    .locals 0
+    if-eqz p1, :cond_1
 
-    .line 280
-    iget-object p0, p0, Landroidx/transition/FragmentTransitionSupport$5;->val$transitionCompleteRunnable:Ljava/lang/Runnable;
+    invoke-virtual {p1}, Landroid/graphics/Rect;->isEmpty()Z
 
-    invoke-interface {p0}, Ljava/lang/Runnable;->run()V
+    move-result p1
 
-    return-void
-.end method
+    if-eqz p1, :cond_0
 
-.method public onTransitionPause(Landroidx/transition/Transition;)V
-    .locals 0
+    goto :goto_0
 
-    return-void
-.end method
+    .line 431
+    :cond_0
+    iget-object p0, p0, Landroidx/transition/FragmentTransitionSupport$5;->val$epicenter:Landroid/graphics/Rect;
 
-.method public onTransitionResume(Landroidx/transition/Transition;)V
-    .locals 0
+    return-object p0
 
-    return-void
-.end method
+    :cond_1
+    :goto_0
+    const/4 p0, 0x0
 
-.method public onTransitionStart(Landroidx/transition/Transition;)V
-    .locals 0
-
-    return-void
+    return-object p0
 .end method

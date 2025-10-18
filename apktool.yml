@@ -1,22 +1,16 @@
-version: 2.11.1
-apkFileName: SomcCameraApp-Asahi.apk
-isFrameworkApk: false
+version: 2.12.1
+apkFileName: SomcCameraApp-Shimanto.apk
 usesFramework:
   ids:
   - 1
-  tag: null
 sdkInfo:
-  minSdkVersion: 34
-  targetSdkVersion: 35
+  minSdkVersion: 35
+  targetSdkVersion: 36
 packageInfo:
   forcedPackageId: 127
-  renameManifestPackage: null
 versionInfo:
-  versionCode: 2105361
-  versionName: 1.0.1.A.0.17
-sharedLibrary: false
-sparseResources: false
-compactEntries: false
+  versionCode: 2236424
+  versionName: 1.1.1.A.0.8
 doNotCompress:
 - arsc
 - dex
@@ -31,7 +25,6 @@ doNotCompress:
 - META-INF/androidx.annotation_annotation-experimental.version
 - META-INF/androidx.appcompat_appcompat-resources.version
 - META-INF/androidx.appcompat_appcompat.version
-- META-INF/androidx.asynclayoutinflater_asynclayoutinflater.version
 - META-INF/androidx.autofill_autofill.version
 - META-INF/androidx.browser_browser.version
 - META-INF/androidx.cardview_cardview.version
@@ -76,12 +69,21 @@ doNotCompress:
 - META-INF/androidx.fragment_fragment.version
 - META-INF/androidx.interpolator_interpolator.version
 - META-INF/androidx.legacy_legacy-preference-v14.version
-- META-INF/androidx.legacy_legacy-support-core-ui.version
 - META-INF/androidx.legacy_legacy-support-core-utils.version
-- META-INF/androidx.legacy_legacy-support-v4.version
+- META-INF/androidx.lifecycle_lifecycle-livedata-core-ktx.version
+- META-INF/androidx.lifecycle_lifecycle-livedata-core.version
+- META-INF/androidx.lifecycle_lifecycle-livedata-ktx.version
+- META-INF/androidx.lifecycle_lifecycle-livedata.version
+- META-INF/androidx.lifecycle_lifecycle-process.version
+- META-INF/androidx.lifecycle_lifecycle-runtime-ktx.version
+- META-INF/androidx.lifecycle_lifecycle-runtime.version
+- META-INF/androidx.lifecycle_lifecycle-service.version
+- META-INF/androidx.lifecycle_lifecycle-viewmodel-compose.version
+- META-INF/androidx.lifecycle_lifecycle-viewmodel-ktx.version
+- META-INF/androidx.lifecycle_lifecycle-viewmodel-savedstate.version
+- META-INF/androidx.lifecycle_lifecycle-viewmodel.version
 - META-INF/androidx.loader_loader.version
 - META-INF/androidx.localbroadcastmanager_localbroadcastmanager.version
-- META-INF/androidx.media_media.version
 - META-INF/androidx.preference_preference.version
 - META-INF/androidx.print_print.version
 - META-INF/androidx.profileinstaller_profileinstaller.version
@@ -90,7 +92,6 @@ doNotCompress:
 - META-INF/androidx.savedstate_savedstate.version
 - META-INF/androidx.slidingpanelayout_slidingpanelayout.version
 - META-INF/androidx.startup_startup-runtime.version
-- META-INF/androidx.swiperefreshlayout_swiperefreshlayout.version
 - META-INF/androidx.tracing_tracing.version
 - META-INF/androidx.transition_transition.version
 - META-INF/androidx.vectordrawable_vectordrawable-animated.version
@@ -108,4 +109,3 @@ doNotCompress:
 - com/google/api/client/googleapis/google.p12
 - com/google/api/client/http/google-http-client.properties
 - res/raw/data1.raw
-- res/raw/ttml_template_for_srt_post.raw

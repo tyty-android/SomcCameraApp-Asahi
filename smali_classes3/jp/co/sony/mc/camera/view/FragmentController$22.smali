@@ -33,7 +33,7 @@
 .method constructor <init>(Ljp/co/sony/mc/camera/view/FragmentController;)V
     .locals 0
 
-    .line 8492
+    .line 8769
     iput-object p1, p0, Ljp/co/sony/mc/camera/view/FragmentController$22;->this$0:Ljp/co/sony/mc/camera/view/FragmentController;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -44,7 +44,7 @@
 .method private synthetic lambda$onBluetoothUnavailable$0()V
     .locals 4
 
-    .line 8503
+    .line 8783
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/FragmentController$22;->this$0:Ljp/co/sony/mc/camera/view/FragmentController;
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/view/FragmentController;->-$$Nest$fgetmRemoconManager(Ljp/co/sony/mc/camera/view/FragmentController;)Lcom/sonymobile/camera/bleremotecontrol/RemoconManager;
@@ -55,7 +55,7 @@
 
     invoke-virtual {v0, v1}, Lcom/sonymobile/camera/bleremotecontrol/RemoconManager;->registerDeviceStateCallback(Lcom/sonymobile/camera/bleremotecontrol/RemoconManager$DeviceStateCallback;)V
 
-    .line 8504
+    .line 8784
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/FragmentController$22;->this$0:Ljp/co/sony/mc/camera/view/FragmentController;
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/view/FragmentController;->-$$Nest$fgetmRemoconManager(Ljp/co/sony/mc/camera/view/FragmentController;)Lcom/sonymobile/camera/bleremotecontrol/RemoconManager;
@@ -64,7 +64,7 @@
 
     invoke-virtual {v0}, Lcom/sonymobile/camera/bleremotecontrol/RemoconManager;->stop()V
 
-    .line 8505
+    .line 8785
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/FragmentController$22;->this$0:Ljp/co/sony/mc/camera/view/FragmentController;
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/view/FragmentController;->-$$Nest$fgetmEnduranceModeState(Ljp/co/sony/mc/camera/view/FragmentController;)Ljp/co/sony/mc/camera/view/FragmentController$EnduranceMode;
@@ -79,14 +79,14 @@
 
     if-ne v0, v1, :cond_0
 
-    .line 8506
+    .line 8786
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/FragmentController$22;->this$0:Ljp/co/sony/mc/camera/view/FragmentController;
 
     const-string v1, "com.sonymobile.thermalwarningui.intent.action.ENDURANCE_MODE_CHANGE"
 
     invoke-static {v0, v1, v2, v3}, Ljp/co/sony/mc/camera/view/FragmentController;->-$$Nest$msendIntentChangeActivateStateToHpm(Ljp/co/sony/mc/camera/view/FragmentController;Ljava/lang/String;Ljava/lang/String;I)V
 
-    .line 8509
+    .line 8789
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/FragmentController$22;->this$0:Ljp/co/sony/mc/camera/view/FragmentController;
 
     sget-object v1, Ljp/co/sony/mc/camera/view/FragmentController$EnduranceMode;->DEACTIVATE:Ljp/co/sony/mc/camera/view/FragmentController$EnduranceMode;
@@ -95,7 +95,7 @@
 
     goto :goto_0
 
-    .line 8510
+    .line 8790
     :cond_0
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/FragmentController$22;->this$0:Ljp/co/sony/mc/camera/view/FragmentController;
 
@@ -107,21 +107,21 @@
 
     if-ne v0, v1, :cond_1
 
-    .line 8511
+    .line 8791
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/FragmentController$22;->this$0:Ljp/co/sony/mc/camera/view/FragmentController;
 
     const-string v1, "com.sonymobile.thermalwarningui.intent.action.ENDURANCE_TMP_MODE_CHANGE"
 
     invoke-static {v0, v1, v2, v3}, Ljp/co/sony/mc/camera/view/FragmentController;->-$$Nest$msendIntentChangeActivateStateToHpm(Ljp/co/sony/mc/camera/view/FragmentController;Ljava/lang/String;Ljava/lang/String;I)V
 
-    .line 8514
+    .line 8794
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/FragmentController$22;->this$0:Ljp/co/sony/mc/camera/view/FragmentController;
 
     sget-object v1, Ljp/co/sony/mc/camera/view/FragmentController$EnduranceMode;->DEACTIVATE:Ljp/co/sony/mc/camera/view/FragmentController$EnduranceMode;
 
     invoke-static {v0, v1}, Ljp/co/sony/mc/camera/view/FragmentController;->-$$Nest$fputmEnduranceModeState(Ljp/co/sony/mc/camera/view/FragmentController;Ljp/co/sony/mc/camera/view/FragmentController$EnduranceMode;)V
 
-    .line 8516
+    .line 8796
     :cond_1
     :goto_0
     invoke-static {}, Ljp/co/sony/mc/camera/setting/CameraProSetting;->getInstance()Ljp/co/sony/mc/camera/setting/CameraProSetting;
@@ -134,7 +134,7 @@
 
     invoke-virtual {v0, v1, v2}, Ljp/co/sony/mc/camera/setting/CameraProSetting;->set(Ljp/co/sony/mc/camera/setting/SettingKey$Key;Ljava/lang/Object;)V
 
-    .line 8518
+    .line 8798
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/FragmentController$22;->this$0:Ljp/co/sony/mc/camera/view/FragmentController;
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/view/FragmentController;->-$$Nest$fgetmActivity(Ljp/co/sony/mc/camera/view/FragmentController;)Ljp/co/sony/mc/camera/CameraActivity;
@@ -143,7 +143,7 @@
 
     invoke-virtual {v0, v3}, Ljp/co/sony/mc/camera/CameraActivity;->notifyRemoconConnected(Z)V
 
-    .line 8519
+    .line 8799
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/FragmentController$22;->this$0:Ljp/co/sony/mc/camera/view/FragmentController;
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/view/FragmentController;->-$$Nest$fgetmActivity(Ljp/co/sony/mc/camera/view/FragmentController;)Ljp/co/sony/mc/camera/CameraActivity;
@@ -152,7 +152,7 @@
 
     invoke-virtual {v0}, Ljp/co/sony/mc/camera/CameraActivity;->setupAutoPowerOffTimeOutDuration()V
 
-    .line 8520
+    .line 8800
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/FragmentController$22;->this$0:Ljp/co/sony/mc/camera/view/FragmentController;
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/view/FragmentController;->-$$Nest$fgetmActivity(Ljp/co/sony/mc/camera/view/FragmentController;)Ljp/co/sony/mc/camera/CameraActivity;
@@ -161,7 +161,7 @@
 
     invoke-virtual {v0}, Ljp/co/sony/mc/camera/CameraActivity;->restartAutoPowerOffTimer()V
 
-    .line 8521
+    .line 8801
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/FragmentController$22;->this$0:Ljp/co/sony/mc/camera/view/FragmentController;
 
     invoke-static {p0}, Ljp/co/sony/mc/camera/view/FragmentController;->-$$Nest$fgetmBleRemoteKeyCallback(Ljp/co/sony/mc/camera/view/FragmentController;)Ljp/co/sony/mc/camera/view/FragmentController$BleRemoteKeyCallbackImpl;
@@ -178,7 +178,7 @@
 .method public onBluetoothAvailable()V
     .locals 2
 
-    .line 8496
+    .line 8773
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/FragmentController$22;->this$0:Ljp/co/sony/mc/camera/view/FragmentController;
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/view/FragmentController;->-$$Nest$fgetmRemoconManager(Ljp/co/sony/mc/camera/view/FragmentController;)Lcom/sonymobile/camera/bleremotecontrol/RemoconManager;
@@ -193,28 +193,49 @@
 
     invoke-virtual {v0, v1}, Lcom/sonymobile/camera/bleremotecontrol/RemoconManager;->registerDeviceStateCallback(Lcom/sonymobile/camera/bleremotecontrol/RemoconManager$DeviceStateCallback;)V
 
-    .line 8497
+    .line 8774
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/FragmentController$22;->this$0:Ljp/co/sony/mc/camera/view/FragmentController;
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/view/FragmentController;->-$$Nest$fgetmRemoconManager(Ljp/co/sony/mc/camera/view/FragmentController;)Lcom/sonymobile/camera/bleremotecontrol/RemoconManager;
 
     move-result-object v0
 
+    iget-object v1, p0, Ljp/co/sony/mc/camera/view/FragmentController$22;->this$0:Ljp/co/sony/mc/camera/view/FragmentController;
+
+    invoke-static {v1}, Ljp/co/sony/mc/camera/view/FragmentController;->-$$Nest$fgetmBleRemoteKeyCallback(Ljp/co/sony/mc/camera/view/FragmentController;)Ljp/co/sony/mc/camera/view/FragmentController$BleRemoteKeyCallbackImpl;
+
+    move-result-object v1
+
+    invoke-virtual {v0, v1}, Lcom/sonymobile/camera/bleremotecontrol/RemoconManager;->registerKeyCallback(Lcom/sonymobile/camera/bleremotecontrol/RemoconManager$KeyCallback;)V
+
+    .line 8775
+    sget-object v0, Ljp/co/sony/mc/camera/debug/DebugParameterUtils;->INSTANCE:Ljp/co/sony/mc/camera/debug/DebugParameterUtils;
+
+    iget-object v1, p0, Ljp/co/sony/mc/camera/view/FragmentController$22;->this$0:Ljp/co/sony/mc/camera/view/FragmentController;
+
+    invoke-static {v1}, Ljp/co/sony/mc/camera/view/FragmentController;->-$$Nest$fgetmActivity(Ljp/co/sony/mc/camera/view/FragmentController;)Ljp/co/sony/mc/camera/CameraActivity;
+
+    move-result-object v1
+
+    invoke-virtual {v0, v1}, Ljp/co/sony/mc/camera/debug/DebugParameterUtils;->isEnduranceModeWithoutRemoteController(Landroid/content/Context;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_0
+
+    .line 8776
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/FragmentController$22;->this$0:Ljp/co/sony/mc/camera/view/FragmentController;
 
-    invoke-static {p0}, Ljp/co/sony/mc/camera/view/FragmentController;->-$$Nest$fgetmBleRemoteKeyCallback(Ljp/co/sony/mc/camera/view/FragmentController;)Ljp/co/sony/mc/camera/view/FragmentController$BleRemoteKeyCallbackImpl;
+    invoke-static {p0}, Ljp/co/sony/mc/camera/view/FragmentController;->-$$Nest$mactivateEnduranceMode(Ljp/co/sony/mc/camera/view/FragmentController;)V
 
-    move-result-object p0
-
-    invoke-virtual {v0, p0}, Lcom/sonymobile/camera/bleremotecontrol/RemoconManager;->registerKeyCallback(Lcom/sonymobile/camera/bleremotecontrol/RemoconManager$KeyCallback;)V
-
+    :cond_0
     return-void
 .end method
 
 .method public onBluetoothUnavailable()V
     .locals 2
 
-    .line 8502
+    .line 8782
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/FragmentController$22;->this$0:Ljp/co/sony/mc/camera/view/FragmentController;
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/view/FragmentController;->-$$Nest$fgetmActivity(Ljp/co/sony/mc/camera/view/FragmentController;)Ljp/co/sony/mc/camera/CameraActivity;

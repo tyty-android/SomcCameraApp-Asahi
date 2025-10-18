@@ -94,24 +94,20 @@
 .end method
 
 .method public constructor <init>(Ljava/lang/String;)V
-    .locals 1
+    .locals 0
 
-    const-string/jumbo v0, "text"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 230
+    .line 229
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 231
+    .line 230
     iput-object p1, p0, Landroidx/compose/ui/text/input/PartialGapBuffer;->text:Ljava/lang/String;
 
     const/4 p1, -0x1
 
-    .line 239
+    .line 238
     iput p1, p0, Landroidx/compose/ui/text/input/PartialGapBuffer;->bufStart:I
 
-    .line 240
+    .line 239
     iput p1, p0, Landroidx/compose/ui/text/input/PartialGapBuffer;->bufEnd:I
 
     return-void
@@ -122,7 +118,7 @@
 .method public final get(I)C
     .locals 4
 
-    .line 318
+    .line 317
     iget-object v0, p0, Landroidx/compose/ui/text/input/PartialGapBuffer;->buffer:Landroidx/compose/ui/text/input/GapBuffer;
 
     if-nez v0, :cond_0
@@ -135,13 +131,13 @@
 
     return p0
 
-    .line 319
+    .line 318
     :cond_0
     iget v1, p0, Landroidx/compose/ui/text/input/PartialGapBuffer;->bufStart:I
 
     if-ge p1, v1, :cond_1
 
-    .line 320
+    .line 319
     iget-object p0, p0, Landroidx/compose/ui/text/input/PartialGapBuffer;->text:Ljava/lang/String;
 
     invoke-virtual {p0, p1}, Ljava/lang/String;->charAt(I)C
@@ -150,13 +146,13 @@
 
     return p0
 
-    .line 322
+    .line 321
     :cond_1
     invoke-virtual {v0}, Landroidx/compose/ui/text/input/GapBuffer;->length()I
 
     move-result v1
 
-    .line 323
+    .line 322
     iget v2, p0, Landroidx/compose/ui/text/input/PartialGapBuffer;->bufStart:I
 
     add-int v3, v1, v2
@@ -165,14 +161,14 @@
 
     sub-int/2addr p1, v2
 
-    .line 324
+    .line 323
     invoke-virtual {v0, p1}, Landroidx/compose/ui/text/input/GapBuffer;->get(I)C
 
     move-result p0
 
     return p0
 
-    .line 326
+    .line 325
     :cond_2
     iget-object v0, p0, Landroidx/compose/ui/text/input/PartialGapBuffer;->text:Ljava/lang/String;
 
@@ -194,7 +190,7 @@
 .method public final getLength()I
     .locals 3
 
-    .line 247
+    .line 246
     iget-object v0, p0, Landroidx/compose/ui/text/input/PartialGapBuffer;->buffer:Landroidx/compose/ui/text/input/GapBuffer;
 
     if-nez v0, :cond_0
@@ -207,7 +203,7 @@
 
     return p0
 
-    .line 248
+    .line 247
     :cond_0
     iget-object v1, p0, Landroidx/compose/ui/text/input/PartialGapBuffer;->text:Ljava/lang/String;
 
@@ -235,7 +231,7 @@
 .method public final getText()Ljava/lang/String;
     .locals 0
 
-    .line 231
+    .line 230
     iget-object p0, p0, Landroidx/compose/ui/text/input/PartialGapBuffer;->text:Ljava/lang/String;
 
     return-object p0
@@ -244,20 +240,16 @@
 .method public final replace(IILjava/lang/String;)V
     .locals 7
 
-    const-string/jumbo v0, "text"
-
-    invoke-static {p3, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
     if-gt p1, p2, :cond_4
 
     if-ltz p1, :cond_3
 
-    .line 266
+    .line 265
     iget-object v0, p0, Landroidx/compose/ui/text/input/PartialGapBuffer;->buffer:Landroidx/compose/ui/text/input/GapBuffer;
 
     if-nez v0, :cond_0
 
-    .line 268
+    .line 267
     invoke-virtual {p3}, Ljava/lang/String;->length()I
 
     move-result v0
@@ -274,12 +266,12 @@
 
     const/16 v2, 0x40
 
-    .line 271
+    .line 270
     invoke-static {p1, v2}, Ljava/lang/Math;->min(II)I
 
     move-result v3
 
-    .line 272
+    .line 271
     iget-object v4, p0, Landroidx/compose/ui/text/input/PartialGapBuffer;->text:Ljava/lang/String;
 
     invoke-virtual {v4}, Ljava/lang/String;->length()I
@@ -292,7 +284,7 @@
 
     move-result v2
 
-    .line 275
+    .line 274
     iget-object v4, p0, Landroidx/compose/ui/text/input/PartialGapBuffer;->text:Ljava/lang/String;
 
     sub-int v5, p1, v3
@@ -301,7 +293,7 @@
 
     invoke-static {v4, v1, v6, v5, p1}, Landroidx/compose/ui/text/input/GapBuffer_jvmKt;->toCharArray(Ljava/lang/String;[CIII)V
 
-    .line 278
+    .line 277
     iget-object p1, p0, Landroidx/compose/ui/text/input/PartialGapBuffer;->text:Ljava/lang/String;
 
     sub-int/2addr v0, v2
@@ -310,33 +302,33 @@
 
     invoke-static {p1, v1, v0, p2, v2}, Landroidx/compose/ui/text/input/GapBuffer_jvmKt;->toCharArray(Ljava/lang/String;[CIII)V
 
-    .line 286
+    .line 285
     invoke-static {p3, v1, v3}, Landroidx/compose/ui/text/input/GapBufferKt;->access$toCharArray(Ljava/lang/String;[CI)V
 
-    .line 288
+    .line 287
     new-instance p1, Landroidx/compose/ui/text/input/GapBuffer;
 
-    .line 290
+    .line 289
     invoke-virtual {p3}, Ljava/lang/String;->length()I
 
     move-result p2
 
     add-int/2addr v3, p2
 
-    .line 288
+    .line 287
     invoke-direct {p1, v1, v3, v0}, Landroidx/compose/ui/text/input/GapBuffer;-><init>([CII)V
 
     iput-object p1, p0, Landroidx/compose/ui/text/input/PartialGapBuffer;->buffer:Landroidx/compose/ui/text/input/GapBuffer;
 
-    .line 293
+    .line 292
     iput v5, p0, Landroidx/compose/ui/text/input/PartialGapBuffer;->bufStart:I
 
-    .line 294
+    .line 293
     iput v2, p0, Landroidx/compose/ui/text/input/PartialGapBuffer;->bufEnd:I
 
     return-void
 
-    .line 299
+    .line 298
     :cond_0
     iget v1, p0, Landroidx/compose/ui/text/input/PartialGapBuffer;->bufStart:I
 
@@ -346,7 +338,7 @@
 
     if-ltz v2, :cond_2
 
-    .line 301
+    .line 300
     invoke-virtual {v0}, Landroidx/compose/ui/text/input/GapBuffer;->length()I
 
     move-result v3
@@ -355,13 +347,13 @@
 
     goto :goto_0
 
-    .line 311
+    .line 310
     :cond_1
     invoke-virtual {v0, v2, v1, p3}, Landroidx/compose/ui/text/input/GapBuffer;->replace(IILjava/lang/String;)V
 
     return-void
 
-    .line 304
+    .line 303
     :cond_2
     :goto_0
     invoke-virtual {p0}, Landroidx/compose/ui/text/input/PartialGapBuffer;->toString()Ljava/lang/String;
@@ -372,23 +364,23 @@
 
     const/4 v0, 0x0
 
-    .line 305
+    .line 304
     iput-object v0, p0, Landroidx/compose/ui/text/input/PartialGapBuffer;->buffer:Landroidx/compose/ui/text/input/GapBuffer;
 
     const/4 v0, -0x1
 
-    .line 306
+    .line 305
     iput v0, p0, Landroidx/compose/ui/text/input/PartialGapBuffer;->bufStart:I
 
-    .line 307
+    .line 306
     iput v0, p0, Landroidx/compose/ui/text/input/PartialGapBuffer;->bufEnd:I
 
-    .line 308
+    .line 307
     invoke-virtual {p0, p1, p2, p3}, Landroidx/compose/ui/text/input/PartialGapBuffer;->replace(IILjava/lang/String;)V
 
     return-void
 
-    .line 263
+    .line 262
     :cond_3
     new-instance p0, Ljava/lang/StringBuilder;
 
@@ -404,7 +396,7 @@
 
     move-result-object p0
 
-    .line 262
+    .line 261
     new-instance p1, Ljava/lang/IllegalArgumentException;
 
     invoke-virtual {p0}, Ljava/lang/Object;->toString()Ljava/lang/String;
@@ -415,7 +407,7 @@
 
     throw p1
 
-    .line 260
+    .line 259
     :cond_4
     new-instance p0, Ljava/lang/StringBuilder;
 
@@ -441,7 +433,7 @@
 
     move-result-object p0
 
-    .line 259
+    .line 258
     new-instance p1, Ljava/lang/IllegalArgumentException;
 
     invoke-virtual {p0}, Ljava/lang/Object;->toString()Ljava/lang/String;
@@ -454,13 +446,9 @@
 .end method
 
 .method public final setText(Ljava/lang/String;)V
-    .locals 1
+    .locals 0
 
-    const-string v0, "<set-?>"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 231
+    .line 230
     iput-object p1, p0, Landroidx/compose/ui/text/input/PartialGapBuffer;->text:Ljava/lang/String;
 
     return-void
@@ -469,7 +457,7 @@
 .method public toString()Ljava/lang/String;
     .locals 5
 
-    .line 330
+    .line 329
     iget-object v0, p0, Landroidx/compose/ui/text/input/PartialGapBuffer;->buffer:Landroidx/compose/ui/text/input/GapBuffer;
 
     if-nez v0, :cond_0
@@ -478,13 +466,13 @@
 
     return-object p0
 
-    .line 331
+    .line 330
     :cond_0
     new-instance v1, Ljava/lang/StringBuilder;
 
     invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
 
-    .line 332
+    .line 331
     iget-object v2, p0, Landroidx/compose/ui/text/input/PartialGapBuffer;->text:Ljava/lang/String;
 
     check-cast v2, Ljava/lang/CharSequence;
@@ -495,10 +483,10 @@
 
     invoke-virtual {v1, v2, v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/CharSequence;II)Ljava/lang/StringBuilder;
 
-    .line 333
+    .line 332
     invoke-virtual {v0, v1}, Landroidx/compose/ui/text/input/GapBuffer;->append(Ljava/lang/StringBuilder;)V
 
-    .line 334
+    .line 333
     iget-object v0, p0, Landroidx/compose/ui/text/input/PartialGapBuffer;->text:Ljava/lang/String;
 
     move-object v2, v0
@@ -513,14 +501,10 @@
 
     invoke-virtual {v1, v2, p0, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/CharSequence;II)Ljava/lang/StringBuilder;
 
-    .line 335
+    .line 334
     invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object p0
-
-    const-string v0, "sb.toString()"
-
-    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
 
     return-object p0
 .end method

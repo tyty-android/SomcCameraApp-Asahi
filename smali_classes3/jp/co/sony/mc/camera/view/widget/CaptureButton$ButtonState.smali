@@ -46,14 +46,14 @@
     d2 = {
         "Ljp/co/sony/mc/camera/view/widget/CaptureButton$ButtonState;",
         "",
-        "CaptureHold",
         "None",
         "Ready",
-        "RecordingLocked",
-        "RecordingStopping",
-        "RecordingWithFingerHold",
+        "CaptureHold",
         "RequestStartRecording",
         "RequestStopRecording",
+        "RecordingStopping",
+        "RecordingWithFingerHold",
+        "RecordingLocked",
         "Ljp/co/sony/mc/camera/view/widget/CaptureButton$ButtonState$CaptureHold;",
         "Ljp/co/sony/mc/camera/view/widget/CaptureButton$ButtonState$None;",
         "Ljp/co/sony/mc/camera/view/widget/CaptureButton$ButtonState$Ready;",
@@ -66,8 +66,8 @@
     }
     k = 0x1
     mv = {
-        0x1,
-        0x9,
+        0x2,
+        0x0,
         0x0
     }
     xi = 0x30

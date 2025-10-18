@@ -6,9 +6,13 @@
 # annotations
 .annotation runtime Lkotlin/Metadata;
     d1 = {
-        "\u00004\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0010\u0000\n\u0000\n\u0002\u0010\u0008\n\u0002\u0008\u0003\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u000b\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\u001a\u0010\u0010\u0000\u001a\u00020\u00012\u0006\u0010\u0002\u001a\u00020\u0003H\u0000\u001a\u0012\u0010\u0004\u001a\u00020\u00052\u0008\u0010\u0006\u001a\u0004\u0018\u00010\u0003H\u0000\u001a(\u0010\u0007\u001a\u00020\u00012\u0006\u0010\u0008\u001a\u00020\t2\u0011\u0010\n\u001a\r\u0012\u0004\u0012\u00020\u00010\u000b\u00a2\u0006\u0002\u0008\u000cH\u0000\u00a2\u0006\u0002\u0010\r\u001a.\u0010\u000e\u001a\u0002H\u000f\"\u0004\u0008\u0000\u0010\u000f2\u0006\u0010\u0008\u001a\u00020\t2\u0011\u0010\n\u001a\r\u0012\u0004\u0012\u0002H\u000f0\u000b\u00a2\u0006\u0002\u0008\u000cH\u0000\u00a2\u0006\u0002\u0010\u0010\u001a-\u0010\u0011\u001a\u0002H\u0012\"\u0004\u0008\u0000\u0010\u00122\u0006\u0010\u0013\u001a\u00020\u00032\u000c\u0010\u0014\u001a\u0008\u0012\u0004\u0012\u0002H\u00120\u000bH\u0081\u0008\u00f8\u0001\u0000\u00a2\u0006\u0002\u0010\u0015*\u001e\u0008\u0000\u0010\u0016\u001a\u0004\u0008\u0000\u0010\u0017\"\u0008\u0012\u0004\u0012\u0002H\u00170\u00182\u0008\u0012\u0004\u0012\u0002H\u00170\u0018*\u000c\u0008\u0000\u0010\u0019\"\u00020\u001a2\u00020\u001a\u0082\u0002\u0007\n\u0005\u0008\u009920\u0001\u00a8\u0006\u001b"
+        "\u0000@\n\u0000\n\u0002\u0010\t\n\u0000\n\u0002\u0010\u000e\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0010\u0000\n\u0000\n\u0002\u0010\u0008\n\u0002\u0008\u0003\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u000b\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\u001a\u0008\u0010\u0000\u001a\u00020\u0001H\u0000\u001a\u0008\u0010\u0002\u001a\u00020\u0003H\u0000\u001a\u0010\u0010\u0004\u001a\u00020\u00052\u0006\u0010\u0006\u001a\u00020\u0007H\u0000\u001a\u0012\u0010\u0008\u001a\u00020\t2\u0008\u0010\n\u001a\u0004\u0018\u00010\u0007H\u0000\u001a(\u0010\u000b\u001a\u00020\u00052\u0006\u0010\u000c\u001a\u00020\r2\u0011\u0010\u000e\u001a\r\u0012\u0004\u0012\u00020\u00050\u000f\u00a2\u0006\u0002\u0008\u0010H\u0000\u00a2\u0006\u0002\u0010\u0011\u001a.\u0010\u0012\u001a\u0002H\u0013\"\u0004\u0008\u0000\u0010\u00132\u0006\u0010\u000c\u001a\u00020\r2\u0011\u0010\u000e\u001a\r\u0012\u0004\u0012\u0002H\u00130\u000f\u00a2\u0006\u0002\u0008\u0010H\u0000\u00a2\u0006\u0002\u0010\u0014\u001a*\u0010\u0015\u001a\u0002H\u0016\"\u0004\u0008\u0000\u0010\u00162\u0006\u0010\u0017\u001a\u00020\u00072\u000c\u0010\u0018\u001a\u0008\u0012\u0004\u0012\u0002H\u00160\u000fH\u0081\u0008\u00a2\u0006\u0002\u0010\u0019*\u001e\u0008\u0000\u0010\u001a\u001a\u0004\u0008\u0000\u0010\u001b\"\u0008\u0012\u0004\u0012\u0002H\u001b0\u001c2\u0008\u0012\u0004\u0012\u0002H\u001b0\u001c*\u000c\u0008\u0000\u0010\u001d\"\u00020\u001e2\u00020\u001e\u00a8\u0006\u001f"
     }
     d2 = {
+        "currentThreadId",
+        "",
+        "currentThreadName",
+        "",
         "ensureMutable",
         "",
         "it",
@@ -49,12 +53,38 @@
 
 
 # direct methods
-.method public static final ensureMutable(Ljava/lang/Object;)V
+.method public static final currentThreadId()J
+    .locals 2
+
+    .line 116
+    invoke-static {}, Ljava/lang/Thread;->currentThread()Ljava/lang/Thread;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Ljava/lang/Thread;->getId()J
+
+    move-result-wide v0
+
+    return-wide v0
+.end method
+
+.method public static final currentThreadName()Ljava/lang/String;
     .locals 1
 
-    const-string v0, "it"
+    .line 118
+    invoke-static {}, Ljava/lang/Thread;->currentThread()Ljava/lang/Thread;
 
-    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+    move-result-object v0
+
+    invoke-virtual {v0}, Ljava/lang/Thread;->getName()Ljava/lang/String;
+
+    move-result-object v0
+
+    return-object v0
+.end method
+
+.method public static final ensureMutable(Ljava/lang/Object;)V
+    .locals 0
 
     return-void
 .end method
@@ -62,7 +92,7 @@
 .method public static final identityHashCode(Ljava/lang/Object;)I
     .locals 0
 
-    .line 66
+    .line 78
     invoke-static {p0}, Ljava/lang/System;->identityHashCode(Ljava/lang/Object;)I
 
     move-result p0
@@ -86,17 +116,13 @@
         }
     .end annotation
 
-    const-string v0, "composer"
+    .line 89
+    const-string v0, "null cannot be cast to non-null type kotlin.Function2<androidx.compose.runtime.Composer, kotlin.Int, kotlin.Unit>"
 
-    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string v0, "composable"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;Ljava/lang/String;)V
 
     const/4 v0, 0x2
 
-    .line 77
     invoke-static {p1, v0}, Lkotlin/jvm/internal/TypeIntrinsics;->beforeCheckcastToFunctionOfArity(Ljava/lang/Object;I)Ljava/lang/Object;
 
     move-result-object p1
@@ -105,7 +131,7 @@
 
     const/4 v0, 0x1
 
-    .line 78
+    .line 90
     invoke-static {v0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object v0
@@ -132,17 +158,13 @@
         }
     .end annotation
 
-    const-string v0, "composer"
+    .line 98
+    const-string v0, "null cannot be cast to non-null type kotlin.Function2<androidx.compose.runtime.Composer, kotlin.Int, T of androidx.compose.runtime.ActualJvm_jvmKt.invokeComposableForResult>"
 
-    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string v0, "composable"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;Ljava/lang/String;)V
 
     const/4 v0, 0x2
 
-    .line 86
     invoke-static {p1, v0}, Lkotlin/jvm/internal/TypeIntrinsics;->beforeCheckcastToFunctionOfArity(Ljava/lang/Object;I)Ljava/lang/Object;
 
     move-result-object p1
@@ -151,7 +173,7 @@
 
     const/4 v0, 0x1
 
-    .line 87
+    .line 99
     invoke-static {v0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object v0
@@ -176,15 +198,7 @@
         }
     .end annotation
 
-    const-string v0, "lock"
-
-    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string v0, "block"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 70
+    .line 82
     monitor-enter p0
 
     const/4 v0, 0x1

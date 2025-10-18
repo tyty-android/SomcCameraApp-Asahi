@@ -108,10 +108,10 @@
 
     iput-object p1, p0, Lkotlin/sequences/TakeWhileSequence$iterator$1;->this$0:Lkotlin/sequences/TakeWhileSequence;
 
-    .line 435
+    .line 453
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 436
+    .line 454
     invoke-static {p1}, Lkotlin/sequences/TakeWhileSequence;->access$getSequence$p(Lkotlin/sequences/TakeWhileSequence;)Lkotlin/sequences/Sequence;
 
     move-result-object p1
@@ -124,7 +124,7 @@
 
     const/4 p1, -0x1
 
-    .line 437
+    .line 455
     iput p1, p0, Lkotlin/sequences/TakeWhileSequence$iterator$1;->nextState:I
 
     return-void
@@ -133,7 +133,7 @@
 .method private final calcNext()V
     .locals 2
 
-    .line 441
+    .line 459
     iget-object v0, p0, Lkotlin/sequences/TakeWhileSequence$iterator$1;->iterator:Ljava/util/Iterator;
 
     invoke-interface {v0}, Ljava/util/Iterator;->hasNext()Z
@@ -142,14 +142,14 @@
 
     if-eqz v0, :cond_0
 
-    .line 442
+    .line 460
     iget-object v0, p0, Lkotlin/sequences/TakeWhileSequence$iterator$1;->iterator:Ljava/util/Iterator;
 
     invoke-interface {v0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
     move-result-object v0
 
-    .line 443
+    .line 461
     iget-object v1, p0, Lkotlin/sequences/TakeWhileSequence$iterator$1;->this$0:Lkotlin/sequences/TakeWhileSequence;
 
     invoke-static {v1}, Lkotlin/sequences/TakeWhileSequence;->access$getPredicate$p(Lkotlin/sequences/TakeWhileSequence;)Lkotlin/jvm/functions/Function1;
@@ -170,10 +170,10 @@
 
     const/4 v1, 0x1
 
-    .line 444
+    .line 462
     iput v1, p0, Lkotlin/sequences/TakeWhileSequence$iterator$1;->nextState:I
 
-    .line 445
+    .line 463
     iput-object v0, p0, Lkotlin/sequences/TakeWhileSequence$iterator$1;->nextItem:Ljava/lang/Object;
 
     return-void
@@ -181,7 +181,7 @@
     :cond_0
     const/4 v0, 0x0
 
-    .line 449
+    .line 467
     iput v0, p0, Lkotlin/sequences/TakeWhileSequence$iterator$1;->nextState:I
 
     return-void
@@ -199,7 +199,7 @@
         }
     .end annotation
 
-    .line 436
+    .line 454
     iget-object p0, p0, Lkotlin/sequences/TakeWhileSequence$iterator$1;->iterator:Ljava/util/Iterator;
 
     return-object p0
@@ -213,7 +213,7 @@
         }
     .end annotation
 
-    .line 438
+    .line 456
     iget-object p0, p0, Lkotlin/sequences/TakeWhileSequence$iterator$1;->nextItem:Ljava/lang/Object;
 
     return-object p0
@@ -222,7 +222,7 @@
 .method public final getNextState()I
     .locals 0
 
-    .line 437
+    .line 455
     iget p0, p0, Lkotlin/sequences/TakeWhileSequence$iterator$1;->nextState:I
 
     return p0
@@ -231,17 +231,17 @@
 .method public hasNext()Z
     .locals 2
 
-    .line 467
+    .line 485
     iget v0, p0, Lkotlin/sequences/TakeWhileSequence$iterator$1;->nextState:I
 
     const/4 v1, -0x1
 
     if-ne v0, v1, :cond_0
 
-    .line 468
+    .line 486
     invoke-direct {p0}, Lkotlin/sequences/TakeWhileSequence$iterator$1;->calcNext()V
 
-    .line 469
+    .line 487
     :cond_0
     iget p0, p0, Lkotlin/sequences/TakeWhileSequence$iterator$1;->nextState:I
 
@@ -266,36 +266,36 @@
         }
     .end annotation
 
-    .line 453
+    .line 471
     iget v0, p0, Lkotlin/sequences/TakeWhileSequence$iterator$1;->nextState:I
 
     const/4 v1, -0x1
 
     if-ne v0, v1, :cond_0
 
-    .line 454
+    .line 472
     invoke-direct {p0}, Lkotlin/sequences/TakeWhileSequence$iterator$1;->calcNext()V
 
-    .line 455
+    .line 473
     :cond_0
     iget v0, p0, Lkotlin/sequences/TakeWhileSequence$iterator$1;->nextState:I
 
     if-eqz v0, :cond_1
 
-    .line 458
+    .line 476
     iget-object v0, p0, Lkotlin/sequences/TakeWhileSequence$iterator$1;->nextItem:Ljava/lang/Object;
 
     const/4 v2, 0x0
 
-    .line 461
+    .line 479
     iput-object v2, p0, Lkotlin/sequences/TakeWhileSequence$iterator$1;->nextItem:Ljava/lang/Object;
 
-    .line 462
+    .line 480
     iput v1, p0, Lkotlin/sequences/TakeWhileSequence$iterator$1;->nextState:I
 
     return-object v0
 
-    .line 456
+    .line 474
     :cond_1
     new-instance p0, Ljava/util/NoSuchElementException;
 
@@ -324,7 +324,7 @@
         }
     .end annotation
 
-    .line 438
+    .line 456
     iput-object p1, p0, Lkotlin/sequences/TakeWhileSequence$iterator$1;->nextItem:Ljava/lang/Object;
 
     return-void
@@ -333,7 +333,7 @@
 .method public final setNextState(I)V
     .locals 0
 
-    .line 437
+    .line 455
     iput p1, p0, Lkotlin/sequences/TakeWhileSequence$iterator$1;->nextState:I
 
     return-void

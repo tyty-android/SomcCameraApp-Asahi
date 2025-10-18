@@ -33,8 +33,8 @@
     }
     k = 0x1
     mv = {
-        0x1,
-        0x9,
+        0x2,
+        0x0,
         0x0
     }
     xi = 0x30
@@ -51,7 +51,7 @@
 
     iput-object p1, p0, Ljp/co/sony/mc/camera/debug/DebugCameraSettingsActivity$initRecyclerView$1;->this$0:Ljp/co/sony/mc/camera/debug/DebugCameraSettingsActivity;
 
-    .line 123
+    .line 133
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -66,7 +66,7 @@
 
     invoke-static {p1, p2}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 125
+    .line 135
     iget-object p0, p0, Ljp/co/sony/mc/camera/debug/DebugCameraSettingsActivity$initRecyclerView$1;->this$0:Ljp/co/sony/mc/camera/debug/DebugCameraSettingsActivity;
 
     invoke-static {p0, p1}, Ljp/co/sony/mc/camera/debug/DebugCameraSettingsActivity;->access$handleOnClick(Ljp/co/sony/mc/camera/debug/DebugCameraSettingsActivity;Ljp/co/sony/mc/camera/debug/DebugCameraSettingItem;)V

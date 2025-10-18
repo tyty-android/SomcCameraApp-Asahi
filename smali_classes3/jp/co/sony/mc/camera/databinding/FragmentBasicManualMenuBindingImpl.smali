@@ -15,7 +15,7 @@
 
 # direct methods
 .method static constructor <clinit>()V
-    .locals 5
+    .locals 6
 
     .line 15
     new-instance v0, Landroidx/databinding/ViewDataBinding$IncludedLayouts;
@@ -26,34 +26,36 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/databinding/FragmentBasicManualMenuBindingImpl;->sIncludes:Landroidx/databinding/ViewDataBinding$IncludedLayouts;
 
+    const/4 v1, 0x2
+
     .line 16
-    const-string v1, "fragment_basic_focus"
+    new-array v2, v1, [Ljava/lang/String;
 
-    const-string v2, "fragment_basic_ss"
-
-    filled-new-array {v1, v2}, [Ljava/lang/String;
-
-    move-result-object v1
-
-    const/4 v2, 0x1
-
-    const/4 v3, 0x2
-
-    filled-new-array {v2, v3}, [I
-
-    move-result-object v2
-
-    const v3, 0x7f0c0060
-
-    const v4, 0x7f0c007d
-
-    filled-new-array {v3, v4}, [I
-
-    move-result-object v3
+    const-string v3, "fragment_basic_focus"
 
     const/4 v4, 0x0
 
-    invoke-virtual {v0, v4, v1, v2, v3}, Landroidx/databinding/ViewDataBinding$IncludedLayouts;->setIncludes(I[Ljava/lang/String;[I[I)V
+    aput-object v3, v2, v4
+
+    const-string v3, "fragment_basic_ss"
+
+    const/4 v5, 0x1
+
+    aput-object v3, v2, v5
+
+    filled-new-array {v5, v1}, [I
+
+    move-result-object v1
+
+    const v3, 0x7f0c0060
+
+    const v5, 0x7f0c007d
+
+    filled-new-array {v3, v5}, [I
+
+    move-result-object v3
+
+    invoke-virtual {v0, v4, v2, v1, v3}, Landroidx/databinding/ViewDataBinding$IncludedLayouts;->setIncludes(I[Ljava/lang/String;[I[I)V
 
     const/4 v0, 0x0
 
@@ -860,7 +862,7 @@
 .method public setVariable(ILjava/lang/Object;)Z
     .locals 1
 
-    const/16 v0, 0x22
+    const/16 v0, 0x25
 
     if-ne v0, p1, :cond_0
 
@@ -904,7 +906,7 @@
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    const/16 p1, 0x22
+    const/16 p1, 0x25
 
     .line 89
     invoke-virtual {p0, p1}, Ljp/co/sony/mc/camera/databinding/FragmentBasicManualMenuBindingImpl;->notifyPropertyChanged(I)V

@@ -33,17 +33,21 @@
 
 .field public static final enum FINDER_AREA:Ljp/co/sony/mc/camera/view/EventProcedure$UiComponent;
 
+.field public static final enum PINCH_ZOOM_UP:Ljp/co/sony/mc/camera/view/EventProcedure$UiComponent;
+
 
 # direct methods
 .method private static synthetic $values()[Ljp/co/sony/mc/camera/view/EventProcedure$UiComponent;
-    .locals 2
+    .locals 3
 
-    .line 56
+    .line 55
     sget-object v0, Ljp/co/sony/mc/camera/view/EventProcedure$UiComponent;->FINDER_AREA:Ljp/co/sony/mc/camera/view/EventProcedure$UiComponent;
 
     sget-object v1, Ljp/co/sony/mc/camera/view/EventProcedure$UiComponent;->ANGLE_CHANGE_BUTTON:Ljp/co/sony/mc/camera/view/EventProcedure$UiComponent;
 
-    filled-new-array {v0, v1}, [Ljp/co/sony/mc/camera/view/EventProcedure$UiComponent;
+    sget-object v2, Ljp/co/sony/mc/camera/view/EventProcedure$UiComponent;->PINCH_ZOOM_UP:Ljp/co/sony/mc/camera/view/EventProcedure$UiComponent;
+
+    filled-new-array {v0, v1, v2}, [Ljp/co/sony/mc/camera/view/EventProcedure$UiComponent;
 
     move-result-object v0
 
@@ -53,7 +57,7 @@
 .method static constructor <clinit>()V
     .locals 3
 
-    .line 57
+    .line 56
     new-instance v0, Ljp/co/sony/mc/camera/view/EventProcedure$UiComponent;
 
     const-string v1, "FINDER_AREA"
@@ -64,7 +68,7 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/view/EventProcedure$UiComponent;->FINDER_AREA:Ljp/co/sony/mc/camera/view/EventProcedure$UiComponent;
 
-    .line 59
+    .line 58
     new-instance v0, Ljp/co/sony/mc/camera/view/EventProcedure$UiComponent;
 
     const-string v1, "ANGLE_CHANGE_BUTTON"
@@ -75,7 +79,18 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/view/EventProcedure$UiComponent;->ANGLE_CHANGE_BUTTON:Ljp/co/sony/mc/camera/view/EventProcedure$UiComponent;
 
-    .line 56
+    .line 59
+    new-instance v0, Ljp/co/sony/mc/camera/view/EventProcedure$UiComponent;
+
+    const-string v1, "PINCH_ZOOM_UP"
+
+    const/4 v2, 0x2
+
+    invoke-direct {v0, v1, v2}, Ljp/co/sony/mc/camera/view/EventProcedure$UiComponent;-><init>(Ljava/lang/String;I)V
+
+    sput-object v0, Ljp/co/sony/mc/camera/view/EventProcedure$UiComponent;->PINCH_ZOOM_UP:Ljp/co/sony/mc/camera/view/EventProcedure$UiComponent;
+
+    .line 55
     invoke-static {}, Ljp/co/sony/mc/camera/view/EventProcedure$UiComponent;->$values()[Ljp/co/sony/mc/camera/view/EventProcedure$UiComponent;
 
     move-result-object v0
@@ -93,7 +108,7 @@
         }
     .end annotation
 
-    .line 56
+    .line 55
     invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
     return-void
@@ -102,7 +117,7 @@
 .method public static valueOf(Ljava/lang/String;)Ljp/co/sony/mc/camera/view/EventProcedure$UiComponent;
     .locals 1
 
-    .line 56
+    .line 55
     const-class v0, Ljp/co/sony/mc/camera/view/EventProcedure$UiComponent;
 
     invoke-static {v0, p0}, Ljava/lang/Enum;->valueOf(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
@@ -117,7 +132,7 @@
 .method public static values()[Ljp/co/sony/mc/camera/view/EventProcedure$UiComponent;
     .locals 1
 
-    .line 56
+    .line 55
     sget-object v0, Ljp/co/sony/mc/camera/view/EventProcedure$UiComponent;->$VALUES:[Ljp/co/sony/mc/camera/view/EventProcedure$UiComponent;
 
     invoke-virtual {v0}, [Ljp/co/sony/mc/camera/view/EventProcedure$UiComponent;->clone()Ljava/lang/Object;

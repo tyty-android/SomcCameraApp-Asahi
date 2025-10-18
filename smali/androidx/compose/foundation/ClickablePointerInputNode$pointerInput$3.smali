@@ -70,7 +70,7 @@
 .method public bridge synthetic invoke(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 2
 
-    .line 889
+    .line 981
     check-cast p1, Landroidx/compose/ui/geometry/Offset;
 
     invoke-virtual {p1}, Landroidx/compose/ui/geometry/Offset;->unbox-impl()J
@@ -87,7 +87,7 @@
 .method public final invoke-k-4lQ0M(J)V
     .locals 0
 
-    .line 895
+    .line 987
     iget-object p1, p0, Landroidx/compose/foundation/ClickablePointerInputNode$pointerInput$3;->this$0:Landroidx/compose/foundation/ClickablePointerInputNode;
 
     invoke-virtual {p1}, Landroidx/compose/foundation/ClickablePointerInputNode;->getEnabled()Z

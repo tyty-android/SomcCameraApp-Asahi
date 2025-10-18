@@ -32,7 +32,7 @@
         }
     .end annotation
 
-    .line 958
+    .line 985
     iput-object p1, p0, Ljp/co/sony/mc/camera/view/FragmentController$8;->this$0:Ljp/co/sony/mc/camera/view/FragmentController;
 
     iput-object p2, p0, Ljp/co/sony/mc/camera/view/FragmentController$8;->val$content:Ljp/co/sony/mc/camera/view/hint/HintTextContent;
@@ -47,7 +47,7 @@
 .method public run()V
     .locals 1
 
-    .line 961
+    .line 988
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/FragmentController$8;->this$0:Ljp/co/sony/mc/camera/view/FragmentController;
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/view/FragmentController;->-$$Nest$fgetmCameraEventNotifier(Ljp/co/sony/mc/camera/view/FragmentController;)Ljp/co/sony/mc/camera/view/CameraEventListener;

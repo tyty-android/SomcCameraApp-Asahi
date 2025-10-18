@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:layout_gravity="center_vertical" android:orientation="horizontal" android:id="@id/title_bar" android:background="@color/settings_background_color" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageButton android:id="@id/back" android:background="@android:color/transparent" android:layout_width="@dimen/camera_submenu_button_size" android:layout_height="@dimen/camera_submenu_button_size" android:src="@drawable/camera_common_back" android:contentDescription="@string/camera_strings_accessibility_back_txt" android:layout_marginStart="@dimen/photopro_header_back_start_margin" />
+    <TextView android:textColor="@color/photopro_text_primary" android:gravity="start|center" android:layout_gravity="center_vertical" android:id="@id/title" android:background="@android:color/transparent" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" android:paddingStart="@dimen/settings_detail_switch_bar_text_margin_start" android:paddingEnd="@dimen/settings_detail_switch_bar_text_margin_end" style="@style/TextAppearance.PhotoPro.Setting.Menu.Category" />
+</LinearLayout>

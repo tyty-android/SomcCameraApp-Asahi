@@ -14,7 +14,7 @@
 
 
 # static fields
-.field public static final icon_frame:I = 0x7f09023c
+.field public static final icon_frame:I = 0x7f090239
 
 .field public static final preferences_detail:I = 0x7f090389
 
@@ -22,15 +22,15 @@
 
 .field public static final preferences_sliding_pane_layout:I = 0x7f09038b
 
-.field public static final recycler_view:I = 0x7f0903bf
+.field public static final recycler_view:I = 0x7f0903bd
 
-.field public static final seekbar:I = 0x7f09040d
+.field public static final seekbar:I = 0x7f0903fe
 
-.field public static final seekbar_value:I = 0x7f09040e
+.field public static final seekbar_value:I = 0x7f0903ff
 
-.field public static final spinner:I = 0x7f090451
+.field public static final spinner:I = 0x7f090441
 
-.field public static final switchWidget:I = 0x7f09048b
+.field public static final switchWidget:I = 0x7f090479
 
 
 # direct methods

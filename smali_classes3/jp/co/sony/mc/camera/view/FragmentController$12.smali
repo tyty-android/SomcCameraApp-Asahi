@@ -25,7 +25,7 @@
 .method constructor <init>(Ljp/co/sony/mc/camera/view/FragmentController;)V
     .locals 0
 
-    .line 2929
+    .line 3072
     iput-object p1, p0, Ljp/co/sony/mc/camera/view/FragmentController$12;->this$0:Ljp/co/sony/mc/camera/view/FragmentController;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -38,7 +38,7 @@
 .method public onFailure()V
     .locals 2
 
-    .line 2943
+    .line 3086
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/FragmentController$12;->this$0:Ljp/co/sony/mc/camera/view/FragmentController;
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/view/FragmentController;->-$$Nest$fgetmActivity(Ljp/co/sony/mc/camera/view/FragmentController;)Ljp/co/sony/mc/camera/CameraActivity;
@@ -57,7 +57,7 @@
 .method public onSuccess(Ljava/lang/String;)V
     .locals 2
 
-    .line 2932
+    .line 3075
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/FragmentController$12;->this$0:Ljp/co/sony/mc/camera/view/FragmentController;
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/view/FragmentController;->-$$Nest$fgetmActivity(Ljp/co/sony/mc/camera/view/FragmentController;)Ljp/co/sony/mc/camera/CameraActivity;

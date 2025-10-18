@@ -96,7 +96,7 @@
     const-string v0, "androidx.lifecycle.savedstate.vm.tag"
 
     .line 47
-    invoke-virtual {p0, v0}, Landroidx/lifecycle/ViewModel;->getTag(Ljava/lang/String;)Ljava/lang/Object;
+    invoke-virtual {p0, v0}, Landroidx/lifecycle/ViewModel;->getCloseable(Ljava/lang/String;)Ljava/lang/AutoCloseable;
 
     move-result-object p0
 

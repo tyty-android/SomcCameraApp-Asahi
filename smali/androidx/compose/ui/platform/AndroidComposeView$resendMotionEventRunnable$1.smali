@@ -47,7 +47,7 @@
 
     iput-object p1, p0, Landroidx/compose/ui/platform/AndroidComposeView$resendMotionEventRunnable$1;->this$0:Landroidx/compose/ui/platform/AndroidComposeView;
 
-    .line 486
+    .line 531
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -58,7 +58,7 @@
 .method public run()V
     .locals 7
 
-    .line 488
+    .line 533
     iget-object v0, p0, Landroidx/compose/ui/platform/AndroidComposeView$resendMotionEventRunnable$1;->this$0:Landroidx/compose/ui/platform/AndroidComposeView;
 
     move-object v1, p0
@@ -67,7 +67,7 @@
 
     invoke-virtual {v0, v1}, Landroidx/compose/ui/platform/AndroidComposeView;->removeCallbacks(Ljava/lang/Runnable;)Z
 
-    .line 489
+    .line 534
     iget-object v0, p0, Landroidx/compose/ui/platform/AndroidComposeView$resendMotionEventRunnable$1;->this$0:Landroidx/compose/ui/platform/AndroidComposeView;
 
     invoke-static {v0}, Landroidx/compose/ui/platform/AndroidComposeView;->access$getPreviousMotionEvent$p(Landroidx/compose/ui/platform/AndroidComposeView;)Landroid/view/MotionEvent;
@@ -78,7 +78,7 @@
 
     const/4 v0, 0x0
 
-    .line 491
+    .line 536
     invoke-virtual {v2, v0}, Landroid/view/MotionEvent;->getToolType(I)I
 
     move-result v1
@@ -91,7 +91,7 @@
 
     move v0, v4
 
-    .line 492
+    .line 537
     :cond_0
     invoke-virtual {v2}, Landroid/view/MotionEvent;->getActionMasked()I
 
@@ -124,7 +124,7 @@
     :cond_2
     move v3, v0
 
-    .line 505
+    .line 550
     iget-object v1, p0, Landroidx/compose/ui/platform/AndroidComposeView$resendMotionEventRunnable$1;->this$0:Landroidx/compose/ui/platform/AndroidComposeView;
 
     invoke-static {v1}, Landroidx/compose/ui/platform/AndroidComposeView;->access$getRelayoutTime$p(Landroidx/compose/ui/platform/AndroidComposeView;)J

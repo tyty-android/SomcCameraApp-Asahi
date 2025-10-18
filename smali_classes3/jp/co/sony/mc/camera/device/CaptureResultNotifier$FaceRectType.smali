@@ -38,7 +38,7 @@
 .method private static synthetic $values()[Ljp/co/sony/mc/camera/device/CaptureResultNotifier$FaceRectType;
     .locals 4
 
-    .line 441
+    .line 448
     sget-object v0, Ljp/co/sony/mc/camera/device/CaptureResultNotifier$FaceRectType;->HUMAN_FACE:Ljp/co/sony/mc/camera/device/CaptureResultNotifier$FaceRectType;
 
     sget-object v1, Ljp/co/sony/mc/camera/device/CaptureResultNotifier$FaceRectType;->HUMAN_BODY:Ljp/co/sony/mc/camera/device/CaptureResultNotifier$FaceRectType;
@@ -57,7 +57,7 @@
 .method static constructor <clinit>()V
     .locals 3
 
-    .line 442
+    .line 449
     new-instance v0, Ljp/co/sony/mc/camera/device/CaptureResultNotifier$FaceRectType;
 
     const-string v1, "HUMAN_FACE"
@@ -68,7 +68,7 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/device/CaptureResultNotifier$FaceRectType;->HUMAN_FACE:Ljp/co/sony/mc/camera/device/CaptureResultNotifier$FaceRectType;
 
-    .line 443
+    .line 450
     new-instance v0, Ljp/co/sony/mc/camera/device/CaptureResultNotifier$FaceRectType;
 
     const-string v1, "HUMAN_BODY"
@@ -79,7 +79,7 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/device/CaptureResultNotifier$FaceRectType;->HUMAN_BODY:Ljp/co/sony/mc/camera/device/CaptureResultNotifier$FaceRectType;
 
-    .line 444
+    .line 451
     new-instance v0, Ljp/co/sony/mc/camera/device/CaptureResultNotifier$FaceRectType;
 
     const-string v1, "ANIMAL_FACE"
@@ -90,7 +90,7 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/device/CaptureResultNotifier$FaceRectType;->ANIMAL_FACE:Ljp/co/sony/mc/camera/device/CaptureResultNotifier$FaceRectType;
 
-    .line 445
+    .line 452
     new-instance v0, Ljp/co/sony/mc/camera/device/CaptureResultNotifier$FaceRectType;
 
     const-string v1, "ANIMAL_BODY"
@@ -101,7 +101,7 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/device/CaptureResultNotifier$FaceRectType;->ANIMAL_BODY:Ljp/co/sony/mc/camera/device/CaptureResultNotifier$FaceRectType;
 
-    .line 441
+    .line 448
     invoke-static {}, Ljp/co/sony/mc/camera/device/CaptureResultNotifier$FaceRectType;->$values()[Ljp/co/sony/mc/camera/device/CaptureResultNotifier$FaceRectType;
 
     move-result-object v0
@@ -119,7 +119,7 @@
         }
     .end annotation
 
-    .line 441
+    .line 448
     invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
     return-void
@@ -128,7 +128,7 @@
 .method public static valueOf(Ljava/lang/String;)Ljp/co/sony/mc/camera/device/CaptureResultNotifier$FaceRectType;
     .locals 1
 
-    .line 441
+    .line 448
     const-class v0, Ljp/co/sony/mc/camera/device/CaptureResultNotifier$FaceRectType;
 
     invoke-static {v0, p0}, Ljava/lang/Enum;->valueOf(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
@@ -143,7 +143,7 @@
 .method public static values()[Ljp/co/sony/mc/camera/device/CaptureResultNotifier$FaceRectType;
     .locals 1
 
-    .line 441
+    .line 448
     sget-object v0, Ljp/co/sony/mc/camera/device/CaptureResultNotifier$FaceRectType;->$VALUES:[Ljp/co/sony/mc/camera/device/CaptureResultNotifier$FaceRectType;
 
     invoke-virtual {v0}, [Ljp/co/sony/mc/camera/device/CaptureResultNotifier$FaceRectType;->clone()Ljava/lang/Object;

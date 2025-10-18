@@ -1,6 +1,6 @@
 .class final Landroidx/compose/ui/tooling/animation/PreviewAnimationClock$trackAnimatedVisibility$1;
 .super Lkotlin/jvm/internal/Lambda;
-.source "PreviewAnimationClock.kt"
+.source "PreviewAnimationClock.android.kt"
 
 # interfaces
 .implements Lkotlin/jvm/functions/Function0;
@@ -76,7 +76,7 @@
 .method public bridge synthetic invoke()Ljava/lang/Object;
     .locals 0
 
-    .line 120
+    .line 124
     invoke-virtual {p0}, Landroidx/compose/ui/tooling/animation/PreviewAnimationClock$trackAnimatedVisibility$1;->invoke()V
 
     sget-object p0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;

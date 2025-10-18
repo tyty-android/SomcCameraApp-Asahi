@@ -506,7 +506,7 @@
 .end method
 
 .method public static cutOffXmpData(Ljava/nio/ByteBuffer;)Ljava/nio/ByteBuffer;
-    .locals 3
+    .locals 4
 
     .line 181
     invoke-static {p0}, Ljp/co/sony/mc/camera/util/JpegXMPRemover;->scanMarkerIndex(Ljava/nio/ByteBuffer;)Landroid/util/SparseArray;
@@ -533,13 +533,17 @@
 
     return-object p0
 
-    .line 190
     :cond_1
-    sget-object v1, Ljp/co/sony/mc/camera/util/JpegXMPRemover$MarkerType;->XMP:Ljp/co/sony/mc/camera/util/JpegXMPRemover$MarkerType;
+    const/4 v1, 0x1
 
-    filled-new-array {v1}, [Ljp/co/sony/mc/camera/util/JpegXMPRemover$MarkerType;
+    .line 190
+    new-array v1, v1, [Ljp/co/sony/mc/camera/util/JpegXMPRemover$MarkerType;
 
-    move-result-object v1
+    const/4 v2, 0x0
+
+    sget-object v3, Ljp/co/sony/mc/camera/util/JpegXMPRemover$MarkerType;->XMP:Ljp/co/sony/mc/camera/util/JpegXMPRemover$MarkerType;
+
+    aput-object v3, v1, v2
 
     invoke-static {p0, v0, v1}, Ljp/co/sony/mc/camera/util/JpegXMPRemover;->cutOff(Ljava/nio/ByteBuffer;Landroid/util/SparseArray;[Ljp/co/sony/mc/camera/util/JpegXMPRemover$MarkerType;)Ljava/nio/ByteBuffer;
 
@@ -793,6 +797,8 @@
 
     move-result v3
 
+    const/4 v6, 0x1
+
     if-lez v3, :cond_7
 
     .line 261
@@ -806,17 +812,17 @@
     .line 267
     invoke-static {p0, v3, v2}, Ljp/co/sony/mc/camera/util/JpegXMPRemover;->findMarkerType(Ljava/nio/ByteBuffer;I[B)Ljp/co/sony/mc/camera/util/JpegXMPRemover$MarkerType;
 
-    move-result-object v6
+    move-result-object v7
 
     .line 272
-    sget-object v7, Ljp/co/sony/mc/camera/util/JpegXMPRemover$MarkerType;->NONE:Ljp/co/sony/mc/camera/util/JpegXMPRemover$MarkerType;
+    sget-object v8, Ljp/co/sony/mc/camera/util/JpegXMPRemover$MarkerType;->NONE:Ljp/co/sony/mc/camera/util/JpegXMPRemover$MarkerType;
 
-    if-eq v6, v7, :cond_1
+    if-eq v7, v8, :cond_1
 
     .line 273
-    invoke-virtual {v6, p0, v3}, Ljp/co/sony/mc/camera/util/JpegXMPRemover$MarkerType;->calculateDataSize(Ljava/nio/ByteBuffer;I)I
+    invoke-virtual {v7, p0, v3}, Ljp/co/sony/mc/camera/util/JpegXMPRemover$MarkerType;->calculateDataSize(Ljava/nio/ByteBuffer;I)I
 
-    move-result v7
+    move-result v8
 
     goto :goto_1
 
@@ -824,56 +830,54 @@
     :cond_1
     invoke-virtual {v0}, Landroid/util/SparseArray;->size()I
 
-    move-result v7
+    move-result v8
 
-    const/4 v8, 0x1
+    sub-int/2addr v8, v6
 
-    sub-int/2addr v7, v8
+    invoke-virtual {v0, v8}, Landroid/util/SparseArray;->valueAt(I)Ljava/lang/Object;
 
-    invoke-virtual {v0, v7}, Landroid/util/SparseArray;->valueAt(I)Ljava/lang/Object;
-
-    move-result-object v7
+    move-result-object v8
 
     sget-object v9, Ljp/co/sony/mc/camera/util/JpegXMPRemover$MarkerType;->SOS:Ljp/co/sony/mc/camera/util/JpegXMPRemover$MarkerType;
 
-    if-ne v7, v9, :cond_3
+    if-ne v8, v9, :cond_3
 
     .line 278
-    sget-object v7, Ljp/co/sony/mc/camera/util/JpegXMPRemover$MarkerType;->SOF:Ljp/co/sony/mc/camera/util/JpegXMPRemover$MarkerType;
+    sget-object v8, Ljp/co/sony/mc/camera/util/JpegXMPRemover$MarkerType;->SOF:Ljp/co/sony/mc/camera/util/JpegXMPRemover$MarkerType;
 
-    invoke-virtual {v0, v7}, Landroid/util/SparseArray;->indexOfValue(Ljava/lang/Object;)I
+    invoke-virtual {v0, v8}, Landroid/util/SparseArray;->indexOfValue(Ljava/lang/Object;)I
 
-    move-result v7
+    move-result v8
 
-    invoke-virtual {v0, v7}, Landroid/util/SparseArray;->keyAt(I)I
+    invoke-virtual {v0, v8}, Landroid/util/SparseArray;->keyAt(I)I
 
-    move-result v7
+    move-result v8
 
     .line 279
     sget-object v9, Ljp/co/sony/mc/camera/util/JpegXMPRemover$MarkerType;->SOF:Ljp/co/sony/mc/camera/util/JpegXMPRemover$MarkerType;
 
-    invoke-virtual {v9, p0, v7}, Ljp/co/sony/mc/camera/util/JpegXMPRemover$MarkerType;->getInfo(Ljava/nio/ByteBuffer;I)Ljava/lang/Object;
+    invoke-virtual {v9, p0, v8}, Ljp/co/sony/mc/camera/util/JpegXMPRemover$MarkerType;->getInfo(Ljava/nio/ByteBuffer;I)Ljava/lang/Object;
 
-    move-result-object v7
+    move-result-object v8
 
-    check-cast v7, [I
+    check-cast v8, [I
 
     sub-int v9, v5, v3
 
     .line 281
-    aget v10, v7, v4
+    aget v10, v8, v4
 
-    aget v7, v7, v8
+    aget v8, v8, v6
 
-    mul-int/2addr v10, v7
+    mul-int/2addr v10, v8
 
     if-ge v9, v10, :cond_2
 
     .line 284
-    sget-object v6, Ljp/co/sony/mc/camera/util/JpegXMPRemover$MarkerType;->IMAGE:Ljp/co/sony/mc/camera/util/JpegXMPRemover$MarkerType;
+    sget-object v7, Ljp/co/sony/mc/camera/util/JpegXMPRemover$MarkerType;->IMAGE:Ljp/co/sony/mc/camera/util/JpegXMPRemover$MarkerType;
 
     :cond_2
-    move v7, v9
+    move v8, v9
 
     goto :goto_1
 
@@ -881,42 +885,42 @@
     :cond_3
     invoke-virtual {p0}, Ljava/nio/ByteBuffer;->remaining()I
 
-    move-result v7
+    move-result v8
 
-    if-ge v1, v7, :cond_4
+    if-ge v1, v8, :cond_4
 
     .line 292
-    invoke-virtual {v6, p0, v3}, Ljp/co/sony/mc/camera/util/JpegXMPRemover$MarkerType;->calculateDataSize(Ljava/nio/ByteBuffer;I)I
+    invoke-virtual {v7, p0, v3}, Ljp/co/sony/mc/camera/util/JpegXMPRemover$MarkerType;->calculateDataSize(Ljava/nio/ByteBuffer;I)I
 
-    move-result v7
+    move-result v8
 
     goto :goto_1
 
     :cond_4
-    move v7, v4
+    move v8, v4
 
     .line 298
     :goto_1
-    invoke-virtual {v0, v3, v6}, Landroid/util/SparseArray;->append(ILjava/lang/Object;)V
+    invoke-virtual {v0, v3, v7}, Landroid/util/SparseArray;->append(ILjava/lang/Object;)V
 
     .line 300
-    sget-object v8, Ljp/co/sony/mc/camera/util/JpegXMPRemover$MarkerType;->NONE:Ljp/co/sony/mc/camera/util/JpegXMPRemover$MarkerType;
+    sget-object v9, Ljp/co/sony/mc/camera/util/JpegXMPRemover$MarkerType;->NONE:Ljp/co/sony/mc/camera/util/JpegXMPRemover$MarkerType;
 
-    if-ne v6, v8, :cond_5
+    if-ne v7, v9, :cond_5
 
-    if-gtz v7, :cond_5
+    if-gtz v8, :cond_5
 
     goto :goto_2
 
     .line 306
     :cond_5
-    invoke-virtual {v6}, Ljp/co/sony/mc/camera/util/JpegXMPRemover$MarkerType;->markerLength()I
+    invoke-virtual {v7}, Ljp/co/sony/mc/camera/util/JpegXMPRemover$MarkerType;->markerLength()I
 
     move-result v6
 
     add-int/2addr v3, v6
 
-    add-int/2addr v3, v7
+    add-int/2addr v3, v8
 
     .line 307
     invoke-virtual {p0}, Ljava/nio/ByteBuffer;->capacity()I
@@ -951,78 +955,80 @@
     if-eqz p0, :cond_9
 
     .line 317
-    const-string p0, "Jpeg marker scan result: E"
+    new-array p0, v6, [Ljava/lang/String;
 
-    filled-new-array {p0}, [Ljava/lang/String;
+    const-string v1, "Jpeg marker scan result: E"
 
-    move-result-object p0
+    aput-object v1, p0, v4
 
     invoke-static {p0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
+
+    move p0, v4
 
     .line 318
     :goto_3
     invoke-virtual {v0}, Landroid/util/SparseArray;->size()I
 
-    move-result p0
-
-    if-ge v4, p0, :cond_8
-
-    .line 319
-    new-instance p0, Ljava/lang/StringBuilder;
-
-    const-string v1, "index = "
-
-    invoke-direct {p0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
-
-    invoke-virtual {v0, v4}, Landroid/util/SparseArray;->keyAt(I)I
-
     move-result v1
 
-    invoke-virtual {p0, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+    if-ge p0, v1, :cond_8
 
-    move-result-object p0
+    .line 319
+    new-array v1, v6, [Ljava/lang/String;
 
-    const-string v1, ", type = "
+    new-instance v2, Ljava/lang/StringBuilder;
 
-    invoke-virtual {p0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    const-string v3, "index = "
 
-    move-result-object p0
+    invoke-direct {v2, v3}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
-    invoke-virtual {v0, v4}, Landroid/util/SparseArray;->valueAt(I)Ljava/lang/Object;
+    invoke-virtual {v0, p0}, Landroid/util/SparseArray;->keyAt(I)I
 
-    move-result-object v1
+    move-result v3
 
-    check-cast v1, Ljp/co/sony/mc/camera/util/JpegXMPRemover$MarkerType;
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v1}, Ljp/co/sony/mc/camera/util/JpegXMPRemover$MarkerType;->name()Ljava/lang/String;
+    move-result-object v2
 
-    move-result-object v1
+    const-string v3, ", type = "
 
-    invoke-virtual {p0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    move-result-object p0
+    move-result-object v2
 
-    invoke-virtual {p0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-virtual {v0, p0}, Landroid/util/SparseArray;->valueAt(I)Ljava/lang/Object;
 
-    move-result-object p0
+    move-result-object v3
 
-    filled-new-array {p0}, [Ljava/lang/String;
+    check-cast v3, Ljp/co/sony/mc/camera/util/JpegXMPRemover$MarkerType;
 
-    move-result-object p0
+    invoke-virtual {v3}, Ljp/co/sony/mc/camera/util/JpegXMPRemover$MarkerType;->name()Ljava/lang/String;
 
-    invoke-static {p0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
+    move-result-object v3
 
-    add-int/lit8 v4, v4, 0x1
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v2
+
+    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v2
+
+    aput-object v2, v1, v4
+
+    invoke-static {v1}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
+
+    add-int/lit8 p0, p0, 0x1
 
     goto :goto_3
 
     .line 321
     :cond_8
-    const-string p0, "Jpeg marker scan result: X"
+    new-array p0, v6, [Ljava/lang/String;
 
-    filled-new-array {p0}, [Ljava/lang/String;
+    const-string v1, "Jpeg marker scan result: X"
 
-    move-result-object p0
+    aput-object v1, p0, v4
 
     invoke-static {p0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 

@@ -47,6 +47,8 @@
 
 
 # static fields
+.field public static final $stable:I
+
 .field public static final Companion:Landroidx/compose/foundation/pager/PagerStateImpl$Companion;
 
 .field private static final Saver:Landroidx/compose/runtime/saveable/Saver;
@@ -85,7 +87,7 @@
 
     sput-object v0, Landroidx/compose/foundation/pager/PagerStateImpl;->Companion:Landroidx/compose/foundation/pager/PagerStateImpl$Companion;
 
-    .line 140
+    .line 106
     sget-object v0, Landroidx/compose/foundation/pager/PagerStateImpl$Companion$Saver$1;->INSTANCE:Landroidx/compose/foundation/pager/PagerStateImpl$Companion$Saver$1;
 
     check-cast v0, Lkotlin/jvm/functions/Function2;
@@ -104,7 +106,7 @@
 .end method
 
 .method public constructor <init>(IFLkotlin/jvm/functions/Function0;)V
-    .locals 1
+    .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(IF",
@@ -114,18 +116,14 @@
         }
     .end annotation
 
-    const-string/jumbo v0, "updatedPageCount"
-
-    invoke-static {p3, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 131
+    .line 97
     invoke-direct {p0, p1, p2}, Landroidx/compose/foundation/pager/PagerState;-><init>(IF)V
 
     const/4 p1, 0x0
 
     const/4 p2, 0x2
 
-    .line 133
+    .line 99
     invoke-static {p3, p1, p2, p1}, Landroidx/compose/runtime/SnapshotStateKt;->mutableStateOf$default(Ljava/lang/Object;Landroidx/compose/runtime/SnapshotMutationPolicy;ILjava/lang/Object;)Landroidx/compose/runtime/MutableState;
 
     move-result-object p1
@@ -138,7 +136,7 @@
 .method public static final synthetic access$getSaver$cp()Landroidx/compose/runtime/saveable/Saver;
     .locals 1
 
-    .line 126
+    .line 92
     sget-object v0, Landroidx/compose/foundation/pager/PagerStateImpl;->Saver:Landroidx/compose/runtime/saveable/Saver;
 
     return-object v0
@@ -149,7 +147,7 @@
 .method public getPageCount()I
     .locals 0
 
-    .line 134
+    .line 100
     iget-object p0, p0, Landroidx/compose/foundation/pager/PagerStateImpl;->pageCountState:Landroidx/compose/runtime/MutableState;
 
     invoke-interface {p0}, Landroidx/compose/runtime/MutableState;->getValue()Ljava/lang/Object;
@@ -183,14 +181,14 @@
         }
     .end annotation
 
-    .line 133
+    .line 99
     iget-object p0, p0, Landroidx/compose/foundation/pager/PagerStateImpl;->pageCountState:Landroidx/compose/runtime/MutableState;
 
     return-object p0
 .end method
 
 .method public final setPageCountState(Landroidx/compose/runtime/MutableState;)V
-    .locals 1
+    .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -201,11 +199,7 @@
         }
     .end annotation
 
-    const-string v0, "<set-?>"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 133
+    .line 99
     iput-object p1, p0, Landroidx/compose/foundation/pager/PagerStateImpl;->pageCountState:Landroidx/compose/runtime/MutableState;
 
     return-void

@@ -1,6 +1,6 @@
 .class public final Landroidx/compose/ui/tooling/animation/ToolingState;
 .super Ljava/lang/Object;
-.source "ToolingState.kt"
+.source "ToolingState.android.kt"
 
 # interfaces
 .implements Landroidx/compose/runtime/State;
@@ -19,7 +19,7 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/SourceDebugExtension;
-    value = "SMAP\nToolingState.kt\nKotlin\n*S Kotlin\n*F\n+ 1 ToolingState.kt\nandroidx/compose/ui/tooling/animation/ToolingState\n+ 2 SnapshotState.kt\nandroidx/compose/runtime/SnapshotStateKt__SnapshotStateKt\n*L\n1#1,39:1\n81#2:40\n107#2,2:41\n*S KotlinDebug\n*F\n+ 1 ToolingState.kt\nandroidx/compose/ui/tooling/animation/ToolingState\n*L\n38#1:40\n38#1:41,2\n*E\n"
+    value = "SMAP\nToolingState.android.kt\nKotlin\n*S Kotlin\n*F\n+ 1 ToolingState.android.kt\nandroidx/compose/ui/tooling/animation/ToolingState\n+ 2 SnapshotState.kt\nandroidx/compose/runtime/SnapshotStateKt__SnapshotStateKt\n*L\n1#1,40:1\n81#2:41\n107#2,2:42\n*S KotlinDebug\n*F\n+ 1 ToolingState.android.kt\nandroidx/compose/ui/tooling/animation/ToolingState\n*L\n38#1:41\n38#1:42,2\n*E\n"
 .end annotation
 
 .annotation runtime Lkotlin/Metadata;
@@ -106,7 +106,7 @@
 
     check-cast p0, Landroidx/compose/runtime/State;
 
-    .line 40
+    .line 41
     invoke-interface {p0}, Landroidx/compose/runtime/State;->getValue()Ljava/lang/Object;
 
     move-result-object p0
@@ -125,7 +125,7 @@
     .line 38
     iget-object p0, p0, Landroidx/compose/ui/tooling/animation/ToolingState;->value$delegate:Landroidx/compose/runtime/MutableState;
 
-    .line 41
+    .line 42
     invoke-interface {p0, p1}, Landroidx/compose/runtime/MutableState;->setValue(Ljava/lang/Object;)V
 
     return-void

@@ -404,17 +404,27 @@
     goto :goto_1
 
     :cond_2
-    move v0, v1
+    move p2, v1
+
+    goto :goto_2
 
     :cond_3
     :goto_1
+    move p2, v0
+
+    :goto_2
     move v3, v1
 
-    move v1, v0
+    move v1, p2
 
-    move v0, v3
+    move p2, v3
+
+    goto :goto_3
 
     :cond_4
+    move p2, v0
+
+    :goto_3
     if-eqz v1, :cond_5
 
     .line 240
@@ -426,26 +436,28 @@
     .catch Ljava/io/IOException; {:try_start_1 .. :try_end_1} :catch_0
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
-    goto :goto_2
+    goto :goto_4
 
     :catch_0
     move-exception p2
 
     .line 242
     :try_start_2
-    iget-object v0, p0, Lorg/apache/http/impl/conn/SingleClientConnManager;->log:Lorg/apache/commons/logging/Log;
+    iget-object v1, p0, Lorg/apache/http/impl/conn/SingleClientConnManager;->log:Lorg/apache/commons/logging/Log;
 
-    const-string v1, "Problem shutting down connection."
+    const-string v2, "Problem shutting down connection."
 
-    invoke-interface {v0, v1, p2}, Lorg/apache/commons/logging/Log;->debug(Ljava/lang/Object;Ljava/lang/Throwable;)V
+    invoke-interface {v1, v2, p2}, Lorg/apache/commons/logging/Log;->debug(Ljava/lang/Object;Ljava/lang/Throwable;)V
 
-    goto :goto_2
+    goto :goto_4
 
     :cond_5
+    move v0, p2
+
+    :goto_4
     if-eqz v0, :cond_6
 
     .line 247
-    :goto_2
     new-instance p2, Lorg/apache/http/impl/conn/SingleClientConnManager$PoolEntry;
 
     invoke-direct {p2, p0}, Lorg/apache/http/impl/conn/SingleClientConnManager$PoolEntry;-><init>(Lorg/apache/http/impl/conn/SingleClientConnManager;)V

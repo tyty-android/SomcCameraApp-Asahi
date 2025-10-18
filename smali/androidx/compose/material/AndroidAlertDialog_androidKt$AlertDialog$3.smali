@@ -48,8 +48,6 @@
 
 
 # instance fields
-.field final synthetic $$dirty:I
-
 .field final synthetic $backgroundColor:J
 
 .field final synthetic $buttons:Lkotlin/jvm/functions/Function2;
@@ -96,7 +94,7 @@
 
 
 # direct methods
-.method constructor <init>(Lkotlin/jvm/functions/Function2;Landroidx/compose/ui/Modifier;Lkotlin/jvm/functions/Function2;Lkotlin/jvm/functions/Function2;Landroidx/compose/ui/graphics/Shape;JJI)V
+.method constructor <init>(Lkotlin/jvm/functions/Function2;Landroidx/compose/ui/Modifier;Lkotlin/jvm/functions/Function2;Lkotlin/jvm/functions/Function2;Landroidx/compose/ui/graphics/Shape;JJ)V
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -124,7 +122,7 @@
             "Lkotlin/Unit;",
             ">;",
             "Landroidx/compose/ui/graphics/Shape;",
-            "JJI)V"
+            "JJ)V"
         }
     .end annotation
 
@@ -141,8 +139,6 @@
     iput-wide p6, p0, Landroidx/compose/material/AndroidAlertDialog_androidKt$AlertDialog$3;->$backgroundColor:J
 
     iput-wide p8, p0, Landroidx/compose/material/AndroidAlertDialog_androidKt$AlertDialog$3;->$contentColor:J
-
-    iput p10, p0, Landroidx/compose/material/AndroidAlertDialog_androidKt$AlertDialog$3;->$$dirty:I
 
     const/4 p1, 0x2
 
@@ -217,7 +213,7 @@
 
     const/4 v2, -0x1
 
-    const-string v3, "androidx.compose.material.AlertDialog.<anonymous> (AndroidAlertDialog.android.kt:139)"
+    const-string v3, "androidx.compose.material.AlertDialog.<anonymous> (AndroidAlertDialog.android.kt:140)"
 
     const v4, -0x6a89d894
 
@@ -245,53 +241,7 @@
     .line 148
     iget-wide v10, v0, Landroidx/compose/material/AndroidAlertDialog_androidKt$AlertDialog$3;->$contentColor:J
 
-    iget v0, v0, Landroidx/compose/material/AndroidAlertDialog_androidKt$AlertDialog$3;->$$dirty:I
-
-    shr-int/lit8 v1, v0, 0x3
-
-    and-int/lit8 v1, v1, 0xe
-
-    shr-int/lit8 v2, v0, 0x3
-
-    and-int/lit8 v2, v2, 0x70
-
-    or-int/2addr v1, v2
-
-    shr-int/lit8 v2, v0, 0x3
-
-    and-int/lit16 v2, v2, 0x380
-
-    or-int/2addr v1, v2
-
-    shr-int/lit8 v2, v0, 0x3
-
-    and-int/lit16 v2, v2, 0x1c00
-
-    or-int/2addr v1, v2
-
-    shr-int/lit8 v2, v0, 0x3
-
-    const v13, 0xe000
-
-    and-int/2addr v2, v13
-
-    or-int/2addr v1, v2
-
-    shr-int/lit8 v2, v0, 0x3
-
-    const/high16 v13, 0x70000
-
-    and-int/2addr v2, v13
-
-    or-int/2addr v1, v2
-
-    const/high16 v2, 0x380000
-
-    shr-int/lit8 v0, v0, 0x3
-
-    and-int/2addr v0, v2
-
-    or-int v13, v1, v0
+    const/4 v13, 0x0
 
     const/4 v14, 0x0
 

@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <style name="TextAppearance.ExtraLarge" parent="@android:style/TextAppearance.DeviceDefault.Large">
-        <item name="android:textSize">36.0dip</item>
-    </style>
-    <style name="TextAppearance.ExtraSmall" parent="@android:style/TextAppearance.DeviceDefault.Small">
-        <item name="android:textSize">12.0dip</item>
-    </style>
-</resources>

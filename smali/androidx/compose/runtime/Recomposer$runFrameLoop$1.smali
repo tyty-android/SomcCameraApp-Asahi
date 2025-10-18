@@ -39,8 +39,8 @@
         0x1
     }
     l = {
-        0x336,
-        0x33d
+        0x367,
+        0x36e
     }
     m = "runFrameLoop"
     n = {

@@ -25,7 +25,7 @@
 .method private constructor <init>(Ljp/co/sony/mc/camera/device/state/DeviceStateContext;)V
     .locals 0
 
-    .line 3251
+    .line 3327
     iput-object p1, p0, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$HistogramResultCallback;->this$0:Ljp/co/sony/mc/camera/device/state/DeviceStateContext;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -46,7 +46,7 @@
 .method public onHistogramChanged(Ljp/co/sony/mc/camera/device/CaptureResultNotifier$HistogramResult;)V
     .locals 0
 
-    .line 3258
+    .line 3334
     iget-object p0, p0, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$HistogramResultCallback;->this$0:Ljp/co/sony/mc/camera/device/state/DeviceStateContext;
 
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/device/state/DeviceStateContext;->getCameraDeviceHandlerCallback()Ljp/co/sony/mc/camera/device/state/IDeviceStateMachineCallback;

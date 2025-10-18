@@ -65,7 +65,7 @@
     .line 17
     new-instance v0, Ljp/co/sony/mc/camera/configuration/parameters/RemoteButtonCustom;
 
-    const v1, 0x7f110033
+    const v1, 0x7f110028
 
     const-string v2, "FOCAL_LENGTH"
 
@@ -82,7 +82,7 @@
 
     const/4 v1, 0x1
 
-    const v2, 0x7f110034
+    const v2, 0x7f110029
 
     const-string v3, "CAPTURING_MODE"
 
@@ -95,7 +95,7 @@
 
     const/4 v1, 0x2
 
-    const v2, 0x7f110036
+    const v2, 0x7f11002b
 
     const-string v3, "PHOTO_VIDEO"
 
@@ -108,7 +108,7 @@
 
     const/4 v1, 0x3
 
-    const v2, 0x7f110035
+    const v2, 0x7f11002a
 
     const-string v3, "FRONT"
 
@@ -121,7 +121,7 @@
 
     const/4 v1, 0x4
 
-    const v2, 0x7f110032
+    const v2, 0x7f110027
 
     const-string v3, "FOCUS_MODE"
 

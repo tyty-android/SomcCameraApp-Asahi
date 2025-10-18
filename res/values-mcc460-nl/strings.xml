@@ -19,5 +19,4 @@ Schakel WLAN in via de INSTELLINGEN."</string>
     <string name="camera_strings_runtime_permission_rationale_network_cta_txt">"Deze app gebruikt WLAN en mobiele data om gebruikersgegevens (bijv. gemaakte foto's/video's, spraakgegevens, accountinformatie van de gebruikte services, enz.) te sturen via het internet.
 Mogelijk worden er kosten in rekening gebracht voor data afhankelijk van uw contract met de netwerkoperator of internetprovider."</string>
     <string name="camera_strings_streaming_error_wifi_disconnected_txt">Geen WLAN-verbinding</string>
-    <string name="mv_wireless_network_txt">WLAN en mob. data gebr.</string>
 </resources>

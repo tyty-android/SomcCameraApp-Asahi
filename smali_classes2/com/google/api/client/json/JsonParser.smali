@@ -53,7 +53,7 @@
 .end method
 
 .method private static getCachedTypemapFieldFor(Ljava/lang/Class;)Ljava/lang/reflect/Field;
-    .locals 12
+    .locals 9
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -182,18 +182,14 @@
 
     const-string v6, "Field which has the @JsonPolymorphicTypeMap, %s, is not a supported type: %s"
 
-    const/4 v7, 0x2
-
-    new-array v7, v7, [Ljava/lang/Object;
-
-    aput-object p0, v7, v5
-
     .line 941
     invoke-virtual {v2}, Ljava/lang/reflect/Field;->getType()Ljava/lang/Class;
 
-    move-result-object v8
+    move-result-object v7
 
-    aput-object v8, v7, v4
+    filled-new-array {p0, v7}, [Ljava/lang/Object;
+
+    move-result-object v7
 
     .line 937
     invoke-static {v0, v6, v7}, Lcom/google/api/client/util/Preconditions;->checkArgument(ZLjava/lang/String;[Ljava/lang/Object;)V
@@ -213,52 +209,48 @@
 
     if-lez v6, :cond_4
 
-    move v6, v4
-
     goto :goto_2
 
     :cond_4
-    move v6, v5
+    move v4, v5
 
     :goto_2
-    const-string v7, "@JsonPolymorphicTypeMap must have at least one @TypeDef"
+    const-string v6, "@JsonPolymorphicTypeMap must have at least one @TypeDef"
 
-    invoke-static {v6, v7}, Lcom/google/api/client/util/Preconditions;->checkArgument(ZLjava/lang/Object;)V
+    invoke-static {v4, v6}, Lcom/google/api/client/util/Preconditions;->checkArgument(ZLjava/lang/Object;)V
 
     .line 948
-    array-length v6, v0
-
-    move v7, v5
+    array-length v4, v0
 
     :goto_3
-    if-ge v7, v6, :cond_5
+    if-ge v5, v4, :cond_5
 
-    aget-object v8, v0, v7
+    aget-object v6, v0, v5
 
     .line 950
-    invoke-interface {v8}, Lcom/google/api/client/json/JsonPolymorphicTypeMap$TypeDef;->key()Ljava/lang/String;
+    invoke-interface {v6}, Lcom/google/api/client/json/JsonPolymorphicTypeMap$TypeDef;->key()Ljava/lang/String;
 
-    move-result-object v9
+    move-result-object v7
 
-    invoke-virtual {v3, v9}, Ljava/util/HashSet;->add(Ljava/lang/Object;)Z
+    invoke-virtual {v3, v7}, Ljava/util/HashSet;->add(Ljava/lang/Object;)Z
 
-    move-result v9
+    move-result v7
 
-    const-string v10, "Class contains two @TypeDef annotations with identical key: %s"
-
-    new-array v11, v4, [Ljava/lang/Object;
+    const-string v8, "Class contains two @TypeDef annotations with identical key: %s"
 
     .line 952
-    invoke-interface {v8}, Lcom/google/api/client/json/JsonPolymorphicTypeMap$TypeDef;->key()Ljava/lang/String;
+    invoke-interface {v6}, Lcom/google/api/client/json/JsonPolymorphicTypeMap$TypeDef;->key()Ljava/lang/String;
 
-    move-result-object v8
+    move-result-object v6
 
-    aput-object v8, v11, v5
+    filled-new-array {v6}, [Ljava/lang/Object;
+
+    move-result-object v6
 
     .line 949
-    invoke-static {v9, v10, v11}, Lcom/google/api/client/util/Preconditions;->checkArgument(ZLjava/lang/String;[Ljava/lang/Object;)V
+    invoke-static {v7, v8, v6}, Lcom/google/api/client/util/Preconditions;->checkArgument(ZLjava/lang/String;[Ljava/lang/Object;)V
 
-    add-int/lit8 v7, v7, 0x1
+    add-int/lit8 v5, v5, 0x1
 
     goto :goto_3
 

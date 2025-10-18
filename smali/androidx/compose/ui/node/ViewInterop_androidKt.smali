@@ -5,7 +5,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/SourceDebugExtension;
-    value = "SMAP\nViewInterop.android.kt\nKotlin\n*S Kotlin\n*F\n+ 1 ViewInterop.android.kt\nandroidx/compose/ui/node/ViewInterop_androidKt\n+ 2 ViewInterop.android.kt\nandroidx/compose/ui/node/MergedViewAdapter\n+ 3 ListUtils.kt\nandroidx/compose/ui/util/ListUtilsKt\n*L\n1#1,97:1\n54#2:98\n55#2,4:108\n116#3,2:99\n33#3,6:101\n118#3:107\n*S KotlinDebug\n*F\n+ 1 ViewInterop.android.kt\nandroidx/compose/ui/node/ViewInterop_androidKt\n*L\n45#1:98\n45#1:108,4\n45#1:99,2\n45#1:101,6\n45#1:107\n*E\n"
+    value = "SMAP\nViewInterop.android.kt\nKotlin\n*S Kotlin\n*F\n+ 1 ViewInterop.android.kt\nandroidx/compose/ui/node/ViewInterop_androidKt\n+ 2 ViewInterop.android.kt\nandroidx/compose/ui/node/MergedViewAdapter\n+ 3 ListUtils.kt\nandroidx/compose/ui/util/ListUtilsKt\n*L\n1#1,92:1\n48#2:93\n49#2,4:103\n116#3,2:94\n33#3,6:96\n118#3:102\n*S KotlinDebug\n*F\n+ 1 ViewInterop.android.kt\nandroidx/compose/ui/node/ViewInterop_androidKt\n*L\n39#1:93\n39#1:103,4\n39#1:94,2\n39#1:96,6\n39#1:102\n*E\n"
 .end annotation
 
 .annotation runtime Lkotlin/Metadata;
@@ -49,7 +49,7 @@
 .method static constructor <clinit>()V
     .locals 1
 
-    .line 84
+    .line 78
     const-string v0, "ViewAdapter"
 
     invoke-static {v0}, Landroidx/compose/ui/node/ViewInterop_androidKt;->tagKey(Ljava/lang/String;)I
@@ -75,25 +75,17 @@
         }
     .end annotation
 
-    const-string v0, "<this>"
-
-    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string v0, "factory"
-
-    invoke-static {p2, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 45
+    .line 39
     invoke-static {p0}, Landroidx/compose/ui/node/ViewInterop_androidKt;->getViewAdapter(Landroid/view/View;)Landroidx/compose/ui/node/MergedViewAdapter;
 
     move-result-object p0
 
-    .line 98
+    .line 93
     invoke-virtual {p0}, Landroidx/compose/ui/node/MergedViewAdapter;->getAdapters()Ljava/util/List;
 
     move-result-object v0
 
-    .line 102
+    .line 97
     invoke-interface {v0}, Ljava/util/List;->size()I
 
     move-result v1
@@ -105,17 +97,17 @@
 
     if-ge v2, v1, :cond_1
 
-    .line 103
+    .line 98
     invoke-interface {v0, v2}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
     move-result-object v4
 
-    .line 100
+    .line 95
     move-object v5, v4
 
     check-cast v5, Landroidx/compose/ui/node/ViewAdapter;
 
-    .line 98
+    .line 93
     invoke-interface {v5}, Landroidx/compose/ui/node/ViewAdapter;->getId()I
 
     move-result v5
@@ -144,7 +136,7 @@
     :cond_2
     if-nez v3, :cond_3
 
-    .line 109
+    .line 104
     invoke-interface {p2}, Lkotlin/jvm/functions/Function0;->invoke()Ljava/lang/Object;
 
     move-result-object p1
@@ -153,7 +145,7 @@
 
     check-cast v3, Landroidx/compose/ui/node/ViewAdapter;
 
-    .line 110
+    .line 105
     invoke-virtual {p0}, Landroidx/compose/ui/node/MergedViewAdapter;->getAdapters()Ljava/util/List;
 
     move-result-object p0
@@ -167,11 +159,7 @@
 .method public static final getViewAdapter(Landroid/view/View;)Landroidx/compose/ui/node/MergedViewAdapter;
     .locals 3
 
-    const-string v0, "<this>"
-
-    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 91
+    .line 85
     sget v0, Landroidx/compose/ui/node/ViewInterop_androidKt;->viewAdaptersKey:I
 
     invoke-virtual {p0, v0}, Landroid/view/View;->getTag(I)Ljava/lang/Object;
@@ -192,12 +180,12 @@
     :goto_0
     if-nez v1, :cond_1
 
-    .line 93
+    .line 87
     new-instance v1, Landroidx/compose/ui/node/MergedViewAdapter;
 
     invoke-direct {v1}, Landroidx/compose/ui/node/MergedViewAdapter;-><init>()V
 
-    .line 94
+    .line 88
     invoke-virtual {p0, v0, v1}, Landroid/view/View;->setTag(ILjava/lang/Object;)V
 
     :cond_1
@@ -207,11 +195,7 @@
 .method public static final getViewAdapterIfExists(Landroid/view/View;)Landroidx/compose/ui/node/MergedViewAdapter;
     .locals 1
 
-    const-string v0, "<this>"
-
-    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 87
+    .line 81
     sget v0, Landroidx/compose/ui/node/ViewInterop_androidKt;->viewAdaptersKey:I
 
     invoke-virtual {p0, v0}, Landroid/view/View;->getTag(I)Ljava/lang/Object;
@@ -236,13 +220,9 @@
 .method public static final tagKey(Ljava/lang/String;)I
     .locals 1
 
-    const-string v0, "key"
-
-    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
     const/high16 v0, 0x3000000
 
-    .line 81
+    .line 75
     invoke-virtual {p0}, Ljava/lang/String;->hashCode()I
 
     move-result p0

@@ -27,38 +27,70 @@
 
 # direct methods
 .method public static final Density(Landroid/content/Context;)Landroidx/compose/ui/unit/Density;
-    .locals 1
+    .locals 3
 
-    const-string v0, "context"
-
-    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 28
+    .line 31
     invoke-virtual {p0}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Landroid/content/res/Resources;->getDisplayMetrics()Landroid/util/DisplayMetrics;
+    invoke-virtual {v0}, Landroid/content/res/Resources;->getConfiguration()Landroid/content/res/Configuration;
 
     move-result-object v0
 
-    iget v0, v0, Landroid/util/DisplayMetrics;->density:F
+    iget v0, v0, Landroid/content/res/Configuration;->fontScale:F
 
-    .line 29
+    .line 32
+    invoke-static {}, Landroidx/compose/ui/unit/FontScalingKt;->getDisableNonLinearFontScalingInCompose()Z
+
+    move-result v1
+
+    if-eqz v1, :cond_0
+
+    new-instance v1, Landroidx/compose/ui/unit/LinearFontScaleConverter;
+
+    invoke-direct {v1, v0}, Landroidx/compose/ui/unit/LinearFontScaleConverter;-><init>(F)V
+
+    check-cast v1, Landroidx/compose/ui/unit/fontscaling/FontScaleConverter;
+
+    goto :goto_0
+
+    .line 33
+    :cond_0
+    sget-object v1, Landroidx/compose/ui/unit/fontscaling/FontScaleConverterFactory;->INSTANCE:Landroidx/compose/ui/unit/fontscaling/FontScaleConverterFactory;
+
+    invoke-virtual {v1, v0}, Landroidx/compose/ui/unit/fontscaling/FontScaleConverterFactory;->forScale(F)Landroidx/compose/ui/unit/fontscaling/FontScaleConverter;
+
+    move-result-object v1
+
+    if-nez v1, :cond_1
+
+    new-instance v1, Landroidx/compose/ui/unit/LinearFontScaleConverter;
+
+    invoke-direct {v1, v0}, Landroidx/compose/ui/unit/LinearFontScaleConverter;-><init>(F)V
+
+    check-cast v1, Landroidx/compose/ui/unit/fontscaling/FontScaleConverter;
+
+    .line 35
+    :cond_1
+    :goto_0
+    new-instance v2, Landroidx/compose/ui/unit/DensityWithConverter;
+
+    .line 36
     invoke-virtual {p0}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
 
     move-result-object p0
 
-    invoke-virtual {p0}, Landroid/content/res/Resources;->getConfiguration()Landroid/content/res/Configuration;
+    invoke-virtual {p0}, Landroid/content/res/Resources;->getDisplayMetrics()Landroid/util/DisplayMetrics;
 
     move-result-object p0
 
-    iget p0, p0, Landroid/content/res/Configuration;->fontScale:F
+    iget p0, p0, Landroid/util/DisplayMetrics;->density:F
 
-    .line 27
-    invoke-static {v0, p0}, Landroidx/compose/ui/unit/DensityKt;->Density(FF)Landroidx/compose/ui/unit/Density;
+    .line 35
+    invoke-direct {v2, p0, v0, v1}, Landroidx/compose/ui/unit/DensityWithConverter;-><init>(FFLandroidx/compose/ui/unit/fontscaling/FontScaleConverter;)V
 
-    move-result-object p0
+    check-cast v2, Landroidx/compose/ui/unit/Density;
 
-    return-object p0
+    return-object v2
 .end method

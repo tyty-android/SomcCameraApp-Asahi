@@ -92,16 +92,12 @@
         }
     .end annotation
 
-    const-string p0, "it"
-
-    invoke-static {p1, p0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 419
+    .line 531
     new-instance p0, Landroidx/compose/foundation/lazy/LazyListState;
 
     const/4 v0, 0x0
 
-    .line 420
+    .line 532
     invoke-interface {p1, v0}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
     move-result-object v0
@@ -114,7 +110,7 @@
 
     const/4 v1, 0x1
 
-    .line 421
+    .line 533
     invoke-interface {p1, v1}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
     move-result-object p1
@@ -125,7 +121,7 @@
 
     move-result p1
 
-    .line 419
+    .line 531
     invoke-direct {p0, v0, p1}, Landroidx/compose/foundation/lazy/LazyListState;-><init>(II)V
 
     return-object p0
@@ -134,7 +130,7 @@
 .method public bridge synthetic invoke(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
 
-    .line 416
+    .line 528
     check-cast p1, Ljava/util/List;
 
     invoke-virtual {p0, p1}, Landroidx/compose/foundation/lazy/LazyListState$Companion$Saver$2;->invoke(Ljava/util/List;)Landroidx/compose/foundation/lazy/LazyListState;

@@ -84,7 +84,7 @@
 .method public bridge synthetic invoke()Ljava/lang/Object;
     .locals 0
 
-    .line 183
+    .line 175
     invoke-virtual {p0}, Landroidx/compose/ui/platform/CompositionLocalsKt$LocalPointerIconService$1;->invoke()Landroidx/compose/ui/input/pointer/PointerIconService;
 
     move-result-object p0

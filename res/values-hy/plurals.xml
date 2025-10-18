@@ -4,20 +4,4 @@
         <item quantity="other">%d նոր ծանուցում</item>
         <item quantity="one">%d նոր ծանուցում</item>
     </plurals>
-    <plurals name="mv_minute_remaining_txt">
-        <item quantity="other">Մնացել է %1$d րոպե</item>
-        <item quantity="one">Մնացել է 1 րոպե</item>
-    </plurals>
-    <plurals name="mv_minute_txt">
-        <item quantity="other">%1$d րոպե</item>
-        <item quantity="one">1 րոպե</item>
-    </plurals>
-    <plurals name="mv_second_remaining_txt">
-        <item quantity="other">Մնացել է %1$d վրկ</item>
-        <item quantity="one">Մնացել է 1 վրկ</item>
-    </plurals>
-    <plurals name="mv_second_txt">
-        <item quantity="other">%1$d վայրկյան</item>
-        <item quantity="one">1 վայրկյան</item>
-    </plurals>
 </resources>

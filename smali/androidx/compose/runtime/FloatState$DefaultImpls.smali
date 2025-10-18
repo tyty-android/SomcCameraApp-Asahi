@@ -30,7 +30,7 @@
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
-    .line 66
+    .line 67
     invoke-static {p0}, Landroidx/compose/runtime/FloatState;->access$getValue$jd(Landroidx/compose/runtime/FloatState;)F
 
     move-result p0

@@ -122,7 +122,7 @@
 .end method
 
 .method private final a(Landroid/content/Context;I)Ljava/io/InputStream;
-    .locals 5
+    .locals 3
 
     sget-object v0, La/a/a/a/a;->h:La/a/a/a/a$a;
 
@@ -142,7 +142,15 @@
 
     invoke-static {p1, p2}, Lkotlin/jvm/internal/Intrinsics;->checkExpressionValueIsNotNull(Ljava/lang/Object;Ljava/lang/String;)V
 
-    iget-object p2, p0, La/a/a/a/e;->a:Ljava/lang/String;
+    const/4 p2, 0x5
+
+    new-array p2, p2, [Ljava/lang/String;
+
+    iget-object v1, p0, La/a/a/a/e;->a:Ljava/lang/String;
+
+    const/4 v2, 0x0
+
+    aput-object v1, p2, v2
 
     sget-object v1, La/a/a/a/b;->j:La/a/a/a/b$c;
 
@@ -150,27 +158,39 @@
 
     move-result-object v1
 
-    sget-object v2, La/a/a/a/c;->e:La/a/a/a/c$a;
+    const/4 v2, 0x1
 
-    invoke-virtual {v2}, La/a/a/a/c$a;->n()Ljava/lang/String;
+    aput-object v1, p2, v2
 
-    move-result-object v2
+    sget-object v1, La/a/a/a/c;->e:La/a/a/a/c$a;
 
-    sget-object v3, La/a/a/a/a;->h:La/a/a/a/a$a;
+    invoke-virtual {v1}, La/a/a/a/c$a;->n()Ljava/lang/String;
 
-    invoke-virtual {v3}, La/a/a/a/a$a;->a()Ljava/lang/String;
+    move-result-object v1
 
-    move-result-object v3
+    const/4 v2, 0x2
 
-    sget-object v4, La/a/a/a/a;->h:La/a/a/a/a$a;
+    aput-object v1, p2, v2
 
-    invoke-virtual {v4}, La/a/a/a/a$a;->b()Ljava/lang/String;
+    sget-object v1, La/a/a/a/a;->h:La/a/a/a/a$a;
 
-    move-result-object v4
+    invoke-virtual {v1}, La/a/a/a/a$a;->a()Ljava/lang/String;
 
-    filled-new-array {p2, v1, v2, v3, v4}, [Ljava/lang/String;
+    move-result-object v1
 
-    move-result-object p2
+    const/4 v2, 0x3
+
+    aput-object v1, p2, v2
+
+    sget-object v1, La/a/a/a/a;->h:La/a/a/a/a$a;
+
+    invoke-virtual {v1}, La/a/a/a/a$a;->b()Ljava/lang/String;
+
+    move-result-object v1
+
+    const/4 v2, 0x4
+
+    aput-object v1, p2, v2
 
     invoke-direct {p0, p2}, La/a/a/a/e;->a([Ljava/lang/String;)Ljava/lang/String;
 
@@ -635,11 +655,15 @@
 
     if-ne v1, p1, :cond_0
 
-    const-string p0, "-"
+    const/4 p0, 0x1
 
-    filled-new-array {p0}, [Ljava/lang/String;
+    new-array v3, p0, [Ljava/lang/String;
 
-    move-result-object v3
+    const-string p1, "-"
+
+    const/4 v0, 0x0
+
+    aput-object p1, v3, v0
 
     const/4 v6, 0x6
 
@@ -651,49 +675,47 @@
 
     invoke-static/range {v2 .. v7}, Lkotlin/text/StringsKt;->split$default(Ljava/lang/CharSequence;[Ljava/lang/String;ZIILjava/lang/Object;)Ljava/util/List;
 
-    move-result-object p0
+    move-result-object p1
 
-    invoke-interface {p0}, Ljava/util/List;->size()I
+    invoke-interface {p1}, Ljava/util/List;->size()I
 
-    move-result p1
+    move-result v1
 
-    new-array p1, p1, [B
+    new-array v1, v1, [B
 
-    invoke-interface {p0}, Ljava/util/List;->iterator()Ljava/util/Iterator;
+    invoke-interface {p1}, Ljava/util/List;->iterator()Ljava/util/Iterator;
 
-    move-result-object p0
-
-    const/4 v0, 0x0
+    move-result-object p1
 
     :goto_1
-    invoke-interface {p0}, Ljava/util/Iterator;->hasNext()Z
+    invoke-interface {p1}, Ljava/util/Iterator;->hasNext()Z
 
-    move-result v1
+    move-result v2
 
-    if-eqz v1, :cond_2
+    if-eqz v2, :cond_2
 
-    invoke-interface {p0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+    invoke-interface {p1}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
-    move-result-object v1
+    move-result-object v2
 
-    check-cast v1, Ljava/lang/String;
+    check-cast v2, Ljava/lang/String;
 
-    const/4 v2, 0x2
+    const/4 v3, 0x2
 
-    invoke-static {v1, v2}, Ljava/lang/Integer;->parseInt(Ljava/lang/String;I)I
+    invoke-static {v2, v3}, Ljava/lang/Integer;->parseInt(Ljava/lang/String;I)I
 
-    move-result v1
+    move-result v2
 
-    int-to-byte v1, v1
+    int-to-byte v2, v2
 
-    aput-byte v1, p1, v0
+    aput-byte v2, v1, v0
 
-    add-int/lit8 v0, v0, 0x1
+    add-int/2addr v0, p0
 
     goto :goto_1
 
     :cond_2
-    return-object p1
+    return-object v1
 
     :cond_3
     const/4 p0, 0x0

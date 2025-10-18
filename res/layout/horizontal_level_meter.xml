@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <jp.co.sony.mc.camera.view.HorizontalLevelMeterView android:gravity="center" android:orientation="horizontal" android:id="@id/level_meter_container" android:tag="layout/horizontal_level_meter_0" android:layout_width="fill_parent" android:layout_height="fill_parent"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <ImageView android:layout_gravity="center" android:id="@id/frame" android:background="@drawable/camera_level_guide_frame_icn" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:binding="http://schemas.android.com/apk/res-auto">
+    <jp.co.sony.mc.camera.view.widget.PenetrableImageView android:layout_gravity="center" android:id="@id/frame" android:tag="binding_1" android:background="@drawable/camera_level_guide_frame_icn" android:layout_width="wrap_content" android:layout_height="wrap_content" />
     <ImageView android:layout_gravity="center" android:id="@id/base_line" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/camera_level_guide_baseline_icn" />
     <ImageView android:layout_gravity="center" android:id="@id/adjusting_line" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/camera_level_guide_adjusting_line_icn" />
     <ImageView android:layout_gravity="center" android:id="@id/horizontal_line" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/camera_level_guide_horizontal_line_icn" />

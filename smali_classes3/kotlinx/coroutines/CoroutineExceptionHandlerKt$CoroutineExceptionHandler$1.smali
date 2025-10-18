@@ -39,7 +39,7 @@
     k = 0x1
     mv = {
         0x1,
-        0x6,
+        0x8,
         0x0
     }
     xi = 0xb0
@@ -80,7 +80,7 @@
 
     iput-object p1, p0, Lkotlinx/coroutines/CoroutineExceptionHandlerKt$CoroutineExceptionHandler$1;->$handler:Lkotlin/jvm/functions/Function2;
 
-    .line 49
+    .line 48
     check-cast p2, Lkotlin/coroutines/CoroutineContext$Key;
 
     invoke-direct {p0, p2}, Lkotlin/coroutines/AbstractCoroutineContextElement;-><init>(Lkotlin/coroutines/CoroutineContext$Key;)V
@@ -93,7 +93,7 @@
 .method public handleException(Lkotlin/coroutines/CoroutineContext;Ljava/lang/Throwable;)V
     .locals 0
 
-    .line 51
+    .line 50
     iget-object p0, p0, Lkotlinx/coroutines/CoroutineExceptionHandlerKt$CoroutineExceptionHandler$1;->$handler:Lkotlin/jvm/functions/Function2;
 
     invoke-interface {p0, p1, p2}, Lkotlin/jvm/functions/Function2;->invoke(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;

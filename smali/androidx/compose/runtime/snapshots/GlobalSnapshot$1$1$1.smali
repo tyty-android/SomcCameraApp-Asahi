@@ -27,7 +27,7 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/SourceDebugExtension;
-    value = "SMAP\nSnapshot.kt\nKotlin\n*S Kotlin\n*F\n+ 1 Snapshot.kt\nandroidx/compose/runtime/snapshots/GlobalSnapshot$1$1$1\n+ 2 ListUtils.kt\nandroidx/compose/runtime/snapshots/ListUtilsKt\n*L\n1#1,2290:1\n33#2,6:2291\n*S KotlinDebug\n*F\n+ 1 Snapshot.kt\nandroidx/compose/runtime/snapshots/GlobalSnapshot$1$1$1\n*L\n1333#1:2291,6\n*E\n"
+    value = "SMAP\nSnapshot.kt\nKotlin\n*S Kotlin\n*F\n+ 1 Snapshot.kt\nandroidx/compose/runtime/snapshots/GlobalSnapshot$1$1$1\n+ 2 ListUtils.kt\nandroidx/compose/runtime/snapshots/ListUtilsKt\n*L\n1#1,2294:1\n33#2,6:2295\n*S KotlinDebug\n*F\n+ 1 Snapshot.kt\nandroidx/compose/runtime/snapshots/GlobalSnapshot$1$1$1\n*L\n1325#1:2295,6\n*E\n"
 .end annotation
 
 .annotation runtime Lkotlin/Metadata;
@@ -72,6 +72,7 @@
         value = {
             "(",
             "Ljava/util/List<",
+            "+",
             "Lkotlin/jvm/functions/Function1<",
             "Ljava/lang/Object;",
             "Lkotlin/Unit;",
@@ -93,7 +94,7 @@
 .method public bridge synthetic invoke(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
 
-    .line 1332
+    .line 1324
     invoke-virtual {p0, p1}, Landroidx/compose/runtime/snapshots/GlobalSnapshot$1$1$1;->invoke(Ljava/lang/Object;)V
 
     sget-object p0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
@@ -104,14 +105,10 @@
 .method public final invoke(Ljava/lang/Object;)V
     .locals 3
 
-    const-string/jumbo v0, "state"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 1333
+    .line 1325
     iget-object p0, p0, Landroidx/compose/runtime/snapshots/GlobalSnapshot$1$1$1;->$it:Ljava/util/List;
 
-    .line 2292
+    .line 2296
     invoke-interface {p0}, Ljava/util/List;->size()I
 
     move-result v0
@@ -121,15 +118,15 @@
     :goto_0
     if-ge v1, v0, :cond_0
 
-    .line 2293
+    .line 2297
     invoke-interface {p0, v1}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
     move-result-object v2
 
-    .line 2294
+    .line 2298
     check-cast v2, Lkotlin/jvm/functions/Function1;
 
-    .line 1333
+    .line 1325
     invoke-interface {v2, p1}, Lkotlin/jvm/functions/Function1;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
 
     add-int/lit8 v1, v1, 0x1

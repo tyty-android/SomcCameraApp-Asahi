@@ -58,7 +58,7 @@
 
     sput-object v0, Lkotlin/internal/PlatformImplementations$ReflectThrowable;->INSTANCE:Lkotlin/internal/PlatformImplementations$ReflectThrowable;
 
-    .line 21
+    .line 22
     const-class v0, Ljava/lang/Throwable;
 
     .line 23
@@ -67,9 +67,7 @@
     move-result-object v1
 
     .line 24
-    const-string/jumbo v2, "throwableMethods"
-
-    invoke-static {v1, v2}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;)V
 
     array-length v2, v1
 
@@ -101,7 +99,7 @@
 
     move-result-object v7
 
-    const-string v8, "it.parameterTypes"
+    const-string v8, "getParameterTypes(...)"
 
     invoke-static {v7, v8}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
 

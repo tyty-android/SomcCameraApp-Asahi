@@ -61,7 +61,7 @@
 
     invoke-direct {p0}, Ljava/lang/StringBuilder;-><init>()V
 
-    const p4, 0x7f1101dc
+    const p4, 0x7f1101df
 
     invoke-virtual {p1, p4}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -77,7 +77,7 @@
 
     move-result-object p0
 
-    const p4, 0x7f1101db
+    const p4, 0x7f1101de
 
     .line 48
     invoke-virtual {p1, p4}, Landroid/content/Context;->getString(I)Ljava/lang/String;

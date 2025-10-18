@@ -25,7 +25,7 @@
 .method constructor <init>(Ljp/co/sony/mc/camera/device/state/DeviceStateContext$BurstQueueingCountChangedCallback;)V
     .locals 0
 
-    .line 3385
+    .line 3469
     iput-object p1, p0, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$BurstQueueingCountChangedCallback$1;->this$1:Ljp/co/sony/mc/camera/device/state/DeviceStateContext$BurstQueueingCountChangedCallback;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -38,7 +38,7 @@
 .method public run()V
     .locals 2
 
-    .line 3388
+    .line 3472
     iget-object v0, p0, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$BurstQueueingCountChangedCallback$1;->this$1:Ljp/co/sony/mc/camera/device/state/DeviceStateContext$BurstQueueingCountChangedCallback;
 
     iget-object v0, v0, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$BurstQueueingCountChangedCallback;->this$0:Ljp/co/sony/mc/camera/device/state/DeviceStateContext;
@@ -53,17 +53,17 @@
 
     if-eqz v0, :cond_0
 
-    .line 3389
+    .line 3473
     iget-object v0, p0, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$BurstQueueingCountChangedCallback$1;->this$1:Ljp/co/sony/mc/camera/device/state/DeviceStateContext$BurstQueueingCountChangedCallback;
 
     iget-object v0, v0, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$BurstQueueingCountChangedCallback;->this$0:Ljp/co/sony/mc/camera/device/state/DeviceStateContext;
 
     invoke-virtual {v0}, Ljp/co/sony/mc/camera/device/state/DeviceStateContext;->removeBurstQueueingCountChecker()Z
 
-    .line 3391
+    .line 3475
     invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
 
-    .line 3392
+    .line 3476
     iget-object p0, p0, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$BurstQueueingCountChangedCallback$1;->this$1:Ljp/co/sony/mc/camera/device/state/DeviceStateContext$BurstQueueingCountChangedCallback;
 
     iget-object p0, p0, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$BurstQueueingCountChangedCallback;->this$0:Ljp/co/sony/mc/camera/device/state/DeviceStateContext;

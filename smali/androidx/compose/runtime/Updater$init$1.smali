@@ -89,7 +89,7 @@
 .method public bridge synthetic invoke(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
 
-    .line 4225
+    .line 3818
     check-cast p2, Lkotlin/Unit;
 
     invoke-virtual {p0, p1, p2}, Landroidx/compose/runtime/Updater$init$1;->invoke(Ljava/lang/Object;Lkotlin/Unit;)V
@@ -100,7 +100,7 @@
 .end method
 
 .method public final invoke(Ljava/lang/Object;Lkotlin/Unit;)V
-    .locals 1
+    .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TT;",
@@ -109,11 +109,7 @@
         }
     .end annotation
 
-    const-string v0, "it"
-
-    invoke-static {p2, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 4226
+    .line 3819
     iget-object p0, p0, Landroidx/compose/runtime/Updater$init$1;->$block:Lkotlin/jvm/functions/Function1;
 
     invoke-interface {p0, p1}, Lkotlin/jvm/functions/Function1;->invoke(Ljava/lang/Object;)Ljava/lang/Object;

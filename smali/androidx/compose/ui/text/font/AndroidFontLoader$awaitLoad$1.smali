@@ -31,8 +31,8 @@
         0x1
     }
     l = {
-        0x3d,
-        0x3e
+        0x39,
+        0x3a
     }
     m = "awaitLoad"
     n = {

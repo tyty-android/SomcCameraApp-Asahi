@@ -1,6 +1,6 @@
 .class final Landroidx/compose/ui/tooling/data/CompositionCallStack;
 .super Ljava/lang/Object;
-.source "SlotTree.kt"
+.source "SlotTree.jvm.kt"
 
 # interfaces
 .implements Landroidx/compose/ui/tooling/data/SourceContext;
@@ -18,7 +18,7 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/SourceDebugExtension;
-    value = "SMAP\nSlotTree.kt\nKotlin\n*S Kotlin\n*F\n+ 1 SlotTree.kt\nandroidx/compose/ui/tooling/data/CompositionCallStack\n+ 2 _Collections.kt\nkotlin/collections/CollectionsKt___CollectionsKt\n+ 3 fake.kt\nkotlin/jvm/internal/FakeKt\n+ 4 Maps.kt\nkotlin/collections/MapsKt__MapsKt\n*L\n1#1,875:1\n1855#2,2:876\n1#3:878\n361#4,7:879\n*S KotlinDebug\n*F\n+ 1 SlotTree.kt\nandroidx/compose/ui/tooling/data/CompositionCallStack\n*L\n588#1:876,2\n656#1:879,7\n*E\n"
+    value = "SMAP\nSlotTree.jvm.kt\nKotlin\n*S Kotlin\n*F\n+ 1 SlotTree.jvm.kt\nandroidx/compose/ui/tooling/data/CompositionCallStack\n+ 2 _Collections.kt\nkotlin/collections/CollectionsKt___CollectionsKt\n+ 3 fake.kt\nkotlin/jvm/internal/FakeKt\n+ 4 Maps.kt\nkotlin/collections/MapsKt__MapsKt\n*L\n1#1,878:1\n1855#2,2:879\n1#3:881\n361#4,7:882\n*S KotlinDebug\n*F\n+ 1 SlotTree.jvm.kt\nandroidx/compose/ui/tooling/data/CompositionCallStack\n*L\n591#1:879,2\n659#1:882,7\n*E\n"
 .end annotation
 
 .annotation runtime Lkotlin/Metadata;
@@ -134,7 +134,7 @@
 
 # direct methods
 .method public constructor <init>(Lkotlin/jvm/functions/Function3;Ljava/util/Map;)V
-    .locals 1
+    .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -153,31 +153,23 @@
         }
     .end annotation
 
-    const-string v0, "factory"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string v0, "contexts"
-
-    invoke-static {p2, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 575
+    .line 578
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 577
+    .line 580
     iput-object p1, p0, Landroidx/compose/ui/tooling/data/CompositionCallStack;->factory:Lkotlin/jvm/functions/Function3;
 
-    .line 578
+    .line 581
     iput-object p2, p0, Landroidx/compose/ui/tooling/data/CompositionCallStack;->contexts:Ljava/util/Map;
 
-    .line 580
+    .line 583
     new-instance p1, Lkotlin/collections/ArrayDeque;
 
     invoke-direct {p1}, Lkotlin/collections/ArrayDeque;-><init>()V
 
     iput-object p1, p0, Landroidx/compose/ui/tooling/data/CompositionCallStack;->stack:Lkotlin/collections/ArrayDeque;
 
-    .line 617
+    .line 620
     invoke-static {}, Landroidx/compose/ui/tooling/data/SlotTreeKt;->getEmptyBox()Landroidx/compose/ui/unit/IntRect;
 
     move-result-object p1
@@ -190,10 +182,10 @@
 .method private final contextOf(Ljava/lang/String;)Landroidx/compose/ui/tooling/data/SourceInformationContext;
     .locals 2
 
-    .line 656
+    .line 659
     iget-object p0, p0, Landroidx/compose/ui/tooling/data/CompositionCallStack;->contexts:Ljava/util/Map;
 
-    .line 879
+    .line 882
     invoke-interface {p0, p1}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v0
@@ -204,15 +196,15 @@
 
     const/4 v0, 0x2
 
-    .line 656
+    .line 659
     invoke-static {p1, v1, v0, v1}, Landroidx/compose/ui/tooling/data/SlotTreeKt;->sourceInformationContextOf$default(Ljava/lang/String;Landroidx/compose/ui/tooling/data/SourceInformationContext;ILjava/lang/Object;)Landroidx/compose/ui/tooling/data/SourceInformationContext;
 
     move-result-object v0
 
-    .line 882
+    .line 885
     invoke-interface {p0, p1, v0}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 656
+    .line 659
     :cond_0
     instance-of p0, v0, Landroidx/compose/ui/tooling/data/SourceInformationContext;
 
@@ -229,7 +221,7 @@
 .method private final getCurrent()Landroidx/compose/runtime/tooling/CompositionGroup;
     .locals 0
 
-    .line 650
+    .line 653
     iget-object p0, p0, Landroidx/compose/ui/tooling/data/CompositionCallStack;->stack:Lkotlin/collections/ArrayDeque;
 
     invoke-virtual {p0}, Lkotlin/collections/ArrayDeque;->last()Ljava/lang/Object;
@@ -244,7 +236,7 @@
 .method private final isCall(Landroidx/compose/runtime/tooling/CompositionGroup;)Z
     .locals 3
 
-    .line 660
+    .line 663
     invoke-interface {p1}, Landroidx/compose/runtime/tooling/CompositionGroup;->getSourceInfo()Ljava/lang/String;
 
     move-result-object p0
@@ -270,7 +262,7 @@
 .method private final parentGroup(I)Landroidx/compose/runtime/tooling/CompositionGroup;
     .locals 1
 
-    .line 653
+    .line 656
     iget-object v0, p0, Landroidx/compose/ui/tooling/data/CompositionCallStack;->stack:Lkotlin/collections/ArrayDeque;
 
     invoke-virtual {v0}, Lkotlin/collections/ArrayDeque;->size()I
@@ -307,7 +299,7 @@
 .method private final pop()Landroidx/compose/runtime/tooling/CompositionGroup;
     .locals 0
 
-    .line 647
+    .line 650
     iget-object p0, p0, Landroidx/compose/ui/tooling/data/CompositionCallStack;->stack:Lkotlin/collections/ArrayDeque;
 
     invoke-virtual {p0}, Lkotlin/collections/ArrayDeque;->removeLast()Ljava/lang/Object;
@@ -322,7 +314,7 @@
 .method private final push(Landroidx/compose/runtime/tooling/CompositionGroup;)V
     .locals 0
 
-    .line 644
+    .line 647
     iget-object p0, p0, Landroidx/compose/ui/tooling/data/CompositionCallStack;->stack:Lkotlin/collections/ArrayDeque;
 
     invoke-virtual {p0, p1}, Lkotlin/collections/ArrayDeque;->addLast(Ljava/lang/Object;)V
@@ -345,35 +337,27 @@
         }
     .end annotation
 
-    const-string v0, "group"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string v0, "out"
-
-    invoke-static {p3, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 584
+    .line 587
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
     check-cast v0, Ljava/util/List;
 
-    .line 585
+    .line 588
     invoke-static {}, Landroidx/compose/ui/tooling/data/SlotTreeKt;->getEmptyBox()Landroidx/compose/ui/unit/IntRect;
 
     move-result-object v1
 
-    .line 586
+    .line 589
     invoke-direct {p0, p1}, Landroidx/compose/ui/tooling/data/CompositionCallStack;->push(Landroidx/compose/runtime/tooling/CompositionGroup;)V
 
-    .line 588
+    .line 591
     invoke-interface {p1}, Landroidx/compose/runtime/tooling/CompositionGroup;->getCompositionGroups()Ljava/lang/Iterable;
 
     move-result-object v2
 
-    .line 876
+    .line 879
     invoke-interface {v2}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
 
     move-result-object v2
@@ -394,7 +378,7 @@
 
     check-cast v4, Landroidx/compose/runtime/tooling/CompositionGroup;
 
-    .line 589
+    .line 592
     invoke-virtual {p0, v4, v3, v0}, Landroidx/compose/ui/tooling/data/CompositionCallStack;->convert(Landroidx/compose/runtime/tooling/CompositionGroup;ILjava/util/List;)Landroidx/compose/ui/unit/IntRect;
 
     move-result-object v5
@@ -403,7 +387,7 @@
 
     move-result-object v1
 
-    .line 590
+    .line 593
     invoke-direct {p0, v4}, Landroidx/compose/ui/tooling/data/CompositionCallStack;->isCall(Landroidx/compose/runtime/tooling/CompositionGroup;)Z
 
     move-result v4
@@ -414,7 +398,7 @@
 
     goto :goto_0
 
-    .line 594
+    .line 597
     :cond_1
     invoke-interface {p1}, Landroidx/compose/runtime/tooling/CompositionGroup;->getNode()Ljava/lang/Object;
 
@@ -445,15 +429,15 @@
     :cond_3
     move-object v1, v2
 
-    .line 595
+    .line 598
     :cond_4
     :goto_2
     iput p2, p0, Landroidx/compose/ui/tooling/data/CompositionCallStack;->currentCallIndex:I
 
-    .line 596
+    .line 599
     iput-object v1, p0, Landroidx/compose/ui/tooling/data/CompositionCallStack;->bounds:Landroidx/compose/ui/unit/IntRect;
 
-    .line 597
+    .line 600
     iget-object p2, p0, Landroidx/compose/ui/tooling/data/CompositionCallStack;->factory:Lkotlin/jvm/functions/Function3;
 
     invoke-interface {p2, p1, p0, v0}, Lkotlin/jvm/functions/Function3;->invoke(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
@@ -464,7 +448,7 @@
 
     invoke-interface {p3, p1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    .line 598
+    .line 601
     :cond_5
     invoke-direct {p0}, Landroidx/compose/ui/tooling/data/CompositionCallStack;->pop()Landroidx/compose/runtime/tooling/CompositionGroup;
 
@@ -474,7 +458,7 @@
 .method public getBounds()Landroidx/compose/ui/unit/IntRect;
     .locals 0
 
-    .line 617
+    .line 620
     iget-object p0, p0, Landroidx/compose/ui/tooling/data/CompositionCallStack;->bounds:Landroidx/compose/ui/unit/IntRect;
 
     return-object p0
@@ -483,7 +467,7 @@
 .method public getDepth()I
     .locals 0
 
-    .line 641
+    .line 644
     iget-object p0, p0, Landroidx/compose/ui/tooling/data/CompositionCallStack;->stack:Lkotlin/collections/ArrayDeque;
 
     invoke-virtual {p0}, Lkotlin/collections/ArrayDeque;->size()I
@@ -498,7 +482,7 @@
 
     const/4 v0, 0x1
 
-    .line 622
+    .line 625
     invoke-direct {p0, v0}, Landroidx/compose/ui/tooling/data/CompositionCallStack;->parentGroup(I)Landroidx/compose/runtime/tooling/CompositionGroup;
 
     move-result-object v0
@@ -526,7 +510,7 @@
 
     move-object v3, v0
 
-    .line 625
+    .line 628
     :goto_0
     iget-object v4, p0, Landroidx/compose/ui/tooling/data/CompositionCallStack;->stack:Lkotlin/collections/ArrayDeque;
 
@@ -552,7 +536,7 @@
 
     add-int/lit8 v3, v2, 0x1
 
-    .line 626
+    .line 629
     invoke-direct {p0, v2}, Landroidx/compose/ui/tooling/data/CompositionCallStack;->parentGroup(I)Landroidx/compose/runtime/tooling/CompositionGroup;
 
     move-result-object v2
@@ -583,7 +567,7 @@
 
     goto :goto_0
 
-    .line 628
+    .line 631
     :cond_3
     iget p0, p0, Landroidx/compose/ui/tooling/data/CompositionCallStack;->currentCallIndex:I
 
@@ -601,7 +585,7 @@
 .method public getName()Ljava/lang/String;
     .locals 10
 
-    .line 604
+    .line 607
     invoke-direct {p0}, Landroidx/compose/ui/tooling/data/CompositionCallStack;->getCurrent()Landroidx/compose/runtime/tooling/CompositionGroup;
 
     move-result-object p0
@@ -616,7 +600,7 @@
 
     return-object v0
 
-    .line 606
+    .line 609
     :cond_0
     const-string v1, "CC("
 
@@ -634,7 +618,7 @@
 
     goto :goto_0
 
-    .line 607
+    .line 610
     :cond_1
     const-string v1, "C("
 
@@ -646,7 +630,7 @@
 
     move v1, v3
 
-    .line 610
+    .line 613
     :goto_0
     move-object v4, p0
 
@@ -668,7 +652,7 @@
 
     if-le v2, v3, :cond_2
 
-    .line 611
+    .line 614
     invoke-virtual {p0, v1, v2}, Ljava/lang/String;->substring(II)Ljava/lang/String;
 
     move-result-object v0
@@ -692,12 +676,12 @@
         }
     .end annotation
 
-    .line 633
+    .line 636
     invoke-direct {p0}, Landroidx/compose/ui/tooling/data/CompositionCallStack;->getCurrent()Landroidx/compose/runtime/tooling/CompositionGroup;
 
     move-result-object v0
 
-    .line 634
+    .line 637
     invoke-interface {v0}, Landroidx/compose/runtime/tooling/CompositionGroup;->getSourceInfo()Ljava/lang/String;
 
     move-result-object v1
@@ -712,7 +696,7 @@
 
     goto :goto_0
 
-    .line 635
+    .line 638
     :cond_0
     new-instance v1, Ljava/util/ArrayList;
 
@@ -720,7 +704,7 @@
 
     check-cast v1, Ljava/util/List;
 
-    .line 636
+    .line 639
     move-object v2, v1
 
     check-cast v2, Ljava/util/Collection;
@@ -731,14 +715,14 @@
 
     invoke-static {v2, v0}, Lkotlin/collections/CollectionsKt;->addAll(Ljava/util/Collection;Ljava/lang/Iterable;)Z
 
-    .line 637
+    .line 640
     invoke-static {v1, p0}, Landroidx/compose/ui/tooling/data/SlotTreeKt;->access$extractParameterInfo(Ljava/util/List;Landroidx/compose/ui/tooling/data/SourceInformationContext;)Ljava/util/List;
 
     move-result-object p0
 
     return-object p0
 
-    .line 634
+    .line 637
     :cond_1
     :goto_0
     invoke-static {}, Lkotlin/collections/CollectionsKt;->emptyList()Ljava/util/List;
@@ -751,7 +735,7 @@
 .method public isInline()Z
     .locals 4
 
-    .line 615
+    .line 618
     invoke-direct {p0}, Landroidx/compose/ui/tooling/data/CompositionCallStack;->getCurrent()Landroidx/compose/runtime/tooling/CompositionGroup;
 
     move-result-object p0

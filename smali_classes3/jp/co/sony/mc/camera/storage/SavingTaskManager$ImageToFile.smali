@@ -42,25 +42,25 @@
 .method public constructor <init>(Ljp/co/sony/mc/camera/storage/SavingTaskManager;Ljp/co/sony/mc/camera/storage/PhotoSavingRequest;Landroid/net/Uri;)V
     .locals 1
 
-    .line 451
+    .line 445
     iput-object p1, p0, Ljp/co/sony/mc/camera/storage/SavingTaskManager$ImageToFile;->this$0:Ljp/co/sony/mc/camera/storage/SavingTaskManager;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 452
+    .line 446
     invoke-virtual {p2}, Ljp/co/sony/mc/camera/storage/PhotoSavingRequest;->getImageData()Ljava/nio/ByteBuffer;
 
     move-result-object p1
 
     iput-object p1, p0, Ljp/co/sony/mc/camera/storage/SavingTaskManager$ImageToFile;->mBuffer:Ljava/nio/ByteBuffer;
 
-    .line 453
+    .line 447
     iput-object p3, p0, Ljp/co/sony/mc/camera/storage/SavingTaskManager$ImageToFile;->mUri:Landroid/net/Uri;
 
-    .line 454
+    .line 448
     iput-object p2, p0, Ljp/co/sony/mc/camera/storage/SavingTaskManager$ImageToFile;->mRequest:Ljp/co/sony/mc/camera/storage/PhotoSavingRequest;
 
-    .line 455
+    .line 449
     const-string p1, "file"
 
     invoke-virtual {p3}, Landroid/net/Uri;->getScheme()Ljava/lang/String;
@@ -73,14 +73,14 @@
 
     if-eqz p1, :cond_0
 
-    .line 456
+    .line 450
     invoke-virtual {p3}, Landroid/net/Uri;->getPath()Ljava/lang/String;
 
     move-result-object p1
 
     iput-object p1, p0, Ljp/co/sony/mc/camera/storage/SavingTaskManager$ImageToFile;->mPath:Ljava/lang/String;
 
-    .line 457
+    .line 451
     invoke-virtual {p2}, Ljp/co/sony/mc/camera/storage/PhotoSavingRequest;->getStorageType()Ljp/co/sony/mc/camera/storage/Storage$StorageType;
 
     move-result-object p1
@@ -92,10 +92,10 @@
     :cond_0
     const/4 p1, 0x0
 
-    .line 459
+    .line 453
     iput-object p1, p0, Ljp/co/sony/mc/camera/storage/SavingTaskManager$ImageToFile;->mPath:Ljava/lang/String;
 
-    .line 460
+    .line 454
     sget-object p1, Ljp/co/sony/mc/camera/storage/Storage$StorageType;->UNKNOWN:Ljp/co/sony/mc/camera/storage/Storage$StorageType;
 
     iput-object p1, p0, Ljp/co/sony/mc/camera/storage/SavingTaskManager$ImageToFile;->mStorageType:Ljp/co/sony/mc/camera/storage/Storage$StorageType;
@@ -107,7 +107,7 @@
 .method private insertPhotoMedia(Landroid/content/ContentResolver;)Landroid/net/Uri;
     .locals 9
 
-    .line 618
+    .line 612
     iget-object v0, p0, Ljp/co/sony/mc/camera/storage/SavingTaskManager$ImageToFile;->mStorageType:Ljp/co/sony/mc/camera/storage/Storage$StorageType;
 
     iget-object v1, p0, Ljp/co/sony/mc/camera/storage/SavingTaskManager$ImageToFile;->this$0:Ljp/co/sony/mc/camera/storage/SavingTaskManager;
@@ -124,13 +124,13 @@
 
     return-object p0
 
-    .line 623
+    .line 617
     :cond_0
     new-instance v1, Landroid/content/ContentValues;
 
     invoke-direct {v1}, Landroid/content/ContentValues;-><init>()V
 
-    .line 624
+    .line 618
     iget-object v2, p0, Ljp/co/sony/mc/camera/storage/SavingTaskManager$ImageToFile;->mPath:Ljava/lang/String;
 
     sget-object v3, Ljava/io/File;->separator:Ljava/lang/String;
@@ -147,7 +147,7 @@
 
     move-result-object v2
 
-    .line 625
+    .line 619
     iget-object v3, p0, Ljp/co/sony/mc/camera/storage/SavingTaskManager$ImageToFile;->mPath:Ljava/lang/String;
 
     sget-object v5, Ljava/io/File;->separator:Ljava/lang/String;
@@ -162,7 +162,7 @@
 
     move-result-object v3
 
-    .line 627
+    .line 621
     iget-object v5, p0, Ljp/co/sony/mc/camera/storage/SavingTaskManager$ImageToFile;->mRequest:Ljp/co/sony/mc/camera/storage/PhotoSavingRequest;
 
     iget-object v5, v5, Ljp/co/sony/mc/camera/storage/PhotoSavingRequest;->common:Ljp/co/sony/mc/camera/mediasaving/takenstatus/TakenStatusCommon;
@@ -177,7 +177,7 @@
 
     if-eqz v5, :cond_2
 
-    .line 629
+    .line 623
     iget-object v5, p0, Ljp/co/sony/mc/camera/storage/SavingTaskManager$ImageToFile;->this$0:Ljp/co/sony/mc/camera/storage/SavingTaskManager;
 
     invoke-static {v5}, Ljp/co/sony/mc/camera/storage/SavingTaskManager;->-$$Nest$fgetmIsBurstPrimaryAvailable(Ljp/co/sony/mc/camera/storage/SavingTaskManager;)Landroid/util/Pair;
@@ -210,14 +210,14 @@
 
     check-cast v5, Ljava/lang/Boolean;
 
-    .line 630
+    .line 624
     invoke-virtual {v5}, Ljava/lang/Boolean;->booleanValue()Z
 
     move-result v5
 
     if-nez v5, :cond_2
 
-    .line 631
+    .line 625
     :cond_1
     iget-object v5, p0, Ljp/co/sony/mc/camera/storage/SavingTaskManager$ImageToFile;->this$0:Ljp/co/sony/mc/camera/storage/SavingTaskManager;
 
@@ -235,7 +235,7 @@
 
     iget-object v8, p0, Ljp/co/sony/mc/camera/storage/SavingTaskManager$ImageToFile;->mBuffer:Ljava/nio/ByteBuffer;
 
-    .line 632
+    .line 626
     invoke-direct {p0, v8}, Ljp/co/sony/mc/camera/storage/SavingTaskManager$ImageToFile;->isBurstPrimaryImage(Ljava/nio/ByteBuffer;)Z
 
     move-result v8
@@ -248,7 +248,7 @@
 
     invoke-static {v5, v6}, Ljp/co/sony/mc/camera/storage/SavingTaskManager;->-$$Nest$fputmIsBurstPrimaryAvailable(Ljp/co/sony/mc/camera/storage/SavingTaskManager;Landroid/util/Pair;)V
 
-    .line 633
+    .line 627
     iget-object v5, p0, Ljp/co/sony/mc/camera/storage/SavingTaskManager$ImageToFile;->this$0:Ljp/co/sony/mc/camera/storage/SavingTaskManager;
 
     invoke-static {v5}, Ljp/co/sony/mc/camera/storage/SavingTaskManager;->-$$Nest$fgetmIsBurstPrimaryAvailable(Ljp/co/sony/mc/camera/storage/SavingTaskManager;)Landroid/util/Pair;
@@ -265,7 +265,7 @@
 
     if-eqz v5, :cond_2
 
-    .line 634
+    .line 628
     new-instance v5, Ljava/lang/StringBuilder;
 
     invoke-direct {v5}, Ljava/lang/StringBuilder;-><init>()V
@@ -296,13 +296,13 @@
 
     move-result-object v3
 
-    .line 642
+    .line 636
     :cond_2
     const-string v5, "_display_name"
 
     invoke-virtual {v1, v5, v3}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 643
+    .line 637
     iget-object p0, p0, Ljp/co/sony/mc/camera/storage/SavingTaskManager$ImageToFile;->mRequest:Ljp/co/sony/mc/camera/storage/PhotoSavingRequest;
 
     iget-object p0, p0, Ljp/co/sony/mc/camera/storage/PhotoSavingRequest;->common:Ljp/co/sony/mc/camera/mediasaving/takenstatus/TakenStatusCommon;
@@ -313,12 +313,12 @@
 
     invoke-virtual {v1, v3, p0}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 645
+    .line 639
     const-string p0, "relative_path"
 
     invoke-virtual {v1, p0, v2}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 646
+    .line 640
     const-string p0, "is_pending"
 
     invoke-static {v4}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
@@ -327,12 +327,12 @@
 
     invoke-virtual {v1, p0, v2}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/Integer;)V
 
-    .line 648
+    .line 642
     invoke-static {v0}, Landroid/provider/MediaStore$Images$Media;->getContentUri(Ljava/lang/String;)Landroid/net/Uri;
 
     move-result-object p0
 
-    .line 649
+    .line 643
     invoke-virtual {p1, p0, v1}, Landroid/content/ContentResolver;->insert(Landroid/net/Uri;Landroid/content/ContentValues;)Landroid/net/Uri;
 
     move-result-object p0
@@ -343,7 +343,7 @@
 .method private isBurstPrimaryImage(Ljava/nio/ByteBuffer;)Z
     .locals 7
 
-    .line 653
+    .line 647
     const-string p0, "Xmp"
 
     new-instance v0, Ljp/co/sony/mc/camera/util/ByteBufferInputStream;
@@ -354,25 +354,25 @@
 
     const/4 v2, 0x0
 
-    .line 657
+    .line 651
     :try_start_0
     new-instance v3, Landroid/media/ExifInterface;
 
     invoke-direct {v3, v0}, Landroid/media/ExifInterface;-><init>(Ljava/io/InputStream;)V
 
-    .line 658
+    .line 652
     invoke-virtual {v3, p0}, Landroid/media/ExifInterface;->hasAttribute(Ljava/lang/String;)Z
 
     move-result v4
 
     if-eqz v4, :cond_2
 
-    .line 659
+    .line 653
     invoke-virtual {v3, p0}, Landroid/media/ExifInterface;->getAttributeBytes(Ljava/lang/String;)[B
 
     move-result-object p0
 
-    .line 660
+    .line 654
     new-instance v3, Ljava/io/ByteArrayInputStream;
 
     invoke-direct {v3, p0}, Ljava/io/ByteArrayInputStream;-><init>([B)V
@@ -381,18 +381,18 @@
     .catch Lorg/xmlpull/v1/XmlPullParserException; {:try_start_0 .. :try_end_0} :catch_2
     .catchall {:try_start_0 .. :try_end_0} :catchall_1
 
-    .line 661
+    .line 655
     :try_start_1
     invoke-static {}, Landroid/util/Xml;->newPullParser()Lorg/xmlpull/v1/XmlPullParser;
 
     move-result-object p0
 
-    .line 662
+    .line 656
     const-string v1, "UTF-8"
 
     invoke-interface {p0, v3, v1}, Lorg/xmlpull/v1/XmlPullParser;->setInput(Ljava/io/InputStream;Ljava/lang/String;)V
 
-    .line 663
+    .line 657
     invoke-interface {p0}, Lorg/xmlpull/v1/XmlPullParser;->getEventType()I
 
     move-result v1
@@ -402,7 +402,7 @@
 
     if-eq v1, v4, :cond_1
 
-    .line 665
+    .line 659
     invoke-interface {p0}, Lorg/xmlpull/v1/XmlPullParser;->getName()Ljava/lang/String;
 
     move-result-object v5
@@ -411,7 +411,7 @@
 
     if-ne v1, v6, :cond_0
 
-    .line 667
+    .line 661
     const-string v1, "BurstPrimary"
 
     invoke-virtual {v1, v5}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
@@ -420,7 +420,7 @@
 
     if-eqz v1, :cond_0
 
-    .line 668
+    .line 662
     invoke-interface {p0}, Lorg/xmlpull/v1/XmlPullParser;->nextText()Ljava/lang/String;
 
     move-result-object v1
@@ -441,7 +441,7 @@
 
     goto :goto_1
 
-    .line 664
+    .line 658
     :cond_0
     invoke-interface {p0}, Lorg/xmlpull/v1/XmlPullParser;->next()I
 
@@ -472,7 +472,7 @@
 
     goto :goto_2
 
-    .line 680
+    .line 674
     :cond_2
     :goto_1
     :try_start_2
@@ -480,7 +480,7 @@
 
     if-eqz v1, :cond_3
 
-    .line 682
+    .line 676
     invoke-virtual {v1}, Ljava/io/ByteArrayInputStream;->close()V
     :try_end_2
     .catch Ljava/io/IOException; {:try_start_2 .. :try_end_2} :catch_1
@@ -500,20 +500,20 @@
     :catch_2
     move-exception p0
 
-    .line 677
+    .line 671
     :goto_2
     :try_start_3
     invoke-virtual {p0}, Ljava/lang/Exception;->printStackTrace()V
     :try_end_3
     .catchall {:try_start_3 .. :try_end_3} :catchall_1
 
-    .line 680
+    .line 674
     :try_start_4
     invoke-virtual {v0}, Ljava/io/InputStream;->close()V
 
     if-eqz v1, :cond_3
 
-    .line 682
+    .line 676
     invoke-virtual {v1}, Ljava/io/ByteArrayInputStream;->close()V
     :try_end_4
     .catch Ljava/io/IOException; {:try_start_4 .. :try_end_4} :catch_3
@@ -523,25 +523,25 @@
     :catch_3
     move-exception p0
 
-    .line 685
+    .line 679
     :goto_3
     invoke-virtual {p0}, Ljava/io/IOException;->printStackTrace()V
 
-    .line 687
+    .line 681
     :cond_3
     :goto_4
     invoke-virtual {p1}, Ljava/nio/ByteBuffer;->rewind()Ljava/nio/Buffer;
 
     return v2
 
-    .line 680
+    .line 674
     :goto_5
     :try_start_5
     invoke-virtual {v0}, Ljava/io/InputStream;->close()V
 
     if-eqz v1, :cond_4
 
-    .line 682
+    .line 676
     invoke-virtual {v1}, Ljava/io/ByteArrayInputStream;->close()V
     :try_end_5
     .catch Ljava/io/IOException; {:try_start_5 .. :try_end_5} :catch_4
@@ -551,73 +551,77 @@
     :catch_4
     move-exception v0
 
-    .line 685
+    .line 679
     invoke-virtual {v0}, Ljava/io/IOException;->printStackTrace()V
 
-    .line 687
+    .line 681
     :cond_4
     :goto_6
     invoke-virtual {p1}, Ljava/nio/ByteBuffer;->rewind()Ljava/nio/Buffer;
 
-    .line 688
+    .line 682
     throw p0
 .end method
 
 .method private synthetic lambda$storeData$0(Landroid/net/Uri;)V
     .locals 0
 
-    .line 596
+    .line 590
     invoke-direct {p0, p1}, Ljp/co/sony/mc/camera/storage/SavingTaskManager$ImageToFile;->releasePending(Landroid/net/Uri;)V
 
     return-void
 .end method
 
 .method private releasePending(Landroid/net/Uri;)V
-    .locals 5
+    .locals 6
 
-    .line 694
+    .line 688
     invoke-static {}, Landroid/os/SystemClock;->elapsedRealtime()J
 
     move-result-wide v0
 
-    .line 701
+    .line 695
     invoke-static {p1}, Ljp/co/sony/mc/camera/storage/StorageUtil;->releasePending(Landroid/net/Uri;)V
 
-    .line 702
+    .line 696
     invoke-static {}, Landroid/os/SystemClock;->elapsedRealtime()J
 
     move-result-wide v2
 
-    .line 704
-    new-instance p0, Ljava/lang/StringBuilder;
+    const/4 p0, 0x1
 
-    const-string v4, "Store Time [Uri="
+    .line 698
+    new-array p0, p0, [Ljava/lang/String;
 
-    invoke-direct {p0, v4}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+    new-instance v4, Ljava/lang/StringBuilder;
 
-    invoke-virtual {p0, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+    const-string v5, "Store Time [Uri="
 
-    move-result-object p0
+    invoke-direct {v4, v5}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
-    const-string p1, "] release: "
+    invoke-virtual {v4, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {p0, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    move-result-object p1
 
-    move-result-object p0
+    const-string v4, "] release: "
+
+    invoke-virtual {p1, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object p1
 
     sub-long/2addr v2, v0
 
-    invoke-virtual {p0, v2, v3}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
+    invoke-virtual {p1, v2, v3}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
 
-    move-result-object p0
+    move-result-object p1
 
-    invoke-virtual {p0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-virtual {p1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    move-result-object p0
+    move-result-object p1
 
-    filled-new-array {p0}, [Ljava/lang/String;
+    const/4 v0, 0x0
 
-    move-result-object p0
+    aput-object p1, p0, v0
 
     invoke-static {p0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
@@ -627,12 +631,12 @@
 .method private requestCheckStorage(Ljp/co/sony/mc/camera/storage/Storage$StorageType;)V
     .locals 2
 
-    .line 708
+    .line 702
     sget-object v0, Ljp/co/sony/mc/camera/storage/Storage$StorageType;->UNKNOWN:Ljp/co/sony/mc/camera/storage/Storage$StorageType;
 
     if-eq p1, v0, :cond_0
 
-    .line 709
+    .line 703
     iget-object v0, p0, Ljp/co/sony/mc/camera/storage/SavingTaskManager$ImageToFile;->this$0:Ljp/co/sony/mc/camera/storage/SavingTaskManager;
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/storage/SavingTaskManager;->-$$Nest$fgetmStorageManager(Ljp/co/sony/mc/camera/storage/SavingTaskManager;)Ljp/co/sony/mc/camera/storage/CameraStorageManager;
@@ -643,7 +647,7 @@
 
     invoke-virtual {v0, p1, v1}, Ljp/co/sony/mc/camera/storage/CameraStorageManager;->updateStorageState(Ljp/co/sony/mc/camera/storage/Storage$StorageType;Ljp/co/sony/mc/camera/storage/CameraStorageManager$UpdateRequestReason;)V
 
-    .line 711
+    .line 705
     :cond_0
     iget-object v0, p0, Ljp/co/sony/mc/camera/storage/SavingTaskManager$ImageToFile;->this$0:Ljp/co/sony/mc/camera/storage/SavingTaskManager;
 
@@ -659,35 +663,39 @@
 
 # virtual methods
 .method public getPath()Ljava/lang/String;
-    .locals 1
+    .locals 2
 
-    .line 465
+    .line 459
     iget-object v0, p0, Ljp/co/sony/mc/camera/storage/SavingTaskManager$ImageToFile;->mPath:Ljava/lang/String;
 
     if-eqz v0, :cond_0
 
     return-object v0
 
-    .line 467
+    .line 461
     :cond_0
     iget-object p0, p0, Ljp/co/sony/mc/camera/storage/SavingTaskManager$ImageToFile;->mUri:Landroid/net/Uri;
 
     if-eqz p0, :cond_1
 
-    .line 468
+    .line 462
     invoke-virtual {p0}, Landroid/net/Uri;->getPath()Ljava/lang/String;
 
     move-result-object p0
 
     return-object p0
 
-    .line 470
     :cond_1
-    const-string p0, "Save path and uri is not set."
+    const/4 p0, 0x1
 
-    filled-new-array {p0}, [Ljava/lang/String;
+    .line 464
+    new-array p0, p0, [Ljava/lang/String;
 
-    move-result-object p0
+    const/4 v0, 0x0
+
+    const-string v1, "Save path and uri is not set."
+
+    aput-object v1, p0, v0
 
     invoke-static {p0}, Ljp/co/sony/mc/camera/util/CamLog;->e([Ljava/lang/String;)V
 
@@ -701,7 +709,7 @@
 
     move-object/from16 v1, p0
 
-    .line 480
+    .line 474
     const-string v2, "IOException by sync is caught."
 
     const-string v3, ", total: "
@@ -743,7 +751,7 @@
 
     move-object/from16 v18, v15
 
-    .line 481
+    .line 475
     iget-object v15, v1, Ljp/co/sony/mc/camera/storage/SavingTaskManager$ImageToFile;->this$0:Ljp/co/sony/mc/camera/storage/SavingTaskManager;
 
     iget-object v15, v15, Ljp/co/sony/mc/camera/storage/SavingTaskManager;->mContext:Landroid/content/Context;
@@ -752,7 +760,7 @@
 
     move-result-object v15
 
-    .line 487
+    .line 481
     invoke-static {}, Landroid/os/SystemClock;->elapsedRealtime()J
 
     move-result-wide v19
@@ -761,12 +769,12 @@
 
     const-wide/16 v22, 0x0
 
-    .line 496
+    .line 490
     :try_start_0
     sget-boolean v24, Ljp/co/sony/mc/camera/util/CamLog;->VERBOSE:Z
     :try_end_0
-    .catch Ljava/io/FileNotFoundException; {:try_start_0 .. :try_end_0} :catch_47
-    .catch Ljava/io/IOException; {:try_start_0 .. :try_end_0} :catch_42
+    .catch Ljava/io/FileNotFoundException; {:try_start_0 .. :try_end_0} :catch_49
+    .catch Ljava/io/IOException; {:try_start_0 .. :try_end_0} :catch_43
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_3d
     .catchall {:try_start_0 .. :try_end_0} :catchall_12
 
@@ -837,7 +845,7 @@
 
     const/4 v4, 0x0
 
-    goto/16 :goto_54
+    goto/16 :goto_5a
 
     :catch_0
     move-exception v0
@@ -865,7 +873,7 @@
 
     const/4 v4, 0x0
 
-    goto/16 :goto_40
+    goto/16 :goto_41
 
     :catch_2
     move-exception v0
@@ -876,12 +884,12 @@
 
     move-object v15, v6
 
-    goto/16 :goto_47
+    goto/16 :goto_4a
 
     :cond_0
     move-object/from16 v25, v3
 
-    .line 498
+    .line 492
     :goto_0
     :try_start_3
     iget-object v3, v1, Ljp/co/sony/mc/camera/storage/SavingTaskManager$ImageToFile;->mPath:Ljava/lang/String;
@@ -893,7 +901,7 @@
 
     if-eqz v3, :cond_4
 
-    .line 499
+    .line 493
     :try_start_4
     sget-boolean v0, Ljp/co/sony/mc/camera/util/CamLog;->VERBOSE:Z
     :try_end_4
@@ -959,9 +967,9 @@
     :goto_1
     const/4 v3, 0x0
 
-    goto/16 :goto_41
+    goto/16 :goto_42
 
-    .line 501
+    .line 495
     :cond_1
     :goto_2
     invoke-direct {v1, v15}, Ljp/co/sony/mc/camera/storage/SavingTaskManager$ImageToFile;->insertPhotoMedia(Landroid/content/ContentResolver;)Landroid/net/Uri;
@@ -973,7 +981,7 @@
     .catch Ljava/lang/Exception; {:try_start_6 .. :try_end_6} :catch_0
     .catchall {:try_start_6 .. :try_end_6} :catchall_0
 
-    .line 502
+    .line 496
     :try_start_7
     invoke-static {}, Landroid/os/SystemClock;->elapsedRealtime()J
 
@@ -984,7 +992,7 @@
     .catch Ljava/lang/Exception; {:try_start_7 .. :try_end_7} :catch_d
     .catchall {:try_start_7 .. :try_end_7} :catchall_4
 
-    .line 507
+    .line 501
     :try_start_8
     const-string v0, "rw"
 
@@ -1001,7 +1009,7 @@
 
     if-eqz v15, :cond_3
 
-    .line 511
+    .line 505
     :try_start_9
     invoke-virtual {v15}, Landroid/os/ParcelFileDescriptor;->getFileDescriptor()Ljava/io/FileDescriptor;
 
@@ -1009,7 +1017,7 @@
 
     if-eqz v0, :cond_2
 
-    .line 515
+    .line 509
     new-instance v14, Ljava/io/FileOutputStream;
 
     invoke-direct {v14, v0}, Ljava/io/FileOutputStream;-><init>(Ljava/io/FileDescriptor;)V
@@ -1019,7 +1027,7 @@
     .catch Ljava/lang/Exception; {:try_start_9 .. :try_end_9} :catch_7
     .catchall {:try_start_9 .. :try_end_9} :catchall_2
 
-    .line 516
+    .line 510
     :try_start_a
     invoke-static {}, Landroid/os/SystemClock;->elapsedRealtime()J
 
@@ -1088,7 +1096,7 @@
 
     goto :goto_6
 
-    .line 513
+    .line 507
     :cond_2
     :try_start_b
     new-instance v0, Ljava/lang/RuntimeException;
@@ -1175,7 +1183,7 @@
 
     goto/16 :goto_28
 
-    .line 509
+    .line 503
     :cond_3
     new-instance v0, Ljava/lang/RuntimeException;
 
@@ -1262,7 +1270,7 @@
 
     move-object/from16 v3, v25
 
-    goto/16 :goto_54
+    goto/16 :goto_5a
 
     :catch_d
     move-exception v0
@@ -1341,9 +1349,9 @@
 
     const/4 v3, 0x0
 
-    goto/16 :goto_48
+    goto/16 :goto_4b
 
-    .line 517
+    .line 511
     :cond_4
     :try_start_c
     iget-object v3, v1, Ljp/co/sony/mc/camera/storage/SavingTaskManager$ImageToFile;->mUri:Landroid/net/Uri;
@@ -1355,7 +1363,7 @@
 
     if-eqz v3, :cond_6
 
-    .line 518
+    .line 512
     :try_start_d
     sget-boolean v3, Ljp/co/sony/mc/camera/util/CamLog;->VERBOSE:Z
     :try_end_d
@@ -1397,7 +1405,7 @@
 
     invoke-static {v12}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
-    .line 519
+    .line 513
     :cond_5
     iget-object v0, v1, Ljp/co/sony/mc/camera/storage/SavingTaskManager$ImageToFile;->this$0:Ljp/co/sony/mc/camera/storage/SavingTaskManager;
 
@@ -1445,7 +1453,7 @@
 
     if-nez p1, :cond_f
 
-    .line 530
+    .line 524
     :try_start_10
     iget-object v0, v1, Ljp/co/sony/mc/camera/storage/SavingTaskManager$ImageToFile;->mBuffer:Ljava/nio/ByteBuffer;
     :try_end_10
@@ -1456,7 +1464,7 @@
 
     if-nez v0, :cond_8
 
-    .line 531
+    .line 525
     :try_start_11
     iget-object v0, v1, Ljp/co/sony/mc/camera/storage/SavingTaskManager$ImageToFile;->mImageData:[B
     :try_end_11
@@ -1472,7 +1480,7 @@
 
     if-lez v15, :cond_7
 
-    .line 532
+    .line 526
     array-length v15, v0
     :try_end_12
     .catch Ljava/io/FileNotFoundException; {:try_start_12 .. :try_end_12} :catch_11
@@ -1546,7 +1554,7 @@
     :goto_14
     const/4 v0, 0x0
 
-    goto/16 :goto_54
+    goto/16 :goto_5a
 
     :catch_12
     move-exception v0
@@ -1603,7 +1611,7 @@
 
     move-object/from16 v28, v15
 
-    .line 535
+    .line 529
     :try_start_14
     iget-object v4, v1, Ljp/co/sony/mc/camera/storage/SavingTaskManager$ImageToFile;->mPath:Ljava/lang/String;
     :try_end_14
@@ -1614,7 +1622,7 @@
 
     if-eqz v4, :cond_9
 
-    .line 536
+    .line 530
     :try_start_15
     move-object v0, v14
 
@@ -1635,7 +1643,7 @@
     .catch Ljava/lang/Exception; {:try_start_15 .. :try_end_15} :catch_19
     .catchall {:try_start_15 .. :try_end_15} :catchall_8
 
-    .line 537
+    .line 531
     :try_start_16
     invoke-static {}, Landroid/os/SystemClock;->elapsedRealtime()J
 
@@ -1697,7 +1705,7 @@
 
     move/from16 v3, v33
 
-    goto/16 :goto_41
+    goto/16 :goto_42
 
     :catch_18
     move-exception v0
@@ -1716,7 +1724,7 @@
 
     move/from16 v3, v33
 
-    goto/16 :goto_48
+    goto/16 :goto_4b
 
     :catchall_8
     move-exception v0
@@ -1742,19 +1750,19 @@
 
     goto :goto_17
 
-    .line 539
+    .line 533
     :cond_9
     :try_start_17
     invoke-virtual {v0}, Ljava/nio/ByteBuffer;->capacity()I
 
     move-result v0
 
-    .line 540
+    .line 534
     new-array v4, v0, [B
 
     iput-object v4, v1, Ljp/co/sony/mc/camera/storage/SavingTaskManager$ImageToFile;->mImageData:[B
 
-    .line 541
+    .line 535
     iget-object v15, v1, Ljp/co/sony/mc/camera/storage/SavingTaskManager$ImageToFile;->mBuffer:Ljava/nio/ByteBuffer;
     :try_end_17
     .catch Ljava/io/FileNotFoundException; {:try_start_17 .. :try_end_17} :catch_2c
@@ -1769,7 +1777,7 @@
     :try_start_18
     invoke-virtual {v15, v4, v5, v0}, Ljava/nio/ByteBuffer;->get([BII)Ljava/nio/ByteBuffer;
 
-    .line 542
+    .line 536
     iget-object v0, v1, Ljp/co/sony/mc/camera/storage/SavingTaskManager$ImageToFile;->mImageData:[B
 
     array-length v4, v0
@@ -1781,7 +1789,7 @@
 
     if-lez v4, :cond_a
 
-    .line 543
+    .line 537
     :try_start_19
     array-length v4, v0
 
@@ -1844,46 +1852,34 @@
 
     const/4 v4, 0x0
 
-    .line 548
+    .line 542
     :goto_1a
     :try_start_1a
     new-instance v0, Landroid/util/Pair;
+
+    const/4 v5, 0x1
+
+    invoke-static {v5}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
+
+    move-result-object v15
+
+    invoke-direct {v0, v15, v3}, Landroid/util/Pair;-><init>(Ljava/lang/Object;Ljava/lang/Object;)V
     :try_end_1a
     .catch Ljava/io/FileNotFoundException; {:try_start_1a .. :try_end_1a} :catch_26
     .catch Ljava/io/IOException; {:try_start_1a .. :try_end_1a} :catch_25
     .catch Ljava/lang/Exception; {:try_start_1a .. :try_end_1a} :catch_24
     .catchall {:try_start_1a .. :try_end_1a} :catchall_a
 
-    const/4 v5, 0x1
-
-    :try_start_1b
-    invoke-static {v5}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
-
-    move-result-object v15
-    :try_end_1b
-    .catch Ljava/io/FileNotFoundException; {:try_start_1b .. :try_end_1b} :catch_26
-    .catch Ljava/io/IOException; {:try_start_1b .. :try_end_1b} :catch_23
-    .catch Ljava/lang/Exception; {:try_start_1b .. :try_end_1b} :catch_24
-    .catchall {:try_start_1b .. :try_end_1b} :catchall_a
-
-    :try_start_1c
-    invoke-direct {v0, v15, v3}, Landroid/util/Pair;-><init>(Ljava/lang/Object;Ljava/lang/Object;)V
-    :try_end_1c
-    .catch Ljava/io/FileNotFoundException; {:try_start_1c .. :try_end_1c} :catch_26
-    .catch Ljava/io/IOException; {:try_start_1c .. :try_end_1c} :catch_25
-    .catch Ljava/lang/Exception; {:try_start_1c .. :try_end_1c} :catch_24
-    .catchall {:try_start_1c .. :try_end_1c} :catchall_a
-
     if-eqz v14, :cond_b
 
-    .line 567
-    :try_start_1d
+    .line 561
+    :try_start_1b
     invoke-virtual {v14}, Ljava/io/OutputStream;->flush()V
-    :try_end_1d
-    .catch Ljava/io/IOException; {:try_start_1d .. :try_end_1d} :catch_20
+    :try_end_1b
+    .catch Ljava/io/IOException; {:try_start_1b .. :try_end_1b} :catch_21
 
-    .line 569
-    :try_start_1e
+    .line 563
+    :try_start_1c
     move-object v5, v14
 
     check-cast v5, Ljava/io/FileOutputStream;
@@ -1893,70 +1889,95 @@
     move-result-object v5
 
     invoke-virtual {v5}, Ljava/io/FileDescriptor;->sync()V
-    :try_end_1e
-    .catch Ljava/io/IOException; {:try_start_1e .. :try_end_1e} :catch_1f
+    :try_end_1c
+    .catch Ljava/io/IOException; {:try_start_1c .. :try_end_1c} :catch_1f
 
     goto :goto_1b
 
     :catch_1f
     const/4 v5, 0x1
 
-    .line 571
-    :try_start_1f
-    new-array v5, v5, [Ljava/lang/String;
+    .line 565
+    :try_start_1d
+    new-array v15, v5, [Ljava/lang/String;
+    :try_end_1d
+    .catch Ljava/io/IOException; {:try_start_1d .. :try_end_1d} :catch_20
 
-    const/4 v15, 0x0
+    const/4 v5, 0x0
 
-    aput-object v2, v5, v15
+    :try_start_1e
+    aput-object v2, v15, v5
 
-    invoke-static {v5}, Ljp/co/sony/mc/camera/util/CamLog;->i([Ljava/lang/String;)V
+    invoke-static {v15}, Ljp/co/sony/mc/camera/util/CamLog;->i([Ljava/lang/String;)V
 
-    .line 573
+    .line 567
     :goto_1b
     invoke-static {}, Landroid/os/SystemClock;->elapsedRealtime()J
 
     move-result-wide v15
-    :try_end_1f
-    .catch Ljava/io/IOException; {:try_start_1f .. :try_end_1f} :catch_20
+    :try_end_1e
+    .catch Ljava/io/IOException; {:try_start_1e .. :try_end_1e} :catch_21
 
-    .line 574
-    :try_start_20
+    .line 568
+    :try_start_1f
     invoke-virtual {v14}, Ljava/io/OutputStream;->close()V
 
-    .line 575
+    .line 569
     invoke-static {}, Landroid/os/SystemClock;->elapsedRealtime()J
 
     move-result-wide v22
-    :try_end_20
-    .catch Ljava/io/IOException; {:try_start_20 .. :try_end_20} :catch_21
+    :try_end_1f
+    .catch Ljava/io/IOException; {:try_start_1f .. :try_end_1f} :catch_22
 
-    goto :goto_1c
+    const/4 v2, 0x1
 
-    :catch_20
-    move-wide/from16 v15, v22
-
-    .line 578
-    :catch_21
-    filled-new-array {v11}, [Ljava/lang/String;
-
-    move-result-object v2
-
-    invoke-static {v2}, Ljp/co/sony/mc/camera/util/CamLog;->i([Ljava/lang/String;)V
-
-    :goto_1c
-    move-wide/from16 v33, v15
-
-    move-wide/from16 v14, v22
-
-    move-wide/from16 v22, v33
+    const/4 v14, 0x0
 
     goto :goto_1d
 
-    :cond_b
-    move-wide/from16 v14, v22
+    :catch_20
+    move v2, v5
 
-    .line 582
+    move-wide/from16 v15, v22
+
+    goto :goto_1c
+
+    :catch_21
+    move-wide/from16 v15, v22
+
+    :catch_22
+    const/4 v2, 0x1
+
+    .line 572
+    :goto_1c
+    new-array v5, v2, [Ljava/lang/String;
+
+    const/4 v14, 0x0
+
+    aput-object v11, v5, v14
+
+    invoke-static {v5}, Ljp/co/sony/mc/camera/util/CamLog;->i([Ljava/lang/String;)V
+
     :goto_1d
+    move-wide/from16 v33, v15
+
+    move-wide/from16 v15, v22
+
+    move-wide/from16 v22, v33
+
+    goto :goto_1e
+
+    :cond_b
+    const/4 v2, 0x1
+
+    const/4 v14, 0x0
+
+    move-wide/from16 v15, v22
+
+    .line 576
+    :goto_1e
+    new-array v5, v2, [Ljava/lang/String;
+
     new-instance v2, Ljava/lang/StringBuilder;
 
     invoke-direct {v2, v10}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
@@ -1969,13 +1990,15 @@
 
     move-result-object v2
 
-    filled-new-array {v2}, [Ljava/lang/String;
+    aput-object v2, v5, v14
 
-    move-result-object v2
+    invoke-static {v5}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
-    invoke-static {v2}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
+    const/4 v2, 0x1
 
-    .line 584
+    .line 578
+    new-array v4, v2, [Ljava/lang/String;
+
     new-instance v2, Ljava/lang/StringBuilder;
 
     invoke-direct {v2, v9}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
@@ -1988,9 +2011,9 @@
 
     move-result-object v2
 
-    sub-long v4, v12, v19
+    sub-long v8, v12, v19
 
-    invoke-virtual {v2, v4, v5}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
+    invoke-virtual {v2, v8, v9}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
 
     move-result-object v2
 
@@ -1998,9 +2021,9 @@
 
     move-result-object v2
 
-    sub-long v4, v26, v12
+    sub-long v7, v26, v12
 
-    invoke-virtual {v2, v4, v5}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
+    invoke-virtual {v2, v7, v8}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
 
     move-result-object v2
 
@@ -2008,9 +2031,9 @@
 
     move-result-object v2
 
-    sub-long v4, v31, v26
+    sub-long v5, v31, v26
 
-    invoke-virtual {v2, v4, v5}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
+    invoke-virtual {v2, v5, v6}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
 
     move-result-object v2
 
@@ -2020,33 +2043,33 @@
 
     move-result-object v2
 
-    sub-long v4, v22, v31
+    sub-long v5, v22, v31
 
-    invoke-virtual {v2, v4, v5}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
-
-    move-result-object v2
-
-    move-object/from16 v4, v29
-
-    invoke-virtual {v2, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v2, v5, v6}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
 
     move-result-object v2
 
-    sub-long v4, v14, v22
+    move-object/from16 v5, v29
 
-    invoke-virtual {v2, v4, v5}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
-
-    move-result-object v2
-
-    move-object/from16 v4, v25
-
-    invoke-virtual {v2, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v2, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v2
 
-    sub-long v14, v14, v19
+    sub-long v5, v15, v22
 
-    invoke-virtual {v2, v14, v15}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
+    invoke-virtual {v2, v5, v6}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
+
+    move-result-object v2
+
+    move-object/from16 v5, v25
+
+    invoke-virtual {v2, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v2
+
+    sub-long v5, v15, v19
+
+    invoke-virtual {v2, v5, v6}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
 
     move-result-object v2
 
@@ -2054,13 +2077,13 @@
 
     move-result-object v2
 
-    filled-new-array {v2}, [Ljava/lang/String;
+    const/4 v5, 0x0
 
-    move-result-object v2
+    aput-object v2, v4, v5
 
-    invoke-static {v2}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
+    invoke-static {v4}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
-    .line 592
+    .line 586
     iget-object v2, v1, Ljp/co/sony/mc/camera/storage/SavingTaskManager$ImageToFile;->mRequest:Ljp/co/sony/mc/camera/storage/PhotoSavingRequest;
 
     iget-object v2, v2, Ljp/co/sony/mc/camera/storage/PhotoSavingRequest;->common:Ljp/co/sony/mc/camera/mediasaving/takenstatus/TakenStatusCommon;
@@ -2071,7 +2094,7 @@
 
     if-ne v2, v4, :cond_c
 
-    .line 593
+    .line 587
     iget-object v2, v1, Ljp/co/sony/mc/camera/storage/SavingTaskManager$ImageToFile;->this$0:Ljp/co/sony/mc/camera/storage/SavingTaskManager;
 
     invoke-static {v2}, Ljp/co/sony/mc/camera/storage/SavingTaskManager;->-$$Nest$fgetmStoreDataHandler(Ljp/co/sony/mc/camera/storage/SavingTaskManager;)Landroid/os/Handler;
@@ -2080,7 +2103,7 @@
 
     if-eqz v2, :cond_d
 
-    .line 595
+    .line 589
     iget-object v2, v1, Ljp/co/sony/mc/camera/storage/SavingTaskManager$ImageToFile;->this$0:Ljp/co/sony/mc/camera/storage/SavingTaskManager;
 
     invoke-static {v2}, Ljp/co/sony/mc/camera/storage/SavingTaskManager;->-$$Nest$fgetmStoreDataHandler(Ljp/co/sony/mc/camera/storage/SavingTaskManager;)Landroid/os/Handler;
@@ -2093,57 +2116,48 @@
 
     invoke-virtual {v2, v4}, Landroid/os/Handler;->post(Ljava/lang/Runnable;)Z
 
-    goto :goto_1e
+    goto :goto_1f
 
-    .line 600
+    .line 594
     :cond_c
     invoke-direct {v1, v3}, Ljp/co/sony/mc/camera/storage/SavingTaskManager$ImageToFile;->releasePending(Landroid/net/Uri;)V
 
     :cond_d
-    :goto_1e
+    :goto_1f
     const/4 v2, 0x0
 
-    .line 603
+    .line 597
     iput-object v2, v1, Ljp/co/sony/mc/camera/storage/SavingTaskManager$ImageToFile;->mImageData:[B
 
     if-eqz v28, :cond_e
 
-    .line 607
-    :try_start_21
+    .line 601
+    :try_start_20
     invoke-virtual/range {v28 .. v28}, Landroid/os/ParcelFileDescriptor;->close()V
-    :try_end_21
-    .catch Ljava/io/IOException; {:try_start_21 .. :try_end_21} :catch_22
+    :try_end_20
+    .catch Ljava/io/IOException; {:try_start_20 .. :try_end_20} :catch_23
 
-    goto :goto_1f
+    goto :goto_20
 
-    .line 609
-    :catch_22
-    filled-new-array {v11}, [Ljava/lang/String;
+    :catch_23
+    const/4 v1, 0x1
 
-    move-result-object v1
+    .line 603
+    new-array v1, v1, [Ljava/lang/String;
+
+    const/4 v2, 0x0
+
+    aput-object v11, v1, v2
 
     invoke-static {v1}, Ljp/co/sony/mc/camera/util/CamLog;->i([Ljava/lang/String;)V
 
     :cond_e
-    :goto_1f
+    :goto_20
     move-object v12, v0
 
-    goto/16 :goto_50
+    const/4 v1, 0x0
 
-    :catch_23
-    move-object/from16 v33, v25
-
-    move-object/from16 v25, v3
-
-    move-object/from16 v3, v33
-
-    move-object v15, v6
-
-    move v6, v5
-
-    move-object/from16 v5, v30
-
-    goto :goto_20
+    goto/16 :goto_56
 
     :catchall_a
     move-exception v0
@@ -2204,7 +2218,6 @@
 
     const/4 v6, 0x1
 
-    :goto_20
     move-object/from16 v33, v25
 
     move-object/from16 v25, v3
@@ -2213,7 +2226,7 @@
 
     move-object/from16 v4, v33
 
-    goto/16 :goto_41
+    goto/16 :goto_42
 
     :catch_26
     move-exception v0
@@ -2240,7 +2253,7 @@
 
     move-object/from16 v4, v33
 
-    goto/16 :goto_48
+    goto/16 :goto_4b
 
     :catchall_b
     move-exception v0
@@ -2456,14 +2469,14 @@
 
     move-object/from16 v3, v33
 
-    .line 528
-    :try_start_22
+    .line 522
+    :try_start_21
     throw p1
-    :try_end_22
-    .catch Ljava/io/FileNotFoundException; {:try_start_22 .. :try_end_22} :catch_32
-    .catch Ljava/io/IOException; {:try_start_22 .. :try_end_22} :catch_31
-    .catch Ljava/lang/Exception; {:try_start_22 .. :try_end_22} :catch_30
-    .catchall {:try_start_22 .. :try_end_22} :catchall_e
+    :try_end_21
+    .catch Ljava/io/FileNotFoundException; {:try_start_21 .. :try_end_21} :catch_32
+    .catch Ljava/io/IOException; {:try_start_21 .. :try_end_21} :catch_31
+    .catch Ljava/lang/Exception; {:try_start_21 .. :try_end_21} :catch_30
+    .catchall {:try_start_21 .. :try_end_21} :catchall_e
 
     :catchall_e
     move-exception v0
@@ -2493,7 +2506,7 @@
     :goto_2c
     const/4 v6, 0x1
 
-    goto/16 :goto_41
+    goto/16 :goto_42
 
     :catch_32
     move-exception v0
@@ -2513,28 +2526,28 @@
 
     move-object/from16 v3, v33
 
-    .line 523
-    :try_start_23
+    .line 517
+    :try_start_22
     new-array v0, v4, [Ljava/lang/String;
+    :try_end_22
+    .catch Ljava/io/FileNotFoundException; {:try_start_22 .. :try_end_22} :catch_39
+    .catch Ljava/io/IOException; {:try_start_22 .. :try_end_22} :catch_38
+    .catch Ljava/lang/Exception; {:try_start_22 .. :try_end_22} :catch_37
+    .catchall {:try_start_22 .. :try_end_22} :catchall_10
+
+    :try_start_23
+    new-instance v4, Ljava/lang/StringBuilder;
     :try_end_23
     .catch Ljava/io/FileNotFoundException; {:try_start_23 .. :try_end_23} :catch_39
-    .catch Ljava/io/IOException; {:try_start_23 .. :try_end_23} :catch_38
+    .catch Ljava/io/IOException; {:try_start_23 .. :try_end_23} :catch_36
     .catch Ljava/lang/Exception; {:try_start_23 .. :try_end_23} :catch_37
     .catchall {:try_start_23 .. :try_end_23} :catchall_10
-
-    :try_start_24
-    new-instance v4, Ljava/lang/StringBuilder;
-    :try_end_24
-    .catch Ljava/io/FileNotFoundException; {:try_start_24 .. :try_end_24} :catch_39
-    .catch Ljava/io/IOException; {:try_start_24 .. :try_end_24} :catch_36
-    .catch Ljava/lang/Exception; {:try_start_24 .. :try_end_24} :catch_37
-    .catchall {:try_start_24 .. :try_end_24} :catchall_10
 
     move-wide/from16 v29, v12
 
     move-object/from16 v12, v21
 
-    :try_start_25
+    :try_start_24
     invoke-direct {v4, v12}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
     iget-object v12, v1, Ljp/co/sony/mc/camera/storage/SavingTaskManager$ImageToFile;->mUri:Landroid/net/Uri;
@@ -2553,7 +2566,7 @@
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/util/CamLog;->e([Ljava/lang/String;)V
 
-    .line 524
+    .line 518
     new-instance v0, Ljava/lang/RuntimeException;
 
     const-string v4, "outputStream is null"
@@ -2561,11 +2574,11 @@
     invoke-direct {v0, v4}, Ljava/lang/RuntimeException;-><init>(Ljava/lang/String;)V
 
     throw v0
-    :try_end_25
-    .catch Ljava/io/FileNotFoundException; {:try_start_25 .. :try_end_25} :catch_35
-    .catch Ljava/io/IOException; {:try_start_25 .. :try_end_25} :catch_34
-    .catch Ljava/lang/Exception; {:try_start_25 .. :try_end_25} :catch_33
-    .catchall {:try_start_25 .. :try_end_25} :catchall_f
+    :try_end_24
+    .catch Ljava/io/FileNotFoundException; {:try_start_24 .. :try_end_24} :catch_35
+    .catch Ljava/io/IOException; {:try_start_24 .. :try_end_24} :catch_34
+    .catch Ljava/lang/Exception; {:try_start_24 .. :try_end_24} :catch_33
+    .catchall {:try_start_24 .. :try_end_24} :catchall_f
 
     :catchall_f
     move-exception v0
@@ -2730,7 +2743,7 @@
 
     move-object v15, v6
 
-    goto/16 :goto_3f
+    goto/16 :goto_40
 
     :catch_3c
     move-exception v0
@@ -2763,7 +2776,7 @@
     :goto_35
     const/4 v6, 0x1
 
-    goto/16 :goto_48
+    goto/16 :goto_4b
 
     :catchall_12
     move-exception v0
@@ -2794,7 +2807,7 @@
 
     move-object/from16 v6, v33
 
-    goto/16 :goto_54
+    goto/16 :goto_5a
 
     :catch_3d
     move-exception v0
@@ -2825,20 +2838,20 @@
 
     const/16 v28, 0x0
 
-    .line 560
+    .line 554
     :goto_3a
-    :try_start_26
+    :try_start_25
     new-array v5, v15, [Ljava/lang/String;
 
     new-instance v15, Ljava/lang/StringBuilder;
-    :try_end_26
-    .catchall {:try_start_26 .. :try_end_26} :catchall_13
+    :try_end_25
+    .catchall {:try_start_25 .. :try_end_25} :catchall_13
 
     move-object/from16 v21, v6
 
     move-object/from16 v6, v16
 
-    :try_start_27
+    :try_start_26
     invoke-direct {v15, v6}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
     invoke-virtual {v0}, Ljava/lang/Exception;->toString()Ljava/lang/String;
@@ -2859,36 +2872,36 @@
 
     invoke-static {v5}, Ljp/co/sony/mc/camera/util/CamLog;->e([Ljava/lang/String;)V
 
-    .line 561
+    .line 555
     iget-object v0, v1, Ljp/co/sony/mc/camera/storage/SavingTaskManager$ImageToFile;->mRequest:Ljp/co/sony/mc/camera/storage/PhotoSavingRequest;
 
     invoke-virtual {v0}, Ljp/co/sony/mc/camera/storage/PhotoSavingRequest;->isOneShot()Z
 
     move-result v0
-    :try_end_27
-    .catchall {:try_start_27 .. :try_end_27} :catchall_17
+    :try_end_26
+    .catchall {:try_start_26 .. :try_end_26} :catchall_17
 
     if-nez v0, :cond_11
 
-    .line 562
-    :try_start_28
+    .line 556
+    :try_start_27
     iget-object v0, v1, Ljp/co/sony/mc/camera/storage/SavingTaskManager$ImageToFile;->mStorageType:Ljp/co/sony/mc/camera/storage/Storage$StorageType;
 
     invoke-direct {v1, v0}, Ljp/co/sony/mc/camera/storage/SavingTaskManager$ImageToFile;->requestCheckStorage(Ljp/co/sony/mc/camera/storage/Storage$StorageType;)V
-    :try_end_28
-    .catchall {:try_start_28 .. :try_end_28} :catchall_16
+    :try_end_27
+    .catchall {:try_start_27 .. :try_end_27} :catchall_16
 
     :cond_11
     if-eqz v14, :cond_12
 
-    .line 567
-    :try_start_29
+    .line 561
+    :try_start_28
     invoke-virtual {v14}, Ljava/io/OutputStream;->flush()V
-    :try_end_29
-    .catch Ljava/io/IOException; {:try_start_29 .. :try_end_29} :catch_3f
+    :try_end_28
+    .catch Ljava/io/IOException; {:try_start_28 .. :try_end_28} :catch_40
 
-    .line 569
-    :try_start_2a
+    .line 563
+    :try_start_29
     move-object v0, v14
 
     check-cast v0, Ljava/io/FileOutputStream;
@@ -2898,176 +2911,201 @@
     move-result-object v0
 
     invoke-virtual {v0}, Ljava/io/FileDescriptor;->sync()V
-    :try_end_2a
-    .catch Ljava/io/IOException; {:try_start_2a .. :try_end_2a} :catch_3e
+    :try_end_29
+    .catch Ljava/io/IOException; {:try_start_29 .. :try_end_29} :catch_3e
 
     goto :goto_3b
 
     :catch_3e
     const/4 v5, 0x1
 
-    .line 571
-    :try_start_2b
+    .line 565
+    :try_start_2a
     new-array v0, v5, [Ljava/lang/String;
+    :try_end_2a
+    .catch Ljava/io/IOException; {:try_start_2a .. :try_end_2a} :catch_3f
 
     const/4 v5, 0x0
 
+    :try_start_2b
     aput-object v2, v0, v5
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/util/CamLog;->i([Ljava/lang/String;)V
 
-    .line 573
+    .line 567
     :goto_3b
     invoke-static {}, Landroid/os/SystemClock;->elapsedRealtime()J
 
     move-result-wide v5
     :try_end_2b
-    .catch Ljava/io/IOException; {:try_start_2b .. :try_end_2b} :catch_3f
+    .catch Ljava/io/IOException; {:try_start_2b .. :try_end_2b} :catch_40
 
-    .line 574
+    .line 568
     :try_start_2c
     invoke-virtual {v14}, Ljava/io/OutputStream;->close()V
 
-    .line 575
+    .line 569
     invoke-static {}, Landroid/os/SystemClock;->elapsedRealtime()J
 
     move-result-wide v22
     :try_end_2c
-    .catch Ljava/io/IOException; {:try_start_2c .. :try_end_2c} :catch_40
+    .catch Ljava/io/IOException; {:try_start_2c .. :try_end_2c} :catch_41
+
+    const/4 v2, 0x1
+
+    const/4 v14, 0x0
+
+    goto :goto_3d
+
+    :catch_3f
+    move v2, v5
+
+    move-wide/from16 v5, v22
 
     goto :goto_3c
 
-    :catch_3f
+    :catch_40
     move-wide/from16 v5, v22
 
-    .line 578
-    :catch_40
-    filled-new-array {v11}, [Ljava/lang/String;
+    :catch_41
+    const/4 v2, 0x1
 
-    move-result-object v0
+    .line 572
+    :goto_3c
+    new-array v0, v2, [Ljava/lang/String;
+
+    const/4 v14, 0x0
+
+    aput-object v11, v0, v14
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/util/CamLog;->i([Ljava/lang/String;)V
 
-    :goto_3c
+    :goto_3d
     move-wide/from16 v33, v5
 
     move-wide/from16 v5, v22
 
     move-wide/from16 v22, v33
 
-    goto :goto_3d
+    goto :goto_3e
 
     :cond_12
+    const/4 v2, 0x1
+
+    const/4 v14, 0x0
+
     move-wide/from16 v5, v22
 
-    .line 582
-    :goto_3d
-    new-instance v0, Ljava/lang/StringBuilder;
+    .line 576
+    :goto_3e
+    new-array v0, v2, [Ljava/lang/String;
 
-    invoke-direct {v0, v10}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+    new-instance v15, Ljava/lang/StringBuilder;
 
-    invoke-virtual {v0, v3}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+    invoke-direct {v15, v10}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
-    move-result-object v0
+    invoke-virtual {v15, v3}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    move-result-object v3
 
-    move-result-object v0
+    invoke-virtual {v3}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    filled-new-array {v0}, [Ljava/lang/String;
+    move-result-object v3
 
-    move-result-object v0
+    aput-object v3, v0, v14
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
-    .line 584
-    new-instance v0, Ljava/lang/StringBuilder;
+    .line 578
+    new-array v0, v2, [Ljava/lang/String;
 
-    invoke-direct {v0, v9}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+    new-instance v2, Ljava/lang/StringBuilder;
 
-    invoke-virtual {v0, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+    invoke-direct {v2, v9}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
-    move-result-object v0
+    invoke-virtual {v2, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v0, v8}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    move-result-object v2
 
-    move-result-object v0
+    invoke-virtual {v2, v8}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    sub-long v2, v12, v19
+    move-result-object v2
 
-    invoke-virtual {v0, v2, v3}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
+    sub-long v8, v12, v19
 
-    move-result-object v0
+    invoke-virtual {v2, v8, v9}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v0, v7}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    move-result-object v2
 
-    move-result-object v0
+    invoke-virtual {v2, v7}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    sub-long v2, v26, v12
+    move-result-object v2
 
-    invoke-virtual {v0, v2, v3}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
+    sub-long v7, v26, v12
 
-    move-result-object v0
+    invoke-virtual {v2, v7, v8}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
+
+    move-result-object v2
 
     move-object/from16 v15, v21
 
-    invoke-virtual {v0, v15}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v2, v15}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    move-result-object v0
+    move-result-object v2
 
-    sub-long v2, v31, v26
+    sub-long v7, v31, v26
 
-    invoke-virtual {v0, v2, v3}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
+    invoke-virtual {v2, v7, v8}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
 
-    move-result-object v0
+    move-result-object v2
 
-    move-object/from16 v2, v30
+    move-object/from16 v3, v30
 
-    invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    move-result-object v0
+    move-result-object v2
 
-    sub-long v2, v22, v31
+    sub-long v7, v22, v31
 
-    invoke-virtual {v0, v2, v3}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
+    invoke-virtual {v2, v7, v8}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
 
-    move-result-object v0
+    move-result-object v2
 
-    move-object/from16 v2, v29
+    move-object/from16 v3, v29
 
-    invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    move-result-object v0
+    move-result-object v2
 
-    sub-long v2, v5, v22
+    sub-long v7, v5, v22
 
-    invoke-virtual {v0, v2, v3}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
+    invoke-virtual {v2, v7, v8}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
 
-    move-result-object v0
+    move-result-object v2
 
-    move-object/from16 v2, v25
+    move-object/from16 v3, v25
 
-    invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    move-result-object v0
+    move-result-object v2
 
     sub-long v5, v5, v19
 
-    invoke-virtual {v0, v5, v6}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
+    invoke-virtual {v2, v5, v6}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
 
-    move-result-object v0
+    move-result-object v2
 
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    move-result-object v0
+    move-result-object v2
 
-    filled-new-array {v0}, [Ljava/lang/String;
+    const/4 v3, 0x0
 
-    move-result-object v0
+    aput-object v2, v0, v3
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
-    .line 592
+    .line 586
     iget-object v0, v1, Ljp/co/sony/mc/camera/storage/SavingTaskManager$ImageToFile;->mRequest:Ljp/co/sony/mc/camera/storage/PhotoSavingRequest;
 
     iget-object v0, v0, Ljp/co/sony/mc/camera/storage/PhotoSavingRequest;->common:Ljp/co/sony/mc/camera/mediasaving/takenstatus/TakenStatusCommon;
@@ -3078,7 +3116,7 @@
 
     if-ne v0, v2, :cond_13
 
-    .line 593
+    .line 587
     iget-object v0, v1, Ljp/co/sony/mc/camera/storage/SavingTaskManager$ImageToFile;->this$0:Ljp/co/sony/mc/camera/storage/SavingTaskManager;
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/storage/SavingTaskManager;->-$$Nest$fgetmStoreDataHandler(Ljp/co/sony/mc/camera/storage/SavingTaskManager;)Landroid/os/Handler;
@@ -3087,7 +3125,7 @@
 
     if-eqz v0, :cond_14
 
-    .line 595
+    .line 589
     iget-object v0, v1, Ljp/co/sony/mc/camera/storage/SavingTaskManager$ImageToFile;->this$0:Ljp/co/sony/mc/camera/storage/SavingTaskManager;
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/storage/SavingTaskManager;->-$$Nest$fgetmStoreDataHandler(Ljp/co/sony/mc/camera/storage/SavingTaskManager;)Landroid/os/Handler;
@@ -3100,38 +3138,42 @@
 
     invoke-virtual {v0, v2}, Landroid/os/Handler;->post(Ljava/lang/Runnable;)Z
 
-    goto :goto_3e
+    goto :goto_3f
 
-    .line 600
+    .line 594
     :cond_13
     invoke-direct {v1, v4}, Ljp/co/sony/mc/camera/storage/SavingTaskManager$ImageToFile;->releasePending(Landroid/net/Uri;)V
 
     :cond_14
-    :goto_3e
+    :goto_3f
     const/4 v2, 0x0
 
-    .line 603
+    .line 597
     iput-object v2, v1, Ljp/co/sony/mc/camera/storage/SavingTaskManager$ImageToFile;->mImageData:[B
 
-    if-eqz v28, :cond_1d
+    if-eqz v28, :cond_19
 
-    .line 607
+    .line 601
     :try_start_2d
     invoke-virtual/range {v28 .. v28}, Landroid/os/ParcelFileDescriptor;->close()V
     :try_end_2d
-    .catch Ljava/io/IOException; {:try_start_2d .. :try_end_2d} :catch_41
+    .catch Ljava/io/IOException; {:try_start_2d .. :try_end_2d} :catch_42
 
-    goto/16 :goto_4f
+    goto/16 :goto_49
 
-    .line 609
-    :catch_41
-    filled-new-array {v11}, [Ljava/lang/String;
+    :catch_42
+    const/4 v1, 0x1
 
-    move-result-object v0
+    .line 603
+    new-array v0, v1, [Ljava/lang/String;
+
+    const/4 v1, 0x0
+
+    aput-object v11, v0, v1
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/util/CamLog;->i([Ljava/lang/String;)V
 
-    goto/16 :goto_4f
+    goto/16 :goto_49
 
     :catchall_13
     move-exception v0
@@ -3140,16 +3182,16 @@
 
     move-object v15, v6
 
-    goto/16 :goto_52
+    goto/16 :goto_58
 
-    :catch_42
+    :catch_43
     move-object v15, v6
 
     move-object/from16 v25, v3
 
     move-object/from16 v29, v4
 
-    :goto_3f
+    :goto_40
     move-wide/from16 v12, v22
 
     move-wide/from16 v26, v12
@@ -3162,13 +3204,13 @@
 
     const/4 v6, 0x1
 
-    :goto_40
+    :goto_41
     const/4 v14, 0x0
 
     const/16 v28, 0x0
 
-    .line 555
-    :goto_41
+    .line 549
+    :goto_42
     :try_start_2e
     new-array v0, v6, [Ljava/lang/String;
 
@@ -3199,7 +3241,7 @@
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/util/CamLog;->e([Ljava/lang/String;)V
 
-    .line 556
+    .line 550
     iget-object v0, v1, Ljp/co/sony/mc/camera/storage/SavingTaskManager$ImageToFile;->mRequest:Ljp/co/sony/mc/camera/storage/PhotoSavingRequest;
 
     invoke-virtual {v0}, Ljp/co/sony/mc/camera/storage/PhotoSavingRequest;->isOneShot()Z
@@ -3210,7 +3252,7 @@
 
     if-nez v0, :cond_15
 
-    .line 557
+    .line 551
     :try_start_30
     iget-object v0, v1, Ljp/co/sony/mc/camera/storage/SavingTaskManager$ImageToFile;->mStorageType:Ljp/co/sony/mc/camera/storage/Storage$StorageType;
 
@@ -3218,7 +3260,7 @@
     :try_end_30
     .catchall {:try_start_30 .. :try_end_30} :catchall_14
 
-    goto :goto_42
+    goto :goto_43
 
     :catchall_14
     move-exception v0
@@ -3227,19 +3269,19 @@
 
     move v0, v3
 
-    goto/16 :goto_49
+    goto/16 :goto_4c
 
     :cond_15
-    :goto_42
+    :goto_43
     if-eqz v14, :cond_16
 
-    .line 567
+    .line 561
     :try_start_31
     invoke-virtual {v14}, Ljava/io/OutputStream;->flush()V
     :try_end_31
-    .catch Ljava/io/IOException; {:try_start_31 .. :try_end_31} :catch_44
+    .catch Ljava/io/IOException; {:try_start_31 .. :try_end_31} :catch_46
 
-    .line 569
+    .line 563
     :try_start_32
     move-object v0, v14
 
@@ -3251,173 +3293,200 @@
 
     invoke-virtual {v0}, Ljava/io/FileDescriptor;->sync()V
     :try_end_32
-    .catch Ljava/io/IOException; {:try_start_32 .. :try_end_32} :catch_43
-
-    goto :goto_43
-
-    :catch_43
-    const/4 v5, 0x1
-
-    .line 571
-    :try_start_33
-    new-array v0, v5, [Ljava/lang/String;
-
-    const/4 v5, 0x0
-
-    aput-object v2, v0, v5
-
-    invoke-static {v0}, Ljp/co/sony/mc/camera/util/CamLog;->i([Ljava/lang/String;)V
-
-    .line 573
-    :goto_43
-    invoke-static {}, Landroid/os/SystemClock;->elapsedRealtime()J
-
-    move-result-wide v5
-    :try_end_33
-    .catch Ljava/io/IOException; {:try_start_33 .. :try_end_33} :catch_44
-
-    .line 574
-    :try_start_34
-    invoke-virtual {v14}, Ljava/io/OutputStream;->close()V
-
-    .line 575
-    invoke-static {}, Landroid/os/SystemClock;->elapsedRealtime()J
-
-    move-result-wide v22
-    :try_end_34
-    .catch Ljava/io/IOException; {:try_start_34 .. :try_end_34} :catch_45
+    .catch Ljava/io/IOException; {:try_start_32 .. :try_end_32} :catch_44
 
     goto :goto_44
 
     :catch_44
-    move-wide/from16 v5, v22
+    const/4 v5, 0x1
 
-    .line 578
-    :catch_45
-    filled-new-array {v11}, [Ljava/lang/String;
+    .line 565
+    :try_start_33
+    new-array v0, v5, [Ljava/lang/String;
+    :try_end_33
+    .catch Ljava/io/IOException; {:try_start_33 .. :try_end_33} :catch_45
 
-    move-result-object v0
+    const/4 v5, 0x0
+
+    :try_start_34
+    aput-object v2, v0, v5
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/util/CamLog;->i([Ljava/lang/String;)V
 
+    .line 567
     :goto_44
+    invoke-static {}, Landroid/os/SystemClock;->elapsedRealtime()J
+
+    move-result-wide v5
+    :try_end_34
+    .catch Ljava/io/IOException; {:try_start_34 .. :try_end_34} :catch_46
+
+    .line 568
+    :try_start_35
+    invoke-virtual {v14}, Ljava/io/OutputStream;->close()V
+
+    .line 569
+    invoke-static {}, Landroid/os/SystemClock;->elapsedRealtime()J
+
+    move-result-wide v22
+    :try_end_35
+    .catch Ljava/io/IOException; {:try_start_35 .. :try_end_35} :catch_47
+
+    const/4 v2, 0x1
+
+    const/4 v14, 0x0
+
+    goto :goto_46
+
+    :catch_45
+    move v2, v5
+
+    move-wide/from16 v5, v22
+
+    goto :goto_45
+
+    :catch_46
+    move-wide/from16 v5, v22
+
+    :catch_47
+    const/4 v2, 0x1
+
+    .line 572
+    :goto_45
+    new-array v0, v2, [Ljava/lang/String;
+
+    const/4 v14, 0x0
+
+    aput-object v11, v0, v14
+
+    invoke-static {v0}, Ljp/co/sony/mc/camera/util/CamLog;->i([Ljava/lang/String;)V
+
+    :goto_46
     move-wide/from16 v33, v5
 
     move-wide/from16 v5, v22
 
     move-wide/from16 v22, v33
 
-    goto :goto_45
+    goto :goto_47
 
     :cond_16
+    const/4 v2, 0x1
+
+    const/4 v14, 0x0
+
     move-wide/from16 v5, v22
 
-    .line 582
-    :goto_45
-    new-instance v0, Ljava/lang/StringBuilder;
+    .line 576
+    :goto_47
+    new-array v0, v2, [Ljava/lang/String;
 
-    invoke-direct {v0, v10}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+    new-instance v2, Ljava/lang/StringBuilder;
 
-    invoke-virtual {v0, v3}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+    invoke-direct {v2, v10}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
-    move-result-object v0
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    move-result-object v2
 
-    move-result-object v0
+    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    filled-new-array {v0}, [Ljava/lang/String;
+    move-result-object v2
 
-    move-result-object v0
+    aput-object v2, v0, v14
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
-    .line 584
-    new-instance v0, Ljava/lang/StringBuilder;
+    const/4 v2, 0x1
 
-    invoke-direct {v0, v9}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+    .line 578
+    new-array v0, v2, [Ljava/lang/String;
 
-    invoke-virtual {v0, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+    new-instance v2, Ljava/lang/StringBuilder;
 
-    move-result-object v0
+    invoke-direct {v2, v9}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
-    invoke-virtual {v0, v8}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v2, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
-    move-result-object v0
+    move-result-object v2
 
-    sub-long v2, v12, v19
+    invoke-virtual {v2, v8}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v0, v2, v3}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
+    move-result-object v2
 
-    move-result-object v0
+    sub-long v8, v12, v19
 
-    invoke-virtual {v0, v7}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v2, v8, v9}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
 
-    move-result-object v0
+    move-result-object v2
 
-    sub-long v2, v26, v12
+    invoke-virtual {v2, v7}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v0, v2, v3}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
+    move-result-object v2
 
-    move-result-object v0
+    sub-long v7, v26, v12
 
-    invoke-virtual {v0, v15}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v2, v7, v8}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
 
-    move-result-object v0
+    move-result-object v2
 
-    sub-long v2, v31, v26
+    invoke-virtual {v2, v15}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v0, v2, v3}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
+    move-result-object v2
 
-    move-result-object v0
+    sub-long v7, v31, v26
 
-    move-object/from16 v2, v30
+    invoke-virtual {v2, v7, v8}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    move-result-object v2
 
-    move-result-object v0
+    move-object/from16 v3, v30
 
-    sub-long v2, v22, v31
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v0, v2, v3}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
+    move-result-object v2
 
-    move-result-object v0
+    sub-long v7, v22, v31
 
-    move-object/from16 v2, v29
+    invoke-virtual {v2, v7, v8}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    move-result-object v2
 
-    move-result-object v0
+    move-object/from16 v3, v29
 
-    sub-long v2, v5, v22
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v0, v2, v3}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
+    move-result-object v2
 
-    move-result-object v0
+    sub-long v7, v5, v22
 
-    move-object/from16 v2, v25
+    invoke-virtual {v2, v7, v8}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    move-result-object v2
 
-    move-result-object v0
+    move-object/from16 v3, v25
+
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v2
 
     sub-long v5, v5, v19
 
-    invoke-virtual {v0, v5, v6}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
+    invoke-virtual {v2, v5, v6}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
 
-    move-result-object v0
+    move-result-object v2
 
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    move-result-object v0
+    move-result-object v2
 
-    filled-new-array {v0}, [Ljava/lang/String;
+    const/4 v3, 0x0
 
-    move-result-object v0
+    aput-object v2, v0, v3
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
-    .line 592
+    .line 586
     iget-object v0, v1, Ljp/co/sony/mc/camera/storage/SavingTaskManager$ImageToFile;->mRequest:Ljp/co/sony/mc/camera/storage/PhotoSavingRequest;
 
     iget-object v0, v0, Ljp/co/sony/mc/camera/storage/PhotoSavingRequest;->common:Ljp/co/sony/mc/camera/mediasaving/takenstatus/TakenStatusCommon;
@@ -3428,7 +3497,7 @@
 
     if-ne v0, v2, :cond_17
 
-    .line 593
+    .line 587
     iget-object v0, v1, Ljp/co/sony/mc/camera/storage/SavingTaskManager$ImageToFile;->this$0:Ljp/co/sony/mc/camera/storage/SavingTaskManager;
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/storage/SavingTaskManager;->-$$Nest$fgetmStoreDataHandler(Ljp/co/sony/mc/camera/storage/SavingTaskManager;)Landroid/os/Handler;
@@ -3437,7 +3506,7 @@
 
     if-eqz v0, :cond_18
 
-    .line 595
+    .line 589
     iget-object v0, v1, Ljp/co/sony/mc/camera/storage/SavingTaskManager$ImageToFile;->this$0:Ljp/co/sony/mc/camera/storage/SavingTaskManager;
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/storage/SavingTaskManager;->-$$Nest$fgetmStoreDataHandler(Ljp/co/sony/mc/camera/storage/SavingTaskManager;)Landroid/os/Handler;
@@ -3450,38 +3519,48 @@
 
     invoke-virtual {v0, v2}, Landroid/os/Handler;->post(Ljava/lang/Runnable;)Z
 
-    goto :goto_46
+    goto :goto_48
 
-    .line 600
+    .line 594
     :cond_17
     invoke-direct {v1, v4}, Ljp/co/sony/mc/camera/storage/SavingTaskManager$ImageToFile;->releasePending(Landroid/net/Uri;)V
 
     :cond_18
-    :goto_46
+    :goto_48
     const/4 v2, 0x0
 
-    .line 603
+    .line 597
     iput-object v2, v1, Ljp/co/sony/mc/camera/storage/SavingTaskManager$ImageToFile;->mImageData:[B
 
-    if-eqz v28, :cond_1d
+    if-eqz v28, :cond_19
 
-    .line 607
-    :try_start_35
+    .line 601
+    :try_start_36
     invoke-virtual/range {v28 .. v28}, Landroid/os/ParcelFileDescriptor;->close()V
-    :try_end_35
-    .catch Ljava/io/IOException; {:try_start_35 .. :try_end_35} :catch_46
+    :try_end_36
+    .catch Ljava/io/IOException; {:try_start_36 .. :try_end_36} :catch_48
 
-    goto/16 :goto_4f
+    goto :goto_49
 
-    .line 609
-    :catch_46
-    filled-new-array {v11}, [Ljava/lang/String;
+    :catch_48
+    const/4 v1, 0x1
 
-    move-result-object v0
+    .line 603
+    new-array v0, v1, [Ljava/lang/String;
+
+    const/4 v1, 0x0
+
+    aput-object v11, v0, v1
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/util/CamLog;->i([Ljava/lang/String;)V
 
-    goto/16 :goto_4f
+    :cond_19
+    :goto_49
+    move-object v3, v4
+
+    const/4 v1, 0x0
+
+    goto/16 :goto_55
 
     :catchall_15
     move-exception v0
@@ -3492,9 +3571,9 @@
 
     move-object/from16 v6, v29
 
-    goto/16 :goto_53
+    goto/16 :goto_59
 
-    :catch_47
+    :catch_49
     move-exception v0
 
     move-object v15, v6
@@ -3507,7 +3586,7 @@
 
     move-object/from16 v29, v6
 
-    :goto_47
+    :goto_4a
     move-wide/from16 v12, v22
 
     move-wide/from16 v26, v12
@@ -3524,20 +3603,20 @@
 
     const/16 v28, 0x0
 
-    .line 550
-    :goto_48
-    :try_start_36
+    .line 544
+    :goto_4b
+    :try_start_37
     new-array v5, v6, [Ljava/lang/String;
 
     new-instance v6, Ljava/lang/StringBuilder;
-    :try_end_36
-    .catchall {:try_start_36 .. :try_end_36} :catchall_18
+    :try_end_37
+    .catchall {:try_start_37 .. :try_end_37} :catchall_18
 
     move-object/from16 v21, v15
 
     move-object/from16 v15, v18
 
-    :try_start_37
+    :try_start_38
     invoke-direct {v6, v15}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
     invoke-virtual {v0}, Ljava/io/FileNotFoundException;->getMessage()Ljava/lang/String;
@@ -3558,26 +3637,26 @@
 
     invoke-static {v5}, Ljp/co/sony/mc/camera/util/CamLog;->e([Ljava/lang/String;)V
 
-    .line 551
+    .line 545
     iget-object v0, v1, Ljp/co/sony/mc/camera/storage/SavingTaskManager$ImageToFile;->mRequest:Ljp/co/sony/mc/camera/storage/PhotoSavingRequest;
 
     invoke-virtual {v0}, Ljp/co/sony/mc/camera/storage/PhotoSavingRequest;->isOneShot()Z
 
     move-result v0
-    :try_end_37
-    .catchall {:try_start_37 .. :try_end_37} :catchall_17
+    :try_end_38
+    .catchall {:try_start_38 .. :try_end_38} :catchall_17
 
-    if-nez v0, :cond_19
+    if-nez v0, :cond_1a
 
-    .line 552
-    :try_start_38
+    .line 546
+    :try_start_39
     iget-object v0, v1, Ljp/co/sony/mc/camera/storage/SavingTaskManager$ImageToFile;->mStorageType:Ljp/co/sony/mc/camera/storage/Storage$StorageType;
 
     invoke-direct {v1, v0}, Ljp/co/sony/mc/camera/storage/SavingTaskManager$ImageToFile;->requestCheckStorage(Ljp/co/sony/mc/camera/storage/Storage$StorageType;)V
-    :try_end_38
-    .catchall {:try_start_38 .. :try_end_38} :catchall_16
+    :try_end_39
+    .catchall {:try_start_39 .. :try_end_39} :catchall_16
 
-    goto :goto_4a
+    goto :goto_4d
 
     :catchall_16
     move-exception v0
@@ -3588,27 +3667,27 @@
 
     move-object/from16 v15, v21
 
-    :goto_49
+    :goto_4c
     move-object/from16 v3, v25
 
     move-object/from16 v6, v29
 
     move-object/from16 v5, v30
 
-    goto/16 :goto_54
+    goto/16 :goto_5a
 
-    :cond_19
-    :goto_4a
-    if-eqz v14, :cond_1a
+    :cond_1a
+    :goto_4d
+    if-eqz v14, :cond_1b
 
-    .line 567
-    :try_start_39
-    invoke-virtual {v14}, Ljava/io/OutputStream;->flush()V
-    :try_end_39
-    .catch Ljava/io/IOException; {:try_start_39 .. :try_end_39} :catch_49
-
-    .line 569
+    .line 561
     :try_start_3a
+    invoke-virtual {v14}, Ljava/io/OutputStream;->flush()V
+    :try_end_3a
+    .catch Ljava/io/IOException; {:try_start_3a .. :try_end_3a} :catch_4c
+
+    .line 563
+    :try_start_3b
     move-object v0, v14
 
     check-cast v0, Ljava/io/FileOutputStream;
@@ -3618,176 +3697,201 @@
     move-result-object v0
 
     invoke-virtual {v0}, Ljava/io/FileDescriptor;->sync()V
-    :try_end_3a
-    .catch Ljava/io/IOException; {:try_start_3a .. :try_end_3a} :catch_48
+    :try_end_3b
+    .catch Ljava/io/IOException; {:try_start_3b .. :try_end_3b} :catch_4a
 
-    goto :goto_4b
+    goto :goto_4e
 
-    :catch_48
+    :catch_4a
     const/4 v5, 0x1
 
-    .line 571
-    :try_start_3b
+    .line 565
+    :try_start_3c
     new-array v0, v5, [Ljava/lang/String;
+    :try_end_3c
+    .catch Ljava/io/IOException; {:try_start_3c .. :try_end_3c} :catch_4b
 
     const/4 v5, 0x0
 
+    :try_start_3d
     aput-object v2, v0, v5
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/util/CamLog;->i([Ljava/lang/String;)V
 
-    .line 573
-    :goto_4b
+    .line 567
+    :goto_4e
     invoke-static {}, Landroid/os/SystemClock;->elapsedRealtime()J
 
     move-result-wide v5
-    :try_end_3b
-    .catch Ljava/io/IOException; {:try_start_3b .. :try_end_3b} :catch_49
+    :try_end_3d
+    .catch Ljava/io/IOException; {:try_start_3d .. :try_end_3d} :catch_4c
 
-    .line 574
-    :try_start_3c
+    .line 568
+    :try_start_3e
     invoke-virtual {v14}, Ljava/io/OutputStream;->close()V
 
-    .line 575
+    .line 569
     invoke-static {}, Landroid/os/SystemClock;->elapsedRealtime()J
 
     move-result-wide v22
-    :try_end_3c
-    .catch Ljava/io/IOException; {:try_start_3c .. :try_end_3c} :catch_4a
+    :try_end_3e
+    .catch Ljava/io/IOException; {:try_start_3e .. :try_end_3e} :catch_4d
 
-    goto :goto_4c
+    const/4 v2, 0x1
 
-    :catch_49
+    const/4 v14, 0x0
+
+    goto :goto_50
+
+    :catch_4b
+    move v2, v5
+
     move-wide/from16 v5, v22
 
-    .line 578
-    :catch_4a
-    filled-new-array {v11}, [Ljava/lang/String;
+    goto :goto_4f
 
-    move-result-object v0
+    :catch_4c
+    move-wide/from16 v5, v22
+
+    :catch_4d
+    const/4 v2, 0x1
+
+    .line 572
+    :goto_4f
+    new-array v0, v2, [Ljava/lang/String;
+
+    const/4 v14, 0x0
+
+    aput-object v11, v0, v14
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/util/CamLog;->i([Ljava/lang/String;)V
 
-    :goto_4c
+    :goto_50
     move-wide/from16 v33, v5
 
     move-wide/from16 v5, v22
 
     move-wide/from16 v22, v33
 
-    goto :goto_4d
+    goto :goto_51
 
-    :cond_1a
+    :cond_1b
+    const/4 v2, 0x1
+
+    const/4 v14, 0x0
+
     move-wide/from16 v5, v22
 
-    .line 582
-    :goto_4d
-    new-instance v0, Ljava/lang/StringBuilder;
+    .line 576
+    :goto_51
+    new-array v0, v2, [Ljava/lang/String;
 
-    invoke-direct {v0, v10}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+    new-instance v15, Ljava/lang/StringBuilder;
 
-    invoke-virtual {v0, v3}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+    invoke-direct {v15, v10}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
-    move-result-object v0
+    invoke-virtual {v15, v3}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    move-result-object v3
 
-    move-result-object v0
+    invoke-virtual {v3}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    filled-new-array {v0}, [Ljava/lang/String;
+    move-result-object v3
 
-    move-result-object v0
+    aput-object v3, v0, v14
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
-    .line 584
-    new-instance v0, Ljava/lang/StringBuilder;
+    .line 578
+    new-array v0, v2, [Ljava/lang/String;
 
-    invoke-direct {v0, v9}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+    new-instance v2, Ljava/lang/StringBuilder;
 
-    invoke-virtual {v0, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+    invoke-direct {v2, v9}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
-    move-result-object v0
+    invoke-virtual {v2, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v0, v8}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    move-result-object v2
 
-    move-result-object v0
+    invoke-virtual {v2, v8}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    sub-long v2, v12, v19
+    move-result-object v2
 
-    invoke-virtual {v0, v2, v3}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
+    sub-long v8, v12, v19
 
-    move-result-object v0
+    invoke-virtual {v2, v8, v9}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v0, v7}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    move-result-object v2
 
-    move-result-object v0
+    invoke-virtual {v2, v7}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    sub-long v2, v26, v12
+    move-result-object v2
 
-    invoke-virtual {v0, v2, v3}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
+    sub-long v7, v26, v12
 
-    move-result-object v0
+    invoke-virtual {v2, v7, v8}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
+
+    move-result-object v2
 
     move-object/from16 v15, v21
 
-    invoke-virtual {v0, v15}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v2, v15}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    move-result-object v0
+    move-result-object v2
 
-    sub-long v2, v31, v26
+    sub-long v7, v31, v26
 
-    invoke-virtual {v0, v2, v3}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
+    invoke-virtual {v2, v7, v8}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
 
-    move-result-object v0
+    move-result-object v2
 
-    move-object/from16 v2, v30
+    move-object/from16 v3, v30
 
-    invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    move-result-object v0
+    move-result-object v2
 
-    sub-long v2, v22, v31
+    sub-long v7, v22, v31
 
-    invoke-virtual {v0, v2, v3}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
+    invoke-virtual {v2, v7, v8}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
 
-    move-result-object v0
+    move-result-object v2
 
-    move-object/from16 v2, v29
+    move-object/from16 v3, v29
 
-    invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    move-result-object v0
+    move-result-object v2
 
-    sub-long v2, v5, v22
+    sub-long v7, v5, v22
 
-    invoke-virtual {v0, v2, v3}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
+    invoke-virtual {v2, v7, v8}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
 
-    move-result-object v0
+    move-result-object v2
 
-    move-object/from16 v2, v25
+    move-object/from16 v3, v25
 
-    invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    move-result-object v0
+    move-result-object v2
 
     sub-long v5, v5, v19
 
-    invoke-virtual {v0, v5, v6}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
+    invoke-virtual {v2, v5, v6}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
 
-    move-result-object v0
+    move-result-object v2
 
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    move-result-object v0
+    move-result-object v2
 
-    filled-new-array {v0}, [Ljava/lang/String;
+    const/4 v3, 0x0
 
-    move-result-object v0
+    aput-object v2, v0, v3
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
-    .line 592
+    .line 586
     iget-object v0, v1, Ljp/co/sony/mc/camera/storage/SavingTaskManager$ImageToFile;->mRequest:Ljp/co/sony/mc/camera/storage/PhotoSavingRequest;
 
     iget-object v0, v0, Ljp/co/sony/mc/camera/storage/PhotoSavingRequest;->common:Ljp/co/sony/mc/camera/mediasaving/takenstatus/TakenStatusCommon;
@@ -3796,18 +3900,18 @@
 
     sget-object v2, Ljp/co/sony/mc/camera/storage/SavingTaskManager$SavedFileType;->BURST:Ljp/co/sony/mc/camera/storage/SavingTaskManager$SavedFileType;
 
-    if-ne v0, v2, :cond_1b
+    if-ne v0, v2, :cond_1c
 
-    .line 593
+    .line 587
     iget-object v0, v1, Ljp/co/sony/mc/camera/storage/SavingTaskManager$ImageToFile;->this$0:Ljp/co/sony/mc/camera/storage/SavingTaskManager;
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/storage/SavingTaskManager;->-$$Nest$fgetmStoreDataHandler(Ljp/co/sony/mc/camera/storage/SavingTaskManager;)Landroid/os/Handler;
 
     move-result-object v0
 
-    if-eqz v0, :cond_1c
+    if-eqz v0, :cond_1d
 
-    .line 595
+    .line 589
     iget-object v0, v1, Ljp/co/sony/mc/camera/storage/SavingTaskManager$ImageToFile;->this$0:Ljp/co/sony/mc/camera/storage/SavingTaskManager;
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/storage/SavingTaskManager;->-$$Nest$fgetmStoreDataHandler(Ljp/co/sony/mc/camera/storage/SavingTaskManager;)Landroid/os/Handler;
@@ -3820,53 +3924,61 @@
 
     invoke-virtual {v0, v2}, Landroid/os/Handler;->post(Ljava/lang/Runnable;)Z
 
-    goto :goto_4e
+    goto :goto_52
 
-    .line 600
-    :cond_1b
+    .line 594
+    :cond_1c
     invoke-direct {v1, v4}, Ljp/co/sony/mc/camera/storage/SavingTaskManager$ImageToFile;->releasePending(Landroid/net/Uri;)V
 
-    :cond_1c
-    :goto_4e
+    :cond_1d
+    :goto_52
     const/4 v2, 0x0
 
-    .line 603
+    .line 597
     iput-object v2, v1, Ljp/co/sony/mc/camera/storage/SavingTaskManager$ImageToFile;->mImageData:[B
 
-    if-eqz v28, :cond_1d
+    if-eqz v28, :cond_1e
 
-    .line 607
-    :try_start_3d
+    .line 601
+    :try_start_3f
     invoke-virtual/range {v28 .. v28}, Landroid/os/ParcelFileDescriptor;->close()V
-    :try_end_3d
-    .catch Ljava/io/IOException; {:try_start_3d .. :try_end_3d} :catch_4b
+    :try_end_3f
+    .catch Ljava/io/IOException; {:try_start_3f .. :try_end_3f} :catch_4e
 
-    goto :goto_4f
+    goto :goto_53
 
-    .line 609
-    :catch_4b
-    filled-new-array {v11}, [Ljava/lang/String;
+    :catch_4e
+    const/4 v1, 0x1
 
-    move-result-object v0
+    .line 603
+    new-array v0, v1, [Ljava/lang/String;
+
+    const/4 v1, 0x0
+
+    aput-object v11, v0, v1
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/util/CamLog;->i([Ljava/lang/String;)V
 
-    :cond_1d
-    :goto_4f
+    goto :goto_54
+
+    :cond_1e
+    :goto_53
+    const/4 v1, 0x0
+
+    :goto_54
     move-object v3, v4
 
+    :goto_55
     const/4 v12, 0x0
 
-    :goto_50
-    if-eqz v12, :cond_1e
+    :goto_56
+    if-eqz v12, :cond_1f
 
-    goto :goto_51
+    goto :goto_57
 
-    .line 614
-    :cond_1e
+    .line 608
+    :cond_1f
     new-instance v12, Landroid/util/Pair;
-
-    const/4 v1, 0x0
 
     invoke-static {v1}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
@@ -3874,7 +3986,7 @@
 
     invoke-direct {v12, v0, v3}, Landroid/util/Pair;-><init>(Ljava/lang/Object;Ljava/lang/Object;)V
 
-    :goto_51
+    :goto_57
     return-object v12
 
     :catchall_17
@@ -3884,38 +3996,38 @@
 
     move-object/from16 v15, v21
 
-    goto :goto_52
+    goto :goto_58
 
     :catchall_18
     move-exception v0
 
     move/from16 v16, v3
 
-    :goto_52
+    :goto_58
     move-object/from16 v3, v25
 
     move-object/from16 v6, v29
 
     move-object/from16 v5, v30
 
-    :goto_53
+    :goto_59
     move/from16 v33, v16
 
     move-object/from16 v16, v0
 
     move/from16 v0, v33
 
-    :goto_54
-    if-eqz v14, :cond_1f
+    :goto_5a
+    if-eqz v14, :cond_20
 
-    .line 567
-    :try_start_3e
+    .line 561
+    :try_start_40
     invoke-virtual {v14}, Ljava/io/OutputStream;->flush()V
-    :try_end_3e
-    .catch Ljava/io/IOException; {:try_start_3e .. :try_end_3e} :catch_4d
+    :try_end_40
+    .catch Ljava/io/IOException; {:try_start_40 .. :try_end_40} :catch_51
 
-    .line 569
-    :try_start_3f
+    .line 563
+    :try_start_41
     move-object/from16 v17, v14
 
     check-cast v17, Ljava/io/FileOutputStream;
@@ -3925,75 +4037,109 @@
     move-result-object v17
 
     invoke-virtual/range {v17 .. v17}, Ljava/io/FileDescriptor;->sync()V
-    :try_end_3f
-    .catch Ljava/io/IOException; {:try_start_3f .. :try_end_3f} :catch_4c
+    :try_end_41
+    .catch Ljava/io/IOException; {:try_start_41 .. :try_end_41} :catch_4f
 
-    goto :goto_55
+    move-object/from16 v25, v3
 
-    :catch_4c
+    goto :goto_5b
+
+    :catch_4f
+    move-object/from16 v25, v3
+
     const/4 v1, 0x1
 
-    .line 571
-    :try_start_40
-    new-array v1, v1, [Ljava/lang/String;
+    .line 565
+    :try_start_42
+    new-array v3, v1, [Ljava/lang/String;
+    :try_end_42
+    .catch Ljava/io/IOException; {:try_start_42 .. :try_end_42} :catch_50
 
-    const/16 v17, 0x0
+    const/4 v1, 0x0
 
-    aput-object v2, v1, v17
+    :try_start_43
+    aput-object v2, v3, v1
 
-    invoke-static {v1}, Ljp/co/sony/mc/camera/util/CamLog;->i([Ljava/lang/String;)V
+    invoke-static {v3}, Ljp/co/sony/mc/camera/util/CamLog;->i([Ljava/lang/String;)V
 
-    .line 573
-    :goto_55
+    .line 567
+    :goto_5b
     invoke-static {}, Landroid/os/SystemClock;->elapsedRealtime()J
 
     move-result-wide v1
-    :try_end_40
-    .catch Ljava/io/IOException; {:try_start_40 .. :try_end_40} :catch_4d
+    :try_end_43
+    .catch Ljava/io/IOException; {:try_start_43 .. :try_end_43} :catch_52
 
-    .line 574
-    :try_start_41
+    .line 568
+    :try_start_44
     invoke-virtual {v14}, Ljava/io/OutputStream;->close()V
 
-    .line 575
+    .line 569
     invoke-static {}, Landroid/os/SystemClock;->elapsedRealtime()J
 
     move-result-wide v22
-    :try_end_41
-    .catch Ljava/io/IOException; {:try_start_41 .. :try_end_41} :catch_4e
+    :try_end_44
+    .catch Ljava/io/IOException; {:try_start_44 .. :try_end_44} :catch_53
 
-    goto :goto_56
+    const/4 v3, 0x1
 
-    :catch_4d
+    const/16 v17, 0x0
+
+    goto :goto_5d
+
+    :catch_50
+    move v3, v1
+
     move-wide/from16 v1, v22
 
-    .line 578
-    :catch_4e
-    filled-new-array {v11}, [Ljava/lang/String;
+    goto :goto_5c
 
-    move-result-object v14
+    :catch_51
+    move-object/from16 v25, v3
+
+    :catch_52
+    move-wide/from16 v1, v22
+
+    :catch_53
+    const/4 v3, 0x1
+
+    .line 572
+    :goto_5c
+    new-array v14, v3, [Ljava/lang/String;
+
+    const/16 v17, 0x0
+
+    aput-object v11, v14, v17
 
     invoke-static {v14}, Ljp/co/sony/mc/camera/util/CamLog;->i([Ljava/lang/String;)V
 
-    :goto_56
+    :goto_5d
     move-wide/from16 v33, v1
 
     move-wide/from16 v1, v22
 
     move-wide/from16 v22, v33
 
-    goto :goto_57
+    goto :goto_5e
 
-    :cond_1f
+    :cond_20
+    move-object/from16 v25, v3
+
+    const/4 v3, 0x1
+
+    const/16 v17, 0x0
+
     move-wide/from16 v1, v22
 
-    .line 582
-    :goto_57
-    new-instance v14, Ljava/lang/StringBuilder;
+    .line 576
+    :goto_5e
+    new-array v14, v3, [Ljava/lang/String;
 
-    invoke-direct {v14, v10}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+    new-instance v3, Ljava/lang/StringBuilder;
 
-    invoke-virtual {v14, v0}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+    invoke-direct {v3, v10}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+
+    invoke-virtual {v3, v0}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
     move-result-object v0
 
@@ -4001,94 +4147,98 @@
 
     move-result-object v0
 
-    filled-new-array {v0}, [Ljava/lang/String;
+    aput-object v0, v14, v17
 
-    move-result-object v0
+    invoke-static {v14}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
-    invoke-static {v0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
+    const/4 v3, 0x1
 
-    .line 584
-    new-instance v0, Ljava/lang/StringBuilder;
+    .line 578
+    new-array v0, v3, [Ljava/lang/String;
 
-    invoke-direct {v0, v9}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+    new-instance v3, Ljava/lang/StringBuilder;
 
-    invoke-virtual {v0, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+    invoke-direct {v3, v9}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
-    move-result-object v0
+    invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v0, v8}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    move-result-object v3
 
-    move-result-object v0
+    invoke-virtual {v3, v8}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v3
 
     sub-long v8, v12, v19
 
-    invoke-virtual {v0, v8, v9}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
+    invoke-virtual {v3, v8, v9}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
 
-    move-result-object v0
+    move-result-object v3
 
-    invoke-virtual {v0, v7}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v3, v7}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    move-result-object v0
+    move-result-object v3
 
     sub-long v7, v26, v12
 
-    invoke-virtual {v0, v7, v8}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
+    invoke-virtual {v3, v7, v8}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
 
-    move-result-object v0
+    move-result-object v3
 
-    invoke-virtual {v0, v15}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v3, v15}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    move-result-object v0
+    move-result-object v3
 
     sub-long v7, v31, v26
 
-    invoke-virtual {v0, v7, v8}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
+    invoke-virtual {v3, v7, v8}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
 
-    move-result-object v0
+    move-result-object v3
 
-    invoke-virtual {v0, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v3, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    move-result-object v0
+    move-result-object v3
 
     sub-long v7, v22, v31
 
-    invoke-virtual {v0, v7, v8}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
+    invoke-virtual {v3, v7, v8}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
 
-    move-result-object v0
+    move-result-object v3
 
-    invoke-virtual {v0, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v3, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    move-result-object v0
+    move-result-object v3
 
     sub-long v5, v1, v22
 
-    invoke-virtual {v0, v5, v6}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
+    invoke-virtual {v3, v5, v6}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
 
-    move-result-object v0
+    move-result-object v3
 
-    invoke-virtual {v0, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    move-object/from16 v5, v25
 
-    move-result-object v0
+    invoke-virtual {v3, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v3
 
     sub-long v1, v1, v19
 
-    invoke-virtual {v0, v1, v2}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
+    invoke-virtual {v3, v1, v2}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
 
-    move-result-object v0
+    move-result-object v1
 
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    move-result-object v0
+    move-result-object v1
 
-    filled-new-array {v0}, [Ljava/lang/String;
+    const/4 v2, 0x0
 
-    move-result-object v0
+    aput-object v1, v0, v2
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
     move-object/from16 v1, p0
 
-    .line 592
+    .line 586
     iget-object v0, v1, Ljp/co/sony/mc/camera/storage/SavingTaskManager$ImageToFile;->mRequest:Ljp/co/sony/mc/camera/storage/PhotoSavingRequest;
 
     iget-object v0, v0, Ljp/co/sony/mc/camera/storage/PhotoSavingRequest;->common:Ljp/co/sony/mc/camera/mediasaving/takenstatus/TakenStatusCommon;
@@ -4097,18 +4247,18 @@
 
     sget-object v2, Ljp/co/sony/mc/camera/storage/SavingTaskManager$SavedFileType;->BURST:Ljp/co/sony/mc/camera/storage/SavingTaskManager$SavedFileType;
 
-    if-ne v0, v2, :cond_20
+    if-ne v0, v2, :cond_21
 
-    .line 593
+    .line 587
     iget-object v0, v1, Ljp/co/sony/mc/camera/storage/SavingTaskManager$ImageToFile;->this$0:Ljp/co/sony/mc/camera/storage/SavingTaskManager;
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/storage/SavingTaskManager;->-$$Nest$fgetmStoreDataHandler(Ljp/co/sony/mc/camera/storage/SavingTaskManager;)Landroid/os/Handler;
 
     move-result-object v0
 
-    if-eqz v0, :cond_21
+    if-eqz v0, :cond_22
 
-    .line 595
+    .line 589
     iget-object v0, v1, Ljp/co/sony/mc/camera/storage/SavingTaskManager$ImageToFile;->this$0:Ljp/co/sony/mc/camera/storage/SavingTaskManager;
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/storage/SavingTaskManager;->-$$Nest$fgetmStoreDataHandler(Ljp/co/sony/mc/camera/storage/SavingTaskManager;)Landroid/os/Handler;
@@ -4121,39 +4271,43 @@
 
     invoke-virtual {v0, v2}, Landroid/os/Handler;->post(Ljava/lang/Runnable;)Z
 
-    goto :goto_58
+    goto :goto_5f
 
-    .line 600
-    :cond_20
+    .line 594
+    :cond_21
     invoke-direct {v1, v4}, Ljp/co/sony/mc/camera/storage/SavingTaskManager$ImageToFile;->releasePending(Landroid/net/Uri;)V
 
-    :cond_21
-    :goto_58
+    :cond_22
+    :goto_5f
     const/4 v2, 0x0
 
-    .line 603
+    .line 597
     iput-object v2, v1, Ljp/co/sony/mc/camera/storage/SavingTaskManager$ImageToFile;->mImageData:[B
 
-    if-eqz v28, :cond_22
+    if-eqz v28, :cond_23
 
-    .line 607
-    :try_start_42
+    .line 601
+    :try_start_45
     invoke-virtual/range {v28 .. v28}, Landroid/os/ParcelFileDescriptor;->close()V
-    :try_end_42
-    .catch Ljava/io/IOException; {:try_start_42 .. :try_end_42} :catch_4f
+    :try_end_45
+    .catch Ljava/io/IOException; {:try_start_45 .. :try_end_45} :catch_54
 
-    goto :goto_59
+    goto :goto_60
 
-    .line 609
-    :catch_4f
-    filled-new-array {v11}, [Ljava/lang/String;
+    :catch_54
+    const/4 v1, 0x1
 
-    move-result-object v0
+    .line 603
+    new-array v0, v1, [Ljava/lang/String;
+
+    const/4 v1, 0x0
+
+    aput-object v11, v0, v1
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/util/CamLog;->i([Ljava/lang/String;)V
 
-    .line 612
-    :cond_22
-    :goto_59
+    .line 606
+    :cond_23
+    :goto_60
     throw v16
 .end method

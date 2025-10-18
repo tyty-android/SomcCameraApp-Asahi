@@ -5,7 +5,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/SourceDebugExtension;
-    value = "SMAP\nRefresh.kt\nKotlin\n*S Kotlin\n*F\n+ 1 Refresh.kt\nandroidx/compose/material/icons/sharp/RefreshKt\n+ 2 Icons.kt\nandroidx/compose/material/icons/IconsKt\n+ 3 Dp.kt\nandroidx/compose/ui/unit/DpKt\n+ 4 ImageVector.kt\nandroidx/compose/ui/graphics/vector/ImageVectorKt\n+ 5 Vector.kt\nandroidx/compose/ui/graphics/vector/VectorKt\n*L\n1#1,52:1\n122#2:53\n116#2,3:54\n119#2,3:58\n132#2,18:61\n152#2:98\n174#3:57\n694#4,2:79\n706#4,2:81\n708#4,11:87\n64#5,4:83\n*S KotlinDebug\n*F\n+ 1 Refresh.kt\nandroidx/compose/material/icons/sharp/RefreshKt\n*L\n29#1:53\n29#1:54,3\n29#1:58,3\n30#1:61,18\n30#1:98\n29#1:57\n30#1:79,2\n30#1:81,2\n30#1:87,11\n30#1:83,4\n*E\n"
+    value = "SMAP\nRefresh.kt\nKotlin\n*S Kotlin\n*F\n+ 1 Refresh.kt\nandroidx/compose/material/icons/sharp/RefreshKt\n+ 2 Icons.kt\nandroidx/compose/material/icons/IconsKt\n+ 3 Dp.kt\nandroidx/compose/ui/unit/DpKt\n+ 4 ImageVector.kt\nandroidx/compose/ui/graphics/vector/ImageVectorKt\n+ 5 Vector.kt\nandroidx/compose/ui/graphics/vector/VectorKt\n*L\n1#1,52:1\n212#2,12:53\n233#2,18:66\n253#2:103\n174#3:65\n705#4,2:84\n717#4,2:86\n719#4,11:92\n72#5,4:88\n*S KotlinDebug\n*F\n+ 1 Refresh.kt\nandroidx/compose/material/icons/sharp/RefreshKt\n*L\n29#1:53,12\n30#1:66,18\n30#1:103\n29#1:65\n30#1:84,2\n30#1:86,2\n30#1:92,11\n30#1:88,4\n*E\n"
 .end annotation
 
 .annotation runtime Lkotlin/Metadata;
@@ -45,12 +45,6 @@
 .method public static final getRefresh(Landroidx/compose/material/icons/Icons$Sharp;)Landroidx/compose/ui/graphics/vector/ImageVector;
     .locals 30
 
-    const-string v0, "<this>"
-
-    move-object/from16 v1, p0
-
-    invoke-static {v1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
     .line 26
     sget-object v0, Landroidx/compose/material/icons/sharp/RefreshKt;->_refresh:Landroidx/compose/ui/graphics/vector/ImageVector;
 
@@ -61,7 +55,7 @@
 
     return-object v0
 
-    .line 54
+    .line 57
     :cond_0
     new-instance v1, Landroidx/compose/ui/graphics/vector/ImageVector$Builder;
 
@@ -69,7 +63,7 @@
 
     const/high16 v0, 0x41c00000    # 24.0f
 
-    .line 57
+    .line 65
     invoke-static {v0}, Landroidx/compose/ui/unit/Dp;->constructor-impl(F)F
 
     move-result v3
@@ -78,11 +72,11 @@
 
     move-result v4
 
-    const/16 v11, 0xe0
+    const/16 v11, 0x60
 
     const/4 v12, 0x0
 
-    .line 54
+    .line 57
     const-string v2, "Sharp.Refresh"
 
     const/high16 v5, 0x41c00000    # 24.0f
@@ -97,12 +91,12 @@
 
     invoke-direct/range {v1 .. v12}, Landroidx/compose/ui/graphics/vector/ImageVector$Builder;-><init>(Ljava/lang/String;FFFFJIZILkotlin/jvm/internal/DefaultConstructorMarker;)V
 
-    .line 64
+    .line 69
     invoke-static {}, Landroidx/compose/ui/graphics/vector/VectorKt;->getDefaultFillType()I
 
     move-result v15
 
-    .line 71
+    .line 76
     new-instance v0, Landroidx/compose/ui/graphics/SolidColor;
 
     sget-object v1, Landroidx/compose/ui/graphics/Color;->Companion:Landroidx/compose/ui/graphics/Color$Companion;
@@ -119,21 +113,21 @@
 
     check-cast v17, Landroidx/compose/ui/graphics/Brush;
 
-    .line 76
+    .line 81
     sget-object v0, Landroidx/compose/ui/graphics/StrokeCap;->Companion:Landroidx/compose/ui/graphics/StrokeCap$Companion;
 
     invoke-virtual {v0}, Landroidx/compose/ui/graphics/StrokeCap$Companion;->getButt-KaPHkGw()I
 
     move-result v22
 
-    .line 77
+    .line 82
     sget-object v0, Landroidx/compose/ui/graphics/StrokeJoin;->Companion:Landroidx/compose/ui/graphics/StrokeJoin$Companion;
 
     invoke-virtual {v0}, Landroidx/compose/ui/graphics/StrokeJoin$Companion;->getBevel-LxFBmk8()I
 
     move-result v23
 
-    .line 83
+    .line 88
     new-instance v7, Landroidx/compose/ui/graphics/vector/PathBuilder;
 
     invoke-direct {v7}, Landroidx/compose/ui/graphics/vector/PathBuilder;-><init>()V
@@ -293,7 +287,7 @@
     .line 45
     invoke-virtual {v7}, Landroidx/compose/ui/graphics/vector/PathBuilder;->close()Landroidx/compose/ui/graphics/vector/PathBuilder;
 
-    .line 85
+    .line 90
     invoke-virtual {v7}, Landroidx/compose/ui/graphics/vector/PathBuilder;->getNodes()Ljava/util/List;
 
     move-result-object v14
@@ -302,7 +296,7 @@
 
     const/16 v29, 0x0
 
-    .line 81
+    .line 86
     const-string v16, ""
 
     const/high16 v18, 0x3f800000    # 1.0f
@@ -325,7 +319,7 @@
 
     move-result-object v0
 
-    .line 53
+    .line 64
     invoke-virtual {v0}, Landroidx/compose/ui/graphics/vector/ImageVector$Builder;->build()Landroidx/compose/ui/graphics/vector/ImageVector;
 
     move-result-object v0

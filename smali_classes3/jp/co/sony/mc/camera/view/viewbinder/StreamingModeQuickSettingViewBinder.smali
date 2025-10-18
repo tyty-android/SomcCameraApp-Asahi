@@ -14,19 +14,32 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/SourceDebugExtension;
-    value = "SMAP\nStreamingModeQuickSettingViewBinder.kt\nKotlin\n*S Kotlin\n*F\n+ 1 StreamingModeQuickSettingViewBinder.kt\njp/co/sony/mc/camera/view/viewbinder/StreamingModeQuickSettingViewBinder\n+ 2 _Maps.kt\nkotlin/collections/MapsKt___MapsKt\n+ 3 _Arrays.kt\nkotlin/collections/ArraysKt___ArraysKt\n*L\n1#1,321:1\n215#2,2:322\n215#2,2:324\n11065#3:326\n11400#3,3:327\n*S KotlinDebug\n*F\n+ 1 StreamingModeQuickSettingViewBinder.kt\njp/co/sony/mc/camera/view/viewbinder/StreamingModeQuickSettingViewBinder\n*L\n66#1:322,2\n72#1:324,2\n265#1:326\n265#1:327,3\n*E\n"
+    value = "SMAP\nStreamingModeQuickSettingViewBinder.kt\nKotlin\n*S Kotlin\n*F\n+ 1 StreamingModeQuickSettingViewBinder.kt\njp/co/sony/mc/camera/view/viewbinder/StreamingModeQuickSettingViewBinder\n+ 2 _Maps.kt\nkotlin/collections/MapsKt___MapsKt\n+ 3 _Arrays.kt\nkotlin/collections/ArraysKt___ArraysKt\n*L\n1#1,321:1\n216#2,2:322\n216#2,2:324\n11102#3:326\n11437#3,3:327\n*S KotlinDebug\n*F\n+ 1 StreamingModeQuickSettingViewBinder.kt\njp/co/sony/mc/camera/view/viewbinder/StreamingModeQuickSettingViewBinder\n*L\n66#1:322,2\n72#1:324,2\n265#1:326\n265#1:327,3\n*E\n"
 .end annotation
 
 .annotation runtime Lkotlin/Metadata;
     d1 = {
-        "\u0000\u0088\u0001\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0003\n\u0002\u0018\u0002\n\u0002\u0008\u0004\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0003\n\u0002\u0018\u0002\n\u0002\u0008\u0003\n\u0002\u0010$\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0003\n\u0002\u0010 \n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0002\n\u0002\u0008\u0002\n\u0002\u0010\u000e\n\u0002\u0008\u0003\n\u0002\u0010\u000b\n\u0002\u0008\u0005\n\u0002\u0018\u0002\n\u0002\u0008\u0006\u0008\u0007\u0018\u00002\u00020\u0001B\r\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u00a2\u0006\u0002\u0010\u0004J\u001e\u0010!\u001a\u0008\u0012\u0004\u0012\u00020#0\"2\u0006\u0010$\u001a\u00020%2\u0006\u0010&\u001a\u00020\'H\u0002J\u0008\u0010(\u001a\u00020)H\u0002J\u0008\u0010*\u001a\u00020)H\u0002J\u0018\u0010+\u001a\u00020,2\u0006\u0010-\u001a\u00020%2\u0006\u0010.\u001a\u00020\'H\u0002J\u0008\u0010/\u001a\u000200H\u0002J\u0010\u00101\u001a\u00020)2\u0006\u00102\u001a\u00020\u0011H\u0016J\u0010\u00103\u001a\u00020)2\u0006\u00102\u001a\u00020\u0011H\u0016J\u0010\u00104\u001a\u00020)2\u0006\u00105\u001a\u000206H\u0002J\u0018\u00107\u001a\u00020,2\u0006\u00108\u001a\u00020,2\u0006\u0010/\u001a\u000200H\u0002J\u001a\u00109\u001a\u00020)2\u0006\u0010:\u001a\u00020\u001c2\u0008\u0010;\u001a\u0004\u0018\u00010\u001bH\u0002R\u000e\u0010\u0002\u001a\u00020\u0003X\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u0014\u0010\u0005\u001a\u00020\u00068BX\u0082\u0004\u00a2\u0006\u0006\u001a\u0004\u0008\u0007\u0010\u0008R\u001c\u0010\t\u001a\n \u000b*\u0004\u0018\u00010\n0\n8BX\u0082\u0004\u00a2\u0006\u0006\u001a\u0004\u0008\u000c\u0010\rR\u000e\u0010\u000e\u001a\u00020\u000fX\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u0014\u0010\u0010\u001a\u00020\u00118BX\u0082\u0004\u00a2\u0006\u0006\u001a\u0004\u0008\u0012\u0010\u0013R\u0014\u0010\u0014\u001a\u00020\u00158BX\u0082\u0004\u00a2\u0006\u0006\u001a\u0004\u0008\u0016\u0010\u0017R\"\u0010\u0018\u001a\u0016\u0012\u000c\u0012\n\u0012\u0006\u0012\u0004\u0018\u00010\u001b0\u001a\u0012\u0004\u0012\u00020\u001c0\u0019X\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u0014\u0010\u001d\u001a\u00020\u001e8BX\u0082\u0004\u00a2\u0006\u0006\u001a\u0004\u0008\u001f\u0010 \u00a8\u0006<"
+        "\u0000\u008c\u0001\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0003\n\u0002\u0018\u0002\n\u0002\u0008\u0003\n\u0002\u0018\u0002\n\u0002\u0008\u0003\n\u0002\u0018\u0002\n\u0002\u0008\u0003\n\u0002\u0018\u0002\n\u0002\u0008\u0003\n\u0002\u0018\u0002\n\u0002\u0008\u0004\n\u0002\u0010$\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0002\n\u0002\u0008\u0004\n\u0002\u0018\u0002\n\u0002\u0008\u0004\n\u0002\u0010\u000e\n\u0002\u0008\u0002\n\u0002\u0010\u000b\n\u0000\n\u0002\u0010 \n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0006\u0008\u0007\u0018\u00002\u00020\u0001B\u000f\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u00a2\u0006\u0004\u0008\u0004\u0010\u0005J\u0010\u0010#\u001a\u00020$2\u0006\u0010%\u001a\u00020\u0007H\u0016J\u0010\u0010&\u001a\u00020$2\u0006\u0010%\u001a\u00020\u0007H\u0016J\u0010\u0010\'\u001a\u00020$2\u0006\u0010(\u001a\u00020)H\u0002J\u001a\u0010*\u001a\u00020$2\u0006\u0010+\u001a\u00020\u001f2\u0008\u0010,\u001a\u0004\u0018\u00010\u001eH\u0002J\u0018\u0010-\u001a\u00020.2\u0006\u0010/\u001a\u00020.2\u0006\u00100\u001a\u000201H\u0002J\u001e\u00102\u001a\u0008\u0012\u0004\u0012\u000204032\u0006\u00105\u001a\u0002062\u0006\u00107\u001a\u000208H\u0002J\u0018\u00109\u001a\u00020.2\u0006\u0010:\u001a\u0002062\u0006\u0010;\u001a\u000208H\u0002J\u0008\u00100\u001a\u000201H\u0002J\u0008\u0010<\u001a\u00020$H\u0002J\u0008\u0010=\u001a\u00020$H\u0002R\u000e\u0010\u0002\u001a\u00020\u0003X\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u0014\u0010\u0006\u001a\u00020\u00078BX\u0082\u0004\u00a2\u0006\u0006\u001a\u0004\u0008\u0008\u0010\tR\u0014\u0010\n\u001a\u00020\u000b8BX\u0082\u0004\u00a2\u0006\u0006\u001a\u0004\u0008\u000c\u0010\rR\u0014\u0010\u000e\u001a\u00020\u000f8BX\u0082\u0004\u00a2\u0006\u0006\u001a\u0004\u0008\u0010\u0010\u0011R\u0014\u0010\u0012\u001a\u00020\u00138BX\u0082\u0004\u00a2\u0006\u0006\u001a\u0004\u0008\u0014\u0010\u0015R\u001c\u0010\u0016\u001a\n \u0018*\u0004\u0018\u00010\u00170\u00178BX\u0082\u0004\u00a2\u0006\u0006\u001a\u0004\u0008\u0019\u0010\u001aR\'\u0010\u001b\u001a\u001b\u0012\u000c\u0012\n\u0012\u0006\u0012\u0004\u0018\u00010\u001e0\u001d\u0012\t\u0012\u00070\u001f\u00a2\u0006\u0002\u0008 0\u001cX\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u000e\u0010!\u001a\u00020\"X\u0082\u0004\u00a2\u0006\u0002\n\u0000\u00a8\u0006>"
     }
     d2 = {
         "Ljp/co/sony/mc/camera/view/viewbinder/StreamingModeQuickSettingViewBinder;",
         "Landroidx/lifecycle/DefaultLifecycleObserver;",
         "binding",
         "Ljp/co/sony/mc/camera/databinding/FragmentStreamingModeQuickSettingBinding;",
+        "<init>",
         "(Ljp/co/sony/mc/camera/databinding/FragmentStreamingModeQuickSettingBinding;)V",
+        "lifecycleOwner",
+        "Landroidx/lifecycle/LifecycleOwner;",
+        "getLifecycleOwner",
+        "()Landroidx/lifecycle/LifecycleOwner;",
+        "quickSettingUiState",
+        "Ljp/co/sony/mc/camera/view/uistate/BasicModeQuickSettingUiState;",
+        "getQuickSettingUiState",
+        "()Ljp/co/sony/mc/camera/view/uistate/BasicModeQuickSettingUiState;",
+        "orientationViewModel",
+        "Ljp/co/sony/mc/camera/view/viewmodel/OrientationViewModel;",
+        "getOrientationViewModel",
+        "()Ljp/co/sony/mc/camera/view/viewmodel/OrientationViewModel;",
         "cameraSettingsModel",
         "Ljp/co/sony/mc/camera/view/viewmodel/CameraSettingsModel;",
         "getCameraSettingsModel",
@@ -36,25 +49,29 @@
         "kotlin.jvm.PlatformType",
         "getContext",
         "()Landroid/content/Context;",
-        "layoutChangeListener",
-        "Landroid/view/View$OnLayoutChangeListener;",
-        "lifecycleOwner",
-        "Landroidx/lifecycle/LifecycleOwner;",
-        "getLifecycleOwner",
-        "()Landroidx/lifecycle/LifecycleOwner;",
-        "orientationViewModel",
-        "Ljp/co/sony/mc/camera/view/viewmodel/OrientationViewModel;",
-        "getOrientationViewModel",
-        "()Ljp/co/sony/mc/camera/view/viewmodel/OrientationViewModel;",
         "quickSettingItemToViewMap",
         "",
         "Landroidx/lifecycle/LiveData;",
         "Ljp/co/sony/mc/camera/view/setting/quicksetting/QuickSettingItem;",
         "Ljp/co/sony/mc/camera/view/setting/quicksetting/QuickSettingItemView;",
-        "quickSettingUiState",
-        "Ljp/co/sony/mc/camera/view/uistate/BasicModeQuickSettingUiState;",
-        "getQuickSettingUiState",
-        "()Ljp/co/sony/mc/camera/view/uistate/BasicModeQuickSettingUiState;",
+        "Lkotlin/jvm/internal/EnhancedNullability;",
+        "layoutChangeListener",
+        "Landroid/view/View$OnLayoutChangeListener;",
+        "onCreate",
+        "",
+        "owner",
+        "onDestroy",
+        "rotateContainer",
+        "layoutOrientation",
+        "Ljp/co/sony/mc/camera/view/orientation/LayoutOrientation;",
+        "updateItemView",
+        "view",
+        "item",
+        "setStreamingSettingText",
+        "",
+        "text",
+        "isKeyguardLocked",
+        "",
         "createVideoQualityItems",
         "",
         "Ljp/co/sony/mc/camera/view/setting/streamingquicksetting/VideoQualityItemAdapter$VideoQualityItem;",
@@ -62,32 +79,17 @@
         "Ljp/co/sony/mc/camera/configuration/parameters/VideoQuality;",
         "currentVideoSize",
         "Ljp/co/sony/mc/camera/configuration/parameters/VideoSize;",
-        "focusOnVideoQualitySelectText",
-        "",
-        "foucusVideoQualitySelectorFistItem",
         "getVideoQualityDisplayText",
-        "",
         "videoQuality",
         "videoSize",
-        "isKeyguardLocked",
-        "",
-        "onCreate",
-        "owner",
-        "onDestroy",
-        "rotateContainer",
-        "layoutOrientation",
-        "Ljp/co/sony/mc/camera/view/orientation/LayoutOrientation;",
-        "setStreamingSettingText",
-        "text",
-        "updateItemView",
-        "view",
-        "item",
+        "foucusVideoQualitySelectorFistItem",
+        "focusOnVideoQualitySelectText",
         "SomcCamera_release"
     }
     k = 0x1
     mv = {
-        0x1,
-        0x9,
+        0x2,
+        0x0,
         0x0
     }
     xi = 0x30
@@ -118,12 +120,112 @@
 
 
 # direct methods
-.method public static synthetic $r8$lambda$5u-Gs2cSq1b0__3xzGTr3P4SHT0(Ljp/co/sony/mc/camera/view/viewbinder/StreamingModeQuickSettingViewBinder;Landroid/view/View;)V
+.method public static synthetic $r8$lambda$-Fz3hLhTRIPcQo0Rix7-fuJIwzw(Ljp/co/sony/mc/camera/view/viewbinder/StreamingModeQuickSettingViewBinder;Ljava/lang/String;)Lkotlin/Unit;
     .locals 0
 
-    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/view/viewbinder/StreamingModeQuickSettingViewBinder;->onCreate$lambda$5(Ljp/co/sony/mc/camera/view/viewbinder/StreamingModeQuickSettingViewBinder;Landroid/view/View;)V
+    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/view/viewbinder/StreamingModeQuickSettingViewBinder;->onCreate$lambda$8(Ljp/co/sony/mc/camera/view/viewbinder/StreamingModeQuickSettingViewBinder;Ljava/lang/String;)Lkotlin/Unit;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method public static synthetic $r8$lambda$2bpJi2Noh2JVdv80BcV1AO5St10(Ljp/co/sony/mc/camera/view/viewbinder/StreamingModeQuickSettingViewBinder;Ljp/co/sony/mc/camera/configuration/parameters/VideoQuality;)Lkotlin/Unit;
+    .locals 0
+
+    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/view/viewbinder/StreamingModeQuickSettingViewBinder;->onCreate$lambda$15(Ljp/co/sony/mc/camera/view/viewbinder/StreamingModeQuickSettingViewBinder;Ljp/co/sony/mc/camera/configuration/parameters/VideoQuality;)Lkotlin/Unit;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method public static synthetic $r8$lambda$G2ockQhtjWqRkl6MmXnmRu5qKoU(Ljp/co/sony/mc/camera/view/viewbinder/StreamingModeQuickSettingViewBinder;Landroid/view/View;)V
+    .locals 0
+
+    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/view/viewbinder/StreamingModeQuickSettingViewBinder;->onCreate$lambda$14(Ljp/co/sony/mc/camera/view/viewbinder/StreamingModeQuickSettingViewBinder;Landroid/view/View;)V
 
     return-void
+.end method
+
+.method public static synthetic $r8$lambda$GFMIlA2xyBGtSCxes_GZ3IdyPDs(Ljp/co/sony/mc/camera/view/viewbinder/StreamingModeQuickSettingViewBinder;)Lkotlin/Unit;
+    .locals 0
+
+    invoke-static {p0}, Ljp/co/sony/mc/camera/view/viewbinder/StreamingModeQuickSettingViewBinder;->focusOnVideoQualitySelectText$lambda$23(Ljp/co/sony/mc/camera/view/viewbinder/StreamingModeQuickSettingViewBinder;)Lkotlin/Unit;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method public static synthetic $r8$lambda$KzyDb6LHKLhwBcUg6dSSuMQ0syw(Ljp/co/sony/mc/camera/view/viewbinder/StreamingModeQuickSettingViewBinder;Ljava/lang/Boolean;)Lkotlin/Unit;
+    .locals 0
+
+    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/view/viewbinder/StreamingModeQuickSettingViewBinder;->onCreate$lambda$18(Ljp/co/sony/mc/camera/view/viewbinder/StreamingModeQuickSettingViewBinder;Ljava/lang/Boolean;)Lkotlin/Unit;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method public static synthetic $r8$lambda$NL5Dlj_wsSsjxdAZ9L_NBZjcBoE(Ljp/co/sony/mc/camera/view/setting/streamingquicksetting/VideoQualityItemAdapter;Ljp/co/sony/mc/camera/view/viewbinder/StreamingModeQuickSettingViewBinder;Lkotlin/Pair;)Lkotlin/Unit;
+    .locals 0
+
+    invoke-static {p0, p1, p2}, Ljp/co/sony/mc/camera/view/viewbinder/StreamingModeQuickSettingViewBinder;->onCreate$lambda$20(Ljp/co/sony/mc/camera/view/setting/streamingquicksetting/VideoQualityItemAdapter;Ljp/co/sony/mc/camera/view/viewbinder/StreamingModeQuickSettingViewBinder;Lkotlin/Pair;)Lkotlin/Unit;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method public static synthetic $r8$lambda$OpKlEtrtFMLzhDgnICsLs7Us9rs(Ljp/co/sony/mc/camera/view/viewbinder/StreamingModeQuickSettingViewBinder;Ljava/lang/String;)Lkotlin/Unit;
+    .locals 0
+
+    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/view/viewbinder/StreamingModeQuickSettingViewBinder;->onCreate$lambda$10(Ljp/co/sony/mc/camera/view/viewbinder/StreamingModeQuickSettingViewBinder;Ljava/lang/String;)Lkotlin/Unit;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method public static synthetic $r8$lambda$PbN8s50tgUBLkg42S3E9-YsPkmA(Ljp/co/sony/mc/camera/configuration/parameters/VideoQuality;Ljp/co/sony/mc/camera/configuration/parameters/VideoSize;)Lkotlin/Pair;
+    .locals 0
+
+    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/view/viewbinder/StreamingModeQuickSettingViewBinder;->onCreate$lambda$19(Ljp/co/sony/mc/camera/configuration/parameters/VideoQuality;Ljp/co/sony/mc/camera/configuration/parameters/VideoSize;)Lkotlin/Pair;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method public static synthetic $r8$lambda$PkB_HigXUT_Ppm3Q4XGe6RuXqck(Ljp/co/sony/mc/camera/view/viewbinder/StreamingModeQuickSettingViewBinder;Ljava/lang/String;)Lkotlin/Unit;
+    .locals 0
+
+    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/view/viewbinder/StreamingModeQuickSettingViewBinder;->onCreate$lambda$9(Ljp/co/sony/mc/camera/view/viewbinder/StreamingModeQuickSettingViewBinder;Ljava/lang/String;)Lkotlin/Unit;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method public static synthetic $r8$lambda$TpLsjIpYRCVMRTyWSzk03bRRshk(Ljp/co/sony/mc/camera/view/viewbinder/StreamingModeQuickSettingViewBinder;Landroid/view/View;Landroid/view/MotionEvent;)Z
+    .locals 0
+
+    invoke-static {p0, p1, p2}, Ljp/co/sony/mc/camera/view/viewbinder/StreamingModeQuickSettingViewBinder;->onCreate$lambda$17(Ljp/co/sony/mc/camera/view/viewbinder/StreamingModeQuickSettingViewBinder;Landroid/view/View;Landroid/view/MotionEvent;)Z
+
+    move-result p0
+
+    return p0
+.end method
+
+.method public static synthetic $r8$lambda$YKgpXWwtj0I2ty_uSBFsVGcHo_w(Ljp/co/sony/mc/camera/view/viewbinder/StreamingModeQuickSettingViewBinder;Ljava/lang/String;)Lkotlin/Unit;
+    .locals 0
+
+    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/view/viewbinder/StreamingModeQuickSettingViewBinder;->onCreate$lambda$7(Ljp/co/sony/mc/camera/view/viewbinder/StreamingModeQuickSettingViewBinder;Ljava/lang/String;)Lkotlin/Unit;
+
+    move-result-object p0
+
+    return-object p0
 .end method
 
 .method public static synthetic $r8$lambda$dcVAD1iONxTPVe9pDlReupOqJBg(Ljp/co/sony/mc/camera/view/viewbinder/StreamingModeQuickSettingViewBinder;Landroid/view/View;IIIIIIII)V
@@ -134,14 +236,54 @@
     return-void
 .end method
 
-.method public static synthetic $r8$lambda$w4bbZ4TOInMsoa5O1nJ2K-AYEH0(Ljp/co/sony/mc/camera/view/viewbinder/StreamingModeQuickSettingViewBinder;Landroid/view/View;Landroid/view/MotionEvent;)Z
+.method public static synthetic $r8$lambda$k_AVeet6QGQIC-1A93WxwdfXTuY(Ljp/co/sony/mc/camera/view/viewbinder/StreamingModeQuickSettingViewBinder;Ljp/co/sony/mc/camera/view/setting/quicksetting/QuickSettingOptionItem;)Lkotlin/Unit;
     .locals 0
 
-    invoke-static {p0, p1, p2}, Ljp/co/sony/mc/camera/view/viewbinder/StreamingModeQuickSettingViewBinder;->onCreate$lambda$7(Ljp/co/sony/mc/camera/view/viewbinder/StreamingModeQuickSettingViewBinder;Landroid/view/View;Landroid/view/MotionEvent;)Z
+    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/view/viewbinder/StreamingModeQuickSettingViewBinder;->onCreate$lambda$6$lambda$5$lambda$4(Ljp/co/sony/mc/camera/view/viewbinder/StreamingModeQuickSettingViewBinder;Ljp/co/sony/mc/camera/view/setting/quicksetting/QuickSettingOptionItem;)Lkotlin/Unit;
 
-    move-result p0
+    move-result-object p0
 
-    return p0
+    return-object p0
+.end method
+
+.method public static synthetic $r8$lambda$o825ku33Nq_lO8qSFUPhc2GtcGE(Ljp/co/sony/mc/camera/view/viewbinder/StreamingModeQuickSettingViewBinder;Ljava/lang/Boolean;)Lkotlin/Unit;
+    .locals 0
+
+    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/view/viewbinder/StreamingModeQuickSettingViewBinder;->onCreate$lambda$12(Ljp/co/sony/mc/camera/view/viewbinder/StreamingModeQuickSettingViewBinder;Ljava/lang/Boolean;)Lkotlin/Unit;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method public static synthetic $r8$lambda$p6PsMh65wwT1xST4DKOxKAKObCs(Ljp/co/sony/mc/camera/view/viewbinder/StreamingModeQuickSettingViewBinder;Ljp/co/sony/mc/camera/configuration/parameters/VideoQuality;)Lkotlin/Unit;
+    .locals 0
+
+    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/view/viewbinder/StreamingModeQuickSettingViewBinder;->onCreate$lambda$13(Ljp/co/sony/mc/camera/view/viewbinder/StreamingModeQuickSettingViewBinder;Ljp/co/sony/mc/camera/configuration/parameters/VideoQuality;)Lkotlin/Unit;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method public static synthetic $r8$lambda$pL4j8F7SMG5vButzkd09ucxnftI(Ljp/co/sony/mc/camera/view/viewbinder/StreamingModeQuickSettingViewBinder;Ljp/co/sony/mc/camera/view/setting/quicksetting/QuickSettingItemView;Ljp/co/sony/mc/camera/view/setting/quicksetting/QuickSettingItem;)Lkotlin/Unit;
+    .locals 0
+
+    invoke-static {p0, p1, p2}, Ljp/co/sony/mc/camera/view/viewbinder/StreamingModeQuickSettingViewBinder;->onCreate$lambda$3$lambda$2(Ljp/co/sony/mc/camera/view/viewbinder/StreamingModeQuickSettingViewBinder;Ljp/co/sony/mc/camera/view/setting/quicksetting/QuickSettingItemView;Ljp/co/sony/mc/camera/view/setting/quicksetting/QuickSettingItem;)Lkotlin/Unit;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method public static synthetic $r8$lambda$rLnVsGz0hxq-T5fVv9U9sbC1Wgs(Ljp/co/sony/mc/camera/view/viewbinder/StreamingModeQuickSettingViewBinder;Ljava/lang/String;)Lkotlin/Unit;
+    .locals 0
+
+    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/view/viewbinder/StreamingModeQuickSettingViewBinder;->onCreate$lambda$11(Ljp/co/sony/mc/camera/view/viewbinder/StreamingModeQuickSettingViewBinder;Ljava/lang/String;)Lkotlin/Unit;
+
+    move-result-object p0
+
+    return-object p0
 .end method
 
 .method static constructor <clinit>()V
@@ -163,20 +305,28 @@
     .line 40
     iput-object p1, p0, Ljp/co/sony/mc/camera/view/viewbinder/StreamingModeQuickSettingViewBinder;->binding:Ljp/co/sony/mc/camera/databinding/FragmentStreamingModeQuickSettingBinding;
 
+    const/4 v0, 0x2
+
     .line 51
+    new-array v0, v0, [Lkotlin/Pair;
+
     invoke-direct {p0}, Ljp/co/sony/mc/camera/view/viewbinder/StreamingModeQuickSettingViewBinder;->getQuickSettingUiState()Ljp/co/sony/mc/camera/view/uistate/BasicModeQuickSettingUiState;
 
-    move-result-object v0
+    move-result-object v1
 
-    invoke-virtual {v0}, Ljp/co/sony/mc/camera/view/uistate/BasicModeQuickSettingUiState;->getStreamingConnectModeQuickSettingItem()Landroidx/lifecycle/LiveData;
+    invoke-virtual {v1}, Ljp/co/sony/mc/camera/view/uistate/BasicModeQuickSettingUiState;->getStreamingConnectModeQuickSettingItem()Landroidx/lifecycle/LiveData;
 
-    move-result-object v0
+    move-result-object v1
 
-    iget-object v1, p1, Ljp/co/sony/mc/camera/databinding/FragmentStreamingModeQuickSettingBinding;->connectMode:Ljp/co/sony/mc/camera/view/setting/quicksetting/QuickSettingItemView;
+    iget-object v2, p1, Ljp/co/sony/mc/camera/databinding/FragmentStreamingModeQuickSettingBinding;->connectMode:Ljp/co/sony/mc/camera/view/setting/quicksetting/QuickSettingItemView;
 
-    invoke-static {v0, v1}, Lkotlin/TuplesKt;->to(Ljava/lang/Object;Ljava/lang/Object;)Lkotlin/Pair;
+    invoke-static {v1, v2}, Lkotlin/TuplesKt;->to(Ljava/lang/Object;Ljava/lang/Object;)Lkotlin/Pair;
 
-    move-result-object v0
+    move-result-object v1
+
+    const/4 v2, 0x0
+
+    aput-object v1, v0, v2
 
     .line 52
     invoke-direct {p0}, Ljp/co/sony/mc/camera/view/viewbinder/StreamingModeQuickSettingViewBinder;->getQuickSettingUiState()Ljp/co/sony/mc/camera/view/uistate/BasicModeQuickSettingUiState;
@@ -193,29 +343,21 @@
 
     move-result-object p1
 
-    const/4 v1, 0x2
+    const/4 v1, 0x1
 
-    new-array v1, v1, [Lkotlin/Pair;
-
-    const/4 v2, 0x0
-
-    aput-object v0, v1, v2
-
-    const/4 v0, 0x1
-
-    aput-object p1, v1, v0
+    aput-object p1, v0, v1
 
     .line 50
-    invoke-static {v1}, Lkotlin/collections/MapsKt;->mapOf([Lkotlin/Pair;)Ljava/util/Map;
+    invoke-static {v0}, Lkotlin/collections/MapsKt;->mapOf([Lkotlin/Pair;)Ljava/util/Map;
 
     move-result-object p1
 
     iput-object p1, p0, Ljp/co/sony/mc/camera/view/viewbinder/StreamingModeQuickSettingViewBinder;->quickSettingItemToViewMap:Ljava/util/Map;
 
     .line 55
-    new-instance p1, Ljp/co/sony/mc/camera/view/viewbinder/StreamingModeQuickSettingViewBinder$$ExternalSyntheticLambda2;
+    new-instance p1, Ljp/co/sony/mc/camera/view/viewbinder/StreamingModeQuickSettingViewBinder$$ExternalSyntheticLambda7;
 
-    invoke-direct {p1, p0}, Ljp/co/sony/mc/camera/view/viewbinder/StreamingModeQuickSettingViewBinder$$ExternalSyntheticLambda2;-><init>(Ljp/co/sony/mc/camera/view/viewbinder/StreamingModeQuickSettingViewBinder;)V
+    invoke-direct {p1, p0}, Ljp/co/sony/mc/camera/view/viewbinder/StreamingModeQuickSettingViewBinder$$ExternalSyntheticLambda7;-><init>(Ljp/co/sony/mc/camera/view/viewbinder/StreamingModeQuickSettingViewBinder;)V
 
     iput-object p1, p0, Ljp/co/sony/mc/camera/view/viewbinder/StreamingModeQuickSettingViewBinder;->layoutChangeListener:Landroid/view/View$OnLayoutChangeListener;
 
@@ -235,35 +377,6 @@
     return-void
 .end method
 
-.method public static final synthetic access$createVideoQualityItems(Ljp/co/sony/mc/camera/view/viewbinder/StreamingModeQuickSettingViewBinder;Ljp/co/sony/mc/camera/configuration/parameters/VideoQuality;Ljp/co/sony/mc/camera/configuration/parameters/VideoSize;)Ljava/util/List;
-    .locals 0
-
-    .line 39
-    invoke-direct {p0, p1, p2}, Ljp/co/sony/mc/camera/view/viewbinder/StreamingModeQuickSettingViewBinder;->createVideoQualityItems(Ljp/co/sony/mc/camera/configuration/parameters/VideoQuality;Ljp/co/sony/mc/camera/configuration/parameters/VideoSize;)Ljava/util/List;
-
-    move-result-object p0
-
-    return-object p0
-.end method
-
-.method public static final synthetic access$focusOnVideoQualitySelectText(Ljp/co/sony/mc/camera/view/viewbinder/StreamingModeQuickSettingViewBinder;)V
-    .locals 0
-
-    .line 39
-    invoke-direct {p0}, Ljp/co/sony/mc/camera/view/viewbinder/StreamingModeQuickSettingViewBinder;->focusOnVideoQualitySelectText()V
-
-    return-void
-.end method
-
-.method public static final synthetic access$foucusVideoQualitySelectorFistItem(Ljp/co/sony/mc/camera/view/viewbinder/StreamingModeQuickSettingViewBinder;)V
-    .locals 0
-
-    .line 39
-    invoke-direct {p0}, Ljp/co/sony/mc/camera/view/viewbinder/StreamingModeQuickSettingViewBinder;->foucusVideoQualitySelectorFistItem()V
-
-    return-void
-.end method
-
 .method public static final synthetic access$getBinding$p(Ljp/co/sony/mc/camera/view/viewbinder/StreamingModeQuickSettingViewBinder;)Ljp/co/sony/mc/camera/databinding/FragmentStreamingModeQuickSettingBinding;
     .locals 0
 
@@ -271,59 +384,6 @@
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/viewbinder/StreamingModeQuickSettingViewBinder;->binding:Ljp/co/sony/mc/camera/databinding/FragmentStreamingModeQuickSettingBinding;
 
     return-object p0
-.end method
-
-.method public static final synthetic access$getContext(Ljp/co/sony/mc/camera/view/viewbinder/StreamingModeQuickSettingViewBinder;)Landroid/content/Context;
-    .locals 0
-
-    .line 39
-    invoke-direct {p0}, Ljp/co/sony/mc/camera/view/viewbinder/StreamingModeQuickSettingViewBinder;->getContext()Landroid/content/Context;
-
-    move-result-object p0
-
-    return-object p0
-.end method
-
-.method public static final synthetic access$getQuickSettingUiState(Ljp/co/sony/mc/camera/view/viewbinder/StreamingModeQuickSettingViewBinder;)Ljp/co/sony/mc/camera/view/uistate/BasicModeQuickSettingUiState;
-    .locals 0
-
-    .line 39
-    invoke-direct {p0}, Ljp/co/sony/mc/camera/view/viewbinder/StreamingModeQuickSettingViewBinder;->getQuickSettingUiState()Ljp/co/sony/mc/camera/view/uistate/BasicModeQuickSettingUiState;
-
-    move-result-object p0
-
-    return-object p0
-.end method
-
-.method public static final synthetic access$isKeyguardLocked(Ljp/co/sony/mc/camera/view/viewbinder/StreamingModeQuickSettingViewBinder;)Z
-    .locals 0
-
-    .line 39
-    invoke-direct {p0}, Ljp/co/sony/mc/camera/view/viewbinder/StreamingModeQuickSettingViewBinder;->isKeyguardLocked()Z
-
-    move-result p0
-
-    return p0
-.end method
-
-.method public static final synthetic access$setStreamingSettingText(Ljp/co/sony/mc/camera/view/viewbinder/StreamingModeQuickSettingViewBinder;Ljava/lang/String;Z)Ljava/lang/String;
-    .locals 0
-
-    .line 39
-    invoke-direct {p0, p1, p2}, Ljp/co/sony/mc/camera/view/viewbinder/StreamingModeQuickSettingViewBinder;->setStreamingSettingText(Ljava/lang/String;Z)Ljava/lang/String;
-
-    move-result-object p0
-
-    return-object p0
-.end method
-
-.method public static final synthetic access$updateItemView(Ljp/co/sony/mc/camera/view/viewbinder/StreamingModeQuickSettingViewBinder;Ljp/co/sony/mc/camera/view/setting/quicksetting/QuickSettingItemView;Ljp/co/sony/mc/camera/view/setting/quicksetting/QuickSettingItem;)V
-    .locals 0
-
-    .line 39
-    invoke-direct {p0, p1, p2}, Ljp/co/sony/mc/camera/view/viewbinder/StreamingModeQuickSettingViewBinder;->updateItemView(Ljp/co/sony/mc/camera/view/setting/quicksetting/QuickSettingItemView;Ljp/co/sony/mc/camera/view/setting/quicksetting/QuickSettingItem;)V
-
-    return-void
 .end method
 
 .method private final createVideoQualityItems(Ljp/co/sony/mc/camera/configuration/parameters/VideoQuality;Ljp/co/sony/mc/camera/configuration/parameters/VideoSize;)Ljava/util/List;
@@ -431,15 +491,37 @@
 
     move-result-object v1
 
-    new-instance v2, Ljp/co/sony/mc/camera/view/viewbinder/StreamingModeQuickSettingViewBinder$focusOnVideoQualitySelectText$1;
+    new-instance v2, Ljp/co/sony/mc/camera/view/viewbinder/StreamingModeQuickSettingViewBinder$$ExternalSyntheticLambda6;
 
-    invoke-direct {v2, p0}, Ljp/co/sony/mc/camera/view/viewbinder/StreamingModeQuickSettingViewBinder$focusOnVideoQualitySelectText$1;-><init>(Ljp/co/sony/mc/camera/view/viewbinder/StreamingModeQuickSettingViewBinder;)V
-
-    check-cast v2, Lkotlin/jvm/functions/Function0;
+    invoke-direct {v2, p0}, Ljp/co/sony/mc/camera/view/viewbinder/StreamingModeQuickSettingViewBinder$$ExternalSyntheticLambda6;-><init>(Ljp/co/sony/mc/camera/view/viewbinder/StreamingModeQuickSettingViewBinder;)V
 
     invoke-virtual {v0, v1, v2}, Ljp/co/sony/mc/camera/util/AccessibilityUtil;->watchFocused(Landroid/view/View;Lkotlin/jvm/functions/Function0;)V
 
     return-void
+.end method
+
+.method private static final focusOnVideoQualitySelectText$lambda$23(Ljp/co/sony/mc/camera/view/viewbinder/StreamingModeQuickSettingViewBinder;)Lkotlin/Unit;
+    .locals 1
+
+    const-string/jumbo v0, "this$0"
+
+    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 315
+    iget-object p0, p0, Ljp/co/sony/mc/camera/view/viewbinder/StreamingModeQuickSettingViewBinder;->binding:Ljp/co/sony/mc/camera/databinding/FragmentStreamingModeQuickSettingBinding;
+
+    iget-object p0, p0, Ljp/co/sony/mc/camera/databinding/FragmentStreamingModeQuickSettingBinding;->videoQuality:Ljp/co/sony/mc/camera/databinding/FragmentStreamingModeVideoQualityBinding;
+
+    iget-object p0, p0, Ljp/co/sony/mc/camera/databinding/FragmentStreamingModeVideoQualityBinding;->videoQualitySelectText:Landroid/widget/TextView;
+
+    const/16 v0, 0x8
+
+    invoke-virtual {p0, v0}, Landroid/widget/TextView;->sendAccessibilityEvent(I)V
+
+    .line 318
+    sget-object p0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
+
+    return-object p0
 .end method
 
 .method private final foucusVideoQualitySelectorFistItem()V
@@ -605,7 +687,7 @@
 
     move-result-object p0
 
-    const p2, 0x7f110127
+    const p2, 0x7f11012a
 
     invoke-virtual {p0, p2}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -708,7 +790,212 @@
     return-void
 .end method
 
-.method private static final onCreate$lambda$5(Ljp/co/sony/mc/camera/view/viewbinder/StreamingModeQuickSettingViewBinder;Landroid/view/View;)V
+.method private static final onCreate$lambda$10(Ljp/co/sony/mc/camera/view/viewbinder/StreamingModeQuickSettingViewBinder;Ljava/lang/String;)Lkotlin/Unit;
+    .locals 2
+
+    const-string/jumbo v0, "this$0"
+
+    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 99
+    iget-object v0, p0, Ljp/co/sony/mc/camera/view/viewbinder/StreamingModeQuickSettingViewBinder;->binding:Ljp/co/sony/mc/camera/databinding/FragmentStreamingModeQuickSettingBinding;
+
+    iget-object v0, v0, Ljp/co/sony/mc/camera/databinding/FragmentStreamingModeQuickSettingBinding;->youtube:Ljp/co/sony/mc/camera/databinding/FragmentStreamingModeYoutubeBinding;
+
+    iget-object v0, v0, Ljp/co/sony/mc/camera/databinding/FragmentStreamingModeYoutubeBinding;->youtubeEventText:Landroid/widget/TextView;
+
+    .line 100
+    invoke-static {p1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;)V
+
+    .line 101
+    invoke-direct {p0}, Ljp/co/sony/mc/camera/view/viewbinder/StreamingModeQuickSettingViewBinder;->isKeyguardLocked()Z
+
+    move-result v1
+
+    .line 99
+    invoke-direct {p0, p1, v1}, Ljp/co/sony/mc/camera/view/viewbinder/StreamingModeQuickSettingViewBinder;->setStreamingSettingText(Ljava/lang/String;Z)Ljava/lang/String;
+
+    move-result-object p0
+
+    check-cast p0, Ljava/lang/CharSequence;
+
+    invoke-virtual {v0, p0}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
+
+    .line 103
+    sget-object p0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
+
+    return-object p0
+.end method
+
+.method private static final onCreate$lambda$11(Ljp/co/sony/mc/camera/view/viewbinder/StreamingModeQuickSettingViewBinder;Ljava/lang/String;)Lkotlin/Unit;
+    .locals 2
+
+    const-string/jumbo v0, "this$0"
+
+    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 106
+    iget-object v0, p0, Ljp/co/sony/mc/camera/view/viewbinder/StreamingModeQuickSettingViewBinder;->binding:Ljp/co/sony/mc/camera/databinding/FragmentStreamingModeQuickSettingBinding;
+
+    iget-object v0, v0, Ljp/co/sony/mc/camera/databinding/FragmentStreamingModeQuickSettingBinding;->youtube:Ljp/co/sony/mc/camera/databinding/FragmentStreamingModeYoutubeBinding;
+
+    iget-object v0, v0, Ljp/co/sony/mc/camera/databinding/FragmentStreamingModeYoutubeBinding;->liveEventUrlText:Landroid/widget/TextView;
+
+    .line 107
+    invoke-static {p1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;)V
+
+    .line 108
+    invoke-direct {p0}, Ljp/co/sony/mc/camera/view/viewbinder/StreamingModeQuickSettingViewBinder;->isKeyguardLocked()Z
+
+    move-result v1
+
+    .line 106
+    invoke-direct {p0, p1, v1}, Ljp/co/sony/mc/camera/view/viewbinder/StreamingModeQuickSettingViewBinder;->setStreamingSettingText(Ljava/lang/String;Z)Ljava/lang/String;
+
+    move-result-object p0
+
+    check-cast p0, Ljava/lang/CharSequence;
+
+    invoke-virtual {v0, p0}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
+
+    .line 110
+    sget-object p0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
+
+    return-object p0
+.end method
+
+.method private static final onCreate$lambda$12(Ljp/co/sony/mc/camera/view/viewbinder/StreamingModeQuickSettingViewBinder;Ljava/lang/Boolean;)Lkotlin/Unit;
+    .locals 1
+
+    const-string/jumbo v0, "this$0"
+
+    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 114
+    invoke-virtual {p1}, Ljava/lang/Boolean;->booleanValue()Z
+
+    move-result p1
+
+    if-eqz p1, :cond_0
+
+    .line 115
+    invoke-direct {p0}, Ljp/co/sony/mc/camera/view/viewbinder/StreamingModeQuickSettingViewBinder;->getQuickSettingUiState()Ljp/co/sony/mc/camera/view/uistate/BasicModeQuickSettingUiState;
+
+    move-result-object p1
+
+    invoke-virtual {p1}, Ljp/co/sony/mc/camera/view/uistate/BasicModeQuickSettingUiState;->updateDefaultValue()V
+
+    .line 116
+    invoke-direct {p0}, Ljp/co/sony/mc/camera/view/viewbinder/StreamingModeQuickSettingViewBinder;->focusOnVideoQualitySelectText()V
+
+    goto :goto_0
+
+    .line 118
+    :cond_0
+    invoke-direct {p0}, Ljp/co/sony/mc/camera/view/viewbinder/StreamingModeQuickSettingViewBinder;->getQuickSettingUiState()Ljp/co/sony/mc/camera/view/uistate/BasicModeQuickSettingUiState;
+
+    move-result-object p0
+
+    invoke-virtual {p0}, Ljp/co/sony/mc/camera/view/uistate/BasicModeQuickSettingUiState;->hideVideoQualitySelector()V
+
+    .line 120
+    :goto_0
+    sget-object p0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
+
+    return-object p0
+.end method
+
+.method private static final onCreate$lambda$13(Ljp/co/sony/mc/camera/view/viewbinder/StreamingModeQuickSettingViewBinder;Ljp/co/sony/mc/camera/configuration/parameters/VideoQuality;)Lkotlin/Unit;
+    .locals 2
+
+    const-string/jumbo v0, "this$0"
+
+    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 123
+    invoke-direct {p0}, Ljp/co/sony/mc/camera/view/viewbinder/StreamingModeQuickSettingViewBinder;->getContext()Landroid/content/Context;
+
+    move-result-object v0
+
+    invoke-virtual {p1}, Ljp/co/sony/mc/camera/configuration/parameters/VideoQuality;->getTextId()I
+
+    move-result p1
+
+    invoke-virtual {v0, p1}, Landroid/content/Context;->getString(I)Ljava/lang/String;
+
+    move-result-object p1
+
+    const-string v0, "getString(...)"
+
+    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 124
+    iget-object v0, p0, Ljp/co/sony/mc/camera/view/viewbinder/StreamingModeQuickSettingViewBinder;->binding:Ljp/co/sony/mc/camera/databinding/FragmentStreamingModeQuickSettingBinding;
+
+    iget-object v0, v0, Ljp/co/sony/mc/camera/databinding/FragmentStreamingModeQuickSettingBinding;->videoQuality:Ljp/co/sony/mc/camera/databinding/FragmentStreamingModeVideoQualityBinding;
+
+    iget-object v0, v0, Ljp/co/sony/mc/camera/databinding/FragmentStreamingModeVideoQualityBinding;->videoQualitySelectText:Landroid/widget/TextView;
+
+    move-object v1, p1
+
+    check-cast v1, Ljava/lang/CharSequence;
+
+    invoke-virtual {v0, v1}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
+
+    .line 125
+    iget-object v0, p0, Ljp/co/sony/mc/camera/view/viewbinder/StreamingModeQuickSettingViewBinder;->binding:Ljp/co/sony/mc/camera/databinding/FragmentStreamingModeQuickSettingBinding;
+
+    iget-object v0, v0, Ljp/co/sony/mc/camera/databinding/FragmentStreamingModeQuickSettingBinding;->videoQuality:Ljp/co/sony/mc/camera/databinding/FragmentStreamingModeVideoQualityBinding;
+
+    iget-object v0, v0, Ljp/co/sony/mc/camera/databinding/FragmentStreamingModeVideoQualityBinding;->videoQualitySelectText:Landroid/widget/TextView;
+
+    invoke-direct {p0}, Ljp/co/sony/mc/camera/view/viewbinder/StreamingModeQuickSettingViewBinder;->getContext()Landroid/content/Context;
+
+    move-result-object p0
+
+    .line 126
+    sget-object v1, Ljp/co/sony/mc/camera/setting/CameraSettings;->VIDEO_QUALITY:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
+
+    check-cast v1, Ljp/co/sony/mc/camera/setting/SettingKey$Key;
+
+    invoke-static {v1}, Ljp/co/sony/mc/camera/view/setting/settingitem/CameraSettingResource;->getTitleTextId(Ljp/co/sony/mc/camera/setting/SettingKey$Key;)I
+
+    move-result v1
+
+    .line 125
+    invoke-virtual {p0, v1}, Landroid/content/Context;->getString(I)Ljava/lang/String;
+
+    move-result-object p0
+
+    .line 127
+    new-instance v1, Ljava/lang/StringBuilder;
+
+    invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
+
+    invoke-virtual {v1, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object p0
+
+    invoke-virtual {p0, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object p0
+
+    invoke-virtual {p0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object p0
+
+    check-cast p0, Ljava/lang/CharSequence;
+
+    .line 125
+    invoke-virtual {v0, p0}, Landroid/widget/TextView;->setContentDescription(Ljava/lang/CharSequence;)V
+
+    .line 128
+    sget-object p0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
+
+    return-object p0
+.end method
+
+.method private static final onCreate$lambda$14(Ljp/co/sony/mc/camera/view/viewbinder/StreamingModeQuickSettingViewBinder;Landroid/view/View;)V
     .locals 0
 
     const-string/jumbo p1, "this$0"
@@ -725,7 +1012,38 @@
     return-void
 .end method
 
-.method private static final onCreate$lambda$7(Ljp/co/sony/mc/camera/view/viewbinder/StreamingModeQuickSettingViewBinder;Landroid/view/View;Landroid/view/MotionEvent;)Z
+.method private static final onCreate$lambda$15(Ljp/co/sony/mc/camera/view/viewbinder/StreamingModeQuickSettingViewBinder;Ljp/co/sony/mc/camera/configuration/parameters/VideoQuality;)Lkotlin/Unit;
+    .locals 1
+
+    const-string/jumbo v0, "this$0"
+
+    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+
+    const-string v0, "it"
+
+    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 143
+    invoke-direct {p0}, Ljp/co/sony/mc/camera/view/viewbinder/StreamingModeQuickSettingViewBinder;->getQuickSettingUiState()Ljp/co/sony/mc/camera/view/uistate/BasicModeQuickSettingUiState;
+
+    move-result-object v0
+
+    invoke-virtual {v0, p1}, Ljp/co/sony/mc/camera/view/uistate/BasicModeQuickSettingUiState;->setVideoQuality(Ljp/co/sony/mc/camera/configuration/parameters/VideoQuality;)V
+
+    .line 144
+    invoke-direct {p0}, Ljp/co/sony/mc/camera/view/viewbinder/StreamingModeQuickSettingViewBinder;->getQuickSettingUiState()Ljp/co/sony/mc/camera/view/uistate/BasicModeQuickSettingUiState;
+
+    move-result-object p0
+
+    invoke-virtual {p0}, Ljp/co/sony/mc/camera/view/uistate/BasicModeQuickSettingUiState;->hideVideoQualitySelector()V
+
+    .line 145
+    sget-object p0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
+
+    return-object p0
+.end method
+
+.method private static final onCreate$lambda$17(Ljp/co/sony/mc/camera/view/viewbinder/StreamingModeQuickSettingViewBinder;Landroid/view/View;Landroid/view/MotionEvent;)Z
     .locals 0
 
     const-string/jumbo p1, "this$0"
@@ -742,6 +1060,299 @@
     const/4 p0, 0x1
 
     return p0
+.end method
+
+.method private static final onCreate$lambda$18(Ljp/co/sony/mc/camera/view/viewbinder/StreamingModeQuickSettingViewBinder;Ljava/lang/Boolean;)Lkotlin/Unit;
+    .locals 2
+
+    const-string/jumbo v0, "this$0"
+
+    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 162
+    invoke-virtual {p1}, Ljava/lang/Boolean;->booleanValue()Z
+
+    move-result p1
+
+    if-eqz p1, :cond_0
+
+    .line 163
+    iget-object p1, p0, Ljp/co/sony/mc/camera/view/viewbinder/StreamingModeQuickSettingViewBinder;->binding:Ljp/co/sony/mc/camera/databinding/FragmentStreamingModeQuickSettingBinding;
+
+    iget-object p1, p1, Ljp/co/sony/mc/camera/databinding/FragmentStreamingModeQuickSettingBinding;->videoQuality:Ljp/co/sony/mc/camera/databinding/FragmentStreamingModeVideoQualityBinding;
+
+    iget-object p1, p1, Ljp/co/sony/mc/camera/databinding/FragmentStreamingModeVideoQualityBinding;->videoQualitySelectText:Landroid/widget/TextView;
+
+    .line 164
+    invoke-direct {p0}, Ljp/co/sony/mc/camera/view/viewbinder/StreamingModeQuickSettingViewBinder;->getContext()Landroid/content/Context;
+
+    move-result-object v0
+
+    const v1, 0x7f08041e
+
+    .line 163
+    invoke-static {v0, v1}, Landroidx/core/content/ContextCompat;->getDrawable(Landroid/content/Context;I)Landroid/graphics/drawable/Drawable;
+
+    move-result-object v0
+
+    invoke-virtual {p1, v0}, Landroid/widget/TextView;->setBackground(Landroid/graphics/drawable/Drawable;)V
+
+    .line 168
+    invoke-direct {p0}, Ljp/co/sony/mc/camera/view/viewbinder/StreamingModeQuickSettingViewBinder;->foucusVideoQualitySelectorFistItem()V
+
+    goto :goto_0
+
+    .line 170
+    :cond_0
+    invoke-direct {p0}, Ljp/co/sony/mc/camera/view/viewbinder/StreamingModeQuickSettingViewBinder;->getQuickSettingUiState()Ljp/co/sony/mc/camera/view/uistate/BasicModeQuickSettingUiState;
+
+    move-result-object p1
+
+    invoke-virtual {p1}, Ljp/co/sony/mc/camera/view/uistate/BasicModeQuickSettingUiState;->getStreamingQuickSettingVisible()Landroidx/lifecycle/LiveData;
+
+    move-result-object p1
+
+    invoke-virtual {p1}, Landroidx/lifecycle/LiveData;->getValue()Ljava/lang/Object;
+
+    move-result-object p1
+
+    const/4 v0, 0x1
+
+    invoke-static {v0}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
+
+    move-result-object v0
+
+    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->areEqual(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    move-result p1
+
+    if-eqz p1, :cond_1
+
+    .line 171
+    invoke-direct {p0}, Ljp/co/sony/mc/camera/view/viewbinder/StreamingModeQuickSettingViewBinder;->focusOnVideoQualitySelectText()V
+
+    .line 174
+    :cond_1
+    iget-object p1, p0, Ljp/co/sony/mc/camera/view/viewbinder/StreamingModeQuickSettingViewBinder;->binding:Ljp/co/sony/mc/camera/databinding/FragmentStreamingModeQuickSettingBinding;
+
+    iget-object p1, p1, Ljp/co/sony/mc/camera/databinding/FragmentStreamingModeQuickSettingBinding;->videoQuality:Ljp/co/sony/mc/camera/databinding/FragmentStreamingModeVideoQualityBinding;
+
+    iget-object p1, p1, Ljp/co/sony/mc/camera/databinding/FragmentStreamingModeVideoQualityBinding;->videoQualitySelectText:Landroid/widget/TextView;
+
+    .line 175
+    invoke-direct {p0}, Ljp/co/sony/mc/camera/view/viewbinder/StreamingModeQuickSettingViewBinder;->getContext()Landroid/content/Context;
+
+    move-result-object p0
+
+    const v0, 0x7f08041d
+
+    .line 174
+    invoke-static {p0, v0}, Landroidx/core/content/ContextCompat;->getDrawable(Landroid/content/Context;I)Landroid/graphics/drawable/Drawable;
+
+    move-result-object p0
+
+    invoke-virtual {p1, p0}, Landroid/widget/TextView;->setBackground(Landroid/graphics/drawable/Drawable;)V
+
+    .line 179
+    :goto_0
+    sget-object p0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
+
+    return-object p0
+.end method
+
+.method private static final onCreate$lambda$19(Ljp/co/sony/mc/camera/configuration/parameters/VideoQuality;Ljp/co/sony/mc/camera/configuration/parameters/VideoSize;)Lkotlin/Pair;
+    .locals 1
+
+    .line 201
+    new-instance v0, Lkotlin/Pair;
+
+    invoke-direct {v0, p0, p1}, Lkotlin/Pair;-><init>(Ljava/lang/Object;Ljava/lang/Object;)V
+
+    return-object v0
+.end method
+
+.method private static final onCreate$lambda$20(Ljp/co/sony/mc/camera/view/setting/streamingquicksetting/VideoQualityItemAdapter;Ljp/co/sony/mc/camera/view/viewbinder/StreamingModeQuickSettingViewBinder;Lkotlin/Pair;)Lkotlin/Unit;
+    .locals 1
+
+    const-string v0, "$videoQualityItemAdapter"
+
+    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+
+    const-string/jumbo v0, "this$0"
+
+    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 202
+    invoke-virtual {p2}, Lkotlin/Pair;->component1()Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, Ljp/co/sony/mc/camera/configuration/parameters/VideoQuality;
+
+    invoke-virtual {p2}, Lkotlin/Pair;->component2()Ljava/lang/Object;
+
+    move-result-object p2
+
+    check-cast p2, Ljp/co/sony/mc/camera/configuration/parameters/VideoSize;
+
+    .line 204
+    invoke-static {v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;)V
+
+    invoke-static {p2}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;)V
+
+    invoke-direct {p1, v0, p2}, Ljp/co/sony/mc/camera/view/viewbinder/StreamingModeQuickSettingViewBinder;->createVideoQualityItems(Ljp/co/sony/mc/camera/configuration/parameters/VideoQuality;Ljp/co/sony/mc/camera/configuration/parameters/VideoSize;)Ljava/util/List;
+
+    move-result-object p1
+
+    .line 203
+    invoke-virtual {p0, p1}, Ljp/co/sony/mc/camera/view/setting/streamingquicksetting/VideoQualityItemAdapter;->submitList(Ljava/util/List;)V
+
+    .line 206
+    sget-object p0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
+
+    return-object p0
+.end method
+
+.method private static final onCreate$lambda$3$lambda$2(Ljp/co/sony/mc/camera/view/viewbinder/StreamingModeQuickSettingViewBinder;Ljp/co/sony/mc/camera/view/setting/quicksetting/QuickSettingItemView;Ljp/co/sony/mc/camera/view/setting/quicksetting/QuickSettingItem;)Lkotlin/Unit;
+    .locals 1
+
+    const-string/jumbo v0, "this$0"
+
+    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+
+    const-string v0, "$view"
+
+    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 68
+    invoke-direct {p0, p1, p2}, Ljp/co/sony/mc/camera/view/viewbinder/StreamingModeQuickSettingViewBinder;->updateItemView(Ljp/co/sony/mc/camera/view/setting/quicksetting/QuickSettingItemView;Ljp/co/sony/mc/camera/view/setting/quicksetting/QuickSettingItem;)V
+
+    .line 69
+    sget-object p0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
+
+    return-object p0
+.end method
+
+.method private static final onCreate$lambda$6$lambda$5$lambda$4(Ljp/co/sony/mc/camera/view/viewbinder/StreamingModeQuickSettingViewBinder;Ljp/co/sony/mc/camera/view/setting/quicksetting/QuickSettingOptionItem;)Lkotlin/Unit;
+    .locals 1
+
+    const-string/jumbo v0, "this$0"
+
+    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+
+    const-string v0, "item"
+
+    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 75
+    invoke-direct {p0}, Ljp/co/sony/mc/camera/view/viewbinder/StreamingModeQuickSettingViewBinder;->getQuickSettingUiState()Ljp/co/sony/mc/camera/view/uistate/BasicModeQuickSettingUiState;
+
+    move-result-object p0
+
+    invoke-virtual {p0, p1}, Ljp/co/sony/mc/camera/view/uistate/BasicModeQuickSettingUiState;->selectItem(Ljp/co/sony/mc/camera/view/setting/quicksetting/QuickSettingOptionItem;)V
+
+    .line 76
+    sget-object p0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
+
+    return-object p0
+.end method
+
+.method private static final onCreate$lambda$7(Ljp/co/sony/mc/camera/view/viewbinder/StreamingModeQuickSettingViewBinder;Ljava/lang/String;)Lkotlin/Unit;
+    .locals 2
+
+    const-string/jumbo v0, "this$0"
+
+    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 81
+    iget-object v0, p0, Ljp/co/sony/mc/camera/view/viewbinder/StreamingModeQuickSettingViewBinder;->binding:Ljp/co/sony/mc/camera/databinding/FragmentStreamingModeQuickSettingBinding;
+
+    iget-object v0, v0, Ljp/co/sony/mc/camera/databinding/FragmentStreamingModeQuickSettingBinding;->rtmp:Ljp/co/sony/mc/camera/databinding/FragmentStreamingModeRtmpBinding;
+
+    iget-object v0, v0, Ljp/co/sony/mc/camera/databinding/FragmentStreamingModeRtmpBinding;->rtmpUrlText:Landroid/widget/TextView;
+
+    .line 82
+    invoke-static {p1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;)V
+
+    .line 83
+    invoke-direct {p0}, Ljp/co/sony/mc/camera/view/viewbinder/StreamingModeQuickSettingViewBinder;->isKeyguardLocked()Z
+
+    move-result v1
+
+    .line 81
+    invoke-direct {p0, p1, v1}, Ljp/co/sony/mc/camera/view/viewbinder/StreamingModeQuickSettingViewBinder;->setStreamingSettingText(Ljava/lang/String;Z)Ljava/lang/String;
+
+    move-result-object p0
+
+    check-cast p0, Ljava/lang/CharSequence;
+
+    invoke-virtual {v0, p0}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
+
+    .line 85
+    sget-object p0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
+
+    return-object p0
+.end method
+
+.method private static final onCreate$lambda$8(Ljp/co/sony/mc/camera/view/viewbinder/StreamingModeQuickSettingViewBinder;Ljava/lang/String;)Lkotlin/Unit;
+    .locals 1
+
+    const-string/jumbo v0, "this$0"
+
+    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 88
+    iget-object p0, p0, Ljp/co/sony/mc/camera/view/viewbinder/StreamingModeQuickSettingViewBinder;->binding:Ljp/co/sony/mc/camera/databinding/FragmentStreamingModeQuickSettingBinding;
+
+    iget-object p0, p0, Ljp/co/sony/mc/camera/databinding/FragmentStreamingModeQuickSettingBinding;->rtmp:Ljp/co/sony/mc/camera/databinding/FragmentStreamingModeRtmpBinding;
+
+    iget-object p0, p0, Ljp/co/sony/mc/camera/databinding/FragmentStreamingModeRtmpBinding;->rtmpKeyText:Landroid/widget/TextView;
+
+    check-cast p1, Ljava/lang/CharSequence;
+
+    invoke-virtual {p0, p1}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
+
+    .line 89
+    sget-object p0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
+
+    return-object p0
+.end method
+
+.method private static final onCreate$lambda$9(Ljp/co/sony/mc/camera/view/viewbinder/StreamingModeQuickSettingViewBinder;Ljava/lang/String;)Lkotlin/Unit;
+    .locals 2
+
+    const-string/jumbo v0, "this$0"
+
+    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 92
+    iget-object v0, p0, Ljp/co/sony/mc/camera/view/viewbinder/StreamingModeQuickSettingViewBinder;->binding:Ljp/co/sony/mc/camera/databinding/FragmentStreamingModeQuickSettingBinding;
+
+    iget-object v0, v0, Ljp/co/sony/mc/camera/databinding/FragmentStreamingModeQuickSettingBinding;->youtube:Ljp/co/sony/mc/camera/databinding/FragmentStreamingModeYoutubeBinding;
+
+    iget-object v0, v0, Ljp/co/sony/mc/camera/databinding/FragmentStreamingModeYoutubeBinding;->youtubeAccountText:Landroid/widget/TextView;
+
+    .line 93
+    invoke-static {p1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;)V
+
+    .line 94
+    invoke-direct {p0}, Ljp/co/sony/mc/camera/view/viewbinder/StreamingModeQuickSettingViewBinder;->isKeyguardLocked()Z
+
+    move-result v1
+
+    .line 92
+    invoke-direct {p0, p1, v1}, Ljp/co/sony/mc/camera/view/viewbinder/StreamingModeQuickSettingViewBinder;->setStreamingSettingText(Ljava/lang/String;Z)Ljava/lang/String;
+
+    move-result-object p0
+
+    check-cast p0, Ljava/lang/CharSequence;
+
+    invoke-virtual {v0, p0}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
+
+    .line 96
+    sget-object p0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
+
+    return-object p0
 .end method
 
 .method private final rotateContainer(Ljp/co/sony/mc/camera/view/orientation/LayoutOrientation;)V
@@ -796,7 +1407,6 @@
 
     goto :goto_0
 
-    .line 232
     :cond_0
     new-instance p0, Lkotlin/NoWhenBranchMatchedException;
 
@@ -939,6 +1549,8 @@
 
     move-result v0
 
+    const-string v1, "component2(...)"
+
     if-eqz v0, :cond_0
 
     invoke-interface {p1}, Ljava/util/Iterator;->next()Ljava/lang/Object;
@@ -950,26 +1562,26 @@
     .line 66
     invoke-interface {v0}, Ljava/util/Map$Entry;->getKey()Ljava/lang/Object;
 
-    move-result-object v1
+    move-result-object v2
 
-    check-cast v1, Landroidx/lifecycle/LiveData;
+    check-cast v2, Landroidx/lifecycle/LiveData;
 
     invoke-interface {v0}, Ljava/util/Map$Entry;->getValue()Ljava/lang/Object;
 
     move-result-object v0
+
+    invoke-static {v0, v1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
 
     check-cast v0, Ljp/co/sony/mc/camera/view/setting/quicksetting/QuickSettingItemView;
 
     .line 67
     invoke-direct {p0}, Ljp/co/sony/mc/camera/view/viewbinder/StreamingModeQuickSettingViewBinder;->getLifecycleOwner()Landroidx/lifecycle/LifecycleOwner;
 
-    move-result-object v2
+    move-result-object v1
 
-    new-instance v3, Ljp/co/sony/mc/camera/view/viewbinder/StreamingModeQuickSettingViewBinder$onCreate$1$1;
+    new-instance v3, Ljp/co/sony/mc/camera/view/viewbinder/StreamingModeQuickSettingViewBinder$$ExternalSyntheticLambda0;
 
-    invoke-direct {v3, p0, v0}, Ljp/co/sony/mc/camera/view/viewbinder/StreamingModeQuickSettingViewBinder$onCreate$1$1;-><init>(Ljp/co/sony/mc/camera/view/viewbinder/StreamingModeQuickSettingViewBinder;Ljp/co/sony/mc/camera/view/setting/quicksetting/QuickSettingItemView;)V
-
-    check-cast v3, Lkotlin/jvm/functions/Function1;
+    invoke-direct {v3, p0, v0}, Ljp/co/sony/mc/camera/view/viewbinder/StreamingModeQuickSettingViewBinder$$ExternalSyntheticLambda0;-><init>(Ljp/co/sony/mc/camera/view/viewbinder/StreamingModeQuickSettingViewBinder;Ljp/co/sony/mc/camera/view/setting/quicksetting/QuickSettingItemView;)V
 
     new-instance v0, Ljp/co/sony/mc/camera/view/viewbinder/StreamingModeQuickSettingViewBinder$sam$androidx_lifecycle_Observer$0;
 
@@ -977,7 +1589,7 @@
 
     check-cast v0, Landroidx/lifecycle/Observer;
 
-    invoke-virtual {v1, v2, v0}, Landroidx/lifecycle/LiveData;->observe(Landroidx/lifecycle/LifecycleOwner;Landroidx/lifecycle/Observer;)V
+    invoke-virtual {v2, v1, v0}, Landroidx/lifecycle/LiveData;->observe(Landroidx/lifecycle/LifecycleOwner;Landroidx/lifecycle/Observer;)V
 
     goto :goto_0
 
@@ -1012,16 +1624,16 @@
 
     move-result-object v0
 
+    invoke-static {v0, v1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
+
     check-cast v0, Ljp/co/sony/mc/camera/view/setting/quicksetting/QuickSettingItemView;
 
     .line 74
-    new-instance v1, Ljp/co/sony/mc/camera/view/viewbinder/StreamingModeQuickSettingViewBinder$onCreate$2$1$1;
+    new-instance v2, Ljp/co/sony/mc/camera/view/viewbinder/StreamingModeQuickSettingViewBinder$$ExternalSyntheticLambda13;
 
-    invoke-direct {v1, p0}, Ljp/co/sony/mc/camera/view/viewbinder/StreamingModeQuickSettingViewBinder$onCreate$2$1$1;-><init>(Ljp/co/sony/mc/camera/view/viewbinder/StreamingModeQuickSettingViewBinder;)V
+    invoke-direct {v2, p0}, Ljp/co/sony/mc/camera/view/viewbinder/StreamingModeQuickSettingViewBinder$$ExternalSyntheticLambda13;-><init>(Ljp/co/sony/mc/camera/view/viewbinder/StreamingModeQuickSettingViewBinder;)V
 
-    check-cast v1, Lkotlin/jvm/functions/Function1;
-
-    invoke-virtual {v0, v1}, Ljp/co/sony/mc/camera/view/setting/quicksetting/QuickSettingItemView;->setOnOptionItemClick(Lkotlin/jvm/functions/Function1;)V
+    invoke-virtual {v0, v2}, Ljp/co/sony/mc/camera/view/setting/quicksetting/QuickSettingItemView;->setOnOptionItemClick(Lkotlin/jvm/functions/Function1;)V
 
     goto :goto_1
 
@@ -1039,11 +1651,9 @@
 
     move-result-object v0
 
-    new-instance v1, Ljp/co/sony/mc/camera/view/viewbinder/StreamingModeQuickSettingViewBinder$onCreate$3;
+    new-instance v1, Ljp/co/sony/mc/camera/view/viewbinder/StreamingModeQuickSettingViewBinder$$ExternalSyntheticLambda14;
 
-    invoke-direct {v1, p0}, Ljp/co/sony/mc/camera/view/viewbinder/StreamingModeQuickSettingViewBinder$onCreate$3;-><init>(Ljp/co/sony/mc/camera/view/viewbinder/StreamingModeQuickSettingViewBinder;)V
-
-    check-cast v1, Lkotlin/jvm/functions/Function1;
+    invoke-direct {v1, p0}, Ljp/co/sony/mc/camera/view/viewbinder/StreamingModeQuickSettingViewBinder$$ExternalSyntheticLambda14;-><init>(Ljp/co/sony/mc/camera/view/viewbinder/StreamingModeQuickSettingViewBinder;)V
 
     new-instance v2, Ljp/co/sony/mc/camera/view/viewbinder/StreamingModeQuickSettingViewBinder$sam$androidx_lifecycle_Observer$0;
 
@@ -1066,11 +1676,9 @@
 
     move-result-object v0
 
-    new-instance v1, Ljp/co/sony/mc/camera/view/viewbinder/StreamingModeQuickSettingViewBinder$onCreate$4;
+    new-instance v1, Ljp/co/sony/mc/camera/view/viewbinder/StreamingModeQuickSettingViewBinder$$ExternalSyntheticLambda15;
 
-    invoke-direct {v1, p0}, Ljp/co/sony/mc/camera/view/viewbinder/StreamingModeQuickSettingViewBinder$onCreate$4;-><init>(Ljp/co/sony/mc/camera/view/viewbinder/StreamingModeQuickSettingViewBinder;)V
-
-    check-cast v1, Lkotlin/jvm/functions/Function1;
+    invoke-direct {v1, p0}, Ljp/co/sony/mc/camera/view/viewbinder/StreamingModeQuickSettingViewBinder$$ExternalSyntheticLambda15;-><init>(Ljp/co/sony/mc/camera/view/viewbinder/StreamingModeQuickSettingViewBinder;)V
 
     new-instance v2, Ljp/co/sony/mc/camera/view/viewbinder/StreamingModeQuickSettingViewBinder$sam$androidx_lifecycle_Observer$0;
 
@@ -1093,11 +1701,9 @@
 
     move-result-object v0
 
-    new-instance v1, Ljp/co/sony/mc/camera/view/viewbinder/StreamingModeQuickSettingViewBinder$onCreate$5;
+    new-instance v1, Ljp/co/sony/mc/camera/view/viewbinder/StreamingModeQuickSettingViewBinder$$ExternalSyntheticLambda16;
 
-    invoke-direct {v1, p0}, Ljp/co/sony/mc/camera/view/viewbinder/StreamingModeQuickSettingViewBinder$onCreate$5;-><init>(Ljp/co/sony/mc/camera/view/viewbinder/StreamingModeQuickSettingViewBinder;)V
-
-    check-cast v1, Lkotlin/jvm/functions/Function1;
+    invoke-direct {v1, p0}, Ljp/co/sony/mc/camera/view/viewbinder/StreamingModeQuickSettingViewBinder$$ExternalSyntheticLambda16;-><init>(Ljp/co/sony/mc/camera/view/viewbinder/StreamingModeQuickSettingViewBinder;)V
 
     new-instance v2, Ljp/co/sony/mc/camera/view/viewbinder/StreamingModeQuickSettingViewBinder$sam$androidx_lifecycle_Observer$0;
 
@@ -1120,11 +1726,9 @@
 
     move-result-object v0
 
-    new-instance v1, Ljp/co/sony/mc/camera/view/viewbinder/StreamingModeQuickSettingViewBinder$onCreate$6;
+    new-instance v1, Ljp/co/sony/mc/camera/view/viewbinder/StreamingModeQuickSettingViewBinder$$ExternalSyntheticLambda1;
 
-    invoke-direct {v1, p0}, Ljp/co/sony/mc/camera/view/viewbinder/StreamingModeQuickSettingViewBinder$onCreate$6;-><init>(Ljp/co/sony/mc/camera/view/viewbinder/StreamingModeQuickSettingViewBinder;)V
-
-    check-cast v1, Lkotlin/jvm/functions/Function1;
+    invoke-direct {v1, p0}, Ljp/co/sony/mc/camera/view/viewbinder/StreamingModeQuickSettingViewBinder$$ExternalSyntheticLambda1;-><init>(Ljp/co/sony/mc/camera/view/viewbinder/StreamingModeQuickSettingViewBinder;)V
 
     new-instance v2, Ljp/co/sony/mc/camera/view/viewbinder/StreamingModeQuickSettingViewBinder$sam$androidx_lifecycle_Observer$0;
 
@@ -1147,11 +1751,9 @@
 
     move-result-object v0
 
-    new-instance v1, Ljp/co/sony/mc/camera/view/viewbinder/StreamingModeQuickSettingViewBinder$onCreate$7;
+    new-instance v1, Ljp/co/sony/mc/camera/view/viewbinder/StreamingModeQuickSettingViewBinder$$ExternalSyntheticLambda2;
 
-    invoke-direct {v1, p0}, Ljp/co/sony/mc/camera/view/viewbinder/StreamingModeQuickSettingViewBinder$onCreate$7;-><init>(Ljp/co/sony/mc/camera/view/viewbinder/StreamingModeQuickSettingViewBinder;)V
-
-    check-cast v1, Lkotlin/jvm/functions/Function1;
+    invoke-direct {v1, p0}, Ljp/co/sony/mc/camera/view/viewbinder/StreamingModeQuickSettingViewBinder$$ExternalSyntheticLambda2;-><init>(Ljp/co/sony/mc/camera/view/viewbinder/StreamingModeQuickSettingViewBinder;)V
 
     new-instance v2, Ljp/co/sony/mc/camera/view/viewbinder/StreamingModeQuickSettingViewBinder$sam$androidx_lifecycle_Observer$0;
 
@@ -1174,11 +1776,9 @@
 
     move-result-object v0
 
-    new-instance v1, Ljp/co/sony/mc/camera/view/viewbinder/StreamingModeQuickSettingViewBinder$onCreate$8;
+    new-instance v1, Ljp/co/sony/mc/camera/view/viewbinder/StreamingModeQuickSettingViewBinder$$ExternalSyntheticLambda3;
 
-    invoke-direct {v1, p0}, Ljp/co/sony/mc/camera/view/viewbinder/StreamingModeQuickSettingViewBinder$onCreate$8;-><init>(Ljp/co/sony/mc/camera/view/viewbinder/StreamingModeQuickSettingViewBinder;)V
-
-    check-cast v1, Lkotlin/jvm/functions/Function1;
+    invoke-direct {v1, p0}, Ljp/co/sony/mc/camera/view/viewbinder/StreamingModeQuickSettingViewBinder$$ExternalSyntheticLambda3;-><init>(Ljp/co/sony/mc/camera/view/viewbinder/StreamingModeQuickSettingViewBinder;)V
 
     new-instance v2, Ljp/co/sony/mc/camera/view/viewbinder/StreamingModeQuickSettingViewBinder$sam$androidx_lifecycle_Observer$0;
 
@@ -1201,11 +1801,9 @@
 
     move-result-object v0
 
-    new-instance v1, Ljp/co/sony/mc/camera/view/viewbinder/StreamingModeQuickSettingViewBinder$onCreate$9;
+    new-instance v1, Ljp/co/sony/mc/camera/view/viewbinder/StreamingModeQuickSettingViewBinder$$ExternalSyntheticLambda4;
 
-    invoke-direct {v1, p0}, Ljp/co/sony/mc/camera/view/viewbinder/StreamingModeQuickSettingViewBinder$onCreate$9;-><init>(Ljp/co/sony/mc/camera/view/viewbinder/StreamingModeQuickSettingViewBinder;)V
-
-    check-cast v1, Lkotlin/jvm/functions/Function1;
+    invoke-direct {v1, p0}, Ljp/co/sony/mc/camera/view/viewbinder/StreamingModeQuickSettingViewBinder$$ExternalSyntheticLambda4;-><init>(Ljp/co/sony/mc/camera/view/viewbinder/StreamingModeQuickSettingViewBinder;)V
 
     new-instance v2, Ljp/co/sony/mc/camera/view/viewbinder/StreamingModeQuickSettingViewBinder$sam$androidx_lifecycle_Observer$0;
 
@@ -1222,9 +1820,9 @@
 
     iget-object p1, p1, Ljp/co/sony/mc/camera/databinding/FragmentStreamingModeVideoQualityBinding;->videoQualitySelectText:Landroid/widget/TextView;
 
-    new-instance v0, Ljp/co/sony/mc/camera/view/viewbinder/StreamingModeQuickSettingViewBinder$$ExternalSyntheticLambda0;
+    new-instance v0, Ljp/co/sony/mc/camera/view/viewbinder/StreamingModeQuickSettingViewBinder$$ExternalSyntheticLambda5;
 
-    invoke-direct {v0, p0}, Ljp/co/sony/mc/camera/view/viewbinder/StreamingModeQuickSettingViewBinder$$ExternalSyntheticLambda0;-><init>(Ljp/co/sony/mc/camera/view/viewbinder/StreamingModeQuickSettingViewBinder;)V
+    invoke-direct {v0, p0}, Ljp/co/sony/mc/camera/view/viewbinder/StreamingModeQuickSettingViewBinder$$ExternalSyntheticLambda5;-><init>(Ljp/co/sony/mc/camera/view/viewbinder/StreamingModeQuickSettingViewBinder;)V
 
     invoke-virtual {p1, v0}, Landroid/widget/TextView;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
@@ -1238,7 +1836,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f110432
+    const v1, 0x7f110467
 
     invoke-virtual {v0, v1}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -1249,7 +1847,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f1100ec
+    const v2, 0x7f1100ed
 
     invoke-virtual {v1, v2}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -1296,11 +1894,9 @@
     .line 141
     new-instance p1, Ljp/co/sony/mc/camera/view/setting/streamingquicksetting/VideoQualityItemAdapter;
 
-    new-instance v1, Ljp/co/sony/mc/camera/view/viewbinder/StreamingModeQuickSettingViewBinder$onCreate$videoQualityItemAdapter$1;
+    new-instance v1, Ljp/co/sony/mc/camera/view/viewbinder/StreamingModeQuickSettingViewBinder$$ExternalSyntheticLambda8;
 
-    invoke-direct {v1, p0}, Ljp/co/sony/mc/camera/view/viewbinder/StreamingModeQuickSettingViewBinder$onCreate$videoQualityItemAdapter$1;-><init>(Ljp/co/sony/mc/camera/view/viewbinder/StreamingModeQuickSettingViewBinder;)V
-
-    check-cast v1, Lkotlin/jvm/functions/Function1;
+    invoke-direct {v1, p0}, Ljp/co/sony/mc/camera/view/viewbinder/StreamingModeQuickSettingViewBinder$$ExternalSyntheticLambda8;-><init>(Ljp/co/sony/mc/camera/view/viewbinder/StreamingModeQuickSettingViewBinder;)V
 
     invoke-direct {p1, v1}, Ljp/co/sony/mc/camera/view/setting/streamingquicksetting/VideoQualityItemAdapter;-><init>(Lkotlin/jvm/functions/Function1;)V
 
@@ -1348,9 +1944,9 @@
 
     iget-object v0, v0, Ljp/co/sony/mc/camera/databinding/FragmentStreamingModeQuickSettingBinding;->videoQualitySelectorContainer:Landroid/view/View;
 
-    new-instance v1, Ljp/co/sony/mc/camera/view/viewbinder/StreamingModeQuickSettingViewBinder$$ExternalSyntheticLambda1;
+    new-instance v1, Ljp/co/sony/mc/camera/view/viewbinder/StreamingModeQuickSettingViewBinder$$ExternalSyntheticLambda9;
 
-    invoke-direct {v1, p0}, Ljp/co/sony/mc/camera/view/viewbinder/StreamingModeQuickSettingViewBinder$$ExternalSyntheticLambda1;-><init>(Ljp/co/sony/mc/camera/view/viewbinder/StreamingModeQuickSettingViewBinder;)V
+    invoke-direct {v1, p0}, Ljp/co/sony/mc/camera/view/viewbinder/StreamingModeQuickSettingViewBinder$$ExternalSyntheticLambda9;-><init>(Ljp/co/sony/mc/camera/view/viewbinder/StreamingModeQuickSettingViewBinder;)V
 
     invoke-virtual {v0, v1}, Landroid/view/View;->setOnTouchListener(Landroid/view/View$OnTouchListener;)V
 
@@ -1367,11 +1963,9 @@
 
     move-result-object v1
 
-    new-instance v2, Ljp/co/sony/mc/camera/view/viewbinder/StreamingModeQuickSettingViewBinder$onCreate$13;
+    new-instance v2, Ljp/co/sony/mc/camera/view/viewbinder/StreamingModeQuickSettingViewBinder$$ExternalSyntheticLambda10;
 
-    invoke-direct {v2, p0}, Ljp/co/sony/mc/camera/view/viewbinder/StreamingModeQuickSettingViewBinder$onCreate$13;-><init>(Ljp/co/sony/mc/camera/view/viewbinder/StreamingModeQuickSettingViewBinder;)V
-
-    check-cast v2, Lkotlin/jvm/functions/Function1;
+    invoke-direct {v2, p0}, Ljp/co/sony/mc/camera/view/viewbinder/StreamingModeQuickSettingViewBinder$$ExternalSyntheticLambda10;-><init>(Ljp/co/sony/mc/camera/view/viewbinder/StreamingModeQuickSettingViewBinder;)V
 
     new-instance v3, Ljp/co/sony/mc/camera/view/viewbinder/StreamingModeQuickSettingViewBinder$sam$androidx_lifecycle_Observer$0;
 
@@ -1512,11 +2106,11 @@
 
     move-result-object v2
 
+    new-instance v3, Ljp/co/sony/mc/camera/view/viewbinder/StreamingModeQuickSettingViewBinder$$ExternalSyntheticLambda11;
+
+    invoke-direct {v3}, Ljp/co/sony/mc/camera/view/viewbinder/StreamingModeQuickSettingViewBinder$$ExternalSyntheticLambda11;-><init>()V
+
     .line 197
-    sget-object v3, Ljp/co/sony/mc/camera/view/viewbinder/StreamingModeQuickSettingViewBinder$onCreate$14;->INSTANCE:Ljp/co/sony/mc/camera/view/viewbinder/StreamingModeQuickSettingViewBinder$onCreate$14;
-
-    check-cast v3, Lkotlin/jvm/functions/Function2;
-
     invoke-virtual {v0, v1, v2, v3}, Ljp/co/sony/mc/camera/view/viewmodel/LiveDataMediators;->notNulls(Landroidx/lifecycle/LiveData;Landroidx/lifecycle/LiveData;Lkotlin/jvm/functions/Function2;)Landroidx/lifecycle/LiveData;
 
     move-result-object v0
@@ -1526,11 +2120,9 @@
 
     move-result-object v1
 
-    new-instance v2, Ljp/co/sony/mc/camera/view/viewbinder/StreamingModeQuickSettingViewBinder$onCreate$15;
+    new-instance v2, Ljp/co/sony/mc/camera/view/viewbinder/StreamingModeQuickSettingViewBinder$$ExternalSyntheticLambda12;
 
-    invoke-direct {v2, p1, p0}, Ljp/co/sony/mc/camera/view/viewbinder/StreamingModeQuickSettingViewBinder$onCreate$15;-><init>(Ljp/co/sony/mc/camera/view/setting/streamingquicksetting/VideoQualityItemAdapter;Ljp/co/sony/mc/camera/view/viewbinder/StreamingModeQuickSettingViewBinder;)V
-
-    check-cast v2, Lkotlin/jvm/functions/Function1;
+    invoke-direct {v2, p1, p0}, Ljp/co/sony/mc/camera/view/viewbinder/StreamingModeQuickSettingViewBinder$$ExternalSyntheticLambda12;-><init>(Ljp/co/sony/mc/camera/view/setting/streamingquicksetting/VideoQualityItemAdapter;Ljp/co/sony/mc/camera/view/viewbinder/StreamingModeQuickSettingViewBinder;)V
 
     new-instance p0, Ljp/co/sony/mc/camera/view/viewbinder/StreamingModeQuickSettingViewBinder$sam$androidx_lifecycle_Observer$0;
 

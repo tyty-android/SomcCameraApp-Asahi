@@ -32,7 +32,7 @@
 
 .annotation runtime Lkotlin/Metadata;
     d1 = {
-        "\u0000\n\n\u0000\n\u0002\u0010\u0002\n\u0002\u0018\u0002\u0010\u0000\u001a\u00020\u0001*\u00020\u0002H\u008a@"
+        "\u0000\n\n\u0000\n\u0002\u0010\u0002\n\u0002\u0018\u0002\u0010\u0000\u001a\u00020\u0001*\u00020\u0002H\n"
     }
     d2 = {
         "<anonymous>",
@@ -41,8 +41,8 @@
     }
     k = 0x3
     mv = {
-        0x1,
-        0x9,
+        0x2,
+        0x0,
         0x0
     }
     xi = 0x30
@@ -207,11 +207,15 @@
 
     if-eqz p0, :cond_0
 
-    const-string p0, "Usb Disconnected!"
+    const/4 p0, 0x1
 
-    filled-new-array {p0}, [Ljava/lang/String;
+    new-array p0, p0, [Ljava/lang/String;
 
-    move-result-object p0
+    const/4 p1, 0x0
+
+    const-string v0, "Usb Disconnected!"
+
+    aput-object v0, p0, p1
 
     invoke-static {p0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 

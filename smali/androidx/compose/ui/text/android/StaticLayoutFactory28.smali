@@ -50,22 +50,18 @@
 .method private constructor <init>()V
     .locals 0
 
-    .line 233
+    .line 226
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
 .end method
 
 .method public static final setUseLineSpacingFromFallbacks(Landroid/text/StaticLayout$Builder;Z)V
-    .locals 1
+    .locals 0
     .annotation runtime Lkotlin/jvm/JvmStatic;
     .end annotation
 
-    const-string v0, "builder"
-
-    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 238
+    .line 231
     invoke-virtual {p0, p1}, Landroid/text/StaticLayout$Builder;->setUseLineSpacingFromFallbacks(Z)Landroid/text/StaticLayout$Builder;
 
     return-void

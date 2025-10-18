@@ -79,7 +79,7 @@
 .method public bridge synthetic invoke(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
 
-    .line 42
+    .line 44
     check-cast p1, Landroidx/compose/ui/node/ObserverNodeOwnerScope;
 
     invoke-virtual {p0, p1}, Landroidx/compose/ui/node/ObserverNodeOwnerScope$Companion$OnObserveReadsChanged$1;->invoke(Landroidx/compose/ui/node/ObserverNodeOwnerScope;)V
@@ -92,11 +92,7 @@
 .method public final invoke(Landroidx/compose/ui/node/ObserverNodeOwnerScope;)V
     .locals 0
 
-    const-string p0, "it"
-
-    invoke-static {p1, p0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 43
+    .line 45
     invoke-virtual {p1}, Landroidx/compose/ui/node/ObserverNodeOwnerScope;->isValidOwnerScope()Z
 
     move-result p0

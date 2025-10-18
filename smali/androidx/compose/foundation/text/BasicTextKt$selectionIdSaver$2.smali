@@ -79,7 +79,7 @@
 .method public final invoke(J)Ljava/lang/Long;
     .locals 0
 
-    .line 340
+    .line 351
     invoke-static {p1, p2}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
 
     move-result-object p0
@@ -90,7 +90,7 @@
 .method public bridge synthetic invoke(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 2
 
-    .line 338
+    .line 349
     check-cast p1, Ljava/lang/Number;
 
     invoke-virtual {p1}, Ljava/lang/Number;->longValue()J

@@ -53,6 +53,10 @@
 .end annotation
 
 
+# static fields
+.field public static final $stable:I = 0x8
+
+
 # instance fields
 .field private forceNextSnapshot:Z
 
@@ -68,6 +72,12 @@
 
 
 # direct methods
+.method static constructor <clinit>()V
+    .locals 0
+
+    return-void
+.end method
+
 .method public constructor <init>()V
     .locals 3
 
@@ -220,10 +230,6 @@
 
 .method public final makeSnapshot(Landroidx/compose/ui/text/input/TextFieldValue;)V
     .locals 3
-
-    const-string/jumbo v0, "value"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
     const/4 v0, 0x0
 
@@ -406,10 +412,6 @@
 
 .method public final snapshotIfNeeded(Landroidx/compose/ui/text/input/TextFieldValue;J)V
     .locals 4
-
-    const-string/jumbo v0, "value"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 57
     iget-boolean v0, p0, Landroidx/compose/foundation/text/UndoManager;->forceNextSnapshot:Z

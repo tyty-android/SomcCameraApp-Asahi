@@ -4,20 +4,4 @@
         <item quantity="other">%d ਨਵੀਆਂ ਸੂਚਨਾਵਾਂ</item>
         <item quantity="one">%d ਨਵੀਂ ਸੂਚਨਾ</item>
     </plurals>
-    <plurals name="mv_minute_remaining_txt">
-        <item quantity="other">%1$d ਮਿੰ. ਬਾਕੀ ਬਚੇ</item>
-        <item quantity="one">1 ਮਿੰ. ਬਾਕੀ ਬਚਿਆ</item>
-    </plurals>
-    <plurals name="mv_minute_txt">
-        <item quantity="other">%1$d ਮਿੰਟ</item>
-        <item quantity="one">1 ਮਿੰਟ</item>
-    </plurals>
-    <plurals name="mv_second_remaining_txt">
-        <item quantity="other">%1$d ਸਕਿੰ. ਬਾਕੀ ਬਚੇ</item>
-        <item quantity="one">1 ਸਕਿੰ. ਬਾਕੀ ਬਚਿਆ</item>
-    </plurals>
-    <plurals name="mv_second_txt">
-        <item quantity="other">%1$d ਸਕਿੰਟ</item>
-        <item quantity="one">1 ਸਕਿੰਟ</item>
-    </plurals>
 </resources>

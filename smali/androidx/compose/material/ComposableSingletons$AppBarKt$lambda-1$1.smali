@@ -81,7 +81,7 @@
 .method public bridge synthetic invoke(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
 
-    .line 81
+    .line 90
     check-cast p1, Landroidx/compose/foundation/layout/RowScope;
 
     check-cast p2, Landroidx/compose/runtime/Composer;
@@ -102,10 +102,6 @@
 .method public final invoke(Landroidx/compose/foundation/layout/RowScope;Landroidx/compose/runtime/Composer;I)V
     .locals 0
 
-    const-string p0, "$this$null"
-
-    invoke-static {p1, p0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
     const-string p0, "C:AppBar.kt#jmzs0o"
 
     invoke-static {p2, p0}, Landroidx/compose/runtime/ComposerKt;->sourceInformation(Landroidx/compose/runtime/Composer;Ljava/lang/String;)V
@@ -116,7 +112,7 @@
 
     if-ne p0, p1, :cond_1
 
-    .line 81
+    .line 90
     invoke-interface {p2}, Landroidx/compose/runtime/Composer;->getSkipping()Z
 
     move-result p0
@@ -140,9 +136,9 @@
 
     const/4 p0, -0x1
 
-    const-string p1, "androidx.compose.material.ComposableSingletons$AppBarKt.lambda-1.<anonymous> (AppBar.kt:80)"
+    const-string p1, "androidx.compose.material.ComposableSingletons$AppBarKt.lambda-1.<anonymous> (AppBar.kt:89)"
 
-    const p2, -0x2e02d752
+    const p2, -0x25efd804
 
     invoke-static {p2, p3, p0, p1}, Landroidx/compose/runtime/ComposerKt;->traceEventStart(IIILjava/lang/String;)V
 

@@ -408,12 +408,16 @@
 
     if-eqz v7, :cond_2
 
+    const/4 v9, 0x1
+
     .line 79
-    const-string v9, "binary"
+    new-array v9, v9, [Ljava/lang/String;
 
-    filled-new-array {v9}, [Ljava/lang/String;
+    const/4 v10, 0x0
 
-    move-result-object v9
+    const-string v11, "binary"
+
+    aput-object v11, v9, v10
 
     invoke-static {v9}, Ljava/util/Arrays;->asList([Ljava/lang/Object;)Ljava/util/List;
 

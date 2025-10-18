@@ -24,23 +24,13 @@
 
 .field public static final ux_recommended_resolution_array_crocus:I = 0x7f030004
 
-.field public static final ux_recommended_resolution_array_crocus_yodo:I = 0x7f030005
+.field public static final ux_recommended_resolution_array_maunakea:I = 0x7f030005
 
-.field public static final ux_recommended_resolution_array_eiger:I = 0x7f030006
+.field public static final ux_recommended_video_size_array:I = 0x7f030006
 
-.field public static final ux_recommended_resolution_array_maunakea:I = 0x7f030007
+.field public static final zoom_slider_label_zoom_ratio_pdx_245:I = 0x7f030007
 
-.field public static final ux_recommended_video_size_array:I = 0x7f030008
-
-.field public static final zoom_slider_label_zoom_ratio_pdx_223:I = 0x7f030009
-
-.field public static final zoom_slider_label_zoom_ratio_pdx_224:I = 0x7f03000a
-
-.field public static final zoom_slider_label_zoom_ratio_pdx_234:I = 0x7f03000b
-
-.field public static final zoom_slider_label_zoom_ratio_pdx_237:I = 0x7f03000c
-
-.field public static final zoom_slider_label_zoom_ratio_pdx_245:I = 0x7f03000d
+.field public static final zoom_slider_label_zoom_ratio_pdx_256:I = 0x7f030008
 
 
 # direct methods

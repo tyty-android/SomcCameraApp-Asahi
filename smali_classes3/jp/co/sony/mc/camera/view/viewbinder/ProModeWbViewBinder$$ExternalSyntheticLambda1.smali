@@ -3,34 +3,38 @@
 .source "D8$$SyntheticClass"
 
 # interfaces
-.implements Landroid/view/View$OnClickListener;
+.implements Lkotlin/jvm/functions/Function1;
 
 
 # instance fields
-.field public final synthetic f$0:Ljp/co/sony/mc/camera/view/widget/DialPicker;
+.field public final synthetic f$0:Ljp/co/sony/mc/camera/view/viewbinder/ProModeWbViewBinder;
 
 
 # direct methods
-.method public synthetic constructor <init>(Ljp/co/sony/mc/camera/view/widget/DialPicker;)V
+.method public synthetic constructor <init>(Ljp/co/sony/mc/camera/view/viewbinder/ProModeWbViewBinder;)V
     .locals 0
 
     .line 0
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    iput-object p1, p0, Ljp/co/sony/mc/camera/view/viewbinder/ProModeWbViewBinder$$ExternalSyntheticLambda1;->f$0:Ljp/co/sony/mc/camera/view/widget/DialPicker;
+    iput-object p1, p0, Ljp/co/sony/mc/camera/view/viewbinder/ProModeWbViewBinder$$ExternalSyntheticLambda1;->f$0:Ljp/co/sony/mc/camera/view/viewbinder/ProModeWbViewBinder;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final onClick(Landroid/view/View;)V
+.method public final invoke(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
 
     .line 0
-    iget-object p0, p0, Ljp/co/sony/mc/camera/view/viewbinder/ProModeWbViewBinder$$ExternalSyntheticLambda1;->f$0:Ljp/co/sony/mc/camera/view/widget/DialPicker;
+    iget-object p0, p0, Ljp/co/sony/mc/camera/view/viewbinder/ProModeWbViewBinder$$ExternalSyntheticLambda1;->f$0:Ljp/co/sony/mc/camera/view/viewbinder/ProModeWbViewBinder;
 
-    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/view/viewbinder/ProModeWbViewBinder;->$r8$lambda$388VEVWxJ1pGK7wxKnVIIvrBBIg(Ljp/co/sony/mc/camera/view/widget/DialPicker;Landroid/view/View;)V
+    check-cast p1, Lkotlin/Pair;
 
-    return-void
+    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/view/viewbinder/ProModeWbViewBinder;->$r8$lambda$EmrZFneWmqRMCIF25tu00_Y2vBc(Ljp/co/sony/mc/camera/view/viewbinder/ProModeWbViewBinder;Lkotlin/Pair;)Lkotlin/Unit;
+
+    move-result-object p0
+
+    return-object p0
 .end method

@@ -21,7 +21,7 @@
 .method constructor <init>()V
     .locals 0
 
-    .line 823
+    .line 826
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -46,13 +46,13 @@
         }
     .end annotation
 
-    .line 827
+    .line 830
     check-cast p1, Ljp/co/sony/mc/camera/setting/CommonSettings;
 
-    .line 828
-    check-cast p3, Ljp/co/sony/mc/camera/configuration/parameters/DestinationToSave;
+    .line 831
+    check-cast p3, Ljp/co/sony/mc/camera/configuration/parameters/FastCapture;
 
-    invoke-static {p1, p3}, Ljp/co/sony/mc/camera/setting/CommonSettings;->-$$Nest$msetSaveDestination(Ljp/co/sony/mc/camera/setting/CommonSettings;Ljp/co/sony/mc/camera/configuration/parameters/DestinationToSave;)Z
+    invoke-static {p1, p3}, Ljp/co/sony/mc/camera/setting/CommonSettings;->-$$Nest$msetQuickLaunch(Ljp/co/sony/mc/camera/setting/CommonSettings;Ljp/co/sony/mc/camera/configuration/parameters/FastCapture;)Z
 
     move-result p0
 

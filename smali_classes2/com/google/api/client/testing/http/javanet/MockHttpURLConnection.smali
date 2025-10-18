@@ -36,6 +36,10 @@
 
 .field private outputStream:Ljava/io/OutputStream;
 
+.field private setFixedLengthStreamingModeIntCalled:Z
+
+.field private setFixedLengthStreamingModeLongCalled:Z
+
 
 # direct methods
 .method static constructor <clinit>()V
@@ -43,14 +47,14 @@
 
     const/4 v0, 0x1
 
-    .line 58
+    .line 62
     new-array v0, v0, [B
 
     sput-object v0, Lcom/google/api/client/testing/http/javanet/MockHttpURLConnection;->INPUT_BUF:[B
 
     const/4 v0, 0x5
 
-    .line 66
+    .line 70
     new-array v0, v0, [B
 
     sput-object v0, Lcom/google/api/client/testing/http/javanet/MockHttpURLConnection;->ERROR_BUF:[B
@@ -61,27 +65,33 @@
 .method public constructor <init>(Ljava/net/URL;)V
     .locals 1
 
-    .line 78
+    .line 82
     invoke-direct {p0, p1}, Ljava/net/HttpURLConnection;-><init>(Ljava/net/URL;)V
-
-    .line 50
-    new-instance p1, Ljava/io/ByteArrayOutputStream;
-
-    const/4 v0, 0x0
-
-    invoke-direct {p1, v0}, Ljava/io/ByteArrayOutputStream;-><init>(I)V
-
-    iput-object p1, p0, Lcom/google/api/client/testing/http/javanet/MockHttpURLConnection;->outputStream:Ljava/io/OutputStream;
 
     const/4 p1, 0x0
 
-    .line 69
+    .line 46
+    iput-boolean p1, p0, Lcom/google/api/client/testing/http/javanet/MockHttpURLConnection;->setFixedLengthStreamingModeIntCalled:Z
+
+    .line 48
+    iput-boolean p1, p0, Lcom/google/api/client/testing/http/javanet/MockHttpURLConnection;->setFixedLengthStreamingModeLongCalled:Z
+
+    .line 54
+    new-instance v0, Ljava/io/ByteArrayOutputStream;
+
+    invoke-direct {v0, p1}, Ljava/io/ByteArrayOutputStream;-><init>(I)V
+
+    iput-object v0, p0, Lcom/google/api/client/testing/http/javanet/MockHttpURLConnection;->outputStream:Ljava/io/OutputStream;
+
+    const/4 p1, 0x0
+
+    .line 73
     iput-object p1, p0, Lcom/google/api/client/testing/http/javanet/MockHttpURLConnection;->inputStream:Ljava/io/InputStream;
 
-    .line 72
+    .line 76
     iput-object p1, p0, Lcom/google/api/client/testing/http/javanet/MockHttpURLConnection;->errorStream:Ljava/io/InputStream;
 
-    .line 74
+    .line 78
     new-instance p1, Ljava/util/LinkedHashMap;
 
     invoke-direct {p1}, Ljava/util/LinkedHashMap;-><init>()V
@@ -96,13 +106,13 @@
 .method public addHeader(Ljava/lang/String;Ljava/lang/String;)Lcom/google/api/client/testing/http/javanet/MockHttpURLConnection;
     .locals 1
 
-    .line 139
+    .line 143
     invoke-static {p1}, Lcom/google/api/client/util/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 140
+    .line 144
     invoke-static {p2}, Lcom/google/api/client/util/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 141
+    .line 145
     iget-object v0, p0, Lcom/google/api/client/testing/http/javanet/MockHttpURLConnection;->headers:Ljava/util/Map;
 
     invoke-interface {v0, p1}, Ljava/util/Map;->containsKey(Ljava/lang/Object;)Z
@@ -111,7 +121,7 @@
 
     if-eqz v0, :cond_0
 
-    .line 142
+    .line 146
     iget-object v0, p0, Lcom/google/api/client/testing/http/javanet/MockHttpURLConnection;->headers:Ljava/util/Map;
 
     invoke-interface {v0, p1}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
@@ -124,16 +134,16 @@
 
     goto :goto_0
 
-    .line 144
+    .line 148
     :cond_0
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
-    .line 145
+    .line 149
     invoke-interface {v0, p2}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    .line 146
+    .line 150
     iget-object p2, p0, Lcom/google/api/client/testing/http/javanet/MockHttpURLConnection;->headers:Ljava/util/Map;
 
     invoke-interface {p2, p1, v0}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
@@ -162,7 +172,7 @@
 .method public final doOutputCalled()Z
     .locals 0
 
-    .line 112
+    .line 116
     iget-boolean p0, p0, Lcom/google/api/client/testing/http/javanet/MockHttpURLConnection;->doOutputCalled:Z
 
     return p0
@@ -171,7 +181,7 @@
 .method public getChunkLength()I
     .locals 0
 
-    .line 206
+    .line 210
     iget p0, p0, Lcom/google/api/client/testing/http/javanet/MockHttpURLConnection;->chunkLength:I
 
     return p0
@@ -180,7 +190,7 @@
 .method public getErrorStream()Ljava/io/InputStream;
     .locals 0
 
-    .line 191
+    .line 195
     iget-object p0, p0, Lcom/google/api/client/testing/http/javanet/MockHttpURLConnection;->errorStream:Ljava/io/InputStream;
 
     return-object p0
@@ -189,7 +199,7 @@
 .method public getHeaderField(Ljava/lang/String;)Ljava/lang/String;
     .locals 0
 
-    .line 201
+    .line 205
     iget-object p0, p0, Lcom/google/api/client/testing/http/javanet/MockHttpURLConnection;->headers:Ljava/util/Map;
 
     invoke-interface {p0, p1}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
@@ -207,7 +217,7 @@
     :cond_0
     const/4 p1, 0x0
 
-    .line 202
+    .line 206
     invoke-interface {p0, p1}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
     move-result-object p0
@@ -231,7 +241,7 @@
         }
     .end annotation
 
-    .line 196
+    .line 200
     iget-object p0, p0, Lcom/google/api/client/testing/http/javanet/MockHttpURLConnection;->headers:Ljava/util/Map;
 
     return-object p0
@@ -245,19 +255,19 @@
         }
     .end annotation
 
-    .line 183
+    .line 187
     iget v0, p0, Lcom/google/api/client/testing/http/javanet/MockHttpURLConnection;->responseCode:I
 
     const/16 v1, 0x190
 
     if-ge v0, v1, :cond_0
 
-    .line 184
+    .line 188
     iget-object p0, p0, Lcom/google/api/client/testing/http/javanet/MockHttpURLConnection;->inputStream:Ljava/io/InputStream;
 
     return-object p0
 
-    .line 186
+    .line 190
     :cond_0
     new-instance p0, Ljava/io/IOException;
 
@@ -274,14 +284,14 @@
         }
     .end annotation
 
-    .line 104
+    .line 108
     iget-object v0, p0, Lcom/google/api/client/testing/http/javanet/MockHttpURLConnection;->outputStream:Ljava/io/OutputStream;
 
     if-eqz v0, :cond_0
 
     return-object v0
 
-    .line 107
+    .line 111
     :cond_0
     invoke-super {p0}, Ljava/net/HttpURLConnection;->getOutputStream()Ljava/io/OutputStream;
 
@@ -298,8 +308,26 @@
         }
     .end annotation
 
-    .line 94
+    .line 98
     iget p0, p0, Lcom/google/api/client/testing/http/javanet/MockHttpURLConnection;->responseCode:I
+
+    return p0
+.end method
+
+.method public isSetFixedLengthStreamingModeIntCalled()Z
+    .locals 0
+
+    .line 226
+    iget-boolean p0, p0, Lcom/google/api/client/testing/http/javanet/MockHttpURLConnection;->setFixedLengthStreamingModeIntCalled:Z
+
+    return p0
+.end method
+
+.method public isSetFixedLengthStreamingModeLongCalled()Z
+    .locals 0
+
+    .line 230
+    iget-boolean p0, p0, Lcom/google/api/client/testing/http/javanet/MockHttpURLConnection;->setFixedLengthStreamingModeLongCalled:Z
 
     return p0
 .end method
@@ -309,7 +337,7 @@
 
     const/4 p1, 0x1
 
-    .line 99
+    .line 103
     iput-boolean p1, p0, Lcom/google/api/client/testing/http/javanet/MockHttpURLConnection;->doOutputCalled:Z
 
     return-void
@@ -318,33 +346,61 @@
 .method public setErrorStream(Ljava/io/InputStream;)Lcom/google/api/client/testing/http/javanet/MockHttpURLConnection;
     .locals 1
 
-    .line 174
+    .line 178
     invoke-static {p1}, Lcom/google/api/client/util/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 175
+    .line 179
     iget-object v0, p0, Lcom/google/api/client/testing/http/javanet/MockHttpURLConnection;->errorStream:Ljava/io/InputStream;
 
     if-nez v0, :cond_0
 
-    .line 176
+    .line 180
     iput-object p1, p0, Lcom/google/api/client/testing/http/javanet/MockHttpURLConnection;->errorStream:Ljava/io/InputStream;
 
     :cond_0
     return-object p0
 .end method
 
+.method public setFixedLengthStreamingMode(I)V
+    .locals 1
+
+    const/4 v0, 0x1
+
+    .line 215
+    iput-boolean v0, p0, Lcom/google/api/client/testing/http/javanet/MockHttpURLConnection;->setFixedLengthStreamingModeIntCalled:Z
+
+    .line 216
+    invoke-super {p0, p1}, Ljava/net/HttpURLConnection;->setFixedLengthStreamingMode(I)V
+
+    return-void
+.end method
+
+.method public setFixedLengthStreamingMode(J)V
+    .locals 1
+
+    const/4 v0, 0x1
+
+    .line 221
+    iput-boolean v0, p0, Lcom/google/api/client/testing/http/javanet/MockHttpURLConnection;->setFixedLengthStreamingModeLongCalled:Z
+
+    .line 222
+    invoke-super {p0, p1, p2}, Ljava/net/HttpURLConnection;->setFixedLengthStreamingMode(J)V
+
+    return-void
+.end method
+
 .method public setInputStream(Ljava/io/InputStream;)Lcom/google/api/client/testing/http/javanet/MockHttpURLConnection;
     .locals 1
 
-    .line 159
+    .line 163
     invoke-static {p1}, Lcom/google/api/client/util/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 160
+    .line 164
     iget-object v0, p0, Lcom/google/api/client/testing/http/javanet/MockHttpURLConnection;->inputStream:Ljava/io/InputStream;
 
     if-nez v0, :cond_0
 
-    .line 161
+    .line 165
     iput-object p1, p0, Lcom/google/api/client/testing/http/javanet/MockHttpURLConnection;->inputStream:Ljava/io/InputStream;
 
     :cond_0
@@ -354,7 +410,7 @@
 .method public setOutputStream(Ljava/io/OutputStream;)Lcom/google/api/client/testing/http/javanet/MockHttpURLConnection;
     .locals 0
 
-    .line 122
+    .line 126
     iput-object p1, p0, Lcom/google/api/client/testing/http/javanet/MockHttpURLConnection;->outputStream:Ljava/io/OutputStream;
 
     return-object p0
@@ -374,11 +430,11 @@
     :cond_0
     const/4 v0, 0x0
 
-    .line 128
+    .line 132
     :goto_0
     invoke-static {v0}, Lcom/google/api/client/util/Preconditions;->checkArgument(Z)V
 
-    .line 129
+    .line 133
     iput p1, p0, Lcom/google/api/client/testing/http/javanet/MockHttpURLConnection;->responseCode:I
 
     return-object p0

@@ -3,34 +3,32 @@
 .source "D8$$SyntheticClass"
 
 # interfaces
-.implements Landroid/view/View$OnFocusChangeListener;
-
-
-# instance fields
-.field public final synthetic f$0:Ljp/co/sony/mc/camera/view/fragment/ProModeMainFragment;
+.implements Lkotlin/jvm/functions/Function2;
 
 
 # direct methods
-.method public synthetic constructor <init>(Ljp/co/sony/mc/camera/view/fragment/ProModeMainFragment;)V
+.method public synthetic constructor <init>()V
     .locals 0
 
     .line 0
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    iput-object p1, p0, Ljp/co/sony/mc/camera/view/fragment/ProModeMainFragment$$ExternalSyntheticLambda1;->f$0:Ljp/co/sony/mc/camera/view/fragment/ProModeMainFragment;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final onFocusChange(Landroid/view/View;Z)V
+.method public final invoke(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
 
     .line 0
-    iget-object p0, p0, Ljp/co/sony/mc/camera/view/fragment/ProModeMainFragment$$ExternalSyntheticLambda1;->f$0:Ljp/co/sony/mc/camera/view/fragment/ProModeMainFragment;
+    check-cast p1, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
-    invoke-static {p0, p1, p2}, Ljp/co/sony/mc/camera/view/fragment/ProModeMainFragment;->$r8$lambda$OvhzNxFFF0ssuis5h-elxCIlR34(Ljp/co/sony/mc/camera/view/fragment/ProModeMainFragment;Landroid/view/View;Z)V
+    check-cast p2, Ljp/co/sony/mc/camera/view/orientation/LayoutOrientation;
 
-    return-void
+    invoke-static {p1, p2}, Ljp/co/sony/mc/camera/view/fragment/ProModeMainFragment;->$r8$lambda$VX0OXjoFPnK0LfFZWjZ27DGGFb4(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Ljp/co/sony/mc/camera/view/orientation/LayoutOrientation;)Lkotlin/Pair;
+
+    move-result-object p0
+
+    return-object p0
 .end method

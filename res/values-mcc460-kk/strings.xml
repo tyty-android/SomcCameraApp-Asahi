@@ -19,5 +19,4 @@ WLAN желісіне қосылу үшін"</string>
     <string name="camera_strings_runtime_permission_rationale_network_cta_txt">"Бұл қолданба интернетке пайдаланушы деректерін (мысалы, жазылған суреттерді/бейнелерді, дауыстық деректерді, қолданыстағы қызметтердің есептік жазба туралы ақпаратын, т.б.) жіберу үшін WLAN желісі мен мобильді деректерді пайдаланады.
 Желі операторына немесе интернет қызметінің провайдерімен жасалған келісімшартқа қарай сізден деректер үшін ақы алынуы мүмкін екенін ескеріңіз."</string>
     <string name="camera_strings_streaming_error_wifi_disconnected_txt">WLAN байланысы жоқ</string>
-    <string name="mv_wireless_network_txt">WLAN және моб. дер. пайд.</string>
 </resources>

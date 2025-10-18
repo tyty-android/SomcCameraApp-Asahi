@@ -22,7 +22,7 @@
 .method constructor <init>(Lcom/google/android/material/timepicker/TimePickerView;)V
     .locals 0
 
-    .line 132
+    .line 136
     iput-object p1, p0, Lcom/google/android/material/timepicker/TimePickerView$2;->this$0:Lcom/google/android/material/timepicker/TimePickerView;
 
     invoke-direct {p0}, Landroid/view/GestureDetector$SimpleOnGestureListener;-><init>()V
@@ -35,7 +35,7 @@
 .method public onDoubleTap(Landroid/view/MotionEvent;)Z
     .locals 0
 
-    .line 135
+    .line 139
     iget-object p0, p0, Lcom/google/android/material/timepicker/TimePickerView$2;->this$0:Lcom/google/android/material/timepicker/TimePickerView;
 
     invoke-static {p0}, Lcom/google/android/material/timepicker/TimePickerView;->access$100(Lcom/google/android/material/timepicker/TimePickerView;)Lcom/google/android/material/timepicker/TimePickerView$OnDoubleTapListener;
@@ -44,7 +44,7 @@
 
     if-eqz p0, :cond_0
 
-    .line 137
+    .line 141
     invoke-interface {p0}, Lcom/google/android/material/timepicker/TimePickerView$OnDoubleTapListener;->onDoubleTap()V
 
     const/4 p0, 0x1

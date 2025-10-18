@@ -5,7 +5,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/SourceDebugExtension;
-    value = "SMAP\nAnimatedContent.kt\nKotlin\n*S Kotlin\n*F\n+ 1 AnimatedContent.kt\nandroidx/compose/animation/ContentTransform\n+ 2 SnapshotFloatState.kt\nandroidx/compose/runtime/PrimitiveSnapshotStateKt__SnapshotFloatStateKt\n*L\n1#1,862:1\n75#2:863\n108#2,2:864\n*S KotlinDebug\n*F\n+ 1 AnimatedContent.kt\nandroidx/compose/animation/ContentTransform\n*L\n200#1:863\n200#1:864,2\n*E\n"
+    value = "SMAP\nAnimatedContent.kt\nKotlin\n*S Kotlin\n*F\n+ 1 AnimatedContent.kt\nandroidx/compose/animation/ContentTransform\n+ 2 SnapshotFloatState.kt\nandroidx/compose/runtime/PrimitiveSnapshotStateKt__SnapshotFloatStateKt\n*L\n1#1,831:1\n76#2:832\n109#2,2:833\n*S KotlinDebug\n*F\n+ 1 AnimatedContent.kt\nandroidx/compose/animation/ContentTransform\n*L\n198#1:832\n198#1:833,2\n*E\n"
 .end annotation
 
 .annotation runtime Lkotlin/Metadata;
@@ -73,33 +73,25 @@
 .end method
 
 .method public constructor <init>(Landroidx/compose/animation/EnterTransition;Landroidx/compose/animation/ExitTransition;FLandroidx/compose/animation/SizeTransform;)V
-    .locals 1
+    .locals 0
 
-    const-string/jumbo v0, "targetContentEnter"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string v0, "initialContentExit"
-
-    invoke-static {p2, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 189
+    .line 187
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 190
+    .line 188
     iput-object p1, p0, Landroidx/compose/animation/ContentTransform;->targetContentEnter:Landroidx/compose/animation/EnterTransition;
 
-    .line 191
+    .line 189
     iput-object p2, p0, Landroidx/compose/animation/ContentTransform;->initialContentExit:Landroidx/compose/animation/ExitTransition;
 
-    .line 200
+    .line 198
     invoke-static {p3}, Landroidx/compose/runtime/PrimitiveSnapshotStateKt;->mutableFloatStateOf(F)Landroidx/compose/runtime/MutableFloatState;
 
     move-result-object p1
 
     iput-object p1, p0, Landroidx/compose/animation/ContentTransform;->targetContentZIndex$delegate:Landroidx/compose/runtime/MutableFloatState;
 
-    .line 209
+    .line 206
     iput-object p4, p0, Landroidx/compose/animation/ContentTransform;->sizeTransform:Landroidx/compose/animation/SizeTransform;
 
     return-void
@@ -125,12 +117,12 @@
 
     const/4 p6, 0x0
 
-    .line 193
+    .line 191
     invoke-static {p4, p6, p5, p6}, Landroidx/compose/animation/AnimatedContentKt;->SizeTransform$default(ZLkotlin/jvm/functions/Function2;ILjava/lang/Object;)Landroidx/compose/animation/SizeTransform;
 
     move-result-object p4
 
-    .line 189
+    .line 187
     :cond_1
     invoke-direct {p0, p1, p2, p3, p4}, Landroidx/compose/animation/ContentTransform;-><init>(Landroidx/compose/animation/EnterTransition;Landroidx/compose/animation/ExitTransition;FLandroidx/compose/animation/SizeTransform;)V
 
@@ -142,7 +134,7 @@
 .method public final getInitialContentExit()Landroidx/compose/animation/ExitTransition;
     .locals 0
 
-    .line 191
+    .line 189
     iget-object p0, p0, Landroidx/compose/animation/ContentTransform;->initialContentExit:Landroidx/compose/animation/ExitTransition;
 
     return-object p0
@@ -151,7 +143,7 @@
 .method public final getSizeTransform()Landroidx/compose/animation/SizeTransform;
     .locals 0
 
-    .line 209
+    .line 206
     iget-object p0, p0, Landroidx/compose/animation/ContentTransform;->sizeTransform:Landroidx/compose/animation/SizeTransform;
 
     return-object p0
@@ -160,7 +152,7 @@
 .method public final getTargetContentEnter()Landroidx/compose/animation/EnterTransition;
     .locals 0
 
-    .line 190
+    .line 188
     iget-object p0, p0, Landroidx/compose/animation/ContentTransform;->targetContentEnter:Landroidx/compose/animation/EnterTransition;
 
     return-object p0
@@ -169,12 +161,12 @@
 .method public final getTargetContentZIndex()F
     .locals 0
 
-    .line 200
+    .line 198
     iget-object p0, p0, Landroidx/compose/animation/ContentTransform;->targetContentZIndex$delegate:Landroidx/compose/runtime/MutableFloatState;
 
     check-cast p0, Landroidx/compose/runtime/FloatState;
 
-    .line 863
+    .line 832
     invoke-interface {p0}, Landroidx/compose/runtime/FloatState;->getFloatValue()F
 
     move-result p0
@@ -185,7 +177,7 @@
 .method public final setSizeTransform$animation_release(Landroidx/compose/animation/SizeTransform;)V
     .locals 0
 
-    .line 210
+    .line 207
     iput-object p1, p0, Landroidx/compose/animation/ContentTransform;->sizeTransform:Landroidx/compose/animation/SizeTransform;
 
     return-void
@@ -194,10 +186,10 @@
 .method public final setTargetContentZIndex(F)V
     .locals 0
 
-    .line 200
+    .line 198
     iget-object p0, p0, Landroidx/compose/animation/ContentTransform;->targetContentZIndex$delegate:Landroidx/compose/runtime/MutableFloatState;
 
-    .line 864
+    .line 833
     invoke-interface {p0, p1}, Landroidx/compose/runtime/MutableFloatState;->setFloatValue(F)V
 
     return-void

@@ -20,7 +20,7 @@
     value = {
         "Lkotlin/jvm/internal/Lambda;",
         "Lkotlin/jvm/functions/Function1<",
-        "Landroidx/compose/ui/unit/IntSize;",
+        "Landroidx/compose/ui/semantics/SemanticsPropertyReceiver;",
         "Lkotlin/Unit;",
         ">;"
     }
@@ -28,15 +28,13 @@
 
 .annotation runtime Lkotlin/Metadata;
     d1 = {
-        "\u0000\u0010\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0002\u0010\u0000\u001a\u00020\u00012\u0006\u0010\u0002\u001a\u00020\u0003H\n\u00a2\u0006\u0004\u0008\u0004\u0010\u0005"
+        "\u0000\u000c\n\u0000\n\u0002\u0010\u0002\n\u0002\u0018\u0002\n\u0000\u0010\u0000\u001a\u00020\u0001*\u00020\u0002H\n\u00a2\u0006\u0002\u0008\u0003"
     }
     d2 = {
         "<anonymous>",
         "",
-        "sheetSize",
-        "Landroidx/compose/ui/unit/IntSize;",
-        "invoke-ozmzZPI",
-        "(J)V"
+        "Landroidx/compose/ui/semantics/SemanticsPropertyReceiver;",
+        "invoke"
     }
     k = 0x3
     mv = {
@@ -49,39 +47,18 @@
 
 
 # instance fields
-.field final synthetic $anchorChangeCallback:Landroidx/compose/material/AnchoredDraggableState$AnchorChangedCallback;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Landroidx/compose/material/AnchoredDraggableState$AnchorChangedCallback<",
-            "Landroidx/compose/material/ModalBottomSheetValue;",
-            ">;"
-        }
-    .end annotation
-.end field
-
-.field final synthetic $fullHeight:F
+.field final synthetic $scope:Lkotlinx/coroutines/CoroutineScope;
 
 .field final synthetic $sheetState:Landroidx/compose/material/ModalBottomSheetState;
 
 
 # direct methods
-.method constructor <init>(Landroidx/compose/material/ModalBottomSheetState;Landroidx/compose/material/AnchoredDraggableState$AnchorChangedCallback;F)V
+.method constructor <init>(Landroidx/compose/material/ModalBottomSheetState;Lkotlinx/coroutines/CoroutineScope;)V
     .locals 0
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(",
-            "Landroidx/compose/material/ModalBottomSheetState;",
-            "Landroidx/compose/material/AnchoredDraggableState$AnchorChangedCallback<",
-            "Landroidx/compose/material/ModalBottomSheetValue;",
-            ">;F)V"
-        }
-    .end annotation
 
     iput-object p1, p0, Landroidx/compose/material/ModalBottomSheetKt$ModalBottomSheetLayout$2$4;->$sheetState:Landroidx/compose/material/ModalBottomSheetState;
 
-    iput-object p2, p0, Landroidx/compose/material/ModalBottomSheetKt$ModalBottomSheetLayout$2$4;->$anchorChangeCallback:Landroidx/compose/material/AnchoredDraggableState$AnchorChangedCallback;
-
-    iput p3, p0, Landroidx/compose/material/ModalBottomSheetKt$ModalBottomSheetLayout$2$4;->$fullHeight:F
+    iput-object p2, p0, Landroidx/compose/material/ModalBottomSheetKt$ModalBottomSheetLayout$2$4;->$scope:Lkotlinx/coroutines/CoroutineScope;
 
     const/4 p1, 0x1
 
@@ -93,120 +70,102 @@
 
 # virtual methods
 .method public bridge synthetic invoke(Ljava/lang/Object;)Ljava/lang/Object;
-    .locals 2
+    .locals 0
 
-    .line 632
-    check-cast p1, Landroidx/compose/ui/unit/IntSize;
+    .line 621
+    check-cast p1, Landroidx/compose/ui/semantics/SemanticsPropertyReceiver;
 
-    invoke-virtual {p1}, Landroidx/compose/ui/unit/IntSize;->unbox-impl()J
-
-    move-result-wide v0
-
-    invoke-virtual {p0, v0, v1}, Landroidx/compose/material/ModalBottomSheetKt$ModalBottomSheetLayout$2$4;->invoke-ozmzZPI(J)V
+    invoke-virtual {p0, p1}, Landroidx/compose/material/ModalBottomSheetKt$ModalBottomSheetLayout$2$4;->invoke(Landroidx/compose/ui/semantics/SemanticsPropertyReceiver;)V
 
     sget-object p0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
 
     return-object p0
 .end method
 
-.method public final invoke-ozmzZPI(J)V
-    .locals 5
+.method public final invoke(Landroidx/compose/ui/semantics/SemanticsPropertyReceiver;)V
+    .locals 4
 
-    .line 633
-    iget v0, p0, Landroidx/compose/material/ModalBottomSheetKt$ModalBottomSheetLayout$2$4;->$fullHeight:F
+    .line 622
+    iget-object v0, p0, Landroidx/compose/material/ModalBottomSheetKt$ModalBottomSheetLayout$2$4;->$sheetState:Landroidx/compose/material/ModalBottomSheetState;
+
+    invoke-virtual {v0}, Landroidx/compose/material/ModalBottomSheetState;->isVisible()Z
+
+    move-result v0
+
+    if-eqz v0, :cond_1
+
+    .line 623
+    new-instance v0, Landroidx/compose/material/ModalBottomSheetKt$ModalBottomSheetLayout$2$4$1;
 
     iget-object v1, p0, Landroidx/compose/material/ModalBottomSheetKt$ModalBottomSheetLayout$2$4;->$sheetState:Landroidx/compose/material/ModalBottomSheetState;
 
-    invoke-static {}, Lkotlin/collections/MapsKt;->createMapBuilder()Ljava/util/Map;
+    iget-object v2, p0, Landroidx/compose/material/ModalBottomSheetKt$ModalBottomSheetLayout$2$4;->$scope:Lkotlinx/coroutines/CoroutineScope;
 
-    move-result-object v2
+    invoke-direct {v0, v1, v2}, Landroidx/compose/material/ModalBottomSheetKt$ModalBottomSheetLayout$2$4$1;-><init>(Landroidx/compose/material/ModalBottomSheetState;Lkotlinx/coroutines/CoroutineScope;)V
+
+    check-cast v0, Lkotlin/jvm/functions/Function0;
+
+    const/4 v1, 0x0
+
+    const/4 v2, 0x1
+
+    invoke-static {p1, v1, v0, v2, v1}, Landroidx/compose/ui/semantics/SemanticsPropertiesKt;->dismiss$default(Landroidx/compose/ui/semantics/SemanticsPropertyReceiver;Ljava/lang/String;Lkotlin/jvm/functions/Function0;ILjava/lang/Object;)V
+
+    .line 631
+    iget-object v0, p0, Landroidx/compose/material/ModalBottomSheetKt$ModalBottomSheetLayout$2$4;->$sheetState:Landroidx/compose/material/ModalBottomSheetState;
+
+    invoke-virtual {v0}, Landroidx/compose/material/ModalBottomSheetState;->getAnchoredDraggableState$material_release()Landroidx/compose/material/AnchoredDraggableState;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Landroidx/compose/material/AnchoredDraggableState;->getCurrentValue()Ljava/lang/Object;
+
+    move-result-object v0
+
+    .line 632
+    sget-object v3, Landroidx/compose/material/ModalBottomSheetValue;->HalfExpanded:Landroidx/compose/material/ModalBottomSheetValue;
+
+    if-ne v0, v3, :cond_0
 
     .line 634
-    sget-object v3, Landroidx/compose/material/ModalBottomSheetValue;->Hidden:Landroidx/compose/material/ModalBottomSheetValue;
+    new-instance v0, Landroidx/compose/material/ModalBottomSheetKt$ModalBottomSheetLayout$2$4$2;
 
-    invoke-static {v0}, Ljava/lang/Float;->valueOf(F)Ljava/lang/Float;
+    iget-object v3, p0, Landroidx/compose/material/ModalBottomSheetKt$ModalBottomSheetLayout$2$4;->$sheetState:Landroidx/compose/material/ModalBottomSheetState;
 
-    move-result-object v4
+    iget-object p0, p0, Landroidx/compose/material/ModalBottomSheetKt$ModalBottomSheetLayout$2$4;->$scope:Lkotlinx/coroutines/CoroutineScope;
 
-    invoke-interface {v2, v3, v4}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-direct {v0, v3, p0}, Landroidx/compose/material/ModalBottomSheetKt$ModalBottomSheetLayout$2$4$2;-><init>(Landroidx/compose/material/ModalBottomSheetState;Lkotlinx/coroutines/CoroutineScope;)V
 
-    const/high16 v3, 0x40000000    # 2.0f
+    check-cast v0, Lkotlin/jvm/functions/Function0;
 
-    div-float v3, v0, v3
+    invoke-static {p1, v1, v0, v2, v1}, Landroidx/compose/ui/semantics/SemanticsPropertiesKt;->expand$default(Landroidx/compose/ui/semantics/SemanticsPropertyReceiver;Ljava/lang/String;Lkotlin/jvm/functions/Function0;ILjava/lang/Object;)V
 
-    .line 636
-    invoke-virtual {v1}, Landroidx/compose/material/ModalBottomSheetState;->isSkipHalfExpanded$material_release()Z
-
-    move-result v1
-
-    if-nez v1, :cond_0
-
-    invoke-static {p1, p2}, Landroidx/compose/ui/unit/IntSize;->getHeight-impl(J)I
-
-    move-result v1
-
-    int-to-float v1, v1
-
-    cmpl-float v1, v1, v3
-
-    if-lez v1, :cond_0
-
-    .line 637
-    sget-object v1, Landroidx/compose/material/ModalBottomSheetValue;->HalfExpanded:Landroidx/compose/material/ModalBottomSheetValue;
-
-    invoke-static {v3}, Ljava/lang/Float;->valueOf(F)Ljava/lang/Float;
-
-    move-result-object v3
-
-    invoke-interface {v2, v1, v3}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
-
-    .line 639
-    :cond_0
-    invoke-static {p1, p2}, Landroidx/compose/ui/unit/IntSize;->getHeight-impl(J)I
-
-    move-result v1
-
-    if-eqz v1, :cond_1
-
-    .line 640
-    sget-object v1, Landroidx/compose/material/ModalBottomSheetValue;->Expanded:Landroidx/compose/material/ModalBottomSheetValue;
-
-    invoke-static {p1, p2}, Landroidx/compose/ui/unit/IntSize;->getHeight-impl(J)I
-
-    move-result p1
-
-    int-to-float p1, p1
-
-    sub-float/2addr v0, p1
-
-    const/4 p1, 0x0
-
-    invoke-static {p1, v0}, Ljava/lang/Math;->max(FF)F
-
-    move-result p1
-
-    invoke-static {p1}, Ljava/lang/Float;->valueOf(F)Ljava/lang/Float;
-
-    move-result-object p1
-
-    invoke-interface {v2, v1, p1}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
-
-    .line 633
-    :cond_1
-    invoke-static {v2}, Lkotlin/collections/MapsKt;->build(Ljava/util/Map;)Ljava/util/Map;
-
-    move-result-object p1
+    goto :goto_0
 
     .line 643
-    iget-object p2, p0, Landroidx/compose/material/ModalBottomSheetKt$ModalBottomSheetLayout$2$4;->$sheetState:Landroidx/compose/material/ModalBottomSheetState;
+    :cond_0
+    iget-object v0, p0, Landroidx/compose/material/ModalBottomSheetKt$ModalBottomSheetLayout$2$4;->$sheetState:Landroidx/compose/material/ModalBottomSheetState;
 
-    invoke-virtual {p2}, Landroidx/compose/material/ModalBottomSheetState;->getAnchoredDraggableState$material_release()Landroidx/compose/material/AnchoredDraggableState;
+    invoke-virtual {v0}, Landroidx/compose/material/ModalBottomSheetState;->getHasHalfExpandedState$material_release()Z
 
-    move-result-object p2
+    move-result v0
 
-    iget-object p0, p0, Landroidx/compose/material/ModalBottomSheetKt$ModalBottomSheetLayout$2$4;->$anchorChangeCallback:Landroidx/compose/material/AnchoredDraggableState$AnchorChangedCallback;
+    if-eqz v0, :cond_1
 
-    invoke-virtual {p2, p1, p0}, Landroidx/compose/material/AnchoredDraggableState;->updateAnchors$material_release(Ljava/util/Map;Landroidx/compose/material/AnchoredDraggableState$AnchorChangedCallback;)V
+    .line 644
+    new-instance v0, Landroidx/compose/material/ModalBottomSheetKt$ModalBottomSheetLayout$2$4$3;
 
+    iget-object v3, p0, Landroidx/compose/material/ModalBottomSheetKt$ModalBottomSheetLayout$2$4;->$sheetState:Landroidx/compose/material/ModalBottomSheetState;
+
+    iget-object p0, p0, Landroidx/compose/material/ModalBottomSheetKt$ModalBottomSheetLayout$2$4;->$scope:Lkotlinx/coroutines/CoroutineScope;
+
+    invoke-direct {v0, v3, p0}, Landroidx/compose/material/ModalBottomSheetKt$ModalBottomSheetLayout$2$4$3;-><init>(Landroidx/compose/material/ModalBottomSheetState;Lkotlinx/coroutines/CoroutineScope;)V
+
+    check-cast v0, Lkotlin/jvm/functions/Function0;
+
+    invoke-static {p1, v1, v0, v2, v1}, Landroidx/compose/ui/semantics/SemanticsPropertiesKt;->collapse$default(Landroidx/compose/ui/semantics/SemanticsPropertyReceiver;Ljava/lang/String;Lkotlin/jvm/functions/Function0;ILjava/lang/Object;)V
+
+    :cond_1
+    :goto_0
     return-void
 .end method

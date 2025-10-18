@@ -93,10 +93,6 @@
         }
     .end annotation
 
-    const-string p0, "restored"
-
-    invoke-static {p1, p0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
     .line 363
     new-instance p0, Landroidx/compose/foundation/text/TextFieldScrollerPosition;
 

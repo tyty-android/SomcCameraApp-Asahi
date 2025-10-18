@@ -32,7 +32,7 @@
         }
     .end annotation
 
-    .line 526
+    .line 523
     iput-object p1, p0, Ljp/co/sony/mc/camera/controller/StateMachine$3;->this$0:Ljp/co/sony/mc/camera/controller/StateMachine;
 
     iput-object p2, p0, Ljp/co/sony/mc/camera/controller/StateMachine$3;->val$result:Ljp/co/sony/mc/camera/mediasaving/StoreDataResult;
@@ -67,20 +67,24 @@
 .end method
 
 .method public onLoadCompleted(Landroid/net/Uri;Landroid/graphics/Bitmap;)V
-    .locals 2
+    .locals 3
 
-    .line 529
+    .line 526
     sget-boolean v0, Ljp/co/sony/mc/camera/util/CamLog;->DEBUG:Z
 
     if-eqz v0, :cond_0
 
-    new-instance v0, Ljava/lang/StringBuilder;
+    const/4 v0, 0x1
 
-    const-string v1, "invoke uri:"
+    new-array v0, v0, [Ljava/lang/String;
 
-    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+    new-instance v1, Ljava/lang/StringBuilder;
 
-    invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+    const-string v2, "invoke uri:"
+
+    invoke-direct {v1, v2}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+
+    invoke-virtual {v1, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
     move-result-object p1
 
@@ -88,13 +92,13 @@
 
     move-result-object p1
 
-    filled-new-array {p1}, [Ljava/lang/String;
+    const/4 v1, 0x0
 
-    move-result-object p1
+    aput-object p1, v0, v1
 
-    invoke-static {p1}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
+    invoke-static {v0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
-    .line 530
+    .line 527
     :cond_0
     iget-object p1, p0, Ljp/co/sony/mc/camera/controller/StateMachine$3;->this$0:Ljp/co/sony/mc/camera/controller/StateMachine;
 
@@ -106,26 +110,30 @@
 .end method
 
 .method public onLoadFailed(Landroid/net/Uri;I)V
-    .locals 2
+    .locals 3
 
-    .line 535
+    .line 532
     sget-boolean v0, Ljp/co/sony/mc/camera/util/CamLog;->DEBUG:Z
 
     if-eqz v0, :cond_0
 
-    new-instance v0, Ljava/lang/StringBuilder;
+    const/4 v0, 0x1
 
-    const-string v1, "invoke uri:"
+    new-array v0, v0, [Ljava/lang/String;
 
-    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+    new-instance v1, Ljava/lang/StringBuilder;
 
-    invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+    const-string v2, "invoke uri:"
+
+    invoke-direct {v1, v2}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+
+    invoke-virtual {v1, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
     move-result-object p1
 
-    const-string v0, ", reason:"
+    const-string v1, ", reason:"
 
-    invoke-virtual {p1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {p1, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object p1
 
@@ -137,13 +145,13 @@
 
     move-result-object p1
 
-    filled-new-array {p1}, [Ljava/lang/String;
+    const/4 p2, 0x0
 
-    move-result-object p1
+    aput-object p1, v0, p2
 
-    invoke-static {p1}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
+    invoke-static {v0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
-    .line 537
+    .line 534
     :cond_0
     iget-object p1, p0, Ljp/co/sony/mc/camera/controller/StateMachine$3;->this$0:Ljp/co/sony/mc/camera/controller/StateMachine;
 

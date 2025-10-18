@@ -63,7 +63,7 @@
 
     iput-object p1, p0, Landroidx/compose/ui/focus/FocusOwnerImpl$modifier$1;->this$0:Landroidx/compose/ui/focus/FocusOwnerImpl;
 
-    .line 65
+    .line 72
     invoke-direct {p0}, Landroidx/compose/ui/node/ModifierNodeElement;-><init>()V
 
     return-void
@@ -74,7 +74,7 @@
 .method public bridge synthetic create()Landroidx/compose/ui/Modifier$Node;
     .locals 0
 
-    .line 65
+    .line 72
     invoke-virtual {p0}, Landroidx/compose/ui/focus/FocusOwnerImpl$modifier$1;->create()Landroidx/compose/ui/focus/FocusTargetNode;
 
     move-result-object p0
@@ -87,7 +87,7 @@
 .method public create()Landroidx/compose/ui/focus/FocusTargetNode;
     .locals 0
 
-    .line 66
+    .line 73
     iget-object p0, p0, Landroidx/compose/ui/focus/FocusOwnerImpl$modifier$1;->this$0:Landroidx/compose/ui/focus/FocusOwnerImpl;
 
     invoke-virtual {p0}, Landroidx/compose/ui/focus/FocusOwnerImpl;->getRootFocusNode$ui_release()Landroidx/compose/ui/focus/FocusTargetNode;
@@ -116,7 +116,7 @@
 .method public hashCode()I
     .locals 0
 
-    .line 74
+    .line 81
     iget-object p0, p0, Landroidx/compose/ui/focus/FocusOwnerImpl$modifier$1;->this$0:Landroidx/compose/ui/focus/FocusOwnerImpl;
 
     invoke-virtual {p0}, Landroidx/compose/ui/focus/FocusOwnerImpl;->getRootFocusNode$ui_release()Landroidx/compose/ui/focus/FocusTargetNode;
@@ -133,11 +133,7 @@
 .method public inspectableProperties(Landroidx/compose/ui/platform/InspectorInfo;)V
     .locals 0
 
-    const-string p0, "<this>"
-
-    invoke-static {p1, p0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 71
+    .line 78
     const-string p0, "RootFocusTarget"
 
     invoke-virtual {p1, p0}, Landroidx/compose/ui/platform/InspectorInfo;->setName(Ljava/lang/String;)V
@@ -148,7 +144,7 @@
 .method public bridge synthetic update(Landroidx/compose/ui/Modifier$Node;)V
     .locals 0
 
-    .line 65
+    .line 72
     check-cast p1, Landroidx/compose/ui/focus/FocusTargetNode;
 
     invoke-virtual {p0, p1}, Landroidx/compose/ui/focus/FocusOwnerImpl$modifier$1;->update(Landroidx/compose/ui/focus/FocusTargetNode;)V
@@ -158,10 +154,6 @@
 
 .method public update(Landroidx/compose/ui/focus/FocusTargetNode;)V
     .locals 0
-
-    const-string p0, "node"
-
-    invoke-static {p1, p0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
     return-void
 .end method

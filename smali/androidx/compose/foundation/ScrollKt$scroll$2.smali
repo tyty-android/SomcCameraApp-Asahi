@@ -29,7 +29,7 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/SourceDebugExtension;
-    value = "SMAP\nScroll.kt\nKotlin\n*S Kotlin\n*F\n+ 1 Scroll.kt\nandroidx/compose/foundation/ScrollKt$scroll$2\n+ 2 Effects.kt\nandroidx/compose/runtime/EffectsKt\n+ 3 Composables.kt\nandroidx/compose/runtime/ComposablesKt\n+ 4 Composer.kt\nandroidx/compose/runtime/ComposerKt\n+ 5 Effects.kt\nandroidx/compose/runtime/EffectsKt$rememberCoroutineScope$1\n+ 6 CompositionLocal.kt\nandroidx/compose/runtime/CompositionLocal\n*L\n1#1,454:1\n486#2,4:455\n490#2,2:463\n494#2:469\n25#3:459\n1097#4,3:460\n1100#4,3:466\n486#5:465\n76#6:470\n*S KotlinDebug\n*F\n+ 1 Scroll.kt\nandroidx/compose/foundation/ScrollKt$scroll$2\n*L\n269#1:455,4\n269#1:463,2\n269#1:469\n269#1:459\n269#1:460,3\n269#1:466,3\n269#1:465\n302#1:470\n*E\n"
+    value = "SMAP\nScroll.kt\nKotlin\n*S Kotlin\n*F\n+ 1 Scroll.kt\nandroidx/compose/foundation/ScrollKt$scroll$2\n+ 2 Effects.kt\nandroidx/compose/runtime/EffectsKt\n+ 3 Composables.kt\nandroidx/compose/runtime/ComposablesKt\n+ 4 Composer.kt\nandroidx/compose/runtime/ComposerKt\n+ 5 Effects.kt\nandroidx/compose/runtime/EffectsKt$rememberCoroutineScope$1\n+ 6 CompositionLocal.kt\nandroidx/compose/runtime/CompositionLocal\n*L\n1#1,459:1\n487#2,4:460\n491#2,2:468\n495#2:474\n25#3:464\n1116#4,3:465\n1119#4,3:471\n487#5:470\n74#6:475\n*S KotlinDebug\n*F\n+ 1 Scroll.kt\nandroidx/compose/foundation/ScrollKt$scroll$2\n*L\n274#1:460,4\n274#1:468,2\n274#1:474\n274#1:464\n274#1:465,3\n274#1:471,3\n274#1:470\n307#1:475\n*E\n"
 .end annotation
 
 .annotation runtime Lkotlin/Metadata;
@@ -88,17 +88,13 @@
 
 # virtual methods
 .method public final invoke(Landroidx/compose/ui/Modifier;Landroidx/compose/runtime/Composer;I)Landroidx/compose/ui/Modifier;
-    .locals 9
-
-    const-string v0, "$this$composed"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+    .locals 12
 
     const p1, 0x581dd9c4
 
     invoke-interface {p2, p1}, Landroidx/compose/runtime/Composer;->startReplaceableGroup(I)V
 
-    const-string v0, "C267@9967L18,268@10015L24,301@11508L7:Scroll.kt#71ulvw"
+    const-string v0, "C272@10178L18,273@10226L24,306@11719L7:Scroll.kt#71ulvw"
 
     invoke-static {p2, v0}, Landroidx/compose/runtime/ComposerKt;->sourceInformation(Landroidx/compose/runtime/Composer;Ljava/lang/String;)V
 
@@ -110,9 +106,9 @@
 
     const/4 v0, -0x1
 
-    const-string v1, "androidx.compose.foundation.scroll.<anonymous> (Scroll.kt:266)"
+    const-string v1, "androidx.compose.foundation.scroll.<anonymous> (Scroll.kt:272)"
 
-    .line 268
+    .line 273
     invoke-static {p1, p3, v0, v1}, Landroidx/compose/runtime/ComposerKt;->traceEventStart(IIILjava/lang/String;)V
 
     :cond_0
@@ -126,28 +122,28 @@
 
     const p3, 0x2e20b340
 
-    .line 269
+    .line 274
     invoke-interface {p2, p3}, Landroidx/compose/runtime/Composer;->startReplaceableGroup(I)V
 
-    const-string p3, "CC(rememberCoroutineScope)488@20446L144:Effects.kt#9igjgp"
+    const-string p3, "CC(rememberCoroutineScope)489@20472L144:Effects.kt#9igjgp"
 
     invoke-static {p2, p3}, Landroidx/compose/runtime/ComposerKt;->sourceInformation(Landroidx/compose/runtime/Composer;Ljava/lang/String;)V
 
     const p3, -0x1d58f75c
 
-    .line 458
+    .line 463
     invoke-interface {p2, p3}, Landroidx/compose/runtime/Composer;->startReplaceableGroup(I)V
 
     const-string p3, "CC(remember):Composables.kt#9igjgp"
 
     invoke-static {p2, p3}, Landroidx/compose/runtime/ComposerKt;->sourceInformation(Landroidx/compose/runtime/Composer;Ljava/lang/String;)V
 
-    .line 460
+    .line 465
     invoke-interface {p2}, Landroidx/compose/runtime/Composer;->rememberedValue()Ljava/lang/Object;
 
     move-result-object p3
 
-    .line 461
+    .line 466
     sget-object v0, Landroidx/compose/runtime/Composer;->Companion:Landroidx/compose/runtime/Composer$Companion;
 
     invoke-virtual {v0}, Landroidx/compose/runtime/Composer$Companion;->getEmpty()Ljava/lang/Object;
@@ -156,41 +152,41 @@
 
     if-ne p3, v0, :cond_1
 
-    .line 465
+    .line 470
     sget-object p3, Lkotlin/coroutines/EmptyCoroutineContext;->INSTANCE:Lkotlin/coroutines/EmptyCoroutineContext;
 
-    .line 464
+    .line 469
     check-cast p3, Lkotlin/coroutines/CoroutineContext;
 
     invoke-static {p3, p2}, Landroidx/compose/runtime/EffectsKt;->createCompositionCoroutineScope(Lkotlin/coroutines/CoroutineContext;Landroidx/compose/runtime/Composer;)Lkotlinx/coroutines/CoroutineScope;
 
     move-result-object p3
 
-    .line 463
+    .line 468
     new-instance v0, Landroidx/compose/runtime/CompositionScopedCoroutineScopeCanceller;
 
     invoke-direct {v0, p3}, Landroidx/compose/runtime/CompositionScopedCoroutineScopeCanceller;-><init>(Lkotlinx/coroutines/CoroutineScope;)V
 
-    .line 466
+    .line 471
     invoke-interface {p2, v0}, Landroidx/compose/runtime/Composer;->updateRememberedValue(Ljava/lang/Object;)V
 
     move-object p3, v0
 
-    .line 459
+    .line 464
     :cond_1
     invoke-interface {p2}, Landroidx/compose/runtime/Composer;->endReplaceableGroup()V
 
-    .line 458
+    .line 463
     check-cast p3, Landroidx/compose/runtime/CompositionScopedCoroutineScopeCanceller;
 
-    .line 469
+    .line 474
     invoke-virtual {p3}, Landroidx/compose/runtime/CompositionScopedCoroutineScopeCanceller;->getCoroutineScope()Lkotlinx/coroutines/CoroutineScope;
 
     move-result-object v5
 
     invoke-interface {p2}, Landroidx/compose/runtime/Composer;->endReplaceableGroup()V
 
-    .line 270
+    .line 275
     sget-object p3, Landroidx/compose/ui/Modifier;->Companion:Landroidx/compose/ui/Modifier$Companion;
 
     check-cast p3, Landroidx/compose/ui/Modifier;
@@ -221,7 +217,7 @@
 
     move-result-object p3
 
-    .line 298
+    .line 303
     iget-boolean v0, p0, Landroidx/compose/foundation/ScrollKt$scroll$2;->$isVertical:Z
 
     if-eqz v0, :cond_2
@@ -234,15 +230,15 @@
     sget-object v0, Landroidx/compose/foundation/gestures/Orientation;->Horizontal:Landroidx/compose/foundation/gestures/Orientation;
 
     :goto_0
-    move-object v8, v0
+    move-object v11, v0
 
-    .line 299
+    .line 304
     sget-object v0, Landroidx/compose/ui/Modifier;->Companion:Landroidx/compose/ui/Modifier$Companion;
 
-    .line 301
+    .line 306
     sget-object v1, Landroidx/compose/foundation/gestures/ScrollableDefaults;->INSTANCE:Landroidx/compose/foundation/gestures/ScrollableDefaults;
 
-    .line 302
+    .line 307
     invoke-static {}, Landroidx/compose/ui/platform/CompositionLocalsKt;->getLocalLayoutDirection()Landroidx/compose/runtime/ProvidableCompositionLocal;
 
     move-result-object v2
@@ -253,7 +249,7 @@
 
     const-string v4, "CC:CompositionLocal.kt#9igjgp"
 
-    .line 470
+    .line 475
     invoke-static {p2, v3, v4}, Landroidx/compose/runtime/ComposerKt;->sourceInformationMarkerStart(Landroidx/compose/runtime/Composer;ILjava/lang/String;)V
 
     invoke-interface {p2, v2}, Landroidx/compose/runtime/Composer;->consume(Landroidx/compose/runtime/CompositionLocal;)Ljava/lang/Object;
@@ -264,45 +260,51 @@
 
     check-cast v2, Landroidx/compose/ui/unit/LayoutDirection;
 
-    .line 304
+    .line 309
     iget-boolean v3, p0, Landroidx/compose/foundation/ScrollKt$scroll$2;->$reverseScrolling:Z
 
-    .line 301
-    invoke-virtual {v1, v2, v8, v3}, Landroidx/compose/foundation/gestures/ScrollableDefaults;->reverseDirection(Landroidx/compose/ui/unit/LayoutDirection;Landroidx/compose/foundation/gestures/Orientation;Z)Z
+    .line 306
+    invoke-virtual {v1, v2, v11, v3}, Landroidx/compose/foundation/gestures/ScrollableDefaults;->reverseDirection(Landroidx/compose/ui/unit/LayoutDirection;Landroidx/compose/foundation/gestures/Orientation;Z)Z
 
     move-result v5
 
-    .line 307
+    .line 312
     iget-object v1, p0, Landroidx/compose/foundation/ScrollKt$scroll$2;->$state:Landroidx/compose/foundation/ScrollState;
 
     invoke-virtual {v1}, Landroidx/compose/foundation/ScrollState;->getInternalInteractionSource$foundation_release()Landroidx/compose/foundation/interaction/MutableInteractionSource;
 
     move-result-object v7
 
-    .line 299
+    .line 304
     check-cast v0, Landroidx/compose/ui/Modifier;
 
-    .line 309
+    .line 314
     iget-object v1, p0, Landroidx/compose/foundation/ScrollKt$scroll$2;->$state:Landroidx/compose/foundation/ScrollState;
 
     check-cast v1, Landroidx/compose/foundation/gestures/ScrollableState;
 
-    .line 306
+    .line 311
     iget-boolean v4, p0, Landroidx/compose/foundation/ScrollKt$scroll$2;->$isScrollable:Z
 
-    .line 308
+    .line 313
     iget-object v6, p0, Landroidx/compose/foundation/ScrollKt$scroll$2;->$flingBehavior:Landroidx/compose/foundation/gestures/FlingBehavior;
 
-    move-object v2, v8
+    const/16 v9, 0x80
+
+    const/4 v10, 0x0
+
+    const/4 v8, 0x0
+
+    move-object v2, v11
 
     move-object v3, p1
 
-    .line 299
-    invoke-static/range {v0 .. v7}, Landroidx/compose/foundation/gestures/ScrollableKt;->scrollable(Landroidx/compose/ui/Modifier;Landroidx/compose/foundation/gestures/ScrollableState;Landroidx/compose/foundation/gestures/Orientation;Landroidx/compose/foundation/OverscrollEffect;ZZLandroidx/compose/foundation/gestures/FlingBehavior;Landroidx/compose/foundation/interaction/MutableInteractionSource;)Landroidx/compose/ui/Modifier;
+    .line 304
+    invoke-static/range {v0 .. v10}, Landroidx/compose/foundation/gestures/ScrollableKt;->scrollable$default(Landroidx/compose/ui/Modifier;Landroidx/compose/foundation/gestures/ScrollableState;Landroidx/compose/foundation/gestures/Orientation;Landroidx/compose/foundation/OverscrollEffect;ZZLandroidx/compose/foundation/gestures/FlingBehavior;Landroidx/compose/foundation/interaction/MutableInteractionSource;Landroidx/compose/foundation/gestures/BringIntoViewSpec;ILjava/lang/Object;)Landroidx/compose/ui/Modifier;
 
     move-result-object v0
 
-    .line 313
+    .line 318
     new-instance v1, Landroidx/compose/foundation/ScrollingLayoutElement;
 
     iget-object v2, p0, Landroidx/compose/foundation/ScrollKt$scroll$2;->$state:Landroidx/compose/foundation/ScrollState;
@@ -313,22 +315,22 @@
 
     invoke-direct {v1, v2, v3, p0}, Landroidx/compose/foundation/ScrollingLayoutElement;-><init>(Landroidx/compose/foundation/ScrollState;ZZ)V
 
-    .line 315
-    invoke-static {p3, v8}, Landroidx/compose/foundation/ClipScrollableContainerKt;->clipScrollableContainer(Landroidx/compose/ui/Modifier;Landroidx/compose/foundation/gestures/Orientation;)Landroidx/compose/ui/Modifier;
+    .line 320
+    invoke-static {p3, v11}, Landroidx/compose/foundation/ClipScrollableContainerKt;->clipScrollableContainer(Landroidx/compose/ui/Modifier;Landroidx/compose/foundation/gestures/Orientation;)Landroidx/compose/ui/Modifier;
 
     move-result-object p0
 
-    .line 316
+    .line 321
     invoke-static {p0, p1}, Landroidx/compose/foundation/OverscrollKt;->overscroll(Landroidx/compose/ui/Modifier;Landroidx/compose/foundation/OverscrollEffect;)Landroidx/compose/ui/Modifier;
 
     move-result-object p0
 
-    .line 317
+    .line 322
     invoke-interface {p0, v0}, Landroidx/compose/ui/Modifier;->then(Landroidx/compose/ui/Modifier;)Landroidx/compose/ui/Modifier;
 
     move-result-object p0
 
-    .line 318
+    .line 323
     check-cast v1, Landroidx/compose/ui/Modifier;
 
     invoke-interface {p0, v1}, Landroidx/compose/ui/Modifier;->then(Landroidx/compose/ui/Modifier;)Landroidx/compose/ui/Modifier;
@@ -352,7 +354,7 @@
 .method public bridge synthetic invoke(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
 
-    .line 266
+    .line 271
     check-cast p1, Landroidx/compose/ui/Modifier;
 
     check-cast p2, Landroidx/compose/runtime/Composer;

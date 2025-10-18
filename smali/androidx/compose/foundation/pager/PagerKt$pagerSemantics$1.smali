@@ -76,7 +76,7 @@
 .method public bridge synthetic invoke(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
 
-    .line 867
+    .line 939
     check-cast p1, Landroidx/compose/ui/semantics/SemanticsPropertyReceiver;
 
     invoke-virtual {p0, p1}, Landroidx/compose/foundation/pager/PagerKt$pagerSemantics$1;->invoke(Landroidx/compose/ui/semantics/SemanticsPropertyReceiver;)V
@@ -89,11 +89,7 @@
 .method public final invoke(Landroidx/compose/ui/semantics/SemanticsPropertyReceiver;)V
     .locals 5
 
-    const-string v0, "$this$semantics"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 868
+    .line 940
     iget-boolean v0, p0, Landroidx/compose/foundation/pager/PagerKt$pagerSemantics$1;->$isVertical:Z
 
     const/4 v1, 0x1
@@ -102,7 +98,7 @@
 
     if-eqz v0, :cond_0
 
-    .line 869
+    .line 941
     new-instance v0, Landroidx/compose/foundation/pager/PagerKt$pagerSemantics$1$1;
 
     iget-object v3, p0, Landroidx/compose/foundation/pager/PagerKt$pagerSemantics$1;->$state:Landroidx/compose/foundation/pager/PagerState;
@@ -115,7 +111,7 @@
 
     invoke-static {p1, v2, v0, v1, v2}, Landroidx/compose/ui/semantics/SemanticsPropertiesKt;->pageUp$default(Landroidx/compose/ui/semantics/SemanticsPropertyReceiver;Ljava/lang/String;Lkotlin/jvm/functions/Function0;ILjava/lang/Object;)V
 
-    .line 870
+    .line 942
     new-instance v0, Landroidx/compose/foundation/pager/PagerKt$pagerSemantics$1$2;
 
     iget-object v3, p0, Landroidx/compose/foundation/pager/PagerKt$pagerSemantics$1;->$state:Landroidx/compose/foundation/pager/PagerState;
@@ -130,7 +126,7 @@
 
     goto :goto_0
 
-    .line 872
+    .line 944
     :cond_0
     new-instance v0, Landroidx/compose/foundation/pager/PagerKt$pagerSemantics$1$3;
 
@@ -144,7 +140,7 @@
 
     invoke-static {p1, v2, v0, v1, v2}, Landroidx/compose/ui/semantics/SemanticsPropertiesKt;->pageLeft$default(Landroidx/compose/ui/semantics/SemanticsPropertyReceiver;Ljava/lang/String;Lkotlin/jvm/functions/Function0;ILjava/lang/Object;)V
 
-    .line 873
+    .line 945
     new-instance v0, Landroidx/compose/foundation/pager/PagerKt$pagerSemantics$1$4;
 
     iget-object v3, p0, Landroidx/compose/foundation/pager/PagerKt$pagerSemantics$1;->$state:Landroidx/compose/foundation/pager/PagerState;

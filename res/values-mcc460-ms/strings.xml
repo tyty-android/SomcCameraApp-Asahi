@@ -19,5 +19,4 @@ Sila hidupkan WLAN daripada TETAPAN."</string>
     <string name="camera_strings_runtime_permission_rationale_network_cta_txt">"Aplikasi ini menggunakan WLAN dan data mudah alih untuk menghantar data pengguna (iaitu gambar/video yang dirakam, data suara, maklumat akaun perkhidmatan digunakan, dll) kepada Internet.
 Ambil perhatian bahawa anda mungkin dikenakan bayaran untuk data bergantung pada pengendali rangkaian atau kontrak pembekal khidmat Internet."</string>
     <string name="camera_strings_streaming_error_wifi_disconnected_txt">Tiada sambungan WLAN</string>
-    <string name="mv_wireless_network_txt">Guna WLAN &amp; data mdh alih</string>
 </resources>

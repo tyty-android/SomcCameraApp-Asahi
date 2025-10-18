@@ -27,7 +27,7 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/SourceDebugExtension;
-    value = "SMAP\nRecomposer.kt\nKotlin\n*S Kotlin\n*F\n+ 1 Recomposer.kt\nandroidx/compose/runtime/Recomposer$effectJob$1$1\n+ 2 ActualJvm.jvm.kt\nandroidx/compose/runtime/ActualJvm_jvmKt\n*L\n1#1,1502:1\n70#2:1503\n*S KotlinDebug\n*F\n+ 1 Recomposer.kt\nandroidx/compose/runtime/Recomposer$effectJob$1$1\n*L\n236#1:1503\n*E\n"
+    value = "SMAP\nRecomposer.kt\nKotlin\n*S Kotlin\n*F\n+ 1 Recomposer.kt\nandroidx/compose/runtime/Recomposer$effectJob$1$1\n+ 2 ActualJvm.jvm.kt\nandroidx/compose/runtime/ActualJvm_jvmKt\n*L\n1#1,1564:1\n82#2:1565\n*S KotlinDebug\n*F\n+ 1 Recomposer.kt\nandroidx/compose/runtime/Recomposer$effectJob$1$1\n*L\n246#1:1565\n*E\n"
 .end annotation
 
 .annotation runtime Lkotlin/Metadata;
@@ -73,7 +73,7 @@
 .method public bridge synthetic invoke(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
 
-    .line 230
+    .line 240
     check-cast p1, Ljava/lang/Throwable;
 
     invoke-virtual {p0, p1}, Landroidx/compose/runtime/Recomposer$effectJob$1$1;->invoke(Ljava/lang/Throwable;)V
@@ -86,14 +86,14 @@
 .method public final invoke(Ljava/lang/Throwable;)V
     .locals 6
 
-    .line 233
+    .line 243
     const-string v0, "Recomposer effect job completed"
 
     invoke-static {v0, p1}, Lkotlinx/coroutines/ExceptionsKt;->CancellationException(Ljava/lang/String;Ljava/lang/Throwable;)Ljava/util/concurrent/CancellationException;
 
     move-result-object v0
 
-    .line 236
+    .line 246
     iget-object v1, p0, Landroidx/compose/runtime/Recomposer$effectJob$1$1;->this$0:Landroidx/compose/runtime/Recomposer;
 
     invoke-static {v1}, Landroidx/compose/runtime/Recomposer;->access$getStateLock$p(Landroidx/compose/runtime/Recomposer;)Ljava/lang/Object;
@@ -102,10 +102,10 @@
 
     iget-object p0, p0, Landroidx/compose/runtime/Recomposer$effectJob$1$1;->this$0:Landroidx/compose/runtime/Recomposer;
 
-    .line 1503
+    .line 1565
     monitor-enter v1
 
-    .line 237
+    .line 247
     :try_start_0
     invoke-static {p0}, Landroidx/compose/runtime/Recomposer;->access$getRunnerJob$p(Landroidx/compose/runtime/Recomposer;)Lkotlinx/coroutines/Job;
 
@@ -115,7 +115,7 @@
 
     if-eqz v2, :cond_2
 
-    .line 239
+    .line 249
     invoke-static {p0}, Landroidx/compose/runtime/Recomposer;->access$get_state$p(Landroidx/compose/runtime/Recomposer;)Lkotlinx/coroutines/flow/MutableStateFlow;
 
     move-result-object v4
@@ -124,19 +124,19 @@
 
     invoke-interface {v4, v5}, Lkotlinx/coroutines/flow/MutableStateFlow;->setValue(Ljava/lang/Object;)V
 
-    .line 243
+    .line 253
     invoke-static {p0}, Landroidx/compose/runtime/Recomposer;->access$isClosed$p(Landroidx/compose/runtime/Recomposer;)Z
 
     move-result v4
 
     if-nez v4, :cond_0
 
-    .line 245
+    .line 255
     invoke-interface {v2, v0}, Lkotlinx/coroutines/Job;->cancel(Ljava/util/concurrent/CancellationException;)V
 
     goto :goto_0
 
-    .line 246
+    .line 256
     :cond_0
     invoke-static {p0}, Landroidx/compose/runtime/Recomposer;->access$getWorkContinuation$p(Landroidx/compose/runtime/Recomposer;)Lkotlinx/coroutines/CancellableContinuation;
 
@@ -144,7 +144,7 @@
 
     if-eqz v0, :cond_1
 
-    .line 247
+    .line 257
     invoke-static {p0}, Landroidx/compose/runtime/Recomposer;->access$getWorkContinuation$p(Landroidx/compose/runtime/Recomposer;)Lkotlinx/coroutines/CancellableContinuation;
 
     move-result-object v0
@@ -155,11 +155,11 @@
     :goto_0
     move-object v0, v3
 
-    .line 249
+    .line 259
     :goto_1
     invoke-static {p0, v3}, Landroidx/compose/runtime/Recomposer;->access$setWorkContinuation$p(Landroidx/compose/runtime/Recomposer;Lkotlinx/coroutines/CancellableContinuation;)V
 
-    .line 250
+    .line 260
     new-instance v3, Landroidx/compose/runtime/Recomposer$effectJob$1$1$1$1;
 
     invoke-direct {v3, p0, p1}, Landroidx/compose/runtime/Recomposer$effectJob$1$1$1$1;-><init>(Landroidx/compose/runtime/Recomposer;Ljava/lang/Throwable;)V
@@ -172,13 +172,13 @@
 
     goto :goto_2
 
-    .line 261
+    .line 271
     :cond_2
     check-cast v0, Ljava/lang/Throwable;
 
     invoke-static {p0, v0}, Landroidx/compose/runtime/Recomposer;->access$setCloseCause$p(Landroidx/compose/runtime/Recomposer;Ljava/lang/Throwable;)V
 
-    .line 262
+    .line 272
     invoke-static {p0}, Landroidx/compose/runtime/Recomposer;->access$get_state$p(Landroidx/compose/runtime/Recomposer;)Lkotlinx/coroutines/flow/MutableStateFlow;
 
     move-result-object p0
@@ -191,13 +191,13 @@
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 1503
+    .line 1565
     :goto_2
     monitor-exit v1
 
     if-eqz v3, :cond_3
 
-    .line 265
+    .line 275
     check-cast v3, Lkotlin/coroutines/Continuation;
 
     sget-object p0, Lkotlin/Result;->Companion:Lkotlin/Result$Companion;
@@ -216,7 +216,7 @@
     :catchall_0
     move-exception p0
 
-    .line 1503
+    .line 1565
     monitor-exit v1
 
     throw p0

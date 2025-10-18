@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:id="@id/scrollView" android:layout_width="fill_parent" android:layout_height="wrap_content" android:fadeScrollbars="false" android:nestedScrollingEnabled="true">
+        <LinearLayout android:id="@id/content_container" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:id="@id/content" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <ImageView android:id="@id/image" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/tutorial_dialog_view_pager_image_port_margin_bottom" android:scaleType="fitCenter" android:adjustViewBounds="true" android:importantForAccessibility="no" />
+                <TextView android:textSize="@dimen/tutorial_dialog_view_pager_item_content_textSize" android:id="@id/description" android:layout_width="fill_parent" android:layout_height="wrap_content" android:importantForAccessibility="no" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

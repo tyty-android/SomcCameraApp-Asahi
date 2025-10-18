@@ -18,7 +18,7 @@
 
 .annotation runtime Lkotlin/Metadata;
     d1 = {
-        "\u0000<\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0008\u0003\n\u0002\u0010\u0002\n\u0000\n\u0002\u0010\u0007\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0002*\u0002\u0000\u0003\u0008\n\u0018\u00002\u00020\u0001J\u0010\u0010\u0005\u001a\u00020\u00062\u0006\u0010\u0007\u001a\u00020\u0008H\u0016JB\u0010\t\u001a\u00020\u00062\u0006\u0010\n\u001a\u00020\u000b2\'\u0010\u000c\u001a#\u0008\u0001\u0012\u0004\u0012\u00020\u000e\u0012\n\u0012\u0008\u0012\u0004\u0012\u00020\u00060\u000f\u0012\u0006\u0012\u0004\u0018\u00010\u00100\r\u00a2\u0006\u0002\u0008\u0011H\u0096@\u00f8\u0001\u0000\u00a2\u0006\u0002\u0010\u0012R\u0016\u0010\u0002\u001a\u0008\u0012\u0004\u0012\u00028\u00000\u0003X\u0082\u0004\u00a2\u0006\u0004\n\u0002\u0010\u0004\u0082\u0002\u0004\n\u0002\u0008\u0019\u00a8\u0006\u0013"
+        "\u0000<\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0008\u0003\n\u0002\u0010\u0002\n\u0000\n\u0002\u0010\u0007\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0002*\u0002\u0000\u0003\u0008\n\u0018\u00002\u00020\u0001J\u0010\u0010\u0005\u001a\u00020\u00062\u0006\u0010\u0007\u001a\u00020\u0008H\u0016J?\u0010\t\u001a\u00020\u00062\u0006\u0010\n\u001a\u00020\u000b2\'\u0010\u000c\u001a#\u0008\u0001\u0012\u0004\u0012\u00020\u000e\u0012\n\u0012\u0008\u0012\u0004\u0012\u00020\u00060\u000f\u0012\u0006\u0012\u0004\u0018\u00010\u00100\r\u00a2\u0006\u0002\u0008\u0011H\u0096@\u00a2\u0006\u0002\u0010\u0012R\u0016\u0010\u0002\u001a\u0008\u0012\u0004\u0012\u00028\u00000\u0003X\u0082\u0004\u00a2\u0006\u0004\n\u0002\u0010\u0004\u00a8\u0006\u0013"
     }
     d2 = {
         "androidx/compose/material/AnchoredDraggableState$draggableState$1",
@@ -85,10 +85,10 @@
 
     iput-object p1, p0, Landroidx/compose/material/AnchoredDraggableState$draggableState$1;->this$0:Landroidx/compose/material/AnchoredDraggableState;
 
-    .line 135
+    .line 267
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 137
+    .line 269
     new-instance v0, Landroidx/compose/material/AnchoredDraggableState$draggableState$1$dragScope$1;
 
     invoke-direct {v0, p1}, Landroidx/compose/material/AnchoredDraggableState$draggableState$1$dragScope$1;-><init>(Landroidx/compose/material/AnchoredDraggableState;)V
@@ -101,7 +101,7 @@
 .method public static final synthetic access$getDragScope$p(Landroidx/compose/material/AnchoredDraggableState$draggableState$1;)Landroidx/compose/material/AnchoredDraggableState$draggableState$1$dragScope$1;
     .locals 0
 
-    .line 135
+    .line 267
     iget-object p0, p0, Landroidx/compose/material/AnchoredDraggableState$draggableState$1;->dragScope:Landroidx/compose/material/AnchoredDraggableState$draggableState$1$dragScope$1;
 
     return-object p0
@@ -112,7 +112,7 @@
 .method public dispatchRawDelta(F)V
     .locals 0
 
-    .line 155
+    .line 287
     iget-object p0, p0, Landroidx/compose/material/AnchoredDraggableState$draggableState$1;->this$0:Landroidx/compose/material/AnchoredDraggableState;
 
     invoke-virtual {p0, p1}, Landroidx/compose/material/AnchoredDraggableState;->dispatchRawDelta(F)F
@@ -144,7 +144,7 @@
         }
     .end annotation
 
-    .line 149
+    .line 281
     iget-object v0, p0, Landroidx/compose/material/AnchoredDraggableState$draggableState$1;->this$0:Landroidx/compose/material/AnchoredDraggableState;
 
     new-instance v1, Landroidx/compose/material/AnchoredDraggableState$draggableState$1$drag$2;

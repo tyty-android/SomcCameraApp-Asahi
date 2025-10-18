@@ -53,7 +53,7 @@
     f = "LazyLayoutSemantics.kt"
     i = {}
     l = {
-        0x74
+        0x64
     }
     m = "invokeSuspend"
     n = {}
@@ -174,7 +174,7 @@
 
     move-result-object v0
 
-    .line 65535
+    .line 99
     iget v1, p0, Landroidx/compose/foundation/lazy/layout/LazyLayoutSemanticsKt$lazyLayoutSemantics$1$scrollToIndexAction$1$2;->label:I
 
     const/4 v2, 0x1
@@ -199,7 +199,7 @@
     :cond_1
     invoke-static {p1}, Lkotlin/ResultKt;->throwOnFailure(Ljava/lang/Object;)V
 
-    .line 116
+    .line 100
     iget-object p1, p0, Landroidx/compose/foundation/lazy/layout/LazyLayoutSemanticsKt$lazyLayoutSemantics$1$scrollToIndexAction$1$2;->$state:Landroidx/compose/foundation/lazy/layout/LazyLayoutSemanticState;
 
     iget v1, p0, Landroidx/compose/foundation/lazy/layout/LazyLayoutSemanticsKt$lazyLayoutSemantics$1$scrollToIndexAction$1$2;->$index:I
@@ -218,7 +218,7 @@
 
     return-object v0
 
-    .line 117
+    .line 101
     :cond_2
     :goto_0
     sget-object p0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;

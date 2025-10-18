@@ -60,7 +60,7 @@
 .method static constructor <clinit>()V
     .locals 3
 
-    .line 76
+    .line 78
     new-instance v0, Landroidx/compose/material/BackdropValue;
 
     const-string v1, "Concealed"
@@ -71,7 +71,7 @@
 
     sput-object v0, Landroidx/compose/material/BackdropValue;->Concealed:Landroidx/compose/material/BackdropValue;
 
-    .line 81
+    .line 83
     new-instance v0, Landroidx/compose/material/BackdropValue;
 
     const-string v1, "Revealed"
@@ -99,7 +99,7 @@
         }
     .end annotation
 
-    .line 71
+    .line 73
     invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
     return-void

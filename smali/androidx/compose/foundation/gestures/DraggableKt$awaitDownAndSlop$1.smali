@@ -5,7 +5,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Landroidx/compose/foundation/gestures/DraggableKt;->awaitDownAndSlop(Landroidx/compose/ui/input/pointer/AwaitPointerEventScope;Lkotlin/jvm/functions/Function1;Lkotlin/jvm/functions/Function0;Landroidx/compose/ui/input/pointer/util/VelocityTracker;Landroidx/compose/foundation/gestures/Orientation;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+    value = Landroidx/compose/foundation/gestures/DraggableKt;->awaitDownAndSlop(Landroidx/compose/ui/input/pointer/AwaitPointerEventScope;Lkotlin/jvm/functions/Function1;Lkotlin/jvm/functions/Function0;Landroidx/compose/ui/input/pointer/util/VelocityTracker;Landroidx/compose/foundation/gestures/PointerDirectionConfig;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -42,10 +42,6 @@
         0x2,
         0x2,
         0x2,
-        0x2,
-        0x2,
-        0x3,
-        0x3,
         0x3,
         0x3,
         0x3,
@@ -56,10 +52,10 @@
         0x3
     }
     l = {
-        0x1d8,
-        0x1e1,
-        0x258,
-        0x28a
+        0x23f,
+        0x248,
+        0x2b1,
+        0x2db
     }
     m = "awaitDownAndSlop"
     n = {
@@ -67,29 +63,25 @@
         "canDrag",
         "startDragImmediately",
         "velocityTracker",
-        "orientation",
+        "pointerDirectionConfig",
         "$this$awaitDownAndSlop",
         "velocityTracker",
-        "orientation",
+        "pointerDirectionConfig",
+        "pointerDirectionConfig",
         "initialDelta",
         "postPointerSlop",
-        "$this$awaitPointerSlopOrCancellation_u2dwtdNQyU_u24default$iv",
-        "pointerDirectionConfig$iv",
+        "$this$awaitPointerSlopOrCancellation_u2dpn7EDYM$iv",
         "pointer$iv",
-        "triggerOnMainAxisSlop$iv",
         "touchSlop$iv",
-        "totalMainPositionChange$iv",
-        "totalCrossPositionChange$iv",
+        "totalPositionChange$iv",
+        "pointerDirectionConfig",
         "initialDelta",
         "postPointerSlop",
-        "$this$awaitPointerSlopOrCancellation_u2dwtdNQyU_u24default$iv",
-        "pointerDirectionConfig$iv",
+        "$this$awaitPointerSlopOrCancellation_u2dpn7EDYM$iv",
         "pointer$iv",
         "dragEvent$iv",
-        "triggerOnMainAxisSlop$iv",
         "touchSlop$iv",
-        "totalMainPositionChange$iv",
-        "totalCrossPositionChange$iv"
+        "totalPositionChange$iv"
     }
     s = {
         "L$0",
@@ -105,20 +97,16 @@
         "L$2",
         "L$3",
         "L$4",
-        "I$0",
         "F$0",
-        "F$1",
-        "F$2",
+        "J$0",
         "L$0",
         "L$1",
         "L$2",
         "L$3",
         "L$4",
         "L$5",
-        "I$0",
         "F$0",
-        "F$1",
-        "F$2"
+        "J$0"
     }
 .end annotation
 
@@ -126,11 +114,7 @@
 # instance fields
 .field F$0:F
 
-.field F$1:F
-
-.field F$2:F
-
-.field I$0:I
+.field J$0:J
 
 .field L$0:Ljava/lang/Object;
 
@@ -196,7 +180,7 @@
 
     const/4 v3, 0x0
 
-    invoke-static/range {v0 .. v5}, Landroidx/compose/foundation/gestures/DraggableKt;->access$awaitDownAndSlop(Landroidx/compose/ui/input/pointer/AwaitPointerEventScope;Lkotlin/jvm/functions/Function1;Lkotlin/jvm/functions/Function0;Landroidx/compose/ui/input/pointer/util/VelocityTracker;Landroidx/compose/foundation/gestures/Orientation;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+    invoke-static/range {v0 .. v5}, Landroidx/compose/foundation/gestures/DraggableKt;->access$awaitDownAndSlop(Landroidx/compose/ui/input/pointer/AwaitPointerEventScope;Lkotlin/jvm/functions/Function1;Lkotlin/jvm/functions/Function0;Landroidx/compose/ui/input/pointer/util/VelocityTracker;Landroidx/compose/foundation/gestures/PointerDirectionConfig;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
 
     move-result-object p0
 

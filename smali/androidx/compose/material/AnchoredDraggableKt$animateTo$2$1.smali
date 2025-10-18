@@ -76,7 +76,7 @@
 .method public bridge synthetic invoke(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
 
-    .line 586
+    .line 696
     check-cast p1, Ljava/lang/Number;
 
     invoke-virtual {p1}, Ljava/lang/Number;->floatValue()F
@@ -99,12 +99,12 @@
 .method public final invoke(FF)V
     .locals 1
 
-    .line 591
+    .line 701
     iget-object v0, p0, Landroidx/compose/material/AnchoredDraggableKt$animateTo$2$1;->$$this$anchoredDrag:Landroidx/compose/material/AnchoredDragScope;
 
     invoke-interface {v0, p1, p2}, Landroidx/compose/material/AnchoredDragScope;->dragTo(FF)V
 
-    .line 592
+    .line 702
     iget-object p0, p0, Landroidx/compose/material/AnchoredDraggableKt$animateTo$2$1;->$prev:Lkotlin/jvm/internal/Ref$FloatRef;
 
     iput p1, p0, Lkotlin/jvm/internal/Ref$FloatRef;->element:F

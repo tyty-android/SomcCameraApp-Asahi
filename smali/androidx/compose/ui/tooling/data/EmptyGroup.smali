@@ -1,6 +1,6 @@
 .class final Landroidx/compose/ui/tooling/data/EmptyGroup;
 .super Landroidx/compose/ui/tooling/data/Group;
-.source "SlotTree.kt"
+.source "SlotTree.jvm.kt"
 
 
 # annotations
@@ -44,12 +44,12 @@
 .method private constructor <init>()V
     .locals 10
 
-    .line 177
+    .line 179
     invoke-static {}, Landroidx/compose/ui/tooling/data/SlotTreeKt;->getEmptyBox()Landroidx/compose/ui/unit/IntRect;
 
     move-result-object v5
 
-    .line 178
+    .line 180
     invoke-static {}, Lkotlin/collections/CollectionsKt;->emptyList()Ljava/util/List;
 
     move-result-object v0
@@ -58,7 +58,7 @@
 
     check-cast v6, Ljava/util/Collection;
 
-    .line 179
+    .line 181
     invoke-static {}, Lkotlin/collections/CollectionsKt;->emptyList()Ljava/util/List;
 
     move-result-object v0
@@ -81,7 +81,7 @@
 
     move-object v0, p0
 
-    .line 172
+    .line 174
     invoke-direct/range {v0 .. v9}, Landroidx/compose/ui/tooling/data/Group;-><init>(Ljava/lang/Object;Ljava/lang/String;Landroidx/compose/ui/tooling/data/SourceLocation;Ljava/lang/Object;Landroidx/compose/ui/unit/IntRect;Ljava/util/Collection;Ljava/util/Collection;ZLkotlin/jvm/internal/DefaultConstructorMarker;)V
 
     return-void

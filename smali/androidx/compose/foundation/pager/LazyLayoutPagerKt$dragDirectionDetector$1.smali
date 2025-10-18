@@ -53,7 +53,7 @@
     f = "LazyLayoutPager.kt"
     i = {}
     l = {
-        0x109
+        0x112
     }
     m = "invokeSuspend"
     n = {}
@@ -171,7 +171,7 @@
 
     move-result-object v0
 
-    .line 264
+    .line 273
     iget v1, p0, Landroidx/compose/foundation/pager/LazyLayoutPagerKt$dragDirectionDetector$1;->label:I
 
     const/4 v2, 0x1
@@ -200,7 +200,7 @@
 
     check-cast p1, Landroidx/compose/ui/input/pointer/PointerInputScope;
 
-    .line 265
+    .line 274
     new-instance v1, Landroidx/compose/foundation/pager/LazyLayoutPagerKt$dragDirectionDetector$1$1;
 
     iget-object v3, p0, Landroidx/compose/foundation/pager/LazyLayoutPagerKt$dragDirectionDetector$1;->$state:Landroidx/compose/foundation/pager/PagerState;
@@ -225,7 +225,7 @@
 
     return-object v0
 
-    .line 281
+    .line 291
     :cond_2
     :goto_0
     sget-object p0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;

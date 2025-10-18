@@ -76,7 +76,7 @@
 .method public final invoke()Landroidx/compose/ui/text/font/Font$ResourceLoader;
     .locals 0
 
-    .line 103
+    .line 102
     const-string p0, "LocalFontLoader"
 
     invoke-static {p0}, Landroidx/compose/ui/platform/CompositionLocalsKt;->access$noLocalProvidedFor(Ljava/lang/String;)Ljava/lang/Void;
@@ -91,7 +91,7 @@
 .method public bridge synthetic invoke()Ljava/lang/Object;
     .locals 0
 
-    .line 102
+    .line 101
     invoke-virtual {p0}, Landroidx/compose/ui/platform/CompositionLocalsKt$LocalFontLoader$1;->invoke()Landroidx/compose/ui/text/font/Font$ResourceLoader;
 
     move-result-object p0

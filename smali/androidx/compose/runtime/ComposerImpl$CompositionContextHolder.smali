@@ -3,7 +3,7 @@
 .source "Composer.kt"
 
 # interfaces
-.implements Landroidx/compose/runtime/RememberObserver;
+.implements Landroidx/compose/runtime/ReusableRememberObserver;
 
 
 # annotations
@@ -22,7 +22,7 @@
     }
     d2 = {
         "Landroidx/compose/runtime/ComposerImpl$CompositionContextHolder;",
-        "Landroidx/compose/runtime/RememberObserver;",
+        "Landroidx/compose/runtime/ReusableRememberObserver;",
         "ref",
         "Landroidx/compose/runtime/ComposerImpl$CompositionContextImpl;",
         "Landroidx/compose/runtime/ComposerImpl;",
@@ -51,16 +51,12 @@
 
 # direct methods
 .method public constructor <init>(Landroidx/compose/runtime/ComposerImpl$CompositionContextImpl;)V
-    .locals 1
+    .locals 0
 
-    const-string v0, "ref"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 3944
+    .line 3533
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 3946
+    .line 3535
     iput-object p1, p0, Landroidx/compose/runtime/ComposerImpl$CompositionContextHolder;->ref:Landroidx/compose/runtime/ComposerImpl$CompositionContextImpl;
 
     return-void
@@ -71,7 +67,7 @@
 .method public final getRef()Landroidx/compose/runtime/ComposerImpl$CompositionContextImpl;
     .locals 0
 
-    .line 3946
+    .line 3535
     iget-object p0, p0, Landroidx/compose/runtime/ComposerImpl$CompositionContextHolder;->ref:Landroidx/compose/runtime/ComposerImpl$CompositionContextImpl;
 
     return-object p0
@@ -80,7 +76,7 @@
 .method public onAbandoned()V
     .locals 0
 
-    .line 3950
+    .line 3539
     iget-object p0, p0, Landroidx/compose/runtime/ComposerImpl$CompositionContextHolder;->ref:Landroidx/compose/runtime/ComposerImpl$CompositionContextImpl;
 
     invoke-virtual {p0}, Landroidx/compose/runtime/ComposerImpl$CompositionContextImpl;->dispose()V
@@ -91,7 +87,7 @@
 .method public onForgotten()V
     .locals 0
 
-    .line 3953
+    .line 3542
     iget-object p0, p0, Landroidx/compose/runtime/ComposerImpl$CompositionContextHolder;->ref:Landroidx/compose/runtime/ComposerImpl$CompositionContextImpl;
 
     invoke-virtual {p0}, Landroidx/compose/runtime/ComposerImpl$CompositionContextImpl;->dispose()V

@@ -37,7 +37,7 @@
 
 .field private mItemType:Ljp/co/sony/mc/camera/view/setting/settingitem/CameraSettingItem$CameraSettingValueItem$ItemType;
 
-.field private mNameResId:I
+.field private mNameString:Ljava/lang/String;
 
 .field private mSubDescriptionText:Ljava/lang/String;
 
@@ -56,7 +56,7 @@
 .method private constructor <init>()V
     .locals 0
 
-    .line 594
+    .line 604
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -75,12 +75,12 @@
 .method build()Ljp/co/sony/mc/camera/view/setting/settingitem/CameraSettingItem$CameraSettingValueItem;
     .locals 12
 
-    .line 670
+    .line 680
     new-instance v11, Ljp/co/sony/mc/camera/view/setting/settingitem/CameraSettingItem$CameraSettingValueItem;
 
     iget-object v1, p0, Ljp/co/sony/mc/camera/view/setting/settingitem/CameraSettingItemBuilder$UserSettingValueItemBuilder;->mValue:Ljp/co/sony/mc/camera/configuration/parameters/UserSettingValue;
 
-    iget v2, p0, Ljp/co/sony/mc/camera/view/setting/settingitem/CameraSettingItemBuilder$UserSettingValueItemBuilder;->mNameResId:I
+    iget-object v2, p0, Ljp/co/sony/mc/camera/view/setting/settingitem/CameraSettingItemBuilder$UserSettingValueItemBuilder;->mNameString:Ljava/lang/String;
 
     iget-object v3, p0, Ljp/co/sony/mc/camera/view/setting/settingitem/CameraSettingItemBuilder$UserSettingValueItemBuilder;->mItemType:Ljp/co/sony/mc/camera/view/setting/settingitem/CameraSettingItem$CameraSettingValueItem$ItemType;
 
@@ -100,7 +100,7 @@
 
     move-object v0, v11
 
-    invoke-direct/range {v0 .. v10}, Ljp/co/sony/mc/camera/view/setting/settingitem/CameraSettingItem$CameraSettingValueItem;-><init>(Ljp/co/sony/mc/camera/configuration/parameters/UserSettingValue;ILjp/co/sony/mc/camera/view/setting/settingitem/CameraSettingItem$CameraSettingValueItem$ItemType;Ljava/lang/String;Ljava/lang/String;ZLjp/co/sony/mc/camera/setting/SettingAppearance;ZLjava/util/ArrayList;Z)V
+    invoke-direct/range {v0 .. v10}, Ljp/co/sony/mc/camera/view/setting/settingitem/CameraSettingItem$CameraSettingValueItem;-><init>(Ljp/co/sony/mc/camera/configuration/parameters/UserSettingValue;Ljava/lang/String;Ljp/co/sony/mc/camera/view/setting/settingitem/CameraSettingItem$CameraSettingValueItem$ItemType;Ljava/lang/String;Ljava/lang/String;ZLjp/co/sony/mc/camera/setting/SettingAppearance;ZLjava/util/ArrayList;Z)V
 
     return-object v11
 .end method
@@ -108,7 +108,7 @@
 .method setAdditionalTextForAccessibility(Ljava/lang/String;)Ljp/co/sony/mc/camera/view/setting/settingitem/CameraSettingItemBuilder$UserSettingValueItemBuilder;
     .locals 0
 
-    .line 639
+    .line 649
     iput-object p1, p0, Ljp/co/sony/mc/camera/view/setting/settingitem/CameraSettingItemBuilder$UserSettingValueItemBuilder;->mAdditionalTextForAccessibility:Ljava/lang/String;
 
     return-object p0
@@ -117,7 +117,7 @@
 .method setAppearance(Ljp/co/sony/mc/camera/setting/SettingAppearance;)Ljp/co/sony/mc/camera/view/setting/settingitem/CameraSettingItemBuilder$UserSettingValueItemBuilder;
     .locals 0
 
-    .line 649
+    .line 659
     iput-object p1, p0, Ljp/co/sony/mc/camera/view/setting/settingitem/CameraSettingItemBuilder$UserSettingValueItemBuilder;->mAppearance:Ljp/co/sony/mc/camera/setting/SettingAppearance;
 
     return-object p0
@@ -135,7 +135,7 @@
         }
     .end annotation
 
-    .line 660
+    .line 670
     iput-object p1, p0, Ljp/co/sony/mc/camera/view/setting/settingitem/CameraSettingItemBuilder$UserSettingValueItemBuilder;->mDependencyGuideList:Ljava/util/ArrayList;
 
     return-object p0
@@ -144,7 +144,7 @@
 .method setIsOffValue(Z)Ljp/co/sony/mc/camera/view/setting/settingitem/CameraSettingItemBuilder$UserSettingValueItemBuilder;
     .locals 0
 
-    .line 654
+    .line 664
     iput-boolean p1, p0, Ljp/co/sony/mc/camera/view/setting/settingitem/CameraSettingItemBuilder$UserSettingValueItemBuilder;->mIsOffValue:Z
 
     return-object p0
@@ -153,7 +153,7 @@
 .method setIsSelected(Z)Ljp/co/sony/mc/camera/view/setting/settingitem/CameraSettingItemBuilder$UserSettingValueItemBuilder;
     .locals 0
 
-    .line 644
+    .line 654
     iput-boolean p1, p0, Ljp/co/sony/mc/camera/view/setting/settingitem/CameraSettingItemBuilder$UserSettingValueItemBuilder;->mIsSelected:Z
 
     return-object p0
@@ -162,7 +162,7 @@
 .method setIsVisible(Z)Ljp/co/sony/mc/camera/view/setting/settingitem/CameraSettingItemBuilder$UserSettingValueItemBuilder;
     .locals 0
 
-    .line 665
+    .line 675
     iput-boolean p1, p0, Ljp/co/sony/mc/camera/view/setting/settingitem/CameraSettingItemBuilder$UserSettingValueItemBuilder;->mIsVisible:Z
 
     return-object p0
@@ -171,17 +171,17 @@
 .method setItemType(Ljp/co/sony/mc/camera/view/setting/settingitem/CameraSettingItem$CameraSettingValueItem$ItemType;)Ljp/co/sony/mc/camera/view/setting/settingitem/CameraSettingItemBuilder$UserSettingValueItemBuilder;
     .locals 0
 
-    .line 623
+    .line 633
     iput-object p1, p0, Ljp/co/sony/mc/camera/view/setting/settingitem/CameraSettingItemBuilder$UserSettingValueItemBuilder;->mItemType:Ljp/co/sony/mc/camera/view/setting/settingitem/CameraSettingItem$CameraSettingValueItem$ItemType;
 
     return-object p0
 .end method
 
-.method setNameResId(I)Ljp/co/sony/mc/camera/view/setting/settingitem/CameraSettingItemBuilder$UserSettingValueItemBuilder;
+.method setNameString(Ljava/lang/String;)Ljp/co/sony/mc/camera/view/setting/settingitem/CameraSettingItemBuilder$UserSettingValueItemBuilder;
     .locals 0
 
-    .line 628
-    iput p1, p0, Ljp/co/sony/mc/camera/view/setting/settingitem/CameraSettingItemBuilder$UserSettingValueItemBuilder;->mNameResId:I
+    .line 638
+    iput-object p1, p0, Ljp/co/sony/mc/camera/view/setting/settingitem/CameraSettingItemBuilder$UserSettingValueItemBuilder;->mNameString:Ljava/lang/String;
 
     return-object p0
 .end method
@@ -189,7 +189,7 @@
 .method setSubDescriptionText(Ljava/lang/String;)Ljp/co/sony/mc/camera/view/setting/settingitem/CameraSettingItemBuilder$UserSettingValueItemBuilder;
     .locals 0
 
-    .line 633
+    .line 643
     iput-object p1, p0, Ljp/co/sony/mc/camera/view/setting/settingitem/CameraSettingItemBuilder$UserSettingValueItemBuilder;->mSubDescriptionText:Ljava/lang/String;
 
     return-object p0
@@ -198,7 +198,7 @@
 .method setUserSettingValue(Ljp/co/sony/mc/camera/configuration/parameters/UserSettingValue;)Ljp/co/sony/mc/camera/view/setting/settingitem/CameraSettingItemBuilder$UserSettingValueItemBuilder;
     .locals 0
 
-    .line 617
+    .line 627
     iput-object p1, p0, Ljp/co/sony/mc/camera/view/setting/settingitem/CameraSettingItemBuilder$UserSettingValueItemBuilder;->mValue:Ljp/co/sony/mc/camera/configuration/parameters/UserSettingValue;
 
     return-object p0

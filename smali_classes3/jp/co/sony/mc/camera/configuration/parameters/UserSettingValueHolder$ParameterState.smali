@@ -93,7 +93,7 @@
 .end method
 
 .method public dumpStackTrace()V
-    .locals 3
+    .locals 6
 
     .line 206
     invoke-static {}, Ljava/lang/Thread;->currentThread()Ljava/lang/Thread;
@@ -104,67 +104,71 @@
 
     move-result-object p0
 
-    .line 207
-    const-string v0, "## dump stack trace ..."
-
-    filled-new-array {v0}, [Ljava/lang/String;
-
-    move-result-object v0
-
-    invoke-static {v0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
-
     const/4 v0, 0x1
 
-    .line 208
-    :goto_0
-    array-length v1, p0
+    .line 207
+    new-array v1, v0, [Ljava/lang/String;
 
-    if-ge v0, v1, :cond_0
+    const-string v2, "## dump stack trace ..."
 
-    .line 209
-    new-instance v1, Ljava/lang/StringBuilder;
+    const/4 v3, 0x0
 
-    const-string/jumbo v2, "trace:"
-
-    invoke-direct {v1, v2}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
-
-    aget-object v2, p0, v0
-
-    invoke-virtual {v2}, Ljava/lang/StackTraceElement;->getClassName()Ljava/lang/String;
-
-    move-result-object v2
-
-    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v1
-
-    const-string v2, "#"
-
-    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v1
-
-    aget-object v2, p0, v0
-
-    invoke-virtual {v2}, Ljava/lang/StackTraceElement;->getMethodName()Ljava/lang/String;
-
-    move-result-object v2
-
-    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v1
-
-    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v1
-
-    filled-new-array {v1}, [Ljava/lang/String;
-
-    move-result-object v1
+    aput-object v2, v1, v3
 
     invoke-static {v1}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
-    add-int/lit8 v0, v0, 0x1
+    move v1, v0
+
+    .line 208
+    :goto_0
+    array-length v2, p0
+
+    if-ge v1, v2, :cond_0
+
+    .line 209
+    new-array v2, v0, [Ljava/lang/String;
+
+    new-instance v4, Ljava/lang/StringBuilder;
+
+    const-string/jumbo v5, "trace:"
+
+    invoke-direct {v4, v5}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+
+    aget-object v5, p0, v1
+
+    invoke-virtual {v5}, Ljava/lang/StackTraceElement;->getClassName()Ljava/lang/String;
+
+    move-result-object v5
+
+    invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v4
+
+    const-string v5, "#"
+
+    invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v4
+
+    aget-object v5, p0, v1
+
+    invoke-virtual {v5}, Ljava/lang/StackTraceElement;->getMethodName()Ljava/lang/String;
+
+    move-result-object v5
+
+    invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v4
+
+    invoke-virtual {v4}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v4
+
+    aput-object v4, v2, v3
+
+    invoke-static {v2}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
+
+    add-int/lit8 v1, v1, 0x1
 
     goto :goto_0
 
@@ -226,7 +230,7 @@
 .end method
 
 .method public final setCurrentValue(Ljp/co/sony/mc/camera/configuration/parameters/UserSettingValue;)V
-    .locals 2
+    .locals 3
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TT;)V"
@@ -236,12 +240,12 @@
     .line 214
     iget-object v0, p0, Ljp/co/sony/mc/camera/configuration/parameters/UserSettingValueHolder$ParameterState;->mCurrentValue:Ljp/co/sony/mc/camera/configuration/parameters/UserSettingValue;
 
+    const/4 v1, 0x1
+
     if-eq v0, p1, :cond_0
 
     .line 215
     iget-object v0, p0, Ljp/co/sony/mc/camera/configuration/parameters/UserSettingValueHolder$ParameterState;->this$0:Ljp/co/sony/mc/camera/configuration/parameters/UserSettingValueHolder;
-
-    const/4 v1, 0x1
 
     invoke-static {v0, v1}, Ljp/co/sony/mc/camera/configuration/parameters/UserSettingValueHolder;->-$$Nest$fputmChanged(Ljp/co/sony/mc/camera/configuration/parameters/UserSettingValueHolder;Z)V
 
@@ -249,37 +253,39 @@
     if-nez p1, :cond_1
 
     .line 218
-    new-instance v0, Ljava/lang/StringBuilder;
+    new-array v0, v1, [Ljava/lang/String;
 
-    const-string v1, "["
+    new-instance v1, Ljava/lang/StringBuilder;
 
-    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+    const-string v2, "["
+
+    invoke-direct {v1, v2}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
     invoke-virtual {p0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
+    move-result-object v2
+
+    invoke-virtual {v2}, Ljava/lang/Class;->getSimpleName()Ljava/lang/String;
+
+    move-result-object v2
+
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
     move-result-object v1
 
-    invoke-virtual {v1}, Ljava/lang/Class;->getSimpleName()Ljava/lang/String;
+    const-string v2, "] setCurrentValue() mCurrentValue: null"
+
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v1
 
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    move-result-object v0
+    move-result-object v1
 
-    const-string v1, "] setCurrentValue() mCurrentValue: null"
+    const/4 v2, 0x0
 
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v0
-
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v0
-
-    filled-new-array {v0}, [Ljava/lang/String;
-
-    move-result-object v0
+    aput-object v1, v0, v2
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 

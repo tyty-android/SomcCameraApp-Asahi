@@ -101,10 +101,6 @@
 .method public final invoke-pweu1eQ(Landroidx/compose/ui/graphics/vector/PathComponent;I)V
     .locals 0
 
-    const-string p0, "$this$set"
-
-    invoke-static {p1, p0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
     .line 121
     invoke-virtual {p1, p2}, Landroidx/compose/ui/graphics/vector/PathComponent;->setPathFillType-oQ8Xj4U(I)V
 

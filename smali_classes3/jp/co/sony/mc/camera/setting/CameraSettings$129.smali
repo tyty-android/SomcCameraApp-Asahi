@@ -21,7 +21,7 @@
 .method constructor <init>()V
     .locals 0
 
-    .line 1594
+    .line 1651
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -46,13 +46,13 @@
         }
     .end annotation
 
-    .line 1598
+    .line 1655
     check-cast p1, Ljp/co/sony/mc/camera/setting/CameraSettings;
 
-    .line 1599
-    check-cast p3, Ljp/co/sony/mc/camera/configuration/parameters/Peaking;
+    .line 1656
+    check-cast p3, Ljava/lang/Float;
 
-    invoke-static {p1, p3}, Ljp/co/sony/mc/camera/setting/CameraSettings;->-$$Nest$msetPeaking(Ljp/co/sony/mc/camera/setting/CameraSettings;Ljp/co/sony/mc/camera/configuration/parameters/Peaking;)Z
+    invoke-virtual {p1, p3}, Ljp/co/sony/mc/camera/setting/CameraSettings;->setAmberBlue(Ljava/lang/Float;)Z
 
     move-result p0
 

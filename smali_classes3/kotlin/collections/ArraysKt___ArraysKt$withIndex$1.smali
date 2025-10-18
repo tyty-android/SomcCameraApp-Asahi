@@ -78,7 +78,7 @@
 .method public bridge synthetic invoke()Ljava/lang/Object;
     .locals 0
 
-    .line 11490
+    .line 11527
     invoke-virtual {p0}, Lkotlin/collections/ArraysKt___ArraysKt$withIndex$1;->invoke()Ljava/util/Iterator;
 
     move-result-object p0
@@ -96,7 +96,7 @@
         }
     .end annotation
 
-    .line 11490
+    .line 11527
     iget-object p0, p0, Lkotlin/collections/ArraysKt___ArraysKt$withIndex$1;->$this_withIndex:[Ljava/lang/Object;
 
     invoke-static {p0}, Lkotlin/jvm/internal/ArrayIteratorKt;->iterator([Ljava/lang/Object;)Ljava/util/Iterator;

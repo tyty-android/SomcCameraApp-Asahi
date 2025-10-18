@@ -5,7 +5,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Landroidx/compose/foundation/gestures/TransformableKt;->detectZoom(Landroidx/compose/ui/input/pointer/AwaitPointerEventScope;Landroidx/compose/runtime/State;Lkotlinx/coroutines/channels/Channel;Landroidx/compose/runtime/State;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+    value = Landroidx/compose/foundation/gestures/TransformableKt;->detectZoom(Landroidx/compose/ui/input/pointer/AwaitPointerEventScope;ZLkotlinx/coroutines/channels/Channel;Lkotlin/jvm/functions/Function1;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -61,16 +61,16 @@
         0x2
     }
     l = {
-        0xa9,
-        0xab,
-        0xd7
+        0xd8,
+        0xda,
+        0x106
     }
     m = "detectZoom"
     n = {
         "$this$detectZoom",
-        "panZoomLock",
         "channel",
         "canPan",
+        "panZoomLock",
         "rotation",
         "zoom",
         "pan",
@@ -78,9 +78,9 @@
         "touchSlop",
         "lockedToPanZoom",
         "$this$detectZoom",
-        "panZoomLock",
         "channel",
         "canPan",
+        "panZoomLock",
         "rotation",
         "zoom",
         "pan",
@@ -88,10 +88,10 @@
         "touchSlop",
         "lockedToPanZoom",
         "$this$detectZoom",
-        "panZoomLock",
         "channel",
         "canPan",
         "event",
+        "panZoomLock",
         "rotation",
         "zoom",
         "pan",
@@ -104,7 +104,17 @@
         "L$0",
         "L$1",
         "L$2",
-        "L$3",
+        "Z$0",
+        "F$0",
+        "F$1",
+        "J$0",
+        "I$0",
+        "F$2",
+        "I$1",
+        "L$0",
+        "L$1",
+        "L$2",
+        "Z$0",
         "F$0",
         "F$1",
         "J$0",
@@ -115,17 +125,7 @@
         "L$1",
         "L$2",
         "L$3",
-        "F$0",
-        "F$1",
-        "J$0",
-        "I$0",
-        "F$2",
-        "I$1",
-        "L$0",
-        "L$1",
-        "L$2",
-        "L$3",
-        "L$4",
+        "Z$0",
         "F$0",
         "F$1",
         "J$0",
@@ -160,7 +160,7 @@
 
 .field L$3:Ljava/lang/Object;
 
-.field L$4:Ljava/lang/Object;
+.field Z$0:Z
 
 .field label:I
 
@@ -204,7 +204,9 @@
 
     check-cast p0, Lkotlin/coroutines/Continuation;
 
-    invoke-static {p1, p1, p1, p1, p0}, Landroidx/compose/foundation/gestures/TransformableKt;->access$detectZoom(Landroidx/compose/ui/input/pointer/AwaitPointerEventScope;Landroidx/compose/runtime/State;Lkotlinx/coroutines/channels/Channel;Landroidx/compose/runtime/State;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+    const/4 v0, 0x0
+
+    invoke-static {v0, p1, v0, v0, p0}, Landroidx/compose/foundation/gestures/TransformableKt;->access$detectZoom(Landroidx/compose/ui/input/pointer/AwaitPointerEventScope;ZLkotlinx/coroutines/channels/Channel;Lkotlin/jvm/functions/Function1;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
 
     move-result-object p0
 

@@ -335,10 +335,15 @@
 
     if-eqz p1, :cond_1
 
-    const/16 v1, 0x8
+    const/16 p1, 0x8
+
+    goto :goto_1
 
     :cond_1
-    invoke-virtual {v0, v1}, Lcom/google/android/material/chip/Chip;->setVisibility(I)V
+    move p1, v1
+
+    :goto_1
+    invoke-virtual {v0, p1}, Lcom/google/android/material/chip/Chip;->setVisibility(I)V
 
     .line 110
     invoke-virtual {p0}, Lcom/google/android/material/timepicker/ChipTextInputComboView;->isChecked()Z
@@ -350,7 +355,7 @@
     .line 111
     iget-object p0, p0, Lcom/google/android/material/timepicker/ChipTextInputComboView;->editText:Landroid/widget/EditText;
 
-    invoke-static {p0}, Lcom/google/android/material/internal/ViewUtils;->requestFocusAndShowKeyboard(Landroid/view/View;)V
+    invoke-static {p0, v1}, Lcom/google/android/material/internal/ViewUtils;->requestFocusAndShowKeyboard(Landroid/view/View;Z)V
 
     :cond_2
     return-void

@@ -96,7 +96,7 @@
 .method public final invoke(F)Ljava/lang/Float;
     .locals 2
 
-    .line 336
+    .line 339
     iget-object v0, p0, Landroidx/compose/material/SliderKt$RangeSlider$2$2;->$valueRange:Lkotlin/ranges/ClosedFloatingPointRange;
 
     iget-object v1, p0, Landroidx/compose/material/SliderKt$RangeSlider$2$2;->$minPx:Lkotlin/jvm/internal/Ref$FloatRef;
@@ -117,7 +117,7 @@
 .method public bridge synthetic invoke(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
 
-    .line 336
+    .line 339
     check-cast p1, Ljava/lang/Number;
 
     invoke-virtual {p1}, Ljava/lang/Number;->floatValue()F

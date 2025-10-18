@@ -1,6 +1,6 @@
 .class final Landroidx/compose/ui/tooling/animation/PreviewAnimationClock$trackUnsupported$1;
 .super Lkotlin/jvm/internal/Lambda;
-.source "PreviewAnimationClock.kt"
+.source "PreviewAnimationClock.android.kt"
 
 # interfaces
 .implements Lkotlin/jvm/functions/Function1;
@@ -54,12 +54,12 @@
 
 
 # direct methods
-.method constructor <init>(Ljava/lang/String;Landroidx/compose/ui/tooling/animation/PreviewAnimationClock;)V
+.method constructor <init>(Landroidx/compose/ui/tooling/animation/PreviewAnimationClock;Ljava/lang/String;)V
     .locals 0
 
-    iput-object p1, p0, Landroidx/compose/ui/tooling/animation/PreviewAnimationClock$trackUnsupported$1;->$label:Ljava/lang/String;
+    iput-object p1, p0, Landroidx/compose/ui/tooling/animation/PreviewAnimationClock$trackUnsupported$1;->this$0:Landroidx/compose/ui/tooling/animation/PreviewAnimationClock;
 
-    iput-object p2, p0, Landroidx/compose/ui/tooling/animation/PreviewAnimationClock$trackUnsupported$1;->this$0:Landroidx/compose/ui/tooling/animation/PreviewAnimationClock;
+    iput-object p2, p0, Landroidx/compose/ui/tooling/animation/PreviewAnimationClock$trackUnsupported$1;->$label:Ljava/lang/String;
 
     const/4 p1, 0x1
 
@@ -73,7 +73,7 @@
 .method public bridge synthetic invoke(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
 
-    .line 188
+    .line 199
     invoke-virtual {p0, p1}, Landroidx/compose/ui/tooling/animation/PreviewAnimationClock$trackUnsupported$1;->invoke(Ljava/lang/Object;)V
 
     sget-object p0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
@@ -82,37 +82,14 @@
 .end method
 
 .method public final invoke(Ljava/lang/Object;)V
-    .locals 1
+    .locals 0
 
-    const-string v0, "it"
+    .line 200
+    iget-object p1, p0, Landroidx/compose/ui/tooling/animation/PreviewAnimationClock$trackUnsupported$1;->this$0:Landroidx/compose/ui/tooling/animation/PreviewAnimationClock;
 
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+    iget-object p0, p0, Landroidx/compose/ui/tooling/animation/PreviewAnimationClock$trackUnsupported$1;->$label:Ljava/lang/String;
 
-    .line 189
-    sget-object p1, Landroidx/compose/ui/tooling/animation/UnsupportedComposeAnimation;->Companion:Landroidx/compose/ui/tooling/animation/UnsupportedComposeAnimation$Companion;
+    invoke-static {p1, p0}, Landroidx/compose/ui/tooling/animation/PreviewAnimationClock;->access$createUnsupported(Landroidx/compose/ui/tooling/animation/PreviewAnimationClock;Ljava/lang/String;)V
 
-    iget-object v0, p0, Landroidx/compose/ui/tooling/animation/PreviewAnimationClock$trackUnsupported$1;->$label:Ljava/lang/String;
-
-    invoke-virtual {p1, v0}, Landroidx/compose/ui/tooling/animation/UnsupportedComposeAnimation$Companion;->create(Ljava/lang/String;)Landroidx/compose/ui/tooling/animation/UnsupportedComposeAnimation;
-
-    move-result-object p1
-
-    if-eqz p1, :cond_0
-
-    iget-object p0, p0, Landroidx/compose/ui/tooling/animation/PreviewAnimationClock$trackUnsupported$1;->this$0:Landroidx/compose/ui/tooling/animation/PreviewAnimationClock;
-
-    .line 190
-    invoke-virtual {p0}, Landroidx/compose/ui/tooling/animation/PreviewAnimationClock;->getTrackedUnsupportedAnimations()Ljava/util/LinkedHashSet;
-
-    move-result-object v0
-
-    invoke-virtual {v0, p1}, Ljava/util/LinkedHashSet;->add(Ljava/lang/Object;)Z
-
-    .line 191
-    check-cast p1, Landroidx/compose/animation/tooling/ComposeAnimation;
-
-    invoke-virtual {p0, p1}, Landroidx/compose/ui/tooling/animation/PreviewAnimationClock;->notifySubscribe(Landroidx/compose/animation/tooling/ComposeAnimation;)V
-
-    :cond_0
     return-void
 .end method

@@ -21,7 +21,7 @@
 .method constructor <init>()V
     .locals 0
 
-    .line 549
+    .line 552
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -42,10 +42,10 @@
         }
     .end annotation
 
-    .line 552
+    .line 555
     check-cast p1, Ljp/co/sony/mc/camera/setting/CommonSettings;
 
-    .line 553
+    .line 556
     invoke-static {p1}, Ljp/co/sony/mc/camera/setting/CommonSettings;->-$$Nest$mgetHapticFeedback(Ljp/co/sony/mc/camera/setting/CommonSettings;)Ljp/co/sony/mc/camera/configuration/parameters/HapticFeedback;
 
     move-result-object p0

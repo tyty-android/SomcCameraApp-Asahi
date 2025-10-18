@@ -21,7 +21,7 @@
 .method constructor <init>()V
     .locals 0
 
-    .line 1506
+    .line 1563
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -46,13 +46,13 @@
         }
     .end annotation
 
-    .line 1510
+    .line 1567
     check-cast p1, Ljp/co/sony/mc/camera/setting/CameraSettings;
 
-    .line 1511
-    check-cast p3, Ljava/lang/Integer;
+    .line 1568
+    check-cast p3, Ljp/co/sony/mc/camera/configuration/parameters/WhiteBalance;
 
-    invoke-virtual {p1, p3}, Ljp/co/sony/mc/camera/setting/CameraSettings;->setBrightness(Ljava/lang/Integer;)Z
+    invoke-static {p1, p3}, Ljp/co/sony/mc/camera/setting/CameraSettings;->-$$Nest$msetWhiteBalance(Ljp/co/sony/mc/camera/setting/CameraSettings;Ljp/co/sony/mc/camera/configuration/parameters/WhiteBalance;)Z
 
     move-result p0
 

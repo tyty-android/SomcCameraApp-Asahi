@@ -190,23 +190,6 @@
     return-object p0
 .end method
 
-.method private static getLeftItemCount(Landroid/content/Context;)I
-    .locals 1
-
-    .line 214
-    invoke-virtual {p0}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
-
-    move-result-object p0
-
-    const v0, 0x7f0a0051
-
-    invoke-virtual {p0, v0}, Landroid/content/res/Resources;->getInteger(I)I
-
-    move-result p0
-
-    return p0
-.end method
-
 .method public static getNavigationBarInsets(Landroid/content/Context;)Landroid/graphics/Insets;
     .locals 1
 
@@ -316,7 +299,7 @@
 
     move-result-object p0
 
-    const v0, 0x7f0705fa
+    const v0, 0x7f070685
 
     invoke-virtual {p0, v0}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
@@ -488,12 +471,12 @@
 .method public static getSurfaceViewRectOnDisplay(Landroid/content/Context;F)Landroid/graphics/Rect;
     .locals 4
 
-    .line 223
+    .line 219
     invoke-static {p0}, Ljp/co/sony/mc/camera/view/LayoutDependencyResolver;->getSurfaceContainerSize(Landroid/content/Context;)Landroid/util/Size;
 
     move-result-object p0
 
-    .line 225
+    .line 221
     invoke-virtual {p0}, Landroid/util/Size;->getWidth()I
 
     move-result v0
@@ -520,7 +503,7 @@
 
     sub-float v0, p1, v2
 
-    .line 227
+    .line 223
     invoke-static {v0}, Ljava/lang/Math;->abs(F)F
 
     move-result v0
@@ -529,14 +512,14 @@
 
     if-gez v0, :cond_0
 
-    .line 230
+    .line 226
     new-instance p1, Landroid/graphics/Rect;
 
     invoke-virtual {p0}, Landroid/util/Size;->getWidth()I
 
     move-result v0
 
-    .line 231
+    .line 227
     invoke-virtual {p0}, Landroid/util/Size;->getWidth()I
 
     move-result p0
@@ -545,7 +528,7 @@
 
     return-object p1
 
-    .line 233
+    .line 229
     :cond_0
     new-instance v0, Landroid/graphics/Rect;
 
@@ -553,7 +536,7 @@
 
     move-result v1
 
-    .line 234
+    .line 230
     invoke-virtual {p0}, Landroid/util/Size;->getWidth()I
 
     move-result p0
@@ -571,7 +554,7 @@
     :cond_1
     sub-float v0, p1, v2
 
-    .line 237
+    .line 233
     invoke-static {v0}, Ljava/lang/Math;->abs(F)F
 
     move-result v0
@@ -580,14 +563,14 @@
 
     if-gez v0, :cond_2
 
-    .line 240
+    .line 236
     new-instance p1, Landroid/graphics/Rect;
 
     invoke-virtual {p0}, Landroid/util/Size;->getHeight()I
 
     move-result v0
 
-    .line 241
+    .line 237
     invoke-virtual {p0}, Landroid/util/Size;->getHeight()I
 
     move-result p0
@@ -596,7 +579,7 @@
 
     return-object p1
 
-    .line 243
+    .line 239
     :cond_2
     new-instance v0, Landroid/graphics/Rect;
 
@@ -610,7 +593,7 @@
 
     float-to-int p1, v1
 
-    .line 244
+    .line 240
     invoke-virtual {p0}, Landroid/util/Size;->getHeight()I
 
     move-result p0
@@ -759,7 +742,7 @@
 
     move-result-object p0
 
-    const v0, 0x7f050004
+    const v0, 0x7f050003
 
     invoke-virtual {p0, v0}, Landroid/content/res/Resources;->getBoolean(I)Z
 
@@ -776,7 +759,7 @@
 
     move-result-object p0
 
-    const v0, 0x7f050005
+    const v0, 0x7f050004
 
     invoke-virtual {p0, v0}, Landroid/content/res/Resources;->getBoolean(I)Z
 
@@ -792,7 +775,7 @@
 
     return-void
 
-    .line 256
+    .line 252
     :cond_0
     invoke-virtual {p0}, Landroid/view/View;->getContext()Landroid/content/Context;
 
@@ -814,13 +797,13 @@
 
     return-void
 
-    .line 266
+    .line 262
     :cond_0
     invoke-virtual {p0}, Landroid/view/View;->getWindowInsetsController()Landroid/view/WindowInsetsController;
 
     move-result-object p0
 
-    .line 267
+    .line 263
     sget-object v0, Ljp/co/sony/mc/camera/view/LayoutDependencyResolver$1;->$SwitchMap$jp$co$sony$mc$camera$view$LayoutDependencyResolver$SystemBarStatus:[I
 
     invoke-virtual {p1}, Ljp/co/sony/mc/camera/view/LayoutDependencyResolver$SystemBarStatus;->ordinal()I
@@ -842,21 +825,21 @@
     :cond_1
     if-eqz p0, :cond_3
 
-    .line 274
+    .line 270
     invoke-static {}, Landroid/view/WindowInsets$Type;->statusBars()I
 
     move-result p1
 
     invoke-interface {p0, p1}, Landroid/view/WindowInsetsController;->hide(I)V
 
-    .line 275
+    .line 271
     invoke-static {}, Landroid/view/WindowInsets$Type;->navigationBars()I
 
     move-result p1
 
     invoke-interface {p0, p1}, Landroid/view/WindowInsetsController;->hide(I)V
 
-    .line 276
+    .line 272
     invoke-interface {p0, v0}, Landroid/view/WindowInsetsController;->setSystemBarsBehavior(I)V
 
     goto :goto_0
@@ -864,21 +847,21 @@
     :cond_2
     if-eqz p0, :cond_3
 
-    .line 282
+    .line 278
     invoke-static {}, Landroid/view/WindowInsets$Type;->statusBars()I
 
     move-result p1
 
     invoke-interface {p0, p1}, Landroid/view/WindowInsetsController;->hide(I)V
 
-    .line 283
+    .line 279
     invoke-static {}, Landroid/view/WindowInsets$Type;->navigationBars()I
 
     move-result p1
 
     invoke-interface {p0, p1}, Landroid/view/WindowInsetsController;->show(I)V
 
-    .line 284
+    .line 280
     invoke-interface {p0, v0}, Landroid/view/WindowInsetsController;->setSystemBarsBehavior(I)V
 
     :cond_3

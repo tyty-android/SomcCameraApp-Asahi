@@ -8,11 +8,49 @@
 .end annotation
 
 
+# static fields
+.field private static final BASE64URL_DECODER:Lcom/google/common/io/BaseEncoding;
+
+.field private static final BASE64_DECODER:Lcom/google/common/io/BaseEncoding;
+
+
 # direct methods
+.method static constructor <clinit>()V
+    .locals 3
+
+    .line 33
+    invoke-static {}, Lcom/google/common/io/BaseEncoding;->base64()Lcom/google/common/io/BaseEncoding;
+
+    move-result-object v0
+
+    const-string v1, "\n"
+
+    const/16 v2, 0x40
+
+    invoke-virtual {v0, v1, v2}, Lcom/google/common/io/BaseEncoding;->withSeparator(Ljava/lang/String;I)Lcom/google/common/io/BaseEncoding;
+
+    move-result-object v0
+
+    sput-object v0, Lcom/google/api/client/util/Base64;->BASE64_DECODER:Lcom/google/common/io/BaseEncoding;
+
+    .line 35
+    invoke-static {}, Lcom/google/common/io/BaseEncoding;->base64Url()Lcom/google/common/io/BaseEncoding;
+
+    move-result-object v0
+
+    invoke-virtual {v0, v1, v2}, Lcom/google/common/io/BaseEncoding;->withSeparator(Ljava/lang/String;I)Lcom/google/common/io/BaseEncoding;
+
+    move-result-object v0
+
+    sput-object v0, Lcom/google/api/client/util/Base64;->BASE64URL_DECODER:Lcom/google/common/io/BaseEncoding;
+
+    return-void
+.end method
+
 .method private constructor <init>()V
     .locals 0
 
-    .line 112
+    .line 122
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -27,12 +65,10 @@
 
     return-object p0
 
-    .line 103
+    .line 113
     :cond_0
     :try_start_0
-    invoke-static {}, Lcom/google/common/io/BaseEncoding;->base64()Lcom/google/common/io/BaseEncoding;
-
-    move-result-object v0
+    sget-object v0, Lcom/google/api/client/util/Base64;->BASE64_DECODER:Lcom/google/common/io/BaseEncoding;
 
     invoke-virtual {v0, p0}, Lcom/google/common/io/BaseEncoding;->decode(Ljava/lang/CharSequence;)[B
 
@@ -45,7 +81,7 @@
     :catch_0
     move-exception v0
 
-    .line 105
+    .line 115
     invoke-virtual {v0}, Ljava/lang/IllegalArgumentException;->getCause()Ljava/lang/Throwable;
 
     move-result-object v1
@@ -54,10 +90,8 @@
 
     if-eqz v1, :cond_1
 
-    .line 106
-    invoke-static {}, Lcom/google/common/io/BaseEncoding;->base64Url()Lcom/google/common/io/BaseEncoding;
-
-    move-result-object v0
+    .line 116
+    sget-object v0, Lcom/google/api/client/util/Base64;->BASE64URL_DECODER:Lcom/google/common/io/BaseEncoding;
 
     invoke-virtual {p0}, Ljava/lang/String;->trim()Ljava/lang/String;
 
@@ -69,7 +103,7 @@
 
     return-object p0
 
-    .line 108
+    .line 118
     :cond_1
     throw v0
 .end method
@@ -77,7 +111,7 @@
 .method public static decodeBase64([B)[B
     .locals 0
 
-    .line 88
+    .line 95
     invoke-static {p0}, Lcom/google/api/client/util/StringUtils;->newStringUtf8([B)Ljava/lang/String;
 
     move-result-object p0
@@ -92,7 +126,7 @@
 .method public static encodeBase64([B)[B
     .locals 0
 
-    .line 38
+    .line 45
     invoke-static {p0}, Lcom/google/api/client/util/Base64;->encodeBase64String([B)Ljava/lang/String;
 
     move-result-object p0
@@ -113,7 +147,7 @@
 
     return-object p0
 
-    .line 51
+    .line 58
     :cond_0
     invoke-static {}, Lcom/google/common/io/BaseEncoding;->base64()Lcom/google/common/io/BaseEncoding;
 
@@ -129,7 +163,7 @@
 .method public static encodeBase64URLSafe([B)[B
     .locals 0
 
-    .line 63
+    .line 70
     invoke-static {p0}, Lcom/google/api/client/util/Base64;->encodeBase64URLSafeString([B)Ljava/lang/String;
 
     move-result-object p0
@@ -150,7 +184,7 @@
 
     return-object p0
 
-    .line 77
+    .line 84
     :cond_0
     invoke-static {}, Lcom/google/common/io/BaseEncoding;->base64Url()Lcom/google/common/io/BaseEncoding;
 

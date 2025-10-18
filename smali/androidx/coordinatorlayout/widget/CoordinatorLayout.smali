@@ -194,17 +194,17 @@
     .line 133
     new-array v0, v0, [Ljava/lang/Class;
 
-    const-class v1, Landroid/content/Context;
+    const/4 v1, 0x0
 
-    const/4 v2, 0x0
+    const-class v2, Landroid/content/Context;
 
-    aput-object v1, v0, v2
+    aput-object v2, v0, v1
 
-    const-class v1, Landroid/util/AttributeSet;
+    const/4 v1, 0x1
 
-    const/4 v2, 0x1
+    const-class v2, Landroid/util/AttributeSet;
 
-    aput-object v1, v0, v2
+    aput-object v2, v0, v1
 
     sput-object v0, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->CONSTRUCTOR_PARAMS:[Ljava/lang/Class;
 
@@ -1418,7 +1418,7 @@
 
     if-gtz v0, :cond_1
 
-    goto/16 :goto_5
+    goto/16 :goto_4
 
     .line 1423
     :cond_1
@@ -1552,38 +1552,38 @@
 
     and-int/lit8 v1, p3, 0x30
 
-    const/4 v3, 0x1
+    const/16 v3, 0x30
 
-    const/16 v4, 0x30
+    const/4 v4, 0x1
 
     const/4 v5, 0x0
 
-    if-ne v1, v4, :cond_5
+    if-ne v1, v3, :cond_5
 
     .line 1454
     iget v1, v2, Landroid/graphics/Rect;->top:I
 
-    iget v4, v0, Landroidx/coordinatorlayout/widget/CoordinatorLayout$LayoutParams;->topMargin:I
+    iget v3, v0, Landroidx/coordinatorlayout/widget/CoordinatorLayout$LayoutParams;->topMargin:I
 
-    sub-int/2addr v1, v4
+    sub-int/2addr v1, v3
 
-    iget v4, v0, Landroidx/coordinatorlayout/widget/CoordinatorLayout$LayoutParams;->mInsetOffsetY:I
+    iget v3, v0, Landroidx/coordinatorlayout/widget/CoordinatorLayout$LayoutParams;->mInsetOffsetY:I
 
-    sub-int/2addr v1, v4
+    sub-int/2addr v1, v3
 
     .line 1455
-    iget v4, p2, Landroid/graphics/Rect;->top:I
+    iget v3, p2, Landroid/graphics/Rect;->top:I
 
-    if-ge v1, v4, :cond_5
+    if-ge v1, v3, :cond_5
 
     .line 1456
-    iget v4, p2, Landroid/graphics/Rect;->top:I
+    iget v3, p2, Landroid/graphics/Rect;->top:I
 
-    sub-int/2addr v4, v1
+    sub-int/2addr v3, v1
 
-    invoke-direct {p0, p1, v4}, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->setInsetOffsetY(Landroid/view/View;I)V
+    invoke-direct {p0, p1, v3}, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->setInsetOffsetY(Landroid/view/View;I)V
 
-    move v1, v3
+    move v1, v4
 
     goto :goto_1
 
@@ -1591,42 +1591,42 @@
     move v1, v5
 
     :goto_1
-    and-int/lit8 v4, p3, 0x50
+    and-int/lit8 v3, p3, 0x50
 
     const/16 v6, 0x50
 
-    if-ne v4, v6, :cond_6
+    if-ne v3, v6, :cond_6
 
     .line 1461
     invoke-virtual {p0}, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->getHeight()I
 
-    move-result v4
+    move-result v3
 
     iget v6, v2, Landroid/graphics/Rect;->bottom:I
 
-    sub-int/2addr v4, v6
+    sub-int/2addr v3, v6
 
     iget v6, v0, Landroidx/coordinatorlayout/widget/CoordinatorLayout$LayoutParams;->bottomMargin:I
 
-    sub-int/2addr v4, v6
+    sub-int/2addr v3, v6
 
     iget v6, v0, Landroidx/coordinatorlayout/widget/CoordinatorLayout$LayoutParams;->mInsetOffsetY:I
 
-    add-int/2addr v4, v6
+    add-int/2addr v3, v6
 
     .line 1462
     iget v6, p2, Landroid/graphics/Rect;->bottom:I
 
-    if-ge v4, v6, :cond_6
+    if-ge v3, v6, :cond_6
 
     .line 1463
     iget v1, p2, Landroid/graphics/Rect;->bottom:I
 
-    sub-int/2addr v4, v1
+    sub-int/2addr v3, v1
 
-    invoke-direct {p0, p1, v4}, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->setInsetOffsetY(Landroid/view/View;I)V
+    invoke-direct {p0, p1, v3}, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->setInsetOffsetY(Landroid/view/View;I)V
 
-    goto :goto_2
+    move v1, v4
 
     :cond_6
     if-nez v1, :cond_7
@@ -1635,60 +1635,61 @@
     invoke-direct {p0, p1, v5}, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->setInsetOffsetY(Landroid/view/View;I)V
 
     :cond_7
-    :goto_2
     and-int/lit8 v1, p3, 0x3
 
-    const/4 v4, 0x3
+    const/4 v3, 0x3
 
-    if-ne v1, v4, :cond_8
+    if-ne v1, v3, :cond_8
 
     .line 1473
     iget v1, v2, Landroid/graphics/Rect;->left:I
 
-    iget v4, v0, Landroidx/coordinatorlayout/widget/CoordinatorLayout$LayoutParams;->leftMargin:I
+    iget v3, v0, Landroidx/coordinatorlayout/widget/CoordinatorLayout$LayoutParams;->leftMargin:I
 
-    sub-int/2addr v1, v4
+    sub-int/2addr v1, v3
 
-    iget v4, v0, Landroidx/coordinatorlayout/widget/CoordinatorLayout$LayoutParams;->mInsetOffsetX:I
+    iget v3, v0, Landroidx/coordinatorlayout/widget/CoordinatorLayout$LayoutParams;->mInsetOffsetX:I
 
-    sub-int/2addr v1, v4
+    sub-int/2addr v1, v3
 
     .line 1474
-    iget v4, p2, Landroid/graphics/Rect;->left:I
+    iget v3, p2, Landroid/graphics/Rect;->left:I
 
-    if-ge v1, v4, :cond_8
+    if-ge v1, v3, :cond_8
 
     .line 1475
-    iget v4, p2, Landroid/graphics/Rect;->left:I
+    iget v3, p2, Landroid/graphics/Rect;->left:I
 
-    sub-int/2addr v4, v1
+    sub-int/2addr v3, v1
 
-    invoke-direct {p0, p1, v4}, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->setInsetOffsetX(Landroid/view/View;I)V
+    invoke-direct {p0, p1, v3}, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->setInsetOffsetX(Landroid/view/View;I)V
 
-    goto :goto_3
+    move v1, v4
+
+    goto :goto_2
 
     :cond_8
-    move v3, v5
+    move v1, v5
 
-    :goto_3
-    const/4 v1, 0x5
+    :goto_2
+    const/4 v3, 0x5
 
-    and-int/2addr p3, v1
+    and-int/2addr p3, v3
 
-    if-ne p3, v1, :cond_9
+    if-ne p3, v3, :cond_9
 
     .line 1480
     invoke-virtual {p0}, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->getWidth()I
 
     move-result p3
 
-    iget v1, v2, Landroid/graphics/Rect;->right:I
+    iget v3, v2, Landroid/graphics/Rect;->right:I
 
-    sub-int/2addr p3, v1
+    sub-int/2addr p3, v3
 
-    iget v1, v0, Landroidx/coordinatorlayout/widget/CoordinatorLayout$LayoutParams;->rightMargin:I
+    iget v3, v0, Landroidx/coordinatorlayout/widget/CoordinatorLayout$LayoutParams;->rightMargin:I
 
-    sub-int/2addr p3, v1
+    sub-int/2addr p3, v3
 
     iget v0, v0, Landroidx/coordinatorlayout/widget/CoordinatorLayout$LayoutParams;->mInsetOffsetX:I
 
@@ -1706,21 +1707,23 @@
 
     invoke-direct {p0, p1, p3}, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->setInsetOffsetX(Landroid/view/View;I)V
 
-    goto :goto_4
+    goto :goto_3
 
     :cond_9
-    if-nez v3, :cond_a
+    move v4, v1
+
+    :goto_3
+    if-nez v4, :cond_a
 
     .line 1487
     invoke-direct {p0, p1, v5}, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->setInsetOffsetX(Landroid/view/View;I)V
 
     .line 1490
     :cond_a
-    :goto_4
     invoke-static {v2}, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->releaseTempRect(Landroid/graphics/Rect;)V
 
     :cond_b
-    :goto_5
+    :goto_4
     return-void
 .end method
 
@@ -2937,12 +2940,18 @@
 
     move-result v0
 
-    if-eqz v0, :cond_0
+    goto :goto_0
+
+    :cond_0
+    const/4 v0, 0x0
+
+    :goto_0
+    if-eqz v0, :cond_1
 
     .line 343
     invoke-virtual {p0}, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->invalidate()V
 
-    :cond_0
+    :cond_1
     return-void
 .end method
 

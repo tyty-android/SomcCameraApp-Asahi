@@ -78,7 +78,7 @@
 .method public bridge synthetic invoke(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
 
-    .line 94
+    .line 92
     check-cast p1, Landroidx/compose/ui/semantics/SemanticsPropertyReceiver;
 
     invoke-virtual {p0, p1}, Landroidx/compose/material/FloatingActionButtonKt$FloatingActionButton$2;->invoke(Landroidx/compose/ui/semantics/SemanticsPropertyReceiver;)V
@@ -91,11 +91,7 @@
 .method public final invoke(Landroidx/compose/ui/semantics/SemanticsPropertyReceiver;)V
     .locals 0
 
-    const-string p0, "$this$semantics"
-
-    invoke-static {p1, p0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 94
+    .line 92
     sget-object p0, Landroidx/compose/ui/semantics/Role;->Companion:Landroidx/compose/ui/semantics/Role$Companion;
 
     invoke-virtual {p0}, Landroidx/compose/ui/semantics/Role$Companion;->getButton-o7Vup1c()I

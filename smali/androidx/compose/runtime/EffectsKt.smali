@@ -5,12 +5,12 @@
 
 # annotations
 .annotation system Ldalvik/annotation/SourceDebugExtension;
-    value = "SMAP\nEffects.kt\nKotlin\n*S Kotlin\n*F\n+ 1 Effects.kt\nandroidx/compose/runtime/EffectsKt\n+ 2 Composables.kt\nandroidx/compose/runtime/ComposablesKt\n+ 3 Composer.kt\nandroidx/compose/runtime/ComposerKt\n*L\n1#1,496:1\n36#2:497\n50#2:504\n49#2:505\n67#2,3:512\n66#2:515\n83#2,3:522\n36#2:531\n50#2:538\n49#2:539\n67#2,3:546\n66#2:549\n83#2,3:556\n25#2:565\n1097#3,6:498\n1097#3,6:506\n1097#3,6:516\n1097#3,6:525\n1097#3,6:532\n1097#3,6:540\n1097#3,6:550\n1097#3,6:559\n1097#3,6:566\n*S KotlinDebug\n*F\n+ 1 Effects.kt\nandroidx/compose/runtime/EffectsKt\n*L\n156#1:497\n196#1:504\n196#1:505\n237#1:512,3\n237#1:515\n277#1:522,3\n339#1:531\n362#1:538\n362#1:539\n386#1:546,3\n386#1:549\n419#1:556,3\n489#1:565\n156#1:498,6\n196#1:506,6\n237#1:516,6\n277#1:525,6\n339#1:532,6\n362#1:540,6\n386#1:550,6\n419#1:559,6\n489#1:566,6\n*E\n"
+    value = "SMAP\nEffects.kt\nKotlin\n*S Kotlin\n*F\n+ 1 Effects.kt\nandroidx/compose/runtime/EffectsKt\n+ 2 Composables.kt\nandroidx/compose/runtime/ComposablesKt\n+ 3 Composer.kt\nandroidx/compose/runtime/ComposerKt\n*L\n1#1,497:1\n36#2:498\n50#2:505\n49#2:506\n67#2,3:513\n66#2:516\n83#2,3:523\n36#2:532\n50#2:539\n49#2:540\n67#2,3:547\n66#2:550\n83#2,3:557\n25#2:566\n1116#3,6:499\n1116#3,6:507\n1116#3,6:517\n1116#3,6:526\n1116#3,6:533\n1116#3,6:541\n1116#3,6:551\n1116#3,6:560\n1116#3,6:567\n*S KotlinDebug\n*F\n+ 1 Effects.kt\nandroidx/compose/runtime/EffectsKt\n*L\n157#1:498\n197#1:505\n197#1:506\n238#1:513,3\n238#1:516\n278#1:523,3\n340#1:532\n363#1:539\n363#1:540\n387#1:547,3\n387#1:550\n420#1:557,3\n490#1:566\n157#1:499,6\n197#1:507,6\n238#1:517,6\n278#1:526,6\n340#1:533,6\n363#1:541,6\n387#1:551,6\n420#1:560,6\n490#1:567,6\n*E\n"
 .end annotation
 
 .annotation runtime Lkotlin/Metadata;
     d1 = {
-        "\u0000d\n\u0000\n\u0002\u0010\u000e\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0010\u0000\n\u0002\u0008\u0006\n\u0002\u0010\u0011\n\u0002\u0008\u0003\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0006\n\u0002\u0018\u0002\n\u0002\u0008\u0003\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0002\u001a&\u0010\u0005\u001a\u00020\u00062\u0017\u0010\u0007\u001a\u0013\u0012\u0004\u0012\u00020\u0003\u0012\u0004\u0012\u00020\t0\u0008\u00a2\u0006\u0002\u0008\nH\u0007\u00a2\u0006\u0002\u0010\u000b\u001a0\u0010\u0005\u001a\u00020\u00062\u0008\u0010\u000c\u001a\u0004\u0018\u00010\r2\u0017\u0010\u0007\u001a\u0013\u0012\u0004\u0012\u00020\u0003\u0012\u0004\u0012\u00020\t0\u0008\u00a2\u0006\u0002\u0008\nH\u0007\u00a2\u0006\u0002\u0010\u000e\u001a:\u0010\u0005\u001a\u00020\u00062\u0008\u0010\u000c\u001a\u0004\u0018\u00010\r2\u0008\u0010\u000f\u001a\u0004\u0018\u00010\r2\u0017\u0010\u0007\u001a\u0013\u0012\u0004\u0012\u00020\u0003\u0012\u0004\u0012\u00020\t0\u0008\u00a2\u0006\u0002\u0008\nH\u0007\u00a2\u0006\u0002\u0010\u0010\u001aD\u0010\u0005\u001a\u00020\u00062\u0008\u0010\u000c\u001a\u0004\u0018\u00010\r2\u0008\u0010\u000f\u001a\u0004\u0018\u00010\r2\u0008\u0010\u0011\u001a\u0004\u0018\u00010\r2\u0017\u0010\u0007\u001a\u0013\u0012\u0004\u0012\u00020\u0003\u0012\u0004\u0012\u00020\t0\u0008\u00a2\u0006\u0002\u0008\nH\u0007\u00a2\u0006\u0002\u0010\u0012\u001a>\u0010\u0005\u001a\u00020\u00062\u0016\u0010\u0013\u001a\u000c\u0012\u0008\u0008\u0001\u0012\u0004\u0018\u00010\r0\u0014\"\u0004\u0018\u00010\r2\u0017\u0010\u0007\u001a\u0013\u0012\u0004\u0012\u00020\u0003\u0012\u0004\u0012\u00020\t0\u0008\u00a2\u0006\u0002\u0008\nH\u0007\u00a2\u0006\u0002\u0010\u0015\u001aW\u0010\u0016\u001a\u00020\u00062\u0008\u0010\u000c\u001a\u0004\u0018\u00010\r2\u0008\u0010\u000f\u001a\u0004\u0018\u00010\r2\u0008\u0010\u0011\u001a\u0004\u0018\u00010\r2\'\u0010\u0017\u001a#\u0008\u0001\u0012\u0004\u0012\u00020\u0019\u0012\n\u0012\u0008\u0012\u0004\u0012\u00020\u00060\u001a\u0012\u0006\u0012\u0004\u0018\u00010\r0\u0018\u00a2\u0006\u0002\u0008\nH\u0007\u00f8\u0001\u0000\u00a2\u0006\u0002\u0010\u001b\u001aM\u0010\u0016\u001a\u00020\u00062\u0008\u0010\u000c\u001a\u0004\u0018\u00010\r2\u0008\u0010\u000f\u001a\u0004\u0018\u00010\r2\'\u0010\u0017\u001a#\u0008\u0001\u0012\u0004\u0012\u00020\u0019\u0012\n\u0012\u0008\u0012\u0004\u0012\u00020\u00060\u001a\u0012\u0006\u0012\u0004\u0018\u00010\r0\u0018\u00a2\u0006\u0002\u0008\nH\u0007\u00f8\u0001\u0000\u00a2\u0006\u0002\u0010\u001c\u001aC\u0010\u0016\u001a\u00020\u00062\u0008\u0010\u000c\u001a\u0004\u0018\u00010\r2\'\u0010\u0017\u001a#\u0008\u0001\u0012\u0004\u0012\u00020\u0019\u0012\n\u0012\u0008\u0012\u0004\u0012\u00020\u00060\u001a\u0012\u0006\u0012\u0004\u0018\u00010\r0\u0018\u00a2\u0006\u0002\u0008\nH\u0007\u00f8\u0001\u0000\u00a2\u0006\u0002\u0010\u001d\u001aQ\u0010\u0016\u001a\u00020\u00062\u0016\u0010\u0013\u001a\u000c\u0012\u0008\u0008\u0001\u0012\u0004\u0018\u00010\r0\u0014\"\u0004\u0018\u00010\r2\'\u0010\u0017\u001a#\u0008\u0001\u0012\u0004\u0012\u00020\u0019\u0012\n\u0012\u0008\u0012\u0004\u0012\u00020\u00060\u001a\u0012\u0006\u0012\u0004\u0018\u00010\r0\u0018\u00a2\u0006\u0002\u0008\nH\u0007\u00f8\u0001\u0000\u00a2\u0006\u0002\u0010\u001e\u001a9\u0010\u0016\u001a\u00020\u00062\'\u0010\u0017\u001a#\u0008\u0001\u0012\u0004\u0012\u00020\u0019\u0012\n\u0012\u0008\u0012\u0004\u0012\u00020\u00060\u001a\u0012\u0006\u0012\u0004\u0018\u00010\r0\u0018\u00a2\u0006\u0002\u0008\nH\u0007\u00f8\u0001\u0000\u00a2\u0006\u0002\u0010\u001f\u001a\u001b\u0010 \u001a\u00020\u00062\u000c\u0010\u0007\u001a\u0008\u0012\u0004\u0012\u00020\u00060!H\u0007\u00a2\u0006\u0002\u0010\"\u001a\u0018\u0010#\u001a\u00020\u00192\u0006\u0010$\u001a\u00020%2\u0006\u0010&\u001a\u00020\'H\u0001\u001a&\u0010(\u001a\u00020\u00192\u0013\u0008\u0006\u0010)\u001a\r\u0012\u0004\u0012\u00020%0!\u00a2\u0006\u0002\u0008*H\u0087\u0008\u00f8\u0001\u0001\u00a2\u0006\u0002\u0010+\"\u000e\u0010\u0000\u001a\u00020\u0001X\u0082T\u00a2\u0006\u0002\n\u0000\"\u000e\u0010\u0002\u001a\u00020\u0003X\u0082\u0004\u00a2\u0006\u0002\n\u0000\"\u000e\u0010\u0004\u001a\u00020\u0001X\u0082T\u00a2\u0006\u0002\n\u0000\u0082\u0002\u000b\n\u0002\u0008\u0019\n\u0005\u0008\u009920\u0001\u00a8\u0006,"
+        "\u0000d\n\u0000\n\u0002\u0010\u000e\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0010\u0000\n\u0002\u0008\u0006\n\u0002\u0010\u0011\n\u0002\u0008\u0003\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0006\n\u0002\u0018\u0002\n\u0002\u0008\u0003\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0002\u001a&\u0010\u0005\u001a\u00020\u00062\u0017\u0010\u0007\u001a\u0013\u0012\u0004\u0012\u00020\u0003\u0012\u0004\u0012\u00020\t0\u0008\u00a2\u0006\u0002\u0008\nH\u0007\u00a2\u0006\u0002\u0010\u000b\u001a0\u0010\u0005\u001a\u00020\u00062\u0008\u0010\u000c\u001a\u0004\u0018\u00010\r2\u0017\u0010\u0007\u001a\u0013\u0012\u0004\u0012\u00020\u0003\u0012\u0004\u0012\u00020\t0\u0008\u00a2\u0006\u0002\u0008\nH\u0007\u00a2\u0006\u0002\u0010\u000e\u001a:\u0010\u0005\u001a\u00020\u00062\u0008\u0010\u000c\u001a\u0004\u0018\u00010\r2\u0008\u0010\u000f\u001a\u0004\u0018\u00010\r2\u0017\u0010\u0007\u001a\u0013\u0012\u0004\u0012\u00020\u0003\u0012\u0004\u0012\u00020\t0\u0008\u00a2\u0006\u0002\u0008\nH\u0007\u00a2\u0006\u0002\u0010\u0010\u001aD\u0010\u0005\u001a\u00020\u00062\u0008\u0010\u000c\u001a\u0004\u0018\u00010\r2\u0008\u0010\u000f\u001a\u0004\u0018\u00010\r2\u0008\u0010\u0011\u001a\u0004\u0018\u00010\r2\u0017\u0010\u0007\u001a\u0013\u0012\u0004\u0012\u00020\u0003\u0012\u0004\u0012\u00020\t0\u0008\u00a2\u0006\u0002\u0008\nH\u0007\u00a2\u0006\u0002\u0010\u0012\u001a>\u0010\u0005\u001a\u00020\u00062\u0016\u0010\u0013\u001a\u000c\u0012\u0008\u0008\u0001\u0012\u0004\u0018\u00010\r0\u0014\"\u0004\u0018\u00010\r2\u0017\u0010\u0007\u001a\u0013\u0012\u0004\u0012\u00020\u0003\u0012\u0004\u0012\u00020\t0\u0008\u00a2\u0006\u0002\u0008\nH\u0007\u00a2\u0006\u0002\u0010\u0015\u001aT\u0010\u0016\u001a\u00020\u00062\u0008\u0010\u000c\u001a\u0004\u0018\u00010\r2\u0008\u0010\u000f\u001a\u0004\u0018\u00010\r2\u0008\u0010\u0011\u001a\u0004\u0018\u00010\r2\'\u0010\u0017\u001a#\u0008\u0001\u0012\u0004\u0012\u00020\u0019\u0012\n\u0012\u0008\u0012\u0004\u0012\u00020\u00060\u001a\u0012\u0006\u0012\u0004\u0018\u00010\r0\u0018\u00a2\u0006\u0002\u0008\nH\u0007\u00a2\u0006\u0002\u0010\u001b\u001aJ\u0010\u0016\u001a\u00020\u00062\u0008\u0010\u000c\u001a\u0004\u0018\u00010\r2\u0008\u0010\u000f\u001a\u0004\u0018\u00010\r2\'\u0010\u0017\u001a#\u0008\u0001\u0012\u0004\u0012\u00020\u0019\u0012\n\u0012\u0008\u0012\u0004\u0012\u00020\u00060\u001a\u0012\u0006\u0012\u0004\u0018\u00010\r0\u0018\u00a2\u0006\u0002\u0008\nH\u0007\u00a2\u0006\u0002\u0010\u001c\u001a@\u0010\u0016\u001a\u00020\u00062\u0008\u0010\u000c\u001a\u0004\u0018\u00010\r2\'\u0010\u0017\u001a#\u0008\u0001\u0012\u0004\u0012\u00020\u0019\u0012\n\u0012\u0008\u0012\u0004\u0012\u00020\u00060\u001a\u0012\u0006\u0012\u0004\u0018\u00010\r0\u0018\u00a2\u0006\u0002\u0008\nH\u0007\u00a2\u0006\u0002\u0010\u001d\u001aN\u0010\u0016\u001a\u00020\u00062\u0016\u0010\u0013\u001a\u000c\u0012\u0008\u0008\u0001\u0012\u0004\u0018\u00010\r0\u0014\"\u0004\u0018\u00010\r2\'\u0010\u0017\u001a#\u0008\u0001\u0012\u0004\u0012\u00020\u0019\u0012\n\u0012\u0008\u0012\u0004\u0012\u00020\u00060\u001a\u0012\u0006\u0012\u0004\u0018\u00010\r0\u0018\u00a2\u0006\u0002\u0008\nH\u0007\u00a2\u0006\u0002\u0010\u001e\u001a6\u0010\u0016\u001a\u00020\u00062\'\u0010\u0017\u001a#\u0008\u0001\u0012\u0004\u0012\u00020\u0019\u0012\n\u0012\u0008\u0012\u0004\u0012\u00020\u00060\u001a\u0012\u0006\u0012\u0004\u0018\u00010\r0\u0018\u00a2\u0006\u0002\u0008\nH\u0007\u00a2\u0006\u0002\u0010\u001f\u001a\u001b\u0010 \u001a\u00020\u00062\u000c\u0010\u0007\u001a\u0008\u0012\u0004\u0012\u00020\u00060!H\u0007\u00a2\u0006\u0002\u0010\"\u001a\u0018\u0010#\u001a\u00020\u00192\u0006\u0010$\u001a\u00020%2\u0006\u0010&\u001a\u00020\'H\u0001\u001a#\u0010(\u001a\u00020\u00192\u0013\u0008\u0006\u0010)\u001a\r\u0012\u0004\u0012\u00020%0!\u00a2\u0006\u0002\u0008*H\u0087\u0008\u00a2\u0006\u0002\u0010+\"\u000e\u0010\u0000\u001a\u00020\u0001X\u0082T\u00a2\u0006\u0002\n\u0000\"\u000e\u0010\u0002\u001a\u00020\u0003X\u0082\u0004\u00a2\u0006\u0002\n\u0000\"\u000e\u0010\u0004\u001a\u00020\u0001X\u0082T\u00a2\u0006\u0002\n\u0000\u00a8\u0006,"
     }
     d2 = {
         "DisposableEffectNoParamError",
@@ -81,7 +81,7 @@
 .method static constructor <clinit>()V
     .locals 1
 
-    .line 74
+    .line 75
     new-instance v0, Landroidx/compose/runtime/DisposableEffectScope;
 
     invoke-direct {v0}, Landroidx/compose/runtime/DisposableEffectScope;-><init>()V
@@ -110,15 +110,11 @@
         }
     .end annotation
 
-    const-string v0, "effect"
-
-    invoke-static {p3, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
     const v0, -0x49e1da5f
 
     invoke-interface {p4, v0}, Landroidx/compose/runtime/Composer;->startReplaceableGroup(I)V
 
-    const-string v1, "C(DisposableEffect)P(1,2,3)236@10029L59:Effects.kt#9igjgp"
+    const-string v1, "C(DisposableEffect)P(1,2,3)237@10055L59:Effects.kt#9igjgp"
 
     invoke-static {p4, v1}, Landroidx/compose/runtime/ComposerKt;->sourceInformation(Landroidx/compose/runtime/Composer;Ljava/lang/String;)V
 
@@ -130,48 +126,48 @@
 
     const/4 v1, -0x1
 
-    const-string v2, "androidx.compose.runtime.DisposableEffect (Effects.kt:230)"
+    const-string v2, "androidx.compose.runtime.DisposableEffect (Effects.kt:236)"
 
-    .line 236
+    .line 237
     invoke-static {v0, p5, v1, v2}, Landroidx/compose/runtime/ComposerKt;->traceEventStart(IIILjava/lang/String;)V
 
     :cond_0
     const p5, 0x607fb4c4
 
-    .line 237
+    .line 238
     invoke-interface {p4, p5}, Landroidx/compose/runtime/Composer;->startReplaceableGroup(I)V
 
     const-string p5, "CC(remember)P(1,2,3):Composables.kt#9igjgp"
 
     invoke-static {p4, p5}, Landroidx/compose/runtime/ComposerKt;->sourceInformation(Landroidx/compose/runtime/Composer;Ljava/lang/String;)V
 
-    .line 512
+    .line 513
     invoke-interface {p4, p0}, Landroidx/compose/runtime/Composer;->changed(Ljava/lang/Object;)Z
 
     move-result p0
 
-    .line 513
+    .line 514
     invoke-interface {p4, p1}, Landroidx/compose/runtime/Composer;->changed(Ljava/lang/Object;)Z
 
     move-result p1
 
     or-int/2addr p0, p1
 
-    .line 514
+    .line 515
     invoke-interface {p4, p2}, Landroidx/compose/runtime/Composer;->changed(Ljava/lang/Object;)Z
 
     move-result p1
 
     or-int/2addr p0, p1
 
-    .line 516
+    .line 517
     invoke-interface {p4}, Landroidx/compose/runtime/Composer;->rememberedValue()Ljava/lang/Object;
 
     move-result-object p1
 
     if-nez p0, :cond_1
 
-    .line 517
+    .line 518
     sget-object p0, Landroidx/compose/runtime/Composer;->Companion:Landroidx/compose/runtime/Composer$Companion;
 
     invoke-virtual {p0}, Landroidx/compose/runtime/Composer$Companion;->getEmpty()Ljava/lang/Object;
@@ -180,16 +176,16 @@
 
     if-ne p1, p0, :cond_2
 
-    .line 237
+    .line 238
     :cond_1
     new-instance p0, Landroidx/compose/runtime/DisposableEffectImpl;
 
     invoke-direct {p0, p3}, Landroidx/compose/runtime/DisposableEffectImpl;-><init>(Lkotlin/jvm/functions/Function1;)V
 
-    .line 519
+    .line 520
     invoke-interface {p4, p0}, Landroidx/compose/runtime/Composer;->updateRememberedValue(Ljava/lang/Object;)V
 
-    .line 515
+    .line 516
     :cond_2
     invoke-interface {p4}, Landroidx/compose/runtime/Composer;->endReplaceableGroup()V
 
@@ -225,15 +221,11 @@
         }
     .end annotation
 
-    const-string v0, "effect"
-
-    invoke-static {p2, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
     const v0, 0x552e4d01
 
     invoke-interface {p3, v0}, Landroidx/compose/runtime/Composer;->startReplaceableGroup(I)V
 
-    const-string v1, "C(DisposableEffect)P(1,2)195@8105L53:Effects.kt#9igjgp"
+    const-string v1, "C(DisposableEffect)P(1,2)196@8131L53:Effects.kt#9igjgp"
 
     invoke-static {p3, v1}, Landroidx/compose/runtime/ComposerKt;->sourceInformation(Landroidx/compose/runtime/Composer;Ljava/lang/String;)V
 
@@ -245,22 +237,22 @@
 
     const/4 v1, -0x1
 
-    const-string v2, "androidx.compose.runtime.DisposableEffect (Effects.kt:190)"
+    const-string v2, "androidx.compose.runtime.DisposableEffect (Effects.kt:195)"
 
-    .line 195
+    .line 196
     invoke-static {v0, p4, v1, v2}, Landroidx/compose/runtime/ComposerKt;->traceEventStart(IIILjava/lang/String;)V
 
     :cond_0
     const p4, 0x1e7b2b64
 
-    .line 196
+    .line 197
     invoke-interface {p3, p4}, Landroidx/compose/runtime/Composer;->startReplaceableGroup(I)V
 
     const-string p4, "CC(remember)P(1,2):Composables.kt#9igjgp"
 
     invoke-static {p3, p4}, Landroidx/compose/runtime/ComposerKt;->sourceInformation(Landroidx/compose/runtime/Composer;Ljava/lang/String;)V
 
-    .line 504
+    .line 505
     invoke-interface {p3, p0}, Landroidx/compose/runtime/Composer;->changed(Ljava/lang/Object;)Z
 
     move-result p0
@@ -271,14 +263,14 @@
 
     or-int/2addr p0, p1
 
-    .line 506
+    .line 507
     invoke-interface {p3}, Landroidx/compose/runtime/Composer;->rememberedValue()Ljava/lang/Object;
 
     move-result-object p1
 
     if-nez p0, :cond_1
 
-    .line 507
+    .line 508
     sget-object p0, Landroidx/compose/runtime/Composer;->Companion:Landroidx/compose/runtime/Composer$Companion;
 
     invoke-virtual {p0}, Landroidx/compose/runtime/Composer$Companion;->getEmpty()Ljava/lang/Object;
@@ -287,16 +279,16 @@
 
     if-ne p1, p0, :cond_2
 
-    .line 196
+    .line 197
     :cond_1
     new-instance p0, Landroidx/compose/runtime/DisposableEffectImpl;
 
     invoke-direct {p0, p2}, Landroidx/compose/runtime/DisposableEffectImpl;-><init>(Lkotlin/jvm/functions/Function1;)V
 
-    .line 509
+    .line 510
     invoke-interface {p3, p0}, Landroidx/compose/runtime/Composer;->updateRememberedValue(Ljava/lang/Object;)V
 
-    .line 505
+    .line 506
     :cond_2
     invoke-interface {p3}, Landroidx/compose/runtime/Composer;->endReplaceableGroup()V
 
@@ -331,15 +323,11 @@
         }
     .end annotation
 
-    const-string v0, "effect"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
     const v0, -0x51c6db9f
 
     invoke-interface {p2, v0}, Landroidx/compose/runtime/Composer;->startReplaceableGroup(I)V
 
-    const-string v1, "C(DisposableEffect)P(1)155@6219L47:Effects.kt#9igjgp"
+    const-string v1, "C(DisposableEffect)P(1)156@6245L47:Effects.kt#9igjgp"
 
     invoke-static {p2, v1}, Landroidx/compose/runtime/ComposerKt;->sourceInformation(Landroidx/compose/runtime/Composer;Ljava/lang/String;)V
 
@@ -351,34 +339,34 @@
 
     const/4 v1, -0x1
 
-    const-string v2, "androidx.compose.runtime.DisposableEffect (Effects.kt:151)"
+    const-string v2, "androidx.compose.runtime.DisposableEffect (Effects.kt:155)"
 
-    .line 155
+    .line 156
     invoke-static {v0, p3, v1, v2}, Landroidx/compose/runtime/ComposerKt;->traceEventStart(IIILjava/lang/String;)V
 
     :cond_0
     const p3, 0x44faf204
 
-    .line 156
+    .line 157
     invoke-interface {p2, p3}, Landroidx/compose/runtime/Composer;->startReplaceableGroup(I)V
 
     const-string p3, "CC(remember)P(1):Composables.kt#9igjgp"
 
     invoke-static {p2, p3}, Landroidx/compose/runtime/ComposerKt;->sourceInformation(Landroidx/compose/runtime/Composer;Ljava/lang/String;)V
 
-    .line 497
+    .line 498
     invoke-interface {p2, p0}, Landroidx/compose/runtime/Composer;->changed(Ljava/lang/Object;)Z
 
     move-result p0
 
-    .line 498
+    .line 499
     invoke-interface {p2}, Landroidx/compose/runtime/Composer;->rememberedValue()Ljava/lang/Object;
 
     move-result-object p3
 
     if-nez p0, :cond_1
 
-    .line 499
+    .line 500
     sget-object p0, Landroidx/compose/runtime/Composer;->Companion:Landroidx/compose/runtime/Composer$Companion;
 
     invoke-virtual {p0}, Landroidx/compose/runtime/Composer$Companion;->getEmpty()Ljava/lang/Object;
@@ -387,16 +375,16 @@
 
     if-ne p3, p0, :cond_2
 
-    .line 156
+    .line 157
     :cond_1
     new-instance p0, Landroidx/compose/runtime/DisposableEffectImpl;
 
     invoke-direct {p0, p1}, Landroidx/compose/runtime/DisposableEffectImpl;-><init>(Lkotlin/jvm/functions/Function1;)V
 
-    .line 501
+    .line 502
     invoke-interface {p2, p0}, Landroidx/compose/runtime/Composer;->updateRememberedValue(Ljava/lang/Object;)V
 
-    .line 497
+    .line 498
     :cond_2
     invoke-interface {p2}, Landroidx/compose/runtime/Composer;->endReplaceableGroup()V
 
@@ -435,10 +423,6 @@
         message = "DisposableEffect must provide one or more \'key\' parameters that define the identity of the DisposableEffect and determine when its previous effect should be disposed and a new effect started for the new key."
     .end annotation
 
-    const-string v0, "effect"
-
-    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
     const p0, -0x35e9543f
 
     invoke-interface {p1, p0}, Landroidx/compose/runtime/Composer;->startReplaceableGroup(I)V
@@ -455,9 +439,9 @@
 
     const/4 p1, -0x1
 
-    const-string v0, "androidx.compose.runtime.DisposableEffect (Effects.kt:116)"
+    const-string v0, "androidx.compose.runtime.DisposableEffect (Effects.kt:119)"
 
-    .line 119
+    .line 120
     invoke-static {p0, p2, p1, v0}, Landroidx/compose/runtime/ComposerKt;->traceEventStart(IIILjava/lang/String;)V
 
     :cond_0
@@ -491,19 +475,11 @@
         }
     .end annotation
 
-    const-string v0, "keys"
-
-    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string v0, "effect"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
     const v0, -0x4df0ce72
 
     invoke-interface {p2, v0}, Landroidx/compose/runtime/Composer;->startReplaceableGroup(I)V
 
-    const-string v1, "C(DisposableEffect)P(1)276@11925L48:Effects.kt#9igjgp"
+    const-string v1, "C(DisposableEffect)P(1)277@11951L48:Effects.kt#9igjgp"
 
     invoke-static {p2, v1}, Landroidx/compose/runtime/ComposerKt;->sourceInformation(Landroidx/compose/runtime/Composer;Ljava/lang/String;)V
 
@@ -515,12 +491,12 @@
 
     const/4 v1, -0x1
 
-    const-string v2, "androidx.compose.runtime.DisposableEffect (Effects.kt:272)"
-
-    .line 276
-    invoke-static {v0, p3, v1, v2}, Landroidx/compose/runtime/ComposerKt;->traceEventStart(IIILjava/lang/String;)V
+    const-string v2, "androidx.compose.runtime.DisposableEffect (Effects.kt:276)"
 
     .line 277
+    invoke-static {v0, p3, v1, v2}, Landroidx/compose/runtime/ComposerKt;->traceEventStart(IIILjava/lang/String;)V
+
+    .line 278
     :cond_0
     array-length p3, p0
 
@@ -536,7 +512,7 @@
 
     invoke-static {p2, p3}, Landroidx/compose/runtime/ComposerKt;->sourceInformation(Landroidx/compose/runtime/Composer;Ljava/lang/String;)V
 
-    .line 523
+    .line 524
     array-length p3, p0
 
     const/4 v0, 0x0
@@ -558,7 +534,7 @@
 
     goto :goto_0
 
-    .line 525
+    .line 526
     :cond_1
     invoke-interface {p2}, Landroidx/compose/runtime/Composer;->rememberedValue()Ljava/lang/Object;
 
@@ -566,7 +542,7 @@
 
     if-nez v1, :cond_2
 
-    .line 526
+    .line 527
     sget-object p3, Landroidx/compose/runtime/Composer;->Companion:Landroidx/compose/runtime/Composer$Companion;
 
     invoke-virtual {p3}, Landroidx/compose/runtime/Composer$Companion;->getEmpty()Ljava/lang/Object;
@@ -575,16 +551,16 @@
 
     if-ne p0, p3, :cond_3
 
-    .line 277
+    .line 278
     :cond_2
     new-instance p0, Landroidx/compose/runtime/DisposableEffectImpl;
 
     invoke-direct {p0, p1}, Landroidx/compose/runtime/DisposableEffectImpl;-><init>(Lkotlin/jvm/functions/Function1;)V
 
-    .line 528
+    .line 529
     invoke-interface {p2, p0}, Landroidx/compose/runtime/Composer;->updateRememberedValue(Ljava/lang/Object;)V
 
-    .line 524
+    .line 525
     :cond_3
     invoke-interface {p2}, Landroidx/compose/runtime/Composer;->endReplaceableGroup()V
 
@@ -625,15 +601,11 @@
         }
     .end annotation
 
-    const-string v0, "block"
-
-    invoke-static {p3, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
     const v0, -0x339663b
 
     invoke-interface {p4, v0}, Landroidx/compose/runtime/Composer;->startReplaceableGroup(I)V
 
-    const-string v1, "C(LaunchedEffect)P(1,2,3)385@16335L70:Effects.kt#9igjgp"
+    const-string v1, "C(LaunchedEffect)P(1,2,3)386@16361L70:Effects.kt#9igjgp"
 
     invoke-static {p4, v1}, Landroidx/compose/runtime/ComposerKt;->sourceInformation(Landroidx/compose/runtime/Composer;Ljava/lang/String;)V
 
@@ -645,12 +617,12 @@
 
     const/4 v1, -0x1
 
-    const-string v2, "androidx.compose.runtime.LaunchedEffect (Effects.kt:378)"
-
-    .line 384
-    invoke-static {v0, p5, v1, v2}, Landroidx/compose/runtime/ComposerKt;->traceEventStart(IIILjava/lang/String;)V
+    const-string v2, "androidx.compose.runtime.LaunchedEffect (Effects.kt:384)"
 
     .line 385
+    invoke-static {v0, p5, v1, v2}, Landroidx/compose/runtime/ComposerKt;->traceEventStart(IIILjava/lang/String;)V
+
+    .line 386
     :cond_0
     invoke-interface {p4}, Landroidx/compose/runtime/Composer;->getApplyCoroutineContext()Lkotlin/coroutines/CoroutineContext;
 
@@ -658,40 +630,40 @@
 
     const v0, 0x607fb4c4
 
-    .line 386
+    .line 387
     invoke-interface {p4, v0}, Landroidx/compose/runtime/Composer;->startReplaceableGroup(I)V
 
     const-string v0, "CC(remember)P(1,2,3):Composables.kt#9igjgp"
 
     invoke-static {p4, v0}, Landroidx/compose/runtime/ComposerKt;->sourceInformation(Landroidx/compose/runtime/Composer;Ljava/lang/String;)V
 
-    .line 546
+    .line 547
     invoke-interface {p4, p0}, Landroidx/compose/runtime/Composer;->changed(Ljava/lang/Object;)Z
 
     move-result p0
 
-    .line 547
+    .line 548
     invoke-interface {p4, p1}, Landroidx/compose/runtime/Composer;->changed(Ljava/lang/Object;)Z
 
     move-result p1
 
     or-int/2addr p0, p1
 
-    .line 548
+    .line 549
     invoke-interface {p4, p2}, Landroidx/compose/runtime/Composer;->changed(Ljava/lang/Object;)Z
 
     move-result p1
 
     or-int/2addr p0, p1
 
-    .line 550
+    .line 551
     invoke-interface {p4}, Landroidx/compose/runtime/Composer;->rememberedValue()Ljava/lang/Object;
 
     move-result-object p1
 
     if-nez p0, :cond_1
 
-    .line 551
+    .line 552
     sget-object p0, Landroidx/compose/runtime/Composer;->Companion:Landroidx/compose/runtime/Composer$Companion;
 
     invoke-virtual {p0}, Landroidx/compose/runtime/Composer$Companion;->getEmpty()Ljava/lang/Object;
@@ -700,16 +672,16 @@
 
     if-ne p1, p0, :cond_2
 
-    .line 386
+    .line 387
     :cond_1
     new-instance p0, Landroidx/compose/runtime/LaunchedEffectImpl;
 
     invoke-direct {p0, p5, p3}, Landroidx/compose/runtime/LaunchedEffectImpl;-><init>(Lkotlin/coroutines/CoroutineContext;Lkotlin/jvm/functions/Function2;)V
 
-    .line 553
+    .line 554
     invoke-interface {p4, p0}, Landroidx/compose/runtime/Composer;->updateRememberedValue(Ljava/lang/Object;)V
 
-    .line 549
+    .line 550
     :cond_2
     invoke-interface {p4}, Landroidx/compose/runtime/Composer;->endReplaceableGroup()V
 
@@ -749,15 +721,11 @@
         }
     .end annotation
 
-    const-string v0, "block"
-
-    invoke-static {p2, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
     const v0, 0x232e5d65
 
     invoke-interface {p3, v0}, Landroidx/compose/runtime/Composer;->startReplaceableGroup(I)V
 
-    const-string v1, "C(LaunchedEffect)P(1,2)361@15297L64:Effects.kt#9igjgp"
+    const-string v1, "C(LaunchedEffect)P(1,2)362@15323L64:Effects.kt#9igjgp"
 
     invoke-static {p3, v1}, Landroidx/compose/runtime/ComposerKt;->sourceInformation(Landroidx/compose/runtime/Composer;Ljava/lang/String;)V
 
@@ -769,12 +737,12 @@
 
     const/4 v1, -0x1
 
-    const-string v2, "androidx.compose.runtime.LaunchedEffect (Effects.kt:355)"
-
-    .line 360
-    invoke-static {v0, p4, v1, v2}, Landroidx/compose/runtime/ComposerKt;->traceEventStart(IIILjava/lang/String;)V
+    const-string v2, "androidx.compose.runtime.LaunchedEffect (Effects.kt:360)"
 
     .line 361
+    invoke-static {v0, p4, v1, v2}, Landroidx/compose/runtime/ComposerKt;->traceEventStart(IIILjava/lang/String;)V
+
+    .line 362
     :cond_0
     invoke-interface {p3}, Landroidx/compose/runtime/Composer;->getApplyCoroutineContext()Lkotlin/coroutines/CoroutineContext;
 
@@ -782,14 +750,14 @@
 
     const v0, 0x1e7b2b64
 
-    .line 362
+    .line 363
     invoke-interface {p3, v0}, Landroidx/compose/runtime/Composer;->startReplaceableGroup(I)V
 
     const-string v0, "CC(remember)P(1,2):Composables.kt#9igjgp"
 
     invoke-static {p3, v0}, Landroidx/compose/runtime/ComposerKt;->sourceInformation(Landroidx/compose/runtime/Composer;Ljava/lang/String;)V
 
-    .line 538
+    .line 539
     invoke-interface {p3, p0}, Landroidx/compose/runtime/Composer;->changed(Ljava/lang/Object;)Z
 
     move-result p0
@@ -800,14 +768,14 @@
 
     or-int/2addr p0, p1
 
-    .line 540
+    .line 541
     invoke-interface {p3}, Landroidx/compose/runtime/Composer;->rememberedValue()Ljava/lang/Object;
 
     move-result-object p1
 
     if-nez p0, :cond_1
 
-    .line 541
+    .line 542
     sget-object p0, Landroidx/compose/runtime/Composer;->Companion:Landroidx/compose/runtime/Composer$Companion;
 
     invoke-virtual {p0}, Landroidx/compose/runtime/Composer$Companion;->getEmpty()Ljava/lang/Object;
@@ -816,16 +784,16 @@
 
     if-ne p1, p0, :cond_2
 
-    .line 362
+    .line 363
     :cond_1
     new-instance p0, Landroidx/compose/runtime/LaunchedEffectImpl;
 
     invoke-direct {p0, p4, p2}, Landroidx/compose/runtime/LaunchedEffectImpl;-><init>(Lkotlin/coroutines/CoroutineContext;Lkotlin/jvm/functions/Function2;)V
 
-    .line 543
+    .line 544
     invoke-interface {p3, p0}, Landroidx/compose/runtime/Composer;->updateRememberedValue(Ljava/lang/Object;)V
 
-    .line 539
+    .line 540
     :cond_2
     invoke-interface {p3}, Landroidx/compose/runtime/Composer;->endReplaceableGroup()V
 
@@ -864,15 +832,11 @@
         }
     .end annotation
 
-    const-string v0, "block"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
     const v0, 0x4648f105
 
     invoke-interface {p2, v0}, Landroidx/compose/runtime/Composer;->startReplaceableGroup(I)V
 
-    const-string v1, "C(LaunchedEffect)P(1)338@14289L58:Effects.kt#9igjgp"
+    const-string v1, "C(LaunchedEffect)P(1)339@14315L58:Effects.kt#9igjgp"
 
     invoke-static {p2, v1}, Landroidx/compose/runtime/ComposerKt;->sourceInformation(Landroidx/compose/runtime/Composer;Ljava/lang/String;)V
 
@@ -884,12 +848,12 @@
 
     const/4 v1, -0x1
 
-    const-string v2, "androidx.compose.runtime.LaunchedEffect (Effects.kt:333)"
-
-    .line 337
-    invoke-static {v0, p3, v1, v2}, Landroidx/compose/runtime/ComposerKt;->traceEventStart(IIILjava/lang/String;)V
+    const-string v2, "androidx.compose.runtime.LaunchedEffect (Effects.kt:337)"
 
     .line 338
+    invoke-static {v0, p3, v1, v2}, Landroidx/compose/runtime/ComposerKt;->traceEventStart(IIILjava/lang/String;)V
+
+    .line 339
     :cond_0
     invoke-interface {p2}, Landroidx/compose/runtime/Composer;->getApplyCoroutineContext()Lkotlin/coroutines/CoroutineContext;
 
@@ -897,26 +861,26 @@
 
     const v0, 0x44faf204
 
-    .line 339
+    .line 340
     invoke-interface {p2, v0}, Landroidx/compose/runtime/Composer;->startReplaceableGroup(I)V
 
     const-string v0, "CC(remember)P(1):Composables.kt#9igjgp"
 
     invoke-static {p2, v0}, Landroidx/compose/runtime/ComposerKt;->sourceInformation(Landroidx/compose/runtime/Composer;Ljava/lang/String;)V
 
-    .line 531
+    .line 532
     invoke-interface {p2, p0}, Landroidx/compose/runtime/Composer;->changed(Ljava/lang/Object;)Z
 
     move-result p0
 
-    .line 532
+    .line 533
     invoke-interface {p2}, Landroidx/compose/runtime/Composer;->rememberedValue()Ljava/lang/Object;
 
     move-result-object v0
 
     if-nez p0, :cond_1
 
-    .line 533
+    .line 534
     sget-object p0, Landroidx/compose/runtime/Composer;->Companion:Landroidx/compose/runtime/Composer$Companion;
 
     invoke-virtual {p0}, Landroidx/compose/runtime/Composer$Companion;->getEmpty()Ljava/lang/Object;
@@ -925,16 +889,16 @@
 
     if-ne v0, p0, :cond_2
 
-    .line 339
+    .line 340
     :cond_1
     new-instance p0, Landroidx/compose/runtime/LaunchedEffectImpl;
 
     invoke-direct {p0, p3, p1}, Landroidx/compose/runtime/LaunchedEffectImpl;-><init>(Lkotlin/coroutines/CoroutineContext;Lkotlin/jvm/functions/Function2;)V
 
-    .line 535
+    .line 536
     invoke-interface {p2, p0}, Landroidx/compose/runtime/Composer;->updateRememberedValue(Ljava/lang/Object;)V
 
-    .line 531
+    .line 532
     :cond_2
     invoke-interface {p2}, Landroidx/compose/runtime/Composer;->endReplaceableGroup()V
 
@@ -977,13 +941,9 @@
         message = "LaunchedEffect must provide one or more \'key\' parameters that define the identity of the LaunchedEffect and determine when its previous effect coroutine should be cancelled and a new effect launched for the new key."
     .end annotation
 
-    const-string v0, "block"
-
-    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
     const v0, -0x3001ab5b
 
-    .line 318
+    .line 319
     invoke-interface {p1, v0}, Landroidx/compose/runtime/Composer;->startRestartGroup(I)Landroidx/compose/runtime/Composer;
 
     move-result-object p1
@@ -1002,7 +962,7 @@
 
     if-nez v1, :cond_0
 
-    goto :goto_1
+    goto :goto_0
 
     :cond_0
     invoke-interface {p1}, Landroidx/compose/runtime/Composer;->skipToGroupEnd()V
@@ -1011,11 +971,8 @@
 
     move-result-object p1
 
-    if-nez p1, :cond_1
+    if-eqz p1, :cond_1
 
-    goto :goto_0
-
-    :cond_1
     new-instance v0, Landroidx/compose/runtime/EffectsKt$LaunchedEffect$1;
 
     invoke-direct {v0, p0, p2}, Landroidx/compose/runtime/EffectsKt$LaunchedEffect$1;-><init>(Lkotlin/jvm/functions/Function2;I)V
@@ -1024,11 +981,11 @@
 
     invoke-interface {p1, v0}, Landroidx/compose/runtime/ScopeUpdateScope;->updateScope(Lkotlin/jvm/functions/Function2;)V
 
-    :goto_0
+    :cond_1
     return-void
 
     :cond_2
-    :goto_1
+    :goto_0
     invoke-static {}, Landroidx/compose/runtime/ComposerKt;->isTraceInProgress()Z
 
     move-result p0
@@ -1037,7 +994,7 @@
 
     const/4 p0, -0x1
 
-    const-string p1, "androidx.compose.runtime.LaunchedEffect (Effects.kt:315)"
+    const-string p1, "androidx.compose.runtime.LaunchedEffect (Effects.kt:318)"
 
     invoke-static {v0, p2, p0, p1}, Landroidx/compose/runtime/ComposerKt;->traceEventStart(IIILjava/lang/String;)V
 
@@ -1076,19 +1033,11 @@
         }
     .end annotation
 
-    const-string v0, "keys"
-
-    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string v0, "block"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
     const v0, -0x8518448
 
     invoke-interface {p2, v0}, Landroidx/compose/runtime/Composer;->startReplaceableGroup(I)V
 
-    const-string v1, "C(LaunchedEffect)P(1)418@17676L59:Effects.kt#9igjgp"
+    const-string v1, "C(LaunchedEffect)P(1)419@17702L59:Effects.kt#9igjgp"
 
     invoke-static {p2, v1}, Landroidx/compose/runtime/ComposerKt;->sourceInformation(Landroidx/compose/runtime/Composer;Ljava/lang/String;)V
 
@@ -1100,18 +1049,18 @@
 
     const/4 v1, -0x1
 
-    const-string v2, "androidx.compose.runtime.LaunchedEffect (Effects.kt:413)"
-
-    .line 417
-    invoke-static {v0, p3, v1, v2}, Landroidx/compose/runtime/ComposerKt;->traceEventStart(IIILjava/lang/String;)V
+    const-string v2, "androidx.compose.runtime.LaunchedEffect (Effects.kt:417)"
 
     .line 418
+    invoke-static {v0, p3, v1, v2}, Landroidx/compose/runtime/ComposerKt;->traceEventStart(IIILjava/lang/String;)V
+
+    .line 419
     :cond_0
     invoke-interface {p2}, Landroidx/compose/runtime/Composer;->getApplyCoroutineContext()Lkotlin/coroutines/CoroutineContext;
 
     move-result-object p3
 
-    .line 419
+    .line 420
     array-length v0, p0
 
     invoke-static {p0, v0}, Ljava/util/Arrays;->copyOf([Ljava/lang/Object;I)[Ljava/lang/Object;
@@ -1126,7 +1075,7 @@
 
     invoke-static {p2, v0}, Landroidx/compose/runtime/ComposerKt;->sourceInformation(Landroidx/compose/runtime/Composer;Ljava/lang/String;)V
 
-    .line 557
+    .line 558
     array-length v0, p0
 
     const/4 v1, 0x0
@@ -1148,7 +1097,7 @@
 
     goto :goto_0
 
-    .line 559
+    .line 560
     :cond_1
     invoke-interface {p2}, Landroidx/compose/runtime/Composer;->rememberedValue()Ljava/lang/Object;
 
@@ -1156,7 +1105,7 @@
 
     if-nez v2, :cond_2
 
-    .line 560
+    .line 561
     sget-object v0, Landroidx/compose/runtime/Composer;->Companion:Landroidx/compose/runtime/Composer$Companion;
 
     invoke-virtual {v0}, Landroidx/compose/runtime/Composer$Companion;->getEmpty()Ljava/lang/Object;
@@ -1165,16 +1114,16 @@
 
     if-ne p0, v0, :cond_3
 
-    .line 419
+    .line 420
     :cond_2
     new-instance p0, Landroidx/compose/runtime/LaunchedEffectImpl;
 
     invoke-direct {p0, p3, p1}, Landroidx/compose/runtime/LaunchedEffectImpl;-><init>(Lkotlin/coroutines/CoroutineContext;Lkotlin/jvm/functions/Function2;)V
 
-    .line 562
+    .line 563
     invoke-interface {p2, p0}, Landroidx/compose/runtime/Composer;->updateRememberedValue(Ljava/lang/Object;)V
 
-    .line 558
+    .line 559
     :cond_3
     invoke-interface {p2}, Landroidx/compose/runtime/Composer;->endReplaceableGroup()V
 
@@ -1205,32 +1154,22 @@
         }
     .end annotation
 
-    const-string v0, "effect"
-
-    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const v0, -0x4ccc7149
-
-    invoke-interface {p1, v0}, Landroidx/compose/runtime/Composer;->startReplaceableGroup(I)V
-
-    const-string v1, "C(SideEffect):Effects.kt#9igjgp"
-
-    invoke-static {p1, v1}, Landroidx/compose/runtime/ComposerKt;->sourceInformation(Landroidx/compose/runtime/Composer;Ljava/lang/String;)V
-
     invoke-static {}, Landroidx/compose/runtime/ComposerKt;->isTraceInProgress()Z
 
-    move-result v1
+    move-result v0
 
-    if-eqz v1, :cond_0
+    if-eqz v0, :cond_0
 
-    const/4 v1, -0x1
+    const/4 v0, -0x1
 
-    const-string v2, "androidx.compose.runtime.SideEffect (Effects.kt:45)"
+    const-string v1, "androidx.compose.runtime.SideEffect (Effects.kt:48)"
 
-    .line 48
-    invoke-static {v0, p2, v1, v2}, Landroidx/compose/runtime/ComposerKt;->traceEventStart(IIILjava/lang/String;)V
+    const v2, -0x4ccc7149
 
     .line 49
+    invoke-static {v2, p2, v0, v1}, Landroidx/compose/runtime/ComposerKt;->traceEventStart(IIILjava/lang/String;)V
+
+    .line 50
     :cond_0
     invoke-interface {p1, p0}, Landroidx/compose/runtime/Composer;->recordSideEffect(Lkotlin/jvm/functions/Function0;)V
 
@@ -1243,8 +1182,6 @@
     invoke-static {}, Landroidx/compose/runtime/ComposerKt;->traceEventEnd()V
 
     :cond_1
-    invoke-interface {p1}, Landroidx/compose/runtime/Composer;->endReplaceableGroup()V
-
     return-void
 .end method
 
@@ -1260,15 +1197,7 @@
 .method public static final createCompositionCoroutineScope(Lkotlin/coroutines/CoroutineContext;Landroidx/compose/runtime/Composer;)Lkotlinx/coroutines/CoroutineScope;
     .locals 1
 
-    const-string v0, "coroutineContext"
-
-    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string v0, "composer"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 444
+    .line 445
     sget-object v0, Lkotlinx/coroutines/Job;->Key:Lkotlinx/coroutines/Job$Key;
 
     check-cast v0, Lkotlin/coroutines/CoroutineContext$Key;
@@ -1283,42 +1212,42 @@
 
     const/4 p1, 0x0
 
-    .line 446
+    .line 447
     invoke-static {p1, p0, p1}, Lkotlinx/coroutines/JobKt;->Job$default(Lkotlinx/coroutines/Job;ILjava/lang/Object;)Lkotlinx/coroutines/CompletableJob;
 
     move-result-object p0
 
-    .line 448
+    .line 449
     new-instance p1, Ljava/lang/IllegalArgumentException;
 
-    .line 449
+    .line 450
     const-string v0, "CoroutineContext supplied to rememberCoroutineScope may not include a parent job"
 
-    .line 448
+    .line 449
     invoke-direct {p1, v0}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
 
     check-cast p1, Ljava/lang/Throwable;
 
-    .line 447
+    .line 448
     invoke-interface {p0, p1}, Lkotlinx/coroutines/CompletableJob;->completeExceptionally(Ljava/lang/Throwable;)Z
 
-    .line 446
+    .line 447
     check-cast p0, Lkotlin/coroutines/CoroutineContext;
 
-    .line 445
+    .line 446
     invoke-static {p0}, Lkotlinx/coroutines/CoroutineScopeKt;->CoroutineScope(Lkotlin/coroutines/CoroutineContext;)Lkotlinx/coroutines/CoroutineScope;
 
     move-result-object p0
 
     goto :goto_0
 
-    .line 456
+    .line 457
     :cond_0
     invoke-interface {p1}, Landroidx/compose/runtime/Composer;->getApplyCoroutineContext()Lkotlin/coroutines/CoroutineContext;
 
     move-result-object p1
 
-    .line 457
+    .line 458
     sget-object v0, Lkotlinx/coroutines/Job;->Key:Lkotlinx/coroutines/Job$Key;
 
     check-cast v0, Lkotlin/coroutines/CoroutineContext$Key;
@@ -1370,7 +1299,7 @@
 
     invoke-interface {p1, p2}, Landroidx/compose/runtime/Composer;->startReplaceableGroup(I)V
 
-    const-string p2, "CC(rememberCoroutineScope)488@20446L144:Effects.kt#9igjgp"
+    const-string p2, "CC(rememberCoroutineScope)489@20472L144:Effects.kt#9igjgp"
 
     invoke-static {p1, p2}, Landroidx/compose/runtime/ComposerKt;->sourceInformation(Landroidx/compose/runtime/Composer;Ljava/lang/String;)V
 
@@ -1378,7 +1307,7 @@
 
     if-eqz p2, :cond_0
 
-    .line 486
+    .line 487
     sget-object p0, Landroidx/compose/runtime/EffectsKt$rememberCoroutineScope$1;->INSTANCE:Landroidx/compose/runtime/EffectsKt$rememberCoroutineScope$1;
 
     check-cast p0, Lkotlin/jvm/functions/Function0;
@@ -1386,19 +1315,19 @@
     :cond_0
     const p2, -0x1d58f75c
 
-    .line 489
+    .line 490
     invoke-interface {p1, p2}, Landroidx/compose/runtime/Composer;->startReplaceableGroup(I)V
 
     const-string p2, "CC(remember):Composables.kt#9igjgp"
 
     invoke-static {p1, p2}, Landroidx/compose/runtime/ComposerKt;->sourceInformation(Landroidx/compose/runtime/Composer;Ljava/lang/String;)V
 
-    .line 566
+    .line 567
     invoke-interface {p1}, Landroidx/compose/runtime/Composer;->rememberedValue()Ljava/lang/Object;
 
     move-result-object p2
 
-    .line 567
+    .line 568
     sget-object p3, Landroidx/compose/runtime/Composer;->Companion:Landroidx/compose/runtime/Composer$Companion;
 
     invoke-virtual {p3}, Landroidx/compose/runtime/Composer$Companion;->getEmpty()Ljava/lang/Object;
@@ -1407,10 +1336,10 @@
 
     if-ne p2, p3, :cond_1
 
-    .line 490
+    .line 491
     new-instance p2, Landroidx/compose/runtime/CompositionScopedCoroutineScopeCanceller;
 
-    .line 491
+    .line 492
     invoke-interface {p0}, Lkotlin/jvm/functions/Function0;->invoke()Ljava/lang/Object;
 
     move-result-object p0
@@ -1421,20 +1350,20 @@
 
     move-result-object p0
 
-    .line 490
+    .line 491
     invoke-direct {p2, p0}, Landroidx/compose/runtime/CompositionScopedCoroutineScopeCanceller;-><init>(Lkotlinx/coroutines/CoroutineScope;)V
 
-    .line 569
+    .line 570
     invoke-interface {p1, p2}, Landroidx/compose/runtime/Composer;->updateRememberedValue(Ljava/lang/Object;)V
 
-    .line 565
+    .line 566
     :cond_1
     invoke-interface {p1}, Landroidx/compose/runtime/Composer;->endReplaceableGroup()V
 
-    .line 489
+    .line 490
     check-cast p2, Landroidx/compose/runtime/CompositionScopedCoroutineScopeCanceller;
 
-    .line 494
+    .line 495
     invoke-virtual {p2}, Landroidx/compose/runtime/CompositionScopedCoroutineScopeCanceller;->getCoroutineScope()Lkotlinx/coroutines/CoroutineScope;
 
     move-result-object p0

@@ -4,6 +4,8 @@
 
 
 # static fields
+.field public static final ACTION_MODE:I = 0x10
+
 .field private static final DELIMITER_SLASH:Ljava/lang/String; = "/"
 
 .field public static final INTELLIGENT_ACTIVE_MASK:I = 0x2
@@ -33,22 +35,22 @@
 .method public constructor <init>(IIIII)V
     .locals 0
 
-    .line 29
+    .line 30
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 30
+    .line 31
     iput p1, p0, Ljp/co/sony/mc/camera/util/capability/VideoConfigurationMap;->width:I
 
-    .line 31
+    .line 32
     iput p2, p0, Ljp/co/sony/mc/camera/util/capability/VideoConfigurationMap;->height:I
 
-    .line 32
+    .line 33
     iput p3, p0, Ljp/co/sony/mc/camera/util/capability/VideoConfigurationMap;->fpsMin:I
 
-    .line 33
+    .line 34
     iput p4, p0, Ljp/co/sony/mc/camera/util/capability/VideoConfigurationMap;->fpsMax:I
 
-    .line 34
+    .line 35
     iput p5, p0, Ljp/co/sony/mc/camera/util/capability/VideoConfigurationMap;->functions:I
 
     return-void
@@ -74,18 +76,18 @@
 
     goto :goto_2
 
-    .line 49
+    .line 50
     :cond_0
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
-    .line 51
+    .line 52
     invoke-virtual {p0, p1}, Ljava/lang/String;->split(Ljava/lang/String;)[Ljava/lang/String;
 
     move-result-object p0
 
-    .line 52
+    .line 53
     array-length p1, p0
 
     const/4 v1, 0x0
@@ -97,7 +99,7 @@
 
     aget-object v3, p0, v2
 
-    .line 53
+    .line 54
     const-string v4, "/"
 
     const/4 v5, 0x5
@@ -106,14 +108,14 @@
 
     move-result-object v3
 
-    .line 54
+    .line 55
     array-length v4, v3
 
     if-eq v4, v5, :cond_1
 
     goto :goto_1
 
-    .line 57
+    .line 58
     :cond_1
     aget-object v4, v3, v1
 
@@ -123,7 +125,7 @@
 
     const/4 v4, 0x1
 
-    .line 58
+    .line 59
     aget-object v4, v3, v4
 
     invoke-static {v4}, Ljava/lang/Integer;->parseInt(Ljava/lang/String;)I
@@ -132,7 +134,7 @@
 
     const/4 v4, 0x2
 
-    .line 59
+    .line 60
     aget-object v4, v3, v4
 
     invoke-static {v4}, Ljava/lang/Integer;->parseInt(Ljava/lang/String;)I
@@ -141,7 +143,7 @@
 
     const/4 v4, 0x3
 
-    .line 60
+    .line 61
     aget-object v4, v3, v4
 
     invoke-static {v4}, Ljava/lang/Integer;->parseInt(Ljava/lang/String;)I
@@ -150,14 +152,14 @@
 
     const/4 v4, 0x4
 
-    .line 61
+    .line 62
     aget-object v3, v3, v4
 
     invoke-static {v3}, Ljava/lang/Integer;->parseInt(Ljava/lang/String;)I
 
     move-result v10
 
-    .line 63
+    .line 64
     new-instance v3, Ljp/co/sony/mc/camera/util/capability/VideoConfigurationMap;
 
     move-object v5, v3
@@ -186,7 +188,7 @@
 .method public toString()Ljava/lang/String;
     .locals 4
 
-    .line 70
+    .line 71
     iget v0, p0, Ljp/co/sony/mc/camera/util/capability/VideoConfigurationMap;->width:I
 
     invoke-static {v0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;

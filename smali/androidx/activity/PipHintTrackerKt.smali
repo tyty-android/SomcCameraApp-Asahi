@@ -54,7 +54,7 @@
         }
     .end annotation
 
-    .line 53
+    .line 51
     new-instance v0, Landroidx/activity/PipHintTrackerKt$trackPipAnimationHintView$flow$1;
 
     const/4 v1, 0x0
@@ -67,7 +67,7 @@
 
     move-result-object p1
 
-    .line 93
+    .line 91
     new-instance v0, Landroidx/activity/PipHintTrackerKt$trackPipAnimationHintView$2;
 
     invoke-direct {v0, p0}, Landroidx/activity/PipHintTrackerKt$trackPipAnimationHintView$2;-><init>(Landroid/app/Activity;)V
@@ -95,12 +95,12 @@
 .method private static final trackPipAnimationHintView$positionInWindow(Landroid/view/View;)Landroid/graphics/Rect;
     .locals 1
 
-    .line 45
+    .line 43
     new-instance v0, Landroid/graphics/Rect;
 
     invoke-direct {v0}, Landroid/graphics/Rect;-><init>()V
 
-    .line 46
+    .line 44
     invoke-virtual {p0, v0}, Landroid/view/View;->getGlobalVisibleRect(Landroid/graphics/Rect;)Z
 
     return-object v0

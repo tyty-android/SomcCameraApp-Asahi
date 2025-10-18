@@ -21,7 +21,7 @@
 .method constructor <init>()V
     .locals 0
 
-    .line 588
+    .line 591
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -42,10 +42,10 @@
         }
     .end annotation
 
-    .line 592
+    .line 595
     check-cast p1, Ljp/co/sony/mc/camera/setting/CommonSettings;
 
-    .line 593
+    .line 596
     invoke-static {p1}, Ljp/co/sony/mc/camera/setting/CommonSettings;->-$$Nest$mgetRtmpStreamUrl(Ljp/co/sony/mc/camera/setting/CommonSettings;)Ljava/lang/String;
 
     move-result-object p0

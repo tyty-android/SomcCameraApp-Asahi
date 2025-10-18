@@ -171,7 +171,7 @@
 .end method
 
 .method public static formatText(Landroid/content/res/Resources;Ljava/lang/CharSequence;Ljava/lang/String;)Ljava/lang/String;
-    .locals 2
+    .locals 0
 
     .line 199
     :try_start_0
@@ -180,10 +180,6 @@
     move-result-object p0
 
     iget-object p0, p0, Landroid/content/res/Configuration;->locale:Ljava/util/Locale;
-
-    const/4 v0, 0x1
-
-    new-array v0, v0, [Ljava/lang/Object;
 
     invoke-static {p1}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
 
@@ -197,12 +193,12 @@
 
     move-result-object p1
 
-    const/4 v1, 0x0
+    filled-new-array {p1}, [Ljava/lang/Object;
 
-    aput-object p1, v0, v1
+    move-result-object p1
 
     .line 198
-    invoke-static {p0, p2, v0}, Ljava/lang/String;->format(Ljava/util/Locale;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
+    invoke-static {p0, p2, p1}, Ljava/lang/String;->format(Ljava/util/Locale;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
 
     move-result-object p0
     :try_end_0

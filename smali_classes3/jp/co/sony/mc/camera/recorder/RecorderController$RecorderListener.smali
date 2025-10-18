@@ -30,5 +30,13 @@
 .method public abstract onRecordStopped()V
 .end method
 
-.method public abstract setSavingRequestBuilder(Ljp/co/sony/mc/camera/storage/RequestFactory$VideoSavingRequestBuilder;)V
+.method public abstract setSavingRequestBuilders(Ljava/util/List;)V
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Ljava/util/List<",
+            "Ljp/co/sony/mc/camera/storage/RequestFactory$VideoSavingRequestBuilder;",
+            ">;)V"
+        }
+    .end annotation
 .end method

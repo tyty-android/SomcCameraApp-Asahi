@@ -61,6 +61,12 @@
 
 .field private final mIsStopSoundRequired:Z
 
+.field private mIsStopVibrationAlreadyPlayed:Z
+
+.field private final mIsStopVibrationAlreadyPlayedLock:Ljava/lang/Object;
+
+.field private mIsStopVibrationRequired:Z
+
 .field private mIsStreamingMode:Z
 
 .field private mIsSwitchLensDuringStreaming:Z
@@ -88,8 +94,6 @@
 .field private final mRecorderAccessThread:Landroid/os/HandlerThread;
 
 .field private final mRecorderControllerThread:Landroid/os/Handler;
-
-.field private mRecordingSurface:Landroid/view/Surface;
 
 .field private final mReferenceClock:Ljp/co/sony/mc/camera/recorder/utility/ReferenceClock;
 
@@ -203,14 +207,6 @@
     return-object p0
 .end method
 
-.method static bridge synthetic -$$Nest$fputmRecordingSurface(Ljp/co/sony/mc/camera/recorder/defaultrecorder/BaseRecorderController;Landroid/view/Surface;)V
-    .locals 0
-
-    iput-object p1, p0, Ljp/co/sony/mc/camera/recorder/defaultrecorder/BaseRecorderController;->mRecordingSurface:Landroid/view/Surface;
-
-    return-void
-.end method
-
 .method static bridge synthetic -$$Nest$mdisplayMaxDuration(Ljp/co/sony/mc/camera/recorder/defaultrecorder/BaseRecorderController;)V
     .locals 0
 
@@ -243,6 +239,14 @@
     return-void
 .end method
 
+.method static bridge synthetic -$$Nest$mplayStopVibrate(Ljp/co/sony/mc/camera/recorder/defaultrecorder/BaseRecorderController;)V
+    .locals 0
+
+    invoke-direct {p0}, Ljp/co/sony/mc/camera/recorder/defaultrecorder/BaseRecorderController;->playStopVibrate()V
+
+    return-void
+.end method
+
 .method static bridge synthetic -$$Nest$smtrace(Ljava/lang/String;)V
     .locals 0
 
@@ -271,10 +275,10 @@
 
     move-object/from16 v1, p4
 
-    .line 219
+    .line 220
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 70
+    .line 71
     new-instance v2, Ljava/lang/Object;
 
     invoke-direct {v2}, Ljava/lang/Object;-><init>()V
@@ -283,87 +287,94 @@
 
     const/4 v2, 0x0
 
-    .line 80
+    .line 81
     iput-boolean v2, v0, Ljp/co/sony/mc/camera/recorder/defaultrecorder/BaseRecorderController;->mIsSwitchLensDuringStreaming:Z
 
-    .line 845
+    .line 852
     new-instance v3, Ljava/lang/Object;
 
     invoke-direct {v3}, Ljava/lang/Object;-><init>()V
 
     iput-object v3, v0, Ljp/co/sony/mc/camera/recorder/defaultrecorder/BaseRecorderController;->mIsStopSoundAlreadyPlayedLock:Ljava/lang/Object;
 
-    .line 894
+    .line 853
+    new-instance v3, Ljava/lang/Object;
+
+    invoke-direct {v3}, Ljava/lang/Object;-><init>()V
+
+    iput-object v3, v0, Ljp/co/sony/mc/camera/recorder/defaultrecorder/BaseRecorderController;->mIsStopVibrationAlreadyPlayedLock:Ljava/lang/Object;
+
+    .line 915
     new-instance v3, Ljp/co/sony/mc/camera/recorder/defaultrecorder/BaseRecorderController$2;
 
     invoke-direct {v3, p0}, Ljp/co/sony/mc/camera/recorder/defaultrecorder/BaseRecorderController$2;-><init>(Ljp/co/sony/mc/camera/recorder/defaultrecorder/BaseRecorderController;)V
 
     iput-object v3, v0, Ljp/co/sony/mc/camera/recorder/defaultrecorder/BaseRecorderController;->mOnErrorListener:Ljp/co/sony/mc/camera/recorder/RecorderInterface$OnErrorListener;
 
-    .line 933
+    .line 955
     new-instance v4, Ljp/co/sony/mc/camera/recorder/defaultrecorder/BaseRecorderController$3;
 
     invoke-direct {v4, p0}, Ljp/co/sony/mc/camera/recorder/defaultrecorder/BaseRecorderController$3;-><init>(Ljp/co/sony/mc/camera/recorder/defaultrecorder/BaseRecorderController;)V
 
     iput-object v4, v0, Ljp/co/sony/mc/camera/recorder/defaultrecorder/BaseRecorderController;->mOnSetOutputDoneListener:Ljp/co/sony/mc/camera/recorder/RecorderInterface$OnSetOutputDoneListener;
 
-    .line 941
+    .line 963
     new-instance v5, Ljp/co/sony/mc/camera/recorder/defaultrecorder/BaseRecorderController$4;
 
     invoke-direct {v5, p0}, Ljp/co/sony/mc/camera/recorder/defaultrecorder/BaseRecorderController$4;-><init>(Ljp/co/sony/mc/camera/recorder/defaultrecorder/BaseRecorderController;)V
 
     iput-object v5, v0, Ljp/co/sony/mc/camera/recorder/defaultrecorder/BaseRecorderController;->mOnMaxReachedListener:Ljp/co/sony/mc/camera/recorder/RecorderInterface$OnMaxReachedListener;
 
-    .line 960
+    .line 982
     new-instance v6, Ljp/co/sony/mc/camera/recorder/defaultrecorder/BaseRecorderController$5;
 
     invoke-direct {v6, p0}, Ljp/co/sony/mc/camera/recorder/defaultrecorder/BaseRecorderController$5;-><init>(Ljp/co/sony/mc/camera/recorder/defaultrecorder/BaseRecorderController;)V
 
     iput-object v6, v0, Ljp/co/sony/mc/camera/recorder/defaultrecorder/BaseRecorderController;->mAudioTrackListener:Ljp/co/sony/mc/camera/recorder/RecorderInterface$RecordTrackListener;
 
-    .line 989
+    .line 1018
     new-instance v7, Ljp/co/sony/mc/camera/recorder/defaultrecorder/BaseRecorderController$6;
 
     invoke-direct {v7, p0}, Ljp/co/sony/mc/camera/recorder/defaultrecorder/BaseRecorderController$6;-><init>(Ljp/co/sony/mc/camera/recorder/defaultrecorder/BaseRecorderController;)V
 
     iput-object v7, v0, Ljp/co/sony/mc/camera/recorder/defaultrecorder/BaseRecorderController;->mVideoTrackListener:Ljp/co/sony/mc/camera/recorder/RecorderInterface$RecordTrackListener;
 
-    .line 1104
+    .line 1140
     new-instance v8, Ljp/co/sony/mc/camera/recorder/defaultrecorder/BaseRecorderController$7;
 
     invoke-direct {v8, p0}, Ljp/co/sony/mc/camera/recorder/defaultrecorder/BaseRecorderController$7;-><init>(Ljp/co/sony/mc/camera/recorder/defaultrecorder/BaseRecorderController;)V
 
     iput-object v8, v0, Ljp/co/sony/mc/camera/recorder/defaultrecorder/BaseRecorderController;->mOnTickCallback:Ljp/co/sony/mc/camera/recorder/utility/ReferenceClock$TickCallback;
 
-    .line 220
+    .line 221
     const-string v9, "BaseRecorderController() E"
 
     invoke-static {v9}, Ljp/co/sony/mc/camera/recorder/defaultrecorder/BaseRecorderController;->trace(Ljava/lang/String;)V
 
     move-object v9, p1
 
-    .line 222
+    .line 223
     iput-object v9, v0, Ljp/co/sony/mc/camera/recorder/defaultrecorder/BaseRecorderController;->mContext:Landroid/content/Context;
 
     move-object v9, p2
 
-    .line 223
+    .line 224
     iput-object v9, v0, Ljp/co/sony/mc/camera/recorder/defaultrecorder/BaseRecorderController;->mCameraActionSound:Ljp/co/sony/mc/camera/recorder/utility/Accessor;
 
     move-object/from16 v9, p5
 
-    .line 224
+    .line 225
     iput-object v9, v0, Ljp/co/sony/mc/camera/recorder/defaultrecorder/BaseRecorderController;->mListener:Ljp/co/sony/mc/camera/recorder/RecorderController$RecorderListener;
 
-    .line 225
+    .line 226
     iput-object v1, v0, Ljp/co/sony/mc/camera/recorder/defaultrecorder/BaseRecorderController;->mCallbackHandler:Landroid/os/Handler;
 
-    .line 226
+    .line 227
     sget-object v9, Ljp/co/sony/mc/camera/recorder/defaultrecorder/BaseRecorderController$State;->IDLE:Ljp/co/sony/mc/camera/recorder/defaultrecorder/BaseRecorderController$State;
 
     invoke-virtual {p0, v9}, Ljp/co/sony/mc/camera/recorder/defaultrecorder/BaseRecorderController;->changeTo(Ljp/co/sony/mc/camera/recorder/defaultrecorder/BaseRecorderController$State;)V
 
-    .line 227
+    .line 228
     new-instance v9, Ljp/co/sony/mc/camera/recorder/utility/ReferenceClock;
 
     move/from16 v10, p8
@@ -374,7 +385,7 @@
 
     iput-object v9, v0, Ljp/co/sony/mc/camera/recorder/defaultrecorder/BaseRecorderController;->mReferenceClock:Ljp/co/sony/mc/camera/recorder/utility/ReferenceClock;
 
-    .line 232
+    .line 233
     new-instance v1, Landroid/os/HandlerThread;
 
     const-string v8, "RecorderAccess"
@@ -385,10 +396,10 @@
 
     iput-object v1, v0, Ljp/co/sony/mc/camera/recorder/defaultrecorder/BaseRecorderController;->mRecorderAccessThread:Landroid/os/HandlerThread;
 
-    .line 234
+    .line 235
     invoke-virtual {v1}, Landroid/os/HandlerThread;->start()V
 
-    .line 235
+    .line 236
     new-instance v8, Landroid/os/Handler;
 
     invoke-virtual {v1}, Landroid/os/HandlerThread;->getLooper()Landroid/os/Looper;
@@ -401,41 +412,49 @@
 
     move-wide/from16 v8, p6
 
-    .line 237
+    .line 238
     iput-wide v8, v0, Ljp/co/sony/mc/camera/recorder/defaultrecorder/BaseRecorderController;->mMinDurationMillis:J
 
     move/from16 v1, p9
 
-    .line 239
+    .line 240
     iput-boolean v1, v0, Ljp/co/sony/mc/camera/recorder/defaultrecorder/BaseRecorderController;->mIsStartSoundRequired:Z
 
     move/from16 v1, p10
 
-    .line 240
+    .line 241
     iput-boolean v1, v0, Ljp/co/sony/mc/camera/recorder/defaultrecorder/BaseRecorderController;->mShouldWaitStartSound:Z
 
     move/from16 v1, p11
 
-    .line 241
+    .line 242
     iput-boolean v1, v0, Ljp/co/sony/mc/camera/recorder/defaultrecorder/BaseRecorderController;->mIsStopSoundRequired:Z
 
     move/from16 v1, p12
 
-    .line 242
+    .line 243
     iput-boolean v1, v0, Ljp/co/sony/mc/camera/recorder/defaultrecorder/BaseRecorderController;->mIsUserSoundSettingOn:Z
 
-    .line 243
+    .line 244
     iput-boolean v2, v0, Ljp/co/sony/mc/camera/recorder/defaultrecorder/BaseRecorderController;->mIsStopSoundAlreadyPlayed:Z
 
-    move/from16 v1, p13
+    const/4 v1, 0x1
 
-    .line 244
-    iput-boolean v1, v0, Ljp/co/sony/mc/camera/recorder/defaultrecorder/BaseRecorderController;->mIsStreamingMode:Z
-
-    move-object v1, p3
+    .line 245
+    iput-boolean v1, v0, Ljp/co/sony/mc/camera/recorder/defaultrecorder/BaseRecorderController;->mIsStopVibrationRequired:Z
 
     .line 246
-    iput-object v1, v0, Ljp/co/sony/mc/camera/recorder/defaultrecorder/BaseRecorderController;->mRecorder:Ljp/co/sony/mc/camera/recorder/RecorderInterface;
+    iput-boolean v2, v0, Ljp/co/sony/mc/camera/recorder/defaultrecorder/BaseRecorderController;->mIsStopVibrationAlreadyPlayed:Z
+
+    move/from16 v2, p13
+
+    .line 247
+    iput-boolean v2, v0, Ljp/co/sony/mc/camera/recorder/defaultrecorder/BaseRecorderController;->mIsStreamingMode:Z
+
+    move-object v2, p3
+
+    .line 249
+    iput-object v2, v0, Ljp/co/sony/mc/camera/recorder/defaultrecorder/BaseRecorderController;->mRecorder:Ljp/co/sony/mc/camera/recorder/RecorderInterface;
 
     move-object p1, p3
 
@@ -449,15 +468,13 @@
 
     move-object/from16 p6, v4
 
-    .line 247
+    .line 250
     invoke-interface/range {p1 .. p6}, Ljp/co/sony/mc/camera/recorder/RecorderInterface;->setListener(Ljp/co/sony/mc/camera/recorder/RecorderInterface$RecordTrackListener;Ljp/co/sony/mc/camera/recorder/RecorderInterface$RecordTrackListener;Ljp/co/sony/mc/camera/recorder/RecorderInterface$OnErrorListener;Ljp/co/sony/mc/camera/recorder/RecorderInterface$OnMaxReachedListener;Ljp/co/sony/mc/camera/recorder/RecorderInterface$OnSetOutputDoneListener;)V
 
-    const/4 v1, 0x1
-
-    .line 254
+    .line 257
     iput-boolean v1, v0, Ljp/co/sony/mc/camera/recorder/defaultrecorder/BaseRecorderController;->mIsAdjustRecordingTimeByRecorderNotification:Z
 
-    .line 256
+    .line 259
     const-string v0, "BaseRecorderController() X"
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/recorder/defaultrecorder/BaseRecorderController;->trace(Ljava/lang/String;)V
@@ -468,7 +485,7 @@
 .method private displayMaxDuration()V
     .locals 8
 
-    .line 1129
+    .line 1165
     iget-wide v0, p0, Ljp/co/sony/mc/camera/recorder/defaultrecorder/BaseRecorderController;->mMaxDurationMillis:J
 
     const-wide/16 v2, 0x0
@@ -493,7 +510,7 @@
 
     if-gez v0, :cond_0
 
-    .line 1135
+    .line 1171
     iget-object v0, p0, Ljp/co/sony/mc/camera/recorder/defaultrecorder/BaseRecorderController;->mCallbackHandler:Landroid/os/Handler;
 
     new-instance v1, Ljp/co/sony/mc/camera/recorder/defaultrecorder/BaseRecorderController$8;
@@ -509,7 +526,7 @@
 .method private getCameraActionSound()Ljp/co/sony/mc/camera/device/CameraActionSound;
     .locals 0
 
-    .line 316
+    .line 319
     iget-object p0, p0, Ljp/co/sony/mc/camera/recorder/defaultrecorder/BaseRecorderController;->mCameraActionSound:Ljp/co/sony/mc/camera/recorder/utility/Accessor;
 
     invoke-interface {p0}, Ljp/co/sony/mc/camera/recorder/utility/Accessor;->get()Ljava/lang/Object;
@@ -524,15 +541,15 @@
 .method private notifyDuration(J)V
     .locals 5
 
-    .line 1075
+    .line 1111
     iput-wide p1, p0, Ljp/co/sony/mc/camera/recorder/defaultrecorder/BaseRecorderController;->mLastNotifyDurationMillis:J
 
-    .line 1077
+    .line 1113
     iget-boolean v0, p0, Ljp/co/sony/mc/camera/recorder/defaultrecorder/BaseRecorderController;->mIsAdjustRecordingTimeByRecorderNotification:Z
 
     if-eqz v0, :cond_4
 
-    .line 1078
+    .line 1114
     iget-object v0, p0, Ljp/co/sony/mc/camera/recorder/defaultrecorder/BaseRecorderController;->mReferenceClock:Ljp/co/sony/mc/camera/recorder/utility/ReferenceClock;
 
     invoke-virtual {v0}, Ljp/co/sony/mc/camera/recorder/utility/ReferenceClock;->isMeasuring()Z
@@ -541,14 +558,14 @@
 
     if-nez v0, :cond_4
 
-    .line 1079
+    .line 1115
     iget-object v0, p0, Ljp/co/sony/mc/camera/recorder/defaultrecorder/BaseRecorderController;->mStateLock:Ljava/lang/Object;
 
     monitor-enter v0
 
     const/4 v1, 0x2
 
-    .line 1080
+    .line 1116
     :try_start_0
     new-array v1, v1, [Ljp/co/sony/mc/camera/recorder/defaultrecorder/BaseRecorderController$State;
 
@@ -570,48 +587,48 @@
 
     if-eqz v1, :cond_1
 
-    .line 1082
+    .line 1118
     iget-boolean v1, p0, Ljp/co/sony/mc/camera/recorder/defaultrecorder/BaseRecorderController;->mIsSwitchLensDuringStreaming:Z
 
     if-nez v1, :cond_0
 
-    .line 1083
+    .line 1119
     iget-object v1, p0, Ljp/co/sony/mc/camera/recorder/defaultrecorder/BaseRecorderController;->mReferenceClock:Ljp/co/sony/mc/camera/recorder/utility/ReferenceClock;
 
     invoke-virtual {v1, p1, p2}, Ljp/co/sony/mc/camera/recorder/utility/ReferenceClock;->reset(J)V
 
-    .line 1085
+    .line 1121
     :cond_0
     iget-object v1, p0, Ljp/co/sony/mc/camera/recorder/defaultrecorder/BaseRecorderController;->mReferenceClock:Ljp/co/sony/mc/camera/recorder/utility/ReferenceClock;
 
     invoke-virtual {v1}, Ljp/co/sony/mc/camera/recorder/utility/ReferenceClock;->resume()V
 
-    .line 1087
+    .line 1123
     :cond_1
     monitor-exit v0
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 1089
+    .line 1125
     iget-object v0, p0, Ljp/co/sony/mc/camera/recorder/defaultrecorder/BaseRecorderController;->mStorageWriteNotifier:Ljp/co/sony/mc/camera/storage/Storage$StorageWriteNotifier;
 
     if-eqz v0, :cond_2
 
-    .line 1090
+    .line 1126
     invoke-interface {v0}, Ljp/co/sony/mc/camera/storage/Storage$StorageWriteNotifier;->notifyWriteStorage()V
 
-    .line 1094
+    .line 1130
     :cond_2
     iget-boolean v0, p0, Ljp/co/sony/mc/camera/recorder/defaultrecorder/BaseRecorderController;->mIsSwitchLensDuringStreaming:Z
 
     if-nez v0, :cond_3
 
-    .line 1095
+    .line 1131
     iget-object v0, p0, Ljp/co/sony/mc/camera/recorder/defaultrecorder/BaseRecorderController;->mListener:Ljp/co/sony/mc/camera/recorder/RecorderController$RecorderListener;
 
     invoke-interface {v0, p1, p2}, Ljp/co/sony/mc/camera/recorder/RecorderController$RecorderListener;->onRecordProgress(J)V
 
-    .line 1097
+    .line 1133
     :cond_3
     iput-boolean v3, p0, Ljp/co/sony/mc/camera/recorder/defaultrecorder/BaseRecorderController;->mIsSwitchLensDuringStreaming:Z
 
@@ -620,7 +637,7 @@
     :catchall_0
     move-exception p0
 
-    .line 1087
+    .line 1123
     :try_start_1
     monitor-exit v0
     :try_end_1
@@ -636,7 +653,7 @@
 .method private notifyFinishResult(Ljp/co/sony/mc/camera/recorder/RecorderController$Result;)V
     .locals 1
 
-    .line 1019
+    .line 1055
     new-instance v0, Ljp/co/sony/mc/camera/recorder/defaultrecorder/BaseRecorderController$NotifyFinishResult;
 
     invoke-direct {v0, p0, p1}, Ljp/co/sony/mc/camera/recorder/defaultrecorder/BaseRecorderController$NotifyFinishResult;-><init>(Ljp/co/sony/mc/camera/recorder/defaultrecorder/BaseRecorderController;Ljp/co/sony/mc/camera/recorder/RecorderController$Result;)V
@@ -651,7 +668,7 @@
 
     const-string v0, "playStopSound() is-already-played:"
 
-    .line 848
+    .line 856
     new-instance v1, Ljava/lang/StringBuilder;
 
     const-string v2, "playStopSound() E required:"
@@ -672,19 +689,19 @@
 
     invoke-static {v1}, Ljp/co/sony/mc/camera/recorder/defaultrecorder/BaseRecorderController;->trace(Ljava/lang/String;)V
 
-    .line 850
+    .line 858
     invoke-direct {p0}, Ljp/co/sony/mc/camera/recorder/defaultrecorder/BaseRecorderController;->shouldPlayStopSound()Z
 
     move-result v1
 
     if-eqz v1, :cond_1
 
-    .line 852
+    .line 860
     iget-object v1, p0, Ljp/co/sony/mc/camera/recorder/defaultrecorder/BaseRecorderController;->mIsStopSoundAlreadyPlayedLock:Ljava/lang/Object;
 
     monitor-enter v1
 
-    .line 853
+    .line 861
     :try_start_0
     new-instance v2, Ljava/lang/StringBuilder;
 
@@ -702,14 +719,14 @@
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/recorder/defaultrecorder/BaseRecorderController;->trace(Ljava/lang/String;)V
 
-    .line 854
+    .line 862
     iget-boolean v0, p0, Ljp/co/sony/mc/camera/recorder/defaultrecorder/BaseRecorderController;->mIsStopSoundAlreadyPlayed:Z
 
     const/4 v2, 0x1
 
     if-nez v0, :cond_0
 
-    .line 855
+    .line 863
     iput-boolean v2, p0, Ljp/co/sony/mc/camera/recorder/defaultrecorder/BaseRecorderController;->mIsStopSoundAlreadyPlayed:Z
 
     move v0, v2
@@ -719,7 +736,7 @@
     :cond_0
     const/4 v0, 0x0
 
-    .line 858
+    .line 866
     :goto_0
     monitor-exit v1
     :try_end_0
@@ -727,14 +744,14 @@
 
     if-eqz v0, :cond_1
 
-    .line 860
+    .line 868
     invoke-direct {p0}, Ljp/co/sony/mc/camera/recorder/defaultrecorder/BaseRecorderController;->getCameraActionSound()Ljp/co/sony/mc/camera/device/CameraActionSound;
 
     move-result-object p0
 
     if-eqz p0, :cond_1
 
-    .line 862
+    .line 870
     sget-object v0, Ljp/co/sony/mc/camera/device/CameraActionSound$Type;->STOP_VIDEO_RECORDING:Ljp/co/sony/mc/camera/device/CameraActionSound$Type;
 
     invoke-virtual {p0, v0, v2}, Ljp/co/sony/mc/camera/device/CameraActionSound;->play(Ljp/co/sony/mc/camera/device/CameraActionSound$Type;Z)V
@@ -744,7 +761,7 @@
     :catchall_0
     move-exception p0
 
-    .line 858
+    .line 866
     :try_start_1
     monitor-exit v1
     :try_end_1
@@ -752,7 +769,7 @@
 
     throw p0
 
-    .line 866
+    .line 874
     :cond_1
     :goto_1
     const-string p0, "playStopSound() X"
@@ -762,10 +779,66 @@
     return-void
 .end method
 
+.method private playStopVibrate()V
+    .locals 2
+
+    .line 879
+    iget-object v0, p0, Ljp/co/sony/mc/camera/recorder/defaultrecorder/BaseRecorderController;->mIsStopVibrationAlreadyPlayedLock:Ljava/lang/Object;
+
+    monitor-enter v0
+
+    .line 880
+    :try_start_0
+    iget-boolean v1, p0, Ljp/co/sony/mc/camera/recorder/defaultrecorder/BaseRecorderController;->mIsStopVibrationRequired:Z
+
+    if-eqz v1, :cond_0
+
+    iget-boolean v1, p0, Ljp/co/sony/mc/camera/recorder/defaultrecorder/BaseRecorderController;->mIsStopVibrationAlreadyPlayed:Z
+
+    if-nez v1, :cond_0
+
+    const/4 v1, 0x1
+
+    .line 881
+    iput-boolean v1, p0, Ljp/co/sony/mc/camera/recorder/defaultrecorder/BaseRecorderController;->mIsStopVibrationAlreadyPlayed:Z
+
+    goto :goto_0
+
+    :cond_0
+    const/4 v1, 0x0
+
+    .line 884
+    :goto_0
+    monitor-exit v0
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    if-eqz v1, :cond_1
+
+    .line 886
+    sget-object p0, Ljp/co/sony/mc/camera/view/HapticFeedback$VibrationType;->STOP_RECORDING:Ljp/co/sony/mc/camera/view/HapticFeedback$VibrationType;
+
+    invoke-static {p0}, Ljp/co/sony/mc/camera/view/HapticFeedback;->vibrate(Ljp/co/sony/mc/camera/view/HapticFeedback$VibrationType;)V
+
+    :cond_1
+    return-void
+
+    :catchall_0
+    move-exception p0
+
+    .line 884
+    :try_start_1
+    monitor-exit v0
+    :try_end_1
+    .catchall {:try_start_1 .. :try_end_1} :catchall_0
+
+    throw p0
+.end method
+
 .method private shouldPlayStartSound()Z
     .locals 1
 
-    .line 99
+    .line 100
     iget-boolean v0, p0, Ljp/co/sony/mc/camera/recorder/defaultrecorder/BaseRecorderController;->mIsStartSoundRequired:Z
 
     if-eqz v0, :cond_0
@@ -788,7 +861,7 @@
 .method private shouldPlayStopSound()Z
     .locals 1
 
-    .line 103
+    .line 104
     iget-boolean v0, p0, Ljp/co/sony/mc/camera/recorder/defaultrecorder/BaseRecorderController;->mIsStopSoundRequired:Z
 
     if-eqz v0, :cond_0
@@ -809,14 +882,18 @@
 .end method
 
 .method private static trace(Ljava/lang/String;)V
-    .locals 0
+    .locals 2
+
+    const/4 v0, 0x1
 
     .line 50
-    filled-new-array {p0}, [Ljava/lang/String;
+    new-array v0, v0, [Ljava/lang/String;
 
-    move-result-object p0
+    const/4 v1, 0x0
 
-    invoke-static {p0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
+    aput-object p0, v0, v1
+
+    invoke-static {v0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
     return-void
 .end method
@@ -826,7 +903,7 @@
 .method protected changeTo(Ljp/co/sony/mc/camera/recorder/defaultrecorder/BaseRecorderController$State;)V
     .locals 2
 
-    .line 124
+    .line 125
     new-instance v0, Ljava/lang/StringBuilder;
 
     const-string v1, "changeTo() "
@@ -847,16 +924,16 @@
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/recorder/defaultrecorder/BaseRecorderController;->trace(Ljava/lang/String;)V
 
-    .line 125
+    .line 126
     iget-object v0, p0, Ljp/co/sony/mc/camera/recorder/defaultrecorder/BaseRecorderController;->mStateLock:Ljava/lang/Object;
 
     monitor-enter v0
 
-    .line 126
+    .line 127
     :try_start_0
     iput-object p1, p0, Ljp/co/sony/mc/camera/recorder/defaultrecorder/BaseRecorderController;->mState:Ljp/co/sony/mc/camera/recorder/defaultrecorder/BaseRecorderController$State;
 
-    .line 127
+    .line 128
     monitor-exit v0
 
     return-void
@@ -876,7 +953,7 @@
 
     const/4 v0, 0x0
 
-    .line 95
+    .line 96
     iput-boolean v0, p0, Ljp/co/sony/mc/camera/recorder/defaultrecorder/BaseRecorderController;->mIsAdjustRecordingTimeByRecorderNotification:Z
 
     return-void
@@ -885,7 +962,7 @@
 .method protected executeInBackground(Ljava/lang/Runnable;)V
     .locals 0
 
-    .line 177
+    .line 178
     iget-object p0, p0, Ljp/co/sony/mc/camera/recorder/defaultrecorder/BaseRecorderController;->mRecorderControllerThread:Landroid/os/Handler;
 
     invoke-virtual {p0, p1}, Landroid/os/Handler;->post(Ljava/lang/Runnable;)Z
@@ -896,7 +973,7 @@
 .method protected getCallbackHandler()Landroid/os/Handler;
     .locals 0
 
-    .line 153
+    .line 154
     iget-object p0, p0, Ljp/co/sony/mc/camera/recorder/defaultrecorder/BaseRecorderController;->mCallbackHandler:Landroid/os/Handler;
 
     return-object p0
@@ -905,7 +982,7 @@
 .method protected getContext()Landroid/content/Context;
     .locals 0
 
-    .line 146
+    .line 147
     iget-object p0, p0, Ljp/co/sony/mc/camera/recorder/defaultrecorder/BaseRecorderController;->mContext:Landroid/content/Context;
 
     return-object p0
@@ -914,7 +991,7 @@
 .method protected getRecorder()Ljp/co/sony/mc/camera/recorder/RecorderInterface;
     .locals 0
 
-    .line 160
+    .line 161
     iget-object p0, p0, Ljp/co/sony/mc/camera/recorder/defaultrecorder/BaseRecorderController;->mRecorder:Ljp/co/sony/mc/camera/recorder/RecorderInterface;
 
     return-object p0
@@ -923,7 +1000,7 @@
 .method public getRecordingTimeMillis()J
     .locals 2
 
-    .line 309
+    .line 312
     iget-object p0, p0, Ljp/co/sony/mc/camera/recorder/defaultrecorder/BaseRecorderController;->mReferenceClock:Ljp/co/sony/mc/camera/recorder/utility/ReferenceClock;
 
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/recorder/utility/ReferenceClock;->elapsedTimeMillis()J
@@ -936,7 +1013,7 @@
 .method protected getReferenceClock()Ljp/co/sony/mc/camera/recorder/utility/ReferenceClock;
     .locals 0
 
-    .line 167
+    .line 168
     iget-object p0, p0, Ljp/co/sony/mc/camera/recorder/defaultrecorder/BaseRecorderController;->mReferenceClock:Ljp/co/sony/mc/camera/recorder/utility/ReferenceClock;
 
     return-object p0
@@ -945,14 +1022,14 @@
 .method public isPaused()Z
     .locals 4
 
-    .line 281
+    .line 284
     iget-object v0, p0, Ljp/co/sony/mc/camera/recorder/defaultrecorder/BaseRecorderController;->mStateLock:Ljava/lang/Object;
 
     monitor-enter v0
 
     const/4 v1, 0x1
 
-    .line 282
+    .line 285
     :try_start_0
     new-array v1, v1, [Ljp/co/sony/mc/camera/recorder/defaultrecorder/BaseRecorderController$State;
 
@@ -973,7 +1050,7 @@
     :catchall_0
     move-exception p0
 
-    .line 283
+    .line 286
     monitor-exit v0
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
@@ -984,14 +1061,14 @@
 .method public isReady()Z
     .locals 4
 
-    .line 274
+    .line 277
     iget-object v0, p0, Ljp/co/sony/mc/camera/recorder/defaultrecorder/BaseRecorderController;->mStateLock:Ljava/lang/Object;
 
     monitor-enter v0
 
     const/4 v1, 0x1
 
-    .line 275
+    .line 278
     :try_start_0
     new-array v1, v1, [Ljp/co/sony/mc/camera/recorder/defaultrecorder/BaseRecorderController$State;
 
@@ -1012,7 +1089,7 @@
     :catchall_0
     move-exception p0
 
-    .line 276
+    .line 279
     monitor-exit v0
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
@@ -1023,14 +1100,14 @@
 .method public isRecording()Z
     .locals 4
 
-    .line 295
+    .line 298
     iget-object v0, p0, Ljp/co/sony/mc/camera/recorder/defaultrecorder/BaseRecorderController;->mStateLock:Ljava/lang/Object;
 
     monitor-enter v0
 
     const/4 v1, 0x2
 
-    .line 296
+    .line 299
     :try_start_0
     new-array v1, v1, [Ljp/co/sony/mc/camera/recorder/defaultrecorder/BaseRecorderController$State;
 
@@ -1057,7 +1134,7 @@
     :catchall_0
     move-exception p0
 
-    .line 297
+    .line 300
     monitor-exit v0
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
@@ -1068,14 +1145,14 @@
 .method public isStarting()Z
     .locals 4
 
-    .line 288
+    .line 291
     iget-object v0, p0, Ljp/co/sony/mc/camera/recorder/defaultrecorder/BaseRecorderController;->mStateLock:Ljava/lang/Object;
 
     monitor-enter v0
 
     const/4 v1, 0x1
 
-    .line 289
+    .line 292
     :try_start_0
     new-array v1, v1, [Ljp/co/sony/mc/camera/recorder/defaultrecorder/BaseRecorderController$State;
 
@@ -1096,7 +1173,7 @@
     :catchall_0
     move-exception p0
 
-    .line 290
+    .line 293
     monitor-exit v0
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
@@ -1107,14 +1184,14 @@
 .method public isStopping()Z
     .locals 4
 
-    .line 302
+    .line 305
     iget-object v0, p0, Ljp/co/sony/mc/camera/recorder/defaultrecorder/BaseRecorderController;->mStateLock:Ljava/lang/Object;
 
     monitor-enter v0
 
     const/4 v1, 0x2
 
-    .line 303
+    .line 306
     :try_start_0
     new-array v1, v1, [Ljp/co/sony/mc/camera/recorder/defaultrecorder/BaseRecorderController$State;
 
@@ -1141,7 +1218,7 @@
     :catchall_0
     move-exception p0
 
-    .line 304
+    .line 307
     monitor-exit v0
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
@@ -1152,7 +1229,7 @@
 .method protected notifyError()V
     .locals 3
 
-    .line 904
+    .line 925
     iget-object v0, p0, Ljp/co/sony/mc/camera/recorder/defaultrecorder/BaseRecorderController;->mCallbackHandler:Landroid/os/Handler;
 
     new-instance v1, Ljp/co/sony/mc/camera/recorder/defaultrecorder/BaseRecorderController$OnErrorTask;
@@ -1176,19 +1253,19 @@
 
     const-string v0, "Fail to verify state. state:"
 
-    .line 623
+    .line 624
     const-string v1, "pause() E"
 
     invoke-static {v1}, Ljp/co/sony/mc/camera/recorder/defaultrecorder/BaseRecorderController;->trace(Ljava/lang/String;)V
 
-    .line 625
+    .line 626
     iget-object v1, p0, Ljp/co/sony/mc/camera/recorder/defaultrecorder/BaseRecorderController;->mStateLock:Ljava/lang/Object;
 
     monitor-enter v1
 
     const/4 v2, 0x2
 
-    .line 626
+    .line 627
     :try_start_0
     new-array v2, v2, [Ljp/co/sony/mc/camera/recorder/defaultrecorder/BaseRecorderController$State;
 
@@ -1210,12 +1287,12 @@
 
     if-eqz v2, :cond_0
 
-    .line 630
+    .line 631
     sget-object v0, Ljp/co/sony/mc/camera/recorder/defaultrecorder/BaseRecorderController$State;->PAUSED:Ljp/co/sony/mc/camera/recorder/defaultrecorder/BaseRecorderController$State;
 
     invoke-virtual {p0, v0}, Ljp/co/sony/mc/camera/recorder/defaultrecorder/BaseRecorderController;->changeTo(Ljp/co/sony/mc/camera/recorder/defaultrecorder/BaseRecorderController$State;)V
 
-    .line 631
+    .line 632
     new-instance v0, Ljp/co/sony/mc/camera/recorder/defaultrecorder/BaseRecorderController$PauseTask;
 
     const/4 v2, 0x0
@@ -1224,26 +1301,26 @@
 
     invoke-virtual {p0, v0}, Ljp/co/sony/mc/camera/recorder/defaultrecorder/BaseRecorderController;->executeInBackground(Ljava/lang/Runnable;)V
 
-    .line 632
+    .line 633
     monitor-exit v1
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 634
+    .line 635
     const-string p0, "pause() X"
 
     invoke-static {p0}, Ljp/co/sony/mc/camera/recorder/defaultrecorder/BaseRecorderController;->trace(Ljava/lang/String;)V
 
     return-void
 
-    .line 627
+    .line 628
     :cond_0
     :try_start_1
     const-string v2, "pause() X failed : illegal state"
 
     invoke-static {v2}, Ljp/co/sony/mc/camera/recorder/defaultrecorder/BaseRecorderController;->trace(Ljava/lang/String;)V
 
-    .line 628
+    .line 629
     new-instance v2, Ljp/co/sony/mc/camera/recorder/RecorderException;
 
     new-instance v3, Ljava/lang/StringBuilder;
@@ -1271,7 +1348,7 @@
     :catchall_0
     move-exception p0
 
-    .line 632
+    .line 633
     monitor-exit v1
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
@@ -1282,32 +1359,32 @@
 .method protected pauseInternal()Z
     .locals 3
 
-    .line 662
+    .line 663
     const-string v0, "pauseInternal() E"
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/recorder/defaultrecorder/BaseRecorderController;->trace(Ljava/lang/String;)V
 
-    .line 665
+    .line 666
     :try_start_0
     iget-boolean v0, p0, Ljp/co/sony/mc/camera/recorder/defaultrecorder/BaseRecorderController;->mIsStreamingMode:Z
 
     if-nez v0, :cond_0
 
-    .line 666
+    .line 667
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/recorder/defaultrecorder/BaseRecorderController;->waitUntilFirstFrameWritten()V
 
-    .line 669
+    .line 670
     :cond_0
     iget-object v0, p0, Ljp/co/sony/mc/camera/recorder/defaultrecorder/BaseRecorderController;->mReferenceClock:Ljp/co/sony/mc/camera/recorder/utility/ReferenceClock;
 
     invoke-virtual {v0}, Ljp/co/sony/mc/camera/recorder/utility/ReferenceClock;->stop()V
 
-    .line 670
+    .line 671
     iget-object v0, p0, Ljp/co/sony/mc/camera/recorder/defaultrecorder/BaseRecorderController;->mRecorder:Ljp/co/sony/mc/camera/recorder/RecorderInterface;
 
     invoke-interface {v0}, Ljp/co/sony/mc/camera/recorder/RecorderInterface;->pause()V
 
-    .line 671
+    .line 672
     const-string v0, "pauseInternal() X"
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/recorder/defaultrecorder/BaseRecorderController;->trace(Ljava/lang/String;)V
@@ -1321,7 +1398,7 @@
     :catch_0
     move-exception v0
 
-    .line 675
+    .line 676
     new-instance v1, Ljava/lang/StringBuilder;
 
     const-string v2, "pauseInternal() X failed : "
@@ -1342,7 +1419,7 @@
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/recorder/defaultrecorder/BaseRecorderController;->trace(Ljava/lang/String;)V
 
-    .line 676
+    .line 677
     iget-object p0, p0, Ljp/co/sony/mc/camera/recorder/defaultrecorder/BaseRecorderController;->mRecorder:Ljp/co/sony/mc/camera/recorder/RecorderInterface;
 
     invoke-interface {p0}, Ljp/co/sony/mc/camera/recorder/RecorderInterface;->reset()V
@@ -1352,85 +1429,102 @@
     return p0
 .end method
 
-.method public prepare(Ljp/co/sony/mc/camera/recorder/RecorderParameters;Landroid/view/Surface;)Z
+.method public prepare(Ljp/co/sony/mc/camera/recorder/RecorderParameters;)Z
     .locals 5
 
-    .line 321
+    .line 324
     const-string v0, "prepare() E"
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/recorder/defaultrecorder/BaseRecorderController;->trace(Ljava/lang/String;)V
 
-    .line 322
+    .line 325
     iget-object v0, p0, Ljp/co/sony/mc/camera/recorder/defaultrecorder/BaseRecorderController;->mIsStopSoundAlreadyPlayedLock:Ljava/lang/Object;
 
     monitor-enter v0
 
     const/4 v1, 0x0
 
-    .line 323
+    .line 326
     :try_start_0
     iput-boolean v1, p0, Ljp/co/sony/mc/camera/recorder/defaultrecorder/BaseRecorderController;->mIsStopSoundAlreadyPlayed:Z
 
-    .line 324
+    .line 327
     monitor-exit v0
     :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_1
+    .catchall {:try_start_0 .. :try_end_0} :catchall_2
 
-    const-wide/16 v2, 0x0
-
-    .line 325
-    iput-wide v2, p0, Ljp/co/sony/mc/camera/recorder/defaultrecorder/BaseRecorderController;->mLastNotifyDurationMillis:J
-
-    .line 326
-    iget-object v2, p0, Ljp/co/sony/mc/camera/recorder/defaultrecorder/BaseRecorderController;->mStateLock:Ljava/lang/Object;
+    .line 328
+    iget-object v2, p0, Ljp/co/sony/mc/camera/recorder/defaultrecorder/BaseRecorderController;->mIsStopVibrationAlreadyPlayedLock:Ljava/lang/Object;
 
     monitor-enter v2
 
     const/4 v0, 0x1
 
-    .line 327
+    .line 329
     :try_start_1
-    new-array v3, v0, [Ljp/co/sony/mc/camera/recorder/defaultrecorder/BaseRecorderController$State;
+    iput-boolean v0, p0, Ljp/co/sony/mc/camera/recorder/defaultrecorder/BaseRecorderController;->mIsStopVibrationRequired:Z
+
+    .line 330
+    iput-boolean v1, p0, Ljp/co/sony/mc/camera/recorder/defaultrecorder/BaseRecorderController;->mIsStopVibrationAlreadyPlayed:Z
+
+    .line 331
+    monitor-exit v2
+    :try_end_1
+    .catchall {:try_start_1 .. :try_end_1} :catchall_1
+
+    const-wide/16 v2, 0x0
+
+    .line 332
+    iput-wide v2, p0, Ljp/co/sony/mc/camera/recorder/defaultrecorder/BaseRecorderController;->mLastNotifyDurationMillis:J
+
+    .line 333
+    iget-object v3, p0, Ljp/co/sony/mc/camera/recorder/defaultrecorder/BaseRecorderController;->mStateLock:Ljava/lang/Object;
+
+    monitor-enter v3
+
+    .line 334
+    :try_start_2
+    new-array v2, v0, [Ljp/co/sony/mc/camera/recorder/defaultrecorder/BaseRecorderController$State;
 
     sget-object v4, Ljp/co/sony/mc/camera/recorder/defaultrecorder/BaseRecorderController$State;->IDLE:Ljp/co/sony/mc/camera/recorder/defaultrecorder/BaseRecorderController$State;
 
-    aput-object v4, v3, v1
+    aput-object v4, v2, v1
 
-    invoke-virtual {p0, v3}, Ljp/co/sony/mc/camera/recorder/defaultrecorder/BaseRecorderController;->verifyState([Ljp/co/sony/mc/camera/recorder/defaultrecorder/BaseRecorderController$State;)Z
+    invoke-virtual {p0, v2}, Ljp/co/sony/mc/camera/recorder/defaultrecorder/BaseRecorderController;->verifyState([Ljp/co/sony/mc/camera/recorder/defaultrecorder/BaseRecorderController$State;)Z
 
-    move-result v3
+    move-result v2
 
-    if-nez v3, :cond_0
+    if-nez v2, :cond_0
 
-    .line 328
+    .line 335
     const-string p0, "prepare() X failed : illegal state"
 
     invoke-static {p0}, Ljp/co/sony/mc/camera/recorder/defaultrecorder/BaseRecorderController;->trace(Ljava/lang/String;)V
 
-    .line 329
-    monitor-exit v2
+    .line 336
+    monitor-exit v3
 
     return v1
 
-    .line 332
+    .line 339
     :cond_0
     sget-object v1, Ljp/co/sony/mc/camera/recorder/defaultrecorder/BaseRecorderController$State;->PREPARED:Ljp/co/sony/mc/camera/recorder/defaultrecorder/BaseRecorderController$State;
 
     invoke-virtual {p0, v1}, Ljp/co/sony/mc/camera/recorder/defaultrecorder/BaseRecorderController;->changeTo(Ljp/co/sony/mc/camera/recorder/defaultrecorder/BaseRecorderController$State;)V
 
-    .line 333
+    .line 340
     new-instance v1, Ljp/co/sony/mc/camera/recorder/defaultrecorder/BaseRecorderController$PrepareTask;
 
-    invoke-direct {v1, p0, p1, p2}, Ljp/co/sony/mc/camera/recorder/defaultrecorder/BaseRecorderController$PrepareTask;-><init>(Ljp/co/sony/mc/camera/recorder/defaultrecorder/BaseRecorderController;Ljp/co/sony/mc/camera/recorder/RecorderParameters;Landroid/view/Surface;)V
+    invoke-direct {v1, p0, p1}, Ljp/co/sony/mc/camera/recorder/defaultrecorder/BaseRecorderController$PrepareTask;-><init>(Ljp/co/sony/mc/camera/recorder/defaultrecorder/BaseRecorderController;Ljp/co/sony/mc/camera/recorder/RecorderParameters;)V
 
     invoke-virtual {p0, v1}, Ljp/co/sony/mc/camera/recorder/defaultrecorder/BaseRecorderController;->executeInBackground(Ljava/lang/Runnable;)V
 
-    .line 334
-    monitor-exit v2
-    :try_end_1
-    .catchall {:try_start_1 .. :try_end_1} :catchall_0
+    .line 341
+    monitor-exit v3
+    :try_end_2
+    .catchall {:try_start_2 .. :try_end_2} :catchall_0
 
-    .line 336
+    .line 343
     const-string p0, "prepare() X"
 
     invoke-static {p0}, Ljp/co/sony/mc/camera/recorder/defaultrecorder/BaseRecorderController;->trace(Ljava/lang/String;)V
@@ -1440,22 +1534,33 @@
     :catchall_0
     move-exception p0
 
-    .line 334
-    :try_start_2
-    monitor-exit v2
-    :try_end_2
-    .catchall {:try_start_2 .. :try_end_2} :catchall_0
+    .line 341
+    :try_start_3
+    monitor-exit v3
+    :try_end_3
+    .catchall {:try_start_3 .. :try_end_3} :catchall_0
 
     throw p0
 
     :catchall_1
     move-exception p0
 
-    .line 324
-    :try_start_3
+    .line 331
+    :try_start_4
+    monitor-exit v2
+    :try_end_4
+    .catchall {:try_start_4 .. :try_end_4} :catchall_1
+
+    throw p0
+
+    :catchall_2
+    move-exception p0
+
+    .line 327
+    :try_start_5
     monitor-exit v0
-    :try_end_3
-    .catchall {:try_start_3 .. :try_end_3} :catchall_1
+    :try_end_5
+    .catchall {:try_start_5 .. :try_end_5} :catchall_2
 
     throw p0
 .end method
@@ -1463,7 +1568,7 @@
 .method protected prepareInternal(Ljp/co/sony/mc/camera/recorder/RecorderParameters;)Z
     .locals 2
 
-    .line 370
+    .line 374
     new-instance v0, Ljava/lang/StringBuilder;
 
     const-string v1, "prepareInternal() E mic:"
@@ -1484,21 +1589,21 @@
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/recorder/defaultrecorder/BaseRecorderController;->trace(Ljava/lang/String;)V
 
-    .line 371
+    .line 375
     invoke-virtual {p1}, Ljp/co/sony/mc/camera/recorder/RecorderParameters;->isMicrophoneEnabled()Z
 
     move-result v0
 
     iput-boolean v0, p0, Ljp/co/sony/mc/camera/recorder/defaultrecorder/BaseRecorderController;->mIsMicrophoneEnabled:Z
 
-    .line 373
+    .line 377
     invoke-virtual {p1}, Ljp/co/sony/mc/camera/recorder/RecorderParameters;->hasMaxDuration()Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
-    .line 374
+    .line 378
     invoke-virtual {p1}, Ljp/co/sony/mc/camera/recorder/RecorderParameters;->maxDuration()I
 
     move-result v0
@@ -1512,27 +1617,16 @@
     :cond_0
     const-wide/16 v0, 0x0
 
-    .line 376
+    .line 380
     iput-wide v0, p0, Ljp/co/sony/mc/camera/recorder/defaultrecorder/BaseRecorderController;->mMaxDurationMillis:J
 
-    .line 379
+    .line 383
     :goto_0
     iget-object v0, p0, Ljp/co/sony/mc/camera/recorder/defaultrecorder/BaseRecorderController;->mRecorder:Ljp/co/sony/mc/camera/recorder/RecorderInterface;
 
     invoke-interface {v0}, Ljp/co/sony/mc/camera/recorder/RecorderInterface;->reset()V
 
-    .line 380
-    iget-object v0, p0, Ljp/co/sony/mc/camera/recorder/defaultrecorder/BaseRecorderController;->mRecordingSurface:Landroid/view/Surface;
-
-    if-eqz v0, :cond_1
-
-    .line 383
-    iget-object v1, p0, Ljp/co/sony/mc/camera/recorder/defaultrecorder/BaseRecorderController;->mRecorder:Ljp/co/sony/mc/camera/recorder/RecorderInterface;
-
-    invoke-interface {v1, v0}, Ljp/co/sony/mc/camera/recorder/RecorderInterface;->setInputSurface(Landroid/view/Surface;)V
-
     .line 385
-    :cond_1
     iget-object v0, p0, Ljp/co/sony/mc/camera/recorder/defaultrecorder/BaseRecorderController;->mRecorder:Ljp/co/sony/mc/camera/recorder/RecorderInterface;
 
     iget-object v1, p0, Ljp/co/sony/mc/camera/recorder/defaultrecorder/BaseRecorderController;->mContext:Landroid/content/Context;
@@ -1541,7 +1635,7 @@
 
     move-result p1
 
-    if-nez p1, :cond_2
+    if-nez p1, :cond_1
 
     .line 387
     iget-object v0, p0, Ljp/co/sony/mc/camera/recorder/defaultrecorder/BaseRecorderController;->mStateLock:Ljava/lang/Object;
@@ -1569,7 +1663,7 @@
     throw p0
 
     .line 392
-    :cond_2
+    :cond_1
     :goto_1
     new-instance p0, Ljava/lang/StringBuilder;
 
@@ -1595,19 +1689,19 @@
 
     const-string v0, "release() X failed : "
 
-    .line 748
+    .line 749
     const-string v1, "release() E"
 
     invoke-static {v1}, Ljp/co/sony/mc/camera/recorder/defaultrecorder/BaseRecorderController;->trace(Ljava/lang/String;)V
 
-    .line 752
+    .line 753
     iget-object v1, p0, Ljp/co/sony/mc/camera/recorder/defaultrecorder/BaseRecorderController;->mStateLock:Ljava/lang/Object;
 
     monitor-enter v1
 
     const/4 v2, 0x2
 
-    .line 753
+    .line 754
     :try_start_0
     new-array v3, v2, [Ljp/co/sony/mc/camera/recorder/defaultrecorder/BaseRecorderController$State;
 
@@ -1629,12 +1723,12 @@
 
     if-eqz v3, :cond_0
 
-    .line 754
+    .line 755
     const-string p0, "release() X already released"
 
     invoke-static {p0}, Ljp/co/sony/mc/camera/recorder/defaultrecorder/BaseRecorderController;->trace(Ljava/lang/String;)V
 
-    .line 755
+    .line 756
     monitor-exit v1
 
     return v6
@@ -1642,7 +1736,7 @@
     :cond_0
     const/4 v3, 0x3
 
-    .line 757
+    .line 758
     new-array v4, v3, [Ljp/co/sony/mc/camera/recorder/defaultrecorder/BaseRecorderController$State;
 
     sget-object v7, Ljp/co/sony/mc/camera/recorder/defaultrecorder/BaseRecorderController$State;->STARTING:Ljp/co/sony/mc/camera/recorder/defaultrecorder/BaseRecorderController$State;
@@ -1665,7 +1759,7 @@
 
     if-eqz v4, :cond_1
 
-    .line 759
+    .line 760
     :try_start_1
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/recorder/defaultrecorder/BaseRecorderController;->stop()V
     :try_end_1
@@ -1677,7 +1771,7 @@
     :catch_0
     move-exception p0
 
-    .line 761
+    .line 762
     :try_start_2
     new-array v2, v6, [Ljava/lang/String;
 
@@ -1701,12 +1795,12 @@
 
     invoke-static {v2}, Ljp/co/sony/mc/camera/util/CamLog;->e([Ljava/lang/String;)V
 
-    .line 762
+    .line 763
     monitor-exit v1
 
     return v5
 
-    .line 765
+    .line 766
     :cond_1
     :goto_0
     new-array v0, v3, [Ljp/co/sony/mc/camera/recorder/defaultrecorder/BaseRecorderController$State;
@@ -1727,19 +1821,19 @@
 
     move-result v0
 
-    .line 769
+    .line 770
     sget-object v2, Ljp/co/sony/mc/camera/recorder/defaultrecorder/BaseRecorderController$State;->RELEASING:Ljp/co/sony/mc/camera/recorder/defaultrecorder/BaseRecorderController$State;
 
     invoke-virtual {p0, v2}, Ljp/co/sony/mc/camera/recorder/defaultrecorder/BaseRecorderController;->changeTo(Ljp/co/sony/mc/camera/recorder/defaultrecorder/BaseRecorderController$State;)V
 
-    .line 770
+    .line 771
     monitor-exit v1
     :try_end_2
     .catchall {:try_start_2 .. :try_end_2} :catchall_1
 
     if-eqz v0, :cond_2
 
-    .line 773
+    .line 774
     new-instance v0, Ljp/co/sony/mc/camera/recorder/defaultrecorder/BaseRecorderController$1;
 
     invoke-direct {v0, p0}, Ljp/co/sony/mc/camera/recorder/defaultrecorder/BaseRecorderController$1;-><init>(Ljp/co/sony/mc/camera/recorder/defaultrecorder/BaseRecorderController;)V
@@ -1748,24 +1842,24 @@
 
     goto :goto_1
 
-    .line 791
+    .line 792
     :cond_2
     iget-object v0, p0, Ljp/co/sony/mc/camera/recorder/defaultrecorder/BaseRecorderController;->mStateLock:Ljava/lang/Object;
 
     monitor-enter v0
 
-    .line 792
+    .line 793
     :try_start_3
     sget-object v1, Ljp/co/sony/mc/camera/recorder/defaultrecorder/BaseRecorderController$State;->RELEASED:Ljp/co/sony/mc/camera/recorder/defaultrecorder/BaseRecorderController$State;
 
     invoke-virtual {p0, v1}, Ljp/co/sony/mc/camera/recorder/defaultrecorder/BaseRecorderController;->changeTo(Ljp/co/sony/mc/camera/recorder/defaultrecorder/BaseRecorderController$State;)V
 
-    .line 793
+    .line 794
     monitor-exit v0
     :try_end_3
     .catchall {:try_start_3 .. :try_end_3} :catchall_0
 
-    .line 796
+    .line 797
     :goto_1
     const-string p0, "release() X success"
 
@@ -1776,7 +1870,7 @@
     :catchall_0
     move-exception p0
 
-    .line 793
+    .line 794
     :try_start_4
     monitor-exit v0
     :try_end_4
@@ -1787,7 +1881,7 @@
     :catchall_1
     move-exception p0
 
-    .line 770
+    .line 771
     :try_start_5
     monitor-exit v1
     :try_end_5
@@ -1799,20 +1893,15 @@
 .method protected releaseInternal()V
     .locals 1
 
-    .line 801
+    .line 802
     iget-object v0, p0, Ljp/co/sony/mc/camera/recorder/defaultrecorder/BaseRecorderController;->mRecorder:Ljp/co/sony/mc/camera/recorder/RecorderInterface;
 
     invoke-interface {v0}, Ljp/co/sony/mc/camera/recorder/RecorderInterface;->release()V
 
-    .line 802
-    iget-object v0, p0, Ljp/co/sony/mc/camera/recorder/defaultrecorder/BaseRecorderController;->mRecorderAccessThread:Landroid/os/HandlerThread;
-
-    invoke-virtual {v0}, Landroid/os/HandlerThread;->quitSafely()Z
-
-    const/4 v0, 0x0
-
     .line 803
-    iput-object v0, p0, Ljp/co/sony/mc/camera/recorder/defaultrecorder/BaseRecorderController;->mRecordingSurface:Landroid/view/Surface;
+    iget-object p0, p0, Ljp/co/sony/mc/camera/recorder/defaultrecorder/BaseRecorderController;->mRecorderAccessThread:Landroid/os/HandlerThread;
+
+    invoke-virtual {p0}, Landroid/os/HandlerThread;->quitSafely()Z
 
     return-void
 .end method
@@ -1827,23 +1916,23 @@
 
     const-string v0, "Fail to verify state. state:"
 
-    .line 684
+    .line 685
     const-string v1, "resume() E"
 
     invoke-static {v1}, Ljp/co/sony/mc/camera/recorder/defaultrecorder/BaseRecorderController;->trace(Ljava/lang/String;)V
 
-    .line 686
+    .line 687
     iget-object v1, p0, Ljp/co/sony/mc/camera/recorder/defaultrecorder/BaseRecorderController;->mStateLock:Ljava/lang/Object;
 
     monitor-enter v1
 
-    .line 687
+    .line 688
     :try_start_0
     iput-boolean p1, p0, Ljp/co/sony/mc/camera/recorder/defaultrecorder/BaseRecorderController;->mIsSwitchLensDuringStreaming:Z
 
     const/4 p1, 0x1
 
-    .line 689
+    .line 690
     new-array p1, p1, [Ljp/co/sony/mc/camera/recorder/defaultrecorder/BaseRecorderController$State;
 
     sget-object v2, Ljp/co/sony/mc/camera/recorder/defaultrecorder/BaseRecorderController$State;->PAUSED:Ljp/co/sony/mc/camera/recorder/defaultrecorder/BaseRecorderController$State;
@@ -1858,12 +1947,12 @@
 
     if-eqz p1, :cond_0
 
-    .line 693
+    .line 694
     sget-object p1, Ljp/co/sony/mc/camera/recorder/defaultrecorder/BaseRecorderController$State;->RECORDING:Ljp/co/sony/mc/camera/recorder/defaultrecorder/BaseRecorderController$State;
 
     invoke-virtual {p0, p1}, Ljp/co/sony/mc/camera/recorder/defaultrecorder/BaseRecorderController;->changeTo(Ljp/co/sony/mc/camera/recorder/defaultrecorder/BaseRecorderController$State;)V
 
-    .line 694
+    .line 695
     new-instance p1, Ljp/co/sony/mc/camera/recorder/defaultrecorder/BaseRecorderController$ResumeTask;
 
     const/4 v0, 0x0
@@ -1872,26 +1961,26 @@
 
     invoke-virtual {p0, p1}, Ljp/co/sony/mc/camera/recorder/defaultrecorder/BaseRecorderController;->executeInBackground(Ljava/lang/Runnable;)V
 
-    .line 695
+    .line 696
     monitor-exit v1
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 697
+    .line 698
     const-string p0, "resume() X"
 
     invoke-static {p0}, Ljp/co/sony/mc/camera/recorder/defaultrecorder/BaseRecorderController;->trace(Ljava/lang/String;)V
 
     return-void
 
-    .line 690
+    .line 691
     :cond_0
     :try_start_1
     const-string p1, "resume() X failed : illegal state"
 
     invoke-static {p1}, Ljp/co/sony/mc/camera/recorder/defaultrecorder/BaseRecorderController;->trace(Ljava/lang/String;)V
 
-    .line 691
+    .line 692
     new-instance p1, Ljp/co/sony/mc/camera/recorder/RecorderException;
 
     new-instance v2, Ljava/lang/StringBuilder;
@@ -1919,7 +2008,7 @@
     :catchall_0
     move-exception p0
 
-    .line 695
+    .line 696
     monitor-exit v1
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
@@ -1930,31 +2019,31 @@
 .method protected resumeInternal()Z
     .locals 3
 
-    .line 725
+    .line 726
     const-string v0, "resumeInternal() E"
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/recorder/defaultrecorder/BaseRecorderController;->trace(Ljava/lang/String;)V
 
-    .line 728
+    .line 729
     :try_start_0
     iget-object v0, p0, Ljp/co/sony/mc/camera/recorder/defaultrecorder/BaseRecorderController;->mRecorder:Ljp/co/sony/mc/camera/recorder/RecorderInterface;
 
     invoke-interface {v0}, Ljp/co/sony/mc/camera/recorder/RecorderInterface;->resume()V
 
-    .line 729
+    .line 730
     iget-boolean v0, p0, Ljp/co/sony/mc/camera/recorder/defaultrecorder/BaseRecorderController;->mIsAdjustRecordingTimeByRecorderNotification:Z
 
     if-eqz v0, :cond_0
 
     goto :goto_0
 
-    .line 733
+    .line 734
     :cond_0
     iget-object v0, p0, Ljp/co/sony/mc/camera/recorder/defaultrecorder/BaseRecorderController;->mReferenceClock:Ljp/co/sony/mc/camera/recorder/utility/ReferenceClock;
 
     invoke-virtual {v0}, Ljp/co/sony/mc/camera/recorder/utility/ReferenceClock;->resume()V
 
-    .line 736
+    .line 737
     :goto_0
     const-string v0, "resumeInternal() X"
 
@@ -1969,7 +2058,7 @@
     :catch_0
     move-exception v0
 
-    .line 740
+    .line 741
     new-instance v1, Ljava/lang/StringBuilder;
 
     const-string v2, "resumeInternal() X failed : "
@@ -1990,7 +2079,7 @@
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/recorder/defaultrecorder/BaseRecorderController;->trace(Ljava/lang/String;)V
 
-    .line 741
+    .line 742
     iget-object p0, p0, Ljp/co/sony/mc/camera/recorder/defaultrecorder/BaseRecorderController;->mRecorder:Ljp/co/sony/mc/camera/recorder/RecorderInterface;
 
     invoke-interface {p0}, Ljp/co/sony/mc/camera/recorder/RecorderInterface;->reset()V
@@ -2003,12 +2092,12 @@
 .method public setHalfFps()V
     .locals 0
 
-    .line 261
+    .line 264
     iget-object p0, p0, Ljp/co/sony/mc/camera/recorder/defaultrecorder/BaseRecorderController;->mRecorder:Ljp/co/sony/mc/camera/recorder/RecorderInterface;
 
     if-eqz p0, :cond_0
 
-    .line 262
+    .line 265
     invoke-interface {p0}, Ljp/co/sony/mc/camera/recorder/RecorderInterface;->setHalfFps()V
 
     :cond_0
@@ -2073,22 +2162,49 @@
 .method public setPreferredDevice(Landroid/media/AudioDeviceInfo;)V
     .locals 0
 
-    .line 267
+    .line 270
     iget-object p0, p0, Ljp/co/sony/mc/camera/recorder/defaultrecorder/BaseRecorderController;->mRecorder:Ljp/co/sony/mc/camera/recorder/RecorderInterface;
 
     if-eqz p0, :cond_0
 
-    .line 268
+    .line 271
     invoke-interface {p0, p1}, Ljp/co/sony/mc/camera/recorder/RecorderInterface;->setPreferredDevice(Landroid/media/AudioDeviceInfo;)V
 
     :cond_0
     return-void
 .end method
 
+.method public setStopVibration(Z)V
+    .locals 1
+
+    .line 843
+    iget-object v0, p0, Ljp/co/sony/mc/camera/recorder/defaultrecorder/BaseRecorderController;->mIsStopVibrationAlreadyPlayedLock:Ljava/lang/Object;
+
+    monitor-enter v0
+
+    .line 844
+    :try_start_0
+    iput-boolean p1, p0, Ljp/co/sony/mc/camera/recorder/defaultrecorder/BaseRecorderController;->mIsStopVibrationRequired:Z
+
+    .line 845
+    monitor-exit v0
+
+    return-void
+
+    :catchall_0
+    move-exception p0
+
+    monitor-exit v0
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    throw p0
+.end method
+
 .method public setStorageWriteNotifier(Ljp/co/sony/mc/camera/storage/Storage$StorageWriteNotifier;)V
     .locals 0
 
-    .line 1149
+    .line 1185
     iput-object p1, p0, Ljp/co/sony/mc/camera/recorder/defaultrecorder/BaseRecorderController;->mStorageWriteNotifier:Ljp/co/sony/mc/camera/storage/Storage$StorageWriteNotifier;
 
     return-void
@@ -2572,11 +2688,14 @@
 
     .line 614
     :goto_1
+    invoke-direct {p0}, Ljp/co/sony/mc/camera/recorder/defaultrecorder/BaseRecorderController;->playStopVibrate()V
+
+    .line 615
     iget-object p0, p0, Ljp/co/sony/mc/camera/recorder/defaultrecorder/BaseRecorderController;->mRecorder:Ljp/co/sony/mc/camera/recorder/RecorderInterface;
 
     invoke-interface {p0}, Ljp/co/sony/mc/camera/recorder/RecorderInterface;->reset()V
 
-    .line 617
+    .line 618
     const-string/jumbo p0, "stopInternal() X"
 
     invoke-static {p0}, Ljp/co/sony/mc/camera/recorder/defaultrecorder/BaseRecorderController;->trace(Ljava/lang/String;)V
@@ -2623,6 +2742,9 @@
 
     .line 614
     :cond_4
+    invoke-direct {p0}, Ljp/co/sony/mc/camera/recorder/defaultrecorder/BaseRecorderController;->playStopVibrate()V
+
+    .line 615
     iget-object p0, p0, Ljp/co/sony/mc/camera/recorder/defaultrecorder/BaseRecorderController;->mRecorder:Ljp/co/sony/mc/camera/recorder/RecorderInterface;
 
     invoke-interface {p0}, Ljp/co/sony/mc/camera/recorder/RecorderInterface;->reset()V
@@ -2642,11 +2764,14 @@
 
     .line 614
     :cond_5
+    invoke-direct {p0}, Ljp/co/sony/mc/camera/recorder/defaultrecorder/BaseRecorderController;->playStopVibrate()V
+
+    .line 615
     iget-object p0, p0, Ljp/co/sony/mc/camera/recorder/defaultrecorder/BaseRecorderController;->mRecorder:Ljp/co/sony/mc/camera/recorder/RecorderInterface;
 
     invoke-interface {p0}, Ljp/co/sony/mc/camera/recorder/RecorderInterface;->reset()V
 
-    .line 615
+    .line 616
     throw v0
 .end method
 
@@ -2682,7 +2807,7 @@
 .method protected varargs verifyState([Ljp/co/sony/mc/camera/recorder/defaultrecorder/BaseRecorderController$State;)Z
     .locals 5
 
-    .line 134
+    .line 135
     array-length v0, p1
 
     const/4 v1, 0x0
@@ -2694,7 +2819,7 @@
 
     aget-object v3, p1, v2
 
-    .line 135
+    .line 136
     iget-object v4, p0, Ljp/co/sony/mc/camera/recorder/defaultrecorder/BaseRecorderController;->mState:Ljp/co/sony/mc/camera/recorder/defaultrecorder/BaseRecorderController$State;
 
     if-ne v3, v4, :cond_0
@@ -2715,18 +2840,18 @@
 .method protected waitUntilFirstFrameWritten()V
     .locals 3
 
-    .line 874
+    .line 895
     const-string/jumbo v0, "waitUntilFirstFrameWritten() E"
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/recorder/defaultrecorder/BaseRecorderController;->trace(Ljava/lang/String;)V
 
-    .line 877
+    .line 898
     :try_start_0
     iget-object v0, p0, Ljp/co/sony/mc/camera/recorder/defaultrecorder/BaseRecorderController;->mWaitUntilWriting:Ljava/util/concurrent/CountDownLatch;
 
     if-eqz v0, :cond_0
 
-    .line 878
+    .line 899
     iget-wide v1, p0, Ljp/co/sony/mc/camera/recorder/defaultrecorder/BaseRecorderController;->mMinDurationMillis:J
 
     sget-object p0, Ljava/util/concurrent/TimeUnit;->MILLISECONDS:Ljava/util/concurrent/TimeUnit;
@@ -2737,14 +2862,14 @@
 
     if-nez p0, :cond_1
 
-    .line 879
+    .line 900
     const-string/jumbo p0, "waitUntilFirstFrameWritten() timed-out"
 
     invoke-static {p0}, Ljp/co/sony/mc/camera/recorder/defaultrecorder/BaseRecorderController;->trace(Ljava/lang/String;)V
 
     goto :goto_0
 
-    .line 882
+    .line 903
     :cond_0
     iget-wide v0, p0, Ljp/co/sony/mc/camera/recorder/defaultrecorder/BaseRecorderController;->mMinDurationMillis:J
 
@@ -2756,13 +2881,13 @@
 
     goto :goto_0
 
-    .line 887
+    .line 908
     :catch_0
     const-string/jumbo p0, "waitUntilFirstFrameWritten() interrupted at mWaitUntilWriting.await()"
 
     invoke-static {p0}, Ljp/co/sony/mc/camera/recorder/defaultrecorder/BaseRecorderController;->trace(Ljava/lang/String;)V
 
-    .line 891
+    .line 912
     :cond_1
     :goto_0
     const-string/jumbo p0, "waitUntilFirstFrameWritten() X"

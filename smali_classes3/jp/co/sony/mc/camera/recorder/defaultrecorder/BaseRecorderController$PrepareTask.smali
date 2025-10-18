@@ -20,25 +20,20 @@
 # instance fields
 .field private final mParameters:Ljp/co/sony/mc/camera/recorder/RecorderParameters;
 
-.field private final mSurface:Landroid/view/Surface;
-
 .field final synthetic this$0:Ljp/co/sony/mc/camera/recorder/defaultrecorder/BaseRecorderController;
 
 
 # direct methods
-.method public constructor <init>(Ljp/co/sony/mc/camera/recorder/defaultrecorder/BaseRecorderController;Ljp/co/sony/mc/camera/recorder/RecorderParameters;Landroid/view/Surface;)V
+.method public constructor <init>(Ljp/co/sony/mc/camera/recorder/defaultrecorder/BaseRecorderController;Ljp/co/sony/mc/camera/recorder/RecorderParameters;)V
     .locals 0
 
-    .line 344
+    .line 350
     iput-object p1, p0, Ljp/co/sony/mc/camera/recorder/defaultrecorder/BaseRecorderController$PrepareTask;->this$0:Ljp/co/sony/mc/camera/recorder/defaultrecorder/BaseRecorderController;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 345
+    .line 351
     iput-object p2, p0, Ljp/co/sony/mc/camera/recorder/defaultrecorder/BaseRecorderController$PrepareTask;->mParameters:Ljp/co/sony/mc/camera/recorder/RecorderParameters;
-
-    .line 346
-    iput-object p3, p0, Ljp/co/sony/mc/camera/recorder/defaultrecorder/BaseRecorderController$PrepareTask;->mSurface:Landroid/view/Surface;
 
     return-void
 .end method
@@ -50,14 +45,14 @@
 
     const-string v0, "Fail to verify state in PrepareTask. state:"
 
-    .line 351
+    .line 356
     iget-object v1, p0, Ljp/co/sony/mc/camera/recorder/defaultrecorder/BaseRecorderController$PrepareTask;->this$0:Ljp/co/sony/mc/camera/recorder/defaultrecorder/BaseRecorderController;
 
     iget-object v1, v1, Ljp/co/sony/mc/camera/recorder/defaultrecorder/BaseRecorderController;->mStateLock:Ljava/lang/Object;
 
     monitor-enter v1
 
-    .line 352
+    .line 357
     :try_start_0
     iget-object v2, p0, Ljp/co/sony/mc/camera/recorder/defaultrecorder/BaseRecorderController$PrepareTask;->this$0:Ljp/co/sony/mc/camera/recorder/defaultrecorder/BaseRecorderController;
 
@@ -83,7 +78,7 @@
 
     if-eqz v2, :cond_0
 
-    .line 353
+    .line 358
     new-instance v2, Ljava/lang/StringBuilder;
 
     invoke-direct {v2, v0}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
@@ -108,25 +103,18 @@
 
     invoke-static {p0}, Ljp/co/sony/mc/camera/recorder/defaultrecorder/BaseRecorderController;->-$$Nest$smtrace(Ljava/lang/String;)V
 
-    .line 354
+    .line 359
     monitor-exit v1
 
     return-void
 
-    .line 356
+    .line 361
     :cond_0
     monitor-exit v1
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 357
-    iget-object v0, p0, Ljp/co/sony/mc/camera/recorder/defaultrecorder/BaseRecorderController$PrepareTask;->this$0:Ljp/co/sony/mc/camera/recorder/defaultrecorder/BaseRecorderController;
-
-    iget-object v1, p0, Ljp/co/sony/mc/camera/recorder/defaultrecorder/BaseRecorderController$PrepareTask;->mSurface:Landroid/view/Surface;
-
-    invoke-static {v0, v1}, Ljp/co/sony/mc/camera/recorder/defaultrecorder/BaseRecorderController;->-$$Nest$fputmRecordingSurface(Ljp/co/sony/mc/camera/recorder/defaultrecorder/BaseRecorderController;Landroid/view/Surface;)V
-
-    .line 358
+    .line 362
     iget-object v0, p0, Ljp/co/sony/mc/camera/recorder/defaultrecorder/BaseRecorderController$PrepareTask;->this$0:Ljp/co/sony/mc/camera/recorder/defaultrecorder/BaseRecorderController;
 
     iget-object v1, p0, Ljp/co/sony/mc/camera/recorder/defaultrecorder/BaseRecorderController$PrepareTask;->mParameters:Ljp/co/sony/mc/camera/recorder/RecorderParameters;
@@ -137,7 +125,7 @@
 
     if-nez v0, :cond_1
 
-    .line 359
+    .line 363
     iget-object p0, p0, Ljp/co/sony/mc/camera/recorder/defaultrecorder/BaseRecorderController$PrepareTask;->this$0:Ljp/co/sony/mc/camera/recorder/defaultrecorder/BaseRecorderController;
 
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/recorder/defaultrecorder/BaseRecorderController;->notifyError()V
@@ -148,7 +136,7 @@
     :catchall_0
     move-exception p0
 
-    .line 356
+    .line 361
     :try_start_1
     monitor-exit v1
     :try_end_1

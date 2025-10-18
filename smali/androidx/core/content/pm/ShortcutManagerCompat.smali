@@ -1216,9 +1216,9 @@
 
     .line 789
     :cond_1
-    filled-new-array {p1}, [Landroidx/core/content/pm/ShortcutInfoCompat;
+    new-array v0, v5, [Landroidx/core/content/pm/ShortcutInfoCompat;
 
-    move-result-object v0
+    aput-object p1, v0, v1
 
     invoke-static {v0}, Ljava/util/Arrays;->asList([Ljava/lang/Object;)Ljava/util/List;
 

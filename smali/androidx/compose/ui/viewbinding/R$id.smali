@@ -14,7 +14,7 @@
 
 
 # static fields
-.field public static final binding_reference:I = 0x7f0900b9
+.field public static final binding_reference:I = 0x7f0900bb
 
 
 # direct methods

@@ -12,9 +12,9 @@
 
 .field public static final FLAVOR:Ljava/lang/String; = ""
 
-.field public static final VERSION_CODE:I = 0x202011
+.field public static final VERSION_CODE:I = 0x222008
 
-.field public static final VERSION_NAME:Ljava/lang/String; = "1.0.1.A.0.17"
+.field public static final VERSION_NAME:Ljava/lang/String; = "1.1.1.A.0.8"
 
 
 # direct methods

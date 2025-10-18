@@ -81,6 +81,8 @@
 
 
 # static fields
+.field public static final $stable:I
+
 .field public static final Companion:Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableSet/PersistentHashSet$Companion;
 
 .field private static final EMPTY:Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableSet/PersistentHashSet;
@@ -111,6 +113,10 @@
 
     sput-object v0, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableSet/PersistentHashSet;->Companion:Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableSet/PersistentHashSet$Companion;
 
+    const/16 v0, 0x8
+
+    sput v0, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableSet/PersistentHashSet;->$stable:I
+
     .line 68
     new-instance v0, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableSet/PersistentHashSet;
 
@@ -130,7 +136,7 @@
 .end method
 
 .method public constructor <init>(Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableSet/TrieNode;I)V
-    .locals 1
+    .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -138,10 +144,6 @@
             "TE;>;I)V"
         }
     .end annotation
-
-    const-string v0, "node"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 12
     invoke-direct {p0}, Lkotlin/collections/AbstractSet;-><init>()V
@@ -260,10 +262,6 @@
             "TE;>;"
         }
     .end annotation
-
-    const-string v0, "elements"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 24
     check-cast p0, Landroidx/compose/runtime/external/kotlinx/collections/immutable/PersistentSet;
@@ -392,10 +390,6 @@
             ">;)Z"
         }
     .end annotation
-
-    const-string v0, "elements"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 46
     instance-of v0, p1, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableSet/PersistentHashSet;
@@ -602,10 +596,6 @@
         }
     .end annotation
 
-    const-string v0, "elements"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
     .line 34
     check-cast p0, Landroidx/compose/runtime/external/kotlinx/collections/immutable/PersistentSet;
 
@@ -642,10 +632,6 @@
             "TE;>;"
         }
     .end annotation
-
-    const-string v0, "predicate"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 38
     check-cast p0, Landroidx/compose/runtime/external/kotlinx/collections/immutable/PersistentSet;
@@ -696,10 +682,6 @@
             "TE;>;"
         }
     .end annotation
-
-    const-string v0, "elements"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 42
     check-cast p0, Landroidx/compose/runtime/external/kotlinx/collections/immutable/PersistentSet;

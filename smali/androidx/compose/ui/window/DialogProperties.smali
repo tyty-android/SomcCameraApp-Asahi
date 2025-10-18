@@ -91,26 +91,22 @@
 .end method
 
 .method public constructor <init>(ZZLandroidx/compose/ui/window/SecureFlagPolicy;)V
-    .locals 7
+    .locals 6
 
-    const-string v0, "securePolicy"
-
-    invoke-static {p3, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+    const/4 v4, 0x1
 
     const/4 v5, 0x1
 
-    const/4 v6, 0x1
+    move-object v0, p0
 
-    move-object v1, p0
+    move v1, p1
 
-    move v2, p1
+    move v2, p2
 
-    move v3, p2
-
-    move-object v4, p3
+    move-object v3, p3
 
     .line 100
-    invoke-direct/range {v1 .. v6}, Landroidx/compose/ui/window/DialogProperties;-><init>(ZZLandroidx/compose/ui/window/SecureFlagPolicy;ZZ)V
+    invoke-direct/range {v0 .. v5}, Landroidx/compose/ui/window/DialogProperties;-><init>(ZZLandroidx/compose/ui/window/SecureFlagPolicy;ZZ)V
 
     return-void
 .end method
@@ -149,11 +145,7 @@
 .end method
 
 .method public constructor <init>(ZZLandroidx/compose/ui/window/SecureFlagPolicy;ZZ)V
-    .locals 1
-
-    const-string v0, "securePolicy"
-
-    invoke-static {p3, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+    .locals 0
 
     .line 87
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V

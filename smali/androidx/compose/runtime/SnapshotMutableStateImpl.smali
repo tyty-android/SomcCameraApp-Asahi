@@ -1,9 +1,8 @@
 .class public Landroidx/compose/runtime/SnapshotMutableStateImpl;
-.super Ljava/lang/Object;
+.super Landroidx/compose/runtime/snapshots/StateObjectImpl;
 .source "SnapshotState.kt"
 
 # interfaces
-.implements Landroidx/compose/runtime/snapshots/StateObject;
 .implements Landroidx/compose/runtime/snapshots/SnapshotMutableState;
 
 
@@ -19,15 +18,14 @@
         "<T:",
         "Ljava/lang/Object;",
         ">",
-        "Ljava/lang/Object;",
-        "Landroidx/compose/runtime/snapshots/StateObject;",
+        "Landroidx/compose/runtime/snapshots/StateObjectImpl;",
         "Landroidx/compose/runtime/snapshots/SnapshotMutableState<",
         "TT;>;"
     }
 .end annotation
 
 .annotation system Ldalvik/annotation/SourceDebugExtension;
-    value = "SMAP\nSnapshotState.kt\nKotlin\n*S Kotlin\n*F\n+ 1 SnapshotState.kt\nandroidx/compose/runtime/SnapshotMutableStateImpl\n+ 2 Snapshot.kt\nandroidx/compose/runtime/snapshots/SnapshotKt\n+ 3 ActualJvm.jvm.kt\nandroidx/compose/runtime/ActualJvm_jvmKt\n*L\n1#1,307:1\n2279#2:308\n2200#2,2:309\n1722#2:311\n2202#2,5:313\n2279#2:318\n2279#2:319\n70#3:312\n*S KotlinDebug\n*F\n+ 1 SnapshotState.kt\nandroidx/compose/runtime/SnapshotMutableStateImpl\n*L\n136#1:308\n138#1:309,2\n138#1:311\n138#1:313,5\n179#1:318\n215#1:319\n138#1:312\n*E\n"
+    value = "SMAP\nSnapshotState.kt\nKotlin\n*S Kotlin\n*F\n+ 1 SnapshotState.kt\nandroidx/compose/runtime/SnapshotMutableStateImpl\n+ 2 Snapshot.kt\nandroidx/compose/runtime/snapshots/SnapshotKt\n+ 3 ActualJvm.jvm.kt\nandroidx/compose/runtime/ActualJvm_jvmKt\n*L\n1#1,307:1\n2283#2:308\n2204#2,2:309\n1714#2:311\n2206#2,5:313\n2283#2:318\n2283#2:319\n82#3:312\n*S KotlinDebug\n*F\n+ 1 SnapshotState.kt\nandroidx/compose/runtime/SnapshotMutableStateImpl\n*L\n136#1:308\n138#1:309,2\n138#1:311\n138#1:313,5\n179#1:318\n215#1:319\n138#1:312\n*E\n"
 .end annotation
 
 .annotation runtime Lkotlin/Metadata;
@@ -37,7 +35,7 @@
     d2 = {
         "Landroidx/compose/runtime/SnapshotMutableStateImpl;",
         "T",
-        "Landroidx/compose/runtime/snapshots/StateObject;",
+        "Landroidx/compose/runtime/snapshots/StateObjectImpl;",
         "Landroidx/compose/runtime/snapshots/SnapshotMutableState;",
         "value",
         "policy",
@@ -84,6 +82,10 @@
 .end annotation
 
 
+# static fields
+.field public static final $stable:I
+
+
 # instance fields
 .field private next:Landroidx/compose/runtime/SnapshotMutableStateImpl$StateStateRecord;
     .annotation system Ldalvik/annotation/Signature;
@@ -105,8 +107,14 @@
 
 
 # direct methods
+.method static constructor <clinit>()V
+    .locals 0
+
+    return-void
+.end method
+
 .method public constructor <init>(Ljava/lang/Object;Landroidx/compose/runtime/SnapshotMutationPolicy;)V
-    .locals 1
+    .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TT;",
@@ -115,12 +123,8 @@
         }
     .end annotation
 
-    const-string v0, "policy"
-
-    invoke-static {p2, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 129
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    .line 132
+    invoke-direct {p0}, Landroidx/compose/runtime/snapshots/StateObjectImpl;-><init>()V
 
     .line 131
     iput-object p2, p0, Landroidx/compose/runtime/SnapshotMutableStateImpl;->policy:Landroidx/compose/runtime/SnapshotMutationPolicy;
@@ -273,35 +277,31 @@
 .method public mergeRecords(Landroidx/compose/runtime/snapshots/StateRecord;Landroidx/compose/runtime/snapshots/StateRecord;Landroidx/compose/runtime/snapshots/StateRecord;)Landroidx/compose/runtime/snapshots/StateRecord;
     .locals 4
 
-    const-string v0, "previous"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string v0, "current"
-
-    invoke-static {p2, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string v0, "applied"
-
-    invoke-static {p3, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
     .line 158
+    const-string v0, "null cannot be cast to non-null type androidx.compose.runtime.SnapshotMutableStateImpl.StateStateRecord<T of androidx.compose.runtime.SnapshotMutableStateImpl>"
+
+    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;Ljava/lang/String;)V
+
     check-cast p1, Landroidx/compose/runtime/SnapshotMutableStateImpl$StateStateRecord;
 
     .line 159
-    move-object v0, p2
+    invoke-static {p2, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;Ljava/lang/String;)V
 
-    check-cast v0, Landroidx/compose/runtime/SnapshotMutableStateImpl$StateStateRecord;
+    move-object v1, p2
+
+    check-cast v1, Landroidx/compose/runtime/SnapshotMutableStateImpl$StateStateRecord;
 
     .line 160
+    invoke-static {p3, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;Ljava/lang/String;)V
+
     check-cast p3, Landroidx/compose/runtime/SnapshotMutableStateImpl$StateStateRecord;
 
     .line 161
     invoke-virtual {p0}, Landroidx/compose/runtime/SnapshotMutableStateImpl;->getPolicy()Landroidx/compose/runtime/SnapshotMutationPolicy;
 
-    move-result-object v1
+    move-result-object v0
 
-    invoke-virtual {v0}, Landroidx/compose/runtime/SnapshotMutableStateImpl$StateStateRecord;->getValue()Ljava/lang/Object;
+    invoke-virtual {v1}, Landroidx/compose/runtime/SnapshotMutableStateImpl$StateStateRecord;->getValue()Ljava/lang/Object;
 
     move-result-object v2
 
@@ -309,11 +309,11 @@
 
     move-result-object v3
 
-    invoke-interface {v1, v2, v3}, Landroidx/compose/runtime/SnapshotMutationPolicy;->equivalent(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-interface {v0, v2, v3}, Landroidx/compose/runtime/SnapshotMutationPolicy;->equivalent(Ljava/lang/Object;Ljava/lang/Object;)Z
 
-    move-result v1
+    move-result v0
 
-    if-eqz v1, :cond_0
+    if-eqz v0, :cond_0
 
     goto :goto_0
 
@@ -329,7 +329,7 @@
     move-result-object p1
 
     .line 166
-    invoke-virtual {v0}, Landroidx/compose/runtime/SnapshotMutableStateImpl$StateStateRecord;->getValue()Ljava/lang/Object;
+    invoke-virtual {v1}, Landroidx/compose/runtime/SnapshotMutableStateImpl$StateStateRecord;->getValue()Ljava/lang/Object;
 
     move-result-object p2
 
@@ -373,11 +373,11 @@
 .method public prependStateRecord(Landroidx/compose/runtime/snapshots/StateRecord;)V
     .locals 1
 
-    const-string/jumbo v0, "value"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
     .line 149
+    const-string v0, "null cannot be cast to non-null type androidx.compose.runtime.SnapshotMutableStateImpl.StateStateRecord<T of androidx.compose.runtime.SnapshotMutableStateImpl>"
+
+    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;Ljava/lang/String;)V
+
     check-cast p1, Landroidx/compose/runtime/SnapshotMutableStateImpl$StateStateRecord;
 
     iput-object p1, p0, Landroidx/compose/runtime/SnapshotMutableStateImpl;->next:Landroidx/compose/runtime/SnapshotMutableStateImpl$StateStateRecord;

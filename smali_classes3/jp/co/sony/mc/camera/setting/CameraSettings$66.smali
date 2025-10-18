@@ -21,7 +21,7 @@
 .method constructor <init>()V
     .locals 0
 
-    .line 1085
+    .line 1141
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -42,13 +42,8 @@
         }
     .end annotation
 
-    .line 1089
-    check-cast p1, Ljp/co/sony/mc/camera/setting/CameraSettings;
-
-    .line 1090
-    invoke-static {p1}, Ljp/co/sony/mc/camera/setting/CameraSettings;->-$$Nest$mgetHybridZoom(Ljp/co/sony/mc/camera/setting/CameraSettings;)Ljp/co/sony/mc/camera/configuration/parameters/HybridZoom;
-
-    move-result-object p0
+    .line 1144
+    sget-object p0, Ljp/co/sony/mc/camera/configuration/parameters/RecommendedSettings;->DUMMY_OFF:Ljp/co/sony/mc/camera/configuration/parameters/RecommendedSettings;
 
     return-object p0
 .end method

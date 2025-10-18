@@ -63,7 +63,7 @@
 .method private constructor <init>()V
     .locals 0
 
-    .line 457
+    .line 247
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -73,10 +73,6 @@
 # virtual methods
 .method public calculateMainAxisPageSize(Landroidx/compose/ui/unit/Density;II)I
     .locals 0
-
-    const-string p0, "<this>"
-
-    invoke-static {p1, p0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
     return p2
 .end method

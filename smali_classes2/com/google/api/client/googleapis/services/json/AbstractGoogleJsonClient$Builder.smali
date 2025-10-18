@@ -25,13 +25,21 @@
 
     if-eqz p6, :cond_0
 
-    const-string p2, "data"
+    const/4 p2, 0x2
 
-    const-string p6, "error"
+    new-array p2, p2, [Ljava/lang/String;
 
-    filled-new-array {p2, p6}, [Ljava/lang/String;
+    const/4 p6, 0x0
 
-    move-result-object p2
+    const-string v1, "data"
+
+    aput-object v1, p2, p6
+
+    const/4 p6, 0x1
+
+    const-string v1, "error"
+
+    aput-object v1, p2, p6
 
     .line 81
     invoke-static {p2}, Ljava/util/Arrays;->asList([Ljava/lang/Object;)Ljava/util/List;

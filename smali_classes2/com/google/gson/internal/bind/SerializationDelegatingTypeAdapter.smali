@@ -19,7 +19,7 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 8
+    .line 22
     invoke-direct {p0}, Lcom/google/gson/TypeAdapter;-><init>()V
 
     return-void

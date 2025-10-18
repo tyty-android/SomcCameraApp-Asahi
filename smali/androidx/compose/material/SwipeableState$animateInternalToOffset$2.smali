@@ -54,7 +54,7 @@
     f = "Swipeable.kt"
     i = {}
     l = {
-        0xdf
+        0xe4
     }
     m = "invokeSuspend"
     n = {}
@@ -205,7 +205,7 @@
 
     move-result-object v0
 
-    .line 218
+    .line 223
     iget v2, v1, Landroidx/compose/material/SwipeableState$animateInternalToOffset$2;->label:I
 
     const/4 v3, 0x0
@@ -246,7 +246,7 @@
 
     check-cast v2, Landroidx/compose/foundation/gestures/DragScope;
 
-    .line 219
+    .line 224
     new-instance v6, Lkotlin/jvm/internal/Ref$FloatRef;
 
     invoke-direct {v6}, Lkotlin/jvm/internal/Ref$FloatRef;-><init>()V
@@ -263,7 +263,7 @@
 
     iput v7, v6, Lkotlin/jvm/internal/Ref$FloatRef;->element:F
 
-    .line 220
+    .line 225
     iget-object v7, v1, Landroidx/compose/material/SwipeableState$animateInternalToOffset$2;->this$0:Landroidx/compose/material/SwipeableState;
 
     invoke-static {v7}, Landroidx/compose/material/SwipeableState;->access$getAnimationTarget$p(Landroidx/compose/material/SwipeableState;)Landroidx/compose/runtime/MutableState;
@@ -278,12 +278,12 @@
 
     invoke-interface {v7, v8}, Landroidx/compose/runtime/MutableState;->setValue(Ljava/lang/Object;)V
 
-    .line 221
+    .line 226
     iget-object v7, v1, Landroidx/compose/material/SwipeableState$animateInternalToOffset$2;->this$0:Landroidx/compose/material/SwipeableState;
 
     invoke-static {v7, v5}, Landroidx/compose/material/SwipeableState;->access$setAnimationRunning(Landroidx/compose/material/SwipeableState;Z)V
 
-    .line 223
+    .line 228
     :try_start_1
     iget v7, v6, Lkotlin/jvm/internal/Ref$FloatRef;->element:F
 
@@ -333,7 +333,7 @@
 
     return-object v0
 
-    .line 228
+    .line 233
     :cond_2
     :goto_0
     iget-object v0, v1, Landroidx/compose/material/SwipeableState$animateInternalToOffset$2;->this$0:Landroidx/compose/material/SwipeableState;
@@ -344,17 +344,17 @@
 
     invoke-interface {v0, v4}, Landroidx/compose/runtime/MutableState;->setValue(Ljava/lang/Object;)V
 
-    .line 229
+    .line 234
     iget-object v0, v1, Landroidx/compose/material/SwipeableState$animateInternalToOffset$2;->this$0:Landroidx/compose/material/SwipeableState;
 
     invoke-static {v0, v3}, Landroidx/compose/material/SwipeableState;->access$setAnimationRunning(Landroidx/compose/material/SwipeableState;Z)V
 
-    .line 231
+    .line 236
     sget-object v0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
 
     return-object v0
 
-    .line 228
+    .line 233
     :goto_1
     iget-object v2, v1, Landroidx/compose/material/SwipeableState$animateInternalToOffset$2;->this$0:Landroidx/compose/material/SwipeableState;
 
@@ -364,7 +364,7 @@
 
     invoke-interface {v2, v4}, Landroidx/compose/runtime/MutableState;->setValue(Ljava/lang/Object;)V
 
-    .line 229
+    .line 234
     iget-object v1, v1, Landroidx/compose/material/SwipeableState$animateInternalToOffset$2;->this$0:Landroidx/compose/material/SwipeableState;
 
     invoke-static {v1, v3}, Landroidx/compose/material/SwipeableState;->access$setAnimationRunning(Landroidx/compose/material/SwipeableState;Z)V

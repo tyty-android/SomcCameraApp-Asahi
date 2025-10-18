@@ -167,7 +167,7 @@
 
     invoke-static {}, Lkotlin/coroutines/intrinsics/IntrinsicsKt;->getCOROUTINE_SUSPENDED()Ljava/lang/Object;
 
-    .line 393
+    .line 362
     iget v0, p0, Landroidx/lifecycle/LifecycleCoroutineScopeImpl$register$1;->label:I
 
     if-nez v0, :cond_1
@@ -178,7 +178,7 @@
 
     check-cast p1, Lkotlinx/coroutines/CoroutineScope;
 
-    .line 394
+    .line 363
     iget-object v0, p0, Landroidx/lifecycle/LifecycleCoroutineScopeImpl$register$1;->this$0:Landroidx/lifecycle/LifecycleCoroutineScopeImpl;
 
     invoke-virtual {v0}, Landroidx/lifecycle/LifecycleCoroutineScopeImpl;->getLifecycle$lifecycle_common()Landroidx/lifecycle/Lifecycle;
@@ -199,7 +199,7 @@
 
     if-ltz v0, :cond_0
 
-    .line 395
+    .line 364
     iget-object p1, p0, Landroidx/lifecycle/LifecycleCoroutineScopeImpl$register$1;->this$0:Landroidx/lifecycle/LifecycleCoroutineScopeImpl;
 
     invoke-virtual {p1}, Landroidx/lifecycle/LifecycleCoroutineScopeImpl;->getLifecycle$lifecycle_common()Landroidx/lifecycle/Lifecycle;
@@ -214,7 +214,7 @@
 
     goto :goto_0
 
-    .line 397
+    .line 366
     :cond_0
     invoke-interface {p1}, Lkotlinx/coroutines/CoroutineScope;->getCoroutineContext()Lkotlin/coroutines/CoroutineContext;
 
@@ -226,13 +226,13 @@
 
     invoke-static {p0, v0, p1, v0}, Lkotlinx/coroutines/JobKt;->cancel$default(Lkotlin/coroutines/CoroutineContext;Ljava/util/concurrent/CancellationException;ILjava/lang/Object;)V
 
-    .line 399
+    .line 368
     :goto_0
     sget-object p0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
 
     return-object p0
 
-    .line 393
+    .line 362
     :cond_1
     new-instance p0, Ljava/lang/IllegalStateException;
 

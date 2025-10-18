@@ -46,7 +46,7 @@
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 16
+    .line 17
     invoke-direct {p0}, Lkotlin/collections/CharIterator;-><init>()V
 
     iput-object p1, p0, Lkotlin/jvm/internal/ArrayCharIterator;->array:[C
@@ -59,7 +59,7 @@
 .method public hasNext()Z
     .locals 1
 
-    .line 18
+    .line 19
     iget v0, p0, Lkotlin/jvm/internal/ArrayCharIterator;->index:I
 
     iget-object p0, p0, Lkotlin/jvm/internal/ArrayCharIterator;->array:[C
@@ -82,7 +82,7 @@
 .method public nextChar()C
     .locals 3
 
-    .line 19
+    .line 20
     :try_start_0
     iget-object v0, p0, Lkotlin/jvm/internal/ArrayCharIterator;->array:[C
 

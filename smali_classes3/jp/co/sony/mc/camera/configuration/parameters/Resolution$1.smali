@@ -30,7 +30,7 @@
 .method constructor <init>()V
     .locals 0
 
-    .line 293
+    .line 268
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -41,7 +41,7 @@
 .method public bridge synthetic compare(Ljava/lang/Object;Ljava/lang/Object;)I
     .locals 0
 
-    .line 293
+    .line 268
     check-cast p1, Ljp/co/sony/mc/camera/configuration/parameters/Resolution;
 
     check-cast p2, Ljp/co/sony/mc/camera/configuration/parameters/Resolution;
@@ -56,7 +56,7 @@
 .method public compare(Ljp/co/sony/mc/camera/configuration/parameters/Resolution;Ljp/co/sony/mc/camera/configuration/parameters/Resolution;)I
     .locals 0
 
-    .line 298
+    .line 273
     invoke-virtual {p1}, Ljp/co/sony/mc/camera/configuration/parameters/Resolution;->getPictureRect()Landroid/graphics/Rect;
 
     move-result-object p0
@@ -65,7 +65,7 @@
 
     move-result p0
 
-    .line 299
+    .line 274
     invoke-virtual {p2}, Ljp/co/sony/mc/camera/configuration/parameters/Resolution;->getPictureRect()Landroid/graphics/Rect;
 
     move-result-object p1

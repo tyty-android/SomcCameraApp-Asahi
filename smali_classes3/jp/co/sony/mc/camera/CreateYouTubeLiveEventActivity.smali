@@ -18,105 +18,106 @@
 
 .annotation runtime Lkotlin/Metadata;
     d1 = {
-        "\u0000\u00a0\u0001\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0010\u000b\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0010\u000e\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0004\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0006\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0011\n\u0002\u0010\u0008\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0003\n\u0002\u0018\u0002\n\u0002\u0008\t\n\u0002\u0018\u0002\n\u0002\u0008\u0007\u0008\u0007\u0018\u0000 W2\u00020\u00012\u00020\u0002:\u0003WXYB\u0005\u00a2\u0006\u0002\u0010\u0003J\u0008\u0010*\u001a\u00020+H\u0002J\u0008\u0010,\u001a\u00020-H\u0002J\u0008\u0010.\u001a\u00020+H\u0002J\u0008\u0010/\u001a\u00020\rH\u0002J\u0008\u00100\u001a\u00020\rH\u0002J\u0008\u00101\u001a\u00020+H\u0002J\u0008\u00102\u001a\u00020+H\u0002J\u0008\u00103\u001a\u00020+H\u0002J\u0008\u00104\u001a\u00020+H\u0002J\u0008\u00105\u001a\u00020+H\u0002J\u0008\u00106\u001a\u00020+H\u0002J\u0008\u00107\u001a\u00020+H\u0002J\u0008\u00108\u001a\u00020+H\u0002J\u0008\u00109\u001a\u00020+H\u0002J\u0008\u0010:\u001a\u00020+H\u0002J\u0008\u0010;\u001a\u00020+H\u0002J\u0008\u0010<\u001a\u00020\u0005H\u0002J\u0010\u0010=\u001a\u00020\u00052\u0006\u0010>\u001a\u00020?H\u0002J\u0012\u0010@\u001a\u00020+2\u0008\u0010A\u001a\u0004\u0018\u00010BH\u0014J\u001a\u0010C\u001a\u00020+2\u0008\u0010D\u001a\u0004\u0018\u00010E2\u0006\u0010F\u001a\u00020?H\u0016J\u001a\u0010G\u001a\u00020\u00052\u0006\u0010>\u001a\u00020?2\u0008\u0010H\u001a\u0004\u0018\u00010IH\u0016J\u001a\u0010J\u001a\u00020\u00052\u0006\u0010>\u001a\u00020?2\u0008\u0010H\u001a\u0004\u0018\u00010IH\u0016J\u001a\u0010K\u001a\u00020\u00052\u0006\u0010>\u001a\u00020?2\u0008\u0010H\u001a\u0004\u0018\u00010IH\u0016J\u0008\u0010L\u001a\u00020+H\u0014J\u0008\u0010M\u001a\u00020+H\u0014J\u0010\u0010N\u001a\u00020+2\u0006\u0010O\u001a\u00020\u0005H\u0016J\u0008\u0010P\u001a\u00020+H\u0002J\u0010\u0010Q\u001a\u00020+2\u0006\u0010R\u001a\u00020SH\u0002J\u0008\u0010T\u001a\u00020+H\u0002J\u0008\u0010U\u001a\u00020+H\u0002J\u0008\u0010V\u001a\u00020+H\u0002R\u000e\u0010\u0004\u001a\u00020\u0005X\u0082\u000e\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u0006\u001a\u00020\u0007X\u0082.\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u0008\u001a\u00020\u0007X\u0082.\u00a2\u0006\u0002\n\u0000R\u000e\u0010\t\u001a\u00020\nX\u0082.\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u000b\u001a\u00020\u0007X\u0082.\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u000c\u001a\u00020\rX\u0082\u000e\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u000e\u001a\u00020\u0007X\u0082.\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u000f\u001a\u00020\u0010X\u0082.\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u0011\u001a\u00020\u0012X\u0082.\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u0013\u001a\u00020\u0014X\u0082.\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u0015\u001a\u00020\u0014X\u0082.\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u0016\u001a\u00020\u0005X\u0082\u000e\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u0017\u001a\u00020\rX\u0082\u000e\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u0018\u001a\u00020\u0019X\u0082\u000e\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u001a\u001a\u00020\u001bX\u0082\u000e\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u001c\u001a\u00020\rX\u0082\u000e\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u001d\u001a\u00020\u001eX\u0082.\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u001f\u001a\u00020 X\u0082.\u00a2\u0006\u0002\n\u0000R\u000e\u0010!\u001a\u00020\"X\u0082.\u00a2\u0006\u0002\n\u0000R\u000e\u0010#\u001a\u00020\u0007X\u0082.\u00a2\u0006\u0002\n\u0000R\u000e\u0010$\u001a\u00020\rX\u0082\u000e\u00a2\u0006\u0002\n\u0000R\u000e\u0010%\u001a\u00020\u0007X\u0082.\u00a2\u0006\u0002\n\u0000R\u000e\u0010&\u001a\u00020\u0010X\u0082.\u00a2\u0006\u0002\n\u0000R\u000e\u0010\'\u001a\u00020\u0012X\u0082.\u00a2\u0006\u0002\n\u0000R\u000e\u0010(\u001a\u00020)X\u0082.\u00a2\u0006\u0002\n\u0000\u00a8\u0006Z"
+        "\u0000\u009c\u0001\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0003\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0008\n\u0002\u0010\u000e\n\u0002\u0008\u0002\n\u0002\u0010\u000b\n\u0002\u0008\u0003\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0004\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0008\n\u0002\u0008\u0003\n\u0002\u0018\u0002\n\u0002\u0008\u0015\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0002\u0008\t\u0008\u0007\u0018\u0000 Z2\u00020\u00012\u00020\u0002:\u0003XYZB\t\u0008\u0007\u00a2\u0006\u0004\u0008\u0003\u0010\u0004J\u0012\u0010+\u001a\u00020,2\u0008\u0010-\u001a\u0004\u0018\u00010.H\u0014J\u0008\u0010/\u001a\u00020,H\u0014J\u0008\u00100\u001a\u00020,H\u0014J\u001a\u00101\u001a\u00020,2\u0008\u00102\u001a\u0004\u0018\u0001032\u0006\u00104\u001a\u000205H\u0016J\u001a\u00106\u001a\u00020!2\u0006\u00107\u001a\u0002052\u0008\u00108\u001a\u0004\u0018\u000109H\u0016J\u001a\u0010:\u001a\u00020!2\u0006\u00107\u001a\u0002052\u0008\u00108\u001a\u0004\u0018\u000109H\u0016J\u001a\u0010;\u001a\u00020!2\u0006\u00107\u001a\u0002052\u0008\u00108\u001a\u0004\u0018\u000109H\u0016J\u0010\u0010<\u001a\u00020,2\u0006\u0010=\u001a\u00020!H\u0016J\u0008\u0010>\u001a\u00020,H\u0002J\u0008\u0010?\u001a\u00020,H\u0002J\u0008\u0010@\u001a\u00020\u001eH\u0002J\u0008\u0010A\u001a\u00020\u001eH\u0002J\u0008\u0010B\u001a\u00020!H\u0002J\u0008\u0010C\u001a\u00020,H\u0002J\u0008\u0010D\u001a\u00020,H\u0002J\u0008\u0010E\u001a\u00020,H\u0002J\u0008\u0010F\u001a\u00020,H\u0002J\u0008\u0010G\u001a\u00020,H\u0002J\u0008\u0010H\u001a\u00020,H\u0002J\u0008\u0010I\u001a\u00020,H\u0002J\u0008\u0010J\u001a\u00020,H\u0002J\u0008\u0010K\u001a\u00020,H\u0002J\u0008\u0010L\u001a\u00020,H\u0002J\u0008\u0010M\u001a\u00020,H\u0002J\u0008\u0010N\u001a\u00020OH\u0002J\u0010\u0010P\u001a\u00020,2\u0006\u0010Q\u001a\u00020RH\u0002J\u0008\u0010S\u001a\u00020,H\u0002J\u0008\u0010T\u001a\u00020,H\u0002J\u0010\u0010U\u001a\u00020!2\u0006\u00107\u001a\u000205H\u0002J\u0008\u0010V\u001a\u00020,H\u0002J\u0008\u0010W\u001a\u00020,H\u0002R\u000e\u0010\u0005\u001a\u00020\u0006X\u0082.\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u0007\u001a\u00020\u0008X\u0082.\u00a2\u0006\u0002\n\u0000R\u000e\u0010\t\u001a\u00020\nX\u0082.\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u000b\u001a\u00020\u000cX\u0082.\u00a2\u0006\u0002\n\u0000R\u000e\u0010\r\u001a\u00020\u000cX\u0082.\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u000e\u001a\u00020\u000fX\u0082.\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u0010\u001a\u00020\u0011X\u0082.\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u0012\u001a\u00020\u0013X\u0082.\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u0014\u001a\u00020\u0015X\u0082.\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u0016\u001a\u00020\u0011X\u0082.\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u0017\u001a\u00020\u0013X\u0082.\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u0018\u001a\u00020\u0015X\u0082.\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u0019\u001a\u00020\u0015X\u0082.\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u001a\u001a\u00020\u0015X\u0082.\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u001b\u001a\u00020\u0015X\u0082.\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u001c\u001a\u00020\u0015X\u0082.\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u001d\u001a\u00020\u001eX\u0082\u000e\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u001f\u001a\u00020\u001eX\u0082\u000e\u00a2\u0006\u0002\n\u0000R\u000e\u0010 \u001a\u00020!X\u0082\u000e\u00a2\u0006\u0002\n\u0000R\u000e\u0010\"\u001a\u00020\u001eX\u0082\u000e\u00a2\u0006\u0002\n\u0000R\u000e\u0010#\u001a\u00020\u001eX\u0082\u000e\u00a2\u0006\u0002\n\u0000R\u000e\u0010$\u001a\u00020%X\u0082.\u00a2\u0006\u0002\n\u0000R\u000e\u0010&\u001a\u00020!X\u0082\u000e\u00a2\u0006\u0002\n\u0000R\u000e\u0010\'\u001a\u00020(X\u0082\u000e\u00a2\u0006\u0002\n\u0000R\u000e\u0010)\u001a\u00020*X\u0082\u000e\u00a2\u0006\u0002\n\u0000\u00a8\u0006["
     }
     d2 = {
         "Ljp/co/sony/mc/camera/CreateYouTubeLiveEventActivity;",
         "Landroidx/appcompat/app/AppCompatActivity;",
         "Ljp/co/sony/mc/camera/view/setting/fragment/SettingMessageDialogFragment$OnMessageDialogDismissListener;",
+        "<init>",
         "()V",
-        "audience",
-        "",
-        "barTitleBottomView",
-        "Landroid/widget/TextView;",
-        "barTitleView",
-        "calendar",
-        "Ljava/util/Calendar;",
-        "date",
-        "description",
-        "",
-        "descriptionCounter",
-        "descriptionField",
-        "Lcom/google/android/material/textfield/TextInputLayout;",
-        "descriptionView",
-        "Landroid/widget/EditText;",
-        "gradationBottom",
-        "Landroid/view/View;",
-        "gradationTop",
-        "isAddYouTubeLiveEvent",
-        "latency",
-        "onDateSetListener",
-        "Landroid/app/DatePickerDialog$OnDateSetListener;",
-        "onTimeSetListener",
-        "Landroid/app/TimePickerDialog$OnTimeSetListener;",
-        "privacy",
-        "saveButton",
-        "Landroid/widget/Button;",
+        "youtubeLiveStreamApi",
+        "Ljp/co/sony/mc/camera/rtmp/YouTubeLiveStreamApi;",
         "scrollArea",
         "Landroid/widget/ScrollView;",
         "scrollContents",
         "Landroid/widget/LinearLayout;",
-        "time",
-        "title",
-        "titleCounter",
-        "titleField",
+        "gradationTop",
+        "Landroid/view/View;",
+        "gradationBottom",
+        "saveButton",
+        "Landroid/widget/Button;",
         "titleView",
-        "youtubeLiveStreamApi",
-        "Ljp/co/sony/mc/camera/rtmp/YouTubeLiveStreamApi;",
-        "addYouTubeLiveEvent",
+        "Landroid/widget/EditText;",
+        "titleField",
+        "Lcom/google/android/material/textfield/TextInputLayout;",
+        "titleCounter",
+        "Landroid/widget/TextView;",
+        "descriptionView",
+        "descriptionField",
+        "descriptionCounter",
+        "date",
+        "time",
+        "barTitleView",
+        "barTitleBottomView",
+        "title",
         "",
-        "createLiveBroadcast",
-        "Lcom/google/api/services/youtube/model/LiveBroadcast;",
-        "dismissDialog",
-        "getDescriptionValue",
-        "getTitleValue",
-        "hideSystemUi",
-        "initActionBarTitle",
-        "initAudience",
-        "initCloseButton",
-        "initDateTime",
-        "initDescription",
-        "initLatency",
-        "initPrivacy",
-        "initSaveButton",
-        "initScrollArea",
-        "initTitle",
-        "isAudienceSelected",
-        "isIgnoreKey",
-        "keyCode",
+        "description",
+        "audience",
         "",
+        "privacy",
+        "latency",
+        "calendar",
+        "Ljava/util/Calendar;",
+        "isAddYouTubeLiveEvent",
+        "onDateSetListener",
+        "Landroid/app/DatePickerDialog$OnDateSetListener;",
+        "onTimeSetListener",
+        "Landroid/app/TimePickerDialog$OnTimeSetListener;",
         "onCreate",
+        "",
         "savedInstanceState",
         "Landroid/os/Bundle;",
+        "onResume",
+        "onPause",
         "onDismiss",
         "request",
         "Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogRequest;",
         "what",
+        "",
         "onKeyDown",
+        "keyCode",
         "event",
         "Landroid/view/KeyEvent;",
-        "onKeyLongPress",
         "onKeyUp",
-        "onPause",
-        "onResume",
+        "onKeyLongPress",
         "onWindowFocusChanged",
         "hasFocus",
-        "rotateDialog",
+        "updateDate",
+        "updateTime",
+        "getTitleValue",
+        "getDescriptionValue",
+        "isAudienceSelected",
+        "initActionBarTitle",
+        "initCloseButton",
+        "initTitle",
+        "initDescription",
+        "initAudience",
+        "initPrivacy",
+        "initLatency",
+        "initDateTime",
+        "initSaveButton",
+        "initScrollArea",
+        "updateAddButton",
+        "createLiveBroadcast",
+        "Lcom/google/api/services/youtube/model/LiveBroadcast;",
         "showDialog",
         "dialogId",
         "Ljp/co/sony/mc/camera/view/messagedialog/DialogId;",
-        "updateAddButton",
-        "updateDate",
-        "updateTime",
-        "Companion",
-        "LatencyValue",
+        "dismissDialog",
+        "addYouTubeLiveEvent",
+        "isIgnoreKey",
+        "hideSystemUi",
+        "rotateDialog",
         "PrivacyValue",
+        "LatencyValue",
+        "Companion",
         "SomcCamera_release"
     }
     k = 0x1
     mv = {
-        0x1,
-        0x9,
+        0x2,
+        0x0,
         0x0
     }
     xi = 0x30
@@ -478,18 +479,18 @@
 
     const/4 v2, 0x0
 
-    const/4 v3, 0x0
+    const/4 v3, 0x1
+
+    const/4 v4, 0x0
 
     .line 522
     :try_start_0
     invoke-direct {p0}, Ljp/co/sony/mc/camera/CreateYouTubeLiveEventActivity;->createLiveBroadcast()Lcom/google/api/services/youtube/model/LiveBroadcast;
 
-    move-result-object v4
-
-    const/4 v5, 0x1
+    move-result-object v5
 
     .line 523
-    iput-boolean v5, p0, Ljp/co/sony/mc/camera/CreateYouTubeLiveEventActivity;->isAddYouTubeLiveEvent:Z
+    iput-boolean v3, p0, Ljp/co/sony/mc/camera/CreateYouTubeLiveEventActivity;->isAddYouTubeLiveEvent:Z
 
     .line 524
     iget-object v6, p0, Ljp/co/sony/mc/camera/CreateYouTubeLiveEventActivity;->youtubeLiveStreamApi:Ljp/co/sony/mc/camera/rtmp/YouTubeLiveStreamApi;
@@ -503,11 +504,11 @@
     move-object v6, v2
 
     :cond_0
-    invoke-virtual {v6, v4}, Ljp/co/sony/mc/camera/rtmp/YouTubeLiveStreamApi;->addLiveBroadcast(Lcom/google/api/services/youtube/model/LiveBroadcast;)Ljp/co/sony/mc/camera/rtmp/YouTubeEventData;
+    invoke-virtual {v6, v5}, Ljp/co/sony/mc/camera/rtmp/YouTubeLiveStreamApi;->addLiveBroadcast(Lcom/google/api/services/youtube/model/LiveBroadcast;)Ljp/co/sony/mc/camera/rtmp/YouTubeEventData;
 
-    move-result-object v4
+    move-result-object v5
 
-    iput-object v4, v0, Lkotlin/jvm/internal/Ref$ObjectRef;->element:Ljava/lang/Object;
+    iput-object v5, v0, Lkotlin/jvm/internal/Ref$ObjectRef;->element:Ljava/lang/Object;
     :try_end_0
     .catch Lcom/google/api/client/googleapis/json/GoogleJsonResponseException; {:try_start_0 .. :try_end_0} :catch_8
     .catch Ljava/net/UnknownHostException; {:try_start_0 .. :try_end_0} :catch_7
@@ -528,28 +529,30 @@
     goto/16 :goto_5
 
     :catch_0
-    move-exception v4
+    move-exception v5
 
-    move v3, v5
+    move v6, v3
 
     goto :goto_0
 
     :catch_1
-    move-exception v4
+    move-exception v5
 
-    move v3, v5
+    move v6, v3
 
     goto :goto_1
 
     :catch_2
-    move-exception v4
+    move-exception v5
 
-    move v3, v5
+    move v6, v3
 
     goto :goto_2
 
     :catch_3
-    move-exception v4
+    move-exception v5
+
+    move v6, v3
 
     goto :goto_4
 
@@ -560,17 +563,17 @@
     invoke-direct {p0}, Ljp/co/sony/mc/camera/CreateYouTubeLiveEventActivity;->dismissDialog()V
 
     .line 550
+    new-array p0, v3, [Ljava/lang/String;
+
     invoke-virtual {v0}, Ljava/lang/Exception;->getMessage()Ljava/lang/String;
 
-    move-result-object p0
+    move-result-object v1
 
-    invoke-static {p0}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
+    invoke-static {v1}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
 
-    move-result-object p0
+    move-result-object v1
 
-    filled-new-array {p0}, [Ljava/lang/String;
-
-    move-result-object p0
+    aput-object v1, p0, v4
 
     invoke-static {p0}, Ljp/co/sony/mc/camera/util/CamLog;->e([Ljava/lang/String;)V
 
@@ -578,142 +581,148 @@
     throw v0
 
     :catch_5
-    move-exception v4
+    move-exception v5
+
+    move v6, v4
 
     .line 545
     :goto_0
     invoke-direct {p0}, Ljp/co/sony/mc/camera/CreateYouTubeLiveEventActivity;->dismissDialog()V
 
     .line 546
-    invoke-virtual {v4}, Ljava/io/IOException;->getMessage()Ljava/lang/String;
+    new-array v3, v3, [Ljava/lang/String;
 
-    move-result-object v4
+    invoke-virtual {v5}, Ljava/io/IOException;->getMessage()Ljava/lang/String;
 
-    invoke-static {v4}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
+    move-result-object v5
 
-    move-result-object v4
+    invoke-static {v5}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
 
-    filled-new-array {v4}, [Ljava/lang/String;
+    move-result-object v5
 
-    move-result-object v4
+    aput-object v5, v3, v4
 
-    invoke-static {v4}, Ljp/co/sony/mc/camera/util/CamLog;->e([Ljava/lang/String;)V
+    invoke-static {v3}, Ljp/co/sony/mc/camera/util/CamLog;->e([Ljava/lang/String;)V
 
     .line 547
-    sget-object v4, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->ADD_YOUTUBE_EVENT_RESULT_NG:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
+    sget-object v3, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->ADD_YOUTUBE_EVENT_RESULT_NG:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
 
-    invoke-direct {p0, v4}, Ljp/co/sony/mc/camera/CreateYouTubeLiveEventActivity;->showDialog(Ljp/co/sony/mc/camera/view/messagedialog/DialogId;)V
+    invoke-direct {p0, v3}, Ljp/co/sony/mc/camera/CreateYouTubeLiveEventActivity;->showDialog(Ljp/co/sony/mc/camera/view/messagedialog/DialogId;)V
 
     goto :goto_3
 
     :catch_6
-    move-exception v4
+    move-exception v5
+
+    move v6, v4
 
     .line 541
     :goto_1
     invoke-direct {p0}, Ljp/co/sony/mc/camera/CreateYouTubeLiveEventActivity;->dismissDialog()V
 
     .line 542
-    invoke-virtual {v4}, Ljava/net/SocketTimeoutException;->getMessage()Ljava/lang/String;
+    new-array v3, v3, [Ljava/lang/String;
 
-    move-result-object v4
+    invoke-virtual {v5}, Ljava/net/SocketTimeoutException;->getMessage()Ljava/lang/String;
 
-    invoke-static {v4}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
+    move-result-object v5
 
-    move-result-object v4
+    invoke-static {v5}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
 
-    filled-new-array {v4}, [Ljava/lang/String;
+    move-result-object v5
 
-    move-result-object v4
+    aput-object v5, v3, v4
 
-    invoke-static {v4}, Ljp/co/sony/mc/camera/util/CamLog;->e([Ljava/lang/String;)V
+    invoke-static {v3}, Ljp/co/sony/mc/camera/util/CamLog;->e([Ljava/lang/String;)V
 
     .line 543
-    sget-object v4, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->ADD_YOUTUBE_EVENT_RESULT_NETWORK_NG:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
+    sget-object v3, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->ADD_YOUTUBE_EVENT_RESULT_NETWORK_NG:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
 
-    invoke-direct {p0, v4}, Ljp/co/sony/mc/camera/CreateYouTubeLiveEventActivity;->showDialog(Ljp/co/sony/mc/camera/view/messagedialog/DialogId;)V
+    invoke-direct {p0, v3}, Ljp/co/sony/mc/camera/CreateYouTubeLiveEventActivity;->showDialog(Ljp/co/sony/mc/camera/view/messagedialog/DialogId;)V
 
     goto :goto_3
 
     :catch_7
-    move-exception v4
+    move-exception v5
+
+    move v6, v4
 
     .line 537
     :goto_2
     invoke-direct {p0}, Ljp/co/sony/mc/camera/CreateYouTubeLiveEventActivity;->dismissDialog()V
 
     .line 538
-    invoke-virtual {v4}, Ljava/net/UnknownHostException;->getMessage()Ljava/lang/String;
+    new-array v3, v3, [Ljava/lang/String;
 
-    move-result-object v4
+    invoke-virtual {v5}, Ljava/net/UnknownHostException;->getMessage()Ljava/lang/String;
 
-    invoke-static {v4}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
+    move-result-object v5
 
-    move-result-object v4
+    invoke-static {v5}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
 
-    filled-new-array {v4}, [Ljava/lang/String;
+    move-result-object v5
 
-    move-result-object v4
+    aput-object v5, v3, v4
 
-    invoke-static {v4}, Ljp/co/sony/mc/camera/util/CamLog;->e([Ljava/lang/String;)V
+    invoke-static {v3}, Ljp/co/sony/mc/camera/util/CamLog;->e([Ljava/lang/String;)V
 
     .line 539
-    sget-object v4, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->ADD_YOUTUBE_EVENT_RESULT_NETWORK_NG:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
+    sget-object v3, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->ADD_YOUTUBE_EVENT_RESULT_NETWORK_NG:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
 
-    invoke-direct {p0, v4}, Ljp/co/sony/mc/camera/CreateYouTubeLiveEventActivity;->showDialog(Ljp/co/sony/mc/camera/view/messagedialog/DialogId;)V
+    invoke-direct {p0, v3}, Ljp/co/sony/mc/camera/CreateYouTubeLiveEventActivity;->showDialog(Ljp/co/sony/mc/camera/view/messagedialog/DialogId;)V
 
     :goto_3
-    move v5, v3
+    move v3, v6
 
     goto :goto_5
 
     :catch_8
-    move-exception v4
+    move-exception v5
 
-    move v5, v3
+    move v6, v4
 
     .line 528
     :goto_4
     invoke-direct {p0}, Ljp/co/sony/mc/camera/CreateYouTubeLiveEventActivity;->dismissDialog()V
 
     .line 529
-    invoke-virtual {v4}, Lcom/google/api/client/googleapis/json/GoogleJsonResponseException;->getDetails()Lcom/google/api/client/googleapis/json/GoogleJsonError;
+    new-array v3, v3, [Ljava/lang/String;
 
-    move-result-object v6
+    invoke-virtual {v5}, Lcom/google/api/client/googleapis/json/GoogleJsonResponseException;->getDetails()Lcom/google/api/client/googleapis/json/GoogleJsonError;
 
-    invoke-virtual {v6}, Lcom/google/api/client/googleapis/json/GoogleJsonError;->getMessage()Ljava/lang/String;
+    move-result-object v7
 
-    move-result-object v6
+    invoke-virtual {v7}, Lcom/google/api/client/googleapis/json/GoogleJsonError;->getMessage()Ljava/lang/String;
 
-    filled-new-array {v6}, [Ljava/lang/String;
+    move-result-object v7
 
-    move-result-object v6
+    aput-object v7, v3, v4
 
-    invoke-static {v6}, Ljp/co/sony/mc/camera/util/CamLog;->e([Ljava/lang/String;)V
+    invoke-static {v3}, Ljp/co/sony/mc/camera/util/CamLog;->e([Ljava/lang/String;)V
 
     .line 530
-    invoke-virtual {v4}, Lcom/google/api/client/googleapis/json/GoogleJsonResponseException;->getDetails()Lcom/google/api/client/googleapis/json/GoogleJsonError;
+    invoke-virtual {v5}, Lcom/google/api/client/googleapis/json/GoogleJsonResponseException;->getDetails()Lcom/google/api/client/googleapis/json/GoogleJsonError;
 
-    move-result-object v6
+    move-result-object v3
 
-    invoke-virtual {v6}, Lcom/google/api/client/googleapis/json/GoogleJsonError;->getCode()I
+    invoke-virtual {v3}, Lcom/google/api/client/googleapis/json/GoogleJsonError;->getCode()I
 
-    move-result v6
+    move-result v3
 
     const/16 v7, 0x191
 
-    if-ne v6, v7, :cond_1
+    if-ne v3, v7, :cond_1
 
     .line 531
-    invoke-virtual {v4}, Lcom/google/api/client/googleapis/json/GoogleJsonResponseException;->getDetails()Lcom/google/api/client/googleapis/json/GoogleJsonError;
+    invoke-virtual {v5}, Lcom/google/api/client/googleapis/json/GoogleJsonResponseException;->getDetails()Lcom/google/api/client/googleapis/json/GoogleJsonError;
 
-    move-result-object v4
+    move-result-object v3
 
-    invoke-virtual {v4}, Lcom/google/api/client/googleapis/json/GoogleJsonError;->getErrors()Ljava/util/List;
+    invoke-virtual {v3}, Lcom/google/api/client/googleapis/json/GoogleJsonError;->getErrors()Ljava/util/List;
 
-    move-result-object v4
+    move-result-object v3
 
-    invoke-interface {v4, v3}, Ljava/util/List;->get(I)Ljava/lang/Object;
+    invoke-interface {v3, v4}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
     move-result-object v3
 
@@ -736,7 +745,7 @@
 
     invoke-direct {p0, v3}, Ljp/co/sony/mc/camera/CreateYouTubeLiveEventActivity;->showDialog(Ljp/co/sony/mc/camera/view/messagedialog/DialogId;)V
 
-    goto :goto_5
+    goto :goto_3
 
     .line 534
     :cond_1
@@ -744,8 +753,10 @@
 
     invoke-direct {p0, v3}, Ljp/co/sony/mc/camera/CreateYouTubeLiveEventActivity;->showDialog(Ljp/co/sony/mc/camera/view/messagedialog/DialogId;)V
 
+    goto :goto_3
+
     :goto_5
-    if-eqz v5, :cond_2
+    if-eqz v3, :cond_2
 
     .line 555
     new-instance v3, Ljp/co/sony/mc/camera/CreateYouTubeLiveEventActivity$$ExternalSyntheticLambda3;
@@ -887,7 +898,6 @@
 
     check-cast v1, Ljp/co/sony/mc/camera/rtmp/YouTubeEventData;
 
-    .line 556
     invoke-virtual {v0, v1}, Ljp/co/sony/mc/camera/rtmp/YouTubeStreamingDataManager;->setSelectEvent(Ljp/co/sony/mc/camera/rtmp/YouTubeEventData;)V
 
     .line 559
@@ -1239,9 +1249,9 @@
 
     move-result-object p0
 
+    .line 504
     const-class v0, Ljp/co/sony/mc/camera/view/setting/fragment/SettingMessageDialogFragment;
 
-    .line 504
     const-string v0, "SettingMessageDialogFragment"
 
     .line 503
@@ -1270,7 +1280,7 @@
 .method private final getDescriptionValue()Ljava/lang/String;
     .locals 1
 
-    const v0, 0x7f090162
+    const v0, 0x7f090161
 
     .line 257
     invoke-virtual {p0, v0}, Ljp/co/sony/mc/camera/CreateYouTubeLiveEventActivity;->findViewById(I)Landroid/view/View;
@@ -1293,7 +1303,7 @@
 .method private final getTitleValue()Ljava/lang/String;
     .locals 1
 
-    const v0, 0x7f0904bc
+    const v0, 0x7f0904a9
 
     .line 253
     invoke-virtual {p0, v0}, Ljp/co/sony/mc/camera/CreateYouTubeLiveEventActivity;->findViewById(I)Landroid/view/View;
@@ -1372,29 +1382,23 @@
 
     if-ne v0, v1, :cond_1
 
-    const v0, 0x7f0904c8
+    const v0, 0x7f0904b7
 
     .line 266
     invoke-virtual {p0, v0}, Ljp/co/sony/mc/camera/CreateYouTubeLiveEventActivity;->findViewById(I)Landroid/view/View;
 
     move-result-object v0
 
-    const-string v1, "findViewById(...)"
-
-    invoke-static {v0, v1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
-
     check-cast v0, Landroid/widget/TextView;
 
     iput-object v0, p0, Ljp/co/sony/mc/camera/CreateYouTubeLiveEventActivity;->barTitleView:Landroid/widget/TextView;
 
-    const v0, 0x7f0904c1
+    const v0, 0x7f0904b0
 
     .line 267
     invoke-virtual {p0, v0}, Ljp/co/sony/mc/camera/CreateYouTubeLiveEventActivity;->findViewById(I)Landroid/view/View;
 
     move-result-object v0
-
-    invoke-static {v0, v1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
 
     check-cast v0, Landroid/widget/TextView;
 
@@ -1491,7 +1495,7 @@
 .method private final initAudience()V
     .locals 2
 
-    const v0, 0x7f090070
+    const v0, 0x7f09006c
 
     .line 351
     invoke-virtual {p0, v0}, Ljp/co/sony/mc/camera/CreateYouTubeLiveEventActivity;->findViewById(I)Landroid/view/View;
@@ -1510,11 +1514,15 @@
 .end method
 
 .method private static final initAudience$lambda$4(Ljp/co/sony/mc/camera/CreateYouTubeLiveEventActivity;Landroid/widget/RadioGroup;I)V
-    .locals 0
+    .locals 1
 
-    const-string/jumbo p1, "this$0"
+    const-string/jumbo v0, "this$0"
 
-    invoke-static {p0, p1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+
+    const-string v0, "<unused var>"
+
+    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
     packed-switch p2, :pswitch_data_0
 
@@ -1545,8 +1553,10 @@
     :cond_0
     return-void
 
+    nop
+
     :pswitch_data_0
-    .packed-switch 0x7f090071
+    .packed-switch 0x7f09006d
         :pswitch_1
         :pswitch_0
     .end packed-switch
@@ -1555,7 +1565,7 @@
 .method private final initCloseButton()V
     .locals 2
 
-    const v0, 0x7f090118
+    const v0, 0x7f090114
 
     .line 278
     invoke-virtual {p0, v0}, Ljp/co/sony/mc/camera/CreateYouTubeLiveEventActivity;->findViewById(I)Landroid/view/View;
@@ -1597,10 +1607,6 @@
 
     move-result-object v0
 
-    const-string v1, "getInstance(...)"
-
-    invoke-static {v0, v1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
-
     iput-object v0, p0, Ljp/co/sony/mc/camera/CreateYouTubeLiveEventActivity;->calendar:Ljava/util/Calendar;
 
     .line 383
@@ -1635,16 +1641,12 @@
 
     invoke-virtual {v0, v1, v4}, Ljava/util/Calendar;->set(II)V
 
-    const v0, 0x7f090156
+    const v0, 0x7f090155
 
     .line 386
     invoke-virtual {p0, v0}, Ljp/co/sony/mc/camera/CreateYouTubeLiveEventActivity;->findViewById(I)Landroid/view/View;
 
     move-result-object v0
-
-    const-string v1, "findViewById(...)"
-
-    invoke-static {v0, v1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
 
     check-cast v0, Landroid/widget/TextView;
 
@@ -1665,20 +1667,18 @@
     move-object v0, v2
 
     :cond_2
-    new-instance v3, Ljp/co/sony/mc/camera/CreateYouTubeLiveEventActivity$$ExternalSyntheticLambda13;
+    new-instance v1, Ljp/co/sony/mc/camera/CreateYouTubeLiveEventActivity$$ExternalSyntheticLambda13;
 
-    invoke-direct {v3, p0}, Ljp/co/sony/mc/camera/CreateYouTubeLiveEventActivity$$ExternalSyntheticLambda13;-><init>(Ljp/co/sony/mc/camera/CreateYouTubeLiveEventActivity;)V
+    invoke-direct {v1, p0}, Ljp/co/sony/mc/camera/CreateYouTubeLiveEventActivity$$ExternalSyntheticLambda13;-><init>(Ljp/co/sony/mc/camera/CreateYouTubeLiveEventActivity;)V
 
-    invoke-virtual {v0, v3}, Landroid/widget/TextView;->setOnClickListener(Landroid/view/View$OnClickListener;)V
+    invoke-virtual {v0, v1}, Landroid/widget/TextView;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
-    const v0, 0x7f0904ba
+    const v0, 0x7f0904a8
 
     .line 395
     invoke-virtual {p0, v0}, Ljp/co/sony/mc/camera/CreateYouTubeLiveEventActivity;->findViewById(I)Landroid/view/View;
 
     move-result-object v0
-
-    invoke-static {v0, v1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
 
     check-cast v0, Landroid/widget/TextView;
 
@@ -1858,9 +1858,9 @@
 .end method
 
 .method private final initDescription()V
-    .locals 7
+    .locals 8
 
-    const v0, 0x7f110489
+    const v0, 0x7f1104c3
 
     .line 319
     invoke-virtual {p0, v0}, Ljp/co/sony/mc/camera/CreateYouTubeLiveEventActivity;->getString(I)Ljava/lang/String;
@@ -1871,7 +1871,7 @@
 
     invoke-static {v0, v1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
 
-    const v2, 0x7f11048a
+    const v2, 0x7f1104c4
 
     .line 321
     invoke-virtual {p0, v2}, Ljp/co/sony/mc/camera/CreateYouTubeLiveEventActivity;->getString(I)Ljava/lang/String;
@@ -1880,29 +1880,23 @@
 
     invoke-static {v2, v1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
 
-    const v1, 0x7f090162
+    const v1, 0x7f090161
 
     .line 322
     invoke-virtual {p0, v1}, Ljp/co/sony/mc/camera/CreateYouTubeLiveEventActivity;->findViewById(I)Landroid/view/View;
 
     move-result-object v1
 
-    const-string v3, "findViewById(...)"
-
-    invoke-static {v1, v3}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
-
     check-cast v1, Landroid/widget/EditText;
 
     iput-object v1, p0, Ljp/co/sony/mc/camera/CreateYouTubeLiveEventActivity;->descriptionView:Landroid/widget/EditText;
 
-    const v1, 0x7f090165
+    const v1, 0x7f090164
 
     .line 323
     invoke-virtual {p0, v1}, Ljp/co/sony/mc/camera/CreateYouTubeLiveEventActivity;->findViewById(I)Landroid/view/View;
 
     move-result-object v1
-
-    invoke-static {v1, v3}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
 
     check-cast v1, Landroid/widget/TextView;
 
@@ -1922,15 +1916,19 @@
     move-object v1, v4
 
     :cond_0
-    new-instance v5, Ljp/co/sony/mc/camera/util/TextInputUtil$InputLengthFilter;
+    const/4 v5, 0x1
 
-    const/16 v6, 0x1388
+    new-array v5, v5, [Ljp/co/sony/mc/camera/util/TextInputUtil$InputLengthFilter;
 
-    invoke-direct {v5, v6}, Ljp/co/sony/mc/camera/util/TextInputUtil$InputLengthFilter;-><init>(I)V
+    new-instance v6, Ljp/co/sony/mc/camera/util/TextInputUtil$InputLengthFilter;
 
-    filled-new-array {v5}, [Ljp/co/sony/mc/camera/util/TextInputUtil$InputLengthFilter;
+    const/16 v7, 0x1388
 
-    move-result-object v5
+    invoke-direct {v6, v7}, Ljp/co/sony/mc/camera/util/TextInputUtil$InputLengthFilter;-><init>(I)V
+
+    const/4 v7, 0x0
+
+    aput-object v6, v5, v7
 
     check-cast v5, [Landroid/text/InputFilter;
 
@@ -2036,9 +2034,7 @@
 
     move-result p0
 
-    const/4 v2, 0x0
-
-    invoke-virtual {v1, v2, p0}, Ljava/lang/String;->codePointCount(II)I
+    invoke-virtual {v1, v7, p0}, Ljava/lang/String;->codePointCount(II)I
 
     move-result p0
 
@@ -2071,7 +2067,7 @@
 .method private final initLatency()V
     .locals 2
 
-    const v0, 0x7f090282
+    const v0, 0x7f09027c
 
     .line 373
     invoke-virtual {p0, v0}, Ljp/co/sony/mc/camera/CreateYouTubeLiveEventActivity;->findViewById(I)Landroid/view/View;
@@ -2090,11 +2086,15 @@
 .end method
 
 .method private static final initLatency$lambda$6(Ljp/co/sony/mc/camera/CreateYouTubeLiveEventActivity;Landroid/widget/RadioGroup;I)V
-    .locals 0
+    .locals 1
 
-    const-string/jumbo p1, "this$0"
+    const-string/jumbo v0, "this$0"
 
-    invoke-static {p0, p1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+
+    const-string v0, "<unused var>"
+
+    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
     packed-switch p2, :pswitch_data_0
 
@@ -2125,8 +2125,10 @@
     :goto_0
     return-void
 
+    nop
+
     :pswitch_data_0
-    .packed-switch 0x7f090283
+    .packed-switch 0x7f09027d
         :pswitch_1
         :pswitch_0
     .end packed-switch
@@ -2154,11 +2156,15 @@
 .end method
 
 .method private static final initPrivacy$lambda$5(Ljp/co/sony/mc/camera/CreateYouTubeLiveEventActivity;Landroid/widget/RadioGroup;I)V
-    .locals 0
+    .locals 1
 
-    const-string/jumbo p1, "this$0"
+    const-string/jumbo v0, "this$0"
 
-    invoke-static {p0, p1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+
+    const-string v0, "<unused var>"
+
+    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
     packed-switch p2, :pswitch_data_0
 
@@ -2201,8 +2207,6 @@
     :goto_0
     return-void
 
-    nop
-
     :pswitch_data_0
     .packed-switch 0x7f090392
         :pswitch_2
@@ -2220,10 +2224,6 @@
     invoke-virtual {p0, v0}, Ljp/co/sony/mc/camera/CreateYouTubeLiveEventActivity;->findViewById(I)Landroid/view/View;
 
     move-result-object v0
-
-    const-string v1, "findViewById(...)"
-
-    invoke-static {v0, v1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
 
     check-cast v0, Landroid/widget/Button;
 
@@ -2249,7 +2249,7 @@
 .end method
 
 .method private static final initSaveButton$lambda$9(Ljp/co/sony/mc/camera/CreateYouTubeLiveEventActivity;Landroid/view/View;)V
-    .locals 3
+    .locals 5
 
     const-string/jumbo p1, "this$0"
 
@@ -2306,129 +2306,154 @@
 
     if-eqz p1, :cond_3
 
-    .line 419
-    iget-object p1, p0, Ljp/co/sony/mc/camera/CreateYouTubeLiveEventActivity;->title:Ljava/lang/String;
-
-    new-instance v0, Ljava/lang/StringBuilder;
-
-    const-string/jumbo v1, "title:"
-
-    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
-
-    invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object p1
-
-    invoke-virtual {p1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object p1
-
-    filled-new-array {p1}, [Ljava/lang/String;
-
-    move-result-object p1
-
-    invoke-static {p1}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
-
-    .line 420
-    iget-object p1, p0, Ljp/co/sony/mc/camera/CreateYouTubeLiveEventActivity;->description:Ljava/lang/String;
-
-    new-instance v0, Ljava/lang/StringBuilder;
-
-    const-string v1, "description:"
-
-    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
-
-    invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object p1
-
-    invoke-virtual {p1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object p1
-
-    filled-new-array {p1}, [Ljava/lang/String;
-
-    move-result-object p1
-
-    invoke-static {p1}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
-
-    .line 421
-    iget-boolean p1, p0, Ljp/co/sony/mc/camera/CreateYouTubeLiveEventActivity;->audience:Z
-
-    new-instance v0, Ljava/lang/StringBuilder;
-
-    const-string v1, "audience(for kids):"
-
-    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
-
-    invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
-
-    move-result-object p1
-
-    invoke-virtual {p1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object p1
-
-    filled-new-array {p1}, [Ljava/lang/String;
-
-    move-result-object p1
-
-    invoke-static {p1}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
-
-    .line 422
-    iget-object p1, p0, Ljp/co/sony/mc/camera/CreateYouTubeLiveEventActivity;->privacy:Ljava/lang/String;
-
-    new-instance v0, Ljava/lang/StringBuilder;
-
-    const-string v1, "privacy:"
-
-    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
-
-    invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object p1
-
-    invoke-virtual {p1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object p1
-
-    filled-new-array {p1}, [Ljava/lang/String;
-
-    move-result-object p1
-
-    invoke-static {p1}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
-
     const/4 p1, 0x1
 
+    .line 419
+    new-array v0, p1, [Ljava/lang/String;
+
+    iget-object v1, p0, Ljp/co/sony/mc/camera/CreateYouTubeLiveEventActivity;->title:Ljava/lang/String;
+
+    new-instance v2, Ljava/lang/StringBuilder;
+
+    const-string/jumbo v3, "title:"
+
+    invoke-direct {v2, v3}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+
+    invoke-virtual {v2, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v1
+
+    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v1
+
+    const/4 v2, 0x0
+
+    aput-object v1, v0, v2
+
+    invoke-static {v0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
+
+    .line 420
+    new-array v0, p1, [Ljava/lang/String;
+
+    iget-object v1, p0, Ljp/co/sony/mc/camera/CreateYouTubeLiveEventActivity;->description:Ljava/lang/String;
+
+    new-instance v3, Ljava/lang/StringBuilder;
+
+    const-string v4, "description:"
+
+    invoke-direct {v3, v4}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+
+    invoke-virtual {v3, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v1
+
+    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v1
+
+    aput-object v1, v0, v2
+
+    invoke-static {v0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
+
+    .line 421
+    new-array v0, p1, [Ljava/lang/String;
+
+    iget-boolean v1, p0, Ljp/co/sony/mc/camera/CreateYouTubeLiveEventActivity;->audience:Z
+
+    new-instance v3, Ljava/lang/StringBuilder;
+
+    const-string v4, "audience(for kids):"
+
+    invoke-direct {v3, v4}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+
+    invoke-virtual {v3, v1}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
+
+    move-result-object v1
+
+    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v1
+
+    aput-object v1, v0, v2
+
+    invoke-static {v0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
+
+    .line 422
+    new-array v0, p1, [Ljava/lang/String;
+
+    iget-object v1, p0, Ljp/co/sony/mc/camera/CreateYouTubeLiveEventActivity;->privacy:Ljava/lang/String;
+
+    new-instance v3, Ljava/lang/StringBuilder;
+
+    const-string v4, "privacy:"
+
+    invoke-direct {v3, v4}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+
+    invoke-virtual {v3, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v1
+
+    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v1
+
+    aput-object v1, v0, v2
+
+    invoke-static {v0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
+
     .line 423
-    new-array p1, p1, [Ljava/lang/String;
+    new-array v0, p1, [Ljava/lang/String;
 
-    const-string/jumbo v0, "yyyy/MM/dd HH:mm:ss"
+    const-string/jumbo v1, "yyyy/MM/dd HH:mm:ss"
 
-    check-cast v0, Ljava/lang/CharSequence;
+    check-cast v1, Ljava/lang/CharSequence;
 
-    iget-object v1, p0, Ljp/co/sony/mc/camera/CreateYouTubeLiveEventActivity;->calendar:Ljava/util/Calendar;
+    iget-object v3, p0, Ljp/co/sony/mc/camera/CreateYouTubeLiveEventActivity;->calendar:Ljava/util/Calendar;
 
-    if-nez v1, :cond_2
+    if-nez v3, :cond_2
 
-    const-string v1, "calendar"
+    const-string v3, "calendar"
 
-    invoke-static {v1}, Lkotlin/jvm/internal/Intrinsics;->throwUninitializedPropertyAccessException(Ljava/lang/String;)V
+    invoke-static {v3}, Lkotlin/jvm/internal/Intrinsics;->throwUninitializedPropertyAccessException(Ljava/lang/String;)V
 
-    const/4 v1, 0x0
+    const/4 v3, 0x0
 
     :cond_2
-    invoke-static {v0, v1}, Landroid/text/format/DateFormat;->format(Ljava/lang/CharSequence;Ljava/util/Calendar;)Ljava/lang/CharSequence;
+    invoke-static {v1, v3}, Landroid/text/format/DateFormat;->format(Ljava/lang/CharSequence;Ljava/util/Calendar;)Ljava/lang/CharSequence;
 
-    move-result-object v0
+    move-result-object v1
+
+    new-instance v3, Ljava/lang/StringBuilder;
+
+    const-string/jumbo v4, "start date time:"
+
+    invoke-direct {v3, v4}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+
+    invoke-virtual {v3, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    move-result-object v1
+
+    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v1
+
+    aput-object v1, v0, v2
+
+    invoke-static {v0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
+
+    .line 424
+    new-array p1, p1, [Ljava/lang/String;
+
+    iget-object v0, p0, Ljp/co/sony/mc/camera/CreateYouTubeLiveEventActivity;->latency:Ljava/lang/String;
 
     new-instance v1, Ljava/lang/StringBuilder;
 
-    const-string/jumbo v2, "start date time:"
+    const-string v3, "latency:"
 
-    invoke-direct {v1, v2}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+    invoke-direct {v1, v3}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
-    invoke-virtual {v1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+    invoke-virtual {v1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v0
 
@@ -2436,32 +2461,7 @@
 
     move-result-object v0
 
-    const/4 v1, 0x0
-
-    aput-object v0, p1, v1
-
-    invoke-static {p1}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
-
-    .line 424
-    iget-object p1, p0, Ljp/co/sony/mc/camera/CreateYouTubeLiveEventActivity;->latency:Ljava/lang/String;
-
-    new-instance v0, Ljava/lang/StringBuilder;
-
-    const-string v1, "latency:"
-
-    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
-
-    invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object p1
-
-    invoke-virtual {p1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object p1
-
-    filled-new-array {p1}, [Ljava/lang/String;
-
-    move-result-object p1
+    aput-object v0, p1, v2
 
     invoke-static {p1}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
@@ -2475,53 +2475,43 @@
 .method private final initScrollArea()V
     .locals 2
 
-    const v0, 0x7f0903e8
+    const v0, 0x7f0903e7
 
     .line 433
     invoke-virtual {p0, v0}, Ljp/co/sony/mc/camera/CreateYouTubeLiveEventActivity;->findViewById(I)Landroid/view/View;
 
     move-result-object v0
 
-    const-string v1, "findViewById(...)"
-
-    invoke-static {v0, v1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
-
     check-cast v0, Landroid/widget/ScrollView;
 
     iput-object v0, p0, Ljp/co/sony/mc/camera/CreateYouTubeLiveEventActivity;->scrollArea:Landroid/widget/ScrollView;
 
-    const v0, 0x7f0903eb
+    const v0, 0x7f0903ea
 
     .line 434
     invoke-virtual {p0, v0}, Ljp/co/sony/mc/camera/CreateYouTubeLiveEventActivity;->findViewById(I)Landroid/view/View;
 
     move-result-object v0
 
-    invoke-static {v0, v1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
-
     check-cast v0, Landroid/widget/LinearLayout;
 
     iput-object v0, p0, Ljp/co/sony/mc/camera/CreateYouTubeLiveEventActivity;->scrollContents:Landroid/widget/LinearLayout;
 
-    const v0, 0x7f090213
+    const v0, 0x7f090211
 
     .line 435
     invoke-virtual {p0, v0}, Ljp/co/sony/mc/camera/CreateYouTubeLiveEventActivity;->findViewById(I)Landroid/view/View;
 
     move-result-object v0
 
-    invoke-static {v0, v1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
-
     iput-object v0, p0, Ljp/co/sony/mc/camera/CreateYouTubeLiveEventActivity;->gradationTop:Landroid/view/View;
 
-    const v0, 0x7f090212
+    const v0, 0x7f090210
 
     .line 436
     invoke-virtual {p0, v0}, Ljp/co/sony/mc/camera/CreateYouTubeLiveEventActivity;->findViewById(I)Landroid/view/View;
 
     move-result-object v0
-
-    invoke-static {v0, v1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
 
     iput-object v0, p0, Ljp/co/sony/mc/camera/CreateYouTubeLiveEventActivity;->gradationBottom:Landroid/view/View;
 
@@ -2635,31 +2625,25 @@
 .end method
 
 .method private final initTitle()V
-    .locals 6
+    .locals 7
 
-    const v0, 0x7f0904bc
+    const v0, 0x7f0904a9
 
     .line 285
     invoke-virtual {p0, v0}, Ljp/co/sony/mc/camera/CreateYouTubeLiveEventActivity;->findViewById(I)Landroid/view/View;
 
     move-result-object v0
 
-    const-string v1, "findViewById(...)"
-
-    invoke-static {v0, v1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
-
     check-cast v0, Landroid/widget/EditText;
 
     iput-object v0, p0, Ljp/co/sony/mc/camera/CreateYouTubeLiveEventActivity;->titleView:Landroid/widget/EditText;
 
-    const v0, 0x7f0904c3
+    const v0, 0x7f0904b2
 
     .line 286
     invoke-virtual {p0, v0}, Ljp/co/sony/mc/camera/CreateYouTubeLiveEventActivity;->findViewById(I)Landroid/view/View;
 
     move-result-object v0
-
-    invoke-static {v0, v1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
 
     check-cast v0, Landroid/widget/TextView;
 
@@ -2707,15 +2691,17 @@
     move-object v0, v2
 
     :cond_2
-    new-instance v4, Ljp/co/sony/mc/camera/util/TextInputUtil$InputLengthFilter;
+    const/4 v4, 0x1
 
-    const/16 v5, 0x64
+    new-array v4, v4, [Ljp/co/sony/mc/camera/util/TextInputUtil$InputLengthFilter;
 
-    invoke-direct {v4, v5}, Ljp/co/sony/mc/camera/util/TextInputUtil$InputLengthFilter;-><init>(I)V
+    new-instance v5, Ljp/co/sony/mc/camera/util/TextInputUtil$InputLengthFilter;
 
-    filled-new-array {v4}, [Ljp/co/sony/mc/camera/util/TextInputUtil$InputLengthFilter;
+    const/16 v6, 0x64
 
-    move-result-object v4
+    invoke-direct {v5, v6}, Ljp/co/sony/mc/camera/util/TextInputUtil$InputLengthFilter;-><init>(I)V
+
+    aput-object v5, v4, v3
 
     check-cast v4, [Landroid/text/InputFilter;
 
@@ -2830,7 +2816,7 @@
 .method private final isAudienceSelected()Z
     .locals 1
 
-    const v0, 0x7f090070
+    const v0, 0x7f09006c
 
     .line 261
     invoke-virtual {p0, v0}, Ljp/co/sony/mc/camera/CreateYouTubeLiveEventActivity;->findViewById(I)Landroid/view/View;
@@ -3006,9 +2992,9 @@
 
     move-result-object v0
 
+    .line 623
     const-class v1, Ljp/co/sony/mc/camera/view/setting/fragment/SettingMessageDialogFragment;
 
-    .line 623
     const-string v1, "SettingMessageDialogFragment"
 
     .line 622
@@ -3208,12 +3194,12 @@
 
     if-eqz p0, :cond_1
 
-    const p0, 0x7f0800db
+    const p0, 0x7f0800e0
 
     goto :goto_0
 
     :cond_1
-    const p0, 0x7f0800da
+    const p0, 0x7f0800df
 
     .line 446
     :goto_0

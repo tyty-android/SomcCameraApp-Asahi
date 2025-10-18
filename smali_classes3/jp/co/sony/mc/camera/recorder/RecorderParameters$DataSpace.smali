@@ -26,16 +26,16 @@
 .method public constructor <init>(III)V
     .locals 0
 
-    .line 55
+    .line 66
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 56
+    .line 67
     iput p1, p0, Ljp/co/sony/mc/camera/recorder/RecorderParameters$DataSpace;->standard:I
 
-    .line 57
+    .line 68
     iput p2, p0, Ljp/co/sony/mc/camera/recorder/RecorderParameters$DataSpace;->transfer:I
 
-    .line 58
+    .line 69
     iput p3, p0, Ljp/co/sony/mc/camera/recorder/RecorderParameters$DataSpace;->range:I
 
     return-void
@@ -46,14 +46,14 @@
 .method public toString()Ljava/lang/String;
     .locals 4
 
-    .line 63
+    .line 74
     new-instance v0, Ljava/lang/StringBuilder;
 
     const-string v1, "["
 
     invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
-    .line 65
+    .line 76
     new-instance v1, Ljava/lang/StringBuilder;
 
     const-string/jumbo v2, "standard:"
@@ -78,7 +78,7 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 66
+    .line 77
     new-instance v1, Ljava/lang/StringBuilder;
 
     const-string/jumbo v3, "transfer:"
@@ -101,7 +101,7 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 67
+    .line 78
     new-instance v1, Ljava/lang/StringBuilder;
 
     const-string v2, "range:"
@@ -122,10 +122,10 @@
 
     const/16 p0, 0x5d
 
-    .line 68
+    .line 79
     invoke-virtual {v0, p0}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
 
-    .line 69
+    .line 80
     invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object p0

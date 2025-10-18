@@ -29,10 +29,10 @@
 .method constructor <init>(Ljp/co/sony/mc/camera/view/FragmentController;)V
     .locals 0
 
-    .line 7763
+    .line 8043
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 7764
+    .line 8044
     iput-object p1, p0, Ljp/co/sony/mc/camera/view/FragmentController$BokehResultListenerImpl;->mController:Ljp/co/sony/mc/camera/view/FragmentController;
 
     return-void
@@ -41,44 +41,48 @@
 
 # virtual methods
 .method public onBokehResultChanged(II)V
-    .locals 2
+    .locals 5
 
-    .line 7769
+    .line 8049
     sget-boolean v0, Ljp/co/sony/mc/camera/util/CamLog;->DEBUG:Z
+
+    const/4 v1, 0x0
+
+    const/4 v2, 0x1
 
     if-eqz v0, :cond_0
 
-    new-instance v0, Ljava/lang/StringBuilder;
+    new-array v0, v2, [Ljava/lang/String;
 
-    const-string v1, "invoke: status="
+    new-instance v3, Ljava/lang/StringBuilder;
 
-    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+    const-string v4, "invoke: status="
 
-    invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+    invoke-direct {v3, v4}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
-    move-result-object v0
+    invoke-virtual {v3, p1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
-    const-string v1, ", quality="
+    move-result-object v3
 
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    const-string v4, ", quality="
 
-    move-result-object v0
+    invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v0, p2}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+    move-result-object v3
 
-    move-result-object v0
+    invoke-virtual {v3, p2}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    move-result-object v3
 
-    move-result-object v0
+    invoke-virtual {v3}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    filled-new-array {v0}, [Ljava/lang/String;
+    move-result-object v3
 
-    move-result-object v0
+    aput-object v3, v0, v1
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
-    .line 7770
+    .line 8050
     :cond_0
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/FragmentController$BokehResultListenerImpl;->mController:Ljp/co/sony/mc/camera/view/FragmentController;
 
@@ -90,15 +94,10 @@
 
     if-ge p2, v0, :cond_1
 
-    const/4 p2, 0x1
-
-    goto :goto_0
+    move v1, v2
 
     :cond_1
-    const/4 p2, 0x0
-
-    :goto_0
-    invoke-interface {p0, p1, p2}, Ljp/co/sony/mc/camera/view/CameraEventListener;->onBokehResultChanged(IZ)V
+    invoke-interface {p0, p1, v1}, Ljp/co/sony/mc/camera/view/CameraEventListener;->onBokehResultChanged(IZ)V
 
     return-void
 .end method

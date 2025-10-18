@@ -34,12 +34,12 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/SourceDebugExtension;
-    value = "SMAP\nDerivedState.kt\nKotlin\n*S Kotlin\n*F\n+ 1 DerivedState.kt\nandroidx/compose/runtime/DerivedSnapshotState$ResultRecord\n+ 2 Snapshot.kt\nandroidx/compose/runtime/snapshots/SnapshotKt\n+ 3 ActualJvm.jvm.kt\nandroidx/compose/runtime/ActualJvm_jvmKt\n+ 4 DerivedState.kt\nandroidx/compose/runtime/SnapshotStateKt__DerivedStateKt\n+ 5 MutableVector.kt\nandroidx/compose/runtime/collection/MutableVector\n+ 6 IdentityArrayMap.kt\nandroidx/compose/runtime/collection/IdentityArrayMap\n+ 7 ArrayIntrinsics.kt\nkotlin/ArrayIntrinsicsKt\n*L\n1#1,385:1\n1722#2:386\n1722#2:388\n1722#2:390\n70#3:387\n70#3:389\n70#3:391\n357#4,2:392\n359#4,2:405\n362#4,2:412\n460#5,11:394\n153#6,5:407\n26#7:414\n*S KotlinDebug\n*F\n+ 1 DerivedState.kt\nandroidx/compose/runtime/DerivedSnapshotState$ResultRecord\n*L\n100#1:386\n107#1:388\n118#1:390\n100#1:387\n107#1:389\n118#1:391\n120#1:392,2\n120#1:405,2\n120#1:412,2\n120#1:394,11\n121#1:407,5\n150#1:414\n*E\n"
+    value = "SMAP\nDerivedState.kt\nKotlin\n*S Kotlin\n*F\n+ 1 DerivedState.kt\nandroidx/compose/runtime/DerivedSnapshotState$ResultRecord\n+ 2 Snapshot.kt\nandroidx/compose/runtime/snapshots/SnapshotKt\n+ 3 ActualJvm.jvm.kt\nandroidx/compose/runtime/ActualJvm_jvmKt\n+ 4 DerivedState.kt\nandroidx/compose/runtime/SnapshotStateKt__DerivedStateKt\n+ 5 MutableVector.kt\nandroidx/compose/runtime/collection/MutableVector\n+ 6 ObjectIntMap.kt\nandroidx/collection/ObjectIntMap\n+ 7 ScatterMap.kt\nandroidx/collection/ScatterMapKt\n*L\n1#1,396:1\n1714#2:397\n1714#2:399\n1714#2:401\n82#3:398\n82#3:400\n82#3:402\n368#4,2:403\n370#4,2:416\n373#4,2:444\n460#5,11:405\n401#6,4:418\n373#6,6:422\n383#6,3:429\n386#6,2:433\n406#6,2:435\n389#6,6:437\n408#6:443\n1810#7:428\n1672#7:432\n*S KotlinDebug\n*F\n+ 1 DerivedState.kt\nandroidx/compose/runtime/DerivedSnapshotState$ResultRecord\n*L\n110#1:397\n117#1:399\n128#1:401\n110#1:398\n117#1:400\n128#1:402\n130#1:403,2\n130#1:416,2\n130#1:444,2\n130#1:405,11\n131#1:418,4\n131#1:422,6\n131#1:429,3\n131#1:433,2\n131#1:435,2\n131#1:437,6\n131#1:443\n131#1:428\n131#1:432\n*E\n"
 .end annotation
 
 .annotation runtime Lkotlin/Metadata;
     d1 = {
-        "\u0000J\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0010\u0008\n\u0002\u0008\u0008\n\u0002\u0010\u0011\n\u0002\u0010\u0000\n\u0002\u0008\u0012\n\u0002\u0010\u0002\n\u0002\u0008\u0003\n\u0002\u0010\u000b\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0003\u0008\u0007\u0018\u0000 /*\u0004\u0008\u0001\u0010\u00012\u00020\u00022\u0008\u0012\u0004\u0012\u0002H\u00010\u0003:\u0001/B\u0005\u00a2\u0006\u0002\u0010\u0004J\u0010\u0010$\u001a\u00020%2\u0006\u0010&\u001a\u00020\u0002H\u0016J\u0008\u0010\'\u001a\u00020\u0002H\u0016J\u001a\u0010(\u001a\u00020)2\n\u0010*\u001a\u0006\u0012\u0002\u0008\u00030+2\u0006\u0010,\u001a\u00020-J\u001a\u0010.\u001a\u00020\u00082\n\u0010*\u001a\u0006\u0012\u0002\u0008\u00030+2\u0006\u0010,\u001a\u00020-R(\u0010\u0005\u001a\u0010\u0012\u0004\u0012\u00020\u0007\u0012\u0004\u0012\u00020\u0008\u0018\u00010\u0006X\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\u0008\t\u0010\n\"\u0004\u0008\u000b\u0010\u000cR\u0014\u0010\r\u001a\u00028\u00018VX\u0096\u0004\u00a2\u0006\u0006\u001a\u0004\u0008\u000e\u0010\u000fR\u001c\u0010\u0010\u001a\n\u0012\u0006\u0012\u0004\u0018\u00010\u00120\u00118VX\u0096\u0004\u00a2\u0006\u0006\u001a\u0004\u0008\u0013\u0010\u0014R\u001c\u0010\u0015\u001a\u0004\u0018\u00010\u0012X\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\u0008\u0016\u0010\u000f\"\u0004\u0008\u0017\u0010\u0018R\u001a\u0010\u0019\u001a\u00020\u0008X\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\u0008\u001a\u0010\u001b\"\u0004\u0008\u001c\u0010\u001dR\u001a\u0010\u001e\u001a\u00020\u0008X\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\u0008\u001f\u0010\u001b\"\u0004\u0008 \u0010\u001dR\u001a\u0010!\u001a\u00020\u0008X\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\u0008\"\u0010\u001b\"\u0004\u0008#\u0010\u001d\u00a8\u00060"
+        "\u0000J\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0005\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0005\n\u0002\u0010\u0000\n\u0002\u0008\u0004\n\u0002\u0010\u0008\n\u0002\u0008\u000b\n\u0002\u0010\u0002\n\u0002\u0008\u0003\n\u0002\u0010\u000b\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0003\u0008\u0007\u0018\u0000 +*\u0004\u0008\u0001\u0010\u00012\u00020\u00022\u0008\u0012\u0004\u0012\u0002H\u00010\u0003:\u0001+B\u0005\u00a2\u0006\u0002\u0010\u0004J\u0010\u0010 \u001a\u00020!2\u0006\u0010\"\u001a\u00020\u0002H\u0016J\u0008\u0010#\u001a\u00020\u0002H\u0016J\u001a\u0010$\u001a\u00020%2\n\u0010&\u001a\u0006\u0012\u0002\u0008\u00030\'2\u0006\u0010(\u001a\u00020)J\u001a\u0010*\u001a\u00020\u00152\n\u0010&\u001a\u0006\u0012\u0002\u0008\u00030\'2\u0006\u0010(\u001a\u00020)R\u0014\u0010\u0005\u001a\u00028\u00018VX\u0096\u0004\u00a2\u0006\u0006\u001a\u0004\u0008\u0006\u0010\u0007R \u0010\u0008\u001a\u0008\u0012\u0004\u0012\u00020\n0\tX\u0096\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\u0008\u000b\u0010\u000c\"\u0004\u0008\r\u0010\u000eR\u001c\u0010\u000f\u001a\u0004\u0018\u00010\u0010X\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\u0008\u0011\u0010\u0007\"\u0004\u0008\u0012\u0010\u0013R\u001a\u0010\u0014\u001a\u00020\u0015X\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\u0008\u0016\u0010\u0017\"\u0004\u0008\u0018\u0010\u0019R\u001a\u0010\u001a\u001a\u00020\u0015X\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\u0008\u001b\u0010\u0017\"\u0004\u0008\u001c\u0010\u0019R\u001a\u0010\u001d\u001a\u00020\u0015X\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\u0008\u001e\u0010\u0017\"\u0004\u0008\u001f\u0010\u0019\u00a8\u0006,"
     }
     d2 = {
         "Landroidx/compose/runtime/DerivedSnapshotState$ResultRecord;",
@@ -47,27 +47,23 @@
         "Landroidx/compose/runtime/snapshots/StateRecord;",
         "Landroidx/compose/runtime/DerivedState$Record;",
         "()V",
-        "_dependencies",
-        "Landroidx/compose/runtime/collection/IdentityArrayMap;",
-        "Landroidx/compose/runtime/snapshots/StateObject;",
-        "",
-        "get_dependencies",
-        "()Landroidx/compose/runtime/collection/IdentityArrayMap;",
-        "set_dependencies",
-        "(Landroidx/compose/runtime/collection/IdentityArrayMap;)V",
         "currentValue",
         "getCurrentValue",
         "()Ljava/lang/Object;",
         "dependencies",
-        "",
-        "",
+        "Landroidx/collection/ObjectIntMap;",
+        "Landroidx/compose/runtime/snapshots/StateObject;",
         "getDependencies",
-        "()[Ljava/lang/Object;",
+        "()Landroidx/collection/ObjectIntMap;",
+        "setDependencies",
+        "(Landroidx/collection/ObjectIntMap;)V",
         "result",
+        "",
         "getResult",
         "setResult",
         "(Ljava/lang/Object;)V",
         "resultHash",
+        "",
         "getResultHash",
         "()I",
         "setResultHash",
@@ -111,12 +107,11 @@
 
 
 # instance fields
-.field private _dependencies:Landroidx/compose/runtime/collection/IdentityArrayMap;
+.field private dependencies:Landroidx/collection/ObjectIntMap;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Landroidx/compose/runtime/collection/IdentityArrayMap<",
+            "Landroidx/collection/ObjectIntMap<",
             "Landroidx/compose/runtime/snapshots/StateObject;",
-            "Ljava/lang/Integer;",
             ">;"
         }
     .end annotation
@@ -147,7 +142,7 @@
 
     sput v0, Landroidx/compose/runtime/DerivedSnapshotState$ResultRecord;->$stable:I
 
-    .line 79
+    .line 89
     new-instance v0, Ljava/lang/Object;
 
     invoke-direct {v0}, Ljava/lang/Object;-><init>()V
@@ -160,10 +155,17 @@
 .method public constructor <init>()V
     .locals 1
 
-    .line 77
+    .line 87
     invoke-direct {p0}, Landroidx/compose/runtime/snapshots/StateRecord;-><init>()V
 
-    .line 86
+    .line 95
+    invoke-static {}, Landroidx/collection/ObjectIntMapKt;->emptyObjectIntMap()Landroidx/collection/ObjectIntMap;
+
+    move-result-object v0
+
+    iput-object v0, p0, Landroidx/compose/runtime/DerivedSnapshotState$ResultRecord;->dependencies:Landroidx/collection/ObjectIntMap;
+
+    .line 96
     sget-object v0, Landroidx/compose/runtime/DerivedSnapshotState$ResultRecord;->Unset:Ljava/lang/Object;
 
     iput-object v0, p0, Landroidx/compose/runtime/DerivedSnapshotState$ResultRecord;->result:Ljava/lang/Object;
@@ -174,7 +176,7 @@
 .method public static final synthetic access$getUnset$cp()Ljava/lang/Object;
     .locals 1
 
-    .line 77
+    .line 87
     sget-object v0, Landroidx/compose/runtime/DerivedSnapshotState$ResultRecord;->Unset:Ljava/lang/Object;
 
     return-object v0
@@ -185,24 +187,26 @@
 .method public assign(Landroidx/compose/runtime/snapshots/StateRecord;)V
     .locals 1
 
-    const-string/jumbo v0, "value"
+    .line 101
+    const-string v0, "null cannot be cast to non-null type androidx.compose.runtime.DerivedSnapshotState.ResultRecord<T of androidx.compose.runtime.DerivedSnapshotState.ResultRecord>"
 
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 91
     check-cast p1, Landroidx/compose/runtime/DerivedSnapshotState$ResultRecord;
 
-    .line 92
-    iget-object v0, p1, Landroidx/compose/runtime/DerivedSnapshotState$ResultRecord;->_dependencies:Landroidx/compose/runtime/collection/IdentityArrayMap;
+    .line 102
+    invoke-virtual {p1}, Landroidx/compose/runtime/DerivedSnapshotState$ResultRecord;->getDependencies()Landroidx/collection/ObjectIntMap;
 
-    iput-object v0, p0, Landroidx/compose/runtime/DerivedSnapshotState$ResultRecord;->_dependencies:Landroidx/compose/runtime/collection/IdentityArrayMap;
+    move-result-object v0
 
-    .line 93
+    invoke-virtual {p0, v0}, Landroidx/compose/runtime/DerivedSnapshotState$ResultRecord;->setDependencies(Landroidx/collection/ObjectIntMap;)V
+
+    .line 103
     iget-object v0, p1, Landroidx/compose/runtime/DerivedSnapshotState$ResultRecord;->result:Ljava/lang/Object;
 
     iput-object v0, p0, Landroidx/compose/runtime/DerivedSnapshotState$ResultRecord;->result:Ljava/lang/Object;
 
-    .line 94
+    .line 104
     iget p1, p1, Landroidx/compose/runtime/DerivedSnapshotState$ResultRecord;->resultHash:I
 
     iput p1, p0, Landroidx/compose/runtime/DerivedSnapshotState$ResultRecord;->resultHash:I
@@ -213,7 +217,7 @@
 .method public create()Landroidx/compose/runtime/snapshots/StateRecord;
     .locals 0
 
-    .line 97
+    .line 107
     new-instance p0, Landroidx/compose/runtime/DerivedSnapshotState$ResultRecord;
 
     invoke-direct {p0}, Landroidx/compose/runtime/DerivedSnapshotState$ResultRecord;-><init>()V
@@ -231,40 +235,33 @@
         }
     .end annotation
 
-    .line 147
+    .line 157
     iget-object p0, p0, Landroidx/compose/runtime/DerivedSnapshotState$ResultRecord;->result:Ljava/lang/Object;
 
     return-object p0
 .end method
 
-.method public getDependencies()[Ljava/lang/Object;
+.method public getDependencies()Landroidx/collection/ObjectIntMap;
     .locals 0
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()",
+            "Landroidx/collection/ObjectIntMap<",
+            "Landroidx/compose/runtime/snapshots/StateObject;",
+            ">;"
+        }
+    .end annotation
 
-    .line 150
-    iget-object p0, p0, Landroidx/compose/runtime/DerivedSnapshotState$ResultRecord;->_dependencies:Landroidx/compose/runtime/collection/IdentityArrayMap;
+    .line 95
+    iget-object p0, p0, Landroidx/compose/runtime/DerivedSnapshotState$ResultRecord;->dependencies:Landroidx/collection/ObjectIntMap;
 
-    if-eqz p0, :cond_0
-
-    invoke-virtual {p0}, Landroidx/compose/runtime/collection/IdentityArrayMap;->getKeys()[Ljava/lang/Object;
-
-    move-result-object p0
-
-    if-nez p0, :cond_1
-
-    :cond_0
-    const/4 p0, 0x0
-
-    .line 414
-    new-array p0, p0, [Ljava/lang/Object;
-
-    :cond_1
     return-object p0
 .end method
 
 .method public final getResult()Ljava/lang/Object;
     .locals 0
 
-    .line 86
+    .line 96
     iget-object p0, p0, Landroidx/compose/runtime/DerivedSnapshotState$ResultRecord;->result:Ljava/lang/Object;
 
     return-object p0
@@ -273,7 +270,7 @@
 .method public final getResultHash()I
     .locals 0
 
-    .line 87
+    .line 97
     iget p0, p0, Landroidx/compose/runtime/DerivedSnapshotState$ResultRecord;->resultHash:I
 
     return p0
@@ -282,7 +279,7 @@
 .method public final getValidSnapshotId()I
     .locals 0
 
-    .line 82
+    .line 92
     iget p0, p0, Landroidx/compose/runtime/DerivedSnapshotState$ResultRecord;->validSnapshotId:I
 
     return p0
@@ -291,28 +288,10 @@
 .method public final getValidSnapshotWriteCount()I
     .locals 0
 
-    .line 83
+    .line 93
     iget p0, p0, Landroidx/compose/runtime/DerivedSnapshotState$ResultRecord;->validSnapshotWriteCount:I
 
     return p0
-.end method
-
-.method public final get_dependencies()Landroidx/compose/runtime/collection/IdentityArrayMap;
-    .locals 0
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "()",
-            "Landroidx/compose/runtime/collection/IdentityArrayMap<",
-            "Landroidx/compose/runtime/snapshots/StateObject;",
-            "Ljava/lang/Integer;",
-            ">;"
-        }
-    .end annotation
-
-    .line 85
-    iget-object p0, p0, Landroidx/compose/runtime/DerivedSnapshotState$ResultRecord;->_dependencies:Landroidx/compose/runtime/collection/IdentityArrayMap;
-
-    return-object p0
 .end method
 
 .method public final isValid(Landroidx/compose/runtime/DerivedState;Landroidx/compose/runtime/snapshots/Snapshot;)Z
@@ -327,23 +306,15 @@
         }
     .end annotation
 
-    const-string v0, "derivedState"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string/jumbo v0, "snapshot"
-
-    invoke-static {p2, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 386
+    .line 397
     invoke-static {}, Landroidx/compose/runtime/snapshots/SnapshotKt;->getLock()Ljava/lang/Object;
 
     move-result-object v0
 
-    .line 387
+    .line 398
     monitor-enter v0
 
-    .line 101
+    .line 111
     :try_start_0
     iget v1, p0, Landroidx/compose/runtime/DerivedSnapshotState$ResultRecord;->validSnapshotId:I
 
@@ -378,11 +349,11 @@
     :goto_0
     move v1, v4
 
-    .line 387
+    .line 398
     :goto_1
     monitor-exit v0
 
-    .line 103
+    .line 113
     iget-object v0, p0, Landroidx/compose/runtime/DerivedSnapshotState$ResultRecord;->result:Ljava/lang/Object;
 
     sget-object v2, Landroidx/compose/runtime/DerivedSnapshotState$ResultRecord;->Unset:Ljava/lang/Object;
@@ -391,7 +362,7 @@
 
     if-eqz v1, :cond_2
 
-    .line 104
+    .line 114
     iget v0, p0, Landroidx/compose/runtime/DerivedSnapshotState$ResultRecord;->resultHash:I
 
     invoke-virtual {p0, p1, p2}, Landroidx/compose/runtime/DerivedSnapshotState$ResultRecord;->readableHash(Landroidx/compose/runtime/DerivedState;Landroidx/compose/runtime/snapshots/Snapshot;)I
@@ -408,15 +379,15 @@
 
     if-eqz v1, :cond_4
 
-    .line 388
+    .line 399
     invoke-static {}, Landroidx/compose/runtime/snapshots/SnapshotKt;->getLock()Ljava/lang/Object;
 
     move-result-object p1
 
-    .line 389
+    .line 400
     monitor-enter p1
 
-    .line 108
+    .line 118
     :try_start_1
     invoke-virtual {p2}, Landroidx/compose/runtime/snapshots/Snapshot;->getId()I
 
@@ -424,19 +395,19 @@
 
     iput v0, p0, Landroidx/compose/runtime/DerivedSnapshotState$ResultRecord;->validSnapshotId:I
 
-    .line 109
+    .line 119
     invoke-virtual {p2}, Landroidx/compose/runtime/snapshots/Snapshot;->getWriteCount$runtime_release()I
 
     move-result p2
 
     iput p2, p0, Landroidx/compose/runtime/DerivedSnapshotState$ResultRecord;->validSnapshotWriteCount:I
 
-    .line 110
+    .line 120
     sget-object p0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
-    .line 389
+    .line 400
     monitor-exit p1
 
     goto :goto_2
@@ -455,14 +426,14 @@
     :catchall_1
     move-exception p0
 
-    .line 387
+    .line 398
     monitor-exit v0
 
     throw p0
 .end method
 
 .method public final readableHash(Landroidx/compose/runtime/DerivedState;Landroidx/compose/runtime/snapshots/Snapshot;)I
-    .locals 8
+    .locals 20
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -473,245 +444,350 @@
         }
     .end annotation
 
-    const-string v0, "derivedState"
+    move-object/from16 v1, p1
 
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+    move-object/from16 v0, p2
 
-    const-string/jumbo v0, "snapshot"
-
-    invoke-static {p2, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 390
+    .line 401
     invoke-static {}, Landroidx/compose/runtime/snapshots/SnapshotKt;->getLock()Ljava/lang/Object;
 
-    move-result-object v0
+    move-result-object v2
 
-    .line 391
-    monitor-enter v0
+    .line 402
+    monitor-enter v2
 
-    .line 118
+    .line 128
     :try_start_0
-    iget-object p0, p0, Landroidx/compose/runtime/DerivedSnapshotState$ResultRecord;->_dependencies:Landroidx/compose/runtime/collection/IdentityArrayMap;
+    invoke-virtual/range {p0 .. p0}, Landroidx/compose/runtime/DerivedSnapshotState$ResultRecord;->getDependencies()Landroidx/collection/ObjectIntMap;
+
+    move-result-object v3
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_1
 
-    .line 391
-    monitor-exit v0
+    .line 402
+    monitor-exit v2
 
-    const/4 v0, 0x7
+    .line 129
+    invoke-virtual {v3}, Landroidx/collection/ObjectIntMap;->isNotEmpty()Z
 
-    if-eqz p0, :cond_7
+    move-result v2
 
-    .line 392
+    const/4 v4, 0x7
+
+    if-eqz v2, :cond_b
+
+    .line 403
     invoke-static {}, Landroidx/compose/runtime/SnapshotStateKt;->derivedStateObservers()Landroidx/compose/runtime/collection/MutableVector;
 
-    move-result-object v1
+    move-result-object v2
 
-    .line 395
-    invoke-virtual {v1}, Landroidx/compose/runtime/collection/MutableVector;->getSize()I
+    .line 406
+    invoke-virtual {v2}, Landroidx/compose/runtime/collection/MutableVector;->getSize()I
 
-    move-result v2
+    move-result v5
 
-    const/4 v3, 0x0
+    const/4 v7, 0x1
 
-    const/4 v4, 0x1
-
-    if-lez v2, :cond_1
-
-    .line 398
-    invoke-virtual {v1}, Landroidx/compose/runtime/collection/MutableVector;->getContent()[Ljava/lang/Object;
-
-    move-result-object v5
-
-    move v6, v3
-
-    .line 400
-    :cond_0
-    aget-object v7, v5, v6
-
-    check-cast v7, Landroidx/compose/runtime/DerivedStateObserver;
-
-    .line 393
-    invoke-interface {v7, p1}, Landroidx/compose/runtime/DerivedStateObserver;->start(Landroidx/compose/runtime/DerivedState;)V
-
-    add-int/2addr v6, v4
-
-    if-lt v6, v2, :cond_0
-
-    .line 407
-    :cond_1
-    :try_start_1
-    invoke-virtual {p0}, Landroidx/compose/runtime/collection/IdentityArrayMap;->getSize()I
-
-    move-result v2
-
-    move v5, v3
-
-    :goto_0
-    if-ge v5, v2, :cond_4
+    if-lez v5, :cond_1
 
     .line 409
-    invoke-virtual {p0}, Landroidx/compose/runtime/collection/IdentityArrayMap;->getKeys()[Ljava/lang/Object;
+    invoke-virtual {v2}, Landroidx/compose/runtime/collection/MutableVector;->getContent()[Ljava/lang/Object;
+
+    move-result-object v8
+
+    const/4 v9, 0x0
+
+    .line 411
+    :cond_0
+    aget-object v10, v8, v9
+
+    check-cast v10, Landroidx/compose/runtime/DerivedStateObserver;
+
+    .line 404
+    invoke-interface {v10, v1}, Landroidx/compose/runtime/DerivedStateObserver;->start(Landroidx/compose/runtime/DerivedState;)V
+
+    add-int/2addr v9, v7
+
+    if-lt v9, v5, :cond_0
+
+    .line 418
+    :cond_1
+    :try_start_1
+    iget-object v5, v3, Landroidx/collection/ObjectIntMap;->keys:[Ljava/lang/Object;
+
+    .line 419
+    iget-object v8, v3, Landroidx/collection/ObjectIntMap;->values:[I
+
+    .line 422
+    iget-object v3, v3, Landroidx/collection/ObjectIntMap;->metadata:[J
+
+    .line 423
+    array-length v9, v3
+
+    add-int/lit8 v9, v9, -0x2
+
+    if-ltz v9, :cond_8
+
+    move v11, v4
+
+    const/4 v10, 0x0
+
+    .line 426
+    :goto_0
+    aget-wide v12, v3, v10
+
+    not-long v14, v12
+
+    shl-long/2addr v14, v4
+
+    and-long/2addr v14, v12
+
+    const-wide v16, -0x7f7f7f7f7f7f7f80L    # -2.937446524422997E-306
+
+    and-long v14, v14, v16
+
+    cmp-long v14, v14, v16
+
+    if-eqz v14, :cond_7
+
+    sub-int v14, v10, v9
+
+    not-int v14, v14
+
+    ushr-int/lit8 v14, v14, 0x1f
+
+    const/16 v15, 0x8
+
+    rsub-int/lit8 v14, v14, 0x8
+
+    const/4 v4, 0x0
+
+    :goto_1
+    if-ge v4, v14, :cond_5
+
+    const-wide/16 v16, 0xff
+
+    and-long v16, v12, v16
+
+    const-wide/16 v18, 0x80
+
+    cmp-long v16, v16, v18
+
+    if-gez v16, :cond_4
+
+    shl-int/lit8 v16, v10, 0x3
+
+    add-int v16, v16, v4
+
+    .line 435
+    aget-object v17, v5, v16
+
+    aget v6, v8, v16
+
+    move-object/from16 v15, v17
+
+    check-cast v15, Landroidx/compose/runtime/snapshots/StateObject;
+
+    if-eq v6, v7, :cond_2
+
+    goto :goto_3
+
+    .line 137
+    :cond_2
+    instance-of v6, v15, Landroidx/compose/runtime/DerivedSnapshotState;
+
+    if-eqz v6, :cond_3
+
+    .line 142
+    check-cast v15, Landroidx/compose/runtime/DerivedSnapshotState;
+
+    invoke-virtual {v15, v0}, Landroidx/compose/runtime/DerivedSnapshotState;->current(Landroidx/compose/runtime/snapshots/Snapshot;)Landroidx/compose/runtime/snapshots/StateRecord;
 
     move-result-object v6
-
-    aget-object v6, v6, v5
-
-    const-string v7, "null cannot be cast to non-null type Key of androidx.compose.runtime.collection.IdentityArrayMap"
-
-    invoke-static {v6, v7}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;Ljava/lang/String;)V
-
-    invoke-virtual {p0}, Landroidx/compose/runtime/collection/IdentityArrayMap;->getValues()[Ljava/lang/Object;
-
-    move-result-object v7
-
-    aget-object v7, v7, v5
-
-    check-cast v7, Ljava/lang/Number;
-
-    invoke-virtual {v7}, Ljava/lang/Number;->intValue()I
-
-    move-result v7
-
-    check-cast v6, Landroidx/compose/runtime/snapshots/StateObject;
-
-    if-eq v7, v4, :cond_2
 
     goto :goto_2
 
-    .line 127
-    :cond_2
-    instance-of v7, v6, Landroidx/compose/runtime/DerivedSnapshotState;
-
-    if-eqz v7, :cond_3
-
-    .line 132
-    check-cast v6, Landroidx/compose/runtime/DerivedSnapshotState;
-
-    invoke-virtual {v6, p2}, Landroidx/compose/runtime/DerivedSnapshotState;->current(Landroidx/compose/runtime/snapshots/Snapshot;)Landroidx/compose/runtime/snapshots/StateRecord;
-
-    move-result-object v6
-
-    goto :goto_1
-
-    .line 134
+    .line 144
     :cond_3
-    invoke-interface {v6}, Landroidx/compose/runtime/snapshots/StateObject;->getFirstStateRecord()Landroidx/compose/runtime/snapshots/StateRecord;
+    invoke-interface {v15}, Landroidx/compose/runtime/snapshots/StateObject;->getFirstStateRecord()Landroidx/compose/runtime/snapshots/StateRecord;
 
     move-result-object v6
 
-    invoke-static {v6, p2}, Landroidx/compose/runtime/snapshots/SnapshotKt;->current(Landroidx/compose/runtime/snapshots/StateRecord;Landroidx/compose/runtime/snapshots/Snapshot;)Landroidx/compose/runtime/snapshots/StateRecord;
+    invoke-static {v6, v0}, Landroidx/compose/runtime/snapshots/SnapshotKt;->current(Landroidx/compose/runtime/snapshots/StateRecord;Landroidx/compose/runtime/snapshots/Snapshot;)Landroidx/compose/runtime/snapshots/StateRecord;
 
     move-result-object v6
 
-    :goto_1
-    mul-int/lit8 v0, v0, 0x1f
+    :goto_2
+    mul-int/lit8 v11, v11, 0x1f
 
-    .line 137
+    .line 147
     invoke-static {v6}, Landroidx/compose/runtime/ActualJvm_jvmKt;->identityHashCode(Ljava/lang/Object;)I
 
-    move-result v7
+    move-result v15
 
-    add-int/2addr v0, v7
+    add-int/2addr v11, v15
 
-    mul-int/lit8 v0, v0, 0x1f
+    mul-int/lit8 v11, v11, 0x1f
 
-    .line 138
+    .line 148
     invoke-virtual {v6}, Landroidx/compose/runtime/snapshots/StateRecord;->getSnapshotId$runtime_release()I
 
     move-result v6
 
-    add-int/2addr v0, v6
+    add-int/2addr v11, v6
 
-    :goto_2
-    add-int/lit8 v5, v5, 0x1
-
-    goto :goto_0
-
-    .line 140
-    :cond_4
-    sget-object p0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
-    :try_end_1
-    .catchall {:try_start_1 .. :try_end_1} :catchall_0
-
-    .line 395
-    invoke-virtual {v1}, Landroidx/compose/runtime/collection/MutableVector;->getSize()I
-
-    move-result p0
-
-    if-lez p0, :cond_7
-
-    .line 398
-    invoke-virtual {v1}, Landroidx/compose/runtime/collection/MutableVector;->getContent()[Ljava/lang/Object;
-
-    move-result-object p2
-
-    .line 400
-    :cond_5
-    aget-object v1, p2, v3
-
-    check-cast v1, Landroidx/compose/runtime/DerivedStateObserver;
-
-    .line 412
-    invoke-interface {v1, p1}, Landroidx/compose/runtime/DerivedStateObserver;->done(Landroidx/compose/runtime/DerivedState;)V
-
-    add-int/2addr v3, v4
-
-    if-lt v3, p0, :cond_5
+    :goto_3
+    const/16 v6, 0x8
 
     goto :goto_4
 
-    :catchall_0
-    move-exception p0
+    :cond_4
+    move v6, v15
 
-    .line 395
-    invoke-virtual {v1}, Landroidx/compose/runtime/collection/MutableVector;->getSize()I
+    :goto_4
+    shr-long/2addr v12, v6
 
-    move-result p2
+    add-int/lit8 v4, v4, 0x1
 
-    if-lez p2, :cond_6
+    move v15, v6
 
-    .line 398
-    invoke-virtual {v1}, Landroidx/compose/runtime/collection/MutableVector;->getContent()[Ljava/lang/Object;
+    goto :goto_1
 
-    move-result-object v0
+    :cond_5
+    move v6, v15
 
-    .line 400
-    :goto_3
-    aget-object v1, v0, v3
+    if-ne v14, v6, :cond_6
 
-    check-cast v1, Landroidx/compose/runtime/DerivedStateObserver;
+    goto :goto_5
 
-    .line 412
-    invoke-interface {v1, p1}, Landroidx/compose/runtime/DerivedStateObserver;->done(Landroidx/compose/runtime/DerivedState;)V
-
-    add-int/2addr v3, v4
-
-    if-ge v3, p2, :cond_6
-
-    goto :goto_3
-
-    .line 404
     :cond_6
-    throw p0
+    move v4, v11
+
+    goto :goto_6
 
     :cond_7
-    :goto_4
-    return v0
+    :goto_5
+    if-eq v10, v9, :cond_6
+
+    add-int/lit8 v10, v10, 0x1
+
+    const/4 v4, 0x7
+
+    goto :goto_0
+
+    :cond_8
+    const/4 v4, 0x7
+
+    .line 150
+    :goto_6
+    sget-object v0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
+    :try_end_1
+    .catchall {:try_start_1 .. :try_end_1} :catchall_0
+
+    .line 406
+    invoke-virtual {v2}, Landroidx/compose/runtime/collection/MutableVector;->getSize()I
+
+    move-result v0
+
+    if-lez v0, :cond_c
+
+    .line 409
+    invoke-virtual {v2}, Landroidx/compose/runtime/collection/MutableVector;->getContent()[Ljava/lang/Object;
+
+    move-result-object v2
+
+    const/4 v6, 0x0
+
+    .line 411
+    :cond_9
+    aget-object v3, v2, v6
+
+    check-cast v3, Landroidx/compose/runtime/DerivedStateObserver;
+
+    .line 444
+    invoke-interface {v3, v1}, Landroidx/compose/runtime/DerivedStateObserver;->done(Landroidx/compose/runtime/DerivedState;)V
+
+    add-int/2addr v6, v7
+
+    if-lt v6, v0, :cond_9
+
+    goto :goto_8
+
+    :catchall_0
+    move-exception v0
+
+    .line 406
+    invoke-virtual {v2}, Landroidx/compose/runtime/collection/MutableVector;->getSize()I
+
+    move-result v3
+
+    if-lez v3, :cond_a
+
+    .line 409
+    invoke-virtual {v2}, Landroidx/compose/runtime/collection/MutableVector;->getContent()[Ljava/lang/Object;
+
+    move-result-object v2
+
+    const/4 v6, 0x0
+
+    .line 411
+    :goto_7
+    aget-object v4, v2, v6
+
+    check-cast v4, Landroidx/compose/runtime/DerivedStateObserver;
+
+    .line 444
+    invoke-interface {v4, v1}, Landroidx/compose/runtime/DerivedStateObserver;->done(Landroidx/compose/runtime/DerivedState;)V
+
+    add-int/2addr v6, v7
+
+    if-ge v6, v3, :cond_a
+
+    goto :goto_7
+
+    .line 415
+    :cond_a
+    throw v0
+
+    :cond_b
+    const/4 v4, 0x7
+
+    :cond_c
+    :goto_8
+    return v4
 
     :catchall_1
-    move-exception p0
+    move-exception v0
 
-    .line 391
-    monitor-exit v0
+    move-object v1, v0
 
-    throw p0
+    .line 402
+    monitor-exit v2
+
+    throw v1
+.end method
+
+.method public setDependencies(Landroidx/collection/ObjectIntMap;)V
+    .locals 0
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Landroidx/collection/ObjectIntMap<",
+            "Landroidx/compose/runtime/snapshots/StateObject;",
+            ">;)V"
+        }
+    .end annotation
+
+    .line 95
+    iput-object p1, p0, Landroidx/compose/runtime/DerivedSnapshotState$ResultRecord;->dependencies:Landroidx/collection/ObjectIntMap;
+
+    return-void
 .end method
 
 .method public final setResult(Ljava/lang/Object;)V
     .locals 0
 
-    .line 86
+    .line 96
     iput-object p1, p0, Landroidx/compose/runtime/DerivedSnapshotState$ResultRecord;->result:Ljava/lang/Object;
 
     return-void
@@ -720,7 +796,7 @@
 .method public final setResultHash(I)V
     .locals 0
 
-    .line 87
+    .line 97
     iput p1, p0, Landroidx/compose/runtime/DerivedSnapshotState$ResultRecord;->resultHash:I
 
     return-void
@@ -729,7 +805,7 @@
 .method public final setValidSnapshotId(I)V
     .locals 0
 
-    .line 82
+    .line 92
     iput p1, p0, Landroidx/compose/runtime/DerivedSnapshotState$ResultRecord;->validSnapshotId:I
 
     return-void
@@ -738,26 +814,8 @@
 .method public final setValidSnapshotWriteCount(I)V
     .locals 0
 
-    .line 83
+    .line 93
     iput p1, p0, Landroidx/compose/runtime/DerivedSnapshotState$ResultRecord;->validSnapshotWriteCount:I
-
-    return-void
-.end method
-
-.method public final set_dependencies(Landroidx/compose/runtime/collection/IdentityArrayMap;)V
-    .locals 0
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(",
-            "Landroidx/compose/runtime/collection/IdentityArrayMap<",
-            "Landroidx/compose/runtime/snapshots/StateObject;",
-            "Ljava/lang/Integer;",
-            ">;)V"
-        }
-    .end annotation
-
-    .line 85
-    iput-object p1, p0, Landroidx/compose/runtime/DerivedSnapshotState$ResultRecord;->_dependencies:Landroidx/compose/runtime/collection/IdentityArrayMap;
 
     return-void
 .end method

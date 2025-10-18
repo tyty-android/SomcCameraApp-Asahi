@@ -25,7 +25,7 @@
 .method constructor <init>(Ljp/co/sony/mc/camera/view/FragmentController$SurfaceSwitchDoneTask;)V
     .locals 0
 
-    .line 5680
+    .line 5862
     iput-object p1, p0, Ljp/co/sony/mc/camera/view/FragmentController$SurfaceSwitchDoneTask$1;->this$1:Ljp/co/sony/mc/camera/view/FragmentController$SurfaceSwitchDoneTask;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -38,14 +38,14 @@
 .method public run()V
     .locals 1
 
-    .line 5683
+    .line 5865
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/FragmentController$SurfaceSwitchDoneTask$1;->this$1:Ljp/co/sony/mc/camera/view/FragmentController$SurfaceSwitchDoneTask;
 
     iget-object v0, v0, Ljp/co/sony/mc/camera/view/FragmentController$SurfaceSwitchDoneTask;->this$0:Ljp/co/sony/mc/camera/view/FragmentController;
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/view/FragmentController;->-$$Nest$mswitchFaceDetection(Ljp/co/sony/mc/camera/view/FragmentController;)V
 
-    .line 5684
+    .line 5866
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/FragmentController$SurfaceSwitchDoneTask$1;->this$1:Ljp/co/sony/mc/camera/view/FragmentController$SurfaceSwitchDoneTask;
 
     invoke-static {p0}, Ljp/co/sony/mc/camera/view/FragmentController$SurfaceSwitchDoneTask;->-$$Nest$mrestoreViews(Ljp/co/sony/mc/camera/view/FragmentController$SurfaceSwitchDoneTask;)V

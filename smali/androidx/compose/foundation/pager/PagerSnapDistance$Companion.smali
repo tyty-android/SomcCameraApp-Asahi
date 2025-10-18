@@ -57,7 +57,7 @@
 .method private constructor <init>()V
     .locals 0
 
-    .line 613
+    .line 532
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -70,7 +70,7 @@
 
     if-ltz p1, :cond_0
 
-    .line 622
+    .line 541
     new-instance p0, Landroidx/compose/foundation/pager/PagerSnapDistanceMaxPages;
 
     invoke-direct {p0, p1}, Landroidx/compose/foundation/pager/PagerSnapDistanceMaxPages;-><init>(I)V
@@ -79,7 +79,7 @@
 
     return-object p0
 
-    .line 620
+    .line 539
     :cond_0
     new-instance p0, Ljava/lang/StringBuilder;
 
@@ -101,7 +101,7 @@
 
     move-result-object p0
 
-    .line 619
+    .line 538
     new-instance p1, Ljava/lang/IllegalArgumentException;
 
     invoke-virtual {p0}, Ljava/lang/Object;->toString()Ljava/lang/String;

@@ -32,7 +32,7 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/SourceDebugExtension;
-    value = "SMAP\nRecomposer.kt\nKotlin\n*S Kotlin\n*F\n+ 1 Recomposer.kt\nandroidx/compose/runtime/Recomposer$runRecomposeConcurrentlyAndApplyChanges$2\n+ 2 Recomposer.kt\nandroidx/compose/runtime/Recomposer\n+ 3 ListUtils.kt\nandroidx/compose/runtime/snapshots/ListUtilsKt\n+ 4 ActualJvm.jvm.kt\nandroidx/compose/runtime/ActualJvm_jvmKt\n*L\n1#1,1502:1\n467#2,3:1503\n470#2,2:1510\n472#2,3:1513\n475#2,5:1517\n33#3,4:1506\n38#3:1512\n70#4:1516\n70#4:1522\n*S KotlinDebug\n*F\n+ 1 Recomposer.kt\nandroidx/compose/runtime/Recomposer$runRecomposeConcurrentlyAndApplyChanges$2\n*L\n794#1:1503,3\n794#1:1510,2\n794#1:1513,3\n794#1:1517,5\n794#1:1506,4\n794#1:1512\n795#1:1516\n807#1:1522\n*E\n"
+    value = "SMAP\nRecomposer.kt\nKotlin\n*S Kotlin\n*F\n+ 1 Recomposer.kt\nandroidx/compose/runtime/Recomposer$runRecomposeConcurrentlyAndApplyChanges$2\n+ 2 Recomposer.kt\nandroidx/compose/runtime/Recomposer\n+ 3 ListUtils.kt\nandroidx/compose/runtime/snapshots/ListUtilsKt\n+ 4 ActualJvm.jvm.kt\nandroidx/compose/runtime/ActualJvm_jvmKt\n*L\n1#1,1564:1\n477#2,3:1565\n480#2,2:1572\n482#2,3:1575\n485#2,5:1579\n33#3,4:1568\n38#3:1574\n82#4:1578\n82#4:1584\n*S KotlinDebug\n*F\n+ 1 Recomposer.kt\nandroidx/compose/runtime/Recomposer$runRecomposeConcurrentlyAndApplyChanges$2\n*L\n843#1:1565,3\n843#1:1572,2\n843#1:1575,3\n843#1:1579,5\n843#1:1568,4\n843#1:1574\n844#1:1578\n856#1:1584\n*E\n"
 .end annotation
 
 .annotation runtime Lkotlin/Metadata;
@@ -65,9 +65,9 @@
         0x1
     }
     l = {
-        0x317,
-        0x32b,
-        0x32c
+        0x348,
+        0x35c,
+        0x35d
     }
     m = "invokeSuspend"
     n = {
@@ -188,7 +188,7 @@
 
     move-result-object v1
 
-    .line 780
+    .line 829
     iget v2, v0, Landroidx/compose/runtime/Recomposer$runRecomposeConcurrentlyAndApplyChanges$2;->label:I
 
     const/4 v3, 0x3
@@ -262,7 +262,7 @@
 
     check-cast v2, Landroidx/compose/runtime/MonotonicFrameClock;
 
-    .line 781
+    .line 830
     iget-object v9, v0, Landroidx/compose/runtime/Recomposer$runRecomposeConcurrentlyAndApplyChanges$2;->$recomposeCoroutineContext:Lkotlin/coroutines/CoroutineContext;
 
     sget-object v10, Lkotlinx/coroutines/Job;->Key:Lkotlinx/coroutines/Job$Key;
@@ -287,7 +287,7 @@
 
     if-eqz v9, :cond_f
 
-    .line 786
+    .line 835
     invoke-interface {v8}, Lkotlinx/coroutines/CoroutineScope;->getCoroutineContext()Lkotlin/coroutines/CoroutineContext;
 
     move-result-object v9
@@ -316,17 +316,17 @@
 
     move-result-object v9
 
-    .line 785
+    .line 834
     invoke-static {v9}, Lkotlinx/coroutines/CoroutineScopeKt;->CoroutineScope(Lkotlin/coroutines/CoroutineContext;)Lkotlinx/coroutines/CoroutineScope;
 
     move-result-object v14
 
-    .line 788
+    .line 837
     new-instance v15, Landroidx/compose/runtime/ProduceFrameSignal;
 
     invoke-direct {v15}, Landroidx/compose/runtime/ProduceFrameSignal;-><init>()V
 
-    .line 789
+    .line 838
     new-instance v9, Landroidx/compose/runtime/Recomposer$runRecomposeConcurrentlyAndApplyChanges$2$frameLoop$1;
 
     iget-object v10, v0, Landroidx/compose/runtime/Recomposer$runRecomposeConcurrentlyAndApplyChanges$2;->this$0:Landroidx/compose/runtime/Recomposer;
@@ -353,7 +353,7 @@
 
     move-object v8, v15
 
-    .line 790
+    .line 839
     :goto_1
     iget-object v10, v0, Landroidx/compose/runtime/Recomposer$runRecomposeConcurrentlyAndApplyChanges$2;->this$0:Landroidx/compose/runtime/Recomposer;
 
@@ -363,7 +363,7 @@
 
     if-eqz v10, :cond_c
 
-    .line 791
+    .line 840
     iget-object v10, v0, Landroidx/compose/runtime/Recomposer$runRecomposeConcurrentlyAndApplyChanges$2;->this$0:Landroidx/compose/runtime/Recomposer;
 
     move-object v11, v0
@@ -386,28 +386,28 @@
 
     return-object v1
 
-    .line 794
+    .line 843
     :goto_2
     iget-object v14, v0, Landroidx/compose/runtime/Recomposer$runRecomposeConcurrentlyAndApplyChanges$2;->this$0:Landroidx/compose/runtime/Recomposer;
 
-    .line 1503
+    .line 1565
     invoke-static {v14}, Landroidx/compose/runtime/Recomposer;->access$getSnapshotInvalidations$p(Landroidx/compose/runtime/Recomposer;)Landroidx/compose/runtime/collection/IdentityArraySet;
 
     move-result-object v9
 
-    .line 1504
+    .line 1566
     invoke-virtual {v9}, Landroidx/compose/runtime/collection/IdentityArraySet;->isNotEmpty()Z
 
     move-result v10
 
     if-eqz v10, :cond_7
 
-    .line 1505
-    invoke-static {v14}, Landroidx/compose/runtime/Recomposer;->access$getKnownCompositions$p(Landroidx/compose/runtime/Recomposer;)Ljava/util/List;
+    .line 1567
+    invoke-static {v14}, Landroidx/compose/runtime/Recomposer;->access$getKnownCompositions(Landroidx/compose/runtime/Recomposer;)Ljava/util/List;
 
     move-result-object v10
 
-    .line 1507
+    .line 1569
     invoke-interface {v10}, Ljava/util/List;->size()I
 
     move-result v11
@@ -417,15 +417,15 @@
     :goto_3
     if-ge v12, v11, :cond_6
 
-    .line 1508
+    .line 1570
     invoke-interface {v10, v12}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
     move-result-object v13
 
-    .line 1509
+    .line 1571
     check-cast v13, Landroidx/compose/runtime/ControlledComposition;
 
-    .line 1510
+    .line 1572
     move-object v5, v9
 
     check-cast v5, Ljava/util/Set;
@@ -436,7 +436,7 @@
 
     goto :goto_3
 
-    .line 1513
+    .line 1575
     :cond_6
     new-instance v5, Landroidx/compose/runtime/collection/IdentityArraySet;
 
@@ -444,13 +444,13 @@
 
     invoke-static {v14, v5}, Landroidx/compose/runtime/Recomposer;->access$setSnapshotInvalidations$p(Landroidx/compose/runtime/Recomposer;Landroidx/compose/runtime/collection/IdentityArraySet;)V
 
-    .line 1515
+    .line 1577
     :cond_7
     invoke-static {v14}, Landroidx/compose/runtime/Recomposer;->access$getCompositionInvalidations$p(Landroidx/compose/runtime/Recomposer;)Ljava/util/List;
 
     move-result-object v5
 
-    .line 1507
+    .line 1569
     invoke-interface {v5}, Ljava/util/List;->size()I
 
     move-result v13
@@ -460,23 +460,23 @@
     :goto_4
     if-ge v12, v13, :cond_8
 
-    .line 1508
+    .line 1570
     invoke-interface {v5, v12}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
     move-result-object v9
 
-    .line 1509
+    .line 1571
     check-cast v9, Landroidx/compose/runtime/ControlledComposition;
 
-    .line 795
+    .line 844
     invoke-static {v14}, Landroidx/compose/runtime/Recomposer;->access$getStateLock$p(Landroidx/compose/runtime/Recomposer;)Ljava/lang/Object;
 
     move-result-object v10
 
-    .line 1516
+    .line 1578
     monitor-enter v10
 
-    .line 796
+    .line 845
     :try_start_0
     invoke-static {v14}, Landroidx/compose/runtime/Recomposer;->access$getConcurrentCompositionsOutstanding$p(Landroidx/compose/runtime/Recomposer;)I
 
@@ -488,10 +488,10 @@
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 1516
+    .line 1578
     monitor-exit v10
 
-    .line 798
+    .line 847
     invoke-static {v9}, Landroidx/compose/runtime/CompositionKt;->getRecomposeCoroutineContext(Landroidx/compose/runtime/ControlledComposition;)Lkotlin/coroutines/CoroutineContext;
 
     move-result-object v10
@@ -537,7 +537,7 @@
     :catchall_0
     move-exception v0
 
-    .line 1516
+    .line 1578
     monitor-exit v10
 
     throw v0
@@ -545,21 +545,21 @@
     :cond_8
     move-object/from16 v17, v14
 
-    .line 1517
+    .line 1579
     invoke-static/range {v17 .. v17}, Landroidx/compose/runtime/Recomposer;->access$getCompositionInvalidations$p(Landroidx/compose/runtime/Recomposer;)Ljava/util/List;
 
     move-result-object v5
 
     invoke-interface {v5}, Ljava/util/List;->clear()V
 
-    .line 1518
+    .line 1580
     invoke-static/range {v17 .. v17}, Landroidx/compose/runtime/Recomposer;->access$deriveStateLocked(Landroidx/compose/runtime/Recomposer;)Lkotlinx/coroutines/CancellableContinuation;
 
     move-result-object v5
 
     if-nez v5, :cond_b
 
-    .line 807
+    .line 856
     iget-object v5, v0, Landroidx/compose/runtime/Recomposer$runRecomposeConcurrentlyAndApplyChanges$2;->this$0:Landroidx/compose/runtime/Recomposer;
 
     invoke-static {v5}, Landroidx/compose/runtime/Recomposer;->access$getStateLock$p(Landroidx/compose/runtime/Recomposer;)Ljava/lang/Object;
@@ -568,10 +568,10 @@
 
     iget-object v9, v0, Landroidx/compose/runtime/Recomposer$runRecomposeConcurrentlyAndApplyChanges$2;->this$0:Landroidx/compose/runtime/Recomposer;
 
-    .line 1522
+    .line 1584
     monitor-enter v5
 
-    .line 808
+    .line 857
     :try_start_1
     invoke-static {v9}, Landroidx/compose/runtime/Recomposer;->access$getHasConcurrentFrameWorkLocked(Landroidx/compose/runtime/Recomposer;)Z
 
@@ -590,16 +590,16 @@
     :cond_9
     move-object v9, v6
 
-    .line 1522
+    .line 1584
     :goto_5
     monitor-exit v5
 
     if-eqz v9, :cond_a
 
-    .line 807
+    .line 856
     sget-object v5, Lkotlin/Result;->Companion:Lkotlin/Result$Companion;
 
-    .line 809
+    .line 858
     sget-object v5, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
 
     invoke-static {v5}, Lkotlin/Result;->constructor-impl(Ljava/lang/Object;)Ljava/lang/Object;
@@ -616,16 +616,16 @@
     :catchall_1
     move-exception v0
 
-    .line 1522
+    .line 1584
     monitor-exit v5
 
     throw v0
 
-    .line 1518
+    .line 1580
     :cond_b
     new-instance v0, Ljava/lang/IllegalStateException;
 
-    .line 1519
+    .line 1581
     const-string v1, "called outside of runRecomposeAndApplyChanges"
 
     invoke-virtual {v1}, Ljava/lang/Object;->toString()Ljava/lang/String;
@@ -636,7 +636,7 @@
 
     throw v0
 
-    .line 811
+    .line 860
     :cond_c
     invoke-interface {v9}, Lkotlinx/coroutines/CoroutineScope;->getCoroutineContext()Lkotlin/coroutines/CoroutineContext;
 
@@ -666,7 +666,7 @@
 
     return-object v1
 
-    .line 812
+    .line 861
     :cond_d
     :goto_6
     move-object v4, v0
@@ -685,14 +685,14 @@
 
     return-object v1
 
-    .line 813
+    .line 862
     :cond_e
     :goto_7
     sget-object v0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
 
     return-object v0
 
-    .line 782
+    .line 831
     :cond_f
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -700,7 +700,7 @@
 
     invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
-    .line 783
+    .line 832
     sget-object v1, Lkotlinx/coroutines/Job;->Key:Lkotlinx/coroutines/Job$Key;
 
     check-cast v1, Lkotlin/coroutines/CoroutineContext$Key;
@@ -709,7 +709,7 @@
 
     move-result-object v1
 
-    .line 782
+    .line 831
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
     move-result-object v0
@@ -718,7 +718,7 @@
 
     move-result-object v0
 
-    .line 781
+    .line 830
     new-instance v1, Ljava/lang/IllegalArgumentException;
 
     invoke-virtual {v0}, Ljava/lang/Object;->toString()Ljava/lang/String;

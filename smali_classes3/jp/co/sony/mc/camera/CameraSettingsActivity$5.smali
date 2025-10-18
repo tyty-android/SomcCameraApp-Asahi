@@ -36,7 +36,7 @@
         }
     .end annotation
 
-    .line 729
+    .line 733
     iput-object p1, p0, Ljp/co/sony/mc/camera/CameraSettingsActivity$5;->this$0:Ljp/co/sony/mc/camera/CameraSettingsActivity;
 
     iput-object p2, p0, Ljp/co/sony/mc/camera/CameraSettingsActivity$5;->val$messageSettings:Ljp/co/sony/mc/camera/setting/MessageSettings;
@@ -55,7 +55,7 @@
 .method public run()V
     .locals 3
 
-    .line 732
+    .line 736
     iget-object v0, p0, Ljp/co/sony/mc/camera/CameraSettingsActivity$5;->val$messageSettings:Ljp/co/sony/mc/camera/setting/MessageSettings;
 
     iget-object v1, p0, Ljp/co/sony/mc/camera/CameraSettingsActivity$5;->val$dialogId:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
@@ -68,7 +68,7 @@
 
     invoke-interface {v0, v1, v2}, Ljp/co/sony/mc/camera/setting/MessageSettings;->setNeverShow(Ljp/co/sony/mc/camera/setting/MessageType;Z)V
 
-    .line 733
+    .line 737
     iget-object p0, p0, Ljp/co/sony/mc/camera/CameraSettingsActivity$5;->val$messageSettings:Ljp/co/sony/mc/camera/setting/MessageSettings;
 
     invoke-interface {p0}, Ljp/co/sony/mc/camera/setting/MessageSettings;->save()V

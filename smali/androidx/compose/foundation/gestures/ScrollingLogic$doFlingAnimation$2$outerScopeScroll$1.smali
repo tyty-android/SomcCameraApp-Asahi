@@ -73,7 +73,7 @@
 .method public bridge synthetic invoke(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 2
 
-    .line 489
+    .line 832
     check-cast p1, Landroidx/compose/ui/geometry/Offset;
 
     invoke-virtual {p1}, Landroidx/compose/ui/geometry/Offset;->unbox-impl()J
@@ -94,7 +94,7 @@
 .method public final invoke-MK-Hz9U(J)J
     .locals 2
 
-    .line 490
+    .line 833
     iget-object v0, p0, Landroidx/compose/foundation/gestures/ScrollingLogic$doFlingAnimation$2$outerScopeScroll$1;->this$0:Landroidx/compose/foundation/gestures/ScrollingLogic;
 
     iget-object p0, p0, Landroidx/compose/foundation/gestures/ScrollingLogic$doFlingAnimation$2$outerScopeScroll$1;->$$this$scroll:Landroidx/compose/foundation/gestures/ScrollScope;

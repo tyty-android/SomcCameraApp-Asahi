@@ -38,7 +38,7 @@
 .method private static synthetic $values()[Ljp/co/sony/mc/camera/recorder/RecorderController$Result;
     .locals 4
 
-    .line 32
+    .line 33
     sget-object v0, Ljp/co/sony/mc/camera/recorder/RecorderController$Result;->SUCCESS:Ljp/co/sony/mc/camera/recorder/RecorderController$Result;
 
     sget-object v1, Ljp/co/sony/mc/camera/recorder/RecorderController$Result;->FAIL:Ljp/co/sony/mc/camera/recorder/RecorderController$Result;
@@ -57,7 +57,7 @@
 .method static constructor <clinit>()V
     .locals 3
 
-    .line 33
+    .line 34
     new-instance v0, Ljp/co/sony/mc/camera/recorder/RecorderController$Result;
 
     const-string v1, "SUCCESS"
@@ -68,7 +68,7 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/recorder/RecorderController$Result;->SUCCESS:Ljp/co/sony/mc/camera/recorder/RecorderController$Result;
 
-    .line 34
+    .line 35
     new-instance v0, Ljp/co/sony/mc/camera/recorder/RecorderController$Result;
 
     const-string v1, "FAIL"
@@ -79,7 +79,7 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/recorder/RecorderController$Result;->FAIL:Ljp/co/sony/mc/camera/recorder/RecorderController$Result;
 
-    .line 35
+    .line 36
     new-instance v0, Ljp/co/sony/mc/camera/recorder/RecorderController$Result;
 
     const-string v1, "MAX_DURATION_REACHED"
@@ -90,7 +90,7 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/recorder/RecorderController$Result;->MAX_DURATION_REACHED:Ljp/co/sony/mc/camera/recorder/RecorderController$Result;
 
-    .line 36
+    .line 37
     new-instance v0, Ljp/co/sony/mc/camera/recorder/RecorderController$Result;
 
     const-string v1, "MAX_FILESIZE_REACHED"
@@ -101,7 +101,7 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/recorder/RecorderController$Result;->MAX_FILESIZE_REACHED:Ljp/co/sony/mc/camera/recorder/RecorderController$Result;
 
-    .line 32
+    .line 33
     invoke-static {}, Ljp/co/sony/mc/camera/recorder/RecorderController$Result;->$values()[Ljp/co/sony/mc/camera/recorder/RecorderController$Result;
 
     move-result-object v0
@@ -119,7 +119,7 @@
         }
     .end annotation
 
-    .line 32
+    .line 33
     invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
     return-void
@@ -128,7 +128,7 @@
 .method public static valueOf(Ljava/lang/String;)Ljp/co/sony/mc/camera/recorder/RecorderController$Result;
     .locals 1
 
-    .line 32
+    .line 33
     const-class v0, Ljp/co/sony/mc/camera/recorder/RecorderController$Result;
 
     invoke-static {v0, p0}, Ljava/lang/Enum;->valueOf(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
@@ -143,7 +143,7 @@
 .method public static values()[Ljp/co/sony/mc/camera/recorder/RecorderController$Result;
     .locals 1
 
-    .line 32
+    .line 33
     sget-object v0, Ljp/co/sony/mc/camera/recorder/RecorderController$Result;->$VALUES:[Ljp/co/sony/mc/camera/recorder/RecorderController$Result;
 
     invoke-virtual {v0}, [Ljp/co/sony/mc/camera/recorder/RecorderController$Result;->clone()Ljava/lang/Object;

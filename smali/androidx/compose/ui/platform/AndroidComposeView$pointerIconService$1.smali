@@ -53,10 +53,10 @@
 
     iput-object p1, p0, Landroidx/compose/ui/platform/AndroidComposeView$pointerIconService$1;->this$0:Landroidx/compose/ui/platform/AndroidComposeView;
 
-    .line 1758
+    .line 1906
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 1759
+    .line 1907
     sget-object p1, Landroidx/compose/ui/input/pointer/PointerIcon;->Companion:Landroidx/compose/ui/input/pointer/PointerIcon$Companion;
 
     invoke-virtual {p1}, Landroidx/compose/ui/input/pointer/PointerIcon$Companion;->getDefault()Landroidx/compose/ui/input/pointer/PointerIcon;
@@ -73,7 +73,7 @@
 .method public getIcon()Landroidx/compose/ui/input/pointer/PointerIcon;
     .locals 0
 
-    .line 1762
+    .line 1910
     iget-object p0, p0, Landroidx/compose/ui/platform/AndroidComposeView$pointerIconService$1;->currentIcon:Landroidx/compose/ui/input/pointer/PointerIcon;
 
     return-object p0
@@ -84,7 +84,7 @@
 
     if-nez p1, :cond_0
 
-    .line 1766
+    .line 1914
     sget-object p1, Landroidx/compose/ui/input/pointer/PointerIcon;->Companion:Landroidx/compose/ui/input/pointer/PointerIcon$Companion;
 
     invoke-virtual {p1}, Landroidx/compose/ui/input/pointer/PointerIcon$Companion;->getDefault()Landroidx/compose/ui/input/pointer/PointerIcon;
@@ -94,18 +94,18 @@
     :cond_0
     iput-object p1, p0, Landroidx/compose/ui/platform/AndroidComposeView$pointerIconService$1;->currentIcon:Landroidx/compose/ui/input/pointer/PointerIcon;
 
-    .line 1768
+    .line 1916
     sget-object p1, Landroidx/compose/ui/platform/AndroidComposeViewVerificationHelperMethodsN;->INSTANCE:Landroidx/compose/ui/platform/AndroidComposeViewVerificationHelperMethodsN;
 
-    .line 1769
+    .line 1917
     iget-object v0, p0, Landroidx/compose/ui/platform/AndroidComposeView$pointerIconService$1;->this$0:Landroidx/compose/ui/platform/AndroidComposeView;
 
     check-cast v0, Landroid/view/View;
 
-    .line 1770
+    .line 1918
     iget-object p0, p0, Landroidx/compose/ui/platform/AndroidComposeView$pointerIconService$1;->currentIcon:Landroidx/compose/ui/input/pointer/PointerIcon;
 
-    .line 1768
+    .line 1916
     invoke-virtual {p1, v0, p0}, Landroidx/compose/ui/platform/AndroidComposeViewVerificationHelperMethodsN;->setPointerIcon(Landroid/view/View;Landroidx/compose/ui/input/pointer/PointerIcon;)V
 
     return-void

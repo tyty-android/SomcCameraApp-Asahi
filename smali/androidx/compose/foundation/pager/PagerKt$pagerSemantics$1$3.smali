@@ -71,7 +71,7 @@
 .method public final invoke()Ljava/lang/Boolean;
     .locals 1
 
-    .line 872
+    .line 944
     iget-object v0, p0, Landroidx/compose/foundation/pager/PagerKt$pagerSemantics$1$3;->$state:Landroidx/compose/foundation/pager/PagerState;
 
     iget-object p0, p0, Landroidx/compose/foundation/pager/PagerKt$pagerSemantics$1$3;->$scope:Lkotlinx/coroutines/CoroutineScope;
@@ -90,7 +90,7 @@
 .method public bridge synthetic invoke()Ljava/lang/Object;
     .locals 0
 
-    .line 872
+    .line 944
     invoke-virtual {p0}, Landroidx/compose/foundation/pager/PagerKt$pagerSemantics$1$3;->invoke()Ljava/lang/Boolean;
 
     move-result-object p0

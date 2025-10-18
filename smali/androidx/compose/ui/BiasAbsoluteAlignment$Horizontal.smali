@@ -108,11 +108,7 @@
 
 # virtual methods
 .method public align(IILandroidx/compose/ui/unit/LayoutDirection;)I
-    .locals 1
-
-    const-string v0, "layoutDirection"
-
-    invoke-static {p3, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+    .locals 0
 
     sub-int/2addr p2, p1
 

@@ -36,122 +36,240 @@
 
 # direct methods
 .method static constructor <clinit>()V
-    .locals 25
+    .locals 24
+
+    const/16 v0, 0xc
 
     .line 50
-    const-string v10, "10"
+    new-array v1, v0, [Ljava/lang/String;
 
-    const-string v11, "11"
+    const/4 v2, 0x0
 
-    const-string v0, "12"
+    const-string v3, "12"
 
-    const-string v1, "1"
+    aput-object v3, v1, v2
 
-    const-string v2, "2"
+    const/4 v4, 0x1
 
-    const-string v3, "3"
+    const-string v5, "1"
 
-    const-string v4, "4"
+    aput-object v5, v1, v4
 
-    const-string v5, "5"
+    const/4 v6, 0x2
 
-    const-string v6, "6"
+    const-string v7, "2"
 
-    const-string v7, "7"
+    aput-object v7, v1, v6
 
-    const-string v8, "8"
+    const/4 v8, 0x3
 
-    const-string v9, "9"
+    const-string v9, "3"
 
-    filled-new-array/range {v0 .. v11}, [Ljava/lang/String;
+    aput-object v9, v1, v8
 
-    move-result-object v0
+    const/4 v10, 0x4
 
-    sput-object v0, Lcom/google/android/material/timepicker/TimePickerClockPresenter;->HOUR_CLOCK_VALUES:[Ljava/lang/String;
+    const-string v11, "4"
+
+    aput-object v11, v1, v10
+
+    const/4 v12, 0x5
+
+    const-string v13, "5"
+
+    aput-object v13, v1, v12
+
+    const/4 v14, 0x6
+
+    const-string v15, "6"
+
+    aput-object v15, v1, v14
+
+    const/16 v16, 0x7
+
+    const-string v17, "7"
+
+    aput-object v17, v1, v16
+
+    const-string v18, "8"
+
+    const/16 v19, 0x8
+
+    aput-object v18, v1, v19
+
+    const-string v18, "9"
+
+    const/16 v20, 0x9
+
+    aput-object v18, v1, v20
+
+    const/16 v18, 0xa
+
+    const-string v21, "10"
+
+    aput-object v21, v1, v18
+
+    const-string v22, "11"
+
+    const/16 v23, 0xb
+
+    aput-object v22, v1, v23
+
+    sput-object v1, Lcom/google/android/material/timepicker/TimePickerClockPresenter;->HOUR_CLOCK_VALUES:[Ljava/lang/String;
+
+    const/16 v1, 0x18
 
     .line 53
-    const-string v23, "22"
+    new-array v1, v1, [Ljava/lang/String;
 
-    const-string v24, "23"
+    const-string v22, "00"
 
-    const-string v1, "00"
+    aput-object v22, v1, v2
 
-    const-string v2, "1"
+    aput-object v5, v1, v4
 
-    const-string v3, "2"
+    aput-object v7, v1, v6
 
-    const-string v4, "3"
+    aput-object v9, v1, v8
 
-    const-string v5, "4"
+    aput-object v11, v1, v10
 
-    const-string v6, "5"
+    aput-object v13, v1, v12
 
-    const-string v7, "6"
+    aput-object v15, v1, v14
 
-    const-string v8, "7"
+    aput-object v17, v1, v16
 
-    const-string v9, "8"
+    const-string v5, "8"
 
-    const-string v10, "9"
+    aput-object v5, v1, v19
 
-    const-string v11, "10"
+    const-string v5, "9"
 
-    const-string v12, "11"
+    aput-object v5, v1, v20
 
-    const-string v13, "12"
+    aput-object v21, v1, v18
 
-    const-string v14, "13"
+    const-string v5, "11"
 
-    const-string v15, "14"
+    aput-object v5, v1, v23
 
-    const-string v16, "15"
+    aput-object v3, v1, v0
 
-    const-string v17, "16"
+    const/16 v3, 0xd
 
-    const-string v18, "17"
+    const-string v5, "13"
 
-    const-string v19, "18"
+    aput-object v5, v1, v3
 
-    const-string v20, "19"
+    const/16 v3, 0xe
 
-    const-string v21, "20"
+    const-string v5, "14"
 
-    const-string v22, "21"
+    aput-object v5, v1, v3
 
-    filled-new-array/range {v1 .. v24}, [Ljava/lang/String;
+    const/16 v3, 0xf
 
-    move-result-object v0
+    const-string v5, "15"
 
-    sput-object v0, Lcom/google/android/material/timepicker/TimePickerClockPresenter;->HOUR_CLOCK_24_VALUES:[Ljava/lang/String;
+    aput-object v5, v1, v3
 
-    .line 58
-    const-string v11, "50"
+    const/16 v3, 0x10
 
-    const-string v12, "55"
+    const-string v5, "16"
 
-    const-string v1, "00"
+    aput-object v5, v1, v3
 
-    const-string v2, "5"
+    const/16 v3, 0x11
 
-    const-string v3, "10"
+    const-string v5, "17"
 
-    const-string v4, "15"
+    aput-object v5, v1, v3
+
+    const/16 v3, 0x12
+
+    const-string v5, "18"
+
+    aput-object v5, v1, v3
+
+    const/16 v3, 0x13
+
+    const-string v5, "19"
+
+    aput-object v5, v1, v3
+
+    const/16 v3, 0x14
 
     const-string v5, "20"
 
-    const-string v6, "25"
+    aput-object v5, v1, v3
 
-    const-string v7, "30"
+    const/16 v3, 0x15
 
-    const-string v8, "35"
+    const-string v5, "21"
 
-    const-string v9, "40"
+    aput-object v5, v1, v3
 
-    const-string v10, "45"
+    const/16 v3, 0x16
 
-    filled-new-array/range {v1 .. v12}, [Ljava/lang/String;
+    const-string v5, "22"
 
-    move-result-object v0
+    aput-object v5, v1, v3
+
+    const/16 v3, 0x17
+
+    const-string v5, "23"
+
+    aput-object v5, v1, v3
+
+    sput-object v1, Lcom/google/android/material/timepicker/TimePickerClockPresenter;->HOUR_CLOCK_24_VALUES:[Ljava/lang/String;
+
+    .line 58
+    new-array v0, v0, [Ljava/lang/String;
+
+    const-string v1, "00"
+
+    aput-object v1, v0, v2
+
+    aput-object v13, v0, v4
+
+    aput-object v21, v0, v6
+
+    const-string v1, "15"
+
+    aput-object v1, v0, v8
+
+    const-string v1, "20"
+
+    aput-object v1, v0, v10
+
+    const-string v1, "25"
+
+    aput-object v1, v0, v12
+
+    const-string v1, "30"
+
+    aput-object v1, v0, v14
+
+    const-string v1, "35"
+
+    aput-object v1, v0, v16
+
+    const-string v1, "40"
+
+    aput-object v1, v0, v19
+
+    const-string v1, "45"
+
+    aput-object v1, v0, v20
+
+    const-string v1, "50"
+
+    aput-object v1, v0, v18
+
+    const-string v1, "55"
+
+    aput-object v1, v0, v23
 
     sput-object v0, Lcom/google/android/material/timepicker/TimePickerClockPresenter;->MINUTE_CLOCK_VALUES:[Ljava/lang/String;
 

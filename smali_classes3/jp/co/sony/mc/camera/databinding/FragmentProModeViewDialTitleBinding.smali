@@ -6,9 +6,9 @@
 # instance fields
 .field public final close:Landroid/widget/ImageButton;
 
-.field public final fnItemLabelTitle:Ljp/co/sony/mc/camera/view/widget/OutlineTextView;
+.field public final fnItemLabelTitle:Ljp/co/sony/mc/camera/view/widget/PenetrableOutlineTextView;
 
-.field public final fnItemLabelValue:Ljp/co/sony/mc/camera/view/widget/OutlineTextView;
+.field public final fnItemLabelValue:Ljp/co/sony/mc/camera/view/widget/PenetrableOutlineTextView;
 
 .field public final infoButton:Landroid/widget/ImageButton;
 
@@ -17,29 +17,34 @@
     .end annotation
 .end field
 
+.field protected mViewFinderUiState:Ljp/co/sony/mc/camera/view/uistate/ViewFinderUiState;
+    .annotation runtime Landroidx/databinding/Bindable;
+    .end annotation
+.end field
+
 .field public final titleTextContainer:Landroid/widget/LinearLayout;
 
 
 # direct methods
-.method protected constructor <init>(Ljava/lang/Object;Landroid/view/View;ILandroid/widget/ImageButton;Ljp/co/sony/mc/camera/view/widget/OutlineTextView;Ljp/co/sony/mc/camera/view/widget/OutlineTextView;Landroid/widget/ImageButton;Landroid/widget/LinearLayout;)V
+.method protected constructor <init>(Ljava/lang/Object;Landroid/view/View;ILandroid/widget/ImageButton;Ljp/co/sony/mc/camera/view/widget/PenetrableOutlineTextView;Ljp/co/sony/mc/camera/view/widget/PenetrableOutlineTextView;Landroid/widget/ImageButton;Landroid/widget/LinearLayout;)V
     .locals 0
 
-    .line 42
+    .line 47
     invoke-direct {p0, p1, p2, p3}, Landroidx/databinding/ViewDataBinding;-><init>(Ljava/lang/Object;Landroid/view/View;I)V
 
-    .line 43
+    .line 48
     iput-object p4, p0, Ljp/co/sony/mc/camera/databinding/FragmentProModeViewDialTitleBinding;->close:Landroid/widget/ImageButton;
 
-    .line 44
-    iput-object p5, p0, Ljp/co/sony/mc/camera/databinding/FragmentProModeViewDialTitleBinding;->fnItemLabelTitle:Ljp/co/sony/mc/camera/view/widget/OutlineTextView;
+    .line 49
+    iput-object p5, p0, Ljp/co/sony/mc/camera/databinding/FragmentProModeViewDialTitleBinding;->fnItemLabelTitle:Ljp/co/sony/mc/camera/view/widget/PenetrableOutlineTextView;
 
-    .line 45
-    iput-object p6, p0, Ljp/co/sony/mc/camera/databinding/FragmentProModeViewDialTitleBinding;->fnItemLabelValue:Ljp/co/sony/mc/camera/view/widget/OutlineTextView;
+    .line 50
+    iput-object p6, p0, Ljp/co/sony/mc/camera/databinding/FragmentProModeViewDialTitleBinding;->fnItemLabelValue:Ljp/co/sony/mc/camera/view/widget/PenetrableOutlineTextView;
 
-    .line 46
+    .line 51
     iput-object p7, p0, Ljp/co/sony/mc/camera/databinding/FragmentProModeViewDialTitleBinding;->infoButton:Landroid/widget/ImageButton;
 
-    .line 47
+    .line 52
     iput-object p8, p0, Ljp/co/sony/mc/camera/databinding/FragmentProModeViewDialTitleBinding;->titleTextContainer:Landroid/widget/LinearLayout;
 
     return-void
@@ -48,7 +53,7 @@
 .method public static bind(Landroid/view/View;)Ljp/co/sony/mc/camera/databinding/FragmentProModeViewDialTitleBinding;
     .locals 1
 
-    .line 97
+    .line 109
     invoke-static {}, Landroidx/databinding/DataBindingUtil;->getDefaultComponent()Landroidx/databinding/DataBindingComponent;
 
     move-result-object v0
@@ -67,7 +72,7 @@
 
     const v0, 0x7f0c00b1
 
-    .line 110
+    .line 122
     invoke-static {p1, p0, v0}, Ljp/co/sony/mc/camera/databinding/FragmentProModeViewDialTitleBinding;->bind(Ljava/lang/Object;Landroid/view/View;I)Landroidx/databinding/ViewDataBinding;
 
     move-result-object p0
@@ -80,7 +85,7 @@
 .method public static inflate(Landroid/view/LayoutInflater;)Ljp/co/sony/mc/camera/databinding/FragmentProModeViewDialTitleBinding;
     .locals 1
 
-    .line 79
+    .line 91
     invoke-static {}, Landroidx/databinding/DataBindingUtil;->getDefaultComponent()Landroidx/databinding/DataBindingComponent;
 
     move-result-object v0
@@ -95,7 +100,7 @@
 .method public static inflate(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Z)Ljp/co/sony/mc/camera/databinding/FragmentProModeViewDialTitleBinding;
     .locals 1
 
-    .line 60
+    .line 72
     invoke-static {}, Landroidx/databinding/DataBindingUtil;->getDefaultComponent()Landroidx/databinding/DataBindingComponent;
 
     move-result-object v0
@@ -114,7 +119,7 @@
 
     const v0, 0x7f0c00b1
 
-    .line 74
+    .line 86
     invoke-static {p0, v0, p1, p2, p3}, Landroidx/databinding/ViewDataBinding;->inflateInternal(Landroid/view/LayoutInflater;ILandroid/view/ViewGroup;ZLjava/lang/Object;)Landroidx/databinding/ViewDataBinding;
 
     move-result-object p0
@@ -135,7 +140,7 @@
 
     const v2, 0x7f0c00b1
 
-    .line 93
+    .line 105
     invoke-static {p0, v2, v0, v1, p1}, Landroidx/databinding/ViewDataBinding;->inflateInternal(Landroid/view/LayoutInflater;ILandroid/view/ViewGroup;ZLjava/lang/Object;)Landroidx/databinding/ViewDataBinding;
 
     move-result-object p0
@@ -150,11 +155,23 @@
 .method public getProModeCommonUiState()Ljp/co/sony/mc/camera/view/uistate/ProModeCommonUiState;
     .locals 0
 
-    .line 54
+    .line 59
     iget-object p0, p0, Ljp/co/sony/mc/camera/databinding/FragmentProModeViewDialTitleBinding;->mProModeCommonUiState:Ljp/co/sony/mc/camera/view/uistate/ProModeCommonUiState;
 
     return-object p0
 .end method
 
+.method public getViewFinderUiState()Ljp/co/sony/mc/camera/view/uistate/ViewFinderUiState;
+    .locals 0
+
+    .line 66
+    iget-object p0, p0, Ljp/co/sony/mc/camera/databinding/FragmentProModeViewDialTitleBinding;->mViewFinderUiState:Ljp/co/sony/mc/camera/view/uistate/ViewFinderUiState;
+
+    return-object p0
+.end method
+
 .method public abstract setProModeCommonUiState(Ljp/co/sony/mc/camera/view/uistate/ProModeCommonUiState;)V
+.end method
+
+.method public abstract setViewFinderUiState(Ljp/co/sony/mc/camera/view/uistate/ViewFinderUiState;)V
 .end method

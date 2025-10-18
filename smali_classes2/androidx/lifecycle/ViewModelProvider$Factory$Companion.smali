@@ -1,6 +1,6 @@
 .class public final Landroidx/lifecycle/ViewModelProvider$Factory$Companion;
 .super Ljava/lang/Object;
-.source "ViewModelProvider.kt"
+.source "ViewModelProvider.android.kt"
 
 
 # annotations
@@ -59,7 +59,7 @@
 .method private constructor <init>()V
     .locals 0
 
-    .line 85
+    .line 160
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -85,8 +85,8 @@
 
     invoke-static {p1, p0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 94
-    new-instance p0, Landroidx/lifecycle/viewmodel/InitializerViewModelFactory;
+    .line 171
+    sget-object p0, Landroidx/lifecycle/viewmodel/internal/ViewModelProviders;->INSTANCE:Landroidx/lifecycle/viewmodel/internal/ViewModelProviders;
 
     array-length v0, p1
 
@@ -96,9 +96,9 @@
 
     check-cast p1, [Landroidx/lifecycle/viewmodel/ViewModelInitializer;
 
-    invoke-direct {p0, p1}, Landroidx/lifecycle/viewmodel/InitializerViewModelFactory;-><init>([Landroidx/lifecycle/viewmodel/ViewModelInitializer;)V
+    invoke-virtual {p0, p1}, Landroidx/lifecycle/viewmodel/internal/ViewModelProviders;->createInitializerFactory$lifecycle_viewmodel_release([Landroidx/lifecycle/viewmodel/ViewModelInitializer;)Landroidx/lifecycle/ViewModelProvider$Factory;
 
-    check-cast p0, Landroidx/lifecycle/ViewModelProvider$Factory;
+    move-result-object p0
 
     return-object p0
 .end method

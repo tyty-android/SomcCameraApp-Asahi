@@ -83,7 +83,7 @@
 .method public bridge synthetic invoke(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
     .locals 2
 
-    .line 223
+    .line 219
     check-cast p1, Landroidx/compose/ui/unit/IntSize;
 
     invoke-virtual {p1}, Landroidx/compose/ui/unit/IntSize;->unbox-impl()J
@@ -114,7 +114,7 @@
         }
     .end annotation
 
-    .line 226
+    .line 222
     sget-object p0, Landroidx/compose/ui/unit/IntSize;->Companion:Landroidx/compose/ui/unit/IntSize$Companion;
 
     invoke-static {p0}, Landroidx/compose/animation/core/VisibilityThresholdsKt;->getVisibilityThreshold(Landroidx/compose/ui/unit/IntSize$Companion;)J
@@ -133,7 +133,7 @@
 
     const/high16 p4, 0x43c80000    # 400.0f
 
-    .line 224
+    .line 220
     invoke-static {p3, p4, p0, p1, p2}, Landroidx/compose/animation/core/AnimationSpecKt;->spring$default(FFLjava/lang/Object;ILjava/lang/Object;)Landroidx/compose/animation/core/SpringSpec;
 
     move-result-object p0

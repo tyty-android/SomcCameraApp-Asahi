@@ -34,7 +34,7 @@
         }
     .end annotation
 
-    .line 2383
+    .line 2406
     iput-object p1, p0, Ljp/co/sony/mc/camera/controller/StateMachine$StateResume$1$1;->this$2:Ljp/co/sony/mc/camera/controller/StateMachine$StateResume$1;
 
     iput-object p2, p0, Ljp/co/sony/mc/camera/controller/StateMachine$StateResume$1$1;->val$type:Ljp/co/sony/mc/camera/storage/Storage$StorageType;
@@ -51,7 +51,7 @@
 .method public run()V
     .locals 3
 
-    .line 2386
+    .line 2409
     iget-object v0, p0, Ljp/co/sony/mc/camera/controller/StateMachine$StateResume$1$1;->this$2:Ljp/co/sony/mc/camera/controller/StateMachine$StateResume$1;
 
     iget-object v0, v0, Ljp/co/sony/mc/camera/controller/StateMachine$StateResume$1;->this$1:Ljp/co/sony/mc/camera/controller/StateMachine$StateResume;

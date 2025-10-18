@@ -28,23 +28,23 @@
 .method constructor <init>(ILandroid/media/MediaCodec$BufferInfo;)V
     .locals 0
 
-    .line 283
+    .line 277
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 284
+    .line 278
     iput p1, p0, Lcom/sonymobile/android/media/internal/Track$EncodedBuffer;->bufferIndex:I
 
-    .line 285
+    .line 279
     iput-object p2, p0, Lcom/sonymobile/android/media/internal/Track$EncodedBuffer;->bufferInfo:Landroid/media/MediaCodec$BufferInfo;
 
     const/4 p1, 0x0
 
-    .line 286
+    .line 280
     iput-object p1, p0, Lcom/sonymobile/android/media/internal/Track$EncodedBuffer;->byteBuffer:Ljava/nio/ByteBuffer;
 
     const/4 p1, 0x0
 
-    .line 287
+    .line 281
     iput-boolean p1, p0, Lcom/sonymobile/android/media/internal/Track$EncodedBuffer;->containsCopiedBuffer:Z
 
     return-void

@@ -59,10 +59,6 @@
 .method public final createTypefaceSpan(Landroid/graphics/Typeface;)Landroid/text/style/TypefaceSpan;
     .locals 0
 
-    const-string/jumbo p0, "typeface"
-
-    invoke-static {p1, p0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
     .line 180
     new-instance p0, Landroid/text/style/TypefaceSpan;
 

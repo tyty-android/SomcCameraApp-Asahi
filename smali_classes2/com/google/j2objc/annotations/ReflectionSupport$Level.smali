@@ -34,7 +34,7 @@
 .method static constructor <clinit>()V
     .locals 4
 
-    .line 40
+    .line 42
     new-instance v0, Lcom/google/j2objc/annotations/ReflectionSupport$Level;
 
     const-string v1, "NATIVE_ONLY"
@@ -45,7 +45,7 @@
 
     sput-object v0, Lcom/google/j2objc/annotations/ReflectionSupport$Level;->NATIVE_ONLY:Lcom/google/j2objc/annotations/ReflectionSupport$Level;
 
-    .line 44
+    .line 46
     new-instance v1, Lcom/google/j2objc/annotations/ReflectionSupport$Level;
 
     const-string v2, "FULL"
@@ -56,7 +56,7 @@
 
     sput-object v1, Lcom/google/j2objc/annotations/ReflectionSupport$Level;->FULL:Lcom/google/j2objc/annotations/ReflectionSupport$Level;
 
-    .line 35
+    .line 37
     filled-new-array {v0, v1}, [Lcom/google/j2objc/annotations/ReflectionSupport$Level;
 
     move-result-object v0
@@ -74,7 +74,7 @@
         }
     .end annotation
 
-    .line 35
+    .line 37
     invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
     return-void
@@ -83,7 +83,7 @@
 .method public static valueOf(Ljava/lang/String;)Lcom/google/j2objc/annotations/ReflectionSupport$Level;
     .locals 1
 
-    .line 35
+    .line 37
     const-class v0, Lcom/google/j2objc/annotations/ReflectionSupport$Level;
 
     invoke-static {v0, p0}, Ljava/lang/Enum;->valueOf(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
@@ -98,7 +98,7 @@
 .method public static values()[Lcom/google/j2objc/annotations/ReflectionSupport$Level;
     .locals 1
 
-    .line 35
+    .line 37
     sget-object v0, Lcom/google/j2objc/annotations/ReflectionSupport$Level;->$VALUES:[Lcom/google/j2objc/annotations/ReflectionSupport$Level;
 
     invoke-virtual {v0}, [Lcom/google/j2objc/annotations/ReflectionSupport$Level;->clone()Ljava/lang/Object;

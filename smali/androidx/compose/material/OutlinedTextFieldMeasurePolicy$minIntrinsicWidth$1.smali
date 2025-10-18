@@ -82,11 +82,7 @@
 .method public final invoke(Landroidx/compose/ui/layout/IntrinsicMeasurable;I)Ljava/lang/Integer;
     .locals 0
 
-    const-string p0, "intrinsicMeasurable"
-
-    invoke-static {p1, p0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 712
+    .line 716
     invoke-interface {p1, p2}, Landroidx/compose/ui/layout/IntrinsicMeasurable;->minIntrinsicWidth(I)I
 
     move-result p0
@@ -101,7 +97,7 @@
 .method public bridge synthetic invoke(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
 
-    .line 711
+    .line 715
     check-cast p1, Landroidx/compose/ui/layout/IntrinsicMeasurable;
 
     check-cast p2, Ljava/lang/Number;

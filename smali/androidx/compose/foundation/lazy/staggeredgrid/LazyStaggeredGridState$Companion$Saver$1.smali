@@ -82,7 +82,7 @@
 .method public bridge synthetic invoke(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
 
-    .line 492
+    .line 511
     check-cast p1, Landroidx/compose/runtime/saveable/SaverScope;
 
     check-cast p2, Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridState;
@@ -107,15 +107,7 @@
         }
     .end annotation
 
-    const-string p0, "$this$listSaver"
-
-    invoke-static {p1, p0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string/jumbo p0, "state"
-
-    invoke-static {p2, p0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 495
+    .line 514
     invoke-virtual {p2}, Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridState;->getScrollPosition$foundation_release()Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridScrollPosition;
 
     move-result-object p0
@@ -124,12 +116,12 @@
 
     move-result-object p0
 
-    .line 496
+    .line 515
     invoke-virtual {p2}, Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridState;->getScrollPosition$foundation_release()Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridScrollPosition;
 
     move-result-object p1
 
-    invoke-virtual {p1}, Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridScrollPosition;->getOffsets()[I
+    invoke-virtual {p1}, Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridScrollPosition;->getScrollOffsets()[I
 
     move-result-object p1
 
@@ -137,10 +129,10 @@
 
     move-result-object p0
 
-    .line 495
+    .line 514
     check-cast p0, [Ljava/lang/Object;
 
-    .line 494
+    .line 513
     invoke-static {p0}, Lkotlin/collections/CollectionsKt;->listOf([Ljava/lang/Object;)Ljava/util/List;
 
     move-result-object p0

@@ -41,7 +41,7 @@
 
 # virtual methods
 .method public run()V
-    .locals 2
+    .locals 3
 
     .line 144
     iget-object v0, p0, Ljp/co/sony/mc/camera/util/CameraExtensionServiceUtil$UpdateCameraStatusTask;->this$0:Ljp/co/sony/mc/camera/util/CameraExtensionServiceUtil;
@@ -81,17 +81,21 @@
 
     goto :goto_0
 
-    .line 152
     :catch_0
-    new-instance v0, Ljava/lang/StringBuilder;
+    const/4 v0, 0x1
 
-    const-string v1, "Camera extension service updateCameraStatus failed ContentValues = "
+    .line 152
+    new-array v0, v0, [Ljava/lang/String;
 
-    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+    new-instance v1, Ljava/lang/StringBuilder;
+
+    const-string v2, "Camera extension service updateCameraStatus failed ContentValues = "
+
+    invoke-direct {v1, v2}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
     iget-object p0, p0, Ljp/co/sony/mc/camera/util/CameraExtensionServiceUtil$UpdateCameraStatusTask;->mContentValues:Landroid/content/ContentValues;
 
-    invoke-virtual {v0, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+    invoke-virtual {v1, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
     move-result-object p0
 
@@ -99,11 +103,11 @@
 
     move-result-object p0
 
-    filled-new-array {p0}, [Ljava/lang/String;
+    const/4 v1, 0x0
 
-    move-result-object p0
+    aput-object p0, v0, v1
 
-    invoke-static {p0}, Ljp/co/sony/mc/camera/util/CamLog;->e([Ljava/lang/String;)V
+    invoke-static {v0}, Ljp/co/sony/mc/camera/util/CamLog;->e([Ljava/lang/String;)V
 
     :cond_1
     :goto_0

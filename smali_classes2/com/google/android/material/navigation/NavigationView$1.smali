@@ -1,14 +1,11 @@
 .class Lcom/google/android/material/navigation/NavigationView$1;
-.super Ljava/lang/Object;
+.super Landroidx/drawerlayout/widget/DrawerLayout$SimpleDrawerListener;
 .source "NavigationView.java"
-
-# interfaces
-.implements Landroidx/appcompat/view/menu/MenuBuilder$Callback;
 
 
 # annotations
-.annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/google/android/material/navigation/NavigationView;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lcom/google/android/material/navigation/NavigationView;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -25,49 +22,61 @@
 .method constructor <init>(Lcom/google/android/material/navigation/NavigationView;)V
     .locals 0
 
-    .line 301
+    .line 158
     iput-object p1, p0, Lcom/google/android/material/navigation/NavigationView$1;->this$0:Lcom/google/android/material/navigation/NavigationView;
 
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    invoke-direct {p0}, Landroidx/drawerlayout/widget/DrawerLayout$SimpleDrawerListener;-><init>()V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public onMenuItemSelected(Landroidx/appcompat/view/menu/MenuBuilder;Landroid/view/MenuItem;)Z
-    .locals 0
+.method public onDrawerClosed(Landroid/view/View;)V
+    .locals 1
 
-    .line 304
-    iget-object p1, p0, Lcom/google/android/material/navigation/NavigationView$1;->this$0:Lcom/google/android/material/navigation/NavigationView;
+    .line 170
+    iget-object v0, p0, Lcom/google/android/material/navigation/NavigationView$1;->this$0:Lcom/google/android/material/navigation/NavigationView;
 
-    iget-object p1, p1, Lcom/google/android/material/navigation/NavigationView;->listener:Lcom/google/android/material/navigation/NavigationView$OnNavigationItemSelectedListener;
+    if-ne p1, v0, :cond_0
 
-    if-eqz p1, :cond_0
+    .line 171
+    invoke-static {v0}, Lcom/google/android/material/navigation/NavigationView;->access$000(Lcom/google/android/material/navigation/NavigationView;)Lcom/google/android/material/motion/MaterialBackOrchestrator;
 
+    move-result-object p1
+
+    invoke-virtual {p1}, Lcom/google/android/material/motion/MaterialBackOrchestrator;->stopListeningForBackCallbacks()V
+
+    .line 172
     iget-object p0, p0, Lcom/google/android/material/navigation/NavigationView$1;->this$0:Lcom/google/android/material/navigation/NavigationView;
 
-    iget-object p0, p0, Lcom/google/android/material/navigation/NavigationView;->listener:Lcom/google/android/material/navigation/NavigationView$OnNavigationItemSelectedListener;
-
-    invoke-interface {p0, p2}, Lcom/google/android/material/navigation/NavigationView$OnNavigationItemSelectedListener;->onNavigationItemSelected(Landroid/view/MenuItem;)Z
-
-    move-result p0
-
-    if-eqz p0, :cond_0
-
-    const/4 p0, 0x1
-
-    goto :goto_0
+    invoke-static {p0}, Lcom/google/android/material/navigation/NavigationView;->access$100(Lcom/google/android/material/navigation/NavigationView;)V
 
     :cond_0
-    const/4 p0, 0x0
-
-    :goto_0
-    return p0
+    return-void
 .end method
 
-.method public onMenuModeChange(Landroidx/appcompat/view/menu/MenuBuilder;)V
-    .locals 0
+.method public onDrawerOpened(Landroid/view/View;)V
+    .locals 1
 
+    .line 162
+    iget-object p0, p0, Lcom/google/android/material/navigation/NavigationView$1;->this$0:Lcom/google/android/material/navigation/NavigationView;
+
+    if-ne p1, p0, :cond_0
+
+    .line 164
+    invoke-static {p0}, Lcom/google/android/material/navigation/NavigationView;->access$000(Lcom/google/android/material/navigation/NavigationView;)Lcom/google/android/material/motion/MaterialBackOrchestrator;
+
+    move-result-object p0
+
+    invoke-static {p0}, Ljava/util/Objects;->requireNonNull(Ljava/lang/Object;)Ljava/lang/Object;
+
+    new-instance v0, Lcom/google/android/material/navigation/NavigationView$1$$ExternalSyntheticLambda0;
+
+    invoke-direct {v0, p0}, Lcom/google/android/material/navigation/NavigationView$1$$ExternalSyntheticLambda0;-><init>(Lcom/google/android/material/motion/MaterialBackOrchestrator;)V
+
+    invoke-virtual {p1, v0}, Landroid/view/View;->post(Ljava/lang/Runnable;)Z
+
+    :cond_0
     return-void
 .end method

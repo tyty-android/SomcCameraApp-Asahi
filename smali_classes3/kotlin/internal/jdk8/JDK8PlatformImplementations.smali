@@ -176,7 +176,7 @@
 
     move-result-object p1
 
-    const-string p2, "matcher.group(name)"
+    const-string p2, "group(...)"
 
     invoke-static {p1, p2}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
 

@@ -1,6 +1,6 @@
 .class public final Landroidx/compose/runtime/ParcelableSnapshotMutableState$Companion$CREATOR$1;
 .super Ljava/lang/Object;
-.source "ParcelableSnapshotMutableState.kt"
+.source "ParcelableSnapshotMutableState.android.kt"
 
 # interfaces
 .implements Landroid/os/Parcelable$ClassLoaderCreator;
@@ -82,10 +82,6 @@
         }
     .end annotation
 
-    const-string v0, "parcel"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
     const/4 v0, 0x0
 
     .line 75
@@ -109,10 +105,6 @@
             ">;"
         }
     .end annotation
-
-    const-string v0, "parcel"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
     if-nez p2, :cond_0
 

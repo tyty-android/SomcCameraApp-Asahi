@@ -83,13 +83,15 @@
     const/4 v4, 0x2
 
     .line 72
-    filled-new-array {v0, v4}, [I
+    new-array v5, v4, [I
 
-    move-result-object v4
+    aput v4, v5, v1
 
-    sget-object v5, Ljava/lang/Integer;->TYPE:Ljava/lang/Class;
+    aput v0, v5, v3
 
-    invoke-static {v5, v4}, Ljava/lang/reflect/Array;->newInstance(Ljava/lang/Class;[I)Ljava/lang/Object;
+    sget-object v4, Ljava/lang/Integer;->TYPE:Ljava/lang/Class;
+
+    invoke-static {v4, v5}, Ljava/lang/reflect/Array;->newInstance(Ljava/lang/Class;[I)Ljava/lang/Object;
 
     move-result-object v4
 

@@ -82,7 +82,7 @@
 .method public bridge synthetic invoke(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
     .locals 2
 
-    .line 367
+    .line 391
     check-cast p1, Landroidx/compose/runtime/saveable/SaverScope;
 
     check-cast p2, Landroidx/compose/ui/unit/TextUnit;
@@ -101,11 +101,32 @@
 .method public final invoke-mpE4wyQ(Landroidx/compose/runtime/saveable/SaverScope;J)Ljava/lang/Object;
     .locals 0
 
-    const-string p0, "$this$Saver"
+    .line 393
+    sget-object p0, Landroidx/compose/ui/unit/TextUnit;->Companion:Landroidx/compose/ui/unit/TextUnit$Companion;
 
-    invoke-static {p1, p0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-virtual {p0}, Landroidx/compose/ui/unit/TextUnit$Companion;->getUnspecified-XSAIIZE()J
 
-    .line 369
+    move-result-wide p0
+
+    invoke-static {p2, p3, p0, p1}, Landroidx/compose/ui/unit/TextUnit;->equals-impl0(JJ)Z
+
+    move-result p0
+
+    if-eqz p0, :cond_0
+
+    const/4 p0, 0x0
+
+    .line 394
+    invoke-static {p0}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
+
+    move-result-object p0
+
+    check-cast p0, Ljava/io/Serializable;
+
+    goto :goto_0
+
+    .line 396
+    :cond_0
     invoke-static {p2, p3}, Landroidx/compose/ui/unit/TextUnit;->getValue-impl(J)F
 
     move-result p0
@@ -138,5 +159,8 @@
 
     move-result-object p0
 
+    check-cast p0, Ljava/io/Serializable;
+
+    :goto_0
     return-object p0
 .end method

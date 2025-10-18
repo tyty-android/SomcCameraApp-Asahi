@@ -4,20 +4,4 @@
         <item quantity="other">%d thông báo mới</item>
         <item quantity="one">%d thông báo mới</item>
     </plurals>
-    <plurals name="mv_minute_remaining_txt">
-        <item quantity="other">Còn %1$d phút</item>
-        <item quantity="one">còn 1 phút</item>
-    </plurals>
-    <plurals name="mv_minute_txt">
-        <item quantity="other">%1$d phút</item>
-        <item quantity="one">1 phút</item>
-    </plurals>
-    <plurals name="mv_second_remaining_txt">
-        <item quantity="other">Còn %1$d giây</item>
-        <item quantity="one">còn 1 giây</item>
-    </plurals>
-    <plurals name="mv_second_txt">
-        <item quantity="other">%1$d giây</item>
-        <item quantity="one">1 giây</item>
-    </plurals>
 </resources>

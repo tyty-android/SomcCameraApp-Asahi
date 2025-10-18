@@ -56,7 +56,7 @@
 
     move-result-object p0
 
-    const-string v0, "current()"
+    const-string v0, "current(...)"
 
     invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
 

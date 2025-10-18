@@ -25,7 +25,7 @@
 .method private constructor <init>(Ljp/co/sony/mc/camera/device/state/DeviceStateContext;)V
     .locals 0
 
-    .line 3089
+    .line 3165
     iput-object p1, p0, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$OnFocusMagnificationResultCallback;->this$0:Ljp/co/sony/mc/camera/device/state/DeviceStateContext;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -46,7 +46,7 @@
 .method public onFocusMagnificationResultChanged(Ljp/co/sony/mc/camera/device/CaptureResultNotifier$FocusMagnificationResult;)V
     .locals 0
 
-    .line 3098
+    .line 3174
     iget-object p0, p0, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$OnFocusMagnificationResultCallback;->this$0:Ljp/co/sony/mc/camera/device/state/DeviceStateContext;
 
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/device/state/DeviceStateContext;->getCameraDeviceHandlerCallback()Ljp/co/sony/mc/camera/device/state/IDeviceStateMachineCallback;

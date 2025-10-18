@@ -21,7 +21,7 @@
 .method constructor <init>()V
     .locals 0
 
-    .line 3234
+    .line 3327
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -42,15 +42,15 @@
         }
     .end annotation
 
-    .line 3238
+    .line 3331
     check-cast p1, Ljp/co/sony/mc/camera/setting/CameraSettings;
 
-    .line 3239
-    invoke-virtual {p1}, Ljp/co/sony/mc/camera/setting/CameraSettings;->getBrightness()Ljava/lang/Integer;
+    .line 3332
+    invoke-static {p1}, Ljp/co/sony/mc/camera/setting/CameraSettings;->-$$Nest$mgetFocusArea(Ljp/co/sony/mc/camera/setting/CameraSettings;)Ljp/co/sony/mc/camera/configuration/parameters/FocusArea;
 
     move-result-object p0
 
-    invoke-static {p1}, Ljp/co/sony/mc/camera/setting/CameraSettings;->-$$Nest$fgetmBrightness(Ljp/co/sony/mc/camera/setting/CameraSettings;)Ljava/lang/Integer;
+    invoke-static {p1}, Ljp/co/sony/mc/camera/setting/CameraSettings;->-$$Nest$fgetmFocusArea(Ljp/co/sony/mc/camera/setting/CameraSettings;)Ljp/co/sony/mc/camera/configuration/parameters/FocusArea;
 
     move-result-object p1
 

@@ -21,7 +21,7 @@
 .method constructor <init>()V
     .locals 0
 
-    .line 1386
+    .line 1442
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -46,13 +46,13 @@
         }
     .end annotation
 
-    .line 1390
+    .line 1446
     check-cast p1, Ljp/co/sony/mc/camera/setting/CameraSettings;
 
-    .line 1391
-    check-cast p3, Ljp/co/sony/mc/camera/configuration/parameters/VideoSize;
+    .line 1447
+    check-cast p3, Ljp/co/sony/mc/camera/configuration/parameters/ObjectTracking;
 
-    invoke-static {p1, p3}, Ljp/co/sony/mc/camera/setting/CameraSettings;->-$$Nest$msetVideoSize(Ljp/co/sony/mc/camera/setting/CameraSettings;Ljp/co/sony/mc/camera/configuration/parameters/VideoSize;)Z
+    invoke-static {p1, p3}, Ljp/co/sony/mc/camera/setting/CameraSettings;->-$$Nest$msetObjectTracking(Ljp/co/sony/mc/camera/setting/CameraSettings;Ljp/co/sony/mc/camera/configuration/parameters/ObjectTracking;)Z
 
     move-result p0
 

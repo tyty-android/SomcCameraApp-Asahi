@@ -571,116 +571,111 @@
 .end method
 
 .method private getChildRectangleOnScreenScrollAmount(Landroid/view/View;Landroid/graphics/Rect;)[I
-    .locals 8
-
-    const/4 v0, 0x2
-
-    .line 10655
-    new-array v0, v0, [I
+    .locals 7
 
     .line 10656
     invoke-virtual {p0}, Landroidx/recyclerview/widget/RecyclerView$LayoutManager;->getPaddingLeft()I
 
-    move-result v1
+    move-result v0
 
     .line 10657
     invoke-virtual {p0}, Landroidx/recyclerview/widget/RecyclerView$LayoutManager;->getPaddingTop()I
 
-    move-result v2
+    move-result v1
 
     .line 10658
     invoke-virtual {p0}, Landroidx/recyclerview/widget/RecyclerView$LayoutManager;->getWidth()I
 
-    move-result v3
+    move-result v2
 
     invoke-virtual {p0}, Landroidx/recyclerview/widget/RecyclerView$LayoutManager;->getPaddingRight()I
+
+    move-result v3
+
+    sub-int/2addr v2, v3
+
+    .line 10659
+    invoke-virtual {p0}, Landroidx/recyclerview/widget/RecyclerView$LayoutManager;->getHeight()I
+
+    move-result v3
+
+    invoke-virtual {p0}, Landroidx/recyclerview/widget/RecyclerView$LayoutManager;->getPaddingBottom()I
 
     move-result v4
 
     sub-int/2addr v3, v4
 
-    .line 10659
-    invoke-virtual {p0}, Landroidx/recyclerview/widget/RecyclerView$LayoutManager;->getHeight()I
+    .line 10660
+    invoke-virtual {p1}, Landroid/view/View;->getLeft()I
 
     move-result v4
 
-    invoke-virtual {p0}, Landroidx/recyclerview/widget/RecyclerView$LayoutManager;->getPaddingBottom()I
+    iget v5, p2, Landroid/graphics/Rect;->left:I
+
+    add-int/2addr v4, v5
+
+    invoke-virtual {p1}, Landroid/view/View;->getScrollX()I
 
     move-result v5
 
     sub-int/2addr v4, v5
 
-    .line 10660
-    invoke-virtual {p1}, Landroid/view/View;->getLeft()I
-
-    move-result v5
-
-    iget v6, p2, Landroid/graphics/Rect;->left:I
-
-    add-int/2addr v5, v6
-
-    invoke-virtual {p1}, Landroid/view/View;->getScrollX()I
-
-    move-result v6
-
-    sub-int/2addr v5, v6
-
     .line 10661
     invoke-virtual {p1}, Landroid/view/View;->getTop()I
 
-    move-result v6
+    move-result v5
 
-    iget v7, p2, Landroid/graphics/Rect;->top:I
+    iget v6, p2, Landroid/graphics/Rect;->top:I
 
-    add-int/2addr v6, v7
+    add-int/2addr v5, v6
 
     invoke-virtual {p1}, Landroid/view/View;->getScrollY()I
 
     move-result p1
 
-    sub-int/2addr v6, p1
+    sub-int/2addr v5, p1
 
     .line 10662
     invoke-virtual {p2}, Landroid/graphics/Rect;->width()I
 
     move-result p1
 
-    add-int/2addr p1, v5
+    add-int/2addr p1, v4
 
     .line 10663
     invoke-virtual {p2}, Landroid/graphics/Rect;->height()I
 
     move-result p2
 
-    add-int/2addr p2, v6
+    add-int/2addr p2, v5
+
+    sub-int/2addr v4, v0
+
+    const/4 v0, 0x0
+
+    .line 10665
+    invoke-static {v0, v4}, Ljava/lang/Math;->min(II)I
+
+    move-result v6
 
     sub-int/2addr v5, v1
 
-    const/4 v1, 0x0
-
-    .line 10665
-    invoke-static {v1, v5}, Ljava/lang/Math;->min(II)I
-
-    move-result v7
-
-    sub-int/2addr v6, v2
-
     .line 10666
-    invoke-static {v1, v6}, Ljava/lang/Math;->min(II)I
+    invoke-static {v0, v5}, Ljava/lang/Math;->min(II)I
+
+    move-result v1
+
+    sub-int/2addr p1, v2
+
+    .line 10667
+    invoke-static {v0, p1}, Ljava/lang/Math;->max(II)I
 
     move-result v2
 
-    sub-int/2addr p1, v3
-
-    .line 10667
-    invoke-static {v1, p1}, Ljava/lang/Math;->max(II)I
-
-    move-result v3
-
-    sub-int/2addr p2, v4
+    sub-int/2addr p2, v3
 
     .line 10668
-    invoke-static {v1, p2}, Ljava/lang/Math;->max(II)I
+    invoke-static {v0, p2}, Ljava/lang/Math;->max(II)I
 
     move-result p2
 
@@ -689,55 +684,54 @@
 
     move-result p0
 
-    const/4 v4, 0x1
+    const/4 v0, 0x1
 
-    if-ne p0, v4, :cond_1
+    if-ne p0, v0, :cond_1
 
-    if-eqz v3, :cond_0
+    if-eqz v2, :cond_0
 
     goto :goto_1
 
     .line 10676
     :cond_0
-    invoke-static {v7, p1}, Ljava/lang/Math;->max(II)I
+    invoke-static {v6, p1}, Ljava/lang/Math;->max(II)I
 
-    move-result v3
+    move-result v2
 
     goto :goto_1
 
     :cond_1
-    if-eqz v7, :cond_2
+    if-eqz v6, :cond_2
 
     goto :goto_0
 
     .line 10679
     :cond_2
-    invoke-static {v5, v3}, Ljava/lang/Math;->min(II)I
+    invoke-static {v4, v2}, Ljava/lang/Math;->min(II)I
 
-    move-result v7
+    move-result v6
 
     :goto_0
-    move v3, v7
+    move v2, v6
 
     :goto_1
-    if-eqz v2, :cond_3
+    if-eqz v1, :cond_3
 
     goto :goto_2
 
     .line 10685
     :cond_3
-    invoke-static {v6, p2}, Ljava/lang/Math;->min(II)I
+    invoke-static {v5, p2}, Ljava/lang/Math;->min(II)I
 
-    move-result v2
-
-    .line 10686
-    :goto_2
-    aput v3, v0, v1
+    move-result v1
 
     .line 10687
-    aput v2, v0, v4
+    :goto_2
+    filled-new-array {v2, v1}, [I
 
-    return-object v0
+    move-result-object p0
+
+    return-object p0
 .end method
 
 .method public static getProperties(Landroid/content/Context;Landroid/util/AttributeSet;II)Landroidx/recyclerview/widget/RecyclerView$LayoutManager$Properties;

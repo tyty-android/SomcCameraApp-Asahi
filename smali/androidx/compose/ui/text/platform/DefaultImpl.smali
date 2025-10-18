@@ -1,6 +1,6 @@
 .class final Landroidx/compose/ui/text/platform/DefaultImpl;
 .super Ljava/lang/Object;
-.source "EmojiCompatStatus.kt"
+.source "EmojiCompatStatus.android.kt"
 
 # interfaces
 .implements Landroidx/compose/ui/text/platform/EmojiCompatStatusDelegate;
@@ -102,10 +102,6 @@
 
     move-result-object v0
 
-    const-string v1, "get()"
-
-    invoke-static {v0, v1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
-
     .line 92
     invoke-virtual {v0}, Landroidx/emoji2/text/EmojiCompat;->getLoadState()I
 
@@ -204,7 +200,7 @@
 
     .line 86
     :cond_1
-    invoke-static {}, Landroidx/compose/ui/text/platform/EmojiCompatStatusKt;->access$getFalsey$p()Landroidx/compose/ui/text/platform/ImmutableBool;
+    invoke-static {}, Landroidx/compose/ui/text/platform/EmojiCompatStatus_androidKt;->access$getFalsey$p()Landroidx/compose/ui/text/platform/ImmutableBool;
 
     move-result-object p0
 

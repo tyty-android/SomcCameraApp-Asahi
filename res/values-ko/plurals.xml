@@ -4,20 +4,4 @@
         <item quantity="other">새 알림 %d개</item>
         <item quantity="one">새 알림 %d개</item>
     </plurals>
-    <plurals name="mv_minute_remaining_txt">
-        <item quantity="other">%1$d분 남음</item>
-        <item quantity="one">1분 남음</item>
-    </plurals>
-    <plurals name="mv_minute_txt">
-        <item quantity="other">%1$d분</item>
-        <item quantity="one">1분</item>
-    </plurals>
-    <plurals name="mv_second_remaining_txt">
-        <item quantity="other">%1$d초 남음</item>
-        <item quantity="one">1초 남음</item>
-    </plurals>
-    <plurals name="mv_second_txt">
-        <item quantity="other">%1$d초</item>
-        <item quantity="one">1초</item>
-    </plurals>
 </resources>

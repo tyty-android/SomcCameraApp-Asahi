@@ -21,7 +21,7 @@
 .method constructor <init>()V
     .locals 0
 
-    .line 1554
+    .line 1611
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -46,13 +46,13 @@
         }
     .end annotation
 
-    .line 1558
+    .line 1615
     check-cast p1, Ljp/co/sony/mc/camera/setting/CameraSettings;
 
-    .line 1559
-    check-cast p3, Ljp/co/sony/mc/camera/configuration/parameters/WindNoiseReduction;
+    .line 1616
+    check-cast p3, Ljp/co/sony/mc/camera/configuration/parameters/PreAutoFocus;
 
-    invoke-static {p1, p3}, Ljp/co/sony/mc/camera/setting/CameraSettings;->-$$Nest$msetWindNoiseReduction(Ljp/co/sony/mc/camera/setting/CameraSettings;Ljp/co/sony/mc/camera/configuration/parameters/WindNoiseReduction;)Z
+    invoke-static {p1, p3}, Ljp/co/sony/mc/camera/setting/CameraSettings;->-$$Nest$msetPreAutoFocus(Ljp/co/sony/mc/camera/setting/CameraSettings;Ljp/co/sony/mc/camera/configuration/parameters/PreAutoFocus;)Z
 
     move-result p0
 

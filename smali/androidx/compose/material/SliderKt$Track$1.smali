@@ -27,7 +27,7 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/SourceDebugExtension;
-    value = "SMAP\nSlider.kt\nKotlin\n*S Kotlin\n*F\n+ 1 Slider.kt\nandroidx/compose/material/SliderKt$Track$1\n+ 2 _Collections.kt\nkotlin/collections/CollectionsKt___CollectionsKt\n+ 3 Maps.kt\nkotlin/collections/MapsKt__MapsKt\n+ 4 _Maps.kt\nkotlin/collections/MapsKt___MapsKt\n*L\n1#1,1190:1\n1477#2:1191\n1502#2,3:1192\n1505#2,3:1202\n1549#2:1206\n1620#2,3:1207\n361#3,7:1195\n215#4:1205\n216#4:1210\n*S KotlinDebug\n*F\n+ 1 Slider.kt\nandroidx/compose/material/SliderKt$Track$1\n*L\n775#1:1191\n775#1:1192,3\n775#1:1202,3\n778#1:1206\n778#1:1207,3\n775#1:1195,7\n776#1:1205\n776#1:1210\n*E\n"
+    value = "SMAP\nSlider.kt\nKotlin\n*S Kotlin\n*F\n+ 1 Slider.kt\nandroidx/compose/material/SliderKt$Track$1\n+ 2 _Collections.kt\nkotlin/collections/CollectionsKt___CollectionsKt\n+ 3 Maps.kt\nkotlin/collections/MapsKt__MapsKt\n+ 4 _Maps.kt\nkotlin/collections/MapsKt___MapsKt\n+ 5 ListUtils.kt\nandroidx/compose/ui/util/ListUtilsKt\n*L\n1#1,1195:1\n1477#2:1196\n1502#2,3:1197\n1505#2,3:1207\n361#3,7:1200\n215#4:1210\n216#4:1222\n151#5,3:1211\n33#5,4:1214\n154#5,2:1218\n38#5:1220\n156#5:1221\n*S KotlinDebug\n*F\n+ 1 Slider.kt\nandroidx/compose/material/SliderKt$Track$1\n*L\n779#1:1196\n779#1:1197,3\n779#1:1207,3\n779#1:1200,7\n780#1:1210\n780#1:1222\n782#1:1211,3\n782#1:1214,4\n782#1:1218,2\n782#1:1220\n782#1:1221\n*E\n"
 .end annotation
 
 .annotation runtime Lkotlin/Metadata;
@@ -164,7 +164,7 @@
 .method public bridge synthetic invoke(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
 
-    .line 745
+    .line 748
     check-cast p1, Landroidx/compose/ui/graphics/drawscope/DrawScope;
 
     invoke-virtual {p0, p1}, Landroidx/compose/material/SliderKt$Track$1;->invoke(Landroidx/compose/ui/graphics/drawscope/DrawScope;)V
@@ -175,64 +175,31 @@
 .end method
 
 .method public final invoke(Landroidx/compose/ui/graphics/drawscope/DrawScope;)V
-    .locals 25
+    .locals 24
 
     move-object/from16 v0, p0
 
-    const-string v1, "$this$Canvas"
-
-    move-object/from16 v15, p1
-
-    invoke-static {v15, v1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 746
+    .line 749
     invoke-interface/range {p1 .. p1}, Landroidx/compose/ui/graphics/drawscope/DrawScope;->getLayoutDirection()Landroidx/compose/ui/unit/LayoutDirection;
 
     move-result-object v1
 
     sget-object v2, Landroidx/compose/ui/unit/LayoutDirection;->Rtl:Landroidx/compose/ui/unit/LayoutDirection;
 
-    const/16 v17, 0x1
-
-    const/16 v18, 0x0
+    const/4 v3, 0x1
 
     if-ne v1, v2, :cond_0
 
-    move/from16 v1, v17
+    move v1, v3
 
     goto :goto_0
 
     :cond_0
-    move/from16 v1, v18
+    const/4 v1, 0x0
 
-    .line 747
+    .line 750
     :goto_0
     iget v2, v0, Landroidx/compose/material/SliderKt$Track$1;->$thumbPx:F
-
-    invoke-interface/range {p1 .. p1}, Landroidx/compose/ui/graphics/drawscope/DrawScope;->getCenter-F1C5BW0()J
-
-    move-result-wide v3
-
-    invoke-static {v3, v4}, Landroidx/compose/ui/geometry/Offset;->getY-impl(J)F
-
-    move-result v3
-
-    invoke-static {v2, v3}, Landroidx/compose/ui/geometry/OffsetKt;->Offset(FF)J
-
-    move-result-wide v2
-
-    .line 748
-    invoke-interface/range {p1 .. p1}, Landroidx/compose/ui/graphics/drawscope/DrawScope;->getSize-NH-jbRc()J
-
-    move-result-wide v4
-
-    invoke-static {v4, v5}, Landroidx/compose/ui/geometry/Size;->getWidth-impl(J)F
-
-    move-result v4
-
-    iget v5, v0, Landroidx/compose/material/SliderKt$Track$1;->$thumbPx:F
-
-    sub-float/2addr v4, v5
 
     invoke-interface/range {p1 .. p1}, Landroidx/compose/ui/graphics/drawscope/DrawScope;->getCenter-F1C5BW0()J
 
@@ -242,30 +209,53 @@
 
     move-result v5
 
-    invoke-static {v4, v5}, Landroidx/compose/ui/geometry/OffsetKt;->Offset(FF)J
+    invoke-static {v2, v5}, Landroidx/compose/ui/geometry/OffsetKt;->Offset(FF)J
 
-    move-result-wide v4
+    move-result-wide v5
+
+    .line 751
+    invoke-interface/range {p1 .. p1}, Landroidx/compose/ui/graphics/drawscope/DrawScope;->getSize-NH-jbRc()J
+
+    move-result-wide v7
+
+    invoke-static {v7, v8}, Landroidx/compose/ui/geometry/Size;->getWidth-impl(J)F
+
+    move-result v2
+
+    iget v7, v0, Landroidx/compose/material/SliderKt$Track$1;->$thumbPx:F
+
+    sub-float/2addr v2, v7
+
+    invoke-interface/range {p1 .. p1}, Landroidx/compose/ui/graphics/drawscope/DrawScope;->getCenter-F1C5BW0()J
+
+    move-result-wide v7
+
+    invoke-static {v7, v8}, Landroidx/compose/ui/geometry/Offset;->getY-impl(J)F
+
+    move-result v7
+
+    invoke-static {v2, v7}, Landroidx/compose/ui/geometry/OffsetKt;->Offset(FF)J
+
+    move-result-wide v7
 
     if-eqz v1, :cond_1
 
-    move-wide v13, v4
+    move-wide v14, v7
 
     goto :goto_1
 
     :cond_1
-    move-wide v13, v2
+    move-wide v14, v5
 
     :goto_1
     if-eqz v1, :cond_2
 
-    move-wide v11, v2
-
     goto :goto_2
 
     :cond_2
-    move-wide v11, v4
+    move-wide v5, v7
 
-    .line 752
+    .line 755
     :goto_2
     iget-object v1, v0, Landroidx/compose/material/SliderKt$Track$1;->$inactiveTrackColor:Landroidx/compose/runtime/State;
 
@@ -277,21 +267,23 @@
 
     invoke-virtual {v1}, Landroidx/compose/ui/graphics/Color;->unbox-impl()J
 
-    move-result-wide v3
+    move-result-wide v10
 
-    .line 755
-    iget v9, v0, Landroidx/compose/material/SliderKt$Track$1;->$trackStrokeWidth:F
+    .line 758
+    iget v1, v0, Landroidx/compose/material/SliderKt$Track$1;->$trackStrokeWidth:F
 
-    .line 756
-    sget-object v1, Landroidx/compose/ui/graphics/StrokeCap;->Companion:Landroidx/compose/ui/graphics/StrokeCap$Companion;
+    .line 759
+    sget-object v2, Landroidx/compose/ui/graphics/StrokeCap;->Companion:Landroidx/compose/ui/graphics/StrokeCap$Companion;
 
-    invoke-virtual {v1}, Landroidx/compose/ui/graphics/StrokeCap$Companion;->getRound-KaPHkGw()I
+    invoke-virtual {v2}, Landroidx/compose/ui/graphics/StrokeCap$Companion;->getRound-KaPHkGw()I
 
-    move-result v10
+    move-result v17
 
-    const/16 v1, 0x1e0
+    const/16 v22, 0x1e0
 
-    const/16 v16, 0x0
+    const/16 v23, 0x0
+
+    const/16 v18, 0x0
 
     const/16 v19, 0x0
 
@@ -299,102 +291,90 @@
 
     const/16 v21, 0x0
 
-    const/16 v22, 0x0
+    move-object/from16 v9, p1
 
-    move-object/from16 v2, p1
+    move-wide v12, v14
 
-    move-wide v5, v13
+    move-wide v7, v14
 
-    move-wide v7, v11
+    move-wide v14, v5
 
-    move-wide/from16 v23, v11
+    move/from16 v16, v1
 
-    move-object/from16 v11, v19
+    .line 754
+    invoke-static/range {v9 .. v23}, Landroidx/compose/ui/graphics/drawscope/DrawScope;->drawLine-NGM6Ib0$default(Landroidx/compose/ui/graphics/drawscope/DrawScope;JJJFILandroidx/compose/ui/graphics/PathEffect;FLandroidx/compose/ui/graphics/ColorFilter;IILjava/lang/Object;)V
 
-    move/from16 v12, v20
-
-    move-wide/from16 v19, v13
-
-    move-object/from16 v13, v21
-
-    move/from16 v14, v22
-
-    move v15, v1
-
-    .line 751
-    invoke-static/range {v2 .. v16}, Landroidx/compose/ui/graphics/drawscope/DrawScope;->drawLine-NGM6Ib0$default(Landroidx/compose/ui/graphics/drawscope/DrawScope;JJJFILandroidx/compose/ui/graphics/PathEffect;FLandroidx/compose/ui/graphics/ColorFilter;IILjava/lang/Object;)V
-
-    .line 759
-    invoke-static/range {v19 .. v20}, Landroidx/compose/ui/geometry/Offset;->getX-impl(J)F
+    .line 762
+    invoke-static {v7, v8}, Landroidx/compose/ui/geometry/Offset;->getX-impl(J)F
 
     move-result v1
 
-    invoke-static/range {v23 .. v24}, Landroidx/compose/ui/geometry/Offset;->getX-impl(J)F
+    invoke-static {v5, v6}, Landroidx/compose/ui/geometry/Offset;->getX-impl(J)F
 
     move-result v2
 
-    invoke-static/range {v19 .. v20}, Landroidx/compose/ui/geometry/Offset;->getX-impl(J)F
+    invoke-static {v7, v8}, Landroidx/compose/ui/geometry/Offset;->getX-impl(J)F
 
-    move-result v3
+    move-result v9
 
-    sub-float/2addr v2, v3
+    sub-float/2addr v2, v9
 
-    iget v3, v0, Landroidx/compose/material/SliderKt$Track$1;->$positionFractionEnd:F
+    iget v9, v0, Landroidx/compose/material/SliderKt$Track$1;->$positionFractionEnd:F
 
-    mul-float/2addr v2, v3
+    mul-float/2addr v2, v9
 
     add-float/2addr v1, v2
-
-    .line 760
-    invoke-interface/range {p1 .. p1}, Landroidx/compose/ui/graphics/drawscope/DrawScope;->getCenter-F1C5BW0()J
-
-    move-result-wide v2
-
-    invoke-static {v2, v3}, Landroidx/compose/ui/geometry/Offset;->getY-impl(J)F
-
-    move-result v2
-
-    .line 758
-    invoke-static {v1, v2}, Landroidx/compose/ui/geometry/OffsetKt;->Offset(FF)J
-
-    move-result-wide v7
-
-    .line 764
-    invoke-static/range {v19 .. v20}, Landroidx/compose/ui/geometry/Offset;->getX-impl(J)F
-
-    move-result v1
-
-    invoke-static/range {v23 .. v24}, Landroidx/compose/ui/geometry/Offset;->getX-impl(J)F
-
-    move-result v2
-
-    invoke-static/range {v19 .. v20}, Landroidx/compose/ui/geometry/Offset;->getX-impl(J)F
-
-    move-result v3
-
-    sub-float/2addr v2, v3
-
-    iget v3, v0, Landroidx/compose/material/SliderKt$Track$1;->$positionFractionStart:F
-
-    mul-float/2addr v2, v3
-
-    add-float/2addr v1, v2
-
-    .line 765
-    invoke-interface/range {p1 .. p1}, Landroidx/compose/ui/graphics/drawscope/DrawScope;->getCenter-F1C5BW0()J
-
-    move-result-wide v2
-
-    invoke-static {v2, v3}, Landroidx/compose/ui/geometry/Offset;->getY-impl(J)F
-
-    move-result v2
 
     .line 763
+    invoke-interface/range {p1 .. p1}, Landroidx/compose/ui/graphics/drawscope/DrawScope;->getCenter-F1C5BW0()J
+
+    move-result-wide v9
+
+    invoke-static {v9, v10}, Landroidx/compose/ui/geometry/Offset;->getY-impl(J)F
+
+    move-result v2
+
+    .line 761
     invoke-static {v1, v2}, Landroidx/compose/ui/geometry/OffsetKt;->Offset(FF)J
 
-    move-result-wide v5
+    move-result-wide v14
 
-    .line 769
+    .line 767
+    invoke-static {v7, v8}, Landroidx/compose/ui/geometry/Offset;->getX-impl(J)F
+
+    move-result v1
+
+    invoke-static {v5, v6}, Landroidx/compose/ui/geometry/Offset;->getX-impl(J)F
+
+    move-result v2
+
+    invoke-static {v7, v8}, Landroidx/compose/ui/geometry/Offset;->getX-impl(J)F
+
+    move-result v9
+
+    sub-float/2addr v2, v9
+
+    iget v9, v0, Landroidx/compose/material/SliderKt$Track$1;->$positionFractionStart:F
+
+    mul-float/2addr v2, v9
+
+    add-float/2addr v1, v2
+
+    .line 768
+    invoke-interface/range {p1 .. p1}, Landroidx/compose/ui/graphics/drawscope/DrawScope;->getCenter-F1C5BW0()J
+
+    move-result-wide v9
+
+    invoke-static {v9, v10}, Landroidx/compose/ui/geometry/Offset;->getY-impl(J)F
+
+    move-result v2
+
+    .line 766
+    invoke-static {v1, v2}, Landroidx/compose/ui/geometry/OffsetKt;->Offset(FF)J
+
+    move-result-wide v12
+
+    .line 772
     iget-object v1, v0, Landroidx/compose/material/SliderKt$Track$1;->$activeTrackColor:Landroidx/compose/runtime/State;
 
     invoke-interface {v1}, Landroidx/compose/runtime/State;->getValue()Ljava/lang/Object;
@@ -405,50 +385,42 @@
 
     invoke-virtual {v1}, Landroidx/compose/ui/graphics/Color;->unbox-impl()J
 
-    move-result-wide v3
-
-    .line 772
-    iget v9, v0, Landroidx/compose/material/SliderKt$Track$1;->$trackStrokeWidth:F
-
-    .line 773
-    sget-object v1, Landroidx/compose/ui/graphics/StrokeCap;->Companion:Landroidx/compose/ui/graphics/StrokeCap$Companion;
-
-    invoke-virtual {v1}, Landroidx/compose/ui/graphics/StrokeCap$Companion;->getRound-KaPHkGw()I
-
-    move-result v10
-
-    const/16 v15, 0x1e0
-
-    const/4 v11, 0x0
-
-    const/4 v12, 0x0
-
-    const/4 v13, 0x0
-
-    const/4 v14, 0x0
-
-    move-object/from16 v2, p1
-
-    .line 768
-    invoke-static/range {v2 .. v16}, Landroidx/compose/ui/graphics/drawscope/DrawScope;->drawLine-NGM6Ib0$default(Landroidx/compose/ui/graphics/drawscope/DrawScope;JJJFILandroidx/compose/ui/graphics/PathEffect;FLandroidx/compose/ui/graphics/ColorFilter;IILjava/lang/Object;)V
+    move-result-wide v10
 
     .line 775
+    iget v1, v0, Landroidx/compose/material/SliderKt$Track$1;->$trackStrokeWidth:F
+
+    .line 776
+    sget-object v2, Landroidx/compose/ui/graphics/StrokeCap;->Companion:Landroidx/compose/ui/graphics/StrokeCap$Companion;
+
+    invoke-virtual {v2}, Landroidx/compose/ui/graphics/StrokeCap$Companion;->getRound-KaPHkGw()I
+
+    move-result v17
+
+    move-object/from16 v9, p1
+
+    move/from16 v16, v1
+
+    .line 771
+    invoke-static/range {v9 .. v23}, Landroidx/compose/ui/graphics/drawscope/DrawScope;->drawLine-NGM6Ib0$default(Landroidx/compose/ui/graphics/drawscope/DrawScope;JJJFILandroidx/compose/ui/graphics/PathEffect;FLandroidx/compose/ui/graphics/ColorFilter;IILjava/lang/Object;)V
+
+    .line 779
     iget-object v1, v0, Landroidx/compose/material/SliderKt$Track$1;->$tickFractions:Ljava/util/List;
 
     check-cast v1, Ljava/lang/Iterable;
 
     iget v2, v0, Landroidx/compose/material/SliderKt$Track$1;->$positionFractionEnd:F
 
-    iget v3, v0, Landroidx/compose/material/SliderKt$Track$1;->$positionFractionStart:F
+    iget v9, v0, Landroidx/compose/material/SliderKt$Track$1;->$positionFractionStart:F
 
-    .line 1191
-    new-instance v4, Ljava/util/LinkedHashMap;
+    .line 1196
+    new-instance v10, Ljava/util/LinkedHashMap;
 
-    invoke-direct {v4}, Ljava/util/LinkedHashMap;-><init>()V
+    invoke-direct {v10}, Ljava/util/LinkedHashMap;-><init>()V
 
-    check-cast v4, Ljava/util/Map;
+    check-cast v10, Ljava/util/Map;
 
-    .line 1192
+    .line 1197
     invoke-interface {v1}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
 
     move-result-object v1
@@ -456,275 +428,247 @@
     :goto_3
     invoke-interface {v1}, Ljava/util/Iterator;->hasNext()Z
 
-    move-result v5
+    move-result v11
 
-    if-eqz v5, :cond_6
+    if-eqz v11, :cond_6
 
     invoke-interface {v1}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
-    move-result-object v5
+    move-result-object v11
 
-    .line 1193
-    move-object v6, v5
+    .line 1198
+    move-object v12, v11
 
-    check-cast v6, Ljava/lang/Number;
+    check-cast v12, Ljava/lang/Number;
 
-    invoke-virtual {v6}, Ljava/lang/Number;->floatValue()F
+    invoke-virtual {v12}, Ljava/lang/Number;->floatValue()F
 
-    move-result v6
+    move-result v12
 
-    cmpl-float v7, v6, v2
+    cmpl-float v13, v12, v2
 
-    if-gtz v7, :cond_4
+    if-gtz v13, :cond_4
 
-    cmpg-float v6, v6, v3
+    cmpg-float v12, v12, v9
 
-    if-gez v6, :cond_3
+    if-gez v12, :cond_3
 
     goto :goto_4
 
     :cond_3
-    move/from16 v6, v18
+    const/4 v12, 0x0
 
     goto :goto_5
 
     :cond_4
     :goto_4
-    move/from16 v6, v17
+    move v12, v3
 
-    .line 775
+    .line 779
     :goto_5
-    invoke-static {v6}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
+    invoke-static {v12}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
-    move-result-object v6
+    move-result-object v12
 
-    .line 1195
-    invoke-interface {v4, v6}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
+    .line 1200
+    invoke-interface {v10, v12}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
-    move-result-object v7
+    move-result-object v13
 
-    if-nez v7, :cond_5
+    if-nez v13, :cond_5
 
-    .line 1194
-    new-instance v7, Ljava/util/ArrayList;
+    .line 1199
+    new-instance v13, Ljava/util/ArrayList;
 
-    invoke-direct {v7}, Ljava/util/ArrayList;-><init>()V
+    invoke-direct {v13}, Ljava/util/ArrayList;-><init>()V
 
-    check-cast v7, Ljava/util/List;
+    check-cast v13, Ljava/util/List;
 
-    .line 1198
-    invoke-interface {v4, v6, v7}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    .line 1203
+    invoke-interface {v10, v12, v13}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 1194
+    .line 1199
     :cond_5
-    check-cast v7, Ljava/util/List;
+    check-cast v13, Ljava/util/List;
 
-    .line 1202
-    invoke-interface {v7, v5}, Ljava/util/List;->add(Ljava/lang/Object;)Z
+    .line 1207
+    invoke-interface {v13, v11}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
     goto :goto_3
 
-    .line 776
+    .line 780
     :cond_6
     iget-object v1, v0, Landroidx/compose/material/SliderKt$Track$1;->$inactiveTickColor:Landroidx/compose/runtime/State;
 
-    iget-object v15, v0, Landroidx/compose/material/SliderKt$Track$1;->$activeTickColor:Landroidx/compose/runtime/State;
+    iget-object v2, v0, Landroidx/compose/material/SliderKt$Track$1;->$activeTickColor:Landroidx/compose/runtime/State;
 
     iget v0, v0, Landroidx/compose/material/SliderKt$Track$1;->$trackStrokeWidth:F
 
-    .line 1205
-    invoke-interface {v4}, Ljava/util/Map;->entrySet()Ljava/util/Set;
-
-    move-result-object v2
-
-    invoke-interface {v2}, Ljava/util/Set;->iterator()Ljava/util/Iterator;
-
-    move-result-object v16
-
-    :goto_6
-    invoke-interface/range {v16 .. v16}, Ljava/util/Iterator;->hasNext()Z
-
-    move-result v2
-
-    if-eqz v2, :cond_9
-
-    invoke-interface/range {v16 .. v16}, Ljava/util/Iterator;->next()Ljava/lang/Object;
-
-    move-result-object v2
-
-    check-cast v2, Ljava/util/Map$Entry;
-
-    .line 776
-    invoke-interface {v2}, Ljava/util/Map$Entry;->getKey()Ljava/lang/Object;
+    .line 1210
+    invoke-interface {v10}, Ljava/util/Map;->entrySet()Ljava/util/Set;
 
     move-result-object v3
 
-    check-cast v3, Ljava/lang/Boolean;
+    invoke-interface {v3}, Ljava/util/Set;->iterator()Ljava/util/Iterator;
 
-    invoke-virtual {v3}, Ljava/lang/Boolean;->booleanValue()Z
+    move-result-object v3
 
-    move-result v3
+    :goto_6
+    invoke-interface {v3}, Ljava/util/Iterator;->hasNext()Z
 
-    invoke-interface {v2}, Ljava/util/Map$Entry;->getValue()Ljava/lang/Object;
+    move-result v9
 
-    move-result-object v2
+    if-eqz v9, :cond_9
 
-    check-cast v2, Ljava/util/List;
+    invoke-interface {v3}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
-    .line 778
-    check-cast v2, Ljava/lang/Iterable;
+    move-result-object v9
 
-    .line 1206
-    new-instance v4, Ljava/util/ArrayList;
+    check-cast v9, Ljava/util/Map$Entry;
 
-    const/16 v5, 0xa
+    .line 780
+    invoke-interface {v9}, Ljava/util/Map$Entry;->getKey()Ljava/lang/Object;
 
-    invoke-static {v2, v5}, Lkotlin/collections/CollectionsKt;->collectionSizeOrDefault(Ljava/lang/Iterable;I)I
+    move-result-object v10
 
-    move-result v5
+    check-cast v10, Ljava/lang/Boolean;
 
-    invoke-direct {v4, v5}, Ljava/util/ArrayList;-><init>(I)V
+    invoke-virtual {v10}, Ljava/lang/Boolean;->booleanValue()Z
 
-    check-cast v4, Ljava/util/Collection;
+    move-result v10
 
-    .line 1207
-    invoke-interface {v2}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
+    invoke-interface {v9}, Ljava/util/Map$Entry;->getValue()Ljava/lang/Object;
 
-    move-result-object v2
+    move-result-object v9
+
+    check-cast v9, Ljava/util/List;
+
+    .line 1212
+    new-instance v11, Ljava/util/ArrayList;
+
+    invoke-interface {v9}, Ljava/util/List;->size()I
+
+    move-result v12
+
+    invoke-direct {v11, v12}, Ljava/util/ArrayList;-><init>(I)V
+
+    .line 1215
+    invoke-interface {v9}, Ljava/util/List;->size()I
+
+    move-result v12
+
+    const/4 v13, 0x0
 
     :goto_7
-    invoke-interface {v2}, Ljava/util/Iterator;->hasNext()Z
+    if-ge v13, v12, :cond_7
 
-    move-result v5
+    .line 1216
+    invoke-interface {v9, v13}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
-    if-eqz v5, :cond_7
+    move-result-object v14
 
-    invoke-interface {v2}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+    .line 1218
+    move-object v15, v11
 
-    move-result-object v5
+    check-cast v15, Ljava/util/Collection;
 
-    .line 1208
-    check-cast v5, Ljava/lang/Number;
+    check-cast v14, Ljava/lang/Number;
 
-    invoke-virtual {v5}, Ljava/lang/Number;->floatValue()F
+    invoke-virtual {v14}, Ljava/lang/Number;->floatValue()F
 
-    move-result v5
+    move-result v14
 
-    move-wide/from16 v13, v19
+    .line 783
+    invoke-static {v7, v8, v5, v6, v14}, Landroidx/compose/ui/geometry/OffsetKt;->lerp-Wko1d7g(JJF)J
 
-    move-wide/from16 v11, v23
+    move-result-wide v16
 
-    .line 779
-    invoke-static {v13, v14, v11, v12, v5}, Landroidx/compose/ui/geometry/OffsetKt;->lerp-Wko1d7g(JJF)J
+    invoke-static/range {v16 .. v17}, Landroidx/compose/ui/geometry/Offset;->getX-impl(J)F
 
-    move-result-wide v5
-
-    invoke-static {v5, v6}, Landroidx/compose/ui/geometry/Offset;->getX-impl(J)F
-
-    move-result v5
+    move-result v14
 
     invoke-interface/range {p1 .. p1}, Landroidx/compose/ui/graphics/drawscope/DrawScope;->getCenter-F1C5BW0()J
 
-    move-result-wide v6
+    move-result-wide v16
 
-    invoke-static {v6, v7}, Landroidx/compose/ui/geometry/Offset;->getY-impl(J)F
+    invoke-static/range {v16 .. v17}, Landroidx/compose/ui/geometry/Offset;->getY-impl(J)F
 
-    move-result v6
+    move-result v4
 
-    invoke-static {v5, v6}, Landroidx/compose/ui/geometry/OffsetKt;->Offset(FF)J
+    invoke-static {v14, v4}, Landroidx/compose/ui/geometry/OffsetKt;->Offset(FF)J
 
-    move-result-wide v5
+    move-result-wide v16
 
-    invoke-static {v5, v6}, Landroidx/compose/ui/geometry/Offset;->box-impl(J)Landroidx/compose/ui/geometry/Offset;
+    invoke-static/range {v16 .. v17}, Landroidx/compose/ui/geometry/Offset;->box-impl(J)Landroidx/compose/ui/geometry/Offset;
 
-    move-result-object v5
+    move-result-object v4
 
-    .line 1208
-    invoke-interface {v4, v5}, Ljava/util/Collection;->add(Ljava/lang/Object;)Z
+    .line 1218
+    invoke-interface {v15, v4}, Ljava/util/Collection;->add(Ljava/lang/Object;)Z
+
+    add-int/lit8 v13, v13, 0x1
 
     goto :goto_7
 
+    .line 1221
     :cond_7
-    move-wide/from16 v13, v19
+    move-object v12, v11
 
-    move-wide/from16 v11, v23
+    check-cast v12, Ljava/util/List;
 
-    .line 1209
-    check-cast v4, Ljava/util/List;
+    .line 785
+    sget-object v4, Landroidx/compose/ui/graphics/PointMode;->Companion:Landroidx/compose/ui/graphics/PointMode$Companion;
 
-    .line 781
-    sget-object v2, Landroidx/compose/ui/graphics/PointMode;->Companion:Landroidx/compose/ui/graphics/PointMode$Companion;
+    invoke-virtual {v4}, Landroidx/compose/ui/graphics/PointMode$Companion;->getPoints-r_lszbg()I
 
-    invoke-virtual {v2}, Landroidx/compose/ui/graphics/PointMode$Companion;->getPoints-r_lszbg()I
+    move-result v13
 
-    move-result v5
+    if-eqz v10, :cond_8
 
-    if-eqz v3, :cond_8
-
-    move-object v2, v1
+    move-object v4, v1
 
     goto :goto_8
 
     :cond_8
-    move-object v2, v15
+    move-object v4, v2
 
-    .line 782
+    .line 786
     :goto_8
-    invoke-interface {v2}, Landroidx/compose/runtime/State;->getValue()Ljava/lang/Object;
+    invoke-interface {v4}, Landroidx/compose/runtime/State;->getValue()Ljava/lang/Object;
 
-    move-result-object v2
+    move-result-object v4
 
-    check-cast v2, Landroidx/compose/ui/graphics/Color;
+    check-cast v4, Landroidx/compose/ui/graphics/Color;
 
-    invoke-virtual {v2}, Landroidx/compose/ui/graphics/Color;->unbox-impl()J
+    invoke-virtual {v4}, Landroidx/compose/ui/graphics/Color;->unbox-impl()J
 
-    move-result-wide v6
+    move-result-wide v14
 
-    .line 784
-    sget-object v2, Landroidx/compose/ui/graphics/StrokeCap;->Companion:Landroidx/compose/ui/graphics/StrokeCap$Companion;
+    .line 788
+    sget-object v4, Landroidx/compose/ui/graphics/StrokeCap;->Companion:Landroidx/compose/ui/graphics/StrokeCap$Companion;
 
-    invoke-virtual {v2}, Landroidx/compose/ui/graphics/StrokeCap$Companion;->getRound-KaPHkGw()I
+    invoke-virtual {v4}, Landroidx/compose/ui/graphics/StrokeCap$Companion;->getRound-KaPHkGw()I
 
-    move-result v8
+    move-result v17
 
-    const/16 v17, 0x1e0
+    const/16 v22, 0x1e0
+
+    const/16 v23, 0x0
 
     const/16 v18, 0x0
-
-    const/4 v9, 0x0
-
-    const/4 v10, 0x0
 
     const/16 v19, 0x0
 
     const/16 v20, 0x0
 
-    move-object/from16 v2, p1
+    const/16 v21, 0x0
 
-    move-object v3, v4
+    move-object/from16 v11, p1
 
-    move v4, v5
+    move/from16 v16, v0
 
-    move-wide v5, v6
-
-    move v7, v0
-
-    move-wide/from16 v21, v11
-
-    move-object/from16 v11, v19
-
-    move/from16 v12, v20
-
-    move-wide/from16 v19, v13
-
-    move/from16 v13, v17
-
-    move-object/from16 v14, v18
-
-    .line 777
-    invoke-static/range {v2 .. v14}, Landroidx/compose/ui/graphics/drawscope/DrawScope;->drawPoints-F8ZwMP8$default(Landroidx/compose/ui/graphics/drawscope/DrawScope;Ljava/util/List;IJFILandroidx/compose/ui/graphics/PathEffect;FLandroidx/compose/ui/graphics/ColorFilter;IILjava/lang/Object;)V
-
-    move-wide/from16 v23, v21
+    .line 781
+    invoke-static/range {v11 .. v23}, Landroidx/compose/ui/graphics/drawscope/DrawScope;->drawPoints-F8ZwMP8$default(Landroidx/compose/ui/graphics/drawscope/DrawScope;Ljava/util/List;IJFILandroidx/compose/ui/graphics/PathEffect;FLandroidx/compose/ui/graphics/ColorFilter;IILjava/lang/Object;)V
 
     goto/16 :goto_6
 

@@ -1,6 +1,6 @@
 .class public final Landroidx/compose/material/ExposedDropdownMenuBoxScope$DefaultImpls;
 .super Ljava/lang/Object;
-.source "ExposedDropdownMenu.kt"
+.source "ExposedDropdownMenu.android.kt"
 
 
 # annotations
@@ -26,7 +26,7 @@
 
 # direct methods
 .method public static ExposedDropdownMenu(Landroidx/compose/material/ExposedDropdownMenuBoxScope;ZLkotlin/jvm/functions/Function0;Landroidx/compose/ui/Modifier;Landroidx/compose/foundation/ScrollState;Lkotlin/jvm/functions/Function3;Landroidx/compose/runtime/Composer;II)V
-    .locals 1
+    .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -53,14 +53,6 @@
 
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
-
-    const-string v0, "onDismissRequest"
-
-    invoke-static {p2, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string v0, "content"
-
-    invoke-static {p5, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 233
     invoke-static/range {p0 .. p8}, Landroidx/compose/material/ExposedDropdownMenuBoxScope;->access$ExposedDropdownMenu$jd(Landroidx/compose/material/ExposedDropdownMenuBoxScope;ZLkotlin/jvm/functions/Function0;Landroidx/compose/ui/Modifier;Landroidx/compose/foundation/ScrollState;Lkotlin/jvm/functions/Function3;Landroidx/compose/runtime/Composer;II)V

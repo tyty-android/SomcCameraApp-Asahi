@@ -48,8 +48,6 @@
 
 
 # instance fields
-.field final synthetic $$dirty:I
-
 .field final synthetic $it:Lkotlin/jvm/functions/Function2;
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -72,7 +70,7 @@
 
 
 # direct methods
-.method constructor <init>(FJLkotlin/jvm/functions/Function2;IZJ)V
+.method constructor <init>(FJLkotlin/jvm/functions/Function2;ZJ)V
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -83,7 +81,7 @@
             "-",
             "Ljava/lang/Integer;",
             "Lkotlin/Unit;",
-            ">;IZJ)V"
+            ">;ZJ)V"
         }
     .end annotation
 
@@ -93,11 +91,9 @@
 
     iput-object p4, p0, Landroidx/compose/material/TextFieldImplKt$CommonDecorationBox$3$decoratedLabel$1$1;->$it:Lkotlin/jvm/functions/Function2;
 
-    iput p5, p0, Landroidx/compose/material/TextFieldImplKt$CommonDecorationBox$3$decoratedLabel$1$1;->$$dirty:I
+    iput-boolean p5, p0, Landroidx/compose/material/TextFieldImplKt$CommonDecorationBox$3$decoratedLabel$1$1;->$shouldOverrideTextStyleColor:Z
 
-    iput-boolean p6, p0, Landroidx/compose/material/TextFieldImplKt$CommonDecorationBox$3$decoratedLabel$1$1;->$shouldOverrideTextStyleColor:Z
-
-    iput-wide p7, p0, Landroidx/compose/material/TextFieldImplKt$CommonDecorationBox$3$decoratedLabel$1$1;->$labelTextStyleColor:J
+    iput-wide p6, p0, Landroidx/compose/material/TextFieldImplKt$CommonDecorationBox$3$decoratedLabel$1$1;->$labelTextStyleColor:J
 
     const/4 p1, 0x2
 
@@ -111,7 +107,7 @@
 .method public bridge synthetic invoke(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
 
-    .line 122
+    .line 121
     check-cast p1, Landroidx/compose/runtime/Composer;
 
     check-cast p2, Ljava/lang/Number;
@@ -136,7 +132,7 @@
 
     move/from16 v1, p2
 
-    const-string v2, "C*123@5027L10,124@5083L10,129@5294L55:TextFieldImpl.kt#jmzs0o"
+    const-string v2, "C*122@4956L10,123@5012L10,128@5223L55:TextFieldImpl.kt#jmzs0o"
 
     invoke-static {v5, v2}, Landroidx/compose/runtime/ComposerKt;->sourceInformation(Landroidx/compose/runtime/Composer;Ljava/lang/String;)V
 
@@ -146,7 +142,7 @@
 
     if-ne v2, v3, :cond_1
 
-    .line 123
+    .line 122
     invoke-interface/range {p1 .. p1}, Landroidx/compose/runtime/Composer;->getSkipping()Z
 
     move-result v2
@@ -155,13 +151,13 @@
 
     goto :goto_0
 
-    .line 130
+    .line 129
     :cond_0
     invoke-interface/range {p1 .. p1}, Landroidx/compose/runtime/Composer;->skipToGroupEnd()V
 
-    goto/16 :goto_1
+    goto/16 :goto_2
 
-    .line 123
+    .line 122
     :cond_1
     :goto_0
     invoke-static {}, Landroidx/compose/runtime/ComposerKt;->isTraceInProgress()Z
@@ -178,7 +174,7 @@
 
     invoke-static {v4, v1, v2, v3}, Landroidx/compose/runtime/ComposerKt;->traceEventStart(IIILjava/lang/String;)V
 
-    .line 124
+    .line 123
     :cond_2
     sget-object v1, Landroidx/compose/material/MaterialTheme;->INSTANCE:Landroidx/compose/material/MaterialTheme;
 
@@ -192,26 +188,26 @@
 
     move-result-object v1
 
-    .line 125
+    .line 124
     sget-object v3, Landroidx/compose/material/MaterialTheme;->INSTANCE:Landroidx/compose/material/MaterialTheme;
 
     invoke-virtual {v3, v5, v2}, Landroidx/compose/material/MaterialTheme;->getTypography(Landroidx/compose/runtime/Composer;I)Landroidx/compose/material/Typography;
 
-    move-result-object v3
+    move-result-object v2
 
-    invoke-virtual {v3}, Landroidx/compose/material/Typography;->getCaption()Landroidx/compose/ui/text/TextStyle;
+    invoke-virtual {v2}, Landroidx/compose/material/Typography;->getCaption()Landroidx/compose/ui/text/TextStyle;
 
-    move-result-object v3
+    move-result-object v2
 
-    .line 126
-    iget v4, v0, Landroidx/compose/material/TextFieldImplKt$CommonDecorationBox$3$decoratedLabel$1$1;->$labelProgress:F
+    .line 125
+    iget v3, v0, Landroidx/compose/material/TextFieldImplKt$CommonDecorationBox$3$decoratedLabel$1$1;->$labelProgress:F
 
-    .line 123
-    invoke-static {v1, v3, v4}, Landroidx/compose/ui/text/TextStyleKt;->lerp(Landroidx/compose/ui/text/TextStyle;Landroidx/compose/ui/text/TextStyle;F)Landroidx/compose/ui/text/TextStyle;
+    .line 122
+    invoke-static {v1, v2, v3}, Landroidx/compose/ui/text/TextStyleKt;->lerp(Landroidx/compose/ui/text/TextStyle;Landroidx/compose/ui/text/TextStyle;F)Landroidx/compose/ui/text/TextStyle;
 
     move-result-object v6
 
-    .line 127
+    .line 126
     iget-boolean v1, v0, Landroidx/compose/material/TextFieldImplKt$CommonDecorationBox$3$decoratedLabel$1$1;->$shouldOverrideTextStyleColor:Z
 
     iget-wide v7, v0, Landroidx/compose/material/TextFieldImplKt$CommonDecorationBox$3$decoratedLabel$1$1;->$labelTextStyleColor:J
@@ -268,44 +264,41 @@
 
     const/16 v35, 0x0
 
-    .line 128
-    invoke-static/range {v6 .. v37}, Landroidx/compose/ui/text/TextStyle;->copy-v2rsoow$default(Landroidx/compose/ui/text/TextStyle;JJLandroidx/compose/ui/text/font/FontWeight;Landroidx/compose/ui/text/font/FontStyle;Landroidx/compose/ui/text/font/FontSynthesis;Landroidx/compose/ui/text/font/FontFamily;Ljava/lang/String;JLandroidx/compose/ui/text/style/BaselineShift;Landroidx/compose/ui/text/style/TextGeometricTransform;Landroidx/compose/ui/text/intl/LocaleList;JLandroidx/compose/ui/text/style/TextDecoration;Landroidx/compose/ui/graphics/Shadow;Landroidx/compose/ui/graphics/drawscope/DrawStyle;Landroidx/compose/ui/text/style/TextAlign;Landroidx/compose/ui/text/style/TextDirection;JLandroidx/compose/ui/text/style/TextIndent;Landroidx/compose/ui/text/PlatformTextStyle;Landroidx/compose/ui/text/style/LineHeightStyle;Landroidx/compose/ui/text/style/LineBreak;Landroidx/compose/ui/text/style/Hyphens;Landroidx/compose/ui/text/style/TextMotion;ILjava/lang/Object;)Landroidx/compose/ui/text/TextStyle;
+    .line 127
+    invoke-static/range {v6 .. v37}, Landroidx/compose/ui/text/TextStyle;->copy-p1EtxEg$default(Landroidx/compose/ui/text/TextStyle;JJLandroidx/compose/ui/text/font/FontWeight;Landroidx/compose/ui/text/font/FontStyle;Landroidx/compose/ui/text/font/FontSynthesis;Landroidx/compose/ui/text/font/FontFamily;Ljava/lang/String;JLandroidx/compose/ui/text/style/BaselineShift;Landroidx/compose/ui/text/style/TextGeometricTransform;Landroidx/compose/ui/text/intl/LocaleList;JLandroidx/compose/ui/text/style/TextDecoration;Landroidx/compose/ui/graphics/Shadow;Landroidx/compose/ui/graphics/drawscope/DrawStyle;IIJLandroidx/compose/ui/text/style/TextIndent;Landroidx/compose/ui/text/PlatformTextStyle;Landroidx/compose/ui/text/style/LineHeightStyle;IILandroidx/compose/ui/text/style/TextMotion;ILjava/lang/Object;)Landroidx/compose/ui/text/TextStyle;
 
     move-result-object v1
 
-    move-object v6, v1
+    move-object v2, v1
 
-    .line 130
+    goto :goto_1
+
     :cond_3
+    move-object v2, v6
+
+    .line 129
+    :goto_1
     iget-wide v3, v0, Landroidx/compose/material/TextFieldImplKt$CommonDecorationBox$3$decoratedLabel$1$1;->$labelContentColor:J
 
-    iget-object v7, v0, Landroidx/compose/material/TextFieldImplKt$CommonDecorationBox$3$decoratedLabel$1$1;->$it:Lkotlin/jvm/functions/Function2;
+    iget-object v6, v0, Landroidx/compose/material/TextFieldImplKt$CommonDecorationBox$3$decoratedLabel$1$1;->$it:Lkotlin/jvm/functions/Function2;
 
-    iget v0, v0, Landroidx/compose/material/TextFieldImplKt$CommonDecorationBox$3$decoratedLabel$1$1;->$$dirty:I
+    const/16 v7, 0x180
 
-    shr-int/2addr v0, v2
-
-    and-int/lit8 v0, v0, 0xe
-
-    or-int/lit16 v8, v0, 0x180
+    const/4 v8, 0x0
 
     const/4 v9, 0x0
 
-    const/4 v10, 0x0
-
     move-wide v0, v3
 
-    move-object v2, v6
+    move-object v3, v9
 
-    move-object v3, v10
-
-    move-object v4, v7
+    move-object v4, v6
 
     move-object/from16 v5, p1
 
-    move v6, v8
+    move v6, v7
 
-    move v7, v9
+    move v7, v8
 
     invoke-static/range {v0 .. v7}, Landroidx/compose/material/TextFieldImplKt;->Decoration-euL9pac(JLandroidx/compose/ui/text/TextStyle;Ljava/lang/Float;Lkotlin/jvm/functions/Function2;Landroidx/compose/runtime/Composer;II)V
 
@@ -318,6 +311,6 @@
     invoke-static {}, Landroidx/compose/runtime/ComposerKt;->traceEventEnd()V
 
     :cond_4
-    :goto_1
+    :goto_2
     return-void
 .end method

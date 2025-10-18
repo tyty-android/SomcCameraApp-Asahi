@@ -32,25 +32,14 @@
         <item>_4_3_48MP</item>
     </string-array>
     <string-array name="ux_recommended_resolution_array_crocus">
-        <item>_4_3_12MP_MILVUS</item>
-        <item>_16_9_9MP</item>
-        <item>_1_1_9MP_MILVUS</item>
-    </string-array>
-    <string-array name="ux_recommended_resolution_array_crocus_yodo">
         <item>_4_3_12MP</item>
-        <item>_16_9_9MP_MAUNAKEA</item>
-        <item>_1_1_9MP</item>
-    </string-array>
-    <string-array name="ux_recommended_resolution_array_eiger">
-        <item>_4_3_12MP_MILVUS</item>
         <item>_16_9_9MP</item>
-        <item>_1_1_9MP_MILVUS</item>
-        <item>_3_2_10MP</item>
+        <item>_1_1_9MP</item>
     </string-array>
     <string-array name="ux_recommended_resolution_array_maunakea">
         <item>_4_3_12MP</item>
-        <item>_3_2_10MP_MAUNAKEA</item>
-        <item>_16_9_9MP_MAUNAKEA</item>
+        <item>_3_2_10MP</item>
+        <item>_16_9_9MP</item>
         <item>_1_1_9MP</item>
     </string-array>
     <string-array name="ux_recommended_video_size_array">
@@ -58,25 +47,11 @@
         <item>FULL_HD</item>
         <item>FOUR_K_UHD</item>
     </string-array>
-    <string-array name="zoom_slider_label_zoom_ratio_pdx_223">
-        <item>1.0</item>
-        <item>2.0</item>
-        <item>10.0</item>
-    </string-array>
-    <string-array name="zoom_slider_label_zoom_ratio_pdx_224">
-        <item>1.0</item>
-        <item>5.0</item>
-    </string-array>
-    <string-array name="zoom_slider_label_zoom_ratio_pdx_234">
-        <item>1.0</item>
-        <item>2.0</item>
-        <item>10.0</item>
-    </string-array>
-    <string-array name="zoom_slider_label_zoom_ratio_pdx_237">
-        <item>1.0</item>
-        <item>2.0</item>
-    </string-array>
     <string-array name="zoom_slider_label_zoom_ratio_pdx_245">
+        <item>2.0</item>
+        <item>10.0</item>
+    </string-array>
+    <string-array name="zoom_slider_label_zoom_ratio_pdx_256">
         <item>2.0</item>
         <item>10.0</item>
     </string-array>

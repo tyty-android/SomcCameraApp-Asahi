@@ -51,7 +51,7 @@
 .method private constructor <init>()V
     .locals 0
 
-    .line 463
+    .line 492
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -62,11 +62,7 @@
 .method public final setOutlineAmbientShadowColor(Landroid/view/View;I)V
     .locals 0
 
-    const-string/jumbo p0, "view"
-
-    invoke-static {p1, p0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 468
+    .line 497
     invoke-virtual {p1, p2}, Landroid/view/View;->setOutlineAmbientShadowColor(I)V
 
     return-void
@@ -75,11 +71,7 @@
 .method public final setOutlineSpotShadowColor(Landroid/view/View;I)V
     .locals 0
 
-    const-string/jumbo p0, "view"
-
-    invoke-static {p1, p0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 473
+    .line 502
     invoke-virtual {p1, p2}, Landroid/view/View;->setOutlineSpotShadowColor(I)V
 
     return-void

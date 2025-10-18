@@ -79,7 +79,7 @@
 .method public bridge synthetic invoke(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
 
-    .line 392
+    .line 402
     check-cast p1, Landroidx/compose/runtime/Composer;
 
     check-cast p2, Ljava/lang/Number;
@@ -108,7 +108,7 @@
 
     if-ne p0, v0, :cond_1
 
-    .line 392
+    .line 402
     invoke-interface {p1}, Landroidx/compose/runtime/Composer;->getSkipping()Z
 
     move-result p0
@@ -132,7 +132,7 @@
 
     const/4 p0, -0x1
 
-    const-string p1, "androidx.compose.runtime.ComposableSingletons$RecomposerKt.lambda-1.<anonymous> (Recomposer.kt:391)"
+    const-string p1, "androidx.compose.runtime.ComposableSingletons$RecomposerKt.lambda-1.<anonymous> (Recomposer.kt:401)"
 
     const v0, -0x41164c8a
 

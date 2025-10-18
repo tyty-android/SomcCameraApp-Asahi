@@ -25,7 +25,7 @@
 .method constructor <init>(Ljp/co/sony/mc/camera/view/EventProcedure$JumpZoomProcedure;)V
     .locals 0
 
-    .line 944
+    .line 965
     iput-object p1, p0, Ljp/co/sony/mc/camera/view/EventProcedure$JumpZoomProcedure$1;->this$1:Ljp/co/sony/mc/camera/view/EventProcedure$JumpZoomProcedure;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -38,7 +38,7 @@
 .method public onTicked(Ljp/co/sony/mc/camera/view/EventProcedure$VariableUserEventTicker;)V
     .locals 0
 
-    .line 947
+    .line 968
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/EventProcedure$JumpZoomProcedure$1;->this$1:Ljp/co/sony/mc/camera/view/EventProcedure$JumpZoomProcedure;
 
     invoke-static {p0}, Ljp/co/sony/mc/camera/view/EventProcedure$JumpZoomProcedure;->-$$Nest$mperformJumpZooming(Ljp/co/sony/mc/camera/view/EventProcedure$JumpZoomProcedure;)V

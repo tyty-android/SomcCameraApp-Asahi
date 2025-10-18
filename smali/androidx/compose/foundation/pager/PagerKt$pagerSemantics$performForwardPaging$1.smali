@@ -53,7 +53,7 @@
     f = "Pager.kt"
     i = {}
     l = {
-        0x350
+        0x398
     }
     m = "invokeSuspend"
     n = {}
@@ -167,7 +167,7 @@
 
     move-result-object v0
 
-    .line 65535
+    .line 919
     iget v1, p0, Landroidx/compose/foundation/pager/PagerKt$pagerSemantics$performForwardPaging$1;->label:I
 
     const/4 v2, 0x1
@@ -192,7 +192,7 @@
     :cond_1
     invoke-static {p1}, Lkotlin/ResultKt;->throwOnFailure(Ljava/lang/Object;)V
 
-    .line 848
+    .line 920
     iget-object p1, p0, Landroidx/compose/foundation/pager/PagerKt$pagerSemantics$performForwardPaging$1;->$state:Landroidx/compose/foundation/pager/PagerState;
 
     move-object v1, p0
@@ -209,7 +209,7 @@
 
     return-object v0
 
-    .line 849
+    .line 921
     :cond_2
     :goto_0
     sget-object p0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;

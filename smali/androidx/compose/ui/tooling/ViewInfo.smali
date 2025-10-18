@@ -1,16 +1,16 @@
 .class public final Landroidx/compose/ui/tooling/ViewInfo;
 .super Ljava/lang/Object;
-.source "ComposeViewAdapter.kt"
+.source "ComposeViewAdapter.android.kt"
 
 
 # annotations
 .annotation system Ldalvik/annotation/SourceDebugExtension;
-    value = "SMAP\nComposeViewAdapter.kt\nKotlin\n*S Kotlin\n*F\n+ 1 ComposeViewAdapter.kt\nandroidx/compose/ui/tooling/ViewInfo\n+ 2 _Collections.kt\nkotlin/collections/CollectionsKt___CollectionsKt\n+ 3 fake.kt\nkotlin/jvm/internal/FakeKt\n*L\n1#1,675:1\n1360#2:676\n1446#2,5:677\n1#3:682\n*S KotlinDebug\n*F\n+ 1 ComposeViewAdapter.kt\nandroidx/compose/ui/tooling/ViewInfo\n*L\n100#1:676\n100#1:677,5\n*E\n"
+    value = "SMAP\nComposeViewAdapter.android.kt\nKotlin\n*S Kotlin\n*F\n+ 1 ComposeViewAdapter.android.kt\nandroidx/compose/ui/tooling/ViewInfo\n+ 2 _Collections.kt\nkotlin/collections/CollectionsKt___CollectionsKt\n+ 3 fake.kt\nkotlin/jvm/internal/FakeKt\n*L\n1#1,668:1\n1360#2:669\n1446#2,5:670\n1#3:675\n*S KotlinDebug\n*F\n+ 1 ComposeViewAdapter.android.kt\nandroidx/compose/ui/tooling/ViewInfo\n*L\n98#1:669\n98#1:670,5\n*E\n"
 .end annotation
 
 .annotation runtime Lkotlin/Metadata;
     d1 = {
-        "\u00002\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0010\u000e\n\u0000\n\u0002\u0010\u0008\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010 \n\u0002\u0008\u0017\n\u0002\u0010\u000b\n\u0002\u0008\u0005\u0008\u0087\u0008\u0018\u00002\u00020\u0001B?\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\u0006\u0010\u0004\u001a\u00020\u0005\u0012\u0006\u0010\u0006\u001a\u00020\u0007\u0012\u0008\u0010\u0008\u001a\u0004\u0018\u00010\t\u0012\u000c\u0010\n\u001a\u0008\u0012\u0004\u0012\u00020\u00000\u000b\u0012\u0008\u0010\u000c\u001a\u0004\u0018\u00010\u0001\u00a2\u0006\u0002\u0010\rJ\u000c\u0010\u001a\u001a\u0008\u0012\u0004\u0012\u00020\u00000\u000bJ\t\u0010\u001b\u001a\u00020\u0003H\u00c6\u0003J\t\u0010\u001c\u001a\u00020\u0005H\u00c6\u0003J\t\u0010\u001d\u001a\u00020\u0007H\u00c6\u0003J\u000b\u0010\u001e\u001a\u0004\u0018\u00010\tH\u00c6\u0003J\u000f\u0010\u001f\u001a\u0008\u0012\u0004\u0012\u00020\u00000\u000bH\u00c6\u0003J\u000b\u0010 \u001a\u0004\u0018\u00010\u0001H\u00c6\u0003JO\u0010!\u001a\u00020\u00002\u0008\u0008\u0002\u0010\u0002\u001a\u00020\u00032\u0008\u0008\u0002\u0010\u0004\u001a\u00020\u00052\u0008\u0008\u0002\u0010\u0006\u001a\u00020\u00072\n\u0008\u0002\u0010\u0008\u001a\u0004\u0018\u00010\t2\u000e\u0008\u0002\u0010\n\u001a\u0008\u0012\u0004\u0012\u00020\u00000\u000b2\n\u0008\u0002\u0010\u000c\u001a\u0004\u0018\u00010\u0001H\u00c6\u0001J\u0013\u0010\"\u001a\u00020#2\u0008\u0010$\u001a\u0004\u0018\u00010\u0001H\u00d6\u0003J\u0006\u0010%\u001a\u00020#J\t\u0010&\u001a\u00020\u0005H\u00d6\u0001J\u0008\u0010\'\u001a\u00020\u0003H\u0016R\u0011\u0010\u0006\u001a\u00020\u0007\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\u000e\u0010\u000fR\u0017\u0010\n\u001a\u0008\u0012\u0004\u0012\u00020\u00000\u000b\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\u0010\u0010\u0011R\u0011\u0010\u0002\u001a\u00020\u0003\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\u0012\u0010\u0013R\u0013\u0010\u000c\u001a\u0004\u0018\u00010\u0001\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\u0014\u0010\u0015R\u0011\u0010\u0004\u001a\u00020\u0005\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\u0016\u0010\u0017R\u0013\u0010\u0008\u001a\u0004\u0018\u00010\t\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\u0018\u0010\u0019\u00a8\u0006("
+        "\u00002\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0010\u000e\n\u0000\n\u0002\u0010\u0008\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010 \n\u0002\u0008\u0017\n\u0002\u0010\u000b\n\u0002\u0008\u0005\u0008\u0080\u0008\u0018\u00002\u00020\u0001B?\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\u0006\u0010\u0004\u001a\u00020\u0005\u0012\u0006\u0010\u0006\u001a\u00020\u0007\u0012\u0008\u0010\u0008\u001a\u0004\u0018\u00010\t\u0012\u000c\u0010\n\u001a\u0008\u0012\u0004\u0012\u00020\u00000\u000b\u0012\u0008\u0010\u000c\u001a\u0004\u0018\u00010\u0001\u00a2\u0006\u0002\u0010\rJ\u000c\u0010\u001a\u001a\u0008\u0012\u0004\u0012\u00020\u00000\u000bJ\t\u0010\u001b\u001a\u00020\u0003H\u00c6\u0003J\t\u0010\u001c\u001a\u00020\u0005H\u00c6\u0003J\t\u0010\u001d\u001a\u00020\u0007H\u00c6\u0003J\u000b\u0010\u001e\u001a\u0004\u0018\u00010\tH\u00c6\u0003J\u000f\u0010\u001f\u001a\u0008\u0012\u0004\u0012\u00020\u00000\u000bH\u00c6\u0003J\u000b\u0010 \u001a\u0004\u0018\u00010\u0001H\u00c6\u0003JO\u0010!\u001a\u00020\u00002\u0008\u0008\u0002\u0010\u0002\u001a\u00020\u00032\u0008\u0008\u0002\u0010\u0004\u001a\u00020\u00052\u0008\u0008\u0002\u0010\u0006\u001a\u00020\u00072\n\u0008\u0002\u0010\u0008\u001a\u0004\u0018\u00010\t2\u000e\u0008\u0002\u0010\n\u001a\u0008\u0012\u0004\u0012\u00020\u00000\u000b2\n\u0008\u0002\u0010\u000c\u001a\u0004\u0018\u00010\u0001H\u00c6\u0001J\u0013\u0010\"\u001a\u00020#2\u0008\u0010$\u001a\u0004\u0018\u00010\u0001H\u00d6\u0003J\u0006\u0010%\u001a\u00020#J\t\u0010&\u001a\u00020\u0005H\u00d6\u0001J\u0008\u0010\'\u001a\u00020\u0003H\u0016R\u0011\u0010\u0006\u001a\u00020\u0007\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\u000e\u0010\u000fR\u0017\u0010\n\u001a\u0008\u0012\u0004\u0012\u00020\u00000\u000b\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\u0010\u0010\u0011R\u0011\u0010\u0002\u001a\u00020\u0003\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\u0012\u0010\u0013R\u0013\u0010\u000c\u001a\u0004\u0018\u00010\u0001\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\u0014\u0010\u0015R\u0011\u0010\u0004\u001a\u00020\u0005\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\u0016\u0010\u0017R\u0013\u0010\u0008\u001a\u0004\u0018\u00010\t\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\u0018\u0010\u0019\u00a8\u0006("
     }
     d2 = {
         "Landroidx/compose/ui/tooling/ViewInfo;",
@@ -99,7 +99,7 @@
 .end method
 
 .method public constructor <init>(Ljava/lang/String;ILandroidx/compose/ui/unit/IntRect;Landroidx/compose/ui/tooling/data/SourceLocation;Ljava/util/List;Ljava/lang/Object;)V
-    .locals 1
+    .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -115,37 +115,25 @@
         }
     .end annotation
 
-    const-string v0, "fileName"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string v0, "bounds"
-
-    invoke-static {p3, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string v0, "children"
-
-    invoke-static {p5, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 88
+    .line 86
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 90
+    .line 88
     iput-object p1, p0, Landroidx/compose/ui/tooling/ViewInfo;->fileName:Ljava/lang/String;
 
-    .line 91
+    .line 89
     iput p2, p0, Landroidx/compose/ui/tooling/ViewInfo;->lineNumber:I
 
-    .line 92
+    .line 90
     iput-object p3, p0, Landroidx/compose/ui/tooling/ViewInfo;->bounds:Landroidx/compose/ui/unit/IntRect;
 
-    .line 93
+    .line 91
     iput-object p4, p0, Landroidx/compose/ui/tooling/ViewInfo;->location:Landroidx/compose/ui/tooling/data/SourceLocation;
 
-    .line 94
+    .line 92
     iput-object p5, p0, Landroidx/compose/ui/tooling/ViewInfo;->children:Ljava/util/List;
 
-    .line 95
+    .line 93
     iput-object p6, p0, Landroidx/compose/ui/tooling/ViewInfo;->layoutInfo:Ljava/lang/Object;
 
     return-void
@@ -240,7 +228,7 @@
         }
     .end annotation
 
-    .line 100
+    .line 98
     iget-object p0, p0, Landroidx/compose/ui/tooling/ViewInfo;->children:Ljava/util/List;
 
     move-object v0, p0
@@ -249,14 +237,14 @@
 
     check-cast p0, Ljava/lang/Iterable;
 
-    .line 676
+    .line 669
     new-instance v1, Ljava/util/ArrayList;
 
     invoke-direct {v1}, Ljava/util/ArrayList;-><init>()V
 
     check-cast v1, Ljava/util/Collection;
 
-    .line 677
+    .line 670
     invoke-interface {p0}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
 
     move-result-object p0
@@ -272,30 +260,30 @@
 
     move-result-object v2
 
-    .line 678
+    .line 671
     check-cast v2, Landroidx/compose/ui/tooling/ViewInfo;
 
-    .line 100
+    .line 98
     invoke-virtual {v2}, Landroidx/compose/ui/tooling/ViewInfo;->allChildren()Ljava/util/List;
 
     move-result-object v2
 
-    .line 678
+    .line 671
     check-cast v2, Ljava/lang/Iterable;
 
-    .line 679
+    .line 672
     invoke-static {v1, v2}, Lkotlin/collections/CollectionsKt;->addAll(Ljava/util/Collection;Ljava/lang/Iterable;)Z
 
     goto :goto_0
 
-    .line 681
+    .line 674
     :cond_0
     check-cast v1, Ljava/util/List;
 
-    .line 676
+    .line 669
     check-cast v1, Ljava/lang/Iterable;
 
-    .line 100
+    .line 98
     invoke-static {v0, v1}, Lkotlin/collections/CollectionsKt;->plus(Ljava/util/Collection;Ljava/lang/Iterable;)Ljava/util/List;
 
     move-result-object p0
@@ -376,18 +364,6 @@
             "Landroidx/compose/ui/tooling/ViewInfo;"
         }
     .end annotation
-
-    const-string p0, "fileName"
-
-    invoke-static {p1, p0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string p0, "bounds"
-
-    invoke-static {p3, p0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string p0, "children"
-
-    invoke-static {p5, p0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
     new-instance p0, Landroidx/compose/ui/tooling/ViewInfo;
 
@@ -511,7 +487,7 @@
 .method public final getBounds()Landroidx/compose/ui/unit/IntRect;
     .locals 0
 
-    .line 92
+    .line 90
     iget-object p0, p0, Landroidx/compose/ui/tooling/ViewInfo;->bounds:Landroidx/compose/ui/unit/IntRect;
 
     return-object p0
@@ -528,7 +504,7 @@
         }
     .end annotation
 
-    .line 94
+    .line 92
     iget-object p0, p0, Landroidx/compose/ui/tooling/ViewInfo;->children:Ljava/util/List;
 
     return-object p0
@@ -537,7 +513,7 @@
 .method public final getFileName()Ljava/lang/String;
     .locals 0
 
-    .line 90
+    .line 88
     iget-object p0, p0, Landroidx/compose/ui/tooling/ViewInfo;->fileName:Ljava/lang/String;
 
     return-object p0
@@ -546,7 +522,7 @@
 .method public final getLayoutInfo()Ljava/lang/Object;
     .locals 0
 
-    .line 95
+    .line 93
     iget-object p0, p0, Landroidx/compose/ui/tooling/ViewInfo;->layoutInfo:Ljava/lang/Object;
 
     return-object p0
@@ -555,7 +531,7 @@
 .method public final getLineNumber()I
     .locals 0
 
-    .line 91
+    .line 89
     iget p0, p0, Landroidx/compose/ui/tooling/ViewInfo;->lineNumber:I
 
     return p0
@@ -564,7 +540,7 @@
 .method public final getLocation()Landroidx/compose/ui/tooling/data/SourceLocation;
     .locals 0
 
-    .line 93
+    .line 91
     iget-object p0, p0, Landroidx/compose/ui/tooling/ViewInfo;->location:Landroidx/compose/ui/tooling/data/SourceLocation;
 
     return-object p0
@@ -573,7 +549,7 @@
 .method public final hasBounds()Z
     .locals 1
 
-    .line 97
+    .line 95
     iget-object v0, p0, Landroidx/compose/ui/tooling/ViewInfo;->bounds:Landroidx/compose/ui/unit/IntRect;
 
     invoke-virtual {v0}, Landroidx/compose/ui/unit/IntRect;->getBottom()I
@@ -682,7 +658,7 @@
 .method public toString()Ljava/lang/String;
     .locals 4
 
-    .line 103
+    .line 101
     new-instance v0, Ljava/lang/StringBuilder;
 
     const-string v1, "("
@@ -713,47 +689,47 @@
 
     move-result-object v0
 
-    .line 104
+    .line 102
     iget-object v2, p0, Landroidx/compose/ui/tooling/ViewInfo;->bounds:Landroidx/compose/ui/unit/IntRect;
 
     invoke-virtual {v2}, Landroidx/compose/ui/unit/IntRect;->getTop()I
 
     move-result v2
 
-    .line 103
+    .line 101
     invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
     move-result-object v0
 
-    .line 104
+    .line 102
     const-string v2, ", left="
 
-    .line 103
+    .line 101
     invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v0
 
-    .line 104
+    .line 102
     iget-object v2, p0, Landroidx/compose/ui/tooling/ViewInfo;->bounds:Landroidx/compose/ui/unit/IntRect;
 
     invoke-virtual {v2}, Landroidx/compose/ui/unit/IntRect;->getLeft()I
 
     move-result v2
 
-    .line 103
+    .line 101
     invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
     move-result-object v0
 
-    .line 104
+    .line 102
     const-string v2, ",\n            |location="
 
-    .line 103
+    .line 101
     invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v0
 
-    .line 105
+    .line 103
     iget-object v2, p0, Landroidx/compose/ui/tooling/ViewInfo;->location:Landroidx/compose/ui/tooling/data/SourceLocation;
 
     if-eqz v2, :cond_0
@@ -793,68 +769,68 @@
     :cond_0
     const-string v1, "<none>"
 
-    .line 103
+    .line 101
     :cond_1
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v0
 
-    .line 105
+    .line 103
     const-string v1, "\n            |bottom="
 
-    .line 103
+    .line 101
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v0
 
-    .line 106
+    .line 104
     iget-object v1, p0, Landroidx/compose/ui/tooling/ViewInfo;->bounds:Landroidx/compose/ui/unit/IntRect;
 
     invoke-virtual {v1}, Landroidx/compose/ui/unit/IntRect;->getBottom()I
 
     move-result v1
 
-    .line 103
+    .line 101
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
     move-result-object v0
 
-    .line 106
+    .line 104
     const-string v1, ", right="
 
-    .line 103
+    .line 101
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v0
 
-    .line 106
+    .line 104
     iget-object v1, p0, Landroidx/compose/ui/tooling/ViewInfo;->bounds:Landroidx/compose/ui/unit/IntRect;
 
     invoke-virtual {v1}, Landroidx/compose/ui/unit/IntRect;->getRight()I
 
     move-result v1
 
-    .line 103
+    .line 101
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
     move-result-object v0
 
-    .line 106
+    .line 104
     const-string v1, "),\n            |childrenCount="
 
-    .line 103
+    .line 101
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v0
 
-    .line 107
+    .line 105
     iget-object p0, p0, Landroidx/compose/ui/tooling/ViewInfo;->children:Ljava/util/List;
 
     invoke-interface {p0}, Ljava/util/List;->size()I
 
     move-result p0
 
-    .line 103
+    .line 101
     invoke-virtual {v0, p0}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
     move-result-object p0
@@ -873,7 +849,7 @@
 
     const/4 v1, 0x0
 
-    .line 107
+    .line 105
     invoke-static {p0, v1, v0, v1}, Lkotlin/text/StringsKt;->trimMargin$default(Ljava/lang/String;Ljava/lang/String;ILjava/lang/Object;)Ljava/lang/String;
 
     move-result-object p0

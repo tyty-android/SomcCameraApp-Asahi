@@ -94,120 +94,112 @@
 .end method
 
 .method public final invoke-3p2s80s(Landroidx/compose/ui/layout/MeasureScope;Landroidx/compose/ui/layout/Measurable;J)Landroidx/compose/ui/layout/MeasureResult;
-    .locals 15
-
-    move-object/from16 v0, p2
-
-    const-string v1, "$this$layout"
-
-    move-object/from16 v2, p1
-
-    invoke-static {v2, v1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string v1, "measurable"
-
-    invoke-static {v0, v1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+    .locals 13
 
     .line 62
-    sget-object v1, Landroidx/compose/ui/Modifier;->Companion:Landroidx/compose/ui/Modifier$Companion;
+    sget-object v0, Landroidx/compose/ui/Modifier;->Companion:Landroidx/compose/ui/Modifier$Companion;
 
-    check-cast v1, Landroidx/compose/ui/Modifier;
+    check-cast v0, Landroidx/compose/ui/Modifier;
 
-    const/4 v3, 0x3
+    const/4 v1, 0x3
 
-    const/4 v4, 0x0
+    const/4 v2, 0x0
 
-    const/4 v5, 0x0
+    const/4 v3, 0x0
 
-    invoke-static {v1, v5, v5, v3, v4}, Landroidx/compose/foundation/layout/SizeKt;->defaultMinSize-VpY3zN4$default(Landroidx/compose/ui/Modifier;FFILjava/lang/Object;)Landroidx/compose/ui/Modifier;
+    invoke-static {v0, v3, v3, v1, v2}, Landroidx/compose/foundation/layout/SizeKt;->defaultMinSize-VpY3zN4$default(Landroidx/compose/ui/Modifier;FFILjava/lang/Object;)Landroidx/compose/ui/Modifier;
 
-    move-object v1, p0
+    move-object v0, p0
 
     .line 63
-    iget-object v1, v1, Landroidx/compose/foundation/text/TextFieldSizeKt$textFieldMinSize$1$1;->$minSizeState:Landroidx/compose/foundation/text/TextFieldSize;
+    iget-object v0, v0, Landroidx/compose/foundation/text/TextFieldSizeKt$textFieldMinSize$1$1;->$minSizeState:Landroidx/compose/foundation/text/TextFieldSize;
 
-    invoke-virtual {v1}, Landroidx/compose/foundation/text/TextFieldSize;->getMinSize-YbymL2g()J
+    invoke-virtual {v0}, Landroidx/compose/foundation/text/TextFieldSize;->getMinSize-YbymL2g()J
 
-    move-result-wide v3
+    move-result-wide v0
 
     .line 66
-    invoke-static {v3, v4}, Landroidx/compose/ui/unit/IntSize;->getWidth-impl(J)I
+    invoke-static {v0, v1}, Landroidx/compose/ui/unit/IntSize;->getWidth-impl(J)I
 
-    move-result v1
+    move-result v2
 
     invoke-static/range {p3 .. p4}, Landroidx/compose/ui/unit/Constraints;->getMinWidth-impl(J)I
 
-    move-result v5
+    move-result v3
 
     invoke-static/range {p3 .. p4}, Landroidx/compose/ui/unit/Constraints;->getMaxWidth-impl(J)I
 
-    move-result v6
+    move-result v4
 
-    invoke-static {v1, v5, v6}, Lkotlin/ranges/RangesKt;->coerceIn(III)I
+    invoke-static {v2, v3, v4}, Lkotlin/ranges/RangesKt;->coerceIn(III)I
 
-    move-result v9
+    move-result v7
 
     .line 67
-    invoke-static {v3, v4}, Landroidx/compose/ui/unit/IntSize;->getHeight-impl(J)I
+    invoke-static {v0, v1}, Landroidx/compose/ui/unit/IntSize;->getHeight-impl(J)I
 
-    move-result v1
+    move-result v0
 
     invoke-static/range {p3 .. p4}, Landroidx/compose/ui/unit/Constraints;->getMinHeight-impl(J)I
 
-    move-result v3
+    move-result v1
 
     invoke-static/range {p3 .. p4}, Landroidx/compose/ui/unit/Constraints;->getMaxHeight-impl(J)I
 
-    move-result v4
+    move-result v2
 
-    invoke-static {v1, v3, v4}, Lkotlin/ranges/RangesKt;->coerceIn(III)I
+    invoke-static {v0, v1, v2}, Lkotlin/ranges/RangesKt;->coerceIn(III)I
 
-    move-result v11
+    move-result v9
 
-    const/16 v13, 0xa
-
-    const/4 v14, 0x0
-
-    const/4 v10, 0x0
+    const/16 v11, 0xa
 
     const/4 v12, 0x0
 
-    move-wide/from16 v7, p3
+    const/4 v8, 0x0
+
+    const/4 v10, 0x0
+
+    move-wide/from16 v5, p3
 
     .line 65
-    invoke-static/range {v7 .. v14}, Landroidx/compose/ui/unit/Constraints;->copy-Zbe2FdA$default(JIIIIILjava/lang/Object;)J
+    invoke-static/range {v5 .. v12}, Landroidx/compose/ui/unit/Constraints;->copy-Zbe2FdA$default(JIIIIILjava/lang/Object;)J
 
-    move-result-wide v3
+    move-result-wide v0
+
+    move-object v2, p2
 
     .line 69
-    invoke-interface {v0, v3, v4}, Landroidx/compose/ui/layout/Measurable;->measure-BRTryo0(J)Landroidx/compose/ui/layout/Placeable;
+    invoke-interface {p2, v0, v1}, Landroidx/compose/ui/layout/Measurable;->measure-BRTryo0(J)Landroidx/compose/ui/layout/Placeable;
 
     move-result-object v0
 
     .line 70
     invoke-virtual {v0}, Landroidx/compose/ui/layout/Placeable;->getWidth()I
 
-    move-result v3
+    move-result v2
 
     invoke-virtual {v0}, Landroidx/compose/ui/layout/Placeable;->getHeight()I
 
-    move-result v4
+    move-result v3
 
     new-instance v1, Landroidx/compose/foundation/text/TextFieldSizeKt$textFieldMinSize$1$1$1;
 
     invoke-direct {v1, v0}, Landroidx/compose/foundation/text/TextFieldSizeKt$textFieldMinSize$1$1$1;-><init>(Landroidx/compose/ui/layout/Placeable;)V
 
-    move-object v6, v1
+    move-object v5, v1
 
-    check-cast v6, Lkotlin/jvm/functions/Function1;
+    check-cast v5, Lkotlin/jvm/functions/Function1;
 
-    const/4 v7, 0x4
+    const/4 v6, 0x4
 
-    const/4 v8, 0x0
+    const/4 v7, 0x0
 
-    const/4 v5, 0x0
+    const/4 v4, 0x0
 
-    invoke-static/range {v2 .. v8}, Landroidx/compose/ui/layout/MeasureScope;->layout$default(Landroidx/compose/ui/layout/MeasureScope;IILjava/util/Map;Lkotlin/jvm/functions/Function1;ILjava/lang/Object;)Landroidx/compose/ui/layout/MeasureResult;
+    move-object v1, p1
+
+    invoke-static/range {v1 .. v7}, Landroidx/compose/ui/layout/MeasureScope;->layout$default(Landroidx/compose/ui/layout/MeasureScope;IILjava/util/Map;Lkotlin/jvm/functions/Function1;ILjava/lang/Object;)Landroidx/compose/ui/layout/MeasureResult;
 
     move-result-object v0
 

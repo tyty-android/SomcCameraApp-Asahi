@@ -18,7 +18,7 @@
         "onChanged",
         "Lkotlin/Function1;",
         "",
-        "lifecycle-livedata-core-ktx_release"
+        "lifecycle-livedata-core_release"
     }
     k = 0x2
     mv = {
@@ -66,14 +66,14 @@
 
     invoke-static {p2, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 51
+    .line 52
     new-instance v0, Landroidx/lifecycle/LiveDataKt$observe$wrappedObserver$1;
 
     invoke-direct {v0, p2}, Landroidx/lifecycle/LiveDataKt$observe$wrappedObserver$1;-><init>(Lkotlin/jvm/functions/Function1;)V
 
     check-cast v0, Landroidx/lifecycle/Observer;
 
-    .line 52
+    .line 53
     invoke-virtual {p0, p1, v0}, Landroidx/lifecycle/LiveData;->observe(Landroidx/lifecycle/LifecycleOwner;Landroidx/lifecycle/Observer;)V
 
     return-object v0

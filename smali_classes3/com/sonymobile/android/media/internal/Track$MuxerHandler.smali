@@ -22,10 +22,10 @@
 .method public constructor <init>(Lcom/sonymobile/android/media/internal/Track;Landroid/os/Looper;)V
     .locals 0
 
-    .line 313
+    .line 307
     iput-object p1, p0, Lcom/sonymobile/android/media/internal/Track$MuxerHandler;->this$0:Lcom/sonymobile/android/media/internal/Track;
 
-    .line 314
+    .line 308
     invoke-direct {p0, p2}, Landroid/os/Handler;-><init>(Landroid/os/Looper;)V
 
     return-void
@@ -34,7 +34,7 @@
 .method private doFlushBuffers()V
     .locals 3
 
-    .line 318
+    .line 312
     iget-object v0, p0, Lcom/sonymobile/android/media/internal/Track$MuxerHandler;->this$0:Lcom/sonymobile/android/media/internal/Track;
 
     iget-object v0, v0, Lcom/sonymobile/android/media/internal/Track;->mBufferList:Ljava/util/concurrent/LinkedBlockingDeque;
@@ -48,7 +48,7 @@
     :goto_0
     if-ge v1, v0, :cond_0
 
-    .line 321
+    .line 315
     iget-object v2, p0, Lcom/sonymobile/android/media/internal/Track$MuxerHandler;->this$0:Lcom/sonymobile/android/media/internal/Track;
 
     invoke-virtual {v2}, Lcom/sonymobile/android/media/internal/Track;->doWriteOutputBuffer()V
@@ -66,7 +66,7 @@
 .method public handleMessage(Landroid/os/Message;)V
     .locals 1
 
-    .line 327
+    .line 321
     iget p1, p1, Landroid/os/Message;->what:I
 
     const/16 v0, 0x68
@@ -79,14 +79,14 @@
 
     goto :goto_0
 
-    .line 338
+    .line 332
     :cond_0
     :try_start_0
     invoke-direct {p0}, Lcom/sonymobile/android/media/internal/Track$MuxerHandler;->doFlushBuffers()V
 
     goto :goto_0
 
-    .line 330
+    .line 324
     :cond_1
     iget-object p0, p0, Lcom/sonymobile/android/media/internal/Track$MuxerHandler;->this$0:Lcom/sonymobile/android/media/internal/Track;
 

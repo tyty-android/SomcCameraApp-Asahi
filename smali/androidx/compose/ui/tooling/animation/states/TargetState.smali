@@ -1,6 +1,6 @@
 .class public final Landroidx/compose/ui/tooling/animation/states/TargetState;
 .super Ljava/lang/Object;
-.source "TargetState.kt"
+.source "TargetState.android.kt"
 
 # interfaces
 .implements Landroidx/compose/ui/tooling/animation/states/ComposeAnimationState;
@@ -56,6 +56,10 @@
 .end annotation
 
 
+# static fields
+.field public static final $stable:I
+
+
 # instance fields
 .field private final initial:Ljava/lang/Object;
     .annotation system Ldalvik/annotation/Signature;
@@ -75,6 +79,12 @@
 
 
 # direct methods
+.method static constructor <clinit>()V
+    .locals 0
+
+    return-void
+.end method
+
 .method public constructor <init>(Ljava/lang/Object;Ljava/lang/Object;)V
     .locals 0
     .annotation system Ldalvik/annotation/Signature;

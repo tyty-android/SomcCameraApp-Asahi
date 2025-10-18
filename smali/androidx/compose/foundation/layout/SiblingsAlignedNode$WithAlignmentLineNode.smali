@@ -42,24 +42,30 @@
 .end annotation
 
 
+# static fields
+.field public static final $stable:I = 0x8
+
+
 # instance fields
 .field private alignmentLine:Landroidx/compose/ui/layout/AlignmentLine;
 
 
 # direct methods
+.method static constructor <clinit>()V
+    .locals 0
+
+    return-void
+.end method
+
 .method public constructor <init>(Landroidx/compose/ui/layout/AlignmentLine;)V
     .locals 1
 
-    const-string v0, "alignmentLine"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
     const/4 v0, 0x0
 
-    .line 743
+    .line 746
     invoke-direct {p0, v0}, Landroidx/compose/foundation/layout/SiblingsAlignedNode;-><init>(Lkotlin/jvm/internal/DefaultConstructorMarker;)V
 
-    .line 742
+    .line 745
     iput-object p1, p0, Landroidx/compose/foundation/layout/SiblingsAlignedNode$WithAlignmentLineNode;->alignmentLine:Landroidx/compose/ui/layout/AlignmentLine;
 
     return-void
@@ -70,7 +76,7 @@
 .method public final getAlignmentLine()Landroidx/compose/ui/layout/AlignmentLine;
     .locals 0
 
-    .line 742
+    .line 745
     iget-object p0, p0, Landroidx/compose/foundation/layout/SiblingsAlignedNode$WithAlignmentLineNode;->alignmentLine:Landroidx/compose/ui/layout/AlignmentLine;
 
     return-object p0
@@ -79,11 +85,7 @@
 .method public modifyParentData(Landroidx/compose/ui/unit/Density;Ljava/lang/Object;)Ljava/lang/Object;
     .locals 6
 
-    const-string v0, "<this>"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 745
+    .line 748
     instance-of p1, p2, Landroidx/compose/foundation/layout/RowColumnParentData;
 
     if-eqz p1, :cond_0
@@ -114,7 +116,7 @@
 
     invoke-direct/range {v0 .. v5}, Landroidx/compose/foundation/layout/RowColumnParentData;-><init>(FZLandroidx/compose/foundation/layout/CrossAxisAlignment;ILkotlin/jvm/internal/DefaultConstructorMarker;)V
 
-    .line 747
+    .line 750
     :cond_1
     sget-object p1, Landroidx/compose/foundation/layout/CrossAxisAlignment;->Companion:Landroidx/compose/foundation/layout/CrossAxisAlignment$Companion;
 
@@ -130,20 +132,16 @@
 
     move-result-object p0
 
-    .line 746
+    .line 749
     invoke-virtual {p2, p0}, Landroidx/compose/foundation/layout/RowColumnParentData;->setCrossAxisAlignment(Landroidx/compose/foundation/layout/CrossAxisAlignment;)V
 
     return-object p2
 .end method
 
 .method public final setAlignmentLine(Landroidx/compose/ui/layout/AlignmentLine;)V
-    .locals 1
+    .locals 0
 
-    const-string v0, "<set-?>"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 742
+    .line 745
     iput-object p1, p0, Landroidx/compose/foundation/layout/SiblingsAlignedNode$WithAlignmentLineNode;->alignmentLine:Landroidx/compose/ui/layout/AlignmentLine;
 
     return-void

@@ -94,7 +94,7 @@
 
 # direct methods
 .method public constructor <init>(Landroidx/activity/result/ActivityResultLauncher;Landroidx/activity/result/contract/ActivityResultContract;Ljava/lang/Object;)V
-    .locals 1
+    .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -104,14 +104,6 @@
             "TI;TO;>;TI;)V"
         }
     .end annotation
-
-    const-string v0, "launcher"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string v0, "callerContract"
-
-    invoke-static {p2, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 61
     invoke-direct {p0}, Landroidx/activity/result/ActivityResultLauncher;-><init>()V
@@ -243,11 +235,7 @@
 .end method
 
 .method public launch(Lkotlin/Unit;Landroidx/core/app/ActivityOptionsCompat;)V
-    .locals 1
-
-    const-string v0, "input"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+    .locals 0
 
     .line 75
     iget-object p1, p0, Landroidx/activity/result/ActivityResultCallerLauncher;->launcher:Landroidx/activity/result/ActivityResultLauncher;

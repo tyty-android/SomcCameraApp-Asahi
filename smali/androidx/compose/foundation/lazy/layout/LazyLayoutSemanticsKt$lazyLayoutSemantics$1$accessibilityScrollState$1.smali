@@ -67,10 +67,10 @@
 .method public final invoke()Ljava/lang/Float;
     .locals 0
 
-    .line 75
+    .line 70
     iget-object p0, p0, Landroidx/compose/foundation/lazy/layout/LazyLayoutSemanticsKt$lazyLayoutSemantics$1$accessibilityScrollState$1;->$state:Landroidx/compose/foundation/lazy/layout/LazyLayoutSemanticState;
 
-    invoke-interface {p0}, Landroidx/compose/foundation/lazy/layout/LazyLayoutSemanticState;->getCurrentPosition()F
+    invoke-interface {p0}, Landroidx/compose/foundation/lazy/layout/LazyLayoutSemanticState;->pseudoScrollOffset()F
 
     move-result p0
 

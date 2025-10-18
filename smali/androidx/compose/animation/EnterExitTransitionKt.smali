@@ -4,23 +4,15 @@
 
 
 # annotations
-.annotation system Ldalvik/annotation/MemberClasses;
-    value = {
-        Landroidx/compose/animation/EnterExitTransitionKt$WhenMappings;
-    }
-.end annotation
-
 .annotation system Ldalvik/annotation/SourceDebugExtension;
-    value = "SMAP\nEnterExitTransition.kt\nKotlin\n*S Kotlin\n*F\n+ 1 EnterExitTransition.kt\nandroidx/compose/animation/EnterExitTransitionKt\n+ 2 Composables.kt\nandroidx/compose/runtime/ComposablesKt\n+ 3 Composer.kt\nandroidx/compose/runtime/ComposerKt\n+ 4 Transition.kt\nandroidx/compose/animation/core/TransitionKt\n+ 5 SnapshotState.kt\nandroidx/compose/runtime/SnapshotStateKt__SnapshotStateKt\n*L\n1#1,1177:1\n36#2:1178\n36#2:1185\n25#2:1192\n25#2:1205\n67#2,3:1228\n66#2:1231\n36#2:1238\n1097#3,6:1179\n1097#3,6:1186\n1097#3,6:1193\n1097#3,6:1206\n1097#3,6:1232\n1097#3,6:1239\n940#4:1199\n858#4,5:1200\n940#4:1212\n858#4,5:1213\n853#4,10:1218\n81#5:1245\n107#5,2:1246\n81#5:1248\n107#5,2:1249\n81#5:1251\n81#5:1252\n81#5:1253\n*S KotlinDebug\n*F\n+ 1 EnterExitTransition.kt\nandroidx/compose/animation/EnterExitTransitionKt\n*L\n845#1:1178\n846#1:1185\n870#1:1192\n893#1:1205\n922#1:1228,3\n922#1:1231\n929#1:1238\n845#1:1179,6\n846#1:1186,6\n870#1:1193,6\n893#1:1206,6\n922#1:1232,6\n929#1:1239,6\n860#1:1199\n860#1:1200,5\n883#1:1212\n883#1:1213,5\n909#1:1218,10\n845#1:1245\n845#1:1246,2\n846#1:1248\n846#1:1249,2\n859#1:1251\n883#1:1252\n909#1:1253\n*E\n"
+    value = "SMAP\nEnterExitTransition.kt\nKotlin\n*S Kotlin\n*F\n+ 1 EnterExitTransition.kt\nandroidx/compose/animation/EnterExitTransitionKt\n+ 2 Composables.kt\nandroidx/compose/runtime/ComposablesKt\n+ 3 Composer.kt\nandroidx/compose/runtime/ComposerKt\n+ 4 SnapshotState.kt\nandroidx/compose/runtime/SnapshotStateKt__SnapshotStateKt\n*L\n1#1,1246:1\n25#2:1247\n25#2:1254\n25#2:1261\n36#2:1268\n36#2:1275\n25#2:1282\n25#2:1289\n1116#3,6:1248\n1116#3,6:1255\n1116#3,6:1262\n1116#3,6:1269\n1116#3,6:1276\n1116#3,6:1283\n1116#3,6:1290\n81#4:1296\n107#4,2:1297\n81#4:1299\n107#4,2:1300\n*S KotlinDebug\n*F\n+ 1 EnterExitTransition.kt\nandroidx/compose/animation/EnterExitTransitionKt\n*L\n865#1:1247\n870#1:1254\n876#1:1261\n900#1:1268\n920#1:1275\n953#1:1282\n959#1:1289\n865#1:1248,6\n870#1:1255,6\n876#1:1262,6\n900#1:1269,6\n920#1:1276,6\n953#1:1283,6\n959#1:1290,6\n900#1:1296\n900#1:1297,2\n920#1:1299\n920#1:1300,2\n*E\n"
 .end annotation
 
 .annotation runtime Lkotlin/Metadata;
     d1 = {
-        "\u0000\u0098\u0001\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0010\u0007\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000b\n\u0000\n\u0002\u0018\u0002\n\u0002\u0010\u0008\n\u0002\u0018\u0002\n\u0002\u0008\u0003\n\u0002\u0018\u0002\n\u0002\u0008\u0003\n\u0002\u0018\u0002\n\u0002\u0008\u0005\n\u0002\u0018\u0002\n\u0002\u0008\u001e\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0003\n\u0002\u0010\u000e\n\u0002\u0008\u0004\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0003\n\u0002\u0018\u0002\n\u0002\u0008\u0007\u001aT\u0010\r\u001a\u00020\u000e2\u000e\u0008\u0002\u0010\u000f\u001a\u0008\u0012\u0004\u0012\u00020\u00080\u00102\u0008\u0008\u0002\u0010\u0011\u001a\u00020\u00122\u0008\u0008\u0002\u0010\u0013\u001a\u00020\u00142#\u0008\u0002\u0010\u0015\u001a\u001d\u0012\u0013\u0012\u00110\u0017\u00a2\u0006\u000c\u0008\u0018\u0012\u0008\u0008\u0019\u0012\u0004\u0008\u0008(\u001a\u0012\u0004\u0012\u00020\u00170\u0016H\u0007\u00f8\u0001\u0000\u001aT\u0010\u001b\u001a\u00020\u000e2\u000e\u0008\u0002\u0010\u000f\u001a\u0008\u0012\u0004\u0012\u00020\u00080\u00102\u0008\u0008\u0002\u0010\u0011\u001a\u00020\u001c2\u0008\u0008\u0002\u0010\u0013\u001a\u00020\u00142#\u0008\u0002\u0010\u001d\u001a\u001d\u0012\u0013\u0012\u00110\u0008\u00a2\u0006\u000c\u0008\u0018\u0012\u0008\u0008\u0019\u0012\u0004\u0008\u0008(\u001e\u0012\u0004\u0012\u00020\u00080\u0016H\u0007\u00f8\u0001\u0000\u001aT\u0010\u001f\u001a\u00020\u000e2\u000e\u0008\u0002\u0010\u000f\u001a\u0008\u0012\u0004\u0012\u00020\u00080\u00102\u0008\u0008\u0002\u0010\u0011\u001a\u00020 2\u0008\u0008\u0002\u0010\u0013\u001a\u00020\u00142#\u0008\u0002\u0010!\u001a\u001d\u0012\u0013\u0012\u00110\u0017\u00a2\u0006\u000c\u0008\u0018\u0012\u0008\u0008\u0019\u0012\u0004\u0008\u0008(\"\u0012\u0004\u0012\u00020\u00170\u0016H\u0007\u00f8\u0001\u0000\u001a\"\u0010#\u001a\u00020\u000e2\u000e\u0008\u0002\u0010\u000f\u001a\u0008\u0012\u0004\u0012\u00020\u00040\u00102\u0008\u0008\u0002\u0010$\u001a\u00020\u0004H\u0007\u001a\"\u0010%\u001a\u00020&2\u000e\u0008\u0002\u0010\u000f\u001a\u0008\u0012\u0004\u0012\u00020\u00040\u00102\u0008\u0008\u0002\u0010\'\u001a\u00020\u0004H\u0007\u001a9\u0010(\u001a\u00020\u000e2\u000e\u0008\u0002\u0010\u000f\u001a\u0008\u0012\u0004\u0012\u00020\u00040\u00102\u0008\u0008\u0002\u0010)\u001a\u00020\u00042\u0008\u0008\u0002\u0010*\u001a\u00020\u000bH\u0007\u00f8\u0001\u0001\u00f8\u0001\u0000\u00a2\u0006\u0004\u0008+\u0010,\u001a9\u0010-\u001a\u00020&2\u000e\u0008\u0002\u0010\u000f\u001a\u0008\u0012\u0004\u0012\u00020\u00040\u00102\u0008\u0008\u0002\u0010.\u001a\u00020\u00042\u0008\u0008\u0002\u0010*\u001a\u00020\u000bH\u0007\u00f8\u0001\u0001\u00f8\u0001\u0000\u00a2\u0006\u0004\u0008/\u00100\u001aT\u00101\u001a\u00020&2\u000e\u0008\u0002\u0010\u000f\u001a\u0008\u0012\u0004\u0012\u00020\u00080\u00102\u0008\u0008\u0002\u00102\u001a\u00020\u00122\u0008\u0008\u0002\u0010\u0013\u001a\u00020\u00142#\u0008\u0002\u00103\u001a\u001d\u0012\u0013\u0012\u00110\u0017\u00a2\u0006\u000c\u0008\u0018\u0012\u0008\u0008\u0019\u0012\u0004\u0008\u0008(\u001a\u0012\u0004\u0012\u00020\u00170\u0016H\u0007\u00f8\u0001\u0000\u001aT\u00104\u001a\u00020&2\u000e\u0008\u0002\u0010\u000f\u001a\u0008\u0012\u0004\u0012\u00020\u00080\u00102\u0008\u0008\u0002\u00102\u001a\u00020\u001c2\u0008\u0008\u0002\u0010\u0013\u001a\u00020\u00142#\u0008\u0002\u00105\u001a\u001d\u0012\u0013\u0012\u00110\u0008\u00a2\u0006\u000c\u0008\u0018\u0012\u0008\u0008\u0019\u0012\u0004\u0008\u0008(\u001e\u0012\u0004\u0012\u00020\u00080\u0016H\u0007\u00f8\u0001\u0000\u001aT\u00106\u001a\u00020&2\u000e\u0008\u0002\u0010\u000f\u001a\u0008\u0012\u0004\u0012\u00020\u00080\u00102\u0008\u0008\u0002\u00102\u001a\u00020 2\u0008\u0008\u0002\u0010\u0013\u001a\u00020\u00142#\u0008\u0002\u00107\u001a\u001d\u0012\u0013\u0012\u00110\u0017\u00a2\u0006\u000c\u0008\u0018\u0012\u0008\u0008\u0019\u0012\u0004\u0008\u0008(\"\u0012\u0004\u0012\u00020\u00170\u0016H\u0007\u00f8\u0001\u0000\u001a>\u00108\u001a\u00020\u000e2\u000e\u0008\u0002\u0010\u000f\u001a\u0008\u0012\u0004\u0012\u00020\u00060\u00102!\u00109\u001a\u001d\u0012\u0013\u0012\u00110\u0008\u00a2\u0006\u000c\u0008\u0018\u0012\u0008\u0008\u0019\u0012\u0004\u0008\u0008(\u001e\u0012\u0004\u0012\u00020\u00060\u0016H\u0007\u00f8\u0001\u0000\u001a@\u0010:\u001a\u00020\u000e2\u000e\u0008\u0002\u0010\u000f\u001a\u0008\u0012\u0004\u0012\u00020\u00060\u00102#\u0008\u0002\u0010;\u001a\u001d\u0012\u0013\u0012\u00110\u0017\u00a2\u0006\u000c\u0008\u0018\u0012\u0008\u0008\u0019\u0012\u0004\u0008\u0008(\u001a\u0012\u0004\u0012\u00020\u00170\u0016H\u0007\u00f8\u0001\u0000\u001a@\u0010<\u001a\u00020\u000e2\u000e\u0008\u0002\u0010\u000f\u001a\u0008\u0012\u0004\u0012\u00020\u00060\u00102#\u0008\u0002\u0010=\u001a\u001d\u0012\u0013\u0012\u00110\u0017\u00a2\u0006\u000c\u0008\u0018\u0012\u0008\u0008\u0019\u0012\u0004\u0008\u0008(\"\u0012\u0004\u0012\u00020\u00170\u0016H\u0007\u00f8\u0001\u0000\u001a>\u0010>\u001a\u00020&2\u000e\u0008\u0002\u0010\u000f\u001a\u0008\u0012\u0004\u0012\u00020\u00060\u00102!\u0010?\u001a\u001d\u0012\u0013\u0012\u00110\u0008\u00a2\u0006\u000c\u0008\u0018\u0012\u0008\u0008\u0019\u0012\u0004\u0008\u0008(\u001e\u0012\u0004\u0012\u00020\u00060\u0016H\u0007\u00f8\u0001\u0000\u001a@\u0010@\u001a\u00020&2\u000e\u0008\u0002\u0010\u000f\u001a\u0008\u0012\u0004\u0012\u00020\u00060\u00102#\u0008\u0002\u0010A\u001a\u001d\u0012\u0013\u0012\u00110\u0017\u00a2\u0006\u000c\u0008\u0018\u0012\u0008\u0008\u0019\u0012\u0004\u0008\u0008(\u001a\u0012\u0004\u0012\u00020\u00170\u0016H\u0007\u00f8\u0001\u0000\u001a@\u0010B\u001a\u00020&2\u000e\u0008\u0002\u0010\u000f\u001a\u0008\u0012\u0004\u0012\u00020\u00060\u00102#\u0008\u0002\u0010C\u001a\u001d\u0012\u0013\u0012\u00110\u0017\u00a2\u0006\u000c\u0008\u0018\u0012\u0008\u0008\u0019\u0012\u0004\u0008\u0008(\"\u0012\u0004\u0012\u00020\u00170\u0016H\u0007\u00f8\u0001\u0000\u001a/\u0010D\u001a\u00020E*\u0008\u0012\u0004\u0012\u00020G0F2\u0006\u0010H\u001a\u00020\u000e2\u0006\u0010I\u001a\u00020&2\u0006\u0010J\u001a\u00020KH\u0001\u00a2\u0006\u0002\u0010L\u001aB\u0010M\u001a\u00020E*\u00020E2\u000c\u0010N\u001a\u0008\u0012\u0004\u0012\u00020G0F2\u000e\u0010O\u001a\n\u0012\u0006\u0012\u0004\u0018\u00010Q0P2\u000e\u0010R\u001a\n\u0012\u0006\u0012\u0004\u0018\u00010Q0P2\u0006\u0010S\u001a\u00020KH\u0002\u001aB\u0010T\u001a\u00020E*\u00020E2\u000c\u0010N\u001a\u0008\u0012\u0004\u0012\u00020G0F2\u000e\u00108\u001a\n\u0012\u0006\u0012\u0004\u0018\u00010U0P2\u000e\u0010>\u001a\n\u0012\u0006\u0012\u0004\u0018\u00010U0P2\u0006\u0010S\u001a\u00020KH\u0002\u001a\u000c\u0010V\u001a\u00020\u001c*\u00020\u0012H\u0002\u001a\u000c\u0010V\u001a\u00020\u001c*\u00020 H\u0002\"\u000e\u0010\u0000\u001a\u00020\u0001X\u0082\u0004\u00a2\u0006\u0002\n\u0000\"\u0014\u0010\u0002\u001a\u0008\u0012\u0004\u0012\u00020\u00040\u0003X\u0082\u0004\u00a2\u0006\u0002\n\u0000\"\u0017\u0010\u0005\u001a\u0008\u0012\u0004\u0012\u00020\u00060\u0003X\u0082\u0004\u00f8\u0001\u0000\u00a2\u0006\u0002\n\u0000\"\u0017\u0010\u0007\u001a\u0008\u0012\u0004\u0012\u00020\u00080\u0003X\u0082\u0004\u00f8\u0001\u0000\u00a2\u0006\u0002\n\u0000\"\u001d\u0010\t\u001a\u000e\u0012\u0004\u0012\u00020\u000b\u0012\u0004\u0012\u00020\u000c0\nX\u0082\u0004\u00f8\u0001\u0000\u00a2\u0006\u0002\n\u0000\u0082\u0002\u000b\n\u0002\u0008\u0019\n\u0005\u0008\u00a1\u001e0\u0001\u00a8\u0006W\u00b2\u0006\n\u0010X\u001a\u00020\u0014X\u008a\u008e\u0002\u00b2\u0006\n\u0010Y\u001a\u00020\u0014X\u008a\u008e\u0002\u00b2\u0006\n\u0010Z\u001a\u00020\u0004X\u008a\u0084\u0002\u00b2\u0006\n\u0010[\u001a\u00020\u0004X\u008a\u0084\u0002\u00b2\u0006\n\u0010*\u001a\u00020\u000bX\u008a\u0084\u0002\u00b2\u0006\n\u0010\\\u001a\u00020\u0014X\u008a\u008e\u0002\u00b2\u0006\n\u0010\\\u001a\u00020\u0014X\u008a\u008e\u0002"
+        "\u0000\u0096\u0001\n\u0000\n\u0002\u0018\u0002\n\u0002\u0010\u0007\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0000\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000b\n\u0000\n\u0002\u0018\u0002\n\u0002\u0010\u0008\n\u0002\u0018\u0002\n\u0002\u0008\u0003\n\u0002\u0018\u0002\n\u0002\u0008\u0003\n\u0002\u0018\u0002\n\u0002\u0008#\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0003\n\u0002\u0010\u000e\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0002\u0008\n\u001a \u0010\u000b\u001a\u00020\u000c2\u0006\u0010\r\u001a\u00020\u000e2\u000e\u0010\u000f\u001a\n\u0012\u0006\u0008\u0001\u0012\u00020\u00110\u0010H\u0000\u001a \u0010\u0012\u001a\u00020\u00132\u0006\u0010\r\u001a\u00020\u000e2\u000e\u0010\u000f\u001a\n\u0012\u0006\u0008\u0001\u0012\u00020\u00110\u0010H\u0000\u001aQ\u0010\u0014\u001a\u00020\u000c2\u000e\u0008\u0002\u0010\u0015\u001a\u0008\u0012\u0004\u0012\u00020\u00060\u00162\u0008\u0008\u0002\u0010\u0017\u001a\u00020\u00182\u0008\u0008\u0002\u0010\u0019\u001a\u00020\u001a2#\u0008\u0002\u0010\u001b\u001a\u001d\u0012\u0013\u0012\u00110\u001d\u00a2\u0006\u000c\u0008\u001e\u0012\u0008\u0008\u001f\u0012\u0004\u0008\u0008( \u0012\u0004\u0012\u00020\u001d0\u001cH\u0007\u001aQ\u0010!\u001a\u00020\u000c2\u000e\u0008\u0002\u0010\u0015\u001a\u0008\u0012\u0004\u0012\u00020\u00060\u00162\u0008\u0008\u0002\u0010\u0017\u001a\u00020\"2\u0008\u0008\u0002\u0010\u0019\u001a\u00020\u001a2#\u0008\u0002\u0010#\u001a\u001d\u0012\u0013\u0012\u00110\u0006\u00a2\u0006\u000c\u0008\u001e\u0012\u0008\u0008\u001f\u0012\u0004\u0008\u0008($\u0012\u0004\u0012\u00020\u00060\u001cH\u0007\u001aQ\u0010%\u001a\u00020\u000c2\u000e\u0008\u0002\u0010\u0015\u001a\u0008\u0012\u0004\u0012\u00020\u00060\u00162\u0008\u0008\u0002\u0010\u0017\u001a\u00020&2\u0008\u0008\u0002\u0010\u0019\u001a\u00020\u001a2#\u0008\u0002\u0010\'\u001a\u001d\u0012\u0013\u0012\u00110\u001d\u00a2\u0006\u000c\u0008\u001e\u0012\u0008\u0008\u001f\u0012\u0004\u0008\u0008((\u0012\u0004\u0012\u00020\u001d0\u001cH\u0007\u001a\"\u0010)\u001a\u00020\u000c2\u000e\u0008\u0002\u0010\u0015\u001a\u0008\u0012\u0004\u0012\u00020\u00020\u00162\u0008\u0008\u0002\u0010*\u001a\u00020\u0002H\u0007\u001a\"\u0010+\u001a\u00020\u00132\u000e\u0008\u0002\u0010\u0015\u001a\u0008\u0012\u0004\u0012\u00020\u00020\u00162\u0008\u0008\u0002\u0010,\u001a\u00020\u0002H\u0007\u001a6\u0010-\u001a\u00020\u000c2\u000e\u0008\u0002\u0010\u0015\u001a\u0008\u0012\u0004\u0012\u00020\u00020\u00162\u0008\u0008\u0002\u0010.\u001a\u00020\u00022\u0008\u0008\u0002\u0010/\u001a\u00020\tH\u0007\u00f8\u0001\u0000\u00a2\u0006\u0004\u00080\u00101\u001a6\u00102\u001a\u00020\u00132\u000e\u0008\u0002\u0010\u0015\u001a\u0008\u0012\u0004\u0012\u00020\u00020\u00162\u0008\u0008\u0002\u00103\u001a\u00020\u00022\u0008\u0008\u0002\u0010/\u001a\u00020\tH\u0007\u00f8\u0001\u0000\u00a2\u0006\u0004\u00084\u00105\u001aQ\u00106\u001a\u00020\u00132\u000e\u0008\u0002\u0010\u0015\u001a\u0008\u0012\u0004\u0012\u00020\u00060\u00162\u0008\u0008\u0002\u00107\u001a\u00020\u00182\u0008\u0008\u0002\u0010\u0019\u001a\u00020\u001a2#\u0008\u0002\u00108\u001a\u001d\u0012\u0013\u0012\u00110\u001d\u00a2\u0006\u000c\u0008\u001e\u0012\u0008\u0008\u001f\u0012\u0004\u0008\u0008( \u0012\u0004\u0012\u00020\u001d0\u001cH\u0007\u001aQ\u00109\u001a\u00020\u00132\u000e\u0008\u0002\u0010\u0015\u001a\u0008\u0012\u0004\u0012\u00020\u00060\u00162\u0008\u0008\u0002\u00107\u001a\u00020\"2\u0008\u0008\u0002\u0010\u0019\u001a\u00020\u001a2#\u0008\u0002\u0010:\u001a\u001d\u0012\u0013\u0012\u00110\u0006\u00a2\u0006\u000c\u0008\u001e\u0012\u0008\u0008\u001f\u0012\u0004\u0008\u0008($\u0012\u0004\u0012\u00020\u00060\u001cH\u0007\u001aQ\u0010;\u001a\u00020\u00132\u000e\u0008\u0002\u0010\u0015\u001a\u0008\u0012\u0004\u0012\u00020\u00060\u00162\u0008\u0008\u0002\u00107\u001a\u00020&2\u0008\u0008\u0002\u0010\u0019\u001a\u00020\u001a2#\u0008\u0002\u0010<\u001a\u001d\u0012\u0013\u0012\u00110\u001d\u00a2\u0006\u000c\u0008\u001e\u0012\u0008\u0008\u001f\u0012\u0004\u0008\u0008((\u0012\u0004\u0012\u00020\u001d0\u001cH\u0007\u001a;\u0010=\u001a\u00020\u000c2\u000e\u0008\u0002\u0010\u0015\u001a\u0008\u0012\u0004\u0012\u00020\u00040\u00162!\u0010>\u001a\u001d\u0012\u0013\u0012\u00110\u0006\u00a2\u0006\u000c\u0008\u001e\u0012\u0008\u0008\u001f\u0012\u0004\u0008\u0008($\u0012\u0004\u0012\u00020\u00040\u001cH\u0007\u001a=\u0010?\u001a\u00020\u000c2\u000e\u0008\u0002\u0010\u0015\u001a\u0008\u0012\u0004\u0012\u00020\u00040\u00162#\u0008\u0002\u0010@\u001a\u001d\u0012\u0013\u0012\u00110\u001d\u00a2\u0006\u000c\u0008\u001e\u0012\u0008\u0008\u001f\u0012\u0004\u0008\u0008( \u0012\u0004\u0012\u00020\u001d0\u001cH\u0007\u001a=\u0010A\u001a\u00020\u000c2\u000e\u0008\u0002\u0010\u0015\u001a\u0008\u0012\u0004\u0012\u00020\u00040\u00162#\u0008\u0002\u0010B\u001a\u001d\u0012\u0013\u0012\u00110\u001d\u00a2\u0006\u000c\u0008\u001e\u0012\u0008\u0008\u001f\u0012\u0004\u0008\u0008((\u0012\u0004\u0012\u00020\u001d0\u001cH\u0007\u001a;\u0010C\u001a\u00020\u00132\u000e\u0008\u0002\u0010\u0015\u001a\u0008\u0012\u0004\u0012\u00020\u00040\u00162!\u0010D\u001a\u001d\u0012\u0013\u0012\u00110\u0006\u00a2\u0006\u000c\u0008\u001e\u0012\u0008\u0008\u001f\u0012\u0004\u0008\u0008($\u0012\u0004\u0012\u00020\u00040\u001cH\u0007\u001a=\u0010E\u001a\u00020\u00132\u000e\u0008\u0002\u0010\u0015\u001a\u0008\u0012\u0004\u0012\u00020\u00040\u00162#\u0008\u0002\u0010F\u001a\u001d\u0012\u0013\u0012\u00110\u001d\u00a2\u0006\u000c\u0008\u001e\u0012\u0008\u0008\u001f\u0012\u0004\u0008\u0008( \u0012\u0004\u0012\u00020\u001d0\u001cH\u0007\u001a=\u0010G\u001a\u00020\u00132\u000e\u0008\u0002\u0010\u0015\u001a\u0008\u0012\u0004\u0012\u00020\u00040\u00162#\u0008\u0002\u0010H\u001a\u001d\u0012\u0013\u0012\u00110\u001d\u00a2\u0006\u000c\u0008\u001e\u0012\u0008\u0008\u001f\u0012\u0004\u0008\u0008((\u0012\u0004\u0012\u00020\u001d0\u001cH\u0007\u001a/\u0010I\u001a\u00020J*\u0008\u0012\u0004\u0012\u00020L0K2\u0006\u0010M\u001a\u00020\u000c2\u0006\u0010N\u001a\u00020\u00132\u0006\u0010O\u001a\u00020PH\u0003\u00a2\u0006\u0002\u0010Q\u001a/\u0010R\u001a\u00020S*\u0008\u0012\u0004\u0012\u00020L0K2\u0006\u0010M\u001a\u00020\u000c2\u0006\u0010N\u001a\u00020\u00132\u0006\u0010O\u001a\u00020PH\u0001\u00a2\u0006\u0002\u0010T\u001a\u001f\u0010U\u001a\u000c\u0012\u0006\u0008\u0001\u0012\u00020\u0011\u0018\u00010\u0010*\u00020\u000c2\u0006\u0010\r\u001a\u00020\u000eH\u0080\u0002\u001a\u001f\u0010U\u001a\u000c\u0012\u0006\u0008\u0001\u0012\u00020\u0011\u0018\u00010\u0010*\u00020\u00132\u0006\u0010\r\u001a\u00020\u000eH\u0080\u0002\u001a\u000c\u0010V\u001a\u00020\"*\u00020\u0018H\u0002\u001a\u000c\u0010V\u001a\u00020\"*\u00020&H\u0002\u001a\u001f\u0010W\u001a\u00020\u000c*\u0008\u0012\u0004\u0012\u00020L0K2\u0006\u0010M\u001a\u00020\u000cH\u0001\u00a2\u0006\u0002\u0010X\u001a\u001f\u0010Y\u001a\u00020\u0013*\u0008\u0012\u0004\u0012\u00020L0K2\u0006\u0010N\u001a\u00020\u0013H\u0001\u00a2\u0006\u0002\u0010Z\"\u0014\u0010\u0000\u001a\u0008\u0012\u0004\u0012\u00020\u00020\u0001X\u0082\u0004\u00a2\u0006\u0002\n\u0000\"\u0014\u0010\u0003\u001a\u0008\u0012\u0004\u0012\u00020\u00040\u0001X\u0082\u0004\u00a2\u0006\u0002\n\u0000\"\u0014\u0010\u0005\u001a\u0008\u0012\u0004\u0012\u00020\u00060\u0001X\u0082\u0004\u00a2\u0006\u0002\n\u0000\"\u001a\u0010\u0007\u001a\u000e\u0012\u0004\u0012\u00020\t\u0012\u0004\u0012\u00020\n0\u0008X\u0082\u0004\u00a2\u0006\u0002\n\u0000\u0082\u0002\u0007\n\u0005\u0008\u00a1\u001e0\u0001\u00a8\u0006[\u00b2\u0006\n\u0010\\\u001a\u00020\u000cX\u008a\u008e\u0002\u00b2\u0006\n\u0010]\u001a\u00020\u0013X\u008a\u008e\u0002"
     }
     d2 = {
-        "DefaultAlpha",
-        "Landroidx/compose/runtime/MutableFloatState;",
         "DefaultAlphaAndScaleSpring",
         "Landroidx/compose/animation/core/SpringSpec;",
         "",
@@ -32,8 +24,16 @@
         "Landroidx/compose/animation/core/TwoWayConverter;",
         "Landroidx/compose/ui/graphics/TransformOrigin;",
         "Landroidx/compose/animation/core/AnimationVector2D;",
-        "expandHorizontally",
+        "EnterTransition",
         "Landroidx/compose/animation/EnterTransition;",
+        "key",
+        "",
+        "node",
+        "Landroidx/compose/ui/node/ModifierNodeElement;",
+        "Landroidx/compose/ui/Modifier$Node;",
+        "ExitTransition",
+        "Landroidx/compose/animation/ExitTransition;",
+        "expandHorizontally",
         "animationSpec",
         "Landroidx/compose/animation/core/FiniteAnimationSpec;",
         "expandFrom",
@@ -57,7 +57,6 @@
         "fadeIn",
         "initialAlpha",
         "fadeOut",
-        "Landroidx/compose/animation/ExitTransition;",
         "targetAlpha",
         "scaleIn",
         "initialScale",
@@ -87,31 +86,27 @@
         "targetOffsetX",
         "slideOutVertically",
         "targetOffsetY",
-        "createModifier",
-        "Landroidx/compose/ui/Modifier;",
+        "createGraphicsLayerBlock",
+        "Landroidx/compose/animation/GraphicsLayerBlockForEnterExit;",
         "Landroidx/compose/animation/core/Transition;",
         "Landroidx/compose/animation/EnterExitState;",
         "enter",
         "exit",
         "label",
         "",
+        "(Landroidx/compose/animation/core/Transition;Landroidx/compose/animation/EnterTransition;Landroidx/compose/animation/ExitTransition;Ljava/lang/String;Landroidx/compose/runtime/Composer;I)Landroidx/compose/animation/GraphicsLayerBlockForEnterExit;",
+        "createModifier",
+        "Landroidx/compose/ui/Modifier;",
         "(Landroidx/compose/animation/core/Transition;Landroidx/compose/animation/EnterTransition;Landroidx/compose/animation/ExitTransition;Ljava/lang/String;Landroidx/compose/runtime/Composer;I)Landroidx/compose/ui/Modifier;",
-        "shrinkExpand",
-        "transition",
-        "expand",
-        "Landroidx/compose/runtime/State;",
-        "Landroidx/compose/animation/ChangeSize;",
-        "shrink",
-        "labelPrefix",
-        "slideInOut",
-        "Landroidx/compose/animation/Slide;",
+        "get",
         "toAlignment",
+        "trackActiveEnter",
+        "(Landroidx/compose/animation/core/Transition;Landroidx/compose/animation/EnterTransition;Landroidx/compose/runtime/Composer;I)Landroidx/compose/animation/EnterTransition;",
+        "trackActiveExit",
+        "(Landroidx/compose/animation/core/Transition;Landroidx/compose/animation/ExitTransition;Landroidx/compose/runtime/Composer;I)Landroidx/compose/animation/ExitTransition;",
         "animation_release",
-        "shouldAnimateAlpha",
-        "shouldAnimateScale",
-        "alpha",
-        "scale",
-        "shouldAnimate"
+        "activeEnter",
+        "activeExit"
     }
     k = 0x2
     mv = {
@@ -124,8 +119,6 @@
 
 
 # static fields
-.field private static final DefaultAlpha:Landroidx/compose/runtime/MutableFloatState;
-
 .field private static final DefaultAlphaAndScaleSpring:Landroidx/compose/animation/core/SpringSpec;
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -169,10 +162,20 @@
 
 
 # direct methods
+.method public static synthetic $r8$lambda$1JgidYUxIRNwEZ0kscHeqkwDXjI(Landroidx/compose/animation/core/Transition$DeferredAnimation;Landroidx/compose/animation/core/Transition$DeferredAnimation;Landroidx/compose/animation/core/Transition;Landroidx/compose/animation/EnterTransition;Landroidx/compose/animation/ExitTransition;Landroidx/compose/animation/core/Transition$DeferredAnimation;)Lkotlin/jvm/functions/Function1;
+    .locals 0
+
+    invoke-static/range {p0 .. p5}, Landroidx/compose/animation/EnterExitTransitionKt;->createGraphicsLayerBlock$lambda$11(Landroidx/compose/animation/core/Transition$DeferredAnimation;Landroidx/compose/animation/core/Transition$DeferredAnimation;Landroidx/compose/animation/core/Transition;Landroidx/compose/animation/EnterTransition;Landroidx/compose/animation/ExitTransition;Landroidx/compose/animation/core/Transition$DeferredAnimation;)Lkotlin/jvm/functions/Function1;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
 .method static constructor <clinit>()V
     .locals 7
 
-    .line 937
+    .line 1040
     sget-object v0, Landroidx/compose/animation/EnterExitTransitionKt$TransformOriginVectorConverter$1;->INSTANCE:Landroidx/compose/animation/EnterExitTransitionKt$TransformOriginVectorConverter$1;
 
     check-cast v0, Lkotlin/jvm/functions/Function1;
@@ -187,15 +190,6 @@
 
     sput-object v0, Landroidx/compose/animation/EnterExitTransitionKt;->TransformOriginVectorConverter:Landroidx/compose/animation/core/TwoWayConverter;
 
-    const/high16 v0, 0x3f800000    # 1.0f
-
-    .line 942
-    invoke-static {v0}, Landroidx/compose/runtime/PrimitiveSnapshotStateKt;->mutableFloatStateOf(F)Landroidx/compose/runtime/MutableFloatState;
-
-    move-result-object v0
-
-    sput-object v0, Landroidx/compose/animation/EnterExitTransitionKt;->DefaultAlpha:Landroidx/compose/runtime/MutableFloatState;
-
     const/4 v0, 0x5
 
     const/4 v1, 0x0
@@ -204,14 +198,14 @@
 
     const/4 v3, 0x0
 
-    .line 943
+    .line 1045
     invoke-static {v1, v2, v3, v0, v3}, Landroidx/compose/animation/core/AnimationSpecKt;->spring$default(FFLjava/lang/Object;ILjava/lang/Object;)Landroidx/compose/animation/core/SpringSpec;
 
     move-result-object v0
 
     sput-object v0, Landroidx/compose/animation/EnterExitTransitionKt;->DefaultAlphaAndScaleSpring:Landroidx/compose/animation/core/SpringSpec;
 
-    .line 977
+    .line 1048
     sget-object v0, Landroidx/compose/ui/unit/IntOffset;->Companion:Landroidx/compose/ui/unit/IntOffset$Companion;
 
     invoke-static {v0}, Landroidx/compose/animation/core/VisibilityThresholdsKt;->getVisibilityThreshold(Landroidx/compose/ui/unit/IntOffset$Companion;)J
@@ -224,14 +218,14 @@
 
     const/4 v4, 0x1
 
-    .line 976
+    .line 1047
     invoke-static {v1, v2, v0, v4, v3}, Landroidx/compose/animation/core/AnimationSpecKt;->spring$default(FFLjava/lang/Object;ILjava/lang/Object;)Landroidx/compose/animation/core/SpringSpec;
 
     move-result-object v0
 
     sput-object v0, Landroidx/compose/animation/EnterExitTransitionKt;->DefaultOffsetAnimationSpec:Landroidx/compose/animation/core/SpringSpec;
 
-    .line 1091
+    .line 1206
     sget-object v0, Landroidx/compose/ui/unit/IntSize;->Companion:Landroidx/compose/ui/unit/IntSize$Companion;
 
     invoke-static {v0}, Landroidx/compose/animation/core/VisibilityThresholdsKt;->getVisibilityThreshold(Landroidx/compose/ui/unit/IntSize$Companion;)J
@@ -242,7 +236,7 @@
 
     move-result-object v0
 
-    .line 1090
+    .line 1205
     invoke-static {v1, v2, v0, v4, v3}, Landroidx/compose/animation/core/AnimationSpecKt;->spring$default(FFLjava/lang/Object;ILjava/lang/Object;)Landroidx/compose/animation/core/SpringSpec;
 
     move-result-object v0
@@ -252,37 +246,108 @@
     return-void
 .end method
 
-.method public static final synthetic access$createModifier$lambda$11(Landroidx/compose/runtime/State;)F
-    .locals 0
+.method public static final EnterTransition(Ljava/lang/Object;Landroidx/compose/ui/node/ModifierNodeElement;)Landroidx/compose/animation/EnterTransition;
+    .locals 11
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Ljava/lang/Object;",
+            "Landroidx/compose/ui/node/ModifierNodeElement<",
+            "+",
+            "Landroidx/compose/ui/Modifier$Node;",
+            ">;)",
+            "Landroidx/compose/animation/EnterTransition;"
+        }
+    .end annotation
 
-    .line 1
-    invoke-static {p0}, Landroidx/compose/animation/EnterExitTransitionKt;->createModifier$lambda$11(Landroidx/compose/runtime/State;)F
+    .line 803
+    new-instance v0, Landroidx/compose/animation/EnterTransitionImpl;
 
-    move-result p0
+    new-instance v10, Landroidx/compose/animation/TransitionData;
 
-    return p0
+    invoke-static {p0, p1}, Lkotlin/TuplesKt;->to(Ljava/lang/Object;Ljava/lang/Object;)Lkotlin/Pair;
+
+    move-result-object p0
+
+    invoke-static {p0}, Lkotlin/collections/MapsKt;->mapOf(Lkotlin/Pair;)Ljava/util/Map;
+
+    move-result-object v7
+
+    const/16 v8, 0x1f
+
+    const/4 v9, 0x0
+
+    const/4 v2, 0x0
+
+    const/4 v3, 0x0
+
+    const/4 v4, 0x0
+
+    const/4 v5, 0x0
+
+    const/4 v6, 0x0
+
+    move-object v1, v10
+
+    invoke-direct/range {v1 .. v9}, Landroidx/compose/animation/TransitionData;-><init>(Landroidx/compose/animation/Fade;Landroidx/compose/animation/Slide;Landroidx/compose/animation/ChangeSize;Landroidx/compose/animation/Scale;ZLjava/util/Map;ILkotlin/jvm/internal/DefaultConstructorMarker;)V
+
+    invoke-direct {v0, v10}, Landroidx/compose/animation/EnterTransitionImpl;-><init>(Landroidx/compose/animation/TransitionData;)V
+
+    check-cast v0, Landroidx/compose/animation/EnterTransition;
+
+    return-object v0
 .end method
 
-.method public static final synthetic access$createModifier$lambda$13(Landroidx/compose/runtime/State;)J
-    .locals 2
+.method public static final ExitTransition(Ljava/lang/Object;Landroidx/compose/ui/node/ModifierNodeElement;)Landroidx/compose/animation/ExitTransition;
+    .locals 11
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Ljava/lang/Object;",
+            "Landroidx/compose/ui/node/ModifierNodeElement<",
+            "+",
+            "Landroidx/compose/ui/Modifier$Node;",
+            ">;)",
+            "Landroidx/compose/animation/ExitTransition;"
+        }
+    .end annotation
 
-    .line 1
-    invoke-static {p0}, Landroidx/compose/animation/EnterExitTransitionKt;->createModifier$lambda$13(Landroidx/compose/runtime/State;)J
+    .line 809
+    new-instance v0, Landroidx/compose/animation/ExitTransitionImpl;
 
-    move-result-wide v0
+    new-instance v10, Landroidx/compose/animation/TransitionData;
 
-    return-wide v0
-.end method
+    invoke-static {p0, p1}, Lkotlin/TuplesKt;->to(Ljava/lang/Object;Ljava/lang/Object;)Lkotlin/Pair;
 
-.method public static final synthetic access$createModifier$lambda$8(Landroidx/compose/runtime/State;)F
-    .locals 0
+    move-result-object p0
 
-    .line 1
-    invoke-static {p0}, Landroidx/compose/animation/EnterExitTransitionKt;->createModifier$lambda$8(Landroidx/compose/runtime/State;)F
+    invoke-static {p0}, Lkotlin/collections/MapsKt;->mapOf(Lkotlin/Pair;)Ljava/util/Map;
 
-    move-result p0
+    move-result-object v7
 
-    return p0
+    const/16 v8, 0x1f
+
+    const/4 v9, 0x0
+
+    const/4 v2, 0x0
+
+    const/4 v3, 0x0
+
+    const/4 v4, 0x0
+
+    const/4 v5, 0x0
+
+    const/4 v6, 0x0
+
+    move-object v1, v10
+
+    invoke-direct/range {v1 .. v9}, Landroidx/compose/animation/TransitionData;-><init>(Landroidx/compose/animation/Fade;Landroidx/compose/animation/Slide;Landroidx/compose/animation/ChangeSize;Landroidx/compose/animation/Scale;ZLjava/util/Map;ILkotlin/jvm/internal/DefaultConstructorMarker;)V
+
+    invoke-direct {v0, v10}, Landroidx/compose/animation/ExitTransitionImpl;-><init>(Landroidx/compose/animation/TransitionData;)V
+
+    check-cast v0, Landroidx/compose/animation/ExitTransition;
+
+    return-object v0
 .end method
 
 .method public static final synthetic access$getDefaultAlphaAndScaleSpring$p()Landroidx/compose/animation/core/SpringSpec;
@@ -312,8 +377,531 @@
     return-object v0
 .end method
 
+.method private static final createGraphicsLayerBlock(Landroidx/compose/animation/core/Transition;Landroidx/compose/animation/EnterTransition;Landroidx/compose/animation/ExitTransition;Ljava/lang/String;Landroidx/compose/runtime/Composer;I)Landroidx/compose/animation/GraphicsLayerBlockForEnterExit;
+    .locals 20
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Landroidx/compose/animation/core/Transition<",
+            "Landroidx/compose/animation/EnterExitState;",
+            ">;",
+            "Landroidx/compose/animation/EnterTransition;",
+            "Landroidx/compose/animation/ExitTransition;",
+            "Ljava/lang/String;",
+            "Landroidx/compose/runtime/Composer;",
+            "I)",
+            "Landroidx/compose/animation/GraphicsLayerBlockForEnterExit;"
+        }
+    .end annotation
+
+    move-object/from16 v0, p3
+
+    move-object/from16 v7, p4
+
+    move/from16 v8, p5
+
+    const v1, 0x264802d5
+
+    invoke-interface {v7, v1}, Landroidx/compose/runtime/Composer;->startReplaceableGroup(I)V
+
+    const-string v2, "C(createGraphicsLayerBlock)963@42205L136:EnterExitTransition.kt#xbi5r1"
+
+    invoke-static {v7, v2}, Landroidx/compose/runtime/ComposerKt;->sourceInformation(Landroidx/compose/runtime/Composer;Ljava/lang/String;)V
+
+    invoke-static {}, Landroidx/compose/runtime/ComposerKt;->isTraceInProgress()Z
+
+    move-result v2
+
+    if-eqz v2, :cond_0
+
+    const/4 v2, -0x1
+
+    const-string v3, "androidx.compose.animation.createGraphicsLayerBlock (EnterExitTransition.kt:942)"
+
+    .line 943
+    invoke-static {v1, v8, v2, v3}, Landroidx/compose/runtime/ComposerKt;->traceEventStart(IIILjava/lang/String;)V
+
+    .line 945
+    :cond_0
+    invoke-virtual/range {p1 .. p1}, Landroidx/compose/animation/EnterTransition;->getData$animation_release()Landroidx/compose/animation/TransitionData;
+
+    move-result-object v1
+
+    invoke-virtual {v1}, Landroidx/compose/animation/TransitionData;->getFade()Landroidx/compose/animation/Fade;
+
+    move-result-object v1
+
+    const/4 v2, 0x0
+
+    const/4 v3, 0x1
+
+    if-nez v1, :cond_2
+
+    invoke-virtual/range {p2 .. p2}, Landroidx/compose/animation/ExitTransition;->getData$animation_release()Landroidx/compose/animation/TransitionData;
+
+    move-result-object v1
+
+    invoke-virtual {v1}, Landroidx/compose/animation/TransitionData;->getFade()Landroidx/compose/animation/Fade;
+
+    move-result-object v1
+
+    if-eqz v1, :cond_1
+
+    goto :goto_0
+
+    :cond_1
+    move v1, v2
+
+    goto :goto_1
+
+    :cond_2
+    :goto_0
+    move v1, v3
+
+    .line 946
+    :goto_1
+    invoke-virtual/range {p1 .. p1}, Landroidx/compose/animation/EnterTransition;->getData$animation_release()Landroidx/compose/animation/TransitionData;
+
+    move-result-object v4
+
+    invoke-virtual {v4}, Landroidx/compose/animation/TransitionData;->getScale()Landroidx/compose/animation/Scale;
+
+    move-result-object v4
+
+    if-nez v4, :cond_4
+
+    invoke-virtual/range {p2 .. p2}, Landroidx/compose/animation/ExitTransition;->getData$animation_release()Landroidx/compose/animation/TransitionData;
+
+    move-result-object v4
+
+    invoke-virtual {v4}, Landroidx/compose/animation/TransitionData;->getScale()Landroidx/compose/animation/Scale;
+
+    move-result-object v4
+
+    if-eqz v4, :cond_3
+
+    goto :goto_2
+
+    :cond_3
+    move v9, v2
+
+    goto :goto_3
+
+    :cond_4
+    :goto_2
+    move v9, v3
+
+    :goto_3
+    const v2, -0x45096c07
+
+    invoke-interface {v7, v2}, Landroidx/compose/runtime/Composer;->startReplaceableGroup(I)V
+
+    const-string v2, "952@41884L27,951@41801L120"
+
+    invoke-static {v7, v2}, Landroidx/compose/runtime/ComposerKt;->sourceInformation(Landroidx/compose/runtime/Composer;Ljava/lang/String;)V
+
+    .line 951
+    const-string v10, "CC(remember):Composables.kt#9igjgp"
+
+    const v11, -0x1d58f75c
+
+    const/4 v12, 0x0
+
+    if-eqz v1, :cond_6
+
+    .line 952
+    sget-object v1, Lkotlin/jvm/internal/FloatCompanionObject;->INSTANCE:Lkotlin/jvm/internal/FloatCompanionObject;
+
+    invoke-static {v1}, Landroidx/compose/animation/core/VectorConvertersKt;->getVectorConverter(Lkotlin/jvm/internal/FloatCompanionObject;)Landroidx/compose/animation/core/TwoWayConverter;
+
+    move-result-object v2
+
+    .line 953
+    invoke-interface {v7, v11}, Landroidx/compose/runtime/Composer;->startReplaceableGroup(I)V
+
+    invoke-static {v7, v10}, Landroidx/compose/runtime/ComposerKt;->sourceInformation(Landroidx/compose/runtime/Composer;Ljava/lang/String;)V
+
+    .line 1283
+    invoke-interface/range {p4 .. p4}, Landroidx/compose/runtime/Composer;->rememberedValue()Ljava/lang/Object;
+
+    move-result-object v1
+
+    .line 1284
+    sget-object v3, Landroidx/compose/runtime/Composer;->Companion:Landroidx/compose/runtime/Composer$Companion;
+
+    invoke-virtual {v3}, Landroidx/compose/runtime/Composer$Companion;->getEmpty()Ljava/lang/Object;
+
+    move-result-object v3
+
+    if-ne v1, v3, :cond_5
+
+    .line 953
+    new-instance v1, Ljava/lang/StringBuilder;
+
+    invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
+
+    invoke-virtual {v1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v1
+
+    const-string v3, " alpha"
+
+    invoke-virtual {v1, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v1
+
+    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v1
+
+    .line 1286
+    invoke-interface {v7, v1}, Landroidx/compose/runtime/Composer;->updateRememberedValue(Ljava/lang/Object;)V
+
+    .line 1282
+    :cond_5
+    invoke-interface/range {p4 .. p4}, Landroidx/compose/runtime/Composer;->endReplaceableGroup()V
+
+    move-object v3, v1
+
+    check-cast v3, Ljava/lang/String;
+
+    and-int/lit8 v1, v8, 0xe
+
+    or-int/lit16 v5, v1, 0x1c0
+
+    const/4 v6, 0x0
+
+    move-object/from16 v1, p0
+
+    move-object/from16 v4, p4
+
+    .line 952
+    invoke-static/range {v1 .. v6}, Landroidx/compose/animation/core/TransitionKt;->createDeferredAnimation(Landroidx/compose/animation/core/Transition;Landroidx/compose/animation/core/TwoWayConverter;Ljava/lang/String;Landroidx/compose/runtime/Composer;II)Landroidx/compose/animation/core/Transition$DeferredAnimation;
+
+    move-result-object v1
+
+    move-object v14, v1
+
+    goto :goto_4
+
+    :cond_6
+    move-object v14, v12
+
+    .line 951
+    :goto_4
+    invoke-interface/range {p4 .. p4}, Landroidx/compose/runtime/Composer;->endReplaceableGroup()V
+
+    const v1, -0x45096b42
+
+    invoke-interface {v7, v1}, Landroidx/compose/runtime/Composer;->startReplaceableGroup(I)V
+
+    const-string v1, "958@42081L27,957@41998L120"
+
+    invoke-static {v7, v1}, Landroidx/compose/runtime/ComposerKt;->sourceInformation(Landroidx/compose/runtime/Composer;Ljava/lang/String;)V
+
+    if-eqz v9, :cond_8
+
+    .line 958
+    sget-object v1, Lkotlin/jvm/internal/FloatCompanionObject;->INSTANCE:Lkotlin/jvm/internal/FloatCompanionObject;
+
+    invoke-static {v1}, Landroidx/compose/animation/core/VectorConvertersKt;->getVectorConverter(Lkotlin/jvm/internal/FloatCompanionObject;)Landroidx/compose/animation/core/TwoWayConverter;
+
+    move-result-object v1
+
+    .line 959
+    invoke-interface {v7, v11}, Landroidx/compose/runtime/Composer;->startReplaceableGroup(I)V
+
+    invoke-static {v7, v10}, Landroidx/compose/runtime/ComposerKt;->sourceInformation(Landroidx/compose/runtime/Composer;Ljava/lang/String;)V
+
+    .line 1290
+    invoke-interface/range {p4 .. p4}, Landroidx/compose/runtime/Composer;->rememberedValue()Ljava/lang/Object;
+
+    move-result-object v2
+
+    .line 1291
+    sget-object v3, Landroidx/compose/runtime/Composer;->Companion:Landroidx/compose/runtime/Composer$Companion;
+
+    invoke-virtual {v3}, Landroidx/compose/runtime/Composer$Companion;->getEmpty()Ljava/lang/Object;
+
+    move-result-object v3
+
+    if-ne v2, v3, :cond_7
+
+    .line 959
+    new-instance v2, Ljava/lang/StringBuilder;
+
+    invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
+
+    invoke-virtual {v2, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
+
+    const-string v2, " scale"
+
+    invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v2
+
+    .line 1293
+    invoke-interface {v7, v2}, Landroidx/compose/runtime/Composer;->updateRememberedValue(Ljava/lang/Object;)V
+
+    .line 1289
+    :cond_7
+    invoke-interface/range {p4 .. p4}, Landroidx/compose/runtime/Composer;->endReplaceableGroup()V
+
+    check-cast v2, Ljava/lang/String;
+
+    and-int/lit8 v0, v8, 0xe
+
+    or-int/lit16 v4, v0, 0x1c0
+
+    const/4 v5, 0x0
+
+    move-object/from16 v0, p0
+
+    move-object/from16 v3, p4
+
+    .line 958
+    invoke-static/range {v0 .. v5}, Landroidx/compose/animation/core/TransitionKt;->createDeferredAnimation(Landroidx/compose/animation/core/Transition;Landroidx/compose/animation/core/TwoWayConverter;Ljava/lang/String;Landroidx/compose/runtime/Composer;II)Landroidx/compose/animation/core/Transition$DeferredAnimation;
+
+    move-result-object v0
+
+    move-object v15, v0
+
+    goto :goto_5
+
+    :cond_8
+    move-object v15, v12
+
+    .line 957
+    :goto_5
+    invoke-interface/range {p4 .. p4}, Landroidx/compose/runtime/Composer;->endReplaceableGroup()V
+
+    if-eqz v9, :cond_9
+
+    .line 965
+    sget-object v1, Landroidx/compose/animation/EnterExitTransitionKt;->TransformOriginVectorConverter:Landroidx/compose/animation/core/TwoWayConverter;
+
+    and-int/lit8 v0, v8, 0xe
+
+    or-int/lit16 v4, v0, 0x1c0
+
+    const/4 v5, 0x0
+
+    .line 964
+    const-string v2, "TransformOriginInterruptionHandling"
+
+    move-object/from16 v0, p0
+
+    move-object/from16 v3, p4
+
+    invoke-static/range {v0 .. v5}, Landroidx/compose/animation/core/TransitionKt;->createDeferredAnimation(Landroidx/compose/animation/core/Transition;Landroidx/compose/animation/core/TwoWayConverter;Ljava/lang/String;Landroidx/compose/runtime/Composer;II)Landroidx/compose/animation/core/Transition$DeferredAnimation;
+
+    move-result-object v12
+
+    :cond_9
+    move-object/from16 v19, v12
+
+    .line 970
+    new-instance v0, Landroidx/compose/animation/EnterExitTransitionKt$$ExternalSyntheticLambda0;
+
+    move-object v13, v0
+
+    move-object/from16 v16, p0
+
+    move-object/from16 v17, p1
+
+    move-object/from16 v18, p2
+
+    invoke-direct/range {v13 .. v19}, Landroidx/compose/animation/EnterExitTransitionKt$$ExternalSyntheticLambda0;-><init>(Landroidx/compose/animation/core/Transition$DeferredAnimation;Landroidx/compose/animation/core/Transition$DeferredAnimation;Landroidx/compose/animation/core/Transition;Landroidx/compose/animation/EnterTransition;Landroidx/compose/animation/ExitTransition;Landroidx/compose/animation/core/Transition$DeferredAnimation;)V
+
+    invoke-static {}, Landroidx/compose/runtime/ComposerKt;->isTraceInProgress()Z
+
+    move-result v1
+
+    if-eqz v1, :cond_a
+
+    invoke-static {}, Landroidx/compose/runtime/ComposerKt;->traceEventEnd()V
+
+    :cond_a
+    invoke-interface/range {p4 .. p4}, Landroidx/compose/runtime/Composer;->endReplaceableGroup()V
+
+    return-object v0
+.end method
+
+.method private static final createGraphicsLayerBlock$lambda$11(Landroidx/compose/animation/core/Transition$DeferredAnimation;Landroidx/compose/animation/core/Transition$DeferredAnimation;Landroidx/compose/animation/core/Transition;Landroidx/compose/animation/EnterTransition;Landroidx/compose/animation/ExitTransition;Landroidx/compose/animation/core/Transition$DeferredAnimation;)Lkotlin/jvm/functions/Function1;
+    .locals 3
+
+    const/4 v0, 0x0
+
+    if-eqz p0, :cond_0
+
+    .line 971
+    new-instance v1, Landroidx/compose/animation/EnterExitTransitionKt$createGraphicsLayerBlock$1$alpha$1;
+
+    invoke-direct {v1, p3, p4}, Landroidx/compose/animation/EnterExitTransitionKt$createGraphicsLayerBlock$1$alpha$1;-><init>(Landroidx/compose/animation/EnterTransition;Landroidx/compose/animation/ExitTransition;)V
+
+    check-cast v1, Lkotlin/jvm/functions/Function1;
+
+    new-instance v2, Landroidx/compose/animation/EnterExitTransitionKt$createGraphicsLayerBlock$1$alpha$2;
+
+    invoke-direct {v2, p3, p4}, Landroidx/compose/animation/EnterExitTransitionKt$createGraphicsLayerBlock$1$alpha$2;-><init>(Landroidx/compose/animation/EnterTransition;Landroidx/compose/animation/ExitTransition;)V
+
+    check-cast v2, Lkotlin/jvm/functions/Function1;
+
+    invoke-virtual {p0, v1, v2}, Landroidx/compose/animation/core/Transition$DeferredAnimation;->animate(Lkotlin/jvm/functions/Function1;Lkotlin/jvm/functions/Function1;)Landroidx/compose/runtime/State;
+
+    move-result-object p0
+
+    goto :goto_0
+
+    :cond_0
+    move-object p0, v0
+
+    :goto_0
+    if-eqz p1, :cond_1
+
+    .line 991
+    new-instance v1, Landroidx/compose/animation/EnterExitTransitionKt$createGraphicsLayerBlock$1$scale$1;
+
+    invoke-direct {v1, p3, p4}, Landroidx/compose/animation/EnterExitTransitionKt$createGraphicsLayerBlock$1$scale$1;-><init>(Landroidx/compose/animation/EnterTransition;Landroidx/compose/animation/ExitTransition;)V
+
+    check-cast v1, Lkotlin/jvm/functions/Function1;
+
+    new-instance v2, Landroidx/compose/animation/EnterExitTransitionKt$createGraphicsLayerBlock$1$scale$2;
+
+    invoke-direct {v2, p3, p4}, Landroidx/compose/animation/EnterExitTransitionKt$createGraphicsLayerBlock$1$scale$2;-><init>(Landroidx/compose/animation/EnterTransition;Landroidx/compose/animation/ExitTransition;)V
+
+    check-cast v2, Lkotlin/jvm/functions/Function1;
+
+    invoke-virtual {p1, v1, v2}, Landroidx/compose/animation/core/Transition$DeferredAnimation;->animate(Lkotlin/jvm/functions/Function1;Lkotlin/jvm/functions/Function1;)Landroidx/compose/runtime/State;
+
+    move-result-object p1
+
+    goto :goto_1
+
+    :cond_1
+    move-object p1, v0
+
+    .line 1011
+    :goto_1
+    invoke-virtual {p2}, Landroidx/compose/animation/core/Transition;->getCurrentState()Ljava/lang/Object;
+
+    move-result-object p2
+
+    sget-object v1, Landroidx/compose/animation/EnterExitState;->PreEnter:Landroidx/compose/animation/EnterExitState;
+
+    if-ne p2, v1, :cond_3
+
+    .line 1012
+    invoke-virtual {p3}, Landroidx/compose/animation/EnterTransition;->getData$animation_release()Landroidx/compose/animation/TransitionData;
+
+    move-result-object p2
+
+    invoke-virtual {p2}, Landroidx/compose/animation/TransitionData;->getScale()Landroidx/compose/animation/Scale;
+
+    move-result-object p2
+
+    if-eqz p2, :cond_2
+
+    :goto_2
+    invoke-virtual {p2}, Landroidx/compose/animation/Scale;->getTransformOrigin-SzJe1aQ()J
+
+    move-result-wide v1
+
+    invoke-static {v1, v2}, Landroidx/compose/ui/graphics/TransformOrigin;->box-impl(J)Landroidx/compose/ui/graphics/TransformOrigin;
+
+    move-result-object p2
+
+    goto :goto_4
+
+    :cond_2
+    invoke-virtual {p4}, Landroidx/compose/animation/ExitTransition;->getData$animation_release()Landroidx/compose/animation/TransitionData;
+
+    move-result-object p2
+
+    invoke-virtual {p2}, Landroidx/compose/animation/TransitionData;->getScale()Landroidx/compose/animation/Scale;
+
+    move-result-object p2
+
+    if-eqz p2, :cond_5
+
+    goto :goto_2
+
+    .line 1014
+    :cond_3
+    invoke-virtual {p4}, Landroidx/compose/animation/ExitTransition;->getData$animation_release()Landroidx/compose/animation/TransitionData;
+
+    move-result-object p2
+
+    invoke-virtual {p2}, Landroidx/compose/animation/TransitionData;->getScale()Landroidx/compose/animation/Scale;
+
+    move-result-object p2
+
+    if-eqz p2, :cond_4
+
+    :goto_3
+    invoke-virtual {p2}, Landroidx/compose/animation/Scale;->getTransformOrigin-SzJe1aQ()J
+
+    move-result-wide v1
+
+    invoke-static {v1, v2}, Landroidx/compose/ui/graphics/TransformOrigin;->box-impl(J)Landroidx/compose/ui/graphics/TransformOrigin;
+
+    move-result-object p2
+
+    goto :goto_4
+
+    :cond_4
+    invoke-virtual {p3}, Landroidx/compose/animation/EnterTransition;->getData$animation_release()Landroidx/compose/animation/TransitionData;
+
+    move-result-object p2
+
+    invoke-virtual {p2}, Landroidx/compose/animation/TransitionData;->getScale()Landroidx/compose/animation/Scale;
+
+    move-result-object p2
+
+    if-eqz p2, :cond_5
+
+    goto :goto_3
+
+    :cond_5
+    move-object p2, v0
+
+    :goto_4
+    if-eqz p5, :cond_6
+
+    .line 1018
+    sget-object v0, Landroidx/compose/animation/EnterExitTransitionKt$createGraphicsLayerBlock$1$transformOrigin$1;->INSTANCE:Landroidx/compose/animation/EnterExitTransitionKt$createGraphicsLayerBlock$1$transformOrigin$1;
+
+    check-cast v0, Lkotlin/jvm/functions/Function1;
+
+    new-instance v1, Landroidx/compose/animation/EnterExitTransitionKt$createGraphicsLayerBlock$1$transformOrigin$2;
+
+    invoke-direct {v1, p2, p3, p4}, Landroidx/compose/animation/EnterExitTransitionKt$createGraphicsLayerBlock$1$transformOrigin$2;-><init>(Landroidx/compose/ui/graphics/TransformOrigin;Landroidx/compose/animation/EnterTransition;Landroidx/compose/animation/ExitTransition;)V
+
+    check-cast v1, Lkotlin/jvm/functions/Function1;
+
+    invoke-virtual {p5, v0, v1}, Landroidx/compose/animation/core/Transition$DeferredAnimation;->animate(Lkotlin/jvm/functions/Function1;Lkotlin/jvm/functions/Function1;)Landroidx/compose/runtime/State;
+
+    move-result-object v0
+
+    .line 1029
+    :cond_6
+    new-instance p2, Landroidx/compose/animation/EnterExitTransitionKt$createGraphicsLayerBlock$1$block$1;
+
+    invoke-direct {p2, p0, p1, v0}, Landroidx/compose/animation/EnterExitTransitionKt$createGraphicsLayerBlock$1$block$1;-><init>(Landroidx/compose/runtime/State;Landroidx/compose/runtime/State;Landroidx/compose/runtime/State;)V
+
+    check-cast p2, Lkotlin/jvm/functions/Function1;
+
+    return-object p2
+.end method
+
 .method public static final createModifier(Landroidx/compose/animation/core/Transition;Landroidx/compose/animation/EnterTransition;Landroidx/compose/animation/ExitTransition;Ljava/lang/String;Landroidx/compose/runtime/Composer;I)Landroidx/compose/ui/Modifier;
-    .locals 26
+    .locals 42
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -329,1972 +917,573 @@
         }
     .end annotation
 
-    move-object/from16 v8, p0
+    move-object/from16 v6, p0
 
-    move-object/from16 v9, p1
+    move-object/from16 v7, p3
 
-    move-object/from16 v10, p2
+    move-object/from16 v8, p4
 
-    move-object/from16 v11, p3
+    move/from16 v9, p5
 
-    move-object/from16 v12, p4
+    const v0, 0x367a8aa2
 
-    move/from16 v0, p5
+    invoke-interface {v8, v0}, Landroidx/compose/runtime/Composer;->startReplaceableGroup(I)V
 
-    const-string v1, "<this>"
+    const-string v1, "C(createModifier)856@37697L31,857@37750L28,882@38722L56:EnterExitTransition.kt#xbi5r1"
 
-    invoke-static {v8, v1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string v1, "enter"
-
-    invoke-static {v9, v1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string v1, "exit"
-
-    invoke-static {v10, v1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string v1, "label"
-
-    invoke-static {v11, v1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const v1, 0x367a8aa2
-
-    invoke-interface {v12, v1}, Landroidx/compose/runtime/Composer;->startReplaceableGroup(I)V
-
-    const-string v2, "C(createModifier)831@36300L38,832@36348L37,836@36443L43,837@36496L42,844@36867L40,845@36938L40:EnterExitTransition.kt#xbi5r1"
-
-    invoke-static {v12, v2}, Landroidx/compose/runtime/ComposerKt;->sourceInformation(Landroidx/compose/runtime/Composer;Ljava/lang/String;)V
+    invoke-static {v8, v1}, Landroidx/compose/runtime/ComposerKt;->sourceInformation(Landroidx/compose/runtime/Composer;Ljava/lang/String;)V
 
     invoke-static {}, Landroidx/compose/runtime/ComposerKt;->isTraceInProgress()Z
 
-    move-result v2
+    move-result v1
 
-    const/4 v13, -0x1
+    if-eqz v1, :cond_0
 
-    if-eqz v2, :cond_0
+    const/4 v1, -0x1
 
-    const-string v2, "androidx.compose.animation.createModifier (EnterExitTransition.kt:819)"
+    const-string v2, "androidx.compose.animation.createModifier (EnterExitTransition.kt:855)"
 
-    .line 824
-    invoke-static {v1, v0, v13, v2}, Landroidx/compose/runtime/ComposerKt;->traceEventStart(IIILjava/lang/String;)V
+    .line 856
+    invoke-static {v0, v9, v1, v2}, Landroidx/compose/runtime/ComposerKt;->traceEventStart(IIILjava/lang/String;)V
 
-    .line 828
     :cond_0
-    sget-object v1, Landroidx/compose/ui/Modifier;->Companion:Landroidx/compose/ui/Modifier$Companion;
+    and-int/lit8 v10, v9, 0xe
 
-    check-cast v1, Landroidx/compose/ui/Modifier;
+    and-int/lit8 v0, v9, 0x70
 
-    .line 832
-    invoke-virtual/range {p1 .. p1}, Landroidx/compose/animation/EnterTransition;->getData$animation_release()Landroidx/compose/animation/TransitionData;
+    or-int/2addr v0, v10
 
-    move-result-object v2
+    move-object/from16 v1, p1
 
-    invoke-virtual {v2}, Landroidx/compose/animation/TransitionData;->getSlide()Landroidx/compose/animation/Slide;
+    .line 857
+    invoke-static {v6, v1, v8, v0}, Landroidx/compose/animation/EnterExitTransitionKt;->trackActiveEnter(Landroidx/compose/animation/core/Transition;Landroidx/compose/animation/EnterTransition;Landroidx/compose/runtime/Composer;I)Landroidx/compose/animation/EnterTransition;
 
-    move-result-object v2
+    move-result-object v11
 
-    const/4 v14, 0x0
+    shr-int/lit8 v0, v9, 0x3
 
-    invoke-static {v2, v12, v14}, Landroidx/compose/runtime/SnapshotStateKt;->rememberUpdatedState(Ljava/lang/Object;Landroidx/compose/runtime/Composer;I)Landroidx/compose/runtime/State;
+    and-int/lit8 v0, v0, 0x70
 
-    move-result-object v2
+    or-int/2addr v0, v10
 
-    .line 833
-    invoke-virtual/range {p2 .. p2}, Landroidx/compose/animation/ExitTransition;->getData$animation_release()Landroidx/compose/animation/TransitionData;
+    move-object/from16 v1, p2
 
-    move-result-object v3
+    .line 858
+    invoke-static {v6, v1, v8, v0}, Landroidx/compose/animation/EnterExitTransitionKt;->trackActiveExit(Landroidx/compose/animation/core/Transition;Landroidx/compose/animation/ExitTransition;Landroidx/compose/runtime/Composer;I)Landroidx/compose/animation/ExitTransition;
 
-    invoke-virtual {v3}, Landroidx/compose/animation/TransitionData;->getSlide()Landroidx/compose/animation/Slide;
+    move-result-object v12
 
-    move-result-object v3
-
-    invoke-static {v3, v12, v14}, Landroidx/compose/runtime/SnapshotStateKt;->rememberUpdatedState(Ljava/lang/Object;Landroidx/compose/runtime/Composer;I)Landroidx/compose/runtime/State;
-
-    move-result-object v3
-
-    .line 830
-    invoke-static {v1, v8, v2, v3, v11}, Landroidx/compose/animation/EnterExitTransitionKt;->slideInOut(Landroidx/compose/ui/Modifier;Landroidx/compose/animation/core/Transition;Landroidx/compose/runtime/State;Landroidx/compose/runtime/State;Ljava/lang/String;)Landroidx/compose/ui/Modifier;
-
-    move-result-object v1
-
-    .line 837
-    invoke-virtual/range {p1 .. p1}, Landroidx/compose/animation/EnterTransition;->getData$animation_release()Landroidx/compose/animation/TransitionData;
-
-    move-result-object v2
-
-    invoke-virtual {v2}, Landroidx/compose/animation/TransitionData;->getChangeSize()Landroidx/compose/animation/ChangeSize;
-
-    move-result-object v2
-
-    invoke-static {v2, v12, v14}, Landroidx/compose/runtime/SnapshotStateKt;->rememberUpdatedState(Ljava/lang/Object;Landroidx/compose/runtime/Composer;I)Landroidx/compose/runtime/State;
-
-    move-result-object v2
-
-    .line 838
-    invoke-virtual/range {p2 .. p2}, Landroidx/compose/animation/ExitTransition;->getData$animation_release()Landroidx/compose/animation/TransitionData;
-
-    move-result-object v3
-
-    invoke-virtual {v3}, Landroidx/compose/animation/TransitionData;->getChangeSize()Landroidx/compose/animation/ChangeSize;
-
-    move-result-object v3
-
-    invoke-static {v3, v12, v14}, Landroidx/compose/runtime/SnapshotStateKt;->rememberUpdatedState(Ljava/lang/Object;Landroidx/compose/runtime/Composer;I)Landroidx/compose/runtime/State;
-
-    move-result-object v3
-
-    .line 835
-    invoke-static {v1, v8, v2, v3, v11}, Landroidx/compose/animation/EnterExitTransitionKt;->shrinkExpand(Landroidx/compose/ui/Modifier;Landroidx/compose/animation/core/Transition;Landroidx/compose/runtime/State;Landroidx/compose/runtime/State;Ljava/lang/String;)Landroidx/compose/ui/Modifier;
-
-    move-result-object v15
-
-    and-int/lit8 v7, v0, 0xe
-
-    const v6, 0x44faf204
-
-    .line 845
-    invoke-interface {v12, v6}, Landroidx/compose/runtime/Composer;->startReplaceableGroup(I)V
-
-    const-string v5, "CC(remember)P(1):Composables.kt#9igjgp"
-
-    invoke-static {v12, v5}, Landroidx/compose/runtime/ComposerKt;->sourceInformation(Landroidx/compose/runtime/Composer;Ljava/lang/String;)V
-
-    .line 1178
-    invoke-interface {v12, v8}, Landroidx/compose/runtime/Composer;->changed(Ljava/lang/Object;)Z
-
-    move-result v0
-
-    .line 1179
-    invoke-interface/range {p4 .. p4}, Landroidx/compose/runtime/Composer;->rememberedValue()Ljava/lang/Object;
-
-    move-result-object v1
-
-    const/4 v4, 0x2
-
-    const/4 v3, 0x0
-
-    if-nez v0, :cond_1
-
-    .line 1180
-    sget-object v0, Landroidx/compose/runtime/Composer;->Companion:Landroidx/compose/runtime/Composer$Companion;
-
-    invoke-virtual {v0}, Landroidx/compose/runtime/Composer$Companion;->getEmpty()Ljava/lang/Object;
+    .line 860
+    invoke-virtual {v11}, Landroidx/compose/animation/EnterTransition;->getData$animation_release()Landroidx/compose/animation/TransitionData;
 
     move-result-object v0
 
-    if-ne v1, v0, :cond_2
-
-    .line 845
-    :cond_1
-    invoke-static {v14}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
+    invoke-virtual {v0}, Landroidx/compose/animation/TransitionData;->getSlide()Landroidx/compose/animation/Slide;
 
     move-result-object v0
 
-    invoke-static {v0, v3, v4, v3}, Landroidx/compose/runtime/SnapshotStateKt;->mutableStateOf$default(Ljava/lang/Object;Landroidx/compose/runtime/SnapshotMutationPolicy;ILjava/lang/Object;)Landroidx/compose/runtime/MutableState;
+    if-nez v0, :cond_2
 
-    move-result-object v1
-
-    .line 1182
-    invoke-interface {v12, v1}, Landroidx/compose/runtime/Composer;->updateRememberedValue(Ljava/lang/Object;)V
-
-    .line 1178
-    :cond_2
-    invoke-interface/range {p4 .. p4}, Landroidx/compose/runtime/Composer;->endReplaceableGroup()V
-
-    .line 845
-    move-object v2, v1
-
-    check-cast v2, Landroidx/compose/runtime/MutableState;
-
-    .line 846
-    invoke-interface {v12, v6}, Landroidx/compose/runtime/Composer;->startReplaceableGroup(I)V
-
-    invoke-static {v12, v5}, Landroidx/compose/runtime/ComposerKt;->sourceInformation(Landroidx/compose/runtime/Composer;Ljava/lang/String;)V
-
-    .line 1185
-    invoke-interface {v12, v8}, Landroidx/compose/runtime/Composer;->changed(Ljava/lang/Object;)Z
-
-    move-result v0
-
-    .line 1186
-    invoke-interface/range {p4 .. p4}, Landroidx/compose/runtime/Composer;->rememberedValue()Ljava/lang/Object;
-
-    move-result-object v1
-
-    if-nez v0, :cond_3
-
-    .line 1187
-    sget-object v0, Landroidx/compose/runtime/Composer;->Companion:Landroidx/compose/runtime/Composer$Companion;
-
-    invoke-virtual {v0}, Landroidx/compose/runtime/Composer$Companion;->getEmpty()Ljava/lang/Object;
+    invoke-virtual {v12}, Landroidx/compose/animation/ExitTransition;->getData$animation_release()Landroidx/compose/animation/TransitionData;
 
     move-result-object v0
 
-    if-ne v1, v0, :cond_4
-
-    .line 846
-    :cond_3
-    invoke-static {v14}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
+    invoke-virtual {v0}, Landroidx/compose/animation/TransitionData;->getSlide()Landroidx/compose/animation/Slide;
 
     move-result-object v0
 
-    invoke-static {v0, v3, v4, v3}, Landroidx/compose/runtime/SnapshotStateKt;->mutableStateOf$default(Ljava/lang/Object;Landroidx/compose/runtime/SnapshotMutationPolicy;ILjava/lang/Object;)Landroidx/compose/runtime/MutableState;
-
-    move-result-object v1
-
-    .line 1189
-    invoke-interface {v12, v1}, Landroidx/compose/runtime/Composer;->updateRememberedValue(Ljava/lang/Object;)V
-
-    .line 1185
-    :cond_4
-    invoke-interface/range {p4 .. p4}, Landroidx/compose/runtime/Composer;->endReplaceableGroup()V
-
-    .line 846
-    check-cast v1, Landroidx/compose/runtime/MutableState;
-
-    .line 847
-    invoke-virtual/range {p0 .. p0}, Landroidx/compose/animation/core/Transition;->getCurrentState()Ljava/lang/Object;
-
-    move-result-object v0
-
-    invoke-virtual/range {p0 .. p0}, Landroidx/compose/animation/core/Transition;->getTargetState()Ljava/lang/Object;
-
-    move-result-object v3
-
-    const/4 v4, 0x1
-
-    if-ne v0, v3, :cond_5
-
-    invoke-virtual/range {p0 .. p0}, Landroidx/compose/animation/core/Transition;->isSeeking()Z
-
-    move-result v0
-
-    if-nez v0, :cond_5
-
-    .line 848
-    invoke-static {v2, v14}, Landroidx/compose/animation/EnterExitTransitionKt;->createModifier$lambda$2(Landroidx/compose/runtime/MutableState;Z)V
-
-    .line 849
-    invoke-static {v1, v14}, Landroidx/compose/animation/EnterExitTransitionKt;->createModifier$lambda$5(Landroidx/compose/runtime/MutableState;Z)V
+    if-eqz v0, :cond_1
 
     goto :goto_0
 
-    .line 851
-    :cond_5
-    invoke-virtual/range {p1 .. p1}, Landroidx/compose/animation/EnterTransition;->getData$animation_release()Landroidx/compose/animation/TransitionData;
-
-    move-result-object v0
-
-    invoke-virtual {v0}, Landroidx/compose/animation/TransitionData;->getFade()Landroidx/compose/animation/Fade;
-
-    move-result-object v0
-
-    if-nez v0, :cond_6
-
-    invoke-virtual/range {p2 .. p2}, Landroidx/compose/animation/ExitTransition;->getData$animation_release()Landroidx/compose/animation/TransitionData;
-
-    move-result-object v0
-
-    invoke-virtual {v0}, Landroidx/compose/animation/TransitionData;->getFade()Landroidx/compose/animation/Fade;
-
-    move-result-object v0
-
-    if-eqz v0, :cond_7
-
-    .line 852
-    :cond_6
-    invoke-static {v2, v4}, Landroidx/compose/animation/EnterExitTransitionKt;->createModifier$lambda$2(Landroidx/compose/runtime/MutableState;Z)V
-
-    .line 854
-    :cond_7
-    invoke-virtual/range {p1 .. p1}, Landroidx/compose/animation/EnterTransition;->getData$animation_release()Landroidx/compose/animation/TransitionData;
-
-    move-result-object v0
-
-    invoke-virtual {v0}, Landroidx/compose/animation/TransitionData;->getScale()Landroidx/compose/animation/Scale;
-
-    move-result-object v0
-
-    if-nez v0, :cond_8
-
-    invoke-virtual/range {p2 .. p2}, Landroidx/compose/animation/ExitTransition;->getData$animation_release()Landroidx/compose/animation/TransitionData;
-
-    move-result-object v0
-
-    invoke-virtual {v0}, Landroidx/compose/animation/TransitionData;->getScale()Landroidx/compose/animation/Scale;
-
-    move-result-object v0
-
-    if-eqz v0, :cond_9
-
-    .line 855
-    :cond_8
-    invoke-static {v1, v4}, Landroidx/compose/animation/EnterExitTransitionKt;->createModifier$lambda$5(Landroidx/compose/runtime/MutableState;Z)V
-
-    :cond_9
-    :goto_0
-    const v0, 0x62c77fd9
-
-    invoke-interface {v12, v0}, Landroidx/compose/runtime/Composer;->startReplaceableGroup(I)V
-
-    const-string v0, "869@37922L27,859@37401L796"
-
-    invoke-static {v12, v0}, Landroidx/compose/runtime/ComposerKt;->sourceInformation(Landroidx/compose/runtime/Composer;Ljava/lang/String;)V
-
-    .line 859
-    invoke-static {v2}, Landroidx/compose/animation/EnterExitTransitionKt;->createModifier$lambda$1(Landroidx/compose/runtime/MutableState;)Z
-
-    move-result v0
-
-    const-string v3, "CC(animateFloat)P(2)939@37552L78:Transition.kt#pdpnli"
-
-    const-string v13, "CC(remember):Composables.kt#9igjgp"
-
-    const-string v4, "CC(animateValue)P(3,2)857@34142L32,858@34197L31,859@34253L23,861@34289L89:Transition.kt#pdpnli"
-
-    const-string v14, "C:EnterExitTransition.kt#xbi5r1"
-
-    const/high16 v18, 0x3f800000    # 1.0f
-
-    if-eqz v0, :cond_16
-
-    .line 860
-    new-instance v0, Landroidx/compose/animation/EnterExitTransitionKt$createModifier$alpha$2;
-
-    invoke-direct {v0, v9, v10}, Landroidx/compose/animation/EnterExitTransitionKt$createModifier$alpha$2;-><init>(Landroidx/compose/animation/EnterTransition;Landroidx/compose/animation/ExitTransition;)V
-
-    check-cast v0, Lkotlin/jvm/functions/Function3;
-
-    const v6, -0x1d58f75c
-
-    .line 870
-    invoke-interface {v12, v6}, Landroidx/compose/runtime/Composer;->startReplaceableGroup(I)V
-
-    invoke-static {v12, v13}, Landroidx/compose/runtime/ComposerKt;->sourceInformation(Landroidx/compose/runtime/Composer;Ljava/lang/String;)V
-
-    .line 1193
-    invoke-interface/range {p4 .. p4}, Landroidx/compose/runtime/Composer;->rememberedValue()Ljava/lang/Object;
-
-    move-result-object v6
-
-    .line 1194
-    sget-object v19, Landroidx/compose/runtime/Composer;->Companion:Landroidx/compose/runtime/Composer$Companion;
-
-    move-object/from16 v20, v1
-
-    invoke-virtual/range {v19 .. v19}, Landroidx/compose/runtime/Composer$Companion;->getEmpty()Ljava/lang/Object;
-
-    move-result-object v1
-
-    if-ne v6, v1, :cond_a
-
-    .line 870
-    new-instance v1, Ljava/lang/StringBuilder;
-
-    invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
-
-    invoke-virtual {v1, v11}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v1
-
-    const-string v6, " alpha"
-
-    invoke-virtual {v1, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v1
-
-    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v6
-
-    .line 1196
-    invoke-interface {v12, v6}, Landroidx/compose/runtime/Composer;->updateRememberedValue(Ljava/lang/Object;)V
-
-    .line 1192
-    :cond_a
-    invoke-interface/range {p4 .. p4}, Landroidx/compose/runtime/Composer;->endReplaceableGroup()V
-
-    check-cast v6, Ljava/lang/String;
-
-    or-int/lit16 v1, v7, 0x180
-
-    move-object/from16 v19, v5
-
-    const v5, -0x4fcbfb15
-
-    .line 860
-    invoke-interface {v12, v5}, Landroidx/compose/runtime/Composer;->startReplaceableGroup(I)V
-
-    invoke-static {v12, v3}, Landroidx/compose/runtime/ComposerKt;->sourceInformation(Landroidx/compose/runtime/Composer;Ljava/lang/String;)V
-
-    .line 1199
-    sget-object v17, Lkotlin/jvm/internal/FloatCompanionObject;->INSTANCE:Lkotlin/jvm/internal/FloatCompanionObject;
-
-    invoke-static/range {v17 .. v17}, Landroidx/compose/animation/core/VectorConvertersKt;->getVectorConverter(Lkotlin/jvm/internal/FloatCompanionObject;)Landroidx/compose/animation/core/TwoWayConverter;
-
-    move-result-object v17
-
-    and-int/lit8 v1, v1, 0xe
-
-    or-int/lit16 v1, v1, 0xc00
-
-    const v5, -0x880d1ef
-
-    invoke-interface {v12, v5}, Landroidx/compose/runtime/Composer;->startReplaceableGroup(I)V
-
-    invoke-static {v12, v4}, Landroidx/compose/runtime/ComposerKt;->sourceInformation(Landroidx/compose/runtime/Composer;Ljava/lang/String;)V
-
-    .line 1200
-    invoke-virtual/range {p0 .. p0}, Landroidx/compose/animation/core/Transition;->getCurrentState()Ljava/lang/Object;
-
-    move-result-object v5
-
-    check-cast v5, Landroidx/compose/animation/EnterExitState;
-
-    move-object/from16 v21, v2
-
-    const v2, 0x2d0ae6ce
-
-    invoke-interface {v12, v2}, Landroidx/compose/runtime/Composer;->startReplaceableGroup(I)V
-
-    invoke-static {v12, v14}, Landroidx/compose/runtime/ComposerKt;->sourceInformation(Landroidx/compose/runtime/Composer;Ljava/lang/String;)V
-
-    invoke-static {}, Landroidx/compose/runtime/ComposerKt;->isTraceInProgress()Z
-
-    move-result v22
-
-    if-eqz v22, :cond_b
-
-    move-object/from16 v22, v3
-
-    const-string v3, "androidx.compose.animation.createModifier.<anonymous> (EnterExitTransition.kt:870)"
-
-    move-object/from16 v23, v4
-
-    move/from16 v24, v7
-
-    const/4 v4, -0x1
-
-    const/4 v7, 0x0
-
-    .line 872
-    invoke-static {v2, v7, v4, v3}, Landroidx/compose/runtime/ComposerKt;->traceEventStart(IIILjava/lang/String;)V
+    :cond_1
+    const/4 v0, 0x0
 
     goto :goto_1
 
-    :cond_b
-    move-object/from16 v22, v3
+    :cond_2
+    :goto_0
+    const/4 v0, 0x1
 
-    move-object/from16 v23, v4
-
-    move/from16 v24, v7
-
+    .line 862
     :goto_1
-    sget-object v3, Landroidx/compose/animation/EnterExitTransitionKt$WhenMappings;->$EnumSwitchMapping$0:[I
-
-    invoke-virtual {v5}, Landroidx/compose/animation/EnterExitState;->ordinal()I
-
-    move-result v4
-
-    aget v3, v3, v4
-
-    const/4 v4, 0x1
-
-    if-eq v3, v4, :cond_e
-
-    const/4 v4, 0x2
-
-    if-eq v3, v4, :cond_d
-
-    const/4 v4, 0x3
-
-    if-ne v3, v4, :cond_c
-
-    .line 875
-    invoke-virtual/range {p2 .. p2}, Landroidx/compose/animation/ExitTransition;->getData$animation_release()Landroidx/compose/animation/TransitionData;
-
-    move-result-object v3
-
-    invoke-virtual {v3}, Landroidx/compose/animation/TransitionData;->getFade()Landroidx/compose/animation/Fade;
-
-    move-result-object v3
-
-    if-eqz v3, :cond_e
-
-    invoke-virtual {v3}, Landroidx/compose/animation/Fade;->getAlpha()F
-
-    move-result v3
-
-    goto :goto_2
-
-    :cond_c
-    new-instance v0, Lkotlin/NoWhenBranchMatchedException;
-
-    invoke-direct {v0}, Lkotlin/NoWhenBranchMatchedException;-><init>()V
-
-    throw v0
-
-    .line 874
-    :cond_d
-    invoke-virtual/range {p1 .. p1}, Landroidx/compose/animation/EnterTransition;->getData$animation_release()Landroidx/compose/animation/TransitionData;
-
-    move-result-object v3
-
-    invoke-virtual {v3}, Landroidx/compose/animation/TransitionData;->getFade()Landroidx/compose/animation/Fade;
-
-    move-result-object v3
-
-    if-eqz v3, :cond_e
-
-    invoke-virtual {v3}, Landroidx/compose/animation/Fade;->getAlpha()F
-
-    move-result v3
-
-    goto :goto_2
-
-    :cond_e
-    move/from16 v3, v18
-
-    .line 872
-    :goto_2
-    invoke-static {}, Landroidx/compose/runtime/ComposerKt;->isTraceInProgress()Z
-
-    move-result v4
-
-    if-eqz v4, :cond_f
-
-    invoke-static {}, Landroidx/compose/runtime/ComposerKt;->traceEventEnd()V
-
-    :cond_f
-    invoke-interface/range {p4 .. p4}, Landroidx/compose/runtime/Composer;->endReplaceableGroup()V
-
-    invoke-static {v3}, Ljava/lang/Float;->valueOf(F)Ljava/lang/Float;
-
-    move-result-object v3
-
-    .line 1201
-    invoke-virtual/range {p0 .. p0}, Landroidx/compose/animation/core/Transition;->getTargetState()Ljava/lang/Object;
-
-    move-result-object v4
-
-    check-cast v4, Landroidx/compose/animation/EnterExitState;
-
-    invoke-interface {v12, v2}, Landroidx/compose/runtime/Composer;->startReplaceableGroup(I)V
-
-    invoke-static {v12, v14}, Landroidx/compose/runtime/ComposerKt;->sourceInformation(Landroidx/compose/runtime/Composer;Ljava/lang/String;)V
-
-    invoke-static {}, Landroidx/compose/runtime/ComposerKt;->isTraceInProgress()Z
-
-    move-result v5
-
-    if-eqz v5, :cond_10
-
-    const-string v5, "androidx.compose.animation.createModifier.<anonymous> (EnterExitTransition.kt:870)"
-
-    const/4 v7, -0x1
-
-    const/4 v8, 0x0
-
-    .line 872
-    invoke-static {v2, v8, v7, v5}, Landroidx/compose/runtime/ComposerKt;->traceEventStart(IIILjava/lang/String;)V
-
-    :cond_10
-    sget-object v2, Landroidx/compose/animation/EnterExitTransitionKt$WhenMappings;->$EnumSwitchMapping$0:[I
-
-    invoke-virtual {v4}, Landroidx/compose/animation/EnterExitState;->ordinal()I
-
-    move-result v4
-
-    aget v2, v2, v4
-
-    const/4 v4, 0x1
-
-    if-eq v2, v4, :cond_13
-
-    const/4 v5, 0x2
-
-    if-eq v2, v5, :cond_12
-
-    const/4 v7, 0x3
-
-    if-ne v2, v7, :cond_11
-
-    .line 875
-    invoke-virtual/range {p2 .. p2}, Landroidx/compose/animation/ExitTransition;->getData$animation_release()Landroidx/compose/animation/TransitionData;
-
-    move-result-object v2
-
-    invoke-virtual {v2}, Landroidx/compose/animation/TransitionData;->getFade()Landroidx/compose/animation/Fade;
-
-    move-result-object v2
-
-    if-eqz v2, :cond_14
-
-    invoke-virtual {v2}, Landroidx/compose/animation/Fade;->getAlpha()F
-
-    move-result v2
-
-    goto :goto_3
-
-    :cond_11
-    new-instance v0, Lkotlin/NoWhenBranchMatchedException;
-
-    invoke-direct {v0}, Lkotlin/NoWhenBranchMatchedException;-><init>()V
-
-    throw v0
-
-    .line 874
-    :cond_12
-    invoke-virtual/range {p1 .. p1}, Landroidx/compose/animation/EnterTransition;->getData$animation_release()Landroidx/compose/animation/TransitionData;
-
-    move-result-object v2
-
-    invoke-virtual {v2}, Landroidx/compose/animation/TransitionData;->getFade()Landroidx/compose/animation/Fade;
-
-    move-result-object v2
-
-    if-eqz v2, :cond_14
-
-    invoke-virtual {v2}, Landroidx/compose/animation/Fade;->getAlpha()F
-
-    move-result v2
-
-    goto :goto_3
-
-    :cond_13
-    const/4 v5, 0x2
-
-    :cond_14
-    move/from16 v2, v18
-
-    .line 872
-    :goto_3
-    invoke-static {}, Landroidx/compose/runtime/ComposerKt;->isTraceInProgress()Z
-
-    move-result v7
-
-    if-eqz v7, :cond_15
-
-    invoke-static {}, Landroidx/compose/runtime/ComposerKt;->traceEventEnd()V
-
-    :cond_15
-    invoke-interface/range {p4 .. p4}, Landroidx/compose/runtime/Composer;->endReplaceableGroup()V
-
-    invoke-static {v2}, Ljava/lang/Float;->valueOf(F)Ljava/lang/Float;
-
-    move-result-object v2
-
-    .line 1202
-    invoke-virtual/range {p0 .. p0}, Landroidx/compose/animation/core/Transition;->getSegment()Landroidx/compose/animation/core/Transition$Segment;
-
-    move-result-object v7
-
-    const/4 v8, 0x0
-
-    invoke-static {v8}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
-
-    move-result-object v4
-
-    invoke-interface {v0, v7, v12, v4}, Lkotlin/jvm/functions/Function3;->invoke(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
-
-    move-result-object v0
-
-    move-object v4, v0
-
-    check-cast v4, Landroidx/compose/animation/core/FiniteAnimationSpec;
-
-    and-int/lit8 v0, v1, 0xe
-
-    const/high16 v1, 0x30000
-
-    or-int v7, v0, v1
-
-    move-object/from16 v0, p0
-
-    move-object/from16 v8, v20
-
-    move-object v1, v3
-
-    move-object/from16 v16, v21
-
-    move-object/from16 v21, v15
-
-    move-object/from16 v15, v22
-
-    const/16 v20, 0x0
-
-    move-object v3, v4
-
-    move-object/from16 p5, v14
-
-    move-object/from16 v14, v23
-
-    const v5, -0x4fcbfb15
-
-    move-object/from16 v4, v17
-
-    move-object/from16 v25, v19
-
-    move v14, v5
-
-    move-object v5, v6
-
-    move-object/from16 v6, p4
-
-    move/from16 v14, v24
-
-    .line 1204
-    invoke-static/range {v0 .. v7}, Landroidx/compose/animation/core/TransitionKt;->createTransitionAnimation(Landroidx/compose/animation/core/Transition;Ljava/lang/Object;Ljava/lang/Object;Landroidx/compose/animation/core/FiniteAnimationSpec;Landroidx/compose/animation/core/TwoWayConverter;Ljava/lang/String;Landroidx/compose/runtime/Composer;I)Landroidx/compose/runtime/State;
-
-    move-result-object v0
-
-    invoke-interface/range {p4 .. p4}, Landroidx/compose/runtime/Composer;->endReplaceableGroup()V
-
-    .line 1199
-    invoke-interface/range {p4 .. p4}, Landroidx/compose/runtime/Composer;->endReplaceableGroup()V
-
-    goto :goto_4
-
-    :cond_16
-    move-object v8, v1
-
-    move-object/from16 v16, v2
-
-    move-object/from16 v23, v4
-
-    move-object/from16 v25, v5
-
-    move-object/from16 p5, v14
-
-    move-object/from16 v21, v15
-
-    const/16 v20, 0x0
-
-    move-object v15, v3
-
-    move v14, v7
-
-    .line 879
-    sget-object v0, Landroidx/compose/animation/EnterExitTransitionKt;->DefaultAlpha:Landroidx/compose/runtime/MutableFloatState;
-
-    check-cast v0, Landroidx/compose/runtime/State;
-
-    :goto_4
-    move-object v7, v0
-
-    .line 859
-    invoke-interface/range {p4 .. p4}, Landroidx/compose/runtime/Composer;->endReplaceableGroup()V
-
-    .line 882
-    invoke-static {v8}, Landroidx/compose/animation/EnterExitTransitionKt;->createModifier$lambda$4(Landroidx/compose/runtime/MutableState;)Z
-
-    move-result v0
-
-    if-eqz v0, :cond_3b
-
-    const v0, 0x62c7835d
-
-    invoke-interface {v12, v0}, Landroidx/compose/runtime/Composer;->startReplaceableGroup(I)V
-
-    const-string v0, "892@38813L27,882@38290L800,908@39583L536,921@40163L157"
-
-    invoke-static {v12, v0}, Landroidx/compose/runtime/ComposerKt;->sourceInformation(Landroidx/compose/runtime/Composer;Ljava/lang/String;)V
-
-    .line 883
-    new-instance v0, Landroidx/compose/animation/EnterExitTransitionKt$createModifier$scale$2;
-
-    invoke-direct {v0, v9, v10}, Landroidx/compose/animation/EnterExitTransitionKt$createModifier$scale$2;-><init>(Landroidx/compose/animation/EnterTransition;Landroidx/compose/animation/ExitTransition;)V
-
-    check-cast v0, Lkotlin/jvm/functions/Function3;
-
-    const v1, -0x1d58f75c
-
-    .line 893
-    invoke-interface {v12, v1}, Landroidx/compose/runtime/Composer;->startReplaceableGroup(I)V
-
-    invoke-static {v12, v13}, Landroidx/compose/runtime/ComposerKt;->sourceInformation(Landroidx/compose/runtime/Composer;Ljava/lang/String;)V
-
-    .line 1206
-    invoke-interface/range {p4 .. p4}, Landroidx/compose/runtime/Composer;->rememberedValue()Ljava/lang/Object;
+    invoke-virtual {v11}, Landroidx/compose/animation/EnterTransition;->getData$animation_release()Landroidx/compose/animation/TransitionData;
 
     move-result-object v1
 
-    .line 1207
+    invoke-virtual {v1}, Landroidx/compose/animation/TransitionData;->getChangeSize()Landroidx/compose/animation/ChangeSize;
+
+    move-result-object v1
+
+    if-nez v1, :cond_4
+
+    invoke-virtual {v12}, Landroidx/compose/animation/ExitTransition;->getData$animation_release()Landroidx/compose/animation/TransitionData;
+
+    move-result-object v1
+
+    invoke-virtual {v1}, Landroidx/compose/animation/TransitionData;->getChangeSize()Landroidx/compose/animation/ChangeSize;
+
+    move-result-object v1
+
+    if-eqz v1, :cond_3
+
+    goto :goto_2
+
+    :cond_3
+    const/4 v15, 0x0
+
+    goto :goto_3
+
+    :cond_4
+    :goto_2
+    const/4 v15, 0x1
+
+    :goto_3
+    const v1, 0x62c78261
+
+    .line 861
+    invoke-interface {v8, v1}, Landroidx/compose/runtime/Composer;->startReplaceableGroup(I)V
+
+    const-string v1, "864@38100L27,864@38049L79"
+
+    invoke-static {v8, v1}, Landroidx/compose/runtime/ComposerKt;->sourceInformation(Landroidx/compose/runtime/Composer;Ljava/lang/String;)V
+
+    .line 864
+    const-string v5, "CC(remember):Composables.kt#9igjgp"
+
+    const v4, -0x1d58f75c
+
+    const/16 v16, 0x0
+
+    if-eqz v0, :cond_6
+
+    .line 865
+    sget-object v0, Landroidx/compose/ui/unit/IntOffset;->Companion:Landroidx/compose/ui/unit/IntOffset$Companion;
+
+    invoke-static {v0}, Landroidx/compose/animation/core/VectorConvertersKt;->getVectorConverter(Landroidx/compose/ui/unit/IntOffset$Companion;)Landroidx/compose/animation/core/TwoWayConverter;
+
+    move-result-object v1
+
+    invoke-interface {v8, v4}, Landroidx/compose/runtime/Composer;->startReplaceableGroup(I)V
+
+    invoke-static {v8, v5}, Landroidx/compose/runtime/ComposerKt;->sourceInformation(Landroidx/compose/runtime/Composer;Ljava/lang/String;)V
+
+    .line 1248
+    invoke-interface/range {p4 .. p4}, Landroidx/compose/runtime/Composer;->rememberedValue()Ljava/lang/Object;
+
+    move-result-object v0
+
+    .line 1249
     sget-object v2, Landroidx/compose/runtime/Composer;->Companion:Landroidx/compose/runtime/Composer$Companion;
 
     invoke-virtual {v2}, Landroidx/compose/runtime/Composer$Companion;->getEmpty()Ljava/lang/Object;
 
     move-result-object v2
 
-    if-ne v1, v2, :cond_17
+    if-ne v0, v2, :cond_5
 
-    .line 893
-    new-instance v1, Ljava/lang/StringBuilder;
+    .line 865
+    new-instance v0, Ljava/lang/StringBuilder;
 
-    invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
+    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
 
-    invoke-virtual {v1, v11}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v0, v7}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    move-result-object v1
+    move-result-object v0
 
-    const-string v2, " scale"
+    const-string v2, " slide"
 
-    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    move-result-object v1
+    move-result-object v0
 
-    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    move-result-object v1
+    move-result-object v0
 
-    .line 1209
-    invoke-interface {v12, v1}, Landroidx/compose/runtime/Composer;->updateRememberedValue(Ljava/lang/Object;)V
+    .line 1251
+    invoke-interface {v8, v0}, Landroidx/compose/runtime/Composer;->updateRememberedValue(Ljava/lang/Object;)V
 
-    .line 1205
-    :cond_17
+    .line 1247
+    :cond_5
     invoke-interface/range {p4 .. p4}, Landroidx/compose/runtime/Composer;->endReplaceableGroup()V
 
-    move-object v5, v1
+    move-object v2, v0
 
-    check-cast v5, Ljava/lang/String;
+    check-cast v2, Ljava/lang/String;
 
-    or-int/lit16 v1, v14, 0x180
+    or-int/lit16 v3, v10, 0x1c0
 
-    const v2, -0x4fcbfb15
+    const/16 v17, 0x0
 
-    .line 883
-    invoke-interface {v12, v2}, Landroidx/compose/runtime/Composer;->startReplaceableGroup(I)V
+    move-object/from16 v0, p0
 
-    invoke-static {v12, v15}, Landroidx/compose/runtime/ComposerKt;->sourceInformation(Landroidx/compose/runtime/Composer;Ljava/lang/String;)V
+    move/from16 v18, v3
 
-    .line 1212
-    sget-object v2, Lkotlin/jvm/internal/FloatCompanionObject;->INSTANCE:Lkotlin/jvm/internal/FloatCompanionObject;
+    move-object/from16 v3, p4
 
-    invoke-static {v2}, Landroidx/compose/animation/core/VectorConvertersKt;->getVectorConverter(Lkotlin/jvm/internal/FloatCompanionObject;)Landroidx/compose/animation/core/TwoWayConverter;
+    move v13, v4
 
-    move-result-object v4
+    move/from16 v4, v18
 
-    and-int/lit8 v1, v1, 0xe
+    move-object v14, v5
 
-    or-int/lit16 v1, v1, 0xc00
+    move/from16 v5, v17
 
-    const v2, -0x880d1ef
+    .line 865
+    invoke-static/range {v0 .. v5}, Landroidx/compose/animation/core/TransitionKt;->createDeferredAnimation(Landroidx/compose/animation/core/Transition;Landroidx/compose/animation/core/TwoWayConverter;Ljava/lang/String;Landroidx/compose/runtime/Composer;II)Landroidx/compose/animation/core/Transition$DeferredAnimation;
 
-    invoke-interface {v12, v2}, Landroidx/compose/runtime/Composer;->startReplaceableGroup(I)V
+    move-result-object v0
 
-    move-object/from16 v8, v23
+    move-object/from16 v17, v0
 
-    invoke-static {v12, v8}, Landroidx/compose/runtime/ComposerKt;->sourceInformation(Landroidx/compose/runtime/Composer;Ljava/lang/String;)V
+    goto :goto_4
 
-    .line 1213
-    invoke-virtual/range {p0 .. p0}, Landroidx/compose/animation/core/Transition;->getCurrentState()Ljava/lang/Object;
+    :cond_6
+    move v13, v4
 
-    move-result-object v2
+    move-object v14, v5
 
-    check-cast v2, Landroidx/compose/animation/EnterExitState;
+    move-object/from16 v17, v16
 
-    const v3, -0x23883891
+    .line 864
+    :goto_4
+    invoke-interface/range {p4 .. p4}, Landroidx/compose/runtime/Composer;->endReplaceableGroup()V
 
-    invoke-interface {v12, v3}, Landroidx/compose/runtime/Composer;->startReplaceableGroup(I)V
+    const v0, 0x62c7830b
 
-    move-object/from16 v11, p5
+    invoke-interface {v8, v0}, Landroidx/compose/runtime/Composer;->startReplaceableGroup(I)V
 
-    invoke-static {v12, v11}, Landroidx/compose/runtime/ComposerKt;->sourceInformation(Landroidx/compose/runtime/Composer;Ljava/lang/String;)V
+    const-string v0, "869@38273L35,869@38224L85"
 
-    invoke-static {}, Landroidx/compose/runtime/ComposerKt;->isTraceInProgress()Z
+    invoke-static {v8, v0}, Landroidx/compose/runtime/ComposerKt;->sourceInformation(Landroidx/compose/runtime/Composer;Ljava/lang/String;)V
 
-    move-result v6
+    if-eqz v15, :cond_8
 
-    if-eqz v6, :cond_18
+    .line 870
+    sget-object v0, Landroidx/compose/ui/unit/IntSize;->Companion:Landroidx/compose/ui/unit/IntSize$Companion;
 
-    const-string v6, "androidx.compose.animation.createModifier.<anonymous> (EnterExitTransition.kt:893)"
+    invoke-static {v0}, Landroidx/compose/animation/core/VectorConvertersKt;->getVectorConverter(Landroidx/compose/ui/unit/IntSize$Companion;)Landroidx/compose/animation/core/TwoWayConverter;
 
-    const/4 v13, -0x1
+    move-result-object v1
 
-    const/4 v15, 0x0
+    invoke-interface {v8, v13}, Landroidx/compose/runtime/Composer;->startReplaceableGroup(I)V
 
-    .line 895
-    invoke-static {v3, v15, v13, v6}, Landroidx/compose/runtime/ComposerKt;->traceEventStart(IIILjava/lang/String;)V
+    invoke-static {v8, v14}, Landroidx/compose/runtime/ComposerKt;->sourceInformation(Landroidx/compose/runtime/Composer;Ljava/lang/String;)V
 
-    :cond_18
-    sget-object v6, Landroidx/compose/animation/EnterExitTransitionKt$WhenMappings;->$EnumSwitchMapping$0:[I
+    .line 1255
+    invoke-interface/range {p4 .. p4}, Landroidx/compose/runtime/Composer;->rememberedValue()Ljava/lang/Object;
 
-    invoke-virtual {v2}, Landroidx/compose/animation/EnterExitState;->ordinal()I
+    move-result-object v0
 
-    move-result v2
+    .line 1256
+    sget-object v2, Landroidx/compose/runtime/Composer;->Companion:Landroidx/compose/runtime/Composer$Companion;
 
-    aget v2, v6, v2
-
-    const/4 v13, 0x1
-
-    if-eq v2, v13, :cond_1b
-
-    const/4 v15, 0x2
-
-    if-eq v2, v15, :cond_1a
-
-    const/4 v6, 0x3
-
-    if-ne v2, v6, :cond_19
-
-    .line 898
-    invoke-virtual/range {p2 .. p2}, Landroidx/compose/animation/ExitTransition;->getData$animation_release()Landroidx/compose/animation/TransitionData;
+    invoke-virtual {v2}, Landroidx/compose/runtime/Composer$Companion;->getEmpty()Ljava/lang/Object;
 
     move-result-object v2
 
-    invoke-virtual {v2}, Landroidx/compose/animation/TransitionData;->getScale()Landroidx/compose/animation/Scale;
+    if-ne v0, v2, :cond_7
 
-    move-result-object v2
+    .line 870
+    new-instance v0, Ljava/lang/StringBuilder;
 
-    if-eqz v2, :cond_1c
+    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
 
-    invoke-virtual {v2}, Landroidx/compose/animation/Scale;->getScale()F
+    invoke-virtual {v0, v7}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    move-result v2
+    move-result-object v0
+
+    const-string v2, " shrink/expand"
+
+    invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v0
+
+    .line 1258
+    invoke-interface {v8, v0}, Landroidx/compose/runtime/Composer;->updateRememberedValue(Ljava/lang/Object;)V
+
+    .line 1254
+    :cond_7
+    invoke-interface/range {p4 .. p4}, Landroidx/compose/runtime/Composer;->endReplaceableGroup()V
+
+    move-object v2, v0
+
+    check-cast v2, Ljava/lang/String;
+
+    or-int/lit16 v4, v10, 0x1c0
+
+    const/4 v5, 0x0
+
+    move-object/from16 v0, p0
+
+    move-object/from16 v3, p4
+
+    .line 870
+    invoke-static/range {v0 .. v5}, Landroidx/compose/animation/core/TransitionKt;->createDeferredAnimation(Landroidx/compose/animation/core/Transition;Landroidx/compose/animation/core/TwoWayConverter;Ljava/lang/String;Landroidx/compose/runtime/Composer;II)Landroidx/compose/animation/core/Transition$DeferredAnimation;
+
+    move-result-object v0
+
+    move-object/from16 v18, v0
 
     goto :goto_5
 
-    :cond_19
-    new-instance v0, Lkotlin/NoWhenBranchMatchedException;
+    :cond_8
+    move-object/from16 v18, v16
 
-    invoke-direct {v0}, Lkotlin/NoWhenBranchMatchedException;-><init>()V
-
-    throw v0
-
-    .line 897
-    :cond_1a
-    invoke-virtual/range {p1 .. p1}, Landroidx/compose/animation/EnterTransition;->getData$animation_release()Landroidx/compose/animation/TransitionData;
-
-    move-result-object v2
-
-    invoke-virtual {v2}, Landroidx/compose/animation/TransitionData;->getScale()Landroidx/compose/animation/Scale;
-
-    move-result-object v2
-
-    if-eqz v2, :cond_1c
-
-    invoke-virtual {v2}, Landroidx/compose/animation/Scale;->getScale()F
-
-    move-result v2
-
-    goto :goto_5
-
-    :cond_1b
-    const/4 v15, 0x2
-
-    :cond_1c
-    move/from16 v2, v18
-
-    .line 895
+    .line 869
     :goto_5
-    invoke-static {}, Landroidx/compose/runtime/ComposerKt;->isTraceInProgress()Z
-
-    move-result v6
-
-    if-eqz v6, :cond_1d
-
-    invoke-static {}, Landroidx/compose/runtime/ComposerKt;->traceEventEnd()V
-
-    :cond_1d
     invoke-interface/range {p4 .. p4}, Landroidx/compose/runtime/Composer;->endReplaceableGroup()V
 
-    invoke-static {v2}, Ljava/lang/Float;->valueOf(F)Ljava/lang/Float;
+    const v0, 0x62c783b3
 
-    move-result-object v2
+    invoke-interface {v8, v0}, Landroidx/compose/runtime/Composer;->startReplaceableGroup(I)V
 
-    .line 1214
-    invoke-virtual/range {p0 .. p0}, Landroidx/compose/animation/core/Transition;->getTargetState()Ljava/lang/Object;
+    const-string v0, "875@38468L48,873@38392L134"
 
-    move-result-object v6
+    invoke-static {v8, v0}, Landroidx/compose/runtime/ComposerKt;->sourceInformation(Landroidx/compose/runtime/Composer;Ljava/lang/String;)V
 
-    check-cast v6, Landroidx/compose/animation/EnterExitState;
+    if-eqz v15, :cond_a
 
-    invoke-interface {v12, v3}, Landroidx/compose/runtime/Composer;->startReplaceableGroup(I)V
+    .line 875
+    sget-object v0, Landroidx/compose/ui/unit/IntOffset;->Companion:Landroidx/compose/ui/unit/IntOffset$Companion;
 
-    invoke-static {v12, v11}, Landroidx/compose/runtime/ComposerKt;->sourceInformation(Landroidx/compose/runtime/Composer;Ljava/lang/String;)V
+    invoke-static {v0}, Landroidx/compose/animation/core/VectorConvertersKt;->getVectorConverter(Landroidx/compose/ui/unit/IntOffset$Companion;)Landroidx/compose/animation/core/TwoWayConverter;
 
-    invoke-static {}, Landroidx/compose/runtime/ComposerKt;->isTraceInProgress()Z
+    move-result-object v1
 
-    move-result v16
+    .line 876
+    invoke-interface {v8, v13}, Landroidx/compose/runtime/Composer;->startReplaceableGroup(I)V
 
-    if-eqz v16, :cond_1e
+    invoke-static {v8, v14}, Landroidx/compose/runtime/ComposerKt;->sourceInformation(Landroidx/compose/runtime/Composer;Ljava/lang/String;)V
 
-    const-string v15, "androidx.compose.animation.createModifier.<anonymous> (EnterExitTransition.kt:893)"
-
-    move-object/from16 p5, v7
-
-    const/4 v7, 0x0
-
-    const/4 v13, -0x1
-
-    .line 895
-    invoke-static {v3, v7, v13, v15}, Landroidx/compose/runtime/ComposerKt;->traceEventStart(IIILjava/lang/String;)V
-
-    goto :goto_6
-
-    :cond_1e
-    move-object/from16 p5, v7
-
-    :goto_6
-    sget-object v3, Landroidx/compose/animation/EnterExitTransitionKt$WhenMappings;->$EnumSwitchMapping$0:[I
-
-    invoke-virtual {v6}, Landroidx/compose/animation/EnterExitState;->ordinal()I
-
-    move-result v6
-
-    aget v3, v3, v6
-
-    const/4 v6, 0x1
-
-    if-eq v3, v6, :cond_21
-
-    const/4 v6, 0x2
-
-    if-eq v3, v6, :cond_20
-
-    const/4 v6, 0x3
-
-    if-ne v3, v6, :cond_1f
-
-    .line 898
-    invoke-virtual/range {p2 .. p2}, Landroidx/compose/animation/ExitTransition;->getData$animation_release()Landroidx/compose/animation/TransitionData;
-
-    move-result-object v3
-
-    invoke-virtual {v3}, Landroidx/compose/animation/TransitionData;->getScale()Landroidx/compose/animation/Scale;
-
-    move-result-object v3
-
-    if-eqz v3, :cond_21
-
-    invoke-virtual {v3}, Landroidx/compose/animation/Scale;->getScale()F
-
-    move-result v18
-
-    goto :goto_7
-
-    :cond_1f
-    new-instance v0, Lkotlin/NoWhenBranchMatchedException;
-
-    invoke-direct {v0}, Lkotlin/NoWhenBranchMatchedException;-><init>()V
-
-    throw v0
-
-    .line 897
-    :cond_20
-    invoke-virtual/range {p1 .. p1}, Landroidx/compose/animation/EnterTransition;->getData$animation_release()Landroidx/compose/animation/TransitionData;
-
-    move-result-object v3
-
-    invoke-virtual {v3}, Landroidx/compose/animation/TransitionData;->getScale()Landroidx/compose/animation/Scale;
-
-    move-result-object v3
-
-    if-eqz v3, :cond_21
-
-    invoke-virtual {v3}, Landroidx/compose/animation/Scale;->getScale()F
-
-    move-result v18
-
-    .line 895
-    :cond_21
-    :goto_7
-    invoke-static {}, Landroidx/compose/runtime/ComposerKt;->isTraceInProgress()Z
-
-    move-result v3
-
-    if-eqz v3, :cond_22
-
-    invoke-static {}, Landroidx/compose/runtime/ComposerKt;->traceEventEnd()V
-
-    :cond_22
-    invoke-interface/range {p4 .. p4}, Landroidx/compose/runtime/Composer;->endReplaceableGroup()V
-
-    invoke-static/range {v18 .. v18}, Ljava/lang/Float;->valueOf(F)Ljava/lang/Float;
-
-    move-result-object v3
-
-    .line 1215
-    invoke-virtual/range {p0 .. p0}, Landroidx/compose/animation/core/Transition;->getSegment()Landroidx/compose/animation/core/Transition$Segment;
-
-    move-result-object v6
-
-    const/4 v7, 0x0
-
-    invoke-static {v7}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
-
-    move-result-object v13
-
-    invoke-interface {v0, v6, v12, v13}, Lkotlin/jvm/functions/Function3;->invoke(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    .line 1262
+    invoke-interface/range {p4 .. p4}, Landroidx/compose/runtime/Composer;->rememberedValue()Ljava/lang/Object;
 
     move-result-object v0
 
-    move-object v6, v0
+    .line 1263
+    sget-object v2, Landroidx/compose/runtime/Composer;->Companion:Landroidx/compose/runtime/Composer$Companion;
 
-    check-cast v6, Landroidx/compose/animation/core/FiniteAnimationSpec;
+    invoke-virtual {v2}, Landroidx/compose/runtime/Composer$Companion;->getEmpty()Ljava/lang/Object;
 
-    and-int/lit8 v0, v1, 0xe
+    move-result-object v2
 
-    const/high16 v1, 0x30000
+    if-ne v0, v2, :cond_9
 
-    or-int v7, v0, v1
+    .line 876
+    new-instance v0, Ljava/lang/StringBuilder;
+
+    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
+
+    invoke-virtual {v0, v7}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
+
+    const-string v2, " InterruptionHandlingOffset"
+
+    invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v0
+
+    .line 1265
+    invoke-interface {v8, v0}, Landroidx/compose/runtime/Composer;->updateRememberedValue(Ljava/lang/Object;)V
+
+    .line 1261
+    :cond_9
+    invoke-interface/range {p4 .. p4}, Landroidx/compose/runtime/Composer;->endReplaceableGroup()V
+
+    move-object v2, v0
+
+    check-cast v2, Ljava/lang/String;
+
+    or-int/lit16 v4, v10, 0x1c0
+
+    const/4 v5, 0x0
 
     move-object/from16 v0, p0
 
-    move-object v1, v2
+    move-object/from16 v3, p4
 
-    move-object v2, v3
-
-    move-object v3, v6
-
-    move-object/from16 v6, p4
-
-    move-object/from16 v13, p5
-
-    .line 1217
-    invoke-static/range {v0 .. v7}, Landroidx/compose/animation/core/TransitionKt;->createTransitionAnimation(Landroidx/compose/animation/core/Transition;Ljava/lang/Object;Ljava/lang/Object;Landroidx/compose/animation/core/FiniteAnimationSpec;Landroidx/compose/animation/core/TwoWayConverter;Ljava/lang/String;Landroidx/compose/runtime/Composer;I)Landroidx/compose/runtime/State;
-
-    move-result-object v15
-
-    invoke-interface/range {p4 .. p4}, Landroidx/compose/runtime/Composer;->endReplaceableGroup()V
-
-    .line 1212
-    invoke-interface/range {p4 .. p4}, Landroidx/compose/runtime/Composer;->endReplaceableGroup()V
-
-    .line 902
-    invoke-virtual/range {p0 .. p0}, Landroidx/compose/animation/core/Transition;->getCurrentState()Ljava/lang/Object;
+    .line 874
+    invoke-static/range {v0 .. v5}, Landroidx/compose/animation/core/TransitionKt;->createDeferredAnimation(Landroidx/compose/animation/core/Transition;Landroidx/compose/animation/core/TwoWayConverter;Ljava/lang/String;Landroidx/compose/runtime/Composer;II)Landroidx/compose/animation/core/Transition$DeferredAnimation;
 
     move-result-object v0
 
-    sget-object v1, Landroidx/compose/animation/EnterExitState;->PreEnter:Landroidx/compose/animation/EnterExitState;
+    move-object/from16 v16, v0
 
-    if-ne v0, v1, :cond_24
-
-    .line 903
-    invoke-virtual/range {p1 .. p1}, Landroidx/compose/animation/EnterTransition;->getData$animation_release()Landroidx/compose/animation/TransitionData;
-
-    move-result-object v0
-
-    invoke-virtual {v0}, Landroidx/compose/animation/TransitionData;->getScale()Landroidx/compose/animation/Scale;
-
-    move-result-object v0
-
-    if-eqz v0, :cond_23
-
-    :goto_8
-    invoke-virtual {v0}, Landroidx/compose/animation/Scale;->getTransformOrigin-SzJe1aQ()J
-
-    move-result-wide v0
-
-    invoke-static {v0, v1}, Landroidx/compose/ui/graphics/TransformOrigin;->box-impl(J)Landroidx/compose/ui/graphics/TransformOrigin;
-
-    move-result-object v3
-
-    goto :goto_a
-
-    :cond_23
-    invoke-virtual/range {p2 .. p2}, Landroidx/compose/animation/ExitTransition;->getData$animation_release()Landroidx/compose/animation/TransitionData;
-
-    move-result-object v0
-
-    invoke-virtual {v0}, Landroidx/compose/animation/TransitionData;->getScale()Landroidx/compose/animation/Scale;
-
-    move-result-object v0
-
-    if-eqz v0, :cond_26
-
-    goto :goto_8
-
-    .line 905
-    :cond_24
-    invoke-virtual/range {p2 .. p2}, Landroidx/compose/animation/ExitTransition;->getData$animation_release()Landroidx/compose/animation/TransitionData;
-
-    move-result-object v0
-
-    invoke-virtual {v0}, Landroidx/compose/animation/TransitionData;->getScale()Landroidx/compose/animation/Scale;
-
-    move-result-object v0
-
-    if-eqz v0, :cond_25
-
-    :goto_9
-    invoke-virtual {v0}, Landroidx/compose/animation/Scale;->getTransformOrigin-SzJe1aQ()J
-
-    move-result-wide v0
-
-    invoke-static {v0, v1}, Landroidx/compose/ui/graphics/TransformOrigin;->box-impl(J)Landroidx/compose/ui/graphics/TransformOrigin;
-
-    move-result-object v3
-
-    goto :goto_a
-
-    :cond_25
-    invoke-virtual/range {p1 .. p1}, Landroidx/compose/animation/EnterTransition;->getData$animation_release()Landroidx/compose/animation/TransitionData;
-
-    move-result-object v0
-
-    invoke-virtual {v0}, Landroidx/compose/animation/TransitionData;->getScale()Landroidx/compose/animation/Scale;
-
-    move-result-object v0
-
-    if-eqz v0, :cond_26
-
-    goto :goto_9
-
-    :cond_26
-    move-object/from16 v3, v20
-
-    .line 910
-    :goto_a
-    sget-object v4, Landroidx/compose/animation/EnterExitTransitionKt;->TransformOriginVectorConverter:Landroidx/compose/animation/core/TwoWayConverter;
-
-    or-int/lit16 v0, v14, 0xc40
-
-    const v1, -0x880d1ef
-
-    .line 909
-    invoke-interface {v12, v1}, Landroidx/compose/runtime/Composer;->startReplaceableGroup(I)V
-
-    invoke-static {v12, v8}, Landroidx/compose/runtime/ComposerKt;->sourceInformation(Landroidx/compose/runtime/Composer;Ljava/lang/String;)V
-
-    .line 1218
-    sget-object v1, Landroidx/compose/animation/EnterExitTransitionKt$createModifier$$inlined$animateValue$1;->INSTANCE:Landroidx/compose/animation/EnterExitTransitionKt$createModifier$$inlined$animateValue$1;
-
-    check-cast v1, Lkotlin/jvm/functions/Function3;
-
-    .line 1223
-    invoke-virtual/range {p0 .. p0}, Landroidx/compose/animation/core/Transition;->getCurrentState()Ljava/lang/Object;
-
-    move-result-object v2
-
-    check-cast v2, Landroidx/compose/animation/EnterExitState;
-
-    const v5, -0x112d0e25
-
-    invoke-interface {v12, v5}, Landroidx/compose/runtime/Composer;->startReplaceableGroup(I)V
-
-    invoke-static {v12, v11}, Landroidx/compose/runtime/ComposerKt;->sourceInformation(Landroidx/compose/runtime/Composer;Ljava/lang/String;)V
-
-    invoke-static {}, Landroidx/compose/runtime/ComposerKt;->isTraceInProgress()Z
-
-    move-result v6
-
-    if-eqz v6, :cond_27
-
-    const-string v6, "androidx.compose.animation.createModifier.<anonymous> (EnterExitTransition.kt:911)"
-
-    const/4 v7, -0x1
-
-    const/4 v8, 0x0
-
-    .line 913
-    invoke-static {v5, v8, v7, v6}, Landroidx/compose/runtime/ComposerKt;->traceEventStart(IIILjava/lang/String;)V
-
-    :cond_27
-    sget-object v6, Landroidx/compose/animation/EnterExitTransitionKt$WhenMappings;->$EnumSwitchMapping$0:[I
-
-    invoke-virtual {v2}, Landroidx/compose/animation/EnterExitState;->ordinal()I
-
-    move-result v2
-
-    aget v2, v6, v2
-
-    const/4 v6, 0x1
-
-    if-eq v2, v6, :cond_2d
-
-    const/4 v6, 0x2
-
-    if-eq v2, v6, :cond_2a
-
-    const/4 v6, 0x3
-
-    if-ne v2, v6, :cond_29
-
-    .line 918
-    invoke-virtual/range {p2 .. p2}, Landroidx/compose/animation/ExitTransition;->getData$animation_release()Landroidx/compose/animation/TransitionData;
-
-    move-result-object v2
-
-    invoke-virtual {v2}, Landroidx/compose/animation/TransitionData;->getScale()Landroidx/compose/animation/Scale;
-
-    move-result-object v2
-
-    if-eqz v2, :cond_28
-
-    :goto_b
-    invoke-virtual {v2}, Landroidx/compose/animation/Scale;->getTransformOrigin-SzJe1aQ()J
-
-    move-result-wide v6
-
-    invoke-static {v6, v7}, Landroidx/compose/ui/graphics/TransformOrigin;->box-impl(J)Landroidx/compose/ui/graphics/TransformOrigin;
-
-    move-result-object v2
-
-    goto :goto_d
-
-    :cond_28
-    invoke-virtual/range {p1 .. p1}, Landroidx/compose/animation/EnterTransition;->getData$animation_release()Landroidx/compose/animation/TransitionData;
-
-    move-result-object v2
-
-    invoke-virtual {v2}, Landroidx/compose/animation/TransitionData;->getScale()Landroidx/compose/animation/Scale;
-
-    move-result-object v2
-
-    if-eqz v2, :cond_2c
-
-    goto :goto_b
-
-    :cond_29
-    new-instance v0, Lkotlin/NoWhenBranchMatchedException;
-
-    invoke-direct {v0}, Lkotlin/NoWhenBranchMatchedException;-><init>()V
-
-    throw v0
-
-    .line 916
-    :cond_2a
-    invoke-virtual/range {p1 .. p1}, Landroidx/compose/animation/EnterTransition;->getData$animation_release()Landroidx/compose/animation/TransitionData;
-
-    move-result-object v2
-
-    invoke-virtual {v2}, Landroidx/compose/animation/TransitionData;->getScale()Landroidx/compose/animation/Scale;
-
-    move-result-object v2
-
-    if-eqz v2, :cond_2b
-
-    :goto_c
-    invoke-virtual {v2}, Landroidx/compose/animation/Scale;->getTransformOrigin-SzJe1aQ()J
-
-    move-result-wide v6
-
-    invoke-static {v6, v7}, Landroidx/compose/ui/graphics/TransformOrigin;->box-impl(J)Landroidx/compose/ui/graphics/TransformOrigin;
-
-    move-result-object v2
-
-    goto :goto_d
-
-    :cond_2b
-    invoke-virtual/range {p2 .. p2}, Landroidx/compose/animation/ExitTransition;->getData$animation_release()Landroidx/compose/animation/TransitionData;
-
-    move-result-object v2
-
-    invoke-virtual {v2}, Landroidx/compose/animation/TransitionData;->getScale()Landroidx/compose/animation/Scale;
-
-    move-result-object v2
-
-    if-eqz v2, :cond_2c
-
-    goto :goto_c
-
-    :cond_2c
-    move-object/from16 v2, v20
-
-    goto :goto_d
-
-    :cond_2d
-    move-object v2, v3
-
-    :goto_d
-    if-eqz v2, :cond_2e
-
-    .line 913
-    invoke-virtual {v2}, Landroidx/compose/ui/graphics/TransformOrigin;->unbox-impl()J
-
-    move-result-wide v6
-
-    goto :goto_e
-
-    .line 919
-    :cond_2e
-    sget-object v2, Landroidx/compose/ui/graphics/TransformOrigin;->Companion:Landroidx/compose/ui/graphics/TransformOrigin$Companion;
-
-    invoke-virtual {v2}, Landroidx/compose/ui/graphics/TransformOrigin$Companion;->getCenter-SzJe1aQ()J
-
-    move-result-wide v6
-
-    .line 913
-    :goto_e
-    invoke-static {}, Landroidx/compose/runtime/ComposerKt;->isTraceInProgress()Z
-
-    move-result v2
-
-    if-eqz v2, :cond_2f
-
-    invoke-static {}, Landroidx/compose/runtime/ComposerKt;->traceEventEnd()V
-
-    :cond_2f
+    .line 873
+    :cond_a
     invoke-interface/range {p4 .. p4}, Landroidx/compose/runtime/Composer;->endReplaceableGroup()V
 
-    invoke-static {v6, v7}, Landroidx/compose/ui/graphics/TransformOrigin;->box-impl(J)Landroidx/compose/ui/graphics/TransformOrigin;
-
-    move-result-object v2
-
-    .line 1224
-    invoke-virtual/range {p0 .. p0}, Landroidx/compose/animation/core/Transition;->getTargetState()Ljava/lang/Object;
-
-    move-result-object v6
-
-    check-cast v6, Landroidx/compose/animation/EnterExitState;
-
-    invoke-interface {v12, v5}, Landroidx/compose/runtime/Composer;->startReplaceableGroup(I)V
-
-    invoke-static {v12, v11}, Landroidx/compose/runtime/ComposerKt;->sourceInformation(Landroidx/compose/runtime/Composer;Ljava/lang/String;)V
-
-    invoke-static {}, Landroidx/compose/runtime/ComposerKt;->isTraceInProgress()Z
-
-    move-result v7
-
-    if-eqz v7, :cond_30
-
-    const-string v7, "androidx.compose.animation.createModifier.<anonymous> (EnterExitTransition.kt:911)"
-
-    const/4 v8, -0x1
-
-    const/4 v11, 0x0
-
-    .line 913
-    invoke-static {v5, v11, v8, v7}, Landroidx/compose/runtime/ComposerKt;->traceEventStart(IIILjava/lang/String;)V
-
-    :cond_30
-    sget-object v5, Landroidx/compose/animation/EnterExitTransitionKt$WhenMappings;->$EnumSwitchMapping$0:[I
-
-    invoke-virtual {v6}, Landroidx/compose/animation/EnterExitState;->ordinal()I
-
-    move-result v6
-
-    aget v5, v5, v6
-
-    const/4 v6, 0x1
-
-    if-eq v5, v6, :cond_36
-
-    const/4 v6, 0x2
-
-    if-eq v5, v6, :cond_33
-
-    const/4 v3, 0x3
-
-    if-ne v5, v3, :cond_32
-
-    .line 918
-    invoke-virtual/range {p2 .. p2}, Landroidx/compose/animation/ExitTransition;->getData$animation_release()Landroidx/compose/animation/TransitionData;
-
-    move-result-object v3
-
-    invoke-virtual {v3}, Landroidx/compose/animation/TransitionData;->getScale()Landroidx/compose/animation/Scale;
-
-    move-result-object v3
-
-    if-eqz v3, :cond_31
-
-    :goto_f
-    invoke-virtual {v3}, Landroidx/compose/animation/Scale;->getTransformOrigin-SzJe1aQ()J
-
-    move-result-wide v5
-
-    invoke-static {v5, v6}, Landroidx/compose/ui/graphics/TransformOrigin;->box-impl(J)Landroidx/compose/ui/graphics/TransformOrigin;
-
-    move-result-object v3
-
-    goto :goto_11
-
-    :cond_31
-    invoke-virtual/range {p1 .. p1}, Landroidx/compose/animation/EnterTransition;->getData$animation_release()Landroidx/compose/animation/TransitionData;
-
-    move-result-object v3
-
-    invoke-virtual {v3}, Landroidx/compose/animation/TransitionData;->getScale()Landroidx/compose/animation/Scale;
-
-    move-result-object v3
-
-    if-eqz v3, :cond_35
-
-    goto :goto_f
-
-    :cond_32
-    new-instance v0, Lkotlin/NoWhenBranchMatchedException;
-
-    invoke-direct {v0}, Lkotlin/NoWhenBranchMatchedException;-><init>()V
-
-    throw v0
-
-    .line 916
-    :cond_33
-    invoke-virtual/range {p1 .. p1}, Landroidx/compose/animation/EnterTransition;->getData$animation_release()Landroidx/compose/animation/TransitionData;
-
-    move-result-object v3
-
-    invoke-virtual {v3}, Landroidx/compose/animation/TransitionData;->getScale()Landroidx/compose/animation/Scale;
-
-    move-result-object v3
-
-    if-eqz v3, :cond_34
-
-    :goto_10
-    invoke-virtual {v3}, Landroidx/compose/animation/Scale;->getTransformOrigin-SzJe1aQ()J
-
-    move-result-wide v5
-
-    invoke-static {v5, v6}, Landroidx/compose/ui/graphics/TransformOrigin;->box-impl(J)Landroidx/compose/ui/graphics/TransformOrigin;
-
-    move-result-object v3
-
-    goto :goto_11
-
-    :cond_34
-    invoke-virtual/range {p2 .. p2}, Landroidx/compose/animation/ExitTransition;->getData$animation_release()Landroidx/compose/animation/TransitionData;
-
-    move-result-object v3
-
-    invoke-virtual {v3}, Landroidx/compose/animation/TransitionData;->getScale()Landroidx/compose/animation/Scale;
-
-    move-result-object v3
-
-    if-eqz v3, :cond_35
-
-    goto :goto_10
-
-    :cond_35
-    move-object/from16 v3, v20
-
-    :cond_36
-    :goto_11
-    if-eqz v3, :cond_37
-
-    .line 913
-    invoke-virtual {v3}, Landroidx/compose/ui/graphics/TransformOrigin;->unbox-impl()J
-
-    move-result-wide v5
-
-    goto :goto_12
-
-    .line 919
-    :cond_37
-    sget-object v3, Landroidx/compose/ui/graphics/TransformOrigin;->Companion:Landroidx/compose/ui/graphics/TransformOrigin$Companion;
-
-    invoke-virtual {v3}, Landroidx/compose/ui/graphics/TransformOrigin$Companion;->getCenter-SzJe1aQ()J
-
-    move-result-wide v5
-
-    .line 913
-    :goto_12
-    invoke-static {}, Landroidx/compose/runtime/ComposerKt;->isTraceInProgress()Z
-
-    move-result v3
-
-    if-eqz v3, :cond_38
-
-    invoke-static {}, Landroidx/compose/runtime/ComposerKt;->traceEventEnd()V
-
-    :cond_38
-    invoke-interface/range {p4 .. p4}, Landroidx/compose/runtime/Composer;->endReplaceableGroup()V
-
-    invoke-static {v5, v6}, Landroidx/compose/ui/graphics/TransformOrigin;->box-impl(J)Landroidx/compose/ui/graphics/TransformOrigin;
-
-    move-result-object v3
-
-    .line 1225
-    invoke-virtual/range {p0 .. p0}, Landroidx/compose/animation/core/Transition;->getSegment()Landroidx/compose/animation/core/Transition$Segment;
-
-    move-result-object v5
-
-    const/4 v6, 0x0
-
-    invoke-static {v6}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
-
-    move-result-object v6
-
-    invoke-interface {v1, v5, v12, v6}, Lkotlin/jvm/functions/Function3;->invoke(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
-
-    move-result-object v1
-
-    move-object v5, v1
-
-    check-cast v5, Landroidx/compose/animation/core/FiniteAnimationSpec;
-
-    and-int/lit8 v0, v0, 0xe
-
-    const v1, 0x38000
-
-    or-int v7, v0, v1
-
-    .line 1227
-    const-string v6, "TransformOriginInterruptionHandling"
-
-    move-object/from16 v0, p0
-
-    move-object v1, v2
-
-    move-object v2, v3
-
-    move-object v3, v5
-
-    move-object v5, v6
-
-    move-object/from16 v6, p4
-
-    invoke-static/range {v0 .. v7}, Landroidx/compose/animation/core/TransitionKt;->createTransitionAnimation(Landroidx/compose/animation/core/Transition;Ljava/lang/Object;Ljava/lang/Object;Landroidx/compose/animation/core/FiniteAnimationSpec;Landroidx/compose/animation/core/TwoWayConverter;Ljava/lang/String;Landroidx/compose/runtime/Composer;I)Landroidx/compose/runtime/State;
+    .line 880
+    invoke-virtual {v11}, Landroidx/compose/animation/EnterTransition;->getData$animation_release()Landroidx/compose/animation/TransitionData;
 
     move-result-object v0
 
-    invoke-interface/range {p4 .. p4}, Landroidx/compose/runtime/Composer;->endReplaceableGroup()V
+    invoke-virtual {v0}, Landroidx/compose/animation/TransitionData;->getChangeSize()Landroidx/compose/animation/ChangeSize;
 
-    const v1, 0x607fb4c4
+    move-result-object v0
 
-    .line 922
-    invoke-interface {v12, v1}, Landroidx/compose/runtime/Composer;->startReplaceableGroup(I)V
+    if-eqz v0, :cond_b
 
-    const-string v1, "CC(remember)P(1,2,3):Composables.kt#9igjgp"
-
-    invoke-static {v12, v1}, Landroidx/compose/runtime/ComposerKt;->sourceInformation(Landroidx/compose/runtime/Composer;Ljava/lang/String;)V
-
-    .line 1228
-    invoke-interface {v12, v13}, Landroidx/compose/runtime/Composer;->changed(Ljava/lang/Object;)Z
-
-    move-result v1
-
-    .line 1229
-    invoke-interface {v12, v15}, Landroidx/compose/runtime/Composer;->changed(Ljava/lang/Object;)Z
-
-    move-result v2
-
-    or-int/2addr v1, v2
-
-    .line 1230
-    invoke-interface {v12, v0}, Landroidx/compose/runtime/Composer;->changed(Ljava/lang/Object;)Z
-
-    move-result v2
-
-    or-int/2addr v1, v2
-
-    .line 1232
-    invoke-interface/range {p4 .. p4}, Landroidx/compose/runtime/Composer;->rememberedValue()Ljava/lang/Object;
-
-    move-result-object v2
-
-    if-nez v1, :cond_39
-
-    .line 1233
-    sget-object v1, Landroidx/compose/runtime/Composer;->Companion:Landroidx/compose/runtime/Composer$Companion;
-
-    invoke-virtual {v1}, Landroidx/compose/runtime/Composer$Companion;->getEmpty()Ljava/lang/Object;
-
-    move-result-object v1
-
-    if-ne v2, v1, :cond_3a
-
-    .line 922
-    :cond_39
-    new-instance v1, Landroidx/compose/animation/EnterExitTransitionKt$createModifier$1$1;
-
-    invoke-direct {v1, v13, v15, v0}, Landroidx/compose/animation/EnterExitTransitionKt$createModifier$1$1;-><init>(Landroidx/compose/runtime/State;Landroidx/compose/runtime/State;Landroidx/compose/runtime/State;)V
-
-    move-object v2, v1
-
-    check-cast v2, Lkotlin/jvm/functions/Function1;
-
-    .line 1235
-    invoke-interface {v12, v2}, Landroidx/compose/runtime/Composer;->updateRememberedValue(Ljava/lang/Object;)V
-
-    .line 1231
-    :cond_3a
-    invoke-interface/range {p4 .. p4}, Landroidx/compose/runtime/Composer;->endReplaceableGroup()V
-
-    check-cast v2, Lkotlin/jvm/functions/Function1;
-
-    move-object/from16 v0, v21
-
-    .line 922
-    invoke-static {v0, v2}, Landroidx/compose/ui/graphics/GraphicsLayerModifierKt;->graphicsLayer(Landroidx/compose/ui/Modifier;Lkotlin/jvm/functions/Function1;)Landroidx/compose/ui/Modifier;
-
-    move-result-object v15
-
-    .line 882
-    invoke-interface/range {p4 .. p4}, Landroidx/compose/runtime/Composer;->endReplaceableGroup()V
-
-    goto :goto_13
-
-    :cond_3b
-    move-object v13, v7
-
-    move-object/from16 v0, v21
-
-    .line 928
-    invoke-static/range {v16 .. v16}, Landroidx/compose/animation/EnterExitTransitionKt;->createModifier$lambda$1(Landroidx/compose/runtime/MutableState;)Z
-
-    move-result v1
-
-    if-eqz v1, :cond_3e
-
-    const v1, 0x62c78b86
-
-    invoke-interface {v12, v1}, Landroidx/compose/runtime/Composer;->startReplaceableGroup(I)V
-
-    const-string v1, "928@40400L42"
-
-    invoke-static {v12, v1}, Landroidx/compose/runtime/ComposerKt;->sourceInformation(Landroidx/compose/runtime/Composer;Ljava/lang/String;)V
-
-    const v1, 0x44faf204
-
-    .line 929
-    invoke-interface {v12, v1}, Landroidx/compose/runtime/Composer;->startReplaceableGroup(I)V
-
-    move-object/from16 v1, v25
-
-    invoke-static {v12, v1}, Landroidx/compose/runtime/ComposerKt;->sourceInformation(Landroidx/compose/runtime/Composer;Ljava/lang/String;)V
-
-    .line 1238
-    invoke-interface {v12, v13}, Landroidx/compose/runtime/Composer;->changed(Ljava/lang/Object;)Z
-
-    move-result v1
-
-    .line 1239
-    invoke-interface/range {p4 .. p4}, Landroidx/compose/runtime/Composer;->rememberedValue()Ljava/lang/Object;
-
-    move-result-object v2
-
-    if-nez v1, :cond_3c
-
-    .line 1240
-    sget-object v1, Landroidx/compose/runtime/Composer;->Companion:Landroidx/compose/runtime/Composer$Companion;
-
-    invoke-virtual {v1}, Landroidx/compose/runtime/Composer$Companion;->getEmpty()Ljava/lang/Object;
-
-    move-result-object v1
-
-    if-ne v2, v1, :cond_3d
-
-    .line 929
-    :cond_3c
-    new-instance v1, Landroidx/compose/animation/EnterExitTransitionKt$createModifier$2$1;
-
-    invoke-direct {v1, v13}, Landroidx/compose/animation/EnterExitTransitionKt$createModifier$2$1;-><init>(Landroidx/compose/runtime/State;)V
-
-    move-object v2, v1
-
-    check-cast v2, Lkotlin/jvm/functions/Function1;
-
-    .line 1242
-    invoke-interface {v12, v2}, Landroidx/compose/runtime/Composer;->updateRememberedValue(Ljava/lang/Object;)V
-
-    .line 1238
-    :cond_3d
-    invoke-interface/range {p4 .. p4}, Landroidx/compose/runtime/Composer;->endReplaceableGroup()V
-
-    check-cast v2, Lkotlin/jvm/functions/Function1;
-
-    .line 929
-    invoke-static {v0, v2}, Landroidx/compose/ui/graphics/GraphicsLayerModifierKt;->graphicsLayer(Landroidx/compose/ui/Modifier;Lkotlin/jvm/functions/Function1;)Landroidx/compose/ui/Modifier;
-
-    move-result-object v15
-
-    .line 928
-    invoke-interface/range {p4 .. p4}, Landroidx/compose/runtime/Composer;->endReplaceableGroup()V
-
-    goto :goto_13
-
-    :cond_3e
-    const v1, 0x62c78be2
-
-    .line 932
-    invoke-interface {v12, v1}, Landroidx/compose/runtime/Composer;->startReplaceableGroup(I)V
-
-    invoke-interface/range {p4 .. p4}, Landroidx/compose/runtime/Composer;->endReplaceableGroup()V
-
-    move-object v15, v0
-
-    .line 933
-    :goto_13
-    invoke-static {}, Landroidx/compose/runtime/ComposerKt;->isTraceInProgress()Z
+    invoke-virtual {v0}, Landroidx/compose/animation/ChangeSize;->getClip()Z
 
     move-result v0
 
-    if-eqz v0, :cond_3f
+    if-nez v0, :cond_b
+
+    goto :goto_6
+
+    .line 881
+    :cond_b
+    invoke-virtual {v12}, Landroidx/compose/animation/ExitTransition;->getData$animation_release()Landroidx/compose/animation/TransitionData;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Landroidx/compose/animation/TransitionData;->getChangeSize()Landroidx/compose/animation/ChangeSize;
+
+    move-result-object v0
+
+    if-eqz v0, :cond_c
+
+    invoke-virtual {v0}, Landroidx/compose/animation/ChangeSize;->getClip()Z
+
+    move-result v0
+
+    if-nez v0, :cond_c
+
+    goto :goto_6
+
+    :cond_c
+    if-nez v15, :cond_d
+
+    :goto_6
+    const/4 v13, 0x1
+
+    goto :goto_7
+
+    :cond_d
+    const/4 v13, 0x0
+
+    :goto_7
+    and-int/lit16 v0, v9, 0x1c00
+
+    or-int v5, v10, v0
+
+    move-object/from16 v0, p0
+
+    move-object v1, v11
+
+    move-object v2, v12
+
+    move-object/from16 v3, p3
+
+    move-object/from16 v4, p4
+
+    .line 883
+    invoke-static/range {v0 .. v5}, Landroidx/compose/animation/EnterExitTransitionKt;->createGraphicsLayerBlock(Landroidx/compose/animation/core/Transition;Landroidx/compose/animation/EnterTransition;Landroidx/compose/animation/ExitTransition;Ljava/lang/String;Landroidx/compose/runtime/Composer;I)Landroidx/compose/animation/GraphicsLayerBlockForEnterExit;
+
+    move-result-object v7
+
+    .line 884
+    sget-object v0, Landroidx/compose/ui/Modifier;->Companion:Landroidx/compose/ui/Modifier$Companion;
+
+    move-object/from16 v19, v0
+
+    check-cast v19, Landroidx/compose/ui/Modifier;
+
+    const/4 v0, 0x1
+
+    xor-int/lit8 v33, v13, 0x1
+
+    const v40, 0x1efff
+
+    const/16 v41, 0x0
+
+    const/16 v20, 0x0
+
+    const/16 v21, 0x0
+
+    const/16 v22, 0x0
+
+    const/16 v23, 0x0
+
+    const/16 v24, 0x0
+
+    const/16 v25, 0x0
+
+    const/16 v26, 0x0
+
+    const/16 v27, 0x0
+
+    const/16 v28, 0x0
+
+    const/16 v29, 0x0
+
+    const-wide/16 v30, 0x0
+
+    const/16 v32, 0x0
+
+    const/16 v34, 0x0
+
+    const-wide/16 v35, 0x0
+
+    const-wide/16 v37, 0x0
+
+    const/16 v39, 0x0
+
+    .line 885
+    invoke-static/range {v19 .. v41}, Landroidx/compose/ui/graphics/GraphicsLayerModifierKt;->graphicsLayer-Ap8cVGQ$default(Landroidx/compose/ui/Modifier;FFFFFFFFFFJLandroidx/compose/ui/graphics/Shape;ZLandroidx/compose/ui/graphics/RenderEffect;JJIILjava/lang/Object;)Landroidx/compose/ui/Modifier;
+
+    move-result-object v9
+
+    .line 887
+    new-instance v10, Landroidx/compose/animation/EnterExitTransitionElement;
+
+    move-object v0, v10
+
+    move-object/from16 v1, p0
+
+    move-object/from16 v2, v18
+
+    move-object/from16 v3, v16
+
+    move-object/from16 v4, v17
+
+    move-object v5, v11
+
+    move-object v6, v12
+
+    invoke-direct/range {v0 .. v7}, Landroidx/compose/animation/EnterExitTransitionElement;-><init>(Landroidx/compose/animation/core/Transition;Landroidx/compose/animation/core/Transition$DeferredAnimation;Landroidx/compose/animation/core/Transition$DeferredAnimation;Landroidx/compose/animation/core/Transition$DeferredAnimation;Landroidx/compose/animation/EnterTransition;Landroidx/compose/animation/ExitTransition;Landroidx/compose/animation/GraphicsLayerBlockForEnterExit;)V
+
+    check-cast v10, Landroidx/compose/ui/Modifier;
+
+    .line 886
+    invoke-interface {v9, v10}, Landroidx/compose/ui/Modifier;->then(Landroidx/compose/ui/Modifier;)Landroidx/compose/ui/Modifier;
+
+    move-result-object v0
+
+    invoke-static {}, Landroidx/compose/runtime/ComposerKt;->isTraceInProgress()Z
+
+    move-result v1
+
+    if-eqz v1, :cond_e
 
     invoke-static {}, Landroidx/compose/runtime/ComposerKt;->traceEventEnd()V
 
-    :cond_3f
+    :cond_e
     invoke-interface/range {p4 .. p4}, Landroidx/compose/runtime/Composer;->endReplaceableGroup()V
 
-    return-object v15
-.end method
-
-.method private static final createModifier$lambda$1(Landroidx/compose/runtime/MutableState;)Z
-    .locals 0
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(",
-            "Landroidx/compose/runtime/MutableState<",
-            "Ljava/lang/Boolean;",
-            ">;)Z"
-        }
-    .end annotation
-
-    .line 845
-    check-cast p0, Landroidx/compose/runtime/State;
-
-    .line 1245
-    invoke-interface {p0}, Landroidx/compose/runtime/State;->getValue()Ljava/lang/Object;
-
-    move-result-object p0
-
-    check-cast p0, Ljava/lang/Boolean;
-
-    invoke-virtual {p0}, Ljava/lang/Boolean;->booleanValue()Z
-
-    move-result p0
-
-    return p0
-.end method
-
-.method private static final createModifier$lambda$11(Landroidx/compose/runtime/State;)F
-    .locals 0
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(",
-            "Landroidx/compose/runtime/State<",
-            "Ljava/lang/Float;",
-            ">;)F"
-        }
-    .end annotation
-
-    .line 1252
-    invoke-interface {p0}, Landroidx/compose/runtime/State;->getValue()Ljava/lang/Object;
-
-    move-result-object p0
-
-    check-cast p0, Ljava/lang/Number;
-
-    invoke-virtual {p0}, Ljava/lang/Number;->floatValue()F
-
-    move-result p0
-
-    return p0
-.end method
-
-.method private static final createModifier$lambda$13(Landroidx/compose/runtime/State;)J
-    .locals 2
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(",
-            "Landroidx/compose/runtime/State<",
-            "Landroidx/compose/ui/graphics/TransformOrigin;",
-            ">;)J"
-        }
-    .end annotation
-
-    .line 1253
-    invoke-interface {p0}, Landroidx/compose/runtime/State;->getValue()Ljava/lang/Object;
-
-    move-result-object p0
-
-    check-cast p0, Landroidx/compose/ui/graphics/TransformOrigin;
-
-    invoke-virtual {p0}, Landroidx/compose/ui/graphics/TransformOrigin;->unbox-impl()J
-
-    move-result-wide v0
-
-    return-wide v0
-.end method
-
-.method private static final createModifier$lambda$2(Landroidx/compose/runtime/MutableState;Z)V
-    .locals 0
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(",
-            "Landroidx/compose/runtime/MutableState<",
-            "Ljava/lang/Boolean;",
-            ">;Z)V"
-        }
-    .end annotation
-
-    .line 845
-    invoke-static {p1}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
-
-    move-result-object p1
-
-    .line 1246
-    invoke-interface {p0, p1}, Landroidx/compose/runtime/MutableState;->setValue(Ljava/lang/Object;)V
-
-    return-void
-.end method
-
-.method private static final createModifier$lambda$4(Landroidx/compose/runtime/MutableState;)Z
-    .locals 0
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(",
-            "Landroidx/compose/runtime/MutableState<",
-            "Ljava/lang/Boolean;",
-            ">;)Z"
-        }
-    .end annotation
-
-    .line 846
-    check-cast p0, Landroidx/compose/runtime/State;
-
-    .line 1248
-    invoke-interface {p0}, Landroidx/compose/runtime/State;->getValue()Ljava/lang/Object;
-
-    move-result-object p0
-
-    check-cast p0, Ljava/lang/Boolean;
-
-    invoke-virtual {p0}, Ljava/lang/Boolean;->booleanValue()Z
-
-    move-result p0
-
-    return p0
-.end method
-
-.method private static final createModifier$lambda$5(Landroidx/compose/runtime/MutableState;Z)V
-    .locals 0
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(",
-            "Landroidx/compose/runtime/MutableState<",
-            "Ljava/lang/Boolean;",
-            ">;Z)V"
-        }
-    .end annotation
-
-    .line 846
-    invoke-static {p1}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
-
-    move-result-object p1
-
-    .line 1249
-    invoke-interface {p0, p1}, Landroidx/compose/runtime/MutableState;->setValue(Ljava/lang/Object;)V
-
-    return-void
-.end method
-
-.method private static final createModifier$lambda$8(Landroidx/compose/runtime/State;)F
-    .locals 0
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(",
-            "Landroidx/compose/runtime/State<",
-            "Ljava/lang/Float;",
-            ">;)F"
-        }
-    .end annotation
-
-    .line 1251
-    invoke-interface {p0}, Landroidx/compose/runtime/State;->getValue()Ljava/lang/Object;
-
-    move-result-object p0
-
-    check-cast p0, Ljava/lang/Number;
-
-    invoke-virtual {p0}, Ljava/lang/Number;->floatValue()F
-
-    move-result p0
-
-    return p0
+    return-object v0
 .end method
 
 .method public static final expandHorizontally(Landroidx/compose/animation/core/FiniteAnimationSpec;Landroidx/compose/ui/Alignment$Horizontal;ZLkotlin/jvm/functions/Function1;)Landroidx/compose/animation/EnterTransition;
@@ -2316,19 +1505,7 @@
         }
     .end annotation
 
-    const-string v0, "animationSpec"
-
-    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string v0, "expandFrom"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string v0, "initialWidth"
-
-    invoke-static {p3, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 519
+    .line 528
     invoke-static {p1}, Landroidx/compose/animation/EnterExitTransitionKt;->toAlignment(Landroidx/compose/ui/Alignment$Horizontal;)Landroidx/compose/ui/Alignment;
 
     move-result-object p1
@@ -2355,7 +1532,7 @@
 
     if-eqz p5, :cond_0
 
-    .line 513
+    .line 522
     sget-object p0, Landroidx/compose/ui/unit/IntSize;->Companion:Landroidx/compose/ui/unit/IntSize$Companion;
 
     invoke-static {p0}, Landroidx/compose/animation/core/VisibilityThresholdsKt;->getVisibilityThreshold(Landroidx/compose/ui/unit/IntSize$Companion;)J
@@ -2372,7 +1549,7 @@
 
     const/high16 v2, 0x43c80000    # 400.0f
 
-    .line 511
+    .line 520
     invoke-static {v1, v2, p0, v0, p5}, Landroidx/compose/animation/core/AnimationSpecKt;->spring$default(FFLjava/lang/Object;ILjava/lang/Object;)Landroidx/compose/animation/core/SpringSpec;
 
     move-result-object p0
@@ -2384,7 +1561,7 @@
 
     if-eqz p5, :cond_1
 
-    .line 515
+    .line 524
     sget-object p1, Landroidx/compose/ui/Alignment;->Companion:Landroidx/compose/ui/Alignment$Companion;
 
     invoke-virtual {p1}, Landroidx/compose/ui/Alignment$Companion;->getEnd()Landroidx/compose/ui/Alignment$Horizontal;
@@ -2403,12 +1580,12 @@
 
     if-eqz p4, :cond_3
 
-    .line 517
+    .line 526
     sget-object p3, Landroidx/compose/animation/EnterExitTransitionKt$expandHorizontally$1;->INSTANCE:Landroidx/compose/animation/EnterExitTransitionKt$expandHorizontally$1;
 
     check-cast p3, Lkotlin/jvm/functions/Function1;
 
-    .line 509
+    .line 518
     :cond_3
     invoke-static {p0, p1, p2, p3}, Landroidx/compose/animation/EnterExitTransitionKt;->expandHorizontally(Landroidx/compose/animation/core/FiniteAnimationSpec;Landroidx/compose/ui/Alignment$Horizontal;ZLkotlin/jvm/functions/Function1;)Landroidx/compose/animation/EnterTransition;
 
@@ -2418,7 +1595,7 @@
 .end method
 
 .method public static final expandIn(Landroidx/compose/animation/core/FiniteAnimationSpec;Landroidx/compose/ui/Alignment;ZLkotlin/jvm/functions/Function1;)Landroidx/compose/animation/EnterTransition;
-    .locals 9
+    .locals 11
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -2436,32 +1613,20 @@
         }
     .end annotation
 
-    const-string v0, "animationSpec"
-
-    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string v0, "expandFrom"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string v0, "initialSize"
-
-    invoke-static {p3, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 435
+    .line 444
     new-instance v0, Landroidx/compose/animation/EnterTransitionImpl;
 
-    .line 436
-    new-instance v8, Landroidx/compose/animation/TransitionData;
+    .line 445
+    new-instance v10, Landroidx/compose/animation/TransitionData;
 
-    .line 437
+    .line 446
     new-instance v4, Landroidx/compose/animation/ChangeSize;
 
     invoke-direct {v4, p1, p3, p0, p2}, Landroidx/compose/animation/ChangeSize;-><init>(Landroidx/compose/ui/Alignment;Lkotlin/jvm/functions/Function1;Landroidx/compose/animation/core/FiniteAnimationSpec;Z)V
 
-    const/16 v6, 0xb
+    const/16 v8, 0x3b
 
-    const/4 v7, 0x0
+    const/4 v9, 0x0
 
     const/4 v2, 0x0
 
@@ -2469,13 +1634,17 @@
 
     const/4 v5, 0x0
 
-    move-object v1, v8
+    const/4 v6, 0x0
 
-    .line 436
-    invoke-direct/range {v1 .. v7}, Landroidx/compose/animation/TransitionData;-><init>(Landroidx/compose/animation/Fade;Landroidx/compose/animation/Slide;Landroidx/compose/animation/ChangeSize;Landroidx/compose/animation/Scale;ILkotlin/jvm/internal/DefaultConstructorMarker;)V
+    const/4 v7, 0x0
 
-    .line 435
-    invoke-direct {v0, v8}, Landroidx/compose/animation/EnterTransitionImpl;-><init>(Landroidx/compose/animation/TransitionData;)V
+    move-object v1, v10
+
+    .line 445
+    invoke-direct/range {v1 .. v9}, Landroidx/compose/animation/TransitionData;-><init>(Landroidx/compose/animation/Fade;Landroidx/compose/animation/Slide;Landroidx/compose/animation/ChangeSize;Landroidx/compose/animation/Scale;ZLjava/util/Map;ILkotlin/jvm/internal/DefaultConstructorMarker;)V
+
+    .line 444
+    invoke-direct {v0, v10}, Landroidx/compose/animation/EnterTransitionImpl;-><init>(Landroidx/compose/animation/TransitionData;)V
 
     check-cast v0, Landroidx/compose/animation/EnterTransition;
 
@@ -2491,7 +1660,7 @@
 
     if-eqz p5, :cond_0
 
-    .line 429
+    .line 438
     sget-object p0, Landroidx/compose/ui/unit/IntSize;->Companion:Landroidx/compose/ui/unit/IntSize$Companion;
 
     invoke-static {p0}, Landroidx/compose/animation/core/VisibilityThresholdsKt;->getVisibilityThreshold(Landroidx/compose/ui/unit/IntSize$Companion;)J
@@ -2508,7 +1677,7 @@
 
     const/high16 v2, 0x43c80000    # 400.0f
 
-    .line 427
+    .line 436
     invoke-static {v1, v2, p0, v0, p5}, Landroidx/compose/animation/core/AnimationSpecKt;->spring$default(FFLjava/lang/Object;ILjava/lang/Object;)Landroidx/compose/animation/core/SpringSpec;
 
     move-result-object p0
@@ -2520,7 +1689,7 @@
 
     if-eqz p5, :cond_1
 
-    .line 431
+    .line 440
     sget-object p1, Landroidx/compose/ui/Alignment;->Companion:Landroidx/compose/ui/Alignment$Companion;
 
     invoke-virtual {p1}, Landroidx/compose/ui/Alignment$Companion;->getBottomEnd()Landroidx/compose/ui/Alignment;
@@ -2539,12 +1708,12 @@
 
     if-eqz p4, :cond_3
 
-    .line 433
+    .line 442
     sget-object p3, Landroidx/compose/animation/EnterExitTransitionKt$expandIn$1;->INSTANCE:Landroidx/compose/animation/EnterExitTransitionKt$expandIn$1;
 
     check-cast p3, Lkotlin/jvm/functions/Function1;
 
-    .line 425
+    .line 434
     :cond_3
     invoke-static {p0, p1, p2, p3}, Landroidx/compose/animation/EnterExitTransitionKt;->expandIn(Landroidx/compose/animation/core/FiniteAnimationSpec;Landroidx/compose/ui/Alignment;ZLkotlin/jvm/functions/Function1;)Landroidx/compose/animation/EnterTransition;
 
@@ -2572,19 +1741,7 @@
         }
     .end annotation
 
-    const-string v0, "animationSpec"
-
-    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string v0, "expandFrom"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string v0, "initialHeight"
-
-    invoke-static {p3, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 558
+    .line 567
     invoke-static {p1}, Landroidx/compose/animation/EnterExitTransitionKt;->toAlignment(Landroidx/compose/ui/Alignment$Vertical;)Landroidx/compose/ui/Alignment;
 
     move-result-object p1
@@ -2611,7 +1768,7 @@
 
     if-eqz p5, :cond_0
 
-    .line 552
+    .line 561
     sget-object p0, Landroidx/compose/ui/unit/IntSize;->Companion:Landroidx/compose/ui/unit/IntSize$Companion;
 
     invoke-static {p0}, Landroidx/compose/animation/core/VisibilityThresholdsKt;->getVisibilityThreshold(Landroidx/compose/ui/unit/IntSize$Companion;)J
@@ -2628,7 +1785,7 @@
 
     const/high16 v2, 0x43c80000    # 400.0f
 
-    .line 550
+    .line 559
     invoke-static {v1, v2, p0, v0, p5}, Landroidx/compose/animation/core/AnimationSpecKt;->spring$default(FFLjava/lang/Object;ILjava/lang/Object;)Landroidx/compose/animation/core/SpringSpec;
 
     move-result-object p0
@@ -2640,7 +1797,7 @@
 
     if-eqz p5, :cond_1
 
-    .line 554
+    .line 563
     sget-object p1, Landroidx/compose/ui/Alignment;->Companion:Landroidx/compose/ui/Alignment$Companion;
 
     invoke-virtual {p1}, Landroidx/compose/ui/Alignment$Companion;->getBottom()Landroidx/compose/ui/Alignment$Vertical;
@@ -2659,12 +1816,12 @@
 
     if-eqz p4, :cond_3
 
-    .line 556
+    .line 565
     sget-object p3, Landroidx/compose/animation/EnterExitTransitionKt$expandVertically$1;->INSTANCE:Landroidx/compose/animation/EnterExitTransitionKt$expandVertically$1;
 
     check-cast p3, Lkotlin/jvm/functions/Function1;
 
-    .line 548
+    .line 557
     :cond_3
     invoke-static {p0, p1, p2, p3}, Landroidx/compose/animation/EnterExitTransitionKt;->expandVertically(Landroidx/compose/animation/core/FiniteAnimationSpec;Landroidx/compose/ui/Alignment$Vertical;ZLkotlin/jvm/functions/Function1;)Landroidx/compose/animation/EnterTransition;
 
@@ -2674,7 +1831,7 @@
 .end method
 
 .method public static final fadeIn(Landroidx/compose/animation/core/FiniteAnimationSpec;F)Landroidx/compose/animation/EnterTransition;
-    .locals 9
+    .locals 11
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -2685,22 +1842,18 @@
         }
     .end annotation
 
-    const-string v0, "animationSpec"
-
-    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 254
+    .line 263
     new-instance v0, Landroidx/compose/animation/EnterTransitionImpl;
 
-    new-instance v8, Landroidx/compose/animation/TransitionData;
+    new-instance v10, Landroidx/compose/animation/TransitionData;
 
     new-instance v2, Landroidx/compose/animation/Fade;
 
     invoke-direct {v2, p1, p0}, Landroidx/compose/animation/Fade;-><init>(FLandroidx/compose/animation/core/FiniteAnimationSpec;)V
 
-    const/16 v6, 0xe
+    const/16 v8, 0x3e
 
-    const/4 v7, 0x0
+    const/4 v9, 0x0
 
     const/4 v3, 0x0
 
@@ -2708,11 +1861,15 @@
 
     const/4 v5, 0x0
 
-    move-object v1, v8
+    const/4 v6, 0x0
 
-    invoke-direct/range {v1 .. v7}, Landroidx/compose/animation/TransitionData;-><init>(Landroidx/compose/animation/Fade;Landroidx/compose/animation/Slide;Landroidx/compose/animation/ChangeSize;Landroidx/compose/animation/Scale;ILkotlin/jvm/internal/DefaultConstructorMarker;)V
+    const/4 v7, 0x0
 
-    invoke-direct {v0, v8}, Landroidx/compose/animation/EnterTransitionImpl;-><init>(Landroidx/compose/animation/TransitionData;)V
+    move-object v1, v10
+
+    invoke-direct/range {v1 .. v9}, Landroidx/compose/animation/TransitionData;-><init>(Landroidx/compose/animation/Fade;Landroidx/compose/animation/Slide;Landroidx/compose/animation/ChangeSize;Landroidx/compose/animation/Scale;ZLjava/util/Map;ILkotlin/jvm/internal/DefaultConstructorMarker;)V
+
+    invoke-direct {v0, v10}, Landroidx/compose/animation/EnterTransitionImpl;-><init>(Landroidx/compose/animation/TransitionData;)V
 
     check-cast v0, Landroidx/compose/animation/EnterTransition;
 
@@ -2734,7 +1891,7 @@
 
     const/4 v1, 0x0
 
-    .line 251
+    .line 260
     invoke-static {v0, p0, v1, p3, v1}, Landroidx/compose/animation/core/AnimationSpecKt;->spring$default(FFLjava/lang/Object;ILjava/lang/Object;)Landroidx/compose/animation/core/SpringSpec;
 
     move-result-object p0
@@ -2748,7 +1905,7 @@
 
     move p1, v0
 
-    .line 250
+    .line 259
     :cond_1
     invoke-static {p0, p1}, Landroidx/compose/animation/EnterExitTransitionKt;->fadeIn(Landroidx/compose/animation/core/FiniteAnimationSpec;F)Landroidx/compose/animation/EnterTransition;
 
@@ -2758,7 +1915,7 @@
 .end method
 
 .method public static final fadeOut(Landroidx/compose/animation/core/FiniteAnimationSpec;F)Landroidx/compose/animation/ExitTransition;
-    .locals 9
+    .locals 11
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -2769,22 +1926,18 @@
         }
     .end annotation
 
-    const-string v0, "animationSpec"
-
-    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 273
+    .line 282
     new-instance v0, Landroidx/compose/animation/ExitTransitionImpl;
 
-    new-instance v8, Landroidx/compose/animation/TransitionData;
+    new-instance v10, Landroidx/compose/animation/TransitionData;
 
     new-instance v2, Landroidx/compose/animation/Fade;
 
     invoke-direct {v2, p1, p0}, Landroidx/compose/animation/Fade;-><init>(FLandroidx/compose/animation/core/FiniteAnimationSpec;)V
 
-    const/16 v6, 0xe
+    const/16 v8, 0x3e
 
-    const/4 v7, 0x0
+    const/4 v9, 0x0
 
     const/4 v3, 0x0
 
@@ -2792,11 +1945,15 @@
 
     const/4 v5, 0x0
 
-    move-object v1, v8
+    const/4 v6, 0x0
 
-    invoke-direct/range {v1 .. v7}, Landroidx/compose/animation/TransitionData;-><init>(Landroidx/compose/animation/Fade;Landroidx/compose/animation/Slide;Landroidx/compose/animation/ChangeSize;Landroidx/compose/animation/Scale;ILkotlin/jvm/internal/DefaultConstructorMarker;)V
+    const/4 v7, 0x0
 
-    invoke-direct {v0, v8}, Landroidx/compose/animation/ExitTransitionImpl;-><init>(Landroidx/compose/animation/TransitionData;)V
+    move-object v1, v10
+
+    invoke-direct/range {v1 .. v9}, Landroidx/compose/animation/TransitionData;-><init>(Landroidx/compose/animation/Fade;Landroidx/compose/animation/Slide;Landroidx/compose/animation/ChangeSize;Landroidx/compose/animation/Scale;ZLjava/util/Map;ILkotlin/jvm/internal/DefaultConstructorMarker;)V
+
+    invoke-direct {v0, v10}, Landroidx/compose/animation/ExitTransitionImpl;-><init>(Landroidx/compose/animation/TransitionData;)V
 
     check-cast v0, Landroidx/compose/animation/ExitTransition;
 
@@ -2818,7 +1975,7 @@
 
     const/4 v1, 0x0
 
-    .line 270
+    .line 279
     invoke-static {v0, p0, v1, p3, v1}, Landroidx/compose/animation/core/AnimationSpecKt;->spring$default(FFLjava/lang/Object;ILjava/lang/Object;)Landroidx/compose/animation/core/SpringSpec;
 
     move-result-object p0
@@ -2832,7 +1989,7 @@
 
     move p1, v0
 
-    .line 269
+    .line 278
     :cond_1
     invoke-static {p0, p1}, Landroidx/compose/animation/EnterExitTransitionKt;->fadeOut(Landroidx/compose/animation/core/FiniteAnimationSpec;F)Landroidx/compose/animation/ExitTransition;
 
@@ -2841,8 +1998,74 @@
     return-object p0
 .end method
 
+.method public static final get(Landroidx/compose/animation/EnterTransition;Ljava/lang/Object;)Landroidx/compose/ui/node/ModifierNodeElement;
+    .locals 0
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Landroidx/compose/animation/EnterTransition;",
+            "Ljava/lang/Object;",
+            ")",
+            "Landroidx/compose/ui/node/ModifierNodeElement<",
+            "+",
+            "Landroidx/compose/ui/Modifier$Node;",
+            ">;"
+        }
+    .end annotation
+
+    .line 843
+    invoke-virtual {p0}, Landroidx/compose/animation/EnterTransition;->getData$animation_release()Landroidx/compose/animation/TransitionData;
+
+    move-result-object p0
+
+    invoke-virtual {p0}, Landroidx/compose/animation/TransitionData;->getEffectsMap()Ljava/util/Map;
+
+    move-result-object p0
+
+    invoke-interface {p0, p1}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object p0
+
+    check-cast p0, Landroidx/compose/ui/node/ModifierNodeElement;
+
+    return-object p0
+.end method
+
+.method public static final get(Landroidx/compose/animation/ExitTransition;Ljava/lang/Object;)Landroidx/compose/ui/node/ModifierNodeElement;
+    .locals 0
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Landroidx/compose/animation/ExitTransition;",
+            "Ljava/lang/Object;",
+            ")",
+            "Landroidx/compose/ui/node/ModifierNodeElement<",
+            "+",
+            "Landroidx/compose/ui/Modifier$Node;",
+            ">;"
+        }
+    .end annotation
+
+    .line 847
+    invoke-virtual {p0}, Landroidx/compose/animation/ExitTransition;->getData$animation_release()Landroidx/compose/animation/TransitionData;
+
+    move-result-object p0
+
+    invoke-virtual {p0}, Landroidx/compose/animation/TransitionData;->getEffectsMap()Ljava/util/Map;
+
+    move-result-object p0
+
+    invoke-interface {p0, p1}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object p0
+
+    check-cast p0, Landroidx/compose/ui/node/ModifierNodeElement;
+
+    return-object p0
+.end method
+
 .method public static final scaleIn-L8ZKh-E(Landroidx/compose/animation/core/FiniteAnimationSpec;FJ)Landroidx/compose/animation/EnterTransition;
-    .locals 9
+    .locals 11
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -2853,15 +2076,11 @@
         }
     .end annotation
 
-    const-string v0, "animationSpec"
-
-    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 363
+    .line 372
     new-instance v0, Landroidx/compose/animation/EnterTransitionImpl;
 
-    .line 364
-    new-instance v8, Landroidx/compose/animation/TransitionData;
+    .line 373
+    new-instance v10, Landroidx/compose/animation/TransitionData;
 
     new-instance v7, Landroidx/compose/animation/Scale;
 
@@ -2877,9 +2096,9 @@
 
     invoke-direct/range {v1 .. v6}, Landroidx/compose/animation/Scale;-><init>(FJLandroidx/compose/animation/core/FiniteAnimationSpec;Lkotlin/jvm/internal/DefaultConstructorMarker;)V
 
-    const/4 v6, 0x7
+    const/16 v8, 0x37
 
-    const/4 p0, 0x0
+    const/4 v9, 0x0
 
     const/4 v2, 0x0
 
@@ -2887,16 +2106,20 @@
 
     const/4 v4, 0x0
 
-    move-object v1, v8
+    const/4 v6, 0x0
+
+    const/4 p0, 0x0
+
+    move-object v1, v10
 
     move-object v5, v7
 
     move-object v7, p0
 
-    invoke-direct/range {v1 .. v7}, Landroidx/compose/animation/TransitionData;-><init>(Landroidx/compose/animation/Fade;Landroidx/compose/animation/Slide;Landroidx/compose/animation/ChangeSize;Landroidx/compose/animation/Scale;ILkotlin/jvm/internal/DefaultConstructorMarker;)V
+    invoke-direct/range {v1 .. v9}, Landroidx/compose/animation/TransitionData;-><init>(Landroidx/compose/animation/Fade;Landroidx/compose/animation/Slide;Landroidx/compose/animation/ChangeSize;Landroidx/compose/animation/Scale;ZLjava/util/Map;ILkotlin/jvm/internal/DefaultConstructorMarker;)V
 
-    .line 363
-    invoke-direct {v0, v8}, Landroidx/compose/animation/EnterTransitionImpl;-><init>(Landroidx/compose/animation/TransitionData;)V
+    .line 372
+    invoke-direct {v0, v10}, Landroidx/compose/animation/EnterTransitionImpl;-><init>(Landroidx/compose/animation/TransitionData;)V
 
     check-cast v0, Landroidx/compose/animation/EnterTransition;
 
@@ -2918,7 +2141,7 @@
 
     const/4 v1, 0x0
 
-    .line 359
+    .line 368
     invoke-static {v0, p0, v1, p5, v1}, Landroidx/compose/animation/core/AnimationSpecKt;->spring$default(FFLjava/lang/Object;ILjava/lang/Object;)Landroidx/compose/animation/core/SpringSpec;
 
     move-result-object p0
@@ -2937,14 +2160,14 @@
 
     if-eqz p4, :cond_2
 
-    .line 361
+    .line 370
     sget-object p2, Landroidx/compose/ui/graphics/TransformOrigin;->Companion:Landroidx/compose/ui/graphics/TransformOrigin$Companion;
 
     invoke-virtual {p2}, Landroidx/compose/ui/graphics/TransformOrigin$Companion;->getCenter-SzJe1aQ()J
 
     move-result-wide p2
 
-    .line 358
+    .line 367
     :cond_2
     invoke-static {p0, p1, p2, p3}, Landroidx/compose/animation/EnterExitTransitionKt;->scaleIn-L8ZKh-E(Landroidx/compose/animation/core/FiniteAnimationSpec;FJ)Landroidx/compose/animation/EnterTransition;
 
@@ -2954,7 +2177,7 @@
 .end method
 
 .method public static final scaleOut-L8ZKh-E(Landroidx/compose/animation/core/FiniteAnimationSpec;FJ)Landroidx/compose/animation/ExitTransition;
-    .locals 9
+    .locals 11
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -2965,15 +2188,11 @@
         }
     .end annotation
 
-    const-string v0, "animationSpec"
-
-    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 393
+    .line 402
     new-instance v0, Landroidx/compose/animation/ExitTransitionImpl;
 
-    .line 394
-    new-instance v8, Landroidx/compose/animation/TransitionData;
+    .line 403
+    new-instance v10, Landroidx/compose/animation/TransitionData;
 
     new-instance v7, Landroidx/compose/animation/Scale;
 
@@ -2989,9 +2208,9 @@
 
     invoke-direct/range {v1 .. v6}, Landroidx/compose/animation/Scale;-><init>(FJLandroidx/compose/animation/core/FiniteAnimationSpec;Lkotlin/jvm/internal/DefaultConstructorMarker;)V
 
-    const/4 v6, 0x7
+    const/16 v8, 0x37
 
-    const/4 p0, 0x0
+    const/4 v9, 0x0
 
     const/4 v2, 0x0
 
@@ -2999,16 +2218,20 @@
 
     const/4 v4, 0x0
 
-    move-object v1, v8
+    const/4 v6, 0x0
+
+    const/4 p0, 0x0
+
+    move-object v1, v10
 
     move-object v5, v7
 
     move-object v7, p0
 
-    invoke-direct/range {v1 .. v7}, Landroidx/compose/animation/TransitionData;-><init>(Landroidx/compose/animation/Fade;Landroidx/compose/animation/Slide;Landroidx/compose/animation/ChangeSize;Landroidx/compose/animation/Scale;ILkotlin/jvm/internal/DefaultConstructorMarker;)V
+    invoke-direct/range {v1 .. v9}, Landroidx/compose/animation/TransitionData;-><init>(Landroidx/compose/animation/Fade;Landroidx/compose/animation/Slide;Landroidx/compose/animation/ChangeSize;Landroidx/compose/animation/Scale;ZLjava/util/Map;ILkotlin/jvm/internal/DefaultConstructorMarker;)V
 
-    .line 393
-    invoke-direct {v0, v8}, Landroidx/compose/animation/ExitTransitionImpl;-><init>(Landroidx/compose/animation/TransitionData;)V
+    .line 402
+    invoke-direct {v0, v10}, Landroidx/compose/animation/ExitTransitionImpl;-><init>(Landroidx/compose/animation/TransitionData;)V
 
     check-cast v0, Landroidx/compose/animation/ExitTransition;
 
@@ -3030,7 +2253,7 @@
 
     const/4 v1, 0x0
 
-    .line 389
+    .line 398
     invoke-static {v0, p0, v1, p5, v1}, Landroidx/compose/animation/core/AnimationSpecKt;->spring$default(FFLjava/lang/Object;ILjava/lang/Object;)Landroidx/compose/animation/core/SpringSpec;
 
     move-result-object p0
@@ -3049,55 +2272,16 @@
 
     if-eqz p4, :cond_2
 
-    .line 391
+    .line 400
     sget-object p2, Landroidx/compose/ui/graphics/TransformOrigin;->Companion:Landroidx/compose/ui/graphics/TransformOrigin$Companion;
 
     invoke-virtual {p2}, Landroidx/compose/ui/graphics/TransformOrigin$Companion;->getCenter-SzJe1aQ()J
 
     move-result-wide p2
 
-    .line 388
+    .line 397
     :cond_2
     invoke-static {p0, p1, p2, p3}, Landroidx/compose/animation/EnterExitTransitionKt;->scaleOut-L8ZKh-E(Landroidx/compose/animation/core/FiniteAnimationSpec;FJ)Landroidx/compose/animation/ExitTransition;
-
-    move-result-object p0
-
-    return-object p0
-.end method
-
-.method private static final shrinkExpand(Landroidx/compose/ui/Modifier;Landroidx/compose/animation/core/Transition;Landroidx/compose/runtime/State;Landroidx/compose/runtime/State;Ljava/lang/String;)Landroidx/compose/ui/Modifier;
-    .locals 1
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(",
-            "Landroidx/compose/ui/Modifier;",
-            "Landroidx/compose/animation/core/Transition<",
-            "Landroidx/compose/animation/EnterExitState;",
-            ">;",
-            "Landroidx/compose/runtime/State<",
-            "Landroidx/compose/animation/ChangeSize;",
-            ">;",
-            "Landroidx/compose/runtime/State<",
-            "Landroidx/compose/animation/ChangeSize;",
-            ">;",
-            "Ljava/lang/String;",
-            ")",
-            "Landroidx/compose/ui/Modifier;"
-        }
-    .end annotation
-
-    .line 1031
-    new-instance v0, Landroidx/compose/animation/EnterExitTransitionKt$shrinkExpand$1;
-
-    invoke-direct {v0, p1, p2, p3, p4}, Landroidx/compose/animation/EnterExitTransitionKt$shrinkExpand$1;-><init>(Landroidx/compose/animation/core/Transition;Landroidx/compose/runtime/State;Landroidx/compose/runtime/State;Ljava/lang/String;)V
-
-    check-cast v0, Lkotlin/jvm/functions/Function3;
-
-    const/4 p1, 0x1
-
-    const/4 p2, 0x0
-
-    invoke-static {p0, p2, v0, p1, p2}, Landroidx/compose/ui/ComposedModifierKt;->composed$default(Landroidx/compose/ui/Modifier;Lkotlin/jvm/functions/Function1;Lkotlin/jvm/functions/Function3;ILjava/lang/Object;)Landroidx/compose/ui/Modifier;
 
     move-result-object p0
 
@@ -3123,19 +2307,7 @@
         }
     .end annotation
 
-    const-string v0, "animationSpec"
-
-    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string/jumbo v0, "shrinkTowards"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string/jumbo v0, "targetWidth"
-
-    invoke-static {p3, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 598
+    .line 607
     invoke-static {p1}, Landroidx/compose/animation/EnterExitTransitionKt;->toAlignment(Landroidx/compose/ui/Alignment$Horizontal;)Landroidx/compose/ui/Alignment;
 
     move-result-object p1
@@ -3162,7 +2334,7 @@
 
     if-eqz p5, :cond_0
 
-    .line 591
+    .line 600
     sget-object p0, Landroidx/compose/ui/unit/IntSize;->Companion:Landroidx/compose/ui/unit/IntSize$Companion;
 
     invoke-static {p0}, Landroidx/compose/animation/core/VisibilityThresholdsKt;->getVisibilityThreshold(Landroidx/compose/ui/unit/IntSize$Companion;)J
@@ -3179,7 +2351,7 @@
 
     const/high16 v2, 0x43c80000    # 400.0f
 
-    .line 589
+    .line 598
     invoke-static {v1, v2, p0, v0, p5}, Landroidx/compose/animation/core/AnimationSpecKt;->spring$default(FFLjava/lang/Object;ILjava/lang/Object;)Landroidx/compose/animation/core/SpringSpec;
 
     move-result-object p0
@@ -3191,7 +2363,7 @@
 
     if-eqz p5, :cond_1
 
-    .line 593
+    .line 602
     sget-object p1, Landroidx/compose/ui/Alignment;->Companion:Landroidx/compose/ui/Alignment$Companion;
 
     invoke-virtual {p1}, Landroidx/compose/ui/Alignment$Companion;->getEnd()Landroidx/compose/ui/Alignment$Horizontal;
@@ -3210,12 +2382,12 @@
 
     if-eqz p4, :cond_3
 
-    .line 595
+    .line 604
     sget-object p3, Landroidx/compose/animation/EnterExitTransitionKt$shrinkHorizontally$1;->INSTANCE:Landroidx/compose/animation/EnterExitTransitionKt$shrinkHorizontally$1;
 
     check-cast p3, Lkotlin/jvm/functions/Function1;
 
-    .line 587
+    .line 596
     :cond_3
     invoke-static {p0, p1, p2, p3}, Landroidx/compose/animation/EnterExitTransitionKt;->shrinkHorizontally(Landroidx/compose/animation/core/FiniteAnimationSpec;Landroidx/compose/ui/Alignment$Horizontal;ZLkotlin/jvm/functions/Function1;)Landroidx/compose/animation/ExitTransition;
 
@@ -3225,7 +2397,7 @@
 .end method
 
 .method public static final shrinkOut(Landroidx/compose/animation/core/FiniteAnimationSpec;Landroidx/compose/ui/Alignment;ZLkotlin/jvm/functions/Function1;)Landroidx/compose/animation/ExitTransition;
-    .locals 9
+    .locals 11
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -3243,32 +2415,20 @@
         }
     .end annotation
 
-    const-string v0, "animationSpec"
-
-    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string/jumbo v0, "shrinkTowards"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string/jumbo v0, "targetSize"
-
-    invoke-static {p3, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 478
+    .line 487
     new-instance v0, Landroidx/compose/animation/ExitTransitionImpl;
 
-    .line 479
-    new-instance v8, Landroidx/compose/animation/TransitionData;
+    .line 488
+    new-instance v10, Landroidx/compose/animation/TransitionData;
 
-    .line 480
+    .line 489
     new-instance v4, Landroidx/compose/animation/ChangeSize;
 
     invoke-direct {v4, p1, p3, p0, p2}, Landroidx/compose/animation/ChangeSize;-><init>(Landroidx/compose/ui/Alignment;Lkotlin/jvm/functions/Function1;Landroidx/compose/animation/core/FiniteAnimationSpec;Z)V
 
-    const/16 v6, 0xb
+    const/16 v8, 0x3b
 
-    const/4 v7, 0x0
+    const/4 v9, 0x0
 
     const/4 v2, 0x0
 
@@ -3276,13 +2436,17 @@
 
     const/4 v5, 0x0
 
-    move-object v1, v8
+    const/4 v6, 0x0
 
-    .line 479
-    invoke-direct/range {v1 .. v7}, Landroidx/compose/animation/TransitionData;-><init>(Landroidx/compose/animation/Fade;Landroidx/compose/animation/Slide;Landroidx/compose/animation/ChangeSize;Landroidx/compose/animation/Scale;ILkotlin/jvm/internal/DefaultConstructorMarker;)V
+    const/4 v7, 0x0
 
-    .line 478
-    invoke-direct {v0, v8}, Landroidx/compose/animation/ExitTransitionImpl;-><init>(Landroidx/compose/animation/TransitionData;)V
+    move-object v1, v10
+
+    .line 488
+    invoke-direct/range {v1 .. v9}, Landroidx/compose/animation/TransitionData;-><init>(Landroidx/compose/animation/Fade;Landroidx/compose/animation/Slide;Landroidx/compose/animation/ChangeSize;Landroidx/compose/animation/Scale;ZLjava/util/Map;ILkotlin/jvm/internal/DefaultConstructorMarker;)V
+
+    .line 487
+    invoke-direct {v0, v10}, Landroidx/compose/animation/ExitTransitionImpl;-><init>(Landroidx/compose/animation/TransitionData;)V
 
     check-cast v0, Landroidx/compose/animation/ExitTransition;
 
@@ -3298,7 +2462,7 @@
 
     if-eqz p5, :cond_0
 
-    .line 472
+    .line 481
     sget-object p0, Landroidx/compose/ui/unit/IntSize;->Companion:Landroidx/compose/ui/unit/IntSize$Companion;
 
     invoke-static {p0}, Landroidx/compose/animation/core/VisibilityThresholdsKt;->getVisibilityThreshold(Landroidx/compose/ui/unit/IntSize$Companion;)J
@@ -3315,7 +2479,7 @@
 
     const/high16 v2, 0x43c80000    # 400.0f
 
-    .line 470
+    .line 479
     invoke-static {v1, v2, p0, v0, p5}, Landroidx/compose/animation/core/AnimationSpecKt;->spring$default(FFLjava/lang/Object;ILjava/lang/Object;)Landroidx/compose/animation/core/SpringSpec;
 
     move-result-object p0
@@ -3327,7 +2491,7 @@
 
     if-eqz p5, :cond_1
 
-    .line 474
+    .line 483
     sget-object p1, Landroidx/compose/ui/Alignment;->Companion:Landroidx/compose/ui/Alignment$Companion;
 
     invoke-virtual {p1}, Landroidx/compose/ui/Alignment$Companion;->getBottomEnd()Landroidx/compose/ui/Alignment;
@@ -3346,12 +2510,12 @@
 
     if-eqz p4, :cond_3
 
-    .line 476
+    .line 485
     sget-object p3, Landroidx/compose/animation/EnterExitTransitionKt$shrinkOut$1;->INSTANCE:Landroidx/compose/animation/EnterExitTransitionKt$shrinkOut$1;
 
     check-cast p3, Lkotlin/jvm/functions/Function1;
 
-    .line 468
+    .line 477
     :cond_3
     invoke-static {p0, p1, p2, p3}, Landroidx/compose/animation/EnterExitTransitionKt;->shrinkOut(Landroidx/compose/animation/core/FiniteAnimationSpec;Landroidx/compose/ui/Alignment;ZLkotlin/jvm/functions/Function1;)Landroidx/compose/animation/ExitTransition;
 
@@ -3379,19 +2543,7 @@
         }
     .end annotation
 
-    const-string v0, "animationSpec"
-
-    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string/jumbo v0, "shrinkTowards"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string/jumbo v0, "targetHeight"
-
-    invoke-static {p3, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 638
+    .line 647
     invoke-static {p1}, Landroidx/compose/animation/EnterExitTransitionKt;->toAlignment(Landroidx/compose/ui/Alignment$Vertical;)Landroidx/compose/ui/Alignment;
 
     move-result-object p1
@@ -3418,7 +2570,7 @@
 
     if-eqz p5, :cond_0
 
-    .line 631
+    .line 640
     sget-object p0, Landroidx/compose/ui/unit/IntSize;->Companion:Landroidx/compose/ui/unit/IntSize$Companion;
 
     invoke-static {p0}, Landroidx/compose/animation/core/VisibilityThresholdsKt;->getVisibilityThreshold(Landroidx/compose/ui/unit/IntSize$Companion;)J
@@ -3435,7 +2587,7 @@
 
     const/high16 v2, 0x43c80000    # 400.0f
 
-    .line 629
+    .line 638
     invoke-static {v1, v2, p0, v0, p5}, Landroidx/compose/animation/core/AnimationSpecKt;->spring$default(FFLjava/lang/Object;ILjava/lang/Object;)Landroidx/compose/animation/core/SpringSpec;
 
     move-result-object p0
@@ -3447,7 +2599,7 @@
 
     if-eqz p5, :cond_1
 
-    .line 633
+    .line 642
     sget-object p1, Landroidx/compose/ui/Alignment;->Companion:Landroidx/compose/ui/Alignment$Companion;
 
     invoke-virtual {p1}, Landroidx/compose/ui/Alignment$Companion;->getBottom()Landroidx/compose/ui/Alignment$Vertical;
@@ -3466,12 +2618,12 @@
 
     if-eqz p4, :cond_3
 
-    .line 635
+    .line 644
     sget-object p3, Landroidx/compose/animation/EnterExitTransitionKt$shrinkVertically$1;->INSTANCE:Landroidx/compose/animation/EnterExitTransitionKt$shrinkVertically$1;
 
     check-cast p3, Lkotlin/jvm/functions/Function1;
 
-    .line 627
+    .line 636
     :cond_3
     invoke-static {p0, p1, p2, p3}, Landroidx/compose/animation/EnterExitTransitionKt;->shrinkVertically(Landroidx/compose/animation/core/FiniteAnimationSpec;Landroidx/compose/ui/Alignment$Vertical;ZLkotlin/jvm/functions/Function1;)Landroidx/compose/animation/ExitTransition;
 
@@ -3481,7 +2633,7 @@
 .end method
 
 .method public static final slideIn(Landroidx/compose/animation/core/FiniteAnimationSpec;Lkotlin/jvm/functions/Function1;)Landroidx/compose/animation/EnterTransition;
-    .locals 9
+    .locals 11
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -3497,26 +2649,18 @@
         }
     .end annotation
 
-    const-string v0, "animationSpec"
-
-    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string v0, "initialOffset"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 304
+    .line 313
     new-instance v0, Landroidx/compose/animation/EnterTransitionImpl;
 
-    new-instance v8, Landroidx/compose/animation/TransitionData;
+    new-instance v10, Landroidx/compose/animation/TransitionData;
 
     new-instance v3, Landroidx/compose/animation/Slide;
 
     invoke-direct {v3, p1, p0}, Landroidx/compose/animation/Slide;-><init>(Lkotlin/jvm/functions/Function1;Landroidx/compose/animation/core/FiniteAnimationSpec;)V
 
-    const/16 v6, 0xd
+    const/16 v8, 0x3d
 
-    const/4 v7, 0x0
+    const/4 v9, 0x0
 
     const/4 v2, 0x0
 
@@ -3524,11 +2668,15 @@
 
     const/4 v5, 0x0
 
-    move-object v1, v8
+    const/4 v6, 0x0
 
-    invoke-direct/range {v1 .. v7}, Landroidx/compose/animation/TransitionData;-><init>(Landroidx/compose/animation/Fade;Landroidx/compose/animation/Slide;Landroidx/compose/animation/ChangeSize;Landroidx/compose/animation/Scale;ILkotlin/jvm/internal/DefaultConstructorMarker;)V
+    const/4 v7, 0x0
 
-    invoke-direct {v0, v8}, Landroidx/compose/animation/EnterTransitionImpl;-><init>(Landroidx/compose/animation/TransitionData;)V
+    move-object v1, v10
+
+    invoke-direct/range {v1 .. v9}, Landroidx/compose/animation/TransitionData;-><init>(Landroidx/compose/animation/Fade;Landroidx/compose/animation/Slide;Landroidx/compose/animation/ChangeSize;Landroidx/compose/animation/Scale;ZLjava/util/Map;ILkotlin/jvm/internal/DefaultConstructorMarker;)V
+
+    invoke-direct {v0, v10}, Landroidx/compose/animation/EnterTransitionImpl;-><init>(Landroidx/compose/animation/TransitionData;)V
 
     check-cast v0, Landroidx/compose/animation/EnterTransition;
 
@@ -3544,7 +2692,7 @@
 
     if-eqz p2, :cond_0
 
-    .line 300
+    .line 309
     sget-object p0, Landroidx/compose/ui/unit/IntOffset;->Companion:Landroidx/compose/ui/unit/IntOffset$Companion;
 
     invoke-static {p0}, Landroidx/compose/animation/core/VisibilityThresholdsKt;->getVisibilityThreshold(Landroidx/compose/ui/unit/IntOffset$Companion;)J
@@ -3561,14 +2709,14 @@
 
     const/high16 v1, 0x43c80000    # 400.0f
 
-    .line 298
+    .line 307
     invoke-static {v0, v1, p0, p3, p2}, Landroidx/compose/animation/core/AnimationSpecKt;->spring$default(FFLjava/lang/Object;ILjava/lang/Object;)Landroidx/compose/animation/core/SpringSpec;
 
     move-result-object p0
 
     check-cast p0, Landroidx/compose/animation/core/FiniteAnimationSpec;
 
-    .line 296
+    .line 305
     :cond_0
     invoke-static {p0, p1}, Landroidx/compose/animation/EnterExitTransitionKt;->slideIn(Landroidx/compose/animation/core/FiniteAnimationSpec;Lkotlin/jvm/functions/Function1;)Landroidx/compose/animation/EnterTransition;
 
@@ -3594,15 +2742,7 @@
         }
     .end annotation
 
-    const-string v0, "animationSpec"
-
-    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string v0, "initialOffsetX"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 669
+    .line 678
     new-instance v0, Landroidx/compose/animation/EnterExitTransitionKt$slideInHorizontally$2;
 
     invoke-direct {v0, p1}, Landroidx/compose/animation/EnterExitTransitionKt$slideInHorizontally$2;-><init>(Lkotlin/jvm/functions/Function1;)V
@@ -3623,7 +2763,7 @@
 
     if-eqz p3, :cond_0
 
-    .line 665
+    .line 674
     sget-object p0, Landroidx/compose/ui/unit/IntOffset;->Companion:Landroidx/compose/ui/unit/IntOffset$Companion;
 
     invoke-static {p0}, Landroidx/compose/animation/core/VisibilityThresholdsKt;->getVisibilityThreshold(Landroidx/compose/ui/unit/IntOffset$Companion;)J
@@ -3642,7 +2782,7 @@
 
     const/4 v2, 0x1
 
-    .line 663
+    .line 672
     invoke-static {v0, v1, p0, v2, p3}, Landroidx/compose/animation/core/AnimationSpecKt;->spring$default(FFLjava/lang/Object;ILjava/lang/Object;)Landroidx/compose/animation/core/SpringSpec;
 
     move-result-object p0
@@ -3654,53 +2794,14 @@
 
     if-eqz p2, :cond_1
 
-    .line 667
+    .line 676
     sget-object p1, Landroidx/compose/animation/EnterExitTransitionKt$slideInHorizontally$1;->INSTANCE:Landroidx/compose/animation/EnterExitTransitionKt$slideInHorizontally$1;
 
     check-cast p1, Lkotlin/jvm/functions/Function1;
 
-    .line 661
+    .line 670
     :cond_1
     invoke-static {p0, p1}, Landroidx/compose/animation/EnterExitTransitionKt;->slideInHorizontally(Landroidx/compose/animation/core/FiniteAnimationSpec;Lkotlin/jvm/functions/Function1;)Landroidx/compose/animation/EnterTransition;
-
-    move-result-object p0
-
-    return-object p0
-.end method
-
-.method private static final slideInOut(Landroidx/compose/ui/Modifier;Landroidx/compose/animation/core/Transition;Landroidx/compose/runtime/State;Landroidx/compose/runtime/State;Ljava/lang/String;)Landroidx/compose/ui/Modifier;
-    .locals 1
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(",
-            "Landroidx/compose/ui/Modifier;",
-            "Landroidx/compose/animation/core/Transition<",
-            "Landroidx/compose/animation/EnterExitState;",
-            ">;",
-            "Landroidx/compose/runtime/State<",
-            "Landroidx/compose/animation/Slide;",
-            ">;",
-            "Landroidx/compose/runtime/State<",
-            "Landroidx/compose/animation/Slide;",
-            ">;",
-            "Ljava/lang/String;",
-            ")",
-            "Landroidx/compose/ui/Modifier;"
-        }
-    .end annotation
-
-    .line 950
-    new-instance v0, Landroidx/compose/animation/EnterExitTransitionKt$slideInOut$1;
-
-    invoke-direct {v0, p1, p2, p3, p4}, Landroidx/compose/animation/EnterExitTransitionKt$slideInOut$1;-><init>(Landroidx/compose/animation/core/Transition;Landroidx/compose/runtime/State;Landroidx/compose/runtime/State;Ljava/lang/String;)V
-
-    check-cast v0, Lkotlin/jvm/functions/Function3;
-
-    const/4 p1, 0x1
-
-    const/4 p2, 0x0
-
-    invoke-static {p0, p2, v0, p1, p2}, Landroidx/compose/ui/ComposedModifierKt;->composed$default(Landroidx/compose/ui/Modifier;Lkotlin/jvm/functions/Function1;Lkotlin/jvm/functions/Function3;ILjava/lang/Object;)Landroidx/compose/ui/Modifier;
 
     move-result-object p0
 
@@ -3724,15 +2825,7 @@
         }
     .end annotation
 
-    const-string v0, "animationSpec"
-
-    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string v0, "initialOffsetY"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 700
+    .line 709
     new-instance v0, Landroidx/compose/animation/EnterExitTransitionKt$slideInVertically$2;
 
     invoke-direct {v0, p1}, Landroidx/compose/animation/EnterExitTransitionKt$slideInVertically$2;-><init>(Lkotlin/jvm/functions/Function1;)V
@@ -3753,7 +2846,7 @@
 
     if-eqz p3, :cond_0
 
-    .line 696
+    .line 705
     sget-object p0, Landroidx/compose/ui/unit/IntOffset;->Companion:Landroidx/compose/ui/unit/IntOffset$Companion;
 
     invoke-static {p0}, Landroidx/compose/animation/core/VisibilityThresholdsKt;->getVisibilityThreshold(Landroidx/compose/ui/unit/IntOffset$Companion;)J
@@ -3772,7 +2865,7 @@
 
     const/4 v2, 0x1
 
-    .line 694
+    .line 703
     invoke-static {v0, v1, p0, v2, p3}, Landroidx/compose/animation/core/AnimationSpecKt;->spring$default(FFLjava/lang/Object;ILjava/lang/Object;)Landroidx/compose/animation/core/SpringSpec;
 
     move-result-object p0
@@ -3784,12 +2877,12 @@
 
     if-eqz p2, :cond_1
 
-    .line 698
+    .line 707
     sget-object p1, Landroidx/compose/animation/EnterExitTransitionKt$slideInVertically$1;->INSTANCE:Landroidx/compose/animation/EnterExitTransitionKt$slideInVertically$1;
 
     check-cast p1, Lkotlin/jvm/functions/Function1;
 
-    .line 692
+    .line 701
     :cond_1
     invoke-static {p0, p1}, Landroidx/compose/animation/EnterExitTransitionKt;->slideInVertically(Landroidx/compose/animation/core/FiniteAnimationSpec;Lkotlin/jvm/functions/Function1;)Landroidx/compose/animation/EnterTransition;
 
@@ -3799,7 +2892,7 @@
 .end method
 
 .method public static final slideOut(Landroidx/compose/animation/core/FiniteAnimationSpec;Lkotlin/jvm/functions/Function1;)Landroidx/compose/animation/ExitTransition;
-    .locals 9
+    .locals 11
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -3815,26 +2908,18 @@
         }
     .end annotation
 
-    const-string v0, "animationSpec"
-
-    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string/jumbo v0, "targetOffset"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 335
+    .line 344
     new-instance v0, Landroidx/compose/animation/ExitTransitionImpl;
 
-    new-instance v8, Landroidx/compose/animation/TransitionData;
+    new-instance v10, Landroidx/compose/animation/TransitionData;
 
     new-instance v3, Landroidx/compose/animation/Slide;
 
     invoke-direct {v3, p1, p0}, Landroidx/compose/animation/Slide;-><init>(Lkotlin/jvm/functions/Function1;Landroidx/compose/animation/core/FiniteAnimationSpec;)V
 
-    const/16 v6, 0xd
+    const/16 v8, 0x3d
 
-    const/4 v7, 0x0
+    const/4 v9, 0x0
 
     const/4 v2, 0x0
 
@@ -3842,11 +2927,15 @@
 
     const/4 v5, 0x0
 
-    move-object v1, v8
+    const/4 v6, 0x0
 
-    invoke-direct/range {v1 .. v7}, Landroidx/compose/animation/TransitionData;-><init>(Landroidx/compose/animation/Fade;Landroidx/compose/animation/Slide;Landroidx/compose/animation/ChangeSize;Landroidx/compose/animation/Scale;ILkotlin/jvm/internal/DefaultConstructorMarker;)V
+    const/4 v7, 0x0
 
-    invoke-direct {v0, v8}, Landroidx/compose/animation/ExitTransitionImpl;-><init>(Landroidx/compose/animation/TransitionData;)V
+    move-object v1, v10
+
+    invoke-direct/range {v1 .. v9}, Landroidx/compose/animation/TransitionData;-><init>(Landroidx/compose/animation/Fade;Landroidx/compose/animation/Slide;Landroidx/compose/animation/ChangeSize;Landroidx/compose/animation/Scale;ZLjava/util/Map;ILkotlin/jvm/internal/DefaultConstructorMarker;)V
+
+    invoke-direct {v0, v10}, Landroidx/compose/animation/ExitTransitionImpl;-><init>(Landroidx/compose/animation/TransitionData;)V
 
     check-cast v0, Landroidx/compose/animation/ExitTransition;
 
@@ -3862,7 +2951,7 @@
 
     if-eqz p2, :cond_0
 
-    .line 331
+    .line 340
     sget-object p0, Landroidx/compose/ui/unit/IntOffset;->Companion:Landroidx/compose/ui/unit/IntOffset$Companion;
 
     invoke-static {p0}, Landroidx/compose/animation/core/VisibilityThresholdsKt;->getVisibilityThreshold(Landroidx/compose/ui/unit/IntOffset$Companion;)J
@@ -3879,14 +2968,14 @@
 
     const/high16 v1, 0x43c80000    # 400.0f
 
-    .line 329
+    .line 338
     invoke-static {v0, v1, p0, p3, p2}, Landroidx/compose/animation/core/AnimationSpecKt;->spring$default(FFLjava/lang/Object;ILjava/lang/Object;)Landroidx/compose/animation/core/SpringSpec;
 
     move-result-object p0
 
     check-cast p0, Landroidx/compose/animation/core/FiniteAnimationSpec;
 
-    .line 327
+    .line 336
     :cond_0
     invoke-static {p0, p1}, Landroidx/compose/animation/EnterExitTransitionKt;->slideOut(Landroidx/compose/animation/core/FiniteAnimationSpec;Lkotlin/jvm/functions/Function1;)Landroidx/compose/animation/ExitTransition;
 
@@ -3912,15 +3001,7 @@
         }
     .end annotation
 
-    const-string v0, "animationSpec"
-
-    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string/jumbo v0, "targetOffsetX"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 731
+    .line 740
     new-instance v0, Landroidx/compose/animation/EnterExitTransitionKt$slideOutHorizontally$2;
 
     invoke-direct {v0, p1}, Landroidx/compose/animation/EnterExitTransitionKt$slideOutHorizontally$2;-><init>(Lkotlin/jvm/functions/Function1;)V
@@ -3941,7 +3022,7 @@
 
     if-eqz p3, :cond_0
 
-    .line 727
+    .line 736
     sget-object p0, Landroidx/compose/ui/unit/IntOffset;->Companion:Landroidx/compose/ui/unit/IntOffset$Companion;
 
     invoke-static {p0}, Landroidx/compose/animation/core/VisibilityThresholdsKt;->getVisibilityThreshold(Landroidx/compose/ui/unit/IntOffset$Companion;)J
@@ -3960,7 +3041,7 @@
 
     const/4 v2, 0x1
 
-    .line 725
+    .line 734
     invoke-static {v0, v1, p0, v2, p3}, Landroidx/compose/animation/core/AnimationSpecKt;->spring$default(FFLjava/lang/Object;ILjava/lang/Object;)Landroidx/compose/animation/core/SpringSpec;
 
     move-result-object p0
@@ -3972,12 +3053,12 @@
 
     if-eqz p2, :cond_1
 
-    .line 729
+    .line 738
     sget-object p1, Landroidx/compose/animation/EnterExitTransitionKt$slideOutHorizontally$1;->INSTANCE:Landroidx/compose/animation/EnterExitTransitionKt$slideOutHorizontally$1;
 
     check-cast p1, Lkotlin/jvm/functions/Function1;
 
-    .line 723
+    .line 732
     :cond_1
     invoke-static {p0, p1}, Landroidx/compose/animation/EnterExitTransitionKt;->slideOutHorizontally(Landroidx/compose/animation/core/FiniteAnimationSpec;Lkotlin/jvm/functions/Function1;)Landroidx/compose/animation/ExitTransition;
 
@@ -4003,15 +3084,7 @@
         }
     .end annotation
 
-    const-string v0, "animationSpec"
-
-    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string/jumbo v0, "targetOffsetY"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 760
+    .line 769
     new-instance v0, Landroidx/compose/animation/EnterExitTransitionKt$slideOutVertically$2;
 
     invoke-direct {v0, p1}, Landroidx/compose/animation/EnterExitTransitionKt$slideOutVertically$2;-><init>(Lkotlin/jvm/functions/Function1;)V
@@ -4032,7 +3105,7 @@
 
     if-eqz p3, :cond_0
 
-    .line 756
+    .line 765
     sget-object p0, Landroidx/compose/ui/unit/IntOffset;->Companion:Landroidx/compose/ui/unit/IntOffset$Companion;
 
     invoke-static {p0}, Landroidx/compose/animation/core/VisibilityThresholdsKt;->getVisibilityThreshold(Landroidx/compose/ui/unit/IntOffset$Companion;)J
@@ -4051,7 +3124,7 @@
 
     const/4 v2, 0x1
 
-    .line 754
+    .line 763
     invoke-static {v0, v1, p0, v2, p3}, Landroidx/compose/animation/core/AnimationSpecKt;->spring$default(FFLjava/lang/Object;ILjava/lang/Object;)Landroidx/compose/animation/core/SpringSpec;
 
     move-result-object p0
@@ -4063,12 +3136,12 @@
 
     if-eqz p2, :cond_1
 
-    .line 758
+    .line 767
     sget-object p1, Landroidx/compose/animation/EnterExitTransitionKt$slideOutVertically$1;->INSTANCE:Landroidx/compose/animation/EnterExitTransitionKt$slideOutVertically$1;
 
     check-cast p1, Lkotlin/jvm/functions/Function1;
 
-    .line 752
+    .line 761
     :cond_1
     invoke-static {p0, p1}, Landroidx/compose/animation/EnterExitTransitionKt;->slideOutVertically(Landroidx/compose/animation/core/FiniteAnimationSpec;Lkotlin/jvm/functions/Function1;)Landroidx/compose/animation/ExitTransition;
 
@@ -4080,7 +3153,7 @@
 .method private static final toAlignment(Landroidx/compose/ui/Alignment$Horizontal;)Landroidx/compose/ui/Alignment;
     .locals 1
 
-    .line 798
+    .line 819
     sget-object v0, Landroidx/compose/ui/Alignment;->Companion:Landroidx/compose/ui/Alignment$Companion;
 
     invoke-virtual {v0}, Landroidx/compose/ui/Alignment$Companion;->getStart()Landroidx/compose/ui/Alignment$Horizontal;
@@ -4101,7 +3174,7 @@
 
     goto :goto_0
 
-    .line 799
+    .line 820
     :cond_0
     sget-object v0, Landroidx/compose/ui/Alignment;->Companion:Landroidx/compose/ui/Alignment$Companion;
 
@@ -4123,7 +3196,7 @@
 
     goto :goto_0
 
-    .line 800
+    .line 821
     :cond_1
     sget-object p0, Landroidx/compose/ui/Alignment;->Companion:Landroidx/compose/ui/Alignment$Companion;
 
@@ -4138,7 +3211,7 @@
 .method private static final toAlignment(Landroidx/compose/ui/Alignment$Vertical;)Landroidx/compose/ui/Alignment;
     .locals 1
 
-    .line 805
+    .line 826
     sget-object v0, Landroidx/compose/ui/Alignment;->Companion:Landroidx/compose/ui/Alignment$Companion;
 
     invoke-virtual {v0}, Landroidx/compose/ui/Alignment$Companion;->getTop()Landroidx/compose/ui/Alignment$Vertical;
@@ -4159,7 +3232,7 @@
 
     goto :goto_0
 
-    .line 806
+    .line 827
     :cond_0
     sget-object v0, Landroidx/compose/ui/Alignment;->Companion:Landroidx/compose/ui/Alignment$Companion;
 
@@ -4181,7 +3254,7 @@
 
     goto :goto_0
 
-    .line 807
+    .line 828
     :cond_1
     sget-object p0, Landroidx/compose/ui/Alignment;->Companion:Landroidx/compose/ui/Alignment$Companion;
 
@@ -4191,4 +3264,436 @@
 
     :goto_0
     return-object p0
+.end method
+
+.method public static final trackActiveEnter(Landroidx/compose/animation/core/Transition;Landroidx/compose/animation/EnterTransition;Landroidx/compose/runtime/Composer;I)Landroidx/compose/animation/EnterTransition;
+    .locals 3
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Landroidx/compose/animation/core/Transition<",
+            "Landroidx/compose/animation/EnterExitState;",
+            ">;",
+            "Landroidx/compose/animation/EnterTransition;",
+            "Landroidx/compose/runtime/Composer;",
+            "I)",
+            "Landroidx/compose/animation/EnterTransition;"
+        }
+    .end annotation
+
+    const v0, 0x149cfa6
+
+    invoke-interface {p2, v0}, Landroidx/compose/runtime/Composer;->startReplaceableGroup(I)V
+
+    const-string v1, "C(trackActiveEnter)899@39573L40:EnterExitTransition.kt#xbi5r1"
+
+    invoke-static {p2, v1}, Landroidx/compose/runtime/ComposerKt;->sourceInformation(Landroidx/compose/runtime/Composer;Ljava/lang/String;)V
+
+    invoke-static {}, Landroidx/compose/runtime/ComposerKt;->isTraceInProgress()Z
+
+    move-result v1
+
+    if-eqz v1, :cond_0
+
+    const/4 v1, -0x1
+
+    const-string v2, "androidx.compose.animation.trackActiveEnter (EnterExitTransition.kt:894)"
+
+    .line 895
+    invoke-static {v0, p3, v1, v2}, Landroidx/compose/runtime/ComposerKt;->traceEventStart(IIILjava/lang/String;)V
+
+    :cond_0
+    const p3, 0x44faf204
+
+    .line 900
+    invoke-interface {p2, p3}, Landroidx/compose/runtime/Composer;->startReplaceableGroup(I)V
+
+    const-string p3, "CC(remember)P(1):Composables.kt#9igjgp"
+
+    invoke-static {p2, p3}, Landroidx/compose/runtime/ComposerKt;->sourceInformation(Landroidx/compose/runtime/Composer;Ljava/lang/String;)V
+
+    .line 1268
+    invoke-interface {p2, p0}, Landroidx/compose/runtime/Composer;->changed(Ljava/lang/Object;)Z
+
+    move-result p3
+
+    .line 1269
+    invoke-interface {p2}, Landroidx/compose/runtime/Composer;->rememberedValue()Ljava/lang/Object;
+
+    move-result-object v0
+
+    if-nez p3, :cond_1
+
+    .line 1270
+    sget-object p3, Landroidx/compose/runtime/Composer;->Companion:Landroidx/compose/runtime/Composer$Companion;
+
+    invoke-virtual {p3}, Landroidx/compose/runtime/Composer$Companion;->getEmpty()Ljava/lang/Object;
+
+    move-result-object p3
+
+    if-ne v0, p3, :cond_2
+
+    :cond_1
+    const/4 p3, 0x2
+
+    const/4 v0, 0x0
+
+    .line 900
+    invoke-static {p1, v0, p3, v0}, Landroidx/compose/runtime/SnapshotStateKt;->mutableStateOf$default(Ljava/lang/Object;Landroidx/compose/runtime/SnapshotMutationPolicy;ILjava/lang/Object;)Landroidx/compose/runtime/MutableState;
+
+    move-result-object v0
+
+    .line 1272
+    invoke-interface {p2, v0}, Landroidx/compose/runtime/Composer;->updateRememberedValue(Ljava/lang/Object;)V
+
+    .line 1268
+    :cond_2
+    invoke-interface {p2}, Landroidx/compose/runtime/Composer;->endReplaceableGroup()V
+
+    .line 900
+    check-cast v0, Landroidx/compose/runtime/MutableState;
+
+    .line 901
+    invoke-virtual {p0}, Landroidx/compose/animation/core/Transition;->getCurrentState()Ljava/lang/Object;
+
+    move-result-object p3
+
+    invoke-virtual {p0}, Landroidx/compose/animation/core/Transition;->getTargetState()Ljava/lang/Object;
+
+    move-result-object v1
+
+    if-ne p3, v1, :cond_4
+
+    invoke-virtual {p0}, Landroidx/compose/animation/core/Transition;->getCurrentState()Ljava/lang/Object;
+
+    move-result-object p3
+
+    sget-object v1, Landroidx/compose/animation/EnterExitState;->Visible:Landroidx/compose/animation/EnterExitState;
+
+    if-ne p3, v1, :cond_4
+
+    .line 902
+    invoke-virtual {p0}, Landroidx/compose/animation/core/Transition;->isSeeking()Z
+
+    move-result p0
+
+    if-eqz p0, :cond_3
+
+    .line 904
+    invoke-static {v0, p1}, Landroidx/compose/animation/EnterExitTransitionKt;->trackActiveEnter$lambda$5(Landroidx/compose/runtime/MutableState;Landroidx/compose/animation/EnterTransition;)V
+
+    goto :goto_0
+
+    .line 906
+    :cond_3
+    sget-object p0, Landroidx/compose/animation/EnterTransition;->Companion:Landroidx/compose/animation/EnterTransition$Companion;
+
+    invoke-virtual {p0}, Landroidx/compose/animation/EnterTransition$Companion;->getNone()Landroidx/compose/animation/EnterTransition;
+
+    move-result-object p0
+
+    invoke-static {v0, p0}, Landroidx/compose/animation/EnterExitTransitionKt;->trackActiveEnter$lambda$5(Landroidx/compose/runtime/MutableState;Landroidx/compose/animation/EnterTransition;)V
+
+    goto :goto_0
+
+    .line 908
+    :cond_4
+    invoke-virtual {p0}, Landroidx/compose/animation/core/Transition;->getTargetState()Ljava/lang/Object;
+
+    move-result-object p0
+
+    sget-object p3, Landroidx/compose/animation/EnterExitState;->Visible:Landroidx/compose/animation/EnterExitState;
+
+    if-ne p0, p3, :cond_5
+
+    .line 909
+    invoke-static {v0}, Landroidx/compose/animation/EnterExitTransitionKt;->trackActiveEnter$lambda$4(Landroidx/compose/runtime/MutableState;)Landroidx/compose/animation/EnterTransition;
+
+    move-result-object p0
+
+    invoke-virtual {p0, p1}, Landroidx/compose/animation/EnterTransition;->plus(Landroidx/compose/animation/EnterTransition;)Landroidx/compose/animation/EnterTransition;
+
+    move-result-object p0
+
+    invoke-static {v0, p0}, Landroidx/compose/animation/EnterExitTransitionKt;->trackActiveEnter$lambda$5(Landroidx/compose/runtime/MutableState;Landroidx/compose/animation/EnterTransition;)V
+
+    .line 911
+    :cond_5
+    :goto_0
+    invoke-static {v0}, Landroidx/compose/animation/EnterExitTransitionKt;->trackActiveEnter$lambda$4(Landroidx/compose/runtime/MutableState;)Landroidx/compose/animation/EnterTransition;
+
+    move-result-object p0
+
+    invoke-static {}, Landroidx/compose/runtime/ComposerKt;->isTraceInProgress()Z
+
+    move-result p1
+
+    if-eqz p1, :cond_6
+
+    invoke-static {}, Landroidx/compose/runtime/ComposerKt;->traceEventEnd()V
+
+    :cond_6
+    invoke-interface {p2}, Landroidx/compose/runtime/Composer;->endReplaceableGroup()V
+
+    return-object p0
+.end method
+
+.method private static final trackActiveEnter$lambda$4(Landroidx/compose/runtime/MutableState;)Landroidx/compose/animation/EnterTransition;
+    .locals 0
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Landroidx/compose/runtime/MutableState<",
+            "Landroidx/compose/animation/EnterTransition;",
+            ">;)",
+            "Landroidx/compose/animation/EnterTransition;"
+        }
+    .end annotation
+
+    .line 900
+    check-cast p0, Landroidx/compose/runtime/State;
+
+    .line 1296
+    invoke-interface {p0}, Landroidx/compose/runtime/State;->getValue()Ljava/lang/Object;
+
+    move-result-object p0
+
+    check-cast p0, Landroidx/compose/animation/EnterTransition;
+
+    return-object p0
+.end method
+
+.method private static final trackActiveEnter$lambda$5(Landroidx/compose/runtime/MutableState;Landroidx/compose/animation/EnterTransition;)V
+    .locals 0
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Landroidx/compose/runtime/MutableState<",
+            "Landroidx/compose/animation/EnterTransition;",
+            ">;",
+            "Landroidx/compose/animation/EnterTransition;",
+            ")V"
+        }
+    .end annotation
+
+    .line 1297
+    invoke-interface {p0, p1}, Landroidx/compose/runtime/MutableState;->setValue(Ljava/lang/Object;)V
+
+    return-void
+.end method
+
+.method public static final trackActiveExit(Landroidx/compose/animation/core/Transition;Landroidx/compose/animation/ExitTransition;Landroidx/compose/runtime/Composer;I)Landroidx/compose/animation/ExitTransition;
+    .locals 3
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Landroidx/compose/animation/core/Transition<",
+            "Landroidx/compose/animation/EnterExitState;",
+            ">;",
+            "Landroidx/compose/animation/ExitTransition;",
+            "Landroidx/compose/runtime/Composer;",
+            "I)",
+            "Landroidx/compose/animation/ExitTransition;"
+        }
+    .end annotation
+
+    const v0, -0x514aece4
+
+    invoke-interface {p2, v0}, Landroidx/compose/runtime/Composer;->startReplaceableGroup(I)V
+
+    const-string v1, "C(trackActiveExit)919@40554L39:EnterExitTransition.kt#xbi5r1"
+
+    invoke-static {p2, v1}, Landroidx/compose/runtime/ComposerKt;->sourceInformation(Landroidx/compose/runtime/Composer;Ljava/lang/String;)V
+
+    invoke-static {}, Landroidx/compose/runtime/ComposerKt;->isTraceInProgress()Z
+
+    move-result v1
+
+    if-eqz v1, :cond_0
+
+    const/4 v1, -0x1
+
+    const-string v2, "androidx.compose.animation.trackActiveExit (EnterExitTransition.kt:914)"
+
+    .line 915
+    invoke-static {v0, p3, v1, v2}, Landroidx/compose/runtime/ComposerKt;->traceEventStart(IIILjava/lang/String;)V
+
+    :cond_0
+    const p3, 0x44faf204
+
+    .line 920
+    invoke-interface {p2, p3}, Landroidx/compose/runtime/Composer;->startReplaceableGroup(I)V
+
+    const-string p3, "CC(remember)P(1):Composables.kt#9igjgp"
+
+    invoke-static {p2, p3}, Landroidx/compose/runtime/ComposerKt;->sourceInformation(Landroidx/compose/runtime/Composer;Ljava/lang/String;)V
+
+    .line 1275
+    invoke-interface {p2, p0}, Landroidx/compose/runtime/Composer;->changed(Ljava/lang/Object;)Z
+
+    move-result p3
+
+    .line 1276
+    invoke-interface {p2}, Landroidx/compose/runtime/Composer;->rememberedValue()Ljava/lang/Object;
+
+    move-result-object v0
+
+    if-nez p3, :cond_1
+
+    .line 1277
+    sget-object p3, Landroidx/compose/runtime/Composer;->Companion:Landroidx/compose/runtime/Composer$Companion;
+
+    invoke-virtual {p3}, Landroidx/compose/runtime/Composer$Companion;->getEmpty()Ljava/lang/Object;
+
+    move-result-object p3
+
+    if-ne v0, p3, :cond_2
+
+    :cond_1
+    const/4 p3, 0x2
+
+    const/4 v0, 0x0
+
+    .line 920
+    invoke-static {p1, v0, p3, v0}, Landroidx/compose/runtime/SnapshotStateKt;->mutableStateOf$default(Ljava/lang/Object;Landroidx/compose/runtime/SnapshotMutationPolicy;ILjava/lang/Object;)Landroidx/compose/runtime/MutableState;
+
+    move-result-object v0
+
+    .line 1279
+    invoke-interface {p2, v0}, Landroidx/compose/runtime/Composer;->updateRememberedValue(Ljava/lang/Object;)V
+
+    .line 1275
+    :cond_2
+    invoke-interface {p2}, Landroidx/compose/runtime/Composer;->endReplaceableGroup()V
+
+    .line 920
+    check-cast v0, Landroidx/compose/runtime/MutableState;
+
+    .line 921
+    invoke-virtual {p0}, Landroidx/compose/animation/core/Transition;->getCurrentState()Ljava/lang/Object;
+
+    move-result-object p3
+
+    invoke-virtual {p0}, Landroidx/compose/animation/core/Transition;->getTargetState()Ljava/lang/Object;
+
+    move-result-object v1
+
+    if-ne p3, v1, :cond_4
+
+    invoke-virtual {p0}, Landroidx/compose/animation/core/Transition;->getCurrentState()Ljava/lang/Object;
+
+    move-result-object p3
+
+    sget-object v1, Landroidx/compose/animation/EnterExitState;->Visible:Landroidx/compose/animation/EnterExitState;
+
+    if-ne p3, v1, :cond_4
+
+    .line 922
+    invoke-virtual {p0}, Landroidx/compose/animation/core/Transition;->isSeeking()Z
+
+    move-result p0
+
+    if-eqz p0, :cond_3
+
+    .line 924
+    invoke-static {v0, p1}, Landroidx/compose/animation/EnterExitTransitionKt;->trackActiveExit$lambda$8(Landroidx/compose/runtime/MutableState;Landroidx/compose/animation/ExitTransition;)V
+
+    goto :goto_0
+
+    .line 926
+    :cond_3
+    sget-object p0, Landroidx/compose/animation/ExitTransition;->Companion:Landroidx/compose/animation/ExitTransition$Companion;
+
+    invoke-virtual {p0}, Landroidx/compose/animation/ExitTransition$Companion;->getNone()Landroidx/compose/animation/ExitTransition;
+
+    move-result-object p0
+
+    invoke-static {v0, p0}, Landroidx/compose/animation/EnterExitTransitionKt;->trackActiveExit$lambda$8(Landroidx/compose/runtime/MutableState;Landroidx/compose/animation/ExitTransition;)V
+
+    goto :goto_0
+
+    .line 928
+    :cond_4
+    invoke-virtual {p0}, Landroidx/compose/animation/core/Transition;->getTargetState()Ljava/lang/Object;
+
+    move-result-object p0
+
+    sget-object p3, Landroidx/compose/animation/EnterExitState;->Visible:Landroidx/compose/animation/EnterExitState;
+
+    if-eq p0, p3, :cond_5
+
+    .line 929
+    invoke-static {v0}, Landroidx/compose/animation/EnterExitTransitionKt;->trackActiveExit$lambda$7(Landroidx/compose/runtime/MutableState;)Landroidx/compose/animation/ExitTransition;
+
+    move-result-object p0
+
+    invoke-virtual {p0, p1}, Landroidx/compose/animation/ExitTransition;->plus(Landroidx/compose/animation/ExitTransition;)Landroidx/compose/animation/ExitTransition;
+
+    move-result-object p0
+
+    invoke-static {v0, p0}, Landroidx/compose/animation/EnterExitTransitionKt;->trackActiveExit$lambda$8(Landroidx/compose/runtime/MutableState;Landroidx/compose/animation/ExitTransition;)V
+
+    .line 931
+    :cond_5
+    :goto_0
+    invoke-static {v0}, Landroidx/compose/animation/EnterExitTransitionKt;->trackActiveExit$lambda$7(Landroidx/compose/runtime/MutableState;)Landroidx/compose/animation/ExitTransition;
+
+    move-result-object p0
+
+    invoke-static {}, Landroidx/compose/runtime/ComposerKt;->isTraceInProgress()Z
+
+    move-result p1
+
+    if-eqz p1, :cond_6
+
+    invoke-static {}, Landroidx/compose/runtime/ComposerKt;->traceEventEnd()V
+
+    :cond_6
+    invoke-interface {p2}, Landroidx/compose/runtime/Composer;->endReplaceableGroup()V
+
+    return-object p0
+.end method
+
+.method private static final trackActiveExit$lambda$7(Landroidx/compose/runtime/MutableState;)Landroidx/compose/animation/ExitTransition;
+    .locals 0
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Landroidx/compose/runtime/MutableState<",
+            "Landroidx/compose/animation/ExitTransition;",
+            ">;)",
+            "Landroidx/compose/animation/ExitTransition;"
+        }
+    .end annotation
+
+    .line 920
+    check-cast p0, Landroidx/compose/runtime/State;
+
+    .line 1299
+    invoke-interface {p0}, Landroidx/compose/runtime/State;->getValue()Ljava/lang/Object;
+
+    move-result-object p0
+
+    check-cast p0, Landroidx/compose/animation/ExitTransition;
+
+    return-object p0
+.end method
+
+.method private static final trackActiveExit$lambda$8(Landroidx/compose/runtime/MutableState;Landroidx/compose/animation/ExitTransition;)V
+    .locals 0
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Landroidx/compose/runtime/MutableState<",
+            "Landroidx/compose/animation/ExitTransition;",
+            ">;",
+            "Landroidx/compose/animation/ExitTransition;",
+            ")V"
+        }
+    .end annotation
+
+    .line 1300
+    invoke-interface {p0, p1}, Landroidx/compose/runtime/MutableState;->setValue(Ljava/lang/Object;)V
+
+    return-void
 .end method

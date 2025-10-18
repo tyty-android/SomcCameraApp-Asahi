@@ -180,7 +180,7 @@
 .end method
 
 .method public remove(Ljava/lang/Object;)Z
-    .locals 1
+    .locals 2
 
     .line 944
     invoke-virtual {p0}, Lcom/google/common/collect/AbstractMapBasedMultimap$KeySet;->map()Ljava/util/Map;
@@ -193,12 +193,14 @@
 
     check-cast p1, Ljava/util/Collection;
 
+    const/4 v0, 0x0
+
     if-eqz p1, :cond_0
 
     .line 946
     invoke-interface {p1}, Ljava/util/Collection;->size()I
 
-    move-result v0
+    move-result v1
 
     .line 947
     invoke-interface {p1}, Ljava/util/Collection;->clear()V
@@ -206,17 +208,18 @@
     .line 948
     iget-object p0, p0, Lcom/google/common/collect/AbstractMapBasedMultimap$KeySet;->this$0:Lcom/google/common/collect/AbstractMapBasedMultimap;
 
-    invoke-static {p0, v0}, Lcom/google/common/collect/AbstractMapBasedMultimap;->access$220(Lcom/google/common/collect/AbstractMapBasedMultimap;I)I
-
-    if-lez v0, :cond_0
-
-    const/4 p0, 0x1
+    invoke-static {p0, v1}, Lcom/google/common/collect/AbstractMapBasedMultimap;->access$220(Lcom/google/common/collect/AbstractMapBasedMultimap;I)I
 
     goto :goto_0
 
     :cond_0
-    const/4 p0, 0x0
+    move v1, v0
 
     :goto_0
-    return p0
+    if-lez v1, :cond_1
+
+    const/4 v0, 0x1
+
+    :cond_1
+    return v0
 .end method

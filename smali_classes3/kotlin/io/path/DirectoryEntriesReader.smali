@@ -13,7 +13,7 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/SourceDebugExtension;
-    value = "SMAP\nPathTreeWalk.kt\nKotlin\n*S Kotlin\n*F\n+ 1 PathTreeWalk.kt\nkotlin/io/path/DirectoryEntriesReader\n+ 2 fake.kt\nkotlin/jvm/internal/FakeKt\n*L\n1#1,177:1\n1#2:178\n*E\n"
+    value = "SMAP\nPathTreeWalk.kt\nKotlin\n*S Kotlin\n*F\n+ 1 PathTreeWalk.kt\nkotlin/io/path/DirectoryEntriesReader\n+ 2 fake.kt\nkotlin/jvm/internal/FakeKt\n*L\n1#1,181:1\n1#2:182\n*E\n"
 .end annotation
 
 .annotation runtime Lkotlin/Metadata;
@@ -74,12 +74,12 @@
 .method public constructor <init>(Z)V
     .locals 0
 
-    .line 155
+    .line 159
     invoke-direct {p0}, Ljava/nio/file/SimpleFileVisitor;-><init>()V
 
     iput-boolean p1, p0, Lkotlin/io/path/DirectoryEntriesReader;->followLinks:Z
 
-    .line 157
+    .line 161
     new-instance p1, Lkotlin/collections/ArrayDeque;
 
     invoke-direct {p1}, Lkotlin/collections/ArrayDeque;-><init>()V
@@ -94,7 +94,7 @@
 .method public final getFollowLinks()Z
     .locals 0
 
-    .line 155
+    .line 159
     iget-boolean p0, p0, Lkotlin/io/path/DirectoryEntriesReader;->followLinks:Z
 
     return p0
@@ -103,7 +103,7 @@
 .method public bridge synthetic preVisitDirectory(Ljava/lang/Object;Ljava/nio/file/attribute/BasicFileAttributes;)Ljava/nio/file/FileVisitResult;
     .locals 0
 
-    .line 155
+    .line 159
     check-cast p1, Ljava/nio/file/Path;
 
     invoke-virtual {p0, p1, p2}, Lkotlin/io/path/DirectoryEntriesReader;->preVisitDirectory(Ljava/nio/file/Path;Ljava/nio/file/attribute/BasicFileAttributes;)Ljava/nio/file/FileVisitResult;
@@ -124,7 +124,7 @@
 
     invoke-static {p2, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 167
+    .line 171
     new-instance v0, Lkotlin/io/path/PathNode;
 
     invoke-interface {p2}, Ljava/nio/file/attribute/BasicFileAttributes;->fileKey()Ljava/lang/Object;
@@ -135,17 +135,17 @@
 
     invoke-direct {v0, p1, v1, v2}, Lkotlin/io/path/PathNode;-><init>(Ljava/nio/file/Path;Ljava/lang/Object;Lkotlin/io/path/PathNode;)V
 
-    .line 168
+    .line 172
     iget-object v1, p0, Lkotlin/io/path/DirectoryEntriesReader;->entries:Lkotlin/collections/ArrayDeque;
 
     invoke-virtual {v1, v0}, Lkotlin/collections/ArrayDeque;->add(Ljava/lang/Object;)Z
 
-    .line 169
+    .line 173
     invoke-super {p0, p1, p2}, Ljava/nio/file/SimpleFileVisitor;->preVisitDirectory(Ljava/lang/Object;Ljava/nio/file/attribute/BasicFileAttributes;)Ljava/nio/file/FileVisitResult;
 
     move-result-object p0
 
-    const-string/jumbo p1, "super.preVisitDirectory(dir, attrs)"
+    const-string p1, "preVisitDirectory(...)"
 
     invoke-static {p0, p1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
 
@@ -169,10 +169,10 @@
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 160
+    .line 164
     iput-object p1, p0, Lkotlin/io/path/DirectoryEntriesReader;->directoryNode:Lkotlin/io/path/PathNode;
 
-    .line 161
+    .line 165
     invoke-virtual {p1}, Lkotlin/io/path/PathNode;->getPath()Ljava/nio/file/Path;
 
     move-result-object p1
@@ -193,12 +193,12 @@
 
     invoke-static {p1, v0, v1, v2}, Ljava/nio/file/Files;->walkFileTree(Ljava/nio/file/Path;Ljava/util/Set;ILjava/nio/file/FileVisitor;)Ljava/nio/file/Path;
 
-    .line 162
+    .line 166
     iget-object p1, p0, Lkotlin/io/path/DirectoryEntriesReader;->entries:Lkotlin/collections/ArrayDeque;
 
     invoke-virtual {p1}, Lkotlin/collections/ArrayDeque;->removeFirst()Ljava/lang/Object;
 
-    .line 163
+    .line 167
     iget-object p1, p0, Lkotlin/io/path/DirectoryEntriesReader;->entries:Lkotlin/collections/ArrayDeque;
 
     new-instance v0, Lkotlin/collections/ArrayDeque;
@@ -215,7 +215,7 @@
 .method public bridge synthetic visitFile(Ljava/lang/Object;Ljava/nio/file/attribute/BasicFileAttributes;)Ljava/nio/file/FileVisitResult;
     .locals 0
 
-    .line 155
+    .line 159
     check-cast p1, Ljava/nio/file/Path;
 
     invoke-virtual {p0, p1, p2}, Lkotlin/io/path/DirectoryEntriesReader;->visitFile(Ljava/nio/file/Path;Ljava/nio/file/attribute/BasicFileAttributes;)Ljava/nio/file/FileVisitResult;
@@ -236,7 +236,7 @@
 
     invoke-static {p2, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 173
+    .line 177
     new-instance v0, Lkotlin/io/path/PathNode;
 
     const/4 v1, 0x0
@@ -245,17 +245,17 @@
 
     invoke-direct {v0, p1, v1, v2}, Lkotlin/io/path/PathNode;-><init>(Ljava/nio/file/Path;Ljava/lang/Object;Lkotlin/io/path/PathNode;)V
 
-    .line 174
+    .line 178
     iget-object v1, p0, Lkotlin/io/path/DirectoryEntriesReader;->entries:Lkotlin/collections/ArrayDeque;
 
     invoke-virtual {v1, v0}, Lkotlin/collections/ArrayDeque;->add(Ljava/lang/Object;)Z
 
-    .line 175
+    .line 179
     invoke-super {p0, p1, p2}, Ljava/nio/file/SimpleFileVisitor;->visitFile(Ljava/lang/Object;Ljava/nio/file/attribute/BasicFileAttributes;)Ljava/nio/file/FileVisitResult;
 
     move-result-object p0
 
-    const-string/jumbo p1, "super.visitFile(file, attrs)"
+    const-string/jumbo p1, "visitFile(...)"
 
     invoke-static {p0, p1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
 

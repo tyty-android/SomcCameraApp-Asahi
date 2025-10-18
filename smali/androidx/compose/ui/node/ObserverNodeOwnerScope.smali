@@ -42,6 +42,8 @@
 
 
 # static fields
+.field public static final $stable:I
+
 .field public static final Companion:Landroidx/compose/ui/node/ObserverNodeOwnerScope$Companion;
 
 .field private static final OnObserveReadsChanged:Lkotlin/jvm/functions/Function1;
@@ -72,7 +74,11 @@
 
     sput-object v0, Landroidx/compose/ui/node/ObserverNodeOwnerScope;->Companion:Landroidx/compose/ui/node/ObserverNodeOwnerScope$Companion;
 
-    .line 42
+    const/16 v0, 0x8
+
+    sput v0, Landroidx/compose/ui/node/ObserverNodeOwnerScope;->$stable:I
+
+    .line 44
     sget-object v0, Landroidx/compose/ui/node/ObserverNodeOwnerScope$Companion$OnObserveReadsChanged$1;->INSTANCE:Landroidx/compose/ui/node/ObserverNodeOwnerScope$Companion$OnObserveReadsChanged$1;
 
     check-cast v0, Lkotlin/jvm/functions/Function1;
@@ -83,16 +89,12 @@
 .end method
 
 .method public constructor <init>(Landroidx/compose/ui/node/ObserverModifierNode;)V
-    .locals 1
+    .locals 0
 
-    const-string v0, "observerNode"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 35
+    .line 37
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 36
+    .line 38
     iput-object p1, p0, Landroidx/compose/ui/node/ObserverNodeOwnerScope;->observerNode:Landroidx/compose/ui/node/ObserverModifierNode;
 
     return-void
@@ -101,7 +103,7 @@
 .method public static final synthetic access$getOnObserveReadsChanged$cp()Lkotlin/jvm/functions/Function1;
     .locals 1
 
-    .line 35
+    .line 37
     sget-object v0, Landroidx/compose/ui/node/ObserverNodeOwnerScope;->OnObserveReadsChanged:Lkotlin/jvm/functions/Function1;
 
     return-object v0
@@ -112,7 +114,7 @@
 .method public final getObserverNode$ui_release()Landroidx/compose/ui/node/ObserverModifierNode;
     .locals 0
 
-    .line 36
+    .line 38
     iget-object p0, p0, Landroidx/compose/ui/node/ObserverNodeOwnerScope;->observerNode:Landroidx/compose/ui/node/ObserverModifierNode;
 
     return-object p0
@@ -121,7 +123,7 @@
 .method public isValidOwnerScope()Z
     .locals 0
 
-    .line 39
+    .line 41
     iget-object p0, p0, Landroidx/compose/ui/node/ObserverNodeOwnerScope;->observerNode:Landroidx/compose/ui/node/ObserverModifierNode;
 
     invoke-interface {p0}, Landroidx/compose/ui/node/ObserverModifierNode;->getNode()Landroidx/compose/ui/Modifier$Node;

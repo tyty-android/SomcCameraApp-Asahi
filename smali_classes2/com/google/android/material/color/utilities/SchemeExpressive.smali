@@ -91,7 +91,7 @@
 
     move-result-wide v0
 
-    const-wide/high16 v3, 0x405e000000000000L    # 120.0
+    const-wide/high16 v3, 0x406e000000000000L    # 240.0
 
     add-double/2addr v0, v3
 
@@ -136,24 +136,40 @@
 
     move-result-object v8
 
-    .line 47
-    invoke-virtual {p1}, Lcom/google/android/material/color/utilities/Hct;->getHue()D
-
-    move-result-wide v0
-
-    const-wide/high16 v3, 0x4020000000000000L    # 8.0
-
-    invoke-static {v0, v1, v3, v4}, Lcom/google/android/material/color/utilities/TonalPalette;->fromHueAndChroma(DD)Lcom/google/android/material/color/utilities/TonalPalette;
-
-    move-result-object v9
-
     .line 48
     invoke-virtual {p1}, Lcom/google/android/material/color/utilities/Hct;->getHue()D
 
     move-result-wide v0
 
+    const-wide/high16 v3, 0x402e000000000000L    # 15.0
+
+    add-double/2addr v0, v3
+
+    invoke-static {v0, v1}, Lcom/google/android/material/color/utilities/MathUtils;->sanitizeDegreesDouble(D)D
+
+    move-result-wide v0
+
+    const-wide/high16 v9, 0x4020000000000000L    # 8.0
+
+    .line 47
+    invoke-static {v0, v1, v9, v10}, Lcom/google/android/material/color/utilities/TonalPalette;->fromHueAndChroma(DD)Lcom/google/android/material/color/utilities/TonalPalette;
+
+    move-result-object v9
+
+    .line 50
+    invoke-virtual {p1}, Lcom/google/android/material/color/utilities/Hct;->getHue()D
+
+    move-result-wide v0
+
+    add-double/2addr v0, v3
+
+    invoke-static {v0, v1}, Lcom/google/android/material/color/utilities/MathUtils;->sanitizeDegreesDouble(D)D
+
+    move-result-wide v0
+
     const-wide/high16 v3, 0x4028000000000000L    # 12.0
 
+    .line 49
     invoke-static {v0, v1, v3, v4}, Lcom/google/android/material/color/utilities/TonalPalette;->fromHueAndChroma(DD)Lcom/google/android/material/color/utilities/TonalPalette;
 
     move-result-object v10

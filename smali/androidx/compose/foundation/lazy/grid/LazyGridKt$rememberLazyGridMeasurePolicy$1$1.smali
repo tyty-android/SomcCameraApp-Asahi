@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Landroidx/compose/foundation/lazy/grid/LazyGridKt;->rememberLazyGridMeasurePolicy(Lkotlin/jvm/functions/Function0;Landroidx/compose/foundation/lazy/grid/LazyGridState;Lkotlin/jvm/functions/Function2;Landroidx/compose/foundation/layout/PaddingValues;ZZLandroidx/compose/foundation/layout/Arrangement$Horizontal;Landroidx/compose/foundation/layout/Arrangement$Vertical;Landroidx/compose/runtime/Composer;II)Lkotlin/jvm/functions/Function2;
+    value = Landroidx/compose/foundation/lazy/grid/LazyGridKt;->rememberLazyGridMeasurePolicy(Lkotlin/jvm/functions/Function0;Landroidx/compose/foundation/lazy/grid/LazyGridState;Landroidx/compose/foundation/lazy/grid/LazyGridSlotsProvider;Landroidx/compose/foundation/layout/PaddingValues;ZZLandroidx/compose/foundation/layout/Arrangement$Horizontal;Landroidx/compose/foundation/layout/Arrangement$Vertical;Lkotlinx/coroutines/CoroutineScope;Landroidx/compose/runtime/Composer;I)Lkotlin/jvm/functions/Function2;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -28,7 +28,7 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/SourceDebugExtension;
-    value = "SMAP\nLazyGrid.kt\nKotlin\n*S Kotlin\n*F\n+ 1 LazyGrid.kt\nandroidx/compose/foundation/lazy/grid/LazyGridKt$rememberLazyGridMeasurePolicy$1$1\n+ 2 Snapshot.kt\nandroidx/compose/runtime/snapshots/Snapshot$Companion\n+ 3 Snapshot.kt\nandroidx/compose/runtime/snapshots/Snapshot\n*L\n1#1,375:1\n495#2,4:376\n500#2:385\n129#3,5:380\n*S KotlinDebug\n*F\n+ 1 LazyGrid.kt\nandroidx/compose/foundation/lazy/grid/LazyGridKt$rememberLazyGridMeasurePolicy$1$1\n*L\n322#1:376,4\n322#1:385\n322#1:380,5\n*E\n"
+    value = "SMAP\nLazyGrid.kt\nKotlin\n*S Kotlin\n*F\n+ 1 LazyGrid.kt\nandroidx/compose/foundation/lazy/grid/LazyGridKt$rememberLazyGridMeasurePolicy$1$1\n+ 2 Snapshot.kt\nandroidx/compose/runtime/snapshots/Snapshot$Companion\n+ 3 Snapshot.kt\nandroidx/compose/runtime/snapshots/Snapshot\n*L\n1#1,376:1\n495#2,4:377\n500#2:386\n129#3,5:381\n*S KotlinDebug\n*F\n+ 1 LazyGrid.kt\nandroidx/compose/foundation/lazy/grid/LazyGridKt$rememberLazyGridMeasurePolicy$1$1\n*L\n321#1:377,4\n321#1:386\n321#1:381,5\n*E\n"
 .end annotation
 
 .annotation runtime Lkotlin/Metadata;
@@ -57,6 +57,8 @@
 # instance fields
 .field final synthetic $contentPadding:Landroidx/compose/foundation/layout/PaddingValues;
 
+.field final synthetic $coroutineScope:Lkotlinx/coroutines/CoroutineScope;
+
 .field final synthetic $horizontalArrangement:Landroidx/compose/foundation/layout/Arrangement$Horizontal;
 
 .field final synthetic $isVertical:Z
@@ -73,17 +75,7 @@
 
 .field final synthetic $reverseLayout:Z
 
-.field final synthetic $slots:Lkotlin/jvm/functions/Function2;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Lkotlin/jvm/functions/Function2<",
-            "Landroidx/compose/ui/unit/Density;",
-            "Landroidx/compose/ui/unit/Constraints;",
-            "Landroidx/compose/foundation/lazy/grid/LazyGridSlots;",
-            ">;"
-        }
-    .end annotation
-.end field
+.field final synthetic $slots:Landroidx/compose/foundation/lazy/grid/LazyGridSlotsProvider;
 
 .field final synthetic $state:Landroidx/compose/foundation/lazy/grid/LazyGridState;
 
@@ -91,7 +83,7 @@
 
 
 # direct methods
-.method constructor <init>(ZLandroidx/compose/foundation/layout/PaddingValues;ZLkotlin/jvm/functions/Function0;Lkotlin/jvm/functions/Function2;Landroidx/compose/foundation/lazy/grid/LazyGridState;Landroidx/compose/foundation/layout/Arrangement$Vertical;Landroidx/compose/foundation/layout/Arrangement$Horizontal;)V
+.method constructor <init>(ZLandroidx/compose/foundation/layout/PaddingValues;ZLkotlin/jvm/functions/Function0;Landroidx/compose/foundation/lazy/grid/LazyGridSlotsProvider;Landroidx/compose/foundation/lazy/grid/LazyGridState;Landroidx/compose/foundation/layout/Arrangement$Vertical;Landroidx/compose/foundation/layout/Arrangement$Horizontal;Lkotlinx/coroutines/CoroutineScope;)V
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -102,16 +94,11 @@
             "+",
             "Landroidx/compose/foundation/lazy/grid/LazyGridItemProvider;",
             ">;",
-            "Lkotlin/jvm/functions/Function2<",
-            "-",
-            "Landroidx/compose/ui/unit/Density;",
-            "-",
-            "Landroidx/compose/ui/unit/Constraints;",
-            "Landroidx/compose/foundation/lazy/grid/LazyGridSlots;",
-            ">;",
+            "Landroidx/compose/foundation/lazy/grid/LazyGridSlotsProvider;",
             "Landroidx/compose/foundation/lazy/grid/LazyGridState;",
             "Landroidx/compose/foundation/layout/Arrangement$Vertical;",
             "Landroidx/compose/foundation/layout/Arrangement$Horizontal;",
+            "Lkotlinx/coroutines/CoroutineScope;",
             ")V"
         }
     .end annotation
@@ -124,13 +111,15 @@
 
     iput-object p4, p0, Landroidx/compose/foundation/lazy/grid/LazyGridKt$rememberLazyGridMeasurePolicy$1$1;->$itemProviderLambda:Lkotlin/jvm/functions/Function0;
 
-    iput-object p5, p0, Landroidx/compose/foundation/lazy/grid/LazyGridKt$rememberLazyGridMeasurePolicy$1$1;->$slots:Lkotlin/jvm/functions/Function2;
+    iput-object p5, p0, Landroidx/compose/foundation/lazy/grid/LazyGridKt$rememberLazyGridMeasurePolicy$1$1;->$slots:Landroidx/compose/foundation/lazy/grid/LazyGridSlotsProvider;
 
     iput-object p6, p0, Landroidx/compose/foundation/lazy/grid/LazyGridKt$rememberLazyGridMeasurePolicy$1$1;->$state:Landroidx/compose/foundation/lazy/grid/LazyGridState;
 
     iput-object p7, p0, Landroidx/compose/foundation/lazy/grid/LazyGridKt$rememberLazyGridMeasurePolicy$1$1;->$verticalArrangement:Landroidx/compose/foundation/layout/Arrangement$Vertical;
 
     iput-object p8, p0, Landroidx/compose/foundation/lazy/grid/LazyGridKt$rememberLazyGridMeasurePolicy$1$1;->$horizontalArrangement:Landroidx/compose/foundation/layout/Arrangement$Horizontal;
+
+    iput-object p9, p0, Landroidx/compose/foundation/lazy/grid/LazyGridKt$rememberLazyGridMeasurePolicy$1$1;->$coroutineScope:Lkotlinx/coroutines/CoroutineScope;
 
     const/4 p1, 0x2
 
@@ -144,7 +133,7 @@
 .method public bridge synthetic invoke(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
     .locals 2
 
-    .line 183
+    .line 177
     check-cast p1, Landroidx/compose/foundation/lazy/layout/LazyLayoutMeasureScope;
 
     check-cast p2, Landroidx/compose/ui/unit/Constraints;
@@ -161,19 +150,15 @@
 .end method
 
 .method public final invoke-0kLqBqw(Landroidx/compose/foundation/lazy/layout/LazyLayoutMeasureScope;J)Landroidx/compose/foundation/lazy/grid/LazyGridMeasureResult;
-    .locals 39
+    .locals 41
 
     move-object/from16 v0, p0
 
-    move-object/from16 v11, p1
+    move-object/from16 v12, p1
 
-    move-wide/from16 v12, p2
+    move-wide/from16 v13, p2
 
-    const-string v1, "$this$null"
-
-    invoke-static {v11, v1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 186
+    .line 180
     iget-boolean v1, v0, Landroidx/compose/foundation/lazy/grid/LazyGridKt$rememberLazyGridMeasurePolicy$1$1;->$isVertical:Z
 
     if-eqz v1, :cond_0
@@ -185,16 +170,16 @@
     :cond_0
     sget-object v1, Landroidx/compose/foundation/gestures/Orientation;->Horizontal:Landroidx/compose/foundation/gestures/Orientation;
 
-    .line 184
+    .line 178
     :goto_0
-    invoke-static {v12, v13, v1}, Landroidx/compose/foundation/CheckScrollableContainerConstraintsKt;->checkScrollableContainerConstraints-K40F9xA(JLandroidx/compose/foundation/gestures/Orientation;)V
+    invoke-static {v13, v14, v1}, Landroidx/compose/foundation/CheckScrollableContainerConstraintsKt;->checkScrollableContainerConstraints-K40F9xA(JLandroidx/compose/foundation/gestures/Orientation;)V
 
-    .line 191
+    .line 185
     iget-boolean v1, v0, Landroidx/compose/foundation/lazy/grid/LazyGridKt$rememberLazyGridMeasurePolicy$1$1;->$isVertical:Z
 
     if-eqz v1, :cond_1
 
-    .line 192
+    .line 186
     iget-object v1, v0, Landroidx/compose/foundation/lazy/grid/LazyGridKt$rememberLazyGridMeasurePolicy$1$1;->$contentPadding:Landroidx/compose/foundation/layout/PaddingValues;
 
     invoke-interface/range {p1 .. p1}, Landroidx/compose/foundation/lazy/layout/LazyLayoutMeasureScope;->getLayoutDirection()Landroidx/compose/ui/unit/LayoutDirection;
@@ -205,13 +190,13 @@
 
     move-result v1
 
-    invoke-interface {v11, v1}, Landroidx/compose/foundation/lazy/layout/LazyLayoutMeasureScope;->roundToPx-0680j_4(F)I
+    invoke-interface {v12, v1}, Landroidx/compose/foundation/lazy/layout/LazyLayoutMeasureScope;->roundToPx-0680j_4(F)I
 
     move-result v1
 
     goto :goto_1
 
-    .line 195
+    .line 189
     :cond_1
     iget-object v1, v0, Landroidx/compose/foundation/lazy/grid/LazyGridKt$rememberLazyGridMeasurePolicy$1$1;->$contentPadding:Landroidx/compose/foundation/layout/PaddingValues;
 
@@ -223,17 +208,17 @@
 
     move-result v1
 
-    invoke-interface {v11, v1}, Landroidx/compose/foundation/lazy/layout/LazyLayoutMeasureScope;->roundToPx-0680j_4(F)I
+    invoke-interface {v12, v1}, Landroidx/compose/foundation/lazy/layout/LazyLayoutMeasureScope;->roundToPx-0680j_4(F)I
 
     move-result v1
 
-    .line 199
+    .line 193
     :goto_1
     iget-boolean v2, v0, Landroidx/compose/foundation/lazy/grid/LazyGridKt$rememberLazyGridMeasurePolicy$1$1;->$isVertical:Z
 
     if-eqz v2, :cond_2
 
-    .line 200
+    .line 194
     iget-object v2, v0, Landroidx/compose/foundation/lazy/grid/LazyGridKt$rememberLazyGridMeasurePolicy$1$1;->$contentPadding:Landroidx/compose/foundation/layout/PaddingValues;
 
     invoke-interface/range {p1 .. p1}, Landroidx/compose/foundation/lazy/layout/LazyLayoutMeasureScope;->getLayoutDirection()Landroidx/compose/ui/unit/LayoutDirection;
@@ -244,13 +229,13 @@
 
     move-result v2
 
-    invoke-interface {v11, v2}, Landroidx/compose/foundation/lazy/layout/LazyLayoutMeasureScope;->roundToPx-0680j_4(F)I
+    invoke-interface {v12, v2}, Landroidx/compose/foundation/lazy/layout/LazyLayoutMeasureScope;->roundToPx-0680j_4(F)I
 
     move-result v2
 
     goto :goto_2
 
-    .line 203
+    .line 197
     :cond_2
     iget-object v2, v0, Landroidx/compose/foundation/lazy/grid/LazyGridKt$rememberLazyGridMeasurePolicy$1$1;->$contentPadding:Landroidx/compose/foundation/layout/PaddingValues;
 
@@ -262,11 +247,11 @@
 
     move-result v2
 
-    invoke-interface {v11, v2}, Landroidx/compose/foundation/lazy/layout/LazyLayoutMeasureScope;->roundToPx-0680j_4(F)I
+    invoke-interface {v12, v2}, Landroidx/compose/foundation/lazy/layout/LazyLayoutMeasureScope;->roundToPx-0680j_4(F)I
 
     move-result v2
 
-    .line 205
+    .line 199
     :goto_2
     iget-object v3, v0, Landroidx/compose/foundation/lazy/grid/LazyGridKt$rememberLazyGridMeasurePolicy$1$1;->$contentPadding:Landroidx/compose/foundation/layout/PaddingValues;
 
@@ -274,41 +259,41 @@
 
     move-result v3
 
-    invoke-interface {v11, v3}, Landroidx/compose/foundation/lazy/layout/LazyLayoutMeasureScope;->roundToPx-0680j_4(F)I
+    invoke-interface {v12, v3}, Landroidx/compose/foundation/lazy/layout/LazyLayoutMeasureScope;->roundToPx-0680j_4(F)I
 
     move-result v3
 
-    .line 206
+    .line 200
     iget-object v4, v0, Landroidx/compose/foundation/lazy/grid/LazyGridKt$rememberLazyGridMeasurePolicy$1$1;->$contentPadding:Landroidx/compose/foundation/layout/PaddingValues;
 
     invoke-interface {v4}, Landroidx/compose/foundation/layout/PaddingValues;->calculateBottomPadding-D9Ej5fM()F
 
     move-result v4
 
-    invoke-interface {v11, v4}, Landroidx/compose/foundation/lazy/layout/LazyLayoutMeasureScope;->roundToPx-0680j_4(F)I
+    invoke-interface {v12, v4}, Landroidx/compose/foundation/lazy/layout/LazyLayoutMeasureScope;->roundToPx-0680j_4(F)I
 
     move-result v4
 
-    add-int v14, v3, v4
+    add-int v15, v3, v4
 
-    add-int v15, v1, v2
+    add-int v10, v1, v2
 
-    .line 209
+    .line 203
     iget-boolean v5, v0, Landroidx/compose/foundation/lazy/grid/LazyGridKt$rememberLazyGridMeasurePolicy$1$1;->$isVertical:Z
 
     if-eqz v5, :cond_3
 
-    move v6, v14
+    move v6, v15
 
     goto :goto_3
 
     :cond_3
-    move v6, v15
+    move v6, v10
 
     :goto_3
     if-eqz v5, :cond_4
 
-    .line 211
+    .line 205
     iget-boolean v7, v0, Landroidx/compose/foundation/lazy/grid/LazyGridKt$rememberLazyGridMeasurePolicy$1$1;->$reverseLayout:Z
 
     if-nez v7, :cond_4
@@ -320,7 +305,7 @@
     :cond_4
     if-eqz v5, :cond_5
 
-    .line 212
+    .line 206
     iget-boolean v7, v0, Landroidx/compose/foundation/lazy/grid/LazyGridKt$rememberLazyGridMeasurePolicy$1$1;->$reverseLayout:Z
 
     if-eqz v7, :cond_5
@@ -332,7 +317,7 @@
     :cond_5
     if-nez v5, :cond_6
 
-    .line 213
+    .line 207
     iget-boolean v4, v0, Landroidx/compose/foundation/lazy/grid/LazyGridKt$rememberLazyGridMeasurePolicy$1$1;->$reverseLayout:Z
 
     if-nez v4, :cond_6
@@ -347,92 +332,86 @@
     :goto_4
     sub-int v21, v6, v20
 
-    neg-int v2, v15
+    neg-int v2, v10
 
-    neg-int v4, v14
+    neg-int v4, v15
 
-    .line 218
-    invoke-static {v12, v13, v2, v4}, Landroidx/compose/ui/unit/ConstraintsKt;->offset-NN6Ew-U(JII)J
+    .line 212
+    invoke-static {v13, v14, v2, v4}, Landroidx/compose/ui/unit/ConstraintsKt;->offset-NN6Ew-U(JII)J
 
     move-result-wide v26
 
-    .line 220
+    .line 214
     iget-object v2, v0, Landroidx/compose/foundation/lazy/grid/LazyGridKt$rememberLazyGridMeasurePolicy$1$1;->$itemProviderLambda:Lkotlin/jvm/functions/Function0;
 
     invoke-interface {v2}, Lkotlin/jvm/functions/Function0;->invoke()Ljava/lang/Object;
 
     move-result-object v2
 
-    move-object v9, v2
+    move-object v11, v2
 
-    check-cast v9, Landroidx/compose/foundation/lazy/grid/LazyGridItemProvider;
+    check-cast v11, Landroidx/compose/foundation/lazy/grid/LazyGridItemProvider;
 
-    .line 221
-    invoke-interface {v9}, Landroidx/compose/foundation/lazy/grid/LazyGridItemProvider;->getSpanLayoutProvider()Landroidx/compose/foundation/lazy/grid/LazyGridSpanLayoutProvider;
+    .line 215
+    invoke-interface {v11}, Landroidx/compose/foundation/lazy/grid/LazyGridItemProvider;->getSpanLayoutProvider()Landroidx/compose/foundation/lazy/grid/LazyGridSpanLayoutProvider;
 
-    move-result-object v10
+    move-result-object v9
 
-    .line 222
-    iget-object v2, v0, Landroidx/compose/foundation/lazy/grid/LazyGridKt$rememberLazyGridMeasurePolicy$1$1;->$slots:Lkotlin/jvm/functions/Function2;
+    .line 216
+    iget-object v2, v0, Landroidx/compose/foundation/lazy/grid/LazyGridKt$rememberLazyGridMeasurePolicy$1$1;->$slots:Landroidx/compose/foundation/lazy/grid/LazyGridSlotsProvider;
 
-    invoke-static/range {p2 .. p3}, Landroidx/compose/ui/unit/Constraints;->box-impl(J)Landroidx/compose/ui/unit/Constraints;
+    move-object v8, v12
 
-    move-result-object v4
+    check-cast v8, Landroidx/compose/ui/unit/Density;
 
-    invoke-interface {v2, v11, v4}, Lkotlin/jvm/functions/Function2;->invoke(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-interface {v2, v8, v13, v14}, Landroidx/compose/foundation/lazy/grid/LazyGridSlotsProvider;->invoke-0kLqBqw(Landroidx/compose/ui/unit/Density;J)Landroidx/compose/foundation/lazy/grid/LazyGridSlots;
 
-    move-result-object v2
+    move-result-object v30
 
-    move-object/from16 v30, v2
-
-    check-cast v30, Landroidx/compose/foundation/lazy/grid/LazyGridSlots;
-
-    .line 223
+    .line 217
     invoke-virtual/range {v30 .. v30}, Landroidx/compose/foundation/lazy/grid/LazyGridSlots;->getSizes()[I
 
     move-result-object v2
 
     array-length v2, v2
 
-    .line 224
-    invoke-virtual {v10, v2}, Landroidx/compose/foundation/lazy/grid/LazyGridSpanLayoutProvider;->setSlotsPerLine(I)V
+    .line 218
+    invoke-virtual {v9, v2}, Landroidx/compose/foundation/lazy/grid/LazyGridSpanLayoutProvider;->setSlotsPerLine(I)V
 
-    .line 227
+    .line 221
     iget-object v4, v0, Landroidx/compose/foundation/lazy/grid/LazyGridKt$rememberLazyGridMeasurePolicy$1$1;->$state:Landroidx/compose/foundation/lazy/grid/LazyGridState;
-
-    move-object v8, v11
-
-    check-cast v8, Landroidx/compose/ui/unit/Density;
 
     invoke-virtual {v4, v8}, Landroidx/compose/foundation/lazy/grid/LazyGridState;->setDensity$foundation_release(Landroidx/compose/ui/unit/Density;)V
 
-    .line 228
+    .line 222
     iget-object v4, v0, Landroidx/compose/foundation/lazy/grid/LazyGridKt$rememberLazyGridMeasurePolicy$1$1;->$state:Landroidx/compose/foundation/lazy/grid/LazyGridState;
 
     invoke-virtual {v4, v2}, Landroidx/compose/foundation/lazy/grid/LazyGridState;->setSlotsPerLine$foundation_release(I)V
 
-    .line 230
+    .line 224
     iget-boolean v2, v0, Landroidx/compose/foundation/lazy/grid/LazyGridKt$rememberLazyGridMeasurePolicy$1$1;->$isVertical:Z
-
-    const-string v4, "Required value was null."
 
     if-eqz v2, :cond_8
 
-    .line 231
+    .line 225
     iget-object v2, v0, Landroidx/compose/foundation/lazy/grid/LazyGridKt$rememberLazyGridMeasurePolicy$1$1;->$verticalArrangement:Landroidx/compose/foundation/layout/Arrangement$Vertical;
 
     if-eqz v2, :cond_7
 
+    .line 227
     invoke-interface {v2}, Landroidx/compose/foundation/layout/Arrangement$Vertical;->getSpacing-D9Ej5fM()F
 
     move-result v2
 
     goto :goto_5
 
+    .line 225
     :cond_7
     new-instance v0, Ljava/lang/IllegalArgumentException;
 
-    invoke-virtual {v4}, Ljava/lang/Object;->toString()Ljava/lang/String;
+    const-string v1, "null verticalArrangement when isVertical == true"
+
+    invoke-virtual {v1}, Ljava/lang/Object;->toString()Ljava/lang/String;
 
     move-result-object v1
 
@@ -440,53 +419,54 @@
 
     throw v0
 
-    .line 233
+    .line 229
     :cond_8
     iget-object v2, v0, Landroidx/compose/foundation/lazy/grid/LazyGridKt$rememberLazyGridMeasurePolicy$1$1;->$horizontalArrangement:Landroidx/compose/foundation/layout/Arrangement$Horizontal;
 
     if-eqz v2, :cond_10
 
+    .line 231
     invoke-interface {v2}, Landroidx/compose/foundation/layout/Arrangement$Horizontal;->getSpacing-D9Ej5fM()F
 
     move-result v2
 
-    .line 235
+    .line 233
     :goto_5
-    invoke-interface {v11, v2}, Landroidx/compose/foundation/lazy/layout/LazyLayoutMeasureScope;->roundToPx-0680j_4(F)I
+    invoke-interface {v12, v2}, Landroidx/compose/foundation/lazy/layout/LazyLayoutMeasureScope;->roundToPx-0680j_4(F)I
 
     move-result v22
 
-    .line 236
-    invoke-interface {v9}, Landroidx/compose/foundation/lazy/grid/LazyGridItemProvider;->getItemCount()I
+    .line 234
+    invoke-interface {v11}, Landroidx/compose/foundation/lazy/grid/LazyGridItemProvider;->getItemCount()I
 
     move-result v7
 
-    .line 239
+    .line 237
     iget-boolean v2, v0, Landroidx/compose/foundation/lazy/grid/LazyGridKt$rememberLazyGridMeasurePolicy$1$1;->$isVertical:Z
 
     if-eqz v2, :cond_9
 
-    .line 240
+    .line 238
     invoke-static/range {p2 .. p3}, Landroidx/compose/ui/unit/Constraints;->getMaxHeight-impl(J)I
-
-    move-result v2
-
-    sub-int/2addr v2, v14
-
-    goto :goto_6
-
-    .line 242
-    :cond_9
-    invoke-static/range {p2 .. p3}, Landroidx/compose/ui/unit/Constraints;->getMaxWidth-impl(J)I
 
     move-result v2
 
     sub-int/2addr v2, v15
 
+    goto :goto_6
+
+    .line 240
+    :cond_9
+    invoke-static/range {p2 .. p3}, Landroidx/compose/ui/unit/Constraints;->getMaxWidth-impl(J)I
+
+    move-result v2
+
+    sub-int/2addr v2, v10
+
     :goto_6
     move/from16 v19, v2
 
-    .line 244
+    .line 242
     iget-boolean v2, v0, Landroidx/compose/foundation/lazy/grid/LazyGridKt$rememberLazyGridMeasurePolicy$1$1;->$reverseLayout:Z
 
     if-eqz v2, :cond_d
@@ -495,7 +475,7 @@
 
     goto :goto_8
 
-    .line 251
+    .line 249
     :cond_a
     iget-boolean v2, v0, Landroidx/compose/foundation/lazy/grid/LazyGridKt$rememberLazyGridMeasurePolicy$1$1;->$isVertical:Z
 
@@ -511,7 +491,7 @@
 
     add-int v3, v3, v19
 
-    .line 250
+    .line 248
     :cond_c
     invoke-static {v1, v3}, Landroidx/compose/ui/unit/IntOffsetKt;->IntOffset(II)J
 
@@ -519,7 +499,7 @@
 
     goto :goto_9
 
-    .line 245
+    .line 243
     :cond_d
     :goto_8
     invoke-static {v1, v3}, Landroidx/compose/ui/unit/IntOffsetKt;->IntOffset(II)J
@@ -529,38 +509,46 @@
     :goto_9
     move-wide/from16 v16, v1
 
-    .line 256
+    .line 254
     new-instance v18, Landroidx/compose/foundation/lazy/grid/LazyGridKt$rememberLazyGridMeasurePolicy$1$1$measuredItemProvider$1;
 
-    iget-boolean v5, v0, Landroidx/compose/foundation/lazy/grid/LazyGridKt$rememberLazyGridMeasurePolicy$1$1;->$isVertical:Z
+    iget-object v5, v0, Landroidx/compose/foundation/lazy/grid/LazyGridKt$rememberLazyGridMeasurePolicy$1$1;->$state:Landroidx/compose/foundation/lazy/grid/LazyGridState;
 
-    iget-boolean v6, v0, Landroidx/compose/foundation/lazy/grid/LazyGridKt$rememberLazyGridMeasurePolicy$1$1;->$reverseLayout:Z
+    iget-boolean v6, v0, Landroidx/compose/foundation/lazy/grid/LazyGridKt$rememberLazyGridMeasurePolicy$1$1;->$isVertical:Z
+
+    iget-boolean v4, v0, Landroidx/compose/foundation/lazy/grid/LazyGridKt$rememberLazyGridMeasurePolicy$1$1;->$reverseLayout:Z
 
     move-object/from16 v1, v18
 
-    move-object v2, v9
+    move-object v2, v11
 
     move-object/from16 v3, p1
 
+    move/from16 v23, v4
+
     move/from16 v4, v22
 
-    move/from16 v23, v7
+    move/from16 v24, v7
 
-    move/from16 v7, v20
+    move/from16 v7, v23
 
-    move-object/from16 v37, v8
+    move-object/from16 v39, v8
 
-    move/from16 v8, v21
+    move/from16 v8, v20
 
-    move-object v11, v9
+    move-object/from16 v40, v9
 
-    move-object/from16 v38, v10
+    move/from16 v9, v21
 
-    move-wide/from16 v9, v16
+    move/from16 v23, v10
 
-    invoke-direct/range {v1 .. v10}, Landroidx/compose/foundation/lazy/grid/LazyGridKt$rememberLazyGridMeasurePolicy$1$1$measuredItemProvider$1;-><init>(Landroidx/compose/foundation/lazy/grid/LazyGridItemProvider;Landroidx/compose/foundation/lazy/layout/LazyLayoutMeasureScope;IZZIIJ)V
+    move-object v12, v11
 
-    .line 283
+    move-wide/from16 v10, v16
+
+    invoke-direct/range {v1 .. v11}, Landroidx/compose/foundation/lazy/grid/LazyGridKt$rememberLazyGridMeasurePolicy$1$1$measuredItemProvider$1;-><init>(Landroidx/compose/foundation/lazy/grid/LazyGridItemProvider;Landroidx/compose/foundation/lazy/layout/LazyLayoutMeasureScope;ILandroidx/compose/foundation/lazy/grid/LazyGridState;ZZIIJ)V
+
+    .line 282
     new-instance v1, Landroidx/compose/foundation/lazy/grid/LazyGridKt$rememberLazyGridMeasurePolicy$1$1$measuredLineProvider$1;
 
     iget-boolean v2, v0, Landroidx/compose/foundation/lazy/grid/LazyGridKt$rememberLazyGridMeasurePolicy$1$1;->$isVertical:Z
@@ -569,22 +557,22 @@
 
     move/from16 v29, v2
 
-    move/from16 v31, v23
+    move/from16 v31, v24
 
     move/from16 v32, v22
 
     move-object/from16 v33, v18
 
-    move-object/from16 v34, v38
+    move-object/from16 v34, v40
 
     invoke-direct/range {v28 .. v34}, Landroidx/compose/foundation/lazy/grid/LazyGridKt$rememberLazyGridMeasurePolicy$1$1$measuredLineProvider$1;-><init>(ZLandroidx/compose/foundation/lazy/grid/LazyGridSlots;IILandroidx/compose/foundation/lazy/grid/LazyGridKt$rememberLazyGridMeasurePolicy$1$1$measuredItemProvider$1;Landroidx/compose/foundation/lazy/grid/LazyGridSpanLayoutProvider;)V
 
-    .line 305
+    .line 304
     iget-object v2, v0, Landroidx/compose/foundation/lazy/grid/LazyGridKt$rememberLazyGridMeasurePolicy$1$1;->$state:Landroidx/compose/foundation/lazy/grid/LazyGridState;
 
     new-instance v3, Landroidx/compose/foundation/lazy/grid/LazyGridKt$rememberLazyGridMeasurePolicy$1$1$1;
 
-    move-object/from16 v7, v38
+    move-object/from16 v7, v40
 
     invoke-direct {v3, v7, v1}, Landroidx/compose/foundation/lazy/grid/LazyGridKt$rememberLazyGridMeasurePolicy$1$1$1;-><init>(Landroidx/compose/foundation/lazy/grid/LazyGridSpanLayoutProvider;Landroidx/compose/foundation/lazy/grid/LazyGridKt$rememberLazyGridMeasurePolicy$1$1$measuredLineProvider$1;)V
 
@@ -592,17 +580,17 @@
 
     invoke-virtual {v2, v3}, Landroidx/compose/foundation/lazy/grid/LazyGridState;->setPrefetchInfoRetriever$foundation_release(Lkotlin/jvm/functions/Function1;)V
 
-    .line 322
+    .line 321
     sget-object v2, Landroidx/compose/runtime/snapshots/Snapshot;->Companion:Landroidx/compose/runtime/snapshots/Snapshot$Companion;
 
     iget-object v3, v0, Landroidx/compose/foundation/lazy/grid/LazyGridKt$rememberLazyGridMeasurePolicy$1$1;->$state:Landroidx/compose/foundation/lazy/grid/LazyGridState;
 
-    .line 377
+    .line 378
     invoke-virtual {v2}, Landroidx/compose/runtime/snapshots/Snapshot$Companion;->createNonObservableSnapshot()Landroidx/compose/runtime/snapshots/Snapshot;
 
     move-result-object v2
 
-    .line 380
+    .line 381
     :try_start_0
     invoke-virtual {v2}, Landroidx/compose/runtime/snapshots/Snapshot;->makeCurrent()Landroidx/compose/runtime/snapshots/Snapshot;
 
@@ -610,179 +598,197 @@
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_1
 
-    .line 324
+    .line 323
     :try_start_1
     invoke-virtual {v3}, Landroidx/compose/foundation/lazy/grid/LazyGridState;->getFirstVisibleItemIndex()I
 
     move-result v5
 
-    .line 323
-    invoke-virtual {v3, v11, v5}, Landroidx/compose/foundation/lazy/grid/LazyGridState;->updateScrollPositionIfTheFirstItemWasMoved$foundation_release(Landroidx/compose/foundation/lazy/grid/LazyGridItemProvider;I)I
+    .line 322
+    invoke-virtual {v3, v12, v5}, Landroidx/compose/foundation/lazy/grid/LazyGridState;->updateScrollPositionIfTheFirstItemWasMoved$foundation_release(Landroidx/compose/foundation/lazy/grid/LazyGridItemProvider;I)I
 
     move-result v5
 
-    move/from16 v8, v23
+    const/4 v8, 0x0
 
-    if-lt v5, v8, :cond_f
+    move/from16 v9, v24
 
-    if-gtz v8, :cond_e
+    if-lt v5, v9, :cond_f
+
+    if-gtz v9, :cond_e
 
     goto :goto_a
 
     :cond_e
-    add-int/lit8 v3, v8, -0x1
+    add-int/lit8 v3, v9, -0x1
 
-    .line 332
+    .line 331
     invoke-virtual {v7, v3}, Landroidx/compose/foundation/lazy/grid/LazyGridSpanLayoutProvider;->getLineIndexOfItem(I)I
 
     move-result v3
 
-    const/4 v5, 0x0
+    move v10, v3
 
-    move/from16 v23, v3
-
-    move/from16 v24, v5
+    move/from16 v24, v8
 
     goto :goto_b
 
-    .line 327
+    .line 326
     :cond_f
     :goto_a
     invoke-virtual {v7, v5}, Landroidx/compose/foundation/lazy/grid/LazyGridSpanLayoutProvider;->getLineIndexOfItem(I)I
 
     move-result v5
 
-    .line 328
+    .line 327
     invoke-virtual {v3}, Landroidx/compose/foundation/lazy/grid/LazyGridState;->getFirstVisibleItemScrollOffset()I
 
     move-result v3
 
     move/from16 v24, v3
 
-    move/from16 v23, v5
+    move v10, v5
 
-    .line 335
+    .line 334
     :goto_b
     sget-object v3, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
-    .line 384
+    .line 385
     :try_start_2
     invoke-virtual {v2, v4}, Landroidx/compose/runtime/snapshots/Snapshot;->restoreCurrent(Landroidx/compose/runtime/snapshots/Snapshot;)V
     :try_end_2
     .catchall {:try_start_2 .. :try_end_2} :catchall_1
 
-    .line 385
+    .line 386
     invoke-virtual {v2}, Landroidx/compose/runtime/snapshots/Snapshot;->dispose()V
 
+    .line 336
+    move-object v11, v12
+
+    check-cast v11, Landroidx/compose/foundation/lazy/layout/LazyLayoutItemProvider;
+
     .line 337
-    move-object v9, v11
-
-    check-cast v9, Landroidx/compose/foundation/lazy/layout/LazyLayoutItemProvider;
-
-    .line 338
     iget-object v2, v0, Landroidx/compose/foundation/lazy/grid/LazyGridKt$rememberLazyGridMeasurePolicy$1$1;->$state:Landroidx/compose/foundation/lazy/grid/LazyGridState;
 
     invoke-virtual {v2}, Landroidx/compose/foundation/lazy/grid/LazyGridState;->getPinnedItems$foundation_release()Landroidx/compose/foundation/lazy/layout/LazyLayoutPinnedItemList;
 
     move-result-object v2
 
-    .line 339
+    .line 338
     iget-object v3, v0, Landroidx/compose/foundation/lazy/grid/LazyGridKt$rememberLazyGridMeasurePolicy$1$1;->$state:Landroidx/compose/foundation/lazy/grid/LazyGridState;
 
     invoke-virtual {v3}, Landroidx/compose/foundation/lazy/grid/LazyGridState;->getBeyondBoundsInfo$foundation_release()Landroidx/compose/foundation/lazy/layout/LazyLayoutBeyondBoundsInfo;
 
     move-result-object v3
 
-    .line 337
-    invoke-static {v9, v2, v3}, Landroidx/compose/foundation/lazy/layout/LazyLayoutBeyondBoundsStateKt;->calculateLazyLayoutPinnedIndices(Landroidx/compose/foundation/lazy/layout/LazyLayoutItemProvider;Landroidx/compose/foundation/lazy/layout/LazyLayoutPinnedItemList;Landroidx/compose/foundation/lazy/layout/LazyLayoutBeyondBoundsInfo;)Ljava/util/List;
+    .line 336
+    invoke-static {v11, v2, v3}, Landroidx/compose/foundation/lazy/layout/LazyLayoutBeyondBoundsStateKt;->calculateLazyLayoutPinnedIndices(Landroidx/compose/foundation/lazy/layout/LazyLayoutItemProvider;Landroidx/compose/foundation/lazy/layout/LazyLayoutPinnedItemList;Landroidx/compose/foundation/lazy/layout/LazyLayoutBeyondBoundsInfo;)Ljava/util/List;
 
     move-result-object v35
 
-    .line 344
+    .line 343
     move-object/from16 v17, v1
 
     check-cast v17, Landroidx/compose/foundation/lazy/grid/LazyGridMeasuredLineProvider;
 
-    .line 345
+    .line 344
     check-cast v18, Landroidx/compose/foundation/lazy/grid/LazyGridMeasuredItemProvider;
 
-    .line 352
+    .line 351
     iget-object v1, v0, Landroidx/compose/foundation/lazy/grid/LazyGridKt$rememberLazyGridMeasurePolicy$1$1;->$state:Landroidx/compose/foundation/lazy/grid/LazyGridState;
 
     invoke-virtual {v1}, Landroidx/compose/foundation/lazy/grid/LazyGridState;->getScrollToBeConsumed$foundation_release()F
 
     move-result v25
 
-    .line 354
+    .line 353
     iget-boolean v1, v0, Landroidx/compose/foundation/lazy/grid/LazyGridKt$rememberLazyGridMeasurePolicy$1$1;->$isVertical:Z
 
     move/from16 v28, v1
 
-    .line 355
+    .line 354
     iget-object v1, v0, Landroidx/compose/foundation/lazy/grid/LazyGridKt$rememberLazyGridMeasurePolicy$1$1;->$verticalArrangement:Landroidx/compose/foundation/layout/Arrangement$Vertical;
 
     move-object/from16 v29, v1
 
-    .line 356
+    .line 355
     iget-object v1, v0, Landroidx/compose/foundation/lazy/grid/LazyGridKt$rememberLazyGridMeasurePolicy$1$1;->$horizontalArrangement:Landroidx/compose/foundation/layout/Arrangement$Horizontal;
 
     move-object/from16 v30, v1
 
-    .line 357
+    .line 356
     iget-boolean v1, v0, Landroidx/compose/foundation/lazy/grid/LazyGridKt$rememberLazyGridMeasurePolicy$1$1;->$reverseLayout:Z
 
     move/from16 v31, v1
 
-    .line 359
+    .line 358
     iget-object v1, v0, Landroidx/compose/foundation/lazy/grid/LazyGridKt$rememberLazyGridMeasurePolicy$1$1;->$state:Landroidx/compose/foundation/lazy/grid/LazyGridState;
 
     invoke-virtual {v1}, Landroidx/compose/foundation/lazy/grid/LazyGridState;->getPlacementAnimator$foundation_release()Landroidx/compose/foundation/lazy/grid/LazyGridItemPlacementAnimator;
 
     move-result-object v33
 
-    .line 342
-    new-instance v9, Landroidx/compose/foundation/lazy/grid/LazyGridKt$rememberLazyGridMeasurePolicy$1$1$3;
+    .line 361
+    iget-object v1, v0, Landroidx/compose/foundation/lazy/grid/LazyGridKt$rememberLazyGridMeasurePolicy$1$1;->$coroutineScope:Lkotlinx/coroutines/CoroutineScope;
 
-    move-object v1, v9
+    move-object/from16 v36, v1
+
+    .line 362
+    iget-object v1, v0, Landroidx/compose/foundation/lazy/grid/LazyGridKt$rememberLazyGridMeasurePolicy$1$1;->$state:Landroidx/compose/foundation/lazy/grid/LazyGridState;
+
+    invoke-virtual {v1}, Landroidx/compose/foundation/lazy/grid/LazyGridState;->getPlacementScopeInvalidator-zYiylxw$foundation_release()Landroidx/compose/runtime/MutableState;
+
+    move-result-object v37
+
+    .line 341
+    new-instance v11, Landroidx/compose/foundation/lazy/grid/LazyGridKt$rememberLazyGridMeasurePolicy$1$1$3;
+
+    move-object v1, v11
 
     move-object/from16 v2, p1
 
     move-wide/from16 v3, p2
 
-    move v5, v15
+    move/from16 v5, v23
 
-    move v6, v14
+    move v6, v15
 
     invoke-direct/range {v1 .. v6}, Landroidx/compose/foundation/lazy/grid/LazyGridKt$rememberLazyGridMeasurePolicy$1$1$3;-><init>(Landroidx/compose/foundation/lazy/layout/LazyLayoutMeasureScope;JII)V
 
-    move-object/from16 v36, v9
+    move-object/from16 v38, v11
 
-    check-cast v36, Lkotlin/jvm/functions/Function3;
+    check-cast v38, Lkotlin/jvm/functions/Function3;
 
-    move/from16 v16, v8
+    move/from16 v16, v9
 
-    move-object/from16 v32, v37
+    move/from16 v23, v10
+
+    move-object/from16 v32, v39
 
     move-object/from16 v34, v7
 
-    invoke-static/range {v16 .. v36}, Landroidx/compose/foundation/lazy/grid/LazyGridMeasureKt;->measureLazyGrid-ZRKPzZ8(ILandroidx/compose/foundation/lazy/grid/LazyGridMeasuredLineProvider;Landroidx/compose/foundation/lazy/grid/LazyGridMeasuredItemProvider;IIIIIIFJZLandroidx/compose/foundation/layout/Arrangement$Vertical;Landroidx/compose/foundation/layout/Arrangement$Horizontal;ZLandroidx/compose/ui/unit/Density;Landroidx/compose/foundation/lazy/grid/LazyGridItemPlacementAnimator;Landroidx/compose/foundation/lazy/grid/LazyGridSpanLayoutProvider;Ljava/util/List;Lkotlin/jvm/functions/Function3;)Landroidx/compose/foundation/lazy/grid/LazyGridMeasureResult;
+    invoke-static/range {v16 .. v38}, Landroidx/compose/foundation/lazy/grid/LazyGridMeasureKt;->measureLazyGrid-W2FL7xs(ILandroidx/compose/foundation/lazy/grid/LazyGridMeasuredLineProvider;Landroidx/compose/foundation/lazy/grid/LazyGridMeasuredItemProvider;IIIIIIFJZLandroidx/compose/foundation/layout/Arrangement$Vertical;Landroidx/compose/foundation/layout/Arrangement$Horizontal;ZLandroidx/compose/ui/unit/Density;Landroidx/compose/foundation/lazy/grid/LazyGridItemPlacementAnimator;Landroidx/compose/foundation/lazy/grid/LazyGridSpanLayoutProvider;Ljava/util/List;Lkotlinx/coroutines/CoroutineScope;Landroidx/compose/runtime/MutableState;Lkotlin/jvm/functions/Function3;)Landroidx/compose/foundation/lazy/grid/LazyGridMeasureResult;
 
     move-result-object v1
 
-    .line 370
+    .line 371
     iget-object v0, v0, Landroidx/compose/foundation/lazy/grid/LazyGridKt$rememberLazyGridMeasurePolicy$1$1;->$state:Landroidx/compose/foundation/lazy/grid/LazyGridState;
 
-    .line 371
-    invoke-virtual {v0, v1}, Landroidx/compose/foundation/lazy/grid/LazyGridState;->applyMeasureResult$foundation_release(Landroidx/compose/foundation/lazy/grid/LazyGridMeasureResult;)V
+    const/4 v2, 0x2
+
+    const/4 v3, 0x0
+
+    .line 372
+    invoke-static {v0, v1, v8, v2, v3}, Landroidx/compose/foundation/lazy/grid/LazyGridState;->applyMeasureResult$foundation_release$default(Landroidx/compose/foundation/lazy/grid/LazyGridState;Landroidx/compose/foundation/lazy/grid/LazyGridMeasureResult;ZILjava/lang/Object;)V
 
     return-object v1
 
     :catchall_0
     move-exception v0
 
-    .line 384
+    .line 385
     :try_start_3
     invoke-virtual {v2, v4}, Landroidx/compose/runtime/snapshots/Snapshot;->restoreCurrent(Landroidx/compose/runtime/snapshots/Snapshot;)V
 
@@ -793,16 +799,18 @@
     :catchall_1
     move-exception v0
 
-    .line 385
+    .line 386
     invoke-virtual {v2}, Landroidx/compose/runtime/snapshots/Snapshot;->dispose()V
 
     throw v0
 
-    .line 233
+    .line 229
     :cond_10
     new-instance v0, Ljava/lang/IllegalArgumentException;
 
-    invoke-virtual {v4}, Ljava/lang/Object;->toString()Ljava/lang/String;
+    const-string v1, "null horizontalArrangement when isVertical == false"
+
+    invoke-virtual {v1}, Ljava/lang/Object;->toString()Ljava/lang/String;
 
     move-result-object v1
 

@@ -76,7 +76,7 @@
 .method public bridge synthetic invoke(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
 
-    .line 44
+    .line 46
     check-cast p1, Ljava/util/Set;
 
     check-cast p2, Landroidx/compose/runtime/snapshots/Snapshot;
@@ -89,7 +89,7 @@
 .end method
 
 .method public final invoke(Ljava/util/Set;Landroidx/compose/runtime/snapshots/Snapshot;)V
-    .locals 1
+    .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -102,20 +102,12 @@
         }
     .end annotation
 
-    const-string v0, "applied"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string v0, "<anonymous parameter 1>"
-
-    invoke-static {p2, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 45
+    .line 47
     iget-object p2, p0, Landroidx/compose/runtime/snapshots/SnapshotStateObserver$applyObserver$1;->this$0:Landroidx/compose/runtime/snapshots/SnapshotStateObserver;
 
     invoke-static {p2, p1}, Landroidx/compose/runtime/snapshots/SnapshotStateObserver;->access$addChanges(Landroidx/compose/runtime/snapshots/SnapshotStateObserver;Ljava/util/Set;)V
 
-    .line 46
+    .line 48
     iget-object p1, p0, Landroidx/compose/runtime/snapshots/SnapshotStateObserver$applyObserver$1;->this$0:Landroidx/compose/runtime/snapshots/SnapshotStateObserver;
 
     invoke-static {p1}, Landroidx/compose/runtime/snapshots/SnapshotStateObserver;->access$drainChanges(Landroidx/compose/runtime/snapshots/SnapshotStateObserver;)Z

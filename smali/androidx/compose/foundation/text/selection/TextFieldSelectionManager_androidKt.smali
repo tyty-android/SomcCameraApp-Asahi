@@ -33,11 +33,7 @@
 
 # direct methods
 .method public static final isShiftPressed(Landroidx/compose/ui/input/pointer/PointerEvent;)Z
-    .locals 1
-
-    const-string v0, "<this>"
-
-    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+    .locals 0
 
     const/4 p0, 0x0
 
@@ -45,24 +41,16 @@
 .end method
 
 .method public static final textFieldMagnifier(Landroidx/compose/ui/Modifier;Landroidx/compose/foundation/text/selection/TextFieldSelectionManager;)Landroidx/compose/ui/Modifier;
-    .locals 2
+    .locals 3
 
-    const-string v0, "<this>"
+    const/4 v0, 0x0
 
-    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+    const/4 v1, 0x1
 
-    const-string v0, "manager"
+    const/4 v2, 0x0
 
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 40
-    sget-object v0, Landroidx/compose/foundation/MagnifierStyle;->Companion:Landroidx/compose/foundation/MagnifierStyle$Companion;
-
-    invoke-virtual {v0}, Landroidx/compose/foundation/MagnifierStyle$Companion;->getTextDefault()Landroidx/compose/foundation/MagnifierStyle;
-
-    move-result-object v0
-
-    invoke-virtual {v0}, Landroidx/compose/foundation/MagnifierStyle;->isSupported()Z
+    .line 41
+    invoke-static {v0, v1, v2}, Landroidx/compose/foundation/Magnifier_androidKt;->isPlatformMagnifierSupported$default(IILjava/lang/Object;)Z
 
     move-result v0
 
@@ -70,7 +58,7 @@
 
     return-object p0
 
-    .line 44
+    .line 45
     :cond_0
     new-instance v0, Landroidx/compose/foundation/text/selection/TextFieldSelectionManager_androidKt$textFieldMagnifier$1;
 
@@ -78,11 +66,7 @@
 
     check-cast v0, Lkotlin/jvm/functions/Function3;
 
-    const/4 p1, 0x1
-
-    const/4 v1, 0x0
-
-    invoke-static {p0, v1, v0, p1, v1}, Landroidx/compose/ui/ComposedModifierKt;->composed$default(Landroidx/compose/ui/Modifier;Lkotlin/jvm/functions/Function1;Lkotlin/jvm/functions/Function3;ILjava/lang/Object;)Landroidx/compose/ui/Modifier;
+    invoke-static {p0, v2, v0, v1, v2}, Landroidx/compose/ui/ComposedModifierKt;->composed$default(Landroidx/compose/ui/Modifier;Lkotlin/jvm/functions/Function1;Lkotlin/jvm/functions/Function3;ILjava/lang/Object;)Landroidx/compose/ui/Modifier;
 
     move-result-object p0
 

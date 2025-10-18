@@ -25,7 +25,7 @@
 .method private constructor <init>(Ljp/co/sony/mc/camera/CameraActivity;)V
     .locals 0
 
-    .line 1600
+    .line 1643
     iput-object p1, p0, Ljp/co/sony/mc/camera/CameraActivity$ThermalAlertReceiverOnDestroyTask;->this$0:Ljp/co/sony/mc/camera/CameraActivity;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -46,7 +46,7 @@
 .method public run()V
     .locals 3
 
-    .line 1603
+    .line 1646
     iget-object v0, p0, Ljp/co/sony/mc/camera/CameraActivity$ThermalAlertReceiverOnDestroyTask;->this$0:Ljp/co/sony/mc/camera/CameraActivity;
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/CameraActivity;->-$$Nest$fgetmBackgroundWorkLock(Ljp/co/sony/mc/camera/CameraActivity;)Ljava/lang/Object;
@@ -55,7 +55,7 @@
 
     monitor-enter v0
 
-    .line 1604
+    .line 1647
     :try_start_0
     iget-object v1, p0, Ljp/co/sony/mc/camera/CameraActivity$ThermalAlertReceiverOnDestroyTask;->this$0:Ljp/co/sony/mc/camera/CameraActivity;
 
@@ -65,14 +65,14 @@
 
     if-nez v1, :cond_0
 
-    .line 1605
+    .line 1648
     sget-object v1, Ljp/co/sony/mc/camera/idd/event/IddLaunchEvent;->Context:Ljp/co/sony/mc/camera/idd/event/IddLaunchEvent$Context;
 
     const/4 v2, 0x0
 
     invoke-virtual {v1, v2}, Ljp/co/sony/mc/camera/idd/event/IddLaunchEvent$Context;->setBatteryChangedReceiver(Ljp/co/sony/mc/camera/systemmonitor/BatteryChangedReceiver;)V
 
-    .line 1606
+    .line 1649
     iget-object v1, p0, Ljp/co/sony/mc/camera/CameraActivity$ThermalAlertReceiverOnDestroyTask;->this$0:Ljp/co/sony/mc/camera/CameraActivity;
 
     invoke-static {v1}, Ljp/co/sony/mc/camera/CameraActivity;->-$$Nest$fgetmThermalAlertReceiver(Ljp/co/sony/mc/camera/CameraActivity;)Ljp/co/sony/mc/camera/systemmonitor/ThermalAlertReceiver;
@@ -81,7 +81,7 @@
 
     invoke-virtual {v1}, Ljp/co/sony/mc/camera/systemmonitor/ThermalAlertReceiver;->onDestroy()V
 
-    .line 1607
+    .line 1650
     iget-object v1, p0, Ljp/co/sony/mc/camera/CameraActivity$ThermalAlertReceiverOnDestroyTask;->this$0:Ljp/co/sony/mc/camera/CameraActivity;
 
     invoke-static {v1}, Ljp/co/sony/mc/camera/CameraActivity;->-$$Nest$fgetmBatteryChangedReceiver(Ljp/co/sony/mc/camera/CameraActivity;)Ljp/co/sony/mc/camera/systemmonitor/BatteryChangedReceiver;
@@ -90,7 +90,7 @@
 
     invoke-virtual {v1}, Ljp/co/sony/mc/camera/systemmonitor/BatteryChangedReceiver;->onDestroy()V
 
-    .line 1608
+    .line 1651
     iget-object p0, p0, Ljp/co/sony/mc/camera/CameraActivity$ThermalAlertReceiverOnDestroyTask;->this$0:Ljp/co/sony/mc/camera/CameraActivity;
 
     invoke-static {p0}, Ljp/co/sony/mc/camera/CameraActivity;->-$$Nest$fgetmPowerConnectionReceiver(Ljp/co/sony/mc/camera/CameraActivity;)Ljp/co/sony/mc/camera/systemmonitor/PowerConnectionReceiver;
@@ -99,7 +99,7 @@
 
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/systemmonitor/PowerConnectionReceiver;->onDestroy()V
 
-    .line 1610
+    .line 1653
     :cond_0
     monitor-exit v0
 

@@ -96,24 +96,48 @@
 
 # direct methods
 .method static constructor <clinit>()V
-    .locals 6
+    .locals 3
+
+    const/4 v0, 0x6
 
     .line 49
-    const-string v4, "height"
+    new-array v0, v0, [Ljava/lang/String;
 
-    const-string v5, "pathRotate"
+    const/4 v1, 0x0
 
-    const-string v0, "position"
+    const-string v2, "position"
 
-    const-string/jumbo v1, "x"
+    aput-object v2, v0, v1
+
+    const/4 v1, 0x1
+
+    const-string/jumbo v2, "x"
+
+    aput-object v2, v0, v1
+
+    const/4 v1, 0x2
 
     const-string/jumbo v2, "y"
 
-    const-string/jumbo v3, "width"
+    aput-object v2, v0, v1
 
-    filled-new-array/range {v0 .. v5}, [Ljava/lang/String;
+    const/4 v1, 0x3
 
-    move-result-object v0
+    const-string/jumbo v2, "width"
+
+    aput-object v2, v0, v1
+
+    const/4 v1, 0x4
+
+    const-string v2, "height"
+
+    aput-object v2, v0, v1
+
+    const/4 v1, 0x5
+
+    const-string v2, "pathRotate"
+
+    aput-object v2, v0, v1
 
     sput-object v0, Landroidx/constraintlayout/core/motion/MotionPaths;->names:[Ljava/lang/String;
 

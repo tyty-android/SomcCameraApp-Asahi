@@ -11,12 +11,12 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/SourceDebugExtension;
-    value = "SMAP\nBasicModeTopPaneUiState.kt\nKotlin\n*S Kotlin\n*F\n+ 1 BasicModeTopPaneUiState.kt\njp/co/sony/mc/camera/view/uistate/BasicModeTopPaneUiState\n+ 2 _Arrays.kt\nkotlin/collections/ArraysKt___ArraysKt\n*L\n1#1,321:1\n3792#2:322\n4307#2,2:323\n3792#2:325\n4307#2,2:326\n*S KotlinDebug\n*F\n+ 1 BasicModeTopPaneUiState.kt\njp/co/sony/mc/camera/view/uistate/BasicModeTopPaneUiState\n*L\n265#1:322\n265#1:323,2\n280#1:325\n280#1:326,2\n*E\n"
+    value = "SMAP\nBasicModeTopPaneUiState.kt\nKotlin\n*S Kotlin\n*F\n+ 1 BasicModeTopPaneUiState.kt\njp/co/sony/mc/camera/view/uistate/BasicModeTopPaneUiState\n+ 2 _Arrays.kt\nkotlin/collections/ArraysKt___ArraysKt\n*L\n1#1,326:1\n3829#2:327\n4344#2,2:328\n3829#2:330\n4344#2,2:331\n*S KotlinDebug\n*F\n+ 1 BasicModeTopPaneUiState.kt\njp/co/sony/mc/camera/view/uistate/BasicModeTopPaneUiState\n*L\n274#1:327\n274#1:328,2\n289#1:330\n289#1:331,2\n*E\n"
 .end annotation
 
 .annotation runtime Lkotlin/Metadata;
     d1 = {
-        "\u0000t\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0002\u0010\u000b\n\u0002\u0008\u0002\n\u0002\u0010\u0007\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0011\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0008\n\u0002\u0008\u0004\n\u0002\u0018\u0002\n\u0002\u0008\u0004\n\u0002\u0018\u0002\n\u0002\u0008\u0007\n\u0002\u0018\u0002\n\u0002\u0008\u0003\n\u0002\u0018\u0002\n\u0002\u0008\u0005\n\u0002\u0010\u0002\n\u0002\u0008\u0010\u0008\u0007\u0018\u00002\u00020\u0001:\u0001QB%\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\u0006\u0010\u0004\u001a\u00020\u0005\u0012\u0006\u0010\u0006\u001a\u00020\u0007\u0012\u0006\u0010\u0008\u001a\u00020\t\u00a2\u0006\u0002\u0010\nJ\u0008\u0010A\u001a\u00020BH\u0002J\u000e\u0010C\u001a\u00020B2\u0006\u0010D\u001a\u00020\rJ\u000e\u0010E\u001a\u00020B2\u0006\u0010F\u001a\u00020\rJ\u0006\u0010G\u001a\u00020BJ\u0006\u0010H\u001a\u00020BJ\u0006\u0010I\u001a\u00020BJ\u0008\u0010J\u001a\u00020BH\u0002J\u0008\u0010K\u001a\u00020BH\u0002J\u0008\u0010L\u001a\u00020BH\u0002J\u0006\u0010M\u001a\u00020BJ\u0006\u0010N\u001a\u00020BJ\u0006\u0010O\u001a\u00020BJ\u0006\u0010P\u001a\u00020BR\u001c\u0010\u000b\u001a\u0010\u0012\u000c\u0012\n \u000e*\u0004\u0018\u00010\r0\r0\u000cX\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u001c\u0010\u000f\u001a\u0010\u0012\u000c\u0012\n \u000e*\u0004\u0018\u00010\u00100\u00100\u000cX\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u0002\u001a\u00020\u0003X\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u0006\u001a\u00020\u0007X\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u0004\u001a\u00020\u0005X\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u0017\u0010\u0011\u001a\u0008\u0012\u0004\u0012\u00020\r0\u0012\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\u0011\u0010\u0013R\u0017\u0010\u0014\u001a\u0008\u0012\u0004\u0012\u00020\r0\u0012\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\u0014\u0010\u0013R\u0017\u0010\u0015\u001a\u0008\u0012\u0004\u0012\u00020\r0\u0012\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\u0015\u0010\u0013R\u0017\u0010\u0016\u001a\u0008\u0012\u0004\u0012\u00020\r0\u0012\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\u0016\u0010\u0013R\u0017\u0010\u0017\u001a\u0008\u0012\u0004\u0012\u00020\r0\u0012\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\u0017\u0010\u0013R\u0017\u0010\u0018\u001a\u0008\u0012\u0004\u0012\u00020\r0\u0012\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\u0018\u0010\u0013R\u0017\u0010\u0019\u001a\u0008\u0012\u0004\u0012\u00020\r0\u0012\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\u0019\u0010\u0013R\u0017\u0010\u001a\u001a\u0008\u0012\u0004\u0012\u00020\r0\u0012\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\u001a\u0010\u0013R\u0017\u0010\u001b\u001a\u0008\u0012\u0004\u0012\u00020\r0\u0012\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\u001b\u0010\u0013R\u0017\u0010\u001c\u001a\u0008\u0012\u0004\u0012\u00020\r0\u0012\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\u001c\u0010\u0013R\u0017\u0010\u001d\u001a\u0008\u0012\u0004\u0012\u00020\r0\u0012\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\u001d\u0010\u0013R\u0017\u0010\u001e\u001a\u0008\u0012\u0004\u0012\u00020\r0\u0012\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\u001e\u0010\u0013R\u0017\u0010\u001f\u001a\u0008\u0012\u0004\u0012\u00020\r0\u0012\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\u001f\u0010\u0013R\u0017\u0010 \u001a\u0008\u0012\u0004\u0012\u00020\r0\u0012\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008 \u0010\u0013R\u000e\u0010\u0008\u001a\u00020\tX\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u001f\u0010!\u001a\u0010\u0012\u000c\u0012\n \u000e*\u0004\u0018\u00010\u00100\u00100\u0012\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\"\u0010\u0013R\u0010\u0010#\u001a\u0004\u0018\u00010$X\u0082\u000e\u00a2\u0006\u0002\n\u0000R\u0017\u0010%\u001a\u0008\u0012\u0004\u0012\u00020&0\u0012\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\'\u0010\u0013R\u0017\u0010(\u001a\u0008\u0012\u0004\u0012\u00020&0\u0012\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008)\u0010\u0013R\u0014\u0010*\u001a\u0008\u0012\u0004\u0012\u00020+0\u0012X\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u0017\u0010,\u001a\u0008\u0012\u0004\u0012\u00020&0\u0012\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008-\u0010\u0013R\u000e\u0010.\u001a\u00020\rX\u0082\u000e\u00a2\u0006\u0002\n\u0000R\u001c\u0010/\u001a\u0004\u0018\u000100X\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\u00081\u00102\"\u0004\u00083\u00104R\u0017\u00105\u001a\u0008\u0012\u0004\u0012\u00020\r0\u0012\u00a2\u0006\u0008\n\u0000\u001a\u0004\u00086\u0010\u0013R\u0014\u00107\u001a\u0002088BX\u0082\u0004\u00a2\u0006\u0006\u001a\u0004\u00089\u0010:R\u0016\u0010;\u001a\n \u000e*\u0004\u0018\u00010<0<X\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u0017\u0010=\u001a\u0008\u0012\u0004\u0012\u00020\r0\u0012\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008>\u0010\u0013R\u0017\u0010?\u001a\u0008\u0012\u0004\u0012\u00020&0\u0012\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008@\u0010\u0013\u00a8\u0006R"
+        "\u0000r\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0003\n\u0002\u0018\u0002\n\u0002\u0008\u0005\n\u0002\u0018\u0002\n\u0002\u0008\u0003\n\u0002\u0018\u0002\n\u0002\u0008\u0003\n\u0002\u0018\u0002\n\u0002\u0010\u000b\n\u0002\u0008\u0004\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0008\n\u0002\u0008\u0006\n\u0002\u0010\u0007\n\u0002\u0008\u0006\n\u0002\u0018\u0002\n\u0002\u0008\u001e\u0008\u0007\u0018\u00002\u00020\u0001:\u0001RB\'\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\u0006\u0010\u0004\u001a\u00020\u0005\u0012\u0006\u0010\u0006\u001a\u00020\u0007\u0012\u0006\u0010\u0008\u001a\u00020\t\u00a2\u0006\u0004\u0008\n\u0010\u000bJ\u0006\u0010 \u001a\u00020!J\u000e\u00106\u001a\u00020!2\u0006\u00107\u001a\u00020\u001cJ\u0006\u00108\u001a\u00020!J\u0006\u00109\u001a\u00020!J\u0006\u0010:\u001a\u00020!J\u000e\u0010;\u001a\u00020!2\u0006\u0010<\u001a\u00020\u001cJ\u0008\u0010=\u001a\u00020!H\u0002J\u0008\u0010>\u001a\u00020!H\u0002J\u0008\u0010?\u001a\u00020!H\u0002J\u0008\u0010@\u001a\u00020!H\u0002J\u0006\u0010J\u001a\u00020!J\u0006\u0010K\u001a\u00020!R\u000e\u0010\u0002\u001a\u00020\u0003X\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u0004\u001a\u00020\u0005X\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u0006\u001a\u00020\u0007X\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u0008\u001a\u00020\tX\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u001c\u0010\u000c\u001a\u0004\u0018\u00010\rX\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\u0008\u000e\u0010\u000f\"\u0004\u0008\u0010\u0010\u0011R\u0018\u0010\u0012\u001a\n \u0014*\u0004\u0018\u00010\u00130\u0013X\u0082\u0004\u00a2\u0006\u0004\n\u0002\u0010\u0015R\u0014\u0010\u0016\u001a\u00020\u00178BX\u0082\u0004\u00a2\u0006\u0006\u001a\u0004\u0008\u0018\u0010\u0019R\u0017\u0010\u001a\u001a\u0008\u0012\u0004\u0012\u00020\u001c0\u001b\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\u001a\u0010\u001dR\u0017\u0010\u001e\u001a\u0008\u0012\u0004\u0012\u00020\u001c0\u001b\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\u001e\u0010\u001dR\u0017\u0010\u001f\u001a\u0008\u0012\u0004\u0012\u00020\u001c0\u001b\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\u001f\u0010\u001dR\u001c\u0010\"\u001a\u0010\u0012\u000c\u0012\n \u0014*\u0004\u0018\u00010\u001c0\u001c0#X\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u0014\u0010$\u001a\u0008\u0012\u0004\u0012\u00020%0\u001bX\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u0017\u0010&\u001a\u0008\u0012\u0004\u0012\u00020\'0\u001b\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008(\u0010\u001dR\u0017\u0010)\u001a\u0008\u0012\u0004\u0012\u00020\'0\u001b\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008*\u0010\u001dR\u0017\u0010+\u001a\u0008\u0012\u0004\u0012\u00020\u001c0\u001b\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008+\u0010\u001dR\u0017\u0010,\u001a\u0008\u0012\u0004\u0012\u00020\u001c0\u001b\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008,\u0010\u001dR\u001c\u0010-\u001a\u0010\u0012\u000c\u0012\n \u0014*\u0004\u0018\u00010.0.0#X\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u001f\u0010/\u001a\u0010\u0012\u000c\u0012\n \u0014*\u0004\u0018\u00010.0.0\u001b\u00a2\u0006\u0008\n\u0000\u001a\u0004\u00080\u0010\u001dR\u0017\u00101\u001a\u0008\u0012\u0004\u0012\u00020\'0\u001b\u00a2\u0006\u0008\n\u0000\u001a\u0004\u00082\u0010\u001dR\u000e\u00103\u001a\u00020\u001cX\u0082\u000e\u00a2\u0006\u0002\n\u0000R\u0010\u00104\u001a\u0004\u0018\u000105X\u0082\u000e\u00a2\u0006\u0002\n\u0000R\u0017\u0010A\u001a\u0008\u0012\u0004\u0012\u00020\u001c0\u001b\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008A\u0010\u001dR\u0017\u0010B\u001a\u0008\u0012\u0004\u0012\u00020\u001c0\u001b\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008B\u0010\u001dR\u0017\u0010C\u001a\u0008\u0012\u0004\u0012\u00020\u001c0\u001b\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008C\u0010\u001dR\u0017\u0010D\u001a\u0008\u0012\u0004\u0012\u00020\u001c0\u001b\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008D\u0010\u001dR\u0017\u0010E\u001a\u0008\u0012\u0004\u0012\u00020\u001c0\u001b\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008E\u0010\u001dR\u0017\u0010F\u001a\u0008\u0012\u0004\u0012\u00020\u001c0\u001b\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008F\u0010\u001dR\u0017\u0010G\u001a\u0008\u0012\u0004\u0012\u00020\u001c0\u001b\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008G\u0010\u001dR\u0017\u0010H\u001a\u0008\u0012\u0004\u0012\u00020\u001c0\u001b\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008H\u0010\u001dR\u0017\u0010I\u001a\u0008\u0012\u0004\u0012\u00020\u001c0\u001b\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008I\u0010\u001dR\u0017\u0010L\u001a\u0008\u0012\u0004\u0012\u00020\u001c0\u001b\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008M\u0010\u001dR\u0017\u0010N\u001a\u0008\u0012\u0004\u0012\u00020\'0\u001b\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008O\u0010\u001dR\u0017\u0010P\u001a\u0008\u0012\u0004\u0012\u00020\u001c0\u001b\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008Q\u0010\u001d\u00a8\u0006S"
     }
     d2 = {
         "Ljp/co/sony/mc/camera/view/uistate/BasicModeTopPaneUiState;",
@@ -29,84 +29,85 @@
         "Ljp/co/sony/mc/camera/view/viewmodel/CameraSettingsModel;",
         "launcherModel",
         "Ljp/co/sony/mc/camera/view/viewmodel/LauncherModel;",
+        "<init>",
         "(Ljp/co/sony/mc/camera/view/uistate/BasicModeCommonUiState;Ljp/co/sony/mc/camera/view/viewmodel/CameraStatusModel;Ljp/co/sony/mc/camera/view/viewmodel/CameraSettingsModel;Ljp/co/sony/mc/camera/view/viewmodel/LauncherModel;)V",
-        "_isLowLightStateActive",
-        "Landroidx/lifecycle/MutableLiveData;",
-        "",
-        "kotlin.jvm.PlatformType",
-        "_lowLightButtonAlpha",
-        "",
-        "isGoogleLensClickable",
-        "Landroidx/lifecycle/LiveData;",
-        "()Landroidx/lifecycle/LiveData;",
-        "isGoogleLensEnabled",
-        "isGoogleLensVisible",
-        "isLowLightButtonClickable",
-        "isLowLightButtonEnabled",
-        "isPointButtonVisible",
-        "isVideoFormatContainerEnabled",
-        "isVideoFpsButtonClickable",
-        "isVideoFpsButtonEnabled",
-        "isVideoFpsButtonVisible",
-        "isVideoSizeButtonEnabled",
-        "isVideoSizeButtonVisible",
-        "isVideoSpeedRatioButtonEnabled",
-        "isVideoSpeedRatioButtonVisible",
-        "lowLightButtonAlpha",
-        "getLowLightButtonAlpha",
-        "lowLightButtonAnimator",
-        "Landroid/animation/ValueAnimator;",
-        "lowLightButtonContentDescription",
-        "",
-        "getLowLightButtonContentDescription",
-        "lowLightButtonSrc",
-        "getLowLightButtonSrc",
-        "lowLightButtonState",
-        "Ljp/co/sony/mc/camera/view/uistate/BasicModeTopPaneUiState$LowLightButtonState;",
-        "lowLightButtonVisibility",
-        "getLowLightButtonVisibility",
-        "lowLightModeTurnAutoByUser",
         "operator",
         "Ljp/co/sony/mc/camera/view/CameraOperator;",
         "getOperator",
         "()Ljp/co/sony/mc/camera/view/CameraOperator;",
         "setOperator",
         "(Ljp/co/sony/mc/camera/view/CameraOperator;)V",
-        "quickSettingButtonEnable",
-        "getQuickSettingButtonEnable",
+        "settings",
+        "Ljp/co/sony/mc/camera/setting/CameraProSetting;",
+        "kotlin.jvm.PlatformType",
+        "Ljp/co/sony/mc/camera/setting/CameraProSetting;",
         "settingChecker",
         "Ljp/co/sony/mc/camera/setting/SettingAppearanceChecker;",
         "getSettingChecker",
         "()Ljp/co/sony/mc/camera/setting/SettingAppearanceChecker;",
-        "settings",
-        "Ljp/co/sony/mc/camera/setting/CameraProSetting;",
-        "streamingQucikSettingButtonVisible",
-        "getStreamingQucikSettingButtonVisible",
-        "streamingQuickSettingButtonSrc",
-        "getStreamingQuickSettingButtonSrc",
-        "hideLowLightButton",
+        "isGoogleLensEnabled",
+        "Landroidx/lifecycle/LiveData;",
         "",
+        "()Landroidx/lifecycle/LiveData;",
+        "isGoogleLensClickable",
+        "isGoogleLensVisible",
+        "showGoogleLens",
+        "",
+        "_isLowLightStateActive",
+        "Landroidx/lifecycle/MutableLiveData;",
+        "lowLightButtonState",
+        "Ljp/co/sony/mc/camera/view/uistate/BasicModeTopPaneUiState$LowLightButtonState;",
+        "lowLightButtonSrc",
+        "",
+        "getLowLightButtonSrc",
+        "lowLightButtonContentDescription",
+        "getLowLightButtonContentDescription",
+        "isLowLightButtonEnabled",
+        "isLowLightButtonClickable",
+        "_lowLightButtonAlpha",
+        "",
+        "lowLightButtonAlpha",
+        "getLowLightButtonAlpha",
+        "lowLightButtonVisibility",
+        "getLowLightButtonVisibility",
+        "lowLightModeTurnAutoByUser",
+        "lowLightButtonAnimator",
+        "Landroid/animation/ValueAnimator;",
         "onLowLightStateChanged",
         "isActive",
+        "toggleLowLightMode",
+        "resetLowLightModeState",
+        "onPause",
         "onModeChange",
         "isChanging",
-        "onPause",
-        "resetLowLightModeState",
-        "showGoogleLens",
-        "showLowLightButton",
         "startLowLightFadeAnimator",
         "stopLowLightFadeAnimator",
-        "tapBackground",
-        "toggleLowLightMode",
-        "toggleVideoFpsMode",
+        "showLowLightButton",
+        "hideLowLightButton",
+        "isVideoSizeButtonVisible",
+        "isVideoSpeedRatioButtonVisible",
+        "isVideoFpsButtonVisible",
+        "isPointButtonVisible",
+        "isVideoSizeButtonEnabled",
+        "isVideoFpsButtonEnabled",
+        "isVideoSpeedRatioButtonEnabled",
+        "isVideoFpsButtonClickable",
+        "isVideoFormatContainerEnabled",
         "toggleVideoSizeMode",
+        "toggleVideoFpsMode",
+        "quickSettingButtonEnable",
+        "getQuickSettingButtonEnable",
+        "streamingQuickSettingButtonSrc",
+        "getStreamingQuickSettingButtonSrc",
+        "streamingQuickSettingButtonVisible",
+        "getStreamingQuickSettingButtonVisible",
         "LowLightButtonState",
         "SomcCamera_release"
     }
     k = 0x1
     mv = {
-        0x1,
-        0x9,
+        0x2,
+        0x0,
         0x0
     }
     xi = 0x30
@@ -354,16 +355,6 @@
 
 .field private final settings:Ljp/co/sony/mc/camera/setting/CameraProSetting;
 
-.field private final streamingQucikSettingButtonVisible:Landroidx/lifecycle/LiveData;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Landroidx/lifecycle/LiveData<",
-            "Ljava/lang/Boolean;",
-            ">;"
-        }
-    .end annotation
-.end field
-
 .field private final streamingQuickSettingButtonSrc:Landroidx/lifecycle/LiveData;
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -374,14 +365,214 @@
     .end annotation
 .end field
 
+.field private final streamingQuickSettingButtonVisible:Landroidx/lifecycle/LiveData;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Landroidx/lifecycle/LiveData<",
+            "Ljava/lang/Boolean;",
+            ">;"
+        }
+    .end annotation
+.end field
+
 
 # direct methods
-.method public static synthetic $r8$lambda$o18nnm79gkwjSBiH5wgQZ4Z1i6Q(Ljp/co/sony/mc/camera/view/uistate/BasicModeTopPaneUiState;Landroid/animation/ValueAnimator;)V
+.method public static synthetic $r8$lambda$-AaPI_jglk81XXdAzbpQoZdxWD8(ZLjava/lang/Boolean;Ljava/lang/Boolean;Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;)Z
     .locals 0
 
-    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/view/uistate/BasicModeTopPaneUiState;->startLowLightFadeAnimator$lambda$1$lambda$0(Ljp/co/sony/mc/camera/view/uistate/BasicModeTopPaneUiState;Landroid/animation/ValueAnimator;)V
+    invoke-static {p0, p1, p2, p3}, Ljp/co/sony/mc/camera/view/uistate/BasicModeTopPaneUiState;->isLowLightButtonEnabled$lambda$4(ZLjava/lang/Boolean;Ljava/lang/Boolean;Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;)Z
+
+    move-result p0
+
+    return p0
+.end method
+
+.method public static synthetic $r8$lambda$2J3zOdVmnd8GGuPojLWfKM6oRdo(Ljp/co/sony/mc/camera/view/uistate/BasicModeTopPaneUiState;Landroid/animation/ValueAnimator;)V
+    .locals 0
+
+    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/view/uistate/BasicModeTopPaneUiState;->startLowLightFadeAnimator$lambda$10$lambda$9(Ljp/co/sony/mc/camera/view/uistate/BasicModeTopPaneUiState;Landroid/animation/ValueAnimator;)V
 
     return-void
+.end method
+
+.method public static synthetic $r8$lambda$7aNGYoAHIvLyABA75xePhtg0kdY(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Z)Z
+    .locals 0
+
+    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/view/uistate/BasicModeTopPaneUiState;->isVideoFpsButtonVisible$lambda$14(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Z)Z
+
+    move-result p0
+
+    return p0
+.end method
+
+.method public static synthetic $r8$lambda$8i2dThGhpf46KK-M5rHCabSAwFQ(Ljp/co/sony/mc/camera/view/uistate/BasicModeTopPaneUiState$LowLightButtonState;)I
+    .locals 0
+
+    invoke-static {p0}, Ljp/co/sony/mc/camera/view/uistate/BasicModeTopPaneUiState;->lowLightButtonSrc$lambda$2(Ljp/co/sony/mc/camera/view/uistate/BasicModeTopPaneUiState$LowLightButtonState;)I
+
+    move-result p0
+
+    return p0
+.end method
+
+.method public static synthetic $r8$lambda$92nYGQovPRsT2PdIHHL1G79P8qk(Ljava/lang/Float;Ljp/co/sony/mc/camera/configuration/parameters/LowLightMode;)I
+    .locals 0
+
+    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/view/uistate/BasicModeTopPaneUiState;->lowLightButtonVisibility$lambda$7(Ljava/lang/Float;Ljp/co/sony/mc/camera/configuration/parameters/LowLightMode;)I
+
+    move-result p0
+
+    return p0
+.end method
+
+.method public static synthetic $r8$lambda$A3rQedpntb7Wm8F5n90LnHbOYs8(Ljp/co/sony/mc/camera/view/uistate/BasicModeMenuType;)I
+    .locals 0
+
+    invoke-static {p0}, Ljp/co/sony/mc/camera/view/uistate/BasicModeTopPaneUiState;->streamingQuickSettingButtonSrc$lambda$25(Ljp/co/sony/mc/camera/view/uistate/BasicModeMenuType;)I
+
+    move-result p0
+
+    return p0
+.end method
+
+.method public static synthetic $r8$lambda$IX4ZJLKXj5902khnKQDRPxNVeZY(Ljp/co/sony/mc/camera/configuration/parameters/LowLightMode;Ljava/lang/Boolean;)I
+    .locals 0
+
+    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/view/uistate/BasicModeTopPaneUiState;->lowLightButtonContentDescription$lambda$3(Ljp/co/sony/mc/camera/configuration/parameters/LowLightMode;Ljava/lang/Boolean;)I
+
+    move-result p0
+
+    return p0
+.end method
+
+.method public static synthetic $r8$lambda$MFVjQbnyvG-IfvaoCnt-xXdR0Kw(ZZZ)Z
+    .locals 0
+
+    invoke-static {p0, p1, p2}, Ljp/co/sony/mc/camera/view/uistate/BasicModeTopPaneUiState;->isPointButtonVisible$lambda$15(ZZZ)Z
+
+    move-result p0
+
+    return p0
+.end method
+
+.method public static synthetic $r8$lambda$T-HFGl58_S8GfFnmOH4p_XEnSXI(ZZ)Z
+    .locals 0
+
+    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/view/uistate/BasicModeTopPaneUiState;->streamingQuickSettingButtonVisible$lambda$26(ZZ)Z
+
+    move-result p0
+
+    return p0
+.end method
+
+.method public static synthetic $r8$lambda$W0xHL5L-dtUIBHJmoylhJyEcoX8(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Z)Z
+    .locals 0
+
+    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/view/uistate/BasicModeTopPaneUiState;->isVideoSizeButtonVisible$lambda$12(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Z)Z
+
+    move-result p0
+
+    return p0
+.end method
+
+.method public static synthetic $r8$lambda$XcawaeuN43fwKrhDYhIXxcdLCWQ(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Ljava/lang/Float;Z)Ljava/lang/Float;
+    .locals 0
+
+    invoke-static {p0, p1, p2}, Ljp/co/sony/mc/camera/view/uistate/BasicModeTopPaneUiState;->lowLightButtonAlpha$lambda$6(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Ljava/lang/Float;Z)Ljava/lang/Float;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method public static synthetic $r8$lambda$cMOrHqDjVLb1IZ3_sPEAncdzuMU(Ljp/co/sony/mc/camera/configuration/parameters/LowLightMode;Ljava/lang/Boolean;)Ljp/co/sony/mc/camera/view/uistate/BasicModeTopPaneUiState$LowLightButtonState;
+    .locals 0
+
+    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/view/uistate/BasicModeTopPaneUiState;->lowLightButtonState$lambda$1(Ljp/co/sony/mc/camera/configuration/parameters/LowLightMode;Ljava/lang/Boolean;)Ljp/co/sony/mc/camera/view/uistate/BasicModeTopPaneUiState$LowLightButtonState;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method public static synthetic $r8$lambda$gHENnaEkZ1r67XLnQU3qIifdYOE(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Z)Z
+    .locals 0
+
+    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/view/uistate/BasicModeTopPaneUiState;->isVideoSpeedRatioButtonVisible$lambda$13(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Z)Z
+
+    move-result p0
+
+    return p0
+.end method
+
+.method public static synthetic $r8$lambda$krDy08tz0oXqU0UM_mEjaiPGCJI(ZLjp/co/sony/mc/camera/configuration/parameters/CapturingMode;)Z
+    .locals 0
+
+    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/view/uistate/BasicModeTopPaneUiState;->isVideoSpeedRatioButtonEnabled$lambda$18(ZLjp/co/sony/mc/camera/configuration/parameters/CapturingMode;)Z
+
+    move-result p0
+
+    return p0
+.end method
+
+.method public static synthetic $r8$lambda$l6jL6MBLQrFxMyjK4FfG1EdNSEM(ZLjp/co/sony/mc/camera/view/uistate/BasicModeTopPaneUiState$LowLightButtonState;)Z
+    .locals 0
+
+    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/view/uistate/BasicModeTopPaneUiState;->isLowLightButtonClickable$lambda$5(ZLjp/co/sony/mc/camera/view/uistate/BasicModeTopPaneUiState$LowLightButtonState;)Z
+
+    move-result p0
+
+    return p0
+.end method
+
+.method public static synthetic $r8$lambda$mfnNBkGd8yyScB4s8ClRjsl75qA(ZLjp/co/sony/mc/camera/setting/SettingAppearance;)Z
+    .locals 0
+
+    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/view/uistate/BasicModeTopPaneUiState;->isVideoSizeButtonEnabled$lambda$16(ZLjp/co/sony/mc/camera/setting/SettingAppearance;)Z
+
+    move-result p0
+
+    return p0
+.end method
+
+.method public static synthetic $r8$lambda$nmChGhYq-Lea4kT5mFi3Ilyo3GI(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;ZLjava/lang/Boolean;)Z
+    .locals 0
+
+    invoke-static {p0, p1, p2}, Ljp/co/sony/mc/camera/view/uistate/BasicModeTopPaneUiState;->quickSettingButtonEnable$lambda$24(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;ZLjava/lang/Boolean;)Z
+
+    move-result p0
+
+    return p0
+.end method
+
+.method public static synthetic $r8$lambda$u1bo3IAgPYzjHDHSlo9mMwLv5qc(ZLjp/co/sony/mc/camera/setting/SettingAppearance;)Z
+    .locals 0
+
+    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/view/uistate/BasicModeTopPaneUiState;->isVideoFpsButtonEnabled$lambda$17(ZLjp/co/sony/mc/camera/setting/SettingAppearance;)Z
+
+    move-result p0
+
+    return p0
+.end method
+
+.method public static synthetic $r8$lambda$wdWhek58bz8Pr8AVtUASWC3yHbg(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;)Z
+    .locals 0
+
+    invoke-static {p0}, Ljp/co/sony/mc/camera/view/uistate/BasicModeTopPaneUiState;->isVideoFpsButtonClickable$lambda$19(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;)Z
+
+    move-result p0
+
+    return p0
+.end method
+
+.method public static synthetic $r8$lambda$xo78iPQ6YzOpr2c32GBmn0wJpZY(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Z)Z
+    .locals 0
+
+    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/view/uistate/BasicModeTopPaneUiState;->isGoogleLensVisible$lambda$0(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Z)Z
+
+    move-result p0
+
+    return p0
 .end method
 
 .method static constructor <clinit>()V
@@ -409,67 +600,67 @@
 
     invoke-static {p4, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 30
+    .line 32
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 31
+    .line 33
     iput-object p1, p0, Ljp/co/sony/mc/camera/view/uistate/BasicModeTopPaneUiState;->basicModeCommonUiState:Ljp/co/sony/mc/camera/view/uistate/BasicModeCommonUiState;
 
-    .line 32
+    .line 34
     iput-object p2, p0, Ljp/co/sony/mc/camera/view/uistate/BasicModeTopPaneUiState;->cameraStatusModel:Ljp/co/sony/mc/camera/view/viewmodel/CameraStatusModel;
 
-    .line 33
+    .line 35
     iput-object p3, p0, Ljp/co/sony/mc/camera/view/uistate/BasicModeTopPaneUiState;->cameraSettingsModel:Ljp/co/sony/mc/camera/view/viewmodel/CameraSettingsModel;
 
-    .line 34
+    .line 36
     iput-object p4, p0, Ljp/co/sony/mc/camera/view/uistate/BasicModeTopPaneUiState;->launcherModel:Ljp/co/sony/mc/camera/view/viewmodel/LauncherModel;
 
-    .line 39
+    .line 41
     invoke-static {}, Ljp/co/sony/mc/camera/setting/CameraProSetting;->getInstance()Ljp/co/sony/mc/camera/setting/CameraProSetting;
 
     move-result-object v0
 
     iput-object v0, p0, Ljp/co/sony/mc/camera/view/uistate/BasicModeTopPaneUiState;->settings:Ljp/co/sony/mc/camera/setting/CameraProSetting;
 
-    .line 43
+    .line 45
     invoke-virtual {p2}, Ljp/co/sony/mc/camera/view/viewmodel/CameraStatusModel;->getPreviewing()Landroidx/lifecycle/LiveData;
 
     move-result-object v0
 
     iput-object v0, p0, Ljp/co/sony/mc/camera/view/uistate/BasicModeTopPaneUiState;->isGoogleLensEnabled:Landroidx/lifecycle/LiveData;
 
-    .line 44
+    .line 46
     invoke-virtual {p2}, Ljp/co/sony/mc/camera/view/viewmodel/CameraStatusModel;->getReady()Landroidx/lifecycle/LiveData;
 
     move-result-object v0
 
     iput-object v0, p0, Ljp/co/sony/mc/camera/view/uistate/BasicModeTopPaneUiState;->isGoogleLensClickable:Landroidx/lifecycle/LiveData;
 
-    .line 45
+    .line 47
     sget-object v0, Ljp/co/sony/mc/camera/view/viewmodel/LiveDataMediators;->INSTANCE:Ljp/co/sony/mc/camera/view/viewmodel/LiveDataMediators;
 
-    .line 46
+    .line 48
     invoke-virtual {p3}, Ljp/co/sony/mc/camera/view/viewmodel/CameraSettingsModel;->getCapturingMode()Landroidx/lifecycle/LiveData;
 
     move-result-object v1
 
-    .line 47
+    .line 49
     invoke-virtual {p4}, Ljp/co/sony/mc/camera/view/viewmodel/LauncherModel;->getAvailableGoogleLens()Landroidx/lifecycle/LiveData;
 
     move-result-object p4
 
-    .line 45
-    sget-object v2, Ljp/co/sony/mc/camera/view/uistate/BasicModeTopPaneUiState$isGoogleLensVisible$1;->INSTANCE:Ljp/co/sony/mc/camera/view/uistate/BasicModeTopPaneUiState$isGoogleLensVisible$1;
+    new-instance v2, Ljp/co/sony/mc/camera/view/uistate/BasicModeTopPaneUiState$$ExternalSyntheticLambda0;
 
-    check-cast v2, Lkotlin/jvm/functions/Function2;
+    invoke-direct {v2}, Ljp/co/sony/mc/camera/view/uistate/BasicModeTopPaneUiState$$ExternalSyntheticLambda0;-><init>()V
 
+    .line 47
     invoke-virtual {v0, v1, p4, v2}, Ljp/co/sony/mc/camera/view/viewmodel/LiveDataMediators;->notNulls(Landroidx/lifecycle/LiveData;Landroidx/lifecycle/LiveData;Lkotlin/jvm/functions/Function2;)Landroidx/lifecycle/LiveData;
 
     move-result-object p4
 
     iput-object p4, p0, Ljp/co/sony/mc/camera/view/uistate/BasicModeTopPaneUiState;->isGoogleLensVisible:Landroidx/lifecycle/LiveData;
 
-    .line 57
+    .line 59
     new-instance p4, Landroidx/lifecycle/MutableLiveData;
 
     const/4 v0, 0x0
@@ -482,34 +673,34 @@
 
     iput-object p4, p0, Ljp/co/sony/mc/camera/view/uistate/BasicModeTopPaneUiState;->_isLowLightStateActive:Landroidx/lifecycle/MutableLiveData;
 
-    .line 59
+    .line 61
     sget-object v0, Ljp/co/sony/mc/camera/view/viewmodel/LiveDataMediators;->INSTANCE:Ljp/co/sony/mc/camera/view/viewmodel/LiveDataMediators;
 
-    .line 60
+    .line 62
     invoke-virtual {p3}, Ljp/co/sony/mc/camera/view/viewmodel/CameraSettingsModel;->getLowLightMode()Landroidx/lifecycle/LiveData;
 
     move-result-object v1
 
-    .line 61
+    .line 63
     move-object v2, p4
 
     check-cast v2, Landroidx/lifecycle/LiveData;
 
-    .line 59
-    sget-object v3, Ljp/co/sony/mc/camera/view/uistate/BasicModeTopPaneUiState$lowLightButtonState$1;->INSTANCE:Ljp/co/sony/mc/camera/view/uistate/BasicModeTopPaneUiState$lowLightButtonState$1;
+    new-instance v3, Ljp/co/sony/mc/camera/view/uistate/BasicModeTopPaneUiState$$ExternalSyntheticLambda1;
 
-    check-cast v3, Lkotlin/jvm/functions/Function2;
+    invoke-direct {v3}, Ljp/co/sony/mc/camera/view/uistate/BasicModeTopPaneUiState$$ExternalSyntheticLambda1;-><init>()V
 
+    .line 61
     invoke-virtual {v0, v1, v2, v3}, Ljp/co/sony/mc/camera/view/viewmodel/LiveDataMediators;->notNulls(Landroidx/lifecycle/LiveData;Landroidx/lifecycle/LiveData;Lkotlin/jvm/functions/Function2;)Landroidx/lifecycle/LiveData;
 
     move-result-object v0
 
     iput-object v0, p0, Ljp/co/sony/mc/camera/view/uistate/BasicModeTopPaneUiState;->lowLightButtonState:Landroidx/lifecycle/LiveData;
 
-    .line 74
-    sget-object v1, Ljp/co/sony/mc/camera/view/uistate/BasicModeTopPaneUiState$lowLightButtonSrc$1;->INSTANCE:Ljp/co/sony/mc/camera/view/uistate/BasicModeTopPaneUiState$lowLightButtonSrc$1;
+    .line 76
+    new-instance v1, Ljp/co/sony/mc/camera/view/uistate/BasicModeTopPaneUiState$$ExternalSyntheticLambda2;
 
-    check-cast v1, Lkotlin/jvm/functions/Function1;
+    invoke-direct {v1}, Ljp/co/sony/mc/camera/view/uistate/BasicModeTopPaneUiState$$ExternalSyntheticLambda2;-><init>()V
 
     invoke-static {v0, v1}, Landroidx/lifecycle/Transformations;->map(Landroidx/lifecycle/LiveData;Lkotlin/jvm/functions/Function1;)Landroidx/lifecycle/LiveData;
 
@@ -517,32 +708,32 @@
 
     iput-object v1, p0, Ljp/co/sony/mc/camera/view/uistate/BasicModeTopPaneUiState;->lowLightButtonSrc:Landroidx/lifecycle/LiveData;
 
-    .line 82
+    .line 84
     sget-object v1, Ljp/co/sony/mc/camera/view/viewmodel/LiveDataMediators;->INSTANCE:Ljp/co/sony/mc/camera/view/viewmodel/LiveDataMediators;
 
-    .line 83
+    .line 85
     invoke-virtual {p3}, Ljp/co/sony/mc/camera/view/viewmodel/CameraSettingsModel;->getLowLightMode()Landroidx/lifecycle/LiveData;
 
     move-result-object v2
 
-    .line 84
+    .line 86
     check-cast p4, Landroidx/lifecycle/LiveData;
 
-    .line 82
-    sget-object v3, Ljp/co/sony/mc/camera/view/uistate/BasicModeTopPaneUiState$lowLightButtonContentDescription$1;->INSTANCE:Ljp/co/sony/mc/camera/view/uistate/BasicModeTopPaneUiState$lowLightButtonContentDescription$1;
+    new-instance v3, Ljp/co/sony/mc/camera/view/uistate/BasicModeTopPaneUiState$$ExternalSyntheticLambda3;
 
-    check-cast v3, Lkotlin/jvm/functions/Function2;
+    invoke-direct {v3}, Ljp/co/sony/mc/camera/view/uistate/BasicModeTopPaneUiState$$ExternalSyntheticLambda3;-><init>()V
 
+    .line 84
     invoke-virtual {v1, v2, p4, v3}, Ljp/co/sony/mc/camera/view/viewmodel/LiveDataMediators;->notNulls(Landroidx/lifecycle/LiveData;Landroidx/lifecycle/LiveData;Lkotlin/jvm/functions/Function2;)Landroidx/lifecycle/LiveData;
 
     move-result-object p4
 
     iput-object p4, p0, Ljp/co/sony/mc/camera/view/uistate/BasicModeTopPaneUiState;->lowLightButtonContentDescription:Landroidx/lifecycle/LiveData;
 
-    .line 97
+    .line 99
     sget-object v1, Ljp/co/sony/mc/camera/view/viewmodel/LiveDataMediators;->INSTANCE:Ljp/co/sony/mc/camera/view/viewmodel/LiveDataMediators;
 
-    .line 98
+    .line 100
     invoke-virtual {p2}, Ljp/co/sony/mc/camera/view/viewmodel/CameraStatusModel;->getPreviewing()Landroidx/lifecycle/LiveData;
 
     move-result-object p4
@@ -551,7 +742,7 @@
 
     move-result-object v2
 
-    .line 99
+    .line 101
     invoke-virtual {p2}, Ljp/co/sony/mc/camera/view/viewmodel/CameraStatusModel;->isBurstPostProcessing()Landroidx/lifecycle/LiveData;
 
     move-result-object p4
@@ -560,7 +751,7 @@
 
     move-result-object v3
 
-    .line 100
+    .line 102
     invoke-virtual {p2}, Ljp/co/sony/mc/camera/view/viewmodel/CameraStatusModel;->getSaving()Landroidx/lifecycle/LiveData;
 
     move-result-object p4
@@ -569,7 +760,7 @@
 
     move-result-object v4
 
-    .line 101
+    .line 103
     invoke-virtual {p3}, Ljp/co/sony/mc/camera/view/viewmodel/CameraSettingsModel;->getCapturingMode()Landroidx/lifecycle/LiveData;
 
     move-result-object p4
@@ -578,39 +769,38 @@
 
     move-result-object v5
 
-    .line 97
-    sget-object p4, Ljp/co/sony/mc/camera/view/uistate/BasicModeTopPaneUiState$isLowLightButtonEnabled$1;->INSTANCE:Ljp/co/sony/mc/camera/view/uistate/BasicModeTopPaneUiState$isLowLightButtonEnabled$1;
+    new-instance v6, Ljp/co/sony/mc/camera/view/uistate/BasicModeTopPaneUiState$$ExternalSyntheticLambda4;
 
-    move-object v6, p4
+    invoke-direct {v6}, Ljp/co/sony/mc/camera/view/uistate/BasicModeTopPaneUiState$$ExternalSyntheticLambda4;-><init>()V
 
-    check-cast v6, Lkotlin/jvm/functions/Function4;
-
+    .line 99
     invoke-virtual/range {v1 .. v6}, Ljp/co/sony/mc/camera/view/viewmodel/LiveDataMediators;->notNulls(Landroidx/lifecycle/LiveData;Landroidx/lifecycle/LiveData;Landroidx/lifecycle/LiveData;Landroidx/lifecycle/LiveData;Lkotlin/jvm/functions/Function4;)Landroidx/lifecycle/LiveData;
 
     move-result-object p4
 
     iput-object p4, p0, Ljp/co/sony/mc/camera/view/uistate/BasicModeTopPaneUiState;->isLowLightButtonEnabled:Landroidx/lifecycle/LiveData;
 
-    .line 106
+    .line 108
     sget-object v1, Ljp/co/sony/mc/camera/view/viewmodel/LiveDataMediators;->INSTANCE:Ljp/co/sony/mc/camera/view/viewmodel/LiveDataMediators;
 
-    .line 107
+    .line 109
     invoke-virtual {p2}, Ljp/co/sony/mc/camera/view/viewmodel/CameraStatusModel;->getReady()Landroidx/lifecycle/LiveData;
 
     move-result-object v2
 
-    .line 106
-    sget-object v3, Ljp/co/sony/mc/camera/view/uistate/BasicModeTopPaneUiState$isLowLightButtonClickable$1;->INSTANCE:Ljp/co/sony/mc/camera/view/uistate/BasicModeTopPaneUiState$isLowLightButtonClickable$1;
+    .line 110
+    new-instance v3, Ljp/co/sony/mc/camera/view/uistate/BasicModeTopPaneUiState$$ExternalSyntheticLambda5;
 
-    check-cast v3, Lkotlin/jvm/functions/Function2;
+    invoke-direct {v3}, Ljp/co/sony/mc/camera/view/uistate/BasicModeTopPaneUiState$$ExternalSyntheticLambda5;-><init>()V
 
+    .line 108
     invoke-virtual {v1, v2, v0, v3}, Ljp/co/sony/mc/camera/view/viewmodel/LiveDataMediators;->notNulls(Landroidx/lifecycle/LiveData;Landroidx/lifecycle/LiveData;Lkotlin/jvm/functions/Function2;)Landroidx/lifecycle/LiveData;
 
     move-result-object v0
 
     iput-object v0, p0, Ljp/co/sony/mc/camera/view/uistate/BasicModeTopPaneUiState;->isLowLightButtonClickable:Landroidx/lifecycle/LiveData;
 
-    .line 113
+    .line 115
     new-instance v0, Landroidx/lifecycle/MutableLiveData;
 
     const/4 v1, 0x0
@@ -623,202 +813,224 @@
 
     iput-object v0, p0, Ljp/co/sony/mc/camera/view/uistate/BasicModeTopPaneUiState;->_lowLightButtonAlpha:Landroidx/lifecycle/MutableLiveData;
 
-    .line 114
+    .line 116
     sget-object v1, Ljp/co/sony/mc/camera/view/viewmodel/LiveDataMediators;->INSTANCE:Ljp/co/sony/mc/camera/view/viewmodel/LiveDataMediators;
 
-    .line 115
+    .line 117
     invoke-virtual {p3}, Ljp/co/sony/mc/camera/view/viewmodel/CameraSettingsModel;->getCapturingMode()Landroidx/lifecycle/LiveData;
 
     move-result-object v2
 
-    .line 116
+    .line 118
     move-object v3, v0
 
     check-cast v3, Landroidx/lifecycle/LiveData;
 
-    .line 114
-    sget-object v4, Ljp/co/sony/mc/camera/view/uistate/BasicModeTopPaneUiState$lowLightButtonAlpha$1;->INSTANCE:Ljp/co/sony/mc/camera/view/uistate/BasicModeTopPaneUiState$lowLightButtonAlpha$1;
+    .line 119
+    new-instance v4, Ljp/co/sony/mc/camera/view/uistate/BasicModeTopPaneUiState$$ExternalSyntheticLambda6;
 
-    check-cast v4, Lkotlin/jvm/functions/Function3;
+    invoke-direct {v4}, Ljp/co/sony/mc/camera/view/uistate/BasicModeTopPaneUiState$$ExternalSyntheticLambda6;-><init>()V
 
+    .line 116
     invoke-virtual {v1, v2, v3, p4, v4}, Ljp/co/sony/mc/camera/view/viewmodel/LiveDataMediators;->notNulls(Landroidx/lifecycle/LiveData;Landroidx/lifecycle/LiveData;Landroidx/lifecycle/LiveData;Lkotlin/jvm/functions/Function3;)Landroidx/lifecycle/LiveData;
 
     move-result-object p4
 
     iput-object p4, p0, Ljp/co/sony/mc/camera/view/uistate/BasicModeTopPaneUiState;->lowLightButtonAlpha:Landroidx/lifecycle/LiveData;
 
-    .line 128
+    .line 130
     sget-object p4, Ljp/co/sony/mc/camera/view/viewmodel/LiveDataMediators;->INSTANCE:Ljp/co/sony/mc/camera/view/viewmodel/LiveDataMediators;
 
-    .line 129
+    .line 131
     check-cast v0, Landroidx/lifecycle/LiveData;
 
-    .line 130
+    .line 132
     invoke-virtual {p3}, Ljp/co/sony/mc/camera/view/viewmodel/CameraSettingsModel;->getLowLightMode()Landroidx/lifecycle/LiveData;
 
     move-result-object v1
 
-    .line 128
-    sget-object v2, Ljp/co/sony/mc/camera/view/uistate/BasicModeTopPaneUiState$lowLightButtonVisibility$1;->INSTANCE:Ljp/co/sony/mc/camera/view/uistate/BasicModeTopPaneUiState$lowLightButtonVisibility$1;
+    new-instance v2, Ljp/co/sony/mc/camera/view/uistate/BasicModeTopPaneUiState$$ExternalSyntheticLambda7;
 
-    check-cast v2, Lkotlin/jvm/functions/Function2;
+    invoke-direct {v2}, Ljp/co/sony/mc/camera/view/uistate/BasicModeTopPaneUiState$$ExternalSyntheticLambda7;-><init>()V
 
+    .line 130
     invoke-virtual {p4, v0, v1, v2}, Ljp/co/sony/mc/camera/view/viewmodel/LiveDataMediators;->notNulls(Landroidx/lifecycle/LiveData;Landroidx/lifecycle/LiveData;Lkotlin/jvm/functions/Function2;)Landroidx/lifecycle/LiveData;
 
     move-result-object p4
 
     iput-object p4, p0, Ljp/co/sony/mc/camera/view/uistate/BasicModeTopPaneUiState;->lowLightButtonVisibility:Landroidx/lifecycle/LiveData;
 
-    .line 221
+    .line 225
     sget-object p4, Ljp/co/sony/mc/camera/view/viewmodel/LiveDataMediators;->INSTANCE:Ljp/co/sony/mc/camera/view/viewmodel/LiveDataMediators;
 
-    .line 222
+    .line 226
     invoke-virtual {p3}, Ljp/co/sony/mc/camera/view/viewmodel/CameraSettingsModel;->getCapturingMode()Landroidx/lifecycle/LiveData;
 
     move-result-object v0
 
-    .line 223
+    .line 227
     invoke-virtual {p2}, Ljp/co/sony/mc/camera/view/viewmodel/CameraStatusModel;->getRecording()Landroidx/lifecycle/LiveData;
 
     move-result-object v1
 
-    .line 221
-    sget-object v2, Ljp/co/sony/mc/camera/view/uistate/BasicModeTopPaneUiState$isVideoSizeButtonVisible$1;->INSTANCE:Ljp/co/sony/mc/camera/view/uistate/BasicModeTopPaneUiState$isVideoSizeButtonVisible$1;
+    new-instance v2, Ljp/co/sony/mc/camera/view/uistate/BasicModeTopPaneUiState$$ExternalSyntheticLambda8;
 
-    check-cast v2, Lkotlin/jvm/functions/Function2;
+    invoke-direct {v2}, Ljp/co/sony/mc/camera/view/uistate/BasicModeTopPaneUiState$$ExternalSyntheticLambda8;-><init>()V
 
+    .line 225
     invoke-virtual {p4, v0, v1, v2}, Ljp/co/sony/mc/camera/view/viewmodel/LiveDataMediators;->notNulls(Landroidx/lifecycle/LiveData;Landroidx/lifecycle/LiveData;Lkotlin/jvm/functions/Function2;)Landroidx/lifecycle/LiveData;
 
     move-result-object p4
 
     iput-object p4, p0, Ljp/co/sony/mc/camera/view/uistate/BasicModeTopPaneUiState;->isVideoSizeButtonVisible:Landroidx/lifecycle/LiveData;
 
-    .line 227
+    .line 231
     sget-object v0, Ljp/co/sony/mc/camera/view/viewmodel/LiveDataMediators;->INSTANCE:Ljp/co/sony/mc/camera/view/viewmodel/LiveDataMediators;
 
-    .line 228
+    .line 232
     invoke-virtual {p3}, Ljp/co/sony/mc/camera/view/viewmodel/CameraSettingsModel;->getCapturingMode()Landroidx/lifecycle/LiveData;
 
     move-result-object v1
 
-    .line 229
+    .line 233
     invoke-virtual {p2}, Ljp/co/sony/mc/camera/view/viewmodel/CameraStatusModel;->getRecording()Landroidx/lifecycle/LiveData;
 
     move-result-object v2
 
-    .line 227
-    sget-object v3, Ljp/co/sony/mc/camera/view/uistate/BasicModeTopPaneUiState$isVideoSpeedRatioButtonVisible$1;->INSTANCE:Ljp/co/sony/mc/camera/view/uistate/BasicModeTopPaneUiState$isVideoSpeedRatioButtonVisible$1;
+    new-instance v3, Ljp/co/sony/mc/camera/view/uistate/BasicModeTopPaneUiState$$ExternalSyntheticLambda9;
 
-    check-cast v3, Lkotlin/jvm/functions/Function2;
+    invoke-direct {v3}, Ljp/co/sony/mc/camera/view/uistate/BasicModeTopPaneUiState$$ExternalSyntheticLambda9;-><init>()V
 
+    .line 231
     invoke-virtual {v0, v1, v2, v3}, Ljp/co/sony/mc/camera/view/viewmodel/LiveDataMediators;->notNulls(Landroidx/lifecycle/LiveData;Landroidx/lifecycle/LiveData;Lkotlin/jvm/functions/Function2;)Landroidx/lifecycle/LiveData;
 
     move-result-object v0
 
     iput-object v0, p0, Ljp/co/sony/mc/camera/view/uistate/BasicModeTopPaneUiState;->isVideoSpeedRatioButtonVisible:Landroidx/lifecycle/LiveData;
 
-    .line 233
+    .line 237
     sget-object v1, Ljp/co/sony/mc/camera/view/viewmodel/LiveDataMediators;->INSTANCE:Ljp/co/sony/mc/camera/view/viewmodel/LiveDataMediators;
 
-    .line 234
+    .line 238
     invoke-virtual {p3}, Ljp/co/sony/mc/camera/view/viewmodel/CameraSettingsModel;->getCapturingMode()Landroidx/lifecycle/LiveData;
 
     move-result-object v2
 
-    .line 235
+    .line 239
     invoke-virtual {p2}, Ljp/co/sony/mc/camera/view/viewmodel/CameraStatusModel;->getRecording()Landroidx/lifecycle/LiveData;
 
     move-result-object v3
 
-    .line 233
-    sget-object v4, Ljp/co/sony/mc/camera/view/uistate/BasicModeTopPaneUiState$isVideoFpsButtonVisible$1;->INSTANCE:Ljp/co/sony/mc/camera/view/uistate/BasicModeTopPaneUiState$isVideoFpsButtonVisible$1;
+    new-instance v4, Ljp/co/sony/mc/camera/view/uistate/BasicModeTopPaneUiState$$ExternalSyntheticLambda11;
 
-    check-cast v4, Lkotlin/jvm/functions/Function2;
+    invoke-direct {v4}, Ljp/co/sony/mc/camera/view/uistate/BasicModeTopPaneUiState$$ExternalSyntheticLambda11;-><init>()V
 
+    .line 237
     invoke-virtual {v1, v2, v3, v4}, Ljp/co/sony/mc/camera/view/viewmodel/LiveDataMediators;->notNulls(Landroidx/lifecycle/LiveData;Landroidx/lifecycle/LiveData;Lkotlin/jvm/functions/Function2;)Landroidx/lifecycle/LiveData;
 
     move-result-object v1
 
     iput-object v1, p0, Ljp/co/sony/mc/camera/view/uistate/BasicModeTopPaneUiState;->isVideoFpsButtonVisible:Landroidx/lifecycle/LiveData;
 
-    .line 240
+    .line 244
     sget-object v2, Ljp/co/sony/mc/camera/view/viewmodel/LiveDataMediators;->INSTANCE:Ljp/co/sony/mc/camera/view/viewmodel/LiveDataMediators;
 
-    sget-object v3, Ljp/co/sony/mc/camera/view/uistate/BasicModeTopPaneUiState$isPointButtonVisible$1;->INSTANCE:Ljp/co/sony/mc/camera/view/uistate/BasicModeTopPaneUiState$isPointButtonVisible$1;
+    .line 247
+    new-instance v3, Ljp/co/sony/mc/camera/view/uistate/BasicModeTopPaneUiState$$ExternalSyntheticLambda12;
 
-    check-cast v3, Lkotlin/jvm/functions/Function3;
+    invoke-direct {v3}, Ljp/co/sony/mc/camera/view/uistate/BasicModeTopPaneUiState$$ExternalSyntheticLambda12;-><init>()V
 
+    .line 244
     invoke-virtual {v2, p4, v1, v0, v3}, Ljp/co/sony/mc/camera/view/viewmodel/LiveDataMediators;->notNulls(Landroidx/lifecycle/LiveData;Landroidx/lifecycle/LiveData;Landroidx/lifecycle/LiveData;Lkotlin/jvm/functions/Function3;)Landroidx/lifecycle/LiveData;
 
     move-result-object p4
 
     iput-object p4, p0, Ljp/co/sony/mc/camera/view/uistate/BasicModeTopPaneUiState;->isPointButtonVisible:Landroidx/lifecycle/LiveData;
 
-    .line 247
+    .line 251
+    sget-object p4, Ljp/co/sony/mc/camera/view/viewmodel/LiveDataMediators;->INSTANCE:Ljp/co/sony/mc/camera/view/viewmodel/LiveDataMediators;
+
+    .line 252
     invoke-virtual {p2}, Ljp/co/sony/mc/camera/view/viewmodel/CameraStatusModel;->getPreviewing()Landroidx/lifecycle/LiveData;
+
+    move-result-object v0
+
+    .line 253
+    invoke-virtual {p3}, Ljp/co/sony/mc/camera/view/viewmodel/CameraSettingsModel;->getVideoSizeAppearance()Landroidx/lifecycle/MediatorLiveData;
+
+    move-result-object v1
+
+    check-cast v1, Landroidx/lifecycle/LiveData;
+
+    new-instance v2, Ljp/co/sony/mc/camera/view/uistate/BasicModeTopPaneUiState$$ExternalSyntheticLambda13;
+
+    invoke-direct {v2}, Ljp/co/sony/mc/camera/view/uistate/BasicModeTopPaneUiState$$ExternalSyntheticLambda13;-><init>()V
+
+    .line 251
+    invoke-virtual {p4, v0, v1, v2}, Ljp/co/sony/mc/camera/view/viewmodel/LiveDataMediators;->notNulls(Landroidx/lifecycle/LiveData;Landroidx/lifecycle/LiveData;Lkotlin/jvm/functions/Function2;)Landroidx/lifecycle/LiveData;
 
     move-result-object p4
 
     iput-object p4, p0, Ljp/co/sony/mc/camera/view/uistate/BasicModeTopPaneUiState;->isVideoSizeButtonEnabled:Landroidx/lifecycle/LiveData;
 
-    .line 248
+    .line 257
     sget-object p4, Ljp/co/sony/mc/camera/view/viewmodel/LiveDataMediators;->INSTANCE:Ljp/co/sony/mc/camera/view/viewmodel/LiveDataMediators;
 
-    .line 249
+    .line 258
     invoke-virtual {p2}, Ljp/co/sony/mc/camera/view/viewmodel/CameraStatusModel;->getPreviewing()Landroidx/lifecycle/LiveData;
 
     move-result-object v0
 
-    .line 250
+    .line 259
     invoke-virtual {p3}, Ljp/co/sony/mc/camera/view/viewmodel/CameraSettingsModel;->getVideoFpsAppearance()Landroidx/lifecycle/MediatorLiveData;
 
     move-result-object v1
 
     check-cast v1, Landroidx/lifecycle/LiveData;
 
-    .line 248
-    sget-object v2, Ljp/co/sony/mc/camera/view/uistate/BasicModeTopPaneUiState$isVideoFpsButtonEnabled$1;->INSTANCE:Ljp/co/sony/mc/camera/view/uistate/BasicModeTopPaneUiState$isVideoFpsButtonEnabled$1;
+    new-instance v2, Ljp/co/sony/mc/camera/view/uistate/BasicModeTopPaneUiState$$ExternalSyntheticLambda14;
 
-    check-cast v2, Lkotlin/jvm/functions/Function2;
+    invoke-direct {v2}, Ljp/co/sony/mc/camera/view/uistate/BasicModeTopPaneUiState$$ExternalSyntheticLambda14;-><init>()V
 
+    .line 257
     invoke-virtual {p4, v0, v1, v2}, Ljp/co/sony/mc/camera/view/viewmodel/LiveDataMediators;->notNulls(Landroidx/lifecycle/LiveData;Landroidx/lifecycle/LiveData;Lkotlin/jvm/functions/Function2;)Landroidx/lifecycle/LiveData;
 
     move-result-object p4
 
     iput-object p4, p0, Ljp/co/sony/mc/camera/view/uistate/BasicModeTopPaneUiState;->isVideoFpsButtonEnabled:Landroidx/lifecycle/LiveData;
 
-    .line 254
+    .line 263
     sget-object p4, Ljp/co/sony/mc/camera/view/viewmodel/LiveDataMediators;->INSTANCE:Ljp/co/sony/mc/camera/view/viewmodel/LiveDataMediators;
 
-    .line 255
+    .line 264
     invoke-virtual {p2}, Ljp/co/sony/mc/camera/view/viewmodel/CameraStatusModel;->getPreviewing()Landroidx/lifecycle/LiveData;
 
     move-result-object v0
 
-    .line 256
+    .line 265
     invoke-virtual {p3}, Ljp/co/sony/mc/camera/view/viewmodel/CameraSettingsModel;->getCapturingMode()Landroidx/lifecycle/LiveData;
 
     move-result-object v1
 
-    .line 254
-    sget-object v2, Ljp/co/sony/mc/camera/view/uistate/BasicModeTopPaneUiState$isVideoSpeedRatioButtonEnabled$1;->INSTANCE:Ljp/co/sony/mc/camera/view/uistate/BasicModeTopPaneUiState$isVideoSpeedRatioButtonEnabled$1;
+    new-instance v2, Ljp/co/sony/mc/camera/view/uistate/BasicModeTopPaneUiState$$ExternalSyntheticLambda15;
 
-    check-cast v2, Lkotlin/jvm/functions/Function2;
+    invoke-direct {v2}, Ljp/co/sony/mc/camera/view/uistate/BasicModeTopPaneUiState$$ExternalSyntheticLambda15;-><init>()V
 
+    .line 263
     invoke-virtual {p4, v0, v1, v2}, Ljp/co/sony/mc/camera/view/viewmodel/LiveDataMediators;->notNulls(Landroidx/lifecycle/LiveData;Landroidx/lifecycle/LiveData;Lkotlin/jvm/functions/Function2;)Landroidx/lifecycle/LiveData;
 
     move-result-object p4
 
     iput-object p4, p0, Ljp/co/sony/mc/camera/view/uistate/BasicModeTopPaneUiState;->isVideoSpeedRatioButtonEnabled:Landroidx/lifecycle/LiveData;
 
-    .line 260
+    .line 269
     invoke-virtual {p3}, Ljp/co/sony/mc/camera/view/viewmodel/CameraSettingsModel;->getCapturingMode()Landroidx/lifecycle/LiveData;
 
     move-result-object p4
 
-    sget-object v0, Ljp/co/sony/mc/camera/view/uistate/BasicModeTopPaneUiState$isVideoFpsButtonClickable$1;->INSTANCE:Ljp/co/sony/mc/camera/view/uistate/BasicModeTopPaneUiState$isVideoFpsButtonClickable$1;
+    new-instance v0, Ljp/co/sony/mc/camera/view/uistate/BasicModeTopPaneUiState$$ExternalSyntheticLambda16;
 
-    check-cast v0, Lkotlin/jvm/functions/Function1;
+    invoke-direct {v0}, Ljp/co/sony/mc/camera/view/uistate/BasicModeTopPaneUiState$$ExternalSyntheticLambda16;-><init>()V
 
     invoke-static {p4, v0}, Landroidx/lifecycle/Transformations;->map(Landroidx/lifecycle/LiveData;Lkotlin/jvm/functions/Function1;)Landroidx/lifecycle/LiveData;
 
@@ -826,50 +1038,50 @@
 
     iput-object p4, p0, Ljp/co/sony/mc/camera/view/uistate/BasicModeTopPaneUiState;->isVideoFpsButtonClickable:Landroidx/lifecycle/LiveData;
 
-    .line 261
+    .line 270
     invoke-virtual {p2}, Ljp/co/sony/mc/camera/view/viewmodel/CameraStatusModel;->getPreviewing()Landroidx/lifecycle/LiveData;
 
     move-result-object p4
 
     iput-object p4, p0, Ljp/co/sony/mc/camera/view/uistate/BasicModeTopPaneUiState;->isVideoFormatContainerEnabled:Landroidx/lifecycle/LiveData;
 
-    .line 298
+    .line 303
     sget-object p4, Ljp/co/sony/mc/camera/view/viewmodel/LiveDataMediators;->INSTANCE:Ljp/co/sony/mc/camera/view/viewmodel/LiveDataMediators;
 
-    .line 299
+    .line 304
     invoke-virtual {p3}, Ljp/co/sony/mc/camera/view/viewmodel/CameraSettingsModel;->getCapturingMode()Landroidx/lifecycle/LiveData;
 
     move-result-object v0
 
-    .line 300
+    .line 305
     invoke-virtual {p2}, Ljp/co/sony/mc/camera/view/viewmodel/CameraStatusModel;->getPreviewing()Landroidx/lifecycle/LiveData;
 
     move-result-object v1
 
-    .line 301
+    .line 306
     invoke-virtual {p2}, Ljp/co/sony/mc/camera/view/viewmodel/CameraStatusModel;->isBurstPostProcessing()Landroidx/lifecycle/LiveData;
 
     move-result-object v2
 
-    .line 298
-    sget-object v3, Ljp/co/sony/mc/camera/view/uistate/BasicModeTopPaneUiState$quickSettingButtonEnable$1;->INSTANCE:Ljp/co/sony/mc/camera/view/uistate/BasicModeTopPaneUiState$quickSettingButtonEnable$1;
+    new-instance v3, Ljp/co/sony/mc/camera/view/uistate/BasicModeTopPaneUiState$$ExternalSyntheticLambda17;
 
-    check-cast v3, Lkotlin/jvm/functions/Function3;
+    invoke-direct {v3}, Ljp/co/sony/mc/camera/view/uistate/BasicModeTopPaneUiState$$ExternalSyntheticLambda17;-><init>()V
 
+    .line 303
     invoke-virtual {p4, v0, v1, v2, v3}, Ljp/co/sony/mc/camera/view/viewmodel/LiveDataMediators;->notNulls(Landroidx/lifecycle/LiveData;Landroidx/lifecycle/LiveData;Landroidx/lifecycle/LiveData;Lkotlin/jvm/functions/Function3;)Landroidx/lifecycle/LiveData;
 
     move-result-object p4
 
     iput-object p4, p0, Ljp/co/sony/mc/camera/view/uistate/BasicModeTopPaneUiState;->quickSettingButtonEnable:Landroidx/lifecycle/LiveData;
 
-    .line 306
+    .line 311
     invoke-virtual {p1}, Ljp/co/sony/mc/camera/view/uistate/BasicModeCommonUiState;->getLayoutType()Landroidx/lifecycle/LiveData;
 
     move-result-object p1
 
-    sget-object p4, Ljp/co/sony/mc/camera/view/uistate/BasicModeTopPaneUiState$streamingQuickSettingButtonSrc$1;->INSTANCE:Ljp/co/sony/mc/camera/view/uistate/BasicModeTopPaneUiState$streamingQuickSettingButtonSrc$1;
+    new-instance p4, Ljp/co/sony/mc/camera/view/uistate/BasicModeTopPaneUiState$$ExternalSyntheticLambda18;
 
-    check-cast p4, Lkotlin/jvm/functions/Function1;
+    invoke-direct {p4}, Ljp/co/sony/mc/camera/view/uistate/BasicModeTopPaneUiState$$ExternalSyntheticLambda18;-><init>()V
 
     invoke-static {p1, p4}, Landroidx/lifecycle/Transformations;->map(Landroidx/lifecycle/LiveData;Lkotlin/jvm/functions/Function1;)Landroidx/lifecycle/LiveData;
 
@@ -877,29 +1089,29 @@
 
     iput-object p1, p0, Ljp/co/sony/mc/camera/view/uistate/BasicModeTopPaneUiState;->streamingQuickSettingButtonSrc:Landroidx/lifecycle/LiveData;
 
-    .line 314
+    .line 319
     sget-object p1, Ljp/co/sony/mc/camera/view/viewmodel/LiveDataMediators;->INSTANCE:Ljp/co/sony/mc/camera/view/viewmodel/LiveDataMediators;
 
-    .line 315
+    .line 320
     invoke-virtual {p3}, Ljp/co/sony/mc/camera/view/viewmodel/CameraSettingsModel;->isStreaming()Landroidx/lifecycle/LiveData;
 
     move-result-object p3
 
-    .line 316
+    .line 321
     invoke-virtual {p2}, Ljp/co/sony/mc/camera/view/viewmodel/CameraStatusModel;->getStreaming()Landroidx/lifecycle/LiveData;
 
     move-result-object p2
 
-    .line 314
-    sget-object p4, Ljp/co/sony/mc/camera/view/uistate/BasicModeTopPaneUiState$streamingQucikSettingButtonVisible$1;->INSTANCE:Ljp/co/sony/mc/camera/view/uistate/BasicModeTopPaneUiState$streamingQucikSettingButtonVisible$1;
+    new-instance p4, Ljp/co/sony/mc/camera/view/uistate/BasicModeTopPaneUiState$$ExternalSyntheticLambda19;
 
-    check-cast p4, Lkotlin/jvm/functions/Function2;
+    invoke-direct {p4}, Ljp/co/sony/mc/camera/view/uistate/BasicModeTopPaneUiState$$ExternalSyntheticLambda19;-><init>()V
 
+    .line 319
     invoke-virtual {p1, p3, p2, p4}, Ljp/co/sony/mc/camera/view/viewmodel/LiveDataMediators;->notNulls(Landroidx/lifecycle/LiveData;Landroidx/lifecycle/LiveData;Lkotlin/jvm/functions/Function2;)Landroidx/lifecycle/LiveData;
 
     move-result-object p1
 
-    iput-object p1, p0, Ljp/co/sony/mc/camera/view/uistate/BasicModeTopPaneUiState;->streamingQucikSettingButtonVisible:Landroidx/lifecycle/LiveData;
+    iput-object p1, p0, Ljp/co/sony/mc/camera/view/uistate/BasicModeTopPaneUiState;->streamingQuickSettingButtonVisible:Landroidx/lifecycle/LiveData;
 
     return-void
 .end method
@@ -907,7 +1119,7 @@
 .method private final getSettingChecker()Ljp/co/sony/mc/camera/setting/SettingAppearanceChecker;
     .locals 2
 
-    .line 40
+    .line 42
     new-instance v0, Ljp/co/sony/mc/camera/setting/SettingAppearanceChecker;
 
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/uistate/BasicModeTopPaneUiState;->settings:Ljp/co/sony/mc/camera/setting/CameraProSetting;
@@ -924,7 +1136,7 @@
 .method private final hideLowLightButton()V
     .locals 1
 
-    .line 211
+    .line 215
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/uistate/BasicModeTopPaneUiState;->_lowLightButtonAlpha:Landroidx/lifecycle/MutableLiveData;
 
     const/4 v0, 0x0
@@ -938,10 +1150,510 @@
     return-void
 .end method
 
+.method private static final isGoogleLensVisible$lambda$0(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Z)Z
+    .locals 1
+
+    .line 51
+    sget-object v0, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->PHOTO_BASIC:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
+
+    if-ne p0, v0, :cond_0
+
+    if-eqz p1, :cond_0
+
+    const/4 p0, 0x1
+
+    goto :goto_0
+
+    :cond_0
+    const/4 p0, 0x0
+
+    :goto_0
+    return p0
+.end method
+
+.method private static final isLowLightButtonClickable$lambda$5(ZLjp/co/sony/mc/camera/view/uistate/BasicModeTopPaneUiState$LowLightButtonState;)Z
+    .locals 1
+
+    const-string v0, "lowLightButtonState"
+
+    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+
+    if-eqz p0, :cond_0
+
+    .line 112
+    sget-object p0, Ljp/co/sony/mc/camera/view/uistate/BasicModeTopPaneUiState$LowLightButtonState$AutoInActive;->INSTANCE:Ljp/co/sony/mc/camera/view/uistate/BasicModeTopPaneUiState$LowLightButtonState$AutoInActive;
+
+    invoke-static {p1, p0}, Lkotlin/jvm/internal/Intrinsics;->areEqual(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    move-result p0
+
+    if-nez p0, :cond_0
+
+    const/4 p0, 0x1
+
+    goto :goto_0
+
+    :cond_0
+    const/4 p0, 0x0
+
+    :goto_0
+    return p0
+.end method
+
+.method private static final isLowLightButtonEnabled$lambda$4(ZLjava/lang/Boolean;Ljava/lang/Boolean;Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;)Z
+    .locals 0
+
+    if-eqz p0, :cond_1
+
+    .line 105
+    invoke-virtual {p1}, Ljava/lang/Boolean;->booleanValue()Z
+
+    move-result p0
+
+    if-nez p0, :cond_1
+
+    invoke-virtual {p3}, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->isBokehPhoto()Z
+
+    move-result p0
+
+    if-eqz p0, :cond_0
+
+    invoke-virtual {p2}, Ljava/lang/Boolean;->booleanValue()Z
+
+    move-result p0
+
+    if-nez p0, :cond_1
+
+    :cond_0
+    const/4 p0, 0x1
+
+    goto :goto_0
+
+    :cond_1
+    const/4 p0, 0x0
+
+    :goto_0
+    return p0
+.end method
+
+.method private static final isPointButtonVisible$lambda$15(ZZZ)Z
+    .locals 0
+
+    if-eqz p0, :cond_1
+
+    if-nez p1, :cond_0
+
+    if-eqz p2, :cond_1
+
+    :cond_0
+    const/4 p0, 0x1
+
+    goto :goto_0
+
+    :cond_1
+    const/4 p0, 0x0
+
+    :goto_0
+    return p0
+.end method
+
+.method private static final isVideoFpsButtonClickable$lambda$19(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;)Z
+    .locals 0
+
+    .line 269
+    invoke-virtual {p0}, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->isOneShot()Z
+
+    move-result p0
+
+    xor-int/lit8 p0, p0, 0x1
+
+    return p0
+.end method
+
+.method private static final isVideoFpsButtonEnabled$lambda$17(ZLjp/co/sony/mc/camera/setting/SettingAppearance;)Z
+    .locals 0
+
+    if-eqz p0, :cond_0
+
+    .line 261
+    sget-object p0, Ljp/co/sony/mc/camera/setting/SettingAppearance;->ENABLED:Ljp/co/sony/mc/camera/setting/SettingAppearance;
+
+    if-ne p1, p0, :cond_0
+
+    const/4 p0, 0x1
+
+    goto :goto_0
+
+    :cond_0
+    const/4 p0, 0x0
+
+    :goto_0
+    return p0
+.end method
+
+.method private static final isVideoFpsButtonVisible$lambda$14(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Z)Z
+    .locals 1
+
+    .line 241
+    invoke-virtual {p0}, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->isVideo()Z
+
+    move-result v0
+
+    if-eqz v0, :cond_0
+
+    invoke-virtual {p0}, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->isSlowMotion()Z
+
+    move-result v0
+
+    if-nez v0, :cond_0
+
+    .line 242
+    invoke-virtual {p0}, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->isQuickRecord()Z
+
+    move-result p0
+
+    if-nez p0, :cond_0
+
+    if-nez p1, :cond_0
+
+    const/4 p0, 0x1
+
+    goto :goto_0
+
+    :cond_0
+    const/4 p0, 0x0
+
+    :goto_0
+    return p0
+.end method
+
+.method private static final isVideoSizeButtonEnabled$lambda$16(ZLjp/co/sony/mc/camera/setting/SettingAppearance;)Z
+    .locals 0
+
+    if-eqz p0, :cond_0
+
+    .line 255
+    sget-object p0, Ljp/co/sony/mc/camera/setting/SettingAppearance;->ENABLED:Ljp/co/sony/mc/camera/setting/SettingAppearance;
+
+    if-ne p1, p0, :cond_0
+
+    const/4 p0, 0x1
+
+    goto :goto_0
+
+    :cond_0
+    const/4 p0, 0x0
+
+    :goto_0
+    return p0
+.end method
+
+.method private static final isVideoSizeButtonVisible$lambda$12(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Z)Z
+    .locals 1
+
+    .line 229
+    invoke-virtual {p0}, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->isVideo()Z
+
+    move-result v0
+
+    if-eqz v0, :cond_0
+
+    invoke-virtual {p0}, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->isQuickRecord()Z
+
+    move-result p0
+
+    if-nez p0, :cond_0
+
+    if-nez p1, :cond_0
+
+    const/4 p0, 0x1
+
+    goto :goto_0
+
+    :cond_0
+    const/4 p0, 0x0
+
+    :goto_0
+    return p0
+.end method
+
+.method private static final isVideoSpeedRatioButtonEnabled$lambda$18(ZLjp/co/sony/mc/camera/configuration/parameters/CapturingMode;)Z
+    .locals 0
+
+    if-eqz p0, :cond_0
+
+    .line 267
+    invoke-virtual {p1}, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->isSlowMotion()Z
+
+    move-result p0
+
+    if-nez p0, :cond_0
+
+    const/4 p0, 0x1
+
+    goto :goto_0
+
+    :cond_0
+    const/4 p0, 0x0
+
+    :goto_0
+    return p0
+.end method
+
+.method private static final isVideoSpeedRatioButtonVisible$lambda$13(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Z)Z
+    .locals 0
+
+    .line 235
+    invoke-virtual {p0}, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->isSlowMotion()Z
+
+    move-result p0
+
+    if-eqz p0, :cond_0
+
+    if-nez p1, :cond_0
+
+    const/4 p0, 0x1
+
+    goto :goto_0
+
+    :cond_0
+    const/4 p0, 0x0
+
+    :goto_0
+    return p0
+.end method
+
+.method private static final lowLightButtonAlpha$lambda$6(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Ljava/lang/Float;Z)Ljava/lang/Float;
+    .locals 0
+
+    .line 121
+    invoke-virtual {p0}, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->isVideo()Z
+
+    move-result p0
+
+    if-eqz p0, :cond_0
+
+    const/4 p0, 0x0
+
+    .line 122
+    invoke-static {p0}, Ljava/lang/Float;->valueOf(F)Ljava/lang/Float;
+
+    move-result-object p1
+
+    goto :goto_0
+
+    :cond_0
+    if-eqz p2, :cond_1
+
+    goto :goto_0
+
+    :cond_1
+    const p0, 0x3ecccccd    # 0.4f
+
+    .line 126
+    invoke-static {p0}, Ljava/lang/Float;->valueOf(F)Ljava/lang/Float;
+
+    move-result-object p1
+
+    :goto_0
+    return-object p1
+.end method
+
+.method private static final lowLightButtonContentDescription$lambda$3(Ljp/co/sony/mc/camera/configuration/parameters/LowLightMode;Ljava/lang/Boolean;)I
+    .locals 1
+
+    .line 88
+    sget-object v0, Ljp/co/sony/mc/camera/configuration/parameters/LowLightMode;->AUTO:Ljp/co/sony/mc/camera/configuration/parameters/LowLightMode;
+
+    if-ne p0, v0, :cond_1
+
+    .line 89
+    invoke-virtual {p1}, Ljava/lang/Boolean;->booleanValue()Z
+
+    move-result p0
+
+    if-eqz p0, :cond_0
+
+    const p0, 0x7f1100d4
+
+    goto :goto_0
+
+    :cond_0
+    const p0, 0x7f1100d6
+
+    goto :goto_0
+
+    :cond_1
+    const p0, 0x7f1100d5
+
+    :goto_0
+    return p0
+.end method
+
+.method private static final lowLightButtonSrc$lambda$2(Ljp/co/sony/mc/camera/view/uistate/BasicModeTopPaneUiState$LowLightButtonState;)I
+    .locals 1
+
+    const-string v0, "it"
+
+    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 78
+    sget-object v0, Ljp/co/sony/mc/camera/view/uistate/BasicModeTopPaneUiState$LowLightButtonState$AutoActive;->INSTANCE:Ljp/co/sony/mc/camera/view/uistate/BasicModeTopPaneUiState$LowLightButtonState$AutoActive;
+
+    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->areEqual(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_0
+
+    const p0, 0x7f080243
+
+    goto :goto_0
+
+    .line 79
+    :cond_0
+    sget-object v0, Ljp/co/sony/mc/camera/view/uistate/BasicModeTopPaneUiState$LowLightButtonState$AutoInActive;->INSTANCE:Ljp/co/sony/mc/camera/view/uistate/BasicModeTopPaneUiState$LowLightButtonState$AutoInActive;
+
+    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->areEqual(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_1
+
+    const p0, 0x7f080242
+
+    goto :goto_0
+
+    .line 80
+    :cond_1
+    sget-object v0, Ljp/co/sony/mc/camera/view/uistate/BasicModeTopPaneUiState$LowLightButtonState$Off;->INSTANCE:Ljp/co/sony/mc/camera/view/uistate/BasicModeTopPaneUiState$LowLightButtonState$Off;
+
+    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->areEqual(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    move-result p0
+
+    if-eqz p0, :cond_2
+
+    const p0, 0x7f080245
+
+    :goto_0
+    return p0
+
+    .line 77
+    :cond_2
+    new-instance p0, Lkotlin/NoWhenBranchMatchedException;
+
+    invoke-direct {p0}, Lkotlin/NoWhenBranchMatchedException;-><init>()V
+
+    throw p0
+.end method
+
+.method private static final lowLightButtonState$lambda$1(Ljp/co/sony/mc/camera/configuration/parameters/LowLightMode;Ljava/lang/Boolean;)Ljp/co/sony/mc/camera/view/uistate/BasicModeTopPaneUiState$LowLightButtonState;
+    .locals 1
+
+    .line 65
+    sget-object v0, Ljp/co/sony/mc/camera/configuration/parameters/LowLightMode;->AUTO:Ljp/co/sony/mc/camera/configuration/parameters/LowLightMode;
+
+    if-ne p0, v0, :cond_1
+
+    .line 66
+    invoke-virtual {p1}, Ljava/lang/Boolean;->booleanValue()Z
+
+    move-result p0
+
+    if-eqz p0, :cond_0
+
+    .line 67
+    sget-object p0, Ljp/co/sony/mc/camera/view/uistate/BasicModeTopPaneUiState$LowLightButtonState$AutoActive;->INSTANCE:Ljp/co/sony/mc/camera/view/uistate/BasicModeTopPaneUiState$LowLightButtonState$AutoActive;
+
+    check-cast p0, Ljp/co/sony/mc/camera/view/uistate/BasicModeTopPaneUiState$LowLightButtonState;
+
+    goto :goto_0
+
+    .line 69
+    :cond_0
+    sget-object p0, Ljp/co/sony/mc/camera/view/uistate/BasicModeTopPaneUiState$LowLightButtonState$AutoInActive;->INSTANCE:Ljp/co/sony/mc/camera/view/uistate/BasicModeTopPaneUiState$LowLightButtonState$AutoInActive;
+
+    check-cast p0, Ljp/co/sony/mc/camera/view/uistate/BasicModeTopPaneUiState$LowLightButtonState;
+
+    goto :goto_0
+
+    .line 72
+    :cond_1
+    sget-object p0, Ljp/co/sony/mc/camera/view/uistate/BasicModeTopPaneUiState$LowLightButtonState$Off;->INSTANCE:Ljp/co/sony/mc/camera/view/uistate/BasicModeTopPaneUiState$LowLightButtonState$Off;
+
+    check-cast p0, Ljp/co/sony/mc/camera/view/uistate/BasicModeTopPaneUiState$LowLightButtonState;
+
+    :goto_0
+    return-object p0
+.end method
+
+.method private static final lowLightButtonVisibility$lambda$7(Ljava/lang/Float;Ljp/co/sony/mc/camera/configuration/parameters/LowLightMode;)I
+    .locals 1
+
+    const/4 v0, 0x0
+
+    .line 134
+    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->areEqual(Ljava/lang/Float;F)Z
+
+    move-result p0
+
+    if-nez p0, :cond_0
+
+    const/4 p0, 0x0
+
+    goto :goto_0
+
+    .line 136
+    :cond_0
+    sget-object p0, Ljp/co/sony/mc/camera/configuration/parameters/LowLightMode;->AUTO:Ljp/co/sony/mc/camera/configuration/parameters/LowLightMode;
+
+    if-ne p1, p0, :cond_1
+
+    const/4 p0, 0x4
+
+    goto :goto_0
+
+    :cond_1
+    const/16 p0, 0x8
+
+    :goto_0
+    return p0
+.end method
+
+.method private static final quickSettingButtonEnable$lambda$24(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;ZLjava/lang/Boolean;)Z
+    .locals 0
+
+    .line 308
+    invoke-virtual {p0}, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->isQuickRecord()Z
+
+    move-result p0
+
+    if-nez p0, :cond_0
+
+    if-eqz p1, :cond_0
+
+    invoke-virtual {p2}, Ljava/lang/Boolean;->booleanValue()Z
+
+    move-result p0
+
+    if-nez p0, :cond_0
+
+    const/4 p0, 0x1
+
+    goto :goto_0
+
+    :cond_0
+    const/4 p0, 0x0
+
+    :goto_0
+    return p0
+.end method
+
 .method private final showLowLightButton()V
     .locals 1
 
-    .line 207
+    .line 211
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/uistate/BasicModeTopPaneUiState;->_lowLightButtonAlpha:Landroidx/lifecycle/MutableLiveData;
 
     const/high16 v0, 0x3f800000    # 1.0f
@@ -958,14 +1670,14 @@
 .method private final startLowLightFadeAnimator()V
     .locals 3
 
-    .line 191
+    .line 195
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/uistate/BasicModeTopPaneUiState;->lowLightButtonAnimator:Landroid/animation/ValueAnimator;
 
     if-eqz v0, :cond_0
 
     invoke-virtual {v0}, Landroid/animation/ValueAnimator;->cancel()V
 
-    .line 192
+    .line 196
     :cond_0
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/uistate/BasicModeTopPaneUiState;->lowLightButtonAlpha:Landroidx/lifecycle/LiveData;
 
@@ -1001,26 +1713,26 @@
 
     const-wide/16 v1, 0x1f4
 
-    .line 193
+    .line 197
     invoke-virtual {v0, v1, v2}, Landroid/animation/ValueAnimator;->setDuration(J)Landroid/animation/ValueAnimator;
 
-    .line 194
-    new-instance v1, Ljp/co/sony/mc/camera/view/uistate/BasicModeTopPaneUiState$$ExternalSyntheticLambda0;
+    .line 198
+    new-instance v1, Ljp/co/sony/mc/camera/view/uistate/BasicModeTopPaneUiState$$ExternalSyntheticLambda10;
 
-    invoke-direct {v1, p0}, Ljp/co/sony/mc/camera/view/uistate/BasicModeTopPaneUiState$$ExternalSyntheticLambda0;-><init>(Ljp/co/sony/mc/camera/view/uistate/BasicModeTopPaneUiState;)V
+    invoke-direct {v1, p0}, Ljp/co/sony/mc/camera/view/uistate/BasicModeTopPaneUiState$$ExternalSyntheticLambda10;-><init>(Ljp/co/sony/mc/camera/view/uistate/BasicModeTopPaneUiState;)V
 
     invoke-virtual {v0, v1}, Landroid/animation/ValueAnimator;->addUpdateListener(Landroid/animation/ValueAnimator$AnimatorUpdateListener;)V
 
-    .line 198
+    .line 202
     invoke-virtual {v0}, Landroid/animation/ValueAnimator;->start()V
 
-    .line 192
+    .line 196
     iput-object v0, p0, Ljp/co/sony/mc/camera/view/uistate/BasicModeTopPaneUiState;->lowLightButtonAnimator:Landroid/animation/ValueAnimator;
 
     return-void
 .end method
 
-.method private static final startLowLightFadeAnimator$lambda$1$lambda$0(Ljp/co/sony/mc/camera/view/uistate/BasicModeTopPaneUiState;Landroid/animation/ValueAnimator;)V
+.method private static final startLowLightFadeAnimator$lambda$10$lambda$9(Ljp/co/sony/mc/camera/view/uistate/BasicModeTopPaneUiState;Landroid/animation/ValueAnimator;)V
     .locals 1
 
     const-string/jumbo v0, "this$0"
@@ -1031,7 +1743,7 @@
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 195
+    .line 199
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/uistate/BasicModeTopPaneUiState;->_lowLightButtonAlpha:Landroidx/lifecycle/MutableLiveData;
 
     invoke-virtual {p1}, Landroid/animation/ValueAnimator;->getAnimatedValue()Ljava/lang/Object;
@@ -1052,7 +1764,7 @@
 .method private final stopLowLightFadeAnimator()V
     .locals 0
 
-    .line 203
+    .line 207
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/uistate/BasicModeTopPaneUiState;->lowLightButtonAnimator:Landroid/animation/ValueAnimator;
 
     if-eqz p0, :cond_0
@@ -1061,6 +1773,51 @@
 
     :cond_0
     return-void
+.end method
+
+.method private static final streamingQuickSettingButtonSrc$lambda$25(Ljp/co/sony/mc/camera/view/uistate/BasicModeMenuType;)I
+    .locals 1
+
+    const-string v0, "it"
+
+    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 312
+    sget-object v0, Ljp/co/sony/mc/camera/view/uistate/BasicModeMenuType$StreamingQuickSetting;->INSTANCE:Ljp/co/sony/mc/camera/view/uistate/BasicModeMenuType$StreamingQuickSetting;
+
+    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->areEqual(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    move-result p0
+
+    if-eqz p0, :cond_0
+
+    const p0, 0x7f0802e8
+
+    goto :goto_0
+
+    :cond_0
+    const p0, 0x7f0802e7
+
+    :goto_0
+    return p0
+.end method
+
+.method private static final streamingQuickSettingButtonVisible$lambda$26(ZZ)Z
+    .locals 0
+
+    if-eqz p0, :cond_0
+
+    if-nez p1, :cond_0
+
+    const/4 p0, 0x1
+
+    goto :goto_0
+
+    :cond_0
+    const/4 p0, 0x0
+
+    :goto_0
+    return p0
 .end method
 
 
@@ -1076,7 +1833,7 @@
         }
     .end annotation
 
-    .line 114
+    .line 116
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/uistate/BasicModeTopPaneUiState;->lowLightButtonAlpha:Landroidx/lifecycle/LiveData;
 
     return-object p0
@@ -1093,7 +1850,7 @@
         }
     .end annotation
 
-    .line 82
+    .line 84
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/uistate/BasicModeTopPaneUiState;->lowLightButtonContentDescription:Landroidx/lifecycle/LiveData;
 
     return-object p0
@@ -1110,7 +1867,7 @@
         }
     .end annotation
 
-    .line 74
+    .line 76
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/uistate/BasicModeTopPaneUiState;->lowLightButtonSrc:Landroidx/lifecycle/LiveData;
 
     return-object p0
@@ -1127,7 +1884,7 @@
         }
     .end annotation
 
-    .line 128
+    .line 130
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/uistate/BasicModeTopPaneUiState;->lowLightButtonVisibility:Landroidx/lifecycle/LiveData;
 
     return-object p0
@@ -1136,7 +1893,7 @@
 .method public final getOperator()Ljp/co/sony/mc/camera/view/CameraOperator;
     .locals 0
 
-    .line 37
+    .line 39
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/uistate/BasicModeTopPaneUiState;->operator:Ljp/co/sony/mc/camera/view/CameraOperator;
 
     return-object p0
@@ -1153,25 +1910,8 @@
         }
     .end annotation
 
-    .line 298
+    .line 303
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/uistate/BasicModeTopPaneUiState;->quickSettingButtonEnable:Landroidx/lifecycle/LiveData;
-
-    return-object p0
-.end method
-
-.method public final getStreamingQucikSettingButtonVisible()Landroidx/lifecycle/LiveData;
-    .locals 0
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "()",
-            "Landroidx/lifecycle/LiveData<",
-            "Ljava/lang/Boolean;",
-            ">;"
-        }
-    .end annotation
-
-    .line 314
-    iget-object p0, p0, Ljp/co/sony/mc/camera/view/uistate/BasicModeTopPaneUiState;->streamingQucikSettingButtonVisible:Landroidx/lifecycle/LiveData;
 
     return-object p0
 .end method
@@ -1187,8 +1927,25 @@
         }
     .end annotation
 
-    .line 306
+    .line 311
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/uistate/BasicModeTopPaneUiState;->streamingQuickSettingButtonSrc:Landroidx/lifecycle/LiveData;
+
+    return-object p0
+.end method
+
+.method public final getStreamingQuickSettingButtonVisible()Landroidx/lifecycle/LiveData;
+    .locals 0
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()",
+            "Landroidx/lifecycle/LiveData<",
+            "Ljava/lang/Boolean;",
+            ">;"
+        }
+    .end annotation
+
+    .line 319
+    iget-object p0, p0, Ljp/co/sony/mc/camera/view/uistate/BasicModeTopPaneUiState;->streamingQuickSettingButtonVisible:Landroidx/lifecycle/LiveData;
 
     return-object p0
 .end method
@@ -1204,7 +1961,7 @@
         }
     .end annotation
 
-    .line 44
+    .line 46
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/uistate/BasicModeTopPaneUiState;->isGoogleLensClickable:Landroidx/lifecycle/LiveData;
 
     return-object p0
@@ -1221,7 +1978,7 @@
         }
     .end annotation
 
-    .line 43
+    .line 45
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/uistate/BasicModeTopPaneUiState;->isGoogleLensEnabled:Landroidx/lifecycle/LiveData;
 
     return-object p0
@@ -1238,7 +1995,7 @@
         }
     .end annotation
 
-    .line 45
+    .line 47
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/uistate/BasicModeTopPaneUiState;->isGoogleLensVisible:Landroidx/lifecycle/LiveData;
 
     return-object p0
@@ -1255,7 +2012,7 @@
         }
     .end annotation
 
-    .line 106
+    .line 108
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/uistate/BasicModeTopPaneUiState;->isLowLightButtonClickable:Landroidx/lifecycle/LiveData;
 
     return-object p0
@@ -1272,7 +2029,7 @@
         }
     .end annotation
 
-    .line 97
+    .line 99
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/uistate/BasicModeTopPaneUiState;->isLowLightButtonEnabled:Landroidx/lifecycle/LiveData;
 
     return-object p0
@@ -1289,7 +2046,7 @@
         }
     .end annotation
 
-    .line 240
+    .line 244
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/uistate/BasicModeTopPaneUiState;->isPointButtonVisible:Landroidx/lifecycle/LiveData;
 
     return-object p0
@@ -1306,7 +2063,7 @@
         }
     .end annotation
 
-    .line 261
+    .line 270
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/uistate/BasicModeTopPaneUiState;->isVideoFormatContainerEnabled:Landroidx/lifecycle/LiveData;
 
     return-object p0
@@ -1323,7 +2080,7 @@
         }
     .end annotation
 
-    .line 260
+    .line 269
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/uistate/BasicModeTopPaneUiState;->isVideoFpsButtonClickable:Landroidx/lifecycle/LiveData;
 
     return-object p0
@@ -1340,7 +2097,7 @@
         }
     .end annotation
 
-    .line 248
+    .line 257
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/uistate/BasicModeTopPaneUiState;->isVideoFpsButtonEnabled:Landroidx/lifecycle/LiveData;
 
     return-object p0
@@ -1357,7 +2114,7 @@
         }
     .end annotation
 
-    .line 233
+    .line 237
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/uistate/BasicModeTopPaneUiState;->isVideoFpsButtonVisible:Landroidx/lifecycle/LiveData;
 
     return-object p0
@@ -1374,7 +2131,7 @@
         }
     .end annotation
 
-    .line 247
+    .line 251
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/uistate/BasicModeTopPaneUiState;->isVideoSizeButtonEnabled:Landroidx/lifecycle/LiveData;
 
     return-object p0
@@ -1391,7 +2148,7 @@
         }
     .end annotation
 
-    .line 221
+    .line 225
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/uistate/BasicModeTopPaneUiState;->isVideoSizeButtonVisible:Landroidx/lifecycle/LiveData;
 
     return-object p0
@@ -1408,7 +2165,7 @@
         }
     .end annotation
 
-    .line 254
+    .line 263
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/uistate/BasicModeTopPaneUiState;->isVideoSpeedRatioButtonEnabled:Landroidx/lifecycle/LiveData;
 
     return-object p0
@@ -1425,7 +2182,7 @@
         }
     .end annotation
 
-    .line 227
+    .line 231
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/uistate/BasicModeTopPaneUiState;->isVideoSpeedRatioButtonVisible:Landroidx/lifecycle/LiveData;
 
     return-object p0
@@ -1434,7 +2191,7 @@
 .method public final onLowLightStateChanged(Z)V
     .locals 2
 
-    .line 144
+    .line 146
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/uistate/BasicModeTopPaneUiState;->_isLowLightStateActive:Landroidx/lifecycle/MutableLiveData;
 
     invoke-static {p1}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
@@ -1447,13 +2204,13 @@
 
     const/4 p1, 0x0
 
-    .line 146
+    .line 148
     iput-boolean p1, p0, Ljp/co/sony/mc/camera/view/uistate/BasicModeTopPaneUiState;->lowLightModeTurnAutoByUser:Z
 
-    .line 147
+    .line 149
     invoke-direct {p0}, Ljp/co/sony/mc/camera/view/uistate/BasicModeTopPaneUiState;->stopLowLightFadeAnimator()V
 
-    .line 148
+    .line 150
     iget-object p1, p0, Ljp/co/sony/mc/camera/view/uistate/BasicModeTopPaneUiState;->cameraSettingsModel:Ljp/co/sony/mc/camera/view/viewmodel/CameraSettingsModel;
 
     invoke-virtual {p1}, Ljp/co/sony/mc/camera/view/viewmodel/CameraSettingsModel;->getLowLightMode()Landroidx/lifecycle/LiveData;
@@ -1468,23 +2225,23 @@
 
     if-ne p1, v0, :cond_2
 
-    .line 149
+    .line 151
     invoke-direct {p0}, Ljp/co/sony/mc/camera/view/uistate/BasicModeTopPaneUiState;->showLowLightButton()V
 
     goto :goto_0
 
-    .line 152
+    .line 154
     :cond_0
     iget-boolean p1, p0, Ljp/co/sony/mc/camera/view/uistate/BasicModeTopPaneUiState;->lowLightModeTurnAutoByUser:Z
 
     if-eqz p1, :cond_1
 
-    .line 153
+    .line 155
     invoke-direct {p0}, Ljp/co/sony/mc/camera/view/uistate/BasicModeTopPaneUiState;->startLowLightFadeAnimator()V
 
     goto :goto_0
 
-    .line 155
+    .line 157
     :cond_1
     invoke-direct {p0}, Ljp/co/sony/mc/camera/view/uistate/BasicModeTopPaneUiState;->hideLowLightButton()V
 
@@ -1498,7 +2255,7 @@
 
     if-eqz p1, :cond_0
 
-    .line 186
+    .line 190
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/view/uistate/BasicModeTopPaneUiState;->resetLowLightModeState()V
 
     :cond_0
@@ -1508,7 +2265,7 @@
 .method public final onPause()V
     .locals 0
 
-    .line 181
+    .line 185
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/view/uistate/BasicModeTopPaneUiState;->resetLowLightModeState()V
 
     return-void
@@ -1517,18 +2274,18 @@
 .method public final resetLowLightModeState()V
     .locals 1
 
-    .line 174
+    .line 178
     invoke-direct {p0}, Ljp/co/sony/mc/camera/view/uistate/BasicModeTopPaneUiState;->hideLowLightButton()V
 
-    .line 175
+    .line 179
     invoke-direct {p0}, Ljp/co/sony/mc/camera/view/uistate/BasicModeTopPaneUiState;->stopLowLightFadeAnimator()V
 
     const/4 v0, 0x0
 
-    .line 176
+    .line 180
     iput-boolean v0, p0, Ljp/co/sony/mc/camera/view/uistate/BasicModeTopPaneUiState;->lowLightModeTurnAutoByUser:Z
 
-    .line 177
+    .line 181
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/uistate/BasicModeTopPaneUiState;->_isLowLightStateActive:Landroidx/lifecycle/MutableLiveData;
 
     invoke-static {v0}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
@@ -1543,7 +2300,7 @@
 .method public final setOperator(Ljp/co/sony/mc/camera/view/CameraOperator;)V
     .locals 0
 
-    .line 37
+    .line 39
     iput-object p1, p0, Ljp/co/sony/mc/camera/view/uistate/BasicModeTopPaneUiState;->operator:Ljp/co/sony/mc/camera/view/CameraOperator;
 
     return-void
@@ -1552,7 +2309,7 @@
 .method public final showGoogleLens()V
     .locals 0
 
-    .line 53
+    .line 55
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/uistate/BasicModeTopPaneUiState;->launcherModel:Ljp/co/sony/mc/camera/view/viewmodel/LauncherModel;
 
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/view/viewmodel/LauncherModel;->showGoogleLens()V
@@ -1560,25 +2317,10 @@
     return-void
 .end method
 
-.method public final tapBackground()V
-    .locals 1
-
-    .line 294
-    iget-object p0, p0, Ljp/co/sony/mc/camera/view/uistate/BasicModeTopPaneUiState;->basicModeCommonUiState:Ljp/co/sony/mc/camera/view/uistate/BasicModeCommonUiState;
-
-    sget-object v0, Ljp/co/sony/mc/camera/view/uistate/BasicModeCloseMenuReason$FinderClicked;->INSTANCE:Ljp/co/sony/mc/camera/view/uistate/BasicModeCloseMenuReason$FinderClicked;
-
-    check-cast v0, Ljp/co/sony/mc/camera/view/uistate/BasicModeCloseMenuReason;
-
-    invoke-virtual {p0, v0}, Ljp/co/sony/mc/camera/view/uistate/BasicModeCommonUiState;->closeAllMenu(Ljp/co/sony/mc/camera/view/uistate/BasicModeCloseMenuReason;)Z
-
-    return-void
-.end method
-
 .method public final toggleLowLightMode()V
     .locals 10
 
-    .line 161
+    .line 163
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/uistate/BasicModeTopPaneUiState;->cameraSettingsModel:Ljp/co/sony/mc/camera/view/viewmodel/CameraSettingsModel;
 
     invoke-virtual {v0}, Ljp/co/sony/mc/camera/view/viewmodel/CameraSettingsModel;->getLowLightMode()Landroidx/lifecycle/LiveData;
@@ -1593,7 +2335,7 @@
 
     if-ne v0, v1, :cond_0
 
-    .line 162
+    .line 164
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/uistate/BasicModeTopPaneUiState;->_isLowLightStateActive:Landroidx/lifecycle/MutableLiveData;
 
     const/4 v1, 0x0
@@ -1604,35 +2346,30 @@
 
     invoke-virtual {v0, v1}, Landroidx/lifecycle/MutableLiveData;->setValue(Ljava/lang/Object;)V
 
-    .line 163
-    iget-object p0, p0, Ljp/co/sony/mc/camera/view/uistate/BasicModeTopPaneUiState;->operator:Ljp/co/sony/mc/camera/view/CameraOperator;
-
-    if-eqz p0, :cond_1
-
+    .line 165
     sget-object v0, Ljp/co/sony/mc/camera/configuration/parameters/LowLightMode;->OFF:Ljp/co/sony/mc/camera/configuration/parameters/LowLightMode;
-
-    invoke-interface {p0, v0}, Ljp/co/sony/mc/camera/view/CameraOperator;->changeLowLightMode(Ljp/co/sony/mc/camera/configuration/parameters/LowLightMode;)V
 
     goto :goto_0
 
     :cond_0
     const/4 v0, 0x1
 
-    .line 165
+    .line 167
     iput-boolean v0, p0, Ljp/co/sony/mc/camera/view/uistate/BasicModeTopPaneUiState;->lowLightModeTurnAutoByUser:Z
 
-    .line 166
+    .line 168
+    sget-object v0, Ljp/co/sony/mc/camera/configuration/parameters/LowLightMode;->AUTO:Ljp/co/sony/mc/camera/configuration/parameters/LowLightMode;
+
+    .line 170
+    :goto_0
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/uistate/BasicModeTopPaneUiState;->operator:Ljp/co/sony/mc/camera/view/CameraOperator;
 
     if-eqz p0, :cond_1
 
-    sget-object v0, Ljp/co/sony/mc/camera/configuration/parameters/LowLightMode;->AUTO:Ljp/co/sony/mc/camera/configuration/parameters/LowLightMode;
-
     invoke-interface {p0, v0}, Ljp/co/sony/mc/camera/view/CameraOperator;->changeLowLightMode(Ljp/co/sony/mc/camera/configuration/parameters/LowLightMode;)V
 
-    .line 168
+    .line 171
     :cond_1
-    :goto_0
     new-instance p0, Ljp/co/sony/mc/camera/idd/event/IddSettingEvent;
 
     const/16 v8, 0x3f
@@ -1653,28 +2390,28 @@
 
     move-object v1, p0
 
-    invoke-direct/range {v1 .. v9}, Ljp/co/sony/mc/camera/idd/event/IddSettingEvent;-><init>(Ljava/lang/String;Ljp/co/sony/mc/camera/idd/value/IddLauncher;Ljp/co/sony/mc/camera/idd/value/IddMode;Ljp/co/sony/mc/camera/idd/value/IddSetting;Ljp/co/sony/mc/camera/idd/value/IddSettingKey;Ljp/co/sony/mc/camera/idd/value/IddUserControl;ILkotlin/jvm/internal/DefaultConstructorMarker;)V
+    invoke-direct/range {v1 .. v9}, Ljp/co/sony/mc/camera/idd/event/IddSettingEvent;-><init>(Ljava/lang/String;Ljp/co/sony/mc/camera/idd/value/IddLauncher;Ljp/co/sony/mc/camera/idd/value/IddMode;Ljp/co/sony/mc/camera/idd/value/IddSettingKey;Ljp/co/sony/mc/camera/idd/value/IddSettingValue;Ljp/co/sony/mc/camera/idd/value/IddUserControl;ILkotlin/jvm/internal/DefaultConstructorMarker;)V
 
-    sget-object v0, Ljp/co/sony/mc/camera/idd/value/IddUserControl;->HEADER:Ljp/co/sony/mc/camera/idd/value/IddUserControl;
+    sget-object v1, Ljp/co/sony/mc/camera/idd/value/IddUserControl;->HEADER:Ljp/co/sony/mc/camera/idd/value/IddUserControl;
 
-    invoke-virtual {p0, v0}, Ljp/co/sony/mc/camera/idd/event/IddSettingEvent;->changeLocation(Ljp/co/sony/mc/camera/idd/value/IddUserControl;)Ljp/co/sony/mc/camera/idd/event/IddSettingEvent;
-
-    move-result-object p0
-
-    .line 169
-    sget-object v0, Ljp/co/sony/mc/camera/setting/CameraSettings;->PHOTO_LIGHT:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
-
-    const-string v1, "PHOTO_LIGHT"
-
-    invoke-static {v0, v1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
-
-    check-cast v0, Ljp/co/sony/mc/camera/setting/SettingKey$Key;
-
-    invoke-virtual {p0, v0}, Ljp/co/sony/mc/camera/idd/event/IddSettingEvent;->setting(Ljp/co/sony/mc/camera/setting/SettingKey$Key;)Ljp/co/sony/mc/camera/idd/event/IddSettingEvent;
+    invoke-virtual {p0, v1}, Ljp/co/sony/mc/camera/idd/event/IddSettingEvent;->changeLocation(Ljp/co/sony/mc/camera/idd/value/IddUserControl;)Ljp/co/sony/mc/camera/idd/event/IddSettingEvent;
 
     move-result-object p0
 
-    .line 170
+    .line 172
+    sget-object v1, Ljp/co/sony/mc/camera/idd/value/IddSettingKey;->NIGHT:Ljp/co/sony/mc/camera/idd/value/IddSettingKey;
+
+    new-instance v2, Ljp/co/sony/mc/camera/idd/value/IddNight;
+
+    invoke-direct {v2, v0}, Ljp/co/sony/mc/camera/idd/value/IddNight;-><init>(Ljp/co/sony/mc/camera/configuration/parameters/LowLightMode;)V
+
+    check-cast v2, Ljp/co/sony/mc/camera/idd/value/IddSettingValue;
+
+    invoke-virtual {p0, v1, v2}, Ljp/co/sony/mc/camera/idd/event/IddSettingEvent;->setting(Ljp/co/sony/mc/camera/idd/value/IddSettingKey;Ljp/co/sony/mc/camera/idd/value/IddSettingValue;)Ljp/co/sony/mc/camera/idd/event/IddSettingEvent;
+
+    move-result-object p0
+
+    .line 173
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/idd/event/IddSettingEvent;->send()V
 
     return-void
@@ -1683,7 +2420,7 @@
 .method public final toggleVideoFpsMode()V
     .locals 10
 
-    .line 279
+    .line 288
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/uistate/BasicModeTopPaneUiState;->cameraSettingsModel:Ljp/co/sony/mc/camera/view/viewmodel/CameraSettingsModel;
 
     invoke-virtual {v0}, Ljp/co/sony/mc/camera/view/viewmodel/CameraSettingsModel;->getVideoFps()Landroidx/lifecycle/LiveData;
@@ -1698,7 +2435,7 @@
 
     if-eqz v0, :cond_3
 
-    .line 280
+    .line 289
     iget-object v1, p0, Ljp/co/sony/mc/camera/view/uistate/BasicModeTopPaneUiState;->settings:Ljp/co/sony/mc/camera/setting/CameraProSetting;
 
     sget-object v2, Ljp/co/sony/mc/camera/setting/CameraSettings;->VIDEO_FPS:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
@@ -1713,14 +2450,14 @@
 
     invoke-static {v1, v2}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 325
+    .line 330
     new-instance v2, Ljava/util/ArrayList;
 
     invoke-direct {v2}, Ljava/util/ArrayList;-><init>()V
 
     check-cast v2, Ljava/util/Collection;
 
-    .line 326
+    .line 331
     array-length v3, v1
 
     const/4 v4, 0x0
@@ -1736,7 +2473,7 @@
 
     check-cast v7, Ljp/co/sony/mc/camera/configuration/parameters/VideoFps;
 
-    .line 281
+    .line 290
     invoke-direct {p0}, Ljp/co/sony/mc/camera/view/uistate/BasicModeTopPaneUiState;->getSettingChecker()Ljp/co/sony/mc/camera/setting/SettingAppearanceChecker;
 
     move-result-object v8
@@ -1755,7 +2492,7 @@
 
     if-ne v7, v8, :cond_0
 
-    .line 326
+    .line 331
     invoke-interface {v2, v6}, Ljava/util/Collection;->add(Ljava/lang/Object;)Z
 
     :cond_0
@@ -1763,16 +2500,16 @@
 
     goto :goto_0
 
-    .line 327
+    .line 332
     :cond_1
     check-cast v2, Ljava/util/List;
 
-    .line 283
+    .line 292
     invoke-interface {v2, v0}, Ljava/util/List;->indexOf(Ljava/lang/Object;)I
 
     move-result v0
 
-    .line 284
+    .line 293
     invoke-interface {v2}, Ljava/util/List;->size()I
 
     move-result v1
@@ -1786,7 +2523,7 @@
     :cond_2
     add-int/lit8 v4, v0, 0x1
 
-    .line 289
+    .line 298
     :goto_1
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/uistate/BasicModeTopPaneUiState;->operator:Ljp/co/sony/mc/camera/view/CameraOperator;
 
@@ -1809,7 +2546,7 @@
 .method public final toggleVideoSizeMode()V
     .locals 10
 
-    .line 264
+    .line 273
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/uistate/BasicModeTopPaneUiState;->cameraSettingsModel:Ljp/co/sony/mc/camera/view/viewmodel/CameraSettingsModel;
 
     invoke-virtual {v0}, Ljp/co/sony/mc/camera/view/viewmodel/CameraSettingsModel;->getVideoSize()Landroidx/lifecycle/LiveData;
@@ -1824,7 +2561,7 @@
 
     if-eqz v0, :cond_3
 
-    .line 265
+    .line 274
     iget-object v1, p0, Ljp/co/sony/mc/camera/view/uistate/BasicModeTopPaneUiState;->settings:Ljp/co/sony/mc/camera/setting/CameraProSetting;
 
     sget-object v2, Ljp/co/sony/mc/camera/setting/CameraSettings;->VIDEO_SIZE:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
@@ -1839,14 +2576,14 @@
 
     invoke-static {v1, v2}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 322
+    .line 327
     new-instance v2, Ljava/util/ArrayList;
 
     invoke-direct {v2}, Ljava/util/ArrayList;-><init>()V
 
     check-cast v2, Ljava/util/Collection;
 
-    .line 323
+    .line 328
     array-length v3, v1
 
     const/4 v4, 0x0
@@ -1862,7 +2599,7 @@
 
     check-cast v7, Ljp/co/sony/mc/camera/configuration/parameters/VideoSize;
 
-    .line 266
+    .line 275
     invoke-direct {p0}, Ljp/co/sony/mc/camera/view/uistate/BasicModeTopPaneUiState;->getSettingChecker()Ljp/co/sony/mc/camera/setting/SettingAppearanceChecker;
 
     move-result-object v8
@@ -1881,7 +2618,7 @@
 
     if-ne v7, v8, :cond_0
 
-    .line 323
+    .line 328
     invoke-interface {v2, v6}, Ljava/util/Collection;->add(Ljava/lang/Object;)Z
 
     :cond_0
@@ -1889,16 +2626,16 @@
 
     goto :goto_0
 
-    .line 324
+    .line 329
     :cond_1
     check-cast v2, Ljava/util/List;
 
-    .line 268
+    .line 277
     invoke-interface {v2, v0}, Ljava/util/List;->indexOf(Ljava/lang/Object;)I
 
     move-result v0
 
-    .line 269
+    .line 278
     invoke-interface {v2}, Ljava/util/List;->size()I
 
     move-result v1
@@ -1912,7 +2649,7 @@
     :cond_2
     add-int/lit8 v4, v0, 0x1
 
-    .line 274
+    .line 283
     :goto_1
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/uistate/BasicModeTopPaneUiState;->operator:Ljp/co/sony/mc/camera/view/CameraOperator;
 

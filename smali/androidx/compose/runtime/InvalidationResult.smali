@@ -70,7 +70,7 @@
 .method static constructor <clinit>()V
     .locals 3
 
-    .line 265
+    .line 263
     new-instance v0, Landroidx/compose/runtime/InvalidationResult;
 
     const-string v1, "IGNORED"
@@ -81,7 +81,7 @@
 
     sput-object v0, Landroidx/compose/runtime/InvalidationResult;->IGNORED:Landroidx/compose/runtime/InvalidationResult;
 
-    .line 271
+    .line 269
     new-instance v0, Landroidx/compose/runtime/InvalidationResult;
 
     const-string v1, "SCHEDULED"
@@ -92,7 +92,7 @@
 
     sput-object v0, Landroidx/compose/runtime/InvalidationResult;->SCHEDULED:Landroidx/compose/runtime/InvalidationResult;
 
-    .line 278
+    .line 276
     new-instance v0, Landroidx/compose/runtime/InvalidationResult;
 
     const-string v1, "DEFERRED"
@@ -103,7 +103,7 @@
 
     sput-object v0, Landroidx/compose/runtime/InvalidationResult;->DEFERRED:Landroidx/compose/runtime/InvalidationResult;
 
-    .line 285
+    .line 283
     new-instance v0, Landroidx/compose/runtime/InvalidationResult;
 
     const-string v1, "IMMINENT"
@@ -131,7 +131,7 @@
         }
     .end annotation
 
-    .line 257
+    .line 255
     invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
     return-void

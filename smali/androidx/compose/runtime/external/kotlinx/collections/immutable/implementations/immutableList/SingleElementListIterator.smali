@@ -42,6 +42,10 @@
 .end annotation
 
 
+# static fields
+.field public static final $stable:I
+
+
 # instance fields
 .field private final element:Ljava/lang/Object;
     .annotation system Ldalvik/annotation/Signature;
@@ -53,6 +57,12 @@
 
 
 # direct methods
+.method static constructor <clinit>()V
+    .locals 0
+
+    return-void
+.end method
+
 .method public constructor <init>(Ljava/lang/Object;I)V
     .locals 1
     .annotation system Ldalvik/annotation/Signature;

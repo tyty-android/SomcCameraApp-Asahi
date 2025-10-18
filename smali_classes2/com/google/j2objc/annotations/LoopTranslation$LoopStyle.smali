@@ -34,7 +34,7 @@
 .method static constructor <clinit>()V
     .locals 4
 
-    .line 44
+    .line 50
     new-instance v0, Lcom/google/j2objc/annotations/LoopTranslation$LoopStyle;
 
     const-string v1, "JAVA_ITERATOR"
@@ -45,7 +45,7 @@
 
     sput-object v0, Lcom/google/j2objc/annotations/LoopTranslation$LoopStyle;->JAVA_ITERATOR:Lcom/google/j2objc/annotations/LoopTranslation$LoopStyle;
 
-    .line 50
+    .line 56
     new-instance v1, Lcom/google/j2objc/annotations/LoopTranslation$LoopStyle;
 
     const-string v2, "FAST_ENUMERATION"
@@ -56,7 +56,7 @@
 
     sput-object v1, Lcom/google/j2objc/annotations/LoopTranslation$LoopStyle;->FAST_ENUMERATION:Lcom/google/j2objc/annotations/LoopTranslation$LoopStyle;
 
-    .line 36
+    .line 42
     filled-new-array {v0, v1}, [Lcom/google/j2objc/annotations/LoopTranslation$LoopStyle;
 
     move-result-object v0
@@ -74,7 +74,7 @@
         }
     .end annotation
 
-    .line 36
+    .line 42
     invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
     return-void
@@ -83,7 +83,7 @@
 .method public static valueOf(Ljava/lang/String;)Lcom/google/j2objc/annotations/LoopTranslation$LoopStyle;
     .locals 1
 
-    .line 36
+    .line 42
     const-class v0, Lcom/google/j2objc/annotations/LoopTranslation$LoopStyle;
 
     invoke-static {v0, p0}, Ljava/lang/Enum;->valueOf(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
@@ -98,7 +98,7 @@
 .method public static values()[Lcom/google/j2objc/annotations/LoopTranslation$LoopStyle;
     .locals 1
 
-    .line 36
+    .line 42
     sget-object v0, Lcom/google/j2objc/annotations/LoopTranslation$LoopStyle;->$VALUES:[Lcom/google/j2objc/annotations/LoopTranslation$LoopStyle;
 
     invoke-virtual {v0}, [Lcom/google/j2objc/annotations/LoopTranslation$LoopStyle;->clone()Ljava/lang/Object;

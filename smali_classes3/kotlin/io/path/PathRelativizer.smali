@@ -203,7 +203,7 @@
 
     move-result-object p1
 
-    const-string v0, "rn.fileSystem.separator"
+    const-string v0, "getSeparator(...)"
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
 
@@ -251,9 +251,7 @@
 
     .line 184
     :goto_1
-    const-string p0, "r"
-
-    invoke-static {p1, p0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;)V
 
     return-object p1
 .end method

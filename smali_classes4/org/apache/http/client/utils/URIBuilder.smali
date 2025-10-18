@@ -783,19 +783,19 @@
 .method public addParameter(Ljava/lang/String;Ljava/lang/String;)Lorg/apache/http/client/utils/URIBuilder;
     .locals 2
 
-    .line 431
+    .line 429
     iget-object v0, p0, Lorg/apache/http/client/utils/URIBuilder;->queryParams:Ljava/util/List;
 
     if-nez v0, :cond_0
 
-    .line 432
+    .line 430
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
     iput-object v0, p0, Lorg/apache/http/client/utils/URIBuilder;->queryParams:Ljava/util/List;
 
-    .line 434
+    .line 432
     :cond_0
     iget-object v0, p0, Lorg/apache/http/client/utils/URIBuilder;->queryParams:Ljava/util/List;
 
@@ -807,13 +807,13 @@
 
     const/4 p1, 0x0
 
-    .line 435
+    .line 433
     iput-object p1, p0, Lorg/apache/http/client/utils/URIBuilder;->encodedQuery:Ljava/lang/String;
 
-    .line 436
+    .line 434
     iput-object p1, p0, Lorg/apache/http/client/utils/URIBuilder;->encodedSchemeSpecificPart:Ljava/lang/String;
 
-    .line 437
+    .line 435
     iput-object p1, p0, Lorg/apache/http/client/utils/URIBuilder;->query:Ljava/lang/String;
 
     return-object p0
@@ -888,13 +888,13 @@
 
     const/4 v0, 0x0
 
-    .line 474
+    .line 472
     iput-object v0, p0, Lorg/apache/http/client/utils/URIBuilder;->queryParams:Ljava/util/List;
 
-    .line 475
+    .line 473
     iput-object v0, p0, Lorg/apache/http/client/utils/URIBuilder;->encodedQuery:Ljava/lang/String;
 
-    .line 476
+    .line 474
     iput-object v0, p0, Lorg/apache/http/client/utils/URIBuilder;->encodedSchemeSpecificPart:Ljava/lang/String;
 
     return-object p0
@@ -912,7 +912,7 @@
 .method public getFragment()Ljava/lang/String;
     .locals 0
 
-    .line 576
+    .line 574
     iget-object p0, p0, Lorg/apache/http/client/utils/URIBuilder;->fragment:Ljava/lang/String;
 
     return-object p0
@@ -921,7 +921,7 @@
 .method public getHost()Ljava/lang/String;
     .locals 0
 
-    .line 531
+    .line 529
     iget-object p0, p0, Lorg/apache/http/client/utils/URIBuilder;->host:Ljava/lang/String;
 
     return-object p0
@@ -930,7 +930,7 @@
 .method public getPath()Ljava/lang/String;
     .locals 3
 
-    .line 554
+    .line 552
     iget-object v0, p0, Lorg/apache/http/client/utils/URIBuilder;->pathSegments:Ljava/util/List;
 
     if-nez v0, :cond_0
@@ -939,13 +939,13 @@
 
     return-object p0
 
-    .line 557
+    .line 555
     :cond_0
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
 
-    .line 558
+    .line 556
     iget-object p0, p0, Lorg/apache/http/client/utils/URIBuilder;->pathSegments:Ljava/util/List;
 
     invoke-interface {p0}, Ljava/util/List;->iterator()Ljava/util/Iterator;
@@ -967,7 +967,7 @@
 
     const/16 v2, 0x2f
 
-    .line 559
+    .line 557
     invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
 
     move-result-object v2
@@ -976,7 +976,7 @@
 
     goto :goto_0
 
-    .line 561
+    .line 559
     :cond_1
     invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
@@ -996,7 +996,7 @@
         }
     .end annotation
 
-    .line 550
+    .line 548
     iget-object v0, p0, Lorg/apache/http/client/utils/URIBuilder;->pathSegments:Ljava/util/List;
 
     if-eqz v0, :cond_0
@@ -1010,9 +1010,9 @@
     goto :goto_0
 
     :cond_0
-    invoke-static {}, Ljava/util/Collections;->emptyList()Ljava/util/List;
+    new-instance v0, Ljava/util/ArrayList;
 
-    move-result-object v0
+    invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
     :goto_0
     return-object v0
@@ -1021,7 +1021,7 @@
 .method public getPort()I
     .locals 0
 
-    .line 535
+    .line 533
     iget p0, p0, Lorg/apache/http/client/utils/URIBuilder;->port:I
 
     return p0
@@ -1038,7 +1038,7 @@
         }
     .end annotation
 
-    .line 572
+    .line 570
     iget-object v0, p0, Lorg/apache/http/client/utils/URIBuilder;->queryParams:Ljava/util/List;
 
     if-eqz v0, :cond_0
@@ -1052,9 +1052,9 @@
     goto :goto_0
 
     :cond_0
-    invoke-static {}, Ljava/util/Collections;->emptyList()Ljava/util/List;
+    new-instance v0, Ljava/util/ArrayList;
 
-    move-result-object v0
+    invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
     :goto_0
     return-object v0
@@ -1063,7 +1063,7 @@
 .method public getScheme()Ljava/lang/String;
     .locals 0
 
-    .line 523
+    .line 521
     iget-object p0, p0, Lorg/apache/http/client/utils/URIBuilder;->scheme:Ljava/lang/String;
 
     return-object p0
@@ -1072,7 +1072,7 @@
 .method public getUserInfo()Ljava/lang/String;
     .locals 0
 
-    .line 527
+    .line 525
     iget-object p0, p0, Lorg/apache/http/client/utils/URIBuilder;->userInfo:Ljava/lang/String;
 
     return-object p0
@@ -1081,7 +1081,7 @@
 .method public isAbsolute()Z
     .locals 0
 
-    .line 512
+    .line 510
     iget-object p0, p0, Lorg/apache/http/client/utils/URIBuilder;->scheme:Ljava/lang/String;
 
     if-eqz p0, :cond_0
@@ -1100,7 +1100,7 @@
 .method public isOpaque()Z
     .locals 1
 
-    .line 519
+    .line 517
     iget-object v0, p0, Lorg/apache/http/client/utils/URIBuilder;->pathSegments:Ljava/util/List;
 
     if-nez v0, :cond_0
@@ -1123,7 +1123,7 @@
 .method public isPathEmpty()Z
     .locals 1
 
-    .line 542
+    .line 540
     iget-object v0, p0, Lorg/apache/http/client/utils/URIBuilder;->pathSegments:Ljava/util/List;
 
     if-eqz v0, :cond_0
@@ -1163,7 +1163,7 @@
 .method public isQueryEmpty()Z
     .locals 1
 
-    .line 568
+    .line 566
     iget-object v0, p0, Lorg/apache/http/client/utils/URIBuilder;->queryParams:Ljava/util/List;
 
     if-eqz v0, :cond_0
@@ -1222,18 +1222,18 @@
 .method public setCustomQuery(Ljava/lang/String;)Lorg/apache/http/client/utils/URIBuilder;
     .locals 0
 
-    .line 491
+    .line 489
     iput-object p1, p0, Lorg/apache/http/client/utils/URIBuilder;->query:Ljava/lang/String;
 
     const/4 p1, 0x0
 
-    .line 492
+    .line 490
     iput-object p1, p0, Lorg/apache/http/client/utils/URIBuilder;->encodedQuery:Ljava/lang/String;
 
-    .line 493
+    .line 491
     iput-object p1, p0, Lorg/apache/http/client/utils/URIBuilder;->encodedSchemeSpecificPart:Ljava/lang/String;
 
-    .line 494
+    .line 492
     iput-object p1, p0, Lorg/apache/http/client/utils/URIBuilder;->queryParams:Ljava/util/List;
 
     return-object p0
@@ -1242,12 +1242,12 @@
 .method public setFragment(Ljava/lang/String;)Lorg/apache/http/client/utils/URIBuilder;
     .locals 0
 
-    .line 503
+    .line 501
     iput-object p1, p0, Lorg/apache/http/client/utils/URIBuilder;->fragment:Ljava/lang/String;
 
     const/4 p1, 0x0
 
-    .line 504
+    .line 502
     iput-object p1, p0, Lorg/apache/http/client/utils/URIBuilder;->encodedFragment:Ljava/lang/String;
 
     return-object p0
@@ -1273,19 +1273,19 @@
 .method public setParameter(Ljava/lang/String;Ljava/lang/String;)Lorg/apache/http/client/utils/URIBuilder;
     .locals 2
 
-    .line 450
+    .line 448
     iget-object v0, p0, Lorg/apache/http/client/utils/URIBuilder;->queryParams:Ljava/util/List;
 
     if-nez v0, :cond_0
 
-    .line 451
+    .line 449
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
     iput-object v0, p0, Lorg/apache/http/client/utils/URIBuilder;->queryParams:Ljava/util/List;
 
-    .line 453
+    .line 451
     :cond_0
     iget-object v0, p0, Lorg/apache/http/client/utils/URIBuilder;->queryParams:Ljava/util/List;
 
@@ -1295,7 +1295,7 @@
 
     if-nez v0, :cond_2
 
-    .line 454
+    .line 452
     iget-object v0, p0, Lorg/apache/http/client/utils/URIBuilder;->queryParams:Ljava/util/List;
 
     invoke-interface {v0}, Ljava/util/List;->iterator()Ljava/util/Iterator;
@@ -1310,14 +1310,14 @@
 
     if-eqz v1, :cond_2
 
-    .line 455
+    .line 453
     invoke-interface {v0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
     move-result-object v1
 
     check-cast v1, Lorg/apache/http/NameValuePair;
 
-    .line 456
+    .line 454
     invoke-interface {v1}, Lorg/apache/http/NameValuePair;->getName()Ljava/lang/String;
 
     move-result-object v1
@@ -1328,12 +1328,12 @@
 
     if-eqz v1, :cond_1
 
-    .line 457
+    .line 455
     invoke-interface {v0}, Ljava/util/Iterator;->remove()V
 
     goto :goto_0
 
-    .line 461
+    .line 459
     :cond_2
     iget-object v0, p0, Lorg/apache/http/client/utils/URIBuilder;->queryParams:Ljava/util/List;
 
@@ -1345,13 +1345,13 @@
 
     const/4 p1, 0x0
 
-    .line 462
+    .line 460
     iput-object p1, p0, Lorg/apache/http/client/utils/URIBuilder;->encodedQuery:Ljava/lang/String;
 
-    .line 463
+    .line 461
     iput-object p1, p0, Lorg/apache/http/client/utils/URIBuilder;->encodedSchemeSpecificPart:Ljava/lang/String;
 
-    .line 464
+    .line 462
     iput-object p1, p0, Lorg/apache/http/client/utils/URIBuilder;->query:Ljava/lang/String;
 
     return-object p0
@@ -1408,7 +1408,7 @@
 .end method
 
 .method public varargs setParameters([Lorg/apache/http/NameValuePair;)Lorg/apache/http/client/utils/URIBuilder;
-    .locals 4
+    .locals 1
 
     .line 408
     iget-object v0, p0, Lorg/apache/http/client/utils/URIBuilder;->queryParams:Ljava/util/List;
@@ -1430,34 +1430,19 @@
 
     .line 413
     :goto_0
-    array-length v0, p1
+    iget-object v0, p0, Lorg/apache/http/client/utils/URIBuilder;->queryParams:Ljava/util/List;
 
-    const/4 v1, 0x0
+    invoke-static {v0, p1}, Ljava/util/Collections;->addAll(Ljava/util/Collection;[Ljava/lang/Object;)Z
 
-    :goto_1
-    if-ge v1, v0, :cond_1
-
-    aget-object v2, p1, v1
-
-    .line 414
-    iget-object v3, p0, Lorg/apache/http/client/utils/URIBuilder;->queryParams:Ljava/util/List;
-
-    invoke-interface {v3, v2}, Ljava/util/List;->add(Ljava/lang/Object;)Z
-
-    add-int/lit8 v1, v1, 0x1
-
-    goto :goto_1
-
-    :cond_1
     const/4 p1, 0x0
 
-    .line 416
+    .line 414
     iput-object p1, p0, Lorg/apache/http/client/utils/URIBuilder;->encodedQuery:Ljava/lang/String;
 
-    .line 417
+    .line 415
     iput-object p1, p0, Lorg/apache/http/client/utils/URIBuilder;->encodedSchemeSpecificPart:Ljava/lang/String;
 
-    .line 418
+    .line 416
     iput-object p1, p0, Lorg/apache/http/client/utils/URIBuilder;->query:Ljava/lang/String;
 
     return-object p0
@@ -1684,7 +1669,7 @@
 .method public toString()Ljava/lang/String;
     .locals 0
 
-    .line 581
+    .line 579
     invoke-direct {p0}, Lorg/apache/http/client/utils/URIBuilder;->buildString()Ljava/lang/String;
 
     move-result-object p0

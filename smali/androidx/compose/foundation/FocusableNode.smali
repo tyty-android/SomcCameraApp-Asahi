@@ -11,7 +11,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/SourceDebugExtension;
-    value = "SMAP\nFocusable.kt\nKotlin\n*S Kotlin\n*F\n+ 1 Focusable.kt\nandroidx/compose/foundation/FocusableNode\n+ 2 fake.kt\nkotlin/jvm/internal/FakeKt\n*L\n1#1,372:1\n1#2:373\n*E\n"
+    value = "SMAP\nFocusable.kt\nKotlin\n*S Kotlin\n*F\n+ 1 Focusable.kt\nandroidx/compose/foundation/FocusableNode\n+ 2 fake.kt\nkotlin/jvm/internal/FakeKt\n*L\n1#1,374:1\n1#2:375\n*E\n"
 .end annotation
 
 .annotation runtime Lkotlin/Metadata;
@@ -83,10 +83,10 @@
 .method public constructor <init>(Landroidx/compose/foundation/interaction/MutableInteractionSource;)V
     .locals 1
 
-    .line 197
+    .line 198
     invoke-direct {p0}, Landroidx/compose/ui/node/DelegatingNode;-><init>()V
 
-    .line 202
+    .line 203
     new-instance v0, Landroidx/compose/foundation/FocusableSemanticsNode;
 
     invoke-direct {v0}, Landroidx/compose/foundation/FocusableSemanticsNode;-><init>()V
@@ -101,7 +101,7 @@
 
     iput-object v0, p0, Landroidx/compose/foundation/FocusableNode;->focusableSemanticsNode:Landroidx/compose/foundation/FocusableSemanticsNode;
 
-    .line 204
+    .line 205
     new-instance v0, Landroidx/compose/foundation/FocusableInteractionNode;
 
     invoke-direct {v0, p1}, Landroidx/compose/foundation/FocusableInteractionNode;-><init>(Landroidx/compose/foundation/interaction/MutableInteractionSource;)V
@@ -116,7 +116,7 @@
 
     iput-object p1, p0, Landroidx/compose/foundation/FocusableNode;->focusableInteractionNode:Landroidx/compose/foundation/FocusableInteractionNode;
 
-    .line 205
+    .line 206
     new-instance p1, Landroidx/compose/foundation/FocusablePinnableContainerNode;
 
     invoke-direct {p1}, Landroidx/compose/foundation/FocusablePinnableContainerNode;-><init>()V
@@ -131,7 +131,7 @@
 
     iput-object p1, p0, Landroidx/compose/foundation/FocusableNode;->focusablePinnableContainer:Landroidx/compose/foundation/FocusablePinnableContainerNode;
 
-    .line 206
+    .line 207
     new-instance p1, Landroidx/compose/foundation/FocusedBoundsNode;
 
     invoke-direct {p1}, Landroidx/compose/foundation/FocusedBoundsNode;-><init>()V
@@ -146,21 +146,21 @@
 
     iput-object p1, p0, Landroidx/compose/foundation/FocusableNode;->focusedBoundsNode:Landroidx/compose/foundation/FocusedBoundsNode;
 
-    .line 218
+    .line 219
     invoke-static {}, Landroidx/compose/foundation/relocation/BringIntoViewRequesterKt;->BringIntoViewRequester()Landroidx/compose/foundation/relocation/BringIntoViewRequester;
 
     move-result-object p1
 
     iput-object p1, p0, Landroidx/compose/foundation/FocusableNode;->bringIntoViewRequester:Landroidx/compose/foundation/relocation/BringIntoViewRequester;
 
-    .line 221
+    .line 222
     new-instance v0, Landroidx/compose/foundation/relocation/BringIntoViewRequesterNode;
 
     invoke-direct {v0, p1}, Landroidx/compose/foundation/relocation/BringIntoViewRequesterNode;-><init>(Landroidx/compose/foundation/relocation/BringIntoViewRequester;)V
 
     check-cast v0, Landroidx/compose/ui/node/DelegatableNode;
 
-    .line 220
+    .line 221
     invoke-virtual {p0, v0}, Landroidx/compose/foundation/FocusableNode;->delegate(Landroidx/compose/ui/node/DelegatableNode;)Landroidx/compose/ui/node/DelegatableNode;
 
     move-result-object p1
@@ -175,7 +175,7 @@
 .method public static final synthetic access$getBringIntoViewRequester$p(Landroidx/compose/foundation/FocusableNode;)Landroidx/compose/foundation/relocation/BringIntoViewRequester;
     .locals 0
 
-    .line 194
+    .line 195
     iget-object p0, p0, Landroidx/compose/foundation/FocusableNode;->bringIntoViewRequester:Landroidx/compose/foundation/relocation/BringIntoViewRequester;
 
     return-object p0
@@ -184,13 +184,9 @@
 
 # virtual methods
 .method public applySemantics(Landroidx/compose/ui/semantics/SemanticsPropertyReceiver;)V
-    .locals 1
+    .locals 0
 
-    const-string v0, "<this>"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 251
+    .line 252
     iget-object p0, p0, Landroidx/compose/foundation/FocusableNode;->focusableSemanticsNode:Landroidx/compose/foundation/FocusableSemanticsNode;
 
     invoke-virtual {p0, p1}, Landroidx/compose/foundation/FocusableSemanticsNode;->applySemantics(Landroidx/compose/ui/semantics/SemanticsPropertyReceiver;)V
@@ -201,11 +197,7 @@
 .method public onFocusEvent(Landroidx/compose/ui/focus/FocusState;)V
     .locals 7
 
-    const-string v0, "focusState"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 233
+    .line 234
     iget-object v0, p0, Landroidx/compose/foundation/FocusableNode;->focusState:Landroidx/compose/ui/focus/FocusState;
 
     invoke-static {v0, p1}, Lkotlin/jvm/internal/Intrinsics;->areEqual(Ljava/lang/Object;Ljava/lang/Object;)Z
@@ -214,14 +206,14 @@
 
     if-nez v0, :cond_2
 
-    .line 234
+    .line 235
     invoke-interface {p1}, Landroidx/compose/ui/focus/FocusState;->isFocused()Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
-    .line 236
+    .line 237
     invoke-virtual {p0}, Landroidx/compose/foundation/FocusableNode;->getCoroutineScope()Lkotlinx/coroutines/CoroutineScope;
 
     move-result-object v1
@@ -244,7 +236,7 @@
 
     invoke-static/range {v1 .. v6}, Lkotlinx/coroutines/BuildersKt;->launch$default(Lkotlinx/coroutines/CoroutineScope;Lkotlin/coroutines/CoroutineContext;Lkotlinx/coroutines/CoroutineStart;Lkotlin/jvm/functions/Function2;ILjava/lang/Object;)Lkotlinx/coroutines/Job;
 
-    .line 240
+    .line 241
     :cond_0
     invoke-virtual {p0}, Landroidx/compose/foundation/FocusableNode;->isAttached()Z
 
@@ -258,28 +250,28 @@
 
     invoke-static {v1}, Landroidx/compose/ui/node/SemanticsModifierNodeKt;->invalidateSemantics(Landroidx/compose/ui/node/SemanticsModifierNode;)V
 
-    .line 241
+    .line 242
     :cond_1
     iget-object v1, p0, Landroidx/compose/foundation/FocusableNode;->focusableInteractionNode:Landroidx/compose/foundation/FocusableInteractionNode;
 
     invoke-virtual {v1, v0}, Landroidx/compose/foundation/FocusableInteractionNode;->setFocus(Z)V
 
-    .line 242
+    .line 243
     iget-object v1, p0, Landroidx/compose/foundation/FocusableNode;->focusedBoundsNode:Landroidx/compose/foundation/FocusedBoundsNode;
 
     invoke-virtual {v1, v0}, Landroidx/compose/foundation/FocusedBoundsNode;->setFocus(Z)V
 
-    .line 243
+    .line 244
     iget-object v1, p0, Landroidx/compose/foundation/FocusableNode;->focusablePinnableContainer:Landroidx/compose/foundation/FocusablePinnableContainerNode;
 
     invoke-virtual {v1, v0}, Landroidx/compose/foundation/FocusablePinnableContainerNode;->setFocus(Z)V
 
-    .line 244
+    .line 245
     iget-object v1, p0, Landroidx/compose/foundation/FocusableNode;->focusableSemanticsNode:Landroidx/compose/foundation/FocusableSemanticsNode;
 
     invoke-virtual {v1, v0}, Landroidx/compose/foundation/FocusableSemanticsNode;->setFocus(Z)V
 
-    .line 245
+    .line 246
     iput-object p1, p0, Landroidx/compose/foundation/FocusableNode;->focusState:Landroidx/compose/ui/focus/FocusState;
 
     :cond_2
@@ -287,13 +279,9 @@
 .end method
 
 .method public onGloballyPositioned(Landroidx/compose/ui/layout/LayoutCoordinates;)V
-    .locals 1
+    .locals 0
 
-    const-string v0, "coordinates"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 255
+    .line 256
     iget-object p0, p0, Landroidx/compose/foundation/FocusableNode;->focusedBoundsNode:Landroidx/compose/foundation/FocusedBoundsNode;
 
     invoke-virtual {p0, p1}, Landroidx/compose/foundation/FocusedBoundsNode;->onGloballyPositioned(Landroidx/compose/ui/layout/LayoutCoordinates;)V
@@ -302,13 +290,9 @@
 .end method
 
 .method public onPlaced(Landroidx/compose/ui/layout/LayoutCoordinates;)V
-    .locals 1
+    .locals 0
 
-    const-string v0, "coordinates"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 226
+    .line 227
     iget-object p0, p0, Landroidx/compose/foundation/FocusableNode;->bringIntoViewRequesterNode:Landroidx/compose/foundation/relocation/BringIntoViewRequesterNode;
 
     invoke-virtual {p0, p1}, Landroidx/compose/foundation/relocation/BringIntoViewRequesterNode;->onPlaced(Landroidx/compose/ui/layout/LayoutCoordinates;)V
@@ -319,7 +303,7 @@
 .method public final update(Landroidx/compose/foundation/interaction/MutableInteractionSource;)V
     .locals 0
 
-    .line 229
+    .line 230
     iget-object p0, p0, Landroidx/compose/foundation/FocusableNode;->focusableInteractionNode:Landroidx/compose/foundation/FocusableInteractionNode;
 
     invoke-virtual {p0, p1}, Landroidx/compose/foundation/FocusableInteractionNode;->update(Landroidx/compose/foundation/interaction/MutableInteractionSource;)V

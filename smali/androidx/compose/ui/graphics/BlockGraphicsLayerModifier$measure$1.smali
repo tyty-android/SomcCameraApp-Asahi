@@ -83,34 +83,30 @@
 .end method
 
 .method public final invoke(Landroidx/compose/ui/layout/Placeable$PlacementScope;)V
-    .locals 9
-
-    const-string v0, "$this$layout"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+    .locals 8
 
     .line 580
-    iget-object v2, p0, Landroidx/compose/ui/graphics/BlockGraphicsLayerModifier$measure$1;->$placeable:Landroidx/compose/ui/layout/Placeable;
+    iget-object v1, p0, Landroidx/compose/ui/graphics/BlockGraphicsLayerModifier$measure$1;->$placeable:Landroidx/compose/ui/layout/Placeable;
 
     iget-object p0, p0, Landroidx/compose/ui/graphics/BlockGraphicsLayerModifier$measure$1;->this$0:Landroidx/compose/ui/graphics/BlockGraphicsLayerModifier;
 
     invoke-virtual {p0}, Landroidx/compose/ui/graphics/BlockGraphicsLayerModifier;->getLayerBlock()Lkotlin/jvm/functions/Function1;
 
-    move-result-object v6
+    move-result-object v5
 
-    const/4 v7, 0x4
+    const/4 v6, 0x4
 
-    const/4 v8, 0x0
+    const/4 v7, 0x0
+
+    const/4 v2, 0x0
 
     const/4 v3, 0x0
 
     const/4 v4, 0x0
 
-    const/4 v5, 0x0
+    move-object v0, p1
 
-    move-object v1, p1
-
-    invoke-static/range {v1 .. v8}, Landroidx/compose/ui/layout/Placeable$PlacementScope;->placeWithLayer$default(Landroidx/compose/ui/layout/Placeable$PlacementScope;Landroidx/compose/ui/layout/Placeable;IIFLkotlin/jvm/functions/Function1;ILjava/lang/Object;)V
+    invoke-static/range {v0 .. v7}, Landroidx/compose/ui/layout/Placeable$PlacementScope;->placeWithLayer$default(Landroidx/compose/ui/layout/Placeable$PlacementScope;Landroidx/compose/ui/layout/Placeable;IIFLkotlin/jvm/functions/Function1;ILjava/lang/Object;)V
 
     return-void
 .end method

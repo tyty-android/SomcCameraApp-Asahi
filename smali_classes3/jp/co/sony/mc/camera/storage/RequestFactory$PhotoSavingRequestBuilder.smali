@@ -42,13 +42,13 @@
 .method public constructor <init>(Ljp/co/sony/mc/camera/mediasaving/takenstatus/TakenStatusCommon;Ljp/co/sony/mc/camera/mediasaving/takenstatus/TakenStatusPhoto;Z)V
     .locals 0
 
-    .line 273
+    .line 213
     invoke-direct {p0, p1}, Ljp/co/sony/mc/camera/storage/RequestFactory$RequestBuilder;-><init>(Ljp/co/sony/mc/camera/mediasaving/takenstatus/TakenStatusCommon;)V
 
-    .line 274
+    .line 214
     iput-object p2, p0, Ljp/co/sony/mc/camera/storage/RequestFactory$PhotoSavingRequestBuilder;->mPhotoStatus:Ljp/co/sony/mc/camera/mediasaving/takenstatus/TakenStatusPhoto;
 
-    .line 275
+    .line 215
     iput-boolean p3, p0, Ljp/co/sony/mc/camera/storage/RequestFactory$PhotoSavingRequestBuilder;->mShouldUpdateOrientationBeforeStoring:Z
 
     return-void
@@ -59,7 +59,7 @@
 .method public close()V
     .locals 0
 
-    .line 317
+    .line 257
     iget-object p0, p0, Ljp/co/sony/mc/camera/storage/RequestFactory$PhotoSavingRequestBuilder;->mSourceAdapter:Ljp/co/sony/mc/camera/storage/PhotoSavingRequest$ImageSourceLifeCycleAdapter;
 
     invoke-interface {p0}, Ljp/co/sony/mc/camera/storage/PhotoSavingRequest$ImageSourceLifeCycleAdapter;->close()V
@@ -70,7 +70,7 @@
 .method public getCaptureIdForCaptureGroup()I
     .locals 0
 
-    .line 295
+    .line 235
     iget-object p0, p0, Ljp/co/sony/mc/camera/storage/RequestFactory$PhotoSavingRequestBuilder;->mCommonStatus:Ljp/co/sony/mc/camera/mediasaving/takenstatus/TakenStatusCommon;
 
     iget p0, p0, Ljp/co/sony/mc/camera/mediasaving/takenstatus/TakenStatusCommon;->mCaptureIdForCaptureGroup:I
@@ -81,7 +81,7 @@
 .method public getImageSource()Ljp/co/sony/mc/camera/storage/PhotoSavingRequest$ImageSourceLifeCycleAdapter;
     .locals 0
 
-    .line 310
+    .line 250
     iget-object p0, p0, Ljp/co/sony/mc/camera/storage/RequestFactory$PhotoSavingRequestBuilder;->mSourceAdapter:Ljp/co/sony/mc/camera/storage/PhotoSavingRequest$ImageSourceLifeCycleAdapter;
 
     return-object p0
@@ -90,7 +90,7 @@
 .method public getSaveTimeForCaptureGroup()Ljava/lang/String;
     .locals 0
 
-    .line 287
+    .line 227
     iget-object p0, p0, Ljp/co/sony/mc/camera/storage/RequestFactory$PhotoSavingRequestBuilder;->mCommonStatus:Ljp/co/sony/mc/camera/mediasaving/takenstatus/TakenStatusCommon;
 
     iget-object p0, p0, Ljp/co/sony/mc/camera/mediasaving/takenstatus/TakenStatusCommon;->mSaveTimeForCaptureGroup:Ljava/lang/String;
@@ -101,7 +101,7 @@
 .method public getShouldUpdateOrientationBeforeStoring()Z
     .locals 0
 
-    .line 279
+    .line 219
     iget-boolean p0, p0, Ljp/co/sony/mc/camera/storage/RequestFactory$PhotoSavingRequestBuilder;->mShouldUpdateOrientationBeforeStoring:Z
 
     return p0
@@ -110,7 +110,7 @@
 .method public isImageDataAvailable()Z
     .locals 0
 
-    .line 299
+    .line 239
     iget-object p0, p0, Ljp/co/sony/mc/camera/storage/RequestFactory$PhotoSavingRequestBuilder;->mSourceAdapter:Ljp/co/sony/mc/camera/storage/PhotoSavingRequest$ImageSourceLifeCycleAdapter;
 
     if-nez p0, :cond_0
@@ -119,7 +119,7 @@
 
     return p0
 
-    .line 302
+    .line 242
     :cond_0
     invoke-interface {p0}, Ljp/co/sony/mc/camera/storage/PhotoSavingRequest$ImageSourceLifeCycleAdapter;->isImageDataAvailable()Z
 
@@ -131,7 +131,7 @@
 .method public setCaptureIdForCaptureGroup(I)V
     .locals 0
 
-    .line 291
+    .line 231
     iget-object p0, p0, Ljp/co/sony/mc/camera/storage/RequestFactory$PhotoSavingRequestBuilder;->mCommonStatus:Ljp/co/sony/mc/camera/mediasaving/takenstatus/TakenStatusCommon;
 
     iput p1, p0, Ljp/co/sony/mc/camera/mediasaving/takenstatus/TakenStatusCommon;->mCaptureIdForCaptureGroup:I
@@ -142,7 +142,7 @@
 .method public setImageSource(Ljp/co/sony/mc/camera/storage/PhotoSavingRequest$ImageSourceLifeCycleAdapter;)V
     .locals 0
 
-    .line 306
+    .line 246
     iput-object p1, p0, Ljp/co/sony/mc/camera/storage/RequestFactory$PhotoSavingRequestBuilder;->mSourceAdapter:Ljp/co/sony/mc/camera/storage/PhotoSavingRequest$ImageSourceLifeCycleAdapter;
 
     return-void
@@ -151,7 +151,7 @@
 .method public setSaveTimeForCaptureGroup(Ljava/lang/String;)V
     .locals 0
 
-    .line 283
+    .line 223
     iget-object p0, p0, Ljp/co/sony/mc/camera/storage/RequestFactory$PhotoSavingRequestBuilder;->mCommonStatus:Ljp/co/sony/mc/camera/mediasaving/takenstatus/TakenStatusCommon;
 
     iput-object p1, p0, Ljp/co/sony/mc/camera/mediasaving/takenstatus/TakenStatusCommon;->mSaveTimeForCaptureGroup:Ljava/lang/String;

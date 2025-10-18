@@ -87,23 +87,19 @@
 .end method
 
 .method public final invoke(Landroidx/compose/ui/layout/Placeable$PlacementScope;)V
-    .locals 8
-
-    const-string v0, "$this$layout"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+    .locals 7
 
     .line 460
-    iget-object v2, p0, Landroidx/compose/foundation/layout/PaddingValuesModifier$measure$2;->$placeable:Landroidx/compose/ui/layout/Placeable;
+    iget-object v1, p0, Landroidx/compose/foundation/layout/PaddingValuesModifier$measure$2;->$placeable:Landroidx/compose/ui/layout/Placeable;
 
     .line 461
     iget-object v0, p0, Landroidx/compose/foundation/layout/PaddingValuesModifier$measure$2;->$this_measure:Landroidx/compose/ui/layout/MeasureScope;
 
-    iget-object v1, p0, Landroidx/compose/foundation/layout/PaddingValuesModifier$measure$2;->this$0:Landroidx/compose/foundation/layout/PaddingValuesModifier;
+    iget-object v2, p0, Landroidx/compose/foundation/layout/PaddingValuesModifier$measure$2;->this$0:Landroidx/compose/foundation/layout/PaddingValuesModifier;
 
-    invoke-virtual {v1}, Landroidx/compose/foundation/layout/PaddingValuesModifier;->getPaddingValues()Landroidx/compose/foundation/layout/PaddingValues;
+    invoke-virtual {v2}, Landroidx/compose/foundation/layout/PaddingValuesModifier;->getPaddingValues()Landroidx/compose/foundation/layout/PaddingValues;
 
-    move-result-object v1
+    move-result-object v2
 
     iget-object v3, p0, Landroidx/compose/foundation/layout/PaddingValuesModifier$measure$2;->$this_measure:Landroidx/compose/ui/layout/MeasureScope;
 
@@ -111,13 +107,13 @@
 
     move-result-object v3
 
-    invoke-interface {v1, v3}, Landroidx/compose/foundation/layout/PaddingValues;->calculateLeftPadding-u2uoSUM(Landroidx/compose/ui/unit/LayoutDirection;)F
+    invoke-interface {v2, v3}, Landroidx/compose/foundation/layout/PaddingValues;->calculateLeftPadding-u2uoSUM(Landroidx/compose/ui/unit/LayoutDirection;)F
 
-    move-result v1
+    move-result v2
 
-    invoke-interface {v0, v1}, Landroidx/compose/ui/layout/MeasureScope;->roundToPx-0680j_4(F)I
+    invoke-interface {v0, v2}, Landroidx/compose/ui/layout/MeasureScope;->roundToPx-0680j_4(F)I
 
-    move-result v3
+    move-result v2
 
     .line 462
     iget-object v0, p0, Landroidx/compose/foundation/layout/PaddingValuesModifier$measure$2;->$this_measure:Landroidx/compose/ui/layout/MeasureScope;
@@ -134,18 +130,18 @@
 
     invoke-interface {v0, p0}, Landroidx/compose/ui/layout/MeasureScope;->roundToPx-0680j_4(F)I
 
-    move-result v4
+    move-result v3
 
-    const/4 v6, 0x4
+    const/4 v5, 0x4
 
-    const/4 v7, 0x0
+    const/4 v6, 0x0
 
-    const/4 v5, 0x0
+    const/4 v4, 0x0
 
-    move-object v1, p1
+    move-object v0, p1
 
     .line 460
-    invoke-static/range {v1 .. v7}, Landroidx/compose/ui/layout/Placeable$PlacementScope;->place$default(Landroidx/compose/ui/layout/Placeable$PlacementScope;Landroidx/compose/ui/layout/Placeable;IIFILjava/lang/Object;)V
+    invoke-static/range {v0 .. v6}, Landroidx/compose/ui/layout/Placeable$PlacementScope;->place$default(Landroidx/compose/ui/layout/Placeable$PlacementScope;Landroidx/compose/ui/layout/Placeable;IIFILjava/lang/Object;)V
 
     return-void
 .end method

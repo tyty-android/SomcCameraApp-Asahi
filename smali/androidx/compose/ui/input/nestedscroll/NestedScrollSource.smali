@@ -12,7 +12,7 @@
 
 .annotation runtime Lkotlin/Metadata;
     d1 = {
-        "\u0000\"\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0010\u0008\n\u0002\u0008\u0003\n\u0002\u0010\u000b\n\u0002\u0008\u0006\n\u0002\u0010\u000e\n\u0002\u0008\u0004\u0008\u0087@\u0018\u0000 \u00112\u00020\u0001:\u0001\u0011B\u0014\u0008\u0000\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u00f8\u0001\u0000\u00a2\u0006\u0004\u0008\u0004\u0010\u0005J\u001a\u0010\u0006\u001a\u00020\u00072\u0008\u0010\u0008\u001a\u0004\u0018\u00010\u0001H\u00d6\u0003\u00a2\u0006\u0004\u0008\t\u0010\nJ\u0010\u0010\u000b\u001a\u00020\u0003H\u00d6\u0001\u00a2\u0006\u0004\u0008\u000c\u0010\u0005J\u000f\u0010\r\u001a\u00020\u000eH\u0016\u00a2\u0006\u0004\u0008\u000f\u0010\u0010R\u000e\u0010\u0002\u001a\u00020\u0003X\u0082\u0004\u00a2\u0006\u0002\n\u0000\u0088\u0001\u0002\u0092\u0001\u00020\u0003\u00f8\u0001\u0000\u0082\u0002\u0004\n\u0002\u0008\u0019\u00a8\u0006\u0012"
+        "\u0000\"\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0010\u0008\n\u0002\u0008\u0003\n\u0002\u0010\u000b\n\u0002\u0008\u0006\n\u0002\u0010\u000e\n\u0002\u0008\u0004\u0008\u0087@\u0018\u0000 \u00112\u00020\u0001:\u0001\u0011B\u0011\u0008\u0000\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u00a2\u0006\u0004\u0008\u0004\u0010\u0005J\u001a\u0010\u0006\u001a\u00020\u00072\u0008\u0010\u0008\u001a\u0004\u0018\u00010\u0001H\u00d6\u0003\u00a2\u0006\u0004\u0008\t\u0010\nJ\u0010\u0010\u000b\u001a\u00020\u0003H\u00d6\u0001\u00a2\u0006\u0004\u0008\u000c\u0010\u0005J\u000f\u0010\r\u001a\u00020\u000eH\u0016\u00a2\u0006\u0004\u0008\u000f\u0010\u0010R\u000e\u0010\u0002\u001a\u00020\u0003X\u0082\u0004\u00a2\u0006\u0002\n\u0000\u0088\u0001\u0002\u0092\u0001\u00020\u0003\u00a8\u0006\u0012"
     }
     d2 = {
         "Landroidx/compose/ui/input/nestedscroll/NestedScrollSource;",
@@ -56,6 +56,8 @@
 .field private static final Fling:I
 
 .field private static final Relocate:I
+
+.field private static final Wheel:I
 
 
 # instance fields
@@ -101,6 +103,15 @@
 
     sput v0, Landroidx/compose/ui/input/nestedscroll/NestedScrollSource;->Relocate:I
 
+    const/4 v0, 0x4
+
+    .line 267
+    invoke-static {v0}, Landroidx/compose/ui/input/nestedscroll/NestedScrollSource;->constructor-impl(I)I
+
+    move-result v0
+
+    sput v0, Landroidx/compose/ui/input/nestedscroll/NestedScrollSource;->Wheel:I
+
     return-void
 .end method
 
@@ -138,6 +149,15 @@
 
     .line 228
     sget v0, Landroidx/compose/ui/input/nestedscroll/NestedScrollSource;->Relocate:I
+
+    return v0
+.end method
+
+.method public static final synthetic access$getWheel$cp()I
+    .locals 1
+
+    .line 228
+    sget v0, Landroidx/compose/ui/input/nestedscroll/NestedScrollSource;->Wheel:I
 
     return v0
 .end method
@@ -249,17 +269,31 @@
     .line 237
     invoke-static {p0, v0}, Landroidx/compose/ui/input/nestedscroll/NestedScrollSource;->equals-impl0(II)Z
 
-    move-result p0
+    move-result v0
 
-    if-eqz p0, :cond_2
+    if-eqz v0, :cond_2
 
     .line 238
     const-string p0, "Relocate"
 
     goto :goto_0
 
-    .line 240
+    .line 239
     :cond_2
+    sget v0, Landroidx/compose/ui/input/nestedscroll/NestedScrollSource;->Wheel:I
+
+    invoke-static {p0, v0}, Landroidx/compose/ui/input/nestedscroll/NestedScrollSource;->equals-impl0(II)Z
+
+    move-result p0
+
+    if-eqz p0, :cond_3
+
+    const-string p0, "Wheel"
+
+    goto :goto_0
+
+    .line 240
+    :cond_3
     const-string p0, "Invalid"
 
     :goto_0

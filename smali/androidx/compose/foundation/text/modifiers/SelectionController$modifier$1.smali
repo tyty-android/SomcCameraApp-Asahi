@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Landroidx/compose/foundation/text/modifiers/SelectionController;-><init>(Landroidx/compose/foundation/text/selection/SelectionRegistrar;JLandroidx/compose/foundation/text/modifiers/StaticTextSelectionParams;)V
+    value = Landroidx/compose/foundation/text/modifiers/SelectionController;-><init>(JLandroidx/compose/foundation/text/selection/SelectionRegistrar;JLandroidx/compose/foundation/text/modifiers/StaticTextSelectionParams;)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -66,7 +66,7 @@
 .method public final invoke()Landroidx/compose/ui/layout/LayoutCoordinates;
     .locals 0
 
-    .line 86
+    .line 84
     iget-object p0, p0, Landroidx/compose/foundation/text/modifiers/SelectionController$modifier$1;->this$0:Landroidx/compose/foundation/text/modifiers/SelectionController;
 
     invoke-static {p0}, Landroidx/compose/foundation/text/modifiers/SelectionController;->access$getParams$p(Landroidx/compose/foundation/text/modifiers/SelectionController;)Landroidx/compose/foundation/text/modifiers/StaticTextSelectionParams;
@@ -83,7 +83,7 @@
 .method public bridge synthetic invoke()Ljava/lang/Object;
     .locals 0
 
-    .line 84
+    .line 82
     invoke-virtual {p0}, Landroidx/compose/foundation/text/modifiers/SelectionController$modifier$1;->invoke()Landroidx/compose/ui/layout/LayoutCoordinates;
 
     move-result-object p0

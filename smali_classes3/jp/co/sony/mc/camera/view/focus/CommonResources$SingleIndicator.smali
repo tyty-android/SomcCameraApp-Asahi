@@ -17,17 +17,17 @@
 # static fields
 .field public static final FAIL:I = 0x0
 
-.field public static final FOCUSING:I = 0x7f080099
+.field public static final FOCUSING:I = 0x7f080091
 
-.field public static final FOCUSING_RED:I = 0x7f080098
+.field public static final FOCUSING_RED:I = 0x7f080090
 
-.field public static final NORMAL:I = 0x7f080099
+.field public static final NORMAL:I = 0x7f080091
 
-.field public static final NORMAL_RED:I = 0x7f080098
+.field public static final NORMAL_RED:I = 0x7f080090
 
-.field public static final OUT_OF_FOCUS:I = 0x7f080097
+.field public static final OUT_OF_FOCUS:I = 0x7f08008f
 
-.field public static final SUCCESS:I = 0x7f080096
+.field public static final SUCCESS:I = 0x7f08008e
 
 
 # direct methods

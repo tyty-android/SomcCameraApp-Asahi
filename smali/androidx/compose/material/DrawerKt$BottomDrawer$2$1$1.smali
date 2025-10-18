@@ -74,7 +74,7 @@
 .method public bridge synthetic invoke()Ljava/lang/Object;
     .locals 0
 
-    .line 691
+    .line 686
     invoke-virtual {p0}, Landroidx/compose/material/DrawerKt$BottomDrawer$2$1$1;->invoke()V
 
     sget-object p0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
@@ -85,7 +85,7 @@
 .method public final invoke()V
     .locals 7
 
-    .line 695
+    .line 690
     iget-boolean v0, p0, Landroidx/compose/material/DrawerKt$BottomDrawer$2$1$1;->$gesturesEnabled:Z
 
     if-eqz v0, :cond_0
@@ -100,7 +100,7 @@
 
     if-eqz v0, :cond_0
 
-    .line 697
+    .line 692
     iget-object v1, p0, Landroidx/compose/material/DrawerKt$BottomDrawer$2$1$1;->$scope:Lkotlinx/coroutines/CoroutineScope;
 
     new-instance v0, Landroidx/compose/material/DrawerKt$BottomDrawer$2$1$1$1;

@@ -28,7 +28,7 @@
 .method public static synthetic animateItemPlacement$default(Landroidx/compose/foundation/lazy/LazyItemScope;Landroidx/compose/ui/Modifier;Landroidx/compose/animation/core/FiniteAnimationSpec;ILjava/lang/Object;)Landroidx/compose/ui/Modifier;
     .locals 0
 
-    .line 95
+    .line 96
     invoke-static {p0, p1, p2, p3, p4}, Landroidx/compose/foundation/lazy/LazyItemScope;->animateItemPlacement$default(Landroidx/compose/foundation/lazy/LazyItemScope;Landroidx/compose/ui/Modifier;Landroidx/compose/animation/core/FiniteAnimationSpec;ILjava/lang/Object;)Landroidx/compose/ui/Modifier;
 
     move-result-object p0
@@ -39,7 +39,7 @@
 .method public static synthetic fillParentMaxHeight$default(Landroidx/compose/foundation/lazy/LazyItemScope;Landroidx/compose/ui/Modifier;FILjava/lang/Object;)Landroidx/compose/ui/Modifier;
     .locals 0
 
-    .line 78
+    .line 79
     invoke-static {p0, p1, p2, p3, p4}, Landroidx/compose/foundation/lazy/LazyItemScope;->fillParentMaxHeight$default(Landroidx/compose/foundation/lazy/LazyItemScope;Landroidx/compose/ui/Modifier;FILjava/lang/Object;)Landroidx/compose/ui/Modifier;
 
     move-result-object p0
@@ -50,7 +50,7 @@
 .method public static synthetic fillParentMaxSize$default(Landroidx/compose/foundation/lazy/LazyItemScope;Landroidx/compose/ui/Modifier;FILjava/lang/Object;)Landroidx/compose/ui/Modifier;
     .locals 0
 
-    .line 48
+    .line 49
     invoke-static {p0, p1, p2, p3, p4}, Landroidx/compose/foundation/lazy/LazyItemScope;->fillParentMaxSize$default(Landroidx/compose/foundation/lazy/LazyItemScope;Landroidx/compose/ui/Modifier;FILjava/lang/Object;)Landroidx/compose/ui/Modifier;
 
     move-result-object p0
@@ -61,7 +61,7 @@
 .method public static synthetic fillParentMaxWidth$default(Landroidx/compose/foundation/lazy/LazyItemScope;Landroidx/compose/ui/Modifier;FILjava/lang/Object;)Landroidx/compose/ui/Modifier;
     .locals 0
 
-    .line 63
+    .line 64
     invoke-static {p0, p1, p2, p3, p4}, Landroidx/compose/foundation/lazy/LazyItemScope;->fillParentMaxWidth$default(Landroidx/compose/foundation/lazy/LazyItemScope;Landroidx/compose/ui/Modifier;FILjava/lang/Object;)Landroidx/compose/ui/Modifier;
 
     move-result-object p0

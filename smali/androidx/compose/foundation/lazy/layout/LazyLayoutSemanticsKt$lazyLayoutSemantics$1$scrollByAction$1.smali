@@ -80,14 +80,14 @@
 .method public final invoke(FF)Ljava/lang/Boolean;
     .locals 6
 
-    .line 93
+    .line 77
     iget-boolean v0, p0, Landroidx/compose/foundation/lazy/layout/LazyLayoutSemanticsKt$lazyLayoutSemantics$1$scrollByAction$1;->$isVertical:Z
 
     if-eqz v0, :cond_0
 
     move p1, p2
 
-    .line 98
+    .line 82
     :cond_0
     iget-object v0, p0, Landroidx/compose/foundation/lazy/layout/LazyLayoutSemanticsKt$lazyLayoutSemantics$1$scrollByAction$1;->$coroutineScope:Lkotlinx/coroutines/CoroutineScope;
 
@@ -113,7 +113,7 @@
 
     const/4 p0, 0x1
 
-    .line 102
+    .line 86
     invoke-static {p0}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
     move-result-object p0
@@ -124,7 +124,7 @@
 .method public bridge synthetic invoke(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
 
-    .line 91
+    .line 75
     check-cast p1, Ljava/lang/Number;
 
     invoke-virtual {p1}, Ljava/lang/Number;->floatValue()F

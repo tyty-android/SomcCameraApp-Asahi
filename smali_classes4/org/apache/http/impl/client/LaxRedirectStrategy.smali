@@ -22,20 +22,36 @@
 .end method
 
 .method public constructor <init>()V
-    .locals 4
+    .locals 3
+
+    const/4 v0, 0x4
 
     .line 51
-    const-string v0, "HEAD"
+    new-array v0, v0, [Ljava/lang/String;
 
-    const-string v1, "DELETE"
+    const/4 v1, 0x0
 
     const-string v2, "GET"
 
-    const-string v3, "POST"
+    aput-object v2, v0, v1
 
-    filled-new-array {v2, v3, v0, v1}, [Ljava/lang/String;
+    const/4 v1, 0x1
 
-    move-result-object v0
+    const-string v2, "POST"
+
+    aput-object v2, v0, v1
+
+    const/4 v1, 0x2
+
+    const-string v2, "HEAD"
+
+    aput-object v2, v0, v1
+
+    const/4 v1, 0x3
+
+    const-string v2, "DELETE"
+
+    aput-object v2, v0, v1
 
     invoke-direct {p0, v0}, Lorg/apache/http/impl/client/DefaultRedirectStrategy;-><init>([Ljava/lang/String;)V
 

@@ -6,27 +6,27 @@
 # annotations
 .annotation runtime Lkotlin/Metadata;
     d1 = {
-        "\u0000\u001c\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0003\n\u0000\n\u0002\u0010\u000b\n\u0002\u0008\u0006\n\u0002\u0018\u0002\u0008\u0000\u0018\u00002\u00020\u000cB%\u0012\n\u0010\u0002\u001a\u0006\u0012\u0002\u0008\u00030\u0001\u0012\u0008\u0010\u0004\u001a\u0004\u0018\u00010\u0003\u0012\u0006\u0010\u0006\u001a\u00020\u0005\u00a2\u0006\u0004\u0008\u0007\u0010\u0008J\r\u0010\t\u001a\u00020\u0005\u00a2\u0006\u0004\u0008\t\u0010\n\u00a8\u0006\u000b"
+        "\u0000&\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0003\n\u0000\n\u0002\u0010\u000b\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0002\u0008\u0000\u0018\u00002\u00020\u0001B#\u0012\n\u0010\u0002\u001a\u0006\u0012\u0002\u0008\u00030\u0003\u0012\u0008\u0010\u0004\u001a\u0004\u0018\u00010\u0005\u0012\u0006\u0010\u0006\u001a\u00020\u0007\u00a2\u0006\u0002\u0010\u0008J\u0006\u0010\u000b\u001a\u00020\u0007R\t\u0010\t\u001a\u00020\nX\u0082\u0004\u00a8\u0006\u000c"
     }
     d2 = {
         "Lkotlinx/coroutines/CancelledContinuation;",
-        "Lkotlin/coroutines/Continuation;",
+        "Lkotlinx/coroutines/CompletedExceptionally;",
         "continuation",
-        "",
+        "Lkotlin/coroutines/Continuation;",
         "cause",
         "",
         "handled",
-        "<init>",
+        "",
         "(Lkotlin/coroutines/Continuation;Ljava/lang/Throwable;Z)V",
+        "_resumed",
+        "Lkotlinx/atomicfu/AtomicBoolean;",
         "makeResumed",
-        "()Z",
-        "kotlinx-coroutines-core",
-        "Lkotlinx/coroutines/CompletedExceptionally;"
+        "kotlinx-coroutines-core"
     }
     k = 0x1
     mv = {
         0x1,
-        0x6,
+        0x8,
         0x0
     }
     xi = 0x30
@@ -34,11 +34,14 @@
 
 
 # static fields
-.field private static final synthetic _resumed$FU:Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;
+.field private static final _resumed$FU:Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;
 
 
 # instance fields
-.field private volatile synthetic _resumed:I
+.field private volatile _resumed:I
+    .annotation runtime Lkotlin/jvm/Volatile;
+    .end annotation
+.end field
 
 
 # direct methods
@@ -115,13 +118,13 @@
 .method public final makeResumed()Z
     .locals 3
 
-    .line 65
     sget-object v0, Lkotlinx/coroutines/CancelledContinuation;->_resumed$FU:Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;
 
     const/4 v1, 0x0
 
     const/4 v2, 0x1
 
+    .line 65
     invoke-virtual {v0, p0, v1, v2}, Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;->compareAndSet(Ljava/lang/Object;II)Z
 
     move-result p0

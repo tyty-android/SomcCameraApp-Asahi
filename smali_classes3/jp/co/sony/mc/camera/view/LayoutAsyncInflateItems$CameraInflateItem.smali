@@ -81,7 +81,7 @@
     .line 29
     new-instance v0, Ljp/co/sony/mc/camera/view/LayoutAsyncInflateItems$CameraInflateItem;
 
-    const v1, 0x7f0c0151
+    const v1, 0x7f0c0141
 
     const-string v2, "RECTANGLE_FAST_TOUCH"
 

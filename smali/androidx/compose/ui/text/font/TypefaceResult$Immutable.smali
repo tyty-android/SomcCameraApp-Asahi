@@ -62,19 +62,15 @@
 .end method
 
 .method public constructor <init>(Ljava/lang/Object;Z)V
-    .locals 1
+    .locals 0
 
-    const-string/jumbo v0, "value"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 145
+    .line 152
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 146
+    .line 153
     iput-object p1, p0, Landroidx/compose/ui/text/font/TypefaceResult$Immutable;->value:Ljava/lang/Object;
 
-    .line 147
+    .line 154
     iput-boolean p2, p0, Landroidx/compose/ui/text/font/TypefaceResult$Immutable;->cacheable:Z
 
     return-void
@@ -89,7 +85,7 @@
 
     const/4 p2, 0x1
 
-    .line 145
+    .line 152
     :cond_0
     invoke-direct {p0, p1, p2}, Landroidx/compose/ui/text/font/TypefaceResult$Immutable;-><init>(Ljava/lang/Object;Z)V
 
@@ -101,7 +97,7 @@
 .method public getCacheable()Z
     .locals 0
 
-    .line 147
+    .line 154
     iget-boolean p0, p0, Landroidx/compose/ui/text/font/TypefaceResult$Immutable;->cacheable:Z
 
     return p0
@@ -110,7 +106,7 @@
 .method public getValue()Ljava/lang/Object;
     .locals 0
 
-    .line 146
+    .line 153
     iget-object p0, p0, Landroidx/compose/ui/text/font/TypefaceResult$Immutable;->value:Ljava/lang/Object;
 
     return-object p0

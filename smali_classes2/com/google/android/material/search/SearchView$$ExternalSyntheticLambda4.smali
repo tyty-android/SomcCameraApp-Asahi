@@ -3,7 +3,7 @@
 .source "D8$$SyntheticClass"
 
 # interfaces
-.implements Landroid/view/View$OnClickListener;
+.implements Landroidx/core/view/OnApplyWindowInsetsListener;
 
 
 # instance fields
@@ -24,13 +24,15 @@
 
 
 # virtual methods
-.method public final onClick(Landroid/view/View;)V
+.method public final onApplyWindowInsets(Landroid/view/View;Landroidx/core/view/WindowInsetsCompat;)Landroidx/core/view/WindowInsetsCompat;
     .locals 0
 
     .line 0
     iget-object p0, p0, Lcom/google/android/material/search/SearchView$$ExternalSyntheticLambda4;->f$0:Lcom/google/android/material/search/SearchView;
 
-    invoke-virtual {p0, p1}, Lcom/google/android/material/search/SearchView;->lambda$setupWithSearchBar$7$com-google-android-material-search-SearchView(Landroid/view/View;)V
+    invoke-virtual {p0, p1, p2}, Lcom/google/android/material/search/SearchView;->lambda$setUpStatusBarSpacerInsetListener$5$com-google-android-material-search-SearchView(Landroid/view/View;Landroidx/core/view/WindowInsetsCompat;)Landroidx/core/view/WindowInsetsCompat;
 
-    return-void
+    move-result-object p0
+
+    return-object p0
 .end method

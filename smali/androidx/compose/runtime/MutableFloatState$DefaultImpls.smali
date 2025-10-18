@@ -30,7 +30,7 @@
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
-    .line 93
+    .line 94
     invoke-static {p0}, Landroidx/compose/runtime/MutableFloatState;->access$getValue$jd(Landroidx/compose/runtime/MutableFloatState;)F
 
     move-result p0
@@ -47,7 +47,7 @@
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
-    .line 94
+    .line 95
     invoke-static {p0, p1}, Landroidx/compose/runtime/MutableFloatState;->access$setValue$jd(Landroidx/compose/runtime/MutableFloatState;F)V
 
     return-void

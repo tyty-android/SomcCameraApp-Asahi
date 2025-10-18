@@ -5,20 +5,4 @@
         <item quantity="zero">%d jaunu paziņojumu</item>
         <item quantity="one">%d jauns paziņojums</item>
     </plurals>
-    <plurals name="mv_minute_remaining_txt">
-        <item quantity="other">Atlikušas %1$d min</item>
-        <item quantity="one">Atlikusi 1 min</item>
-    </plurals>
-    <plurals name="mv_minute_txt">
-        <item quantity="other">%1$d minūtes</item>
-        <item quantity="one">1 minūte</item>
-    </plurals>
-    <plurals name="mv_second_remaining_txt">
-        <item quantity="other">Atlikušas %1$d s</item>
-        <item quantity="one">Atlikusi 1 s</item>
-    </plurals>
-    <plurals name="mv_second_txt">
-        <item quantity="other">%1$d sekundes</item>
-        <item quantity="one">1 sekunde</item>
-    </plurals>
 </resources>

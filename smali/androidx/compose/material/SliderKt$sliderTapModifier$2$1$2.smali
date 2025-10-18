@@ -102,7 +102,7 @@
 .method public bridge synthetic invoke(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 2
 
-    .line 910
+    .line 914
     check-cast p1, Landroidx/compose/ui/geometry/Offset;
 
     invoke-virtual {p1}, Landroidx/compose/ui/geometry/Offset;->unbox-impl()J
@@ -119,7 +119,7 @@
 .method public final invoke-k-4lQ0M(J)V
     .locals 6
 
-    .line 921
+    .line 925
     iget-object v0, p0, Landroidx/compose/material/SliderKt$sliderTapModifier$2$1$2;->$scope:Lkotlinx/coroutines/CoroutineScope;
 
     new-instance p1, Landroidx/compose/material/SliderKt$sliderTapModifier$2$1$2$1;

@@ -101,18 +101,18 @@
 .method constructor <init>(Z)V
     .locals 1
 
-    .line 474
+    .line 475
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     const/4 v0, 0x0
 
-    .line 475
+    .line 476
     iput-object v0, p0, Lcom/google/gson/internal/LinkedTreeMap$Node;->key:Ljava/lang/Object;
 
-    .line 476
+    .line 477
     iput-boolean p1, p0, Lcom/google/gson/internal/LinkedTreeMap$Node;->allowNullValue:Z
 
-    .line 477
+    .line 478
     iput-object p0, p0, Lcom/google/gson/internal/LinkedTreeMap$Node;->prev:Lcom/google/gson/internal/LinkedTreeMap$Node;
 
     iput-object p0, p0, Lcom/google/gson/internal/LinkedTreeMap$Node;->next:Lcom/google/gson/internal/LinkedTreeMap$Node;
@@ -134,33 +134,33 @@
         }
     .end annotation
 
-    .line 481
+    .line 482
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 482
+    .line 483
     iput-object p2, p0, Lcom/google/gson/internal/LinkedTreeMap$Node;->parent:Lcom/google/gson/internal/LinkedTreeMap$Node;
 
-    .line 483
+    .line 484
     iput-object p3, p0, Lcom/google/gson/internal/LinkedTreeMap$Node;->key:Ljava/lang/Object;
 
-    .line 484
+    .line 485
     iput-boolean p1, p0, Lcom/google/gson/internal/LinkedTreeMap$Node;->allowNullValue:Z
 
     const/4 p1, 0x1
 
-    .line 485
+    .line 486
     iput p1, p0, Lcom/google/gson/internal/LinkedTreeMap$Node;->height:I
 
-    .line 486
+    .line 487
     iput-object p4, p0, Lcom/google/gson/internal/LinkedTreeMap$Node;->next:Lcom/google/gson/internal/LinkedTreeMap$Node;
 
-    .line 487
+    .line 488
     iput-object p5, p0, Lcom/google/gson/internal/LinkedTreeMap$Node;->prev:Lcom/google/gson/internal/LinkedTreeMap$Node;
 
-    .line 488
+    .line 489
     iput-object p0, p5, Lcom/google/gson/internal/LinkedTreeMap$Node;->next:Lcom/google/gson/internal/LinkedTreeMap$Node;
 
-    .line 489
+    .line 490
     iput-object p0, p4, Lcom/google/gson/internal/LinkedTreeMap$Node;->prev:Lcom/google/gson/internal/LinkedTreeMap$Node;
 
     return-void
@@ -171,17 +171,17 @@
 .method public equals(Ljava/lang/Object;)Z
     .locals 3
 
-    .line 510
+    .line 515
     instance-of v0, p1, Ljava/util/Map$Entry;
 
     const/4 v1, 0x0
 
     if-eqz v0, :cond_2
 
-    .line 511
+    .line 516
     check-cast p1, Ljava/util/Map$Entry;
 
-    .line 512
+    .line 517
     iget-object v0, p0, Lcom/google/gson/internal/LinkedTreeMap$Node;->key:Ljava/lang/Object;
 
     if-nez v0, :cond_0
@@ -210,7 +210,7 @@
 
     if-nez p0, :cond_1
 
-    .line 513
+    .line 518
     invoke-interface {p1}, Ljava/util/Map$Entry;->getValue()Ljava/lang/Object;
 
     move-result-object p0
@@ -247,7 +247,7 @@
         }
     .end annotation
 
-    .line 532
+    .line 536
     iget-object v0, p0, Lcom/google/gson/internal/LinkedTreeMap$Node;->left:Lcom/google/gson/internal/LinkedTreeMap$Node;
 
     :goto_0
@@ -259,7 +259,7 @@
 
     if-eqz p0, :cond_0
 
-    .line 535
+    .line 539
     iget-object v0, p0, Lcom/google/gson/internal/LinkedTreeMap$Node;->left:Lcom/google/gson/internal/LinkedTreeMap$Node;
 
     goto :goto_0
@@ -276,7 +276,7 @@
         }
     .end annotation
 
-    .line 493
+    .line 495
     iget-object p0, p0, Lcom/google/gson/internal/LinkedTreeMap$Node;->key:Ljava/lang/Object;
 
     return-object p0
@@ -290,7 +290,7 @@
         }
     .end annotation
 
-    .line 497
+    .line 500
     iget-object p0, p0, Lcom/google/gson/internal/LinkedTreeMap$Node;->value:Ljava/lang/Object;
 
     return-object p0
@@ -299,7 +299,7 @@
 .method public hashCode()I
     .locals 2
 
-    .line 519
+    .line 525
     iget-object v0, p0, Lcom/google/gson/internal/LinkedTreeMap$Node;->key:Ljava/lang/Object;
 
     const/4 v1, 0x0
@@ -315,7 +315,6 @@
 
     move-result v0
 
-    .line 520
     :goto_0
     iget-object p0, p0, Lcom/google/gson/internal/LinkedTreeMap$Node;->value:Ljava/lang/Object;
 
@@ -344,7 +343,7 @@
         }
     .end annotation
 
-    .line 545
+    .line 547
     iget-object v0, p0, Lcom/google/gson/internal/LinkedTreeMap$Node;->right:Lcom/google/gson/internal/LinkedTreeMap$Node;
 
     :goto_0
@@ -356,7 +355,7 @@
 
     if-eqz p0, :cond_0
 
-    .line 548
+    .line 550
     iget-object v0, p0, Lcom/google/gson/internal/LinkedTreeMap$Node;->right:Lcom/google/gson/internal/LinkedTreeMap$Node;
 
     goto :goto_0
@@ -375,14 +374,14 @@
 
     if-nez p1, :cond_1
 
-    .line 501
+    .line 505
     iget-boolean v0, p0, Lcom/google/gson/internal/LinkedTreeMap$Node;->allowNullValue:Z
 
     if-eqz v0, :cond_0
 
     goto :goto_0
 
-    .line 502
+    .line 506
     :cond_0
     new-instance p0, Ljava/lang/NullPointerException;
 
@@ -392,12 +391,12 @@
 
     throw p0
 
-    .line 504
+    .line 508
     :cond_1
     :goto_0
     iget-object v0, p0, Lcom/google/gson/internal/LinkedTreeMap$Node;->value:Ljava/lang/Object;
 
-    .line 505
+    .line 509
     iput-object p1, p0, Lcom/google/gson/internal/LinkedTreeMap$Node;->value:Ljava/lang/Object;
 
     return-object v0
@@ -406,7 +405,7 @@
 .method public toString()Ljava/lang/String;
     .locals 2
 
-    .line 524
+    .line 530
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V

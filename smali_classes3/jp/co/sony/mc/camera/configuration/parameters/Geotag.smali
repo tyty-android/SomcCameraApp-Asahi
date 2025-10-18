@@ -57,7 +57,7 @@
     .line 16
     new-instance v6, Ljp/co/sony/mc/camera/configuration/parameters/Geotag;
 
-    const v4, 0x7f1103bf
+    const v4, 0x7f1103f4
 
     const/4 v5, 0x1
 
@@ -76,7 +76,7 @@
     .line 20
     new-instance v0, Ljp/co/sony/mc/camera/configuration/parameters/Geotag;
 
-    const v11, 0x7f1103be
+    const v11, 0x7f1103f3
 
     const/4 v12, 0x0
 

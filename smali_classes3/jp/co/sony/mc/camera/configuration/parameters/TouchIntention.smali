@@ -63,9 +63,9 @@
     .line 26
     new-instance v0, Ljp/co/sony/mc/camera/configuration/parameters/TouchIntention;
 
-    const v1, 0x7f0802e5
+    const v1, 0x7f0802fb
 
-    const v2, 0x7f11044b
+    const v2, 0x7f110480
 
     const-string v3, "OBJECT_TRACKING_AE"
 
@@ -78,9 +78,9 @@
     .line 29
     new-instance v0, Ljp/co/sony/mc/camera/configuration/parameters/TouchIntention;
 
-    const v1, 0x7f0802e4
+    const v1, 0x7f0802fa
 
-    const v2, 0x7f11044c
+    const v2, 0x7f110481
 
     const-string v3, "OBJECT_TRACKING"
 
@@ -93,9 +93,9 @@
     .line 32
     new-instance v0, Ljp/co/sony/mc/camera/configuration/parameters/TouchIntention;
 
-    const v1, 0x7f0802e3
+    const v1, 0x7f0802f9
 
-    const v2, 0x7f110449
+    const v2, 0x7f11047e
 
     const-string v3, "FOCUS_ONLY"
 
@@ -108,9 +108,9 @@
     .line 35
     new-instance v0, Ljp/co/sony/mc/camera/configuration/parameters/TouchIntention;
 
-    const v1, 0x7f0802e2
+    const v1, 0x7f0802f8
 
-    const v2, 0x7f11044d
+    const v2, 0x7f110482
 
     const-string v3, "FOCUS_AND_EXPOSURE"
 

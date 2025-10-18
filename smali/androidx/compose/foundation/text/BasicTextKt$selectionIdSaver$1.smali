@@ -69,13 +69,9 @@
 
 # virtual methods
 .method public final invoke(Landroidx/compose/runtime/saveable/SaverScope;J)Ljava/lang/Long;
-    .locals 1
+    .locals 0
 
-    const-string v0, "$this$Saver"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 339
+    .line 350
     iget-object p0, p0, Landroidx/compose/foundation/text/BasicTextKt$selectionIdSaver$1;->$selectionRegistrar:Landroidx/compose/foundation/text/selection/SelectionRegistrar;
 
     invoke-static {p0, p2, p3}, Landroidx/compose/foundation/text/selection/SelectionRegistrarKt;->hasSelection(Landroidx/compose/foundation/text/selection/SelectionRegistrar;J)Z
@@ -100,7 +96,7 @@
 .method public bridge synthetic invoke(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
     .locals 2
 
-    .line 338
+    .line 349
     check-cast p1, Landroidx/compose/runtime/saveable/SaverScope;
 
     check-cast p2, Ljava/lang/Number;

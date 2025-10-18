@@ -55,7 +55,7 @@
     f = "Swipeable.kt"
     i = {}
     l = {
-        0x200
+        0x208
     }
     m = "invokeSuspend"
     n = {}
@@ -189,7 +189,7 @@
 
     move-result-object v0
 
-    .line 65535
+    .line 518
     iget v1, p0, Landroidx/compose/material/SwipeableKt$rememberSwipeableStateFor$1;->label:I
 
     const/4 v2, 0x1
@@ -214,7 +214,7 @@
     :cond_1
     invoke-static {p1}, Lkotlin/ResultKt;->throwOnFailure(Ljava/lang/Object;)V
 
-    .line 511
+    .line 519
     iget-object p1, p0, Landroidx/compose/material/SwipeableKt$rememberSwipeableStateFor$1;->$value:Ljava/lang/Object;
 
     iget-object v1, p0, Landroidx/compose/material/SwipeableKt$rememberSwipeableStateFor$1;->$swipeableState:Landroidx/compose/material/SwipeableState;
@@ -229,7 +229,7 @@
 
     if-nez p1, :cond_2
 
-    .line 512
+    .line 520
     iget-object v3, p0, Landroidx/compose/material/SwipeableKt$rememberSwipeableStateFor$1;->$swipeableState:Landroidx/compose/material/SwipeableState;
 
     iget-object v4, p0, Landroidx/compose/material/SwipeableKt$rememberSwipeableStateFor$1;->$value:Ljava/lang/Object;
@@ -254,7 +254,7 @@
 
     return-object v0
 
-    .line 514
+    .line 522
     :cond_2
     :goto_0
     sget-object p0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;

@@ -53,8 +53,8 @@
     f = "Scroll.kt"
     i = {}
     l = {
-        0x120,
-        0x122
+        0x125,
+        0x127
     }
     m = "invokeSuspend"
     n = {}
@@ -191,7 +191,7 @@
 
     move-result-object v0
 
-    .line 65535
+    .line 291
     iget v1, p0, Landroidx/compose/foundation/ScrollKt$scroll$2$semantics$1$1$1;->label:I
 
     const/4 v2, 0x2
@@ -224,14 +224,14 @@
     :cond_2
     invoke-static {p1}, Lkotlin/ResultKt;->throwOnFailure(Ljava/lang/Object;)V
 
-    .line 287
+    .line 292
     iget-boolean p1, p0, Landroidx/compose/foundation/ScrollKt$scroll$2$semantics$1$1$1;->$isVertical:Z
 
     const-string v1, "null cannot be cast to non-null type androidx.compose.foundation.gestures.ScrollableState"
 
     if-eqz p1, :cond_3
 
-    .line 288
+    .line 293
     iget-object p1, p0, Landroidx/compose/foundation/ScrollKt$scroll$2$semantics$1$1$1;->$state:Landroidx/compose/foundation/ScrollState;
 
     invoke-static {p1, v1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;Ljava/lang/String;)V
@@ -262,7 +262,7 @@
 
     return-object v0
 
-    .line 290
+    .line 295
     :cond_3
     iget-object p1, p0, Landroidx/compose/foundation/ScrollKt$scroll$2$semantics$1$1$1;->$state:Landroidx/compose/foundation/ScrollState;
 
@@ -294,7 +294,7 @@
 
     return-object v0
 
-    .line 292
+    .line 297
     :cond_4
     :goto_1
     sget-object p0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;

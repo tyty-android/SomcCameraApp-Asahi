@@ -30,7 +30,7 @@
 .method constructor <init>()V
     .locals 0
 
-    .line 2720
+    .line 3155
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -41,7 +41,7 @@
 .method public createFromParcel(Landroid/os/Parcel;)Lcom/google/android/material/slider/BaseSlider$SliderState;
     .locals 1
 
-    .line 2725
+    .line 3160
     new-instance p0, Lcom/google/android/material/slider/BaseSlider$SliderState;
 
     const/4 v0, 0x0
@@ -54,7 +54,7 @@
 .method public bridge synthetic createFromParcel(Landroid/os/Parcel;)Ljava/lang/Object;
     .locals 0
 
-    .line 2720
+    .line 3155
     invoke-virtual {p0, p1}, Lcom/google/android/material/slider/BaseSlider$SliderState$1;->createFromParcel(Landroid/os/Parcel;)Lcom/google/android/material/slider/BaseSlider$SliderState;
 
     move-result-object p0
@@ -65,7 +65,7 @@
 .method public newArray(I)[Lcom/google/android/material/slider/BaseSlider$SliderState;
     .locals 0
 
-    .line 2731
+    .line 3166
     new-array p0, p1, [Lcom/google/android/material/slider/BaseSlider$SliderState;
 
     return-object p0
@@ -74,7 +74,7 @@
 .method public bridge synthetic newArray(I)[Ljava/lang/Object;
     .locals 0
 
-    .line 2720
+    .line 3155
     invoke-virtual {p0, p1}, Lcom/google/android/material/slider/BaseSlider$SliderState$1;->newArray(I)[Lcom/google/android/material/slider/BaseSlider$SliderState;
 
     move-result-object p0

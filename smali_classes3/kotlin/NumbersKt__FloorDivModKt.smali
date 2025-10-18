@@ -43,7 +43,7 @@
 .method private static final floorDiv(BB)I
     .locals 2
 
-    .line 19
+    .line 20
     div-int v0, p0, p1
 
     xor-int v1, p0, p1
@@ -63,7 +63,7 @@
 .method private static final floorDiv(BI)I
     .locals 2
 
-    .line 55
+    .line 56
     div-int v0, p0, p1
 
     xor-int v1, p0, p1
@@ -83,7 +83,7 @@
 .method private static final floorDiv(BS)I
     .locals 2
 
-    .line 37
+    .line 38
     div-int v0, p0, p1
 
     xor-int v1, p0, p1
@@ -103,7 +103,7 @@
 .method private static final floorDiv(IB)I
     .locals 2
 
-    .line 163
+    .line 164
     div-int v0, p0, p1
 
     xor-int v1, p0, p1
@@ -123,7 +123,7 @@
 .method private static final floorDiv(II)I
     .locals 2
 
-    .line 199
+    .line 200
     div-int v0, p0, p1
 
     xor-int v1, p0, p1
@@ -143,7 +143,7 @@
 .method private static final floorDiv(IS)I
     .locals 2
 
-    .line 181
+    .line 182
     div-int v0, p0, p1
 
     xor-int v1, p0, p1
@@ -163,7 +163,7 @@
 .method private static final floorDiv(SB)I
     .locals 2
 
-    .line 91
+    .line 92
     div-int v0, p0, p1
 
     xor-int v1, p0, p1
@@ -183,7 +183,7 @@
 .method private static final floorDiv(SI)I
     .locals 2
 
-    .line 127
+    .line 128
     div-int v0, p0, p1
 
     xor-int v1, p0, p1
@@ -203,7 +203,7 @@
 .method private static final floorDiv(SS)I
     .locals 2
 
-    .line 109
+    .line 110
     div-int v0, p0, p1
 
     xor-int v1, p0, p1
@@ -225,7 +225,7 @@
 
     int-to-long v0, p0
 
-    .line 73
+    .line 74
     div-long v2, v0, p1
 
     xor-long v4, v0, p1
@@ -255,7 +255,7 @@
 
     int-to-long v0, p0
 
-    .line 222
+    .line 223
     div-long v2, v0, p1
 
     xor-long v4, v0, p1
@@ -285,7 +285,7 @@
 
     int-to-long v0, p2
 
-    .line 240
+    .line 241
     div-long v2, p0, v0
 
     xor-long v4, p0, v0
@@ -315,7 +315,7 @@
 
     int-to-long v0, p2
 
-    .line 276
+    .line 277
     div-long v2, p0, v0
 
     xor-long v4, p0, v0
@@ -343,7 +343,7 @@
 .method private static final floorDiv(JJ)J
     .locals 6
 
-    .line 294
+    .line 295
     div-long v0, p0, p2
 
     xor-long v2, p0, p2
@@ -373,7 +373,7 @@
 
     int-to-long v0, p2
 
-    .line 258
+    .line 259
     div-long v2, p0, v0
 
     xor-long v4, p0, v0
@@ -403,7 +403,7 @@
 
     int-to-long v0, p0
 
-    .line 145
+    .line 146
     div-long v2, v0, p1
 
     xor-long v4, v0, p1
@@ -431,7 +431,7 @@
 .method private static final mod(BB)B
     .locals 2
 
-    .line 30
+    .line 31
     rem-int/2addr p0, p1
 
     xor-int v0, p0, p1
@@ -456,7 +456,7 @@
 .method private static final mod(IB)B
     .locals 2
 
-    .line 174
+    .line 175
     rem-int/2addr p0, p1
 
     xor-int v0, p0, p1
@@ -483,7 +483,7 @@
 
     int-to-long v0, p2
 
-    .line 251
+    .line 252
     rem-long/2addr p0, v0
 
     xor-long v2, p0, v0
@@ -512,7 +512,7 @@
 .method private static final mod(SB)B
     .locals 2
 
-    .line 102
+    .line 103
     rem-int/2addr p0, p1
 
     xor-int v0, p0, p1
@@ -547,7 +547,7 @@
 
     goto :goto_0
 
-    .line 365
+    .line 366
     :cond_0
     invoke-static {p0, p1}, Ljava/lang/Math;->signum(D)D
 
@@ -585,7 +585,7 @@
 
     goto :goto_0
 
-    .line 351
+    .line 352
     :cond_0
     invoke-static {p0, p1}, Ljava/lang/Math;->signum(D)D
 
@@ -623,7 +623,7 @@
 
     goto :goto_0
 
-    .line 338
+    .line 339
     :cond_0
     invoke-static {v0, v1}, Ljava/lang/Math;->signum(D)D
 
@@ -659,7 +659,7 @@
 
     goto :goto_0
 
-    .line 324
+    .line 325
     :cond_0
     invoke-static {p0}, Ljava/lang/Math;->signum(F)F
 
@@ -685,7 +685,7 @@
 .method private static final mod(BI)I
     .locals 2
 
-    .line 66
+    .line 67
     rem-int/2addr p0, p1
 
     xor-int v0, p0, p1
@@ -708,7 +708,7 @@
 .method private static final mod(II)I
     .locals 2
 
-    .line 213
+    .line 214
     rem-int/2addr p0, p1
 
     xor-int v0, p0, p1
@@ -733,7 +733,7 @@
 
     int-to-long v0, p2
 
-    .line 287
+    .line 288
     rem-long/2addr p0, v0
 
     xor-long v2, p0, v0
@@ -760,7 +760,7 @@
 .method private static final mod(SI)I
     .locals 2
 
-    .line 138
+    .line 139
     rem-int/2addr p0, p1
 
     xor-int v0, p0, p1
@@ -785,7 +785,7 @@
 
     int-to-long v0, p0
 
-    .line 84
+    .line 85
     rem-long/2addr v0, p1
 
     xor-long v2, v0, p1
@@ -812,7 +812,7 @@
 
     int-to-long v0, p0
 
-    .line 233
+    .line 234
     rem-long/2addr v0, p1
 
     xor-long v2, v0, p1
@@ -837,7 +837,7 @@
 .method private static final mod(JJ)J
     .locals 4
 
-    .line 308
+    .line 309
     rem-long/2addr p0, p2
 
     xor-long v0, p0, p2
@@ -864,7 +864,7 @@
 
     int-to-long v0, p0
 
-    .line 156
+    .line 157
     rem-long/2addr v0, p1
 
     xor-long v2, v0, p1
@@ -889,7 +889,7 @@
 .method private static final mod(BS)S
     .locals 2
 
-    .line 48
+    .line 49
     rem-int/2addr p0, p1
 
     xor-int v0, p0, p1
@@ -914,7 +914,7 @@
 .method private static final mod(IS)S
     .locals 2
 
-    .line 192
+    .line 193
     rem-int/2addr p0, p1
 
     xor-int v0, p0, p1
@@ -941,7 +941,7 @@
 
     int-to-long v0, p2
 
-    .line 269
+    .line 270
     rem-long/2addr p0, v0
 
     xor-long v2, p0, v0
@@ -970,7 +970,7 @@
 .method private static final mod(SS)S
     .locals 2
 
-    .line 120
+    .line 121
     rem-int/2addr p0, p1
 
     xor-int v0, p0, p1

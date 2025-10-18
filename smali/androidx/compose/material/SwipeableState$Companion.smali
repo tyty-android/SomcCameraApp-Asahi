@@ -47,7 +47,7 @@
 .method private constructor <init>()V
     .locals 0
 
-    .line 404
+    .line 409
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -83,15 +83,7 @@
         }
     .end annotation
 
-    const-string p0, "animationSpec"
-
-    invoke-static {p1, p0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string p0, "confirmStateChange"
-
-    invoke-static {p2, p0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 411
+    .line 416
     sget-object p0, Landroidx/compose/material/SwipeableState$Companion$Saver$1;->INSTANCE:Landroidx/compose/material/SwipeableState$Companion$Saver$1;
 
     check-cast p0, Lkotlin/jvm/functions/Function2;

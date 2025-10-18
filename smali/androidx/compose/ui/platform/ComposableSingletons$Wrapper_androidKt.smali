@@ -43,7 +43,7 @@
 
     const/4 v0, 0x0
 
-    .line 130
+    .line 111
     sget-object v1, Landroidx/compose/ui/platform/ComposableSingletons$Wrapper_androidKt$lambda-1$1;->INSTANCE:Landroidx/compose/ui/platform/ComposableSingletons$Wrapper_androidKt$lambda-1$1;
 
     const v2, -0x68ded66e

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@android:id/background">
+        <shape>
+            <corners android:radius="@dimen/auto_framing_recording_mode_indicator_background_radius" />
+            <solid android:color="#e6ffffff" />
+        </shape>
+    </item>
+</layer-list>

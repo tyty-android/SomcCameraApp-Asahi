@@ -32,7 +32,7 @@
         }
     .end annotation
 
-    .line 335
+    .line 329
     iput-object p1, p0, Ljp/co/sony/mc/camera/storage/SavingTaskManager$PhotoSavingTask$1;->this$1:Ljp/co/sony/mc/camera/storage/SavingTaskManager$PhotoSavingTask;
 
     iput-object p2, p0, Ljp/co/sony/mc/camera/storage/SavingTaskManager$PhotoSavingTask$1;->val$type:Ljp/co/sony/mc/camera/storage/Storage$StorageType;
@@ -47,7 +47,7 @@
 .method public run()V
     .locals 2
 
-    .line 339
+    .line 333
     iget-object v0, p0, Ljp/co/sony/mc/camera/storage/SavingTaskManager$PhotoSavingTask$1;->this$1:Ljp/co/sony/mc/camera/storage/SavingTaskManager$PhotoSavingTask;
 
     iget-object v0, v0, Ljp/co/sony/mc/camera/storage/SavingTaskManager$PhotoSavingTask;->this$0:Ljp/co/sony/mc/camera/storage/SavingTaskManager;

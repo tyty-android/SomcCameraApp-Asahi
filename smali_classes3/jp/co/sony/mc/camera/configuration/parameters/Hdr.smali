@@ -69,7 +69,7 @@
     .line 24
     new-instance v6, Ljp/co/sony/mc/camera/configuration/parameters/Hdr;
 
-    const v4, 0x7f1101d4
+    const v4, 0x7f1101d7
 
     const-string v5, "on-still-dro"
 
@@ -77,7 +77,7 @@
 
     const/4 v2, 0x0
 
-    const v3, 0x7f08015e
+    const v3, 0x7f080163
 
     move-object v0, v6
 
@@ -88,7 +88,7 @@
     .line 28
     new-instance v0, Ljp/co/sony/mc/camera/configuration/parameters/Hdr;
 
-    const v11, 0x7f1101d2
+    const v11, 0x7f1101d5
 
     const-string v12, "on-still-hdr"
 
@@ -96,7 +96,7 @@
 
     const/4 v9, 0x1
 
-    const v10, 0x7f08020b
+    const v10, 0x7f080219
 
     move-object v7, v0
 
@@ -107,7 +107,7 @@
     .line 32
     new-instance v0, Ljp/co/sony/mc/camera/configuration/parameters/Hdr;
 
-    const v5, 0x7f110437
+    const v5, 0x7f11046c
 
     const-string v6, "auto"
 
@@ -115,7 +115,7 @@
 
     const/4 v3, 0x2
 
-    const v4, 0x7f080158
+    const v4, 0x7f08015d
 
     move-object v1, v0
 
@@ -126,7 +126,7 @@
     .line 36
     new-instance v0, Ljp/co/sony/mc/camera/configuration/parameters/Hdr;
 
-    const v11, 0x7f1103be
+    const v11, 0x7f1103f3
 
     const-string v12, "off"
 
@@ -134,7 +134,7 @@
 
     const/4 v9, 0x3
 
-    const v10, 0x7f08015b
+    const v10, 0x7f080160
 
     move-object v7, v0
 
@@ -145,7 +145,7 @@
     .line 47
     new-instance v0, Ljp/co/sony/mc/camera/configuration/parameters/Hdr;
 
-    const v5, 0x7f1101d4
+    const v5, 0x7f1101d7
 
     const-string v6, "on-still-dro"
 

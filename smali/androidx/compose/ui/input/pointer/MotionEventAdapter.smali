@@ -6,7 +6,7 @@
 # annotations
 .annotation runtime Lkotlin/Metadata;
     d1 = {
-        "\u0000^\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0004\n\u0002\u0010\t\n\u0000\n\u0002\u0010!\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0008\n\u0002\u0008\u0002\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0004\n\u0002\u0010\u000b\n\u0002\u0008\u0003\n\u0002\u0018\u0002\n\u0002\u0008\u0006\u0008\u0000\u0018\u00002\u00020\u0001B\u0005\u00a2\u0006\u0002\u0010\u0002J\u0010\u0010\u0012\u001a\u00020\u00132\u0006\u0010\u0014\u001a\u00020\u0015H\u0002J\u0010\u0010\u0016\u001a\u00020\u00132\u0006\u0010\u0014\u001a\u00020\u0015H\u0002J\u001f\u0010\u0017\u001a\u0004\u0018\u00010\u00182\u0006\u0010\u0014\u001a\u00020\u00152\u0006\u0010\u0019\u001a\u00020\u001aH\u0000\u00a2\u0006\u0002\u0008\u001bJ(\u0010\u001c\u001a\u00020\u000e2\u0006\u0010\u0019\u001a\u00020\u001a2\u0006\u0010\u0014\u001a\u00020\u00152\u0006\u0010\u001d\u001a\u00020\u00102\u0006\u0010\u001e\u001a\u00020\u001fH\u0002J\u000e\u0010 \u001a\u00020\u00132\u0006\u0010!\u001a\u00020\u0010J \u0010\"\u001a\u00020#2\u0006\u0010$\u001a\u00020\u0010H\u0002\u00f8\u0001\u0000\u00f8\u0001\u0001\u00f8\u0001\u0002\u00a2\u0006\u0004\u0008%\u0010&J\u0010\u0010\'\u001a\u00020\u00132\u0006\u0010\u0014\u001a\u00020\u0015H\u0002J\u0014\u0010(\u001a\u00020\u001f*\u00020\u00152\u0006\u0010!\u001a\u00020\u0010H\u0002R\u000e\u0010\u0003\u001a\u00020\u0004X\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u001c\u0010\u0005\u001a\u00020\u00068\u0000X\u0081\u0004\u00a2\u0006\u000e\n\u0000\u0012\u0004\u0008\u0007\u0010\u0002\u001a\u0004\u0008\u0008\u0010\tR\u000e\u0010\n\u001a\u00020\u000bX\u0082\u000e\u00a2\u0006\u0002\n\u0000R\u0014\u0010\u000c\u001a\u0008\u0012\u0004\u0012\u00020\u000e0\rX\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u000f\u001a\u00020\u0010X\u0082\u000e\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u0011\u001a\u00020\u0010X\u0082\u000e\u00a2\u0006\u0002\n\u0000\u0082\u0002\u000f\n\u0002\u0008!\n\u0005\u0008\u00a1\u001e0\u0001\n\u0002\u0008\u0019\u00a8\u0006)"
+        "\u0000^\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0004\n\u0002\u0010\t\n\u0000\n\u0002\u0010!\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0008\n\u0002\u0008\u0002\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0004\n\u0002\u0010\u000b\n\u0002\u0008\u0003\n\u0002\u0018\u0002\n\u0002\u0008\u0006\u0008\u0000\u0018\u00002\u00020\u0001B\u0005\u00a2\u0006\u0002\u0010\u0002J\u0010\u0010\u0012\u001a\u00020\u00132\u0006\u0010\u0014\u001a\u00020\u0015H\u0002J\u0010\u0010\u0016\u001a\u00020\u00132\u0006\u0010\u0014\u001a\u00020\u0015H\u0002J\u001f\u0010\u0017\u001a\u0004\u0018\u00010\u00182\u0006\u0010\u0014\u001a\u00020\u00152\u0006\u0010\u0019\u001a\u00020\u001aH\u0000\u00a2\u0006\u0002\u0008\u001bJ(\u0010\u001c\u001a\u00020\u000e2\u0006\u0010\u0019\u001a\u00020\u001a2\u0006\u0010\u0014\u001a\u00020\u00152\u0006\u0010\u001d\u001a\u00020\u00102\u0006\u0010\u001e\u001a\u00020\u001fH\u0002J\u000e\u0010 \u001a\u00020\u00132\u0006\u0010!\u001a\u00020\u0010J\u001d\u0010\"\u001a\u00020#2\u0006\u0010$\u001a\u00020\u0010H\u0002\u00f8\u0001\u0000\u00f8\u0001\u0001\u00a2\u0006\u0004\u0008%\u0010&J\u0010\u0010\'\u001a\u00020\u00132\u0006\u0010\u0014\u001a\u00020\u0015H\u0002J\u0014\u0010(\u001a\u00020\u001f*\u00020\u00152\u0006\u0010!\u001a\u00020\u0010H\u0002R\u000e\u0010\u0003\u001a\u00020\u0004X\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u001c\u0010\u0005\u001a\u00020\u00068\u0000X\u0081\u0004\u00a2\u0006\u000e\n\u0000\u0012\u0004\u0008\u0007\u0010\u0002\u001a\u0004\u0008\u0008\u0010\tR\u000e\u0010\n\u001a\u00020\u000bX\u0082\u000e\u00a2\u0006\u0002\n\u0000R\u0014\u0010\u000c\u001a\u0008\u0012\u0004\u0012\u00020\u000e0\rX\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u000f\u001a\u00020\u0010X\u0082\u000e\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u0011\u001a\u00020\u0010X\u0082\u000e\u00a2\u0006\u0002\n\u0000\u0082\u0002\u000b\n\u0002\u0008!\n\u0005\u0008\u00a1\u001e0\u0001\u00a8\u0006)"
     }
     d2 = {
         "Landroidx/compose/ui/input/pointer/MotionEventAdapter;",
@@ -62,6 +62,10 @@
 .end annotation
 
 
+# static fields
+.field public static final $stable:I = 0x8
+
+
 # instance fields
 .field private final canHover:Landroid/util/SparseBooleanArray;
 
@@ -85,6 +89,12 @@
 
 
 # direct methods
+.method static constructor <clinit>()V
+    .locals 0
+
+    return-void
+.end method
+
 .method public constructor <init>()V
     .locals 1
 
@@ -177,18 +187,18 @@
 
     goto :goto_0
 
-    .line 162
+    .line 163
     :cond_1
     invoke-virtual {p1}, Landroid/view/MotionEvent;->getActionIndex()I
 
     move-result v0
 
-    .line 163
+    .line 164
     invoke-virtual {p1, v0}, Landroid/view/MotionEvent;->getPointerId(I)I
 
     move-result v3
 
-    .line 164
+    .line 165
     iget-object v4, p0, Landroidx/compose/ui/input/pointer/MotionEventAdapter;->motionEventToComposePointerIdMap:Landroid/util/SparseLongArray;
 
     invoke-virtual {v4, v3}, Landroid/util/SparseLongArray;->indexOfKey(I)I
@@ -197,7 +207,7 @@
 
     if-gez v4, :cond_2
 
-    .line 165
+    .line 166
     iget-object v4, p0, Landroidx/compose/ui/input/pointer/MotionEventAdapter;->motionEventToComposePointerIdMap:Landroid/util/SparseLongArray;
 
     iget-wide v5, p0, Landroidx/compose/ui/input/pointer/MotionEventAdapter;->nextId:J
@@ -208,7 +218,7 @@
 
     invoke-virtual {v4, v3, v5, v6}, Landroid/util/SparseLongArray;->put(IJ)V
 
-    .line 166
+    .line 167
     invoke-virtual {p1, v0}, Landroid/view/MotionEvent;->getToolType(I)I
 
     move-result p1
@@ -217,7 +227,7 @@
 
     if-ne p1, v0, :cond_2
 
-    .line 167
+    .line 168
     iget-object p0, p0, Landroidx/compose/ui/input/pointer/MotionEventAdapter;->canHover:Landroid/util/SparseBooleanArray;
 
     const/4 p1, 0x1
@@ -232,7 +242,7 @@
 .method private final clearOnDeviceChange(Landroid/view/MotionEvent;)V
     .locals 2
 
-    .line 232
+    .line 233
     invoke-virtual {p1}, Landroid/view/MotionEvent;->getPointerCount()I
 
     move-result v0
@@ -246,17 +256,17 @@
     :cond_0
     const/4 v0, 0x0
 
-    .line 235
+    .line 236
     invoke-virtual {p1, v0}, Landroid/view/MotionEvent;->getToolType(I)I
 
     move-result v0
 
-    .line 236
+    .line 237
     invoke-virtual {p1}, Landroid/view/MotionEvent;->getSource()I
 
     move-result p1
 
-    .line 238
+    .line 239
     iget v1, p0, Landroidx/compose/ui/input/pointer/MotionEventAdapter;->previousToolType:I
 
     if-ne v0, v1, :cond_1
@@ -265,19 +275,19 @@
 
     if-eq p1, v1, :cond_2
 
-    .line 239
+    .line 240
     :cond_1
     iput v0, p0, Landroidx/compose/ui/input/pointer/MotionEventAdapter;->previousToolType:I
 
-    .line 240
+    .line 241
     iput p1, p0, Landroidx/compose/ui/input/pointer/MotionEventAdapter;->previousSource:I
 
-    .line 241
+    .line 242
     iget-object p1, p0, Landroidx/compose/ui/input/pointer/MotionEventAdapter;->canHover:Landroid/util/SparseBooleanArray;
 
     invoke-virtual {p1}, Landroid/util/SparseBooleanArray;->clear()V
 
-    .line 242
+    .line 243
     iget-object p0, p0, Landroidx/compose/ui/input/pointer/MotionEventAdapter;->motionEventToComposePointerIdMap:Landroid/util/SparseLongArray;
 
     invoke-virtual {p0}, Landroid/util/SparseLongArray;->clear()V
@@ -287,7 +297,7 @@
 .end method
 
 .method private final createPointerInputEventData(Landroidx/compose/ui/input/pointer/PositionCalculator;Landroid/view/MotionEvent;IZ)Landroidx/compose/ui/input/pointer/PointerInputEventData;
-    .locals 24
+    .locals 31
 
     move-object/from16 v0, p0
 
@@ -297,22 +307,22 @@
 
     move/from16 v3, p3
 
-    .line 257
+    .line 258
     invoke-virtual/range {p2 .. p3}, Landroid/view/MotionEvent;->getPointerId(I)I
 
     move-result v4
 
-    .line 259
+    .line 260
     invoke-direct {v0, v4}, Landroidx/compose/ui/input/pointer/MotionEventAdapter;->getComposePointerId-_I2yYro(I)J
 
     move-result-wide v6
 
-    .line 261
+    .line 262
     invoke-virtual/range {p2 .. p3}, Landroid/view/MotionEvent;->getPressure(I)F
 
     move-result v15
 
-    .line 263
+    .line 264
     invoke-virtual/range {p2 .. p3}, Landroid/view/MotionEvent;->getX(I)F
 
     move-result v4
@@ -323,9 +333,24 @@
 
     invoke-static {v4, v5}, Landroidx/compose/ui/geometry/OffsetKt;->Offset(FF)J
 
+    move-result-wide v8
+
+    const/4 v12, 0x3
+
+    const/4 v13, 0x0
+
+    const/4 v10, 0x0
+
+    const/4 v11, 0x0
+
+    .line 265
+    invoke-static/range {v8 .. v13}, Landroidx/compose/ui/geometry/Offset;->copy-dBAh8RU$default(JFFILjava/lang/Object;)J
+
+    move-result-wide v21
+
     if-nez v3, :cond_0
 
-    .line 266
+    .line 268
     invoke-virtual/range {p2 .. p2}, Landroid/view/MotionEvent;->getRawX()F
 
     move-result v4
@@ -338,7 +363,7 @@
 
     move-result-wide v4
 
-    .line 267
+    .line 269
     invoke-interface {v1, v4, v5}, Landroidx/compose/ui/input/pointer/PositionCalculator;->screenToLocal-MK-Hz9U(J)J
 
     move-result-wide v8
@@ -350,7 +375,7 @@
 
     goto :goto_1
 
-    .line 269
+    .line 271
     :cond_0
     sget-object v4, Landroidx/compose/ui/input/pointer/MotionEventHelper;->INSTANCE:Landroidx/compose/ui/input/pointer/MotionEventHelper;
 
@@ -358,14 +383,14 @@
 
     move-result-wide v4
 
-    .line 270
+    .line 272
     invoke-interface {v1, v4, v5}, Landroidx/compose/ui/input/pointer/PositionCalculator;->screenToLocal-MK-Hz9U(J)J
 
     move-result-wide v8
 
     goto :goto_0
 
-    .line 274
+    .line 276
     :goto_1
     invoke-virtual/range {p2 .. p3}, Landroid/view/MotionEvent;->getToolType(I)I
 
@@ -389,7 +414,7 @@
 
     if-eq v1, v4, :cond_1
 
-    .line 280
+    .line 282
     sget-object v1, Landroidx/compose/ui/input/pointer/PointerType;->Companion:Landroidx/compose/ui/input/pointer/PointerType$Companion;
 
     invoke-virtual {v1}, Landroidx/compose/ui/input/pointer/PointerType$Companion;->getUnknown-T8wyACA()I
@@ -398,7 +423,7 @@
 
     goto :goto_2
 
-    .line 279
+    .line 281
     :cond_1
     sget-object v1, Landroidx/compose/ui/input/pointer/PointerType;->Companion:Landroidx/compose/ui/input/pointer/PointerType$Companion;
 
@@ -408,7 +433,7 @@
 
     goto :goto_2
 
-    .line 278
+    .line 280
     :cond_2
     sget-object v1, Landroidx/compose/ui/input/pointer/PointerType;->Companion:Landroidx/compose/ui/input/pointer/PointerType$Companion;
 
@@ -418,7 +443,7 @@
 
     goto :goto_2
 
-    .line 277
+    .line 279
     :cond_3
     sget-object v1, Landroidx/compose/ui/input/pointer/PointerType;->Companion:Landroidx/compose/ui/input/pointer/PointerType$Companion;
 
@@ -428,7 +453,7 @@
 
     goto :goto_2
 
-    .line 276
+    .line 278
     :cond_4
     sget-object v1, Landroidx/compose/ui/input/pointer/PointerType;->Companion:Landroidx/compose/ui/input/pointer/PointerType$Companion;
 
@@ -438,7 +463,7 @@
 
     goto :goto_2
 
-    .line 275
+    .line 277
     :cond_5
     sget-object v1, Landroidx/compose/ui/input/pointer/PointerType;->Companion:Landroidx/compose/ui/input/pointer/PointerType$Companion;
 
@@ -449,7 +474,7 @@
     :goto_2
     move/from16 v16, v1
 
-    .line 283
+    .line 285
     new-instance v1, Ljava/util/ArrayList;
 
     invoke-virtual/range {p2 .. p2}, Landroid/view/MotionEvent;->getHistorySize()I
@@ -458,27 +483,29 @@
 
     invoke-direct {v1, v4}, Ljava/util/ArrayList;-><init>(I)V
 
-    .line 285
+    .line 287
     invoke-virtual/range {p2 .. p2}, Landroid/view/MotionEvent;->getHistorySize()I
 
     move-result v4
 
-    const/4 v8, 0x0
+    const/4 v5, 0x0
+
+    move v8, v5
 
     :goto_3
     if-ge v8, v4, :cond_7
 
-    .line 286
+    .line 288
     invoke-virtual {v2, v3, v8}, Landroid/view/MotionEvent;->getHistoricalX(II)F
 
     move-result v9
 
-    .line 287
+    .line 289
     invoke-virtual {v2, v3, v8}, Landroid/view/MotionEvent;->getHistoricalY(II)F
 
     move-result v14
 
-    .line 288
+    .line 290
     invoke-static {v9}, Ljava/lang/Float;->isInfinite(F)Z
 
     move-result v17
@@ -503,116 +530,116 @@
 
     if-nez v17, :cond_6
 
-    .line 289
-    new-instance v5, Landroidx/compose/ui/input/pointer/HistoricalChange;
-
-    .line 290
-    invoke-virtual {v2, v8}, Landroid/view/MotionEvent;->getHistoricalEventTime(I)J
-
-    move-result-wide v19
-
     .line 291
     invoke-static {v9, v14}, Landroidx/compose/ui/geometry/OffsetKt;->Offset(FF)J
 
-    move-result-wide v21
+    move-result-wide v28
 
-    const/16 v23, 0x0
-
-    move-object/from16 v18, v5
-
-    .line 289
-    invoke-direct/range {v18 .. v23}, Landroidx/compose/ui/input/pointer/HistoricalChange;-><init>(JJLkotlin/jvm/internal/DefaultConstructorMarker;)V
+    .line 292
+    new-instance v9, Landroidx/compose/ui/input/pointer/HistoricalChange;
 
     .line 293
-    invoke-virtual {v1, v5}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+    invoke-virtual {v2, v8}, Landroid/view/MotionEvent;->getHistoricalEventTime(I)J
+
+    move-result-wide v24
+
+    const/16 v30, 0x0
+
+    move-object/from16 v23, v9
+
+    move-wide/from16 v26, v28
+
+    .line 292
+    invoke-direct/range {v23 .. v30}, Landroidx/compose/ui/input/pointer/HistoricalChange;-><init>(JJJLkotlin/jvm/internal/DefaultConstructorMarker;)V
+
+    .line 297
+    invoke-virtual {v1, v9}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
     :cond_6
     add-int/lit8 v8, v8, 0x1
 
     goto :goto_3
 
-    .line 297
+    .line 301
     :cond_7
     invoke-virtual/range {p2 .. p2}, Landroid/view/MotionEvent;->getActionMasked()I
 
     move-result v4
 
-    const/16 v5, 0x8
+    const/16 v8, 0x8
 
-    if-ne v4, v5, :cond_8
+    if-ne v4, v8, :cond_8
 
     const/16 v4, 0xa
 
-    .line 298
+    .line 302
     invoke-virtual {v2, v4}, Landroid/view/MotionEvent;->getAxisValue(I)F
 
     move-result v4
 
-    const/16 v5, 0x9
+    const/16 v8, 0x9
 
-    .line 299
-    invoke-virtual {v2, v5}, Landroid/view/MotionEvent;->getAxisValue(I)F
+    .line 303
+    invoke-virtual {v2, v8}, Landroid/view/MotionEvent;->getAxisValue(I)F
 
-    move-result v5
+    move-result v8
 
-    neg-float v5, v5
+    neg-float v8, v8
 
-    const/4 v8, 0x0
+    const/4 v9, 0x0
 
-    add-float/2addr v5, v8
+    add-float/2addr v8, v9
 
-    .line 316
-    invoke-static {v4, v5}, Landroidx/compose/ui/geometry/OffsetKt;->Offset(FF)J
+    .line 320
+    invoke-static {v4, v8}, Landroidx/compose/ui/geometry/OffsetKt;->Offset(FF)J
 
-    move-result-wide v4
+    move-result-wide v8
 
     goto :goto_4
 
-    .line 318
+    .line 322
     :cond_8
     sget-object v4, Landroidx/compose/ui/geometry/Offset;->Companion:Landroidx/compose/ui/geometry/Offset$Companion;
 
     invoke-virtual {v4}, Landroidx/compose/ui/geometry/Offset$Companion;->getZero-F1C5BW0()J
 
-    move-result-wide v4
+    move-result-wide v8
 
     :goto_4
-    move-wide/from16 v19, v4
+    move-wide/from16 v19, v8
 
-    .line 321
+    .line 325
     iget-object v0, v0, Landroidx/compose/ui/input/pointer/MotionEventAdapter;->canHover:Landroid/util/SparseBooleanArray;
 
     invoke-virtual/range {p2 .. p3}, Landroid/view/MotionEvent;->getPointerId(I)I
 
     move-result v3
 
-    const/4 v4, 0x0
-
-    invoke-virtual {v0, v3, v4}, Landroid/util/SparseBooleanArray;->get(IZ)Z
+    invoke-virtual {v0, v3, v5}, Landroid/util/SparseBooleanArray;->get(IZ)Z
 
     move-result v17
 
-    .line 322
+    .line 326
     new-instance v0, Landroidx/compose/ui/input/pointer/PointerInputEventData;
 
     move-object v5, v0
 
-    .line 324
+    .line 328
     invoke-virtual/range {p2 .. p2}, Landroid/view/MotionEvent;->getEventTime()J
 
     move-result-wide v8
 
-    .line 331
+    .line 335
     move-object/from16 v18, v1
 
     check-cast v18, Ljava/util/List;
 
-    const/16 v21, 0x0
+    const/16 v23, 0x0
 
     move/from16 v14, p4
 
-    .line 322
-    invoke-direct/range {v5 .. v21}, Landroidx/compose/ui/input/pointer/PointerInputEventData;-><init>(JJJJZFIZLjava/util/List;JLkotlin/jvm/internal/DefaultConstructorMarker;)V
+    .line 326
+    invoke-direct/range {v5 .. v23}, Landroidx/compose/ui/input/pointer/PointerInputEventData;-><init>(JJJJZFIZLjava/util/List;JJLkotlin/jvm/internal/DefaultConstructorMarker;)V
 
     return-object v0
 .end method
@@ -620,7 +647,7 @@
 .method private final getComposePointerId-_I2yYro(I)J
     .locals 4
 
-    .line 215
+    .line 216
     iget-object v0, p0, Landroidx/compose/ui/input/pointer/MotionEventAdapter;->motionEventToComposePointerIdMap:Landroid/util/SparseLongArray;
 
     invoke-virtual {v0, p1}, Landroid/util/SparseLongArray;->indexOfKey(I)I
@@ -629,7 +656,7 @@
 
     if-ltz v0, :cond_0
 
-    .line 217
+    .line 218
     iget-object p0, p0, Landroidx/compose/ui/input/pointer/MotionEventAdapter;->motionEventToComposePointerIdMap:Landroid/util/SparseLongArray;
 
     invoke-virtual {p0, v0}, Landroid/util/SparseLongArray;->valueAt(I)J
@@ -638,7 +665,7 @@
 
     goto :goto_0
 
-    .line 220
+    .line 221
     :cond_0
     iget-wide v0, p0, Landroidx/compose/ui/input/pointer/MotionEventAdapter;->nextId:J
 
@@ -648,14 +675,14 @@
 
     iput-wide v2, p0, Landroidx/compose/ui/input/pointer/MotionEventAdapter;->nextId:J
 
-    .line 221
+    .line 222
     iget-object p0, p0, Landroidx/compose/ui/input/pointer/MotionEventAdapter;->motionEventToComposePointerIdMap:Landroid/util/SparseLongArray;
 
     invoke-virtual {p0, p1, v0, v1}, Landroid/util/SparseLongArray;->put(IJ)V
 
     move-wide p0, v0
 
-    .line 224
+    .line 225
     :goto_0
     invoke-static {p0, p1}, Landroidx/compose/ui/input/pointer/PointerId;->constructor-impl(J)J
 
@@ -673,7 +700,7 @@
 .method private final hasPointerId(Landroid/view/MotionEvent;I)Z
     .locals 3
 
-    .line 206
+    .line 207
     invoke-virtual {p1}, Landroid/view/MotionEvent;->getPointerCount()I
 
     move-result p0
@@ -685,7 +712,7 @@
     :goto_0
     if-ge v1, p0, :cond_1
 
-    .line 207
+    .line 208
     invoke-virtual {p1, v1}, Landroid/view/MotionEvent;->getPointerId(I)I
 
     move-result v2
@@ -708,7 +735,7 @@
 .method private final removeStaleIds(Landroid/view/MotionEvent;)V
     .locals 4
 
-    .line 179
+    .line 180
     invoke-virtual {p1}, Landroid/view/MotionEvent;->getActionMasked()I
 
     move-result v0
@@ -723,18 +750,18 @@
 
     goto :goto_0
 
-    .line 182
+    .line 183
     :cond_0
     invoke-virtual {p1}, Landroid/view/MotionEvent;->getActionIndex()I
 
     move-result v0
 
-    .line 183
+    .line 184
     invoke-virtual {p1, v0}, Landroid/view/MotionEvent;->getPointerId(I)I
 
     move-result v0
 
-    .line 184
+    .line 185
     iget-object v2, p0, Landroidx/compose/ui/input/pointer/MotionEventAdapter;->canHover:Landroid/util/SparseBooleanArray;
 
     const/4 v3, 0x0
@@ -745,17 +772,17 @@
 
     if-nez v2, :cond_1
 
-    .line 185
+    .line 186
     iget-object v2, p0, Landroidx/compose/ui/input/pointer/MotionEventAdapter;->motionEventToComposePointerIdMap:Landroid/util/SparseLongArray;
 
     invoke-virtual {v2, v0}, Landroid/util/SparseLongArray;->delete(I)V
 
-    .line 186
+    .line 187
     iget-object v2, p0, Landroidx/compose/ui/input/pointer/MotionEventAdapter;->canHover:Landroid/util/SparseBooleanArray;
 
     invoke-virtual {v2, v0}, Landroid/util/SparseBooleanArray;->delete(I)V
 
-    .line 194
+    .line 195
     :cond_1
     :goto_0
     iget-object v0, p0, Landroidx/compose/ui/input/pointer/MotionEventAdapter;->motionEventToComposePointerIdMap:Landroid/util/SparseLongArray;
@@ -770,7 +797,7 @@
 
     if-le v0, v2, :cond_3
 
-    .line 195
+    .line 196
     iget-object v0, p0, Landroidx/compose/ui/input/pointer/MotionEventAdapter;->motionEventToComposePointerIdMap:Landroid/util/SparseLongArray;
 
     invoke-virtual {v0}, Landroid/util/SparseLongArray;->size()I
@@ -784,26 +811,26 @@
 
     if-ge v1, v0, :cond_3
 
-    .line 196
+    .line 197
     iget-object v1, p0, Landroidx/compose/ui/input/pointer/MotionEventAdapter;->motionEventToComposePointerIdMap:Landroid/util/SparseLongArray;
 
     invoke-virtual {v1, v0}, Landroid/util/SparseLongArray;->keyAt(I)I
 
     move-result v1
 
-    .line 197
+    .line 198
     invoke-direct {p0, p1, v1}, Landroidx/compose/ui/input/pointer/MotionEventAdapter;->hasPointerId(Landroid/view/MotionEvent;I)Z
 
     move-result v2
 
     if-nez v2, :cond_2
 
-    .line 198
+    .line 199
     iget-object v2, p0, Landroidx/compose/ui/input/pointer/MotionEventAdapter;->motionEventToComposePointerIdMap:Landroid/util/SparseLongArray;
 
     invoke-virtual {v2, v0}, Landroid/util/SparseLongArray;->removeAt(I)V
 
-    .line 199
+    .line 200
     iget-object v2, p0, Landroidx/compose/ui/input/pointer/MotionEventAdapter;->canHover:Landroid/util/SparseBooleanArray;
 
     invoke-virtual {v2, v1}, Landroid/util/SparseBooleanArray;->delete(I)V
@@ -821,14 +848,6 @@
 # virtual methods
 .method public final convertToPointerInputEvent$ui_release(Landroid/view/MotionEvent;Landroidx/compose/ui/input/pointer/PositionCalculator;)Landroidx/compose/ui/input/pointer/PointerInputEvent;
     .locals 9
-
-    const-string v0, "motionEvent"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string v0, "positionCalculator"
-
-    invoke-static {p2, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 87
     invoke-virtual {p1}, Landroid/view/MotionEvent;->getActionMasked()I

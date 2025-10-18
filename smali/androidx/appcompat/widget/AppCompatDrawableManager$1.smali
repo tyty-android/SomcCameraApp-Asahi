@@ -634,7 +634,7 @@
 
 # virtual methods
 .method public createDrawableFor(Landroidx/appcompat/widget/ResourceManagerInternal;Landroid/content/Context;I)Landroid/graphics/drawable/Drawable;
-    .locals 1
+    .locals 2
 
     .line 233
     sget v0, Landroidx/appcompat/R$drawable;->abc_cab_background_top_material:I
@@ -644,12 +644,20 @@
     .line 234
     new-instance p0, Landroid/graphics/drawable/LayerDrawable;
 
-    sget p3, Landroidx/appcompat/R$drawable;->abc_cab_background_internal_bg:I
+    const/4 p3, 0x2
+
+    new-array p3, p3, [Landroid/graphics/drawable/Drawable;
+
+    sget v0, Landroidx/appcompat/R$drawable;->abc_cab_background_internal_bg:I
 
     .line 235
-    invoke-virtual {p1, p2, p3}, Landroidx/appcompat/widget/ResourceManagerInternal;->getDrawable(Landroid/content/Context;I)Landroid/graphics/drawable/Drawable;
+    invoke-virtual {p1, p2, v0}, Landroidx/appcompat/widget/ResourceManagerInternal;->getDrawable(Landroid/content/Context;I)Landroid/graphics/drawable/Drawable;
 
-    move-result-object p3
+    move-result-object v0
+
+    const/4 v1, 0x0
+
+    aput-object v0, p3, v1
 
     sget v0, Landroidx/appcompat/R$drawable;->abc_cab_background_top_mtrl_alpha:I
 
@@ -658,19 +666,11 @@
 
     move-result-object p1
 
-    const/4 p2, 0x2
+    const/4 p2, 0x1
 
-    new-array p2, p2, [Landroid/graphics/drawable/Drawable;
+    aput-object p1, p3, p2
 
-    const/4 v0, 0x0
-
-    aput-object p3, p2, v0
-
-    const/4 p3, 0x1
-
-    aput-object p1, p2, p3
-
-    invoke-direct {p0, p2}, Landroid/graphics/drawable/LayerDrawable;-><init>([Landroid/graphics/drawable/Drawable;)V
+    invoke-direct {p0, p3}, Landroid/graphics/drawable/LayerDrawable;-><init>([Landroid/graphics/drawable/Drawable;)V
 
     return-object p0
 

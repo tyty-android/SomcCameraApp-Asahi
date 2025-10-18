@@ -91,7 +91,7 @@
 .end method
 
 .method private static removeInvalidSettings(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;Ljp/co/sony/mc/camera/setting/CameraProPreferences;)V
-    .locals 6
+    .locals 7
 
     .line 97
     invoke-virtual {p2}, Ljp/co/sony/mc/camera/setting/CameraProPreferences;->getAll()Ljava/util/Map;
@@ -109,175 +109,189 @@
 
     const/4 v1, 0x0
 
+    move v2, v1
+
     :cond_0
     :goto_0
     invoke-interface {v0}, Ljava/util/Iterator;->hasNext()Z
 
-    move-result v2
+    move-result v3
 
-    if-eqz v2, :cond_3
+    if-eqz v3, :cond_3
 
     invoke-interface {v0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
-    move-result-object v2
-
-    check-cast v2, Ljava/util/Map$Entry;
-
-    .line 100
-    sget-object v3, Ljp/co/sony/mc/camera/setting/CameraSettings;->FLASH:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
-
-    invoke-virtual {v3}, Ljp/co/sony/mc/camera/setting/CameraSettings$Key;->getName()Ljava/lang/String;
-
     move-result-object v3
 
-    invoke-interface {v2}, Ljava/util/Map$Entry;->getKey()Ljava/lang/Object;
+    check-cast v3, Ljava/util/Map$Entry;
+
+    .line 100
+    sget-object v4, Ljp/co/sony/mc/camera/setting/CameraSettings;->FLASH:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
+
+    invoke-virtual {v4}, Ljp/co/sony/mc/camera/setting/CameraSettings$Key;->getName()Ljava/lang/String;
 
     move-result-object v4
 
-    invoke-virtual {v3, v4}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+    invoke-interface {v3}, Ljava/util/Map$Entry;->getKey()Ljava/lang/Object;
 
-    move-result v3
+    move-result-object v5
 
-    const/4 v4, 0x1
+    invoke-virtual {v4, v5}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
-    if-eqz v3, :cond_1
+    move-result v4
+
+    const/4 v5, 0x1
+
+    if-eqz v4, :cond_1
 
     .line 101
-    sget-object v2, Ljp/co/sony/mc/camera/setting/CameraSettings;->FLASH:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
+    sget-object v3, Ljp/co/sony/mc/camera/setting/CameraSettings;->FLASH:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
 
-    const-string v3, "NO_VALUE"
+    const-string v4, "NO_VALUE"
 
-    invoke-virtual {p2, v2, v3}, Ljp/co/sony/mc/camera/setting/CameraProPreferences;->get(Ljp/co/sony/mc/camera/setting/SettingKey$Key;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {p2, v3, v4}, Ljp/co/sony/mc/camera/setting/CameraProPreferences;->get(Ljp/co/sony/mc/camera/setting/SettingKey$Key;Ljava/lang/Object;)Ljava/lang/Object;
 
-    move-result-object v2
+    move-result-object v3
 
-    check-cast v2, Ljava/lang/String;
+    check-cast v3, Ljava/lang/String;
 
     .line 103
-    sget-object v3, Ljp/co/sony/mc/camera/configuration/parameters/Flash;->LED_ON:Ljp/co/sony/mc/camera/configuration/parameters/Flash;
+    sget-object v4, Ljp/co/sony/mc/camera/configuration/parameters/Flash;->LED_ON:Ljp/co/sony/mc/camera/configuration/parameters/Flash;
 
-    invoke-virtual {v3}, Ljp/co/sony/mc/camera/configuration/parameters/Flash;->name()Ljava/lang/String;
+    invoke-virtual {v4}, Ljp/co/sony/mc/camera/configuration/parameters/Flash;->name()Ljava/lang/String;
 
-    move-result-object v3
+    move-result-object v4
 
-    invoke-virtual {v3, v2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    move-result v2
-
-    if-eqz v2, :cond_0
-
-    .line 104
-    sget-object v1, Ljp/co/sony/mc/camera/setting/CameraSettings;->FLASH:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
-
-    invoke-virtual {p2, v1}, Ljp/co/sony/mc/camera/setting/CameraProPreferences;->remove(Ljp/co/sony/mc/camera/setting/SettingKey$Key;)V
-
-    :goto_1
-    move v1, v4
-
-    goto :goto_0
-
-    .line 107
-    :cond_1
-    sget-object v3, Ljp/co/sony/mc/camera/setting/CameraSettings;->RESOLUTION:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
-
-    invoke-virtual {v3}, Ljp/co/sony/mc/camera/setting/CameraSettings$Key;->getName()Ljava/lang/String;
-
-    move-result-object v3
-
-    invoke-interface {v2}, Ljava/util/Map$Entry;->getKey()Ljava/lang/Object;
-
-    move-result-object v5
-
-    invoke-virtual {v3, v5}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    move-result v3
-
-    if-eqz v3, :cond_2
-
-    .line 111
-    :try_start_0
-    const-class v3, Ljp/co/sony/mc/camera/configuration/parameters/Resolution;
-
-    invoke-interface {v2}, Ljava/util/Map$Entry;->getValue()Ljava/lang/Object;
-
-    move-result-object v2
-
-    check-cast v2, Ljava/lang/String;
-
-    invoke-static {v3, v2}, Ljp/co/sony/mc/camera/configuration/parameters/Resolution;->valueOf(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
-
-    move-result-object v2
-
-    check-cast v2, Ljp/co/sony/mc/camera/configuration/parameters/Resolution;
-
-    .line 112
-    invoke-static {p0, p1, v2}, Ljp/co/sony/mc/camera/configuration/parameters/Resolution;->isSupportedValue(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;Ljp/co/sony/mc/camera/configuration/parameters/Resolution;)Z
-
-    move-result v2
-    :try_end_0
-    .catch Ljava/lang/IllegalArgumentException; {:try_start_0 .. :try_end_0} :catch_0
-
-    if-nez v2, :cond_0
-
-    .line 117
-    :catch_0
-    sget-object v1, Ljp/co/sony/mc/camera/setting/CameraSettings;->RESOLUTION:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
-
-    invoke-virtual {p2, v1}, Ljp/co/sony/mc/camera/setting/CameraProPreferences;->remove(Ljp/co/sony/mc/camera/setting/SettingKey$Key;)V
-
-    .line 118
-    sget-object v1, Ljp/co/sony/mc/camera/setting/CameraSettings;->ASPECT_RATIO:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
-
-    invoke-virtual {p2, v1}, Ljp/co/sony/mc/camera/setting/CameraProPreferences;->remove(Ljp/co/sony/mc/camera/setting/SettingKey$Key;)V
-
-    goto :goto_1
-
-    .line 121
-    :cond_2
-    sget-object v3, Ljp/co/sony/mc/camera/setting/CameraSettings;->DISTORTION_CORRECTION:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
-
-    invoke-virtual {v3}, Ljp/co/sony/mc/camera/setting/CameraSettings$Key;->getName()Ljava/lang/String;
-
-    move-result-object v3
-
-    invoke-interface {v2}, Ljava/util/Map$Entry;->getKey()Ljava/lang/Object;
-
-    move-result-object v5
-
-    invoke-virtual {v3, v5}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+    invoke-virtual {v4, v3}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v3
 
     if-eqz v3, :cond_0
 
+    .line 104
+    sget-object v2, Ljp/co/sony/mc/camera/setting/CameraSettings;->FLASH:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
+
+    invoke-virtual {p2, v2}, Ljp/co/sony/mc/camera/setting/CameraProPreferences;->remove(Ljp/co/sony/mc/camera/setting/SettingKey$Key;)V
+
+    :goto_1
+    move v2, v5
+
+    goto :goto_0
+
+    .line 107
+    :cond_1
+    sget-object v4, Ljp/co/sony/mc/camera/setting/CameraSettings;->RESOLUTION:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
+
+    invoke-virtual {v4}, Ljp/co/sony/mc/camera/setting/CameraSettings$Key;->getName()Ljava/lang/String;
+
+    move-result-object v4
+
+    invoke-interface {v3}, Ljava/util/Map$Entry;->getKey()Ljava/lang/Object;
+
+    move-result-object v6
+
+    invoke-virtual {v4, v6}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v4
+
+    if-eqz v4, :cond_2
+
+    .line 111
+    :try_start_0
+    const-class v4, Ljp/co/sony/mc/camera/configuration/parameters/Resolution;
+
+    invoke-interface {v3}, Ljava/util/Map$Entry;->getValue()Ljava/lang/Object;
+
+    move-result-object v3
+
+    check-cast v3, Ljava/lang/String;
+
+    invoke-static {v4, v3}, Ljp/co/sony/mc/camera/configuration/parameters/Resolution;->valueOf(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
+
+    move-result-object v3
+
+    check-cast v3, Ljp/co/sony/mc/camera/configuration/parameters/Resolution;
+
+    .line 112
+    invoke-static {p0, p1, v3}, Ljp/co/sony/mc/camera/configuration/parameters/Resolution;->isSupportedValue(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;Ljp/co/sony/mc/camera/configuration/parameters/Resolution;)Z
+
+    move-result v3
+    :try_end_0
+    .catch Ljava/lang/IllegalArgumentException; {:try_start_0 .. :try_end_0} :catch_0
+
+    goto :goto_2
+
+    :catch_0
+    move v3, v1
+
+    :goto_2
+    if-nez v3, :cond_0
+
+    .line 117
+    sget-object v2, Ljp/co/sony/mc/camera/setting/CameraSettings;->RESOLUTION:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
+
+    invoke-virtual {p2, v2}, Ljp/co/sony/mc/camera/setting/CameraProPreferences;->remove(Ljp/co/sony/mc/camera/setting/SettingKey$Key;)V
+
+    .line 118
+    sget-object v2, Ljp/co/sony/mc/camera/setting/CameraSettings;->ASPECT_RATIO:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
+
+    invoke-virtual {p2, v2}, Ljp/co/sony/mc/camera/setting/CameraProPreferences;->remove(Ljp/co/sony/mc/camera/setting/SettingKey$Key;)V
+
+    goto :goto_1
+
+    .line 121
+    :cond_2
+    sget-object v4, Ljp/co/sony/mc/camera/setting/CameraSettings;->DISTORTION_CORRECTION:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
+
+    invoke-virtual {v4}, Ljp/co/sony/mc/camera/setting/CameraSettings$Key;->getName()Ljava/lang/String;
+
+    move-result-object v4
+
+    invoke-interface {v3}, Ljava/util/Map$Entry;->getKey()Ljava/lang/Object;
+
+    move-result-object v6
+
+    invoke-virtual {v4, v6}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v4
+
+    if-eqz v4, :cond_0
+
     .line 124
     :try_start_1
-    const-class v3, Ljp/co/sony/mc/camera/configuration/parameters/DistortionCorrection;
+    const-class v4, Ljp/co/sony/mc/camera/configuration/parameters/DistortionCorrection;
 
     .line 125
-    invoke-interface {v2}, Ljava/util/Map$Entry;->getValue()Ljava/lang/Object;
+    invoke-interface {v3}, Ljava/util/Map$Entry;->getValue()Ljava/lang/Object;
 
-    move-result-object v2
+    move-result-object v3
 
-    check-cast v2, Ljava/lang/String;
+    check-cast v3, Ljava/lang/String;
 
     .line 124
-    invoke-static {v3, v2}, Ljp/co/sony/mc/camera/configuration/parameters/DistortionCorrection;->valueOf(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
+    invoke-static {v4, v3}, Ljp/co/sony/mc/camera/configuration/parameters/DistortionCorrection;->valueOf(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
     :try_end_1
     .catch Ljava/lang/IllegalArgumentException; {:try_start_1 .. :try_end_1} :catch_1
 
-    goto/16 :goto_0
+    move v3, v5
+
+    goto :goto_3
+
+    :catch_1
+    move v3, v1
+
+    :goto_3
+    if-nez v3, :cond_0
 
     .line 130
-    :catch_1
-    sget-object v1, Ljp/co/sony/mc/camera/setting/CameraSettings;->DISTORTION_CORRECTION:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
+    sget-object v2, Ljp/co/sony/mc/camera/setting/CameraSettings;->DISTORTION_CORRECTION:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
 
-    invoke-virtual {p2, v1}, Ljp/co/sony/mc/camera/setting/CameraProPreferences;->remove(Ljp/co/sony/mc/camera/setting/SettingKey$Key;)V
+    invoke-virtual {p2, v2}, Ljp/co/sony/mc/camera/setting/CameraProPreferences;->remove(Ljp/co/sony/mc/camera/setting/SettingKey$Key;)V
 
     goto :goto_1
 
     :cond_3
-    if-eqz v1, :cond_4
+    if-eqz v2, :cond_4
 
     .line 137
     invoke-virtual {p2}, Ljp/co/sony/mc/camera/setting/CameraProPreferences;->commit()Z

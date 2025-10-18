@@ -76,7 +76,7 @@
 .method public bridge synthetic invoke(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
 
-    .line 586
+    .line 583
     check-cast p1, Landroidx/compose/ui/semantics/SemanticsPropertyReceiver;
 
     invoke-virtual {p0, p1}, Landroidx/compose/material/DrawerKt$ModalDrawer$1$2$6;->invoke(Landroidx/compose/ui/semantics/SemanticsPropertyReceiver;)V
@@ -89,16 +89,12 @@
 .method public final invoke(Landroidx/compose/ui/semantics/SemanticsPropertyReceiver;)V
     .locals 2
 
-    const-string v0, "$this$semantics"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 587
+    .line 584
     iget-object v0, p0, Landroidx/compose/material/DrawerKt$ModalDrawer$1$2$6;->$navigationMenu:Ljava/lang/String;
 
     invoke-static {p1, v0}, Landroidx/compose/ui/semantics/SemanticsPropertiesKt;->setPaneTitle(Landroidx/compose/ui/semantics/SemanticsPropertyReceiver;Ljava/lang/String;)V
 
-    .line 588
+    .line 585
     iget-object v0, p0, Landroidx/compose/material/DrawerKt$ModalDrawer$1$2$6;->$drawerState:Landroidx/compose/material/DrawerState;
 
     invoke-virtual {v0}, Landroidx/compose/material/DrawerState;->isOpen()Z
@@ -107,7 +103,7 @@
 
     if-eqz v0, :cond_0
 
-    .line 589
+    .line 586
     new-instance v0, Landroidx/compose/material/DrawerKt$ModalDrawer$1$2$6$1;
 
     iget-object v1, p0, Landroidx/compose/material/DrawerKt$ModalDrawer$1$2$6;->$drawerState:Landroidx/compose/material/DrawerState;

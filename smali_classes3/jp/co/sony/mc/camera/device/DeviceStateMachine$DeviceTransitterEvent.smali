@@ -139,11 +139,15 @@
 
 .field public static final enum EVENT_REQUEST_PREVIEW_FRAME_PROVIDER:Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
 
+.field public static final enum EVENT_REQUEST_UPDATE_AUDIO_DEVICE:Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
+
 .field public static final enum EVENT_RESUME_RECORDING:Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
 
 .field public static final enum EVENT_SET_COOL_MODE:Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
 
 .field public static final enum EVENT_SET_HALF_FPS:Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
+
+.field public static final enum EVENT_SET_STOP_RECORDING_VIBRATION:Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
 
 .field public static final enum EVENT_SET_USER_SOUND_SETTING:Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
 
@@ -155,6 +159,8 @@
 
 .field public static final enum EVENT_START_AUTO_FOCUS_DISTANCE_MONITORING:Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
 
+.field public static final enum EVENT_START_AUTO_FRAMING_MONITORING:Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
+
 .field public static final enum EVENT_START_BOKEH_MONITORING:Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
 
 .field public static final enum EVENT_START_FACE_DETECTION:Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
@@ -162,6 +168,8 @@
 .field public static final enum EVENT_START_FALLBACK_STATE_MONITORING:Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
 
 .field public static final enum EVENT_START_FOCUS_MAGNIFICATION_MONITORING:Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
+
+.field public static final enum EVENT_START_FRAMING_ASSIST_MONITORING:Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
 
 .field public static final enum EVENT_START_HISTOGRAM_MONITORING:Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
 
@@ -183,6 +191,8 @@
 
 .field public static final enum EVENT_STOP_AUTO_FOCUS_DISTANCE_MONITORING:Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
 
+.field public static final enum EVENT_STOP_AUTO_FRAMING_MONITORING:Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
+
 .field public static final enum EVENT_STOP_BOKEH_MONITORING:Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
 
 .field public static final enum EVENT_STOP_FACE_DETECTION:Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
@@ -190,6 +200,8 @@
 .field public static final enum EVENT_STOP_FALLBACK_STATE_MONITORING:Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
 
 .field public static final enum EVENT_STOP_FOCUS_MAGNIFICATION_MONITORING:Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
+
+.field public static final enum EVENT_STOP_FRAMING_ASSIST_MONITORING:Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
 
 .field public static final enum EVENT_STOP_HISTOGRAM_MONITORING:Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
 
@@ -214,7 +226,7 @@
 
 # direct methods
 .method private static synthetic $values()[Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
-    .locals 93
+    .locals 99
 
     .line 26
     sget-object v0, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->EVENT_INITIALIZE:Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
@@ -313,97 +325,109 @@
 
     sget-object v47, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->EVENT_SET_COOL_MODE:Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
 
-    sget-object v48, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->EVENT_ON_VIDEO_RECORDING_DONE:Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
+    sget-object v48, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->EVENT_REQUEST_UPDATE_AUDIO_DEVICE:Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
 
-    sget-object v49, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->EVENT_RECORD_READY:Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
+    sget-object v49, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->EVENT_ON_VIDEO_RECORDING_DONE:Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
 
-    sget-object v50, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->EVENT_ON_RECORD_SET_OUTPUT_DONE:Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
+    sget-object v50, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->EVENT_RECORD_READY:Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
 
-    sget-object v51, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->EVENT_START_RECORDING:Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
+    sget-object v51, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->EVENT_ON_RECORD_SET_OUTPUT_DONE:Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
 
-    sget-object v52, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->EVENT_ON_RECORDING_STARTED:Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
+    sget-object v52, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->EVENT_START_RECORDING:Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
 
-    sget-object v53, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->EVENT_ON_RECORDING_STOPPED:Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
+    sget-object v53, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->EVENT_ON_RECORDING_STARTED:Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
 
-    sget-object v54, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->EVENT_STOP_RECORDING:Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
+    sget-object v54, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->EVENT_ON_RECORDING_STOPPED:Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
 
-    sget-object v55, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->EVENT_RESUME_RECORDING:Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
+    sget-object v55, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->EVENT_STOP_RECORDING:Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
 
-    sget-object v56, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->EVENT_PAUSE_RECORDING:Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
+    sget-object v56, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->EVENT_RESUME_RECORDING:Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
 
-    sget-object v57, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->EVENT_TRIGGER_SLOW_MOTION:Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
+    sget-object v57, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->EVENT_PAUSE_RECORDING:Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
 
-    sget-object v58, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->EVENT_ON_RECORDING_ERROR:Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
+    sget-object v58, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->EVENT_TRIGGER_SLOW_MOTION:Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
 
-    sget-object v59, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->EVENT_STOP_RECORDING_SLOW_MOTION_BUTTON_RELEASE:Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
+    sget-object v59, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->EVENT_ON_RECORDING_ERROR:Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
 
-    sget-object v60, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->EVENT_HIGH_FRAME_RATE_RECORDING_START:Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
+    sget-object v60, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->EVENT_STOP_RECORDING_SLOW_MOTION_BUTTON_RELEASE:Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
 
-    sget-object v61, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->EVENT_HIGH_FRAME_RATE_RECORDING_DONE:Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
+    sget-object v61, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->EVENT_HIGH_FRAME_RATE_RECORDING_START:Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
 
-    sget-object v62, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->EVENT_PREPARE_RECORDING:Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
+    sget-object v62, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->EVENT_HIGH_FRAME_RATE_RECORDING_DONE:Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
 
-    sget-object v63, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->EVENT_STOP_AUDIO_RECORDING:Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
+    sget-object v63, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->EVENT_PREPARE_RECORDING:Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
 
-    sget-object v64, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->EVENT_CHANGE_SELECTED_FACE:Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
+    sget-object v64, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->EVENT_STOP_AUDIO_RECORDING:Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
 
-    sget-object v65, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->EVENT_START_FACE_DETECTION:Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
+    sget-object v65, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->EVENT_SET_STOP_RECORDING_VIBRATION:Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
 
-    sget-object v66, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->EVENT_STOP_FACE_DETECTION:Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
+    sget-object v66, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->EVENT_CHANGE_SELECTED_FACE:Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
 
-    sget-object v67, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->EVENT_START_OBJECT_TRACKING:Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
+    sget-object v67, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->EVENT_START_FACE_DETECTION:Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
 
-    sget-object v68, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->EVENT_STOP_OBJECT_TRACKING:Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
+    sget-object v68, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->EVENT_STOP_FACE_DETECTION:Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
 
-    sget-object v69, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->EVENT_START_AUTO_FLASH_MONITORING:Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
+    sget-object v69, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->EVENT_START_OBJECT_TRACKING:Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
 
-    sget-object v70, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->EVENT_STOP_AUTO_FLASH_MONITORING:Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
+    sget-object v70, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->EVENT_STOP_OBJECT_TRACKING:Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
 
-    sget-object v71, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->EVENT_START_AUTO_FOCUS_DISTANCE_MONITORING:Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
+    sget-object v71, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->EVENT_START_AUTO_FLASH_MONITORING:Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
 
-    sget-object v72, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->EVENT_STOP_AUTO_FOCUS_DISTANCE_MONITORING:Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
+    sget-object v72, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->EVENT_STOP_AUTO_FLASH_MONITORING:Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
 
-    sget-object v73, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->EVENT_START_FOCUS_MAGNIFICATION_MONITORING:Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
+    sget-object v73, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->EVENT_START_AUTO_FOCUS_DISTANCE_MONITORING:Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
 
-    sget-object v74, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->EVENT_STOP_FOCUS_MAGNIFICATION_MONITORING:Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
+    sget-object v74, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->EVENT_STOP_AUTO_FOCUS_DISTANCE_MONITORING:Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
 
-    sget-object v75, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->EVENT_START_AE_AWB_LOCK_STATE_MONITORING:Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
+    sget-object v75, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->EVENT_START_FOCUS_MAGNIFICATION_MONITORING:Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
 
-    sget-object v76, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->EVENT_STOP_AE_AWB_LOCK_STATE_MONITORING:Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
+    sget-object v76, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->EVENT_STOP_FOCUS_MAGNIFICATION_MONITORING:Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
 
-    sget-object v77, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->EVENT_START_BOKEH_MONITORING:Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
+    sget-object v77, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->EVENT_START_AE_AWB_LOCK_STATE_MONITORING:Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
 
-    sget-object v78, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->EVENT_STOP_BOKEH_MONITORING:Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
+    sget-object v78, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->EVENT_STOP_AE_AWB_LOCK_STATE_MONITORING:Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
 
-    sget-object v79, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->EVENT_ON_SEMIAUTO_ENABLED:Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
+    sget-object v79, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->EVENT_START_BOKEH_MONITORING:Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
 
-    sget-object v80, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->EVENT_ON_SEMIAUTO_DISABLED:Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
+    sget-object v80, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->EVENT_STOP_BOKEH_MONITORING:Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
 
-    sget-object v81, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->EVENT_REQUEST_PREVIEW_FRAME_PROVIDER:Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
+    sget-object v81, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->EVENT_ON_SEMIAUTO_ENABLED:Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
 
-    sget-object v82, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->EVENT_START_HISTOGRAM_MONITORING:Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
+    sget-object v82, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->EVENT_ON_SEMIAUTO_DISABLED:Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
 
-    sget-object v83, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->EVENT_STOP_HISTOGRAM_MONITORING:Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
+    sget-object v83, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->EVENT_REQUEST_PREVIEW_FRAME_PROVIDER:Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
 
-    sget-object v84, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->EVENT_REQUEST_HISTOGRAM_PREVIEW_FRAME:Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
+    sget-object v84, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->EVENT_START_HISTOGRAM_MONITORING:Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
 
-    sget-object v85, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->EVENT_REQUEST_HIGH_PERFORMANCE_MODE:Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
+    sget-object v85, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->EVENT_STOP_HISTOGRAM_MONITORING:Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
 
-    sget-object v86, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->EVENT_START_LOW_LIGHT_STATE_MONITORING:Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
+    sget-object v86, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->EVENT_REQUEST_HISTOGRAM_PREVIEW_FRAME:Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
 
-    sget-object v87, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->EVENT_STOP_LOW_LIGHT_STATE_MONITORING:Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
+    sget-object v87, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->EVENT_REQUEST_HIGH_PERFORMANCE_MODE:Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
 
-    sget-object v88, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->EVENT_START_FALLBACK_STATE_MONITORING:Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
+    sget-object v88, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->EVENT_START_LOW_LIGHT_STATE_MONITORING:Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
 
-    sget-object v89, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->EVENT_STOP_FALLBACK_STATE_MONITORING:Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
+    sget-object v89, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->EVENT_STOP_LOW_LIGHT_STATE_MONITORING:Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
 
-    sget-object v90, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->EVENT_FORCE_FALLBACK_ON:Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
+    sget-object v90, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->EVENT_START_FALLBACK_STATE_MONITORING:Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
 
-    sget-object v91, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->EVENT_SET_USER_SOUND_SETTING:Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
+    sget-object v91, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->EVENT_STOP_FALLBACK_STATE_MONITORING:Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
 
-    sget-object v92, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->EVENT_UPDATE_CAMERA_PARAMETERS:Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
+    sget-object v92, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->EVENT_FORCE_FALLBACK_ON:Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
 
-    filled-new-array/range {v0 .. v92}, [Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
+    sget-object v93, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->EVENT_SET_USER_SOUND_SETTING:Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
+
+    sget-object v94, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->EVENT_UPDATE_CAMERA_PARAMETERS:Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
+
+    sget-object v95, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->EVENT_START_AUTO_FRAMING_MONITORING:Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
+
+    sget-object v96, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->EVENT_STOP_AUTO_FRAMING_MONITORING:Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
+
+    sget-object v97, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->EVENT_START_FRAMING_ASSIST_MONITORING:Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
+
+    sget-object v98, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->EVENT_STOP_FRAMING_ASSIST_MONITORING:Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
+
+    filled-new-array/range {v0 .. v98}, [Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
 
     move-result-object v0
 
@@ -941,500 +965,566 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->EVENT_SET_COOL_MODE:Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
 
-    .line 85
+    .line 83
     new-instance v0, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
 
-    const-string v1, "EVENT_ON_VIDEO_RECORDING_DONE"
+    const-string v1, "EVENT_REQUEST_UPDATE_AUDIO_DEVICE"
 
     const/16 v2, 0x30
 
     invoke-direct {v0, v1, v2}, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->EVENT_ON_VIDEO_RECORDING_DONE:Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
+    sput-object v0, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->EVENT_REQUEST_UPDATE_AUDIO_DEVICE:Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
 
     .line 86
     new-instance v0, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
 
-    const-string v1, "EVENT_RECORD_READY"
+    const-string v1, "EVENT_ON_VIDEO_RECORDING_DONE"
 
     const/16 v2, 0x31
 
     invoke-direct {v0, v1, v2}, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->EVENT_RECORD_READY:Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
+    sput-object v0, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->EVENT_ON_VIDEO_RECORDING_DONE:Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
 
     .line 87
     new-instance v0, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
 
-    const-string v1, "EVENT_ON_RECORD_SET_OUTPUT_DONE"
+    const-string v1, "EVENT_RECORD_READY"
 
     const/16 v2, 0x32
 
     invoke-direct {v0, v1, v2}, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->EVENT_ON_RECORD_SET_OUTPUT_DONE:Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
+    sput-object v0, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->EVENT_RECORD_READY:Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
 
     .line 88
     new-instance v0, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
 
-    const-string v1, "EVENT_START_RECORDING"
+    const-string v1, "EVENT_ON_RECORD_SET_OUTPUT_DONE"
 
     const/16 v2, 0x33
 
     invoke-direct {v0, v1, v2}, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->EVENT_START_RECORDING:Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
+    sput-object v0, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->EVENT_ON_RECORD_SET_OUTPUT_DONE:Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
 
     .line 89
     new-instance v0, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
 
-    const-string v1, "EVENT_ON_RECORDING_STARTED"
+    const-string v1, "EVENT_START_RECORDING"
 
     const/16 v2, 0x34
 
     invoke-direct {v0, v1, v2}, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->EVENT_ON_RECORDING_STARTED:Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
+    sput-object v0, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->EVENT_START_RECORDING:Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
 
     .line 90
     new-instance v0, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
 
-    const-string v1, "EVENT_ON_RECORDING_STOPPED"
+    const-string v1, "EVENT_ON_RECORDING_STARTED"
 
     const/16 v2, 0x35
 
     invoke-direct {v0, v1, v2}, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->EVENT_ON_RECORDING_STOPPED:Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
+    sput-object v0, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->EVENT_ON_RECORDING_STARTED:Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
 
     .line 91
     new-instance v0, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
 
-    const-string v1, "EVENT_STOP_RECORDING"
+    const-string v1, "EVENT_ON_RECORDING_STOPPED"
 
     const/16 v2, 0x36
 
     invoke-direct {v0, v1, v2}, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->EVENT_STOP_RECORDING:Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
+    sput-object v0, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->EVENT_ON_RECORDING_STOPPED:Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
 
     .line 92
     new-instance v0, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
 
-    const-string v1, "EVENT_RESUME_RECORDING"
+    const-string v1, "EVENT_STOP_RECORDING"
 
     const/16 v2, 0x37
 
     invoke-direct {v0, v1, v2}, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->EVENT_RESUME_RECORDING:Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
+    sput-object v0, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->EVENT_STOP_RECORDING:Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
 
     .line 93
     new-instance v0, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
 
-    const-string v1, "EVENT_PAUSE_RECORDING"
+    const-string v1, "EVENT_RESUME_RECORDING"
 
     const/16 v2, 0x38
 
     invoke-direct {v0, v1, v2}, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->EVENT_PAUSE_RECORDING:Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
+    sput-object v0, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->EVENT_RESUME_RECORDING:Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
 
     .line 94
     new-instance v0, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
 
-    const-string v1, "EVENT_TRIGGER_SLOW_MOTION"
+    const-string v1, "EVENT_PAUSE_RECORDING"
 
     const/16 v2, 0x39
 
     invoke-direct {v0, v1, v2}, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->EVENT_TRIGGER_SLOW_MOTION:Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
+    sput-object v0, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->EVENT_PAUSE_RECORDING:Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
 
     .line 95
     new-instance v0, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
 
-    const-string v1, "EVENT_ON_RECORDING_ERROR"
+    const-string v1, "EVENT_TRIGGER_SLOW_MOTION"
 
     const/16 v2, 0x3a
 
     invoke-direct {v0, v1, v2}, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->EVENT_ON_RECORDING_ERROR:Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
+    sput-object v0, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->EVENT_TRIGGER_SLOW_MOTION:Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
 
     .line 96
     new-instance v0, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
 
-    const-string v1, "EVENT_STOP_RECORDING_SLOW_MOTION_BUTTON_RELEASE"
+    const-string v1, "EVENT_ON_RECORDING_ERROR"
 
     const/16 v2, 0x3b
 
     invoke-direct {v0, v1, v2}, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->EVENT_STOP_RECORDING_SLOW_MOTION_BUTTON_RELEASE:Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
+    sput-object v0, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->EVENT_ON_RECORDING_ERROR:Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
 
     .line 97
     new-instance v0, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
 
-    const-string v1, "EVENT_HIGH_FRAME_RATE_RECORDING_START"
+    const-string v1, "EVENT_STOP_RECORDING_SLOW_MOTION_BUTTON_RELEASE"
 
     const/16 v2, 0x3c
 
     invoke-direct {v0, v1, v2}, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->EVENT_HIGH_FRAME_RATE_RECORDING_START:Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
+    sput-object v0, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->EVENT_STOP_RECORDING_SLOW_MOTION_BUTTON_RELEASE:Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
 
     .line 98
     new-instance v0, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
 
-    const-string v1, "EVENT_HIGH_FRAME_RATE_RECORDING_DONE"
+    const-string v1, "EVENT_HIGH_FRAME_RATE_RECORDING_START"
 
     const/16 v2, 0x3d
 
     invoke-direct {v0, v1, v2}, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->EVENT_HIGH_FRAME_RATE_RECORDING_DONE:Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
+    sput-object v0, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->EVENT_HIGH_FRAME_RATE_RECORDING_START:Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
 
     .line 99
     new-instance v0, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
 
-    const-string v1, "EVENT_PREPARE_RECORDING"
+    const-string v1, "EVENT_HIGH_FRAME_RATE_RECORDING_DONE"
 
     const/16 v2, 0x3e
 
     invoke-direct {v0, v1, v2}, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->EVENT_PREPARE_RECORDING:Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
+    sput-object v0, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->EVENT_HIGH_FRAME_RATE_RECORDING_DONE:Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
 
     .line 100
     new-instance v0, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
 
-    const-string v1, "EVENT_STOP_AUDIO_RECORDING"
+    const-string v1, "EVENT_PREPARE_RECORDING"
 
     const/16 v2, 0x3f
 
     invoke-direct {v0, v1, v2}, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->EVENT_STOP_AUDIO_RECORDING:Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
+    sput-object v0, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->EVENT_PREPARE_RECORDING:Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
 
-    .line 103
+    .line 101
     new-instance v0, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
 
-    const-string v1, "EVENT_CHANGE_SELECTED_FACE"
+    const-string v1, "EVENT_STOP_AUDIO_RECORDING"
 
     const/16 v2, 0x40
 
     invoke-direct {v0, v1, v2}, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->EVENT_CHANGE_SELECTED_FACE:Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
+    sput-object v0, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->EVENT_STOP_AUDIO_RECORDING:Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
 
-    .line 104
+    .line 102
     new-instance v0, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
 
-    const-string v1, "EVENT_START_FACE_DETECTION"
+    const-string v1, "EVENT_SET_STOP_RECORDING_VIBRATION"
 
     const/16 v2, 0x41
 
     invoke-direct {v0, v1, v2}, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->EVENT_START_FACE_DETECTION:Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
+    sput-object v0, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->EVENT_SET_STOP_RECORDING_VIBRATION:Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
 
     .line 105
     new-instance v0, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
 
-    const-string v1, "EVENT_STOP_FACE_DETECTION"
+    const-string v1, "EVENT_CHANGE_SELECTED_FACE"
 
     const/16 v2, 0x42
 
     invoke-direct {v0, v1, v2}, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->EVENT_STOP_FACE_DETECTION:Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
+    sput-object v0, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->EVENT_CHANGE_SELECTED_FACE:Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
 
     .line 106
     new-instance v0, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
 
-    const-string v1, "EVENT_START_OBJECT_TRACKING"
+    const-string v1, "EVENT_START_FACE_DETECTION"
 
     const/16 v2, 0x43
 
     invoke-direct {v0, v1, v2}, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->EVENT_START_OBJECT_TRACKING:Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
+    sput-object v0, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->EVENT_START_FACE_DETECTION:Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
 
     .line 107
     new-instance v0, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
 
-    const-string v1, "EVENT_STOP_OBJECT_TRACKING"
+    const-string v1, "EVENT_STOP_FACE_DETECTION"
 
     const/16 v2, 0x44
 
     invoke-direct {v0, v1, v2}, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->EVENT_STOP_OBJECT_TRACKING:Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
+    sput-object v0, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->EVENT_STOP_FACE_DETECTION:Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
 
     .line 108
     new-instance v0, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
 
-    const-string v1, "EVENT_START_AUTO_FLASH_MONITORING"
+    const-string v1, "EVENT_START_OBJECT_TRACKING"
 
     const/16 v2, 0x45
 
     invoke-direct {v0, v1, v2}, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->EVENT_START_AUTO_FLASH_MONITORING:Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
+    sput-object v0, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->EVENT_START_OBJECT_TRACKING:Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
 
     .line 109
     new-instance v0, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
 
-    const-string v1, "EVENT_STOP_AUTO_FLASH_MONITORING"
+    const-string v1, "EVENT_STOP_OBJECT_TRACKING"
 
     const/16 v2, 0x46
 
     invoke-direct {v0, v1, v2}, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->EVENT_STOP_AUTO_FLASH_MONITORING:Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
+    sput-object v0, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->EVENT_STOP_OBJECT_TRACKING:Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
 
     .line 110
     new-instance v0, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
 
-    const-string v1, "EVENT_START_AUTO_FOCUS_DISTANCE_MONITORING"
+    const-string v1, "EVENT_START_AUTO_FLASH_MONITORING"
 
     const/16 v2, 0x47
 
     invoke-direct {v0, v1, v2}, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->EVENT_START_AUTO_FOCUS_DISTANCE_MONITORING:Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
+    sput-object v0, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->EVENT_START_AUTO_FLASH_MONITORING:Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
 
     .line 111
     new-instance v0, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
 
-    const-string v1, "EVENT_STOP_AUTO_FOCUS_DISTANCE_MONITORING"
+    const-string v1, "EVENT_STOP_AUTO_FLASH_MONITORING"
 
     const/16 v2, 0x48
 
     invoke-direct {v0, v1, v2}, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->EVENT_STOP_AUTO_FOCUS_DISTANCE_MONITORING:Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
+    sput-object v0, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->EVENT_STOP_AUTO_FLASH_MONITORING:Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
 
     .line 112
     new-instance v0, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
 
-    const-string v1, "EVENT_START_FOCUS_MAGNIFICATION_MONITORING"
+    const-string v1, "EVENT_START_AUTO_FOCUS_DISTANCE_MONITORING"
 
     const/16 v2, 0x49
 
     invoke-direct {v0, v1, v2}, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->EVENT_START_FOCUS_MAGNIFICATION_MONITORING:Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
+    sput-object v0, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->EVENT_START_AUTO_FOCUS_DISTANCE_MONITORING:Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
 
     .line 113
     new-instance v0, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
 
-    const-string v1, "EVENT_STOP_FOCUS_MAGNIFICATION_MONITORING"
+    const-string v1, "EVENT_STOP_AUTO_FOCUS_DISTANCE_MONITORING"
 
     const/16 v2, 0x4a
 
     invoke-direct {v0, v1, v2}, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->EVENT_STOP_FOCUS_MAGNIFICATION_MONITORING:Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
+    sput-object v0, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->EVENT_STOP_AUTO_FOCUS_DISTANCE_MONITORING:Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
 
     .line 114
     new-instance v0, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
 
-    const-string v1, "EVENT_START_AE_AWB_LOCK_STATE_MONITORING"
+    const-string v1, "EVENT_START_FOCUS_MAGNIFICATION_MONITORING"
 
     const/16 v2, 0x4b
 
     invoke-direct {v0, v1, v2}, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->EVENT_START_AE_AWB_LOCK_STATE_MONITORING:Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
+    sput-object v0, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->EVENT_START_FOCUS_MAGNIFICATION_MONITORING:Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
 
     .line 115
     new-instance v0, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
 
-    const-string v1, "EVENT_STOP_AE_AWB_LOCK_STATE_MONITORING"
+    const-string v1, "EVENT_STOP_FOCUS_MAGNIFICATION_MONITORING"
 
     const/16 v2, 0x4c
 
     invoke-direct {v0, v1, v2}, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->EVENT_STOP_AE_AWB_LOCK_STATE_MONITORING:Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
+    sput-object v0, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->EVENT_STOP_FOCUS_MAGNIFICATION_MONITORING:Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
 
     .line 116
     new-instance v0, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
 
-    const-string v1, "EVENT_START_BOKEH_MONITORING"
+    const-string v1, "EVENT_START_AE_AWB_LOCK_STATE_MONITORING"
 
     const/16 v2, 0x4d
 
     invoke-direct {v0, v1, v2}, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->EVENT_START_BOKEH_MONITORING:Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
+    sput-object v0, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->EVENT_START_AE_AWB_LOCK_STATE_MONITORING:Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
 
     .line 117
     new-instance v0, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
 
-    const-string v1, "EVENT_STOP_BOKEH_MONITORING"
+    const-string v1, "EVENT_STOP_AE_AWB_LOCK_STATE_MONITORING"
 
     const/16 v2, 0x4e
 
     invoke-direct {v0, v1, v2}, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->EVENT_STOP_BOKEH_MONITORING:Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
+    sput-object v0, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->EVENT_STOP_AE_AWB_LOCK_STATE_MONITORING:Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
 
     .line 118
     new-instance v0, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
 
-    const-string v1, "EVENT_ON_SEMIAUTO_ENABLED"
+    const-string v1, "EVENT_START_BOKEH_MONITORING"
 
     const/16 v2, 0x4f
 
     invoke-direct {v0, v1, v2}, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->EVENT_ON_SEMIAUTO_ENABLED:Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
+    sput-object v0, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->EVENT_START_BOKEH_MONITORING:Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
 
     .line 119
     new-instance v0, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
 
-    const-string v1, "EVENT_ON_SEMIAUTO_DISABLED"
+    const-string v1, "EVENT_STOP_BOKEH_MONITORING"
 
     const/16 v2, 0x50
 
     invoke-direct {v0, v1, v2}, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->EVENT_ON_SEMIAUTO_DISABLED:Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
+    sput-object v0, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->EVENT_STOP_BOKEH_MONITORING:Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
 
     .line 120
     new-instance v0, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
 
-    const-string v1, "EVENT_REQUEST_PREVIEW_FRAME_PROVIDER"
+    const-string v1, "EVENT_ON_SEMIAUTO_ENABLED"
 
     const/16 v2, 0x51
 
     invoke-direct {v0, v1, v2}, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->EVENT_REQUEST_PREVIEW_FRAME_PROVIDER:Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
+    sput-object v0, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->EVENT_ON_SEMIAUTO_ENABLED:Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
 
     .line 121
     new-instance v0, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
 
-    const-string v1, "EVENT_START_HISTOGRAM_MONITORING"
+    const-string v1, "EVENT_ON_SEMIAUTO_DISABLED"
 
     const/16 v2, 0x52
 
     invoke-direct {v0, v1, v2}, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->EVENT_START_HISTOGRAM_MONITORING:Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
+    sput-object v0, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->EVENT_ON_SEMIAUTO_DISABLED:Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
 
     .line 122
     new-instance v0, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
 
-    const-string v1, "EVENT_STOP_HISTOGRAM_MONITORING"
+    const-string v1, "EVENT_REQUEST_PREVIEW_FRAME_PROVIDER"
 
     const/16 v2, 0x53
 
     invoke-direct {v0, v1, v2}, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->EVENT_STOP_HISTOGRAM_MONITORING:Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
+    sput-object v0, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->EVENT_REQUEST_PREVIEW_FRAME_PROVIDER:Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
 
     .line 123
     new-instance v0, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
 
-    const-string v1, "EVENT_REQUEST_HISTOGRAM_PREVIEW_FRAME"
+    const-string v1, "EVENT_START_HISTOGRAM_MONITORING"
 
     const/16 v2, 0x54
 
     invoke-direct {v0, v1, v2}, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->EVENT_REQUEST_HISTOGRAM_PREVIEW_FRAME:Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
+    sput-object v0, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->EVENT_START_HISTOGRAM_MONITORING:Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
 
     .line 124
     new-instance v0, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
 
-    const-string v1, "EVENT_REQUEST_HIGH_PERFORMANCE_MODE"
+    const-string v1, "EVENT_STOP_HISTOGRAM_MONITORING"
 
     const/16 v2, 0x55
 
     invoke-direct {v0, v1, v2}, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->EVENT_REQUEST_HIGH_PERFORMANCE_MODE:Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
+    sput-object v0, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->EVENT_STOP_HISTOGRAM_MONITORING:Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
 
     .line 125
     new-instance v0, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
 
-    const-string v1, "EVENT_START_LOW_LIGHT_STATE_MONITORING"
+    const-string v1, "EVENT_REQUEST_HISTOGRAM_PREVIEW_FRAME"
 
     const/16 v2, 0x56
 
     invoke-direct {v0, v1, v2}, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->EVENT_START_LOW_LIGHT_STATE_MONITORING:Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
+    sput-object v0, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->EVENT_REQUEST_HISTOGRAM_PREVIEW_FRAME:Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
 
     .line 126
     new-instance v0, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
 
-    const-string v1, "EVENT_STOP_LOW_LIGHT_STATE_MONITORING"
+    const-string v1, "EVENT_REQUEST_HIGH_PERFORMANCE_MODE"
 
     const/16 v2, 0x57
 
     invoke-direct {v0, v1, v2}, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->EVENT_STOP_LOW_LIGHT_STATE_MONITORING:Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
+    sput-object v0, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->EVENT_REQUEST_HIGH_PERFORMANCE_MODE:Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
 
     .line 127
     new-instance v0, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
 
-    const-string v1, "EVENT_START_FALLBACK_STATE_MONITORING"
+    const-string v1, "EVENT_START_LOW_LIGHT_STATE_MONITORING"
 
     const/16 v2, 0x58
 
     invoke-direct {v0, v1, v2}, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->EVENT_START_FALLBACK_STATE_MONITORING:Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
+    sput-object v0, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->EVENT_START_LOW_LIGHT_STATE_MONITORING:Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
 
     .line 128
     new-instance v0, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
 
-    const-string v1, "EVENT_STOP_FALLBACK_STATE_MONITORING"
+    const-string v1, "EVENT_STOP_LOW_LIGHT_STATE_MONITORING"
 
     const/16 v2, 0x59
 
     invoke-direct {v0, v1, v2}, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->EVENT_STOP_FALLBACK_STATE_MONITORING:Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
+    sput-object v0, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->EVENT_STOP_LOW_LIGHT_STATE_MONITORING:Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
 
     .line 129
     new-instance v0, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
 
-    const-string v1, "EVENT_FORCE_FALLBACK_ON"
+    const-string v1, "EVENT_START_FALLBACK_STATE_MONITORING"
 
     const/16 v2, 0x5a
 
     invoke-direct {v0, v1, v2}, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->EVENT_FORCE_FALLBACK_ON:Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
+    sput-object v0, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->EVENT_START_FALLBACK_STATE_MONITORING:Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
 
     .line 130
     new-instance v0, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
 
-    const-string v1, "EVENT_SET_USER_SOUND_SETTING"
+    const-string v1, "EVENT_STOP_FALLBACK_STATE_MONITORING"
 
     const/16 v2, 0x5b
 
     invoke-direct {v0, v1, v2}, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->EVENT_SET_USER_SOUND_SETTING:Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
+    sput-object v0, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->EVENT_STOP_FALLBACK_STATE_MONITORING:Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
 
     .line 131
     new-instance v0, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
 
-    const-string v1, "EVENT_UPDATE_CAMERA_PARAMETERS"
+    const-string v1, "EVENT_FORCE_FALLBACK_ON"
 
     const/16 v2, 0x5c
 
     invoke-direct {v0, v1, v2}, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;-><init>(Ljava/lang/String;I)V
 
+    sput-object v0, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->EVENT_FORCE_FALLBACK_ON:Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
+
+    .line 132
+    new-instance v0, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
+
+    const-string v1, "EVENT_SET_USER_SOUND_SETTING"
+
+    const/16 v2, 0x5d
+
+    invoke-direct {v0, v1, v2}, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;-><init>(Ljava/lang/String;I)V
+
+    sput-object v0, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->EVENT_SET_USER_SOUND_SETTING:Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
+
+    .line 133
+    new-instance v0, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
+
+    const-string v1, "EVENT_UPDATE_CAMERA_PARAMETERS"
+
+    const/16 v2, 0x5e
+
+    invoke-direct {v0, v1, v2}, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;-><init>(Ljava/lang/String;I)V
+
     sput-object v0, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->EVENT_UPDATE_CAMERA_PARAMETERS:Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
+
+    .line 134
+    new-instance v0, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
+
+    const-string v1, "EVENT_START_AUTO_FRAMING_MONITORING"
+
+    const/16 v2, 0x5f
+
+    invoke-direct {v0, v1, v2}, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;-><init>(Ljava/lang/String;I)V
+
+    sput-object v0, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->EVENT_START_AUTO_FRAMING_MONITORING:Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
+
+    .line 135
+    new-instance v0, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
+
+    const-string v1, "EVENT_STOP_AUTO_FRAMING_MONITORING"
+
+    const/16 v2, 0x60
+
+    invoke-direct {v0, v1, v2}, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;-><init>(Ljava/lang/String;I)V
+
+    sput-object v0, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->EVENT_STOP_AUTO_FRAMING_MONITORING:Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
+
+    .line 136
+    new-instance v0, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
+
+    const-string v1, "EVENT_START_FRAMING_ASSIST_MONITORING"
+
+    const/16 v2, 0x61
+
+    invoke-direct {v0, v1, v2}, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;-><init>(Ljava/lang/String;I)V
+
+    sput-object v0, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->EVENT_START_FRAMING_ASSIST_MONITORING:Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
+
+    .line 137
+    new-instance v0, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
+
+    const-string v1, "EVENT_STOP_FRAMING_ASSIST_MONITORING"
+
+    const/16 v2, 0x62
+
+    invoke-direct {v0, v1, v2}, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;-><init>(Ljava/lang/String;I)V
+
+    sput-object v0, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->EVENT_STOP_FRAMING_ASSIST_MONITORING:Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
 
     .line 26
     invoke-static {}, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->$values()[Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;

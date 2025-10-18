@@ -41,7 +41,7 @@
 .method private constructor <init>()V
     .locals 0
 
-    .line 283
+    .line 307
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -60,7 +60,7 @@
 .method public final getDefault$kotlin_stdlib()Lkotlin/text/HexFormat$NumberHexFormat;
     .locals 0
 
-    .line 284
+    .line 308
     invoke-static {}, Lkotlin/text/HexFormat$NumberHexFormat;->access$getDefault$cp()Lkotlin/text/HexFormat$NumberHexFormat;
 
     move-result-object p0

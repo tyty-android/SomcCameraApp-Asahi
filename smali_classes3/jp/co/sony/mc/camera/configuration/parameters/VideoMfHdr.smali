@@ -67,9 +67,9 @@
 
     const/4 v2, 0x0
 
-    const v3, 0x7f0802f6
+    const v3, 0x7f08030d
 
-    const v4, 0x7f11027a
+    const v4, 0x7f11029e
 
     move-object v0, v7
 
@@ -88,9 +88,9 @@
 
     const/4 v10, 0x1
 
-    const v11, 0x7f0802f5
+    const v11, 0x7f08030c
 
-    const v12, 0x7f11027b
+    const v12, 0x7f11029f
 
     move-object v8, v0
 

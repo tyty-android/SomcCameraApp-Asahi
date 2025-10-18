@@ -108,7 +108,7 @@
 .method private static synthetic $values()[Ljp/co/sony/mc/camera/controller/StateMachine$CaptureState;
     .locals 35
 
-    .line 561
+    .line 558
     sget-object v0, Ljp/co/sony/mc/camera/controller/StateMachine$CaptureState;->STATE_NONE:Ljp/co/sony/mc/camera/controller/StateMachine$CaptureState;
 
     sget-object v1, Ljp/co/sony/mc/camera/controller/StateMachine$CaptureState;->STATE_INITIALIZE:Ljp/co/sony/mc/camera/controller/StateMachine$CaptureState;
@@ -199,7 +199,7 @@
 .method static constructor <clinit>()V
     .locals 13
 
-    .line 562
+    .line 559
     new-instance v6, Ljp/co/sony/mc/camera/controller/StateMachine$CaptureState;
 
     const/4 v4, 0x0
@@ -218,7 +218,7 @@
 
     sput-object v6, Ljp/co/sony/mc/camera/controller/StateMachine$CaptureState;->STATE_NONE:Ljp/co/sony/mc/camera/controller/StateMachine$CaptureState;
 
-    .line 564
+    .line 561
     new-instance v0, Ljp/co/sony/mc/camera/controller/StateMachine$CaptureState;
 
     const/4 v11, 0x0
@@ -237,7 +237,7 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/controller/StateMachine$CaptureState;->STATE_INITIALIZE:Ljp/co/sony/mc/camera/controller/StateMachine$CaptureState;
 
-    .line 566
+    .line 563
     new-instance v0, Ljp/co/sony/mc/camera/controller/StateMachine$CaptureState;
 
     const/4 v6, 0x0
@@ -252,7 +252,7 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/controller/StateMachine$CaptureState;->STATE_RESUME:Ljp/co/sony/mc/camera/controller/StateMachine$CaptureState;
 
-    .line 568
+    .line 565
     new-instance v0, Ljp/co/sony/mc/camera/controller/StateMachine$CaptureState;
 
     const-string v8, "STATE_AWAIT_CAMERA_CLOSE_TO_SWITCH"
@@ -265,7 +265,7 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/controller/StateMachine$CaptureState;->STATE_AWAIT_CAMERA_CLOSE_TO_SWITCH:Ljp/co/sony/mc/camera/controller/StateMachine$CaptureState;
 
-    .line 570
+    .line 567
     new-instance v0, Ljp/co/sony/mc/camera/controller/StateMachine$CaptureState;
 
     const-string v2, "STATE_CAMERA_SWITCHING"
@@ -278,7 +278,7 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/controller/StateMachine$CaptureState;->STATE_CAMERA_SWITCHING:Ljp/co/sony/mc/camera/controller/StateMachine$CaptureState;
 
-    .line 572
+    .line 569
     new-instance v0, Ljp/co/sony/mc/camera/controller/StateMachine$CaptureState;
 
     const-string v8, "STATE_PHOTO_BASE"
@@ -291,7 +291,7 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/controller/StateMachine$CaptureState;->STATE_PHOTO_BASE:Ljp/co/sony/mc/camera/controller/StateMachine$CaptureState;
 
-    .line 574
+    .line 571
     new-instance v0, Ljp/co/sony/mc/camera/controller/StateMachine$CaptureState;
 
     const/4 v5, 0x1
@@ -308,7 +308,7 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/controller/StateMachine$CaptureState;->STATE_PHOTO_READY:Ljp/co/sony/mc/camera/controller/StateMachine$CaptureState;
 
-    .line 576
+    .line 573
     new-instance v0, Ljp/co/sony/mc/camera/controller/StateMachine$CaptureState;
 
     const-string v8, "STATE_PHOTO_READY_FOR_RECORDING"
@@ -321,7 +321,7 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/controller/StateMachine$CaptureState;->STATE_PHOTO_READY_FOR_RECORDING:Ljp/co/sony/mc/camera/controller/StateMachine$CaptureState;
 
-    .line 578
+    .line 575
     new-instance v0, Ljp/co/sony/mc/camera/controller/StateMachine$CaptureState;
 
     const/4 v5, 0x0
@@ -340,7 +340,7 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/controller/StateMachine$CaptureState;->STATE_PREPARE_FOR_RECORDING:Ljp/co/sony/mc/camera/controller/StateMachine$CaptureState;
 
-    .line 580
+    .line 577
     new-instance v0, Ljp/co/sony/mc/camera/controller/StateMachine$CaptureState;
 
     const-string v8, "STATE_CAPTURE_COUNTDOWN"
@@ -353,7 +353,7 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/controller/StateMachine$CaptureState;->STATE_CAPTURE_COUNTDOWN:Ljp/co/sony/mc/camera/controller/StateMachine$CaptureState;
 
-    .line 582
+    .line 579
     new-instance v0, Ljp/co/sony/mc/camera/controller/StateMachine$CaptureState;
 
     const/4 v5, 0x1
@@ -370,7 +370,7 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/controller/StateMachine$CaptureState;->STATE_OPERATION_RESTRICTED:Ljp/co/sony/mc/camera/controller/StateMachine$CaptureState;
 
-    .line 584
+    .line 581
     new-instance v0, Ljp/co/sony/mc/camera/controller/StateMachine$CaptureState;
 
     const-string v8, "STATE_PHOTO_WAITING_TRACKED_OBJECT_FOR_AF_START"
@@ -383,7 +383,7 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/controller/StateMachine$CaptureState;->STATE_PHOTO_WAITING_TRACKED_OBJECT_FOR_AF_START:Ljp/co/sony/mc/camera/controller/StateMachine$CaptureState;
 
-    .line 586
+    .line 583
     new-instance v0, Ljp/co/sony/mc/camera/controller/StateMachine$CaptureState;
 
     const/4 v5, 0x0
@@ -398,7 +398,7 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/controller/StateMachine$CaptureState;->STATE_PHOTO_AF_SEARCH:Ljp/co/sony/mc/camera/controller/StateMachine$CaptureState;
 
-    .line 588
+    .line 585
     new-instance v0, Ljp/co/sony/mc/camera/controller/StateMachine$CaptureState;
 
     const-string v8, "STATE_PHOTO_AF_DONE"
@@ -411,7 +411,7 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/controller/StateMachine$CaptureState;->STATE_PHOTO_AF_DONE:Ljp/co/sony/mc/camera/controller/StateMachine$CaptureState;
 
-    .line 590
+    .line 587
     new-instance v0, Ljp/co/sony/mc/camera/controller/StateMachine$CaptureState;
 
     const-string v2, "STATE_PHOTO_CAPTURE_WAIT_FOR_AF_DONE"
@@ -424,7 +424,7 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/controller/StateMachine$CaptureState;->STATE_PHOTO_CAPTURE_WAIT_FOR_AF_DONE:Ljp/co/sony/mc/camera/controller/StateMachine$CaptureState;
 
-    .line 592
+    .line 589
     new-instance v0, Ljp/co/sony/mc/camera/controller/StateMachine$CaptureState;
 
     const-string v8, "STATE_BURST_CAPTURE_WAIT_FOR_AF_DONE"
@@ -437,7 +437,7 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/controller/StateMachine$CaptureState;->STATE_BURST_CAPTURE_WAIT_FOR_AF_DONE:Ljp/co/sony/mc/camera/controller/StateMachine$CaptureState;
 
-    .line 594
+    .line 591
     new-instance v0, Ljp/co/sony/mc/camera/controller/StateMachine$CaptureState;
 
     const-string v2, "STATE_PHOTO_CAPTURE"
@@ -450,7 +450,7 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/controller/StateMachine$CaptureState;->STATE_PHOTO_CAPTURE:Ljp/co/sony/mc/camera/controller/StateMachine$CaptureState;
 
-    .line 596
+    .line 593
     new-instance v0, Ljp/co/sony/mc/camera/controller/StateMachine$CaptureState;
 
     const-string v8, "STATE_BURST_CAPTURE"
@@ -463,7 +463,7 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/controller/StateMachine$CaptureState;->STATE_BURST_CAPTURE:Ljp/co/sony/mc/camera/controller/StateMachine$CaptureState;
 
-    .line 598
+    .line 595
     new-instance v0, Ljp/co/sony/mc/camera/controller/StateMachine$CaptureState;
 
     const/4 v6, 0x1
@@ -478,7 +478,7 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/controller/StateMachine$CaptureState;->STATE_VIDEO_RECORDING:Ljp/co/sony/mc/camera/controller/StateMachine$CaptureState;
 
-    .line 600
+    .line 597
     new-instance v0, Ljp/co/sony/mc/camera/controller/StateMachine$CaptureState;
 
     const/4 v12, 0x1
@@ -493,7 +493,7 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/controller/StateMachine$CaptureState;->STATE_VIDEO_CAPTURE_WHILE_RECORDING:Ljp/co/sony/mc/camera/controller/StateMachine$CaptureState;
 
-    .line 602
+    .line 599
     new-instance v0, Ljp/co/sony/mc/camera/controller/StateMachine$CaptureState;
 
     const/4 v6, 0x0
@@ -508,7 +508,7 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/controller/StateMachine$CaptureState;->STATE_VIDEO_STORE_PHOTO_WHILE_RECORDING:Ljp/co/sony/mc/camera/controller/StateMachine$CaptureState;
 
-    .line 604
+    .line 601
     new-instance v0, Ljp/co/sony/mc/camera/controller/StateMachine$CaptureState;
 
     const-string v8, "STATE_VIDEO_STORE"
@@ -521,7 +521,7 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/controller/StateMachine$CaptureState;->STATE_VIDEO_STORE:Ljp/co/sony/mc/camera/controller/StateMachine$CaptureState;
 
-    .line 606
+    .line 603
     new-instance v0, Ljp/co/sony/mc/camera/controller/StateMachine$CaptureState;
 
     const/4 v6, 0x1
@@ -536,7 +536,7 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/controller/StateMachine$CaptureState;->STATE_WAIT_FOR_HIGH_FRAME_RATE_VIDEO_RECORDING_DONE:Ljp/co/sony/mc/camera/controller/StateMachine$CaptureState;
 
-    .line 608
+    .line 605
     new-instance v0, Ljp/co/sony/mc/camera/controller/StateMachine$CaptureState;
 
     const-string v8, "STATE_VIDEO_STOPPING"
@@ -549,7 +549,7 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/controller/StateMachine$CaptureState;->STATE_VIDEO_STOPPING:Ljp/co/sony/mc/camera/controller/StateMachine$CaptureState;
 
-    .line 610
+    .line 607
     new-instance v0, Ljp/co/sony/mc/camera/controller/StateMachine$CaptureState;
 
     const/4 v6, 0x0
@@ -566,7 +566,7 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/controller/StateMachine$CaptureState;->STATE_PAUSE:Ljp/co/sony/mc/camera/controller/StateMachine$CaptureState;
 
-    .line 612
+    .line 609
     new-instance v0, Ljp/co/sony/mc/camera/controller/StateMachine$CaptureState;
 
     const/4 v11, 0x1
@@ -585,7 +585,7 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/controller/StateMachine$CaptureState;->STATE_WARNING:Ljp/co/sony/mc/camera/controller/StateMachine$CaptureState;
 
-    .line 614
+    .line 611
     new-instance v0, Ljp/co/sony/mc/camera/controller/StateMachine$CaptureState;
 
     const-string v2, "STATE_FINALIZE"
@@ -600,7 +600,7 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/controller/StateMachine$CaptureState;->STATE_FINALIZE:Ljp/co/sony/mc/camera/controller/StateMachine$CaptureState;
 
-    .line 616
+    .line 613
     new-instance v0, Ljp/co/sony/mc/camera/controller/StateMachine$CaptureState;
 
     const/4 v11, 0x0
@@ -619,7 +619,7 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/controller/StateMachine$CaptureState;->STATE_VIDEO_RECORDING_PAUSING:Ljp/co/sony/mc/camera/controller/StateMachine$CaptureState;
 
-    .line 618
+    .line 615
     new-instance v0, Ljp/co/sony/mc/camera/controller/StateMachine$CaptureState;
 
     const/4 v5, 0x1
@@ -636,7 +636,7 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/controller/StateMachine$CaptureState;->STATE_VIDEO_READY:Ljp/co/sony/mc/camera/controller/StateMachine$CaptureState;
 
-    .line 620
+    .line 617
     new-instance v0, Ljp/co/sony/mc/camera/controller/StateMachine$CaptureState;
 
     const/4 v12, 0x0
@@ -653,7 +653,7 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/controller/StateMachine$CaptureState;->STATE_MODE_CHANGING:Ljp/co/sony/mc/camera/controller/StateMachine$CaptureState;
 
-    .line 622
+    .line 619
     new-instance v0, Ljp/co/sony/mc/camera/controller/StateMachine$CaptureState;
 
     const/4 v5, 0x0
@@ -668,7 +668,7 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/controller/StateMachine$CaptureState;->STATE_LOGICAL_MODE_CHANGING:Ljp/co/sony/mc/camera/controller/StateMachine$CaptureState;
 
-    .line 624
+    .line 621
     new-instance v0, Ljp/co/sony/mc/camera/controller/StateMachine$CaptureState;
 
     const-string v8, "STATE_WAITING_PRE_PROCESS_DONE"
@@ -683,7 +683,7 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/controller/StateMachine$CaptureState;->STATE_WAITING_PRE_PROCESS_DONE:Ljp/co/sony/mc/camera/controller/StateMachine$CaptureState;
 
-    .line 626
+    .line 623
     new-instance v0, Ljp/co/sony/mc/camera/controller/StateMachine$CaptureState;
 
     const-string v2, "STATE_WAITING_CAMERA_ACTIVATION_IN_MODE_CHANGE"
@@ -698,7 +698,7 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/controller/StateMachine$CaptureState;->STATE_WAITING_CAMERA_ACTIVATION_IN_MODE_CHANGE:Ljp/co/sony/mc/camera/controller/StateMachine$CaptureState;
 
-    .line 628
+    .line 625
     new-instance v0, Ljp/co/sony/mc/camera/controller/StateMachine$CaptureState;
 
     const-string v8, "STATE_CROPPING"
@@ -713,7 +713,7 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/controller/StateMachine$CaptureState;->STATE_CROPPING:Ljp/co/sony/mc/camera/controller/StateMachine$CaptureState;
 
-    .line 630
+    .line 627
     new-instance v0, Ljp/co/sony/mc/camera/controller/StateMachine$CaptureState;
 
     const-string v2, "STATE_FATAL"
@@ -726,7 +726,7 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/controller/StateMachine$CaptureState;->STATE_FATAL:Ljp/co/sony/mc/camera/controller/StateMachine$CaptureState;
 
-    .line 561
+    .line 558
     invoke-static {}, Ljp/co/sony/mc/camera/controller/StateMachine$CaptureState;->$values()[Ljp/co/sony/mc/camera/controller/StateMachine$CaptureState;
 
     move-result-object v0
@@ -744,16 +744,16 @@
         }
     .end annotation
 
-    .line 647
+    .line 644
     invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
-    .line 648
+    .line 645
     iput-boolean p3, p0, Ljp/co/sony/mc/camera/controller/StateMachine$CaptureState;->mCanApplicationBeFinished:Z
 
-    .line 649
+    .line 646
     iput-boolean p4, p0, Ljp/co/sony/mc/camera/controller/StateMachine$CaptureState;->mIsMenuAvailable:Z
 
-    .line 650
+    .line 647
     iput-boolean p5, p0, Ljp/co/sony/mc/camera/controller/StateMachine$CaptureState;->mIsRecordingState:Z
 
     return-void
@@ -762,7 +762,7 @@
 .method private canApplicationBeFinished()Z
     .locals 0
 
-    .line 654
+    .line 651
     iget-boolean p0, p0, Ljp/co/sony/mc/camera/controller/StateMachine$CaptureState;->mCanApplicationBeFinished:Z
 
     return p0
@@ -771,7 +771,7 @@
 .method private isMenuAvailable()Z
     .locals 0
 
-    .line 658
+    .line 655
     iget-boolean p0, p0, Ljp/co/sony/mc/camera/controller/StateMachine$CaptureState;->mIsMenuAvailable:Z
 
     return p0
@@ -780,7 +780,7 @@
 .method private isRecording()Z
     .locals 0
 
-    .line 662
+    .line 659
     iget-boolean p0, p0, Ljp/co/sony/mc/camera/controller/StateMachine$CaptureState;->mIsRecordingState:Z
 
     return p0
@@ -789,7 +789,7 @@
 .method public static valueOf(Ljava/lang/String;)Ljp/co/sony/mc/camera/controller/StateMachine$CaptureState;
     .locals 1
 
-    .line 561
+    .line 558
     const-class v0, Ljp/co/sony/mc/camera/controller/StateMachine$CaptureState;
 
     invoke-static {v0, p0}, Ljava/lang/Enum;->valueOf(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
@@ -804,7 +804,7 @@
 .method public static values()[Ljp/co/sony/mc/camera/controller/StateMachine$CaptureState;
     .locals 1
 
-    .line 561
+    .line 558
     sget-object v0, Ljp/co/sony/mc/camera/controller/StateMachine$CaptureState;->$VALUES:[Ljp/co/sony/mc/camera/controller/StateMachine$CaptureState;
 
     invoke-virtual {v0}, [Ljp/co/sony/mc/camera/controller/StateMachine$CaptureState;->clone()Ljava/lang/Object;

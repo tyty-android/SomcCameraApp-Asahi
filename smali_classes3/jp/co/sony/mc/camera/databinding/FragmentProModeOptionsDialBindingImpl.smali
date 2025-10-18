@@ -17,7 +17,7 @@
 
 # direct methods
 .method static constructor <clinit>()V
-    .locals 8
+    .locals 9
 
     .line 15
     new-instance v0, Landroidx/databinding/ViewDataBinding$IncludedLayouts;
@@ -28,52 +28,60 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/databinding/FragmentProModeOptionsDialBindingImpl;->sIncludes:Landroidx/databinding/ViewDataBinding$IncludedLayouts;
 
-    .line 16
-    const-string v1, "fragment_pro_mode_view_dial"
+    const/4 v1, 0x5
 
-    const-string v2, "fragment_pro_mode_ev_slider"
+    .line 16
+    new-array v2, v1, [Ljava/lang/String;
 
     const-string v3, "fragment_pro_mode_view_dial_title"
 
-    const-string v4, "fragment_basic_mode_view_dial_info"
+    const/4 v4, 0x0
 
-    const-string v5, "fragment_basic_mode_view_dial_value"
+    aput-object v3, v2, v4
 
-    filled-new-array {v3, v4, v5, v1, v2}, [Ljava/lang/String;
+    const-string v3, "fragment_basic_mode_view_dial_info"
+
+    const/4 v5, 0x1
+
+    aput-object v3, v2, v5
+
+    const-string v3, "fragment_basic_mode_view_dial_value"
+
+    const/4 v6, 0x2
+
+    aput-object v3, v2, v6
+
+    const-string v3, "fragment_pro_mode_view_dial"
+
+    const/4 v7, 0x3
+
+    aput-object v3, v2, v7
+
+    const-string v3, "fragment_pro_mode_ev_slider"
+
+    const/4 v8, 0x4
+
+    aput-object v3, v2, v8
+
+    filled-new-array {v5, v6, v7, v8, v1}, [I
 
     move-result-object v1
 
-    const/4 v2, 0x4
-
-    const/4 v3, 0x5
-
-    const/4 v4, 0x1
-
-    const/4 v5, 0x2
-
-    const/4 v6, 0x3
-
-    filled-new-array {v4, v5, v6, v2, v3}, [I
-
-    move-result-object v2
-
     const v3, 0x7f0c00b0
 
-    const v4, 0x7f0c00a0
+    const v5, 0x7f0c00a0
 
-    const v5, 0x7f0c00b1
+    const v6, 0x7f0c00b1
 
-    const v6, 0x7f0c007a
+    const v7, 0x7f0c007a
 
-    const v7, 0x7f0c007c
+    const v8, 0x7f0c007c
 
-    filled-new-array {v5, v6, v7, v3, v4}, [I
+    filled-new-array {v6, v7, v8, v3, v5}, [I
 
     move-result-object v3
 
-    const/4 v4, 0x0
-
-    invoke-virtual {v0, v4, v1, v2, v3}, Landroidx/databinding/ViewDataBinding$IncludedLayouts;->setIncludes(I[Ljava/lang/String;[I[I)V
+    invoke-virtual {v0, v4, v2, v1, v3}, Landroidx/databinding/ViewDataBinding$IncludedLayouts;->setIncludes(I[Ljava/lang/String;[I[I)V
 
     .line 24
     new-instance v0, Landroid/util/SparseIntArray;
@@ -82,7 +90,7 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/databinding/FragmentProModeOptionsDialBindingImpl;->sViewsWithIds:Landroid/util/SparseIntArray;
 
-    const v1, 0x7f0900a3
+    const v1, 0x7f0900a4
 
     const/4 v2, 0x6
 
@@ -1349,7 +1357,7 @@
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    const/16 p1, 0x15
+    const/16 p1, 0x18
 
     .line 129
     invoke-virtual {p0, p1}, Ljp/co/sony/mc/camera/databinding/FragmentProModeOptionsDialBindingImpl;->notifyPropertyChanged(I)V
@@ -1392,7 +1400,7 @@
 .method public setVariable(ILjava/lang/Object;)Z
     .locals 1
 
-    const/16 v0, 0x13
+    const/16 v0, 0x16
 
     if-ne v0, p1, :cond_0
 
@@ -1404,7 +1412,7 @@
     goto :goto_0
 
     :cond_0
-    const/16 v0, 0x15
+    const/16 v0, 0x18
 
     if-ne v0, p1, :cond_1
 
@@ -1416,7 +1424,7 @@
     goto :goto_0
 
     :cond_1
-    const/16 v0, 0x1b
+    const/16 v0, 0x1d
 
     if-ne v0, p1, :cond_2
 
@@ -1428,7 +1436,7 @@
     goto :goto_0
 
     :cond_2
-    const/16 v0, 0x18
+    const/16 v0, 0x1a
 
     if-ne v0, p1, :cond_3
 
@@ -1440,7 +1448,7 @@
     goto :goto_0
 
     :cond_3
-    const/16 v0, 0x8
+    const/16 v0, 0x9
 
     if-ne v0, p1, :cond_4
 

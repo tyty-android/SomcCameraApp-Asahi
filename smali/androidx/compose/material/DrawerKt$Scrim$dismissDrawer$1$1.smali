@@ -53,7 +53,7 @@
     f = "Drawer.kt"
     i = {}
     l = {
-        0x34c
+        0x340
     }
     m = "invokeSuspend"
     n = {}
@@ -181,7 +181,7 @@
 
     move-result-object v0
 
-    .line 65535
+    .line 832
     iget v1, p0, Landroidx/compose/material/DrawerKt$Scrim$dismissDrawer$1$1;->label:I
 
     const/4 v2, 0x1
@@ -212,7 +212,6 @@
 
     check-cast v3, Landroidx/compose/ui/input/pointer/PointerInputScope;
 
-    .line 844
     new-instance p1, Landroidx/compose/material/DrawerKt$Scrim$dismissDrawer$1$1$1;
 
     iget-object v1, p0, Landroidx/compose/material/DrawerKt$Scrim$dismissDrawer$1$1;->$onClose:Lkotlin/jvm/functions/Function0;

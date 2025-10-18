@@ -11,12 +11,12 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/SourceDebugExtension;
-    value = "SMAP\nCheckbox.kt\nKotlin\n*S Kotlin\n*F\n+ 1 Checkbox.kt\nandroidx/compose/material/CheckboxKt\n+ 2 Composables.kt\nandroidx/compose/runtime/ComposablesKt\n+ 3 Composer.kt\nandroidx/compose/runtime/ComposerKt\n+ 4 Transition.kt\nandroidx/compose/animation/core/TransitionKt\n+ 5 SnapshotState.kt\nandroidx/compose/runtime/SnapshotStateKt__SnapshotStateKt\n+ 6 Dp.kt\nandroidx/compose/ui/unit/DpKt\n*L\n1#1,485:1\n25#2:486\n50#2:493\n49#2:494\n25#2:501\n25#2:526\n83#2,3:533\n1097#3,6:487\n1097#3,6:495\n1097#3,6:502\n1097#3,6:527\n1097#3,6:536\n937#4,4:508\n858#4,5:512\n937#4,4:517\n858#4,5:521\n81#5:542\n81#5:543\n81#5:544\n81#5:545\n81#5:546\n154#6:547\n154#6:548\n154#6:549\n154#6:550\n154#6:551\n*S KotlinDebug\n*F\n+ 1 Checkbox.kt\nandroidx/compose/material/CheckboxKt\n*L\n91#1:486\n96#1:493\n96#1:494\n137#1:501\n297#1:526\n301#1:533,3\n91#1:487,6\n96#1:495,6\n137#1:502,6\n297#1:527,6\n301#1:536,6\n266#1:508,4\n266#1:512,5\n282#1:517,4\n282#1:521,5\n266#1:542\n282#1:543\n298#1:544\n299#1:545\n300#1:546\n480#1:547\n481#1:548\n482#1:549\n483#1:550\n484#1:551\n*E\n"
+    value = "SMAP\nCheckbox.kt\nKotlin\n*S Kotlin\n*F\n+ 1 Checkbox.kt\nandroidx/compose/material/CheckboxKt\n+ 2 Composables.kt\nandroidx/compose/runtime/ComposablesKt\n+ 3 Composer.kt\nandroidx/compose/runtime/ComposerKt\n+ 4 Transition.kt\nandroidx/compose/animation/core/TransitionKt\n+ 5 SnapshotState.kt\nandroidx/compose/runtime/SnapshotStateKt__SnapshotStateKt\n+ 6 Dp.kt\nandroidx/compose/ui/unit/DpKt\n*L\n1#1,485:1\n25#2:486\n25#2:499\n25#2:524\n1116#3,6:487\n1116#3,6:493\n1116#3,6:500\n1116#3,6:525\n1116#3,6:531\n1163#4,4:506\n1083#4,5:510\n1163#4,4:515\n1083#4,5:519\n81#5:537\n81#5:538\n81#5:539\n81#5:540\n81#5:541\n154#6:542\n154#6:543\n154#6:544\n154#6:545\n154#6:546\n*S KotlinDebug\n*F\n+ 1 Checkbox.kt\nandroidx/compose/material/CheckboxKt\n*L\n91#1:486\n137#1:499\n297#1:524\n91#1:487,6\n96#1:493,6\n137#1:500,6\n297#1:525,6\n301#1:531,6\n266#1:506,4\n266#1:510,5\n282#1:515,4\n282#1:519,5\n266#1:537\n282#1:538\n298#1:539\n299#1:540\n300#1:541\n480#1:542\n481#1:543\n482#1:544\n483#1:545\n484#1:546\n*E\n"
 .end annotation
 
 .annotation runtime Lkotlin/Metadata;
     d1 = {
-        "\u0000h\n\u0000\n\u0002\u0010\u0008\n\u0002\u0008\u0003\n\u0002\u0018\u0002\n\u0002\u0008\u0006\n\u0002\u0010\u0002\n\u0000\n\u0002\u0010\u000b\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0003\n\u0002\u0018\u0002\n\u0002\u0008\u0004\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0010\u0007\n\u0002\u0008\t\n\u0002\u0018\u0002\n\u0002\u0008\u0005\u001aS\u0010\u000b\u001a\u00020\u000c2\u0006\u0010\r\u001a\u00020\u000e2\u0014\u0010\u000f\u001a\u0010\u0012\u0004\u0012\u00020\u000e\u0012\u0004\u0012\u00020\u000c\u0018\u00010\u00102\u0008\u0008\u0002\u0010\u0011\u001a\u00020\u00122\u0008\u0008\u0002\u0010\u0013\u001a\u00020\u000e2\u0008\u0008\u0002\u0010\u0014\u001a\u00020\u00152\u0008\u0008\u0002\u0010\u0016\u001a\u00020\u0017H\u0007\u00a2\u0006\u0002\u0010\u0018\u001a-\u0010\u0019\u001a\u00020\u000c2\u0006\u0010\u0013\u001a\u00020\u000e2\u0006\u0010\u001a\u001a\u00020\u001b2\u0006\u0010\u0011\u001a\u00020\u00122\u0006\u0010\u0016\u001a\u00020\u0017H\u0003\u00a2\u0006\u0002\u0010\u001c\u001aM\u0010\u001d\u001a\u00020\u000c2\u0006\u0010\u001e\u001a\u00020\u001b2\u000e\u0010\u001f\u001a\n\u0012\u0004\u0012\u00020\u000c\u0018\u00010 2\u0008\u0008\u0002\u0010\u0011\u001a\u00020\u00122\u0008\u0008\u0002\u0010\u0013\u001a\u00020\u000e2\u0008\u0008\u0002\u0010\u0014\u001a\u00020\u00152\u0008\u0008\u0002\u0010\u0016\u001a\u00020\u0017H\u0007\u00a2\u0006\u0002\u0010!\u001a9\u0010\"\u001a\u00020\u000c*\u00020#2\u0006\u0010$\u001a\u00020%2\u0006\u0010&\u001a\u00020%2\u0006\u0010\'\u001a\u00020(2\u0006\u0010)\u001a\u00020(H\u0002\u00f8\u0001\u0001\u00f8\u0001\u0000\u00a2\u0006\u0004\u0008*\u0010+\u001aA\u0010,\u001a\u00020\u000c*\u00020#2\u0006\u0010-\u001a\u00020%2\u0006\u0010.\u001a\u00020(2\u0006\u0010/\u001a\u00020(2\u0006\u00100\u001a\u00020(2\u0006\u00101\u001a\u000202H\u0002\u00f8\u0001\u0001\u00f8\u0001\u0000\u00a2\u0006\u0004\u00083\u00104\"\u000e\u0010\u0000\u001a\u00020\u0001X\u0082T\u00a2\u0006\u0002\n\u0000\"\u000e\u0010\u0002\u001a\u00020\u0001X\u0082T\u00a2\u0006\u0002\n\u0000\"\u000e\u0010\u0003\u001a\u00020\u0001X\u0082T\u00a2\u0006\u0002\n\u0000\"\u0013\u0010\u0004\u001a\u00020\u0005X\u0082\u0004\u00f8\u0001\u0000\u00a2\u0006\u0004\n\u0002\u0010\u0006\"\u0013\u0010\u0007\u001a\u00020\u0005X\u0082\u0004\u00f8\u0001\u0000\u00a2\u0006\u0004\n\u0002\u0010\u0006\"\u0013\u0010\u0008\u001a\u00020\u0005X\u0082\u0004\u00f8\u0001\u0000\u00a2\u0006\u0004\n\u0002\u0010\u0006\"\u0013\u0010\t\u001a\u00020\u0005X\u0082\u0004\u00f8\u0001\u0000\u00a2\u0006\u0004\n\u0002\u0010\u0006\"\u0013\u0010\n\u001a\u00020\u0005X\u0082\u0004\u00f8\u0001\u0000\u00a2\u0006\u0004\n\u0002\u0010\u0006\u0082\u0002\u000b\n\u0002\u0008\u0019\n\u0005\u0008\u00a1\u001e0\u0001\u00a8\u00065\u00b2\u0006\n\u00106\u001a\u00020(X\u008a\u0084\u0002\u00b2\u0006\n\u00107\u001a\u00020(X\u008a\u0084\u0002\u00b2\u0006\n\u0010-\u001a\u00020%X\u008a\u0084\u0002\u00b2\u0006\n\u0010$\u001a\u00020%X\u008a\u0084\u0002\u00b2\u0006\n\u0010&\u001a\u00020%X\u008a\u0084\u0002"
+        "\u0000h\n\u0000\n\u0002\u0010\u0008\n\u0002\u0008\u0003\n\u0002\u0018\u0002\n\u0002\u0008\u0006\n\u0002\u0010\u0002\n\u0000\n\u0002\u0010\u000b\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0003\n\u0002\u0018\u0002\n\u0002\u0008\u0004\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0010\u0007\n\u0002\u0008\t\n\u0002\u0018\u0002\n\u0002\u0008\u0005\u001aS\u0010\u000b\u001a\u00020\u000c2\u0006\u0010\r\u001a\u00020\u000e2\u0014\u0010\u000f\u001a\u0010\u0012\u0004\u0012\u00020\u000e\u0012\u0004\u0012\u00020\u000c\u0018\u00010\u00102\u0008\u0008\u0002\u0010\u0011\u001a\u00020\u00122\u0008\u0008\u0002\u0010\u0013\u001a\u00020\u000e2\u0008\u0008\u0002\u0010\u0014\u001a\u00020\u00152\u0008\u0008\u0002\u0010\u0016\u001a\u00020\u0017H\u0007\u00a2\u0006\u0002\u0010\u0018\u001a-\u0010\u0019\u001a\u00020\u000c2\u0006\u0010\u0013\u001a\u00020\u000e2\u0006\u0010\u001a\u001a\u00020\u001b2\u0006\u0010\u0011\u001a\u00020\u00122\u0006\u0010\u0016\u001a\u00020\u0017H\u0003\u00a2\u0006\u0002\u0010\u001c\u001aM\u0010\u001d\u001a\u00020\u000c2\u0006\u0010\u001e\u001a\u00020\u001b2\u000e\u0010\u001f\u001a\n\u0012\u0004\u0012\u00020\u000c\u0018\u00010 2\u0008\u0008\u0002\u0010\u0011\u001a\u00020\u00122\u0008\u0008\u0002\u0010\u0013\u001a\u00020\u000e2\u0008\u0008\u0002\u0010\u0014\u001a\u00020\u00152\u0008\u0008\u0002\u0010\u0016\u001a\u00020\u0017H\u0007\u00a2\u0006\u0002\u0010!\u001a6\u0010\"\u001a\u00020\u000c*\u00020#2\u0006\u0010$\u001a\u00020%2\u0006\u0010&\u001a\u00020%2\u0006\u0010\'\u001a\u00020(2\u0006\u0010)\u001a\u00020(H\u0002\u00f8\u0001\u0000\u00a2\u0006\u0004\u0008*\u0010+\u001a>\u0010,\u001a\u00020\u000c*\u00020#2\u0006\u0010-\u001a\u00020%2\u0006\u0010.\u001a\u00020(2\u0006\u0010/\u001a\u00020(2\u0006\u00100\u001a\u00020(2\u0006\u00101\u001a\u000202H\u0002\u00f8\u0001\u0000\u00a2\u0006\u0004\u00083\u00104\"\u000e\u0010\u0000\u001a\u00020\u0001X\u0082T\u00a2\u0006\u0002\n\u0000\"\u000e\u0010\u0002\u001a\u00020\u0001X\u0082T\u00a2\u0006\u0002\n\u0000\"\u000e\u0010\u0003\u001a\u00020\u0001X\u0082T\u00a2\u0006\u0002\n\u0000\"\u0010\u0010\u0004\u001a\u00020\u0005X\u0082\u0004\u00a2\u0006\u0004\n\u0002\u0010\u0006\"\u0010\u0010\u0007\u001a\u00020\u0005X\u0082\u0004\u00a2\u0006\u0004\n\u0002\u0010\u0006\"\u0010\u0010\u0008\u001a\u00020\u0005X\u0082\u0004\u00a2\u0006\u0004\n\u0002\u0010\u0006\"\u0010\u0010\t\u001a\u00020\u0005X\u0082\u0004\u00a2\u0006\u0004\n\u0002\u0010\u0006\"\u0010\u0010\n\u001a\u00020\u0005X\u0082\u0004\u00a2\u0006\u0004\n\u0002\u0010\u0006\u0082\u0002\u0007\n\u0005\u0008\u00a1\u001e0\u0001\u00a8\u00065\u00b2\u0006\n\u00106\u001a\u00020(X\u008a\u0084\u0002\u00b2\u0006\n\u00107\u001a\u00020(X\u008a\u0084\u0002\u00b2\u0006\n\u0010-\u001a\u00020%X\u008a\u0084\u0002\u00b2\u0006\n\u0010$\u001a\u00020%X\u008a\u0084\u0002\u00b2\u0006\n\u0010&\u001a\u00020%X\u008a\u0084\u0002"
     }
     d2 = {
         "BoxInDuration",
@@ -112,7 +112,7 @@
 
     int-to-float v0, v0
 
-    .line 547
+    .line 542
     invoke-static {v0}, Landroidx/compose/ui/unit/Dp;->constructor-impl(F)F
 
     move-result v0
@@ -124,7 +124,7 @@
 
     int-to-float v0, v0
 
-    .line 548
+    .line 543
     invoke-static {v0}, Landroidx/compose/ui/unit/Dp;->constructor-impl(F)F
 
     move-result v1
@@ -136,7 +136,7 @@
 
     int-to-float v1, v1
 
-    .line 549
+    .line 544
     invoke-static {v1}, Landroidx/compose/ui/unit/Dp;->constructor-impl(F)F
 
     move-result v1
@@ -144,7 +144,7 @@
     .line 482
     sput v1, Landroidx/compose/material/CheckboxKt;->CheckboxSize:F
 
-    .line 550
+    .line 545
     invoke-static {v0}, Landroidx/compose/ui/unit/Dp;->constructor-impl(F)F
 
     move-result v1
@@ -152,7 +152,7 @@
     .line 483
     sput v1, Landroidx/compose/material/CheckboxKt;->StrokeWidth:F
 
-    .line 551
+    .line 546
     invoke-static {v0}, Landroidx/compose/ui/unit/Dp;->constructor-impl(F)F
 
     move-result v0
@@ -618,7 +618,7 @@
 
     const/4 v9, -0x1
 
-    const-string v10, "androidx.compose.material.Checkbox (Checkbox.kt:85)"
+    const-string v10, "androidx.compose.material.Checkbox (Checkbox.kt:92)"
 
     .line 93
     invoke-static {v0, v8, v9, v10}, Landroidx/compose/runtime/ComposerKt;->traceEventStart(IIILjava/lang/String;)V
@@ -629,48 +629,31 @@
 
     move-result-object v0
 
-    const v9, 0x556bc466
-
-    invoke-interface {v3, v9}, Landroidx/compose/runtime/Composer;->startReplaceableGroup(I)V
-
-    const-string v9, "95@4366L29"
-
-    invoke-static {v3, v9}, Landroidx/compose/runtime/ComposerKt;->sourceInformation(Landroidx/compose/runtime/Composer;Ljava/lang/String;)V
-
     if-eqz v2, :cond_1f
 
+    const v9, 0x7c3c1ba1
+
     .line 96
-    invoke-static/range {p0 .. p0}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
+    invoke-interface {v3, v9}, Landroidx/compose/runtime/Composer;->startReplaceableGroup(I)V
 
-    move-result-object v9
-
-    const v10, 0x1e7b2b64
-
-    invoke-interface {v3, v10}, Landroidx/compose/runtime/Composer;->startReplaceableGroup(I)V
-
-    const-string v10, "CC(remember)P(1,2):Composables.kt#9igjgp"
-
-    invoke-static {v3, v10}, Landroidx/compose/runtime/ComposerKt;->sourceInformation(Landroidx/compose/runtime/Composer;Ljava/lang/String;)V
-
-    .line 493
-    invoke-interface {v3, v2}, Landroidx/compose/runtime/Composer;->changed(Ljava/lang/Object;)Z
-
-    move-result v10
-
-    invoke-interface {v3, v9}, Landroidx/compose/runtime/Composer;->changed(Ljava/lang/Object;)Z
+    invoke-interface {v3, v2}, Landroidx/compose/runtime/Composer;->changedInstance(Ljava/lang/Object;)Z
 
     move-result v9
 
+    invoke-interface {v3, v1}, Landroidx/compose/runtime/Composer;->changed(Z)Z
+
+    move-result v10
+
     or-int/2addr v9, v10
 
-    .line 495
+    .line 493
     invoke-interface {v3}, Landroidx/compose/runtime/Composer;->rememberedValue()Ljava/lang/Object;
 
     move-result-object v10
 
     if-nez v9, :cond_1d
 
-    .line 496
+    .line 494
     sget-object v9, Landroidx/compose/runtime/Composer;->Companion:Landroidx/compose/runtime/Composer$Companion;
 
     invoke-virtual {v9}, Landroidx/compose/runtime/Composer$Companion;->getEmpty()Ljava/lang/Object;
@@ -689,14 +672,14 @@
 
     check-cast v10, Lkotlin/jvm/functions/Function0;
 
-    .line 498
+    .line 496
     invoke-interface {v3, v10}, Landroidx/compose/runtime/Composer;->updateRememberedValue(Ljava/lang/Object;)V
 
-    .line 494
+    .line 96
     :cond_1e
-    invoke-interface {v3}, Landroidx/compose/runtime/Composer;->endReplaceableGroup()V
-
     check-cast v10, Lkotlin/jvm/functions/Function0;
+
+    invoke-interface {v3}, Landroidx/compose/runtime/Composer;->endReplaceableGroup()V
 
     move-object v9, v10
 
@@ -705,10 +688,7 @@
     :cond_1f
     const/4 v9, 0x0
 
-    .line 96
     :goto_16
-    invoke-interface {v3}, Landroidx/compose/runtime/Composer;->endReplaceableGroup()V
-
     and-int/lit16 v10, v8, 0x380
 
     and-int/lit16 v11, v8, 0x1c00
@@ -761,11 +741,8 @@
 
     move-result-object v9
 
-    if-nez v9, :cond_21
+    if-eqz v9, :cond_21
 
-    goto :goto_18
-
-    :cond_21
     new-instance v10, Landroidx/compose/material/CheckboxKt$Checkbox$3;
 
     move-object v0, v10
@@ -788,12 +765,12 @@
 
     invoke-interface {v9, v10}, Landroidx/compose/runtime/ScopeUpdateScope;->updateScope(Lkotlin/jvm/functions/Function2;)V
 
-    :goto_18
+    :cond_21
     return-void
 .end method
 
 .method private static final CheckboxImpl(ZLandroidx/compose/ui/state/ToggleableState;Landroidx/compose/ui/Modifier;Landroidx/compose/material/CheckboxColors;Landroidx/compose/runtime/Composer;I)V
-    .locals 34
+    .locals 33
 
     move/from16 v1, p0
 
@@ -814,7 +791,7 @@
 
     move-result-object v14
 
-    const-string v6, "C(CheckboxImpl)P(1,3,2)264@11068L23,265@11132L443,281@11635L458,296@12115L32,297@12177L21,298@12226L24,299@12281L27,300@12391L508,300@12313L586:Checkbox.kt#jmzs0o"
+    const-string v6, "C(CheckboxImpl)P(1,3,2)264@11068L23,265@11132L443,281@11635L458,296@12115L32,297@12177L21,298@12226L24,299@12281L27,300@12313L586:Checkbox.kt#jmzs0o"
 
     invoke-static {v14, v6}, Landroidx/compose/runtime/ComposerKt;->sourceInformation(Landroidx/compose/runtime/Composer;Ljava/lang/String;)V
 
@@ -929,7 +906,9 @@
     :cond_8
     invoke-interface {v14}, Landroidx/compose/runtime/Composer;->skipToGroupEnd()V
 
-    goto/16 :goto_f
+    move-object v10, v3
+
+    goto/16 :goto_c
 
     .line 264
     :cond_9
@@ -942,7 +921,7 @@
 
     if-eqz v6, :cond_a
 
-    const-string v6, "androidx.compose.material.CheckboxImpl (Checkbox.kt:258)"
+    const-string v6, "androidx.compose.material.CheckboxImpl (Checkbox.kt:263)"
 
     invoke-static {v0, v13, v12, v6}, Landroidx/compose/runtime/ComposerKt;->traceEventStart(IIILjava/lang/String;)V
 
@@ -967,11 +946,11 @@
 
     invoke-interface {v14, v9}, Landroidx/compose/runtime/Composer;->startReplaceableGroup(I)V
 
-    const-string v8, "CC(animateFloat)P(2)939@37552L78:Transition.kt#pdpnli"
+    const-string v8, "CC(animateFloat)P(2)1165@46369L78:Transition.kt#pdpnli"
 
     invoke-static {v14, v8}, Landroidx/compose/runtime/ComposerKt;->sourceInformation(Landroidx/compose/runtime/Composer;Ljava/lang/String;)V
 
-    .line 511
+    .line 509
     sget-object v7, Lkotlin/jvm/internal/FloatCompanionObject;->INSTANCE:Lkotlin/jvm/internal/FloatCompanionObject;
 
     invoke-static {v7}, Landroidx/compose/animation/core/VectorConvertersKt;->getVectorConverter(Lkotlin/jvm/internal/FloatCompanionObject;)Landroidx/compose/animation/core/TwoWayConverter;
@@ -984,11 +963,11 @@
 
     move/from16 p4, v13
 
-    const-string v13, "CC(animateValue)P(3,2)857@34142L32,858@34197L31,859@34253L23,861@34289L89:Transition.kt#pdpnli"
+    const-string v13, "CC(animateValue)P(3,2)1082@42932L32,1083@42987L31,1084@43043L23,1086@43079L89:Transition.kt#pdpnli"
 
     invoke-static {v14, v13}, Landroidx/compose/runtime/ComposerKt;->sourceInformation(Landroidx/compose/runtime/Composer;Ljava/lang/String;)V
 
-    .line 512
+    .line 510
     invoke-virtual/range {v16 .. v16}, Landroidx/compose/animation/core/Transition;->getCurrentState()Ljava/lang/Object;
 
     move-result-object v18
@@ -999,7 +978,7 @@
 
     invoke-interface {v14, v7}, Landroidx/compose/runtime/Composer;->startReplaceableGroup(I)V
 
-    move-object/from16 v19, v13
+    move-object/from16 v20, v13
 
     const-string v13, "C:Checkbox.kt#jmzs0o"
 
@@ -1007,25 +986,25 @@
 
     invoke-static {}, Landroidx/compose/runtime/ComposerKt;->isTraceInProgress()Z
 
-    move-result v20
+    move-result v21
 
-    const-string v9, "androidx.compose.material.CheckboxImpl.<anonymous> (Checkbox.kt:273)"
+    const-string v9, "androidx.compose.material.CheckboxImpl.<anonymous> (Checkbox.kt:274)"
 
     const/4 v15, 0x0
 
-    if-eqz v20, :cond_b
+    if-eqz v21, :cond_b
 
     .line 275
     invoke-static {v7, v15, v12, v9}, Landroidx/compose/runtime/ComposerKt;->traceEventStart(IIILjava/lang/String;)V
 
     :cond_b
-    sget-object v20, Landroidx/compose/material/CheckboxKt$WhenMappings;->$EnumSwitchMapping$0:[I
+    sget-object v21, Landroidx/compose/material/CheckboxKt$WhenMappings;->$EnumSwitchMapping$0:[I
 
     invoke-virtual/range {v18 .. v18}, Landroidx/compose/ui/state/ToggleableState;->ordinal()I
 
     move-result v18
 
-    aget v10, v20, v18
+    aget v10, v21, v18
 
     const/4 v12, 0x1
 
@@ -1079,7 +1058,7 @@
 
     move-result-object v10
 
-    .line 513
+    .line 511
     invoke-virtual/range {v16 .. v16}, Landroidx/compose/animation/core/Transition;->getTargetState()Ljava/lang/Object;
 
     move-result-object v12
@@ -1092,44 +1071,39 @@
 
     invoke-static {}, Landroidx/compose/runtime/ComposerKt;->isTraceInProgress()Z
 
-    move-result v24
+    move-result v25
 
-    if-eqz v24, :cond_10
+    const/4 v5, -0x1
 
-    const/4 v5, 0x0
+    if-eqz v25, :cond_10
 
-    const/4 v15, -0x1
+    const/4 v15, 0x0
 
     .line 275
-    invoke-static {v7, v5, v15, v9}, Landroidx/compose/runtime/ComposerKt;->traceEventStart(IIILjava/lang/String;)V
-
-    goto :goto_8
+    invoke-static {v7, v15, v5, v9}, Landroidx/compose/runtime/ComposerKt;->traceEventStart(IIILjava/lang/String;)V
 
     :cond_10
-    const/4 v15, -0x1
-
-    :goto_8
-    sget-object v5, Landroidx/compose/material/CheckboxKt$WhenMappings;->$EnumSwitchMapping$0:[I
+    sget-object v7, Landroidx/compose/material/CheckboxKt$WhenMappings;->$EnumSwitchMapping$0:[I
 
     invoke-virtual {v12}, Landroidx/compose/ui/state/ToggleableState;->ordinal()I
 
-    move-result v7
+    move-result v9
 
-    aget v5, v5, v7
+    aget v7, v7, v9
 
     const/4 v12, 0x1
 
-    if-eq v5, v12, :cond_13
+    if-eq v7, v12, :cond_13
 
-    const/4 v7, 0x2
+    const/4 v9, 0x2
 
-    if-eq v5, v7, :cond_12
+    if-eq v7, v9, :cond_12
 
-    const/4 v7, 0x3
+    const/4 v9, 0x3
 
-    if-ne v5, v7, :cond_11
+    if-ne v7, v9, :cond_11
 
-    goto :goto_9
+    goto :goto_8
 
     .line 278
     :cond_11
@@ -1140,92 +1114,90 @@
     throw v0
 
     :cond_12
-    move/from16 v5, v22
+    move/from16 v7, v22
 
-    goto :goto_a
+    goto :goto_9
 
     :cond_13
-    :goto_9
-    move/from16 v5, v23
+    :goto_8
+    move/from16 v7, v23
 
     .line 275
-    :goto_a
+    :goto_9
     invoke-static {}, Landroidx/compose/runtime/ComposerKt;->isTraceInProgress()Z
 
-    move-result v7
+    move-result v9
 
-    if-eqz v7, :cond_14
+    if-eqz v9, :cond_14
 
     invoke-static {}, Landroidx/compose/runtime/ComposerKt;->traceEventEnd()V
 
     :cond_14
     invoke-interface {v14}, Landroidx/compose/runtime/Composer;->endReplaceableGroup()V
 
-    invoke-static {v5}, Ljava/lang/Float;->valueOf(F)Ljava/lang/Float;
+    invoke-static {v7}, Ljava/lang/Float;->valueOf(F)Ljava/lang/Float;
 
-    move-result-object v5
+    move-result-object v9
 
-    .line 514
+    .line 512
     invoke-virtual/range {v16 .. v16}, Landroidx/compose/animation/core/Transition;->getSegment()Landroidx/compose/animation/core/Transition$Segment;
 
     move-result-object v7
 
-    const/4 v9, 0x0
+    const/4 v15, 0x0
 
-    invoke-static {v9}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+    invoke-static {v15}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
-    move-result-object v12
+    move-result-object v5
 
-    invoke-interface {v6, v7, v14, v12}, Lkotlin/jvm/functions/Function3;->invoke(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-interface {v6, v7, v14, v5}, Lkotlin/jvm/functions/Function3;->invoke(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    move-result-object v6
+    move-result-object v5
 
-    move-object v9, v6
+    check-cast v5, Landroidx/compose/animation/core/FiniteAnimationSpec;
 
-    check-cast v9, Landroidx/compose/animation/core/FiniteAnimationSpec;
+    .line 514
+    const-string v15, "FloatAnimation"
 
-    .line 516
-    const-string v12, "FloatAnimation"
-
-    const/16 v18, 0x0
+    const/16 v24, 0x0
 
     move-object/from16 v6, v16
-
-    const v15, -0x880d1ef
 
     move-object v7, v10
 
     move-object v10, v8
 
-    move-object v8, v5
+    move-object v8, v9
 
-    const v5, -0x4fcbfb15
+    move-object v9, v5
 
-    move-object v15, v10
+    move-object v5, v10
 
     move-object/from16 v10, v17
 
     move/from16 v17, v11
 
-    move-object v11, v12
+    move-object v11, v15
+
+    const/4 v15, -0x1
 
     move-object v12, v14
 
-    move-object/from16 v26, v13
-
-    move-object/from16 v25, v19
-
     move/from16 v19, p4
 
-    move/from16 v13, v18
+    move-object v3, v13
+
+    move-object/from16 v15, v20
+
+    move/from16 v13, v24
 
     invoke-static/range {v6 .. v13}, Landroidx/compose/animation/core/TransitionKt;->createTransitionAnimation(Landroidx/compose/animation/core/Transition;Ljava/lang/Object;Ljava/lang/Object;Landroidx/compose/animation/core/FiniteAnimationSpec;Landroidx/compose/animation/core/TwoWayConverter;Ljava/lang/String;Landroidx/compose/runtime/Composer;I)Landroidx/compose/runtime/State;
 
-    move-result-object v21
+    move-result-object v13
 
     invoke-interface {v14}, Landroidx/compose/runtime/Composer;->endReplaceableGroup()V
 
-    .line 511
+    .line 509
     invoke-interface {v14}, Landroidx/compose/runtime/Composer;->endReplaceableGroup()V
 
     .line 282
@@ -1233,11 +1205,13 @@
 
     check-cast v6, Lkotlin/jvm/functions/Function3;
 
-    invoke-interface {v14, v5}, Landroidx/compose/runtime/Composer;->startReplaceableGroup(I)V
+    const v7, -0x4fcbfb15
 
-    invoke-static {v14, v15}, Landroidx/compose/runtime/ComposerKt;->sourceInformation(Landroidx/compose/runtime/Composer;Ljava/lang/String;)V
+    invoke-interface {v14, v7}, Landroidx/compose/runtime/Composer;->startReplaceableGroup(I)V
 
-    .line 520
+    invoke-static {v14, v5}, Landroidx/compose/runtime/ComposerKt;->sourceInformation(Landroidx/compose/runtime/Composer;Ljava/lang/String;)V
+
+    .line 518
     sget-object v5, Lkotlin/jvm/internal/FloatCompanionObject;->INSTANCE:Lkotlin/jvm/internal/FloatCompanionObject;
 
     invoke-static {v5}, Landroidx/compose/animation/core/VectorConvertersKt;->getVectorConverter(Lkotlin/jvm/internal/FloatCompanionObject;)Landroidx/compose/animation/core/TwoWayConverter;
@@ -1248,11 +1222,9 @@
 
     invoke-interface {v14, v5}, Landroidx/compose/runtime/Composer;->startReplaceableGroup(I)V
 
-    move-object/from16 v5, v25
+    invoke-static {v14, v15}, Landroidx/compose/runtime/ComposerKt;->sourceInformation(Landroidx/compose/runtime/Composer;Ljava/lang/String;)V
 
-    invoke-static {v14, v5}, Landroidx/compose/runtime/ComposerKt;->sourceInformation(Landroidx/compose/runtime/Composer;Ljava/lang/String;)V
-
-    .line 521
+    .line 519
     invoke-virtual/range {v16 .. v16}, Landroidx/compose/animation/core/Transition;->getCurrentState()Ljava/lang/Object;
 
     move-result-object v5
@@ -1263,54 +1235,47 @@
 
     invoke-interface {v14, v7}, Landroidx/compose/runtime/Composer;->startReplaceableGroup(I)V
 
-    move-object/from16 v8, v26
-
-    invoke-static {v14, v8}, Landroidx/compose/runtime/ComposerKt;->sourceInformation(Landroidx/compose/runtime/Composer;Ljava/lang/String;)V
+    invoke-static {v14, v3}, Landroidx/compose/runtime/ComposerKt;->sourceInformation(Landroidx/compose/runtime/Composer;Ljava/lang/String;)V
 
     invoke-static {}, Landroidx/compose/runtime/ComposerKt;->isTraceInProgress()Z
 
-    move-result v9
+    move-result v8
 
-    const-string v11, "androidx.compose.material.CheckboxImpl.<anonymous> (Checkbox.kt:289)"
+    const-string v9, "androidx.compose.material.CheckboxImpl.<anonymous> (Checkbox.kt:290)"
 
-    if-eqz v9, :cond_15
+    if-eqz v8, :cond_15
 
-    const/4 v9, -0x1
+    const/4 v8, 0x0
 
-    const/4 v12, 0x0
+    const/4 v11, -0x1
 
     .line 291
-    invoke-static {v7, v12, v9, v11}, Landroidx/compose/runtime/ComposerKt;->traceEventStart(IIILjava/lang/String;)V
-
-    goto :goto_b
+    invoke-static {v7, v8, v11, v9}, Landroidx/compose/runtime/ComposerKt;->traceEventStart(IIILjava/lang/String;)V
 
     :cond_15
-    const/4 v9, -0x1
-
-    :goto_b
-    sget-object v12, Landroidx/compose/material/CheckboxKt$WhenMappings;->$EnumSwitchMapping$0:[I
+    sget-object v8, Landroidx/compose/material/CheckboxKt$WhenMappings;->$EnumSwitchMapping$0:[I
 
     invoke-virtual {v5}, Landroidx/compose/ui/state/ToggleableState;->ordinal()I
 
     move-result v5
 
-    aget v5, v12, v5
+    aget v5, v8, v5
 
-    const/4 v12, 0x1
+    const/4 v8, 0x1
 
-    if-eq v5, v12, :cond_17
+    if-eq v5, v8, :cond_17
 
-    const/4 v13, 0x2
+    const/4 v8, 0x2
 
-    if-eq v5, v13, :cond_17
+    if-eq v5, v8, :cond_17
 
-    const/4 v13, 0x3
+    const/4 v8, 0x3
 
-    if-ne v5, v13, :cond_16
+    if-ne v5, v8, :cond_16
 
     move/from16 v5, v23
 
-    goto :goto_c
+    goto :goto_a
 
     .line 294
     :cond_16
@@ -1324,12 +1289,12 @@
     move/from16 v5, v22
 
     .line 291
-    :goto_c
+    :goto_a
     invoke-static {}, Landroidx/compose/runtime/ComposerKt;->isTraceInProgress()Z
 
-    move-result v13
+    move-result v8
 
-    if-eqz v13, :cond_18
+    if-eqz v8, :cond_18
 
     invoke-static {}, Landroidx/compose/runtime/ComposerKt;->traceEventEnd()V
 
@@ -1340,50 +1305,54 @@
 
     move-result-object v5
 
-    .line 522
+    .line 520
     invoke-virtual/range {v16 .. v16}, Landroidx/compose/animation/core/Transition;->getTargetState()Ljava/lang/Object;
 
-    move-result-object v13
+    move-result-object v8
 
-    check-cast v13, Landroidx/compose/ui/state/ToggleableState;
+    check-cast v8, Landroidx/compose/ui/state/ToggleableState;
 
     invoke-interface {v14, v7}, Landroidx/compose/runtime/Composer;->startReplaceableGroup(I)V
 
-    invoke-static {v14, v8}, Landroidx/compose/runtime/ComposerKt;->sourceInformation(Landroidx/compose/runtime/Composer;Ljava/lang/String;)V
+    invoke-static {v14, v3}, Landroidx/compose/runtime/ComposerKt;->sourceInformation(Landroidx/compose/runtime/Composer;Ljava/lang/String;)V
 
     invoke-static {}, Landroidx/compose/runtime/ComposerKt;->isTraceInProgress()Z
 
-    move-result v8
+    move-result v3
 
-    if-eqz v8, :cond_19
+    if-eqz v3, :cond_19
 
-    const/4 v8, 0x0
+    const/4 v3, 0x0
+
+    const/4 v11, -0x1
 
     .line 291
-    invoke-static {v7, v8, v9, v11}, Landroidx/compose/runtime/ComposerKt;->traceEventStart(IIILjava/lang/String;)V
+    invoke-static {v7, v3, v11, v9}, Landroidx/compose/runtime/ComposerKt;->traceEventStart(IIILjava/lang/String;)V
 
     :cond_19
-    sget-object v7, Landroidx/compose/material/CheckboxKt$WhenMappings;->$EnumSwitchMapping$0:[I
+    sget-object v3, Landroidx/compose/material/CheckboxKt$WhenMappings;->$EnumSwitchMapping$0:[I
 
-    invoke-virtual {v13}, Landroidx/compose/ui/state/ToggleableState;->ordinal()I
+    invoke-virtual {v8}, Landroidx/compose/ui/state/ToggleableState;->ordinal()I
 
-    move-result v8
+    move-result v7
 
-    aget v7, v7, v8
+    aget v3, v3, v7
 
-    if-eq v7, v12, :cond_1b
+    const/4 v7, 0x1
 
-    const/4 v8, 0x2
+    if-eq v3, v7, :cond_1b
 
-    if-eq v7, v8, :cond_1b
+    const/4 v7, 0x2
 
-    const/4 v8, 0x3
+    if-eq v3, v7, :cond_1b
 
-    if-ne v7, v8, :cond_1a
+    const/4 v7, 0x3
+
+    if-ne v3, v7, :cond_1a
 
     move/from16 v22, v23
 
-    goto :goto_d
+    goto :goto_b
 
     .line 294
     :cond_1a
@@ -1395,12 +1364,12 @@
 
     .line 291
     :cond_1b
-    :goto_d
+    :goto_b
     invoke-static {}, Landroidx/compose/runtime/ComposerKt;->isTraceInProgress()Z
 
-    move-result v7
+    move-result v3
 
-    if-eqz v7, :cond_1c
+    if-eqz v3, :cond_1c
 
     invoke-static {}, Landroidx/compose/runtime/ComposerKt;->traceEventEnd()V
 
@@ -1411,26 +1380,26 @@
 
     move-result-object v8
 
-    .line 523
+    .line 521
     invoke-virtual/range {v16 .. v16}, Landroidx/compose/animation/core/Transition;->getSegment()Landroidx/compose/animation/core/Transition$Segment;
 
-    move-result-object v7
+    move-result-object v3
 
-    const/4 v9, 0x0
+    const/4 v7, 0x0
 
-    invoke-static {v9}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+    invoke-static {v7}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
-    move-result-object v11
+    move-result-object v9
 
-    invoke-interface {v6, v7, v14, v11}, Lkotlin/jvm/functions/Function3;->invoke(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-interface {v6, v3, v14, v9}, Lkotlin/jvm/functions/Function3;->invoke(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    move-result-object v6
+    move-result-object v3
 
-    move-object v9, v6
+    move-object v9, v3
 
     check-cast v9, Landroidx/compose/animation/core/FiniteAnimationSpec;
 
-    .line 525
+    .line 523
     const-string v11, "FloatAnimation"
 
     move-object/from16 v6, v16
@@ -1439,92 +1408,94 @@
 
     move-object v12, v14
 
-    move/from16 v13, v18
+    move-object v3, v13
+
+    move/from16 v13, v24
 
     invoke-static/range {v6 .. v13}, Landroidx/compose/animation/core/TransitionKt;->createTransitionAnimation(Landroidx/compose/animation/core/Transition;Ljava/lang/Object;Ljava/lang/Object;Landroidx/compose/animation/core/FiniteAnimationSpec;Landroidx/compose/animation/core/TwoWayConverter;Ljava/lang/String;Landroidx/compose/runtime/Composer;I)Landroidx/compose/runtime/State;
 
-    move-result-object v33
-
-    invoke-interface {v14}, Landroidx/compose/runtime/Composer;->endReplaceableGroup()V
-
-    .line 520
-    invoke-interface {v14}, Landroidx/compose/runtime/Composer;->endReplaceableGroup()V
-
-    const v5, -0x1d58f75c
-
-    .line 297
-    invoke-interface {v14, v5}, Landroidx/compose/runtime/Composer;->startReplaceableGroup(I)V
-
-    const-string v5, "CC(remember):Composables.kt#9igjgp"
-
-    invoke-static {v14, v5}, Landroidx/compose/runtime/ComposerKt;->sourceInformation(Landroidx/compose/runtime/Composer;Ljava/lang/String;)V
-
-    .line 527
-    invoke-interface {v14}, Landroidx/compose/runtime/Composer;->rememberedValue()Ljava/lang/Object;
-
     move-result-object v5
 
-    .line 528
-    sget-object v6, Landroidx/compose/runtime/Composer;->Companion:Landroidx/compose/runtime/Composer$Companion;
+    invoke-interface {v14}, Landroidx/compose/runtime/Composer;->endReplaceableGroup()V
 
-    invoke-virtual {v6}, Landroidx/compose/runtime/Composer$Companion;->getEmpty()Ljava/lang/Object;
+    .line 518
+    invoke-interface {v14}, Landroidx/compose/runtime/Composer;->endReplaceableGroup()V
+
+    const v6, -0x1d58f75c
+
+    .line 297
+    invoke-interface {v14, v6}, Landroidx/compose/runtime/Composer;->startReplaceableGroup(I)V
+
+    const-string v6, "CC(remember):Composables.kt#9igjgp"
+
+    invoke-static {v14, v6}, Landroidx/compose/runtime/ComposerKt;->sourceInformation(Landroidx/compose/runtime/Composer;Ljava/lang/String;)V
+
+    .line 525
+    invoke-interface {v14}, Landroidx/compose/runtime/Composer;->rememberedValue()Ljava/lang/Object;
 
     move-result-object v6
 
-    if-ne v5, v6, :cond_1d
+    .line 526
+    sget-object v7, Landroidx/compose/runtime/Composer;->Companion:Landroidx/compose/runtime/Composer$Companion;
+
+    invoke-virtual {v7}, Landroidx/compose/runtime/Composer$Companion;->getEmpty()Ljava/lang/Object;
+
+    move-result-object v7
+
+    if-ne v6, v7, :cond_1d
 
     .line 297
-    new-instance v5, Landroidx/compose/material/CheckDrawingCache;
+    new-instance v6, Landroidx/compose/material/CheckDrawingCache;
 
-    const/4 v11, 0x7
+    const/4 v12, 0x7
 
-    const/4 v12, 0x0
-
-    const/4 v8, 0x0
+    const/4 v13, 0x0
 
     const/4 v9, 0x0
 
     const/4 v10, 0x0
 
-    move-object v7, v5
+    const/4 v11, 0x0
 
-    invoke-direct/range {v7 .. v12}, Landroidx/compose/material/CheckDrawingCache;-><init>(Landroidx/compose/ui/graphics/Path;Landroidx/compose/ui/graphics/PathMeasure;Landroidx/compose/ui/graphics/Path;ILkotlin/jvm/internal/DefaultConstructorMarker;)V
+    move-object v8, v6
 
-    .line 530
-    invoke-interface {v14, v5}, Landroidx/compose/runtime/Composer;->updateRememberedValue(Ljava/lang/Object;)V
+    invoke-direct/range {v8 .. v13}, Landroidx/compose/material/CheckDrawingCache;-><init>(Landroidx/compose/ui/graphics/Path;Landroidx/compose/ui/graphics/PathMeasure;Landroidx/compose/ui/graphics/Path;ILkotlin/jvm/internal/DefaultConstructorMarker;)V
 
-    .line 526
+    .line 528
+    invoke-interface {v14, v6}, Landroidx/compose/runtime/Composer;->updateRememberedValue(Ljava/lang/Object;)V
+
+    .line 524
     :cond_1d
     invoke-interface {v14}, Landroidx/compose/runtime/Composer;->endReplaceableGroup()V
 
     .line 297
-    check-cast v5, Landroidx/compose/material/CheckDrawingCache;
+    check-cast v6, Landroidx/compose/material/CheckDrawingCache;
 
-    shr-int/lit8 v6, v19, 0x6
+    shr-int/lit8 v7, v19, 0x6
 
-    and-int/lit8 v6, v6, 0x70
+    and-int/lit8 v7, v7, 0x70
 
-    or-int v6, v17, v6
+    or-int v7, v17, v7
 
     .line 298
-    invoke-interface {v4, v2, v14, v6}, Landroidx/compose/material/CheckboxColors;->checkmarkColor(Landroidx/compose/ui/state/ToggleableState;Landroidx/compose/runtime/Composer;I)Landroidx/compose/runtime/State;
+    invoke-interface {v4, v2, v14, v7}, Landroidx/compose/material/CheckboxColors;->checkmarkColor(Landroidx/compose/ui/state/ToggleableState;Landroidx/compose/runtime/Composer;I)Landroidx/compose/runtime/State;
 
-    move-result-object v6
+    move-result-object v7
 
-    and-int/lit8 v7, v19, 0xe
+    and-int/lit8 v8, v19, 0xe
 
-    and-int/lit8 v8, v19, 0x70
+    and-int/lit8 v9, v19, 0x70
 
-    or-int/2addr v7, v8
+    or-int/2addr v8, v9
 
     and-int/lit16 v0, v0, 0x380
 
-    or-int/2addr v0, v7
+    or-int/2addr v0, v8
 
     .line 299
     invoke-interface {v4, v1, v2, v14, v0}, Landroidx/compose/material/CheckboxColors;->boxColor(ZLandroidx/compose/ui/state/ToggleableState;Landroidx/compose/runtime/Composer;I)Landroidx/compose/runtime/State;
 
-    move-result-object v7
+    move-result-object v8
 
     .line 300
     invoke-interface {v4, v1, v2, v14, v0}, Landroidx/compose/material/CheckboxColors;->borderColor(ZLandroidx/compose/ui/state/ToggleableState;Landroidx/compose/runtime/Composer;I)Landroidx/compose/runtime/State;
@@ -1532,145 +1503,138 @@
     move-result-object v0
 
     .line 301
-    sget-object v8, Landroidx/compose/ui/Alignment;->Companion:Landroidx/compose/ui/Alignment$Companion;
+    sget-object v9, Landroidx/compose/ui/Alignment;->Companion:Landroidx/compose/ui/Alignment$Companion;
 
-    invoke-virtual {v8}, Landroidx/compose/ui/Alignment$Companion;->getCenter()Landroidx/compose/ui/Alignment;
-
-    move-result-object v8
-
-    const/4 v9, 0x0
-
-    const/4 v10, 0x0
-
-    const/4 v11, 0x2
-
-    invoke-static {v3, v8, v10, v11, v9}, Landroidx/compose/foundation/layout/SizeKt;->wrapContentSize$default(Landroidx/compose/ui/Modifier;Landroidx/compose/ui/Alignment;ZILjava/lang/Object;)Landroidx/compose/ui/Modifier;
-
-    move-result-object v8
-
-    sget v9, Landroidx/compose/material/CheckboxKt;->CheckboxSize:F
-
-    invoke-static {v8, v9}, Landroidx/compose/foundation/layout/SizeKt;->requiredSize-3ABfNKs(Landroidx/compose/ui/Modifier;F)Landroidx/compose/ui/Modifier;
-
-    move-result-object v8
-
-    move-object/from16 v27, v7
-
-    move-object/from16 v28, v0
-
-    move-object/from16 v29, v6
-
-    move-object/from16 v30, v21
-
-    move-object/from16 v31, v33
-
-    move-object/from16 v32, v5
-
-    filled-new-array/range {v27 .. v32}, [Ljava/lang/Object;
+    invoke-virtual {v9}, Landroidx/compose/ui/Alignment$Companion;->getCenter()Landroidx/compose/ui/Alignment;
 
     move-result-object v9
 
-    const v10, -0x21de6e89
-
-    invoke-interface {v14, v10}, Landroidx/compose/runtime/Composer;->startReplaceableGroup(I)V
-
-    const-string v10, "CC(remember)P(1):Composables.kt#9igjgp"
-
-    invoke-static {v14, v10}, Landroidx/compose/runtime/ComposerKt;->sourceInformation(Landroidx/compose/runtime/Composer;Ljava/lang/String;)V
-
-    const/4 v10, 0x0
+    move-object/from16 v10, p2
 
     const/4 v11, 0x0
 
-    :goto_e
-    const/4 v12, 0x6
+    const/4 v12, 0x0
 
-    if-ge v10, v12, :cond_1e
+    const/4 v13, 0x2
 
-    .line 534
-    aget-object v12, v9, v10
+    invoke-static {v10, v9, v12, v13, v11}, Landroidx/compose/foundation/layout/SizeKt;->wrapContentSize$default(Landroidx/compose/ui/Modifier;Landroidx/compose/ui/Alignment;ZILjava/lang/Object;)Landroidx/compose/ui/Modifier;
 
-    invoke-interface {v14, v12}, Landroidx/compose/runtime/Composer;->changed(Ljava/lang/Object;)Z
+    move-result-object v9
+
+    sget v11, Landroidx/compose/material/CheckboxKt;->CheckboxSize:F
+
+    invoke-static {v9, v11}, Landroidx/compose/foundation/layout/SizeKt;->requiredSize-3ABfNKs(Landroidx/compose/ui/Modifier;F)Landroidx/compose/ui/Modifier;
+
+    move-result-object v9
+
+    const v11, 0x7c3c3afa
+
+    invoke-interface {v14, v11}, Landroidx/compose/runtime/Composer;->startReplaceableGroup(I)V
+
+    invoke-interface {v14, v8}, Landroidx/compose/runtime/Composer;->changed(Ljava/lang/Object;)Z
+
+    move-result v11
+
+    invoke-interface {v14, v0}, Landroidx/compose/runtime/Composer;->changed(Ljava/lang/Object;)Z
 
     move-result v12
 
     or-int/2addr v11, v12
 
-    add-int/lit8 v10, v10, 0x1
+    invoke-interface {v14, v7}, Landroidx/compose/runtime/Composer;->changed(Ljava/lang/Object;)Z
 
-    goto :goto_e
+    move-result v12
 
-    .line 536
-    :cond_1e
+    or-int/2addr v11, v12
+
+    invoke-interface {v14, v3}, Landroidx/compose/runtime/Composer;->changed(Ljava/lang/Object;)Z
+
+    move-result v12
+
+    or-int/2addr v11, v12
+
+    invoke-interface {v14, v5}, Landroidx/compose/runtime/Composer;->changed(Ljava/lang/Object;)Z
+
+    move-result v12
+
+    or-int/2addr v11, v12
+
+    invoke-interface {v14, v6}, Landroidx/compose/runtime/Composer;->changed(Ljava/lang/Object;)Z
+
+    move-result v12
+
+    or-int/2addr v11, v12
+
+    .line 531
     invoke-interface {v14}, Landroidx/compose/runtime/Composer;->rememberedValue()Ljava/lang/Object;
 
-    move-result-object v9
+    move-result-object v12
 
-    if-nez v11, :cond_1f
+    if-nez v11, :cond_1e
 
-    .line 537
-    sget-object v10, Landroidx/compose/runtime/Composer;->Companion:Landroidx/compose/runtime/Composer$Companion;
+    .line 532
+    sget-object v11, Landroidx/compose/runtime/Composer;->Companion:Landroidx/compose/runtime/Composer$Companion;
 
-    invoke-virtual {v10}, Landroidx/compose/runtime/Composer$Companion;->getEmpty()Ljava/lang/Object;
+    invoke-virtual {v11}, Landroidx/compose/runtime/Composer$Companion;->getEmpty()Ljava/lang/Object;
 
-    move-result-object v10
+    move-result-object v11
 
-    if-ne v9, v10, :cond_20
+    if-ne v12, v11, :cond_1f
+
+    .line 301
+    :cond_1e
+    new-instance v11, Landroidx/compose/material/CheckboxKt$CheckboxImpl$1$1;
+
+    move-object/from16 v26, v11
+
+    move-object/from16 v27, v6
+
+    move-object/from16 v28, v8
+
+    move-object/from16 v29, v0
+
+    move-object/from16 v30, v7
+
+    move-object/from16 v31, v3
+
+    move-object/from16 v32, v5
+
+    invoke-direct/range {v26 .. v32}, Landroidx/compose/material/CheckboxKt$CheckboxImpl$1$1;-><init>(Landroidx/compose/material/CheckDrawingCache;Landroidx/compose/runtime/State;Landroidx/compose/runtime/State;Landroidx/compose/runtime/State;Landroidx/compose/runtime/State;Landroidx/compose/runtime/State;)V
+
+    move-object v12, v11
+
+    check-cast v12, Lkotlin/jvm/functions/Function1;
+
+    .line 534
+    invoke-interface {v14, v12}, Landroidx/compose/runtime/Composer;->updateRememberedValue(Ljava/lang/Object;)V
 
     .line 301
     :cond_1f
-    new-instance v9, Landroidx/compose/material/CheckboxKt$CheckboxImpl$1$1;
+    check-cast v12, Lkotlin/jvm/functions/Function1;
 
-    move-object/from16 v27, v9
-
-    move-object/from16 v28, v5
-
-    move-object/from16 v29, v7
-
-    move-object/from16 v30, v0
-
-    move-object/from16 v31, v6
-
-    move-object/from16 v32, v21
-
-    invoke-direct/range {v27 .. v33}, Landroidx/compose/material/CheckboxKt$CheckboxImpl$1$1;-><init>(Landroidx/compose/material/CheckDrawingCache;Landroidx/compose/runtime/State;Landroidx/compose/runtime/State;Landroidx/compose/runtime/State;Landroidx/compose/runtime/State;Landroidx/compose/runtime/State;)V
-
-    check-cast v9, Lkotlin/jvm/functions/Function1;
-
-    .line 539
-    invoke-interface {v14, v9}, Landroidx/compose/runtime/Composer;->updateRememberedValue(Ljava/lang/Object;)V
-
-    .line 535
-    :cond_20
     invoke-interface {v14}, Landroidx/compose/runtime/Composer;->endReplaceableGroup()V
-
-    check-cast v9, Lkotlin/jvm/functions/Function1;
 
     const/4 v0, 0x0
 
-    .line 301
-    invoke-static {v8, v9, v14, v0}, Landroidx/compose/foundation/CanvasKt;->Canvas(Landroidx/compose/ui/Modifier;Lkotlin/jvm/functions/Function1;Landroidx/compose/runtime/Composer;I)V
+    invoke-static {v9, v12, v14, v0}, Landroidx/compose/foundation/CanvasKt;->Canvas(Landroidx/compose/ui/Modifier;Lkotlin/jvm/functions/Function1;Landroidx/compose/runtime/Composer;I)V
 
     invoke-static {}, Landroidx/compose/runtime/ComposerKt;->isTraceInProgress()Z
 
     move-result v0
 
-    if-eqz v0, :cond_21
+    if-eqz v0, :cond_20
 
     invoke-static {}, Landroidx/compose/runtime/ComposerKt;->traceEventEnd()V
 
     .line 317
-    :cond_21
-    :goto_f
+    :cond_20
+    :goto_c
     invoke-interface {v14}, Landroidx/compose/runtime/Composer;->endRestartGroup()Landroidx/compose/runtime/ScopeUpdateScope;
 
     move-result-object v6
 
-    if-nez v6, :cond_22
+    if-eqz v6, :cond_21
 
-    goto :goto_10
-
-    :cond_22
     new-instance v7, Landroidx/compose/material/CheckboxKt$CheckboxImpl$2;
 
     move-object v0, v7
@@ -1691,7 +1655,7 @@
 
     invoke-interface {v6, v7}, Landroidx/compose/runtime/ScopeUpdateScope;->updateScope(Lkotlin/jvm/functions/Function2;)V
 
-    :goto_10
+    :cond_21
     return-void
 .end method
 
@@ -1706,7 +1670,7 @@
         }
     .end annotation
 
-    .line 546
+    .line 541
     invoke-interface {p0}, Landroidx/compose/runtime/State;->getValue()Ljava/lang/Object;
 
     move-result-object p0
@@ -1731,7 +1695,7 @@
         }
     .end annotation
 
-    .line 542
+    .line 537
     invoke-interface {p0}, Landroidx/compose/runtime/State;->getValue()Ljava/lang/Object;
 
     move-result-object p0
@@ -1756,7 +1720,7 @@
         }
     .end annotation
 
-    .line 543
+    .line 538
     invoke-interface {p0}, Landroidx/compose/runtime/State;->getValue()Ljava/lang/Object;
 
     move-result-object p0
@@ -1781,7 +1745,7 @@
         }
     .end annotation
 
-    .line 544
+    .line 539
     invoke-interface {p0}, Landroidx/compose/runtime/State;->getValue()Ljava/lang/Object;
 
     move-result-object p0
@@ -1806,7 +1770,7 @@
         }
     .end annotation
 
-    .line 545
+    .line 540
     invoke-interface {p0}, Landroidx/compose/runtime/State;->getValue()Ljava/lang/Object;
 
     move-result-object p0
@@ -1821,7 +1785,7 @@
 .end method
 
 .method public static final TriStateCheckbox(Landroidx/compose/ui/state/ToggleableState;Lkotlin/jvm/functions/Function0;Landroidx/compose/ui/Modifier;ZLandroidx/compose/foundation/interaction/MutableInteractionSource;Landroidx/compose/material/CheckboxColors;Landroidx/compose/runtime/Composer;II)V
-    .locals 25
+    .locals 24
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -1838,15 +1802,9 @@
         }
     .end annotation
 
-    move-object/from16 v7, p0
+    move-object/from16 v7, p1
 
-    move-object/from16 v8, p1
-
-    move/from16 v9, p7
-
-    const-string/jumbo v0, "state"
-
-    invoke-static {v7, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+    move/from16 v8, p7
 
     const v0, 0x79127e9a
 
@@ -1865,16 +1823,20 @@
 
     if-eqz v1, :cond_0
 
-    or-int/lit8 v1, v9, 0x6
+    or-int/lit8 v1, v8, 0x6
+
+    move-object/from16 v5, p0
 
     goto :goto_1
 
     :cond_0
-    and-int/lit8 v1, v9, 0xe
+    and-int/lit8 v1, v8, 0xe
+
+    move-object/from16 v5, p0
 
     if-nez v1, :cond_2
 
-    invoke-interface {v6, v7}, Landroidx/compose/runtime/Composer;->changed(Ljava/lang/Object;)Z
+    invoke-interface {v6, v5}, Landroidx/compose/runtime/Composer;->changed(Ljava/lang/Object;)Z
 
     move-result v1
 
@@ -1888,12 +1850,12 @@
     const/4 v1, 0x2
 
     :goto_0
-    or-int/2addr v1, v9
+    or-int/2addr v1, v8
 
     goto :goto_1
 
     :cond_2
-    move v1, v9
+    move v1, v8
 
     :goto_1
     and-int/lit8 v2, p8, 0x2
@@ -1905,11 +1867,11 @@
     goto :goto_3
 
     :cond_3
-    and-int/lit8 v2, v9, 0x70
+    and-int/lit8 v2, v8, 0x70
 
     if-nez v2, :cond_5
 
-    invoke-interface {v6, v8}, Landroidx/compose/runtime/Composer;->changedInstance(Ljava/lang/Object;)Z
+    invoke-interface {v6, v7}, Landroidx/compose/runtime/Composer;->changedInstance(Ljava/lang/Object;)Z
 
     move-result v2
 
@@ -1936,7 +1898,7 @@
     goto :goto_5
 
     :cond_6
-    and-int/lit16 v3, v9, 0x380
+    and-int/lit16 v3, v8, 0x380
 
     if-nez v3, :cond_8
 
@@ -1974,13 +1936,13 @@
     goto :goto_8
 
     :cond_9
-    and-int/lit16 v5, v9, 0x1c00
+    and-int/lit16 v9, v8, 0x1c00
 
-    if-nez v5, :cond_b
+    if-nez v9, :cond_b
 
-    move/from16 v5, p3
+    move/from16 v9, p3
 
-    invoke-interface {v6, v5}, Landroidx/compose/runtime/Composer;->changed(Z)Z
+    invoke-interface {v6, v9}, Landroidx/compose/runtime/Composer;->changed(Z)Z
 
     move-result v10
 
@@ -2000,7 +1962,7 @@
 
     :cond_b
     :goto_8
-    move/from16 v5, p3
+    move/from16 v9, p3
 
     :goto_9
     and-int/lit8 v10, p8, 0x10
@@ -2014,7 +1976,7 @@
     :cond_c
     const v11, 0xe000
 
-    and-int/2addr v11, v9
+    and-int/2addr v11, v8
 
     if-nez v11, :cond_e
 
@@ -2045,7 +2007,7 @@
     :goto_c
     const/high16 v12, 0x70000
 
-    and-int/2addr v12, v9
+    and-int/2addr v12, v8
 
     if-nez v12, :cond_11
 
@@ -2100,24 +2062,24 @@
     :cond_12
     invoke-interface {v6}, Landroidx/compose/runtime/Composer;->skipToGroupEnd()V
 
-    move v4, v5
-
     move-object v10, v6
+
+    move v4, v9
 
     move-object v5, v11
 
     move-object v6, v12
 
-    goto/16 :goto_17
+    goto/16 :goto_18
 
     .line 139
     :cond_13
     :goto_f
     invoke-interface {v6}, Landroidx/compose/runtime/Composer;->startDefaults()V
 
-    and-int/lit8 v13, v9, 0x1
+    and-int/lit8 v13, v8, 0x1
 
-    const v24, -0x70001
+    const v23, -0x70001
 
     if-eqz v13, :cond_16
 
@@ -2137,20 +2099,20 @@
 
     if-eqz v2, :cond_15
 
-    and-int v1, v1, v24
+    and-int v1, v1, v23
 
     :cond_15
-    move v4, v1
+    move-object v4, v3
 
-    move/from16 v17, v5
+    move/from16 v16, v9
 
-    move-object/from16 v18, v11
+    move-object/from16 v17, v11
 
-    move-object/from16 v19, v12
+    move-object/from16 v18, v12
 
-    move-object v5, v3
+    move v3, v1
 
-    goto/16 :goto_14
+    goto/16 :goto_15
 
     :cond_16
     :goto_10
@@ -2174,7 +2136,7 @@
     goto :goto_12
 
     :cond_18
-    move v3, v5
+    move v3, v9
 
     :goto_12
     if-eqz v10, :cond_1a
@@ -2188,29 +2150,29 @@
 
     invoke-static {v6, v4}, Landroidx/compose/runtime/ComposerKt;->sourceInformation(Landroidx/compose/runtime/Composer;Ljava/lang/String;)V
 
-    .line 502
+    .line 500
     invoke-interface {v6}, Landroidx/compose/runtime/Composer;->rememberedValue()Ljava/lang/Object;
 
     move-result-object v4
 
-    .line 503
-    sget-object v5, Landroidx/compose/runtime/Composer;->Companion:Landroidx/compose/runtime/Composer$Companion;
+    .line 501
+    sget-object v9, Landroidx/compose/runtime/Composer;->Companion:Landroidx/compose/runtime/Composer$Companion;
 
-    invoke-virtual {v5}, Landroidx/compose/runtime/Composer$Companion;->getEmpty()Ljava/lang/Object;
+    invoke-virtual {v9}, Landroidx/compose/runtime/Composer$Companion;->getEmpty()Ljava/lang/Object;
 
-    move-result-object v5
+    move-result-object v9
 
-    if-ne v4, v5, :cond_19
+    if-ne v4, v9, :cond_19
 
     .line 137
     invoke-static {}, Landroidx/compose/foundation/interaction/InteractionSourceKt;->MutableInteractionSource()Landroidx/compose/foundation/interaction/MutableInteractionSource;
 
     move-result-object v4
 
-    .line 505
+    .line 503
     invoke-interface {v6, v4}, Landroidx/compose/runtime/Composer;->updateRememberedValue(Ljava/lang/Object;)V
 
-    .line 501
+    .line 499
     :cond_19
     invoke-interface {v6}, Landroidx/compose/runtime/Composer;->endReplaceableGroup()V
 
@@ -2222,59 +2184,56 @@
     move-object v4, v11
 
     :goto_13
-    and-int/lit8 v5, p8, 0x20
+    and-int/lit8 v9, p8, 0x20
 
-    if-eqz v5, :cond_1b
+    if-eqz v9, :cond_1b
 
     .line 138
-    sget-object v10, Landroidx/compose/material/CheckboxDefaults;->INSTANCE:Landroidx/compose/material/CheckboxDefaults;
+    sget-object v9, Landroidx/compose/material/CheckboxDefaults;->INSTANCE:Landroidx/compose/material/CheckboxDefaults;
 
-    const/high16 v22, 0x30000
+    const/high16 v21, 0x30000
 
-    const/16 v23, 0x1f
+    const/16 v22, 0x1f
 
-    const-wide/16 v11, 0x0
+    const-wide/16 v10, 0x0
 
-    const-wide/16 v13, 0x0
+    const-wide/16 v12, 0x0
 
-    const-wide/16 v15, 0x0
+    const-wide/16 v14, 0x0
 
-    const-wide/16 v17, 0x0
+    const-wide/16 v16, 0x0
 
-    const-wide/16 v19, 0x0
+    const-wide/16 v18, 0x0
 
-    move-object/from16 v21, v6
+    move-object/from16 v20, v6
 
-    invoke-virtual/range {v10 .. v23}, Landroidx/compose/material/CheckboxDefaults;->colors-zjMxDiM(JJJJJLandroidx/compose/runtime/Composer;II)Landroidx/compose/material/CheckboxColors;
+    invoke-virtual/range {v9 .. v22}, Landroidx/compose/material/CheckboxDefaults;->colors-zjMxDiM(JJJJJLandroidx/compose/runtime/Composer;II)Landroidx/compose/material/CheckboxColors;
 
-    move-result-object v5
+    move-result-object v9
 
-    and-int v1, v1, v24
+    and-int v1, v1, v23
 
-    move/from16 v17, v3
+    move/from16 v16, v3
 
-    move-object/from16 v18, v4
+    move-object/from16 v17, v4
 
-    move-object/from16 v19, v5
-
-    move v4, v1
-
-    move-object v5, v2
+    move-object/from16 v18, v9
 
     goto :goto_14
 
     :cond_1b
-    move-object v5, v2
+    move/from16 v16, v3
 
-    move/from16 v17, v3
+    move-object/from16 v17, v4
 
-    move-object/from16 v18, v4
-
-    move-object/from16 v19, v12
-
-    move v4, v1
+    move-object/from16 v18, v12
 
     :goto_14
+    move v3, v1
+
+    move-object v4, v2
+
+    :goto_15
     invoke-interface {v6}, Landroidx/compose/runtime/Composer;->endDefaults()V
 
     invoke-static {}, Landroidx/compose/runtime/ComposerKt;->isTraceInProgress()Z
@@ -2285,10 +2244,10 @@
 
     const/4 v1, -0x1
 
-    const-string v2, "androidx.compose.material.TriStateCheckbox (Checkbox.kt:131)"
+    const-string v2, "androidx.compose.material.TriStateCheckbox (Checkbox.kt:138)"
 
     .line 139
-    invoke-static {v0, v4, v1, v2}, Landroidx/compose/runtime/ComposerKt;->traceEventStart(IIILjava/lang/String;)V
+    invoke-static {v0, v3, v1, v2}, Landroidx/compose/runtime/ComposerKt;->traceEventStart(IIILjava/lang/String;)V
 
     :cond_1c
     const v0, -0x5a73f7ca
@@ -2299,7 +2258,7 @@
 
     invoke-static {v6, v0}, Landroidx/compose/runtime/ComposerKt;->sourceInformation(Landroidx/compose/runtime/Composer;Ljava/lang/String;)V
 
-    if-eqz v8, :cond_1d
+    if-eqz v7, :cond_1d
 
     .line 142
     sget-object v0, Landroidx/compose/ui/Modifier;->Companion:Landroidx/compose/ui/Modifier$Companion;
@@ -2312,22 +2271,22 @@
     move-result v1
 
     .line 150
-    sget v11, Landroidx/compose/material/CheckboxKt;->CheckboxRippleRadius:F
+    sget v10, Landroidx/compose/material/CheckboxKt;->CheckboxRippleRadius:F
 
-    const/16 v15, 0x36
+    const/16 v14, 0x36
 
-    const/16 v16, 0x4
+    const/4 v15, 0x4
 
-    const/4 v10, 0x0
+    const/4 v9, 0x0
 
-    const-wide/16 v12, 0x0
+    const-wide/16 v11, 0x0
 
-    move-object v14, v6
+    move-object v13, v6
 
     .line 148
-    invoke-static/range {v10 .. v16}, Landroidx/compose/material/ripple/RippleKt;->rememberRipple-9IZ8Weo(ZFJLandroidx/compose/runtime/Composer;II)Landroidx/compose/foundation/Indication;
+    invoke-static/range {v9 .. v15}, Landroidx/compose/material/ripple/RippleKt;->rememberRipple-9IZ8Weo(ZFJLandroidx/compose/runtime/Composer;II)Landroidx/compose/foundation/Indication;
 
-    move-result-object v3
+    move-result-object v9
 
     .line 142
     check-cast v0, Landroidx/compose/ui/Modifier;
@@ -2339,13 +2298,15 @@
 
     move-object/from16 v1, p0
 
-    move-object/from16 v2, v18
+    move-object/from16 v2, v17
 
-    move v11, v4
+    move v11, v3
 
-    move/from16 v4, v17
+    move-object v3, v9
 
-    move-object v12, v5
+    move-object v9, v4
+
+    move/from16 v4, v16
 
     move-object v5, v10
 
@@ -2358,12 +2319,12 @@
 
     move-result-object v0
 
-    goto :goto_15
+    goto :goto_16
 
     :cond_1d
-    move v11, v4
+    move v11, v3
 
-    move-object v12, v5
+    move-object v9, v4
 
     move-object v10, v6
 
@@ -2373,10 +2334,10 @@
     check-cast v0, Landroidx/compose/ui/Modifier;
 
     .line 141
-    :goto_15
+    :goto_16
     invoke-interface {v10}, Landroidx/compose/runtime/Composer;->endReplaceableGroup()V
 
-    if-eqz v8, :cond_1e
+    if-eqz v7, :cond_1e
 
     .line 162
     sget-object v1, Landroidx/compose/ui/Modifier;->Companion:Landroidx/compose/ui/Modifier$Companion;
@@ -2387,7 +2348,7 @@
 
     move-result-object v1
 
-    goto :goto_16
+    goto :goto_17
 
     .line 164
     :cond_1e
@@ -2396,8 +2357,8 @@
     check-cast v1, Landroidx/compose/ui/Modifier;
 
     .line 160
-    :goto_16
-    invoke-interface {v12, v1}, Landroidx/compose/ui/Modifier;->then(Landroidx/compose/ui/Modifier;)Landroidx/compose/ui/Modifier;
+    :goto_17
+    invoke-interface {v9, v1}, Landroidx/compose/ui/Modifier;->then(Landroidx/compose/ui/Modifier;)Landroidx/compose/ui/Modifier;
 
     move-result-object v1
 
@@ -2411,7 +2372,7 @@
 
     invoke-static {v0, v1}, Landroidx/compose/foundation/layout/PaddingKt;->padding-3ABfNKs(Landroidx/compose/ui/Modifier;F)Landroidx/compose/ui/Modifier;
 
-    move-result-object v2
+    move-result-object v3
 
     shr-int/lit8 v0, v11, 0x9
 
@@ -2427,18 +2388,18 @@
 
     and-int/lit16 v1, v1, 0x1c00
 
-    or-int v5, v0, v1
+    or-int v6, v0, v1
 
-    move/from16 v0, v17
+    move/from16 v1, v16
 
-    move-object/from16 v1, p0
+    move-object/from16 v2, p0
 
-    move-object/from16 v3, v19
+    move-object/from16 v4, v18
 
-    move-object v4, v10
+    move-object v5, v10
 
     .line 156
-    invoke-static/range {v0 .. v5}, Landroidx/compose/material/CheckboxKt;->CheckboxImpl(ZLandroidx/compose/ui/state/ToggleableState;Landroidx/compose/ui/Modifier;Landroidx/compose/material/CheckboxColors;Landroidx/compose/runtime/Composer;I)V
+    invoke-static/range {v1 .. v6}, Landroidx/compose/material/CheckboxKt;->CheckboxImpl(ZLandroidx/compose/ui/state/ToggleableState;Landroidx/compose/ui/Modifier;Landroidx/compose/material/CheckboxColors;Landroidx/compose/runtime/Composer;I)V
 
     invoke-static {}, Landroidx/compose/runtime/ComposerKt;->isTraceInProgress()Z
 
@@ -2449,28 +2410,25 @@
     invoke-static {}, Landroidx/compose/runtime/ComposerKt;->traceEventEnd()V
 
     :cond_1f
-    move-object v3, v12
+    move-object v3, v9
 
-    move/from16 v4, v17
+    move/from16 v4, v16
 
-    move-object/from16 v5, v18
+    move-object/from16 v5, v17
 
-    move-object/from16 v6, v19
+    move-object/from16 v6, v18
 
     .line 171
-    :goto_17
+    :goto_18
     invoke-interface {v10}, Landroidx/compose/runtime/Composer;->endRestartGroup()Landroidx/compose/runtime/ScopeUpdateScope;
 
-    move-result-object v10
+    move-result-object v9
 
-    if-nez v10, :cond_20
+    if-eqz v9, :cond_20
 
-    goto :goto_18
+    new-instance v10, Landroidx/compose/material/CheckboxKt$TriStateCheckbox$2;
 
-    :cond_20
-    new-instance v11, Landroidx/compose/material/CheckboxKt$TriStateCheckbox$2;
-
-    move-object v0, v11
+    move-object v0, v10
 
     move-object/from16 v1, p0
 
@@ -2482,11 +2440,11 @@
 
     invoke-direct/range {v0 .. v8}, Landroidx/compose/material/CheckboxKt$TriStateCheckbox$2;-><init>(Landroidx/compose/ui/state/ToggleableState;Lkotlin/jvm/functions/Function0;Landroidx/compose/ui/Modifier;ZLandroidx/compose/foundation/interaction/MutableInteractionSource;Landroidx/compose/material/CheckboxColors;II)V
 
-    check-cast v11, Lkotlin/jvm/functions/Function2;
+    check-cast v10, Lkotlin/jvm/functions/Function2;
 
-    invoke-interface {v10, v11}, Landroidx/compose/runtime/ScopeUpdateScope;->updateScope(Lkotlin/jvm/functions/Function2;)V
+    invoke-interface {v9, v10}, Landroidx/compose/runtime/ScopeUpdateScope;->updateScope(Lkotlin/jvm/functions/Function2;)V
 
-    :goto_18
+    :cond_20
     return-void
 .end method
 

@@ -53,10 +53,6 @@
 .method public constructor <init>(Ljava/lang/String;)V
     .locals 1
 
-    const-string/jumbo v0, "verbatim"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
     const/4 v0, 0x0
 
     .line 33

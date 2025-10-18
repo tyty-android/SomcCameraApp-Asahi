@@ -31,12 +31,12 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/SourceDebugExtension;
-    value = "SMAP\nUsbConnectionManager.kt\nKotlin\n*S Kotlin\n*F\n+ 1 UsbConnectionManager.kt\njp/co/sony/mc/camera/subdisplay/UsbConnectionManager$connectDevice$1$1\n+ 2 _Collections.kt\nkotlin/collections/CollectionsKt___CollectionsKt\n*L\n1#1,483:1\n1855#2,2:484\n*S KotlinDebug\n*F\n+ 1 UsbConnectionManager.kt\njp/co/sony/mc/camera/subdisplay/UsbConnectionManager$connectDevice$1$1\n*L\n148#1:484,2\n*E\n"
+    value = "SMAP\nUsbConnectionManager.kt\nKotlin\n*S Kotlin\n*F\n+ 1 UsbConnectionManager.kt\njp/co/sony/mc/camera/subdisplay/UsbConnectionManager$connectDevice$1$1\n+ 2 _Collections.kt\nkotlin/collections/CollectionsKt___CollectionsKt\n*L\n1#1,483:1\n1863#2,2:484\n*S KotlinDebug\n*F\n+ 1 UsbConnectionManager.kt\njp/co/sony/mc/camera/subdisplay/UsbConnectionManager$connectDevice$1$1\n*L\n148#1:484,2\n*E\n"
 .end annotation
 
 .annotation runtime Lkotlin/Metadata;
     d1 = {
-        "\u0000\n\n\u0000\n\u0002\u0010\u0002\n\u0002\u0018\u0002\u0010\u0000\u001a\u00020\u0001*\u00020\u0002H\u008a@"
+        "\u0000\n\n\u0000\n\u0002\u0010\u0002\n\u0002\u0018\u0002\u0010\u0000\u001a\u00020\u0001*\u00020\u0002H\n"
     }
     d2 = {
         "<anonymous>",
@@ -45,8 +45,8 @@
     }
     k = 0x3
     mv = {
-        0x1,
-        0x9,
+        0x2,
+        0x0,
         0x0
     }
     xi = 0x30
@@ -223,11 +223,13 @@
 
     if-eqz p1, :cond_3
 
-    const-string p1, "connectDevice"
+    new-array p1, v3, [Ljava/lang/String;
 
-    filled-new-array {p1}, [Ljava/lang/String;
+    const/4 v1, 0x0
 
-    move-result-object p1
+    const-string v4, "connectDevice"
+
+    aput-object v4, p1, v1
 
     invoke-static {p1}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 

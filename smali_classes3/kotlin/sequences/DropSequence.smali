@@ -22,7 +22,7 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/SourceDebugExtension;
-    value = "SMAP\nSequences.kt\nKotlin\n*S Kotlin\n*F\n+ 1 Sequences.kt\nkotlin/sequences/DropSequence\n+ 2 fake.kt\nkotlin/jvm/internal/FakeKt\n*L\n1#1,680:1\n1#2:681\n*E\n"
+    value = "SMAP\nSequences.kt\nKotlin\n*S Kotlin\n*F\n+ 1 Sequences.kt\nkotlin/sequences/DropSequence\n+ 2 fake.kt\nkotlin/jvm/internal/FakeKt\n*L\n1#1,698:1\n1#2:699\n*E\n"
 .end annotation
 
 .annotation runtime Lkotlin/Metadata;
@@ -83,20 +83,20 @@
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 478
+    .line 496
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 479
+    .line 497
     iput-object p1, p0, Lkotlin/sequences/DropSequence;->sequence:Lkotlin/sequences/Sequence;
 
-    .line 480
+    .line 498
     iput p2, p0, Lkotlin/sequences/DropSequence;->count:I
 
     if-ltz p2, :cond_0
 
     return-void
 
-    .line 483
+    .line 501
     :cond_0
     new-instance p0, Ljava/lang/StringBuilder;
 
@@ -132,7 +132,7 @@
 .method public static final synthetic access$getCount$p(Lkotlin/sequences/DropSequence;)I
     .locals 0
 
-    .line 478
+    .line 496
     iget p0, p0, Lkotlin/sequences/DropSequence;->count:I
 
     return p0
@@ -141,7 +141,7 @@
 .method public static final synthetic access$getSequence$p(Lkotlin/sequences/DropSequence;)Lkotlin/sequences/Sequence;
     .locals 0
 
-    .line 478
+    .line 496
     iget-object p0, p0, Lkotlin/sequences/DropSequence;->sequence:Lkotlin/sequences/Sequence;
 
     return-object p0
@@ -159,7 +159,7 @@
         }
     .end annotation
 
-    .line 486
+    .line 504
     iget v0, p0, Lkotlin/sequences/DropSequence;->count:I
 
     add-int/2addr v0, p1
@@ -199,7 +199,7 @@
         }
     .end annotation
 
-    .line 489
+    .line 507
     new-instance v0, Lkotlin/sequences/DropSequence$iterator$1;
 
     invoke-direct {v0, p0}, Lkotlin/sequences/DropSequence$iterator$1;-><init>(Lkotlin/sequences/DropSequence;)V
@@ -219,7 +219,7 @@
         }
     .end annotation
 
-    .line 487
+    .line 505
     iget v0, p0, Lkotlin/sequences/DropSequence;->count:I
 
     add-int/2addr v0, p1

@@ -27,7 +27,7 @@
 .method constructor <init>(Lio/grpc/Context;Ljava/lang/Runnable;)V
     .locals 0
 
-    .line 627
+    .line 561
     iput-object p1, p0, Lio/grpc/Context$1;->this$0:Lio/grpc/Context;
 
     iput-object p2, p0, Lio/grpc/Context$1;->val$r:Ljava/lang/Runnable;
@@ -42,14 +42,14 @@
 .method public run()V
     .locals 2
 
-    .line 630
+    .line 564
     iget-object v0, p0, Lio/grpc/Context$1;->this$0:Lio/grpc/Context;
 
     invoke-virtual {v0}, Lio/grpc/Context;->attach()Lio/grpc/Context;
 
     move-result-object v0
 
-    .line 632
+    .line 566
     :try_start_0
     iget-object v1, p0, Lio/grpc/Context$1;->val$r:Ljava/lang/Runnable;
 
@@ -57,7 +57,7 @@
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 634
+    .line 568
     iget-object p0, p0, Lio/grpc/Context$1;->this$0:Lio/grpc/Context;
 
     invoke-virtual {p0, v0}, Lio/grpc/Context;->detach(Lio/grpc/Context;)V
@@ -71,5 +71,6 @@
 
     invoke-virtual {p0, v0}, Lio/grpc/Context;->detach(Lio/grpc/Context;)V
 
+    .line 569
     throw v1
 .end method

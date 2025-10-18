@@ -30,7 +30,7 @@
         0x0
     }
     l = {
-        0x1e8
+        0x33f
     }
     m = "doFlingAnimation-QWom1Mo"
     n = {

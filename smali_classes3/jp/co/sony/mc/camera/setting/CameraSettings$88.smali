@@ -21,7 +21,7 @@
 .method constructor <init>()V
     .locals 0
 
-    .line 1265
+    .line 1322
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -46,13 +46,13 @@
         }
     .end annotation
 
-    .line 1269
+    .line 1326
     check-cast p1, Ljp/co/sony/mc/camera/setting/CameraSettings;
 
-    .line 1270
-    check-cast p3, Ljava/lang/Float;
+    .line 1327
+    check-cast p3, Ljp/co/sony/mc/camera/configuration/parameters/DriveMode;
 
-    invoke-static {p1, p3}, Ljp/co/sony/mc/camera/setting/CameraSettings;->-$$Nest$msetFocusDistance(Ljp/co/sony/mc/camera/setting/CameraSettings;Ljava/lang/Float;)Z
+    invoke-static {p1, p3}, Ljp/co/sony/mc/camera/setting/CameraSettings;->-$$Nest$msetDriveMode(Ljp/co/sony/mc/camera/setting/CameraSettings;Ljp/co/sony/mc/camera/configuration/parameters/DriveMode;)Z
 
     move-result p0
 

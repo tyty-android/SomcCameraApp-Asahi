@@ -46,7 +46,7 @@
 .method static constructor <clinit>()V
     .locals 2
 
-    .line 71
+    .line 76
     sget v0, Lcom/google/android/material/R$attr;->snackbarButtonStyle:I
 
     filled-new-array {v0}, [I
@@ -55,7 +55,7 @@
 
     sput-object v0, Lcom/google/android/material/snackbar/Snackbar;->SNACKBAR_BUTTON_STYLE_ATTR:[I
 
-    .line 72
+    .line 77
     sget v0, Lcom/google/android/material/R$attr;->snackbarButtonStyle:I
 
     sget v1, Lcom/google/android/material/R$attr;->snackbarTextViewStyle:I
@@ -72,10 +72,10 @@
 .method private constructor <init>(Landroid/content/Context;Landroid/view/ViewGroup;Landroid/view/View;Lcom/google/android/material/snackbar/ContentViewCallback;)V
     .locals 0
 
-    .line 113
+    .line 118
     invoke-direct {p0, p1, p2, p3, p4}, Lcom/google/android/material/snackbar/BaseTransientBottomBar;-><init>(Landroid/content/Context;Landroid/view/ViewGroup;Landroid/view/View;Lcom/google/android/material/snackbar/ContentViewCallback;)V
 
-    .line 115
+    .line 120
     invoke-virtual {p2}, Landroid/view/ViewGroup;->getContext()Landroid/content/Context;
 
     move-result-object p1
@@ -100,24 +100,24 @@
 
     move-object v1, v0
 
-    .line 271
+    .line 276
     :cond_0
     instance-of v2, p0, Landroidx/coordinatorlayout/widget/CoordinatorLayout;
 
     if-eqz v2, :cond_1
 
-    .line 273
+    .line 278
     check-cast p0, Landroid/view/ViewGroup;
 
     return-object p0
 
-    .line 274
+    .line 279
     :cond_1
     instance-of v2, p0, Landroid/widget/FrameLayout;
 
     if-eqz v2, :cond_3
 
-    .line 275
+    .line 280
     invoke-virtual {p0}, Landroid/view/View;->getId()I
 
     move-result v1
@@ -126,12 +126,12 @@
 
     if-ne v1, v2, :cond_2
 
-    .line 278
+    .line 283
     check-cast p0, Landroid/view/ViewGroup;
 
     return-object p0
 
-    .line 281
+    .line 286
     :cond_2
     move-object v1, p0
 
@@ -140,12 +140,12 @@
     :cond_3
     if-eqz p0, :cond_5
 
-    .line 287
+    .line 292
     invoke-virtual {p0}, Landroid/view/View;->getParent()Landroid/view/ViewParent;
 
     move-result-object p0
 
-    .line 288
+    .line 293
     instance-of v2, p0, Landroid/view/View;
 
     if-eqz v2, :cond_4
@@ -167,7 +167,7 @@
 .method private getActionView()Landroid/widget/Button;
     .locals 0
 
-    .line 536
+    .line 541
     invoke-direct {p0}, Lcom/google/android/material/snackbar/Snackbar;->getContentLayout()Lcom/google/android/material/snackbar/SnackbarContentLayout;
 
     move-result-object p0
@@ -182,7 +182,7 @@
 .method private getContentLayout()Lcom/google/android/material/snackbar/SnackbarContentLayout;
     .locals 1
 
-    .line 540
+    .line 545
     iget-object p0, p0, Lcom/google/android/material/snackbar/Snackbar;->view:Lcom/google/android/material/snackbar/BaseTransientBottomBar$SnackbarBaseLayout;
 
     const/4 v0, 0x0
@@ -199,7 +199,7 @@
 .method private getMessageView()Landroid/widget/TextView;
     .locals 0
 
-    .line 532
+    .line 537
     invoke-direct {p0}, Lcom/google/android/material/snackbar/Snackbar;->getContentLayout()Lcom/google/android/material/snackbar/SnackbarContentLayout;
 
     move-result-object p0
@@ -216,7 +216,7 @@
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
-    .line 232
+    .line 237
     sget-object v0, Lcom/google/android/material/snackbar/Snackbar;->SNACKBAR_BUTTON_STYLE_ATTR:[I
 
     invoke-virtual {p0, v0}, Landroid/content/Context;->obtainStyledAttributes([I)Landroid/content/res/TypedArray;
@@ -227,12 +227,12 @@
 
     const/4 v1, -0x1
 
-    .line 233
+    .line 238
     invoke-virtual {p0, v0, v1}, Landroid/content/res/TypedArray;->getResourceId(II)I
 
     move-result v2
 
-    .line 234
+    .line 239
     invoke-virtual {p0}, Landroid/content/res/TypedArray;->recycle()V
 
     if-eq v2, v1, :cond_0
@@ -246,7 +246,7 @@
 .method private static hasSnackbarContentStyleAttrs(Landroid/content/Context;)Z
     .locals 5
 
-    .line 239
+    .line 244
     sget-object v0, Lcom/google/android/material/snackbar/Snackbar;->SNACKBAR_CONTENT_STYLE_ATTRS:[I
 
     invoke-virtual {p0, v0}, Landroid/content/Context;->obtainStyledAttributes([I)Landroid/content/res/TypedArray;
@@ -257,19 +257,19 @@
 
     const/4 v1, -0x1
 
-    .line 240
+    .line 245
     invoke-virtual {p0, v0, v1}, Landroid/content/res/TypedArray;->getResourceId(II)I
 
     move-result v2
 
     const/4 v3, 0x1
 
-    .line 241
+    .line 246
     invoke-virtual {p0, v3, v1}, Landroid/content/res/TypedArray;->getResourceId(II)I
 
     move-result v4
 
-    .line 242
+    .line 247
     invoke-virtual {p0}, Landroid/content/res/TypedArray;->recycle()V
 
     if-eq v2, v1, :cond_0
@@ -285,7 +285,7 @@
 .method public static make(Landroid/content/Context;Landroid/view/View;Ljava/lang/CharSequence;I)Lcom/google/android/material/snackbar/Snackbar;
     .locals 0
 
-    .line 186
+    .line 191
     invoke-static {p0, p1, p2, p3}, Lcom/google/android/material/snackbar/Snackbar;->makeInternal(Landroid/content/Context;Landroid/view/View;Ljava/lang/CharSequence;I)Lcom/google/android/material/snackbar/Snackbar;
 
     move-result-object p0
@@ -296,7 +296,7 @@
 .method public static make(Landroid/view/View;II)Lcom/google/android/material/snackbar/Snackbar;
     .locals 1
 
-    .line 264
+    .line 269
     invoke-virtual {p0}, Landroid/view/View;->getResources()Landroid/content/res/Resources;
 
     move-result-object v0
@@ -317,7 +317,7 @@
 
     const/4 v0, 0x0
 
-    .line 159
+    .line 164
     invoke-static {v0, p0, p1, p2}, Lcom/google/android/material/snackbar/Snackbar;->makeInternal(Landroid/content/Context;Landroid/view/View;Ljava/lang/CharSequence;I)Lcom/google/android/material/snackbar/Snackbar;
 
     move-result-object p0
@@ -328,7 +328,7 @@
 .method private static makeInternal(Landroid/content/Context;Landroid/view/View;Ljava/lang/CharSequence;I)Lcom/google/android/material/snackbar/Snackbar;
     .locals 3
 
-    .line 198
+    .line 203
     invoke-static {p1}, Lcom/google/android/material/snackbar/Snackbar;->findSuitableParent(Landroid/view/View;)Landroid/view/ViewGroup;
 
     move-result-object p1
@@ -337,57 +337,57 @@
 
     if-nez p0, :cond_0
 
-    .line 205
+    .line 210
     invoke-virtual {p1}, Landroid/view/ViewGroup;->getContext()Landroid/content/Context;
 
     move-result-object p0
 
-    .line 208
+    .line 213
     :cond_0
     invoke-static {p0}, Landroid/view/LayoutInflater;->from(Landroid/content/Context;)Landroid/view/LayoutInflater;
 
     move-result-object v0
 
-    .line 212
+    .line 217
     invoke-static {p0}, Lcom/google/android/material/snackbar/Snackbar;->hasSnackbarContentStyleAttrs(Landroid/content/Context;)Z
 
     move-result v1
 
     if-eqz v1, :cond_1
 
-    .line 213
+    .line 218
     sget v1, Lcom/google/android/material/R$layout;->mtrl_layout_snackbar_include:I
 
     goto :goto_0
 
-    .line 214
+    .line 219
     :cond_1
     sget v1, Lcom/google/android/material/R$layout;->design_layout_snackbar_include:I
 
     :goto_0
     const/4 v2, 0x0
 
-    .line 211
+    .line 216
     invoke-virtual {v0, v1, p1, v2}, Landroid/view/LayoutInflater;->inflate(ILandroid/view/ViewGroup;Z)Landroid/view/View;
 
     move-result-object v0
 
     check-cast v0, Lcom/google/android/material/snackbar/SnackbarContentLayout;
 
-    .line 217
+    .line 222
     new-instance v1, Lcom/google/android/material/snackbar/Snackbar;
 
     invoke-direct {v1, p0, p1, v0, v0}, Lcom/google/android/material/snackbar/Snackbar;-><init>(Landroid/content/Context;Landroid/view/ViewGroup;Landroid/view/View;Lcom/google/android/material/snackbar/ContentViewCallback;)V
 
-    .line 218
+    .line 223
     invoke-virtual {v1, p2}, Lcom/google/android/material/snackbar/Snackbar;->setText(Ljava/lang/CharSequence;)Lcom/google/android/material/snackbar/Snackbar;
 
-    .line 219
+    .line 224
     invoke-virtual {v1, p3}, Lcom/google/android/material/snackbar/Snackbar;->setDuration(I)Lcom/google/android/material/snackbar/BaseTransientBottomBar;
 
     return-object v1
 
-    .line 200
+    .line 205
     :cond_2
     new-instance p0, Ljava/lang/IllegalArgumentException;
 
@@ -403,7 +403,7 @@
 .method public dismiss()V
     .locals 0
 
-    .line 129
+    .line 134
     invoke-super {p0}, Lcom/google/android/material/snackbar/BaseTransientBottomBar;->dismiss()V
 
     return-void
@@ -412,7 +412,7 @@
 .method public getDuration()I
     .locals 2
 
-    .line 363
+    .line 368
     invoke-super {p0}, Lcom/google/android/material/snackbar/BaseTransientBottomBar;->getDuration()I
 
     move-result v0
@@ -423,7 +423,7 @@
 
     return v1
 
-    .line 369
+    .line 374
     :cond_0
     iget-boolean v1, p0, Lcom/google/android/material/snackbar/Snackbar;->hasAction:Z
 
@@ -436,7 +436,7 @@
     :cond_1
     const/4 v1, 0x0
 
-    .line 370
+    .line 375
     :goto_0
     iget-object p0, p0, Lcom/google/android/material/snackbar/Snackbar;->accessibilityManager:Landroid/view/accessibility/AccessibilityManager;
 
@@ -452,7 +452,7 @@
 .method public isShown()Z
     .locals 0
 
-    .line 136
+    .line 141
     invoke-super {p0}, Lcom/google/android/material/snackbar/BaseTransientBottomBar;->isShown()Z
 
     move-result p0
@@ -463,12 +463,12 @@
 .method synthetic lambda$setAction$0$com-google-android-material-snackbar-Snackbar(Landroid/view/View$OnClickListener;Landroid/view/View;)V
     .locals 0
 
-    .line 352
+    .line 357
     invoke-interface {p1, p2}, Landroid/view/View$OnClickListener;->onClick(Landroid/view/View;)V
 
     const/4 p1, 0x1
 
-    .line 354
+    .line 359
     invoke-virtual {p0, p1}, Lcom/google/android/material/snackbar/Snackbar;->dispatchDismiss(I)V
 
     return-void
@@ -477,7 +477,7 @@
 .method public setAction(ILandroid/view/View$OnClickListener;)Lcom/google/android/material/snackbar/Snackbar;
     .locals 1
 
-    .line 328
+    .line 333
     invoke-virtual {p0}, Lcom/google/android/material/snackbar/Snackbar;->getContext()Landroid/content/Context;
 
     move-result-object v0
@@ -496,12 +496,12 @@
 .method public setAction(Ljava/lang/CharSequence;Landroid/view/View$OnClickListener;)Lcom/google/android/material/snackbar/Snackbar;
     .locals 3
 
-    .line 341
+    .line 346
     invoke-direct {p0}, Lcom/google/android/material/snackbar/Snackbar;->getActionView()Landroid/widget/Button;
 
     move-result-object v0
 
-    .line 342
+    .line 347
     invoke-static {p1}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
     move-result v1
@@ -517,16 +517,16 @@
     :cond_0
     const/4 v1, 0x1
 
-    .line 347
+    .line 352
     iput-boolean v1, p0, Lcom/google/android/material/snackbar/Snackbar;->hasAction:Z
 
-    .line 348
+    .line 353
     invoke-virtual {v0, v2}, Landroid/widget/TextView;->setVisibility(I)V
 
-    .line 349
+    .line 354
     invoke-virtual {v0, p1}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
-    .line 350
+    .line 355
     new-instance p1, Lcom/google/android/material/snackbar/Snackbar$$ExternalSyntheticLambda0;
 
     invoke-direct {p1, p0, p2}, Lcom/google/android/material/snackbar/Snackbar$$ExternalSyntheticLambda0;-><init>(Lcom/google/android/material/snackbar/Snackbar;Landroid/view/View$OnClickListener;)V
@@ -539,15 +539,15 @@
     :goto_0
     const/16 p1, 0x8
 
-    .line 343
+    .line 348
     invoke-virtual {v0, p1}, Landroid/widget/TextView;->setVisibility(I)V
 
     const/4 p1, 0x0
 
-    .line 344
+    .line 349
     invoke-virtual {v0, p1}, Landroid/widget/TextView;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
-    .line 345
+    .line 350
     iput-boolean v2, p0, Lcom/google/android/material/snackbar/Snackbar;->hasAction:Z
 
     :goto_1
@@ -557,7 +557,7 @@
 .method public setActionTextColor(I)Lcom/google/android/material/snackbar/Snackbar;
     .locals 1
 
-    .line 442
+    .line 447
     invoke-direct {p0}, Lcom/google/android/material/snackbar/Snackbar;->getActionView()Landroid/widget/Button;
 
     move-result-object v0
@@ -570,7 +570,7 @@
 .method public setActionTextColor(Landroid/content/res/ColorStateList;)Lcom/google/android/material/snackbar/Snackbar;
     .locals 1
 
-    .line 420
+    .line 425
     invoke-direct {p0}, Lcom/google/android/material/snackbar/Snackbar;->getActionView()Landroid/widget/Button;
 
     move-result-object v0
@@ -583,7 +583,7 @@
 .method public setBackgroundTint(I)Lcom/google/android/material/snackbar/Snackbar;
     .locals 0
 
-    .line 450
+    .line 455
     invoke-static {p1}, Landroid/content/res/ColorStateList;->valueOf(I)Landroid/content/res/ColorStateList;
 
     move-result-object p1
@@ -598,7 +598,7 @@
 .method public setBackgroundTintList(Landroid/content/res/ColorStateList;)Lcom/google/android/material/snackbar/Snackbar;
     .locals 1
 
-    .line 457
+    .line 462
     iget-object v0, p0, Lcom/google/android/material/snackbar/Snackbar;->view:Lcom/google/android/material/snackbar/BaseTransientBottomBar$SnackbarBaseLayout;
 
     invoke-virtual {v0, p1}, Lcom/google/android/material/snackbar/BaseTransientBottomBar$SnackbarBaseLayout;->setBackgroundTintList(Landroid/content/res/ColorStateList;)V
@@ -609,7 +609,7 @@
 .method public setBackgroundTintMode(Landroid/graphics/PorterDuff$Mode;)Lcom/google/android/material/snackbar/Snackbar;
     .locals 1
 
-    .line 464
+    .line 469
     iget-object v0, p0, Lcom/google/android/material/snackbar/Snackbar;->view:Lcom/google/android/material/snackbar/BaseTransientBottomBar$SnackbarBaseLayout;
 
     invoke-virtual {v0, p1}, Lcom/google/android/material/snackbar/BaseTransientBottomBar$SnackbarBaseLayout;->setBackgroundTintMode(Landroid/graphics/PorterDuff$Mode;)V
@@ -622,21 +622,21 @@
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
-    .line 485
+    .line 490
     iget-object v0, p0, Lcom/google/android/material/snackbar/Snackbar;->callback:Lcom/google/android/material/snackbar/BaseTransientBottomBar$BaseCallback;
 
     if-eqz v0, :cond_0
 
-    .line 486
+    .line 491
     invoke-virtual {p0, v0}, Lcom/google/android/material/snackbar/Snackbar;->removeCallback(Lcom/google/android/material/snackbar/BaseTransientBottomBar$BaseCallback;)Lcom/google/android/material/snackbar/BaseTransientBottomBar;
 
     :cond_0
     if-eqz p1, :cond_1
 
-    .line 489
+    .line 494
     invoke-virtual {p0, p1}, Lcom/google/android/material/snackbar/Snackbar;->addCallback(Lcom/google/android/material/snackbar/BaseTransientBottomBar$BaseCallback;)Lcom/google/android/material/snackbar/BaseTransientBottomBar;
 
-    .line 493
+    .line 498
     :cond_1
     iput-object p1, p0, Lcom/google/android/material/snackbar/Snackbar;->callback:Lcom/google/android/material/snackbar/BaseTransientBottomBar$BaseCallback;
 
@@ -646,7 +646,7 @@
 .method public setMaxInlineActionWidth(I)Lcom/google/android/material/snackbar/Snackbar;
     .locals 1
 
-    .line 431
+    .line 436
     invoke-direct {p0}, Lcom/google/android/material/snackbar/Snackbar;->getContentLayout()Lcom/google/android/material/snackbar/SnackbarContentLayout;
 
     move-result-object v0
@@ -659,7 +659,7 @@
 .method public setText(I)Lcom/google/android/material/snackbar/Snackbar;
     .locals 1
 
-    .line 316
+    .line 321
     invoke-virtual {p0}, Lcom/google/android/material/snackbar/Snackbar;->getContext()Landroid/content/Context;
 
     move-result-object v0
@@ -678,7 +678,7 @@
 .method public setText(Ljava/lang/CharSequence;)Lcom/google/android/material/snackbar/Snackbar;
     .locals 1
 
-    .line 304
+    .line 309
     invoke-direct {p0}, Lcom/google/android/material/snackbar/Snackbar;->getMessageView()Landroid/widget/TextView;
 
     move-result-object v0
@@ -691,7 +691,7 @@
 .method public setTextColor(I)Lcom/google/android/material/snackbar/Snackbar;
     .locals 1
 
-    .line 398
+    .line 403
     invoke-direct {p0}, Lcom/google/android/material/snackbar/Snackbar;->getMessageView()Landroid/widget/TextView;
 
     move-result-object v0
@@ -704,7 +704,7 @@
 .method public setTextColor(Landroid/content/res/ColorStateList;)Lcom/google/android/material/snackbar/Snackbar;
     .locals 1
 
-    .line 387
+    .line 392
     invoke-direct {p0}, Lcom/google/android/material/snackbar/Snackbar;->getMessageView()Landroid/widget/TextView;
 
     move-result-object v0
@@ -717,7 +717,7 @@
 .method public setTextMaxLines(I)Lcom/google/android/material/snackbar/Snackbar;
     .locals 1
 
-    .line 409
+    .line 414
     invoke-direct {p0}, Lcom/google/android/material/snackbar/Snackbar;->getMessageView()Landroid/widget/TextView;
 
     move-result-object v0
@@ -730,7 +730,7 @@
 .method public show()V
     .locals 0
 
-    .line 122
+    .line 127
     invoke-super {p0}, Lcom/google/android/material/snackbar/BaseTransientBottomBar;->show()V
 
     return-void

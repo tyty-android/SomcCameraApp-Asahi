@@ -7,22 +7,10 @@
 .method public static getInstance()Lcom/google/android/material/color/ColorResourcesOverride;
     .locals 1
 
-    .line 66
-    invoke-static {}, Landroidx/core/os/BuildCompat;->isAtLeastU()Z
-
-    move-result v0
-
-    if-eqz v0, :cond_0
-
-    .line 69
+    .line 68
     invoke-static {}, Lcom/google/android/material/color/ResourcesLoaderColorResourcesOverride;->getInstance()Lcom/google/android/material/color/ColorResourcesOverride;
 
     move-result-object v0
-
-    return-object v0
-
-    :cond_0
-    const/4 v0, 0x0
 
     return-object v0
 .end method

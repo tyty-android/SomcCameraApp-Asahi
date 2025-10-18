@@ -106,7 +106,7 @@
 .method public getParameterKeyTextId()I
     .locals 0
 
-    const p0, 0x7f11045b
+    const p0, 0x7f110492
 
     return p0
 .end method
@@ -114,7 +114,7 @@
 .method public getParameterKeyTitleTextId()I
     .locals 0
 
-    const p0, 0x7f11045b
+    const p0, 0x7f110492
 
     return p0
 .end method

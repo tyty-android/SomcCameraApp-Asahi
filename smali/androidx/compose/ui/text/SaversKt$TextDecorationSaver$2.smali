@@ -77,14 +77,14 @@
 
 # virtual methods
 .method public final invoke(Ljava/lang/Object;)Landroidx/compose/ui/text/style/TextDecoration;
-    .locals 0
+    .locals 1
 
-    const-string p0, "it"
-
-    invoke-static {p1, p0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 266
+    .line 287
     new-instance p0, Landroidx/compose/ui/text/style/TextDecoration;
+
+    const-string v0, "null cannot be cast to non-null type kotlin.Int"
+
+    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;Ljava/lang/String;)V
 
     check-cast p1, Ljava/lang/Integer;
 
@@ -100,7 +100,7 @@
 .method public bridge synthetic invoke(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
 
-    .line 264
+    .line 285
     invoke-virtual {p0, p1}, Landroidx/compose/ui/text/SaversKt$TextDecorationSaver$2;->invoke(Ljava/lang/Object;)Landroidx/compose/ui/text/style/TextDecoration;
 
     move-result-object p0

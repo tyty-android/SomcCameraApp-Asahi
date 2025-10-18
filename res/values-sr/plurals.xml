@@ -5,20 +5,4 @@
         <item quantity="one">%d ново обавештење</item>
         <item quantity="few">%d нова обавештења</item>
     </plurals>
-    <plurals name="mv_minute_remaining_txt">
-        <item quantity="other">Preostalo %1$d minuta</item>
-        <item quantity="one">preostao je jedan minut</item>
-    </plurals>
-    <plurals name="mv_minute_txt">
-        <item quantity="other">%1$d minuta</item>
-        <item quantity="one">1 minut</item>
-    </plurals>
-    <plurals name="mv_second_remaining_txt">
-        <item quantity="other">Preostalo %1$d sekundi</item>
-        <item quantity="one">preostala je 1 sekunda</item>
-    </plurals>
-    <plurals name="mv_second_txt">
-        <item quantity="other">%1$d sekundi</item>
-        <item quantity="one">1 sekunda</item>
-    </plurals>
 </resources>

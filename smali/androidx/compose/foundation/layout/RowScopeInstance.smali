@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/SourceDebugExtension;
-    value = "SMAP\nRow.kt\nKotlin\n*S Kotlin\n*F\n+ 1 Row.kt\nandroidx/compose/foundation/layout/RowScopeInstance\n+ 2 fake.kt\nkotlin/jvm/internal/FakeKt\n*L\n1#1,252:1\n1#2:253\n*E\n"
+    value = "SMAP\nRow.kt\nKotlin\n*S Kotlin\n*F\n+ 1 Row.kt\nandroidx/compose/foundation/layout/RowScopeInstance\n+ 2 fake.kt\nkotlin/jvm/internal/FakeKt\n*L\n1#1,264:1\n1#2:265\n*E\n"
 .end annotation
 
 .annotation runtime Lkotlin/Metadata;
@@ -48,6 +48,8 @@
 
 
 # static fields
+.field public static final $stable:I
+
 .field public static final INSTANCE:Landroidx/compose/foundation/layout/RowScopeInstance;
 
 
@@ -67,7 +69,7 @@
 .method private constructor <init>()V
     .locals 0
 
-    .line 217
+    .line 228
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -78,22 +80,14 @@
 .method public align(Landroidx/compose/ui/Modifier;Landroidx/compose/ui/Alignment$Vertical;)Landroidx/compose/ui/Modifier;
     .locals 0
 
-    const-string p0, "<this>"
-
-    invoke-static {p1, p0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string p0, "alignment"
-
-    invoke-static {p2, p0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 231
+    .line 243
     new-instance p0, Landroidx/compose/foundation/layout/VerticalAlignElement;
 
     invoke-direct {p0, p2}, Landroidx/compose/foundation/layout/VerticalAlignElement;-><init>(Landroidx/compose/ui/Alignment$Vertical;)V
 
     check-cast p0, Landroidx/compose/ui/Modifier;
 
-    .line 230
+    .line 242
     invoke-interface {p1, p0}, Landroidx/compose/ui/Modifier;->then(Landroidx/compose/ui/Modifier;)Landroidx/compose/ui/Modifier;
 
     move-result-object p0
@@ -104,26 +98,18 @@
 .method public alignBy(Landroidx/compose/ui/Modifier;Landroidx/compose/ui/layout/HorizontalAlignmentLine;)Landroidx/compose/ui/Modifier;
     .locals 0
 
-    const-string p0, "<this>"
-
-    invoke-static {p1, p0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string p0, "alignmentLine"
-
-    invoke-static {p2, p0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 238
+    .line 250
     new-instance p0, Landroidx/compose/foundation/layout/WithAlignmentLineElement;
 
-    .line 239
+    .line 251
     check-cast p2, Landroidx/compose/ui/layout/AlignmentLine;
 
-    .line 238
+    .line 250
     invoke-direct {p0, p2}, Landroidx/compose/foundation/layout/WithAlignmentLineElement;-><init>(Landroidx/compose/ui/layout/AlignmentLine;)V
 
     check-cast p0, Landroidx/compose/ui/Modifier;
 
-    .line 237
+    .line 249
     invoke-interface {p1, p0}, Landroidx/compose/ui/Modifier;->then(Landroidx/compose/ui/Modifier;)Landroidx/compose/ui/Modifier;
 
     move-result-object p0
@@ -146,22 +132,14 @@
         }
     .end annotation
 
-    const-string p0, "<this>"
-
-    invoke-static {p1, p0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string p0, "alignmentLineBlock"
-
-    invoke-static {p2, p0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 247
+    .line 259
     new-instance p0, Landroidx/compose/foundation/layout/WithAlignmentLineBlockElement;
 
     invoke-direct {p0, p2}, Landroidx/compose/foundation/layout/WithAlignmentLineBlockElement;-><init>(Lkotlin/jvm/functions/Function1;)V
 
     check-cast p0, Landroidx/compose/ui/Modifier;
 
-    .line 246
+    .line 258
     invoke-interface {p1, p0}, Landroidx/compose/ui/Modifier;->then(Landroidx/compose/ui/Modifier;)Landroidx/compose/ui/Modifier;
 
     move-result-object p0
@@ -172,11 +150,7 @@
 .method public alignByBaseline(Landroidx/compose/ui/Modifier;)Landroidx/compose/ui/Modifier;
     .locals 1
 
-    const-string v0, "<this>"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 244
+    .line 256
     invoke-static {}, Landroidx/compose/ui/layout/AlignmentLineKt;->getFirstBaseline()Landroidx/compose/ui/layout/HorizontalAlignmentLine;
 
     move-result-object v0
@@ -191,10 +165,6 @@
 .method public weight(Landroidx/compose/ui/Modifier;FZ)Landroidx/compose/ui/Modifier;
     .locals 4
 
-    const-string p0, "<this>"
-
-    invoke-static {p1, p0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
     float-to-double v0, p2
 
     const-wide/16 v2, 0x0
@@ -203,21 +173,29 @@
 
     if-lez p0, :cond_0
 
-    .line 222
+    .line 233
     new-instance p0, Landroidx/compose/foundation/layout/LayoutWeightElement;
 
+    const v0, 0x7f7fffff    # Float.MAX_VALUE
+
+    .line 235
+    invoke-static {p2, v0}, Lkotlin/ranges/RangesKt;->coerceAtMost(FF)F
+
+    move-result p2
+
+    .line 233
     invoke-direct {p0, p2, p3}, Landroidx/compose/foundation/layout/LayoutWeightElement;-><init>(FZ)V
 
     check-cast p0, Landroidx/compose/ui/Modifier;
 
-    .line 221
+    .line 232
     invoke-interface {p1, p0}, Landroidx/compose/ui/Modifier;->then(Landroidx/compose/ui/Modifier;)Landroidx/compose/ui/Modifier;
 
     move-result-object p0
 
     return-object p0
 
-    .line 220
+    .line 231
     :cond_0
     new-instance p0, Ljava/lang/StringBuilder;
 

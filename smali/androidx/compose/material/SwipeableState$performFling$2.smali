@@ -18,17 +18,17 @@
 
 .annotation system Ldalvik/annotation/Signature;
     value = {
+        "<T:",
         "Ljava/lang/Object;",
-        "Lkotlinx/coroutines/flow/FlowCollector<",
-        "Ljava/util/Map<",
-        "Ljava/lang/Float;",
-        "+TT;>;>;"
+        ">",
+        "Ljava/lang/Object;",
+        "Lkotlinx/coroutines/flow/FlowCollector;"
     }
 .end annotation
 
 .annotation runtime Lkotlin/Metadata;
     d1 = {
-        "\u0000\u0012\n\u0000\n\u0002\u0010\u0002\n\u0002\u0008\u0002\n\u0002\u0010$\n\u0002\u0010\u0007\u0010\u0000\u001a\u00020\u0001\"\u0004\u0008\u0000\u0010\u00022\u0012\u0010\u0003\u001a\u000e\u0012\u0004\u0012\u00020\u0005\u0012\u0004\u0012\u0002H\u00020\u0004H\u008a@"
+        "\u0000\u0016\n\u0000\n\u0002\u0010\u0002\n\u0002\u0008\u0002\n\u0002\u0010$\n\u0002\u0010\u0007\n\u0002\u0008\u0002\u0010\u0000\u001a\u00020\u0001\"\u0004\u0008\u0000\u0010\u00022\u0012\u0010\u0003\u001a\u000e\u0012\u0004\u0012\u00020\u0005\u0012\u0004\u0012\u0002H\u00020\u0004H\u008a@\u00a2\u0006\u0004\u0008\u0006\u0010\u0007"
     }
     d2 = {
         "<anonymous>",
@@ -36,7 +36,9 @@
         "T",
         "anchors",
         "",
-        ""
+        "",
+        "emit",
+        "(Ljava/util/Map;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;"
     }
     k = 0x3
     mv = {
@@ -86,7 +88,7 @@
 .method public bridge synthetic emit(Ljava/lang/Object;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
     .locals 0
 
-    .line 361
+    .line 366
     check-cast p1, Ljava/util/Map;
 
     invoke-virtual {p0, p1, p2}, Landroidx/compose/material/SwipeableState$performFling$2;->emit(Ljava/util/Map;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
@@ -112,7 +114,7 @@
         }
     .end annotation
 
-    .line 362
+    .line 367
     iget-object v0, p0, Landroidx/compose/material/SwipeableState$performFling$2;->this$0:Landroidx/compose/material/SwipeableState;
 
     invoke-virtual {v0}, Landroidx/compose/material/SwipeableState;->getCurrentValue()Ljava/lang/Object;
@@ -129,7 +131,7 @@
 
     move-result v0
 
-    .line 364
+    .line 369
     iget-object v1, p0, Landroidx/compose/material/SwipeableState$performFling$2;->this$0:Landroidx/compose/material/SwipeableState;
 
     invoke-virtual {v1}, Landroidx/compose/material/SwipeableState;->getOffset()Landroidx/compose/runtime/State;
@@ -146,22 +148,22 @@
 
     move-result v1
 
-    .line 366
+    .line 371
     invoke-interface {p1}, Ljava/util/Map;->keySet()Ljava/util/Set;
 
     move-result-object v3
 
-    .line 367
+    .line 372
     iget-object v2, p0, Landroidx/compose/material/SwipeableState$performFling$2;->this$0:Landroidx/compose/material/SwipeableState;
 
     invoke-virtual {v2}, Landroidx/compose/material/SwipeableState;->getThresholds$material_release()Lkotlin/jvm/functions/Function2;
 
     move-result-object v4
 
-    .line 368
+    .line 373
     iget v5, p0, Landroidx/compose/material/SwipeableState$performFling$2;->$velocity:F
 
-    .line 369
+    .line 374
     iget-object v2, p0, Landroidx/compose/material/SwipeableState$performFling$2;->this$0:Landroidx/compose/material/SwipeableState;
 
     invoke-virtual {v2}, Landroidx/compose/material/SwipeableState;->getVelocityThreshold$material_release()F
@@ -170,12 +172,12 @@
 
     move v2, v0
 
-    .line 363
+    .line 368
     invoke-static/range {v1 .. v6}, Landroidx/compose/material/SwipeableKt;->access$computeTarget(FFLjava/util/Set;Lkotlin/jvm/functions/Function2;FF)F
 
     move-result v1
 
-    .line 371
+    .line 376
     invoke-static {v1}, Lkotlin/coroutines/jvm/internal/Boxing;->boxFloat(F)Ljava/lang/Float;
 
     move-result-object v1
@@ -186,7 +188,7 @@
 
     if-eqz v3, :cond_1
 
-    .line 372
+    .line 377
     iget-object p1, p0, Landroidx/compose/material/SwipeableState$performFling$2;->this$0:Landroidx/compose/material/SwipeableState;
 
     invoke-virtual {p1}, Landroidx/compose/material/SwipeableState;->getConfirmStateChange$material_release()Lkotlin/jvm/functions/Function1;
@@ -232,7 +234,7 @@
 
     return-object p0
 
-    .line 374
+    .line 379
     :cond_1
     iget-object p0, p0, Landroidx/compose/material/SwipeableState$performFling$2;->this$0:Landroidx/compose/material/SwipeableState;
 

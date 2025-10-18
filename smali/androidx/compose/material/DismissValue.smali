@@ -65,7 +65,7 @@
 .method static constructor <clinit>()V
     .locals 3
 
-    .line 66
+    .line 67
     new-instance v0, Landroidx/compose/material/DismissValue;
 
     const-string v1, "Default"
@@ -76,7 +76,7 @@
 
     sput-object v0, Landroidx/compose/material/DismissValue;->Default:Landroidx/compose/material/DismissValue;
 
-    .line 71
+    .line 72
     new-instance v0, Landroidx/compose/material/DismissValue;
 
     const-string v1, "DismissedToEnd"
@@ -87,7 +87,7 @@
 
     sput-object v0, Landroidx/compose/material/DismissValue;->DismissedToEnd:Landroidx/compose/material/DismissValue;
 
-    .line 76
+    .line 77
     new-instance v0, Landroidx/compose/material/DismissValue;
 
     const-string v1, "DismissedToStart"
@@ -115,7 +115,7 @@
         }
     .end annotation
 
-    .line 62
+    .line 63
     invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
     return-void

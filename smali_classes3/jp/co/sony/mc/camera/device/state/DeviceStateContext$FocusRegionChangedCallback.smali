@@ -25,7 +25,7 @@
 .method private constructor <init>(Ljp/co/sony/mc/camera/device/state/DeviceStateContext;)V
     .locals 0
 
-    .line 3324
+    .line 3400
     iput-object p1, p0, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$FocusRegionChangedCallback;->this$0:Ljp/co/sony/mc/camera/device/state/DeviceStateContext;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -46,7 +46,7 @@
 .method public onFocusAreaUpdate(Z[Landroid/hardware/camera2/params/MeteringRectangle;)V
     .locals 0
 
-    .line 3331
+    .line 3407
     iget-object p0, p0, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$FocusRegionChangedCallback;->this$0:Ljp/co/sony/mc/camera/device/state/DeviceStateContext;
 
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/device/state/DeviceStateContext;->getCameraDeviceHandlerCallback()Ljp/co/sony/mc/camera/device/state/IDeviceStateMachineCallback;
@@ -54,6 +54,21 @@
     move-result-object p0
 
     invoke-interface {p0, p1, p2}, Ljp/co/sony/mc/camera/device/state/IDeviceStateMachineCallback;->onFocusAreaUpdated(Z[Landroid/hardware/camera2/params/MeteringRectangle;)V
+
+    return-void
+.end method
+
+.method public onFocusStateChanged(Z)V
+    .locals 0
+
+    .line 3415
+    iget-object p0, p0, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$FocusRegionChangedCallback;->this$0:Ljp/co/sony/mc/camera/device/state/DeviceStateContext;
+
+    invoke-virtual {p0}, Ljp/co/sony/mc/camera/device/state/DeviceStateContext;->getCameraDeviceHandlerCallback()Ljp/co/sony/mc/camera/device/state/IDeviceStateMachineCallback;
+
+    move-result-object p0
+
+    invoke-interface {p0, p1}, Ljp/co/sony/mc/camera/device/state/IDeviceStateMachineCallback;->onFocusStateChanged(Z)V
 
     return-void
 .end method

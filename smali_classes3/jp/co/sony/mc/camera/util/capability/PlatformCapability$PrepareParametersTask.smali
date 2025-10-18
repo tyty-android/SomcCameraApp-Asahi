@@ -32,7 +32,7 @@
 .method private constructor <init>()V
     .locals 0
 
-    .line 207
+    .line 211
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -56,7 +56,7 @@
         }
     .end annotation
 
-    .line 207
+    .line 211
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/util/capability/PlatformCapability$PrepareParametersTask;->call()Ljava/util/Map;
 
     move-result-object p0
@@ -65,7 +65,7 @@
 .end method
 
 .method public call()Ljava/util/Map;
-    .locals 2
+    .locals 4
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()",
@@ -82,74 +82,78 @@
         }
     .end annotation
 
-    .line 211
+    .line 215
     sget-boolean p0, Ljp/co/sony/mc/camera/util/CamLog;->DEBUG:Z
+
+    const/4 v0, 0x0
+
+    const/4 v1, 0x1
 
     if-eqz p0, :cond_0
 
-    const-string p0, "PrepareParametersTask: E"
+    new-array p0, v1, [Ljava/lang/String;
 
-    filled-new-array {p0}, [Ljava/lang/String;
+    const-string v2, "PrepareParametersTask: E"
 
-    move-result-object p0
+    aput-object v2, p0, v0
 
     invoke-static {p0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
-    .line 212
+    .line 216
     :cond_0
     new-instance p0, Ljava/util/HashMap;
 
     invoke-direct {p0}, Ljava/util/HashMap;-><init>()V
 
-    .line 214
-    sget-object v0, Ljp/co/sony/mc/camera/util/capability/PlatformCapability$HolderType;->MEDIA_CODEC:Ljp/co/sony/mc/camera/util/capability/PlatformCapability$HolderType;
+    .line 218
+    sget-object v2, Ljp/co/sony/mc/camera/util/capability/PlatformCapability$HolderType;->MEDIA_CODEC:Ljp/co/sony/mc/camera/util/capability/PlatformCapability$HolderType;
 
-    new-instance v1, Ljp/co/sony/mc/camera/util/capability/MediaCodecParametersHolder;
+    new-instance v3, Ljp/co/sony/mc/camera/util/capability/MediaCodecParametersHolder;
 
-    invoke-direct {v1}, Ljp/co/sony/mc/camera/util/capability/MediaCodecParametersHolder;-><init>()V
+    invoke-direct {v3}, Ljp/co/sony/mc/camera/util/capability/MediaCodecParametersHolder;-><init>()V
 
-    invoke-interface {p0, v0, v1}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-interface {p0, v2, v3}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 216
+    .line 220
     invoke-interface {p0}, Ljava/util/Map;->values()Ljava/util/Collection;
 
-    move-result-object v0
+    move-result-object v2
 
-    invoke-interface {v0}, Ljava/util/Collection;->iterator()Ljava/util/Iterator;
+    invoke-interface {v2}, Ljava/util/Collection;->iterator()Ljava/util/Iterator;
 
-    move-result-object v0
+    move-result-object v2
 
     :goto_0
-    invoke-interface {v0}, Ljava/util/Iterator;->hasNext()Z
+    invoke-interface {v2}, Ljava/util/Iterator;->hasNext()Z
 
-    move-result v1
+    move-result v3
 
-    if-eqz v1, :cond_1
+    if-eqz v3, :cond_1
 
-    invoke-interface {v0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+    invoke-interface {v2}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
-    move-result-object v1
+    move-result-object v3
 
-    check-cast v1, Ljp/co/sony/mc/camera/util/capability/ParameterHolder;
+    check-cast v3, Ljp/co/sony/mc/camera/util/capability/ParameterHolder;
 
-    .line 217
-    invoke-interface {v1}, Ljp/co/sony/mc/camera/util/capability/ParameterHolder;->prepare()V
+    .line 221
+    invoke-interface {v3}, Ljp/co/sony/mc/camera/util/capability/ParameterHolder;->prepare()V
 
     goto :goto_0
 
-    .line 219
+    .line 223
     :cond_1
-    sget-boolean v0, Ljp/co/sony/mc/camera/util/CamLog;->DEBUG:Z
+    sget-boolean v2, Ljp/co/sony/mc/camera/util/CamLog;->DEBUG:Z
 
-    if-eqz v0, :cond_2
+    if-eqz v2, :cond_2
 
-    const-string v0, "PrepareParametersTask: X"
+    new-array v1, v1, [Ljava/lang/String;
 
-    filled-new-array {v0}, [Ljava/lang/String;
+    const-string v2, "PrepareParametersTask: X"
 
-    move-result-object v0
+    aput-object v2, v1, v0
 
-    invoke-static {v0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
+    invoke-static {v1}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
     :cond_2
     return-object p0

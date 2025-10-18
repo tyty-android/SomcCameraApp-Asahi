@@ -1,6 +1,6 @@
 .class public final Landroidx/lifecycle/ViewTreeViewModelKt;
 .super Ljava/lang/Object;
-.source "ViewTreeViewModel.kt"
+.source "ViewTreeViewModel.android.kt"
 
 
 # annotations
@@ -43,7 +43,7 @@
 
     invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 34
+    .line 35
     invoke-static {p0}, Landroidx/lifecycle/ViewTreeViewModelStoreOwner;->get(Landroid/view/View;)Landroidx/lifecycle/ViewModelStoreOwner;
 
     move-result-object p0

@@ -9,7 +9,7 @@
 # annotations
 .annotation runtime Lkotlin/Metadata;
     d1 = {
-        "\u0000j\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0004\n\u0002\u0010\u000b\n\u0002\u0008\u0007\n\u0002\u0010\u000e\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0004\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0010\u0003\n\u0002\u0010\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0003\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0005\u0008\u00c6\u0002\u0018\u00002\u00020\u00012\u00020\u0002B\u0007\u0008\u0002\u00a2\u0006\u0002\u0010\u0003J\u0010\u0010\u0018\u001a\u00020\u00192\u0006\u0010\u001a\u001a\u00020\u001bH\u0017J\u0012\u0010\u001c\u001a\u00020\n2\u0008\u0010\u001d\u001a\u0004\u0018\u00010\u001eH\u0017J\u0018\u0010\u001c\u001a\u00020\u001f2\u000e\u0010\u001d\u001a\n\u0018\u00010 j\u0004\u0018\u0001`!H\u0017J\u000c\u0010\"\u001a\u00060 j\u0002`!H\u0017JA\u0010#\u001a\u00020$2\u0006\u0010%\u001a\u00020\n2\u0006\u0010&\u001a\u00020\n2\'\u0010\'\u001a#\u0012\u0015\u0012\u0013\u0018\u00010\u001e\u00a2\u0006\u000c\u0008)\u0012\u0008\u0008*\u0012\u0004\u0008\u0008(\u001d\u0012\u0004\u0012\u00020\u001f0(j\u0002`+H\u0017J1\u0010#\u001a\u00020$2\'\u0010\'\u001a#\u0012\u0015\u0012\u0013\u0018\u00010\u001e\u00a2\u0006\u000c\u0008)\u0012\u0008\u0008*\u0012\u0004\u0008\u0008(\u001d\u0012\u0004\u0012\u00020\u001f0(j\u0002`+H\u0017J\u0011\u0010,\u001a\u00020\u001fH\u0097@\u00f8\u0001\u0000\u00a2\u0006\u0002\u0010-J\u0008\u0010.\u001a\u00020\nH\u0017J\u0008\u0010/\u001a\u00020\u0012H\u0016R \u0010\u0004\u001a\u0008\u0012\u0004\u0012\u00020\u00020\u00058VX\u0097\u0004\u00a2\u0006\u000c\u0012\u0004\u0008\u0006\u0010\u0003\u001a\u0004\u0008\u0007\u0010\u0008R\u001a\u0010\t\u001a\u00020\n8VX\u0097\u0004\u00a2\u0006\u000c\u0012\u0004\u0008\u000b\u0010\u0003\u001a\u0004\u0008\t\u0010\u000cR\u001a\u0010\r\u001a\u00020\n8VX\u0097\u0004\u00a2\u0006\u000c\u0012\u0004\u0008\u000e\u0010\u0003\u001a\u0004\u0008\r\u0010\u000cR\u001a\u0010\u000f\u001a\u00020\n8VX\u0097\u0004\u00a2\u0006\u000c\u0012\u0004\u0008\u0010\u0010\u0003\u001a\u0004\u0008\u000f\u0010\u000cR\u000e\u0010\u0011\u001a\u00020\u0012X\u0082T\u00a2\u0006\u0002\n\u0000R\u001a\u0010\u0013\u001a\u00020\u00148VX\u0097\u0004\u00a2\u0006\u000c\u0012\u0004\u0008\u0015\u0010\u0003\u001a\u0004\u0008\u0016\u0010\u0017\u0082\u0002\u0004\n\u0002\u0008\u0019\u00a8\u00060"
+        "\u0000j\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0004\n\u0002\u0010\u000b\n\u0002\u0008\u0007\n\u0002\u0010\u000e\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0008\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0010\u0003\n\u0002\u0010\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0003\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0005\u0008\u00c6\u0002\u0018\u00002\u00020\u00012\u00020\u0002B\u0007\u0008\u0002\u00a2\u0006\u0002\u0010\u0003J\u0010\u0010\u001c\u001a\u00020\u001d2\u0006\u0010\u001e\u001a\u00020\u001fH\u0017J\u0012\u0010 \u001a\u00020\n2\u0008\u0010!\u001a\u0004\u0018\u00010\"H\u0017J\u0018\u0010 \u001a\u00020#2\u000e\u0010!\u001a\n\u0018\u00010$j\u0004\u0018\u0001`%H\u0017J\u000c\u0010&\u001a\u00060$j\u0002`%H\u0017JA\u0010\'\u001a\u00020(2\u0006\u0010)\u001a\u00020\n2\u0006\u0010*\u001a\u00020\n2\'\u0010+\u001a#\u0012\u0015\u0012\u0013\u0018\u00010\"\u00a2\u0006\u000c\u0008-\u0012\u0008\u0008.\u0012\u0004\u0008\u0008(!\u0012\u0004\u0012\u00020#0,j\u0002`/H\u0017J1\u0010\'\u001a\u00020(2\'\u0010+\u001a#\u0012\u0015\u0012\u0013\u0018\u00010\"\u00a2\u0006\u000c\u0008-\u0012\u0008\u0008.\u0012\u0004\u0008\u0008(!\u0012\u0004\u0012\u00020#0,j\u0002`/H\u0017J\u0011\u00100\u001a\u00020#H\u0097@\u00f8\u0001\u0000\u00a2\u0006\u0002\u00101J\u0008\u00102\u001a\u00020\nH\u0017J\u0008\u00103\u001a\u00020\u0012H\u0016R \u0010\u0004\u001a\u0008\u0012\u0004\u0012\u00020\u00020\u00058VX\u0097\u0004\u00a2\u0006\u000c\u0012\u0004\u0008\u0006\u0010\u0003\u001a\u0004\u0008\u0007\u0010\u0008R\u001a\u0010\t\u001a\u00020\n8VX\u0097\u0004\u00a2\u0006\u000c\u0012\u0004\u0008\u000b\u0010\u0003\u001a\u0004\u0008\t\u0010\u000cR\u001a\u0010\r\u001a\u00020\n8VX\u0097\u0004\u00a2\u0006\u000c\u0012\u0004\u0008\u000e\u0010\u0003\u001a\u0004\u0008\r\u0010\u000cR\u001a\u0010\u000f\u001a\u00020\n8VX\u0097\u0004\u00a2\u0006\u000c\u0012\u0004\u0008\u0010\u0010\u0003\u001a\u0004\u0008\u000f\u0010\u000cR\u000e\u0010\u0011\u001a\u00020\u0012X\u0082T\u00a2\u0006\u0002\n\u0000R\u001a\u0010\u0013\u001a\u00020\u00148VX\u0097\u0004\u00a2\u0006\u000c\u0012\u0004\u0008\u0015\u0010\u0003\u001a\u0004\u0008\u0016\u0010\u0017R\u001c\u0010\u0018\u001a\u0004\u0018\u00010\u00028VX\u0097\u0004\u00a2\u0006\u000c\u0012\u0004\u0008\u0019\u0010\u0003\u001a\u0004\u0008\u001a\u0010\u001b\u0082\u0002\u0004\n\u0002\u0008\u0019\u00a8\u00064"
     }
     d2 = {
         "Lkotlinx/coroutines/NonCancellable;",
@@ -36,6 +36,10 @@
         "getOnJoin$annotations",
         "getOnJoin",
         "()Lkotlinx/coroutines/selects/SelectClause0;",
+        "parent",
+        "getParent$annotations",
+        "getParent",
+        "()Lkotlinx/coroutines/Job;",
         "attachChild",
         "Lkotlinx/coroutines/ChildHandle;",
         "child",
@@ -65,7 +69,7 @@
     k = 0x1
     mv = {
         0x1,
-        0x6,
+        0x8,
         0x0
     }
     xi = 0x30
@@ -124,6 +128,16 @@
     return-void
 .end method
 
+.method public static synthetic getParent$annotations()V
+    .locals 0
+    .annotation runtime Lkotlin/Deprecated;
+        level = .enum Lkotlin/DeprecationLevel;->WARNING:Lkotlin/DeprecationLevel;
+        message = "NonCancellable can be used only as an argument for \'withContext\', direct usages of its API are prohibited"
+    .end annotation
+
+    return-void
+.end method
+
 .method public static synthetic isActive$annotations()V
     .locals 0
     .annotation runtime Lkotlin/Deprecated;
@@ -163,7 +177,7 @@
         message = "NonCancellable can be used only as an argument for \'withContext\', direct usages of its API are prohibited"
     .end annotation
 
-    .line 127
+    .line 135
     sget-object p0, Lkotlinx/coroutines/NonDisposableHandle;->INSTANCE:Lkotlinx/coroutines/NonDisposableHandle;
 
     check-cast p0, Lkotlinx/coroutines/ChildHandle;
@@ -213,7 +227,7 @@
         message = "NonCancellable can be used only as an argument for \'withContext\', direct usages of its API are prohibited"
     .end annotation
 
-    .line 83
+    .line 91
     new-instance p0, Ljava/lang/IllegalStateException;
 
     const-string v0, "This job is always active"
@@ -234,7 +248,7 @@
         }
     .end annotation
 
-    .line 120
+    .line 128
     invoke-static {}, Lkotlin/sequences/SequencesKt;->emptySequence()Lkotlin/sequences/Sequence;
 
     move-result-object p0
@@ -245,7 +259,7 @@
 .method public getOnJoin()Lkotlinx/coroutines/selects/SelectClause0;
     .locals 1
 
-    .line 76
+    .line 84
     new-instance p0, Ljava/lang/UnsupportedOperationException;
 
     const-string v0, "This job is always active"
@@ -253,6 +267,14 @@
     invoke-direct {p0, v0}, Ljava/lang/UnsupportedOperationException;-><init>(Ljava/lang/String;)V
 
     throw p0
+.end method
+
+.method public getParent()Lkotlinx/coroutines/Job;
+    .locals 0
+
+    const/4 p0, 0x0
+
+    return-object p0
 .end method
 
 .method public invokeOnCompletion(Lkotlin/jvm/functions/Function1;)Lkotlinx/coroutines/DisposableHandle;
@@ -274,7 +296,7 @@
         message = "NonCancellable can be used only as an argument for \'withContext\', direct usages of its API are prohibited"
     .end annotation
 
-    .line 90
+    .line 98
     sget-object p0, Lkotlinx/coroutines/NonDisposableHandle;->INSTANCE:Lkotlinx/coroutines/NonDisposableHandle;
 
     check-cast p0, Lkotlinx/coroutines/DisposableHandle;
@@ -301,7 +323,7 @@
         message = "NonCancellable can be used only as an argument for \'withContext\', direct usages of its API are prohibited"
     .end annotation
 
-    .line 98
+    .line 106
     sget-object p0, Lkotlinx/coroutines/NonDisposableHandle;->INSTANCE:Lkotlinx/coroutines/NonDisposableHandle;
 
     check-cast p0, Lkotlinx/coroutines/DisposableHandle;
@@ -351,7 +373,7 @@
         message = "NonCancellable can be used only as an argument for \'withContext\', direct usages of its API are prohibited"
     .end annotation
 
-    .line 67
+    .line 75
     new-instance p0, Ljava/lang/UnsupportedOperationException;
 
     const-string p1, "This job is always active"
@@ -391,7 +413,7 @@
 .method public toString()Ljava/lang/String;
     .locals 0
 
-    .line 131
+    .line 139
     const-string p0, "NonCancellable"
 
     return-object p0

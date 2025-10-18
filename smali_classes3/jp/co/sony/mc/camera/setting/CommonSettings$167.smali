@@ -21,7 +21,7 @@
 .method constructor <init>()V
     .locals 0
 
-    .line 1598
+    .line 1604
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -42,8 +42,8 @@
         }
     .end annotation
 
-    .line 1602
-    sget-object p0, Ljp/co/sony/mc/camera/configuration/parameters/SoftwareLicense;->DUMMY_OFF:Ljp/co/sony/mc/camera/configuration/parameters/SoftwareLicense;
+    .line 1608
+    sget-object p0, Ljp/co/sony/mc/camera/configuration/parameters/Tips;->DUMMY_OFF:Ljp/co/sony/mc/camera/configuration/parameters/Tips;
 
     return-object p0
 .end method

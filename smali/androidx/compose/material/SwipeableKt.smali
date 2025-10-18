@@ -5,14 +5,16 @@
 
 # annotations
 .annotation system Ldalvik/annotation/SourceDebugExtension;
-    value = "SMAP\nSwipeable.kt\nKotlin\n*S Kotlin\n*F\n+ 1 Swipeable.kt\nandroidx/compose/material/SwipeableKt\n+ 2 Composables.kt\nandroidx/compose/runtime/ComposablesKt\n+ 3 Composer.kt\nandroidx/compose/runtime/ComposerKt\n+ 4 InspectableValue.kt\nandroidx/compose/ui/platform/InspectableValueKt\n+ 5 _Collections.kt\nkotlin/collections/CollectionsKt___CollectionsKt\n*L\n1#1,890:1\n25#2:891\n25#2:898\n1097#3,6:892\n1097#3,6:899\n135#4:905\n766#5:906\n857#5,2:907\n766#5:909\n857#5,2:910\n288#5,2:912\n*S KotlinDebug\n*F\n+ 1 Swipeable.kt\nandroidx/compose/material/SwipeableKt\n*L\n502#1:891\n509#1:898\n502#1:892,6\n509#1:899,6\n574#1:905\n739#1:906\n739#1:907,2\n740#1:909\n740#1:910,2\n797#1:912,2\n*E\n"
+    value = "SMAP\nSwipeable.kt\nKotlin\n*S Kotlin\n*F\n+ 1 Swipeable.kt\nandroidx/compose/material/SwipeableKt\n+ 2 Composables.kt\nandroidx/compose/runtime/ComposablesKt\n+ 3 Composer.kt\nandroidx/compose/runtime/ComposerKt\n+ 4 InspectableValue.kt\nandroidx/compose/ui/platform/InspectableValueKt\n+ 5 _Collections.kt\nkotlin/collections/CollectionsKt___CollectionsKt\n+ 6 ListUtils.kt\nandroidx/compose/ui/util/ListUtilsKt\n*L\n1#1,908:1\n25#2:909\n25#2:916\n1116#3,6:910\n1116#3,6:917\n135#4:923\n766#5:924\n857#5,2:925\n766#5:940\n857#5,2:941\n288#5,2:956\n171#6,13:927\n482#6,13:943\n*S KotlinDebug\n*F\n+ 1 Swipeable.kt\nandroidx/compose/material/SwipeableKt\n*L\n510#1:909\n517#1:916\n510#1:910,6\n517#1:917,6\n583#1:923\n752#1:924\n752#1:925,2\n753#1:940\n753#1:941,2\n810#1:956,2\n752#1:927,13\n753#1:943,13\n*E\n"
 .end annotation
 
 .annotation runtime Lkotlin/Metadata;
     d1 = {
-        "\u0000\u0086\u0001\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0005\n\u0002\u0010\u0007\n\u0002\u0008\u0003\n\u0002\u0010\"\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0003\n\u0002\u0010 \n\u0000\n\u0002\u0010\u0000\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0010\u000b\n\u0002\u0008\u0004\n\u0002\u0010\u0002\n\u0002\u0008\u0002\n\u0002\u0010$\n\u0002\u0008\u0003\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0003\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0003\u001aP\u0010\u0008\u001a\u00020\t2\u0006\u0010\n\u001a\u00020\t2\u0006\u0010\u000b\u001a\u00020\t2\u000c\u0010\u000c\u001a\u0008\u0012\u0004\u0012\u00020\t0\r2\u0018\u0010\u000e\u001a\u0014\u0012\u0004\u0012\u00020\t\u0012\u0004\u0012\u00020\t\u0012\u0004\u0012\u00020\t0\u000f2\u0006\u0010\u0010\u001a\u00020\t2\u0006\u0010\u0011\u001a\u00020\tH\u0002\u001a$\u0010\u0012\u001a\u0008\u0012\u0004\u0012\u00020\t0\u00132\u0006\u0010\n\u001a\u00020\t2\u000c\u0010\u000c\u001a\u0008\u0012\u0004\u0012\u00020\t0\rH\u0002\u001aZ\u0010\u0014\u001a\u0008\u0012\u0004\u0012\u0002H\u00020\u0003\"\u0008\u0008\u0000\u0010\u0002*\u00020\u00152\u0006\u0010\u0016\u001a\u0002H\u00022\u000e\u0008\u0002\u0010\u0017\u001a\u0008\u0012\u0004\u0012\u00020\t0\u00182#\u0008\u0002\u0010\u0019\u001a\u001d\u0012\u0013\u0012\u0011H\u0002\u00a2\u0006\u000c\u0008\u001b\u0012\u0008\u0008\u001c\u0012\u0004\u0008\u0008(\u001d\u0012\u0004\u0012\u00020\u001e0\u001aH\u0007\u00a2\u0006\u0002\u0010\u001f\u001aI\u0010 \u001a\u0008\u0012\u0004\u0012\u0002H\u00020\u0003\"\u0008\u0008\u0000\u0010\u0002*\u00020\u00152\u0006\u0010!\u001a\u0002H\u00022\u0012\u0010\"\u001a\u000e\u0012\u0004\u0012\u0002H\u0002\u0012\u0004\u0012\u00020#0\u001a2\u000e\u0008\u0002\u0010\u0017\u001a\u0008\u0012\u0004\u0012\u00020\t0\u0018H\u0001\u00a2\u0006\u0002\u0010$\u001a-\u0010%\u001a\u0004\u0018\u00010\t\"\u0004\u0008\u0000\u0010\u0002*\u000e\u0012\u0004\u0012\u00020\t\u0012\u0004\u0012\u0002H\u00020&2\u0006\u0010\'\u001a\u0002H\u0002H\u0002\u00a2\u0006\u0002\u0010(\u001a\u00b9\u0001\u0010)\u001a\u00020*\"\u0004\u0008\u0000\u0010\u0002*\u00020*2\u000c\u0010\'\u001a\u0008\u0012\u0004\u0012\u0002H\u00020\u00032\u0012\u0010\u000c\u001a\u000e\u0012\u0004\u0012\u00020\t\u0012\u0004\u0012\u0002H\u00020&2\u0006\u0010+\u001a\u00020,2\u0008\u0008\u0002\u0010-\u001a\u00020\u001e2\u0008\u0008\u0002\u0010.\u001a\u00020\u001e2\n\u0008\u0002\u0010/\u001a\u0004\u0018\u00010028\u0008\u0002\u0010\u000e\u001a2\u0012\u0013\u0012\u0011H\u0002\u00a2\u0006\u000c\u0008\u001b\u0012\u0008\u0008\u001c\u0012\u0004\u0008\u0008(1\u0012\u0013\u0012\u0011H\u0002\u00a2\u0006\u000c\u0008\u001b\u0012\u0008\u0008\u001c\u0012\u0004\u0008\u0008(2\u0012\u0004\u0012\u0002030\u000f2\n\u0008\u0002\u00104\u001a\u0004\u0018\u0001052\u0008\u0008\u0002\u0010\u0011\u001a\u000206H\u0007\u00f8\u0001\u0000\u00f8\u0001\u0001\u00a2\u0006\u0004\u00087\u00108\"*\u0010\u0000\u001a\u00020\u0001\"\u0004\u0008\u0000\u0010\u0002*\u0008\u0012\u0004\u0012\u0002H\u00020\u00038@X\u0081\u0004\u00a2\u0006\u000c\u0012\u0004\u0008\u0004\u0010\u0005\u001a\u0004\u0008\u0006\u0010\u0007\u0082\u0002\u000b\n\u0005\u0008\u00a1\u001e0\u0001\n\u0002\u0008\u0019\u00a8\u00069"
+        "\u0000\u008c\u0001\n\u0000\n\u0002\u0010\u000e\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0005\n\u0002\u0010\u0007\n\u0002\u0008\u0003\n\u0002\u0010\"\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0003\n\u0002\u0010 \n\u0000\n\u0002\u0010\u0000\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0010\u000b\n\u0002\u0008\u0004\n\u0002\u0010\u0002\n\u0002\u0008\u0002\n\u0002\u0010$\n\u0002\u0008\u0003\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0003\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0003\u001aP\u0010\n\u001a\u00020\u000b2\u0006\u0010\u000c\u001a\u00020\u000b2\u0006\u0010\r\u001a\u00020\u000b2\u000c\u0010\u000e\u001a\u0008\u0012\u0004\u0012\u00020\u000b0\u000f2\u0018\u0010\u0010\u001a\u0014\u0012\u0004\u0012\u00020\u000b\u0012\u0004\u0012\u00020\u000b\u0012\u0004\u0012\u00020\u000b0\u00112\u0006\u0010\u0012\u001a\u00020\u000b2\u0006\u0010\u0013\u001a\u00020\u000bH\u0002\u001a$\u0010\u0014\u001a\u0008\u0012\u0004\u0012\u00020\u000b0\u00152\u0006\u0010\u000c\u001a\u00020\u000b2\u000c\u0010\u000e\u001a\u0008\u0012\u0004\u0012\u00020\u000b0\u000fH\u0002\u001aZ\u0010\u0016\u001a\u0008\u0012\u0004\u0012\u0002H\u00040\u0005\"\u0008\u0008\u0000\u0010\u0004*\u00020\u00172\u0006\u0010\u0018\u001a\u0002H\u00042\u000e\u0008\u0002\u0010\u0019\u001a\u0008\u0012\u0004\u0012\u00020\u000b0\u001a2#\u0008\u0002\u0010\u001b\u001a\u001d\u0012\u0013\u0012\u0011H\u0004\u00a2\u0006\u000c\u0008\u001d\u0012\u0008\u0008\u001e\u0012\u0004\u0008\u0008(\u001f\u0012\u0004\u0012\u00020 0\u001cH\u0007\u00a2\u0006\u0002\u0010!\u001aI\u0010\"\u001a\u0008\u0012\u0004\u0012\u0002H\u00040\u0005\"\u0008\u0008\u0000\u0010\u0004*\u00020\u00172\u0006\u0010#\u001a\u0002H\u00042\u0012\u0010$\u001a\u000e\u0012\u0004\u0012\u0002H\u0004\u0012\u0004\u0012\u00020%0\u001c2\u000e\u0008\u0002\u0010\u0019\u001a\u0008\u0012\u0004\u0012\u00020\u000b0\u001aH\u0001\u00a2\u0006\u0002\u0010&\u001a-\u0010\'\u001a\u0004\u0018\u00010\u000b\"\u0004\u0008\u0000\u0010\u0004*\u000e\u0012\u0004\u0012\u00020\u000b\u0012\u0004\u0012\u0002H\u00040(2\u0006\u0010)\u001a\u0002H\u0004H\u0002\u00a2\u0006\u0002\u0010*\u001a\u00b6\u0001\u0010+\u001a\u00020,\"\u0004\u0008\u0000\u0010\u0004*\u00020,2\u000c\u0010)\u001a\u0008\u0012\u0004\u0012\u0002H\u00040\u00052\u0012\u0010\u000e\u001a\u000e\u0012\u0004\u0012\u00020\u000b\u0012\u0004\u0012\u0002H\u00040(2\u0006\u0010-\u001a\u00020.2\u0008\u0008\u0002\u0010/\u001a\u00020 2\u0008\u0008\u0002\u00100\u001a\u00020 2\n\u0008\u0002\u00101\u001a\u0004\u0018\u00010228\u0008\u0002\u0010\u0010\u001a2\u0012\u0013\u0012\u0011H\u0004\u00a2\u0006\u000c\u0008\u001d\u0012\u0008\u0008\u001e\u0012\u0004\u0008\u0008(3\u0012\u0013\u0012\u0011H\u0004\u00a2\u0006\u000c\u0008\u001d\u0012\u0008\u0008\u001e\u0012\u0004\u0008\u0008(4\u0012\u0004\u0012\u0002050\u00112\n\u0008\u0002\u00106\u001a\u0004\u0018\u0001072\u0008\u0008\u0002\u0010\u0013\u001a\u000208H\u0007\u00f8\u0001\u0000\u00a2\u0006\u0004\u00089\u0010:\"\u000e\u0010\u0000\u001a\u00020\u0001X\u0082T\u00a2\u0006\u0002\n\u0000\"*\u0010\u0002\u001a\u00020\u0003\"\u0004\u0008\u0000\u0010\u0004*\u0008\u0012\u0004\u0012\u0002H\u00040\u00058@X\u0081\u0004\u00a2\u0006\u000c\u0012\u0004\u0008\u0006\u0010\u0007\u001a\u0004\u0008\u0008\u0010\t\u0082\u0002\u0007\n\u0005\u0008\u00a1\u001e0\u0001\u00a8\u0006;"
     }
     d2 = {
+        "SwipeableDeprecation",
+        "",
         "PreUpPostDownNestedScrollConnection",
         "Landroidx/compose/ui/input/nestedscroll/NestedScrollConnection;",
         "T",
@@ -82,6 +84,10 @@
 .end annotation
 
 
+# static fields
+.field private static final SwipeableDeprecation:Ljava/lang/String; = "Material\'s Swipeable has been replaced by Foundation\'s AnchoredDraggable APIs. Please see developer.android.com for an overview of the changes and a migration guide."
+
+
 # direct methods
 .method public static final synthetic access$computeTarget(FFLjava/util/Set;Lkotlin/jvm/functions/Function2;FF)F
     .locals 0
@@ -134,12 +140,12 @@
         }
     .end annotation
 
-    .line 768
+    .line 781
     invoke-static {p0, p2}, Landroidx/compose/material/SwipeableKt;->findBounds(FLjava/util/Set;)Ljava/util/List;
 
     move-result-object p2
 
-    .line 769
+    .line 782
     invoke-interface {p2}, Ljava/util/List;->size()I
 
     move-result v0
@@ -152,7 +158,7 @@
 
     if-eq v0, v2, :cond_5
 
-    .line 773
+    .line 786
     invoke-interface {p2, v1}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
     move-result-object v0
@@ -163,7 +169,7 @@
 
     move-result v0
 
-    .line 774
+    .line 787
     invoke-interface {p2, v2}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
     move-result-object p2
@@ -184,7 +190,7 @@
 
     return p2
 
-    .line 780
+    .line 793
     :cond_0
     invoke-static {v0}, Ljava/lang/Float;->valueOf(F)Ljava/lang/Float;
 
@@ -219,7 +225,7 @@
 
     return v0
 
-    .line 788
+    .line 801
     :cond_2
     invoke-static {p2}, Ljava/lang/Float;->valueOf(F)Ljava/lang/Float;
 
@@ -254,7 +260,7 @@
 
     goto :goto_1
 
-    .line 771
+    .line 784
     :cond_5
     invoke-interface {p2, v1}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
@@ -272,7 +278,7 @@
 .end method
 
 .method private static final findBounds(FLjava/util/Set;)Ljava/util/List;
-    .locals 9
+    .locals 13
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(F",
@@ -285,17 +291,17 @@
         }
     .end annotation
 
-    .line 739
+    .line 752
     check-cast p1, Ljava/lang/Iterable;
 
-    .line 906
+    .line 924
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
     check-cast v0, Ljava/util/Collection;
 
-    .line 907
+    .line 925
     invoke-interface {p1}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
 
     move-result-object v1
@@ -336,129 +342,261 @@
 
     goto :goto_0
 
-    .line 908
+    .line 926
     :cond_1
     check-cast v0, Ljava/util/List;
 
-    .line 906
-    check-cast v0, Ljava/lang/Iterable;
+    .line 928
+    invoke-interface {v0}, Ljava/util/List;->isEmpty()Z
 
-    .line 739
-    invoke-static {v0}, Lkotlin/collections/CollectionsKt;->maxOrNull(Ljava/lang/Iterable;)Ljava/lang/Float;
+    move-result v1
 
-    move-result-object v0
+    const/4 v2, 0x0
 
-    .line 909
-    new-instance v1, Ljava/util/ArrayList;
+    const/4 v5, 0x0
 
-    invoke-direct {v1}, Ljava/util/ArrayList;-><init>()V
+    const/4 v6, 0x1
 
-    check-cast v1, Ljava/util/Collection;
+    if-eqz v1, :cond_2
 
-    .line 910
+    move-object v1, v2
+
+    goto :goto_2
+
+    .line 929
+    :cond_2
+    invoke-interface {v0, v5}, Ljava/util/List;->get(I)Ljava/lang/Object;
+
+    move-result-object v1
+
+    .line 930
+    move-object v7, v1
+
+    check-cast v7, Ljava/lang/Number;
+
+    invoke-virtual {v7}, Ljava/lang/Number;->floatValue()F
+
+    move-result v7
+
+    .line 931
+    invoke-static {v0}, Lkotlin/collections/CollectionsKt;->getLastIndex(Ljava/util/List;)I
+
+    move-result v8
+
+    if-gt v6, v8, :cond_4
+
+    move v9, v6
+
+    .line 932
+    :goto_1
+    invoke-interface {v0, v9}, Ljava/util/List;->get(I)Ljava/lang/Object;
+
+    move-result-object v10
+
+    .line 933
+    move-object v11, v10
+
+    check-cast v11, Ljava/lang/Number;
+
+    invoke-virtual {v11}, Ljava/lang/Number;->floatValue()F
+
+    move-result v11
+
+    .line 934
+    invoke-static {v7, v11}, Ljava/lang/Float;->compare(FF)I
+
+    move-result v12
+
+    if-gez v12, :cond_3
+
+    move-object v1, v10
+
+    move v7, v11
+
+    :cond_3
+    if-eq v9, v8, :cond_4
+
+    add-int/lit8 v9, v9, 0x1
+
+    goto :goto_1
+
+    .line 752
+    :cond_4
+    :goto_2
+    check-cast v1, Ljava/lang/Float;
+
+    .line 940
+    new-instance v0, Ljava/util/ArrayList;
+
+    invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
+
+    check-cast v0, Ljava/util/Collection;
+
+    .line 941
     invoke-interface {p1}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
 
     move-result-object p1
 
-    :cond_2
-    :goto_1
+    :cond_5
+    :goto_3
     invoke-interface {p1}, Ljava/util/Iterator;->hasNext()Z
 
-    move-result v2
+    move-result v7
 
-    if-eqz v2, :cond_3
+    if-eqz v7, :cond_6
 
     invoke-interface {p1}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
-    move-result-object v2
+    move-result-object v7
 
-    move-object v5, v2
+    move-object v8, v7
 
-    check-cast v5, Ljava/lang/Number;
+    check-cast v8, Ljava/lang/Number;
 
-    invoke-virtual {v5}, Ljava/lang/Number;->floatValue()F
+    invoke-virtual {v8}, Ljava/lang/Number;->floatValue()F
 
-    move-result v5
+    move-result v8
 
-    float-to-double v5, v5
+    float-to-double v8, v8
 
-    float-to-double v7, p0
+    float-to-double v10, p0
 
-    sub-double/2addr v7, v3
+    sub-double/2addr v10, v3
 
-    cmpl-double v5, v5, v7
+    cmpl-double v8, v8, v10
 
-    if-ltz v5, :cond_2
+    if-ltz v8, :cond_5
 
-    invoke-interface {v1, v2}, Ljava/util/Collection;->add(Ljava/lang/Object;)Z
+    invoke-interface {v0, v7}, Ljava/util/Collection;->add(Ljava/lang/Object;)Z
 
-    goto :goto_1
+    goto :goto_3
 
-    .line 911
-    :cond_3
-    check-cast v1, Ljava/util/List;
+    .line 942
+    :cond_6
+    check-cast v0, Ljava/util/List;
 
-    .line 909
-    check-cast v1, Ljava/lang/Iterable;
+    .line 944
+    invoke-interface {v0}, Ljava/util/List;->isEmpty()Z
 
-    .line 740
-    invoke-static {v1}, Lkotlin/collections/CollectionsKt;->minOrNull(Ljava/lang/Iterable;)Ljava/lang/Float;
+    move-result p0
 
-    move-result-object p0
+    if-eqz p0, :cond_7
 
-    if-nez v0, :cond_4
+    goto :goto_5
 
-    .line 745
-    invoke-static {p0}, Lkotlin/collections/CollectionsKt;->listOfNotNull(Ljava/lang/Object;)Ljava/util/List;
-
-    move-result-object p0
-
-    goto :goto_2
-
-    :cond_4
-    if-nez p0, :cond_5
-
-    .line 748
-    invoke-static {v0}, Lkotlin/collections/CollectionsKt;->listOf(Ljava/lang/Object;)Ljava/util/List;
+    .line 945
+    :cond_7
+    invoke-interface {v0, v5}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
     move-result-object p0
 
-    goto :goto_2
+    .line 946
+    move-object p1, p0
 
-    .line 749
-    :cond_5
-    invoke-static {v0, p0}, Lkotlin/jvm/internal/Intrinsics;->areEqual(Ljava/lang/Float;Ljava/lang/Float;)Z
+    check-cast p1, Ljava/lang/Number;
+
+    invoke-virtual {p1}, Ljava/lang/Number;->floatValue()F
 
     move-result p1
 
-    if-eqz p1, :cond_6
+    .line 947
+    invoke-static {v0}, Lkotlin/collections/CollectionsKt;->getLastIndex(Ljava/util/List;)I
+
+    move-result v2
+
+    if-gt v6, v2, :cond_9
+
+    move v3, v6
+
+    .line 948
+    :goto_4
+    invoke-interface {v0, v3}, Ljava/util/List;->get(I)Ljava/lang/Object;
+
+    move-result-object v4
+
+    .line 949
+    move-object v7, v4
+
+    check-cast v7, Ljava/lang/Number;
+
+    invoke-virtual {v7}, Ljava/lang/Number;->floatValue()F
+
+    move-result v7
+
+    .line 950
+    invoke-static {p1, v7}, Ljava/lang/Float;->compare(FF)I
+
+    move-result v8
+
+    if-lez v8, :cond_8
+
+    move-object p0, v4
+
+    move p1, v7
+
+    :cond_8
+    if-eq v3, v2, :cond_9
+
+    add-int/lit8 v3, v3, 0x1
+
+    goto :goto_4
+
+    :cond_9
+    move-object v2, p0
 
     .line 753
-    invoke-static {v0}, Lkotlin/collections/CollectionsKt;->listOf(Ljava/lang/Object;)Ljava/util/List;
+    :goto_5
+    check-cast v2, Ljava/lang/Float;
+
+    if-nez v1, :cond_a
+
+    .line 758
+    invoke-static {v2}, Lkotlin/collections/CollectionsKt;->listOfNotNull(Ljava/lang/Object;)Ljava/util/List;
 
     move-result-object p0
 
-    goto :goto_2
+    goto :goto_6
 
-    :cond_6
-    const/4 p1, 0x2
+    :cond_a
+    if-nez v2, :cond_b
 
-    .line 756
-    new-array p1, p1, [Ljava/lang/Float;
-
-    const/4 v1, 0x0
-
-    aput-object v0, p1, v1
-
-    const/4 v0, 0x1
-
-    aput-object p0, p1, v0
-
-    invoke-static {p1}, Lkotlin/collections/CollectionsKt;->listOf([Ljava/lang/Object;)Ljava/util/List;
+    .line 761
+    invoke-static {v1}, Lkotlin/collections/CollectionsKt;->listOf(Ljava/lang/Object;)Ljava/util/List;
 
     move-result-object p0
 
-    :goto_2
+    goto :goto_6
+
+    .line 762
+    :cond_b
+    invoke-static {v1, v2}, Lkotlin/jvm/internal/Intrinsics;->areEqual(Ljava/lang/Float;Ljava/lang/Float;)Z
+
+    move-result p0
+
+    if-eqz p0, :cond_c
+
+    .line 766
+    invoke-static {v1}, Lkotlin/collections/CollectionsKt;->listOf(Ljava/lang/Object;)Ljava/util/List;
+
+    move-result-object p0
+
+    goto :goto_6
+
+    :cond_c
+    const/4 p0, 0x2
+
+    .line 769
+    new-array p0, p0, [Ljava/lang/Float;
+
+    aput-object v1, p0, v5
+
+    aput-object v2, p0, v6
+
+    invoke-static {p0}, Lkotlin/collections/CollectionsKt;->listOf([Ljava/lang/Object;)Ljava/util/List;
+
+    move-result-object p0
+
+    :goto_6
     return-object p0
 .end method
 
@@ -476,14 +614,14 @@
         }
     .end annotation
 
-    .line 797
+    .line 810
     invoke-interface {p0}, Ljava/util/Map;->entrySet()Ljava/util/Set;
 
     move-result-object p0
 
     check-cast p0, Ljava/lang/Iterable;
 
-    .line 912
+    .line 956
     invoke-interface {p0}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
 
     move-result-object p0
@@ -505,7 +643,7 @@
 
     check-cast v2, Ljava/util/Map$Entry;
 
-    .line 797
+    .line 810
     invoke-interface {v2}, Ljava/util/Map$Entry;->getValue()Ljava/lang/Object;
 
     move-result-object v2
@@ -551,11 +689,7 @@
         }
     .end annotation
 
-    const-string v0, "<this>"
-
-    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 848
+    .line 862
     new-instance v0, Landroidx/compose/material/SwipeableKt$PreUpPostDownNestedScrollConnection$1;
 
     invoke-direct {v0, p0}, Landroidx/compose/material/SwipeableKt$PreUpPostDownNestedScrollConnection$1;-><init>(Landroidx/compose/material/SwipeableState;)V
@@ -592,15 +726,15 @@
         }
     .end annotation
 
-    const-string v0, "initialValue"
-
-    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+    .annotation runtime Lkotlin/Deprecated;
+        message = "Material\'s Swipeable has been replaced by Foundation\'s AnchoredDraggable APIs. Please see developer.android.com for an overview of the changes and a migration guide."
+    .end annotation
 
     const v0, -0x49c6a521
 
     invoke-interface {p3, v0}, Landroidx/compose/runtime/Composer;->startReplaceableGroup(I)V
 
-    const-string v1, "C(rememberSwipeableState)P(2)472@19232L344:Swipeable.kt#jmzs0o"
+    const-string v1, "C(rememberSwipeableState)P(2)479@19455L344:Swipeable.kt#jmzs0o"
 
     invoke-static {p3, v1}, Landroidx/compose/runtime/ComposerKt;->sourceInformation(Landroidx/compose/runtime/Composer;Ljava/lang/String;)V
 
@@ -608,7 +742,7 @@
 
     if-eqz v1, :cond_0
 
-    .line 470
+    .line 477
     sget-object p1, Landroidx/compose/material/SwipeableDefaults;->INSTANCE:Landroidx/compose/material/SwipeableDefaults;
 
     invoke-virtual {p1}, Landroidx/compose/material/SwipeableDefaults;->getAnimationSpec()Landroidx/compose/animation/core/SpringSpec;
@@ -622,7 +756,7 @@
 
     if-eqz p5, :cond_1
 
-    .line 471
+    .line 478
     sget-object p2, Landroidx/compose/material/SwipeableKt$rememberSwipeableState$1;->INSTANCE:Landroidx/compose/material/SwipeableKt$rememberSwipeableState$1;
 
     check-cast p2, Lkotlin/jvm/functions/Function1;
@@ -636,9 +770,9 @@
 
     const/4 p5, -0x1
 
-    const-string v1, "androidx.compose.material.rememberSwipeableState (Swipeable.kt:467)"
+    const-string v1, "androidx.compose.material.rememberSwipeableState (Swipeable.kt:478)"
 
-    .line 472
+    .line 479
     invoke-static {v0, p4, p5, v1}, Landroidx/compose/runtime/ComposerKt;->traceEventStart(IIILjava/lang/String;)V
 
     :cond_2
@@ -646,14 +780,14 @@
 
     new-array v0, p4, [Ljava/lang/Object;
 
-    .line 474
+    .line 481
     sget-object p4, Landroidx/compose/material/SwipeableState;->Companion:Landroidx/compose/material/SwipeableState$Companion;
 
     invoke-virtual {p4, p1, p2}, Landroidx/compose/material/SwipeableState$Companion;->Saver(Landroidx/compose/animation/core/AnimationSpec;Lkotlin/jvm/functions/Function1;)Landroidx/compose/runtime/saveable/Saver;
 
     move-result-object v1
 
-    .line 473
+    .line 480
     new-instance p4, Landroidx/compose/material/SwipeableKt$rememberSwipeableState$2;
 
     invoke-direct {p4, p0, p1, p2}, Landroidx/compose/material/SwipeableKt$rememberSwipeableState$2;-><init>(Ljava/lang/Object;Landroidx/compose/animation/core/AnimationSpec;Lkotlin/jvm/functions/Function1;)V
@@ -711,19 +845,15 @@
         }
     .end annotation
 
-    const-string/jumbo v0, "value"
-
-    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string v0, "onValueChange"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+    .annotation runtime Lkotlin/Deprecated;
+        message = "Material\'s Swipeable has been replaced by Foundation\'s AnchoredDraggable APIs. Please see developer.android.com for an overview of the changes and a migration guide."
+    .end annotation
 
     const v0, 0x44ed1106
 
     invoke-interface {p3, v0}, Landroidx/compose/runtime/Composer;->startReplaceableGroup(I)V
 
-    const-string v1, "C(rememberSwipeableStateFor)P(2,1)501@20399L169,508@20599L34,509@20638L162,514@20805L259:Swipeable.kt#jmzs0o"
+    const-string v1, "C(rememberSwipeableStateFor)P(2,1)509@20656L169,516@20856L34,517@20895L162,522@21062L259:Swipeable.kt#jmzs0o"
 
     invoke-static {p3, v1}, Landroidx/compose/runtime/ComposerKt;->sourceInformation(Landroidx/compose/runtime/Composer;Ljava/lang/String;)V
 
@@ -731,7 +861,7 @@
 
     if-eqz p5, :cond_0
 
-    .line 500
+    .line 508
     sget-object p2, Landroidx/compose/material/SwipeableDefaults;->INSTANCE:Landroidx/compose/material/SwipeableDefaults;
 
     invoke-virtual {p2}, Landroidx/compose/material/SwipeableDefaults;->getAnimationSpec()Landroidx/compose/animation/core/SpringSpec;
@@ -749,27 +879,27 @@
 
     const/4 p5, -0x1
 
-    const-string v1, "androidx.compose.material.rememberSwipeableStateFor (Swipeable.kt:496)"
+    const-string v1, "androidx.compose.material.rememberSwipeableStateFor (Swipeable.kt:508)"
 
-    .line 501
+    .line 509
     invoke-static {v0, p4, p5, v1}, Landroidx/compose/runtime/ComposerKt;->traceEventStart(IIILjava/lang/String;)V
 
     :cond_1
     const p5, -0x1d58f75c
 
-    .line 502
+    .line 510
     invoke-interface {p3, p5}, Landroidx/compose/runtime/Composer;->startReplaceableGroup(I)V
 
     const-string v0, "CC(remember):Composables.kt#9igjgp"
 
     invoke-static {p3, v0}, Landroidx/compose/runtime/ComposerKt;->sourceInformation(Landroidx/compose/runtime/Composer;Ljava/lang/String;)V
 
-    .line 892
+    .line 910
     invoke-interface {p3}, Landroidx/compose/runtime/Composer;->rememberedValue()Ljava/lang/Object;
 
     move-result-object v1
 
-    .line 893
+    .line 911
     sget-object v2, Landroidx/compose/runtime/Composer;->Companion:Landroidx/compose/runtime/Composer$Companion;
 
     invoke-virtual {v2}, Landroidx/compose/runtime/Composer$Companion;->getEmpty()Ljava/lang/Object;
@@ -778,38 +908,38 @@
 
     if-ne v1, v2, :cond_2
 
-    .line 503
+    .line 511
     new-instance v1, Landroidx/compose/material/SwipeableState;
 
-    .line 506
+    .line 514
     sget-object v2, Landroidx/compose/material/SwipeableKt$rememberSwipeableStateFor$swipeableState$1$1;->INSTANCE:Landroidx/compose/material/SwipeableKt$rememberSwipeableStateFor$swipeableState$1$1;
 
     check-cast v2, Lkotlin/jvm/functions/Function1;
 
-    .line 503
+    .line 511
     invoke-direct {v1, p0, p2, v2}, Landroidx/compose/material/SwipeableState;-><init>(Ljava/lang/Object;Landroidx/compose/animation/core/AnimationSpec;Lkotlin/jvm/functions/Function1;)V
 
-    .line 895
+    .line 913
     invoke-interface {p3, v1}, Landroidx/compose/runtime/Composer;->updateRememberedValue(Ljava/lang/Object;)V
 
-    .line 891
+    .line 909
     :cond_2
     invoke-interface {p3}, Landroidx/compose/runtime/Composer;->endReplaceableGroup()V
 
-    .line 502
+    .line 510
     check-cast v1, Landroidx/compose/material/SwipeableState;
 
-    .line 509
+    .line 517
     invoke-interface {p3, p5}, Landroidx/compose/runtime/Composer;->startReplaceableGroup(I)V
 
     invoke-static {p3, v0}, Landroidx/compose/runtime/ComposerKt;->sourceInformation(Landroidx/compose/runtime/Composer;Ljava/lang/String;)V
 
-    .line 899
+    .line 917
     invoke-interface {p3}, Landroidx/compose/runtime/Composer;->rememberedValue()Ljava/lang/Object;
 
     move-result-object p2
 
-    .line 900
+    .line 918
     sget-object p5, Landroidx/compose/runtime/Composer;->Companion:Landroidx/compose/runtime/Composer$Companion;
 
     invoke-virtual {p5}, Landroidx/compose/runtime/Composer$Companion;->getEmpty()Ljava/lang/Object;
@@ -822,7 +952,7 @@
 
     const/4 p2, 0x0
 
-    .line 509
+    .line 517
     invoke-static {p2}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
     move-result-object p2
@@ -833,17 +963,17 @@
 
     move-result-object p2
 
-    .line 902
+    .line 920
     invoke-interface {p3, p2}, Landroidx/compose/runtime/Composer;->updateRememberedValue(Ljava/lang/Object;)V
 
-    .line 898
+    .line 916
     :cond_3
     invoke-interface {p3}, Landroidx/compose/runtime/Composer;->endReplaceableGroup()V
 
-    .line 509
+    .line 517
     check-cast p2, Landroidx/compose/runtime/MutableState;
 
-    .line 510
+    .line 518
     invoke-interface {p2}, Landroidx/compose/runtime/MutableState;->getValue()Ljava/lang/Object;
 
     move-result-object p5
@@ -864,7 +994,7 @@
 
     invoke-static {p0, p5, v2, p3, p4}, Landroidx/compose/runtime/EffectsKt;->LaunchedEffect(Ljava/lang/Object;Ljava/lang/Object;Lkotlin/jvm/functions/Function2;Landroidx/compose/runtime/Composer;I)V
 
-    .line 515
+    .line 523
     invoke-virtual {v1}, Landroidx/compose/material/SwipeableState;->getCurrentValue()Ljava/lang/Object;
 
     move-result-object p4
@@ -892,7 +1022,7 @@
 .end method
 
 .method public static final swipeable-pPrIpRY(Landroidx/compose/ui/Modifier;Landroidx/compose/material/SwipeableState;Ljava/util/Map;Landroidx/compose/foundation/gestures/Orientation;ZZLandroidx/compose/foundation/interaction/MutableInteractionSource;Lkotlin/jvm/functions/Function2;Landroidx/compose/material/ResistanceConfig;F)Landroidx/compose/ui/Modifier;
-    .locals 17
+    .locals 12
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<T:",
@@ -917,107 +1047,81 @@
         }
     .end annotation
 
-    move-object/from16 v0, p0
+    .annotation runtime Lkotlin/Deprecated;
+        message = "Material\'s Swipeable has been replaced by Foundation\'s AnchoredDraggable APIs. Please see developer.android.com for an overview of the changes and a migration guide."
+    .end annotation
 
-    const-string v1, "$this$swipeable"
-
-    invoke-static {v0, v1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string/jumbo v1, "state"
-
-    move-object/from16 v12, p1
-
-    invoke-static {v12, v1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string v1, "anchors"
-
-    move-object/from16 v13, p2
-
-    invoke-static {v13, v1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string v1, "orientation"
-
-    move-object/from16 v14, p3
-
-    invoke-static {v14, v1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string/jumbo v1, "thresholds"
-
-    move-object/from16 v15, p7
-
-    invoke-static {v15, v1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 905
+    .line 923
     invoke-static {}, Landroidx/compose/ui/platform/InspectableValueKt;->isDebugInspectorInfoEnabled()Z
 
-    move-result v1
+    move-result v0
 
-    if-eqz v1, :cond_0
+    if-eqz v0, :cond_0
 
-    new-instance v1, Landroidx/compose/material/SwipeableKt$swipeable-pPrIpRY$$inlined$debugInspectorInfo$1;
+    new-instance v0, Landroidx/compose/material/SwipeableKt$swipeable-pPrIpRY$$inlined$debugInspectorInfo$1;
 
-    move-object v2, v1
+    move-object v1, v0
 
-    move-object/from16 v3, p1
+    move-object v2, p1
 
-    move-object/from16 v4, p2
+    move-object v3, p2
 
-    move-object/from16 v5, p3
+    move-object v4, p3
 
-    move/from16 v6, p4
+    move/from16 v5, p4
 
-    move/from16 v7, p5
+    move/from16 v6, p5
 
-    move-object/from16 v8, p6
+    move-object/from16 v7, p6
 
-    move-object/from16 v9, p7
+    move-object/from16 v8, p7
 
-    move-object/from16 v10, p8
+    move-object/from16 v9, p8
 
-    move/from16 v11, p9
+    move/from16 v10, p9
 
-    invoke-direct/range {v2 .. v11}, Landroidx/compose/material/SwipeableKt$swipeable-pPrIpRY$$inlined$debugInspectorInfo$1;-><init>(Landroidx/compose/material/SwipeableState;Ljava/util/Map;Landroidx/compose/foundation/gestures/Orientation;ZZLandroidx/compose/foundation/interaction/MutableInteractionSource;Lkotlin/jvm/functions/Function2;Landroidx/compose/material/ResistanceConfig;F)V
+    invoke-direct/range {v1 .. v10}, Landroidx/compose/material/SwipeableKt$swipeable-pPrIpRY$$inlined$debugInspectorInfo$1;-><init>(Landroidx/compose/material/SwipeableState;Ljava/util/Map;Landroidx/compose/foundation/gestures/Orientation;ZZLandroidx/compose/foundation/interaction/MutableInteractionSource;Lkotlin/jvm/functions/Function2;Landroidx/compose/material/ResistanceConfig;F)V
 
-    check-cast v1, Lkotlin/jvm/functions/Function1;
+    check-cast v0, Lkotlin/jvm/functions/Function1;
 
     goto :goto_0
 
     :cond_0
     invoke-static {}, Landroidx/compose/ui/platform/InspectableValueKt;->getNoInspectorInfo()Lkotlin/jvm/functions/Function1;
 
-    move-result-object v1
+    move-result-object v0
 
-    .line 573
+    .line 582
     :goto_0
-    new-instance v16, Landroidx/compose/material/SwipeableKt$swipeable$3;
+    new-instance v11, Landroidx/compose/material/SwipeableKt$swipeable$3;
 
-    move-object/from16 v2, v16
+    move-object v1, v11
 
-    move-object/from16 v3, p2
+    move-object v2, p2
 
-    move-object/from16 v4, p1
+    move-object v3, p1
 
-    move-object/from16 v5, p3
+    move-object v4, p3
 
-    move/from16 v6, p4
+    move/from16 v5, p4
 
-    move-object/from16 v7, p6
+    move-object/from16 v6, p6
 
-    move/from16 v8, p5
+    move/from16 v7, p5
 
-    move-object/from16 v9, p8
+    move-object/from16 v8, p8
 
-    move-object/from16 v10, p7
+    move-object/from16 v9, p7
 
-    move/from16 v11, p9
+    move/from16 v10, p9
 
-    invoke-direct/range {v2 .. v11}, Landroidx/compose/material/SwipeableKt$swipeable$3;-><init>(Ljava/util/Map;Landroidx/compose/material/SwipeableState;Landroidx/compose/foundation/gestures/Orientation;ZLandroidx/compose/foundation/interaction/MutableInteractionSource;ZLandroidx/compose/material/ResistanceConfig;Lkotlin/jvm/functions/Function2;F)V
+    invoke-direct/range {v1 .. v10}, Landroidx/compose/material/SwipeableKt$swipeable$3;-><init>(Ljava/util/Map;Landroidx/compose/material/SwipeableState;Landroidx/compose/foundation/gestures/Orientation;ZLandroidx/compose/foundation/interaction/MutableInteractionSource;ZLandroidx/compose/material/ResistanceConfig;Lkotlin/jvm/functions/Function2;F)V
 
-    move-object/from16 v2, v16
+    check-cast v11, Lkotlin/jvm/functions/Function3;
 
-    check-cast v2, Lkotlin/jvm/functions/Function3;
+    move-object v1, p0
 
-    invoke-static {v0, v1, v2}, Landroidx/compose/ui/ComposedModifierKt;->composed(Landroidx/compose/ui/Modifier;Lkotlin/jvm/functions/Function1;Lkotlin/jvm/functions/Function3;)Landroidx/compose/ui/Modifier;
+    invoke-static {p0, v0, v11}, Landroidx/compose/ui/ComposedModifierKt;->composed(Landroidx/compose/ui/Modifier;Lkotlin/jvm/functions/Function1;Lkotlin/jvm/functions/Function3;)Landroidx/compose/ui/Modifier;
 
     move-result-object v0
 
@@ -1075,7 +1179,7 @@
 
     if-eqz v1, :cond_3
 
-    .line 570
+    .line 579
     sget-object v1, Landroidx/compose/material/SwipeableKt$swipeable$1;->INSTANCE:Landroidx/compose/material/SwipeableKt$swipeable$1;
 
     check-cast v1, Lkotlin/jvm/functions/Function2;
@@ -1092,7 +1196,7 @@
 
     if-eqz v1, :cond_4
 
-    .line 571
+    .line 580
     sget-object v10, Landroidx/compose/material/SwipeableDefaults;->INSTANCE:Landroidx/compose/material/SwipeableDefaults;
 
     invoke-interface/range {p2 .. p2}, Ljava/util/Map;->keySet()Ljava/util/Set;
@@ -1123,7 +1227,7 @@
 
     if-eqz v0, :cond_5
 
-    .line 572
+    .line 581
     sget-object v0, Landroidx/compose/material/SwipeableDefaults;->INSTANCE:Landroidx/compose/material/SwipeableDefaults;
 
     invoke-virtual {v0}, Landroidx/compose/material/SwipeableDefaults;->getVelocityThreshold-D9Ej5fM()F
@@ -1146,7 +1250,7 @@
 
     move-object/from16 v5, p3
 
-    .line 563
+    .line 572
     invoke-static/range {v2 .. v11}, Landroidx/compose/material/SwipeableKt;->swipeable-pPrIpRY(Landroidx/compose/ui/Modifier;Landroidx/compose/material/SwipeableState;Ljava/util/Map;Landroidx/compose/foundation/gestures/Orientation;ZZLandroidx/compose/foundation/interaction/MutableInteractionSource;Lkotlin/jvm/functions/Function2;Landroidx/compose/material/ResistanceConfig;F)Landroidx/compose/ui/Modifier;
 
     move-result-object v0

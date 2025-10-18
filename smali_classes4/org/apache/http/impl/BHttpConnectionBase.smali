@@ -152,7 +152,7 @@
         }
     .end annotation
 
-    .line 338
+    .line 326
     iget-object v0, p0, Lorg/apache/http/impl/BHttpConnectionBase;->socketHolder:Ljava/util/concurrent/atomic/AtomicReference;
 
     invoke-virtual {v0}, Ljava/util/concurrent/atomic/AtomicReference;->get()Ljava/lang/Object;
@@ -161,16 +161,16 @@
 
     check-cast v0, Ljava/net/Socket;
 
-    .line 339
+    .line 327
     invoke-virtual {v0}, Ljava/net/Socket;->getSoTimeout()I
 
     move-result v1
 
-    .line 341
+    .line 329
     :try_start_0
     invoke-virtual {v0, p1}, Ljava/net/Socket;->setSoTimeout(I)V
 
-    .line 342
+    .line 330
     iget-object p0, p0, Lorg/apache/http/impl/BHttpConnectionBase;->inBuffer:Lorg/apache/http/impl/io/SessionInputBufferImpl;
 
     invoke-virtual {p0}, Lorg/apache/http/impl/io/SessionInputBufferImpl;->fillBuffer()I
@@ -179,7 +179,7 @@
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 344
+    .line 332
     invoke-virtual {v0, v1}, Ljava/net/Socket;->setSoTimeout(I)V
 
     return p0
@@ -202,7 +202,7 @@
         }
     .end annotation
 
-    .line 349
+    .line 337
     iget-object v0, p0, Lorg/apache/http/impl/BHttpConnectionBase;->inBuffer:Lorg/apache/http/impl/io/SessionInputBufferImpl;
 
     invoke-virtual {v0}, Lorg/apache/http/impl/io/SessionInputBufferImpl;->hasBufferedData()Z
@@ -215,11 +215,11 @@
 
     return p0
 
-    .line 352
+    .line 340
     :cond_0
     invoke-direct {p0, p1}, Lorg/apache/http/impl/BHttpConnectionBase;->fillInputBuffer(I)I
 
-    .line 353
+    .line 341
     iget-object p0, p0, Lorg/apache/http/impl/BHttpConnectionBase;->inBuffer:Lorg/apache/http/impl/io/SessionInputBufferImpl;
 
     invoke-virtual {p0}, Lorg/apache/http/impl/io/SessionInputBufferImpl;->hasBufferedData()Z
@@ -296,25 +296,7 @@
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 321
-    :try_start_1
-    invoke-virtual {v0}, Ljava/net/Socket;->shutdownOutput()V
-    :try_end_1
-    .catch Ljava/io/IOException; {:try_start_1 .. :try_end_1} :catch_0
-    .catch Ljava/lang/UnsupportedOperationException; {:try_start_1 .. :try_end_1} :catch_1
-    .catchall {:try_start_1 .. :try_end_1} :catchall_0
-
-    .line 325
-    :catch_0
-    :try_start_2
-    invoke-virtual {v0}, Ljava/net/Socket;->shutdownInput()V
-    :try_end_2
-    .catch Ljava/io/IOException; {:try_start_2 .. :try_end_2} :catch_1
-    .catch Ljava/lang/UnsupportedOperationException; {:try_start_2 .. :try_end_2} :catch_1
-    .catchall {:try_start_2 .. :try_end_2} :catchall_0
-
-    .line 332
-    :catch_1
+    .line 320
     invoke-virtual {v0}, Ljava/net/Socket;->close()V
 
     goto :goto_0
@@ -568,7 +550,7 @@
 .method public getMetrics()Lorg/apache/http/HttpConnectionMetrics;
     .locals 0
 
-    .line 381
+    .line 369
     iget-object p0, p0, Lorg/apache/http/impl/BHttpConnectionBase;->connMetrics:Lorg/apache/http/impl/HttpConnectionMetricsImpl;
 
     return-object p0
@@ -729,7 +711,7 @@
 .method protected incrementRequestCount()V
     .locals 0
 
-    .line 372
+    .line 360
     iget-object p0, p0, Lorg/apache/http/impl/BHttpConnectionBase;->connMetrics:Lorg/apache/http/impl/HttpConnectionMetricsImpl;
 
     invoke-virtual {p0}, Lorg/apache/http/impl/HttpConnectionMetricsImpl;->incrementRequestCount()V
@@ -740,7 +722,7 @@
 .method protected incrementResponseCount()V
     .locals 0
 
-    .line 376
+    .line 364
     iget-object p0, p0, Lorg/apache/http/impl/BHttpConnectionBase;->connMetrics:Lorg/apache/http/impl/HttpConnectionMetricsImpl;
 
     invoke-virtual {p0}, Lorg/apache/http/impl/HttpConnectionMetricsImpl;->incrementResponseCount()V
@@ -774,7 +756,7 @@
 .method public isStale()Z
     .locals 2
 
-    .line 358
+    .line 346
     invoke-virtual {p0}, Lorg/apache/http/impl/BHttpConnectionBase;->isOpen()Z
 
     move-result v0
@@ -788,7 +770,7 @@
     :cond_0
     const/4 v0, 0x0
 
-    .line 362
+    .line 350
     :try_start_0
     invoke-direct {p0, v1}, Lorg/apache/http/impl/BHttpConnectionBase;->fillInputBuffer(I)I
 
@@ -1021,7 +1003,7 @@
 .method public toString()Ljava/lang/String;
     .locals 2
 
-    .line 386
+    .line 374
     iget-object p0, p0, Lorg/apache/http/impl/BHttpConnectionBase;->socketHolder:Ljava/util/concurrent/atomic/AtomicReference;
 
     invoke-virtual {p0}, Ljava/util/concurrent/atomic/AtomicReference;->get()Ljava/lang/Object;
@@ -1032,17 +1014,17 @@
 
     if-eqz p0, :cond_1
 
-    .line 388
+    .line 376
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
 
-    .line 389
+    .line 377
     invoke-virtual {p0}, Ljava/net/Socket;->getRemoteSocketAddress()Ljava/net/SocketAddress;
 
     move-result-object v1
 
-    .line 390
+    .line 378
     invoke-virtual {p0}, Ljava/net/Socket;->getLocalSocketAddress()Ljava/net/SocketAddress;
 
     move-result-object p0
@@ -1051,18 +1033,18 @@
 
     if-eqz p0, :cond_0
 
-    .line 392
+    .line 380
     invoke-static {v0, p0}, Lorg/apache/http/util/NetUtils;->formatAddress(Ljava/lang/StringBuilder;Ljava/net/SocketAddress;)V
 
-    .line 393
+    .line 381
     const-string p0, "<->"
 
     invoke-virtual {v0, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 394
+    .line 382
     invoke-static {v0, v1}, Lorg/apache/http/util/NetUtils;->formatAddress(Ljava/lang/StringBuilder;Ljava/net/SocketAddress;)V
 
-    .line 396
+    .line 384
     :cond_0
     invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
@@ -1070,7 +1052,7 @@
 
     return-object p0
 
-    .line 398
+    .line 386
     :cond_1
     const-string p0, "[Not bound]"
 

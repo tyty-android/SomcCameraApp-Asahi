@@ -21,7 +21,7 @@
 .method constructor <init>()V
     .locals 0
 
-    .line 1570
+    .line 1627
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -46,13 +46,13 @@
         }
     .end annotation
 
-    .line 1574
+    .line 1631
     check-cast p1, Ljp/co/sony/mc/camera/setting/CameraSettings;
 
-    .line 1575
-    check-cast p3, Ljp/co/sony/mc/camera/configuration/parameters/PhotoLight;
+    .line 1632
+    check-cast p3, Ljp/co/sony/mc/camera/configuration/parameters/WbExtensionData;
 
-    invoke-static {p1, p3}, Ljp/co/sony/mc/camera/setting/CameraSettings;->-$$Nest$msetPhotoLight(Ljp/co/sony/mc/camera/setting/CameraSettings;Ljp/co/sony/mc/camera/configuration/parameters/PhotoLight;)Z
+    invoke-static {p1, p3}, Ljp/co/sony/mc/camera/setting/CameraSettings;->-$$Nest$msetWbExtensionData(Ljp/co/sony/mc/camera/setting/CameraSettings;Ljp/co/sony/mc/camera/configuration/parameters/WbExtensionData;)Z
 
     move-result p0
 

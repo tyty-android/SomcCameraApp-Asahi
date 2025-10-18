@@ -70,14 +70,14 @@
     :goto_0
     if-ltz p3, :cond_1
 
-    .line 274
+    .line 309
     invoke-virtual {p0}, Ljava/lang/String;->length()I
 
     move-result v0
 
     if-ge p3, v0, :cond_1
 
-    .line 275
+    .line 310
     invoke-virtual {p0, p3}, Ljava/lang/String;->charAt(I)C
 
     move-result v0
@@ -90,7 +90,7 @@
 
     if-ne v0, v1, :cond_1
 
-    .line 278
+    .line 313
     invoke-virtual {p0, p3}, Ljava/lang/String;->charAt(I)C
 
     move-result v0
@@ -104,7 +104,7 @@
 
     if-ltz p3, :cond_0
 
-    .line 280
+    .line 315
     invoke-virtual {p0}, Ljava/lang/String;->length()I
 
     move-result v0
@@ -131,21 +131,8 @@
 .method static getAbbrMonthDayFormat(Ljava/util/Locale;)Landroid/icu/text/DateFormat;
     .locals 1
 
-    .line 200
+    .line 235
     const-string v0, "MMMd"
-
-    invoke-static {v0, p0}, Lcom/google/android/material/datepicker/UtcDates;->getAndroidFormat(Ljava/lang/String;Ljava/util/Locale;)Landroid/icu/text/DateFormat;
-
-    move-result-object p0
-
-    return-object p0
-.end method
-
-.method static getAbbrMonthWeekdayDayFormat(Ljava/util/Locale;)Landroid/icu/text/DateFormat;
-    .locals 1
-
-    .line 205
-    const-string v0, "MMMEd"
 
     invoke-static {v0, p0}, Lcom/google/android/material/datepicker/UtcDates;->getAndroidFormat(Ljava/lang/String;Ljava/util/Locale;)Landroid/icu/text/DateFormat;
 
@@ -173,6 +160,64 @@
     sget-object p1, Landroid/icu/text/DisplayContext;->CAPITALIZATION_FOR_STANDALONE:Landroid/icu/text/DisplayContext;
 
     invoke-virtual {p0, p1}, Landroid/icu/text/DateFormat;->setContext(Landroid/icu/text/DisplayContext;)V
+
+    return-object p0
+.end method
+
+.method static getDatePatternAsInputFormat(Ljava/lang/String;)Ljava/lang/String;
+    .locals 3
+
+    .line 205
+    const-string v0, "[^dMy/\\-.]"
+
+    const-string v1, ""
+
+    invoke-virtual {p0, v0, v1}, Ljava/lang/String;->replaceAll(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object p0
+
+    const-string v0, "d{1,2}"
+
+    const-string v2, "dd"
+
+    .line 206
+    invoke-virtual {p0, v0, v2}, Ljava/lang/String;->replaceAll(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object p0
+
+    const-string v0, "M{1,2}"
+
+    const-string v2, "MM"
+
+    .line 207
+    invoke-virtual {p0, v0, v2}, Ljava/lang/String;->replaceAll(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object p0
+
+    const-string v0, "y{1,4}"
+
+    const-string v2, "yyyy"
+
+    .line 208
+    invoke-virtual {p0, v0, v2}, Ljava/lang/String;->replaceAll(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object p0
+
+    const-string v0, "\\.$"
+
+    .line 209
+    invoke-virtual {p0, v0, v1}, Ljava/lang/String;->replaceAll(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object p0
+
+    const-string v0, "My"
+
+    const-string v1, "M/y"
+
+    .line 210
+    invoke-virtual {p0, v0, v1}, Ljava/lang/String;->replaceAll(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object p0
 
     return-object p0
 .end method
@@ -222,7 +267,7 @@
 
     const/4 v0, 0x3
 
-    .line 154
+    .line 160
     invoke-static {}, Ljava/util/Locale;->getDefault()Ljava/util/Locale;
 
     move-result-object v1
@@ -233,21 +278,17 @@
 
     check-cast v0, Ljava/text/SimpleDateFormat;
 
-    .line 155
+    .line 161
     invoke-virtual {v0}, Ljava/text/SimpleDateFormat;->toPattern()Ljava/lang/String;
 
     move-result-object v0
 
-    const-string v1, "\\s+"
-
-    const-string v2, ""
-
-    .line 156
-    invoke-virtual {v0, v1, v2}, Ljava/lang/String;->replaceAll(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    .line 162
+    invoke-static {v0}, Lcom/google/android/material/datepicker/UtcDates;->getDatePatternAsInputFormat(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 
-    .line 157
+    .line 163
     new-instance v1, Ljava/text/SimpleDateFormat;
 
     invoke-static {}, Ljava/util/Locale;->getDefault()Ljava/util/Locale;
@@ -256,7 +297,7 @@
 
     invoke-direct {v1, v0, v2}, Ljava/text/SimpleDateFormat;-><init>(Ljava/lang/String;Ljava/util/Locale;)V
 
-    .line 158
+    .line 164
     invoke-static {}, Lcom/google/android/material/datepicker/UtcDates;->getTimeZone()Ljava/util/TimeZone;
 
     move-result-object v0
@@ -265,82 +306,98 @@
 
     const/4 v0, 0x0
 
-    .line 159
+    .line 165
     invoke-virtual {v1, v0}, Ljava/text/SimpleDateFormat;->setLenient(Z)V
 
     return-object v1
 .end method
 
 .method static getDefaultTextInputHint(Landroid/content/res/Resources;Ljava/text/SimpleDateFormat;)Ljava/lang/String;
-    .locals 5
+    .locals 6
 
-    .line 164
+    .line 170
     invoke-virtual {p1}, Ljava/text/SimpleDateFormat;->toPattern()Ljava/lang/String;
 
     move-result-object p1
 
-    .line 165
+    .line 171
     sget v0, Lcom/google/android/material/R$string;->mtrl_picker_text_input_year_abbr:I
 
     invoke-virtual {p0, v0}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
     move-result-object v0
 
-    .line 166
+    .line 172
     sget v1, Lcom/google/android/material/R$string;->mtrl_picker_text_input_month_abbr:I
 
     invoke-virtual {p0, v1}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
     move-result-object v1
 
-    .line 167
+    .line 173
     sget v2, Lcom/google/android/material/R$string;->mtrl_picker_text_input_day_abbr:I
 
     invoke-virtual {p0, v2}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
     move-result-object p0
 
-    .line 171
-    const-string v2, "[^y]"
-
-    const-string v3, ""
-
-    invoke-virtual {p1, v2, v3}, Ljava/lang/String;->replaceAll(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    .line 176
+    invoke-static {}, Ljava/util/Locale;->getDefault()Ljava/util/Locale;
 
     move-result-object v2
 
-    invoke-virtual {v2}, Ljava/lang/String;->length()I
+    invoke-virtual {v2}, Ljava/util/Locale;->getLanguage()Ljava/lang/String;
+
+    move-result-object v2
+
+    sget-object v3, Ljava/util/Locale;->KOREAN:Ljava/util/Locale;
+
+    invoke-virtual {v3}, Ljava/util/Locale;->getLanguage()Ljava/lang/String;
+
+    move-result-object v3
+
+    invoke-virtual {v2, v3}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v2
 
-    const/4 v3, 0x1
+    const-string v3, "y"
 
-    const-string v4, "y"
+    const-string v4, "M"
 
-    if-ne v2, v3, :cond_0
+    const-string v5, "d"
 
-    .line 172
-    const-string v2, "yyyy"
+    if-eqz v2, :cond_0
 
-    invoke-virtual {p1, v4, v2}, Ljava/lang/String;->replace(Ljava/lang/CharSequence;Ljava/lang/CharSequence;)Ljava/lang/String;
+    .line 177
+    const-string v2, "d+"
+
+    invoke-virtual {p1, v2, v5}, Ljava/lang/String;->replaceAll(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object p1
 
-    .line 175
+    const-string v2, "M+"
+
+    invoke-virtual {p1, v2, v4}, Ljava/lang/String;->replaceAll(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object p1
+
+    const-string v2, "y+"
+
+    invoke-virtual {p1, v2, v3}, Ljava/lang/String;->replaceAll(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object p1
+
+    .line 180
     :cond_0
-    const-string v2, "d"
-
-    invoke-virtual {p1, v2, p0}, Ljava/lang/String;->replace(Ljava/lang/CharSequence;Ljava/lang/CharSequence;)Ljava/lang/String;
+    invoke-virtual {p1, v5, p0}, Ljava/lang/String;->replace(Ljava/lang/CharSequence;Ljava/lang/CharSequence;)Ljava/lang/String;
 
     move-result-object p0
 
-    const-string p1, "M"
-
-    invoke-virtual {p0, p1, v1}, Ljava/lang/String;->replace(Ljava/lang/CharSequence;Ljava/lang/CharSequence;)Ljava/lang/String;
+    invoke-virtual {p0, v4, v1}, Ljava/lang/String;->replace(Ljava/lang/CharSequence;Ljava/lang/CharSequence;)Ljava/lang/String;
 
     move-result-object p0
 
-    invoke-virtual {p0, v4, v0}, Ljava/lang/String;->replace(Ljava/lang/CharSequence;Ljava/lang/CharSequence;)Ljava/lang/String;
+    invoke-virtual {p0, v3, v0}, Ljava/lang/String;->replace(Ljava/lang/CharSequence;Ljava/lang/CharSequence;)Ljava/lang/String;
 
     move-result-object p0
 
@@ -368,7 +425,7 @@
 .method static getFullFormat()Ljava/text/DateFormat;
     .locals 1
 
-    .line 232
+    .line 267
     invoke-static {}, Ljava/util/Locale;->getDefault()Ljava/util/Locale;
 
     move-result-object v0
@@ -385,7 +442,7 @@
 
     const/4 v0, 0x0
 
-    .line 236
+    .line 271
     invoke-static {v0, p0}, Lcom/google/android/material/datepicker/UtcDates;->getFormat(ILjava/util/Locale;)Ljava/text/DateFormat;
 
     move-result-object p0
@@ -396,7 +453,7 @@
 .method static getMediumFormat()Ljava/text/DateFormat;
     .locals 1
 
-    .line 214
+    .line 249
     invoke-static {}, Ljava/util/Locale;->getDefault()Ljava/util/Locale;
 
     move-result-object v0
@@ -413,7 +470,7 @@
 
     const/4 v0, 0x2
 
-    .line 218
+    .line 253
     invoke-static {v0, p0}, Lcom/google/android/material/datepicker/UtcDates;->getFormat(ILjava/util/Locale;)Ljava/text/DateFormat;
 
     move-result-object p0
@@ -424,7 +481,7 @@
 .method static getMediumNoYear()Ljava/text/DateFormat;
     .locals 1
 
-    .line 222
+    .line 257
     invoke-static {}, Ljava/util/Locale;->getDefault()Ljava/util/Locale;
 
     move-result-object v0
@@ -439,14 +496,14 @@
 .method static getMediumNoYear(Ljava/util/Locale;)Ljava/text/DateFormat;
     .locals 1
 
-    .line 226
+    .line 261
     invoke-static {p0}, Lcom/google/android/material/datepicker/UtcDates;->getMediumFormat(Ljava/util/Locale;)Ljava/text/DateFormat;
 
     move-result-object p0
 
     check-cast p0, Ljava/text/SimpleDateFormat;
 
-    .line 227
+    .line 262
     invoke-virtual {p0}, Ljava/text/SimpleDateFormat;->toPattern()Ljava/lang/String;
 
     move-result-object v0
@@ -460,10 +517,43 @@
     return-object p0
 .end method
 
+.method static getMonthWeekdayDayFormat(Ljava/util/Locale;)Landroid/icu/text/DateFormat;
+    .locals 1
+
+    .line 240
+    const-string v0, "MMMMEEEEd"
+
+    invoke-static {v0, p0}, Lcom/google/android/material/datepicker/UtcDates;->getAndroidFormat(Ljava/lang/String;Ljava/util/Locale;)Landroid/icu/text/DateFormat;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method static getNormalizedFormat(Ljava/text/DateFormat;)Ljava/text/DateFormat;
+    .locals 1
+
+    .line 153
+    invoke-virtual {p0}, Ljava/text/DateFormat;->clone()Ljava/lang/Object;
+
+    move-result-object p0
+
+    check-cast p0, Ljava/text/DateFormat;
+
+    .line 154
+    invoke-static {}, Lcom/google/android/material/datepicker/UtcDates;->getTimeZone()Ljava/util/TimeZone;
+
+    move-result-object v0
+
+    invoke-virtual {p0, v0}, Ljava/text/DateFormat;->setTimeZone(Ljava/util/TimeZone;)V
+
+    return-object p0
+.end method
+
 .method static getSimpleFormat(Ljava/lang/String;)Ljava/text/SimpleDateFormat;
     .locals 1
 
-    .line 179
+    .line 214
     invoke-static {}, Ljava/util/Locale;->getDefault()Ljava/util/Locale;
 
     move-result-object v0
@@ -478,12 +568,12 @@
 .method private static getSimpleFormat(Ljava/lang/String;Ljava/util/Locale;)Ljava/text/SimpleDateFormat;
     .locals 1
 
-    .line 183
+    .line 218
     new-instance v0, Ljava/text/SimpleDateFormat;
 
     invoke-direct {v0, p0, p1}, Ljava/text/SimpleDateFormat;-><init>(Ljava/lang/String;Ljava/util/Locale;)V
 
-    .line 184
+    .line 219
     invoke-static {}, Lcom/google/android/material/datepicker/UtcDates;->getTimeZone()Ljava/util/TimeZone;
 
     move-result-object p0
@@ -633,21 +723,8 @@
 .method static getYearAbbrMonthDayFormat(Ljava/util/Locale;)Landroid/icu/text/DateFormat;
     .locals 1
 
-    .line 195
+    .line 230
     const-string v0, "yMMMd"
-
-    invoke-static {v0, p0}, Lcom/google/android/material/datepicker/UtcDates;->getAndroidFormat(Ljava/lang/String;Ljava/util/Locale;)Landroid/icu/text/DateFormat;
-
-    move-result-object p0
-
-    return-object p0
-.end method
-
-.method static getYearAbbrMonthWeekdayDayFormat(Ljava/util/Locale;)Landroid/icu/text/DateFormat;
-    .locals 1
-
-    .line 210
-    const-string v0, "yMMMEd"
 
     invoke-static {v0, p0}, Lcom/google/android/material/datepicker/UtcDates;->getAndroidFormat(Ljava/lang/String;Ljava/util/Locale;)Landroid/icu/text/DateFormat;
 
@@ -659,8 +736,21 @@
 .method static getYearMonthFormat(Ljava/util/Locale;)Landroid/icu/text/DateFormat;
     .locals 1
 
-    .line 190
+    .line 225
     const-string v0, "yMMMM"
+
+    invoke-static {v0, p0}, Lcom/google/android/material/datepicker/UtcDates;->getAndroidFormat(Ljava/lang/String;Ljava/util/Locale;)Landroid/icu/text/DateFormat;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method static getYearMonthWeekdayDayFormat(Ljava/util/Locale;)Landroid/icu/text/DateFormat;
+    .locals 1
+
+    .line 245
+    const-string v0, "yMMMMEEEEd"
 
     invoke-static {v0, p0}, Lcom/google/android/material/datepicker/UtcDates;->getAndroidFormat(Ljava/lang/String;Ljava/util/Locale;)Landroid/icu/text/DateFormat;
 
@@ -674,7 +764,7 @@
 
     const/4 v0, 0x0
 
-    .line 243
+    .line 278
     const-string v1, "yY"
 
     const/4 v2, 0x1
@@ -683,7 +773,7 @@
 
     move-result v0
 
-    .line 245
+    .line 280
     invoke-virtual {p0}, Ljava/lang/String;->length()I
 
     move-result v1
@@ -692,7 +782,7 @@
 
     return-object p0
 
-    .line 252
+    .line 287
     :cond_0
     const-string v1, "EMd"
 
@@ -700,32 +790,32 @@
 
     move-result v3
 
-    .line 254
+    .line 289
     invoke-virtual {p0}, Ljava/lang/String;->length()I
 
     move-result v4
 
     if-ge v3, v4, :cond_1
 
-    .line 255
+    .line 290
     const-string v1, "EMd,"
 
     :cond_1
     const/4 v4, -0x1
 
-    .line 259
+    .line 294
     invoke-static {p0, v1, v4, v0}, Lcom/google/android/material/datepicker/UtcDates;->findCharactersInDateFormatPattern(Ljava/lang/String;Ljava/lang/String;II)I
 
     move-result v0
 
     add-int/2addr v0, v2
 
-    .line 262
+    .line 297
     invoke-virtual {p0, v0, v3}, Ljava/lang/String;->substring(II)Ljava/lang/String;
 
     move-result-object v0
 
-    .line 263
+    .line 298
     const-string v1, " "
 
     invoke-virtual {p0, v0, v1}, Ljava/lang/String;->replace(Ljava/lang/CharSequence;Ljava/lang/CharSequence;)Ljava/lang/String;

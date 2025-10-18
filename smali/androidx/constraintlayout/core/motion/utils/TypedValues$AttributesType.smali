@@ -100,54 +100,138 @@
 
 # direct methods
 .method static constructor <clinit>()V
-    .locals 21
+    .locals 3
+
+    const/16 v0, 0x15
 
     .line 115
-    const-string/jumbo v19, "target"
+    new-array v0, v0, [Ljava/lang/String;
 
-    const-string v20, "pivotTarget"
+    const/4 v1, 0x0
 
-    const-string v0, "curveFit"
+    const-string v2, "curveFit"
 
-    const-string/jumbo v1, "visibility"
+    aput-object v2, v0, v1
+
+    const/4 v1, 0x1
+
+    const-string/jumbo v2, "visibility"
+
+    aput-object v2, v0, v1
+
+    const/4 v1, 0x2
 
     const-string v2, "alpha"
 
-    const-string/jumbo v3, "translationX"
+    aput-object v2, v0, v1
 
-    const-string/jumbo v4, "translationY"
+    const/4 v1, 0x3
 
-    const-string/jumbo v5, "translationZ"
+    const-string/jumbo v2, "translationX"
 
-    const-string v6, "elevation"
+    aput-object v2, v0, v1
 
-    const-string v7, "rotationX"
+    const/4 v1, 0x4
 
-    const-string v8, "rotationY"
+    const-string/jumbo v2, "translationY"
 
-    const-string v9, "rotationZ"
+    aput-object v2, v0, v1
 
-    const-string v10, "scaleX"
+    const/4 v1, 0x5
 
-    const-string v11, "scaleY"
+    const-string/jumbo v2, "translationZ"
 
-    const-string v12, "pivotX"
+    aput-object v2, v0, v1
 
-    const-string v13, "pivotY"
+    const/4 v1, 0x6
 
-    const-string v14, "progress"
+    const-string v2, "elevation"
 
-    const-string v15, "pathRotate"
+    aput-object v2, v0, v1
 
-    const-string v16, "easing"
+    const/4 v1, 0x7
 
-    const-string v17, "CUSTOM"
+    const-string v2, "rotationX"
 
-    const-string v18, "frame"
+    aput-object v2, v0, v1
 
-    filled-new-array/range {v0 .. v20}, [Ljava/lang/String;
+    const/16 v1, 0x8
 
-    move-result-object v0
+    const-string v2, "rotationY"
+
+    aput-object v2, v0, v1
+
+    const/16 v1, 0x9
+
+    const-string v2, "rotationZ"
+
+    aput-object v2, v0, v1
+
+    const/16 v1, 0xa
+
+    const-string v2, "scaleX"
+
+    aput-object v2, v0, v1
+
+    const/16 v1, 0xb
+
+    const-string v2, "scaleY"
+
+    aput-object v2, v0, v1
+
+    const/16 v1, 0xc
+
+    const-string v2, "pivotX"
+
+    aput-object v2, v0, v1
+
+    const/16 v1, 0xd
+
+    const-string v2, "pivotY"
+
+    aput-object v2, v0, v1
+
+    const/16 v1, 0xe
+
+    const-string v2, "progress"
+
+    aput-object v2, v0, v1
+
+    const/16 v1, 0xf
+
+    const-string v2, "pathRotate"
+
+    aput-object v2, v0, v1
+
+    const/16 v1, 0x10
+
+    const-string v2, "easing"
+
+    aput-object v2, v0, v1
+
+    const/16 v1, 0x11
+
+    const-string v2, "CUSTOM"
+
+    aput-object v2, v0, v1
+
+    const/16 v1, 0x12
+
+    const-string v2, "frame"
+
+    aput-object v2, v0, v1
+
+    const/16 v1, 0x13
+
+    const-string/jumbo v2, "target"
+
+    aput-object v2, v0, v1
+
+    const/16 v1, 0x14
+
+    const-string v2, "pivotTarget"
+
+    aput-object v2, v0, v1
 
     sput-object v0, Landroidx/constraintlayout/core/motion/utils/TypedValues$AttributesType;->KEY_WORDS:[Ljava/lang/String;
 

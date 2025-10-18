@@ -259,7 +259,7 @@
         }
     .end annotation
 
-    .line 447
+    .line 445
     iget-object v0, p0, Lorg/apache/http/pool/AbstractConnPool;->maxPerRoute:Ljava/util/Map;
 
     invoke-interface {v0, p1}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
@@ -270,7 +270,7 @@
 
     if-eqz p1, :cond_0
 
-    .line 448
+    .line 446
     invoke-virtual {p1}, Ljava/lang/Integer;->intValue()I
 
     move-result p0
@@ -463,7 +463,7 @@
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_1
 
-    .line 414
+    .line 412
     iget-object p0, p0, Lorg/apache/http/pool/AbstractConnPool;->lock:Ljava/util/concurrent/locks/Lock;
 
     invoke-interface {p0}, Ljava/util/concurrent/locks/Lock;->unlock()V
@@ -563,25 +563,16 @@
     .line 372
     iget-object p2, p0, Lorg/apache/http/pool/AbstractConnPool;->available:Ljava/util/LinkedList;
 
-    invoke-virtual {p2}, Ljava/util/LinkedList;->isEmpty()Z
-
-    move-result p2
-
-    if-nez p2, :cond_8
-
-    .line 373
-    iget-object p2, p0, Lorg/apache/http/pool/AbstractConnPool;->available:Ljava/util/LinkedList;
-
     invoke-virtual {p2}, Ljava/util/LinkedList;->removeLast()Ljava/lang/Object;
 
     move-result-object p2
 
     check-cast p2, Lorg/apache/http/pool/PoolEntry;
 
-    .line 374
+    .line 373
     invoke-virtual {p2}, Lorg/apache/http/pool/PoolEntry;->close()V
 
-    .line 375
+    .line 374
     invoke-virtual {p2}, Lorg/apache/http/pool/PoolEntry;->getRoute()Ljava/lang/Object;
 
     move-result-object p4
@@ -590,10 +581,10 @@
 
     move-result-object p4
 
-    .line 376
+    .line 375
     invoke-virtual {p4, p2}, Lorg/apache/http/pool/RouteSpecificPool;->remove(Lorg/apache/http/pool/PoolEntry;)Z
 
-    .line 379
+    .line 377
     :cond_8
     iget-object p2, p0, Lorg/apache/http/pool/AbstractConnPool;->connFactory:Lorg/apache/http/pool/ConnFactory;
 
@@ -601,38 +592,38 @@
 
     move-result-object p1
 
-    .line 380
+    .line 378
     invoke-virtual {p3, p1}, Lorg/apache/http/pool/RouteSpecificPool;->add(Ljava/lang/Object;)Lorg/apache/http/pool/PoolEntry;
 
     move-result-object p1
 
-    .line 381
+    .line 379
     iget-object p2, p0, Lorg/apache/http/pool/AbstractConnPool;->leased:Ljava/util/Set;
 
     invoke-interface {p2, p1}, Ljava/util/Set;->add(Ljava/lang/Object;)Z
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_1
 
-    .line 414
+    .line 412
     iget-object p0, p0, Lorg/apache/http/pool/AbstractConnPool;->lock:Ljava/util/concurrent/locks/Lock;
 
     invoke-interface {p0}, Ljava/util/concurrent/locks/Lock;->unlock()V
 
     return-object p1
 
-    .line 388
+    .line 386
     :cond_9
     :try_start_2
     invoke-virtual {p3, p6}, Lorg/apache/http/pool/RouteSpecificPool;->queue(Ljava/util/concurrent/Future;)V
 
-    .line 389
+    .line 387
     iget-object p5, p0, Lorg/apache/http/pool/AbstractConnPool;->pending:Ljava/util/LinkedList;
 
     invoke-virtual {p5, p6}, Ljava/util/LinkedList;->add(Ljava/lang/Object;)Z
 
     if-eqz v0, :cond_a
 
-    .line 391
+    .line 389
     iget-object p4, p0, Lorg/apache/http/pool/AbstractConnPool;->condition:Ljava/util/concurrent/locks/Condition;
 
     invoke-interface {p4, v0}, Ljava/util/concurrent/locks/Condition;->awaitUntil(Ljava/util/Date;)Z
@@ -641,13 +632,13 @@
 
     goto :goto_6
 
-    .line 393
+    .line 391
     :cond_a
     iget-object p5, p0, Lorg/apache/http/pool/AbstractConnPool;->condition:Ljava/util/concurrent/locks/Condition;
 
     invoke-interface {p5}, Ljava/util/concurrent/locks/Condition;->await()V
 
-    .line 396
+    .line 394
     :goto_6
     invoke-interface {p6}, Ljava/util/concurrent/Future;->isCancelled()Z
 
@@ -657,11 +648,11 @@
 
     if-nez p5, :cond_c
 
-    .line 404
+    .line 402
     :try_start_3
     invoke-virtual {p3, p6}, Lorg/apache/http/pool/RouteSpecificPool;->unqueue(Ljava/util/concurrent/Future;)V
 
-    .line 405
+    .line 403
     iget-object p3, p0, Lorg/apache/http/pool/AbstractConnPool;->pending:Ljava/util/LinkedList;
 
     invoke-virtual {p3, p6}, Ljava/util/LinkedList;->remove(Ljava/lang/Object;)Z
@@ -670,7 +661,7 @@
 
     if-eqz v0, :cond_1
 
-    .line 408
+    .line 406
     invoke-virtual {v0}, Ljava/util/Date;->getTime()J
 
     move-result-wide p3
@@ -685,7 +676,7 @@
 
     goto/16 :goto_1
 
-    .line 412
+    .line 410
     :cond_b
     new-instance p1, Ljava/util/concurrent/TimeoutException;
 
@@ -697,7 +688,7 @@
     :try_end_3
     .catchall {:try_start_3 .. :try_end_3} :catchall_1
 
-    .line 397
+    .line 395
     :cond_c
     :try_start_4
     new-instance p1, Ljava/util/concurrent/ExecutionException;
@@ -715,11 +706,11 @@
     :catchall_0
     move-exception p1
 
-    .line 404
+    .line 402
     :try_start_5
     invoke-virtual {p3, p6}, Lorg/apache/http/pool/RouteSpecificPool;->unqueue(Ljava/util/concurrent/Future;)V
 
-    .line 405
+    .line 403
     iget-object p2, p0, Lorg/apache/http/pool/AbstractConnPool;->pending:Ljava/util/LinkedList;
 
     invoke-virtual {p2, p6}, Ljava/util/LinkedList;->remove(Ljava/lang/Object;)Z
@@ -743,7 +734,7 @@
     :catchall_1
     move-exception p1
 
-    .line 414
+    .line 412
     iget-object p0, p0, Lorg/apache/http/pool/AbstractConnPool;->lock:Ljava/util/concurrent/locks/Lock;
 
     invoke-interface {p0}, Ljava/util/concurrent/locks/Lock;->unlock()V
@@ -767,7 +758,7 @@
 .method private purgePoolMap()V
     .locals 2
 
-    .line 607
+    .line 605
     iget-object p0, p0, Lorg/apache/http/pool/AbstractConnPool;->routeToPool:Ljava/util/Map;
 
     invoke-interface {p0}, Ljava/util/Map;->entrySet()Ljava/util/Set;
@@ -778,7 +769,7 @@
 
     move-result-object p0
 
-    .line 608
+    .line 606
     :cond_0
     :goto_0
     invoke-interface {p0}, Ljava/util/Iterator;->hasNext()Z
@@ -787,21 +778,21 @@
 
     if-eqz v0, :cond_1
 
-    .line 609
+    .line 607
     invoke-interface {p0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
     move-result-object v0
 
     check-cast v0, Ljava/util/Map$Entry;
 
-    .line 610
+    .line 608
     invoke-interface {v0}, Ljava/util/Map$Entry;->getValue()Ljava/lang/Object;
 
     move-result-object v0
 
     check-cast v0, Lorg/apache/http/pool/RouteSpecificPool;
 
-    .line 611
+    .line 609
     invoke-virtual {v0}, Lorg/apache/http/pool/RouteSpecificPool;->getPendingCount()I
 
     move-result v1
@@ -814,7 +805,7 @@
 
     if-nez v1, :cond_0
 
-    .line 612
+    .line 610
     invoke-interface {p0}, Ljava/util/Iterator;->remove()V
 
     goto :goto_0
@@ -828,12 +819,12 @@
 .method public closeExpired()V
     .locals 3
 
-    .line 647
+    .line 645
     invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
 
     move-result-wide v0
 
-    .line 648
+    .line 646
     new-instance v2, Lorg/apache/http/pool/AbstractConnPool$4;
 
     invoke-direct {v2, p0, v0, v1}, Lorg/apache/http/pool/AbstractConnPool$4;-><init>(Lorg/apache/http/pool/AbstractConnPool;J)V
@@ -846,12 +837,12 @@
 .method public closeIdle(JLjava/util/concurrent/TimeUnit;)V
     .locals 2
 
-    .line 625
+    .line 623
     const-string v0, "Time unit"
 
     invoke-static {p3, v0}, Lorg/apache/http/util/Args;->notNull(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
 
-    .line 626
+    .line 624
     invoke-virtual {p3, p1, p2}, Ljava/util/concurrent/TimeUnit;->toMillis(J)J
 
     move-result-wide p1
@@ -864,7 +855,7 @@
 
     move-wide p1, v0
 
-    .line 630
+    .line 628
     :cond_0
     invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
 
@@ -872,7 +863,7 @@
 
     sub-long/2addr v0, p1
 
-    .line 631
+    .line 629
     new-instance p1, Lorg/apache/http/pool/AbstractConnPool$3;
 
     invoke-direct {p1, p0, v0, v1}, Lorg/apache/http/pool/AbstractConnPool$3;-><init>(Lorg/apache/http/pool/AbstractConnPool;J)V
@@ -900,12 +891,12 @@
         }
     .end annotation
 
-    .line 570
+    .line 568
     iget-object v0, p0, Lorg/apache/http/pool/AbstractConnPool;->lock:Ljava/util/concurrent/locks/Lock;
 
     invoke-interface {v0}, Ljava/util/concurrent/locks/Lock;->lock()V
 
-    .line 572
+    .line 570
     :try_start_0
     iget-object v0, p0, Lorg/apache/http/pool/AbstractConnPool;->available:Ljava/util/LinkedList;
 
@@ -913,7 +904,7 @@
 
     move-result-object v0
 
-    .line 573
+    .line 571
     :cond_0
     :goto_0
     invoke-interface {v0}, Ljava/util/Iterator;->hasNext()Z
@@ -922,24 +913,24 @@
 
     if-eqz v1, :cond_1
 
-    .line 574
+    .line 572
     invoke-interface {v0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
     move-result-object v1
 
     check-cast v1, Lorg/apache/http/pool/PoolEntry;
 
-    .line 575
+    .line 573
     invoke-interface {p1, v1}, Lorg/apache/http/pool/PoolEntryCallback;->process(Lorg/apache/http/pool/PoolEntry;)V
 
-    .line 576
+    .line 574
     invoke-virtual {v1}, Lorg/apache/http/pool/PoolEntry;->isClosed()Z
 
     move-result v2
 
     if-eqz v2, :cond_0
 
-    .line 577
+    .line 575
     invoke-virtual {v1}, Lorg/apache/http/pool/PoolEntry;->getRoute()Ljava/lang/Object;
 
     move-result-object v2
@@ -948,21 +939,21 @@
 
     move-result-object v2
 
-    .line 578
+    .line 576
     invoke-virtual {v2, v1}, Lorg/apache/http/pool/RouteSpecificPool;->remove(Lorg/apache/http/pool/PoolEntry;)Z
 
-    .line 579
+    .line 577
     invoke-interface {v0}, Ljava/util/Iterator;->remove()V
 
     goto :goto_0
 
-    .line 582
+    .line 580
     :cond_1
     invoke-direct {p0}, Lorg/apache/http/pool/AbstractConnPool;->purgePoolMap()V
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 584
+    .line 582
     iget-object p0, p0, Lorg/apache/http/pool/AbstractConnPool;->lock:Ljava/util/concurrent/locks/Lock;
 
     invoke-interface {p0}, Ljava/util/concurrent/locks/Lock;->unlock()V
@@ -989,12 +980,12 @@
         }
     .end annotation
 
-    .line 594
+    .line 592
     iget-object v0, p0, Lorg/apache/http/pool/AbstractConnPool;->lock:Ljava/util/concurrent/locks/Lock;
 
     invoke-interface {v0}, Ljava/util/concurrent/locks/Lock;->lock()V
 
-    .line 596
+    .line 594
     :try_start_0
     iget-object v0, p0, Lorg/apache/http/pool/AbstractConnPool;->leased:Ljava/util/Set;
 
@@ -1002,7 +993,7 @@
 
     move-result-object v0
 
-    .line 597
+    .line 595
     :goto_0
     invoke-interface {v0}, Ljava/util/Iterator;->hasNext()Z
 
@@ -1010,21 +1001,21 @@
 
     if-eqz v1, :cond_0
 
-    .line 598
+    .line 596
     invoke-interface {v0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
     move-result-object v1
 
     check-cast v1, Lorg/apache/http/pool/PoolEntry;
 
-    .line 599
+    .line 597
     invoke-interface {p1, v1}, Lorg/apache/http/pool/PoolEntryCallback;->process(Lorg/apache/http/pool/PoolEntry;)V
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
     goto :goto_0
 
-    .line 602
+    .line 600
     :cond_0
     iget-object p0, p0, Lorg/apache/http/pool/AbstractConnPool;->lock:Ljava/util/concurrent/locks/Lock;
 
@@ -1045,18 +1036,18 @@
 .method public getDefaultMaxPerRoute()I
     .locals 1
 
-    .line 485
+    .line 483
     iget-object v0, p0, Lorg/apache/http/pool/AbstractConnPool;->lock:Ljava/util/concurrent/locks/Lock;
 
     invoke-interface {v0}, Ljava/util/concurrent/locks/Lock;->lock()V
 
-    .line 487
+    .line 485
     :try_start_0
     iget v0, p0, Lorg/apache/http/pool/AbstractConnPool;->defaultMaxPerRoute:I
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 489
+    .line 487
     iget-object p0, p0, Lorg/apache/http/pool/AbstractConnPool;->lock:Ljava/util/concurrent/locks/Lock;
 
     invoke-interface {p0}, Ljava/util/concurrent/locks/Lock;->unlock()V
@@ -1081,17 +1072,17 @@
         }
     .end annotation
 
-    .line 510
+    .line 508
     const-string v0, "Route"
 
     invoke-static {p1, v0}, Lorg/apache/http/util/Args;->notNull(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
 
-    .line 511
+    .line 509
     iget-object v0, p0, Lorg/apache/http/pool/AbstractConnPool;->lock:Ljava/util/concurrent/locks/Lock;
 
     invoke-interface {v0}, Ljava/util/concurrent/locks/Lock;->lock()V
 
-    .line 513
+    .line 511
     :try_start_0
     invoke-direct {p0, p1}, Lorg/apache/http/pool/AbstractConnPool;->getMax(Ljava/lang/Object;)I
 
@@ -1099,7 +1090,7 @@
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 515
+    .line 513
     iget-object p0, p0, Lorg/apache/http/pool/AbstractConnPool;->lock:Ljava/util/concurrent/locks/Lock;
 
     invoke-interface {p0}, Ljava/util/concurrent/locks/Lock;->unlock()V
@@ -1119,18 +1110,18 @@
 .method public getMaxTotal()I
     .locals 1
 
-    .line 464
+    .line 462
     iget-object v0, p0, Lorg/apache/http/pool/AbstractConnPool;->lock:Ljava/util/concurrent/locks/Lock;
 
     invoke-interface {v0}, Ljava/util/concurrent/locks/Lock;->lock()V
 
-    .line 466
+    .line 464
     :try_start_0
     iget v0, p0, Lorg/apache/http/pool/AbstractConnPool;->maxTotal:I
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 468
+    .line 466
     iget-object p0, p0, Lorg/apache/http/pool/AbstractConnPool;->lock:Ljava/util/concurrent/locks/Lock;
 
     invoke-interface {p0}, Ljava/util/concurrent/locks/Lock;->unlock()V
@@ -1157,12 +1148,12 @@
         }
     .end annotation
 
-    .line 556
+    .line 554
     iget-object v0, p0, Lorg/apache/http/pool/AbstractConnPool;->lock:Ljava/util/concurrent/locks/Lock;
 
     invoke-interface {v0}, Ljava/util/concurrent/locks/Lock;->lock()V
 
-    .line 558
+    .line 556
     :try_start_0
     new-instance v0, Ljava/util/HashSet;
 
@@ -1176,7 +1167,7 @@
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 560
+    .line 558
     iget-object p0, p0, Lorg/apache/http/pool/AbstractConnPool;->lock:Ljava/util/concurrent/locks/Lock;
 
     invoke-interface {p0}, Ljava/util/concurrent/locks/Lock;->unlock()V
@@ -1202,23 +1193,23 @@
         }
     .end annotation
 
-    .line 535
+    .line 533
     const-string v0, "Route"
 
     invoke-static {p1, v0}, Lorg/apache/http/util/Args;->notNull(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
 
-    .line 536
+    .line 534
     iget-object v0, p0, Lorg/apache/http/pool/AbstractConnPool;->lock:Ljava/util/concurrent/locks/Lock;
 
     invoke-interface {v0}, Ljava/util/concurrent/locks/Lock;->lock()V
 
-    .line 538
+    .line 536
     :try_start_0
     invoke-direct {p0, p1}, Lorg/apache/http/pool/AbstractConnPool;->getPool(Ljava/lang/Object;)Lorg/apache/http/pool/RouteSpecificPool;
 
     move-result-object v0
 
-    .line 539
+    .line 537
     new-instance v1, Lorg/apache/http/pool/PoolStats;
 
     invoke-virtual {v0}, Lorg/apache/http/pool/RouteSpecificPool;->getLeasedCount()I
@@ -1241,7 +1232,7 @@
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 545
+    .line 543
     iget-object p0, p0, Lorg/apache/http/pool/AbstractConnPool;->lock:Ljava/util/concurrent/locks/Lock;
 
     invoke-interface {p0}, Ljava/util/concurrent/locks/Lock;->unlock()V
@@ -1261,12 +1252,12 @@
 .method public getTotalStats()Lorg/apache/http/pool/PoolStats;
     .locals 5
 
-    .line 521
+    .line 519
     iget-object v0, p0, Lorg/apache/http/pool/AbstractConnPool;->lock:Ljava/util/concurrent/locks/Lock;
 
     invoke-interface {v0}, Ljava/util/concurrent/locks/Lock;->lock()V
 
-    .line 523
+    .line 521
     :try_start_0
     new-instance v0, Lorg/apache/http/pool/PoolStats;
 
@@ -1294,7 +1285,7 @@
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 529
+    .line 527
     iget-object p0, p0, Lorg/apache/http/pool/AbstractConnPool;->lock:Ljava/util/concurrent/locks/Lock;
 
     invoke-interface {p0}, Ljava/util/concurrent/locks/Lock;->unlock()V
@@ -1314,7 +1305,7 @@
 .method public getValidateAfterInactivity()I
     .locals 0
 
-    .line 665
+    .line 663
     iget p0, p0, Lorg/apache/http/pool/AbstractConnPool;->validateAfterInactivity:I
 
     return p0
@@ -1438,12 +1429,12 @@
         }
     .end annotation
 
-    .line 420
+    .line 418
     iget-object v0, p0, Lorg/apache/http/pool/AbstractConnPool;->lock:Ljava/util/concurrent/locks/Lock;
 
     invoke-interface {v0}, Ljava/util/concurrent/locks/Lock;->lock()V
 
-    .line 422
+    .line 420
     :try_start_0
     iget-object v0, p0, Lorg/apache/http/pool/AbstractConnPool;->leased:Ljava/util/Set;
 
@@ -1453,7 +1444,7 @@
 
     if-eqz v0, :cond_2
 
-    .line 423
+    .line 421
     invoke-virtual {p1}, Lorg/apache/http/pool/PoolEntry;->getRoute()Ljava/lang/Object;
 
     move-result-object v0
@@ -1462,46 +1453,46 @@
 
     move-result-object v0
 
-    .line 424
+    .line 422
     invoke-virtual {v0, p1, p2}, Lorg/apache/http/pool/RouteSpecificPool;->free(Lorg/apache/http/pool/PoolEntry;Z)V
 
     if-eqz p2, :cond_0
 
-    .line 425
+    .line 423
     iget-boolean p2, p0, Lorg/apache/http/pool/AbstractConnPool;->isShutDown:Z
 
     if-nez p2, :cond_0
 
-    .line 426
+    .line 424
     iget-object p2, p0, Lorg/apache/http/pool/AbstractConnPool;->available:Ljava/util/LinkedList;
 
     invoke-virtual {p2, p1}, Ljava/util/LinkedList;->addFirst(Ljava/lang/Object;)V
 
     goto :goto_0
 
-    .line 428
+    .line 426
     :cond_0
     invoke-virtual {p1}, Lorg/apache/http/pool/PoolEntry;->close()V
 
-    .line 430
+    .line 428
     :goto_0
     invoke-virtual {p0, p1}, Lorg/apache/http/pool/AbstractConnPool;->onRelease(Lorg/apache/http/pool/PoolEntry;)V
 
-    .line 431
+    .line 429
     invoke-virtual {v0}, Lorg/apache/http/pool/RouteSpecificPool;->nextPending()Ljava/util/concurrent/Future;
 
     move-result-object p1
 
     if-eqz p1, :cond_1
 
-    .line 433
+    .line 431
     iget-object p2, p0, Lorg/apache/http/pool/AbstractConnPool;->pending:Ljava/util/LinkedList;
 
     invoke-virtual {p2, p1}, Ljava/util/LinkedList;->remove(Ljava/lang/Object;)Z
 
     goto :goto_1
 
-    .line 435
+    .line 433
     :cond_1
     iget-object p1, p0, Lorg/apache/http/pool/AbstractConnPool;->pending:Ljava/util/LinkedList;
 
@@ -1514,14 +1505,14 @@
     :goto_1
     if-eqz p1, :cond_2
 
-    .line 438
+    .line 436
     iget-object p1, p0, Lorg/apache/http/pool/AbstractConnPool;->condition:Ljava/util/concurrent/locks/Condition;
 
     invoke-interface {p1}, Ljava/util/concurrent/locks/Condition;->signalAll()V
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 442
+    .line 440
     :cond_2
     iget-object p0, p0, Lorg/apache/http/pool/AbstractConnPool;->lock:Ljava/util/concurrent/locks/Lock;
 
@@ -1542,23 +1533,23 @@
 .method public setDefaultMaxPerRoute(I)V
     .locals 1
 
-    .line 474
+    .line 472
     const-string v0, "Max per route value"
 
     invoke-static {p1, v0}, Lorg/apache/http/util/Args;->positive(ILjava/lang/String;)I
 
-    .line 475
+    .line 473
     iget-object v0, p0, Lorg/apache/http/pool/AbstractConnPool;->lock:Ljava/util/concurrent/locks/Lock;
 
     invoke-interface {v0}, Ljava/util/concurrent/locks/Lock;->lock()V
 
-    .line 477
+    .line 475
     :try_start_0
     iput p1, p0, Lorg/apache/http/pool/AbstractConnPool;->defaultMaxPerRoute:I
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 479
+    .line 477
     iget-object p0, p0, Lorg/apache/http/pool/AbstractConnPool;->lock:Ljava/util/concurrent/locks/Lock;
 
     invoke-interface {p0}, Ljava/util/concurrent/locks/Lock;->unlock()V
@@ -1583,12 +1574,12 @@
         }
     .end annotation
 
-    .line 495
+    .line 493
     const-string v0, "Route"
 
     invoke-static {p1, v0}, Lorg/apache/http/util/Args;->notNull(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
 
-    .line 496
+    .line 494
     iget-object v0, p0, Lorg/apache/http/pool/AbstractConnPool;->lock:Ljava/util/concurrent/locks/Lock;
 
     invoke-interface {v0}, Ljava/util/concurrent/locks/Lock;->lock()V
@@ -1597,7 +1588,7 @@
 
     if-le p2, v0, :cond_0
 
-    .line 499
+    .line 497
     :try_start_0
     iget-object v0, p0, Lorg/apache/http/pool/AbstractConnPool;->maxPerRoute:Ljava/util/Map;
 
@@ -1609,7 +1600,7 @@
 
     goto :goto_0
 
-    .line 501
+    .line 499
     :cond_0
     iget-object p2, p0, Lorg/apache/http/pool/AbstractConnPool;->maxPerRoute:Ljava/util/Map;
 
@@ -1617,7 +1608,7 @@
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 504
+    .line 502
     :goto_0
     iget-object p0, p0, Lorg/apache/http/pool/AbstractConnPool;->lock:Ljava/util/concurrent/locks/Lock;
 
@@ -1638,23 +1629,23 @@
 .method public setMaxTotal(I)V
     .locals 1
 
-    .line 453
+    .line 451
     const-string v0, "Max value"
 
     invoke-static {p1, v0}, Lorg/apache/http/util/Args;->positive(ILjava/lang/String;)I
 
-    .line 454
+    .line 452
     iget-object v0, p0, Lorg/apache/http/pool/AbstractConnPool;->lock:Ljava/util/concurrent/locks/Lock;
 
     invoke-interface {v0}, Ljava/util/concurrent/locks/Lock;->lock()V
 
-    .line 456
+    .line 454
     :try_start_0
     iput p1, p0, Lorg/apache/http/pool/AbstractConnPool;->maxTotal:I
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 458
+    .line 456
     iget-object p0, p0, Lorg/apache/http/pool/AbstractConnPool;->lock:Ljava/util/concurrent/locks/Lock;
 
     invoke-interface {p0}, Ljava/util/concurrent/locks/Lock;->unlock()V
@@ -1674,7 +1665,7 @@
 .method public setValidateAfterInactivity(I)V
     .locals 0
 
-    .line 673
+    .line 671
     iput p1, p0, Lorg/apache/http/pool/AbstractConnPool;->validateAfterInactivity:I
 
     return-void
@@ -1828,55 +1819,55 @@
 
     const-string v0, "[leased: "
 
-    .line 678
+    .line 676
     iget-object v1, p0, Lorg/apache/http/pool/AbstractConnPool;->lock:Ljava/util/concurrent/locks/Lock;
 
     invoke-interface {v1}, Ljava/util/concurrent/locks/Lock;->lock()V
 
-    .line 680
+    .line 678
     :try_start_0
     new-instance v1, Ljava/lang/StringBuilder;
 
     invoke-direct {v1, v0}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
-    .line 682
+    .line 680
     iget-object v0, p0, Lorg/apache/http/pool/AbstractConnPool;->leased:Ljava/util/Set;
 
     invoke-virtual {v1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
-    .line 683
+    .line 681
     const-string v0, "][available: "
 
     invoke-virtual {v1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 684
+    .line 682
     iget-object v0, p0, Lorg/apache/http/pool/AbstractConnPool;->available:Ljava/util/LinkedList;
 
     invoke-virtual {v1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
-    .line 685
+    .line 683
     const-string v0, "][pending: "
 
     invoke-virtual {v1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 686
+    .line 684
     iget-object v0, p0, Lorg/apache/http/pool/AbstractConnPool;->pending:Ljava/util/LinkedList;
 
     invoke-virtual {v1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
-    .line 687
+    .line 685
     const-string v0, "]"
 
     invoke-virtual {v1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 688
+    .line 686
     invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object v0
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 690
+    .line 688
     iget-object p0, p0, Lorg/apache/http/pool/AbstractConnPool;->lock:Ljava/util/concurrent/locks/Lock;
 
     invoke-interface {p0}, Ljava/util/concurrent/locks/Lock;->unlock()V

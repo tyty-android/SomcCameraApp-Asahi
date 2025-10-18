@@ -210,7 +210,7 @@
 
     move-result-object v0
 
-    .line 65535
+    .line 218
     iget v1, p0, Landroidx/compose/runtime/SnapshotStateKt__ProduceStateKt$produceState$5;->label:I
 
     const/4 v2, 0x1

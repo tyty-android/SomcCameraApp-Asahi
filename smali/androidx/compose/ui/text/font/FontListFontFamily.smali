@@ -120,10 +120,6 @@
         }
     .end annotation
 
-    const-string v0, "fonts"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
     const/4 v0, 0x0
 
     .line 172
@@ -273,11 +269,7 @@
 .end method
 
 .method public contains(Landroidx/compose/ui/text/font/Font;)Z
-    .locals 1
-
-    const-string v0, "element"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+    .locals 0
 
     iget-object p0, p0, Landroidx/compose/ui/text/font/FontListFontFamily;->$$delegate_0:Ljava/util/List;
 
@@ -311,7 +303,7 @@
 .end method
 
 .method public containsAll(Ljava/util/Collection;)Z
-    .locals 1
+    .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -321,10 +313,6 @@
             ">;)Z"
         }
     .end annotation
-
-    const-string v0, "elements"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
     iget-object p0, p0, Landroidx/compose/ui/text/font/FontListFontFamily;->$$delegate_0:Ljava/util/List;
 
@@ -442,11 +430,7 @@
 .end method
 
 .method public indexOf(Landroidx/compose/ui/text/font/Font;)I
-    .locals 1
-
-    const-string v0, "element"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+    .locals 0
 
     iget-object p0, p0, Landroidx/compose/ui/text/font/FontListFontFamily;->$$delegate_0:Ljava/util/List;
 
@@ -512,11 +496,7 @@
 .end method
 
 .method public lastIndexOf(Landroidx/compose/ui/text/font/Font;)I
-    .locals 1
-
-    const-string v0, "element"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+    .locals 0
 
     iget-object p0, p0, Landroidx/compose/ui/text/font/FontListFontFamily;->$$delegate_0:Ljava/util/List;
 
@@ -776,7 +756,7 @@
 .end method
 
 .method public toArray([Ljava/lang/Object;)[Ljava/lang/Object;
-    .locals 1
+    .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<T:",
@@ -784,10 +764,6 @@
             ">([TT;)[TT;"
         }
     .end annotation
-
-    const-string v0, "array"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
     check-cast p0, Ljava/util/Collection;
 

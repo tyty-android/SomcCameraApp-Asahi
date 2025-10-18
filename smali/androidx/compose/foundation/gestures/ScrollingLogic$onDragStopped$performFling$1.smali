@@ -59,9 +59,9 @@
         0x2
     }
     l = {
-        0x1d0,
-        0x1d2,
-        0x1d4
+        0x324,
+        0x327,
+        0x32a
     }
     m = "invokeSuspend"
     n = {
@@ -208,7 +208,7 @@
 
     move-result-object v1
 
-    .line 462
+    .line 802
     iget v2, v0, Landroidx/compose/foundation/gestures/ScrollingLogic$onDragStopped$performFling$1;->label:I
 
     const/4 v3, 0x3
@@ -275,20 +275,14 @@
 
     iget-wide v6, v0, Landroidx/compose/foundation/gestures/ScrollingLogic$onDragStopped$performFling$1;->J$0:J
 
-    .line 463
+    .line 803
     iget-object v2, v0, Landroidx/compose/foundation/gestures/ScrollingLogic$onDragStopped$performFling$1;->this$0:Landroidx/compose/foundation/gestures/ScrollingLogic;
 
-    invoke-virtual {v2}, Landroidx/compose/foundation/gestures/ScrollingLogic;->getNestedScrollDispatcher()Landroidx/compose/runtime/State;
+    invoke-static {v2}, Landroidx/compose/foundation/gestures/ScrollingLogic;->access$getNestedScrollDispatcher$p(Landroidx/compose/foundation/gestures/ScrollingLogic;)Landroidx/compose/ui/input/nestedscroll/NestedScrollDispatcher;
 
     move-result-object v2
 
-    .line 464
-    invoke-interface {v2}, Landroidx/compose/runtime/State;->getValue()Ljava/lang/Object;
-
-    move-result-object v2
-
-    check-cast v2, Landroidx/compose/ui/input/nestedscroll/NestedScrollDispatcher;
-
+    .line 804
     move-object v8, v0
 
     check-cast v8, Lkotlin/coroutines/Continuation;
@@ -315,12 +309,12 @@
 
     move-result-wide v7
 
-    .line 465
+    .line 805
     invoke-static {v5, v6, v7, v8}, Landroidx/compose/ui/unit/Velocity;->minus-AH228Gc(JJ)J
 
     move-result-wide v7
 
-    .line 466
+    .line 807
     iget-object v2, v0, Landroidx/compose/foundation/gestures/ScrollingLogic$onDragStopped$performFling$1;->this$0:Landroidx/compose/foundation/gestures/ScrollingLogic;
 
     move-object v9, v0
@@ -349,32 +343,24 @@
 
     move-result-wide v14
 
-    .line 468
+    .line 810
     iget-object v2, v0, Landroidx/compose/foundation/gestures/ScrollingLogic$onDragStopped$performFling$1;->this$0:Landroidx/compose/foundation/gestures/ScrollingLogic;
 
-    invoke-virtual {v2}, Landroidx/compose/foundation/gestures/ScrollingLogic;->getNestedScrollDispatcher()Landroidx/compose/runtime/State;
+    invoke-static {v2}, Landroidx/compose/foundation/gestures/ScrollingLogic;->access$getNestedScrollDispatcher$p(Landroidx/compose/foundation/gestures/ScrollingLogic;)Landroidx/compose/ui/input/nestedscroll/NestedScrollDispatcher;
 
-    move-result-object v2
+    move-result-object v9
 
-    invoke-interface {v2}, Landroidx/compose/runtime/State;->getValue()Ljava/lang/Object;
-
-    move-result-object v2
-
-    move-object v9, v2
-
-    check-cast v9, Landroidx/compose/ui/input/nestedscroll/NestedScrollDispatcher;
-
-    .line 469
+    .line 811
     invoke-static {v7, v8, v14, v15}, Landroidx/compose/ui/unit/Velocity;->minus-AH228Gc(JJ)J
 
     move-result-wide v10
 
-    .line 470
+    .line 812
     move-object v2, v0
 
     check-cast v2, Lkotlin/coroutines/Continuation;
 
-    .line 468
+    .line 810
     iput-wide v5, v0, Landroidx/compose/foundation/gestures/ScrollingLogic$onDragStopped$performFling$1;->J$0:J
 
     iput-wide v14, v0, Landroidx/compose/foundation/gestures/ScrollingLogic$onDragStopped$performFling$1;->J$1:J
@@ -407,12 +393,12 @@
 
     move-result-wide v5
 
-    .line 472
+    .line 814
     invoke-static {v1, v2, v5, v6}, Landroidx/compose/ui/unit/Velocity;->minus-AH228Gc(JJ)J
 
     move-result-wide v0
 
-    .line 473
+    .line 815
     invoke-static {v3, v4, v0, v1}, Landroidx/compose/ui/unit/Velocity;->minus-AH228Gc(JJ)J
 
     move-result-wide v0

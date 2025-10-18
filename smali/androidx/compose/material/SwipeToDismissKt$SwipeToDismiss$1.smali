@@ -69,11 +69,7 @@
 .method public final invoke(Landroidx/compose/material/DismissDirection;)Landroidx/compose/material/FixedThreshold;
     .locals 1
 
-    const-string p0, "it"
-
-    invoke-static {p1, p0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 178
+    .line 179
     new-instance p0, Landroidx/compose/material/FixedThreshold;
 
     invoke-static {}, Landroidx/compose/material/SwipeToDismissKt;->access$getDISMISS_THRESHOLD$p()F
@@ -90,7 +86,7 @@
 .method public bridge synthetic invoke(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
 
-    .line 177
+    .line 178
     check-cast p1, Landroidx/compose/material/DismissDirection;
 
     invoke-virtual {p0, p1}, Landroidx/compose/material/SwipeToDismissKt$SwipeToDismiss$1;->invoke(Landroidx/compose/material/DismissDirection;)Landroidx/compose/material/FixedThreshold;

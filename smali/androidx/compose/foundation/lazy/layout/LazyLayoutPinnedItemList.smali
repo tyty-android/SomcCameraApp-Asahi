@@ -103,7 +103,7 @@
 .method public constructor <init>()V
     .locals 1
 
-    .line 68
+    .line 76
     new-instance v0, Landroidx/compose/runtime/snapshots/SnapshotStateList;
 
     invoke-direct {v0}, Landroidx/compose/runtime/snapshots/SnapshotStateList;-><init>()V
@@ -126,10 +126,10 @@
         }
     .end annotation
 
-    .line 64
+    .line 72
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 66
+    .line 74
     iput-object p1, p0, Landroidx/compose/foundation/lazy/layout/LazyLayoutPinnedItemList;->items:Ljava/util/List;
 
     return-void
@@ -240,11 +240,7 @@
 .end method
 
 .method public contains(Landroidx/compose/foundation/lazy/layout/LazyLayoutPinnedItemList$PinnedItem;)Z
-    .locals 1
-
-    const-string v0, "element"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+    .locals 0
 
     iget-object p0, p0, Landroidx/compose/foundation/lazy/layout/LazyLayoutPinnedItemList;->items:Ljava/util/List;
 
@@ -258,7 +254,7 @@
 .method public final bridge contains(Ljava/lang/Object;)Z
     .locals 1
 
-    .line 64
+    .line 72
     instance-of v0, p1, Landroidx/compose/foundation/lazy/layout/LazyLayoutPinnedItemList$PinnedItem;
 
     if-nez v0, :cond_0
@@ -278,7 +274,7 @@
 .end method
 
 .method public containsAll(Ljava/util/Collection;)Z
-    .locals 1
+    .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -288,10 +284,6 @@
             ">;)Z"
         }
     .end annotation
-
-    const-string v0, "elements"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
     iget-object p0, p0, Landroidx/compose/foundation/lazy/layout/LazyLayoutPinnedItemList;->items:Ljava/util/List;
 
@@ -319,7 +311,7 @@
 .method public bridge synthetic get(I)Ljava/lang/Object;
     .locals 0
 
-    .line 64
+    .line 72
     invoke-virtual {p0, p1}, Landroidx/compose/foundation/lazy/layout/LazyLayoutPinnedItemList;->get(I)Landroidx/compose/foundation/lazy/layout/LazyLayoutPinnedItemList$PinnedItem;
 
     move-result-object p0
@@ -340,11 +332,7 @@
 .end method
 
 .method public indexOf(Landroidx/compose/foundation/lazy/layout/LazyLayoutPinnedItemList$PinnedItem;)I
-    .locals 1
-
-    const-string v0, "element"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+    .locals 0
 
     iget-object p0, p0, Landroidx/compose/foundation/lazy/layout/LazyLayoutPinnedItemList;->items:Ljava/util/List;
 
@@ -358,7 +346,7 @@
 .method public final bridge indexOf(Ljava/lang/Object;)I
     .locals 1
 
-    .line 64
+    .line 72
     instance-of v0, p1, Landroidx/compose/foundation/lazy/layout/LazyLayoutPinnedItemList$PinnedItem;
 
     if-nez v0, :cond_0
@@ -410,11 +398,7 @@
 .end method
 
 .method public lastIndexOf(Landroidx/compose/foundation/lazy/layout/LazyLayoutPinnedItemList$PinnedItem;)I
-    .locals 1
-
-    const-string v0, "element"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+    .locals 0
 
     iget-object p0, p0, Landroidx/compose/foundation/lazy/layout/LazyLayoutPinnedItemList;->items:Ljava/util/List;
 
@@ -428,7 +412,7 @@
 .method public final bridge lastIndexOf(Ljava/lang/Object;)I
     .locals 1
 
-    .line 64
+    .line 72
     instance-of v0, p1, Landroidx/compose/foundation/lazy/layout/LazyLayoutPinnedItemList$PinnedItem;
 
     if-nez v0, :cond_0
@@ -488,13 +472,9 @@
 .end method
 
 .method public final pin$foundation_release(Landroidx/compose/foundation/lazy/layout/LazyLayoutPinnedItemList$PinnedItem;)V
-    .locals 1
+    .locals 0
 
-    const-string v0, "item"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 71
+    .line 79
     iget-object p0, p0, Landroidx/compose/foundation/lazy/layout/LazyLayoutPinnedItemList;->items:Ljava/util/List;
 
     invoke-interface {p0, p1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
@@ -503,13 +483,9 @@
 .end method
 
 .method public final release$foundation_release(Landroidx/compose/foundation/lazy/layout/LazyLayoutPinnedItemList$PinnedItem;)V
-    .locals 1
+    .locals 0
 
-    const-string v0, "item"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 75
+    .line 83
     iget-object p0, p0, Landroidx/compose/foundation/lazy/layout/LazyLayoutPinnedItemList;->items:Ljava/util/List;
 
     invoke-interface {p0, p1}, Ljava/util/List;->remove(Ljava/lang/Object;)Z
@@ -642,7 +618,7 @@
 .method public final bridge size()I
     .locals 0
 
-    .line 64
+    .line 72
     invoke-virtual {p0}, Landroidx/compose/foundation/lazy/layout/LazyLayoutPinnedItemList;->getSize()I
 
     move-result p0
@@ -704,7 +680,7 @@
 .end method
 
 .method public toArray([Ljava/lang/Object;)[Ljava/lang/Object;
-    .locals 1
+    .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<T:",
@@ -712,10 +688,6 @@
             ">([TT;)[TT;"
         }
     .end annotation
-
-    const-string v0, "array"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
     check-cast p0, Ljava/util/Collection;
 

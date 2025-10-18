@@ -24,14 +24,14 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/databinding/ViewLensSliderBindingImpl;->sViewsWithIds:Landroid/util/SparseIntArray;
 
-    const v1, 0x7f09029e
+    const v1, 0x7f09029a
 
     const/4 v2, 0x4
 
     .line 17
     invoke-virtual {v0, v1, v2}, Landroid/util/SparseIntArray;->put(II)V
 
-    const v1, 0x7f090293
+    const v1, 0x7f09028e
 
     const/4 v2, 0x5
 
@@ -818,7 +818,7 @@
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    const/16 p1, 0xf
+    const/16 p1, 0x11
 
     .line 95
     invoke-virtual {p0, p1}, Ljp/co/sony/mc/camera/databinding/ViewLensSliderBindingImpl;->notifyPropertyChanged(I)V
@@ -864,7 +864,7 @@
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    const/16 p1, 0x1c
+    const/16 p1, 0x1e
 
     .line 87
     invoke-virtual {p0, p1}, Ljp/co/sony/mc/camera/databinding/ViewLensSliderBindingImpl;->notifyPropertyChanged(I)V
@@ -889,7 +889,7 @@
 .method public setVariable(ILjava/lang/Object;)Z
     .locals 1
 
-    const/16 v0, 0x1c
+    const/16 v0, 0x1e
 
     if-ne v0, p1, :cond_0
 
@@ -901,7 +901,7 @@
     goto :goto_0
 
     :cond_0
-    const/16 v0, 0xf
+    const/16 v0, 0x11
 
     if-ne v0, p1, :cond_1
 

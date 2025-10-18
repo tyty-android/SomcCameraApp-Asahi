@@ -25,7 +25,7 @@
 .method constructor <init>(Ljp/co/sony/mc/camera/view/fragment/ViewFinderFragment;)V
     .locals 0
 
-    .line 324
+    .line 331
     iput-object p1, p0, Ljp/co/sony/mc/camera/view/fragment/ViewFinderFragment$1;->this$0:Ljp/co/sony/mc/camera/view/fragment/ViewFinderFragment;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -46,7 +46,7 @@
 
     return v1
 
-    .line 329
+    .line 336
     :cond_0
     invoke-virtual {p3}, Landroid/view/KeyEvent;->getAction()I
 
@@ -58,13 +58,13 @@
 
     const/4 p2, 0x2
 
-    .line 330
+    .line 337
     new-array v0, p2, [I
 
-    .line 331
+    .line 338
     invoke-virtual {p1, v0}, Landroid/view/View;->getLocationOnScreen([I)V
 
-    .line 332
+    .line 339
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/fragment/ViewFinderFragment$1;->this$0:Ljp/co/sony/mc/camera/view/fragment/ViewFinderFragment;
 
     invoke-static {p0}, Ljp/co/sony/mc/camera/view/fragment/ViewFinderFragment;->-$$Nest$fgetmFinderAreaTouchListener(Ljp/co/sony/mc/camera/view/fragment/ViewFinderFragment;)Ljp/co/sony/mc/camera/view/widget/FinderArea$OnFinderAreaTouchListener;
@@ -73,7 +73,7 @@
 
     new-instance v2, Landroid/graphics/Point;
 
-    .line 333
+    .line 340
     invoke-virtual {p1}, Landroid/view/View;->getWidth()I
 
     move-result v3
@@ -84,7 +84,7 @@
 
     add-int/2addr v3, v1
 
-    .line 334
+    .line 341
     invoke-virtual {p1}, Landroid/view/View;->getHeight()I
 
     move-result p1
@@ -97,7 +97,7 @@
 
     invoke-direct {v2, v3, p1}, Landroid/graphics/Point;-><init>(II)V
 
-    .line 332
+    .line 339
     invoke-interface {p0, v2}, Ljp/co/sony/mc/camera/view/widget/FinderArea$OnFinderAreaTouchListener;->onCaptureAreaSingleTapUp(Landroid/graphics/Point;)V
 
     :cond_1

@@ -53,7 +53,7 @@
     f = "SnackbarHost.kt"
     i = {}
     l = {
-        0xa4
+        0xa7
     }
     m = "invokeSuspend"
     n = {}
@@ -174,7 +174,7 @@
 
     move-result-object v0
 
-    .line 65535
+    .line 161
     iget v1, p0, Landroidx/compose/material/SnackbarHostKt$SnackbarHost$1;->label:I
 
     const/4 v2, 0x1
@@ -199,17 +199,17 @@
     :cond_1
     invoke-static {p1}, Lkotlin/ResultKt;->throwOnFailure(Ljava/lang/Object;)V
 
-    .line 159
+    .line 162
     iget-object p1, p0, Landroidx/compose/material/SnackbarHostKt$SnackbarHost$1;->$currentSnackbarData:Landroidx/compose/material/SnackbarData;
 
     if-eqz p1, :cond_4
 
-    .line 160
+    .line 163
     invoke-interface {p1}, Landroidx/compose/material/SnackbarData;->getDuration()Landroidx/compose/material/SnackbarDuration;
 
     move-result-object p1
 
-    .line 161
+    .line 164
     iget-object v1, p0, Landroidx/compose/material/SnackbarHostKt$SnackbarHost$1;->$currentSnackbarData:Landroidx/compose/material/SnackbarData;
 
     invoke-interface {v1}, Landroidx/compose/material/SnackbarData;->getActionLabel()Ljava/lang/String;
@@ -225,16 +225,16 @@
     :cond_2
     const/4 v1, 0x0
 
-    .line 162
+    .line 165
     :goto_0
     iget-object v3, p0, Landroidx/compose/material/SnackbarHostKt$SnackbarHost$1;->$accessibilityManager:Landroidx/compose/ui/platform/AccessibilityManager;
 
-    .line 160
+    .line 163
     invoke-static {p1, v1, v3}, Landroidx/compose/material/SnackbarHostKt;->toMillis(Landroidx/compose/material/SnackbarDuration;ZLandroidx/compose/ui/platform/AccessibilityManager;)J
 
     move-result-wide v3
 
-    .line 164
+    .line 167
     move-object p1, p0
 
     check-cast p1, Lkotlin/coroutines/Continuation;
@@ -249,14 +249,14 @@
 
     return-object v0
 
-    .line 165
+    .line 168
     :cond_3
     :goto_1
     iget-object p0, p0, Landroidx/compose/material/SnackbarHostKt$SnackbarHost$1;->$currentSnackbarData:Landroidx/compose/material/SnackbarData;
 
     invoke-interface {p0}, Landroidx/compose/material/SnackbarData;->dismiss()V
 
-    .line 167
+    .line 170
     :cond_4
     sget-object p0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
 

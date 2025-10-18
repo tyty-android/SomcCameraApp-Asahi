@@ -16,8 +16,8 @@
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Landroidx/dynamicanimation/animation/FloatPropertyCompat<",
-        "Lcom/google/android/material/progressindicator/DeterminateDrawable;",
-        ">;"
+        "Lcom/google/android/material/progressindicator/DeterminateDrawable<",
+        "*>;>;"
     }
 .end annotation
 
@@ -26,7 +26,7 @@
 .method constructor <init>(Ljava/lang/String;)V
     .locals 0
 
-    .line 233
+    .line 300
     invoke-direct {p0, p1}, Landroidx/dynamicanimation/animation/FloatPropertyCompat;-><init>(Ljava/lang/String;)V
 
     return-void
@@ -36,8 +36,15 @@
 # virtual methods
 .method public getValue(Lcom/google/android/material/progressindicator/DeterminateDrawable;)F
     .locals 0
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Lcom/google/android/material/progressindicator/DeterminateDrawable<",
+            "*>;)F"
+        }
+    .end annotation
 
-    .line 236
+    .line 303
     invoke-static {p1}, Lcom/google/android/material/progressindicator/DeterminateDrawable;->access$000(Lcom/google/android/material/progressindicator/DeterminateDrawable;)F
 
     move-result p0
@@ -52,7 +59,7 @@
 .method public bridge synthetic getValue(Ljava/lang/Object;)F
     .locals 0
 
-    .line 233
+    .line 300
     check-cast p1, Lcom/google/android/material/progressindicator/DeterminateDrawable;
 
     invoke-virtual {p0, p1}, Lcom/google/android/material/progressindicator/DeterminateDrawable$1;->getValue(Lcom/google/android/material/progressindicator/DeterminateDrawable;)F
@@ -64,12 +71,19 @@
 
 .method public setValue(Lcom/google/android/material/progressindicator/DeterminateDrawable;F)V
     .locals 0
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Lcom/google/android/material/progressindicator/DeterminateDrawable<",
+            "*>;F)V"
+        }
+    .end annotation
 
     const p0, 0x461c4000    # 10000.0f
 
     div-float/2addr p2, p0
 
-    .line 241
+    .line 308
     invoke-static {p1, p2}, Lcom/google/android/material/progressindicator/DeterminateDrawable;->access$100(Lcom/google/android/material/progressindicator/DeterminateDrawable;F)V
 
     return-void
@@ -78,7 +92,7 @@
 .method public bridge synthetic setValue(Ljava/lang/Object;F)V
     .locals 0
 
-    .line 233
+    .line 300
     check-cast p1, Lcom/google/android/material/progressindicator/DeterminateDrawable;
 
     invoke-virtual {p0, p1, p2}, Lcom/google/android/material/progressindicator/DeterminateDrawable$1;->setValue(Lcom/google/android/material/progressindicator/DeterminateDrawable;F)V

@@ -25,7 +25,7 @@
 .method constructor <init>(Ljp/co/sony/mc/camera/view/FragmentController$25;)V
     .locals 0
 
-    .line 9194
+    .line 9479
     iput-object p1, p0, Ljp/co/sony/mc/camera/view/FragmentController$25$1;->this$1:Ljp/co/sony/mc/camera/view/FragmentController$25;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -38,14 +38,14 @@
 .method public run()V
     .locals 3
 
-    .line 9197
+    .line 9482
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/FragmentController$25$1;->this$1:Ljp/co/sony/mc/camera/view/FragmentController$25;
 
     iget-object v0, v0, Ljp/co/sony/mc/camera/view/FragmentController$25;->this$0:Ljp/co/sony/mc/camera/view/FragmentController;
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/view/FragmentController;->-$$Nest$mclearMessageDialog(Ljp/co/sony/mc/camera/view/FragmentController;)V
 
-    .line 9198
+    .line 9483
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/FragmentController$25$1;->this$1:Ljp/co/sony/mc/camera/view/FragmentController$25;
 
     iget-object v0, v0, Ljp/co/sony/mc/camera/view/FragmentController$25;->this$0:Ljp/co/sony/mc/camera/view/FragmentController;
@@ -54,7 +54,7 @@
 
     invoke-virtual {v0, v1}, Ljp/co/sony/mc/camera/view/FragmentController;->onDialogClosed(Ljp/co/sony/mc/camera/view/messagedialog/DialogId;)V
 
-    .line 9200
+    .line 9485
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/FragmentController$25$1;->this$1:Ljp/co/sony/mc/camera/view/FragmentController$25;
 
     iget-object v0, v0, Ljp/co/sony/mc/camera/view/FragmentController$25;->this$0:Ljp/co/sony/mc/camera/view/FragmentController;
@@ -67,21 +67,21 @@
 
     if-eqz v0, :cond_1
 
-    .line 9201
+    .line 9486
     sget-object v0, Ljp/co/sony/mc/camera/rtmp/FacebookLiveDataHolder;->INSTANCE:Ljp/co/sony/mc/camera/rtmp/FacebookLiveDataHolder;
 
     invoke-virtual {v0}, Ljp/co/sony/mc/camera/rtmp/FacebookLiveDataHolder;->getStreamLiveVideo()Ljp/co/sony/mc/camera/rtmp/FacebookLiveDataHolder$FacebookLiveVideo;
 
     move-result-object v0
 
-    .line 9202
+    .line 9487
     invoke-virtual {v0}, Ljp/co/sony/mc/camera/rtmp/FacebookLiveDataHolder$FacebookLiveVideo;->getPrivacyMismatch()Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
-    .line 9203
+    .line 9488
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/FragmentController$25$1;->this$1:Ljp/co/sony/mc/camera/view/FragmentController$25;
 
     iget-object v0, v0, Ljp/co/sony/mc/camera/view/FragmentController$25;->this$0:Ljp/co/sony/mc/camera/view/FragmentController;
@@ -92,7 +92,7 @@
 
     invoke-static {v0, v2, v1}, Ljp/co/sony/mc/camera/view/FragmentController;->-$$Nest$mshowMessageDialog(Ljp/co/sony/mc/camera/view/FragmentController;Ljp/co/sony/mc/camera/view/messagedialog/DialogId;[Ljava/lang/Object;)V
 
-    .line 9207
+    .line 9492
     :cond_0
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/FragmentController$25$1;->this$1:Ljp/co/sony/mc/camera/view/FragmentController$25;
 
@@ -100,7 +100,7 @@
 
     invoke-virtual {v0}, Ljp/co/sony/mc/camera/view/FragmentController;->prepareRecording()V
 
-    .line 9208
+    .line 9493
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/FragmentController$25$1;->this$1:Ljp/co/sony/mc/camera/view/FragmentController$25;
 
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/FragmentController$25;->this$0:Ljp/co/sony/mc/camera/view/FragmentController;
@@ -109,7 +109,7 @@
 
     goto :goto_0
 
-    .line 9210
+    .line 9495
     :cond_1
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/FragmentController$25$1;->this$1:Ljp/co/sony/mc/camera/view/FragmentController$25;
 

@@ -65,7 +65,7 @@
 .method static constructor <clinit>()V
     .locals 3
 
-    .line 745
+    .line 790
     new-instance v0, Landroidx/compose/foundation/text/Handle;
 
     const-string v1, "Cursor"
@@ -76,7 +76,7 @@
 
     sput-object v0, Landroidx/compose/foundation/text/Handle;->Cursor:Landroidx/compose/foundation/text/Handle;
 
-    .line 746
+    .line 791
     new-instance v0, Landroidx/compose/foundation/text/Handle;
 
     const-string v1, "SelectionStart"
@@ -87,7 +87,7 @@
 
     sput-object v0, Landroidx/compose/foundation/text/Handle;->SelectionStart:Landroidx/compose/foundation/text/Handle;
 
-    .line 747
+    .line 792
     new-instance v0, Landroidx/compose/foundation/text/Handle;
 
     const-string v1, "SelectionEnd"
@@ -115,7 +115,7 @@
         }
     .end annotation
 
-    .line 744
+    .line 789
     invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
     return-void

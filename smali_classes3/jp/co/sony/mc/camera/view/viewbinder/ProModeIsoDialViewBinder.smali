@@ -7,9 +7,13 @@
 
 
 # annotations
+.annotation system Ldalvik/annotation/SourceDebugExtension;
+    value = "SMAP\nProModeIsoDialViewBinder.kt\nKotlin\n*S Kotlin\n*F\n+ 1 ProModeIsoDialViewBinder.kt\njp/co/sony/mc/camera/view/viewbinder/ProModeIsoDialViewBinder\n+ 2 _Arrays.kt\nkotlin/collections/ArraysKt___ArraysKt\n*L\n1#1,236:1\n11102#2:237\n11437#2,3:238\n*S KotlinDebug\n*F\n+ 1 ProModeIsoDialViewBinder.kt\njp/co/sony/mc/camera/view/viewbinder/ProModeIsoDialViewBinder\n*L\n59#1:237\n59#1:238,3\n*E\n"
+.end annotation
+
 .annotation runtime Lkotlin/Metadata;
     d1 = {
-        "\u0000Z\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000b\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0003\n\u0002\u0010\u0002\n\u0002\u0008\u0005\n\u0002\u0018\u0002\n\u0002\u0008\u0003\u0008\u0007\u0018\u00002\u00020\u0001B=\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\u0006\u0010\u0004\u001a\u00020\u0005\u0012\u0006\u0010\u0006\u001a\u00020\u0007\u0012\u0006\u0010\u0008\u001a\u00020\t\u0012\u0006\u0010\n\u001a\u00020\u000b\u0012\u0006\u0010\u000c\u001a\u00020\r\u0012\u0006\u0010\u000e\u001a\u00020\u000f\u00a2\u0006\u0002\u0010\u0010J\u0010\u0010\u0019\u001a\u00020\u001a2\u0006\u0010\u001b\u001a\u00020\u0016H\u0016J\u0010\u0010\u001c\u001a\u00020\u001a2\u0006\u0010\u001b\u001a\u00020\u0016H\u0016J\u0008\u0010\u001d\u001a\u00020\u001aH\u0002J\u0018\u0010\u001e\u001a\u00020\u001a2\u0006\u0010\u001f\u001a\u00020 2\u0006\u0010!\u001a\u00020\u000fH\u0002J\u0010\u0010\"\u001a\u00020\u001a2\u0006\u0010\u000e\u001a\u00020\u000fH\u0002R\u000e\u0010\u0002\u001a\u00020\u0003X\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u000e\u0010\n\u001a\u00020\u000bX\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u000c\u001a\u00020\rX\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u0011\u001a\u00020\u0012X\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u000e\u001a\u00020\u000fX\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u0010\u0010\u0013\u001a\u0004\u0018\u00010\u0014X\u0082\u000e\u00a2\u0006\u0002\n\u0000R\u0014\u0010\u0015\u001a\u00020\u00168BX\u0082\u0004\u00a2\u0006\u0006\u001a\u0004\u0008\u0017\u0010\u0018R\u000e\u0010\u0008\u001a\u00020\tX\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u0004\u001a\u00020\u0005X\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u0006\u001a\u00020\u0007X\u0082\u0004\u00a2\u0006\u0002\n\u0000\u00a8\u0006#"
+        "\u0000Z\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000b\n\u0002\u0008\u0003\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0003\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0002\n\u0002\u0008\u0006\n\u0002\u0018\u0002\n\u0002\u0008\u0002\u0008\u0007\u0018\u00002\u00020\u0001B?\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\u0006\u0010\u0004\u001a\u00020\u0005\u0012\u0006\u0010\u0006\u001a\u00020\u0007\u0012\u0006\u0010\u0008\u001a\u00020\t\u0012\u0006\u0010\n\u001a\u00020\u000b\u0012\u0006\u0010\u000c\u001a\u00020\r\u0012\u0006\u0010\u000e\u001a\u00020\u000f\u00a2\u0006\u0004\u0008\u0010\u0010\u0011J\u0010\u0010\u001a\u001a\u00020\u001b2\u0006\u0010\u001c\u001a\u00020\u0015H\u0016J\u0010\u0010\u001d\u001a\u00020\u001b2\u0006\u0010\u001c\u001a\u00020\u0015H\u0016J\u0010\u0010\u001e\u001a\u00020\u001b2\u0006\u0010\u000e\u001a\u00020\u000fH\u0002J\u0008\u0010\u001f\u001a\u00020\u001bH\u0002J\u0018\u0010 \u001a\u00020\u001b2\u0006\u0010!\u001a\u00020\"2\u0006\u0010#\u001a\u00020\u000fH\u0002R\u000e\u0010\u0002\u001a\u00020\u0003X\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u0004\u001a\u00020\u0005X\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u0006\u001a\u00020\u0007X\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u0008\u001a\u00020\tX\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u000e\u0010\n\u001a\u00020\u000bX\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u000c\u001a\u00020\rX\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u000e\u001a\u00020\u000fX\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u0012\u001a\u00020\u0013X\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u0014\u0010\u0014\u001a\u00020\u00158BX\u0082\u0004\u00a2\u0006\u0006\u001a\u0004\u0008\u0016\u0010\u0017R\u0010\u0010\u0018\u001a\u0004\u0018\u00010\u0019X\u0082\u000e\u00a2\u0006\u0002\n\u0000\u00a8\u0006$"
     }
     d2 = {
         "Ljp/co/sony/mc/camera/view/viewbinder/ProModeIsoDialViewBinder;",
@@ -28,31 +32,32 @@
         "Ljp/co/sony/mc/camera/view/viewmodel/CameraStatusModel;",
         "isFn",
         "",
+        "<init>",
         "(Ljp/co/sony/mc/camera/databinding/FragmentProModeViewDialBinding;Ljp/co/sony/mc/camera/view/uistate/ProModeBottomPaneUiState;Ljp/co/sony/mc/camera/view/uistate/ProModeCommonUiState;Ljp/co/sony/mc/camera/view/viewmodel/OrientationViewModel;Ljp/co/sony/mc/camera/view/viewmodel/CameraSettingsModel;Ljp/co/sony/mc/camera/view/viewmodel/CameraStatusModel;Z)V",
         "context",
         "Landroid/content/Context;",
-        "lastIso",
-        "Ljp/co/sony/mc/camera/configuration/parameters/Iso;",
         "lifecycleOwner",
         "Landroidx/lifecycle/LifecycleOwner;",
         "getLifecycleOwner",
         "()Landroidx/lifecycle/LifecycleOwner;",
+        "lastIso",
+        "Ljp/co/sony/mc/camera/configuration/parameters/Iso;",
         "onCreate",
         "",
         "owner",
         "onDestroy",
+        "setupIsoSettingsMenu",
         "setArrowButtonVisibility",
         "setDialPickerEnabled",
         "dialPicker",
         "Ljp/co/sony/mc/camera/view/widget/DialPicker;",
         "enabled",
-        "setupIsoSettingsMenu",
         "SomcCamera_release"
     }
     k = 0x1
     mv = {
-        0x1,
-        0x9,
+        0x2,
+        0x0,
         0x0
     }
     xi = 0x30
@@ -84,20 +89,110 @@
 
 
 # direct methods
-.method public static synthetic $r8$lambda$SFoQr_0k7w9jhUch65kOyKwu0Xc(Ljp/co/sony/mc/camera/view/viewbinder/ProModeIsoDialViewBinder;Landroid/view/View;)V
+.method public static synthetic $r8$lambda$374wf1y2-auHfg7Cay7qhrbx9xc(Ljp/co/sony/mc/camera/view/viewbinder/ProModeIsoDialViewBinder;Lkotlin/Pair;)Lkotlin/Unit;
     .locals 0
 
-    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/view/viewbinder/ProModeIsoDialViewBinder;->setupIsoSettingsMenu$lambda$0(Ljp/co/sony/mc/camera/view/viewbinder/ProModeIsoDialViewBinder;Landroid/view/View;)V
+    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/view/viewbinder/ProModeIsoDialViewBinder;->onCreate$lambda$3(Ljp/co/sony/mc/camera/view/viewbinder/ProModeIsoDialViewBinder;Lkotlin/Pair;)Lkotlin/Unit;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method public static synthetic $r8$lambda$3R8hmRR24NadjCpfd2vbqxx9Obs(Ljp/co/sony/mc/camera/view/viewbinder/ProModeIsoDialViewBinder;Landroid/view/View;)V
+    .locals 0
+
+    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/view/viewbinder/ProModeIsoDialViewBinder;->setupIsoSettingsMenu$lambda$7(Ljp/co/sony/mc/camera/view/viewbinder/ProModeIsoDialViewBinder;Landroid/view/View;)V
 
     return-void
 .end method
 
-.method public static synthetic $r8$lambda$hLP3HrCk200JNCjjFcv3VUYpeGI(Ljp/co/sony/mc/camera/view/viewbinder/ProModeIsoDialViewBinder;Landroid/view/View;)V
+.method public static synthetic $r8$lambda$9DGXeC_cA4ZLoaQ9emax8-obmE0(Ljp/co/sony/mc/camera/view/viewbinder/ProModeIsoDialViewBinder;[Ljp/co/sony/mc/camera/configuration/parameters/Iso;)Lkotlin/Unit;
     .locals 0
 
-    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/view/viewbinder/ProModeIsoDialViewBinder;->setupIsoSettingsMenu$lambda$1(Ljp/co/sony/mc/camera/view/viewbinder/ProModeIsoDialViewBinder;Landroid/view/View;)V
+    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/view/viewbinder/ProModeIsoDialViewBinder;->onCreate$lambda$1(Ljp/co/sony/mc/camera/view/viewbinder/ProModeIsoDialViewBinder;[Ljp/co/sony/mc/camera/configuration/parameters/Iso;)Lkotlin/Unit;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method public static synthetic $r8$lambda$IwQeXab1dorkjnRl6aOiSUndV2o(ZLjp/co/sony/mc/camera/configuration/parameters/Iso;)Lkotlin/Pair;
+    .locals 0
+
+    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/view/viewbinder/ProModeIsoDialViewBinder;->onCreate$lambda$2(ZLjp/co/sony/mc/camera/configuration/parameters/Iso;)Lkotlin/Pair;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method public static synthetic $r8$lambda$PTEkKXnPoAyELaivdwO_0yX0Pa8(Ljp/co/sony/mc/camera/view/viewbinder/ProModeIsoDialViewBinder;Ljp/co/sony/mc/camera/view/uistate/ProModeBottomPaneUiState$CameraStatusBarSelectType;)Lkotlin/Unit;
+    .locals 0
+
+    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/view/viewbinder/ProModeIsoDialViewBinder;->setupIsoSettingsMenu$lambda$11(Ljp/co/sony/mc/camera/view/viewbinder/ProModeIsoDialViewBinder;Ljp/co/sony/mc/camera/view/uistate/ProModeBottomPaneUiState$CameraStatusBarSelectType;)Lkotlin/Unit;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method public static synthetic $r8$lambda$Q1Rzayi-sr__bEEppBzqD9hSDuU(Ljp/co/sony/mc/camera/view/viewbinder/ProModeIsoDialViewBinder;Landroid/view/View;)V
+    .locals 0
+
+    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/view/viewbinder/ProModeIsoDialViewBinder;->setupIsoSettingsMenu$lambda$8(Ljp/co/sony/mc/camera/view/viewbinder/ProModeIsoDialViewBinder;Landroid/view/View;)V
 
     return-void
+.end method
+
+.method public static synthetic $r8$lambda$TCmxPq8NV51LM-Y8wNcZzUerMfk(Lkotlin/Pair;[Ljp/co/sony/mc/camera/configuration/parameters/Iso;Ljp/co/sony/mc/camera/configuration/parameters/Iso;)Lkotlin/Triple;
+    .locals 0
+
+    invoke-static {p0, p1, p2}, Ljp/co/sony/mc/camera/view/viewbinder/ProModeIsoDialViewBinder;->onCreate$lambda$4(Lkotlin/Pair;[Ljp/co/sony/mc/camera/configuration/parameters/Iso;Ljp/co/sony/mc/camera/configuration/parameters/Iso;)Lkotlin/Triple;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method public static synthetic $r8$lambda$bMgtEoIlM2LIyRRX55OXNR1X9Tk(Ljp/co/sony/mc/camera/view/viewbinder/ProModeIsoDialViewBinder;Ljava/lang/Boolean;)Lkotlin/Unit;
+    .locals 0
+
+    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/view/viewbinder/ProModeIsoDialViewBinder;->onCreate$lambda$6(Ljp/co/sony/mc/camera/view/viewbinder/ProModeIsoDialViewBinder;Ljava/lang/Boolean;)Lkotlin/Unit;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method public static synthetic $r8$lambda$gsHLmgZwkxcLMgwkOg8REc1qIHM(Ljp/co/sony/mc/camera/view/viewbinder/ProModeIsoDialViewBinder;Ljp/co/sony/mc/camera/view/orientation/LayoutOrientation;)Lkotlin/Unit;
+    .locals 0
+
+    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/view/viewbinder/ProModeIsoDialViewBinder;->setupIsoSettingsMenu$lambda$9(Ljp/co/sony/mc/camera/view/viewbinder/ProModeIsoDialViewBinder;Ljp/co/sony/mc/camera/view/orientation/LayoutOrientation;)Lkotlin/Unit;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method public static synthetic $r8$lambda$oeYXEqWGYFpGgnKS2fYhzlVbr9U(Ljp/co/sony/mc/camera/view/viewbinder/ProModeIsoDialViewBinder;Lkotlin/Triple;)Lkotlin/Unit;
+    .locals 0
+
+    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/view/viewbinder/ProModeIsoDialViewBinder;->onCreate$lambda$5(Ljp/co/sony/mc/camera/view/viewbinder/ProModeIsoDialViewBinder;Lkotlin/Triple;)Lkotlin/Unit;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method public static synthetic $r8$lambda$yvemaJpYiq9BHA4j7Z8UYOUce7I(Ljp/co/sony/mc/camera/view/viewbinder/ProModeIsoDialViewBinder;Ljava/lang/Boolean;)Lkotlin/Unit;
+    .locals 0
+
+    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/view/viewbinder/ProModeIsoDialViewBinder;->setupIsoSettingsMenu$lambda$10(Ljp/co/sony/mc/camera/view/viewbinder/ProModeIsoDialViewBinder;Ljava/lang/Boolean;)Lkotlin/Unit;
+
+    move-result-object p0
+
+    return-object p0
 .end method
 
 .method static constructor <clinit>()V
@@ -208,29 +303,11 @@
     return-object p0
 .end method
 
-.method public static final synthetic access$getCameraSettingsModel$p(Ljp/co/sony/mc/camera/view/viewbinder/ProModeIsoDialViewBinder;)Ljp/co/sony/mc/camera/view/viewmodel/CameraSettingsModel;
-    .locals 0
-
-    .line 35
-    iget-object p0, p0, Ljp/co/sony/mc/camera/view/viewbinder/ProModeIsoDialViewBinder;->cameraSettingsModel:Ljp/co/sony/mc/camera/view/viewmodel/CameraSettingsModel;
-
-    return-object p0
-.end method
-
 .method public static final synthetic access$getCameraStatusModel$p(Ljp/co/sony/mc/camera/view/viewbinder/ProModeIsoDialViewBinder;)Ljp/co/sony/mc/camera/view/viewmodel/CameraStatusModel;
     .locals 0
 
     .line 35
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/viewbinder/ProModeIsoDialViewBinder;->cameraStatusModel:Ljp/co/sony/mc/camera/view/viewmodel/CameraStatusModel;
-
-    return-object p0
-.end method
-
-.method public static final synthetic access$getContext$p(Ljp/co/sony/mc/camera/view/viewbinder/ProModeIsoDialViewBinder;)Landroid/content/Context;
-    .locals 0
-
-    .line 35
-    iget-object p0, p0, Ljp/co/sony/mc/camera/view/viewbinder/ProModeIsoDialViewBinder;->context:Landroid/content/Context;
 
     return-object p0
 .end method
@@ -262,15 +339,6 @@
     return-object p0
 .end method
 
-.method public static final synthetic access$setArrowButtonVisibility(Ljp/co/sony/mc/camera/view/viewbinder/ProModeIsoDialViewBinder;)V
-    .locals 0
-
-    .line 35
-    invoke-direct {p0}, Ljp/co/sony/mc/camera/view/viewbinder/ProModeIsoDialViewBinder;->setArrowButtonVisibility()V
-
-    return-void
-.end method
-
 .method public static final synthetic access$setLastIso$p(Ljp/co/sony/mc/camera/view/viewbinder/ProModeIsoDialViewBinder;Ljp/co/sony/mc/camera/configuration/parameters/Iso;)V
     .locals 0
 
@@ -295,10 +363,281 @@
     return-object p0
 .end method
 
+.method private static final onCreate$lambda$1(Ljp/co/sony/mc/camera/view/viewbinder/ProModeIsoDialViewBinder;[Ljp/co/sony/mc/camera/configuration/parameters/Iso;)Lkotlin/Unit;
+    .locals 5
+
+    const-string/jumbo v0, "this$0"
+
+    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 59
+    invoke-static {p1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;)V
+
+    .line 237
+    new-instance v0, Ljava/util/ArrayList;
+
+    array-length v1, p1
+
+    invoke-direct {v0, v1}, Ljava/util/ArrayList;-><init>(I)V
+
+    check-cast v0, Ljava/util/Collection;
+
+    .line 238
+    array-length v1, p1
+
+    const/4 v2, 0x0
+
+    :goto_0
+    if-ge v2, v1, :cond_0
+
+    aget-object v3, p1, v2
+
+    .line 60
+    iget-object v4, p0, Ljp/co/sony/mc/camera/view/viewbinder/ProModeIsoDialViewBinder;->context:Landroid/content/Context;
+
+    invoke-virtual {v3}, Ljp/co/sony/mc/camera/configuration/parameters/Iso;->getTextId()I
+
+    move-result v3
+
+    invoke-virtual {v4, v3}, Landroid/content/Context;->getString(I)Ljava/lang/String;
+
+    move-result-object v3
+
+    .line 239
+    invoke-interface {v0, v3}, Ljava/util/Collection;->add(Ljava/lang/Object;)Z
+
+    add-int/lit8 v2, v2, 0x1
+
+    goto :goto_0
+
+    .line 240
+    :cond_0
+    check-cast v0, Ljava/util/List;
+
+    .line 62
+    iget-object p1, p0, Ljp/co/sony/mc/camera/view/viewbinder/ProModeIsoDialViewBinder;->binding:Ljp/co/sony/mc/camera/databinding/FragmentProModeViewDialBinding;
+
+    iget-object p1, p1, Ljp/co/sony/mc/camera/databinding/FragmentProModeViewDialBinding;->picker:Ljp/co/sony/mc/camera/view/widget/DialPicker;
+
+    invoke-static {}, Lkotlin/collections/CollectionsKt;->emptyList()Ljava/util/List;
+
+    move-result-object v1
+
+    invoke-virtual {p1, v0, v1}, Ljp/co/sony/mc/camera/view/widget/DialPicker;->setLabelItems(Ljava/util/List;Ljava/util/List;)V
+
+    .line 63
+    iget-object p1, p0, Ljp/co/sony/mc/camera/view/viewbinder/ProModeIsoDialViewBinder;->cameraSettingsModel:Ljp/co/sony/mc/camera/view/viewmodel/CameraSettingsModel;
+
+    invoke-virtual {p1}, Ljp/co/sony/mc/camera/view/viewmodel/CameraSettingsModel;->getIso()Landroidx/lifecycle/LiveData;
+
+    move-result-object p1
+
+    invoke-virtual {p1}, Landroidx/lifecycle/LiveData;->getValue()Ljava/lang/Object;
+
+    move-result-object p1
+
+    check-cast p1, Ljp/co/sony/mc/camera/configuration/parameters/Iso;
+
+    iput-object p1, p0, Ljp/co/sony/mc/camera/view/viewbinder/ProModeIsoDialViewBinder;->lastIso:Ljp/co/sony/mc/camera/configuration/parameters/Iso;
+
+    .line 64
+    invoke-direct {p0}, Ljp/co/sony/mc/camera/view/viewbinder/ProModeIsoDialViewBinder;->setArrowButtonVisibility()V
+
+    .line 65
+    sget-object p0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
+
+    return-object p0
+.end method
+
+.method private static final onCreate$lambda$2(ZLjp/co/sony/mc/camera/configuration/parameters/Iso;)Lkotlin/Pair;
+    .locals 1
+
+    .line 71
+    new-instance v0, Lkotlin/Pair;
+
+    invoke-static {p0}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
+
+    move-result-object p0
+
+    invoke-direct {v0, p0, p1}, Lkotlin/Pair;-><init>(Ljava/lang/Object;Ljava/lang/Object;)V
+
+    return-object v0
+.end method
+
+.method private static final onCreate$lambda$3(Ljp/co/sony/mc/camera/view/viewbinder/ProModeIsoDialViewBinder;Lkotlin/Pair;)Lkotlin/Unit;
+    .locals 1
+
+    const-string/jumbo v0, "this$0"
+
+    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 72
+    invoke-virtual {p1}, Lkotlin/Pair;->component1()Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, Ljava/lang/Boolean;
+
+    invoke-virtual {v0}, Ljava/lang/Boolean;->booleanValue()Z
+
+    move-result v0
+
+    invoke-virtual {p1}, Lkotlin/Pair;->component2()Ljava/lang/Object;
+
+    move-result-object p1
+
+    check-cast p1, Ljp/co/sony/mc/camera/configuration/parameters/Iso;
+
+    if-eqz v0, :cond_0
+
+    .line 74
+    iget-object v0, p0, Ljp/co/sony/mc/camera/view/viewbinder/ProModeIsoDialViewBinder;->proModeCommonUiState:Ljp/co/sony/mc/camera/view/uistate/ProModeCommonUiState;
+
+    iget-object p0, p0, Ljp/co/sony/mc/camera/view/viewbinder/ProModeIsoDialViewBinder;->context:Landroid/content/Context;
+
+    invoke-virtual {p1}, Ljp/co/sony/mc/camera/configuration/parameters/Iso;->getTextId()I
+
+    move-result p1
+
+    invoke-virtual {p0, p1}, Landroid/content/Context;->getString(I)Ljava/lang/String;
+
+    move-result-object p0
+
+    const-string p1, "getString(...)"
+
+    invoke-static {p0, p1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
+
+    invoke-virtual {v0, p0}, Ljp/co/sony/mc/camera/view/uistate/ProModeCommonUiState;->setFnItemLabelValueText(Ljava/lang/String;)V
+
+    .line 76
+    :cond_0
+    sget-object p0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
+
+    return-object p0
+.end method
+
+.method private static final onCreate$lambda$4(Lkotlin/Pair;[Ljp/co/sony/mc/camera/configuration/parameters/Iso;Ljp/co/sony/mc/camera/configuration/parameters/Iso;)Lkotlin/Triple;
+    .locals 1
+
+    const-string v0, "isDialPickerScrolling"
+
+    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 83
+    new-instance v0, Lkotlin/Triple;
+
+    invoke-direct {v0, p0, p1, p2}, Lkotlin/Triple;-><init>(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)V
+
+    return-object v0
+.end method
+
+.method private static final onCreate$lambda$5(Ljp/co/sony/mc/camera/view/viewbinder/ProModeIsoDialViewBinder;Lkotlin/Triple;)Lkotlin/Unit;
+    .locals 2
+
+    const-string/jumbo v0, "this$0"
+
+    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 84
+    invoke-virtual {p1}, Lkotlin/Triple;->component1()Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, Lkotlin/Pair;
+
+    invoke-virtual {p1}, Lkotlin/Triple;->component2()Ljava/lang/Object;
+
+    move-result-object v1
+
+    check-cast v1, [Ljp/co/sony/mc/camera/configuration/parameters/Iso;
+
+    invoke-virtual {p1}, Lkotlin/Triple;->component3()Ljava/lang/Object;
+
+    move-result-object p1
+
+    check-cast p1, Ljp/co/sony/mc/camera/configuration/parameters/Iso;
+
+    .line 85
+    invoke-virtual {v0}, Lkotlin/Pair;->getFirst()Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, Ljava/lang/Boolean;
+
+    invoke-virtual {v0}, Ljava/lang/Boolean;->booleanValue()Z
+
+    move-result v0
+
+    if-nez v0, :cond_0
+
+    .line 86
+    iget-object p0, p0, Ljp/co/sony/mc/camera/view/viewbinder/ProModeIsoDialViewBinder;->binding:Ljp/co/sony/mc/camera/databinding/FragmentProModeViewDialBinding;
+
+    iget-object p0, p0, Ljp/co/sony/mc/camera/databinding/FragmentProModeViewDialBinding;->picker:Ljp/co/sony/mc/camera/view/widget/DialPicker;
+
+    invoke-static {v1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;)V
+
+    invoke-static {v1, p1}, Lkotlin/collections/ArraysKt;->indexOf([Ljava/lang/Object;Ljava/lang/Object;)I
+
+    move-result p1
+
+    const/4 v0, 0x1
+
+    invoke-virtual {p0, p1, v0}, Ljp/co/sony/mc/camera/view/widget/DialPicker;->setSelectedItem(IZ)V
+
+    .line 88
+    :cond_0
+    sget-object p0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
+
+    return-object p0
+.end method
+
+.method private static final onCreate$lambda$6(Ljp/co/sony/mc/camera/view/viewbinder/ProModeIsoDialViewBinder;Ljava/lang/Boolean;)Lkotlin/Unit;
+    .locals 1
+
+    const-string/jumbo v0, "this$0"
+
+    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 91
+    invoke-virtual {p1}, Ljava/lang/Boolean;->booleanValue()Z
+
+    move-result p1
+
+    if-eqz p1, :cond_0
+
+    .line 92
+    iget-object p1, p0, Ljp/co/sony/mc/camera/view/viewbinder/ProModeIsoDialViewBinder;->binding:Ljp/co/sony/mc/camera/databinding/FragmentProModeViewDialBinding;
+
+    invoke-virtual {p1}, Ljp/co/sony/mc/camera/databinding/FragmentProModeViewDialBinding;->getRoot()Landroid/view/View;
+
+    move-result-object p1
+
+    invoke-virtual {p1}, Landroid/view/View;->getViewTreeObserver()Landroid/view/ViewTreeObserver;
+
+    move-result-object p1
+
+    .line 93
+    new-instance v0, Ljp/co/sony/mc/camera/view/viewbinder/ProModeIsoDialViewBinder$onCreate$6$1;
+
+    invoke-direct {v0, p0}, Ljp/co/sony/mc/camera/view/viewbinder/ProModeIsoDialViewBinder$onCreate$6$1;-><init>(Ljp/co/sony/mc/camera/view/viewbinder/ProModeIsoDialViewBinder;)V
+
+    check-cast v0, Landroid/view/ViewTreeObserver$OnGlobalLayoutListener;
+
+    .line 92
+    invoke-virtual {p1, v0}, Landroid/view/ViewTreeObserver;->addOnGlobalLayoutListener(Landroid/view/ViewTreeObserver$OnGlobalLayoutListener;)V
+
+    .line 109
+    :cond_0
+    sget-object p0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
+
+    return-object p0
+.end method
+
 .method private final setArrowButtonVisibility()V
     .locals 6
 
-    .line 215
+    .line 211
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/viewbinder/ProModeIsoDialViewBinder;->proModeBottomPaneUiState:Ljp/co/sony/mc/camera/view/uistate/ProModeBottomPaneUiState;
 
     invoke-virtual {v0}, Ljp/co/sony/mc/camera/view/uistate/ProModeBottomPaneUiState;->getIsoOptions()Landroidx/lifecycle/LiveData;
@@ -313,12 +652,12 @@
 
     if-eqz v0, :cond_4
 
-    .line 216
+    .line 212
     iget-object v1, p0, Ljp/co/sony/mc/camera/view/viewbinder/ProModeIsoDialViewBinder;->binding:Ljp/co/sony/mc/camera/databinding/FragmentProModeViewDialBinding;
 
     iget-object v1, v1, Ljp/co/sony/mc/camera/databinding/FragmentProModeViewDialBinding;->arrowLeftButton:Landroid/widget/ImageButton;
 
-    .line 217
+    .line 213
     iget-object v2, p0, Ljp/co/sony/mc/camera/view/viewbinder/ProModeIsoDialViewBinder;->binding:Ljp/co/sony/mc/camera/databinding/FragmentProModeViewDialBinding;
 
     iget-object v2, v2, Ljp/co/sony/mc/camera/databinding/FragmentProModeViewDialBinding;->picker:Ljp/co/sony/mc/camera/view/widget/DialPicker;
@@ -340,16 +679,16 @@
     :cond_0
     move v2, v4
 
-    .line 216
+    .line 212
     :goto_0
     invoke-virtual {v1, v2}, Landroid/widget/ImageButton;->setVisibility(I)V
 
-    .line 218
+    .line 214
     iget-object v1, p0, Ljp/co/sony/mc/camera/view/viewbinder/ProModeIsoDialViewBinder;->binding:Ljp/co/sony/mc/camera/databinding/FragmentProModeViewDialBinding;
 
     iget-object v1, v1, Ljp/co/sony/mc/camera/databinding/FragmentProModeViewDialBinding;->arrowLeftIcon:Landroid/widget/ImageView;
 
-    .line 219
+    .line 215
     iget-object v2, p0, Ljp/co/sony/mc/camera/view/viewbinder/ProModeIsoDialViewBinder;->binding:Ljp/co/sony/mc/camera/databinding/FragmentProModeViewDialBinding;
 
     iget-object v2, v2, Ljp/co/sony/mc/camera/databinding/FragmentProModeViewDialBinding;->picker:Ljp/co/sony/mc/camera/view/widget/DialPicker;
@@ -367,16 +706,16 @@
     :cond_1
     move v2, v4
 
-    .line 218
+    .line 214
     :goto_1
     invoke-virtual {v1, v2}, Landroid/widget/ImageView;->setVisibility(I)V
 
-    .line 220
+    .line 216
     iget-object v1, p0, Ljp/co/sony/mc/camera/view/viewbinder/ProModeIsoDialViewBinder;->binding:Ljp/co/sony/mc/camera/databinding/FragmentProModeViewDialBinding;
 
     iget-object v1, v1, Ljp/co/sony/mc/camera/databinding/FragmentProModeViewDialBinding;->arrowRightButton:Landroid/widget/ImageButton;
 
-    .line 221
+    .line 217
     iget-object v2, p0, Ljp/co/sony/mc/camera/view/viewbinder/ProModeIsoDialViewBinder;->binding:Ljp/co/sony/mc/camera/databinding/FragmentProModeViewDialBinding;
 
     iget-object v2, v2, Ljp/co/sony/mc/camera/databinding/FragmentProModeViewDialBinding;->picker:Ljp/co/sony/mc/camera/view/widget/DialPicker;
@@ -398,16 +737,16 @@
     :cond_2
     move v2, v4
 
-    .line 220
+    .line 216
     :goto_2
     invoke-virtual {v1, v2}, Landroid/widget/ImageButton;->setVisibility(I)V
 
-    .line 226
+    .line 222
     iget-object v1, p0, Ljp/co/sony/mc/camera/view/viewbinder/ProModeIsoDialViewBinder;->binding:Ljp/co/sony/mc/camera/databinding/FragmentProModeViewDialBinding;
 
     iget-object v1, v1, Ljp/co/sony/mc/camera/databinding/FragmentProModeViewDialBinding;->arrowRightIcon:Landroid/widget/ImageView;
 
-    .line 227
+    .line 223
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/viewbinder/ProModeIsoDialViewBinder;->binding:Ljp/co/sony/mc/camera/databinding/FragmentProModeViewDialBinding;
 
     iget-object p0, p0, Ljp/co/sony/mc/camera/databinding/FragmentProModeViewDialBinding;->picker:Ljp/co/sony/mc/camera/view/widget/DialPicker;
@@ -427,7 +766,7 @@
     :cond_3
     move v3, v4
 
-    .line 226
+    .line 222
     :goto_3
     invoke-virtual {v1, v3}, Landroid/widget/ImageView;->setVisibility(I)V
 
@@ -438,12 +777,12 @@
 .method private final setDialPickerEnabled(Ljp/co/sony/mc/camera/view/widget/DialPicker;Z)V
     .locals 0
 
-    .line 236
+    .line 232
     invoke-virtual {p1, p2}, Ljp/co/sony/mc/camera/view/widget/DialPicker;->setEnabled(Z)V
 
     xor-int/lit8 p0, p2, 0x1
 
-    .line 237
+    .line 233
     invoke-virtual {p1, p0}, Ljp/co/sony/mc/camera/view/widget/DialPicker;->setLayoutFrozen(Z)V
 
     return-void
@@ -530,21 +869,21 @@
 
     invoke-virtual {v0, v10}, Ljp/co/sony/mc/camera/view/widget/DialPicker;->setOnValueChangedListener(Ljp/co/sony/mc/camera/view/widget/DialPicker$OnValueChangedListener;)V
 
-    .line 186
-    new-instance p1, Ljp/co/sony/mc/camera/view/viewbinder/ProModeIsoDialViewBinder$$ExternalSyntheticLambda0;
+    .line 182
+    new-instance p1, Ljp/co/sony/mc/camera/view/viewbinder/ProModeIsoDialViewBinder$$ExternalSyntheticLambda7;
 
-    invoke-direct {p1, p0}, Ljp/co/sony/mc/camera/view/viewbinder/ProModeIsoDialViewBinder$$ExternalSyntheticLambda0;-><init>(Ljp/co/sony/mc/camera/view/viewbinder/ProModeIsoDialViewBinder;)V
+    invoke-direct {p1, p0}, Ljp/co/sony/mc/camera/view/viewbinder/ProModeIsoDialViewBinder$$ExternalSyntheticLambda7;-><init>(Ljp/co/sony/mc/camera/view/viewbinder/ProModeIsoDialViewBinder;)V
 
     invoke-virtual {v1, p1}, Landroid/widget/ImageButton;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
-    .line 192
-    new-instance p1, Ljp/co/sony/mc/camera/view/viewbinder/ProModeIsoDialViewBinder$$ExternalSyntheticLambda1;
+    .line 188
+    new-instance p1, Ljp/co/sony/mc/camera/view/viewbinder/ProModeIsoDialViewBinder$$ExternalSyntheticLambda8;
 
-    invoke-direct {p1, p0}, Ljp/co/sony/mc/camera/view/viewbinder/ProModeIsoDialViewBinder$$ExternalSyntheticLambda1;-><init>(Ljp/co/sony/mc/camera/view/viewbinder/ProModeIsoDialViewBinder;)V
+    invoke-direct {p1, p0}, Ljp/co/sony/mc/camera/view/viewbinder/ProModeIsoDialViewBinder$$ExternalSyntheticLambda8;-><init>(Ljp/co/sony/mc/camera/view/viewbinder/ProModeIsoDialViewBinder;)V
 
     invoke-virtual {v9, p1}, Landroid/widget/ImageButton;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
-    .line 199
+    .line 195
     iget-object p1, p0, Ljp/co/sony/mc/camera/view/viewbinder/ProModeIsoDialViewBinder;->orientationViewModel:Ljp/co/sony/mc/camera/view/viewmodel/OrientationViewModel;
 
     invoke-virtual {p1}, Ljp/co/sony/mc/camera/view/viewmodel/OrientationViewModel;->getLayoutOrientation()Landroidx/lifecycle/LiveData;
@@ -555,11 +894,9 @@
 
     move-result-object v0
 
-    new-instance v1, Ljp/co/sony/mc/camera/view/viewbinder/ProModeIsoDialViewBinder$setupIsoSettingsMenu$4;
+    new-instance v1, Ljp/co/sony/mc/camera/view/viewbinder/ProModeIsoDialViewBinder$$ExternalSyntheticLambda9;
 
-    invoke-direct {v1, p0}, Ljp/co/sony/mc/camera/view/viewbinder/ProModeIsoDialViewBinder$setupIsoSettingsMenu$4;-><init>(Ljp/co/sony/mc/camera/view/viewbinder/ProModeIsoDialViewBinder;)V
-
-    check-cast v1, Lkotlin/jvm/functions/Function1;
+    invoke-direct {v1, p0}, Ljp/co/sony/mc/camera/view/viewbinder/ProModeIsoDialViewBinder$$ExternalSyntheticLambda9;-><init>(Ljp/co/sony/mc/camera/view/viewbinder/ProModeIsoDialViewBinder;)V
 
     new-instance v2, Ljp/co/sony/mc/camera/view/viewbinder/ProModeIsoDialViewBinder$sam$androidx_lifecycle_Observer$0;
 
@@ -569,7 +906,7 @@
 
     invoke-virtual {p1, v0, v2}, Landroidx/lifecycle/LiveData;->observe(Landroidx/lifecycle/LifecycleOwner;Landroidx/lifecycle/Observer;)V
 
-    .line 203
+    .line 199
     iget-object p1, p0, Ljp/co/sony/mc/camera/view/viewbinder/ProModeIsoDialViewBinder;->proModeCommonUiState:Ljp/co/sony/mc/camera/view/uistate/ProModeCommonUiState;
 
     invoke-virtual {p1}, Ljp/co/sony/mc/camera/view/uistate/ProModeCommonUiState;->isIsoSubmenuOpened()Landroidx/lifecycle/LiveData;
@@ -580,11 +917,9 @@
 
     move-result-object v0
 
-    new-instance v1, Ljp/co/sony/mc/camera/view/viewbinder/ProModeIsoDialViewBinder$setupIsoSettingsMenu$5;
+    new-instance v1, Ljp/co/sony/mc/camera/view/viewbinder/ProModeIsoDialViewBinder$$ExternalSyntheticLambda10;
 
-    invoke-direct {v1, p0}, Ljp/co/sony/mc/camera/view/viewbinder/ProModeIsoDialViewBinder$setupIsoSettingsMenu$5;-><init>(Ljp/co/sony/mc/camera/view/viewbinder/ProModeIsoDialViewBinder;)V
-
-    check-cast v1, Lkotlin/jvm/functions/Function1;
+    invoke-direct {v1, p0}, Ljp/co/sony/mc/camera/view/viewbinder/ProModeIsoDialViewBinder$$ExternalSyntheticLambda10;-><init>(Ljp/co/sony/mc/camera/view/viewbinder/ProModeIsoDialViewBinder;)V
 
     new-instance v2, Ljp/co/sony/mc/camera/view/viewbinder/ProModeIsoDialViewBinder$sam$androidx_lifecycle_Observer$0;
 
@@ -594,7 +929,7 @@
 
     invoke-virtual {p1, v0, v2}, Landroidx/lifecycle/LiveData;->observe(Landroidx/lifecycle/LifecycleOwner;Landroidx/lifecycle/Observer;)V
 
-    .line 207
+    .line 203
     iget-object p1, p0, Ljp/co/sony/mc/camera/view/viewbinder/ProModeIsoDialViewBinder;->proModeBottomPaneUiState:Ljp/co/sony/mc/camera/view/uistate/ProModeBottomPaneUiState;
 
     invoke-virtual {p1}, Ljp/co/sony/mc/camera/view/uistate/ProModeBottomPaneUiState;->getStatusBarSelectType()Landroidx/lifecycle/LiveData;
@@ -605,11 +940,9 @@
 
     move-result-object v0
 
-    new-instance v1, Ljp/co/sony/mc/camera/view/viewbinder/ProModeIsoDialViewBinder$setupIsoSettingsMenu$6;
+    new-instance v1, Ljp/co/sony/mc/camera/view/viewbinder/ProModeIsoDialViewBinder$$ExternalSyntheticLambda1;
 
-    invoke-direct {v1, p0}, Ljp/co/sony/mc/camera/view/viewbinder/ProModeIsoDialViewBinder$setupIsoSettingsMenu$6;-><init>(Ljp/co/sony/mc/camera/view/viewbinder/ProModeIsoDialViewBinder;)V
-
-    check-cast v1, Lkotlin/jvm/functions/Function1;
+    invoke-direct {v1, p0}, Ljp/co/sony/mc/camera/view/viewbinder/ProModeIsoDialViewBinder$$ExternalSyntheticLambda1;-><init>(Ljp/co/sony/mc/camera/view/viewbinder/ProModeIsoDialViewBinder;)V
 
     new-instance p0, Ljp/co/sony/mc/camera/view/viewbinder/ProModeIsoDialViewBinder$sam$androidx_lifecycle_Observer$0;
 
@@ -622,14 +955,56 @@
     return-void
 .end method
 
-.method private static final setupIsoSettingsMenu$lambda$0(Ljp/co/sony/mc/camera/view/viewbinder/ProModeIsoDialViewBinder;Landroid/view/View;)V
+.method private static final setupIsoSettingsMenu$lambda$10(Ljp/co/sony/mc/camera/view/viewbinder/ProModeIsoDialViewBinder;Ljava/lang/Boolean;)Lkotlin/Unit;
+    .locals 0
+
+    const-string/jumbo p1, "this$0"
+
+    invoke-static {p0, p1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 200
+    invoke-direct {p0}, Ljp/co/sony/mc/camera/view/viewbinder/ProModeIsoDialViewBinder;->setArrowButtonVisibility()V
+
+    .line 201
+    sget-object p0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
+
+    return-object p0
+.end method
+
+.method private static final setupIsoSettingsMenu$lambda$11(Ljp/co/sony/mc/camera/view/viewbinder/ProModeIsoDialViewBinder;Ljp/co/sony/mc/camera/view/uistate/ProModeBottomPaneUiState$CameraStatusBarSelectType;)Lkotlin/Unit;
+    .locals 1
+
+    const-string/jumbo v0, "this$0"
+
+    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 204
+    sget-object v0, Ljp/co/sony/mc/camera/view/uistate/ProModeBottomPaneUiState$CameraStatusBarSelectType$Iso;->INSTANCE:Ljp/co/sony/mc/camera/view/uistate/ProModeBottomPaneUiState$CameraStatusBarSelectType$Iso;
+
+    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->areEqual(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    move-result p1
+
+    if-eqz p1, :cond_0
+
+    .line 205
+    invoke-direct {p0}, Ljp/co/sony/mc/camera/view/viewbinder/ProModeIsoDialViewBinder;->setArrowButtonVisibility()V
+
+    .line 207
+    :cond_0
+    sget-object p0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
+
+    return-object p0
+.end method
+
+.method private static final setupIsoSettingsMenu$lambda$7(Ljp/co/sony/mc/camera/view/viewbinder/ProModeIsoDialViewBinder;Landroid/view/View;)V
     .locals 2
 
     const-string/jumbo p1, "this$0"
 
     invoke-static {p0, p1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 187
+    .line 183
     iget-object p1, p0, Ljp/co/sony/mc/camera/view/viewbinder/ProModeIsoDialViewBinder;->binding:Ljp/co/sony/mc/camera/databinding/FragmentProModeViewDialBinding;
 
     iget-object p1, p1, Ljp/co/sony/mc/camera/databinding/FragmentProModeViewDialBinding;->picker:Ljp/co/sony/mc/camera/view/widget/DialPicker;
@@ -642,7 +1017,7 @@
 
     sub-int/2addr p1, v0
 
-    .line 188
+    .line 184
     iget-object v1, p0, Ljp/co/sony/mc/camera/view/viewbinder/ProModeIsoDialViewBinder;->cameraStatusModel:Ljp/co/sony/mc/camera/view/viewmodel/CameraStatusModel;
 
     invoke-virtual {v1}, Ljp/co/sony/mc/camera/view/viewmodel/CameraStatusModel;->getRecording()Landroidx/lifecycle/LiveData;
@@ -663,7 +1038,7 @@
 
     if-nez v0, :cond_0
 
-    .line 189
+    .line 185
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/viewbinder/ProModeIsoDialViewBinder;->binding:Ljp/co/sony/mc/camera/databinding/FragmentProModeViewDialBinding;
 
     iget-object p0, p0, Ljp/co/sony/mc/camera/databinding/FragmentProModeViewDialBinding;->picker:Ljp/co/sony/mc/camera/view/widget/DialPicker;
@@ -674,14 +1049,14 @@
     return-void
 .end method
 
-.method private static final setupIsoSettingsMenu$lambda$1(Ljp/co/sony/mc/camera/view/viewbinder/ProModeIsoDialViewBinder;Landroid/view/View;)V
+.method private static final setupIsoSettingsMenu$lambda$8(Ljp/co/sony/mc/camera/view/viewbinder/ProModeIsoDialViewBinder;Landroid/view/View;)V
     .locals 2
 
     const-string/jumbo p1, "this$0"
 
     invoke-static {p0, p1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 193
+    .line 189
     iget-object p1, p0, Ljp/co/sony/mc/camera/view/viewbinder/ProModeIsoDialViewBinder;->binding:Ljp/co/sony/mc/camera/databinding/FragmentProModeViewDialBinding;
 
     iget-object p1, p1, Ljp/co/sony/mc/camera/databinding/FragmentProModeViewDialBinding;->picker:Ljp/co/sony/mc/camera/view/widget/DialPicker;
@@ -694,7 +1069,7 @@
 
     add-int/2addr p1, v0
 
-    .line 194
+    .line 190
     iget-object v1, p0, Ljp/co/sony/mc/camera/view/viewbinder/ProModeIsoDialViewBinder;->cameraStatusModel:Ljp/co/sony/mc/camera/view/viewmodel/CameraStatusModel;
 
     invoke-virtual {v1}, Ljp/co/sony/mc/camera/view/viewmodel/CameraStatusModel;->getRecording()Landroidx/lifecycle/LiveData;
@@ -715,7 +1090,7 @@
 
     if-nez v0, :cond_0
 
-    .line 195
+    .line 191
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/viewbinder/ProModeIsoDialViewBinder;->binding:Ljp/co/sony/mc/camera/databinding/FragmentProModeViewDialBinding;
 
     iget-object p0, p0, Ljp/co/sony/mc/camera/databinding/FragmentProModeViewDialBinding;->picker:Ljp/co/sony/mc/camera/view/widget/DialPicker;
@@ -724,6 +1099,32 @@
 
     :cond_0
     return-void
+.end method
+
+.method private static final setupIsoSettingsMenu$lambda$9(Ljp/co/sony/mc/camera/view/viewbinder/ProModeIsoDialViewBinder;Ljp/co/sony/mc/camera/view/orientation/LayoutOrientation;)Lkotlin/Unit;
+    .locals 1
+
+    const-string/jumbo v0, "this$0"
+
+    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 196
+    iget-object p0, p0, Ljp/co/sony/mc/camera/view/viewbinder/ProModeIsoDialViewBinder;->binding:Ljp/co/sony/mc/camera/databinding/FragmentProModeViewDialBinding;
+
+    iget-object p0, p0, Ljp/co/sony/mc/camera/databinding/FragmentProModeViewDialBinding;->picker:Ljp/co/sony/mc/camera/view/widget/DialPicker;
+
+    invoke-static {p1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;)V
+
+    invoke-static {p1}, Ljp/co/sony/mc/camera/view/orientation/LayoutOrientationKt;->toRotation(Ljp/co/sony/mc/camera/view/orientation/LayoutOrientation;)F
+
+    move-result p1
+
+    invoke-virtual {p0, p1}, Ljp/co/sony/mc/camera/view/widget/DialPicker;->setItemRotation(F)V
+
+    .line 197
+    sget-object p0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
+
+    return-object p0
 .end method
 
 
@@ -755,11 +1156,9 @@
 
     move-result-object v0
 
-    new-instance v1, Ljp/co/sony/mc/camera/view/viewbinder/ProModeIsoDialViewBinder$onCreate$1;
+    new-instance v1, Ljp/co/sony/mc/camera/view/viewbinder/ProModeIsoDialViewBinder$$ExternalSyntheticLambda0;
 
-    invoke-direct {v1, p0}, Ljp/co/sony/mc/camera/view/viewbinder/ProModeIsoDialViewBinder$onCreate$1;-><init>(Ljp/co/sony/mc/camera/view/viewbinder/ProModeIsoDialViewBinder;)V
-
-    check-cast v1, Lkotlin/jvm/functions/Function1;
+    invoke-direct {v1, p0}, Ljp/co/sony/mc/camera/view/viewbinder/ProModeIsoDialViewBinder$$ExternalSyntheticLambda0;-><init>(Ljp/co/sony/mc/camera/view/viewbinder/ProModeIsoDialViewBinder;)V
 
     new-instance v2, Ljp/co/sony/mc/camera/view/viewbinder/ProModeIsoDialViewBinder$sam$androidx_lifecycle_Observer$0;
 
@@ -786,11 +1185,11 @@
 
     move-result-object v1
 
+    new-instance v2, Ljp/co/sony/mc/camera/view/viewbinder/ProModeIsoDialViewBinder$$ExternalSyntheticLambda2;
+
+    invoke-direct {v2}, Ljp/co/sony/mc/camera/view/viewbinder/ProModeIsoDialViewBinder$$ExternalSyntheticLambda2;-><init>()V
+
     .line 67
-    sget-object v2, Ljp/co/sony/mc/camera/view/viewbinder/ProModeIsoDialViewBinder$onCreate$2;->INSTANCE:Ljp/co/sony/mc/camera/view/viewbinder/ProModeIsoDialViewBinder$onCreate$2;
-
-    check-cast v2, Lkotlin/jvm/functions/Function2;
-
     invoke-virtual {p1, v0, v1, v2}, Ljp/co/sony/mc/camera/view/viewmodel/LiveDataMediators;->notNulls(Landroidx/lifecycle/LiveData;Landroidx/lifecycle/LiveData;Lkotlin/jvm/functions/Function2;)Landroidx/lifecycle/LiveData;
 
     move-result-object p1
@@ -800,11 +1199,9 @@
 
     move-result-object v0
 
-    new-instance v1, Ljp/co/sony/mc/camera/view/viewbinder/ProModeIsoDialViewBinder$onCreate$3;
+    new-instance v1, Ljp/co/sony/mc/camera/view/viewbinder/ProModeIsoDialViewBinder$$ExternalSyntheticLambda3;
 
-    invoke-direct {v1, p0}, Ljp/co/sony/mc/camera/view/viewbinder/ProModeIsoDialViewBinder$onCreate$3;-><init>(Ljp/co/sony/mc/camera/view/viewbinder/ProModeIsoDialViewBinder;)V
-
-    check-cast v1, Lkotlin/jvm/functions/Function1;
+    invoke-direct {v1, p0}, Ljp/co/sony/mc/camera/view/viewbinder/ProModeIsoDialViewBinder$$ExternalSyntheticLambda3;-><init>(Ljp/co/sony/mc/camera/view/viewbinder/ProModeIsoDialViewBinder;)V
 
     new-instance v2, Ljp/co/sony/mc/camera/view/viewbinder/ProModeIsoDialViewBinder$sam$androidx_lifecycle_Observer$0;
 
@@ -838,11 +1235,11 @@
 
     move-result-object v2
 
+    new-instance v3, Ljp/co/sony/mc/camera/view/viewbinder/ProModeIsoDialViewBinder$$ExternalSyntheticLambda4;
+
+    invoke-direct {v3}, Ljp/co/sony/mc/camera/view/viewbinder/ProModeIsoDialViewBinder$$ExternalSyntheticLambda4;-><init>()V
+
     .line 78
-    sget-object v3, Ljp/co/sony/mc/camera/view/viewbinder/ProModeIsoDialViewBinder$onCreate$4;->INSTANCE:Ljp/co/sony/mc/camera/view/viewbinder/ProModeIsoDialViewBinder$onCreate$4;
-
-    check-cast v3, Lkotlin/jvm/functions/Function3;
-
     invoke-virtual {p1, v0, v1, v2, v3}, Ljp/co/sony/mc/camera/view/viewmodel/LiveDataMediators;->notNulls(Landroidx/lifecycle/LiveData;Landroidx/lifecycle/LiveData;Landroidx/lifecycle/LiveData;Lkotlin/jvm/functions/Function3;)Landroidx/lifecycle/LiveData;
 
     move-result-object p1
@@ -852,11 +1249,9 @@
 
     move-result-object v0
 
-    new-instance v1, Ljp/co/sony/mc/camera/view/viewbinder/ProModeIsoDialViewBinder$onCreate$5;
+    new-instance v1, Ljp/co/sony/mc/camera/view/viewbinder/ProModeIsoDialViewBinder$$ExternalSyntheticLambda5;
 
-    invoke-direct {v1, p0}, Ljp/co/sony/mc/camera/view/viewbinder/ProModeIsoDialViewBinder$onCreate$5;-><init>(Ljp/co/sony/mc/camera/view/viewbinder/ProModeIsoDialViewBinder;)V
-
-    check-cast v1, Lkotlin/jvm/functions/Function1;
+    invoke-direct {v1, p0}, Ljp/co/sony/mc/camera/view/viewbinder/ProModeIsoDialViewBinder$$ExternalSyntheticLambda5;-><init>(Ljp/co/sony/mc/camera/view/viewbinder/ProModeIsoDialViewBinder;)V
 
     new-instance v2, Ljp/co/sony/mc/camera/view/viewbinder/ProModeIsoDialViewBinder$sam$androidx_lifecycle_Observer$0;
 
@@ -877,11 +1272,9 @@
 
     move-result-object v0
 
-    new-instance v1, Ljp/co/sony/mc/camera/view/viewbinder/ProModeIsoDialViewBinder$onCreate$6;
+    new-instance v1, Ljp/co/sony/mc/camera/view/viewbinder/ProModeIsoDialViewBinder$$ExternalSyntheticLambda6;
 
-    invoke-direct {v1, p0}, Ljp/co/sony/mc/camera/view/viewbinder/ProModeIsoDialViewBinder$onCreate$6;-><init>(Ljp/co/sony/mc/camera/view/viewbinder/ProModeIsoDialViewBinder;)V
-
-    check-cast v1, Lkotlin/jvm/functions/Function1;
+    invoke-direct {v1, p0}, Ljp/co/sony/mc/camera/view/viewbinder/ProModeIsoDialViewBinder$$ExternalSyntheticLambda6;-><init>(Ljp/co/sony/mc/camera/view/viewbinder/ProModeIsoDialViewBinder;)V
 
     new-instance p0, Ljp/co/sony/mc/camera/view/viewbinder/ProModeIsoDialViewBinder$sam$androidx_lifecycle_Observer$0;
 

@@ -78,7 +78,7 @@
     .line 27
     iget-object p1, p0, Ljp/co/sony/mc/camera/viewfinder/indicators/GeotagIndicator;->mView:Landroid/widget/ImageView;
 
-    const v0, 0x7f08021d
+    const v0, 0x7f08022b
 
     invoke-virtual {p1, v0}, Landroid/widget/ImageView;->setImageResource(I)V
 
@@ -91,7 +91,7 @@
 
     move-result-object p0
 
-    const v0, 0x7f1100b0
+    const v0, 0x7f1100ae
 
     .line 29
     invoke-virtual {p0, v0}, Landroid/content/Context;->getString(I)Ljava/lang/String;
@@ -119,7 +119,7 @@
     .line 35
     iget-object p1, p0, Ljp/co/sony/mc/camera/viewfinder/indicators/GeotagIndicator;->mView:Landroid/widget/ImageView;
 
-    const v0, 0x7f0802bc
+    const v0, 0x7f0802d2
 
     invoke-virtual {p1, v0}, Landroid/widget/ImageView;->setImageResource(I)V
 
@@ -129,7 +129,7 @@
     :cond_2
     iget-object p1, p0, Ljp/co/sony/mc/camera/viewfinder/indicators/GeotagIndicator;->mView:Landroid/widget/ImageView;
 
-    const v0, 0x7f08021e
+    const v0, 0x7f08022c
 
     invoke-virtual {p1, v0}, Landroid/widget/ImageView;->setImageResource(I)V
 
@@ -143,7 +143,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f1100b1
+    const v1, 0x7f1100af
 
     .line 40
     invoke-virtual {v0, v1}, Landroid/content/Context;->getString(I)Ljava/lang/String;

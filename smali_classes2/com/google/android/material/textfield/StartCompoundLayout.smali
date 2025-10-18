@@ -382,7 +382,7 @@
 .method private updateVisibility()V
     .locals 4
 
-    .line 338
+    .line 353
     iget-object v0, p0, Lcom/google/android/material/textfield/StartCompoundLayout;->prefixText:Ljava/lang/CharSequence;
 
     const/4 v1, 0x0
@@ -402,11 +402,11 @@
     :cond_0
     move v0, v2
 
-    .line 339
+    .line 354
     :goto_0
     iget-object v3, p0, Lcom/google/android/material/textfield/StartCompoundLayout;->startIconView:Lcom/google/android/material/internal/CheckableImageButton;
 
-    .line 340
+    .line 355
     invoke-virtual {v3}, Lcom/google/android/material/internal/CheckableImageButton;->getVisibility()I
 
     move-result v3
@@ -420,17 +420,17 @@
     :cond_1
     move v1, v2
 
-    .line 341
+    .line 356
     :cond_2
     :goto_1
     invoke-virtual {p0, v1}, Lcom/google/android/material/textfield/StartCompoundLayout;->setVisibility(I)V
 
-    .line 344
+    .line 359
     iget-object v1, p0, Lcom/google/android/material/textfield/StartCompoundLayout;->prefixTextView:Landroid/widget/TextView;
 
     invoke-virtual {v1, v0}, Landroid/widget/TextView;->setVisibility(I)V
 
-    .line 345
+    .line 360
     iget-object p0, p0, Lcom/google/android/material/textfield/StartCompoundLayout;->textInputLayout:Lcom/google/android/material/textfield/TextInputLayout;
 
     invoke-virtual {p0}, Lcom/google/android/material/textfield/TextInputLayout;->updateDummyDrawables()Z
@@ -460,6 +460,65 @@
     move-result-object p0
 
     return-object p0
+.end method
+
+.method getPrefixTextStartOffset()I
+    .locals 2
+
+    .line 333
+    invoke-virtual {p0}, Lcom/google/android/material/textfield/StartCompoundLayout;->isStartIconVisible()Z
+
+    move-result v0
+
+    if-eqz v0, :cond_0
+
+    .line 334
+    iget-object v0, p0, Lcom/google/android/material/textfield/StartCompoundLayout;->startIconView:Lcom/google/android/material/internal/CheckableImageButton;
+
+    .line 335
+    invoke-virtual {v0}, Lcom/google/android/material/internal/CheckableImageButton;->getMeasuredWidth()I
+
+    move-result v0
+
+    iget-object v1, p0, Lcom/google/android/material/textfield/StartCompoundLayout;->startIconView:Lcom/google/android/material/internal/CheckableImageButton;
+
+    .line 337
+    invoke-virtual {v1}, Lcom/google/android/material/internal/CheckableImageButton;->getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
+
+    move-result-object v1
+
+    check-cast v1, Landroid/view/ViewGroup$MarginLayoutParams;
+
+    .line 336
+    invoke-static {v1}, Landroidx/core/view/MarginLayoutParamsCompat;->getMarginEnd(Landroid/view/ViewGroup$MarginLayoutParams;)I
+
+    move-result v1
+
+    add-int/2addr v0, v1
+
+    goto :goto_0
+
+    :cond_0
+    const/4 v0, 0x0
+
+    .line 341
+    :goto_0
+    invoke-static {p0}, Landroidx/core/view/ViewCompat;->getPaddingStart(Landroid/view/View;)I
+
+    move-result v1
+
+    iget-object p0, p0, Lcom/google/android/material/textfield/StartCompoundLayout;->prefixTextView:Landroid/widget/TextView;
+
+    .line 342
+    invoke-static {p0}, Landroidx/core/view/ViewCompat;->getPaddingStart(Landroid/view/View;)I
+
+    move-result p0
+
+    add-int/2addr v1, p0
+
+    add-int/2addr v1, v0
+
+    return v1
 .end method
 
 .method getPrefixTextView()Landroid/widget/TextView;
@@ -554,10 +613,10 @@
 .method onHintStateChanged(Z)V
     .locals 0
 
-    .line 332
+    .line 347
     iput-boolean p1, p0, Lcom/google/android/material/textfield/StartCompoundLayout;->hintExpanded:Z
 
-    .line 333
+    .line 348
     invoke-direct {p0}, Lcom/google/android/material/textfield/StartCompoundLayout;->updateVisibility()V
 
     return-void

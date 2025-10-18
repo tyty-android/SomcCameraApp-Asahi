@@ -49,18 +49,26 @@
 
 
 # instance fields
+.field final synthetic $enabled:Z
+
+.field final synthetic $readOnly:Z
+
 .field final synthetic $state:Landroidx/compose/foundation/text/TextFieldState;
 
 .field final synthetic $this_semantics:Landroidx/compose/ui/semantics/SemanticsPropertyReceiver;
 
 
 # direct methods
-.method constructor <init>(Landroidx/compose/foundation/text/TextFieldState;Landroidx/compose/ui/semantics/SemanticsPropertyReceiver;)V
+.method constructor <init>(ZZLandroidx/compose/foundation/text/TextFieldState;Landroidx/compose/ui/semantics/SemanticsPropertyReceiver;)V
     .locals 0
 
-    iput-object p1, p0, Landroidx/compose/foundation/text/CoreTextFieldKt$CoreTextField$semanticsModifier$1$2;->$state:Landroidx/compose/foundation/text/TextFieldState;
+    iput-boolean p1, p0, Landroidx/compose/foundation/text/CoreTextFieldKt$CoreTextField$semanticsModifier$1$2;->$readOnly:Z
 
-    iput-object p2, p0, Landroidx/compose/foundation/text/CoreTextFieldKt$CoreTextField$semanticsModifier$1$2;->$this_semantics:Landroidx/compose/ui/semantics/SemanticsPropertyReceiver;
+    iput-boolean p2, p0, Landroidx/compose/foundation/text/CoreTextFieldKt$CoreTextField$semanticsModifier$1$2;->$enabled:Z
+
+    iput-object p3, p0, Landroidx/compose/foundation/text/CoreTextFieldKt$CoreTextField$semanticsModifier$1$2;->$state:Landroidx/compose/foundation/text/TextFieldState;
+
+    iput-object p4, p0, Landroidx/compose/foundation/text/CoreTextFieldKt$CoreTextField$semanticsModifier$1$2;->$this_semantics:Landroidx/compose/ui/semantics/SemanticsPropertyReceiver;
 
     const/4 p1, 0x1
 
@@ -72,79 +80,87 @@
 
 # virtual methods
 .method public final invoke(Landroidx/compose/ui/text/AnnotatedString;)Ljava/lang/Boolean;
-    .locals 9
+    .locals 10
 
-    const-string/jumbo v0, "text"
+    .line 466
+    iget-boolean v0, p0, Landroidx/compose/foundation/text/CoreTextFieldKt$CoreTextField$semanticsModifier$1$2;->$readOnly:Z
 
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+    const/4 v1, 0x0
 
-    .line 431
+    if-nez v0, :cond_3
+
+    iget-boolean v0, p0, Landroidx/compose/foundation/text/CoreTextFieldKt$CoreTextField$semanticsModifier$1$2;->$enabled:Z
+
+    if-nez v0, :cond_0
+
+    goto :goto_1
+
+    .line 472
+    :cond_0
     iget-object v0, p0, Landroidx/compose/foundation/text/CoreTextFieldKt$CoreTextField$semanticsModifier$1$2;->$state:Landroidx/compose/foundation/text/TextFieldState;
 
     invoke-virtual {v0}, Landroidx/compose/foundation/text/TextFieldState;->getInputSession()Landroidx/compose/ui/text/input/TextInputSession;
 
     move-result-object v0
 
-    const/4 v1, 0x1
+    const/4 v2, 0x1
 
-    if-eqz v0, :cond_0
+    if-eqz v0, :cond_1
 
-    iget-object v2, p0, Landroidx/compose/foundation/text/CoreTextFieldKt$CoreTextField$semanticsModifier$1$2;->$state:Landroidx/compose/foundation/text/TextFieldState;
+    iget-object v3, p0, Landroidx/compose/foundation/text/CoreTextFieldKt$CoreTextField$semanticsModifier$1$2;->$state:Landroidx/compose/foundation/text/TextFieldState;
 
-    .line 432
-    sget-object v3, Landroidx/compose/foundation/text/TextFieldDelegate;->Companion:Landroidx/compose/foundation/text/TextFieldDelegate$Companion;
+    .line 473
+    sget-object v4, Landroidx/compose/foundation/text/TextFieldDelegate;->Companion:Landroidx/compose/foundation/text/TextFieldDelegate$Companion;
 
-    const/4 v4, 0x2
+    const/4 v5, 0x2
 
-    .line 433
-    new-array v4, v4, [Landroidx/compose/ui/text/input/EditCommand;
+    .line 474
+    new-array v5, v5, [Landroidx/compose/ui/text/input/EditCommand;
 
-    new-instance v5, Landroidx/compose/ui/text/input/DeleteAllCommand;
+    new-instance v6, Landroidx/compose/ui/text/input/DeleteAllCommand;
 
-    invoke-direct {v5}, Landroidx/compose/ui/text/input/DeleteAllCommand;-><init>()V
+    invoke-direct {v6}, Landroidx/compose/ui/text/input/DeleteAllCommand;-><init>()V
 
-    const/4 v6, 0x0
+    aput-object v6, v5, v1
 
-    aput-object v5, v4, v6
+    new-instance v1, Landroidx/compose/ui/text/input/CommitTextCommand;
 
-    new-instance v5, Landroidx/compose/ui/text/input/CommitTextCommand;
+    invoke-direct {v1, p1, v2}, Landroidx/compose/ui/text/input/CommitTextCommand;-><init>(Landroidx/compose/ui/text/AnnotatedString;I)V
 
-    invoke-direct {v5, p1, v1}, Landroidx/compose/ui/text/input/CommitTextCommand;-><init>(Landroidx/compose/ui/text/AnnotatedString;I)V
+    aput-object v1, v5, v2
 
-    aput-object v5, v4, v1
+    invoke-static {v5}, Lkotlin/collections/CollectionsKt;->listOf([Ljava/lang/Object;)Ljava/util/List;
 
-    invoke-static {v4}, Lkotlin/collections/CollectionsKt;->listOf([Ljava/lang/Object;)Ljava/util/List;
+    move-result-object v1
 
-    move-result-object v4
-
-    .line 434
-    invoke-virtual {v2}, Landroidx/compose/foundation/text/TextFieldState;->getProcessor()Landroidx/compose/ui/text/input/EditProcessor;
+    .line 475
+    invoke-virtual {v3}, Landroidx/compose/foundation/text/TextFieldState;->getProcessor()Landroidx/compose/ui/text/input/EditProcessor;
 
     move-result-object v5
 
-    .line 435
-    invoke-virtual {v2}, Landroidx/compose/foundation/text/TextFieldState;->getOnValueChange()Lkotlin/jvm/functions/Function1;
+    .line 476
+    invoke-virtual {v3}, Landroidx/compose/foundation/text/TextFieldState;->getOnValueChange()Lkotlin/jvm/functions/Function1;
 
-    move-result-object v2
+    move-result-object v3
 
-    .line 432
-    invoke-virtual {v3, v4, v5, v2, v0}, Landroidx/compose/foundation/text/TextFieldDelegate$Companion;->onEditCommand$foundation_release(Ljava/util/List;Landroidx/compose/ui/text/input/EditProcessor;Lkotlin/jvm/functions/Function1;Landroidx/compose/ui/text/input/TextInputSession;)V
+    .line 473
+    invoke-virtual {v4, v1, v5, v3, v0}, Landroidx/compose/foundation/text/TextFieldDelegate$Companion;->onEditCommand$foundation_release(Ljava/util/List;Landroidx/compose/ui/text/input/EditProcessor;Lkotlin/jvm/functions/Function1;Landroidx/compose/ui/text/input/TextInputSession;)V
 
-    .line 431
+    .line 472
     sget-object v0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
 
     goto :goto_0
 
-    :cond_0
+    :cond_1
     const/4 v0, 0x0
 
     :goto_0
-    if-nez v0, :cond_1
+    if-nez v0, :cond_2
 
-    .line 438
+    .line 479
     iget-object p0, p0, Landroidx/compose/foundation/text/CoreTextFieldKt$CoreTextField$semanticsModifier$1$2;->$state:Landroidx/compose/foundation/text/TextFieldState;
 
-    .line 439
+    .line 480
     invoke-virtual {p0}, Landroidx/compose/foundation/text/TextFieldState;->getOnValueChange()Lkotlin/jvm/functions/Function1;
 
     move-result-object p0
@@ -153,7 +169,7 @@
 
     invoke-virtual {p1}, Landroidx/compose/ui/text/AnnotatedString;->getText()Ljava/lang/String;
 
-    move-result-object v3
+    move-result-object v4
 
     invoke-virtual {p1}, Landroidx/compose/ui/text/AnnotatedString;->getText()Ljava/lang/String;
 
@@ -165,22 +181,31 @@
 
     invoke-static {p1}, Landroidx/compose/ui/text/TextRangeKt;->TextRange(I)J
 
-    move-result-wide v4
+    move-result-wide v5
 
-    const/4 v7, 0x4
+    const/4 v8, 0x4
 
-    const/4 v8, 0x0
+    const/4 v9, 0x0
 
-    const/4 v6, 0x0
+    const/4 v7, 0x0
 
-    move-object v2, v0
+    move-object v3, v0
 
-    invoke-direct/range {v2 .. v8}, Landroidx/compose/ui/text/input/TextFieldValue;-><init>(Ljava/lang/String;JLandroidx/compose/ui/text/TextRange;ILkotlin/jvm/internal/DefaultConstructorMarker;)V
+    invoke-direct/range {v3 .. v9}, Landroidx/compose/ui/text/input/TextFieldValue;-><init>(Ljava/lang/String;JLandroidx/compose/ui/text/TextRange;ILkotlin/jvm/internal/DefaultConstructorMarker;)V
 
     invoke-interface {p0, v0}, Lkotlin/jvm/functions/Function1;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 441
-    :cond_1
+    .line 482
+    :cond_2
+    invoke-static {v2}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
+
+    move-result-object p0
+
+    return-object p0
+
+    .line 466
+    :cond_3
+    :goto_1
     invoke-static {v1}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
     move-result-object p0
@@ -191,7 +216,7 @@
 .method public bridge synthetic invoke(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
 
-    .line 426
+    .line 465
     check-cast p1, Landroidx/compose/ui/text/AnnotatedString;
 
     invoke-virtual {p0, p1}, Landroidx/compose/foundation/text/CoreTextFieldKt$CoreTextField$semanticsModifier$1$2;->invoke(Landroidx/compose/ui/text/AnnotatedString;)Ljava/lang/Boolean;

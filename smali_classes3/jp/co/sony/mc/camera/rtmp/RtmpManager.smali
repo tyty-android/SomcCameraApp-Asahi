@@ -16,23 +16,27 @@
 
 .annotation runtime Lkotlin/Metadata;
     d1 = {
-        "\u0000T\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0010\u000b\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0010\u0008\n\u0002\u0008\u0004\n\u0002\u0010\u000e\n\u0002\u0008\u0004\n\u0002\u0010\t\n\u0002\u0008\u0011\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\n\u0008\u0007\u0018\u0000 52\u00020\u0001:\u000256B\u0007\u0008\u0016\u00a2\u0006\u0002\u0010\u0002JB\u0010\u000c\u001a\u00020\r2\u0006\u0010\u000e\u001a\u00020\u000f2\u0006\u0010\u0010\u001a\u00020\u00062\u0006\u0010\u0011\u001a\u00020\u000f2\u0006\u0010\u0012\u001a\u00020\u000f2\u0008\u0010\u0013\u001a\u0004\u0018\u00010\u00142\u0008\u0010\u0015\u001a\u0004\u0018\u00010\u00142\u0006\u0010\u0016\u001a\u00020\u0006J\u0006\u0010\u0017\u001a\u00020\rJ\u0006\u0010\u0018\u001a\u00020\u0019J\u0006\u0010\u001a\u001a\u00020\u0019J\u0008\u0010\u001b\u001a\u00020\rH\u0016J\u0008\u0010\u001c\u001a\u00020\rH\u0016J\u0010\u0010\u001d\u001a\u00020\r2\u0006\u0010\u001e\u001a\u00020\u0014H\u0016J\u0010\u0010\u001f\u001a\u00020\r2\u0006\u0010\u0013\u001a\u00020\u0014H\u0016J\u0008\u0010 \u001a\u00020\rH\u0016J\u0008\u0010!\u001a\u00020\rH\u0016J\u0010\u0010\"\u001a\u00020\r2\u0006\u0010#\u001a\u00020\u0019H\u0016J\u001a\u0010$\u001a\u00020\r2\u0006\u0010%\u001a\u00020\u00192\n\u0008\u0002\u0010&\u001a\u0004\u0018\u00010\u0014J\u000e\u0010\'\u001a\u00020\r2\u0006\u0010(\u001a\u00020\u000bJ\u0016\u0010)\u001a\u00020\r2\u0006\u0010*\u001a\u00020+2\u0006\u0010,\u001a\u00020-J\u0016\u0010.\u001a\u00020\r2\u0006\u0010/\u001a\u00020+2\u0006\u0010,\u001a\u00020-J \u00100\u001a\u00020\r2\u0006\u00101\u001a\u00020+2\u0006\u00102\u001a\u00020+2\u0008\u00103\u001a\u0004\u0018\u00010+J\u000e\u00104\u001a\u00020\r2\u0006\u0010(\u001a\u00020\u000bR\u000e\u0010\u0003\u001a\u00020\u0004X\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u0005\u001a\u00020\u0006X\u0082\u000e\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u0007\u001a\u00020\u0008X\u0082\u000e\u00a2\u0006\u0002\n\u0000R\u0014\u0010\t\u001a\u0008\u0012\u0004\u0012\u00020\u000b0\nX\u0082\u0004\u00a2\u0006\u0002\n\u0000\u00a8\u00067"
+        "\u0000X\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0003\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0000\n\u0000\n\u0002\u0010\u000b\n\u0000\n\u0002\u0010\u0002\n\u0002\u0008\u0004\n\u0002\u0010\u0008\n\u0002\u0008\u0004\n\u0002\u0010\u000e\n\u0002\u0008\u0004\n\u0002\u0010\t\n\u0002\u0008\u0004\n\u0002\u0018\u0002\n\u0002\u0008\u0005\n\u0002\u0018\u0002\n\u0002\u0008\u0010\u0008\u0007\u0018\u0000 62\u00020\u0001:\u000267B\t\u0008\u0016\u00a2\u0006\u0004\u0008\u0002\u0010\u0003J\u000e\u0010\r\u001a\u00020\u000e2\u0006\u0010\u000f\u001a\u00020\u0008J\u000e\u0010\u0010\u001a\u00020\u000e2\u0006\u0010\u000f\u001a\u00020\u0008JB\u0010\u0011\u001a\u00020\u000e2\u0006\u0010\u0012\u001a\u00020\u00132\u0006\u0010\u0014\u001a\u00020\u000c2\u0006\u0010\u0015\u001a\u00020\u00132\u0006\u0010\u0016\u001a\u00020\u00132\u0008\u0010\u0017\u001a\u0004\u0018\u00010\u00182\u0008\u0010\u0019\u001a\u0004\u0018\u00010\u00182\u0006\u0010\u001a\u001a\u00020\u000cJ\u001a\u0010\u001b\u001a\u00020\u000e2\u0006\u0010\u001c\u001a\u00020\u001d2\n\u0008\u0002\u0010\u001e\u001a\u0004\u0018\u00010\u0018J\u0006\u0010\u001f\u001a\u00020\u000eJ \u0010 \u001a\u00020\u000e2\u0006\u0010!\u001a\u00020\"2\u0006\u0010#\u001a\u00020\"2\u0008\u0010$\u001a\u0004\u0018\u00010\"J\u0016\u0010%\u001a\u00020\u000e2\u0006\u0010&\u001a\u00020\"2\u0006\u0010\'\u001a\u00020(J\u0016\u0010)\u001a\u00020\u000e2\u0006\u0010*\u001a\u00020\"2\u0006\u0010\'\u001a\u00020(J\u0006\u0010+\u001a\u00020\u001dJ\u0006\u0010,\u001a\u00020\u001dJ\u0010\u0010-\u001a\u00020\u000e2\u0006\u0010\u0017\u001a\u00020\u0018H\u0016J\u0008\u0010.\u001a\u00020\u000eH\u0016J\u0010\u0010/\u001a\u00020\u000e2\u0006\u00100\u001a\u00020\u0018H\u0016J\u0010\u00101\u001a\u00020\u000e2\u0006\u00102\u001a\u00020\u001dH\u0016J\u0008\u00103\u001a\u00020\u000eH\u0016J\u0008\u00104\u001a\u00020\u000eH\u0016J\u0008\u00105\u001a\u00020\u000eH\u0016R\u000e\u0010\u0004\u001a\u00020\u0005X\u0082\u000e\u00a2\u0006\u0002\n\u0000R\u0014\u0010\u0006\u001a\u0008\u0012\u0004\u0012\u00020\u00080\u0007X\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u000e\u0010\t\u001a\u00020\nX\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u000b\u001a\u00020\u000cX\u0082\u000e\u00a2\u0006\u0002\n\u0000\u00a8\u00068"
     }
     d2 = {
         "Ljp/co/sony/mc/camera/rtmp/RtmpManager;",
         "Lcom/pedro/rtmp/utils/ConnectCheckerRtmp;",
+        "<init>",
         "()V",
-        "connectLock",
-        "",
-        "isConnected",
-        "",
         "rtmpClient",
         "Lcom/pedro/rtmp/rtmp/RtmpClient;",
         "rtmpNotifyListeners",
         "Ljava/util/concurrent/CopyOnWriteArrayList;",
         "Ljp/co/sony/mc/camera/rtmp/RtmpManager$RtmpNotifyListener;",
-        "connect",
+        "connectLock",
         "",
+        "isConnected",
+        "",
+        "registerRtmpNotifyListener",
+        "",
+        "listener",
+        "unregisterRtmpNotifyListener",
+        "connect",
         "sampleRate",
         "",
         "isStereo",
@@ -42,44 +46,41 @@
         "",
         "rtmpKey",
         "isRetry",
-        "disconnect",
-        "getTotalVideoFrames",
-        "",
-        "getdroppedVideoFrames",
-        "onAuthErrorRtmp",
-        "onAuthSuccessRtmp",
-        "onConnectionFailedRtmp",
-        "reason",
-        "onConnectionStartedRtmp",
-        "onConnectionSuccessRtmp",
-        "onDisconnectRtmp",
-        "onNewBitrateRtmp",
-        "bitrate",
         "reconnect",
         "delay",
+        "",
         "backupUrl",
-        "registerRtmpNotifyListener",
-        "listener",
-        "sendAudio",
-        "aacBuffer",
-        "Ljava/nio/ByteBuffer;",
-        "info",
-        "Landroid/media/MediaCodec$BufferInfo;",
-        "sendVideo",
-        "h264Buffer",
+        "disconnect",
         "setVideoInfo",
         "sps",
+        "Ljava/nio/ByteBuffer;",
         "pps",
         "vps",
-        "unregisterRtmpNotifyListener",
+        "sendVideo",
+        "h264Buffer",
+        "info",
+        "Landroid/media/MediaCodec$BufferInfo;",
+        "sendAudio",
+        "aacBuffer",
+        "getdroppedVideoFrames",
+        "getTotalVideoFrames",
+        "onConnectionStartedRtmp",
+        "onConnectionSuccessRtmp",
+        "onConnectionFailedRtmp",
+        "reason",
+        "onNewBitrateRtmp",
+        "bitrate",
+        "onDisconnectRtmp",
+        "onAuthErrorRtmp",
+        "onAuthSuccessRtmp",
         "Companion",
         "RtmpNotifyListener",
         "SomcCamera_release"
     }
     k = 0x1
     mv = {
-        0x1,
-        0x9,
+        0x2,
+        0x0,
         0x0
     }
     xi = 0x30
@@ -217,103 +218,107 @@
 
 # virtual methods
 .method public final connect(IZIILjava/lang/String;Ljava/lang/String;Z)V
-    .locals 3
+    .locals 5
 
     .line 49
     sget-boolean v0, Ljp/co/sony/mc/camera/util/CamLog;->DEBUG:Z
 
+    const/4 v1, 0x1
+
     if-eqz v0, :cond_0
 
     .line 50
-    const-string v0, "invoke"
+    new-array v0, v1, [Ljava/lang/String;
 
-    filled-new-array {v0}, [Ljava/lang/String;
+    const-string v2, "invoke"
 
-    move-result-object v0
+    const/4 v3, 0x0
+
+    aput-object v2, v0, v3
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
     .line 51
-    new-instance v0, Ljava/lang/StringBuilder;
+    new-array v0, v1, [Ljava/lang/String;
 
-    const-string v1, "SampleRete : "
+    new-instance v2, Ljava/lang/StringBuilder;
 
-    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+    const-string v4, "SampleRete : "
 
-    invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+    invoke-direct {v2, v4}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
-    move-result-object v0
+    invoke-virtual {v2, p1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    move-result-object v2
 
-    move-result-object v0
+    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    filled-new-array {v0}, [Ljava/lang/String;
+    move-result-object v2
 
-    move-result-object v0
+    aput-object v2, v0, v3
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
     .line 52
-    new-instance v0, Ljava/lang/StringBuilder;
+    new-array v0, v1, [Ljava/lang/String;
 
-    const-string v1, "Stereo     : "
+    new-instance v2, Ljava/lang/StringBuilder;
 
-    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+    const-string v4, "Stereo     : "
 
-    invoke-virtual {v0, p2}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
+    invoke-direct {v2, v4}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
-    move-result-object v0
+    invoke-virtual {v2, p2}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    move-result-object v2
 
-    move-result-object v0
+    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    filled-new-array {v0}, [Ljava/lang/String;
+    move-result-object v2
 
-    move-result-object v0
+    aput-object v2, v0, v3
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
     .line 53
-    new-instance v0, Ljava/lang/StringBuilder;
+    new-array v0, v1, [Ljava/lang/String;
 
-    const-string/jumbo v1, "width      : "
+    new-instance v2, Ljava/lang/StringBuilder;
 
-    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+    const-string/jumbo v4, "width      : "
 
-    invoke-virtual {v0, p3}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+    invoke-direct {v2, v4}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
-    move-result-object v0
+    invoke-virtual {v2, p3}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    move-result-object v2
 
-    move-result-object v0
+    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    filled-new-array {v0}, [Ljava/lang/String;
+    move-result-object v2
 
-    move-result-object v0
+    aput-object v2, v0, v3
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
     .line 54
-    new-instance v0, Ljava/lang/StringBuilder;
+    new-array v0, v1, [Ljava/lang/String;
 
-    const-string v1, "height     : "
+    new-instance v2, Ljava/lang/StringBuilder;
 
-    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+    const-string v4, "height     : "
 
-    invoke-virtual {v0, p4}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+    invoke-direct {v2, v4}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
-    move-result-object v0
+    invoke-virtual {v2, p4}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    move-result-object v2
 
-    move-result-object v0
+    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    filled-new-array {v0}, [Ljava/lang/String;
+    move-result-object v2
 
-    move-result-object v0
+    aput-object v2, v0, v3
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
@@ -325,11 +330,9 @@
 
     .line 57
     :try_start_0
-    iget-boolean v1, p0, Ljp/co/sony/mc/camera/rtmp/RtmpManager;->isConnected:Z
+    iget-boolean v2, p0, Ljp/co/sony/mc/camera/rtmp/RtmpManager;->isConnected:Z
 
-    if-nez v1, :cond_2
-
-    const/4 v1, 0x1
+    if-nez v2, :cond_2
 
     .line 58
     iput-boolean v1, p0, Ljp/co/sony/mc/camera/rtmp/RtmpManager;->isConnected:Z
@@ -347,7 +350,7 @@
 
     move-result-object v1
 
-    const-string/jumbo v2, "this as java.lang.String).substring(startIndex)"
+    const-string/jumbo v2, "substring(...)"
 
     invoke-static {v1, v2}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
 
@@ -445,18 +448,22 @@
 .end method
 
 .method public final disconnect()V
-    .locals 2
+    .locals 3
 
     .line 83
     sget-boolean v0, Ljp/co/sony/mc/camera/util/CamLog;->DEBUG:Z
 
+    const/4 v1, 0x0
+
     if-eqz v0, :cond_0
 
-    const-string v0, "invoke"
+    const/4 v0, 0x1
 
-    filled-new-array {v0}, [Ljava/lang/String;
+    new-array v0, v0, [Ljava/lang/String;
 
-    move-result-object v0
+    const-string v2, "invoke"
+
+    aput-object v2, v0, v1
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
@@ -468,11 +475,9 @@
 
     .line 85
     :try_start_0
-    iget-object v1, p0, Ljp/co/sony/mc/camera/rtmp/RtmpManager;->rtmpClient:Lcom/pedro/rtmp/rtmp/RtmpClient;
+    iget-object v2, p0, Ljp/co/sony/mc/camera/rtmp/RtmpManager;->rtmpClient:Lcom/pedro/rtmp/rtmp/RtmpClient;
 
-    invoke-virtual {v1}, Lcom/pedro/rtmp/rtmp/RtmpClient;->disconnect()V
-
-    const/4 v1, 0x0
+    invoke-virtual {v2}, Lcom/pedro/rtmp/rtmp/RtmpClient;->disconnect()V
 
     .line 86
     iput-boolean v1, p0, Ljp/co/sony/mc/camera/rtmp/RtmpManager;->isConnected:Z
@@ -565,6 +570,10 @@
 
     move-result-object v0
 
+    const-string v1, "iterator(...)"
+
+    invoke-static {v0, v1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
+
     :goto_0
     invoke-interface {v0}, Ljava/util/Iterator;->hasNext()Z
 
@@ -606,6 +615,10 @@
 
     move-result-object p0
 
+    const-string v0, "iterator(...)"
+
+    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
+
     :goto_0
     invoke-interface {p0}, Ljava/util/Iterator;->hasNext()Z
 
@@ -637,6 +650,10 @@
     invoke-virtual {p0}, Ljava/util/concurrent/CopyOnWriteArrayList;->iterator()Ljava/util/Iterator;
 
     move-result-object p0
+
+    const-string v0, "iterator(...)"
+
+    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
 
     :goto_0
     invoke-interface {p0}, Ljava/util/Iterator;->hasNext()Z
@@ -670,6 +687,10 @@
 
     move-result-object p0
 
+    const-string v0, "iterator(...)"
+
+    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
+
     :goto_0
     invoke-interface {p0}, Ljava/util/Iterator;->hasNext()Z
 
@@ -702,6 +723,10 @@
 
     move-result-object p0
 
+    const-string v0, "iterator(...)"
+
+    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
+
     :goto_0
     invoke-interface {p0}, Ljava/util/Iterator;->hasNext()Z
 
@@ -725,18 +750,22 @@
 .end method
 
 .method public final reconnect(JLjava/lang/String;)V
-    .locals 2
+    .locals 4
 
     .line 75
     sget-boolean v0, Ljp/co/sony/mc/camera/util/CamLog;->DEBUG:Z
 
+    const/4 v1, 0x1
+
     if-eqz v0, :cond_0
 
-    const-string v0, "invoke"
+    new-array v0, v1, [Ljava/lang/String;
 
-    filled-new-array {v0}, [Ljava/lang/String;
+    const/4 v2, 0x0
 
-    move-result-object v0
+    const-string v3, "invoke"
+
+    aput-object v3, v0, v2
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
@@ -745,8 +774,6 @@
     iget-object v0, p0, Ljp/co/sony/mc/camera/rtmp/RtmpManager;->connectLock:Ljava/lang/Object;
 
     monitor-enter v0
-
-    const/4 v1, 0x1
 
     .line 77
     :try_start_0
@@ -776,7 +803,7 @@
 .end method
 
 .method public final registerRtmpNotifyListener(Ljp/co/sony/mc/camera/rtmp/RtmpManager$RtmpNotifyListener;)V
-    .locals 1
+    .locals 3
 
     const-string v0, "listener"
 
@@ -787,11 +814,15 @@
 
     if-eqz v0, :cond_0
 
-    const-string v0, "invoke"
+    const/4 v0, 0x1
 
-    filled-new-array {v0}, [Ljava/lang/String;
+    new-array v0, v0, [Ljava/lang/String;
 
-    move-result-object v0
+    const/4 v1, 0x0
+
+    const-string v2, "invoke"
+
+    aput-object v2, v0, v1
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
@@ -877,7 +908,7 @@
 .end method
 
 .method public final unregisterRtmpNotifyListener(Ljp/co/sony/mc/camera/rtmp/RtmpManager$RtmpNotifyListener;)V
-    .locals 1
+    .locals 3
 
     const-string v0, "listener"
 
@@ -888,11 +919,15 @@
 
     if-eqz v0, :cond_0
 
-    const-string v0, "invoke"
+    const/4 v0, 0x1
 
-    filled-new-array {v0}, [Ljava/lang/String;
+    new-array v0, v0, [Ljava/lang/String;
 
-    move-result-object v0
+    const/4 v1, 0x0
+
+    const-string v2, "invoke"
+
+    aput-object v2, v0, v1
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 

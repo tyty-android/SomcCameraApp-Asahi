@@ -314,23 +314,23 @@
 .end method
 
 .method public varargs handleOnAutoFocusDone(Ljp/co/sony/mc/camera/device/state/DeviceStateContext;[Ljava/lang/Object;)V
-    .locals 2
+    .locals 4
 
     const/4 v0, 0x0
 
     .line 109
-    aget-object v0, p2, v0
+    aget-object v1, p2, v0
 
-    check-cast v0, Ljava/lang/Integer;
+    check-cast v1, Ljava/lang/Integer;
 
-    invoke-virtual {v0}, Ljava/lang/Integer;->intValue()I
+    invoke-virtual {v1}, Ljava/lang/Integer;->intValue()I
 
-    move-result v0
+    move-result v1
 
-    const/4 v1, 0x1
+    const/4 v2, 0x1
 
     .line 110
-    aget-object p2, p2, v1
+    aget-object p2, p2, v2
 
     check-cast p2, Ljava/lang/Boolean;
 
@@ -339,30 +339,32 @@
     move-result p2
 
     .line 112
-    iget v1, p0, Ljp/co/sony/mc/camera/device/state/DeviceStateAfModeChanging;->mRequestedId:I
+    iget v3, p0, Ljp/co/sony/mc/camera/device/state/DeviceStateAfModeChanging;->mRequestedId:I
 
-    if-eq v1, v0, :cond_0
+    if-eq v3, v1, :cond_0
 
     .line 113
-    new-instance p1, Ljava/lang/StringBuilder;
+    new-array p1, v2, [Ljava/lang/String;
 
-    const-string p2, "Invalid request id. current:"
+    new-instance p2, Ljava/lang/StringBuilder;
 
-    invoke-direct {p1, p2}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+    const-string v2, "Invalid request id. current:"
 
-    invoke-virtual {p1, v0}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+    invoke-direct {p2, v2}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
-    move-result-object p1
+    invoke-virtual {p2, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
-    const-string p2, ", expected:"
+    move-result-object p2
 
-    invoke-virtual {p1, p2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    const-string v1, ", expected:"
 
-    move-result-object p1
+    invoke-virtual {p2, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object p2
 
     iget p0, p0, Ljp/co/sony/mc/camera/device/state/DeviceStateAfModeChanging;->mRequestedId:I
 
-    invoke-virtual {p1, p0}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+    invoke-virtual {p2, p0}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
     move-result-object p0
 
@@ -370,11 +372,9 @@
 
     move-result-object p0
 
-    filled-new-array {p0}, [Ljava/lang/String;
+    aput-object p0, p1, v0
 
-    move-result-object p0
-
-    invoke-static {p0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
+    invoke-static {p1}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
     return-void
 

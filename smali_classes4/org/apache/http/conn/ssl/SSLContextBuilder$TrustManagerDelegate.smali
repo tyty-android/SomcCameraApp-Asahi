@@ -27,13 +27,13 @@
 .method constructor <init>(Ljavax/net/ssl/X509TrustManager;Lorg/apache/http/conn/ssl/TrustStrategy;)V
     .locals 0
 
-    .line 177
+    .line 174
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 178
+    .line 175
     iput-object p1, p0, Lorg/apache/http/conn/ssl/SSLContextBuilder$TrustManagerDelegate;->trustManager:Ljavax/net/ssl/X509TrustManager;
 
-    .line 179
+    .line 176
     iput-object p2, p0, Lorg/apache/http/conn/ssl/SSLContextBuilder$TrustManagerDelegate;->trustStrategy:Lorg/apache/http/conn/ssl/TrustStrategy;
 
     return-void
@@ -49,7 +49,7 @@
         }
     .end annotation
 
-    .line 185
+    .line 182
     iget-object p0, p0, Lorg/apache/http/conn/ssl/SSLContextBuilder$TrustManagerDelegate;->trustManager:Ljavax/net/ssl/X509TrustManager;
 
     invoke-interface {p0, p1, p2}, Ljavax/net/ssl/X509TrustManager;->checkClientTrusted([Ljava/security/cert/X509Certificate;Ljava/lang/String;)V
@@ -65,7 +65,7 @@
         }
     .end annotation
 
-    .line 191
+    .line 188
     iget-object v0, p0, Lorg/apache/http/conn/ssl/SSLContextBuilder$TrustManagerDelegate;->trustStrategy:Lorg/apache/http/conn/ssl/TrustStrategy;
 
     invoke-interface {v0, p1, p2}, Lorg/apache/http/conn/ssl/TrustStrategy;->isTrusted([Ljava/security/cert/X509Certificate;Ljava/lang/String;)Z
@@ -74,7 +74,7 @@
 
     if-nez v0, :cond_0
 
-    .line 192
+    .line 189
     iget-object p0, p0, Lorg/apache/http/conn/ssl/SSLContextBuilder$TrustManagerDelegate;->trustManager:Ljavax/net/ssl/X509TrustManager;
 
     invoke-interface {p0, p1, p2}, Ljavax/net/ssl/X509TrustManager;->checkServerTrusted([Ljava/security/cert/X509Certificate;Ljava/lang/String;)V
@@ -86,7 +86,7 @@
 .method public getAcceptedIssuers()[Ljava/security/cert/X509Certificate;
     .locals 0
 
-    .line 198
+    .line 195
     iget-object p0, p0, Lorg/apache/http/conn/ssl/SSLContextBuilder$TrustManagerDelegate;->trustManager:Ljavax/net/ssl/X509TrustManager;
 
     invoke-interface {p0}, Ljavax/net/ssl/X509TrustManager;->getAcceptedIssuers()[Ljava/security/cert/X509Certificate;

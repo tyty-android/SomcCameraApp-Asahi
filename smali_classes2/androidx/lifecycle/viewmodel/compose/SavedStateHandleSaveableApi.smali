@@ -1,6 +1,6 @@
 .class public interface abstract annotation Landroidx/lifecycle/viewmodel/compose/SavedStateHandleSaveableApi;
 .super Ljava/lang/Object;
-.source "SavedStateHandleSaveableApi.kt"
+.source "SavedStateHandleSaveableApi.android.kt"
 
 # interfaces
 .implements Ljava/lang/annotation/Annotation;
@@ -8,7 +8,7 @@
 
 # annotations
 .annotation runtime Ljava/lang/annotation/Retention;
-    value = .enum Ljava/lang/annotation/RetentionPolicy;->RUNTIME:Ljava/lang/annotation/RetentionPolicy;
+    value = .enum Ljava/lang/annotation/RetentionPolicy;->CLASS:Ljava/lang/annotation/RetentionPolicy;
 .end annotation
 
 .annotation runtime Ljava/lang/annotation/Target;
@@ -36,7 +36,7 @@
 .end annotation
 
 .annotation runtime Lkotlin/annotation/Retention;
-    value = .enum Lkotlin/annotation/AnnotationRetention;->RUNTIME:Lkotlin/annotation/AnnotationRetention;
+    value = .enum Lkotlin/annotation/AnnotationRetention;->BINARY:Lkotlin/annotation/AnnotationRetention;
 .end annotation
 
 .annotation runtime Lkotlin/annotation/Target;

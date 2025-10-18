@@ -67,7 +67,7 @@
 .method public final invoke()Ljava/lang/Float;
     .locals 0
 
-    .line 273
+    .line 278
     iget-object p0, p0, Landroidx/compose/foundation/ScrollKt$scroll$2$semantics$1$accessibilityScrollState$1;->$state:Landroidx/compose/foundation/ScrollState;
 
     invoke-virtual {p0}, Landroidx/compose/foundation/ScrollState;->getValue()I
@@ -86,7 +86,7 @@
 .method public bridge synthetic invoke()Ljava/lang/Object;
     .locals 0
 
-    .line 272
+    .line 277
     invoke-virtual {p0}, Landroidx/compose/foundation/ScrollKt$scroll$2$semantics$1$accessibilityScrollState$1;->invoke()Ljava/lang/Float;
 
     move-result-object p0

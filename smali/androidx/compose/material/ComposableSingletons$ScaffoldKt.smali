@@ -67,6 +67,55 @@
     .end annotation
 .end field
 
+.field public static lambda-5:Lkotlin/jvm/functions/Function2;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Lkotlin/jvm/functions/Function2<",
+            "Landroidx/compose/runtime/Composer;",
+            "Ljava/lang/Integer;",
+            "Lkotlin/Unit;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field public static lambda-6:Lkotlin/jvm/functions/Function2;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Lkotlin/jvm/functions/Function2<",
+            "Landroidx/compose/runtime/Composer;",
+            "Ljava/lang/Integer;",
+            "Lkotlin/Unit;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field public static lambda-7:Lkotlin/jvm/functions/Function3;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Lkotlin/jvm/functions/Function3<",
+            "Landroidx/compose/material/SnackbarHostState;",
+            "Landroidx/compose/runtime/Composer;",
+            "Ljava/lang/Integer;",
+            "Lkotlin/Unit;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field public static lambda-8:Lkotlin/jvm/functions/Function2;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Lkotlin/jvm/functions/Function2<",
+            "Landroidx/compose/runtime/Composer;",
+            "Ljava/lang/Integer;",
+            "Lkotlin/Unit;",
+            ">;"
+        }
+    .end annotation
+.end field
+
 
 # direct methods
 .method static constructor <clinit>()V
@@ -78,10 +127,10 @@
 
     sput-object v0, Landroidx/compose/material/ComposableSingletons$ScaffoldKt;->INSTANCE:Landroidx/compose/material/ComposableSingletons$ScaffoldKt;
 
-    .line 162
+    .line 189
     sget-object v0, Landroidx/compose/material/ComposableSingletons$ScaffoldKt$lambda-1$1;->INSTANCE:Landroidx/compose/material/ComposableSingletons$ScaffoldKt$lambda-1$1;
 
-    const v1, 0x7b58a0cd
+    const v1, 0x13d0be7
 
     const/4 v2, 0x0
 
@@ -93,9 +142,9 @@
 
     sput-object v0, Landroidx/compose/material/ComposableSingletons$ScaffoldKt;->lambda-1:Lkotlin/jvm/functions/Function2;
 
-    const v0, -0xdd1c243
+    const v0, -0xcae0b09
 
-    .line 163
+    .line 190
     sget-object v1, Landroidx/compose/material/ComposableSingletons$ScaffoldKt$lambda-2$1;->INSTANCE:Landroidx/compose/material/ComposableSingletons$ScaffoldKt$lambda-2$1;
 
     invoke-static {v0, v2, v1}, Landroidx/compose/runtime/internal/ComposableLambdaKt;->composableLambdaInstance(IZLjava/lang/Object;)Landroidx/compose/runtime/internal/ComposableLambda;
@@ -106,9 +155,9 @@
 
     sput-object v0, Landroidx/compose/material/ComposableSingletons$ScaffoldKt;->lambda-2:Lkotlin/jvm/functions/Function2;
 
-    const v0, -0x8cd8a30
+    const v0, 0x7c5eb3c4
 
-    .line 164
+    .line 191
     sget-object v1, Landroidx/compose/material/ComposableSingletons$ScaffoldKt$lambda-3$1;->INSTANCE:Landroidx/compose/material/ComposableSingletons$ScaffoldKt$lambda-3$1;
 
     invoke-static {v0, v2, v1}, Landroidx/compose/runtime/internal/ComposableLambdaKt;->composableLambdaInstance(IZLjava/lang/Object;)Landroidx/compose/runtime/internal/ComposableLambda;
@@ -119,9 +168,9 @@
 
     sput-object v0, Landroidx/compose/material/ComposableSingletons$ScaffoldKt;->lambda-3:Lkotlin/jvm/functions/Function3;
 
-    const v0, -0x35af2423
+    const v0, 0x994ad7
 
-    .line 165
+    .line 192
     sget-object v1, Landroidx/compose/material/ComposableSingletons$ScaffoldKt$lambda-4$1;->INSTANCE:Landroidx/compose/material/ComposableSingletons$ScaffoldKt$lambda-4$1;
 
     invoke-static {v0, v2, v1}, Landroidx/compose/runtime/internal/ComposableLambdaKt;->composableLambdaInstance(IZLjava/lang/Object;)Landroidx/compose/runtime/internal/ComposableLambda;
@@ -131,6 +180,58 @@
     check-cast v0, Lkotlin/jvm/functions/Function2;
 
     sput-object v0, Landroidx/compose/material/ComposableSingletons$ScaffoldKt;->lambda-4:Lkotlin/jvm/functions/Function2;
+
+    const v0, 0x7b58a0cd
+
+    .line 317
+    sget-object v1, Landroidx/compose/material/ComposableSingletons$ScaffoldKt$lambda-5$1;->INSTANCE:Landroidx/compose/material/ComposableSingletons$ScaffoldKt$lambda-5$1;
+
+    invoke-static {v0, v2, v1}, Landroidx/compose/runtime/internal/ComposableLambdaKt;->composableLambdaInstance(IZLjava/lang/Object;)Landroidx/compose/runtime/internal/ComposableLambda;
+
+    move-result-object v0
+
+    check-cast v0, Lkotlin/jvm/functions/Function2;
+
+    sput-object v0, Landroidx/compose/material/ComposableSingletons$ScaffoldKt;->lambda-5:Lkotlin/jvm/functions/Function2;
+
+    const v0, -0xdd1c243
+
+    .line 318
+    sget-object v1, Landroidx/compose/material/ComposableSingletons$ScaffoldKt$lambda-6$1;->INSTANCE:Landroidx/compose/material/ComposableSingletons$ScaffoldKt$lambda-6$1;
+
+    invoke-static {v0, v2, v1}, Landroidx/compose/runtime/internal/ComposableLambdaKt;->composableLambdaInstance(IZLjava/lang/Object;)Landroidx/compose/runtime/internal/ComposableLambda;
+
+    move-result-object v0
+
+    check-cast v0, Lkotlin/jvm/functions/Function2;
+
+    sput-object v0, Landroidx/compose/material/ComposableSingletons$ScaffoldKt;->lambda-6:Lkotlin/jvm/functions/Function2;
+
+    const v0, -0x8cd8a30
+
+    .line 319
+    sget-object v1, Landroidx/compose/material/ComposableSingletons$ScaffoldKt$lambda-7$1;->INSTANCE:Landroidx/compose/material/ComposableSingletons$ScaffoldKt$lambda-7$1;
+
+    invoke-static {v0, v2, v1}, Landroidx/compose/runtime/internal/ComposableLambdaKt;->composableLambdaInstance(IZLjava/lang/Object;)Landroidx/compose/runtime/internal/ComposableLambda;
+
+    move-result-object v0
+
+    check-cast v0, Lkotlin/jvm/functions/Function3;
+
+    sput-object v0, Landroidx/compose/material/ComposableSingletons$ScaffoldKt;->lambda-7:Lkotlin/jvm/functions/Function3;
+
+    const v0, -0x35af2423
+
+    .line 320
+    sget-object v1, Landroidx/compose/material/ComposableSingletons$ScaffoldKt$lambda-8$1;->INSTANCE:Landroidx/compose/material/ComposableSingletons$ScaffoldKt$lambda-8$1;
+
+    invoke-static {v0, v2, v1}, Landroidx/compose/runtime/internal/ComposableLambdaKt;->composableLambdaInstance(IZLjava/lang/Object;)Landroidx/compose/runtime/internal/ComposableLambda;
+
+    move-result-object v0
+
+    check-cast v0, Lkotlin/jvm/functions/Function2;
+
+    sput-object v0, Landroidx/compose/material/ComposableSingletons$ScaffoldKt;->lambda-8:Lkotlin/jvm/functions/Function2;
 
     return-void
 .end method
@@ -214,6 +315,79 @@
     .end annotation
 
     sget-object p0, Landroidx/compose/material/ComposableSingletons$ScaffoldKt;->lambda-4:Lkotlin/jvm/functions/Function2;
+
+    return-object p0
+.end method
+
+.method public final getLambda-5$material_release()Lkotlin/jvm/functions/Function2;
+    .locals 0
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()",
+            "Lkotlin/jvm/functions/Function2<",
+            "Landroidx/compose/runtime/Composer;",
+            "Ljava/lang/Integer;",
+            "Lkotlin/Unit;",
+            ">;"
+        }
+    .end annotation
+
+    sget-object p0, Landroidx/compose/material/ComposableSingletons$ScaffoldKt;->lambda-5:Lkotlin/jvm/functions/Function2;
+
+    return-object p0
+.end method
+
+.method public final getLambda-6$material_release()Lkotlin/jvm/functions/Function2;
+    .locals 0
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()",
+            "Lkotlin/jvm/functions/Function2<",
+            "Landroidx/compose/runtime/Composer;",
+            "Ljava/lang/Integer;",
+            "Lkotlin/Unit;",
+            ">;"
+        }
+    .end annotation
+
+    sget-object p0, Landroidx/compose/material/ComposableSingletons$ScaffoldKt;->lambda-6:Lkotlin/jvm/functions/Function2;
+
+    return-object p0
+.end method
+
+.method public final getLambda-7$material_release()Lkotlin/jvm/functions/Function3;
+    .locals 0
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()",
+            "Lkotlin/jvm/functions/Function3<",
+            "Landroidx/compose/material/SnackbarHostState;",
+            "Landroidx/compose/runtime/Composer;",
+            "Ljava/lang/Integer;",
+            "Lkotlin/Unit;",
+            ">;"
+        }
+    .end annotation
+
+    sget-object p0, Landroidx/compose/material/ComposableSingletons$ScaffoldKt;->lambda-7:Lkotlin/jvm/functions/Function3;
+
+    return-object p0
+.end method
+
+.method public final getLambda-8$material_release()Lkotlin/jvm/functions/Function2;
+    .locals 0
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()",
+            "Lkotlin/jvm/functions/Function2<",
+            "Landroidx/compose/runtime/Composer;",
+            "Ljava/lang/Integer;",
+            "Lkotlin/Unit;",
+            ">;"
+        }
+    .end annotation
+
+    sget-object p0, Landroidx/compose/material/ComposableSingletons$ScaffoldKt;->lambda-8:Lkotlin/jvm/functions/Function2;
 
     return-object p0
 .end method

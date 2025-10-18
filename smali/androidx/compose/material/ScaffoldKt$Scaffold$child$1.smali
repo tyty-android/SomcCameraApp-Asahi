@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Landroidx/compose/material/ScaffoldKt;->Scaffold-27mzLpw(Landroidx/compose/ui/Modifier;Landroidx/compose/material/ScaffoldState;Lkotlin/jvm/functions/Function2;Lkotlin/jvm/functions/Function2;Lkotlin/jvm/functions/Function3;Lkotlin/jvm/functions/Function2;IZLkotlin/jvm/functions/Function3;ZLandroidx/compose/ui/graphics/Shape;FJJJJJLkotlin/jvm/functions/Function3;Landroidx/compose/runtime/Composer;III)V
+    value = Landroidx/compose/material/ScaffoldKt;->Scaffold-u4IkXBM(Landroidx/compose/foundation/layout/WindowInsets;Landroidx/compose/ui/Modifier;Landroidx/compose/material/ScaffoldState;Lkotlin/jvm/functions/Function2;Lkotlin/jvm/functions/Function2;Lkotlin/jvm/functions/Function3;Lkotlin/jvm/functions/Function2;IZLkotlin/jvm/functions/Function3;ZLandroidx/compose/ui/graphics/Shape;FJJJJJLkotlin/jvm/functions/Function3;Landroidx/compose/runtime/Composer;III)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -26,6 +26,10 @@
         "Lkotlin/Unit;",
         ">;"
     }
+.end annotation
+
+.annotation system Ldalvik/annotation/SourceDebugExtension;
+    value = "SMAP\nScaffold.kt\nKotlin\n*S Kotlin\n*F\n+ 1 Scaffold.kt\nandroidx/compose/material/ScaffoldKt$Scaffold$child$1\n+ 2 Composer.kt\nandroidx/compose/runtime/ComposerKt\n*L\n1#1,818:1\n1116#2,6:819\n*S KotlinDebug\n*F\n+ 1 Scaffold.kt\nandroidx/compose/material/ScaffoldKt$Scaffold$child$1\n*L\n212#1:819,6\n*E\n"
 .end annotation
 
 .annotation runtime Lkotlin/Metadata;
@@ -51,10 +55,6 @@
 
 
 # instance fields
-.field final synthetic $$dirty:I
-
-.field final synthetic $$dirty1:I
-
 .field final synthetic $backgroundColor:J
 
 .field final synthetic $bottomBar:Lkotlin/jvm/functions/Function2;
@@ -84,6 +84,8 @@
 
 .field final synthetic $contentColor:J
 
+.field final synthetic $contentWindowInsets:Landroidx/compose/foundation/layout/WindowInsets;
+
 .field final synthetic $floatingActionButton:Lkotlin/jvm/functions/Function2;
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -99,6 +101,8 @@
 .field final synthetic $floatingActionButtonPosition:I
 
 .field final synthetic $isFloatingActionButtonDocked:Z
+
+.field final synthetic $safeInsets:Landroidx/compose/material/MutableWindowInsets;
 
 .field final synthetic $scaffoldState:Landroidx/compose/material/ScaffoldState;
 
@@ -129,11 +133,14 @@
 
 
 # direct methods
-.method constructor <init>(JJIZILkotlin/jvm/functions/Function2;Lkotlin/jvm/functions/Function3;Lkotlin/jvm/functions/Function2;Lkotlin/jvm/functions/Function2;ILkotlin/jvm/functions/Function3;Landroidx/compose/material/ScaffoldState;)V
+.method constructor <init>(Landroidx/compose/material/MutableWindowInsets;Landroidx/compose/foundation/layout/WindowInsets;JJZILkotlin/jvm/functions/Function2;Lkotlin/jvm/functions/Function3;Lkotlin/jvm/functions/Function2;Lkotlin/jvm/functions/Function2;Lkotlin/jvm/functions/Function3;Landroidx/compose/material/ScaffoldState;)V
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "(JJIZI",
+            "(",
+            "Landroidx/compose/material/MutableWindowInsets;",
+            "Landroidx/compose/foundation/layout/WindowInsets;",
+            "JJZI",
             "Lkotlin/jvm/functions/Function2<",
             "-",
             "Landroidx/compose/runtime/Composer;",
@@ -163,7 +170,7 @@
             "-",
             "Ljava/lang/Integer;",
             "Lkotlin/Unit;",
-            ">;I",
+            ">;",
             "Lkotlin/jvm/functions/Function3<",
             "-",
             "Landroidx/compose/material/SnackbarHostState;",
@@ -178,25 +185,25 @@
         }
     .end annotation
 
-    iput-wide p1, p0, Landroidx/compose/material/ScaffoldKt$Scaffold$child$1;->$backgroundColor:J
+    iput-object p1, p0, Landroidx/compose/material/ScaffoldKt$Scaffold$child$1;->$safeInsets:Landroidx/compose/material/MutableWindowInsets;
 
-    iput-wide p3, p0, Landroidx/compose/material/ScaffoldKt$Scaffold$child$1;->$contentColor:J
+    iput-object p2, p0, Landroidx/compose/material/ScaffoldKt$Scaffold$child$1;->$contentWindowInsets:Landroidx/compose/foundation/layout/WindowInsets;
 
-    iput p5, p0, Landroidx/compose/material/ScaffoldKt$Scaffold$child$1;->$$dirty1:I
+    iput-wide p3, p0, Landroidx/compose/material/ScaffoldKt$Scaffold$child$1;->$backgroundColor:J
 
-    iput-boolean p6, p0, Landroidx/compose/material/ScaffoldKt$Scaffold$child$1;->$isFloatingActionButtonDocked:Z
+    iput-wide p5, p0, Landroidx/compose/material/ScaffoldKt$Scaffold$child$1;->$contentColor:J
 
-    iput p7, p0, Landroidx/compose/material/ScaffoldKt$Scaffold$child$1;->$floatingActionButtonPosition:I
+    iput-boolean p7, p0, Landroidx/compose/material/ScaffoldKt$Scaffold$child$1;->$isFloatingActionButtonDocked:Z
 
-    iput-object p8, p0, Landroidx/compose/material/ScaffoldKt$Scaffold$child$1;->$topBar:Lkotlin/jvm/functions/Function2;
+    iput p8, p0, Landroidx/compose/material/ScaffoldKt$Scaffold$child$1;->$floatingActionButtonPosition:I
 
-    iput-object p9, p0, Landroidx/compose/material/ScaffoldKt$Scaffold$child$1;->$content:Lkotlin/jvm/functions/Function3;
+    iput-object p9, p0, Landroidx/compose/material/ScaffoldKt$Scaffold$child$1;->$topBar:Lkotlin/jvm/functions/Function2;
 
-    iput-object p10, p0, Landroidx/compose/material/ScaffoldKt$Scaffold$child$1;->$floatingActionButton:Lkotlin/jvm/functions/Function2;
+    iput-object p10, p0, Landroidx/compose/material/ScaffoldKt$Scaffold$child$1;->$content:Lkotlin/jvm/functions/Function3;
 
-    iput-object p11, p0, Landroidx/compose/material/ScaffoldKt$Scaffold$child$1;->$bottomBar:Lkotlin/jvm/functions/Function2;
+    iput-object p11, p0, Landroidx/compose/material/ScaffoldKt$Scaffold$child$1;->$floatingActionButton:Lkotlin/jvm/functions/Function2;
 
-    iput p12, p0, Landroidx/compose/material/ScaffoldKt$Scaffold$child$1;->$$dirty:I
+    iput-object p12, p0, Landroidx/compose/material/ScaffoldKt$Scaffold$child$1;->$bottomBar:Lkotlin/jvm/functions/Function2;
 
     iput-object p13, p0, Landroidx/compose/material/ScaffoldKt$Scaffold$child$1;->$snackbarHost:Lkotlin/jvm/functions/Function3;
 
@@ -214,7 +221,7 @@
 .method public bridge synthetic invoke(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
 
-    .line 179
+    .line 209
     check-cast p1, Landroidx/compose/ui/Modifier;
 
     check-cast p2, Landroidx/compose/runtime/Composer;
@@ -233,7 +240,7 @@
 .end method
 
 .method public final invoke(Landroidx/compose/ui/Modifier;Landroidx/compose/runtime/Composer;I)V
-    .locals 23
+    .locals 20
 
     move-object/from16 v0, p0
 
@@ -241,11 +248,7 @@
 
     move-object/from16 v9, p2
 
-    const-string v2, "childModifier"
-
-    invoke-static {v1, v2}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string v2, "C179@8062L525:Scaffold.kt#jmzs0o"
+    const-string v2, "C209@9601L905:Scaffold.kt#jmzs0o"
 
     invoke-static {v9, v2}, Landroidx/compose/runtime/ComposerKt;->sourceInformation(Landroidx/compose/runtime/Composer;Ljava/lang/String;)V
 
@@ -281,7 +284,7 @@
 
     if-ne v3, v4, :cond_3
 
-    .line 180
+    .line 210
     invoke-interface/range {p2 .. p2}, Landroidx/compose/runtime/Composer;->getSkipping()Z
 
     move-result v3
@@ -290,13 +293,13 @@
 
     goto :goto_2
 
-    .line 192
+    .line 231
     :cond_2
     invoke-interface/range {p2 .. p2}, Landroidx/compose/runtime/Composer;->skipToGroupEnd()V
 
     goto/16 :goto_3
 
-    .line 180
+    .line 210
     :cond_3
     :goto_2
     invoke-static {}, Landroidx/compose/runtime/ComposerKt;->isTraceInProgress()Z
@@ -307,18 +310,84 @@
 
     const/4 v3, -0x1
 
-    const-string v4, "androidx.compose.material.Scaffold.<anonymous> (Scaffold.kt:178)"
+    const-string v4, "androidx.compose.material.Scaffold.<anonymous> (Scaffold.kt:209)"
 
-    const v5, 0x6caeea6c
+    const v5, -0xd1a6358
 
     invoke-static {v5, v2, v3, v4}, Landroidx/compose/runtime/ComposerKt;->traceEventStart(IIILjava/lang/String;)V
 
     :cond_4
-    iget-wide v3, v0, Landroidx/compose/material/ScaffoldKt$Scaffold$child$1;->$backgroundColor:J
+    const v2, -0x2d279c1c
 
-    iget-wide v5, v0, Landroidx/compose/material/ScaffoldKt$Scaffold$child$1;->$contentColor:J
+    .line 211
+    invoke-interface {v9, v2}, Landroidx/compose/runtime/Composer;->startReplaceableGroup(I)V
 
-    new-instance v7, Landroidx/compose/material/ScaffoldKt$Scaffold$child$1$1;
+    iget-object v2, v0, Landroidx/compose/material/ScaffoldKt$Scaffold$child$1;->$safeInsets:Landroidx/compose/material/MutableWindowInsets;
+
+    invoke-interface {v9, v2}, Landroidx/compose/runtime/Composer;->changed(Ljava/lang/Object;)Z
+
+    move-result v2
+
+    iget-object v3, v0, Landroidx/compose/material/ScaffoldKt$Scaffold$child$1;->$contentWindowInsets:Landroidx/compose/foundation/layout/WindowInsets;
+
+    invoke-interface {v9, v3}, Landroidx/compose/runtime/Composer;->changed(Ljava/lang/Object;)Z
+
+    move-result v3
+
+    or-int/2addr v2, v3
+
+    .line 212
+    iget-object v3, v0, Landroidx/compose/material/ScaffoldKt$Scaffold$child$1;->$safeInsets:Landroidx/compose/material/MutableWindowInsets;
+
+    iget-object v4, v0, Landroidx/compose/material/ScaffoldKt$Scaffold$child$1;->$contentWindowInsets:Landroidx/compose/foundation/layout/WindowInsets;
+
+    .line 819
+    invoke-interface/range {p2 .. p2}, Landroidx/compose/runtime/Composer;->rememberedValue()Ljava/lang/Object;
+
+    move-result-object v5
+
+    if-nez v2, :cond_5
+
+    .line 820
+    sget-object v2, Landroidx/compose/runtime/Composer;->Companion:Landroidx/compose/runtime/Composer$Companion;
+
+    invoke-virtual {v2}, Landroidx/compose/runtime/Composer$Companion;->getEmpty()Ljava/lang/Object;
+
+    move-result-object v2
+
+    if-ne v5, v2, :cond_6
+
+    .line 212
+    :cond_5
+    new-instance v2, Landroidx/compose/material/ScaffoldKt$Scaffold$child$1$1$1;
+
+    invoke-direct {v2, v3, v4}, Landroidx/compose/material/ScaffoldKt$Scaffold$child$1$1$1;-><init>(Landroidx/compose/material/MutableWindowInsets;Landroidx/compose/foundation/layout/WindowInsets;)V
+
+    move-object v5, v2
+
+    check-cast v5, Lkotlin/jvm/functions/Function1;
+
+    .line 822
+    invoke-interface {v9, v5}, Landroidx/compose/runtime/Composer;->updateRememberedValue(Ljava/lang/Object;)V
+
+    .line 212
+    :cond_6
+    check-cast v5, Lkotlin/jvm/functions/Function1;
+
+    invoke-interface/range {p2 .. p2}, Landroidx/compose/runtime/Composer;->endReplaceableGroup()V
+
+    invoke-static {v1, v5}, Landroidx/compose/foundation/layout/WindowInsetsPaddingKt;->onConsumedWindowInsetsChanged(Landroidx/compose/ui/Modifier;Lkotlin/jvm/functions/Function1;)Landroidx/compose/ui/Modifier;
+
+    move-result-object v1
+
+    .line 216
+    iget-wide v2, v0, Landroidx/compose/material/ScaffoldKt$Scaffold$child$1;->$backgroundColor:J
+
+    .line 217
+    iget-wide v4, v0, Landroidx/compose/material/ScaffoldKt$Scaffold$child$1;->$contentColor:J
+
+    .line 218
+    new-instance v6, Landroidx/compose/material/ScaffoldKt$Scaffold$child$1$2;
 
     iget-boolean v11, v0, Landroidx/compose/material/ScaffoldKt$Scaffold$child$1;->$isFloatingActionButtonDocked:Z
 
@@ -330,91 +399,70 @@
 
     iget-object v15, v0, Landroidx/compose/material/ScaffoldKt$Scaffold$child$1;->$floatingActionButton:Lkotlin/jvm/functions/Function2;
 
+    iget-object v7, v0, Landroidx/compose/material/ScaffoldKt$Scaffold$child$1;->$safeInsets:Landroidx/compose/material/MutableWindowInsets;
+
     iget-object v8, v0, Landroidx/compose/material/ScaffoldKt$Scaffold$child$1;->$bottomBar:Lkotlin/jvm/functions/Function2;
 
-    iget v10, v0, Landroidx/compose/material/ScaffoldKt$Scaffold$child$1;->$$dirty:I
+    iget-object v10, v0, Landroidx/compose/material/ScaffoldKt$Scaffold$child$1;->$snackbarHost:Lkotlin/jvm/functions/Function3;
 
-    iget v1, v0, Landroidx/compose/material/ScaffoldKt$Scaffold$child$1;->$$dirty1:I
+    iget-object v0, v0, Landroidx/compose/material/ScaffoldKt$Scaffold$child$1;->$scaffoldState:Landroidx/compose/material/ScaffoldState;
 
-    move-wide/from16 v21, v5
+    move-object/from16 v18, v10
 
-    iget-object v5, v0, Landroidx/compose/material/ScaffoldKt$Scaffold$child$1;->$snackbarHost:Lkotlin/jvm/functions/Function3;
+    move-object v10, v6
 
-    iget-object v6, v0, Landroidx/compose/material/ScaffoldKt$Scaffold$child$1;->$scaffoldState:Landroidx/compose/material/ScaffoldState;
+    move-object/from16 v16, v7
 
-    move/from16 v17, v10
+    move-object/from16 v17, v8
 
-    move-object v10, v7
+    move-object/from16 v19, v0
 
-    move-object/from16 v16, v8
+    invoke-direct/range {v10 .. v19}, Landroidx/compose/material/ScaffoldKt$Scaffold$child$1$2;-><init>(ZILkotlin/jvm/functions/Function2;Lkotlin/jvm/functions/Function3;Lkotlin/jvm/functions/Function2;Landroidx/compose/material/MutableWindowInsets;Lkotlin/jvm/functions/Function2;Lkotlin/jvm/functions/Function3;Landroidx/compose/material/ScaffoldState;)V
 
-    move/from16 v18, v1
+    const v0, 0x69ad25e4
 
-    move-object/from16 v19, v5
+    const/4 v7, 0x1
 
-    move-object/from16 v20, v6
+    invoke-static {v9, v0, v7, v6}, Landroidx/compose/runtime/internal/ComposableLambdaKt;->composableLambda(Landroidx/compose/runtime/Composer;IZLjava/lang/Object;)Landroidx/compose/runtime/internal/ComposableLambda;
 
-    invoke-direct/range {v10 .. v20}, Landroidx/compose/material/ScaffoldKt$Scaffold$child$1$1;-><init>(ZILkotlin/jvm/functions/Function2;Lkotlin/jvm/functions/Function3;Lkotlin/jvm/functions/Function2;Lkotlin/jvm/functions/Function2;IILkotlin/jvm/functions/Function3;Landroidx/compose/material/ScaffoldState;)V
+    move-result-object v0
 
-    const v1, -0x434af050
-
-    const/4 v5, 0x1
-
-    invoke-static {v9, v1, v5, v7}, Landroidx/compose/runtime/internal/ComposableLambdaKt;->composableLambda(Landroidx/compose/runtime/Composer;IZLjava/lang/Object;)Landroidx/compose/runtime/internal/ComposableLambda;
-
-    move-result-object v1
-
-    move-object v8, v1
+    move-object v8, v0
 
     check-cast v8, Lkotlin/jvm/functions/Function2;
 
-    const/high16 v1, 0x180000
-
-    and-int/lit8 v2, v2, 0xe
-
-    or-int/2addr v1, v2
-
-    iget v0, v0, Landroidx/compose/material/ScaffoldKt$Scaffold$child$1;->$$dirty1:I
-
-    shr-int/lit8 v2, v0, 0x9
-
-    and-int/lit16 v2, v2, 0x380
-
-    or-int/2addr v1, v2
-
-    shr-int/lit8 v0, v0, 0x9
-
-    and-int/lit16 v0, v0, 0x1c00
-
-    or-int v10, v1, v0
+    const/high16 v10, 0x180000
 
     const/16 v11, 0x32
-
-    const/4 v1, 0x0
 
     const/4 v6, 0x0
 
     const/4 v7, 0x0
 
-    move-object/from16 v0, p1
+    const/4 v12, 0x0
 
-    move-wide v2, v3
+    move-object v0, v1
 
-    move-wide/from16 v4, v21
+    move-object v1, v6
+
+    move-object v6, v7
+
+    move v7, v12
 
     move-object/from16 v9, p2
 
+    .line 210
     invoke-static/range {v0 .. v11}, Landroidx/compose/material/SurfaceKt;->Surface-F-jzlyU(Landroidx/compose/ui/Modifier;Landroidx/compose/ui/graphics/Shape;JJLandroidx/compose/foundation/BorderStroke;FLkotlin/jvm/functions/Function2;Landroidx/compose/runtime/Composer;II)V
 
     invoke-static {}, Landroidx/compose/runtime/ComposerKt;->isTraceInProgress()Z
 
     move-result v0
 
-    if-eqz v0, :cond_5
+    if-eqz v0, :cond_7
 
     invoke-static {}, Landroidx/compose/runtime/ComposerKt;->traceEventEnd()V
 
-    :cond_5
+    :cond_7
     :goto_3
     return-void
 .end method

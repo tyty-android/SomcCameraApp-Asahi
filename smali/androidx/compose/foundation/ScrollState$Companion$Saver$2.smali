@@ -79,7 +79,7 @@
 .method public final invoke(I)Landroidx/compose/foundation/ScrollState;
     .locals 0
 
-    .line 196
+    .line 201
     new-instance p0, Landroidx/compose/foundation/ScrollState;
 
     invoke-direct {p0, p1}, Landroidx/compose/foundation/ScrollState;-><init>(I)V
@@ -90,7 +90,7 @@
 .method public bridge synthetic invoke(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
 
-    .line 194
+    .line 199
     check-cast p1, Ljava/lang/Number;
 
     invoke-virtual {p1}, Ljava/lang/Number;->intValue()I

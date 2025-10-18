@@ -21,7 +21,7 @@
 .method constructor <init>()V
     .locals 0
 
-    .line 1563
+    .line 1569
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -42,8 +42,10 @@
         }
     .end annotation
 
-    .line 1567
-    sget-object p0, Ljp/co/sony/mc/camera/configuration/parameters/ShutterSound;->ALL:Ljp/co/sony/mc/camera/configuration/parameters/ShutterSound;
+    .line 1573
+    invoke-static {}, Ljp/co/sony/mc/camera/configuration/parameters/FastCapture;->getDefault()Ljp/co/sony/mc/camera/configuration/parameters/FastCapture;
+
+    move-result-object p0
 
     return-object p0
 .end method

@@ -8,12 +8,12 @@
 
 # annotations
 .annotation system Ldalvik/annotation/SourceDebugExtension;
-    value = "SMAP\nAndroidPath.android.kt\nKotlin\n*S Kotlin\n*F\n+ 1 AndroidPath.android.kt\nandroidx/compose/ui/graphics/AndroidPath\n+ 2 AndroidPath.android.kt\nandroidx/compose/ui/graphics/AndroidPath_androidKt\n*L\n1#1,244:1\n35#2,5:245\n35#2,5:250\n*S KotlinDebug\n*F\n+ 1 AndroidPath.android.kt\nandroidx/compose/ui/graphics/AndroidPath\n*L\n172#1:245,5\n220#1:250,5\n*E\n"
+    value = "SMAP\nAndroidPath.android.kt\nKotlin\n*S Kotlin\n*F\n+ 1 AndroidPath.android.kt\nandroidx/compose/ui/graphics/AndroidPath\n+ 2 fake.kt\nkotlin/jvm/internal/FakeKt\n+ 3 AndroidPath.android.kt\nandroidx/compose/ui/graphics/AndroidPath_androidKt\n*L\n1#1,258:1\n1#2:259\n35#3,5:260\n35#3,5:265\n*S KotlinDebug\n*F\n+ 1 AndroidPath.android.kt\nandroidx/compose/ui/graphics/AndroidPath\n*L\n181#1:260,5\n234#1:265,5\n*E\n"
 .end annotation
 
 .annotation runtime Lkotlin/Metadata;
     d1 = {
-        "\u0000l\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0008\n\u0002\u0010\u000b\n\u0002\u0008\u0005\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0014\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0002\n\u0002\u0008\u0002\n\u0002\u0010\u0007\n\u0002\u0008\u0008\n\u0002\u0018\u0002\n\u0002\u0008\u0005\n\u0002\u0018\u0002\n\u0002\u0008\u0013\n\u0002\u0018\u0002\n\u0002\u0008\u0013\n\u0002\u0018\u0002\n\u0002\u0008\u0006\u0018\u00002\u00020\u0001B\u000f\u0012\u0008\u0008\u0002\u0010\u0002\u001a\u00020\u0003\u00a2\u0006\u0002\u0010\u0004J\u0010\u0010\u001a\u001a\u00020\u000f2\u0006\u0010\u001b\u001a\u00020\u001cH\u0002J \u0010\u001d\u001a\u00020\u001e2\u0006\u0010\u001f\u001a\u00020\u001c2\u0006\u0010 \u001a\u00020!2\u0006\u0010\"\u001a\u00020!H\u0016J \u0010#\u001a\u00020\u001e2\u0006\u0010\u001f\u001a\u00020\u001c2\u0006\u0010$\u001a\u00020!2\u0006\u0010%\u001a\u00020!H\u0016J\u0010\u0010&\u001a\u00020\u001e2\u0006\u0010\u001f\u001a\u00020\u001cH\u0016J%\u0010\'\u001a\u00020\u001e2\u0006\u0010(\u001a\u00020\u00012\u0006\u0010)\u001a\u00020*H\u0016\u00f8\u0001\u0001\u00f8\u0001\u0000\u00a2\u0006\u0004\u0008+\u0010,J\u0010\u0010-\u001a\u00020\u001e2\u0006\u0010\u001b\u001a\u00020\u001cH\u0016J\u0010\u0010.\u001a\u00020\u001e2\u0006\u0010/\u001a\u000200H\u0016J(\u00101\u001a\u00020\u001e2\u0006\u0010\u001b\u001a\u00020\u001c2\u0006\u0010 \u001a\u00020!2\u0006\u0010\"\u001a\u00020!2\u0006\u00102\u001a\u00020\u000fH\u0016J\u0008\u00103\u001a\u00020\u001eH\u0016J8\u00104\u001a\u00020\u001e2\u0006\u00105\u001a\u00020!2\u0006\u00106\u001a\u00020!2\u0006\u00107\u001a\u00020!2\u0006\u00108\u001a\u00020!2\u0006\u00109\u001a\u00020!2\u0006\u0010:\u001a\u00020!H\u0016J\u0008\u0010;\u001a\u00020\u001cH\u0016J\u0018\u0010<\u001a\u00020\u001e2\u0006\u0010=\u001a\u00020!2\u0006\u0010>\u001a\u00020!H\u0016J\u0018\u0010?\u001a\u00020\u001e2\u0006\u0010=\u001a\u00020!2\u0006\u0010>\u001a\u00020!H\u0016J-\u0010@\u001a\u00020\u000f2\u0006\u0010A\u001a\u00020\u00012\u0006\u0010B\u001a\u00020\u00012\u0006\u0010C\u001a\u00020DH\u0016\u00f8\u0001\u0001\u00f8\u0001\u0000\u00a2\u0006\u0004\u0008E\u0010FJ(\u0010G\u001a\u00020\u001e2\u0006\u00105\u001a\u00020!2\u0006\u00106\u001a\u00020!2\u0006\u00107\u001a\u00020!2\u0006\u00108\u001a\u00020!H\u0016J8\u0010H\u001a\u00020\u001e2\u0006\u0010I\u001a\u00020!2\u0006\u0010J\u001a\u00020!2\u0006\u0010K\u001a\u00020!2\u0006\u0010L\u001a\u00020!2\u0006\u0010M\u001a\u00020!2\u0006\u0010N\u001a\u00020!H\u0016J\u0018\u0010O\u001a\u00020\u001e2\u0006\u0010P\u001a\u00020!2\u0006\u0010Q\u001a\u00020!H\u0016J\u0018\u0010R\u001a\u00020\u001e2\u0006\u0010P\u001a\u00020!2\u0006\u0010Q\u001a\u00020!H\u0016J(\u0010S\u001a\u00020\u001e2\u0006\u0010I\u001a\u00020!2\u0006\u0010J\u001a\u00020!2\u0006\u0010K\u001a\u00020!2\u0006\u0010L\u001a\u00020!H\u0016J\u0008\u0010T\u001a\u00020\u001eH\u0016J\u0008\u0010U\u001a\u00020\u001eH\u0016J\u001d\u0010V\u001a\u00020\u001e2\u0006\u0010W\u001a\u00020XH\u0016\u00f8\u0001\u0001\u00f8\u0001\u0000\u00a2\u0006\u0004\u0008Y\u0010ZJ\u001d\u0010[\u001a\u00020\u001e2\u0006\u0010)\u001a\u00020*H\u0016\u00f8\u0001\u0001\u00f8\u0001\u0000\u00a2\u0006\u0004\u0008\\\u0010]R-\u0010\u0007\u001a\u00020\u00062\u0006\u0010\u0005\u001a\u00020\u00068V@VX\u0096\u000e\u00f8\u0001\u0000\u00f8\u0001\u0001\u00f8\u0001\u0002\u00a2\u0006\u000c\u001a\u0004\u0008\u0008\u0010\t\"\u0004\u0008\n\u0010\u000bR\u0011\u0010\u0002\u001a\u00020\u0003\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\u000c\u0010\rR\u001a\u0010\u000e\u001a\u00020\u000f8VX\u0096\u0004\u00a2\u0006\u000c\u0012\u0004\u0008\u0010\u0010\u0011\u001a\u0004\u0008\u000e\u0010\u0012R\u0014\u0010\u0013\u001a\u00020\u000f8VX\u0096\u0004\u00a2\u0006\u0006\u001a\u0004\u0008\u0013\u0010\u0012R\u000e\u0010\u0014\u001a\u00020\u0015X\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u0016\u001a\u00020\u0017X\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u0018\u001a\u00020\u0019X\u0082\u0004\u00a2\u0006\u0002\n\u0000\u0082\u0002\u000f\n\u0002\u0008\u0019\n\u0005\u0008\u00a1\u001e0\u0001\n\u0002\u0008!\u00a8\u0006^"
+        "\u0000l\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0008\n\u0002\u0010\u000b\n\u0002\u0008\u0005\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0014\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0002\n\u0002\u0008\u0002\n\u0002\u0010\u0007\n\u0002\u0008\u0008\n\u0002\u0018\u0002\n\u0002\u0008\u0005\n\u0002\u0018\u0002\n\u0002\u0008\u0013\n\u0002\u0018\u0002\n\u0002\u0008\u0013\n\u0002\u0018\u0002\n\u0002\u0008\u0006\u0018\u00002\u00020\u0001B\u000f\u0012\u0008\u0008\u0002\u0010\u0002\u001a\u00020\u0003\u00a2\u0006\u0002\u0010\u0004J\u0010\u0010\u001a\u001a\u00020\u000f2\u0006\u0010\u001b\u001a\u00020\u001cH\u0002J \u0010\u001d\u001a\u00020\u001e2\u0006\u0010\u001f\u001a\u00020\u001c2\u0006\u0010 \u001a\u00020!2\u0006\u0010\"\u001a\u00020!H\u0016J \u0010#\u001a\u00020\u001e2\u0006\u0010\u001f\u001a\u00020\u001c2\u0006\u0010$\u001a\u00020!2\u0006\u0010%\u001a\u00020!H\u0016J\u0010\u0010&\u001a\u00020\u001e2\u0006\u0010\u001f\u001a\u00020\u001cH\u0016J\"\u0010\'\u001a\u00020\u001e2\u0006\u0010(\u001a\u00020\u00012\u0006\u0010)\u001a\u00020*H\u0016\u00f8\u0001\u0000\u00a2\u0006\u0004\u0008+\u0010,J\u0010\u0010-\u001a\u00020\u001e2\u0006\u0010\u001b\u001a\u00020\u001cH\u0016J\u0010\u0010.\u001a\u00020\u001e2\u0006\u0010/\u001a\u000200H\u0016J(\u00101\u001a\u00020\u001e2\u0006\u0010\u001b\u001a\u00020\u001c2\u0006\u0010 \u001a\u00020!2\u0006\u0010\"\u001a\u00020!2\u0006\u00102\u001a\u00020\u000fH\u0016J\u0008\u00103\u001a\u00020\u001eH\u0016J8\u00104\u001a\u00020\u001e2\u0006\u00105\u001a\u00020!2\u0006\u00106\u001a\u00020!2\u0006\u00107\u001a\u00020!2\u0006\u00108\u001a\u00020!2\u0006\u00109\u001a\u00020!2\u0006\u0010:\u001a\u00020!H\u0016J\u0008\u0010;\u001a\u00020\u001cH\u0016J\u0018\u0010<\u001a\u00020\u001e2\u0006\u0010=\u001a\u00020!2\u0006\u0010>\u001a\u00020!H\u0016J\u0018\u0010?\u001a\u00020\u001e2\u0006\u0010=\u001a\u00020!2\u0006\u0010>\u001a\u00020!H\u0016J*\u0010@\u001a\u00020\u000f2\u0006\u0010A\u001a\u00020\u00012\u0006\u0010B\u001a\u00020\u00012\u0006\u0010C\u001a\u00020DH\u0016\u00f8\u0001\u0000\u00a2\u0006\u0004\u0008E\u0010FJ(\u0010G\u001a\u00020\u001e2\u0006\u00105\u001a\u00020!2\u0006\u00106\u001a\u00020!2\u0006\u00107\u001a\u00020!2\u0006\u00108\u001a\u00020!H\u0016J8\u0010H\u001a\u00020\u001e2\u0006\u0010I\u001a\u00020!2\u0006\u0010J\u001a\u00020!2\u0006\u0010K\u001a\u00020!2\u0006\u0010L\u001a\u00020!2\u0006\u0010M\u001a\u00020!2\u0006\u0010N\u001a\u00020!H\u0016J\u0018\u0010O\u001a\u00020\u001e2\u0006\u0010P\u001a\u00020!2\u0006\u0010Q\u001a\u00020!H\u0016J\u0018\u0010R\u001a\u00020\u001e2\u0006\u0010P\u001a\u00020!2\u0006\u0010Q\u001a\u00020!H\u0016J(\u0010S\u001a\u00020\u001e2\u0006\u0010I\u001a\u00020!2\u0006\u0010J\u001a\u00020!2\u0006\u0010K\u001a\u00020!2\u0006\u0010L\u001a\u00020!H\u0016J\u0008\u0010T\u001a\u00020\u001eH\u0016J\u0008\u0010U\u001a\u00020\u001eH\u0016J\u001a\u0010V\u001a\u00020\u001e2\u0006\u0010W\u001a\u00020XH\u0016\u00f8\u0001\u0000\u00a2\u0006\u0004\u0008Y\u0010ZJ\u001a\u0010[\u001a\u00020\u001e2\u0006\u0010)\u001a\u00020*H\u0016\u00f8\u0001\u0000\u00a2\u0006\u0004\u0008\\\u0010]R*\u0010\u0007\u001a\u00020\u00062\u0006\u0010\u0005\u001a\u00020\u00068V@VX\u0096\u000e\u00f8\u0001\u0000\u00f8\u0001\u0001\u00a2\u0006\u000c\u001a\u0004\u0008\u0008\u0010\t\"\u0004\u0008\n\u0010\u000bR\u0011\u0010\u0002\u001a\u00020\u0003\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\u000c\u0010\rR\u001a\u0010\u000e\u001a\u00020\u000f8VX\u0096\u0004\u00a2\u0006\u000c\u0012\u0004\u0008\u0010\u0010\u0011\u001a\u0004\u0008\u000e\u0010\u0012R\u0014\u0010\u0013\u001a\u00020\u000f8VX\u0096\u0004\u00a2\u0006\u0006\u001a\u0004\u0008\u0013\u0010\u0012R\u0010\u0010\u0014\u001a\u0004\u0018\u00010\u0015X\u0082\u000e\u00a2\u0006\u0002\n\u0000R\u0010\u0010\u0016\u001a\u0004\u0018\u00010\u0017X\u0082\u000e\u00a2\u0006\u0002\n\u0000R\u0010\u0010\u0018\u001a\u0004\u0018\u00010\u0019X\u0082\u000e\u00a2\u0006\u0002\n\u0000\u0082\u0002\u000b\n\u0005\u0008\u00a1\u001e0\u0001\n\u0002\u0008!\u00a8\u0006^"
     }
     d2 = {
         "Landroidx/compose/ui/graphics/AndroidPath;",
@@ -125,11 +125,11 @@
 # instance fields
 .field private final internalPath:Landroid/graphics/Path;
 
-.field private final mMatrix:Landroid/graphics/Matrix;
+.field private mMatrix:Landroid/graphics/Matrix;
 
-.field private final radii:[F
+.field private radii:[F
 
-.field private final rectF:Landroid/graphics/RectF;
+.field private rectF:Landroid/graphics/RectF;
 
 
 # direct methods
@@ -146,38 +146,13 @@
 .end method
 
 .method public constructor <init>(Landroid/graphics/Path;)V
-    .locals 1
-
-    const-string v0, "internalPath"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+    .locals 0
 
     .line 41
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 42
     iput-object p1, p0, Landroidx/compose/ui/graphics/AndroidPath;->internalPath:Landroid/graphics/Path;
-
-    .line 46
-    new-instance p1, Landroid/graphics/RectF;
-
-    invoke-direct {p1}, Landroid/graphics/RectF;-><init>()V
-
-    iput-object p1, p0, Landroidx/compose/ui/graphics/AndroidPath;->rectF:Landroid/graphics/RectF;
-
-    const/16 p1, 0x8
-
-    .line 47
-    new-array p1, p1, [F
-
-    iput-object p1, p0, Landroidx/compose/ui/graphics/AndroidPath;->radii:[F
-
-    .line 48
-    new-instance p1, Landroid/graphics/Matrix;
-
-    invoke-direct {p1}, Landroid/graphics/Matrix;-><init>()V
-
-    iput-object p1, p0, Landroidx/compose/ui/graphics/AndroidPath;->mMatrix:Landroid/graphics/Matrix;
 
     return-void
 .end method
@@ -204,7 +179,7 @@
 .method private final _rectIsValid(Landroidx/compose/ui/geometry/Rect;)Z
     .locals 1
 
-    .line 229
+    .line 243
     invoke-virtual {p1}, Landroidx/compose/ui/geometry/Rect;->getLeft()F
 
     move-result p0
@@ -219,7 +194,7 @@
 
     if-eqz p0, :cond_3
 
-    .line 232
+    .line 246
     invoke-virtual {p1}, Landroidx/compose/ui/geometry/Rect;->getTop()F
 
     move-result p0
@@ -232,7 +207,7 @@
 
     if-eqz p0, :cond_2
 
-    .line 235
+    .line 249
     invoke-virtual {p1}, Landroidx/compose/ui/geometry/Rect;->getRight()F
 
     move-result p0
@@ -245,7 +220,7 @@
 
     if-eqz p0, :cond_1
 
-    .line 238
+    .line 252
     invoke-virtual {p1}, Landroidx/compose/ui/geometry/Rect;->getBottom()F
 
     move-result p0
@@ -273,7 +248,7 @@
 
     throw p0
 
-    .line 235
+    .line 249
     :cond_1
     new-instance p0, Ljava/lang/IllegalStateException;
 
@@ -287,7 +262,7 @@
 
     throw p0
 
-    .line 232
+    .line 246
     :cond_2
     new-instance p0, Ljava/lang/IllegalStateException;
 
@@ -301,7 +276,7 @@
 
     throw p0
 
-    .line 229
+    .line 243
     :cond_3
     new-instance p0, Ljava/lang/IllegalStateException;
 
@@ -327,19 +302,29 @@
 .method public addArc(Landroidx/compose/ui/geometry/Rect;FF)V
     .locals 4
 
-    const-string v0, "oval"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 150
+    .line 153
     invoke-direct {p0, p1}, Landroidx/compose/ui/graphics/AndroidPath;->_rectIsValid(Landroidx/compose/ui/geometry/Rect;)Z
 
     move-result v0
 
-    if-eqz v0, :cond_0
+    if-eqz v0, :cond_1
 
-    .line 151
+    .line 154
     iget-object v0, p0, Landroidx/compose/ui/graphics/AndroidPath;->rectF:Landroid/graphics/RectF;
+
+    if-nez v0, :cond_0
+
+    new-instance v0, Landroid/graphics/RectF;
+
+    invoke-direct {v0}, Landroid/graphics/RectF;-><init>()V
+
+    iput-object v0, p0, Landroidx/compose/ui/graphics/AndroidPath;->rectF:Landroid/graphics/RectF;
+
+    .line 155
+    :cond_0
+    iget-object v0, p0, Landroidx/compose/ui/graphics/AndroidPath;->rectF:Landroid/graphics/RectF;
+
+    invoke-static {v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;)V
 
     invoke-virtual {p1}, Landroidx/compose/ui/geometry/Rect;->getLeft()F
 
@@ -359,20 +344,22 @@
 
     invoke-virtual {v0, v1, v2, v3, p1}, Landroid/graphics/RectF;->set(FFFF)V
 
-    .line 152
+    .line 156
     iget-object p1, p0, Landroidx/compose/ui/graphics/AndroidPath;->internalPath:Landroid/graphics/Path;
 
     iget-object p0, p0, Landroidx/compose/ui/graphics/AndroidPath;->rectF:Landroid/graphics/RectF;
+
+    invoke-static {p0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;)V
 
     invoke-virtual {p1, p0, p2, p3}, Landroid/graphics/Path;->addArc(Landroid/graphics/RectF;FF)V
 
     return-void
 
-    .line 150
-    :cond_0
+    .line 153
+    :cond_1
     new-instance p0, Ljava/lang/IllegalStateException;
 
-    const-string p1, "Check failed."
+    const-string p1, "invalid rect"
 
     invoke-virtual {p1}, Ljava/lang/Object;->toString()Ljava/lang/String;
 
@@ -384,13 +371,9 @@
 .end method
 
 .method public addArcRad(Landroidx/compose/ui/geometry/Rect;FF)V
-    .locals 1
+    .locals 0
 
-    const-string v0, "oval"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 146
+    .line 149
     invoke-static {p2}, Landroidx/compose/ui/graphics/DegreesKt;->degrees(F)F
 
     move-result p2
@@ -407,12 +390,22 @@
 .method public addOval(Landroidx/compose/ui/geometry/Rect;)V
     .locals 4
 
-    const-string v0, "oval"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 141
+    .line 143
     iget-object v0, p0, Landroidx/compose/ui/graphics/AndroidPath;->rectF:Landroid/graphics/RectF;
+
+    if-nez v0, :cond_0
+
+    new-instance v0, Landroid/graphics/RectF;
+
+    invoke-direct {v0}, Landroid/graphics/RectF;-><init>()V
+
+    iput-object v0, p0, Landroidx/compose/ui/graphics/AndroidPath;->rectF:Landroid/graphics/RectF;
+
+    .line 144
+    :cond_0
+    iget-object v0, p0, Landroidx/compose/ui/graphics/AndroidPath;->rectF:Landroid/graphics/RectF;
+
+    invoke-static {v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;)V
 
     invoke-virtual {p1}, Landroidx/compose/ui/geometry/Rect;->getLeft()F
 
@@ -432,10 +425,12 @@
 
     invoke-virtual {v0, v1, v2, v3, p1}, Landroid/graphics/RectF;->set(FFFF)V
 
-    .line 142
+    .line 145
     iget-object p1, p0, Landroidx/compose/ui/graphics/AndroidPath;->internalPath:Landroid/graphics/Path;
 
     iget-object p0, p0, Landroidx/compose/ui/graphics/AndroidPath;->rectF:Landroid/graphics/RectF;
+
+    invoke-static {p0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;)V
 
     sget-object v0, Landroid/graphics/Path$Direction;->CCW:Landroid/graphics/Path$Direction;
 
@@ -447,26 +442,22 @@
 .method public addPath-Uv8p0NA(Landroidx/compose/ui/graphics/Path;J)V
     .locals 1
 
-    const-string v0, "path"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 172
+    .line 181
     iget-object p0, p0, Landroidx/compose/ui/graphics/AndroidPath;->internalPath:Landroid/graphics/Path;
 
-    .line 245
+    .line 260
     instance-of v0, p1, Landroidx/compose/ui/graphics/AndroidPath;
 
     if-eqz v0, :cond_0
 
-    .line 246
+    .line 261
     check-cast p1, Landroidx/compose/ui/graphics/AndroidPath;
 
     invoke-virtual {p1}, Landroidx/compose/ui/graphics/AndroidPath;->getInternalPath()Landroid/graphics/Path;
 
     move-result-object p1
 
-    .line 172
+    .line 181
     invoke-static {p2, p3}, Landroidx/compose/ui/geometry/Offset;->getX-impl(J)F
 
     move-result v0
@@ -479,7 +470,7 @@
 
     return-void
 
-    .line 248
+    .line 263
     :cond_0
     new-instance p0, Ljava/lang/UnsupportedOperationException;
 
@@ -493,19 +484,29 @@
 .method public addRect(Landroidx/compose/ui/geometry/Rect;)V
     .locals 4
 
-    const-string v0, "rect"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 135
+    .line 136
     invoke-direct {p0, p1}, Landroidx/compose/ui/graphics/AndroidPath;->_rectIsValid(Landroidx/compose/ui/geometry/Rect;)Z
 
     move-result v0
 
-    if-eqz v0, :cond_0
+    if-eqz v0, :cond_1
 
-    .line 136
+    .line 137
     iget-object v0, p0, Landroidx/compose/ui/graphics/AndroidPath;->rectF:Landroid/graphics/RectF;
+
+    if-nez v0, :cond_0
+
+    new-instance v0, Landroid/graphics/RectF;
+
+    invoke-direct {v0}, Landroid/graphics/RectF;-><init>()V
+
+    iput-object v0, p0, Landroidx/compose/ui/graphics/AndroidPath;->rectF:Landroid/graphics/RectF;
+
+    .line 138
+    :cond_0
+    iget-object v0, p0, Landroidx/compose/ui/graphics/AndroidPath;->rectF:Landroid/graphics/RectF;
+
+    invoke-static {v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;)V
 
     invoke-virtual {p1}, Landroidx/compose/ui/geometry/Rect;->getLeft()F
 
@@ -525,10 +526,12 @@
 
     invoke-virtual {v0, v1, v2, v3, p1}, Landroid/graphics/RectF;->set(FFFF)V
 
-    .line 137
+    .line 139
     iget-object p1, p0, Landroidx/compose/ui/graphics/AndroidPath;->internalPath:Landroid/graphics/Path;
 
     iget-object p0, p0, Landroidx/compose/ui/graphics/AndroidPath;->rectF:Landroid/graphics/RectF;
+
+    invoke-static {p0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;)V
 
     sget-object v0, Landroid/graphics/Path$Direction;->CCW:Landroid/graphics/Path$Direction;
 
@@ -536,11 +539,11 @@
 
     return-void
 
-    .line 135
-    :cond_0
+    .line 136
+    :cond_1
     new-instance p0, Ljava/lang/IllegalStateException;
 
-    const-string p1, "Check failed."
+    const-string p1, "invalid rect"
 
     invoke-virtual {p1}, Ljava/lang/Object;->toString()Ljava/lang/String;
 
@@ -554,12 +557,22 @@
 .method public addRoundRect(Landroidx/compose/ui/geometry/RoundRect;)V
     .locals 5
 
-    const-string v0, "roundRect"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 156
+    .line 160
     iget-object v0, p0, Landroidx/compose/ui/graphics/AndroidPath;->rectF:Landroid/graphics/RectF;
+
+    if-nez v0, :cond_0
+
+    new-instance v0, Landroid/graphics/RectF;
+
+    invoke-direct {v0}, Landroid/graphics/RectF;-><init>()V
+
+    iput-object v0, p0, Landroidx/compose/ui/graphics/AndroidPath;->rectF:Landroid/graphics/RectF;
+
+    .line 161
+    :cond_0
+    iget-object v0, p0, Landroidx/compose/ui/graphics/AndroidPath;->rectF:Landroid/graphics/RectF;
+
+    invoke-static {v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;)V
 
     invoke-virtual {p1}, Landroidx/compose/ui/geometry/RoundRect;->getLeft()F
 
@@ -579,9 +592,24 @@
 
     invoke-virtual {v0, v1, v2, v3, v4}, Landroid/graphics/RectF;->set(FFFF)V
 
-    .line 157
+    .line 163
     iget-object v0, p0, Landroidx/compose/ui/graphics/AndroidPath;->radii:[F
 
+    if-nez v0, :cond_1
+
+    const/16 v0, 0x8
+
+    new-array v0, v0, [F
+
+    iput-object v0, p0, Landroidx/compose/ui/graphics/AndroidPath;->radii:[F
+
+    .line 164
+    :cond_1
+    iget-object v0, p0, Landroidx/compose/ui/graphics/AndroidPath;->radii:[F
+
+    invoke-static {v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;)V
+
+    .line 165
     invoke-virtual {p1}, Landroidx/compose/ui/geometry/RoundRect;->getTopLeftCornerRadius-kKHJgLs()J
 
     move-result-wide v1
@@ -594,9 +622,7 @@
 
     aput v1, v0, v2
 
-    .line 158
-    iget-object v0, p0, Landroidx/compose/ui/graphics/AndroidPath;->radii:[F
-
+    .line 166
     invoke-virtual {p1}, Landroidx/compose/ui/geometry/RoundRect;->getTopLeftCornerRadius-kKHJgLs()J
 
     move-result-wide v1
@@ -609,9 +635,7 @@
 
     aput v1, v0, v2
 
-    .line 160
-    iget-object v0, p0, Landroidx/compose/ui/graphics/AndroidPath;->radii:[F
-
+    .line 168
     invoke-virtual {p1}, Landroidx/compose/ui/geometry/RoundRect;->getTopRightCornerRadius-kKHJgLs()J
 
     move-result-wide v1
@@ -624,9 +648,7 @@
 
     aput v1, v0, v2
 
-    .line 161
-    iget-object v0, p0, Landroidx/compose/ui/graphics/AndroidPath;->radii:[F
-
+    .line 169
     invoke-virtual {p1}, Landroidx/compose/ui/geometry/RoundRect;->getTopRightCornerRadius-kKHJgLs()J
 
     move-result-wide v1
@@ -639,9 +661,7 @@
 
     aput v1, v0, v2
 
-    .line 163
-    iget-object v0, p0, Landroidx/compose/ui/graphics/AndroidPath;->radii:[F
-
+    .line 171
     invoke-virtual {p1}, Landroidx/compose/ui/geometry/RoundRect;->getBottomRightCornerRadius-kKHJgLs()J
 
     move-result-wide v1
@@ -654,9 +674,7 @@
 
     aput v1, v0, v2
 
-    .line 164
-    iget-object v0, p0, Landroidx/compose/ui/graphics/AndroidPath;->radii:[F
-
+    .line 172
     invoke-virtual {p1}, Landroidx/compose/ui/geometry/RoundRect;->getBottomRightCornerRadius-kKHJgLs()J
 
     move-result-wide v1
@@ -669,9 +687,7 @@
 
     aput v1, v0, v2
 
-    .line 166
-    iget-object v0, p0, Landroidx/compose/ui/graphics/AndroidPath;->radii:[F
-
+    .line 174
     invoke-virtual {p1}, Landroidx/compose/ui/geometry/RoundRect;->getBottomLeftCornerRadius-kKHJgLs()J
 
     move-result-wide v1
@@ -684,9 +700,7 @@
 
     aput v1, v0, v2
 
-    .line 167
-    iget-object v0, p0, Landroidx/compose/ui/graphics/AndroidPath;->radii:[F
-
+    .line 175
     invoke-virtual {p1}, Landroidx/compose/ui/geometry/RoundRect;->getBottomLeftCornerRadius-kKHJgLs()J
 
     move-result-wide v1
@@ -699,12 +713,16 @@
 
     aput p1, v0, v1
 
-    .line 168
+    .line 177
     iget-object p1, p0, Landroidx/compose/ui/graphics/AndroidPath;->internalPath:Landroid/graphics/Path;
 
     iget-object v0, p0, Landroidx/compose/ui/graphics/AndroidPath;->rectF:Landroid/graphics/RectF;
 
+    invoke-static {v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;)V
+
     iget-object p0, p0, Landroidx/compose/ui/graphics/AndroidPath;->radii:[F
+
+    invoke-static {p0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;)V
 
     sget-object v1, Landroid/graphics/Path$Direction;->CCW:Landroid/graphics/Path$Direction;
 
@@ -715,10 +733,6 @@
 
 .method public arcTo(Landroidx/compose/ui/geometry/Rect;FFZ)V
     .locals 4
-
-    const-string v0, "rect"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 121
     invoke-virtual {p1}, Landroidx/compose/ui/geometry/Rect;->getLeft()F
@@ -743,15 +757,31 @@
     .line 125
     iget-object v3, p0, Landroidx/compose/ui/graphics/AndroidPath;->rectF:Landroid/graphics/RectF;
 
+    if-nez v3, :cond_0
+
+    new-instance v3, Landroid/graphics/RectF;
+
+    invoke-direct {v3}, Landroid/graphics/RectF;-><init>()V
+
+    iput-object v3, p0, Landroidx/compose/ui/graphics/AndroidPath;->rectF:Landroid/graphics/RectF;
+
+    .line 126
+    :cond_0
+    iget-object v3, p0, Landroidx/compose/ui/graphics/AndroidPath;->rectF:Landroid/graphics/RectF;
+
+    invoke-static {v3}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;)V
+
     invoke-virtual {v3, v0, v1, v2, p1}, Landroid/graphics/RectF;->set(FFFF)V
 
-    .line 126
+    .line 127
     iget-object p1, p0, Landroidx/compose/ui/graphics/AndroidPath;->internalPath:Landroid/graphics/Path;
 
-    .line 127
+    .line 128
     iget-object p0, p0, Landroidx/compose/ui/graphics/AndroidPath;->rectF:Landroid/graphics/RectF;
 
-    .line 126
+    invoke-static {p0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;)V
+
+    .line 127
     invoke-virtual {p1, p0, p2, p3, p4}, Landroid/graphics/Path;->arcTo(Landroid/graphics/RectF;FFZ)V
 
     return-void
@@ -760,7 +790,7 @@
 .method public close()V
     .locals 0
 
-    .line 176
+    .line 185
     iget-object p0, p0, Landroidx/compose/ui/graphics/AndroidPath;->internalPath:Landroid/graphics/Path;
 
     invoke-virtual {p0}, Landroid/graphics/Path;->close()V
@@ -794,42 +824,49 @@
 .method public getBounds()Landroidx/compose/ui/geometry/Rect;
     .locals 4
 
-    .line 199
-    iget-object v0, p0, Landroidx/compose/ui/graphics/AndroidPath;->internalPath:Landroid/graphics/Path;
+    .line 210
+    iget-object v0, p0, Landroidx/compose/ui/graphics/AndroidPath;->rectF:Landroid/graphics/RectF;
 
-    iget-object v1, p0, Landroidx/compose/ui/graphics/AndroidPath;->rectF:Landroid/graphics/RectF;
+    if-nez v0, :cond_0
 
-    const/4 v2, 0x1
+    new-instance v0, Landroid/graphics/RectF;
 
-    invoke-virtual {v0, v1, v2}, Landroid/graphics/Path;->computeBounds(Landroid/graphics/RectF;Z)V
+    invoke-direct {v0}, Landroid/graphics/RectF;-><init>()V
 
-    .line 200
-    new-instance v0, Landroidx/compose/ui/geometry/Rect;
+    iput-object v0, p0, Landroidx/compose/ui/graphics/AndroidPath;->rectF:Landroid/graphics/RectF;
 
-    .line 201
-    iget-object v1, p0, Landroidx/compose/ui/graphics/AndroidPath;->rectF:Landroid/graphics/RectF;
+    .line 211
+    :cond_0
+    iget-object v0, p0, Landroidx/compose/ui/graphics/AndroidPath;->rectF:Landroid/graphics/RectF;
 
-    iget v1, v1, Landroid/graphics/RectF;->left:F
+    invoke-static {v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;)V
 
-    .line 202
-    iget-object v2, p0, Landroidx/compose/ui/graphics/AndroidPath;->rectF:Landroid/graphics/RectF;
+    .line 212
+    iget-object p0, p0, Landroidx/compose/ui/graphics/AndroidPath;->internalPath:Landroid/graphics/Path;
 
-    iget v2, v2, Landroid/graphics/RectF;->top:F
+    const/4 v1, 0x1
 
-    .line 203
-    iget-object v3, p0, Landroidx/compose/ui/graphics/AndroidPath;->rectF:Landroid/graphics/RectF;
+    invoke-virtual {p0, v0, v1}, Landroid/graphics/Path;->computeBounds(Landroid/graphics/RectF;Z)V
 
-    iget v3, v3, Landroid/graphics/RectF;->right:F
+    .line 213
+    new-instance p0, Landroidx/compose/ui/geometry/Rect;
 
-    .line 204
-    iget-object p0, p0, Landroidx/compose/ui/graphics/AndroidPath;->rectF:Landroid/graphics/RectF;
+    .line 214
+    iget v1, v0, Landroid/graphics/RectF;->left:F
 
-    iget p0, p0, Landroid/graphics/RectF;->bottom:F
+    .line 215
+    iget v2, v0, Landroid/graphics/RectF;->top:F
 
-    .line 200
-    invoke-direct {v0, v1, v2, v3, p0}, Landroidx/compose/ui/geometry/Rect;-><init>(FFFF)V
+    .line 216
+    iget v3, v0, Landroid/graphics/RectF;->right:F
 
-    return-object v0
+    .line 217
+    iget v0, v0, Landroid/graphics/RectF;->bottom:F
+
+    .line 213
+    invoke-direct {p0, v1, v2, v3, v0}, Landroidx/compose/ui/geometry/Rect;-><init>(FFFF)V
+
+    return-object p0
 .end method
 
 .method public getFillType-Rg-k1Os()I
@@ -878,7 +915,7 @@
 .method public isConvex()Z
     .locals 0
 
-    .line 224
+    .line 238
     iget-object p0, p0, Landroidx/compose/ui/graphics/AndroidPath;->internalPath:Landroid/graphics/Path;
 
     invoke-virtual {p0}, Landroid/graphics/Path;->isConvex()Z
@@ -891,7 +928,7 @@
 .method public isEmpty()Z
     .locals 0
 
-    .line 226
+    .line 240
     iget-object p0, p0, Landroidx/compose/ui/graphics/AndroidPath;->internalPath:Landroid/graphics/Path;
 
     invoke-virtual {p0}, Landroid/graphics/Path;->isEmpty()Z
@@ -926,15 +963,7 @@
 .method public op-N5in7k0(Landroidx/compose/ui/graphics/Path;Landroidx/compose/ui/graphics/Path;I)Z
     .locals 2
 
-    const-string v0, "path1"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string v0, "path2"
-
-    invoke-static {p2, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 214
+    .line 228
     sget-object v0, Landroidx/compose/ui/graphics/PathOperation;->Companion:Landroidx/compose/ui/graphics/PathOperation$Companion;
 
     invoke-virtual {v0}, Landroidx/compose/ui/graphics/PathOperation$Companion;->getDifference-b3I0S0c()I
@@ -951,7 +980,7 @@
 
     goto :goto_0
 
-    .line 215
+    .line 229
     :cond_0
     sget-object v0, Landroidx/compose/ui/graphics/PathOperation;->Companion:Landroidx/compose/ui/graphics/PathOperation$Companion;
 
@@ -969,7 +998,7 @@
 
     goto :goto_0
 
-    .line 216
+    .line 230
     :cond_1
     sget-object v0, Landroidx/compose/ui/graphics/PathOperation;->Companion:Landroidx/compose/ui/graphics/PathOperation$Companion;
 
@@ -987,7 +1016,7 @@
 
     goto :goto_0
 
-    .line 217
+    .line 231
     :cond_2
     sget-object v0, Landroidx/compose/ui/graphics/PathOperation;->Companion:Landroidx/compose/ui/graphics/PathOperation$Companion;
 
@@ -1005,48 +1034,48 @@
 
     goto :goto_0
 
-    .line 218
+    .line 232
     :cond_3
     sget-object p3, Landroid/graphics/Path$Op;->XOR:Landroid/graphics/Path$Op;
 
-    .line 220
+    .line 234
     :goto_0
     iget-object p0, p0, Landroidx/compose/ui/graphics/AndroidPath;->internalPath:Landroid/graphics/Path;
 
-    .line 250
+    .line 265
     instance-of v0, p1, Landroidx/compose/ui/graphics/AndroidPath;
 
     const-string v1, "Unable to obtain android.graphics.Path"
 
     if-eqz v0, :cond_5
 
-    .line 251
+    .line 266
     check-cast p1, Landroidx/compose/ui/graphics/AndroidPath;
 
     invoke-virtual {p1}, Landroidx/compose/ui/graphics/AndroidPath;->getInternalPath()Landroid/graphics/Path;
 
     move-result-object p1
 
-    .line 250
+    .line 265
     instance-of v0, p2, Landroidx/compose/ui/graphics/AndroidPath;
 
     if-eqz v0, :cond_4
 
-    .line 251
+    .line 266
     check-cast p2, Landroidx/compose/ui/graphics/AndroidPath;
 
     invoke-virtual {p2}, Landroidx/compose/ui/graphics/AndroidPath;->getInternalPath()Landroid/graphics/Path;
 
     move-result-object p2
 
-    .line 220
+    .line 234
     invoke-virtual {p0, p1, p2, p3}, Landroid/graphics/Path;->op(Landroid/graphics/Path;Landroid/graphics/Path;Landroid/graphics/Path$Op;)Z
 
     move-result p0
 
     return p0
 
-    .line 253
+    .line 268
     :cond_4
     new-instance p0, Ljava/lang/UnsupportedOperationException;
 
@@ -1132,7 +1161,7 @@
 .method public reset()V
     .locals 0
 
-    .line 180
+    .line 189
     iget-object p0, p0, Landroidx/compose/ui/graphics/AndroidPath;->internalPath:Landroid/graphics/Path;
 
     invoke-virtual {p0}, Landroid/graphics/Path;->reset()V
@@ -1143,7 +1172,7 @@
 .method public rewind()V
     .locals 0
 
-    .line 184
+    .line 193
     iget-object p0, p0, Landroidx/compose/ui/graphics/AndroidPath;->internalPath:Landroid/graphics/Path;
 
     invoke-virtual {p0}, Landroid/graphics/Path;->rewind()V
@@ -1189,19 +1218,31 @@
 .method public transform-58bKbWc([F)V
     .locals 1
 
-    const-string v0, "matrix"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 194
+    .line 204
     iget-object v0, p0, Landroidx/compose/ui/graphics/AndroidPath;->mMatrix:Landroid/graphics/Matrix;
+
+    if-nez v0, :cond_0
+
+    new-instance v0, Landroid/graphics/Matrix;
+
+    invoke-direct {v0}, Landroid/graphics/Matrix;-><init>()V
+
+    iput-object v0, p0, Landroidx/compose/ui/graphics/AndroidPath;->mMatrix:Landroid/graphics/Matrix;
+
+    .line 205
+    :cond_0
+    iget-object v0, p0, Landroidx/compose/ui/graphics/AndroidPath;->mMatrix:Landroid/graphics/Matrix;
+
+    invoke-static {v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;)V
 
     invoke-static {v0, p1}, Landroidx/compose/ui/graphics/AndroidMatrixConversions_androidKt;->setFrom-EL8BTi8(Landroid/graphics/Matrix;[F)V
 
-    .line 195
+    .line 206
     iget-object p1, p0, Landroidx/compose/ui/graphics/AndroidPath;->internalPath:Landroid/graphics/Path;
 
     iget-object p0, p0, Landroidx/compose/ui/graphics/AndroidPath;->mMatrix:Landroid/graphics/Matrix;
+
+    invoke-static {p0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;)V
 
     invoke-virtual {p1, p0}, Landroid/graphics/Path;->transform(Landroid/graphics/Matrix;)V
 
@@ -1211,13 +1252,30 @@
 .method public translate-k-4lQ0M(J)V
     .locals 2
 
-    .line 188
+    .line 197
     iget-object v0, p0, Landroidx/compose/ui/graphics/AndroidPath;->mMatrix:Landroid/graphics/Matrix;
+
+    if-nez v0, :cond_0
+
+    new-instance v0, Landroid/graphics/Matrix;
+
+    invoke-direct {v0}, Landroid/graphics/Matrix;-><init>()V
+
+    iput-object v0, p0, Landroidx/compose/ui/graphics/AndroidPath;->mMatrix:Landroid/graphics/Matrix;
+
+    goto :goto_0
+
+    .line 198
+    :cond_0
+    invoke-static {v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;)V
 
     invoke-virtual {v0}, Landroid/graphics/Matrix;->reset()V
 
-    .line 189
+    .line 199
+    :goto_0
     iget-object v0, p0, Landroidx/compose/ui/graphics/AndroidPath;->mMatrix:Landroid/graphics/Matrix;
+
+    invoke-static {v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;)V
 
     invoke-static {p1, p2}, Landroidx/compose/ui/geometry/Offset;->getX-impl(J)F
 
@@ -1229,10 +1287,12 @@
 
     invoke-virtual {v0, v1, p1}, Landroid/graphics/Matrix;->setTranslate(FF)V
 
-    .line 190
+    .line 200
     iget-object p1, p0, Landroidx/compose/ui/graphics/AndroidPath;->internalPath:Landroid/graphics/Path;
 
     iget-object p0, p0, Landroidx/compose/ui/graphics/AndroidPath;->mMatrix:Landroid/graphics/Matrix;
+
+    invoke-static {p0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;)V
 
     invoke-virtual {p1, p0}, Landroid/graphics/Path;->transform(Landroid/graphics/Matrix;)V
 

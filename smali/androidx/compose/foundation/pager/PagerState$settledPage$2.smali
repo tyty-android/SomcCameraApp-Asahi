@@ -67,7 +67,7 @@
 .method public final invoke()Ljava/lang/Integer;
     .locals 1
 
-    .line 307
+    .line 330
     iget-object v0, p0, Landroidx/compose/foundation/pager/PagerState$settledPage$2;->this$0:Landroidx/compose/foundation/pager/PagerState;
 
     invoke-virtual {v0}, Landroidx/compose/foundation/pager/PagerState;->isScrollInProgress()Z
@@ -76,7 +76,7 @@
 
     if-eqz v0, :cond_0
 
-    .line 308
+    .line 331
     iget-object p0, p0, Landroidx/compose/foundation/pager/PagerState$settledPage$2;->this$0:Landroidx/compose/foundation/pager/PagerState;
 
     invoke-static {p0}, Landroidx/compose/foundation/pager/PagerState;->access$getSettledPageState(Landroidx/compose/foundation/pager/PagerState;)I
@@ -85,7 +85,7 @@
 
     goto :goto_0
 
-    .line 310
+    .line 333
     :cond_0
     iget-object p0, p0, Landroidx/compose/foundation/pager/PagerState$settledPage$2;->this$0:Landroidx/compose/foundation/pager/PagerState;
 
@@ -104,7 +104,7 @@
 .method public bridge synthetic invoke()Ljava/lang/Object;
     .locals 0
 
-    .line 306
+    .line 329
     invoke-virtual {p0}, Landroidx/compose/foundation/pager/PagerState$settledPage$2;->invoke()Ljava/lang/Integer;
 
     move-result-object p0

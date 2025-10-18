@@ -21,7 +21,7 @@
 .method constructor <init>()V
     .locals 0
 
-    .line 1309
+    .line 1315
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -42,8 +42,8 @@
         }
     .end annotation
 
-    .line 1313
-    invoke-static {}, Ljp/co/sony/mc/camera/configuration/parameters/RemoteControl;->values()[Ljp/co/sony/mc/camera/configuration/parameters/RemoteControl;
+    .line 1319
+    invoke-static {}, Ljp/co/sony/mc/camera/configuration/parameters/MemoryRecall;->values()[Ljp/co/sony/mc/camera/configuration/parameters/MemoryRecall;
 
     move-result-object p0
 

@@ -1,11 +1,11 @@
 .class public final Landroidx/lifecycle/LifecycleController;
 .super Ljava/lang/Object;
-.source "LifecycleController.kt"
+.source "LifecycleController.jvm.kt"
 
 
 # annotations
 .annotation system Ldalvik/annotation/SourceDebugExtension;
-    value = "SMAP\nLifecycleController.kt\nKotlin\n*S Kotlin\n*F\n+ 1 LifecycleController.kt\nandroidx/lifecycle/LifecycleController\n*L\n1#1,70:1\n57#1,3:71\n57#1,3:74\n*S KotlinDebug\n*F\n+ 1 LifecycleController.kt\nandroidx/lifecycle/LifecycleController\n*L\n49#1:71,3\n36#1:74,3\n*E\n"
+    value = "SMAP\nLifecycleController.jvm.kt\nKotlin\n*S Kotlin\n*F\n+ 1 LifecycleController.jvm.kt\nandroidx/lifecycle/LifecycleController\n*L\n1#1,71:1\n57#1,3:72\n57#1,3:75\n*S KotlinDebug\n*F\n+ 1 LifecycleController.jvm.kt\nandroidx/lifecycle/LifecycleController\n*L\n49#1:72,3\n36#1:75,3\n*E\n"
 .end annotation
 
 .annotation runtime Lkotlin/Metadata;
@@ -111,10 +111,10 @@
 
     const/4 p2, 0x0
 
-    .line 71
+    .line 72
     invoke-static {p4, p2, p1, p2}, Lkotlinx/coroutines/Job$DefaultImpls;->cancel$default(Lkotlinx/coroutines/Job;Ljava/util/concurrent/CancellationException;ILjava/lang/Object;)V
 
-    .line 72
+    .line 73
     invoke-virtual {p0}, Landroidx/lifecycle/LifecycleController;->finish()V
 
     goto :goto_0
@@ -181,10 +181,10 @@
 
     const/4 p3, 0x0
 
-    .line 74
+    .line 75
     invoke-static {p1, p3, p2, p3}, Lkotlinx/coroutines/Job$DefaultImpls;->cancel$default(Lkotlinx/coroutines/Job;Ljava/util/concurrent/CancellationException;ILjava/lang/Object;)V
 
-    .line 75
+    .line 76
     invoke-virtual {p0}, Landroidx/lifecycle/LifecycleController;->finish()V
 
     goto :goto_0

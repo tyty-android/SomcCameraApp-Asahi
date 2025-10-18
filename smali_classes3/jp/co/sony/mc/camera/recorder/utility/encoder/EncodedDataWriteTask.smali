@@ -63,36 +63,40 @@
 .end method
 
 .method private awaitEncoderFormat()Z
-    .locals 4
+    .locals 7
 
     .line 150
     sget-boolean v0, Ljp/co/sony/mc/camera/recorder/utility/encoder/EncodedDataWriteTask;->TRACE:Z
 
+    const/4 v1, 0x0
+
+    const/4 v2, 0x1
+
     if-eqz v0, :cond_0
 
-    new-instance v0, Ljava/lang/StringBuilder;
+    new-array v0, v2, [Ljava/lang/String;
 
-    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
+    new-instance v3, Ljava/lang/StringBuilder;
 
-    iget-object v1, p0, Ljp/co/sony/mc/camera/recorder/utility/encoder/EncodedDataWriteTask;->mName:Ljava/lang/String;
+    invoke-direct {v3}, Ljava/lang/StringBuilder;-><init>()V
 
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    iget-object v4, p0, Ljp/co/sony/mc/camera/recorder/utility/encoder/EncodedDataWriteTask;->mName:Ljava/lang/String;
 
-    move-result-object v0
+    invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    const-string v1, " awaitEncoderFormat E"
+    move-result-object v3
 
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    const-string v4, " awaitEncoderFormat E"
 
-    move-result-object v0
+    invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    move-result-object v3
 
-    move-result-object v0
+    invoke-virtual {v3}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    filled-new-array {v0}, [Ljava/lang/String;
+    move-result-object v3
 
-    move-result-object v0
+    aput-object v3, v0, v1
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
@@ -107,41 +111,43 @@
     :goto_0
     invoke-static {}, Ljp/co/sony/mc/camera/recorder/utility/encoder/EncodedDataWriteTask;->canceled()Z
 
-    move-result v1
+    move-result v3
 
-    if-nez v1, :cond_4
+    if-nez v3, :cond_4
 
     .line 154
-    iget-object v1, p0, Ljp/co/sony/mc/camera/recorder/utility/encoder/EncodedDataWriteTask;->mCodec:Landroid/media/MediaCodec;
+    iget-object v3, p0, Ljp/co/sony/mc/camera/recorder/utility/encoder/EncodedDataWriteTask;->mCodec:Landroid/media/MediaCodec;
 
-    const-wide/32 v2, 0x5f5e100
+    const-wide/32 v4, 0x5f5e100
 
-    invoke-virtual {v1, v0, v2, v3}, Landroid/media/MediaCodec;->dequeueOutputBuffer(Landroid/media/MediaCodec$BufferInfo;J)I
+    invoke-virtual {v3, v0, v4, v5}, Landroid/media/MediaCodec;->dequeueOutputBuffer(Landroid/media/MediaCodec$BufferInfo;J)I
 
-    move-result v1
+    move-result v3
 
-    const/4 v2, -0x2
+    const/4 v4, -0x2
 
-    if-ne v1, v2, :cond_3
+    if-ne v3, v4, :cond_3
 
     .line 158
     sget-boolean v0, Ljp/co/sony/mc/camera/recorder/utility/encoder/EncodedDataWriteTask;->TRACE:Z
 
     if-eqz v0, :cond_2
 
-    new-instance v0, Ljava/lang/StringBuilder;
+    new-array v0, v2, [Ljava/lang/String;
 
-    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
+    new-instance v3, Ljava/lang/StringBuilder;
+
+    invoke-direct {v3}, Ljava/lang/StringBuilder;-><init>()V
 
     iget-object p0, p0, Ljp/co/sony/mc/camera/recorder/utility/encoder/EncodedDataWriteTask;->mName:Ljava/lang/String;
 
-    invoke-virtual {v0, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v3, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object p0
 
-    const-string v0, " INFO_OUTPUT_FORMAT_CHANGED"
+    const-string v3, " INFO_OUTPUT_FORMAT_CHANGED"
 
-    invoke-virtual {p0, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {p0, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object p0
 
@@ -149,52 +155,48 @@
 
     move-result-object p0
 
-    filled-new-array {p0}, [Ljava/lang/String;
+    aput-object p0, v0, v1
 
-    move-result-object p0
-
-    invoke-static {p0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
+    invoke-static {v0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
     :cond_2
-    const/4 p0, 0x1
-
-    return p0
+    return v2
 
     .line 162
     :cond_3
-    sget-boolean v2, Ljp/co/sony/mc/camera/recorder/utility/encoder/EncodedDataWriteTask;->TRACE:Z
+    sget-boolean v4, Ljp/co/sony/mc/camera/recorder/utility/encoder/EncodedDataWriteTask;->TRACE:Z
 
-    if-eqz v2, :cond_1
+    if-eqz v4, :cond_1
 
-    new-instance v2, Ljava/lang/StringBuilder;
+    new-array v4, v2, [Ljava/lang/String;
 
-    invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
+    new-instance v5, Ljava/lang/StringBuilder;
 
-    iget-object v3, p0, Ljp/co/sony/mc/camera/recorder/utility/encoder/EncodedDataWriteTask;->mName:Ljava/lang/String;
+    invoke-direct {v5}, Ljava/lang/StringBuilder;-><init>()V
 
-    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    iget-object v6, p0, Ljp/co/sony/mc/camera/recorder/utility/encoder/EncodedDataWriteTask;->mName:Ljava/lang/String;
 
-    move-result-object v2
+    invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    const-string v3, " INFO_OUTPUT:"
+    move-result-object v5
 
-    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    const-string v6, " INFO_OUTPUT:"
 
-    move-result-object v2
+    invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v2, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+    move-result-object v5
 
-    move-result-object v1
+    invoke-virtual {v5, v3}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    move-result-object v3
 
-    move-result-object v1
+    invoke-virtual {v3}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    filled-new-array {v1}, [Ljava/lang/String;
+    move-result-object v3
 
-    move-result-object v1
+    aput-object v3, v4, v1
 
-    invoke-static {v1}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
+    invoke-static {v4}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
     goto :goto_0
 
@@ -204,19 +206,21 @@
 
     if-eqz v0, :cond_5
 
-    new-instance v0, Ljava/lang/StringBuilder;
+    new-array v0, v2, [Ljava/lang/String;
 
-    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
+    new-instance v2, Ljava/lang/StringBuilder;
+
+    invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
 
     iget-object p0, p0, Ljp/co/sony/mc/camera/recorder/utility/encoder/EncodedDataWriteTask;->mName:Ljava/lang/String;
 
-    invoke-virtual {v0, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v2, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object p0
 
-    const-string v0, " awaitEncoderFormat X"
+    const-string v2, " awaitEncoderFormat X"
 
-    invoke-virtual {p0, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {p0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object p0
 
@@ -224,16 +228,12 @@
 
     move-result-object p0
 
-    filled-new-array {p0}, [Ljava/lang/String;
+    aput-object p0, v0, v1
 
-    move-result-object p0
-
-    invoke-static {p0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
+    invoke-static {v0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
     :cond_5
-    const/4 p0, 0x0
-
-    return p0
+    return v1
 .end method
 
 .method private static canceled()Z
@@ -254,7 +254,7 @@
 
 # virtual methods
 .method public run()V
-    .locals 9
+    .locals 10
 
     .line 52
     invoke-direct {p0}, Ljp/co/sony/mc/camera/recorder/utility/encoder/EncodedDataWriteTask;->awaitEncoderFormat()Z
@@ -353,37 +353,37 @@
 
     new-array v4, v5, [Ljava/lang/String;
 
-    new-instance v5, Ljava/lang/StringBuilder;
+    new-instance v7, Ljava/lang/StringBuilder;
 
-    invoke-direct {v5}, Ljava/lang/StringBuilder;-><init>()V
+    invoke-direct {v7}, Ljava/lang/StringBuilder;-><init>()V
 
-    iget-object v7, p0, Ljp/co/sony/mc/camera/recorder/utility/encoder/EncodedDataWriteTask;->mName:Ljava/lang/String;
+    iget-object v8, p0, Ljp/co/sony/mc/camera/recorder/utility/encoder/EncodedDataWriteTask;->mName:Ljava/lang/String;
 
-    invoke-virtual {v5, v7}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v7, v8}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    move-result-object v5
+    move-result-object v7
 
-    const-string v7, " ADD TRACK ("
+    const-string v8, " ADD TRACK ("
 
-    invoke-virtual {v5, v7}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v7, v8}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    move-result-object v5
+    move-result-object v7
 
-    invoke-virtual {v5, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+    invoke-virtual {v7, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
-    move-result-object v5
+    move-result-object v7
 
-    const-string v7, "): X"
+    const-string v8, "): X"
 
-    invoke-virtual {v5, v7}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v7, v8}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    move-result-object v5
+    move-result-object v7
 
-    invoke-virtual {v5}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-virtual {v7}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    move-result-object v5
+    move-result-object v7
 
-    aput-object v5, v4, v6
+    aput-object v7, v4, v6
 
     invoke-static {v4}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
@@ -431,29 +431,29 @@
 
     if-eqz v2, :cond_4
 
-    new-instance v2, Ljava/lang/StringBuilder;
+    new-array v2, v5, [Ljava/lang/String;
 
-    invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
+    new-instance v3, Ljava/lang/StringBuilder;
 
-    iget-object v3, p0, Ljp/co/sony/mc/camera/recorder/utility/encoder/EncodedDataWriteTask;->mName:Ljava/lang/String;
+    invoke-direct {v3}, Ljava/lang/StringBuilder;-><init>()V
 
-    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    iget-object v4, p0, Ljp/co/sony/mc/camera/recorder/utility/encoder/EncodedDataWriteTask;->mName:Ljava/lang/String;
 
-    move-result-object v2
+    invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    const-string v3, " INFO_TRY_AGAIN_LATER"
+    move-result-object v3
 
-    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    const-string v4, " INFO_TRY_AGAIN_LATER"
 
-    move-result-object v2
+    invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    move-result-object v3
 
-    move-result-object v2
+    invoke-virtual {v3}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    filled-new-array {v2}, [Ljava/lang/String;
+    move-result-object v3
 
-    move-result-object v2
+    aput-object v3, v2, v6
 
     invoke-static {v2}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
@@ -470,29 +470,29 @@
 
     if-eqz v0, :cond_d
 
-    new-instance v0, Ljava/lang/StringBuilder;
+    new-array v0, v5, [Ljava/lang/String;
 
-    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
+    new-instance v1, Ljava/lang/StringBuilder;
 
-    iget-object v1, p0, Ljp/co/sony/mc/camera/recorder/utility/encoder/EncodedDataWriteTask;->mName:Ljava/lang/String;
+    invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
 
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    iget-object v2, p0, Ljp/co/sony/mc/camera/recorder/utility/encoder/EncodedDataWriteTask;->mName:Ljava/lang/String;
 
-    move-result-object v0
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    const-string v1, " CANCELED"
+    move-result-object v1
 
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    const-string v2, " CANCELED"
 
-    move-result-object v0
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    move-result-object v1
 
-    move-result-object v0
+    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    filled-new-array {v0}, [Ljava/lang/String;
+    move-result-object v1
 
-    move-result-object v0
+    aput-object v1, v0, v6
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
@@ -523,47 +523,47 @@
 
     if-eqz v3, :cond_7
 
-    new-instance v3, Ljava/lang/StringBuilder;
+    new-array v3, v5, [Ljava/lang/String;
 
-    invoke-direct {v3}, Ljava/lang/StringBuilder;-><init>()V
+    new-instance v7, Ljava/lang/StringBuilder;
 
-    iget-object v5, p0, Ljp/co/sony/mc/camera/recorder/utility/encoder/EncodedDataWriteTask;->mName:Ljava/lang/String;
+    invoke-direct {v7}, Ljava/lang/StringBuilder;-><init>()V
 
-    invoke-virtual {v3, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    iget-object v8, p0, Ljp/co/sony/mc/camera/recorder/utility/encoder/EncodedDataWriteTask;->mName:Ljava/lang/String;
 
-    move-result-object v3
+    invoke-virtual {v7, v8}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    const-string v5, " PULL SAMPLE DATA presentationTime:"
+    move-result-object v7
 
-    invoke-virtual {v3, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    const-string v8, " PULL SAMPLE DATA presentationTime:"
 
-    move-result-object v3
+    invoke-virtual {v7, v8}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-wide v7, v1, Landroid/media/MediaCodec$BufferInfo;->presentationTimeUs:J
+    move-result-object v7
 
-    invoke-virtual {v3, v7, v8}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
+    iget-wide v8, v1, Landroid/media/MediaCodec$BufferInfo;->presentationTimeUs:J
 
-    move-result-object v3
+    invoke-virtual {v7, v8, v9}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
 
-    const-string v5, " flag:"
+    move-result-object v7
 
-    invoke-virtual {v3, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    const-string v8, " flag:"
 
-    move-result-object v3
+    invoke-virtual {v7, v8}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget v5, v1, Landroid/media/MediaCodec$BufferInfo;->flags:I
+    move-result-object v7
 
-    invoke-virtual {v3, v5}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+    iget v8, v1, Landroid/media/MediaCodec$BufferInfo;->flags:I
 
-    move-result-object v3
+    invoke-virtual {v7, v8}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v3}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    move-result-object v7
 
-    move-result-object v3
+    invoke-virtual {v7}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    filled-new-array {v3}, [Ljava/lang/String;
+    move-result-object v7
 
-    move-result-object v3
+    aput-object v7, v3, v6
 
     invoke-static {v3}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
@@ -572,30 +572,30 @@
     aget-object v3, v0, v2
 
     .line 109
-    iget v5, v1, Landroid/media/MediaCodec$BufferInfo;->flags:I
+    iget v7, v1, Landroid/media/MediaCodec$BufferInfo;->flags:I
 
-    and-int/lit8 v5, v5, 0x2
+    and-int/lit8 v7, v7, 0x2
 
-    if-eqz v5, :cond_8
+    if-eqz v7, :cond_8
 
     goto :goto_1
 
     .line 116
     :cond_8
-    iget-object v5, p0, Ljp/co/sony/mc/camera/recorder/utility/encoder/EncodedDataWriteTask;->mMuxer:Ljp/co/sony/mc/camera/recorder/utility/encoder/MediaMuxerWrapper;
+    iget-object v7, p0, Ljp/co/sony/mc/camera/recorder/utility/encoder/EncodedDataWriteTask;->mMuxer:Ljp/co/sony/mc/camera/recorder/utility/encoder/MediaMuxerWrapper;
 
-    monitor-enter v5
+    monitor-enter v7
 
     .line 117
     :try_start_2
-    iget-object v7, p0, Ljp/co/sony/mc/camera/recorder/utility/encoder/EncodedDataWriteTask;->mMuxer:Ljp/co/sony/mc/camera/recorder/utility/encoder/MediaMuxerWrapper;
+    iget-object v8, p0, Ljp/co/sony/mc/camera/recorder/utility/encoder/EncodedDataWriteTask;->mMuxer:Ljp/co/sony/mc/camera/recorder/utility/encoder/MediaMuxerWrapper;
 
-    iget v8, p0, Ljp/co/sony/mc/camera/recorder/utility/encoder/EncodedDataWriteTask;->mMuxerIndex:I
+    iget v9, p0, Ljp/co/sony/mc/camera/recorder/utility/encoder/EncodedDataWriteTask;->mMuxerIndex:I
 
-    invoke-virtual {v7, v8, v3, v1}, Ljp/co/sony/mc/camera/recorder/utility/encoder/MediaMuxerWrapper;->writeSampleData(ILjava/nio/ByteBuffer;Landroid/media/MediaCodec$BufferInfo;)V
+    invoke-virtual {v8, v9, v3, v1}, Ljp/co/sony/mc/camera/recorder/utility/encoder/MediaMuxerWrapper;->writeSampleData(ILjava/nio/ByteBuffer;Landroid/media/MediaCodec$BufferInfo;)V
 
     .line 118
-    monitor-exit v5
+    monitor-exit v7
     :try_end_2
     .catchall {:try_start_2 .. :try_end_2} :catchall_0
 
@@ -617,29 +617,29 @@
 
     if-eqz v0, :cond_d
 
-    new-instance v0, Ljava/lang/StringBuilder;
+    new-array v0, v5, [Ljava/lang/String;
 
-    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
+    new-instance v1, Ljava/lang/StringBuilder;
 
-    iget-object v1, p0, Ljp/co/sony/mc/camera/recorder/utility/encoder/EncodedDataWriteTask;->mName:Ljava/lang/String;
+    invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
 
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    iget-object v2, p0, Ljp/co/sony/mc/camera/recorder/utility/encoder/EncodedDataWriteTask;->mName:Ljava/lang/String;
 
-    move-result-object v0
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    const-string v1, " CANCELED"
+    move-result-object v1
 
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    const-string v2, " CANCELED"
 
-    move-result-object v0
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    move-result-object v1
 
-    move-result-object v0
+    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    filled-new-array {v0}, [Ljava/lang/String;
+    move-result-object v1
 
-    move-result-object v0
+    aput-object v1, v0, v6
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
@@ -658,29 +658,29 @@
 
     if-eqz v0, :cond_d
 
-    new-instance v0, Ljava/lang/StringBuilder;
+    new-array v0, v5, [Ljava/lang/String;
 
-    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
+    new-instance v1, Ljava/lang/StringBuilder;
 
-    iget-object v1, p0, Ljp/co/sony/mc/camera/recorder/utility/encoder/EncodedDataWriteTask;->mName:Ljava/lang/String;
+    invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
 
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    iget-object v2, p0, Ljp/co/sony/mc/camera/recorder/utility/encoder/EncodedDataWriteTask;->mName:Ljava/lang/String;
 
-    move-result-object v0
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    const-string v1, " BUFFER_FLAG_END_OF_STREAM"
+    move-result-object v1
 
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    const-string v2, " BUFFER_FLAG_END_OF_STREAM"
 
-    move-result-object v0
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    move-result-object v1
 
-    move-result-object v0
+    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    filled-new-array {v0}, [Ljava/lang/String;
+    move-result-object v1
 
-    move-result-object v0
+    aput-object v1, v0, v6
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
@@ -691,7 +691,7 @@
 
     .line 118
     :try_start_3
-    monitor-exit v5
+    monitor-exit v7
     :try_end_3
     .catchall {:try_start_3 .. :try_end_3} :catchall_0
 
@@ -707,29 +707,29 @@
 
     if-eqz v0, :cond_b
 
-    new-instance v0, Ljava/lang/StringBuilder;
+    new-array v0, v5, [Ljava/lang/String;
 
-    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
+    new-instance v2, Ljava/lang/StringBuilder;
 
-    iget-object v2, p0, Ljp/co/sony/mc/camera/recorder/utility/encoder/EncodedDataWriteTask;->mName:Ljava/lang/String;
+    invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
 
-    invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    iget-object v3, p0, Ljp/co/sony/mc/camera/recorder/utility/encoder/EncodedDataWriteTask;->mName:Ljava/lang/String;
 
-    move-result-object v0
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    const-string v2, " INFO_OUTPUT_BUFFERS_CHANGED"
+    move-result-object v2
 
-    invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    const-string v3, " INFO_OUTPUT_BUFFERS_CHANGED"
 
-    move-result-object v0
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    move-result-object v2
 
-    move-result-object v0
+    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    filled-new-array {v0}, [Ljava/lang/String;
+    move-result-object v2
 
-    move-result-object v0
+    aput-object v2, v0, v6
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
@@ -753,29 +753,29 @@
 
     if-eqz v2, :cond_3
 
-    new-instance v2, Ljava/lang/StringBuilder;
+    new-array v2, v5, [Ljava/lang/String;
 
-    invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
+    new-instance v3, Ljava/lang/StringBuilder;
 
-    iget-object v3, p0, Ljp/co/sony/mc/camera/recorder/utility/encoder/EncodedDataWriteTask;->mName:Ljava/lang/String;
+    invoke-direct {v3}, Ljava/lang/StringBuilder;-><init>()V
 
-    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    iget-object v4, p0, Ljp/co/sony/mc/camera/recorder/utility/encoder/EncodedDataWriteTask;->mName:Ljava/lang/String;
 
-    move-result-object v2
+    invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    const-string v3, " INFO_OUTPUT_FORMAT_CHANGED"
+    move-result-object v3
 
-    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    const-string v4, " INFO_OUTPUT_FORMAT_CHANGED"
 
-    move-result-object v2
+    invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    move-result-object v3
 
-    move-result-object v2
+    invoke-virtual {v3}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    filled-new-array {v2}, [Ljava/lang/String;
+    move-result-object v3
 
-    move-result-object v2
+    aput-object v3, v2, v6
 
     invoke-static {v2}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 

@@ -67,7 +67,7 @@
 .method public final invoke()Ljava/lang/Boolean;
     .locals 0
 
-    .line 369
+    .line 370
     iget-object p0, p0, Landroidx/compose/foundation/FocusableSemanticsNode$applySemantics$1;->this$0:Landroidx/compose/foundation/FocusableSemanticsNode;
 
     check-cast p0, Landroidx/compose/ui/focus/FocusRequesterModifierNode;
@@ -86,7 +86,7 @@
 .method public bridge synthetic invoke()Ljava/lang/Object;
     .locals 0
 
-    .line 368
+    .line 369
     invoke-virtual {p0}, Landroidx/compose/foundation/FocusableSemanticsNode$applySemantics$1;->invoke()Ljava/lang/Boolean;
 
     move-result-object p0

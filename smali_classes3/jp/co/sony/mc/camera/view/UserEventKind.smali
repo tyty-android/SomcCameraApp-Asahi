@@ -14,16 +14,19 @@
 
 .annotation runtime Lkotlin/Metadata;
     d1 = {
-        "\u0000\u000c\n\u0002\u0018\u0002\n\u0002\u0010\u0010\n\u0002\u0008\u0014\u0008\u0086\u0081\u0002\u0018\u00002\u0008\u0012\u0004\u0012\u00020\u00000\u0001B\u0007\u0008\u0002\u00a2\u0006\u0002\u0010\u0002j\u0002\u0008\u0003j\u0002\u0008\u0004j\u0002\u0008\u0005j\u0002\u0008\u0006j\u0002\u0008\u0007j\u0002\u0008\u0008j\u0002\u0008\tj\u0002\u0008\nj\u0002\u0008\u000bj\u0002\u0008\u000cj\u0002\u0008\rj\u0002\u0008\u000ej\u0002\u0008\u000fj\u0002\u0008\u0010j\u0002\u0008\u0011j\u0002\u0008\u0012j\u0002\u0008\u0013j\u0002\u0008\u0014\u00a8\u0006\u0015"
+        "\u0000\u000c\n\u0002\u0018\u0002\n\u0002\u0010\u0010\n\u0002\u0008\u001a\u0008\u0086\u0081\u0002\u0018\u00002\u0008\u0012\u0004\u0012\u00020\u00000\u0001B\t\u0008\u0002\u00a2\u0006\u0004\u0008\u0002\u0010\u0003j\u0002\u0008\u0004j\u0002\u0008\u0005j\u0002\u0008\u0006j\u0002\u0008\u0007j\u0002\u0008\u0008j\u0002\u0008\tj\u0002\u0008\nj\u0002\u0008\u000bj\u0002\u0008\u000cj\u0002\u0008\rj\u0002\u0008\u000ej\u0002\u0008\u000fj\u0002\u0008\u0010j\u0002\u0008\u0011j\u0002\u0008\u0012j\u0002\u0008\u0013j\u0002\u0008\u0014j\u0002\u0008\u0015j\u0002\u0008\u0016j\u0002\u0008\u0017j\u0002\u0008\u0018j\u0002\u0008\u0019j\u0002\u0008\u001a\u00a8\u0006\u001b"
     }
     d2 = {
         "Ljp/co/sony/mc/camera/view/UserEventKind;",
         "",
+        "<init>",
         "(Ljava/lang/String;I)V",
         "FATAL_DIALOG_OPENED",
         "FATAL_DIALOG_CLOSED",
-        "DIALOG_OPENED",
-        "DIALOG_CLOSED",
+        "MESSAGE_DIALOG_OPENED",
+        "MESSAGE_DIALOG_CLOSED",
+        "RESTRICT_DIALOG_OPENED",
+        "RESTRICT_DIALOG_CLOSED",
         "WARNING_HINT_TEXT_OPENED",
         "WARNING_HINT_TEXT_CLOSED",
         "DISABLE_CAMERA_KEY",
@@ -38,12 +41,15 @@
         "NON_RELATION_EVENT_WITH_ACCEPTOR",
         "CHANGE_CAMERA_SETTING",
         "CAMERA_SETTING_CHANGED",
+        "BACK_KEY_DOWN",
+        "BACK_KEY_UP",
+        "PINCH_ZOOM_UP",
         "SomcCamera_release"
     }
     k = 0x1
     mv = {
-        0x1,
-        0x9,
+        0x2,
+        0x0,
         0x0
     }
     xi = 0x30
@@ -55,6 +61,10 @@
 
 .field private static final synthetic $VALUES:[Ljp/co/sony/mc/camera/view/UserEventKind;
 
+.field public static final enum BACK_KEY_DOWN:Ljp/co/sony/mc/camera/view/UserEventKind;
+
+.field public static final enum BACK_KEY_UP:Ljp/co/sony/mc/camera/view/UserEventKind;
+
 .field public static final enum CAMERA_KEY_DOWN:Ljp/co/sony/mc/camera/view/UserEventKind;
 
 .field public static final enum CAMERA_KEY_UP:Ljp/co/sony/mc/camera/view/UserEventKind;
@@ -65,10 +75,6 @@
 
 .field public static final enum CHANGE_CAMERA_SETTING:Ljp/co/sony/mc/camera/view/UserEventKind;
 
-.field public static final enum DIALOG_CLOSED:Ljp/co/sony/mc/camera/view/UserEventKind;
-
-.field public static final enum DIALOG_OPENED:Ljp/co/sony/mc/camera/view/UserEventKind;
-
 .field public static final enum DISABLE_CAMERA_KEY:Ljp/co/sony/mc/camera/view/UserEventKind;
 
 .field public static final enum ENABLE_CAMERA_KEY:Ljp/co/sony/mc/camera/view/UserEventKind;
@@ -77,7 +83,17 @@
 
 .field public static final enum FATAL_DIALOG_OPENED:Ljp/co/sony/mc/camera/view/UserEventKind;
 
+.field public static final enum MESSAGE_DIALOG_CLOSED:Ljp/co/sony/mc/camera/view/UserEventKind;
+
+.field public static final enum MESSAGE_DIALOG_OPENED:Ljp/co/sony/mc/camera/view/UserEventKind;
+
 .field public static final enum NON_RELATION_EVENT_WITH_ACCEPTOR:Ljp/co/sony/mc/camera/view/UserEventKind;
+
+.field public static final enum PINCH_ZOOM_UP:Ljp/co/sony/mc/camera/view/UserEventKind;
+
+.field public static final enum RESTRICT_DIALOG_CLOSED:Ljp/co/sony/mc/camera/view/UserEventKind;
+
+.field public static final enum RESTRICT_DIALOG_OPENED:Ljp/co/sony/mc/camera/view/UserEventKind;
 
 .field public static final enum VOLUME_KEY_DOWN:Ljp/co/sony/mc/camera/view/UserEventKind;
 
@@ -94,45 +110,55 @@
 
 # direct methods
 .method private static final synthetic $values()[Ljp/co/sony/mc/camera/view/UserEventKind;
-    .locals 18
+    .locals 23
 
     sget-object v0, Ljp/co/sony/mc/camera/view/UserEventKind;->FATAL_DIALOG_OPENED:Ljp/co/sony/mc/camera/view/UserEventKind;
 
     sget-object v1, Ljp/co/sony/mc/camera/view/UserEventKind;->FATAL_DIALOG_CLOSED:Ljp/co/sony/mc/camera/view/UserEventKind;
 
-    sget-object v2, Ljp/co/sony/mc/camera/view/UserEventKind;->DIALOG_OPENED:Ljp/co/sony/mc/camera/view/UserEventKind;
+    sget-object v2, Ljp/co/sony/mc/camera/view/UserEventKind;->MESSAGE_DIALOG_OPENED:Ljp/co/sony/mc/camera/view/UserEventKind;
 
-    sget-object v3, Ljp/co/sony/mc/camera/view/UserEventKind;->DIALOG_CLOSED:Ljp/co/sony/mc/camera/view/UserEventKind;
+    sget-object v3, Ljp/co/sony/mc/camera/view/UserEventKind;->MESSAGE_DIALOG_CLOSED:Ljp/co/sony/mc/camera/view/UserEventKind;
 
-    sget-object v4, Ljp/co/sony/mc/camera/view/UserEventKind;->WARNING_HINT_TEXT_OPENED:Ljp/co/sony/mc/camera/view/UserEventKind;
+    sget-object v4, Ljp/co/sony/mc/camera/view/UserEventKind;->RESTRICT_DIALOG_OPENED:Ljp/co/sony/mc/camera/view/UserEventKind;
 
-    sget-object v5, Ljp/co/sony/mc/camera/view/UserEventKind;->WARNING_HINT_TEXT_CLOSED:Ljp/co/sony/mc/camera/view/UserEventKind;
+    sget-object v5, Ljp/co/sony/mc/camera/view/UserEventKind;->RESTRICT_DIALOG_CLOSED:Ljp/co/sony/mc/camera/view/UserEventKind;
 
-    sget-object v6, Ljp/co/sony/mc/camera/view/UserEventKind;->DISABLE_CAMERA_KEY:Ljp/co/sony/mc/camera/view/UserEventKind;
+    sget-object v6, Ljp/co/sony/mc/camera/view/UserEventKind;->WARNING_HINT_TEXT_OPENED:Ljp/co/sony/mc/camera/view/UserEventKind;
 
-    sget-object v7, Ljp/co/sony/mc/camera/view/UserEventKind;->ENABLE_CAMERA_KEY:Ljp/co/sony/mc/camera/view/UserEventKind;
+    sget-object v7, Ljp/co/sony/mc/camera/view/UserEventKind;->WARNING_HINT_TEXT_CLOSED:Ljp/co/sony/mc/camera/view/UserEventKind;
 
-    sget-object v8, Ljp/co/sony/mc/camera/view/UserEventKind;->CAPTURE_BUTTON:Ljp/co/sony/mc/camera/view/UserEventKind;
+    sget-object v8, Ljp/co/sony/mc/camera/view/UserEventKind;->DISABLE_CAMERA_KEY:Ljp/co/sony/mc/camera/view/UserEventKind;
 
-    sget-object v9, Ljp/co/sony/mc/camera/view/UserEventKind;->CAMERA_KEY_DOWN:Ljp/co/sony/mc/camera/view/UserEventKind;
+    sget-object v9, Ljp/co/sony/mc/camera/view/UserEventKind;->ENABLE_CAMERA_KEY:Ljp/co/sony/mc/camera/view/UserEventKind;
 
-    sget-object v10, Ljp/co/sony/mc/camera/view/UserEventKind;->CAMERA_KEY_UP:Ljp/co/sony/mc/camera/view/UserEventKind;
+    sget-object v10, Ljp/co/sony/mc/camera/view/UserEventKind;->CAPTURE_BUTTON:Ljp/co/sony/mc/camera/view/UserEventKind;
 
-    sget-object v11, Ljp/co/sony/mc/camera/view/UserEventKind;->VOLUME_KEY_DOWN:Ljp/co/sony/mc/camera/view/UserEventKind;
+    sget-object v11, Ljp/co/sony/mc/camera/view/UserEventKind;->CAMERA_KEY_DOWN:Ljp/co/sony/mc/camera/view/UserEventKind;
 
-    sget-object v12, Ljp/co/sony/mc/camera/view/UserEventKind;->VOLUME_KEY_UP:Ljp/co/sony/mc/camera/view/UserEventKind;
+    sget-object v12, Ljp/co/sony/mc/camera/view/UserEventKind;->CAMERA_KEY_UP:Ljp/co/sony/mc/camera/view/UserEventKind;
 
-    sget-object v13, Ljp/co/sony/mc/camera/view/UserEventKind;->ZOOM_KEY_DOWN:Ljp/co/sony/mc/camera/view/UserEventKind;
+    sget-object v13, Ljp/co/sony/mc/camera/view/UserEventKind;->VOLUME_KEY_DOWN:Ljp/co/sony/mc/camera/view/UserEventKind;
 
-    sget-object v14, Ljp/co/sony/mc/camera/view/UserEventKind;->ZOOM_KEY_UP:Ljp/co/sony/mc/camera/view/UserEventKind;
+    sget-object v14, Ljp/co/sony/mc/camera/view/UserEventKind;->VOLUME_KEY_UP:Ljp/co/sony/mc/camera/view/UserEventKind;
 
-    sget-object v15, Ljp/co/sony/mc/camera/view/UserEventKind;->NON_RELATION_EVENT_WITH_ACCEPTOR:Ljp/co/sony/mc/camera/view/UserEventKind;
+    sget-object v15, Ljp/co/sony/mc/camera/view/UserEventKind;->ZOOM_KEY_DOWN:Ljp/co/sony/mc/camera/view/UserEventKind;
 
-    sget-object v16, Ljp/co/sony/mc/camera/view/UserEventKind;->CHANGE_CAMERA_SETTING:Ljp/co/sony/mc/camera/view/UserEventKind;
+    sget-object v16, Ljp/co/sony/mc/camera/view/UserEventKind;->ZOOM_KEY_UP:Ljp/co/sony/mc/camera/view/UserEventKind;
 
-    sget-object v17, Ljp/co/sony/mc/camera/view/UserEventKind;->CAMERA_SETTING_CHANGED:Ljp/co/sony/mc/camera/view/UserEventKind;
+    sget-object v17, Ljp/co/sony/mc/camera/view/UserEventKind;->NON_RELATION_EVENT_WITH_ACCEPTOR:Ljp/co/sony/mc/camera/view/UserEventKind;
 
-    filled-new-array/range {v0 .. v17}, [Ljp/co/sony/mc/camera/view/UserEventKind;
+    sget-object v18, Ljp/co/sony/mc/camera/view/UserEventKind;->CHANGE_CAMERA_SETTING:Ljp/co/sony/mc/camera/view/UserEventKind;
+
+    sget-object v19, Ljp/co/sony/mc/camera/view/UserEventKind;->CAMERA_SETTING_CHANGED:Ljp/co/sony/mc/camera/view/UserEventKind;
+
+    sget-object v20, Ljp/co/sony/mc/camera/view/UserEventKind;->BACK_KEY_DOWN:Ljp/co/sony/mc/camera/view/UserEventKind;
+
+    sget-object v21, Ljp/co/sony/mc/camera/view/UserEventKind;->BACK_KEY_UP:Ljp/co/sony/mc/camera/view/UserEventKind;
+
+    sget-object v22, Ljp/co/sony/mc/camera/view/UserEventKind;->PINCH_ZOOM_UP:Ljp/co/sony/mc/camera/view/UserEventKind;
+
+    filled-new-array/range {v0 .. v22}, [Ljp/co/sony/mc/camera/view/UserEventKind;
 
     move-result-object v0
 
@@ -142,7 +168,7 @@
 .method static constructor <clinit>()V
     .locals 3
 
-    .line 46
+    .line 48
     new-instance v0, Ljp/co/sony/mc/camera/view/UserEventKind;
 
     const-string v1, "FATAL_DIALOG_OPENED"
@@ -153,7 +179,7 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/view/UserEventKind;->FATAL_DIALOG_OPENED:Ljp/co/sony/mc/camera/view/UserEventKind;
 
-    .line 47
+    .line 49
     new-instance v0, Ljp/co/sony/mc/camera/view/UserEventKind;
 
     const-string v1, "FATAL_DIALOG_CLOSED"
@@ -164,181 +190,236 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/view/UserEventKind;->FATAL_DIALOG_CLOSED:Ljp/co/sony/mc/camera/view/UserEventKind;
 
-    .line 48
+    .line 50
     new-instance v0, Ljp/co/sony/mc/camera/view/UserEventKind;
 
-    const-string v1, "DIALOG_OPENED"
+    const-string v1, "MESSAGE_DIALOG_OPENED"
 
     const/4 v2, 0x2
 
     invoke-direct {v0, v1, v2}, Ljp/co/sony/mc/camera/view/UserEventKind;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Ljp/co/sony/mc/camera/view/UserEventKind;->DIALOG_OPENED:Ljp/co/sony/mc/camera/view/UserEventKind;
+    sput-object v0, Ljp/co/sony/mc/camera/view/UserEventKind;->MESSAGE_DIALOG_OPENED:Ljp/co/sony/mc/camera/view/UserEventKind;
 
-    .line 49
+    .line 51
     new-instance v0, Ljp/co/sony/mc/camera/view/UserEventKind;
 
-    const-string v1, "DIALOG_CLOSED"
+    const-string v1, "MESSAGE_DIALOG_CLOSED"
 
     const/4 v2, 0x3
 
     invoke-direct {v0, v1, v2}, Ljp/co/sony/mc/camera/view/UserEventKind;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Ljp/co/sony/mc/camera/view/UserEventKind;->DIALOG_CLOSED:Ljp/co/sony/mc/camera/view/UserEventKind;
+    sput-object v0, Ljp/co/sony/mc/camera/view/UserEventKind;->MESSAGE_DIALOG_CLOSED:Ljp/co/sony/mc/camera/view/UserEventKind;
 
-    .line 50
+    .line 52
     new-instance v0, Ljp/co/sony/mc/camera/view/UserEventKind;
 
-    const-string v1, "WARNING_HINT_TEXT_OPENED"
+    const-string v1, "RESTRICT_DIALOG_OPENED"
 
     const/4 v2, 0x4
 
     invoke-direct {v0, v1, v2}, Ljp/co/sony/mc/camera/view/UserEventKind;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Ljp/co/sony/mc/camera/view/UserEventKind;->WARNING_HINT_TEXT_OPENED:Ljp/co/sony/mc/camera/view/UserEventKind;
+    sput-object v0, Ljp/co/sony/mc/camera/view/UserEventKind;->RESTRICT_DIALOG_OPENED:Ljp/co/sony/mc/camera/view/UserEventKind;
 
-    .line 51
+    .line 53
     new-instance v0, Ljp/co/sony/mc/camera/view/UserEventKind;
 
-    const-string v1, "WARNING_HINT_TEXT_CLOSED"
+    const-string v1, "RESTRICT_DIALOG_CLOSED"
 
     const/4 v2, 0x5
 
     invoke-direct {v0, v1, v2}, Ljp/co/sony/mc/camera/view/UserEventKind;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Ljp/co/sony/mc/camera/view/UserEventKind;->WARNING_HINT_TEXT_CLOSED:Ljp/co/sony/mc/camera/view/UserEventKind;
+    sput-object v0, Ljp/co/sony/mc/camera/view/UserEventKind;->RESTRICT_DIALOG_CLOSED:Ljp/co/sony/mc/camera/view/UserEventKind;
 
-    .line 52
+    .line 54
     new-instance v0, Ljp/co/sony/mc/camera/view/UserEventKind;
 
-    const-string v1, "DISABLE_CAMERA_KEY"
+    const-string v1, "WARNING_HINT_TEXT_OPENED"
 
     const/4 v2, 0x6
 
     invoke-direct {v0, v1, v2}, Ljp/co/sony/mc/camera/view/UserEventKind;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Ljp/co/sony/mc/camera/view/UserEventKind;->DISABLE_CAMERA_KEY:Ljp/co/sony/mc/camera/view/UserEventKind;
+    sput-object v0, Ljp/co/sony/mc/camera/view/UserEventKind;->WARNING_HINT_TEXT_OPENED:Ljp/co/sony/mc/camera/view/UserEventKind;
 
-    .line 53
+    .line 55
     new-instance v0, Ljp/co/sony/mc/camera/view/UserEventKind;
 
-    const-string v1, "ENABLE_CAMERA_KEY"
+    const-string v1, "WARNING_HINT_TEXT_CLOSED"
 
     const/4 v2, 0x7
 
     invoke-direct {v0, v1, v2}, Ljp/co/sony/mc/camera/view/UserEventKind;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Ljp/co/sony/mc/camera/view/UserEventKind;->ENABLE_CAMERA_KEY:Ljp/co/sony/mc/camera/view/UserEventKind;
+    sput-object v0, Ljp/co/sony/mc/camera/view/UserEventKind;->WARNING_HINT_TEXT_CLOSED:Ljp/co/sony/mc/camera/view/UserEventKind;
 
-    .line 54
+    .line 56
     new-instance v0, Ljp/co/sony/mc/camera/view/UserEventKind;
 
-    const-string v1, "CAPTURE_BUTTON"
+    const-string v1, "DISABLE_CAMERA_KEY"
 
     const/16 v2, 0x8
 
     invoke-direct {v0, v1, v2}, Ljp/co/sony/mc/camera/view/UserEventKind;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Ljp/co/sony/mc/camera/view/UserEventKind;->CAPTURE_BUTTON:Ljp/co/sony/mc/camera/view/UserEventKind;
+    sput-object v0, Ljp/co/sony/mc/camera/view/UserEventKind;->DISABLE_CAMERA_KEY:Ljp/co/sony/mc/camera/view/UserEventKind;
 
-    .line 55
+    .line 57
     new-instance v0, Ljp/co/sony/mc/camera/view/UserEventKind;
 
-    const-string v1, "CAMERA_KEY_DOWN"
+    const-string v1, "ENABLE_CAMERA_KEY"
 
     const/16 v2, 0x9
 
     invoke-direct {v0, v1, v2}, Ljp/co/sony/mc/camera/view/UserEventKind;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Ljp/co/sony/mc/camera/view/UserEventKind;->CAMERA_KEY_DOWN:Ljp/co/sony/mc/camera/view/UserEventKind;
+    sput-object v0, Ljp/co/sony/mc/camera/view/UserEventKind;->ENABLE_CAMERA_KEY:Ljp/co/sony/mc/camera/view/UserEventKind;
 
-    .line 56
+    .line 58
     new-instance v0, Ljp/co/sony/mc/camera/view/UserEventKind;
 
-    const-string v1, "CAMERA_KEY_UP"
+    const-string v1, "CAPTURE_BUTTON"
 
     const/16 v2, 0xa
 
     invoke-direct {v0, v1, v2}, Ljp/co/sony/mc/camera/view/UserEventKind;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Ljp/co/sony/mc/camera/view/UserEventKind;->CAMERA_KEY_UP:Ljp/co/sony/mc/camera/view/UserEventKind;
+    sput-object v0, Ljp/co/sony/mc/camera/view/UserEventKind;->CAPTURE_BUTTON:Ljp/co/sony/mc/camera/view/UserEventKind;
 
-    .line 57
+    .line 59
     new-instance v0, Ljp/co/sony/mc/camera/view/UserEventKind;
 
-    const-string v1, "VOLUME_KEY_DOWN"
+    const-string v1, "CAMERA_KEY_DOWN"
 
     const/16 v2, 0xb
 
     invoke-direct {v0, v1, v2}, Ljp/co/sony/mc/camera/view/UserEventKind;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Ljp/co/sony/mc/camera/view/UserEventKind;->VOLUME_KEY_DOWN:Ljp/co/sony/mc/camera/view/UserEventKind;
+    sput-object v0, Ljp/co/sony/mc/camera/view/UserEventKind;->CAMERA_KEY_DOWN:Ljp/co/sony/mc/camera/view/UserEventKind;
 
-    .line 58
+    .line 60
     new-instance v0, Ljp/co/sony/mc/camera/view/UserEventKind;
 
-    const-string v1, "VOLUME_KEY_UP"
+    const-string v1, "CAMERA_KEY_UP"
 
     const/16 v2, 0xc
 
     invoke-direct {v0, v1, v2}, Ljp/co/sony/mc/camera/view/UserEventKind;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Ljp/co/sony/mc/camera/view/UserEventKind;->VOLUME_KEY_UP:Ljp/co/sony/mc/camera/view/UserEventKind;
+    sput-object v0, Ljp/co/sony/mc/camera/view/UserEventKind;->CAMERA_KEY_UP:Ljp/co/sony/mc/camera/view/UserEventKind;
 
-    .line 59
+    .line 61
     new-instance v0, Ljp/co/sony/mc/camera/view/UserEventKind;
 
-    const-string v1, "ZOOM_KEY_DOWN"
+    const-string v1, "VOLUME_KEY_DOWN"
 
     const/16 v2, 0xd
 
     invoke-direct {v0, v1, v2}, Ljp/co/sony/mc/camera/view/UserEventKind;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Ljp/co/sony/mc/camera/view/UserEventKind;->ZOOM_KEY_DOWN:Ljp/co/sony/mc/camera/view/UserEventKind;
+    sput-object v0, Ljp/co/sony/mc/camera/view/UserEventKind;->VOLUME_KEY_DOWN:Ljp/co/sony/mc/camera/view/UserEventKind;
 
-    .line 60
+    .line 62
     new-instance v0, Ljp/co/sony/mc/camera/view/UserEventKind;
 
-    const-string v1, "ZOOM_KEY_UP"
+    const-string v1, "VOLUME_KEY_UP"
 
     const/16 v2, 0xe
 
     invoke-direct {v0, v1, v2}, Ljp/co/sony/mc/camera/view/UserEventKind;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Ljp/co/sony/mc/camera/view/UserEventKind;->ZOOM_KEY_UP:Ljp/co/sony/mc/camera/view/UserEventKind;
+    sput-object v0, Ljp/co/sony/mc/camera/view/UserEventKind;->VOLUME_KEY_UP:Ljp/co/sony/mc/camera/view/UserEventKind;
 
-    .line 61
+    .line 63
     new-instance v0, Ljp/co/sony/mc/camera/view/UserEventKind;
 
-    const-string v1, "NON_RELATION_EVENT_WITH_ACCEPTOR"
+    const-string v1, "ZOOM_KEY_DOWN"
 
     const/16 v2, 0xf
 
     invoke-direct {v0, v1, v2}, Ljp/co/sony/mc/camera/view/UserEventKind;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Ljp/co/sony/mc/camera/view/UserEventKind;->NON_RELATION_EVENT_WITH_ACCEPTOR:Ljp/co/sony/mc/camera/view/UserEventKind;
+    sput-object v0, Ljp/co/sony/mc/camera/view/UserEventKind;->ZOOM_KEY_DOWN:Ljp/co/sony/mc/camera/view/UserEventKind;
 
-    .line 62
+    .line 64
     new-instance v0, Ljp/co/sony/mc/camera/view/UserEventKind;
 
-    const-string v1, "CHANGE_CAMERA_SETTING"
+    const-string v1, "ZOOM_KEY_UP"
 
     const/16 v2, 0x10
 
     invoke-direct {v0, v1, v2}, Ljp/co/sony/mc/camera/view/UserEventKind;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Ljp/co/sony/mc/camera/view/UserEventKind;->CHANGE_CAMERA_SETTING:Ljp/co/sony/mc/camera/view/UserEventKind;
+    sput-object v0, Ljp/co/sony/mc/camera/view/UserEventKind;->ZOOM_KEY_UP:Ljp/co/sony/mc/camera/view/UserEventKind;
 
-    .line 63
+    .line 65
     new-instance v0, Ljp/co/sony/mc/camera/view/UserEventKind;
 
-    const-string v1, "CAMERA_SETTING_CHANGED"
+    const-string v1, "NON_RELATION_EVENT_WITH_ACCEPTOR"
 
     const/16 v2, 0x11
 
     invoke-direct {v0, v1, v2}, Ljp/co/sony/mc/camera/view/UserEventKind;-><init>(Ljava/lang/String;I)V
 
+    sput-object v0, Ljp/co/sony/mc/camera/view/UserEventKind;->NON_RELATION_EVENT_WITH_ACCEPTOR:Ljp/co/sony/mc/camera/view/UserEventKind;
+
+    .line 66
+    new-instance v0, Ljp/co/sony/mc/camera/view/UserEventKind;
+
+    const-string v1, "CHANGE_CAMERA_SETTING"
+
+    const/16 v2, 0x12
+
+    invoke-direct {v0, v1, v2}, Ljp/co/sony/mc/camera/view/UserEventKind;-><init>(Ljava/lang/String;I)V
+
+    sput-object v0, Ljp/co/sony/mc/camera/view/UserEventKind;->CHANGE_CAMERA_SETTING:Ljp/co/sony/mc/camera/view/UserEventKind;
+
+    .line 67
+    new-instance v0, Ljp/co/sony/mc/camera/view/UserEventKind;
+
+    const-string v1, "CAMERA_SETTING_CHANGED"
+
+    const/16 v2, 0x13
+
+    invoke-direct {v0, v1, v2}, Ljp/co/sony/mc/camera/view/UserEventKind;-><init>(Ljava/lang/String;I)V
+
     sput-object v0, Ljp/co/sony/mc/camera/view/UserEventKind;->CAMERA_SETTING_CHANGED:Ljp/co/sony/mc/camera/view/UserEventKind;
+
+    .line 68
+    new-instance v0, Ljp/co/sony/mc/camera/view/UserEventKind;
+
+    const-string v1, "BACK_KEY_DOWN"
+
+    const/16 v2, 0x14
+
+    invoke-direct {v0, v1, v2}, Ljp/co/sony/mc/camera/view/UserEventKind;-><init>(Ljava/lang/String;I)V
+
+    sput-object v0, Ljp/co/sony/mc/camera/view/UserEventKind;->BACK_KEY_DOWN:Ljp/co/sony/mc/camera/view/UserEventKind;
+
+    .line 69
+    new-instance v0, Ljp/co/sony/mc/camera/view/UserEventKind;
+
+    const-string v1, "BACK_KEY_UP"
+
+    const/16 v2, 0x15
+
+    invoke-direct {v0, v1, v2}, Ljp/co/sony/mc/camera/view/UserEventKind;-><init>(Ljava/lang/String;I)V
+
+    sput-object v0, Ljp/co/sony/mc/camera/view/UserEventKind;->BACK_KEY_UP:Ljp/co/sony/mc/camera/view/UserEventKind;
+
+    .line 70
+    new-instance v0, Ljp/co/sony/mc/camera/view/UserEventKind;
+
+    const-string v1, "PINCH_ZOOM_UP"
+
+    const/16 v2, 0x16
+
+    invoke-direct {v0, v1, v2}, Ljp/co/sony/mc/camera/view/UserEventKind;-><init>(Ljava/lang/String;I)V
+
+    sput-object v0, Ljp/co/sony/mc/camera/view/UserEventKind;->PINCH_ZOOM_UP:Ljp/co/sony/mc/camera/view/UserEventKind;
 
     invoke-static {}, Ljp/co/sony/mc/camera/view/UserEventKind;->$values()[Ljp/co/sony/mc/camera/view/UserEventKind;
 
@@ -365,7 +446,7 @@
         }
     .end annotation
 
-    .line 45
+    .line 47
     invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
     return-void
@@ -396,6 +477,7 @@
 
     move-result-object p0
 
+    .line 71
     check-cast p0, Ljp/co/sony/mc/camera/view/UserEventKind;
 
     return-object p0
@@ -406,10 +488,11 @@
 
     sget-object v0, Ljp/co/sony/mc/camera/view/UserEventKind;->$VALUES:[Ljp/co/sony/mc/camera/view/UserEventKind;
 
-    invoke-virtual {v0}, [Ljava/lang/Object;->clone()Ljava/lang/Object;
+    invoke-virtual {v0}, Ljava/lang/Object;->clone()Ljava/lang/Object;
 
     move-result-object v0
 
+    .line 71
     check-cast v0, [Ljp/co/sony/mc/camera/view/UserEventKind;
 
     return-object v0

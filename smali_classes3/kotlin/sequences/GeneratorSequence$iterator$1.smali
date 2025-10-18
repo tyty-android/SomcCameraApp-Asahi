@@ -96,12 +96,12 @@
 
     iput-object p1, p0, Lkotlin/sequences/GeneratorSequence$iterator$1;->this$0:Lkotlin/sequences/GeneratorSequence;
 
-    .line 586
+    .line 604
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     const/4 p1, -0x2
 
-    .line 588
+    .line 606
     iput p1, p0, Lkotlin/sequences/GeneratorSequence$iterator$1;->nextState:I
 
     return-void
@@ -110,7 +110,7 @@
 .method private final calcNext()V
     .locals 2
 
-    .line 591
+    .line 609
     iget v0, p0, Lkotlin/sequences/GeneratorSequence$iterator$1;->nextState:I
 
     const/4 v1, -0x2
@@ -156,7 +156,7 @@
     :cond_1
     const/4 v0, 0x1
 
-    .line 592
+    .line 610
     :goto_1
     iput v0, p0, Lkotlin/sequences/GeneratorSequence$iterator$1;->nextState:I
 
@@ -173,7 +173,7 @@
         }
     .end annotation
 
-    .line 587
+    .line 605
     iget-object p0, p0, Lkotlin/sequences/GeneratorSequence$iterator$1;->nextItem:Ljava/lang/Object;
 
     return-object p0
@@ -182,7 +182,7 @@
 .method public final getNextState()I
     .locals 0
 
-    .line 588
+    .line 606
     iget p0, p0, Lkotlin/sequences/GeneratorSequence$iterator$1;->nextState:I
 
     return p0
@@ -191,15 +191,15 @@
 .method public hasNext()Z
     .locals 1
 
-    .line 608
+    .line 626
     iget v0, p0, Lkotlin/sequences/GeneratorSequence$iterator$1;->nextState:I
 
     if-gez v0, :cond_0
 
-    .line 609
+    .line 627
     invoke-direct {p0}, Lkotlin/sequences/GeneratorSequence$iterator$1;->calcNext()V
 
-    .line 610
+    .line 628
     :cond_0
     iget p0, p0, Lkotlin/sequences/GeneratorSequence$iterator$1;->nextState:I
 
@@ -224,21 +224,21 @@
         }
     .end annotation
 
-    .line 596
+    .line 614
     iget v0, p0, Lkotlin/sequences/GeneratorSequence$iterator$1;->nextState:I
 
     if-gez v0, :cond_0
 
-    .line 597
+    .line 615
     invoke-direct {p0}, Lkotlin/sequences/GeneratorSequence$iterator$1;->calcNext()V
 
-    .line 599
+    .line 617
     :cond_0
     iget v0, p0, Lkotlin/sequences/GeneratorSequence$iterator$1;->nextState:I
 
     if-eqz v0, :cond_1
 
-    .line 601
+    .line 619
     iget-object v0, p0, Lkotlin/sequences/GeneratorSequence$iterator$1;->nextItem:Ljava/lang/Object;
 
     const-string v1, "null cannot be cast to non-null type T of kotlin.sequences.GeneratorSequence"
@@ -247,12 +247,12 @@
 
     const/4 v1, -0x1
 
-    .line 603
+    .line 621
     iput v1, p0, Lkotlin/sequences/GeneratorSequence$iterator$1;->nextState:I
 
     return-object v0
 
-    .line 600
+    .line 618
     :cond_1
     new-instance p0, Ljava/util/NoSuchElementException;
 
@@ -281,7 +281,7 @@
         }
     .end annotation
 
-    .line 587
+    .line 605
     iput-object p1, p0, Lkotlin/sequences/GeneratorSequence$iterator$1;->nextItem:Ljava/lang/Object;
 
     return-void
@@ -290,7 +290,7 @@
 .method public final setNextState(I)V
     .locals 0
 
-    .line 588
+    .line 606
     iput p1, p0, Lkotlin/sequences/GeneratorSequence$iterator$1;->nextState:I
 
     return-void

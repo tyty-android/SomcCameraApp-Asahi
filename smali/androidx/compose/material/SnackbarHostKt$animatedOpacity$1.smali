@@ -68,7 +68,7 @@
 .method public bridge synthetic invoke()Ljava/lang/Object;
     .locals 0
 
-    .line 346
+    .line 353
     invoke-virtual {p0}, Landroidx/compose/material/SnackbarHostKt$animatedOpacity$1;->invoke()V
 
     sget-object p0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;

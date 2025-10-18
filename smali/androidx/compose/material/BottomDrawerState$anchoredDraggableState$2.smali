@@ -26,7 +26,7 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/SourceDebugExtension;
-    value = "SMAP\nDrawer.kt\nKotlin\n*S Kotlin\n*F\n+ 1 Drawer.kt\nandroidx/compose/material/BottomDrawerState$anchoredDraggableState$2\n+ 2 fake.kt\nkotlin/jvm/internal/FakeKt\n*L\n1#1,956:1\n1#2:957\n*E\n"
+    value = "SMAP\nDrawer.kt\nKotlin\n*S Kotlin\n*F\n+ 1 Drawer.kt\nandroidx/compose/material/BottomDrawerState$anchoredDraggableState$2\n+ 2 fake.kt\nkotlin/jvm/internal/FakeKt\n*L\n1#1,915:1\n1#2:916\n*E\n"
 .end annotation
 
 .annotation runtime Lkotlin/Metadata;
@@ -71,7 +71,7 @@
 .method public final invoke()Ljava/lang/Float;
     .locals 1
 
-    .line 303
+    .line 302
     iget-object p0, p0, Landroidx/compose/material/BottomDrawerState$anchoredDraggableState$2;->this$0:Landroidx/compose/material/BottomDrawerState;
 
     invoke-static {p0}, Landroidx/compose/material/BottomDrawerState;->access$requireDensity(Landroidx/compose/material/BottomDrawerState;)Landroidx/compose/ui/unit/Density;
@@ -96,7 +96,7 @@
 .method public bridge synthetic invoke()Ljava/lang/Object;
     .locals 0
 
-    .line 303
+    .line 302
     invoke-virtual {p0}, Landroidx/compose/material/BottomDrawerState$anchoredDraggableState$2;->invoke()Ljava/lang/Float;
 
     move-result-object p0

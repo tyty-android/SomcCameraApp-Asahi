@@ -68,6 +68,10 @@
 .end annotation
 
 
+# static fields
+.field public static final $stable:I
+
+
 # instance fields
 .field private final mergeDescendants:Z
 
@@ -84,8 +88,14 @@
 
 
 # direct methods
+.method static constructor <clinit>()V
+    .locals 0
+
+    return-void
+.end method
+
 .method public constructor <init>(ZLkotlin/jvm/functions/Function1;)V
-    .locals 1
+    .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(Z",
@@ -96,10 +106,6 @@
             ">;)V"
         }
     .end annotation
-
-    const-string v0, "properties"
-
-    invoke-static {p2, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 123
     invoke-direct {p0}, Landroidx/compose/ui/node/ModifierNodeElement;-><init>()V
@@ -177,10 +183,6 @@
             "Landroidx/compose/ui/semantics/AppendedSemanticsElement;"
         }
     .end annotation
-
-    const-string p0, "properties"
-
-    invoke-static {p2, p0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
     new-instance p0, Landroidx/compose/ui/semantics/AppendedSemanticsElement;
 
@@ -321,11 +323,10 @@
 
     iget-boolean v0, p0, Landroidx/compose/ui/semantics/AppendedSemanticsElement;->mergeDescendants:Z
 
-    if-eqz v0, :cond_0
+    invoke-static {v0}, Ljava/lang/Boolean;->hashCode(Z)I
 
-    const/4 v0, 0x1
+    move-result v0
 
-    :cond_0
     mul-int/lit8 v0, v0, 0x1f
 
     iget-object p0, p0, Landroidx/compose/ui/semantics/AppendedSemanticsElement;->properties:Lkotlin/jvm/functions/Function1;
@@ -341,10 +342,6 @@
 
 .method public inspectableProperties(Landroidx/compose/ui/platform/InspectorInfo;)V
     .locals 3
-
-    const-string v0, "<this>"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 146
     const-string v0, "semantics"
@@ -429,10 +426,6 @@
 
 .method public update(Landroidx/compose/ui/semantics/CoreSemanticsModifierNode;)V
     .locals 1
-
-    const-string v0, "node"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 141
     iget-boolean v0, p0, Landroidx/compose/ui/semantics/AppendedSemanticsElement;->mergeDescendants:Z

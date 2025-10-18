@@ -47,15 +47,7 @@
         }
     .end annotation
 
-    const-string p1, "<this>"
-
-    invoke-static {p0, p1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string p1, "property"
-
-    invoke-static {p2, p1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 79
+    .line 80
     invoke-interface {p0}, Landroidx/compose/runtime/DoubleState;->getDoubleValue()D
 
     move-result-wide p0
@@ -66,7 +58,7 @@
 .method public static final mutableDoubleStateOf(D)Landroidx/compose/runtime/MutableDoubleState;
     .locals 0
 
-    .line 53
+    .line 54
     invoke-static {p0, p1}, Landroidx/compose/runtime/ActualAndroid_androidKt;->createSnapshotMutableDoubleState(D)Landroidx/compose/runtime/MutableDoubleState;
 
     move-result-object p0
@@ -86,15 +78,7 @@
         }
     .end annotation
 
-    const-string p1, "<this>"
-
-    invoke-static {p0, p1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string p1, "property"
-
-    invoke-static {p2, p1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 112
+    .line 113
     invoke-interface {p0, p3, p4}, Landroidx/compose/runtime/MutableDoubleState;->setDoubleValue(D)V
 
     return-void

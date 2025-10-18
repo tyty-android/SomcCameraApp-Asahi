@@ -46,7 +46,7 @@
 .method private static synthetic $values()[Lcom/sonymobile/android/media/internal/SomcMediaRecorder$States;
     .locals 8
 
-    .line 116
+    .line 125
     sget-object v0, Lcom/sonymobile/android/media/internal/SomcMediaRecorder$States;->INITIAL:Lcom/sonymobile/android/media/internal/SomcMediaRecorder$States;
 
     sget-object v1, Lcom/sonymobile/android/media/internal/SomcMediaRecorder$States;->INITIALIZED:Lcom/sonymobile/android/media/internal/SomcMediaRecorder$States;
@@ -73,7 +73,7 @@
 .method static constructor <clinit>()V
     .locals 3
 
-    .line 117
+    .line 126
     new-instance v0, Lcom/sonymobile/android/media/internal/SomcMediaRecorder$States;
 
     const-string v1, "INITIAL"
@@ -84,7 +84,7 @@
 
     sput-object v0, Lcom/sonymobile/android/media/internal/SomcMediaRecorder$States;->INITIAL:Lcom/sonymobile/android/media/internal/SomcMediaRecorder$States;
 
-    .line 118
+    .line 127
     new-instance v0, Lcom/sonymobile/android/media/internal/SomcMediaRecorder$States;
 
     const-string v1, "INITIALIZED"
@@ -95,7 +95,7 @@
 
     sput-object v0, Lcom/sonymobile/android/media/internal/SomcMediaRecorder$States;->INITIALIZED:Lcom/sonymobile/android/media/internal/SomcMediaRecorder$States;
 
-    .line 119
+    .line 128
     new-instance v0, Lcom/sonymobile/android/media/internal/SomcMediaRecorder$States;
 
     const-string v1, "DATA_SOURCE_CONFIGURED"
@@ -106,7 +106,7 @@
 
     sput-object v0, Lcom/sonymobile/android/media/internal/SomcMediaRecorder$States;->DATA_SOURCE_CONFIGURED:Lcom/sonymobile/android/media/internal/SomcMediaRecorder$States;
 
-    .line 120
+    .line 129
     new-instance v0, Lcom/sonymobile/android/media/internal/SomcMediaRecorder$States;
 
     const-string v1, "PREPARED"
@@ -117,7 +117,7 @@
 
     sput-object v0, Lcom/sonymobile/android/media/internal/SomcMediaRecorder$States;->PREPARED:Lcom/sonymobile/android/media/internal/SomcMediaRecorder$States;
 
-    .line 121
+    .line 130
     new-instance v0, Lcom/sonymobile/android/media/internal/SomcMediaRecorder$States;
 
     const-string v1, "RECORDING"
@@ -128,7 +128,7 @@
 
     sput-object v0, Lcom/sonymobile/android/media/internal/SomcMediaRecorder$States;->RECORDING:Lcom/sonymobile/android/media/internal/SomcMediaRecorder$States;
 
-    .line 122
+    .line 131
     new-instance v0, Lcom/sonymobile/android/media/internal/SomcMediaRecorder$States;
 
     const-string v1, "STOPPING"
@@ -139,7 +139,7 @@
 
     sput-object v0, Lcom/sonymobile/android/media/internal/SomcMediaRecorder$States;->STOPPING:Lcom/sonymobile/android/media/internal/SomcMediaRecorder$States;
 
-    .line 123
+    .line 132
     new-instance v0, Lcom/sonymobile/android/media/internal/SomcMediaRecorder$States;
 
     const-string v1, "RELEASED"
@@ -150,7 +150,7 @@
 
     sput-object v0, Lcom/sonymobile/android/media/internal/SomcMediaRecorder$States;->RELEASED:Lcom/sonymobile/android/media/internal/SomcMediaRecorder$States;
 
-    .line 124
+    .line 133
     new-instance v0, Lcom/sonymobile/android/media/internal/SomcMediaRecorder$States;
 
     const-string v1, "ERROR"
@@ -161,7 +161,7 @@
 
     sput-object v0, Lcom/sonymobile/android/media/internal/SomcMediaRecorder$States;->ERROR:Lcom/sonymobile/android/media/internal/SomcMediaRecorder$States;
 
-    .line 116
+    .line 125
     invoke-static {}, Lcom/sonymobile/android/media/internal/SomcMediaRecorder$States;->$values()[Lcom/sonymobile/android/media/internal/SomcMediaRecorder$States;
 
     move-result-object v0
@@ -179,7 +179,7 @@
         }
     .end annotation
 
-    .line 116
+    .line 125
     invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
     return-void
@@ -188,7 +188,7 @@
 .method public static valueOf(Ljava/lang/String;)Lcom/sonymobile/android/media/internal/SomcMediaRecorder$States;
     .locals 1
 
-    .line 116
+    .line 125
     const-class v0, Lcom/sonymobile/android/media/internal/SomcMediaRecorder$States;
 
     invoke-static {v0, p0}, Ljava/lang/Enum;->valueOf(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
@@ -203,7 +203,7 @@
 .method public static values()[Lcom/sonymobile/android/media/internal/SomcMediaRecorder$States;
     .locals 1
 
-    .line 116
+    .line 125
     sget-object v0, Lcom/sonymobile/android/media/internal/SomcMediaRecorder$States;->$VALUES:[Lcom/sonymobile/android/media/internal/SomcMediaRecorder$States;
 
     invoke-virtual {v0}, [Lcom/sonymobile/android/media/internal/SomcMediaRecorder$States;->clone()Ljava/lang/Object;

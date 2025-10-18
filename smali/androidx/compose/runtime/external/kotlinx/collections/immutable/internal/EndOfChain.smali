@@ -25,6 +25,8 @@
 
 
 # static fields
+.field public static final $stable:I
+
 .field public static final INSTANCE:Landroidx/compose/runtime/external/kotlinx/collections/immutable/internal/EndOfChain;
 
 

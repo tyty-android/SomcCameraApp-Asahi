@@ -91,7 +91,7 @@
 .end method
 
 .method private changeTo(Ljp/co/sony/mc/camera/device/SnapshotResultChecker$State;)V
-    .locals 2
+    .locals 3
 
     .line 272
     iget-object v0, p0, Ljp/co/sony/mc/camera/device/SnapshotResultChecker;->mState:Ljp/co/sony/mc/camera/device/SnapshotResultChecker$State;
@@ -103,44 +103,48 @@
 
     if-eqz v0, :cond_0
 
-    new-instance v0, Ljava/lang/StringBuilder;
+    const/4 v0, 0x1
 
-    const-string v1, "invoke current:"
+    new-array v0, v0, [Ljava/lang/String;
 
-    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+    new-instance v1, Ljava/lang/StringBuilder;
 
-    iget-object v1, p0, Ljp/co/sony/mc/camera/device/SnapshotResultChecker;->mState:Ljp/co/sony/mc/camera/device/SnapshotResultChecker$State;
+    const-string v2, "invoke current:"
 
-    invoke-virtual {v1}, Ljp/co/sony/mc/camera/device/SnapshotResultChecker$State;->name()Ljava/lang/String;
+    invoke-direct {v1, v2}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+
+    iget-object v2, p0, Ljp/co/sony/mc/camera/device/SnapshotResultChecker;->mState:Ljp/co/sony/mc/camera/device/SnapshotResultChecker$State;
+
+    invoke-virtual {v2}, Ljp/co/sony/mc/camera/device/SnapshotResultChecker$State;->name()Ljava/lang/String;
+
+    move-result-object v2
+
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v1
 
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    const-string v2, ", to:"
 
-    move-result-object v0
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    const-string v1, ", to:"
-
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v0
+    move-result-object v1
 
     .line 274
     invoke-virtual {p1}, Ljp/co/sony/mc/camera/device/SnapshotResultChecker$State;->name()Ljava/lang/String;
 
+    move-result-object v2
+
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
     move-result-object v1
 
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    move-result-object v0
+    move-result-object v1
 
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    const/4 v2, 0x0
 
-    move-result-object v0
-
-    filled-new-array {v0}, [Ljava/lang/String;
-
-    move-result-object v0
+    aput-object v1, v0, v2
 
     .line 273
     invoke-static {v0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
@@ -548,15 +552,15 @@
     invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     .line 127
+    new-array v3, v0, [Ljava/lang/String;
+
     invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object v2
 
-    filled-new-array {v2}, [Ljava/lang/String;
+    aput-object v2, v3, v1
 
-    move-result-object v2
-
-    invoke-static {v2}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
+    invoke-static {v3}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
     :cond_8
     if-eqz p1, :cond_c

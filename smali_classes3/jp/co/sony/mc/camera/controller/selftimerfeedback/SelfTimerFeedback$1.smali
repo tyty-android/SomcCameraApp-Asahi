@@ -36,7 +36,7 @@
 
 # virtual methods
 .method public onTick(J)V
-    .locals 6
+    .locals 9
 
     .line 94
     iget-object v0, p0, Ljp/co/sony/mc/camera/controller/selftimerfeedback/SelfTimerFeedback$1;->this$0:Ljp/co/sony/mc/camera/controller/selftimerfeedback/SelfTimerFeedback;
@@ -52,47 +52,51 @@
     .line 95
     sget-boolean v2, Ljp/co/sony/mc/camera/util/CamLog;->VERBOSE:Z
 
+    const/4 v3, 0x0
+
+    const/4 v4, 0x1
+
     if-eqz v2, :cond_0
 
-    new-instance v2, Ljava/lang/StringBuilder;
+    new-array v2, v4, [Ljava/lang/String;
 
-    const-string v3, "remain time: "
+    new-instance v5, Ljava/lang/StringBuilder;
 
-    invoke-direct {v2, v3}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+    const-string v6, "remain time: "
 
-    invoke-virtual {v2, v0, v1}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
+    invoke-direct {v5, v6}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
-    move-result-object v2
+    invoke-virtual {v5, v0, v1}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    move-result-object v5
 
-    move-result-object v2
+    invoke-virtual {v5}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    filled-new-array {v2}, [Ljava/lang/String;
+    move-result-object v5
 
-    move-result-object v2
+    aput-object v5, v2, v3
 
     invoke-static {v2}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
     :cond_0
-    const-wide/16 v2, 0x3e8
+    const-wide/16 v5, 0x3e8
 
     .line 97
-    rem-long v2, v0, v2
+    rem-long v5, v0, v5
 
-    const-wide/16 v4, 0x0
+    const-wide/16 v7, 0x0
 
-    cmp-long v2, v2, v4
+    cmp-long v2, v5, v7
 
     if-nez v2, :cond_1
 
-    const-wide/16 v2, 0xfa0
+    const-wide/16 v5, 0xfa0
 
-    cmp-long v2, v0, v2
+    cmp-long v2, v0, v5
 
     if-ltz v2, :cond_1
 
-    cmp-long p1, p1, v4
+    cmp-long p1, p1, v7
 
     if-lez p1, :cond_1
 
@@ -106,7 +110,7 @@
     invoke-interface {p1, v0, v1}, Ljp/co/sony/mc/camera/controller/selftimerfeedback/SelfTimerFeedback$SelfTimerFeedbackListener;->onSoundTypeChange(J)V
 
     :cond_1
-    cmp-long p1, v0, v4
+    cmp-long p1, v0, v7
 
     if-gtz p1, :cond_2
 
@@ -121,36 +125,34 @@
 
     return-void
 
-    :cond_2
-    const/4 p1, 0x0
-
     .line 107
+    :cond_2
     :goto_0
     invoke-static {}, Ljp/co/sony/mc/camera/controller/selftimerfeedback/SelfTimerFeedback;->-$$Nest$sfgetSELF_TIMER_LEVEL_THRESHOLDS()[I
 
-    move-result-object p2
+    move-result-object p1
 
-    array-length p2, p2
+    array-length p1, p1
 
-    if-ge p1, p2, :cond_4
+    if-ge v3, p1, :cond_4
 
     .line 108
     invoke-static {}, Ljp/co/sony/mc/camera/controller/selftimerfeedback/SelfTimerFeedback;->-$$Nest$sfgetSELF_TIMER_LEVEL_THRESHOLDS()[I
 
-    move-result-object p2
+    move-result-object p1
 
-    aget p2, p2, p1
+    aget p1, p1, v3
 
-    int-to-long v2, p2
+    int-to-long p1, p1
 
-    cmp-long p2, v0, v2
+    cmp-long p1, v0, p1
 
-    if-gtz p2, :cond_3
+    if-gtz p1, :cond_3
 
     goto :goto_1
 
     :cond_3
-    add-int/lit8 p1, p1, 0x1
+    add-int/lit8 v3, v3, 0x1
 
     goto :goto_0
 
@@ -159,13 +161,11 @@
     :goto_1
     invoke-static {}, Ljp/co/sony/mc/camera/controller/selftimerfeedback/SelfTimerFeedback;->-$$Nest$sfgetSELF_TIMER_LEVEL_THRESHOLDS()[I
 
-    move-result-object p2
+    move-result-object p1
 
-    array-length p2, p2
+    array-length p1, p1
 
-    const/4 v2, 0x1
-
-    if-lt p1, p2, :cond_5
+    if-lt v3, p1, :cond_5
 
     .line 115
     invoke-static {}, Ljp/co/sony/mc/camera/controller/selftimerfeedback/SelfTimerFeedback;->-$$Nest$sfgetSELF_TIMER_LEVEL_THRESHOLDS()[I
@@ -174,19 +174,19 @@
 
     array-length p1, p1
 
-    sub-int/2addr p1, v2
+    add-int/lit8 v3, p1, -0x1
 
     .line 118
     :cond_5
-    iget-object p2, p0, Ljp/co/sony/mc/camera/controller/selftimerfeedback/SelfTimerFeedback$1;->this$0:Ljp/co/sony/mc/camera/controller/selftimerfeedback/SelfTimerFeedback;
+    iget-object p1, p0, Ljp/co/sony/mc/camera/controller/selftimerfeedback/SelfTimerFeedback$1;->this$0:Ljp/co/sony/mc/camera/controller/selftimerfeedback/SelfTimerFeedback;
 
-    invoke-static {p2}, Ljp/co/sony/mc/camera/controller/selftimerfeedback/SelfTimerFeedback;->-$$Nest$fgetmIsBlinkNeeded(Ljp/co/sony/mc/camera/controller/selftimerfeedback/SelfTimerFeedback;)Z
+    invoke-static {p1}, Ljp/co/sony/mc/camera/controller/selftimerfeedback/SelfTimerFeedback;->-$$Nest$fgetmIsBlinkNeeded(Ljp/co/sony/mc/camera/controller/selftimerfeedback/SelfTimerFeedback;)Z
 
-    move-result p2
+    move-result p1
 
-    if-eqz p2, :cond_7
+    if-eqz p1, :cond_7
 
-    if-nez p1, :cond_6
+    if-nez v3, :cond_6
 
     .line 121
     iget-object p1, p0, Ljp/co/sony/mc/camera/controller/selftimerfeedback/SelfTimerFeedback$1;->this$0:Ljp/co/sony/mc/camera/controller/selftimerfeedback/SelfTimerFeedback;
@@ -209,7 +209,7 @@
     .line 123
     iget-object p0, p0, Ljp/co/sony/mc/camera/controller/selftimerfeedback/SelfTimerFeedback$1;->this$0:Ljp/co/sony/mc/camera/controller/selftimerfeedback/SelfTimerFeedback;
 
-    invoke-static {p0, v2}, Ljp/co/sony/mc/camera/controller/selftimerfeedback/SelfTimerFeedback;->-$$Nest$fputmIsOnBlinkFinishedCalled(Ljp/co/sony/mc/camera/controller/selftimerfeedback/SelfTimerFeedback;Z)V
+    invoke-static {p0, v4}, Ljp/co/sony/mc/camera/controller/selftimerfeedback/SelfTimerFeedback;->-$$Nest$fputmIsOnBlinkFinishedCalled(Ljp/co/sony/mc/camera/controller/selftimerfeedback/SelfTimerFeedback;Z)V
 
     goto :goto_2
 
@@ -217,25 +217,25 @@
     :cond_6
     invoke-static {}, Ljp/co/sony/mc/camera/controller/selftimerfeedback/SelfTimerFeedback;->-$$Nest$sfgetSELF_TIMER_LEVEL_THRESHOLDS()[I
 
-    move-result-object p2
+    move-result-object p1
 
-    aget p2, p2, p1
+    aget p1, p1, v3
 
-    int-to-long v2, p2
+    int-to-long p1, p1
 
-    sub-long/2addr v0, v2
+    sub-long/2addr v0, p1
 
     invoke-static {}, Ljp/co/sony/mc/camera/controller/selftimerfeedback/SelfTimerFeedback;->-$$Nest$sfgetSELF_TIMER_INTERVALS()[I
 
-    move-result-object p2
+    move-result-object p1
 
-    aget p1, p2, p1
+    aget p1, p1, v3
 
     int-to-long p1, p1
 
     rem-long/2addr v0, p1
 
-    cmp-long p1, v0, v4
+    cmp-long p1, v0, v7
 
     if-nez p1, :cond_7
 

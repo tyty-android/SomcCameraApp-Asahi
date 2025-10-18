@@ -79,11 +79,7 @@
 .end method
 
 .method public final invoke(Landroidx/compose/ui/semantics/SemanticsPropertyReceiver;)V
-    .locals 1
-
-    const-string v0, "$this$semantics"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+    .locals 0
 
     .line 33
     iget-object p0, p0, Landroidx/compose/ui/platform/TestTagKt$testTag$1;->$tag:Ljava/lang/String;

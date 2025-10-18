@@ -55,7 +55,7 @@
 .end method
 
 .method public constructor <init>()V
-    .locals 2
+    .locals 3
 
     .line 59
     invoke-direct {p0}, Landroidx/appcompat/app/AppCompatActivity;-><init>()V
@@ -76,12 +76,16 @@
 
     iput-object v0, p0, Ljp/co/sony/mc/camera/SaveLocationSettingActivity;->mMainHandler:Landroid/os/Handler;
 
+    const/4 v0, 0x1
+
     .line 80
-    const-string v0, "android.permission.CAMERA"
+    new-array v0, v0, [Ljava/lang/String;
 
-    filled-new-array {v0}, [Ljava/lang/String;
+    const/4 v1, 0x0
 
-    move-result-object v0
+    const-string v2, "android.permission.CAMERA"
+
+    aput-object v2, v0, v1
 
     iput-object v0, p0, Ljp/co/sony/mc/camera/SaveLocationSettingActivity;->REQUESTED_PERMISSIONS:[Ljava/lang/String;
 
@@ -91,18 +95,7 @@
 .method private getDetailFragment(Ljp/co/sony/mc/camera/view/setting/settingitem/CameraSettingItem;)Ljp/co/sony/mc/camera/view/setting/fragment/CameraSettingsDetailFragment;
     .locals 1
 
-    .line 294
-    invoke-virtual {p0}, Ljp/co/sony/mc/camera/SaveLocationSettingActivity;->getSupportActionBar()Landroidx/appcompat/app/ActionBar;
-
-    move-result-object p0
-
-    invoke-virtual {p1}, Ljp/co/sony/mc/camera/view/setting/settingitem/CameraSettingItem;->getTitleText()Ljava/lang/String;
-
-    move-result-object v0
-
-    invoke-virtual {p0, v0}, Landroidx/appcompat/app/ActionBar;->setTitle(Ljava/lang/CharSequence;)V
-
-    .line 295
+    .line 293
     invoke-virtual {p1}, Ljp/co/sony/mc/camera/view/setting/settingitem/CameraSettingItem;->getSettingLayoutType()Ljp/co/sony/mc/camera/view/setting/settingitem/SettingLayoutType;
 
     move-result-object p0
@@ -111,7 +104,7 @@
 
     if-ne p0, v0, :cond_0
 
-    .line 296
+    .line 294
     sget-object p0, Ljp/co/sony/mc/camera/view/setting/fragment/BasicModeCameraSettingsImageDetailFragment;->Companion:Ljp/co/sony/mc/camera/view/setting/fragment/BasicModeCameraSettingsImageDetailFragment$Companion;
 
     invoke-virtual {p0, p1}, Ljp/co/sony/mc/camera/view/setting/fragment/BasicModeCameraSettingsImageDetailFragment$Companion;->newInstance(Ljp/co/sony/mc/camera/view/setting/settingitem/CameraSettingItem;)Ljp/co/sony/mc/camera/view/setting/fragment/BasicModeCameraSettingsImageDetailFragment;
@@ -120,7 +113,7 @@
 
     return-object p0
 
-    .line 298
+    .line 296
     :cond_0
     sget-object p0, Ljp/co/sony/mc/camera/view/setting/fragment/BasicModeCameraSettingsDetailFragment;->Companion:Ljp/co/sony/mc/camera/view/setting/fragment/BasicModeCameraSettingsDetailFragment$Companion;
 
@@ -134,7 +127,7 @@
 .method private getDetailFragmentTag(Ljp/co/sony/mc/camera/view/setting/settingitem/CameraSettingItem;)Ljava/lang/String;
     .locals 0
 
-    .line 303
+    .line 301
     invoke-virtual {p1}, Ljp/co/sony/mc/camera/view/setting/settingitem/CameraSettingItem;->getSettingLayoutType()Ljp/co/sony/mc/camera/view/setting/settingitem/SettingLayoutType;
 
     move-result-object p0
@@ -143,14 +136,14 @@
 
     if-ne p0, p1, :cond_0
 
-    .line 304
+    .line 302
     const-class p0, Ljp/co/sony/mc/camera/view/setting/fragment/BasicModeCameraSettingsImageDetailFragment;
 
     const-string p0, "BasicModeCameraSettingsImageDetailFragment"
 
     return-object p0
 
-    .line 306
+    .line 304
     :cond_0
     const-class p0, Ljp/co/sony/mc/camera/view/setting/fragment/BasicModeCameraSettingsDetailFragment;
 
@@ -162,7 +155,7 @@
 .method private getSaveLocationSettingItem()Ljp/co/sony/mc/camera/view/setting/settingitem/CameraSettingItem;
     .locals 3
 
-    .line 357
+    .line 355
     iget-object v0, p0, Ljp/co/sony/mc/camera/SaveLocationSettingActivity;->mCameraSettingItemBuilder:Ljp/co/sony/mc/camera/view/setting/settingitem/CameraSettingItemBuilder;
 
     sget-object v1, Ljp/co/sony/mc/camera/setting/CommonSettings;->GEOTAG:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
@@ -181,14 +174,14 @@
 .method private isLaunchedFromGooglePhotos()Z
     .locals 2
 
-    .line 413
+    .line 411
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/SaveLocationSettingActivity;->getCallingPackage()Ljava/lang/String;
 
     move-result-object v0
 
     if-eqz v0, :cond_1
 
-    .line 414
+    .line 412
     const-string v1, "com.google.android.apps.photos"
 
     invoke-virtual {v0, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
@@ -199,14 +192,14 @@
 
     const-string v1, "com.google.android.apps.photos.offline"
 
-    .line 415
+    .line 413
     invoke-virtual {v0, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v1
 
     if-eqz v1, :cond_1
 
-    .line 416
+    .line 414
     :cond_0
     invoke-static {p0, v0}, Ljp/co/sony/mc/camera/util/SignatureUtil;->isAvailable(Landroid/content/Context;Ljava/lang/String;)Z
 
@@ -223,7 +216,7 @@
 .method private synthetic lambda$onDismiss$2()V
     .locals 0
 
-    .line 376
+    .line 374
     invoke-direct {p0}, Ljp/co/sony/mc/camera/SaveLocationSettingActivity;->updateSetting()V
 
     return-void
@@ -232,7 +225,7 @@
 .method private synthetic lambda$onValueChanged$1(Ljp/co/sony/mc/camera/setting/SettingKey$Key;Ljp/co/sony/mc/camera/configuration/parameters/UserSettingValue;Ljp/co/sony/mc/camera/setting/SettingAppearance;)V
     .locals 0
 
-    .line 363
+    .line 361
     invoke-direct {p0, p1, p2, p3}, Ljp/co/sony/mc/camera/SaveLocationSettingActivity;->onSettingValueChanged(Ljp/co/sony/mc/camera/setting/SettingKey$Key;Ljava/lang/Object;Ljp/co/sony/mc/camera/setting/SettingAppearance;)V
 
     return-void
@@ -241,7 +234,7 @@
 .method private synthetic lambda$setup$0(Landroid/content/DialogInterface;)V
     .locals 0
 
-    .line 258
+    .line 257
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/SaveLocationSettingActivity;->finish()V
 
     return-void
@@ -261,38 +254,42 @@
         }
     .end annotation
 
-    .line 386
+    .line 384
     sget-boolean v0, Ljp/co/sony/mc/camera/util/CamLog;->DEBUG:Z
 
     if-eqz v0, :cond_0
 
-    new-instance v0, Ljava/lang/StringBuilder;
+    const/4 v0, 0x1
 
-    const-string v1, "onSettingValueChanged: key: "
+    new-array v0, v0, [Ljava/lang/String;
 
-    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+    new-instance v1, Ljava/lang/StringBuilder;
 
-    invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+    const-string v2, "onSettingValueChanged: key: "
 
-    move-result-object v0
+    invoke-direct {v1, v2}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
-    const-string v1, ", value: "
+    invoke-virtual {v1, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    move-result-object v1
 
-    move-result-object v0
+    const-string v2, ", value: "
 
-    invoke-virtual {v0, p2}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    move-result-object v0
+    move-result-object v1
 
-    const-string v1, ", appearance: "
+    invoke-virtual {v1, p2}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    move-result-object v1
 
-    move-result-object v0
+    const-string v2, ", appearance: "
 
-    invoke-virtual {v0, p3}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v1
+
+    invoke-virtual {v1, p3}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
     move-result-object p3
 
@@ -300,13 +297,13 @@
 
     move-result-object p3
 
-    filled-new-array {p3}, [Ljava/lang/String;
+    const/4 v1, 0x0
 
-    move-result-object p3
+    aput-object p3, v0, v1
 
-    invoke-static {p3}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
+    invoke-static {v0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
-    .line 390
+    .line 388
     :cond_0
     invoke-static {}, Ljp/co/sony/mc/camera/setting/CameraProSetting;->getInstance()Ljp/co/sony/mc/camera/setting/CameraProSetting;
 
@@ -316,7 +313,7 @@
 
     move-result-object p3
 
-    .line 392
+    .line 390
     sget-object v0, Ljp/co/sony/mc/camera/setting/CommonSettings;->GEOTAG:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
 
     invoke-virtual {v0, p1}, Ljp/co/sony/mc/camera/setting/CommonSettings$Key;->equals(Ljava/lang/Object;)Z
@@ -325,14 +322,14 @@
 
     if-eqz v0, :cond_1
 
-    .line 393
+    .line 391
     iget-object v0, p0, Ljp/co/sony/mc/camera/SaveLocationSettingActivity;->mGeotagManager:Ljp/co/sony/mc/camera/mediasaving/location/GeotagManager;
 
     move-object v1, p2
 
     check-cast v1, Ljp/co/sony/mc/camera/configuration/parameters/Geotag;
 
-    const v2, 0x7f1202aa
+    const v2, 0x7f1202ac
 
     invoke-virtual {v0, v1, p0, v2}, Ljp/co/sony/mc/camera/mediasaving/location/GeotagManager;->canSetGeotag(Ljp/co/sony/mc/camera/configuration/parameters/Geotag;Landroid/app/Activity;I)Z
 
@@ -340,17 +337,17 @@
 
     if-nez v0, :cond_1
 
-    .line 394
+    .line 392
     new-instance p1, Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogRequest;
 
     invoke-direct {p1}, Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogRequest;-><init>()V
 
-    .line 395
+    .line 393
     sget-object p2, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->LOCATION_SERVICE_DISABLE_ON_CONTEXTUAL_SETTINGS:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
 
     iput-object p2, p1, Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogRequest;->mDialogId:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
 
-    .line 396
+    .line 394
     invoke-direct {p0, p1}, Ljp/co/sony/mc/camera/SaveLocationSettingActivity;->showSettingMessageDialog(Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogRequest;)Z
 
     return-void
@@ -360,16 +357,16 @@
 
     return-void
 
-    .line 407
+    .line 405
     :cond_2
     invoke-static {}, Ljp/co/sony/mc/camera/setting/CameraProSetting;->getInstance()Ljp/co/sony/mc/camera/setting/CameraProSetting;
 
     move-result-object p3
 
-    .line 408
+    .line 406
     invoke-virtual {p3, p1, p2}, Ljp/co/sony/mc/camera/setting/CameraProSetting;->set(Ljp/co/sony/mc/camera/setting/SettingKey$Key;Ljava/lang/Object;)V
 
-    .line 409
+    .line 407
     invoke-direct {p0}, Ljp/co/sony/mc/camera/SaveLocationSettingActivity;->updateSetting()V
 
     return-void
@@ -378,7 +375,7 @@
 .method private reInitGeoTag()V
     .locals 3
 
-    .line 311
+    .line 309
     iget-object v0, p0, Ljp/co/sony/mc/camera/SaveLocationSettingActivity;->mGeotagManager:Ljp/co/sony/mc/camera/mediasaving/location/GeotagManager;
 
     const/4 v1, 0x1
@@ -389,7 +386,7 @@
 
     if-eqz v0, :cond_1
 
-    .line 312
+    .line 310
     sget-object v0, Ljp/co/sony/mc/camera/configuration/parameters/Geotag;->ON:Ljp/co/sony/mc/camera/configuration/parameters/Geotag;
 
     invoke-static {v0, p0}, Ljp/co/sony/mc/camera/mediasaving/location/GeotagManager;->isGeoTagEnabled(Ljp/co/sony/mc/camera/configuration/parameters/Geotag;Landroid/content/Context;)Z
@@ -398,22 +395,22 @@
 
     if-nez v0, :cond_0
 
-    .line 313
+    .line 311
     new-instance v0, Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogRequest;
 
     invoke-direct {v0}, Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogRequest;-><init>()V
 
-    .line 314
+    .line 312
     sget-object v1, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->LOCATION_SERVICE_DISABLE_ON_CONTEXTUAL_SETTINGS:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
 
     iput-object v1, v0, Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogRequest;->mDialogId:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
 
-    .line 315
+    .line 313
     invoke-direct {p0, v0}, Ljp/co/sony/mc/camera/SaveLocationSettingActivity;->showSettingMessageDialog(Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogRequest;)Z
 
     goto :goto_0
 
-    .line 317
+    .line 315
     :cond_0
     invoke-static {}, Ljp/co/sony/mc/camera/setting/CameraProSetting;->getInstance()Ljp/co/sony/mc/camera/setting/CameraProSetting;
 
@@ -425,12 +422,12 @@
 
     invoke-virtual {v0, v1, v2}, Ljp/co/sony/mc/camera/setting/CameraProSetting;->set(Ljp/co/sony/mc/camera/setting/SettingKey$Key;Ljava/lang/Object;)V
 
-    .line 318
+    .line 316
     invoke-direct {p0}, Ljp/co/sony/mc/camera/SaveLocationSettingActivity;->updateSetting()V
 
     goto :goto_0
 
-    .line 322
+    .line 320
     :cond_1
     iget-object v0, p0, Ljp/co/sony/mc/camera/SaveLocationSettingActivity;->mGeotagManager:Ljp/co/sony/mc/camera/mediasaving/location/GeotagManager;
 
@@ -438,7 +435,7 @@
 
     invoke-virtual {v0, v1}, Ljp/co/sony/mc/camera/mediasaving/location/GeotagManager;->updateLocation(Ljp/co/sony/mc/camera/configuration/parameters/Geotag;)V
 
-    .line 323
+    .line 321
     invoke-static {}, Ljp/co/sony/mc/camera/setting/CameraProSetting;->getInstance()Ljp/co/sony/mc/camera/setting/CameraProSetting;
 
     move-result-object v0
@@ -449,7 +446,7 @@
 
     invoke-virtual {v0, v1, v2}, Ljp/co/sony/mc/camera/setting/CameraProSetting;->set(Ljp/co/sony/mc/camera/setting/SettingKey$Key;Ljava/lang/Object;)V
 
-    .line 324
+    .line 322
     invoke-direct {p0}, Ljp/co/sony/mc/camera/SaveLocationSettingActivity;->updateSetting()V
 
     :goto_0
@@ -459,14 +456,14 @@
 .method private setUpSettingsItemBuilder()V
     .locals 9
 
-    .line 349
+    .line 347
     new-instance v8, Ljp/co/sony/mc/camera/view/setting/settingitem/CameraSettingItemBuilder;
 
     sget-object v2, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->PHOTO_BASIC:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
     sget-object v3, Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;->WIDE:Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;
 
-    .line 351
+    .line 349
     invoke-static {}, Ljp/co/sony/mc/camera/setting/CameraProSetting;->getInstance()Ljp/co/sony/mc/camera/setting/CameraProSetting;
 
     move-result-object v4
@@ -483,7 +480,7 @@
 
     sget-object v6, Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;->WIDE:Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;
 
-    .line 352
+    .line 350
     invoke-virtual {v0, v1, v6}, Ljp/co/sony/mc/camera/view/setting/ContextualSettingList;->get(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;)Ljp/co/sony/mc/camera/view/setting/ContextualSettingList$Group;
 
     move-result-object v7
@@ -502,9 +499,9 @@
 .end method
 
 .method private setup()V
-    .locals 5
+    .locals 7
 
-    .line 226
+    .line 225
     sget-object v0, Ljava/util/concurrent/TimeUnit;->MILLISECONDS:Ljava/util/concurrent/TimeUnit;
 
     const-wide/16 v1, 0x7d0
@@ -513,7 +510,7 @@
 
     move-result-object v0
 
-    .line 228
+    .line 227
     invoke-static {}, Ljp/co/sony/mc/camera/util/capability/PlatformCapability;->isPrepared()Z
 
     move-result v3
@@ -528,40 +525,42 @@
 
     if-eqz v3, :cond_5
 
-    .line 229
+    .line 228
     :cond_0
     sget-boolean v3, Ljp/co/sony/mc/camera/util/CamLog;->DEBUG:Z
 
+    const/4 v5, 0x0
+
     if-eqz v3, :cond_1
 
-    const-string v3, "PlatformCapability is not prepared yet"
+    new-array v3, v4, [Ljava/lang/String;
 
-    filled-new-array {v3}, [Ljava/lang/String;
+    const-string v6, "PlatformCapability is not prepared yet"
 
-    move-result-object v3
+    aput-object v6, v3, v5
 
     invoke-static {v3}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
-    .line 230
+    .line 229
     :cond_1
     sget-object v3, Ljp/co/sony/mc/camera/util/capability/PlatformCapability$PrepareResult;->TIMED_OUT:Ljp/co/sony/mc/camera/util/capability/PlatformCapability$PrepareResult;
 
     if-eq v0, v3, :cond_3
 
-    .line 232
+    .line 231
     sget-boolean v0, Ljp/co/sony/mc/camera/util/CamLog;->DEBUG:Z
 
     if-eqz v0, :cond_2
 
-    const-string v0, "Retry preparing PlatformCapability"
+    new-array v0, v4, [Ljava/lang/String;
 
-    filled-new-array {v0}, [Ljava/lang/String;
+    const-string v3, "Retry preparing PlatformCapability"
 
-    move-result-object v0
+    aput-object v3, v0, v5
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
-    .line 233
+    .line 232
     :cond_2
     new-instance v0, Ljp/co/sony/mc/camera/SaveLocationSettingActivity$1;
 
@@ -569,12 +568,12 @@
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/util/capability/PlatformCapability;->prepareAsync(Ljp/co/sony/mc/camera/util/capability/PlatformCapability$OnPlatformCapabilityPreparedCallback;)V
 
-    .line 241
+    .line 240
     sget-object v0, Ljava/util/concurrent/TimeUnit;->MILLISECONDS:Ljava/util/concurrent/TimeUnit;
 
     invoke-static {v1, v2, v0}, Ljp/co/sony/mc/camera/util/capability/PlatformCapability;->awaitPrepare(JLjava/util/concurrent/TimeUnit;)Ljp/co/sony/mc/camera/util/capability/PlatformCapability$PrepareResult;
 
-    .line 245
+    .line 244
     :cond_3
     invoke-static {}, Ljp/co/sony/mc/camera/util/capability/PlatformCapability;->isPrepared()Z
 
@@ -582,7 +581,7 @@
 
     if-nez v0, :cond_5
 
-    .line 247
+    .line 246
     sget-boolean v0, Ljp/co/sony/mc/camera/util/CamLog;->DEBUG:Z
 
     if-eqz v0, :cond_4
@@ -597,46 +596,44 @@
 
     if-eqz v0, :cond_4
 
-    const v0, 0x7f11031e
+    const v0, 0x7f11034f
 
     goto :goto_0
 
     :cond_4
-    const v0, 0x7f1101df
+    const v0, 0x7f1101e2
 
-    .line 252
+    .line 251
     :goto_0
     invoke-static {v4}, Ljp/co/sony/mc/camera/util/capability/PlatformCapability;->setDeviceError(Z)V
 
-    .line 253
+    .line 252
     new-instance v1, Landroid/app/AlertDialog$Builder;
 
     invoke-direct {v1, p0}, Landroid/app/AlertDialog$Builder;-><init>(Landroid/content/Context;)V
 
-    const v2, 0x7f1101dd
+    const v2, 0x7f1101e0
 
-    .line 254
+    .line 253
     invoke-virtual {v1, v2}, Landroid/app/AlertDialog$Builder;->setTitle(I)Landroid/app/AlertDialog$Builder;
 
     move-result-object v2
 
-    .line 255
+    .line 254
     invoke-virtual {v2, v0}, Landroid/app/AlertDialog$Builder;->setMessage(I)Landroid/app/AlertDialog$Builder;
 
     move-result-object v0
 
-    const/4 v2, 0x0
-
-    .line 256
-    invoke-virtual {v0, v2}, Landroid/app/AlertDialog$Builder;->setCancelable(Z)Landroid/app/AlertDialog$Builder;
+    .line 255
+    invoke-virtual {v0, v5}, Landroid/app/AlertDialog$Builder;->setCancelable(Z)Landroid/app/AlertDialog$Builder;
 
     move-result-object v0
 
-    const v2, 0x7f110323
+    const v2, 0x7f110355
 
     const/4 v3, 0x0
 
-    .line 257
+    .line 256
     invoke-virtual {v0, v2, v3}, Landroid/app/AlertDialog$Builder;->setPositiveButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
     move-result-object v0
@@ -645,15 +642,15 @@
 
     invoke-direct {v2, p0}, Ljp/co/sony/mc/camera/SaveLocationSettingActivity$$ExternalSyntheticLambda0;-><init>(Ljp/co/sony/mc/camera/SaveLocationSettingActivity;)V
 
-    .line 258
+    .line 257
     invoke-virtual {v0, v2}, Landroid/app/AlertDialog$Builder;->setOnDismissListener(Landroid/content/DialogInterface$OnDismissListener;)Landroid/app/AlertDialog$Builder;
 
-    .line 259
+    .line 258
     invoke-virtual {v1}, Landroid/app/AlertDialog$Builder;->create()Landroid/app/AlertDialog;
 
     move-result-object p0
 
-    .line 260
+    .line 259
     invoke-virtual {p0}, Landroid/app/AlertDialog;->getWindow()Landroid/view/Window;
 
     move-result-object v0
@@ -662,35 +659,35 @@
 
     invoke-virtual {v0, v1}, Landroid/view/Window;->addFlags(I)V
 
-    .line 261
+    .line 260
     invoke-virtual {p0}, Landroid/app/AlertDialog;->show()V
 
     return-void
 
-    .line 266
+    .line 265
     :cond_5
     invoke-static {}, Ljp/co/sony/mc/camera/setting/CameraProSetting;->getInstance()Ljp/co/sony/mc/camera/setting/CameraProSetting;
 
     move-result-object v0
 
-    .line 267
+    .line 266
     new-instance v1, Landroid/util/Pair;
 
     invoke-virtual {v0}, Ljp/co/sony/mc/camera/setting/CameraProSetting;->getCurrentCapturingMode()Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
     move-result-object v2
 
-    .line 268
+    .line 267
     invoke-virtual {v0}, Ljp/co/sony/mc/camera/setting/CameraProSetting;->getCurrentCameraId()Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;
 
     move-result-object v3
 
     invoke-direct {v1, v2, v3}, Landroid/util/Pair;-><init>(Ljava/lang/Object;Ljava/lang/Object;)V
 
-    .line 267
+    .line 266
     invoke-virtual {v0, v1}, Ljp/co/sony/mc/camera/setting/CameraProSetting;->prepareCameraSetting(Landroid/util/Pair;)Ljp/co/sony/mc/camera/setting/CameraSettingsHolder;
 
-    .line 269
+    .line 268
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/SaveLocationSettingActivity;->getApplicationContext()Landroid/content/Context;
 
     move-result-object v0
@@ -701,17 +698,17 @@
 
     const v0, 0x7f0c001d
 
-    .line 271
+    .line 270
     invoke-virtual {p0, v0}, Ljp/co/sony/mc/camera/SaveLocationSettingActivity;->setContentView(I)V
 
-    .line 272
+    .line 271
     invoke-static {p0}, Ljp/co/sony/mc/camera/util/ActivityExtensionsKt;->getActivityRootView(Landroid/app/Activity;)Landroid/view/View;
 
     move-result-object v0
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/util/ViewExtensionsKt;->reserveSystemBarMargin(Landroid/view/View;)V
 
-    .line 274
+    .line 273
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/SaveLocationSettingActivity;->getApplication()Landroid/app/Application;
 
     move-result-object v0
@@ -724,25 +721,25 @@
 
     iput-object v0, p0, Ljp/co/sony/mc/camera/SaveLocationSettingActivity;->mStorage:Ljp/co/sony/mc/camera/storage/Storage;
 
-    .line 275
+    .line 274
     new-instance v0, Ljp/co/sony/mc/camera/mediasaving/location/GeotagManager;
 
     invoke-direct {v0}, Ljp/co/sony/mc/camera/mediasaving/location/GeotagManager;-><init>()V
 
     iput-object v0, p0, Ljp/co/sony/mc/camera/SaveLocationSettingActivity;->mGeotagManager:Ljp/co/sony/mc/camera/mediasaving/location/GeotagManager;
 
-    .line 276
+    .line 275
     invoke-virtual {v0}, Ljp/co/sony/mc/camera/mediasaving/location/GeotagManager;->assignResource()V
 
-    .line 277
+    .line 276
     iget-object v0, p0, Ljp/co/sony/mc/camera/SaveLocationSettingActivity;->mGeotagManager:Ljp/co/sony/mc/camera/mediasaving/location/GeotagManager;
 
     invoke-virtual {v0, p0, v4}, Ljp/co/sony/mc/camera/mediasaving/location/GeotagManager;->initGeotag(Landroid/app/Activity;Z)Z
 
-    .line 278
+    .line 277
     invoke-direct {p0}, Ljp/co/sony/mc/camera/SaveLocationSettingActivity;->setUpSettingsItemBuilder()V
 
-    .line 279
+    .line 278
     invoke-direct {p0}, Ljp/co/sony/mc/camera/SaveLocationSettingActivity;->showFragment()V
 
     return-void
@@ -751,27 +748,27 @@
 .method private showFragment()V
     .locals 4
 
-    .line 283
+    .line 282
     invoke-direct {p0}, Ljp/co/sony/mc/camera/SaveLocationSettingActivity;->getSaveLocationSettingItem()Ljp/co/sony/mc/camera/view/setting/settingitem/CameraSettingItem;
 
     move-result-object v0
 
-    .line 284
+    .line 283
     invoke-direct {p0, v0}, Ljp/co/sony/mc/camera/SaveLocationSettingActivity;->getDetailFragment(Ljp/co/sony/mc/camera/view/setting/settingitem/CameraSettingItem;)Ljp/co/sony/mc/camera/view/setting/fragment/CameraSettingsDetailFragment;
 
     move-result-object v0
 
-    .line 285
+    .line 284
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/SaveLocationSettingActivity;->getSupportFragmentManager()Landroidx/fragment/app/FragmentManager;
 
     move-result-object p0
 
-    .line 286
+    .line 285
     invoke-virtual {p0}, Landroidx/fragment/app/FragmentManager;->beginTransaction()Landroidx/fragment/app/FragmentTransaction;
 
     move-result-object v1
 
-    .line 287
+    .line 286
     invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     move-result-object v2
@@ -782,7 +779,7 @@
 
     invoke-virtual {v1, v2}, Landroidx/fragment/app/FragmentTransaction;->addToBackStack(Ljava/lang/String;)Landroidx/fragment/app/FragmentTransaction;
 
-    .line 288
+    .line 287
     invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     move-result-object v2
@@ -795,10 +792,10 @@
 
     invoke-virtual {v1, v3, v0, v2}, Landroidx/fragment/app/FragmentTransaction;->replace(ILandroidx/fragment/app/Fragment;Ljava/lang/String;)Landroidx/fragment/app/FragmentTransaction;
 
-    .line 289
+    .line 288
     invoke-virtual {v1}, Landroidx/fragment/app/FragmentTransaction;->commitAllowingStateLoss()I
 
-    .line 290
+    .line 289
     invoke-virtual {p0}, Landroidx/fragment/app/FragmentManager;->executePendingTransactions()Z
 
     return-void
@@ -809,32 +806,32 @@
 
     const/4 v0, 0x1
 
-    .line 329
+    .line 327
     invoke-static {p1, v0}, Ljp/co/sony/mc/camera/view/setting/fragment/SettingMessageDialogFragment;->newInstance(Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogRequest;Z)Ljp/co/sony/mc/camera/view/setting/fragment/SettingMessageDialogFragment;
 
     move-result-object p1
 
-    .line 331
+    .line 329
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/SaveLocationSettingActivity;->getSupportFragmentManager()Landroidx/fragment/app/FragmentManager;
 
     move-result-object p0
 
-    .line 332
+    .line 330
     invoke-virtual {p0}, Landroidx/fragment/app/FragmentManager;->beginTransaction()Landroidx/fragment/app/FragmentTransaction;
 
     move-result-object v1
 
-    .line 333
+    .line 331
     const-class v2, Ljp/co/sony/mc/camera/view/setting/fragment/SettingMessageDialogFragment;
 
     const-string v2, "SettingMessageDialogFragment"
 
     invoke-virtual {v1, p1, v2}, Landroidx/fragment/app/FragmentTransaction;->add(Landroidx/fragment/app/Fragment;Ljava/lang/String;)Landroidx/fragment/app/FragmentTransaction;
 
-    .line 334
+    .line 332
     invoke-virtual {v1}, Landroidx/fragment/app/FragmentTransaction;->commitAllowingStateLoss()I
 
-    .line 335
+    .line 333
     invoke-virtual {p0}, Landroidx/fragment/app/FragmentManager;->executePendingTransactions()Z
 
     return v0
@@ -843,7 +840,7 @@
 .method private updateSetting()V
     .locals 2
 
-    .line 340
+    .line 338
     invoke-direct {p0}, Ljp/co/sony/mc/camera/SaveLocationSettingActivity;->getSaveLocationSettingItem()Ljp/co/sony/mc/camera/view/setting/settingitem/CameraSettingItem;
 
     move-result-object v0
@@ -852,7 +849,7 @@
 
     move-result-object v0
 
-    .line 342
+    .line 340
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/SaveLocationSettingActivity;->getSupportFragmentManager()Landroidx/fragment/app/FragmentManager;
 
     move-result-object v1
@@ -865,7 +862,7 @@
 
     if-eqz v0, :cond_0
 
-    .line 344
+    .line 342
     invoke-direct {p0}, Ljp/co/sony/mc/camera/SaveLocationSettingActivity;->getSaveLocationSettingItem()Ljp/co/sony/mc/camera/view/setting/settingitem/CameraSettingItem;
 
     move-result-object p0
@@ -879,43 +876,47 @@
 
 # virtual methods
 .method protected onActivityResult(IILandroid/content/Intent;)V
-    .locals 1
+    .locals 2
 
-    .line 193
+    .line 192
     invoke-super {p0, p1, p2, p3}, Landroidx/appcompat/app/AppCompatActivity;->onActivityResult(IILandroid/content/Intent;)V
 
-    .line 194
+    .line 193
     sget-boolean p3, Ljp/co/sony/mc/camera/util/CamLog;->DEBUG:Z
 
     if-eqz p3, :cond_0
 
-    new-instance p3, Ljava/lang/StringBuilder;
+    const/4 p3, 0x1
 
-    const-string v0, "onActivityResult: requestCode: "
+    new-array p3, p3, [Ljava/lang/String;
 
-    invoke-direct {p3, v0}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+    new-instance v0, Ljava/lang/StringBuilder;
 
-    invoke-virtual {p3, p1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+    const-string v1, "onActivityResult: requestCode: "
 
-    move-result-object p3
+    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
-    const-string v0, ", resultCode: "
+    invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
-    invoke-virtual {p3, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    move-result-object v0
 
-    move-result-object p3
+    const-string v1, ", resultCode: "
 
-    invoke-virtual {p3, p2}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    move-result-object p3
+    move-result-object v0
 
-    invoke-virtual {p3}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-virtual {v0, p2}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
-    move-result-object p3
+    move-result-object v0
 
-    filled-new-array {p3}, [Ljava/lang/String;
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    move-result-object p3
+    move-result-object v0
+
+    const/4 v1, 0x0
+
+    aput-object v0, p3, v1
 
     invoke-static {p3}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
@@ -935,12 +936,12 @@
     :cond_1
     if-ne p2, v0, :cond_2
 
-    .line 203
+    .line 202
     invoke-direct {p0}, Ljp/co/sony/mc/camera/SaveLocationSettingActivity;->reInitGeoTag()V
 
     goto :goto_0
 
-    .line 205
+    .line 204
     :cond_2
     iget-object p1, p0, Ljp/co/sony/mc/camera/SaveLocationSettingActivity;->mGeotagManager:Ljp/co/sony/mc/camera/mediasaving/location/GeotagManager;
 
@@ -948,7 +949,7 @@
 
     invoke-virtual {p1, p2}, Ljp/co/sony/mc/camera/mediasaving/location/GeotagManager;->updateLocation(Ljp/co/sony/mc/camera/configuration/parameters/Geotag;)V
 
-    .line 206
+    .line 205
     invoke-static {}, Ljp/co/sony/mc/camera/setting/CameraProSetting;->getInstance()Ljp/co/sony/mc/camera/setting/CameraProSetting;
 
     move-result-object p1
@@ -959,7 +960,7 @@
 
     invoke-virtual {p1, p2, p3}, Ljp/co/sony/mc/camera/setting/CameraProSetting;->set(Ljp/co/sony/mc/camera/setting/SettingKey$Key;Ljava/lang/Object;)V
 
-    .line 207
+    .line 206
     invoke-direct {p0}, Ljp/co/sony/mc/camera/SaveLocationSettingActivity;->updateSetting()V
 
     goto :goto_0
@@ -967,7 +968,7 @@
     :cond_3
     if-ne p2, v0, :cond_5
 
-    .line 212
+    .line 211
     iget-object p1, p0, Ljp/co/sony/mc/camera/SaveLocationSettingActivity;->REQUESTED_PERMISSIONS:[Ljava/lang/String;
 
     invoke-static {p0, p1}, Ljp/co/sony/mc/camera/util/PermissionsUtil;->arePermissionsGranted(Landroid/content/Context;[Ljava/lang/String;)Z
@@ -976,12 +977,12 @@
 
     if-nez p1, :cond_4
 
-    .line 214
+    .line 213
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/SaveLocationSettingActivity;->finish()V
 
     goto :goto_0
 
-    .line 216
+    .line 215
     :cond_4
     invoke-direct {p0}, Ljp/co/sony/mc/camera/SaveLocationSettingActivity;->setup()V
 
@@ -993,10 +994,10 @@
 .method public onBackPressed()V
     .locals 0
 
-    .line 177
+    .line 176
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/SaveLocationSettingActivity;->finish()V
 
-    .line 179
+    .line 178
     invoke-super {p0}, Landroidx/appcompat/app/AppCompatActivity;->onBackPressed()V
 
     return-void
@@ -1054,41 +1055,32 @@
     :goto_0
     invoke-direct {p0}, Ljp/co/sony/mc/camera/SaveLocationSettingActivity;->setup()V
 
-    .line 108
     :goto_1
-    invoke-virtual {p0}, Ljp/co/sony/mc/camera/SaveLocationSettingActivity;->getSupportActionBar()Landroidx/appcompat/app/ActionBar;
-
-    move-result-object p0
-
-    const/4 p1, 0x1
-
-    invoke-virtual {p0, p1}, Landroidx/appcompat/app/ActionBar;->setDisplayHomeAsUpEnabled(Z)V
-
     return-void
 .end method
 
 .method protected onDestroy()V
     .locals 1
 
-    .line 156
+    .line 155
     invoke-super {p0}, Landroidx/appcompat/app/AppCompatActivity;->onDestroy()V
 
-    .line 158
+    .line 157
     iget-object v0, p0, Ljp/co/sony/mc/camera/SaveLocationSettingActivity;->mGeotagManager:Ljp/co/sony/mc/camera/mediasaving/location/GeotagManager;
 
     if-eqz v0, :cond_0
 
-    .line 159
+    .line 158
     invoke-virtual {v0}, Ljp/co/sony/mc/camera/mediasaving/location/GeotagManager;->releaseResource()V
 
-    .line 160
+    .line 159
     iget-object v0, p0, Ljp/co/sony/mc/camera/SaveLocationSettingActivity;->mGeotagManager:Ljp/co/sony/mc/camera/mediasaving/location/GeotagManager;
 
     invoke-virtual {v0}, Ljp/co/sony/mc/camera/mediasaving/location/GeotagManager;->release()V
 
     const/4 v0, 0x0
 
-    .line 161
+    .line 160
     iput-object v0, p0, Ljp/co/sony/mc/camera/SaveLocationSettingActivity;->mGeotagManager:Ljp/co/sony/mc/camera/mediasaving/location/GeotagManager;
 
     :cond_0
@@ -1098,7 +1090,7 @@
 .method public onDismiss(Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogRequest;I)V
     .locals 1
 
-    .line 368
+    .line 366
     sget-object v0, Ljp/co/sony/mc/camera/SaveLocationSettingActivity$2;->$SwitchMap$jp$co$sony$mc$camera$view$messagedialog$DialogId:[I
 
     iget-object p1, p1, Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogRequest;->mDialogId:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
@@ -1120,15 +1112,15 @@
 
     if-ne p2, p1, :cond_1
 
-    .line 371
+    .line 369
     iput-boolean v0, p0, Ljp/co/sony/mc/camera/SaveLocationSettingActivity;->mIsLocationSystemSettingsLaunched:Z
 
-    .line 372
+    .line 370
     invoke-static {p0}, Ljp/co/sony/mc/camera/controller/launcher/ApplicationLauncher;->launchLocationSourceSettings(Landroid/app/Activity;)V
 
     goto :goto_0
 
-    .line 374
+    .line 372
     :cond_1
     iget-object p1, p0, Ljp/co/sony/mc/camera/SaveLocationSettingActivity;->mGeotagManager:Ljp/co/sony/mc/camera/mediasaving/location/GeotagManager;
 
@@ -1136,7 +1128,7 @@
 
     invoke-virtual {p1, p2}, Ljp/co/sony/mc/camera/mediasaving/location/GeotagManager;->updateLocation(Ljp/co/sony/mc/camera/configuration/parameters/Geotag;)V
 
-    .line 375
+    .line 373
     invoke-static {}, Ljp/co/sony/mc/camera/setting/CameraProSetting;->getInstance()Ljp/co/sony/mc/camera/setting/CameraProSetting;
 
     move-result-object p1
@@ -1147,7 +1139,7 @@
 
     invoke-virtual {p1, p2, v0}, Ljp/co/sony/mc/camera/setting/CameraProSetting;->set(Ljp/co/sony/mc/camera/setting/SettingKey$Key;Ljava/lang/Object;)V
 
-    .line 376
+    .line 374
     iget-object p1, p0, Ljp/co/sony/mc/camera/SaveLocationSettingActivity;->mMainHandler:Landroid/os/Handler;
 
     new-instance p2, Ljp/co/sony/mc/camera/SaveLocationSettingActivity$$ExternalSyntheticLambda1;
@@ -1163,7 +1155,7 @@
 .method public onKeyUp(ILandroid/view/KeyEvent;)Z
     .locals 2
 
-    .line 167
+    .line 166
     invoke-static {p1}, Ljp/co/sony/mc/camera/util/KeyEventTranslator;->translateKeyCode(I)Ljp/co/sony/mc/camera/util/KeyEventTranslator$TranslatedKeyCode;
 
     move-result-object v0
@@ -1172,14 +1164,14 @@
 
     if-ne v0, v1, :cond_0
 
-    .line 169
+    .line 168
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/SaveLocationSettingActivity;->onBackPressed()V
 
     const/4 p0, 0x1
 
     return p0
 
-    .line 172
+    .line 171
     :cond_0
     invoke-super {p0, p1, p2}, Landroidx/appcompat/app/AppCompatActivity;->onKeyUp(ILandroid/view/KeyEvent;)Z
 
@@ -1191,22 +1183,22 @@
 .method protected onNewIntent(Landroid/content/Intent;)V
     .locals 1
 
-    .line 113
+    .line 112
     invoke-super {p0, p1}, Landroidx/appcompat/app/AppCompatActivity;->onNewIntent(Landroid/content/Intent;)V
 
-    .line 114
+    .line 113
     invoke-direct {p0}, Ljp/co/sony/mc/camera/SaveLocationSettingActivity;->isLaunchedFromGooglePhotos()Z
 
     move-result v0
 
     if-nez v0, :cond_0
 
-    .line 115
+    .line 114
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/SaveLocationSettingActivity;->finishAndRemoveTask()V
 
     return-void
 
-    .line 119
+    .line 118
     :cond_0
     invoke-virtual {p0, p1}, Ljp/co/sony/mc/camera/SaveLocationSettingActivity;->setIntent(Landroid/content/Intent;)V
 
@@ -1216,7 +1208,7 @@
 .method public onOptionsItemSelected(Landroid/view/MenuItem;)Z
     .locals 2
 
-    .line 184
+    .line 183
     invoke-interface {p1}, Landroid/view/MenuItem;->getItemId()I
 
     move-result v0
@@ -1225,10 +1217,10 @@
 
     if-ne v0, v1, :cond_0
 
-    .line 185
+    .line 184
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/SaveLocationSettingActivity;->finish()V
 
-    .line 188
+    .line 187
     :cond_0
     invoke-super {p0, p1}, Landroidx/appcompat/app/AppCompatActivity;->onOptionsItemSelected(Landroid/view/MenuItem;)Z
 
@@ -1240,10 +1232,10 @@
 .method protected onPause()V
     .locals 0
 
-    .line 150
+    .line 149
     invoke-super {p0}, Landroidx/appcompat/app/AppCompatActivity;->onPause()V
 
-    .line 151
+    .line 150
     invoke-static {}, Ljp/co/sony/mc/camera/setting/CameraProSetting;->getInstance()Ljp/co/sony/mc/camera/setting/CameraProSetting;
 
     move-result-object p0
@@ -1256,10 +1248,10 @@
 .method protected onResume()V
     .locals 4
 
-    .line 124
+    .line 123
     invoke-super {p0}, Landroidx/appcompat/app/AppCompatActivity;->onResume()V
 
-    .line 126
+    .line 125
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/SaveLocationSettingActivity;->getWindow()Landroid/view/Window;
 
     move-result-object v0
@@ -1272,14 +1264,14 @@
 
     const/16 v0, 0xc
 
-    .line 128
+    .line 127
     iget-object v1, p0, Ljp/co/sony/mc/camera/SaveLocationSettingActivity;->REQUESTED_PERMISSIONS:[Ljava/lang/String;
 
     const/4 v2, 0x0
 
     invoke-static {p0, v2, v0, v1}, Ljp/co/sony/mc/camera/util/PermissionsUtil;->checkAndRequestSelfPermissions(Landroid/app/Activity;II[Ljava/lang/String;)Z
 
-    .line 130
+    .line 129
     invoke-static {}, Ljp/co/sony/mc/camera/util/capability/PlatformCapability;->isPrepared()Z
 
     move-result v0
@@ -1288,13 +1280,13 @@
 
     return-void
 
-    .line 134
+    .line 133
     :cond_0
     invoke-static {}, Ljp/co/sony/mc/camera/setting/CameraProSetting;->getInstance()Ljp/co/sony/mc/camera/setting/CameraProSetting;
 
     move-result-object v0
 
-    .line 136
+    .line 135
     invoke-virtual {v0}, Ljp/co/sony/mc/camera/setting/CameraProSetting;->getCurrentCapturingMode()Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
     move-result-object v1
@@ -1303,10 +1295,10 @@
 
     move-result-object v3
 
-    .line 135
+    .line 134
     invoke-virtual {v0, v1, v3}, Ljp/co/sony/mc/camera/setting/CameraProSetting;->changeCameraSetting(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;)V
 
-    .line 137
+    .line 136
     sget-object v1, Ljp/co/sony/mc/camera/configuration/parameters/Geotag;->ON:Ljp/co/sony/mc/camera/configuration/parameters/Geotag;
 
     invoke-static {v1, p0}, Ljp/co/sony/mc/camera/mediasaving/location/GeotagManager;->isGeoTagEnabled(Ljp/co/sony/mc/camera/configuration/parameters/Geotag;Landroid/content/Context;)Z
@@ -1315,12 +1307,12 @@
 
     if-eqz v1, :cond_1
 
-    .line 138
+    .line 137
     iget-boolean v1, p0, Ljp/co/sony/mc/camera/SaveLocationSettingActivity;->mIsLocationSystemSettingsLaunched:Z
 
     if-eqz v1, :cond_2
 
-    .line 139
+    .line 138
     sget-object v1, Ljp/co/sony/mc/camera/setting/CommonSettings;->GEOTAG:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
 
     sget-object v3, Ljp/co/sony/mc/camera/configuration/parameters/Geotag;->ON:Ljp/co/sony/mc/camera/configuration/parameters/Geotag;
@@ -1329,7 +1321,7 @@
 
     goto :goto_0
 
-    .line 142
+    .line 141
     :cond_1
     sget-object v1, Ljp/co/sony/mc/camera/setting/CommonSettings;->GEOTAG:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
 
@@ -1337,12 +1329,12 @@
 
     invoke-virtual {v0, v1, v3}, Ljp/co/sony/mc/camera/setting/CameraProSetting;->set(Ljp/co/sony/mc/camera/setting/SettingKey$Key;Ljava/lang/Object;)V
 
-    .line 144
+    .line 143
     :cond_2
     :goto_0
     invoke-direct {p0}, Ljp/co/sony/mc/camera/SaveLocationSettingActivity;->updateSetting()V
 
-    .line 145
+    .line 144
     iput-boolean v2, p0, Ljp/co/sony/mc/camera/SaveLocationSettingActivity;->mIsLocationSystemSettingsLaunched:Z
 
     return-void
@@ -1351,7 +1343,7 @@
 .method public onValueChanged(Ljp/co/sony/mc/camera/setting/SettingKey$Key;Ljp/co/sony/mc/camera/configuration/parameters/UserSettingValue;Ljp/co/sony/mc/camera/setting/SettingAppearance;)V
     .locals 2
 
-    .line 363
+    .line 361
     iget-object v0, p0, Ljp/co/sony/mc/camera/SaveLocationSettingActivity;->mMainHandler:Landroid/os/Handler;
 
     new-instance v1, Ljp/co/sony/mc/camera/SaveLocationSettingActivity$$ExternalSyntheticLambda2;

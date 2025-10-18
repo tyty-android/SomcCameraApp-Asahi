@@ -55,7 +55,7 @@
     .line 25
     new-instance v6, Ljp/co/sony/mc/camera/configuration/parameters/DistortionCorrection;
 
-    const v4, 0x7f1102c4
+    const v4, 0x7f1102e9
 
     const-string v5, "off"
 
@@ -74,7 +74,7 @@
     .line 29
     new-instance v0, Ljp/co/sony/mc/camera/configuration/parameters/DistortionCorrection;
 
-    const v11, 0x7f1102c5
+    const v11, 0x7f1102ea
 
     const-string v12, "on"
 
@@ -125,11 +125,11 @@
     return-void
 .end method
 
-.method public static getDefaultValue(Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;)Ljp/co/sony/mc/camera/configuration/parameters/DistortionCorrection;
-    .locals 1
+.method public static getDefaultValue(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;)Ljp/co/sony/mc/camera/configuration/parameters/DistortionCorrection;
+    .locals 0
 
-    .line 122
-    invoke-static {p0}, Ljp/co/sony/mc/camera/configuration/parameters/DistortionCorrection;->getOptions(Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;)[Ljp/co/sony/mc/camera/configuration/parameters/DistortionCorrection;
+    .line 127
+    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/configuration/parameters/DistortionCorrection;->getOptions(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;)[Ljp/co/sony/mc/camera/configuration/parameters/DistortionCorrection;
 
     move-result-object p0
 
@@ -137,60 +137,68 @@
 
     move-result-object p0
 
-    sget-object v0, Ljp/co/sony/mc/camera/configuration/parameters/DistortionCorrection;->ON:Ljp/co/sony/mc/camera/configuration/parameters/DistortionCorrection;
+    sget-object p1, Ljp/co/sony/mc/camera/configuration/parameters/DistortionCorrection;->ON:Ljp/co/sony/mc/camera/configuration/parameters/DistortionCorrection;
 
-    invoke-interface {p0, v0}, Ljava/util/List;->contains(Ljava/lang/Object;)Z
+    invoke-interface {p0, p1}, Ljava/util/List;->contains(Ljava/lang/Object;)Z
 
     move-result p0
 
     if-eqz p0, :cond_0
 
-    return-object v0
+    return-object p1
 
-    .line 125
+    .line 130
     :cond_0
     sget-object p0, Ljp/co/sony/mc/camera/configuration/parameters/DistortionCorrection;->OFF:Ljp/co/sony/mc/camera/configuration/parameters/DistortionCorrection;
 
     return-object p0
 .end method
 
-.method public static getOptions(Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;)[Ljp/co/sony/mc/camera/configuration/parameters/DistortionCorrection;
-    .locals 2
+.method public static getOptions(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;)[Ljp/co/sony/mc/camera/configuration/parameters/DistortionCorrection;
+    .locals 1
 
-    .line 106
+    .line 107
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
-    .line 107
-    sget-object v1, Ljp/co/sony/mc/camera/configuration/parameters/DistortionCorrection;->OFF:Ljp/co/sony/mc/camera/configuration/parameters/DistortionCorrection;
-
-    invoke-virtual {v0, v1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
-
     .line 108
-    invoke-static {p0}, Ljp/co/sony/mc/camera/util/capability/PlatformCapability;->isAndroidDistortionCorrectionSupported(Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;)Z
+    invoke-static {p1}, Ljp/co/sony/mc/camera/util/capability/PlatformCapability;->isAndroidDistortionCorrectionSupported(Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;)Z
 
-    move-result v1
+    move-result p1
 
-    if-nez v1, :cond_0
+    if-eqz p1, :cond_1
 
     .line 109
-    invoke-static {p0}, Ljp/co/sony/mc/camera/util/capability/PlatformCapability;->isSonyDistortionCorrectionSupported(Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;)Z
+    invoke-virtual {p0}, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->isProPhoto()Z
 
     move-result p0
 
-    if-eqz p0, :cond_1
+    if-eqz p0, :cond_0
 
     .line 110
+    sget-object p0, Ljp/co/sony/mc/camera/configuration/parameters/DistortionCorrection;->OFF:Ljp/co/sony/mc/camera/configuration/parameters/DistortionCorrection;
+
+    invoke-virtual {v0, p0}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+
+    .line 112
     :cond_0
     sget-object p0, Ljp/co/sony/mc/camera/configuration/parameters/DistortionCorrection;->ON:Ljp/co/sony/mc/camera/configuration/parameters/DistortionCorrection;
 
     invoke-virtual {v0, p0}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
+    goto :goto_0
+
+    .line 114
     :cond_1
+    sget-object p0, Ljp/co/sony/mc/camera/configuration/parameters/DistortionCorrection;->OFF:Ljp/co/sony/mc/camera/configuration/parameters/DistortionCorrection;
+
+    invoke-virtual {v0, p0}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+
+    :goto_0
     const/4 p0, 0x0
 
-    .line 112
+    .line 116
     new-array p0, p0, [Ljp/co/sony/mc/camera/configuration/parameters/DistortionCorrection;
 
     invoke-virtual {v0, p0}, Ljava/util/ArrayList;->toArray([Ljava/lang/Object;)[Ljava/lang/Object;

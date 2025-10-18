@@ -30,7 +30,7 @@
     .line 0
     iget-object p0, p0, Landroidx/compose/ui/text/input/TextInputServiceAndroid_androidKt$$ExternalSyntheticLambda0;->f$0:Ljava/lang/Runnable;
 
-    invoke-static {p0, p1, p2}, Landroidx/compose/ui/text/input/TextInputServiceAndroid_androidKt;->$r8$lambda$nJJg34XLVi2Mw3BPHv7OYo0T1K4(Ljava/lang/Runnable;J)V
+    invoke-static {p0, p1, p2}, Landroidx/compose/ui/text/input/TextInputServiceAndroid_androidKt;->$r8$lambda$nEtFUEU03rhWZ7PGABg9OjqaO2E(Ljava/lang/Runnable;J)V
 
     return-void
 .end method

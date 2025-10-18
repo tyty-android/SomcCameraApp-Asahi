@@ -28,6 +28,15 @@
 .end annotation
 
 .annotation runtime Lkotlin/Metadata;
+    d1 = {
+        "\u0000\n\n\u0000\n\u0002\u0010\u0002\n\u0002\u0008\u0002\u0010\u0000\u001a\u00020\u0001H\u000b\u00a2\u0006\u0004\u0008\u0002\u0010\u0003"
+    }
+    d2 = {
+        "<anonymous>",
+        "",
+        "invoke",
+        "(Landroidx/compose/runtime/Composer;I)V"
+    }
     k = 0x3
     mv = {
         0x1,
@@ -39,8 +48,6 @@
 
 
 # instance fields
-.field final synthetic $$changed:I
-
 .field final synthetic $content:Lkotlin/jvm/functions/Function2;
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -53,35 +60,30 @@
     .end annotation
 .end field
 
-.field final synthetic $handlePosition:J
-
 .field final synthetic $modifier:Landroidx/compose/ui/Modifier;
 
 
 # direct methods
-.method constructor <init>(JLandroidx/compose/ui/Modifier;Lkotlin/jvm/functions/Function2;I)V
+.method constructor <init>(Lkotlin/jvm/functions/Function2;Landroidx/compose/ui/Modifier;)V
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "(J",
-            "Landroidx/compose/ui/Modifier;",
+            "(",
             "Lkotlin/jvm/functions/Function2<",
             "-",
             "Landroidx/compose/runtime/Composer;",
             "-",
             "Ljava/lang/Integer;",
             "Lkotlin/Unit;",
-            ">;I)V"
+            ">;",
+            "Landroidx/compose/ui/Modifier;",
+            ")V"
         }
     .end annotation
 
-    iput-wide p1, p0, Landroidx/compose/foundation/text/AndroidCursorHandle_androidKt$CursorHandle$2;->$handlePosition:J
+    iput-object p1, p0, Landroidx/compose/foundation/text/AndroidCursorHandle_androidKt$CursorHandle$2;->$content:Lkotlin/jvm/functions/Function2;
 
-    iput-object p3, p0, Landroidx/compose/foundation/text/AndroidCursorHandle_androidKt$CursorHandle$2;->$modifier:Landroidx/compose/ui/Modifier;
-
-    iput-object p4, p0, Landroidx/compose/foundation/text/AndroidCursorHandle_androidKt$CursorHandle$2;->$content:Lkotlin/jvm/functions/Function2;
-
-    iput p5, p0, Landroidx/compose/foundation/text/AndroidCursorHandle_androidKt$CursorHandle$2;->$$changed:I
+    iput-object p2, p0, Landroidx/compose/foundation/text/AndroidCursorHandle_androidKt$CursorHandle$2;->$modifier:Landroidx/compose/ui/Modifier;
 
     const/4 p1, 0x2
 
@@ -95,6 +97,7 @@
 .method public bridge synthetic invoke(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
 
+    .line 47
     check-cast p1, Landroidx/compose/runtime/Composer;
 
     check-cast p2, Ljava/lang/Number;
@@ -111,25 +114,107 @@
 .end method
 
 .method public final invoke(Landroidx/compose/runtime/Composer;I)V
-    .locals 6
+    .locals 3
 
-    iget-wide v0, p0, Landroidx/compose/foundation/text/AndroidCursorHandle_androidKt$CursorHandle$2;->$handlePosition:J
+    const-string v0, "C:AndroidCursorHandle.android.kt#423gt5"
 
-    iget-object v2, p0, Landroidx/compose/foundation/text/AndroidCursorHandle_androidKt$CursorHandle$2;->$modifier:Landroidx/compose/ui/Modifier;
+    invoke-static {p1, v0}, Landroidx/compose/runtime/ComposerKt;->sourceInformation(Landroidx/compose/runtime/Composer;Ljava/lang/String;)V
 
-    iget-object v3, p0, Landroidx/compose/foundation/text/AndroidCursorHandle_androidKt$CursorHandle$2;->$content:Lkotlin/jvm/functions/Function2;
+    and-int/lit8 v0, p2, 0xb
 
-    iget p0, p0, Landroidx/compose/foundation/text/AndroidCursorHandle_androidKt$CursorHandle$2;->$$changed:I
+    const/4 v1, 0x2
 
-    or-int/lit8 p0, p0, 0x1
+    if-ne v0, v1, :cond_1
 
-    invoke-static {p0}, Landroidx/compose/runtime/RecomposeScopeImplKt;->updateChangedFlags(I)I
+    .line 48
+    invoke-interface {p1}, Landroidx/compose/runtime/Composer;->getSkipping()Z
 
-    move-result v5
+    move-result v0
 
-    move-object v4, p1
+    if-nez v0, :cond_0
 
-    invoke-static/range {v0 .. v5}, Landroidx/compose/foundation/text/AndroidCursorHandle_androidKt;->CursorHandle-ULxng0E(JLandroidx/compose/ui/Modifier;Lkotlin/jvm/functions/Function2;Landroidx/compose/runtime/Composer;I)V
+    goto :goto_0
 
+    .line 52
+    :cond_0
+    invoke-interface {p1}, Landroidx/compose/runtime/Composer;->skipToGroupEnd()V
+
+    goto :goto_2
+
+    .line 48
+    :cond_1
+    :goto_0
+    invoke-static {}, Landroidx/compose/runtime/ComposerKt;->isTraceInProgress()Z
+
+    move-result v0
+
+    if-eqz v0, :cond_2
+
+    const/4 v0, -0x1
+
+    const-string v1, "androidx.compose.foundation.text.CursorHandle.<anonymous> (AndroidCursorHandle.android.kt:47)"
+
+    const v2, -0x56eea462
+
+    invoke-static {v2, p2, v0, v1}, Landroidx/compose/runtime/ComposerKt;->traceEventStart(IIILjava/lang/String;)V
+
+    :cond_2
+    iget-object p2, p0, Landroidx/compose/foundation/text/AndroidCursorHandle_androidKt$CursorHandle$2;->$content:Lkotlin/jvm/functions/Function2;
+
+    const/4 v0, 0x0
+
+    if-nez p2, :cond_3
+
+    const p2, 0x4c08c7c5    # 3.5856148E7f
+
+    invoke-interface {p1, p2}, Landroidx/compose/runtime/Composer;->startReplaceableGroup(I)V
+
+    const-string p2, "48@1847L40"
+
+    invoke-static {p1, p2}, Landroidx/compose/runtime/ComposerKt;->sourceInformation(Landroidx/compose/runtime/Composer;Ljava/lang/String;)V
+
+    .line 49
+    iget-object p0, p0, Landroidx/compose/foundation/text/AndroidCursorHandle_androidKt$CursorHandle$2;->$modifier:Landroidx/compose/ui/Modifier;
+
+    invoke-static {p0, p1, v0}, Landroidx/compose/foundation/text/AndroidCursorHandle_androidKt;->DefaultCursorHandle(Landroidx/compose/ui/Modifier;Landroidx/compose/runtime/Composer;I)V
+
+    .line 48
+    invoke-interface {p1}, Landroidx/compose/runtime/Composer;->endReplaceableGroup()V
+
+    goto :goto_1
+
+    :cond_3
+    const p2, 0x4c08c80b    # 3.5856428E7f
+
+    .line 50
+    invoke-interface {p1, p2}, Landroidx/compose/runtime/Composer;->startReplaceableGroup(I)V
+
+    const-string p2, "50@1917L9"
+
+    invoke-static {p1, p2}, Landroidx/compose/runtime/ComposerKt;->sourceInformation(Landroidx/compose/runtime/Composer;Ljava/lang/String;)V
+
+    .line 51
+    iget-object p0, p0, Landroidx/compose/foundation/text/AndroidCursorHandle_androidKt$CursorHandle$2;->$content:Lkotlin/jvm/functions/Function2;
+
+    invoke-static {v0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object p2
+
+    invoke-interface {p0, p1, p2}, Lkotlin/jvm/functions/Function2;->invoke(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 50
+    invoke-interface {p1}, Landroidx/compose/runtime/Composer;->endReplaceableGroup()V
+
+    :goto_1
+    invoke-static {}, Landroidx/compose/runtime/ComposerKt;->isTraceInProgress()Z
+
+    move-result p0
+
+    if-eqz p0, :cond_4
+
+    invoke-static {}, Landroidx/compose/runtime/ComposerKt;->traceEventEnd()V
+
+    :cond_4
+    :goto_2
     return-void
 .end method

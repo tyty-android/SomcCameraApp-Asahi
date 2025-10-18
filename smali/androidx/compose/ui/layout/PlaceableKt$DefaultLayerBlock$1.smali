@@ -78,7 +78,7 @@
 .method public bridge synthetic invoke(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
 
-    .line 424
+    .line 356
     check-cast p1, Landroidx/compose/ui/graphics/GraphicsLayerScope;
 
     invoke-virtual {p0, p1}, Landroidx/compose/ui/layout/PlaceableKt$DefaultLayerBlock$1;->invoke(Landroidx/compose/ui/graphics/GraphicsLayerScope;)V
@@ -90,10 +90,6 @@
 
 .method public final invoke(Landroidx/compose/ui/graphics/GraphicsLayerScope;)V
     .locals 0
-
-    const-string p0, "$this$null"
-
-    invoke-static {p1, p0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
     return-void
 .end method

@@ -72,7 +72,7 @@
 .method public bridge synthetic invoke(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
 
-    .line 541
+    .line 540
     check-cast p1, Landroidx/compose/ui/input/pointer/PointerInputChange;
 
     check-cast p2, Ljava/lang/Number;
@@ -89,16 +89,12 @@
 .end method
 
 .method public final invoke(Landroidx/compose/ui/input/pointer/PointerInputChange;F)V
-    .locals 1
+    .locals 0
 
-    const-string v0, "change"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 545
+    .line 544
     invoke-virtual {p1}, Landroidx/compose/ui/input/pointer/PointerInputChange;->consume()V
 
-    .line 546
+    .line 545
     iget-object p0, p0, Landroidx/compose/foundation/gestures/DragGestureDetectorKt$detectHorizontalDragGestures$5$drag$1;->$overSlop:Lkotlin/jvm/internal/Ref$FloatRef;
 
     iput p2, p0, Lkotlin/jvm/internal/Ref$FloatRef;->element:F

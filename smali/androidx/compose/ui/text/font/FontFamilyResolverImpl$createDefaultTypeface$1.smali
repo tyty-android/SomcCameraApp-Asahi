@@ -69,10 +69,6 @@
 .method public final invoke(Landroidx/compose/ui/text/font/TypefaceRequest;)Ljava/lang/Object;
     .locals 8
 
-    const-string v0, "it"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
     .line 36
     iget-object p0, p0, Landroidx/compose/ui/text/font/FontFamilyResolverImpl$createDefaultTypeface$1;->this$0:Landroidx/compose/ui/text/font/FontFamilyResolverImpl;
 

@@ -43,12 +43,12 @@
         }
     .end annotation
 
-    .line 5584
+    .line 5844
     iput-object p1, p0, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$DeviceStateMachineCallbackImpl$SnapshotDoneHandlerCallbackImpl;->this$1:Ljp/co/sony/mc/camera/device/CameraDeviceHandler$DeviceStateMachineCallbackImpl;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 5585
+    .line 5845
     iput-object p2, p0, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$DeviceStateMachineCallbackImpl$SnapshotDoneHandlerCallbackImpl;->localRequestBuilderList:Ljava/util/List;
 
     return-void
@@ -67,20 +67,24 @@
 .method public run()V
     .locals 4
 
-    .line 5590
+    .line 5850
     sget-boolean v0, Ljp/co/sony/mc/camera/util/CamLog;->DEBUG:Z
 
     if-eqz v0, :cond_0
 
-    const-string v0, "SnapshotDoneHandlerCallbackImpl invoked"
+    const/4 v0, 0x1
 
-    filled-new-array {v0}, [Ljava/lang/String;
+    new-array v0, v0, [Ljava/lang/String;
 
-    move-result-object v0
+    const/4 v1, 0x0
+
+    const-string v2, "SnapshotDoneHandlerCallbackImpl invoked"
+
+    aput-object v2, v0, v1
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
-    .line 5591
+    .line 5851
     :cond_0
     iget-object v0, p0, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$DeviceStateMachineCallbackImpl$SnapshotDoneHandlerCallbackImpl;->localRequestBuilderList:Ljava/util/List;
 
@@ -102,19 +106,19 @@
 
     check-cast v1, Ljp/co/sony/mc/camera/storage/RequestFactory$PhotoSavingRequestBuilder;
 
-    .line 5593
+    .line 5853
     invoke-static {v1}, Ljp/co/sony/mc/camera/util/CapturePerformanceLogger;->get(Ljp/co/sony/mc/camera/storage/RequestFactory$RequestBuilder;)Ljp/co/sony/mc/camera/util/CapturePerformanceLogger$TimeLog;
 
     move-result-object v2
 
     if-eqz v2, :cond_1
 
-    .line 5594
+    .line 5854
     invoke-static {v1}, Ljp/co/sony/mc/camera/util/CapturePerformanceLogger;->get(Ljp/co/sony/mc/camera/storage/RequestFactory$RequestBuilder;)Ljp/co/sony/mc/camera/util/CapturePerformanceLogger$TimeLog;
 
     move-result-object v1
 
-    .line 5595
+    .line 5855
     invoke-static {}, Landroid/os/SystemClock;->uptimeMillis()J
 
     move-result-wide v2
@@ -123,11 +127,11 @@
 
     goto :goto_0
 
-    .line 5600
+    .line 5860
     :cond_2
     invoke-static {}, Ljp/co/sony/mc/camera/testevent/TestEventSender;->onPictureTaken()V
 
-    .line 5601
+    .line 5861
     iget-object v0, p0, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$DeviceStateMachineCallbackImpl$SnapshotDoneHandlerCallbackImpl;->this$1:Ljp/co/sony/mc/camera/device/CameraDeviceHandler$DeviceStateMachineCallbackImpl;
 
     iget-object v0, v0, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$DeviceStateMachineCallbackImpl;->this$0:Ljp/co/sony/mc/camera/device/CameraDeviceHandler;
@@ -138,7 +142,7 @@
 
     if-eqz v0, :cond_3
 
-    .line 5602
+    .line 5862
     iget-object v0, p0, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$DeviceStateMachineCallbackImpl$SnapshotDoneHandlerCallbackImpl;->this$1:Ljp/co/sony/mc/camera/device/CameraDeviceHandler$DeviceStateMachineCallbackImpl;
 
     iget-object v0, v0, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$DeviceStateMachineCallbackImpl;->this$0:Ljp/co/sony/mc/camera/device/CameraDeviceHandler;

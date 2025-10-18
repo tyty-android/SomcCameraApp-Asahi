@@ -35,12 +35,12 @@
 .method private constructor <init>(Ljp/co/sony/mc/camera/controller/StateMachine;Ljp/co/sony/mc/camera/storage/RequestFactory$PhotoSavingRequestBuilder;)V
     .locals 0
 
-    .line 7443
+    .line 7514
     iput-object p1, p0, Ljp/co/sony/mc/camera/controller/StateMachine$RequestStoreTask;->this$0:Ljp/co/sony/mc/camera/controller/StateMachine;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 7444
+    .line 7515
     iput-object p2, p0, Ljp/co/sony/mc/camera/controller/StateMachine$RequestStoreTask;->mRequest:Ljp/co/sony/mc/camera/storage/RequestFactory$PhotoSavingRequestBuilder;
 
     return-void
@@ -59,26 +59,30 @@
 .method public run()V
     .locals 3
 
-    .line 7449
+    .line 7520
     sget-boolean v0, Ljp/co/sony/mc/camera/util/CamLog;->DEBUG:Z
 
     if-eqz v0, :cond_0
 
-    const-string v0, "invoke RequestStoreTask"
+    const/4 v0, 0x1
 
-    filled-new-array {v0}, [Ljava/lang/String;
+    new-array v0, v0, [Ljava/lang/String;
 
-    move-result-object v0
+    const/4 v1, 0x0
+
+    const-string v2, "invoke RequestStoreTask"
+
+    aput-object v2, v0, v1
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
-    .line 7451
+    .line 7522
     :cond_0
     iget-object v0, p0, Ljp/co/sony/mc/camera/controller/StateMachine$RequestStoreTask;->this$0:Ljp/co/sony/mc/camera/controller/StateMachine;
 
     monitor-enter v0
 
-    .line 7461
+    .line 7532
     :try_start_0
     iget-object v1, p0, Ljp/co/sony/mc/camera/controller/StateMachine$RequestStoreTask;->this$0:Ljp/co/sony/mc/camera/controller/StateMachine;
 
@@ -98,7 +102,7 @@
 
     if-eqz v1, :cond_1
 
-    .line 7462
+    .line 7533
     iget-object v1, p0, Ljp/co/sony/mc/camera/controller/StateMachine$RequestStoreTask;->this$0:Ljp/co/sony/mc/camera/controller/StateMachine;
 
     invoke-static {v1}, Ljp/co/sony/mc/camera/controller/StateMachine;->-$$Nest$fgetmActivity(Ljp/co/sony/mc/camera/controller/StateMachine;)Ljp/co/sony/mc/camera/CameraActivity;
@@ -111,12 +115,12 @@
 
     invoke-virtual {v1, v2}, Ljp/co/sony/mc/camera/CameraActivity;->runOnUiThread(Ljava/lang/Runnable;)V
 
-    .line 7468
+    .line 7539
     monitor-exit v0
 
     return-void
 
-    .line 7473
+    .line 7544
     :cond_1
     iget-object v1, p0, Ljp/co/sony/mc/camera/controller/StateMachine$RequestStoreTask;->this$0:Ljp/co/sony/mc/camera/controller/StateMachine;
 
@@ -132,7 +136,7 @@
 
     move-result-object v1
 
-    .line 7474
+    .line 7545
     invoke-virtual {v1}, Ljp/co/sony/mc/camera/controller/StateMachine$State;->getCaptureState()Ljp/co/sony/mc/camera/controller/StateMachine$CaptureState;
 
     move-result-object v1
@@ -147,7 +151,7 @@
 
     move-result-object v1
 
-    .line 7475
+    .line 7546
     invoke-virtual {v1}, Ljp/co/sony/mc/camera/controller/StateMachine$State;->getCaptureState()Ljp/co/sony/mc/camera/controller/StateMachine$CaptureState;
 
     move-result-object v1
@@ -158,7 +162,7 @@
 
     goto :goto_1
 
-    .line 7483
+    .line 7554
     :cond_2
     iget-object v1, p0, Ljp/co/sony/mc/camera/controller/StateMachine$RequestStoreTask;->mRequest:Ljp/co/sony/mc/camera/storage/RequestFactory$PhotoSavingRequestBuilder;
 
@@ -168,7 +172,7 @@
 
     if-eqz v1, :cond_3
 
-    .line 7484
+    .line 7555
     iget-object v1, p0, Ljp/co/sony/mc/camera/controller/StateMachine$RequestStoreTask;->mRequest:Ljp/co/sony/mc/camera/storage/RequestFactory$PhotoSavingRequestBuilder;
 
     iget-object v1, v1, Ljp/co/sony/mc/camera/storage/RequestFactory$PhotoSavingRequestBuilder;->mCommonStatus:Ljp/co/sony/mc/camera/mediasaving/takenstatus/TakenStatusCommon;
@@ -181,7 +185,7 @@
 
     iput v2, v1, Ljp/co/sony/mc/camera/mediasaving/takenstatus/TakenStatusCommon;->orientation:I
 
-    .line 7486
+    .line 7557
     :cond_3
     iget-object v1, p0, Ljp/co/sony/mc/camera/controller/StateMachine$RequestStoreTask;->this$0:Ljp/co/sony/mc/camera/controller/StateMachine;
 
@@ -195,7 +199,7 @@
 
     if-eqz v1, :cond_6
 
-    .line 7487
+    .line 7558
     iget-object v1, p0, Ljp/co/sony/mc/camera/controller/StateMachine$RequestStoreTask;->mRequest:Ljp/co/sony/mc/camera/storage/RequestFactory$PhotoSavingRequestBuilder;
 
     iget-object v1, v1, Ljp/co/sony/mc/camera/storage/RequestFactory$PhotoSavingRequestBuilder;->mCommonStatus:Ljp/co/sony/mc/camera/mediasaving/takenstatus/TakenStatusCommon;
@@ -208,7 +212,7 @@
 
     iget-object v2, p0, Ljp/co/sony/mc/camera/controller/StateMachine$RequestStoreTask;->mRequest:Ljp/co/sony/mc/camera/storage/RequestFactory$PhotoSavingRequestBuilder;
 
-    .line 7488
+    .line 7559
     invoke-static {v1, v2}, Ljp/co/sony/mc/camera/controller/StateMachine;->-$$Nest$misNeedRepairRequestId(Ljp/co/sony/mc/camera/controller/StateMachine;Ljp/co/sony/mc/camera/storage/RequestFactory$PhotoSavingRequestBuilder;)Z
 
     move-result v1
@@ -217,7 +221,7 @@
 
     goto :goto_0
 
-    .line 7494
+    .line 7565
     :cond_4
     iget-object v1, p0, Ljp/co/sony/mc/camera/controller/StateMachine$RequestStoreTask;->this$0:Ljp/co/sony/mc/camera/controller/StateMachine;
 
@@ -227,7 +231,7 @@
 
     goto :goto_2
 
-    .line 7491
+    .line 7562
     :cond_5
     :goto_0
     iget-object v1, p0, Ljp/co/sony/mc/camera/controller/StateMachine$RequestStoreTask;->this$0:Ljp/co/sony/mc/camera/controller/StateMachine;
@@ -242,7 +246,7 @@
 
     goto :goto_2
 
-    .line 7498
+    .line 7569
     :cond_6
     iget-object v1, p0, Ljp/co/sony/mc/camera/controller/StateMachine$RequestStoreTask;->this$0:Ljp/co/sony/mc/camera/controller/StateMachine;
 
@@ -252,7 +256,7 @@
 
     goto :goto_2
 
-    .line 7480
+    .line 7551
     :cond_7
     :goto_1
     iget-object v1, p0, Ljp/co/sony/mc/camera/controller/StateMachine$RequestStoreTask;->this$0:Ljp/co/sony/mc/camera/controller/StateMachine;
@@ -261,13 +265,13 @@
 
     invoke-static {v1, v2}, Ljp/co/sony/mc/camera/controller/StateMachine;->-$$Nest$mstorePicture(Ljp/co/sony/mc/camera/controller/StateMachine;Ljp/co/sony/mc/camera/storage/RequestFactory$PhotoSavingRequestBuilder;)V
 
-    .line 7501
+    .line 7572
     :goto_2
     monitor-exit v0
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 7504
+    .line 7575
     iget-object v0, p0, Ljp/co/sony/mc/camera/controller/StateMachine$RequestStoreTask;->this$0:Ljp/co/sony/mc/camera/controller/StateMachine;
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/controller/StateMachine;->-$$Nest$fgetmHandler(Ljp/co/sony/mc/camera/controller/StateMachine;)Landroid/os/Handler;
@@ -285,7 +289,7 @@
     :catchall_0
     move-exception p0
 
-    .line 7501
+    .line 7572
     :try_start_1
     monitor-exit v0
     :try_end_1

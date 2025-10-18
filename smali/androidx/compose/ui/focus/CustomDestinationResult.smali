@@ -70,7 +70,7 @@
 .method static constructor <clinit>()V
     .locals 3
 
-    .line 245
+    .line 254
     new-instance v0, Landroidx/compose/ui/focus/CustomDestinationResult;
 
     const-string v1, "None"
@@ -128,7 +128,7 @@
         }
     .end annotation
 
-    .line 245
+    .line 254
     invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
     return-void

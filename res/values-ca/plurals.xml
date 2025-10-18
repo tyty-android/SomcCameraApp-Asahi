@@ -4,20 +4,4 @@
         <item quantity="other">%d notificacions noves</item>
         <item quantity="one">%d notificació nova</item>
     </plurals>
-    <plurals name="mv_minute_remaining_txt">
-        <item quantity="other">Queden %1$d min</item>
-        <item quantity="one">Queda 1 min</item>
-    </plurals>
-    <plurals name="mv_minute_txt">
-        <item quantity="other">%1$d minuts</item>
-        <item quantity="one">1 minut</item>
-    </plurals>
-    <plurals name="mv_second_remaining_txt">
-        <item quantity="other">Queden %1$d s</item>
-        <item quantity="one">Queda 1 s</item>
-    </plurals>
-    <plurals name="mv_second_txt">
-        <item quantity="other">%1$d segons</item>
-        <item quantity="one">1 segon</item>
-    </plurals>
 </resources>

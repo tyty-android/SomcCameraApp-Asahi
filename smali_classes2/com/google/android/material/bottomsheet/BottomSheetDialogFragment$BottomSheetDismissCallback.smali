@@ -22,7 +22,7 @@
 .method private constructor <init>(Lcom/google/android/material/bottomsheet/BottomSheetDialogFragment;)V
     .locals 0
 
-    .line 108
+    .line 113
     iput-object p1, p0, Lcom/google/android/material/bottomsheet/BottomSheetDialogFragment$BottomSheetDismissCallback;->this$0:Lcom/google/android/material/bottomsheet/BottomSheetDialogFragment;
 
     invoke-direct {p0}, Lcom/google/android/material/bottomsheet/BottomSheetBehavior$BottomSheetCallback;-><init>()V
@@ -33,7 +33,7 @@
 .method synthetic constructor <init>(Lcom/google/android/material/bottomsheet/BottomSheetDialogFragment;Lcom/google/android/material/bottomsheet/BottomSheetDialogFragment$1;)V
     .locals 0
 
-    .line 108
+    .line 113
     invoke-direct {p0, p1}, Lcom/google/android/material/bottomsheet/BottomSheetDialogFragment$BottomSheetDismissCallback;-><init>(Lcom/google/android/material/bottomsheet/BottomSheetDialogFragment;)V
 
     return-void
@@ -54,7 +54,7 @@
 
     if-ne p2, p1, :cond_0
 
-    .line 113
+    .line 118
     iget-object p0, p0, Lcom/google/android/material/bottomsheet/BottomSheetDialogFragment$BottomSheetDismissCallback;->this$0:Lcom/google/android/material/bottomsheet/BottomSheetDialogFragment;
 
     invoke-static {p0}, Lcom/google/android/material/bottomsheet/BottomSheetDialogFragment;->access$100(Lcom/google/android/material/bottomsheet/BottomSheetDialogFragment;)V

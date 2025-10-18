@@ -20,16 +20,16 @@
     d2 = {
         "jp/co/sony/mc/camera/qrdetection/QrDetectionResult$requestDismissKeyguard$1",
         "Landroid/app/KeyguardManager$KeyguardDismissCallback;",
-        "onDismissCancelled",
-        "",
         "onDismissError",
+        "",
         "onDismissSucceeded",
+        "onDismissCancelled",
         "SomcCamera_release"
     }
     k = 0x1
     mv = {
-        0x1,
-        0x9,
+        0x2,
+        0x0,
         0x0
     }
     xi = 0x30

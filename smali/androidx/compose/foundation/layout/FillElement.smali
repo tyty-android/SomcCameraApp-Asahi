@@ -86,26 +86,18 @@
 .end method
 
 .method public constructor <init>(Landroidx/compose/foundation/layout/Direction;FLjava/lang/String;)V
-    .locals 1
+    .locals 0
 
-    const-string v0, "direction"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string v0, "inspectorName"
-
-    invoke-static {p3, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 614
+    .line 615
     invoke-direct {p0}, Landroidx/compose/ui/node/ModifierNodeElement;-><init>()V
 
-    .line 611
+    .line 612
     iput-object p1, p0, Landroidx/compose/foundation/layout/FillElement;->direction:Landroidx/compose/foundation/layout/Direction;
 
-    .line 612
+    .line 613
     iput p2, p0, Landroidx/compose/foundation/layout/FillElement;->fraction:F
 
-    .line 613
+    .line 614
     iput-object p3, p0, Landroidx/compose/foundation/layout/FillElement;->inspectorName:Ljava/lang/String;
 
     return-void
@@ -116,7 +108,7 @@
 .method public create()Landroidx/compose/foundation/layout/FillNode;
     .locals 2
 
-    .line 615
+    .line 616
     new-instance v0, Landroidx/compose/foundation/layout/FillNode;
 
     iget-object v1, p0, Landroidx/compose/foundation/layout/FillElement;->direction:Landroidx/compose/foundation/layout/Direction;
@@ -131,7 +123,7 @@
 .method public bridge synthetic create()Landroidx/compose/ui/Modifier$Node;
     .locals 0
 
-    .line 610
+    .line 611
     invoke-virtual {p0}, Landroidx/compose/foundation/layout/FillElement;->create()Landroidx/compose/foundation/layout/FillNode;
 
     move-result-object p0
@@ -150,7 +142,7 @@
 
     return v0
 
-    .line 629
+    .line 630
     :cond_0
     instance-of v1, p1, Landroidx/compose/foundation/layout/FillElement;
 
@@ -160,7 +152,7 @@
 
     return v2
 
-    .line 631
+    .line 632
     :cond_1
     iget-object v1, p0, Landroidx/compose/foundation/layout/FillElement;->direction:Landroidx/compose/foundation/layout/Direction;
 
@@ -172,7 +164,7 @@
 
     return v2
 
-    .line 632
+    .line 633
     :cond_2
     iget p0, p0, Landroidx/compose/foundation/layout/FillElement;->fraction:F
 
@@ -191,7 +183,7 @@
 .method public hashCode()I
     .locals 1
 
-    .line 638
+    .line 639
     iget-object v0, p0, Landroidx/compose/foundation/layout/FillElement;->direction:Landroidx/compose/foundation/layout/Direction;
 
     invoke-virtual {v0}, Landroidx/compose/foundation/layout/Direction;->hashCode()I
@@ -200,7 +192,7 @@
 
     mul-int/lit8 v0, v0, 0x1f
 
-    .line 639
+    .line 640
     iget p0, p0, Landroidx/compose/foundation/layout/FillElement;->fraction:F
 
     invoke-static {p0}, Ljava/lang/Float;->hashCode(F)I
@@ -215,16 +207,12 @@
 .method public inspectableProperties(Landroidx/compose/ui/platform/InspectorInfo;)V
     .locals 1
 
-    const-string v0, "<this>"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 623
+    .line 624
     iget-object v0, p0, Landroidx/compose/foundation/layout/FillElement;->inspectorName:Ljava/lang/String;
 
     invoke-virtual {p1, v0}, Landroidx/compose/ui/platform/InspectorInfo;->setName(Ljava/lang/String;)V
 
-    .line 624
+    .line 625
     invoke-virtual {p1}, Landroidx/compose/ui/platform/InspectorInfo;->getProperties()Landroidx/compose/ui/platform/ValueElementSequence;
 
     move-result-object p1
@@ -245,16 +233,12 @@
 .method public update(Landroidx/compose/foundation/layout/FillNode;)V
     .locals 1
 
-    const-string v0, "node"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 618
+    .line 619
     iget-object v0, p0, Landroidx/compose/foundation/layout/FillElement;->direction:Landroidx/compose/foundation/layout/Direction;
 
     invoke-virtual {p1, v0}, Landroidx/compose/foundation/layout/FillNode;->setDirection(Landroidx/compose/foundation/layout/Direction;)V
 
-    .line 619
+    .line 620
     iget p0, p0, Landroidx/compose/foundation/layout/FillElement;->fraction:F
 
     invoke-virtual {p1, p0}, Landroidx/compose/foundation/layout/FillNode;->setFraction(F)V
@@ -265,7 +249,7 @@
 .method public bridge synthetic update(Landroidx/compose/ui/Modifier$Node;)V
     .locals 0
 
-    .line 610
+    .line 611
     check-cast p1, Landroidx/compose/foundation/layout/FillNode;
 
     invoke-virtual {p0, p1}, Landroidx/compose/foundation/layout/FillElement;->update(Landroidx/compose/foundation/layout/FillNode;)V

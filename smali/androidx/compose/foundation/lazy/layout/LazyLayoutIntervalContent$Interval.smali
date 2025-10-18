@@ -72,7 +72,7 @@
         }
     .end annotation
 
-    .line 75
+    .line 82
     sget-object p0, Landroidx/compose/foundation/lazy/layout/LazyLayoutIntervalContent$Interval$type$1;->INSTANCE:Landroidx/compose/foundation/lazy/layout/LazyLayoutIntervalContent$Interval$type$1;
 
     check-cast p0, Lkotlin/jvm/functions/Function1;

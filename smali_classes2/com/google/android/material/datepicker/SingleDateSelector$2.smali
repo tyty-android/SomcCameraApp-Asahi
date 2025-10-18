@@ -30,7 +30,7 @@
 .method constructor <init>()V
     .locals 0
 
-    .line 201
+    .line 203
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -41,12 +41,12 @@
 .method public createFromParcel(Landroid/os/Parcel;)Lcom/google/android/material/datepicker/SingleDateSelector;
     .locals 1
 
-    .line 205
+    .line 207
     new-instance p0, Lcom/google/android/material/datepicker/SingleDateSelector;
 
     invoke-direct {p0}, Lcom/google/android/material/datepicker/SingleDateSelector;-><init>()V
 
-    .line 206
+    .line 208
     const-class v0, Ljava/lang/Long;
 
     invoke-virtual {v0}, Ljava/lang/Class;->getClassLoader()Ljava/lang/ClassLoader;
@@ -67,7 +67,7 @@
 .method public bridge synthetic createFromParcel(Landroid/os/Parcel;)Ljava/lang/Object;
     .locals 0
 
-    .line 201
+    .line 203
     invoke-virtual {p0, p1}, Lcom/google/android/material/datepicker/SingleDateSelector$2;->createFromParcel(Landroid/os/Parcel;)Lcom/google/android/material/datepicker/SingleDateSelector;
 
     move-result-object p0
@@ -78,7 +78,7 @@
 .method public newArray(I)[Lcom/google/android/material/datepicker/SingleDateSelector;
     .locals 0
 
-    .line 213
+    .line 215
     new-array p0, p1, [Lcom/google/android/material/datepicker/SingleDateSelector;
 
     return-object p0
@@ -87,7 +87,7 @@
 .method public bridge synthetic newArray(I)[Ljava/lang/Object;
     .locals 0
 
-    .line 201
+    .line 203
     invoke-virtual {p0, p1}, Lcom/google/android/material/datepicker/SingleDateSelector$2;->newArray(I)[Lcom/google/android/material/datepicker/SingleDateSelector;
 
     move-result-object p0

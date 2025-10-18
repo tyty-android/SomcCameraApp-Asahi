@@ -92,12 +92,16 @@
 
     check-cast v2, [Ljava/lang/String;
 
+    const/4 v0, 0x1
+
     .line 8033
-    iget-object v0, p0, Landroidx/core/app/NotificationCompat$CarExtender$UnreadConversation$Builder;->mParticipant:Ljava/lang/String;
+    new-array v6, v0, [Ljava/lang/String;
 
-    filled-new-array {v0}, [Ljava/lang/String;
+    const/4 v0, 0x0
 
-    move-result-object v6
+    iget-object v1, p0, Landroidx/core/app/NotificationCompat$CarExtender$UnreadConversation$Builder;->mParticipant:Ljava/lang/String;
+
+    aput-object v1, v6, v0
 
     .line 8034
     new-instance v0, Landroidx/core/app/NotificationCompat$CarExtender$UnreadConversation;

@@ -70,7 +70,7 @@
 
 # virtual methods
 .method public final invoke()Landroidx/lifecycle/ViewModelStore;
-    .locals 1
+    .locals 0
 
     .line 85
     iget-object p0, p0, Landroidx/activity/ActivityViewModelLazyKt$viewModels$3;->$this_viewModels:Landroidx/activity/ComponentActivity;
@@ -78,10 +78,6 @@
     invoke-virtual {p0}, Landroidx/activity/ComponentActivity;->getViewModelStore()Landroidx/lifecycle/ViewModelStore;
 
     move-result-object p0
-
-    const-string/jumbo v0, "viewModelStore"
-
-    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
 
     return-object p0
 .end method

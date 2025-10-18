@@ -53,7 +53,7 @@
     f = "CoreTextField.kt"
     i = {}
     l = {
-        0x137
+        0x14a
     }
     m = "invokeSuspend"
     n = {}
@@ -199,7 +199,7 @@
 
     move-result-object v0
 
-    .line 65535
+    .line 329
     iget v1, p0, Landroidx/compose/foundation/text/CoreTextFieldKt$CoreTextField$focusModifier$1$1$1;->label:I
 
     const/4 v2, 0x1
@@ -224,34 +224,34 @@
     :cond_1
     invoke-static {p1}, Lkotlin/ResultKt;->throwOnFailure(Ljava/lang/Object;)V
 
-    .line 311
+    .line 330
     iget-object v1, p0, Landroidx/compose/foundation/text/CoreTextFieldKt$CoreTextField$focusModifier$1$1$1;->$bringIntoViewRequester:Landroidx/compose/foundation/relocation/BringIntoViewRequester;
 
-    .line 312
+    .line 331
     iget-object p1, p0, Landroidx/compose/foundation/text/CoreTextFieldKt$CoreTextField$focusModifier$1$1$1;->$value:Landroidx/compose/ui/text/input/TextFieldValue;
 
-    .line 313
+    .line 332
     iget-object v3, p0, Landroidx/compose/foundation/text/CoreTextFieldKt$CoreTextField$focusModifier$1$1$1;->$state:Landroidx/compose/foundation/text/TextFieldState;
 
     invoke-virtual {v3}, Landroidx/compose/foundation/text/TextFieldState;->getTextDelegate()Landroidx/compose/foundation/text/TextDelegate;
 
     move-result-object v3
 
-    .line 314
+    .line 333
     iget-object v4, p0, Landroidx/compose/foundation/text/CoreTextFieldKt$CoreTextField$focusModifier$1$1$1;->$layoutResult:Landroidx/compose/foundation/text/TextLayoutResultProxy;
 
     invoke-virtual {v4}, Landroidx/compose/foundation/text/TextLayoutResultProxy;->getValue()Landroidx/compose/ui/text/TextLayoutResult;
 
     move-result-object v4
 
-    .line 315
+    .line 334
     iget-object v5, p0, Landroidx/compose/foundation/text/CoreTextFieldKt$CoreTextField$focusModifier$1$1$1;->$offsetMapping:Landroidx/compose/ui/text/input/OffsetMapping;
 
     move-object v6, p0
 
     check-cast v6, Lkotlin/coroutines/Continuation;
 
-    .line 311
+    .line 330
     iput v2, p0, Landroidx/compose/foundation/text/CoreTextFieldKt$CoreTextField$focusModifier$1$1$1;->label:I
 
     move-object v2, p1
@@ -264,7 +264,7 @@
 
     return-object v0
 
-    .line 317
+    .line 336
     :cond_2
     :goto_0
     sget-object p0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;

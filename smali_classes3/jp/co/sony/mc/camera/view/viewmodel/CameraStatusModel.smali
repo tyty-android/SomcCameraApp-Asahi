@@ -13,154 +13,152 @@
 
 .annotation runtime Lkotlin/Metadata;
     d1 = {
-        "\u0000^\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0002\u0010\u0008\n\u0002\u0008\u0003\n\u0002\u0010\u000b\n\u0002\u0008\u0003\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0008\n\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0002\u0010\u0002\n\u0002\u0008\u0003\n\u0002\u0018\u0002\n\u0002\u0008-\n\u0002\u0018\u0002\n\u0002\u00085\n\u0002\u0018\u0002\n\u0002\u0008\u0004\u0008\u0007\u0018\u00002\u00020\u0001:\u0002\u008a\u0001B\r\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u00a2\u0006\u0002\u0010\u0004J\u0010\u0010^\u001a\u00020\u001f2\u0006\u0010_\u001a\u00020\u0007H\u0002J\u0010\u0010`\u001a\u00020\u001f2\u0006\u0010_\u001a\u00020\u0007H\u0002J\u0006\u0010a\u001a\u00020\u001fJ\u000e\u0010b\u001a\u00020\u001f2\u0006\u00107\u001a\u00020\u000bJ\u0006\u0010c\u001a\u00020\u001fJ\u000e\u0010d\u001a\u00020\u001f2\u0006\u0010e\u001a\u00020\u0007J\u000e\u0010f\u001a\u00020\u001f2\u0006\u0010g\u001a\u00020\u0007J\u000e\u0010h\u001a\u00020\u001f2\u0006\u0010_\u001a\u00020\u0007J\u000e\u0010i\u001a\u00020\u001f2\u0006\u0010j\u001a\u00020\u001bJ\u001a\u0010k\u001a\u00020\u001f2\u0012\u0010l\u001a\u000e\u0012\u0004\u0012\u00020\u000b\u0012\u0004\u0012\u00020\u00100\u000fJ\u000e\u0010m\u001a\u00020\u001f2\u0006\u0010_\u001a\u00020\u0007J\u001e\u0010n\u001a\u00020\u001f2\u0006\u0010o\u001a\u00020\u00072\u0006\u0010p\u001a\u00020\u000b2\u0006\u0010q\u001a\u00020\u000bJ\u000e\u0010r\u001a\u00020\u001f2\u0006\u0010s\u001a\u00020\u000bJ\u0016\u0010t\u001a\u00020\u001f2\u0006\u0010.\u001a\u00020\u000b2\u0006\u0010,\u001a\u00020\u000bJ\u000e\u0010u\u001a\u00020\u001f2\u0006\u00106\u001a\u00020\u000bJ\u000e\u0010v\u001a\u00020\u001f2\u0006\u0010s\u001a\u00020\u000bJ\u000e\u0010w\u001a\u00020\u001f2\u0006\u0010s\u001a\u00020\u000bJ\u000e\u0010x\u001a\u00020\u001f2\u0006\u0010y\u001a\u00020\u000bJ\u0006\u0010z\u001a\u00020\u001fJ\u0006\u0010{\u001a\u00020\u001fJ\u000e\u0010|\u001a\u00020\u001f2\u0006\u0010}\u001a\u00020\u000bJ\u000e\u0010~\u001a\u00020\u001f2\u0006\u0010_\u001a\u00020\u0007J\u000f\u0010\u007f\u001a\u00020\u001f2\u0007\u0010\u0080\u0001\u001a\u00020\u0007J\u000f\u0010\u0081\u0001\u001a\u00020\u001f2\u0006\u0010>\u001a\u00020\u000bJ\u0007\u0010\u0082\u0001\u001a\u00020\u001fJ\u000f\u0010\u0083\u0001\u001a\u00020\u001f2\u0006\u0010_\u001a\u00020\u0007J\u000f\u0010\u0084\u0001\u001a\u00020\u001f2\u0006\u0010_\u001a\u00020\u0007J\u0019\u0010\u0085\u0001\u001a\u00020\u001f2\u0006\u0010_\u001a\u00020\u00072\u0008\u0010\u0086\u0001\u001a\u00030\u0087\u0001J\u000f\u0010\u0088\u0001\u001a\u00020\u001f2\u0006\u0010_\u001a\u00020\u0007J\u0007\u0010\u0089\u0001\u001a\u00020\u001fR\u001c\u0010\u0005\u001a\u0010\u0012\u000c\u0012\n \u0008*\u0004\u0018\u00010\u00070\u00070\u0006X\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u001c\u0010\t\u001a\u0010\u0012\u000c\u0012\n \u0008*\u0004\u0018\u00010\u00070\u00070\u0006X\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u001c\u0010\n\u001a\u0010\u0012\u000c\u0012\n \u0008*\u0004\u0018\u00010\u000b0\u000b0\u0006X\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u001c\u0010\u000c\u001a\u0010\u0012\u000c\u0012\n \u0008*\u0004\u0018\u00010\u000b0\u000b0\u0006X\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u001c\u0010\r\u001a\u0010\u0012\u000c\u0012\n \u0008*\u0004\u0018\u00010\u000b0\u000b0\u0006X\u0082\u0004\u00a2\u0006\u0002\n\u0000R\"\u0010\u000e\u001a\u0016\u0012\u0012\u0012\u0010\u0012\u0004\u0012\u00020\u000b\u0012\u0006\u0012\u0004\u0018\u00010\u00100\u000f0\u0006X\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u001c\u0010\u0011\u001a\u0010\u0012\u000c\u0012\n \u0008*\u0004\u0018\u00010\u000b0\u000b0\u0006X\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u001c\u0010\u0012\u001a\u0010\u0012\u000c\u0012\n \u0008*\u0004\u0018\u00010\u000b0\u000b0\u0006X\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u001c\u0010\u0013\u001a\u0010\u0012\u000c\u0012\n \u0008*\u0004\u0018\u00010\u000b0\u000b0\u0006X\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u001c\u0010\u0014\u001a\u0010\u0012\u000c\u0012\n \u0008*\u0004\u0018\u00010\u000b0\u000b0\u0006X\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u001c\u0010\u0015\u001a\u0010\u0012\u000c\u0012\n \u0008*\u0004\u0018\u00010\u000b0\u000b0\u0006X\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u001c\u0010\u0016\u001a\u0010\u0012\u000c\u0012\n \u0008*\u0004\u0018\u00010\u000b0\u000b0\u0006X\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u001c\u0010\u0017\u001a\u0010\u0012\u000c\u0012\n \u0008*\u0004\u0018\u00010\u000b0\u000b0\u0006X\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u001c\u0010\u0018\u001a\u0010\u0012\u000c\u0012\n \u0008*\u0004\u0018\u00010\u000b0\u000b0\u0006X\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u001c\u0010\u0019\u001a\u0010\u0012\u000c\u0012\n \u0008*\u0004\u0018\u00010\u000b0\u000b0\u0006X\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u001c\u0010\u001a\u001a\u0010\u0012\u000c\u0012\n \u0008*\u0004\u0018\u00010\u001b0\u001b0\u0006X\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u001c\u0010\u001c\u001a\u0010\u0012\u000c\u0012\n \u0008*\u0004\u0018\u00010\u00070\u00070\u0006X\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u0014\u0010\u001d\u001a\u0008\u0012\u0004\u0012\u00020\u001f0\u001eX\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u001c\u0010 \u001a\u0010\u0012\u000c\u0012\n \u0008*\u0004\u0018\u00010\u00070\u00070\u0006X\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u001c\u0010!\u001a\u0010\u0012\u000c\u0012\n \u0008*\u0004\u0018\u00010\u000b0\u000b0\u0006X\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u001f\u0010\"\u001a\u0010\u0012\u000c\u0012\n \u0008*\u0004\u0018\u00010\u00070\u00070#\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008$\u0010%R\u000e\u0010\u0002\u001a\u00020\u0003X\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u0017\u0010&\u001a\u0008\u0012\u0004\u0012\u00020\u000b0#\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\'\u0010%R\u0017\u0010(\u001a\u0008\u0012\u0004\u0012\u00020\u000b0#\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008)\u0010%R\u001f\u0010*\u001a\u0010\u0012\u000c\u0012\n \u0008*\u0004\u0018\u00010\u00070\u00070#\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008+\u0010%R\u001f\u0010,\u001a\u0010\u0012\u000c\u0012\n \u0008*\u0004\u0018\u00010\u000b0\u000b0#\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008-\u0010%R\u001f\u0010.\u001a\u0010\u0012\u000c\u0012\n \u0008*\u0004\u0018\u00010\u000b0\u000b0#\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008/\u0010%R\u0017\u00100\u001a\u0008\u0012\u0004\u0012\u00020\u000b0#\u00a2\u0006\u0008\n\u0000\u001a\u0004\u00081\u0010%R\u001f\u00102\u001a\u0010\u0012\u000c\u0012\n \u0008*\u0004\u0018\u00010\u000b0\u000b0#\u00a2\u0006\u0008\n\u0000\u001a\u0004\u00082\u0010%R%\u00103\u001a\u0016\u0012\u0012\u0012\u0010\u0012\u0004\u0012\u00020\u000b\u0012\u0006\u0012\u0004\u0018\u00010\u00100\u000f0#\u00a2\u0006\u0008\n\u0000\u001a\u0004\u00083\u0010%R\u001f\u00104\u001a\u0010\u0012\u000c\u0012\n \u0008*\u0004\u0018\u00010\u000b0\u000b0#\u00a2\u0006\u0008\n\u0000\u001a\u0004\u00084\u0010%R\u001f\u00105\u001a\u0010\u0012\u000c\u0012\n \u0008*\u0004\u0018\u00010\u000b0\u000b0#\u00a2\u0006\u0008\n\u0000\u001a\u0004\u00085\u0010%R\u001f\u00106\u001a\u0010\u0012\u000c\u0012\n \u0008*\u0004\u0018\u00010\u000b0\u000b0#\u00a2\u0006\u0008\n\u0000\u001a\u0004\u00086\u0010%R\u001f\u00107\u001a\u0010\u0012\u000c\u0012\n \u0008*\u0004\u0018\u00010\u000b0\u000b0#\u00a2\u0006\u0008\n\u0000\u001a\u0004\u00087\u0010%R\u001f\u00108\u001a\u0010\u0012\u000c\u0012\n \u0008*\u0004\u0018\u00010\u000b0\u000b0#\u00a2\u0006\u0008\n\u0000\u001a\u0004\u00088\u0010%R\u0011\u00109\u001a\u00020\u000b8F\u00a2\u0006\u0006\u001a\u0004\u00089\u0010:R\u001f\u0010;\u001a\u0010\u0012\u000c\u0012\n \u0008*\u0004\u0018\u00010\u000b0\u000b0#\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008;\u0010%R\u001f\u0010<\u001a\u0010\u0012\u000c\u0012\n \u0008*\u0004\u0018\u00010\u000b0\u000b0#\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008<\u0010%R\u001f\u0010=\u001a\u0010\u0012\u000c\u0012\n \u0008*\u0004\u0018\u00010\u000b0\u000b0#\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008=\u0010%R\u001f\u0010>\u001a\u0010\u0012\u000c\u0012\n \u0008*\u0004\u0018\u00010\u000b0\u000b0#\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008>\u0010%R\u000e\u0010?\u001a\u00020\u0007X\u0082\u000e\u00a2\u0006\u0002\n\u0000R\u001f\u0010@\u001a\u0010\u0012\u000c\u0012\n \u0008*\u0004\u0018\u00010\u001b0\u001b0#\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008A\u0010%R\u001f\u0010B\u001a\u0010\u0012\u000c\u0012\n \u0008*\u0004\u0018\u00010\u00070\u00070#\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008C\u0010%R\u001f\u0010D\u001a\u0010\u0012\u000c\u0012\n \u0008*\u0004\u0018\u00010\u001f0\u001f0#\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008E\u0010%R\u0017\u0010F\u001a\u0008\u0012\u0004\u0012\u00020\u000b0#\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008G\u0010%R\u0017\u0010H\u001a\u0008\u0012\u0004\u0012\u00020\u000b0#\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008I\u0010%R\u0017\u0010J\u001a\u0008\u0012\u0004\u0012\u00020\u000b0#\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008K\u0010%R\u0017\u0010L\u001a\u0008\u0012\u0004\u0012\u00020\u000b0#\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008M\u0010%R\u001f\u0010N\u001a\u0010\u0012\u000c\u0012\n \u0008*\u0004\u0018\u00010\u00070\u00070#\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008O\u0010%R\u001a\u0010P\u001a\u00020QX\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\u0008R\u0010S\"\u0004\u0008T\u0010UR\u0017\u0010V\u001a\u0008\u0012\u0004\u0012\u00020\u000b0#\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008W\u0010%R\u001f\u0010X\u001a\u0010\u0012\u000c\u0012\n \u0008*\u0004\u0018\u00010\u000b0\u000b0#\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008Y\u0010%R\u0017\u0010Z\u001a\u0008\u0012\u0004\u0012\u00020\u000b0#\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008[\u0010%R\u0017\u0010\\\u001a\u0008\u0012\u0004\u0012\u00020\u000b0#\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008]\u0010%\u00a8\u0006\u008b\u0001"
+        "\u0000^\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0003\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0003\n\u0002\u0010\u000b\n\u0002\u0008\u0010\n\u0002\u0010\u0008\n\u0002\u0008\u000f\n\u0002\u0018\u0002\n\u0002\u0010\u0002\n\u0002\u0008\u001a\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0004\n\u0002\u0018\u0002\n\u0002\u0008\"\n\u0002\u0018\u0002\n\u0002\u0008\u0014\u0008\u0007\u0018\u00002\u00020\u0001:\u0002\u0088\u0001B\u000f\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u00a2\u0006\u0004\u0008\u0004\u0010\u0005J\u0006\u0010]\u001a\u000201J\u000e\u0010^\u001a\u0002012\u0006\u0010_\u001a\u00020\u0008J\u0006\u0010`\u001a\u000201J\u000e\u0010a\u001a\u0002012\u0006\u0010b\u001a\u00020 J\u001e\u0010c\u001a\u0002012\u0006\u0010d\u001a\u00020 2\u0006\u0010e\u001a\u00020\u000f2\u0006\u0010f\u001a\u00020\u000fJ\u000e\u0010g\u001a\u0002012\u0006\u0010b\u001a\u00020 J\u0006\u0010h\u001a\u000201J\u000e\u0010i\u001a\u0002012\u0006\u0010j\u001a\u00020 J\u0006\u0010k\u001a\u000201J\u000e\u0010l\u001a\u0002012\u0006\u0010m\u001a\u00020 J\u000e\u0010n\u001a\u0002012\u0006\u0010b\u001a\u00020 J\u000e\u0010o\u001a\u0002012\u0006\u0010b\u001a\u00020 J\u000e\u0010p\u001a\u0002012\u0006\u0010q\u001a\u00020 J\u000e\u0010r\u001a\u0002012\u0006\u0010b\u001a\u00020 J\u0016\u0010s\u001a\u0002012\u0006\u0010b\u001a\u00020 2\u0006\u0010t\u001a\u00020uJ\u000e\u0010v\u001a\u0002012\u0006\u0010b\u001a\u00020 J\u000e\u0010w\u001a\u0002012\u0006\u0010x\u001a\u00020\u000fJ\u000e\u0010y\u001a\u0002012\u0006\u00109\u001a\u00020\u000fJ\u000e\u0010z\u001a\u0002012\u0006\u00107\u001a\u00020\u000fJ\u0006\u0010{\u001a\u000201J\u000e\u0010|\u001a\u0002012\u0006\u0010}\u001a\u00020\u000fJ\u0006\u0010~\u001a\u000201J\u0010\u0010\u007f\u001a\u0002012\u0006\u0010b\u001a\u00020 H\u0002J\u0011\u0010\u0080\u0001\u001a\u0002012\u0006\u0010b\u001a\u00020 H\u0002J\u0017\u0010\u0081\u0001\u001a\u0002012\u0006\u0010@\u001a\u00020\u000f2\u0006\u0010C\u001a\u00020\u000fJ\u0010\u0010\u0082\u0001\u001a\u0002012\u0007\u0010\u0083\u0001\u001a\u00020\u000fJ\u0010\u0010\u0084\u0001\u001a\u0002012\u0007\u0010\u0083\u0001\u001a\u00020\u000fJ\u0010\u0010\u0085\u0001\u001a\u0002012\u0007\u0010\u0083\u0001\u001a\u00020\u000fJ\u001c\u0010\u0086\u0001\u001a\u0002012\u0013\u0010\u0087\u0001\u001a\u000e\u0012\u0004\u0012\u00020\u000f\u0012\u0004\u0012\u00020M0LR\u000e\u0010\u0002\u001a\u00020\u0003X\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u001c\u0010\u0006\u001a\u0010\u0012\u000c\u0012\n \t*\u0004\u0018\u00010\u00080\u00080\u0007X\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u001f\u0010\n\u001a\u0010\u0012\u000c\u0012\n \t*\u0004\u0018\u00010\u00080\u00080\u000b\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\u000c\u0010\rR\u0017\u0010\u000e\u001a\u0008\u0012\u0004\u0012\u00020\u000f0\u000b\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\u0010\u0010\rR\u0017\u0010\u0011\u001a\u0008\u0012\u0004\u0012\u00020\u000f0\u000b\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\u0012\u0010\rR\u0017\u0010\u0013\u001a\u0008\u0012\u0004\u0012\u00020\u000f0\u000b\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\u0014\u0010\rR\u0017\u0010\u0015\u001a\u0008\u0012\u0004\u0012\u00020\u000f0\u000b\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\u0016\u0010\rR\u0017\u0010\u0017\u001a\u0008\u0012\u0004\u0012\u00020\u000f0\u000b\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\u0018\u0010\rR\u0017\u0010\u0019\u001a\u0008\u0012\u0004\u0012\u00020\u000f0\u000b\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\u001a\u0010\rR\u0017\u0010\u001b\u001a\u0008\u0012\u0004\u0012\u00020\u000f0\u000b\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\u001c\u0010\rR\u001c\u0010\u001d\u001a\u0010\u0012\u000c\u0012\n \t*\u0004\u0018\u00010\u000f0\u000f0\u0007X\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u001f\u0010\u001e\u001a\u0010\u0012\u000c\u0012\n \t*\u0004\u0018\u00010\u000f0\u000f0\u000b\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\u001e\u0010\rR\u001c\u0010\u001f\u001a\u0010\u0012\u000c\u0012\n \t*\u0004\u0018\u00010 0 0\u0007X\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u001f\u0010!\u001a\u0010\u0012\u000c\u0012\n \t*\u0004\u0018\u00010 0 0\u000b\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\"\u0010\rR\u001c\u0010#\u001a\u0010\u0012\u000c\u0012\n \t*\u0004\u0018\u00010 0 0\u0007X\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u001f\u0010$\u001a\u0010\u0012\u000c\u0012\n \t*\u0004\u0018\u00010 0 0\u000b\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008%\u0010\rR\u001c\u0010&\u001a\u0010\u0012\u000c\u0012\n \t*\u0004\u0018\u00010 0 0\u0007X\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u001f\u0010\'\u001a\u0010\u0012\u000c\u0012\n \t*\u0004\u0018\u00010 0 0\u000b\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008(\u0010\rR\u001c\u0010)\u001a\u0010\u0012\u000c\u0012\n \t*\u0004\u0018\u00010 0 0\u0007X\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u001f\u0010*\u001a\u0010\u0012\u000c\u0012\n \t*\u0004\u0018\u00010 0 0\u000b\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008+\u0010\rR\u001c\u0010,\u001a\u0010\u0012\u000c\u0012\n \t*\u0004\u0018\u00010\u000f0\u000f0\u0007X\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u001f\u0010-\u001a\u0010\u0012\u000c\u0012\n \t*\u0004\u0018\u00010\u000f0\u000f0\u000b\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008.\u0010\rR\u0014\u0010/\u001a\u0008\u0012\u0004\u0012\u00020100X\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u001f\u00102\u001a\u0010\u0012\u000c\u0012\n \t*\u0004\u0018\u000101010\u000b\u00a2\u0006\u0008\n\u0000\u001a\u0004\u00083\u0010\rR\u001c\u00104\u001a\u0010\u0012\u000c\u0012\n \t*\u0004\u0018\u00010\u000f0\u000f0\u0007X\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u001f\u00105\u001a\u0010\u0012\u000c\u0012\n \t*\u0004\u0018\u00010\u000f0\u000f0\u000b\u00a2\u0006\u0008\n\u0000\u001a\u0004\u00085\u0010\rR\u001c\u00106\u001a\u0010\u0012\u000c\u0012\n \t*\u0004\u0018\u00010\u000f0\u000f0\u0007X\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u001f\u00107\u001a\u0010\u0012\u000c\u0012\n \t*\u0004\u0018\u00010\u000f0\u000f0\u000b\u00a2\u0006\u0008\n\u0000\u001a\u0004\u00087\u0010\rR\u001c\u00108\u001a\u0010\u0012\u000c\u0012\n \t*\u0004\u0018\u00010\u000f0\u000f0\u0007X\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u001f\u00109\u001a\u0010\u0012\u000c\u0012\n \t*\u0004\u0018\u00010\u000f0\u000f0\u000b\u00a2\u0006\u0008\n\u0000\u001a\u0004\u00089\u0010\rR\u001c\u0010:\u001a\u0010\u0012\u000c\u0012\n \t*\u0004\u0018\u00010\u000f0\u000f0\u0007X\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u001f\u0010;\u001a\u0010\u0012\u000c\u0012\n \t*\u0004\u0018\u00010\u000f0\u000f0\u000b\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008;\u0010\rR\u000e\u0010<\u001a\u00020 X\u0082\u000e\u00a2\u0006\u0002\n\u0000R\u0011\u0010=\u001a\u00020\u000f8F\u00a2\u0006\u0006\u001a\u0004\u0008=\u0010>R\u001c\u0010?\u001a\u0010\u0012\u000c\u0012\n \t*\u0004\u0018\u00010\u000f0\u000f0\u0007X\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u001f\u0010@\u001a\u0010\u0012\u000c\u0012\n \t*\u0004\u0018\u00010\u000f0\u000f0\u000b\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008A\u0010\rR\u001c\u0010B\u001a\u0010\u0012\u000c\u0012\n \t*\u0004\u0018\u00010\u000f0\u000f0\u0007X\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u001f\u0010C\u001a\u0010\u0012\u000c\u0012\n \t*\u0004\u0018\u00010\u000f0\u000f0\u000b\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008D\u0010\rR\u001c\u0010E\u001a\u0010\u0012\u000c\u0012\n \t*\u0004\u0018\u00010\u000f0\u000f0\u0007X\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u001f\u0010F\u001a\u0010\u0012\u000c\u0012\n \t*\u0004\u0018\u00010\u000f0\u000f0\u000b\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008F\u0010\rR\u001c\u0010G\u001a\u0010\u0012\u000c\u0012\n \t*\u0004\u0018\u00010\u000f0\u000f0\u0007X\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u001f\u0010H\u001a\u0010\u0012\u000c\u0012\n \t*\u0004\u0018\u00010\u000f0\u000f0\u000b\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008H\u0010\rR\u001c\u0010I\u001a\u0010\u0012\u000c\u0012\n \t*\u0004\u0018\u00010\u000f0\u000f0\u0007X\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u001f\u0010J\u001a\u0010\u0012\u000c\u0012\n \t*\u0004\u0018\u00010\u000f0\u000f0\u000b\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008J\u0010\rR\"\u0010K\u001a\u0016\u0012\u0012\u0012\u0010\u0012\u0004\u0012\u00020\u000f\u0012\u0006\u0012\u0004\u0018\u00010M0L0\u0007X\u0082\u0004\u00a2\u0006\u0002\n\u0000R%\u0010N\u001a\u0016\u0012\u0012\u0012\u0010\u0012\u0004\u0012\u00020\u000f\u0012\u0006\u0012\u0004\u0018\u00010M0L0\u000b\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008N\u0010\rR\u001c\u0010O\u001a\u0010\u0012\u000c\u0012\n \t*\u0004\u0018\u00010\u000f0\u000f0\u0007X\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u001f\u0010P\u001a\u0010\u0012\u000c\u0012\n \t*\u0004\u0018\u00010\u000f0\u000f0\u000b\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008P\u0010\rR\u001a\u0010Q\u001a\u00020RX\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\u0008S\u0010T\"\u0004\u0008U\u0010VR\u0017\u0010W\u001a\u0008\u0012\u0004\u0012\u00020\u000f0\u000b\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008X\u0010\rR\u0017\u0010Y\u001a\u0008\u0012\u0004\u0012\u00020\u000f0\u000b\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008Z\u0010\rR\u0017\u0010[\u001a\u0008\u0012\u0004\u0012\u00020\u000f0\u000b\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\\\u0010\r\u00a8\u0006\u0089\u0001"
     }
     d2 = {
         "Ljp/co/sony/mc/camera/view/viewmodel/CameraStatusModel;",
         "",
         "cameraSettingsModel",
         "Ljp/co/sony/mc/camera/view/viewmodel/CameraSettingsModel;",
+        "<init>",
         "(Ljp/co/sony/mc/camera/view/viewmodel/CameraSettingsModel;)V",
-        "_burstQueueingCount",
-        "Landroidx/lifecycle/MutableLiveData;",
-        "",
-        "kotlin.jvm.PlatformType",
-        "_continuousShootingCount",
-        "_fallbackEnabled",
-        "",
-        "_fallbackable",
-        "_isBurstPostProcessing",
-        "_isDialPickerScrolling",
-        "Lkotlin/Pair;",
-        "Landroid/view/View;",
-        "_isExternalMic",
-        "_isFallbackModeChanging",
-        "_isFlashRequired",
-        "_isHdrRequired",
-        "_isLensChanging",
-        "_isModeChanging",
-        "_isObjectTracking",
-        "_isQuickRecordLocked",
-        "_isSelectedFaceChanged",
         "_latestCameraEvent",
+        "Landroidx/lifecycle/MutableLiveData;",
         "Ljp/co/sony/mc/camera/view/CameraEventListener$CameraEvent;",
+        "kotlin.jvm.PlatformType",
+        "latestCameraEvent",
+        "Landroidx/lifecycle/LiveData;",
+        "getLatestCameraEvent",
+        "()Landroidx/lifecycle/LiveData;",
+        "initializing",
+        "",
+        "getInitializing",
+        "previewStarted",
+        "getPreviewStarted",
+        "capturing",
+        "getCapturing",
+        "recording",
+        "getRecording",
+        "streaming",
+        "getStreaming",
+        "selftimering",
+        "getSelftimering",
+        "recordingPaused",
+        "getRecordingPaused",
+        "_isBurstPostProcessing",
+        "isBurstPostProcessing",
         "_longExposureDuration",
+        "",
+        "longExposureDuration",
+        "getLongExposureDuration",
+        "_continuousShootingCount",
+        "continuousShootingCount",
+        "getContinuousShootingCount",
+        "_burstQueueingCount",
+        "burstQueueingCount",
+        "getBurstQueueingCount",
+        "_recordingDuration",
+        "recordingDuration",
+        "getRecordingDuration",
+        "_saving",
+        "saving",
+        "getSaving",
         "_onPrepareBurstDoneEvent",
         "Ljp/co/sony/mc/camera/view/viewmodel/LiveEvent;",
         "",
-        "_recordingDuration",
-        "_saving",
-        "burstQueueingCount",
-        "Landroidx/lifecycle/LiveData;",
-        "getBurstQueueingCount",
-        "()Landroidx/lifecycle/LiveData;",
-        "canChangeMode",
-        "getCanChangeMode",
-        "capturing",
-        "getCapturing",
-        "continuousShootingCount",
-        "getContinuousShootingCount",
-        "fallbackEnabled",
-        "getFallbackEnabled",
-        "fallbackable",
-        "getFallbackable",
-        "initializing",
-        "getInitializing",
-        "isBurstPostProcessing",
-        "isDialPickerScrolling",
-        "isExternalMic",
-        "isFallbackModeChanging",
-        "isFlashRequired",
-        "isHdrRequired",
-        "isLensChanging",
-        "isLongExposing",
-        "()Z",
-        "isModeChanging",
-        "isObjectTracking",
-        "isQuickRecordLocked",
-        "isSelectedFaceChanged",
-        "lastCaptureRequestId",
-        "latestCameraEvent",
-        "getLatestCameraEvent",
-        "longExposureDuration",
-        "getLongExposureDuration",
         "onPrepareBurstDoneEvent",
         "getOnPrepareBurstDoneEvent",
-        "previewStarted",
-        "getPreviewStarted",
-        "previewing",
-        "getPreviewing",
-        "ready",
-        "getReady",
-        "recording",
-        "getRecording",
-        "recordingDuration",
-        "getRecordingDuration",
+        "_isObjectTracking",
+        "isObjectTracking",
+        "_isFlashRequired",
+        "isFlashRequired",
+        "_isHdrRequired",
+        "isHdrRequired",
+        "_isQuickRecordLocked",
+        "isQuickRecordLocked",
+        "lastCaptureRequestId",
+        "isLongExposing",
+        "()Z",
+        "_fallbackable",
+        "fallbackable",
+        "getFallbackable",
+        "_fallbackEnabled",
+        "fallbackEnabled",
+        "getFallbackEnabled",
+        "_isFallbackModeChanging",
+        "isFallbackModeChanging",
+        "_isModeChanging",
+        "isModeChanging",
+        "_isLensChanging",
+        "isLensChanging",
+        "_isDialPickerScrolling",
+        "Lkotlin/Pair;",
+        "Landroid/view/View;",
+        "isDialPickerScrolling",
+        "_isExternalMic",
+        "isExternalMic",
         "recordingMicType",
         "Ljp/co/sony/mc/camera/view/viewmodel/CameraStatusModel$RecordingMicType;",
         "getRecordingMicType",
         "()Ljp/co/sony/mc/camera/view/viewmodel/CameraStatusModel$RecordingMicType;",
         "setRecordingMicType",
         "(Ljp/co/sony/mc/camera/view/viewmodel/CameraStatusModel$RecordingMicType;)V",
-        "recordingPaused",
-        "getRecordingPaused",
-        "saving",
-        "getSaving",
-        "selftimering",
-        "getSelftimering",
-        "streaming",
-        "getStreaming",
-        "handleSnapshotRequested",
-        "requestId",
-        "handleStoreFinished",
+        "previewing",
+        "getPreviewing",
+        "ready",
+        "getReady",
+        "canChangeMode",
+        "getCanChangeMode",
         "onAudioResourceChanged",
-        "onAutoHdrChanged",
-        "onBurstCaptureDone",
-        "onBurstQueueingCountUpdated",
-        "queueingCount",
-        "onBurstShutterAction",
-        "burstCount",
-        "onBurstShutterDone",
         "onCameraEvent",
         "state",
-        "onDialPickerScroll",
-        "isScrolling",
-        "onExposureDone",
+        "onShutterAction",
+        "onSnapshotRequestDone",
+        "requestId",
         "onExposureStarted",
         "duration",
         "isSoundDivided",
         "isLongExposure",
-        "onFallbackModeChanging",
-        "isChanging",
-        "onFallbackStateChanged",
-        "onFlashStateChanged",
-        "onLensChange",
-        "onModeChange",
-        "onObjectTrackingStateChanged",
-        "isTracking",
-        "onPause",
+        "onExposureDone",
         "onPrepareBurstDone",
-        "onQuickRecordLocked",
-        "isLocked",
-        "onRecordFinished",
+        "onBurstShutterAction",
+        "burstCount",
+        "onBurstCaptureDone",
+        "onBurstQueueingCountUpdated",
+        "queueingCount",
+        "onBurstShutterDone",
+        "onVideoSnapshotRequested",
         "onRecordingProgress",
         "durationMs",
-        "onSelectedFaceChanged",
-        "onShutterAction",
-        "onSnapshotRequestDone",
-        "onStoreError",
+        "onRecordFinished",
         "onStoreFinished",
         "result",
         "Ljp/co/sony/mc/camera/mediasaving/StoreDataResult;",
-        "onVideoSnapshotRequested",
+        "onStoreError",
+        "onObjectTrackingStateChanged",
+        "isTracking",
+        "onAutoHdrChanged",
+        "onFlashStateChanged",
         "resetFlashModeState",
+        "onQuickRecordLocked",
+        "isLocked",
+        "onPause",
+        "handleSnapshotRequested",
+        "handleStoreFinished",
+        "onFallbackStateChanged",
+        "onFallbackModeChanging",
+        "isChanging",
+        "onModeChange",
+        "onLensChange",
+        "onDialPickerScroll",
+        "isScrolling",
         "RecordingMicType",
         "SomcCamera_release"
     }
     k = 0x1
     mv = {
-        0x1,
-        0x9,
+        0x2,
+        0x0,
         0x0
     }
     xi = 0x30
@@ -305,16 +303,6 @@
 .end field
 
 .field private final _isQuickRecordLocked:Landroidx/lifecycle/MutableLiveData;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Landroidx/lifecycle/MutableLiveData<",
-            "Ljava/lang/Boolean;",
-            ">;"
-        }
-    .end annotation
-.end field
-
-.field private final _isSelectedFaceChanged:Landroidx/lifecycle/MutableLiveData;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Landroidx/lifecycle/MutableLiveData<",
@@ -548,16 +536,6 @@
     .end annotation
 .end field
 
-.field private final isSelectedFaceChanged:Landroidx/lifecycle/LiveData;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Landroidx/lifecycle/LiveData<",
-            "Ljava/lang/Boolean;",
-            ">;"
-        }
-    .end annotation
-.end field
-
 .field private lastCaptureRequestId:I
 
 .field private final latestCameraEvent:Landroidx/lifecycle/LiveData;
@@ -684,6 +662,106 @@
 
 
 # direct methods
+.method public static synthetic $r8$lambda$-PBVUTuLigCtvkBztmILD-DRDoE(ZZZZ)Z
+    .locals 0
+
+    invoke-static {p0, p1, p2, p3}, Ljp/co/sony/mc/camera/view/viewmodel/CameraStatusModel;->previewing$lambda$7(ZZZZ)Z
+
+    move-result p0
+
+    return p0
+.end method
+
+.method public static synthetic $r8$lambda$0kWxIzuUw2s732oY9ICD9QvV77w(Ljp/co/sony/mc/camera/view/CameraEventListener$CameraEvent;)Z
+    .locals 0
+
+    invoke-static {p0}, Ljp/co/sony/mc/camera/view/viewmodel/CameraStatusModel;->initializing$lambda$0(Ljp/co/sony/mc/camera/view/CameraEventListener$CameraEvent;)Z
+
+    move-result p0
+
+    return p0
+.end method
+
+.method public static synthetic $r8$lambda$6IKUdD6_eQxaOkCbeJwP9g7XqPE(Ljp/co/sony/mc/camera/view/CameraEventListener$CameraEvent;)Z
+    .locals 0
+
+    invoke-static {p0}, Ljp/co/sony/mc/camera/view/viewmodel/CameraStatusModel;->capturing$lambda$2(Ljp/co/sony/mc/camera/view/CameraEventListener$CameraEvent;)Z
+
+    move-result p0
+
+    return p0
+.end method
+
+.method public static synthetic $r8$lambda$FoSWIwYdZqjoh_jV9lKVIqwSM34(Ljp/co/sony/mc/camera/view/CameraEventListener$CameraEvent;)Z
+    .locals 0
+
+    invoke-static {p0}, Ljp/co/sony/mc/camera/view/viewmodel/CameraStatusModel;->streaming$lambda$4(Ljp/co/sony/mc/camera/view/CameraEventListener$CameraEvent;)Z
+
+    move-result p0
+
+    return p0
+.end method
+
+.method public static synthetic $r8$lambda$N3AWI4C1tSv3rZK3McO3cRvfIAk(Ljp/co/sony/mc/camera/view/CameraEventListener$CameraEvent;)Z
+    .locals 0
+
+    invoke-static {p0}, Ljp/co/sony/mc/camera/view/viewmodel/CameraStatusModel;->recording$lambda$3(Ljp/co/sony/mc/camera/view/CameraEventListener$CameraEvent;)Z
+
+    move-result p0
+
+    return p0
+.end method
+
+.method public static synthetic $r8$lambda$So-sW5J039SUgyXHHSy7WJkNeY8(Ljp/co/sony/mc/camera/view/CameraEventListener$CameraEvent;)Z
+    .locals 0
+
+    invoke-static {p0}, Ljp/co/sony/mc/camera/view/viewmodel/CameraStatusModel;->previewStarted$lambda$1(Ljp/co/sony/mc/camera/view/CameraEventListener$CameraEvent;)Z
+
+    move-result p0
+
+    return p0
+.end method
+
+.method public static synthetic $r8$lambda$WhLtYvw3vSg19EuG1VP8JMMYpq0(Ljp/co/sony/mc/camera/view/CameraEventListener$CameraEvent;)Z
+    .locals 0
+
+    invoke-static {p0}, Ljp/co/sony/mc/camera/view/viewmodel/CameraStatusModel;->recordingPaused$lambda$6(Ljp/co/sony/mc/camera/view/CameraEventListener$CameraEvent;)Z
+
+    move-result p0
+
+    return p0
+.end method
+
+.method public static synthetic $r8$lambda$YTc2XWbOuzdyHQ9vSbZEogpU7gE(ZZZLjava/lang/Boolean;Ljp/co/sony/mc/camera/view/CameraEventListener$CameraEvent;)Z
+    .locals 0
+
+    invoke-static {p0, p1, p2, p3, p4}, Ljp/co/sony/mc/camera/view/viewmodel/CameraStatusModel;->canChangeMode$lambda$9(ZZZLjava/lang/Boolean;Ljp/co/sony/mc/camera/view/CameraEventListener$CameraEvent;)Z
+
+    move-result p0
+
+    return p0
+.end method
+
+.method public static synthetic $r8$lambda$lKijjvEHSWzFChzaMZbQsjwPe0w(ZZZLjava/lang/Boolean;Z)Z
+    .locals 0
+
+    invoke-static {p0, p1, p2, p3, p4}, Ljp/co/sony/mc/camera/view/viewmodel/CameraStatusModel;->ready$lambda$8(ZZZLjava/lang/Boolean;Z)Z
+
+    move-result p0
+
+    return p0
+.end method
+
+.method public static synthetic $r8$lambda$sghHL1ZeEfTtqsqjljyvjHeKzKc(Ljp/co/sony/mc/camera/view/CameraEventListener$CameraEvent;)Z
+    .locals 0
+
+    invoke-static {p0}, Ljp/co/sony/mc/camera/view/viewmodel/CameraStatusModel;->selftimering$lambda$5(Ljp/co/sony/mc/camera/view/CameraEventListener$CameraEvent;)Z
+
+    move-result p0
+
+    return p0
+.end method
+
 .method static constructor <clinit>()V
     .locals 0
 
@@ -723,9 +801,9 @@
     iput-object v8, v0, Ljp/co/sony/mc/camera/view/viewmodel/CameraStatusModel;->latestCameraEvent:Landroidx/lifecycle/LiveData;
 
     .line 23
-    sget-object v1, Ljp/co/sony/mc/camera/view/viewmodel/CameraStatusModel$initializing$1;->INSTANCE:Ljp/co/sony/mc/camera/view/viewmodel/CameraStatusModel$initializing$1;
+    new-instance v1, Ljp/co/sony/mc/camera/view/viewmodel/CameraStatusModel$$ExternalSyntheticLambda0;
 
-    check-cast v1, Lkotlin/jvm/functions/Function1;
+    invoke-direct {v1}, Ljp/co/sony/mc/camera/view/viewmodel/CameraStatusModel$$ExternalSyntheticLambda0;-><init>()V
 
     invoke-static {v8, v1}, Landroidx/lifecycle/Transformations;->map(Landroidx/lifecycle/LiveData;Lkotlin/jvm/functions/Function1;)Landroidx/lifecycle/LiveData;
 
@@ -734,9 +812,9 @@
     iput-object v14, v0, Ljp/co/sony/mc/camera/view/viewmodel/CameraStatusModel;->initializing:Landroidx/lifecycle/LiveData;
 
     .line 28
-    sget-object v1, Ljp/co/sony/mc/camera/view/viewmodel/CameraStatusModel$previewStarted$1;->INSTANCE:Ljp/co/sony/mc/camera/view/viewmodel/CameraStatusModel$previewStarted$1;
+    new-instance v1, Ljp/co/sony/mc/camera/view/viewmodel/CameraStatusModel$$ExternalSyntheticLambda1;
 
-    check-cast v1, Lkotlin/jvm/functions/Function1;
+    invoke-direct {v1}, Ljp/co/sony/mc/camera/view/viewmodel/CameraStatusModel$$ExternalSyntheticLambda1;-><init>()V
 
     invoke-static {v8, v1}, Landroidx/lifecycle/Transformations;->map(Landroidx/lifecycle/LiveData;Lkotlin/jvm/functions/Function1;)Landroidx/lifecycle/LiveData;
 
@@ -745,9 +823,9 @@
     iput-object v1, v0, Ljp/co/sony/mc/camera/view/viewmodel/CameraStatusModel;->previewStarted:Landroidx/lifecycle/LiveData;
 
     .line 32
-    sget-object v1, Ljp/co/sony/mc/camera/view/viewmodel/CameraStatusModel$capturing$1;->INSTANCE:Ljp/co/sony/mc/camera/view/viewmodel/CameraStatusModel$capturing$1;
+    new-instance v1, Ljp/co/sony/mc/camera/view/viewmodel/CameraStatusModel$$ExternalSyntheticLambda2;
 
-    check-cast v1, Lkotlin/jvm/functions/Function1;
+    invoke-direct {v1}, Ljp/co/sony/mc/camera/view/viewmodel/CameraStatusModel$$ExternalSyntheticLambda2;-><init>()V
 
     invoke-static {v8, v1}, Landroidx/lifecycle/Transformations;->map(Landroidx/lifecycle/LiveData;Lkotlin/jvm/functions/Function1;)Landroidx/lifecycle/LiveData;
 
@@ -756,9 +834,9 @@
     iput-object v1, v0, Ljp/co/sony/mc/camera/view/viewmodel/CameraStatusModel;->capturing:Landroidx/lifecycle/LiveData;
 
     .line 38
-    sget-object v2, Ljp/co/sony/mc/camera/view/viewmodel/CameraStatusModel$recording$1;->INSTANCE:Ljp/co/sony/mc/camera/view/viewmodel/CameraStatusModel$recording$1;
+    new-instance v2, Ljp/co/sony/mc/camera/view/viewmodel/CameraStatusModel$$ExternalSyntheticLambda3;
 
-    check-cast v2, Lkotlin/jvm/functions/Function1;
+    invoke-direct {v2}, Ljp/co/sony/mc/camera/view/viewmodel/CameraStatusModel$$ExternalSyntheticLambda3;-><init>()V
 
     invoke-static {v8, v2}, Landroidx/lifecycle/Transformations;->map(Landroidx/lifecycle/LiveData;Lkotlin/jvm/functions/Function1;)Landroidx/lifecycle/LiveData;
 
@@ -767,9 +845,9 @@
     iput-object v15, v0, Ljp/co/sony/mc/camera/view/viewmodel/CameraStatusModel;->recording:Landroidx/lifecycle/LiveData;
 
     .line 45
-    sget-object v2, Ljp/co/sony/mc/camera/view/viewmodel/CameraStatusModel$streaming$1;->INSTANCE:Ljp/co/sony/mc/camera/view/viewmodel/CameraStatusModel$streaming$1;
+    new-instance v2, Ljp/co/sony/mc/camera/view/viewmodel/CameraStatusModel$$ExternalSyntheticLambda4;
 
-    check-cast v2, Lkotlin/jvm/functions/Function1;
+    invoke-direct {v2}, Ljp/co/sony/mc/camera/view/viewmodel/CameraStatusModel$$ExternalSyntheticLambda4;-><init>()V
 
     invoke-static {v8, v2}, Landroidx/lifecycle/Transformations;->map(Landroidx/lifecycle/LiveData;Lkotlin/jvm/functions/Function1;)Landroidx/lifecycle/LiveData;
 
@@ -778,9 +856,9 @@
     iput-object v2, v0, Ljp/co/sony/mc/camera/view/viewmodel/CameraStatusModel;->streaming:Landroidx/lifecycle/LiveData;
 
     .line 51
-    sget-object v2, Ljp/co/sony/mc/camera/view/viewmodel/CameraStatusModel$selftimering$1;->INSTANCE:Ljp/co/sony/mc/camera/view/viewmodel/CameraStatusModel$selftimering$1;
+    new-instance v2, Ljp/co/sony/mc/camera/view/viewmodel/CameraStatusModel$$ExternalSyntheticLambda5;
 
-    check-cast v2, Lkotlin/jvm/functions/Function1;
+    invoke-direct {v2}, Ljp/co/sony/mc/camera/view/viewmodel/CameraStatusModel$$ExternalSyntheticLambda5;-><init>()V
 
     invoke-static {v8, v2}, Landroidx/lifecycle/Transformations;->map(Landroidx/lifecycle/LiveData;Lkotlin/jvm/functions/Function1;)Landroidx/lifecycle/LiveData;
 
@@ -789,9 +867,9 @@
     iput-object v13, v0, Ljp/co/sony/mc/camera/view/viewmodel/CameraStatusModel;->selftimering:Landroidx/lifecycle/LiveData;
 
     .line 55
-    sget-object v2, Ljp/co/sony/mc/camera/view/viewmodel/CameraStatusModel$recordingPaused$1;->INSTANCE:Ljp/co/sony/mc/camera/view/viewmodel/CameraStatusModel$recordingPaused$1;
+    new-instance v2, Ljp/co/sony/mc/camera/view/viewmodel/CameraStatusModel$$ExternalSyntheticLambda6;
 
-    check-cast v2, Lkotlin/jvm/functions/Function1;
+    invoke-direct {v2}, Ljp/co/sony/mc/camera/view/viewmodel/CameraStatusModel$$ExternalSyntheticLambda6;-><init>()V
 
     invoke-static {v8, v2}, Landroidx/lifecycle/Transformations;->map(Landroidx/lifecycle/LiveData;Lkotlin/jvm/functions/Function1;)Landroidx/lifecycle/LiveData;
 
@@ -964,100 +1042,86 @@
 
     invoke-direct {v2, v3}, Landroidx/lifecycle/MutableLiveData;-><init>(Ljava/lang/Object;)V
 
-    iput-object v2, v0, Ljp/co/sony/mc/camera/view/viewmodel/CameraStatusModel;->_isSelectedFaceChanged:Landroidx/lifecycle/MutableLiveData;
+    iput-object v2, v0, Ljp/co/sony/mc/camera/view/viewmodel/CameraStatusModel;->_isQuickRecordLocked:Landroidx/lifecycle/MutableLiveData;
 
     .line 90
     invoke-static {v2}, Ljp/co/sony/mc/camera/util/LiveDataExtensionsKt;->asLiveData(Landroidx/lifecycle/MutableLiveData;)Landroidx/lifecycle/LiveData;
 
     move-result-object v2
 
-    iput-object v2, v0, Ljp/co/sony/mc/camera/view/viewmodel/CameraStatusModel;->isSelectedFaceChanged:Landroidx/lifecycle/LiveData;
-
-    .line 92
-    new-instance v2, Landroidx/lifecycle/MutableLiveData;
-
-    invoke-direct {v2, v3}, Landroidx/lifecycle/MutableLiveData;-><init>(Ljava/lang/Object;)V
-
-    iput-object v2, v0, Ljp/co/sony/mc/camera/view/viewmodel/CameraStatusModel;->_isQuickRecordLocked:Landroidx/lifecycle/MutableLiveData;
-
-    .line 93
-    invoke-static {v2}, Ljp/co/sony/mc/camera/util/LiveDataExtensionsKt;->asLiveData(Landroidx/lifecycle/MutableLiveData;)Landroidx/lifecycle/LiveData;
-
-    move-result-object v2
-
     iput-object v2, v0, Ljp/co/sony/mc/camera/view/viewmodel/CameraStatusModel;->isQuickRecordLocked:Landroidx/lifecycle/LiveData;
 
-    .line 99
+    .line 96
     new-instance v2, Landroidx/lifecycle/MutableLiveData;
 
     invoke-direct {v2, v3}, Landroidx/lifecycle/MutableLiveData;-><init>(Ljava/lang/Object;)V
 
     iput-object v2, v0, Ljp/co/sony/mc/camera/view/viewmodel/CameraStatusModel;->_fallbackable:Landroidx/lifecycle/MutableLiveData;
 
-    .line 100
+    .line 97
     invoke-static {v2}, Ljp/co/sony/mc/camera/util/LiveDataExtensionsKt;->asLiveData(Landroidx/lifecycle/MutableLiveData;)Landroidx/lifecycle/LiveData;
 
     move-result-object v2
 
     iput-object v2, v0, Ljp/co/sony/mc/camera/view/viewmodel/CameraStatusModel;->fallbackable:Landroidx/lifecycle/LiveData;
 
-    .line 102
+    .line 99
     new-instance v2, Landroidx/lifecycle/MutableLiveData;
 
     invoke-direct {v2, v3}, Landroidx/lifecycle/MutableLiveData;-><init>(Ljava/lang/Object;)V
 
     iput-object v2, v0, Ljp/co/sony/mc/camera/view/viewmodel/CameraStatusModel;->_fallbackEnabled:Landroidx/lifecycle/MutableLiveData;
 
-    .line 103
+    .line 100
     invoke-static {v2}, Ljp/co/sony/mc/camera/util/LiveDataExtensionsKt;->asLiveData(Landroidx/lifecycle/MutableLiveData;)Landroidx/lifecycle/LiveData;
 
     move-result-object v2
 
     iput-object v2, v0, Ljp/co/sony/mc/camera/view/viewmodel/CameraStatusModel;->fallbackEnabled:Landroidx/lifecycle/LiveData;
 
-    .line 105
+    .line 102
     new-instance v2, Landroidx/lifecycle/MutableLiveData;
 
     invoke-direct {v2, v3}, Landroidx/lifecycle/MutableLiveData;-><init>(Ljava/lang/Object;)V
 
     iput-object v2, v0, Ljp/co/sony/mc/camera/view/viewmodel/CameraStatusModel;->_isFallbackModeChanging:Landroidx/lifecycle/MutableLiveData;
 
-    .line 106
+    .line 103
     invoke-static {v2}, Ljp/co/sony/mc/camera/util/LiveDataExtensionsKt;->asLiveData(Landroidx/lifecycle/MutableLiveData;)Landroidx/lifecycle/LiveData;
 
     move-result-object v2
 
     iput-object v2, v0, Ljp/co/sony/mc/camera/view/viewmodel/CameraStatusModel;->isFallbackModeChanging:Landroidx/lifecycle/LiveData;
 
-    .line 108
+    .line 105
     new-instance v2, Landroidx/lifecycle/MutableLiveData;
 
     invoke-direct {v2, v3}, Landroidx/lifecycle/MutableLiveData;-><init>(Ljava/lang/Object;)V
 
     iput-object v2, v0, Ljp/co/sony/mc/camera/view/viewmodel/CameraStatusModel;->_isModeChanging:Landroidx/lifecycle/MutableLiveData;
 
-    .line 109
+    .line 106
     invoke-static {v2}, Ljp/co/sony/mc/camera/util/LiveDataExtensionsKt;->asLiveData(Landroidx/lifecycle/MutableLiveData;)Landroidx/lifecycle/LiveData;
 
     move-result-object v2
 
     iput-object v2, v0, Ljp/co/sony/mc/camera/view/viewmodel/CameraStatusModel;->isModeChanging:Landroidx/lifecycle/LiveData;
 
-    .line 111
+    .line 108
     new-instance v2, Landroidx/lifecycle/MutableLiveData;
 
     invoke-direct {v2, v3}, Landroidx/lifecycle/MutableLiveData;-><init>(Ljava/lang/Object;)V
 
     iput-object v2, v0, Ljp/co/sony/mc/camera/view/viewmodel/CameraStatusModel;->_isLensChanging:Landroidx/lifecycle/MutableLiveData;
 
-    .line 112
+    .line 109
     invoke-static {v2}, Ljp/co/sony/mc/camera/util/LiveDataExtensionsKt;->asLiveData(Landroidx/lifecycle/MutableLiveData;)Landroidx/lifecycle/LiveData;
 
     move-result-object v2
 
     iput-object v2, v0, Ljp/co/sony/mc/camera/view/viewmodel/CameraStatusModel;->isLensChanging:Landroidx/lifecycle/LiveData;
 
-    .line 115
+    .line 112
     new-instance v2, Landroidx/lifecycle/MutableLiveData;
 
     new-instance v4, Lkotlin/Pair;
@@ -1070,40 +1134,39 @@
 
     iput-object v2, v0, Ljp/co/sony/mc/camera/view/viewmodel/CameraStatusModel;->_isDialPickerScrolling:Landroidx/lifecycle/MutableLiveData;
 
-    .line 116
+    .line 113
     invoke-static {v2}, Ljp/co/sony/mc/camera/util/LiveDataExtensionsKt;->asLiveData(Landroidx/lifecycle/MutableLiveData;)Landroidx/lifecycle/LiveData;
 
     move-result-object v2
 
     iput-object v2, v0, Ljp/co/sony/mc/camera/view/viewmodel/CameraStatusModel;->isDialPickerScrolling:Landroidx/lifecycle/LiveData;
 
-    .line 118
+    .line 115
     new-instance v2, Landroidx/lifecycle/MutableLiveData;
 
     invoke-direct {v2, v3}, Landroidx/lifecycle/MutableLiveData;-><init>(Ljava/lang/Object;)V
 
     iput-object v2, v0, Ljp/co/sony/mc/camera/view/viewmodel/CameraStatusModel;->_isExternalMic:Landroidx/lifecycle/MutableLiveData;
 
-    .line 119
+    .line 116
     invoke-static {v2}, Ljp/co/sony/mc/camera/util/LiveDataExtensionsKt;->asLiveData(Landroidx/lifecycle/MutableLiveData;)Landroidx/lifecycle/LiveData;
 
     move-result-object v2
 
     iput-object v2, v0, Ljp/co/sony/mc/camera/view/viewmodel/CameraStatusModel;->isExternalMic:Landroidx/lifecycle/LiveData;
 
-    .line 121
+    .line 118
     sget-object v2, Ljp/co/sony/mc/camera/view/viewmodel/CameraStatusModel$RecordingMicType;->INTERNAL:Ljp/co/sony/mc/camera/view/viewmodel/CameraStatusModel$RecordingMicType;
 
     iput-object v2, v0, Ljp/co/sony/mc/camera/view/viewmodel/CameraStatusModel;->recordingMicType:Ljp/co/sony/mc/camera/view/viewmodel/CameraStatusModel$RecordingMicType;
 
-    .line 128
+    .line 125
     sget-object v2, Ljp/co/sony/mc/camera/view/viewmodel/LiveDataMediators;->INSTANCE:Ljp/co/sony/mc/camera/view/viewmodel/LiveDataMediators;
 
-    sget-object v3, Ljp/co/sony/mc/camera/view/viewmodel/CameraStatusModel$previewing$1;->INSTANCE:Ljp/co/sony/mc/camera/view/viewmodel/CameraStatusModel$previewing$1;
+    .line 129
+    new-instance v7, Ljp/co/sony/mc/camera/view/viewmodel/CameraStatusModel$$ExternalSyntheticLambda7;
 
-    move-object v7, v3
-
-    check-cast v7, Lkotlin/jvm/functions/Function4;
+    invoke-direct {v7}, Ljp/co/sony/mc/camera/view/viewmodel/CameraStatusModel$$ExternalSyntheticLambda7;-><init>()V
 
     move-object v3, v1
 
@@ -1113,18 +1176,20 @@
 
     move-object v6, v14
 
+    .line 125
     invoke-virtual/range {v2 .. v7}, Ljp/co/sony/mc/camera/view/viewmodel/LiveDataMediators;->notNulls(Landroidx/lifecycle/LiveData;Landroidx/lifecycle/LiveData;Landroidx/lifecycle/LiveData;Landroidx/lifecycle/LiveData;Lkotlin/jvm/functions/Function4;)Landroidx/lifecycle/LiveData;
 
     move-result-object v2
 
     iput-object v2, v0, Ljp/co/sony/mc/camera/view/viewmodel/CameraStatusModel;->previewing:Landroidx/lifecycle/LiveData;
 
-    .line 137
+    .line 134
     sget-object v9, Ljp/co/sony/mc/camera/view/viewmodel/LiveDataMediators;->INSTANCE:Ljp/co/sony/mc/camera/view/viewmodel/LiveDataMediators;
 
-    sget-object v2, Ljp/co/sony/mc/camera/view/viewmodel/CameraStatusModel$ready$1;->INSTANCE:Ljp/co/sony/mc/camera/view/viewmodel/CameraStatusModel$ready$1;
+    .line 139
+    new-instance v2, Ljp/co/sony/mc/camera/view/viewmodel/CameraStatusModel$$ExternalSyntheticLambda8;
 
-    check-cast v2, Lkotlin/jvm/functions/Function5;
+    invoke-direct {v2}, Ljp/co/sony/mc/camera/view/viewmodel/CameraStatusModel$$ExternalSyntheticLambda8;-><init>()V
 
     move-object v10, v1
 
@@ -1142,23 +1207,24 @@
 
     move-object v15, v2
 
+    .line 134
     invoke-virtual/range {v9 .. v15}, Ljp/co/sony/mc/camera/view/viewmodel/LiveDataMediators;->notNulls(Landroidx/lifecycle/LiveData;Landroidx/lifecycle/LiveData;Landroidx/lifecycle/LiveData;Landroidx/lifecycle/LiveData;Landroidx/lifecycle/LiveData;Lkotlin/jvm/functions/Function5;)Landroidx/lifecycle/LiveData;
 
     move-result-object v2
 
     iput-object v2, v0, Ljp/co/sony/mc/camera/view/viewmodel/CameraStatusModel;->ready:Landroidx/lifecycle/LiveData;
 
-    .line 147
+    .line 144
     sget-object v3, Ljp/co/sony/mc/camera/view/viewmodel/LiveDataMediators;->INSTANCE:Ljp/co/sony/mc/camera/view/viewmodel/LiveDataMediators;
 
-    sget-object v2, Ljp/co/sony/mc/camera/view/viewmodel/CameraStatusModel$canChangeMode$1;->INSTANCE:Ljp/co/sony/mc/camera/view/viewmodel/CameraStatusModel$canChangeMode$1;
+    .line 149
+    new-instance v9, Ljp/co/sony/mc/camera/view/viewmodel/CameraStatusModel$$ExternalSyntheticLambda9;
 
-    move-object v9, v2
-
-    check-cast v9, Lkotlin/jvm/functions/Function5;
+    invoke-direct {v9}, Ljp/co/sony/mc/camera/view/viewmodel/CameraStatusModel$$ExternalSyntheticLambda9;-><init>()V
 
     move-object v4, v1
 
+    .line 144
     invoke-virtual/range {v3 .. v9}, Ljp/co/sony/mc/camera/view/viewmodel/LiveDataMediators;->notNulls(Landroidx/lifecycle/LiveData;Landroidx/lifecycle/LiveData;Landroidx/lifecycle/LiveData;Landroidx/lifecycle/LiveData;Landroidx/lifecycle/LiveData;Lkotlin/jvm/functions/Function5;)Landroidx/lifecycle/LiveData;
 
     move-result-object v1
@@ -1168,18 +1234,116 @@
     return-void
 .end method
 
+.method private static final canChangeMode$lambda$9(ZZZLjava/lang/Boolean;Ljp/co/sony/mc/camera/view/CameraEventListener$CameraEvent;)Z
+    .locals 1
+
+    const/4 v0, 0x1
+
+    xor-int/2addr p0, v0
+
+    xor-int/2addr p1, v0
+
+    and-int/2addr p0, p1
+
+    xor-int/lit8 p1, p2, 0x1
+
+    and-int/2addr p0, p1
+
+    .line 152
+    invoke-virtual {p3}, Ljava/lang/Boolean;->booleanValue()Z
+
+    move-result p1
+
+    xor-int/2addr p1, v0
+
+    and-int/2addr p0, p1
+
+    sget-object p1, Ljp/co/sony/mc/camera/view/CameraEventListener$CameraEvent;->INIT:Ljp/co/sony/mc/camera/view/CameraEventListener$CameraEvent;
+
+    if-eq p4, p1, :cond_0
+
+    goto :goto_0
+
+    :cond_0
+    const/4 v0, 0x0
+
+    :goto_0
+    and-int/2addr p0, v0
+
+    return p0
+.end method
+
+.method private static final capturing$lambda$2(Ljp/co/sony/mc/camera/view/CameraEventListener$CameraEvent;)Z
+    .locals 1
+
+    .line 33
+    sget-object v0, Ljp/co/sony/mc/camera/view/CameraEventListener$CameraEvent;->CAPTURE_PREPARED:Ljp/co/sony/mc/camera/view/CameraEventListener$CameraEvent;
+
+    if-eq p0, v0, :cond_1
+
+    .line 34
+    sget-object v0, Ljp/co/sony/mc/camera/view/CameraEventListener$CameraEvent;->CAPTURE_STARTED:Ljp/co/sony/mc/camera/view/CameraEventListener$CameraEvent;
+
+    if-eq p0, v0, :cond_1
+
+    .line 35
+    sget-object v0, Ljp/co/sony/mc/camera/view/CameraEventListener$CameraEvent;->BURST_STARTED:Ljp/co/sony/mc/camera/view/CameraEventListener$CameraEvent;
+
+    if-ne p0, v0, :cond_0
+
+    goto :goto_0
+
+    :cond_0
+    const/4 p0, 0x0
+
+    goto :goto_1
+
+    :cond_1
+    :goto_0
+    const/4 p0, 0x1
+
+    :goto_1
+    return p0
+.end method
+
 .method private final handleSnapshotRequested(I)V
+    .locals 2
+
+    .line 319
+    iget v0, p0, Ljp/co/sony/mc/camera/view/viewmodel/CameraStatusModel;->lastCaptureRequestId:I
+
+    if-ge v0, p1, :cond_0
+
+    .line 320
+    iget-object v0, p0, Ljp/co/sony/mc/camera/view/viewmodel/CameraStatusModel;->_saving:Landroidx/lifecycle/MutableLiveData;
+
+    const/4 v1, 0x1
+
+    invoke-static {v1}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
+
+    move-result-object v1
+
+    invoke-virtual {v0, v1}, Landroidx/lifecycle/MutableLiveData;->setValue(Ljava/lang/Object;)V
+
+    .line 321
+    iput p1, p0, Ljp/co/sony/mc/camera/view/viewmodel/CameraStatusModel;->lastCaptureRequestId:I
+
+    :cond_0
+    return-void
+.end method
+
+.method private final handleStoreFinished(I)V
     .locals 2
 
     .line 326
     iget v0, p0, Ljp/co/sony/mc/camera/view/viewmodel/CameraStatusModel;->lastCaptureRequestId:I
 
-    if-ge v0, p1, :cond_0
+    if-gt v0, p1, :cond_0
 
     .line 327
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/viewmodel/CameraStatusModel;->_saving:Landroidx/lifecycle/MutableLiveData;
 
-    const/4 v1, 0x1
+    const/4 v1, 0x0
 
     invoke-static {v1}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
@@ -1194,30 +1358,209 @@
     return-void
 .end method
 
-.method private final handleStoreFinished(I)V
-    .locals 2
+.method private static final initializing$lambda$0(Ljp/co/sony/mc/camera/view/CameraEventListener$CameraEvent;)Z
+    .locals 1
 
-    .line 333
-    iget v0, p0, Ljp/co/sony/mc/camera/view/viewmodel/CameraStatusModel;->lastCaptureRequestId:I
+    .line 24
+    sget-object v0, Ljp/co/sony/mc/camera/view/CameraEventListener$CameraEvent;->INIT:Ljp/co/sony/mc/camera/view/CameraEventListener$CameraEvent;
 
-    if-gt v0, p1, :cond_0
+    if-eq p0, v0, :cond_1
 
-    .line 334
-    iget-object v0, p0, Ljp/co/sony/mc/camera/view/viewmodel/CameraStatusModel;->_saving:Landroidx/lifecycle/MutableLiveData;
+    .line 25
+    sget-object v0, Ljp/co/sony/mc/camera/view/CameraEventListener$CameraEvent;->OPEN_STARTED:Ljp/co/sony/mc/camera/view/CameraEventListener$CameraEvent;
 
-    const/4 v1, 0x0
+    if-ne p0, v0, :cond_0
 
-    invoke-static {v1}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
-
-    move-result-object v1
-
-    invoke-virtual {v0, v1}, Landroidx/lifecycle/MutableLiveData;->setValue(Ljava/lang/Object;)V
-
-    .line 335
-    iput p1, p0, Ljp/co/sony/mc/camera/view/viewmodel/CameraStatusModel;->lastCaptureRequestId:I
+    goto :goto_0
 
     :cond_0
-    return-void
+    const/4 p0, 0x0
+
+    goto :goto_1
+
+    :cond_1
+    :goto_0
+    const/4 p0, 0x1
+
+    :goto_1
+    return p0
+.end method
+
+.method private static final previewStarted$lambda$1(Ljp/co/sony/mc/camera/view/CameraEventListener$CameraEvent;)Z
+    .locals 1
+
+    .line 29
+    sget-object v0, Ljp/co/sony/mc/camera/view/CameraEventListener$CameraEvent;->PREVIEW_STARTED:Ljp/co/sony/mc/camera/view/CameraEventListener$CameraEvent;
+
+    if-ne p0, v0, :cond_0
+
+    const/4 p0, 0x1
+
+    goto :goto_0
+
+    :cond_0
+    const/4 p0, 0x0
+
+    :goto_0
+    return p0
+.end method
+
+.method private static final previewing$lambda$7(ZZZZ)Z
+    .locals 0
+
+    xor-int/lit8 p0, p0, 0x1
+
+    xor-int/lit8 p1, p1, 0x1
+
+    and-int/2addr p0, p1
+
+    xor-int/lit8 p1, p2, 0x1
+
+    and-int/2addr p0, p1
+
+    xor-int/lit8 p1, p3, 0x1
+
+    and-int/2addr p0, p1
+
+    return p0
+.end method
+
+.method private static final ready$lambda$8(ZZZLjava/lang/Boolean;Z)Z
+    .locals 0
+
+    xor-int/lit8 p0, p0, 0x1
+
+    xor-int/lit8 p1, p1, 0x1
+
+    and-int/2addr p0, p1
+
+    xor-int/lit8 p1, p2, 0x1
+
+    and-int/2addr p0, p1
+
+    .line 141
+    invoke-virtual {p3}, Ljava/lang/Boolean;->booleanValue()Z
+
+    move-result p1
+
+    xor-int/lit8 p1, p1, 0x1
+
+    and-int/2addr p0, p1
+
+    xor-int/lit8 p1, p4, 0x1
+
+    and-int/2addr p0, p1
+
+    return p0
+.end method
+
+.method private static final recording$lambda$3(Ljp/co/sony/mc/camera/view/CameraEventListener$CameraEvent;)Z
+    .locals 1
+
+    .line 39
+    sget-object v0, Ljp/co/sony/mc/camera/view/CameraEventListener$CameraEvent;->RECORDING_PAUSED:Ljp/co/sony/mc/camera/view/CameraEventListener$CameraEvent;
+
+    if-eq p0, v0, :cond_1
+
+    .line 40
+    sget-object v0, Ljp/co/sony/mc/camera/view/CameraEventListener$CameraEvent;->RECORDING_STARTED:Ljp/co/sony/mc/camera/view/CameraEventListener$CameraEvent;
+
+    if-eq p0, v0, :cond_1
+
+    .line 41
+    sget-object v0, Ljp/co/sony/mc/camera/view/CameraEventListener$CameraEvent;->RECORDING_RESUMED:Ljp/co/sony/mc/camera/view/CameraEventListener$CameraEvent;
+
+    if-eq p0, v0, :cond_1
+
+    .line 42
+    sget-object v0, Ljp/co/sony/mc/camera/view/CameraEventListener$CameraEvent;->RECORDING_STOPPED:Ljp/co/sony/mc/camera/view/CameraEventListener$CameraEvent;
+
+    if-ne p0, v0, :cond_0
+
+    goto :goto_0
+
+    :cond_0
+    const/4 p0, 0x0
+
+    goto :goto_1
+
+    :cond_1
+    :goto_0
+    const/4 p0, 0x1
+
+    :goto_1
+    return p0
+.end method
+
+.method private static final recordingPaused$lambda$6(Ljp/co/sony/mc/camera/view/CameraEventListener$CameraEvent;)Z
+    .locals 1
+
+    .line 56
+    sget-object v0, Ljp/co/sony/mc/camera/view/CameraEventListener$CameraEvent;->RECORDING_PAUSED:Ljp/co/sony/mc/camera/view/CameraEventListener$CameraEvent;
+
+    if-ne p0, v0, :cond_0
+
+    const/4 p0, 0x1
+
+    goto :goto_0
+
+    :cond_0
+    const/4 p0, 0x0
+
+    :goto_0
+    return p0
+.end method
+
+.method private static final selftimering$lambda$5(Ljp/co/sony/mc/camera/view/CameraEventListener$CameraEvent;)Z
+    .locals 1
+
+    .line 52
+    sget-object v0, Ljp/co/sony/mc/camera/view/CameraEventListener$CameraEvent;->SELFTIMER_STARTED:Ljp/co/sony/mc/camera/view/CameraEventListener$CameraEvent;
+
+    if-ne p0, v0, :cond_0
+
+    const/4 p0, 0x1
+
+    goto :goto_0
+
+    :cond_0
+    const/4 p0, 0x0
+
+    :goto_0
+    return p0
+.end method
+
+.method private static final streaming$lambda$4(Ljp/co/sony/mc/camera/view/CameraEventListener$CameraEvent;)Z
+    .locals 1
+
+    .line 46
+    sget-object v0, Ljp/co/sony/mc/camera/view/CameraEventListener$CameraEvent;->RECORDING_STARTED:Ljp/co/sony/mc/camera/view/CameraEventListener$CameraEvent;
+
+    if-eq p0, v0, :cond_1
+
+    .line 47
+    sget-object v0, Ljp/co/sony/mc/camera/view/CameraEventListener$CameraEvent;->RECORDING_RESUMED:Ljp/co/sony/mc/camera/view/CameraEventListener$CameraEvent;
+
+    if-eq p0, v0, :cond_1
+
+    .line 48
+    sget-object v0, Ljp/co/sony/mc/camera/view/CameraEventListener$CameraEvent;->RECORDING_STOPPED:Ljp/co/sony/mc/camera/view/CameraEventListener$CameraEvent;
+
+    if-ne p0, v0, :cond_0
+
+    goto :goto_0
+
+    :cond_0
+    const/4 p0, 0x0
+
+    goto :goto_1
+
+    :cond_1
+    :goto_0
+    const/4 p0, 0x1
+
+    :goto_1
+    return p0
 .end method
 
 
@@ -1250,7 +1593,7 @@
         }
     .end annotation
 
-    .line 147
+    .line 144
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/viewmodel/CameraStatusModel;->canChangeMode:Landroidx/lifecycle/LiveData;
 
     return-object p0
@@ -1301,7 +1644,7 @@
         }
     .end annotation
 
-    .line 103
+    .line 100
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/viewmodel/CameraStatusModel;->fallbackEnabled:Landroidx/lifecycle/LiveData;
 
     return-object p0
@@ -1318,7 +1661,7 @@
         }
     .end annotation
 
-    .line 100
+    .line 97
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/viewmodel/CameraStatusModel;->fallbackable:Landroidx/lifecycle/LiveData;
 
     return-object p0
@@ -1420,7 +1763,7 @@
         }
     .end annotation
 
-    .line 128
+    .line 125
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/viewmodel/CameraStatusModel;->previewing:Landroidx/lifecycle/LiveData;
 
     return-object p0
@@ -1437,7 +1780,7 @@
         }
     .end annotation
 
-    .line 137
+    .line 134
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/viewmodel/CameraStatusModel;->ready:Landroidx/lifecycle/LiveData;
 
     return-object p0
@@ -1480,7 +1823,7 @@
 .method public final getRecordingMicType()Ljp/co/sony/mc/camera/view/viewmodel/CameraStatusModel$RecordingMicType;
     .locals 0
 
-    .line 121
+    .line 118
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/viewmodel/CameraStatusModel;->recordingMicType:Ljp/co/sony/mc/camera/view/viewmodel/CameraStatusModel$RecordingMicType;
 
     return-object p0
@@ -1584,7 +1927,7 @@
         }
     .end annotation
 
-    .line 116
+    .line 113
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/viewmodel/CameraStatusModel;->isDialPickerScrolling:Landroidx/lifecycle/LiveData;
 
     return-object p0
@@ -1601,7 +1944,7 @@
         }
     .end annotation
 
-    .line 119
+    .line 116
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/viewmodel/CameraStatusModel;->isExternalMic:Landroidx/lifecycle/LiveData;
 
     return-object p0
@@ -1618,7 +1961,7 @@
         }
     .end annotation
 
-    .line 106
+    .line 103
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/viewmodel/CameraStatusModel;->isFallbackModeChanging:Landroidx/lifecycle/LiveData;
 
     return-object p0
@@ -1669,7 +2012,7 @@
         }
     .end annotation
 
-    .line 112
+    .line 109
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/viewmodel/CameraStatusModel;->isLensChanging:Landroidx/lifecycle/LiveData;
 
     return-object p0
@@ -1678,7 +2021,7 @@
 .method public final isLongExposing()Z
     .locals 0
 
-    .line 97
+    .line 94
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/viewmodel/CameraStatusModel;->longExposureDuration:Landroidx/lifecycle/LiveData;
 
     invoke-virtual {p0}, Landroidx/lifecycle/LiveData;->getValue()Ljava/lang/Object;
@@ -1717,7 +2060,7 @@
         }
     .end annotation
 
-    .line 109
+    .line 106
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/viewmodel/CameraStatusModel;->isModeChanging:Landroidx/lifecycle/LiveData;
 
     return-object p0
@@ -1751,25 +2094,8 @@
         }
     .end annotation
 
-    .line 93
-    iget-object p0, p0, Ljp/co/sony/mc/camera/view/viewmodel/CameraStatusModel;->isQuickRecordLocked:Landroidx/lifecycle/LiveData;
-
-    return-object p0
-.end method
-
-.method public final isSelectedFaceChanged()Landroidx/lifecycle/LiveData;
-    .locals 0
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "()",
-            "Landroidx/lifecycle/LiveData<",
-            "Ljava/lang/Boolean;",
-            ">;"
-        }
-    .end annotation
-
     .line 90
-    iget-object p0, p0, Ljp/co/sony/mc/camera/view/viewmodel/CameraStatusModel;->isSelectedFaceChanged:Landroidx/lifecycle/LiveData;
+    iget-object p0, p0, Ljp/co/sony/mc/camera/view/viewmodel/CameraStatusModel;->isQuickRecordLocked:Landroidx/lifecycle/LiveData;
 
     return-object p0
 .end method
@@ -1777,7 +2103,7 @@
 .method public final onAudioResourceChanged()V
     .locals 2
 
-    .line 159
+    .line 156
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/viewmodel/CameraStatusModel;->recording:Landroidx/lifecycle/LiveData;
 
     invoke-virtual {v0}, Landroidx/lifecycle/LiveData;->getValue()Ljava/lang/Object;
@@ -1796,14 +2122,14 @@
 
     if-eqz v0, :cond_0
 
-    .line 160
+    .line 157
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/viewmodel/CameraStatusModel;->recordingMicType:Ljp/co/sony/mc/camera/view/viewmodel/CameraStatusModel$RecordingMicType;
 
     sget-object v1, Ljp/co/sony/mc/camera/view/viewmodel/CameraStatusModel$RecordingMicType;->EXTERNAL:Ljp/co/sony/mc/camera/view/viewmodel/CameraStatusModel$RecordingMicType;
 
     if-ne v0, v1, :cond_1
 
-    .line 161
+    .line 158
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/viewmodel/CameraStatusModel;->_isExternalMic:Landroidx/lifecycle/MutableLiveData;
 
     sget-object v0, Ljp/co/sony/mc/camera/recorder/AudioDeviceManager;->Companion:Ljp/co/sony/mc/camera/recorder/AudioDeviceManager$Companion;
@@ -1824,7 +2150,7 @@
 
     goto :goto_0
 
-    .line 170
+    .line 167
     :cond_0
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/viewmodel/CameraStatusModel;->_isExternalMic:Landroidx/lifecycle/MutableLiveData;
 
@@ -1852,7 +2178,7 @@
 .method public final onAutoHdrChanged(Z)V
     .locals 0
 
-    .line 298
+    .line 295
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/viewmodel/CameraStatusModel;->_isHdrRequired:Landroidx/lifecycle/MutableLiveData;
 
     invoke-static {p1}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
@@ -1867,7 +2193,7 @@
 .method public final onBurstCaptureDone()V
     .locals 1
 
-    .line 250
+    .line 247
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/viewmodel/CameraStatusModel;->_continuousShootingCount:Landroidx/lifecycle/MutableLiveData;
 
     const/4 v0, 0x0
@@ -1884,7 +2210,7 @@
 .method public final onBurstQueueingCountUpdated(I)V
     .locals 2
 
-    .line 254
+    .line 251
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/viewmodel/CameraStatusModel;->_burstQueueingCount:Landroidx/lifecycle/MutableLiveData;
 
     invoke-static {p1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
@@ -1893,7 +2219,7 @@
 
     invoke-virtual {v0, v1}, Landroidx/lifecycle/MutableLiveData;->setValue(Ljava/lang/Object;)V
 
-    .line 255
+    .line 252
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/viewmodel/CameraStatusModel;->_isBurstPostProcessing:Landroidx/lifecycle/MutableLiveData;
 
     if-lez p1, :cond_0
@@ -1918,7 +2244,7 @@
 .method public final onBurstShutterAction(I)V
     .locals 0
 
-    .line 246
+    .line 243
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/viewmodel/CameraStatusModel;->_continuousShootingCount:Landroidx/lifecycle/MutableLiveData;
 
     invoke-static {p1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
@@ -1933,20 +2259,20 @@
 .method public final onBurstShutterDone(I)V
     .locals 0
 
-    .line 259
+    .line 256
     invoke-direct {p0, p1}, Ljp/co/sony/mc/camera/view/viewmodel/CameraStatusModel;->handleSnapshotRequested(I)V
 
     return-void
 .end method
 
 .method public final onCameraEvent(Ljp/co/sony/mc/camera/view/CameraEventListener$CameraEvent;)V
-    .locals 7
+    .locals 6
 
     const-string/jumbo v0, "state"
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 175
+    .line 172
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/viewmodel/CameraStatusModel;->latestCameraEvent:Landroidx/lifecycle/LiveData;
 
     invoke-virtual {v0}, Landroidx/lifecycle/LiveData;->getValue()Ljava/lang/Object;
@@ -1955,12 +2281,12 @@
 
     check-cast v0, Ljp/co/sony/mc/camera/view/CameraEventListener$CameraEvent;
 
-    .line 176
+    .line 173
     iget-object v1, p0, Ljp/co/sony/mc/camera/view/viewmodel/CameraStatusModel;->_latestCameraEvent:Landroidx/lifecycle/MutableLiveData;
 
     invoke-virtual {v1, p1}, Landroidx/lifecycle/MutableLiveData;->setValue(Ljava/lang/Object;)V
 
-    .line 177
+    .line 174
     iget-object v1, p0, Ljp/co/sony/mc/camera/view/viewmodel/CameraStatusModel;->recording:Landroidx/lifecycle/LiveData;
 
     invoke-virtual {v1}, Landroidx/lifecycle/LiveData;->getValue()Ljava/lang/Object;
@@ -1973,19 +2299,19 @@
 
     move-result-object v3
 
-    .line 182
+    .line 179
     invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object v4
 
-    .line 177
+    .line 174
     invoke-static {v1, v3}, Lkotlin/jvm/internal/Intrinsics;->areEqual(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v1
 
     if-eqz v1, :cond_0
 
-    .line 178
+    .line 175
     iget-object v1, p0, Ljp/co/sony/mc/camera/view/viewmodel/CameraStatusModel;->_isExternalMic:Landroidx/lifecycle/MutableLiveData;
 
     sget-object v5, Ljp/co/sony/mc/camera/recorder/AudioDeviceManager;->Companion:Ljp/co/sony/mc/camera/recorder/AudioDeviceManager$Companion;
@@ -2004,7 +2330,7 @@
 
     invoke-virtual {v1, v5}, Landroidx/lifecycle/MutableLiveData;->setValue(Ljava/lang/Object;)V
 
-    .line 180
+    .line 177
     :cond_0
     sget-object v1, Ljp/co/sony/mc/camera/view/viewmodel/CameraStatusModel$WhenMappings;->$EnumSwitchMapping$0:[I
 
@@ -2020,17 +2346,17 @@
 
     if-eq p1, v1, :cond_6
 
-    const/4 v6, 0x2
+    const/4 v1, 0x2
 
-    if-eq p1, v6, :cond_5
+    if-eq p1, v1, :cond_5
 
-    const/4 v2, 0x3
+    const/4 v1, 0x3
 
-    if-eq p1, v2, :cond_4
+    if-eq p1, v1, :cond_4
 
-    const/4 v2, 0x4
+    const/4 v1, 0x4
 
-    if-eq p1, v2, :cond_2
+    if-eq p1, v1, :cond_2
 
     const/4 v0, 0x5
 
@@ -2038,7 +2364,7 @@
 
     goto :goto_1
 
-    .line 209
+    .line 206
     :cond_1
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/viewmodel/CameraStatusModel;->_isQuickRecordLocked:Landroidx/lifecycle/MutableLiveData;
 
@@ -2046,7 +2372,7 @@
 
     goto :goto_1
 
-    .line 199
+    .line 196
     :cond_2
     iget-object p1, p0, Ljp/co/sony/mc/camera/view/viewmodel/CameraStatusModel;->_latestCameraEvent:Landroidx/lifecycle/MutableLiveData;
 
@@ -2056,50 +2382,46 @@
 
     if-eq v0, p1, :cond_7
 
-    .line 200
+    .line 197
     iget-object p1, p0, Ljp/co/sony/mc/camera/view/viewmodel/CameraStatusModel;->_recordingDuration:Landroidx/lifecycle/MutableLiveData;
 
     invoke-virtual {p1, v4}, Landroidx/lifecycle/MutableLiveData;->setValue(Ljava/lang/Object;)V
 
-    .line 201
-    iget-object p1, p0, Ljp/co/sony/mc/camera/view/viewmodel/CameraStatusModel;->_isExternalMic:Landroidx/lifecycle/MutableLiveData;
+    .line 198
+    sget-object p1, Ljp/co/sony/mc/camera/recorder/AudioDeviceManager;->Companion:Ljp/co/sony/mc/camera/recorder/AudioDeviceManager$Companion;
 
-    invoke-virtual {p1}, Landroidx/lifecycle/MutableLiveData;->getValue()Ljava/lang/Object;
+    invoke-virtual {p1}, Ljp/co/sony/mc/camera/recorder/AudioDeviceManager$Companion;->getInstance()Ljp/co/sony/mc/camera/recorder/AudioDeviceManager;
 
     move-result-object p1
 
-    invoke-static {v1}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
-
-    move-result-object v0
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->areEqual(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-virtual {p1}, Ljp/co/sony/mc/camera/recorder/AudioDeviceManager;->isExternalMicConnected()Z
 
     move-result p1
 
     if-eqz p1, :cond_3
 
-    .line 202
+    .line 199
     sget-object p1, Ljp/co/sony/mc/camera/view/viewmodel/CameraStatusModel$RecordingMicType;->EXTERNAL:Ljp/co/sony/mc/camera/view/viewmodel/CameraStatusModel$RecordingMicType;
 
     goto :goto_0
 
-    .line 204
+    .line 201
     :cond_3
     sget-object p1, Ljp/co/sony/mc/camera/view/viewmodel/CameraStatusModel$RecordingMicType;->INTERNAL:Ljp/co/sony/mc/camera/view/viewmodel/CameraStatusModel$RecordingMicType;
 
-    .line 201
+    .line 198
     :goto_0
     iput-object p1, p0, Ljp/co/sony/mc/camera/view/viewmodel/CameraStatusModel;->recordingMicType:Ljp/co/sony/mc/camera/view/viewmodel/CameraStatusModel$RecordingMicType;
 
     goto :goto_1
 
-    .line 195
+    .line 192
     :cond_4
     iget-object p1, p0, Ljp/co/sony/mc/camera/view/viewmodel/CameraStatusModel;->_longExposureDuration:Landroidx/lifecycle/MutableLiveData;
 
     invoke-virtual {p1, v4}, Landroidx/lifecycle/MutableLiveData;->setValue(Ljava/lang/Object;)V
 
-    .line 196
+    .line 193
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/viewmodel/CameraStatusModel;->_recordingDuration:Landroidx/lifecycle/MutableLiveData;
 
     invoke-static {v5}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
@@ -2110,13 +2432,13 @@
 
     goto :goto_1
 
-    .line 187
+    .line 184
     :cond_5
     iget-object p1, p0, Ljp/co/sony/mc/camera/view/viewmodel/CameraStatusModel;->_longExposureDuration:Landroidx/lifecycle/MutableLiveData;
 
     invoke-virtual {p1, v4}, Landroidx/lifecycle/MutableLiveData;->setValue(Ljava/lang/Object;)V
 
-    .line 188
+    .line 185
     iget-object p1, p0, Ljp/co/sony/mc/camera/view/viewmodel/CameraStatusModel;->_recordingDuration:Landroidx/lifecycle/MutableLiveData;
 
     invoke-static {v5}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
@@ -2125,33 +2447,33 @@
 
     invoke-virtual {p1, v0}, Landroidx/lifecycle/MutableLiveData;->setValue(Ljava/lang/Object;)V
 
-    .line 189
+    .line 186
     iget-object p1, p0, Ljp/co/sony/mc/camera/view/viewmodel/CameraStatusModel;->_burstQueueingCount:Landroidx/lifecycle/MutableLiveData;
 
     invoke-virtual {p1, v4}, Landroidx/lifecycle/MutableLiveData;->setValue(Ljava/lang/Object;)V
 
-    .line 190
+    .line 187
     iget-object p1, p0, Ljp/co/sony/mc/camera/view/viewmodel/CameraStatusModel;->_saving:Landroidx/lifecycle/MutableLiveData;
 
     invoke-virtual {p1, v3}, Landroidx/lifecycle/MutableLiveData;->setValue(Ljava/lang/Object;)V
 
-    .line 191
+    .line 188
     iput v2, p0, Ljp/co/sony/mc/camera/view/viewmodel/CameraStatusModel;->lastCaptureRequestId:I
 
-    .line 192
+    .line 189
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/viewmodel/CameraStatusModel;->_isBurstPostProcessing:Landroidx/lifecycle/MutableLiveData;
 
     invoke-virtual {p0, v3}, Landroidx/lifecycle/MutableLiveData;->setValue(Ljava/lang/Object;)V
 
     goto :goto_1
 
-    .line 182
+    .line 179
     :cond_6
     iget-object p1, p0, Ljp/co/sony/mc/camera/view/viewmodel/CameraStatusModel;->_longExposureDuration:Landroidx/lifecycle/MutableLiveData;
 
     invoke-virtual {p1, v4}, Landroidx/lifecycle/MutableLiveData;->setValue(Ljava/lang/Object;)V
 
-    .line 183
+    .line 180
     iget-object p1, p0, Ljp/co/sony/mc/camera/view/viewmodel/CameraStatusModel;->_recordingDuration:Landroidx/lifecycle/MutableLiveData;
 
     invoke-static {v5}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
@@ -2160,7 +2482,7 @@
 
     invoke-virtual {p1, v0}, Landroidx/lifecycle/MutableLiveData;->setValue(Ljava/lang/Object;)V
 
-    .line 184
+    .line 181
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/viewmodel/CameraStatusModel;->_burstQueueingCount:Landroidx/lifecycle/MutableLiveData;
 
     invoke-virtual {p0, v4}, Landroidx/lifecycle/MutableLiveData;->setValue(Ljava/lang/Object;)V
@@ -2187,7 +2509,7 @@
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 363
+    .line 356
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/viewmodel/CameraStatusModel;->_isDialPickerScrolling:Landroidx/lifecycle/MutableLiveData;
 
     invoke-virtual {p0, p1}, Landroidx/lifecycle/MutableLiveData;->setValue(Ljava/lang/Object;)V
@@ -2198,7 +2520,7 @@
 .method public final onExposureDone(I)V
     .locals 0
 
-    .line 238
+    .line 235
     invoke-direct {p0, p1}, Ljp/co/sony/mc/camera/view/viewmodel/CameraStatusModel;->handleSnapshotRequested(I)V
 
     return-void
@@ -2211,7 +2533,7 @@
 
     if-eqz p3, :cond_0
 
-    .line 233
+    .line 230
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/viewmodel/CameraStatusModel;->_longExposureDuration:Landroidx/lifecycle/MutableLiveData;
 
     invoke-static {p1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
@@ -2227,7 +2549,7 @@
 .method public final onFallbackModeChanging(Z)V
     .locals 0
 
-    .line 345
+    .line 338
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/viewmodel/CameraStatusModel;->_isFallbackModeChanging:Landroidx/lifecycle/MutableLiveData;
 
     invoke-static {p1}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
@@ -2242,7 +2564,7 @@
 .method public final onFallbackStateChanged(ZZ)V
     .locals 1
 
-    .line 340
+    .line 333
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/viewmodel/CameraStatusModel;->_fallbackable:Landroidx/lifecycle/MutableLiveData;
 
     invoke-static {p1}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
@@ -2251,7 +2573,7 @@
 
     invoke-virtual {v0, p1}, Landroidx/lifecycle/MutableLiveData;->setValue(Ljava/lang/Object;)V
 
-    .line 341
+    .line 334
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/viewmodel/CameraStatusModel;->_fallbackEnabled:Landroidx/lifecycle/MutableLiveData;
 
     invoke-static {p2}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
@@ -2266,7 +2588,7 @@
 .method public final onFlashStateChanged(Z)V
     .locals 0
 
-    .line 302
+    .line 299
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/viewmodel/CameraStatusModel;->_isFlashRequired:Landroidx/lifecycle/MutableLiveData;
 
     invoke-static {p1}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
@@ -2281,7 +2603,7 @@
 .method public final onLensChange(Z)V
     .locals 0
 
-    .line 359
+    .line 352
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/viewmodel/CameraStatusModel;->_isLensChanging:Landroidx/lifecycle/MutableLiveData;
 
     invoke-static {p1}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
@@ -2296,7 +2618,7 @@
 .method public final onModeChange(Z)V
     .locals 2
 
-    .line 349
+    .line 342
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/viewmodel/CameraStatusModel;->_isModeChanging:Landroidx/lifecycle/MutableLiveData;
 
     invoke-virtual {v0}, Landroidx/lifecycle/MutableLiveData;->getValue()Ljava/lang/Object;
@@ -2313,7 +2635,7 @@
 
     if-nez v0, :cond_0
 
-    .line 350
+    .line 343
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/viewmodel/CameraStatusModel;->_isModeChanging:Landroidx/lifecycle/MutableLiveData;
 
     invoke-static {p1}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
@@ -2325,7 +2647,7 @@
     :cond_0
     if-eqz p1, :cond_1
 
-    .line 354
+    .line 347
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/view/viewmodel/CameraStatusModel;->resetFlashModeState()V
 
     :cond_1
@@ -2335,7 +2657,7 @@
 .method public final onObjectTrackingStateChanged(Z)V
     .locals 0
 
-    .line 294
+    .line 291
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/viewmodel/CameraStatusModel;->_isObjectTracking:Landroidx/lifecycle/MutableLiveData;
 
     invoke-static {p1}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
@@ -2350,7 +2672,7 @@
 .method public final onPause()V
     .locals 4
 
-    .line 318
+    .line 311
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/viewmodel/CameraStatusModel;->_isModeChanging:Landroidx/lifecycle/MutableLiveData;
 
     const/4 v1, 0x0
@@ -2361,12 +2683,12 @@
 
     invoke-virtual {v0, v1}, Landroidx/lifecycle/MutableLiveData;->setValue(Ljava/lang/Object;)V
 
-    .line 319
+    .line 312
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/viewmodel/CameraStatusModel;->_isLensChanging:Landroidx/lifecycle/MutableLiveData;
 
     invoke-virtual {v0, v1}, Landroidx/lifecycle/MutableLiveData;->setValue(Ljava/lang/Object;)V
 
-    .line 320
+    .line 313
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/viewmodel/CameraStatusModel;->_isDialPickerScrolling:Landroidx/lifecycle/MutableLiveData;
 
     new-instance v2, Lkotlin/Pair;
@@ -2377,12 +2699,12 @@
 
     invoke-virtual {v0, v2}, Landroidx/lifecycle/MutableLiveData;->setValue(Ljava/lang/Object;)V
 
-    .line 321
+    .line 314
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/viewmodel/CameraStatusModel;->_isFallbackModeChanging:Landroidx/lifecycle/MutableLiveData;
 
     invoke-virtual {v0, v1}, Landroidx/lifecycle/MutableLiveData;->setValue(Ljava/lang/Object;)V
 
-    .line 322
+    .line 315
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/view/viewmodel/CameraStatusModel;->resetFlashModeState()V
 
     return-void
@@ -2391,7 +2713,7 @@
 .method public final onPrepareBurstDone()V
     .locals 1
 
-    .line 242
+    .line 239
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/viewmodel/CameraStatusModel;->_onPrepareBurstDoneEvent:Ljp/co/sony/mc/camera/view/viewmodel/LiveEvent;
 
     sget-object v0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
@@ -2404,7 +2726,7 @@
 .method public final onQuickRecordLocked(Z)V
     .locals 0
 
-    .line 314
+    .line 307
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/viewmodel/CameraStatusModel;->_isQuickRecordLocked:Landroidx/lifecycle/MutableLiveData;
 
     invoke-static {p1}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
@@ -2419,7 +2741,7 @@
 .method public final onRecordFinished(I)V
     .locals 0
 
-    .line 280
+    .line 277
     invoke-direct {p0, p1}, Ljp/co/sony/mc/camera/view/viewmodel/CameraStatusModel;->handleSnapshotRequested(I)V
 
     return-void
@@ -2428,7 +2750,7 @@
 .method public final onRecordingProgress(I)V
     .locals 2
 
-    .line 267
+    .line 264
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/viewmodel/CameraStatusModel;->_latestCameraEvent:Landroidx/lifecycle/MutableLiveData;
 
     invoke-virtual {v0}, Landroidx/lifecycle/MutableLiveData;->getValue()Ljava/lang/Object;
@@ -2467,7 +2789,7 @@
 
     goto :goto_1
 
-    .line 271
+    .line 268
     :cond_1
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/viewmodel/CameraStatusModel;->_recordingDuration:Landroidx/lifecycle/MutableLiveData;
 
@@ -2481,25 +2803,10 @@
     return-void
 .end method
 
-.method public final onSelectedFaceChanged(Z)V
-    .locals 0
-
-    .line 310
-    iget-object p0, p0, Ljp/co/sony/mc/camera/view/viewmodel/CameraStatusModel;->_isSelectedFaceChanged:Landroidx/lifecycle/MutableLiveData;
-
-    invoke-static {p1}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
-
-    move-result-object p1
-
-    invoke-virtual {p0, p1}, Landroidx/lifecycle/MutableLiveData;->setValue(Ljava/lang/Object;)V
-
-    return-void
-.end method
-
 .method public final onShutterAction()V
     .locals 2
 
-    .line 218
+    .line 215
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/viewmodel/CameraStatusModel;->cameraSettingsModel:Ljp/co/sony/mc/camera/view/viewmodel/CameraSettingsModel;
 
     invoke-virtual {v0}, Ljp/co/sony/mc/camera/view/viewmodel/CameraSettingsModel;->isHighResolution()Landroidx/lifecycle/LiveData;
@@ -2522,7 +2829,7 @@
 
     if-nez v0, :cond_0
 
-    .line 219
+    .line 216
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/viewmodel/CameraStatusModel;->_longExposureDuration:Landroidx/lifecycle/MutableLiveData;
 
     const/4 v0, 0x0
@@ -2540,7 +2847,7 @@
 .method public final onSnapshotRequestDone(I)V
     .locals 0
 
-    .line 224
+    .line 221
     invoke-direct {p0, p1}, Ljp/co/sony/mc/camera/view/viewmodel/CameraStatusModel;->handleSnapshotRequested(I)V
 
     return-void
@@ -2549,7 +2856,7 @@
 .method public final onStoreError(I)V
     .locals 0
 
-    .line 290
+    .line 287
     invoke-direct {p0, p1}, Ljp/co/sony/mc/camera/view/viewmodel/CameraStatusModel;->handleStoreFinished(I)V
 
     return-void
@@ -2562,14 +2869,14 @@
 
     invoke-static {p2, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 284
+    .line 281
     invoke-virtual {p2}, Ljp/co/sony/mc/camera/mediasaving/StoreDataResult;->isFinalInSavingGroup()Z
 
     move-result p2
 
     if-eqz p2, :cond_0
 
-    .line 285
+    .line 282
     invoke-direct {p0, p1}, Ljp/co/sony/mc/camera/view/viewmodel/CameraStatusModel;->handleStoreFinished(I)V
 
     :cond_0
@@ -2579,7 +2886,7 @@
 .method public final onVideoSnapshotRequested(I)V
     .locals 0
 
-    .line 263
+    .line 260
     invoke-direct {p0, p1}, Ljp/co/sony/mc/camera/view/viewmodel/CameraStatusModel;->handleSnapshotRequested(I)V
 
     return-void
@@ -2588,7 +2895,7 @@
 .method public final resetFlashModeState()V
     .locals 1
 
-    .line 306
+    .line 303
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/viewmodel/CameraStatusModel;->_isFlashRequired:Landroidx/lifecycle/MutableLiveData;
 
     const/4 v0, 0x0
@@ -2609,7 +2916,7 @@
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 121
+    .line 118
     iput-object p1, p0, Ljp/co/sony/mc/camera/view/viewmodel/CameraStatusModel;->recordingMicType:Ljp/co/sony/mc/camera/view/viewmodel/CameraStatusModel$RecordingMicType;
 
     return-void

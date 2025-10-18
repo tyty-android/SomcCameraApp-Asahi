@@ -36,18 +36,22 @@
 
 # virtual methods
 .method public onClick(Landroid/content/DialogInterface;I)V
-    .locals 0
+    .locals 1
 
     .line 684
     sget-boolean p1, Ljp/co/sony/mc/camera/util/CamLog;->VERBOSE:Z
 
     if-eqz p1, :cond_0
 
-    const-string/jumbo p1, "showPermissionDialog() don\'t show global settings dialog"
+    const/4 p1, 0x1
 
-    filled-new-array {p1}, [Ljava/lang/String;
+    new-array p1, p1, [Ljava/lang/String;
 
-    move-result-object p1
+    const/4 p2, 0x0
+
+    const-string/jumbo v0, "showPermissionDialog() don\'t show global settings dialog"
+
+    aput-object v0, p1, p2
 
     invoke-static {p1}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 

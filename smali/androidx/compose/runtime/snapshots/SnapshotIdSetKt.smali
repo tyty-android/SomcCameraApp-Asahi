@@ -43,10 +43,6 @@
 .method public static final binarySearch([II)I
     .locals 4
 
-    const-string v0, "<this>"
-
-    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
     .line 383
     array-length v0, p0
 

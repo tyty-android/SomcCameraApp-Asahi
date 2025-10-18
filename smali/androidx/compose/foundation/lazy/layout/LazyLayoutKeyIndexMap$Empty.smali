@@ -63,7 +63,7 @@
 .method private constructor <init>()V
     .locals 0
 
-    .line 41
+    .line 44
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -74,10 +74,6 @@
 .method public getIndex(Ljava/lang/Object;)I
     .locals 0
 
-    const-string p0, "key"
-
-    invoke-static {p1, p0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
     const/4 p0, -0x1
 
     return p0
@@ -86,7 +82,7 @@
 .method public bridge synthetic getKey(I)Ljava/lang/Object;
     .locals 0
 
-    .line 41
+    .line 44
     invoke-virtual {p0, p1}, Landroidx/compose/foundation/lazy/layout/LazyLayoutKeyIndexMap$Empty;->getKey(I)Ljava/lang/Void;
 
     move-result-object p0

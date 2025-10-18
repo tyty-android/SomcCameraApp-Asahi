@@ -38,7 +38,7 @@
 .method constructor <init>()V
     .locals 0
 
-    .line 28
+    .line 29
     invoke-direct {p0}, Landroidx/compose/ui/Modifier$Node;-><init>()V
 
     return-void
@@ -49,7 +49,7 @@
 .method public toString()Ljava/lang/String;
     .locals 0
 
-    .line 29
+    .line 30
     const-string p0, "<Head>"
 
     return-object p0

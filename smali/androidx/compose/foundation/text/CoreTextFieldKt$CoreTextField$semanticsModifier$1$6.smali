@@ -75,7 +75,7 @@
 .method public final invoke()Ljava/lang/Boolean;
     .locals 3
 
-    .line 516
+    .line 559
     iget-object v0, p0, Landroidx/compose/foundation/text/CoreTextFieldKt$CoreTextField$semanticsModifier$1$6;->$state:Landroidx/compose/foundation/text/TextFieldState;
 
     iget-object v1, p0, Landroidx/compose/foundation/text/CoreTextFieldKt$CoreTextField$semanticsModifier$1$6;->$focusRequester:Landroidx/compose/ui/focus/FocusRequester;
@@ -88,7 +88,7 @@
 
     invoke-static {v0, v1, p0}, Landroidx/compose/foundation/text/CoreTextFieldKt;->access$tapToFocus(Landroidx/compose/foundation/text/TextFieldState;Landroidx/compose/ui/focus/FocusRequester;Z)V
 
-    .line 517
+    .line 560
     invoke-static {v2}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
     move-result-object p0
@@ -99,7 +99,7 @@
 .method public bridge synthetic invoke()Ljava/lang/Object;
     .locals 0
 
-    .line 513
+    .line 556
     invoke-virtual {p0}, Landroidx/compose/foundation/text/CoreTextFieldKt$CoreTextField$semanticsModifier$1$6;->invoke()Ljava/lang/Boolean;
 
     move-result-object p0

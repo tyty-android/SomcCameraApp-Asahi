@@ -1590,7 +1590,9 @@
     :cond_0
     const/4 v10, 0x2
 
-    const/4 v11, 0x0
+    const/4 v11, 0x1
+
+    const/4 v12, 0x0
 
     .line 266
     :try_start_0
@@ -1601,11 +1603,11 @@
     .catch Ljava/lang/IllegalArgumentException; {:try_start_0 .. :try_end_0} :catch_4
 
     .line 271
-    const-string v12, ":"
+    const-string v13, ":"
 
-    invoke-virtual {v0, v12}, Ljava/lang/String;->split(Ljava/lang/String;)[Ljava/lang/String;
+    invoke-virtual {v0, v13}, Ljava/lang/String;->split(Ljava/lang/String;)[Ljava/lang/String;
 
-    move-result-object v13
+    move-result-object v14
 
     .line 274
     :try_start_1
@@ -1615,7 +1617,7 @@
 
     add-int/lit16 v1, v0, 0x230
 
-    aget-object v0, v13, v11
+    aget-object v0, v14, v12
 
     .line 277
     invoke-static {v0}, Ljava/lang/Long;->parseLong(Ljava/lang/String;)J
@@ -1636,9 +1638,7 @@
 
     add-int/lit16 v1, v0, 0x238
 
-    const/4 v14, 0x1
-
-    aget-object v0, v13, v14
+    aget-object v0, v14, v11
 
     .line 282
     invoke-static {v0}, Ljava/lang/Long;->parseLong(Ljava/lang/String;)J
@@ -1659,16 +1659,16 @@
 
     add-int/lit16 v1, v0, 0x240
 
-    aget-object v0, v13, v10
+    aget-object v0, v14, v10
 
     .line 286
     invoke-static {v0}, Ljava/lang/Float;->parseFloat(Ljava/lang/String;)F
 
     move-result v0
 
-    const/high16 v13, 0x447a0000    # 1000.0f
+    const/high16 v14, 0x447a0000    # 1000.0f
 
-    mul-float/2addr v0, v13
+    mul-float/2addr v0, v14
 
     float-to-long v2, v0
 
@@ -1713,9 +1713,9 @@
     .catch Ljava/lang/IllegalArgumentException; {:try_start_2 .. :try_end_2} :catch_2
 
     .line 310
-    invoke-virtual {v0, v12}, Ljava/lang/String;->split(Ljava/lang/String;)[Ljava/lang/String;
+    invoke-virtual {v0, v13}, Ljava/lang/String;->split(Ljava/lang/String;)[Ljava/lang/String;
 
-    move-result-object v12
+    move-result-object v13
 
     .line 313
     :try_start_3
@@ -1725,7 +1725,7 @@
 
     add-int/lit16 v1, v0, 0x248
 
-    aget-object v0, v12, v11
+    aget-object v0, v13, v12
 
     .line 316
     invoke-static {v0}, Ljava/lang/Long;->parseLong(Ljava/lang/String;)J
@@ -1746,7 +1746,7 @@
 
     add-int/lit16 v1, v0, 0x250
 
-    aget-object v0, v12, v14
+    aget-object v0, v13, v11
 
     .line 321
     invoke-static {v0}, Ljava/lang/Long;->parseLong(Ljava/lang/String;)J
@@ -1767,14 +1767,14 @@
 
     add-int/lit16 v1, v0, 0x258
 
-    aget-object v0, v12, v10
+    aget-object v0, v13, v10
 
     .line 326
     invoke-static {v0}, Ljava/lang/Float;->parseFloat(Ljava/lang/String;)F
 
     move-result v0
 
-    mul-float/2addr v0, v13
+    mul-float/2addr v0, v14
 
     float-to-long v2, v0
 
@@ -1803,7 +1803,7 @@
 
     add-int/lit16 v2, v2, 0x1e0
 
-    invoke-static {p0, v2, v14}, Ljp/co/sony/mc/camera/mediasaving/ExifFactory;->writeByteValue([BII)V
+    invoke-static {p0, v2, v11}, Ljp/co/sony/mc/camera/mediasaving/ExifFactory;->writeByteValue([BII)V
 
     .line 337
     :cond_2
@@ -1878,7 +1878,7 @@
 
     move-result v0
 
-    add-int/2addr v0, v14
+    add-int/2addr v0, v11
 
     int-to-long v2, v0
 
@@ -1919,44 +1919,38 @@
 
     const-string v1, "%04d:%02d:%02d"
 
-    const/4 v2, 0x3
+    invoke-virtual {v7, v11}, Ljava/util/Calendar;->get(I)I
 
-    new-array v2, v2, [Ljava/lang/Object;
+    move-result v2
 
-    invoke-virtual {v7, v14}, Ljava/util/Calendar;->get(I)I
+    invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
-    move-result v3
-
-    invoke-static {v3}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
-
-    move-result-object v3
-
-    aput-object v3, v2, v11
+    move-result-object v2
 
     .line 361
     invoke-virtual {v7, v10}, Ljava/util/Calendar;->get(I)I
 
     move-result v3
 
-    add-int/2addr v3, v14
+    add-int/2addr v3, v11
 
     invoke-static {v3}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object v3
 
-    aput-object v3, v2, v14
+    const/4 v4, 0x5
 
-    const/4 v3, 0x5
+    invoke-virtual {v7, v4}, Ljava/util/Calendar;->get(I)I
 
-    invoke-virtual {v7, v3}, Ljava/util/Calendar;->get(I)I
+    move-result v4
 
-    move-result v3
+    invoke-static {v4}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
-    invoke-static {v3}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+    move-result-object v4
 
-    move-result-object v3
+    filled-new-array {v2, v3, v4}, [Ljava/lang/Object;
 
-    aput-object v3, v2, v10
+    move-result-object v2
 
     .line 360
     invoke-static {v0, v1, v2}, Ljava/lang/String;->format(Ljava/util/Locale;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
@@ -1974,7 +1968,7 @@
 
     invoke-static {p0, v1, v0}, Ljp/co/sony/mc/camera/mediasaving/ExifFactory;->writeASCIIValue([BILjava/lang/String;)I
 
-    return v14
+    return v11
 
     .line 363
     :catch_0
@@ -1982,16 +1976,16 @@
 
     if-eqz v0, :cond_3
 
-    const-string v0, "failed to get gpsDateStamp"
+    new-array v0, v11, [Ljava/lang/String;
 
-    filled-new-array {v0}, [Ljava/lang/String;
+    const-string v1, "failed to get gpsDateStamp"
 
-    move-result-object v0
+    aput-object v1, v0, v12
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
     :cond_3
-    return v11
+    return v12
 
     .line 329
     :catch_1
@@ -1999,16 +1993,16 @@
 
     if-eqz v0, :cond_4
 
-    const-string v0, "failed to get longitude value"
+    new-array v0, v11, [Ljava/lang/String;
 
-    filled-new-array {v0}, [Ljava/lang/String;
+    const-string v1, "failed to get longitude value"
 
-    move-result-object v0
+    aput-object v1, v0, v12
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
     :cond_4
-    return v11
+    return v12
 
     .line 306
     :catch_2
@@ -2016,16 +2010,16 @@
 
     if-eqz v0, :cond_5
 
-    const-string v0, "failed to change longitude format"
+    new-array v0, v11, [Ljava/lang/String;
 
-    filled-new-array {v0}, [Ljava/lang/String;
+    const-string v1, "failed to change longitude format"
 
-    move-result-object v0
+    aput-object v1, v0, v12
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
     :cond_5
-    return v11
+    return v12
 
     .line 289
     :catch_3
@@ -2033,16 +2027,16 @@
 
     if-eqz v0, :cond_6
 
-    const-string v0, "failed to get latitude value"
+    new-array v0, v11, [Ljava/lang/String;
 
-    filled-new-array {v0}, [Ljava/lang/String;
+    const-string v1, "failed to get latitude value"
 
-    move-result-object v0
+    aput-object v1, v0, v12
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
     :cond_6
-    return v11
+    return v12
 
     .line 268
     :catch_4
@@ -2050,16 +2044,16 @@
 
     if-eqz v0, :cond_7
 
-    const-string v0, "failed to change latitude format"
+    new-array v0, v11, [Ljava/lang/String;
 
-    filled-new-array {v0}, [Ljava/lang/String;
+    const-string v1, "failed to change latitude format"
 
-    move-result-object v0
+    aput-object v1, v0, v12
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
     :cond_7
-    return v11
+    return v12
 .end method
 
 .method private static writeLongValue([BIJ)V

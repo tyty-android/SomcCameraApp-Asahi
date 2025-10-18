@@ -21,7 +21,7 @@
 .method constructor <init>()V
     .locals 0
 
-    .line 604
+    .line 607
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -42,10 +42,10 @@
         }
     .end annotation
 
-    .line 608
+    .line 611
     check-cast p1, Ljp/co/sony/mc/camera/setting/CommonSettings;
 
-    .line 609
+    .line 612
     invoke-static {p1}, Ljp/co/sony/mc/camera/setting/CommonSettings;->-$$Nest$mgetYoutubeStreamUrl(Ljp/co/sony/mc/camera/setting/CommonSettings;)Ljava/lang/String;
 
     move-result-object p0

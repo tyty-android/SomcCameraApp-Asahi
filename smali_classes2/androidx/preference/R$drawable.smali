@@ -14,9 +14,9 @@
 
 
 # static fields
-.field public static final ic_arrow_down_24dp:I = 0x7f08037b
+.field public static final ic_arrow_down_24dp:I = 0x7f080396
 
-.field public static final preference_list_divider_material:I = 0x7f080437
+.field public static final preference_list_divider_material:I = 0x7f08040f
 
 
 # direct methods

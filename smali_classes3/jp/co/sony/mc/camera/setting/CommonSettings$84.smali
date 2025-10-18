@@ -21,7 +21,7 @@
 .method constructor <init>()V
     .locals 0
 
-    .line 978
+    .line 981
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -46,13 +46,13 @@
         }
     .end annotation
 
-    .line 982
+    .line 985
     check-cast p1, Ljp/co/sony/mc/camera/setting/CommonSettings;
 
-    .line 983
-    check-cast p3, Ljp/co/sony/mc/camera/configuration/parameters/EnduranceMode;
+    .line 986
+    check-cast p3, Ljp/co/sony/mc/camera/configuration/parameters/HapticFeedback;
 
-    invoke-static {p1, p3}, Ljp/co/sony/mc/camera/setting/CommonSettings;->-$$Nest$msetEnduranceMode(Ljp/co/sony/mc/camera/setting/CommonSettings;Ljp/co/sony/mc/camera/configuration/parameters/EnduranceMode;)Z
+    invoke-static {p1, p3}, Ljp/co/sony/mc/camera/setting/CommonSettings;->-$$Nest$msetHapticFeedback(Ljp/co/sony/mc/camera/setting/CommonSettings;Ljp/co/sony/mc/camera/configuration/parameters/HapticFeedback;)Z
 
     move-result p0
 

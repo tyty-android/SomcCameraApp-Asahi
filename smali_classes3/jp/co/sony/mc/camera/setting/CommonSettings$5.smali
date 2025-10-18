@@ -21,7 +21,7 @@
 .method constructor <init>()V
     .locals 0
 
-    .line 361
+    .line 364
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -42,10 +42,10 @@
         }
     .end annotation
 
-    .line 365
+    .line 368
     check-cast p1, Ljp/co/sony/mc/camera/setting/CommonSettings;
 
-    .line 366
+    .line 369
     invoke-static {p1}, Ljp/co/sony/mc/camera/setting/CommonSettings;->-$$Nest$mgetLastCapturingMode(Ljp/co/sony/mc/camera/setting/CommonSettings;)Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
     move-result-object p0

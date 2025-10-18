@@ -37,16 +37,24 @@
 
 # direct methods
 .method static constructor <clinit>()V
-    .locals 2
+    .locals 3
+
+    const/4 v0, 0x2
 
     .line 30
-    const-string v0, "android.permission.ACCESS_FINE_LOCATION"
+    new-array v0, v0, [Ljava/lang/String;
 
-    const-string v1, "android.permission.ACCESS_COARSE_LOCATION"
+    const/4 v1, 0x0
 
-    filled-new-array {v0, v1}, [Ljava/lang/String;
+    const-string v2, "android.permission.ACCESS_FINE_LOCATION"
 
-    move-result-object v0
+    aput-object v2, v0, v1
+
+    const/4 v1, 0x1
+
+    const-string v2, "android.permission.ACCESS_COARSE_LOCATION"
+
+    aput-object v2, v0, v1
 
     sput-object v0, Ljp/co/sony/mc/camera/mediasaving/location/GeotagManager;->REQUEST_LOCATION_PERMISSION:[Ljava/lang/String;
 
@@ -87,30 +95,34 @@
 .end method
 
 .method private checkLocationService(Ljp/co/sony/mc/camera/configuration/parameters/Geotag;Landroid/content/Context;)Z
-    .locals 2
+    .locals 5
 
     .line 358
     sget-boolean v0, Ljp/co/sony/mc/camera/util/CamLog;->VERBOSE:Z
 
+    const/4 v1, 0x0
+
+    const/4 v2, 0x1
+
     if-eqz v0, :cond_0
 
-    new-instance v0, Ljava/lang/StringBuilder;
+    new-array v0, v2, [Ljava/lang/String;
 
-    const-string v1, "checkLocationService(): "
+    new-instance v3, Ljava/lang/StringBuilder;
 
-    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+    const-string v4, "checkLocationService(): "
 
-    invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+    invoke-direct {v3, v4}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
-    move-result-object v0
+    invoke-virtual {v3, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    move-result-object v3
 
-    move-result-object v0
+    invoke-virtual {v3}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    filled-new-array {v0}, [Ljava/lang/String;
+    move-result-object v3
 
-    move-result-object v0
+    aput-object v3, v0, v1
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
@@ -141,15 +153,13 @@
 
     invoke-virtual {p0, p1, p2}, Ljp/co/sony/mc/camera/setting/CameraProSetting;->set(Ljp/co/sony/mc/camera/setting/SettingKey$Key;Ljava/lang/Object;)V
 
-    const/4 p0, 0x0
-
     goto :goto_0
 
     :cond_1
-    const/4 p0, 0x1
+    move v1, v2
 
     :goto_0
-    return p0
+    return v1
 .end method
 
 .method private isDisabled()Z
@@ -224,30 +234,34 @@
 .end method
 
 .method public static isGeoTagEnabled(Ljp/co/sony/mc/camera/configuration/parameters/Geotag;Landroid/content/Context;)Z
-    .locals 2
+    .locals 5
 
     .line 78
     sget-boolean v0, Ljp/co/sony/mc/camera/util/CamLog;->VERBOSE:Z
 
+    const/4 v1, 0x0
+
+    const/4 v2, 0x1
+
     if-eqz v0, :cond_0
 
-    new-instance v0, Ljava/lang/StringBuilder;
+    new-array v0, v2, [Ljava/lang/String;
 
-    const-string v1, "isGeoTagEnabled: "
+    new-instance v3, Ljava/lang/StringBuilder;
 
-    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+    const-string v4, "isGeoTagEnabled: "
 
-    invoke-virtual {v0, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+    invoke-direct {v3, v4}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
-    move-result-object v0
+    invoke-virtual {v3, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    move-result-object v3
 
-    move-result-object v0
+    invoke-virtual {v3}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    filled-new-array {v0}, [Ljava/lang/String;
+    move-result-object v3
 
-    move-result-object v0
+    aput-object v3, v0, v1
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
@@ -284,14 +298,10 @@
     if-eqz p1, :cond_2
 
     :cond_1
-    const/4 p0, 0x1
-
-    return p0
+    return v2
 
     :cond_2
-    const/4 p0, 0x0
-
-    return p0
+    return v1
 .end method
 
 .method private isGpsLocationAllowed()Z
@@ -538,30 +548,34 @@
 .end method
 
 .method public canSetGeotag(Ljp/co/sony/mc/camera/configuration/parameters/Geotag;Landroid/app/Activity;I)Z
-    .locals 2
+    .locals 4
 
     .line 418
     sget-boolean v0, Ljp/co/sony/mc/camera/util/CamLog;->VERBOSE:Z
 
+    const/4 v1, 0x1
+
     if-eqz v0, :cond_0
 
-    new-instance v0, Ljava/lang/StringBuilder;
+    new-array v0, v1, [Ljava/lang/String;
 
-    const-string/jumbo v1, "setGeotag(): "
+    new-instance v2, Ljava/lang/StringBuilder;
 
-    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+    const-string v3, "setGeotag(): "
 
-    invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+    invoke-direct {v2, v3}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
-    move-result-object v0
+    invoke-virtual {v2, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    move-result-object v2
 
-    move-result-object v0
+    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    filled-new-array {v0}, [Ljava/lang/String;
+    move-result-object v2
 
-    move-result-object v0
+    const/4 v3, 0x0
+
+    aput-object v2, v0, v3
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
@@ -574,17 +588,15 @@
     const/16 v0, 0xd
 
     .line 423
-    sget-object v1, Ljp/co/sony/mc/camera/mediasaving/location/GeotagManager;->REQUEST_LOCATION_PERMISSION:[Ljava/lang/String;
+    sget-object v2, Ljp/co/sony/mc/camera/mediasaving/location/GeotagManager;->REQUEST_LOCATION_PERMISSION:[Ljava/lang/String;
 
-    invoke-static {p2, p3, v0, v1}, Ljp/co/sony/mc/camera/util/PermissionsUtil;->checkAndRequestSelfPermissions(Landroid/app/Activity;II[Ljava/lang/String;)Z
+    invoke-static {p2, p3, v0, v2}, Ljp/co/sony/mc/camera/util/PermissionsUtil;->checkAndRequestSelfPermissions(Landroid/app/Activity;II[Ljava/lang/String;)Z
 
     move-result p3
 
     if-eqz p3, :cond_1
 
-    const/4 p0, 0x1
-
-    return p0
+    return v1
 
     .line 431
     :cond_1
@@ -646,18 +658,22 @@
 .end method
 
 .method public initGeotag(Landroid/app/Activity;Z)Z
-    .locals 4
+    .locals 7
 
     .line 384
     sget-boolean v0, Ljp/co/sony/mc/camera/util/CamLog;->VERBOSE:Z
 
+    const/4 v1, 0x0
+
+    const/4 v2, 0x1
+
     if-eqz v0, :cond_0
 
-    const-string/jumbo v0, "start initGeotag()"
+    new-array v0, v2, [Ljava/lang/String;
 
-    filled-new-array {v0}, [Ljava/lang/String;
+    const-string/jumbo v3, "start initGeotag()"
 
-    move-result-object v0
+    aput-object v3, v0, v1
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
@@ -667,77 +683,77 @@
 
     move-result-object v0
 
-    sget-object v1, Ljp/co/sony/mc/camera/setting/CommonSettings;->GEOTAG:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
+    sget-object v3, Ljp/co/sony/mc/camera/setting/CommonSettings;->GEOTAG:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
 
-    invoke-virtual {v0, v1}, Ljp/co/sony/mc/camera/setting/CameraProSetting;->get(Ljp/co/sony/mc/camera/setting/SettingKey$Key;)Ljava/lang/Object;
+    invoke-virtual {v0, v3}, Ljp/co/sony/mc/camera/setting/CameraProSetting;->get(Ljp/co/sony/mc/camera/setting/SettingKey$Key;)Ljava/lang/Object;
 
     move-result-object v0
 
     check-cast v0, Ljp/co/sony/mc/camera/configuration/parameters/Geotag;
 
     .line 388
-    sget-boolean v1, Ljp/co/sony/mc/camera/util/CamLog;->VERBOSE:Z
+    sget-boolean v3, Ljp/co/sony/mc/camera/util/CamLog;->VERBOSE:Z
 
-    if-eqz v1, :cond_1
+    if-eqz v3, :cond_1
 
-    new-instance v1, Ljava/lang/StringBuilder;
+    new-array v3, v2, [Ljava/lang/String;
 
-    const-string v2, "Geotag="
+    new-instance v4, Ljava/lang/StringBuilder;
 
-    invoke-direct {v1, v2}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+    const-string v5, "Geotag="
 
-    invoke-virtual {v1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+    invoke-direct {v4, v5}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
-    move-result-object v1
+    invoke-virtual {v4, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    move-result-object v4
 
-    move-result-object v1
+    invoke-virtual {v4}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    filled-new-array {v1}, [Ljava/lang/String;
+    move-result-object v4
 
-    move-result-object v1
+    aput-object v4, v3, v1
 
-    invoke-static {v1}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
+    invoke-static {v3}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
     .line 391
     :cond_1
-    sget-object v1, Ljp/co/sony/mc/camera/mediasaving/location/GeotagManager;->REQUEST_LOCATION_PERMISSION:[Ljava/lang/String;
+    sget-object v3, Ljp/co/sony/mc/camera/mediasaving/location/GeotagManager;->REQUEST_LOCATION_PERMISSION:[Ljava/lang/String;
 
     .line 392
-    invoke-static {p1, v1}, Ljp/co/sony/mc/camera/util/PermissionsUtil;->arePermissionsGranted(Landroid/content/Context;[Ljava/lang/String;)Z
+    invoke-static {p1, v3}, Ljp/co/sony/mc/camera/util/PermissionsUtil;->arePermissionsGranted(Landroid/content/Context;[Ljava/lang/String;)Z
 
-    move-result v1
+    move-result v3
 
     .line 393
-    sget-boolean v2, Ljp/co/sony/mc/camera/util/CamLog;->VERBOSE:Z
+    sget-boolean v4, Ljp/co/sony/mc/camera/util/CamLog;->VERBOSE:Z
 
-    if-eqz v2, :cond_2
+    if-eqz v4, :cond_2
 
-    new-instance v2, Ljava/lang/StringBuilder;
+    new-array v4, v2, [Ljava/lang/String;
 
-    const-string v3, "location permission="
+    new-instance v5, Ljava/lang/StringBuilder;
 
-    invoke-direct {v2, v3}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+    const-string v6, "location permission="
 
-    invoke-virtual {v2, v1}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
+    invoke-direct {v5, v6}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
-    move-result-object v2
+    invoke-virtual {v5, v3}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    move-result-object v5
 
-    move-result-object v2
+    invoke-virtual {v5}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    filled-new-array {v2}, [Ljava/lang/String;
+    move-result-object v5
 
-    move-result-object v2
+    aput-object v5, v4, v1
 
-    invoke-static {v2}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
+    invoke-static {v4}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
     :cond_2
     if-eqz p2, :cond_3
 
-    if-eqz v1, :cond_3
+    if-eqz v3, :cond_3
 
     .line 396
     invoke-direct {p0, v0, p1}, Ljp/co/sony/mc/camera/mediasaving/location/GeotagManager;->checkLocationService(Ljp/co/sony/mc/camera/configuration/parameters/Geotag;Landroid/content/Context;)Z
@@ -756,40 +772,35 @@
 
     if-eqz p0, :cond_4
 
-    new-instance p0, Ljava/lang/StringBuilder;
+    new-array p0, v2, [Ljava/lang/String;
 
-    const-string p1, "end initGeotag():"
+    new-instance p1, Ljava/lang/StringBuilder;
 
-    invoke-direct {p0, p1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+    const-string v4, "end initGeotag():"
 
-    invoke-virtual {p0, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+    invoke-direct {p1, v4}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
-    move-result-object p0
+    invoke-virtual {p1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {p0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    move-result-object p1
 
-    move-result-object p0
+    invoke-virtual {p1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    filled-new-array {p0}, [Ljava/lang/String;
+    move-result-object p1
 
-    move-result-object p0
+    aput-object p1, p0, v1
 
     invoke-static {p0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
     :cond_4
-    if-eqz v1, :cond_5
+    if-eqz v3, :cond_5
 
     if-eqz p2, :cond_5
 
-    const/4 p0, 0x1
-
-    goto :goto_1
+    move v1, v2
 
     :cond_5
-    const/4 p0, 0x0
-
-    :goto_1
-    return p0
+    return v1
 .end method
 
 .method public isGeoTagPermissionGranted()Z
@@ -802,10 +813,14 @@
 .end method
 
 .method public isGpsAcquired()Z
-    .locals 2
+    .locals 4
 
     .line 296
     iget-object p0, p0, Ljp/co/sony/mc/camera/mediasaving/location/GeotagManager;->mLocationListenerGps:Ljp/co/sony/mc/camera/mediasaving/location/GeotagLocationListener;
+
+    const/4 v0, 0x1
+
+    const/4 v1, 0x0
 
     if-eqz p0, :cond_0
 
@@ -816,36 +831,36 @@
 
     if-eqz p0, :cond_0
 
-    const/4 p0, 0x1
+    move p0, v0
 
     goto :goto_0
 
     :cond_0
-    const/4 p0, 0x0
+    move p0, v1
 
     .line 301
     :goto_0
-    sget-boolean v0, Ljp/co/sony/mc/camera/util/CamLog;->VERBOSE:Z
+    sget-boolean v2, Ljp/co/sony/mc/camera/util/CamLog;->VERBOSE:Z
 
-    if-eqz v0, :cond_1
+    if-eqz v2, :cond_1
 
-    new-instance v0, Ljava/lang/StringBuilder;
+    new-array v0, v0, [Ljava/lang/String;
 
-    const-string v1, "checkLcsAvailable(Gps): "
+    new-instance v2, Ljava/lang/StringBuilder;
 
-    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+    const-string v3, "checkLcsAvailable(Gps): "
 
-    invoke-virtual {v0, p0}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
+    invoke-direct {v2, v3}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
-    move-result-object v0
+    invoke-virtual {v2, p0}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    move-result-object v2
 
-    move-result-object v0
+    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    filled-new-array {v0}, [Ljava/lang/String;
+    move-result-object v2
 
-    move-result-object v0
+    aput-object v2, v0, v1
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
@@ -854,10 +869,14 @@
 .end method
 
 .method public isNetworkAcquired()Z
-    .locals 2
+    .locals 4
 
     .line 311
     iget-object p0, p0, Ljp/co/sony/mc/camera/mediasaving/location/GeotagManager;->mLocationListenerNetwork:Ljp/co/sony/mc/camera/mediasaving/location/GeotagLocationListener;
+
+    const/4 v0, 0x1
+
+    const/4 v1, 0x0
 
     if-eqz p0, :cond_0
 
@@ -868,36 +887,36 @@
 
     if-eqz p0, :cond_0
 
-    const/4 p0, 0x1
+    move p0, v0
 
     goto :goto_0
 
     :cond_0
-    const/4 p0, 0x0
+    move p0, v1
 
     .line 316
     :goto_0
-    sget-boolean v0, Ljp/co/sony/mc/camera/util/CamLog;->VERBOSE:Z
+    sget-boolean v2, Ljp/co/sony/mc/camera/util/CamLog;->VERBOSE:Z
 
-    if-eqz v0, :cond_1
+    if-eqz v2, :cond_1
 
-    new-instance v0, Ljava/lang/StringBuilder;
+    new-array v0, v0, [Ljava/lang/String;
 
-    const-string v1, "checkLcsAvailable(NW): "
+    new-instance v2, Ljava/lang/StringBuilder;
 
-    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+    const-string v3, "checkLcsAvailable(NW): "
 
-    invoke-virtual {v0, p0}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
+    invoke-direct {v2, v3}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
-    move-result-object v0
+    invoke-virtual {v2, p0}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    move-result-object v2
 
-    move-result-object v0
+    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    filled-new-array {v0}, [Ljava/lang/String;
+    move-result-object v2
 
-    move-result-object v0
+    aput-object v2, v0, v1
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
@@ -906,7 +925,7 @@
 .end method
 
 .method public notifyStatus()V
-    .locals 4
+    .locals 7
 
     .line 260
     invoke-direct {p0}, Ljp/co/sony/mc/camera/mediasaving/location/GeotagManager;->isDisabled()Z
@@ -962,6 +981,10 @@
 
     move-result v1
 
+    const/4 v2, 0x0
+
+    const/4 v3, 0x1
+
     if-nez v0, :cond_6
 
     if-eqz v1, :cond_3
@@ -997,11 +1020,11 @@
 
     if-eqz v1, :cond_5
 
-    const-string v1, "notifyStatus: onLost."
+    new-array v1, v3, [Ljava/lang/String;
 
-    filled-new-array {v1}, [Ljava/lang/String;
+    const-string v4, "notifyStatus: onLost."
 
-    move-result-object v1
+    aput-object v4, v1, v2
 
     invoke-static {v1}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
@@ -1024,34 +1047,34 @@
     :goto_3
     invoke-interface {p0}, Ljava/util/Iterator;->hasNext()Z
 
-    move-result v2
+    move-result v4
 
-    if-eqz v2, :cond_9
+    if-eqz v4, :cond_9
 
     invoke-interface {p0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
-    move-result-object v2
+    move-result-object v4
 
-    check-cast v2, Ljp/co/sony/mc/camera/mediasaving/location/LocationAcquiredListener;
+    check-cast v4, Ljp/co/sony/mc/camera/mediasaving/location/LocationAcquiredListener;
 
-    if-eqz v2, :cond_7
+    if-eqz v4, :cond_7
 
     .line 276
-    sget-boolean v3, Ljp/co/sony/mc/camera/util/CamLog;->VERBOSE:Z
+    sget-boolean v5, Ljp/co/sony/mc/camera/util/CamLog;->VERBOSE:Z
 
-    if-eqz v3, :cond_8
+    if-eqz v5, :cond_8
 
-    const-string v3, "notifyStatus: onAcquired."
+    new-array v5, v3, [Ljava/lang/String;
 
-    filled-new-array {v3}, [Ljava/lang/String;
+    const-string v6, "notifyStatus: onAcquired."
 
-    move-result-object v3
+    aput-object v6, v5, v2
 
-    invoke-static {v3}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
+    invoke-static {v5}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
     .line 277
     :cond_8
-    invoke-interface {v2, v0, v1}, Ljp/co/sony/mc/camera/mediasaving/location/LocationAcquiredListener;->onAcquired(ZZ)V
+    invoke-interface {v4, v0, v1}, Ljp/co/sony/mc/camera/mediasaving/location/LocationAcquiredListener;->onAcquired(ZZ)V
 
     goto :goto_3
 

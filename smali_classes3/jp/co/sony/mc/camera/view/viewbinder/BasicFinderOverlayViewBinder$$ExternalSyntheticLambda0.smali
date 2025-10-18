@@ -42,7 +42,7 @@
 
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/viewbinder/BasicFinderOverlayViewBinder$$ExternalSyntheticLambda0;->f$2:Ljp/co/sony/mc/camera/view/viewbinder/BasicFinderOverlayViewBinder;
 
-    invoke-static {v0, v1, p0}, Ljp/co/sony/mc/camera/view/viewbinder/BasicFinderOverlayViewBinder;->$r8$lambda$eThvnt39dhF1YffpafAMjbF0S6o(ZLandroid/widget/SeekBar;Ljp/co/sony/mc/camera/view/viewbinder/BasicFinderOverlayViewBinder;)V
+    invoke-static {v0, v1, p0}, Ljp/co/sony/mc/camera/view/viewbinder/BasicFinderOverlayViewBinder;->$r8$lambda$5XxHdtvR89yS6hpcuO6J68H07NY(ZLandroid/widget/SeekBar;Ljp/co/sony/mc/camera/view/viewbinder/BasicFinderOverlayViewBinder;)V
 
     return-void
 .end method

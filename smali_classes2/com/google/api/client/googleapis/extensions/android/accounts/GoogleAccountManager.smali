@@ -15,10 +15,10 @@
 .method public constructor <init>(Landroid/accounts/AccountManager;)V
     .locals 0
 
-    .line 42
+    .line 40
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 43
+    .line 41
     invoke-static {p1}, Lcom/google/api/client/util/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p1
@@ -33,7 +33,7 @@
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 0
 
-    .line 50
+    .line 46
     invoke-static {p1}, Landroid/accounts/AccountManager;->get(Landroid/content/Context;)Landroid/accounts/AccountManager;
 
     move-result-object p1
@@ -50,7 +50,7 @@
 
     if-eqz p1, :cond_1
 
-    .line 79
+    .line 75
     invoke-virtual {p0}, Lcom/google/api/client/googleapis/extensions/android/accounts/GoogleAccountManager;->getAccounts()[Landroid/accounts/Account;
 
     move-result-object p0
@@ -64,7 +64,7 @@
 
     aget-object v2, p0, v1
 
-    .line 80
+    .line 76
     iget-object v3, v2, Landroid/accounts/Account;->name:Ljava/lang/String;
 
     invoke-virtual {p1, v3}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
@@ -89,7 +89,7 @@
 .method public getAccountManager()Landroid/accounts/AccountManager;
     .locals 0
 
-    .line 59
+    .line 55
     iget-object p0, p0, Lcom/google/api/client/googleapis/extensions/android/accounts/GoogleAccountManager;->manager:Landroid/accounts/AccountManager;
 
     return-object p0
@@ -98,7 +98,7 @@
 .method public getAccounts()[Landroid/accounts/Account;
     .locals 1
 
-    .line 68
+    .line 64
     iget-object p0, p0, Lcom/google/api/client/googleapis/extensions/android/accounts/GoogleAccountManager;->manager:Landroid/accounts/AccountManager;
 
     const-string v0, "com.google"
@@ -113,7 +113,7 @@
 .method public invalidateAuthToken(Ljava/lang/String;)V
     .locals 1
 
-    .line 95
+    .line 91
     iget-object p0, p0, Lcom/google/api/client/googleapis/extensions/android/accounts/GoogleAccountManager;->manager:Landroid/accounts/AccountManager;
 
     const-string v0, "com.google"

@@ -24,39 +24,32 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/databinding/FragmentProModeViewDialBindingImpl;->sViewsWithIds:Landroid/util/SparseIntArray;
 
-    const v1, 0x7f09036e
+    const v1, 0x7f090065
 
-    const/4 v2, 0x1
+    const/4 v2, 0x2
 
     .line 17
     invoke-virtual {v0, v1, v2}, Landroid/util/SparseIntArray;->put(II)V
 
-    const v1, 0x7f090069
+    const v1, 0x7f090066
 
-    const/4 v2, 0x2
+    const/4 v2, 0x3
 
     .line 18
     invoke-virtual {v0, v1, v2}, Landroid/util/SparseIntArray;->put(II)V
 
-    const v1, 0x7f09006a
+    const v1, 0x7f090067
 
-    const/4 v2, 0x3
+    const/4 v2, 0x4
 
     .line 19
     invoke-virtual {v0, v1, v2}, Landroid/util/SparseIntArray;->put(II)V
 
-    const v1, 0x7f09006b
-
-    const/4 v2, 0x4
-
-    .line 20
-    invoke-virtual {v0, v1, v2}, Landroid/util/SparseIntArray;->put(II)V
-
-    const v1, 0x7f09006c
+    const v1, 0x7f090068
 
     const/4 v2, 0x5
 
-    .line 21
+    .line 20
     invoke-virtual {v0, v1, v2}, Landroid/util/SparseIntArray;->put(II)V
 
     return-void
@@ -65,7 +58,7 @@
 .method public constructor <init>(Landroidx/databinding/DataBindingComponent;Landroid/view/View;)V
     .locals 3
 
-    .line 30
+    .line 29
     sget-object v0, Ljp/co/sony/mc/camera/databinding/FragmentProModeViewDialBindingImpl;->sIncludes:Landroidx/databinding/ViewDataBinding$IncludedLayouts;
 
     sget-object v1, Ljp/co/sony/mc/camera/databinding/FragmentProModeViewDialBindingImpl;->sViewsWithIds:Landroid/util/SparseIntArray;
@@ -86,7 +79,7 @@
 
     const/4 v0, 0x2
 
-    .line 33
+    .line 32
     aget-object v0, p3, v0
 
     move-object v5, v0
@@ -145,15 +138,20 @@
 
     const-wide/16 v0, -0x1
 
-    .line 90
+    .line 95
     iput-wide v0, p0, Ljp/co/sony/mc/camera/databinding/FragmentProModeViewDialBindingImpl;->mDirtyFlags:J
 
-    .line 41
+    .line 40
     iget-object p1, p0, Ljp/co/sony/mc/camera/databinding/FragmentProModeViewDialBindingImpl;->constraintLayout:Landroidx/constraintlayout/widget/ConstraintLayout;
 
     const/4 p3, 0x0
 
     invoke-virtual {p1, p3}, Landroidx/constraintlayout/widget/ConstraintLayout;->setTag(Ljava/lang/Object;)V
+
+    .line 41
+    iget-object p1, p0, Ljp/co/sony/mc/camera/databinding/FragmentProModeViewDialBindingImpl;->picker:Ljp/co/sony/mc/camera/view/widget/DialPicker;
+
+    invoke-virtual {p1, p3}, Ljp/co/sony/mc/camera/view/widget/DialPicker;->setTag(Ljava/lang/Object;)V
 
     .line 42
     invoke-virtual {p0, p2}, Ljp/co/sony/mc/camera/databinding/FragmentProModeViewDialBindingImpl;->setRootTag(Landroid/view/View;)V
@@ -167,28 +165,61 @@
 
 # virtual methods
 .method protected executeBindings()V
-    .locals 2
+    .locals 6
 
     .line 81
     monitor-enter p0
 
-    const-wide/16 v0, 0x0
+    .line 82
+    :try_start_0
+    iget-wide v0, p0, Ljp/co/sony/mc/camera/databinding/FragmentProModeViewDialBindingImpl;->mDirtyFlags:J
+
+    const-wide/16 v2, 0x0
 
     .line 83
-    :try_start_0
-    iput-wide v0, p0, Ljp/co/sony/mc/camera/databinding/FragmentProModeViewDialBindingImpl;->mDirtyFlags:J
+    iput-wide v2, p0, Ljp/co/sony/mc/camera/databinding/FragmentProModeViewDialBindingImpl;->mDirtyFlags:J
 
     .line 84
     monitor-exit p0
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
+    const-wide/16 v4, 0x1
+
+    and-long/2addr v0, v4
+
+    cmp-long v0, v0, v2
+
+    if-eqz v0, :cond_0
+
+    .line 89
+    iget-object v0, p0, Ljp/co/sony/mc/camera/databinding/FragmentProModeViewDialBindingImpl;->picker:Ljp/co/sony/mc/camera/view/widget/DialPicker;
+
+    iget-object p0, p0, Ljp/co/sony/mc/camera/databinding/FragmentProModeViewDialBindingImpl;->picker:Ljp/co/sony/mc/camera/view/widget/DialPicker;
+
+    invoke-virtual {p0}, Ljp/co/sony/mc/camera/view/widget/DialPicker;->getResources()Landroid/content/res/Resources;
+
+    move-result-object p0
+
+    const v1, 0x7f0a0051
+
+    invoke-virtual {p0, v1}, Landroid/content/res/Resources;->getInteger(I)I
+
+    move-result p0
+
+    invoke-static {v0, p0}, Ljp/co/sony/mc/camera/view/viewbinder/BindingAdapters;->setCount(Ljp/co/sony/mc/camera/view/widget/DialPicker;I)V
+
+    :cond_0
     return-void
 
     :catchall_0
     move-exception v0
 
+    .line 84
+    :try_start_1
     monitor-exit p0
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+    :try_end_1
+    .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
     throw v0
 .end method

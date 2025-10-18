@@ -91,7 +91,7 @@
 .method public bridge synthetic invoke(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
 
-    .line 241
+    .line 240
     check-cast p1, Landroidx/compose/ui/input/pointer/PointerInputChange;
 
     invoke-virtual {p0, p1}, Landroidx/compose/foundation/gestures/DragGestureDetectorKt$detectDragGesturesAfterLongPress$5$1;->invoke(Landroidx/compose/ui/input/pointer/PointerInputChange;)V
@@ -104,11 +104,7 @@
 .method public final invoke(Landroidx/compose/ui/input/pointer/PointerInputChange;)V
     .locals 2
 
-    const-string v0, "it"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 242
+    .line 241
     iget-object p0, p0, Landroidx/compose/foundation/gestures/DragGestureDetectorKt$detectDragGesturesAfterLongPress$5$1;->$onDrag:Lkotlin/jvm/functions/Function2;
 
     invoke-static {p1}, Landroidx/compose/ui/input/pointer/PointerEventKt;->positionChange(Landroidx/compose/ui/input/pointer/PointerInputChange;)J
@@ -121,7 +117,7 @@
 
     invoke-interface {p0, p1, v0}, Lkotlin/jvm/functions/Function2;->invoke(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 243
+    .line 242
     invoke-virtual {p1}, Landroidx/compose/ui/input/pointer/PointerInputChange;->consume()V
 
     return-void

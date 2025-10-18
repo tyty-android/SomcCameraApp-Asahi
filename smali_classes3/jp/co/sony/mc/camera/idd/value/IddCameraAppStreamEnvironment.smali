@@ -6,7 +6,7 @@
 # annotations
 .annotation runtime Lkotlin/Metadata;
     d1 = {
-        "\u0000Z\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0010\u000e\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000b\n\u0002\u0008\u0005\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\t\n\u0000\n\u0002\u0010\u0008\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0003\n\u0002\u0018\u0002\n\u0002\u0008-\n\u0002\u0010\u0002\n\u0002\u0008\u0016\n\u0002\u0018\u0002\n\u0002\u0010\u0007\n\u0002\u0008\u0002\u0008\u0087\u0008\u0018\u00002\u00020\u0001B\u00a3\u0001\u0012\n\u0008\u0002\u0010\u0002\u001a\u0004\u0018\u00010\u0003\u0012\u0008\u0008\u0002\u0010\u0004\u001a\u00020\u0005\u0012\u0008\u0008\u0002\u0010\u0006\u001a\u00020\u0007\u0012\u0008\u0008\u0002\u0010\u0008\u001a\u00020\t\u0012\u0008\u0008\u0002\u0010\n\u001a\u00020\t\u0012\u0008\u0008\u0002\u0010\u000b\u001a\u00020\t\u0012\u0008\u0008\u0002\u0010\u000c\u001a\u00020\t\u0012\u0008\u0008\u0002\u0010\r\u001a\u00020\t\u0012\u0008\u0008\u0002\u0010\u000e\u001a\u00020\u000f\u0012\u0008\u0008\u0002\u0010\u0010\u001a\u00020\u0011\u0012\u0008\u0008\u0002\u0010\u0012\u001a\u00020\u0013\u0012\n\u0008\u0002\u0010\u0014\u001a\u0004\u0018\u00010\u0015\u0012\n\u0008\u0002\u0010\u0016\u001a\u0004\u0018\u00010\u0003\u0012\u0008\u0008\u0002\u0010\u0017\u001a\u00020\u0013\u0012\n\u0008\u0002\u0010\u0018\u001a\u0004\u0018\u00010\u0019\u00a2\u0006\u0002\u0010\u001aJ\u0006\u0010F\u001a\u00020GJ\u0006\u0010H\u001a\u00020GJ\u000b\u0010I\u001a\u0004\u0018\u00010\u0003H\u00c6\u0003J\t\u0010J\u001a\u00020\u0011H\u00c6\u0003J\t\u0010K\u001a\u00020\u0013H\u00c6\u0003J\u000b\u0010L\u001a\u0004\u0018\u00010\u0015H\u00c6\u0003J\u000b\u0010M\u001a\u0004\u0018\u00010\u0003H\u00c6\u0003J\t\u0010N\u001a\u00020\u0013H\u00c6\u0003J\u000b\u0010O\u001a\u0004\u0018\u00010\u0019H\u00c6\u0003J\t\u0010P\u001a\u00020\u0005H\u00c6\u0003J\t\u0010Q\u001a\u00020\u0007H\u00c6\u0003J\t\u0010R\u001a\u00020\tH\u00c6\u0003J\t\u0010S\u001a\u00020\tH\u00c6\u0003J\t\u0010T\u001a\u00020\tH\u00c6\u0003J\t\u0010U\u001a\u00020\tH\u00c6\u0003J\t\u0010V\u001a\u00020\tH\u00c6\u0003J\t\u0010W\u001a\u00020\u000fH\u00c6\u0003J\u00a7\u0001\u0010X\u001a\u00020\u00002\n\u0008\u0002\u0010\u0002\u001a\u0004\u0018\u00010\u00032\u0008\u0008\u0002\u0010\u0004\u001a\u00020\u00052\u0008\u0008\u0002\u0010\u0006\u001a\u00020\u00072\u0008\u0008\u0002\u0010\u0008\u001a\u00020\t2\u0008\u0008\u0002\u0010\n\u001a\u00020\t2\u0008\u0008\u0002\u0010\u000b\u001a\u00020\t2\u0008\u0008\u0002\u0010\u000c\u001a\u00020\t2\u0008\u0008\u0002\u0010\r\u001a\u00020\t2\u0008\u0008\u0002\u0010\u000e\u001a\u00020\u000f2\u0008\u0008\u0002\u0010\u0010\u001a\u00020\u00112\u0008\u0008\u0002\u0010\u0012\u001a\u00020\u00132\n\u0008\u0002\u0010\u0014\u001a\u0004\u0018\u00010\u00152\n\u0008\u0002\u0010\u0016\u001a\u0004\u0018\u00010\u00032\u0008\u0008\u0002\u0010\u0017\u001a\u00020\u00132\n\u0008\u0002\u0010\u0018\u001a\u0004\u0018\u00010\u0019H\u00c6\u0001J\u0013\u0010Y\u001a\u00020\t2\u0008\u0010Z\u001a\u0004\u0018\u00010\u0001H\u00d6\u0003J\t\u0010[\u001a\u00020\u0013H\u00d6\u0001J\u0010\u0010\\\u001a\u00020G2\u0008\u0010]\u001a\u0004\u0018\u00010^J\u000e\u00108\u001a\u00020G2\u0006\u0010]\u001a\u00020\u0013J\u000e\u0010B\u001a\u00020G2\u0006\u0010]\u001a\u00020_J\t\u0010`\u001a\u00020\u0003H\u00d6\u0001R\u001c\u0010\u0002\u001a\u0004\u0018\u00010\u0003X\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\u0008\u001b\u0010\u001c\"\u0004\u0008\u001d\u0010\u001eR\u001a\u0010\u0004\u001a\u00020\u0005X\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\u0008\u001f\u0010 \"\u0004\u0008!\u0010\"R\u001a\u0010\u0006\u001a\u00020\u0007X\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\u0008#\u0010$\"\u0004\u0008%\u0010&R\u001a\u0010\u0008\u001a\u00020\tX\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\u0008\u0008\u0010\'\"\u0004\u0008(\u0010)R\u001a\u0010\n\u001a\u00020\tX\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\u0008\n\u0010\'\"\u0004\u0008*\u0010)R\u001a\u0010\u000b\u001a\u00020\tX\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\u0008\u000b\u0010\'\"\u0004\u0008+\u0010)R\u001a\u0010\u000c\u001a\u00020\tX\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\u0008\u000c\u0010\'\"\u0004\u0008,\u0010)R\u001a\u0010\r\u001a\u00020\tX\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\u0008\r\u0010\'\"\u0004\u0008-\u0010)R\u001a\u0010\u0012\u001a\u00020\u0013X\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\u0008.\u0010/\"\u0004\u00080\u00101R\u001c\u0010\u0014\u001a\u0004\u0018\u00010\u0015X\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\u00082\u00103\"\u0004\u00084\u00105R\u001a\u0010\u000e\u001a\u00020\u000fX\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\u00086\u00107\"\u0004\u00088\u00109R\u001a\u0010\u0010\u001a\u00020\u0011X\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\u0008:\u0010;\"\u0004\u0008<\u0010=R\u001c\u0010\u0016\u001a\u0004\u0018\u00010\u0003X\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\u0008>\u0010\u001c\"\u0004\u0008?\u0010\u001eR\u001c\u0010\u0018\u001a\u0004\u0018\u00010\u0019X\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\u0008@\u0010A\"\u0004\u0008B\u0010CR\u001a\u0010\u0017\u001a\u00020\u0013X\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\u0008D\u0010/\"\u0004\u0008E\u00101\u00a8\u0006a"
+        "\u0000\\\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0010\u000e\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000b\n\u0002\u0008\u0005\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\t\n\u0000\n\u0002\u0010\u0008\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0003\n\u0002\u0018\u0002\n\u0002\u00080\n\u0002\u0010\u0002\n\u0000\n\u0002\u0010\u0007\n\u0002\u0008\u0003\n\u0002\u0018\u0002\n\u0002\u0008\u0016\u0008\u0087\u0008\u0018\u00002\u00020\u0001B\u00af\u0001\u0012\n\u0008\u0002\u0010\u0002\u001a\u0004\u0018\u00010\u0003\u0012\u0008\u0008\u0002\u0010\u0004\u001a\u00020\u0005\u0012\u0008\u0008\u0002\u0010\u0006\u001a\u00020\u0007\u0012\u0008\u0008\u0002\u0010\u0008\u001a\u00020\t\u0012\u0008\u0008\u0002\u0010\n\u001a\u00020\t\u0012\u0008\u0008\u0002\u0010\u000b\u001a\u00020\t\u0012\u0008\u0008\u0002\u0010\u000c\u001a\u00020\t\u0012\u0008\u0008\u0002\u0010\r\u001a\u00020\t\u0012\u0008\u0008\u0002\u0010\u000e\u001a\u00020\u000f\u0012\u0008\u0008\u0002\u0010\u0010\u001a\u00020\u0011\u0012\u0008\u0008\u0002\u0010\u0012\u001a\u00020\u0013\u0012\n\u0008\u0002\u0010\u0014\u001a\u0004\u0018\u00010\u0015\u0012\n\u0008\u0002\u0010\u0016\u001a\u0004\u0018\u00010\u0003\u0012\u0008\u0008\u0002\u0010\u0017\u001a\u00020\u0013\u0012\n\u0008\u0002\u0010\u0018\u001a\u0004\u0018\u00010\u0019\u0012\u0008\u0008\u0002\u0010\u001a\u001a\u00020\u0013\u00a2\u0006\u0004\u0008\u001b\u0010\u001cJ\u000e\u00102\u001a\u00020J2\u0006\u0010K\u001a\u00020\u0013J\u000e\u0010F\u001a\u00020J2\u0006\u0010K\u001a\u00020LJ\u0006\u0010M\u001a\u00020JJ\u0006\u0010N\u001a\u00020JJ\u0010\u0010O\u001a\u00020J2\u0008\u0010K\u001a\u0004\u0018\u00010PJ\u000b\u0010Q\u001a\u0004\u0018\u00010\u0003H\u00c6\u0003J\t\u0010R\u001a\u00020\u0005H\u00c6\u0003J\t\u0010S\u001a\u00020\u0007H\u00c6\u0003J\t\u0010T\u001a\u00020\tH\u00c6\u0003J\t\u0010U\u001a\u00020\tH\u00c6\u0003J\t\u0010V\u001a\u00020\tH\u00c6\u0003J\t\u0010W\u001a\u00020\tH\u00c6\u0003J\t\u0010X\u001a\u00020\tH\u00c6\u0003J\t\u0010Y\u001a\u00020\u000fH\u00c6\u0003J\t\u0010Z\u001a\u00020\u0011H\u00c6\u0003J\t\u0010[\u001a\u00020\u0013H\u00c6\u0003J\u000b\u0010\\\u001a\u0004\u0018\u00010\u0015H\u00c6\u0003J\u000b\u0010]\u001a\u0004\u0018\u00010\u0003H\u00c6\u0003J\t\u0010^\u001a\u00020\u0013H\u00c6\u0003J\u000b\u0010_\u001a\u0004\u0018\u00010\u0019H\u00c6\u0003J\t\u0010`\u001a\u00020\u0013H\u00c6\u0003J\u00b1\u0001\u0010a\u001a\u00020\u00002\n\u0008\u0002\u0010\u0002\u001a\u0004\u0018\u00010\u00032\u0008\u0008\u0002\u0010\u0004\u001a\u00020\u00052\u0008\u0008\u0002\u0010\u0006\u001a\u00020\u00072\u0008\u0008\u0002\u0010\u0008\u001a\u00020\t2\u0008\u0008\u0002\u0010\n\u001a\u00020\t2\u0008\u0008\u0002\u0010\u000b\u001a\u00020\t2\u0008\u0008\u0002\u0010\u000c\u001a\u00020\t2\u0008\u0008\u0002\u0010\r\u001a\u00020\t2\u0008\u0008\u0002\u0010\u000e\u001a\u00020\u000f2\u0008\u0008\u0002\u0010\u0010\u001a\u00020\u00112\u0008\u0008\u0002\u0010\u0012\u001a\u00020\u00132\n\u0008\u0002\u0010\u0014\u001a\u0004\u0018\u00010\u00152\n\u0008\u0002\u0010\u0016\u001a\u0004\u0018\u00010\u00032\u0008\u0008\u0002\u0010\u0017\u001a\u00020\u00132\n\u0008\u0002\u0010\u0018\u001a\u0004\u0018\u00010\u00192\u0008\u0008\u0002\u0010\u001a\u001a\u00020\u0013H\u00c7\u0001J\u0013\u0010b\u001a\u00020\t2\u0008\u0010c\u001a\u0004\u0018\u00010\u0001H\u00d7\u0003J\t\u0010d\u001a\u00020\u0013H\u00d7\u0001J\t\u0010e\u001a\u00020\u0003H\u00d7\u0001R\u001c\u0010\u0002\u001a\u0004\u0018\u00010\u0003X\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\u0008\u001d\u0010\u001e\"\u0004\u0008\u001f\u0010 R\u001a\u0010\u0004\u001a\u00020\u0005X\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\u0008!\u0010\"\"\u0004\u0008#\u0010$R\u001a\u0010\u0006\u001a\u00020\u0007X\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\u0008%\u0010&\"\u0004\u0008\'\u0010(R\u001a\u0010\u0008\u001a\u00020\tX\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\u0008\u0008\u0010)\"\u0004\u0008*\u0010+R\u001a\u0010\n\u001a\u00020\tX\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\u0008\n\u0010)\"\u0004\u0008,\u0010+R\u001a\u0010\u000b\u001a\u00020\tX\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\u0008\u000b\u0010)\"\u0004\u0008-\u0010+R\u001a\u0010\u000c\u001a\u00020\tX\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\u0008\u000c\u0010)\"\u0004\u0008.\u0010+R\u001a\u0010\r\u001a\u00020\tX\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\u0008\r\u0010)\"\u0004\u0008/\u0010+R\u001a\u0010\u000e\u001a\u00020\u000fX\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\u00080\u00101\"\u0004\u00082\u00103R\u001a\u0010\u0010\u001a\u00020\u0011X\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\u00084\u00105\"\u0004\u00086\u00107R\u001a\u0010\u0012\u001a\u00020\u0013X\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\u00088\u00109\"\u0004\u0008:\u0010;R\u001c\u0010\u0014\u001a\u0004\u0018\u00010\u0015X\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\u0008<\u0010=\"\u0004\u0008>\u0010?R\u001c\u0010\u0016\u001a\u0004\u0018\u00010\u0003X\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\u0008@\u0010\u001e\"\u0004\u0008A\u0010 R\u001a\u0010\u0017\u001a\u00020\u0013X\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\u0008B\u00109\"\u0004\u0008C\u0010;R\u001c\u0010\u0018\u001a\u0004\u0018\u00010\u0019X\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\u0008D\u0010E\"\u0004\u0008F\u0010GR\u001a\u0010\u001a\u001a\u00020\u0013X\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\u0008H\u00109\"\u0004\u0008I\u0010;\u00a8\u0006f"
     }
     d2 = {
         "Ljp/co/sony/mc/camera/idd/value/IddCameraAppStreamEnvironment;",
@@ -35,7 +35,9 @@
         "zoomCount",
         "zoom",
         "Ljp/co/sony/mc/camera/idd/value/IddZoom;",
-        "(Ljava/lang/String;Ljp/co/sony/mc/camera/idd/value/IddCaptureTrigger;Ljp/co/sony/mc/camera/idd/value/IddFaceNum;ZZZZZLjp/co/sony/mc/camera/idd/value/IddOrientation;JILjp/co/sony/mc/camera/idd/value/IddNetworkState;Ljava/lang/String;ILjp/co/sony/mc/camera/idd/value/IddZoom;)V",
+        "estimatedAmbientTemperature",
+        "<init>",
+        "(Ljava/lang/String;Ljp/co/sony/mc/camera/idd/value/IddCaptureTrigger;Ljp/co/sony/mc/camera/idd/value/IddFaceNum;ZZZZZLjp/co/sony/mc/camera/idd/value/IddOrientation;JILjp/co/sony/mc/camera/idd/value/IddNetworkState;Ljava/lang/String;ILjp/co/sony/mc/camera/idd/value/IddZoom;I)V",
         "getBitrate",
         "()Ljava/lang/String;",
         "setBitrate",
@@ -55,14 +57,6 @@
         "setDisplayAccessaryConnected",
         "setEnduranceModeActivated",
         "setEyeDetected",
-        "getMuteCount",
-        "()I",
-        "setMuteCount",
-        "(I)V",
-        "getNetwork",
-        "()Ljp/co/sony/mc/camera/idd/value/IddNetworkState;",
-        "setNetwork",
-        "(Ljp/co/sony/mc/camera/idd/value/IddNetworkState;)V",
         "getOrientation",
         "()Ljp/co/sony/mc/camera/idd/value/IddOrientation;",
         "setOrientation",
@@ -71,24 +65,32 @@
         "()J",
         "setRecDuration",
         "(J)V",
+        "getMuteCount",
+        "()I",
+        "setMuteCount",
+        "(I)V",
+        "getNetwork",
+        "()Ljp/co/sony/mc/camera/idd/value/IddNetworkState;",
+        "setNetwork",
+        "(Ljp/co/sony/mc/camera/idd/value/IddNetworkState;)V",
         "getStopFactor",
         "setStopFactor",
+        "getZoomCount",
+        "setZoomCount",
         "getZoom",
         "()Ljp/co/sony/mc/camera/idd/value/IddZoom;",
         "setZoom",
         "(Ljp/co/sony/mc/camera/idd/value/IddZoom;)V",
-        "getZoomCount",
-        "setZoomCount",
-        "IncrementCountZoomInRecording",
+        "getEstimatedAmbientTemperature",
+        "setEstimatedAmbientTemperature",
+        "",
+        "value",
         "",
         "clearData",
+        "IncrementCountZoomInRecording",
+        "setDetectedFace",
+        "Ljp/co/sony/mc/camera/device/CaptureResultNotifier$FaceDetectionResult;",
         "component1",
-        "component10",
-        "component11",
-        "component12",
-        "component13",
-        "component14",
-        "component15",
         "component2",
         "component3",
         "component4",
@@ -97,21 +99,24 @@
         "component7",
         "component8",
         "component9",
+        "component10",
+        "component11",
+        "component12",
+        "component13",
+        "component14",
+        "component15",
+        "component16",
         "copy",
         "equals",
         "other",
         "hashCode",
-        "setDetectedFace",
-        "value",
-        "Ljp/co/sony/mc/camera/device/CaptureResultNotifier$FaceDetectionResult;",
-        "",
         "toString",
         "SomcCamera_release"
     }
     k = 0x1
     mv = {
-        0x1,
-        0x9,
+        0x2,
+        0x0,
         0x0
     }
     xi = 0x30
@@ -126,6 +131,8 @@
 .field private bitrate:Ljava/lang/String;
 
 .field private captureTrigger:Ljp/co/sony/mc/camera/idd/value/IddCaptureTrigger;
+
+.field private estimatedAmbientTemperature:I
 
 .field private faceNum:Ljp/co/sony/mc/camera/idd/value/IddFaceNum;
 
@@ -162,13 +169,13 @@
 .end method
 
 .method public constructor <init>()V
-    .locals 19
+    .locals 20
 
     move-object/from16 v0, p0
 
-    const/16 v17, 0x7fff
+    const v18, 0xffff
 
-    const/16 v18, 0x0
+    const/16 v19, 0x0
 
     const/4 v1, 0x0
 
@@ -200,12 +207,14 @@
 
     const/16 v16, 0x0
 
-    invoke-direct/range {v0 .. v18}, Ljp/co/sony/mc/camera/idd/value/IddCameraAppStreamEnvironment;-><init>(Ljava/lang/String;Ljp/co/sony/mc/camera/idd/value/IddCaptureTrigger;Ljp/co/sony/mc/camera/idd/value/IddFaceNum;ZZZZZLjp/co/sony/mc/camera/idd/value/IddOrientation;JILjp/co/sony/mc/camera/idd/value/IddNetworkState;Ljava/lang/String;ILjp/co/sony/mc/camera/idd/value/IddZoom;ILkotlin/jvm/internal/DefaultConstructorMarker;)V
+    const/16 v17, 0x0
+
+    invoke-direct/range {v0 .. v19}, Ljp/co/sony/mc/camera/idd/value/IddCameraAppStreamEnvironment;-><init>(Ljava/lang/String;Ljp/co/sony/mc/camera/idd/value/IddCaptureTrigger;Ljp/co/sony/mc/camera/idd/value/IddFaceNum;ZZZZZLjp/co/sony/mc/camera/idd/value/IddOrientation;JILjp/co/sony/mc/camera/idd/value/IddNetworkState;Ljava/lang/String;ILjp/co/sony/mc/camera/idd/value/IddZoom;IILkotlin/jvm/internal/DefaultConstructorMarker;)V
 
     return-void
 .end method
 
-.method public constructor <init>(Ljava/lang/String;Ljp/co/sony/mc/camera/idd/value/IddCaptureTrigger;Ljp/co/sony/mc/camera/idd/value/IddFaceNum;ZZZZZLjp/co/sony/mc/camera/idd/value/IddOrientation;JILjp/co/sony/mc/camera/idd/value/IddNetworkState;Ljava/lang/String;ILjp/co/sony/mc/camera/idd/value/IddZoom;)V
+.method public constructor <init>(Ljava/lang/String;Ljp/co/sony/mc/camera/idd/value/IddCaptureTrigger;Ljp/co/sony/mc/camera/idd/value/IddFaceNum;ZZZZZLjp/co/sony/mc/camera/idd/value/IddOrientation;JILjp/co/sony/mc/camera/idd/value/IddNetworkState;Ljava/lang/String;ILjp/co/sony/mc/camera/idd/value/IddZoom;I)V
     .locals 5
 
     move-object v0, p0
@@ -300,13 +309,18 @@
     .line 24
     iput-object v1, v0, Ljp/co/sony/mc/camera/idd/value/IddCameraAppStreamEnvironment;->zoom:Ljp/co/sony/mc/camera/idd/value/IddZoom;
 
+    move/from16 v1, p17
+
+    .line 25
+    iput v1, v0, Ljp/co/sony/mc/camera/idd/value/IddCameraAppStreamEnvironment;->estimatedAmbientTemperature:I
+
     return-void
 .end method
 
-.method public synthetic constructor <init>(Ljava/lang/String;Ljp/co/sony/mc/camera/idd/value/IddCaptureTrigger;Ljp/co/sony/mc/camera/idd/value/IddFaceNum;ZZZZZLjp/co/sony/mc/camera/idd/value/IddOrientation;JILjp/co/sony/mc/camera/idd/value/IddNetworkState;Ljava/lang/String;ILjp/co/sony/mc/camera/idd/value/IddZoom;ILkotlin/jvm/internal/DefaultConstructorMarker;)V
+.method public synthetic constructor <init>(Ljava/lang/String;Ljp/co/sony/mc/camera/idd/value/IddCaptureTrigger;Ljp/co/sony/mc/camera/idd/value/IddFaceNum;ZZZZZLjp/co/sony/mc/camera/idd/value/IddOrientation;JILjp/co/sony/mc/camera/idd/value/IddNetworkState;Ljava/lang/String;ILjp/co/sony/mc/camera/idd/value/IddZoom;IILkotlin/jvm/internal/DefaultConstructorMarker;)V
     .locals 16
 
-    move/from16 v0, p17
+    move/from16 v0, p18
 
     and-int/lit8 v1, v0, 0x1
 
@@ -496,33 +510,53 @@
     move/from16 v5, p15
 
     :goto_d
-    and-int/lit16 v0, v0, 0x4000
+    and-int/lit16 v2, v0, 0x4000
 
-    if-eqz v0, :cond_e
+    if-eqz v2, :cond_e
 
     .line 24
-    new-instance v0, Ljp/co/sony/mc/camera/idd/value/IddZoom;
+    new-instance v2, Ljp/co/sony/mc/camera/idd/value/IddZoom;
 
     move/from16 p15, v5
 
     const/4 v5, 0x0
 
+    move-object/from16 p13, v6
+
     move-object/from16 p14, v15
 
-    const/4 v15, 0x1
+    const/4 v6, 0x1
 
-    invoke-direct {v0, v5, v15, v2}, Ljp/co/sony/mc/camera/idd/value/IddZoom;-><init>(FILkotlin/jvm/internal/DefaultConstructorMarker;)V
+    const/4 v15, 0x0
+
+    invoke-direct {v2, v5, v6, v15}, Ljp/co/sony/mc/camera/idd/value/IddZoom;-><init>(FILkotlin/jvm/internal/DefaultConstructorMarker;)V
 
     goto :goto_e
 
     :cond_e
     move/from16 p15, v5
 
+    move-object/from16 p13, v6
+
     move-object/from16 p14, v15
 
-    move-object/from16 v0, p16
+    move-object/from16 v2, p16
 
     :goto_e
+    const v5, 0x8000
+
+    and-int/2addr v0, v5
+
+    if-eqz v0, :cond_f
+
+    const/4 v0, 0x0
+
+    goto :goto_f
+
+    :cond_f
+    move/from16 v0, p17
+
+    :goto_f
     move-object/from16 p1, v1
 
     move-object/from16 p2, v3
@@ -543,22 +577,22 @@
 
     move-wide/from16 p10, v13
 
-    move-object/from16 p13, v6
+    move-object/from16 p16, v2
 
-    move-object/from16 p16, v0
+    move/from16 p17, v0
 
     .line 9
-    invoke-direct/range {p0 .. p16}, Ljp/co/sony/mc/camera/idd/value/IddCameraAppStreamEnvironment;-><init>(Ljava/lang/String;Ljp/co/sony/mc/camera/idd/value/IddCaptureTrigger;Ljp/co/sony/mc/camera/idd/value/IddFaceNum;ZZZZZLjp/co/sony/mc/camera/idd/value/IddOrientation;JILjp/co/sony/mc/camera/idd/value/IddNetworkState;Ljava/lang/String;ILjp/co/sony/mc/camera/idd/value/IddZoom;)V
+    invoke-direct/range {p0 .. p17}, Ljp/co/sony/mc/camera/idd/value/IddCameraAppStreamEnvironment;-><init>(Ljava/lang/String;Ljp/co/sony/mc/camera/idd/value/IddCaptureTrigger;Ljp/co/sony/mc/camera/idd/value/IddFaceNum;ZZZZZLjp/co/sony/mc/camera/idd/value/IddOrientation;JILjp/co/sony/mc/camera/idd/value/IddNetworkState;Ljava/lang/String;ILjp/co/sony/mc/camera/idd/value/IddZoom;I)V
 
     return-void
 .end method
 
-.method public static synthetic copy$default(Ljp/co/sony/mc/camera/idd/value/IddCameraAppStreamEnvironment;Ljava/lang/String;Ljp/co/sony/mc/camera/idd/value/IddCaptureTrigger;Ljp/co/sony/mc/camera/idd/value/IddFaceNum;ZZZZZLjp/co/sony/mc/camera/idd/value/IddOrientation;JILjp/co/sony/mc/camera/idd/value/IddNetworkState;Ljava/lang/String;ILjp/co/sony/mc/camera/idd/value/IddZoom;ILjava/lang/Object;)Ljp/co/sony/mc/camera/idd/value/IddCameraAppStreamEnvironment;
-    .locals 16
+.method public static synthetic copy$default(Ljp/co/sony/mc/camera/idd/value/IddCameraAppStreamEnvironment;Ljava/lang/String;Ljp/co/sony/mc/camera/idd/value/IddCaptureTrigger;Ljp/co/sony/mc/camera/idd/value/IddFaceNum;ZZZZZLjp/co/sony/mc/camera/idd/value/IddOrientation;JILjp/co/sony/mc/camera/idd/value/IddNetworkState;Ljava/lang/String;ILjp/co/sony/mc/camera/idd/value/IddZoom;IILjava/lang/Object;)Ljp/co/sony/mc/camera/idd/value/IddCameraAppStreamEnvironment;
+    .locals 17
 
     move-object/from16 v0, p0
 
-    move/from16 v1, p17
+    move/from16 v1, p18
 
     and-int/lit8 v2, v1, 0x1
 
@@ -730,18 +764,34 @@
     move/from16 v15, p15
 
     :goto_d
-    and-int/lit16 v1, v1, 0x4000
+    move/from16 p15, v15
 
-    if-eqz v1, :cond_e
+    and-int/lit16 v15, v1, 0x4000
 
-    iget-object v1, v0, Ljp/co/sony/mc/camera/idd/value/IddCameraAppStreamEnvironment;->zoom:Ljp/co/sony/mc/camera/idd/value/IddZoom;
+    if-eqz v15, :cond_e
+
+    iget-object v15, v0, Ljp/co/sony/mc/camera/idd/value/IddCameraAppStreamEnvironment;->zoom:Ljp/co/sony/mc/camera/idd/value/IddZoom;
 
     goto :goto_e
 
     :cond_e
-    move-object/from16 v1, p16
+    move-object/from16 v15, p16
 
     :goto_e
+    const v16, 0x8000
+
+    and-int v1, v1, v16
+
+    if-eqz v1, :cond_f
+
+    iget v1, v0, Ljp/co/sony/mc/camera/idd/value/IddCameraAppStreamEnvironment;->estimatedAmbientTemperature:I
+
+    goto :goto_f
+
+    :cond_f
+    move/from16 v1, p17
+
+    :goto_f
     move-object/from16 p1, v2
 
     move-object/from16 p2, v3
@@ -766,11 +816,11 @@
 
     move-object/from16 p13, v14
 
-    move/from16 p15, v15
+    move-object/from16 p16, v15
 
-    move-object/from16 p16, v1
+    move/from16 p17, v1
 
-    invoke-virtual/range {p0 .. p16}, Ljp/co/sony/mc/camera/idd/value/IddCameraAppStreamEnvironment;->copy(Ljava/lang/String;Ljp/co/sony/mc/camera/idd/value/IddCaptureTrigger;Ljp/co/sony/mc/camera/idd/value/IddFaceNum;ZZZZZLjp/co/sony/mc/camera/idd/value/IddOrientation;JILjp/co/sony/mc/camera/idd/value/IddNetworkState;Ljava/lang/String;ILjp/co/sony/mc/camera/idd/value/IddZoom;)Ljp/co/sony/mc/camera/idd/value/IddCameraAppStreamEnvironment;
+    invoke-virtual/range {p0 .. p17}, Ljp/co/sony/mc/camera/idd/value/IddCameraAppStreamEnvironment;->copy(Ljava/lang/String;Ljp/co/sony/mc/camera/idd/value/IddCaptureTrigger;Ljp/co/sony/mc/camera/idd/value/IddFaceNum;ZZZZZLjp/co/sony/mc/camera/idd/value/IddOrientation;JILjp/co/sony/mc/camera/idd/value/IddNetworkState;Ljava/lang/String;ILjp/co/sony/mc/camera/idd/value/IddZoom;I)Ljp/co/sony/mc/camera/idd/value/IddCameraAppStreamEnvironment;
 
     move-result-object v0
 
@@ -782,7 +832,7 @@
 .method public final IncrementCountZoomInRecording()V
     .locals 1
 
-    .line 36
+    .line 37
     iget v0, p0, Ljp/co/sony/mc/camera/idd/value/IddCameraAppStreamEnvironment;->zoomCount:I
 
     add-int/lit8 v0, v0, 0x1
@@ -797,7 +847,7 @@
 
     const/4 v0, 0x0
 
-    .line 32
+    .line 33
     iput v0, p0, Ljp/co/sony/mc/camera/idd/value/IddCameraAppStreamEnvironment;->zoomCount:I
 
     return-void
@@ -857,6 +907,14 @@
     iget-object p0, p0, Ljp/co/sony/mc/camera/idd/value/IddCameraAppStreamEnvironment;->zoom:Ljp/co/sony/mc/camera/idd/value/IddZoom;
 
     return-object p0
+.end method
+
+.method public final component16()I
+    .locals 0
+
+    iget p0, p0, Ljp/co/sony/mc/camera/idd/value/IddCameraAppStreamEnvironment;->estimatedAmbientTemperature:I
+
+    return p0
 .end method
 
 .method public final component2()Ljp/co/sony/mc/camera/idd/value/IddCaptureTrigger;
@@ -923,8 +981,8 @@
     return-object p0
 .end method
 
-.method public final copy(Ljava/lang/String;Ljp/co/sony/mc/camera/idd/value/IddCaptureTrigger;Ljp/co/sony/mc/camera/idd/value/IddFaceNum;ZZZZZLjp/co/sony/mc/camera/idd/value/IddOrientation;JILjp/co/sony/mc/camera/idd/value/IddNetworkState;Ljava/lang/String;ILjp/co/sony/mc/camera/idd/value/IddZoom;)Ljp/co/sony/mc/camera/idd/value/IddCameraAppStreamEnvironment;
-    .locals 18
+.method public final copy(Ljava/lang/String;Ljp/co/sony/mc/camera/idd/value/IddCaptureTrigger;Ljp/co/sony/mc/camera/idd/value/IddFaceNum;ZZZZZLjp/co/sony/mc/camera/idd/value/IddOrientation;JILjp/co/sony/mc/camera/idd/value/IddNetworkState;Ljava/lang/String;ILjp/co/sony/mc/camera/idd/value/IddZoom;I)Ljp/co/sony/mc/camera/idd/value/IddCameraAppStreamEnvironment;
+    .locals 19
 
     move-object/from16 v1, p1
 
@@ -956,6 +1014,8 @@
 
     move-object/from16 v16, p16
 
+    move/from16 v17, p17
+
     const-string v0, "captureTrigger"
 
     move-object/from16 p0, v1
@@ -976,15 +1036,15 @@
 
     invoke-static {v1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    new-instance v17, Ljp/co/sony/mc/camera/idd/value/IddCameraAppStreamEnvironment;
+    new-instance v18, Ljp/co/sony/mc/camera/idd/value/IddCameraAppStreamEnvironment;
 
-    move-object/from16 v0, v17
+    move-object/from16 v0, v18
 
     move-object/from16 v1, p0
 
-    invoke-direct/range {v0 .. v16}, Ljp/co/sony/mc/camera/idd/value/IddCameraAppStreamEnvironment;-><init>(Ljava/lang/String;Ljp/co/sony/mc/camera/idd/value/IddCaptureTrigger;Ljp/co/sony/mc/camera/idd/value/IddFaceNum;ZZZZZLjp/co/sony/mc/camera/idd/value/IddOrientation;JILjp/co/sony/mc/camera/idd/value/IddNetworkState;Ljava/lang/String;ILjp/co/sony/mc/camera/idd/value/IddZoom;)V
+    invoke-direct/range {v0 .. v17}, Ljp/co/sony/mc/camera/idd/value/IddCameraAppStreamEnvironment;-><init>(Ljava/lang/String;Ljp/co/sony/mc/camera/idd/value/IddCaptureTrigger;Ljp/co/sony/mc/camera/idd/value/IddFaceNum;ZZZZZLjp/co/sony/mc/camera/idd/value/IddOrientation;JILjp/co/sony/mc/camera/idd/value/IddNetworkState;Ljava/lang/String;ILjp/co/sony/mc/camera/idd/value/IddZoom;I)V
 
-    return-object v17
+    return-object v18
 .end method
 
 .method public equals(Ljava/lang/Object;)Z
@@ -1152,19 +1212,28 @@
     return v2
 
     :cond_f
-    iget-object p0, p0, Ljp/co/sony/mc/camera/idd/value/IddCameraAppStreamEnvironment;->zoom:Ljp/co/sony/mc/camera/idd/value/IddZoom;
+    iget-object v1, p0, Ljp/co/sony/mc/camera/idd/value/IddCameraAppStreamEnvironment;->zoom:Ljp/co/sony/mc/camera/idd/value/IddZoom;
 
-    iget-object p1, p1, Ljp/co/sony/mc/camera/idd/value/IddCameraAppStreamEnvironment;->zoom:Ljp/co/sony/mc/camera/idd/value/IddZoom;
+    iget-object v3, p1, Ljp/co/sony/mc/camera/idd/value/IddCameraAppStreamEnvironment;->zoom:Ljp/co/sony/mc/camera/idd/value/IddZoom;
 
-    invoke-static {p0, p1}, Lkotlin/jvm/internal/Intrinsics;->areEqual(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, v3}, Lkotlin/jvm/internal/Intrinsics;->areEqual(Ljava/lang/Object;Ljava/lang/Object;)Z
 
-    move-result p0
+    move-result v1
 
-    if-nez p0, :cond_10
+    if-nez v1, :cond_10
 
     return v2
 
     :cond_10
+    iget p0, p0, Ljp/co/sony/mc/camera/idd/value/IddCameraAppStreamEnvironment;->estimatedAmbientTemperature:I
+
+    iget p1, p1, Ljp/co/sony/mc/camera/idd/value/IddCameraAppStreamEnvironment;->estimatedAmbientTemperature:I
+
+    if-eq p0, p1, :cond_11
+
+    return v2
+
+    :cond_11
     return v0
 .end method
 
@@ -1184,6 +1253,15 @@
     iget-object p0, p0, Ljp/co/sony/mc/camera/idd/value/IddCameraAppStreamEnvironment;->captureTrigger:Ljp/co/sony/mc/camera/idd/value/IddCaptureTrigger;
 
     return-object p0
+.end method
+
+.method public final getEstimatedAmbientTemperature()I
+    .locals 0
+
+    .line 25
+    iget p0, p0, Ljp/co/sony/mc/camera/idd/value/IddCameraAppStreamEnvironment;->estimatedAmbientTemperature:I
+
+    return p0
 .end method
 
 .method public final getFaceNum()Ljp/co/sony/mc/camera/idd/value/IddFaceNum;
@@ -1301,61 +1379,51 @@
 
     iget-boolean v2, p0, Ljp/co/sony/mc/camera/idd/value/IddCameraAppStreamEnvironment;->isBtAccessaryConnected:Z
 
-    const/4 v3, 0x1
+    invoke-static {v2}, Ljava/lang/Boolean;->hashCode(Z)I
 
-    if-eqz v2, :cond_1
+    move-result v2
 
-    move v2, v3
-
-    :cond_1
     add-int/2addr v0, v2
 
     mul-int/lit8 v0, v0, 0x1f
 
     iget-boolean v2, p0, Ljp/co/sony/mc/camera/idd/value/IddCameraAppStreamEnvironment;->isCloseupRequired:Z
 
-    if-eqz v2, :cond_2
+    invoke-static {v2}, Ljava/lang/Boolean;->hashCode(Z)I
 
-    move v2, v3
+    move-result v2
 
-    :cond_2
     add-int/2addr v0, v2
 
     mul-int/lit8 v0, v0, 0x1f
 
     iget-boolean v2, p0, Ljp/co/sony/mc/camera/idd/value/IddCameraAppStreamEnvironment;->isDisplayAccessaryConnected:Z
 
-    if-eqz v2, :cond_3
+    invoke-static {v2}, Ljava/lang/Boolean;->hashCode(Z)I
 
-    move v2, v3
+    move-result v2
 
-    :cond_3
     add-int/2addr v0, v2
 
     mul-int/lit8 v0, v0, 0x1f
 
     iget-boolean v2, p0, Ljp/co/sony/mc/camera/idd/value/IddCameraAppStreamEnvironment;->isEnduranceModeActivated:Z
 
-    if-eqz v2, :cond_4
+    invoke-static {v2}, Ljava/lang/Boolean;->hashCode(Z)I
 
-    move v2, v3
+    move-result v2
 
-    :cond_4
     add-int/2addr v0, v2
 
     mul-int/lit8 v0, v0, 0x1f
 
     iget-boolean v2, p0, Ljp/co/sony/mc/camera/idd/value/IddCameraAppStreamEnvironment;->isEyeDetected:Z
 
-    if-eqz v2, :cond_5
+    invoke-static {v2}, Ljava/lang/Boolean;->hashCode(Z)I
 
-    goto :goto_1
+    move-result v2
 
-    :cond_5
-    move v3, v2
-
-    :goto_1
-    add-int/2addr v0, v3
+    add-int/2addr v0, v2
 
     mul-int/lit8 v0, v0, 0x1f
 
@@ -1391,36 +1459,36 @@
 
     iget-object v2, p0, Ljp/co/sony/mc/camera/idd/value/IddCameraAppStreamEnvironment;->network:Ljp/co/sony/mc/camera/idd/value/IddNetworkState;
 
-    if-nez v2, :cond_6
+    if-nez v2, :cond_1
 
     move v2, v1
 
-    goto :goto_2
+    goto :goto_1
 
-    :cond_6
+    :cond_1
     invoke-virtual {v2}, Ljp/co/sony/mc/camera/idd/value/IddNetworkState;->hashCode()I
 
     move-result v2
 
-    :goto_2
+    :goto_1
     add-int/2addr v0, v2
 
     mul-int/lit8 v0, v0, 0x1f
 
     iget-object v2, p0, Ljp/co/sony/mc/camera/idd/value/IddCameraAppStreamEnvironment;->stopFactor:Ljava/lang/String;
 
-    if-nez v2, :cond_7
+    if-nez v2, :cond_2
 
     move v2, v1
 
-    goto :goto_3
+    goto :goto_2
 
-    :cond_7
+    :cond_2
     invoke-virtual {v2}, Ljava/lang/String;->hashCode()I
 
     move-result v2
 
-    :goto_3
+    :goto_2
     add-int/2addr v0, v2
 
     mul-int/lit8 v0, v0, 0x1f
@@ -1435,19 +1503,29 @@
 
     mul-int/lit8 v0, v0, 0x1f
 
-    iget-object p0, p0, Ljp/co/sony/mc/camera/idd/value/IddCameraAppStreamEnvironment;->zoom:Ljp/co/sony/mc/camera/idd/value/IddZoom;
+    iget-object v2, p0, Ljp/co/sony/mc/camera/idd/value/IddCameraAppStreamEnvironment;->zoom:Ljp/co/sony/mc/camera/idd/value/IddZoom;
 
-    if-nez p0, :cond_8
+    if-nez v2, :cond_3
 
-    goto :goto_4
+    goto :goto_3
 
-    :cond_8
-    invoke-virtual {p0}, Ljp/co/sony/mc/camera/idd/value/IddZoom;->hashCode()I
+    :cond_3
+    invoke-virtual {v2}, Ljp/co/sony/mc/camera/idd/value/IddZoom;->hashCode()I
 
     move-result v1
 
-    :goto_4
+    :goto_3
     add-int/2addr v0, v1
+
+    mul-int/lit8 v0, v0, 0x1f
+
+    iget p0, p0, Ljp/co/sony/mc/camera/idd/value/IddCameraAppStreamEnvironment;->estimatedAmbientTemperature:I
+
+    invoke-static {p0}, Ljava/lang/Integer;->hashCode(I)I
+
+    move-result p0
+
+    add-int/2addr v0, p0
 
     return v0
 .end method
@@ -1540,7 +1618,7 @@
 .method public final setDetectedFace(Ljp/co/sony/mc/camera/device/CaptureResultNotifier$FaceDetectionResult;)V
     .locals 3
 
-    .line 40
+    .line 41
     new-instance v0, Ljp/co/sony/mc/camera/idd/value/IddFaceNum;
 
     const/4 v1, 0x0
@@ -1569,7 +1647,7 @@
 
     if-eqz p1, :cond_1
 
-    .line 41
+    .line 42
     iget-object v2, p1, Ljp/co/sony/mc/camera/device/CaptureResultNotifier$FaceDetectionResult;->extFaceList:Ljava/util/List;
 
     if-eqz v2, :cond_1
@@ -1590,13 +1668,13 @@
     :goto_1
     if-eqz p1, :cond_2
 
-    .line 42
+    .line 43
     iget-object v0, p1, Ljp/co/sony/mc/camera/device/CaptureResultNotifier$ExtFace;->eyePosition:Landroid/graphics/Point;
 
     :cond_2
     if-eqz v0, :cond_3
 
-    .line 43
+    .line 44
     iget-object v0, p1, Ljp/co/sony/mc/camera/device/CaptureResultNotifier$ExtFace;->eyePosition:Landroid/graphics/Point;
 
     iget v0, v0, Landroid/graphics/Point;->x:I
@@ -1611,7 +1689,7 @@
 
     const/4 v1, 0x1
 
-    .line 42
+    .line 43
     :cond_3
     iput-boolean v1, p0, Ljp/co/sony/mc/camera/idd/value/IddCameraAppStreamEnvironment;->isEyeDetected:Z
 
@@ -1632,6 +1710,15 @@
 
     .line 16
     iput-boolean p1, p0, Ljp/co/sony/mc/camera/idd/value/IddCameraAppStreamEnvironment;->isEnduranceModeActivated:Z
+
+    return-void
+.end method
+
+.method public final setEstimatedAmbientTemperature(I)V
+    .locals 0
+
+    .line 25
+    iput p1, p0, Ljp/co/sony/mc/camera/idd/value/IddCameraAppStreamEnvironment;->estimatedAmbientTemperature:I
 
     return-void
 .end method
@@ -1679,7 +1766,7 @@
 .method public final setOrientation(I)V
     .locals 1
 
-    .line 27
+    .line 28
     sget-object v0, Ljp/co/sony/mc/camera/idd/value/IddOrientation;->Companion:Ljp/co/sony/mc/camera/idd/value/IddOrientation$Companion;
 
     invoke-virtual {v0, p1}, Ljp/co/sony/mc/camera/idd/value/IddOrientation$Companion;->valueOf(I)Ljp/co/sony/mc/camera/idd/value/IddOrientation;
@@ -1725,7 +1812,7 @@
 .method public final setZoom(F)V
     .locals 1
 
-    .line 29
+    .line 30
     new-instance v0, Ljp/co/sony/mc/camera/idd/value/IddZoom;
 
     invoke-direct {v0, p1}, Ljp/co/sony/mc/camera/idd/value/IddZoom;-><init>(F)V
@@ -1754,7 +1841,7 @@
 .end method
 
 .method public toString()Ljava/lang/String;
-    .locals 17
+    .locals 18
 
     move-object/from16 v0, p0
 
@@ -1786,13 +1873,17 @@
 
     iget v15, v0, Ljp/co/sony/mc/camera/idd/value/IddCameraAppStreamEnvironment;->zoomCount:I
 
-    iget-object v0, v0, Ljp/co/sony/mc/camera/idd/value/IddCameraAppStreamEnvironment;->zoom:Ljp/co/sony/mc/camera/idd/value/IddZoom;
+    move/from16 v16, v15
 
-    move-object/from16 p0, v0
+    iget-object v15, v0, Ljp/co/sony/mc/camera/idd/value/IddCameraAppStreamEnvironment;->zoom:Ljp/co/sony/mc/camera/idd/value/IddZoom;
+
+    iget v0, v0, Ljp/co/sony/mc/camera/idd/value/IddCameraAppStreamEnvironment;->estimatedAmbientTemperature:I
+
+    move/from16 p0, v0
 
     new-instance v0, Ljava/lang/StringBuilder;
 
-    move/from16 v16, v15
+    move-object/from16 v17, v15
 
     const-string v15, "IddCameraAppStreamEnvironment(bitrate="
 
@@ -1940,9 +2031,21 @@
 
     move-result-object v0
 
-    move-object/from16 v1, p0
+    move-object/from16 v1, v17
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
+
+    const-string v1, ", estimatedAmbientTemperature="
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
+
+    move/from16 v1, p0
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
     move-result-object v0
 

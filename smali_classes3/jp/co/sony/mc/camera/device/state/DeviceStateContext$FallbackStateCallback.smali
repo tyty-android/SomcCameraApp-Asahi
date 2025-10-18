@@ -25,7 +25,7 @@
 .method private constructor <init>(Ljp/co/sony/mc/camera/device/state/DeviceStateContext;)V
     .locals 0
 
-    .line 3279
+    .line 3355
     iput-object p1, p0, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$FallbackStateCallback;->this$0:Ljp/co/sony/mc/camera/device/state/DeviceStateContext;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -46,7 +46,7 @@
 .method public onFallbackStateChanged(ZZ)V
     .locals 0
 
-    .line 3285
+    .line 3361
     iget-object p0, p0, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$FallbackStateCallback;->this$0:Ljp/co/sony/mc/camera/device/state/DeviceStateContext;
 
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/device/state/DeviceStateContext;->getCameraDeviceHandlerCallback()Ljp/co/sony/mc/camera/device/state/IDeviceStateMachineCallback;

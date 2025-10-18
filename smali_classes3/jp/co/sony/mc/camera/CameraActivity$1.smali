@@ -27,12 +27,12 @@
 .method constructor <init>(Ljp/co/sony/mc/camera/CameraActivity;)V
     .locals 0
 
-    .line 366
+    .line 370
     iput-object p1, p0, Ljp/co/sony/mc/camera/CameraActivity$1;->this$0:Ljp/co/sony/mc/camera/CameraActivity;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 368
+    .line 372
     invoke-static {}, Ljp/co/sony/mc/camera/setting/CameraProSetting;->getInstance()Ljp/co/sony/mc/camera/setting/CameraProSetting;
 
     move-result-object p1
@@ -47,10 +47,10 @@
 .method public onNotifyThermalNormal()V
     .locals 4
 
-    .line 393
+    .line 397
     sget-object v0, Ljp/co/sony/mc/camera/SystemEventNotifier$ThermalStatus;->NORMAL:Ljp/co/sony/mc/camera/SystemEventNotifier$ThermalStatus;
 
-    .line 394
+    .line 398
     iget-object v1, p0, Ljp/co/sony/mc/camera/CameraActivity$1;->this$0:Ljp/co/sony/mc/camera/CameraActivity;
 
     invoke-virtual {v1}, Ljp/co/sony/mc/camera/CameraActivity;->getApplication()Landroid/app/Application;
@@ -59,10 +59,10 @@
 
     check-cast v1, Ljp/co/sony/mc/camera/CameraApplication;
 
-    .line 395
+    .line 399
     iget-object v2, p0, Ljp/co/sony/mc/camera/CameraActivity$1;->settings:Ljp/co/sony/mc/camera/setting/CameraProSetting;
 
-    .line 396
+    .line 400
     invoke-virtual {v2}, Ljp/co/sony/mc/camera/setting/CameraProSetting;->getCurrentCapturingMode()Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
     move-result-object v2
@@ -73,10 +73,10 @@
 
     move-result-object v3
 
-    .line 395
+    .line 399
     invoke-virtual {v1, v0, v2, v3}, Ljp/co/sony/mc/camera/CameraApplication;->setThermalStatus(Ljp/co/sony/mc/camera/SystemEventNotifier$ThermalStatus;Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;)V
 
-    .line 397
+    .line 401
     iget-object p0, p0, Ljp/co/sony/mc/camera/CameraActivity$1;->this$0:Ljp/co/sony/mc/camera/CameraActivity;
 
     invoke-static {p0}, Ljp/co/sony/mc/camera/CameraActivity;->-$$Nest$fgetmSystemEventNotifier(Ljp/co/sony/mc/camera/CameraActivity;)Ljp/co/sony/mc/camera/SystemEventNotifierImpl;
@@ -85,7 +85,7 @@
 
     invoke-virtual {p0, v0}, Ljp/co/sony/mc/camera/SystemEventNotifierImpl;->notifyThermalStateChanged(Ljp/co/sony/mc/camera/SystemEventNotifier$ThermalStatus;)V
 
-    .line 399
+    .line 403
     sget-object p0, Ljp/co/sony/mc/camera/idd/event/IddLaunchEvent;->Context:Ljp/co/sony/mc/camera/idd/event/IddLaunchEvent$Context;
 
     const/4 v0, 0x0
@@ -98,10 +98,10 @@
 .method public onNotifyThermalWarning(Z)V
     .locals 4
 
-    .line 405
+    .line 409
     sget-object v0, Ljp/co/sony/mc/camera/SystemEventNotifier$ThermalStatus;->WARNING:Ljp/co/sony/mc/camera/SystemEventNotifier$ThermalStatus;
 
-    .line 406
+    .line 410
     iget-object v1, p0, Ljp/co/sony/mc/camera/CameraActivity$1;->this$0:Ljp/co/sony/mc/camera/CameraActivity;
 
     invoke-virtual {v1}, Ljp/co/sony/mc/camera/CameraActivity;->getApplication()Landroid/app/Application;
@@ -110,10 +110,10 @@
 
     check-cast v1, Ljp/co/sony/mc/camera/CameraApplication;
 
-    .line 407
+    .line 411
     iget-object v2, p0, Ljp/co/sony/mc/camera/CameraActivity$1;->settings:Ljp/co/sony/mc/camera/setting/CameraProSetting;
 
-    .line 408
+    .line 412
     invoke-virtual {v2}, Ljp/co/sony/mc/camera/setting/CameraProSetting;->getCurrentCapturingMode()Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
     move-result-object v2
@@ -124,10 +124,10 @@
 
     move-result-object v3
 
-    .line 407
+    .line 411
     invoke-virtual {v1, v0, v2, v3}, Ljp/co/sony/mc/camera/CameraApplication;->setThermalStatus(Ljp/co/sony/mc/camera/SystemEventNotifier$ThermalStatus;Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;)V
 
-    .line 409
+    .line 413
     iget-object p0, p0, Ljp/co/sony/mc/camera/CameraActivity$1;->this$0:Ljp/co/sony/mc/camera/CameraActivity;
 
     invoke-static {p0}, Ljp/co/sony/mc/camera/CameraActivity;->-$$Nest$fgetmSystemEventNotifier(Ljp/co/sony/mc/camera/CameraActivity;)Ljp/co/sony/mc/camera/SystemEventNotifierImpl;
@@ -136,14 +136,14 @@
 
     invoke-virtual {p0, v0}, Ljp/co/sony/mc/camera/SystemEventNotifierImpl;->notifyThermalStateChanged(Ljp/co/sony/mc/camera/SystemEventNotifier$ThermalStatus;)V
 
-    .line 411
+    .line 415
     sget-object p0, Ljp/co/sony/mc/camera/idd/event/IddLaunchEvent;->Context:Ljp/co/sony/mc/camera/idd/event/IddLaunchEvent$Context;
 
     const/4 v0, 0x1
 
     invoke-virtual {p0, v0}, Ljp/co/sony/mc/camera/idd/event/IddLaunchEvent$Context;->setHighTemperature(Z)V
 
-    .line 412
+    .line 416
     new-instance p0, Ljp/co/sony/mc/camera/idd/event/IddThermalEvent;
 
     invoke-direct {p0}, Ljp/co/sony/mc/camera/idd/event/IddThermalEvent;-><init>()V
@@ -160,10 +160,10 @@
 .method public onNotifyThermalWarningExtra(Z)V
     .locals 4
 
-    .line 418
+    .line 422
     sget-object v0, Ljp/co/sony/mc/camera/SystemEventNotifier$ThermalStatus;->WARNING_EXTRA:Ljp/co/sony/mc/camera/SystemEventNotifier$ThermalStatus;
 
-    .line 419
+    .line 423
     iget-object v1, p0, Ljp/co/sony/mc/camera/CameraActivity$1;->this$0:Ljp/co/sony/mc/camera/CameraActivity;
 
     invoke-virtual {v1}, Ljp/co/sony/mc/camera/CameraActivity;->getApplication()Landroid/app/Application;
@@ -172,10 +172,10 @@
 
     check-cast v1, Ljp/co/sony/mc/camera/CameraApplication;
 
-    .line 420
+    .line 424
     iget-object v2, p0, Ljp/co/sony/mc/camera/CameraActivity$1;->settings:Ljp/co/sony/mc/camera/setting/CameraProSetting;
 
-    .line 421
+    .line 425
     invoke-virtual {v2}, Ljp/co/sony/mc/camera/setting/CameraProSetting;->getCurrentCapturingMode()Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
     move-result-object v2
@@ -186,10 +186,10 @@
 
     move-result-object v3
 
-    .line 420
+    .line 424
     invoke-virtual {v1, v0, v2, v3}, Ljp/co/sony/mc/camera/CameraApplication;->setThermalStatus(Ljp/co/sony/mc/camera/SystemEventNotifier$ThermalStatus;Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;)V
 
-    .line 422
+    .line 426
     iget-object v1, p0, Ljp/co/sony/mc/camera/CameraActivity$1;->this$0:Ljp/co/sony/mc/camera/CameraActivity;
 
     invoke-static {v1}, Ljp/co/sony/mc/camera/CameraActivity;->-$$Nest$fgetmSystemEventNotifier(Ljp/co/sony/mc/camera/CameraActivity;)Ljp/co/sony/mc/camera/SystemEventNotifierImpl;
@@ -198,14 +198,14 @@
 
     invoke-virtual {v1, v0}, Ljp/co/sony/mc/camera/SystemEventNotifierImpl;->notifyThermalStateChanged(Ljp/co/sony/mc/camera/SystemEventNotifier$ThermalStatus;)V
 
-    .line 424
+    .line 428
     sget-object v0, Ljp/co/sony/mc/camera/idd/event/IddLaunchEvent;->Context:Ljp/co/sony/mc/camera/idd/event/IddLaunchEvent$Context;
 
     const/4 v1, 0x1
 
     invoke-virtual {v0, v1}, Ljp/co/sony/mc/camera/idd/event/IddLaunchEvent$Context;->setHighTemperature(Z)V
 
-    .line 425
+    .line 429
     iget-object p0, p0, Ljp/co/sony/mc/camera/CameraActivity$1;->this$0:Ljp/co/sony/mc/camera/CameraActivity;
 
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/CameraActivity;->isThermalWarningReceived()Z
@@ -214,7 +214,7 @@
 
     if-nez p0, :cond_0
 
-    .line 426
+    .line 430
     new-instance p0, Ljp/co/sony/mc/camera/idd/event/IddThermalEvent;
 
     invoke-direct {p0}, Ljp/co/sony/mc/camera/idd/event/IddThermalEvent;-><init>()V
@@ -234,16 +234,16 @@
 
     if-eqz p2, :cond_0
 
-    .line 374
+    .line 378
     sget-object p2, Ljp/co/sony/mc/camera/SystemEventNotifier$ThermalStatus;->CRITICAL_ENDURANCE:Ljp/co/sony/mc/camera/SystemEventNotifier$ThermalStatus;
 
     goto :goto_0
 
-    .line 376
+    .line 380
     :cond_0
     sget-object p2, Ljp/co/sony/mc/camera/SystemEventNotifier$ThermalStatus;->CRITICAL:Ljp/co/sony/mc/camera/SystemEventNotifier$ThermalStatus;
 
-    .line 378
+    .line 382
     :goto_0
     iget-object v0, p0, Ljp/co/sony/mc/camera/CameraActivity$1;->this$0:Ljp/co/sony/mc/camera/CameraActivity;
 
@@ -253,10 +253,10 @@
 
     check-cast v0, Ljp/co/sony/mc/camera/CameraApplication;
 
-    .line 379
+    .line 383
     iget-object v1, p0, Ljp/co/sony/mc/camera/CameraActivity$1;->settings:Ljp/co/sony/mc/camera/setting/CameraProSetting;
 
-    .line 380
+    .line 384
     invoke-virtual {v1}, Ljp/co/sony/mc/camera/setting/CameraProSetting;->getCurrentCapturingMode()Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
     move-result-object v1
@@ -267,10 +267,10 @@
 
     move-result-object v2
 
-    .line 379
+    .line 383
     invoke-virtual {v0, p2, v1, v2}, Ljp/co/sony/mc/camera/CameraApplication;->setThermalStatus(Ljp/co/sony/mc/camera/SystemEventNotifier$ThermalStatus;Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;)V
 
-    .line 381
+    .line 385
     iget-object v0, p0, Ljp/co/sony/mc/camera/CameraActivity$1;->this$0:Ljp/co/sony/mc/camera/CameraActivity;
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/CameraActivity;->-$$Nest$fgetmSystemEventNotifier(Ljp/co/sony/mc/camera/CameraActivity;)Ljp/co/sony/mc/camera/SystemEventNotifierImpl;
@@ -279,19 +279,19 @@
 
     invoke-virtual {v0, p2}, Ljp/co/sony/mc/camera/SystemEventNotifierImpl;->notifyThermalStateChanged(Ljp/co/sony/mc/camera/SystemEventNotifier$ThermalStatus;)V
 
-    .line 384
+    .line 388
     iget-object p0, p0, Ljp/co/sony/mc/camera/CameraActivity$1;->this$0:Ljp/co/sony/mc/camera/CameraActivity;
 
     invoke-static {p0}, Ljp/co/sony/mc/camera/CameraActivity;->-$$Nest$mreleaseCamera(Ljp/co/sony/mc/camera/CameraActivity;)V
 
-    .line 386
+    .line 390
     sget-object p0, Ljp/co/sony/mc/camera/idd/event/IddLaunchEvent;->Context:Ljp/co/sony/mc/camera/idd/event/IddLaunchEvent$Context;
 
     const/4 p2, 0x1
 
     invoke-virtual {p0, p2}, Ljp/co/sony/mc/camera/idd/event/IddLaunchEvent$Context;->setHighTemperature(Z)V
 
-    .line 387
+    .line 391
     new-instance p0, Ljp/co/sony/mc/camera/idd/event/IddThermalEvent;
 
     invoke-direct {p0}, Ljp/co/sony/mc/camera/idd/event/IddThermalEvent;-><init>()V
@@ -308,14 +308,14 @@
 .method public onTempEnduranceModeActivated()V
     .locals 0
 
-    .line 432
+    .line 436
     iget-object p0, p0, Ljp/co/sony/mc/camera/CameraActivity$1;->this$0:Ljp/co/sony/mc/camera/CameraActivity;
 
     invoke-static {p0}, Ljp/co/sony/mc/camera/CameraActivity;->-$$Nest$fgetmSystemEventNotifier(Ljp/co/sony/mc/camera/CameraActivity;)Ljp/co/sony/mc/camera/SystemEventNotifierImpl;
 
     move-result-object p0
 
-    .line 433
+    .line 437
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/SystemEventNotifierImpl;->notifyTempEnduranceModeActivated()V
 
     return-void

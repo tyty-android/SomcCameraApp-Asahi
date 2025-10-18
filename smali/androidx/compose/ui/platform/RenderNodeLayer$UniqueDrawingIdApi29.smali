@@ -57,7 +57,7 @@
 .method private constructor <init>()V
     .locals 0
 
-    .line 103
+    .line 105
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -68,11 +68,7 @@
     .annotation runtime Lkotlin/jvm/JvmStatic;
     .end annotation
 
-    const-string/jumbo v0, "view"
-
-    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 107
+    .line 109
     invoke-virtual {p0}, Landroid/view/View;->getUniqueDrawingId()J
 
     move-result-wide v0

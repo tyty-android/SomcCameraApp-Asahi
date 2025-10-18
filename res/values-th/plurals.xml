@@ -4,20 +4,4 @@
         <item quantity="other">การแจ้งเตือนใหม่ %d รายการ</item>
         <item quantity="one">การแจ้งเตือนใหม่ %d รายการ</item>
     </plurals>
-    <plurals name="mv_minute_remaining_txt">
-        <item quantity="other">เหลือ %1$d นาที</item>
-        <item quantity="one">เหลือ 1 นาที</item>
-    </plurals>
-    <plurals name="mv_minute_txt">
-        <item quantity="other">%1$d นาที</item>
-        <item quantity="one">1 นาที</item>
-    </plurals>
-    <plurals name="mv_second_remaining_txt">
-        <item quantity="other">เหลือ %1$d วินาที</item>
-        <item quantity="one">เหลือ 1 วินาที</item>
-    </plurals>
-    <plurals name="mv_second_txt">
-        <item quantity="other">%1$d วินาที</item>
-        <item quantity="one">1 วินาที</item>
-    </plurals>
 </resources>

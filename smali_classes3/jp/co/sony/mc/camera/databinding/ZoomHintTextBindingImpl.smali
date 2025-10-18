@@ -605,7 +605,7 @@
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    const/16 p1, 0xf
+    const/16 p1, 0x11
 
     .line 113
     invoke-virtual {p0, p1}, Ljp/co/sony/mc/camera/databinding/ZoomHintTextBindingImpl;->notifyPropertyChanged(I)V
@@ -651,7 +651,7 @@
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    const/16 p1, 0x13
+    const/16 p1, 0x16
 
     .line 91
     invoke-virtual {p0, p1}, Ljp/co/sony/mc/camera/databinding/ZoomHintTextBindingImpl;->notifyPropertyChanged(I)V
@@ -676,7 +676,7 @@
 .method public setVariable(ILjava/lang/Object;)Z
     .locals 1
 
-    const/16 v0, 0x13
+    const/16 v0, 0x16
 
     if-ne v0, p1, :cond_0
 
@@ -688,7 +688,7 @@
     goto :goto_0
 
     :cond_0
-    const/16 v0, 0x22
+    const/16 v0, 0x25
 
     if-ne v0, p1, :cond_1
 
@@ -700,7 +700,7 @@
     goto :goto_0
 
     :cond_1
-    const/16 v0, 0x24
+    const/16 v0, 0x27
 
     if-ne v0, p1, :cond_2
 
@@ -712,7 +712,7 @@
     goto :goto_0
 
     :cond_2
-    const/4 v0, 0x7
+    const/16 v0, 0x8
 
     if-ne v0, p1, :cond_3
 
@@ -724,7 +724,7 @@
     goto :goto_0
 
     :cond_3
-    const/16 v0, 0xf
+    const/16 v0, 0x11
 
     if-ne v0, p1, :cond_4
 
@@ -736,7 +736,7 @@
     goto :goto_0
 
     :cond_4
-    const/4 v0, 0x2
+    const/4 v0, 0x3
 
     if-ne v0, p1, :cond_5
 
@@ -790,7 +790,7 @@
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    const/16 p1, 0x24
+    const/16 p1, 0x27
 
     .line 102
     invoke-virtual {p0, p1}, Ljp/co/sony/mc/camera/databinding/ZoomHintTextBindingImpl;->notifyPropertyChanged(I)V

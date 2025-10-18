@@ -6,7 +6,7 @@
 # annotations
 .annotation runtime Lkotlin/Metadata;
     d1 = {
-        "\u0000D\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0010\u000b\n\u0002\u0008\u0008\n\u0002\u0018\u0002\n\u0002\u0008\u0005\n\u0002\u0010\u0002\n\u0002\u0008\u0004\u0008\u0007\u0018\u00002\u00020\u0001B\u001d\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\u0006\u0010\u0004\u001a\u00020\u0005\u0012\u0006\u0010\u0006\u001a\u00020\u0007\u00a2\u0006\u0002\u0010\u0008J\u0016\u0010\u001c\u001a\u00020\u001d2\u0006\u0010\u001e\u001a\u00020\u000e2\u0006\u0010\u001f\u001a\u00020\u000eJ\u0006\u0010 \u001a\u00020\u001dR\u0014\u0010\t\u001a\u0008\u0012\u0004\u0012\u00020\u000b0\nX\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u0002\u001a\u00020\u0003X\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u0006\u001a\u00020\u0007X\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u0004\u001a\u00020\u0005X\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u0017\u0010\u000c\u001a\u0008\u0012\u0004\u0012\u00020\u000e0\r\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\u000c\u0010\u000fR\u0017\u0010\u0010\u001a\u0008\u0012\u0004\u0012\u00020\u000e0\r\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\u0010\u0010\u000fR\u0017\u0010\u0011\u001a\u0008\u0012\u0004\u0012\u00020\u000e0\r\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\u0011\u0010\u000fR\u0017\u0010\u0012\u001a\u0008\u0012\u0004\u0012\u00020\u000e0\r\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\u0012\u0010\u000fR\u0017\u0010\u0013\u001a\u0008\u0012\u0004\u0012\u00020\u000b0\n\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\u0014\u0010\u0015R\u001c\u0010\u0016\u001a\u0004\u0018\u00010\u0017X\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\u0008\u0018\u0010\u0019\"\u0004\u0008\u001a\u0010\u001b\u00a8\u0006!"
+        "\u0000F\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0003\n\u0002\u0018\u0002\n\u0002\u0008\u0005\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0004\n\u0002\u0018\u0002\n\u0002\u0010\u000b\n\u0002\u0008\u0005\n\u0002\u0010\u0002\n\u0002\u0008\u0004\u0008\u0007\u0018\u00002\u00020\u0001B\u001f\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\u0006\u0010\u0004\u001a\u00020\u0005\u0012\u0006\u0010\u0006\u001a\u00020\u0007\u00a2\u0006\u0004\u0008\u0008\u0010\tJ\u0006\u0010\u001d\u001a\u00020\u001eJ\u0016\u0010\u001f\u001a\u00020\u001e2\u0006\u0010 \u001a\u00020\u00182\u0006\u0010!\u001a\u00020\u0018R\u000e\u0010\u0002\u001a\u00020\u0003X\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u0004\u001a\u00020\u0005X\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u0006\u001a\u00020\u0007X\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u001c\u0010\n\u001a\u0004\u0018\u00010\u000bX\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\u0008\u000c\u0010\r\"\u0004\u0008\u000e\u0010\u000fR\u0014\u0010\u0010\u001a\u0008\u0012\u0004\u0012\u00020\u00120\u0011X\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u0017\u0010\u0013\u001a\u0008\u0012\u0004\u0012\u00020\u00120\u0011\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\u0014\u0010\u0015R\u0017\u0010\u0016\u001a\u0008\u0012\u0004\u0012\u00020\u00180\u0017\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\u0016\u0010\u0019R\u0017\u0010\u001a\u001a\u0008\u0012\u0004\u0012\u00020\u00180\u0017\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\u001a\u0010\u0019R\u0017\u0010\u001b\u001a\u0008\u0012\u0004\u0012\u00020\u00180\u0017\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\u001b\u0010\u0019R\u0017\u0010\u001c\u001a\u0008\u0012\u0004\u0012\u00020\u00180\u0017\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\u001c\u0010\u0019\u00a8\u0006\""
     }
     d2 = {
         "Ljp/co/sony/mc/camera/view/uistate/TeleMacroUiState;",
@@ -17,37 +17,38 @@
         "Ljp/co/sony/mc/camera/view/viewmodel/CameraStatusModel;",
         "cameraSettingsModel",
         "Ljp/co/sony/mc/camera/view/viewmodel/CameraSettingsModel;",
+        "<init>",
         "(Ljp/co/sony/mc/camera/view/uistate/BasicModeCommonUiState;Ljp/co/sony/mc/camera/view/viewmodel/CameraStatusModel;Ljp/co/sony/mc/camera/view/viewmodel/CameraSettingsModel;)V",
-        "_onFocusChangedByRemoconEvent",
-        "Ljp/co/sony/mc/camera/view/viewmodel/LiveEvent;",
-        "Ljp/co/sony/mc/camera/view/uistate/ProModeFocusUiState$FocusAdjustAction;",
-        "isFocusMagMenuVisible",
-        "Landroidx/lifecycle/LiveData;",
-        "",
-        "()Landroidx/lifecycle/LiveData;",
-        "isTeleMacroBarGone",
-        "isToggleMacroModeButtonEnable",
-        "isToggleMacroModeButtonVisible",
-        "onFocusChangedByRemoconEvent",
-        "getOnFocusChangedByRemoconEvent",
-        "()Ljp/co/sony/mc/camera/view/viewmodel/LiveEvent;",
         "operator",
         "Ljp/co/sony/mc/camera/view/CameraOperator;",
         "getOperator",
         "()Ljp/co/sony/mc/camera/view/CameraOperator;",
         "setOperator",
         "(Ljp/co/sony/mc/camera/view/CameraOperator;)V",
-        "onFocusChangedByRemocon",
+        "_onFocusChangedByRemoconEvent",
+        "Ljp/co/sony/mc/camera/view/viewmodel/LiveEvent;",
+        "Ljp/co/sony/mc/camera/view/uistate/ProModeFocusUiState$FocusAdjustAction;",
+        "onFocusChangedByRemoconEvent",
+        "getOnFocusChangedByRemoconEvent",
+        "()Ljp/co/sony/mc/camera/view/viewmodel/LiveEvent;",
+        "isTeleMacroBarGone",
+        "Landroidx/lifecycle/LiveData;",
         "",
+        "()Landroidx/lifecycle/LiveData;",
+        "isFocusMagMenuVisible",
+        "isToggleMacroModeButtonEnable",
+        "isToggleMacroModeButtonVisible",
+        "toggleMacroMode",
+        "",
+        "onFocusChangedByRemocon",
         "isPlusKey",
         "isKeyDown",
-        "toggleMacroMode",
         "SomcCamera_release"
     }
     k = 0x1
     mv = {
-        0x1,
-        0x9,
+        0x2,
+        0x0,
         0x0
     }
     xi = 0x30
@@ -129,6 +130,46 @@
 
 
 # direct methods
+.method public static synthetic $r8$lambda$8V_mmQ4y9gLLi4sM0rGeKNY6Xdc(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Ljp/co/sony/mc/camera/view/uistate/BasicModeMenuType;)Z
+    .locals 0
+
+    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/view/uistate/TeleMacroUiState;->isFocusMagMenuVisible$lambda$1(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Ljp/co/sony/mc/camera/view/uistate/BasicModeMenuType;)Z
+
+    move-result p0
+
+    return p0
+.end method
+
+.method public static synthetic $r8$lambda$8WburU7YYhElPW57VtnERhsbOo0(ZLjava/lang/Boolean;)Z
+    .locals 0
+
+    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/view/uistate/TeleMacroUiState;->isToggleMacroModeButtonEnable$lambda$2(ZLjava/lang/Boolean;)Z
+
+    move-result p0
+
+    return p0
+.end method
+
+.method public static synthetic $r8$lambda$OqZQrAPnPg4D2e5DxyLCzD1RPtg(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Z)Z
+    .locals 0
+
+    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/view/uistate/TeleMacroUiState;->isToggleMacroModeButtonVisible$lambda$3(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Z)Z
+
+    move-result p0
+
+    return p0
+.end method
+
+.method public static synthetic $r8$lambda$QBHtTIGddsND6TloqesXT343Dm8(ZLjp/co/sony/mc/camera/view/uistate/BasicModeMenuType;)Z
+    .locals 0
+
+    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/view/uistate/TeleMacroUiState;->isTeleMacroBarGone$lambda$0(ZLjp/co/sony/mc/camera/view/uistate/BasicModeMenuType;)Z
+
+    move-result p0
+
+    return p0
+.end method
+
 .method static constructor <clinit>()V
     .locals 0
 
@@ -185,11 +226,11 @@
 
     move-result-object v2
 
+    new-instance v3, Ljp/co/sony/mc/camera/view/uistate/TeleMacroUiState$$ExternalSyntheticLambda0;
+
+    invoke-direct {v3}, Ljp/co/sony/mc/camera/view/uistate/TeleMacroUiState$$ExternalSyntheticLambda0;-><init>()V
+
     .line 28
-    sget-object v3, Ljp/co/sony/mc/camera/view/uistate/TeleMacroUiState$isTeleMacroBarGone$1;->INSTANCE:Ljp/co/sony/mc/camera/view/uistate/TeleMacroUiState$isTeleMacroBarGone$1;
-
-    check-cast v3, Lkotlin/jvm/functions/Function2;
-
     invoke-virtual {v0, v1, v2, v3}, Ljp/co/sony/mc/camera/view/viewmodel/LiveDataMediators;->notNulls(Landroidx/lifecycle/LiveData;Landroidx/lifecycle/LiveData;Lkotlin/jvm/functions/Function2;)Landroidx/lifecycle/LiveData;
 
     move-result-object v0
@@ -209,11 +250,11 @@
 
     move-result-object p1
 
+    new-instance v2, Ljp/co/sony/mc/camera/view/uistate/TeleMacroUiState$$ExternalSyntheticLambda1;
+
+    invoke-direct {v2}, Ljp/co/sony/mc/camera/view/uistate/TeleMacroUiState$$ExternalSyntheticLambda1;-><init>()V
+
     .line 36
-    sget-object v2, Ljp/co/sony/mc/camera/view/uistate/TeleMacroUiState$isFocusMagMenuVisible$1;->INSTANCE:Ljp/co/sony/mc/camera/view/uistate/TeleMacroUiState$isFocusMagMenuVisible$1;
-
-    check-cast v2, Lkotlin/jvm/functions/Function2;
-
     invoke-virtual {v0, v1, p1, v2}, Ljp/co/sony/mc/camera/view/viewmodel/LiveDataMediators;->notNulls(Landroidx/lifecycle/LiveData;Landroidx/lifecycle/LiveData;Lkotlin/jvm/functions/Function2;)Landroidx/lifecycle/LiveData;
 
     move-result-object p1
@@ -233,11 +274,11 @@
 
     move-result-object v1
 
+    new-instance v2, Ljp/co/sony/mc/camera/view/uistate/TeleMacroUiState$$ExternalSyntheticLambda2;
+
+    invoke-direct {v2}, Ljp/co/sony/mc/camera/view/uistate/TeleMacroUiState$$ExternalSyntheticLambda2;-><init>()V
+
     .line 43
-    sget-object v2, Ljp/co/sony/mc/camera/view/uistate/TeleMacroUiState$isToggleMacroModeButtonEnable$1;->INSTANCE:Ljp/co/sony/mc/camera/view/uistate/TeleMacroUiState$isToggleMacroModeButtonEnable$1;
-
-    check-cast v2, Lkotlin/jvm/functions/Function2;
-
     invoke-virtual {p1, v0, v1, v2}, Ljp/co/sony/mc/camera/view/viewmodel/LiveDataMediators;->notNulls(Landroidx/lifecycle/LiveData;Landroidx/lifecycle/LiveData;Lkotlin/jvm/functions/Function2;)Landroidx/lifecycle/LiveData;
 
     move-result-object p1
@@ -257,11 +298,11 @@
 
     move-result-object p2
 
+    new-instance v0, Ljp/co/sony/mc/camera/view/uistate/TeleMacroUiState$$ExternalSyntheticLambda3;
+
+    invoke-direct {v0}, Ljp/co/sony/mc/camera/view/uistate/TeleMacroUiState$$ExternalSyntheticLambda3;-><init>()V
+
     .line 50
-    sget-object v0, Ljp/co/sony/mc/camera/view/uistate/TeleMacroUiState$isToggleMacroModeButtonVisible$1;->INSTANCE:Ljp/co/sony/mc/camera/view/uistate/TeleMacroUiState$isToggleMacroModeButtonVisible$1;
-
-    check-cast v0, Lkotlin/jvm/functions/Function2;
-
     invoke-virtual {p1, p3, p2, v0}, Ljp/co/sony/mc/camera/view/viewmodel/LiveDataMediators;->notNulls(Landroidx/lifecycle/LiveData;Landroidx/lifecycle/LiveData;Lkotlin/jvm/functions/Function2;)Landroidx/lifecycle/LiveData;
 
     move-result-object p1
@@ -269,6 +310,115 @@
     iput-object p1, p0, Ljp/co/sony/mc/camera/view/uistate/TeleMacroUiState;->isToggleMacroModeButtonVisible:Landroidx/lifecycle/LiveData;
 
     return-void
+.end method
+
+.method private static final isFocusMagMenuVisible$lambda$1(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Ljp/co/sony/mc/camera/view/uistate/BasicModeMenuType;)Z
+    .locals 1
+
+    const-string v0, "layoutType"
+
+    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 40
+    invoke-virtual {p0}, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->isMacro()Z
+
+    move-result p0
+
+    if-eqz p0, :cond_0
+
+    instance-of p0, p1, Ljp/co/sony/mc/camera/view/uistate/BasicModeMenuType$FocusMagnification;
+
+    if-eqz p0, :cond_0
+
+    const/4 p0, 0x1
+
+    goto :goto_0
+
+    :cond_0
+    const/4 p0, 0x0
+
+    :goto_0
+    return p0
+.end method
+
+.method private static final isTeleMacroBarGone$lambda$0(ZLjp/co/sony/mc/camera/view/uistate/BasicModeMenuType;)Z
+    .locals 1
+
+    const-string v0, "layoutType"
+
+    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+
+    if-eqz p0, :cond_1
+
+    .line 32
+    instance-of p0, p1, Ljp/co/sony/mc/camera/view/uistate/BasicModeMenuType$ColorToneProfile;
+
+    if-nez p0, :cond_1
+
+    .line 33
+    instance-of p0, p1, Ljp/co/sony/mc/camera/view/uistate/BasicModeMenuType$QuickSetting;
+
+    if-eqz p0, :cond_0
+
+    goto :goto_0
+
+    :cond_0
+    const/4 p0, 0x0
+
+    goto :goto_1
+
+    :cond_1
+    :goto_0
+    const/4 p0, 0x1
+
+    :goto_1
+    return p0
+.end method
+
+.method private static final isToggleMacroModeButtonEnable$lambda$2(ZLjava/lang/Boolean;)Z
+    .locals 0
+
+    if-eqz p0, :cond_0
+
+    .line 47
+    invoke-virtual {p1}, Ljava/lang/Boolean;->booleanValue()Z
+
+    move-result p0
+
+    if-nez p0, :cond_0
+
+    const/4 p0, 0x1
+
+    goto :goto_0
+
+    :cond_0
+    const/4 p0, 0x0
+
+    :goto_0
+    return p0
+.end method
+
+.method private static final isToggleMacroModeButtonVisible$lambda$3(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Z)Z
+    .locals 0
+
+    .line 54
+    invoke-virtual {p0}, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->isMacro()Z
+
+    move-result p0
+
+    if-eqz p0, :cond_0
+
+    if-nez p1, :cond_0
+
+    const/4 p0, 0x1
+
+    goto :goto_0
+
+    :cond_0
+    const/4 p0, 0x0
+
+    :goto_0
+    return p0
 .end method
 
 

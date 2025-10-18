@@ -1,6 +1,6 @@
 .class public final Landroidx/compose/runtime/ParcelableSnapshotMutableFloatState;
 .super Landroidx/compose/runtime/SnapshotMutableFloatStateImpl;
-.source "ParcelableSnapshotMutableFloatState.kt"
+.source "ParcelableSnapshotMutableFloatState.android.kt"
 
 # interfaces
 .implements Landroid/os/Parcelable;
@@ -45,6 +45,8 @@
 
 
 # static fields
+.field public static final $stable:I
+
 .field public static final CREATOR:Landroid/os/Parcelable$Creator;
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -103,10 +105,6 @@
 
 .method public writeToParcel(Landroid/os/Parcel;I)V
     .locals 0
-
-    const-string p2, "parcel"
-
-    invoke-static {p1, p2}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 29
     invoke-virtual {p0}, Landroidx/compose/runtime/ParcelableSnapshotMutableFloatState;->getFloatValue()F

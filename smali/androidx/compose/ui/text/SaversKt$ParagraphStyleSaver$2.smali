@@ -27,7 +27,7 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/SourceDebugExtension;
-    value = "SMAP\nSavers.kt\nKotlin\n*S Kotlin\n*F\n+ 1 Savers.kt\nandroidx/compose/ui/text/SaversKt$ParagraphStyleSaver$2\n+ 2 Savers.kt\nandroidx/compose/ui/text/SaversKt\n+ 3 fake.kt\nkotlin/jvm/internal/FakeKt\n*L\n1#1,421:1\n70#2:422\n70#2:424\n55#2,2:426\n55#2,2:429\n1#3:423\n1#3:425\n1#3:428\n1#3:431\n*S KotlinDebug\n*F\n+ 1 Savers.kt\nandroidx/compose/ui/text/SaversKt$ParagraphStyleSaver$2\n*L\n213#1:422\n214#1:424\n215#1:426,2\n216#1:429,2\n213#1:423\n214#1:425\n215#1:428\n216#1:431\n*E\n"
+    value = "SMAP\nSavers.kt\nKotlin\n*S Kotlin\n*F\n+ 1 Savers.kt\nandroidx/compose/ui/text/SaversKt$ParagraphStyleSaver$2\n+ 2 Savers.kt\nandroidx/compose/ui/text/SaversKt\n+ 3 fake.kt\nkotlin/jvm/internal/FakeKt\n*L\n1#1,454:1\n91#2:455\n91#2:457\n60#2,2:459\n60#2,2:462\n1#3:456\n1#3:458\n1#3:461\n1#3:464\n*S KotlinDebug\n*F\n+ 1 Savers.kt\nandroidx/compose/ui/text/SaversKt$ParagraphStyleSaver$2\n*L\n234#1:455\n235#1:457\n236#1:459,2\n237#1:462,2\n234#1:456\n235#1:458\n236#1:461\n237#1:464\n*E\n"
 .end annotation
 
 .annotation runtime Lkotlin/Metadata;
@@ -83,24 +83,24 @@
 .method public final invoke(Ljava/lang/Object;)Landroidx/compose/ui/text/ParagraphStyle;
     .locals 14
 
-    const-string p0, "it"
+    .line 232
+    const-string p0, "null cannot be cast to non-null type kotlin.collections.List<kotlin.Any?>"
 
-    invoke-static {p1, p0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, p0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 211
     check-cast p1, Ljava/util/List;
 
-    .line 212
+    .line 233
     new-instance p0, Landroidx/compose/ui/text/ParagraphStyle;
 
     const/4 v0, 0x0
 
-    .line 426
+    .line 459
     invoke-static {v0}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
     move-result-object v1
 
-    .line 213
+    .line 234
     invoke-interface {p1, v0}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
     move-result-object v0
@@ -109,40 +109,48 @@
 
     if-eqz v0, :cond_0
 
-    .line 422
+    .line 455
     check-cast v0, Landroidx/compose/ui/text/style/TextAlign;
-
-    move-object v3, v0
 
     goto :goto_0
 
     :cond_0
-    move-object v3, v2
+    move-object v0, v2
 
     :goto_0
+    invoke-static {v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;)V
+
+    invoke-virtual {v0}, Landroidx/compose/ui/text/style/TextAlign;->unbox-impl()I
+
+    move-result v3
+
     const/4 v0, 0x1
 
-    .line 214
+    .line 235
     invoke-interface {p1, v0}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
     move-result-object v0
 
     if-eqz v0, :cond_1
 
-    .line 424
+    .line 457
     check-cast v0, Landroidx/compose/ui/text/style/TextDirection;
-
-    move-object v4, v0
 
     goto :goto_1
 
     :cond_1
-    move-object v4, v2
+    move-object v0, v2
 
     :goto_1
+    invoke-static {v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;)V
+
+    invoke-virtual {v0}, Landroidx/compose/ui/text/style/TextDirection;->unbox-impl()I
+
+    move-result v4
+
     const/4 v0, 0x2
 
-    .line 215
+    .line 236
     invoke-interface {p1, v0}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
     move-result-object v0
@@ -153,29 +161,36 @@
 
     move-result-object v5
 
-    .line 426
+    .line 459
     invoke-static {v0, v1}, Lkotlin/jvm/internal/Intrinsics;->areEqual(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v6
 
-    if-eqz v6, :cond_3
+    if-eqz v6, :cond_2
 
-    :cond_2
-    move-object v0, v2
+    instance-of v6, v5, Landroidx/compose/ui/text/NonNullValueClassSaver;
+
+    if-nez v6, :cond_2
 
     goto :goto_2
 
-    :cond_3
-    if-eqz v0, :cond_2
+    :cond_2
+    if-eqz v0, :cond_3
 
-    .line 427
+    .line 460
     invoke-interface {v5, v0}, Landroidx/compose/runtime/saveable/Saver;->restore(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v0
 
     check-cast v0, Landroidx/compose/ui/unit/TextUnit;
 
+    goto :goto_3
+
+    :cond_3
     :goto_2
+    move-object v0, v2
+
+    :goto_3
     invoke-static {v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;)V
 
     invoke-virtual {v0}, Landroidx/compose/ui/unit/TextUnit;->unbox-impl()J
@@ -184,7 +199,7 @@
 
     const/4 v0, 0x3
 
-    .line 216
+    .line 237
     invoke-interface {p1, v0}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
     move-result-object p1
@@ -195,29 +210,36 @@
 
     move-result-object v0
 
-    .line 429
+    .line 462
     invoke-static {p1, v1}, Lkotlin/jvm/internal/Intrinsics;->areEqual(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v1
 
-    if-eqz v1, :cond_5
+    if-eqz v1, :cond_4
+
+    instance-of v1, v0, Landroidx/compose/ui/text/NonNullValueClassSaver;
+
+    if-nez v1, :cond_4
+
+    goto :goto_4
 
     :cond_4
-    move-object p1, v2
+    if-eqz p1, :cond_5
 
-    goto :goto_3
-
-    :cond_5
-    if-eqz p1, :cond_4
-
-    .line 430
+    .line 463
     invoke-interface {v0, p1}, Landroidx/compose/runtime/saveable/Saver;->restore(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p1
 
     check-cast p1, Landroidx/compose/ui/text/style/TextIndent;
 
-    :goto_3
+    goto :goto_5
+
+    :cond_5
+    :goto_4
+    move-object p1, v2
+
+    :goto_5
     const/16 v11, 0x1f0
 
     const/4 v12, 0x0
@@ -234,9 +256,9 @@
 
     move-object v0, p0
 
-    move-object v1, v3
+    move v1, v3
 
-    move-object v2, v4
+    move v2, v4
 
     move-wide v3, v5
 
@@ -246,14 +268,14 @@
 
     move-object v7, v8
 
-    move-object v8, v9
+    move v8, v9
 
-    move-object v9, v10
+    move v9, v10
 
     move-object v10, v13
 
-    .line 212
-    invoke-direct/range {v0 .. v12}, Landroidx/compose/ui/text/ParagraphStyle;-><init>(Landroidx/compose/ui/text/style/TextAlign;Landroidx/compose/ui/text/style/TextDirection;JLandroidx/compose/ui/text/style/TextIndent;Landroidx/compose/ui/text/PlatformParagraphStyle;Landroidx/compose/ui/text/style/LineHeightStyle;Landroidx/compose/ui/text/style/LineBreak;Landroidx/compose/ui/text/style/Hyphens;Landroidx/compose/ui/text/style/TextMotion;ILkotlin/jvm/internal/DefaultConstructorMarker;)V
+    .line 233
+    invoke-direct/range {v0 .. v12}, Landroidx/compose/ui/text/ParagraphStyle;-><init>(IIJLandroidx/compose/ui/text/style/TextIndent;Landroidx/compose/ui/text/PlatformParagraphStyle;Landroidx/compose/ui/text/style/LineHeightStyle;IILandroidx/compose/ui/text/style/TextMotion;ILkotlin/jvm/internal/DefaultConstructorMarker;)V
 
     return-object p0
 .end method
@@ -261,7 +283,7 @@
 .method public bridge synthetic invoke(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
 
-    .line 201
+    .line 222
     invoke-virtual {p0, p1}, Landroidx/compose/ui/text/SaversKt$ParagraphStyleSaver$2;->invoke(Ljava/lang/Object;)Landroidx/compose/ui/text/ParagraphStyle;
 
     move-result-object p0

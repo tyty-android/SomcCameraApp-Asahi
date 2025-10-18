@@ -85,11 +85,10 @@
 .method private final buildCache(Lkotlin/coroutines/jvm/internal/BaseContinuationImpl;)Lkotlin/coroutines/jvm/internal/ModuleNameRetriever$Cache;
     .locals 4
 
-    .line 76
+    .line 77
     :try_start_0
     const-class p0, Ljava/lang/Class;
 
-    .line 77
     const-string v0, "getModule"
 
     const/4 v1, 0x0

@@ -41,10 +41,10 @@
         }
     .end annotation
 
-    .line 20
+    .line 36
     invoke-direct {p0}, Ljava/util/AbstractList;-><init>()V
 
-    .line 21
+    .line 37
     invoke-static {p1}, Ljava/util/Objects;->requireNonNull(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p1
@@ -68,7 +68,7 @@
 
     return-object p1
 
-    .line 34
+    .line 52
     :cond_0
     new-instance p0, Ljava/lang/NullPointerException;
 
@@ -89,7 +89,7 @@
         }
     .end annotation
 
-    .line 44
+    .line 64
     iget-object v0, p0, Lcom/google/gson/internal/NonNullElementWrapperList;->delegate:Ljava/util/ArrayList;
 
     invoke-direct {p0, p2}, Lcom/google/gson/internal/NonNullElementWrapperList;->nonNull(Ljava/lang/Object;)Ljava/lang/Object;
@@ -104,7 +104,7 @@
 .method public clear()V
     .locals 0
 
-    .line 54
+    .line 76
     iget-object p0, p0, Lcom/google/gson/internal/NonNullElementWrapperList;->delegate:Ljava/util/ArrayList;
 
     invoke-virtual {p0}, Ljava/util/ArrayList;->clear()V
@@ -115,7 +115,7 @@
 .method public contains(Ljava/lang/Object;)Z
     .locals 0
 
-    .line 70
+    .line 97
     iget-object p0, p0, Lcom/google/gson/internal/NonNullElementWrapperList;->delegate:Ljava/util/ArrayList;
 
     invoke-virtual {p0, p1}, Ljava/util/ArrayList;->contains(Ljava/lang/Object;)Z
@@ -128,7 +128,7 @@
 .method public equals(Ljava/lang/Object;)Z
     .locals 0
 
-    .line 90
+    .line 122
     iget-object p0, p0, Lcom/google/gson/internal/NonNullElementWrapperList;->delegate:Ljava/util/ArrayList;
 
     invoke-virtual {p0, p1}, Ljava/util/ArrayList;->equals(Ljava/lang/Object;)Z
@@ -146,7 +146,7 @@
         }
     .end annotation
 
-    .line 25
+    .line 42
     iget-object p0, p0, Lcom/google/gson/internal/NonNullElementWrapperList;->delegate:Ljava/util/ArrayList;
 
     invoke-virtual {p0, p1}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
@@ -159,7 +159,7 @@
 .method public hashCode()I
     .locals 0
 
-    .line 94
+    .line 127
     iget-object p0, p0, Lcom/google/gson/internal/NonNullElementWrapperList;->delegate:Ljava/util/ArrayList;
 
     invoke-virtual {p0}, Ljava/util/ArrayList;->hashCode()I
@@ -172,7 +172,7 @@
 .method public indexOf(Ljava/lang/Object;)I
     .locals 0
 
-    .line 74
+    .line 102
     iget-object p0, p0, Lcom/google/gson/internal/NonNullElementWrapperList;->delegate:Ljava/util/ArrayList;
 
     invoke-virtual {p0, p1}, Ljava/util/ArrayList;->indexOf(Ljava/lang/Object;)I
@@ -185,7 +185,7 @@
 .method public lastIndexOf(Ljava/lang/Object;)I
     .locals 0
 
-    .line 78
+    .line 107
     iget-object p0, p0, Lcom/google/gson/internal/NonNullElementWrapperList;->delegate:Ljava/util/ArrayList;
 
     invoke-virtual {p0, p1}, Ljava/util/ArrayList;->lastIndexOf(Ljava/lang/Object;)I
@@ -203,7 +203,7 @@
         }
     .end annotation
 
-    .line 48
+    .line 69
     iget-object p0, p0, Lcom/google/gson/internal/NonNullElementWrapperList;->delegate:Ljava/util/ArrayList;
 
     invoke-virtual {p0, p1}, Ljava/util/ArrayList;->remove(I)Ljava/lang/Object;
@@ -216,7 +216,7 @@
 .method public remove(Ljava/lang/Object;)Z
     .locals 0
 
-    .line 58
+    .line 82
     iget-object p0, p0, Lcom/google/gson/internal/NonNullElementWrapperList;->delegate:Ljava/util/ArrayList;
 
     invoke-virtual {p0, p1}, Ljava/util/ArrayList;->remove(Ljava/lang/Object;)Z
@@ -236,7 +236,7 @@
         }
     .end annotation
 
-    .line 62
+    .line 87
     iget-object p0, p0, Lcom/google/gson/internal/NonNullElementWrapperList;->delegate:Ljava/util/ArrayList;
 
     invoke-virtual {p0, p1}, Ljava/util/ArrayList;->removeAll(Ljava/util/Collection;)Z
@@ -256,7 +256,7 @@
         }
     .end annotation
 
-    .line 66
+    .line 92
     iget-object p0, p0, Lcom/google/gson/internal/NonNullElementWrapperList;->delegate:Ljava/util/ArrayList;
 
     invoke-virtual {p0, p1}, Ljava/util/ArrayList;->retainAll(Ljava/util/Collection;)Z
@@ -274,7 +274,7 @@
         }
     .end annotation
 
-    .line 40
+    .line 59
     iget-object v0, p0, Lcom/google/gson/internal/NonNullElementWrapperList;->delegate:Ljava/util/ArrayList;
 
     invoke-direct {p0, p2}, Lcom/google/gson/internal/NonNullElementWrapperList;->nonNull(Ljava/lang/Object;)Ljava/lang/Object;
@@ -291,7 +291,7 @@
 .method public size()I
     .locals 0
 
-    .line 29
+    .line 47
     iget-object p0, p0, Lcom/google/gson/internal/NonNullElementWrapperList;->delegate:Ljava/util/ArrayList;
 
     invoke-virtual {p0}, Ljava/util/ArrayList;->size()I
@@ -304,7 +304,7 @@
 .method public toArray()[Ljava/lang/Object;
     .locals 0
 
-    .line 82
+    .line 112
     iget-object p0, p0, Lcom/google/gson/internal/NonNullElementWrapperList;->delegate:Ljava/util/ArrayList;
 
     invoke-virtual {p0}, Ljava/util/ArrayList;->toArray()[Ljava/lang/Object;
@@ -324,7 +324,7 @@
         }
     .end annotation
 
-    .line 86
+    .line 117
     iget-object p0, p0, Lcom/google/gson/internal/NonNullElementWrapperList;->delegate:Ljava/util/ArrayList;
 
     invoke-virtual {p0, p1}, Ljava/util/ArrayList;->toArray([Ljava/lang/Object;)[Ljava/lang/Object;

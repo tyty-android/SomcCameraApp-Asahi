@@ -14,15 +14,15 @@
 
 
 # static fields
-.field public static final copy_toast_msg:I = 0x7f1104bd
+.field public static final copy_toast_msg:I = 0x7f1104f0
 
-.field public static final fallback_menu_item_copy_link:I = 0x7f1104eb
+.field public static final fallback_menu_item_copy_link:I = 0x7f11051a
 
-.field public static final fallback_menu_item_open_in_browser:I = 0x7f1104ec
+.field public static final fallback_menu_item_open_in_browser:I = 0x7f11051b
 
-.field public static final fallback_menu_item_share_link:I = 0x7f1104ed
+.field public static final fallback_menu_item_share_link:I = 0x7f11051c
 
-.field public static final status_bar_notification_info_overflow:I = 0x7f110624
+.field public static final status_bar_notification_info_overflow:I = 0x7f1105b0
 
 
 # direct methods

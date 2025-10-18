@@ -22,7 +22,7 @@
 
 
 # instance fields
-.field private delegate:Lcom/google/gson/TypeAdapter;
+.field private volatile delegate:Lcom/google/gson/TypeAdapter;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Lcom/google/gson/TypeAdapter<",
@@ -72,14 +72,14 @@
         }
     .end annotation
 
-    .line 142
+    .line 149
     iget-object v0, p0, Lcom/google/gson/internal/Excluder$1;->delegate:Lcom/google/gson/TypeAdapter;
 
     if-eqz v0, :cond_0
 
     goto :goto_0
 
-    .line 145
+    .line 150
     :cond_0
     iget-object v0, p0, Lcom/google/gson/internal/Excluder$1;->val$gson:Lcom/google/gson/Gson;
 
@@ -115,19 +115,19 @@
         }
     .end annotation
 
-    .line 126
+    .line 130
     iget-boolean v0, p0, Lcom/google/gson/internal/Excluder$1;->val$skipDeserialize:Z
 
     if-eqz v0, :cond_0
 
-    .line 127
+    .line 131
     invoke-virtual {p1}, Lcom/google/gson/stream/JsonReader;->skipValue()V
 
     const/4 p0, 0x0
 
     return-object p0
 
-    .line 130
+    .line 134
     :cond_0
     invoke-direct {p0}, Lcom/google/gson/internal/Excluder$1;->delegate()Lcom/google/gson/TypeAdapter;
 
@@ -156,17 +156,17 @@
         }
     .end annotation
 
-    .line 134
+    .line 139
     iget-boolean v0, p0, Lcom/google/gson/internal/Excluder$1;->val$skipSerialize:Z
 
     if-eqz v0, :cond_0
 
-    .line 135
+    .line 140
     invoke-virtual {p1}, Lcom/google/gson/stream/JsonWriter;->nullValue()Lcom/google/gson/stream/JsonWriter;
 
     return-void
 
-    .line 138
+    .line 143
     :cond_0
     invoke-direct {p0}, Lcom/google/gson/internal/Excluder$1;->delegate()Lcom/google/gson/TypeAdapter;
 

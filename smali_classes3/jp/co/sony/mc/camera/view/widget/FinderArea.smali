@@ -92,7 +92,7 @@
 
     move-result-object p2
 
-    const v0, 0x7f0707a9
+    const v0, 0x7f0707f4
 
     invoke-virtual {p2, v0}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
@@ -174,18 +174,22 @@
 .end method
 
 .method public onDoubleCanceled()V
-    .locals 1
+    .locals 3
 
     .line 298
     sget-boolean v0, Ljp/co/sony/mc/camera/util/CamLog;->VERBOSE:Z
 
+    const/4 v1, 0x0
+
     if-eqz v0, :cond_0
 
-    const-string v0, "onDoubleCanceled: "
+    const/4 v0, 0x1
 
-    filled-new-array {v0}, [Ljava/lang/String;
+    new-array v0, v0, [Ljava/lang/String;
 
-    move-result-object v0
+    const-string v2, "onDoubleCanceled: "
+
+    aput-object v2, v0, v1
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
@@ -197,14 +201,12 @@
 
     return-void
 
-    :cond_1
-    const/4 v0, 0x0
-
     .line 306
-    iput-boolean v0, p0, Ljp/co/sony/mc/camera/view/widget/FinderArea;->mIsTouched:Z
+    :cond_1
+    iput-boolean v1, p0, Ljp/co/sony/mc/camera/view/widget/FinderArea;->mIsTouched:Z
 
     .line 307
-    iput-boolean v0, p0, Ljp/co/sony/mc/camera/view/widget/FinderArea;->mIsForceTouchCanceled:Z
+    iput-boolean v1, p0, Ljp/co/sony/mc/camera/view/widget/FinderArea;->mIsForceTouchCanceled:Z
 
     .line 309
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/widget/FinderArea;->mListener:Ljp/co/sony/mc/camera/view/widget/FinderArea$OnFinderAreaTouchListener;
@@ -373,18 +375,22 @@
 .end method
 
 .method public onOverTripleCanceled()V
-    .locals 1
+    .locals 3
 
     .line 316
     sget-boolean v0, Ljp/co/sony/mc/camera/util/CamLog;->VERBOSE:Z
 
+    const/4 v1, 0x0
+
     if-eqz v0, :cond_0
 
-    const-string v0, "onOverTripleCanceled: "
+    const/4 v0, 0x1
 
-    filled-new-array {v0}, [Ljava/lang/String;
+    new-array v0, v0, [Ljava/lang/String;
 
-    move-result-object v0
+    const-string v2, "onOverTripleCanceled: "
+
+    aput-object v2, v0, v1
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
@@ -396,14 +402,12 @@
 
     return-void
 
-    :cond_1
-    const/4 v0, 0x0
-
     .line 324
-    iput-boolean v0, p0, Ljp/co/sony/mc/camera/view/widget/FinderArea;->mIsTouched:Z
+    :cond_1
+    iput-boolean v1, p0, Ljp/co/sony/mc/camera/view/widget/FinderArea;->mIsTouched:Z
 
     .line 325
-    iput-boolean v0, p0, Ljp/co/sony/mc/camera/view/widget/FinderArea;->mIsForceTouchCanceled:Z
+    iput-boolean v1, p0, Ljp/co/sony/mc/camera/view/widget/FinderArea;->mIsForceTouchCanceled:Z
 
     .line 327
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/widget/FinderArea;->mListener:Ljp/co/sony/mc/camera/view/widget/FinderArea$OnFinderAreaTouchListener;

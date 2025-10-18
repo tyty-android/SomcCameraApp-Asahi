@@ -98,71 +98,71 @@
 
     if-eqz v0, :cond_0
 
-    new-instance v0, Ljava/lang/StringBuilder;
+    new-array v0, v3, [Ljava/lang/String;
 
-    const-string v4, "Get "
+    new-instance v4, Ljava/lang/StringBuilder;
 
-    invoke-direct {v0, v4}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+    const-string v5, "Get "
 
-    iget-object v4, p1, Landroid/hardware/SensorEvent;->sensor:Landroid/hardware/Sensor;
+    invoke-direct {v4, v5}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
-    invoke-virtual {v4}, Landroid/hardware/Sensor;->getName()Ljava/lang/String;
+    iget-object v5, p1, Landroid/hardware/SensorEvent;->sensor:Landroid/hardware/Sensor;
+
+    invoke-virtual {v5}, Landroid/hardware/Sensor;->getName()Ljava/lang/String;
+
+    move-result-object v5
+
+    invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v4
 
-    invoke-virtual {v0, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    const-string v5, ": x="
 
-    move-result-object v0
+    invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    const-string v4, ": x="
+    move-result-object v4
 
-    invoke-virtual {v0, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    iget-object v5, p1, Landroid/hardware/SensorEvent;->values:[F
 
-    move-result-object v0
+    aget v5, v5, v2
 
-    iget-object v4, p1, Landroid/hardware/SensorEvent;->values:[F
+    invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(F)Ljava/lang/StringBuilder;
 
-    aget v4, v4, v2
+    move-result-object v4
 
-    invoke-virtual {v0, v4}, Ljava/lang/StringBuilder;->append(F)Ljava/lang/StringBuilder;
+    const-string v5, ", y="
 
-    move-result-object v0
+    invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    const-string v4, ", y="
+    move-result-object v4
 
-    invoke-virtual {v0, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    iget-object v5, p1, Landroid/hardware/SensorEvent;->values:[F
 
-    move-result-object v0
+    aget v5, v5, v3
 
-    iget-object v4, p1, Landroid/hardware/SensorEvent;->values:[F
+    invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(F)Ljava/lang/StringBuilder;
 
-    aget v4, v4, v3
+    move-result-object v4
 
-    invoke-virtual {v0, v4}, Ljava/lang/StringBuilder;->append(F)Ljava/lang/StringBuilder;
+    const-string v5, ", z="
 
-    move-result-object v0
+    invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    const-string v4, ", z="
+    move-result-object v4
 
-    invoke-virtual {v0, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    iget-object v5, p1, Landroid/hardware/SensorEvent;->values:[F
 
-    move-result-object v0
+    aget v5, v5, v1
 
-    iget-object v4, p1, Landroid/hardware/SensorEvent;->values:[F
+    invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(F)Ljava/lang/StringBuilder;
 
-    aget v4, v4, v1
+    move-result-object v4
 
-    invoke-virtual {v0, v4}, Ljava/lang/StringBuilder;->append(F)Ljava/lang/StringBuilder;
+    invoke-virtual {v4}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    move-result-object v0
+    move-result-object v4
 
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v0
-
-    filled-new-array {v0}, [Ljava/lang/String;
-
-    move-result-object v0
+    aput-object v4, v0, v2
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
@@ -184,9 +184,9 @@
     :cond_1
     iget-object v4, p1, Landroid/hardware/SensorEvent;->values:[F
 
-    aget v2, v4, v2
+    aget v4, v4, v2
 
-    float-to-double v4, v2
+    float-to-double v4, v4
 
     const-wide/high16 v6, 0x4000000000000000L    # 2.0
 
@@ -194,11 +194,11 @@
 
     move-result-wide v4
 
-    iget-object v2, p1, Landroid/hardware/SensorEvent;->values:[F
+    iget-object v8, p1, Landroid/hardware/SensorEvent;->values:[F
 
-    aget v2, v2, v3
+    aget v8, v8, v3
 
-    float-to-double v8, v2
+    float-to-double v8, v8
 
     .line 175
     invoke-static {v8, v9, v6, v7}, Ljava/lang/Math;->pow(DD)D
@@ -211,14 +211,14 @@
 
     aget p1, p1, v1
 
-    float-to-double v1, p1
+    float-to-double v8, p1
 
     .line 176
-    invoke-static {v1, v2, v6, v7}, Ljava/lang/Math;->pow(DD)D
+    invoke-static {v8, v9, v6, v7}, Ljava/lang/Math;->pow(DD)D
 
-    move-result-wide v1
+    move-result-wide v6
 
-    add-double/2addr v4, v1
+    add-double/2addr v4, v6
 
     double-to-float p1, v4
 
@@ -239,13 +239,15 @@
     if-eqz p0, :cond_2
 
     .line 181
-    new-instance v1, Ljava/lang/StringBuilder;
+    new-array v1, v3, [Ljava/lang/String;
 
-    const-string v2, "Detect acceleration. sum="
+    new-instance v3, Ljava/lang/StringBuilder;
 
-    invoke-direct {v1, v2}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+    const-string v4, "Detect acceleration. sum="
 
-    invoke-virtual {v1, p1}, Ljava/lang/StringBuilder;->append(F)Ljava/lang/StringBuilder;
+    invoke-direct {v3, v4}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+
+    invoke-virtual {v3, p1}, Ljava/lang/StringBuilder;->append(F)Ljava/lang/StringBuilder;
 
     move-result-object p1
 
@@ -253,11 +255,9 @@
 
     move-result-object p1
 
-    filled-new-array {p1}, [Ljava/lang/String;
+    aput-object p1, v1, v2
 
-    move-result-object p1
-
-    invoke-static {p1}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
+    invoke-static {v1}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
     .line 184
     :cond_2

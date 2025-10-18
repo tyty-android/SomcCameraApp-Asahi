@@ -53,23 +53,15 @@
 
 # direct methods
 .method public constructor <init>(Landroidx/compose/foundation/layout/WindowInsets;Landroidx/compose/foundation/layout/WindowInsets;)V
-    .locals 1
-
-    const-string v0, "first"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string v0, "second"
-
-    invoke-static {p2, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 424
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    .locals 0
 
     .line 426
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 428
     iput-object p1, p0, Landroidx/compose/foundation/layout/UnionInsets;->first:Landroidx/compose/foundation/layout/WindowInsets;
 
-    .line 427
+    .line 429
     iput-object p2, p0, Landroidx/compose/foundation/layout/UnionInsets;->second:Landroidx/compose/foundation/layout/WindowInsets;
 
     return-void
@@ -86,7 +78,7 @@
 
     return v0
 
-    .line 447
+    .line 449
     :cond_0
     instance-of v1, p1, Landroidx/compose/foundation/layout/UnionInsets;
 
@@ -96,7 +88,7 @@
 
     return v2
 
-    .line 450
+    .line 452
     :cond_1
     check-cast p1, Landroidx/compose/foundation/layout/UnionInsets;
 
@@ -132,11 +124,7 @@
 .method public getBottom(Landroidx/compose/ui/unit/Density;)I
     .locals 1
 
-    const-string v0, "density"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 439
+    .line 441
     iget-object v0, p0, Landroidx/compose/foundation/layout/UnionInsets;->first:Landroidx/compose/foundation/layout/WindowInsets;
 
     invoke-interface {v0, p1}, Landroidx/compose/foundation/layout/WindowInsets;->getBottom(Landroidx/compose/ui/unit/Density;)I
@@ -159,15 +147,7 @@
 .method public getLeft(Landroidx/compose/ui/unit/Density;Landroidx/compose/ui/unit/LayoutDirection;)I
     .locals 1
 
-    const-string v0, "density"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string v0, "layoutDirection"
-
-    invoke-static {p2, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 430
+    .line 432
     iget-object v0, p0, Landroidx/compose/foundation/layout/UnionInsets;->first:Landroidx/compose/foundation/layout/WindowInsets;
 
     invoke-interface {v0, p1, p2}, Landroidx/compose/foundation/layout/WindowInsets;->getLeft(Landroidx/compose/ui/unit/Density;Landroidx/compose/ui/unit/LayoutDirection;)I
@@ -190,15 +170,7 @@
 .method public getRight(Landroidx/compose/ui/unit/Density;Landroidx/compose/ui/unit/LayoutDirection;)I
     .locals 1
 
-    const-string v0, "density"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string v0, "layoutDirection"
-
-    invoke-static {p2, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 436
+    .line 438
     iget-object v0, p0, Landroidx/compose/foundation/layout/UnionInsets;->first:Landroidx/compose/foundation/layout/WindowInsets;
 
     invoke-interface {v0, p1, p2}, Landroidx/compose/foundation/layout/WindowInsets;->getRight(Landroidx/compose/ui/unit/Density;Landroidx/compose/ui/unit/LayoutDirection;)I
@@ -221,11 +193,7 @@
 .method public getTop(Landroidx/compose/ui/unit/Density;)I
     .locals 1
 
-    const-string v0, "density"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 433
+    .line 435
     iget-object v0, p0, Landroidx/compose/foundation/layout/UnionInsets;->first:Landroidx/compose/foundation/layout/WindowInsets;
 
     invoke-interface {v0, p1}, Landroidx/compose/foundation/layout/WindowInsets;->getTop(Landroidx/compose/ui/unit/Density;)I
@@ -248,7 +216,7 @@
 .method public hashCode()I
     .locals 1
 
-    .line 441
+    .line 443
     iget-object v0, p0, Landroidx/compose/foundation/layout/UnionInsets;->first:Landroidx/compose/foundation/layout/WindowInsets;
 
     invoke-virtual {v0}, Ljava/lang/Object;->hashCode()I
@@ -271,7 +239,7 @@
 .method public toString()Ljava/lang/String;
     .locals 2
 
-    .line 453
+    .line 455
     new-instance v0, Ljava/lang/StringBuilder;
 
     const-string v1, "("

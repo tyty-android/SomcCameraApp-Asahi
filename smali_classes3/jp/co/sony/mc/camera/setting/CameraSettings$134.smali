@@ -21,7 +21,7 @@
 .method constructor <init>()V
     .locals 0
 
-    .line 1634
+    .line 1691
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -46,13 +46,13 @@
         }
     .end annotation
 
-    .line 1638
+    .line 1695
     check-cast p1, Ljp/co/sony/mc/camera/setting/CameraSettings;
 
-    .line 1639
-    check-cast p3, Ljp/co/sony/mc/camera/configuration/parameters/LowLightMode;
+    .line 1696
+    check-cast p3, Ljp/co/sony/mc/camera/configuration/parameters/WindNoiseReduction;
 
-    invoke-static {p1, p3}, Ljp/co/sony/mc/camera/setting/CameraSettings;->-$$Nest$msetLowLightMode(Ljp/co/sony/mc/camera/setting/CameraSettings;Ljp/co/sony/mc/camera/configuration/parameters/LowLightMode;)Z
+    invoke-static {p1, p3}, Ljp/co/sony/mc/camera/setting/CameraSettings;->-$$Nest$msetWindNoiseReduction(Ljp/co/sony/mc/camera/setting/CameraSettings;Ljp/co/sony/mc/camera/configuration/parameters/WindNoiseReduction;)Z
 
     move-result p0
 

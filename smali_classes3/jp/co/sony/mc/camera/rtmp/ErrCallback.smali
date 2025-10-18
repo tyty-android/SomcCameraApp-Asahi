@@ -11,19 +11,19 @@
     d2 = {
         "Ljp/co/sony/mc/camera/rtmp/ErrCallback;",
         "",
-        "onGoogleJsonResponseError",
-        "",
-        "e",
-        "Lcom/google/api/client/googleapis/json/GoogleJsonResponseException;",
         "onRequestError",
+        "",
         "code",
         "Ljp/co/sony/mc/camera/rtmp/ErrCode;",
+        "onGoogleJsonResponseError",
+        "e",
+        "Lcom/google/api/client/googleapis/json/GoogleJsonResponseException;",
         "SomcCamera_release"
     }
     k = 0x1
     mv = {
-        0x1,
-        0x9,
+        0x2,
+        0x0,
         0x0
     }
     xi = 0x30

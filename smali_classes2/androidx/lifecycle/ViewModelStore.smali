@@ -73,7 +73,7 @@
 .method public final clear()V
     .locals 2
 
-    .line 71
+    .line 68
     iget-object v0, p0, Landroidx/lifecycle/ViewModelStore;->map:Ljava/util/Map;
 
     invoke-interface {v0}, Ljava/util/Map;->values()Ljava/util/Collection;
@@ -97,12 +97,12 @@
 
     check-cast v1, Landroidx/lifecycle/ViewModel;
 
-    .line 72
-    invoke-virtual {v1}, Landroidx/lifecycle/ViewModel;->clear()V
+    .line 69
+    invoke-virtual {v1}, Landroidx/lifecycle/ViewModel;->clear$lifecycle_viewmodel_release()V
 
     goto :goto_0
 
-    .line 74
+    .line 71
     :cond_0
     iget-object p0, p0, Landroidx/lifecycle/ViewModelStore;->map:Ljava/util/Map;
 
@@ -118,7 +118,7 @@
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 56
+    .line 54
     iget-object p0, p0, Landroidx/lifecycle/ViewModelStore;->map:Ljava/util/Map;
 
     invoke-interface {p0, p1}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
@@ -141,7 +141,7 @@
         }
     .end annotation
 
-    .line 64
+    .line 61
     new-instance v0, Ljava/util/HashSet;
 
     iget-object p0, p0, Landroidx/lifecycle/ViewModelStore;->map:Ljava/util/Map;
@@ -170,7 +170,7 @@
 
     invoke-static {p2, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 44
+    .line 43
     iget-object p0, p0, Landroidx/lifecycle/ViewModelStore;->map:Ljava/util/Map;
 
     invoke-interface {p0, p1, p2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
@@ -181,8 +181,8 @@
 
     if-eqz p0, :cond_0
 
-    .line 45
-    invoke-virtual {p0}, Landroidx/lifecycle/ViewModel;->onCleared()V
+    .line 44
+    invoke-virtual {p0}, Landroidx/lifecycle/ViewModel;->clear$lifecycle_viewmodel_release()V
 
     :cond_0
     return-void

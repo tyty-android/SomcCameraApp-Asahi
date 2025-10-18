@@ -1,6 +1,6 @@
 .class final Landroidx/compose/ui/tooling/animation/AnimationSearch$unsupportedSearch$2;
 .super Lkotlin/jvm/internal/Lambda;
-.source "AnimationSearch.kt"
+.source "AnimationSearch.android.kt"
 
 # interfaces
 .implements Lkotlin/jvm/functions/Function1;
@@ -70,7 +70,7 @@
 .method public bridge synthetic invoke(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
 
-    .line 105
+    .line 106
     check-cast p1, Landroidx/compose/animation/core/TargetBasedAnimation;
 
     invoke-virtual {p0, p1}, Landroidx/compose/ui/tooling/animation/AnimationSearch$unsupportedSearch$2;->invoke(Landroidx/compose/animation/core/TargetBasedAnimation;)V
@@ -81,7 +81,7 @@
 .end method
 
 .method public final invoke(Landroidx/compose/animation/core/TargetBasedAnimation;)V
-    .locals 1
+    .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -90,11 +90,7 @@
         }
     .end annotation
 
-    const-string v0, "it"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 107
+    .line 108
     iget-object p0, p0, Landroidx/compose/ui/tooling/animation/AnimationSearch$unsupportedSearch$2;->this$0:Landroidx/compose/ui/tooling/animation/AnimationSearch;
 
     invoke-static {p0}, Landroidx/compose/ui/tooling/animation/AnimationSearch;->access$getClock$p(Landroidx/compose/ui/tooling/animation/AnimationSearch;)Lkotlin/jvm/functions/Function0;

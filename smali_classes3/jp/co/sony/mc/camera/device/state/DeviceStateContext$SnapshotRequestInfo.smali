@@ -36,22 +36,22 @@
 .method private constructor <init>(Ljp/co/sony/mc/camera/device/state/DeviceStateContext;ZI)V
     .locals 0
 
-    .line 1205
+    .line 1221
     iput-object p1, p0, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$SnapshotRequestInfo;->this$0:Ljp/co/sony/mc/camera/device/state/DeviceStateContext;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 1206
+    .line 1222
     new-instance p1, Ljava/util/LinkedList;
 
     invoke-direct {p1}, Ljava/util/LinkedList;-><init>()V
 
     iput-object p1, p0, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$SnapshotRequestInfo;->snapshotRequestQueue:Ljava/util/LinkedList;
 
-    .line 1207
+    .line 1223
     iput-boolean p2, p0, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$SnapshotRequestInfo;->isManualFocus:Z
 
-    .line 1208
+    .line 1224
     iput p3, p0, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$SnapshotRequestInfo;->captureTemplate:I
 
     return-void
@@ -70,7 +70,7 @@
 .method addSnapshotRequest(Ljp/co/sony/mc/camera/device/SnapshotRequest;)V
     .locals 0
 
-    .line 1217
+    .line 1233
     iget-object p0, p0, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$SnapshotRequestInfo;->snapshotRequestQueue:Ljava/util/LinkedList;
 
     invoke-virtual {p0, p1}, Ljava/util/LinkedList;->add(Ljava/lang/Object;)Z
@@ -81,7 +81,7 @@
 .method clearSnapshotRequestQueue()V
     .locals 0
 
-    .line 1224
+    .line 1240
     iget-object p0, p0, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$SnapshotRequestInfo;->snapshotRequestQueue:Ljava/util/LinkedList;
 
     invoke-virtual {p0}, Ljava/util/LinkedList;->clear()V
@@ -92,7 +92,7 @@
 .method hasSnapshotRequest()Z
     .locals 0
 
-    .line 1240
+    .line 1256
     iget-object p0, p0, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$SnapshotRequestInfo;->snapshotRequestQueue:Ljava/util/LinkedList;
 
     invoke-virtual {p0}, Ljava/util/LinkedList;->isEmpty()Z
@@ -105,36 +105,40 @@
 .end method
 
 .method pollSnapshotRequest()Ljp/co/sony/mc/camera/device/SnapshotRequest;
-    .locals 2
+    .locals 3
 
-    .line 1231
-    new-instance v0, Ljava/lang/StringBuilder;
+    const/4 v0, 0x1
 
-    const-string v1, "current request queue count = "
+    .line 1247
+    new-array v0, v0, [Ljava/lang/String;
 
-    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+    new-instance v1, Ljava/lang/StringBuilder;
 
-    iget-object v1, p0, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$SnapshotRequestInfo;->snapshotRequestQueue:Ljava/util/LinkedList;
+    const-string v2, "current request queue count = "
 
-    invoke-virtual {v1}, Ljava/util/LinkedList;->size()I
+    invoke-direct {v1, v2}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
-    move-result v1
+    iget-object v2, p0, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$SnapshotRequestInfo;->snapshotRequestQueue:Ljava/util/LinkedList;
 
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+    invoke-virtual {v2}, Ljava/util/LinkedList;->size()I
 
-    move-result-object v0
+    move-result v2
 
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
-    move-result-object v0
+    move-result-object v1
 
-    filled-new-array {v0}, [Ljava/lang/String;
+    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    move-result-object v0
+    move-result-object v1
+
+    const/4 v2, 0x0
+
+    aput-object v1, v0, v2
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/util/CamLog;->i([Ljava/lang/String;)V
 
-    .line 1232
+    .line 1248
     iget-object p0, p0, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$SnapshotRequestInfo;->snapshotRequestQueue:Ljava/util/LinkedList;
 
     invoke-virtual {p0}, Ljava/util/LinkedList;->poll()Ljava/lang/Object;

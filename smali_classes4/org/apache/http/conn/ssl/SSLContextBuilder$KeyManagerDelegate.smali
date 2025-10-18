@@ -27,13 +27,13 @@
 .method constructor <init>(Ljavax/net/ssl/X509KeyManager;Lorg/apache/http/conn/ssl/PrivateKeyStrategy;)V
     .locals 0
 
-    .line 209
+    .line 206
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 210
+    .line 207
     iput-object p1, p0, Lorg/apache/http/conn/ssl/SSLContextBuilder$KeyManagerDelegate;->keyManager:Ljavax/net/ssl/X509KeyManager;
 
-    .line 211
+    .line 208
     iput-object p2, p0, Lorg/apache/http/conn/ssl/SSLContextBuilder$KeyManagerDelegate;->aliasStrategy:Lorg/apache/http/conn/ssl/PrivateKeyStrategy;
 
     return-void
@@ -44,12 +44,12 @@
 .method public chooseClientAlias([Ljava/lang/String;[Ljava/security/Principal;Ljava/net/Socket;)Ljava/lang/String;
     .locals 11
 
-    .line 223
+    .line 220
     new-instance v0, Ljava/util/HashMap;
 
     invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
 
-    .line 224
+    .line 221
     array-length v1, p1
 
     const/4 v2, 0x0
@@ -61,7 +61,7 @@
 
     aget-object v4, p1, v3
 
-    .line 225
+    .line 222
     iget-object v5, p0, Lorg/apache/http/conn/ssl/SSLContextBuilder$KeyManagerDelegate;->keyManager:Ljavax/net/ssl/X509KeyManager;
 
     invoke-interface {v5, v4, p2}, Ljavax/net/ssl/X509KeyManager;->getClientAliases(Ljava/lang/String;[Ljava/security/Principal;)[Ljava/lang/String;
@@ -70,7 +70,7 @@
 
     if-eqz v5, :cond_0
 
-    .line 227
+    .line 224
     array-length v6, v5
 
     move v7, v2
@@ -80,7 +80,7 @@
 
     aget-object v8, v5, v7
 
-    .line 228
+    .line 225
     new-instance v9, Lorg/apache/http/conn/ssl/PrivateKeyDetails;
 
     iget-object v10, p0, Lorg/apache/http/conn/ssl/SSLContextBuilder$KeyManagerDelegate;->keyManager:Ljavax/net/ssl/X509KeyManager;
@@ -102,7 +102,7 @@
 
     goto :goto_0
 
-    .line 233
+    .line 230
     :cond_1
     iget-object p0, p0, Lorg/apache/http/conn/ssl/SSLContextBuilder$KeyManagerDelegate;->aliasStrategy:Lorg/apache/http/conn/ssl/PrivateKeyStrategy;
 
@@ -116,12 +116,12 @@
 .method public chooseServerAlias(Ljava/lang/String;[Ljava/security/Principal;Ljava/net/Socket;)Ljava/lang/String;
     .locals 6
 
-    .line 245
+    .line 242
     new-instance v0, Ljava/util/HashMap;
 
     invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
 
-    .line 246
+    .line 243
     iget-object v1, p0, Lorg/apache/http/conn/ssl/SSLContextBuilder$KeyManagerDelegate;->keyManager:Ljavax/net/ssl/X509KeyManager;
 
     invoke-interface {v1, p1, p2}, Ljavax/net/ssl/X509KeyManager;->getServerAliases(Ljava/lang/String;[Ljava/security/Principal;)[Ljava/lang/String;
@@ -130,7 +130,7 @@
 
     if-eqz p2, :cond_0
 
-    .line 248
+    .line 245
     array-length v1, p2
 
     const/4 v2, 0x0
@@ -140,7 +140,7 @@
 
     aget-object v3, p2, v2
 
-    .line 249
+    .line 246
     new-instance v4, Lorg/apache/http/conn/ssl/PrivateKeyDetails;
 
     iget-object v5, p0, Lorg/apache/http/conn/ssl/SSLContextBuilder$KeyManagerDelegate;->keyManager:Ljavax/net/ssl/X509KeyManager;
@@ -157,7 +157,7 @@
 
     goto :goto_0
 
-    .line 253
+    .line 250
     :cond_0
     iget-object p0, p0, Lorg/apache/http/conn/ssl/SSLContextBuilder$KeyManagerDelegate;->aliasStrategy:Lorg/apache/http/conn/ssl/PrivateKeyStrategy;
 
@@ -171,7 +171,7 @@
 .method public getCertificateChain(Ljava/lang/String;)[Ljava/security/cert/X509Certificate;
     .locals 0
 
-    .line 258
+    .line 255
     iget-object p0, p0, Lorg/apache/http/conn/ssl/SSLContextBuilder$KeyManagerDelegate;->keyManager:Ljavax/net/ssl/X509KeyManager;
 
     invoke-interface {p0, p1}, Ljavax/net/ssl/X509KeyManager;->getCertificateChain(Ljava/lang/String;)[Ljava/security/cert/X509Certificate;
@@ -184,7 +184,7 @@
 .method public getClientAliases(Ljava/lang/String;[Ljava/security/Principal;)[Ljava/lang/String;
     .locals 0
 
-    .line 217
+    .line 214
     iget-object p0, p0, Lorg/apache/http/conn/ssl/SSLContextBuilder$KeyManagerDelegate;->keyManager:Ljavax/net/ssl/X509KeyManager;
 
     invoke-interface {p0, p1, p2}, Ljavax/net/ssl/X509KeyManager;->getClientAliases(Ljava/lang/String;[Ljava/security/Principal;)[Ljava/lang/String;
@@ -197,7 +197,7 @@
 .method public getPrivateKey(Ljava/lang/String;)Ljava/security/PrivateKey;
     .locals 0
 
-    .line 263
+    .line 260
     iget-object p0, p0, Lorg/apache/http/conn/ssl/SSLContextBuilder$KeyManagerDelegate;->keyManager:Ljavax/net/ssl/X509KeyManager;
 
     invoke-interface {p0, p1}, Ljavax/net/ssl/X509KeyManager;->getPrivateKey(Ljava/lang/String;)Ljava/security/PrivateKey;
@@ -210,7 +210,7 @@
 .method public getServerAliases(Ljava/lang/String;[Ljava/security/Principal;)[Ljava/lang/String;
     .locals 0
 
-    .line 239
+    .line 236
     iget-object p0, p0, Lorg/apache/http/conn/ssl/SSLContextBuilder$KeyManagerDelegate;->keyManager:Ljavax/net/ssl/X509KeyManager;
 
     invoke-interface {p0, p1, p2}, Ljavax/net/ssl/X509KeyManager;->getServerAliases(Ljava/lang/String;[Ljava/security/Principal;)[Ljava/lang/String;

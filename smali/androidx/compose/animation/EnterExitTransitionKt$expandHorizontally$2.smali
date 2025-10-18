@@ -88,7 +88,7 @@
 .method public bridge synthetic invoke(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 2
 
-    .line 519
+    .line 528
     check-cast p1, Landroidx/compose/ui/unit/IntSize;
 
     invoke-virtual {p1}, Landroidx/compose/ui/unit/IntSize;->unbox-impl()J
@@ -109,7 +109,7 @@
 .method public final invoke-mzRDjE0(J)J
     .locals 1
 
-    .line 520
+    .line 529
     iget-object p0, p0, Landroidx/compose/animation/EnterExitTransitionKt$expandHorizontally$2;->$initialWidth:Lkotlin/jvm/functions/Function1;
 
     invoke-static {p1, p2}, Landroidx/compose/ui/unit/IntSize;->getWidth-impl(J)I

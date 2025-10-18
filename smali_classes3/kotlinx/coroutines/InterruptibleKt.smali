@@ -29,7 +29,7 @@
     k = 0x2
     mv = {
         0x1,
-        0x6,
+        0x8,
         0x0
     }
     xi = 0x30
@@ -74,7 +74,7 @@
         }
     .end annotation
 
-    .line 42
+    .line 43
     new-instance v0, Lkotlinx/coroutines/InterruptibleKt$runInterruptible$2;
 
     const/4 v1, 0x0
@@ -97,12 +97,12 @@
 
     if-eqz p3, :cond_0
 
-    .line 40
+    .line 41
     sget-object p0, Lkotlin/coroutines/EmptyCoroutineContext;->INSTANCE:Lkotlin/coroutines/EmptyCoroutineContext;
 
     check-cast p0, Lkotlin/coroutines/CoroutineContext;
 
-    .line 39
+    .line 40
     :cond_0
     invoke-static {p0, p1, p2}, Lkotlinx/coroutines/InterruptibleKt;->runInterruptible(Lkotlin/coroutines/CoroutineContext;Lkotlin/jvm/functions/Function0;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
 
@@ -124,7 +124,7 @@
         }
     .end annotation
 
-    .line 48
+    .line 49
     :try_start_0
     new-instance v0, Lkotlinx/coroutines/ThreadState;
 
@@ -134,12 +134,12 @@
 
     invoke-direct {v0, p0}, Lkotlinx/coroutines/ThreadState;-><init>(Lkotlinx/coroutines/Job;)V
 
-    .line 49
+    .line 50
     invoke-virtual {v0}, Lkotlinx/coroutines/ThreadState;->setup()V
     :try_end_0
     .catch Ljava/lang/InterruptedException; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 51
+    .line 52
     :try_start_1
     invoke-interface {p1}, Lkotlin/jvm/functions/Function0;->invoke()Ljava/lang/Object;
 
@@ -147,7 +147,7 @@
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
-    .line 53
+    .line 54
     :try_start_2
     invoke-virtual {v0}, Lkotlinx/coroutines/ThreadState;->clearInterrupt()V
 
@@ -165,7 +165,7 @@
     :catch_0
     move-exception p0
 
-    .line 56
+    .line 57
     new-instance p1, Ljava/util/concurrent/CancellationException;
 
     const-string v0, "Blocking call was interrupted due to parent cancellation"

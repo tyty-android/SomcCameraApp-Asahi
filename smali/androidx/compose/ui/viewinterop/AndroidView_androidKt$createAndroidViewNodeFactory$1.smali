@@ -61,13 +61,15 @@
     .end annotation
 .end field
 
+.field final synthetic $ownerView:Landroid/view/View;
+
 .field final synthetic $parentReference:Landroidx/compose/runtime/CompositionContext;
 
 .field final synthetic $stateRegistry:Landroidx/compose/runtime/saveable/SaveableStateRegistry;
 
 
 # direct methods
-.method constructor <init>(Landroid/content/Context;Lkotlin/jvm/functions/Function1;Landroidx/compose/runtime/CompositionContext;Landroidx/compose/runtime/saveable/SaveableStateRegistry;I)V
+.method constructor <init>(Landroid/content/Context;Lkotlin/jvm/functions/Function1;Landroidx/compose/runtime/CompositionContext;Landroidx/compose/runtime/saveable/SaveableStateRegistry;ILandroid/view/View;)V
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -79,7 +81,9 @@
             "+TT;>;",
             "Landroidx/compose/runtime/CompositionContext;",
             "Landroidx/compose/runtime/saveable/SaveableStateRegistry;",
-            "I)V"
+            "I",
+            "Landroid/view/View;",
+            ")V"
         }
     .end annotation
 
@@ -93,6 +97,8 @@
 
     iput p5, p0, Landroidx/compose/ui/viewinterop/AndroidView_androidKt$createAndroidViewNodeFactory$1;->$compositeKeyHash:I
 
+    iput-object p6, p0, Landroidx/compose/ui/viewinterop/AndroidView_androidKt$createAndroidViewNodeFactory$1;->$ownerView:Landroid/view/View;
+
     const/4 p1, 0x0
 
     invoke-direct {p0, p1}, Lkotlin/jvm/internal/Lambda;-><init>(I)V
@@ -103,33 +109,44 @@
 
 # virtual methods
 .method public final invoke()Landroidx/compose/ui/node/LayoutNode;
-    .locals 7
-
-    .line 271
-    new-instance v6, Landroidx/compose/ui/viewinterop/ViewFactoryHolder;
-
-    .line 272
-    iget-object v1, p0, Landroidx/compose/ui/viewinterop/AndroidView_androidKt$createAndroidViewNodeFactory$1;->$context:Landroid/content/Context;
-
-    .line 273
-    iget-object v2, p0, Landroidx/compose/ui/viewinterop/AndroidView_androidKt$createAndroidViewNodeFactory$1;->$factory:Lkotlin/jvm/functions/Function1;
+    .locals 8
 
     .line 274
-    iget-object v3, p0, Landroidx/compose/ui/viewinterop/AndroidView_androidKt$createAndroidViewNodeFactory$1;->$parentReference:Landroidx/compose/runtime/CompositionContext;
+    new-instance v7, Landroidx/compose/ui/viewinterop/ViewFactoryHolder;
 
     .line 275
-    iget-object v4, p0, Landroidx/compose/ui/viewinterop/AndroidView_androidKt$createAndroidViewNodeFactory$1;->$stateRegistry:Landroidx/compose/runtime/saveable/SaveableStateRegistry;
+    iget-object v1, p0, Landroidx/compose/ui/viewinterop/AndroidView_androidKt$createAndroidViewNodeFactory$1;->$context:Landroid/content/Context;
 
     .line 276
-    iget v5, p0, Landroidx/compose/ui/viewinterop/AndroidView_androidKt$createAndroidViewNodeFactory$1;->$compositeKeyHash:I
-
-    move-object v0, v6
-
-    .line 271
-    invoke-direct/range {v0 .. v5}, Landroidx/compose/ui/viewinterop/ViewFactoryHolder;-><init>(Landroid/content/Context;Lkotlin/jvm/functions/Function1;Landroidx/compose/runtime/CompositionContext;Landroidx/compose/runtime/saveable/SaveableStateRegistry;I)V
+    iget-object v2, p0, Landroidx/compose/ui/viewinterop/AndroidView_androidKt$createAndroidViewNodeFactory$1;->$factory:Lkotlin/jvm/functions/Function1;
 
     .line 277
-    invoke-virtual {v6}, Landroidx/compose/ui/viewinterop/ViewFactoryHolder;->getLayoutNode()Landroidx/compose/ui/node/LayoutNode;
+    iget-object v3, p0, Landroidx/compose/ui/viewinterop/AndroidView_androidKt$createAndroidViewNodeFactory$1;->$parentReference:Landroidx/compose/runtime/CompositionContext;
+
+    .line 278
+    iget-object v4, p0, Landroidx/compose/ui/viewinterop/AndroidView_androidKt$createAndroidViewNodeFactory$1;->$stateRegistry:Landroidx/compose/runtime/saveable/SaveableStateRegistry;
+
+    .line 279
+    iget v5, p0, Landroidx/compose/ui/viewinterop/AndroidView_androidKt$createAndroidViewNodeFactory$1;->$compositeKeyHash:I
+
+    .line 280
+    iget-object p0, p0, Landroidx/compose/ui/viewinterop/AndroidView_androidKt$createAndroidViewNodeFactory$1;->$ownerView:Landroid/view/View;
+
+    const-string v0, "null cannot be cast to non-null type androidx.compose.ui.node.Owner"
+
+    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;Ljava/lang/String;)V
+
+    move-object v6, p0
+
+    check-cast v6, Landroidx/compose/ui/node/Owner;
+
+    move-object v0, v7
+
+    .line 274
+    invoke-direct/range {v0 .. v6}, Landroidx/compose/ui/viewinterop/ViewFactoryHolder;-><init>(Landroid/content/Context;Lkotlin/jvm/functions/Function1;Landroidx/compose/runtime/CompositionContext;Landroidx/compose/runtime/saveable/SaveableStateRegistry;ILandroidx/compose/ui/node/Owner;)V
+
+    .line 281
+    invoke-virtual {v7}, Landroidx/compose/ui/viewinterop/ViewFactoryHolder;->getLayoutNode()Landroidx/compose/ui/node/LayoutNode;
 
     move-result-object p0
 
@@ -139,7 +156,7 @@
 .method public bridge synthetic invoke()Ljava/lang/Object;
     .locals 0
 
-    .line 270
+    .line 273
     invoke-virtual {p0}, Landroidx/compose/ui/viewinterop/AndroidView_androidKt$createAndroidViewNodeFactory$1;->invoke()Landroidx/compose/ui/node/LayoutNode;
 
     move-result-object p0

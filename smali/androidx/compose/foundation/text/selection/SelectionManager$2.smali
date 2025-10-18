@@ -3,7 +3,7 @@
 .source "SelectionManager.kt"
 
 # interfaces
-.implements Lkotlin/jvm/functions/Function3;
+.implements Lkotlin/jvm/functions/Function4;
 
 
 # annotations
@@ -19,7 +19,8 @@
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lkotlin/jvm/internal/Lambda;",
-        "Lkotlin/jvm/functions/Function3<",
+        "Lkotlin/jvm/functions/Function4<",
+        "Ljava/lang/Boolean;",
         "Landroidx/compose/ui/layout/LayoutCoordinates;",
         "Landroidx/compose/ui/geometry/Offset;",
         "Landroidx/compose/foundation/text/selection/SelectionAdjustment;",
@@ -30,19 +31,21 @@
 
 .annotation runtime Lkotlin/Metadata;
     d1 = {
-        "\u0000\u001c\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0002\u0010\u0000\u001a\u00020\u00012\u0006\u0010\u0002\u001a\u00020\u00032\u0006\u0010\u0004\u001a\u00020\u00052\u0006\u0010\u0006\u001a\u00020\u0007H\n\u00a2\u0006\u0004\u0008\u0008\u0010\t"
+        "\u0000\"\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0010\u000b\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0002\u0010\u0000\u001a\u00020\u00012\u0006\u0010\u0002\u001a\u00020\u00032\u0006\u0010\u0004\u001a\u00020\u00052\u0006\u0010\u0006\u001a\u00020\u00072\u0006\u0010\u0008\u001a\u00020\tH\n\u00a2\u0006\u0004\u0008\n\u0010\u000b"
     }
     d2 = {
         "<anonymous>",
         "",
+        "isInTouchMode",
+        "",
         "layoutCoordinates",
         "Landroidx/compose/ui/layout/LayoutCoordinates;",
-        "position",
+        "rawPosition",
         "Landroidx/compose/ui/geometry/Offset;",
         "selectionMode",
         "Landroidx/compose/foundation/text/selection/SelectionAdjustment;",
-        "invoke-d-4ec7I",
-        "(Landroidx/compose/ui/layout/LayoutCoordinates;JLandroidx/compose/foundation/text/selection/SelectionAdjustment;)V"
+        "invoke-Rg1IO4c",
+        "(ZLandroidx/compose/ui/layout/LayoutCoordinates;JLandroidx/compose/foundation/text/selection/SelectionAdjustment;)V"
     }
     k = 0x3
     mv = {
@@ -64,7 +67,7 @@
 
     iput-object p1, p0, Landroidx/compose/foundation/text/selection/SelectionManager$2;->this$0:Landroidx/compose/foundation/text/selection/SelectionManager;
 
-    const/4 p1, 0x3
+    const/4 p1, 0x4
 
     invoke-direct {p0, p1}, Lkotlin/jvm/internal/Lambda;-><init>(I)V
 
@@ -73,61 +76,109 @@
 
 
 # virtual methods
-.method public bridge synthetic invoke(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
-    .locals 2
+.method public bridge synthetic invoke(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 6
 
-    .line 216
-    check-cast p1, Landroidx/compose/ui/layout/LayoutCoordinates;
+    .line 244
+    check-cast p1, Ljava/lang/Boolean;
 
-    check-cast p2, Landroidx/compose/ui/geometry/Offset;
+    invoke-virtual {p1}, Ljava/lang/Boolean;->booleanValue()Z
 
-    invoke-virtual {p2}, Landroidx/compose/ui/geometry/Offset;->unbox-impl()J
+    move-result v1
 
-    move-result-wide v0
+    move-object v2, p2
 
-    check-cast p3, Landroidx/compose/foundation/text/selection/SelectionAdjustment;
+    check-cast v2, Landroidx/compose/ui/layout/LayoutCoordinates;
 
-    invoke-virtual {p0, p1, v0, v1, p3}, Landroidx/compose/foundation/text/selection/SelectionManager$2;->invoke-d-4ec7I(Landroidx/compose/ui/layout/LayoutCoordinates;JLandroidx/compose/foundation/text/selection/SelectionAdjustment;)V
+    check-cast p3, Landroidx/compose/ui/geometry/Offset;
+
+    invoke-virtual {p3}, Landroidx/compose/ui/geometry/Offset;->unbox-impl()J
+
+    move-result-wide v3
+
+    move-object v5, p4
+
+    check-cast v5, Landroidx/compose/foundation/text/selection/SelectionAdjustment;
+
+    move-object v0, p0
+
+    invoke-virtual/range {v0 .. v5}, Landroidx/compose/foundation/text/selection/SelectionManager$2;->invoke-Rg1IO4c(ZLandroidx/compose/ui/layout/LayoutCoordinates;JLandroidx/compose/foundation/text/selection/SelectionAdjustment;)V
 
     sget-object p0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
 
     return-object p0
 .end method
 
-.method public final invoke-d-4ec7I(Landroidx/compose/ui/layout/LayoutCoordinates;JLandroidx/compose/foundation/text/selection/SelectionAdjustment;)V
-    .locals 2
+.method public final invoke-Rg1IO4c(ZLandroidx/compose/ui/layout/LayoutCoordinates;JLandroidx/compose/foundation/text/selection/SelectionAdjustment;)V
+    .locals 4
 
-    const-string v0, "layoutCoordinates"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string v0, "selectionMode"
-
-    invoke-static {p4, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 218
-    iget-object v0, p0, Landroidx/compose/foundation/text/selection/SelectionManager$2;->this$0:Landroidx/compose/foundation/text/selection/SelectionManager;
-
-    invoke-static {v0, p1, p2, p3}, Landroidx/compose/foundation/text/selection/SelectionManager;->access$convertToContainerCoordinates-Q7Q5hAU(Landroidx/compose/foundation/text/selection/SelectionManager;Landroidx/compose/ui/layout/LayoutCoordinates;J)Landroidx/compose/ui/geometry/Offset;
-
-    move-result-object p1
-
-    if-eqz p1, :cond_0
-
-    .line 224
-    iget-object p2, p0, Landroidx/compose/foundation/text/selection/SelectionManager$2;->this$0:Landroidx/compose/foundation/text/selection/SelectionManager;
-
-    .line 225
-    invoke-virtual {p1}, Landroidx/compose/ui/geometry/Offset;->unbox-impl()J
+    .line 246
+    invoke-interface {p2}, Landroidx/compose/ui/layout/LayoutCoordinates;->getSize-YbymL2g()J
 
     move-result-wide v0
 
-    const/4 p1, 0x0
+    .line 247
+    new-instance v2, Landroidx/compose/ui/geometry/Rect;
 
-    .line 224
-    invoke-static {p2, v0, v1, p1, p4}, Landroidx/compose/foundation/text/selection/SelectionManager;->access$startSelection-9KIMszo(Landroidx/compose/foundation/text/selection/SelectionManager;JZLandroidx/compose/foundation/text/selection/SelectionAdjustment;)V
+    invoke-static {v0, v1}, Landroidx/compose/ui/unit/IntSize;->getWidth-impl(J)I
 
-    .line 230
+    move-result v3
+
+    int-to-float v3, v3
+
+    invoke-static {v0, v1}, Landroidx/compose/ui/unit/IntSize;->getHeight-impl(J)I
+
+    move-result v0
+
+    int-to-float v0, v0
+
+    const/4 v1, 0x0
+
+    invoke-direct {v2, v1, v1, v3, v0}, Landroidx/compose/ui/geometry/Rect;-><init>(FFFF)V
+
+    .line 250
+    invoke-static {v2, p3, p4}, Landroidx/compose/foundation/text/selection/SelectionManagerKt;->containsInclusive-Uv8p0NA(Landroidx/compose/ui/geometry/Rect;J)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_0
+
+    goto :goto_0
+
+    .line 253
+    :cond_0
+    invoke-static {p3, p4, v2}, Landroidx/compose/foundation/text2/input/internal/TextLayoutStateKt;->coerceIn-3MmeM6k(JLandroidx/compose/ui/geometry/Rect;)J
+
+    move-result-wide p3
+
+    .line 256
+    :goto_0
+    iget-object v0, p0, Landroidx/compose/foundation/text/selection/SelectionManager$2;->this$0:Landroidx/compose/foundation/text/selection/SelectionManager;
+
+    invoke-static {v0, p2, p3, p4}, Landroidx/compose/foundation/text/selection/SelectionManager;->access$convertToContainerCoordinates-R5De75A(Landroidx/compose/foundation/text/selection/SelectionManager;Landroidx/compose/ui/layout/LayoutCoordinates;J)J
+
+    move-result-wide p2
+
+    .line 261
+    invoke-static {p2, p3}, Landroidx/compose/ui/geometry/OffsetKt;->isSpecified-k-4lQ0M(J)Z
+
+    move-result p4
+
+    if-eqz p4, :cond_1
+
+    .line 262
+    iget-object p4, p0, Landroidx/compose/foundation/text/selection/SelectionManager$2;->this$0:Landroidx/compose/foundation/text/selection/SelectionManager;
+
+    invoke-virtual {p4, p1}, Landroidx/compose/foundation/text/selection/SelectionManager;->setInTouchMode(Z)V
+
+    .line 263
+    iget-object p1, p0, Landroidx/compose/foundation/text/selection/SelectionManager$2;->this$0:Landroidx/compose/foundation/text/selection/SelectionManager;
+
+    const/4 p4, 0x0
+
+    invoke-static {p1, p2, p3, p4, p5}, Landroidx/compose/foundation/text/selection/SelectionManager;->access$startSelection-9KIMszo(Landroidx/compose/foundation/text/selection/SelectionManager;JZLandroidx/compose/foundation/text/selection/SelectionAdjustment;)V
+
+    .line 269
     iget-object p1, p0, Landroidx/compose/foundation/text/selection/SelectionManager$2;->this$0:Landroidx/compose/foundation/text/selection/SelectionManager;
 
     invoke-virtual {p1}, Landroidx/compose/foundation/text/selection/SelectionManager;->getFocusRequester()Landroidx/compose/ui/focus/FocusRequester;
@@ -136,11 +187,11 @@
 
     invoke-virtual {p1}, Landroidx/compose/ui/focus/FocusRequester;->requestFocus()V
 
-    .line 231
+    .line 270
     iget-object p0, p0, Landroidx/compose/foundation/text/selection/SelectionManager$2;->this$0:Landroidx/compose/foundation/text/selection/SelectionManager;
 
-    invoke-virtual {p0}, Landroidx/compose/foundation/text/selection/SelectionManager;->hideSelectionToolbar$foundation_release()V
+    invoke-virtual {p0, p4}, Landroidx/compose/foundation/text/selection/SelectionManager;->setShowToolbar$foundation_release(Z)V
 
-    :cond_0
+    :cond_1
     return-void
 .end method

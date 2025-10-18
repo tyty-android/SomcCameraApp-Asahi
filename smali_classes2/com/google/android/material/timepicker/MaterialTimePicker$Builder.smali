@@ -38,10 +38,10 @@
 .method public constructor <init>()V
     .locals 1
 
-    .line 557
+    .line 562
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 559
+    .line 564
     new-instance v0, Lcom/google/android/material/timepicker/TimeModel;
 
     invoke-direct {v0}, Lcom/google/android/material/timepicker/TimeModel;-><init>()V
@@ -50,16 +50,16 @@
 
     const/4 v0, 0x0
 
-    .line 562
+    .line 567
     iput v0, p0, Lcom/google/android/material/timepicker/MaterialTimePicker$Builder;->titleTextResId:I
 
-    .line 565
+    .line 570
     iput v0, p0, Lcom/google/android/material/timepicker/MaterialTimePicker$Builder;->positiveButtonTextResId:I
 
-    .line 568
+    .line 573
     iput v0, p0, Lcom/google/android/material/timepicker/MaterialTimePicker$Builder;->negativeButtonTextResId:I
 
-    .line 571
+    .line 576
     iput v0, p0, Lcom/google/android/material/timepicker/MaterialTimePicker$Builder;->overrideThemeResId:I
 
     return-void
@@ -68,7 +68,7 @@
 .method static synthetic access$000(Lcom/google/android/material/timepicker/MaterialTimePicker$Builder;)Lcom/google/android/material/timepicker/TimeModel;
     .locals 0
 
-    .line 557
+    .line 562
     iget-object p0, p0, Lcom/google/android/material/timepicker/MaterialTimePicker$Builder;->time:Lcom/google/android/material/timepicker/TimeModel;
 
     return-object p0
@@ -77,7 +77,7 @@
 .method static synthetic access$100(Lcom/google/android/material/timepicker/MaterialTimePicker$Builder;)Ljava/lang/Integer;
     .locals 0
 
-    .line 557
+    .line 562
     iget-object p0, p0, Lcom/google/android/material/timepicker/MaterialTimePicker$Builder;->inputMode:Ljava/lang/Integer;
 
     return-object p0
@@ -86,7 +86,7 @@
 .method static synthetic access$200(Lcom/google/android/material/timepicker/MaterialTimePicker$Builder;)I
     .locals 0
 
-    .line 557
+    .line 562
     iget p0, p0, Lcom/google/android/material/timepicker/MaterialTimePicker$Builder;->titleTextResId:I
 
     return p0
@@ -95,7 +95,7 @@
 .method static synthetic access$300(Lcom/google/android/material/timepicker/MaterialTimePicker$Builder;)Ljava/lang/CharSequence;
     .locals 0
 
-    .line 557
+    .line 562
     iget-object p0, p0, Lcom/google/android/material/timepicker/MaterialTimePicker$Builder;->titleText:Ljava/lang/CharSequence;
 
     return-object p0
@@ -104,7 +104,7 @@
 .method static synthetic access$400(Lcom/google/android/material/timepicker/MaterialTimePicker$Builder;)I
     .locals 0
 
-    .line 557
+    .line 562
     iget p0, p0, Lcom/google/android/material/timepicker/MaterialTimePicker$Builder;->positiveButtonTextResId:I
 
     return p0
@@ -113,7 +113,7 @@
 .method static synthetic access$500(Lcom/google/android/material/timepicker/MaterialTimePicker$Builder;)Ljava/lang/CharSequence;
     .locals 0
 
-    .line 557
+    .line 562
     iget-object p0, p0, Lcom/google/android/material/timepicker/MaterialTimePicker$Builder;->positiveButtonText:Ljava/lang/CharSequence;
 
     return-object p0
@@ -122,7 +122,7 @@
 .method static synthetic access$600(Lcom/google/android/material/timepicker/MaterialTimePicker$Builder;)I
     .locals 0
 
-    .line 557
+    .line 562
     iget p0, p0, Lcom/google/android/material/timepicker/MaterialTimePicker$Builder;->negativeButtonTextResId:I
 
     return p0
@@ -131,7 +131,7 @@
 .method static synthetic access$700(Lcom/google/android/material/timepicker/MaterialTimePicker$Builder;)Ljava/lang/CharSequence;
     .locals 0
 
-    .line 557
+    .line 562
     iget-object p0, p0, Lcom/google/android/material/timepicker/MaterialTimePicker$Builder;->negativeButtonText:Ljava/lang/CharSequence;
 
     return-object p0
@@ -140,7 +140,7 @@
 .method static synthetic access$800(Lcom/google/android/material/timepicker/MaterialTimePicker$Builder;)I
     .locals 0
 
-    .line 557
+    .line 562
     iget p0, p0, Lcom/google/android/material/timepicker/MaterialTimePicker$Builder;->overrideThemeResId:I
 
     return p0
@@ -151,7 +151,7 @@
 .method public build()Lcom/google/android/material/timepicker/MaterialTimePicker;
     .locals 0
 
-    .line 678
+    .line 683
     invoke-static {p0}, Lcom/google/android/material/timepicker/MaterialTimePicker;->access$1400(Lcom/google/android/material/timepicker/MaterialTimePicker$Builder;)Lcom/google/android/material/timepicker/MaterialTimePicker;
 
     move-result-object p0
@@ -162,7 +162,7 @@
 .method public setHour(I)Lcom/google/android/material/timepicker/MaterialTimePicker$Builder;
     .locals 1
 
-    .line 590
+    .line 595
     iget-object v0, p0, Lcom/google/android/material/timepicker/MaterialTimePicker$Builder;->time:Lcom/google/android/material/timepicker/TimeModel;
 
     invoke-virtual {v0, p1}, Lcom/google/android/material/timepicker/TimeModel;->setHourOfDay(I)V
@@ -173,7 +173,7 @@
 .method public setInputMode(I)Lcom/google/android/material/timepicker/MaterialTimePicker$Builder;
     .locals 0
 
-    .line 577
+    .line 582
     invoke-static {p1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object p1
@@ -186,7 +186,7 @@
 .method public setMinute(I)Lcom/google/android/material/timepicker/MaterialTimePicker$Builder;
     .locals 1
 
-    .line 598
+    .line 603
     iget-object v0, p0, Lcom/google/android/material/timepicker/MaterialTimePicker$Builder;->time:Lcom/google/android/material/timepicker/TimeModel;
 
     invoke-virtual {v0, p1}, Lcom/google/android/material/timepicker/TimeModel;->setMinute(I)V
@@ -197,7 +197,7 @@
 .method public setNegativeButtonText(I)Lcom/google/android/material/timepicker/MaterialTimePicker$Builder;
     .locals 0
 
-    .line 655
+    .line 660
     iput p1, p0, Lcom/google/android/material/timepicker/MaterialTimePicker$Builder;->negativeButtonTextResId:I
 
     return-object p0
@@ -206,7 +206,7 @@
 .method public setNegativeButtonText(Ljava/lang/CharSequence;)Lcom/google/android/material/timepicker/MaterialTimePicker$Builder;
     .locals 0
 
-    .line 663
+    .line 668
     iput-object p1, p0, Lcom/google/android/material/timepicker/MaterialTimePicker$Builder;->negativeButtonText:Ljava/lang/CharSequence;
 
     return-object p0
@@ -215,7 +215,7 @@
 .method public setPositiveButtonText(I)Lcom/google/android/material/timepicker/MaterialTimePicker$Builder;
     .locals 0
 
-    .line 639
+    .line 644
     iput p1, p0, Lcom/google/android/material/timepicker/MaterialTimePicker$Builder;->positiveButtonTextResId:I
 
     return-object p0
@@ -224,7 +224,7 @@
 .method public setPositiveButtonText(Ljava/lang/CharSequence;)Lcom/google/android/material/timepicker/MaterialTimePicker$Builder;
     .locals 0
 
-    .line 647
+    .line 652
     iput-object p1, p0, Lcom/google/android/material/timepicker/MaterialTimePicker$Builder;->positiveButtonText:Ljava/lang/CharSequence;
 
     return-object p0
@@ -233,7 +233,7 @@
 .method public setTheme(I)Lcom/google/android/material/timepicker/MaterialTimePicker$Builder;
     .locals 0
 
-    .line 671
+    .line 676
     iput p1, p0, Lcom/google/android/material/timepicker/MaterialTimePicker$Builder;->overrideThemeResId:I
 
     return-object p0
@@ -242,27 +242,27 @@
 .method public setTimeFormat(I)Lcom/google/android/material/timepicker/MaterialTimePicker$Builder;
     .locals 3
 
-    .line 611
+    .line 616
     iget-object v0, p0, Lcom/google/android/material/timepicker/MaterialTimePicker$Builder;->time:Lcom/google/android/material/timepicker/TimeModel;
 
     iget v0, v0, Lcom/google/android/material/timepicker/TimeModel;->hour:I
 
-    .line 612
+    .line 617
     iget-object v1, p0, Lcom/google/android/material/timepicker/MaterialTimePicker$Builder;->time:Lcom/google/android/material/timepicker/TimeModel;
 
     iget v1, v1, Lcom/google/android/material/timepicker/TimeModel;->minute:I
 
-    .line 613
+    .line 618
     new-instance v2, Lcom/google/android/material/timepicker/TimeModel;
 
     invoke-direct {v2, p1}, Lcom/google/android/material/timepicker/TimeModel;-><init>(I)V
 
     iput-object v2, p0, Lcom/google/android/material/timepicker/MaterialTimePicker$Builder;->time:Lcom/google/android/material/timepicker/TimeModel;
 
-    .line 614
+    .line 619
     invoke-virtual {v2, v1}, Lcom/google/android/material/timepicker/TimeModel;->setMinute(I)V
 
-    .line 615
+    .line 620
     iget-object p1, p0, Lcom/google/android/material/timepicker/MaterialTimePicker$Builder;->time:Lcom/google/android/material/timepicker/TimeModel;
 
     invoke-virtual {p1, v0}, Lcom/google/android/material/timepicker/TimeModel;->setHourOfDay(I)V
@@ -273,7 +273,7 @@
 .method public setTitleText(I)Lcom/google/android/material/timepicker/MaterialTimePicker$Builder;
     .locals 0
 
-    .line 623
+    .line 628
     iput p1, p0, Lcom/google/android/material/timepicker/MaterialTimePicker$Builder;->titleTextResId:I
 
     return-object p0
@@ -282,7 +282,7 @@
 .method public setTitleText(Ljava/lang/CharSequence;)Lcom/google/android/material/timepicker/MaterialTimePicker$Builder;
     .locals 0
 
-    .line 631
+    .line 636
     iput-object p1, p0, Lcom/google/android/material/timepicker/MaterialTimePicker$Builder;->titleText:Ljava/lang/CharSequence;
 
     return-object p0

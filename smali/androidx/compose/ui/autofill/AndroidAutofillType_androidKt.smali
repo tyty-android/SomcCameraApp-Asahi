@@ -52,16 +52,24 @@
 
 # direct methods
 .method static constructor <clinit>()V
-    .locals 38
+    .locals 3
+
+    const/16 v0, 0x24
 
     .line 110
-    sget-object v0, Landroidx/compose/ui/autofill/AutofillType;->EmailAddress:Landroidx/compose/ui/autofill/AutofillType;
+    new-array v0, v0, [Lkotlin/Pair;
 
-    const-string v1, "emailAddress"
+    sget-object v1, Landroidx/compose/ui/autofill/AutofillType;->EmailAddress:Landroidx/compose/ui/autofill/AutofillType;
 
-    invoke-static {v0, v1}, Lkotlin/TuplesKt;->to(Ljava/lang/Object;Ljava/lang/Object;)Lkotlin/Pair;
+    const-string v2, "emailAddress"
 
-    move-result-object v0
+    invoke-static {v1, v2}, Lkotlin/TuplesKt;->to(Ljava/lang/Object;Ljava/lang/Object;)Lkotlin/Pair;
+
+    move-result-object v1
+
+    const/4 v2, 0x0
+
+    aput-object v1, v0, v2
 
     .line 111
     sget-object v1, Landroidx/compose/ui/autofill/AutofillType;->Username:Landroidx/compose/ui/autofill/AutofillType;
@@ -72,504 +80,454 @@
 
     move-result-object v1
 
+    const/4 v2, 0x1
+
+    aput-object v1, v0, v2
+
     .line 112
-    sget-object v2, Landroidx/compose/ui/autofill/AutofillType;->Password:Landroidx/compose/ui/autofill/AutofillType;
+    sget-object v1, Landroidx/compose/ui/autofill/AutofillType;->Password:Landroidx/compose/ui/autofill/AutofillType;
 
-    const-string v3, "password"
+    const-string v2, "password"
 
-    invoke-static {v2, v3}, Lkotlin/TuplesKt;->to(Ljava/lang/Object;Ljava/lang/Object;)Lkotlin/Pair;
+    invoke-static {v1, v2}, Lkotlin/TuplesKt;->to(Ljava/lang/Object;Ljava/lang/Object;)Lkotlin/Pair;
 
-    move-result-object v2
+    move-result-object v1
+
+    const/4 v2, 0x2
+
+    aput-object v1, v0, v2
 
     .line 113
-    sget-object v3, Landroidx/compose/ui/autofill/AutofillType;->NewUsername:Landroidx/compose/ui/autofill/AutofillType;
+    sget-object v1, Landroidx/compose/ui/autofill/AutofillType;->NewUsername:Landroidx/compose/ui/autofill/AutofillType;
 
-    const-string v4, "newUsername"
+    const-string v2, "newUsername"
 
-    invoke-static {v3, v4}, Lkotlin/TuplesKt;->to(Ljava/lang/Object;Ljava/lang/Object;)Lkotlin/Pair;
+    invoke-static {v1, v2}, Lkotlin/TuplesKt;->to(Ljava/lang/Object;Ljava/lang/Object;)Lkotlin/Pair;
 
-    move-result-object v3
+    move-result-object v1
+
+    const/4 v2, 0x3
+
+    aput-object v1, v0, v2
 
     .line 114
-    sget-object v4, Landroidx/compose/ui/autofill/AutofillType;->NewPassword:Landroidx/compose/ui/autofill/AutofillType;
+    sget-object v1, Landroidx/compose/ui/autofill/AutofillType;->NewPassword:Landroidx/compose/ui/autofill/AutofillType;
 
-    const-string v5, "newPassword"
+    const-string v2, "newPassword"
 
-    invoke-static {v4, v5}, Lkotlin/TuplesKt;->to(Ljava/lang/Object;Ljava/lang/Object;)Lkotlin/Pair;
+    invoke-static {v1, v2}, Lkotlin/TuplesKt;->to(Ljava/lang/Object;Ljava/lang/Object;)Lkotlin/Pair;
 
-    move-result-object v4
+    move-result-object v1
+
+    const/4 v2, 0x4
+
+    aput-object v1, v0, v2
 
     .line 115
-    sget-object v5, Landroidx/compose/ui/autofill/AutofillType;->PostalAddress:Landroidx/compose/ui/autofill/AutofillType;
+    sget-object v1, Landroidx/compose/ui/autofill/AutofillType;->PostalAddress:Landroidx/compose/ui/autofill/AutofillType;
 
-    const-string v6, "postalAddress"
+    const-string v2, "postalAddress"
 
-    invoke-static {v5, v6}, Lkotlin/TuplesKt;->to(Ljava/lang/Object;Ljava/lang/Object;)Lkotlin/Pair;
+    invoke-static {v1, v2}, Lkotlin/TuplesKt;->to(Ljava/lang/Object;Ljava/lang/Object;)Lkotlin/Pair;
 
-    move-result-object v5
+    move-result-object v1
+
+    const/4 v2, 0x5
+
+    aput-object v1, v0, v2
 
     .line 116
-    sget-object v6, Landroidx/compose/ui/autofill/AutofillType;->PostalCode:Landroidx/compose/ui/autofill/AutofillType;
+    sget-object v1, Landroidx/compose/ui/autofill/AutofillType;->PostalCode:Landroidx/compose/ui/autofill/AutofillType;
 
-    const-string v7, "postalCode"
+    const-string v2, "postalCode"
 
-    invoke-static {v6, v7}, Lkotlin/TuplesKt;->to(Ljava/lang/Object;Ljava/lang/Object;)Lkotlin/Pair;
+    invoke-static {v1, v2}, Lkotlin/TuplesKt;->to(Ljava/lang/Object;Ljava/lang/Object;)Lkotlin/Pair;
 
-    move-result-object v6
+    move-result-object v1
+
+    const/4 v2, 0x6
+
+    aput-object v1, v0, v2
 
     .line 117
-    sget-object v7, Landroidx/compose/ui/autofill/AutofillType;->CreditCardNumber:Landroidx/compose/ui/autofill/AutofillType;
+    sget-object v1, Landroidx/compose/ui/autofill/AutofillType;->CreditCardNumber:Landroidx/compose/ui/autofill/AutofillType;
 
-    const-string v8, "creditCardNumber"
+    const-string v2, "creditCardNumber"
 
-    invoke-static {v7, v8}, Lkotlin/TuplesKt;->to(Ljava/lang/Object;Ljava/lang/Object;)Lkotlin/Pair;
+    invoke-static {v1, v2}, Lkotlin/TuplesKt;->to(Ljava/lang/Object;Ljava/lang/Object;)Lkotlin/Pair;
 
-    move-result-object v7
+    move-result-object v1
+
+    const/4 v2, 0x7
+
+    aput-object v1, v0, v2
 
     .line 118
-    sget-object v8, Landroidx/compose/ui/autofill/AutofillType;->CreditCardSecurityCode:Landroidx/compose/ui/autofill/AutofillType;
+    sget-object v1, Landroidx/compose/ui/autofill/AutofillType;->CreditCardSecurityCode:Landroidx/compose/ui/autofill/AutofillType;
 
-    const-string v9, "creditCardSecurityCode"
+    const-string v2, "creditCardSecurityCode"
 
-    invoke-static {v8, v9}, Lkotlin/TuplesKt;->to(Ljava/lang/Object;Ljava/lang/Object;)Lkotlin/Pair;
+    invoke-static {v1, v2}, Lkotlin/TuplesKt;->to(Ljava/lang/Object;Ljava/lang/Object;)Lkotlin/Pair;
 
-    move-result-object v8
+    move-result-object v1
+
+    const/16 v2, 0x8
+
+    aput-object v1, v0, v2
 
     .line 119
-    sget-object v9, Landroidx/compose/ui/autofill/AutofillType;->CreditCardExpirationDate:Landroidx/compose/ui/autofill/AutofillType;
+    sget-object v1, Landroidx/compose/ui/autofill/AutofillType;->CreditCardExpirationDate:Landroidx/compose/ui/autofill/AutofillType;
 
-    const-string v10, "creditCardExpirationDate"
+    const-string v2, "creditCardExpirationDate"
 
-    invoke-static {v9, v10}, Lkotlin/TuplesKt;->to(Ljava/lang/Object;Ljava/lang/Object;)Lkotlin/Pair;
+    invoke-static {v1, v2}, Lkotlin/TuplesKt;->to(Ljava/lang/Object;Ljava/lang/Object;)Lkotlin/Pair;
 
-    move-result-object v9
+    move-result-object v1
+
+    const/16 v2, 0x9
+
+    aput-object v1, v0, v2
 
     .line 120
-    sget-object v10, Landroidx/compose/ui/autofill/AutofillType;->CreditCardExpirationMonth:Landroidx/compose/ui/autofill/AutofillType;
+    sget-object v1, Landroidx/compose/ui/autofill/AutofillType;->CreditCardExpirationMonth:Landroidx/compose/ui/autofill/AutofillType;
 
-    const-string v11, "creditCardExpirationMonth"
+    const-string v2, "creditCardExpirationMonth"
 
-    invoke-static {v10, v11}, Lkotlin/TuplesKt;->to(Ljava/lang/Object;Ljava/lang/Object;)Lkotlin/Pair;
+    invoke-static {v1, v2}, Lkotlin/TuplesKt;->to(Ljava/lang/Object;Ljava/lang/Object;)Lkotlin/Pair;
 
-    move-result-object v10
+    move-result-object v1
+
+    const/16 v2, 0xa
+
+    aput-object v1, v0, v2
 
     .line 121
-    sget-object v11, Landroidx/compose/ui/autofill/AutofillType;->CreditCardExpirationYear:Landroidx/compose/ui/autofill/AutofillType;
+    sget-object v1, Landroidx/compose/ui/autofill/AutofillType;->CreditCardExpirationYear:Landroidx/compose/ui/autofill/AutofillType;
 
-    const-string v12, "creditCardExpirationYear"
+    const-string v2, "creditCardExpirationYear"
 
-    invoke-static {v11, v12}, Lkotlin/TuplesKt;->to(Ljava/lang/Object;Ljava/lang/Object;)Lkotlin/Pair;
+    invoke-static {v1, v2}, Lkotlin/TuplesKt;->to(Ljava/lang/Object;Ljava/lang/Object;)Lkotlin/Pair;
 
-    move-result-object v11
+    move-result-object v1
+
+    const/16 v2, 0xb
+
+    aput-object v1, v0, v2
 
     .line 122
-    sget-object v12, Landroidx/compose/ui/autofill/AutofillType;->CreditCardExpirationDay:Landroidx/compose/ui/autofill/AutofillType;
+    sget-object v1, Landroidx/compose/ui/autofill/AutofillType;->CreditCardExpirationDay:Landroidx/compose/ui/autofill/AutofillType;
 
-    const-string v13, "creditCardExpirationDay"
+    const-string v2, "creditCardExpirationDay"
 
-    invoke-static {v12, v13}, Lkotlin/TuplesKt;->to(Ljava/lang/Object;Ljava/lang/Object;)Lkotlin/Pair;
+    invoke-static {v1, v2}, Lkotlin/TuplesKt;->to(Ljava/lang/Object;Ljava/lang/Object;)Lkotlin/Pair;
 
-    move-result-object v12
+    move-result-object v1
+
+    const/16 v2, 0xc
+
+    aput-object v1, v0, v2
 
     .line 123
-    sget-object v13, Landroidx/compose/ui/autofill/AutofillType;->AddressCountry:Landroidx/compose/ui/autofill/AutofillType;
+    sget-object v1, Landroidx/compose/ui/autofill/AutofillType;->AddressCountry:Landroidx/compose/ui/autofill/AutofillType;
 
-    const-string v14, "addressCountry"
+    const-string v2, "addressCountry"
 
-    invoke-static {v13, v14}, Lkotlin/TuplesKt;->to(Ljava/lang/Object;Ljava/lang/Object;)Lkotlin/Pair;
+    invoke-static {v1, v2}, Lkotlin/TuplesKt;->to(Ljava/lang/Object;Ljava/lang/Object;)Lkotlin/Pair;
 
-    move-result-object v13
+    move-result-object v1
+
+    const/16 v2, 0xd
+
+    aput-object v1, v0, v2
 
     .line 124
-    sget-object v14, Landroidx/compose/ui/autofill/AutofillType;->AddressRegion:Landroidx/compose/ui/autofill/AutofillType;
+    sget-object v1, Landroidx/compose/ui/autofill/AutofillType;->AddressRegion:Landroidx/compose/ui/autofill/AutofillType;
 
-    const-string v15, "addressRegion"
+    const-string v2, "addressRegion"
 
-    invoke-static {v14, v15}, Lkotlin/TuplesKt;->to(Ljava/lang/Object;Ljava/lang/Object;)Lkotlin/Pair;
+    invoke-static {v1, v2}, Lkotlin/TuplesKt;->to(Ljava/lang/Object;Ljava/lang/Object;)Lkotlin/Pair;
 
-    move-result-object v14
+    move-result-object v1
+
+    const/16 v2, 0xe
+
+    aput-object v1, v0, v2
 
     .line 125
-    sget-object v15, Landroidx/compose/ui/autofill/AutofillType;->AddressLocality:Landroidx/compose/ui/autofill/AutofillType;
+    sget-object v1, Landroidx/compose/ui/autofill/AutofillType;->AddressLocality:Landroidx/compose/ui/autofill/AutofillType;
 
-    move-object/from16 v16, v14
+    const-string v2, "addressLocality"
 
-    const-string v14, "addressLocality"
+    invoke-static {v1, v2}, Lkotlin/TuplesKt;->to(Ljava/lang/Object;Ljava/lang/Object;)Lkotlin/Pair;
 
-    invoke-static {v15, v14}, Lkotlin/TuplesKt;->to(Ljava/lang/Object;Ljava/lang/Object;)Lkotlin/Pair;
+    move-result-object v1
 
-    move-result-object v14
+    const/16 v2, 0xf
+
+    aput-object v1, v0, v2
 
     .line 126
-    sget-object v15, Landroidx/compose/ui/autofill/AutofillType;->AddressStreet:Landroidx/compose/ui/autofill/AutofillType;
+    sget-object v1, Landroidx/compose/ui/autofill/AutofillType;->AddressStreet:Landroidx/compose/ui/autofill/AutofillType;
 
-    move-object/from16 v17, v14
+    const-string/jumbo v2, "streetAddress"
 
-    const-string/jumbo v14, "streetAddress"
+    invoke-static {v1, v2}, Lkotlin/TuplesKt;->to(Ljava/lang/Object;Ljava/lang/Object;)Lkotlin/Pair;
 
-    invoke-static {v15, v14}, Lkotlin/TuplesKt;->to(Ljava/lang/Object;Ljava/lang/Object;)Lkotlin/Pair;
+    move-result-object v1
 
-    move-result-object v14
+    const/16 v2, 0x10
+
+    aput-object v1, v0, v2
 
     .line 127
-    sget-object v15, Landroidx/compose/ui/autofill/AutofillType;->AddressAuxiliaryDetails:Landroidx/compose/ui/autofill/AutofillType;
+    sget-object v1, Landroidx/compose/ui/autofill/AutofillType;->AddressAuxiliaryDetails:Landroidx/compose/ui/autofill/AutofillType;
 
-    move-object/from16 v18, v14
+    const-string v2, "extendedAddress"
 
-    const-string v14, "extendedAddress"
+    invoke-static {v1, v2}, Lkotlin/TuplesKt;->to(Ljava/lang/Object;Ljava/lang/Object;)Lkotlin/Pair;
 
-    invoke-static {v15, v14}, Lkotlin/TuplesKt;->to(Ljava/lang/Object;Ljava/lang/Object;)Lkotlin/Pair;
+    move-result-object v1
 
-    move-result-object v14
+    const/16 v2, 0x11
+
+    aput-object v1, v0, v2
 
     .line 128
-    sget-object v15, Landroidx/compose/ui/autofill/AutofillType;->PostalCodeExtended:Landroidx/compose/ui/autofill/AutofillType;
+    sget-object v1, Landroidx/compose/ui/autofill/AutofillType;->PostalCodeExtended:Landroidx/compose/ui/autofill/AutofillType;
 
-    move-object/from16 v19, v14
+    const-string v2, "extendedPostalCode"
 
-    const-string v14, "extendedPostalCode"
+    invoke-static {v1, v2}, Lkotlin/TuplesKt;->to(Ljava/lang/Object;Ljava/lang/Object;)Lkotlin/Pair;
 
-    invoke-static {v15, v14}, Lkotlin/TuplesKt;->to(Ljava/lang/Object;Ljava/lang/Object;)Lkotlin/Pair;
+    move-result-object v1
 
-    move-result-object v14
+    const/16 v2, 0x12
+
+    aput-object v1, v0, v2
 
     .line 129
-    sget-object v15, Landroidx/compose/ui/autofill/AutofillType;->PersonFullName:Landroidx/compose/ui/autofill/AutofillType;
+    sget-object v1, Landroidx/compose/ui/autofill/AutofillType;->PersonFullName:Landroidx/compose/ui/autofill/AutofillType;
 
-    move-object/from16 v20, v14
+    const-string v2, "personName"
 
-    const-string v14, "personName"
+    invoke-static {v1, v2}, Lkotlin/TuplesKt;->to(Ljava/lang/Object;Ljava/lang/Object;)Lkotlin/Pair;
 
-    invoke-static {v15, v14}, Lkotlin/TuplesKt;->to(Ljava/lang/Object;Ljava/lang/Object;)Lkotlin/Pair;
+    move-result-object v1
 
-    move-result-object v14
+    const/16 v2, 0x13
+
+    aput-object v1, v0, v2
 
     .line 130
-    sget-object v15, Landroidx/compose/ui/autofill/AutofillType;->PersonFirstName:Landroidx/compose/ui/autofill/AutofillType;
+    sget-object v1, Landroidx/compose/ui/autofill/AutofillType;->PersonFirstName:Landroidx/compose/ui/autofill/AutofillType;
 
-    move-object/from16 v21, v14
+    const-string v2, "personGivenName"
 
-    const-string v14, "personGivenName"
+    invoke-static {v1, v2}, Lkotlin/TuplesKt;->to(Ljava/lang/Object;Ljava/lang/Object;)Lkotlin/Pair;
 
-    invoke-static {v15, v14}, Lkotlin/TuplesKt;->to(Ljava/lang/Object;Ljava/lang/Object;)Lkotlin/Pair;
+    move-result-object v1
 
-    move-result-object v14
+    const/16 v2, 0x14
+
+    aput-object v1, v0, v2
 
     .line 131
-    sget-object v15, Landroidx/compose/ui/autofill/AutofillType;->PersonLastName:Landroidx/compose/ui/autofill/AutofillType;
+    sget-object v1, Landroidx/compose/ui/autofill/AutofillType;->PersonLastName:Landroidx/compose/ui/autofill/AutofillType;
 
-    move-object/from16 v22, v14
+    const-string v2, "personFamilyName"
 
-    const-string v14, "personFamilyName"
+    invoke-static {v1, v2}, Lkotlin/TuplesKt;->to(Ljava/lang/Object;Ljava/lang/Object;)Lkotlin/Pair;
 
-    invoke-static {v15, v14}, Lkotlin/TuplesKt;->to(Ljava/lang/Object;Ljava/lang/Object;)Lkotlin/Pair;
+    move-result-object v1
 
-    move-result-object v14
+    const/16 v2, 0x15
+
+    aput-object v1, v0, v2
 
     .line 132
-    sget-object v15, Landroidx/compose/ui/autofill/AutofillType;->PersonMiddleName:Landroidx/compose/ui/autofill/AutofillType;
+    sget-object v1, Landroidx/compose/ui/autofill/AutofillType;->PersonMiddleName:Landroidx/compose/ui/autofill/AutofillType;
 
-    move-object/from16 v23, v14
+    const-string v2, "personMiddleName"
 
-    const-string v14, "personMiddleName"
+    invoke-static {v1, v2}, Lkotlin/TuplesKt;->to(Ljava/lang/Object;Ljava/lang/Object;)Lkotlin/Pair;
 
-    invoke-static {v15, v14}, Lkotlin/TuplesKt;->to(Ljava/lang/Object;Ljava/lang/Object;)Lkotlin/Pair;
+    move-result-object v1
 
-    move-result-object v14
+    const/16 v2, 0x16
+
+    aput-object v1, v0, v2
 
     .line 133
-    sget-object v15, Landroidx/compose/ui/autofill/AutofillType;->PersonMiddleInitial:Landroidx/compose/ui/autofill/AutofillType;
+    sget-object v1, Landroidx/compose/ui/autofill/AutofillType;->PersonMiddleInitial:Landroidx/compose/ui/autofill/AutofillType;
 
-    move-object/from16 v24, v14
+    const-string v2, "personMiddleInitial"
 
-    const-string v14, "personMiddleInitial"
+    invoke-static {v1, v2}, Lkotlin/TuplesKt;->to(Ljava/lang/Object;Ljava/lang/Object;)Lkotlin/Pair;
 
-    invoke-static {v15, v14}, Lkotlin/TuplesKt;->to(Ljava/lang/Object;Ljava/lang/Object;)Lkotlin/Pair;
+    move-result-object v1
 
-    move-result-object v14
+    const/16 v2, 0x17
+
+    aput-object v1, v0, v2
 
     .line 134
-    sget-object v15, Landroidx/compose/ui/autofill/AutofillType;->PersonNamePrefix:Landroidx/compose/ui/autofill/AutofillType;
+    sget-object v1, Landroidx/compose/ui/autofill/AutofillType;->PersonNamePrefix:Landroidx/compose/ui/autofill/AutofillType;
 
-    move-object/from16 v25, v14
+    const-string v2, "personNamePrefix"
 
-    const-string v14, "personNamePrefix"
+    invoke-static {v1, v2}, Lkotlin/TuplesKt;->to(Ljava/lang/Object;Ljava/lang/Object;)Lkotlin/Pair;
 
-    invoke-static {v15, v14}, Lkotlin/TuplesKt;->to(Ljava/lang/Object;Ljava/lang/Object;)Lkotlin/Pair;
+    move-result-object v1
 
-    move-result-object v14
+    const/16 v2, 0x18
+
+    aput-object v1, v0, v2
 
     .line 135
-    sget-object v15, Landroidx/compose/ui/autofill/AutofillType;->PersonNameSuffix:Landroidx/compose/ui/autofill/AutofillType;
+    sget-object v1, Landroidx/compose/ui/autofill/AutofillType;->PersonNameSuffix:Landroidx/compose/ui/autofill/AutofillType;
 
-    move-object/from16 v26, v14
+    const-string v2, "personNameSuffix"
 
-    const-string v14, "personNameSuffix"
+    invoke-static {v1, v2}, Lkotlin/TuplesKt;->to(Ljava/lang/Object;Ljava/lang/Object;)Lkotlin/Pair;
 
-    invoke-static {v15, v14}, Lkotlin/TuplesKt;->to(Ljava/lang/Object;Ljava/lang/Object;)Lkotlin/Pair;
+    move-result-object v1
 
-    move-result-object v14
+    const/16 v2, 0x19
+
+    aput-object v1, v0, v2
 
     .line 136
-    sget-object v15, Landroidx/compose/ui/autofill/AutofillType;->PhoneNumber:Landroidx/compose/ui/autofill/AutofillType;
+    sget-object v1, Landroidx/compose/ui/autofill/AutofillType;->PhoneNumber:Landroidx/compose/ui/autofill/AutofillType;
 
-    move-object/from16 v27, v14
+    const-string v2, "phoneNumber"
 
-    const-string v14, "phoneNumber"
+    invoke-static {v1, v2}, Lkotlin/TuplesKt;->to(Ljava/lang/Object;Ljava/lang/Object;)Lkotlin/Pair;
 
-    invoke-static {v15, v14}, Lkotlin/TuplesKt;->to(Ljava/lang/Object;Ljava/lang/Object;)Lkotlin/Pair;
+    move-result-object v1
 
-    move-result-object v14
+    const/16 v2, 0x1a
+
+    aput-object v1, v0, v2
 
     .line 137
-    sget-object v15, Landroidx/compose/ui/autofill/AutofillType;->PhoneNumberDevice:Landroidx/compose/ui/autofill/AutofillType;
+    sget-object v1, Landroidx/compose/ui/autofill/AutofillType;->PhoneNumberDevice:Landroidx/compose/ui/autofill/AutofillType;
 
-    move-object/from16 v28, v14
+    const-string v2, "phoneNumberDevice"
 
-    const-string v14, "phoneNumberDevice"
+    invoke-static {v1, v2}, Lkotlin/TuplesKt;->to(Ljava/lang/Object;Ljava/lang/Object;)Lkotlin/Pair;
 
-    invoke-static {v15, v14}, Lkotlin/TuplesKt;->to(Ljava/lang/Object;Ljava/lang/Object;)Lkotlin/Pair;
+    move-result-object v1
 
-    move-result-object v14
+    const/16 v2, 0x1b
+
+    aput-object v1, v0, v2
 
     .line 138
-    sget-object v15, Landroidx/compose/ui/autofill/AutofillType;->PhoneCountryCode:Landroidx/compose/ui/autofill/AutofillType;
+    sget-object v1, Landroidx/compose/ui/autofill/AutofillType;->PhoneCountryCode:Landroidx/compose/ui/autofill/AutofillType;
 
-    move-object/from16 v29, v14
+    const-string v2, "phoneCountryCode"
 
-    const-string v14, "phoneCountryCode"
+    invoke-static {v1, v2}, Lkotlin/TuplesKt;->to(Ljava/lang/Object;Ljava/lang/Object;)Lkotlin/Pair;
 
-    invoke-static {v15, v14}, Lkotlin/TuplesKt;->to(Ljava/lang/Object;Ljava/lang/Object;)Lkotlin/Pair;
+    move-result-object v1
 
-    move-result-object v14
+    const/16 v2, 0x1c
+
+    aput-object v1, v0, v2
 
     .line 139
-    sget-object v15, Landroidx/compose/ui/autofill/AutofillType;->PhoneNumberNational:Landroidx/compose/ui/autofill/AutofillType;
+    sget-object v1, Landroidx/compose/ui/autofill/AutofillType;->PhoneNumberNational:Landroidx/compose/ui/autofill/AutofillType;
 
-    move-object/from16 v30, v14
+    const-string v2, "phoneNational"
 
-    const-string v14, "phoneNational"
+    invoke-static {v1, v2}, Lkotlin/TuplesKt;->to(Ljava/lang/Object;Ljava/lang/Object;)Lkotlin/Pair;
 
-    invoke-static {v15, v14}, Lkotlin/TuplesKt;->to(Ljava/lang/Object;Ljava/lang/Object;)Lkotlin/Pair;
+    move-result-object v1
 
-    move-result-object v14
+    const/16 v2, 0x1d
+
+    aput-object v1, v0, v2
 
     .line 140
-    sget-object v15, Landroidx/compose/ui/autofill/AutofillType;->Gender:Landroidx/compose/ui/autofill/AutofillType;
+    sget-object v1, Landroidx/compose/ui/autofill/AutofillType;->Gender:Landroidx/compose/ui/autofill/AutofillType;
 
-    move-object/from16 v31, v14
+    const-string v2, "gender"
 
-    const-string v14, "gender"
+    invoke-static {v1, v2}, Lkotlin/TuplesKt;->to(Ljava/lang/Object;Ljava/lang/Object;)Lkotlin/Pair;
 
-    invoke-static {v15, v14}, Lkotlin/TuplesKt;->to(Ljava/lang/Object;Ljava/lang/Object;)Lkotlin/Pair;
+    move-result-object v1
 
-    move-result-object v14
+    const/16 v2, 0x1e
+
+    aput-object v1, v0, v2
 
     .line 141
-    sget-object v15, Landroidx/compose/ui/autofill/AutofillType;->BirthDateFull:Landroidx/compose/ui/autofill/AutofillType;
+    sget-object v1, Landroidx/compose/ui/autofill/AutofillType;->BirthDateFull:Landroidx/compose/ui/autofill/AutofillType;
 
-    move-object/from16 v32, v14
+    const-string v2, "birthDateFull"
 
-    const-string v14, "birthDateFull"
+    invoke-static {v1, v2}, Lkotlin/TuplesKt;->to(Ljava/lang/Object;Ljava/lang/Object;)Lkotlin/Pair;
 
-    invoke-static {v15, v14}, Lkotlin/TuplesKt;->to(Ljava/lang/Object;Ljava/lang/Object;)Lkotlin/Pair;
+    move-result-object v1
 
-    move-result-object v14
+    const/16 v2, 0x1f
+
+    aput-object v1, v0, v2
 
     .line 142
-    sget-object v15, Landroidx/compose/ui/autofill/AutofillType;->BirthDateDay:Landroidx/compose/ui/autofill/AutofillType;
+    sget-object v1, Landroidx/compose/ui/autofill/AutofillType;->BirthDateDay:Landroidx/compose/ui/autofill/AutofillType;
 
-    move-object/from16 v33, v14
+    const-string v2, "birthDateDay"
 
-    const-string v14, "birthDateDay"
+    invoke-static {v1, v2}, Lkotlin/TuplesKt;->to(Ljava/lang/Object;Ljava/lang/Object;)Lkotlin/Pair;
 
-    invoke-static {v15, v14}, Lkotlin/TuplesKt;->to(Ljava/lang/Object;Ljava/lang/Object;)Lkotlin/Pair;
+    move-result-object v1
 
-    move-result-object v14
+    const/16 v2, 0x20
+
+    aput-object v1, v0, v2
 
     .line 143
-    sget-object v15, Landroidx/compose/ui/autofill/AutofillType;->BirthDateMonth:Landroidx/compose/ui/autofill/AutofillType;
+    sget-object v1, Landroidx/compose/ui/autofill/AutofillType;->BirthDateMonth:Landroidx/compose/ui/autofill/AutofillType;
 
-    move-object/from16 v34, v14
+    const-string v2, "birthDateMonth"
 
-    const-string v14, "birthDateMonth"
+    invoke-static {v1, v2}, Lkotlin/TuplesKt;->to(Ljava/lang/Object;Ljava/lang/Object;)Lkotlin/Pair;
 
-    invoke-static {v15, v14}, Lkotlin/TuplesKt;->to(Ljava/lang/Object;Ljava/lang/Object;)Lkotlin/Pair;
+    move-result-object v1
 
-    move-result-object v14
+    const/16 v2, 0x21
+
+    aput-object v1, v0, v2
 
     .line 144
-    sget-object v15, Landroidx/compose/ui/autofill/AutofillType;->BirthDateYear:Landroidx/compose/ui/autofill/AutofillType;
+    sget-object v1, Landroidx/compose/ui/autofill/AutofillType;->BirthDateYear:Landroidx/compose/ui/autofill/AutofillType;
 
-    move-object/from16 v35, v14
+    const-string v2, "birthDateYear"
 
-    const-string v14, "birthDateYear"
+    invoke-static {v1, v2}, Lkotlin/TuplesKt;->to(Ljava/lang/Object;Ljava/lang/Object;)Lkotlin/Pair;
 
-    invoke-static {v15, v14}, Lkotlin/TuplesKt;->to(Ljava/lang/Object;Ljava/lang/Object;)Lkotlin/Pair;
+    move-result-object v1
 
-    move-result-object v14
+    const/16 v2, 0x22
+
+    aput-object v1, v0, v2
 
     .line 145
-    sget-object v15, Landroidx/compose/ui/autofill/AutofillType;->SmsOtpCode:Landroidx/compose/ui/autofill/AutofillType;
+    sget-object v1, Landroidx/compose/ui/autofill/AutofillType;->SmsOtpCode:Landroidx/compose/ui/autofill/AutofillType;
 
-    move-object/from16 v36, v14
+    const-string/jumbo v2, "smsOTPCode"
 
-    const-string/jumbo v14, "smsOTPCode"
+    invoke-static {v1, v2}, Lkotlin/TuplesKt;->to(Ljava/lang/Object;Ljava/lang/Object;)Lkotlin/Pair;
 
-    invoke-static {v15, v14}, Lkotlin/TuplesKt;->to(Ljava/lang/Object;Ljava/lang/Object;)Lkotlin/Pair;
+    move-result-object v1
 
-    move-result-object v14
+    const/16 v2, 0x23
 
-    const/16 v15, 0x24
-
-    new-array v15, v15, [Lkotlin/Pair;
-
-    const/16 v37, 0x0
-
-    aput-object v0, v15, v37
-
-    const/4 v0, 0x1
-
-    aput-object v1, v15, v0
-
-    const/4 v0, 0x2
-
-    aput-object v2, v15, v0
-
-    const/4 v0, 0x3
-
-    aput-object v3, v15, v0
-
-    const/4 v0, 0x4
-
-    aput-object v4, v15, v0
-
-    const/4 v0, 0x5
-
-    aput-object v5, v15, v0
-
-    const/4 v0, 0x6
-
-    aput-object v6, v15, v0
-
-    const/4 v0, 0x7
-
-    aput-object v7, v15, v0
-
-    const/16 v0, 0x8
-
-    aput-object v8, v15, v0
-
-    const/16 v0, 0x9
-
-    aput-object v9, v15, v0
-
-    const/16 v0, 0xa
-
-    aput-object v10, v15, v0
-
-    const/16 v0, 0xb
-
-    aput-object v11, v15, v0
-
-    const/16 v0, 0xc
-
-    aput-object v12, v15, v0
-
-    const/16 v0, 0xd
-
-    aput-object v13, v15, v0
-
-    const/16 v0, 0xe
-
-    aput-object v16, v15, v0
-
-    const/16 v0, 0xf
-
-    aput-object v17, v15, v0
-
-    const/16 v0, 0x10
-
-    aput-object v18, v15, v0
-
-    const/16 v0, 0x11
-
-    aput-object v19, v15, v0
-
-    const/16 v0, 0x12
-
-    aput-object v20, v15, v0
-
-    const/16 v0, 0x13
-
-    aput-object v21, v15, v0
-
-    const/16 v0, 0x14
-
-    aput-object v22, v15, v0
-
-    const/16 v0, 0x15
-
-    aput-object v23, v15, v0
-
-    const/16 v0, 0x16
-
-    aput-object v24, v15, v0
-
-    const/16 v0, 0x17
-
-    aput-object v25, v15, v0
-
-    const/16 v0, 0x18
-
-    aput-object v26, v15, v0
-
-    const/16 v0, 0x19
-
-    aput-object v27, v15, v0
-
-    const/16 v0, 0x1a
-
-    aput-object v28, v15, v0
-
-    const/16 v0, 0x1b
-
-    aput-object v29, v15, v0
-
-    const/16 v0, 0x1c
-
-    aput-object v30, v15, v0
-
-    const/16 v0, 0x1d
-
-    aput-object v31, v15, v0
-
-    const/16 v0, 0x1e
-
-    aput-object v32, v15, v0
-
-    const/16 v0, 0x1f
-
-    aput-object v33, v15, v0
-
-    const/16 v0, 0x20
-
-    aput-object v34, v15, v0
-
-    const/16 v0, 0x21
-
-    aput-object v35, v15, v0
-
-    const/16 v0, 0x22
-
-    aput-object v36, v15, v0
-
-    const/16 v0, 0x23
-
-    aput-object v14, v15, v0
+    aput-object v1, v0, v2
 
     .line 109
-    invoke-static {v15}, Lkotlin/collections/MapsKt;->hashMapOf([Lkotlin/Pair;)Ljava/util/HashMap;
+    invoke-static {v0}, Lkotlin/collections/MapsKt;->hashMapOf([Lkotlin/Pair;)Ljava/util/HashMap;
 
     move-result-object v0
 
@@ -586,10 +544,6 @@
 
 .method public static final getAndroidType(Landroidx/compose/ui/autofill/AutofillType;)Ljava/lang/String;
     .locals 1
-
-    const-string v0, "<this>"
-
-    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 100
     sget-object v0, Landroidx/compose/ui/autofill/AndroidAutofillType_androidKt;->androidAutofillTypes:Ljava/util/HashMap;

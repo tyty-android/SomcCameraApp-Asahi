@@ -5,25 +5,24 @@
 
 # annotations
 .annotation system Ldalvik/annotation/SourceDebugExtension;
-    value = "SMAP\nInternalPointerEvent.android.kt\nKotlin\n*S Kotlin\n*F\n+ 1 InternalPointerEvent.android.kt\nandroidx/compose/ui/input/pointer/InternalPointerEvent\n+ 2 ListUtils.kt\nandroidx/compose/ui/util/ListUtilsKt\n*L\n1#1,35:1\n116#2,2:36\n33#2,6:38\n118#2:44\n*S KotlinDebug\n*F\n+ 1 InternalPointerEvent.android.kt\nandroidx/compose/ui/input/pointer/InternalPointerEvent\n*L\n30#1:36,2\n30#1:38,6\n30#1:44\n*E\n"
+    value = "SMAP\nInternalPointerEvent.android.kt\nKotlin\n*S Kotlin\n*F\n+ 1 InternalPointerEvent.android.kt\nandroidx/compose/ui/input/pointer/InternalPointerEvent\n+ 2 ListUtils.kt\nandroidx/compose/ui/util/ListUtilsKt\n*L\n1#1,39:1\n116#2,2:40\n33#2,6:42\n118#2:48\n*S KotlinDebug\n*F\n+ 1 InternalPointerEvent.android.kt\nandroidx/compose/ui/input/pointer/InternalPointerEvent\n*L\n33#1:40,2\n33#1:42,6\n33#1:48\n*E\n"
 .end annotation
 
 .annotation runtime Lkotlin/Metadata;
     d1 = {
-        "\u00000\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0010$\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0004\n\u0002\u0018\u0002\n\u0002\u0008\u0005\n\u0002\u0010\u000b\n\u0002\u0008\t\u0008\u0000\u0018\u00002\u00020\u0001B$\u0012\u0012\u0010\u0002\u001a\u000e\u0012\u0004\u0012\u00020\u0004\u0012\u0004\u0012\u00020\u00050\u0003\u0012\u0006\u0010\u0006\u001a\u00020\u0007\u00f8\u0001\u0000\u00a2\u0006\u0002\u0010\u0008J\u001b\u0010\u0017\u001a\u00020\u00122\u0006\u0010\u0018\u001a\u00020\u0004\u00f8\u0001\u0001\u00f8\u0001\u0000\u00a2\u0006\u0004\u0008\u0019\u0010\u001aR \u0010\u0002\u001a\u000e\u0012\u0004\u0012\u00020\u0004\u0012\u0004\u0012\u00020\u00050\u0003\u00f8\u0001\u0000\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\t\u0010\nR\u0011\u0010\u000b\u001a\u00020\u000c8F\u00a2\u0006\u0006\u001a\u0004\u0008\r\u0010\u000eR\u0011\u0010\u0006\u001a\u00020\u0007\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\u000f\u0010\u0010R\u001a\u0010\u0011\u001a\u00020\u0012X\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\u0008\u0013\u0010\u0014\"\u0004\u0008\u0015\u0010\u0016\u0082\u0002\u000b\n\u0002\u0008\u0019\n\u0005\u0008\u00a1\u001e0\u0001\u00a8\u0006\u001b"
+        "\u00004\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0004\n\u0002\u0018\u0002\n\u0002\u0008\u0005\n\u0002\u0010\u000b\n\u0002\u0008\u0006\n\u0002\u0018\u0002\n\u0002\u0008\u0003\u0008\u0000\u0018\u00002\u00020\u0001B\u001b\u0012\u000c\u0010\u0002\u001a\u0008\u0012\u0004\u0012\u00020\u00040\u0003\u0012\u0006\u0010\u0005\u001a\u00020\u0006\u00a2\u0006\u0002\u0010\u0007J\u0018\u0010\u0016\u001a\u00020\u00112\u0006\u0010\u0017\u001a\u00020\u0018\u00f8\u0001\u0000\u00a2\u0006\u0004\u0008\u0019\u0010\u001aR\u0017\u0010\u0002\u001a\u0008\u0012\u0004\u0012\u00020\u00040\u0003\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\u0008\u0010\tR\u0011\u0010\n\u001a\u00020\u000b8F\u00a2\u0006\u0006\u001a\u0004\u0008\u000c\u0010\rR\u0011\u0010\u0005\u001a\u00020\u0006\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\u000e\u0010\u000fR\u001a\u0010\u0010\u001a\u00020\u0011X\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\u0008\u0012\u0010\u0013\"\u0004\u0008\u0014\u0010\u0015\u0082\u0002\u0007\n\u0005\u0008\u00a1\u001e0\u0001\u00a8\u0006\u001b"
     }
     d2 = {
         "Landroidx/compose/ui/input/pointer/InternalPointerEvent;",
         "",
         "changes",
-        "",
-        "Landroidx/compose/ui/input/pointer/PointerId;",
+        "Landroidx/collection/LongSparseArray;",
         "Landroidx/compose/ui/input/pointer/PointerInputChange;",
         "pointerInputEvent",
         "Landroidx/compose/ui/input/pointer/PointerInputEvent;",
-        "(Ljava/util/Map;Landroidx/compose/ui/input/pointer/PointerInputEvent;)V",
+        "(Landroidx/collection/LongSparseArray;Landroidx/compose/ui/input/pointer/PointerInputEvent;)V",
         "getChanges",
-        "()Ljava/util/Map;",
+        "()Landroidx/collection/LongSparseArray;",
         "motionEvent",
         "Landroid/view/MotionEvent;",
         "getMotionEvent",
@@ -38,6 +37,7 @@
         "(Z)V",
         "issuesEnterExitEvent",
         "pointerId",
+        "Landroidx/compose/ui/input/pointer/PointerId;",
         "issuesEnterExitEvent-0FcD4WY",
         "(J)Z",
         "ui_release"
@@ -52,12 +52,15 @@
 .end annotation
 
 
+# static fields
+.field public static final $stable:I = 0x8
+
+
 # instance fields
-.field private final changes:Ljava/util/Map;
+.field private final changes:Landroidx/collection/LongSparseArray;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Ljava/util/Map<",
-            "Landroidx/compose/ui/input/pointer/PointerId;",
+            "Landroidx/collection/LongSparseArray<",
             "Landroidx/compose/ui/input/pointer/PointerInputChange;",
             ">;"
         }
@@ -70,13 +73,18 @@
 
 
 # direct methods
-.method public constructor <init>(Ljava/util/Map;Landroidx/compose/ui/input/pointer/PointerInputEvent;)V
-    .locals 1
+.method static constructor <clinit>()V
+    .locals 0
+
+    return-void
+.end method
+
+.method public constructor <init>(Landroidx/collection/LongSparseArray;Landroidx/compose/ui/input/pointer/PointerInputEvent;)V
+    .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Ljava/util/Map<",
-            "Landroidx/compose/ui/input/pointer/PointerId;",
+            "Landroidx/collection/LongSparseArray<",
             "Landroidx/compose/ui/input/pointer/PointerInputChange;",
             ">;",
             "Landroidx/compose/ui/input/pointer/PointerInputEvent;",
@@ -84,21 +92,13 @@
         }
     .end annotation
 
-    const-string v0, "changes"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string v0, "pointerInputEvent"
-
-    invoke-static {p2, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 22
+    .line 24
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 23
-    iput-object p1, p0, Landroidx/compose/ui/input/pointer/InternalPointerEvent;->changes:Ljava/util/Map;
+    .line 26
+    iput-object p1, p0, Landroidx/compose/ui/input/pointer/InternalPointerEvent;->changes:Landroidx/collection/LongSparseArray;
 
-    .line 24
+    .line 27
     iput-object p2, p0, Landroidx/compose/ui/input/pointer/InternalPointerEvent;->pointerInputEvent:Landroidx/compose/ui/input/pointer/PointerInputEvent;
 
     return-void
@@ -106,20 +106,19 @@
 
 
 # virtual methods
-.method public final getChanges()Ljava/util/Map;
+.method public final getChanges()Landroidx/collection/LongSparseArray;
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()",
-            "Ljava/util/Map<",
-            "Landroidx/compose/ui/input/pointer/PointerId;",
+            "Landroidx/collection/LongSparseArray<",
             "Landroidx/compose/ui/input/pointer/PointerInputChange;",
             ">;"
         }
     .end annotation
 
-    .line 23
-    iget-object p0, p0, Landroidx/compose/ui/input/pointer/InternalPointerEvent;->changes:Ljava/util/Map;
+    .line 26
+    iget-object p0, p0, Landroidx/compose/ui/input/pointer/InternalPointerEvent;->changes:Landroidx/collection/LongSparseArray;
 
     return-object p0
 .end method
@@ -127,7 +126,7 @@
 .method public final getMotionEvent()Landroid/view/MotionEvent;
     .locals 0
 
-    .line 27
+    .line 30
     iget-object p0, p0, Landroidx/compose/ui/input/pointer/InternalPointerEvent;->pointerInputEvent:Landroidx/compose/ui/input/pointer/PointerInputEvent;
 
     invoke-virtual {p0}, Landroidx/compose/ui/input/pointer/PointerInputEvent;->getMotionEvent()Landroid/view/MotionEvent;
@@ -140,7 +139,7 @@
 .method public final getPointerInputEvent()Landroidx/compose/ui/input/pointer/PointerInputEvent;
     .locals 0
 
-    .line 24
+    .line 27
     iget-object p0, p0, Landroidx/compose/ui/input/pointer/InternalPointerEvent;->pointerInputEvent:Landroidx/compose/ui/input/pointer/PointerInputEvent;
 
     return-object p0
@@ -149,7 +148,7 @@
 .method public final getSuppressMovementConsumption()Z
     .locals 0
 
-    .line 34
+    .line 37
     iget-boolean p0, p0, Landroidx/compose/ui/input/pointer/InternalPointerEvent;->suppressMovementConsumption:Z
 
     return p0
@@ -158,14 +157,14 @@
 .method public final issuesEnterExitEvent-0FcD4WY(J)Z
     .locals 6
 
-    .line 30
+    .line 33
     iget-object p0, p0, Landroidx/compose/ui/input/pointer/InternalPointerEvent;->pointerInputEvent:Landroidx/compose/ui/input/pointer/PointerInputEvent;
 
     invoke-virtual {p0}, Landroidx/compose/ui/input/pointer/PointerInputEvent;->getPointers()Ljava/util/List;
 
     move-result-object p0
 
-    .line 39
+    .line 43
     invoke-interface {p0}, Ljava/util/List;->size()I
 
     move-result v0
@@ -177,17 +176,17 @@
     :goto_0
     if-ge v2, v0, :cond_1
 
-    .line 40
+    .line 44
     invoke-interface {p0, v2}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
     move-result-object v3
 
-    .line 37
+    .line 41
     move-object v4, v3
 
     check-cast v4, Landroidx/compose/ui/input/pointer/PointerInputEventData;
 
-    .line 31
+    .line 34
     invoke-virtual {v4}, Landroidx/compose/ui/input/pointer/PointerInputEventData;->getId-J3iCeTQ()J
 
     move-result-wide v4
@@ -208,13 +207,13 @@
     :cond_1
     const/4 v3, 0x0
 
-    .line 30
+    .line 33
     :goto_1
     check-cast v3, Landroidx/compose/ui/input/pointer/PointerInputEventData;
 
     if-eqz v3, :cond_2
 
-    .line 32
+    .line 35
     invoke-virtual {v3}, Landroidx/compose/ui/input/pointer/PointerInputEventData;->getIssuesEnterExit()Z
 
     move-result v1
@@ -226,7 +225,7 @@
 .method public final setSuppressMovementConsumption(Z)V
     .locals 0
 
-    .line 34
+    .line 37
     iput-boolean p1, p0, Landroidx/compose/ui/input/pointer/InternalPointerEvent;->suppressMovementConsumption:Z
 
     return-void

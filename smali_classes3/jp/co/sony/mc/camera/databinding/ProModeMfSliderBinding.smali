@@ -28,6 +28,11 @@
     .end annotation
 .end field
 
+.field protected mViewFinderUiState:Ljp/co/sony/mc/camera/view/uistate/ViewFinderUiState;
+    .annotation runtime Landroidx/databinding/Bindable;
+    .end annotation
+.end field
+
 .field public final mfSlider:Landroidx/constraintlayout/widget/ConstraintLayout;
 
 .field public final mfSliderFar:Ljp/co/sony/mc/camera/view/widget/PressButton;
@@ -41,25 +46,25 @@
 .method protected constructor <init>(Ljava/lang/Object;Landroid/view/View;ILandroid/widget/Space;Landroid/widget/Space;Landroidx/constraintlayout/widget/ConstraintLayout;Ljp/co/sony/mc/camera/view/widget/PressButton;Ljp/co/sony/mc/camera/view/widget/PressButton;Ljp/co/sony/mc/camera/view/widget/SliderView;)V
     .locals 0
 
-    .line 58
+    .line 62
     invoke-direct {p0, p1, p2, p3}, Landroidx/databinding/ViewDataBinding;-><init>(Ljava/lang/Object;Landroid/view/View;I)V
 
-    .line 59
+    .line 63
     iput-object p4, p0, Ljp/co/sony/mc/camera/databinding/ProModeMfSliderBinding;->anchorLand:Landroid/widget/Space;
 
-    .line 60
+    .line 64
     iput-object p5, p0, Ljp/co/sony/mc/camera/databinding/ProModeMfSliderBinding;->anchorPort:Landroid/widget/Space;
 
-    .line 61
+    .line 65
     iput-object p6, p0, Ljp/co/sony/mc/camera/databinding/ProModeMfSliderBinding;->mfSlider:Landroidx/constraintlayout/widget/ConstraintLayout;
 
-    .line 62
+    .line 66
     iput-object p7, p0, Ljp/co/sony/mc/camera/databinding/ProModeMfSliderBinding;->mfSliderFar:Ljp/co/sony/mc/camera/view/widget/PressButton;
 
-    .line 63
+    .line 67
     iput-object p8, p0, Ljp/co/sony/mc/camera/databinding/ProModeMfSliderBinding;->mfSliderNear:Ljp/co/sony/mc/camera/view/widget/PressButton;
 
-    .line 64
+    .line 68
     iput-object p9, p0, Ljp/co/sony/mc/camera/databinding/ProModeMfSliderBinding;->mfSliderSeekBar:Ljp/co/sony/mc/camera/view/widget/SliderView;
 
     return-void
@@ -68,7 +73,7 @@
 .method public static bind(Landroid/view/View;)Ljp/co/sony/mc/camera/databinding/ProModeMfSliderBinding;
     .locals 1
 
-    .line 136
+    .line 147
     invoke-static {}, Landroidx/databinding/DataBindingUtil;->getDefaultComponent()Landroidx/databinding/DataBindingComponent;
 
     move-result-object v0
@@ -85,9 +90,9 @@
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
-    const v0, 0x7f0c013c
+    const v0, 0x7f0c012b
 
-    .line 148
+    .line 159
     invoke-static {p1, p0, v0}, Ljp/co/sony/mc/camera/databinding/ProModeMfSliderBinding;->bind(Ljava/lang/Object;Landroid/view/View;I)Landroidx/databinding/ViewDataBinding;
 
     move-result-object p0
@@ -100,7 +105,7 @@
 .method public static inflate(Landroid/view/LayoutInflater;)Ljp/co/sony/mc/camera/databinding/ProModeMfSliderBinding;
     .locals 1
 
-    .line 118
+    .line 129
     invoke-static {}, Landroidx/databinding/DataBindingUtil;->getDefaultComponent()Landroidx/databinding/DataBindingComponent;
 
     move-result-object v0
@@ -115,7 +120,7 @@
 .method public static inflate(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Z)Ljp/co/sony/mc/camera/databinding/ProModeMfSliderBinding;
     .locals 1
 
-    .line 99
+    .line 110
     invoke-static {}, Landroidx/databinding/DataBindingUtil;->getDefaultComponent()Landroidx/databinding/DataBindingComponent;
 
     move-result-object v0
@@ -132,9 +137,9 @@
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
-    const v0, 0x7f0c013c
+    const v0, 0x7f0c012b
 
-    .line 113
+    .line 124
     invoke-static {p0, v0, p1, p2, p3}, Landroidx/databinding/ViewDataBinding;->inflateInternal(Landroid/view/LayoutInflater;ILandroid/view/ViewGroup;ZLjava/lang/Object;)Landroidx/databinding/ViewDataBinding;
 
     move-result-object p0
@@ -153,9 +158,9 @@
 
     const/4 v1, 0x0
 
-    const v2, 0x7f0c013c
+    const v2, 0x7f0c012b
 
-    .line 132
+    .line 143
     invoke-static {p0, v2, v0, v1, p1}, Landroidx/databinding/ViewDataBinding;->inflateInternal(Landroid/view/LayoutInflater;ILandroid/view/ViewGroup;ZLjava/lang/Object;)Landroidx/databinding/ViewDataBinding;
 
     move-result-object p0
@@ -170,7 +175,7 @@
 .method public getCameraStatusModel()Ljp/co/sony/mc/camera/view/viewmodel/CameraStatusModel;
     .locals 0
 
-    .line 71
+    .line 75
     iget-object p0, p0, Ljp/co/sony/mc/camera/databinding/ProModeMfSliderBinding;->mCameraStatusModel:Ljp/co/sony/mc/camera/view/viewmodel/CameraStatusModel;
 
     return-object p0
@@ -179,7 +184,7 @@
 .method public getOrientationViewModel()Ljp/co/sony/mc/camera/view/viewmodel/OrientationViewModel;
     .locals 0
 
-    .line 93
+    .line 97
     iget-object p0, p0, Ljp/co/sony/mc/camera/databinding/ProModeMfSliderBinding;->mOrientationViewModel:Ljp/co/sony/mc/camera/view/viewmodel/OrientationViewModel;
 
     return-object p0
@@ -188,7 +193,7 @@
 .method public getProModeBottomPaneUiState()Ljp/co/sony/mc/camera/view/uistate/ProModeBottomPaneUiState;
     .locals 0
 
-    .line 86
+    .line 90
     iget-object p0, p0, Ljp/co/sony/mc/camera/databinding/ProModeMfSliderBinding;->mProModeBottomPaneUiState:Ljp/co/sony/mc/camera/view/uistate/ProModeBottomPaneUiState;
 
     return-object p0
@@ -197,8 +202,17 @@
 .method public getProModeFocusUiState()Ljp/co/sony/mc/camera/view/uistate/ProModeFocusUiState;
     .locals 0
 
-    .line 78
+    .line 82
     iget-object p0, p0, Ljp/co/sony/mc/camera/databinding/ProModeMfSliderBinding;->mProModeFocusUiState:Ljp/co/sony/mc/camera/view/uistate/ProModeFocusUiState;
+
+    return-object p0
+.end method
+
+.method public getViewFinderUiState()Ljp/co/sony/mc/camera/view/uistate/ViewFinderUiState;
+    .locals 0
+
+    .line 104
+    iget-object p0, p0, Ljp/co/sony/mc/camera/databinding/ProModeMfSliderBinding;->mViewFinderUiState:Ljp/co/sony/mc/camera/view/uistate/ViewFinderUiState;
 
     return-object p0
 .end method
@@ -213,4 +227,7 @@
 .end method
 
 .method public abstract setProModeFocusUiState(Ljp/co/sony/mc/camera/view/uistate/ProModeFocusUiState;)V
+.end method
+
+.method public abstract setViewFinderUiState(Ljp/co/sony/mc/camera/view/uistate/ViewFinderUiState;)V
 .end method

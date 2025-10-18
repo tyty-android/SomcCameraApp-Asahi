@@ -43,7 +43,7 @@
 
     const/4 v0, 0x0
 
-    .line 680
+    .line 458
     sget-object v1, Landroidx/compose/ui/layout/ComposableSingletons$SubcomposeLayoutKt$lambda-1$1;->INSTANCE:Landroidx/compose/ui/layout/ComposableSingletons$SubcomposeLayoutKt$lambda-1$1;
 
     const v2, -0x67cddd26

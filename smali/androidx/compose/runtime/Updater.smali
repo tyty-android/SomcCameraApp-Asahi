@@ -15,7 +15,7 @@
 
 .annotation runtime Lkotlin/Metadata;
     d1 = {
-        "\u0000J\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0000\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0005\n\u0002\u0010\u000b\n\u0002\u0008\u0004\n\u0002\u0010\u0008\n\u0002\u0008\u0003\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0007\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0005\n\u0002\u0010\u000e\n\u0002\u0008\u0005\u0008\u0087@\u0018\u0000*\u0004\u0008\u0000\u0010\u00012\u00020\u0002B\u0012\u0012\u0006\u0010\u0003\u001a\u00020\u0004\u00f8\u0001\u0000\u00a2\u0006\u0004\u0008\u0005\u0010\u0006J\u001a\u0010\t\u001a\u00020\n2\u0008\u0010\u000b\u001a\u0004\u0018\u00010\u0002H\u00d6\u0003\u00a2\u0006\u0004\u0008\u000c\u0010\rJ\u0010\u0010\u000e\u001a\u00020\u000fH\u00d6\u0001\u00a2\u0006\u0004\u0008\u0010\u0010\u0011J&\u0010\u0012\u001a\u00020\u00132\u0017\u0010\u0014\u001a\u0013\u0012\u0004\u0012\u00028\u0000\u0012\u0004\u0012\u00020\u00130\u0015\u00a2\u0006\u0002\u0008\u0016\u00a2\u0006\u0004\u0008\u0017\u0010\u0018J&\u0010\u0019\u001a\u00020\u00132\u0017\u0010\u0014\u001a\u0013\u0012\u0004\u0012\u00028\u0000\u0012\u0004\u0012\u00020\u00130\u0015\u00a2\u0006\u0002\u0008\u0016\u00a2\u0006\u0004\u0008\u001a\u0010\u0018JI\u0010\u001b\u001a\u00020\u0013\"\u0004\u0008\u0001\u0010\u001c2\u0006\u0010\u001d\u001a\u0002H\u001c2,\u0010\u0014\u001a(\u0012\u0004\u0012\u00028\u0000\u0012\u0013\u0012\u0011H\u001c\u00a2\u0006\u000c\u0008\u001f\u0012\u0008\u0008 \u0012\u0004\u0008\u0008(\u001d\u0012\u0004\u0012\u00020\u00130\u001e\u00a2\u0006\u0002\u0008\u0016\u00a2\u0006\u0004\u0008!\u0010\"JK\u0010\u001b\u001a\u00020\u00132\u0006\u0010\u001d\u001a\u00020\u000f2.\u0008\u0008\u0010\u0014\u001a(\u0012\u0004\u0012\u00028\u0000\u0012\u0013\u0012\u00110\u000f\u00a2\u0006\u000c\u0008\u001f\u0012\u0008\u0008 \u0012\u0004\u0008\u0008(\u001d\u0012\u0004\u0012\u00020\u00130\u001e\u00a2\u0006\u0002\u0008\u0016H\u0086\u0008\u00f8\u0001\u0001\u00a2\u0006\u0004\u0008!\u0010#J\u0010\u0010$\u001a\u00020%H\u00d6\u0001\u00a2\u0006\u0004\u0008&\u0010\'JI\u0010(\u001a\u00020\u0013\"\u0004\u0008\u0001\u0010\u001c2\u0006\u0010\u001d\u001a\u0002H\u001c2,\u0010\u0014\u001a(\u0012\u0004\u0012\u00028\u0000\u0012\u0013\u0012\u0011H\u001c\u00a2\u0006\u000c\u0008\u001f\u0012\u0008\u0008 \u0012\u0004\u0008\u0008(\u001d\u0012\u0004\u0012\u00020\u00130\u001e\u00a2\u0006\u0002\u0008\u0016\u00a2\u0006\u0004\u0008)\u0010\"JK\u0010(\u001a\u00020\u00132\u0006\u0010\u001d\u001a\u00020\u000f2.\u0008\u0008\u0010\u0014\u001a(\u0012\u0004\u0012\u00028\u0000\u0012\u0013\u0012\u00110\u000f\u00a2\u0006\u000c\u0008\u001f\u0012\u0008\u0008 \u0012\u0004\u0008\u0008(\u001d\u0012\u0004\u0012\u00020\u00130\u001e\u00a2\u0006\u0002\u0008\u0016H\u0086\u0008\u00f8\u0001\u0001\u00a2\u0006\u0004\u0008)\u0010#R\u0016\u0010\u0003\u001a\u00020\u00048\u0000X\u0081\u0004\u00a2\u0006\u0008\n\u0000\u0012\u0004\u0008\u0007\u0010\u0008\u0088\u0001\u0003\u0092\u0001\u00020\u0004\u00f8\u0001\u0000\u0082\u0002\u000b\n\u0002\u0008\u0019\n\u0005\u0008\u009920\u0001\u00a8\u0006*"
+        "\u0000J\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0000\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0005\n\u0002\u0010\u000b\n\u0002\u0008\u0004\n\u0002\u0010\u0008\n\u0002\u0008\u0003\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0007\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0005\n\u0002\u0010\u000e\n\u0002\u0008\u0005\u0008\u0087@\u0018\u0000*\u0004\u0008\u0000\u0010\u00012\u00020\u0002B\u000f\u0012\u0006\u0010\u0003\u001a\u00020\u0004\u00a2\u0006\u0004\u0008\u0005\u0010\u0006J\u001a\u0010\t\u001a\u00020\n2\u0008\u0010\u000b\u001a\u0004\u0018\u00010\u0002H\u00d6\u0003\u00a2\u0006\u0004\u0008\u000c\u0010\rJ\u0010\u0010\u000e\u001a\u00020\u000fH\u00d6\u0001\u00a2\u0006\u0004\u0008\u0010\u0010\u0011J&\u0010\u0012\u001a\u00020\u00132\u0017\u0010\u0014\u001a\u0013\u0012\u0004\u0012\u00028\u0000\u0012\u0004\u0012\u00020\u00130\u0015\u00a2\u0006\u0002\u0008\u0016\u00a2\u0006\u0004\u0008\u0017\u0010\u0018J&\u0010\u0019\u001a\u00020\u00132\u0017\u0010\u0014\u001a\u0013\u0012\u0004\u0012\u00028\u0000\u0012\u0004\u0012\u00020\u00130\u0015\u00a2\u0006\u0002\u0008\u0016\u00a2\u0006\u0004\u0008\u001a\u0010\u0018JI\u0010\u001b\u001a\u00020\u0013\"\u0004\u0008\u0001\u0010\u001c2\u0006\u0010\u001d\u001a\u0002H\u001c2,\u0010\u0014\u001a(\u0012\u0004\u0012\u00028\u0000\u0012\u0013\u0012\u0011H\u001c\u00a2\u0006\u000c\u0008\u001f\u0012\u0008\u0008 \u0012\u0004\u0008\u0008(\u001d\u0012\u0004\u0012\u00020\u00130\u001e\u00a2\u0006\u0002\u0008\u0016\u00a2\u0006\u0004\u0008!\u0010\"JH\u0010\u001b\u001a\u00020\u00132\u0006\u0010\u001d\u001a\u00020\u000f2.\u0008\u0008\u0010\u0014\u001a(\u0012\u0004\u0012\u00028\u0000\u0012\u0013\u0012\u00110\u000f\u00a2\u0006\u000c\u0008\u001f\u0012\u0008\u0008 \u0012\u0004\u0008\u0008(\u001d\u0012\u0004\u0012\u00020\u00130\u001e\u00a2\u0006\u0002\u0008\u0016H\u0086\u0008\u00a2\u0006\u0004\u0008!\u0010#J\u0010\u0010$\u001a\u00020%H\u00d6\u0001\u00a2\u0006\u0004\u0008&\u0010\'JI\u0010(\u001a\u00020\u0013\"\u0004\u0008\u0001\u0010\u001c2\u0006\u0010\u001d\u001a\u0002H\u001c2,\u0010\u0014\u001a(\u0012\u0004\u0012\u00028\u0000\u0012\u0013\u0012\u0011H\u001c\u00a2\u0006\u000c\u0008\u001f\u0012\u0008\u0008 \u0012\u0004\u0008\u0008(\u001d\u0012\u0004\u0012\u00020\u00130\u001e\u00a2\u0006\u0002\u0008\u0016\u00a2\u0006\u0004\u0008)\u0010\"JH\u0010(\u001a\u00020\u00132\u0006\u0010\u001d\u001a\u00020\u000f2.\u0008\u0008\u0010\u0014\u001a(\u0012\u0004\u0012\u00028\u0000\u0012\u0013\u0012\u00110\u000f\u00a2\u0006\u000c\u0008\u001f\u0012\u0008\u0008 \u0012\u0004\u0008\u0008(\u001d\u0012\u0004\u0012\u00020\u00130\u001e\u00a2\u0006\u0002\u0008\u0016H\u0086\u0008\u00a2\u0006\u0004\u0008)\u0010#R\u0016\u0010\u0003\u001a\u00020\u00048\u0000X\u0081\u0004\u00a2\u0006\u0008\n\u0000\u0012\u0004\u0008\u0007\u0010\u0008\u0088\u0001\u0003\u0092\u0001\u00020\u0004\u00a8\u0006*"
     }
     d2 = {
         "Landroidx/compose/runtime/Updater;",
@@ -83,7 +83,7 @@
 .method private synthetic constructor <init>(Landroidx/compose/runtime/Composer;)V
     .locals 0
 
-    .line 4129
+    .line 3722
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     iput-object p1, p0, Landroidx/compose/runtime/Updater;->composer:Landroidx/compose/runtime/Composer;
@@ -102,7 +102,7 @@
 .end method
 
 .method public static constructor-impl(Landroidx/compose/runtime/Composer;)Landroidx/compose/runtime/Composer;
-    .locals 1
+    .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<T:",
@@ -113,10 +113,6 @@
             "Landroidx/compose/runtime/Composer;"
         }
     .end annotation
-
-    const-string v0, "composer"
-
-    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
     return-object p0
 .end method
@@ -192,11 +188,7 @@
         }
     .end annotation
 
-    const-string v0, "block"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 4225
+    .line 3818
     invoke-interface {p0}, Landroidx/compose/runtime/Composer;->getInserting()Z
 
     move-result v0
@@ -230,11 +222,7 @@
         }
     .end annotation
 
-    const-string v0, "block"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 4244
+    .line 3837
     sget-object v0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
 
     new-instance v1, Landroidx/compose/runtime/Updater$reconcile$1;
@@ -263,11 +251,7 @@
         }
     .end annotation
 
-    const-string v0, "block"
-
-    invoke-static {p2, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 4145
+    .line 3738
     invoke-interface {p0}, Landroidx/compose/runtime/Composer;->getInserting()Z
 
     move-result v0
@@ -288,7 +272,7 @@
 
     if-nez v0, :cond_1
 
-    .line 4146
+    .line 3739
     :cond_0
     invoke-static {p1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -296,7 +280,7 @@
 
     invoke-interface {p0, v0}, Landroidx/compose/runtime/Composer;->updateRememberedValue(Ljava/lang/Object;)V
 
-    .line 4147
+    .line 3740
     invoke-static {p1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object p1
@@ -323,11 +307,7 @@
         }
     .end annotation
 
-    const-string v0, "block"
-
-    invoke-static {p2, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 4163
+    .line 3756
     invoke-interface {p0}, Landroidx/compose/runtime/Composer;->getInserting()Z
 
     move-result v0
@@ -344,11 +324,11 @@
 
     if-nez v0, :cond_1
 
-    .line 4164
+    .line 3757
     :cond_0
     invoke-interface {p0, p1}, Landroidx/compose/runtime/Composer;->updateRememberedValue(Ljava/lang/Object;)V
 
-    .line 4165
+    .line 3758
     invoke-interface {p0, p1, p2}, Landroidx/compose/runtime/Composer;->apply(Ljava/lang/Object;Lkotlin/jvm/functions/Function2;)V
 
     :cond_1
@@ -396,18 +376,14 @@
         }
     .end annotation
 
-    const-string v0, "block"
-
-    invoke-static {p2, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 4185
+    .line 3778
     invoke-interface {p0}, Landroidx/compose/runtime/Composer;->getInserting()Z
 
     move-result v0
 
     if-nez v0, :cond_0
 
-    .line 4186
+    .line 3779
     invoke-interface {p0}, Landroidx/compose/runtime/Composer;->rememberedValue()Ljava/lang/Object;
 
     move-result-object v1
@@ -422,7 +398,7 @@
 
     if-nez v1, :cond_1
 
-    .line 4187
+    .line 3780
     :cond_0
     invoke-static {p1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -432,7 +408,7 @@
 
     if-nez v0, :cond_1
 
-    .line 4188
+    .line 3781
     invoke-static {p1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object p1
@@ -459,18 +435,14 @@
         }
     .end annotation
 
-    const-string v0, "block"
-
-    invoke-static {p2, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 4207
+    .line 3800
     invoke-interface {p0}, Landroidx/compose/runtime/Composer;->getInserting()Z
 
     move-result v0
 
     if-nez v0, :cond_0
 
-    .line 4208
+    .line 3801
     invoke-interface {p0}, Landroidx/compose/runtime/Composer;->rememberedValue()Ljava/lang/Object;
 
     move-result-object v1
@@ -481,13 +453,13 @@
 
     if-nez v1, :cond_1
 
-    .line 4209
+    .line 3802
     :cond_0
     invoke-interface {p0, p1}, Landroidx/compose/runtime/Composer;->updateRememberedValue(Ljava/lang/Object;)V
 
     if-nez v0, :cond_1
 
-    .line 4210
+    .line 3803
     invoke-interface {p0, p1, p2}, Landroidx/compose/runtime/Composer;->apply(Ljava/lang/Object;Lkotlin/jvm/functions/Function2;)V
 
     :cond_1

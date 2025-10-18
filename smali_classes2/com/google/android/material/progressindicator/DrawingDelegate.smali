@@ -4,6 +4,12 @@
 
 
 # annotations
+.annotation system Ldalvik/annotation/MemberClasses;
+    value = {
+        Lcom/google/android/material/progressindicator/DrawingDelegate$ActiveIndicator;
+    }
+.end annotation
+
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "<S:",
@@ -15,8 +21,6 @@
 
 
 # instance fields
-.field protected drawable:Lcom/google/android/material/progressindicator/DrawableWithAnimatedVisibilityChange;
-
 .field spec:Lcom/google/android/material/progressindicator/BaseProgressIndicatorSpec;
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -35,10 +39,10 @@
         }
     .end annotation
 
-    .line 31
+    .line 33
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 32
+    .line 34
     iput-object p1, p0, Lcom/google/android/material/progressindicator/DrawingDelegate;->spec:Lcom/google/android/material/progressindicator/BaseProgressIndicatorSpec;
 
     return-void
@@ -46,13 +50,16 @@
 
 
 # virtual methods
-.method abstract adjustCanvas(Landroid/graphics/Canvas;Landroid/graphics/Rect;F)V
+.method abstract adjustCanvas(Landroid/graphics/Canvas;Landroid/graphics/Rect;FZZ)V
 .end method
 
-.method abstract fillIndicator(Landroid/graphics/Canvas;Landroid/graphics/Paint;FFI)V
+.method abstract drawStopIndicator(Landroid/graphics/Canvas;Landroid/graphics/Paint;II)V
 .end method
 
-.method abstract fillTrack(Landroid/graphics/Canvas;Landroid/graphics/Paint;)V
+.method abstract fillIndicator(Landroid/graphics/Canvas;Landroid/graphics/Paint;Lcom/google/android/material/progressindicator/DrawingDelegate$ActiveIndicator;I)V
+.end method
+
+.method abstract fillTrack(Landroid/graphics/Canvas;Landroid/graphics/Paint;FFIII)V
 .end method
 
 .method abstract getPreferredHeight()I
@@ -61,25 +68,16 @@
 .method abstract getPreferredWidth()I
 .end method
 
-.method protected registerDrawable(Lcom/google/android/material/progressindicator/DrawableWithAnimatedVisibilityChange;)V
-    .locals 0
-
-    .line 89
-    iput-object p1, p0, Lcom/google/android/material/progressindicator/DrawingDelegate;->drawable:Lcom/google/android/material/progressindicator/DrawableWithAnimatedVisibilityChange;
-
-    return-void
-.end method
-
-.method validateSpecAndAdjustCanvas(Landroid/graphics/Canvas;Landroid/graphics/Rect;F)V
+.method validateSpecAndAdjustCanvas(Landroid/graphics/Canvas;Landroid/graphics/Rect;FZZ)V
     .locals 1
 
-    .line 96
+    .line 121
     iget-object v0, p0, Lcom/google/android/material/progressindicator/DrawingDelegate;->spec:Lcom/google/android/material/progressindicator/BaseProgressIndicatorSpec;
 
     invoke-virtual {v0}, Lcom/google/android/material/progressindicator/BaseProgressIndicatorSpec;->validateSpec()V
 
-    .line 97
-    invoke-virtual {p0, p1, p2, p3}, Lcom/google/android/material/progressindicator/DrawingDelegate;->adjustCanvas(Landroid/graphics/Canvas;Landroid/graphics/Rect;F)V
+    .line 122
+    invoke-virtual/range {p0 .. p5}, Lcom/google/android/material/progressindicator/DrawingDelegate;->adjustCanvas(Landroid/graphics/Canvas;Landroid/graphics/Rect;FZZ)V
 
     return-void
 .end method

@@ -3,7 +3,7 @@
 .source "D8$$SyntheticClass"
 
 # interfaces
-.implements Landroid/view/View$OnScrollChangeListener;
+.implements Lkotlin/jvm/functions/Function0;
 
 
 # instance fields
@@ -24,23 +24,15 @@
 
 
 # virtual methods
-.method public final onScrollChange(Landroid/view/View;IIII)V
-    .locals 6
+.method public final invoke()Ljava/lang/Object;
+    .locals 0
 
     .line 0
-    iget-object v0, p0, Ljp/co/sony/mc/camera/view/setting/fragment/ProModeCameraSettingsFunctionCustomFragment$$ExternalSyntheticLambda1;->f$0:Ljp/co/sony/mc/camera/view/setting/fragment/ProModeCameraSettingsFunctionCustomFragment;
+    iget-object p0, p0, Ljp/co/sony/mc/camera/view/setting/fragment/ProModeCameraSettingsFunctionCustomFragment$$ExternalSyntheticLambda1;->f$0:Ljp/co/sony/mc/camera/view/setting/fragment/ProModeCameraSettingsFunctionCustomFragment;
 
-    move-object v1, p1
+    invoke-static {p0}, Ljp/co/sony/mc/camera/view/setting/fragment/ProModeCameraSettingsFunctionCustomFragment;->$r8$lambda$bVMnWwYNla1NhjjkKmLXNWN1Ebw(Ljp/co/sony/mc/camera/view/setting/fragment/ProModeCameraSettingsFunctionCustomFragment;)Landroid/view/animation/Animation;
 
-    move v2, p2
+    move-result-object p0
 
-    move v3, p3
-
-    move v4, p4
-
-    move v5, p5
-
-    invoke-static/range {v0 .. v5}, Ljp/co/sony/mc/camera/view/setting/fragment/ProModeCameraSettingsFunctionCustomFragment;->$r8$lambda$X1mvscHRK8Xyfj_aQUD2RrGa4Gc(Ljp/co/sony/mc/camera/view/setting/fragment/ProModeCameraSettingsFunctionCustomFragment;Landroid/view/View;IIII)V
-
-    return-void
+    return-object p0
 .end method

@@ -219,11 +219,14 @@
         }
     .end annotation
 
+    .annotation runtime Ljava/lang/Deprecated;
+    .end annotation
+
     const/4 v0, 0x1
 
     const/4 v1, 0x0
 
-    .line 186
+    .line 187
     :try_start_0
     const-string v2, "java.nio.file.Files"
 
@@ -231,14 +234,14 @@
 
     move-result-object v2
 
-    .line 187
+    .line 188
     const-string v3, "java.nio.file.Path"
 
     invoke-static {v3}, Ljava/lang/Class;->forName(Ljava/lang/String;)Ljava/lang/Class;
 
     move-result-object v3
 
-    .line 188
+    .line 189
     const-class v4, Ljava/io/File;
 
     const-string v5, "toPath"
@@ -255,7 +258,7 @@
 
     move-result-object v4
 
-    .line 189
+    .line 190
     const-string v5, "isSymbolicLink"
 
     new-array v6, v0, [Ljava/lang/Class;
@@ -278,7 +281,7 @@
 
     check-cast v2, Ljava/lang/Boolean;
 
-    .line 190
+    .line 191
     invoke-virtual {v2}, Ljava/lang/Boolean;->booleanValue()Z
 
     move-result p0
@@ -292,7 +295,7 @@
 
     return p0
 
-    .line 209
+    .line 210
     :catch_0
     sget-char v2, Ljava/io/File;->separatorChar:C
 
@@ -302,7 +305,7 @@
 
     return v1
 
-    .line 213
+    .line 214
     :cond_0
     invoke-virtual {p0}, Ljava/io/File;->getParent()Ljava/lang/String;
 
@@ -310,7 +313,7 @@
 
     if-eqz v1, :cond_1
 
-    .line 214
+    .line 215
     new-instance v1, Ljava/io/File;
 
     invoke-virtual {p0}, Ljava/io/File;->getParentFile()Ljava/io/File;
@@ -329,7 +332,7 @@
 
     move-object p0, v1
 
-    .line 216
+    .line 217
     :cond_1
     invoke-virtual {p0}, Ljava/io/File;->getCanonicalFile()Ljava/io/File;
 
@@ -350,17 +353,17 @@
     :catch_1
     move-exception p0
 
-    .line 192
+    .line 193
     invoke-virtual {p0}, Ljava/lang/reflect/InvocationTargetException;->getCause()Ljava/lang/Throwable;
 
     move-result-object p0
 
-    .line 193
+    .line 194
     const-class v0, Ljava/io/IOException;
 
     invoke-static {p0, v0}, Lcom/google/api/client/util/Throwables;->propagateIfPossible(Ljava/lang/Throwable;Ljava/lang/Class;)V
 
-    .line 195
+    .line 196
     new-instance v0, Ljava/lang/RuntimeException;
 
     invoke-direct {v0, p0}, Ljava/lang/RuntimeException;-><init>(Ljava/lang/Throwable;)V

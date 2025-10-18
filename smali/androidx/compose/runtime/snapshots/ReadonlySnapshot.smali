@@ -65,6 +65,10 @@
 .end annotation
 
 
+# static fields
+.field public static final $stable:I = 0x8
+
+
 # instance fields
 .field private final readObserver:Lkotlin/jvm/functions/Function1;
     .annotation system Ldalvik/annotation/Signature;
@@ -81,6 +85,12 @@
 
 
 # direct methods
+.method static constructor <clinit>()V
+    .locals 0
+
+    return-void
+.end method
+
 .method public constructor <init>(ILandroidx/compose/runtime/snapshots/SnapshotIdSet;Lkotlin/jvm/functions/Function1;)V
     .locals 1
     .annotation system Ldalvik/annotation/Signature;
@@ -93,10 +103,6 @@
             ">;)V"
         }
     .end annotation
-
-    const-string v0, "invalid"
-
-    invoke-static {p2, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
     const/4 v0, 0x0
 
@@ -217,11 +223,7 @@
 .end method
 
 .method public nestedActivated$runtime_release(Landroidx/compose/runtime/snapshots/Snapshot;)V
-    .locals 1
-
-    const-string/jumbo v0, "snapshot"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+    .locals 0
 
     .line 1256
     iget p1, p0, Landroidx/compose/runtime/snapshots/ReadonlySnapshot;->snapshots:I
@@ -234,11 +236,7 @@
 .end method
 
 .method public nestedDeactivated$runtime_release(Landroidx/compose/runtime/snapshots/Snapshot;)V
-    .locals 1
-
-    const-string/jumbo v0, "snapshot"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+    .locals 0
 
     .line 1259
     iget p1, p0, Landroidx/compose/runtime/snapshots/ReadonlySnapshot;->snapshots:I
@@ -264,10 +262,6 @@
 
 .method public recordModified$runtime_release(Landroidx/compose/runtime/snapshots/StateObject;)V
     .locals 0
-
-    const-string/jumbo p0, "state"
-
-    invoke-static {p1, p0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 1266
     invoke-static {}, Landroidx/compose/runtime/snapshots/SnapshotKt;->access$reportReadonlySnapshotWrite()Ljava/lang/Void;

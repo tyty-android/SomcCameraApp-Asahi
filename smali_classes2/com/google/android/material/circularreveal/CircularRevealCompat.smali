@@ -14,23 +14,27 @@
 .end method
 
 .method public static createCircularReveal(Lcom/google/android/material/circularreveal/CircularRevealWidget;FFF)Landroid/animation/Animator;
-    .locals 3
+    .locals 6
 
     .line 57
     sget-object v0, Lcom/google/android/material/circularreveal/CircularRevealWidget$CircularRevealProperty;->CIRCULAR_REVEAL:Landroid/util/Property;
 
     sget-object v1, Lcom/google/android/material/circularreveal/CircularRevealWidget$CircularRevealEvaluator;->CIRCULAR_REVEAL:Landroid/animation/TypeEvaluator;
 
-    new-instance v2, Lcom/google/android/material/circularreveal/CircularRevealWidget$RevealInfo;
+    const/4 v2, 0x1
 
-    invoke-direct {v2, p1, p2, p3}, Lcom/google/android/material/circularreveal/CircularRevealWidget$RevealInfo;-><init>(FFF)V
+    new-array v3, v2, [Lcom/google/android/material/circularreveal/CircularRevealWidget$RevealInfo;
 
-    filled-new-array {v2}, [Lcom/google/android/material/circularreveal/CircularRevealWidget$RevealInfo;
+    new-instance v4, Lcom/google/android/material/circularreveal/CircularRevealWidget$RevealInfo;
 
-    move-result-object v2
+    invoke-direct {v4, p1, p2, p3}, Lcom/google/android/material/circularreveal/CircularRevealWidget$RevealInfo;-><init>(FFF)V
+
+    const/4 v5, 0x0
+
+    aput-object v4, v3, v5
 
     .line 58
-    invoke-static {p0, v0, v1, v2}, Landroid/animation/ObjectAnimator;->ofObject(Ljava/lang/Object;Landroid/util/Property;Landroid/animation/TypeEvaluator;[Ljava/lang/Object;)Landroid/animation/ObjectAnimator;
+    invoke-static {p0, v0, v1, v3}, Landroid/animation/ObjectAnimator;->ofObject(Ljava/lang/Object;Landroid/util/Property;Landroid/animation/TypeEvaluator;[Ljava/lang/Object;)Landroid/animation/ObjectAnimator;
 
     move-result-object v0
 
@@ -66,13 +70,9 @@
     .line 76
     new-array p2, p2, [Landroid/animation/Animator;
 
-    const/4 p3, 0x0
+    aput-object v0, p2, v5
 
-    aput-object v0, p2, p3
-
-    const/4 p3, 0x1
-
-    aput-object p0, p2, p3
+    aput-object p0, p2, v2
 
     invoke-virtual {p1, p2}, Landroid/animation/AnimatorSet;->playTogether([Landroid/animation/Animator;)V
 
@@ -90,27 +90,35 @@
 .end method
 
 .method public static createCircularReveal(Lcom/google/android/material/circularreveal/CircularRevealWidget;FFFF)Landroid/animation/Animator;
-    .locals 4
+    .locals 7
 
     .line 97
     sget-object v0, Lcom/google/android/material/circularreveal/CircularRevealWidget$CircularRevealProperty;->CIRCULAR_REVEAL:Landroid/util/Property;
 
     sget-object v1, Lcom/google/android/material/circularreveal/CircularRevealWidget$CircularRevealEvaluator;->CIRCULAR_REVEAL:Landroid/animation/TypeEvaluator;
 
-    new-instance v2, Lcom/google/android/material/circularreveal/CircularRevealWidget$RevealInfo;
+    const/4 v2, 0x2
 
-    invoke-direct {v2, p1, p2, p3}, Lcom/google/android/material/circularreveal/CircularRevealWidget$RevealInfo;-><init>(FFF)V
+    new-array v3, v2, [Lcom/google/android/material/circularreveal/CircularRevealWidget$RevealInfo;
 
-    new-instance v3, Lcom/google/android/material/circularreveal/CircularRevealWidget$RevealInfo;
+    new-instance v4, Lcom/google/android/material/circularreveal/CircularRevealWidget$RevealInfo;
 
-    invoke-direct {v3, p1, p2, p4}, Lcom/google/android/material/circularreveal/CircularRevealWidget$RevealInfo;-><init>(FFF)V
+    invoke-direct {v4, p1, p2, p3}, Lcom/google/android/material/circularreveal/CircularRevealWidget$RevealInfo;-><init>(FFF)V
 
-    filled-new-array {v2, v3}, [Lcom/google/android/material/circularreveal/CircularRevealWidget$RevealInfo;
+    const/4 v5, 0x0
 
-    move-result-object v2
+    aput-object v4, v3, v5
+
+    new-instance v4, Lcom/google/android/material/circularreveal/CircularRevealWidget$RevealInfo;
+
+    invoke-direct {v4, p1, p2, p4}, Lcom/google/android/material/circularreveal/CircularRevealWidget$RevealInfo;-><init>(FFF)V
+
+    const/4 v6, 0x1
+
+    aput-object v4, v3, v6
 
     .line 98
-    invoke-static {p0, v0, v1, v2}, Landroid/animation/ObjectAnimator;->ofObject(Ljava/lang/Object;Landroid/util/Property;Landroid/animation/TypeEvaluator;[Ljava/lang/Object;)Landroid/animation/ObjectAnimator;
+    invoke-static {p0, v0, v1, v3}, Landroid/animation/ObjectAnimator;->ofObject(Ljava/lang/Object;Landroid/util/Property;Landroid/animation/TypeEvaluator;[Ljava/lang/Object;)Landroid/animation/ObjectAnimator;
 
     move-result-object v0
 
@@ -131,18 +139,12 @@
 
     invoke-direct {p1}, Landroid/animation/AnimatorSet;-><init>()V
 
-    const/4 p2, 0x2
-
     .line 109
-    new-array p2, p2, [Landroid/animation/Animator;
+    new-array p2, v2, [Landroid/animation/Animator;
 
-    const/4 p3, 0x0
+    aput-object v0, p2, v5
 
-    aput-object v0, p2, p3
-
-    const/4 p3, 0x1
-
-    aput-object p0, p2, p3
+    aput-object p0, p2, v6
 
     invoke-virtual {p1, p2}, Landroid/animation/AnimatorSet;->playTogether([Landroid/animation/Animator;)V
 

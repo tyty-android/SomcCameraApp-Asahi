@@ -77,14 +77,14 @@
 
 # virtual methods
 .method public final invoke(Ljava/lang/Object;)Landroidx/compose/ui/text/intl/Locale;
-    .locals 0
+    .locals 1
 
-    const-string p0, "it"
-
-    invoke-static {p1, p0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 420
+    .line 452
     new-instance p0, Landroidx/compose/ui/text/intl/Locale;
+
+    const-string v0, "null cannot be cast to non-null type kotlin.String"
+
+    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;Ljava/lang/String;)V
 
     check-cast p1, Ljava/lang/String;
 
@@ -96,7 +96,7 @@
 .method public bridge synthetic invoke(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
 
-    .line 418
+    .line 450
     invoke-virtual {p0, p1}, Landroidx/compose/ui/text/SaversKt$LocaleSaver$2;->invoke(Ljava/lang/Object;)Landroidx/compose/ui/text/intl/Locale;
 
     move-result-object p0

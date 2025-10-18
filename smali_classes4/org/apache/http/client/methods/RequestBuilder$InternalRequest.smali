@@ -22,10 +22,10 @@
 .method constructor <init>(Ljava/lang/String;)V
     .locals 0
 
-    .line 497
+    .line 498
     invoke-direct {p0}, Lorg/apache/http/client/methods/HttpRequestBase;-><init>()V
 
-    .line 498
+    .line 499
     iput-object p1, p0, Lorg/apache/http/client/methods/RequestBuilder$InternalRequest;->method:Ljava/lang/String;
 
     return-void
@@ -36,7 +36,7 @@
 .method public getMethod()Ljava/lang/String;
     .locals 0
 
-    .line 503
+    .line 504
     iget-object p0, p0, Lorg/apache/http/client/methods/RequestBuilder$InternalRequest;->method:Ljava/lang/String;
 
     return-object p0

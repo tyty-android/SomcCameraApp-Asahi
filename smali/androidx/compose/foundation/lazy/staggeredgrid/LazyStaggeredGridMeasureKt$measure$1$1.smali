@@ -78,7 +78,7 @@
 .method public bridge synthetic invoke(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
 
-    .line 252
+    .line 257
     check-cast p1, Landroidx/compose/ui/layout/Placeable$PlacementScope;
 
     invoke-virtual {p0, p1}, Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridMeasureKt$measure$1$1;->invoke(Landroidx/compose/ui/layout/Placeable$PlacementScope;)V
@@ -90,10 +90,6 @@
 
 .method public final invoke(Landroidx/compose/ui/layout/Placeable$PlacementScope;)V
     .locals 0
-
-    const-string p0, "$this$layout"
-
-    invoke-static {p1, p0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
     return-void
 .end method

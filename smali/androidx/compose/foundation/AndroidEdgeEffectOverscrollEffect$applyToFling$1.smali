@@ -1,6 +1,6 @@
 .class final Landroidx/compose/foundation/AndroidEdgeEffectOverscrollEffect$applyToFling$1;
 .super Lkotlin/coroutines/jvm/internal/ContinuationImpl;
-.source "AndroidOverscroll.kt"
+.source "AndroidOverscroll.android.kt"
 
 
 # annotations
@@ -25,14 +25,14 @@
 
 .annotation runtime Lkotlin/coroutines/jvm/internal/DebugMetadata;
     c = "androidx.compose.foundation.AndroidEdgeEffectOverscrollEffect"
-    f = "AndroidOverscroll.kt"
+    f = "AndroidOverscroll.android.kt"
     i = {
         0x1,
         0x1
     }
     l = {
-        0xdb,
-        0xf4
+        0xdf,
+        0xf8
     }
     m = "applyToFling-BMRW4eQ"
     n = {

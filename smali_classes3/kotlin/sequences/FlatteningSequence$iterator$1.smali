@@ -28,7 +28,7 @@
 
 .annotation runtime Lkotlin/Metadata;
     d1 = {
-        "\u0000\u0015\n\u0000\n\u0002\u0010(\n\u0002\u0008\u0008\n\u0002\u0010\u000b\n\u0002\u0008\u0004*\u0001\u0000\u0008\n\u0018\u00002\u0008\u0012\u0004\u0012\u00028\u00000\u0001J\u0008\u0010\t\u001a\u00020\nH\u0002J\t\u0010\u000b\u001a\u00020\nH\u0096\u0002J\u000e\u0010\u000c\u001a\u00028\u0000H\u0096\u0002\u00a2\u0006\u0002\u0010\rR\"\u0010\u0002\u001a\n\u0012\u0004\u0012\u00028\u0000\u0018\u00010\u0001X\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\u0008\u0003\u0010\u0004\"\u0004\u0008\u0005\u0010\u0006R\u0017\u0010\u0007\u001a\u0008\u0012\u0004\u0012\u00028\u00010\u0001\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\u0008\u0010\u0004\u00a8\u0006\u000e"
+        "\u0000\u001d\n\u0000\n\u0002\u0010(\n\u0002\u0008\u0008\n\u0002\u0010\u0008\n\u0002\u0008\u0005\n\u0002\u0010\u000b\n\u0002\u0008\u0004*\u0001\u0000\u0008\n\u0018\u00002\u0008\u0012\u0004\u0012\u00028\u00000\u0001J\u0008\u0010\u000f\u001a\u00020\u0010H\u0002J\t\u0010\u0011\u001a\u00020\u0010H\u0096\u0002J\u000e\u0010\u0012\u001a\u00028\u0000H\u0096\u0002\u00a2\u0006\u0002\u0010\u0013R\"\u0010\u0002\u001a\n\u0012\u0004\u0012\u00028\u0000\u0018\u00010\u0001X\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\u0008\u0003\u0010\u0004\"\u0004\u0008\u0005\u0010\u0006R\u0017\u0010\u0007\u001a\u0008\u0012\u0004\u0012\u00028\u00010\u0001\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\u0008\u0010\u0004R\u001a\u0010\t\u001a\u00020\nX\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\u0008\u000b\u0010\u000c\"\u0004\u0008\r\u0010\u000e\u00a8\u0006\u0014"
     }
     d2 = {
         "kotlin/sequences/FlatteningSequence$iterator$1",
@@ -40,6 +40,12 @@
         "(Ljava/util/Iterator;)V",
         "iterator",
         "getIterator",
+        "state",
+        "",
+        "getState",
+        "()I",
+        "setState",
+        "(I)V",
         "ensureItemIterator",
         "",
         "hasNext",
@@ -76,6 +82,8 @@
     .end annotation
 .end field
 
+.field private state:I
+
 .field final synthetic this$0:Lkotlin/sequences/FlatteningSequence;
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -99,10 +107,10 @@
 
     iput-object p1, p0, Lkotlin/sequences/FlatteningSequence$iterator$1;->this$0:Lkotlin/sequences/FlatteningSequence;
 
-    .line 292
+    .line 298
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 293
+    .line 299
     invoke-static {p1}, Lkotlin/sequences/FlatteningSequence;->access$getSequence$p(Lkotlin/sequences/FlatteningSequence;)Lkotlin/sequences/Sequence;
 
     move-result-object p1
@@ -119,52 +127,43 @@
 .method private final ensureItemIterator()Z
     .locals 4
 
-    .line 307
-    iget-object v0, p0, Lkotlin/sequences/FlatteningSequence$iterator$1;->itemIterator:Ljava/util/Iterator;
-
-    if-eqz v0, :cond_0
-
-    invoke-interface {v0}, Ljava/util/Iterator;->hasNext()Z
-
-    move-result v0
-
-    if-nez v0, :cond_0
-
-    const/4 v0, 0x0
-
-    .line 308
-    iput-object v0, p0, Lkotlin/sequences/FlatteningSequence$iterator$1;->itemIterator:Ljava/util/Iterator;
-
-    .line 310
-    :cond_0
+    .line 322
     iget-object v0, p0, Lkotlin/sequences/FlatteningSequence$iterator$1;->itemIterator:Ljava/util/Iterator;
 
     const/4 v1, 0x1
 
-    if-nez v0, :cond_2
+    if-eqz v0, :cond_0
 
-    .line 311
+    .line 323
+    invoke-interface {v0}, Ljava/util/Iterator;->hasNext()Z
+
+    move-result v0
+
+    if-eqz v0, :cond_0
+
+    .line 324
+    iput v1, p0, Lkotlin/sequences/FlatteningSequence$iterator$1;->state:I
+
+    return v1
+
+    .line 328
+    :cond_0
     iget-object v0, p0, Lkotlin/sequences/FlatteningSequence$iterator$1;->iterator:Ljava/util/Iterator;
 
     invoke-interface {v0}, Ljava/util/Iterator;->hasNext()Z
 
     move-result v0
 
-    if-nez v0, :cond_1
+    if-eqz v0, :cond_1
 
-    const/4 p0, 0x0
-
-    return p0
-
-    .line 314
-    :cond_1
+    .line 329
     iget-object v0, p0, Lkotlin/sequences/FlatteningSequence$iterator$1;->iterator:Ljava/util/Iterator;
 
     invoke-interface {v0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
     move-result-object v0
 
-    .line 315
+    .line 330
     iget-object v2, p0, Lkotlin/sequences/FlatteningSequence$iterator$1;->this$0:Lkotlin/sequences/FlatteningSequence;
 
     invoke-static {v2}, Lkotlin/sequences/FlatteningSequence;->access$getIterator$p(Lkotlin/sequences/FlatteningSequence;)Lkotlin/jvm/functions/Function1;
@@ -187,18 +186,35 @@
 
     check-cast v0, Ljava/util/Iterator;
 
-    .line 316
+    .line 331
     invoke-interface {v0}, Ljava/util/Iterator;->hasNext()Z
 
     move-result v2
 
     if-eqz v2, :cond_0
 
-    .line 317
+    .line 332
     iput-object v0, p0, Lkotlin/sequences/FlatteningSequence$iterator$1;->itemIterator:Ljava/util/Iterator;
 
-    :cond_2
+    .line 333
+    iput v1, p0, Lkotlin/sequences/FlatteningSequence$iterator$1;->state:I
+
     return v1
+
+    :cond_1
+    const/4 v0, 0x2
+
+    .line 338
+    iput v0, p0, Lkotlin/sequences/FlatteningSequence$iterator$1;->state:I
+
+    const/4 v0, 0x0
+
+    .line 339
+    iput-object v0, p0, Lkotlin/sequences/FlatteningSequence$iterator$1;->itemIterator:Ljava/util/Iterator;
+
+    const/4 p0, 0x0
+
+    return p0
 .end method
 
 
@@ -213,7 +229,7 @@
         }
     .end annotation
 
-    .line 294
+    .line 300
     iget-object p0, p0, Lkotlin/sequences/FlatteningSequence$iterator$1;->itemIterator:Ljava/util/Iterator;
 
     return-object p0
@@ -229,16 +245,44 @@
         }
     .end annotation
 
-    .line 293
+    .line 299
     iget-object p0, p0, Lkotlin/sequences/FlatteningSequence$iterator$1;->iterator:Ljava/util/Iterator;
 
     return-object p0
 .end method
 
-.method public hasNext()Z
+.method public final getState()I
     .locals 0
 
-    .line 303
+    .line 304
+    iget p0, p0, Lkotlin/sequences/FlatteningSequence$iterator$1;->state:I
+
+    return p0
+.end method
+
+.method public hasNext()Z
+    .locals 2
+
+    .line 316
+    iget v0, p0, Lkotlin/sequences/FlatteningSequence$iterator$1;->state:I
+
+    const/4 v1, 0x1
+
+    if-ne v0, v1, :cond_0
+
+    return v1
+
+    :cond_0
+    const/4 v1, 0x2
+
+    if-ne v0, v1, :cond_1
+
+    const/4 p0, 0x0
+
+    return p0
+
+    .line 318
+    :cond_1
     invoke-direct {p0}, Lkotlin/sequences/FlatteningSequence$iterator$1;->ensureItemIterator()Z
 
     move-result p0
@@ -247,21 +291,47 @@
 .end method
 
 .method public next()Ljava/lang/Object;
-    .locals 1
+    .locals 2
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()TE;"
         }
     .end annotation
 
-    .line 297
+    .line 307
+    iget v0, p0, Lkotlin/sequences/FlatteningSequence$iterator$1;->state:I
+
+    const/4 v1, 0x2
+
+    if-eq v0, v1, :cond_2
+
+    if-nez v0, :cond_1
+
+    .line 308
     invoke-direct {p0}, Lkotlin/sequences/FlatteningSequence$iterator$1;->ensureItemIterator()Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
-    .line 299
+    goto :goto_0
+
+    .line 309
+    :cond_0
+    new-instance p0, Ljava/util/NoSuchElementException;
+
+    invoke-direct {p0}, Ljava/util/NoSuchElementException;-><init>()V
+
+    throw p0
+
+    :cond_1
+    :goto_0
+    const/4 v0, 0x0
+
+    .line 311
+    iput v0, p0, Lkotlin/sequences/FlatteningSequence$iterator$1;->state:I
+
+    .line 312
     iget-object p0, p0, Lkotlin/sequences/FlatteningSequence$iterator$1;->itemIterator:Ljava/util/Iterator;
 
     invoke-static {p0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;)V
@@ -272,8 +342,8 @@
 
     return-object p0
 
-    .line 298
-    :cond_0
+    .line 307
+    :cond_2
     new-instance p0, Ljava/util/NoSuchElementException;
 
     invoke-direct {p0}, Ljava/util/NoSuchElementException;-><init>()V
@@ -303,8 +373,17 @@
         }
     .end annotation
 
-    .line 294
+    .line 300
     iput-object p1, p0, Lkotlin/sequences/FlatteningSequence$iterator$1;->itemIterator:Ljava/util/Iterator;
+
+    return-void
+.end method
+
+.method public final setState(I)V
+    .locals 0
+
+    .line 304
+    iput p1, p0, Lkotlin/sequences/FlatteningSequence$iterator$1;->state:I
 
     return-void
 .end method

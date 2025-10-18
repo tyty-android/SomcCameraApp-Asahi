@@ -72,10 +72,6 @@
 
     move-result-object p0
 
-    const-string p1, "resources.getQuantityString(id, count)"
-
-    invoke-static {p0, p1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
-
     invoke-static {}, Landroidx/compose/runtime/ComposerKt;->isTraceInProgress()Z
 
     move-result p1
@@ -93,10 +89,6 @@
 
 .method public static final pluralStringResource(II[Ljava/lang/Object;Landroidx/compose/runtime/Composer;I)Ljava/lang/String;
     .locals 3
-
-    const-string v0, "formatArgs"
-
-    invoke-static {p2, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
     const-string v0, "C(pluralStringResource)P(2)89@2568L11:StringResources.android.kt#ccshc7"
 
@@ -135,10 +127,6 @@
     invoke-virtual {p4, p0, p1, p2}, Landroid/content/res/Resources;->getQuantityString(II[Ljava/lang/Object;)Ljava/lang/String;
 
     move-result-object p0
-
-    const-string p1, "resources.getQuantityStr\u2026g(id, count, *formatArgs)"
-
-    invoke-static {p0, p1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
 
     invoke-static {}, Landroidx/compose/runtime/ComposerKt;->isTraceInProgress()Z
 
@@ -190,10 +178,6 @@
 
     move-result-object p0
 
-    const-string p2, "resources.getStringArray(id)"
-
-    invoke-static {p0, p2}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
-
     invoke-static {}, Landroidx/compose/runtime/ComposerKt;->isTraceInProgress()Z
 
     move-result p2
@@ -244,10 +228,6 @@
 
     move-result-object p0
 
-    const-string p2, "resources.getString(id)"
-
-    invoke-static {p0, p2}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
-
     invoke-static {}, Landroidx/compose/runtime/ComposerKt;->isTraceInProgress()Z
 
     move-result p2
@@ -265,10 +245,6 @@
 
 .method public static final stringResource(I[Ljava/lang/Object;Landroidx/compose/runtime/Composer;I)Ljava/lang/String;
     .locals 3
-
-    const-string v0, "formatArgs"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
     const-string v0, "C(stringResource)P(1)47@1452L11:StringResources.android.kt#ccshc7"
 
@@ -307,10 +283,6 @@
     invoke-virtual {p3, p0, p1}, Landroid/content/res/Resources;->getString(I[Ljava/lang/Object;)Ljava/lang/String;
 
     move-result-object p0
-
-    const-string p1, "resources.getString(id, *formatArgs)"
-
-    invoke-static {p0, p1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
 
     invoke-static {}, Landroidx/compose/runtime/ComposerKt;->isTraceInProgress()Z
 

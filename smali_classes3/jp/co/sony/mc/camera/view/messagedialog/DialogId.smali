@@ -44,6 +44,8 @@
 
 .field public static final enum CONNECT_WIFI_SETTING:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
 
+.field public static final enum CONTINUOUS_SHOOTING_RESTRICTION:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
+
 .field public static final enum CONTINUOUS_SHOOTING_UNNABLE_FOR_CURRENT_PHOTOFORMAT:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
 
 .field public static final enum CONTINUOUS_SHOOTING_UNNABLE_FOR_CURRENT_SUPER_RESOLUTION_ZOOM:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
@@ -148,6 +150,8 @@
 
 .field public static final enum GET_YOUTUBE_LIVE_EVENT_PROCESSING:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
 
+.field public static final enum GIMBAL_INTRODUCTION_DIALOG:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
+
 .field public static final enum GOOGLE_CHROME_DISABLED:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
 
 .field public static final enum HDR_CONTINUOUS_SHOOTING_RESTRICTION:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
@@ -202,6 +206,8 @@
 
 .field public static final enum MIC_RESTRICTION:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
 
+.field public static final enum MODE_CUSTOMIZATION:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
+
 .field public static final enum PERSONAL_DATA:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
 
 .field public static final enum PHOTOFORMAT_UNABLE_FOR_CONTINUOUS_SHOOTING:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
@@ -231,6 +237,8 @@
 .field public static final enum REMOTE_CONTROL_TIMEOUT:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
 
 .field public static final enum RESET_CONFIRMATION:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
+
+.field public static final enum RESTRICT_CAPTURING_MODE_IN_HIGH_TEMPERATURE:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
 
 .field public static final enum RESTRICT_PHOTOFORMAT_PHOTO_RESOLUTION:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
 
@@ -324,6 +332,8 @@
 
 .field final layoutResourceID:I
 
+.field final messageFooterHyperlinkResourceID:I
+
 .field final messageFooterResourceID:I
 
 .field final messageResourceID:I
@@ -341,7 +351,7 @@
 
 # direct methods
 .method private static synthetic $values()[Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
-    .locals 147
+    .locals 151
 
     .line 15
     sget-object v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->LOCATION_SERVICE_DISABLE_ON_LAUNCH:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
@@ -486,159 +496,167 @@
 
     sget-object v70, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->EXTEND_FPS_UNABLE_FOR_CURRENT_CAPTURING_MODE:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
 
-    sget-object v71, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->APPLICATION_NOTIFICATION_NETWORK:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
+    sget-object v71, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->RESTRICT_SETTING_VALUE_BY_OTHER_APP:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
 
-    sget-object v72, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->CONNECT_WIFI_SETTING:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
+    sget-object v72, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->MODE_CUSTOMIZATION:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
 
-    sget-object v73, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->REMOTE_CONTROL_CTA:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
+    sget-object v73, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->APPLICATION_NOTIFICATION_NETWORK:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
 
-    sget-object v74, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->REMOTE_CONTROL_PROBLEM:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
+    sget-object v74, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->CONNECT_WIFI_SETTING:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
 
-    sget-object v75, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->REMOTE_CONTROL_ALREADY_PAIRED:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
+    sget-object v75, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->REMOTE_CONTROL_CTA:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
 
-    sget-object v76, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->REMOTE_CONTROL_BT_OFF:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
+    sget-object v76, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->REMOTE_CONTROL_PROBLEM:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
 
-    sget-object v77, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->REMOTE_CONTROL_TIMEOUT:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
+    sget-object v77, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->REMOTE_CONTROL_ALREADY_PAIRED:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
 
-    sget-object v78, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->ENDURANCE_MODE_TO_USE_REMOTE:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
+    sget-object v78, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->REMOTE_CONTROL_BT_OFF:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
 
-    sget-object v79, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->ENDURANCE_MODE_TITLE_ATTENTION:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
+    sget-object v79, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->REMOTE_CONTROL_TIMEOUT:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
 
-    sget-object v80, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->ENDURANCE_MODE_ENABLE_REMOTE:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
+    sget-object v80, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->ENDURANCE_MODE_TO_USE_REMOTE:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
 
-    sget-object v81, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->ENDURANCE_MODE_TURN_ON_ENDURANCE:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
+    sget-object v81, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->ENDURANCE_MODE_TITLE_ATTENTION:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
 
-    sget-object v82, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->ENDURANCE_MODE_CONNECT_REMOTE:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
+    sget-object v82, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->ENDURANCE_MODE_ENABLE_REMOTE:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
 
-    sget-object v83, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->ENDURANCE_MODE_CONNECT_REMOTE_TO_CONTINUE:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
+    sget-object v83, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->ENDURANCE_MODE_TURN_ON_ENDURANCE:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
 
-    sget-object v84, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->TO_CONNECT_NEARLY_DEVICES:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
+    sget-object v84, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->ENDURANCE_MODE_CONNECT_REMOTE:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
 
-    sget-object v85, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->STREAMING_NOTES_ON_USE_CHECK:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
+    sget-object v85, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->ENDURANCE_MODE_CONNECT_REMOTE_TO_CONTINUE:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
 
-    sget-object v86, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->STREAMING_PRIVACY_POLICY:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
+    sget-object v86, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->TO_CONNECT_NEARLY_DEVICES:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
 
-    sget-object v87, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->STREAMING_NOTES_ON_USE:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
+    sget-object v87, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->STREAMING_NOTES_ON_USE_CHECK:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
 
-    sget-object v88, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->PREPARE_STREAMING:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
+    sget-object v88, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->STREAMING_PRIVACY_POLICY:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
 
-    sget-object v89, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->CONFIRM_STOP_STREAMING:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
+    sget-object v89, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->STREAMING_NOTES_ON_USE:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
 
-    sget-object v90, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->DUE_TO_SCREEN_LOCKED:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
+    sget-object v90, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->PREPARE_STREAMING:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
 
-    sget-object v91, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->DUE_TO_STREAM_URL_EMPTY:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
+    sget-object v91, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->CONFIRM_STOP_STREAMING:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
 
-    sget-object v92, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->DUE_TO_STREAM_KEY_EMPTY:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
+    sget-object v92, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->DUE_TO_SCREEN_LOCKED:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
 
-    sget-object v93, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->DUE_TO_YOUTUBE_ACCOUNT_NOT_SETUP:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
+    sget-object v93, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->DUE_TO_STREAM_URL_EMPTY:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
 
-    sget-object v94, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->DUE_TO_YOUTUBE_LIVE_EVENT_NOT_FOUND:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
+    sget-object v94, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->DUE_TO_STREAM_KEY_EMPTY:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
 
-    sget-object v95, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->DUE_TO_NETWORK:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
+    sget-object v95, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->DUE_TO_YOUTUBE_ACCOUNT_NOT_SETUP:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
 
-    sget-object v96, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->DUE_TO_WIFI:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
+    sget-object v96, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->DUE_TO_YOUTUBE_LIVE_EVENT_NOT_FOUND:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
 
-    sget-object v97, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->DUE_TO_SERVER_CONNECTION_FAILED:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
+    sget-object v97, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->DUE_TO_NETWORK:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
 
-    sget-object v98, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->DUE_TO_NO_NETWORK:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
+    sget-object v98, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->DUE_TO_WIFI:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
 
-    sget-object v99, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->THERMAL_CRITICAL_STREAMING:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
+    sget-object v99, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->DUE_TO_SERVER_CONNECTION_FAILED:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
 
-    sget-object v100, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->YOUTUBE_ACCOUNT_ACTION_SELECT:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
+    sget-object v100, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->DUE_TO_NO_NETWORK:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
 
-    sget-object v101, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->GET_YOUTUBE_LIVE_EVENT_PROCESSING:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
+    sget-object v101, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->THERMAL_CRITICAL_STREAMING:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
 
-    sget-object v102, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->SELECT_YOUTUBE_EVENT:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
+    sget-object v102, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->YOUTUBE_ACCOUNT_ACTION_SELECT:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
 
-    sget-object v103, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->DUE_TO_STREAMING:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
+    sget-object v103, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->GET_YOUTUBE_LIVE_EVENT_PROCESSING:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
 
-    sget-object v104, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->SELECTED_DUE_TO_STREAMING:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
+    sget-object v104, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->SELECT_YOUTUBE_EVENT:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
 
-    sget-object v105, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->ADD_YOUTUBE_EVENT_EMPTY_TITLE:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
+    sget-object v105, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->DUE_TO_STREAMING:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
 
-    sget-object v106, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->ADD_YOUTUBE_EVENT_AUDIENCE_UNSELECTED:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
+    sget-object v106, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->SELECTED_DUE_TO_STREAMING:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
 
-    sget-object v107, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->ADD_YOUTUBE_EVENT_EXECUTING:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
+    sget-object v107, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->ADD_YOUTUBE_EVENT_EMPTY_TITLE:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
 
-    sget-object v108, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->ADD_YOUTUBE_EVENT_RESULT_NG:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
+    sget-object v108, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->ADD_YOUTUBE_EVENT_AUDIENCE_UNSELECTED:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
 
-    sget-object v109, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->ADD_YOUTUBE_EVENT_RESULT_NETWORK_NG:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
+    sget-object v109, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->ADD_YOUTUBE_EVENT_EXECUTING:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
 
-    sget-object v110, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->DUE_TO_YOUTUBE_LIVE_EVENT_RETRIEVE:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
+    sget-object v110, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->ADD_YOUTUBE_EVENT_RESULT_NG:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
 
-    sget-object v111, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->YOUTUBE_ACCOUNT_LOGIN:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
+    sget-object v111, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->ADD_YOUTUBE_EVENT_RESULT_NETWORK_NG:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
 
-    sget-object v112, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->DUE_TO_YOUTUBE_LIVE_EVENT_NOT_SUPPORTED:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
+    sget-object v112, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->DUE_TO_YOUTUBE_LIVE_EVENT_RETRIEVE:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
 
-    sget-object v113, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->DUE_TO_YOUTUBE_LIVE_EVENT_ALREADY_COMPLETE:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
+    sget-object v113, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->YOUTUBE_ACCOUNT_LOGIN:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
 
-    sget-object v114, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->LOW_BATTERY_CRITICAL_ON_STREAMING:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
+    sget-object v114, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->DUE_TO_YOUTUBE_LIVE_EVENT_NOT_SUPPORTED:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
 
-    sget-object v115, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->FACEBOOK_LIVE_SELECT:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
+    sget-object v115, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->DUE_TO_YOUTUBE_LIVE_EVENT_ALREADY_COMPLETE:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
 
-    sget-object v116, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->DUE_TO_FACEBOOK_ACCOUNT_NOT_SETUP:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
+    sget-object v116, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->LOW_BATTERY_CRITICAL_ON_STREAMING:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
 
-    sget-object v117, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->CREATE_FACEBOOK_LIVE_VIDEO_PROCESSING:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
+    sget-object v117, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->FACEBOOK_LIVE_SELECT:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
 
-    sget-object v118, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->DUE_TO_FACEBOOK_LIVE_EVENT_ALREADY_COMPLETE:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
+    sget-object v118, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->DUE_TO_FACEBOOK_ACCOUNT_NOT_SETUP:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
 
-    sget-object v119, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->DUE_TO_YOUTUBE_AUTHORIZATION_FAILED:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
+    sget-object v119, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->CREATE_FACEBOOK_LIVE_VIDEO_PROCESSING:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
 
-    sget-object v120, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->GOOGLE_CHROME_DISABLED:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
+    sget-object v120, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->DUE_TO_FACEBOOK_LIVE_EVENT_ALREADY_COMPLETE:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
 
-    sget-object v121, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->ADD_YOUTUBE_EVENT_RESULT_OK:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
+    sget-object v121, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->DUE_TO_YOUTUBE_AUTHORIZATION_FAILED:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
 
-    sget-object v122, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->YOUTUBE_LIVE_URL:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
+    sget-object v122, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->GOOGLE_CHROME_DISABLED:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
 
-    sget-object v123, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->YOUTUBE_LIVE_URL_DISABLED:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
+    sget-object v123, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->ADD_YOUTUBE_EVENT_RESULT_OK:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
 
-    sget-object v124, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->FACEBOOK_LOGIN:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
+    sget-object v124, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->YOUTUBE_LIVE_URL:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
 
-    sget-object v125, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->YOUTUBE_LIVE_CHAT_BAN_FAILED:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
+    sget-object v125, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->YOUTUBE_LIVE_URL_DISABLED:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
 
-    sget-object v126, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->YOUTUBE_LIVE_CHAT_FAILED:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
+    sget-object v126, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->FACEBOOK_LOGIN:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
 
-    sget-object v127, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->CHECK_YOUTUBE_LIVE_EVENT_STATUS:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
+    sget-object v127, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->YOUTUBE_LIVE_CHAT_BAN_FAILED:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
 
-    sget-object v128, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->DLG_INVALID:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
+    sget-object v128, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->YOUTUBE_LIVE_CHAT_FAILED:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
 
-    sget-object v129, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->ACCESSIBILITY_COMPLIANCE:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
+    sget-object v129, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->CHECK_YOUTUBE_LIVE_EVENT_STATUS:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
 
-    sget-object v130, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->MEMORY_DELETE_FILE_FAILED:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
+    sget-object v130, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->DLG_INVALID:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
 
-    sget-object v131, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->ERROR_CAMERA_DEVICE:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
+    sget-object v131, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->ACCESSIBILITY_COMPLIANCE:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
 
-    sget-object v132, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->ERROR_CAMERA_DISABLED:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
+    sget-object v132, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->MEMORY_DELETE_FILE_FAILED:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
 
-    sget-object v133, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->ERROR_CAMERA_IN_USE:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
+    sget-object v133, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->ERROR_CAMERA_DEVICE:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
 
-    sget-object v134, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->ERROR_CAMERA_SERVICE:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
+    sget-object v134, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->ERROR_CAMERA_DISABLED:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
 
-    sget-object v135, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->ERROR_MAX_CAMERAS_IN_USE:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
+    sget-object v135, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->ERROR_CAMERA_IN_USE:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
 
-    sget-object v136, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->ERROR_RESUME_TIMEOUT:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
+    sget-object v136, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->ERROR_CAMERA_SERVICE:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
 
-    sget-object v137, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->RECOMMENDED_SETTINGS:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
+    sget-object v137, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->ERROR_MAX_CAMERAS_IN_USE:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
 
-    sget-object v138, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->RECOMMENDED_SETTINGS_NOTHING_TO_CHANGE:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
+    sget-object v138, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->ERROR_RESUME_TIMEOUT:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
 
-    sget-object v139, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->DUE_TO_FACEBOOK_LIVE_ACCESS_FAILED:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
+    sget-object v139, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->RECOMMENDED_SETTINGS:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
 
-    sget-object v140, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->FACEBOOK_PRIVACY_SETTING_CONFLICT:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
+    sget-object v140, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->RECOMMENDED_SETTINGS_NOTHING_TO_CHANGE:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
 
-    sget-object v141, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->YOUTUBE_LIVE_CHAT_BAN:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
+    sget-object v141, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->DUE_TO_FACEBOOK_LIVE_ACCESS_FAILED:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
 
-    sget-object v142, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->RESTRICT_SETTING_VALUE_ON_FRONT_CAMERA:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
+    sget-object v142, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->FACEBOOK_PRIVACY_SETTING_CONFLICT:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
 
-    sget-object v143, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->RESTRICT_SETTING_VALUE_ON_CURRENT_LENS:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
+    sget-object v143, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->YOUTUBE_LIVE_CHAT_BAN:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
 
-    sget-object v144, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->DUE_TO_STREAMING_SETTING_NOT_SETUP:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
+    sget-object v144, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->RESTRICT_SETTING_VALUE_ON_FRONT_CAMERA:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
 
-    sget-object v145, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->RESTRICT_SETTING_VALUE_ON_MANUAL_FOCUS_MODE:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
+    sget-object v145, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->RESTRICT_SETTING_VALUE_ON_CURRENT_LENS:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
 
-    sget-object v146, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->RESTRICT_SETTING_VALUE_BY_OTHER_APP:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
+    sget-object v146, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->DUE_TO_STREAMING_SETTING_NOT_SETUP:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
 
-    filled-new-array/range {v0 .. v146}, [Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
+    sget-object v147, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->RESTRICT_SETTING_VALUE_ON_MANUAL_FOCUS_MODE:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
+
+    sget-object v148, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->RESTRICT_CAPTURING_MODE_IN_HIGH_TEMPERATURE:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
+
+    sget-object v149, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->CONTINUOUS_SHOOTING_RESTRICTION:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
+
+    sget-object v150, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->GIMBAL_INTRODUCTION_DIALOG:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
+
+    filled-new-array/range {v0 .. v150}, [Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
 
     move-result-object v0
 
@@ -646,168 +664,20 @@
 .end method
 
 .method static constructor <clinit>()V
-    .locals 33
+    .locals 35
 
     .line 17
-    new-instance v16, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
+    new-instance v17, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
 
-    new-instance v3, Ljp/co/sony/mc/camera/view/messagedialog/OkCancelDialogBuilder;
+    move-object/from16 v0, v17
 
-    invoke-direct {v3}, Ljp/co/sony/mc/camera/view/messagedialog/OkCancelDialogBuilder;-><init>()V
+    new-instance v1, Ljp/co/sony/mc/camera/view/messagedialog/OkCancelDialogBuilder;
+
+    move-object v3, v1
+
+    invoke-direct {v1}, Ljp/co/sony/mc/camera/view/messagedialog/OkCancelDialogBuilder;-><init>()V
 
     sget-object v4, Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;->LOW:Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;
-
-    sget-object v12, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->TRUE:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
-
-    sget-object v13, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->FALSE:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
-
-    sget-object v14, Ljp/co/sony/mc/camera/setting/MessageType;->NO_MESSAGE:Ljp/co/sony/mc/camera/setting/MessageType;
-
-    const/4 v15, 0x0
-
-    const-string v1, "LOCATION_SERVICE_DISABLE_ON_LAUNCH"
-
-    const/4 v2, 0x0
-
-    const v5, 0x7f110108
-
-    const v6, 0x7f110107
-
-    const/4 v7, -0x1
-
-    const/4 v8, -0x1
-
-    const v9, 0x7f110323
-
-    const v10, 0x7f11013d
-
-    const/4 v11, -0x1
-
-    move-object/from16 v0, v16
-
-    invoke-direct/range {v0 .. v15}, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;-><init>(Ljava/lang/String;ILjp/co/sony/mc/camera/view/messagedialog/MessageDialogBuilder;Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;IIIIIIILjp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/setting/MessageType;Z)V
-
-    sput-object v16, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->LOCATION_SERVICE_DISABLE_ON_LAUNCH:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
-
-    .line 33
-    new-instance v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
-
-    new-instance v20, Ljp/co/sony/mc/camera/view/messagedialog/OkCancelDialogBuilder;
-
-    invoke-direct/range {v20 .. v20}, Ljp/co/sony/mc/camera/view/messagedialog/OkCancelDialogBuilder;-><init>()V
-
-    sget-object v21, Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;->LOW:Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;
-
-    sget-object v29, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->TRUE:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
-
-    sget-object v30, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->FALSE:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
-
-    sget-object v31, Ljp/co/sony/mc/camera/setting/MessageType;->NO_MESSAGE:Ljp/co/sony/mc/camera/setting/MessageType;
-
-    const/16 v32, 0x0
-
-    const-string v18, "LOCATION_SERVICE_DISABLE_ON_CONTEXTUAL_SETTINGS"
-
-    const/16 v19, 0x1
-
-    const v22, 0x7f110108
-
-    const v23, 0x7f110107
-
-    const/16 v24, -0x1
-
-    const/16 v25, -0x1
-
-    const v26, 0x7f110323
-
-    const v27, 0x7f11013d
-
-    const/16 v28, -0x1
-
-    move-object/from16 v17, v0
-
-    invoke-direct/range {v17 .. v32}, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;-><init>(Ljava/lang/String;ILjp/co/sony/mc/camera/view/messagedialog/MessageDialogBuilder;Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;IIIIIIILjp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/setting/MessageType;Z)V
-
-    sput-object v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->LOCATION_SERVICE_DISABLE_ON_CONTEXTUAL_SETTINGS:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
-
-    .line 49
-    new-instance v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
-
-    new-instance v4, Ljp/co/sony/mc/camera/view/messagedialog/OkWithCheckBoxDialogBuilder;
-
-    invoke-direct {v4}, Ljp/co/sony/mc/camera/view/messagedialog/OkWithCheckBoxDialogBuilder;-><init>()V
-
-    sget-object v5, Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;->NORMAL:Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;
-
-    sget-object v13, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->TRUE:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
-
-    sget-object v14, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->FALSE:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
-
-    sget-object v1, Ljp/co/sony/mc/camera/setting/MessageType;->NO_MESSAGE:Ljp/co/sony/mc/camera/setting/MessageType;
-
-    sget-object v15, Ljp/co/sony/mc/camera/setting/MessageType;->THERMAL_WARNING:Ljp/co/sony/mc/camera/setting/MessageType;
-
-    const/16 v16, 0x1
-
-    const-string v2, "THERMAL_WARNING"
-
-    const/4 v3, 0x2
-
-    const v6, 0x7f11019d
-
-    const v7, 0x7f110166
-
-    const/4 v9, -0x1
-
-    const v10, 0x7f110323
-
-    const v12, 0x7f0c0052
-
-    move-object v1, v0
-
-    invoke-direct/range {v1 .. v16}, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;-><init>(Ljava/lang/String;ILjp/co/sony/mc/camera/view/messagedialog/MessageDialogBuilder;Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;IIIIIIILjp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/setting/MessageType;Z)V
-
-    sput-object v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->THERMAL_WARNING:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
-
-    .line 65
-    new-instance v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
-
-    new-instance v20, Ljp/co/sony/mc/camera/view/messagedialog/OkDialogBuilder;
-
-    invoke-direct/range {v20 .. v20}, Ljp/co/sony/mc/camera/view/messagedialog/OkDialogBuilder;-><init>()V
-
-    sget-object v21, Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;->IMMEDIATELY:Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;
-
-    sget-object v29, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->TRUE:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
-
-    sget-object v30, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->FALSE:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
-
-    sget-object v31, Ljp/co/sony/mc/camera/setting/MessageType;->NO_MESSAGE:Ljp/co/sony/mc/camera/setting/MessageType;
-
-    const-string v18, "THERMAL_CRITICAL"
-
-    const/16 v19, 0x3
-
-    const v22, 0x7f11019d
-
-    const v23, 0x7f1101e3
-
-    const/16 v27, -0x1
-
-    move-object/from16 v17, v0
-
-    invoke-direct/range {v17 .. v32}, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;-><init>(Ljava/lang/String;ILjp/co/sony/mc/camera/view/messagedialog/MessageDialogBuilder;Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;IIIIIIILjp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/setting/MessageType;Z)V
-
-    sput-object v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->THERMAL_CRITICAL:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
-
-    .line 81
-    new-instance v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
-
-    new-instance v4, Ljp/co/sony/mc/camera/view/messagedialog/OkDialogBuilder;
-
-    invoke-direct {v4}, Ljp/co/sony/mc/camera/view/messagedialog/OkDialogBuilder;-><init>()V
-
-    sget-object v5, Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;->IMMEDIATELY:Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;
 
     sget-object v13, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->TRUE:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
 
@@ -817,123 +687,295 @@
 
     const/16 v16, 0x0
 
+    const-string v1, "LOCATION_SERVICE_DISABLE_ON_LAUNCH"
+
+    const/4 v2, 0x0
+
+    const v5, 0x7f110109
+
+    const v6, 0x7f110108
+
+    const/4 v7, -0x1
+
+    const/4 v8, -0x1
+
+    const/4 v9, -0x1
+
+    const v10, 0x7f110355
+
+    const v11, 0x7f110140
+
+    const/4 v12, -0x1
+
+    invoke-direct/range {v0 .. v16}, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;-><init>(Ljava/lang/String;ILjp/co/sony/mc/camera/view/messagedialog/MessageDialogBuilder;Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;IIIIIIIILjp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/setting/MessageType;Z)V
+
+    sput-object v17, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->LOCATION_SERVICE_DISABLE_ON_LAUNCH:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
+
+    .line 34
+    new-instance v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
+
+    move-object/from16 v18, v0
+
+    new-instance v1, Ljp/co/sony/mc/camera/view/messagedialog/OkCancelDialogBuilder;
+
+    move-object/from16 v21, v1
+
+    invoke-direct {v1}, Ljp/co/sony/mc/camera/view/messagedialog/OkCancelDialogBuilder;-><init>()V
+
+    sget-object v22, Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;->LOW:Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;
+
+    sget-object v31, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->TRUE:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
+
+    sget-object v32, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->FALSE:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
+
+    sget-object v33, Ljp/co/sony/mc/camera/setting/MessageType;->NO_MESSAGE:Ljp/co/sony/mc/camera/setting/MessageType;
+
+    const/16 v34, 0x0
+
+    const-string v19, "LOCATION_SERVICE_DISABLE_ON_CONTEXTUAL_SETTINGS"
+
+    const/16 v20, 0x1
+
+    const v23, 0x7f110109
+
+    const v24, 0x7f110108
+
+    const/16 v25, -0x1
+
+    const/16 v26, -0x1
+
+    const/16 v27, -0x1
+
+    const v28, 0x7f110355
+
+    const v29, 0x7f110140
+
+    const/16 v30, -0x1
+
+    invoke-direct/range {v18 .. v34}, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;-><init>(Ljava/lang/String;ILjp/co/sony/mc/camera/view/messagedialog/MessageDialogBuilder;Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;IIIIIIIILjp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/setting/MessageType;Z)V
+
+    sput-object v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->LOCATION_SERVICE_DISABLE_ON_CONTEXTUAL_SETTINGS:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
+
+    .line 51
+    new-instance v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
+
+    move-object v1, v0
+
+    new-instance v2, Ljp/co/sony/mc/camera/view/messagedialog/OkWithCheckBoxDialogBuilder;
+
+    move-object v4, v2
+
+    invoke-direct {v2}, Ljp/co/sony/mc/camera/view/messagedialog/OkWithCheckBoxDialogBuilder;-><init>()V
+
+    sget-object v5, Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;->NORMAL:Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;
+
+    sget-object v14, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->TRUE:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
+
+    sget-object v15, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->FALSE:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
+
+    sget-object v2, Ljp/co/sony/mc/camera/setting/MessageType;->NO_MESSAGE:Ljp/co/sony/mc/camera/setting/MessageType;
+
+    sget-object v16, Ljp/co/sony/mc/camera/setting/MessageType;->THERMAL_WARNING:Ljp/co/sony/mc/camera/setting/MessageType;
+
+    const/16 v17, 0x1
+
+    const-string v2, "THERMAL_WARNING"
+
+    const/4 v3, 0x2
+
+    const v6, 0x7f1101a0
+
+    const v7, 0x7f110169
+
+    const/4 v10, -0x1
+
+    const v11, 0x7f110355
+
+    const v13, 0x7f0c0051
+
+    invoke-direct/range {v1 .. v17}, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;-><init>(Ljava/lang/String;ILjp/co/sony/mc/camera/view/messagedialog/MessageDialogBuilder;Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;IIIIIIIILjp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/setting/MessageType;Z)V
+
+    sput-object v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->THERMAL_WARNING:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
+
+    .line 68
+    new-instance v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
+
+    move-object/from16 v18, v0
+
+    new-instance v1, Ljp/co/sony/mc/camera/view/messagedialog/OkDialogBuilder;
+
+    move-object/from16 v21, v1
+
+    invoke-direct {v1}, Ljp/co/sony/mc/camera/view/messagedialog/OkDialogBuilder;-><init>()V
+
+    sget-object v22, Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;->IMMEDIATELY:Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;
+
+    sget-object v31, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->TRUE:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
+
+    sget-object v32, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->FALSE:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
+
+    sget-object v33, Ljp/co/sony/mc/camera/setting/MessageType;->NO_MESSAGE:Ljp/co/sony/mc/camera/setting/MessageType;
+
+    const-string v19, "THERMAL_CRITICAL"
+
+    const/16 v20, 0x3
+
+    const v23, 0x7f1101a0
+
+    const v24, 0x7f1101e6
+
+    const/16 v29, -0x1
+
+    invoke-direct/range {v18 .. v34}, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;-><init>(Ljava/lang/String;ILjp/co/sony/mc/camera/view/messagedialog/MessageDialogBuilder;Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;IIIIIIIILjp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/setting/MessageType;Z)V
+
+    sput-object v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->THERMAL_CRITICAL:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
+
+    .line 85
+    new-instance v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
+
+    move-object v1, v0
+
+    new-instance v2, Ljp/co/sony/mc/camera/view/messagedialog/OkDialogBuilder;
+
+    move-object v4, v2
+
+    invoke-direct {v2}, Ljp/co/sony/mc/camera/view/messagedialog/OkDialogBuilder;-><init>()V
+
+    sget-object v5, Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;->IMMEDIATELY:Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;
+
+    sget-object v14, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->TRUE:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
+
+    sget-object v15, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->FALSE:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
+
+    sget-object v16, Ljp/co/sony/mc/camera/setting/MessageType;->NO_MESSAGE:Ljp/co/sony/mc/camera/setting/MessageType;
+
+    const/16 v17, 0x0
+
     const-string v2, "STORE_FAIL"
 
     const/4 v3, 0x4
 
-    const v7, 0x7f110420
+    const v7, 0x7f110455
 
-    const/4 v12, -0x1
+    const/4 v13, -0x1
 
-    move-object v1, v0
-
-    invoke-direct/range {v1 .. v16}, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;-><init>(Ljava/lang/String;ILjp/co/sony/mc/camera/view/messagedialog/MessageDialogBuilder;Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;IIIIIIILjp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/setting/MessageType;Z)V
+    invoke-direct/range {v1 .. v17}, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;-><init>(Ljava/lang/String;ILjp/co/sony/mc/camera/view/messagedialog/MessageDialogBuilder;Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;IIIIIIIILjp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/setting/MessageType;Z)V
 
     sput-object v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->STORE_FAIL:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
 
-    .line 97
+    .line 102
     new-instance v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
 
-    new-instance v20, Ljp/co/sony/mc/camera/view/messagedialog/NoButtonDialogBuilder;
+    move-object/from16 v18, v0
 
-    invoke-direct/range {v20 .. v20}, Ljp/co/sony/mc/camera/view/messagedialog/NoButtonDialogBuilder;-><init>()V
+    new-instance v1, Ljp/co/sony/mc/camera/view/messagedialog/NoButtonDialogBuilder;
 
-    sget-object v21, Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;->IMMEDIATELY:Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;
+    move-object/from16 v21, v1
 
-    sget-object v29, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->TRUE:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
+    invoke-direct {v1}, Ljp/co/sony/mc/camera/view/messagedialog/NoButtonDialogBuilder;-><init>()V
 
-    sget-object v30, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->USE_DEFAULT:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
+    sget-object v22, Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;->IMMEDIATELY:Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;
 
-    sget-object v31, Ljp/co/sony/mc/camera/setting/MessageType;->NO_MESSAGE:Ljp/co/sony/mc/camera/setting/MessageType;
+    sget-object v31, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->TRUE:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
 
-    const-string v18, "ERROR_IN_USE_BY_ANOTHER_APPLICATION"
+    sget-object v32, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->USE_DEFAULT:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
 
-    const/16 v19, 0x5
+    sget-object v33, Ljp/co/sony/mc/camera/setting/MessageType;->NO_MESSAGE:Ljp/co/sony/mc/camera/setting/MessageType;
 
-    const v22, 0x7f1101dd
+    const-string v19, "ERROR_IN_USE_BY_ANOTHER_APPLICATION"
 
-    const v23, 0x7f1101dc
+    const/16 v20, 0x5
 
-    const/16 v26, -0x1
+    const v23, 0x7f1101e0
 
-    move-object/from16 v17, v0
+    const v24, 0x7f1101df
 
-    invoke-direct/range {v17 .. v32}, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;-><init>(Ljava/lang/String;ILjp/co/sony/mc/camera/view/messagedialog/MessageDialogBuilder;Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;IIIIIIILjp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/setting/MessageType;Z)V
+    const/16 v28, -0x1
+
+    invoke-direct/range {v18 .. v34}, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;-><init>(Ljava/lang/String;ILjp/co/sony/mc/camera/view/messagedialog/MessageDialogBuilder;Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;IIIIIIIILjp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/setting/MessageType;Z)V
 
     sput-object v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->ERROR_IN_USE_BY_ANOTHER_APPLICATION:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
 
-    .line 113
+    .line 119
     new-instance v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
 
-    new-instance v4, Ljp/co/sony/mc/camera/view/messagedialog/NoButtonDialogBuilder;
+    move-object v1, v0
 
-    invoke-direct {v4}, Ljp/co/sony/mc/camera/view/messagedialog/NoButtonDialogBuilder;-><init>()V
+    new-instance v2, Ljp/co/sony/mc/camera/view/messagedialog/NoButtonDialogBuilder;
+
+    move-object v4, v2
+
+    invoke-direct {v2}, Ljp/co/sony/mc/camera/view/messagedialog/NoButtonDialogBuilder;-><init>()V
 
     sget-object v5, Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;->IMMEDIATELY:Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;
 
-    sget-object v13, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->TRUE:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
+    sget-object v14, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->TRUE:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
 
-    sget-object v14, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->USE_DEFAULT:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
+    sget-object v15, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->USE_DEFAULT:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
 
-    sget-object v15, Ljp/co/sony/mc/camera/setting/MessageType;->NO_MESSAGE:Ljp/co/sony/mc/camera/setting/MessageType;
+    sget-object v16, Ljp/co/sony/mc/camera/setting/MessageType;->NO_MESSAGE:Ljp/co/sony/mc/camera/setting/MessageType;
 
     const-string v2, "ERROR_USE_OF_CAMERA_RESTRICTED"
 
     const/4 v3, 0x6
 
-    const v6, 0x7f1101dd
+    const v6, 0x7f1101e0
 
-    const v7, 0x7f110453
+    const v7, 0x7f11048a
 
-    const/4 v10, -0x1
+    const/4 v11, -0x1
 
-    move-object v1, v0
-
-    invoke-direct/range {v1 .. v16}, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;-><init>(Ljava/lang/String;ILjp/co/sony/mc/camera/view/messagedialog/MessageDialogBuilder;Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;IIIIIIILjp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/setting/MessageType;Z)V
+    invoke-direct/range {v1 .. v17}, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;-><init>(Ljava/lang/String;ILjp/co/sony/mc/camera/view/messagedialog/MessageDialogBuilder;Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;IIIIIIIILjp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/setting/MessageType;Z)V
 
     sput-object v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->ERROR_USE_OF_CAMERA_RESTRICTED:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
 
-    .line 129
+    .line 136
     new-instance v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
 
-    new-instance v20, Ljp/co/sony/mc/camera/view/messagedialog/NoButtonDialogBuilder;
+    move-object/from16 v18, v0
 
-    invoke-direct/range {v20 .. v20}, Ljp/co/sony/mc/camera/view/messagedialog/NoButtonDialogBuilder;-><init>()V
+    new-instance v1, Ljp/co/sony/mc/camera/view/messagedialog/NoButtonDialogBuilder;
 
-    sget-object v21, Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;->IMMEDIATELY:Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;
+    move-object/from16 v21, v1
 
-    sget-object v29, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->USE_DEFAULT:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
+    invoke-direct {v1}, Ljp/co/sony/mc/camera/view/messagedialog/NoButtonDialogBuilder;-><init>()V
 
-    sget-object v30, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->FALSE:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
+    sget-object v22, Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;->IMMEDIATELY:Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;
 
-    sget-object v31, Ljp/co/sony/mc/camera/setting/MessageType;->NO_MESSAGE:Ljp/co/sony/mc/camera/setting/MessageType;
+    sget-object v31, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->USE_DEFAULT:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
 
-    const-string v18, "ERROR_UNKNOWN"
+    sget-object v32, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->FALSE:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
 
-    const/16 v19, 0x7
+    sget-object v33, Ljp/co/sony/mc/camera/setting/MessageType;->NO_MESSAGE:Ljp/co/sony/mc/camera/setting/MessageType;
 
-    const v23, 0x7f1101df
+    const-string v19, "ERROR_UNKNOWN"
 
-    move-object/from16 v17, v0
+    const/16 v20, 0x7
 
-    invoke-direct/range {v17 .. v32}, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;-><init>(Ljava/lang/String;ILjp/co/sony/mc/camera/view/messagedialog/MessageDialogBuilder;Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;IIIIIIILjp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/setting/MessageType;Z)V
+    const v24, 0x7f1101e2
+
+    invoke-direct/range {v18 .. v34}, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;-><init>(Ljava/lang/String;ILjp/co/sony/mc/camera/view/messagedialog/MessageDialogBuilder;Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;IIIIIIIILjp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/setting/MessageType;Z)V
 
     sput-object v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->ERROR_UNKNOWN:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
 
-    .line 145
+    .line 153
     new-instance v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
 
-    new-instance v4, Ljp/co/sony/mc/camera/view/messagedialog/NoButtonDialogBuilder;
+    move-object v1, v0
 
-    invoke-direct {v4}, Ljp/co/sony/mc/camera/view/messagedialog/NoButtonDialogBuilder;-><init>()V
+    new-instance v2, Ljp/co/sony/mc/camera/view/messagedialog/NoButtonDialogBuilder;
+
+    move-object v4, v2
+
+    invoke-direct {v2}, Ljp/co/sony/mc/camera/view/messagedialog/NoButtonDialogBuilder;-><init>()V
 
     sget-object v5, Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;->IMMEDIATELY:Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;
 
-    sget-object v13, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->TRUE:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
+    sget-object v14, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->TRUE:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
 
-    sget-object v14, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->FALSE:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
+    sget-object v15, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->FALSE:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
 
-    sget-object v15, Ljp/co/sony/mc/camera/setting/MessageType;->NO_MESSAGE:Ljp/co/sony/mc/camera/setting/MessageType;
+    sget-object v16, Ljp/co/sony/mc/camera/setting/MessageType;->NO_MESSAGE:Ljp/co/sony/mc/camera/setting/MessageType;
 
     const-string v2, "MEMORY_SHORTAGE_ON_ONE_SHOT_VIDEO"
 
@@ -941,4193 +983,4593 @@
 
     const/4 v7, -0x1
 
-    move-object v1, v0
-
-    invoke-direct/range {v1 .. v16}, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;-><init>(Ljava/lang/String;ILjp/co/sony/mc/camera/view/messagedialog/MessageDialogBuilder;Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;IIIIIIILjp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/setting/MessageType;Z)V
+    invoke-direct/range {v1 .. v17}, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;-><init>(Ljava/lang/String;ILjp/co/sony/mc/camera/view/messagedialog/MessageDialogBuilder;Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;IIIIIIIILjp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/setting/MessageType;Z)V
 
     sput-object v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->MEMORY_SHORTAGE_ON_ONE_SHOT_VIDEO:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
 
-    .line 162
+    .line 171
     new-instance v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
 
-    new-instance v20, Ljp/co/sony/mc/camera/view/messagedialog/OkCancelWithCheckBoxDialogBuilder;
+    move-object/from16 v18, v0
 
-    invoke-direct/range {v20 .. v20}, Ljp/co/sony/mc/camera/view/messagedialog/OkCancelWithCheckBoxDialogBuilder;-><init>()V
+    new-instance v1, Ljp/co/sony/mc/camera/view/messagedialog/OkCancelWithCheckBoxDialogBuilder;
 
-    sget-object v21, Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;->LOW:Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;
+    move-object/from16 v21, v1
 
-    sget-object v29, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->TRUE:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
+    invoke-direct {v1}, Ljp/co/sony/mc/camera/view/messagedialog/OkCancelWithCheckBoxDialogBuilder;-><init>()V
 
-    sget-object v30, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->FALSE:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
+    sget-object v22, Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;->LOW:Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;
 
-    sget-object v31, Ljp/co/sony/mc/camera/setting/MessageType;->FOURK_STORAGE_EXPLANATORY_FOR_VIDEOSIZE:Ljp/co/sony/mc/camera/setting/MessageType;
+    sget-object v31, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->TRUE:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
 
-    const/16 v32, 0x1
+    sget-object v32, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->FALSE:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
 
-    const-string v18, "FOURK_HIGH_SPEED_SD_RECOMMENDATION_ON_VIDEOSIZE_CHANGE"
+    sget-object v33, Ljp/co/sony/mc/camera/setting/MessageType;->FOURK_STORAGE_EXPLANATORY_FOR_VIDEOSIZE:Ljp/co/sony/mc/camera/setting/MessageType;
 
-    const/16 v19, 0x9
+    const/16 v34, 0x1
 
-    const v22, 0x7f11014d
+    const-string v19, "FOURK_HIGH_SPEED_SD_RECOMMENDATION_ON_VIDEOSIZE_CHANGE"
 
-    const v23, 0x7f110458
+    const/16 v20, 0x9
 
-    const v26, 0x7f1101e1
+    const v23, 0x7f110150
 
-    const v27, 0x7f1101e0
+    const v24, 0x7f11048f
 
-    const v28, 0x7f0c0052
+    const v28, 0x7f1101e4
 
-    move-object/from16 v17, v0
+    const v29, 0x7f1101e3
 
-    invoke-direct/range {v17 .. v32}, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;-><init>(Ljava/lang/String;ILjp/co/sony/mc/camera/view/messagedialog/MessageDialogBuilder;Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;IIIIIIILjp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/setting/MessageType;Z)V
+    const v30, 0x7f0c0051
+
+    invoke-direct/range {v18 .. v34}, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;-><init>(Ljava/lang/String;ILjp/co/sony/mc/camera/view/messagedialog/MessageDialogBuilder;Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;IIIIIIIILjp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/setting/MessageType;Z)V
 
     sput-object v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->FOURK_HIGH_SPEED_SD_RECOMMENDATION_ON_VIDEOSIZE_CHANGE:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
 
-    .line 178
+    .line 188
     new-instance v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
 
-    new-instance v4, Ljp/co/sony/mc/camera/view/messagedialog/OkWithCheckBoxDialogBuilder;
+    move-object v1, v0
 
-    invoke-direct {v4}, Ljp/co/sony/mc/camera/view/messagedialog/OkWithCheckBoxDialogBuilder;-><init>()V
+    new-instance v2, Ljp/co/sony/mc/camera/view/messagedialog/OkWithCheckBoxDialogBuilder;
+
+    move-object v4, v2
+
+    invoke-direct {v2}, Ljp/co/sony/mc/camera/view/messagedialog/OkWithCheckBoxDialogBuilder;-><init>()V
 
     sget-object v5, Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;->LOW:Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;
 
-    sget-object v13, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->TRUE:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
+    sget-object v14, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->TRUE:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
 
-    sget-object v14, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->USE_DEFAULT:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
+    sget-object v15, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->USE_DEFAULT:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
 
-    sget-object v15, Ljp/co/sony/mc/camera/setting/MessageType;->FOURK_STORAGE_EXPLANATORY_FOR_DESTINATION:Ljp/co/sony/mc/camera/setting/MessageType;
+    sget-object v16, Ljp/co/sony/mc/camera/setting/MessageType;->FOURK_STORAGE_EXPLANATORY_FOR_DESTINATION:Ljp/co/sony/mc/camera/setting/MessageType;
 
-    const/16 v16, 0x1
+    const/16 v17, 0x1
 
     const-string v2, "FOURK_HIGH_SPEED_SD_RECOMMENDATION_ON_DESTINATION_CHANGE"
 
     const/16 v3, 0xa
 
-    const v6, 0x7f1103b7
+    const v6, 0x7f1103eb
 
-    const v7, 0x7f110456
+    const v7, 0x7f11048d
 
-    const v10, 0x7f110323
+    const v11, 0x7f110355
 
-    const v12, 0x7f0c0052
+    const v13, 0x7f0c0051
 
-    move-object v1, v0
-
-    invoke-direct/range {v1 .. v16}, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;-><init>(Ljava/lang/String;ILjp/co/sony/mc/camera/view/messagedialog/MessageDialogBuilder;Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;IIIIIIILjp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/setting/MessageType;Z)V
+    invoke-direct/range {v1 .. v17}, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;-><init>(Ljava/lang/String;ILjp/co/sony/mc/camera/view/messagedialog/MessageDialogBuilder;Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;IIIIIIIILjp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/setting/MessageType;Z)V
 
     sput-object v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->FOURK_HIGH_SPEED_SD_RECOMMENDATION_ON_DESTINATION_CHANGE:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
 
-    .line 194
+    .line 205
     new-instance v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
 
-    new-instance v20, Ljp/co/sony/mc/camera/view/messagedialog/OkCancelDialogBuilder;
+    move-object/from16 v18, v0
 
-    invoke-direct/range {v20 .. v20}, Ljp/co/sony/mc/camera/view/messagedialog/OkCancelDialogBuilder;-><init>()V
+    new-instance v1, Ljp/co/sony/mc/camera/view/messagedialog/OkCancelDialogBuilder;
 
-    sget-object v21, Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;->LOW:Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;
+    move-object/from16 v21, v1
 
-    sget-object v29, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->TRUE:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
+    invoke-direct {v1}, Ljp/co/sony/mc/camera/view/messagedialog/OkCancelDialogBuilder;-><init>()V
 
-    sget-object v30, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->USE_DEFAULT:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
+    sget-object v22, Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;->LOW:Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;
 
-    sget-object v31, Ljp/co/sony/mc/camera/setting/MessageType;->NO_MESSAGE:Ljp/co/sony/mc/camera/setting/MessageType;
+    sget-object v31, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->TRUE:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
 
-    const/16 v32, 0x0
+    sget-object v32, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->USE_DEFAULT:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
 
-    const-string v18, "MEMORY_FULL_PROPOSE_CHANGE_TO_INTERNAL"
+    sget-object v33, Ljp/co/sony/mc/camera/setting/MessageType;->NO_MESSAGE:Ljp/co/sony/mc/camera/setting/MessageType;
 
-    const/16 v19, 0xb
+    const/16 v34, 0x0
 
-    const v22, 0x7f1103b7
+    const-string v19, "MEMORY_FULL_PROPOSE_CHANGE_TO_INTERNAL"
 
-    const v23, 0x7f11015b
+    const/16 v20, 0xb
 
-    const/16 v28, -0x1
+    const v23, 0x7f1103eb
 
-    move-object/from16 v17, v0
+    const v24, 0x7f11015e
 
-    invoke-direct/range {v17 .. v32}, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;-><init>(Ljava/lang/String;ILjp/co/sony/mc/camera/view/messagedialog/MessageDialogBuilder;Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;IIIIIIILjp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/setting/MessageType;Z)V
+    const/16 v30, -0x1
+
+    invoke-direct/range {v18 .. v34}, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;-><init>(Ljava/lang/String;ILjp/co/sony/mc/camera/view/messagedialog/MessageDialogBuilder;Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;IIIIIIIILjp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/setting/MessageType;Z)V
 
     sput-object v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->MEMORY_FULL_PROPOSE_CHANGE_TO_INTERNAL:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
 
-    .line 210
+    .line 222
     new-instance v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
 
-    new-instance v4, Ljp/co/sony/mc/camera/view/messagedialog/OkCancelDialogBuilder;
+    move-object v1, v0
 
-    invoke-direct {v4}, Ljp/co/sony/mc/camera/view/messagedialog/OkCancelDialogBuilder;-><init>()V
+    new-instance v2, Ljp/co/sony/mc/camera/view/messagedialog/OkCancelDialogBuilder;
+
+    move-object v4, v2
+
+    invoke-direct {v2}, Ljp/co/sony/mc/camera/view/messagedialog/OkCancelDialogBuilder;-><init>()V
 
     sget-object v5, Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;->LOW:Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;
 
-    sget-object v13, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->TRUE:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
+    sget-object v14, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->TRUE:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
 
-    sget-object v14, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->USE_DEFAULT:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
+    sget-object v15, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->USE_DEFAULT:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
 
-    sget-object v15, Ljp/co/sony/mc/camera/setting/MessageType;->NO_MESSAGE:Ljp/co/sony/mc/camera/setting/MessageType;
+    sget-object v16, Ljp/co/sony/mc/camera/setting/MessageType;->NO_MESSAGE:Ljp/co/sony/mc/camera/setting/MessageType;
 
-    const/16 v16, 0x0
+    const/16 v17, 0x0
 
     const-string v2, "MEMORY_UNAVAILABLE_PROPOSE_CHANGE_TO_INTERNAL"
 
     const/16 v3, 0xc
 
-    const v7, 0x7f11015c
+    const v7, 0x7f11015f
 
-    const v10, 0x7f1101e1
+    const v11, 0x7f1101e4
 
-    const v11, 0x7f1101e0
+    const v12, 0x7f1101e3
 
-    const/4 v12, -0x1
+    const/4 v13, -0x1
 
-    move-object v1, v0
-
-    invoke-direct/range {v1 .. v16}, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;-><init>(Ljava/lang/String;ILjp/co/sony/mc/camera/view/messagedialog/MessageDialogBuilder;Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;IIIIIIILjp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/setting/MessageType;Z)V
+    invoke-direct/range {v1 .. v17}, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;-><init>(Ljava/lang/String;ILjp/co/sony/mc/camera/view/messagedialog/MessageDialogBuilder;Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;IIIIIIIILjp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/setting/MessageType;Z)V
 
     sput-object v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->MEMORY_UNAVAILABLE_PROPOSE_CHANGE_TO_INTERNAL:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
 
-    .line 226
+    .line 239
     new-instance v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
 
-    new-instance v20, Ljp/co/sony/mc/camera/view/messagedialog/OkDialogBuilder;
+    move-object/from16 v18, v0
 
-    invoke-direct/range {v20 .. v20}, Ljp/co/sony/mc/camera/view/messagedialog/OkDialogBuilder;-><init>()V
+    new-instance v1, Ljp/co/sony/mc/camera/view/messagedialog/OkDialogBuilder;
 
-    sget-object v21, Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;->NORMAL:Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;
+    move-object/from16 v21, v1
 
-    sget-object v29, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->TRUE:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
+    invoke-direct {v1}, Ljp/co/sony/mc/camera/view/messagedialog/OkDialogBuilder;-><init>()V
 
-    sget-object v30, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->USE_DEFAULT:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
+    sget-object v22, Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;->NORMAL:Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;
 
-    sget-object v31, Ljp/co/sony/mc/camera/setting/MessageType;->NO_MESSAGE:Ljp/co/sony/mc/camera/setting/MessageType;
+    sget-object v31, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->TRUE:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
 
-    const-string v18, "MEMORY_FULL"
+    sget-object v32, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->USE_DEFAULT:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
 
-    const/16 v19, 0xd
+    sget-object v33, Ljp/co/sony/mc/camera/setting/MessageType;->NO_MESSAGE:Ljp/co/sony/mc/camera/setting/MessageType;
 
-    const v22, 0x7f11019d
+    const-string v19, "MEMORY_FULL"
 
-    const v23, 0x7f1101e4
+    const/16 v20, 0xd
 
-    const v26, 0x7f110323
+    const v23, 0x7f1101a0
 
-    const/16 v27, -0x1
+    const v24, 0x7f1101e7
 
-    move-object/from16 v17, v0
+    const v28, 0x7f110355
 
-    invoke-direct/range {v17 .. v32}, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;-><init>(Ljava/lang/String;ILjp/co/sony/mc/camera/view/messagedialog/MessageDialogBuilder;Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;IIIIIIILjp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/setting/MessageType;Z)V
+    const/16 v29, -0x1
+
+    invoke-direct/range {v18 .. v34}, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;-><init>(Ljava/lang/String;ILjp/co/sony/mc/camera/view/messagedialog/MessageDialogBuilder;Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;IIIIIIIILjp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/setting/MessageType;Z)V
 
     sput-object v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->MEMORY_FULL:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
 
-    .line 242
+    .line 256
     new-instance v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
 
-    new-instance v4, Ljp/co/sony/mc/camera/view/messagedialog/OkDialogBuilder;
+    move-object v1, v0
 
-    invoke-direct {v4}, Ljp/co/sony/mc/camera/view/messagedialog/OkDialogBuilder;-><init>()V
+    new-instance v2, Ljp/co/sony/mc/camera/view/messagedialog/OkDialogBuilder;
+
+    move-object v4, v2
+
+    invoke-direct {v2}, Ljp/co/sony/mc/camera/view/messagedialog/OkDialogBuilder;-><init>()V
 
     sget-object v5, Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;->NORMAL:Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;
 
-    sget-object v13, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->TRUE:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
+    sget-object v14, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->TRUE:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
 
-    sget-object v14, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->USE_DEFAULT:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
+    sget-object v15, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->USE_DEFAULT:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
 
-    sget-object v15, Ljp/co/sony/mc/camera/setting/MessageType;->NO_MESSAGE:Ljp/co/sony/mc/camera/setting/MessageType;
+    sget-object v16, Ljp/co/sony/mc/camera/setting/MessageType;->NO_MESSAGE:Ljp/co/sony/mc/camera/setting/MessageType;
 
     const-string v2, "MEMORY_SD_UNAVAILABLE"
 
     const/16 v3, 0xe
 
-    const v6, 0x7f11019d
+    const v6, 0x7f1101a0
 
-    const v7, 0x7f1101e8
+    const v7, 0x7f1101eb
 
-    const v10, 0x7f110323
+    const v11, 0x7f110355
 
-    const/4 v11, -0x1
+    const/4 v12, -0x1
 
-    move-object v1, v0
-
-    invoke-direct/range {v1 .. v16}, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;-><init>(Ljava/lang/String;ILjp/co/sony/mc/camera/view/messagedialog/MessageDialogBuilder;Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;IIIIIIILjp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/setting/MessageType;Z)V
+    invoke-direct/range {v1 .. v17}, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;-><init>(Ljava/lang/String;ILjp/co/sony/mc/camera/view/messagedialog/MessageDialogBuilder;Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;IIIIIIIILjp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/setting/MessageType;Z)V
 
     sput-object v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->MEMORY_SD_UNAVAILABLE:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
 
-    .line 258
+    .line 273
     new-instance v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
 
-    new-instance v20, Ljp/co/sony/mc/camera/view/messagedialog/OkCancelDialogBuilder;
+    move-object/from16 v18, v0
 
-    invoke-direct/range {v20 .. v20}, Ljp/co/sony/mc/camera/view/messagedialog/OkCancelDialogBuilder;-><init>()V
+    new-instance v1, Ljp/co/sony/mc/camera/view/messagedialog/OkCancelDialogBuilder;
 
-    sget-object v21, Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;->LOW:Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;
+    move-object/from16 v21, v1
 
-    sget-object v29, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->TRUE:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
+    invoke-direct {v1}, Ljp/co/sony/mc/camera/view/messagedialog/OkCancelDialogBuilder;-><init>()V
 
-    sget-object v30, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->USE_DEFAULT:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
+    sget-object v22, Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;->LOW:Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;
 
-    sget-object v31, Ljp/co/sony/mc/camera/setting/MessageType;->NO_MESSAGE:Ljp/co/sony/mc/camera/setting/MessageType;
+    sget-object v31, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->TRUE:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
 
-    const-string v18, "MEMORY_FULL_PROPOSE_CHANGE_TO_SD"
+    sget-object v32, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->USE_DEFAULT:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
 
-    const/16 v19, 0xf
+    sget-object v33, Ljp/co/sony/mc/camera/setting/MessageType;->NO_MESSAGE:Ljp/co/sony/mc/camera/setting/MessageType;
 
-    const v23, 0x7f110158
+    const-string v19, "MEMORY_FULL_PROPOSE_CHANGE_TO_SD"
 
-    const v26, 0x7f1101e1
+    const/16 v20, 0xf
 
-    const v27, 0x7f1101e0
+    const v24, 0x7f11015b
 
-    move-object/from16 v17, v0
+    const v28, 0x7f1101e4
 
-    invoke-direct/range {v17 .. v32}, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;-><init>(Ljava/lang/String;ILjp/co/sony/mc/camera/view/messagedialog/MessageDialogBuilder;Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;IIIIIIILjp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/setting/MessageType;Z)V
+    const v29, 0x7f1101e3
+
+    invoke-direct/range {v18 .. v34}, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;-><init>(Ljava/lang/String;ILjp/co/sony/mc/camera/view/messagedialog/MessageDialogBuilder;Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;IIIIIIIILjp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/setting/MessageType;Z)V
 
     sput-object v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->MEMORY_FULL_PROPOSE_CHANGE_TO_SD:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
 
-    .line 274
+    .line 290
     new-instance v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
 
-    new-instance v4, Ljp/co/sony/mc/camera/view/messagedialog/OkDialogBuilder;
+    move-object v1, v0
 
-    invoke-direct {v4}, Ljp/co/sony/mc/camera/view/messagedialog/OkDialogBuilder;-><init>()V
+    new-instance v2, Ljp/co/sony/mc/camera/view/messagedialog/OkDialogBuilder;
+
+    move-object v4, v2
+
+    invoke-direct {v2}, Ljp/co/sony/mc/camera/view/messagedialog/OkDialogBuilder;-><init>()V
 
     sget-object v5, Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;->NORMAL:Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;
 
-    sget-object v13, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->TRUE:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
+    sget-object v14, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->TRUE:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
 
-    sget-object v14, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->USE_DEFAULT:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
+    sget-object v15, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->USE_DEFAULT:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
 
-    sget-object v15, Ljp/co/sony/mc/camera/setting/MessageType;->NO_MESSAGE:Ljp/co/sony/mc/camera/setting/MessageType;
+    sget-object v16, Ljp/co/sony/mc/camera/setting/MessageType;->NO_MESSAGE:Ljp/co/sony/mc/camera/setting/MessageType;
 
     const-string v2, "MEMORY_INTERNAL_UNAVAILABLE"
 
     const/16 v3, 0x10
 
-    const v7, 0x7f1101e6
+    const v7, 0x7f1101e9
 
-    move-object v1, v0
-
-    invoke-direct/range {v1 .. v16}, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;-><init>(Ljava/lang/String;ILjp/co/sony/mc/camera/view/messagedialog/MessageDialogBuilder;Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;IIIIIIILjp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/setting/MessageType;Z)V
+    invoke-direct/range {v1 .. v17}, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;-><init>(Ljava/lang/String;ILjp/co/sony/mc/camera/view/messagedialog/MessageDialogBuilder;Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;IIIIIIIILjp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/setting/MessageType;Z)V
 
     sput-object v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->MEMORY_INTERNAL_UNAVAILABLE:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
 
-    .line 290
+    .line 307
     new-instance v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
 
-    new-instance v20, Ljp/co/sony/mc/camera/view/messagedialog/OkCancelDialogBuilder;
+    move-object/from16 v18, v0
 
-    invoke-direct/range {v20 .. v20}, Ljp/co/sony/mc/camera/view/messagedialog/OkCancelDialogBuilder;-><init>()V
+    new-instance v1, Ljp/co/sony/mc/camera/view/messagedialog/OkCancelDialogBuilder;
 
-    sget-object v21, Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;->LOW:Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;
+    move-object/from16 v21, v1
 
-    sget-object v29, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->TRUE:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
+    invoke-direct {v1}, Ljp/co/sony/mc/camera/view/messagedialog/OkCancelDialogBuilder;-><init>()V
 
-    sget-object v30, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->USE_DEFAULT:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
+    sget-object v22, Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;->LOW:Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;
 
-    sget-object v31, Ljp/co/sony/mc/camera/setting/MessageType;->NO_MESSAGE:Ljp/co/sony/mc/camera/setting/MessageType;
+    sget-object v31, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->TRUE:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
 
-    const-string v18, "MEMORY_UNAVAILABLE_PROPOSE_CHANGE_TO_SD"
+    sget-object v32, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->USE_DEFAULT:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
 
-    const/16 v19, 0x11
+    sget-object v33, Ljp/co/sony/mc/camera/setting/MessageType;->NO_MESSAGE:Ljp/co/sony/mc/camera/setting/MessageType;
 
-    const v23, 0x7f110159
+    const-string v19, "MEMORY_UNAVAILABLE_PROPOSE_CHANGE_TO_SD"
 
-    move-object/from16 v17, v0
+    const/16 v20, 0x11
 
-    invoke-direct/range {v17 .. v32}, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;-><init>(Ljava/lang/String;ILjp/co/sony/mc/camera/view/messagedialog/MessageDialogBuilder;Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;IIIIIIILjp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/setting/MessageType;Z)V
+    const v24, 0x7f11015c
+
+    invoke-direct/range {v18 .. v34}, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;-><init>(Ljava/lang/String;ILjp/co/sony/mc/camera/view/messagedialog/MessageDialogBuilder;Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;IIIIIIIILjp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/setting/MessageType;Z)V
 
     sput-object v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->MEMORY_UNAVAILABLE_PROPOSE_CHANGE_TO_SD:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
 
-    .line 306
+    .line 324
     new-instance v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
 
-    new-instance v4, Ljp/co/sony/mc/camera/view/messagedialog/OkCancelDialogBuilder;
+    move-object v1, v0
 
-    invoke-direct {v4}, Ljp/co/sony/mc/camera/view/messagedialog/OkCancelDialogBuilder;-><init>()V
+    new-instance v2, Ljp/co/sony/mc/camera/view/messagedialog/OkCancelDialogBuilder;
+
+    move-object v4, v2
+
+    invoke-direct {v2}, Ljp/co/sony/mc/camera/view/messagedialog/OkCancelDialogBuilder;-><init>()V
 
     sget-object v5, Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;->LOW:Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;
 
-    sget-object v13, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->TRUE:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
+    sget-object v14, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->TRUE:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
 
-    sget-object v14, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->USE_DEFAULT:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
+    sget-object v15, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->USE_DEFAULT:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
 
-    sget-object v15, Ljp/co/sony/mc/camera/setting/MessageType;->NO_MESSAGE:Ljp/co/sony/mc/camera/setting/MessageType;
+    sget-object v16, Ljp/co/sony/mc/camera/setting/MessageType;->NO_MESSAGE:Ljp/co/sony/mc/camera/setting/MessageType;
 
     const-string v2, "UNLOCK_REQUEST_FOR_OPENING_ADD_ON_APP"
 
     const/16 v3, 0x12
 
-    const v6, 0x7f11021e
+    const v6, 0x7f110221
 
-    const v7, 0x7f11021b
+    const v7, 0x7f11021e
 
-    const v10, 0x7f110452
+    const v11, 0x7f110489
 
-    const v11, 0x7f11013d
+    const v12, 0x7f110140
 
-    move-object v1, v0
-
-    invoke-direct/range {v1 .. v16}, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;-><init>(Ljava/lang/String;ILjp/co/sony/mc/camera/view/messagedialog/MessageDialogBuilder;Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;IIIIIIILjp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/setting/MessageType;Z)V
+    invoke-direct/range {v1 .. v17}, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;-><init>(Ljava/lang/String;ILjp/co/sony/mc/camera/view/messagedialog/MessageDialogBuilder;Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;IIIIIIIILjp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/setting/MessageType;Z)V
 
     sput-object v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->UNLOCK_REQUEST_FOR_OPENING_ADD_ON_APP:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
 
-    .line 322
+    .line 341
     new-instance v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
 
-    new-instance v20, Ljp/co/sony/mc/camera/view/messagedialog/OkCancelDialogBuilder;
+    move-object/from16 v18, v0
 
-    invoke-direct/range {v20 .. v20}, Ljp/co/sony/mc/camera/view/messagedialog/OkCancelDialogBuilder;-><init>()V
+    new-instance v1, Ljp/co/sony/mc/camera/view/messagedialog/OkCancelDialogBuilder;
 
-    sget-object v21, Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;->LOW:Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;
+    move-object/from16 v21, v1
 
-    sget-object v29, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->TRUE:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
+    invoke-direct {v1}, Ljp/co/sony/mc/camera/view/messagedialog/OkCancelDialogBuilder;-><init>()V
 
-    sget-object v30, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->USE_DEFAULT:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
+    sget-object v22, Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;->LOW:Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;
 
-    sget-object v31, Ljp/co/sony/mc/camera/setting/MessageType;->NO_MESSAGE:Ljp/co/sony/mc/camera/setting/MessageType;
+    sget-object v31, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->TRUE:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
 
-    const-string v18, "UNLOCK_REQUEST_FOR_SELFIE_ACCESSORY"
+    sget-object v32, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->USE_DEFAULT:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
 
-    const/16 v19, 0x13
+    sget-object v33, Ljp/co/sony/mc/camera/setting/MessageType;->NO_MESSAGE:Ljp/co/sony/mc/camera/setting/MessageType;
 
-    const v22, 0x7f11021e
+    const-string v19, "UNLOCK_REQUEST_FOR_SELFIE_ACCESSORY"
 
-    const v23, 0x7f11021b
+    const/16 v20, 0x13
 
-    const v26, 0x7f110452
+    const v23, 0x7f110221
 
-    const v27, 0x7f11013d
+    const v24, 0x7f11021e
 
-    move-object/from16 v17, v0
+    const v28, 0x7f110489
 
-    invoke-direct/range {v17 .. v32}, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;-><init>(Ljava/lang/String;ILjp/co/sony/mc/camera/view/messagedialog/MessageDialogBuilder;Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;IIIIIIILjp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/setting/MessageType;Z)V
+    const v29, 0x7f110140
+
+    invoke-direct/range {v18 .. v34}, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;-><init>(Ljava/lang/String;ILjp/co/sony/mc/camera/view/messagedialog/MessageDialogBuilder;Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;IIIIIIIILjp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/setting/MessageType;Z)V
 
     sput-object v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->UNLOCK_REQUEST_FOR_SELFIE_ACCESSORY:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
 
-    .line 338
+    .line 358
     new-instance v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
 
-    new-instance v4, Ljp/co/sony/mc/camera/view/messagedialog/OkDialogBuilder;
+    move-object v1, v0
 
-    invoke-direct {v4}, Ljp/co/sony/mc/camera/view/messagedialog/OkDialogBuilder;-><init>()V
+    new-instance v2, Ljp/co/sony/mc/camera/view/messagedialog/OkDialogBuilder;
+
+    move-object v4, v2
+
+    invoke-direct {v2}, Ljp/co/sony/mc/camera/view/messagedialog/OkDialogBuilder;-><init>()V
 
     sget-object v5, Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;->LOW:Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;
 
-    sget-object v13, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->TRUE:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
+    sget-object v14, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->TRUE:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
 
-    sget-object v14, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->FALSE:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
+    sget-object v15, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->FALSE:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
 
-    sget-object v15, Ljp/co/sony/mc/camera/setting/MessageType;->NO_MESSAGE:Ljp/co/sony/mc/camera/setting/MessageType;
+    sget-object v16, Ljp/co/sony/mc/camera/setting/MessageType;->NO_MESSAGE:Ljp/co/sony/mc/camera/setting/MessageType;
 
-    const/16 v16, 0x1
+    const/16 v17, 0x1
 
     const-string v2, "UNLOCK_REQUEST_FOR_OPENING_OPTION_MENU"
 
     const/16 v3, 0x14
 
-    const v7, 0x7f11021c
+    const v7, 0x7f11021f
 
-    const v10, 0x7f110323
+    const v11, 0x7f110355
 
-    const/4 v11, -0x1
+    const/4 v12, -0x1
 
-    move-object v1, v0
-
-    invoke-direct/range {v1 .. v16}, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;-><init>(Ljava/lang/String;ILjp/co/sony/mc/camera/view/messagedialog/MessageDialogBuilder;Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;IIIIIIILjp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/setting/MessageType;Z)V
+    invoke-direct/range {v1 .. v17}, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;-><init>(Ljava/lang/String;ILjp/co/sony/mc/camera/view/messagedialog/MessageDialogBuilder;Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;IIIIIIIILjp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/setting/MessageType;Z)V
 
     sput-object v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->UNLOCK_REQUEST_FOR_OPENING_OPTION_MENU:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
 
-    .line 354
+    .line 375
     new-instance v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
 
-    new-instance v20, Ljp/co/sony/mc/camera/view/messagedialog/NoButtonDialogBuilder;
+    move-object/from16 v18, v0
 
-    invoke-direct/range {v20 .. v20}, Ljp/co/sony/mc/camera/view/messagedialog/NoButtonDialogBuilder;-><init>()V
+    new-instance v1, Ljp/co/sony/mc/camera/view/messagedialog/NoButtonDialogBuilder;
 
-    sget-object v21, Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;->IMMEDIATELY:Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;
+    move-object/from16 v21, v1
 
-    sget-object v29, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->TRUE:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
+    invoke-direct {v1}, Ljp/co/sony/mc/camera/view/messagedialog/NoButtonDialogBuilder;-><init>()V
 
-    sget-object v30, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->FALSE:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
+    sget-object v22, Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;->IMMEDIATELY:Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;
 
-    sget-object v31, Ljp/co/sony/mc/camera/setting/MessageType;->NO_MESSAGE:Ljp/co/sony/mc/camera/setting/MessageType;
+    sget-object v31, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->TRUE:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
 
-    const-string v18, "COULD_NOT_SAVE_PHOTO"
+    sget-object v32, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->FALSE:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
 
-    const/16 v19, 0x15
+    sget-object v33, Ljp/co/sony/mc/camera/setting/MessageType;->NO_MESSAGE:Ljp/co/sony/mc/camera/setting/MessageType;
 
-    const v22, 0x7f1101dd
+    const-string v19, "COULD_NOT_SAVE_PHOTO"
 
-    const v23, 0x7f1101de
+    const/16 v20, 0x15
 
-    const/16 v26, -0x1
+    const v23, 0x7f1101e0
 
-    const/16 v27, -0x1
+    const v24, 0x7f1101e1
 
-    move-object/from16 v17, v0
+    const/16 v28, -0x1
 
-    invoke-direct/range {v17 .. v32}, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;-><init>(Ljava/lang/String;ILjp/co/sony/mc/camera/view/messagedialog/MessageDialogBuilder;Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;IIIIIIILjp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/setting/MessageType;Z)V
+    const/16 v29, -0x1
+
+    invoke-direct/range {v18 .. v34}, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;-><init>(Ljava/lang/String;ILjp/co/sony/mc/camera/view/messagedialog/MessageDialogBuilder;Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;IIIIIIIILjp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/setting/MessageType;Z)V
 
     sput-object v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->COULD_NOT_SAVE_PHOTO:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
 
-    .line 370
+    .line 392
     new-instance v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
 
-    new-instance v4, Ljp/co/sony/mc/camera/view/messagedialog/NoButtonDialogBuilder;
+    move-object v1, v0
 
-    invoke-direct {v4}, Ljp/co/sony/mc/camera/view/messagedialog/NoButtonDialogBuilder;-><init>()V
+    new-instance v2, Ljp/co/sony/mc/camera/view/messagedialog/NoButtonDialogBuilder;
+
+    move-object v4, v2
+
+    invoke-direct {v2}, Ljp/co/sony/mc/camera/view/messagedialog/NoButtonDialogBuilder;-><init>()V
 
     sget-object v5, Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;->IMMEDIATELY:Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;
 
-    sget-object v13, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->TRUE:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
+    sget-object v14, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->TRUE:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
 
-    sget-object v14, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->FALSE:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
+    sget-object v15, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->FALSE:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
 
-    sget-object v15, Ljp/co/sony/mc/camera/setting/MessageType;->NO_MESSAGE:Ljp/co/sony/mc/camera/setting/MessageType;
+    sget-object v16, Ljp/co/sony/mc/camera/setting/MessageType;->NO_MESSAGE:Ljp/co/sony/mc/camera/setting/MessageType;
 
-    const/16 v16, 0x0
+    const/16 v17, 0x0
 
     const-string v2, "COULD_NOT_START_RECORDING"
 
     const/16 v3, 0x16
 
-    const v6, 0x7f1101dd
+    const v6, 0x7f1101e0
 
     const/4 v7, -0x1
 
-    const/4 v10, -0x1
+    const/4 v11, -0x1
 
-    move-object v1, v0
-
-    invoke-direct/range {v1 .. v16}, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;-><init>(Ljava/lang/String;ILjp/co/sony/mc/camera/view/messagedialog/MessageDialogBuilder;Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;IIIIIIILjp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/setting/MessageType;Z)V
+    invoke-direct/range {v1 .. v17}, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;-><init>(Ljava/lang/String;ILjp/co/sony/mc/camera/view/messagedialog/MessageDialogBuilder;Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;IIIIIIIILjp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/setting/MessageType;Z)V
 
     sput-object v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->COULD_NOT_START_RECORDING:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
 
-    .line 387
+    .line 410
     new-instance v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
 
-    new-instance v20, Ljp/co/sony/mc/camera/view/messagedialog/OkDialogBuilder;
+    move-object/from16 v18, v0
 
-    invoke-direct/range {v20 .. v20}, Ljp/co/sony/mc/camera/view/messagedialog/OkDialogBuilder;-><init>()V
+    new-instance v1, Ljp/co/sony/mc/camera/view/messagedialog/OkDialogBuilder;
 
-    sget-object v21, Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;->LOW:Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;
+    move-object/from16 v21, v1
 
-    sget-object v29, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->TRUE:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
+    invoke-direct {v1}, Ljp/co/sony/mc/camera/view/messagedialog/OkDialogBuilder;-><init>()V
 
-    sget-object v30, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->FALSE:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
+    sget-object v22, Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;->LOW:Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;
 
-    sget-object v31, Ljp/co/sony/mc/camera/setting/MessageType;->NO_MESSAGE:Ljp/co/sony/mc/camera/setting/MessageType;
+    sget-object v31, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->TRUE:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
 
-    const-string v18, "RESTRICT_PHOTO_RESOLUTION"
+    sget-object v32, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->FALSE:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
 
-    const/16 v19, 0x17
+    sget-object v33, Ljp/co/sony/mc/camera/setting/MessageType;->NO_MESSAGE:Ljp/co/sony/mc/camera/setting/MessageType;
 
-    const v22, 0x7f11036f
+    const-string v19, "RESTRICT_PHOTO_RESOLUTION"
 
-    const/16 v23, -0x1
+    const/16 v20, 0x17
 
-    const v26, 0x7f110323
+    const v23, 0x7f1103a2
 
-    move-object/from16 v17, v0
+    const/16 v24, -0x1
 
-    invoke-direct/range {v17 .. v32}, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;-><init>(Ljava/lang/String;ILjp/co/sony/mc/camera/view/messagedialog/MessageDialogBuilder;Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;IIIIIIILjp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/setting/MessageType;Z)V
+    const v28, 0x7f110355
+
+    invoke-direct/range {v18 .. v34}, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;-><init>(Ljava/lang/String;ILjp/co/sony/mc/camera/view/messagedialog/MessageDialogBuilder;Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;IIIIIIIILjp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/setting/MessageType;Z)V
 
     sput-object v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->RESTRICT_PHOTO_RESOLUTION:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
 
-    .line 404
+    .line 428
     new-instance v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
 
-    new-instance v4, Ljp/co/sony/mc/camera/view/messagedialog/OkDialogBuilder;
+    move-object v1, v0
 
-    invoke-direct {v4}, Ljp/co/sony/mc/camera/view/messagedialog/OkDialogBuilder;-><init>()V
+    new-instance v2, Ljp/co/sony/mc/camera/view/messagedialog/OkDialogBuilder;
+
+    move-object v4, v2
+
+    invoke-direct {v2}, Ljp/co/sony/mc/camera/view/messagedialog/OkDialogBuilder;-><init>()V
 
     sget-object v5, Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;->LOW:Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;
 
-    sget-object v13, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->TRUE:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
+    sget-object v14, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->TRUE:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
 
-    sget-object v14, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->USE_DEFAULT:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
+    sget-object v15, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->USE_DEFAULT:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
 
-    sget-object v15, Ljp/co/sony/mc/camera/setting/MessageType;->NO_MESSAGE:Ljp/co/sony/mc/camera/setting/MessageType;
+    sget-object v16, Ljp/co/sony/mc/camera/setting/MessageType;->NO_MESSAGE:Ljp/co/sony/mc/camera/setting/MessageType;
 
     const-string v2, "RESTRICT_SETTING_ON_CURRENT_VIDEO_RESOLUTION"
 
     const/16 v3, 0x18
 
-    const v6, 0x7f11036f
+    const v6, 0x7f1103a2
 
-    const v7, 0x7f110392
+    const v7, 0x7f1103c6
 
-    const v10, 0x7f110323
+    const v11, 0x7f110355
 
-    move-object v1, v0
-
-    invoke-direct/range {v1 .. v16}, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;-><init>(Ljava/lang/String;ILjp/co/sony/mc/camera/view/messagedialog/MessageDialogBuilder;Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;IIIIIIILjp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/setting/MessageType;Z)V
+    invoke-direct/range {v1 .. v17}, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;-><init>(Ljava/lang/String;ILjp/co/sony/mc/camera/view/messagedialog/MessageDialogBuilder;Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;IIIIIIIILjp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/setting/MessageType;Z)V
 
     sput-object v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->RESTRICT_SETTING_ON_CURRENT_VIDEO_RESOLUTION:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
 
-    .line 420
+    .line 445
     new-instance v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
 
-    new-instance v20, Ljp/co/sony/mc/camera/view/messagedialog/OkDialogBuilder;
+    move-object/from16 v18, v0
 
-    invoke-direct/range {v20 .. v20}, Ljp/co/sony/mc/camera/view/messagedialog/OkDialogBuilder;-><init>()V
+    new-instance v1, Ljp/co/sony/mc/camera/view/messagedialog/OkDialogBuilder;
 
-    sget-object v21, Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;->LOW:Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;
+    move-object/from16 v21, v1
 
-    sget-object v29, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->TRUE:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
+    invoke-direct {v1}, Ljp/co/sony/mc/camera/view/messagedialog/OkDialogBuilder;-><init>()V
 
-    sget-object v30, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->USE_DEFAULT:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
+    sget-object v22, Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;->LOW:Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;
 
-    sget-object v31, Ljp/co/sony/mc/camera/setting/MessageType;->NO_MESSAGE:Ljp/co/sony/mc/camera/setting/MessageType;
+    sget-object v31, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->TRUE:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
 
-    const-string v18, "RESTRICT_SETTING_ON_CURRENT_VIDEO_FRAME_RATE"
+    sget-object v32, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->USE_DEFAULT:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
 
-    const/16 v19, 0x19
+    sget-object v33, Ljp/co/sony/mc/camera/setting/MessageType;->NO_MESSAGE:Ljp/co/sony/mc/camera/setting/MessageType;
 
-    const v23, 0x7f11038e
+    const-string v19, "RESTRICT_SETTING_ON_CURRENT_VIDEO_FRAME_RATE"
 
-    move-object/from16 v17, v0
+    const/16 v20, 0x19
 
-    invoke-direct/range {v17 .. v32}, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;-><init>(Ljava/lang/String;ILjp/co/sony/mc/camera/view/messagedialog/MessageDialogBuilder;Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;IIIIIIILjp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/setting/MessageType;Z)V
+    const v24, 0x7f1103c2
+
+    invoke-direct/range {v18 .. v34}, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;-><init>(Ljava/lang/String;ILjp/co/sony/mc/camera/view/messagedialog/MessageDialogBuilder;Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;IIIIIIIILjp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/setting/MessageType;Z)V
 
     sput-object v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->RESTRICT_SETTING_ON_CURRENT_VIDEO_FRAME_RATE:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
 
-    .line 436
+    .line 462
     new-instance v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
 
-    new-instance v4, Ljp/co/sony/mc/camera/view/messagedialog/OkDialogBuilder;
+    move-object v1, v0
 
-    invoke-direct {v4}, Ljp/co/sony/mc/camera/view/messagedialog/OkDialogBuilder;-><init>()V
+    new-instance v2, Ljp/co/sony/mc/camera/view/messagedialog/OkDialogBuilder;
+
+    move-object v4, v2
+
+    invoke-direct {v2}, Ljp/co/sony/mc/camera/view/messagedialog/OkDialogBuilder;-><init>()V
 
     sget-object v5, Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;->LOW:Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;
 
-    sget-object v13, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->TRUE:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
+    sget-object v14, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->TRUE:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
 
-    sget-object v14, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->USE_DEFAULT:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
+    sget-object v15, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->USE_DEFAULT:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
 
-    sget-object v15, Ljp/co/sony/mc/camera/setting/MessageType;->NO_MESSAGE:Ljp/co/sony/mc/camera/setting/MessageType;
+    sget-object v16, Ljp/co/sony/mc/camera/setting/MessageType;->NO_MESSAGE:Ljp/co/sony/mc/camera/setting/MessageType;
 
     const-string v2, "RESTRICT_SETTING_ON_CURRENT_VIDEO_RESOLUTION_AND_FRAME_RATE"
 
     const/16 v3, 0x1a
 
-    const v7, 0x7f110391
+    const v7, 0x7f1103c5
 
-    move-object v1, v0
-
-    invoke-direct/range {v1 .. v16}, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;-><init>(Ljava/lang/String;ILjp/co/sony/mc/camera/view/messagedialog/MessageDialogBuilder;Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;IIIIIIILjp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/setting/MessageType;Z)V
+    invoke-direct/range {v1 .. v17}, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;-><init>(Ljava/lang/String;ILjp/co/sony/mc/camera/view/messagedialog/MessageDialogBuilder;Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;IIIIIIIILjp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/setting/MessageType;Z)V
 
     sput-object v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->RESTRICT_SETTING_ON_CURRENT_VIDEO_RESOLUTION_AND_FRAME_RATE:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
 
-    .line 452
+    .line 479
     new-instance v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
 
-    new-instance v20, Ljp/co/sony/mc/camera/view/messagedialog/OkDialogBuilder;
+    move-object/from16 v18, v0
 
-    invoke-direct/range {v20 .. v20}, Ljp/co/sony/mc/camera/view/messagedialog/OkDialogBuilder;-><init>()V
+    new-instance v1, Ljp/co/sony/mc/camera/view/messagedialog/OkDialogBuilder;
 
-    sget-object v21, Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;->IMMEDIATELY:Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;
+    move-object/from16 v21, v1
 
-    sget-object v29, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->TRUE:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
+    invoke-direct {v1}, Ljp/co/sony/mc/camera/view/messagedialog/OkDialogBuilder;-><init>()V
 
-    sget-object v30, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->FALSE:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
+    sget-object v22, Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;->IMMEDIATELY:Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;
 
-    sget-object v31, Ljp/co/sony/mc/camera/setting/MessageType;->NO_MESSAGE:Ljp/co/sony/mc/camera/setting/MessageType;
+    sget-object v31, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->TRUE:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
 
-    const-string v18, "LOW_BATTERY_CRITICAL_ON_PHOTO"
+    sget-object v32, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->FALSE:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
 
-    const/16 v19, 0x1b
+    sget-object v33, Ljp/co/sony/mc/camera/setting/MessageType;->NO_MESSAGE:Ljp/co/sony/mc/camera/setting/MessageType;
 
-    const v22, 0x7f11019d
+    const-string v19, "LOW_BATTERY_CRITICAL_ON_PHOTO"
 
-    const v23, 0x7f110188
+    const/16 v20, 0x1b
 
-    move-object/from16 v17, v0
+    const v23, 0x7f1101a0
 
-    invoke-direct/range {v17 .. v32}, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;-><init>(Ljava/lang/String;ILjp/co/sony/mc/camera/view/messagedialog/MessageDialogBuilder;Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;IIIIIIILjp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/setting/MessageType;Z)V
+    const v24, 0x7f11018b
+
+    invoke-direct/range {v18 .. v34}, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;-><init>(Ljava/lang/String;ILjp/co/sony/mc/camera/view/messagedialog/MessageDialogBuilder;Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;IIIIIIIILjp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/setting/MessageType;Z)V
 
     sput-object v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->LOW_BATTERY_CRITICAL_ON_PHOTO:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
 
-    .line 468
+    .line 496
     new-instance v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
 
-    new-instance v4, Ljp/co/sony/mc/camera/view/messagedialog/OkWithCheckBoxDialogBuilder;
+    move-object v1, v0
 
-    invoke-direct {v4}, Ljp/co/sony/mc/camera/view/messagedialog/OkWithCheckBoxDialogBuilder;-><init>()V
+    new-instance v2, Ljp/co/sony/mc/camera/view/messagedialog/OkWithCheckBoxDialogBuilder;
+
+    move-object v4, v2
+
+    invoke-direct {v2}, Ljp/co/sony/mc/camera/view/messagedialog/OkWithCheckBoxDialogBuilder;-><init>()V
 
     sget-object v5, Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;->NORMAL:Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;
 
-    sget-object v13, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->TRUE:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
+    sget-object v14, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->TRUE:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
 
-    sget-object v14, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->FALSE:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
+    sget-object v15, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->FALSE:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
 
-    sget-object v15, Ljp/co/sony/mc/camera/setting/MessageType;->BATTERY_WARNING:Ljp/co/sony/mc/camera/setting/MessageType;
+    sget-object v16, Ljp/co/sony/mc/camera/setting/MessageType;->BATTERY_WARNING:Ljp/co/sony/mc/camera/setting/MessageType;
 
-    const/16 v16, 0x1
+    const/16 v17, 0x1
 
     const-string v2, "LOW_BATTERY_WARNING"
 
     const/16 v3, 0x1c
 
-    const v6, 0x7f11019d
+    const v6, 0x7f1101a0
 
-    const v7, 0x7f110185
+    const v7, 0x7f110188
 
-    const v12, 0x7f0c0052
+    const v13, 0x7f0c0051
 
-    move-object v1, v0
-
-    invoke-direct/range {v1 .. v16}, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;-><init>(Ljava/lang/String;ILjp/co/sony/mc/camera/view/messagedialog/MessageDialogBuilder;Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;IIIIIIILjp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/setting/MessageType;Z)V
+    invoke-direct/range {v1 .. v17}, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;-><init>(Ljava/lang/String;ILjp/co/sony/mc/camera/view/messagedialog/MessageDialogBuilder;Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;IIIIIIIILjp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/setting/MessageType;Z)V
 
     sput-object v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->LOW_BATTERY_WARNING:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
 
-    .line 484
+    .line 513
     new-instance v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
 
-    new-instance v20, Ljp/co/sony/mc/camera/view/messagedialog/OkWithCheckBoxDialogBuilder;
+    move-object/from16 v18, v0
 
-    invoke-direct/range {v20 .. v20}, Ljp/co/sony/mc/camera/view/messagedialog/OkWithCheckBoxDialogBuilder;-><init>()V
+    new-instance v1, Ljp/co/sony/mc/camera/view/messagedialog/OkWithCheckBoxDialogBuilder;
 
-    sget-object v21, Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;->LOW:Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;
+    move-object/from16 v21, v1
 
-    sget-object v29, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->TRUE:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
+    invoke-direct {v1}, Ljp/co/sony/mc/camera/view/messagedialog/OkWithCheckBoxDialogBuilder;-><init>()V
 
-    sget-object v30, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->USE_DEFAULT:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
+    sget-object v22, Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;->LOW:Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;
 
-    sget-object v31, Ljp/co/sony/mc/camera/setting/MessageType;->STORAGE_EXPLANATORY_FOR_SETTING:Ljp/co/sony/mc/camera/setting/MessageType;
+    sget-object v31, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->TRUE:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
 
-    const/16 v32, 0x1
+    sget-object v32, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->USE_DEFAULT:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
 
-    const-string v18, "HIGH_SPEED_SD_RECOMMENDATION_ON_SETTING_CHANGE"
+    sget-object v33, Ljp/co/sony/mc/camera/setting/MessageType;->STORAGE_EXPLANATORY_FOR_SETTING:Ljp/co/sony/mc/camera/setting/MessageType;
 
-    const/16 v19, 0x1d
+    const/16 v34, 0x1
 
-    const v22, 0x7f1103b7
+    const-string v19, "HIGH_SPEED_SD_RECOMMENDATION_ON_SETTING_CHANGE"
 
-    const v23, 0x7f110457
+    const/16 v20, 0x1d
 
-    const v28, 0x7f0c0052
+    const v23, 0x7f1103eb
 
-    move-object/from16 v17, v0
+    const v24, 0x7f11048e
 
-    invoke-direct/range {v17 .. v32}, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;-><init>(Ljava/lang/String;ILjp/co/sony/mc/camera/view/messagedialog/MessageDialogBuilder;Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;IIIIIIILjp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/setting/MessageType;Z)V
+    const v30, 0x7f0c0051
+
+    invoke-direct/range {v18 .. v34}, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;-><init>(Ljava/lang/String;ILjp/co/sony/mc/camera/view/messagedialog/MessageDialogBuilder;Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;IIIIIIIILjp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/setting/MessageType;Z)V
 
     sput-object v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->HIGH_SPEED_SD_RECOMMENDATION_ON_SETTING_CHANGE:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
 
-    .line 500
+    .line 530
     new-instance v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
 
-    new-instance v4, Ljp/co/sony/mc/camera/view/messagedialog/OkDialogBuilder;
+    move-object v1, v0
 
-    invoke-direct {v4}, Ljp/co/sony/mc/camera/view/messagedialog/OkDialogBuilder;-><init>()V
+    new-instance v2, Ljp/co/sony/mc/camera/view/messagedialog/OkDialogBuilder;
+
+    move-object v4, v2
+
+    invoke-direct {v2}, Ljp/co/sony/mc/camera/view/messagedialog/OkDialogBuilder;-><init>()V
 
     sget-object v5, Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;->IMMEDIATELY:Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;
 
-    sget-object v13, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->TRUE:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
+    sget-object v14, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->TRUE:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
 
-    sget-object v14, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->USE_DEFAULT:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
+    sget-object v15, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->USE_DEFAULT:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
 
-    sget-object v15, Ljp/co/sony/mc/camera/setting/MessageType;->NO_MESSAGE:Ljp/co/sony/mc/camera/setting/MessageType;
+    sget-object v16, Ljp/co/sony/mc/camera/setting/MessageType;->NO_MESSAGE:Ljp/co/sony/mc/camera/setting/MessageType;
 
-    const/16 v16, 0x0
+    const/16 v17, 0x0
 
     const-string v2, "MEMORY_SD_UNAVAILABLE_FOR_CORRUPT"
 
     const/16 v3, 0x1e
 
-    const v7, 0x7f1101e8
+    const v7, 0x7f1101eb
 
-    const/4 v12, -0x1
+    const/4 v13, -0x1
 
-    move-object v1, v0
-
-    invoke-direct/range {v1 .. v16}, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;-><init>(Ljava/lang/String;ILjp/co/sony/mc/camera/view/messagedialog/MessageDialogBuilder;Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;IIIIIIILjp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/setting/MessageType;Z)V
+    invoke-direct/range {v1 .. v17}, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;-><init>(Ljava/lang/String;ILjp/co/sony/mc/camera/view/messagedialog/MessageDialogBuilder;Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;IIIIIIIILjp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/setting/MessageType;Z)V
 
     sput-object v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->MEMORY_SD_UNAVAILABLE_FOR_CORRUPT:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
 
-    .line 516
+    .line 547
     new-instance v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
 
-    new-instance v20, Ljp/co/sony/mc/camera/view/messagedialog/OkDialogBuilder;
+    move-object/from16 v18, v0
 
-    invoke-direct/range {v20 .. v20}, Ljp/co/sony/mc/camera/view/messagedialog/OkDialogBuilder;-><init>()V
+    new-instance v1, Ljp/co/sony/mc/camera/view/messagedialog/OkDialogBuilder;
 
-    sget-object v21, Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;->NORMAL:Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;
+    move-object/from16 v21, v1
 
-    sget-object v29, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->TRUE:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
+    invoke-direct {v1}, Ljp/co/sony/mc/camera/view/messagedialog/OkDialogBuilder;-><init>()V
 
-    sget-object v30, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->USE_DEFAULT:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
+    sget-object v22, Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;->NORMAL:Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;
 
-    sget-object v31, Ljp/co/sony/mc/camera/setting/MessageType;->NO_MESSAGE:Ljp/co/sony/mc/camera/setting/MessageType;
+    sget-object v31, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->TRUE:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
 
-    const/16 v32, 0x0
+    sget-object v32, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->USE_DEFAULT:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
 
-    const-string v18, "MEMORY_FULL_IN_BURST_MODE"
+    sget-object v33, Ljp/co/sony/mc/camera/setting/MessageType;->NO_MESSAGE:Ljp/co/sony/mc/camera/setting/MessageType;
 
-    const/16 v19, 0x1f
+    const/16 v34, 0x0
 
-    const v22, 0x7f11019d
+    const-string v19, "MEMORY_FULL_IN_BURST_MODE"
 
-    const v23, 0x7f1101bc
+    const/16 v20, 0x1f
 
-    const/16 v28, -0x1
+    const v23, 0x7f1101a0
 
-    move-object/from16 v17, v0
+    const v24, 0x7f1101bf
 
-    invoke-direct/range {v17 .. v32}, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;-><init>(Ljava/lang/String;ILjp/co/sony/mc/camera/view/messagedialog/MessageDialogBuilder;Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;IIIIIIILjp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/setting/MessageType;Z)V
+    const/16 v30, -0x1
+
+    invoke-direct/range {v18 .. v34}, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;-><init>(Ljava/lang/String;ILjp/co/sony/mc/camera/view/messagedialog/MessageDialogBuilder;Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;IIIIIIIILjp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/setting/MessageType;Z)V
 
     sput-object v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->MEMORY_FULL_IN_BURST_MODE:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
 
-    .line 532
+    .line 564
     new-instance v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
 
-    new-instance v4, Ljp/co/sony/mc/camera/view/messagedialog/OkWithCheckBoxDialogBuilder;
+    move-object v1, v0
 
-    invoke-direct {v4}, Ljp/co/sony/mc/camera/view/messagedialog/OkWithCheckBoxDialogBuilder;-><init>()V
+    new-instance v2, Ljp/co/sony/mc/camera/view/messagedialog/OkWithCheckBoxDialogBuilder;
+
+    move-object v4, v2
+
+    invoke-direct {v2}, Ljp/co/sony/mc/camera/view/messagedialog/OkWithCheckBoxDialogBuilder;-><init>()V
 
     sget-object v5, Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;->NORMAL:Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;
 
-    sget-object v13, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->TRUE:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
+    sget-object v14, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->TRUE:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
 
-    sget-object v14, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->USE_DEFAULT:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
+    sget-object v15, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->USE_DEFAULT:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
 
-    sget-object v15, Ljp/co/sony/mc/camera/setting/MessageType;->VIDEO_HDR_CAUTION:Ljp/co/sony/mc/camera/setting/MessageType;
+    sget-object v16, Ljp/co/sony/mc/camera/setting/MessageType;->VIDEO_HDR_CAUTION:Ljp/co/sony/mc/camera/setting/MessageType;
 
     const-string v2, "VIDEO_HDR_CAUTION"
 
     const/16 v3, 0x20
 
-    const v7, 0x7f1101c4
+    const v7, 0x7f1101c7
 
-    const v12, 0x7f0c0052
+    const v13, 0x7f0c0051
 
-    move-object v1, v0
-
-    invoke-direct/range {v1 .. v16}, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;-><init>(Ljava/lang/String;ILjp/co/sony/mc/camera/view/messagedialog/MessageDialogBuilder;Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;IIIIIIILjp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/setting/MessageType;Z)V
+    invoke-direct/range {v1 .. v17}, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;-><init>(Ljava/lang/String;ILjp/co/sony/mc/camera/view/messagedialog/MessageDialogBuilder;Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;IIIIIIIILjp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/setting/MessageType;Z)V
 
     sput-object v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->VIDEO_HDR_CAUTION:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
 
-    .line 548
+    .line 581
     new-instance v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
 
-    new-instance v20, Ljp/co/sony/mc/camera/view/messagedialog/OkDialogBuilder;
+    move-object/from16 v18, v0
 
-    invoke-direct/range {v20 .. v20}, Ljp/co/sony/mc/camera/view/messagedialog/OkDialogBuilder;-><init>()V
+    new-instance v1, Ljp/co/sony/mc/camera/view/messagedialog/OkDialogBuilder;
 
-    sget-object v21, Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;->LOW:Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;
+    move-object/from16 v21, v1
 
-    sget-object v29, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->TRUE:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
+    invoke-direct {v1}, Ljp/co/sony/mc/camera/view/messagedialog/OkDialogBuilder;-><init>()V
 
-    sget-object v30, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->USE_DEFAULT:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
+    sget-object v22, Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;->LOW:Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;
 
-    sget-object v31, Ljp/co/sony/mc/camera/setting/MessageType;->NO_MESSAGE:Ljp/co/sony/mc/camera/setting/MessageType;
+    sget-object v31, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->TRUE:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
 
-    const-string v18, "VIDEO_HDR_RESTRICTION"
+    sget-object v32, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->USE_DEFAULT:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
 
-    const/16 v19, 0x21
+    sget-object v33, Ljp/co/sony/mc/camera/setting/MessageType;->NO_MESSAGE:Ljp/co/sony/mc/camera/setting/MessageType;
 
-    const v22, 0x7f11036f
+    const-string v19, "VIDEO_HDR_RESTRICTION"
 
-    const v23, 0x7f110390
+    const/16 v20, 0x21
 
-    move-object/from16 v17, v0
+    const v23, 0x7f1103a2
 
-    invoke-direct/range {v17 .. v32}, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;-><init>(Ljava/lang/String;ILjp/co/sony/mc/camera/view/messagedialog/MessageDialogBuilder;Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;IIIIIIILjp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/setting/MessageType;Z)V
+    const v24, 0x7f1103c4
+
+    invoke-direct/range {v18 .. v34}, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;-><init>(Ljava/lang/String;ILjp/co/sony/mc/camera/view/messagedialog/MessageDialogBuilder;Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;IIIIIIIILjp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/setting/MessageType;Z)V
 
     sput-object v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->VIDEO_HDR_RESTRICTION:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
 
-    .line 564
+    .line 598
     new-instance v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
 
-    new-instance v4, Ljp/co/sony/mc/camera/view/messagedialog/OkCancelDialogBuilder;
+    move-object v1, v0
 
-    invoke-direct {v4}, Ljp/co/sony/mc/camera/view/messagedialog/OkCancelDialogBuilder;-><init>()V
+    new-instance v2, Ljp/co/sony/mc/camera/view/messagedialog/OkCancelDialogBuilder;
+
+    move-object v4, v2
+
+    invoke-direct {v2}, Ljp/co/sony/mc/camera/view/messagedialog/OkCancelDialogBuilder;-><init>()V
 
     sget-object v5, Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;->NORMAL:Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;
 
-    sget-object v13, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->TRUE:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
+    sget-object v14, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->TRUE:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
 
-    sget-object v14, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->FALSE:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
+    sget-object v15, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->FALSE:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
 
-    sget-object v15, Ljp/co/sony/mc/camera/setting/MessageType;->NO_MESSAGE:Ljp/co/sony/mc/camera/setting/MessageType;
+    sget-object v16, Ljp/co/sony/mc/camera/setting/MessageType;->NO_MESSAGE:Ljp/co/sony/mc/camera/setting/MessageType;
 
     const-string v2, "RESET_CONFIRMATION"
 
     const/16 v3, 0x22
 
-    const v6, 0x7f11035d
+    const v6, 0x7f11038f
 
-    const v7, 0x7f11035c
+    const v7, 0x7f11038e
 
-    const v11, 0x7f11013d
+    const v12, 0x7f110140
 
-    const/4 v12, -0x1
+    const/4 v13, -0x1
 
-    move-object v1, v0
-
-    invoke-direct/range {v1 .. v16}, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;-><init>(Ljava/lang/String;ILjp/co/sony/mc/camera/view/messagedialog/MessageDialogBuilder;Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;IIIIIIILjp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/setting/MessageType;Z)V
+    invoke-direct/range {v1 .. v17}, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;-><init>(Ljava/lang/String;ILjp/co/sony/mc/camera/view/messagedialog/MessageDialogBuilder;Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;IIIIIIIILjp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/setting/MessageType;Z)V
 
     sput-object v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->RESET_CONFIRMATION:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
 
-    .line 580
+    .line 615
     new-instance v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
 
-    new-instance v20, Ljp/co/sony/mc/camera/view/messagedialog/OkDialogBuilder;
+    move-object/from16 v18, v0
 
-    invoke-direct/range {v20 .. v20}, Ljp/co/sony/mc/camera/view/messagedialog/OkDialogBuilder;-><init>()V
+    new-instance v1, Ljp/co/sony/mc/camera/view/messagedialog/OkDialogBuilder;
 
-    sget-object v21, Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;->LOW:Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;
+    move-object/from16 v21, v1
 
-    sget-object v29, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->TRUE:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
+    invoke-direct {v1}, Ljp/co/sony/mc/camera/view/messagedialog/OkDialogBuilder;-><init>()V
 
-    sget-object v30, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->USE_DEFAULT:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
+    sget-object v22, Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;->LOW:Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;
 
-    sget-object v31, Ljp/co/sony/mc/camera/setting/MessageType;->NO_MESSAGE:Ljp/co/sony/mc/camera/setting/MessageType;
+    sget-object v31, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->TRUE:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
 
-    const-string v18, "FLASH_UNABLE_FOR_LONG_EXPOSURE"
+    sget-object v32, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->USE_DEFAULT:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
 
-    const/16 v19, 0x23
+    sget-object v33, Ljp/co/sony/mc/camera/setting/MessageType;->NO_MESSAGE:Ljp/co/sony/mc/camera/setting/MessageType;
 
-    const v23, 0x7f110379
+    const-string v19, "FLASH_UNABLE_FOR_LONG_EXPOSURE"
 
-    move-object/from16 v17, v0
+    const/16 v20, 0x23
 
-    invoke-direct/range {v17 .. v32}, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;-><init>(Ljava/lang/String;ILjp/co/sony/mc/camera/view/messagedialog/MessageDialogBuilder;Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;IIIIIIILjp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/setting/MessageType;Z)V
+    const v24, 0x7f1103ac
+
+    invoke-direct/range {v18 .. v34}, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;-><init>(Ljava/lang/String;ILjp/co/sony/mc/camera/view/messagedialog/MessageDialogBuilder;Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;IIIIIIIILjp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/setting/MessageType;Z)V
 
     sput-object v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->FLASH_UNABLE_FOR_LONG_EXPOSURE:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
 
-    .line 596
+    .line 632
     new-instance v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
 
-    new-instance v4, Ljp/co/sony/mc/camera/view/messagedialog/OkDialogBuilder;
+    move-object v1, v0
 
-    invoke-direct {v4}, Ljp/co/sony/mc/camera/view/messagedialog/OkDialogBuilder;-><init>()V
+    new-instance v2, Ljp/co/sony/mc/camera/view/messagedialog/OkDialogBuilder;
+
+    move-object v4, v2
+
+    invoke-direct {v2}, Ljp/co/sony/mc/camera/view/messagedialog/OkDialogBuilder;-><init>()V
 
     sget-object v5, Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;->LOW:Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;
 
-    sget-object v13, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->TRUE:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
+    sget-object v14, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->TRUE:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
 
-    sget-object v14, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->USE_DEFAULT:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
+    sget-object v15, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->USE_DEFAULT:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
 
-    sget-object v15, Ljp/co/sony/mc/camera/setting/MessageType;->NO_MESSAGE:Ljp/co/sony/mc/camera/setting/MessageType;
+    sget-object v16, Ljp/co/sony/mc/camera/setting/MessageType;->NO_MESSAGE:Ljp/co/sony/mc/camera/setting/MessageType;
 
     const-string v2, "FLASH_UNABLE_FOR_CONTINUOUS_SHOOTING"
 
     const/16 v3, 0x24
 
-    const v6, 0x7f11036f
+    const v6, 0x7f1103a2
 
-    const v7, 0x7f110372
+    const v7, 0x7f1103a5
 
-    const/4 v11, -0x1
+    const/4 v12, -0x1
 
-    move-object v1, v0
-
-    invoke-direct/range {v1 .. v16}, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;-><init>(Ljava/lang/String;ILjp/co/sony/mc/camera/view/messagedialog/MessageDialogBuilder;Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;IIIIIIILjp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/setting/MessageType;Z)V
+    invoke-direct/range {v1 .. v17}, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;-><init>(Ljava/lang/String;ILjp/co/sony/mc/camera/view/messagedialog/MessageDialogBuilder;Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;IIIIIIIILjp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/setting/MessageType;Z)V
 
     sput-object v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->FLASH_UNABLE_FOR_CONTINUOUS_SHOOTING:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
 
-    .line 612
+    .line 649
     new-instance v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
 
-    new-instance v20, Ljp/co/sony/mc/camera/view/messagedialog/OkDialogBuilder;
+    move-object/from16 v18, v0
 
-    invoke-direct/range {v20 .. v20}, Ljp/co/sony/mc/camera/view/messagedialog/OkDialogBuilder;-><init>()V
+    new-instance v1, Ljp/co/sony/mc/camera/view/messagedialog/OkDialogBuilder;
 
-    sget-object v21, Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;->LOW:Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;
+    move-object/from16 v21, v1
 
-    sget-object v29, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->TRUE:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
+    invoke-direct {v1}, Ljp/co/sony/mc/camera/view/messagedialog/OkDialogBuilder;-><init>()V
 
-    sget-object v30, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->USE_DEFAULT:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
+    sget-object v22, Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;->LOW:Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;
 
-    sget-object v31, Ljp/co/sony/mc/camera/setting/MessageType;->NO_MESSAGE:Ljp/co/sony/mc/camera/setting/MessageType;
+    sget-object v31, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->TRUE:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
 
-    const-string v18, "HDR_UNABLE_FOR_CONTINUOUS_SHOOTING"
+    sget-object v32, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->USE_DEFAULT:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
 
-    const/16 v19, 0x25
+    sget-object v33, Ljp/co/sony/mc/camera/setting/MessageType;->NO_MESSAGE:Ljp/co/sony/mc/camera/setting/MessageType;
 
-    const v23, 0x7f110366
+    const-string v19, "HDR_UNABLE_FOR_CONTINUOUS_SHOOTING"
 
-    move-object/from16 v17, v0
+    const/16 v20, 0x25
 
-    invoke-direct/range {v17 .. v32}, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;-><init>(Ljava/lang/String;ILjp/co/sony/mc/camera/view/messagedialog/MessageDialogBuilder;Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;IIIIIIILjp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/setting/MessageType;Z)V
+    const v24, 0x7f110399
+
+    invoke-direct/range {v18 .. v34}, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;-><init>(Ljava/lang/String;ILjp/co/sony/mc/camera/view/messagedialog/MessageDialogBuilder;Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;IIIIIIIILjp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/setting/MessageType;Z)V
 
     sput-object v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->HDR_UNABLE_FOR_CONTINUOUS_SHOOTING:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
 
-    .line 628
+    .line 666
     new-instance v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
 
-    new-instance v4, Ljp/co/sony/mc/camera/view/messagedialog/OkDialogBuilder;
+    move-object v1, v0
 
-    invoke-direct {v4}, Ljp/co/sony/mc/camera/view/messagedialog/OkDialogBuilder;-><init>()V
+    new-instance v2, Ljp/co/sony/mc/camera/view/messagedialog/OkDialogBuilder;
+
+    move-object v4, v2
+
+    invoke-direct {v2}, Ljp/co/sony/mc/camera/view/messagedialog/OkDialogBuilder;-><init>()V
 
     sget-object v5, Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;->LOW:Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;
 
-    sget-object v13, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->TRUE:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
+    sget-object v14, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->TRUE:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
 
-    sget-object v14, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->USE_DEFAULT:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
+    sget-object v15, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->USE_DEFAULT:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
 
-    sget-object v15, Ljp/co/sony/mc/camera/setting/MessageType;->NO_MESSAGE:Ljp/co/sony/mc/camera/setting/MessageType;
+    sget-object v16, Ljp/co/sony/mc/camera/setting/MessageType;->NO_MESSAGE:Ljp/co/sony/mc/camera/setting/MessageType;
 
     const-string v2, "RESTRICT_PHOTOFORMAT_PHOTO_RESOLUTION"
 
     const/16 v3, 0x26
 
-    const v7, 0x7f110365
+    const v7, 0x7f110398
 
-    move-object v1, v0
-
-    invoke-direct/range {v1 .. v16}, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;-><init>(Ljava/lang/String;ILjp/co/sony/mc/camera/view/messagedialog/MessageDialogBuilder;Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;IIIIIIILjp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/setting/MessageType;Z)V
+    invoke-direct/range {v1 .. v17}, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;-><init>(Ljava/lang/String;ILjp/co/sony/mc/camera/view/messagedialog/MessageDialogBuilder;Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;IIIIIIIILjp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/setting/MessageType;Z)V
 
     sput-object v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->RESTRICT_PHOTOFORMAT_PHOTO_RESOLUTION:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
 
-    .line 644
+    .line 683
     new-instance v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
 
-    new-instance v20, Ljp/co/sony/mc/camera/view/messagedialog/OkDialogBuilder;
+    move-object/from16 v18, v0
 
-    invoke-direct/range {v20 .. v20}, Ljp/co/sony/mc/camera/view/messagedialog/OkDialogBuilder;-><init>()V
+    new-instance v1, Ljp/co/sony/mc/camera/view/messagedialog/OkDialogBuilder;
 
-    sget-object v21, Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;->LOW:Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;
+    move-object/from16 v21, v1
 
-    sget-object v29, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->TRUE:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
+    invoke-direct {v1}, Ljp/co/sony/mc/camera/view/messagedialog/OkDialogBuilder;-><init>()V
 
-    sget-object v30, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->USE_DEFAULT:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
+    sget-object v22, Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;->LOW:Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;
 
-    sget-object v31, Ljp/co/sony/mc/camera/setting/MessageType;->NO_MESSAGE:Ljp/co/sony/mc/camera/setting/MessageType;
+    sget-object v31, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->TRUE:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
 
-    const-string v18, "PHOTOFORMAT_UNABLE_FOR_CONTINUOUS_SHOOTING"
+    sget-object v32, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->USE_DEFAULT:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
 
-    const/16 v19, 0x27
+    sget-object v33, Ljp/co/sony/mc/camera/setting/MessageType;->NO_MESSAGE:Ljp/co/sony/mc/camera/setting/MessageType;
 
-    const v23, 0x7f110377
+    const-string v19, "PHOTOFORMAT_UNABLE_FOR_CONTINUOUS_SHOOTING"
 
-    move-object/from16 v17, v0
+    const/16 v20, 0x27
 
-    invoke-direct/range {v17 .. v32}, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;-><init>(Ljava/lang/String;ILjp/co/sony/mc/camera/view/messagedialog/MessageDialogBuilder;Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;IIIIIIILjp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/setting/MessageType;Z)V
+    const v24, 0x7f1103aa
+
+    invoke-direct/range {v18 .. v34}, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;-><init>(Ljava/lang/String;ILjp/co/sony/mc/camera/view/messagedialog/MessageDialogBuilder;Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;IIIIIIIILjp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/setting/MessageType;Z)V
 
     sput-object v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->PHOTOFORMAT_UNABLE_FOR_CONTINUOUS_SHOOTING:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
 
-    .line 660
+    .line 700
     new-instance v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
 
-    new-instance v4, Ljp/co/sony/mc/camera/view/messagedialog/OkDialogBuilder;
+    move-object v1, v0
 
-    invoke-direct {v4}, Ljp/co/sony/mc/camera/view/messagedialog/OkDialogBuilder;-><init>()V
+    new-instance v2, Ljp/co/sony/mc/camera/view/messagedialog/OkDialogBuilder;
+
+    move-object v4, v2
+
+    invoke-direct {v2}, Ljp/co/sony/mc/camera/view/messagedialog/OkDialogBuilder;-><init>()V
 
     sget-object v5, Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;->LOW:Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;
 
-    sget-object v13, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->TRUE:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
+    sget-object v14, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->TRUE:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
 
-    sget-object v14, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->USE_DEFAULT:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
+    sget-object v15, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->USE_DEFAULT:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
 
-    sget-object v15, Ljp/co/sony/mc/camera/setting/MessageType;->NO_MESSAGE:Ljp/co/sony/mc/camera/setting/MessageType;
+    sget-object v16, Ljp/co/sony/mc/camera/setting/MessageType;->NO_MESSAGE:Ljp/co/sony/mc/camera/setting/MessageType;
 
     const-string v2, "CONTINUOUS_SHOOTING_UNNABLE_FOR_CURRENT_PHOTOFORMAT"
 
     const/16 v3, 0x28
 
-    const v7, 0x7f11036e
+    const v7, 0x7f1103a1
 
-    move-object v1, v0
-
-    invoke-direct/range {v1 .. v16}, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;-><init>(Ljava/lang/String;ILjp/co/sony/mc/camera/view/messagedialog/MessageDialogBuilder;Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;IIIIIIILjp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/setting/MessageType;Z)V
+    invoke-direct/range {v1 .. v17}, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;-><init>(Ljava/lang/String;ILjp/co/sony/mc/camera/view/messagedialog/MessageDialogBuilder;Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;IIIIIIIILjp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/setting/MessageType;Z)V
 
     sput-object v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->CONTINUOUS_SHOOTING_UNNABLE_FOR_CURRENT_PHOTOFORMAT:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
 
-    .line 676
+    .line 717
     new-instance v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
 
-    new-instance v20, Ljp/co/sony/mc/camera/view/messagedialog/OkDialogBuilder;
+    move-object/from16 v18, v0
 
-    invoke-direct/range {v20 .. v20}, Ljp/co/sony/mc/camera/view/messagedialog/OkDialogBuilder;-><init>()V
+    new-instance v1, Ljp/co/sony/mc/camera/view/messagedialog/OkDialogBuilder;
 
-    sget-object v21, Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;->LOW:Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;
+    move-object/from16 v21, v1
 
-    sget-object v29, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->TRUE:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
+    invoke-direct {v1}, Ljp/co/sony/mc/camera/view/messagedialog/OkDialogBuilder;-><init>()V
 
-    sget-object v30, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->USE_DEFAULT:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
+    sget-object v22, Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;->LOW:Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;
 
-    sget-object v31, Ljp/co/sony/mc/camera/setting/MessageType;->NO_MESSAGE:Ljp/co/sony/mc/camera/setting/MessageType;
+    sget-object v31, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->TRUE:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
 
-    const-string v18, "PHOTOFORMAT_UNABLE_FOR_CURRENT_ASPECT_RATIO"
+    sget-object v32, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->USE_DEFAULT:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
 
-    const/16 v19, 0x29
+    sget-object v33, Ljp/co/sony/mc/camera/setting/MessageType;->NO_MESSAGE:Ljp/co/sony/mc/camera/setting/MessageType;
 
-    const v23, 0x7f11037a
+    const-string v19, "PHOTOFORMAT_UNABLE_FOR_CURRENT_ASPECT_RATIO"
 
-    move-object/from16 v17, v0
+    const/16 v20, 0x29
 
-    invoke-direct/range {v17 .. v32}, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;-><init>(Ljava/lang/String;ILjp/co/sony/mc/camera/view/messagedialog/MessageDialogBuilder;Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;IIIIIIILjp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/setting/MessageType;Z)V
+    const v24, 0x7f1103ad
+
+    invoke-direct/range {v18 .. v34}, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;-><init>(Ljava/lang/String;ILjp/co/sony/mc/camera/view/messagedialog/MessageDialogBuilder;Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;IIIIIIIILjp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/setting/MessageType;Z)V
 
     sput-object v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->PHOTOFORMAT_UNABLE_FOR_CURRENT_ASPECT_RATIO:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
 
-    .line 692
+    .line 734
     new-instance v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
 
-    new-instance v4, Ljp/co/sony/mc/camera/view/messagedialog/OkCancelDialogBuilder;
+    move-object v1, v0
 
-    invoke-direct {v4}, Ljp/co/sony/mc/camera/view/messagedialog/OkCancelDialogBuilder;-><init>()V
+    new-instance v2, Ljp/co/sony/mc/camera/view/messagedialog/OkCancelDialogBuilder;
+
+    move-object v4, v2
+
+    invoke-direct {v2}, Ljp/co/sony/mc/camera/view/messagedialog/OkCancelDialogBuilder;-><init>()V
 
     sget-object v5, Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;->NORMAL:Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;
 
-    sget-object v13, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->TRUE:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
+    sget-object v14, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->TRUE:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
 
-    sget-object v14, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->FALSE:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
+    sget-object v15, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->FALSE:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
 
-    sget-object v15, Ljp/co/sony/mc/camera/setting/MessageType;->STREAMING_PERMISSIONS:Ljp/co/sony/mc/camera/setting/MessageType;
+    sget-object v16, Ljp/co/sony/mc/camera/setting/MessageType;->STREAMING_PERMISSIONS:Ljp/co/sony/mc/camera/setting/MessageType;
 
     const-string v2, "STREAMING_PERMISSIONS"
 
     const/16 v3, 0x2a
 
-    const v6, 0x7f110442
+    const v6, 0x7f110477
 
     const/4 v7, -0x1
 
-    const v10, 0x7f110198
+    const v11, 0x7f11019b
 
-    const v11, 0x7f110199
+    const v12, 0x7f11019c
 
-    const v12, 0x7f0c0058
+    const v13, 0x7f0c0058
 
-    move-object v1, v0
-
-    invoke-direct/range {v1 .. v16}, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;-><init>(Ljava/lang/String;ILjp/co/sony/mc/camera/view/messagedialog/MessageDialogBuilder;Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;IIIIIIILjp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/setting/MessageType;Z)V
+    invoke-direct/range {v1 .. v17}, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;-><init>(Ljava/lang/String;ILjp/co/sony/mc/camera/view/messagedialog/MessageDialogBuilder;Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;IIIIIIIILjp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/setting/MessageType;Z)V
 
     sput-object v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->STREAMING_PERMISSIONS:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
 
-    .line 708
+    .line 751
     new-instance v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
 
-    new-instance v20, Ljp/co/sony/mc/camera/view/messagedialog/OkDialogBuilder;
+    move-object/from16 v18, v0
 
-    invoke-direct/range {v20 .. v20}, Ljp/co/sony/mc/camera/view/messagedialog/OkDialogBuilder;-><init>()V
+    new-instance v1, Ljp/co/sony/mc/camera/view/messagedialog/OkDialogBuilder;
 
-    sget-object v21, Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;->LOW:Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;
+    move-object/from16 v21, v1
 
-    sget-object v29, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->TRUE:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
+    invoke-direct {v1}, Ljp/co/sony/mc/camera/view/messagedialog/OkDialogBuilder;-><init>()V
 
-    sget-object v30, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->FALSE:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
+    sget-object v22, Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;->LOW:Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;
 
-    sget-object v31, Ljp/co/sony/mc/camera/setting/MessageType;->NO_MESSAGE:Ljp/co/sony/mc/camera/setting/MessageType;
+    sget-object v31, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->TRUE:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
 
-    const-string v18, "PERSONAL_DATA"
+    sget-object v32, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->FALSE:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
 
-    const/16 v19, 0x2b
+    sget-object v33, Ljp/co/sony/mc/camera/setting/MessageType;->NO_MESSAGE:Ljp/co/sony/mc/camera/setting/MessageType;
 
-    const v22, 0x7f11032a
+    const-string v19, "PERSONAL_DATA"
 
-    const/16 v23, -0x1
+    const/16 v20, 0x2b
 
-    move-object/from16 v17, v0
+    const v23, 0x7f11035c
 
-    invoke-direct/range {v17 .. v32}, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;-><init>(Ljava/lang/String;ILjp/co/sony/mc/camera/view/messagedialog/MessageDialogBuilder;Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;IIIIIIILjp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/setting/MessageType;Z)V
+    const/16 v24, -0x1
+
+    invoke-direct/range {v18 .. v34}, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;-><init>(Ljava/lang/String;ILjp/co/sony/mc/camera/view/messagedialog/MessageDialogBuilder;Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;IIIIIIIILjp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/setting/MessageType;Z)V
 
     sput-object v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->PERSONAL_DATA:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
 
-    .line 724
+    .line 768
     new-instance v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
 
-    new-instance v4, Ljp/co/sony/mc/camera/view/messagedialog/OkCancelDialogBuilder;
+    move-object v1, v0
 
-    invoke-direct {v4}, Ljp/co/sony/mc/camera/view/messagedialog/OkCancelDialogBuilder;-><init>()V
+    new-instance v2, Ljp/co/sony/mc/camera/view/messagedialog/OkCancelDialogBuilder;
+
+    move-object v4, v2
+
+    invoke-direct {v2}, Ljp/co/sony/mc/camera/view/messagedialog/OkCancelDialogBuilder;-><init>()V
 
     sget-object v5, Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;->LOW:Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;
 
-    sget-object v13, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->TRUE:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
+    sget-object v14, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->TRUE:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
 
-    sget-object v14, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->FALSE:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
+    sget-object v15, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->FALSE:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
 
-    sget-object v15, Ljp/co/sony/mc/camera/setting/MessageType;->NO_MESSAGE:Ljp/co/sony/mc/camera/setting/MessageType;
+    sget-object v16, Ljp/co/sony/mc/camera/setting/MessageType;->NO_MESSAGE:Ljp/co/sony/mc/camera/setting/MessageType;
 
     const-string v2, "PRIVACY_POLICY"
 
     const/16 v3, 0x2c
 
-    const v6, 0x7f11032b
+    const v6, 0x7f11035d
 
-    const v10, 0x7f11043b
+    const v11, 0x7f110470
 
-    const v11, 0x7f11043c
+    const v12, 0x7f110471
 
-    const/4 v12, -0x1
+    const/4 v13, -0x1
 
-    move-object v1, v0
-
-    invoke-direct/range {v1 .. v16}, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;-><init>(Ljava/lang/String;ILjp/co/sony/mc/camera/view/messagedialog/MessageDialogBuilder;Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;IIIIIIILjp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/setting/MessageType;Z)V
+    invoke-direct/range {v1 .. v17}, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;-><init>(Ljava/lang/String;ILjp/co/sony/mc/camera/view/messagedialog/MessageDialogBuilder;Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;IIIIIIIILjp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/setting/MessageType;Z)V
 
     sput-object v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->PRIVACY_POLICY:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
 
-    .line 740
+    .line 785
     new-instance v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
 
-    new-instance v20, Ljp/co/sony/mc/camera/view/messagedialog/OkCancelWithCheckBoxDialogBuilder;
+    move-object/from16 v18, v0
 
-    invoke-direct/range {v20 .. v20}, Ljp/co/sony/mc/camera/view/messagedialog/OkCancelWithCheckBoxDialogBuilder;-><init>()V
+    new-instance v1, Ljp/co/sony/mc/camera/view/messagedialog/OkCancelWithCheckBoxDialogBuilder;
 
-    sget-object v21, Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;->LOW:Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;
+    move-object/from16 v21, v1
 
-    sget-object v29, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->TRUE:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
+    invoke-direct {v1}, Ljp/co/sony/mc/camera/view/messagedialog/OkCancelWithCheckBoxDialogBuilder;-><init>()V
 
-    sget-object v30, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->FALSE:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
+    sget-object v22, Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;->LOW:Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;
 
-    sget-object v31, Ljp/co/sony/mc/camera/setting/MessageType;->STREAMING_PRIVACY_POLICY_CHECK:Ljp/co/sony/mc/camera/setting/MessageType;
+    sget-object v31, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->TRUE:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
 
-    const-string v18, "STREAMING_PRIVACY_POLICY_CHECK"
+    sget-object v32, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->FALSE:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
 
-    const/16 v19, 0x2d
+    sget-object v33, Ljp/co/sony/mc/camera/setting/MessageType;->STREAMING_PRIVACY_POLICY_CHECK:Ljp/co/sony/mc/camera/setting/MessageType;
 
-    const v22, 0x7f11032b
+    const-string v19, "STREAMING_PRIVACY_POLICY_CHECK"
 
-    const v27, 0x7f11013d
+    const/16 v20, 0x2d
 
-    const v28, 0x7f0c005a
+    const v23, 0x7f11035d
 
-    move-object/from16 v17, v0
+    const v29, 0x7f110140
 
-    invoke-direct/range {v17 .. v32}, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;-><init>(Ljava/lang/String;ILjp/co/sony/mc/camera/view/messagedialog/MessageDialogBuilder;Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;IIIIIIILjp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/setting/MessageType;Z)V
+    const v30, 0x7f0c005a
+
+    invoke-direct/range {v18 .. v34}, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;-><init>(Ljava/lang/String;ILjp/co/sony/mc/camera/view/messagedialog/MessageDialogBuilder;Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;IIIIIIIILjp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/setting/MessageType;Z)V
 
     sput-object v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->STREAMING_PRIVACY_POLICY_CHECK:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
 
-    .line 756
+    .line 802
     new-instance v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
 
-    new-instance v4, Ljp/co/sony/mc/camera/view/messagedialog/OkAndListDialogBuilder;
+    move-object v1, v0
 
-    invoke-direct {v4}, Ljp/co/sony/mc/camera/view/messagedialog/OkAndListDialogBuilder;-><init>()V
+    new-instance v2, Ljp/co/sony/mc/camera/view/messagedialog/OkAndListDialogBuilder;
+
+    move-object v4, v2
+
+    invoke-direct {v2}, Ljp/co/sony/mc/camera/view/messagedialog/OkAndListDialogBuilder;-><init>()V
 
     sget-object v5, Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;->NORMAL:Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;
 
-    sget-object v13, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->TRUE:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
+    sget-object v14, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->TRUE:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
 
-    sget-object v14, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->USE_DEFAULT:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
+    sget-object v15, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->USE_DEFAULT:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
 
-    sget-object v15, Ljp/co/sony/mc/camera/setting/MessageType;->NO_MESSAGE:Ljp/co/sony/mc/camera/setting/MessageType;
+    sget-object v16, Ljp/co/sony/mc/camera/setting/MessageType;->NO_MESSAGE:Ljp/co/sony/mc/camera/setting/MessageType;
 
     const-string v2, "COOLING_MODE"
 
     const/16 v3, 0x2e
 
-    const v6, 0x7f11016a
+    const v6, 0x7f11016d
 
-    const v7, 0x7f110167
+    const v7, 0x7f11016a
 
-    const v9, 0x7f110169
+    const v9, 0x7f11016c
 
-    const v10, 0x7f11044f
+    const v11, 0x7f110484
 
-    const/4 v11, -0x1
+    const/4 v12, -0x1
 
-    const v12, 0x7f0c0058
+    const v13, 0x7f0c0058
 
-    move-object v1, v0
-
-    invoke-direct/range {v1 .. v16}, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;-><init>(Ljava/lang/String;ILjp/co/sony/mc/camera/view/messagedialog/MessageDialogBuilder;Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;IIIIIIILjp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/setting/MessageType;Z)V
+    invoke-direct/range {v1 .. v17}, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;-><init>(Ljava/lang/String;ILjp/co/sony/mc/camera/view/messagedialog/MessageDialogBuilder;Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;IIIIIIIILjp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/setting/MessageType;Z)V
 
     sput-object v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->COOLING_MODE:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
 
-    .line 772
+    .line 819
     new-instance v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
 
-    new-instance v20, Ljp/co/sony/mc/camera/view/messagedialog/OkDialogBuilder;
+    move-object/from16 v18, v0
 
-    invoke-direct/range {v20 .. v20}, Ljp/co/sony/mc/camera/view/messagedialog/OkDialogBuilder;-><init>()V
+    new-instance v1, Ljp/co/sony/mc/camera/view/messagedialog/OkDialogBuilder;
 
-    sget-object v21, Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;->IMMEDIATELY:Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;
+    move-object/from16 v21, v1
 
-    sget-object v29, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->TRUE:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
+    invoke-direct {v1}, Ljp/co/sony/mc/camera/view/messagedialog/OkDialogBuilder;-><init>()V
 
-    sget-object v30, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->FALSE:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
+    sget-object v22, Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;->IMMEDIATELY:Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;
 
-    sget-object v31, Ljp/co/sony/mc/camera/setting/MessageType;->NO_MESSAGE:Ljp/co/sony/mc/camera/setting/MessageType;
+    sget-object v31, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->TRUE:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
 
-    const-string v18, "LOW_BATTERY_CRITICAL_ON_RECORDING"
+    sget-object v32, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->FALSE:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
 
-    const/16 v19, 0x2f
+    sget-object v33, Ljp/co/sony/mc/camera/setting/MessageType;->NO_MESSAGE:Ljp/co/sony/mc/camera/setting/MessageType;
 
-    const v22, 0x7f11019d
+    const-string v19, "LOW_BATTERY_CRITICAL_ON_RECORDING"
 
-    const v23, 0x7f110186
+    const/16 v20, 0x2f
 
-    const/16 v27, -0x1
+    const v23, 0x7f1101a0
 
-    const/16 v28, -0x1
+    const v24, 0x7f110189
 
-    move-object/from16 v17, v0
+    const/16 v29, -0x1
 
-    invoke-direct/range {v17 .. v32}, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;-><init>(Ljava/lang/String;ILjp/co/sony/mc/camera/view/messagedialog/MessageDialogBuilder;Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;IIIIIIILjp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/setting/MessageType;Z)V
+    const/16 v30, -0x1
+
+    invoke-direct/range {v18 .. v34}, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;-><init>(Ljava/lang/String;ILjp/co/sony/mc/camera/view/messagedialog/MessageDialogBuilder;Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;IIIIIIIILjp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/setting/MessageType;Z)V
 
     sput-object v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->LOW_BATTERY_CRITICAL_ON_RECORDING:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
 
-    .line 788
+    .line 836
     new-instance v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
 
-    new-instance v4, Ljp/co/sony/mc/camera/view/messagedialog/OkDialogBuilder;
+    move-object v1, v0
 
-    invoke-direct {v4}, Ljp/co/sony/mc/camera/view/messagedialog/OkDialogBuilder;-><init>()V
+    new-instance v2, Ljp/co/sony/mc/camera/view/messagedialog/OkDialogBuilder;
+
+    move-object v4, v2
+
+    invoke-direct {v2}, Ljp/co/sony/mc/camera/view/messagedialog/OkDialogBuilder;-><init>()V
 
     sget-object v5, Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;->NORMAL:Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;
 
-    sget-object v13, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->TRUE:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
+    sget-object v14, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->TRUE:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
 
-    sget-object v14, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->FALSE:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
+    sget-object v15, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->FALSE:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
 
-    sget-object v15, Ljp/co/sony/mc/camera/setting/MessageType;->NO_MESSAGE:Ljp/co/sony/mc/camera/setting/MessageType;
+    sget-object v16, Ljp/co/sony/mc/camera/setting/MessageType;->NO_MESSAGE:Ljp/co/sony/mc/camera/setting/MessageType;
 
     const-string v2, "MAX_FILESIZE_REACHED"
 
     const/16 v3, 0x30
 
-    const v6, 0x7f11019d
+    const v6, 0x7f1101a0
 
-    const v7, 0x7f1102e9
+    const v7, 0x7f110316
 
     const/4 v9, -0x1
 
-    const v10, 0x7f110323
+    const v11, 0x7f110355
 
-    const/4 v12, -0x1
+    const/4 v13, -0x1
 
-    move-object v1, v0
-
-    invoke-direct/range {v1 .. v16}, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;-><init>(Ljava/lang/String;ILjp/co/sony/mc/camera/view/messagedialog/MessageDialogBuilder;Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;IIIIIIILjp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/setting/MessageType;Z)V
+    invoke-direct/range {v1 .. v17}, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;-><init>(Ljava/lang/String;ILjp/co/sony/mc/camera/view/messagedialog/MessageDialogBuilder;Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;IIIIIIIILjp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/setting/MessageType;Z)V
 
     sput-object v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->MAX_FILESIZE_REACHED:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
 
-    .line 804
+    .line 853
     new-instance v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
 
-    new-instance v20, Ljp/co/sony/mc/camera/view/messagedialog/OkDialogBuilder;
+    move-object/from16 v18, v0
 
-    invoke-direct/range {v20 .. v20}, Ljp/co/sony/mc/camera/view/messagedialog/OkDialogBuilder;-><init>()V
+    new-instance v1, Ljp/co/sony/mc/camera/view/messagedialog/OkDialogBuilder;
 
-    sget-object v21, Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;->NORMAL:Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;
+    move-object/from16 v21, v1
 
-    sget-object v29, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->FALSE:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
+    invoke-direct {v1}, Ljp/co/sony/mc/camera/view/messagedialog/OkDialogBuilder;-><init>()V
 
-    sget-object v30, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->USE_DEFAULT:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
+    sget-object v22, Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;->NORMAL:Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;
 
-    sget-object v31, Ljp/co/sony/mc/camera/setting/MessageType;->NO_MESSAGE:Ljp/co/sony/mc/camera/setting/MessageType;
+    sget-object v31, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->FALSE:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
 
-    const-string v18, "MAX_DURATION_REACHED"
+    sget-object v32, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->USE_DEFAULT:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
 
-    const/16 v19, 0x31
+    sget-object v33, Ljp/co/sony/mc/camera/setting/MessageType;->NO_MESSAGE:Ljp/co/sony/mc/camera/setting/MessageType;
 
-    const v23, 0x7f1102ea
+    const-string v19, "MAX_DURATION_REACHED"
 
-    move-object/from16 v17, v0
+    const/16 v20, 0x31
 
-    invoke-direct/range {v17 .. v32}, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;-><init>(Ljava/lang/String;ILjp/co/sony/mc/camera/view/messagedialog/MessageDialogBuilder;Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;IIIIIIILjp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/setting/MessageType;Z)V
+    const v24, 0x7f110317
+
+    invoke-direct/range {v18 .. v34}, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;-><init>(Ljava/lang/String;ILjp/co/sony/mc/camera/view/messagedialog/MessageDialogBuilder;Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;IIIIIIIILjp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/setting/MessageType;Z)V
 
     sput-object v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->MAX_DURATION_REACHED:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
 
-    .line 819
+    .line 869
     new-instance v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
 
-    new-instance v4, Ljp/co/sony/mc/camera/view/messagedialog/OkDialogBuilder;
+    move-object v1, v0
 
-    invoke-direct {v4}, Ljp/co/sony/mc/camera/view/messagedialog/OkDialogBuilder;-><init>()V
+    new-instance v2, Ljp/co/sony/mc/camera/view/messagedialog/OkDialogBuilder;
+
+    move-object v4, v2
+
+    invoke-direct {v2}, Ljp/co/sony/mc/camera/view/messagedialog/OkDialogBuilder;-><init>()V
 
     sget-object v5, Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;->LOW:Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;
 
-    sget-object v13, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->TRUE:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
+    sget-object v14, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->TRUE:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
 
-    sget-object v14, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->USE_DEFAULT:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
+    sget-object v15, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->USE_DEFAULT:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
 
-    sget-object v15, Ljp/co/sony/mc/camera/setting/MessageType;->NO_MESSAGE:Ljp/co/sony/mc/camera/setting/MessageType;
+    sget-object v16, Ljp/co/sony/mc/camera/setting/MessageType;->NO_MESSAGE:Ljp/co/sony/mc/camera/setting/MessageType;
 
     const-string v2, "CONTINUOUS_SHOOTING_UNNABLE_FOR_CURRENT_SUPER_RESOLUTION_ZOOM"
 
     const/16 v3, 0x32
 
-    const v6, 0x7f11036f
+    const v6, 0x7f1103a2
 
-    const v7, 0x7f11036d
+    const v7, 0x7f1103a0
 
-    move-object v1, v0
-
-    invoke-direct/range {v1 .. v16}, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;-><init>(Ljava/lang/String;ILjp/co/sony/mc/camera/view/messagedialog/MessageDialogBuilder;Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;IIIIIIILjp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/setting/MessageType;Z)V
+    invoke-direct/range {v1 .. v17}, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;-><init>(Ljava/lang/String;ILjp/co/sony/mc/camera/view/messagedialog/MessageDialogBuilder;Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;IIIIIIIILjp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/setting/MessageType;Z)V
 
     sput-object v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->CONTINUOUS_SHOOTING_UNNABLE_FOR_CURRENT_SUPER_RESOLUTION_ZOOM:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
 
-    .line 835
+    .line 886
     new-instance v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
 
-    new-instance v20, Ljp/co/sony/mc/camera/view/messagedialog/OkDialogBuilder;
+    move-object/from16 v18, v0
 
-    invoke-direct/range {v20 .. v20}, Ljp/co/sony/mc/camera/view/messagedialog/OkDialogBuilder;-><init>()V
+    new-instance v1, Ljp/co/sony/mc/camera/view/messagedialog/OkDialogBuilder;
 
-    sget-object v21, Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;->LOW:Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;
+    move-object/from16 v21, v1
 
-    sget-object v29, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->TRUE:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
+    invoke-direct {v1}, Ljp/co/sony/mc/camera/view/messagedialog/OkDialogBuilder;-><init>()V
 
-    sget-object v30, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->USE_DEFAULT:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
+    sget-object v22, Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;->LOW:Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;
 
-    sget-object v31, Ljp/co/sony/mc/camera/setting/MessageType;->NO_MESSAGE:Ljp/co/sony/mc/camera/setting/MessageType;
+    sget-object v31, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->TRUE:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
 
-    const-string v18, "HDR_UNABLE_FOR_FILE_FORMAT"
+    sget-object v32, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->USE_DEFAULT:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
 
-    const/16 v19, 0x33
+    sget-object v33, Ljp/co/sony/mc/camera/setting/MessageType;->NO_MESSAGE:Ljp/co/sony/mc/camera/setting/MessageType;
 
-    const v22, 0x7f11036f
+    const-string v19, "HDR_UNABLE_FOR_FILE_FORMAT"
 
-    const v23, 0x7f110367
+    const/16 v20, 0x33
 
-    move-object/from16 v17, v0
+    const v23, 0x7f1103a2
 
-    invoke-direct/range {v17 .. v32}, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;-><init>(Ljava/lang/String;ILjp/co/sony/mc/camera/view/messagedialog/MessageDialogBuilder;Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;IIIIIIILjp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/setting/MessageType;Z)V
+    const v24, 0x7f11039a
+
+    invoke-direct/range {v18 .. v34}, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;-><init>(Ljava/lang/String;ILjp/co/sony/mc/camera/view/messagedialog/MessageDialogBuilder;Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;IIIIIIIILjp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/setting/MessageType;Z)V
 
     sput-object v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->HDR_UNABLE_FOR_FILE_FORMAT:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
 
-    .line 851
+    .line 903
     new-instance v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
 
-    new-instance v4, Ljp/co/sony/mc/camera/view/messagedialog/OkDialogBuilder;
+    move-object v1, v0
 
-    invoke-direct {v4}, Ljp/co/sony/mc/camera/view/messagedialog/OkDialogBuilder;-><init>()V
+    new-instance v2, Ljp/co/sony/mc/camera/view/messagedialog/OkDialogBuilder;
+
+    move-object v4, v2
+
+    invoke-direct {v2}, Ljp/co/sony/mc/camera/view/messagedialog/OkDialogBuilder;-><init>()V
 
     sget-object v5, Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;->LOW:Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;
 
-    sget-object v13, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->TRUE:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
+    sget-object v14, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->TRUE:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
 
-    sget-object v14, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->USE_DEFAULT:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
+    sget-object v15, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->USE_DEFAULT:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
 
-    sget-object v15, Ljp/co/sony/mc/camera/setting/MessageType;->NO_MESSAGE:Ljp/co/sony/mc/camera/setting/MessageType;
+    sget-object v16, Ljp/co/sony/mc/camera/setting/MessageType;->NO_MESSAGE:Ljp/co/sony/mc/camera/setting/MessageType;
 
     const-string v2, "FILE_FORMAT_UNABLE_FOR_HDR"
 
     const/16 v3, 0x34
 
-    const v7, 0x7f110376
+    const v7, 0x7f1103a9
 
-    move-object v1, v0
-
-    invoke-direct/range {v1 .. v16}, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;-><init>(Ljava/lang/String;ILjp/co/sony/mc/camera/view/messagedialog/MessageDialogBuilder;Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;IIIIIIILjp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/setting/MessageType;Z)V
+    invoke-direct/range {v1 .. v17}, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;-><init>(Ljava/lang/String;ILjp/co/sony/mc/camera/view/messagedialog/MessageDialogBuilder;Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;IIIIIIIILjp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/setting/MessageType;Z)V
 
     sput-object v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->FILE_FORMAT_UNABLE_FOR_HDR:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
 
-    .line 867
+    .line 920
     new-instance v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
 
-    new-instance v20, Ljp/co/sony/mc/camera/view/messagedialog/OkDialogBuilder;
+    move-object/from16 v18, v0
 
-    invoke-direct/range {v20 .. v20}, Ljp/co/sony/mc/camera/view/messagedialog/OkDialogBuilder;-><init>()V
+    new-instance v1, Ljp/co/sony/mc/camera/view/messagedialog/OkDialogBuilder;
 
-    sget-object v21, Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;->LOW:Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;
+    move-object/from16 v21, v1
 
-    sget-object v29, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->TRUE:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
+    invoke-direct {v1}, Ljp/co/sony/mc/camera/view/messagedialog/OkDialogBuilder;-><init>()V
 
-    sget-object v30, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->USE_DEFAULT:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
+    sget-object v22, Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;->LOW:Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;
 
-    sget-object v31, Ljp/co/sony/mc/camera/setting/MessageType;->NO_MESSAGE:Ljp/co/sony/mc/camera/setting/MessageType;
+    sget-object v31, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->TRUE:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
 
-    const-string v18, "LENS_CORRECTION_ONLY_ON_SUPER_WIDE"
+    sget-object v32, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->USE_DEFAULT:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
 
-    const/16 v19, 0x35
+    sget-object v33, Ljp/co/sony/mc/camera/setting/MessageType;->NO_MESSAGE:Ljp/co/sony/mc/camera/setting/MessageType;
 
-    const v23, 0x7f11037b
+    const-string v19, "LENS_CORRECTION_ONLY_ON_SUPER_WIDE"
 
-    move-object/from16 v17, v0
+    const/16 v20, 0x35
 
-    invoke-direct/range {v17 .. v32}, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;-><init>(Ljava/lang/String;ILjp/co/sony/mc/camera/view/messagedialog/MessageDialogBuilder;Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;IIIIIIILjp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/setting/MessageType;Z)V
+    const v24, 0x7f110397
+
+    invoke-direct/range {v18 .. v34}, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;-><init>(Ljava/lang/String;ILjp/co/sony/mc/camera/view/messagedialog/MessageDialogBuilder;Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;IIIIIIIILjp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/setting/MessageType;Z)V
 
     sput-object v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->LENS_CORRECTION_ONLY_ON_SUPER_WIDE:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
 
-    .line 883
+    .line 937
     new-instance v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
 
-    new-instance v4, Ljp/co/sony/mc/camera/view/messagedialog/OkDialogBuilder;
+    move-object v1, v0
 
-    invoke-direct {v4}, Ljp/co/sony/mc/camera/view/messagedialog/OkDialogBuilder;-><init>()V
+    new-instance v2, Ljp/co/sony/mc/camera/view/messagedialog/OkDialogBuilder;
+
+    move-object v4, v2
+
+    invoke-direct {v2}, Ljp/co/sony/mc/camera/view/messagedialog/OkDialogBuilder;-><init>()V
 
     sget-object v5, Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;->LOW:Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;
 
-    sget-object v13, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->TRUE:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
+    sget-object v14, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->TRUE:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
 
-    sget-object v14, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->USE_DEFAULT:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
+    sget-object v15, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->USE_DEFAULT:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
 
-    sget-object v15, Ljp/co/sony/mc/camera/setting/MessageType;->NO_MESSAGE:Ljp/co/sony/mc/camera/setting/MessageType;
+    sget-object v16, Ljp/co/sony/mc/camera/setting/MessageType;->NO_MESSAGE:Ljp/co/sony/mc/camera/setting/MessageType;
 
     const-string v2, "MIC_RESTRICTION"
 
     const/16 v3, 0x36
 
-    const v7, 0x7f110378
+    const v7, 0x7f1103ab
 
-    move-object v1, v0
-
-    invoke-direct/range {v1 .. v16}, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;-><init>(Ljava/lang/String;ILjp/co/sony/mc/camera/view/messagedialog/MessageDialogBuilder;Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;IIIIIIILjp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/setting/MessageType;Z)V
+    invoke-direct/range {v1 .. v17}, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;-><init>(Ljava/lang/String;ILjp/co/sony/mc/camera/view/messagedialog/MessageDialogBuilder;Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;IIIIIIIILjp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/setting/MessageType;Z)V
 
     sput-object v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->MIC_RESTRICTION:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
 
-    .line 899
+    .line 954
     new-instance v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
 
-    new-instance v20, Ljp/co/sony/mc/camera/view/messagedialog/OkDialogBuilder;
+    move-object/from16 v18, v0
 
-    invoke-direct/range {v20 .. v20}, Ljp/co/sony/mc/camera/view/messagedialog/OkDialogBuilder;-><init>()V
+    new-instance v1, Ljp/co/sony/mc/camera/view/messagedialog/OkDialogBuilder;
 
-    sget-object v21, Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;->LOW:Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;
+    move-object/from16 v21, v1
 
-    sget-object v29, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->TRUE:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
+    invoke-direct {v1}, Ljp/co/sony/mc/camera/view/messagedialog/OkDialogBuilder;-><init>()V
 
-    sget-object v30, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->USE_DEFAULT:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
+    sget-object v22, Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;->LOW:Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;
 
-    sget-object v31, Ljp/co/sony/mc/camera/setting/MessageType;->NO_MESSAGE:Ljp/co/sony/mc/camera/setting/MessageType;
+    sget-object v31, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->TRUE:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
 
-    const-string v18, "HDR_CONTINUOUS_SHOOTING_RESTRICTION"
+    sget-object v32, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->USE_DEFAULT:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
 
-    const/16 v19, 0x37
+    sget-object v33, Ljp/co/sony/mc/camera/setting/MessageType;->NO_MESSAGE:Ljp/co/sony/mc/camera/setting/MessageType;
 
-    const v23, 0x7f11037e
+    const-string v19, "HDR_CONTINUOUS_SHOOTING_RESTRICTION"
 
-    move-object/from16 v17, v0
+    const/16 v20, 0x37
 
-    invoke-direct/range {v17 .. v32}, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;-><init>(Ljava/lang/String;ILjp/co/sony/mc/camera/view/messagedialog/MessageDialogBuilder;Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;IIIIIIILjp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/setting/MessageType;Z)V
+    const v24, 0x7f1103b2
+
+    invoke-direct/range {v18 .. v34}, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;-><init>(Ljava/lang/String;ILjp/co/sony/mc/camera/view/messagedialog/MessageDialogBuilder;Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;IIIIIIIILjp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/setting/MessageType;Z)V
 
     sput-object v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->HDR_CONTINUOUS_SHOOTING_RESTRICTION:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
 
-    .line 915
+    .line 971
     new-instance v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
 
-    new-instance v4, Ljp/co/sony/mc/camera/view/messagedialog/OkDialogBuilder;
+    move-object v1, v0
 
-    invoke-direct {v4}, Ljp/co/sony/mc/camera/view/messagedialog/OkDialogBuilder;-><init>()V
+    new-instance v2, Ljp/co/sony/mc/camera/view/messagedialog/OkDialogBuilder;
+
+    move-object v4, v2
+
+    invoke-direct {v2}, Ljp/co/sony/mc/camera/view/messagedialog/OkDialogBuilder;-><init>()V
 
     sget-object v5, Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;->LOW:Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;
 
-    sget-object v13, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->TRUE:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
+    sget-object v14, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->TRUE:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
 
-    sget-object v14, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->USE_DEFAULT:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
+    sget-object v15, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->USE_DEFAULT:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
 
-    sget-object v15, Ljp/co/sony/mc/camera/setting/MessageType;->NO_MESSAGE:Ljp/co/sony/mc/camera/setting/MessageType;
+    sget-object v16, Ljp/co/sony/mc/camera/setting/MessageType;->NO_MESSAGE:Ljp/co/sony/mc/camera/setting/MessageType;
 
     const-string v2, "RESTRICT_SETTING_MULTI_FRAME_HDR"
 
     const/16 v3, 0x38
 
-    const v7, 0x7f110382
+    const v7, 0x7f1103b6
 
-    move-object v1, v0
-
-    invoke-direct/range {v1 .. v16}, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;-><init>(Ljava/lang/String;ILjp/co/sony/mc/camera/view/messagedialog/MessageDialogBuilder;Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;IIIIIIILjp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/setting/MessageType;Z)V
+    invoke-direct/range {v1 .. v17}, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;-><init>(Ljava/lang/String;ILjp/co/sony/mc/camera/view/messagedialog/MessageDialogBuilder;Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;IIIIIIIILjp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/setting/MessageType;Z)V
 
     sput-object v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->RESTRICT_SETTING_MULTI_FRAME_HDR:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
 
-    .line 931
+    .line 988
     new-instance v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
 
-    new-instance v20, Ljp/co/sony/mc/camera/view/messagedialog/OkDialogBuilder;
+    move-object/from16 v18, v0
 
-    invoke-direct/range {v20 .. v20}, Ljp/co/sony/mc/camera/view/messagedialog/OkDialogBuilder;-><init>()V
+    new-instance v1, Ljp/co/sony/mc/camera/view/messagedialog/OkDialogBuilder;
 
-    sget-object v21, Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;->LOW:Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;
+    move-object/from16 v21, v1
 
-    sget-object v29, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->TRUE:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
+    invoke-direct {v1}, Ljp/co/sony/mc/camera/view/messagedialog/OkDialogBuilder;-><init>()V
 
-    sget-object v30, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->USE_DEFAULT:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
+    sget-object v22, Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;->LOW:Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;
 
-    sget-object v31, Ljp/co/sony/mc/camera/setting/MessageType;->NO_MESSAGE:Ljp/co/sony/mc/camera/setting/MessageType;
+    sget-object v31, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->TRUE:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
 
-    const-string v18, "RESTRICT_SETTING_BOKEH_EFFECT"
+    sget-object v32, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->USE_DEFAULT:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
 
-    const/16 v19, 0x39
+    sget-object v33, Ljp/co/sony/mc/camera/setting/MessageType;->NO_MESSAGE:Ljp/co/sony/mc/camera/setting/MessageType;
 
-    const v23, 0x7f11037c
+    const-string v19, "RESTRICT_SETTING_BOKEH_EFFECT"
 
-    move-object/from16 v17, v0
+    const/16 v20, 0x39
 
-    invoke-direct/range {v17 .. v32}, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;-><init>(Ljava/lang/String;ILjp/co/sony/mc/camera/view/messagedialog/MessageDialogBuilder;Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;IIIIIIILjp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/setting/MessageType;Z)V
+    const v24, 0x7f1103af
+
+    invoke-direct/range {v18 .. v34}, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;-><init>(Ljava/lang/String;ILjp/co/sony/mc/camera/view/messagedialog/MessageDialogBuilder;Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;IIIIIIIILjp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/setting/MessageType;Z)V
 
     sput-object v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->RESTRICT_SETTING_BOKEH_EFFECT:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
 
-    .line 947
+    .line 1005
     new-instance v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
 
-    new-instance v4, Ljp/co/sony/mc/camera/view/messagedialog/OkDialogBuilder;
+    move-object v1, v0
 
-    invoke-direct {v4}, Ljp/co/sony/mc/camera/view/messagedialog/OkDialogBuilder;-><init>()V
+    new-instance v2, Ljp/co/sony/mc/camera/view/messagedialog/OkDialogBuilder;
+
+    move-object v4, v2
+
+    invoke-direct {v2}, Ljp/co/sony/mc/camera/view/messagedialog/OkDialogBuilder;-><init>()V
 
     sget-object v5, Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;->LOW:Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;
 
-    sget-object v13, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->TRUE:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
+    sget-object v14, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->TRUE:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
 
-    sget-object v14, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->USE_DEFAULT:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
+    sget-object v15, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->USE_DEFAULT:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
 
-    sget-object v15, Ljp/co/sony/mc/camera/setting/MessageType;->NO_MESSAGE:Ljp/co/sony/mc/camera/setting/MessageType;
+    sget-object v16, Ljp/co/sony/mc/camera/setting/MessageType;->NO_MESSAGE:Ljp/co/sony/mc/camera/setting/MessageType;
 
     const-string v2, "RESTRICT_SETTING_VALUE_WHEN_MULTI_FRAME_HDR"
 
     const/16 v3, 0x3a
 
-    const v7, 0x7f11038a
+    const v7, 0x7f1103be
 
-    move-object v1, v0
-
-    invoke-direct/range {v1 .. v16}, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;-><init>(Ljava/lang/String;ILjp/co/sony/mc/camera/view/messagedialog/MessageDialogBuilder;Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;IIIIIIILjp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/setting/MessageType;Z)V
+    invoke-direct/range {v1 .. v17}, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;-><init>(Ljava/lang/String;ILjp/co/sony/mc/camera/view/messagedialog/MessageDialogBuilder;Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;IIIIIIIILjp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/setting/MessageType;Z)V
 
     sput-object v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->RESTRICT_SETTING_VALUE_WHEN_MULTI_FRAME_HDR:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
 
-    .line 963
+    .line 1022
     new-instance v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
 
-    new-instance v20, Ljp/co/sony/mc/camera/view/messagedialog/OkDialogBuilder;
+    move-object/from16 v18, v0
 
-    invoke-direct/range {v20 .. v20}, Ljp/co/sony/mc/camera/view/messagedialog/OkDialogBuilder;-><init>()V
+    new-instance v1, Ljp/co/sony/mc/camera/view/messagedialog/OkDialogBuilder;
 
-    sget-object v21, Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;->LOW:Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;
+    move-object/from16 v21, v1
 
-    sget-object v29, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->TRUE:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
+    invoke-direct {v1}, Ljp/co/sony/mc/camera/view/messagedialog/OkDialogBuilder;-><init>()V
 
-    sget-object v30, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->USE_DEFAULT:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
+    sget-object v22, Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;->LOW:Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;
 
-    sget-object v31, Ljp/co/sony/mc/camera/setting/MessageType;->NO_MESSAGE:Ljp/co/sony/mc/camera/setting/MessageType;
+    sget-object v31, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->TRUE:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
 
-    const-string v18, "S_CINETONE_RESTRICTION"
+    sget-object v32, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->USE_DEFAULT:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
 
-    const/16 v19, 0x3b
+    sget-object v33, Ljp/co/sony/mc/camera/setting/MessageType;->NO_MESSAGE:Ljp/co/sony/mc/camera/setting/MessageType;
 
-    const v23, 0x7f110380
+    const-string v19, "S_CINETONE_RESTRICTION"
 
-    move-object/from16 v17, v0
+    const/16 v20, 0x3b
 
-    invoke-direct/range {v17 .. v32}, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;-><init>(Ljava/lang/String;ILjp/co/sony/mc/camera/view/messagedialog/MessageDialogBuilder;Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;IIIIIIILjp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/setting/MessageType;Z)V
+    const v24, 0x7f1103b4
+
+    invoke-direct/range {v18 .. v34}, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;-><init>(Ljava/lang/String;ILjp/co/sony/mc/camera/view/messagedialog/MessageDialogBuilder;Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;IIIIIIIILjp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/setting/MessageType;Z)V
 
     sput-object v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->S_CINETONE_RESTRICTION:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
 
-    .line 979
+    .line 1039
     new-instance v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
 
-    new-instance v4, Ljp/co/sony/mc/camera/view/messagedialog/OkDialogBuilder;
+    move-object v1, v0
 
-    invoke-direct {v4}, Ljp/co/sony/mc/camera/view/messagedialog/OkDialogBuilder;-><init>()V
+    new-instance v2, Ljp/co/sony/mc/camera/view/messagedialog/OkDialogBuilder;
+
+    move-object v4, v2
+
+    invoke-direct {v2}, Ljp/co/sony/mc/camera/view/messagedialog/OkDialogBuilder;-><init>()V
 
     sget-object v5, Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;->LOW:Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;
 
-    sget-object v13, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->TRUE:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
+    sget-object v14, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->TRUE:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
 
-    sget-object v14, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->USE_DEFAULT:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
+    sget-object v15, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->USE_DEFAULT:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
 
-    sget-object v15, Ljp/co/sony/mc/camera/setting/MessageType;->NO_MESSAGE:Ljp/co/sony/mc/camera/setting/MessageType;
+    sget-object v16, Ljp/co/sony/mc/camera/setting/MessageType;->NO_MESSAGE:Ljp/co/sony/mc/camera/setting/MessageType;
 
     const-string v2, "RAW_FORMAT_RESTRICTION"
 
     const/16 v3, 0x3c
 
-    const v7, 0x7f11037f
+    const v7, 0x7f1103b3
 
-    move-object v1, v0
-
-    invoke-direct/range {v1 .. v16}, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;-><init>(Ljava/lang/String;ILjp/co/sony/mc/camera/view/messagedialog/MessageDialogBuilder;Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;IIIIIIILjp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/setting/MessageType;Z)V
+    invoke-direct/range {v1 .. v17}, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;-><init>(Ljava/lang/String;ILjp/co/sony/mc/camera/view/messagedialog/MessageDialogBuilder;Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;IIIIIIIILjp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/setting/MessageType;Z)V
 
     sput-object v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->RAW_FORMAT_RESTRICTION:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
 
-    .line 995
+    .line 1056
     new-instance v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
 
-    new-instance v20, Ljp/co/sony/mc/camera/view/messagedialog/OkDialogBuilder;
+    move-object/from16 v18, v0
 
-    invoke-direct/range {v20 .. v20}, Ljp/co/sony/mc/camera/view/messagedialog/OkDialogBuilder;-><init>()V
+    new-instance v1, Ljp/co/sony/mc/camera/view/messagedialog/OkDialogBuilder;
 
-    sget-object v21, Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;->LOW:Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;
+    move-object/from16 v21, v1
 
-    sget-object v29, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->TRUE:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
+    invoke-direct {v1}, Ljp/co/sony/mc/camera/view/messagedialog/OkDialogBuilder;-><init>()V
 
-    sget-object v30, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->USE_DEFAULT:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
+    sget-object v22, Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;->LOW:Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;
 
-    sget-object v31, Ljp/co/sony/mc/camera/setting/MessageType;->NO_MESSAGE:Ljp/co/sony/mc/camera/setting/MessageType;
+    sget-object v31, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->TRUE:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
 
-    const-string v18, "PRODUCT_SHOWCASE_RESTRICTION"
+    sget-object v32, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->USE_DEFAULT:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
 
-    const/16 v19, 0x3d
+    sget-object v33, Ljp/co/sony/mc/camera/setting/MessageType;->NO_MESSAGE:Ljp/co/sony/mc/camera/setting/MessageType;
 
-    const v23, 0x7f110383
+    const-string v19, "PRODUCT_SHOWCASE_RESTRICTION"
 
-    move-object/from16 v17, v0
+    const/16 v20, 0x3d
 
-    invoke-direct/range {v17 .. v32}, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;-><init>(Ljava/lang/String;ILjp/co/sony/mc/camera/view/messagedialog/MessageDialogBuilder;Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;IIIIIIILjp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/setting/MessageType;Z)V
+    const v24, 0x7f1103b7
+
+    invoke-direct/range {v18 .. v34}, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;-><init>(Ljava/lang/String;ILjp/co/sony/mc/camera/view/messagedialog/MessageDialogBuilder;Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;IIIIIIIILjp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/setting/MessageType;Z)V
 
     sput-object v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->PRODUCT_SHOWCASE_RESTRICTION:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
 
-    .line 1011
+    .line 1073
     new-instance v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
 
-    new-instance v4, Ljp/co/sony/mc/camera/view/messagedialog/NoButtonDialogBuilder;
+    move-object v1, v0
 
-    invoke-direct {v4}, Ljp/co/sony/mc/camera/view/messagedialog/NoButtonDialogBuilder;-><init>()V
+    new-instance v2, Ljp/co/sony/mc/camera/view/messagedialog/NoButtonDialogBuilder;
+
+    move-object v4, v2
+
+    invoke-direct {v2}, Ljp/co/sony/mc/camera/view/messagedialog/NoButtonDialogBuilder;-><init>()V
 
     sget-object v5, Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;->IMMEDIATELY:Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;
 
-    sget-object v13, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->TRUE:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
+    sget-object v14, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->TRUE:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
 
-    sget-object v14, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->USE_DEFAULT:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
+    sget-object v15, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->USE_DEFAULT:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
 
-    sget-object v15, Ljp/co/sony/mc/camera/setting/MessageType;->NO_MESSAGE:Ljp/co/sony/mc/camera/setting/MessageType;
+    sget-object v16, Ljp/co/sony/mc/camera/setting/MessageType;->NO_MESSAGE:Ljp/co/sony/mc/camera/setting/MessageType;
 
     const-string v2, "ERROR_CHECK_SD_CARD"
 
     const/16 v3, 0x3e
 
-    const v6, 0x7f1101dd
+    const v6, 0x7f1101e0
 
     const/4 v7, -0x1
 
-    const/4 v10, -0x1
+    const/4 v11, -0x1
 
-    move-object v1, v0
-
-    invoke-direct/range {v1 .. v16}, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;-><init>(Ljava/lang/String;ILjp/co/sony/mc/camera/view/messagedialog/MessageDialogBuilder;Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;IIIIIIILjp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/setting/MessageType;Z)V
+    invoke-direct/range {v1 .. v17}, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;-><init>(Ljava/lang/String;ILjp/co/sony/mc/camera/view/messagedialog/MessageDialogBuilder;Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;IIIIIIIILjp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/setting/MessageType;Z)V
 
     sput-object v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->ERROR_CHECK_SD_CARD:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
 
-    .line 1027
+    .line 1090
     new-instance v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
 
-    new-instance v20, Ljp/co/sony/mc/camera/view/messagedialog/OkCancelDialogBuilder;
+    move-object/from16 v18, v0
 
-    invoke-direct/range {v20 .. v20}, Ljp/co/sony/mc/camera/view/messagedialog/OkCancelDialogBuilder;-><init>()V
+    new-instance v1, Ljp/co/sony/mc/camera/view/messagedialog/OkCancelDialogBuilder;
 
-    sget-object v21, Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;->LOW:Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;
+    move-object/from16 v21, v1
 
-    sget-object v29, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->TRUE:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
+    invoke-direct {v1}, Ljp/co/sony/mc/camera/view/messagedialog/OkCancelDialogBuilder;-><init>()V
 
-    sget-object v30, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->USE_DEFAULT:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
+    sget-object v22, Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;->LOW:Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;
 
-    sget-object v31, Ljp/co/sony/mc/camera/setting/MessageType;->NO_MESSAGE:Ljp/co/sony/mc/camera/setting/MessageType;
+    sget-object v31, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->TRUE:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
 
-    const-string v18, "SHUTTER_SPEED_FOCUS_GUIDE"
+    sget-object v32, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->USE_DEFAULT:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
 
-    const/16 v19, 0x3f
+    sget-object v33, Ljp/co/sony/mc/camera/setting/MessageType;->NO_MESSAGE:Ljp/co/sony/mc/camera/setting/MessageType;
 
-    const v22, 0x7f11043f
+    const-string v19, "SHUTTER_SPEED_FOCUS_GUIDE"
 
-    const v23, 0x7f11043e
+    const/16 v20, 0x3f
 
-    const v26, 0x7f110193
+    const v23, 0x7f110474
 
-    const v27, 0x7f11013d
+    const v24, 0x7f110473
 
-    move-object/from16 v17, v0
+    const v28, 0x7f110196
 
-    invoke-direct/range {v17 .. v32}, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;-><init>(Ljava/lang/String;ILjp/co/sony/mc/camera/view/messagedialog/MessageDialogBuilder;Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;IIIIIIILjp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/setting/MessageType;Z)V
+    const v29, 0x7f110140
+
+    invoke-direct/range {v18 .. v34}, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;-><init>(Ljava/lang/String;ILjp/co/sony/mc/camera/view/messagedialog/MessageDialogBuilder;Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;IIIIIIIILjp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/setting/MessageType;Z)V
 
     sput-object v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->SHUTTER_SPEED_FOCUS_GUIDE:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
 
-    .line 1043
+    .line 1107
     new-instance v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
 
-    new-instance v4, Ljp/co/sony/mc/camera/view/messagedialog/OkDialogBuilder;
+    move-object v1, v0
 
-    invoke-direct {v4}, Ljp/co/sony/mc/camera/view/messagedialog/OkDialogBuilder;-><init>()V
+    new-instance v2, Ljp/co/sony/mc/camera/view/messagedialog/OkDialogBuilder;
+
+    move-object v4, v2
+
+    invoke-direct {v2}, Ljp/co/sony/mc/camera/view/messagedialog/OkDialogBuilder;-><init>()V
 
     sget-object v5, Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;->LOW:Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;
 
-    sget-object v13, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->TRUE:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
+    sget-object v14, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->TRUE:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
 
-    sget-object v14, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->USE_DEFAULT:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
+    sget-object v15, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->USE_DEFAULT:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
 
-    sget-object v15, Ljp/co/sony/mc/camera/setting/MessageType;->NO_MESSAGE:Ljp/co/sony/mc/camera/setting/MessageType;
+    sget-object v16, Ljp/co/sony/mc/camera/setting/MessageType;->NO_MESSAGE:Ljp/co/sony/mc/camera/setting/MessageType;
 
     const-string v2, "FOCUS_AREA_OBJECT_TRACKING_RESTRICTION"
 
     const/16 v3, 0x40
 
-    const v6, 0x7f11036f
+    const v6, 0x7f1103a2
 
-    const v7, 0x7f11038b
+    const v7, 0x7f1103bf
 
-    const v10, 0x7f110323
+    const v11, 0x7f110355
 
-    move-object v1, v0
-
-    invoke-direct/range {v1 .. v16}, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;-><init>(Ljava/lang/String;ILjp/co/sony/mc/camera/view/messagedialog/MessageDialogBuilder;Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;IIIIIIILjp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/setting/MessageType;Z)V
+    invoke-direct/range {v1 .. v17}, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;-><init>(Ljava/lang/String;ILjp/co/sony/mc/camera/view/messagedialog/MessageDialogBuilder;Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;IIIIIIIILjp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/setting/MessageType;Z)V
 
     sput-object v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->FOCUS_AREA_OBJECT_TRACKING_RESTRICTION:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
 
-    .line 1059
+    .line 1124
     new-instance v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
 
-    new-instance v20, Ljp/co/sony/mc/camera/view/messagedialog/OkDialogBuilder;
+    move-object/from16 v18, v0
 
-    invoke-direct/range {v20 .. v20}, Ljp/co/sony/mc/camera/view/messagedialog/OkDialogBuilder;-><init>()V
+    new-instance v1, Ljp/co/sony/mc/camera/view/messagedialog/OkDialogBuilder;
 
-    sget-object v21, Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;->LOW:Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;
+    move-object/from16 v21, v1
 
-    sget-object v29, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->TRUE:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
+    invoke-direct {v1}, Ljp/co/sony/mc/camera/view/messagedialog/OkDialogBuilder;-><init>()V
 
-    sget-object v30, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->USE_DEFAULT:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
+    sget-object v22, Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;->LOW:Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;
 
-    sget-object v31, Ljp/co/sony/mc/camera/setting/MessageType;->NO_MESSAGE:Ljp/co/sony/mc/camera/setting/MessageType;
+    sget-object v31, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->TRUE:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
 
-    const-string v18, "COMPUTATIONAL_MODE_UNABLE_FOR_CURRENT_CAPTURING_MODE"
+    sget-object v32, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->USE_DEFAULT:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
 
-    const/16 v19, 0x41
+    sget-object v33, Ljp/co/sony/mc/camera/setting/MessageType;->NO_MESSAGE:Ljp/co/sony/mc/camera/setting/MessageType;
 
-    const v22, 0x7f11036f
+    const-string v19, "COMPUTATIONAL_MODE_UNABLE_FOR_CURRENT_CAPTURING_MODE"
 
-    const v23, 0x7f11036a
+    const/16 v20, 0x41
 
-    const v26, 0x7f110323
+    const v23, 0x7f1103a2
 
-    const/16 v27, -0x1
+    const v24, 0x7f11039d
 
-    move-object/from16 v17, v0
+    const v28, 0x7f110355
 
-    invoke-direct/range {v17 .. v32}, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;-><init>(Ljava/lang/String;ILjp/co/sony/mc/camera/view/messagedialog/MessageDialogBuilder;Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;IIIIIIILjp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/setting/MessageType;Z)V
+    const/16 v29, -0x1
+
+    invoke-direct/range {v18 .. v34}, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;-><init>(Ljava/lang/String;ILjp/co/sony/mc/camera/view/messagedialog/MessageDialogBuilder;Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;IIIIIIIILjp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/setting/MessageType;Z)V
 
     sput-object v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->COMPUTATIONAL_MODE_UNABLE_FOR_CURRENT_CAPTURING_MODE:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
 
-    .line 1075
+    .line 1141
     new-instance v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
 
-    new-instance v4, Ljp/co/sony/mc/camera/view/messagedialog/OkDialogBuilder;
+    move-object v1, v0
 
-    invoke-direct {v4}, Ljp/co/sony/mc/camera/view/messagedialog/OkDialogBuilder;-><init>()V
+    new-instance v2, Ljp/co/sony/mc/camera/view/messagedialog/OkDialogBuilder;
+
+    move-object v4, v2
+
+    invoke-direct {v2}, Ljp/co/sony/mc/camera/view/messagedialog/OkDialogBuilder;-><init>()V
 
     sget-object v5, Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;->LOW:Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;
 
-    sget-object v13, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->TRUE:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
+    sget-object v14, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->TRUE:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
 
-    sget-object v14, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->USE_DEFAULT:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
+    sget-object v15, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->USE_DEFAULT:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
 
-    sget-object v15, Ljp/co/sony/mc/camera/setting/MessageType;->NO_MESSAGE:Ljp/co/sony/mc/camera/setting/MessageType;
+    sget-object v16, Ljp/co/sony/mc/camera/setting/MessageType;->NO_MESSAGE:Ljp/co/sony/mc/camera/setting/MessageType;
 
     const-string v2, "COMPUTATIONAL_MODE_UNABLE_FOR_CURRENT_DRIVE_MODE"
 
     const/16 v3, 0x42
 
-    const v7, 0x7f11036b
+    const v7, 0x7f11039e
 
-    move-object v1, v0
-
-    invoke-direct/range {v1 .. v16}, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;-><init>(Ljava/lang/String;ILjp/co/sony/mc/camera/view/messagedialog/MessageDialogBuilder;Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;IIIIIIILjp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/setting/MessageType;Z)V
+    invoke-direct/range {v1 .. v17}, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;-><init>(Ljava/lang/String;ILjp/co/sony/mc/camera/view/messagedialog/MessageDialogBuilder;Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;IIIIIIIILjp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/setting/MessageType;Z)V
 
     sput-object v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->COMPUTATIONAL_MODE_UNABLE_FOR_CURRENT_DRIVE_MODE:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
 
-    .line 1091
+    .line 1158
     new-instance v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
 
-    new-instance v20, Ljp/co/sony/mc/camera/view/messagedialog/OkDialogBuilder;
+    move-object/from16 v18, v0
 
-    invoke-direct/range {v20 .. v20}, Ljp/co/sony/mc/camera/view/messagedialog/OkDialogBuilder;-><init>()V
+    new-instance v1, Ljp/co/sony/mc/camera/view/messagedialog/OkDialogBuilder;
 
-    sget-object v21, Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;->LOW:Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;
+    move-object/from16 v21, v1
 
-    sget-object v29, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->TRUE:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
+    invoke-direct {v1}, Ljp/co/sony/mc/camera/view/messagedialog/OkDialogBuilder;-><init>()V
 
-    sget-object v30, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->USE_DEFAULT:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
+    sget-object v22, Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;->LOW:Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;
 
-    sget-object v31, Ljp/co/sony/mc/camera/setting/MessageType;->NO_MESSAGE:Ljp/co/sony/mc/camera/setting/MessageType;
+    sget-object v31, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->TRUE:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
 
-    const-string v18, "COMPUTATIONAL_MODE_UNABLE_FOR_CURRENT_PHOTO_FORMAT"
+    sget-object v32, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->USE_DEFAULT:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
 
-    const/16 v19, 0x43
+    sget-object v33, Ljp/co/sony/mc/camera/setting/MessageType;->NO_MESSAGE:Ljp/co/sony/mc/camera/setting/MessageType;
 
-    const v23, 0x7f11036c
+    const-string v19, "COMPUTATIONAL_MODE_UNABLE_FOR_CURRENT_PHOTO_FORMAT"
 
-    move-object/from16 v17, v0
+    const/16 v20, 0x43
 
-    invoke-direct/range {v17 .. v32}, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;-><init>(Ljava/lang/String;ILjp/co/sony/mc/camera/view/messagedialog/MessageDialogBuilder;Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;IIIIIIILjp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/setting/MessageType;Z)V
+    const v24, 0x7f11039f
+
+    invoke-direct/range {v18 .. v34}, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;-><init>(Ljava/lang/String;ILjp/co/sony/mc/camera/view/messagedialog/MessageDialogBuilder;Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;IIIIIIIILjp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/setting/MessageType;Z)V
 
     sput-object v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->COMPUTATIONAL_MODE_UNABLE_FOR_CURRENT_PHOTO_FORMAT:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
 
-    .line 1107
+    .line 1175
     new-instance v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
 
-    new-instance v4, Ljp/co/sony/mc/camera/view/messagedialog/OkDialogBuilder;
+    move-object v1, v0
 
-    invoke-direct {v4}, Ljp/co/sony/mc/camera/view/messagedialog/OkDialogBuilder;-><init>()V
+    new-instance v2, Ljp/co/sony/mc/camera/view/messagedialog/OkDialogBuilder;
+
+    move-object v4, v2
+
+    invoke-direct {v2}, Ljp/co/sony/mc/camera/view/messagedialog/OkDialogBuilder;-><init>()V
 
     sget-object v5, Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;->LOW:Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;
 
-    sget-object v13, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->TRUE:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
+    sget-object v14, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->TRUE:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
 
-    sget-object v14, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->USE_DEFAULT:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
+    sget-object v15, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->USE_DEFAULT:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
 
-    sget-object v15, Ljp/co/sony/mc/camera/setting/MessageType;->NO_MESSAGE:Ljp/co/sony/mc/camera/setting/MessageType;
+    sget-object v16, Ljp/co/sony/mc/camera/setting/MessageType;->NO_MESSAGE:Ljp/co/sony/mc/camera/setting/MessageType;
 
     const-string v2, "HDR_UNABLE_FOR_CURRENT_COMPUTATIONAL_MODE"
 
     const/16 v3, 0x44
 
-    const v7, 0x7f11037d
+    const v7, 0x7f1103b0
 
-    move-object v1, v0
-
-    invoke-direct/range {v1 .. v16}, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;-><init>(Ljava/lang/String;ILjp/co/sony/mc/camera/view/messagedialog/MessageDialogBuilder;Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;IIIIIIILjp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/setting/MessageType;Z)V
+    invoke-direct/range {v1 .. v17}, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;-><init>(Ljava/lang/String;ILjp/co/sony/mc/camera/view/messagedialog/MessageDialogBuilder;Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;IIIIIIIILjp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/setting/MessageType;Z)V
 
     sput-object v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->HDR_UNABLE_FOR_CURRENT_COMPUTATIONAL_MODE:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
 
-    .line 1123
+    .line 1192
     new-instance v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
 
-    new-instance v20, Ljp/co/sony/mc/camera/view/messagedialog/OkDialogBuilder;
+    move-object/from16 v18, v0
 
-    invoke-direct/range {v20 .. v20}, Ljp/co/sony/mc/camera/view/messagedialog/OkDialogBuilder;-><init>()V
+    new-instance v1, Ljp/co/sony/mc/camera/view/messagedialog/OkDialogBuilder;
 
-    sget-object v21, Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;->LOW:Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;
+    move-object/from16 v21, v1
 
-    sget-object v29, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->TRUE:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
+    invoke-direct {v1}, Ljp/co/sony/mc/camera/view/messagedialog/OkDialogBuilder;-><init>()V
 
-    sget-object v30, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->USE_DEFAULT:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
+    sget-object v22, Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;->LOW:Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;
 
-    sget-object v31, Ljp/co/sony/mc/camera/setting/MessageType;->NO_MESSAGE:Ljp/co/sony/mc/camera/setting/MessageType;
+    sget-object v31, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->TRUE:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
 
-    const-string v18, "RESTRICT_SETTING_VALUE_ON_COMPUTATIONAL_MODE_OFF"
+    sget-object v32, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->USE_DEFAULT:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
 
-    const/16 v19, 0x45
+    sget-object v33, Ljp/co/sony/mc/camera/setting/MessageType;->NO_MESSAGE:Ljp/co/sony/mc/camera/setting/MessageType;
 
-    const v23, 0x7f110389
+    const-string v19, "RESTRICT_SETTING_VALUE_ON_COMPUTATIONAL_MODE_OFF"
 
-    move-object/from16 v17, v0
+    const/16 v20, 0x45
 
-    invoke-direct/range {v17 .. v32}, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;-><init>(Ljava/lang/String;ILjp/co/sony/mc/camera/view/messagedialog/MessageDialogBuilder;Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;IIIIIIILjp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/setting/MessageType;Z)V
+    const v24, 0x7f1103bd
+
+    invoke-direct/range {v18 .. v34}, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;-><init>(Ljava/lang/String;ILjp/co/sony/mc/camera/view/messagedialog/MessageDialogBuilder;Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;IIIIIIIILjp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/setting/MessageType;Z)V
 
     sput-object v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->RESTRICT_SETTING_VALUE_ON_COMPUTATIONAL_MODE_OFF:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
 
-    .line 1139
+    .line 1209
     new-instance v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
 
-    new-instance v4, Ljp/co/sony/mc/camera/view/messagedialog/OkDialogBuilder;
+    move-object v1, v0
 
-    invoke-direct {v4}, Ljp/co/sony/mc/camera/view/messagedialog/OkDialogBuilder;-><init>()V
+    new-instance v2, Ljp/co/sony/mc/camera/view/messagedialog/OkDialogBuilder;
+
+    move-object v4, v2
+
+    invoke-direct {v2}, Ljp/co/sony/mc/camera/view/messagedialog/OkDialogBuilder;-><init>()V
 
     sget-object v5, Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;->LOW:Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;
 
-    sget-object v13, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->TRUE:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
+    sget-object v14, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->TRUE:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
 
-    sget-object v14, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->USE_DEFAULT:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
+    sget-object v15, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->USE_DEFAULT:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
 
-    sget-object v15, Ljp/co/sony/mc/camera/setting/MessageType;->NO_MESSAGE:Ljp/co/sony/mc/camera/setting/MessageType;
+    sget-object v16, Ljp/co/sony/mc/camera/setting/MessageType;->NO_MESSAGE:Ljp/co/sony/mc/camera/setting/MessageType;
 
     const-string v2, "EXTEND_FPS_UNABLE_FOR_CURRENT_CAPTURING_MODE"
 
     const/16 v3, 0x46
 
-    const v7, 0x7f110375
+    const v7, 0x7f1103a8
 
-    move-object v1, v0
-
-    invoke-direct/range {v1 .. v16}, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;-><init>(Ljava/lang/String;ILjp/co/sony/mc/camera/view/messagedialog/MessageDialogBuilder;Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;IIIIIIILjp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/setting/MessageType;Z)V
+    invoke-direct/range {v1 .. v17}, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;-><init>(Ljava/lang/String;ILjp/co/sony/mc/camera/view/messagedialog/MessageDialogBuilder;Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;IIIIIIIILjp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/setting/MessageType;Z)V
 
     sput-object v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->EXTEND_FPS_UNABLE_FOR_CURRENT_CAPTURING_MODE:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
 
-    .line 1155
+    .line 1226
     new-instance v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
 
-    new-instance v20, Ljp/co/sony/mc/camera/view/messagedialog/OkCancelWithCheckBoxDialogBuilder;
+    move-object/from16 v18, v0
 
-    invoke-direct/range {v20 .. v20}, Ljp/co/sony/mc/camera/view/messagedialog/OkCancelWithCheckBoxDialogBuilder;-><init>()V
+    new-instance v1, Ljp/co/sony/mc/camera/view/messagedialog/OkDialogBuilder;
 
-    sget-object v21, Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;->NORMAL:Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;
+    move-object/from16 v21, v1
 
-    sget-object v29, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->TRUE:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
+    invoke-direct {v1}, Ljp/co/sony/mc/camera/view/messagedialog/OkDialogBuilder;-><init>()V
 
-    sget-object v30, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->FALSE:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
+    sget-object v22, Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;->LOW:Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;
 
-    sget-object v31, Ljp/co/sony/mc/camera/setting/MessageType;->APPLICATION_NOTIFICATION_NETWORK:Ljp/co/sony/mc/camera/setting/MessageType;
+    sget-object v31, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->TRUE:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
 
-    const/16 v32, 0x1
+    sget-object v32, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->USE_DEFAULT:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
 
-    const-string v18, "APPLICATION_NOTIFICATION_NETWORK"
+    sget-object v33, Ljp/co/sony/mc/camera/setting/MessageType;->NO_MESSAGE:Ljp/co/sony/mc/camera/setting/MessageType;
 
-    const/16 v19, 0x47
+    const-string v19, "RESTRICT_SETTING_VALUE_BY_OTHER_APP"
 
-    const v22, 0x7f1101be
+    const/16 v20, 0x47
 
-    const v23, 0x7f110189
+    const v24, 0x7f11039c
 
-    const v27, 0x7f11013d
+    invoke-direct/range {v18 .. v34}, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;-><init>(Ljava/lang/String;ILjp/co/sony/mc/camera/view/messagedialog/MessageDialogBuilder;Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;IIIIIIIILjp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/setting/MessageType;Z)V
 
-    const v28, 0x7f0c0053
+    sput-object v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->RESTRICT_SETTING_VALUE_BY_OTHER_APP:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
 
-    move-object/from16 v17, v0
-
-    invoke-direct/range {v17 .. v32}, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;-><init>(Ljava/lang/String;ILjp/co/sony/mc/camera/view/messagedialog/MessageDialogBuilder;Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;IIIIIIILjp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/setting/MessageType;Z)V
-
-    sput-object v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->APPLICATION_NOTIFICATION_NETWORK:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
-
-    .line 1171
+    .line 1243
     new-instance v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
 
-    new-instance v4, Ljp/co/sony/mc/camera/view/messagedialog/OkCancelDialogBuilder;
+    move-object v1, v0
 
-    invoke-direct {v4}, Ljp/co/sony/mc/camera/view/messagedialog/OkCancelDialogBuilder;-><init>()V
+    new-instance v2, Ljp/co/sony/mc/camera/view/messagedialog/OkDialogBuilder;
 
-    sget-object v5, Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;->NORMAL:Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;
+    move-object v4, v2
 
-    sget-object v13, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->TRUE:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
+    invoke-direct {v2}, Ljp/co/sony/mc/camera/view/messagedialog/OkDialogBuilder;-><init>()V
 
-    sget-object v14, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->FALSE:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
+    sget-object v5, Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;->LOW:Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;
 
-    sget-object v15, Ljp/co/sony/mc/camera/setting/MessageType;->CONNECT_WIFI_SETTING:Ljp/co/sony/mc/camera/setting/MessageType;
+    sget-object v14, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->TRUE:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
 
-    const-string v2, "CONNECT_WIFI_SETTING"
+    sget-object v15, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->USE_DEFAULT:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
+
+    sget-object v16, Ljp/co/sony/mc/camera/setting/MessageType;->NO_MESSAGE:Ljp/co/sony/mc/camera/setting/MessageType;
+
+    const-string v2, "MODE_CUSTOMIZATION"
 
     const/16 v3, 0x48
 
-    const v6, 0x7f1101c2
+    const v6, 0x7f11033b
 
-    const v7, 0x7f11018e
+    const v7, 0x7f11033a
 
-    const v10, 0x7f11018f
+    const v11, 0x7f110484
 
-    const v11, 0x7f11013d
+    invoke-direct/range {v1 .. v17}, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;-><init>(Ljava/lang/String;ILjp/co/sony/mc/camera/view/messagedialog/MessageDialogBuilder;Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;IIIIIIIILjp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/setting/MessageType;Z)V
+
+    sput-object v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->MODE_CUSTOMIZATION:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
+
+    .line 1260
+    new-instance v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
+
+    move-object/from16 v18, v0
+
+    new-instance v1, Ljp/co/sony/mc/camera/view/messagedialog/OkCancelWithCheckBoxDialogBuilder;
+
+    move-object/from16 v21, v1
+
+    invoke-direct {v1}, Ljp/co/sony/mc/camera/view/messagedialog/OkCancelWithCheckBoxDialogBuilder;-><init>()V
+
+    sget-object v22, Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;->NORMAL:Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;
+
+    sget-object v31, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->TRUE:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
+
+    sget-object v32, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->FALSE:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
+
+    sget-object v33, Ljp/co/sony/mc/camera/setting/MessageType;->APPLICATION_NOTIFICATION_NETWORK:Ljp/co/sony/mc/camera/setting/MessageType;
+
+    const/16 v34, 0x1
+
+    const-string v19, "APPLICATION_NOTIFICATION_NETWORK"
+
+    const/16 v20, 0x49
+
+    const v23, 0x7f1101c1
+
+    const v24, 0x7f11018c
+
+    const v29, 0x7f110140
+
+    const v30, 0x7f0c0052
+
+    invoke-direct/range {v18 .. v34}, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;-><init>(Ljava/lang/String;ILjp/co/sony/mc/camera/view/messagedialog/MessageDialogBuilder;Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;IIIIIIIILjp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/setting/MessageType;Z)V
+
+    sput-object v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->APPLICATION_NOTIFICATION_NETWORK:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
+
+    .line 1277
+    new-instance v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
 
     move-object v1, v0
 
-    invoke-direct/range {v1 .. v16}, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;-><init>(Ljava/lang/String;ILjp/co/sony/mc/camera/view/messagedialog/MessageDialogBuilder;Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;IIIIIIILjp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/setting/MessageType;Z)V
+    new-instance v2, Ljp/co/sony/mc/camera/view/messagedialog/OkCancelDialogBuilder;
 
-    sput-object v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->CONNECT_WIFI_SETTING:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
+    move-object v4, v2
 
-    .line 1187
-    new-instance v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
+    invoke-direct {v2}, Ljp/co/sony/mc/camera/view/messagedialog/OkCancelDialogBuilder;-><init>()V
 
-    new-instance v20, Ljp/co/sony/mc/camera/view/messagedialog/OkCancelDialogBuilder;
+    sget-object v5, Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;->NORMAL:Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;
 
-    invoke-direct/range {v20 .. v20}, Ljp/co/sony/mc/camera/view/messagedialog/OkCancelDialogBuilder;-><init>()V
+    sget-object v14, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->TRUE:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
 
-    sget-object v21, Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;->LOW:Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;
+    sget-object v15, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->FALSE:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
 
-    sget-object v29, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->TRUE:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
+    sget-object v16, Ljp/co/sony/mc/camera/setting/MessageType;->CONNECT_WIFI_SETTING:Ljp/co/sony/mc/camera/setting/MessageType;
 
-    sget-object v30, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->USE_DEFAULT:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
-
-    sget-object v31, Ljp/co/sony/mc/camera/setting/MessageType;->NO_MESSAGE:Ljp/co/sony/mc/camera/setting/MessageType;
-
-    const/16 v32, 0x0
-
-    const-string v18, "REMOTE_CONTROL_CTA"
-
-    const/16 v19, 0x49
-
-    const/16 v22, -0x1
-
-    const v23, 0x7f110039
-
-    const v26, 0x7f110037
-
-    const v27, 0x7f110038
-
-    const/16 v28, -0x1
-
-    move-object/from16 v17, v0
-
-    invoke-direct/range {v17 .. v32}, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;-><init>(Ljava/lang/String;ILjp/co/sony/mc/camera/view/messagedialog/MessageDialogBuilder;Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;IIIIIIILjp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/setting/MessageType;Z)V
-
-    sput-object v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->REMOTE_CONTROL_CTA:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
-
-    .line 1203
-    new-instance v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
-
-    new-instance v4, Ljp/co/sony/mc/camera/view/messagedialog/OkCancelDialogBuilder;
-
-    invoke-direct {v4}, Ljp/co/sony/mc/camera/view/messagedialog/OkCancelDialogBuilder;-><init>()V
-
-    sget-object v5, Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;->LOW:Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;
-
-    sget-object v13, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->TRUE:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
-
-    sget-object v14, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->FALSE:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
-
-    sget-object v15, Ljp/co/sony/mc/camera/setting/MessageType;->NO_MESSAGE:Ljp/co/sony/mc/camera/setting/MessageType;
-
-    const-string v2, "REMOTE_CONTROL_PROBLEM"
+    const-string v2, "CONNECT_WIFI_SETTING"
 
     const/16 v3, 0x4a
 
-    const v6, 0x7f11003d
+    const v6, 0x7f1101c5
 
-    const v7, 0x7f11003c
+    const v7, 0x7f110191
 
-    const v10, 0x7f110041
+    const v11, 0x7f110192
 
-    const v11, 0x7f110040
+    const v12, 0x7f110140
+
+    invoke-direct/range {v1 .. v17}, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;-><init>(Ljava/lang/String;ILjp/co/sony/mc/camera/view/messagedialog/MessageDialogBuilder;Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;IIIIIIIILjp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/setting/MessageType;Z)V
+
+    sput-object v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->CONNECT_WIFI_SETTING:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
+
+    .line 1294
+    new-instance v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
+
+    move-object/from16 v18, v0
+
+    new-instance v1, Ljp/co/sony/mc/camera/view/messagedialog/OkCancelDialogBuilder;
+
+    move-object/from16 v21, v1
+
+    invoke-direct {v1}, Ljp/co/sony/mc/camera/view/messagedialog/OkCancelDialogBuilder;-><init>()V
+
+    sget-object v22, Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;->LOW:Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;
+
+    sget-object v31, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->TRUE:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
+
+    sget-object v32, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->USE_DEFAULT:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
+
+    sget-object v33, Ljp/co/sony/mc/camera/setting/MessageType;->NO_MESSAGE:Ljp/co/sony/mc/camera/setting/MessageType;
+
+    const/16 v34, 0x0
+
+    const-string v19, "REMOTE_CONTROL_CTA"
+
+    const/16 v20, 0x4b
+
+    const/16 v23, -0x1
+
+    const v24, 0x7f11002e
+
+    const v28, 0x7f11002c
+
+    const v29, 0x7f11002d
+
+    const/16 v30, -0x1
+
+    invoke-direct/range {v18 .. v34}, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;-><init>(Ljava/lang/String;ILjp/co/sony/mc/camera/view/messagedialog/MessageDialogBuilder;Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;IIIIIIIILjp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/setting/MessageType;Z)V
+
+    sput-object v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->REMOTE_CONTROL_CTA:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
+
+    .line 1311
+    new-instance v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
 
     move-object v1, v0
 
-    invoke-direct/range {v1 .. v16}, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;-><init>(Ljava/lang/String;ILjp/co/sony/mc/camera/view/messagedialog/MessageDialogBuilder;Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;IIIIIIILjp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/setting/MessageType;Z)V
+    new-instance v2, Ljp/co/sony/mc/camera/view/messagedialog/OkCancelDialogBuilder;
 
-    sput-object v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->REMOTE_CONTROL_PROBLEM:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
+    move-object v4, v2
 
-    .line 1219
-    new-instance v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
-
-    new-instance v20, Ljp/co/sony/mc/camera/view/messagedialog/OkDialogBuilder;
-
-    invoke-direct/range {v20 .. v20}, Ljp/co/sony/mc/camera/view/messagedialog/OkDialogBuilder;-><init>()V
-
-    sget-object v21, Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;->LOW:Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;
-
-    sget-object v29, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->TRUE:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
-
-    sget-object v30, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->FALSE:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
-
-    sget-object v31, Ljp/co/sony/mc/camera/setting/MessageType;->NO_MESSAGE:Ljp/co/sony/mc/camera/setting/MessageType;
-
-    const-string v18, "REMOTE_CONTROL_ALREADY_PAIRED"
-
-    const/16 v19, 0x4b
-
-    const v23, 0x7f11003b
-
-    const v26, 0x7f110042
-
-    const/16 v27, -0x1
-
-    move-object/from16 v17, v0
-
-    invoke-direct/range {v17 .. v32}, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;-><init>(Ljava/lang/String;ILjp/co/sony/mc/camera/view/messagedialog/MessageDialogBuilder;Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;IIIIIIILjp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/setting/MessageType;Z)V
-
-    sput-object v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->REMOTE_CONTROL_ALREADY_PAIRED:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
-
-    .line 1235
-    new-instance v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
-
-    new-instance v4, Ljp/co/sony/mc/camera/view/messagedialog/OkDialogBuilder;
-
-    invoke-direct {v4}, Ljp/co/sony/mc/camera/view/messagedialog/OkDialogBuilder;-><init>()V
+    invoke-direct {v2}, Ljp/co/sony/mc/camera/view/messagedialog/OkCancelDialogBuilder;-><init>()V
 
     sget-object v5, Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;->LOW:Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;
 
-    sget-object v13, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->FALSE:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
+    sget-object v14, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->TRUE:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
 
-    sget-object v14, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->FALSE:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
+    sget-object v15, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->FALSE:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
 
-    sget-object v15, Ljp/co/sony/mc/camera/setting/MessageType;->NO_MESSAGE:Ljp/co/sony/mc/camera/setting/MessageType;
+    sget-object v16, Ljp/co/sony/mc/camera/setting/MessageType;->NO_MESSAGE:Ljp/co/sony/mc/camera/setting/MessageType;
 
-    const-string v2, "REMOTE_CONTROL_BT_OFF"
+    const-string v2, "REMOTE_CONTROL_PROBLEM"
 
     const/16 v3, 0x4c
 
-    const/4 v6, -0x1
+    const v6, 0x7f110032
 
-    const v7, 0x7f110043
+    const v7, 0x7f110031
 
-    const v10, 0x7f110040
+    const v11, 0x7f110036
 
-    const/4 v11, -0x1
+    const v12, 0x7f110035
+
+    invoke-direct/range {v1 .. v17}, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;-><init>(Ljava/lang/String;ILjp/co/sony/mc/camera/view/messagedialog/MessageDialogBuilder;Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;IIIIIIIILjp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/setting/MessageType;Z)V
+
+    sput-object v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->REMOTE_CONTROL_PROBLEM:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
+
+    .line 1328
+    new-instance v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
+
+    move-object/from16 v18, v0
+
+    new-instance v1, Ljp/co/sony/mc/camera/view/messagedialog/OkDialogBuilder;
+
+    move-object/from16 v21, v1
+
+    invoke-direct {v1}, Ljp/co/sony/mc/camera/view/messagedialog/OkDialogBuilder;-><init>()V
+
+    sget-object v22, Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;->LOW:Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;
+
+    sget-object v31, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->TRUE:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
+
+    sget-object v32, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->FALSE:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
+
+    sget-object v33, Ljp/co/sony/mc/camera/setting/MessageType;->NO_MESSAGE:Ljp/co/sony/mc/camera/setting/MessageType;
+
+    const-string v19, "REMOTE_CONTROL_ALREADY_PAIRED"
+
+    const/16 v20, 0x4d
+
+    const v24, 0x7f110030
+
+    const v28, 0x7f110037
+
+    const/16 v29, -0x1
+
+    invoke-direct/range {v18 .. v34}, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;-><init>(Ljava/lang/String;ILjp/co/sony/mc/camera/view/messagedialog/MessageDialogBuilder;Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;IIIIIIIILjp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/setting/MessageType;Z)V
+
+    sput-object v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->REMOTE_CONTROL_ALREADY_PAIRED:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
+
+    .line 1345
+    new-instance v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
 
     move-object v1, v0
 
-    invoke-direct/range {v1 .. v16}, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;-><init>(Ljava/lang/String;ILjp/co/sony/mc/camera/view/messagedialog/MessageDialogBuilder;Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;IIIIIIILjp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/setting/MessageType;Z)V
+    new-instance v2, Ljp/co/sony/mc/camera/view/messagedialog/OkDialogBuilder;
 
-    sput-object v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->REMOTE_CONTROL_BT_OFF:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
+    move-object v4, v2
 
-    .line 1251
-    new-instance v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
-
-    new-instance v20, Ljp/co/sony/mc/camera/view/messagedialog/OkDialogBuilder;
-
-    invoke-direct/range {v20 .. v20}, Ljp/co/sony/mc/camera/view/messagedialog/OkDialogBuilder;-><init>()V
-
-    sget-object v21, Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;->LOW:Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;
-
-    sget-object v29, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->FALSE:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
-
-    sget-object v30, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->FALSE:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
-
-    sget-object v31, Ljp/co/sony/mc/camera/setting/MessageType;->NO_MESSAGE:Ljp/co/sony/mc/camera/setting/MessageType;
-
-    const-string v18, "REMOTE_CONTROL_TIMEOUT"
-
-    const/16 v19, 0x4d
-
-    const v23, 0x7f110044
-
-    const v26, 0x7f110040
-
-    move-object/from16 v17, v0
-
-    invoke-direct/range {v17 .. v32}, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;-><init>(Ljava/lang/String;ILjp/co/sony/mc/camera/view/messagedialog/MessageDialogBuilder;Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;IIIIIIILjp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/setting/MessageType;Z)V
-
-    sput-object v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->REMOTE_CONTROL_TIMEOUT:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
-
-    .line 1267
-    new-instance v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
-
-    new-instance v4, Ljp/co/sony/mc/camera/view/messagedialog/OkDialogBuilder;
-
-    invoke-direct {v4}, Ljp/co/sony/mc/camera/view/messagedialog/OkDialogBuilder;-><init>()V
+    invoke-direct {v2}, Ljp/co/sony/mc/camera/view/messagedialog/OkDialogBuilder;-><init>()V
 
     sget-object v5, Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;->LOW:Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;
 
-    sget-object v13, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->TRUE:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
-
     sget-object v14, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->FALSE:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
 
-    sget-object v15, Ljp/co/sony/mc/camera/setting/MessageType;->NO_MESSAGE:Ljp/co/sony/mc/camera/setting/MessageType;
+    sget-object v15, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->FALSE:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
 
-    const-string v2, "ENDURANCE_MODE_TO_USE_REMOTE"
+    sget-object v16, Ljp/co/sony/mc/camera/setting/MessageType;->NO_MESSAGE:Ljp/co/sony/mc/camera/setting/MessageType;
+
+    const-string v2, "REMOTE_CONTROL_BT_OFF"
 
     const/16 v3, 0x4e
 
-    const v7, 0x7f11004d
+    const/4 v6, -0x1
 
-    move-object v1, v0
+    const v7, 0x7f110038
 
-    invoke-direct/range {v1 .. v16}, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;-><init>(Ljava/lang/String;ILjp/co/sony/mc/camera/view/messagedialog/MessageDialogBuilder;Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;IIIIIIILjp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/setting/MessageType;Z)V
+    const v11, 0x7f110035
 
-    sput-object v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->ENDURANCE_MODE_TO_USE_REMOTE:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
+    const/4 v12, -0x1
 
-    .line 1283
+    invoke-direct/range {v1 .. v17}, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;-><init>(Ljava/lang/String;ILjp/co/sony/mc/camera/view/messagedialog/MessageDialogBuilder;Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;IIIIIIIILjp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/setting/MessageType;Z)V
+
+    sput-object v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->REMOTE_CONTROL_BT_OFF:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
+
+    .line 1362
     new-instance v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
 
-    new-instance v20, Ljp/co/sony/mc/camera/view/messagedialog/OkCancelDialogBuilder;
+    move-object/from16 v18, v0
 
-    invoke-direct/range {v20 .. v20}, Ljp/co/sony/mc/camera/view/messagedialog/OkCancelDialogBuilder;-><init>()V
+    new-instance v1, Ljp/co/sony/mc/camera/view/messagedialog/OkDialogBuilder;
 
-    sget-object v21, Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;->LOW:Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;
+    move-object/from16 v21, v1
 
-    sget-object v29, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->TRUE:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
+    invoke-direct {v1}, Ljp/co/sony/mc/camera/view/messagedialog/OkDialogBuilder;-><init>()V
 
-    sget-object v30, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->FALSE:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
+    sget-object v22, Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;->LOW:Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;
 
-    sget-object v31, Ljp/co/sony/mc/camera/setting/MessageType;->NO_MESSAGE:Ljp/co/sony/mc/camera/setting/MessageType;
+    sget-object v31, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->FALSE:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
 
-    const-string v18, "ENDURANCE_MODE_TITLE_ATTENTION"
+    sget-object v32, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->FALSE:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
 
-    const/16 v19, 0x4f
+    sget-object v33, Ljp/co/sony/mc/camera/setting/MessageType;->NO_MESSAGE:Ljp/co/sony/mc/camera/setting/MessageType;
 
-    const v22, 0x7f110048
+    const-string v19, "REMOTE_CONTROL_TIMEOUT"
 
-    const v23, 0x7f110047
+    const/16 v20, 0x4f
 
-    const v24, 0x7f080384
+    const v24, 0x7f110039
 
-    const v26, 0x7f11003e
+    const v28, 0x7f110035
 
-    const v27, 0x7f11003f
+    invoke-direct/range {v18 .. v34}, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;-><init>(Ljava/lang/String;ILjp/co/sony/mc/camera/view/messagedialog/MessageDialogBuilder;Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;IIIIIIIILjp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/setting/MessageType;Z)V
 
-    move-object/from16 v17, v0
-
-    invoke-direct/range {v17 .. v32}, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;-><init>(Ljava/lang/String;ILjp/co/sony/mc/camera/view/messagedialog/MessageDialogBuilder;Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;IIIIIIILjp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/setting/MessageType;Z)V
-
-    sput-object v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->ENDURANCE_MODE_TITLE_ATTENTION:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
-
-    .line 1299
-    new-instance v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
-
-    new-instance v4, Ljp/co/sony/mc/camera/view/messagedialog/OkDialogBuilder;
-
-    invoke-direct {v4}, Ljp/co/sony/mc/camera/view/messagedialog/OkDialogBuilder;-><init>()V
-
-    sget-object v5, Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;->LOW:Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;
-
-    sget-object v13, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->TRUE:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
-
-    sget-object v14, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->FALSE:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
-
-    sget-object v15, Ljp/co/sony/mc/camera/setting/MessageType;->NO_MESSAGE:Ljp/co/sony/mc/camera/setting/MessageType;
-
-    const-string v2, "ENDURANCE_MODE_ENABLE_REMOTE"
-
-    const/16 v3, 0x50
-
-    const v7, 0x7f11004b
-
-    const v10, 0x7f110042
-
-    move-object v1, v0
-
-    invoke-direct/range {v1 .. v16}, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;-><init>(Ljava/lang/String;ILjp/co/sony/mc/camera/view/messagedialog/MessageDialogBuilder;Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;IIIIIIILjp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/setting/MessageType;Z)V
-
-    sput-object v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->ENDURANCE_MODE_ENABLE_REMOTE:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
-
-    .line 1315
-    new-instance v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
-
-    new-instance v20, Ljp/co/sony/mc/camera/view/messagedialog/OkDialogBuilder;
-
-    invoke-direct/range {v20 .. v20}, Ljp/co/sony/mc/camera/view/messagedialog/OkDialogBuilder;-><init>()V
-
-    sget-object v21, Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;->IMMEDIATELY:Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;
-
-    sget-object v29, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->TRUE:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
-
-    sget-object v30, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->FALSE:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
-
-    sget-object v31, Ljp/co/sony/mc/camera/setting/MessageType;->NO_MESSAGE:Ljp/co/sony/mc/camera/setting/MessageType;
-
-    const-string v18, "ENDURANCE_MODE_TURN_ON_ENDURANCE"
-
-    const/16 v19, 0x51
-
-    const/16 v22, -0x1
-
-    const v23, 0x7f11004c
-
-    const/16 v24, -0x1
-
-    const v26, 0x7f110042
-
-    const/16 v27, -0x1
-
-    move-object/from16 v17, v0
-
-    invoke-direct/range {v17 .. v32}, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;-><init>(Ljava/lang/String;ILjp/co/sony/mc/camera/view/messagedialog/MessageDialogBuilder;Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;IIIIIIILjp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/setting/MessageType;Z)V
-
-    sput-object v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->ENDURANCE_MODE_TURN_ON_ENDURANCE:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
-
-    .line 1331
-    new-instance v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
-
-    new-instance v4, Ljp/co/sony/mc/camera/view/messagedialog/OkDialogBuilder;
-
-    invoke-direct {v4}, Ljp/co/sony/mc/camera/view/messagedialog/OkDialogBuilder;-><init>()V
-
-    sget-object v5, Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;->IMMEDIATELY:Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;
-
-    sget-object v13, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->TRUE:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
-
-    sget-object v14, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->FALSE:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
-
-    sget-object v15, Ljp/co/sony/mc/camera/setting/MessageType;->NO_MESSAGE:Ljp/co/sony/mc/camera/setting/MessageType;
-
-    const-string v2, "ENDURANCE_MODE_CONNECT_REMOTE"
-
-    const/16 v3, 0x52
-
-    const v7, 0x7f11004a
-
-    move-object v1, v0
-
-    invoke-direct/range {v1 .. v16}, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;-><init>(Ljava/lang/String;ILjp/co/sony/mc/camera/view/messagedialog/MessageDialogBuilder;Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;IIIIIIILjp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/setting/MessageType;Z)V
-
-    sput-object v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->ENDURANCE_MODE_CONNECT_REMOTE:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
-
-    .line 1347
-    new-instance v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
-
-    new-instance v20, Ljp/co/sony/mc/camera/view/messagedialog/OkDialogBuilder;
-
-    invoke-direct/range {v20 .. v20}, Ljp/co/sony/mc/camera/view/messagedialog/OkDialogBuilder;-><init>()V
-
-    sget-object v21, Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;->HIGH:Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;
-
-    sget-object v29, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->TRUE:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
-
-    sget-object v30, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->FALSE:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
-
-    sget-object v31, Ljp/co/sony/mc/camera/setting/MessageType;->NO_MESSAGE:Ljp/co/sony/mc/camera/setting/MessageType;
-
-    const-string v18, "ENDURANCE_MODE_CONNECT_REMOTE_TO_CONTINUE"
-
-    const/16 v19, 0x53
-
-    const v23, 0x7f110049
-
-    move-object/from16 v17, v0
-
-    invoke-direct/range {v17 .. v32}, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;-><init>(Ljava/lang/String;ILjp/co/sony/mc/camera/view/messagedialog/MessageDialogBuilder;Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;IIIIIIILjp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/setting/MessageType;Z)V
-
-    sput-object v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->ENDURANCE_MODE_CONNECT_REMOTE_TO_CONTINUE:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
-
-    .line 1363
-    new-instance v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
-
-    new-instance v4, Ljp/co/sony/mc/camera/view/messagedialog/OkCancelDialogBuilder;
-
-    invoke-direct {v4}, Ljp/co/sony/mc/camera/view/messagedialog/OkCancelDialogBuilder;-><init>()V
-
-    sget-object v5, Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;->LOW:Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;
-
-    sget-object v13, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->TRUE:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
-
-    sget-object v14, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->FALSE:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
-
-    sget-object v15, Ljp/co/sony/mc/camera/setting/MessageType;->NO_MESSAGE:Ljp/co/sony/mc/camera/setting/MessageType;
-
-    const-string v2, "TO_CONNECT_NEARLY_DEVICES"
-
-    const/16 v3, 0x54
-
-    const v6, 0x7f11039f
-
-    const/4 v7, -0x1
-
-    const v10, 0x7f110137
-
-    const v11, 0x7f11013d
-
-    move-object v1, v0
-
-    invoke-direct/range {v1 .. v16}, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;-><init>(Ljava/lang/String;ILjp/co/sony/mc/camera/view/messagedialog/MessageDialogBuilder;Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;IIIIIIILjp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/setting/MessageType;Z)V
-
-    sput-object v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->TO_CONNECT_NEARLY_DEVICES:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
+    sput-object v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->REMOTE_CONTROL_TIMEOUT:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
 
     .line 1379
     new-instance v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
 
-    new-instance v20, Ljp/co/sony/mc/camera/view/messagedialog/OkCancelWithCheckBoxDialogBuilder;
-
-    invoke-direct/range {v20 .. v20}, Ljp/co/sony/mc/camera/view/messagedialog/OkCancelWithCheckBoxDialogBuilder;-><init>()V
-
-    sget-object v21, Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;->LOW:Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;
-
-    sget-object v29, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->TRUE:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
-
-    sget-object v30, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->FALSE:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
-
-    sget-object v31, Ljp/co/sony/mc/camera/setting/MessageType;->STREAMING_NOTES_ON_USE_CHECK:Ljp/co/sony/mc/camera/setting/MessageType;
-
-    const-string v18, "STREAMING_NOTES_ON_USE_CHECK"
-
-    const/16 v19, 0x55
-
-    const v22, 0x7f1101a2
-
-    const/16 v23, -0x1
-
-    const v26, 0x7f110323
-
-    const v27, 0x7f11013d
-
-    const v28, 0x7f0c005a
-
-    move-object/from16 v17, v0
-
-    invoke-direct/range {v17 .. v32}, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;-><init>(Ljava/lang/String;ILjp/co/sony/mc/camera/view/messagedialog/MessageDialogBuilder;Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;IIIIIIILjp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/setting/MessageType;Z)V
-
-    sput-object v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->STREAMING_NOTES_ON_USE_CHECK:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
-
-    .line 1395
-    new-instance v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
-
-    new-instance v4, Ljp/co/sony/mc/camera/view/messagedialog/OkDialogBuilder;
-
-    invoke-direct {v4}, Ljp/co/sony/mc/camera/view/messagedialog/OkDialogBuilder;-><init>()V
-
-    sget-object v5, Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;->LOW:Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;
-
-    sget-object v13, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->TRUE:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
-
-    sget-object v14, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->FALSE:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
-
-    sget-object v15, Ljp/co/sony/mc/camera/setting/MessageType;->NO_MESSAGE:Ljp/co/sony/mc/camera/setting/MessageType;
-
-    const-string v2, "STREAMING_PRIVACY_POLICY"
-
-    const/16 v3, 0x56
-
-    const v6, 0x7f1101ab
-
-    const v10, 0x7f110323
-
-    const/4 v11, -0x1
-
     move-object v1, v0
 
-    invoke-direct/range {v1 .. v16}, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;-><init>(Ljava/lang/String;ILjp/co/sony/mc/camera/view/messagedialog/MessageDialogBuilder;Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;IIIIIIILjp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/setting/MessageType;Z)V
+    new-instance v2, Ljp/co/sony/mc/camera/view/messagedialog/OkDialogBuilder;
 
-    sput-object v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->STREAMING_PRIVACY_POLICY:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
+    move-object v4, v2
 
-    .line 1411
-    new-instance v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
-
-    new-instance v20, Ljp/co/sony/mc/camera/view/messagedialog/OkDialogBuilder;
-
-    invoke-direct/range {v20 .. v20}, Ljp/co/sony/mc/camera/view/messagedialog/OkDialogBuilder;-><init>()V
-
-    sget-object v21, Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;->LOW:Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;
-
-    sget-object v29, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->TRUE:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
-
-    sget-object v30, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->FALSE:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
-
-    sget-object v31, Ljp/co/sony/mc/camera/setting/MessageType;->NO_MESSAGE:Ljp/co/sony/mc/camera/setting/MessageType;
-
-    const-string v18, "STREAMING_NOTES_ON_USE"
-
-    const/16 v19, 0x57
-
-    const/16 v27, -0x1
-
-    const/16 v28, -0x1
-
-    move-object/from16 v17, v0
-
-    invoke-direct/range {v17 .. v32}, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;-><init>(Ljava/lang/String;ILjp/co/sony/mc/camera/view/messagedialog/MessageDialogBuilder;Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;IIIIIIILjp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/setting/MessageType;Z)V
-
-    sput-object v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->STREAMING_NOTES_ON_USE:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
-
-    .line 1427
-    new-instance v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
-
-    new-instance v4, Ljp/co/sony/mc/camera/view/messagedialog/StartStreamingDialogBuilder;
-
-    invoke-direct {v4}, Ljp/co/sony/mc/camera/view/messagedialog/StartStreamingDialogBuilder;-><init>()V
+    invoke-direct {v2}, Ljp/co/sony/mc/camera/view/messagedialog/OkDialogBuilder;-><init>()V
 
     sget-object v5, Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;->LOW:Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;
-
-    sget-object v13, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->TRUE:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
-
-    sget-object v14, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->USE_DEFAULT:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
-
-    sget-object v15, Ljp/co/sony/mc/camera/setting/MessageType;->NO_MESSAGE:Ljp/co/sony/mc/camera/setting/MessageType;
-
-    const-string v2, "PREPARE_STREAMING"
-
-    const/16 v3, 0x58
-
-    const v6, 0x7f1101b7
-
-    const v10, 0x7f110196
-
-    const v11, 0x7f11013d
-
-    const v12, 0x7f0c004e
-
-    move-object v1, v0
-
-    invoke-direct/range {v1 .. v16}, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;-><init>(Ljava/lang/String;ILjp/co/sony/mc/camera/view/messagedialog/MessageDialogBuilder;Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;IIIIIIILjp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/setting/MessageType;Z)V
-
-    sput-object v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->PREPARE_STREAMING:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
-
-    .line 1443
-    new-instance v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
-
-    new-instance v20, Ljp/co/sony/mc/camera/view/messagedialog/OkCancelDialogBuilder;
-
-    invoke-direct/range {v20 .. v20}, Ljp/co/sony/mc/camera/view/messagedialog/OkCancelDialogBuilder;-><init>()V
-
-    sget-object v21, Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;->LOW:Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;
-
-    sget-object v29, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->TRUE:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
-
-    sget-object v30, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->USE_DEFAULT:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
-
-    sget-object v31, Ljp/co/sony/mc/camera/setting/MessageType;->NO_MESSAGE:Ljp/co/sony/mc/camera/setting/MessageType;
-
-    const-string v18, "CONFIRM_STOP_STREAMING"
-
-    const/16 v19, 0x59
-
-    const/16 v22, -0x1
-
-    const v23, 0x7f11019a
-
-    const v26, 0x7f110192
-
-    const v27, 0x7f11013d
-
-    move-object/from16 v17, v0
-
-    invoke-direct/range {v17 .. v32}, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;-><init>(Ljava/lang/String;ILjp/co/sony/mc/camera/view/messagedialog/MessageDialogBuilder;Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;IIIIIIILjp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/setting/MessageType;Z)V
-
-    sput-object v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->CONFIRM_STOP_STREAMING:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
-
-    .line 1459
-    new-instance v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
-
-    new-instance v4, Ljp/co/sony/mc/camera/view/messagedialog/OkDialogBuilder;
-
-    invoke-direct {v4}, Ljp/co/sony/mc/camera/view/messagedialog/OkDialogBuilder;-><init>()V
-
-    sget-object v5, Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;->LOW:Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;
-
-    sget-object v13, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->TRUE:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
-
-    sget-object v14, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->FALSE:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
-
-    sget-object v15, Ljp/co/sony/mc/camera/setting/MessageType;->NO_MESSAGE:Ljp/co/sony/mc/camera/setting/MessageType;
-
-    const/16 v16, 0x1
-
-    const-string v2, "DUE_TO_SCREEN_LOCKED"
-
-    const/16 v3, 0x5a
-
-    const/4 v6, -0x1
-
-    const v7, 0x7f11021d
-
-    const v10, 0x7f110323
-
-    const/4 v11, -0x1
-
-    const/4 v12, -0x1
-
-    move-object v1, v0
-
-    invoke-direct/range {v1 .. v16}, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;-><init>(Ljava/lang/String;ILjp/co/sony/mc/camera/view/messagedialog/MessageDialogBuilder;Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;IIIIIIILjp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/setting/MessageType;Z)V
-
-    sput-object v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->DUE_TO_SCREEN_LOCKED:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
-
-    .line 1475
-    new-instance v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
-
-    new-instance v20, Ljp/co/sony/mc/camera/view/messagedialog/OkDialogBuilder;
-
-    invoke-direct/range {v20 .. v20}, Ljp/co/sony/mc/camera/view/messagedialog/OkDialogBuilder;-><init>()V
-
-    sget-object v21, Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;->LOW:Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;
-
-    sget-object v29, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->TRUE:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
-
-    sget-object v30, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->USE_DEFAULT:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
-
-    sget-object v31, Ljp/co/sony/mc/camera/setting/MessageType;->NO_MESSAGE:Ljp/co/sony/mc/camera/setting/MessageType;
-
-    const-string v18, "DUE_TO_STREAM_URL_EMPTY"
-
-    const/16 v19, 0x5b
-
-    const v23, 0x7f11042b
-
-    const v26, 0x7f110323
-
-    const/16 v27, -0x1
-
-    move-object/from16 v17, v0
-
-    invoke-direct/range {v17 .. v32}, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;-><init>(Ljava/lang/String;ILjp/co/sony/mc/camera/view/messagedialog/MessageDialogBuilder;Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;IIIIIIILjp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/setting/MessageType;Z)V
-
-    sput-object v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->DUE_TO_STREAM_URL_EMPTY:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
-
-    .line 1491
-    new-instance v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
-
-    new-instance v4, Ljp/co/sony/mc/camera/view/messagedialog/OkDialogBuilder;
-
-    invoke-direct {v4}, Ljp/co/sony/mc/camera/view/messagedialog/OkDialogBuilder;-><init>()V
-
-    sget-object v5, Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;->LOW:Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;
-
-    sget-object v13, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->TRUE:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
-
-    sget-object v14, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->USE_DEFAULT:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
-
-    sget-object v15, Ljp/co/sony/mc/camera/setting/MessageType;->NO_MESSAGE:Ljp/co/sony/mc/camera/setting/MessageType;
-
-    const/16 v16, 0x0
-
-    const-string v2, "DUE_TO_STREAM_KEY_EMPTY"
-
-    const/16 v3, 0x5c
-
-    const v7, 0x7f11042a
-
-    move-object v1, v0
-
-    invoke-direct/range {v1 .. v16}, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;-><init>(Ljava/lang/String;ILjp/co/sony/mc/camera/view/messagedialog/MessageDialogBuilder;Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;IIIIIIILjp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/setting/MessageType;Z)V
-
-    sput-object v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->DUE_TO_STREAM_KEY_EMPTY:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
-
-    .line 1507
-    new-instance v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
-
-    new-instance v20, Ljp/co/sony/mc/camera/view/messagedialog/OkDialogBuilder;
-
-    invoke-direct/range {v20 .. v20}, Ljp/co/sony/mc/camera/view/messagedialog/OkDialogBuilder;-><init>()V
-
-    sget-object v21, Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;->LOW:Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;
-
-    sget-object v29, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->TRUE:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
-
-    sget-object v30, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->USE_DEFAULT:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
-
-    sget-object v31, Ljp/co/sony/mc/camera/setting/MessageType;->NO_MESSAGE:Ljp/co/sony/mc/camera/setting/MessageType;
-
-    const-string v18, "DUE_TO_YOUTUBE_ACCOUNT_NOT_SETUP"
-
-    const/16 v19, 0x5d
-
-    const v23, 0x7f110430
-
-    move-object/from16 v17, v0
-
-    invoke-direct/range {v17 .. v32}, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;-><init>(Ljava/lang/String;ILjp/co/sony/mc/camera/view/messagedialog/MessageDialogBuilder;Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;IIIIIIILjp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/setting/MessageType;Z)V
-
-    sput-object v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->DUE_TO_YOUTUBE_ACCOUNT_NOT_SETUP:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
-
-    .line 1523
-    new-instance v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
-
-    new-instance v4, Ljp/co/sony/mc/camera/view/messagedialog/OkDialogBuilder;
-
-    invoke-direct {v4}, Ljp/co/sony/mc/camera/view/messagedialog/OkDialogBuilder;-><init>()V
-
-    sget-object v5, Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;->LOW:Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;
-
-    sget-object v13, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->TRUE:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
-
-    sget-object v14, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->USE_DEFAULT:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
-
-    sget-object v15, Ljp/co/sony/mc/camera/setting/MessageType;->NO_MESSAGE:Ljp/co/sony/mc/camera/setting/MessageType;
-
-    const-string v2, "DUE_TO_YOUTUBE_LIVE_EVENT_NOT_FOUND"
-
-    const/16 v3, 0x5e
-
-    const v7, 0x7f110431
-
-    move-object v1, v0
-
-    invoke-direct/range {v1 .. v16}, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;-><init>(Ljava/lang/String;ILjp/co/sony/mc/camera/view/messagedialog/MessageDialogBuilder;Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;IIIIIIILjp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/setting/MessageType;Z)V
-
-    sput-object v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->DUE_TO_YOUTUBE_LIVE_EVENT_NOT_FOUND:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
-
-    .line 1539
-    new-instance v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
-
-    new-instance v20, Ljp/co/sony/mc/camera/view/messagedialog/OkDialogBuilder;
-
-    invoke-direct/range {v20 .. v20}, Ljp/co/sony/mc/camera/view/messagedialog/OkDialogBuilder;-><init>()V
-
-    sget-object v21, Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;->LOW:Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;
-
-    sget-object v29, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->TRUE:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
-
-    sget-object v30, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->USE_DEFAULT:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
-
-    sget-object v31, Ljp/co/sony/mc/camera/setting/MessageType;->NO_MESSAGE:Ljp/co/sony/mc/camera/setting/MessageType;
-
-    const-string v18, "DUE_TO_NETWORK"
-
-    const/16 v19, 0x5f
-
-    const v23, 0x7f110429
-
-    move-object/from16 v17, v0
-
-    invoke-direct/range {v17 .. v32}, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;-><init>(Ljava/lang/String;ILjp/co/sony/mc/camera/view/messagedialog/MessageDialogBuilder;Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;IIIIIIILjp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/setting/MessageType;Z)V
-
-    sput-object v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->DUE_TO_NETWORK:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
-
-    .line 1555
-    new-instance v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
-
-    new-instance v4, Ljp/co/sony/mc/camera/view/messagedialog/OkDialogBuilder;
-
-    invoke-direct {v4}, Ljp/co/sony/mc/camera/view/messagedialog/OkDialogBuilder;-><init>()V
-
-    sget-object v5, Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;->LOW:Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;
-
-    sget-object v13, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->TRUE:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
-
-    sget-object v14, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->USE_DEFAULT:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
-
-    sget-object v15, Ljp/co/sony/mc/camera/setting/MessageType;->NO_MESSAGE:Ljp/co/sony/mc/camera/setting/MessageType;
-
-    const-string v2, "DUE_TO_WIFI"
-
-    const/16 v3, 0x60
-
-    const v7, 0x7f11042e
-
-    move-object v1, v0
-
-    invoke-direct/range {v1 .. v16}, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;-><init>(Ljava/lang/String;ILjp/co/sony/mc/camera/view/messagedialog/MessageDialogBuilder;Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;IIIIIIILjp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/setting/MessageType;Z)V
-
-    sput-object v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->DUE_TO_WIFI:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
-
-    .line 1571
-    new-instance v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
-
-    new-instance v20, Ljp/co/sony/mc/camera/view/messagedialog/OkDialogBuilder;
-
-    invoke-direct/range {v20 .. v20}, Ljp/co/sony/mc/camera/view/messagedialog/OkDialogBuilder;-><init>()V
-
-    sget-object v21, Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;->LOW:Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;
-
-    sget-object v29, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->TRUE:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
-
-    sget-object v30, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->USE_DEFAULT:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
-
-    sget-object v31, Ljp/co/sony/mc/camera/setting/MessageType;->NO_MESSAGE:Ljp/co/sony/mc/camera/setting/MessageType;
-
-    const-string v18, "DUE_TO_SERVER_CONNECTION_FAILED"
-
-    const/16 v19, 0x61
-
-    const v23, 0x7f11042d
-
-    move-object/from16 v17, v0
-
-    invoke-direct/range {v17 .. v32}, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;-><init>(Ljava/lang/String;ILjp/co/sony/mc/camera/view/messagedialog/MessageDialogBuilder;Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;IIIIIIILjp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/setting/MessageType;Z)V
-
-    sput-object v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->DUE_TO_SERVER_CONNECTION_FAILED:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
-
-    .line 1587
-    new-instance v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
-
-    new-instance v4, Ljp/co/sony/mc/camera/view/messagedialog/OkDialogBuilder;
-
-    invoke-direct {v4}, Ljp/co/sony/mc/camera/view/messagedialog/OkDialogBuilder;-><init>()V
-
-    sget-object v5, Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;->LOW:Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;
-
-    sget-object v13, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->TRUE:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
-
-    sget-object v14, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->USE_DEFAULT:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
-
-    sget-object v15, Ljp/co/sony/mc/camera/setting/MessageType;->NO_MESSAGE:Ljp/co/sony/mc/camera/setting/MessageType;
-
-    const-string v2, "DUE_TO_NO_NETWORK"
-
-    const/16 v3, 0x62
-
-    const v7, 0x7f110427
-
-    move-object v1, v0
-
-    invoke-direct/range {v1 .. v16}, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;-><init>(Ljava/lang/String;ILjp/co/sony/mc/camera/view/messagedialog/MessageDialogBuilder;Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;IIIIIIILjp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/setting/MessageType;Z)V
-
-    sput-object v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->DUE_TO_NO_NETWORK:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
-
-    .line 1603
-    new-instance v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
-
-    new-instance v20, Ljp/co/sony/mc/camera/view/messagedialog/OkDialogBuilder;
-
-    invoke-direct/range {v20 .. v20}, Ljp/co/sony/mc/camera/view/messagedialog/OkDialogBuilder;-><init>()V
-
-    sget-object v21, Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;->IMMEDIATELY:Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;
-
-    sget-object v29, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->TRUE:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
-
-    sget-object v30, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->FALSE:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
-
-    sget-object v31, Ljp/co/sony/mc/camera/setting/MessageType;->NO_MESSAGE:Ljp/co/sony/mc/camera/setting/MessageType;
-
-    const-string v18, "THERMAL_CRITICAL_STREAMING"
-
-    const/16 v19, 0x63
-
-    const v22, 0x7f11019d
-
-    const v23, 0x7f1101e2
-
-    move-object/from16 v17, v0
-
-    invoke-direct/range {v17 .. v32}, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;-><init>(Ljava/lang/String;ILjp/co/sony/mc/camera/view/messagedialog/MessageDialogBuilder;Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;IIIIIIILjp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/setting/MessageType;Z)V
-
-    sput-object v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->THERMAL_CRITICAL_STREAMING:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
-
-    .line 1619
-    new-instance v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
-
-    new-instance v4, Ljp/co/sony/mc/camera/view/messagedialog/YoutubeAccountActionSelectDialogBuilder;
-
-    invoke-direct {v4}, Ljp/co/sony/mc/camera/view/messagedialog/YoutubeAccountActionSelectDialogBuilder;-><init>()V
-
-    sget-object v5, Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;->LOW:Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;
-
-    sget-object v13, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->TRUE:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
 
     sget-object v14, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->TRUE:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
 
-    sget-object v15, Ljp/co/sony/mc/camera/setting/MessageType;->NO_MESSAGE:Ljp/co/sony/mc/camera/setting/MessageType;
+    sget-object v15, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->FALSE:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
 
-    const-string v2, "YOUTUBE_ACCOUNT_ACTION_SELECT"
+    sget-object v16, Ljp/co/sony/mc/camera/setting/MessageType;->NO_MESSAGE:Ljp/co/sony/mc/camera/setting/MessageType;
 
-    const/16 v3, 0x64
+    const-string v2, "ENDURANCE_MODE_TO_USE_REMOTE"
 
-    const v6, 0x7f110483
+    const/16 v3, 0x50
 
-    const/4 v7, -0x1
+    const v7, 0x7f110042
 
-    const v10, 0x7f110195
+    invoke-direct/range {v1 .. v17}, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;-><init>(Ljava/lang/String;ILjp/co/sony/mc/camera/view/messagedialog/MessageDialogBuilder;Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;IIIIIIIILjp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/setting/MessageType;Z)V
 
-    const v11, 0x7f110194
+    sput-object v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->ENDURANCE_MODE_TO_USE_REMOTE:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
 
-    const v12, 0x7f0c0058
+    .line 1396
+    new-instance v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
+
+    move-object/from16 v18, v0
+
+    new-instance v1, Ljp/co/sony/mc/camera/view/messagedialog/OkCancelDialogBuilder;
+
+    move-object/from16 v21, v1
+
+    invoke-direct {v1}, Ljp/co/sony/mc/camera/view/messagedialog/OkCancelDialogBuilder;-><init>()V
+
+    sget-object v22, Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;->LOW:Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;
+
+    sget-object v31, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->TRUE:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
+
+    sget-object v32, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->FALSE:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
+
+    sget-object v33, Ljp/co/sony/mc/camera/setting/MessageType;->NO_MESSAGE:Ljp/co/sony/mc/camera/setting/MessageType;
+
+    const-string v19, "ENDURANCE_MODE_TITLE_ATTENTION"
+
+    const/16 v20, 0x51
+
+    const v23, 0x7f11003d
+
+    const v24, 0x7f11003c
+
+    const v25, 0x7f08039f
+
+    const v28, 0x7f110033
+
+    const v29, 0x7f110034
+
+    invoke-direct/range {v18 .. v34}, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;-><init>(Ljava/lang/String;ILjp/co/sony/mc/camera/view/messagedialog/MessageDialogBuilder;Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;IIIIIIIILjp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/setting/MessageType;Z)V
+
+    sput-object v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->ENDURANCE_MODE_TITLE_ATTENTION:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
+
+    .line 1413
+    new-instance v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
 
     move-object v1, v0
 
-    invoke-direct/range {v1 .. v16}, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;-><init>(Ljava/lang/String;ILjp/co/sony/mc/camera/view/messagedialog/MessageDialogBuilder;Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;IIIIIIILjp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/setting/MessageType;Z)V
+    new-instance v2, Ljp/co/sony/mc/camera/view/messagedialog/OkDialogBuilder;
 
-    sput-object v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->YOUTUBE_ACCOUNT_ACTION_SELECT:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
+    move-object v4, v2
 
-    .line 1635
+    invoke-direct {v2}, Ljp/co/sony/mc/camera/view/messagedialog/OkDialogBuilder;-><init>()V
+
+    sget-object v5, Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;->LOW:Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;
+
+    sget-object v14, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->TRUE:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
+
+    sget-object v15, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->FALSE:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
+
+    sget-object v16, Ljp/co/sony/mc/camera/setting/MessageType;->NO_MESSAGE:Ljp/co/sony/mc/camera/setting/MessageType;
+
+    const-string v2, "ENDURANCE_MODE_ENABLE_REMOTE"
+
+    const/16 v3, 0x52
+
+    const v7, 0x7f110040
+
+    const v11, 0x7f110037
+
+    invoke-direct/range {v1 .. v17}, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;-><init>(Ljava/lang/String;ILjp/co/sony/mc/camera/view/messagedialog/MessageDialogBuilder;Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;IIIIIIIILjp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/setting/MessageType;Z)V
+
+    sput-object v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->ENDURANCE_MODE_ENABLE_REMOTE:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
+
+    .line 1430
     new-instance v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
 
-    new-instance v20, Ljp/co/sony/mc/camera/view/messagedialog/CancelDialogBuilder;
+    move-object/from16 v18, v0
 
-    invoke-direct/range {v20 .. v20}, Ljp/co/sony/mc/camera/view/messagedialog/CancelDialogBuilder;-><init>()V
+    new-instance v1, Ljp/co/sony/mc/camera/view/messagedialog/OkDialogBuilder;
 
-    sget-object v21, Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;->NORMAL:Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;
+    move-object/from16 v21, v1
 
-    sget-object v29, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->TRUE:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
+    invoke-direct {v1}, Ljp/co/sony/mc/camera/view/messagedialog/OkDialogBuilder;-><init>()V
 
-    sget-object v30, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->FALSE:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
+    sget-object v22, Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;->IMMEDIATELY:Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;
 
-    sget-object v31, Ljp/co/sony/mc/camera/setting/MessageType;->NO_MESSAGE:Ljp/co/sony/mc/camera/setting/MessageType;
+    sget-object v31, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->TRUE:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
 
-    const-string v18, "GET_YOUTUBE_LIVE_EVENT_PROCESSING"
+    sget-object v32, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->FALSE:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
 
-    const/16 v19, 0x65
+    sget-object v33, Ljp/co/sony/mc/camera/setting/MessageType;->NO_MESSAGE:Ljp/co/sony/mc/camera/setting/MessageType;
 
-    const v22, 0x7f1101b0
+    const-string v19, "ENDURANCE_MODE_TURN_ON_ENDURANCE"
+
+    const/16 v20, 0x53
 
     const/16 v23, -0x1
 
-    const/16 v26, -0x1
+    const v24, 0x7f110041
 
-    const v27, 0x7f11013d
+    const/16 v25, -0x1
 
-    const v28, 0x7f0c004d
+    const v28, 0x7f110037
 
-    move-object/from16 v17, v0
+    const/16 v29, -0x1
 
-    invoke-direct/range {v17 .. v32}, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;-><init>(Ljava/lang/String;ILjp/co/sony/mc/camera/view/messagedialog/MessageDialogBuilder;Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;IIIIIIILjp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/setting/MessageType;Z)V
+    invoke-direct/range {v18 .. v34}, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;-><init>(Ljava/lang/String;ILjp/co/sony/mc/camera/view/messagedialog/MessageDialogBuilder;Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;IIIIIIIILjp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/setting/MessageType;Z)V
 
-    sput-object v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->GET_YOUTUBE_LIVE_EVENT_PROCESSING:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
+    sput-object v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->ENDURANCE_MODE_TURN_ON_ENDURANCE:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
+
+    .line 1447
+    new-instance v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
+
+    move-object v1, v0
+
+    new-instance v2, Ljp/co/sony/mc/camera/view/messagedialog/OkDialogBuilder;
+
+    move-object v4, v2
+
+    invoke-direct {v2}, Ljp/co/sony/mc/camera/view/messagedialog/OkDialogBuilder;-><init>()V
+
+    sget-object v5, Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;->IMMEDIATELY:Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;
+
+    sget-object v14, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->TRUE:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
+
+    sget-object v15, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->FALSE:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
+
+    sget-object v16, Ljp/co/sony/mc/camera/setting/MessageType;->NO_MESSAGE:Ljp/co/sony/mc/camera/setting/MessageType;
+
+    const-string v2, "ENDURANCE_MODE_CONNECT_REMOTE"
+
+    const/16 v3, 0x54
+
+    const v7, 0x7f11003f
+
+    invoke-direct/range {v1 .. v17}, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;-><init>(Ljava/lang/String;ILjp/co/sony/mc/camera/view/messagedialog/MessageDialogBuilder;Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;IIIIIIIILjp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/setting/MessageType;Z)V
+
+    sput-object v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->ENDURANCE_MODE_CONNECT_REMOTE:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
+
+    .line 1464
+    new-instance v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
+
+    move-object/from16 v18, v0
+
+    new-instance v1, Ljp/co/sony/mc/camera/view/messagedialog/OkDialogBuilder;
+
+    move-object/from16 v21, v1
+
+    invoke-direct {v1}, Ljp/co/sony/mc/camera/view/messagedialog/OkDialogBuilder;-><init>()V
+
+    sget-object v22, Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;->HIGH:Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;
+
+    sget-object v31, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->TRUE:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
+
+    sget-object v32, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->FALSE:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
+
+    sget-object v33, Ljp/co/sony/mc/camera/setting/MessageType;->NO_MESSAGE:Ljp/co/sony/mc/camera/setting/MessageType;
+
+    const-string v19, "ENDURANCE_MODE_CONNECT_REMOTE_TO_CONTINUE"
+
+    const/16 v20, 0x55
+
+    const v24, 0x7f11003e
+
+    invoke-direct/range {v18 .. v34}, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;-><init>(Ljava/lang/String;ILjp/co/sony/mc/camera/view/messagedialog/MessageDialogBuilder;Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;IIIIIIIILjp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/setting/MessageType;Z)V
+
+    sput-object v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->ENDURANCE_MODE_CONNECT_REMOTE_TO_CONTINUE:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
+
+    .line 1481
+    new-instance v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
+
+    move-object v1, v0
+
+    new-instance v2, Ljp/co/sony/mc/camera/view/messagedialog/OkCancelDialogBuilder;
+
+    move-object v4, v2
+
+    invoke-direct {v2}, Ljp/co/sony/mc/camera/view/messagedialog/OkCancelDialogBuilder;-><init>()V
+
+    sget-object v5, Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;->LOW:Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;
+
+    sget-object v14, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->TRUE:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
+
+    sget-object v15, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->FALSE:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
+
+    sget-object v16, Ljp/co/sony/mc/camera/setting/MessageType;->NO_MESSAGE:Ljp/co/sony/mc/camera/setting/MessageType;
+
+    const-string v2, "TO_CONNECT_NEARLY_DEVICES"
+
+    const/16 v3, 0x56
+
+    const v6, 0x7f1103d3
+
+    const/4 v7, -0x1
+
+    const v11, 0x7f11013a
+
+    const v12, 0x7f110140
+
+    invoke-direct/range {v1 .. v17}, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;-><init>(Ljava/lang/String;ILjp/co/sony/mc/camera/view/messagedialog/MessageDialogBuilder;Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;IIIIIIIILjp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/setting/MessageType;Z)V
+
+    sput-object v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->TO_CONNECT_NEARLY_DEVICES:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
+
+    .line 1498
+    new-instance v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
+
+    move-object/from16 v18, v0
+
+    new-instance v1, Ljp/co/sony/mc/camera/view/messagedialog/OkCancelWithCheckBoxDialogBuilder;
+
+    move-object/from16 v21, v1
+
+    invoke-direct {v1}, Ljp/co/sony/mc/camera/view/messagedialog/OkCancelWithCheckBoxDialogBuilder;-><init>()V
+
+    sget-object v22, Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;->LOW:Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;
+
+    sget-object v31, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->TRUE:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
+
+    sget-object v32, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->FALSE:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
+
+    sget-object v33, Ljp/co/sony/mc/camera/setting/MessageType;->STREAMING_NOTES_ON_USE_CHECK:Ljp/co/sony/mc/camera/setting/MessageType;
+
+    const-string v19, "STREAMING_NOTES_ON_USE_CHECK"
+
+    const/16 v20, 0x57
+
+    const v23, 0x7f1101a5
+
+    const/16 v24, -0x1
+
+    const v28, 0x7f110355
+
+    const v29, 0x7f110140
+
+    const v30, 0x7f0c005a
+
+    invoke-direct/range {v18 .. v34}, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;-><init>(Ljava/lang/String;ILjp/co/sony/mc/camera/view/messagedialog/MessageDialogBuilder;Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;IIIIIIIILjp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/setting/MessageType;Z)V
+
+    sput-object v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->STREAMING_NOTES_ON_USE_CHECK:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
+
+    .line 1515
+    new-instance v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
+
+    move-object v1, v0
+
+    new-instance v2, Ljp/co/sony/mc/camera/view/messagedialog/OkDialogBuilder;
+
+    move-object v4, v2
+
+    invoke-direct {v2}, Ljp/co/sony/mc/camera/view/messagedialog/OkDialogBuilder;-><init>()V
+
+    sget-object v5, Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;->LOW:Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;
+
+    sget-object v14, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->TRUE:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
+
+    sget-object v15, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->FALSE:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
+
+    sget-object v16, Ljp/co/sony/mc/camera/setting/MessageType;->NO_MESSAGE:Ljp/co/sony/mc/camera/setting/MessageType;
+
+    const-string v2, "STREAMING_PRIVACY_POLICY"
+
+    const/16 v3, 0x58
+
+    const v6, 0x7f1101ae
+
+    const v11, 0x7f110355
+
+    const/4 v12, -0x1
+
+    invoke-direct/range {v1 .. v17}, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;-><init>(Ljava/lang/String;ILjp/co/sony/mc/camera/view/messagedialog/MessageDialogBuilder;Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;IIIIIIIILjp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/setting/MessageType;Z)V
+
+    sput-object v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->STREAMING_PRIVACY_POLICY:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
+
+    .line 1532
+    new-instance v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
+
+    move-object/from16 v18, v0
+
+    new-instance v1, Ljp/co/sony/mc/camera/view/messagedialog/OkDialogBuilder;
+
+    move-object/from16 v21, v1
+
+    invoke-direct {v1}, Ljp/co/sony/mc/camera/view/messagedialog/OkDialogBuilder;-><init>()V
+
+    sget-object v22, Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;->LOW:Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;
+
+    sget-object v31, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->TRUE:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
+
+    sget-object v32, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->FALSE:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
+
+    sget-object v33, Ljp/co/sony/mc/camera/setting/MessageType;->NO_MESSAGE:Ljp/co/sony/mc/camera/setting/MessageType;
+
+    const-string v19, "STREAMING_NOTES_ON_USE"
+
+    const/16 v20, 0x59
+
+    const/16 v29, -0x1
+
+    const/16 v30, -0x1
+
+    invoke-direct/range {v18 .. v34}, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;-><init>(Ljava/lang/String;ILjp/co/sony/mc/camera/view/messagedialog/MessageDialogBuilder;Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;IIIIIIIILjp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/setting/MessageType;Z)V
+
+    sput-object v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->STREAMING_NOTES_ON_USE:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
+
+    .line 1549
+    new-instance v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
+
+    move-object v1, v0
+
+    new-instance v2, Ljp/co/sony/mc/camera/view/messagedialog/StartStreamingDialogBuilder;
+
+    move-object v4, v2
+
+    invoke-direct {v2}, Ljp/co/sony/mc/camera/view/messagedialog/StartStreamingDialogBuilder;-><init>()V
+
+    sget-object v5, Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;->LOW:Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;
+
+    sget-object v14, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->TRUE:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
+
+    sget-object v15, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->USE_DEFAULT:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
+
+    sget-object v16, Ljp/co/sony/mc/camera/setting/MessageType;->NO_MESSAGE:Ljp/co/sony/mc/camera/setting/MessageType;
+
+    const-string v2, "PREPARE_STREAMING"
+
+    const/16 v3, 0x5a
+
+    const v6, 0x7f1101ba
+
+    const v11, 0x7f110199
+
+    const v12, 0x7f110140
+
+    const v13, 0x7f0c004d
+
+    invoke-direct/range {v1 .. v17}, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;-><init>(Ljava/lang/String;ILjp/co/sony/mc/camera/view/messagedialog/MessageDialogBuilder;Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;IIIIIIIILjp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/setting/MessageType;Z)V
+
+    sput-object v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->PREPARE_STREAMING:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
+
+    .line 1566
+    new-instance v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
+
+    move-object/from16 v18, v0
+
+    new-instance v1, Ljp/co/sony/mc/camera/view/messagedialog/OkCancelDialogBuilder;
+
+    move-object/from16 v21, v1
+
+    invoke-direct {v1}, Ljp/co/sony/mc/camera/view/messagedialog/OkCancelDialogBuilder;-><init>()V
+
+    sget-object v22, Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;->LOW:Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;
+
+    sget-object v31, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->TRUE:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
+
+    sget-object v32, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->USE_DEFAULT:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
+
+    sget-object v33, Ljp/co/sony/mc/camera/setting/MessageType;->NO_MESSAGE:Ljp/co/sony/mc/camera/setting/MessageType;
+
+    const-string v19, "CONFIRM_STOP_STREAMING"
+
+    const/16 v20, 0x5b
+
+    const/16 v23, -0x1
+
+    const v24, 0x7f11019d
+
+    const v28, 0x7f110195
+
+    const v29, 0x7f110140
+
+    invoke-direct/range {v18 .. v34}, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;-><init>(Ljava/lang/String;ILjp/co/sony/mc/camera/view/messagedialog/MessageDialogBuilder;Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;IIIIIIIILjp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/setting/MessageType;Z)V
+
+    sput-object v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->CONFIRM_STOP_STREAMING:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
+
+    .line 1583
+    new-instance v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
+
+    move-object v1, v0
+
+    new-instance v2, Ljp/co/sony/mc/camera/view/messagedialog/OkDialogBuilder;
+
+    move-object v4, v2
+
+    invoke-direct {v2}, Ljp/co/sony/mc/camera/view/messagedialog/OkDialogBuilder;-><init>()V
+
+    sget-object v5, Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;->LOW:Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;
+
+    sget-object v14, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->TRUE:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
+
+    sget-object v15, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->FALSE:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
+
+    sget-object v16, Ljp/co/sony/mc/camera/setting/MessageType;->NO_MESSAGE:Ljp/co/sony/mc/camera/setting/MessageType;
+
+    const/16 v17, 0x1
+
+    const-string v2, "DUE_TO_SCREEN_LOCKED"
+
+    const/16 v3, 0x5c
+
+    const/4 v6, -0x1
+
+    const v7, 0x7f110220
+
+    const v11, 0x7f110355
+
+    const/4 v12, -0x1
+
+    const/4 v13, -0x1
+
+    invoke-direct/range {v1 .. v17}, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;-><init>(Ljava/lang/String;ILjp/co/sony/mc/camera/view/messagedialog/MessageDialogBuilder;Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;IIIIIIIILjp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/setting/MessageType;Z)V
+
+    sput-object v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->DUE_TO_SCREEN_LOCKED:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
+
+    .line 1600
+    new-instance v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
+
+    move-object/from16 v18, v0
+
+    new-instance v1, Ljp/co/sony/mc/camera/view/messagedialog/OkDialogBuilder;
+
+    move-object/from16 v21, v1
+
+    invoke-direct {v1}, Ljp/co/sony/mc/camera/view/messagedialog/OkDialogBuilder;-><init>()V
+
+    sget-object v22, Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;->LOW:Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;
+
+    sget-object v31, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->TRUE:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
+
+    sget-object v32, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->USE_DEFAULT:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
+
+    sget-object v33, Ljp/co/sony/mc/camera/setting/MessageType;->NO_MESSAGE:Ljp/co/sony/mc/camera/setting/MessageType;
+
+    const-string v19, "DUE_TO_STREAM_URL_EMPTY"
+
+    const/16 v20, 0x5d
+
+    const v24, 0x7f110460
+
+    const v28, 0x7f110355
+
+    const/16 v29, -0x1
+
+    invoke-direct/range {v18 .. v34}, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;-><init>(Ljava/lang/String;ILjp/co/sony/mc/camera/view/messagedialog/MessageDialogBuilder;Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;IIIIIIIILjp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/setting/MessageType;Z)V
+
+    sput-object v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->DUE_TO_STREAM_URL_EMPTY:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
+
+    .line 1617
+    new-instance v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
+
+    move-object v1, v0
+
+    new-instance v2, Ljp/co/sony/mc/camera/view/messagedialog/OkDialogBuilder;
+
+    move-object v4, v2
+
+    invoke-direct {v2}, Ljp/co/sony/mc/camera/view/messagedialog/OkDialogBuilder;-><init>()V
+
+    sget-object v5, Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;->LOW:Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;
+
+    sget-object v14, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->TRUE:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
+
+    sget-object v15, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->USE_DEFAULT:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
+
+    sget-object v16, Ljp/co/sony/mc/camera/setting/MessageType;->NO_MESSAGE:Ljp/co/sony/mc/camera/setting/MessageType;
+
+    const/16 v17, 0x0
+
+    const-string v2, "DUE_TO_STREAM_KEY_EMPTY"
+
+    const/16 v3, 0x5e
+
+    const v7, 0x7f11045f
+
+    invoke-direct/range {v1 .. v17}, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;-><init>(Ljava/lang/String;ILjp/co/sony/mc/camera/view/messagedialog/MessageDialogBuilder;Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;IIIIIIIILjp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/setting/MessageType;Z)V
+
+    sput-object v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->DUE_TO_STREAM_KEY_EMPTY:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
+
+    .line 1634
+    new-instance v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
+
+    move-object/from16 v18, v0
+
+    new-instance v1, Ljp/co/sony/mc/camera/view/messagedialog/OkDialogBuilder;
+
+    move-object/from16 v21, v1
+
+    invoke-direct {v1}, Ljp/co/sony/mc/camera/view/messagedialog/OkDialogBuilder;-><init>()V
+
+    sget-object v22, Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;->LOW:Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;
+
+    sget-object v31, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->TRUE:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
+
+    sget-object v32, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->USE_DEFAULT:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
+
+    sget-object v33, Ljp/co/sony/mc/camera/setting/MessageType;->NO_MESSAGE:Ljp/co/sony/mc/camera/setting/MessageType;
+
+    const-string v19, "DUE_TO_YOUTUBE_ACCOUNT_NOT_SETUP"
+
+    const/16 v20, 0x5f
+
+    const v24, 0x7f110465
+
+    invoke-direct/range {v18 .. v34}, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;-><init>(Ljava/lang/String;ILjp/co/sony/mc/camera/view/messagedialog/MessageDialogBuilder;Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;IIIIIIIILjp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/setting/MessageType;Z)V
+
+    sput-object v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->DUE_TO_YOUTUBE_ACCOUNT_NOT_SETUP:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
 
     .line 1651
     new-instance v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
 
-    new-instance v4, Ljp/co/sony/mc/camera/view/messagedialog/OkCancelWithRadioButtonDialog;
+    move-object v1, v0
 
-    invoke-direct {v4}, Ljp/co/sony/mc/camera/view/messagedialog/OkCancelWithRadioButtonDialog;-><init>()V
+    new-instance v2, Ljp/co/sony/mc/camera/view/messagedialog/OkDialogBuilder;
+
+    move-object v4, v2
+
+    invoke-direct {v2}, Ljp/co/sony/mc/camera/view/messagedialog/OkDialogBuilder;-><init>()V
 
     sget-object v5, Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;->LOW:Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;
 
-    sget-object v13, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->TRUE:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
+    sget-object v14, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->TRUE:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
 
-    sget-object v14, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->USE_DEFAULT:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
+    sget-object v15, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->USE_DEFAULT:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
 
-    sget-object v15, Ljp/co/sony/mc/camera/setting/MessageType;->NO_MESSAGE:Ljp/co/sony/mc/camera/setting/MessageType;
+    sget-object v16, Ljp/co/sony/mc/camera/setting/MessageType;->NO_MESSAGE:Ljp/co/sony/mc/camera/setting/MessageType;
 
-    const-string v2, "SELECT_YOUTUBE_EVENT"
+    const-string v2, "DUE_TO_YOUTUBE_LIVE_EVENT_NOT_FOUND"
+
+    const/16 v3, 0x60
+
+    const v7, 0x7f110466
+
+    invoke-direct/range {v1 .. v17}, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;-><init>(Ljava/lang/String;ILjp/co/sony/mc/camera/view/messagedialog/MessageDialogBuilder;Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;IIIIIIIILjp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/setting/MessageType;Z)V
+
+    sput-object v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->DUE_TO_YOUTUBE_LIVE_EVENT_NOT_FOUND:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
+
+    .line 1668
+    new-instance v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
+
+    move-object/from16 v18, v0
+
+    new-instance v1, Ljp/co/sony/mc/camera/view/messagedialog/OkDialogBuilder;
+
+    move-object/from16 v21, v1
+
+    invoke-direct {v1}, Ljp/co/sony/mc/camera/view/messagedialog/OkDialogBuilder;-><init>()V
+
+    sget-object v22, Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;->LOW:Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;
+
+    sget-object v31, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->TRUE:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
+
+    sget-object v32, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->USE_DEFAULT:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
+
+    sget-object v33, Ljp/co/sony/mc/camera/setting/MessageType;->NO_MESSAGE:Ljp/co/sony/mc/camera/setting/MessageType;
+
+    const-string v19, "DUE_TO_NETWORK"
+
+    const/16 v20, 0x61
+
+    const v24, 0x7f11045e
+
+    invoke-direct/range {v18 .. v34}, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;-><init>(Ljava/lang/String;ILjp/co/sony/mc/camera/view/messagedialog/MessageDialogBuilder;Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;IIIIIIIILjp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/setting/MessageType;Z)V
+
+    sput-object v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->DUE_TO_NETWORK:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
+
+    .line 1685
+    new-instance v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
+
+    move-object v1, v0
+
+    new-instance v2, Ljp/co/sony/mc/camera/view/messagedialog/OkDialogBuilder;
+
+    move-object v4, v2
+
+    invoke-direct {v2}, Ljp/co/sony/mc/camera/view/messagedialog/OkDialogBuilder;-><init>()V
+
+    sget-object v5, Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;->LOW:Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;
+
+    sget-object v14, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->TRUE:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
+
+    sget-object v15, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->USE_DEFAULT:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
+
+    sget-object v16, Ljp/co/sony/mc/camera/setting/MessageType;->NO_MESSAGE:Ljp/co/sony/mc/camera/setting/MessageType;
+
+    const-string v2, "DUE_TO_WIFI"
+
+    const/16 v3, 0x62
+
+    const v7, 0x7f110463
+
+    invoke-direct/range {v1 .. v17}, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;-><init>(Ljava/lang/String;ILjp/co/sony/mc/camera/view/messagedialog/MessageDialogBuilder;Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;IIIIIIIILjp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/setting/MessageType;Z)V
+
+    sput-object v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->DUE_TO_WIFI:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
+
+    .line 1702
+    new-instance v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
+
+    move-object/from16 v18, v0
+
+    new-instance v1, Ljp/co/sony/mc/camera/view/messagedialog/OkDialogBuilder;
+
+    move-object/from16 v21, v1
+
+    invoke-direct {v1}, Ljp/co/sony/mc/camera/view/messagedialog/OkDialogBuilder;-><init>()V
+
+    sget-object v22, Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;->LOW:Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;
+
+    sget-object v31, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->TRUE:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
+
+    sget-object v32, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->USE_DEFAULT:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
+
+    sget-object v33, Ljp/co/sony/mc/camera/setting/MessageType;->NO_MESSAGE:Ljp/co/sony/mc/camera/setting/MessageType;
+
+    const-string v19, "DUE_TO_SERVER_CONNECTION_FAILED"
+
+    const/16 v20, 0x63
+
+    const v24, 0x7f110462
+
+    invoke-direct/range {v18 .. v34}, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;-><init>(Ljava/lang/String;ILjp/co/sony/mc/camera/view/messagedialog/MessageDialogBuilder;Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;IIIIIIIILjp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/setting/MessageType;Z)V
+
+    sput-object v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->DUE_TO_SERVER_CONNECTION_FAILED:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
+
+    .line 1719
+    new-instance v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
+
+    move-object v1, v0
+
+    new-instance v2, Ljp/co/sony/mc/camera/view/messagedialog/OkDialogBuilder;
+
+    move-object v4, v2
+
+    invoke-direct {v2}, Ljp/co/sony/mc/camera/view/messagedialog/OkDialogBuilder;-><init>()V
+
+    sget-object v5, Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;->LOW:Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;
+
+    sget-object v14, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->TRUE:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
+
+    sget-object v15, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->USE_DEFAULT:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
+
+    sget-object v16, Ljp/co/sony/mc/camera/setting/MessageType;->NO_MESSAGE:Ljp/co/sony/mc/camera/setting/MessageType;
+
+    const-string v2, "DUE_TO_NO_NETWORK"
+
+    const/16 v3, 0x64
+
+    const v7, 0x7f11045c
+
+    invoke-direct/range {v1 .. v17}, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;-><init>(Ljava/lang/String;ILjp/co/sony/mc/camera/view/messagedialog/MessageDialogBuilder;Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;IIIIIIIILjp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/setting/MessageType;Z)V
+
+    sput-object v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->DUE_TO_NO_NETWORK:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
+
+    .line 1736
+    new-instance v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
+
+    move-object/from16 v18, v0
+
+    new-instance v1, Ljp/co/sony/mc/camera/view/messagedialog/OkDialogBuilder;
+
+    move-object/from16 v21, v1
+
+    invoke-direct {v1}, Ljp/co/sony/mc/camera/view/messagedialog/OkDialogBuilder;-><init>()V
+
+    sget-object v22, Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;->IMMEDIATELY:Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;
+
+    sget-object v31, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->TRUE:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
+
+    sget-object v32, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->FALSE:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
+
+    sget-object v33, Ljp/co/sony/mc/camera/setting/MessageType;->NO_MESSAGE:Ljp/co/sony/mc/camera/setting/MessageType;
+
+    const-string v19, "THERMAL_CRITICAL_STREAMING"
+
+    const/16 v20, 0x65
+
+    const v23, 0x7f1101a0
+
+    const v24, 0x7f1101e5
+
+    invoke-direct/range {v18 .. v34}, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;-><init>(Ljava/lang/String;ILjp/co/sony/mc/camera/view/messagedialog/MessageDialogBuilder;Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;IIIIIIIILjp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/setting/MessageType;Z)V
+
+    sput-object v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->THERMAL_CRITICAL_STREAMING:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
+
+    .line 1753
+    new-instance v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
+
+    move-object v1, v0
+
+    new-instance v2, Ljp/co/sony/mc/camera/view/messagedialog/YoutubeAccountActionSelectDialogBuilder;
+
+    move-object v4, v2
+
+    invoke-direct {v2}, Ljp/co/sony/mc/camera/view/messagedialog/YoutubeAccountActionSelectDialogBuilder;-><init>()V
+
+    sget-object v5, Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;->LOW:Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;
+
+    sget-object v14, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->TRUE:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
+
+    sget-object v15, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->TRUE:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
+
+    sget-object v16, Ljp/co/sony/mc/camera/setting/MessageType;->NO_MESSAGE:Ljp/co/sony/mc/camera/setting/MessageType;
+
+    const-string v2, "YOUTUBE_ACCOUNT_ACTION_SELECT"
 
     const/16 v3, 0x66
 
-    const v6, 0x7f11042c
+    const v6, 0x7f1104bd
 
-    const v10, 0x7f110323
+    const/4 v7, -0x1
 
-    const v11, 0x7f11013d
+    const v11, 0x7f110198
 
-    const v12, 0x7f0c0057
+    const v12, 0x7f110197
 
-    move-object v1, v0
+    const v13, 0x7f0c0058
 
-    invoke-direct/range {v1 .. v16}, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;-><init>(Ljava/lang/String;ILjp/co/sony/mc/camera/view/messagedialog/MessageDialogBuilder;Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;IIIIIIILjp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/setting/MessageType;Z)V
+    invoke-direct/range {v1 .. v17}, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;-><init>(Ljava/lang/String;ILjp/co/sony/mc/camera/view/messagedialog/MessageDialogBuilder;Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;IIIIIIIILjp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/setting/MessageType;Z)V
 
-    sput-object v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->SELECT_YOUTUBE_EVENT:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
+    sput-object v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->YOUTUBE_ACCOUNT_ACTION_SELECT:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
 
-    .line 1667
+    .line 1770
     new-instance v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
 
-    new-instance v20, Ljp/co/sony/mc/camera/view/messagedialog/OkDialogBuilder;
+    move-object/from16 v18, v0
 
-    invoke-direct/range {v20 .. v20}, Ljp/co/sony/mc/camera/view/messagedialog/OkDialogBuilder;-><init>()V
+    new-instance v1, Ljp/co/sony/mc/camera/view/messagedialog/CancelDialogBuilder;
 
-    sget-object v21, Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;->LOW:Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;
+    move-object/from16 v21, v1
 
-    sget-object v29, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->TRUE:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
+    invoke-direct {v1}, Ljp/co/sony/mc/camera/view/messagedialog/CancelDialogBuilder;-><init>()V
 
-    sget-object v30, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->USE_DEFAULT:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
+    sget-object v22, Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;->NORMAL:Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;
 
-    sget-object v31, Ljp/co/sony/mc/camera/setting/MessageType;->NO_MESSAGE:Ljp/co/sony/mc/camera/setting/MessageType;
+    sget-object v31, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->TRUE:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
 
-    const-string v18, "DUE_TO_STREAMING"
+    sget-object v32, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->FALSE:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
 
-    const/16 v19, 0x67
+    sget-object v33, Ljp/co/sony/mc/camera/setting/MessageType;->NO_MESSAGE:Ljp/co/sony/mc/camera/setting/MessageType;
 
-    const/16 v22, -0x1
+    const-string v19, "GET_YOUTUBE_LIVE_EVENT_PROCESSING"
 
-    const v23, 0x7f110371
+    const/16 v20, 0x67
 
-    const v26, 0x7f110323
+    const v23, 0x7f1101b3
 
-    const/16 v27, -0x1
+    const/16 v24, -0x1
 
     const/16 v28, -0x1
 
-    move-object/from16 v17, v0
+    const v29, 0x7f110140
 
-    invoke-direct/range {v17 .. v32}, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;-><init>(Ljava/lang/String;ILjp/co/sony/mc/camera/view/messagedialog/MessageDialogBuilder;Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;IIIIIIILjp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/setting/MessageType;Z)V
+    const v30, 0x7f0c004c
 
-    sput-object v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->DUE_TO_STREAMING:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
+    invoke-direct/range {v18 .. v34}, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;-><init>(Ljava/lang/String;ILjp/co/sony/mc/camera/view/messagedialog/MessageDialogBuilder;Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;IIIIIIIILjp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/setting/MessageType;Z)V
 
-    .line 1683
+    sput-object v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->GET_YOUTUBE_LIVE_EVENT_PROCESSING:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
+
+    .line 1787
     new-instance v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
 
-    new-instance v4, Ljp/co/sony/mc/camera/view/messagedialog/OkDialogBuilder;
+    move-object v1, v0
 
-    invoke-direct {v4}, Ljp/co/sony/mc/camera/view/messagedialog/OkDialogBuilder;-><init>()V
+    new-instance v2, Ljp/co/sony/mc/camera/view/messagedialog/OkCancelWithRadioButtonDialog;
+
+    move-object v4, v2
+
+    invoke-direct {v2}, Ljp/co/sony/mc/camera/view/messagedialog/OkCancelWithRadioButtonDialog;-><init>()V
 
     sget-object v5, Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;->LOW:Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;
 
-    sget-object v13, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->TRUE:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
+    sget-object v14, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->TRUE:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
 
-    sget-object v14, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->USE_DEFAULT:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
+    sget-object v15, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->USE_DEFAULT:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
 
-    sget-object v15, Ljp/co/sony/mc/camera/setting/MessageType;->NO_MESSAGE:Ljp/co/sony/mc/camera/setting/MessageType;
+    sget-object v16, Ljp/co/sony/mc/camera/setting/MessageType;->NO_MESSAGE:Ljp/co/sony/mc/camera/setting/MessageType;
 
-    const-string v2, "SELECTED_DUE_TO_STREAMING"
+    const-string v2, "SELECT_YOUTUBE_EVENT"
 
     const/16 v3, 0x68
 
-    const/4 v6, -0x1
+    const v6, 0x7f110461
 
-    const v7, 0x7f110384
+    const v11, 0x7f110355
 
-    const/4 v11, -0x1
+    const v12, 0x7f110140
 
-    const/4 v12, -0x1
+    const v13, 0x7f0c0057
 
-    move-object v1, v0
+    invoke-direct/range {v1 .. v17}, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;-><init>(Ljava/lang/String;ILjp/co/sony/mc/camera/view/messagedialog/MessageDialogBuilder;Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;IIIIIIIILjp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/setting/MessageType;Z)V
 
-    invoke-direct/range {v1 .. v16}, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;-><init>(Ljava/lang/String;ILjp/co/sony/mc/camera/view/messagedialog/MessageDialogBuilder;Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;IIIIIIILjp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/setting/MessageType;Z)V
+    sput-object v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->SELECT_YOUTUBE_EVENT:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
 
-    sput-object v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->SELECTED_DUE_TO_STREAMING:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
-
-    .line 1699
+    .line 1804
     new-instance v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
 
-    new-instance v20, Ljp/co/sony/mc/camera/view/messagedialog/OkDialogBuilder;
+    move-object/from16 v18, v0
 
-    invoke-direct/range {v20 .. v20}, Ljp/co/sony/mc/camera/view/messagedialog/OkDialogBuilder;-><init>()V
+    new-instance v1, Ljp/co/sony/mc/camera/view/messagedialog/OkDialogBuilder;
 
-    sget-object v21, Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;->NORMAL:Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;
+    move-object/from16 v21, v1
 
-    sget-object v29, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->TRUE:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
+    invoke-direct {v1}, Ljp/co/sony/mc/camera/view/messagedialog/OkDialogBuilder;-><init>()V
 
-    sget-object v30, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->USE_DEFAULT:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
+    sget-object v22, Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;->LOW:Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;
 
-    sget-object v31, Ljp/co/sony/mc/camera/setting/MessageType;->NO_MESSAGE:Ljp/co/sony/mc/camera/setting/MessageType;
+    sget-object v31, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->TRUE:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
 
-    const-string v18, "ADD_YOUTUBE_EVENT_EMPTY_TITLE"
+    sget-object v32, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->USE_DEFAULT:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
 
-    const/16 v19, 0x69
+    sget-object v33, Ljp/co/sony/mc/camera/setting/MessageType;->NO_MESSAGE:Ljp/co/sony/mc/camera/setting/MessageType;
 
-    const v23, 0x7f110495
+    const-string v19, "DUE_TO_STREAMING"
 
-    move-object/from16 v17, v0
-
-    invoke-direct/range {v17 .. v32}, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;-><init>(Ljava/lang/String;ILjp/co/sony/mc/camera/view/messagedialog/MessageDialogBuilder;Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;IIIIIIILjp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/setting/MessageType;Z)V
-
-    sput-object v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->ADD_YOUTUBE_EVENT_EMPTY_TITLE:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
-
-    .line 1715
-    new-instance v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
-
-    new-instance v4, Ljp/co/sony/mc/camera/view/messagedialog/OkDialogBuilder;
-
-    invoke-direct {v4}, Ljp/co/sony/mc/camera/view/messagedialog/OkDialogBuilder;-><init>()V
-
-    sget-object v5, Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;->NORMAL:Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;
-
-    sget-object v13, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->TRUE:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
-
-    sget-object v14, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->USE_DEFAULT:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
-
-    sget-object v15, Ljp/co/sony/mc/camera/setting/MessageType;->NO_MESSAGE:Ljp/co/sony/mc/camera/setting/MessageType;
-
-    const-string v2, "ADD_YOUTUBE_EVENT_AUDIENCE_UNSELECTED"
-
-    const/16 v3, 0x6a
-
-    const v7, 0x7f11048f
-
-    move-object v1, v0
-
-    invoke-direct/range {v1 .. v16}, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;-><init>(Ljava/lang/String;ILjp/co/sony/mc/camera/view/messagedialog/MessageDialogBuilder;Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;IIIIIIILjp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/setting/MessageType;Z)V
-
-    sput-object v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->ADD_YOUTUBE_EVENT_AUDIENCE_UNSELECTED:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
-
-    .line 1731
-    new-instance v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
-
-    new-instance v20, Ljp/co/sony/mc/camera/view/messagedialog/NoButtonDialogBuilder;
-
-    invoke-direct/range {v20 .. v20}, Ljp/co/sony/mc/camera/view/messagedialog/NoButtonDialogBuilder;-><init>()V
-
-    sget-object v21, Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;->NORMAL:Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;
-
-    sget-object v29, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->FALSE:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
-
-    sget-object v30, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->FALSE:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
-
-    sget-object v31, Ljp/co/sony/mc/camera/setting/MessageType;->NO_MESSAGE:Ljp/co/sony/mc/camera/setting/MessageType;
-
-    const-string v18, "ADD_YOUTUBE_EVENT_EXECUTING"
-
-    const/16 v19, 0x6b
-
-    const v23, 0x7f11048d
-
-    const/16 v26, -0x1
-
-    move-object/from16 v17, v0
-
-    invoke-direct/range {v17 .. v32}, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;-><init>(Ljava/lang/String;ILjp/co/sony/mc/camera/view/messagedialog/MessageDialogBuilder;Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;IIIIIIILjp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/setting/MessageType;Z)V
-
-    sput-object v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->ADD_YOUTUBE_EVENT_EXECUTING:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
-
-    .line 1747
-    new-instance v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
-
-    new-instance v4, Ljp/co/sony/mc/camera/view/messagedialog/OkDialogBuilder;
-
-    invoke-direct {v4}, Ljp/co/sony/mc/camera/view/messagedialog/OkDialogBuilder;-><init>()V
-
-    sget-object v5, Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;->NORMAL:Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;
-
-    sget-object v13, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->TRUE:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
-
-    sget-object v14, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->USE_DEFAULT:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
-
-    sget-object v15, Ljp/co/sony/mc/camera/setting/MessageType;->NO_MESSAGE:Ljp/co/sony/mc/camera/setting/MessageType;
-
-    const-string v2, "ADD_YOUTUBE_EVENT_RESULT_NG"
-
-    const/16 v3, 0x6c
-
-    const v7, 0x7f110490
-
-    move-object v1, v0
-
-    invoke-direct/range {v1 .. v16}, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;-><init>(Ljava/lang/String;ILjp/co/sony/mc/camera/view/messagedialog/MessageDialogBuilder;Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;IIIIIIILjp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/setting/MessageType;Z)V
-
-    sput-object v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->ADD_YOUTUBE_EVENT_RESULT_NG:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
-
-    .line 1763
-    new-instance v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
-
-    new-instance v20, Ljp/co/sony/mc/camera/view/messagedialog/OkDialogBuilder;
-
-    invoke-direct/range {v20 .. v20}, Ljp/co/sony/mc/camera/view/messagedialog/OkDialogBuilder;-><init>()V
-
-    sget-object v21, Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;->NORMAL:Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;
-
-    sget-object v29, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->TRUE:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
-
-    sget-object v30, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->USE_DEFAULT:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
-
-    sget-object v31, Ljp/co/sony/mc/camera/setting/MessageType;->NO_MESSAGE:Ljp/co/sony/mc/camera/setting/MessageType;
-
-    const-string v18, "ADD_YOUTUBE_EVENT_RESULT_NETWORK_NG"
-
-    const/16 v19, 0x6d
-
-    const v23, 0x7f110492
-
-    const v26, 0x7f110323
-
-    move-object/from16 v17, v0
-
-    invoke-direct/range {v17 .. v32}, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;-><init>(Ljava/lang/String;ILjp/co/sony/mc/camera/view/messagedialog/MessageDialogBuilder;Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;IIIIIIILjp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/setting/MessageType;Z)V
-
-    sput-object v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->ADD_YOUTUBE_EVENT_RESULT_NETWORK_NG:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
-
-    .line 1779
-    new-instance v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
-
-    new-instance v4, Ljp/co/sony/mc/camera/view/messagedialog/OkDialogBuilder;
-
-    invoke-direct {v4}, Ljp/co/sony/mc/camera/view/messagedialog/OkDialogBuilder;-><init>()V
-
-    sget-object v5, Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;->LOW:Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;
-
-    sget-object v13, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->TRUE:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
-
-    sget-object v14, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->USE_DEFAULT:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
-
-    sget-object v15, Ljp/co/sony/mc/camera/setting/MessageType;->NO_MESSAGE:Ljp/co/sony/mc/camera/setting/MessageType;
-
-    const-string v2, "DUE_TO_YOUTUBE_LIVE_EVENT_RETRIEVE"
-
-    const/16 v3, 0x6e
-
-    const v7, 0x7f110491
-
-    move-object v1, v0
-
-    invoke-direct/range {v1 .. v16}, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;-><init>(Ljava/lang/String;ILjp/co/sony/mc/camera/view/messagedialog/MessageDialogBuilder;Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;IIIIIIILjp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/setting/MessageType;Z)V
-
-    sput-object v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->DUE_TO_YOUTUBE_LIVE_EVENT_RETRIEVE:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
-
-    .line 1795
-    new-instance v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
-
-    new-instance v20, Ljp/co/sony/mc/camera/view/messagedialog/YoutubeAccountLoginDialogBuilder;
-
-    invoke-direct/range {v20 .. v20}, Ljp/co/sony/mc/camera/view/messagedialog/YoutubeAccountLoginDialogBuilder;-><init>()V
-
-    sget-object v21, Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;->LOW:Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;
-
-    sget-object v29, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->FALSE:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
-
-    sget-object v30, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->TRUE:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
-
-    sget-object v31, Ljp/co/sony/mc/camera/setting/MessageType;->NO_MESSAGE:Ljp/co/sony/mc/camera/setting/MessageType;
-
-    const-string v18, "YOUTUBE_ACCOUNT_LOGIN"
-
-    const/16 v19, 0x6f
-
-    const v22, 0x7f110483
-
-    const v23, 0x7f1101b2
-
-    const/16 v26, -0x1
-
-    const v28, 0x7f0c0051
-
-    move-object/from16 v17, v0
-
-    invoke-direct/range {v17 .. v32}, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;-><init>(Ljava/lang/String;ILjp/co/sony/mc/camera/view/messagedialog/MessageDialogBuilder;Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;IIIIIIILjp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/setting/MessageType;Z)V
-
-    sput-object v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->YOUTUBE_ACCOUNT_LOGIN:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
-
-    .line 1811
-    new-instance v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
-
-    new-instance v4, Ljp/co/sony/mc/camera/view/messagedialog/OkDialogBuilder;
-
-    invoke-direct {v4}, Ljp/co/sony/mc/camera/view/messagedialog/OkDialogBuilder;-><init>()V
-
-    sget-object v5, Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;->LOW:Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;
-
-    sget-object v13, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->TRUE:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
-
-    sget-object v14, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->USE_DEFAULT:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
-
-    sget-object v15, Ljp/co/sony/mc/camera/setting/MessageType;->NO_MESSAGE:Ljp/co/sony/mc/camera/setting/MessageType;
-
-    const-string v2, "DUE_TO_YOUTUBE_LIVE_EVENT_NOT_SUPPORTED"
-
-    const/16 v3, 0x70
-
-    const v7, 0x7f110494
-
-    move-object v1, v0
-
-    invoke-direct/range {v1 .. v16}, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;-><init>(Ljava/lang/String;ILjp/co/sony/mc/camera/view/messagedialog/MessageDialogBuilder;Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;IIIIIIILjp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/setting/MessageType;Z)V
-
-    sput-object v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->DUE_TO_YOUTUBE_LIVE_EVENT_NOT_SUPPORTED:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
-
-    .line 1827
-    new-instance v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
-
-    new-instance v20, Ljp/co/sony/mc/camera/view/messagedialog/OkCancelDialogBuilder;
-
-    invoke-direct/range {v20 .. v20}, Ljp/co/sony/mc/camera/view/messagedialog/OkCancelDialogBuilder;-><init>()V
-
-    sget-object v21, Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;->LOW:Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;
-
-    sget-object v29, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->TRUE:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
-
-    sget-object v30, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->USE_DEFAULT:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
-
-    sget-object v31, Ljp/co/sony/mc/camera/setting/MessageType;->NO_MESSAGE:Ljp/co/sony/mc/camera/setting/MessageType;
-
-    const-string v18, "DUE_TO_YOUTUBE_LIVE_EVENT_ALREADY_COMPLETE"
-
-    const/16 v19, 0x71
-
-    const/16 v22, -0x1
-
-    const v23, 0x7f11048e
-
-    const v26, 0x7f110137
-
-    const v27, 0x7f11013d
-
-    const/16 v28, -0x1
-
-    move-object/from16 v17, v0
-
-    invoke-direct/range {v17 .. v32}, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;-><init>(Ljava/lang/String;ILjp/co/sony/mc/camera/view/messagedialog/MessageDialogBuilder;Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;IIIIIIILjp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/setting/MessageType;Z)V
-
-    sput-object v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->DUE_TO_YOUTUBE_LIVE_EVENT_ALREADY_COMPLETE:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
-
-    .line 1843
-    new-instance v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
-
-    new-instance v4, Ljp/co/sony/mc/camera/view/messagedialog/OkDialogBuilder;
-
-    invoke-direct {v4}, Ljp/co/sony/mc/camera/view/messagedialog/OkDialogBuilder;-><init>()V
-
-    sget-object v5, Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;->IMMEDIATELY:Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;
-
-    sget-object v13, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->TRUE:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
-
-    sget-object v14, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->FALSE:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
-
-    sget-object v15, Ljp/co/sony/mc/camera/setting/MessageType;->NO_MESSAGE:Ljp/co/sony/mc/camera/setting/MessageType;
-
-    const-string v2, "LOW_BATTERY_CRITICAL_ON_STREAMING"
-
-    const/16 v3, 0x72
-
-    const v6, 0x7f11019d
-
-    const v7, 0x7f110187
-
-    move-object v1, v0
-
-    invoke-direct/range {v1 .. v16}, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;-><init>(Ljava/lang/String;ILjp/co/sony/mc/camera/view/messagedialog/MessageDialogBuilder;Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;IIIIIIILjp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/setting/MessageType;Z)V
-
-    sput-object v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->LOW_BATTERY_CRITICAL_ON_STREAMING:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
-
-    .line 1859
-    new-instance v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
-
-    new-instance v20, Ljp/co/sony/mc/camera/view/messagedialog/FacebookLiveSelectDialogBuilder;
-
-    invoke-direct/range {v20 .. v20}, Ljp/co/sony/mc/camera/view/messagedialog/FacebookLiveSelectDialogBuilder;-><init>()V
-
-    sget-object v21, Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;->LOW:Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;
-
-    sget-object v29, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->TRUE:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
-
-    sget-object v30, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->USE_DEFAULT:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
-
-    sget-object v31, Ljp/co/sony/mc/camera/setting/MessageType;->NO_MESSAGE:Ljp/co/sony/mc/camera/setting/MessageType;
-
-    const-string v18, "FACEBOOK_LIVE_SELECT"
-
-    const/16 v19, 0x73
-
-    const v22, 0x7f11020a
+    const/16 v20, 0x69
 
     const/16 v23, -0x1
 
-    const v26, 0x7f110323
+    const v24, 0x7f1103a4
 
-    const v28, 0x7f0c0057
+    const v28, 0x7f110355
 
-    move-object/from16 v17, v0
+    const/16 v29, -0x1
 
-    invoke-direct/range {v17 .. v32}, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;-><init>(Ljava/lang/String;ILjp/co/sony/mc/camera/view/messagedialog/MessageDialogBuilder;Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;IIIIIIILjp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/setting/MessageType;Z)V
+    const/16 v30, -0x1
 
-    sput-object v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->FACEBOOK_LIVE_SELECT:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
+    invoke-direct/range {v18 .. v34}, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;-><init>(Ljava/lang/String;ILjp/co/sony/mc/camera/view/messagedialog/MessageDialogBuilder;Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;IIIIIIIILjp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/setting/MessageType;Z)V
 
-    .line 1875
+    sput-object v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->DUE_TO_STREAMING:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
+
+    .line 1821
     new-instance v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
 
-    new-instance v4, Ljp/co/sony/mc/camera/view/messagedialog/OkDialogBuilder;
+    move-object v1, v0
 
-    invoke-direct {v4}, Ljp/co/sony/mc/camera/view/messagedialog/OkDialogBuilder;-><init>()V
+    new-instance v2, Ljp/co/sony/mc/camera/view/messagedialog/OkDialogBuilder;
+
+    move-object v4, v2
+
+    invoke-direct {v2}, Ljp/co/sony/mc/camera/view/messagedialog/OkDialogBuilder;-><init>()V
 
     sget-object v5, Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;->LOW:Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;
 
-    sget-object v13, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->TRUE:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
+    sget-object v14, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->TRUE:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
 
-    sget-object v14, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->USE_DEFAULT:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
+    sget-object v15, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->USE_DEFAULT:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
 
-    sget-object v15, Ljp/co/sony/mc/camera/setting/MessageType;->NO_MESSAGE:Ljp/co/sony/mc/camera/setting/MessageType;
+    sget-object v16, Ljp/co/sony/mc/camera/setting/MessageType;->NO_MESSAGE:Ljp/co/sony/mc/camera/setting/MessageType;
 
-    const-string v2, "DUE_TO_FACEBOOK_ACCOUNT_NOT_SETUP"
+    const-string v2, "SELECTED_DUE_TO_STREAMING"
 
-    const/16 v3, 0x74
+    const/16 v3, 0x6a
 
     const/4 v6, -0x1
 
-    const v7, 0x7f110428
+    const v7, 0x7f1103b8
+
+    const/4 v12, -0x1
+
+    const/4 v13, -0x1
+
+    invoke-direct/range {v1 .. v17}, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;-><init>(Ljava/lang/String;ILjp/co/sony/mc/camera/view/messagedialog/MessageDialogBuilder;Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;IIIIIIIILjp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/setting/MessageType;Z)V
+
+    sput-object v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->SELECTED_DUE_TO_STREAMING:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
+
+    .line 1838
+    new-instance v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
+
+    move-object/from16 v18, v0
+
+    new-instance v1, Ljp/co/sony/mc/camera/view/messagedialog/OkDialogBuilder;
+
+    move-object/from16 v21, v1
+
+    invoke-direct {v1}, Ljp/co/sony/mc/camera/view/messagedialog/OkDialogBuilder;-><init>()V
+
+    sget-object v22, Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;->NORMAL:Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;
+
+    sget-object v31, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->TRUE:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
+
+    sget-object v32, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->USE_DEFAULT:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
+
+    sget-object v33, Ljp/co/sony/mc/camera/setting/MessageType;->NO_MESSAGE:Ljp/co/sony/mc/camera/setting/MessageType;
+
+    const-string v19, "ADD_YOUTUBE_EVENT_EMPTY_TITLE"
+
+    const/16 v20, 0x6b
+
+    const v24, 0x7f1104cf
+
+    invoke-direct/range {v18 .. v34}, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;-><init>(Ljava/lang/String;ILjp/co/sony/mc/camera/view/messagedialog/MessageDialogBuilder;Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;IIIIIIIILjp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/setting/MessageType;Z)V
+
+    sput-object v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->ADD_YOUTUBE_EVENT_EMPTY_TITLE:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
+
+    .line 1855
+    new-instance v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
 
     move-object v1, v0
 
-    invoke-direct/range {v1 .. v16}, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;-><init>(Ljava/lang/String;ILjp/co/sony/mc/camera/view/messagedialog/MessageDialogBuilder;Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;IIIIIIILjp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/setting/MessageType;Z)V
+    new-instance v2, Ljp/co/sony/mc/camera/view/messagedialog/OkDialogBuilder;
 
-    sput-object v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->DUE_TO_FACEBOOK_ACCOUNT_NOT_SETUP:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
+    move-object v4, v2
 
-    .line 1891
+    invoke-direct {v2}, Ljp/co/sony/mc/camera/view/messagedialog/OkDialogBuilder;-><init>()V
+
+    sget-object v5, Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;->NORMAL:Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;
+
+    sget-object v14, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->TRUE:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
+
+    sget-object v15, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->USE_DEFAULT:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
+
+    sget-object v16, Ljp/co/sony/mc/camera/setting/MessageType;->NO_MESSAGE:Ljp/co/sony/mc/camera/setting/MessageType;
+
+    const-string v2, "ADD_YOUTUBE_EVENT_AUDIENCE_UNSELECTED"
+
+    const/16 v3, 0x6c
+
+    const v7, 0x7f1104c9
+
+    invoke-direct/range {v1 .. v17}, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;-><init>(Ljava/lang/String;ILjp/co/sony/mc/camera/view/messagedialog/MessageDialogBuilder;Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;IIIIIIIILjp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/setting/MessageType;Z)V
+
+    sput-object v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->ADD_YOUTUBE_EVENT_AUDIENCE_UNSELECTED:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
+
+    .line 1872
     new-instance v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
 
-    new-instance v20, Ljp/co/sony/mc/camera/view/messagedialog/NoButtonDialogBuilder;
+    move-object/from16 v18, v0
 
-    invoke-direct/range {v20 .. v20}, Ljp/co/sony/mc/camera/view/messagedialog/NoButtonDialogBuilder;-><init>()V
+    new-instance v1, Ljp/co/sony/mc/camera/view/messagedialog/NoButtonDialogBuilder;
 
-    sget-object v21, Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;->NORMAL:Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;
+    move-object/from16 v21, v1
 
-    sget-object v29, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->FALSE:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
+    invoke-direct {v1}, Ljp/co/sony/mc/camera/view/messagedialog/NoButtonDialogBuilder;-><init>()V
 
-    sget-object v30, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->FALSE:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
+    sget-object v22, Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;->NORMAL:Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;
 
-    sget-object v31, Ljp/co/sony/mc/camera/setting/MessageType;->NO_MESSAGE:Ljp/co/sony/mc/camera/setting/MessageType;
+    sget-object v31, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->FALSE:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
 
-    const-string v18, "CREATE_FACEBOOK_LIVE_VIDEO_PROCESSING"
+    sget-object v32, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->FALSE:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
 
-    const/16 v19, 0x75
+    sget-object v33, Ljp/co/sony/mc/camera/setting/MessageType;->NO_MESSAGE:Ljp/co/sony/mc/camera/setting/MessageType;
 
-    const/16 v22, -0x1
+    const-string v19, "ADD_YOUTUBE_EVENT_EXECUTING"
 
-    const v23, 0x7f110209
+    const/16 v20, 0x6d
 
-    const/16 v26, -0x1
-
-    const/16 v27, -0x1
+    const v24, 0x7f1104c7
 
     const/16 v28, -0x1
 
-    move-object/from16 v17, v0
+    invoke-direct/range {v18 .. v34}, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;-><init>(Ljava/lang/String;ILjp/co/sony/mc/camera/view/messagedialog/MessageDialogBuilder;Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;IIIIIIIILjp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/setting/MessageType;Z)V
 
-    invoke-direct/range {v17 .. v32}, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;-><init>(Ljava/lang/String;ILjp/co/sony/mc/camera/view/messagedialog/MessageDialogBuilder;Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;IIIIIIILjp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/setting/MessageType;Z)V
+    sput-object v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->ADD_YOUTUBE_EVENT_EXECUTING:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
 
-    sput-object v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->CREATE_FACEBOOK_LIVE_VIDEO_PROCESSING:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
-
-    .line 1907
+    .line 1889
     new-instance v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
-
-    new-instance v4, Ljp/co/sony/mc/camera/view/messagedialog/OkDialogBuilder;
-
-    invoke-direct {v4}, Ljp/co/sony/mc/camera/view/messagedialog/OkDialogBuilder;-><init>()V
-
-    sget-object v5, Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;->LOW:Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;
-
-    sget-object v13, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->TRUE:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
-
-    sget-object v14, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->USE_DEFAULT:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
-
-    sget-object v15, Ljp/co/sony/mc/camera/setting/MessageType;->NO_MESSAGE:Ljp/co/sony/mc/camera/setting/MessageType;
-
-    const-string v2, "DUE_TO_FACEBOOK_LIVE_EVENT_ALREADY_COMPLETE"
-
-    const/16 v3, 0x76
-
-    const v7, 0x7f11020e
 
     move-object v1, v0
 
-    invoke-direct/range {v1 .. v16}, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;-><init>(Ljava/lang/String;ILjp/co/sony/mc/camera/view/messagedialog/MessageDialogBuilder;Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;IIIIIIILjp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/setting/MessageType;Z)V
+    new-instance v2, Ljp/co/sony/mc/camera/view/messagedialog/OkDialogBuilder;
 
-    sput-object v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->DUE_TO_FACEBOOK_LIVE_EVENT_ALREADY_COMPLETE:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
+    move-object v4, v2
+
+    invoke-direct {v2}, Ljp/co/sony/mc/camera/view/messagedialog/OkDialogBuilder;-><init>()V
+
+    sget-object v5, Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;->NORMAL:Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;
+
+    sget-object v14, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->TRUE:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
+
+    sget-object v15, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->USE_DEFAULT:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
+
+    sget-object v16, Ljp/co/sony/mc/camera/setting/MessageType;->NO_MESSAGE:Ljp/co/sony/mc/camera/setting/MessageType;
+
+    const-string v2, "ADD_YOUTUBE_EVENT_RESULT_NG"
+
+    const/16 v3, 0x6e
+
+    const v7, 0x7f1104ca
+
+    invoke-direct/range {v1 .. v17}, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;-><init>(Ljava/lang/String;ILjp/co/sony/mc/camera/view/messagedialog/MessageDialogBuilder;Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;IIIIIIIILjp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/setting/MessageType;Z)V
+
+    sput-object v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->ADD_YOUTUBE_EVENT_RESULT_NG:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
+
+    .line 1906
+    new-instance v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
+
+    move-object/from16 v18, v0
+
+    new-instance v1, Ljp/co/sony/mc/camera/view/messagedialog/OkDialogBuilder;
+
+    move-object/from16 v21, v1
+
+    invoke-direct {v1}, Ljp/co/sony/mc/camera/view/messagedialog/OkDialogBuilder;-><init>()V
+
+    sget-object v22, Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;->NORMAL:Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;
+
+    sget-object v31, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->TRUE:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
+
+    sget-object v32, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->USE_DEFAULT:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
+
+    sget-object v33, Ljp/co/sony/mc/camera/setting/MessageType;->NO_MESSAGE:Ljp/co/sony/mc/camera/setting/MessageType;
+
+    const-string v19, "ADD_YOUTUBE_EVENT_RESULT_NETWORK_NG"
+
+    const/16 v20, 0x6f
+
+    const v24, 0x7f1104cc
+
+    const v28, 0x7f110355
+
+    invoke-direct/range {v18 .. v34}, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;-><init>(Ljava/lang/String;ILjp/co/sony/mc/camera/view/messagedialog/MessageDialogBuilder;Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;IIIIIIIILjp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/setting/MessageType;Z)V
+
+    sput-object v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->ADD_YOUTUBE_EVENT_RESULT_NETWORK_NG:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
 
     .line 1923
     new-instance v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
 
-    new-instance v20, Ljp/co/sony/mc/camera/view/messagedialog/OkDialogBuilder;
-
-    invoke-direct/range {v20 .. v20}, Ljp/co/sony/mc/camera/view/messagedialog/OkDialogBuilder;-><init>()V
-
-    sget-object v21, Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;->NORMAL:Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;
-
-    sget-object v29, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->TRUE:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
-
-    sget-object v30, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->USE_DEFAULT:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
-
-    sget-object v31, Ljp/co/sony/mc/camera/setting/MessageType;->NO_MESSAGE:Ljp/co/sony/mc/camera/setting/MessageType;
-
-    const-string v18, "DUE_TO_YOUTUBE_AUTHORIZATION_FAILED"
-
-    const/16 v19, 0x77
-
-    const v23, 0x7f11042f
-
-    const v26, 0x7f110323
-
-    move-object/from16 v17, v0
-
-    invoke-direct/range {v17 .. v32}, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;-><init>(Ljava/lang/String;ILjp/co/sony/mc/camera/view/messagedialog/MessageDialogBuilder;Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;IIIIIIILjp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/setting/MessageType;Z)V
-
-    sput-object v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->DUE_TO_YOUTUBE_AUTHORIZATION_FAILED:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
-
-    .line 1939
-    new-instance v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
-
-    new-instance v4, Ljp/co/sony/mc/camera/view/messagedialog/OkCancelDialogBuilder;
-
-    invoke-direct {v4}, Ljp/co/sony/mc/camera/view/messagedialog/OkCancelDialogBuilder;-><init>()V
-
-    sget-object v5, Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;->NORMAL:Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;
-
-    sget-object v13, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->TRUE:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
-
-    sget-object v14, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->USE_DEFAULT:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
-
-    sget-object v15, Ljp/co/sony/mc/camera/setting/MessageType;->NO_MESSAGE:Ljp/co/sony/mc/camera/setting/MessageType;
-
-    const-string v2, "GOOGLE_CHROME_DISABLED"
-
-    const/16 v3, 0x78
-
-    const v6, 0x7f110426
-
-    const/4 v7, -0x1
-
-    const v10, 0x7f11013b
-
-    const v11, 0x7f11013d
-
     move-object v1, v0
 
-    invoke-direct/range {v1 .. v16}, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;-><init>(Ljava/lang/String;ILjp/co/sony/mc/camera/view/messagedialog/MessageDialogBuilder;Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;IIIIIIILjp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/setting/MessageType;Z)V
+    new-instance v2, Ljp/co/sony/mc/camera/view/messagedialog/OkDialogBuilder;
 
-    sput-object v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->GOOGLE_CHROME_DISABLED:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
+    move-object v4, v2
 
-    .line 1955
-    new-instance v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
-
-    new-instance v20, Ljp/co/sony/mc/camera/view/messagedialog/OkDialogBuilder;
-
-    invoke-direct/range {v20 .. v20}, Ljp/co/sony/mc/camera/view/messagedialog/OkDialogBuilder;-><init>()V
-
-    sget-object v21, Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;->NORMAL:Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;
-
-    sget-object v29, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->TRUE:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
-
-    sget-object v30, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->USE_DEFAULT:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
-
-    sget-object v31, Ljp/co/sony/mc/camera/setting/MessageType;->NO_MESSAGE:Ljp/co/sony/mc/camera/setting/MessageType;
-
-    const-string v18, "ADD_YOUTUBE_EVENT_RESULT_OK"
-
-    const/16 v19, 0x79
-
-    const v23, 0x7f11048c
-
-    const/16 v26, -0x1
-
-    move-object/from16 v17, v0
-
-    invoke-direct/range {v17 .. v32}, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;-><init>(Ljava/lang/String;ILjp/co/sony/mc/camera/view/messagedialog/MessageDialogBuilder;Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;IIIIIIILjp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/setting/MessageType;Z)V
-
-    sput-object v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->ADD_YOUTUBE_EVENT_RESULT_OK:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
-
-    .line 1971
-    new-instance v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
-
-    new-instance v4, Ljp/co/sony/mc/camera/view/messagedialog/OkDialogBuilder;
-
-    invoke-direct {v4}, Ljp/co/sony/mc/camera/view/messagedialog/OkDialogBuilder;-><init>()V
-
-    sget-object v5, Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;->NORMAL:Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;
-
-    sget-object v13, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->TRUE:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
-
-    sget-object v14, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->USE_DEFAULT:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
-
-    sget-object v15, Ljp/co/sony/mc/camera/setting/MessageType;->NO_MESSAGE:Ljp/co/sony/mc/camera/setting/MessageType;
-
-    const-string v2, "YOUTUBE_LIVE_URL"
-
-    const/16 v3, 0x7a
-
-    const v6, 0x7f1104a1
-
-    const/4 v10, -0x1
-
-    const/4 v11, -0x1
-
-    const v12, 0x7f0c0056
-
-    move-object v1, v0
-
-    invoke-direct/range {v1 .. v16}, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;-><init>(Ljava/lang/String;ILjp/co/sony/mc/camera/view/messagedialog/MessageDialogBuilder;Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;IIIIIIILjp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/setting/MessageType;Z)V
-
-    sput-object v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->YOUTUBE_LIVE_URL:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
-
-    .line 1987
-    new-instance v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
-
-    new-instance v20, Ljp/co/sony/mc/camera/view/messagedialog/OkDialogBuilder;
-
-    invoke-direct/range {v20 .. v20}, Ljp/co/sony/mc/camera/view/messagedialog/OkDialogBuilder;-><init>()V
-
-    sget-object v21, Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;->NORMAL:Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;
-
-    sget-object v29, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->TRUE:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
-
-    sget-object v30, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->USE_DEFAULT:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
-
-    sget-object v31, Ljp/co/sony/mc/camera/setting/MessageType;->NO_MESSAGE:Ljp/co/sony/mc/camera/setting/MessageType;
-
-    const-string v18, "YOUTUBE_LIVE_URL_DISABLED"
-
-    const/16 v19, 0x7b
-
-    const v23, 0x7f110493
-
-    const v26, 0x7f110323
-
-    move-object/from16 v17, v0
-
-    invoke-direct/range {v17 .. v32}, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;-><init>(Ljava/lang/String;ILjp/co/sony/mc/camera/view/messagedialog/MessageDialogBuilder;Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;IIIIIIILjp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/setting/MessageType;Z)V
-
-    sput-object v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->YOUTUBE_LIVE_URL_DISABLED:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
-
-    .line 2003
-    new-instance v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
-
-    new-instance v4, Ljp/co/sony/mc/camera/view/messagedialog/FacebookLoginDialogBuilder;
-
-    invoke-direct {v4}, Ljp/co/sony/mc/camera/view/messagedialog/FacebookLoginDialogBuilder;-><init>()V
+    invoke-direct {v2}, Ljp/co/sony/mc/camera/view/messagedialog/OkDialogBuilder;-><init>()V
 
     sget-object v5, Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;->LOW:Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;
 
-    sget-object v13, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->TRUE:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
+    sget-object v14, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->TRUE:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
 
-    sget-object v14, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->USE_DEFAULT:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
+    sget-object v15, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->USE_DEFAULT:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
 
-    sget-object v15, Ljp/co/sony/mc/camera/setting/MessageType;->NO_MESSAGE:Ljp/co/sony/mc/camera/setting/MessageType;
+    sget-object v16, Ljp/co/sony/mc/camera/setting/MessageType;->NO_MESSAGE:Ljp/co/sony/mc/camera/setting/MessageType;
 
-    const-string v2, "FACEBOOK_LOGIN"
+    const-string v2, "DUE_TO_YOUTUBE_LIVE_EVENT_RETRIEVE"
 
-    const/16 v3, 0x7c
+    const/16 v3, 0x70
 
-    const/4 v6, -0x1
+    const v7, 0x7f1104cb
 
-    const v10, 0x7f110323
+    invoke-direct/range {v1 .. v17}, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;-><init>(Ljava/lang/String;ILjp/co/sony/mc/camera/view/messagedialog/MessageDialogBuilder;Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;IIIIIIIILjp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/setting/MessageType;Z)V
 
-    const v11, 0x7f11013d
+    sput-object v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->DUE_TO_YOUTUBE_LIVE_EVENT_RETRIEVE:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
 
-    const/4 v12, -0x1
-
-    move-object v1, v0
-
-    invoke-direct/range {v1 .. v16}, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;-><init>(Ljava/lang/String;ILjp/co/sony/mc/camera/view/messagedialog/MessageDialogBuilder;Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;IIIIIIILjp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/setting/MessageType;Z)V
-
-    sput-object v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->FACEBOOK_LOGIN:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
-
-    .line 2019
+    .line 1940
     new-instance v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
 
-    new-instance v20, Ljp/co/sony/mc/camera/view/messagedialog/OkDialogBuilder;
+    move-object/from16 v18, v0
 
-    invoke-direct/range {v20 .. v20}, Ljp/co/sony/mc/camera/view/messagedialog/OkDialogBuilder;-><init>()V
+    new-instance v1, Ljp/co/sony/mc/camera/view/messagedialog/YoutubeAccountLoginDialogBuilder;
 
-    sget-object v21, Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;->NORMAL:Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;
+    move-object/from16 v21, v1
 
-    sget-object v29, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->TRUE:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
+    invoke-direct {v1}, Ljp/co/sony/mc/camera/view/messagedialog/YoutubeAccountLoginDialogBuilder;-><init>()V
 
-    sget-object v30, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->USE_DEFAULT:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
+    sget-object v22, Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;->LOW:Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;
 
-    sget-object v31, Ljp/co/sony/mc/camera/setting/MessageType;->NO_MESSAGE:Ljp/co/sony/mc/camera/setting/MessageType;
+    sget-object v31, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->FALSE:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
 
-    const-string v18, "YOUTUBE_LIVE_CHAT_BAN_FAILED"
+    sget-object v32, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->TRUE:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
 
-    const/16 v19, 0x7d
+    sget-object v33, Ljp/co/sony/mc/camera/setting/MessageType;->NO_MESSAGE:Ljp/co/sony/mc/camera/setting/MessageType;
 
-    const v23, 0x7f110150
+    const-string v19, "YOUTUBE_ACCOUNT_LOGIN"
 
-    move-object/from16 v17, v0
+    const/16 v20, 0x71
 
-    invoke-direct/range {v17 .. v32}, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;-><init>(Ljava/lang/String;ILjp/co/sony/mc/camera/view/messagedialog/MessageDialogBuilder;Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;IIIIIIILjp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/setting/MessageType;Z)V
+    const v23, 0x7f1104bd
 
-    sput-object v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->YOUTUBE_LIVE_CHAT_BAN_FAILED:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
-
-    .line 2035
-    new-instance v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
-
-    new-instance v4, Ljp/co/sony/mc/camera/view/messagedialog/OkDialogBuilder;
-
-    invoke-direct {v4}, Ljp/co/sony/mc/camera/view/messagedialog/OkDialogBuilder;-><init>()V
-
-    sget-object v5, Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;->NORMAL:Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;
-
-    sget-object v13, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->TRUE:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
-
-    sget-object v14, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->USE_DEFAULT:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
-
-    sget-object v15, Ljp/co/sony/mc/camera/setting/MessageType;->NO_MESSAGE:Ljp/co/sony/mc/camera/setting/MessageType;
-
-    const-string v2, "YOUTUBE_LIVE_CHAT_FAILED"
-
-    const/16 v3, 0x7e
-
-    const v7, 0x7f110153
-
-    const/4 v11, -0x1
-
-    move-object v1, v0
-
-    invoke-direct/range {v1 .. v16}, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;-><init>(Ljava/lang/String;ILjp/co/sony/mc/camera/view/messagedialog/MessageDialogBuilder;Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;IIIIIIILjp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/setting/MessageType;Z)V
-
-    sput-object v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->YOUTUBE_LIVE_CHAT_FAILED:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
-
-    .line 2051
-    new-instance v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
-
-    new-instance v20, Ljp/co/sony/mc/camera/view/messagedialog/NoButtonDialogBuilder;
-
-    invoke-direct/range {v20 .. v20}, Ljp/co/sony/mc/camera/view/messagedialog/NoButtonDialogBuilder;-><init>()V
-
-    sget-object v21, Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;->LOW:Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;
-
-    sget-object v29, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->FALSE:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
-
-    sget-object v30, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->FALSE:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
-
-    sget-object v31, Ljp/co/sony/mc/camera/setting/MessageType;->NO_MESSAGE:Ljp/co/sony/mc/camera/setting/MessageType;
-
-    const-string v18, "CHECK_YOUTUBE_LIVE_EVENT_STATUS"
-
-    const/16 v19, 0x7f
-
-    const v23, 0x7f110197
-
-    const/16 v26, -0x1
-
-    const v28, 0x7f0c0049
-
-    move-object/from16 v17, v0
-
-    invoke-direct/range {v17 .. v32}, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;-><init>(Ljava/lang/String;ILjp/co/sony/mc/camera/view/messagedialog/MessageDialogBuilder;Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;IIIIIIILjp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/setting/MessageType;Z)V
-
-    sput-object v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->CHECK_YOUTUBE_LIVE_EVENT_STATUS:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
-
-    .line 2067
-    new-instance v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
-
-    new-instance v4, Ljp/co/sony/mc/camera/view/messagedialog/OkDialogBuilder;
-
-    invoke-direct {v4}, Ljp/co/sony/mc/camera/view/messagedialog/OkDialogBuilder;-><init>()V
-
-    sget-object v5, Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;->LOW:Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;
-
-    sget-object v13, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->FALSE:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
-
-    sget-object v14, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->FALSE:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
-
-    sget-object v15, Ljp/co/sony/mc/camera/setting/MessageType;->NO_MESSAGE:Ljp/co/sony/mc/camera/setting/MessageType;
-
-    const-string v2, "DLG_INVALID"
-
-    const/16 v3, 0x80
-
-    const/4 v7, -0x1
-
-    const/4 v10, -0x1
-
-    move-object v1, v0
-
-    invoke-direct/range {v1 .. v16}, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;-><init>(Ljava/lang/String;ILjp/co/sony/mc/camera/view/messagedialog/MessageDialogBuilder;Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;IIIIIIILjp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/setting/MessageType;Z)V
-
-    sput-object v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->DLG_INVALID:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
-
-    .line 2083
-    new-instance v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
-
-    new-instance v20, Ljp/co/sony/mc/camera/view/messagedialog/OkDialogBuilder;
-
-    invoke-direct/range {v20 .. v20}, Ljp/co/sony/mc/camera/view/messagedialog/OkDialogBuilder;-><init>()V
-
-    sget-object v21, Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;->LOW:Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;
-
-    sget-object v29, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->TRUE:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
-
-    sget-object v30, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->FALSE:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
-
-    sget-object v31, Ljp/co/sony/mc/camera/setting/MessageType;->NO_MESSAGE:Ljp/co/sony/mc/camera/setting/MessageType;
-
-    const-string v18, "ACCESSIBILITY_COMPLIANCE"
-
-    const/16 v19, 0x81
-
-    const/16 v23, -0x1
-
-    const v26, 0x7f110323
+    const v24, 0x7f1101b5
 
     const/16 v28, -0x1
 
-    move-object/from16 v17, v0
+    const v30, 0x7f0c0050
 
-    invoke-direct/range {v17 .. v32}, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;-><init>(Ljava/lang/String;ILjp/co/sony/mc/camera/view/messagedialog/MessageDialogBuilder;Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;IIIIIIILjp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/setting/MessageType;Z)V
+    invoke-direct/range {v18 .. v34}, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;-><init>(Ljava/lang/String;ILjp/co/sony/mc/camera/view/messagedialog/MessageDialogBuilder;Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;IIIIIIIILjp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/setting/MessageType;Z)V
 
-    sput-object v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->ACCESSIBILITY_COMPLIANCE:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
+    sput-object v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->YOUTUBE_ACCOUNT_LOGIN:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
 
-    .line 2099
+    .line 1957
     new-instance v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
-
-    new-instance v4, Ljp/co/sony/mc/camera/view/messagedialog/OkDialogBuilder;
-
-    invoke-direct {v4}, Ljp/co/sony/mc/camera/view/messagedialog/OkDialogBuilder;-><init>()V
-
-    sget-object v5, Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;->NORMAL:Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;
-
-    sget-object v13, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->TRUE:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
-
-    sget-object v14, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->USE_DEFAULT:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
-
-    sget-object v15, Ljp/co/sony/mc/camera/setting/MessageType;->NO_MESSAGE:Ljp/co/sony/mc/camera/setting/MessageType;
-
-    const-string v2, "MEMORY_DELETE_FILE_FAILED"
-
-    const/16 v3, 0x82
-
-    const v10, 0x7f110323
 
     move-object v1, v0
 
-    invoke-direct/range {v1 .. v16}, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;-><init>(Ljava/lang/String;ILjp/co/sony/mc/camera/view/messagedialog/MessageDialogBuilder;Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;IIIIIIILjp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/setting/MessageType;Z)V
+    new-instance v2, Ljp/co/sony/mc/camera/view/messagedialog/OkDialogBuilder;
 
-    sput-object v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->MEMORY_DELETE_FILE_FAILED:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
+    move-object v4, v2
 
-    .line 2116
-    new-instance v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
-
-    new-instance v20, Ljp/co/sony/mc/camera/view/messagedialog/NoButtonDialogBuilder;
-
-    invoke-direct/range {v20 .. v20}, Ljp/co/sony/mc/camera/view/messagedialog/NoButtonDialogBuilder;-><init>()V
-
-    sget-object v21, Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;->IMMEDIATELY:Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;
-
-    sget-object v29, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->TRUE:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
-
-    sget-object v30, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->USE_DEFAULT:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
-
-    sget-object v31, Ljp/co/sony/mc/camera/setting/MessageType;->NO_MESSAGE:Ljp/co/sony/mc/camera/setting/MessageType;
-
-    const-string v18, "ERROR_CAMERA_DEVICE"
-
-    const/16 v19, 0x83
-
-    const v22, 0x7f1101dd
-
-    const v23, 0x7f1101d7
-
-    const/16 v26, -0x1
-
-    move-object/from16 v17, v0
-
-    invoke-direct/range {v17 .. v32}, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;-><init>(Ljava/lang/String;ILjp/co/sony/mc/camera/view/messagedialog/MessageDialogBuilder;Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;IIIIIIILjp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/setting/MessageType;Z)V
-
-    sput-object v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->ERROR_CAMERA_DEVICE:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
-
-    .line 2132
-    new-instance v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
-
-    new-instance v4, Ljp/co/sony/mc/camera/view/messagedialog/NoButtonDialogBuilder;
-
-    invoke-direct {v4}, Ljp/co/sony/mc/camera/view/messagedialog/NoButtonDialogBuilder;-><init>()V
-
-    sget-object v5, Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;->IMMEDIATELY:Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;
-
-    sget-object v13, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->TRUE:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
-
-    sget-object v14, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->USE_DEFAULT:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
-
-    sget-object v15, Ljp/co/sony/mc/camera/setting/MessageType;->NO_MESSAGE:Ljp/co/sony/mc/camera/setting/MessageType;
-
-    const-string v2, "ERROR_CAMERA_DISABLED"
-
-    const/16 v3, 0x84
-
-    const v6, 0x7f1101dd
-
-    const v7, 0x7f1101d8
-
-    const/4 v10, -0x1
-
-    move-object v1, v0
-
-    invoke-direct/range {v1 .. v16}, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;-><init>(Ljava/lang/String;ILjp/co/sony/mc/camera/view/messagedialog/MessageDialogBuilder;Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;IIIIIIILjp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/setting/MessageType;Z)V
-
-    sput-object v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->ERROR_CAMERA_DISABLED:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
-
-    .line 2148
-    new-instance v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
-
-    new-instance v20, Ljp/co/sony/mc/camera/view/messagedialog/NoButtonDialogBuilder;
-
-    invoke-direct/range {v20 .. v20}, Ljp/co/sony/mc/camera/view/messagedialog/NoButtonDialogBuilder;-><init>()V
-
-    sget-object v21, Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;->IMMEDIATELY:Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;
-
-    sget-object v29, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->TRUE:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
-
-    sget-object v30, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->USE_DEFAULT:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
-
-    sget-object v31, Ljp/co/sony/mc/camera/setting/MessageType;->NO_MESSAGE:Ljp/co/sony/mc/camera/setting/MessageType;
-
-    const-string v18, "ERROR_CAMERA_IN_USE"
-
-    const/16 v19, 0x85
-
-    const v23, 0x7f1101d9
-
-    move-object/from16 v17, v0
-
-    invoke-direct/range {v17 .. v32}, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;-><init>(Ljava/lang/String;ILjp/co/sony/mc/camera/view/messagedialog/MessageDialogBuilder;Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;IIIIIIILjp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/setting/MessageType;Z)V
-
-    sput-object v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->ERROR_CAMERA_IN_USE:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
-
-    .line 2164
-    new-instance v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
-
-    new-instance v4, Ljp/co/sony/mc/camera/view/messagedialog/NoButtonDialogBuilder;
-
-    invoke-direct {v4}, Ljp/co/sony/mc/camera/view/messagedialog/NoButtonDialogBuilder;-><init>()V
-
-    sget-object v5, Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;->IMMEDIATELY:Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;
-
-    sget-object v13, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->TRUE:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
-
-    sget-object v14, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->USE_DEFAULT:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
-
-    sget-object v15, Ljp/co/sony/mc/camera/setting/MessageType;->NO_MESSAGE:Ljp/co/sony/mc/camera/setting/MessageType;
-
-    const-string v2, "ERROR_CAMERA_SERVICE"
-
-    const/16 v3, 0x86
-
-    const v7, 0x7f1101da
-
-    move-object v1, v0
-
-    invoke-direct/range {v1 .. v16}, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;-><init>(Ljava/lang/String;ILjp/co/sony/mc/camera/view/messagedialog/MessageDialogBuilder;Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;IIIIIIILjp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/setting/MessageType;Z)V
-
-    sput-object v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->ERROR_CAMERA_SERVICE:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
-
-    .line 2180
-    new-instance v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
-
-    new-instance v20, Ljp/co/sony/mc/camera/view/messagedialog/NoButtonDialogBuilder;
-
-    invoke-direct/range {v20 .. v20}, Ljp/co/sony/mc/camera/view/messagedialog/NoButtonDialogBuilder;-><init>()V
-
-    sget-object v21, Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;->IMMEDIATELY:Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;
-
-    sget-object v29, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->TRUE:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
-
-    sget-object v30, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->USE_DEFAULT:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
-
-    sget-object v31, Ljp/co/sony/mc/camera/setting/MessageType;->NO_MESSAGE:Ljp/co/sony/mc/camera/setting/MessageType;
-
-    const-string v18, "ERROR_MAX_CAMERAS_IN_USE"
-
-    const/16 v19, 0x87
-
-    const v23, 0x7f1101e5
-
-    move-object/from16 v17, v0
-
-    invoke-direct/range {v17 .. v32}, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;-><init>(Ljava/lang/String;ILjp/co/sony/mc/camera/view/messagedialog/MessageDialogBuilder;Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;IIIIIIILjp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/setting/MessageType;Z)V
-
-    sput-object v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->ERROR_MAX_CAMERAS_IN_USE:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
-
-    .line 2196
-    new-instance v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
-
-    new-instance v4, Ljp/co/sony/mc/camera/view/messagedialog/NoButtonDialogBuilder;
-
-    invoke-direct {v4}, Ljp/co/sony/mc/camera/view/messagedialog/NoButtonDialogBuilder;-><init>()V
-
-    sget-object v5, Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;->IMMEDIATELY:Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;
-
-    sget-object v13, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->TRUE:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
-
-    sget-object v14, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->USE_DEFAULT:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
-
-    sget-object v15, Ljp/co/sony/mc/camera/setting/MessageType;->NO_MESSAGE:Ljp/co/sony/mc/camera/setting/MessageType;
-
-    const-string v2, "ERROR_RESUME_TIMEOUT"
-
-    const/16 v3, 0x88
-
-    const v7, 0x7f110395
-
-    move-object v1, v0
-
-    invoke-direct/range {v1 .. v16}, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;-><init>(Ljava/lang/String;ILjp/co/sony/mc/camera/view/messagedialog/MessageDialogBuilder;Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;IIIIIIILjp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/setting/MessageType;Z)V
-
-    sput-object v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->ERROR_RESUME_TIMEOUT:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
-
-    .line 2213
-    new-instance v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
-
-    new-instance v20, Ljp/co/sony/mc/camera/view/messagedialog/OkCancelDialogBuilder;
-
-    invoke-direct/range {v20 .. v20}, Ljp/co/sony/mc/camera/view/messagedialog/OkCancelDialogBuilder;-><init>()V
-
-    sget-object v21, Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;->LOW:Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;
-
-    sget-object v29, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->TRUE:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
-
-    sget-object v30, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->FALSE:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
-
-    sget-object v31, Ljp/co/sony/mc/camera/setting/MessageType;->NO_MESSAGE:Ljp/co/sony/mc/camera/setting/MessageType;
-
-    const-string v18, "RECOMMENDED_SETTINGS"
-
-    const/16 v19, 0x89
-
-    const v22, 0x7f110346
-
-    const/16 v23, -0x1
-
-    const v26, 0x7f110323
-
-    const v27, 0x7f11013d
-
-    move-object/from16 v17, v0
-
-    invoke-direct/range {v17 .. v32}, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;-><init>(Ljava/lang/String;ILjp/co/sony/mc/camera/view/messagedialog/MessageDialogBuilder;Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;IIIIIIILjp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/setting/MessageType;Z)V
-
-    sput-object v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->RECOMMENDED_SETTINGS:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
-
-    .line 2230
-    new-instance v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
-
-    new-instance v4, Ljp/co/sony/mc/camera/view/messagedialog/OkDialogBuilder;
-
-    invoke-direct {v4}, Ljp/co/sony/mc/camera/view/messagedialog/OkDialogBuilder;-><init>()V
+    invoke-direct {v2}, Ljp/co/sony/mc/camera/view/messagedialog/OkDialogBuilder;-><init>()V
 
     sget-object v5, Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;->LOW:Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;
 
-    sget-object v13, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->TRUE:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
+    sget-object v14, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->TRUE:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
 
-    sget-object v14, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->FALSE:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
+    sget-object v15, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->USE_DEFAULT:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
 
-    sget-object v15, Ljp/co/sony/mc/camera/setting/MessageType;->NO_MESSAGE:Ljp/co/sony/mc/camera/setting/MessageType;
+    sget-object v16, Ljp/co/sony/mc/camera/setting/MessageType;->NO_MESSAGE:Ljp/co/sony/mc/camera/setting/MessageType;
 
-    const-string v2, "RECOMMENDED_SETTINGS_NOTHING_TO_CHANGE"
+    const-string v2, "DUE_TO_YOUTUBE_LIVE_EVENT_NOT_SUPPORTED"
 
-    const/16 v3, 0x8a
+    const/16 v3, 0x72
 
-    const v6, 0x7f110347
+    const v7, 0x7f1104ce
 
-    const/4 v7, -0x1
+    invoke-direct/range {v1 .. v17}, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;-><init>(Ljava/lang/String;ILjp/co/sony/mc/camera/view/messagedialog/MessageDialogBuilder;Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;IIIIIIIILjp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/setting/MessageType;Z)V
 
-    const v10, 0x7f110323
+    sput-object v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->DUE_TO_YOUTUBE_LIVE_EVENT_NOT_SUPPORTED:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
+
+    .line 1974
+    new-instance v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
+
+    move-object/from16 v18, v0
+
+    new-instance v1, Ljp/co/sony/mc/camera/view/messagedialog/OkCancelDialogBuilder;
+
+    move-object/from16 v21, v1
+
+    invoke-direct {v1}, Ljp/co/sony/mc/camera/view/messagedialog/OkCancelDialogBuilder;-><init>()V
+
+    sget-object v22, Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;->LOW:Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;
+
+    sget-object v31, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->TRUE:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
+
+    sget-object v32, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->USE_DEFAULT:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
+
+    sget-object v33, Ljp/co/sony/mc/camera/setting/MessageType;->NO_MESSAGE:Ljp/co/sony/mc/camera/setting/MessageType;
+
+    const-string v19, "DUE_TO_YOUTUBE_LIVE_EVENT_ALREADY_COMPLETE"
+
+    const/16 v20, 0x73
+
+    const/16 v23, -0x1
+
+    const v24, 0x7f1104c8
+
+    const v28, 0x7f11013a
+
+    const v29, 0x7f110140
+
+    const/16 v30, -0x1
+
+    invoke-direct/range {v18 .. v34}, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;-><init>(Ljava/lang/String;ILjp/co/sony/mc/camera/view/messagedialog/MessageDialogBuilder;Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;IIIIIIIILjp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/setting/MessageType;Z)V
+
+    sput-object v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->DUE_TO_YOUTUBE_LIVE_EVENT_ALREADY_COMPLETE:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
+
+    .line 1991
+    new-instance v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
 
     move-object v1, v0
 
-    invoke-direct/range {v1 .. v16}, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;-><init>(Ljava/lang/String;ILjp/co/sony/mc/camera/view/messagedialog/MessageDialogBuilder;Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;IIIIIIILjp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/setting/MessageType;Z)V
+    new-instance v2, Ljp/co/sony/mc/camera/view/messagedialog/OkDialogBuilder;
 
-    sput-object v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->RECOMMENDED_SETTINGS_NOTHING_TO_CHANGE:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
+    move-object v4, v2
+
+    invoke-direct {v2}, Ljp/co/sony/mc/camera/view/messagedialog/OkDialogBuilder;-><init>()V
+
+    sget-object v5, Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;->IMMEDIATELY:Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;
+
+    sget-object v14, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->TRUE:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
+
+    sget-object v15, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->FALSE:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
+
+    sget-object v16, Ljp/co/sony/mc/camera/setting/MessageType;->NO_MESSAGE:Ljp/co/sony/mc/camera/setting/MessageType;
+
+    const-string v2, "LOW_BATTERY_CRITICAL_ON_STREAMING"
+
+    const/16 v3, 0x74
+
+    const v6, 0x7f1101a0
+
+    const v7, 0x7f11018a
+
+    invoke-direct/range {v1 .. v17}, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;-><init>(Ljava/lang/String;ILjp/co/sony/mc/camera/view/messagedialog/MessageDialogBuilder;Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;IIIIIIIILjp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/setting/MessageType;Z)V
+
+    sput-object v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->LOW_BATTERY_CRITICAL_ON_STREAMING:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
+
+    .line 2008
+    new-instance v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
+
+    move-object/from16 v18, v0
+
+    new-instance v1, Ljp/co/sony/mc/camera/view/messagedialog/FacebookLiveSelectDialogBuilder;
+
+    move-object/from16 v21, v1
+
+    invoke-direct {v1}, Ljp/co/sony/mc/camera/view/messagedialog/FacebookLiveSelectDialogBuilder;-><init>()V
+
+    sget-object v22, Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;->LOW:Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;
+
+    sget-object v31, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->TRUE:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
+
+    sget-object v32, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->USE_DEFAULT:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
+
+    sget-object v33, Ljp/co/sony/mc/camera/setting/MessageType;->NO_MESSAGE:Ljp/co/sony/mc/camera/setting/MessageType;
+
+    const-string v19, "FACEBOOK_LIVE_SELECT"
+
+    const/16 v20, 0x75
+
+    const v23, 0x7f11020d
+
+    const/16 v24, -0x1
+
+    const v28, 0x7f110355
+
+    const v30, 0x7f0c0057
+
+    invoke-direct/range {v18 .. v34}, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;-><init>(Ljava/lang/String;ILjp/co/sony/mc/camera/view/messagedialog/MessageDialogBuilder;Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;IIIIIIIILjp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/setting/MessageType;Z)V
+
+    sput-object v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->FACEBOOK_LIVE_SELECT:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
+
+    .line 2025
+    new-instance v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
+
+    move-object v1, v0
+
+    new-instance v2, Ljp/co/sony/mc/camera/view/messagedialog/OkDialogBuilder;
+
+    move-object v4, v2
+
+    invoke-direct {v2}, Ljp/co/sony/mc/camera/view/messagedialog/OkDialogBuilder;-><init>()V
+
+    sget-object v5, Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;->LOW:Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;
+
+    sget-object v14, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->TRUE:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
+
+    sget-object v15, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->USE_DEFAULT:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
+
+    sget-object v16, Ljp/co/sony/mc/camera/setting/MessageType;->NO_MESSAGE:Ljp/co/sony/mc/camera/setting/MessageType;
+
+    const-string v2, "DUE_TO_FACEBOOK_ACCOUNT_NOT_SETUP"
+
+    const/16 v3, 0x76
+
+    const/4 v6, -0x1
+
+    const v7, 0x7f11045d
+
+    invoke-direct/range {v1 .. v17}, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;-><init>(Ljava/lang/String;ILjp/co/sony/mc/camera/view/messagedialog/MessageDialogBuilder;Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;IIIIIIIILjp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/setting/MessageType;Z)V
+
+    sput-object v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->DUE_TO_FACEBOOK_ACCOUNT_NOT_SETUP:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
+
+    .line 2042
+    new-instance v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
+
+    move-object/from16 v18, v0
+
+    new-instance v1, Ljp/co/sony/mc/camera/view/messagedialog/NoButtonDialogBuilder;
+
+    move-object/from16 v21, v1
+
+    invoke-direct {v1}, Ljp/co/sony/mc/camera/view/messagedialog/NoButtonDialogBuilder;-><init>()V
+
+    sget-object v22, Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;->NORMAL:Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;
+
+    sget-object v31, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->FALSE:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
+
+    sget-object v32, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->FALSE:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
+
+    sget-object v33, Ljp/co/sony/mc/camera/setting/MessageType;->NO_MESSAGE:Ljp/co/sony/mc/camera/setting/MessageType;
+
+    const-string v19, "CREATE_FACEBOOK_LIVE_VIDEO_PROCESSING"
+
+    const/16 v20, 0x77
+
+    const/16 v23, -0x1
+
+    const v24, 0x7f11020c
+
+    const/16 v28, -0x1
+
+    const/16 v29, -0x1
+
+    const/16 v30, -0x1
+
+    invoke-direct/range {v18 .. v34}, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;-><init>(Ljava/lang/String;ILjp/co/sony/mc/camera/view/messagedialog/MessageDialogBuilder;Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;IIIIIIIILjp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/setting/MessageType;Z)V
+
+    sput-object v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->CREATE_FACEBOOK_LIVE_VIDEO_PROCESSING:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
+
+    .line 2059
+    new-instance v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
+
+    move-object v1, v0
+
+    new-instance v2, Ljp/co/sony/mc/camera/view/messagedialog/OkDialogBuilder;
+
+    move-object v4, v2
+
+    invoke-direct {v2}, Ljp/co/sony/mc/camera/view/messagedialog/OkDialogBuilder;-><init>()V
+
+    sget-object v5, Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;->LOW:Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;
+
+    sget-object v14, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->TRUE:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
+
+    sget-object v15, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->USE_DEFAULT:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
+
+    sget-object v16, Ljp/co/sony/mc/camera/setting/MessageType;->NO_MESSAGE:Ljp/co/sony/mc/camera/setting/MessageType;
+
+    const-string v2, "DUE_TO_FACEBOOK_LIVE_EVENT_ALREADY_COMPLETE"
+
+    const/16 v3, 0x78
+
+    const v7, 0x7f110211
+
+    invoke-direct/range {v1 .. v17}, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;-><init>(Ljava/lang/String;ILjp/co/sony/mc/camera/view/messagedialog/MessageDialogBuilder;Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;IIIIIIIILjp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/setting/MessageType;Z)V
+
+    sput-object v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->DUE_TO_FACEBOOK_LIVE_EVENT_ALREADY_COMPLETE:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
+
+    .line 2076
+    new-instance v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
+
+    move-object/from16 v18, v0
+
+    new-instance v1, Ljp/co/sony/mc/camera/view/messagedialog/OkDialogBuilder;
+
+    move-object/from16 v21, v1
+
+    invoke-direct {v1}, Ljp/co/sony/mc/camera/view/messagedialog/OkDialogBuilder;-><init>()V
+
+    sget-object v22, Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;->NORMAL:Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;
+
+    sget-object v31, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->TRUE:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
+
+    sget-object v32, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->USE_DEFAULT:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
+
+    sget-object v33, Ljp/co/sony/mc/camera/setting/MessageType;->NO_MESSAGE:Ljp/co/sony/mc/camera/setting/MessageType;
+
+    const-string v19, "DUE_TO_YOUTUBE_AUTHORIZATION_FAILED"
+
+    const/16 v20, 0x79
+
+    const v24, 0x7f110464
+
+    const v28, 0x7f110355
+
+    invoke-direct/range {v18 .. v34}, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;-><init>(Ljava/lang/String;ILjp/co/sony/mc/camera/view/messagedialog/MessageDialogBuilder;Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;IIIIIIIILjp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/setting/MessageType;Z)V
+
+    sput-object v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->DUE_TO_YOUTUBE_AUTHORIZATION_FAILED:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
+
+    .line 2093
+    new-instance v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
+
+    move-object v1, v0
+
+    new-instance v2, Ljp/co/sony/mc/camera/view/messagedialog/OkCancelDialogBuilder;
+
+    move-object v4, v2
+
+    invoke-direct {v2}, Ljp/co/sony/mc/camera/view/messagedialog/OkCancelDialogBuilder;-><init>()V
+
+    sget-object v5, Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;->NORMAL:Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;
+
+    sget-object v14, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->TRUE:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
+
+    sget-object v15, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->USE_DEFAULT:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
+
+    sget-object v16, Ljp/co/sony/mc/camera/setting/MessageType;->NO_MESSAGE:Ljp/co/sony/mc/camera/setting/MessageType;
+
+    const-string v2, "GOOGLE_CHROME_DISABLED"
+
+    const/16 v3, 0x7a
+
+    const v6, 0x7f11045b
+
+    const/4 v7, -0x1
+
+    const v11, 0x7f11013e
+
+    const v12, 0x7f110140
+
+    invoke-direct/range {v1 .. v17}, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;-><init>(Ljava/lang/String;ILjp/co/sony/mc/camera/view/messagedialog/MessageDialogBuilder;Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;IIIIIIIILjp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/setting/MessageType;Z)V
+
+    sput-object v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->GOOGLE_CHROME_DISABLED:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
+
+    .line 2110
+    new-instance v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
+
+    move-object/from16 v18, v0
+
+    new-instance v1, Ljp/co/sony/mc/camera/view/messagedialog/OkDialogBuilder;
+
+    move-object/from16 v21, v1
+
+    invoke-direct {v1}, Ljp/co/sony/mc/camera/view/messagedialog/OkDialogBuilder;-><init>()V
+
+    sget-object v22, Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;->NORMAL:Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;
+
+    sget-object v31, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->TRUE:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
+
+    sget-object v32, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->USE_DEFAULT:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
+
+    sget-object v33, Ljp/co/sony/mc/camera/setting/MessageType;->NO_MESSAGE:Ljp/co/sony/mc/camera/setting/MessageType;
+
+    const-string v19, "ADD_YOUTUBE_EVENT_RESULT_OK"
+
+    const/16 v20, 0x7b
+
+    const v24, 0x7f1104c6
+
+    const/16 v28, -0x1
+
+    invoke-direct/range {v18 .. v34}, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;-><init>(Ljava/lang/String;ILjp/co/sony/mc/camera/view/messagedialog/MessageDialogBuilder;Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;IIIIIIIILjp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/setting/MessageType;Z)V
+
+    sput-object v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->ADD_YOUTUBE_EVENT_RESULT_OK:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
+
+    .line 2127
+    new-instance v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
+
+    move-object v1, v0
+
+    new-instance v2, Ljp/co/sony/mc/camera/view/messagedialog/OkDialogBuilder;
+
+    move-object v4, v2
+
+    invoke-direct {v2}, Ljp/co/sony/mc/camera/view/messagedialog/OkDialogBuilder;-><init>()V
+
+    sget-object v5, Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;->NORMAL:Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;
+
+    sget-object v14, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->TRUE:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
+
+    sget-object v15, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->USE_DEFAULT:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
+
+    sget-object v16, Ljp/co/sony/mc/camera/setting/MessageType;->NO_MESSAGE:Ljp/co/sony/mc/camera/setting/MessageType;
+
+    const-string v2, "YOUTUBE_LIVE_URL"
+
+    const/16 v3, 0x7c
+
+    const v6, 0x7f1104db
+
+    const/4 v11, -0x1
+
+    const/4 v12, -0x1
+
+    const v13, 0x7f0c0055
+
+    invoke-direct/range {v1 .. v17}, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;-><init>(Ljava/lang/String;ILjp/co/sony/mc/camera/view/messagedialog/MessageDialogBuilder;Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;IIIIIIIILjp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/setting/MessageType;Z)V
+
+    sput-object v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->YOUTUBE_LIVE_URL:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
+
+    .line 2144
+    new-instance v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
+
+    move-object/from16 v18, v0
+
+    new-instance v1, Ljp/co/sony/mc/camera/view/messagedialog/OkDialogBuilder;
+
+    move-object/from16 v21, v1
+
+    invoke-direct {v1}, Ljp/co/sony/mc/camera/view/messagedialog/OkDialogBuilder;-><init>()V
+
+    sget-object v22, Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;->NORMAL:Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;
+
+    sget-object v31, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->TRUE:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
+
+    sget-object v32, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->USE_DEFAULT:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
+
+    sget-object v33, Ljp/co/sony/mc/camera/setting/MessageType;->NO_MESSAGE:Ljp/co/sony/mc/camera/setting/MessageType;
+
+    const-string v19, "YOUTUBE_LIVE_URL_DISABLED"
+
+    const/16 v20, 0x7d
+
+    const v24, 0x7f1104cd
+
+    const v28, 0x7f110355
+
+    invoke-direct/range {v18 .. v34}, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;-><init>(Ljava/lang/String;ILjp/co/sony/mc/camera/view/messagedialog/MessageDialogBuilder;Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;IIIIIIIILjp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/setting/MessageType;Z)V
+
+    sput-object v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->YOUTUBE_LIVE_URL_DISABLED:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
+
+    .line 2161
+    new-instance v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
+
+    move-object v1, v0
+
+    new-instance v2, Ljp/co/sony/mc/camera/view/messagedialog/FacebookLoginDialogBuilder;
+
+    move-object v4, v2
+
+    invoke-direct {v2}, Ljp/co/sony/mc/camera/view/messagedialog/FacebookLoginDialogBuilder;-><init>()V
+
+    sget-object v5, Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;->LOW:Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;
+
+    sget-object v14, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->TRUE:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
+
+    sget-object v15, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->USE_DEFAULT:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
+
+    sget-object v16, Ljp/co/sony/mc/camera/setting/MessageType;->NO_MESSAGE:Ljp/co/sony/mc/camera/setting/MessageType;
+
+    const-string v2, "FACEBOOK_LOGIN"
+
+    const/16 v3, 0x7e
+
+    const/4 v6, -0x1
+
+    const v11, 0x7f110355
+
+    const v12, 0x7f110140
+
+    const/4 v13, -0x1
+
+    invoke-direct/range {v1 .. v17}, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;-><init>(Ljava/lang/String;ILjp/co/sony/mc/camera/view/messagedialog/MessageDialogBuilder;Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;IIIIIIIILjp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/setting/MessageType;Z)V
+
+    sput-object v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->FACEBOOK_LOGIN:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
+
+    .line 2178
+    new-instance v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
+
+    move-object/from16 v18, v0
+
+    new-instance v1, Ljp/co/sony/mc/camera/view/messagedialog/OkDialogBuilder;
+
+    move-object/from16 v21, v1
+
+    invoke-direct {v1}, Ljp/co/sony/mc/camera/view/messagedialog/OkDialogBuilder;-><init>()V
+
+    sget-object v22, Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;->NORMAL:Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;
+
+    sget-object v31, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->TRUE:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
+
+    sget-object v32, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->USE_DEFAULT:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
+
+    sget-object v33, Ljp/co/sony/mc/camera/setting/MessageType;->NO_MESSAGE:Ljp/co/sony/mc/camera/setting/MessageType;
+
+    const-string v19, "YOUTUBE_LIVE_CHAT_BAN_FAILED"
+
+    const/16 v20, 0x7f
+
+    const v24, 0x7f110153
+
+    invoke-direct/range {v18 .. v34}, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;-><init>(Ljava/lang/String;ILjp/co/sony/mc/camera/view/messagedialog/MessageDialogBuilder;Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;IIIIIIIILjp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/setting/MessageType;Z)V
+
+    sput-object v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->YOUTUBE_LIVE_CHAT_BAN_FAILED:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
+
+    .line 2195
+    new-instance v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
+
+    move-object v1, v0
+
+    new-instance v2, Ljp/co/sony/mc/camera/view/messagedialog/OkDialogBuilder;
+
+    move-object v4, v2
+
+    invoke-direct {v2}, Ljp/co/sony/mc/camera/view/messagedialog/OkDialogBuilder;-><init>()V
+
+    sget-object v5, Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;->NORMAL:Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;
+
+    sget-object v14, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->TRUE:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
+
+    sget-object v15, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->USE_DEFAULT:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
+
+    sget-object v16, Ljp/co/sony/mc/camera/setting/MessageType;->NO_MESSAGE:Ljp/co/sony/mc/camera/setting/MessageType;
+
+    const-string v2, "YOUTUBE_LIVE_CHAT_FAILED"
+
+    const/16 v3, 0x80
+
+    const v7, 0x7f110156
+
+    const/4 v12, -0x1
+
+    invoke-direct/range {v1 .. v17}, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;-><init>(Ljava/lang/String;ILjp/co/sony/mc/camera/view/messagedialog/MessageDialogBuilder;Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;IIIIIIIILjp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/setting/MessageType;Z)V
+
+    sput-object v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->YOUTUBE_LIVE_CHAT_FAILED:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
+
+    .line 2212
+    new-instance v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
+
+    move-object/from16 v18, v0
+
+    new-instance v1, Ljp/co/sony/mc/camera/view/messagedialog/NoButtonDialogBuilder;
+
+    move-object/from16 v21, v1
+
+    invoke-direct {v1}, Ljp/co/sony/mc/camera/view/messagedialog/NoButtonDialogBuilder;-><init>()V
+
+    sget-object v22, Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;->LOW:Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;
+
+    sget-object v31, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->FALSE:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
+
+    sget-object v32, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->FALSE:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
+
+    sget-object v33, Ljp/co/sony/mc/camera/setting/MessageType;->NO_MESSAGE:Ljp/co/sony/mc/camera/setting/MessageType;
+
+    const-string v19, "CHECK_YOUTUBE_LIVE_EVENT_STATUS"
+
+    const/16 v20, 0x81
+
+    const v24, 0x7f11019a
+
+    const/16 v28, -0x1
+
+    const v30, 0x7f0c0048
+
+    invoke-direct/range {v18 .. v34}, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;-><init>(Ljava/lang/String;ILjp/co/sony/mc/camera/view/messagedialog/MessageDialogBuilder;Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;IIIIIIIILjp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/setting/MessageType;Z)V
+
+    sput-object v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->CHECK_YOUTUBE_LIVE_EVENT_STATUS:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
+
+    .line 2229
+    new-instance v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
+
+    move-object v1, v0
+
+    new-instance v2, Ljp/co/sony/mc/camera/view/messagedialog/OkDialogBuilder;
+
+    move-object v4, v2
+
+    invoke-direct {v2}, Ljp/co/sony/mc/camera/view/messagedialog/OkDialogBuilder;-><init>()V
+
+    sget-object v5, Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;->LOW:Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;
+
+    sget-object v14, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->FALSE:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
+
+    sget-object v15, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->FALSE:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
+
+    sget-object v16, Ljp/co/sony/mc/camera/setting/MessageType;->NO_MESSAGE:Ljp/co/sony/mc/camera/setting/MessageType;
+
+    const-string v2, "DLG_INVALID"
+
+    const/16 v3, 0x82
+
+    const/4 v7, -0x1
+
+    const/4 v11, -0x1
+
+    invoke-direct/range {v1 .. v17}, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;-><init>(Ljava/lang/String;ILjp/co/sony/mc/camera/view/messagedialog/MessageDialogBuilder;Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;IIIIIIIILjp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/setting/MessageType;Z)V
+
+    sput-object v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->DLG_INVALID:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
 
     .line 2246
     new-instance v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
 
-    new-instance v20, Ljp/co/sony/mc/camera/view/messagedialog/OkDialogBuilder;
+    move-object/from16 v18, v0
 
-    invoke-direct/range {v20 .. v20}, Ljp/co/sony/mc/camera/view/messagedialog/OkDialogBuilder;-><init>()V
+    new-instance v1, Ljp/co/sony/mc/camera/view/messagedialog/OkDialogBuilder;
 
-    sget-object v21, Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;->LOW:Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;
+    move-object/from16 v21, v1
 
-    sget-object v29, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->TRUE:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
+    invoke-direct {v1}, Ljp/co/sony/mc/camera/view/messagedialog/OkDialogBuilder;-><init>()V
 
-    sget-object v30, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->USE_DEFAULT:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
+    sget-object v22, Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;->LOW:Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;
 
-    sget-object v31, Ljp/co/sony/mc/camera/setting/MessageType;->NO_MESSAGE:Ljp/co/sony/mc/camera/setting/MessageType;
+    sget-object v31, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->TRUE:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
 
-    const-string v18, "DUE_TO_FACEBOOK_LIVE_ACCESS_FAILED"
+    sget-object v32, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->FALSE:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
 
-    const/16 v19, 0x8b
+    sget-object v33, Ljp/co/sony/mc/camera/setting/MessageType;->NO_MESSAGE:Ljp/co/sony/mc/camera/setting/MessageType;
 
-    const/16 v22, -0x1
+    const-string v19, "ACCESSIBILITY_COMPLIANCE"
 
-    const v23, 0x7f11020b
+    const/16 v20, 0x83
 
-    const/16 v27, -0x1
+    const/16 v24, -0x1
 
-    move-object/from16 v17, v0
+    const v28, 0x7f110355
 
-    invoke-direct/range {v17 .. v32}, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;-><init>(Ljava/lang/String;ILjp/co/sony/mc/camera/view/messagedialog/MessageDialogBuilder;Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;IIIIIIILjp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/setting/MessageType;Z)V
+    const/16 v30, -0x1
 
-    sput-object v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->DUE_TO_FACEBOOK_LIVE_ACCESS_FAILED:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
+    invoke-direct/range {v18 .. v34}, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;-><init>(Ljava/lang/String;ILjp/co/sony/mc/camera/view/messagedialog/MessageDialogBuilder;Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;IIIIIIIILjp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/setting/MessageType;Z)V
 
-    .line 2262
+    sput-object v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->ACCESSIBILITY_COMPLIANCE:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
+
+    .line 2263
     new-instance v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
 
-    new-instance v4, Ljp/co/sony/mc/camera/view/messagedialog/OkCancelDialogBuilder;
+    move-object v1, v0
 
-    invoke-direct {v4}, Ljp/co/sony/mc/camera/view/messagedialog/OkCancelDialogBuilder;-><init>()V
+    new-instance v2, Ljp/co/sony/mc/camera/view/messagedialog/OkDialogBuilder;
+
+    move-object v4, v2
+
+    invoke-direct {v2}, Ljp/co/sony/mc/camera/view/messagedialog/OkDialogBuilder;-><init>()V
 
     sget-object v5, Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;->NORMAL:Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;
 
-    sget-object v13, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->TRUE:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
+    sget-object v14, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->TRUE:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
 
-    sget-object v14, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->USE_DEFAULT:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
+    sget-object v15, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->USE_DEFAULT:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
 
-    sget-object v15, Ljp/co/sony/mc/camera/setting/MessageType;->NO_MESSAGE:Ljp/co/sony/mc/camera/setting/MessageType;
+    sget-object v16, Ljp/co/sony/mc/camera/setting/MessageType;->NO_MESSAGE:Ljp/co/sony/mc/camera/setting/MessageType;
 
-    const-string v2, "FACEBOOK_PRIVACY_SETTING_CONFLICT"
+    const-string v2, "MEMORY_DELETE_FILE_FAILED"
+
+    const/16 v3, 0x84
+
+    const v11, 0x7f110355
+
+    invoke-direct/range {v1 .. v17}, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;-><init>(Ljava/lang/String;ILjp/co/sony/mc/camera/view/messagedialog/MessageDialogBuilder;Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;IIIIIIIILjp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/setting/MessageType;Z)V
+
+    sput-object v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->MEMORY_DELETE_FILE_FAILED:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
+
+    .line 2281
+    new-instance v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
+
+    move-object/from16 v18, v0
+
+    new-instance v1, Ljp/co/sony/mc/camera/view/messagedialog/NoButtonDialogBuilder;
+
+    move-object/from16 v21, v1
+
+    invoke-direct {v1}, Ljp/co/sony/mc/camera/view/messagedialog/NoButtonDialogBuilder;-><init>()V
+
+    sget-object v22, Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;->IMMEDIATELY:Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;
+
+    sget-object v31, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->TRUE:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
+
+    sget-object v32, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->USE_DEFAULT:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
+
+    sget-object v33, Ljp/co/sony/mc/camera/setting/MessageType;->NO_MESSAGE:Ljp/co/sony/mc/camera/setting/MessageType;
+
+    const-string v19, "ERROR_CAMERA_DEVICE"
+
+    const/16 v20, 0x85
+
+    const v23, 0x7f1101e0
+
+    const v24, 0x7f1101da
+
+    const/16 v28, -0x1
+
+    invoke-direct/range {v18 .. v34}, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;-><init>(Ljava/lang/String;ILjp/co/sony/mc/camera/view/messagedialog/MessageDialogBuilder;Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;IIIIIIIILjp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/setting/MessageType;Z)V
+
+    sput-object v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->ERROR_CAMERA_DEVICE:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
+
+    .line 2298
+    new-instance v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
+
+    move-object v1, v0
+
+    new-instance v2, Ljp/co/sony/mc/camera/view/messagedialog/NoButtonDialogBuilder;
+
+    move-object v4, v2
+
+    invoke-direct {v2}, Ljp/co/sony/mc/camera/view/messagedialog/NoButtonDialogBuilder;-><init>()V
+
+    sget-object v5, Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;->IMMEDIATELY:Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;
+
+    sget-object v14, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->TRUE:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
+
+    sget-object v15, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->USE_DEFAULT:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
+
+    sget-object v16, Ljp/co/sony/mc/camera/setting/MessageType;->NO_MESSAGE:Ljp/co/sony/mc/camera/setting/MessageType;
+
+    const-string v2, "ERROR_CAMERA_DISABLED"
+
+    const/16 v3, 0x86
+
+    const v6, 0x7f1101e0
+
+    const v7, 0x7f1101db
+
+    const/4 v11, -0x1
+
+    invoke-direct/range {v1 .. v17}, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;-><init>(Ljava/lang/String;ILjp/co/sony/mc/camera/view/messagedialog/MessageDialogBuilder;Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;IIIIIIIILjp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/setting/MessageType;Z)V
+
+    sput-object v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->ERROR_CAMERA_DISABLED:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
+
+    .line 2315
+    new-instance v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
+
+    move-object/from16 v18, v0
+
+    new-instance v1, Ljp/co/sony/mc/camera/view/messagedialog/NoButtonDialogBuilder;
+
+    move-object/from16 v21, v1
+
+    invoke-direct {v1}, Ljp/co/sony/mc/camera/view/messagedialog/NoButtonDialogBuilder;-><init>()V
+
+    sget-object v22, Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;->IMMEDIATELY:Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;
+
+    sget-object v31, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->TRUE:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
+
+    sget-object v32, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->USE_DEFAULT:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
+
+    sget-object v33, Ljp/co/sony/mc/camera/setting/MessageType;->NO_MESSAGE:Ljp/co/sony/mc/camera/setting/MessageType;
+
+    const-string v19, "ERROR_CAMERA_IN_USE"
+
+    const/16 v20, 0x87
+
+    const v24, 0x7f1101dc
+
+    invoke-direct/range {v18 .. v34}, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;-><init>(Ljava/lang/String;ILjp/co/sony/mc/camera/view/messagedialog/MessageDialogBuilder;Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;IIIIIIIILjp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/setting/MessageType;Z)V
+
+    sput-object v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->ERROR_CAMERA_IN_USE:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
+
+    .line 2332
+    new-instance v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
+
+    move-object v1, v0
+
+    new-instance v2, Ljp/co/sony/mc/camera/view/messagedialog/NoButtonDialogBuilder;
+
+    move-object v4, v2
+
+    invoke-direct {v2}, Ljp/co/sony/mc/camera/view/messagedialog/NoButtonDialogBuilder;-><init>()V
+
+    sget-object v5, Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;->IMMEDIATELY:Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;
+
+    sget-object v14, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->TRUE:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
+
+    sget-object v15, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->USE_DEFAULT:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
+
+    sget-object v16, Ljp/co/sony/mc/camera/setting/MessageType;->NO_MESSAGE:Ljp/co/sony/mc/camera/setting/MessageType;
+
+    const-string v2, "ERROR_CAMERA_SERVICE"
+
+    const/16 v3, 0x88
+
+    const v7, 0x7f1101dd
+
+    invoke-direct/range {v1 .. v17}, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;-><init>(Ljava/lang/String;ILjp/co/sony/mc/camera/view/messagedialog/MessageDialogBuilder;Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;IIIIIIIILjp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/setting/MessageType;Z)V
+
+    sput-object v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->ERROR_CAMERA_SERVICE:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
+
+    .line 2349
+    new-instance v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
+
+    move-object/from16 v18, v0
+
+    new-instance v1, Ljp/co/sony/mc/camera/view/messagedialog/NoButtonDialogBuilder;
+
+    move-object/from16 v21, v1
+
+    invoke-direct {v1}, Ljp/co/sony/mc/camera/view/messagedialog/NoButtonDialogBuilder;-><init>()V
+
+    sget-object v22, Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;->IMMEDIATELY:Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;
+
+    sget-object v31, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->TRUE:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
+
+    sget-object v32, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->USE_DEFAULT:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
+
+    sget-object v33, Ljp/co/sony/mc/camera/setting/MessageType;->NO_MESSAGE:Ljp/co/sony/mc/camera/setting/MessageType;
+
+    const-string v19, "ERROR_MAX_CAMERAS_IN_USE"
+
+    const/16 v20, 0x89
+
+    const v24, 0x7f1101e8
+
+    invoke-direct/range {v18 .. v34}, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;-><init>(Ljava/lang/String;ILjp/co/sony/mc/camera/view/messagedialog/MessageDialogBuilder;Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;IIIIIIIILjp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/setting/MessageType;Z)V
+
+    sput-object v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->ERROR_MAX_CAMERAS_IN_USE:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
+
+    .line 2366
+    new-instance v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
+
+    move-object v1, v0
+
+    new-instance v2, Ljp/co/sony/mc/camera/view/messagedialog/NoButtonDialogBuilder;
+
+    move-object v4, v2
+
+    invoke-direct {v2}, Ljp/co/sony/mc/camera/view/messagedialog/NoButtonDialogBuilder;-><init>()V
+
+    sget-object v5, Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;->IMMEDIATELY:Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;
+
+    sget-object v14, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->TRUE:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
+
+    sget-object v15, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->USE_DEFAULT:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
+
+    sget-object v16, Ljp/co/sony/mc/camera/setting/MessageType;->NO_MESSAGE:Ljp/co/sony/mc/camera/setting/MessageType;
+
+    const-string v2, "ERROR_RESUME_TIMEOUT"
+
+    const/16 v3, 0x8a
+
+    const v7, 0x7f1103c9
+
+    invoke-direct/range {v1 .. v17}, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;-><init>(Ljava/lang/String;ILjp/co/sony/mc/camera/view/messagedialog/MessageDialogBuilder;Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;IIIIIIIILjp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/setting/MessageType;Z)V
+
+    sput-object v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->ERROR_RESUME_TIMEOUT:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
+
+    .line 2384
+    new-instance v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
+
+    move-object/from16 v18, v0
+
+    new-instance v1, Ljp/co/sony/mc/camera/view/messagedialog/OkCancelDialogBuilder;
+
+    move-object/from16 v21, v1
+
+    invoke-direct {v1}, Ljp/co/sony/mc/camera/view/messagedialog/OkCancelDialogBuilder;-><init>()V
+
+    sget-object v22, Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;->LOW:Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;
+
+    sget-object v31, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->TRUE:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
+
+    sget-object v32, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->FALSE:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
+
+    sget-object v33, Ljp/co/sony/mc/camera/setting/MessageType;->NO_MESSAGE:Ljp/co/sony/mc/camera/setting/MessageType;
+
+    const-string v19, "RECOMMENDED_SETTINGS"
+
+    const/16 v20, 0x8b
+
+    const v23, 0x7f110378
+
+    const/16 v24, -0x1
+
+    const v28, 0x7f110355
+
+    const v29, 0x7f110140
+
+    invoke-direct/range {v18 .. v34}, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;-><init>(Ljava/lang/String;ILjp/co/sony/mc/camera/view/messagedialog/MessageDialogBuilder;Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;IIIIIIIILjp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/setting/MessageType;Z)V
+
+    sput-object v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->RECOMMENDED_SETTINGS:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
+
+    .line 2402
+    new-instance v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
+
+    move-object v1, v0
+
+    new-instance v2, Ljp/co/sony/mc/camera/view/messagedialog/OkDialogBuilder;
+
+    move-object v4, v2
+
+    invoke-direct {v2}, Ljp/co/sony/mc/camera/view/messagedialog/OkDialogBuilder;-><init>()V
+
+    sget-object v5, Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;->LOW:Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;
+
+    sget-object v14, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->TRUE:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
+
+    sget-object v15, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->FALSE:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
+
+    sget-object v16, Ljp/co/sony/mc/camera/setting/MessageType;->NO_MESSAGE:Ljp/co/sony/mc/camera/setting/MessageType;
+
+    const-string v2, "RECOMMENDED_SETTINGS_NOTHING_TO_CHANGE"
 
     const/16 v3, 0x8c
 
-    const/4 v6, -0x1
+    const v6, 0x7f110379
 
-    const v10, 0x7f110192
+    const/4 v7, -0x1
 
-    const v11, 0x7f110191
+    const v11, 0x7f110355
 
-    move-object v1, v0
+    invoke-direct/range {v1 .. v17}, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;-><init>(Ljava/lang/String;ILjp/co/sony/mc/camera/view/messagedialog/MessageDialogBuilder;Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;IIIIIIIILjp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/setting/MessageType;Z)V
 
-    invoke-direct/range {v1 .. v16}, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;-><init>(Ljava/lang/String;ILjp/co/sony/mc/camera/view/messagedialog/MessageDialogBuilder;Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;IIIIIIILjp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/setting/MessageType;Z)V
+    sput-object v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->RECOMMENDED_SETTINGS_NOTHING_TO_CHANGE:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
 
-    sput-object v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->FACEBOOK_PRIVACY_SETTING_CONFLICT:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
-
-    .line 2278
+    .line 2419
     new-instance v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
 
-    new-instance v20, Ljp/co/sony/mc/camera/view/messagedialog/YoutubeLiveChatBanDialogBuilder;
+    move-object/from16 v18, v0
 
-    invoke-direct/range {v20 .. v20}, Ljp/co/sony/mc/camera/view/messagedialog/YoutubeLiveChatBanDialogBuilder;-><init>()V
+    new-instance v1, Ljp/co/sony/mc/camera/view/messagedialog/OkDialogBuilder;
 
-    sget-object v21, Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;->NORMAL:Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;
+    move-object/from16 v21, v1
 
-    sget-object v29, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->TRUE:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
+    invoke-direct {v1}, Ljp/co/sony/mc/camera/view/messagedialog/OkDialogBuilder;-><init>()V
 
-    sget-object v30, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->USE_DEFAULT:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
+    sget-object v22, Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;->LOW:Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;
 
-    sget-object v31, Ljp/co/sony/mc/camera/setting/MessageType;->NO_MESSAGE:Ljp/co/sony/mc/camera/setting/MessageType;
+    sget-object v31, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->TRUE:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
 
-    const-string v18, "YOUTUBE_LIVE_CHAT_BAN"
+    sget-object v32, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->USE_DEFAULT:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
 
-    const/16 v19, 0x8d
+    sget-object v33, Ljp/co/sony/mc/camera/setting/MessageType;->NO_MESSAGE:Ljp/co/sony/mc/camera/setting/MessageType;
+
+    const-string v19, "DUE_TO_FACEBOOK_LIVE_ACCESS_FAILED"
+
+    const/16 v20, 0x8d
 
     const/16 v23, -0x1
 
-    const v27, 0x7f11013d
+    const v24, 0x7f11020e
 
-    move-object/from16 v17, v0
+    const/16 v29, -0x1
 
-    invoke-direct/range {v17 .. v32}, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;-><init>(Ljava/lang/String;ILjp/co/sony/mc/camera/view/messagedialog/MessageDialogBuilder;Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;IIIIIIILjp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/setting/MessageType;Z)V
+    invoke-direct/range {v18 .. v34}, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;-><init>(Ljava/lang/String;ILjp/co/sony/mc/camera/view/messagedialog/MessageDialogBuilder;Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;IIIIIIIILjp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/setting/MessageType;Z)V
 
-    sput-object v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->YOUTUBE_LIVE_CHAT_BAN:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
+    sput-object v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->DUE_TO_FACEBOOK_LIVE_ACCESS_FAILED:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
 
-    .line 2294
+    .line 2436
     new-instance v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
 
-    new-instance v4, Ljp/co/sony/mc/camera/view/messagedialog/OkDialogBuilder;
+    move-object v1, v0
 
-    invoke-direct {v4}, Ljp/co/sony/mc/camera/view/messagedialog/OkDialogBuilder;-><init>()V
+    new-instance v2, Ljp/co/sony/mc/camera/view/messagedialog/OkCancelDialogBuilder;
 
-    sget-object v5, Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;->LOW:Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;
+    move-object v4, v2
 
-    sget-object v13, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->TRUE:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
+    invoke-direct {v2}, Ljp/co/sony/mc/camera/view/messagedialog/OkCancelDialogBuilder;-><init>()V
 
-    sget-object v14, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->USE_DEFAULT:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
+    sget-object v5, Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;->NORMAL:Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;
 
-    sget-object v15, Ljp/co/sony/mc/camera/setting/MessageType;->NO_MESSAGE:Ljp/co/sony/mc/camera/setting/MessageType;
+    sget-object v14, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->TRUE:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
 
-    const-string v2, "RESTRICT_SETTING_VALUE_ON_FRONT_CAMERA"
+    sget-object v15, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->USE_DEFAULT:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
+
+    sget-object v16, Ljp/co/sony/mc/camera/setting/MessageType;->NO_MESSAGE:Ljp/co/sony/mc/camera/setting/MessageType;
+
+    const-string v2, "FACEBOOK_PRIVACY_SETTING_CONFLICT"
 
     const/16 v3, 0x8e
 
-    const v7, 0x7f11038c
+    const/4 v6, -0x1
 
-    const v10, 0x7f110323
+    const v11, 0x7f110195
 
-    const/4 v11, -0x1
+    const v12, 0x7f110194
+
+    invoke-direct/range {v1 .. v17}, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;-><init>(Ljava/lang/String;ILjp/co/sony/mc/camera/view/messagedialog/MessageDialogBuilder;Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;IIIIIIIILjp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/setting/MessageType;Z)V
+
+    sput-object v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->FACEBOOK_PRIVACY_SETTING_CONFLICT:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
+
+    .line 2453
+    new-instance v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
+
+    move-object/from16 v18, v0
+
+    new-instance v1, Ljp/co/sony/mc/camera/view/messagedialog/YoutubeLiveChatBanDialogBuilder;
+
+    move-object/from16 v21, v1
+
+    invoke-direct {v1}, Ljp/co/sony/mc/camera/view/messagedialog/YoutubeLiveChatBanDialogBuilder;-><init>()V
+
+    sget-object v22, Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;->NORMAL:Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;
+
+    sget-object v31, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->TRUE:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
+
+    sget-object v32, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->USE_DEFAULT:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
+
+    sget-object v33, Ljp/co/sony/mc/camera/setting/MessageType;->NO_MESSAGE:Ljp/co/sony/mc/camera/setting/MessageType;
+
+    const-string v19, "YOUTUBE_LIVE_CHAT_BAN"
+
+    const/16 v20, 0x8f
+
+    const/16 v24, -0x1
+
+    const v29, 0x7f110140
+
+    invoke-direct/range {v18 .. v34}, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;-><init>(Ljava/lang/String;ILjp/co/sony/mc/camera/view/messagedialog/MessageDialogBuilder;Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;IIIIIIIILjp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/setting/MessageType;Z)V
+
+    sput-object v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->YOUTUBE_LIVE_CHAT_BAN:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
+
+    .line 2470
+    new-instance v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
 
     move-object v1, v0
 
-    invoke-direct/range {v1 .. v16}, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;-><init>(Ljava/lang/String;ILjp/co/sony/mc/camera/view/messagedialog/MessageDialogBuilder;Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;IIIIIIILjp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/setting/MessageType;Z)V
+    new-instance v2, Ljp/co/sony/mc/camera/view/messagedialog/OkDialogBuilder;
 
-    sput-object v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->RESTRICT_SETTING_VALUE_ON_FRONT_CAMERA:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
+    move-object v4, v2
 
-    .line 2310
-    new-instance v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
-
-    new-instance v20, Ljp/co/sony/mc/camera/view/messagedialog/OkDialogBuilder;
-
-    invoke-direct/range {v20 .. v20}, Ljp/co/sony/mc/camera/view/messagedialog/OkDialogBuilder;-><init>()V
-
-    sget-object v21, Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;->LOW:Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;
-
-    sget-object v29, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->TRUE:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
-
-    sget-object v30, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->USE_DEFAULT:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
-
-    sget-object v31, Ljp/co/sony/mc/camera/setting/MessageType;->NO_MESSAGE:Ljp/co/sony/mc/camera/setting/MessageType;
-
-    const-string v18, "RESTRICT_SETTING_VALUE_ON_CURRENT_LENS"
-
-    const/16 v19, 0x8f
-
-    const v23, 0x7f110370
-
-    const/16 v27, -0x1
-
-    move-object/from16 v17, v0
-
-    invoke-direct/range {v17 .. v32}, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;-><init>(Ljava/lang/String;ILjp/co/sony/mc/camera/view/messagedialog/MessageDialogBuilder;Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;IIIIIIILjp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/setting/MessageType;Z)V
-
-    sput-object v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->RESTRICT_SETTING_VALUE_ON_CURRENT_LENS:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
-
-    .line 2326
-    new-instance v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
-
-    new-instance v4, Ljp/co/sony/mc/camera/view/messagedialog/OkCancelDialogBuilder;
-
-    invoke-direct {v4}, Ljp/co/sony/mc/camera/view/messagedialog/OkCancelDialogBuilder;-><init>()V
+    invoke-direct {v2}, Ljp/co/sony/mc/camera/view/messagedialog/OkDialogBuilder;-><init>()V
 
     sget-object v5, Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;->LOW:Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;
 
-    sget-object v13, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->TRUE:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
+    sget-object v14, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->TRUE:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
 
-    sget-object v14, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->FALSE:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
+    sget-object v15, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->USE_DEFAULT:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
 
-    sget-object v15, Ljp/co/sony/mc/camera/setting/MessageType;->NO_MESSAGE:Ljp/co/sony/mc/camera/setting/MessageType;
+    sget-object v16, Ljp/co/sony/mc/camera/setting/MessageType;->NO_MESSAGE:Ljp/co/sony/mc/camera/setting/MessageType;
 
-    const-string v2, "DUE_TO_STREAMING_SETTING_NOT_SETUP"
+    const-string v2, "RESTRICT_SETTING_VALUE_ON_FRONT_CAMERA"
 
     const/16 v3, 0x90
 
-    const v7, 0x7f11015f
+    const v7, 0x7f1103c0
 
-    const v10, 0x7f110433
+    const v11, 0x7f110355
 
-    const v11, 0x7f11013d
+    const/4 v12, -0x1
+
+    invoke-direct/range {v1 .. v17}, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;-><init>(Ljava/lang/String;ILjp/co/sony/mc/camera/view/messagedialog/MessageDialogBuilder;Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;IIIIIIIILjp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/setting/MessageType;Z)V
+
+    sput-object v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->RESTRICT_SETTING_VALUE_ON_FRONT_CAMERA:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
+
+    .line 2487
+    new-instance v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
+
+    move-object/from16 v18, v0
+
+    new-instance v1, Ljp/co/sony/mc/camera/view/messagedialog/OkDialogBuilder;
+
+    move-object/from16 v21, v1
+
+    invoke-direct {v1}, Ljp/co/sony/mc/camera/view/messagedialog/OkDialogBuilder;-><init>()V
+
+    sget-object v22, Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;->LOW:Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;
+
+    sget-object v31, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->TRUE:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
+
+    sget-object v32, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->USE_DEFAULT:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
+
+    sget-object v33, Ljp/co/sony/mc/camera/setting/MessageType;->NO_MESSAGE:Ljp/co/sony/mc/camera/setting/MessageType;
+
+    const-string v19, "RESTRICT_SETTING_VALUE_ON_CURRENT_LENS"
+
+    const/16 v20, 0x91
+
+    const v24, 0x7f1103a3
+
+    const/16 v29, -0x1
+
+    invoke-direct/range {v18 .. v34}, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;-><init>(Ljava/lang/String;ILjp/co/sony/mc/camera/view/messagedialog/MessageDialogBuilder;Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;IIIIIIIILjp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/setting/MessageType;Z)V
+
+    sput-object v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->RESTRICT_SETTING_VALUE_ON_CURRENT_LENS:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
+
+    .line 2504
+    new-instance v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
 
     move-object v1, v0
 
-    invoke-direct/range {v1 .. v16}, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;-><init>(Ljava/lang/String;ILjp/co/sony/mc/camera/view/messagedialog/MessageDialogBuilder;Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;IIIIIIILjp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/setting/MessageType;Z)V
+    new-instance v2, Ljp/co/sony/mc/camera/view/messagedialog/OkCancelDialogBuilder;
 
-    sput-object v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->DUE_TO_STREAMING_SETTING_NOT_SETUP:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
+    move-object v4, v2
 
-    .line 2342
-    new-instance v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
-
-    new-instance v20, Ljp/co/sony/mc/camera/view/messagedialog/OkDialogBuilder;
-
-    invoke-direct/range {v20 .. v20}, Ljp/co/sony/mc/camera/view/messagedialog/OkDialogBuilder;-><init>()V
-
-    sget-object v21, Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;->LOW:Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;
-
-    sget-object v29, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->TRUE:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
-
-    sget-object v30, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->USE_DEFAULT:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
-
-    sget-object v31, Ljp/co/sony/mc/camera/setting/MessageType;->NO_MESSAGE:Ljp/co/sony/mc/camera/setting/MessageType;
-
-    const-string v18, "RESTRICT_SETTING_VALUE_ON_MANUAL_FOCUS_MODE"
-
-    const/16 v19, 0x91
-
-    const v22, 0x7f11036f
-
-    const v23, 0x7f110393
-
-    move-object/from16 v17, v0
-
-    invoke-direct/range {v17 .. v32}, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;-><init>(Ljava/lang/String;ILjp/co/sony/mc/camera/view/messagedialog/MessageDialogBuilder;Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;IIIIIIILjp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/setting/MessageType;Z)V
-
-    sput-object v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->RESTRICT_SETTING_VALUE_ON_MANUAL_FOCUS_MODE:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
-
-    .line 2358
-    new-instance v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
-
-    new-instance v4, Ljp/co/sony/mc/camera/view/messagedialog/OkDialogBuilder;
-
-    invoke-direct {v4}, Ljp/co/sony/mc/camera/view/messagedialog/OkDialogBuilder;-><init>()V
+    invoke-direct {v2}, Ljp/co/sony/mc/camera/view/messagedialog/OkCancelDialogBuilder;-><init>()V
 
     sget-object v5, Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;->LOW:Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;
 
-    sget-object v13, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->TRUE:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
+    sget-object v14, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->TRUE:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
 
-    sget-object v14, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->USE_DEFAULT:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
+    sget-object v15, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->FALSE:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
 
-    sget-object v15, Ljp/co/sony/mc/camera/setting/MessageType;->NO_MESSAGE:Ljp/co/sony/mc/camera/setting/MessageType;
+    sget-object v16, Ljp/co/sony/mc/camera/setting/MessageType;->NO_MESSAGE:Ljp/co/sony/mc/camera/setting/MessageType;
 
-    const-string v2, "RESTRICT_SETTING_VALUE_BY_OTHER_APP"
+    const-string v2, "DUE_TO_STREAMING_SETTING_NOT_SETUP"
 
     const/16 v3, 0x92
 
-    const v6, 0x7f11036f
+    const v7, 0x7f110162
 
-    const v7, 0x7f110369
+    const v11, 0x7f110468
 
-    const v10, 0x7f110323
+    const v12, 0x7f110140
 
-    const/4 v11, -0x1
+    invoke-direct/range {v1 .. v17}, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;-><init>(Ljava/lang/String;ILjp/co/sony/mc/camera/view/messagedialog/MessageDialogBuilder;Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;IIIIIIIILjp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/setting/MessageType;Z)V
+
+    sput-object v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->DUE_TO_STREAMING_SETTING_NOT_SETUP:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
+
+    .line 2521
+    new-instance v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
+
+    move-object/from16 v18, v0
+
+    new-instance v1, Ljp/co/sony/mc/camera/view/messagedialog/OkDialogBuilder;
+
+    move-object/from16 v21, v1
+
+    invoke-direct {v1}, Ljp/co/sony/mc/camera/view/messagedialog/OkDialogBuilder;-><init>()V
+
+    sget-object v22, Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;->LOW:Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;
+
+    sget-object v31, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->TRUE:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
+
+    sget-object v32, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->USE_DEFAULT:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
+
+    sget-object v33, Ljp/co/sony/mc/camera/setting/MessageType;->NO_MESSAGE:Ljp/co/sony/mc/camera/setting/MessageType;
+
+    const-string v19, "RESTRICT_SETTING_VALUE_ON_MANUAL_FOCUS_MODE"
+
+    const/16 v20, 0x93
+
+    const v23, 0x7f1103a2
+
+    const v24, 0x7f1103c7
+
+    invoke-direct/range {v18 .. v34}, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;-><init>(Ljava/lang/String;ILjp/co/sony/mc/camera/view/messagedialog/MessageDialogBuilder;Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;IIIIIIIILjp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/setting/MessageType;Z)V
+
+    sput-object v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->RESTRICT_SETTING_VALUE_ON_MANUAL_FOCUS_MODE:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
+
+    .line 2538
+    new-instance v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
 
     move-object v1, v0
 
-    invoke-direct/range {v1 .. v16}, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;-><init>(Ljava/lang/String;ILjp/co/sony/mc/camera/view/messagedialog/MessageDialogBuilder;Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;IIIIIIILjp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/setting/MessageType;Z)V
+    new-instance v2, Ljp/co/sony/mc/camera/view/messagedialog/OkDialogBuilder;
 
-    sput-object v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->RESTRICT_SETTING_VALUE_BY_OTHER_APP:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
+    move-object v4, v2
+
+    invoke-direct {v2}, Ljp/co/sony/mc/camera/view/messagedialog/OkDialogBuilder;-><init>()V
+
+    sget-object v5, Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;->LOW:Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;
+
+    sget-object v14, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->TRUE:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
+
+    sget-object v15, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->USE_DEFAULT:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
+
+    sget-object v16, Ljp/co/sony/mc/camera/setting/MessageType;->NO_MESSAGE:Ljp/co/sony/mc/camera/setting/MessageType;
+
+    const-string v2, "RESTRICT_CAPTURING_MODE_IN_HIGH_TEMPERATURE"
+
+    const/16 v3, 0x94
+
+    const v6, 0x7f1101a0
+
+    const v7, 0x7f110350
+
+    const v11, 0x7f110355
+
+    const/4 v12, -0x1
+
+    invoke-direct/range {v1 .. v17}, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;-><init>(Ljava/lang/String;ILjp/co/sony/mc/camera/view/messagedialog/MessageDialogBuilder;Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;IIIIIIIILjp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/setting/MessageType;Z)V
+
+    sput-object v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->RESTRICT_CAPTURING_MODE_IN_HIGH_TEMPERATURE:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
+
+    .line 2555
+    new-instance v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
+
+    move-object/from16 v18, v0
+
+    new-instance v1, Ljp/co/sony/mc/camera/view/messagedialog/OkDialogBuilder;
+
+    move-object/from16 v21, v1
+
+    invoke-direct {v1}, Ljp/co/sony/mc/camera/view/messagedialog/OkDialogBuilder;-><init>()V
+
+    sget-object v22, Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;->LOW:Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;
+
+    sget-object v31, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->TRUE:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
+
+    sget-object v32, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->USE_DEFAULT:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
+
+    sget-object v33, Ljp/co/sony/mc/camera/setting/MessageType;->NO_MESSAGE:Ljp/co/sony/mc/camera/setting/MessageType;
+
+    const-string v19, "CONTINUOUS_SHOOTING_RESTRICTION"
+
+    const/16 v20, 0x95
+
+    const v24, 0x7f1103b1
+
+    invoke-direct/range {v18 .. v34}, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;-><init>(Ljava/lang/String;ILjp/co/sony/mc/camera/view/messagedialog/MessageDialogBuilder;Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;IIIIIIIILjp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/setting/MessageType;Z)V
+
+    sput-object v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->CONTINUOUS_SHOOTING_RESTRICTION:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
+
+    .line 2572
+    new-instance v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
+
+    move-object v1, v0
+
+    new-instance v2, Ljp/co/sony/mc/camera/view/messagedialog/OkWithCheckBoxDialogBuilder;
+
+    move-object v4, v2
+
+    invoke-direct {v2}, Ljp/co/sony/mc/camera/view/messagedialog/OkWithCheckBoxDialogBuilder;-><init>()V
+
+    sget-object v5, Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;->HIGH:Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;
+
+    sget-object v14, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->TRUE:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
+
+    sget-object v15, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;->USE_DEFAULT:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
+
+    sget-object v16, Ljp/co/sony/mc/camera/setting/MessageType;->GIMBAL_INTRODUCTION:Ljp/co/sony/mc/camera/setting/MessageType;
+
+    const-string v2, "GIMBAL_INTRODUCTION_DIALOG"
+
+    const/16 v3, 0x96
+
+    const v7, 0x7f110281
+
+    const v9, 0x7f11027b
+
+    const v10, 0x7f110282
+
+    const v13, 0x7f0c0051
+
+    invoke-direct/range {v1 .. v17}, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;-><init>(Ljava/lang/String;ILjp/co/sony/mc/camera/view/messagedialog/MessageDialogBuilder;Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;IIIIIIIILjp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/setting/MessageType;Z)V
+
+    sput-object v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->GIMBAL_INTRODUCTION_DIALOG:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
 
     .line 15
     invoke-static {}, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->$values()[Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
@@ -5139,14 +5581,14 @@
     return-void
 .end method
 
-.method private constructor <init>(Ljava/lang/String;ILjp/co/sony/mc/camera/view/messagedialog/MessageDialogBuilder;Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;IIIIIIILjp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/setting/MessageType;Z)V
-    .locals 0
+.method private constructor <init>(Ljava/lang/String;ILjp/co/sony/mc/camera/view/messagedialog/MessageDialogBuilder;Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;IIIIIIIILjp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;Ljp/co/sony/mc/camera/setting/MessageType;Z)V
+    .locals 2
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
             "Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogBuilder;",
             "Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;",
-            "IIIIIII",
+            "IIIIIIII",
             "Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;",
             "Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;",
             "Ljp/co/sony/mc/camera/setting/MessageType;",
@@ -5154,47 +5596,80 @@
         }
     .end annotation
 
-    .line 2402
+    move-object v0, p0
+
+    .line 2618
     invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
-    .line 2404
-    iput-object p3, p0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->builderType:Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogBuilder;
+    move-object v1, p3
 
-    .line 2405
-    iput-object p4, p0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->priority:Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;
+    .line 2620
+    iput-object v1, v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->builderType:Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogBuilder;
 
-    .line 2406
-    iput p5, p0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->titleResourceID:I
+    move-object v1, p4
 
-    .line 2407
-    iput p6, p0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->messageResourceID:I
+    .line 2621
+    iput-object v1, v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->priority:Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;
 
-    .line 2408
-    iput p7, p0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->drawableResourceID:I
+    move v1, p5
 
-    .line 2409
-    iput p8, p0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->messageFooterResourceID:I
+    .line 2622
+    iput v1, v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->titleResourceID:I
 
-    .line 2410
-    iput p9, p0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->positiveButtonResourceID:I
+    move v1, p6
 
-    .line 2411
-    iput p10, p0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->negativeButtonResourceID:I
+    .line 2623
+    iput v1, v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->messageResourceID:I
 
-    .line 2412
-    iput p11, p0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->layoutResourceID:I
+    move v1, p7
 
-    .line 2413
-    iput-object p12, p0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->isCancelable:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
+    .line 2624
+    iput v1, v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->drawableResourceID:I
 
-    .line 2414
-    iput-object p13, p0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->isCancelableOnTouchOutside:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
+    move v1, p8
 
-    .line 2415
-    iput-object p14, p0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->messageType:Ljp/co/sony/mc/camera/setting/MessageType;
+    .line 2625
+    iput v1, v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->messageFooterResourceID:I
 
-    .line 2416
-    iput-boolean p15, p0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->hasOnCheckBox:Z
+    move v1, p9
+
+    .line 2626
+    iput v1, v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->messageFooterHyperlinkResourceID:I
+
+    move v1, p10
+
+    .line 2627
+    iput v1, v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->positiveButtonResourceID:I
+
+    move v1, p11
+
+    .line 2628
+    iput v1, v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->negativeButtonResourceID:I
+
+    move v1, p12
+
+    .line 2629
+    iput v1, v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->layoutResourceID:I
+
+    move-object v1, p13
+
+    .line 2630
+    iput-object v1, v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->isCancelable:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
+
+    move-object/from16 v1, p14
+
+    .line 2631
+    iput-object v1, v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->isCancelableOnTouchOutside:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
+
+    move-object/from16 v1, p15
+
+    .line 2632
+    iput-object v1, v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->messageType:Ljp/co/sony/mc/camera/setting/MessageType;
+
+    move/from16 v1, p16
+
+    .line 2633
+    iput-boolean v1, v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->hasOnCheckBox:Z
 
     return-void
 .end method
@@ -5234,7 +5709,7 @@
 .method public getIsCancelable()Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
     .locals 0
 
-    .line 2420
+    .line 2637
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->isCancelable:Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Cancelable;
 
     return-object p0
@@ -5243,7 +5718,7 @@
 .method public getMessageType()Ljp/co/sony/mc/camera/setting/MessageType;
     .locals 0
 
-    .line 2424
+    .line 2641
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->messageType:Ljp/co/sony/mc/camera/setting/MessageType;
 
     return-object p0
@@ -5252,7 +5727,7 @@
 .method public isFatal()Z
     .locals 1
 
-    .line 2428
+    .line 2645
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->priority:Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;
 
     sget-object v0, Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;->IMMEDIATELY:Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$Priority;

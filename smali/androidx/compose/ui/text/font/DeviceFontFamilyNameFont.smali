@@ -1,12 +1,12 @@
 .class final Landroidx/compose/ui/text/font/DeviceFontFamilyNameFont;
 .super Landroidx/compose/ui/text/font/AndroidFont;
-.source "DeviceFontFamilyNameFont.kt"
+.source "DeviceFontFamilyNameFont.android.kt"
 
 
 # annotations
 .annotation runtime Lkotlin/Metadata;
     d1 = {
-        "\u0000H\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0008\n\u0002\u0010\u000b\n\u0000\n\u0002\u0010\u0000\n\u0000\n\u0002\u0010\u0008\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000e\n\u0000\u0008\u0002\u0018\u00002\u00020\u0001B(\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\u0006\u0010\u0004\u001a\u00020\u0005\u0012\u0006\u0010\u0006\u001a\u00020\u0007\u0012\u0006\u0010\u0008\u001a\u00020\t\u00f8\u0001\u0000\u00a2\u0006\u0002\u0010\nJ\u0013\u0010\u0011\u001a\u00020\u00122\u0008\u0010\u0013\u001a\u0004\u0018\u00010\u0014H\u0096\u0002J\u0008\u0010\u0015\u001a\u00020\u0016H\u0016J\u0010\u0010\u0017\u001a\u0004\u0018\u00010\u00182\u0006\u0010\u0019\u001a\u00020\u001aJ\u0008\u0010\u001b\u001a\u00020\u001cH\u0016R\u0019\u0010\u0002\u001a\u00020\u0003X\u0082\u0004\u00f8\u0001\u0000\u00f8\u0001\u0001\u00f8\u0001\u0002\u00a2\u0006\u0004\n\u0002\u0010\u000bR\u001f\u0010\u0006\u001a\u00020\u0007X\u0096\u0004\u00f8\u0001\u0000\u00f8\u0001\u0001\u00f8\u0001\u0002\u00a2\u0006\n\n\u0002\u0010\u000e\u001a\u0004\u0008\u000c\u0010\rR\u0014\u0010\u0004\u001a\u00020\u0005X\u0096\u0004\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\u000f\u0010\u0010\u0082\u0002\u000f\n\u0002\u0008\u0019\n\u0005\u0008\u00a1\u001e0\u0001\n\u0002\u0008!\u00a8\u0006\u001d"
+        "\u0000H\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0008\n\u0002\u0010\u000b\n\u0000\n\u0002\u0010\u0000\n\u0000\n\u0002\u0010\u0008\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000e\n\u0000\u0008\u0002\u0018\u00002\u00020\u0001B%\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\u0006\u0010\u0004\u001a\u00020\u0005\u0012\u0006\u0010\u0006\u001a\u00020\u0007\u0012\u0006\u0010\u0008\u001a\u00020\t\u00a2\u0006\u0002\u0010\nJ\u0013\u0010\u0011\u001a\u00020\u00122\u0008\u0010\u0013\u001a\u0004\u0018\u00010\u0014H\u0096\u0002J\u0008\u0010\u0015\u001a\u00020\u0016H\u0016J\u0010\u0010\u0017\u001a\u0004\u0018\u00010\u00182\u0006\u0010\u0019\u001a\u00020\u001aJ\u0008\u0010\u001b\u001a\u00020\u001cH\u0016R\u0016\u0010\u0002\u001a\u00020\u0003X\u0082\u0004\u00f8\u0001\u0000\u00f8\u0001\u0001\u00a2\u0006\u0004\n\u0002\u0010\u000bR\u001c\u0010\u0006\u001a\u00020\u0007X\u0096\u0004\u00f8\u0001\u0000\u00f8\u0001\u0001\u00a2\u0006\n\n\u0002\u0010\u000e\u001a\u0004\u0008\u000c\u0010\rR\u0014\u0010\u0004\u001a\u00020\u0005X\u0096\u0004\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\u000f\u0010\u0010\u0082\u0002\u000b\n\u0005\u0008\u00a1\u001e0\u0001\n\u0002\u0008!\u00a8\u0006\u001d"
     }
     d2 = {
         "Landroidx/compose/ui/text/font/DeviceFontFamilyNameFont;",
@@ -62,42 +62,30 @@
 .method private constructor <init>(Ljava/lang/String;Landroidx/compose/ui/text/font/FontWeight;ILandroidx/compose/ui/text/font/FontVariation$Settings;)V
     .locals 3
 
-    const-string v0, "familyName"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string/jumbo v0, "weight"
-
-    invoke-static {p2, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string/jumbo v0, "variationSettings"
-
-    invoke-static {p4, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 86
+    .line 88
     sget-object v0, Landroidx/compose/ui/text/font/FontLoadingStrategy;->Companion:Landroidx/compose/ui/text/font/FontLoadingStrategy$Companion;
 
     invoke-virtual {v0}, Landroidx/compose/ui/text/font/FontLoadingStrategy$Companion;->getOptionalLocal-PKNRLFQ()I
 
     move-result v0
 
-    .line 87
+    .line 89
     sget-object v1, Landroidx/compose/ui/text/font/NamedFontLoader;->INSTANCE:Landroidx/compose/ui/text/font/NamedFontLoader;
 
     check-cast v1, Landroidx/compose/ui/text/font/AndroidFont$TypefaceLoader;
 
     const/4 v2, 0x0
 
-    .line 85
+    .line 87
     invoke-direct {p0, v0, v1, p4, v2}, Landroidx/compose/ui/text/font/AndroidFont;-><init>(ILandroidx/compose/ui/text/font/AndroidFont$TypefaceLoader;Landroidx/compose/ui/text/font/FontVariation$Settings;Lkotlin/jvm/internal/DefaultConstructorMarker;)V
 
-    .line 81
+    .line 83
     iput-object p1, p0, Landroidx/compose/ui/text/font/DeviceFontFamilyNameFont;->familyName:Ljava/lang/String;
 
-    .line 82
+    .line 84
     iput-object p2, p0, Landroidx/compose/ui/text/font/DeviceFontFamilyNameFont;->weight:Landroidx/compose/ui/text/font/FontWeight;
 
-    .line 83
+    .line 85
     iput p3, p0, Landroidx/compose/ui/text/font/DeviceFontFamilyNameFont;->style:I
 
     return-void
@@ -122,7 +110,7 @@
 
     return v0
 
-    .line 102
+    .line 104
     :cond_0
     instance-of v1, p1, Landroidx/compose/ui/text/font/DeviceFontFamilyNameFont;
 
@@ -132,7 +120,7 @@
 
     return v2
 
-    .line 104
+    .line 106
     :cond_1
     iget-object v1, p0, Landroidx/compose/ui/text/font/DeviceFontFamilyNameFont;->familyName:Ljava/lang/String;
 
@@ -148,7 +136,7 @@
 
     return v2
 
-    .line 105
+    .line 107
     :cond_2
     invoke-virtual {p0}, Landroidx/compose/ui/text/font/DeviceFontFamilyNameFont;->getWeight()Landroidx/compose/ui/text/font/FontWeight;
 
@@ -166,7 +154,7 @@
 
     return v2
 
-    .line 106
+    .line 108
     :cond_3
     invoke-virtual {p0}, Landroidx/compose/ui/text/font/DeviceFontFamilyNameFont;->getStyle-_-LCdwA()I
 
@@ -184,7 +172,7 @@
 
     return v2
 
-    .line 107
+    .line 109
     :cond_4
     invoke-virtual {p0}, Landroidx/compose/ui/text/font/DeviceFontFamilyNameFont;->getVariationSettings()Landroidx/compose/ui/text/font/FontVariation$Settings;
 
@@ -209,7 +197,7 @@
 .method public getStyle-_-LCdwA()I
     .locals 0
 
-    .line 83
+    .line 85
     iget p0, p0, Landroidx/compose/ui/text/font/DeviceFontFamilyNameFont;->style:I
 
     return p0
@@ -218,7 +206,7 @@
 .method public getWeight()Landroidx/compose/ui/text/font/FontWeight;
     .locals 0
 
-    .line 82
+    .line 84
     iget-object p0, p0, Landroidx/compose/ui/text/font/DeviceFontFamilyNameFont;->weight:Landroidx/compose/ui/text/font/FontWeight;
 
     return-object p0
@@ -227,7 +215,7 @@
 .method public hashCode()I
     .locals 2
 
-    .line 113
+    .line 115
     iget-object v0, p0, Landroidx/compose/ui/text/font/DeviceFontFamilyNameFont;->familyName:Ljava/lang/String;
 
     invoke-static {v0}, Landroidx/compose/ui/text/font/DeviceFontFamilyName;->hashCode-impl(Ljava/lang/String;)I
@@ -236,7 +224,7 @@
 
     mul-int/lit8 v0, v0, 0x1f
 
-    .line 114
+    .line 116
     invoke-virtual {p0}, Landroidx/compose/ui/text/font/DeviceFontFamilyNameFont;->getWeight()Landroidx/compose/ui/text/font/FontWeight;
 
     move-result-object v1
@@ -249,7 +237,7 @@
 
     mul-int/lit8 v0, v0, 0x1f
 
-    .line 115
+    .line 117
     invoke-virtual {p0}, Landroidx/compose/ui/text/font/DeviceFontFamilyNameFont;->getStyle-_-LCdwA()I
 
     move-result v1
@@ -262,7 +250,7 @@
 
     mul-int/lit8 v0, v0, 0x1f
 
-    .line 116
+    .line 118
     invoke-virtual {p0}, Landroidx/compose/ui/text/font/DeviceFontFamilyNameFont;->getVariationSettings()Landroidx/compose/ui/text/font/FontVariation$Settings;
 
     move-result-object p0
@@ -277,39 +265,35 @@
 .end method
 
 .method public final loadCached(Landroid/content/Context;)Landroid/graphics/Typeface;
-    .locals 7
-
-    const-string v0, "context"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 91
-    invoke-static {}, Landroidx/compose/ui/text/font/PlatformTypefacesKt;->PlatformTypefaces()Landroidx/compose/ui/text/font/PlatformTypefaces;
-
-    move-result-object v1
-
-    .line 92
-    iget-object v2, p0, Landroidx/compose/ui/text/font/DeviceFontFamilyNameFont;->familyName:Ljava/lang/String;
+    .locals 6
 
     .line 93
-    invoke-virtual {p0}, Landroidx/compose/ui/text/font/DeviceFontFamilyNameFont;->getWeight()Landroidx/compose/ui/text/font/FontWeight;
+    invoke-static {}, Landroidx/compose/ui/text/font/PlatformTypefaces_androidKt;->PlatformTypefaces()Landroidx/compose/ui/text/font/PlatformTypefaces;
 
-    move-result-object v3
+    move-result-object v0
 
     .line 94
-    invoke-virtual {p0}, Landroidx/compose/ui/text/font/DeviceFontFamilyNameFont;->getStyle-_-LCdwA()I
-
-    move-result v4
+    iget-object v1, p0, Landroidx/compose/ui/text/font/DeviceFontFamilyNameFont;->familyName:Ljava/lang/String;
 
     .line 95
+    invoke-virtual {p0}, Landroidx/compose/ui/text/font/DeviceFontFamilyNameFont;->getWeight()Landroidx/compose/ui/text/font/FontWeight;
+
+    move-result-object v2
+
+    .line 96
+    invoke-virtual {p0}, Landroidx/compose/ui/text/font/DeviceFontFamilyNameFont;->getStyle-_-LCdwA()I
+
+    move-result v3
+
+    .line 97
     invoke-virtual {p0}, Landroidx/compose/ui/text/font/DeviceFontFamilyNameFont;->getVariationSettings()Landroidx/compose/ui/text/font/FontVariation$Settings;
 
-    move-result-object v5
+    move-result-object v4
 
-    move-object v6, p1
+    move-object v5, p1
 
-    .line 91
-    invoke-interface/range {v1 .. v6}, Landroidx/compose/ui/text/font/PlatformTypefaces;->optionalOnDeviceFontFamilyByName-78DK7lM(Ljava/lang/String;Landroidx/compose/ui/text/font/FontWeight;ILandroidx/compose/ui/text/font/FontVariation$Settings;Landroid/content/Context;)Landroid/graphics/Typeface;
+    .line 93
+    invoke-interface/range {v0 .. v5}, Landroidx/compose/ui/text/font/PlatformTypefaces;->optionalOnDeviceFontFamilyByName-78DK7lM(Ljava/lang/String;Landroidx/compose/ui/text/font/FontWeight;ILandroidx/compose/ui/text/font/FontVariation$Settings;Landroid/content/Context;)Landroid/graphics/Typeface;
 
     move-result-object p0
 
@@ -319,7 +303,7 @@
 .method public toString()Ljava/lang/String;
     .locals 2
 
-    .line 121
+    .line 123
     new-instance v0, Ljava/lang/StringBuilder;
 
     const-string v1, "Font(familyName=\""

@@ -38,7 +38,7 @@
 .method private static synthetic $values()[Ljp/co/sony/mc/camera/util/capability/PlatformCapability$PrepareResult;
     .locals 4
 
-    .line 184
+    .line 188
     sget-object v0, Ljp/co/sony/mc/camera/util/capability/PlatformCapability$PrepareResult;->SUCCESS:Ljp/co/sony/mc/camera/util/capability/PlatformCapability$PrepareResult;
 
     sget-object v1, Ljp/co/sony/mc/camera/util/capability/PlatformCapability$PrepareResult;->FAIL:Ljp/co/sony/mc/camera/util/capability/PlatformCapability$PrepareResult;
@@ -57,7 +57,7 @@
 .method static constructor <clinit>()V
     .locals 3
 
-    .line 185
+    .line 189
     new-instance v0, Ljp/co/sony/mc/camera/util/capability/PlatformCapability$PrepareResult;
 
     const-string v1, "SUCCESS"
@@ -68,7 +68,7 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/util/capability/PlatformCapability$PrepareResult;->SUCCESS:Ljp/co/sony/mc/camera/util/capability/PlatformCapability$PrepareResult;
 
-    .line 186
+    .line 190
     new-instance v0, Ljp/co/sony/mc/camera/util/capability/PlatformCapability$PrepareResult;
 
     const-string v1, "FAIL"
@@ -79,7 +79,7 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/util/capability/PlatformCapability$PrepareResult;->FAIL:Ljp/co/sony/mc/camera/util/capability/PlatformCapability$PrepareResult;
 
-    .line 187
+    .line 191
     new-instance v0, Ljp/co/sony/mc/camera/util/capability/PlatformCapability$PrepareResult;
 
     const-string v1, "TIMED_OUT"
@@ -90,7 +90,7 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/util/capability/PlatformCapability$PrepareResult;->TIMED_OUT:Ljp/co/sony/mc/camera/util/capability/PlatformCapability$PrepareResult;
 
-    .line 188
+    .line 192
     new-instance v0, Ljp/co/sony/mc/camera/util/capability/PlatformCapability$PrepareResult;
 
     const-string v1, "PERMISSION_DENIED"
@@ -101,7 +101,7 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/util/capability/PlatformCapability$PrepareResult;->PERMISSION_DENIED:Ljp/co/sony/mc/camera/util/capability/PlatformCapability$PrepareResult;
 
-    .line 184
+    .line 188
     invoke-static {}, Ljp/co/sony/mc/camera/util/capability/PlatformCapability$PrepareResult;->$values()[Ljp/co/sony/mc/camera/util/capability/PlatformCapability$PrepareResult;
 
     move-result-object v0
@@ -119,7 +119,7 @@
         }
     .end annotation
 
-    .line 184
+    .line 188
     invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
     return-void
@@ -128,7 +128,7 @@
 .method public static valueOf(Ljava/lang/String;)Ljp/co/sony/mc/camera/util/capability/PlatformCapability$PrepareResult;
     .locals 1
 
-    .line 184
+    .line 188
     const-class v0, Ljp/co/sony/mc/camera/util/capability/PlatformCapability$PrepareResult;
 
     invoke-static {v0, p0}, Ljava/lang/Enum;->valueOf(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
@@ -143,7 +143,7 @@
 .method public static values()[Ljp/co/sony/mc/camera/util/capability/PlatformCapability$PrepareResult;
     .locals 1
 
-    .line 184
+    .line 188
     sget-object v0, Ljp/co/sony/mc/camera/util/capability/PlatformCapability$PrepareResult;->$VALUES:[Ljp/co/sony/mc/camera/util/capability/PlatformCapability$PrepareResult;
 
     invoke-virtual {v0}, [Ljp/co/sony/mc/camera/util/capability/PlatformCapability$PrepareResult;->clone()Ljava/lang/Object;

@@ -1,6 +1,6 @@
 .class final Landroidx/compose/ui/tooling/animation/PreviewAnimationClock$1;
 .super Lkotlin/jvm/internal/Lambda;
-.source "PreviewAnimationClock.kt"
+.source "PreviewAnimationClock.android.kt"
 
 # interfaces
 .implements Lkotlin/jvm/functions/Function0;

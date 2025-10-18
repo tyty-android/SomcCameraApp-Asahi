@@ -9,7 +9,7 @@
 # annotations
 .annotation runtime Lkotlin/Metadata;
     d1 = {
-        "\u0000\u001c\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\u0008\u00c0\u0002\u0018\u00002\u00020\u0001B\u0007\u0008\u0002\u00a2\u0006\u0002\u0010\u0002J\u001d\u0010\u0003\u001a\u00020\u0004*\u00020\u00042\u000c\u0010\u0005\u001a\u0008\u0012\u0004\u0012\u00020\u00070\u0006H\u0017\u00f8\u0001\u0000\u0082\u0002\u0004\n\u0002\u0008\u0019\u00a8\u0006\u0008"
+        "\u0000\u001c\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\u0008\u00c0\u0002\u0018\u00002\u00020\u0001B\u0007\u0008\u0002\u00a2\u0006\u0002\u0010\u0002J\u001a\u0010\u0003\u001a\u00020\u0004*\u00020\u00042\u000c\u0010\u0005\u001a\u0008\u0012\u0004\u0012\u00020\u00070\u0006H\u0017\u00a8\u0006\u0008"
     }
     d2 = {
         "Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridItemScopeImpl;",
@@ -33,6 +33,8 @@
 
 
 # static fields
+.field public static final $stable:I
+
 .field public static final INSTANCE:Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridItemScopeImpl;
 
 
@@ -52,7 +54,7 @@
 .method private constructor <init>()V
     .locals 0
 
-    .line 61
+    .line 58
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -73,18 +75,10 @@
         }
     .end annotation
 
-    const-string p0, "<this>"
+    .line 62
+    new-instance p0, Landroidx/compose/foundation/lazy/staggeredgrid/AnimateItemElement;
 
-    invoke-static {p1, p0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string p0, "animationSpec"
-
-    invoke-static {p2, p0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 65
-    new-instance p0, Landroidx/compose/foundation/lazy/staggeredgrid/AnimateItemPlacementElement;
-
-    invoke-direct {p0, p2}, Landroidx/compose/foundation/lazy/staggeredgrid/AnimateItemPlacementElement;-><init>(Landroidx/compose/animation/core/FiniteAnimationSpec;)V
+    invoke-direct {p0, p2}, Landroidx/compose/foundation/lazy/staggeredgrid/AnimateItemElement;-><init>(Landroidx/compose/animation/core/FiniteAnimationSpec;)V
 
     check-cast p0, Landroidx/compose/ui/Modifier;
 

@@ -121,7 +121,7 @@
 .end method
 
 .method public static d(Ljava/lang/String;Ljava/lang/Throwable;)V
-    .locals 2
+    .locals 3
 
     .line 75
     sget-boolean v0, Ljp/co/sony/mc/camera/util/CamLog;->DEBUG:Z
@@ -138,13 +138,17 @@
 
     if-eqz v0, :cond_1
 
-    .line 76
     :cond_0
-    filled-new-array {p0}, [Ljava/lang/String;
+    const/4 v0, 0x1
 
-    move-result-object p0
+    .line 76
+    new-array v0, v0, [Ljava/lang/String;
 
-    invoke-static {p0}, Ljp/co/sony/mc/camera/util/CamLog;->makeLogStringWithLongInfo([Ljava/lang/String;)Ljava/lang/String;
+    const/4 v2, 0x0
+
+    aput-object p0, v0, v2
+
+    invoke-static {v0}, Ljp/co/sony/mc/camera/util/CamLog;->makeLogStringWithLongInfo([Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object p0
 
@@ -185,14 +189,18 @@
 .end method
 
 .method public static e(Ljava/lang/String;Ljava/lang/Throwable;)V
-    .locals 1
+    .locals 2
+
+    const/4 v0, 0x1
 
     .line 119
-    filled-new-array {p0}, [Ljava/lang/String;
+    new-array v0, v0, [Ljava/lang/String;
 
-    move-result-object p0
+    const/4 v1, 0x0
 
-    invoke-static {p0}, Ljp/co/sony/mc/camera/util/CamLog;->makeLogStringWithShortInfo([Ljava/lang/String;)Ljava/lang/String;
+    aput-object p0, v0, v1
+
+    invoke-static {v0}, Ljp/co/sony/mc/camera/util/CamLog;->makeLogStringWithShortInfo([Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object p0
 
@@ -219,14 +227,18 @@
 .end method
 
 .method public static i(Ljava/lang/String;Ljava/lang/Throwable;)V
-    .locals 1
+    .locals 2
+
+    const/4 v0, 0x1
 
     .line 91
-    filled-new-array {p0}, [Ljava/lang/String;
+    new-array v0, v0, [Ljava/lang/String;
 
-    move-result-object p0
+    const/4 v1, 0x0
 
-    invoke-static {p0}, Ljp/co/sony/mc/camera/util/CamLog;->makeLogStringWithShortInfo([Ljava/lang/String;)Ljava/lang/String;
+    aput-object p0, v0, v1
+
+    invoke-static {v0}, Ljp/co/sony/mc/camera/util/CamLog;->makeLogStringWithShortInfo([Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object p0
 
@@ -386,19 +398,23 @@
 .end method
 
 .method public static v(Ljava/lang/String;Ljava/lang/Throwable;)V
-    .locals 1
+    .locals 2
 
     .line 53
     sget-boolean v0, Ljp/co/sony/mc/camera/util/CamLog;->VERBOSE:Z
 
     if-eqz v0, :cond_0
 
+    const/4 v0, 0x1
+
     .line 54
-    filled-new-array {p0}, [Ljava/lang/String;
+    new-array v0, v0, [Ljava/lang/String;
 
-    move-result-object p0
+    const/4 v1, 0x0
 
-    invoke-static {p0}, Ljp/co/sony/mc/camera/util/CamLog;->makeLogStringWithLongInfo([Ljava/lang/String;)Ljava/lang/String;
+    aput-object p0, v0, v1
+
+    invoke-static {v0}, Ljp/co/sony/mc/camera/util/CamLog;->makeLogStringWithLongInfo([Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object p0
 
@@ -432,14 +448,18 @@
 .end method
 
 .method public static w(Ljava/lang/String;Ljava/lang/Throwable;)V
-    .locals 1
+    .locals 2
+
+    const/4 v0, 0x1
 
     .line 105
-    filled-new-array {p0}, [Ljava/lang/String;
+    new-array v0, v0, [Ljava/lang/String;
 
-    move-result-object p0
+    const/4 v1, 0x0
 
-    invoke-static {p0}, Ljp/co/sony/mc/camera/util/CamLog;->makeLogStringWithShortInfo([Ljava/lang/String;)Ljava/lang/String;
+    aput-object p0, v0, v1
+
+    invoke-static {v0}, Ljp/co/sony/mc/camera/util/CamLog;->makeLogStringWithShortInfo([Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object p0
 

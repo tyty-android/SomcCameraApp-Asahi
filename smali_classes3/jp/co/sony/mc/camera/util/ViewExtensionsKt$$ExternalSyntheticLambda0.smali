@@ -3,26 +3,42 @@
 .source "D8$$SyntheticClass"
 
 # interfaces
-.implements Landroidx/core/view/OnApplyWindowInsetsListener;
+.implements Lkotlin/jvm/functions/Function2;
+
+
+# instance fields
+.field public final synthetic f$0:Landroid/view/View;
 
 
 # direct methods
-.method public synthetic constructor <init>()V
+.method public synthetic constructor <init>(Landroid/view/View;)V
     .locals 0
 
     .line 0
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    iput-object p1, p0, Ljp/co/sony/mc/camera/util/ViewExtensionsKt$$ExternalSyntheticLambda0;->f$0:Landroid/view/View;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final onApplyWindowInsets(Landroid/view/View;Landroidx/core/view/WindowInsetsCompat;)Landroidx/core/view/WindowInsetsCompat;
+.method public final invoke(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
 
     .line 0
-    invoke-static {p1, p2}, Ljp/co/sony/mc/camera/util/ViewExtensionsKt;->$r8$lambda$4gNMoSC1-kfDpdzoCiF_vgAe_-4(Landroid/view/View;Landroidx/core/view/WindowInsetsCompat;)Landroidx/core/view/WindowInsetsCompat;
+    iget-object p0, p0, Ljp/co/sony/mc/camera/util/ViewExtensionsKt$$ExternalSyntheticLambda0;->f$0:Landroid/view/View;
+
+    check-cast p1, Landroidx/constraintlayout/widget/ConstraintSet;
+
+    check-cast p2, Ljava/lang/Integer;
+
+    invoke-virtual {p2}, Ljava/lang/Integer;->intValue()I
+
+    move-result p2
+
+    invoke-static {p0, p1, p2}, Ljp/co/sony/mc/camera/util/ViewExtensionsKt;->$r8$lambda$-orHmgQpIWA0z50m4XIrRHe8IP4(Landroid/view/View;Landroidx/constraintlayout/widget/ConstraintSet;I)Lkotlin/Unit;
 
     move-result-object p0
 

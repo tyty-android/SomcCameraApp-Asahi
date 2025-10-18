@@ -141,20 +141,27 @@
 
     move-result-object p2
 
-    if-eqz v7, :cond_0
+    if-eqz v7, :cond_1
 
-    if-eq v7, v1, :cond_1
+    if-eq v7, v1, :cond_0
+
+    move v8, v0
+
+    goto :goto_0
+
+    :cond_0
+    move v8, v1
 
     goto :goto_0
 
     .line 64
-    :cond_0
+    :cond_1
     iget-boolean v8, p0, Ljp/co/sony/mc/camera/device/state/DeviceStateBurstCaptureWaitingForPrepareSnapshotDone;->mShouldCaptureLowQualityBurst:Z
 
+    :goto_0
     if-eqz v8, :cond_2
 
     .line 73
-    :cond_1
     new-instance p2, Ljp/co/sony/mc/camera/device/state/DeviceStateBurstCaptureWaitingForPrepareBurst;
 
     iget-boolean v8, p0, Ljp/co/sony/mc/camera/device/state/DeviceStateBurstCaptureWaitingForPrepareSnapshotDone;->mIsAfLocked:Z
@@ -169,7 +176,6 @@
 
     .line 76
     :cond_2
-    :goto_0
     invoke-virtual {p2}, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$SnapshotRequestInfo;->pollSnapshotRequest()Ljp/co/sony/mc/camera/device/SnapshotRequest;
 
     move-result-object v8

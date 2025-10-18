@@ -8,20 +8,4 @@
         <item quantity="few">%d إشعارات جديدة</item>
         <item quantity="many">%d إشعارًا جديدًا</item>
     </plurals>
-    <plurals name="mv_minute_remaining_txt">
-        <item quantity="other">%1$d دقائق متبقية</item>
-        <item quantity="one">دقيقة واحدة متبقية</item>
-    </plurals>
-    <plurals name="mv_minute_txt">
-        <item quantity="other">%1$d دقائق</item>
-        <item quantity="one">دقيقة واحدة</item>
-    </plurals>
-    <plurals name="mv_second_remaining_txt">
-        <item quantity="other">%1$d ثوانٍ متبقية</item>
-        <item quantity="one">ثانية واحدة متبقية</item>
-    </plurals>
-    <plurals name="mv_second_txt">
-        <item quantity="other">%1$d ثانية</item>
-        <item quantity="one">ثانية واحدة</item>
-    </plurals>
 </resources>

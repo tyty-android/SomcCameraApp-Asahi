@@ -63,7 +63,7 @@
 .method public constructor <init>(IIZ)V
     .locals 0
 
-    .line 358
+    .line 377
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     iput p1, p0, Landroidx/compose/ui/text/android/LayoutHelper$BidiRun;->start:I
@@ -196,7 +196,7 @@
 .method public final getEnd()I
     .locals 0
 
-    .line 358
+    .line 377
     iget p0, p0, Landroidx/compose/ui/text/android/LayoutHelper$BidiRun;->end:I
 
     return p0
@@ -205,7 +205,7 @@
 .method public final getStart()I
     .locals 0
 
-    .line 358
+    .line 377
     iget p0, p0, Landroidx/compose/ui/text/android/LayoutHelper$BidiRun;->start:I
 
     return p0
@@ -234,11 +234,10 @@
 
     iget-boolean p0, p0, Landroidx/compose/ui/text/android/LayoutHelper$BidiRun;->isRtl:Z
 
-    if-eqz p0, :cond_0
+    invoke-static {p0}, Ljava/lang/Boolean;->hashCode(Z)I
 
-    const/4 p0, 0x1
+    move-result p0
 
-    :cond_0
     add-int/2addr v0, p0
 
     return v0
@@ -247,7 +246,7 @@
 .method public final isRtl()Z
     .locals 0
 
-    .line 358
+    .line 377
     iget-boolean p0, p0, Landroidx/compose/ui/text/android/LayoutHelper$BidiRun;->isRtl:Z
 
     return p0

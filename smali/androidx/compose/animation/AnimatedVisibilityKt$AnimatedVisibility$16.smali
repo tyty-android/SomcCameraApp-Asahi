@@ -50,8 +50,6 @@
 
 
 # instance fields
-.field final synthetic $$dirty:I
-
 .field final synthetic $content:Lkotlin/jvm/functions/Function2;
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -66,7 +64,7 @@
 
 
 # direct methods
-.method constructor <init>(Lkotlin/jvm/functions/Function2;I)V
+.method constructor <init>(Lkotlin/jvm/functions/Function2;)V
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -77,13 +75,11 @@
             "-",
             "Ljava/lang/Integer;",
             "Lkotlin/Unit;",
-            ">;I)V"
+            ">;)V"
         }
     .end annotation
 
     iput-object p1, p0, Landroidx/compose/animation/AnimatedVisibilityKt$AnimatedVisibility$16;->$content:Lkotlin/jvm/functions/Function2;
-
-    iput p2, p0, Landroidx/compose/animation/AnimatedVisibilityKt$AnimatedVisibility$16;->$$dirty:I
 
     const/4 p1, 0x3
 
@@ -97,7 +93,7 @@
 .method public bridge synthetic invoke(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
 
-    .line 715
+    .line 721
     check-cast p1, Landroidx/compose/animation/AnimatedVisibilityScope;
 
     check-cast p2, Landroidx/compose/runtime/Composer;
@@ -118,11 +114,7 @@
 .method public final invoke(Landroidx/compose/animation/AnimatedVisibilityScope;Landroidx/compose/runtime/Composer;I)V
     .locals 2
 
-    const-string v0, "$this$AnimatedVisibility"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string p1, "C715@38850L9:AnimatedVisibility.kt#xbi5r1"
+    const-string p1, "C721@39155L9:AnimatedVisibility.kt#xbi5r1"
 
     invoke-static {p2, p1}, Landroidx/compose/runtime/ComposerKt;->sourceInformation(Landroidx/compose/runtime/Composer;Ljava/lang/String;)V
 
@@ -132,7 +124,7 @@
 
     if-ne p1, v0, :cond_1
 
-    .line 716
+    .line 722
     invoke-interface {p2}, Landroidx/compose/runtime/Composer;->getSkipping()Z
 
     move-result p1
@@ -156,26 +148,22 @@
 
     const/4 p1, -0x1
 
-    const-string v0, "androidx.compose.animation.AnimatedVisibility.<anonymous> (AnimatedVisibility.kt:714)"
+    const-string v0, "androidx.compose.animation.AnimatedVisibility.<anonymous> (AnimatedVisibility.kt:721)"
 
     const v1, 0x76fd702c
 
     invoke-static {v1, p3, p1, v0}, Landroidx/compose/runtime/ComposerKt;->traceEventStart(IIILjava/lang/String;)V
 
     :cond_2
-    iget-object p1, p0, Landroidx/compose/animation/AnimatedVisibilityKt$AnimatedVisibility$16;->$content:Lkotlin/jvm/functions/Function2;
+    iget-object p0, p0, Landroidx/compose/animation/AnimatedVisibilityKt$AnimatedVisibility$16;->$content:Lkotlin/jvm/functions/Function2;
 
-    iget p0, p0, Landroidx/compose/animation/AnimatedVisibilityKt$AnimatedVisibility$16;->$$dirty:I
+    const/4 p1, 0x0
 
-    shr-int/lit8 p0, p0, 0xf
+    invoke-static {p1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
-    and-int/lit8 p0, p0, 0xe
+    move-result-object p1
 
-    invoke-static {p0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
-
-    move-result-object p0
-
-    invoke-interface {p1, p2, p0}, Lkotlin/jvm/functions/Function2;->invoke(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-interface {p0, p2, p1}, Lkotlin/jvm/functions/Function2;->invoke(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     invoke-static {}, Landroidx/compose/runtime/ComposerKt;->isTraceInProgress()Z
 

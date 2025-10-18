@@ -1,6 +1,6 @@
 .class final Landroidx/compose/material/ExposedDropdownMenuBoxScope$ExposedDropdownMenu$popupPositionProvider$1$1;
 .super Lkotlin/jvm/internal/Lambda;
-.source "ExposedDropdownMenu.kt"
+.source "ExposedDropdownMenu.android.kt"
 
 # interfaces
 .implements Lkotlin/jvm/functions/Function2;
@@ -100,15 +100,7 @@
 .end method
 
 .method public final invoke(Landroidx/compose/ui/unit/IntRect;Landroidx/compose/ui/unit/IntRect;)V
-    .locals 1
-
-    const-string v0, "parentBounds"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string v0, "menuBounds"
-
-    invoke-static {p2, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+    .locals 0
 
     .line 259
     iget-object p0, p0, Landroidx/compose/material/ExposedDropdownMenuBoxScope$ExposedDropdownMenu$popupPositionProvider$1$1;->$transformOriginState:Landroidx/compose/runtime/MutableState;

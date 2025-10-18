@@ -64,7 +64,7 @@
     .line 291
     iget-object p1, p0, Ljp/co/sony/mc/camera/calibration/ui/SpiritLevelCalibrationFragment$3;->this$0:Ljp/co/sony/mc/camera/calibration/ui/SpiritLevelCalibrationFragment;
 
-    const p2, 0x7f1101dc
+    const p2, 0x7f1101df
 
     .line 292
     invoke-virtual {p1, p2}, Ljp/co/sony/mc/camera/calibration/ui/SpiritLevelCalibrationFragment;->getString(I)Ljava/lang/String;

@@ -19,5 +19,4 @@ Please turn on WLAN from SETTINGS."</string>
     <string name="camera_strings_runtime_permission_rationale_network_cta_txt">"This app uses WLAN and mobile data to send user data (i.e. recorded pictures/videos, voice data, account info of the services in use, etc.) to the internet.
 Note that you may be charged for data depending on your network operator or internet service provider contracts."</string>
     <string name="camera_strings_streaming_error_wifi_disconnected_txt">No WLAN connection</string>
-    <string name="mv_wireless_network_txt">Use WLAN &amp; mobile data</string>
 </resources>

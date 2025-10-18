@@ -85,10 +85,6 @@
 .method public final invoke(Landroidx/compose/ui/graphics/GraphicsLayerScope;)V
     .locals 3
 
-    const-string v0, "$this$graphicsLayer"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
     .line 65
     iget-object v0, p0, Landroidx/compose/material/pullrefresh/PullRefreshIndicatorTransformKt$pullRefreshIndicatorTransform$2$2;->$state:Landroidx/compose/material/pullrefresh/PullRefreshState;
 

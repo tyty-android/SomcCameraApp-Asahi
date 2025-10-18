@@ -35,7 +35,7 @@
 
     const/4 v0, 0x0
 
-    .line 59
+    .line 64
     invoke-direct {p0, p1, v0}, Lcom/google/android/material/slider/RangeSlider;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
     return-void
@@ -44,7 +44,7 @@
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 1
 
-    .line 63
+    .line 68
     sget v0, Lcom/google/android/material/R$attr;->sliderStyle:I
 
     invoke-direct {p0, p1, p2, v0}, Lcom/google/android/material/slider/RangeSlider;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
@@ -55,10 +55,10 @@
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
     .locals 7
 
-    .line 67
+    .line 72
     invoke-direct {p0, p1, p2, p3}, Lcom/google/android/material/slider/BaseSlider;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
 
-    .line 68
+    .line 73
     sget-object v2, Lcom/google/android/material/R$styleable;->RangeSlider:[I
 
     sget v4, Lcom/google/android/material/slider/RangeSlider;->DEF_STYLE_RES:I
@@ -73,12 +73,12 @@
 
     move v3, p3
 
-    .line 69
+    .line 74
     invoke-static/range {v0 .. v5}, Lcom/google/android/material/internal/ThemeEnforcement;->obtainStyledAttributes(Landroid/content/Context;Landroid/util/AttributeSet;[III[I)Landroid/content/res/TypedArray;
 
     move-result-object p1
 
-    .line 71
+    .line 76
     sget p2, Lcom/google/android/material/R$styleable;->RangeSlider_values:I
 
     invoke-virtual {p1, p2}, Landroid/content/res/TypedArray;->hasValue(I)Z
@@ -87,14 +87,14 @@
 
     if-eqz p2, :cond_0
 
-    .line 72
+    .line 77
     sget p2, Lcom/google/android/material/R$styleable;->RangeSlider_values:I
 
     invoke-virtual {p1, p2, v6}, Landroid/content/res/TypedArray;->getResourceId(II)I
 
     move-result p2
 
-    .line 73
+    .line 78
     invoke-virtual {p1}, Landroid/content/res/TypedArray;->getResources()Landroid/content/res/Resources;
 
     move-result-object p3
@@ -103,14 +103,14 @@
 
     move-result-object p2
 
-    .line 74
+    .line 79
     invoke-static {p2}, Lcom/google/android/material/slider/RangeSlider;->convertToFloat(Landroid/content/res/TypedArray;)Ljava/util/List;
 
     move-result-object p2
 
     invoke-virtual {p0, p2}, Lcom/google/android/material/slider/RangeSlider;->setValues(Ljava/util/List;)V
 
-    .line 77
+    .line 82
     :cond_0
     sget p2, Lcom/google/android/material/R$styleable;->RangeSlider_minSeparation:I
 
@@ -122,7 +122,7 @@
 
     iput p2, p0, Lcom/google/android/material/slider/RangeSlider;->minSeparation:F
 
-    .line 78
+    .line 83
     invoke-virtual {p1}, Landroid/content/res/TypedArray;->recycle()V
 
     return-void
@@ -141,14 +141,14 @@
         }
     .end annotation
 
-    .line 161
+    .line 166
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
     const/4 v1, 0x0
 
-    .line 162
+    .line 167
     :goto_0
     invoke-virtual {p0}, Landroid/content/res/TypedArray;->length()I
 
@@ -158,7 +158,7 @@
 
     const/high16 v2, -0x40800000    # -1.0f
 
-    .line 163
+    .line 168
     invoke-virtual {p0, v1, v2}, Landroid/content/res/TypedArray;->getFloat(IF)F
 
     move-result v2
@@ -182,7 +182,7 @@
 .method public bridge synthetic addOnChangeListener(Lcom/google/android/material/slider/BaseOnChangeListener;)V
     .locals 0
 
-    .line 53
+    .line 58
     invoke-super {p0, p1}, Lcom/google/android/material/slider/BaseSlider;->addOnChangeListener(Lcom/google/android/material/slider/BaseOnChangeListener;)V
 
     return-void
@@ -191,7 +191,7 @@
 .method public bridge synthetic addOnSliderTouchListener(Lcom/google/android/material/slider/BaseOnSliderTouchListener;)V
     .locals 0
 
-    .line 53
+    .line 58
     invoke-super {p0, p1}, Lcom/google/android/material/slider/BaseSlider;->addOnSliderTouchListener(Lcom/google/android/material/slider/BaseOnSliderTouchListener;)V
 
     return-void
@@ -200,7 +200,7 @@
 .method public bridge synthetic clearOnChangeListeners()V
     .locals 0
 
-    .line 53
+    .line 58
     invoke-super {p0}, Lcom/google/android/material/slider/BaseSlider;->clearOnChangeListeners()V
 
     return-void
@@ -209,7 +209,7 @@
 .method public bridge synthetic clearOnSliderTouchListeners()V
     .locals 0
 
-    .line 53
+    .line 58
     invoke-super {p0}, Lcom/google/android/material/slider/BaseSlider;->clearOnSliderTouchListeners()V
 
     return-void
@@ -218,7 +218,7 @@
 .method public bridge synthetic dispatchHoverEvent(Landroid/view/MotionEvent;)Z
     .locals 0
 
-    .line 53
+    .line 58
     invoke-super {p0, p1}, Lcom/google/android/material/slider/BaseSlider;->dispatchHoverEvent(Landroid/view/MotionEvent;)Z
 
     move-result p0
@@ -229,7 +229,7 @@
 .method public bridge synthetic dispatchKeyEvent(Landroid/view/KeyEvent;)Z
     .locals 0
 
-    .line 53
+    .line 58
     invoke-super {p0, p1}, Lcom/google/android/material/slider/BaseSlider;->dispatchKeyEvent(Landroid/view/KeyEvent;)Z
 
     move-result p0
@@ -240,7 +240,7 @@
 .method public bridge synthetic getAccessibilityClassName()Ljava/lang/CharSequence;
     .locals 0
 
-    .line 53
+    .line 58
     invoke-super {p0}, Lcom/google/android/material/slider/BaseSlider;->getAccessibilityClassName()Ljava/lang/CharSequence;
 
     move-result-object p0
@@ -251,7 +251,7 @@
 .method public bridge synthetic getActiveThumbIndex()I
     .locals 0
 
-    .line 53
+    .line 58
     invoke-super {p0}, Lcom/google/android/material/slider/BaseSlider;->getActiveThumbIndex()I
 
     move-result p0
@@ -262,7 +262,7 @@
 .method public bridge synthetic getFocusedThumbIndex()I
     .locals 0
 
-    .line 53
+    .line 58
     invoke-super {p0}, Lcom/google/android/material/slider/BaseSlider;->getFocusedThumbIndex()I
 
     move-result p0
@@ -273,7 +273,7 @@
 .method public bridge synthetic getHaloRadius()I
     .locals 0
 
-    .line 53
+    .line 58
     invoke-super {p0}, Lcom/google/android/material/slider/BaseSlider;->getHaloRadius()I
 
     move-result p0
@@ -284,7 +284,7 @@
 .method public bridge synthetic getHaloTintList()Landroid/content/res/ColorStateList;
     .locals 0
 
-    .line 53
+    .line 58
     invoke-super {p0}, Lcom/google/android/material/slider/BaseSlider;->getHaloTintList()Landroid/content/res/ColorStateList;
 
     move-result-object p0
@@ -295,7 +295,7 @@
 .method public bridge synthetic getLabelBehavior()I
     .locals 0
 
-    .line 53
+    .line 58
     invoke-super {p0}, Lcom/google/android/material/slider/BaseSlider;->getLabelBehavior()I
 
     move-result p0
@@ -306,7 +306,7 @@
 .method public getMinSeparation()F
     .locals 0
 
-    .line 176
+    .line 181
     iget p0, p0, Lcom/google/android/material/slider/RangeSlider;->minSeparation:F
 
     return p0
@@ -315,7 +315,7 @@
 .method public bridge synthetic getStepSize()F
     .locals 0
 
-    .line 53
+    .line 58
     invoke-super {p0}, Lcom/google/android/material/slider/BaseSlider;->getStepSize()F
 
     move-result p0
@@ -326,8 +326,19 @@
 .method public bridge synthetic getThumbElevation()F
     .locals 0
 
-    .line 53
+    .line 58
     invoke-super {p0}, Lcom/google/android/material/slider/BaseSlider;->getThumbElevation()F
+
+    move-result p0
+
+    return p0
+.end method
+
+.method public bridge synthetic getThumbHeight()I
+    .locals 0
+
+    .line 58
+    invoke-super {p0}, Lcom/google/android/material/slider/BaseSlider;->getThumbHeight()I
 
     move-result p0
 
@@ -337,7 +348,7 @@
 .method public bridge synthetic getThumbRadius()I
     .locals 0
 
-    .line 53
+    .line 58
     invoke-super {p0}, Lcom/google/android/material/slider/BaseSlider;->getThumbRadius()I
 
     move-result p0
@@ -348,7 +359,7 @@
 .method public bridge synthetic getThumbStrokeColor()Landroid/content/res/ColorStateList;
     .locals 0
 
-    .line 53
+    .line 58
     invoke-super {p0}, Lcom/google/android/material/slider/BaseSlider;->getThumbStrokeColor()Landroid/content/res/ColorStateList;
 
     move-result-object p0
@@ -359,7 +370,7 @@
 .method public bridge synthetic getThumbStrokeWidth()F
     .locals 0
 
-    .line 53
+    .line 58
     invoke-super {p0}, Lcom/google/android/material/slider/BaseSlider;->getThumbStrokeWidth()F
 
     move-result p0
@@ -370,7 +381,7 @@
 .method public bridge synthetic getThumbTintList()Landroid/content/res/ColorStateList;
     .locals 0
 
-    .line 53
+    .line 58
     invoke-super {p0}, Lcom/google/android/material/slider/BaseSlider;->getThumbTintList()Landroid/content/res/ColorStateList;
 
     move-result-object p0
@@ -378,10 +389,32 @@
     return-object p0
 .end method
 
+.method public bridge synthetic getThumbTrackGapSize()I
+    .locals 0
+
+    .line 58
+    invoke-super {p0}, Lcom/google/android/material/slider/BaseSlider;->getThumbTrackGapSize()I
+
+    move-result p0
+
+    return p0
+.end method
+
+.method public bridge synthetic getThumbWidth()I
+    .locals 0
+
+    .line 58
+    invoke-super {p0}, Lcom/google/android/material/slider/BaseSlider;->getThumbWidth()I
+
+    move-result p0
+
+    return p0
+.end method
+
 .method public bridge synthetic getTickActiveRadius()I
     .locals 0
 
-    .line 53
+    .line 58
     invoke-super {p0}, Lcom/google/android/material/slider/BaseSlider;->getTickActiveRadius()I
 
     move-result p0
@@ -392,7 +425,7 @@
 .method public bridge synthetic getTickActiveTintList()Landroid/content/res/ColorStateList;
     .locals 0
 
-    .line 53
+    .line 58
     invoke-super {p0}, Lcom/google/android/material/slider/BaseSlider;->getTickActiveTintList()Landroid/content/res/ColorStateList;
 
     move-result-object p0
@@ -403,7 +436,7 @@
 .method public bridge synthetic getTickInactiveRadius()I
     .locals 0
 
-    .line 53
+    .line 58
     invoke-super {p0}, Lcom/google/android/material/slider/BaseSlider;->getTickInactiveRadius()I
 
     move-result p0
@@ -414,7 +447,7 @@
 .method public bridge synthetic getTickInactiveTintList()Landroid/content/res/ColorStateList;
     .locals 0
 
-    .line 53
+    .line 58
     invoke-super {p0}, Lcom/google/android/material/slider/BaseSlider;->getTickInactiveTintList()Landroid/content/res/ColorStateList;
 
     move-result-object p0
@@ -425,7 +458,7 @@
 .method public bridge synthetic getTickTintList()Landroid/content/res/ColorStateList;
     .locals 0
 
-    .line 53
+    .line 58
     invoke-super {p0}, Lcom/google/android/material/slider/BaseSlider;->getTickTintList()Landroid/content/res/ColorStateList;
 
     move-result-object p0
@@ -436,7 +469,7 @@
 .method public bridge synthetic getTrackActiveTintList()Landroid/content/res/ColorStateList;
     .locals 0
 
-    .line 53
+    .line 58
     invoke-super {p0}, Lcom/google/android/material/slider/BaseSlider;->getTrackActiveTintList()Landroid/content/res/ColorStateList;
 
     move-result-object p0
@@ -447,7 +480,7 @@
 .method public bridge synthetic getTrackHeight()I
     .locals 0
 
-    .line 53
+    .line 58
     invoke-super {p0}, Lcom/google/android/material/slider/BaseSlider;->getTrackHeight()I
 
     move-result p0
@@ -458,7 +491,7 @@
 .method public bridge synthetic getTrackInactiveTintList()Landroid/content/res/ColorStateList;
     .locals 0
 
-    .line 53
+    .line 58
     invoke-super {p0}, Lcom/google/android/material/slider/BaseSlider;->getTrackInactiveTintList()Landroid/content/res/ColorStateList;
 
     move-result-object p0
@@ -466,11 +499,33 @@
     return-object p0
 .end method
 
+.method public bridge synthetic getTrackInsideCornerSize()I
+    .locals 0
+
+    .line 58
+    invoke-super {p0}, Lcom/google/android/material/slider/BaseSlider;->getTrackInsideCornerSize()I
+
+    move-result p0
+
+    return p0
+.end method
+
 .method public bridge synthetic getTrackSidePadding()I
     .locals 0
 
-    .line 53
+    .line 58
     invoke-super {p0}, Lcom/google/android/material/slider/BaseSlider;->getTrackSidePadding()I
+
+    move-result p0
+
+    return p0
+.end method
+
+.method public bridge synthetic getTrackStopIndicatorSize()I
+    .locals 0
+
+    .line 58
+    invoke-super {p0}, Lcom/google/android/material/slider/BaseSlider;->getTrackStopIndicatorSize()I
 
     move-result p0
 
@@ -480,7 +535,7 @@
 .method public bridge synthetic getTrackTintList()Landroid/content/res/ColorStateList;
     .locals 0
 
-    .line 53
+    .line 58
     invoke-super {p0}, Lcom/google/android/material/slider/BaseSlider;->getTrackTintList()Landroid/content/res/ColorStateList;
 
     move-result-object p0
@@ -491,7 +546,7 @@
 .method public bridge synthetic getTrackWidth()I
     .locals 0
 
-    .line 53
+    .line 58
     invoke-super {p0}, Lcom/google/android/material/slider/BaseSlider;->getTrackWidth()I
 
     move-result p0
@@ -502,7 +557,7 @@
 .method public bridge synthetic getValueFrom()F
     .locals 0
 
-    .line 53
+    .line 58
     invoke-super {p0}, Lcom/google/android/material/slider/BaseSlider;->getValueFrom()F
 
     move-result p0
@@ -513,7 +568,7 @@
 .method public bridge synthetic getValueTo()F
     .locals 0
 
-    .line 53
+    .line 58
     invoke-super {p0}, Lcom/google/android/material/slider/BaseSlider;->getValueTo()F
 
     move-result p0
@@ -532,7 +587,7 @@
         }
     .end annotation
 
-    .line 125
+    .line 130
     invoke-super {p0}, Lcom/google/android/material/slider/BaseSlider;->getValues()Ljava/util/List;
 
     move-result-object p0
@@ -543,7 +598,7 @@
 .method public bridge synthetic hasLabelFormatter()Z
     .locals 0
 
-    .line 53
+    .line 58
     invoke-super {p0}, Lcom/google/android/material/slider/BaseSlider;->hasLabelFormatter()Z
 
     move-result p0
@@ -554,7 +609,7 @@
 .method public bridge synthetic isTickVisible()Z
     .locals 0
 
-    .line 53
+    .line 58
     invoke-super {p0}, Lcom/google/android/material/slider/BaseSlider;->isTickVisible()Z
 
     move-result p0
@@ -565,7 +620,7 @@
 .method public bridge synthetic onKeyDown(ILandroid/view/KeyEvent;)Z
     .locals 0
 
-    .line 53
+    .line 58
     invoke-super {p0, p1, p2}, Lcom/google/android/material/slider/BaseSlider;->onKeyDown(ILandroid/view/KeyEvent;)Z
 
     move-result p0
@@ -576,7 +631,7 @@
 .method public bridge synthetic onKeyUp(ILandroid/view/KeyEvent;)Z
     .locals 0
 
-    .line 53
+    .line 58
     invoke-super {p0, p1, p2}, Lcom/google/android/material/slider/BaseSlider;->onKeyUp(ILandroid/view/KeyEvent;)Z
 
     move-result p0
@@ -587,31 +642,31 @@
 .method protected onRestoreInstanceState(Landroid/os/Parcelable;)V
     .locals 1
 
-    .line 221
+    .line 226
     check-cast p1, Lcom/google/android/material/slider/RangeSlider$RangeSliderState;
 
-    .line 222
+    .line 227
     invoke-virtual {p1}, Lcom/google/android/material/slider/RangeSlider$RangeSliderState;->getSuperState()Landroid/os/Parcelable;
 
     move-result-object v0
 
     invoke-super {p0, v0}, Lcom/google/android/material/slider/BaseSlider;->onRestoreInstanceState(Landroid/os/Parcelable;)V
 
-    .line 224
+    .line 229
     invoke-static {p1}, Lcom/google/android/material/slider/RangeSlider$RangeSliderState;->access$000(Lcom/google/android/material/slider/RangeSlider$RangeSliderState;)F
 
     move-result v0
 
     iput v0, p0, Lcom/google/android/material/slider/RangeSlider;->minSeparation:F
 
-    .line 225
+    .line 230
     invoke-static {p1}, Lcom/google/android/material/slider/RangeSlider$RangeSliderState;->access$100(Lcom/google/android/material/slider/RangeSlider$RangeSliderState;)I
 
     move-result p1
 
     iput p1, p0, Lcom/google/android/material/slider/RangeSlider;->separationUnit:I
 
-    .line 226
+    .line 231
     invoke-virtual {p0, p1}, Lcom/google/android/material/slider/RangeSlider;->setSeparationUnit(I)V
 
     return-void
@@ -620,22 +675,22 @@
 .method public onSaveInstanceState()Landroid/os/Parcelable;
     .locals 2
 
-    .line 210
+    .line 215
     invoke-super {p0}, Lcom/google/android/material/slider/BaseSlider;->onSaveInstanceState()Landroid/os/Parcelable;
 
     move-result-object v0
 
-    .line 212
+    .line 217
     new-instance v1, Lcom/google/android/material/slider/RangeSlider$RangeSliderState;
 
     invoke-direct {v1, v0}, Lcom/google/android/material/slider/RangeSlider$RangeSliderState;-><init>(Landroid/os/Parcelable;)V
 
-    .line 213
+    .line 218
     iget v0, p0, Lcom/google/android/material/slider/RangeSlider;->minSeparation:F
 
     invoke-static {v1, v0}, Lcom/google/android/material/slider/RangeSlider$RangeSliderState;->access$002(Lcom/google/android/material/slider/RangeSlider$RangeSliderState;F)F
 
-    .line 214
+    .line 219
     iget p0, p0, Lcom/google/android/material/slider/RangeSlider;->separationUnit:I
 
     invoke-static {v1, p0}, Lcom/google/android/material/slider/RangeSlider$RangeSliderState;->access$102(Lcom/google/android/material/slider/RangeSlider$RangeSliderState;I)I
@@ -646,7 +701,7 @@
 .method public bridge synthetic onTouchEvent(Landroid/view/MotionEvent;)Z
     .locals 0
 
-    .line 53
+    .line 58
     invoke-super {p0, p1}, Lcom/google/android/material/slider/BaseSlider;->onTouchEvent(Landroid/view/MotionEvent;)Z
 
     move-result p0
@@ -657,7 +712,7 @@
 .method public bridge synthetic removeOnChangeListener(Lcom/google/android/material/slider/BaseOnChangeListener;)V
     .locals 0
 
-    .line 53
+    .line 58
     invoke-super {p0, p1}, Lcom/google/android/material/slider/BaseSlider;->removeOnChangeListener(Lcom/google/android/material/slider/BaseOnChangeListener;)V
 
     return-void
@@ -666,7 +721,7 @@
 .method public bridge synthetic removeOnSliderTouchListener(Lcom/google/android/material/slider/BaseOnSliderTouchListener;)V
     .locals 0
 
-    .line 53
+    .line 58
     invoke-super {p0, p1}, Lcom/google/android/material/slider/BaseSlider;->removeOnSliderTouchListener(Lcom/google/android/material/slider/BaseOnSliderTouchListener;)V
 
     return-void
@@ -675,7 +730,7 @@
 .method public setCustomThumbDrawable(I)V
     .locals 0
 
-    .line 133
+    .line 138
     invoke-super {p0, p1}, Lcom/google/android/material/slider/BaseSlider;->setCustomThumbDrawable(I)V
 
     return-void
@@ -684,7 +739,7 @@
 .method public setCustomThumbDrawable(Landroid/graphics/drawable/Drawable;)V
     .locals 0
 
-    .line 141
+    .line 146
     invoke-super {p0, p1}, Lcom/google/android/material/slider/BaseSlider;->setCustomThumbDrawable(Landroid/graphics/drawable/Drawable;)V
 
     return-void
@@ -693,7 +748,7 @@
 .method public varargs setCustomThumbDrawablesForValues([I)V
     .locals 0
 
-    .line 149
+    .line 154
     invoke-super {p0, p1}, Lcom/google/android/material/slider/BaseSlider;->setCustomThumbDrawablesForValues([I)V
 
     return-void
@@ -702,7 +757,7 @@
 .method public varargs setCustomThumbDrawablesForValues([Landroid/graphics/drawable/Drawable;)V
     .locals 0
 
-    .line 157
+    .line 162
     invoke-super {p0, p1}, Lcom/google/android/material/slider/BaseSlider;->setCustomThumbDrawablesForValues([Landroid/graphics/drawable/Drawable;)V
 
     return-void
@@ -711,7 +766,7 @@
 .method public bridge synthetic setEnabled(Z)V
     .locals 0
 
-    .line 53
+    .line 58
     invoke-super {p0, p1}, Lcom/google/android/material/slider/BaseSlider;->setEnabled(Z)V
 
     return-void
@@ -720,7 +775,7 @@
 .method public bridge synthetic setFocusedThumbIndex(I)V
     .locals 0
 
-    .line 53
+    .line 58
     invoke-super {p0, p1}, Lcom/google/android/material/slider/BaseSlider;->setFocusedThumbIndex(I)V
 
     return-void
@@ -729,7 +784,7 @@
 .method public bridge synthetic setHaloRadius(I)V
     .locals 0
 
-    .line 53
+    .line 58
     invoke-super {p0, p1}, Lcom/google/android/material/slider/BaseSlider;->setHaloRadius(I)V
 
     return-void
@@ -738,7 +793,7 @@
 .method public bridge synthetic setHaloRadiusResource(I)V
     .locals 0
 
-    .line 53
+    .line 58
     invoke-super {p0, p1}, Lcom/google/android/material/slider/BaseSlider;->setHaloRadiusResource(I)V
 
     return-void
@@ -747,7 +802,7 @@
 .method public bridge synthetic setHaloTintList(Landroid/content/res/ColorStateList;)V
     .locals 0
 
-    .line 53
+    .line 58
     invoke-super {p0, p1}, Lcom/google/android/material/slider/BaseSlider;->setHaloTintList(Landroid/content/res/ColorStateList;)V
 
     return-void
@@ -756,7 +811,7 @@
 .method public bridge synthetic setLabelBehavior(I)V
     .locals 0
 
-    .line 53
+    .line 58
     invoke-super {p0, p1}, Lcom/google/android/material/slider/BaseSlider;->setLabelBehavior(I)V
 
     return-void
@@ -765,7 +820,7 @@
 .method public bridge synthetic setLabelFormatter(Lcom/google/android/material/slider/LabelFormatter;)V
     .locals 0
 
-    .line 53
+    .line 58
     invoke-super {p0, p1}, Lcom/google/android/material/slider/BaseSlider;->setLabelFormatter(Lcom/google/android/material/slider/LabelFormatter;)V
 
     return-void
@@ -774,15 +829,15 @@
 .method public setMinSeparation(F)V
     .locals 0
 
-    .line 188
+    .line 193
     iput p1, p0, Lcom/google/android/material/slider/RangeSlider;->minSeparation:F
 
     const/4 p1, 0x0
 
-    .line 189
+    .line 194
     iput p1, p0, Lcom/google/android/material/slider/RangeSlider;->separationUnit:I
 
-    .line 190
+    .line 195
     invoke-virtual {p0, p1}, Lcom/google/android/material/slider/RangeSlider;->setSeparationUnit(I)V
 
     return-void
@@ -791,15 +846,15 @@
 .method public setMinSeparationValue(F)V
     .locals 0
 
-    .line 202
+    .line 207
     iput p1, p0, Lcom/google/android/material/slider/RangeSlider;->minSeparation:F
 
     const/4 p1, 0x1
 
-    .line 203
+    .line 208
     iput p1, p0, Lcom/google/android/material/slider/RangeSlider;->separationUnit:I
 
-    .line 204
+    .line 209
     invoke-virtual {p0, p1}, Lcom/google/android/material/slider/RangeSlider;->setSeparationUnit(I)V
 
     return-void
@@ -808,7 +863,7 @@
 .method public bridge synthetic setStepSize(F)V
     .locals 0
 
-    .line 53
+    .line 58
     invoke-super {p0, p1}, Lcom/google/android/material/slider/BaseSlider;->setStepSize(F)V
 
     return-void
@@ -817,7 +872,7 @@
 .method public bridge synthetic setThumbElevation(F)V
     .locals 0
 
-    .line 53
+    .line 58
     invoke-super {p0, p1}, Lcom/google/android/material/slider/BaseSlider;->setThumbElevation(F)V
 
     return-void
@@ -826,8 +881,26 @@
 .method public bridge synthetic setThumbElevationResource(I)V
     .locals 0
 
-    .line 53
+    .line 58
     invoke-super {p0, p1}, Lcom/google/android/material/slider/BaseSlider;->setThumbElevationResource(I)V
+
+    return-void
+.end method
+
+.method public bridge synthetic setThumbHeight(I)V
+    .locals 0
+
+    .line 58
+    invoke-super {p0, p1}, Lcom/google/android/material/slider/BaseSlider;->setThumbHeight(I)V
+
+    return-void
+.end method
+
+.method public bridge synthetic setThumbHeightResource(I)V
+    .locals 0
+
+    .line 58
+    invoke-super {p0, p1}, Lcom/google/android/material/slider/BaseSlider;->setThumbHeightResource(I)V
 
     return-void
 .end method
@@ -835,7 +908,7 @@
 .method public bridge synthetic setThumbRadius(I)V
     .locals 0
 
-    .line 53
+    .line 58
     invoke-super {p0, p1}, Lcom/google/android/material/slider/BaseSlider;->setThumbRadius(I)V
 
     return-void
@@ -844,7 +917,7 @@
 .method public bridge synthetic setThumbRadiusResource(I)V
     .locals 0
 
-    .line 53
+    .line 58
     invoke-super {p0, p1}, Lcom/google/android/material/slider/BaseSlider;->setThumbRadiusResource(I)V
 
     return-void
@@ -853,7 +926,7 @@
 .method public bridge synthetic setThumbStrokeColor(Landroid/content/res/ColorStateList;)V
     .locals 0
 
-    .line 53
+    .line 58
     invoke-super {p0, p1}, Lcom/google/android/material/slider/BaseSlider;->setThumbStrokeColor(Landroid/content/res/ColorStateList;)V
 
     return-void
@@ -862,7 +935,7 @@
 .method public bridge synthetic setThumbStrokeColorResource(I)V
     .locals 0
 
-    .line 53
+    .line 58
     invoke-super {p0, p1}, Lcom/google/android/material/slider/BaseSlider;->setThumbStrokeColorResource(I)V
 
     return-void
@@ -871,7 +944,7 @@
 .method public bridge synthetic setThumbStrokeWidth(F)V
     .locals 0
 
-    .line 53
+    .line 58
     invoke-super {p0, p1}, Lcom/google/android/material/slider/BaseSlider;->setThumbStrokeWidth(F)V
 
     return-void
@@ -880,7 +953,7 @@
 .method public bridge synthetic setThumbStrokeWidthResource(I)V
     .locals 0
 
-    .line 53
+    .line 58
     invoke-super {p0, p1}, Lcom/google/android/material/slider/BaseSlider;->setThumbStrokeWidthResource(I)V
 
     return-void
@@ -889,8 +962,35 @@
 .method public bridge synthetic setThumbTintList(Landroid/content/res/ColorStateList;)V
     .locals 0
 
-    .line 53
+    .line 58
     invoke-super {p0, p1}, Lcom/google/android/material/slider/BaseSlider;->setThumbTintList(Landroid/content/res/ColorStateList;)V
+
+    return-void
+.end method
+
+.method public bridge synthetic setThumbTrackGapSize(I)V
+    .locals 0
+
+    .line 58
+    invoke-super {p0, p1}, Lcom/google/android/material/slider/BaseSlider;->setThumbTrackGapSize(I)V
+
+    return-void
+.end method
+
+.method public bridge synthetic setThumbWidth(I)V
+    .locals 0
+
+    .line 58
+    invoke-super {p0, p1}, Lcom/google/android/material/slider/BaseSlider;->setThumbWidth(I)V
+
+    return-void
+.end method
+
+.method public bridge synthetic setThumbWidthResource(I)V
+    .locals 0
+
+    .line 58
+    invoke-super {p0, p1}, Lcom/google/android/material/slider/BaseSlider;->setThumbWidthResource(I)V
 
     return-void
 .end method
@@ -898,7 +998,7 @@
 .method public bridge synthetic setTickActiveRadius(I)V
     .locals 0
 
-    .line 53
+    .line 58
     invoke-super {p0, p1}, Lcom/google/android/material/slider/BaseSlider;->setTickActiveRadius(I)V
 
     return-void
@@ -907,7 +1007,7 @@
 .method public bridge synthetic setTickActiveTintList(Landroid/content/res/ColorStateList;)V
     .locals 0
 
-    .line 53
+    .line 58
     invoke-super {p0, p1}, Lcom/google/android/material/slider/BaseSlider;->setTickActiveTintList(Landroid/content/res/ColorStateList;)V
 
     return-void
@@ -916,7 +1016,7 @@
 .method public bridge synthetic setTickInactiveRadius(I)V
     .locals 0
 
-    .line 53
+    .line 58
     invoke-super {p0, p1}, Lcom/google/android/material/slider/BaseSlider;->setTickInactiveRadius(I)V
 
     return-void
@@ -925,7 +1025,7 @@
 .method public bridge synthetic setTickInactiveTintList(Landroid/content/res/ColorStateList;)V
     .locals 0
 
-    .line 53
+    .line 58
     invoke-super {p0, p1}, Lcom/google/android/material/slider/BaseSlider;->setTickInactiveTintList(Landroid/content/res/ColorStateList;)V
 
     return-void
@@ -934,7 +1034,7 @@
 .method public bridge synthetic setTickTintList(Landroid/content/res/ColorStateList;)V
     .locals 0
 
-    .line 53
+    .line 58
     invoke-super {p0, p1}, Lcom/google/android/material/slider/BaseSlider;->setTickTintList(Landroid/content/res/ColorStateList;)V
 
     return-void
@@ -943,7 +1043,7 @@
 .method public bridge synthetic setTickVisible(Z)V
     .locals 0
 
-    .line 53
+    .line 58
     invoke-super {p0, p1}, Lcom/google/android/material/slider/BaseSlider;->setTickVisible(Z)V
 
     return-void
@@ -952,7 +1052,7 @@
 .method public bridge synthetic setTrackActiveTintList(Landroid/content/res/ColorStateList;)V
     .locals 0
 
-    .line 53
+    .line 58
     invoke-super {p0, p1}, Lcom/google/android/material/slider/BaseSlider;->setTrackActiveTintList(Landroid/content/res/ColorStateList;)V
 
     return-void
@@ -961,7 +1061,7 @@
 .method public bridge synthetic setTrackHeight(I)V
     .locals 0
 
-    .line 53
+    .line 58
     invoke-super {p0, p1}, Lcom/google/android/material/slider/BaseSlider;->setTrackHeight(I)V
 
     return-void
@@ -970,8 +1070,26 @@
 .method public bridge synthetic setTrackInactiveTintList(Landroid/content/res/ColorStateList;)V
     .locals 0
 
-    .line 53
+    .line 58
     invoke-super {p0, p1}, Lcom/google/android/material/slider/BaseSlider;->setTrackInactiveTintList(Landroid/content/res/ColorStateList;)V
+
+    return-void
+.end method
+
+.method public bridge synthetic setTrackInsideCornerSize(I)V
+    .locals 0
+
+    .line 58
+    invoke-super {p0, p1}, Lcom/google/android/material/slider/BaseSlider;->setTrackInsideCornerSize(I)V
+
+    return-void
+.end method
+
+.method public bridge synthetic setTrackStopIndicatorSize(I)V
+    .locals 0
+
+    .line 58
+    invoke-super {p0, p1}, Lcom/google/android/material/slider/BaseSlider;->setTrackStopIndicatorSize(I)V
 
     return-void
 .end method
@@ -979,7 +1097,7 @@
 .method public bridge synthetic setTrackTintList(Landroid/content/res/ColorStateList;)V
     .locals 0
 
-    .line 53
+    .line 58
     invoke-super {p0, p1}, Lcom/google/android/material/slider/BaseSlider;->setTrackTintList(Landroid/content/res/ColorStateList;)V
 
     return-void
@@ -988,7 +1106,7 @@
 .method public bridge synthetic setValueFrom(F)V
     .locals 0
 
-    .line 53
+    .line 58
     invoke-super {p0, p1}, Lcom/google/android/material/slider/BaseSlider;->setValueFrom(F)V
 
     return-void
@@ -997,7 +1115,7 @@
 .method public bridge synthetic setValueTo(F)V
     .locals 0
 
-    .line 53
+    .line 58
     invoke-super {p0, p1}, Lcom/google/android/material/slider/BaseSlider;->setValueTo(F)V
 
     return-void
@@ -1014,7 +1132,7 @@
         }
     .end annotation
 
-    .line 118
+    .line 123
     invoke-super {p0, p1}, Lcom/google/android/material/slider/BaseSlider;->setValues(Ljava/util/List;)V
 
     return-void
@@ -1023,7 +1141,7 @@
 .method public varargs setValues([Ljava/lang/Float;)V
     .locals 0
 
-    .line 108
+    .line 113
     invoke-super {p0, p1}, Lcom/google/android/material/slider/BaseSlider;->setValues([Ljava/lang/Float;)V
 
     return-void

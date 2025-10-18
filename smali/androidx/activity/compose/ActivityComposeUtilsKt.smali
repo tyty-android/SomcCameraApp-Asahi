@@ -39,10 +39,6 @@
         }
     .end annotation
 
-    const-string v0, "context"
-
-    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
     .line 24
     :goto_0
     instance-of v0, p0, Landroid/content/ContextWrapper;
@@ -69,14 +65,6 @@
     invoke-virtual {p0}, Landroid/content/ContextWrapper;->getBaseContext()Landroid/content/Context;
 
     move-result-object p0
-
-    const-string v0, "innerContext.baseContext"
-
-    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
-
-    move-object v0, p0
-
-    check-cast v0, Landroid/content/Context;
 
     goto :goto_0
 

@@ -186,7 +186,7 @@
 
     move-result-object p0
 
-    const-string/jumbo v0, "stream({ Spliterators.sp\u2026literator.ORDERED, false)"
+    const-string/jumbo v0, "stream(...)"
 
     invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
 
@@ -236,7 +236,7 @@
 
     move-result-object p0
 
-    const-string/jumbo v0, "toArray()"
+    const-string/jumbo v0, "toArray(...)"
 
     invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
 
@@ -269,7 +269,7 @@
 
     move-result-object p0
 
-    const-string/jumbo v0, "toArray()"
+    const-string/jumbo v0, "toArray(...)"
 
     invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
 
@@ -302,7 +302,7 @@
 
     move-result-object p0
 
-    const-string/jumbo v0, "toArray()"
+    const-string/jumbo v0, "toArray(...)"
 
     invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
 
@@ -340,7 +340,7 @@
 
     move-result-object p0
 
-    const-string v0, "collect(Collectors.toList<T>())"
+    const-string v0, "collect(...)"
 
     invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
 

@@ -30,7 +30,7 @@
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
-    .line 27
+    .line 29
     invoke-static {p0}, Landroidx/compose/ui/layout/MeasureScope;->access$isLookingAhead$jd(Landroidx/compose/ui/layout/MeasureScope;)Z
 
     move-result p0
@@ -39,7 +39,7 @@
 .end method
 
 .method public static layout(Landroidx/compose/ui/layout/MeasureScope;IILjava/util/Map;Lkotlin/jvm/functions/Function1;)Landroidx/compose/ui/layout/MeasureResult;
-    .locals 1
+    .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -61,15 +61,7 @@
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
-    const-string v0, "alignmentLines"
-
-    invoke-static {p3, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string v0, "placementBlock"
-
-    invoke-static {p4, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 42
+    .line 44
     invoke-static {p0, p1, p2, p3, p4}, Landroidx/compose/ui/layout/MeasureScope;->access$layout$jd(Landroidx/compose/ui/layout/MeasureScope;IILjava/util/Map;Lkotlin/jvm/functions/Function1;)Landroidx/compose/ui/layout/MeasureResult;
 
     move-result-object p0
@@ -80,7 +72,7 @@
 .method public static synthetic layout$default(Landroidx/compose/ui/layout/MeasureScope;IILjava/util/Map;Lkotlin/jvm/functions/Function1;ILjava/lang/Object;)Landroidx/compose/ui/layout/MeasureResult;
     .locals 0
 
-    .line 42
+    .line 44
     invoke-static/range {p0 .. p6}, Landroidx/compose/ui/layout/MeasureScope;->layout$default(Landroidx/compose/ui/layout/MeasureScope;IILjava/util/Map;Lkotlin/jvm/functions/Function1;ILjava/lang/Object;)Landroidx/compose/ui/layout/MeasureResult;
 
     move-result-object p0
@@ -93,7 +85,7 @@
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
-    .line 27
+    .line 29
     invoke-static {p0, p1, p2}, Landroidx/compose/ui/layout/MeasureScope;->access$roundToPx--R2X_6o$jd(Landroidx/compose/ui/layout/MeasureScope;J)I
 
     move-result p0
@@ -106,7 +98,7 @@
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
-    .line 27
+    .line 29
     invoke-static {p0, p1}, Landroidx/compose/ui/layout/MeasureScope;->access$roundToPx-0680j_4$jd(Landroidx/compose/ui/layout/MeasureScope;F)I
 
     move-result p0
@@ -119,7 +111,7 @@
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
-    .line 27
+    .line 29
     invoke-static {p0, p1, p2}, Landroidx/compose/ui/layout/MeasureScope;->access$toDp-GaN1DYA$jd(Landroidx/compose/ui/layout/MeasureScope;J)F
 
     move-result p0
@@ -132,7 +124,7 @@
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
-    .line 27
+    .line 29
     invoke-static {p0, p1}, Landroidx/compose/ui/layout/MeasureScope;->access$toDp-u2uoSUM$jd(Landroidx/compose/ui/layout/MeasureScope;F)F
 
     move-result p0
@@ -145,7 +137,7 @@
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
-    .line 27
+    .line 29
     invoke-static {p0, p1}, Landroidx/compose/ui/layout/MeasureScope;->access$toDp-u2uoSUM$jd(Landroidx/compose/ui/layout/MeasureScope;I)F
 
     move-result p0
@@ -158,7 +150,7 @@
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
-    .line 27
+    .line 29
     invoke-static {p0, p1, p2}, Landroidx/compose/ui/layout/MeasureScope;->access$toDpSize-k-rfVVM$jd(Landroidx/compose/ui/layout/MeasureScope;J)J
 
     move-result-wide p0
@@ -171,7 +163,7 @@
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
-    .line 27
+    .line 29
     invoke-static {p0, p1, p2}, Landroidx/compose/ui/layout/MeasureScope;->access$toPx--R2X_6o$jd(Landroidx/compose/ui/layout/MeasureScope;J)F
 
     move-result p0
@@ -184,7 +176,7 @@
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
-    .line 27
+    .line 29
     invoke-static {p0, p1}, Landroidx/compose/ui/layout/MeasureScope;->access$toPx-0680j_4$jd(Landroidx/compose/ui/layout/MeasureScope;F)F
 
     move-result p0
@@ -193,15 +185,11 @@
 .end method
 
 .method public static toRect(Landroidx/compose/ui/layout/MeasureScope;Landroidx/compose/ui/unit/DpRect;)Landroidx/compose/ui/geometry/Rect;
-    .locals 1
+    .locals 0
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
-    const-string v0, "$receiver"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 27
+    .line 29
     invoke-static {p0, p1}, Landroidx/compose/ui/layout/MeasureScope;->access$toRect$jd(Landroidx/compose/ui/layout/MeasureScope;Landroidx/compose/ui/unit/DpRect;)Landroidx/compose/ui/geometry/Rect;
 
     move-result-object p0
@@ -214,7 +202,7 @@
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
-    .line 27
+    .line 29
     invoke-static {p0, p1, p2}, Landroidx/compose/ui/layout/MeasureScope;->access$toSize-XkaWNTQ$jd(Landroidx/compose/ui/layout/MeasureScope;J)J
 
     move-result-wide p0
@@ -227,7 +215,7 @@
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
-    .line 27
+    .line 29
     invoke-static {p0, p1}, Landroidx/compose/ui/layout/MeasureScope;->access$toSp-0xMU5do$jd(Landroidx/compose/ui/layout/MeasureScope;F)J
 
     move-result-wide p0
@@ -240,7 +228,7 @@
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
-    .line 27
+    .line 29
     invoke-static {p0, p1}, Landroidx/compose/ui/layout/MeasureScope;->access$toSp-kPz2Gy4$jd(Landroidx/compose/ui/layout/MeasureScope;F)J
 
     move-result-wide p0
@@ -253,7 +241,7 @@
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
-    .line 27
+    .line 29
     invoke-static {p0, p1}, Landroidx/compose/ui/layout/MeasureScope;->access$toSp-kPz2Gy4$jd(Landroidx/compose/ui/layout/MeasureScope;I)J
 
     move-result-wide p0

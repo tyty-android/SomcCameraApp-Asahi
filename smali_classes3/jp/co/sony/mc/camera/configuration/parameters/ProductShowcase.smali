@@ -24,38 +24,39 @@
 
 .annotation runtime Lkotlin/Metadata;
     d1 = {
-        "\u0000.\n\u0002\u0018\u0002\n\u0002\u0010\u0010\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0008\n\u0002\u0008\u0003\n\u0002\u0010\u000e\n\u0002\u0008\u0003\n\u0002\u0010\u000b\n\u0002\u0008\u0003\n\u0002\u0018\u0002\n\u0002\u0008\u0007\u0008\u0086\u0081\u0002\u0018\u0000 \u00162\u0008\u0012\u0004\u0012\u00020\u00000\u00012\u00020\u0002:\u0001\u0016B\'\u0008\u0002\u0012\u0006\u0010\u0003\u001a\u00020\u0004\u0012\u0006\u0010\u0005\u001a\u00020\u0004\u0012\u0006\u0010\u0006\u001a\u00020\u0004\u0012\u0006\u0010\u0007\u001a\u00020\u0008\u00a2\u0006\u0002\u0010\tJ\u0008\u0010\n\u001a\u00020\u0004H\u0016J\u0008\u0010\u000b\u001a\u00020\u000cH\u0016J\u0008\u0010\r\u001a\u00020\u0004H\u0016J\u0008\u0010\u000e\u001a\u00020\u0008H\u0016J\u000c\u0010\u000f\u001a\u0006\u0012\u0002\u0008\u00030\u0010H\u0016J\u0008\u0010\u0011\u001a\u00020\u0004H\u0016J\u0008\u0010\u0012\u001a\u00020\u0008H\u0016J\u0008\u0010\u0013\u001a\u00020\u000cH\u0016R\u000e\u0010\u0003\u001a\u00020\u0004X\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u0005\u001a\u00020\u0004X\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u0006\u001a\u00020\u0004X\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u0007\u001a\u00020\u0008X\u0082\u0004\u00a2\u0006\u0002\n\u0000j\u0002\u0008\u0014j\u0002\u0008\u0015\u00a8\u0006\u0017"
+        "\u0000.\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0010\u0010\n\u0000\n\u0002\u0010\u0008\n\u0002\u0008\u0003\n\u0002\u0010\u000e\n\u0002\u0008\u0005\n\u0002\u0018\u0002\n\u0002\u0008\u0006\n\u0002\u0010\u000b\n\u0002\u0008\u0003\u0008\u0086\u0081\u0002\u0018\u0000 \u00172\u00020\u00012\u0008\u0012\u0004\u0012\u00020\u00000\u0002:\u0001\u0017B)\u0008\u0002\u0012\u0006\u0010\u0003\u001a\u00020\u0004\u0012\u0006\u0010\u0005\u001a\u00020\u0004\u0012\u0006\u0010\u0006\u001a\u00020\u0004\u0012\u0006\u0010\u0007\u001a\u00020\u0008\u00a2\u0006\u0004\u0008\t\u0010\nJ\u000c\u0010\r\u001a\u0006\u0012\u0002\u0008\u00030\u000eH\u0016J\u0008\u0010\u000f\u001a\u00020\u0004H\u0016J\u0008\u0010\u0010\u001a\u00020\u0004H\u0016J\u0008\u0010\u0011\u001a\u00020\u0004H\u0016J\u0008\u0010\u0012\u001a\u00020\u0008H\u0016J\u0008\u0010\u0013\u001a\u00020\u0008H\u0016J\u0008\u0010\u0014\u001a\u00020\u0015H\u0016J\u0008\u0010\u0016\u001a\u00020\u0015H\u0016R\u000e\u0010\u0003\u001a\u00020\u0004X\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u0005\u001a\u00020\u0004X\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u0006\u001a\u00020\u0004X\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u0007\u001a\u00020\u0008X\u0082\u0004\u00a2\u0006\u0002\n\u0000j\u0002\u0008\u000bj\u0002\u0008\u000c\u00a8\u0006\u0018"
     }
     d2 = {
         "Ljp/co/sony/mc/camera/configuration/parameters/ProductShowcase;",
-        "",
         "Ljp/co/sony/mc/camera/configuration/parameters/UserSettingBooleanValue;",
+        "",
         "mBasicIconId",
         "",
         "mFnIconId",
         "mTextId",
         "mValue",
         "",
+        "<init>",
         "(Ljava/lang/String;IIIILjava/lang/String;)V",
-        "getBasicIconId",
-        "getBooleanValue",
-        "",
-        "getIconId",
-        "getName",
-        "getSettingKey",
-        "Ljp/co/sony/mc/camera/setting/SettingKey$Key;",
-        "getTextId",
-        "getValue",
-        "isCurrentValueVisible",
         "OFF",
         "ON",
+        "getSettingKey",
+        "Ljp/co/sony/mc/camera/setting/SettingKey$Key;",
+        "getIconId",
+        "getBasicIconId",
+        "getTextId",
+        "getName",
+        "getValue",
+        "getBooleanValue",
+        "",
+        "isCurrentValueVisible",
         "Companion",
         "SomcCamera_release"
     }
     k = 0x1
     mv = {
-        0x1,
-        0x9,
+        0x2,
+        0x0,
         0x0
     }
     xi = 0x30
@@ -105,7 +106,7 @@
     .line 22
     new-instance v7, Ljp/co/sony/mc/camera/configuration/parameters/ProductShowcase;
 
-    const v5, 0x7f1103be
+    const v5, 0x7f1103f3
 
     .line 26
     const-string v6, "off"
@@ -115,9 +116,9 @@
 
     const/4 v2, 0x0
 
-    const v3, 0x7f080270
+    const v3, 0x7f080286
 
-    const v4, 0x7f0801c2
+    const v4, 0x7f0801c7
 
     move-object v0, v7
 
@@ -128,7 +129,7 @@
     .line 27
     new-instance v0, Ljp/co/sony/mc/camera/configuration/parameters/ProductShowcase;
 
-    const v13, 0x7f1103bf
+    const v13, 0x7f1103f4
 
     .line 31
     const-string v14, "on"
@@ -138,9 +139,9 @@
 
     const/4 v10, 0x1
 
-    const v11, 0x7f080273
+    const v11, 0x7f080289
 
-    const v12, 0x7f0801c5
+    const v12, 0x7f0801ca
 
     move-object v8, v0
 
@@ -254,6 +255,7 @@
 
     move-result-object p0
 
+    .line 128
     check-cast p0, Ljp/co/sony/mc/camera/configuration/parameters/ProductShowcase;
 
     return-object p0
@@ -264,10 +266,11 @@
 
     sget-object v0, Ljp/co/sony/mc/camera/configuration/parameters/ProductShowcase;->$VALUES:[Ljp/co/sony/mc/camera/configuration/parameters/ProductShowcase;
 
-    invoke-virtual {v0}, [Ljava/lang/Object;->clone()Ljava/lang/Object;
+    invoke-virtual {v0}, Ljava/lang/Object;->clone()Ljava/lang/Object;
 
     move-result-object v0
 
+    .line 128
     check-cast v0, [Ljp/co/sony/mc/camera/configuration/parameters/ProductShowcase;
 
     return-object v0

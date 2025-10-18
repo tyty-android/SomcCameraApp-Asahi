@@ -17,6 +17,10 @@
 .end annotation
 
 
+# static fields
+.field private static serialVersionUID:J = 0x1L
+
+
 # instance fields
 .field private final nanos:I
 
@@ -24,16 +28,22 @@
 
 
 # direct methods
+.method static constructor <clinit>()V
+    .locals 0
+
+    return-void
+.end method
+
 .method private constructor <init>(JI)V
     .locals 0
 
-    .line 302
+    .line 304
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 303
+    .line 305
     iput-wide p1, p0, Lcom/google/api/client/util/DateTime$SecondsAndNanos;->seconds:J
 
-    .line 304
+    .line 306
     iput p3, p0, Lcom/google/api/client/util/DateTime$SecondsAndNanos;->nanos:I
 
     return-void
@@ -51,7 +61,7 @@
 .method public static ofSecondsAndNanos(JI)Lcom/google/api/client/util/DateTime$SecondsAndNanos;
     .locals 1
 
-    .line 299
+    .line 301
     new-instance v0, Lcom/google/api/client/util/DateTime$SecondsAndNanos;
 
     invoke-direct {v0, p0, p1, p2}, Lcom/google/api/client/util/DateTime$SecondsAndNanos;-><init>(JI)V
@@ -75,7 +85,7 @@
 
     if-eqz p1, :cond_3
 
-    .line 320
+    .line 322
     invoke-virtual {p0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     move-result-object v2
@@ -88,11 +98,11 @@
 
     goto :goto_1
 
-    .line 323
+    .line 325
     :cond_1
     check-cast p1, Lcom/google/api/client/util/DateTime$SecondsAndNanos;
 
-    .line 324
+    .line 326
     iget-wide v2, p0, Lcom/google/api/client/util/DateTime$SecondsAndNanos;->seconds:J
 
     iget-wide v4, p1, Lcom/google/api/client/util/DateTime$SecondsAndNanos;->seconds:J
@@ -123,7 +133,7 @@
 .method public getNanos()I
     .locals 0
 
-    .line 312
+    .line 314
     iget p0, p0, Lcom/google/api/client/util/DateTime$SecondsAndNanos;->nanos:I
 
     return p0
@@ -132,7 +142,7 @@
 .method public getSeconds()J
     .locals 2
 
-    .line 308
+    .line 310
     iget-wide v0, p0, Lcom/google/api/client/util/DateTime$SecondsAndNanos;->seconds:J
 
     return-wide v0
@@ -141,7 +151,7 @@
 .method public hashCode()I
     .locals 2
 
-    .line 329
+    .line 331
     iget-wide v0, p0, Lcom/google/api/client/util/DateTime$SecondsAndNanos;->seconds:J
 
     invoke-static {v0, v1}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
@@ -168,7 +178,7 @@
 .method public toString()Ljava/lang/String;
     .locals 2
 
-    .line 334
+    .line 336
     iget-wide v0, p0, Lcom/google/api/client/util/DateTime$SecondsAndNanos;->seconds:J
 
     invoke-static {v0, v1}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;

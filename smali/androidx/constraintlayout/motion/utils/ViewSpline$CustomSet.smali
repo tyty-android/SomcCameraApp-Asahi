@@ -203,14 +203,20 @@
 
     iput-object v4, p0, Landroidx/constraintlayout/motion/utils/ViewSpline$CustomSet;->mTempValues:[F
 
+    const/4 v4, 0x2
+
     .line 195
-    filled-new-array {v0, v1}, [I
+    new-array v4, v4, [I
 
-    move-result-object v1
+    const/4 v5, 0x1
 
-    sget-object v4, Ljava/lang/Double;->TYPE:Ljava/lang/Class;
+    aput v1, v4, v5
 
-    invoke-static {v4, v1}, Ljava/lang/reflect/Array;->newInstance(Ljava/lang/Class;[I)Ljava/lang/Object;
+    aput v0, v4, v2
+
+    sget-object v1, Ljava/lang/Double;->TYPE:Ljava/lang/Class;
+
+    invoke-static {v1, v4}, Ljava/lang/reflect/Array;->newInstance(Ljava/lang/Class;[I)Ljava/lang/Object;
 
     move-result-object v1
 

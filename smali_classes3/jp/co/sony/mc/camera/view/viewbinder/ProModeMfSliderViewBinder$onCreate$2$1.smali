@@ -37,8 +37,8 @@
     }
     k = 0x1
     mv = {
-        0x1,
-        0x9,
+        0x2,
+        0x0,
         0x0
     }
     xi = 0x30
@@ -95,7 +95,7 @@
 
     iput-object p1, p0, Ljp/co/sony/mc/camera/view/viewbinder/ProModeMfSliderViewBinder$onCreate$2$1;->this$0:Ljp/co/sony/mc/camera/view/viewbinder/ProModeMfSliderViewBinder;
 
-    .line 99
+    .line 100
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -144,7 +144,7 @@
 
     if-eqz p3, :cond_0
 
-    .line 106
+    .line 107
     invoke-static {}, Ljp/co/sony/mc/camera/setting/CameraProSetting;->getInstance()Ljp/co/sony/mc/camera/setting/CameraProSetting;
 
     move-result-object p1
@@ -153,7 +153,7 @@
 
     move-result-object p1
 
-    .line 107
+    .line 108
     invoke-static {p1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;)V
 
     int-to-float p2, p2
@@ -162,7 +162,7 @@
 
     move-result p1
 
-    .line 108
+    .line 109
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/viewbinder/ProModeMfSliderViewBinder$onCreate$2$1;->this$0:Ljp/co/sony/mc/camera/view/viewbinder/ProModeMfSliderViewBinder;
 
     invoke-static {p0}, Ljp/co/sony/mc/camera/view/viewbinder/ProModeMfSliderViewBinder;->access$getProModeFocusUiState$p(Ljp/co/sony/mc/camera/view/viewbinder/ProModeMfSliderViewBinder;)Ljp/co/sony/mc/camera/view/uistate/ProModeFocusUiState;
@@ -182,7 +182,7 @@
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 113
+    .line 114
     iget-object p1, p0, Ljp/co/sony/mc/camera/view/viewbinder/ProModeMfSliderViewBinder$onCreate$2$1;->this$0:Ljp/co/sony/mc/camera/view/viewbinder/ProModeMfSliderViewBinder;
 
     invoke-virtual {p1}, Ljp/co/sony/mc/camera/view/viewbinder/ProModeMfSliderViewBinder;->getBinding()Ljp/co/sony/mc/camera/databinding/ProModeMfSliderBinding;
@@ -197,7 +197,7 @@
 
     invoke-virtual {p1, v0}, Ljp/co/sony/mc/camera/view/widget/PressButton;->setOnTouchListener(Landroid/view/View$OnTouchListener;)V
 
-    .line 114
+    .line 115
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/viewbinder/ProModeMfSliderViewBinder$onCreate$2$1;->this$0:Ljp/co/sony/mc/camera/view/viewbinder/ProModeMfSliderViewBinder;
 
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/view/viewbinder/ProModeMfSliderViewBinder;->getBinding()Ljp/co/sony/mc/camera/databinding/ProModeMfSliderBinding;
@@ -212,10 +212,10 @@
 
     invoke-virtual {p0, p1}, Ljp/co/sony/mc/camera/view/widget/PressButton;->setOnTouchListener(Landroid/view/View$OnTouchListener;)V
 
-    .line 116
+    .line 117
     sget-object p0, Ljp/co/sony/mc/camera/idd/value/IddFocusDistance;->Context:Ljp/co/sony/mc/camera/idd/value/IddFocusDistance$Context;
 
-    .line 117
+    .line 118
     invoke-static {}, Ljp/co/sony/mc/camera/setting/CameraProSetting;->getInstance()Ljp/co/sony/mc/camera/setting/CameraProSetting;
 
     move-result-object p1
@@ -228,17 +228,13 @@
 
     move-result-object p1
 
-    const-string v0, "get(...)"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
-
     check-cast p1, Ljava/lang/Number;
 
     invoke-virtual {p1}, Ljava/lang/Number;->floatValue()F
 
     move-result p1
 
-    .line 116
+    .line 117
     invoke-virtual {p0, p1}, Ljp/co/sony/mc/camera/idd/value/IddFocusDistance$Context;->setLastManualFocusDistance(F)V
 
     return-void
@@ -251,7 +247,7 @@
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 121
+    .line 122
     iget-object p1, p0, Ljp/co/sony/mc/camera/view/viewbinder/ProModeMfSliderViewBinder$onCreate$2$1;->this$0:Ljp/co/sony/mc/camera/view/viewbinder/ProModeMfSliderViewBinder;
 
     invoke-virtual {p1}, Ljp/co/sony/mc/camera/view/viewbinder/ProModeMfSliderViewBinder;->getBinding()Ljp/co/sony/mc/camera/databinding/ProModeMfSliderBinding;
@@ -266,7 +262,7 @@
 
     invoke-virtual {p1, v0}, Ljp/co/sony/mc/camera/view/widget/PressButton;->setOnTouchListener(Landroid/view/View$OnTouchListener;)V
 
-    .line 122
+    .line 123
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/viewbinder/ProModeMfSliderViewBinder$onCreate$2$1;->this$0:Ljp/co/sony/mc/camera/view/viewbinder/ProModeMfSliderViewBinder;
 
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/view/viewbinder/ProModeMfSliderViewBinder;->getBinding()Ljp/co/sony/mc/camera/databinding/ProModeMfSliderBinding;
@@ -281,7 +277,7 @@
 
     invoke-virtual {p0, p1}, Ljp/co/sony/mc/camera/view/widget/PressButton;->setOnTouchListener(Landroid/view/View$OnTouchListener;)V
 
-    .line 124
+    .line 125
     new-instance p0, Ljp/co/sony/mc/camera/idd/event/IddSettingEvent;
 
     const/16 v7, 0x3f
@@ -302,16 +298,16 @@
 
     move-object v0, p0
 
-    invoke-direct/range {v0 .. v8}, Ljp/co/sony/mc/camera/idd/event/IddSettingEvent;-><init>(Ljava/lang/String;Ljp/co/sony/mc/camera/idd/value/IddLauncher;Ljp/co/sony/mc/camera/idd/value/IddMode;Ljp/co/sony/mc/camera/idd/value/IddSetting;Ljp/co/sony/mc/camera/idd/value/IddSettingKey;Ljp/co/sony/mc/camera/idd/value/IddUserControl;ILkotlin/jvm/internal/DefaultConstructorMarker;)V
+    invoke-direct/range {v0 .. v8}, Ljp/co/sony/mc/camera/idd/event/IddSettingEvent;-><init>(Ljava/lang/String;Ljp/co/sony/mc/camera/idd/value/IddLauncher;Ljp/co/sony/mc/camera/idd/value/IddMode;Ljp/co/sony/mc/camera/idd/value/IddSettingKey;Ljp/co/sony/mc/camera/idd/value/IddSettingValue;Ljp/co/sony/mc/camera/idd/value/IddUserControl;ILkotlin/jvm/internal/DefaultConstructorMarker;)V
 
-    .line 125
+    .line 126
     sget-object p1, Ljp/co/sony/mc/camera/idd/value/IddUserControl;->PREVIEW:Ljp/co/sony/mc/camera/idd/value/IddUserControl;
 
     invoke-virtual {p0, p1}, Ljp/co/sony/mc/camera/idd/event/IddSettingEvent;->changeLocation(Ljp/co/sony/mc/camera/idd/value/IddUserControl;)Ljp/co/sony/mc/camera/idd/event/IddSettingEvent;
 
     move-result-object p0
 
-    .line 126
+    .line 127
     sget-object p1, Ljp/co/sony/mc/camera/setting/CameraSettings;->FOCUS_DISTANCE:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
 
     const-string v0, "FOCUS_DISTANCE"
@@ -324,7 +320,7 @@
 
     move-result-object p0
 
-    .line 127
+    .line 128
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/idd/event/IddSettingEvent;->send()V
 
     return-void

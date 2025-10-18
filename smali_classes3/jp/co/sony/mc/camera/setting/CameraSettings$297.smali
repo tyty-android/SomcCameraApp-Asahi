@@ -3,7 +3,7 @@
 .source "CameraSettings.java"
 
 # interfaces
-.implements Ljp/co/sony/mc/camera/setting/SettingsBase$IsTempChangedCommand;
+.implements Ljp/co/sony/mc/camera/setting/SettingsBase$GetDefaultCommand;
 
 
 # annotations
@@ -21,7 +21,7 @@
 .method constructor <init>()V
     .locals 0
 
-    .line 3066
+    .line 3153
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -29,7 +29,7 @@
 
 
 # virtual methods
-.method public isTempChanged(Ljp/co/sony/mc/camera/setting/SettingsBase;Ljp/co/sony/mc/camera/setting/SettingKey$Key;)Z
+.method public getDefaultValue(Ljp/co/sony/mc/camera/setting/SettingsBase;Ljp/co/sony/mc/camera/setting/SettingKey$Key;)Ljava/lang/Object;
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -38,31 +38,14 @@
             ">(",
             "Ljp/co/sony/mc/camera/setting/SettingsBase;",
             "Ljp/co/sony/mc/camera/setting/SettingKey$Key<",
-            "TT;>;)Z"
+            "TT;>;)TT;"
         }
     .end annotation
 
-    .line 3070
-    check-cast p1, Ljp/co/sony/mc/camera/setting/CameraSettings;
-
-    .line 3071
-    invoke-static {p1}, Ljp/co/sony/mc/camera/setting/CameraSettings;->-$$Nest$mgetBackSoftSkin(Ljp/co/sony/mc/camera/setting/CameraSettings;)Ljp/co/sony/mc/camera/configuration/parameters/BackSoftSkin;
+    .line 3157
+    invoke-static {}, Ljp/co/sony/mc/camera/configuration/parameters/BasicModeShutterSpeedDisplay;->getDefaultValue()Ljp/co/sony/mc/camera/configuration/parameters/BasicModeShutterSpeedDisplay;
 
     move-result-object p0
 
-    invoke-static {p1}, Ljp/co/sony/mc/camera/setting/CameraSettings;->-$$Nest$fgetmBackSoftSkin(Ljp/co/sony/mc/camera/setting/CameraSettings;)Ljp/co/sony/mc/camera/configuration/parameters/BackSoftSkin;
-
-    move-result-object p1
-
-    if-eq p0, p1, :cond_0
-
-    const/4 p0, 0x1
-
-    goto :goto_0
-
-    :cond_0
-    const/4 p0, 0x0
-
-    :goto_0
-    return p0
+    return-object p0
 .end method

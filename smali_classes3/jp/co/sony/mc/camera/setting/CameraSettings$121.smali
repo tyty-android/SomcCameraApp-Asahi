@@ -21,7 +21,7 @@
 .method constructor <init>()V
     .locals 0
 
-    .line 1530
+    .line 1587
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -46,13 +46,13 @@
         }
     .end annotation
 
-    .line 1534
+    .line 1591
     check-cast p1, Ljp/co/sony/mc/camera/setting/CameraSettings;
 
-    .line 1535
-    check-cast p3, Ljp/co/sony/mc/camera/configuration/parameters/PhotoFormat;
+    .line 1592
+    check-cast p3, Ljp/co/sony/mc/camera/configuration/parameters/FaceDetection;
 
-    invoke-static {p1, p3}, Ljp/co/sony/mc/camera/setting/CameraSettings;->-$$Nest$msetPhotoFormat(Ljp/co/sony/mc/camera/setting/CameraSettings;Ljp/co/sony/mc/camera/configuration/parameters/PhotoFormat;)Z
+    invoke-static {p1, p3}, Ljp/co/sony/mc/camera/setting/CameraSettings;->-$$Nest$msetFaceDetection(Ljp/co/sony/mc/camera/setting/CameraSettings;Ljp/co/sony/mc/camera/configuration/parameters/FaceDetection;)Z
 
     move-result p0
 

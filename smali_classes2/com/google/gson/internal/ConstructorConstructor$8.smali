@@ -33,7 +33,7 @@
 .method constructor <init>(Ljava/lang/String;)V
     .locals 0
 
-    .line 246
+    .line 280
     iput-object p1, p0, Lcom/google/gson/internal/ConstructorConstructor$8;->val$exceptionMessage:Ljava/lang/String;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -51,7 +51,7 @@
         }
     .end annotation
 
-    .line 252
+    .line 286
     new-instance v0, Lcom/google/gson/JsonIOException;
 
     iget-object p0, p0, Lcom/google/gson/internal/ConstructorConstructor$8;->val$exceptionMessage:Ljava/lang/String;

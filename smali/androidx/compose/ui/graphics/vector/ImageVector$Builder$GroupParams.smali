@@ -150,7 +150,7 @@
 .end method
 
 .method public constructor <init>(Ljava/lang/String;FFFFFFFLjava/util/List;Ljava/util/List;)V
-    .locals 1
+    .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -166,49 +166,37 @@
         }
     .end annotation
 
-    const-string v0, "name"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string v0, "clipPathData"
-
-    invoke-static {p9, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string v0, "children"
-
-    invoke-static {p10, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 390
+    .line 396
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 391
+    .line 397
     iput-object p1, p0, Landroidx/compose/ui/graphics/vector/ImageVector$Builder$GroupParams;->name:Ljava/lang/String;
 
-    .line 392
+    .line 398
     iput p2, p0, Landroidx/compose/ui/graphics/vector/ImageVector$Builder$GroupParams;->rotate:F
 
-    .line 393
+    .line 399
     iput p3, p0, Landroidx/compose/ui/graphics/vector/ImageVector$Builder$GroupParams;->pivotX:F
 
-    .line 394
+    .line 400
     iput p4, p0, Landroidx/compose/ui/graphics/vector/ImageVector$Builder$GroupParams;->pivotY:F
 
-    .line 395
+    .line 401
     iput p5, p0, Landroidx/compose/ui/graphics/vector/ImageVector$Builder$GroupParams;->scaleX:F
 
-    .line 396
+    .line 402
     iput p6, p0, Landroidx/compose/ui/graphics/vector/ImageVector$Builder$GroupParams;->scaleY:F
 
-    .line 397
+    .line 403
     iput p7, p0, Landroidx/compose/ui/graphics/vector/ImageVector$Builder$GroupParams;->translationX:F
 
-    .line 398
+    .line 404
     iput p8, p0, Landroidx/compose/ui/graphics/vector/ImageVector$Builder$GroupParams;->translationY:F
 
-    .line 399
+    .line 405
     iput-object p9, p0, Landroidx/compose/ui/graphics/vector/ImageVector$Builder$GroupParams;->clipPathData:Ljava/util/List;
 
-    .line 400
+    .line 406
     iput-object p10, p0, Landroidx/compose/ui/graphics/vector/ImageVector$Builder$GroupParams;->children:Ljava/util/List;
 
     return-void
@@ -223,7 +211,7 @@
 
     if-eqz v1, :cond_0
 
-    .line 391
+    .line 397
     const-string v1, ""
 
     goto :goto_0
@@ -320,7 +308,7 @@
 
     if-eqz v9, :cond_8
 
-    .line 399
+    .line 405
     invoke-static {}, Landroidx/compose/ui/graphics/vector/VectorKt;->getEmptyPath()Ljava/util/List;
 
     move-result-object v9
@@ -335,7 +323,7 @@
 
     if-eqz v0, :cond_9
 
-    .line 400
+    .line 406
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
@@ -368,7 +356,7 @@
 
     move-object/from16 p10, v0
 
-    .line 390
+    .line 396
     invoke-direct/range {p0 .. p10}, Landroidx/compose/ui/graphics/vector/ImageVector$Builder$GroupParams;-><init>(Ljava/lang/String;FFFFFFFLjava/util/List;Ljava/util/List;)V
 
     return-void
@@ -387,7 +375,7 @@
         }
     .end annotation
 
-    .line 400
+    .line 406
     iget-object p0, p0, Landroidx/compose/ui/graphics/vector/ImageVector$Builder$GroupParams;->children:Ljava/util/List;
 
     return-object p0
@@ -404,7 +392,7 @@
         }
     .end annotation
 
-    .line 399
+    .line 405
     iget-object p0, p0, Landroidx/compose/ui/graphics/vector/ImageVector$Builder$GroupParams;->clipPathData:Ljava/util/List;
 
     return-object p0
@@ -413,7 +401,7 @@
 .method public final getName()Ljava/lang/String;
     .locals 0
 
-    .line 391
+    .line 397
     iget-object p0, p0, Landroidx/compose/ui/graphics/vector/ImageVector$Builder$GroupParams;->name:Ljava/lang/String;
 
     return-object p0
@@ -422,7 +410,7 @@
 .method public final getPivotX()F
     .locals 0
 
-    .line 393
+    .line 399
     iget p0, p0, Landroidx/compose/ui/graphics/vector/ImageVector$Builder$GroupParams;->pivotX:F
 
     return p0
@@ -431,7 +419,7 @@
 .method public final getPivotY()F
     .locals 0
 
-    .line 394
+    .line 400
     iget p0, p0, Landroidx/compose/ui/graphics/vector/ImageVector$Builder$GroupParams;->pivotY:F
 
     return p0
@@ -440,7 +428,7 @@
 .method public final getRotate()F
     .locals 0
 
-    .line 392
+    .line 398
     iget p0, p0, Landroidx/compose/ui/graphics/vector/ImageVector$Builder$GroupParams;->rotate:F
 
     return p0
@@ -449,7 +437,7 @@
 .method public final getScaleX()F
     .locals 0
 
-    .line 395
+    .line 401
     iget p0, p0, Landroidx/compose/ui/graphics/vector/ImageVector$Builder$GroupParams;->scaleX:F
 
     return p0
@@ -458,7 +446,7 @@
 .method public final getScaleY()F
     .locals 0
 
-    .line 396
+    .line 402
     iget p0, p0, Landroidx/compose/ui/graphics/vector/ImageVector$Builder$GroupParams;->scaleY:F
 
     return p0
@@ -467,7 +455,7 @@
 .method public final getTranslationX()F
     .locals 0
 
-    .line 397
+    .line 403
     iget p0, p0, Landroidx/compose/ui/graphics/vector/ImageVector$Builder$GroupParams;->translationX:F
 
     return p0
@@ -476,14 +464,14 @@
 .method public final getTranslationY()F
     .locals 0
 
-    .line 398
+    .line 404
     iget p0, p0, Landroidx/compose/ui/graphics/vector/ImageVector$Builder$GroupParams;->translationY:F
 
     return p0
 .end method
 
 .method public final setChildren(Ljava/util/List;)V
-    .locals 1
+    .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -493,18 +481,14 @@
         }
     .end annotation
 
-    const-string v0, "<set-?>"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 400
+    .line 406
     iput-object p1, p0, Landroidx/compose/ui/graphics/vector/ImageVector$Builder$GroupParams;->children:Ljava/util/List;
 
     return-void
 .end method
 
 .method public final setClipPathData(Ljava/util/List;)V
-    .locals 1
+    .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -515,24 +499,16 @@
         }
     .end annotation
 
-    const-string v0, "<set-?>"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 399
+    .line 405
     iput-object p1, p0, Landroidx/compose/ui/graphics/vector/ImageVector$Builder$GroupParams;->clipPathData:Ljava/util/List;
 
     return-void
 .end method
 
 .method public final setName(Ljava/lang/String;)V
-    .locals 1
+    .locals 0
 
-    const-string v0, "<set-?>"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 391
+    .line 397
     iput-object p1, p0, Landroidx/compose/ui/graphics/vector/ImageVector$Builder$GroupParams;->name:Ljava/lang/String;
 
     return-void
@@ -541,7 +517,7 @@
 .method public final setPivotX(F)V
     .locals 0
 
-    .line 393
+    .line 399
     iput p1, p0, Landroidx/compose/ui/graphics/vector/ImageVector$Builder$GroupParams;->pivotX:F
 
     return-void
@@ -550,7 +526,7 @@
 .method public final setPivotY(F)V
     .locals 0
 
-    .line 394
+    .line 400
     iput p1, p0, Landroidx/compose/ui/graphics/vector/ImageVector$Builder$GroupParams;->pivotY:F
 
     return-void
@@ -559,7 +535,7 @@
 .method public final setRotate(F)V
     .locals 0
 
-    .line 392
+    .line 398
     iput p1, p0, Landroidx/compose/ui/graphics/vector/ImageVector$Builder$GroupParams;->rotate:F
 
     return-void
@@ -568,7 +544,7 @@
 .method public final setScaleX(F)V
     .locals 0
 
-    .line 395
+    .line 401
     iput p1, p0, Landroidx/compose/ui/graphics/vector/ImageVector$Builder$GroupParams;->scaleX:F
 
     return-void
@@ -577,7 +553,7 @@
 .method public final setScaleY(F)V
     .locals 0
 
-    .line 396
+    .line 402
     iput p1, p0, Landroidx/compose/ui/graphics/vector/ImageVector$Builder$GroupParams;->scaleY:F
 
     return-void
@@ -586,7 +562,7 @@
 .method public final setTranslationX(F)V
     .locals 0
 
-    .line 397
+    .line 403
     iput p1, p0, Landroidx/compose/ui/graphics/vector/ImageVector$Builder$GroupParams;->translationX:F
 
     return-void
@@ -595,7 +571,7 @@
 .method public final setTranslationY(F)V
     .locals 0
 
-    .line 398
+    .line 404
     iput p1, p0, Landroidx/compose/ui/graphics/vector/ImageVector$Builder$GroupParams;->translationY:F
 
     return-void

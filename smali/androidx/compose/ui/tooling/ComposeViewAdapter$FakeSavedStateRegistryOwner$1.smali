@@ -1,6 +1,6 @@
 .class public final Landroidx/compose/ui/tooling/ComposeViewAdapter$FakeSavedStateRegistryOwner$1;
 .super Ljava/lang/Object;
-.source "ComposeViewAdapter.kt"
+.source "ComposeViewAdapter.android.kt"
 
 # interfaces
 .implements Landroidx/savedstate/SavedStateRegistryOwner;
@@ -57,10 +57,10 @@
 .method constructor <init>()V
     .locals 3
 
-    .line 632
+    .line 625
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 633
+    .line 626
     sget-object v0, Landroidx/lifecycle/LifecycleRegistry;->Companion:Landroidx/lifecycle/LifecycleRegistry$Companion;
 
     move-object v1, p0
@@ -73,7 +73,7 @@
 
     iput-object v0, p0, Landroidx/compose/ui/tooling/ComposeViewAdapter$FakeSavedStateRegistryOwner$1;->lifecycleRegistry:Landroidx/lifecycle/LifecycleRegistry;
 
-    .line 634
+    .line 627
     sget-object v1, Landroidx/savedstate/SavedStateRegistryController;->Companion:Landroidx/savedstate/SavedStateRegistryController$Companion;
 
     move-object v2, p0
@@ -84,17 +84,17 @@
 
     move-result-object v1
 
-    .line 635
+    .line 628
     new-instance v2, Landroid/os/Bundle;
 
     invoke-direct {v2}, Landroid/os/Bundle;-><init>()V
 
     invoke-virtual {v1, v2}, Landroidx/savedstate/SavedStateRegistryController;->performRestore(Landroid/os/Bundle;)V
 
-    .line 634
+    .line 627
     iput-object v1, p0, Landroidx/compose/ui/tooling/ComposeViewAdapter$FakeSavedStateRegistryOwner$1;->controller:Landroidx/savedstate/SavedStateRegistryController;
 
-    .line 639
+    .line 632
     sget-object p0, Landroidx/lifecycle/Lifecycle$State;->RESUMED:Landroidx/lifecycle/Lifecycle$State;
 
     invoke-virtual {v0, p0}, Landroidx/lifecycle/LifecycleRegistry;->setCurrentState(Landroidx/lifecycle/Lifecycle$State;)V
@@ -107,7 +107,7 @@
 .method public bridge synthetic getLifecycle()Landroidx/lifecycle/Lifecycle;
     .locals 0
 
-    .line 632
+    .line 625
     invoke-virtual {p0}, Landroidx/compose/ui/tooling/ComposeViewAdapter$FakeSavedStateRegistryOwner$1;->getLifecycle()Landroidx/lifecycle/LifecycleRegistry;
 
     move-result-object p0
@@ -120,7 +120,7 @@
 .method public getLifecycle()Landroidx/lifecycle/LifecycleRegistry;
     .locals 0
 
-    .line 646
+    .line 639
     iget-object p0, p0, Landroidx/compose/ui/tooling/ComposeViewAdapter$FakeSavedStateRegistryOwner$1;->lifecycleRegistry:Landroidx/lifecycle/LifecycleRegistry;
 
     return-object p0
@@ -129,7 +129,7 @@
 .method public final getLifecycleRegistry()Landroidx/lifecycle/LifecycleRegistry;
     .locals 0
 
-    .line 633
+    .line 626
     iget-object p0, p0, Landroidx/compose/ui/tooling/ComposeViewAdapter$FakeSavedStateRegistryOwner$1;->lifecycleRegistry:Landroidx/lifecycle/LifecycleRegistry;
 
     return-object p0
@@ -138,7 +138,7 @@
 .method public getSavedStateRegistry()Landroidx/savedstate/SavedStateRegistry;
     .locals 0
 
-    .line 643
+    .line 636
     iget-object p0, p0, Landroidx/compose/ui/tooling/ComposeViewAdapter$FakeSavedStateRegistryOwner$1;->controller:Landroidx/savedstate/SavedStateRegistryController;
 
     invoke-virtual {p0}, Landroidx/savedstate/SavedStateRegistryController;->getSavedStateRegistry()Landroidx/savedstate/SavedStateRegistry;

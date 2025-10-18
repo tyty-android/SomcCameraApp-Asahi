@@ -32,7 +32,7 @@
         }
     .end annotation
 
-    .line 6433
+    .line 6656
     iput-object p1, p0, Ljp/co/sony/mc/camera/view/FragmentController$CameraOperatorImpl$1;->this$0:Ljp/co/sony/mc/camera/view/FragmentController$CameraOperatorImpl;
 
     iput-object p2, p0, Ljp/co/sony/mc/camera/view/FragmentController$CameraOperatorImpl$1;->val$runnable:Ljava/lang/Runnable;
@@ -47,12 +47,12 @@
 .method public onCameraDeviceClosed()V
     .locals 0
 
-    .line 6436
+    .line 6659
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/FragmentController$CameraOperatorImpl$1;->val$runnable:Ljava/lang/Runnable;
 
     if-eqz p0, :cond_0
 
-    .line 6437
+    .line 6660
     invoke-interface {p0}, Ljava/lang/Runnable;->run()V
 
     :cond_0

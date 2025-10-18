@@ -76,7 +76,7 @@
 .method public bridge synthetic invoke(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
     .locals 2
 
-    .line 762
+    .line 732
     check-cast p1, Landroidx/compose/ui/layout/MeasureScope;
 
     check-cast p2, Landroidx/compose/ui/layout/Measurable;
@@ -97,20 +97,12 @@
 .method public final invoke-3p2s80s(Landroidx/compose/ui/layout/MeasureScope;Landroidx/compose/ui/layout/Measurable;J)Landroidx/compose/ui/layout/MeasureResult;
     .locals 7
 
-    const-string v0, "$this$layout"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string v0, "measurable"
-
-    invoke-static {p2, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 763
+    .line 733
     invoke-interface {p2, p3, p4}, Landroidx/compose/ui/layout/Measurable;->measure-BRTryo0(J)Landroidx/compose/ui/layout/Placeable;
 
     move-result-object p2
 
-    .line 764
+    .line 734
     invoke-virtual {p2}, Landroidx/compose/ui/layout/Placeable;->getWidth()I
 
     move-result v1

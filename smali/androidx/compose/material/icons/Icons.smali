@@ -6,6 +6,7 @@
 # annotations
 .annotation system Ldalvik/annotation/MemberClasses;
     value = {
+        Landroidx/compose/material/icons/Icons$AutoMirrored;,
         Landroidx/compose/material/icons/Icons$Filled;,
         Landroidx/compose/material/icons/Icons$Outlined;,
         Landroidx/compose/material/icons/Icons$Rounded;,
@@ -16,7 +17,7 @@
 
 .annotation runtime Lkotlin/Metadata;
     d1 = {
-        "\u0000\u0014\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0008\u0008\u00c7\u0002\u0018\u00002\u00020\u0001:\u0005\u0007\u0008\t\n\u000bB\u0007\u0008\u0002\u00a2\u0006\u0002\u0010\u0002R\u0011\u0010\u0003\u001a\u00020\u0004\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\u0005\u0010\u0006\u00a8\u0006\u000c"
+        "\u0000\u0014\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0002\u0008\t\u0008\u00c7\u0002\u0018\u00002\u00020\u0001:\u0006\u0007\u0008\t\n\u000b\u000cB\u0007\u0008\u0002\u00a2\u0006\u0002\u0010\u0002R\u0011\u0010\u0003\u001a\u00020\u0004\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\u0005\u0010\u0006\u00a8\u0006\r"
     }
     d2 = {
         "Landroidx/compose/material/icons/Icons;",
@@ -26,6 +27,7 @@
         "Landroidx/compose/material/icons/Icons$Filled;",
         "getDefault",
         "()Landroidx/compose/material/icons/Icons$Filled;",
+        "AutoMirrored",
         "Filled",
         "Outlined",
         "Rounded",
@@ -61,7 +63,7 @@
 
     sput-object v0, Landroidx/compose/material/icons/Icons;->INSTANCE:Landroidx/compose/material/icons/Icons;
 
-    .line 103
+    .line 184
     sget-object v0, Landroidx/compose/material/icons/Icons$Filled;->INSTANCE:Landroidx/compose/material/icons/Icons$Filled;
 
     sput-object v0, Landroidx/compose/material/icons/Icons;->Default:Landroidx/compose/material/icons/Icons$Filled;
@@ -83,7 +85,7 @@
 .method public final getDefault()Landroidx/compose/material/icons/Icons$Filled;
     .locals 0
 
-    .line 103
+    .line 184
     sget-object p0, Landroidx/compose/material/icons/Icons;->Default:Landroidx/compose/material/icons/Icons$Filled;
 
     return-object p0

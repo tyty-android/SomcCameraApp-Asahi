@@ -103,7 +103,7 @@
 
     iput-object p2, p0, Landroidx/lifecycle/Transformations$switchMap$2;->$result:Landroidx/lifecycle/MediatorLiveData;
 
-    .line 149
+    .line 160
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -121,7 +121,7 @@
         }
     .end annotation
 
-    .line 150
+    .line 161
     iget-object p0, p0, Landroidx/lifecycle/Transformations$switchMap$2;->liveData:Landroidx/lifecycle/LiveData;
 
     return-object p0
@@ -135,7 +135,7 @@
         }
     .end annotation
 
-    .line 153
+    .line 164
     iget-object v0, p0, Landroidx/lifecycle/Transformations$switchMap$2;->$switchMapFunction:Landroidx/arch/core/util/Function;
 
     invoke-interface {v0, p1}, Landroidx/arch/core/util/Function;->apply(Ljava/lang/Object;)Ljava/lang/Object;
@@ -144,7 +144,7 @@
 
     check-cast p1, Landroidx/lifecycle/LiveData;
 
-    .line 154
+    .line 165
     iget-object v0, p0, Landroidx/lifecycle/Transformations$switchMap$2;->liveData:Landroidx/lifecycle/LiveData;
 
     if-ne v0, p1, :cond_0
@@ -154,20 +154,20 @@
     :cond_0
     if-eqz v0, :cond_1
 
-    .line 158
+    .line 169
     iget-object v1, p0, Landroidx/lifecycle/Transformations$switchMap$2;->$result:Landroidx/lifecycle/MediatorLiveData;
 
     invoke-static {v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;)V
 
     invoke-virtual {v1, v0}, Landroidx/lifecycle/MediatorLiveData;->removeSource(Landroidx/lifecycle/LiveData;)V
 
-    .line 160
+    .line 171
     :cond_1
     iput-object p1, p0, Landroidx/lifecycle/Transformations$switchMap$2;->liveData:Landroidx/lifecycle/LiveData;
 
     if-eqz p1, :cond_2
 
-    .line 162
+    .line 173
     iget-object v0, p0, Landroidx/lifecycle/Transformations$switchMap$2;->$result:Landroidx/lifecycle/MediatorLiveData;
 
     invoke-static {p1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;)V
@@ -202,7 +202,7 @@
         }
     .end annotation
 
-    .line 150
+    .line 161
     iput-object p1, p0, Landroidx/lifecycle/Transformations$switchMap$2;->liveData:Landroidx/lifecycle/LiveData;
 
     return-void

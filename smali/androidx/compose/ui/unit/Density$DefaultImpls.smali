@@ -31,18 +31,12 @@
     return-void
 .end method
 
-.method public static synthetic getFontScale$annotations()V
-    .locals 0
-
-    return-void
-.end method
-
 .method public static roundToPx--R2X_6o(Landroidx/compose/ui/unit/Density;J)I
     .locals 0
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
-    .line 98
+    .line 86
     invoke-static {p0, p1, p2}, Landroidx/compose/ui/unit/Density;->access$roundToPx--R2X_6o$jd(Landroidx/compose/ui/unit/Density;J)I
 
     move-result p0
@@ -55,7 +49,7 @@
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
-    .line 73
+    .line 67
     invoke-static {p0, p1}, Landroidx/compose/ui/unit/Density;->access$roundToPx-0680j_4$jd(Landroidx/compose/ui/unit/Density;F)I
 
     move-result p0
@@ -68,7 +62,7 @@
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
-    .line 105
+    .line 49
     invoke-static {p0, p1, p2}, Landroidx/compose/ui/unit/Density;->access$toDp-GaN1DYA$jd(Landroidx/compose/ui/unit/Density;J)F
 
     move-result p0
@@ -81,7 +75,7 @@
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
-    .line 124
+    .line 102
     invoke-static {p0, p1}, Landroidx/compose/ui/unit/Density;->access$toDp-u2uoSUM$jd(Landroidx/compose/ui/unit/Density;F)F
 
     move-result p0
@@ -94,7 +88,7 @@
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
-    .line 114
+    .line 92
     invoke-static {p0, p1}, Landroidx/compose/ui/unit/Density;->access$toDp-u2uoSUM$jd(Landroidx/compose/ui/unit/Density;I)F
 
     move-result p0
@@ -107,7 +101,7 @@
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
-    .line 157
+    .line 135
     invoke-static {p0, p1, p2}, Landroidx/compose/ui/unit/Density;->access$toDpSize-k-rfVVM$jd(Landroidx/compose/ui/unit/Density;J)J
 
     move-result-wide p0
@@ -120,7 +114,7 @@
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
-    .line 89
+    .line 77
     invoke-static {p0, p1, p2}, Landroidx/compose/ui/unit/Density;->access$toPx--R2X_6o$jd(Landroidx/compose/ui/unit/Density;J)F
 
     move-result p0
@@ -133,7 +127,7 @@
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
-    .line 67
+    .line 61
     invoke-static {p0, p1}, Landroidx/compose/ui/unit/Density;->access$toPx-0680j_4$jd(Landroidx/compose/ui/unit/Density;F)F
 
     move-result p0
@@ -142,15 +136,11 @@
 .end method
 
 .method public static toRect(Landroidx/compose/ui/unit/Density;Landroidx/compose/ui/unit/DpRect;)Landroidx/compose/ui/geometry/Rect;
-    .locals 1
+    .locals 0
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
-    const-string v0, "$receiver"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 134
+    .line 112
     invoke-static {p0, p1}, Landroidx/compose/ui/unit/Density;->access$toRect$jd(Landroidx/compose/ui/unit/Density;Landroidx/compose/ui/unit/DpRect;)Landroidx/compose/ui/geometry/Rect;
 
     move-result-object p0
@@ -163,7 +153,7 @@
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
-    .line 147
+    .line 125
     invoke-static {p0, p1, p2}, Landroidx/compose/ui/unit/Density;->access$toSize-XkaWNTQ$jd(Landroidx/compose/ui/unit/Density;J)J
 
     move-result-wide p0
@@ -176,7 +166,7 @@
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
-    .line 82
+    .line 49
     invoke-static {p0, p1}, Landroidx/compose/ui/unit/Density;->access$toSp-0xMU5do$jd(Landroidx/compose/ui/unit/Density;F)J
 
     move-result-wide p0
@@ -189,7 +179,7 @@
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
-    .line 128
+    .line 106
     invoke-static {p0, p1}, Landroidx/compose/ui/unit/Density;->access$toSp-kPz2Gy4$jd(Landroidx/compose/ui/unit/Density;F)J
 
     move-result-wide p0
@@ -202,7 +192,7 @@
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
-    .line 120
+    .line 98
     invoke-static {p0, p1}, Landroidx/compose/ui/unit/Density;->access$toSp-kPz2Gy4$jd(Landroidx/compose/ui/unit/Density;I)J
 
     move-result-wide p0

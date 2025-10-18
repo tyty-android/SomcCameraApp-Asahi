@@ -45,7 +45,7 @@
 .method private constructor <init>()V
     .locals 0
 
-    .line 153
+    .line 157
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -64,7 +64,7 @@
 .method public final getDropExceptionHandler()Lkotlinx/coroutines/CoroutineExceptionHandler;
     .locals 0
 
-    .line 155
+    .line 159
     invoke-static {}, Landroidx/compose/ui/text/font/FontListFontFamilyTypefaceAdapter;->access$getDropExceptionHandler$cp()Lkotlinx/coroutines/CoroutineExceptionHandler;
 
     move-result-object p0
@@ -75,7 +75,7 @@
 .method public final getFontMatcher()Landroidx/compose/ui/text/font/FontMatcher;
     .locals 0
 
-    .line 154
+    .line 158
     invoke-static {}, Landroidx/compose/ui/text/font/FontListFontFamilyTypefaceAdapter;->access$getFontMatcher$cp()Landroidx/compose/ui/text/font/FontMatcher;
 
     move-result-object p0

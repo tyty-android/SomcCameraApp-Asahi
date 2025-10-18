@@ -65,7 +65,7 @@
 
 .field final synthetic $p6:Ljava/lang/Object;
 
-.field final synthetic $param7:Ljava/lang/Object;
+.field final synthetic $p7:Ljava/lang/Object;
 
 .field final synthetic this$0:Landroidx/compose/runtime/internal/ComposableLambdaImpl;
 
@@ -88,7 +88,7 @@
 
     iput-object p7, p0, Landroidx/compose/runtime/internal/ComposableLambdaImpl$invoke$7;->$p6:Ljava/lang/Object;
 
-    iput-object p8, p0, Landroidx/compose/runtime/internal/ComposableLambdaImpl$invoke$7;->$param7:Ljava/lang/Object;
+    iput-object p8, p0, Landroidx/compose/runtime/internal/ComposableLambdaImpl$invoke$7;->$p7:Ljava/lang/Object;
 
     iput p9, p0, Landroidx/compose/runtime/internal/ComposableLambdaImpl$invoke$7;->$changed:I
 
@@ -104,7 +104,7 @@
 .method public bridge synthetic invoke(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
 
-    .line 323
+    .line 330
     check-cast p1, Landroidx/compose/runtime/Composer;
 
     check-cast p2, Ljava/lang/Number;
@@ -123,11 +123,7 @@
 .method public final invoke(Landroidx/compose/runtime/Composer;I)V
     .locals 10
 
-    const-string p2, "nc"
-
-    invoke-static {p1, p2}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 324
+    .line 331
     iget-object v0, p0, Landroidx/compose/runtime/internal/ComposableLambdaImpl$invoke$7;->this$0:Landroidx/compose/runtime/internal/ComposableLambdaImpl;
 
     iget-object v1, p0, Landroidx/compose/runtime/internal/ComposableLambdaImpl$invoke$7;->$p1:Ljava/lang/Object;
@@ -142,7 +138,7 @@
 
     iget-object v6, p0, Landroidx/compose/runtime/internal/ComposableLambdaImpl$invoke$7;->$p6:Ljava/lang/Object;
 
-    iget-object v7, p0, Landroidx/compose/runtime/internal/ComposableLambdaImpl$invoke$7;->$param7:Ljava/lang/Object;
+    iget-object v7, p0, Landroidx/compose/runtime/internal/ComposableLambdaImpl$invoke$7;->$p7:Ljava/lang/Object;
 
     iget p0, p0, Landroidx/compose/runtime/internal/ComposableLambdaImpl$invoke$7;->$changed:I
 

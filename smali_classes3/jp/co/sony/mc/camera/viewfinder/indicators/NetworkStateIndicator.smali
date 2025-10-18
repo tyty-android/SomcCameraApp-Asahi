@@ -12,7 +12,7 @@
 
 .annotation runtime Lkotlin/Metadata;
     d1 = {
-        "\u0000F\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0010\u0008\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0010\u0002\n\u0000\n\u0002\u0010\u000e\n\u0002\u0008\u0002\u0008\u0007\u0018\u00002\u00020\u0001B\u0015\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\u0006\u0010\u0004\u001a\u00020\u0005\u00a2\u0006\u0002\u0010\u0006J\u001a\u0010\u000c\u001a\u00020\r2\u0008\u0010\u000e\u001a\u0004\u0018\u00010\u000f2\u0006\u0010\u0002\u001a\u00020\u0010H\u0002J\u0018\u0010\u0011\u001a\u00020\r2\u0008\u0010\u000e\u001a\u0004\u0018\u00010\u000f2\u0006\u0010\u0002\u001a\u00020\u0010J\u000e\u0010\u0012\u001a\u00020\u00132\u0006\u0010\u0014\u001a\u00020\u0015J\u0018\u0010\u0016\u001a\u00020\u00132\u0006\u0010\u0002\u001a\u00020\u00102\u0008\u0010\u000e\u001a\u0004\u0018\u00010\u000fR\u000e\u0010\u0007\u001a\u00020\u0008X\u0082\u000e\u00a2\u0006\u0002\n\u0000R\u0016\u0010\t\u001a\n \u000b*\u0004\u0018\u00010\n0\nX\u0082\u0004\u00a2\u0006\u0002\n\u0000\u00a8\u0006\u0017"
+        "\u0000F\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0003\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0003\n\u0002\u0010\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0008\n\u0002\u0008\u0002\n\u0002\u0010\u000e\n\u0002\u0008\u0002\u0008\u0007\u0018\u00002\u00020\u0001B\u0017\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\u0006\u0010\u0004\u001a\u00020\u0005\u00a2\u0006\u0004\u0008\u0006\u0010\u0007J\u0018\u0010\u000e\u001a\u00020\u000f2\u0006\u0010\u0002\u001a\u00020\u00102\u0008\u0010\u0011\u001a\u0004\u0018\u00010\u0012J\u001a\u0010\u0013\u001a\u00020\u00142\u0008\u0010\u0011\u001a\u0004\u0018\u00010\u00122\u0006\u0010\u0002\u001a\u00020\u0010H\u0002J\u000e\u0010\u0015\u001a\u00020\u000f2\u0006\u0010\u0016\u001a\u00020\u0017J\u0018\u0010\u0018\u001a\u00020\u00142\u0008\u0010\u0011\u001a\u0004\u0018\u00010\u00122\u0006\u0010\u0002\u001a\u00020\u0010R\u000e\u0010\u0008\u001a\u00020\tX\u0082\u000e\u00a2\u0006\u0002\n\u0000R\u0018\u0010\n\u001a\n \u000c*\u0004\u0018\u00010\u000b0\u000bX\u0082\u0004\u00a2\u0006\u0004\n\u0002\u0010\r\u00a8\u0006\u0019"
     }
     d2 = {
         "Ljp/co/sony/mc/camera/viewfinder/indicators/NetworkStateIndicator;",
@@ -21,29 +21,31 @@
         "Landroid/view/View;",
         "context",
         "Landroid/content/Context;",
+        "<init>",
         "(Landroid/view/View;Landroid/content/Context;)V",
         "networkStateImageView",
         "Landroid/widget/ImageView;",
         "res",
         "Landroid/content/res/Resources;",
         "kotlin.jvm.PlatformType",
-        "getNetworkIconId",
+        "Landroid/content/res/Resources;",
+        "updateNetworkIcon",
         "",
+        "Ljp/co/sony/mc/camera/rtmp/NetworkManager$NetworkState;",
         "connectLevel",
         "Ljp/co/sony/mc/camera/rtmp/NetworkManager$ConnectLevel;",
-        "Ljp/co/sony/mc/camera/rtmp/NetworkManager$NetworkState;",
-        "getNetworkTxtId",
-        "setContentDescription",
+        "getNetworkIconId",
         "",
+        "setContentDescription",
         "contentDescription",
         "",
-        "updateNetworkIcon",
+        "getNetworkTxtId",
         "SomcCamera_release"
     }
     k = 0x1
     mv = {
-        0x1,
-        0x9,
+        0x2,
+        0x0,
         0x0
     }
     xi = 0x30
@@ -81,7 +83,7 @@
     .line 14
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    const v0, 0x7f090335
+    const v0, 0x7f090334
 
     .line 17
     invoke-virtual {p1, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
@@ -132,7 +134,6 @@
 
     packed-switch p0, :pswitch_data_0
 
-    .line 56
     new-instance p0, Lkotlin/NoWhenBranchMatchedException;
 
     invoke-direct {p0}, Lkotlin/NoWhenBranchMatchedException;-><init>()V
@@ -140,7 +141,7 @@
     throw p0
 
     :pswitch_0
-    const v4, 0x7f0802c4
+    const v4, 0x7f0802da
 
     goto/16 :goto_2
 
@@ -175,27 +176,27 @@
     goto :goto_2
 
     :cond_1
-    const v4, 0x7f0802cb
+    const v4, 0x7f0802e1
 
     goto :goto_2
 
     :cond_2
-    const v4, 0x7f0802ca
+    const v4, 0x7f0802e0
 
     goto :goto_2
 
     :cond_3
-    const v4, 0x7f0802c9
+    const v4, 0x7f0802df
 
     goto :goto_2
 
     :cond_4
-    const v4, 0x7f0802c8
+    const v4, 0x7f0802de
 
     goto :goto_2
 
     :cond_5
-    const v4, 0x7f0802c7
+    const v4, 0x7f0802dd
 
     goto :goto_2
 
@@ -230,27 +231,27 @@
     goto :goto_2
 
     :cond_7
-    const v4, 0x7f0802d0
+    const v4, 0x7f0802e6
 
     goto :goto_2
 
     :cond_8
-    const v4, 0x7f0802cf
+    const v4, 0x7f0802e5
 
     goto :goto_2
 
     :cond_9
-    const v4, 0x7f0802ce
+    const v4, 0x7f0802e4
 
     goto :goto_2
 
     :cond_a
-    const v4, 0x7f0802cd
+    const v4, 0x7f0802e3
 
     goto :goto_2
 
     :cond_b
-    const v4, 0x7f0802cc
+    const v4, 0x7f0802e2
 
     :goto_2
     :pswitch_3
@@ -299,7 +300,6 @@
 
     packed-switch p0, :pswitch_data_0
 
-    .line 94
     new-instance p0, Lkotlin/NoWhenBranchMatchedException;
 
     invoke-direct {p0}, Lkotlin/NoWhenBranchMatchedException;-><init>()V
@@ -337,27 +337,27 @@
     goto :goto_2
 
     :cond_1
-    const v4, 0x7f1100cb
-
-    goto :goto_2
-
-    :cond_2
-    const v4, 0x7f1100ca
-
-    goto :goto_2
-
-    :cond_3
     const v4, 0x7f1100c9
 
     goto :goto_2
 
-    :cond_4
+    :cond_2
     const v4, 0x7f1100c8
 
     goto :goto_2
 
-    :cond_5
+    :cond_3
     const v4, 0x7f1100c7
+
+    goto :goto_2
+
+    :cond_4
+    const v4, 0x7f1100c6
+
+    goto :goto_2
+
+    :cond_5
+    const v4, 0x7f1100c5
 
     goto :goto_2
 
@@ -392,27 +392,27 @@
     goto :goto_2
 
     :cond_7
-    const v4, 0x7f110105
+    const v4, 0x7f110106
 
     goto :goto_2
 
     :cond_8
-    const v4, 0x7f110104
+    const v4, 0x7f110105
 
     goto :goto_2
 
     :cond_9
-    const v4, 0x7f110103
+    const v4, 0x7f110104
 
     goto :goto_2
 
     :cond_a
-    const v4, 0x7f110102
+    const v4, 0x7f110103
 
     goto :goto_2
 
     :cond_b
-    const v4, 0x7f110101
+    const v4, 0x7f110102
 
     :goto_2
     :pswitch_2

@@ -13,11 +13,11 @@
 
 
 # instance fields
-.field private final mCallback22:Landroid/view/View$OnClickListener;
+.field private final mCallback5:Landroid/view/View$OnClickListener;
 
-.field private final mCallback23:Landroid/view/View$OnClickListener;
+.field private final mCallback6:Landroid/view/View$OnClickListener;
 
-.field private final mCallback24:Landroid/view/View$OnClickListener;
+.field private final mCallback7:Landroid/view/View$OnClickListener;
 
 .field private mDirtyFlags:J
 
@@ -200,21 +200,21 @@
 
     invoke-direct {v0, p0, v14}, Ljp/co/sony/mc/camera/generated/callback/OnClickListener;-><init>(Ljp/co/sony/mc/camera/generated/callback/OnClickListener$Listener;I)V
 
-    iput-object v0, v11, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeSsFocusEntranceBindingImpl;->mCallback23:Landroid/view/View$OnClickListener;
+    iput-object v0, v11, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeSsFocusEntranceBindingImpl;->mCallback6:Landroid/view/View$OnClickListener;
 
     .line 61
     new-instance v0, Ljp/co/sony/mc/camera/generated/callback/OnClickListener;
 
-    invoke-direct {v0, p0, v12}, Ljp/co/sony/mc/camera/generated/callback/OnClickListener;-><init>(Ljp/co/sony/mc/camera/generated/callback/OnClickListener$Listener;I)V
+    invoke-direct {v0, p0, v13}, Ljp/co/sony/mc/camera/generated/callback/OnClickListener;-><init>(Ljp/co/sony/mc/camera/generated/callback/OnClickListener$Listener;I)V
 
-    iput-object v0, v11, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeSsFocusEntranceBindingImpl;->mCallback24:Landroid/view/View$OnClickListener;
+    iput-object v0, v11, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeSsFocusEntranceBindingImpl;->mCallback5:Landroid/view/View$OnClickListener;
 
     .line 62
     new-instance v0, Ljp/co/sony/mc/camera/generated/callback/OnClickListener;
 
-    invoke-direct {v0, p0, v13}, Ljp/co/sony/mc/camera/generated/callback/OnClickListener;-><init>(Ljp/co/sony/mc/camera/generated/callback/OnClickListener$Listener;I)V
+    invoke-direct {v0, p0, v12}, Ljp/co/sony/mc/camera/generated/callback/OnClickListener;-><init>(Ljp/co/sony/mc/camera/generated/callback/OnClickListener$Listener;I)V
 
-    iput-object v0, v11, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeSsFocusEntranceBindingImpl;->mCallback22:Landroid/view/View$OnClickListener;
+    iput-object v0, v11, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeSsFocusEntranceBindingImpl;->mCallback7:Landroid/view/View$OnClickListener;
 
     .line 63
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeSsFocusEntranceBindingImpl;->invalidateAll()V
@@ -673,13 +673,13 @@
 
     goto :goto_0
 
-    .line 568
+    .line 585
     :cond_0
     iget-object p0, p0, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeSsFocusEntranceBindingImpl;->mViewFinderUiState:Ljp/co/sony/mc/camera/view/uistate/ViewFinderUiState;
 
     if-eqz p0, :cond_3
 
-    .line 578
+    .line 595
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/view/uistate/ViewFinderUiState;->toggleSSSettingMenuVisible()V
 
     goto :goto_0
@@ -695,13 +695,13 @@
 
     goto :goto_0
 
-    .line 585
+    .line 568
     :cond_2
     iget-object p0, p0, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeSsFocusEntranceBindingImpl;->mViewFinderUiState:Ljp/co/sony/mc/camera/view/uistate/ViewFinderUiState;
 
     if-eqz p0, :cond_3
 
-    .line 595
+    .line 578
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/view/uistate/ViewFinderUiState;->closeAllMenu()V
 
     :cond_3
@@ -1407,21 +1407,21 @@
     .line 502
     iget-object v4, v1, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeSsFocusEntranceBindingImpl;->basicFocusButtonArea:Landroid/widget/LinearLayout;
 
-    iget-object v6, v1, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeSsFocusEntranceBindingImpl;->mCallback23:Landroid/view/View$OnClickListener;
+    iget-object v6, v1, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeSsFocusEntranceBindingImpl;->mCallback6:Landroid/view/View$OnClickListener;
 
     invoke-virtual {v4, v6}, Landroid/widget/LinearLayout;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     .line 503
     iget-object v4, v1, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeSsFocusEntranceBindingImpl;->basicSsButtonArea:Landroid/widget/LinearLayout;
 
-    iget-object v6, v1, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeSsFocusEntranceBindingImpl;->mCallback24:Landroid/view/View$OnClickListener;
+    iget-object v6, v1, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeSsFocusEntranceBindingImpl;->mCallback7:Landroid/view/View$OnClickListener;
 
     invoke-virtual {v4, v6}, Landroid/widget/LinearLayout;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     .line 504
     iget-object v4, v1, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeSsFocusEntranceBindingImpl;->close:Landroid/widget/ImageButton;
 
-    iget-object v6, v1, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeSsFocusEntranceBindingImpl;->mCallback22:Landroid/view/View$OnClickListener;
+    iget-object v6, v1, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeSsFocusEntranceBindingImpl;->mCallback5:Landroid/view/View$OnClickListener;
 
     invoke-virtual {v4, v6}, Landroid/widget/ImageButton;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
@@ -1772,7 +1772,7 @@
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    const/16 p1, 0x13
+    const/16 p1, 0x16
 
     .line 110
     invoke-virtual {p0, p1}, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeSsFocusEntranceBindingImpl;->notifyPropertyChanged(I)V
@@ -1797,7 +1797,7 @@
 .method public setVariable(ILjava/lang/Object;)Z
     .locals 1
 
-    const/16 v0, 0x13
+    const/16 v0, 0x16
 
     if-ne v0, p1, :cond_0
 
@@ -1809,7 +1809,7 @@
     goto :goto_0
 
     :cond_0
-    const/16 v0, 0x22
+    const/16 v0, 0x25
 
     if-ne v0, p1, :cond_1
 
@@ -1821,7 +1821,7 @@
     goto :goto_0
 
     :cond_1
-    const/4 v0, 0x3
+    const/4 v0, 0x4
 
     if-ne v0, p1, :cond_2
 
@@ -1833,7 +1833,7 @@
     goto :goto_0
 
     :cond_2
-    const/4 v0, 0x7
+    const/16 v0, 0x8
 
     if-ne v0, p1, :cond_3
 
@@ -1878,7 +1878,7 @@
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    const/16 p1, 0x22
+    const/16 p1, 0x25
 
     .line 118
     invoke-virtual {p0, p1}, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeSsFocusEntranceBindingImpl;->notifyPropertyChanged(I)V

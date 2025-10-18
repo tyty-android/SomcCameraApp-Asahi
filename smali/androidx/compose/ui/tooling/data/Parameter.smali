@@ -1,6 +1,6 @@
 .class final Landroidx/compose/ui/tooling/data/Parameter;
 .super Ljava/lang/Object;
-.source "SlotTree.kt"
+.source "SlotTree.jvm.kt"
 
 
 # annotations
@@ -42,13 +42,13 @@
 .method public constructor <init>(ILjava/lang/String;)V
     .locals 0
 
-    .line 260
+    .line 262
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 261
+    .line 263
     iput p1, p0, Landroidx/compose/ui/tooling/data/Parameter;->sortedIndex:I
 
-    .line 262
+    .line 264
     iput-object p2, p0, Landroidx/compose/ui/tooling/data/Parameter;->inlineClass:Ljava/lang/String;
 
     return-void
@@ -63,7 +63,7 @@
 
     const/4 p2, 0x0
 
-    .line 260
+    .line 262
     :cond_0
     invoke-direct {p0, p1, p2}, Landroidx/compose/ui/tooling/data/Parameter;-><init>(ILjava/lang/String;)V
 
@@ -75,7 +75,7 @@
 .method public final getInlineClass()Ljava/lang/String;
     .locals 0
 
-    .line 262
+    .line 264
     iget-object p0, p0, Landroidx/compose/ui/tooling/data/Parameter;->inlineClass:Ljava/lang/String;
 
     return-object p0
@@ -84,7 +84,7 @@
 .method public final getSortedIndex()I
     .locals 0
 
-    .line 261
+    .line 263
     iget p0, p0, Landroidx/compose/ui/tooling/data/Parameter;->sortedIndex:I
 
     return p0

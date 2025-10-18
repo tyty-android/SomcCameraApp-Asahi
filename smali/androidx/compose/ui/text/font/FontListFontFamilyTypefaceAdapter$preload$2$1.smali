@@ -79,7 +79,7 @@
 .method public bridge synthetic invoke(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
 
-    .line 87
+    .line 91
     check-cast p1, Landroidx/compose/ui/text/font/TypefaceRequest;
 
     invoke-virtual {p0, p1}, Landroidx/compose/ui/text/font/FontListFontFamilyTypefaceAdapter$preload$2$1;->invoke(Landroidx/compose/ui/text/font/TypefaceRequest;)V
@@ -91,10 +91,6 @@
 
 .method public final invoke(Landroidx/compose/ui/text/font/TypefaceRequest;)V
     .locals 0
-
-    const-string p0, "it"
-
-    invoke-static {p1, p0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
     return-void
 .end method

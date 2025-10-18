@@ -39,10 +39,6 @@
 
 
 # instance fields
-.field final synthetic $$dirty:I
-
-.field final synthetic $$dirty1:I
-
 .field final synthetic $colors:Landroidx/compose/material/TextFieldColors;
 
 .field final synthetic $enabled:Z
@@ -53,7 +49,7 @@
 
 
 # direct methods
-.method constructor <init>(ZZLandroidx/compose/foundation/interaction/InteractionSource;Landroidx/compose/material/TextFieldColors;II)V
+.method constructor <init>(ZZLandroidx/compose/foundation/interaction/InteractionSource;Landroidx/compose/material/TextFieldColors;)V
     .locals 0
 
     iput-boolean p1, p0, Landroidx/compose/material/TextFieldDefaults$OutlinedTextFieldDecorationBox$1;->$enabled:Z
@@ -63,10 +59,6 @@
     iput-object p3, p0, Landroidx/compose/material/TextFieldDefaults$OutlinedTextFieldDecorationBox$1;->$interactionSource:Landroidx/compose/foundation/interaction/InteractionSource;
 
     iput-object p4, p0, Landroidx/compose/material/TextFieldDefaults$OutlinedTextFieldDecorationBox$1;->$colors:Landroidx/compose/material/TextFieldColors;
-
-    iput p5, p0, Landroidx/compose/material/TextFieldDefaults$OutlinedTextFieldDecorationBox$1;->$$dirty:I
-
-    iput p6, p0, Landroidx/compose/material/TextFieldDefaults$OutlinedTextFieldDecorationBox$1;->$$dirty1:I
 
     const/4 p1, 0x2
 
@@ -80,7 +72,7 @@
 .method public bridge synthetic invoke(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
 
-    .line 649
+    .line 667
     check-cast p1, Landroidx/compose/runtime/Composer;
 
     check-cast p2, Ljava/lang/Number;
@@ -103,7 +95,7 @@
 
     move/from16 v1, p2
 
-    const-string v2, "C649@30519L54:TextFieldDefaults.kt#jmzs0o"
+    const-string v2, "C667@31193L54:TextFieldDefaults.kt#jmzs0o"
 
     move-object v11, p1
 
@@ -115,7 +107,7 @@
 
     if-ne v2, v3, :cond_1
 
-    .line 650
+    .line 668
     invoke-interface {p1}, Landroidx/compose/runtime/Composer;->getSkipping()Z
 
     move-result v2
@@ -139,7 +131,7 @@
 
     const/4 v2, -0x1
 
-    const-string v3, "androidx.compose.material.TextFieldDefaults.OutlinedTextFieldDecorationBox.<anonymous> (TextFieldDefaults.kt:648)"
+    const-string v3, "androidx.compose.material.TextFieldDefaults.OutlinedTextFieldDecorationBox.<anonymous> (TextFieldDefaults.kt:667)"
 
     const v4, 0x4b37506d    # 1.2013677E7f
 
@@ -156,35 +148,7 @@
 
     iget-object v7, v0, Landroidx/compose/material/TextFieldDefaults$OutlinedTextFieldDecorationBox$1;->$colors:Landroidx/compose/material/TextFieldColors;
 
-    iget v1, v0, Landroidx/compose/material/TextFieldDefaults$OutlinedTextFieldDecorationBox$1;->$$dirty:I
-
-    shr-int/lit8 v2, v1, 0x6
-
-    and-int/lit8 v2, v2, 0xe
-
-    const/high16 v8, 0xc00000
-
-    or-int/2addr v2, v8
-
-    shr-int/lit8 v8, v1, 0xf
-
-    and-int/lit8 v8, v8, 0x70
-
-    or-int/2addr v2, v8
-
-    shr-int/lit8 v1, v1, 0x9
-
-    and-int/lit16 v1, v1, 0x380
-
-    or-int/2addr v1, v2
-
-    iget v0, v0, Landroidx/compose/material/TextFieldDefaults$OutlinedTextFieldDecorationBox$1;->$$dirty1:I
-
-    shl-int/lit8 v0, v0, 0x6
-
-    and-int/lit16 v0, v0, 0x1c00
-
-    or-int v12, v1, v0
+    const/high16 v12, 0xc00000
 
     const/16 v13, 0x70
 

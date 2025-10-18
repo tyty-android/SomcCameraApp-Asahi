@@ -37,8 +37,8 @@
     }
     k = 0x1
     mv = {
-        0x1,
-        0x9,
+        0x2,
+        0x0,
         0x0
     }
     xi = 0x30
@@ -95,7 +95,7 @@
 
     iput-object p1, p0, Ljp/co/sony/mc/camera/view/viewbinder/MacroModeFocusViewBinder$onCreate$1$1;->this$0:Ljp/co/sony/mc/camera/view/viewbinder/MacroModeFocusViewBinder;
 
-    .line 72
+    .line 74
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -144,12 +144,12 @@
 
     if-eqz p3, :cond_0
 
-    .line 79
+    .line 81
     iget-object p1, p0, Ljp/co/sony/mc/camera/view/viewbinder/MacroModeFocusViewBinder$onCreate$1$1;->this$0:Ljp/co/sony/mc/camera/view/viewbinder/MacroModeFocusViewBinder;
 
     invoke-static {p1, p2}, Ljp/co/sony/mc/camera/view/viewbinder/MacroModeFocusViewBinder;->access$applyFocusDistance(Ljp/co/sony/mc/camera/view/viewbinder/MacroModeFocusViewBinder;I)V
 
-    .line 80
+    .line 82
     iget-object p1, p0, Ljp/co/sony/mc/camera/view/viewbinder/MacroModeFocusViewBinder$onCreate$1$1;->this$0:Ljp/co/sony/mc/camera/view/viewbinder/MacroModeFocusViewBinder;
 
     invoke-static {p1}, Ljp/co/sony/mc/camera/view/viewbinder/MacroModeFocusViewBinder;->access$getCameraSettingsModel(Ljp/co/sony/mc/camera/view/viewbinder/MacroModeFocusViewBinder;)Ljp/co/sony/mc/camera/view/viewmodel/CameraSettingsModel;
@@ -174,7 +174,7 @@
 
     if-eqz p1, :cond_0
 
-    .line 81
+    .line 83
     iget-object p1, p0, Ljp/co/sony/mc/camera/view/viewbinder/MacroModeFocusViewBinder$onCreate$1$1;->this$0:Ljp/co/sony/mc/camera/view/viewbinder/MacroModeFocusViewBinder;
 
     invoke-static {p1}, Ljp/co/sony/mc/camera/view/viewbinder/MacroModeFocusViewBinder;->access$getCameraSettingsModel(Ljp/co/sony/mc/camera/view/viewbinder/MacroModeFocusViewBinder;)Ljp/co/sony/mc/camera/view/viewmodel/CameraSettingsModel;
@@ -199,7 +199,7 @@
 
     if-nez p1, :cond_0
 
-    .line 83
+    .line 85
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/viewbinder/MacroModeFocusViewBinder$onCreate$1$1;->this$0:Ljp/co/sony/mc/camera/view/viewbinder/MacroModeFocusViewBinder;
 
     invoke-static {p0}, Ljp/co/sony/mc/camera/view/viewbinder/MacroModeFocusViewBinder;->access$getMessageUiState(Ljp/co/sony/mc/camera/view/viewbinder/MacroModeFocusViewBinder;)Ljp/co/sony/mc/camera/view/uistate/MessageUiState;
@@ -225,7 +225,7 @@
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 89
+    .line 91
     iget-object p1, p0, Ljp/co/sony/mc/camera/view/viewbinder/MacroModeFocusViewBinder$onCreate$1$1;->this$0:Ljp/co/sony/mc/camera/view/viewbinder/MacroModeFocusViewBinder;
 
     invoke-static {p1}, Ljp/co/sony/mc/camera/view/viewbinder/MacroModeFocusViewBinder;->access$getBinding$p(Ljp/co/sony/mc/camera/view/viewbinder/MacroModeFocusViewBinder;)Ljp/co/sony/mc/camera/databinding/FragmentMacroFocusBinding;
@@ -240,7 +240,7 @@
 
     invoke-virtual {p1, v0}, Ljp/co/sony/mc/camera/view/widget/PressButton;->setOnTouchListener(Landroid/view/View$OnTouchListener;)V
 
-    .line 90
+    .line 92
     iget-object p1, p0, Ljp/co/sony/mc/camera/view/viewbinder/MacroModeFocusViewBinder$onCreate$1$1;->this$0:Ljp/co/sony/mc/camera/view/viewbinder/MacroModeFocusViewBinder;
 
     invoke-static {p1}, Ljp/co/sony/mc/camera/view/viewbinder/MacroModeFocusViewBinder;->access$getBinding$p(Ljp/co/sony/mc/camera/view/viewbinder/MacroModeFocusViewBinder;)Ljp/co/sony/mc/camera/databinding/FragmentMacroFocusBinding;
@@ -255,7 +255,7 @@
 
     invoke-virtual {p1, v0}, Ljp/co/sony/mc/camera/view/widget/PressButton;->setOnTouchListener(Landroid/view/View$OnTouchListener;)V
 
-    .line 91
+    .line 93
     iget-object p1, p0, Ljp/co/sony/mc/camera/view/viewbinder/MacroModeFocusViewBinder$onCreate$1$1;->this$0:Ljp/co/sony/mc/camera/view/viewbinder/MacroModeFocusViewBinder;
 
     invoke-static {p1}, Ljp/co/sony/mc/camera/view/viewbinder/MacroModeFocusViewBinder;->access$getCameraSettingsModel(Ljp/co/sony/mc/camera/view/viewbinder/MacroModeFocusViewBinder;)Ljp/co/sony/mc/camera/view/viewmodel/CameraSettingsModel;
@@ -274,7 +274,7 @@
 
     if-eq p1, v0, :cond_0
 
-    .line 92
+    .line 94
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/viewbinder/MacroModeFocusViewBinder$onCreate$1$1;->this$0:Ljp/co/sony/mc/camera/view/viewbinder/MacroModeFocusViewBinder;
 
     invoke-static {p0}, Ljp/co/sony/mc/camera/view/viewbinder/MacroModeFocusViewBinder;->access$getViewFinderUiState(Ljp/co/sony/mc/camera/view/viewbinder/MacroModeFocusViewBinder;)Ljp/co/sony/mc/camera/view/uistate/ViewFinderUiState;
@@ -287,15 +287,15 @@
 
     if-eqz p0, :cond_0
 
-    .line 93
+    .line 95
     sget-object p1, Ljp/co/sony/mc/camera/setting/CameraSettings;->FOCUS_MODE:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
 
     check-cast p1, Ljp/co/sony/mc/camera/setting/SettingKey$Key;
 
-    .line 94
+    .line 96
     sget-object v0, Ljp/co/sony/mc/camera/configuration/parameters/FocusMode;->MF:Ljp/co/sony/mc/camera/configuration/parameters/FocusMode;
 
-    .line 92
+    .line 94
     invoke-interface {p0, p1, v0}, Ljp/co/sony/mc/camera/view/CameraOperator;->setSetting(Ljp/co/sony/mc/camera/setting/SettingKey$Key;Ljava/lang/Object;)V
 
     :cond_0
@@ -303,13 +303,13 @@
 .end method
 
 .method public onStopTrackingTouch(Landroid/widget/SeekBar;)V
-    .locals 1
+    .locals 9
 
     const-string v0, "seekBar"
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 100
+    .line 102
     iget-object p1, p0, Ljp/co/sony/mc/camera/view/viewbinder/MacroModeFocusViewBinder$onCreate$1$1;->this$0:Ljp/co/sony/mc/camera/view/viewbinder/MacroModeFocusViewBinder;
 
     invoke-static {p1}, Ljp/co/sony/mc/camera/view/viewbinder/MacroModeFocusViewBinder;->access$getBinding$p(Ljp/co/sony/mc/camera/view/viewbinder/MacroModeFocusViewBinder;)Ljp/co/sony/mc/camera/databinding/FragmentMacroFocusBinding;
@@ -324,7 +324,7 @@
 
     invoke-virtual {p1, v0}, Ljp/co/sony/mc/camera/view/widget/PressButton;->setOnTouchListener(Landroid/view/View$OnTouchListener;)V
 
-    .line 101
+    .line 103
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/viewbinder/MacroModeFocusViewBinder$onCreate$1$1;->this$0:Ljp/co/sony/mc/camera/view/viewbinder/MacroModeFocusViewBinder;
 
     invoke-static {p0}, Ljp/co/sony/mc/camera/view/viewbinder/MacroModeFocusViewBinder;->access$getBinding$p(Ljp/co/sony/mc/camera/view/viewbinder/MacroModeFocusViewBinder;)Ljp/co/sony/mc/camera/databinding/FragmentMacroFocusBinding;
@@ -338,6 +338,52 @@
     invoke-direct {p1}, Ljp/co/sony/mc/camera/view/viewbinder/MacroModeFocusViewBinder$onCreate$1$1$$ExternalSyntheticLambda1;-><init>()V
 
     invoke-virtual {p0, p1}, Ljp/co/sony/mc/camera/view/widget/PressButton;->setOnTouchListener(Landroid/view/View$OnTouchListener;)V
+
+    .line 104
+    new-instance p0, Ljp/co/sony/mc/camera/idd/event/IddSettingEvent;
+
+    const/16 v7, 0x3f
+
+    const/4 v8, 0x0
+
+    const/4 v1, 0x0
+
+    const/4 v2, 0x0
+
+    const/4 v3, 0x0
+
+    const/4 v4, 0x0
+
+    const/4 v5, 0x0
+
+    const/4 v6, 0x0
+
+    move-object v0, p0
+
+    invoke-direct/range {v0 .. v8}, Ljp/co/sony/mc/camera/idd/event/IddSettingEvent;-><init>(Ljava/lang/String;Ljp/co/sony/mc/camera/idd/value/IddLauncher;Ljp/co/sony/mc/camera/idd/value/IddMode;Ljp/co/sony/mc/camera/idd/value/IddSettingKey;Ljp/co/sony/mc/camera/idd/value/IddSettingValue;Ljp/co/sony/mc/camera/idd/value/IddUserControl;ILkotlin/jvm/internal/DefaultConstructorMarker;)V
+
+    .line 105
+    sget-object p1, Ljp/co/sony/mc/camera/idd/value/IddUserControl;->PREVIEW:Ljp/co/sony/mc/camera/idd/value/IddUserControl;
+
+    invoke-virtual {p0, p1}, Ljp/co/sony/mc/camera/idd/event/IddSettingEvent;->changeLocation(Ljp/co/sony/mc/camera/idd/value/IddUserControl;)Ljp/co/sony/mc/camera/idd/event/IddSettingEvent;
+
+    move-result-object p0
+
+    .line 106
+    sget-object p1, Ljp/co/sony/mc/camera/setting/CameraSettings;->FOCUS_DISTANCE:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
+
+    const-string v0, "FOCUS_DISTANCE"
+
+    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
+
+    check-cast p1, Ljp/co/sony/mc/camera/setting/SettingKey$Key;
+
+    invoke-virtual {p0, p1}, Ljp/co/sony/mc/camera/idd/event/IddSettingEvent;->setting(Ljp/co/sony/mc/camera/setting/SettingKey$Key;)Ljp/co/sony/mc/camera/idd/event/IddSettingEvent;
+
+    move-result-object p0
+
+    .line 107
+    invoke-virtual {p0}, Ljp/co/sony/mc/camera/idd/event/IddSettingEvent;->send()V
 
     return-void
 .end method

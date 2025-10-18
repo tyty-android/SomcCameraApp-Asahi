@@ -214,11 +214,7 @@
 .end method
 
 .method public contains(Landroidx/compose/ui/Modifier$Node;)Z
-    .locals 1
-
-    const-string v0, "element"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+    .locals 0
 
     .line 270
     invoke-virtual {p0, p1}, Landroidx/compose/ui/node/HitTestResult$SubList;->indexOf(Ljava/lang/Object;)I
@@ -273,10 +269,6 @@
             ">;)Z"
         }
     .end annotation
-
-    const-string v0, "elements"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 273
     check-cast p1, Ljava/lang/Iterable;
@@ -385,10 +377,6 @@
 
 .method public indexOf(Landroidx/compose/ui/Modifier$Node;)I
     .locals 3
-
-    const-string v0, "element"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 284
     iget v0, p0, Landroidx/compose/ui/node/HitTestResult$SubList;->minIndex:I
@@ -505,10 +493,6 @@
 
 .method public lastIndexOf(Landroidx/compose/ui/Modifier$Node;)I
     .locals 3
-
-    const-string v0, "element"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 298
     iget v0, p0, Landroidx/compose/ui/node/HitTestResult$SubList;->maxIndex:I
@@ -827,7 +811,7 @@
 .end method
 
 .method public toArray([Ljava/lang/Object;)[Ljava/lang/Object;
-    .locals 1
+    .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<T:",
@@ -835,10 +819,6 @@
             ">([TT;)[TT;"
         }
     .end annotation
-
-    const-string v0, "array"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
     check-cast p0, Ljava/util/Collection;
 

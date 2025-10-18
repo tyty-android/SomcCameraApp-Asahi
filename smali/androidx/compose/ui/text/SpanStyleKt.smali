@@ -5,12 +5,12 @@
 
 # annotations
 .annotation system Ldalvik/annotation/SourceDebugExtension;
-    value = "SMAP\nSpanStyle.kt\nKotlin\n*S Kotlin\n*F\n+ 1 SpanStyle.kt\nandroidx/compose/ui/text/SpanStyleKt\n+ 2 Color.kt\nandroidx/compose/ui/graphics/ColorKt\n+ 3 TextUnit.kt\nandroidx/compose/ui/unit/TextUnitKt\n*L\n1#1,951:1\n658#2:952\n646#2:953\n646#2:955\n646#2:957\n658#2:958\n646#2:959\n250#3:954\n250#3:956\n*S KotlinDebug\n*F\n+ 1 SpanStyle.kt\nandroidx/compose/ui/text/SpanStyleKt\n*L\n849#1:952\n849#1:953\n892#1:955\n907#1:957\n939#1:958\n939#1:959\n891#1:954\n897#1:956\n*E\n"
+    value = "SMAP\nSpanStyle.kt\nKotlin\n*S Kotlin\n*F\n+ 1 SpanStyle.kt\nandroidx/compose/ui/text/SpanStyleKt\n+ 2 Color.kt\nandroidx/compose/ui/graphics/ColorKt\n+ 3 TextUnit.kt\nandroidx/compose/ui/unit/TextUnitKt\n*L\n1#1,951:1\n658#2:952\n646#2:953\n646#2:955\n646#2:957\n658#2:958\n646#2:959\n250#3:954\n250#3:956\n*S KotlinDebug\n*F\n+ 1 SpanStyle.kt\nandroidx/compose/ui/text/SpanStyleKt\n*L\n849#1:952\n849#1:953\n891#1:955\n906#1:957\n938#1:958\n938#1:959\n890#1:954\n896#1:956\n*E\n"
 .end annotation
 
 .annotation runtime Lkotlin/Metadata;
     d1 = {
-        "\u0000|\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0003\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0003\n\u0002\u0010\u0007\n\u0002\u0008\u0006\n\u0002\u0018\u0002\n\u0002\u0008\t\n\u0002\u0018\u0002\n\u0002\u0008\u0003\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000e\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0005\u001a\u001e\u0010\u0007\u001a\u00020\u00082\u0006\u0010\t\u001a\u00020\u00082\u0006\u0010\n\u001a\u00020\u00082\u0006\u0010\u000b\u001a\u00020\u000c\u001a+\u0010\r\u001a\u0002H\u000e\"\u0004\u0008\u0000\u0010\u000e2\u0006\u0010\u000f\u001a\u0002H\u000e2\u0006\u0010\u0010\u001a\u0002H\u000e2\u0006\u0010\u000b\u001a\u00020\u000cH\u0000\u00a2\u0006\u0002\u0010\u0011\u001a&\u0010\u0012\u001a\u0004\u0018\u00010\u00132\u0008\u0010\t\u001a\u0004\u0018\u00010\u00132\u0008\u0010\n\u001a\u0004\u0018\u00010\u00132\u0006\u0010\u000b\u001a\u00020\u000cH\u0002\u001a-\u0010\u0014\u001a\u00020\u00052\u0006\u0010\u000f\u001a\u00020\u00052\u0006\u0010\u0010\u001a\u00020\u00052\u0006\u0010\u0015\u001a\u00020\u000cH\u0000\u00f8\u0001\u0001\u00f8\u0001\u0000\u00a2\u0006\u0004\u0008\u0016\u0010\u0017\u001a\u0010\u0010\u0018\u001a\u00020\u00082\u0006\u0010\u0019\u001a\u00020\u0008H\u0000\u001a\u00c3\u0001\u0010\u001a\u001a\u00020\u0008*\u00020\u00082\u0006\u0010\u001b\u001a\u00020\u00012\u0008\u0010\u001c\u001a\u0004\u0018\u00010\u001d2\u0006\u0010\u001e\u001a\u00020\u000c2\u0006\u0010\u001f\u001a\u00020\u00052\u0008\u0010 \u001a\u0004\u0018\u00010!2\u0008\u0010\"\u001a\u0004\u0018\u00010#2\u0008\u0010$\u001a\u0004\u0018\u00010%2\u0008\u0010&\u001a\u0004\u0018\u00010\'2\u0008\u0010(\u001a\u0004\u0018\u00010)2\u0006\u0010*\u001a\u00020\u00052\u0008\u0010+\u001a\u0004\u0018\u00010,2\u0008\u0010-\u001a\u0004\u0018\u00010.2\u0008\u0010/\u001a\u0004\u0018\u0001002\u0006\u00101\u001a\u00020\u00012\u0008\u00102\u001a\u0004\u0018\u0001032\u0008\u00104\u001a\u0004\u0018\u0001052\u0008\u00106\u001a\u0004\u0018\u00010\u00132\u0008\u00107\u001a\u0004\u0018\u000108H\u0000\u00f8\u0001\u0001\u00f8\u0001\u0000\u00a2\u0006\u0004\u00089\u0010:\u001a\u0018\u0010;\u001a\u0004\u0018\u00010\u0013*\u00020\u00082\u0008\u0010<\u001a\u0004\u0018\u00010\u0013H\u0002\"\u0013\u0010\u0000\u001a\u00020\u0001X\u0082\u0004\u00f8\u0001\u0000\u00a2\u0006\u0004\n\u0002\u0010\u0002\"\u0013\u0010\u0003\u001a\u00020\u0001X\u0082\u0004\u00f8\u0001\u0000\u00a2\u0006\u0004\n\u0002\u0010\u0002\"\u0013\u0010\u0004\u001a\u00020\u0005X\u0082\u0004\u00f8\u0001\u0000\u00a2\u0006\u0004\n\u0002\u0010\u0002\"\u0013\u0010\u0006\u001a\u00020\u0005X\u0082\u0004\u00f8\u0001\u0000\u00a2\u0006\u0004\n\u0002\u0010\u0002\u0082\u0002\u000b\n\u0002\u0008\u0019\n\u0005\u0008\u00a1\u001e0\u0001\u00a8\u0006="
+        "\u0000|\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0003\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0003\n\u0002\u0010\u0007\n\u0002\u0008\u0006\n\u0002\u0018\u0002\n\u0002\u0008\t\n\u0002\u0018\u0002\n\u0002\u0008\u0003\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000e\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0005\u001a\u001e\u0010\u0007\u001a\u00020\u00082\u0006\u0010\t\u001a\u00020\u00082\u0006\u0010\n\u001a\u00020\u00082\u0006\u0010\u000b\u001a\u00020\u000c\u001a+\u0010\r\u001a\u0002H\u000e\"\u0004\u0008\u0000\u0010\u000e2\u0006\u0010\u000f\u001a\u0002H\u000e2\u0006\u0010\u0010\u001a\u0002H\u000e2\u0006\u0010\u000b\u001a\u00020\u000cH\u0000\u00a2\u0006\u0002\u0010\u0011\u001a&\u0010\u0012\u001a\u0004\u0018\u00010\u00132\u0008\u0010\t\u001a\u0004\u0018\u00010\u00132\u0008\u0010\n\u001a\u0004\u0018\u00010\u00132\u0006\u0010\u000b\u001a\u00020\u000cH\u0002\u001a*\u0010\u0014\u001a\u00020\u00052\u0006\u0010\u000f\u001a\u00020\u00052\u0006\u0010\u0010\u001a\u00020\u00052\u0006\u0010\u0015\u001a\u00020\u000cH\u0000\u00f8\u0001\u0000\u00a2\u0006\u0004\u0008\u0016\u0010\u0017\u001a\u0010\u0010\u0018\u001a\u00020\u00082\u0006\u0010\u0019\u001a\u00020\u0008H\u0000\u001a\u00c0\u0001\u0010\u001a\u001a\u00020\u0008*\u00020\u00082\u0006\u0010\u001b\u001a\u00020\u00012\u0008\u0010\u001c\u001a\u0004\u0018\u00010\u001d2\u0006\u0010\u001e\u001a\u00020\u000c2\u0006\u0010\u001f\u001a\u00020\u00052\u0008\u0010 \u001a\u0004\u0018\u00010!2\u0008\u0010\"\u001a\u0004\u0018\u00010#2\u0008\u0010$\u001a\u0004\u0018\u00010%2\u0008\u0010&\u001a\u0004\u0018\u00010\'2\u0008\u0010(\u001a\u0004\u0018\u00010)2\u0006\u0010*\u001a\u00020\u00052\u0008\u0010+\u001a\u0004\u0018\u00010,2\u0008\u0010-\u001a\u0004\u0018\u00010.2\u0008\u0010/\u001a\u0004\u0018\u0001002\u0006\u00101\u001a\u00020\u00012\u0008\u00102\u001a\u0004\u0018\u0001032\u0008\u00104\u001a\u0004\u0018\u0001052\u0008\u00106\u001a\u0004\u0018\u00010\u00132\u0008\u00107\u001a\u0004\u0018\u000108H\u0000\u00f8\u0001\u0000\u00a2\u0006\u0004\u00089\u0010:\u001a\u0018\u0010;\u001a\u0004\u0018\u00010\u0013*\u00020\u00082\u0008\u0010<\u001a\u0004\u0018\u00010\u0013H\u0002\"\u0010\u0010\u0000\u001a\u00020\u0001X\u0082\u0004\u00a2\u0006\u0004\n\u0002\u0010\u0002\"\u0010\u0010\u0003\u001a\u00020\u0001X\u0082\u0004\u00a2\u0006\u0004\n\u0002\u0010\u0002\"\u0010\u0010\u0004\u001a\u00020\u0005X\u0082\u0004\u00a2\u0006\u0004\n\u0002\u0010\u0002\"\u0010\u0010\u0006\u001a\u00020\u0005X\u0082\u0004\u00a2\u0006\u0004\n\u0002\u0010\u0002\u0082\u0002\u0007\n\u0005\u0008\u00a1\u001e0\u0001\u00a8\u0006="
     }
     d2 = {
         "DefaultBackgroundColor",
@@ -179,20 +179,18 @@
 
     move-object/from16 v15, p19
 
-    const-string v13, "$this$fastMerge"
-
-    invoke-static {v0, v13}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+    move-object/from16 v0, p20
 
     .line 954
     invoke-static/range {p5 .. p6}, Landroidx/compose/ui/unit/TextUnitKt;->isUnspecified--R2X_6o(J)Z
 
-    move-result v13
+    move-result v16
 
-    xor-int/lit8 v13, v13, 0x1
+    xor-int/lit8 v16, v16, 0x1
 
-    if-eqz v13, :cond_4
+    if-eqz v16, :cond_1
 
-    .line 891
+    .line 890
     invoke-virtual/range {p0 .. p0}, Landroidx/compose/ui/text/SpanStyle;->getFontSize-XSAIIZE()J
 
     move-result-wide v13
@@ -205,27 +203,29 @@
 
     if-eqz v13, :cond_0
 
-    goto :goto_0
+    goto :goto_3
 
     :cond_0
+    move-object/from16 v0, p0
+
     move-object/from16 v13, p15
 
+    :goto_0
+    move-wide/from16 v14, p17
+
+    :goto_1
+    move-object/from16 v11, p21
+
+    :goto_2
+    move-object/from16 v12, p22
+
+    goto/16 :goto_8
+
     :cond_1
-    move-object/from16 v11, p20
-
-    :cond_2
-    move-object/from16 v12, p21
-
-    :cond_3
-    move-object/from16 v14, p22
-
-    goto/16 :goto_2
-
-    :cond_4
     move-wide/from16 v11, p5
 
-    :goto_0
-    if-nez v3, :cond_5
+    :goto_3
+    if-nez v3, :cond_2
 
     .line 955
     sget-object v13, Landroidx/compose/ui/graphics/Color;->Companion:Landroidx/compose/ui/graphics/Color$Companion;
@@ -236,9 +236,9 @@
 
     cmp-long v13, v1, v13
 
-    if-eqz v13, :cond_5
+    if-eqz v13, :cond_2
 
-    .line 892
+    .line 891
     invoke-virtual/range {p0 .. p0}, Landroidx/compose/ui/text/SpanStyle;->getTextForegroundStyle$ui_text_release()Landroidx/compose/ui/text/style/TextForegroundStyle;
 
     move-result-object v13
@@ -253,10 +253,10 @@
 
     if-eqz v13, :cond_0
 
-    :cond_5
-    if-eqz v6, :cond_6
+    :cond_2
+    if-eqz v6, :cond_3
 
-    .line 893
+    .line 892
     invoke-virtual/range {p0 .. p0}, Landroidx/compose/ui/text/SpanStyle;->getFontStyle-4Lr2A7w()Landroidx/compose/ui/text/font/FontStyle;
 
     move-result-object v13
@@ -267,10 +267,10 @@
 
     if-eqz v13, :cond_0
 
-    :cond_6
-    if-eqz v5, :cond_7
+    :cond_3
+    if-eqz v5, :cond_4
 
-    .line 894
+    .line 893
     invoke-virtual/range {p0 .. p0}, Landroidx/compose/ui/text/SpanStyle;->getFontWeight()Landroidx/compose/ui/text/font/FontWeight;
 
     move-result-object v13
@@ -281,10 +281,10 @@
 
     if-eqz v13, :cond_0
 
-    :cond_7
-    if-eqz v8, :cond_8
+    :cond_4
+    if-eqz v8, :cond_5
 
-    .line 896
+    .line 895
     invoke-virtual/range {p0 .. p0}, Landroidx/compose/ui/text/SpanStyle;->getFontFamily()Landroidx/compose/ui/text/font/FontFamily;
 
     move-result-object v13
@@ -292,16 +292,16 @@
     if-ne v8, v13, :cond_0
 
     .line 956
-    :cond_8
+    :cond_5
     invoke-static/range {p12 .. p13}, Landroidx/compose/ui/unit/TextUnitKt;->isUnspecified--R2X_6o(J)Z
 
     move-result v13
 
     xor-int/lit8 v13, v13, 0x1
 
-    if-eqz v13, :cond_9
+    if-eqz v13, :cond_6
 
-    .line 897
+    .line 896
     invoke-virtual/range {p0 .. p0}, Landroidx/compose/ui/text/SpanStyle;->getLetterSpacing-XSAIIZE()J
 
     move-result-wide v13
@@ -314,15 +314,15 @@
 
     if-eqz v13, :cond_0
 
-    goto :goto_1
+    goto :goto_4
 
-    :cond_9
+    :cond_6
     move-wide/from16 v11, p12
 
-    :goto_1
-    if-eqz v15, :cond_a
+    :goto_4
+    if-eqz v15, :cond_7
 
-    .line 898
+    .line 897
     invoke-virtual/range {p0 .. p0}, Landroidx/compose/ui/text/SpanStyle;->getTextDecoration()Landroidx/compose/ui/text/style/TextDecoration;
 
     move-result-object v13
@@ -333,8 +333,8 @@
 
     if-eqz v13, :cond_0
 
-    .line 900
-    :cond_a
+    .line 899
+    :cond_7
     invoke-virtual/range {p0 .. p0}, Landroidx/compose/ui/text/SpanStyle;->getTextForegroundStyle$ui_text_release()Landroidx/compose/ui/text/style/TextForegroundStyle;
 
     move-result-object v13
@@ -349,9 +349,9 @@
 
     if-eqz v13, :cond_0
 
-    if-eqz v3, :cond_b
+    if-eqz v3, :cond_8
 
-    .line 901
+    .line 900
     invoke-virtual/range {p0 .. p0}, Landroidx/compose/ui/text/SpanStyle;->getTextForegroundStyle$ui_text_release()Landroidx/compose/ui/text/style/TextForegroundStyle;
 
     move-result-object v13
@@ -364,10 +364,10 @@
 
     if-nez v13, :cond_0
 
-    :cond_b
-    if-eqz v7, :cond_c
+    :cond_8
+    if-eqz v7, :cond_9
 
-    .line 902
+    .line 901
     invoke-virtual/range {p0 .. p0}, Landroidx/compose/ui/text/SpanStyle;->getFontSynthesis-ZQGJjVo()Landroidx/compose/ui/text/font/FontSynthesis;
 
     move-result-object v13
@@ -378,10 +378,10 @@
 
     if-eqz v13, :cond_0
 
-    :cond_c
-    if-eqz v9, :cond_d
+    :cond_9
+    if-eqz v9, :cond_a
 
-    .line 903
+    .line 902
     invoke-virtual/range {p0 .. p0}, Landroidx/compose/ui/text/SpanStyle;->getFontFeatureSettings()Ljava/lang/String;
 
     move-result-object v13
@@ -392,10 +392,10 @@
 
     if-eqz v13, :cond_0
 
-    :cond_d
-    if-eqz v10, :cond_e
+    :cond_a
+    if-eqz v10, :cond_b
 
-    .line 904
+    .line 903
     invoke-virtual/range {p0 .. p0}, Landroidx/compose/ui/text/SpanStyle;->getBaselineShift-5SSeXJ0()Landroidx/compose/ui/text/style/BaselineShift;
 
     move-result-object v13
@@ -406,12 +406,12 @@
 
     if-eqz v13, :cond_0
 
-    :cond_e
+    :cond_b
     move-object/from16 v13, p15
 
-    if-eqz v13, :cond_f
+    if-eqz v13, :cond_d
 
-    .line 905
+    .line 904
     invoke-virtual/range {p0 .. p0}, Landroidx/compose/ui/text/SpanStyle;->getTextGeometricTransform()Landroidx/compose/ui/text/style/TextGeometricTransform;
 
     move-result-object v14
@@ -420,14 +420,22 @@
 
     move-result v14
 
-    if-eqz v14, :cond_1
+    if-eqz v14, :cond_c
 
-    :cond_f
+    goto :goto_5
+
+    :cond_c
+    move-object/from16 v0, p0
+
+    goto/16 :goto_0
+
+    :cond_d
+    :goto_5
     move-object/from16 v14, p16
 
-    if-eqz v14, :cond_10
+    if-eqz v14, :cond_e
 
-    .line 906
+    .line 905
     invoke-virtual/range {p0 .. p0}, Landroidx/compose/ui/text/SpanStyle;->getLocaleList()Landroidx/compose/ui/text/intl/LocaleList;
 
     move-result-object v11
@@ -436,10 +444,10 @@
 
     move-result v11
 
-    if-eqz v11, :cond_1
+    if-eqz v11, :cond_c
 
     .line 957
-    :cond_10
+    :cond_e
     sget-object v11, Landroidx/compose/ui/graphics/Color;->Companion:Landroidx/compose/ui/graphics/Color$Companion;
 
     invoke-virtual {v11}, Landroidx/compose/ui/graphics/Color$Companion;->getUnspecified-0d7_KjU()J
@@ -450,9 +458,9 @@
 
     cmp-long v11, v14, v11
 
-    if-eqz v11, :cond_11
+    if-eqz v11, :cond_10
 
-    .line 907
+    .line 906
     invoke-virtual/range {p0 .. p0}, Landroidx/compose/ui/text/SpanStyle;->getBackground-0d7_KjU()J
 
     move-result-wide v11
@@ -461,15 +469,37 @@
 
     move-result v11
 
-    if-eqz v11, :cond_1
+    if-eqz v11, :cond_f
+
+    goto :goto_6
+
+    :cond_f
+    move-object/from16 v0, p0
+
+    goto/16 :goto_1
+
+    :cond_10
+    :goto_6
+    if-eqz v0, :cond_11
+
+    .line 907
+    invoke-virtual/range {p0 .. p0}, Landroidx/compose/ui/text/SpanStyle;->getShadow()Landroidx/compose/ui/graphics/Shadow;
+
+    move-result-object v11
+
+    invoke-static {v0, v11}, Lkotlin/jvm/internal/Intrinsics;->areEqual(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    move-result v11
+
+    if-eqz v11, :cond_f
 
     :cond_11
-    move-object/from16 v11, p20
+    move-object/from16 v11, p21
 
-    if-eqz v11, :cond_12
+    if-eqz v11, :cond_13
 
     .line 908
-    invoke-virtual/range {p0 .. p0}, Landroidx/compose/ui/text/SpanStyle;->getShadow()Landroidx/compose/ui/graphics/Shadow;
+    invoke-virtual/range {p0 .. p0}, Landroidx/compose/ui/text/SpanStyle;->getPlatformStyle()Landroidx/compose/ui/text/PlatformSpanStyle;
 
     move-result-object v12
 
@@ -477,58 +507,54 @@
 
     move-result v12
 
-    if-eqz v12, :cond_2
+    if-eqz v12, :cond_12
+
+    goto :goto_7
 
     :cond_12
-    move-object/from16 v12, p21
+    move-object/from16 v0, p0
 
-    if-eqz v12, :cond_13
-
-    .line 909
-    invoke-virtual/range {p0 .. p0}, Landroidx/compose/ui/text/SpanStyle;->getPlatformStyle()Landroidx/compose/ui/text/PlatformSpanStyle;
-
-    move-result-object v14
-
-    invoke-static {v12, v14}, Lkotlin/jvm/internal/Intrinsics;->areEqual(Ljava/lang/Object;Ljava/lang/Object;)Z
-
-    move-result v14
-
-    if-eqz v14, :cond_3
+    goto/16 :goto_2
 
     :cond_13
-    move-object/from16 v14, p22
+    :goto_7
+    move-object/from16 v12, p22
 
-    if-eqz v14, :cond_14
+    if-eqz v12, :cond_14
 
-    .line 910
+    .line 909
     invoke-virtual/range {p0 .. p0}, Landroidx/compose/ui/text/SpanStyle;->getDrawStyle()Landroidx/compose/ui/graphics/drawscope/DrawStyle;
 
-    move-result-object v15
+    move-result-object v0
 
-    invoke-static {v14, v15}, Lkotlin/jvm/internal/Intrinsics;->areEqual(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v12, v0}, Lkotlin/jvm/internal/Intrinsics;->areEqual(Ljava/lang/Object;Ljava/lang/Object;)Z
 
-    move-result v15
+    move-result v0
 
-    if-nez v15, :cond_14
+    if-nez v0, :cond_14
 
-    goto :goto_2
+    move-object/from16 v0, p0
+
+    goto :goto_8
 
     :cond_14
+    move-object/from16 v0, p0
+
     return-object v0
 
-    :goto_2
+    :goto_8
     if-eqz v3, :cond_15
 
-    .line 918
+    .line 917
     sget-object v1, Landroidx/compose/ui/text/style/TextForegroundStyle;->Companion:Landroidx/compose/ui/text/style/TextForegroundStyle$Companion;
 
     invoke-virtual {v1, v3, v4}, Landroidx/compose/ui/text/style/TextForegroundStyle$Companion;->from(Landroidx/compose/ui/graphics/Brush;F)Landroidx/compose/ui/text/style/TextForegroundStyle;
 
     move-result-object v1
 
-    goto :goto_3
+    goto :goto_9
 
-    .line 920
+    .line 919
     :cond_15
     sget-object v3, Landroidx/compose/ui/text/style/TextForegroundStyle;->Companion:Landroidx/compose/ui/text/style/TextForegroundStyle$Companion;
 
@@ -536,8 +562,8 @@
 
     move-result-object v1
 
-    .line 924
-    :goto_3
+    .line 923
+    :goto_9
     invoke-virtual/range {p0 .. p0}, Landroidx/compose/ui/text/SpanStyle;->getTextForegroundStyle$ui_text_release()Landroidx/compose/ui/text/style/TextForegroundStyle;
 
     move-result-object v2
@@ -548,18 +574,18 @@
 
     if-nez v8, :cond_16
 
-    .line 925
+    .line 924
     invoke-virtual/range {p0 .. p0}, Landroidx/compose/ui/text/SpanStyle;->getFontFamily()Landroidx/compose/ui/text/font/FontFamily;
 
     move-result-object v2
 
-    goto :goto_4
+    goto :goto_a
 
     :cond_16
     move-object v2, v8
 
-    .line 926
-    :goto_4
+    .line 925
+    :goto_a
     invoke-static/range {p5 .. p6}, Landroidx/compose/ui/unit/TextUnitKt;->isUnspecified--R2X_6o(J)Z
 
     move-result v3
@@ -568,17 +594,17 @@
 
     move-wide/from16 v3, p5
 
-    goto :goto_5
+    goto :goto_b
 
     :cond_17
     invoke-virtual/range {p0 .. p0}, Landroidx/compose/ui/text/SpanStyle;->getFontSize-XSAIIZE()J
 
     move-result-wide v3
 
-    :goto_5
+    :goto_b
     if-nez v5, :cond_18
 
-    .line 927
+    .line 926
     invoke-virtual/range {p0 .. p0}, Landroidx/compose/ui/text/SpanStyle;->getFontWeight()Landroidx/compose/ui/text/font/FontWeight;
 
     move-result-object v5
@@ -586,7 +612,7 @@
     :cond_18
     if-nez v6, :cond_19
 
-    .line 928
+    .line 927
     invoke-virtual/range {p0 .. p0}, Landroidx/compose/ui/text/SpanStyle;->getFontStyle-4Lr2A7w()Landroidx/compose/ui/text/font/FontStyle;
 
     move-result-object v6
@@ -594,7 +620,7 @@
     :cond_19
     if-nez v7, :cond_1a
 
-    .line 929
+    .line 928
     invoke-virtual/range {p0 .. p0}, Landroidx/compose/ui/text/SpanStyle;->getFontSynthesis-ZQGJjVo()Landroidx/compose/ui/text/font/FontSynthesis;
 
     move-result-object v7
@@ -602,14 +628,14 @@
     :cond_1a
     if-nez v9, :cond_1b
 
-    .line 930
+    .line 929
     invoke-virtual/range {p0 .. p0}, Landroidx/compose/ui/text/SpanStyle;->getFontFeatureSettings()Ljava/lang/String;
 
     move-result-object v8
 
     move-object v9, v8
 
-    .line 931
+    .line 930
     :cond_1b
     invoke-static/range {p12 .. p13}, Landroidx/compose/ui/unit/TextUnitKt;->isUnspecified--R2X_6o(J)Z
 
@@ -617,20 +643,20 @@
 
     if-nez v8, :cond_1c
 
-    move-wide/from16 v15, p12
+    move-wide/from16 v16, p12
 
-    goto :goto_6
+    goto :goto_c
 
-    .line 934
+    .line 933
     :cond_1c
     invoke-virtual/range {p0 .. p0}, Landroidx/compose/ui/text/SpanStyle;->getLetterSpacing-XSAIIZE()J
 
-    move-result-wide v15
+    move-result-wide v16
 
-    :goto_6
+    :goto_c
     if-nez v10, :cond_1d
 
-    .line 936
+    .line 935
     invoke-virtual/range {p0 .. p0}, Landroidx/compose/ui/text/SpanStyle;->getBaselineShift-5SSeXJ0()Landroidx/compose/ui/text/style/BaselineShift;
 
     move-result-object v8
@@ -640,7 +666,7 @@
     :cond_1d
     if-nez v13, :cond_1e
 
-    .line 937
+    .line 936
     invoke-virtual/range {p0 .. p0}, Landroidx/compose/ui/text/SpanStyle;->getTextGeometricTransform()Landroidx/compose/ui/text/style/TextGeometricTransform;
 
     move-result-object v8
@@ -650,75 +676,80 @@
     :cond_1e
     if-nez p16, :cond_1f
 
-    .line 938
+    .line 937
     invoke-virtual/range {p0 .. p0}, Landroidx/compose/ui/text/SpanStyle;->getLocaleList()Landroidx/compose/ui/text/intl/LocaleList;
 
     move-result-object v8
 
-    goto :goto_7
+    goto :goto_d
 
     :cond_1f
     move-object/from16 v8, p16
 
     .line 959
-    :goto_7
-    sget-object v17, Landroidx/compose/ui/graphics/Color;->Companion:Landroidx/compose/ui/graphics/Color$Companion;
+    :goto_d
+    sget-object v14, Landroidx/compose/ui/graphics/Color;->Companion:Landroidx/compose/ui/graphics/Color$Companion;
 
-    invoke-virtual/range {v17 .. v17}, Landroidx/compose/ui/graphics/Color$Companion;->getUnspecified-0d7_KjU()J
+    invoke-virtual {v14}, Landroidx/compose/ui/graphics/Color$Companion;->getUnspecified-0d7_KjU()J
 
-    move-result-wide v17
+    move-result-wide v14
 
-    cmp-long v17, p17, v17
+    cmp-long v14, p17, v14
 
-    if-eqz v17, :cond_20
+    if-eqz v14, :cond_20
 
-    move-wide/from16 v17, p17
+    move-wide/from16 v14, p17
 
-    goto :goto_8
+    goto :goto_e
 
-    .line 939
+    .line 938
     :cond_20
     invoke-virtual/range {p0 .. p0}, Landroidx/compose/ui/text/SpanStyle;->getBackground-0d7_KjU()J
 
-    move-result-wide v17
+    move-result-wide v14
 
-    :goto_8
+    :goto_e
     if-nez p19, :cond_21
 
-    .line 940
+    .line 939
     invoke-virtual/range {p0 .. p0}, Landroidx/compose/ui/text/SpanStyle;->getTextDecoration()Landroidx/compose/ui/text/style/TextDecoration;
+
+    move-result-object v18
+
+    goto :goto_f
+
+    :cond_21
+    move-object/from16 v18, p19
+
+    :goto_f
+    if-nez p20, :cond_22
+
+    .line 940
+    invoke-virtual/range {p0 .. p0}, Landroidx/compose/ui/text/SpanStyle;->getShadow()Landroidx/compose/ui/graphics/Shadow;
 
     move-result-object v19
 
-    goto :goto_9
+    goto :goto_10
 
-    :cond_21
-    move-object/from16 v19, p19
-
-    :goto_9
-    if-nez v11, :cond_22
+    :cond_22
+    move-object/from16 v19, p20
 
     .line 941
-    invoke-virtual/range {p0 .. p0}, Landroidx/compose/ui/text/SpanStyle;->getShadow()Landroidx/compose/ui/graphics/Shadow;
+    :goto_10
+    invoke-static {v0, v11}, Landroidx/compose/ui/text/SpanStyleKt;->mergePlatformStyle(Landroidx/compose/ui/text/SpanStyle;Landroidx/compose/ui/text/PlatformSpanStyle;)Landroidx/compose/ui/text/PlatformSpanStyle;
 
     move-result-object v11
 
+    if-nez v12, :cond_23
+
     .line 942
-    :cond_22
-    invoke-static {v0, v12}, Landroidx/compose/ui/text/SpanStyleKt;->mergePlatformStyle(Landroidx/compose/ui/text/SpanStyle;Landroidx/compose/ui/text/PlatformSpanStyle;)Landroidx/compose/ui/text/PlatformSpanStyle;
-
-    move-result-object v12
-
-    if-nez v14, :cond_23
-
-    .line 943
     invoke-virtual/range {p0 .. p0}, Landroidx/compose/ui/text/SpanStyle;->getDrawStyle()Landroidx/compose/ui/graphics/drawscope/DrawStyle;
 
     move-result-object v0
 
-    move-object v14, v0
+    move-object v12, v0
 
-    .line 923
+    .line 922
     :cond_23
     new-instance v0, Landroidx/compose/ui/text/SpanStyle;
 
@@ -742,7 +773,7 @@
 
     move-object/from16 p8, v9
 
-    move-wide/from16 p9, v15
+    move-wide/from16 p9, v16
 
     move-object/from16 p11, v10
 
@@ -750,15 +781,15 @@
 
     move-object/from16 p13, v8
 
-    move-wide/from16 p14, v17
+    move-wide/from16 p14, v14
 
-    move-object/from16 p16, v19
+    move-object/from16 p16, v18
 
-    move-object/from16 p17, v11
+    move-object/from16 p17, v19
 
-    move-object/from16 p18, v12
+    move-object/from16 p18, v11
 
-    move-object/from16 p19, v14
+    move-object/from16 p19, v12
 
     invoke-direct/range {p0 .. p20}, Landroidx/compose/ui/text/SpanStyle;-><init>(Landroidx/compose/ui/text/style/TextForegroundStyle;JLandroidx/compose/ui/text/font/FontWeight;Landroidx/compose/ui/text/font/FontStyle;Landroidx/compose/ui/text/font/FontSynthesis;Landroidx/compose/ui/text/font/FontFamily;Ljava/lang/String;JLandroidx/compose/ui/text/style/BaselineShift;Landroidx/compose/ui/text/style/TextGeometricTransform;Landroidx/compose/ui/text/intl/LocaleList;JLandroidx/compose/ui/text/style/TextDecoration;Landroidx/compose/ui/graphics/Shadow;Landroidx/compose/ui/text/PlatformSpanStyle;Landroidx/compose/ui/graphics/drawscope/DrawStyle;Lkotlin/jvm/internal/DefaultConstructorMarker;)V
 
@@ -766,21 +797,9 @@
 .end method
 
 .method public static final lerp(Landroidx/compose/ui/text/SpanStyle;Landroidx/compose/ui/text/SpanStyle;F)Landroidx/compose/ui/text/SpanStyle;
-    .locals 30
+    .locals 28
 
     move/from16 v0, p2
-
-    const-string/jumbo v1, "start"
-
-    move-object/from16 v2, p0
-
-    invoke-static {v2, v1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string/jumbo v1, "stop"
-
-    move-object/from16 v3, p1
-
-    invoke-static {v3, v1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 753
     invoke-virtual/range {p0 .. p0}, Landroidx/compose/ui/text/SpanStyle;->getTextForegroundStyle$ui_text_release()Landroidx/compose/ui/text/style/TextForegroundStyle;
@@ -789,11 +808,11 @@
 
     invoke-virtual/range {p1 .. p1}, Landroidx/compose/ui/text/SpanStyle;->getTextForegroundStyle$ui_text_release()Landroidx/compose/ui/text/style/TextForegroundStyle;
 
+    move-result-object v2
+
+    invoke-static {v1, v2, v0}, Landroidx/compose/ui/text/style/TextDrawStyleKt;->lerp(Landroidx/compose/ui/text/style/TextForegroundStyle;Landroidx/compose/ui/text/style/TextForegroundStyle;F)Landroidx/compose/ui/text/style/TextForegroundStyle;
+
     move-result-object v4
-
-    invoke-static {v1, v4, v0}, Landroidx/compose/ui/text/style/TextDrawStyleKt;->lerp(Landroidx/compose/ui/text/style/TextForegroundStyle;Landroidx/compose/ui/text/style/TextForegroundStyle;F)Landroidx/compose/ui/text/style/TextForegroundStyle;
-
-    move-result-object v6
 
     .line 755
     invoke-virtual/range {p0 .. p0}, Landroidx/compose/ui/text/SpanStyle;->getFontFamily()Landroidx/compose/ui/text/font/FontFamily;
@@ -803,29 +822,29 @@
     .line 756
     invoke-virtual/range {p1 .. p1}, Landroidx/compose/ui/text/SpanStyle;->getFontFamily()Landroidx/compose/ui/text/font/FontFamily;
 
-    move-result-object v4
+    move-result-object v2
 
     .line 754
-    invoke-static {v1, v4, v0}, Landroidx/compose/ui/text/SpanStyleKt;->lerpDiscrete(Ljava/lang/Object;Ljava/lang/Object;F)Ljava/lang/Object;
+    invoke-static {v1, v2, v0}, Landroidx/compose/ui/text/SpanStyleKt;->lerpDiscrete(Ljava/lang/Object;Ljava/lang/Object;F)Ljava/lang/Object;
 
     move-result-object v1
 
-    move-object v12, v1
+    move-object v10, v1
 
-    check-cast v12, Landroidx/compose/ui/text/font/FontFamily;
+    check-cast v10, Landroidx/compose/ui/text/font/FontFamily;
 
     .line 759
     invoke-virtual/range {p0 .. p0}, Landroidx/compose/ui/text/SpanStyle;->getFontSize-XSAIIZE()J
 
-    move-result-wide v4
+    move-result-wide v1
 
     invoke-virtual/range {p1 .. p1}, Landroidx/compose/ui/text/SpanStyle;->getFontSize-XSAIIZE()J
 
-    move-result-wide v7
+    move-result-wide v5
 
-    invoke-static {v4, v5, v7, v8, v0}, Landroidx/compose/ui/text/SpanStyleKt;->lerpTextUnitInheritable-C3pnCVY(JJF)J
+    invoke-static {v1, v2, v5, v6, v0}, Landroidx/compose/ui/text/SpanStyleKt;->lerpTextUnitInheritable-C3pnCVY(JJF)J
 
-    move-result-wide v7
+    move-result-wide v5
 
     .line 761
     invoke-virtual/range {p0 .. p0}, Landroidx/compose/ui/text/SpanStyle;->getFontWeight()Landroidx/compose/ui/text/font/FontWeight;
@@ -844,21 +863,21 @@
     :cond_0
     invoke-virtual/range {p1 .. p1}, Landroidx/compose/ui/text/SpanStyle;->getFontWeight()Landroidx/compose/ui/text/font/FontWeight;
 
-    move-result-object v4
+    move-result-object v2
 
-    if-nez v4, :cond_1
+    if-nez v2, :cond_1
 
-    sget-object v4, Landroidx/compose/ui/text/font/FontWeight;->Companion:Landroidx/compose/ui/text/font/FontWeight$Companion;
+    sget-object v2, Landroidx/compose/ui/text/font/FontWeight;->Companion:Landroidx/compose/ui/text/font/FontWeight$Companion;
 
-    invoke-virtual {v4}, Landroidx/compose/ui/text/font/FontWeight$Companion;->getNormal()Landroidx/compose/ui/text/font/FontWeight;
+    invoke-virtual {v2}, Landroidx/compose/ui/text/font/FontWeight$Companion;->getNormal()Landroidx/compose/ui/text/font/FontWeight;
 
-    move-result-object v4
+    move-result-object v2
 
     .line 760
     :cond_1
-    invoke-static {v1, v4, v0}, Landroidx/compose/ui/text/font/FontWeightKt;->lerp(Landroidx/compose/ui/text/font/FontWeight;Landroidx/compose/ui/text/font/FontWeight;F)Landroidx/compose/ui/text/font/FontWeight;
+    invoke-static {v1, v2, v0}, Landroidx/compose/ui/text/font/FontWeightKt;->lerp(Landroidx/compose/ui/text/font/FontWeight;Landroidx/compose/ui/text/font/FontWeight;F)Landroidx/compose/ui/text/font/FontWeight;
 
-    move-result-object v9
+    move-result-object v7
 
     .line 766
     invoke-virtual/range {p0 .. p0}, Landroidx/compose/ui/text/SpanStyle;->getFontStyle-4Lr2A7w()Landroidx/compose/ui/text/font/FontStyle;
@@ -868,16 +887,16 @@
     .line 767
     invoke-virtual/range {p1 .. p1}, Landroidx/compose/ui/text/SpanStyle;->getFontStyle-4Lr2A7w()Landroidx/compose/ui/text/font/FontStyle;
 
-    move-result-object v4
+    move-result-object v2
 
     .line 765
-    invoke-static {v1, v4, v0}, Landroidx/compose/ui/text/SpanStyleKt;->lerpDiscrete(Ljava/lang/Object;Ljava/lang/Object;F)Ljava/lang/Object;
+    invoke-static {v1, v2, v0}, Landroidx/compose/ui/text/SpanStyleKt;->lerpDiscrete(Ljava/lang/Object;Ljava/lang/Object;F)Ljava/lang/Object;
 
     move-result-object v1
 
-    move-object v10, v1
+    move-object v8, v1
 
-    check-cast v10, Landroidx/compose/ui/text/font/FontStyle;
+    check-cast v8, Landroidx/compose/ui/text/font/FontStyle;
 
     .line 771
     invoke-virtual/range {p0 .. p0}, Landroidx/compose/ui/text/SpanStyle;->getFontSynthesis-ZQGJjVo()Landroidx/compose/ui/text/font/FontSynthesis;
@@ -887,16 +906,16 @@
     .line 772
     invoke-virtual/range {p1 .. p1}, Landroidx/compose/ui/text/SpanStyle;->getFontSynthesis-ZQGJjVo()Landroidx/compose/ui/text/font/FontSynthesis;
 
-    move-result-object v4
+    move-result-object v2
 
     .line 770
-    invoke-static {v1, v4, v0}, Landroidx/compose/ui/text/SpanStyleKt;->lerpDiscrete(Ljava/lang/Object;Ljava/lang/Object;F)Ljava/lang/Object;
+    invoke-static {v1, v2, v0}, Landroidx/compose/ui/text/SpanStyleKt;->lerpDiscrete(Ljava/lang/Object;Ljava/lang/Object;F)Ljava/lang/Object;
 
     move-result-object v1
 
-    move-object v11, v1
+    move-object v9, v1
 
-    check-cast v11, Landroidx/compose/ui/text/font/FontSynthesis;
+    check-cast v9, Landroidx/compose/ui/text/font/FontSynthesis;
 
     .line 776
     invoke-virtual/range {p0 .. p0}, Landroidx/compose/ui/text/SpanStyle;->getFontFeatureSettings()Ljava/lang/String;
@@ -906,38 +925,38 @@
     .line 777
     invoke-virtual/range {p1 .. p1}, Landroidx/compose/ui/text/SpanStyle;->getFontFeatureSettings()Ljava/lang/String;
 
-    move-result-object v4
+    move-result-object v2
 
     .line 775
-    invoke-static {v1, v4, v0}, Landroidx/compose/ui/text/SpanStyleKt;->lerpDiscrete(Ljava/lang/Object;Ljava/lang/Object;F)Ljava/lang/Object;
+    invoke-static {v1, v2, v0}, Landroidx/compose/ui/text/SpanStyleKt;->lerpDiscrete(Ljava/lang/Object;Ljava/lang/Object;F)Ljava/lang/Object;
 
     move-result-object v1
 
-    move-object v13, v1
+    move-object v11, v1
 
-    check-cast v13, Ljava/lang/String;
+    check-cast v11, Ljava/lang/String;
 
     .line 781
     invoke-virtual/range {p0 .. p0}, Landroidx/compose/ui/text/SpanStyle;->getLetterSpacing-XSAIIZE()J
 
-    move-result-wide v4
+    move-result-wide v1
 
     .line 782
     invoke-virtual/range {p1 .. p1}, Landroidx/compose/ui/text/SpanStyle;->getLetterSpacing-XSAIIZE()J
 
-    move-result-wide v14
+    move-result-wide v12
 
     .line 780
-    invoke-static {v4, v5, v14, v15, v0}, Landroidx/compose/ui/text/SpanStyleKt;->lerpTextUnitInheritable-C3pnCVY(JJF)J
+    invoke-static {v1, v2, v12, v13, v0}, Landroidx/compose/ui/text/SpanStyleKt;->lerpTextUnitInheritable-C3pnCVY(JJF)J
 
-    move-result-wide v14
+    move-result-wide v12
 
     .line 786
     invoke-virtual/range {p0 .. p0}, Landroidx/compose/ui/text/SpanStyle;->getBaselineShift-5SSeXJ0()Landroidx/compose/ui/text/style/BaselineShift;
 
     move-result-object v1
 
-    const/4 v4, 0x0
+    const/4 v2, 0x0
 
     if-eqz v1, :cond_2
 
@@ -948,7 +967,7 @@
     goto :goto_0
 
     :cond_2
-    invoke-static {v4}, Landroidx/compose/ui/text/style/BaselineShift;->constructor-impl(F)F
+    invoke-static {v2}, Landroidx/compose/ui/text/style/BaselineShift;->constructor-impl(F)F
 
     move-result v1
 
@@ -956,91 +975,93 @@
     :goto_0
     invoke-virtual/range {p1 .. p1}, Landroidx/compose/ui/text/SpanStyle;->getBaselineShift-5SSeXJ0()Landroidx/compose/ui/text/style/BaselineShift;
 
-    move-result-object v5
+    move-result-object v3
 
-    if-eqz v5, :cond_3
+    if-eqz v3, :cond_3
 
-    invoke-virtual {v5}, Landroidx/compose/ui/text/style/BaselineShift;->unbox-impl()F
+    invoke-virtual {v3}, Landroidx/compose/ui/text/style/BaselineShift;->unbox-impl()F
 
-    move-result v4
+    move-result v2
 
     goto :goto_1
 
     :cond_3
-    invoke-static {v4}, Landroidx/compose/ui/text/style/BaselineShift;->constructor-impl(F)F
+    invoke-static {v2}, Landroidx/compose/ui/text/style/BaselineShift;->constructor-impl(F)F
 
-    move-result v4
+    move-result v2
 
     .line 785
     :goto_1
-    invoke-static {v1, v4, v0}, Landroidx/compose/ui/text/style/BaselineShiftKt;->lerp-jWV1Mfo(FFF)F
+    invoke-static {v1, v2, v0}, Landroidx/compose/ui/text/style/BaselineShiftKt;->lerp-jWV1Mfo(FFF)F
 
     move-result v1
 
     .line 791
     invoke-virtual/range {p0 .. p0}, Landroidx/compose/ui/text/SpanStyle;->getTextGeometricTransform()Landroidx/compose/ui/text/style/TextGeometricTransform;
 
-    move-result-object v4
+    move-result-object v2
 
-    if-nez v4, :cond_4
+    if-nez v2, :cond_4
 
-    sget-object v4, Landroidx/compose/ui/text/style/TextGeometricTransform;->Companion:Landroidx/compose/ui/text/style/TextGeometricTransform$Companion;
+    sget-object v2, Landroidx/compose/ui/text/style/TextGeometricTransform;->Companion:Landroidx/compose/ui/text/style/TextGeometricTransform$Companion;
 
-    invoke-virtual {v4}, Landroidx/compose/ui/text/style/TextGeometricTransform$Companion;->getNone$ui_text_release()Landroidx/compose/ui/text/style/TextGeometricTransform;
+    invoke-virtual {v2}, Landroidx/compose/ui/text/style/TextGeometricTransform$Companion;->getNone$ui_text_release()Landroidx/compose/ui/text/style/TextGeometricTransform;
 
-    move-result-object v4
+    move-result-object v2
 
     .line 792
     :cond_4
     invoke-virtual/range {p1 .. p1}, Landroidx/compose/ui/text/SpanStyle;->getTextGeometricTransform()Landroidx/compose/ui/text/style/TextGeometricTransform;
 
-    move-result-object v5
+    move-result-object v3
 
-    if-nez v5, :cond_5
+    if-nez v3, :cond_5
 
-    sget-object v5, Landroidx/compose/ui/text/style/TextGeometricTransform;->Companion:Landroidx/compose/ui/text/style/TextGeometricTransform$Companion;
+    sget-object v3, Landroidx/compose/ui/text/style/TextGeometricTransform;->Companion:Landroidx/compose/ui/text/style/TextGeometricTransform$Companion;
 
-    invoke-virtual {v5}, Landroidx/compose/ui/text/style/TextGeometricTransform$Companion;->getNone$ui_text_release()Landroidx/compose/ui/text/style/TextGeometricTransform;
+    invoke-virtual {v3}, Landroidx/compose/ui/text/style/TextGeometricTransform$Companion;->getNone$ui_text_release()Landroidx/compose/ui/text/style/TextGeometricTransform;
 
-    move-result-object v5
+    move-result-object v3
 
     .line 790
     :cond_5
-    invoke-static {v4, v5, v0}, Landroidx/compose/ui/text/style/TextGeometricTransformKt;->lerp(Landroidx/compose/ui/text/style/TextGeometricTransform;Landroidx/compose/ui/text/style/TextGeometricTransform;F)Landroidx/compose/ui/text/style/TextGeometricTransform;
+    invoke-static {v2, v3, v0}, Landroidx/compose/ui/text/style/TextGeometricTransformKt;->lerp(Landroidx/compose/ui/text/style/TextGeometricTransform;Landroidx/compose/ui/text/style/TextGeometricTransform;F)Landroidx/compose/ui/text/style/TextGeometricTransform;
 
-    move-result-object v17
+    move-result-object v15
 
     .line 795
     invoke-virtual/range {p0 .. p0}, Landroidx/compose/ui/text/SpanStyle;->getLocaleList()Landroidx/compose/ui/text/intl/LocaleList;
 
-    move-result-object v4
+    move-result-object v2
 
     invoke-virtual/range {p1 .. p1}, Landroidx/compose/ui/text/SpanStyle;->getLocaleList()Landroidx/compose/ui/text/intl/LocaleList;
 
-    move-result-object v5
+    move-result-object v3
 
-    invoke-static {v4, v5, v0}, Landroidx/compose/ui/text/SpanStyleKt;->lerpDiscrete(Ljava/lang/Object;Ljava/lang/Object;F)Ljava/lang/Object;
+    invoke-static {v2, v3, v0}, Landroidx/compose/ui/text/SpanStyleKt;->lerpDiscrete(Ljava/lang/Object;Ljava/lang/Object;F)Ljava/lang/Object;
 
-    move-result-object v4
+    move-result-object v2
 
-    move-object/from16 v18, v4
+    move-object/from16 v16, v2
 
-    check-cast v18, Landroidx/compose/ui/text/intl/LocaleList;
+    check-cast v16, Landroidx/compose/ui/text/intl/LocaleList;
 
     .line 797
     invoke-virtual/range {p0 .. p0}, Landroidx/compose/ui/text/SpanStyle;->getBackground-0d7_KjU()J
 
-    move-result-wide v4
+    move-result-wide v2
+
+    move-object/from16 v17, v15
 
     .line 798
     invoke-virtual/range {p1 .. p1}, Landroidx/compose/ui/text/SpanStyle;->getBackground-0d7_KjU()J
 
-    move-result-wide v2
+    move-result-wide v14
 
     .line 796
-    invoke-static {v4, v5, v2, v3, v0}, Landroidx/compose/ui/graphics/ColorKt;->lerp-jxsXWHM(JJF)J
+    invoke-static {v2, v3, v14, v15, v0}, Landroidx/compose/ui/graphics/ColorKt;->lerp-jxsXWHM(JJF)J
 
-    move-result-wide v19
+    move-result-wide v18
 
     .line 802
     invoke-virtual/range {p0 .. p0}, Landroidx/compose/ui/text/SpanStyle;->getTextDecoration()Landroidx/compose/ui/text/style/TextDecoration;
@@ -1057,109 +1078,113 @@
 
     move-result-object v2
 
-    move-object/from16 v21, v2
-
-    check-cast v21, Landroidx/compose/ui/text/style/TextDecoration;
+    check-cast v2, Landroidx/compose/ui/text/style/TextDecoration;
 
     .line 807
     invoke-virtual/range {p0 .. p0}, Landroidx/compose/ui/text/SpanStyle;->getShadow()Landroidx/compose/ui/graphics/Shadow;
 
-    move-result-object v2
+    move-result-object v3
 
-    if-nez v2, :cond_6
+    if-nez v3, :cond_6
 
-    new-instance v2, Landroidx/compose/ui/graphics/Shadow;
+    new-instance v3, Landroidx/compose/ui/graphics/Shadow;
 
-    const/16 v28, 0x7
-
-    const/16 v29, 0x0
-
-    const-wide/16 v23, 0x0
-
-    const-wide/16 v25, 0x0
+    const/16 v26, 0x7
 
     const/16 v27, 0x0
 
-    move-object/from16 v22, v2
+    const-wide/16 v21, 0x0
 
-    invoke-direct/range {v22 .. v29}, Landroidx/compose/ui/graphics/Shadow;-><init>(JJFILkotlin/jvm/internal/DefaultConstructorMarker;)V
+    const-wide/16 v23, 0x0
+
+    const/16 v25, 0x0
+
+    move-object/from16 v20, v3
+
+    invoke-direct/range {v20 .. v27}, Landroidx/compose/ui/graphics/Shadow;-><init>(JJFILkotlin/jvm/internal/DefaultConstructorMarker;)V
 
     .line 808
     :cond_6
     invoke-virtual/range {p1 .. p1}, Landroidx/compose/ui/text/SpanStyle;->getShadow()Landroidx/compose/ui/graphics/Shadow;
 
-    move-result-object v3
+    move-result-object v14
 
-    if-nez v3, :cond_7
+    if-nez v14, :cond_7
 
-    new-instance v3, Landroidx/compose/ui/graphics/Shadow;
+    new-instance v14, Landroidx/compose/ui/graphics/Shadow;
 
-    const/16 v28, 0x7
-
-    const/16 v29, 0x0
-
-    const-wide/16 v23, 0x0
-
-    const-wide/16 v25, 0x0
+    const/16 v26, 0x7
 
     const/16 v27, 0x0
 
-    move-object/from16 v22, v3
+    const-wide/16 v21, 0x0
 
-    invoke-direct/range {v22 .. v29}, Landroidx/compose/ui/graphics/Shadow;-><init>(JJFILkotlin/jvm/internal/DefaultConstructorMarker;)V
+    const-wide/16 v23, 0x0
+
+    const/16 v25, 0x0
+
+    move-object/from16 v20, v14
+
+    invoke-direct/range {v20 .. v27}, Landroidx/compose/ui/graphics/Shadow;-><init>(JJFILkotlin/jvm/internal/DefaultConstructorMarker;)V
 
     .line 806
     :cond_7
-    invoke-static {v2, v3, v0}, Landroidx/compose/ui/graphics/ShadowKt;->lerp(Landroidx/compose/ui/graphics/Shadow;Landroidx/compose/ui/graphics/Shadow;F)Landroidx/compose/ui/graphics/Shadow;
+    invoke-static {v3, v14, v0}, Landroidx/compose/ui/graphics/ShadowKt;->lerp(Landroidx/compose/ui/graphics/Shadow;Landroidx/compose/ui/graphics/Shadow;F)Landroidx/compose/ui/graphics/Shadow;
 
-    move-result-object v22
+    move-result-object v20
 
     .line 811
     invoke-virtual/range {p0 .. p0}, Landroidx/compose/ui/text/SpanStyle;->getPlatformStyle()Landroidx/compose/ui/text/PlatformSpanStyle;
 
-    move-result-object v2
+    move-result-object v3
 
     invoke-virtual/range {p1 .. p1}, Landroidx/compose/ui/text/SpanStyle;->getPlatformStyle()Landroidx/compose/ui/text/PlatformSpanStyle;
 
-    move-result-object v3
+    move-result-object v14
 
-    invoke-static {v2, v3, v0}, Landroidx/compose/ui/text/SpanStyleKt;->lerpPlatformStyle(Landroidx/compose/ui/text/PlatformSpanStyle;Landroidx/compose/ui/text/PlatformSpanStyle;F)Landroidx/compose/ui/text/PlatformSpanStyle;
+    invoke-static {v3, v14, v0}, Landroidx/compose/ui/text/SpanStyleKt;->lerpPlatformStyle(Landroidx/compose/ui/text/PlatformSpanStyle;Landroidx/compose/ui/text/PlatformSpanStyle;F)Landroidx/compose/ui/text/PlatformSpanStyle;
 
-    move-result-object v23
+    move-result-object v21
 
     .line 813
     invoke-virtual/range {p0 .. p0}, Landroidx/compose/ui/text/SpanStyle;->getDrawStyle()Landroidx/compose/ui/graphics/drawscope/DrawStyle;
 
-    move-result-object v2
+    move-result-object v3
 
     .line 814
     invoke-virtual/range {p1 .. p1}, Landroidx/compose/ui/text/SpanStyle;->getDrawStyle()Landroidx/compose/ui/graphics/drawscope/DrawStyle;
 
-    move-result-object v3
+    move-result-object v14
 
     .line 812
-    invoke-static {v2, v3, v0}, Landroidx/compose/ui/text/SpanStyleKt;->lerpDiscrete(Ljava/lang/Object;Ljava/lang/Object;F)Ljava/lang/Object;
+    invoke-static {v3, v14, v0}, Landroidx/compose/ui/text/SpanStyleKt;->lerpDiscrete(Ljava/lang/Object;Ljava/lang/Object;F)Ljava/lang/Object;
 
     move-result-object v0
 
-    move-object/from16 v24, v0
+    move-object/from16 v22, v0
 
-    check-cast v24, Landroidx/compose/ui/graphics/drawscope/DrawStyle;
+    check-cast v22, Landroidx/compose/ui/graphics/drawscope/DrawStyle;
 
     .line 752
     new-instance v0, Landroidx/compose/ui/text/SpanStyle;
 
-    move-object v5, v0
+    move-object v3, v0
 
     .line 785
     invoke-static {v1}, Landroidx/compose/ui/text/style/BaselineShift;->box-impl(F)Landroidx/compose/ui/text/style/BaselineShift;
 
-    move-result-object v16
+    move-result-object v14
 
-    const/16 v25, 0x0
+    const/16 v23, 0x0
+
+    move-object/from16 v15, v17
+
+    move-wide/from16 v17, v18
+
+    move-object/from16 v19, v2
 
     .line 752
-    invoke-direct/range {v5 .. v25}, Landroidx/compose/ui/text/SpanStyle;-><init>(Landroidx/compose/ui/text/style/TextForegroundStyle;JLandroidx/compose/ui/text/font/FontWeight;Landroidx/compose/ui/text/font/FontStyle;Landroidx/compose/ui/text/font/FontSynthesis;Landroidx/compose/ui/text/font/FontFamily;Ljava/lang/String;JLandroidx/compose/ui/text/style/BaselineShift;Landroidx/compose/ui/text/style/TextGeometricTransform;Landroidx/compose/ui/text/intl/LocaleList;JLandroidx/compose/ui/text/style/TextDecoration;Landroidx/compose/ui/graphics/Shadow;Landroidx/compose/ui/text/PlatformSpanStyle;Landroidx/compose/ui/graphics/drawscope/DrawStyle;Lkotlin/jvm/internal/DefaultConstructorMarker;)V
+    invoke-direct/range {v3 .. v23}, Landroidx/compose/ui/text/SpanStyle;-><init>(Landroidx/compose/ui/text/style/TextForegroundStyle;JLandroidx/compose/ui/text/font/FontWeight;Landroidx/compose/ui/text/font/FontStyle;Landroidx/compose/ui/text/font/FontSynthesis;Landroidx/compose/ui/text/font/FontFamily;Ljava/lang/String;JLandroidx/compose/ui/text/style/BaselineShift;Landroidx/compose/ui/text/style/TextGeometricTransform;Landroidx/compose/ui/text/intl/LocaleList;JLandroidx/compose/ui/text/style/TextDecoration;Landroidx/compose/ui/graphics/Shadow;Landroidx/compose/ui/text/PlatformSpanStyle;Landroidx/compose/ui/graphics/drawscope/DrawStyle;Lkotlin/jvm/internal/DefaultConstructorMarker;)V
 
     return-object v0
 .end method
@@ -1284,7 +1309,7 @@
 .method private static final mergePlatformStyle(Landroidx/compose/ui/text/SpanStyle;Landroidx/compose/ui/text/PlatformSpanStyle;)Landroidx/compose/ui/text/PlatformSpanStyle;
     .locals 1
 
-    .line 948
+    .line 947
     invoke-virtual {p0}, Landroidx/compose/ui/text/SpanStyle;->getPlatformStyle()Landroidx/compose/ui/text/PlatformSpanStyle;
 
     move-result-object v0
@@ -1296,14 +1321,14 @@
     :cond_0
     if-nez p1, :cond_1
 
-    .line 949
+    .line 948
     invoke-virtual {p0}, Landroidx/compose/ui/text/SpanStyle;->getPlatformStyle()Landroidx/compose/ui/text/PlatformSpanStyle;
 
     move-result-object p0
 
     return-object p0
 
-    .line 950
+    .line 949
     :cond_1
     invoke-virtual {p0}, Landroidx/compose/ui/text/SpanStyle;->getPlatformStyle()Landroidx/compose/ui/text/PlatformSpanStyle;
 
@@ -1317,49 +1342,43 @@
 .end method
 
 .method public static final resolveSpanStyleDefaults(Landroidx/compose/ui/text/SpanStyle;)Landroidx/compose/ui/text/SpanStyle;
-    .locals 24
-
-    const-string/jumbo v0, "style"
-
-    move-object/from16 v1, p0
-
-    invoke-static {v1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+    .locals 23
 
     .line 832
     invoke-virtual/range {p0 .. p0}, Landroidx/compose/ui/text/SpanStyle;->getTextForegroundStyle$ui_text_release()Landroidx/compose/ui/text/style/TextForegroundStyle;
 
     move-result-object v0
 
-    sget-object v2, Landroidx/compose/ui/text/SpanStyleKt$resolveSpanStyleDefaults$1;->INSTANCE:Landroidx/compose/ui/text/SpanStyleKt$resolveSpanStyleDefaults$1;
+    sget-object v1, Landroidx/compose/ui/text/SpanStyleKt$resolveSpanStyleDefaults$1;->INSTANCE:Landroidx/compose/ui/text/SpanStyleKt$resolveSpanStyleDefaults$1;
 
-    check-cast v2, Lkotlin/jvm/functions/Function0;
+    check-cast v1, Lkotlin/jvm/functions/Function0;
 
-    invoke-interface {v0, v2}, Landroidx/compose/ui/text/style/TextForegroundStyle;->takeOrElse(Lkotlin/jvm/functions/Function0;)Landroidx/compose/ui/text/style/TextForegroundStyle;
+    invoke-interface {v0, v1}, Landroidx/compose/ui/text/style/TextForegroundStyle;->takeOrElse(Lkotlin/jvm/functions/Function0;)Landroidx/compose/ui/text/style/TextForegroundStyle;
 
-    move-result-object v4
+    move-result-object v3
 
     .line 835
     invoke-virtual/range {p0 .. p0}, Landroidx/compose/ui/text/SpanStyle;->getFontSize-XSAIIZE()J
 
-    move-result-wide v2
+    move-result-wide v0
 
-    invoke-static {v2, v3}, Landroidx/compose/ui/unit/TextUnitKt;->isUnspecified--R2X_6o(J)Z
+    invoke-static {v0, v1}, Landroidx/compose/ui/unit/TextUnitKt;->isUnspecified--R2X_6o(J)Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
-    sget-wide v2, Landroidx/compose/ui/text/SpanStyleKt;->DefaultFontSize:J
+    sget-wide v0, Landroidx/compose/ui/text/SpanStyleKt;->DefaultFontSize:J
 
     goto :goto_0
 
     :cond_0
     invoke-virtual/range {p0 .. p0}, Landroidx/compose/ui/text/SpanStyle;->getFontSize-XSAIIZE()J
 
-    move-result-wide v2
+    move-result-wide v0
 
     :goto_0
-    move-wide v5, v2
+    move-wide v4, v0
 
     .line 836
     invoke-virtual/range {p0 .. p0}, Landroidx/compose/ui/text/SpanStyle;->getFontWeight()Landroidx/compose/ui/text/font/FontWeight;
@@ -1375,7 +1394,7 @@
     move-result-object v0
 
     :cond_1
-    move-object v7, v0
+    move-object v6, v0
 
     .line 837
     invoke-virtual/range {p0 .. p0}, Landroidx/compose/ui/text/SpanStyle;->getFontStyle-4Lr2A7w()Landroidx/compose/ui/text/font/FontStyle;
@@ -1400,7 +1419,7 @@
     :goto_1
     invoke-static {v0}, Landroidx/compose/ui/text/font/FontStyle;->box-impl(I)Landroidx/compose/ui/text/font/FontStyle;
 
-    move-result-object v8
+    move-result-object v7
 
     .line 838
     invoke-virtual/range {p0 .. p0}, Landroidx/compose/ui/text/SpanStyle;->getFontSynthesis-ZQGJjVo()Landroidx/compose/ui/text/font/FontSynthesis;
@@ -1425,7 +1444,7 @@
     :goto_2
     invoke-static {v0}, Landroidx/compose/ui/text/font/FontSynthesis;->box-impl(I)Landroidx/compose/ui/text/font/FontSynthesis;
 
-    move-result-object v9
+    move-result-object v8
 
     .line 839
     invoke-virtual/range {p0 .. p0}, Landroidx/compose/ui/text/SpanStyle;->getFontFamily()Landroidx/compose/ui/text/font/FontFamily;
@@ -1443,7 +1462,7 @@
     check-cast v0, Landroidx/compose/ui/text/font/FontFamily;
 
     :cond_4
-    move-object v10, v0
+    move-object v9, v0
 
     .line 840
     invoke-virtual/range {p0 .. p0}, Landroidx/compose/ui/text/SpanStyle;->getFontFeatureSettings()Ljava/lang/String;
@@ -1455,21 +1474,21 @@
     const-string v0, ""
 
     :cond_5
-    move-object v11, v0
+    move-object v10, v0
 
     .line 841
     invoke-virtual/range {p0 .. p0}, Landroidx/compose/ui/text/SpanStyle;->getLetterSpacing-XSAIIZE()J
 
-    move-result-wide v2
+    move-result-wide v0
 
-    invoke-static {v2, v3}, Landroidx/compose/ui/unit/TextUnitKt;->isUnspecified--R2X_6o(J)Z
+    invoke-static {v0, v1}, Landroidx/compose/ui/unit/TextUnitKt;->isUnspecified--R2X_6o(J)Z
 
     move-result v0
 
     if-eqz v0, :cond_6
 
     .line 842
-    sget-wide v2, Landroidx/compose/ui/text/SpanStyleKt;->DefaultLetterSpacing:J
+    sget-wide v0, Landroidx/compose/ui/text/SpanStyleKt;->DefaultLetterSpacing:J
 
     goto :goto_3
 
@@ -1477,10 +1496,10 @@
     :cond_6
     invoke-virtual/range {p0 .. p0}, Landroidx/compose/ui/text/SpanStyle;->getLetterSpacing-XSAIIZE()J
 
-    move-result-wide v2
+    move-result-wide v0
 
     :goto_3
-    move-wide v12, v2
+    move-wide v11, v0
 
     .line 846
     invoke-virtual/range {p0 .. p0}, Landroidx/compose/ui/text/SpanStyle;->getBaselineShift-5SSeXJ0()Landroidx/compose/ui/text/style/BaselineShift;
@@ -1505,7 +1524,7 @@
     :goto_4
     invoke-static {v0}, Landroidx/compose/ui/text/style/BaselineShift;->box-impl(F)Landroidx/compose/ui/text/style/BaselineShift;
 
-    move-result-object v14
+    move-result-object v13
 
     .line 847
     invoke-virtual/range {p0 .. p0}, Landroidx/compose/ui/text/SpanStyle;->getTextGeometricTransform()Landroidx/compose/ui/text/style/TextGeometricTransform;
@@ -1521,7 +1540,7 @@
     move-result-object v0
 
     :cond_8
-    move-object v15, v0
+    move-object v14, v0
 
     .line 848
     invoke-virtual/range {p0 .. p0}, Landroidx/compose/ui/text/SpanStyle;->getLocaleList()Landroidx/compose/ui/text/intl/LocaleList;
@@ -1537,32 +1556,32 @@
     move-result-object v0
 
     :cond_9
-    move-object/from16 v16, v0
+    move-object v15, v0
 
     .line 849
     invoke-virtual/range {p0 .. p0}, Landroidx/compose/ui/text/SpanStyle;->getBackground-0d7_KjU()J
 
-    move-result-wide v2
+    move-result-wide v0
 
     .line 953
-    sget-object v0, Landroidx/compose/ui/graphics/Color;->Companion:Landroidx/compose/ui/graphics/Color$Companion;
+    sget-object v2, Landroidx/compose/ui/graphics/Color;->Companion:Landroidx/compose/ui/graphics/Color$Companion;
 
-    invoke-virtual {v0}, Landroidx/compose/ui/graphics/Color$Companion;->getUnspecified-0d7_KjU()J
+    invoke-virtual {v2}, Landroidx/compose/ui/graphics/Color$Companion;->getUnspecified-0d7_KjU()J
 
-    move-result-wide v17
+    move-result-wide v16
 
-    cmp-long v0, v2, v17
+    cmp-long v2, v0, v16
 
-    if-eqz v0, :cond_a
+    if-eqz v2, :cond_a
 
     goto :goto_5
 
     .line 849
     :cond_a
-    sget-wide v2, Landroidx/compose/ui/text/SpanStyleKt;->DefaultBackgroundColor:J
+    sget-wide v0, Landroidx/compose/ui/text/SpanStyleKt;->DefaultBackgroundColor:J
 
     :goto_5
-    move-wide/from16 v17, v2
+    move-wide/from16 v16, v0
 
     .line 850
     invoke-virtual/range {p0 .. p0}, Landroidx/compose/ui/text/SpanStyle;->getTextDecoration()Landroidx/compose/ui/text/style/TextDecoration;
@@ -1578,7 +1597,7 @@
     move-result-object v0
 
     :cond_b
-    move-object/from16 v19, v0
+    move-object/from16 v18, v0
 
     .line 851
     invoke-virtual/range {p0 .. p0}, Landroidx/compose/ui/text/SpanStyle;->getShadow()Landroidx/compose/ui/graphics/Shadow;
@@ -1594,12 +1613,12 @@
     move-result-object v0
 
     :cond_c
-    move-object/from16 v20, v0
+    move-object/from16 v19, v0
 
     .line 852
     invoke-virtual/range {p0 .. p0}, Landroidx/compose/ui/text/SpanStyle;->getPlatformStyle()Landroidx/compose/ui/text/PlatformSpanStyle;
 
-    move-result-object v21
+    move-result-object v20
 
     .line 853
     invoke-virtual/range {p0 .. p0}, Landroidx/compose/ui/text/SpanStyle;->getDrawStyle()Landroidx/compose/ui/graphics/drawscope/DrawStyle;
@@ -1613,16 +1632,16 @@
     check-cast v0, Landroidx/compose/ui/graphics/drawscope/DrawStyle;
 
     :cond_d
-    move-object/from16 v22, v0
+    move-object/from16 v21, v0
 
     .line 831
     new-instance v0, Landroidx/compose/ui/text/SpanStyle;
 
-    move-object v3, v0
+    move-object v2, v0
 
-    const/16 v23, 0x0
+    const/16 v22, 0x0
 
-    invoke-direct/range {v3 .. v23}, Landroidx/compose/ui/text/SpanStyle;-><init>(Landroidx/compose/ui/text/style/TextForegroundStyle;JLandroidx/compose/ui/text/font/FontWeight;Landroidx/compose/ui/text/font/FontStyle;Landroidx/compose/ui/text/font/FontSynthesis;Landroidx/compose/ui/text/font/FontFamily;Ljava/lang/String;JLandroidx/compose/ui/text/style/BaselineShift;Landroidx/compose/ui/text/style/TextGeometricTransform;Landroidx/compose/ui/text/intl/LocaleList;JLandroidx/compose/ui/text/style/TextDecoration;Landroidx/compose/ui/graphics/Shadow;Landroidx/compose/ui/text/PlatformSpanStyle;Landroidx/compose/ui/graphics/drawscope/DrawStyle;Lkotlin/jvm/internal/DefaultConstructorMarker;)V
+    invoke-direct/range {v2 .. v22}, Landroidx/compose/ui/text/SpanStyle;-><init>(Landroidx/compose/ui/text/style/TextForegroundStyle;JLandroidx/compose/ui/text/font/FontWeight;Landroidx/compose/ui/text/font/FontStyle;Landroidx/compose/ui/text/font/FontSynthesis;Landroidx/compose/ui/text/font/FontFamily;Ljava/lang/String;JLandroidx/compose/ui/text/style/BaselineShift;Landroidx/compose/ui/text/style/TextGeometricTransform;Landroidx/compose/ui/text/intl/LocaleList;JLandroidx/compose/ui/text/style/TextDecoration;Landroidx/compose/ui/graphics/Shadow;Landroidx/compose/ui/text/PlatformSpanStyle;Landroidx/compose/ui/graphics/drawscope/DrawStyle;Lkotlin/jvm/internal/DefaultConstructorMarker;)V
 
     return-object v0
 .end method

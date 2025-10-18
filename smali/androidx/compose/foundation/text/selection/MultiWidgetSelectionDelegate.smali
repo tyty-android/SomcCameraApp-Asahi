@@ -7,13 +7,9 @@
 
 
 # annotations
-.annotation system Ldalvik/annotation/SourceDebugExtension;
-    value = "SMAP\nMultiWidgetSelectionDelegate.kt\nKotlin\n*S Kotlin\n*F\n+ 1 MultiWidgetSelectionDelegate.kt\nandroidx/compose/foundation/text/selection/MultiWidgetSelectionDelegate\n+ 2 fake.kt\nkotlin/jvm/internal/FakeKt\n*L\n1#1,297:1\n1#2:298\n*E\n"
-.end annotation
-
 .annotation runtime Lkotlin/Metadata;
     d1 = {
-        "\u0000d\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\t\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0010\u0008\n\u0002\u0008\u0007\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000b\n\u0002\u0008\u0004\n\u0002\u0018\u0002\n\u0002\u0008\u0004\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0005\n\u0002\u0018\u0002\n\u0002\u0008\u0004\u0008\u0000\u0018\u00002\u00020\u0001B-\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\u000e\u0010\u0004\u001a\n\u0012\u0006\u0012\u0004\u0018\u00010\u00060\u0005\u0012\u000e\u0010\u0007\u001a\n\u0012\u0006\u0012\u0004\u0018\u00010\u00080\u0005\u00a2\u0006\u0002\u0010\tJ\u0010\u0010\u0012\u001a\u00020\u00132\u0006\u0010\u0014\u001a\u00020\u000bH\u0016J(\u0010\u0015\u001a\u00020\u00162\u0006\u0010\u0017\u001a\u00020\u00182\u0006\u0010\u0019\u001a\u00020\u001aH\u0016\u00f8\u0001\u0000\u00f8\u0001\u0001\u00f8\u0001\u0002\u00a2\u0006\u0004\u0008\u001b\u0010\u001cJ\u0008\u0010\u0010\u001a\u00020\u000bH\u0016J\n\u0010\u001d\u001a\u0004\u0018\u00010\u0006H\u0016J \u0010\u001e\u001a\u00020\u001f2\u0006\u0010\u0014\u001a\u00020\u000bH\u0016\u00f8\u0001\u0000\u00f8\u0001\u0001\u00f8\u0001\u0002\u00a2\u0006\u0004\u0008 \u0010!J\n\u0010\"\u001a\u0004\u0018\u00010\u0018H\u0016J\u0008\u0010#\u001a\u00020$H\u0016J_\u0010%\u001a\u0010\u0012\u0006\u0012\u0004\u0018\u00010\u0018\u0012\u0004\u0012\u00020\u001a0&2\u0006\u0010\'\u001a\u00020\u00162\u0006\u0010(\u001a\u00020\u00162\u0008\u0010)\u001a\u0004\u0018\u00010\u00162\u0006\u0010\u0019\u001a\u00020\u001a2\u0006\u0010*\u001a\u00020\u00062\u0006\u0010+\u001a\u00020,2\u0008\u0010-\u001a\u0004\u0018\u00010\u0018H\u0016\u00f8\u0001\u0001\u00f8\u0001\u0002\u00a2\u0006\u0004\u0008.\u0010/R\u000e\u0010\n\u001a\u00020\u000bX\u0082\u000e\u00a2\u0006\u0002\n\u0000R\u0010\u0010\u000c\u001a\u0004\u0018\u00010\u0008X\u0082\u000e\u00a2\u0006\u0002\n\u0000R\u0016\u0010\u0004\u001a\n\u0012\u0006\u0012\u0004\u0018\u00010\u00060\u0005X\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u0016\u0010\u0007\u001a\n\u0012\u0006\u0012\u0004\u0018\u00010\u00080\u0005X\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u0014\u0010\u0002\u001a\u00020\u0003X\u0096\u0004\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\r\u0010\u000eR\u0018\u0010\u000f\u001a\u00020\u000b*\u00020\u00088BX\u0082\u0004\u00a2\u0006\u0006\u001a\u0004\u0008\u0010\u0010\u0011\u0082\u0002\u000f\n\u0002\u0008!\n\u0005\u0008\u00a1\u001e0\u0001\n\u0002\u0008\u0019\u00a8\u00060"
+        "\u0000f\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\t\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0010\u0008\n\u0002\u0008\u0007\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0010\u0007\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000b\n\u0002\u0008\u0006\n\u0002\u0018\u0002\n\u0002\u0008\u0004\n\u0002\u0018\u0002\n\u0000\u0008\u0000\u0018\u00002\u00020\u0001B-\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\u000e\u0010\u0004\u001a\n\u0012\u0006\u0012\u0004\u0018\u00010\u00060\u0005\u0012\u000e\u0010\u0007\u001a\n\u0012\u0006\u0012\u0004\u0018\u00010\u00080\u0005\u00a2\u0006\u0002\u0010\tJ\u0010\u0010\u0012\u001a\u00020\u00132\u0006\u0010\u0014\u001a\u00020\u0015H\u0016J\u0010\u0010\u0016\u001a\u00020\u00172\u0006\u0010\u0018\u001a\u00020\u000bH\u0016J\u0010\u0010\u0019\u001a\u00020\u001a2\u0006\u0010\u0018\u001a\u00020\u000bH\u0016J%\u0010\u001b\u001a\u00020\u001c2\u0006\u0010\u001d\u001a\u00020\u001e2\u0006\u0010\u001f\u001a\u00020 H\u0016\u00f8\u0001\u0000\u00f8\u0001\u0001\u00a2\u0006\u0004\u0008!\u0010\"J\u0008\u0010\u0010\u001a\u00020\u000bH\u0016J\n\u0010#\u001a\u0004\u0018\u00010\u0006H\u0016J\u0010\u0010$\u001a\u00020\u001a2\u0006\u0010\u0018\u001a\u00020\u000bH\u0016J\u0010\u0010%\u001a\u00020\u001a2\u0006\u0010\u0018\u001a\u00020\u000bH\u0016J\u001d\u0010&\u001a\u00020\'2\u0006\u0010\u0018\u001a\u00020\u000bH\u0016\u00f8\u0001\u0000\u00f8\u0001\u0001\u00a2\u0006\u0004\u0008(\u0010)J\n\u0010*\u001a\u0004\u0018\u00010\u001eH\u0016J\u0008\u0010+\u001a\u00020,H\u0016R\u000e\u0010\n\u001a\u00020\u000bX\u0082\u000e\u00a2\u0006\u0002\n\u0000R\u0010\u0010\u000c\u001a\u0004\u0018\u00010\u0008X\u0082\u000e\u00a2\u0006\u0002\n\u0000R\u0016\u0010\u0004\u001a\n\u0012\u0006\u0012\u0004\u0018\u00010\u00060\u0005X\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u0016\u0010\u0007\u001a\n\u0012\u0006\u0012\u0004\u0018\u00010\u00080\u0005X\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u0014\u0010\u0002\u001a\u00020\u0003X\u0096\u0004\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\r\u0010\u000eR\u0018\u0010\u000f\u001a\u00020\u000b*\u00020\u00088BX\u0082\u0004\u00a2\u0006\u0006\u001a\u0004\u0008\u0010\u0010\u0011\u0082\u0002\u000b\n\u0002\u0008!\n\u0005\u0008\u00a1\u001e0\u0001\u00a8\u0006-"
     }
     d2 = {
         "Landroidx/compose/foundation/text/selection/MultiWidgetSelectionDelegate;",
@@ -34,9 +30,15 @@
         "lastVisibleOffset",
         "getLastVisibleOffset",
         "(Landroidx/compose/ui/text/TextLayoutResult;)I",
+        "appendSelectableInfoToBuilder",
+        "",
+        "builder",
+        "Landroidx/compose/foundation/text/selection/SelectionLayoutBuilder;",
         "getBoundingBox",
         "Landroidx/compose/ui/geometry/Rect;",
         "offset",
+        "getCenterYForOffset",
+        "",
         "getHandlePosition",
         "Landroidx/compose/ui/geometry/Offset;",
         "selection",
@@ -46,6 +48,8 @@
         "getHandlePosition-dBAh8RU",
         "(Landroidx/compose/foundation/text/selection/Selection;Z)J",
         "getLayoutCoordinates",
+        "getLineLeft",
+        "getLineRight",
         "getRangeOfLineContaining",
         "Landroidx/compose/ui/text/TextRange;",
         "getRangeOfLineContaining--jx7JFs",
@@ -53,17 +57,6 @@
         "getSelectAllSelection",
         "getText",
         "Landroidx/compose/ui/text/AnnotatedString;",
-        "updateSelection",
-        "Lkotlin/Pair;",
-        "startHandlePosition",
-        "endHandlePosition",
-        "previousHandlePosition",
-        "containerLayoutCoordinates",
-        "adjustment",
-        "Landroidx/compose/foundation/text/selection/SelectionAdjustment;",
-        "previousSelection",
-        "updateSelection-qCDeeow",
-        "(JJLandroidx/compose/ui/geometry/Offset;ZLandroidx/compose/ui/layout/LayoutCoordinates;Landroidx/compose/foundation/text/selection/SelectionAdjustment;Landroidx/compose/foundation/text/selection/Selection;)Lkotlin/Pair;",
         "foundation_release"
     }
     k = 0x1
@@ -74,6 +67,10 @@
     }
     xi = 0x30
 .end annotation
+
+
+# static fields
+.field public static final $stable:I = 0x8
 
 
 # instance fields
@@ -105,8 +102,14 @@
 
 
 # direct methods
+.method static constructor <clinit>()V
+    .locals 0
+
+    return-void
+.end method
+
 .method public constructor <init>(JLkotlin/jvm/functions/Function0;Lkotlin/jvm/functions/Function0;)V
-    .locals 1
+    .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(J",
@@ -120,29 +123,21 @@
         }
     .end annotation
 
-    const-string v0, "coordinatesCallback"
-
-    invoke-static {p3, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string v0, "layoutResultCallback"
-
-    invoke-static {p4, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 27
+    .line 28
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 28
+    .line 29
     iput-wide p1, p0, Landroidx/compose/foundation/text/selection/MultiWidgetSelectionDelegate;->selectableId:J
 
-    .line 29
+    .line 30
     iput-object p3, p0, Landroidx/compose/foundation/text/selection/MultiWidgetSelectionDelegate;->coordinatesCallback:Lkotlin/jvm/functions/Function0;
 
-    .line 30
+    .line 31
     iput-object p4, p0, Landroidx/compose/foundation/text/selection/MultiWidgetSelectionDelegate;->layoutResultCallback:Lkotlin/jvm/functions/Function0;
 
     const/4 p1, -0x1
 
-    .line 36
+    .line 37
     iput p1, p0, Landroidx/compose/foundation/text/selection/MultiWidgetSelectionDelegate;->_previousLastVisibleOffset:I
 
     return-void
@@ -153,20 +148,20 @@
 
     monitor-enter p0
 
-    .line 48
+    .line 49
     :try_start_0
     iget-object v0, p0, Landroidx/compose/foundation/text/selection/MultiWidgetSelectionDelegate;->_previousTextLayoutResult:Landroidx/compose/ui/text/TextLayoutResult;
 
     if-eq v0, p1, :cond_3
 
-    .line 50
+    .line 51
     invoke-virtual {p1}, Landroidx/compose/ui/text/TextLayoutResult;->getDidOverflowHeight()Z
 
     move-result v0
 
     const/4 v1, 0x1
 
-    if-eqz v0, :cond_1
+    if-eqz v0, :cond_2
 
     invoke-virtual {p1}, Landroidx/compose/ui/text/TextLayoutResult;->getMultiParagraph()Landroidx/compose/ui/text/MultiParagraph;
 
@@ -180,7 +175,7 @@
 
     goto :goto_1
 
-    .line 52
+    .line 53
     :cond_0
     invoke-virtual {p1}, Landroidx/compose/ui/text/TextLayoutResult;->getSize-YbymL2g()J
 
@@ -196,7 +191,7 @@
 
     move-result v0
 
-    .line 53
+    .line 54
     invoke-virtual {p1}, Landroidx/compose/ui/text/TextLayoutResult;->getLineCount()I
 
     move-result v2
@@ -207,8 +202,10 @@
 
     move-result v0
 
-    .line 57
     :goto_0
+    if-ltz v0, :cond_1
+
+    .line 60
     invoke-virtual {p1, v0}, Landroidx/compose/ui/text/TextLayoutResult;->getLineTop(I)F
 
     move-result v2
@@ -225,14 +222,24 @@
 
     cmpl-float v2, v2, v3
 
-    if-ltz v2, :cond_2
+    if-ltz v2, :cond_1
 
     add-int/lit8 v0, v0, -0x1
 
     goto :goto_0
 
-    .line 50
     :cond_1
+    const/4 v2, 0x0
+
+    .line 62
+    invoke-static {v0, v2}, Lkotlin/ranges/RangesKt;->coerceAtLeast(II)I
+
+    move-result v0
+
+    goto :goto_2
+
+    .line 51
+    :cond_2
     :goto_1
     invoke-virtual {p1}, Landroidx/compose/ui/text/TextLayoutResult;->getLineCount()I
 
@@ -240,18 +247,18 @@
 
     sub-int/2addr v0, v1
 
-    .line 61
-    :cond_2
+    .line 65
+    :goto_2
     invoke-virtual {p1, v0, v1}, Landroidx/compose/ui/text/TextLayoutResult;->getLineEnd(IZ)I
 
     move-result v0
 
     iput v0, p0, Landroidx/compose/foundation/text/selection/MultiWidgetSelectionDelegate;->_previousLastVisibleOffset:I
 
-    .line 62
+    .line 66
     iput-object p1, p0, Landroidx/compose/foundation/text/selection/MultiWidgetSelectionDelegate;->_previousTextLayoutResult:Landroidx/compose/ui/text/TextLayoutResult;
 
-    .line 64
+    .line 68
     :cond_3
     iget p1, p0, Landroidx/compose/foundation/text/selection/MultiWidgetSelectionDelegate;->_previousLastVisibleOffset:I
     :try_end_0
@@ -271,10 +278,109 @@
 
 
 # virtual methods
+.method public appendSelectableInfoToBuilder(Landroidx/compose/foundation/text/selection/SelectionLayoutBuilder;)V
+    .locals 10
+
+    .line 72
+    invoke-virtual {p0}, Landroidx/compose/foundation/text/selection/MultiWidgetSelectionDelegate;->getLayoutCoordinates()Landroidx/compose/ui/layout/LayoutCoordinates;
+
+    move-result-object v0
+
+    if-nez v0, :cond_0
+
+    return-void
+
+    .line 73
+    :cond_0
+    iget-object v1, p0, Landroidx/compose/foundation/text/selection/MultiWidgetSelectionDelegate;->layoutResultCallback:Lkotlin/jvm/functions/Function0;
+
+    invoke-interface {v1}, Lkotlin/jvm/functions/Function0;->invoke()Ljava/lang/Object;
+
+    move-result-object v1
+
+    move-object v3, v1
+
+    check-cast v3, Landroidx/compose/ui/text/TextLayoutResult;
+
+    if-nez v3, :cond_1
+
+    return-void
+
+    .line 76
+    :cond_1
+    invoke-virtual {p1}, Landroidx/compose/foundation/text/selection/SelectionLayoutBuilder;->getContainerCoordinates()Landroidx/compose/ui/layout/LayoutCoordinates;
+
+    move-result-object v1
+
+    sget-object v2, Landroidx/compose/ui/geometry/Offset;->Companion:Landroidx/compose/ui/geometry/Offset$Companion;
+
+    invoke-virtual {v2}, Landroidx/compose/ui/geometry/Offset$Companion;->getZero-F1C5BW0()J
+
+    move-result-wide v4
+
+    invoke-interface {v1, v0, v4, v5}, Landroidx/compose/ui/layout/LayoutCoordinates;->localPositionOf-R5De75A(Landroidx/compose/ui/layout/LayoutCoordinates;J)J
+
+    move-result-wide v0
+
+    .line 77
+    invoke-virtual {p1}, Landroidx/compose/foundation/text/selection/SelectionLayoutBuilder;->getCurrentPosition-F1C5BW0()J
+
+    move-result-wide v4
+
+    invoke-static {v4, v5, v0, v1}, Landroidx/compose/ui/geometry/Offset;->minus-MK-Hz9U(JJ)J
+
+    move-result-wide v4
+
+    .line 78
+    invoke-virtual {p1}, Landroidx/compose/foundation/text/selection/SelectionLayoutBuilder;->getPreviousHandlePosition-F1C5BW0()J
+
+    move-result-wide v6
+
+    invoke-static {v6, v7}, Landroidx/compose/ui/geometry/OffsetKt;->isUnspecified-k-4lQ0M(J)Z
+
+    move-result v2
+
+    if-eqz v2, :cond_2
+
+    .line 79
+    sget-object v0, Landroidx/compose/ui/geometry/Offset;->Companion:Landroidx/compose/ui/geometry/Offset$Companion;
+
+    invoke-virtual {v0}, Landroidx/compose/ui/geometry/Offset$Companion;->getUnspecified-F1C5BW0()J
+
+    move-result-wide v0
+
+    goto :goto_0
+
+    .line 81
+    :cond_2
+    invoke-virtual {p1}, Landroidx/compose/foundation/text/selection/SelectionLayoutBuilder;->getPreviousHandlePosition-F1C5BW0()J
+
+    move-result-wide v6
+
+    invoke-static {v6, v7, v0, v1}, Landroidx/compose/ui/geometry/Offset;->minus-MK-Hz9U(JJ)J
+
+    move-result-wide v0
+
+    :goto_0
+    move-wide v6, v0
+
+    .line 88
+    invoke-virtual {p0}, Landroidx/compose/foundation/text/selection/MultiWidgetSelectionDelegate;->getSelectableId()J
+
+    move-result-wide v8
+
+    move-object v2, p1
+
+    .line 84
+    invoke-static/range {v2 .. v9}, Landroidx/compose/foundation/text/selection/MultiWidgetSelectionDelegateKt;->appendSelectableInfo-Parwq6A(Landroidx/compose/foundation/text/selection/SelectionLayoutBuilder;Landroidx/compose/ui/text/TextLayoutResult;JJJ)V
+
+    return-void
+.end method
+
 .method public getBoundingBox(I)Landroidx/compose/ui/geometry/Rect;
     .locals 3
 
-    .line 151
+    .line 145
     iget-object p0, p0, Landroidx/compose/foundation/text/selection/MultiWidgetSelectionDelegate;->layoutResultCallback:Lkotlin/jvm/functions/Function0;
 
     invoke-interface {p0}, Lkotlin/jvm/functions/Function0;->invoke()Ljava/lang/Object;
@@ -293,7 +399,7 @@
 
     return-object p0
 
-    .line 152
+    .line 146
     :cond_0
     invoke-virtual {p0}, Landroidx/compose/ui/text/TextLayoutResult;->getLayoutInput()Landroidx/compose/ui/text/TextLayoutInput;
 
@@ -311,7 +417,7 @@
 
     if-ge v0, v1, :cond_1
 
-    .line 153
+    .line 147
     sget-object p0, Landroidx/compose/ui/geometry/Rect;->Companion:Landroidx/compose/ui/geometry/Rect$Companion;
 
     invoke-virtual {p0}, Landroidx/compose/ui/geometry/Rect$Companion;->getZero()Landroidx/compose/ui/geometry/Rect;
@@ -325,12 +431,12 @@
 
     sub-int/2addr v0, v1
 
-    .line 155
+    .line 149
     invoke-static {p1, v2, v0}, Lkotlin/ranges/RangesKt;->coerceIn(III)I
 
     move-result p1
 
-    .line 154
+    .line 148
     invoke-virtual {p0, p1}, Landroidx/compose/ui/text/TextLayoutResult;->getBoundingBox(I)Landroidx/compose/ui/geometry/Rect;
 
     move-result-object p0
@@ -338,16 +444,69 @@
     return-object p0
 .end method
 
+.method public getCenterYForOffset(I)F
+    .locals 2
+
+    .line 168
+    iget-object p0, p0, Landroidx/compose/foundation/text/selection/MultiWidgetSelectionDelegate;->layoutResultCallback:Lkotlin/jvm/functions/Function0;
+
+    invoke-interface {p0}, Lkotlin/jvm/functions/Function0;->invoke()Ljava/lang/Object;
+
+    move-result-object p0
+
+    check-cast p0, Landroidx/compose/ui/text/TextLayoutResult;
+
+    const/high16 v0, -0x40800000    # -1.0f
+
+    if-nez p0, :cond_0
+
+    return v0
+
+    .line 169
+    :cond_0
+    invoke-virtual {p0, p1}, Landroidx/compose/ui/text/TextLayoutResult;->getLineForOffset(I)I
+
+    move-result p1
+
+    .line 170
+    invoke-virtual {p0}, Landroidx/compose/ui/text/TextLayoutResult;->getLineCount()I
+
+    move-result v1
+
+    if-lt p1, v1, :cond_1
+
+    return v0
+
+    .line 171
+    :cond_1
+    invoke-virtual {p0, p1}, Landroidx/compose/ui/text/TextLayoutResult;->getLineTop(I)F
+
+    move-result v0
+
+    .line 172
+    invoke-virtual {p0, p1}, Landroidx/compose/ui/text/TextLayoutResult;->getLineBottom(I)F
+
+    move-result p0
+
+    sub-float/2addr p0, v0
+
+    const/4 p1, 0x2
+
+    int-to-float p1, p1
+
+    div-float/2addr p0, p1
+
+    add-float/2addr p0, v0
+
+    return p0
+.end method
+
 .method public getHandlePosition-dBAh8RU(Landroidx/compose/foundation/text/selection/Selection;Z)J
     .locals 4
 
-    const-string v0, "selection"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
     if-eqz p2, :cond_0
 
-    .line 120
+    .line 114
     invoke-virtual {p1}, Landroidx/compose/foundation/text/selection/Selection;->getStart()Landroidx/compose/foundation/text/selection/Selection$AnchorInfo;
 
     move-result-object v0
@@ -367,7 +526,7 @@
     :cond_0
     if-nez p2, :cond_2
 
-    .line 121
+    .line 115
     invoke-virtual {p1}, Landroidx/compose/foundation/text/selection/Selection;->getEnd()Landroidx/compose/foundation/text/selection/Selection$AnchorInfo;
 
     move-result-object v0
@@ -384,17 +543,17 @@
 
     if-eqz v0, :cond_2
 
-    .line 123
+    .line 117
     :cond_1
     sget-object p0, Landroidx/compose/ui/geometry/Offset;->Companion:Landroidx/compose/ui/geometry/Offset$Companion;
 
-    invoke-virtual {p0}, Landroidx/compose/ui/geometry/Offset$Companion;->getZero-F1C5BW0()J
+    invoke-virtual {p0}, Landroidx/compose/ui/geometry/Offset$Companion;->getUnspecified-F1C5BW0()J
 
     move-result-wide p0
 
     return-wide p0
 
-    .line 126
+    .line 120
     :cond_2
     invoke-virtual {p0}, Landroidx/compose/foundation/text/selection/MultiWidgetSelectionDelegate;->getLayoutCoordinates()Landroidx/compose/ui/layout/LayoutCoordinates;
 
@@ -404,13 +563,13 @@
 
     sget-object p0, Landroidx/compose/ui/geometry/Offset;->Companion:Landroidx/compose/ui/geometry/Offset$Companion;
 
-    invoke-virtual {p0}, Landroidx/compose/ui/geometry/Offset$Companion;->getZero-F1C5BW0()J
+    invoke-virtual {p0}, Landroidx/compose/ui/geometry/Offset$Companion;->getUnspecified-F1C5BW0()J
 
     move-result-wide p0
 
     return-wide p0
 
-    .line 128
+    .line 122
     :cond_3
     iget-object v0, p0, Landroidx/compose/foundation/text/selection/MultiWidgetSelectionDelegate;->layoutResultCallback:Lkotlin/jvm/functions/Function0;
 
@@ -424,7 +583,7 @@
 
     sget-object p0, Landroidx/compose/ui/geometry/Offset;->Companion:Landroidx/compose/ui/geometry/Offset$Companion;
 
-    invoke-virtual {p0}, Landroidx/compose/ui/geometry/Offset$Companion;->getZero-F1C5BW0()J
+    invoke-virtual {p0}, Landroidx/compose/ui/geometry/Offset$Companion;->getUnspecified-F1C5BW0()J
 
     move-result-wide p0
 
@@ -433,7 +592,7 @@
     :cond_4
     if-eqz p2, :cond_5
 
-    .line 129
+    .line 123
     invoke-virtual {p1}, Landroidx/compose/foundation/text/selection/Selection;->getStart()Landroidx/compose/foundation/text/selection/Selection$AnchorInfo;
 
     move-result-object v1
@@ -452,7 +611,7 @@
 
     const/4 v2, 0x0
 
-    .line 130
+    .line 124
     invoke-direct {p0, v0}, Landroidx/compose/foundation/text/selection/MultiWidgetSelectionDelegate;->getLastVisibleOffset(Landroidx/compose/ui/text/TextLayoutResult;)I
 
     move-result p0
@@ -461,12 +620,12 @@
 
     move-result p0
 
-    .line 135
+    .line 129
     invoke-virtual {p1}, Landroidx/compose/foundation/text/selection/Selection;->getHandlesCrossed()Z
 
     move-result p1
 
-    .line 131
+    .line 125
     invoke-static {v0, p0, p2, p1}, Landroidx/compose/foundation/text/selection/TextSelectionDelegateKt;->getSelectionHandleCoordinates(Landroidx/compose/ui/text/TextLayoutResult;IZZ)J
 
     move-result-wide p0
@@ -477,7 +636,7 @@
 .method public getLastVisibleOffset()I
     .locals 1
 
-    .line 171
+    .line 188
     iget-object v0, p0, Landroidx/compose/foundation/text/selection/MultiWidgetSelectionDelegate;->layoutResultCallback:Lkotlin/jvm/functions/Function0;
 
     invoke-interface {v0}, Lkotlin/jvm/functions/Function0;->invoke()Ljava/lang/Object;
@@ -492,7 +651,7 @@
 
     return p0
 
-    .line 172
+    .line 189
     :cond_0
     invoke-direct {p0, v0}, Landroidx/compose/foundation/text/selection/MultiWidgetSelectionDelegate;->getLastVisibleOffset(Landroidx/compose/ui/text/TextLayoutResult;)I
 
@@ -504,7 +663,7 @@
 .method public getLayoutCoordinates()Landroidx/compose/ui/layout/LayoutCoordinates;
     .locals 1
 
-    .line 140
+    .line 134
     iget-object p0, p0, Landroidx/compose/foundation/text/selection/MultiWidgetSelectionDelegate;->coordinatesCallback:Lkotlin/jvm/functions/Function0;
 
     invoke-interface {p0}, Lkotlin/jvm/functions/Function0;->invoke()Ljava/lang/Object;
@@ -515,7 +674,7 @@
 
     if-eqz p0, :cond_1
 
-    .line 141
+    .line 135
     invoke-interface {p0}, Landroidx/compose/ui/layout/LayoutCoordinates;->isAttached()Z
 
     move-result v0
@@ -534,10 +693,94 @@
     return-object p0
 .end method
 
+.method public getLineLeft(I)F
+    .locals 2
+
+    .line 154
+    iget-object p0, p0, Landroidx/compose/foundation/text/selection/MultiWidgetSelectionDelegate;->layoutResultCallback:Lkotlin/jvm/functions/Function0;
+
+    invoke-interface {p0}, Lkotlin/jvm/functions/Function0;->invoke()Ljava/lang/Object;
+
+    move-result-object p0
+
+    check-cast p0, Landroidx/compose/ui/text/TextLayoutResult;
+
+    const/high16 v0, -0x40800000    # -1.0f
+
+    if-nez p0, :cond_0
+
+    return v0
+
+    .line 155
+    :cond_0
+    invoke-virtual {p0, p1}, Landroidx/compose/ui/text/TextLayoutResult;->getLineForOffset(I)I
+
+    move-result p1
+
+    .line 156
+    invoke-virtual {p0}, Landroidx/compose/ui/text/TextLayoutResult;->getLineCount()I
+
+    move-result v1
+
+    if-lt p1, v1, :cond_1
+
+    return v0
+
+    .line 157
+    :cond_1
+    invoke-virtual {p0, p1}, Landroidx/compose/ui/text/TextLayoutResult;->getLineLeft(I)F
+
+    move-result p0
+
+    return p0
+.end method
+
+.method public getLineRight(I)F
+    .locals 2
+
+    .line 161
+    iget-object p0, p0, Landroidx/compose/foundation/text/selection/MultiWidgetSelectionDelegate;->layoutResultCallback:Lkotlin/jvm/functions/Function0;
+
+    invoke-interface {p0}, Lkotlin/jvm/functions/Function0;->invoke()Ljava/lang/Object;
+
+    move-result-object p0
+
+    check-cast p0, Landroidx/compose/ui/text/TextLayoutResult;
+
+    const/high16 v0, -0x40800000    # -1.0f
+
+    if-nez p0, :cond_0
+
+    return v0
+
+    .line 162
+    :cond_0
+    invoke-virtual {p0, p1}, Landroidx/compose/ui/text/TextLayoutResult;->getLineForOffset(I)I
+
+    move-result p1
+
+    .line 163
+    invoke-virtual {p0}, Landroidx/compose/ui/text/TextLayoutResult;->getLineCount()I
+
+    move-result v1
+
+    if-lt p1, v1, :cond_1
+
+    return v0
+
+    .line 164
+    :cond_1
+    invoke-virtual {p0, p1}, Landroidx/compose/ui/text/TextLayoutResult;->getLineRight(I)F
+
+    move-result p0
+
+    return p0
+.end method
+
 .method public getRangeOfLineContaining--jx7JFs(I)J
     .locals 3
 
-    .line 160
+    .line 177
     iget-object v0, p0, Landroidx/compose/foundation/text/selection/MultiWidgetSelectionDelegate;->layoutResultCallback:Lkotlin/jvm/functions/Function0;
 
     invoke-interface {v0}, Lkotlin/jvm/functions/Function0;->invoke()Ljava/lang/Object;
@@ -556,7 +799,7 @@
 
     return-wide p0
 
-    .line 161
+    .line 178
     :cond_0
     invoke-direct {p0, v0}, Landroidx/compose/foundation/text/selection/MultiWidgetSelectionDelegate;->getLastVisibleOffset(Landroidx/compose/ui/text/TextLayoutResult;)I
 
@@ -566,7 +809,7 @@
 
     if-ge p0, v1, :cond_1
 
-    .line 162
+    .line 179
     sget-object p0, Landroidx/compose/ui/text/TextRange;->Companion:Landroidx/compose/ui/text/TextRange$Companion;
 
     invoke-virtual {p0}, Landroidx/compose/ui/text/TextRange$Companion;->getZero-d9O1mEE()J
@@ -580,7 +823,7 @@
 
     sub-int/2addr p0, v1
 
-    .line 163
+    .line 180
     invoke-static {p1, v2, p0}, Lkotlin/ranges/RangesKt;->coerceIn(III)I
 
     move-result p0
@@ -589,17 +832,17 @@
 
     move-result p0
 
-    .line 165
+    .line 182
     invoke-virtual {v0, p0}, Landroidx/compose/ui/text/TextLayoutResult;->getLineStart(I)I
 
     move-result p1
 
-    .line 166
+    .line 183
     invoke-virtual {v0, p0, v1}, Landroidx/compose/ui/text/TextLayoutResult;->getLineEnd(IZ)I
 
     move-result p0
 
-    .line 164
+    .line 181
     invoke-static {p1, p0}, Landroidx/compose/ui/text/TextRangeKt;->TextRange(II)J
 
     move-result-wide p0
@@ -608,64 +851,90 @@
 .end method
 
 .method public getSelectAllSelection()Landroidx/compose/foundation/text/selection/Selection;
-    .locals 7
+    .locals 8
 
-    .line 107
+    .line 93
     iget-object v0, p0, Landroidx/compose/foundation/text/selection/MultiWidgetSelectionDelegate;->layoutResultCallback:Lkotlin/jvm/functions/Function0;
 
     invoke-interface {v0}, Lkotlin/jvm/functions/Function0;->invoke()Ljava/lang/Object;
 
     move-result-object v0
 
-    move-object v6, v0
+    check-cast v0, Landroidx/compose/ui/text/TextLayoutResult;
 
-    check-cast v6, Landroidx/compose/ui/text/TextLayoutResult;
-
-    if-nez v6, :cond_0
+    if-nez v0, :cond_0
 
     const/4 p0, 0x0
 
     return-object p0
 
-    .line 108
+    .line 95
     :cond_0
-    invoke-virtual {v6}, Landroidx/compose/ui/text/TextLayoutResult;->getLayoutInput()Landroidx/compose/ui/text/TextLayoutInput;
+    invoke-virtual {v0}, Landroidx/compose/ui/text/TextLayoutResult;->getLayoutInput()Landroidx/compose/ui/text/TextLayoutInput;
 
-    move-result-object v0
+    move-result-object v1
 
-    invoke-virtual {v0}, Landroidx/compose/ui/text/TextLayoutInput;->getText()Landroidx/compose/ui/text/AnnotatedString;
+    invoke-virtual {v1}, Landroidx/compose/ui/text/TextLayoutInput;->getText()Landroidx/compose/ui/text/AnnotatedString;
 
-    move-result-object v0
+    move-result-object v1
 
-    invoke-virtual {v0}, Landroidx/compose/ui/text/AnnotatedString;->length()I
+    invoke-virtual {v1}, Landroidx/compose/ui/text/AnnotatedString;->length()I
 
-    move-result v0
+    move-result v1
 
-    const/4 v1, 0x0
+    .line 97
+    new-instance v2, Landroidx/compose/foundation/text/selection/Selection;
 
-    invoke-static {v1, v0}, Landroidx/compose/ui/text/TextRangeKt;->TextRange(II)J
+    .line 98
+    new-instance v3, Landroidx/compose/foundation/text/selection/Selection$AnchorInfo;
 
-    move-result-wide v1
+    const/4 v4, 0x0
 
-    const/4 v3, 0x0
+    .line 99
+    invoke-virtual {v0, v4}, Landroidx/compose/ui/text/TextLayoutResult;->getBidiRunDirection(I)Landroidx/compose/ui/text/style/ResolvedTextDirection;
 
-    .line 113
+    move-result-object v5
+
+    .line 101
     invoke-virtual {p0}, Landroidx/compose/foundation/text/selection/MultiWidgetSelectionDelegate;->getSelectableId()J
 
-    move-result-wide v4
+    move-result-wide v6
 
-    .line 110
-    invoke-static/range {v1 .. v6}, Landroidx/compose/foundation/text/selection/MultiWidgetSelectionDelegateKt;->access$getAssembledSelectionInfo-vJH6DeI(JZJLandroidx/compose/ui/text/TextLayoutResult;)Landroidx/compose/foundation/text/selection/Selection;
+    .line 98
+    invoke-direct {v3, v5, v4, v6, v7}, Landroidx/compose/foundation/text/selection/Selection$AnchorInfo;-><init>(Landroidx/compose/ui/text/style/ResolvedTextDirection;IJ)V
 
-    move-result-object p0
+    .line 103
+    new-instance v5, Landroidx/compose/foundation/text/selection/Selection$AnchorInfo;
 
-    return-object p0
+    add-int/lit8 v6, v1, -0x1
+
+    .line 104
+    invoke-static {v6, v4}, Ljava/lang/Math;->max(II)I
+
+    move-result v6
+
+    invoke-virtual {v0, v6}, Landroidx/compose/ui/text/TextLayoutResult;->getBidiRunDirection(I)Landroidx/compose/ui/text/style/ResolvedTextDirection;
+
+    move-result-object v0
+
+    .line 106
+    invoke-virtual {p0}, Landroidx/compose/foundation/text/selection/MultiWidgetSelectionDelegate;->getSelectableId()J
+
+    move-result-wide v6
+
+    .line 103
+    invoke-direct {v5, v0, v1, v6, v7}, Landroidx/compose/foundation/text/selection/Selection$AnchorInfo;-><init>(Landroidx/compose/ui/text/style/ResolvedTextDirection;IJ)V
+
+    .line 97
+    invoke-direct {v2, v3, v5, v4}, Landroidx/compose/foundation/text/selection/Selection;-><init>(Landroidx/compose/foundation/text/selection/Selection$AnchorInfo;Landroidx/compose/foundation/text/selection/Selection$AnchorInfo;Z)V
+
+    return-object v2
 .end method
 
 .method public getSelectableId()J
     .locals 2
 
-    .line 28
+    .line 29
     iget-wide v0, p0, Landroidx/compose/foundation/text/selection/MultiWidgetSelectionDelegate;->selectableId:J
 
     return-wide v0
@@ -674,7 +943,7 @@
 .method public getText()Landroidx/compose/ui/text/AnnotatedString;
     .locals 6
 
-    .line 146
+    .line 140
     iget-object p0, p0, Landroidx/compose/foundation/text/selection/MultiWidgetSelectionDelegate;->layoutResultCallback:Lkotlin/jvm/functions/Function0;
 
     invoke-interface {p0}, Lkotlin/jvm/functions/Function0;->invoke()Ljava/lang/Object;
@@ -703,7 +972,7 @@
 
     return-object p0
 
-    .line 147
+    .line 141
     :cond_0
     invoke-virtual {p0}, Landroidx/compose/ui/text/TextLayoutResult;->getLayoutInput()Landroidx/compose/ui/text/TextLayoutInput;
 
@@ -714,210 +983,4 @@
     move-result-object p0
 
     return-object p0
-.end method
-
-.method public updateSelection-qCDeeow(JJLandroidx/compose/ui/geometry/Offset;ZLandroidx/compose/ui/layout/LayoutCoordinates;Landroidx/compose/foundation/text/selection/SelectionAdjustment;Landroidx/compose/foundation/text/selection/Selection;)Lkotlin/Pair;
-    .locals 13
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(JJ",
-            "Landroidx/compose/ui/geometry/Offset;",
-            "Z",
-            "Landroidx/compose/ui/layout/LayoutCoordinates;",
-            "Landroidx/compose/foundation/text/selection/SelectionAdjustment;",
-            "Landroidx/compose/foundation/text/selection/Selection;",
-            ")",
-            "Lkotlin/Pair<",
-            "Landroidx/compose/foundation/text/selection/Selection;",
-            "Ljava/lang/Boolean;",
-            ">;"
-        }
-    .end annotation
-
-    move-object/from16 v0, p7
-
-    const-string v1, "containerLayoutCoordinates"
-
-    invoke-static {v0, v1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string v1, "adjustment"
-
-    move-object/from16 v10, p8
-
-    invoke-static {v10, v1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    if-eqz p9, :cond_1
-
-    .line 78
-    invoke-virtual {p0}, Landroidx/compose/foundation/text/selection/MultiWidgetSelectionDelegate;->getSelectableId()J
-
-    move-result-wide v1
-
-    invoke-virtual/range {p9 .. p9}, Landroidx/compose/foundation/text/selection/Selection;->getStart()Landroidx/compose/foundation/text/selection/Selection$AnchorInfo;
-
-    move-result-object v3
-
-    invoke-virtual {v3}, Landroidx/compose/foundation/text/selection/Selection$AnchorInfo;->getSelectableId()J
-
-    move-result-wide v3
-
-    cmp-long v1, v1, v3
-
-    if-nez v1, :cond_0
-
-    .line 79
-    invoke-virtual {p0}, Landroidx/compose/foundation/text/selection/MultiWidgetSelectionDelegate;->getSelectableId()J
-
-    move-result-wide v1
-
-    invoke-virtual/range {p9 .. p9}, Landroidx/compose/foundation/text/selection/Selection;->getEnd()Landroidx/compose/foundation/text/selection/Selection$AnchorInfo;
-
-    move-result-object v3
-
-    invoke-virtual {v3}, Landroidx/compose/foundation/text/selection/Selection$AnchorInfo;->getSelectableId()J
-
-    move-result-wide v3
-
-    cmp-long v1, v1, v3
-
-    if-nez v1, :cond_0
-
-    goto :goto_0
-
-    .line 76
-    :cond_0
-    new-instance v0, Ljava/lang/IllegalArgumentException;
-
-    const-string v1, "The given previousSelection doesn\'t belong to this selectable."
-
-    invoke-virtual {v1}, Ljava/lang/Object;->toString()Ljava/lang/String;
-
-    move-result-object v1
-
-    invoke-direct {v0, v1}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
-
-    throw v0
-
-    .line 84
-    :cond_1
-    :goto_0
-    invoke-virtual {p0}, Landroidx/compose/foundation/text/selection/MultiWidgetSelectionDelegate;->getLayoutCoordinates()Landroidx/compose/ui/layout/LayoutCoordinates;
-
-    move-result-object v1
-
-    const/4 v2, 0x0
-
-    const/4 v3, 0x0
-
-    if-nez v1, :cond_2
-
-    new-instance v0, Lkotlin/Pair;
-
-    invoke-static {v2}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
-
-    move-result-object v1
-
-    invoke-direct {v0, v3, v1}, Lkotlin/Pair;-><init>(Ljava/lang/Object;Ljava/lang/Object;)V
-
-    return-object v0
-
-    :cond_2
-    move-object v4, p0
-
-    .line 85
-    iget-object v5, v4, Landroidx/compose/foundation/text/selection/MultiWidgetSelectionDelegate;->layoutResultCallback:Lkotlin/jvm/functions/Function0;
-
-    invoke-interface {v5}, Lkotlin/jvm/functions/Function0;->invoke()Ljava/lang/Object;
-
-    move-result-object v5
-
-    check-cast v5, Landroidx/compose/ui/text/TextLayoutResult;
-
-    if-nez v5, :cond_3
-
-    new-instance v0, Lkotlin/Pair;
-
-    invoke-static {v2}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
-
-    move-result-object v1
-
-    invoke-direct {v0, v3, v1}, Lkotlin/Pair;-><init>(Ljava/lang/Object;Ljava/lang/Object;)V
-
-    return-object v0
-
-    .line 88
-    :cond_3
-    sget-object v2, Landroidx/compose/ui/geometry/Offset;->Companion:Landroidx/compose/ui/geometry/Offset$Companion;
-
-    invoke-virtual {v2}, Landroidx/compose/ui/geometry/Offset$Companion;->getZero-F1C5BW0()J
-
-    move-result-wide v6
-
-    .line 87
-    invoke-interface {v0, v1, v6, v7}, Landroidx/compose/ui/layout/LayoutCoordinates;->localPositionOf-R5De75A(Landroidx/compose/ui/layout/LayoutCoordinates;J)J
-
-    move-result-wide v0
-
-    move-wide v6, p1
-
-    .line 90
-    invoke-static {p1, p2, v0, v1}, Landroidx/compose/ui/geometry/Offset;->minus-MK-Hz9U(JJ)J
-
-    move-result-wide v6
-
-    move-wide/from16 v8, p3
-
-    .line 91
-    invoke-static {v8, v9, v0, v1}, Landroidx/compose/ui/geometry/Offset;->minus-MK-Hz9U(JJ)J
-
-    move-result-wide v8
-
-    if-eqz p5, :cond_4
-
-    .line 92
-    invoke-virtual/range {p5 .. p5}, Landroidx/compose/ui/geometry/Offset;->unbox-impl()J
-
-    move-result-wide v2
-
-    invoke-static {v2, v3, v0, v1}, Landroidx/compose/ui/geometry/Offset;->minus-MK-Hz9U(JJ)J
-
-    move-result-wide v0
-
-    invoke-static {v0, v1}, Landroidx/compose/ui/geometry/Offset;->box-impl(J)Landroidx/compose/ui/geometry/Offset;
-
-    move-result-object v0
-
-    goto :goto_1
-
-    :cond_4
-    move-object v0, v3
-
-    .line 99
-    :goto_1
-    invoke-virtual {p0}, Landroidx/compose/foundation/text/selection/MultiWidgetSelectionDelegate;->getSelectableId()J
-
-    move-result-wide v11
-
-    move-object v2, v5
-
-    move-wide v3, v6
-
-    move-wide v5, v8
-
-    move-object v7, v0
-
-    move-wide v8, v11
-
-    move-object/from16 v10, p8
-
-    move-object/from16 v11, p9
-
-    move/from16 v12, p6
-
-    .line 94
-    invoke-static/range {v2 .. v12}, Landroidx/compose/foundation/text/selection/MultiWidgetSelectionDelegateKt;->getTextSelectionInfo-yM0VcXU(Landroidx/compose/ui/text/TextLayoutResult;JJLandroidx/compose/ui/geometry/Offset;JLandroidx/compose/foundation/text/selection/SelectionAdjustment;Landroidx/compose/foundation/text/selection/Selection;Z)Lkotlin/Pair;
-
-    move-result-object v0
-
-    return-object v0
 .end method

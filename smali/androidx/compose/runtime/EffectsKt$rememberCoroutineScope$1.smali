@@ -26,7 +26,7 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/SourceDebugExtension;
-    value = "SMAP\nEffects.kt\nKotlin\n*S Kotlin\n*F\n+ 1 Effects.kt\nandroidx/compose/runtime/EffectsKt$rememberCoroutineScope$1\n*L\n1#1,496:1\n*E\n"
+    value = "SMAP\nEffects.kt\nKotlin\n*S Kotlin\n*F\n+ 1 Effects.kt\nandroidx/compose/runtime/EffectsKt$rememberCoroutineScope$1\n*L\n1#1,497:1\n*E\n"
 .end annotation
 
 .annotation runtime Lkotlin/Metadata;
@@ -72,7 +72,7 @@
 .method public bridge synthetic invoke()Ljava/lang/Object;
     .locals 0
 
-    .line 486
+    .line 487
     invoke-virtual {p0}, Landroidx/compose/runtime/EffectsKt$rememberCoroutineScope$1;->invoke()Lkotlin/coroutines/EmptyCoroutineContext;
 
     move-result-object p0
@@ -83,7 +83,7 @@
 .method public final invoke()Lkotlin/coroutines/EmptyCoroutineContext;
     .locals 0
 
-    .line 486
+    .line 487
     sget-object p0, Lkotlin/coroutines/EmptyCoroutineContext;->INSTANCE:Lkotlin/coroutines/EmptyCoroutineContext;
 
     return-object p0

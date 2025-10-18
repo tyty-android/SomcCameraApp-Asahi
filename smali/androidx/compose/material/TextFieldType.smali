@@ -60,7 +60,7 @@
 .method static constructor <clinit>()V
     .locals 3
 
-    .line 56
+    .line 55
     new-instance v0, Landroidx/compose/material/TextFieldType;
 
     const-string v1, "Filled"
@@ -98,7 +98,7 @@
         }
     .end annotation
 
-    .line 55
+    .line 54
     invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
     return-void

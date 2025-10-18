@@ -29,7 +29,7 @@
 .method constructor <init>()V
     .locals 0
 
-    .line 353
+    .line 400
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -45,7 +45,7 @@
         }
     .end annotation
 
-    .line 355
+    .line 403
     new-instance p0, Lcom/google/gson/internal/LinkedTreeMap;
 
     invoke-direct {p0}, Lcom/google/gson/internal/LinkedTreeMap;-><init>()V

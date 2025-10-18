@@ -69,7 +69,7 @@
 .method public bridge synthetic invoke(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
 
-    .line 122
+    .line 148
     check-cast p1, Landroidx/compose/ui/focus/FocusState;
 
     invoke-virtual {p0, p1}, Landroidx/compose/foundation/text/selection/SelectionManager$modifier$3;->invoke(Landroidx/compose/ui/focus/FocusState;)V
@@ -82,11 +82,7 @@
 .method public final invoke(Landroidx/compose/ui/focus/FocusState;)V
     .locals 1
 
-    const-string v0, "focusState"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 123
+    .line 149
     invoke-interface {p1}, Landroidx/compose/ui/focus/FocusState;->isFocused()Z
 
     move-result v0
@@ -101,12 +97,12 @@
 
     if-eqz v0, :cond_0
 
-    .line 124
+    .line 150
     iget-object v0, p0, Landroidx/compose/foundation/text/selection/SelectionManager$modifier$3;->this$0:Landroidx/compose/foundation/text/selection/SelectionManager;
 
     invoke-virtual {v0}, Landroidx/compose/foundation/text/selection/SelectionManager;->onRelease()V
 
-    .line 126
+    .line 152
     :cond_0
     iget-object p0, p0, Landroidx/compose/foundation/text/selection/SelectionManager$modifier$3;->this$0:Landroidx/compose/foundation/text/selection/SelectionManager;
 

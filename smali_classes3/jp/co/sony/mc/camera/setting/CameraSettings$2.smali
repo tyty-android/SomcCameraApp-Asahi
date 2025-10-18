@@ -21,7 +21,7 @@
 .method constructor <init>()V
     .locals 0
 
-    .line 543
+    .line 597
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -42,10 +42,10 @@
         }
     .end annotation
 
-    .line 547
+    .line 601
     check-cast p1, Ljp/co/sony/mc/camera/setting/CameraSettings;
 
-    .line 548
+    .line 602
     invoke-static {p1}, Ljp/co/sony/mc/camera/setting/CameraSettings;->-$$Nest$mgetBokehStrength(Ljp/co/sony/mc/camera/setting/CameraSettings;)Ljava/lang/Integer;
 
     move-result-object p0

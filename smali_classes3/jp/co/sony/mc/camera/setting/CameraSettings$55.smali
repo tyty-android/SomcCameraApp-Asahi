@@ -21,7 +21,7 @@
 .method constructor <init>()V
     .locals 0
 
-    .line 1000
+    .line 1053
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -42,11 +42,11 @@
         }
     .end annotation
 
-    .line 1004
+    .line 1057
     check-cast p1, Ljp/co/sony/mc/camera/setting/CameraSettings;
 
-    .line 1005
-    invoke-static {p1}, Ljp/co/sony/mc/camera/setting/CameraSettings;->-$$Nest$mgetUiOrientation(Ljp/co/sony/mc/camera/setting/CameraSettings;)Ljava/lang/Integer;
+    .line 1058
+    invoke-static {p1}, Ljp/co/sony/mc/camera/setting/CameraSettings;->-$$Nest$mgetWindNoiseReduction(Ljp/co/sony/mc/camera/setting/CameraSettings;)Ljp/co/sony/mc/camera/configuration/parameters/WindNoiseReduction;
 
     move-result-object p0
 

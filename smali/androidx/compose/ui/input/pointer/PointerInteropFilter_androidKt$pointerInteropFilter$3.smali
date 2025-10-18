@@ -70,10 +70,6 @@
 .method public final invoke(Landroid/view/MotionEvent;)Ljava/lang/Boolean;
     .locals 1
 
-    const-string v0, "motionEvent"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
     .line 106
     invoke-virtual {p1}, Landroid/view/MotionEvent;->getActionMasked()I
 
@@ -105,6 +101,8 @@
     move-result-object p0
 
     return-object p0
+
+    nop
 
     :pswitch_data_0
     .packed-switch 0x0

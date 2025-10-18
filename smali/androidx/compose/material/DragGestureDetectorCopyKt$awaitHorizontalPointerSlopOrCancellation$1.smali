@@ -40,8 +40,8 @@
         0x1
     }
     l = {
-        0x7b,
-        0xa1
+        0x7c,
+        0xa2
     }
     m = "awaitHorizontalPointerSlopOrCancellation-gDDlDlE"
     n = {

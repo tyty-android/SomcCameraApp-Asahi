@@ -53,7 +53,7 @@
 
     const/4 v1, 0x0
 
-    const v2, 0x7f1103bd
+    const v2, 0x7f1103f2
 
     const-string v3, "AUTO"
 
@@ -66,7 +66,7 @@
 
     const/4 v1, 0x1
 
-    const v2, 0x7f1103be
+    const v2, 0x7f1103f3
 
     const-string v3, "OFF"
 

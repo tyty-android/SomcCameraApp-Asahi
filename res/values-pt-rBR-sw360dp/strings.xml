@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <string name="mv_settings_background_playback_txt">Reproduzir em segundo plano</string>
-    <string name="mv_settings_sbt_font_size_txt">Tamanho da fonte</string>
-    <string name="mv_settings_sbt_sample_message_txt">Visualização das legendas</string>
-</resources>

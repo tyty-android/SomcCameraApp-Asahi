@@ -1,6 +1,6 @@
 .class public final Landroidx/compose/ui/tooling/ComposeViewAdapter$FakeActivityResultRegistryOwner$1$activityResultRegistry$1;
 .super Landroidx/activity/result/ActivityResultRegistry;
-.source "ComposeViewAdapter.kt"
+.source "ComposeViewAdapter.android.kt"
 
 
 # annotations
@@ -48,7 +48,7 @@
 .method constructor <init>()V
     .locals 0
 
-    .line 663
+    .line 656
     invoke-direct {p0}, Landroidx/activity/result/ActivityResultRegistry;-><init>()V
 
     return-void
@@ -72,11 +72,7 @@
         }
     .end annotation
 
-    const-string p0, "contract"
-
-    invoke-static {p2, p0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 670
+    .line 663
     new-instance p0, Ljava/lang/IllegalStateException;
 
     const-string p1, "Calling launch() is not supported in Preview"

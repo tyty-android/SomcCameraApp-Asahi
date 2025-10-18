@@ -64,6 +64,8 @@
 
 
 # static fields
+.field public static final $stable:I
+
 .field private static final Companion:Landroidx/compose/foundation/lazy/layout/LazyLayoutNearestRangeState$Companion;
 
 

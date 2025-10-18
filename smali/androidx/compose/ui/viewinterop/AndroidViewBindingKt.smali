@@ -5,7 +5,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/SourceDebugExtension;
-    value = "SMAP\nAndroidViewBinding.kt\nKotlin\n*S Kotlin\n*F\n+ 1 AndroidViewBinding.kt\nandroidx/compose/ui/viewinterop/AndroidViewBindingKt\n+ 2 CompositionLocal.kt\nandroidx/compose/runtime/CompositionLocal\n+ 3 Composables.kt\nandroidx/compose/runtime/ComposablesKt\n+ 4 Composer.kt\nandroidx/compose/runtime/ComposerKt\n+ 5 fake.kt\nkotlin/jvm/internal/FakeKt\n+ 6 ViewGroup.kt\nandroidx/core/view/ViewGroupKt\n*L\n1#1,230:1\n76#2:231\n76#2:239\n36#3:232\n36#3:241\n36#3:248\n1097#4,6:233\n1097#4,6:242\n1097#4,6:249\n1#5:240\n55#6,4:255\n*S KotlinDebug\n*F\n+ 1 AndroidViewBinding.kt\nandroidx/compose/ui/viewinterop/AndroidViewBindingKt\n*L\n158#1:231\n171#1:239\n162#1:232\n183#1:241\n205#1:248\n162#1:233,6\n183#1:242,6\n205#1:249,6\n223#1:255,4\n*E\n"
+    value = "SMAP\nAndroidViewBinding.kt\nKotlin\n*S Kotlin\n*F\n+ 1 AndroidViewBinding.kt\nandroidx/compose/ui/viewinterop/AndroidViewBindingKt\n+ 2 CompositionLocal.kt\nandroidx/compose/runtime/CompositionLocal\n+ 3 Composables.kt\nandroidx/compose/runtime/ComposablesKt\n+ 4 Composer.kt\nandroidx/compose/runtime/ComposerKt\n+ 5 fake.kt\nkotlin/jvm/internal/FakeKt\n+ 6 ViewGroup.kt\nandroidx/core/view/ViewGroupKt\n*L\n1#1,230:1\n74#2:231\n74#2:239\n36#3:232\n1116#4,6:233\n1116#4,6:241\n1116#4,6:247\n1#5:240\n55#6,4:253\n*S KotlinDebug\n*F\n+ 1 AndroidViewBinding.kt\nandroidx/compose/ui/viewinterop/AndroidViewBindingKt\n*L\n158#1:231\n171#1:239\n162#1:232\n162#1:233,6\n183#1:241,6\n205#1:247,6\n223#1:253,4\n*E\n"
 .end annotation
 
 .annotation runtime Lkotlin/Metadata;
@@ -84,10 +84,6 @@
         }
     .end annotation
 
-    const-string v0, "factory"
-
-    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
     const v0, -0x7655255a
 
     .line 80
@@ -95,7 +91,7 @@
 
     move-result-object p3
 
-    const-string v1, "C(AndroidViewBinding)80@4023L129:AndroidViewBinding.kt#z33iqn"
+    const-string v1, "C(AndroidViewBinding)80@4026L129:AndroidViewBinding.kt#z33iqn"
 
     invoke-static {p3, v1}, Landroidx/compose/runtime/ComposerKt;->sourceInformation(Landroidx/compose/runtime/Composer;Ljava/lang/String;)V
 
@@ -248,7 +244,7 @@
 
     const/4 v2, -0x1
 
-    const-string v3, "androidx.compose.ui.viewinterop.AndroidViewBinding (AndroidViewBinding.kt:75)"
+    const-string v3, "androidx.compose.ui.viewinterop.AndroidViewBinding (AndroidViewBinding.kt:79)"
 
     .line 80
     invoke-static {v0, v1, v2, v3}, Landroidx/compose/runtime/ComposerKt;->traceEventStart(IIILjava/lang/String;)V
@@ -303,11 +299,8 @@
 
     move-result-object p1
 
-    if-nez p1, :cond_f
+    if-eqz p1, :cond_f
 
-    goto :goto_9
-
-    :cond_f
     new-instance p2, Landroidx/compose/ui/viewinterop/AndroidViewBindingKt$AndroidViewBinding$2;
 
     move-object v1, p2
@@ -324,12 +317,12 @@
 
     invoke-interface {p1, p2}, Landroidx/compose/runtime/ScopeUpdateScope;->updateScope(Lkotlin/jvm/functions/Function2;)V
 
-    :goto_9
+    :cond_f
     return-void
 .end method
 
 .method public static final AndroidViewBinding(Lkotlin/jvm/functions/Function3;Landroidx/compose/ui/Modifier;Lkotlin/jvm/functions/Function1;Lkotlin/jvm/functions/Function1;Lkotlin/jvm/functions/Function1;Landroidx/compose/runtime/Composer;II)V
-    .locals 17
+    .locals 16
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<T::",
@@ -365,10 +358,6 @@
 
     move/from16 v6, p6
 
-    const-string v0, "factory"
-
-    invoke-static {v1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
     const v0, 0x1e584780
 
     move-object/from16 v2, p5
@@ -378,7 +367,7 @@
 
     move-result-object v2
 
-    const-string v3, "C(AndroidViewBinding)P(!2,3)157@9036L7,161@9303L226,170@9567L7,204@11264L41,171@9579L1732:AndroidViewBinding.kt#z33iqn"
+    const-string v3, "C(AndroidViewBinding)P(!2,3)157@9039L7,161@9306L226,170@9570L7,171@9582L1735:AndroidViewBinding.kt#z33iqn"
 
     invoke-static {v2, v3}, Landroidx/compose/runtime/ComposerKt;->sourceInformation(Landroidx/compose/runtime/Composer;Ljava/lang/String;)V
 
@@ -664,7 +653,7 @@
 
     const/4 v7, -0x1
 
-    const-string v8, "androidx.compose.ui.viewinterop.AndroidViewBinding (AndroidViewBinding.kt:150)"
+    const-string v8, "androidx.compose.ui.viewinterop.AndroidViewBinding (AndroidViewBinding.kt:156)"
 
     .line 157
     invoke-static {v0, v3, v7, v8}, Landroidx/compose/runtime/ComposerKt;->traceEventStart(IIILjava/lang/String;)V
@@ -698,30 +687,30 @@
     .line 162
     invoke-interface {v2, v9}, Landroidx/compose/runtime/Composer;->startReplaceableGroup(I)V
 
-    const-string v10, "CC(remember)P(1):Composables.kt#9igjgp"
+    const-string v9, "CC(remember)P(1):Composables.kt#9igjgp"
 
-    invoke-static {v2, v10}, Landroidx/compose/runtime/ComposerKt;->sourceInformation(Landroidx/compose/runtime/Composer;Ljava/lang/String;)V
+    invoke-static {v2, v9}, Landroidx/compose/runtime/ComposerKt;->sourceInformation(Landroidx/compose/runtime/Composer;Ljava/lang/String;)V
 
     .line 232
     invoke-interface {v2, v0}, Landroidx/compose/runtime/Composer;->changed(Ljava/lang/Object;)Z
 
-    move-result v11
+    move-result v9
 
     .line 233
     invoke-interface {v2}, Landroidx/compose/runtime/Composer;->rememberedValue()Ljava/lang/Object;
 
-    move-result-object v12
+    move-result-object v10
 
-    if-nez v11, :cond_16
+    if-nez v9, :cond_16
 
     .line 234
-    sget-object v11, Landroidx/compose/runtime/Composer;->Companion:Landroidx/compose/runtime/Composer$Companion;
+    sget-object v9, Landroidx/compose/runtime/Composer;->Companion:Landroidx/compose/runtime/Composer$Companion;
 
-    invoke-virtual {v11}, Landroidx/compose/runtime/Composer$Companion;->getEmpty()Ljava/lang/Object;
+    invoke-virtual {v9}, Landroidx/compose/runtime/Composer$Companion;->getEmpty()Ljava/lang/Object;
 
-    move-result-object v11
+    move-result-object v9
 
-    if-ne v12, v11, :cond_17
+    if-ne v10, v9, :cond_17
 
     .line 164
     :cond_16
@@ -732,23 +721,23 @@
     :try_end_0
     .catch Ljava/lang/IllegalStateException; {:try_start_0 .. :try_end_0} :catch_0
 
-    move-object v12, v0
+    move-object v10, v0
 
     goto :goto_13
 
     :catch_0
-    move-object v12, v5
+    move-object v10, v5
 
     .line 236
     :goto_13
-    invoke-interface {v2, v12}, Landroidx/compose/runtime/Composer;->updateRememberedValue(Ljava/lang/Object;)V
+    invoke-interface {v2, v10}, Landroidx/compose/runtime/Composer;->updateRememberedValue(Ljava/lang/Object;)V
 
     .line 232
     :cond_17
     invoke-interface {v2}, Landroidx/compose/runtime/Composer;->endReplaceableGroup()V
 
     .line 162
-    check-cast v12, Landroidx/fragment/app/Fragment;
+    check-cast v10, Landroidx/fragment/app/Fragment;
 
     .line 171
     invoke-static {}, Landroidx/compose/ui/platform/AndroidCompositionLocals_androidKt;->getLocalContext()Landroidx/compose/runtime/ProvidableCompositionLocal;
@@ -772,51 +761,39 @@
     .line 172
     new-instance v7, Landroidx/compose/ui/viewinterop/AndroidViewBindingKt$AndroidViewBinding$5;
 
-    invoke-direct {v7, v12, v1}, Landroidx/compose/ui/viewinterop/AndroidViewBindingKt$AndroidViewBinding$5;-><init>(Landroidx/fragment/app/Fragment;Lkotlin/jvm/functions/Function3;)V
+    invoke-direct {v7, v10, v1}, Landroidx/compose/ui/viewinterop/AndroidViewBindingKt$AndroidViewBinding$5;-><init>(Landroidx/fragment/app/Fragment;Lkotlin/jvm/functions/Function3;)V
 
     check-cast v7, Lkotlin/jvm/functions/Function1;
 
-    const v8, 0x1a33675f
+    if-eqz v15, :cond_1a
 
-    .line 183
-    invoke-interface {v2, v8}, Landroidx/compose/runtime/Composer;->startReplaceableGroup(I)V
+    const v5, -0x2d2edc01
 
-    const-string v8, "*182@10094L40"
+    .line 240
+    invoke-interface {v2, v5}, Landroidx/compose/runtime/Composer;->startReplaceableGroup(I)V
 
-    invoke-static {v2, v8}, Landroidx/compose/runtime/ComposerKt;->sourceInformation(Landroidx/compose/runtime/Composer;Ljava/lang/String;)V
-
-    if-nez v15, :cond_18
-
-    goto :goto_14
-
-    :cond_18
-    invoke-interface {v2, v9}, Landroidx/compose/runtime/Composer;->startReplaceableGroup(I)V
-
-    invoke-static {v2, v10}, Landroidx/compose/runtime/ComposerKt;->sourceInformation(Landroidx/compose/runtime/Composer;Ljava/lang/String;)V
-
-    .line 241
-    invoke-interface {v2, v15}, Landroidx/compose/runtime/Composer;->changed(Ljava/lang/Object;)Z
+    invoke-interface {v2, v15}, Landroidx/compose/runtime/Composer;->changedInstance(Ljava/lang/Object;)Z
 
     move-result v5
 
-    .line 242
+    .line 241
     invoke-interface {v2}, Landroidx/compose/runtime/Composer;->rememberedValue()Ljava/lang/Object;
 
     move-result-object v8
 
-    if-nez v5, :cond_19
+    if-nez v5, :cond_18
 
-    .line 243
+    .line 242
     sget-object v5, Landroidx/compose/runtime/Composer;->Companion:Landroidx/compose/runtime/Composer$Companion;
 
     invoke-virtual {v5}, Landroidx/compose/runtime/Composer$Companion;->getEmpty()Ljava/lang/Object;
 
     move-result-object v5
 
-    if-ne v8, v5, :cond_1a
+    if-ne v8, v5, :cond_19
 
     .line 183
-    :cond_19
+    :cond_18
     new-instance v5, Landroidx/compose/ui/viewinterop/AndroidViewBindingKt$AndroidViewBinding$6$1$1;
 
     invoke-direct {v5, v15}, Landroidx/compose/ui/viewinterop/AndroidViewBindingKt$AndroidViewBinding$6$1$1;-><init>(Lkotlin/jvm/functions/Function1;)V
@@ -825,112 +802,106 @@
 
     check-cast v8, Lkotlin/jvm/functions/Function1;
 
-    .line 245
+    .line 244
     invoke-interface {v2, v8}, Landroidx/compose/runtime/Composer;->updateRememberedValue(Ljava/lang/Object;)V
 
-    .line 241
-    :cond_1a
-    invoke-interface {v2}, Landroidx/compose/runtime/Composer;->endReplaceableGroup()V
-
     .line 183
+    :cond_19
     check-cast v8, Lkotlin/jvm/functions/Function1;
 
-    move-object v5, v8
-
-    :goto_14
     invoke-interface {v2}, Landroidx/compose/runtime/Composer;->endReplaceableGroup()V
-
-    .line 172
-    new-instance v8, Landroidx/compose/ui/viewinterop/AndroidViewBindingKt$AndroidViewBinding$7;
-
-    invoke-direct {v8, v14, v12, v0}, Landroidx/compose/ui/viewinterop/AndroidViewBindingKt$AndroidViewBinding$7;-><init>(Lkotlin/jvm/functions/Function1;Landroidx/fragment/app/Fragment;Landroid/content/Context;)V
-
-    move-object v0, v8
-
-    check-cast v0, Lkotlin/jvm/functions/Function1;
-
-    .line 205
-    invoke-interface {v2, v9}, Landroidx/compose/runtime/Composer;->startReplaceableGroup(I)V
-
-    invoke-static {v2, v10}, Landroidx/compose/runtime/ComposerKt;->sourceInformation(Landroidx/compose/runtime/Composer;Ljava/lang/String;)V
-
-    .line 248
-    invoke-interface {v2, v13}, Landroidx/compose/runtime/Composer;->changed(Ljava/lang/Object;)Z
-
-    move-result v8
-
-    .line 249
-    invoke-interface {v2}, Landroidx/compose/runtime/Composer;->rememberedValue()Ljava/lang/Object;
-
-    move-result-object v9
-
-    if-nez v8, :cond_1b
-
-    .line 250
-    sget-object v8, Landroidx/compose/runtime/Composer;->Companion:Landroidx/compose/runtime/Composer$Companion;
-
-    invoke-virtual {v8}, Landroidx/compose/runtime/Composer$Companion;->getEmpty()Ljava/lang/Object;
-
-    move-result-object v8
-
-    if-ne v9, v8, :cond_1c
-
-    .line 205
-    :cond_1b
-    new-instance v8, Landroidx/compose/ui/viewinterop/AndroidViewBindingKt$AndroidViewBinding$8$1;
-
-    invoke-direct {v8, v13}, Landroidx/compose/ui/viewinterop/AndroidViewBindingKt$AndroidViewBinding$8$1;-><init>(Lkotlin/jvm/functions/Function1;)V
 
     move-object v9, v8
 
-    check-cast v9, Lkotlin/jvm/functions/Function1;
+    goto :goto_14
 
-    .line 252
-    invoke-interface {v2, v9}, Landroidx/compose/runtime/Composer;->updateRememberedValue(Ljava/lang/Object;)V
+    :cond_1a
+    move-object v9, v5
+
+    .line 172
+    :goto_14
+    new-instance v5, Landroidx/compose/ui/viewinterop/AndroidViewBindingKt$AndroidViewBinding$7;
+
+    invoke-direct {v5, v14, v10, v0}, Landroidx/compose/ui/viewinterop/AndroidViewBindingKt$AndroidViewBinding$7;-><init>(Lkotlin/jvm/functions/Function1;Landroidx/fragment/app/Fragment;Landroid/content/Context;)V
+
+    move-object v10, v5
+
+    check-cast v10, Lkotlin/jvm/functions/Function1;
+
+    const v0, -0x2d2ed76c
+
+    invoke-interface {v2, v0}, Landroidx/compose/runtime/Composer;->startReplaceableGroup(I)V
+
+    invoke-interface {v2, v13}, Landroidx/compose/runtime/Composer;->changedInstance(Ljava/lang/Object;)Z
+
+    move-result v0
+
+    .line 247
+    invoke-interface {v2}, Landroidx/compose/runtime/Composer;->rememberedValue()Ljava/lang/Object;
+
+    move-result-object v5
+
+    if-nez v0, :cond_1b
 
     .line 248
-    :cond_1c
-    invoke-interface {v2}, Landroidx/compose/runtime/Composer;->endReplaceableGroup()V
+    sget-object v0, Landroidx/compose/runtime/Composer;->Companion:Landroidx/compose/runtime/Composer$Companion;
 
-    move-object v11, v9
+    invoke-virtual {v0}, Landroidx/compose/runtime/Composer$Companion;->getEmpty()Ljava/lang/Object;
+
+    move-result-object v0
+
+    if-ne v5, v0, :cond_1c
+
+    .line 205
+    :cond_1b
+    new-instance v0, Landroidx/compose/ui/viewinterop/AndroidViewBindingKt$AndroidViewBinding$8$1;
+
+    invoke-direct {v0, v13}, Landroidx/compose/ui/viewinterop/AndroidViewBindingKt$AndroidViewBinding$8$1;-><init>(Lkotlin/jvm/functions/Function1;)V
+
+    move-object v5, v0
+
+    check-cast v5, Lkotlin/jvm/functions/Function1;
+
+    .line 250
+    invoke-interface {v2, v5}, Landroidx/compose/runtime/Composer;->updateRememberedValue(Ljava/lang/Object;)V
+
+    .line 205
+    :cond_1c
+    move-object v11, v5
 
     check-cast v11, Lkotlin/jvm/functions/Function1;
 
-    and-int/lit8 v3, v3, 0x70
+    invoke-interface {v2}, Landroidx/compose/runtime/Composer;->endReplaceableGroup()V
 
-    const/16 v16, 0x0
+    and-int/lit8 v0, v3, 0x70
+
+    const/4 v3, 0x0
 
     move-object v8, v4
 
-    move-object v9, v5
-
-    move-object v10, v0
-
     move-object v12, v2
 
-    move-object v0, v13
+    move-object v5, v13
 
-    move v13, v3
+    move v13, v0
 
-    move-object v3, v14
+    move-object v0, v14
 
-    move/from16 v14, v16
+    move v14, v3
 
     .line 172
     invoke-static/range {v7 .. v14}, Landroidx/compose/ui/viewinterop/AndroidView_androidKt;->AndroidView(Lkotlin/jvm/functions/Function1;Landroidx/compose/ui/Modifier;Lkotlin/jvm/functions/Function1;Lkotlin/jvm/functions/Function1;Lkotlin/jvm/functions/Function1;Landroidx/compose/runtime/Composer;II)V
 
     invoke-static {}, Landroidx/compose/runtime/ComposerKt;->isTraceInProgress()Z
 
-    move-result v5
+    move-result v3
 
-    if-eqz v5, :cond_1d
+    if-eqz v3, :cond_1d
 
     invoke-static {}, Landroidx/compose/runtime/ComposerKt;->traceEventEnd()V
 
     :cond_1d
-    move-object v5, v0
-
-    move-object v10, v3
+    move-object v10, v0
 
     move-object v3, v15
 
@@ -940,11 +911,8 @@
 
     move-result-object v8
 
-    if-nez v8, :cond_1e
+    if-eqz v8, :cond_1e
 
-    goto :goto_16
-
-    :cond_1e
     new-instance v9, Landroidx/compose/ui/viewinterop/AndroidViewBindingKt$AndroidViewBinding$9;
 
     move-object v0, v9
@@ -965,7 +933,7 @@
 
     invoke-interface {v8, v9}, Landroidx/compose/runtime/ScopeUpdateScope;->updateScope(Lkotlin/jvm/functions/Function2;)V
 
-    :goto_16
+    :cond_1e
     return-void
 .end method
 
@@ -1022,7 +990,7 @@
 
     goto :goto_1
 
-    .line 255
+    .line 253
     :cond_0
     invoke-virtual {p0}, Landroid/view/ViewGroup;->getChildCount()I
 
@@ -1033,14 +1001,10 @@
     :goto_0
     if-ge v1, v0, :cond_2
 
-    .line 256
+    .line 254
     invoke-virtual {p0, v1}, Landroid/view/ViewGroup;->getChildAt(I)Landroid/view/View;
 
     move-result-object v2
-
-    const-string v3, "getChildAt(index)"
-
-    invoke-static {v2, v3}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 224
     instance-of v3, v2, Landroid/view/ViewGroup;

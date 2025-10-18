@@ -21,7 +21,7 @@
 .method constructor <init>()V
     .locals 0
 
-    .line 800
+    .line 803
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -46,13 +46,13 @@
         }
     .end annotation
 
-    .line 804
+    .line 807
     check-cast p1, Ljp/co/sony/mc/camera/setting/CommonSettings;
 
-    .line 805
-    check-cast p3, Ljp/co/sony/mc/camera/configuration/parameters/GridLine;
+    .line 808
+    check-cast p3, Ljp/co/sony/mc/camera/configuration/parameters/Geotag;
 
-    invoke-static {p1, p3}, Ljp/co/sony/mc/camera/setting/CommonSettings;->-$$Nest$msetGridLine(Ljp/co/sony/mc/camera/setting/CommonSettings;Ljp/co/sony/mc/camera/configuration/parameters/GridLine;)Z
+    invoke-static {p1, p3}, Ljp/co/sony/mc/camera/setting/CommonSettings;->-$$Nest$msetGeotag(Ljp/co/sony/mc/camera/setting/CommonSettings;Ljp/co/sony/mc/camera/configuration/parameters/Geotag;)Z
 
     move-result p0
 

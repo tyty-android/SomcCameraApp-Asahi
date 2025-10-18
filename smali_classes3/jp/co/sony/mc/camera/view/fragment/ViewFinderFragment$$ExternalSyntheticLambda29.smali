@@ -3,7 +3,7 @@
 .source "D8$$SyntheticClass"
 
 # interfaces
-.implements Landroidx/lifecycle/Observer;
+.implements Landroid/view/View$OnLayoutChangeListener;
 
 
 # instance fields
@@ -24,15 +24,33 @@
 
 
 # virtual methods
-.method public final onChanged(Ljava/lang/Object;)V
-    .locals 0
+.method public final onLayoutChange(Landroid/view/View;IIIIIIII)V
+    .locals 10
 
     .line 0
-    iget-object p0, p0, Ljp/co/sony/mc/camera/view/fragment/ViewFinderFragment$$ExternalSyntheticLambda29;->f$0:Ljp/co/sony/mc/camera/view/fragment/ViewFinderFragment;
+    move-object v0, p0
 
-    check-cast p1, Ljp/co/sony/mc/camera/view/orientation/LayoutOrientation;
+    iget-object v0, v0, Ljp/co/sony/mc/camera/view/fragment/ViewFinderFragment$$ExternalSyntheticLambda29;->f$0:Ljp/co/sony/mc/camera/view/fragment/ViewFinderFragment;
 
-    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/view/fragment/ViewFinderFragment;->$r8$lambda$NFVVbb5dopbQtvH5wqU76nOIyTA(Ljp/co/sony/mc/camera/view/fragment/ViewFinderFragment;Ljp/co/sony/mc/camera/view/orientation/LayoutOrientation;)V
+    move-object v1, p1
+
+    move v2, p2
+
+    move v3, p3
+
+    move v4, p4
+
+    move v5, p5
+
+    move/from16 v6, p6
+
+    move/from16 v7, p7
+
+    move/from16 v8, p8
+
+    move/from16 v9, p9
+
+    invoke-static/range {v0 .. v9}, Ljp/co/sony/mc/camera/view/fragment/ViewFinderFragment;->$r8$lambda$NWPgRYaAbvZj6lDDqQuipaPcEZ4(Ljp/co/sony/mc/camera/view/fragment/ViewFinderFragment;Landroid/view/View;IIIIIIII)V
 
     return-void
 .end method

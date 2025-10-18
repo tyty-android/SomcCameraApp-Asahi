@@ -18,21 +18,21 @@
 
 .annotation system Ldalvik/annotation/Signature;
     value = {
+        "<T:",
         "Ljava/lang/Object;",
-        "Lkotlinx/coroutines/flow/FlowCollector<",
-        "Ljava/util/Map<",
-        "Ljava/lang/Float;",
-        "+TT;>;>;"
+        ">",
+        "Ljava/lang/Object;",
+        "Lkotlinx/coroutines/flow/FlowCollector;"
     }
 .end annotation
 
 .annotation system Ldalvik/annotation/SourceDebugExtension;
-    value = "SMAP\nSwipeable.kt\nKotlin\n*S Kotlin\n*F\n+ 1 Swipeable.kt\nandroidx/compose/material/SwipeableState$animateTo$2\n+ 2 Maps.kt\nkotlin/collections/MapsKt__MapsKt\n*L\n1#1,890:1\n467#2,7:891\n*S KotlinDebug\n*F\n+ 1 Swipeable.kt\nandroidx/compose/material/SwipeableState$animateTo$2\n*L\n340#1:891,7\n*E\n"
+    value = "SMAP\nSwipeable.kt\nKotlin\n*S Kotlin\n*F\n+ 1 Swipeable.kt\nandroidx/compose/material/SwipeableState$animateTo$2\n+ 2 Maps.kt\nkotlin/collections/MapsKt__MapsKt\n*L\n1#1,908:1\n467#2,7:909\n*S KotlinDebug\n*F\n+ 1 Swipeable.kt\nandroidx/compose/material/SwipeableState$animateTo$2\n*L\n345#1:909,7\n*E\n"
 .end annotation
 
 .annotation runtime Lkotlin/Metadata;
     d1 = {
-        "\u0000\u0012\n\u0000\n\u0002\u0010\u0002\n\u0002\u0008\u0002\n\u0002\u0010$\n\u0002\u0010\u0007\u0010\u0000\u001a\u00020\u0001\"\u0004\u0008\u0000\u0010\u00022\u0012\u0010\u0003\u001a\u000e\u0012\u0004\u0012\u00020\u0005\u0012\u0004\u0012\u0002H\u00020\u0004H\u008a@"
+        "\u0000\u0016\n\u0000\n\u0002\u0010\u0002\n\u0002\u0008\u0002\n\u0002\u0010$\n\u0002\u0010\u0007\n\u0002\u0008\u0002\u0010\u0000\u001a\u00020\u0001\"\u0004\u0008\u0000\u0010\u00022\u0012\u0010\u0003\u001a\u000e\u0012\u0004\u0012\u00020\u0005\u0012\u0004\u0012\u0002H\u00020\u0004H\u008a@\u00a2\u0006\u0004\u0008\u0006\u0010\u0007"
     }
     d2 = {
         "<anonymous>",
@@ -40,7 +40,9 @@
         "T",
         "anchors",
         "",
-        ""
+        "",
+        "emit",
+        "(Ljava/util/Map;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;"
     }
     k = 0x3
     mv = {
@@ -111,7 +113,7 @@
 .method public bridge synthetic emit(Ljava/lang/Object;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
     .locals 0
 
-    .line 329
+    .line 334
     check-cast p1, Ljava/util/Map;
 
     invoke-virtual {p0, p1, p2}, Landroidx/compose/material/SwipeableState$animateTo$2;->emit(Ljava/util/Map;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
@@ -173,7 +175,7 @@
 
     move-result-object v1
 
-    .line 329
+    .line 334
     iget v2, v0, Landroidx/compose/material/SwipeableState$animateTo$2$emit$1;->label:I
 
     const/high16 v3, 0x3f000000    # 0.5f
@@ -213,7 +215,7 @@
     :cond_2
     invoke-static {p2}, Lkotlin/ResultKt;->throwOnFailure(Ljava/lang/Object;)V
 
-    .line 331
+    .line 336
     :try_start_1
     iget-object p2, p0, Landroidx/compose/material/SwipeableState$animateTo$2;->$targetValue:Ljava/lang/Object;
 
@@ -223,7 +225,7 @@
 
     if-eqz p2, :cond_7
 
-    .line 335
+    .line 340
     iget-object v2, p0, Landroidx/compose/material/SwipeableState$animateTo$2;->this$0:Landroidx/compose/material/SwipeableState;
 
     invoke-virtual {p2}, Ljava/lang/Float;->floatValue()F
@@ -248,7 +250,7 @@
 
     return-object v1
 
-    .line 337
+    .line 342
     :cond_3
     :goto_1
     iget-object p2, p0, Landroidx/compose/material/SwipeableState$animateTo$2;->this$0:Landroidx/compose/material/SwipeableState;
@@ -261,12 +263,12 @@
 
     move-result p2
 
-    .line 891
+    .line 909
     new-instance v0, Ljava/util/LinkedHashMap;
 
     invoke-direct {v0}, Ljava/util/LinkedHashMap;-><init>()V
 
-    .line 892
+    .line 910
     invoke-interface {p1}, Ljava/util/Map;->entrySet()Ljava/util/Set;
 
     move-result-object p1
@@ -289,7 +291,7 @@
 
     check-cast v1, Ljava/util/Map$Entry;
 
-    .line 893
+    .line 911
     invoke-interface {v1}, Ljava/util/Map$Entry;->getKey()Ljava/lang/Object;
 
     move-result-object v2
@@ -302,7 +304,7 @@
 
     sub-float/2addr v2, p2
 
-    .line 340
+    .line 345
     invoke-static {v2}, Ljava/lang/Math;->abs(F)F
 
     move-result v2
@@ -311,7 +313,7 @@
 
     if-gez v2, :cond_4
 
-    .line 894
+    .line 912
     invoke-interface {v1}, Ljava/util/Map$Entry;->getKey()Ljava/lang/Object;
 
     move-result-object v2
@@ -324,11 +326,11 @@
 
     goto :goto_2
 
-    .line 897
+    .line 915
     :cond_5
     check-cast v0, Ljava/util/Map;
 
-    .line 341
+    .line 346
     invoke-interface {v0}, Ljava/util/Map;->values()Ljava/util/Collection;
 
     move-result-object p1
@@ -347,23 +349,23 @@
 
     move-result-object p1
 
-    .line 342
+    .line 347
     :cond_6
     iget-object p0, p0, Landroidx/compose/material/SwipeableState$animateTo$2;->this$0:Landroidx/compose/material/SwipeableState;
 
     invoke-static {p0, p1}, Landroidx/compose/material/SwipeableState;->access$setCurrentValue(Landroidx/compose/material/SwipeableState;Ljava/lang/Object;)V
 
-    .line 344
+    .line 349
     sget-object p0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
 
     return-object p0
 
-    .line 333
+    .line 338
     :cond_7
     :try_start_2
     const-string p2, "The target value must have an associated anchor."
 
-    .line 332
+    .line 337
     new-instance v0, Ljava/lang/IllegalArgumentException;
 
     invoke-virtual {p2}, Ljava/lang/Object;->toString()Ljava/lang/String;
@@ -379,7 +381,7 @@
     :catchall_0
     move-exception p2
 
-    .line 337
+    .line 342
     iget-object v0, p0, Landroidx/compose/material/SwipeableState$animateTo$2;->this$0:Landroidx/compose/material/SwipeableState;
 
     invoke-static {v0}, Landroidx/compose/material/SwipeableState;->access$getAbsoluteOffset$p(Landroidx/compose/material/SwipeableState;)Landroidx/compose/runtime/MutableFloatState;
@@ -390,12 +392,12 @@
 
     move-result v0
 
-    .line 891
+    .line 909
     new-instance v1, Ljava/util/LinkedHashMap;
 
     invoke-direct {v1}, Ljava/util/LinkedHashMap;-><init>()V
 
-    .line 892
+    .line 910
     invoke-interface {p1}, Ljava/util/Map;->entrySet()Ljava/util/Set;
 
     move-result-object p1
@@ -418,7 +420,7 @@
 
     check-cast v2, Ljava/util/Map$Entry;
 
-    .line 893
+    .line 911
     invoke-interface {v2}, Ljava/util/Map$Entry;->getKey()Ljava/lang/Object;
 
     move-result-object v4
@@ -431,7 +433,7 @@
 
     sub-float/2addr v4, v0
 
-    .line 340
+    .line 345
     invoke-static {v4}, Ljava/lang/Math;->abs(F)F
 
     move-result v4
@@ -440,7 +442,7 @@
 
     if-gez v4, :cond_8
 
-    .line 894
+    .line 912
     invoke-interface {v2}, Ljava/util/Map$Entry;->getKey()Ljava/lang/Object;
 
     move-result-object v4
@@ -453,11 +455,11 @@
 
     goto :goto_3
 
-    .line 897
+    .line 915
     :cond_9
     check-cast v1, Ljava/util/Map;
 
-    .line 341
+    .line 346
     invoke-interface {v1}, Ljava/util/Map;->values()Ljava/util/Collection;
 
     move-result-object p1
@@ -476,7 +478,7 @@
 
     move-result-object p1
 
-    .line 342
+    .line 347
     :cond_a
     iget-object p0, p0, Landroidx/compose/material/SwipeableState$animateTo$2;->this$0:Landroidx/compose/material/SwipeableState;
 

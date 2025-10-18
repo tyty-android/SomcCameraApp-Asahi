@@ -3,17 +3,15 @@
 .source "D8$$SyntheticClass"
 
 # interfaces
-.implements Ljava/lang/Runnable;
+.implements Landroid/view/View$OnClickListener;
 
 
 # instance fields
 .field public final synthetic f$0:Ljp/co/sony/mc/camera/view/setting/fragment/BasicModeSettingsFragment;
 
-.field public final synthetic f$1:Ljp/co/sony/mc/camera/setting/SettingKey$Key;
-
 
 # direct methods
-.method public synthetic constructor <init>(Ljp/co/sony/mc/camera/view/setting/fragment/BasicModeSettingsFragment;Ljp/co/sony/mc/camera/setting/SettingKey$Key;)V
+.method public synthetic constructor <init>(Ljp/co/sony/mc/camera/view/setting/fragment/BasicModeSettingsFragment;)V
     .locals 0
 
     .line 0
@@ -21,22 +19,18 @@
 
     iput-object p1, p0, Ljp/co/sony/mc/camera/view/setting/fragment/BasicModeSettingsFragment$$ExternalSyntheticLambda2;->f$0:Ljp/co/sony/mc/camera/view/setting/fragment/BasicModeSettingsFragment;
 
-    iput-object p2, p0, Ljp/co/sony/mc/camera/view/setting/fragment/BasicModeSettingsFragment$$ExternalSyntheticLambda2;->f$1:Ljp/co/sony/mc/camera/setting/SettingKey$Key;
-
     return-void
 .end method
 
 
 # virtual methods
-.method public final run()V
-    .locals 1
+.method public final onClick(Landroid/view/View;)V
+    .locals 0
 
     .line 0
-    iget-object v0, p0, Ljp/co/sony/mc/camera/view/setting/fragment/BasicModeSettingsFragment$$ExternalSyntheticLambda2;->f$0:Ljp/co/sony/mc/camera/view/setting/fragment/BasicModeSettingsFragment;
+    iget-object p0, p0, Ljp/co/sony/mc/camera/view/setting/fragment/BasicModeSettingsFragment$$ExternalSyntheticLambda2;->f$0:Ljp/co/sony/mc/camera/view/setting/fragment/BasicModeSettingsFragment;
 
-    iget-object p0, p0, Ljp/co/sony/mc/camera/view/setting/fragment/BasicModeSettingsFragment$$ExternalSyntheticLambda2;->f$1:Ljp/co/sony/mc/camera/setting/SettingKey$Key;
-
-    invoke-static {v0, p0}, Ljp/co/sony/mc/camera/view/setting/fragment/BasicModeSettingsFragment;->$r8$lambda$N9vIXO0XgdkX4RWmX0N4xABZzIM(Ljp/co/sony/mc/camera/view/setting/fragment/BasicModeSettingsFragment;Ljp/co/sony/mc/camera/setting/SettingKey$Key;)V
+    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/view/setting/fragment/BasicModeSettingsFragment;->$r8$lambda$MI14zMIQdNipiTsqV9ZETEIDWs8(Ljp/co/sony/mc/camera/view/setting/fragment/BasicModeSettingsFragment;Landroid/view/View;)V
 
     return-void
 .end method

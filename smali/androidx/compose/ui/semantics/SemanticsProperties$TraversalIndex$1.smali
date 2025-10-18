@@ -87,7 +87,7 @@
 .method public bridge synthetic invoke(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
 
-    .line 128
+    .line 126
     check-cast p1, Ljava/lang/Float;
 
     check-cast p2, Ljava/lang/Number;

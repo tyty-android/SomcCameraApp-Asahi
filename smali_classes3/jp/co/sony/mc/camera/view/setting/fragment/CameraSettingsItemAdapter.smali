@@ -197,7 +197,7 @@
     .line 74
     invoke-virtual {p2, v0}, Landroid/view/View;->setSelected(Z)V
 
-    const v0, 0x7f0904bc
+    const v0, 0x7f0904a9
 
     .line 76
     invoke-virtual {p2, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
@@ -227,7 +227,7 @@
 
     move-result-object v3
 
-    const v4, 0x7f090484
+    const v4, 0x7f090472
 
     .line 81
     invoke-virtual {p2, v4}, Landroid/view/View;->findViewById(I)Landroid/view/View;
@@ -276,7 +276,7 @@
     invoke-virtual {v4, v7}, Landroid/widget/TextView;->setVisibility(I)V
 
     :goto_1
-    const v3, 0x7f09048d
+    const v3, 0x7f09047b
 
     .line 91
     invoke-virtual {p2, v3}, Landroid/view/View;->findViewById(I)Landroid/view/View;
@@ -322,12 +322,12 @@
 
     if-eqz v5, :cond_3
 
-    const v5, 0x7f11009e
+    const v5, 0x7f110099
 
     goto :goto_2
 
     :cond_3
-    const v5, 0x7f11009d
+    const v5, 0x7f110098
 
     .line 97
     :goto_2
@@ -378,7 +378,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f07073b
+    const v2, 0x7f07079c
 
     .line 120
     invoke-virtual {v1, v2}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
@@ -392,7 +392,7 @@
 
     move-result-object p0
 
-    const v2, 0x7f07073f
+    const v2, 0x7f0707a0
 
     .line 122
     invoke-virtual {p0, v2}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I

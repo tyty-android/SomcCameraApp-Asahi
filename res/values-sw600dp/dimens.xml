@@ -8,7 +8,6 @@
     <dimen name="abc_config_prefDialogWidth">580.0dip</dimen>
     <dimen name="abc_text_size_subtitle_material_toolbar">16.0dip</dimen>
     <dimen name="abc_text_size_title_material_toolbar">20.0dip</dimen>
-    <dimen name="action_bar_content_inset_start">80.0dip</dimen>
     <dimen name="design_navigation_max_width">320.0dip</dimen>
     <dimen name="design_snackbar_action_inline_max_width">0.0dip</dimen>
     <dimen name="design_snackbar_background_corner_radius">2.0dip</dimen>
@@ -19,5 +18,4 @@
     <dimen name="design_tab_scrollable_min_width">160.0dip</dimen>
     <dimen name="mtrl_bottomappbar_height">64.0dip</dimen>
     <dimen name="mtrl_toolbar_default_height">64.0dip</dimen>
-    <dimen name="player_progress_text_size">50.0sp</dimen>
 </resources>

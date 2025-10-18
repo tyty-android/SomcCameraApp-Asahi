@@ -24,6 +24,10 @@
 
 
 # static fields
+.field static final TRANSACTION_getAmbientTemperature:I = 0x8
+
+.field static final TRANSACTION_getCameraLowTempBurnMonitor:I = 0x7
+
 .field static final TRANSACTION_getCameraLowTempBurnTimeoutSec:I = 0x3
 
 .field static final TRANSACTION_getThermalLevelForCamera:I = 0x1
@@ -41,10 +45,10 @@
 .method public constructor <init>()V
     .locals 1
 
-    .line 92
+    .line 126
     invoke-direct {p0}, Landroid/os/Binder;-><init>()V
 
-    .line 93
+    .line 127
     const-string v0, "com.sonyericsson.psm.sysmonservice.ISysmonService"
 
     invoke-virtual {p0, p0, v0}, Lcom/sonyericsson/psm/sysmonservice/ISysmonService$Stub;->attachInterface(Landroid/os/IInterface;Ljava/lang/String;)V
@@ -61,7 +65,7 @@
 
     return-object p0
 
-    .line 104
+    .line 138
     :cond_0
     const-string v0, "com.sonyericsson.psm.sysmonservice.ISysmonService"
 
@@ -71,17 +75,17 @@
 
     if-eqz v0, :cond_1
 
-    .line 105
+    .line 139
     instance-of v1, v0, Lcom/sonyericsson/psm/sysmonservice/ISysmonService;
 
     if-eqz v1, :cond_1
 
-    .line 106
+    .line 140
     check-cast v0, Lcom/sonyericsson/psm/sysmonservice/ISysmonService;
 
     return-object v0
 
-    .line 108
+    .line 142
     :cond_1
     new-instance v0, Lcom/sonyericsson/psm/sysmonservice/ISysmonService$Stub$Proxy;
 
@@ -106,7 +110,7 @@
         }
     .end annotation
 
-    .line 117
+    .line 151
     const-string v0, "com.sonyericsson.psm.sysmonservice.ISysmonService"
 
     const/4 v1, 0x1
@@ -117,7 +121,7 @@
 
     if-gt p1, v2, :cond_0
 
-    .line 118
+    .line 152
     invoke-virtual {p2, v0}, Landroid/os/Parcel;->enforceInterface(Ljava/lang/String;)V
 
     :cond_0
@@ -125,7 +129,7 @@
 
     if-ne p1, v2, :cond_1
 
-    .line 121
+    .line 155
     invoke-virtual {p3, v0}, Landroid/os/Parcel;->writeString(Ljava/lang/String;)V
 
     return v1
@@ -133,93 +137,121 @@
     :cond_1
     packed-switch p1, :pswitch_data_0
 
-    .line 170
+    .line 218
     invoke-super {p0, p1, p2, p3, p4}, Landroid/os/Binder;->onTransact(ILandroid/os/Parcel;Landroid/os/Parcel;I)Z
 
     move-result p0
 
     return p0
 
-    .line 163
+    .line 211
     :pswitch_0
+    invoke-virtual {p0}, Lcom/sonyericsson/psm/sysmonservice/ISysmonService$Stub;->getAmbientTemperature()I
+
+    move-result p0
+
+    .line 212
+    invoke-virtual {p3}, Landroid/os/Parcel;->writeNoException()V
+
+    .line 213
+    invoke-virtual {p3, p0}, Landroid/os/Parcel;->writeInt(I)V
+
+    goto :goto_0
+
+    .line 204
+    :pswitch_1
+    invoke-virtual {p0}, Lcom/sonyericsson/psm/sysmonservice/ISysmonService$Stub;->getCameraLowTempBurnMonitor()I
+
+    move-result p0
+
+    .line 205
+    invoke-virtual {p3}, Landroid/os/Parcel;->writeNoException()V
+
+    .line 206
+    invoke-virtual {p3, p0}, Landroid/os/Parcel;->writeInt(I)V
+
+    goto :goto_0
+
+    .line 197
+    :pswitch_2
     invoke-virtual {p0}, Lcom/sonyericsson/psm/sysmonservice/ISysmonService$Stub;->getThermalLevelForEndurance()I
 
     move-result p0
 
-    .line 164
+    .line 198
     invoke-virtual {p3}, Landroid/os/Parcel;->writeNoException()V
 
-    .line 165
+    .line 199
     invoke-virtual {p3, p0}, Landroid/os/Parcel;->writeInt(I)V
 
     goto :goto_0
 
-    .line 156
-    :pswitch_1
+    .line 190
+    :pswitch_3
     invoke-virtual {p0}, Lcom/sonyericsson/psm/sysmonservice/ISysmonService$Stub;->getThermalLevelForGameEnhancer()I
 
     move-result p0
 
-    .line 157
+    .line 191
     invoke-virtual {p3}, Landroid/os/Parcel;->writeNoException()V
 
-    .line 158
+    .line 192
     invoke-virtual {p3, p0}, Landroid/os/Parcel;->writeInt(I)V
 
     goto :goto_0
 
-    .line 149
-    :pswitch_2
+    .line 183
+    :pswitch_4
     invoke-virtual {p0}, Lcom/sonyericsson/psm/sysmonservice/ISysmonService$Stub;->getThermalLevelForTelephony()I
 
     move-result p0
 
-    .line 150
+    .line 184
     invoke-virtual {p3}, Landroid/os/Parcel;->writeNoException()V
 
-    .line 151
+    .line 185
     invoke-virtual {p3, p0}, Landroid/os/Parcel;->writeInt(I)V
 
     goto :goto_0
 
-    .line 142
-    :pswitch_3
+    .line 176
+    :pswitch_5
     invoke-virtual {p0}, Lcom/sonyericsson/psm/sysmonservice/ISysmonService$Stub;->getCameraLowTempBurnTimeoutSec()I
 
     move-result p0
 
-    .line 143
+    .line 177
     invoke-virtual {p3}, Landroid/os/Parcel;->writeNoException()V
 
-    .line 144
+    .line 178
     invoke-virtual {p3, p0}, Landroid/os/Parcel;->writeInt(I)V
 
     goto :goto_0
 
-    .line 135
-    :pswitch_4
+    .line 169
+    :pswitch_6
     invoke-virtual {p0}, Lcom/sonyericsson/psm/sysmonservice/ISysmonService$Stub;->getThermalLevelForFs1seg()I
 
     move-result p0
 
-    .line 136
+    .line 170
     invoke-virtual {p3}, Landroid/os/Parcel;->writeNoException()V
 
-    .line 137
+    .line 171
     invoke-virtual {p3, p0}, Landroid/os/Parcel;->writeInt(I)V
 
     goto :goto_0
 
-    .line 128
-    :pswitch_5
+    .line 162
+    :pswitch_7
     invoke-virtual {p0}, Lcom/sonyericsson/psm/sysmonservice/ISysmonService$Stub;->getThermalLevelForCamera()I
 
     move-result p0
 
-    .line 129
+    .line 163
     invoke-virtual {p3}, Landroid/os/Parcel;->writeNoException()V
 
-    .line 130
+    .line 164
     invoke-virtual {p3, p0}, Landroid/os/Parcel;->writeInt(I)V
 
     :goto_0
@@ -227,6 +259,8 @@
 
     :pswitch_data_0
     .packed-switch 0x1
+        :pswitch_7
+        :pswitch_6
         :pswitch_5
         :pswitch_4
         :pswitch_3

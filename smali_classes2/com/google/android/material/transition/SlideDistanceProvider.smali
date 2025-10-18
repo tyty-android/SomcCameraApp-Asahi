@@ -365,34 +365,34 @@
 .end method
 
 .method private static createTranslationXAnimator(Landroid/view/View;FFF)Landroid/animation/Animator;
-    .locals 3
+    .locals 5
+
+    const/4 v0, 0x1
 
     .line 192
-    sget-object v0, Landroid/view/View;->TRANSLATION_X:Landroid/util/Property;
+    new-array v1, v0, [Landroid/animation/PropertyValuesHolder;
 
-    const/4 v1, 0x2
+    sget-object v2, Landroid/view/View;->TRANSLATION_X:Landroid/util/Property;
 
-    new-array v1, v1, [F
+    const/4 v3, 0x2
 
-    const/4 v2, 0x0
+    new-array v3, v3, [F
 
-    aput p1, v1, v2
+    const/4 v4, 0x0
 
-    const/4 p1, 0x1
+    aput p1, v3, v4
 
-    aput p2, v1, p1
+    aput p2, v3, v0
 
     .line 195
-    invoke-static {v0, v1}, Landroid/animation/PropertyValuesHolder;->ofFloat(Landroid/util/Property;[F)Landroid/animation/PropertyValuesHolder;
+    invoke-static {v2, v3}, Landroid/animation/PropertyValuesHolder;->ofFloat(Landroid/util/Property;[F)Landroid/animation/PropertyValuesHolder;
 
-    move-result-object p2
+    move-result-object p1
 
-    new-array p1, p1, [Landroid/animation/PropertyValuesHolder;
-
-    aput-object p2, p1, v2
+    aput-object p1, v1, v4
 
     .line 193
-    invoke-static {p0, p1}, Landroid/animation/ObjectAnimator;->ofPropertyValuesHolder(Ljava/lang/Object;[Landroid/animation/PropertyValuesHolder;)Landroid/animation/ObjectAnimator;
+    invoke-static {p0, v1}, Landroid/animation/ObjectAnimator;->ofPropertyValuesHolder(Ljava/lang/Object;[Landroid/animation/PropertyValuesHolder;)Landroid/animation/ObjectAnimator;
 
     move-result-object p1
 
@@ -407,34 +407,34 @@
 .end method
 
 .method private static createTranslationYAnimator(Landroid/view/View;FFF)Landroid/animation/Animator;
-    .locals 3
+    .locals 5
+
+    const/4 v0, 0x1
 
     .line 211
-    sget-object v0, Landroid/view/View;->TRANSLATION_Y:Landroid/util/Property;
+    new-array v1, v0, [Landroid/animation/PropertyValuesHolder;
 
-    const/4 v1, 0x2
+    sget-object v2, Landroid/view/View;->TRANSLATION_Y:Landroid/util/Property;
 
-    new-array v1, v1, [F
+    const/4 v3, 0x2
 
-    const/4 v2, 0x0
+    new-array v3, v3, [F
 
-    aput p1, v1, v2
+    const/4 v4, 0x0
 
-    const/4 p1, 0x1
+    aput p1, v3, v4
 
-    aput p2, v1, p1
+    aput p2, v3, v0
 
     .line 214
-    invoke-static {v0, v1}, Landroid/animation/PropertyValuesHolder;->ofFloat(Landroid/util/Property;[F)Landroid/animation/PropertyValuesHolder;
+    invoke-static {v2, v3}, Landroid/animation/PropertyValuesHolder;->ofFloat(Landroid/util/Property;[F)Landroid/animation/PropertyValuesHolder;
 
-    move-result-object p2
+    move-result-object p1
 
-    new-array p1, p1, [Landroid/animation/PropertyValuesHolder;
-
-    aput-object p2, p1, v2
+    aput-object p1, v1, v4
 
     .line 212
-    invoke-static {p0, p1}, Landroid/animation/ObjectAnimator;->ofPropertyValuesHolder(Ljava/lang/Object;[Landroid/animation/PropertyValuesHolder;)Landroid/animation/ObjectAnimator;
+    invoke-static {p0, v1}, Landroid/animation/ObjectAnimator;->ofPropertyValuesHolder(Ljava/lang/Object;[Landroid/animation/PropertyValuesHolder;)Landroid/animation/ObjectAnimator;
 
     move-result-object p1
 

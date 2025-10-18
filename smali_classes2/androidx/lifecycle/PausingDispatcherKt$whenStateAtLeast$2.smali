@@ -1,6 +1,6 @@
 .class final Landroidx/lifecycle/PausingDispatcherKt$whenStateAtLeast$2;
 .super Lkotlin/coroutines/jvm/internal/SuspendLambda;
-.source "PausingDispatcher.kt"
+.source "PausingDispatcher.jvm.kt"
 
 # interfaces
 .implements Lkotlin/jvm/functions/Function2;
@@ -48,12 +48,12 @@
 
 .annotation runtime Lkotlin/coroutines/jvm/internal/DebugMetadata;
     c = "androidx.lifecycle.PausingDispatcherKt$whenStateAtLeast$2"
-    f = "PausingDispatcher.kt"
+    f = "PausingDispatcher.jvm.kt"
     i = {
         0x0
     }
     l = {
-        0xcb
+        0xcd
     }
     m = "invokeSuspend"
     n = {
@@ -205,7 +205,7 @@
 
     move-result-object v0
 
-    .line 197
+    .line 199
     iget v1, p0, Landroidx/lifecycle/PausingDispatcherKt$whenStateAtLeast$2;->label:I
 
     const/4 v2, 0x1
@@ -246,7 +246,7 @@
 
     check-cast p1, Lkotlinx/coroutines/CoroutineScope;
 
-    .line 198
+    .line 200
     invoke-interface {p1}, Lkotlinx/coroutines/CoroutineScope;->getCoroutineContext()Lkotlin/coroutines/CoroutineContext;
 
     move-result-object p1
@@ -263,12 +263,12 @@
 
     if-eqz p1, :cond_3
 
-    .line 199
+    .line 201
     new-instance v1, Landroidx/lifecycle/PausingDispatcher;
 
     invoke-direct {v1}, Landroidx/lifecycle/PausingDispatcher;-><init>()V
 
-    .line 201
+    .line 203
     new-instance v3, Landroidx/lifecycle/LifecycleController;
 
     iget-object v4, p0, Landroidx/lifecycle/PausingDispatcherKt$whenStateAtLeast$2;->$this_whenStateAtLeast:Landroidx/lifecycle/Lifecycle;
@@ -279,7 +279,7 @@
 
     invoke-direct {v3, v4, v5, v6, p1}, Landroidx/lifecycle/LifecycleController;-><init>(Landroidx/lifecycle/Lifecycle;Landroidx/lifecycle/Lifecycle$State;Landroidx/lifecycle/DispatchQueue;Lkotlinx/coroutines/Job;)V
 
-    .line 203
+    .line 205
     :try_start_1
     check-cast v1, Lkotlin/coroutines/CoroutineContext;
 
@@ -306,7 +306,7 @@
     :cond_2
     move-object p0, v3
 
-    .line 205
+    .line 207
     :goto_0
     invoke-virtual {p0}, Landroidx/lifecycle/LifecycleController;->finish()V
 
@@ -322,7 +322,7 @@
 
     throw p1
 
-    .line 198
+    .line 200
     :cond_3
     new-instance p0, Ljava/lang/IllegalStateException;
 

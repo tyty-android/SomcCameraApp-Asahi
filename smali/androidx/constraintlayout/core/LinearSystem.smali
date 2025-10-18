@@ -2023,6 +2023,8 @@
     :cond_3
     iget-boolean v0, p1, Landroidx/constraintlayout/core/ArrayRow;->isSimpleDefinition:Z
 
+    const/4 v4, 0x0
+
     if-nez v0, :cond_c
 
     .line 573
@@ -2057,17 +2059,17 @@
     iput-object v0, p1, Landroidx/constraintlayout/core/ArrayRow;->variable:Landroidx/constraintlayout/core/SolverVariable;
 
     .line 591
-    iget v4, p0, Landroidx/constraintlayout/core/LinearSystem;->mNumRows:I
+    iget v5, p0, Landroidx/constraintlayout/core/LinearSystem;->mNumRows:I
 
     .line 592
     invoke-direct {p0, p1}, Landroidx/constraintlayout/core/LinearSystem;->addRow(Landroidx/constraintlayout/core/ArrayRow;)V
 
     .line 593
-    iget v5, p0, Landroidx/constraintlayout/core/LinearSystem;->mNumRows:I
+    iget v6, p0, Landroidx/constraintlayout/core/LinearSystem;->mNumRows:I
 
-    add-int/2addr v4, v3
+    add-int/2addr v5, v3
 
-    if-ne v5, v4, :cond_9
+    if-ne v6, v5, :cond_9
 
     .line 595
     iget-object v4, p0, Landroidx/constraintlayout/core/LinearSystem;->mTempGoal:Landroidx/constraintlayout/core/LinearSystem$Row;
@@ -2159,7 +2161,7 @@
     goto :goto_1
 
     :cond_9
-    const/4 v3, 0x0
+    move v3, v4
 
     .line 624
     :cond_a
@@ -2173,10 +2175,12 @@
     return-void
 
     :cond_b
-    if-nez v3, :cond_d
+    move v4, v3
+
+    :cond_c
+    if-nez v4, :cond_d
 
     .line 634
-    :cond_c
     invoke-direct {p0, p1}, Landroidx/constraintlayout/core/LinearSystem;->addRow(Landroidx/constraintlayout/core/ArrayRow;)V
 
     :cond_d

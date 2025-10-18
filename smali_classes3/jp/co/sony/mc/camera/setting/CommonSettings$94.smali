@@ -21,7 +21,7 @@
 .method constructor <init>()V
     .locals 0
 
-    .line 1058
+    .line 1061
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -46,13 +46,13 @@
         }
     .end annotation
 
-    .line 1062
+    .line 1065
     check-cast p1, Ljp/co/sony/mc/camera/setting/CommonSettings;
 
-    .line 1063
+    .line 1066
     check-cast p3, Ljava/lang/String;
 
-    invoke-static {p1, p3}, Ljp/co/sony/mc/camera/setting/CommonSettings;->-$$Nest$msetYoutubeLiveId(Ljp/co/sony/mc/camera/setting/CommonSettings;Ljava/lang/String;)Z
+    invoke-static {p1, p3}, Ljp/co/sony/mc/camera/setting/CommonSettings;->-$$Nest$msetYoutubeLiveChatIdKey(Ljp/co/sony/mc/camera/setting/CommonSettings;Ljava/lang/String;)Z
 
     move-result p0
 

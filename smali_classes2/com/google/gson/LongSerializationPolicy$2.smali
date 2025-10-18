@@ -20,7 +20,7 @@
 
     const/4 v0, 0x0
 
-    .line 52
+    .line 50
     invoke-direct {p0, p1, p2, v0}, Lcom/google/gson/LongSerializationPolicy;-><init>(Ljava/lang/String;ILcom/google/gson/LongSerializationPolicy$1;)V
 
     return-void
@@ -33,12 +33,12 @@
 
     if-nez p1, :cond_0
 
-    .line 55
+    .line 54
     sget-object p0, Lcom/google/gson/JsonNull;->INSTANCE:Lcom/google/gson/JsonNull;
 
     return-object p0
 
-    .line 57
+    .line 56
     :cond_0
     new-instance p0, Lcom/google/gson/JsonPrimitive;
 

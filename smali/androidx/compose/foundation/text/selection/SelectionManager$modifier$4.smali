@@ -20,23 +20,22 @@
     value = {
         "Lkotlin/jvm/internal/Lambda;",
         "Lkotlin/jvm/functions/Function1<",
-        "Landroidx/compose/ui/input/key/KeyEvent;",
         "Ljava/lang/Boolean;",
+        "Lkotlin/Unit;",
         ">;"
     }
 .end annotation
 
 .annotation runtime Lkotlin/Metadata;
     d1 = {
-        "\u0000\u0010\n\u0000\n\u0002\u0010\u000b\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0002\u0010\u0000\u001a\u00020\u00012\u0006\u0010\u0002\u001a\u00020\u0003H\n\u00a2\u0006\u0004\u0008\u0004\u0010\u0005"
+        "\u0000\u000e\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0010\u000b\n\u0000\u0010\u0000\u001a\u00020\u00012\u0006\u0010\u0002\u001a\u00020\u0003H\n\u00a2\u0006\u0002\u0008\u0004"
     }
     d2 = {
         "<anonymous>",
         "",
         "it",
-        "Landroidx/compose/ui/input/key/KeyEvent;",
-        "invoke-ZmokQxo",
-        "(Landroid/view/KeyEvent;)Ljava/lang/Boolean;"
+        "",
+        "invoke"
     }
     k = 0x3
     mv = {
@@ -70,51 +69,27 @@
 .method public bridge synthetic invoke(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
 
-    .line 129
-    check-cast p1, Landroidx/compose/ui/input/key/KeyEvent;
+    .line 155
+    check-cast p1, Ljava/lang/Boolean;
 
-    invoke-virtual {p1}, Landroidx/compose/ui/input/key/KeyEvent;->unbox-impl()Landroid/view/KeyEvent;
+    invoke-virtual {p1}, Ljava/lang/Boolean;->booleanValue()Z
 
-    move-result-object p1
+    move-result p1
 
-    invoke-virtual {p0, p1}, Landroidx/compose/foundation/text/selection/SelectionManager$modifier$4;->invoke-ZmokQxo(Landroid/view/KeyEvent;)Ljava/lang/Boolean;
+    invoke-virtual {p0, p1}, Landroidx/compose/foundation/text/selection/SelectionManager$modifier$4;->invoke(Z)V
 
-    move-result-object p0
+    sget-object p0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
 
     return-object p0
 .end method
 
-.method public final invoke-ZmokQxo(Landroid/view/KeyEvent;)Ljava/lang/Boolean;
-    .locals 1
+.method public final invoke(Z)V
+    .locals 0
 
-    const-string v0, "it"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 130
-    invoke-static {p1}, Landroidx/compose/foundation/text/selection/SelectionManager_androidKt;->isCopyKeyEvent-ZmokQxo(Landroid/view/KeyEvent;)Z
-
-    move-result p1
-
-    if-eqz p1, :cond_0
-
-    .line 131
+    .line 155
     iget-object p0, p0, Landroidx/compose/foundation/text/selection/SelectionManager$modifier$4;->this$0:Landroidx/compose/foundation/text/selection/SelectionManager;
 
-    invoke-virtual {p0}, Landroidx/compose/foundation/text/selection/SelectionManager;->copy$foundation_release()V
+    invoke-virtual {p0, p1}, Landroidx/compose/foundation/text/selection/SelectionManager;->setInTouchMode(Z)V
 
-    const/4 p0, 0x1
-
-    goto :goto_0
-
-    :cond_0
-    const/4 p0, 0x0
-
-    .line 134
-    :goto_0
-    invoke-static {p0}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
-
-    move-result-object p0
-
-    return-object p0
+    return-void
 .end method

@@ -69,7 +69,7 @@
 .method public bridge synthetic invoke(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
 
-    .line 312
+    .line 314
     check-cast p1, Landroidx/compose/ui/layout/LayoutCoordinates;
 
     invoke-virtual {p0, p1}, Landroidx/compose/ui/window/AndroidPopup_androidKt$Popup$7;->invoke(Landroidx/compose/ui/layout/LayoutCoordinates;)V
@@ -80,20 +80,16 @@
 .end method
 
 .method public final invoke(Landroidx/compose/ui/layout/LayoutCoordinates;)V
-    .locals 1
+    .locals 0
 
-    const-string v0, "childCoordinates"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 317
+    .line 319
     invoke-interface {p1}, Landroidx/compose/ui/layout/LayoutCoordinates;->getParentLayoutCoordinates()Landroidx/compose/ui/layout/LayoutCoordinates;
 
     move-result-object p1
 
     invoke-static {p1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;)V
 
-    .line 318
+    .line 320
     iget-object p0, p0, Landroidx/compose/ui/window/AndroidPopup_androidKt$Popup$7;->$popupLayout:Landroidx/compose/ui/window/PopupLayout;
 
     invoke-virtual {p0, p1}, Landroidx/compose/ui/window/PopupLayout;->updateParentLayoutCoordinates(Landroidx/compose/ui/layout/LayoutCoordinates;)V

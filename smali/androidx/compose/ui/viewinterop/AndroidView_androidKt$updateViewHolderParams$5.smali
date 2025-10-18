@@ -89,7 +89,7 @@
 .method public bridge synthetic invoke(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
 
-    .line 297
+    .line 301
     check-cast p1, Landroidx/compose/ui/node/LayoutNode;
 
     check-cast p2, Landroidx/compose/ui/unit/LayoutDirection;
@@ -104,15 +104,7 @@
 .method public final invoke(Landroidx/compose/ui/node/LayoutNode;Landroidx/compose/ui/unit/LayoutDirection;)V
     .locals 1
 
-    const-string p0, "$this$set"
-
-    invoke-static {p1, p0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string p0, "it"
-
-    invoke-static {p2, p0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 298
+    .line 302
     invoke-static {p1}, Landroidx/compose/ui/viewinterop/AndroidView_androidKt;->access$requireViewFactoryHolder(Landroidx/compose/ui/node/LayoutNode;)Landroidx/compose/ui/viewinterop/ViewFactoryHolder;
 
     move-result-object p0
@@ -135,7 +127,7 @@
 
     goto :goto_0
 
-    .line 300
+    .line 304
     :cond_0
     new-instance p0, Lkotlin/NoWhenBranchMatchedException;
 
@@ -146,7 +138,7 @@
     :cond_1
     const/4 p2, 0x0
 
-    .line 298
+    .line 302
     :goto_0
     invoke-virtual {p0, p2}, Landroidx/compose/ui/viewinterop/ViewFactoryHolder;->setLayoutDirection(I)V
 

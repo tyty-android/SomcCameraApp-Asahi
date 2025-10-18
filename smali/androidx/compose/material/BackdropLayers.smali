@@ -60,7 +60,7 @@
 .method static constructor <clinit>()V
     .locals 3
 
-    .line 484
+    .line 486
     new-instance v0, Landroidx/compose/material/BackdropLayers;
 
     const-string v1, "Back"
@@ -98,7 +98,7 @@
         }
     .end annotation
 
-    .line 484
+    .line 486
     invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
     return-void

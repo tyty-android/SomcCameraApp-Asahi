@@ -69,7 +69,7 @@
 
 # direct methods
 .method public constructor <init>(Ljava/lang/Object;Landroidx/compose/animation/core/AnimationState;)V
-    .locals 1
+    .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TT;",
@@ -78,17 +78,13 @@
         }
     .end annotation
 
-    const-string v0, "currentAnimationState"
-
-    invoke-static {p2, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 327
+    .line 329
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 328
+    .line 330
     iput-object p1, p0, Landroidx/compose/foundation/gestures/snapping/AnimationResult;->remainingOffset:Ljava/lang/Object;
 
-    .line 329
+    .line 331
     iput-object p2, p0, Landroidx/compose/foundation/gestures/snapping/AnimationResult;->currentAnimationState:Landroidx/compose/animation/core/AnimationState;
 
     return-void
@@ -104,7 +100,7 @@
         }
     .end annotation
 
-    .line 331
+    .line 333
     iget-object p0, p0, Landroidx/compose/foundation/gestures/snapping/AnimationResult;->remainingOffset:Ljava/lang/Object;
 
     return-object p0
@@ -120,7 +116,7 @@
         }
     .end annotation
 
-    .line 332
+    .line 334
     iget-object p0, p0, Landroidx/compose/foundation/gestures/snapping/AnimationResult;->currentAnimationState:Landroidx/compose/animation/core/AnimationState;
 
     return-object p0
@@ -136,7 +132,7 @@
         }
     .end annotation
 
-    .line 329
+    .line 331
     iget-object p0, p0, Landroidx/compose/foundation/gestures/snapping/AnimationResult;->currentAnimationState:Landroidx/compose/animation/core/AnimationState;
 
     return-object p0
@@ -150,7 +146,7 @@
         }
     .end annotation
 
-    .line 328
+    .line 330
     iget-object p0, p0, Landroidx/compose/foundation/gestures/snapping/AnimationResult;->remainingOffset:Ljava/lang/Object;
 
     return-object p0

@@ -69,7 +69,7 @@
 .method public final invoke(F)Ljava/lang/Float;
     .locals 0
 
-    .line 162
+    .line 187
     iget-object p0, p0, Landroidx/compose/foundation/lazy/LazyListState$scrollableState$1;->this$0:Landroidx/compose/foundation/lazy/LazyListState;
 
     neg-float p1, p1
@@ -90,7 +90,7 @@
 .method public bridge synthetic invoke(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
 
-    .line 162
+    .line 187
     check-cast p1, Ljava/lang/Number;
 
     invoke-virtual {p1}, Ljava/lang/Number;->floatValue()F

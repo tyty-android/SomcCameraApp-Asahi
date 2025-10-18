@@ -14,19 +14,36 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/SourceDebugExtension;
-    value = "SMAP\nRecordingInfoViewBinder.kt\nKotlin\n*S Kotlin\n*F\n+ 1 RecordingInfoViewBinder.kt\njp/co/sony/mc/camera/view/viewbinder/RecordingInfoViewBinder\n+ 2 View.kt\nandroidx/core/view/ViewKt\n*L\n1#1,225:1\n387#2,2:226\n347#2:228\n326#2,4:229\n375#2,2:233\n347#2:235\n326#2,4:236\n*S KotlinDebug\n*F\n+ 1 RecordingInfoViewBinder.kt\njp/co/sony/mc/camera/view/viewbinder/RecordingInfoViewBinder\n*L\n166#1:226,2\n167#1:228\n168#1:229,4\n181#1:233,2\n182#1:235\n183#1:236,4\n*E\n"
+    value = "SMAP\nRecordingInfoViewBinder.kt\nKotlin\n*S Kotlin\n*F\n+ 1 RecordingInfoViewBinder.kt\njp/co/sony/mc/camera/view/viewbinder/RecordingInfoViewBinder\n+ 2 _Collections.kt\nkotlin/collections/CollectionsKt___CollectionsKt\n*L\n1#1,323:1\n1863#2,2:324\n*S KotlinDebug\n*F\n+ 1 RecordingInfoViewBinder.kt\njp/co/sony/mc/camera/view/viewbinder/RecordingInfoViewBinder\n*L\n139#1:324,2\n*E\n"
 .end annotation
 
 .annotation runtime Lkotlin/Metadata;
     d1 = {
-        "\u0000r\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0003\n\u0002\u0018\u0002\n\u0002\u0008\u0003\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0003\n\u0002\u0018\u0002\n\u0002\u0008\u0003\n\u0002\u0018\u0002\n\u0002\u0008\u0003\n\u0002\u0018\u0002\n\u0002\u0008\u0003\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0005\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0007\n\u0000\u0008\u0007\u0018\u00002\u00020\u0001B\r\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u00a2\u0006\u0002\u0010\u0004J\u0010\u0010\"\u001a\u00020#2\u0006\u0010$\u001a\u00020%H\u0002J\u0010\u0010&\u001a\u00020#2\u0006\u0010\'\u001a\u00020\u0013H\u0016J\u0010\u0010(\u001a\u00020#2\u0006\u0010\'\u001a\u00020\u0013H\u0016J\u0010\u0010)\u001a\u00020#2\u0006\u0010*\u001a\u00020+H\u0002J \u0010,\u001a\u00020#2\u0006\u0010$\u001a\u00020%2\u0006\u0010-\u001a\u00020.2\u0006\u0010/\u001a\u000200H\u0002R\u000e\u0010\u0002\u001a\u00020\u0003X\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u0014\u0010\u0005\u001a\u00020\u00068BX\u0082\u0004\u00a2\u0006\u0006\u001a\u0004\u0008\u0007\u0010\u0008R\u0014\u0010\t\u001a\u00020\n8BX\u0082\u0004\u00a2\u0006\u0006\u001a\u0004\u0008\u000b\u0010\u000cR\u0016\u0010\r\u001a\n \u000f*\u0004\u0018\u00010\u000e0\u000eX\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u0010\u001a\u00020\u0011X\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u0014\u0010\u0012\u001a\u00020\u00138BX\u0082\u0004\u00a2\u0006\u0006\u001a\u0004\u0008\u0014\u0010\u0015R\u0014\u0010\u0016\u001a\u00020\u00178BX\u0082\u0004\u00a2\u0006\u0006\u001a\u0004\u0008\u0018\u0010\u0019R\u0014\u0010\u001a\u001a\u00020\u001b8BX\u0082\u0004\u00a2\u0006\u0006\u001a\u0004\u0008\u001c\u0010\u001dR\u0014\u0010\u001e\u001a\u00020\u001f8BX\u0082\u0004\u00a2\u0006\u0006\u001a\u0004\u0008 \u0010!\u00a8\u00061"
+        "\u0000t\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0003\n\u0002\u0018\u0002\n\u0002\u0008\u0003\n\u0002\u0018\u0002\n\u0002\u0008\u0003\n\u0002\u0018\u0002\n\u0002\u0008\u0003\n\u0002\u0018\u0002\n\u0002\u0008\u0003\n\u0002\u0018\u0002\n\u0002\u0008\u0003\n\u0002\u0018\u0002\n\u0002\u0008\u0003\n\u0002\u0018\u0002\n\u0002\u0008\u0003\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0002\n\u0002\u0008\u0004\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0007\n\u0002\u0008\u0002\n\u0002\u0010\u0008\n\u0002\u0008\u0005\u0008\u0007\u0018\u00002\u00020\u0001B\u000f\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u00a2\u0006\u0004\u0008\u0004\u0010\u0005J\u0010\u0010$\u001a\u00020%2\u0006\u0010&\u001a\u00020\u0007H\u0016J\u0010\u0010\'\u001a\u00020%2\u0006\u0010&\u001a\u00020\u0007H\u0016J \u0010(\u001a\u00020%2\u0006\u0010)\u001a\u00020*2\u0006\u0010+\u001a\u00020,2\u0006\u0010-\u001a\u00020.H\u0002J\u0010\u0010/\u001a\u00020%2\u0006\u00100\u001a\u000201H\u0002J\u0018\u00102\u001a\u00020%2\u0006\u00100\u001a\u0002012\u0006\u00103\u001a\u000201H\u0002J\u0018\u00104\u001a\u00020%2\u0006\u00100\u001a\u0002012\u0006\u00105\u001a\u000201H\u0002R\u000e\u0010\u0002\u001a\u00020\u0003X\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u0014\u0010\u0006\u001a\u00020\u00078BX\u0082\u0004\u00a2\u0006\u0006\u001a\u0004\u0008\u0008\u0010\tR\u0014\u0010\n\u001a\u00020\u000b8BX\u0082\u0004\u00a2\u0006\u0006\u001a\u0004\u0008\u000c\u0010\rR\u0014\u0010\u000e\u001a\u00020\u000f8BX\u0082\u0004\u00a2\u0006\u0006\u001a\u0004\u0008\u0010\u0010\u0011R\u0014\u0010\u0012\u001a\u00020\u00138BX\u0082\u0004\u00a2\u0006\u0006\u001a\u0004\u0008\u0014\u0010\u0015R\u0014\u0010\u0016\u001a\u00020\u00178BX\u0082\u0004\u00a2\u0006\u0006\u001a\u0004\u0008\u0018\u0010\u0019R\u0014\u0010\u001a\u001a\u00020\u001b8BX\u0082\u0004\u00a2\u0006\u0006\u001a\u0004\u0008\u001c\u0010\u001dR\u0018\u0010\u001e\u001a\n  *\u0004\u0018\u00010\u001f0\u001fX\u0082\u0004\u00a2\u0006\u0004\n\u0002\u0010!R\u000e\u0010\"\u001a\u00020#X\u0082\u0004\u00a2\u0006\u0002\n\u0000\u00a8\u00066"
     }
     d2 = {
         "Ljp/co/sony/mc/camera/view/viewbinder/RecordingInfoViewBinder;",
         "Landroidx/lifecycle/DefaultLifecycleObserver;",
         "binding",
         "Ljp/co/sony/mc/camera/databinding/RecordingInfoBinding;",
+        "<init>",
         "(Ljp/co/sony/mc/camera/databinding/RecordingInfoBinding;)V",
+        "lifecycleOwner",
+        "Landroidx/lifecycle/LifecycleOwner;",
+        "getLifecycleOwner",
+        "()Landroidx/lifecycle/LifecycleOwner;",
+        "orientationViewModel",
+        "Ljp/co/sony/mc/camera/view/viewmodel/OrientationViewModel;",
+        "getOrientationViewModel",
+        "()Ljp/co/sony/mc/camera/view/viewmodel/OrientationViewModel;",
+        "viewFinderUiState",
+        "Ljp/co/sony/mc/camera/view/uistate/ViewFinderUiState;",
+        "getViewFinderUiState",
+        "()Ljp/co/sony/mc/camera/view/uistate/ViewFinderUiState;",
+        "proModeFocusUiState",
+        "Ljp/co/sony/mc/camera/view/uistate/ProModeFocusUiState;",
+        "getProModeFocusUiState",
+        "()Ljp/co/sony/mc/camera/view/uistate/ProModeFocusUiState;",
         "cameraSettingsModel",
         "Ljp/co/sony/mc/camera/view/viewmodel/CameraSettingsModel;",
         "getCameraSettingsModel",
@@ -38,45 +55,33 @@
         "context",
         "Landroid/content/Context;",
         "kotlin.jvm.PlatformType",
+        "Landroid/content/Context;",
         "infoLayoutChangeListener",
         "Landroid/view/View$OnLayoutChangeListener;",
-        "lifecycleOwner",
-        "Landroidx/lifecycle/LifecycleOwner;",
-        "getLifecycleOwner",
-        "()Landroidx/lifecycle/LifecycleOwner;",
-        "orientationViewModel",
-        "Ljp/co/sony/mc/camera/view/viewmodel/OrientationViewModel;",
-        "getOrientationViewModel",
-        "()Ljp/co/sony/mc/camera/view/viewmodel/OrientationViewModel;",
-        "proModeFocusUiState",
-        "Ljp/co/sony/mc/camera/view/uistate/ProModeFocusUiState;",
-        "getProModeFocusUiState",
-        "()Ljp/co/sony/mc/camera/view/uistate/ProModeFocusUiState;",
-        "viewFinderUiState",
-        "Ljp/co/sony/mc/camera/view/uistate/ViewFinderUiState;",
-        "getViewFinderUiState",
-        "()Ljp/co/sony/mc/camera/view/uistate/ViewFinderUiState;",
-        "adjustInfoContainerLocation",
-        "",
-        "layoutOrientation",
-        "Ljp/co/sony/mc/camera/view/orientation/LayoutOrientation;",
         "onCreate",
+        "",
         "owner",
         "onDestroy",
-        "resetCenterPoint",
-        "layout",
-        "Landroid/widget/LinearLayout;",
         "rotateInfoContainer",
+        "layoutOrientation",
+        "Ljp/co/sony/mc/camera/view/orientation/LayoutOrientation;",
         "capturingMode",
         "Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;",
         "mfSliderAlpha",
         "",
+        "alignRecordingInfoToTop",
+        "topMargin",
+        "",
+        "alignRecordingInfoToTopStart",
+        "startMargin",
+        "alignRecordingInfoToTopEnd",
+        "endMargin",
         "SomcCamera_release"
     }
     k = 0x1
     mv = {
-        0x1,
-        0x9,
+        0x2,
+        0x0,
         0x0
     }
     xi = 0x30
@@ -96,6 +101,46 @@
 
 
 # direct methods
+.method public static synthetic $r8$lambda$D_8tlT6REIobKnuD-JD3Y3FUsG0(Ljp/co/sony/mc/camera/view/viewbinder/RecordingInfoViewBinder;Ljava/lang/String;)Lkotlin/Unit;
+    .locals 0
+
+    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/view/viewbinder/RecordingInfoViewBinder;->onCreate$lambda$5(Ljp/co/sony/mc/camera/view/viewbinder/RecordingInfoViewBinder;Ljava/lang/String;)Lkotlin/Unit;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method public static synthetic $r8$lambda$QuWdChUfeRBgUiI4Y3xBKn8Vkjc(ZLjp/co/sony/mc/camera/configuration/parameters/CapturingMode;FLjp/co/sony/mc/camera/view/orientation/LayoutOrientation;Ljp/co/sony/mc/camera/view/uistate/PreviewCoverState;)Ljp/co/sony/mc/camera/util/TuplesUtil$Quintuple;
+    .locals 0
+
+    invoke-static {p0, p1, p2, p3, p4}, Ljp/co/sony/mc/camera/view/viewbinder/RecordingInfoViewBinder;->onCreate$lambda$3(ZLjp/co/sony/mc/camera/configuration/parameters/CapturingMode;FLjp/co/sony/mc/camera/view/orientation/LayoutOrientation;Ljp/co/sony/mc/camera/view/uistate/PreviewCoverState;)Ljp/co/sony/mc/camera/util/TuplesUtil$Quintuple;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method public static synthetic $r8$lambda$Zly8iau2tdFEHNhJo9KANZG5QPQ(Ljp/co/sony/mc/camera/view/viewbinder/RecordingInfoViewBinder;Ljp/co/sony/mc/camera/util/TuplesUtil$Quintuple;)Lkotlin/Unit;
+    .locals 0
+
+    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/view/viewbinder/RecordingInfoViewBinder;->onCreate$lambda$4(Ljp/co/sony/mc/camera/view/viewbinder/RecordingInfoViewBinder;Ljp/co/sony/mc/camera/util/TuplesUtil$Quintuple;)Lkotlin/Unit;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method public static synthetic $r8$lambda$veKRvcI7MGdbH9pBL8XDs7MyiD4(Ljp/co/sony/mc/camera/view/viewbinder/RecordingInfoViewBinder;Ljava/lang/Boolean;)Lkotlin/Unit;
+    .locals 0
+
+    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/view/viewbinder/RecordingInfoViewBinder;->onCreate$lambda$2(Ljp/co/sony/mc/camera/view/viewbinder/RecordingInfoViewBinder;Ljava/lang/Boolean;)Lkotlin/Unit;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
 .method public static synthetic $r8$lambda$y-EXw1A4Q3h_4fRrnslt719vxoE(Ljp/co/sony/mc/camera/view/viewbinder/RecordingInfoViewBinder;Landroid/view/View;IIIIIIII)V
     .locals 0
 
@@ -117,13 +162,13 @@
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 30
+    .line 28
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 31
+    .line 29
     iput-object p1, p0, Ljp/co/sony/mc/camera/view/viewbinder/RecordingInfoViewBinder;->binding:Ljp/co/sony/mc/camera/databinding/RecordingInfoBinding;
 
-    .line 46
+    .line 44
     iget-object p1, p1, Ljp/co/sony/mc/camera/databinding/RecordingInfoBinding;->root:Landroidx/constraintlayout/widget/ConstraintLayout;
 
     invoke-virtual {p1}, Landroidx/constraintlayout/widget/ConstraintLayout;->getContext()Landroid/content/Context;
@@ -132,14 +177,14 @@
 
     iput-object p1, p0, Ljp/co/sony/mc/camera/view/viewbinder/RecordingInfoViewBinder;->context:Landroid/content/Context;
 
-    .line 49
-    new-instance p1, Ljp/co/sony/mc/camera/view/viewbinder/RecordingInfoViewBinder$$ExternalSyntheticLambda0;
+    .line 47
+    new-instance p1, Ljp/co/sony/mc/camera/view/viewbinder/RecordingInfoViewBinder$$ExternalSyntheticLambda4;
 
-    invoke-direct {p1, p0}, Ljp/co/sony/mc/camera/view/viewbinder/RecordingInfoViewBinder$$ExternalSyntheticLambda0;-><init>(Ljp/co/sony/mc/camera/view/viewbinder/RecordingInfoViewBinder;)V
+    invoke-direct {p1, p0}, Ljp/co/sony/mc/camera/view/viewbinder/RecordingInfoViewBinder$$ExternalSyntheticLambda4;-><init>(Ljp/co/sony/mc/camera/view/viewbinder/RecordingInfoViewBinder;)V
 
     iput-object p1, p0, Ljp/co/sony/mc/camera/view/viewbinder/RecordingInfoViewBinder;->infoLayoutChangeListener:Landroid/view/View$OnLayoutChangeListener;
 
-    .line 63
+    .line 60
     invoke-direct {p0}, Ljp/co/sony/mc/camera/view/viewbinder/RecordingInfoViewBinder;->getLifecycleOwner()Landroidx/lifecycle/LifecycleOwner;
 
     move-result-object p1
@@ -155,132 +200,213 @@
     return-void
 .end method
 
-.method public static final synthetic access$adjustInfoContainerLocation(Ljp/co/sony/mc/camera/view/viewbinder/RecordingInfoViewBinder;Ljp/co/sony/mc/camera/view/orientation/LayoutOrientation;)V
-    .locals 0
+.method private final alignRecordingInfoToTop(I)V
+    .locals 8
 
-    .line 30
-    invoke-direct {p0, p1}, Ljp/co/sony/mc/camera/view/viewbinder/RecordingInfoViewBinder;->adjustInfoContainerLocation(Ljp/co/sony/mc/camera/view/orientation/LayoutOrientation;)V
+    .line 283
+    iget-object v0, p0, Ljp/co/sony/mc/camera/view/viewbinder/RecordingInfoViewBinder;->binding:Ljp/co/sony/mc/camera/databinding/RecordingInfoBinding;
+
+    iget-object v0, v0, Ljp/co/sony/mc/camera/databinding/RecordingInfoBinding;->root:Landroidx/constraintlayout/widget/ConstraintLayout;
+
+    const-string v1, "root"
+
+    invoke-static {v0, v1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 284
+    iget-object p0, p0, Ljp/co/sony/mc/camera/view/viewbinder/RecordingInfoViewBinder;->binding:Ljp/co/sony/mc/camera/databinding/RecordingInfoBinding;
+
+    iget-object p0, p0, Ljp/co/sony/mc/camera/databinding/RecordingInfoBinding;->infoContainer:Landroid/widget/LinearLayout;
+
+    invoke-virtual {p0}, Landroid/widget/LinearLayout;->getId()I
+
+    move-result p0
+
+    .line 285
+    new-instance v7, Landroidx/constraintlayout/widget/ConstraintSet;
+
+    invoke-direct {v7}, Landroidx/constraintlayout/widget/ConstraintSet;-><init>()V
+
+    .line 286
+    invoke-virtual {v7, v0}, Landroidx/constraintlayout/widget/ConstraintSet;->clone(Landroidx/constraintlayout/widget/ConstraintLayout;)V
+
+    const/4 v1, 0x4
+
+    .line 287
+    invoke-virtual {v7, p0, v1}, Landroidx/constraintlayout/widget/ConstraintSet;->clear(II)V
+
+    const/4 v5, 0x6
+
+    const/4 v6, 0x0
+
+    const/4 v3, 0x6
+
+    const/4 v4, 0x0
+
+    move-object v1, v7
+
+    move v2, p0
+
+    .line 288
+    invoke-virtual/range {v1 .. v6}, Landroidx/constraintlayout/widget/ConstraintSet;->connect(IIIII)V
+
+    const/4 v5, 0x3
+
+    const/4 v3, 0x3
+
+    move v6, p1
+
+    .line 289
+    invoke-virtual/range {v1 .. v6}, Landroidx/constraintlayout/widget/ConstraintSet;->connect(IIIII)V
+
+    const/4 v5, 0x7
+
+    const/4 v6, 0x0
+
+    const/4 v3, 0x7
+
+    .line 291
+    invoke-virtual/range {v1 .. v6}, Landroidx/constraintlayout/widget/ConstraintSet;->connect(IIIII)V
+
+    .line 292
+    invoke-virtual {v7, v0}, Landroidx/constraintlayout/widget/ConstraintSet;->applyTo(Landroidx/constraintlayout/widget/ConstraintLayout;)V
 
     return-void
 .end method
 
-.method public static final synthetic access$getBinding$p(Ljp/co/sony/mc/camera/view/viewbinder/RecordingInfoViewBinder;)Ljp/co/sony/mc/camera/databinding/RecordingInfoBinding;
-    .locals 0
+.method private final alignRecordingInfoToTopEnd(II)V
+    .locals 8
 
-    .line 30
+    .line 310
+    iget-object v0, p0, Ljp/co/sony/mc/camera/view/viewbinder/RecordingInfoViewBinder;->binding:Ljp/co/sony/mc/camera/databinding/RecordingInfoBinding;
+
+    iget-object v0, v0, Ljp/co/sony/mc/camera/databinding/RecordingInfoBinding;->root:Landroidx/constraintlayout/widget/ConstraintLayout;
+
+    const-string v1, "root"
+
+    invoke-static {v0, v1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 311
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/viewbinder/RecordingInfoViewBinder;->binding:Ljp/co/sony/mc/camera/databinding/RecordingInfoBinding;
 
-    return-object p0
-.end method
+    iget-object p0, p0, Ljp/co/sony/mc/camera/databinding/RecordingInfoBinding;->infoContainer:Landroid/widget/LinearLayout;
 
-.method public static final synthetic access$rotateInfoContainer(Ljp/co/sony/mc/camera/view/viewbinder/RecordingInfoViewBinder;Ljp/co/sony/mc/camera/view/orientation/LayoutOrientation;Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;F)V
-    .locals 0
+    invoke-virtual {p0}, Landroid/widget/LinearLayout;->getId()I
 
-    .line 30
-    invoke-direct {p0, p1, p2, p3}, Ljp/co/sony/mc/camera/view/viewbinder/RecordingInfoViewBinder;->rotateInfoContainer(Ljp/co/sony/mc/camera/view/orientation/LayoutOrientation;Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;F)V
+    move-result p0
+
+    .line 312
+    new-instance v7, Landroidx/constraintlayout/widget/ConstraintSet;
+
+    invoke-direct {v7}, Landroidx/constraintlayout/widget/ConstraintSet;-><init>()V
+
+    .line 313
+    invoke-virtual {v7, v0}, Landroidx/constraintlayout/widget/ConstraintSet;->clone(Landroidx/constraintlayout/widget/ConstraintLayout;)V
+
+    const/4 v1, 0x6
+
+    .line 314
+    invoke-virtual {v7, p0, v1}, Landroidx/constraintlayout/widget/ConstraintSet;->clear(II)V
+
+    const/4 v1, 0x4
+
+    .line 315
+    invoke-virtual {v7, p0, v1}, Landroidx/constraintlayout/widget/ConstraintSet;->clear(II)V
+
+    const/4 v4, 0x0
+
+    const/4 v5, 0x7
+
+    const/4 v3, 0x7
+
+    move-object v1, v7
+
+    move v2, p0
+
+    move v6, p2
+
+    .line 316
+    invoke-virtual/range {v1 .. v6}, Landroidx/constraintlayout/widget/ConstraintSet;->connect(IIIII)V
+
+    const/4 v5, 0x3
+
+    const/4 v3, 0x3
+
+    move v6, p1
+
+    .line 318
+    invoke-virtual/range {v1 .. v6}, Landroidx/constraintlayout/widget/ConstraintSet;->connect(IIIII)V
+
+    .line 320
+    invoke-virtual {v7, v0}, Landroidx/constraintlayout/widget/ConstraintSet;->applyTo(Landroidx/constraintlayout/widget/ConstraintLayout;)V
 
     return-void
 .end method
 
-.method private final adjustInfoContainerLocation(Ljp/co/sony/mc/camera/view/orientation/LayoutOrientation;)V
-    .locals 2
+.method private final alignRecordingInfoToTopStart(II)V
+    .locals 8
 
-    .line 196
-    sget-object v0, Ljp/co/sony/mc/camera/view/viewbinder/RecordingInfoViewBinder$WhenMappings;->$EnumSwitchMapping$0:[I
+    .line 296
+    iget-object v0, p0, Ljp/co/sony/mc/camera/view/viewbinder/RecordingInfoViewBinder;->binding:Ljp/co/sony/mc/camera/databinding/RecordingInfoBinding;
 
-    invoke-virtual {p1}, Ljp/co/sony/mc/camera/view/orientation/LayoutOrientation;->ordinal()I
+    iget-object v0, v0, Ljp/co/sony/mc/camera/databinding/RecordingInfoBinding;->root:Landroidx/constraintlayout/widget/ConstraintLayout;
 
-    move-result p1
+    const-string v1, "root"
 
-    aget p1, v0, p1
+    invoke-static {v0, v1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
 
-    const/4 v0, 0x1
-
-    if-eq p1, v0, :cond_2
-
-    const/4 v0, 0x2
-
-    if-eq p1, v0, :cond_2
-
-    const/4 v0, 0x3
-
-    if-eq p1, v0, :cond_1
-
-    const/4 v0, 0x4
-
-    if-ne p1, v0, :cond_0
-
-    .line 206
-    iget-object p1, p0, Ljp/co/sony/mc/camera/view/viewbinder/RecordingInfoViewBinder;->binding:Ljp/co/sony/mc/camera/databinding/RecordingInfoBinding;
-
-    iget-object p1, p1, Ljp/co/sony/mc/camera/databinding/RecordingInfoBinding;->reverseLandAnchor:Landroid/widget/Space;
-
-    invoke-virtual {p1}, Landroid/widget/Space;->getId()I
-
-    move-result p1
-
-    goto :goto_0
-
-    :cond_0
-    new-instance p0, Lkotlin/NoWhenBranchMatchedException;
-
-    invoke-direct {p0}, Lkotlin/NoWhenBranchMatchedException;-><init>()V
-
-    throw p0
-
-    .line 202
-    :cond_1
-    iget-object p1, p0, Ljp/co/sony/mc/camera/view/viewbinder/RecordingInfoViewBinder;->binding:Ljp/co/sony/mc/camera/databinding/RecordingInfoBinding;
-
-    iget-object p1, p1, Ljp/co/sony/mc/camera/databinding/RecordingInfoBinding;->landAnchor:Landroid/widget/Space;
-
-    invoke-virtual {p1}, Landroid/widget/Space;->getId()I
-
-    move-result p1
-
-    goto :goto_0
-
-    .line 198
-    :cond_2
-    iget-object p1, p0, Ljp/co/sony/mc/camera/view/viewbinder/RecordingInfoViewBinder;->binding:Ljp/co/sony/mc/camera/databinding/RecordingInfoBinding;
-
-    iget-object p1, p1, Ljp/co/sony/mc/camera/databinding/RecordingInfoBinding;->portAnchor:Landroid/widget/Space;
-
-    invoke-virtual {p1}, Landroid/widget/Space;->getId()I
-
-    move-result p1
-
-    .line 209
-    :goto_0
-    new-instance v0, Landroidx/constraintlayout/widget/ConstraintSet;
-
-    invoke-direct {v0}, Landroidx/constraintlayout/widget/ConstraintSet;-><init>()V
-
-    .line 210
-    iget-object v1, p0, Ljp/co/sony/mc/camera/view/viewbinder/RecordingInfoViewBinder;->binding:Ljp/co/sony/mc/camera/databinding/RecordingInfoBinding;
-
-    iget-object v1, v1, Ljp/co/sony/mc/camera/databinding/RecordingInfoBinding;->root:Landroidx/constraintlayout/widget/ConstraintLayout;
-
-    invoke-virtual {v0, v1}, Landroidx/constraintlayout/widget/ConstraintSet;->clone(Landroidx/constraintlayout/widget/ConstraintLayout;)V
-
-    .line 212
-    iget-object v1, p0, Ljp/co/sony/mc/camera/view/viewbinder/RecordingInfoViewBinder;->binding:Ljp/co/sony/mc/camera/databinding/RecordingInfoBinding;
-
-    iget-object v1, v1, Ljp/co/sony/mc/camera/databinding/RecordingInfoBinding;->infoContainer:Landroid/widget/LinearLayout;
-
-    invoke-virtual {v1}, Landroid/widget/LinearLayout;->getId()I
-
-    move-result v1
-
-    .line 211
-    invoke-static {v0, v1, p1}, Ljp/co/sony/mc/camera/view/viewbinder/BindingUtilsKt;->alignCenter(Landroidx/constraintlayout/widget/ConstraintSet;II)V
-
-    .line 215
+    .line 297
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/viewbinder/RecordingInfoViewBinder;->binding:Ljp/co/sony/mc/camera/databinding/RecordingInfoBinding;
 
-    iget-object p0, p0, Ljp/co/sony/mc/camera/databinding/RecordingInfoBinding;->root:Landroidx/constraintlayout/widget/ConstraintLayout;
+    iget-object p0, p0, Ljp/co/sony/mc/camera/databinding/RecordingInfoBinding;->infoContainer:Landroid/widget/LinearLayout;
 
-    invoke-virtual {v0, p0}, Landroidx/constraintlayout/widget/ConstraintSet;->applyTo(Landroidx/constraintlayout/widget/ConstraintLayout;)V
+    invoke-virtual {p0}, Landroid/widget/LinearLayout;->getId()I
+
+    move-result p0
+
+    .line 298
+    new-instance v7, Landroidx/constraintlayout/widget/ConstraintSet;
+
+    invoke-direct {v7}, Landroidx/constraintlayout/widget/ConstraintSet;-><init>()V
+
+    .line 299
+    invoke-virtual {v7, v0}, Landroidx/constraintlayout/widget/ConstraintSet;->clone(Landroidx/constraintlayout/widget/ConstraintLayout;)V
+
+    const/4 v1, 0x7
+
+    .line 300
+    invoke-virtual {v7, p0, v1}, Landroidx/constraintlayout/widget/ConstraintSet;->clear(II)V
+
+    const/4 v1, 0x4
+
+    .line 301
+    invoke-virtual {v7, p0, v1}, Landroidx/constraintlayout/widget/ConstraintSet;->clear(II)V
+
+    const/4 v4, 0x0
+
+    const/4 v5, 0x6
+
+    const/4 v3, 0x6
+
+    move-object v1, v7
+
+    move v2, p0
+
+    move v6, p2
+
+    .line 302
+    invoke-virtual/range {v1 .. v6}, Landroidx/constraintlayout/widget/ConstraintSet;->connect(IIIII)V
+
+    const/4 v5, 0x3
+
+    const/4 v3, 0x3
+
+    move v6, p1
+
+    .line 304
+    invoke-virtual/range {v1 .. v6}, Landroidx/constraintlayout/widget/ConstraintSet;->connect(IIIII)V
+
+    .line 306
+    invoke-virtual {v7, v0}, Landroidx/constraintlayout/widget/ConstraintSet;->applyTo(Landroidx/constraintlayout/widget/ConstraintLayout;)V
 
     return-void
 .end method
@@ -288,7 +414,7 @@
 .method private final getCameraSettingsModel()Ljp/co/sony/mc/camera/view/viewmodel/CameraSettingsModel;
     .locals 0
 
-    .line 42
+    .line 40
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/viewbinder/RecordingInfoViewBinder;->binding:Ljp/co/sony/mc/camera/databinding/RecordingInfoBinding;
 
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/databinding/RecordingInfoBinding;->getCameraSettingsModel()Ljp/co/sony/mc/camera/view/viewmodel/CameraSettingsModel;
@@ -303,7 +429,7 @@
 .method private final getCameraStatusModel()Ljp/co/sony/mc/camera/view/viewmodel/CameraStatusModel;
     .locals 0
 
-    .line 44
+    .line 42
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/viewbinder/RecordingInfoViewBinder;->binding:Ljp/co/sony/mc/camera/databinding/RecordingInfoBinding;
 
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/databinding/RecordingInfoBinding;->getCameraStatusModel()Ljp/co/sony/mc/camera/view/viewmodel/CameraStatusModel;
@@ -318,7 +444,7 @@
 .method private final getLifecycleOwner()Landroidx/lifecycle/LifecycleOwner;
     .locals 0
 
-    .line 34
+    .line 32
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/viewbinder/RecordingInfoViewBinder;->binding:Ljp/co/sony/mc/camera/databinding/RecordingInfoBinding;
 
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/databinding/RecordingInfoBinding;->getLifecycleOwner()Landroidx/lifecycle/LifecycleOwner;
@@ -333,7 +459,7 @@
 .method private final getOrientationViewModel()Ljp/co/sony/mc/camera/view/viewmodel/OrientationViewModel;
     .locals 0
 
-    .line 36
+    .line 34
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/viewbinder/RecordingInfoViewBinder;->binding:Ljp/co/sony/mc/camera/databinding/RecordingInfoBinding;
 
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/databinding/RecordingInfoBinding;->getOrientationViewModel()Ljp/co/sony/mc/camera/view/viewmodel/OrientationViewModel;
@@ -348,7 +474,7 @@
 .method private final getProModeFocusUiState()Ljp/co/sony/mc/camera/view/uistate/ProModeFocusUiState;
     .locals 0
 
-    .line 40
+    .line 38
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/viewbinder/RecordingInfoViewBinder;->binding:Ljp/co/sony/mc/camera/databinding/RecordingInfoBinding;
 
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/databinding/RecordingInfoBinding;->getProModeFocusUiState()Ljp/co/sony/mc/camera/view/uistate/ProModeFocusUiState;
@@ -363,7 +489,7 @@
 .method private final getViewFinderUiState()Ljp/co/sony/mc/camera/view/uistate/ViewFinderUiState;
     .locals 0
 
-    .line 38
+    .line 36
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/viewbinder/RecordingInfoViewBinder;->binding:Ljp/co/sony/mc/camera/databinding/RecordingInfoBinding;
 
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/databinding/RecordingInfoBinding;->getViewFinderUiState()Ljp/co/sony/mc/camera/view/uistate/ViewFinderUiState;
@@ -382,7 +508,7 @@
 
     invoke-static {p0, p1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 50
+    .line 48
     invoke-direct {p0}, Ljp/co/sony/mc/camera/view/viewbinder/RecordingInfoViewBinder;->getOrientationViewModel()Ljp/co/sony/mc/camera/view/viewmodel/OrientationViewModel;
 
     move-result-object p1
@@ -399,7 +525,7 @@
 
     if-eqz p1, :cond_0
 
-    .line 51
+    .line 49
     invoke-direct {p0}, Ljp/co/sony/mc/camera/view/viewbinder/RecordingInfoViewBinder;->getViewFinderUiState()Ljp/co/sony/mc/camera/view/uistate/ViewFinderUiState;
 
     move-result-object p2
@@ -424,18 +550,7 @@
 
     if-nez p2, :cond_0
 
-    .line 52
-    iget-object p2, p0, Ljp/co/sony/mc/camera/view/viewbinder/RecordingInfoViewBinder;->binding:Ljp/co/sony/mc/camera/databinding/RecordingInfoBinding;
-
-    iget-object p2, p2, Ljp/co/sony/mc/camera/databinding/RecordingInfoBinding;->infoContainer:Landroid/widget/LinearLayout;
-
-    const-string p3, "infoContainer"
-
-    invoke-static {p2, p3}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
-
-    invoke-direct {p0, p2}, Ljp/co/sony/mc/camera/view/viewbinder/RecordingInfoViewBinder;->resetCenterPoint(Landroid/widget/LinearLayout;)V
-
-    .line 53
+    .line 50
     invoke-direct {p0}, Ljp/co/sony/mc/camera/view/viewbinder/RecordingInfoViewBinder;->getCameraSettingsModel()Ljp/co/sony/mc/camera/view/viewmodel/CameraSettingsModel;
 
     move-result-object p2
@@ -450,7 +565,7 @@
 
     check-cast p2, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
-    .line 54
+    .line 51
     invoke-direct {p0}, Ljp/co/sony/mc/camera/view/viewbinder/RecordingInfoViewBinder;->getProModeFocusUiState()Ljp/co/sony/mc/camera/view/uistate/ProModeFocusUiState;
 
     move-result-object p3
@@ -469,7 +584,7 @@
 
     if-eqz p2, :cond_0
 
-    .line 56
+    .line 53
     invoke-virtual {p3}, Ljava/lang/Float;->floatValue()F
 
     move-result p3
@@ -480,71 +595,309 @@
     return-void
 .end method
 
-.method private final resetCenterPoint(Landroid/widget/LinearLayout;)V
-    .locals 2
+.method private static final onCreate$lambda$2(Ljp/co/sony/mc/camera/view/viewbinder/RecordingInfoViewBinder;Ljava/lang/Boolean;)Lkotlin/Unit;
+    .locals 1
 
-    .line 219
-    invoke-virtual {p1}, Landroid/widget/LinearLayout;->getWidth()I
+    const-string/jumbo v0, "this$0"
 
-    move-result p0
+    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    int-to-float p0, p0
+    .line 65
+    invoke-virtual {p1}, Ljava/lang/Boolean;->booleanValue()Z
 
-    const/high16 v0, 0x40000000    # 2.0f
+    move-result p1
 
-    div-float/2addr p0, v0
+    if-eqz p1, :cond_0
 
-    .line 220
-    invoke-virtual {p1}, Landroid/widget/LinearLayout;->getHeight()I
+    .line 66
+    iget-object p0, p0, Ljp/co/sony/mc/camera/view/viewbinder/RecordingInfoViewBinder;->binding:Ljp/co/sony/mc/camera/databinding/RecordingInfoBinding;
 
-    move-result v1
+    iget-object p0, p0, Ljp/co/sony/mc/camera/databinding/RecordingInfoBinding;->recordingDurationLandscape:Landroid/widget/LinearLayout;
 
-    int-to-float v1, v1
+    const p1, 0x7f080292
 
-    div-float/2addr v1, v0
-
-    .line 221
-    invoke-virtual {p1, p0}, Landroid/widget/LinearLayout;->setPivotX(F)V
-
-    .line 222
-    invoke-virtual {p1, v1}, Landroid/widget/LinearLayout;->setPivotY(F)V
-
-    return-void
-.end method
-
-.method private final rotateInfoContainer(Ljp/co/sony/mc/camera/view/orientation/LayoutOrientation;Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;F)V
-    .locals 8
-
-    .line 130
-    sget-object v0, Ljp/co/sony/mc/camera/view/viewbinder/RecordingInfoViewBinder$WhenMappings;->$EnumSwitchMapping$0:[I
-
-    invoke-virtual {p1}, Ljp/co/sony/mc/camera/view/orientation/LayoutOrientation;->ordinal()I
-
-    move-result v1
-
-    aget v0, v0, v1
-
-    const/4 v1, 0x1
-
-    const/4 v2, 0x2
-
-    if-eq v0, v1, :cond_1
-
-    if-eq v0, v2, :cond_1
-
-    const/4 v1, 0x3
-
-    if-eq v0, v1, :cond_2
-
-    const/4 v1, 0x4
-
-    if-ne v0, v1, :cond_0
-
-    const/4 v1, 0x5
+    invoke-virtual {p0, p1}, Landroid/widget/LinearLayout;->setBackgroundResource(I)V
 
     goto :goto_0
 
-    .line 140
+    .line 70
+    :cond_0
+    iget-object p0, p0, Ljp/co/sony/mc/camera/view/viewbinder/RecordingInfoViewBinder;->binding:Ljp/co/sony/mc/camera/databinding/RecordingInfoBinding;
+
+    iget-object p0, p0, Ljp/co/sony/mc/camera/databinding/RecordingInfoBinding;->recordingDurationLandscape:Landroid/widget/LinearLayout;
+
+    const p1, 0x7f080291
+
+    invoke-virtual {p0, p1}, Landroid/widget/LinearLayout;->setBackgroundResource(I)V
+
+    .line 74
+    :goto_0
+    sget-object p0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
+
+    return-object p0
+.end method
+
+.method private static final onCreate$lambda$3(ZLjp/co/sony/mc/camera/configuration/parameters/CapturingMode;FLjp/co/sony/mc/camera/view/orientation/LayoutOrientation;Ljp/co/sony/mc/camera/view/uistate/PreviewCoverState;)Ljp/co/sony/mc/camera/util/TuplesUtil$Quintuple;
+    .locals 7
+
+    const-string v0, "orientation"
+
+    invoke-static {p3, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+
+    const-string v0, "coverState"
+
+    invoke-static {p4, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 83
+    new-instance v0, Ljp/co/sony/mc/camera/util/TuplesUtil$Quintuple;
+
+    invoke-static {p0}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
+
+    move-result-object v2
+
+    invoke-static {p2}, Ljava/lang/Float;->valueOf(F)Ljava/lang/Float;
+
+    move-result-object v4
+
+    move-object v1, v0
+
+    move-object v3, p1
+
+    move-object v5, p3
+
+    move-object v6, p4
+
+    invoke-direct/range {v1 .. v6}, Ljp/co/sony/mc/camera/util/TuplesUtil$Quintuple;-><init>(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)V
+
+    return-object v0
+.end method
+
+.method private static final onCreate$lambda$4(Ljp/co/sony/mc/camera/view/viewbinder/RecordingInfoViewBinder;Ljp/co/sony/mc/camera/util/TuplesUtil$Quintuple;)Lkotlin/Unit;
+    .locals 8
+
+    const-string/jumbo v0, "this$0"
+
+    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 85
+    invoke-virtual {p1}, Ljp/co/sony/mc/camera/util/TuplesUtil$Quintuple;->component1()Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, Ljava/lang/Boolean;
+
+    invoke-virtual {v0}, Ljava/lang/Boolean;->booleanValue()Z
+
+    move-result v0
+
+    invoke-virtual {p1}, Ljp/co/sony/mc/camera/util/TuplesUtil$Quintuple;->component2()Ljava/lang/Object;
+
+    move-result-object v1
+
+    check-cast v1, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
+
+    invoke-virtual {p1}, Ljp/co/sony/mc/camera/util/TuplesUtil$Quintuple;->component3()Ljava/lang/Object;
+
+    move-result-object v2
+
+    check-cast v2, Ljava/lang/Number;
+
+    invoke-virtual {v2}, Ljava/lang/Number;->floatValue()F
+
+    move-result v2
+
+    invoke-virtual {p1}, Ljp/co/sony/mc/camera/util/TuplesUtil$Quintuple;->component4()Ljava/lang/Object;
+
+    move-result-object v3
+
+    check-cast v3, Ljp/co/sony/mc/camera/view/orientation/LayoutOrientation;
+
+    invoke-virtual {p1}, Ljp/co/sony/mc/camera/util/TuplesUtil$Quintuple;->component5()Ljava/lang/Object;
+
+    move-result-object p1
+
+    check-cast p1, Ljp/co/sony/mc/camera/view/uistate/PreviewCoverState;
+
+    .line 86
+    invoke-virtual {v3}, Ljp/co/sony/mc/camera/view/orientation/LayoutOrientation;->isPortrait()Z
+
+    move-result v4
+
+    const/16 v5, 0x8
+
+    if-eqz v4, :cond_0
+
+    .line 87
+    iget-object p1, p0, Ljp/co/sony/mc/camera/view/viewbinder/RecordingInfoViewBinder;->binding:Ljp/co/sony/mc/camera/databinding/RecordingInfoBinding;
+
+    iget-object p1, p1, Ljp/co/sony/mc/camera/databinding/RecordingInfoBinding;->recordingDurationLandscape:Landroid/widget/LinearLayout;
+
+    invoke-virtual {p1, v5}, Landroid/widget/LinearLayout;->setVisibility(I)V
+
+    .line 88
+    iget-object p1, p0, Ljp/co/sony/mc/camera/view/viewbinder/RecordingInfoViewBinder;->binding:Ljp/co/sony/mc/camera/databinding/RecordingInfoBinding;
+
+    iget-object p1, p1, Ljp/co/sony/mc/camera/databinding/RecordingInfoBinding;->streamingDurationLandscape:Landroid/widget/LinearLayout;
+
+    invoke-virtual {p1, v5}, Landroid/widget/LinearLayout;->setVisibility(I)V
+
+    goto :goto_0
+
+    .line 90
+    :cond_0
+    invoke-virtual {v1}, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->isStreaming()Z
+
+    move-result v4
+
+    const/4 v6, 0x0
+
+    const/4 v7, 0x4
+
+    if-eqz v4, :cond_2
+
+    .line 91
+    iget-object v4, p0, Ljp/co/sony/mc/camera/view/viewbinder/RecordingInfoViewBinder;->binding:Ljp/co/sony/mc/camera/databinding/RecordingInfoBinding;
+
+    iget-object v4, v4, Ljp/co/sony/mc/camera/databinding/RecordingInfoBinding;->recordingDurationLandscape:Landroid/widget/LinearLayout;
+
+    invoke-virtual {v4, v5}, Landroid/widget/LinearLayout;->setVisibility(I)V
+
+    if-eqz v0, :cond_1
+
+    .line 92
+    instance-of p1, p1, Ljp/co/sony/mc/camera/view/uistate/PreviewCoverState$Invisible;
+
+    if-eqz p1, :cond_1
+
+    .line 93
+    iget-object p1, p0, Ljp/co/sony/mc/camera/view/viewbinder/RecordingInfoViewBinder;->binding:Ljp/co/sony/mc/camera/databinding/RecordingInfoBinding;
+
+    iget-object p1, p1, Ljp/co/sony/mc/camera/databinding/RecordingInfoBinding;->streamingDurationLandscape:Landroid/widget/LinearLayout;
+
+    invoke-virtual {p1, v6}, Landroid/widget/LinearLayout;->setVisibility(I)V
+
+    goto :goto_0
+
+    .line 95
+    :cond_1
+    iget-object p1, p0, Ljp/co/sony/mc/camera/view/viewbinder/RecordingInfoViewBinder;->binding:Ljp/co/sony/mc/camera/databinding/RecordingInfoBinding;
+
+    iget-object p1, p1, Ljp/co/sony/mc/camera/databinding/RecordingInfoBinding;->streamingDurationLandscape:Landroid/widget/LinearLayout;
+
+    invoke-virtual {p1, v7}, Landroid/widget/LinearLayout;->setVisibility(I)V
+
+    goto :goto_0
+
+    .line 98
+    :cond_2
+    iget-object v4, p0, Ljp/co/sony/mc/camera/view/viewbinder/RecordingInfoViewBinder;->binding:Ljp/co/sony/mc/camera/databinding/RecordingInfoBinding;
+
+    iget-object v4, v4, Ljp/co/sony/mc/camera/databinding/RecordingInfoBinding;->streamingDurationLandscape:Landroid/widget/LinearLayout;
+
+    invoke-virtual {v4, v5}, Landroid/widget/LinearLayout;->setVisibility(I)V
+
+    if-eqz v0, :cond_3
+
+    .line 99
+    instance-of p1, p1, Ljp/co/sony/mc/camera/view/uistate/PreviewCoverState$Invisible;
+
+    if-eqz p1, :cond_3
+
+    .line 100
+    iget-object p1, p0, Ljp/co/sony/mc/camera/view/viewbinder/RecordingInfoViewBinder;->binding:Ljp/co/sony/mc/camera/databinding/RecordingInfoBinding;
+
+    iget-object p1, p1, Ljp/co/sony/mc/camera/databinding/RecordingInfoBinding;->recordingDurationLandscape:Landroid/widget/LinearLayout;
+
+    invoke-virtual {p1, v6}, Landroid/widget/LinearLayout;->setVisibility(I)V
+
+    goto :goto_0
+
+    .line 102
+    :cond_3
+    iget-object p1, p0, Ljp/co/sony/mc/camera/view/viewbinder/RecordingInfoViewBinder;->binding:Ljp/co/sony/mc/camera/databinding/RecordingInfoBinding;
+
+    iget-object p1, p1, Ljp/co/sony/mc/camera/databinding/RecordingInfoBinding;->recordingDurationLandscape:Landroid/widget/LinearLayout;
+
+    invoke-virtual {p1, v7}, Landroid/widget/LinearLayout;->setVisibility(I)V
+
+    .line 106
+    :goto_0
+    invoke-static {v1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;)V
+
+    invoke-direct {p0, v3, v1, v2}, Ljp/co/sony/mc/camera/view/viewbinder/RecordingInfoViewBinder;->rotateInfoContainer(Ljp/co/sony/mc/camera/view/orientation/LayoutOrientation;Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;F)V
+
+    .line 107
+    sget-object p0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
+
+    return-object p0
+.end method
+
+.method private static final onCreate$lambda$5(Ljp/co/sony/mc/camera/view/viewbinder/RecordingInfoViewBinder;Ljava/lang/String;)Lkotlin/Unit;
+    .locals 1
+
+    const-string/jumbo v0, "this$0"
+
+    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 110
+    iget-object v0, p0, Ljp/co/sony/mc/camera/view/viewbinder/RecordingInfoViewBinder;->binding:Ljp/co/sony/mc/camera/databinding/RecordingInfoBinding;
+
+    iget-object v0, v0, Ljp/co/sony/mc/camera/databinding/RecordingInfoBinding;->recordingStatus:Ljp/co/sony/mc/camera/view/widget/TextTextureView;
+
+    invoke-static {p1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;)V
+
+    invoke-virtual {v0, p1}, Ljp/co/sony/mc/camera/view/widget/TextTextureView;->setText(Ljava/lang/String;)V
+
+    .line 111
+    iget-object p0, p0, Ljp/co/sony/mc/camera/view/viewbinder/RecordingInfoViewBinder;->binding:Ljp/co/sony/mc/camera/databinding/RecordingInfoBinding;
+
+    iget-object p0, p0, Ljp/co/sony/mc/camera/databinding/RecordingInfoBinding;->streamStatus:Ljp/co/sony/mc/camera/view/widget/TextTextureView;
+
+    invoke-virtual {p0, p1}, Ljp/co/sony/mc/camera/view/widget/TextTextureView;->setText(Ljava/lang/String;)V
+
+    .line 112
+    sget-object p0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
+
+    return-object p0
+.end method
+
+.method private final rotateInfoContainer(Ljp/co/sony/mc/camera/view/orientation/LayoutOrientation;Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;F)V
+    .locals 11
+
+    .line 127
+    iget-object v0, p0, Ljp/co/sony/mc/camera/view/viewbinder/RecordingInfoViewBinder;->binding:Ljp/co/sony/mc/camera/databinding/RecordingInfoBinding;
+
+    iget-object v0, v0, Ljp/co/sony/mc/camera/databinding/RecordingInfoBinding;->infoContainer:Landroid/widget/LinearLayout;
+
+    .line 128
+    sget-object v1, Ljp/co/sony/mc/camera/view/viewbinder/RecordingInfoViewBinder$WhenMappings;->$EnumSwitchMapping$0:[I
+
+    invoke-virtual {p1}, Ljp/co/sony/mc/camera/view/orientation/LayoutOrientation;->ordinal()I
+
+    move-result v2
+
+    aget v1, v1, v2
+
+    const/4 v2, 0x4
+
+    const/4 v3, 0x3
+
+    const/4 v4, 0x2
+
+    const/4 v5, 0x1
+
+    if-eq v1, v5, :cond_2
+
+    if-eq v1, v4, :cond_2
+
+    if-eq v1, v3, :cond_1
+
+    if-ne v1, v2, :cond_0
+
+    const v1, 0x800005
+
+    goto :goto_0
+
     :cond_0
     new-instance p0, Lkotlin/NoWhenBranchMatchedException;
 
@@ -553,393 +906,638 @@
     throw p0
 
     :cond_1
+    const v1, 0x800003
+
+    goto :goto_0
+
+    :cond_2
     const/16 v1, 0x11
 
-    .line 144
-    :cond_2
     :goto_0
-    iget-object v0, p0, Ljp/co/sony/mc/camera/view/viewbinder/RecordingInfoViewBinder;->binding:Ljp/co/sony/mc/camera/databinding/RecordingInfoBinding;
+    invoke-virtual {v0, v1}, Landroid/widget/LinearLayout;->setGravity(I)V
 
-    iget-object v0, v0, Ljp/co/sony/mc/camera/databinding/RecordingInfoBinding;->infoContainer:Landroid/widget/LinearLayout;
+    .line 136
+    new-array v0, v3, [Landroid/widget/TextView;
 
-    invoke-virtual {v0}, Landroid/widget/LinearLayout;->getHeight()I
+    iget-object v1, p0, Ljp/co/sony/mc/camera/view/viewbinder/RecordingInfoViewBinder;->binding:Ljp/co/sony/mc/camera/databinding/RecordingInfoBinding;
 
-    move-result v0
+    iget-object v1, v1, Ljp/co/sony/mc/camera/databinding/RecordingInfoBinding;->productShowcase:Landroid/widget/TextView;
 
-    .line 145
-    div-int/2addr v0, v2
+    const/4 v6, 0x0
 
-    .line 146
-    iget-object v2, p0, Ljp/co/sony/mc/camera/view/viewbinder/RecordingInfoViewBinder;->context:Landroid/content/Context;
+    aput-object v1, v0, v6
 
-    invoke-virtual {v2}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
+    .line 137
+    iget-object v1, p0, Ljp/co/sony/mc/camera/view/viewbinder/RecordingInfoViewBinder;->binding:Ljp/co/sony/mc/camera/databinding/RecordingInfoBinding;
 
-    move-result-object v2
+    iget-object v1, v1, Ljp/co/sony/mc/camera/databinding/RecordingInfoBinding;->autoFramingRecordingMode:Landroid/widget/TextView;
 
-    const v3, 0x7f070362
+    aput-object v1, v0, v5
 
-    invoke-virtual {v2, v3}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
+    .line 138
+    iget-object v1, p0, Ljp/co/sony/mc/camera/view/viewbinder/RecordingInfoViewBinder;->binding:Ljp/co/sony/mc/camera/databinding/RecordingInfoBinding;
 
-    move-result v2
+    iget-object v1, v1, Ljp/co/sony/mc/camera/databinding/RecordingInfoBinding;->farmingAssistIndicator:Landroid/widget/TextView;
 
-    add-int/2addr v0, v2
+    aput-object v1, v0, v4
 
-    .line 149
-    invoke-virtual {p2}, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->isProVideo()Z
+    .line 135
+    invoke-static {v0}, Lkotlin/collections/CollectionsKt;->listOf([Ljava/lang/Object;)Ljava/util/List;
 
-    move-result v2
+    move-result-object v0
 
-    if-eqz v2, :cond_4
+    check-cast v0, Ljava/lang/Iterable;
 
-    const/4 v2, 0x0
+    .line 324
+    invoke-interface {v0}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
 
-    cmpg-float p3, p3, v2
+    move-result-object v0
 
-    const v2, 0x7f0706ea
-
-    if-nez p3, :cond_3
-
-    .line 157
-    iget-object p3, p0, Ljp/co/sony/mc/camera/view/viewbinder/RecordingInfoViewBinder;->context:Landroid/content/Context;
-
-    invoke-virtual {p3}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
-
-    move-result-object p3
-
-    invoke-virtual {p3, v2}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
-
-    move-result p3
-
-    goto :goto_1
-
-    .line 151
-    :cond_3
-    iget-object p3, p0, Ljp/co/sony/mc/camera/view/viewbinder/RecordingInfoViewBinder;->context:Landroid/content/Context;
-
-    invoke-virtual {p3}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
-
-    move-result-object p3
-
-    invoke-virtual {p3, v2}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
-
-    move-result p3
-
-    .line 153
-    iget-object v2, p0, Ljp/co/sony/mc/camera/view/viewbinder/RecordingInfoViewBinder;->context:Landroid/content/Context;
-
-    invoke-virtual {v2}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
-
-    move-result-object v2
-
-    const v3, 0x7f0706eb
-
-    invoke-virtual {v2, v3}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
-
-    move-result v2
-
-    add-int/2addr p3, v2
-
-    goto :goto_1
-
-    .line 162
-    :cond_4
-    iget-object p3, p0, Ljp/co/sony/mc/camera/view/viewbinder/RecordingInfoViewBinder;->context:Landroid/content/Context;
-
-    invoke-virtual {p3}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
-
-    move-result-object p3
-
-    const v2, 0x7f0700ae
-
-    invoke-virtual {p3, v2}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
-
-    move-result p3
-
-    .line 166
     :goto_1
-    iget-object v2, p0, Ljp/co/sony/mc/camera/view/viewbinder/RecordingInfoViewBinder;->binding:Ljp/co/sony/mc/camera/databinding/RecordingInfoBinding;
+    invoke-interface {v0}, Ljava/util/Iterator;->hasNext()Z
 
-    iget-object v2, v2, Ljp/co/sony/mc/camera/databinding/RecordingInfoBinding;->landAnchor:Landroid/widget/Space;
+    move-result v1
 
-    const-string v3, "landAnchor"
+    if-eqz v1, :cond_7
 
-    invoke-static {v2, v3}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-interface {v0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
-    check-cast v2, Landroid/view/View;
+    move-result-object v1
 
-    .line 226
-    invoke-virtual {v2}, Landroid/view/View;->getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
+    check-cast v1, Landroid/widget/TextView;
 
-    move-result-object v2
+    .line 141
+    invoke-virtual {v1}, Landroid/widget/TextView;->getContext()Landroid/content/Context;
 
-    .line 227
-    instance-of v4, v2, Landroid/view/ViewGroup$MarginLayoutParams;
+    move-result-object v7
 
-    const/4 v5, 0x0
+    const-string v8, "getContext(...)"
 
-    if-eqz v4, :cond_5
+    invoke-static {v7, v8}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
 
-    check-cast v2, Landroid/view/ViewGroup$MarginLayoutParams;
+    invoke-static {v7}, Ljp/co/sony/mc/camera/util/ContextExtensionsKt;->isLargeDisplaySize(Landroid/content/Context;)Z
 
-    invoke-virtual {v2}, Landroid/view/ViewGroup$MarginLayoutParams;->getMarginEnd()I
+    move-result v7
 
-    move-result v2
+    if-eqz v7, :cond_4
+
+    .line 142
+    invoke-virtual {p1}, Ljp/co/sony/mc/camera/view/orientation/LayoutOrientation;->isPortrait()Z
+
+    move-result v7
+
+    if-eqz v7, :cond_3
+
+    .line 143
+    iget-object v7, p0, Ljp/co/sony/mc/camera/view/viewbinder/RecordingInfoViewBinder;->binding:Ljp/co/sony/mc/camera/databinding/RecordingInfoBinding;
+
+    iget-object v7, v7, Ljp/co/sony/mc/camera/databinding/RecordingInfoBinding;->root:Landroidx/constraintlayout/widget/ConstraintLayout;
+
+    invoke-virtual {v7}, Landroidx/constraintlayout/widget/ConstraintLayout;->getWidth()I
+
+    move-result v7
+
+    invoke-virtual {v1}, Landroid/widget/TextView;->getContext()Landroid/content/Context;
+
+    move-result-object v9
+
+    invoke-virtual {v9}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
+
+    move-result-object v9
+
+    const v10, 0x7f070103
+
+    invoke-virtual {v9, v10}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
+
+    move-result v9
+
+    mul-int/2addr v9, v4
+
+    sub-int/2addr v7, v9
 
     goto :goto_2
 
+    .line 147
+    :cond_3
+    invoke-virtual {v1}, Landroid/widget/TextView;->getContext()Landroid/content/Context;
+
+    move-result-object v7
+
+    invoke-virtual {v7}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
+
+    move-result-object v7
+
+    const v9, 0x7f0700ff
+
+    invoke-virtual {v7, v9}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
+
+    move-result v7
+
+    goto :goto_2
+
+    .line 152
+    :cond_4
+    invoke-virtual {p1}, Ljp/co/sony/mc/camera/view/orientation/LayoutOrientation;->isPortrait()Z
+
+    move-result v7
+
+    if-eqz v7, :cond_5
+
+    .line 153
+    invoke-virtual {v1}, Landroid/widget/TextView;->getContext()Landroid/content/Context;
+
+    move-result-object v7
+
+    invoke-virtual {v7}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
+
+    move-result-object v7
+
+    const v9, 0x7f070104
+
+    invoke-virtual {v7, v9}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
+
+    move-result v7
+
+    goto :goto_2
+
+    .line 157
     :cond_5
-    move v2, v5
+    invoke-virtual {v1}, Landroid/widget/TextView;->getContext()Landroid/content/Context;
 
+    move-result-object v7
+
+    invoke-virtual {v7}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
+
+    move-result-object v7
+
+    const v9, 0x7f070100
+
+    invoke-virtual {v7, v9}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
+
+    move-result v7
+
+    .line 141
     :goto_2
-    const/4 v4, 0x0
+    invoke-virtual {v1, v7}, Landroid/widget/TextView;->setMaxWidth(I)V
 
-    .line 166
-    const-string v6, "null cannot be cast to non-null type androidx.constraintlayout.widget.ConstraintLayout.LayoutParams"
+    .line 162
+    invoke-virtual {v1}, Landroid/widget/TextView;->getContext()Landroid/content/Context;
 
-    if-ne v2, v0, :cond_8
+    move-result-object v7
 
-    .line 167
-    iget-object v2, p0, Ljp/co/sony/mc/camera/view/viewbinder/RecordingInfoViewBinder;->binding:Ljp/co/sony/mc/camera/databinding/RecordingInfoBinding;
+    invoke-static {v7, v8}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
 
-    iget-object v2, v2, Ljp/co/sony/mc/camera/databinding/RecordingInfoBinding;->landAnchor:Landroid/widget/Space;
+    invoke-static {v7}, Ljp/co/sony/mc/camera/util/ContextExtensionsKt;->isLargeDisplaySize(Landroid/content/Context;)Z
 
-    invoke-static {v2, v3}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
-
-    check-cast v2, Landroid/view/View;
-
-    .line 228
-    invoke-virtual {v2}, Landroid/view/View;->getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
-
-    move-result-object v2
-
-    instance-of v7, v2, Landroid/view/ViewGroup$MarginLayoutParams;
+    move-result v7
 
     if-eqz v7, :cond_6
 
-    check-cast v2, Landroid/view/ViewGroup$MarginLayoutParams;
+    invoke-virtual {p1}, Ljp/co/sony/mc/camera/view/orientation/LayoutOrientation;->isPortrait()Z
+
+    move-result v7
+
+    if-eqz v7, :cond_6
+
+    .line 163
+    invoke-virtual {v1}, Landroid/widget/TextView;->getContext()Landroid/content/Context;
+
+    move-result-object v7
+
+    invoke-virtual {v7}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
+
+    move-result-object v7
+
+    const v8, 0x7f0a0004
+
+    invoke-virtual {v7, v8}, Landroid/content/res/Resources;->getInteger(I)I
+
+    move-result v7
 
     goto :goto_3
 
+    .line 167
     :cond_6
-    move-object v2, v4
+    invoke-virtual {v1}, Landroid/widget/TextView;->getContext()Landroid/content/Context;
 
+    move-result-object v7
+
+    invoke-virtual {v7}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
+
+    move-result-object v7
+
+    const v8, 0x7f0a0003
+
+    invoke-virtual {v7, v8}, Landroid/content/res/Resources;->getInteger(I)I
+
+    move-result v7
+
+    .line 162
     :goto_3
-    if-eqz v2, :cond_7
+    invoke-virtual {v1, v7}, Landroid/widget/TextView;->setMaxLines(I)V
 
-    iget v2, v2, Landroid/view/ViewGroup$MarginLayoutParams;->topMargin:I
+    goto/16 :goto_1
+
+    .line 174
+    :cond_7
+    iget-object v0, p0, Ljp/co/sony/mc/camera/view/viewbinder/RecordingInfoViewBinder;->binding:Ljp/co/sony/mc/camera/databinding/RecordingInfoBinding;
+
+    iget-object v0, v0, Ljp/co/sony/mc/camera/databinding/RecordingInfoBinding;->basicModeIndicatorContainer:Landroid/widget/FrameLayout;
+
+    .line 175
+    invoke-virtual {p1}, Ljp/co/sony/mc/camera/view/orientation/LayoutOrientation;->isPortrait()Z
+
+    move-result v1
+
+    if-eqz v1, :cond_8
+
+    .line 176
+    invoke-virtual {v0}, Landroid/widget/FrameLayout;->getContext()Landroid/content/Context;
+
+    move-result-object v1
+
+    invoke-virtual {v1}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
+
+    move-result-object v1
+
+    const v4, 0x7f0700fe
+
+    invoke-virtual {v1, v4}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
+
+    move-result v1
 
     goto :goto_4
 
-    :cond_7
-    move v2, v5
-
-    :goto_4
-    if-eq v2, p3, :cond_9
-
-    .line 168
     :cond_8
-    iget-object v2, p0, Ljp/co/sony/mc/camera/view/viewbinder/RecordingInfoViewBinder;->binding:Ljp/co/sony/mc/camera/databinding/RecordingInfoBinding;
-
-    iget-object v2, v2, Ljp/co/sony/mc/camera/databinding/RecordingInfoBinding;->landAnchor:Landroid/widget/Space;
-
-    invoke-static {v2, v3}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
-
-    check-cast v2, Landroid/view/View;
-
-    .line 229
-    invoke-virtual {v2}, Landroid/view/View;->getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
-
-    move-result-object v3
-
-    if-eqz v3, :cond_11
-
-    check-cast v3, Landroidx/constraintlayout/widget/ConstraintLayout$LayoutParams;
-
-    check-cast v3, Landroid/view/ViewGroup$LayoutParams;
-
-    .line 230
-    move-object v7, v3
-
-    check-cast v7, Landroidx/constraintlayout/widget/ConstraintLayout$LayoutParams;
-
-    .line 169
-    invoke-virtual {v7, v0}, Landroidx/constraintlayout/widget/ConstraintLayout$LayoutParams;->setMarginEnd(I)V
-
-    .line 170
-    iput p3, v7, Landroidx/constraintlayout/widget/ConstraintLayout$LayoutParams;->topMargin:I
-
-    .line 231
-    invoke-virtual {v2, v3}, Landroid/view/View;->setLayoutParams(Landroid/view/ViewGroup$LayoutParams;)V
-
-    .line 174
-    :cond_9
-    invoke-virtual {p2}, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->isStreaming()Z
-
-    move-result p2
-
-    if-eqz p2, :cond_a
+    move v1, v6
 
     .line 175
+    :goto_4
+    invoke-virtual {v0, v1}, Landroid/widget/FrameLayout;->setMinimumHeight(I)V
+
+    .line 183
+    invoke-virtual {v0}, Landroid/widget/FrameLayout;->getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
+
+    move-result-object v1
+
+    const-string v4, "null cannot be cast to non-null type android.widget.LinearLayout.LayoutParams"
+
+    invoke-static {v1, v4}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;Ljava/lang/String;)V
+
+    check-cast v1, Landroid/widget/LinearLayout$LayoutParams;
+
+    .line 184
+    invoke-virtual {p1}, Ljp/co/sony/mc/camera/view/orientation/LayoutOrientation;->isPortrait()Z
+
+    move-result v4
+
+    if-eqz v4, :cond_9
+
+    goto :goto_5
+
+    .line 187
+    :cond_9
+    invoke-virtual {v0}, Landroid/widget/FrameLayout;->getContext()Landroid/content/Context;
+
+    move-result-object v4
+
+    invoke-virtual {v4}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
+
+    move-result-object v4
+
+    const v6, 0x7f0700fd
+
+    invoke-virtual {v4, v6}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
+
+    move-result v6
+
+    .line 184
+    :goto_5
+    iput v6, v1, Landroid/widget/LinearLayout$LayoutParams;->topMargin:I
+
+    .line 192
+    check-cast v1, Landroid/view/ViewGroup$LayoutParams;
+
+    invoke-virtual {v0, v1}, Landroid/widget/FrameLayout;->setLayoutParams(Landroid/view/ViewGroup$LayoutParams;)V
+
+    .line 197
+    sget-object v0, Ljp/co/sony/mc/camera/view/viewbinder/RecordingInfoViewBinder$WhenMappings;->$EnumSwitchMapping$0:[I
+
+    invoke-virtual {p1}, Ljp/co/sony/mc/camera/view/orientation/LayoutOrientation;->ordinal()I
+
+    move-result p1
+
+    aget p1, v0, p1
+
+    if-eq p1, v5, :cond_13
+
+    const v0, 0x7f0701c5
+
+    const v1, 0x7f0701c3
+
+    const/4 v4, 0x0
+
+    const v5, 0x7f0701c2
+
+    if-eq p1, v3, :cond_f
+
+    if-eq p1, v2, :cond_a
+
+    goto/16 :goto_b
+
+    .line 243
+    :cond_a
+    invoke-virtual {p2}, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->isProVideo()Z
+
+    move-result p1
+
+    if-eqz p1, :cond_c
+
+    cmpg-float p1, p3, v4
+
+    const p3, 0x7f0701c6
+
+    if-nez p1, :cond_b
+
+    .line 251
+    iget-object p1, p0, Ljp/co/sony/mc/camera/view/viewbinder/RecordingInfoViewBinder;->context:Landroid/content/Context;
+
+    invoke-virtual {p1}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
+
+    move-result-object p1
+
+    invoke-virtual {p1, p3}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
+
+    move-result p1
+
+    goto :goto_6
+
+    .line 245
+    :cond_b
+    iget-object p1, p0, Ljp/co/sony/mc/camera/view/viewbinder/RecordingInfoViewBinder;->context:Landroid/content/Context;
+
+    invoke-virtual {p1}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
+
+    move-result-object p1
+
+    invoke-virtual {p1, p3}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
+
+    move-result p1
+
+    .line 247
+    iget-object p3, p0, Ljp/co/sony/mc/camera/view/viewbinder/RecordingInfoViewBinder;->context:Landroid/content/Context;
+
+    invoke-virtual {p3}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
+
+    move-result-object p3
+
+    const v2, 0x7f0701c7
+
+    invoke-virtual {p3, v2}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
+
+    move-result p3
+
+    add-int/2addr p1, p3
+
+    goto :goto_6
+
+    .line 256
+    :cond_c
+    iget-object p1, p0, Ljp/co/sony/mc/camera/view/viewbinder/RecordingInfoViewBinder;->context:Landroid/content/Context;
+
+    invoke-virtual {p1}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
+
+    move-result-object p1
+
+    invoke-virtual {p1, v5}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
+
+    move-result p1
+
+    .line 261
+    :goto_6
+    invoke-virtual {p2}, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->isProVideo()Z
+
+    move-result p3
+
+    if-eqz p3, :cond_d
+
+    .line 262
     iget-object p2, p0, Ljp/co/sony/mc/camera/view/viewbinder/RecordingInfoViewBinder;->context:Landroid/content/Context;
 
     invoke-virtual {p2}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
 
     move-result-object p2
 
-    const v2, 0x7f070157
-
-    invoke-virtual {p2, v2}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
+    invoke-virtual {p2, v0}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
     move-result p2
 
-    add-int/2addr v0, p2
+    goto :goto_7
 
-    .line 181
-    :cond_a
-    iget-object p2, p0, Ljp/co/sony/mc/camera/view/viewbinder/RecordingInfoViewBinder;->binding:Ljp/co/sony/mc/camera/databinding/RecordingInfoBinding;
-
-    iget-object p2, p2, Ljp/co/sony/mc/camera/databinding/RecordingInfoBinding;->reverseLandAnchor:Landroid/widget/Space;
-
-    const-string v2, "reverseLandAnchor"
-
-    invoke-static {p2, v2}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
-
-    check-cast p2, Landroid/view/View;
-
-    .line 233
-    invoke-virtual {p2}, Landroid/view/View;->getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
-
-    move-result-object p2
-
-    .line 234
-    instance-of v3, p2, Landroid/view/ViewGroup$MarginLayoutParams;
-
-    if-eqz v3, :cond_b
-
-    check-cast p2, Landroid/view/ViewGroup$MarginLayoutParams;
-
-    invoke-virtual {p2}, Landroid/view/ViewGroup$MarginLayoutParams;->getMarginStart()I
-
-    move-result p2
-
-    goto :goto_5
-
-    :cond_b
-    move p2, v5
-
-    :goto_5
-    if-ne p2, v0, :cond_e
-
-    .line 182
-    iget-object p2, p0, Ljp/co/sony/mc/camera/view/viewbinder/RecordingInfoViewBinder;->binding:Ljp/co/sony/mc/camera/databinding/RecordingInfoBinding;
-
-    iget-object p2, p2, Ljp/co/sony/mc/camera/databinding/RecordingInfoBinding;->reverseLandAnchor:Landroid/widget/Space;
-
-    invoke-static {p2, v2}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
-
-    check-cast p2, Landroid/view/View;
-
-    .line 235
-    invoke-virtual {p2}, Landroid/view/View;->getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
-
-    move-result-object p2
-
-    instance-of v3, p2, Landroid/view/ViewGroup$MarginLayoutParams;
-
-    if-eqz v3, :cond_c
-
-    move-object v4, p2
-
-    check-cast v4, Landroid/view/ViewGroup$MarginLayoutParams;
-
-    :cond_c
-    if-eqz v4, :cond_d
-
-    iget v5, v4, Landroid/view/ViewGroup$MarginLayoutParams;->topMargin:I
-
+    .line 265
     :cond_d
-    if-eq v5, p3, :cond_f
+    invoke-virtual {p2}, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->isStreaming()Z
 
-    .line 183
+    move-result p2
+
+    if-eqz p2, :cond_e
+
+    .line 266
+    iget-object p2, p0, Ljp/co/sony/mc/camera/view/viewbinder/RecordingInfoViewBinder;->context:Landroid/content/Context;
+
+    invoke-virtual {p2}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
+
+    move-result-object p2
+
+    const p3, 0x7f0701ca
+
+    invoke-virtual {p2, p3}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
+
+    move-result p2
+
+    goto :goto_7
+
+    .line 270
     :cond_e
-    iget-object p2, p0, Ljp/co/sony/mc/camera/view/viewbinder/RecordingInfoViewBinder;->binding:Ljp/co/sony/mc/camera/databinding/RecordingInfoBinding;
+    iget-object p2, p0, Ljp/co/sony/mc/camera/view/viewbinder/RecordingInfoViewBinder;->context:Landroid/content/Context;
 
-    iget-object p2, p2, Ljp/co/sony/mc/camera/databinding/RecordingInfoBinding;->reverseLandAnchor:Landroid/widget/Space;
+    invoke-virtual {p2}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
 
-    invoke-static {p2, v2}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
+    move-result-object p2
 
-    check-cast p2, Landroid/view/View;
+    invoke-virtual {p2, v1}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
-    .line 236
-    invoke-virtual {p2}, Landroid/view/View;->getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
+    move-result p2
 
-    move-result-object v2
+    .line 275
+    :goto_7
+    invoke-direct {p0, p2, p1}, Ljp/co/sony/mc/camera/view/viewbinder/RecordingInfoViewBinder;->alignRecordingInfoToTopEnd(II)V
 
-    if-eqz v2, :cond_10
+    goto/16 :goto_b
 
-    check-cast v2, Landroidx/constraintlayout/widget/ConstraintLayout$LayoutParams;
-
-    check-cast v2, Landroid/view/ViewGroup$LayoutParams;
-
-    .line 237
-    move-object v3, v2
-
-    check-cast v3, Landroidx/constraintlayout/widget/ConstraintLayout$LayoutParams;
-
-    .line 184
-    invoke-virtual {v3, v0}, Landroidx/constraintlayout/widget/ConstraintLayout$LayoutParams;->setMarginStart(I)V
-
-    .line 185
-    iput p3, v3, Landroidx/constraintlayout/widget/ConstraintLayout$LayoutParams;->topMargin:I
-
-    .line 238
-    invoke-virtual {p2, v2}, Landroid/view/View;->setLayoutParams(Landroid/view/ViewGroup$LayoutParams;)V
-
-    .line 189
+    .line 211
     :cond_f
-    iget-object p0, p0, Ljp/co/sony/mc/camera/view/viewbinder/RecordingInfoViewBinder;->binding:Ljp/co/sony/mc/camera/databinding/RecordingInfoBinding;
-
-    iget-object p0, p0, Ljp/co/sony/mc/camera/databinding/RecordingInfoBinding;->infoContainer:Landroid/widget/LinearLayout;
-
-    .line 190
-    invoke-static {p1}, Ljp/co/sony/mc/camera/view/orientation/LayoutOrientationKt;->toRotation(Ljp/co/sony/mc/camera/view/orientation/LayoutOrientation;)F
+    invoke-virtual {p2}, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->isProVideo()Z
 
     move-result p1
 
-    invoke-virtual {p0, p1}, Landroid/widget/LinearLayout;->setRotation(F)V
+    if-eqz p1, :cond_11
 
-    .line 191
-    invoke-virtual {p0, v1}, Landroid/widget/LinearLayout;->setGravity(I)V
+    cmpg-float p1, p3, v4
 
-    return-void
+    const p3, 0x7f0701c8
 
-    .line 236
+    if-nez p1, :cond_10
+
+    .line 219
+    iget-object p1, p0, Ljp/co/sony/mc/camera/view/viewbinder/RecordingInfoViewBinder;->context:Landroid/content/Context;
+
+    invoke-virtual {p1}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
+
+    move-result-object p1
+
+    invoke-virtual {p1, p3}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
+
+    move-result p1
+
+    goto :goto_8
+
+    .line 213
     :cond_10
-    new-instance p0, Ljava/lang/NullPointerException;
+    iget-object p1, p0, Ljp/co/sony/mc/camera/view/viewbinder/RecordingInfoViewBinder;->context:Landroid/content/Context;
 
-    invoke-direct {p0, v6}, Ljava/lang/NullPointerException;-><init>(Ljava/lang/String;)V
+    invoke-virtual {p1}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
 
-    throw p0
+    move-result-object p1
+
+    invoke-virtual {p1, p3}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
+
+    move-result p1
+
+    .line 215
+    iget-object p3, p0, Ljp/co/sony/mc/camera/view/viewbinder/RecordingInfoViewBinder;->context:Landroid/content/Context;
+
+    invoke-virtual {p3}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
+
+    move-result-object p3
+
+    const v2, 0x7f0701c9
+
+    invoke-virtual {p3, v2}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
+
+    move-result p3
+
+    add-int/2addr p1, p3
+
+    goto :goto_8
+
+    .line 224
+    :cond_11
+    iget-object p1, p0, Ljp/co/sony/mc/camera/view/viewbinder/RecordingInfoViewBinder;->context:Landroid/content/Context;
+
+    invoke-virtual {p1}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
+
+    move-result-object p1
+
+    invoke-virtual {p1, v5}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
+
+    move-result p1
 
     .line 229
-    :cond_11
-    new-instance p0, Ljava/lang/NullPointerException;
+    :goto_8
+    invoke-virtual {p2}, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->isProVideo()Z
 
-    invoke-direct {p0, v6}, Ljava/lang/NullPointerException;-><init>(Ljava/lang/String;)V
+    move-result p2
 
-    throw p0
+    if-eqz p2, :cond_12
+
+    .line 230
+    iget-object p2, p0, Ljp/co/sony/mc/camera/view/viewbinder/RecordingInfoViewBinder;->context:Landroid/content/Context;
+
+    invoke-virtual {p2}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
+
+    move-result-object p2
+
+    invoke-virtual {p2, v0}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
+
+    move-result p2
+
+    goto :goto_9
+
+    .line 234
+    :cond_12
+    iget-object p2, p0, Ljp/co/sony/mc/camera/view/viewbinder/RecordingInfoViewBinder;->context:Landroid/content/Context;
+
+    invoke-virtual {p2}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
+
+    move-result-object p2
+
+    invoke-virtual {p2, v1}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
+
+    move-result p2
+
+    .line 239
+    :goto_9
+    invoke-direct {p0, p2, p1}, Ljp/co/sony/mc/camera/view/viewbinder/RecordingInfoViewBinder;->alignRecordingInfoToTopStart(II)V
+
+    goto :goto_b
+
+    .line 199
+    :cond_13
+    invoke-virtual {p2}, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->isProVideo()Z
+
+    move-result p1
+
+    if-nez p1, :cond_14
+
+    iget-object p1, p0, Ljp/co/sony/mc/camera/view/viewbinder/RecordingInfoViewBinder;->context:Landroid/content/Context;
+
+    const-string p2, "context"
+
+    invoke-static {p1, p2}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
+
+    invoke-static {p1}, Ljp/co/sony/mc/camera/util/ContextExtensionsKt;->isLargeDisplaySize(Landroid/content/Context;)Z
+
+    move-result p1
+
+    if-eqz p1, :cond_14
+
+    .line 200
+    iget-object p1, p0, Ljp/co/sony/mc/camera/view/viewbinder/RecordingInfoViewBinder;->context:Landroid/content/Context;
+
+    invoke-virtual {p1}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
+
+    move-result-object p1
+
+    const p2, 0x7f0701c4
+
+    invoke-virtual {p1, p2}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
+
+    move-result p1
+
+    goto :goto_a
+
+    :cond_14
+    const/4 p1, -0x1
+
+    .line 207
+    :goto_a
+    invoke-direct {p0, p1}, Ljp/co/sony/mc/camera/view/viewbinder/RecordingInfoViewBinder;->alignRecordingInfoToTop(I)V
+
+    :goto_b
+    return-void
 .end method
 
 
 # virtual methods
 .method public onCreate(Landroidx/lifecycle/LifecycleOwner;)V
-    .locals 9
+    .locals 10
 
     const-string v0, "owner"
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 67
+    .line 64
     invoke-direct {p0}, Ljp/co/sony/mc/camera/view/viewbinder/RecordingInfoViewBinder;->getCameraStatusModel()Ljp/co/sony/mc/camera/view/viewmodel/CameraStatusModel;
 
     move-result-object p1
@@ -956,11 +1554,9 @@
 
     move-result-object v0
 
-    new-instance v1, Ljp/co/sony/mc/camera/view/viewbinder/RecordingInfoViewBinder$onCreate$1;
+    new-instance v1, Ljp/co/sony/mc/camera/view/viewbinder/RecordingInfoViewBinder$$ExternalSyntheticLambda0;
 
-    invoke-direct {v1, p0}, Ljp/co/sony/mc/camera/view/viewbinder/RecordingInfoViewBinder$onCreate$1;-><init>(Ljp/co/sony/mc/camera/view/viewbinder/RecordingInfoViewBinder;)V
-
-    check-cast v1, Lkotlin/jvm/functions/Function1;
+    invoke-direct {v1, p0}, Ljp/co/sony/mc/camera/view/viewbinder/RecordingInfoViewBinder$$ExternalSyntheticLambda0;-><init>(Ljp/co/sony/mc/camera/view/viewbinder/RecordingInfoViewBinder;)V
 
     new-instance v2, Ljp/co/sony/mc/camera/view/viewbinder/RecordingInfoViewBinder$sam$androidx_lifecycle_Observer$0;
 
@@ -970,10 +1566,10 @@
 
     invoke-virtual {p1, v0, v2}, Landroidx/lifecycle/LiveData;->observe(Landroidx/lifecycle/LifecycleOwner;Landroidx/lifecycle/Observer;)V
 
-    .line 79
+    .line 76
     sget-object v3, Ljp/co/sony/mc/camera/view/viewmodel/LiveDataMediators;->INSTANCE:Ljp/co/sony/mc/camera/view/viewmodel/LiveDataMediators;
 
-    .line 80
+    .line 77
     invoke-direct {p0}, Ljp/co/sony/mc/camera/view/viewbinder/RecordingInfoViewBinder;->getViewFinderUiState()Ljp/co/sony/mc/camera/view/uistate/ViewFinderUiState;
 
     move-result-object p1
@@ -986,7 +1582,7 @@
 
     move-result-object v4
 
-    .line 81
+    .line 78
     invoke-direct {p0}, Ljp/co/sony/mc/camera/view/viewbinder/RecordingInfoViewBinder;->getCameraSettingsModel()Ljp/co/sony/mc/camera/view/viewmodel/CameraSettingsModel;
 
     move-result-object p1
@@ -999,7 +1595,7 @@
 
     move-result-object v5
 
-    .line 82
+    .line 79
     invoke-direct {p0}, Ljp/co/sony/mc/camera/view/viewbinder/RecordingInfoViewBinder;->getProModeFocusUiState()Ljp/co/sony/mc/camera/view/uistate/ProModeFocusUiState;
 
     move-result-object p1
@@ -1012,7 +1608,7 @@
 
     move-result-object v6
 
-    .line 83
+    .line 80
     invoke-direct {p0}, Ljp/co/sony/mc/camera/view/viewbinder/RecordingInfoViewBinder;->getOrientationViewModel()Ljp/co/sony/mc/camera/view/viewmodel/OrientationViewModel;
 
     move-result-object p1
@@ -1025,27 +1621,36 @@
 
     move-result-object v7
 
-    .line 79
-    sget-object p1, Ljp/co/sony/mc/camera/view/viewbinder/RecordingInfoViewBinder$onCreate$2;->INSTANCE:Ljp/co/sony/mc/camera/view/viewbinder/RecordingInfoViewBinder$onCreate$2;
-
-    move-object v8, p1
-
-    check-cast v8, Lkotlin/jvm/functions/Function4;
-
-    invoke-virtual/range {v3 .. v8}, Ljp/co/sony/mc/camera/view/viewmodel/LiveDataMediators;->notNulls(Landroidx/lifecycle/LiveData;Landroidx/lifecycle/LiveData;Landroidx/lifecycle/LiveData;Landroidx/lifecycle/LiveData;Lkotlin/jvm/functions/Function4;)Landroidx/lifecycle/LiveData;
+    .line 81
+    invoke-direct {p0}, Ljp/co/sony/mc/camera/view/viewbinder/RecordingInfoViewBinder;->getViewFinderUiState()Ljp/co/sony/mc/camera/view/uistate/ViewFinderUiState;
 
     move-result-object p1
 
-    .line 86
+    invoke-virtual {p1}, Ljp/co/sony/mc/camera/view/uistate/ViewFinderUiState;->getCoverState()Landroidx/lifecycle/LiveData;
+
+    move-result-object p1
+
+    invoke-static {p1}, Landroidx/lifecycle/Transformations;->distinctUntilChanged(Landroidx/lifecycle/LiveData;)Landroidx/lifecycle/LiveData;
+
+    move-result-object v8
+
+    new-instance v9, Ljp/co/sony/mc/camera/view/viewbinder/RecordingInfoViewBinder$$ExternalSyntheticLambda1;
+
+    invoke-direct {v9}, Ljp/co/sony/mc/camera/view/viewbinder/RecordingInfoViewBinder$$ExternalSyntheticLambda1;-><init>()V
+
+    .line 76
+    invoke-virtual/range {v3 .. v9}, Ljp/co/sony/mc/camera/view/viewmodel/LiveDataMediators;->notNulls(Landroidx/lifecycle/LiveData;Landroidx/lifecycle/LiveData;Landroidx/lifecycle/LiveData;Landroidx/lifecycle/LiveData;Landroidx/lifecycle/LiveData;Lkotlin/jvm/functions/Function5;)Landroidx/lifecycle/LiveData;
+
+    move-result-object p1
+
+    .line 84
     invoke-direct {p0}, Ljp/co/sony/mc/camera/view/viewbinder/RecordingInfoViewBinder;->getLifecycleOwner()Landroidx/lifecycle/LifecycleOwner;
 
     move-result-object v0
 
-    new-instance v1, Ljp/co/sony/mc/camera/view/viewbinder/RecordingInfoViewBinder$onCreate$3;
+    new-instance v1, Ljp/co/sony/mc/camera/view/viewbinder/RecordingInfoViewBinder$$ExternalSyntheticLambda2;
 
-    invoke-direct {v1, p0}, Ljp/co/sony/mc/camera/view/viewbinder/RecordingInfoViewBinder$onCreate$3;-><init>(Ljp/co/sony/mc/camera/view/viewbinder/RecordingInfoViewBinder;)V
-
-    check-cast v1, Lkotlin/jvm/functions/Function1;
+    invoke-direct {v1, p0}, Ljp/co/sony/mc/camera/view/viewbinder/RecordingInfoViewBinder$$ExternalSyntheticLambda2;-><init>(Ljp/co/sony/mc/camera/view/viewbinder/RecordingInfoViewBinder;)V
 
     new-instance v2, Ljp/co/sony/mc/camera/view/viewbinder/RecordingInfoViewBinder$sam$androidx_lifecycle_Observer$0;
 
@@ -1055,7 +1660,7 @@
 
     invoke-virtual {p1, v0, v2}, Landroidx/lifecycle/LiveData;->observe(Landroidx/lifecycle/LifecycleOwner;Landroidx/lifecycle/Observer;)V
 
-    .line 112
+    .line 109
     invoke-direct {p0}, Ljp/co/sony/mc/camera/view/viewbinder/RecordingInfoViewBinder;->getViewFinderUiState()Ljp/co/sony/mc/camera/view/uistate/ViewFinderUiState;
 
     move-result-object p1
@@ -1072,11 +1677,9 @@
 
     move-result-object v0
 
-    new-instance v1, Ljp/co/sony/mc/camera/view/viewbinder/RecordingInfoViewBinder$onCreate$4;
+    new-instance v1, Ljp/co/sony/mc/camera/view/viewbinder/RecordingInfoViewBinder$$ExternalSyntheticLambda3;
 
-    invoke-direct {v1, p0}, Ljp/co/sony/mc/camera/view/viewbinder/RecordingInfoViewBinder$onCreate$4;-><init>(Ljp/co/sony/mc/camera/view/viewbinder/RecordingInfoViewBinder;)V
-
-    check-cast v1, Lkotlin/jvm/functions/Function1;
+    invoke-direct {v1, p0}, Ljp/co/sony/mc/camera/view/viewbinder/RecordingInfoViewBinder$$ExternalSyntheticLambda3;-><init>(Ljp/co/sony/mc/camera/view/viewbinder/RecordingInfoViewBinder;)V
 
     new-instance v2, Ljp/co/sony/mc/camera/view/viewbinder/RecordingInfoViewBinder$sam$androidx_lifecycle_Observer$0;
 
@@ -1086,7 +1689,7 @@
 
     invoke-virtual {p1, v0, v2}, Landroidx/lifecycle/LiveData;->observe(Landroidx/lifecycle/LifecycleOwner;Landroidx/lifecycle/Observer;)V
 
-    .line 117
+    .line 114
     iget-object p1, p0, Ljp/co/sony/mc/camera/view/viewbinder/RecordingInfoViewBinder;->binding:Ljp/co/sony/mc/camera/databinding/RecordingInfoBinding;
 
     iget-object p1, p1, Ljp/co/sony/mc/camera/databinding/RecordingInfoBinding;->infoContainer:Landroid/widget/LinearLayout;
@@ -1105,10 +1708,10 @@
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 121
+    .line 118
     invoke-super {p0, p1}, Landroidx/lifecycle/DefaultLifecycleObserver;->onDestroy(Landroidx/lifecycle/LifecycleOwner;)V
 
-    .line 122
+    .line 119
     iget-object p1, p0, Ljp/co/sony/mc/camera/view/viewbinder/RecordingInfoViewBinder;->binding:Ljp/co/sony/mc/camera/databinding/RecordingInfoBinding;
 
     iget-object p1, p1, Ljp/co/sony/mc/camera/databinding/RecordingInfoBinding;->infoContainer:Landroid/widget/LinearLayout;

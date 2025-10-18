@@ -41,7 +41,7 @@
 .end method
 
 .method public constructor <init>()V
-    .locals 3
+    .locals 6
 
     .line 36
     invoke-direct {p0}, Landroidx/fragment/app/DialogFragment;-><init>()V
@@ -61,17 +61,17 @@
 
     new-instance v1, Ljp/co/sony/mc/camera/util/TextInputUtil$AvailableCharFilter;
 
-    const-string v2, "^[-_.!~*\\\\\'()a-zA-Z0-9;\\/?:\\@&=+\\$,%#]+$"
+    const/4 v3, 0x1
 
-    filled-new-array {v2}, [Ljava/lang/String;
+    new-array v4, v3, [Ljava/lang/String;
 
-    move-result-object v2
+    const-string v5, "^[-_.!~*\\\\\'()a-zA-Z0-9;\\/?:\\@&=+\\$,%#]+$"
 
-    invoke-direct {v1, v2}, Ljp/co/sony/mc/camera/util/TextInputUtil$AvailableCharFilter;-><init>([Ljava/lang/String;)V
+    aput-object v5, v4, v2
 
-    const/4 v2, 0x1
+    invoke-direct {v1, v4}, Ljp/co/sony/mc/camera/util/TextInputUtil$AvailableCharFilter;-><init>([Ljava/lang/String;)V
 
-    aput-object v1, v0, v2
+    aput-object v1, v0, v3
 
     new-instance v1, Landroid/text/InputFilter$LengthFilter;
 
@@ -133,7 +133,7 @@
 
     move-result-object p1
 
-    const v0, 0x7f0c0144
+    const v0, 0x7f0c0133
 
     const/4 v1, 0x0
 
@@ -146,7 +146,7 @@
 
     move-result-object v0
 
-    const v2, 0x7f09019d
+    const v2, 0x7f090199
 
     .line 62
     invoke-virtual {p1, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
@@ -201,7 +201,7 @@
 
     move-result-object v2
 
-    const v3, 0x7f050007
+    const v3, 0x7f050006
 
     invoke-virtual {v2, v3}, Landroid/content/res/Resources;->getBoolean(I)Z
 
@@ -264,7 +264,7 @@
     .line 82
     invoke-virtual {v2, p1}, Landroid/app/AlertDialog$Builder;->setView(Landroid/view/View;)Landroid/app/AlertDialog$Builder;
 
-    const p1, 0x7f110396
+    const p1, 0x7f1103ca
 
     .line 83
     invoke-virtual {p0, p1}, Ljp/co/sony/mc/camera/view/inputdialog/RtmpKeyInputDialog;->getString(I)Ljava/lang/String;
@@ -273,7 +273,7 @@
 
     invoke-virtual {v2, p1}, Landroid/app/AlertDialog$Builder;->setTitle(Ljava/lang/CharSequence;)Landroid/app/AlertDialog$Builder;
 
-    const p1, 0x7f11013d
+    const p1, 0x7f110140
 
     .line 84
     invoke-virtual {p0, p1}, Ljp/co/sony/mc/camera/view/inputdialog/RtmpKeyInputDialog;->getString(I)Ljava/lang/String;
@@ -282,7 +282,7 @@
 
     invoke-virtual {v2, p1, v1}, Landroid/app/AlertDialog$Builder;->setNegativeButton(Ljava/lang/CharSequence;Landroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
-    const p1, 0x7f110323
+    const p1, 0x7f110355
 
     .line 85
     invoke-virtual {p0, p1}, Ljp/co/sony/mc/camera/view/inputdialog/RtmpKeyInputDialog;->getString(I)Ljava/lang/String;

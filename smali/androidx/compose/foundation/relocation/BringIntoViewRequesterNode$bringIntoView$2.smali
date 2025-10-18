@@ -70,7 +70,7 @@
 .method public final invoke()Landroidx/compose/ui/geometry/Rect;
     .locals 2
 
-    .line 184
+    .line 193
     iget-object v0, p0, Landroidx/compose/foundation/relocation/BringIntoViewRequesterNode$bringIntoView$2;->$rect:Landroidx/compose/ui/geometry/Rect;
 
     if-nez v0, :cond_1
@@ -108,7 +108,7 @@
 .method public bridge synthetic invoke()Ljava/lang/Object;
     .locals 0
 
-    .line 179
+    .line 188
     invoke-virtual {p0}, Landroidx/compose/foundation/relocation/BringIntoViewRequesterNode$bringIntoView$2;->invoke()Landroidx/compose/ui/geometry/Rect;
 
     move-result-object p0

@@ -15,19 +15,19 @@
 
 
 # instance fields
-.field final left:Lcom/google/android/material/carousel/KeylineState$Keyline;
+.field final leftOrTop:Lcom/google/android/material/carousel/KeylineState$Keyline;
 
-.field final right:Lcom/google/android/material/carousel/KeylineState$Keyline;
+.field final rightOrBottom:Lcom/google/android/material/carousel/KeylineState$Keyline;
 
 
 # direct methods
 .method constructor <init>(Lcom/google/android/material/carousel/KeylineState$Keyline;Lcom/google/android/material/carousel/KeylineState$Keyline;)V
     .locals 2
 
-    .line 1072
+    .line 1672
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 1073
+    .line 1673
     iget v0, p1, Lcom/google/android/material/carousel/KeylineState$Keyline;->loc:F
 
     iget v1, p2, Lcom/google/android/material/carousel/KeylineState$Keyline;->loc:F
@@ -46,11 +46,11 @@
     :goto_0
     invoke-static {v0}, Landroidx/core/util/Preconditions;->checkArgument(Z)V
 
-    .line 1074
-    iput-object p1, p0, Lcom/google/android/material/carousel/CarouselLayoutManager$KeylineRange;->left:Lcom/google/android/material/carousel/KeylineState$Keyline;
+    .line 1674
+    iput-object p1, p0, Lcom/google/android/material/carousel/CarouselLayoutManager$KeylineRange;->leftOrTop:Lcom/google/android/material/carousel/KeylineState$Keyline;
 
-    .line 1075
-    iput-object p2, p0, Lcom/google/android/material/carousel/CarouselLayoutManager$KeylineRange;->right:Lcom/google/android/material/carousel/KeylineState$Keyline;
+    .line 1675
+    iput-object p2, p0, Lcom/google/android/material/carousel/CarouselLayoutManager$KeylineRange;->rightOrBottom:Lcom/google/android/material/carousel/KeylineState$Keyline;
 
     return-void
 .end method

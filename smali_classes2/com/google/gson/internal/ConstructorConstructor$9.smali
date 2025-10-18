@@ -33,7 +33,7 @@
 .method constructor <init>(Ljava/lang/reflect/Constructor;)V
     .locals 0
 
-    .line 258
+    .line 292
     iput-object p1, p0, Lcom/google/gson/internal/ConstructorConstructor$9;->val$constructor:Ljava/lang/reflect/Constructor;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -51,7 +51,7 @@
         }
     .end annotation
 
-    .line 262
+    .line 297
     const-string v0, "\' with no args"
 
     const-string v1, "Failed to invoke constructor \'"
@@ -76,7 +76,7 @@
     :catch_0
     move-exception p0
 
-    .line 276
+    .line 317
     invoke-static {p0}, Lcom/google/gson/internal/reflect/ReflectionHelper;->createExceptionForUnexpectedIllegalAccess(Ljava/lang/IllegalAccessException;)Ljava/lang/RuntimeException;
 
     move-result-object p0
@@ -86,7 +86,7 @@
     :catch_1
     move-exception v2
 
-    .line 273
+    .line 311
     new-instance v3, Ljava/lang/RuntimeException;
 
     new-instance v4, Ljava/lang/StringBuilder;
@@ -95,6 +95,7 @@
 
     iget-object p0, p0, Lcom/google/gson/internal/ConstructorConstructor$9;->val$constructor:Ljava/lang/reflect/Constructor;
 
+    .line 313
     invoke-static {p0}, Lcom/google/gson/internal/reflect/ReflectionHelper;->constructorToString(Ljava/lang/reflect/Constructor;)Ljava/lang/String;
 
     move-result-object p0
@@ -111,7 +112,7 @@
 
     move-result-object p0
 
-    .line 274
+    .line 315
     invoke-virtual {v2}, Ljava/lang/reflect/InvocationTargetException;->getCause()Ljava/lang/Throwable;
 
     move-result-object v0
@@ -123,7 +124,7 @@
     :catch_2
     move-exception v2
 
-    .line 268
+    .line 303
     new-instance v3, Ljava/lang/RuntimeException;
 
     new-instance v4, Ljava/lang/StringBuilder;
@@ -132,6 +133,7 @@
 
     iget-object p0, p0, Lcom/google/gson/internal/ConstructorConstructor$9;->val$constructor:Ljava/lang/reflect/Constructor;
 
+    .line 305
     invoke-static {p0}, Lcom/google/gson/internal/reflect/ReflectionHelper;->constructorToString(Ljava/lang/reflect/Constructor;)Ljava/lang/String;
 
     move-result-object p0

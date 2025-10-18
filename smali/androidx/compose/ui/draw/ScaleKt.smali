@@ -28,11 +28,7 @@
 
 # direct methods
 .method public static final scale(Landroidx/compose/ui/Modifier;F)Landroidx/compose/ui/Modifier;
-    .locals 1
-
-    const-string v0, "<this>"
-
-    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+    .locals 0
 
     .line 57
     invoke-static {p0, p1, p1}, Landroidx/compose/ui/draw/ScaleKt;->scale(Landroidx/compose/ui/Modifier;FF)Landroidx/compose/ui/Modifier;
@@ -45,23 +41,17 @@
 .method public static final scale(Landroidx/compose/ui/Modifier;FF)Landroidx/compose/ui/Modifier;
     .locals 24
 
-    const-string v0, "<this>"
-
-    move-object/from16 v1, p0
-
-    invoke-static {v1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
     const/high16 v0, 0x3f800000    # 1.0f
 
-    cmpg-float v2, p1, v0
+    cmpg-float v1, p1, v0
 
-    if-nez v2, :cond_0
+    if-nez v1, :cond_0
 
     cmpg-float v0, p2, v0
 
     if-nez v0, :cond_0
 
-    move-object v0, v1
+    move-object/from16 v0, p0
 
     goto :goto_0
 

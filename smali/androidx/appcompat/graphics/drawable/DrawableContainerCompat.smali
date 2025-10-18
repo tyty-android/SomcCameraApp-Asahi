@@ -1064,29 +1064,28 @@
     .line 261
     iput-wide v4, p0, Landroidx/appcompat/graphics/drawable/DrawableContainerCompat;->mExitAnimationEnd:J
 
-    goto :goto_1
-
-    :cond_2
-    move v1, v0
+    move v0, v1
 
     .line 264
-    :goto_1
+    :cond_2
     iget-wide v2, p0, Landroidx/appcompat/graphics/drawable/DrawableContainerCompat;->mEnterAnimationEnd:J
 
-    cmp-long v0, v2, v4
+    cmp-long v2, v2, v4
 
-    if-eqz v0, :cond_3
+    if-eqz v2, :cond_3
 
     .line 265
     iput-wide v4, p0, Landroidx/appcompat/graphics/drawable/DrawableContainerCompat;->mEnterAnimationEnd:J
 
-    goto :goto_2
+    goto :goto_1
 
     :cond_3
+    move v1, v0
+
+    :goto_1
     if-eqz v1, :cond_4
 
     .line 269
-    :goto_2
     invoke-virtual {p0}, Landroidx/appcompat/graphics/drawable/DrawableContainerCompat;->invalidateSelf()V
 
     :cond_4

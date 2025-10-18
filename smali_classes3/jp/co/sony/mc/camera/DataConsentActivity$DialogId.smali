@@ -66,7 +66,7 @@
     .line 66
     new-instance v7, Ljp/co/sony/mc/camera/DataConsentActivity$DialogId;
 
-    const v5, 0x7f110139
+    const v5, 0x7f11013c
 
     const/4 v6, 0x0
 
@@ -74,9 +74,9 @@
 
     const/4 v2, 0x0
 
-    const v3, 0x7f110442
+    const v3, 0x7f110477
 
-    const v4, 0x7f110137
+    const v4, 0x7f11013a
 
     move-object v0, v7
 
@@ -87,7 +87,7 @@
     .line 72
     new-instance v0, Ljp/co/sony/mc/camera/DataConsentActivity$DialogId;
 
-    const v13, 0x7f11043c
+    const v13, 0x7f110471
 
     const/4 v14, 0x0
 
@@ -95,9 +95,9 @@
 
     const/4 v10, 0x1
 
-    const v11, 0x7f11032b
+    const v11, 0x7f11035d
 
-    const v12, 0x7f11043b
+    const v12, 0x7f110470
 
     move-object v8, v0
 
@@ -116,9 +116,9 @@
 
     const/4 v3, 0x2
 
-    const v4, 0x7f11032a
+    const v4, 0x7f11035c
 
-    const v5, 0x7f110323
+    const v5, 0x7f110355
 
     move-object v1, v0
 

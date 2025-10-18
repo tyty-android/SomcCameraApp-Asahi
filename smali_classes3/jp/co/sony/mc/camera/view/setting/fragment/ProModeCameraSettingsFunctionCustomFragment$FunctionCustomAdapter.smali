@@ -15,7 +15,7 @@
 
 .annotation runtime Lkotlin/Metadata;
     d1 = {
-        "\u0000F\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010 \n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0008\n\u0002\u0008\r\n\u0002\u0010\u0000\n\u0002\u0008\u0003\n\u0002\u0010\t\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000b\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0008\u0008\u0007\u0018\u00002\u00020\u0001B+\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\u000c\u0010\u0004\u001a\u0008\u0012\u0004\u0012\u00020\u00060\u0005\u0012\u0006\u0010\u0007\u001a\u00020\u0008\u0012\u0006\u0010\t\u001a\u00020\u0008\u00a2\u0006\u0002\u0010\nJ\u0018\u0010\u0015\u001a\u00020\u00162\u0006\u0010\u0017\u001a\u00020\u00082\u0006\u0010\u0018\u001a\u00020\u0008H\u0016J\u0018\u0010\u0019\u001a\u00020\u001a2\u0006\u0010\u0017\u001a\u00020\u00082\u0006\u0010\u0018\u001a\u00020\u0008H\u0016J4\u0010\u001b\u001a\u00020\u001c2\u0006\u0010\u0017\u001a\u00020\u00082\u0006\u0010\u0018\u001a\u00020\u00082\u0006\u0010\u001d\u001a\u00020\u001e2\u0008\u0010\u001f\u001a\u0004\u0018\u00010\u001c2\u0008\u0010 \u001a\u0004\u0018\u00010!H\u0016J\u0010\u0010\"\u001a\u00020\u00082\u0006\u0010\u0017\u001a\u00020\u0008H\u0016J\u0010\u0010\r\u001a\u00020\u00162\u0006\u0010\u0017\u001a\u00020\u0008H\u0016J\u0008\u0010#\u001a\u00020\u0008H\u0016J\u0010\u0010$\u001a\u00020\u001a2\u0006\u0010\u0017\u001a\u00020\u0008H\u0016J,\u0010%\u001a\u00020\u001c2\u0006\u0010\u0017\u001a\u00020\u00082\u0006\u0010&\u001a\u00020\u001e2\u0008\u0010\u001f\u001a\u0004\u0018\u00010\u001c2\u0008\u0010 \u001a\u0004\u0018\u00010!H\u0016J\u0008\u0010\'\u001a\u00020\u001eH\u0016J\u0018\u0010(\u001a\u00020\u001e2\u0006\u0010\u0017\u001a\u00020\u00082\u0006\u0010\u0018\u001a\u00020\u0008H\u0016R\u0011\u0010\u0002\u001a\u00020\u0003\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\u000b\u0010\u000cR\u0017\u0010\u0004\u001a\u0008\u0012\u0004\u0012\u00020\u00060\u0005\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\r\u0010\u000eR\u001a\u0010\t\u001a\u00020\u0008X\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\u0008\u000f\u0010\u0010\"\u0004\u0008\u0011\u0010\u0012R\u001a\u0010\u0007\u001a\u00020\u0008X\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\u0008\u0013\u0010\u0010\"\u0004\u0008\u0014\u0010\u0012\u00a8\u0006)"
+        "\u0000J\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010 \n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0008\n\u0002\u0008\r\n\u0002\u0010\u0000\n\u0002\u0008\u0002\n\u0002\u0010\u000b\n\u0002\u0008\u0003\n\u0002\u0018\u0002\n\u0002\u0008\u0003\n\u0002\u0018\u0002\n\u0002\u0008\u0003\n\u0002\u0010\t\n\u0002\u0008\u0005\u0008\u0007\u0018\u00002\u00020\u0001B-\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\u000c\u0010\u0004\u001a\u0008\u0012\u0004\u0012\u00020\u00060\u0005\u0012\u0006\u0010\u0007\u001a\u00020\u0008\u0012\u0006\u0010\t\u001a\u00020\u0008\u00a2\u0006\u0004\u0008\n\u0010\u000bJ\u0010\u0010\u000e\u001a\u00020\u00162\u0006\u0010\u0017\u001a\u00020\u0008H\u0016J\u0018\u0010\u0018\u001a\u00020\u00192\u0006\u0010\u0017\u001a\u00020\u00082\u0006\u0010\u001a\u001a\u00020\u0008H\u0016J\u0008\u0010\u001b\u001a\u00020\u0019H\u0016J,\u0010\u001c\u001a\u00020\u001d2\u0006\u0010\u0017\u001a\u00020\u00082\u0006\u0010\u001e\u001a\u00020\u00192\u0008\u0010\u001f\u001a\u0004\u0018\u00010\u001d2\u0008\u0010 \u001a\u0004\u0018\u00010!H\u0016J\u0010\u0010\"\u001a\u00020\u00082\u0006\u0010\u0017\u001a\u00020\u0008H\u0016J\u0018\u0010#\u001a\u00020\u00162\u0006\u0010\u0017\u001a\u00020\u00082\u0006\u0010\u001a\u001a\u00020\u0008H\u0016J\u0010\u0010$\u001a\u00020%2\u0006\u0010\u0017\u001a\u00020\u0008H\u0016J4\u0010&\u001a\u00020\u001d2\u0006\u0010\u0017\u001a\u00020\u00082\u0006\u0010\u001a\u001a\u00020\u00082\u0006\u0010\'\u001a\u00020\u00192\u0008\u0010\u001f\u001a\u0004\u0018\u00010\u001d2\u0008\u0010 \u001a\u0004\u0018\u00010!H\u0016J\u0018\u0010(\u001a\u00020%2\u0006\u0010\u0017\u001a\u00020\u00082\u0006\u0010\u001a\u001a\u00020\u0008H\u0016J\u0008\u0010)\u001a\u00020\u0008H\u0016R\u0011\u0010\u0002\u001a\u00020\u0003\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\u000c\u0010\rR\u0017\u0010\u0004\u001a\u0008\u0012\u0004\u0012\u00020\u00060\u0005\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\u000e\u0010\u000fR\u001a\u0010\u0007\u001a\u00020\u0008X\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\u0008\u0010\u0010\u0011\"\u0004\u0008\u0012\u0010\u0013R\u001a\u0010\t\u001a\u00020\u0008X\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\u0008\u0014\u0010\u0011\"\u0004\u0008\u0015\u0010\u0013\u00a8\u0006*"
     }
     d2 = {
         "Ljp/co/sony/mc/camera/view/setting/fragment/ProModeCameraSettingsFunctionCustomFragment$FunctionCustomAdapter;",
@@ -28,43 +28,44 @@
         "selectGroupIndex",
         "",
         "selectChildIndex",
+        "<init>",
         "(Landroid/content/Context;Ljava/util/List;II)V",
         "getContext",
         "()Landroid/content/Context;",
         "getGroup",
         "()Ljava/util/List;",
-        "getSelectChildIndex",
-        "()I",
-        "setSelectChildIndex",
-        "(I)V",
         "getSelectGroupIndex",
+        "()I",
         "setSelectGroupIndex",
-        "getChild",
+        "(I)V",
+        "getSelectChildIndex",
+        "setSelectChildIndex",
         "",
         "groupPosition",
+        "isChildSelectable",
+        "",
         "childPosition",
-        "getChildId",
-        "",
-        "getChildView",
+        "hasStableIds",
+        "getGroupView",
         "Landroid/view/View;",
-        "isLastChild",
-        "",
+        "isExpanded",
         "convertView",
         "parent",
         "Landroid/view/ViewGroup;",
         "getChildrenCount",
-        "getGroupCount",
+        "getChild",
         "getGroupId",
-        "getGroupView",
-        "isExpanded",
-        "hasStableIds",
-        "isChildSelectable",
+        "",
+        "getChildView",
+        "isLastChild",
+        "getChildId",
+        "getGroupCount",
         "SomcCamera_release"
     }
     k = 0x1
     mv = {
-        0x1,
-        0x9,
+        0x2,
+        0x0,
         0x0
     }
     xi = 0x30
@@ -213,7 +214,7 @@
     .line 505
     invoke-static {p4}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;)V
 
-    const v0, 0x7f09010e
+    const v0, 0x7f09010a
 
     invoke-virtual {p4, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -236,7 +237,7 @@
     :cond_1
     invoke-virtual {v0, p3}, Landroid/widget/CheckedTextView;->setChecked(Z)V
 
-    const p1, 0x7f0904bc
+    const p1, 0x7f0904a9
 
     .line 509
     invoke-virtual {p4, p1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
@@ -278,7 +279,7 @@
 
     move-result-object p0
 
-    const p1, 0x7f07073e
+    const p1, 0x7f07079f
 
     invoke-virtual {p0, p1}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
@@ -406,7 +407,7 @@
 
     if-eqz p3, :cond_1
 
-    const v0, 0x7f09021a
+    const v0, 0x7f090218
 
     .line 465
     invoke-virtual {p3, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
@@ -421,28 +422,22 @@
     move-object v0, p4
 
     :goto_0
-    if-nez p3, :cond_2
-
-    goto :goto_1
+    if-eqz p3, :cond_2
 
     .line 466
-    :cond_2
     invoke-virtual {p3, p2}, Landroid/view/View;->setEnabled(Z)V
 
-    :goto_1
-    if-nez p3, :cond_3
-
-    goto :goto_2
+    :cond_2
+    if-eqz p3, :cond_3
 
     .line 468
-    :cond_3
     iget-object p2, p0, Ljp/co/sony/mc/camera/view/setting/fragment/ProModeCameraSettingsFunctionCustomFragment$FunctionCustomAdapter;->context:Landroid/content/Context;
 
     invoke-virtual {p2}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
 
     move-result-object p2
 
-    const v1, 0x7f07073e
+    const v1, 0x7f07079f
 
     invoke-virtual {p2, v1}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
@@ -451,21 +446,18 @@
     invoke-virtual {p3, p2}, Landroid/view/View;->setMinimumHeight(I)V
 
     .line 471
-    :goto_2
+    :cond_3
     invoke-virtual {p1}, Ljp/co/sony/mc/camera/view/setting/fragment/ProModeCameraSettingsFunctionCustomFragment$Category;->getTitleResId()I
 
     move-result p2
 
     const/4 v1, -0x1
 
-    if-eq p2, v1, :cond_8
+    if-eq p2, v1, :cond_7
 
-    if-nez v0, :cond_4
-
-    goto :goto_3
+    if-eqz v0, :cond_4
 
     .line 472
-    :cond_4
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/setting/fragment/ProModeCameraSettingsFunctionCustomFragment$FunctionCustomAdapter;->context:Landroid/content/Context;
 
     invoke-virtual {p1}, Ljp/co/sony/mc/camera/view/setting/fragment/ProModeCameraSettingsFunctionCustomFragment$Category;->getTitleResId()I
@@ -480,64 +472,53 @@
 
     invoke-virtual {v0, p0}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
-    :goto_3
-    if-nez p3, :cond_5
+    :cond_4
+    if-eqz p3, :cond_a
 
-    goto :goto_6
-
-    :cond_5
-    if-eqz p3, :cond_6
+    if-eqz p3, :cond_5
 
     .line 473
     invoke-virtual {p3}, Landroid/view/View;->getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
 
     move-result-object p4
 
-    :cond_6
-    if-nez p4, :cond_7
-
-    goto :goto_4
+    :cond_5
+    if-eqz p4, :cond_6
 
     .line 474
-    :cond_7
     iput v1, p4, Landroid/view/ViewGroup$LayoutParams;->height:I
 
     .line 473
-    :goto_4
+    :cond_6
     invoke-virtual {p3, p4}, Landroid/view/View;->setLayoutParams(Landroid/view/ViewGroup$LayoutParams;)V
 
-    goto :goto_6
+    goto :goto_1
 
-    :cond_8
-    if-nez p3, :cond_9
-
-    goto :goto_6
-
-    :cond_9
+    :cond_7
     if-eqz p3, :cond_a
+
+    if-eqz p3, :cond_8
 
     .line 477
     invoke-virtual {p3}, Landroid/view/View;->getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
 
     move-result-object p4
 
-    :cond_a
-    if-nez p4, :cond_b
+    :cond_8
+    if-eqz p4, :cond_9
 
-    goto :goto_5
-
-    :cond_b
     const/4 p0, 0x1
 
     .line 478
     iput p0, p4, Landroid/view/ViewGroup$LayoutParams;->height:I
 
     .line 477
-    :goto_5
+    :cond_9
     invoke-virtual {p3, p4}, Landroid/view/View;->setLayoutParams(Landroid/view/ViewGroup$LayoutParams;)V
 
     .line 481
-    :goto_6
+    :cond_a
+    :goto_1
     invoke-static {p3}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;)V
 
     return-object p3

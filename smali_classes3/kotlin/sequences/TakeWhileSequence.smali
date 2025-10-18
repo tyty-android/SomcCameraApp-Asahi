@@ -90,13 +90,13 @@
 
     invoke-static {p2, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 430
+    .line 448
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 432
+    .line 450
     iput-object p1, p0, Lkotlin/sequences/TakeWhileSequence;->sequence:Lkotlin/sequences/Sequence;
 
-    .line 433
+    .line 451
     iput-object p2, p0, Lkotlin/sequences/TakeWhileSequence;->predicate:Lkotlin/jvm/functions/Function1;
 
     return-void
@@ -105,7 +105,7 @@
 .method public static final synthetic access$getPredicate$p(Lkotlin/sequences/TakeWhileSequence;)Lkotlin/jvm/functions/Function1;
     .locals 0
 
-    .line 430
+    .line 448
     iget-object p0, p0, Lkotlin/sequences/TakeWhileSequence;->predicate:Lkotlin/jvm/functions/Function1;
 
     return-object p0
@@ -114,7 +114,7 @@
 .method public static final synthetic access$getSequence$p(Lkotlin/sequences/TakeWhileSequence;)Lkotlin/sequences/Sequence;
     .locals 0
 
-    .line 430
+    .line 448
     iget-object p0, p0, Lkotlin/sequences/TakeWhileSequence;->sequence:Lkotlin/sequences/Sequence;
 
     return-object p0
@@ -132,7 +132,7 @@
         }
     .end annotation
 
-    .line 435
+    .line 453
     new-instance v0, Lkotlin/sequences/TakeWhileSequence$iterator$1;
 
     invoke-direct {v0, p0}, Lkotlin/sequences/TakeWhileSequence$iterator$1;-><init>(Lkotlin/sequences/TakeWhileSequence;)V

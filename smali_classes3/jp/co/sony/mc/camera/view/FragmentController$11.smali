@@ -25,7 +25,7 @@
 .method constructor <init>(Ljp/co/sony/mc/camera/view/FragmentController;)V
     .locals 0
 
-    .line 2900
+    .line 3043
     iput-object p1, p0, Ljp/co/sony/mc/camera/view/FragmentController$11;->this$0:Ljp/co/sony/mc/camera/view/FragmentController;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -38,7 +38,7 @@
 .method public onFailure(Ljp/co/sony/mc/camera/rtmp/ErrCode;)V
     .locals 1
 
-    .line 2908
+    .line 3051
     iget-object p1, p0, Ljp/co/sony/mc/camera/view/FragmentController$11;->this$0:Ljp/co/sony/mc/camera/view/FragmentController;
 
     invoke-static {p1}, Ljp/co/sony/mc/camera/view/FragmentController;->-$$Nest$fgetmActivity(Ljp/co/sony/mc/camera/view/FragmentController;)Ljp/co/sony/mc/camera/CameraActivity;
@@ -57,7 +57,7 @@
 .method public onSuccess()V
     .locals 0
 
-    .line 2903
+    .line 3046
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/FragmentController$11;->this$0:Ljp/co/sony/mc/camera/view/FragmentController;
 
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/view/FragmentController;->requestYouTubeChannelName()V

@@ -27,18 +27,30 @@
 
 # direct methods
 .method static constructor <clinit>()V
-    .locals 9
+    .locals 10
+
+    const/4 v0, 0x3
 
     .line 67
-    const-string v0, "EEE, dd-MMM-yy HH:mm:ss zzz"
+    new-array v0, v0, [Ljava/lang/String;
 
-    const-string v1, "EEE MMM d HH:mm:ss yyyy"
+    const-string v1, "EEE, dd MMM yyyy HH:mm:ss zzz"
 
-    const-string v2, "EEE, dd MMM yyyy HH:mm:ss zzz"
+    const/4 v2, 0x0
 
-    filled-new-array {v2, v0, v1}, [Ljava/lang/String;
+    aput-object v1, v0, v2
 
-    move-result-object v0
+    const/4 v1, 0x1
+
+    const-string v3, "EEE, dd-MMM-yy HH:mm:ss zzz"
+
+    aput-object v3, v0, v1
+
+    const/4 v1, 0x2
+
+    const-string v3, "EEE MMM d HH:mm:ss yyyy"
+
+    aput-object v3, v0, v1
 
     sput-object v0, Lorg/apache/http/client/utils/DateUtils;->DEFAULT_PATTERNS:[Ljava/lang/String;
 
@@ -54,37 +66,35 @@
     .line 78
     invoke-static {}, Ljava/util/Calendar;->getInstance()Ljava/util/Calendar;
 
-    move-result-object v8
+    move-result-object v1
 
     .line 79
-    invoke-virtual {v8, v0}, Ljava/util/Calendar;->setTimeZone(Ljava/util/TimeZone;)V
+    invoke-virtual {v1, v0}, Ljava/util/Calendar;->setTimeZone(Ljava/util/TimeZone;)V
 
-    const/4 v6, 0x0
+    const/4 v8, 0x0
 
-    const/4 v7, 0x0
+    const/4 v9, 0x0
 
-    const/16 v2, 0x7d0
-
-    const/4 v3, 0x0
-
-    const/4 v4, 0x1
+    const/16 v4, 0x7d0
 
     const/4 v5, 0x0
 
-    move-object v1, v8
+    const/4 v6, 0x1
+
+    const/4 v7, 0x0
+
+    move-object v3, v1
 
     .line 80
-    invoke-virtual/range {v1 .. v7}, Ljava/util/Calendar;->set(IIIIII)V
+    invoke-virtual/range {v3 .. v9}, Ljava/util/Calendar;->set(IIIIII)V
 
     const/16 v0, 0xe
 
-    const/4 v1, 0x0
-
     .line 81
-    invoke-virtual {v8, v0, v1}, Ljava/util/Calendar;->set(II)V
+    invoke-virtual {v1, v0, v2}, Ljava/util/Calendar;->set(II)V
 
     .line 82
-    invoke-virtual {v8}, Ljava/util/Calendar;->getTime()Ljava/util/Date;
+    invoke-virtual {v1}, Ljava/util/Calendar;->getTime()Ljava/util/Date;
 
     move-result-object v0
 

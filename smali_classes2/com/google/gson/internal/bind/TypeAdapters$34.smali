@@ -27,7 +27,7 @@
 .method constructor <init>(Ljava/lang/Class;Lcom/google/gson/TypeAdapter;)V
     .locals 0
 
-    .line 994
+    .line 1127
     iput-object p1, p0, Lcom/google/gson/internal/bind/TypeAdapters$34;->val$clazz:Ljava/lang/Class;
 
     iput-object p2, p0, Lcom/google/gson/internal/bind/TypeAdapters$34;->val$typeAdapter:Lcom/google/gson/TypeAdapter;
@@ -54,12 +54,12 @@
         }
     .end annotation
 
-    .line 997
+    .line 1131
     invoke-virtual {p2}, Lcom/google/gson/reflect/TypeToken;->getRawType()Ljava/lang/Class;
 
     move-result-object p1
 
-    .line 998
+    .line 1132
     iget-object p2, p0, Lcom/google/gson/internal/bind/TypeAdapters$34;->val$clazz:Ljava/lang/Class;
 
     invoke-virtual {p2, p1}, Ljava/lang/Class;->isAssignableFrom(Ljava/lang/Class;)Z
@@ -72,7 +72,7 @@
 
     return-object p0
 
-    .line 1001
+    .line 1135
     :cond_0
     new-instance p2, Lcom/google/gson/internal/bind/TypeAdapters$34$1;
 
@@ -84,7 +84,7 @@
 .method public toString()Ljava/lang/String;
     .locals 2
 
-    .line 1017
+    .line 1161
     new-instance v0, Ljava/lang/StringBuilder;
 
     const-string v1, "Factory[typeHierarchy="

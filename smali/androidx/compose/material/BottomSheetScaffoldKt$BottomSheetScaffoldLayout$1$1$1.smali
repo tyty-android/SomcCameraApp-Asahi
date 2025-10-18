@@ -16,6 +16,12 @@
     name = null
 .end annotation
 
+.annotation system Ldalvik/annotation/MemberClasses;
+    value = {
+        Landroidx/compose/material/BottomSheetScaffoldKt$BottomSheetScaffoldLayout$1$1$1$WhenMappings;
+    }
+.end annotation
+
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lkotlin/jvm/internal/Lambda;",
@@ -27,7 +33,7 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/SourceDebugExtension;
-    value = "SMAP\nBottomSheetScaffold.kt\nKotlin\n*S Kotlin\n*F\n+ 1 BottomSheetScaffold.kt\nandroidx/compose/material/BottomSheetScaffoldKt$BottomSheetScaffoldLayout$1$1$1\n+ 2 ListUtils.kt\nandroidx/compose/ui/util/ListUtilsKt\n*L\n1#1,748:1\n33#2,6:749\n33#2,6:755\n33#2,6:761\n33#2,6:767\n33#2,6:773\n*S KotlinDebug\n*F\n+ 1 BottomSheetScaffold.kt\nandroidx/compose/material/BottomSheetScaffoldKt$BottomSheetScaffoldLayout$1$1$1\n*L\n659#1:749,6\n660#1:755,6\n661#1:761,6\n662#1:767,6\n663#1:773,6\n*E\n"
+    value = "SMAP\nBottomSheetScaffold.kt\nKotlin\n*S Kotlin\n*F\n+ 1 BottomSheetScaffold.kt\nandroidx/compose/material/BottomSheetScaffoldKt$BottomSheetScaffoldLayout$1$1$1\n+ 2 ListUtils.kt\nandroidx/compose/ui/util/ListUtilsKt\n*L\n1#1,812:1\n33#2,6:813\n33#2,6:819\n33#2,6:825\n33#2,6:831\n33#2,6:837\n*S KotlinDebug\n*F\n+ 1 BottomSheetScaffold.kt\nandroidx/compose/material/BottomSheetScaffoldKt$BottomSheetScaffoldLayout$1$1$1\n*L\n742#1:813,6\n743#1:819,6\n744#1:825,6\n745#1:831,6\n746#1:837,6\n*E\n"
 .end annotation
 
 .annotation runtime Lkotlin/Metadata;
@@ -61,9 +67,7 @@
     .end annotation
 .end field
 
-.field final synthetic $fabOffsetX:I
-
-.field final synthetic $fabOffsetY:I
+.field final synthetic $fabHeight:I
 
 .field final synthetic $fabPlaceable:Ljava/util/List;
     .annotation system Ldalvik/annotation/Signature;
@@ -75,7 +79,25 @@
     .end annotation
 .end field
 
-.field final synthetic $sheetOffsetY:I
+.field final synthetic $fabWidth:I
+
+.field final synthetic $floatingActionButtonPosition:I
+
+.field final synthetic $layoutHeight:I
+
+.field final synthetic $layoutWidth:I
+
+.field final synthetic $sheetOffset:Lkotlin/jvm/functions/Function0;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Lkotlin/jvm/functions/Function0<",
+            "Ljava/lang/Float;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field final synthetic $sheetPeekHeight:F
 
 .field final synthetic $sheetPlaceables:Ljava/util/List;
     .annotation system Ldalvik/annotation/Signature;
@@ -87,9 +109,9 @@
     .end annotation
 .end field
 
-.field final synthetic $snackbarOffsetX:I
+.field final synthetic $sheetState:Landroidx/compose/material/BottomSheetState;
 
-.field final synthetic $snackbarOffsetY:I
+.field final synthetic $snackbarHeight:I
 
 .field final synthetic $snackbarPlaceables:Ljava/util/List;
     .annotation system Ldalvik/annotation/Signature;
@@ -100,6 +122,10 @@
         }
     .end annotation
 .end field
+
+.field final synthetic $snackbarWidth:I
+
+.field final synthetic $this_SubcomposeLayout:Landroidx/compose/ui/layout/SubcomposeMeasureScope;
 
 .field final synthetic $topBarHeight:I
 
@@ -115,11 +141,18 @@
 
 
 # direct methods
-.method constructor <init>(Ljava/util/List;Ljava/util/List;Ljava/util/List;Ljava/util/List;Ljava/util/List;IIIIII)V
-    .locals 0
+.method constructor <init>(Lkotlin/jvm/functions/Function0;ILandroidx/compose/ui/layout/SubcomposeMeasureScope;IIFIILandroidx/compose/material/BottomSheetState;IILjava/util/List;Ljava/util/List;Ljava/util/List;Ljava/util/List;Ljava/util/List;I)V
+    .locals 2
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
+            "Lkotlin/jvm/functions/Function0<",
+            "Ljava/lang/Float;",
+            ">;I",
+            "Landroidx/compose/ui/layout/SubcomposeMeasureScope;",
+            "IIFII",
+            "Landroidx/compose/material/BottomSheetState;",
+            "II",
             "Ljava/util/List<",
             "+",
             "Landroidx/compose/ui/layout/Placeable;",
@@ -139,35 +172,83 @@
             "Ljava/util/List<",
             "+",
             "Landroidx/compose/ui/layout/Placeable;",
-            ">;IIIIII)V"
+            ">;I)V"
         }
     .end annotation
 
-    iput-object p1, p0, Landroidx/compose/material/BottomSheetScaffoldKt$BottomSheetScaffoldLayout$1$1$1;->$bodyPlaceables:Ljava/util/List;
+    move-object v0, p0
 
-    iput-object p2, p0, Landroidx/compose/material/BottomSheetScaffoldKt$BottomSheetScaffoldLayout$1$1$1;->$topBarPlaceables:Ljava/util/List;
+    move-object v1, p1
 
-    iput-object p3, p0, Landroidx/compose/material/BottomSheetScaffoldKt$BottomSheetScaffoldLayout$1$1$1;->$sheetPlaceables:Ljava/util/List;
+    iput-object v1, v0, Landroidx/compose/material/BottomSheetScaffoldKt$BottomSheetScaffoldLayout$1$1$1;->$sheetOffset:Lkotlin/jvm/functions/Function0;
 
-    iput-object p4, p0, Landroidx/compose/material/BottomSheetScaffoldKt$BottomSheetScaffoldLayout$1$1$1;->$fabPlaceable:Ljava/util/List;
+    move v1, p2
 
-    iput-object p5, p0, Landroidx/compose/material/BottomSheetScaffoldKt$BottomSheetScaffoldLayout$1$1$1;->$snackbarPlaceables:Ljava/util/List;
+    iput v1, v0, Landroidx/compose/material/BottomSheetScaffoldKt$BottomSheetScaffoldLayout$1$1$1;->$floatingActionButtonPosition:I
 
-    iput p6, p0, Landroidx/compose/material/BottomSheetScaffoldKt$BottomSheetScaffoldLayout$1$1$1;->$topBarHeight:I
+    move-object v1, p3
 
-    iput p7, p0, Landroidx/compose/material/BottomSheetScaffoldKt$BottomSheetScaffoldLayout$1$1$1;->$sheetOffsetY:I
+    iput-object v1, v0, Landroidx/compose/material/BottomSheetScaffoldKt$BottomSheetScaffoldLayout$1$1$1;->$this_SubcomposeLayout:Landroidx/compose/ui/layout/SubcomposeMeasureScope;
 
-    iput p8, p0, Landroidx/compose/material/BottomSheetScaffoldKt$BottomSheetScaffoldLayout$1$1$1;->$fabOffsetX:I
+    move v1, p4
 
-    iput p9, p0, Landroidx/compose/material/BottomSheetScaffoldKt$BottomSheetScaffoldLayout$1$1$1;->$fabOffsetY:I
+    iput v1, v0, Landroidx/compose/material/BottomSheetScaffoldKt$BottomSheetScaffoldLayout$1$1$1;->$layoutWidth:I
 
-    iput p10, p0, Landroidx/compose/material/BottomSheetScaffoldKt$BottomSheetScaffoldLayout$1$1$1;->$snackbarOffsetX:I
+    move v1, p5
 
-    iput p11, p0, Landroidx/compose/material/BottomSheetScaffoldKt$BottomSheetScaffoldLayout$1$1$1;->$snackbarOffsetY:I
+    iput v1, v0, Landroidx/compose/material/BottomSheetScaffoldKt$BottomSheetScaffoldLayout$1$1$1;->$fabWidth:I
 
-    const/4 p1, 0x1
+    move v1, p6
 
-    invoke-direct {p0, p1}, Lkotlin/jvm/internal/Lambda;-><init>(I)V
+    iput v1, v0, Landroidx/compose/material/BottomSheetScaffoldKt$BottomSheetScaffoldLayout$1$1$1;->$sheetPeekHeight:F
+
+    move v1, p7
+
+    iput v1, v0, Landroidx/compose/material/BottomSheetScaffoldKt$BottomSheetScaffoldLayout$1$1$1;->$fabHeight:I
+
+    move v1, p8
+
+    iput v1, v0, Landroidx/compose/material/BottomSheetScaffoldKt$BottomSheetScaffoldLayout$1$1$1;->$snackbarWidth:I
+
+    move-object v1, p9
+
+    iput-object v1, v0, Landroidx/compose/material/BottomSheetScaffoldKt$BottomSheetScaffoldLayout$1$1$1;->$sheetState:Landroidx/compose/material/BottomSheetState;
+
+    move v1, p10
+
+    iput v1, v0, Landroidx/compose/material/BottomSheetScaffoldKt$BottomSheetScaffoldLayout$1$1$1;->$snackbarHeight:I
+
+    move v1, p11
+
+    iput v1, v0, Landroidx/compose/material/BottomSheetScaffoldKt$BottomSheetScaffoldLayout$1$1$1;->$layoutHeight:I
+
+    move-object v1, p12
+
+    iput-object v1, v0, Landroidx/compose/material/BottomSheetScaffoldKt$BottomSheetScaffoldLayout$1$1$1;->$bodyPlaceables:Ljava/util/List;
+
+    move-object v1, p13
+
+    iput-object v1, v0, Landroidx/compose/material/BottomSheetScaffoldKt$BottomSheetScaffoldLayout$1$1$1;->$topBarPlaceables:Ljava/util/List;
+
+    move-object/from16 v1, p14
+
+    iput-object v1, v0, Landroidx/compose/material/BottomSheetScaffoldKt$BottomSheetScaffoldLayout$1$1$1;->$sheetPlaceables:Ljava/util/List;
+
+    move-object/from16 v1, p15
+
+    iput-object v1, v0, Landroidx/compose/material/BottomSheetScaffoldKt$BottomSheetScaffoldLayout$1$1$1;->$fabPlaceable:Ljava/util/List;
+
+    move-object/from16 v1, p16
+
+    iput-object v1, v0, Landroidx/compose/material/BottomSheetScaffoldKt$BottomSheetScaffoldLayout$1$1$1;->$snackbarPlaceables:Ljava/util/List;
+
+    move/from16 v1, p17
+
+    iput v1, v0, Landroidx/compose/material/BottomSheetScaffoldKt$BottomSheetScaffoldLayout$1$1$1;->$topBarHeight:I
+
+    const/4 v1, 0x1
+
+    invoke-direct {p0, v1}, Lkotlin/jvm/internal/Lambda;-><init>(I)V
 
     return-void
 .end method
@@ -177,7 +258,7 @@
 .method public bridge synthetic invoke(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
 
-    .line 657
+    .line 721
     check-cast p1, Landroidx/compose/ui/layout/Placeable$PlacementScope;
 
     invoke-virtual {p0, p1}, Landroidx/compose/material/BottomSheetScaffoldKt$BottomSheetScaffoldLayout$1$1$1;->invoke(Landroidx/compose/ui/layout/Placeable$PlacementScope;)V
@@ -188,84 +269,322 @@
 .end method
 
 .method public final invoke(Landroidx/compose/ui/layout/Placeable$PlacementScope;)V
-    .locals 15
+    .locals 24
 
-    move-object v0, p0
+    move-object/from16 v0, p0
 
-    const-string v1, "$this$layout"
+    .line 722
+    iget-object v1, v0, Landroidx/compose/material/BottomSheetScaffoldKt$BottomSheetScaffoldLayout$1$1$1;->$sheetOffset:Lkotlin/jvm/functions/Function0;
 
-    move-object/from16 v9, p1
+    invoke-interface {v1}, Lkotlin/jvm/functions/Function0;->invoke()Ljava/lang/Object;
 
-    invoke-static {v9, v1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+    move-result-object v1
 
-    .line 659
-    iget-object v1, v0, Landroidx/compose/material/BottomSheetScaffoldKt$BottomSheetScaffoldLayout$1$1$1;->$bodyPlaceables:Ljava/util/List;
+    check-cast v1, Ljava/lang/Number;
 
-    iget v10, v0, Landroidx/compose/material/BottomSheetScaffoldKt$BottomSheetScaffoldLayout$1$1$1;->$topBarHeight:I
+    invoke-virtual {v1}, Ljava/lang/Number;->floatValue()F
 
-    .line 750
-    invoke-interface {v1}, Ljava/util/List;->size()I
+    move-result v1
 
-    move-result v11
+    invoke-static {v1}, Lkotlin/math/MathKt;->roundToInt(F)I
 
-    const/4 v12, 0x0
+    move-result v1
 
-    move v13, v12
+    .line 724
+    iget v2, v0, Landroidx/compose/material/BottomSheetScaffoldKt$BottomSheetScaffoldLayout$1$1$1;->$floatingActionButtonPosition:I
+
+    .line 725
+    sget-object v3, Landroidx/compose/material/FabPosition;->Companion:Landroidx/compose/material/FabPosition$Companion;
+
+    invoke-virtual {v3}, Landroidx/compose/material/FabPosition$Companion;->getStart-5ygKITE()I
+
+    move-result v3
+
+    invoke-static {v2, v3}, Landroidx/compose/material/FabPosition;->equals-impl0(II)Z
+
+    move-result v3
+
+    const/4 v4, 0x2
+
+    if-eqz v3, :cond_0
+
+    iget-object v2, v0, Landroidx/compose/material/BottomSheetScaffoldKt$BottomSheetScaffoldLayout$1$1$1;->$this_SubcomposeLayout:Landroidx/compose/ui/layout/SubcomposeMeasureScope;
+
+    invoke-static {}, Landroidx/compose/material/BottomSheetScaffoldKt;->access$getFabSpacing$p()F
+
+    move-result v3
+
+    invoke-interface {v2, v3}, Landroidx/compose/ui/layout/SubcomposeMeasureScope;->roundToPx-0680j_4(F)I
+
+    move-result v2
 
     :goto_0
-    if-ge v13, v11, :cond_0
+    move v12, v2
 
-    .line 751
-    invoke-interface {v1, v13}, Ljava/util/List;->get(I)Ljava/lang/Object;
+    goto :goto_1
 
-    move-result-object v2
+    .line 726
+    :cond_0
+    sget-object v3, Landroidx/compose/material/FabPosition;->Companion:Landroidx/compose/material/FabPosition$Companion;
 
-    .line 752
-    move-object v3, v2
+    invoke-virtual {v3}, Landroidx/compose/material/FabPosition$Companion;->getCenter-5ygKITE()I
 
-    check-cast v3, Landroidx/compose/ui/layout/Placeable;
+    move-result v3
 
-    const/4 v7, 0x4
+    invoke-static {v2, v3}, Landroidx/compose/material/FabPosition;->equals-impl0(II)Z
 
-    const/4 v8, 0x0
+    move-result v2
 
-    const/4 v4, 0x0
+    if-eqz v2, :cond_1
 
-    const/4 v6, 0x0
+    iget v2, v0, Landroidx/compose/material/BottomSheetScaffoldKt$BottomSheetScaffoldLayout$1$1$1;->$layoutWidth:I
 
-    move-object/from16 v2, p1
+    iget v3, v0, Landroidx/compose/material/BottomSheetScaffoldKt$BottomSheetScaffoldLayout$1$1$1;->$fabWidth:I
 
-    move v5, v10
+    sub-int/2addr v2, v3
 
-    .line 659
-    invoke-static/range {v2 .. v8}, Landroidx/compose/ui/layout/Placeable$PlacementScope;->placeRelative$default(Landroidx/compose/ui/layout/Placeable$PlacementScope;Landroidx/compose/ui/layout/Placeable;IIFILjava/lang/Object;)V
-
-    add-int/lit8 v13, v13, 0x1
+    div-int/2addr v2, v4
 
     goto :goto_0
 
-    .line 660
-    :cond_0
-    iget-object v1, v0, Landroidx/compose/material/BottomSheetScaffoldKt$BottomSheetScaffoldLayout$1$1$1;->$topBarPlaceables:Ljava/util/List;
+    .line 727
+    :cond_1
+    iget v2, v0, Landroidx/compose/material/BottomSheetScaffoldKt$BottomSheetScaffoldLayout$1$1$1;->$layoutWidth:I
 
-    if-eqz v1, :cond_1
+    iget v3, v0, Landroidx/compose/material/BottomSheetScaffoldKt$BottomSheetScaffoldLayout$1$1$1;->$fabWidth:I
 
-    .line 756
-    invoke-interface {v1}, Ljava/util/List;->size()I
+    sub-int/2addr v2, v3
 
-    move-result v10
+    iget-object v3, v0, Landroidx/compose/material/BottomSheetScaffoldKt$BottomSheetScaffoldLayout$1$1$1;->$this_SubcomposeLayout:Landroidx/compose/ui/layout/SubcomposeMeasureScope;
 
-    move v11, v12
+    invoke-static {}, Landroidx/compose/material/BottomSheetScaffoldKt;->access$getFabSpacing$p()F
 
+    move-result v5
+
+    invoke-interface {v3, v5}, Landroidx/compose/ui/layout/SubcomposeMeasureScope;->roundToPx-0680j_4(F)I
+
+    move-result v3
+
+    sub-int/2addr v2, v3
+
+    goto :goto_0
+
+    .line 731
     :goto_1
-    if-ge v11, v10, :cond_1
+    iget-object v2, v0, Landroidx/compose/material/BottomSheetScaffoldKt$BottomSheetScaffoldLayout$1$1$1;->$this_SubcomposeLayout:Landroidx/compose/ui/layout/SubcomposeMeasureScope;
 
-    .line 757
-    invoke-interface {v1, v11}, Ljava/util/List;->get(I)Ljava/lang/Object;
+    iget v3, v0, Landroidx/compose/material/BottomSheetScaffoldKt$BottomSheetScaffoldLayout$1$1$1;->$sheetPeekHeight:F
+
+    invoke-interface {v2, v3}, Landroidx/compose/ui/layout/SubcomposeMeasureScope;->toPx-0680j_4(F)F
+
+    move-result v2
+
+    iget v3, v0, Landroidx/compose/material/BottomSheetScaffoldKt$BottomSheetScaffoldLayout$1$1$1;->$fabHeight:I
+
+    div-int/lit8 v5, v3, 0x2
+
+    int-to-float v5, v5
+
+    cmpg-float v2, v2, v5
+
+    if-gez v2, :cond_2
+
+    sub-int v2, v1, v3
+
+    .line 732
+    iget-object v3, v0, Landroidx/compose/material/BottomSheetScaffoldKt$BottomSheetScaffoldLayout$1$1$1;->$this_SubcomposeLayout:Landroidx/compose/ui/layout/SubcomposeMeasureScope;
+
+    invoke-static {}, Landroidx/compose/material/BottomSheetScaffoldKt;->access$getFabSpacing$p()F
+
+    move-result v5
+
+    invoke-interface {v3, v5}, Landroidx/compose/ui/layout/SubcomposeMeasureScope;->roundToPx-0680j_4(F)I
+
+    move-result v3
+
+    sub-int/2addr v2, v3
+
+    goto :goto_2
+
+    .line 733
+    :cond_2
+    div-int/2addr v3, v4
+
+    sub-int v2, v1, v3
+
+    :goto_2
+    move v13, v2
+
+    .line 735
+    iget v2, v0, Landroidx/compose/material/BottomSheetScaffoldKt$BottomSheetScaffoldLayout$1$1$1;->$layoutWidth:I
+
+    iget v3, v0, Landroidx/compose/material/BottomSheetScaffoldKt$BottomSheetScaffoldLayout$1$1$1;->$snackbarWidth:I
+
+    sub-int/2addr v2, v3
+
+    div-int/lit8 v14, v2, 0x2
+
+    .line 736
+    iget-object v2, v0, Landroidx/compose/material/BottomSheetScaffoldKt$BottomSheetScaffoldLayout$1$1$1;->$sheetState:Landroidx/compose/material/BottomSheetState;
+
+    invoke-virtual {v2}, Landroidx/compose/material/BottomSheetState;->getCurrentValue()Landroidx/compose/material/BottomSheetValue;
 
     move-result-object v2
 
-    .line 758
+    sget-object v3, Landroidx/compose/material/BottomSheetScaffoldKt$BottomSheetScaffoldLayout$1$1$1$WhenMappings;->$EnumSwitchMapping$0:[I
+
+    invoke-virtual {v2}, Landroidx/compose/material/BottomSheetValue;->ordinal()I
+
+    move-result v2
+
+    aget v2, v3, v2
+
+    const/4 v3, 0x1
+
+    if-eq v2, v3, :cond_4
+
+    if-ne v2, v4, :cond_3
+
+    .line 738
+    iget v2, v0, Landroidx/compose/material/BottomSheetScaffoldKt$BottomSheetScaffoldLayout$1$1$1;->$layoutHeight:I
+
+    iget v3, v0, Landroidx/compose/material/BottomSheetScaffoldKt$BottomSheetScaffoldLayout$1$1$1;->$snackbarHeight:I
+
+    sub-int/2addr v2, v3
+
+    goto :goto_3
+
+    :cond_3
+    new-instance v0, Lkotlin/NoWhenBranchMatchedException;
+
+    invoke-direct {v0}, Lkotlin/NoWhenBranchMatchedException;-><init>()V
+
+    throw v0
+
+    .line 737
+    :cond_4
+    iget v2, v0, Landroidx/compose/material/BottomSheetScaffoldKt$BottomSheetScaffoldLayout$1$1$1;->$snackbarHeight:I
+
+    sub-int v2, v13, v2
+
+    :goto_3
+    move v15, v2
+
+    .line 742
+    iget-object v2, v0, Landroidx/compose/material/BottomSheetScaffoldKt$BottomSheetScaffoldLayout$1$1$1;->$bodyPlaceables:Ljava/util/List;
+
+    iget v10, v0, Landroidx/compose/material/BottomSheetScaffoldKt$BottomSheetScaffoldLayout$1$1$1;->$topBarHeight:I
+
+    .line 814
+    invoke-interface {v2}, Ljava/util/List;->size()I
+
+    move-result v11
+
+    const/16 v16, 0x0
+
+    move/from16 v9, v16
+
+    :goto_4
+    if-ge v9, v11, :cond_5
+
+    .line 815
+    invoke-interface {v2, v9}, Ljava/util/List;->get(I)Ljava/lang/Object;
+
+    move-result-object v3
+
+    .line 816
+    move-object v4, v3
+
+    check-cast v4, Landroidx/compose/ui/layout/Placeable;
+
+    const/4 v8, 0x4
+
+    const/16 v17, 0x0
+
+    const/4 v5, 0x0
+
+    const/4 v7, 0x0
+
+    move-object/from16 v3, p1
+
+    move v6, v10
+
+    move/from16 v18, v9
+
+    move-object/from16 v9, v17
+
+    .line 742
+    invoke-static/range {v3 .. v9}, Landroidx/compose/ui/layout/Placeable$PlacementScope;->placeRelative$default(Landroidx/compose/ui/layout/Placeable$PlacementScope;Landroidx/compose/ui/layout/Placeable;IIFILjava/lang/Object;)V
+
+    add-int/lit8 v9, v18, 0x1
+
+    goto :goto_4
+
+    .line 743
+    :cond_5
+    iget-object v2, v0, Landroidx/compose/material/BottomSheetScaffoldKt$BottomSheetScaffoldLayout$1$1$1;->$topBarPlaceables:Ljava/util/List;
+
+    if-eqz v2, :cond_6
+
+    .line 820
+    invoke-interface {v2}, Ljava/util/List;->size()I
+
+    move-result v3
+
+    move/from16 v4, v16
+
+    :goto_5
+    if-ge v4, v3, :cond_6
+
+    .line 821
+    invoke-interface {v2, v4}, Ljava/util/List;->get(I)Ljava/lang/Object;
+
+    move-result-object v5
+
+    .line 822
+    move-object/from16 v18, v5
+
+    check-cast v18, Landroidx/compose/ui/layout/Placeable;
+
+    const/16 v22, 0x4
+
+    const/16 v23, 0x0
+
+    const/16 v19, 0x0
+
+    const/16 v20, 0x0
+
+    const/16 v21, 0x0
+
+    move-object/from16 v17, p1
+
+    .line 743
+    invoke-static/range {v17 .. v23}, Landroidx/compose/ui/layout/Placeable$PlacementScope;->placeRelative$default(Landroidx/compose/ui/layout/Placeable$PlacementScope;Landroidx/compose/ui/layout/Placeable;IIFILjava/lang/Object;)V
+
+    add-int/lit8 v4, v4, 0x1
+
+    goto :goto_5
+
+    .line 744
+    :cond_6
+    iget-object v9, v0, Landroidx/compose/material/BottomSheetScaffoldKt$BottomSheetScaffoldLayout$1$1$1;->$sheetPlaceables:Ljava/util/List;
+
+    .line 826
+    invoke-interface {v9}, Ljava/util/List;->size()I
+
+    move-result v10
+
+    move/from16 v11, v16
+
+    :goto_6
+    if-ge v11, v10, :cond_7
+
+    .line 827
+    invoke-interface {v9, v11}, Ljava/util/List;->get(I)Ljava/lang/Object;
+
+    move-result-object v2
+
+    .line 828
     move-object v3, v2
 
     check-cast v3, Landroidx/compose/ui/layout/Placeable;
@@ -276,158 +595,107 @@
 
     const/4 v4, 0x0
 
-    const/4 v5, 0x0
-
     const/4 v6, 0x0
 
     move-object/from16 v2, p1
 
-    .line 660
+    move v5, v1
+
+    .line 744
     invoke-static/range {v2 .. v8}, Landroidx/compose/ui/layout/Placeable$PlacementScope;->placeRelative$default(Landroidx/compose/ui/layout/Placeable$PlacementScope;Landroidx/compose/ui/layout/Placeable;IIFILjava/lang/Object;)V
 
     add-int/lit8 v11, v11, 0x1
 
-    goto :goto_1
+    goto :goto_6
 
-    .line 661
-    :cond_1
-    iget-object v1, v0, Landroidx/compose/material/BottomSheetScaffoldKt$BottomSheetScaffoldLayout$1$1$1;->$sheetPlaceables:Ljava/util/List;
-
-    iget v10, v0, Landroidx/compose/material/BottomSheetScaffoldKt$BottomSheetScaffoldLayout$1$1$1;->$sheetOffsetY:I
-
-    .line 762
-    invoke-interface {v1}, Ljava/util/List;->size()I
-
-    move-result v11
-
-    move v13, v12
-
-    :goto_2
-    if-ge v13, v11, :cond_2
-
-    .line 763
-    invoke-interface {v1, v13}, Ljava/util/List;->get(I)Ljava/lang/Object;
-
-    move-result-object v2
-
-    .line 764
-    move-object v3, v2
-
-    check-cast v3, Landroidx/compose/ui/layout/Placeable;
-
-    const/4 v7, 0x4
-
-    const/4 v8, 0x0
-
-    const/4 v4, 0x0
-
-    const/4 v6, 0x0
-
-    move-object/from16 v2, p1
-
-    move v5, v10
-
-    .line 661
-    invoke-static/range {v2 .. v8}, Landroidx/compose/ui/layout/Placeable$PlacementScope;->placeRelative$default(Landroidx/compose/ui/layout/Placeable$PlacementScope;Landroidx/compose/ui/layout/Placeable;IIFILjava/lang/Object;)V
-
-    add-int/lit8 v13, v13, 0x1
-
-    goto :goto_2
-
-    .line 662
-    :cond_2
+    .line 745
+    :cond_7
     iget-object v1, v0, Landroidx/compose/material/BottomSheetScaffoldKt$BottomSheetScaffoldLayout$1$1$1;->$fabPlaceable:Ljava/util/List;
 
-    if-eqz v1, :cond_3
+    if-eqz v1, :cond_8
 
-    iget v10, v0, Landroidx/compose/material/BottomSheetScaffoldKt$BottomSheetScaffoldLayout$1$1$1;->$fabOffsetX:I
-
-    iget v11, v0, Landroidx/compose/material/BottomSheetScaffoldKt$BottomSheetScaffoldLayout$1$1$1;->$fabOffsetY:I
-
-    .line 768
+    .line 832
     invoke-interface {v1}, Ljava/util/List;->size()I
 
-    move-result v13
+    move-result v2
 
-    move v14, v12
+    move/from16 v3, v16
 
-    :goto_3
-    if-ge v14, v13, :cond_3
+    :goto_7
+    if-ge v3, v2, :cond_8
 
-    .line 769
-    invoke-interface {v1, v14}, Ljava/util/List;->get(I)Ljava/lang/Object;
+    .line 833
+    invoke-interface {v1, v3}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
-    move-result-object v2
+    move-result-object v4
 
-    .line 770
-    move-object v3, v2
+    .line 834
+    move-object v6, v4
 
-    check-cast v3, Landroidx/compose/ui/layout/Placeable;
+    check-cast v6, Landroidx/compose/ui/layout/Placeable;
 
-    const/4 v7, 0x4
+    const/4 v10, 0x4
 
-    const/4 v8, 0x0
+    const/4 v11, 0x0
 
-    const/4 v6, 0x0
+    const/4 v9, 0x0
 
-    move-object/from16 v2, p1
+    move-object/from16 v5, p1
 
-    move v4, v10
+    move v7, v12
 
-    move v5, v11
+    move v8, v13
 
-    .line 662
-    invoke-static/range {v2 .. v8}, Landroidx/compose/ui/layout/Placeable$PlacementScope;->placeRelative$default(Landroidx/compose/ui/layout/Placeable$PlacementScope;Landroidx/compose/ui/layout/Placeable;IIFILjava/lang/Object;)V
+    .line 745
+    invoke-static/range {v5 .. v11}, Landroidx/compose/ui/layout/Placeable$PlacementScope;->placeRelative$default(Landroidx/compose/ui/layout/Placeable$PlacementScope;Landroidx/compose/ui/layout/Placeable;IIFILjava/lang/Object;)V
 
-    add-int/lit8 v14, v14, 0x1
+    add-int/lit8 v3, v3, 0x1
 
-    goto :goto_3
+    goto :goto_7
 
-    .line 663
-    :cond_3
-    iget-object v1, v0, Landroidx/compose/material/BottomSheetScaffoldKt$BottomSheetScaffoldLayout$1$1$1;->$snackbarPlaceables:Ljava/util/List;
+    .line 746
+    :cond_8
+    iget-object v0, v0, Landroidx/compose/material/BottomSheetScaffoldKt$BottomSheetScaffoldLayout$1$1$1;->$snackbarPlaceables:Ljava/util/List;
 
-    iget v10, v0, Landroidx/compose/material/BottomSheetScaffoldKt$BottomSheetScaffoldLayout$1$1$1;->$snackbarOffsetX:I
+    .line 838
+    invoke-interface {v0}, Ljava/util/List;->size()I
 
-    iget v0, v0, Landroidx/compose/material/BottomSheetScaffoldKt$BottomSheetScaffoldLayout$1$1$1;->$snackbarOffsetY:I
+    move-result v1
 
-    .line 774
-    invoke-interface {v1}, Ljava/util/List;->size()I
+    move/from16 v2, v16
 
-    move-result v11
+    :goto_8
+    if-ge v2, v1, :cond_9
 
-    :goto_4
-    if-ge v12, v11, :cond_4
+    .line 839
+    invoke-interface {v0, v2}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
-    .line 775
-    invoke-interface {v1, v12}, Ljava/util/List;->get(I)Ljava/lang/Object;
+    move-result-object v3
 
-    move-result-object v2
+    .line 840
+    move-object v6, v3
 
-    .line 776
-    move-object v3, v2
+    check-cast v6, Landroidx/compose/ui/layout/Placeable;
 
-    check-cast v3, Landroidx/compose/ui/layout/Placeable;
+    const/4 v10, 0x4
 
-    const/4 v7, 0x4
+    const/4 v11, 0x0
 
-    const/4 v8, 0x0
+    const/4 v9, 0x0
 
-    const/4 v6, 0x0
+    move-object/from16 v5, p1
 
-    move-object/from16 v2, p1
+    move v7, v14
 
-    move v4, v10
+    move v8, v15
 
-    move v5, v0
+    .line 746
+    invoke-static/range {v5 .. v11}, Landroidx/compose/ui/layout/Placeable$PlacementScope;->placeRelative$default(Landroidx/compose/ui/layout/Placeable$PlacementScope;Landroidx/compose/ui/layout/Placeable;IIFILjava/lang/Object;)V
 
-    .line 663
-    invoke-static/range {v2 .. v8}, Landroidx/compose/ui/layout/Placeable$PlacementScope;->placeRelative$default(Landroidx/compose/ui/layout/Placeable$PlacementScope;Landroidx/compose/ui/layout/Placeable;IIFILjava/lang/Object;)V
+    add-int/lit8 v2, v2, 0x1
 
-    add-int/lit8 v12, v12, 0x1
+    goto :goto_8
 
-    goto :goto_4
-
-    :cond_4
+    :cond_9
     return-void
 .end method

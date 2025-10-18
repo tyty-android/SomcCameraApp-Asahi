@@ -25,6 +25,8 @@
 # static fields
 .field private static final synthetic $VALUES:[Ljp/co/sony/mc/camera/status/eachcamera/VideoStabilizerStatus$Value;
 
+.field public static final enum ACTION_MODE:Ljp/co/sony/mc/camera/status/eachcamera/VideoStabilizerStatus$Value;
+
 .field public static final enum INTELLIGENT_ACTIVE:Ljp/co/sony/mc/camera/status/eachcamera/VideoStabilizerStatus$Value;
 
 .field public static final enum OFF:Ljp/co/sony/mc/camera/status/eachcamera/VideoStabilizerStatus$Value;
@@ -38,7 +40,7 @@
 
 # direct methods
 .method private static synthetic $values()[Ljp/co/sony/mc/camera/status/eachcamera/VideoStabilizerStatus$Value;
-    .locals 3
+    .locals 4
 
     .line 29
     sget-object v0, Ljp/co/sony/mc/camera/status/eachcamera/VideoStabilizerStatus$Value;->ON:Ljp/co/sony/mc/camera/status/eachcamera/VideoStabilizerStatus$Value;
@@ -47,7 +49,9 @@
 
     sget-object v2, Ljp/co/sony/mc/camera/status/eachcamera/VideoStabilizerStatus$Value;->INTELLIGENT_ACTIVE:Ljp/co/sony/mc/camera/status/eachcamera/VideoStabilizerStatus$Value;
 
-    filled-new-array {v0, v1, v2}, [Ljp/co/sony/mc/camera/status/eachcamera/VideoStabilizerStatus$Value;
+    sget-object v3, Ljp/co/sony/mc/camera/status/eachcamera/VideoStabilizerStatus$Value;->ACTION_MODE:Ljp/co/sony/mc/camera/status/eachcamera/VideoStabilizerStatus$Value;
+
+    filled-new-array {v0, v1, v2, v3}, [Ljp/co/sony/mc/camera/status/eachcamera/VideoStabilizerStatus$Value;
 
     move-result-object v0
 
@@ -96,6 +100,19 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/status/eachcamera/VideoStabilizerStatus$Value;->INTELLIGENT_ACTIVE:Ljp/co/sony/mc/camera/status/eachcamera/VideoStabilizerStatus$Value;
 
+    .line 33
+    new-instance v0, Ljp/co/sony/mc/camera/status/eachcamera/VideoStabilizerStatus$Value;
+
+    const/4 v1, 0x3
+
+    const-string v2, "action_mode"
+
+    const-string v3, "ACTION_MODE"
+
+    invoke-direct {v0, v3, v1, v2}, Ljp/co/sony/mc/camera/status/eachcamera/VideoStabilizerStatus$Value;-><init>(Ljava/lang/String;ILjava/lang/String;)V
+
+    sput-object v0, Ljp/co/sony/mc/camera/status/eachcamera/VideoStabilizerStatus$Value;->ACTION_MODE:Ljp/co/sony/mc/camera/status/eachcamera/VideoStabilizerStatus$Value;
+
     .line 29
     invoke-static {}, Ljp/co/sony/mc/camera/status/eachcamera/VideoStabilizerStatus$Value;->$values()[Ljp/co/sony/mc/camera/status/eachcamera/VideoStabilizerStatus$Value;
 
@@ -116,10 +133,10 @@
         }
     .end annotation
 
-    .line 36
+    .line 37
     invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
-    .line 37
+    .line 38
     iput-object p3, p0, Ljp/co/sony/mc/camera/status/eachcamera/VideoStabilizerStatus$Value;->mStringExpression:Ljava/lang/String;
 
     return-void
@@ -160,7 +177,7 @@
 .method public toString()Ljava/lang/String;
     .locals 0
 
-    .line 42
+    .line 43
     iget-object p0, p0, Ljp/co/sony/mc/camera/status/eachcamera/VideoStabilizerStatus$Value;->mStringExpression:Ljava/lang/String;
 
     return-object p0

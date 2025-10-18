@@ -1,94 +1,83 @@
-.class Ljp/co/sony/mc/camera/SetupWizardActivity$1;
-.super Landroid/app/KeyguardManager$KeyguardDismissCallback;
+.class synthetic Ljp/co/sony/mc/camera/SetupWizardActivity$1;
+.super Ljava/lang/Object;
 .source "SetupWizardActivity.java"
 
 
 # annotations
-.annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Ljp/co/sony/mc/camera/SetupWizardActivity;->dismissKeyguardForPermissionRequest(Ljp/co/sony/mc/camera/SetupWizardActivity$PermissionRequest;)V
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Ljp/co/sony/mc/camera/SetupWizardActivity;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0x0
+    accessFlags = 0x1008
     name = null
 .end annotation
 
 
-# instance fields
-.field final synthetic this$0:Ljp/co/sony/mc/camera/SetupWizardActivity;
-
-.field final synthetic val$request:Ljp/co/sony/mc/camera/SetupWizardActivity$PermissionRequest;
+# static fields
+.field static final synthetic $SwitchMap$jp$co$sony$mc$camera$SetupWizardActivity$PermissionRequest:[I
 
 
 # direct methods
-.method constructor <init>(Ljp/co/sony/mc/camera/SetupWizardActivity;Ljp/co/sony/mc/camera/SetupWizardActivity$PermissionRequest;)V
-    .locals 0
-
-    .line 270
-    iput-object p1, p0, Ljp/co/sony/mc/camera/SetupWizardActivity$1;->this$0:Ljp/co/sony/mc/camera/SetupWizardActivity;
-
-    iput-object p2, p0, Ljp/co/sony/mc/camera/SetupWizardActivity$1;->val$request:Ljp/co/sony/mc/camera/SetupWizardActivity$PermissionRequest;
-
-    invoke-direct {p0}, Landroid/app/KeyguardManager$KeyguardDismissCallback;-><init>()V
-
-    return-void
-.end method
-
-
-# virtual methods
-.method public onDismissCancelled()V
+.method static constructor <clinit>()V
     .locals 3
 
-    .line 284
-    iget-object v0, p0, Ljp/co/sony/mc/camera/SetupWizardActivity$1;->this$0:Ljp/co/sony/mc/camera/SetupWizardActivity;
+    .line 191
+    invoke-static {}, Ljp/co/sony/mc/camera/SetupWizardActivity$PermissionRequest;->values()[Ljp/co/sony/mc/camera/SetupWizardActivity$PermissionRequest;
 
-    const/4 v1, 0x1
+    move-result-object v0
 
-    invoke-static {v0}, Ljp/co/sony/mc/camera/SetupWizardActivity;->-$$Nest$fgetmResultData(Ljp/co/sony/mc/camera/SetupWizardActivity;)Landroid/content/Intent;
+    array-length v0, v0
 
-    move-result-object v2
+    new-array v0, v0, [I
 
-    invoke-virtual {v0, v1, v2}, Ljp/co/sony/mc/camera/SetupWizardActivity;->setResult(ILandroid/content/Intent;)V
+    sput-object v0, Ljp/co/sony/mc/camera/SetupWizardActivity$1;->$SwitchMap$jp$co$sony$mc$camera$SetupWizardActivity$PermissionRequest:[I
 
-    .line 285
-    iget-object p0, p0, Ljp/co/sony/mc/camera/SetupWizardActivity$1;->this$0:Ljp/co/sony/mc/camera/SetupWizardActivity;
+    :try_start_0
+    sget-object v1, Ljp/co/sony/mc/camera/SetupWizardActivity$PermissionRequest;->LAUNCH_LOCATION_SETTING:Ljp/co/sony/mc/camera/SetupWizardActivity$PermissionRequest;
 
-    invoke-virtual {p0}, Ljp/co/sony/mc/camera/SetupWizardActivity;->finish()V
+    invoke-virtual {v1}, Ljp/co/sony/mc/camera/SetupWizardActivity$PermissionRequest;->ordinal()I
 
-    return-void
-.end method
+    move-result v1
 
-.method public onDismissError()V
-    .locals 3
+    const/4 v2, 0x1
 
-    .line 278
-    iget-object v0, p0, Ljp/co/sony/mc/camera/SetupWizardActivity$1;->this$0:Ljp/co/sony/mc/camera/SetupWizardActivity;
+    aput v2, v0, v1
+    :try_end_0
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_0 .. :try_end_0} :catch_0
 
-    const/4 v1, 0x1
+    :catch_0
+    :try_start_1
+    sget-object v0, Ljp/co/sony/mc/camera/SetupWizardActivity$1;->$SwitchMap$jp$co$sony$mc$camera$SetupWizardActivity$PermissionRequest:[I
 
-    invoke-static {v0}, Ljp/co/sony/mc/camera/SetupWizardActivity;->-$$Nest$fgetmResultData(Ljp/co/sony/mc/camera/SetupWizardActivity;)Landroid/content/Intent;
+    sget-object v1, Ljp/co/sony/mc/camera/SetupWizardActivity$PermissionRequest;->REQUEST_LOCATION_PERMISSION:Ljp/co/sony/mc/camera/SetupWizardActivity$PermissionRequest;
 
-    move-result-object v2
+    invoke-virtual {v1}, Ljp/co/sony/mc/camera/SetupWizardActivity$PermissionRequest;->ordinal()I
 
-    invoke-virtual {v0, v1, v2}, Ljp/co/sony/mc/camera/SetupWizardActivity;->setResult(ILandroid/content/Intent;)V
+    move-result v1
 
-    .line 279
-    iget-object p0, p0, Ljp/co/sony/mc/camera/SetupWizardActivity$1;->this$0:Ljp/co/sony/mc/camera/SetupWizardActivity;
+    const/4 v2, 0x2
 
-    invoke-virtual {p0}, Ljp/co/sony/mc/camera/SetupWizardActivity;->finish()V
+    aput v2, v0, v1
+    :try_end_1
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_1 .. :try_end_1} :catch_1
 
-    return-void
-.end method
+    :catch_1
+    :try_start_2
+    sget-object v0, Ljp/co/sony/mc/camera/SetupWizardActivity$1;->$SwitchMap$jp$co$sony$mc$camera$SetupWizardActivity$PermissionRequest:[I
 
-.method public onDismissSucceeded()V
-    .locals 1
+    sget-object v1, Ljp/co/sony/mc/camera/SetupWizardActivity$PermissionRequest;->REQUEST_NOTIFICATIONS_PERMISSION:Ljp/co/sony/mc/camera/SetupWizardActivity$PermissionRequest;
 
-    .line 273
-    iget-object v0, p0, Ljp/co/sony/mc/camera/SetupWizardActivity$1;->this$0:Ljp/co/sony/mc/camera/SetupWizardActivity;
+    invoke-virtual {v1}, Ljp/co/sony/mc/camera/SetupWizardActivity$PermissionRequest;->ordinal()I
 
-    iget-object p0, p0, Ljp/co/sony/mc/camera/SetupWizardActivity$1;->val$request:Ljp/co/sony/mc/camera/SetupWizardActivity$PermissionRequest;
+    move-result v1
 
-    invoke-static {v0, p0}, Ljp/co/sony/mc/camera/SetupWizardActivity;->-$$Nest$mrequestPermission(Ljp/co/sony/mc/camera/SetupWizardActivity;Ljp/co/sony/mc/camera/SetupWizardActivity$PermissionRequest;)V
+    const/4 v2, 0x3
 
+    aput v2, v0, v1
+    :try_end_2
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_2 .. :try_end_2} :catch_2
+
+    :catch_2
     return-void
 .end method

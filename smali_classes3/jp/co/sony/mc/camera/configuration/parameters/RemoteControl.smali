@@ -53,7 +53,7 @@
     .line 15
     new-instance v0, Ljp/co/sony/mc/camera/configuration/parameters/RemoteControl;
 
-    const v1, 0x7f110051
+    const v1, 0x7f110046
 
     const-string v2, "ON"
 
@@ -70,7 +70,7 @@
 
     const/4 v1, 0x1
 
-    const v2, 0x7f110050
+    const v2, 0x7f110045
 
     const-string v3, "OFF"
 

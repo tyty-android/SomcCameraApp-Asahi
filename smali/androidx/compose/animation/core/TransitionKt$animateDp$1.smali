@@ -31,7 +31,7 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/SourceDebugExtension;
-    value = "SMAP\nTransition.kt\nKotlin\n*S Kotlin\n*F\n+ 1 Transition.kt\nandroidx/compose/animation/core/TransitionKt$animateDp$1\n*L\n1#1,1156:1\n*E\n"
+    value = "SMAP\nTransition.kt\nKotlin\n*S Kotlin\n*F\n+ 1 Transition.kt\nandroidx/compose/animation/core/TransitionKt$animateDp$1\n*L\n1#1,1382:1\n*E\n"
 .end annotation
 
 .annotation runtime Lkotlin/Metadata;
@@ -89,10 +89,6 @@
         }
     .end annotation
 
-    const-string p0, "$this$null"
-
-    invoke-static {p1, p0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
     const p0, -0x22533cae
 
     invoke-interface {p2, p0}, Landroidx/compose/runtime/Composer;->startReplaceableGroup(I)V
@@ -105,9 +101,9 @@
 
     const/4 p1, -0x1
 
-    const-string v0, "androidx.compose.animation.core.animateDp.<anonymous> (Transition.kt:964)"
+    const-string v0, "androidx.compose.animation.core.animateDp.<anonymous> (Transition.kt:1191)"
 
-    .line 966
+    .line 1192
     invoke-static {p0, p3, p1, v0}, Landroidx/compose/runtime/ComposerKt;->traceEventStart(IIILjava/lang/String;)V
 
     :cond_0
@@ -148,7 +144,7 @@
 .method public bridge synthetic invoke(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
 
-    .line 965
+    .line 1191
     check-cast p1, Landroidx/compose/animation/core/Transition$Segment;
 
     check-cast p2, Landroidx/compose/runtime/Composer;

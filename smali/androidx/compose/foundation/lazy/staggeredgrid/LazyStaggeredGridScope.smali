@@ -76,7 +76,7 @@
 
     move-object p3, v0
 
-    .line 267
+    .line 273
     :cond_2
     invoke-interface {p0, p1, p2, p3, p4}, Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridScope;->item(Ljava/lang/Object;Ljava/lang/Object;Landroidx/compose/foundation/lazy/staggeredgrid/StaggeredGridItemSpan;Lkotlin/jvm/functions/Function3;)V
 
@@ -115,7 +115,7 @@
 
     if-eqz p2, :cond_1
 
-    .line 296
+    .line 302
     sget-object p2, Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridScope$items$1;->INSTANCE:Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridScope$items$1;
 
     move-object p3, p2
@@ -143,7 +143,7 @@
 
     move-object v6, p5
 
-    .line 293
+    .line 299
     invoke-interface/range {v1 .. v6}, Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridScope;->items(ILkotlin/jvm/functions/Function1;Lkotlin/jvm/functions/Function1;Lkotlin/jvm/functions/Function1;Lkotlin/jvm/functions/Function4;)V
 
     return-void

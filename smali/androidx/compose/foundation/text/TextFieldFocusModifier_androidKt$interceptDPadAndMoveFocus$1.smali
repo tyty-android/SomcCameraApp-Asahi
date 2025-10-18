@@ -91,10 +91,6 @@
 .method public final invoke-ZmokQxo(Landroid/view/KeyEvent;)Ljava/lang/Boolean;
     .locals 3
 
-    const-string v0, "keyEvent"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
     .line 52
     invoke-virtual {p1}, Landroid/view/KeyEvent;->getDevice()Landroid/view/InputDevice;
 
@@ -257,13 +253,13 @@
     .line 71
     iget-object p0, p0, Landroidx/compose/foundation/text/TextFieldFocusModifier_androidKt$interceptDPadAndMoveFocus$1;->$state:Landroidx/compose/foundation/text/TextFieldState;
 
-    invoke-virtual {p0}, Landroidx/compose/foundation/text/TextFieldState;->getInputSession()Landroidx/compose/ui/text/input/TextInputSession;
+    invoke-virtual {p0}, Landroidx/compose/foundation/text/TextFieldState;->getKeyboardController()Landroidx/compose/ui/platform/SoftwareKeyboardController;
 
     move-result-object p0
 
     if-eqz p0, :cond_8
 
-    invoke-virtual {p0}, Landroidx/compose/ui/text/input/TextInputSession;->showSoftwareKeyboard()Z
+    invoke-interface {p0}, Landroidx/compose/ui/platform/SoftwareKeyboardController;->show()V
 
     :cond_8
     const/4 v1, 0x1

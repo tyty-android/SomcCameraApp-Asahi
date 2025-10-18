@@ -1,6 +1,6 @@
 .class public final Landroidx/compose/ui/tooling/animation/clock/InfiniteTransitionClock;
 .super Ljava/lang/Object;
-.source "InfiniteTransitionClock.kt"
+.source "InfiniteTransitionClock.android.kt"
 
 # interfaces
 .implements Landroidx/compose/ui/tooling/animation/clock/ComposeAnimationClock;
@@ -19,7 +19,7 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/SourceDebugExtension;
-    value = "SMAP\nInfiniteTransitionClock.kt\nKotlin\n*S Kotlin\n*F\n+ 1 InfiniteTransitionClock.kt\nandroidx/compose/ui/tooling/animation/clock/InfiniteTransitionClock\n+ 2 _Collections.kt\nkotlin/collections/CollectionsKt___CollectionsKt\n+ 3 fake.kt\nkotlin/jvm/internal/FakeKt\n*L\n1#1,85:1\n1603#2,9:86\n1855#2:95\n1856#2:97\n1612#2:98\n766#2:99\n857#2,2:100\n1549#2:102\n1620#2,3:103\n766#2:106\n857#2,2:107\n1#3:96\n*S KotlinDebug\n*F\n+ 1 InfiniteTransitionClock.kt\nandroidx/compose/ui/tooling/animation/clock/InfiniteTransitionClock\n*L\n47#1:86,9\n47#1:95\n47#1:97\n47#1:98\n51#1:99\n51#1:100,2\n68#1:102\n68#1:103,3\n70#1:106\n70#1:107,2\n47#1:96\n*E\n"
+    value = "SMAP\nInfiniteTransitionClock.android.kt\nKotlin\n*S Kotlin\n*F\n+ 1 InfiniteTransitionClock.android.kt\nandroidx/compose/ui/tooling/animation/clock/InfiniteTransitionClock\n+ 2 _Collections.kt\nkotlin/collections/CollectionsKt___CollectionsKt\n+ 3 fake.kt\nkotlin/jvm/internal/FakeKt\n*L\n1#1,86:1\n1603#2,9:87\n1855#2:96\n1856#2:98\n1612#2:99\n766#2:100\n857#2,2:101\n1549#2:103\n1620#2,3:104\n766#2:107\n857#2,2:108\n1#3:97\n*S KotlinDebug\n*F\n+ 1 InfiniteTransitionClock.android.kt\nandroidx/compose/ui/tooling/animation/clock/InfiniteTransitionClock\n*L\n47#1:87,9\n47#1:96\n47#1:98\n47#1:99\n51#1:100\n51#1:101,2\n68#1:103\n68#1:104,3\n70#1:107\n70#1:108,2\n47#1:97\n*E\n"
 .end annotation
 
 .annotation runtime Lkotlin/Metadata;
@@ -76,6 +76,10 @@
 .end annotation
 
 
+# static fields
+.field public static final $stable:I = 0x8
+
+
 # instance fields
 .field private final animation:Landroidx/compose/ui/tooling/animation/InfiniteTransitionComposeAnimation;
 
@@ -101,8 +105,14 @@
 
 
 # direct methods
+.method static constructor <clinit>()V
+    .locals 0
+
+    return-void
+.end method
+
 .method public constructor <init>(Landroidx/compose/ui/tooling/animation/InfiniteTransitionComposeAnimation;Lkotlin/jvm/functions/Function0;)V
-    .locals 1
+    .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -112,14 +122,6 @@
             ">;)V"
         }
     .end annotation
-
-    const-string v0, "animation"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string v0, "maxDuration"
-
-    invoke-static {p2, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 35
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -237,7 +239,7 @@
 
     add-long/2addr v1, p0
 
-    invoke-static {v1, v2}, Landroidx/compose/ui/tooling/animation/clock/UtilsKt;->millisToNanos(J)J
+    invoke-static {v1, v2}, Landroidx/compose/ui/tooling/animation/clock/Utils_androidKt;->millisToNanos(J)J
 
     move-result-wide p0
 
@@ -272,14 +274,14 @@
 
     check-cast p0, Ljava/lang/Iterable;
 
-    .line 86
+    .line 87
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
     check-cast v0, Ljava/util/Collection;
 
-    .line 95
+    .line 96
     invoke-interface {p0}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
 
     move-result-object p0
@@ -296,7 +298,7 @@
 
     move-result-object v1
 
-    .line 94
+    .line 95
     check-cast v1, Landroidx/compose/animation/core/InfiniteTransition$TransitionAnimationState;
 
     .line 48
@@ -325,26 +327,26 @@
     :goto_1
     if-eqz v1, :cond_0
 
-    .line 94
+    .line 95
     invoke-interface {v0, v1}, Ljava/util/Collection;->add(Ljava/lang/Object;)Z
 
     goto :goto_0
 
-    .line 98
+    .line 99
     :cond_2
     check-cast v0, Ljava/util/List;
 
-    .line 86
+    .line 87
     check-cast v0, Ljava/lang/Iterable;
 
-    .line 99
+    .line 100
     new-instance p0, Ljava/util/ArrayList;
 
     invoke-direct {p0}, Ljava/util/ArrayList;-><init>()V
 
     check-cast p0, Ljava/util/Collection;
 
-    .line 100
+    .line 101
     invoke-interface {v0}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
 
     move-result-object v0
@@ -366,7 +368,7 @@
     check-cast v2, Landroidx/compose/animation/tooling/ComposeAnimatedProperty;
 
     .line 51
-    invoke-static {}, Landroidx/compose/ui/tooling/animation/clock/UtilsKt;->getIGNORE_TRANSITIONS()Ljava/util/List;
+    invoke-static {}, Landroidx/compose/ui/tooling/animation/clock/Utils_androidKt;->getIGNORE_TRANSITIONS()Ljava/util/List;
 
     move-result-object v3
 
@@ -382,12 +384,12 @@
 
     if-eqz v2, :cond_3
 
-    .line 100
+    .line 101
     invoke-interface {p0, v1}, Ljava/util/Collection;->add(Ljava/lang/Object;)Z
 
     goto :goto_2
 
-    .line 101
+    .line 102
     :cond_4
     check-cast p0, Ljava/util/List;
 
@@ -548,7 +550,7 @@
     const-wide/16 v0, 0x0
 
     :goto_2
-    invoke-static {v0, v1}, Landroidx/compose/ui/tooling/animation/clock/UtilsKt;->nanosToMillis(J)J
+    invoke-static {v0, v1}, Landroidx/compose/ui/tooling/animation/clock/Utils_androidKt;->nanosToMillis(J)J
 
     move-result-wide v0
 
@@ -612,7 +614,7 @@
 
     check-cast v0, Ljava/lang/Iterable;
 
-    .line 102
+    .line 103
     new-instance v1, Ljava/util/ArrayList;
 
     const/16 v2, 0xa
@@ -625,7 +627,7 @@
 
     check-cast v1, Ljava/util/Collection;
 
-    .line 103
+    .line 104
     invoke-interface {v0}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
 
     move-result-object v0
@@ -641,7 +643,7 @@
 
     move-result-object v2
 
-    .line 104
+    .line 105
     check-cast v2, Landroidx/compose/animation/core/InfiniteTransition$TransitionAnimationState;
 
     .line 69
@@ -649,30 +651,30 @@
 
     move-result-wide v3
 
-    invoke-static {v2, p1, p2, v3, v4}, Landroidx/compose/ui/tooling/animation/clock/UtilsKt;->createTransitionInfo(Landroidx/compose/animation/core/InfiniteTransition$TransitionAnimationState;JJ)Landroidx/compose/animation/tooling/TransitionInfo;
+    invoke-static {v2, p1, p2, v3, v4}, Landroidx/compose/ui/tooling/animation/clock/Utils_androidKt;->createTransitionInfo(Landroidx/compose/animation/core/InfiniteTransition$TransitionAnimationState;JJ)Landroidx/compose/animation/tooling/TransitionInfo;
 
     move-result-object v2
 
-    .line 104
+    .line 105
     invoke-interface {v1, v2}, Ljava/util/Collection;->add(Ljava/lang/Object;)Z
 
     goto :goto_0
 
-    .line 105
+    .line 106
     :cond_0
     check-cast v1, Ljava/util/List;
 
-    .line 102
+    .line 103
     check-cast v1, Ljava/lang/Iterable;
 
-    .line 106
+    .line 107
     new-instance p0, Ljava/util/ArrayList;
 
     invoke-direct {p0}, Ljava/util/ArrayList;-><init>()V
 
     check-cast p0, Ljava/util/Collection;
 
-    .line 107
+    .line 108
     invoke-interface {v1}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
 
     move-result-object p1
@@ -694,7 +696,7 @@
     check-cast v0, Landroidx/compose/animation/tooling/TransitionInfo;
 
     .line 70
-    invoke-static {}, Landroidx/compose/ui/tooling/animation/clock/UtilsKt;->getIGNORE_TRANSITIONS()Ljava/util/List;
+    invoke-static {}, Landroidx/compose/ui/tooling/animation/clock/Utils_androidKt;->getIGNORE_TRANSITIONS()Ljava/util/List;
 
     move-result-object v1
 
@@ -710,16 +712,16 @@
 
     if-eqz v0, :cond_1
 
-    .line 107
+    .line 108
     invoke-interface {p0, p2}, Ljava/util/Collection;->add(Ljava/lang/Object;)Z
 
     goto :goto_1
 
-    .line 108
+    .line 109
     :cond_2
     check-cast p0, Ljava/util/List;
 
-    .line 106
+    .line 107
     check-cast p0, Ljava/lang/Iterable;
 
     .line 70
@@ -755,7 +757,7 @@
 .end method
 
 .method public setState(Landroidx/compose/ui/tooling/animation/states/TargetState;)V
-    .locals 1
+    .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -765,10 +767,6 @@
         }
     .end annotation
 
-    const-string v0, "<set-?>"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
     .line 42
     iput-object p1, p0, Landroidx/compose/ui/tooling/animation/clock/InfiniteTransitionClock;->state:Landroidx/compose/ui/tooling/animation/states/TargetState;
 
@@ -777,10 +775,6 @@
 
 .method public setStateParameters(Ljava/lang/Object;Ljava/lang/Object;)V
     .locals 0
-
-    const-string p0, "par1"
-
-    invoke-static {p1, p0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
     return-void
 .end method

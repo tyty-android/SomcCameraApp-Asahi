@@ -1,6 +1,6 @@
 .class public final Landroidx/compose/ui/tooling/animation/UnsupportedComposeAnimation;
 .super Ljava/lang/Object;
-.source "UnsupportedComposeAnimation.kt"
+.source "UnsupportedComposeAnimation.android.kt"
 
 # interfaces
 .implements Landroidx/compose/animation/tooling/ComposeAnimation;
@@ -14,7 +14,7 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/SourceDebugExtension;
-    value = "SMAP\nUnsupportedComposeAnimation.kt\nKotlin\n*S Kotlin\n*F\n+ 1 UnsupportedComposeAnimation.kt\nandroidx/compose/ui/tooling/animation/UnsupportedComposeAnimation\n+ 2 _Arrays.kt\nkotlin/collections/ArraysKt___ArraysKt\n*L\n1#1,52:1\n12744#2,2:53\n*S KotlinDebug\n*F\n+ 1 UnsupportedComposeAnimation.kt\nandroidx/compose/ui/tooling/animation/UnsupportedComposeAnimation\n*L\n40#1:53,2\n*E\n"
+    value = "SMAP\nUnsupportedComposeAnimation.android.kt\nKotlin\n*S Kotlin\n*F\n+ 1 UnsupportedComposeAnimation.android.kt\nandroidx/compose/ui/tooling/animation/UnsupportedComposeAnimation\n+ 2 _Arrays.kt\nkotlin/collections/ArraysKt___ArraysKt\n*L\n1#1,53:1\n12744#2,2:54\n*S KotlinDebug\n*F\n+ 1 UnsupportedComposeAnimation.android.kt\nandroidx/compose/ui/tooling/animation/UnsupportedComposeAnimation\n*L\n40#1:54,2\n*E\n"
 .end annotation
 
 .annotation runtime Lkotlin/Metadata;
@@ -56,6 +56,8 @@
 
 
 # static fields
+.field public static final $stable:I
+
 .field public static final Companion:Landroidx/compose/ui/tooling/animation/UnsupportedComposeAnimation$Companion;
 
 .field private static apiAvailable:Z
@@ -91,12 +93,16 @@
 
     sput-object v0, Landroidx/compose/ui/tooling/animation/UnsupportedComposeAnimation;->Companion:Landroidx/compose/ui/tooling/animation/UnsupportedComposeAnimation$Companion;
 
+    const/16 v0, 0x8
+
+    sput v0, Landroidx/compose/ui/tooling/animation/UnsupportedComposeAnimation;->$stable:I
+
     .line 40
     invoke-static {}, Landroidx/compose/animation/tooling/ComposeAnimationType;->values()[Landroidx/compose/animation/tooling/ComposeAnimationType;
 
     move-result-object v0
 
-    .line 53
+    .line 54
     array-length v1, v0
 
     const/4 v2, 0x0

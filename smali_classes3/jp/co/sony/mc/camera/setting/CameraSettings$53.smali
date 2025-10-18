@@ -21,7 +21,7 @@
 .method constructor <init>()V
     .locals 0
 
-    .line 982
+    .line 1035
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -42,11 +42,11 @@
         }
     .end annotation
 
-    .line 986
+    .line 1039
     check-cast p1, Ljp/co/sony/mc/camera/setting/CameraSettings;
 
-    .line 987
-    invoke-static {p1}, Ljp/co/sony/mc/camera/setting/CameraSettings;->-$$Nest$mgetQrCodeDetection(Ljp/co/sony/mc/camera/setting/CameraSettings;)Ljp/co/sony/mc/camera/configuration/parameters/QrCodeDetection;
+    .line 1040
+    invoke-static {p1}, Ljp/co/sony/mc/camera/setting/CameraSettings;->-$$Nest$mgetSurfaceSize(Ljp/co/sony/mc/camera/setting/CameraSettings;)Landroid/util/Size;
 
     move-result-object p0
 

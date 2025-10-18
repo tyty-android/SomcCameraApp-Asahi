@@ -1,6 +1,6 @@
 .class final Landroidx/compose/foundation/DrawOverscrollModifier;
 .super Landroidx/compose/ui/platform/InspectorValueInfo;
-.source "AndroidOverscroll.kt"
+.source "AndroidOverscroll.android.kt"
 
 # interfaces
 .implements Landroidx/compose/ui/draw/DrawModifier;
@@ -51,7 +51,7 @@
 
 # direct methods
 .method public constructor <init>(Landroidx/compose/foundation/AndroidEdgeEffectOverscrollEffect;Lkotlin/jvm/functions/Function1;)V
-    .locals 1
+    .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -64,18 +64,10 @@
         }
     .end annotation
 
-    const-string v0, "overscrollEffect"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string v0, "inspectorInfo"
-
-    invoke-static {p2, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 76
+    .line 78
     invoke-direct {p0, p2}, Landroidx/compose/ui/platform/InspectorValueInfo;-><init>(Lkotlin/jvm/functions/Function1;)V
 
-    .line 74
+    .line 76
     iput-object p1, p0, Landroidx/compose/foundation/DrawOverscrollModifier;->overscrollEffect:Landroidx/compose/foundation/AndroidEdgeEffectOverscrollEffect;
 
     return-void
@@ -84,19 +76,15 @@
 
 # virtual methods
 .method public draw(Landroidx/compose/ui/graphics/drawscope/ContentDrawScope;)V
-    .locals 1
-
-    const-string v0, "<this>"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 79
-    invoke-interface {p1}, Landroidx/compose/ui/graphics/drawscope/ContentDrawScope;->drawContent()V
-
-    .line 80
-    iget-object p0, p0, Landroidx/compose/foundation/DrawOverscrollModifier;->overscrollEffect:Landroidx/compose/foundation/AndroidEdgeEffectOverscrollEffect;
+    .locals 0
 
     .line 81
+    invoke-interface {p1}, Landroidx/compose/ui/graphics/drawscope/ContentDrawScope;->drawContent()V
+
+    .line 82
+    iget-object p0, p0, Landroidx/compose/foundation/DrawOverscrollModifier;->overscrollEffect:Landroidx/compose/foundation/AndroidEdgeEffectOverscrollEffect;
+
+    .line 83
     check-cast p1, Landroidx/compose/ui/graphics/drawscope/DrawScope;
 
     invoke-virtual {p0, p1}, Landroidx/compose/foundation/AndroidEdgeEffectOverscrollEffect;->drawOverscroll(Landroidx/compose/ui/graphics/drawscope/DrawScope;)V
@@ -113,7 +101,7 @@
 
     return p0
 
-    .line 87
+    .line 89
     :cond_0
     instance-of v0, p1, Landroidx/compose/foundation/DrawOverscrollModifier;
 
@@ -123,7 +111,7 @@
 
     return p0
 
-    .line 89
+    .line 91
     :cond_1
     iget-object p0, p0, Landroidx/compose/foundation/DrawOverscrollModifier;->overscrollEffect:Landroidx/compose/foundation/AndroidEdgeEffectOverscrollEffect;
 
@@ -141,7 +129,7 @@
 .method public hashCode()I
     .locals 0
 
-    .line 93
+    .line 95
     iget-object p0, p0, Landroidx/compose/foundation/DrawOverscrollModifier;->overscrollEffect:Landroidx/compose/foundation/AndroidEdgeEffectOverscrollEffect;
 
     invoke-virtual {p0}, Landroidx/compose/foundation/AndroidEdgeEffectOverscrollEffect;->hashCode()I
@@ -154,7 +142,7 @@
 .method public toString()Ljava/lang/String;
     .locals 2
 
-    .line 97
+    .line 99
     new-instance v0, Ljava/lang/StringBuilder;
 
     const-string v1, "DrawOverscrollModifier(overscrollEffect="

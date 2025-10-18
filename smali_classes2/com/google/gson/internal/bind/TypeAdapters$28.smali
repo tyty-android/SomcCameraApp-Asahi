@@ -26,7 +26,7 @@
 .method constructor <init>()V
     .locals 0
 
-    .line 725
+    .line 820
     invoke-direct {p0}, Lcom/google/gson/TypeAdapter;-><init>()V
 
     return-void
@@ -40,8 +40,8 @@
         }
     .end annotation
 
-    .line 745
-    sget-object p0, Lcom/google/gson/internal/bind/TypeAdapters$35;->$SwitchMap$com$google$gson$stream$JsonToken:[I
+    .line 840
+    sget-object p0, Lcom/google/gson/internal/bind/TypeAdapters$42;->$SwitchMap$com$google$gson$stream$JsonToken:[I
 
     invoke-virtual {p2}, Lcom/google/gson/stream/JsonToken;->ordinal()I
 
@@ -65,15 +65,15 @@
 
     if-ne p0, v0, :cond_0
 
-    .line 754
+    .line 849
     invoke-virtual {p1}, Lcom/google/gson/stream/JsonReader;->nextNull()V
 
-    .line 755
+    .line 850
     sget-object p0, Lcom/google/gson/JsonNull;->INSTANCE:Lcom/google/gson/JsonNull;
 
     return-object p0
 
-    .line 758
+    .line 853
     :cond_0
     new-instance p0, Ljava/lang/IllegalStateException;
 
@@ -95,7 +95,7 @@
 
     throw p0
 
-    .line 752
+    .line 847
     :cond_1
     new-instance p0, Lcom/google/gson/JsonPrimitive;
 
@@ -111,7 +111,7 @@
 
     return-object p0
 
-    .line 747
+    .line 842
     :cond_2
     new-instance p0, Lcom/google/gson/JsonPrimitive;
 
@@ -123,13 +123,13 @@
 
     return-object p0
 
-    .line 749
+    .line 844
     :cond_3
     invoke-virtual {p1}, Lcom/google/gson/stream/JsonReader;->nextString()Ljava/lang/String;
 
     move-result-object p0
 
-    .line 750
+    .line 845
     new-instance p1, Lcom/google/gson/JsonPrimitive;
 
     new-instance p2, Lcom/google/gson/internal/LazilyParsedNumber;
@@ -149,8 +149,8 @@
         }
     .end annotation
 
-    .line 731
-    sget-object p0, Lcom/google/gson/internal/bind/TypeAdapters$35;->$SwitchMap$com$google$gson$stream$JsonToken:[I
+    .line 826
+    sget-object p0, Lcom/google/gson/internal/bind/TypeAdapters$42;->$SwitchMap$com$google$gson$stream$JsonToken:[I
 
     invoke-virtual {p2}, Lcom/google/gson/stream/JsonToken;->ordinal()I
 
@@ -170,22 +170,22 @@
 
     return-object p0
 
-    .line 736
+    .line 831
     :cond_0
     invoke-virtual {p1}, Lcom/google/gson/stream/JsonReader;->beginObject()V
 
-    .line 737
+    .line 832
     new-instance p0, Lcom/google/gson/JsonObject;
 
     invoke-direct {p0}, Lcom/google/gson/JsonObject;-><init>()V
 
     return-object p0
 
-    .line 733
+    .line 828
     :cond_1
     invoke-virtual {p1}, Lcom/google/gson/stream/JsonReader;->beginArray()V
 
-    .line 734
+    .line 829
     new-instance p0, Lcom/google/gson/JsonArray;
 
     invoke-direct {p0}, Lcom/google/gson/JsonArray;-><init>()V
@@ -203,12 +203,12 @@
         }
     .end annotation
 
-    .line 763
+    .line 859
     instance-of v0, p1, Lcom/google/gson/internal/bind/JsonTreeReader;
 
     if-eqz v0, :cond_0
 
-    .line 764
+    .line 860
     check-cast p1, Lcom/google/gson/internal/bind/JsonTreeReader;
 
     invoke-virtual {p1}, Lcom/google/gson/internal/bind/JsonTreeReader;->nextJsonElement()Lcom/google/gson/JsonElement;
@@ -217,33 +217,33 @@
 
     return-object p0
 
-    .line 769
+    .line 865
     :cond_0
     invoke-virtual {p1}, Lcom/google/gson/stream/JsonReader;->peek()Lcom/google/gson/stream/JsonToken;
 
     move-result-object v0
 
-    .line 771
+    .line 867
     invoke-direct {p0, p1, v0}, Lcom/google/gson/internal/bind/TypeAdapters$28;->tryBeginNesting(Lcom/google/gson/stream/JsonReader;Lcom/google/gson/stream/JsonToken;)Lcom/google/gson/JsonElement;
 
     move-result-object v1
 
     if-nez v1, :cond_1
 
-    .line 773
+    .line 869
     invoke-direct {p0, p1, v0}, Lcom/google/gson/internal/bind/TypeAdapters$28;->readTerminal(Lcom/google/gson/stream/JsonReader;Lcom/google/gson/stream/JsonToken;)Lcom/google/gson/JsonElement;
 
     move-result-object p0
 
     return-object p0
 
-    .line 776
+    .line 872
     :cond_1
     new-instance v0, Ljava/util/ArrayDeque;
 
     invoke-direct {v0}, Ljava/util/ArrayDeque;-><init>()V
 
-    .line 779
+    .line 875
     :cond_2
     :goto_0
     invoke-virtual {p1}, Lcom/google/gson/stream/JsonReader;->hasNext()Z
@@ -252,12 +252,12 @@
 
     if-eqz v2, :cond_7
 
-    .line 782
+    .line 878
     instance-of v2, v1, Lcom/google/gson/JsonObject;
 
     if-eqz v2, :cond_3
 
-    .line 783
+    .line 879
     invoke-virtual {p1}, Lcom/google/gson/stream/JsonReader;->nextName()Ljava/lang/String;
 
     move-result-object v2
@@ -267,13 +267,13 @@
     :cond_3
     const/4 v2, 0x0
 
-    .line 786
+    .line 882
     :goto_1
     invoke-virtual {p1}, Lcom/google/gson/stream/JsonReader;->peek()Lcom/google/gson/stream/JsonToken;
 
     move-result-object v3
 
-    .line 787
+    .line 883
     invoke-direct {p0, p1, v3}, Lcom/google/gson/internal/bind/TypeAdapters$28;->tryBeginNesting(Lcom/google/gson/stream/JsonReader;Lcom/google/gson/stream/JsonToken;)Lcom/google/gson/JsonElement;
 
     move-result-object v4
@@ -290,18 +290,18 @@
     :goto_2
     if-nez v4, :cond_5
 
-    .line 791
+    .line 887
     invoke-direct {p0, p1, v3}, Lcom/google/gson/internal/bind/TypeAdapters$28;->readTerminal(Lcom/google/gson/stream/JsonReader;Lcom/google/gson/stream/JsonToken;)Lcom/google/gson/JsonElement;
 
     move-result-object v4
 
-    .line 794
+    .line 890
     :cond_5
     instance-of v3, v1, Lcom/google/gson/JsonArray;
 
     if-eqz v3, :cond_6
 
-    .line 795
+    .line 891
     move-object v2, v1
 
     check-cast v2, Lcom/google/gson/JsonArray;
@@ -310,7 +310,7 @@
 
     goto :goto_3
 
-    .line 797
+    .line 893
     :cond_6
     move-object v3, v1
 
@@ -321,29 +321,29 @@
     :goto_3
     if-eqz v5, :cond_2
 
-    .line 801
+    .line 897
     invoke-interface {v0, v1}, Ljava/util/Deque;->addLast(Ljava/lang/Object;)V
 
     move-object v1, v4
 
     goto :goto_0
 
-    .line 807
+    .line 903
     :cond_7
     instance-of v2, v1, Lcom/google/gson/JsonArray;
 
     if-eqz v2, :cond_8
 
-    .line 808
+    .line 904
     invoke-virtual {p1}, Lcom/google/gson/stream/JsonReader;->endArray()V
 
     goto :goto_4
 
-    .line 810
+    .line 906
     :cond_8
     invoke-virtual {p1}, Lcom/google/gson/stream/JsonReader;->endObject()V
 
-    .line 813
+    .line 909
     :goto_4
     invoke-interface {v0}, Ljava/util/Deque;->isEmpty()Z
 
@@ -353,7 +353,7 @@
 
     return-object v1
 
-    .line 817
+    .line 913
     :cond_9
     invoke-interface {v0}, Ljava/util/Deque;->removeLast()Ljava/lang/Object;
 
@@ -372,7 +372,7 @@
         }
     .end annotation
 
-    .line 725
+    .line 820
     invoke-virtual {p0, p1}, Lcom/google/gson/internal/bind/TypeAdapters$28;->read(Lcom/google/gson/stream/JsonReader;)Lcom/google/gson/JsonElement;
 
     move-result-object p0
@@ -390,7 +390,7 @@
 
     if-eqz p2, :cond_8
 
-    .line 823
+    .line 920
     invoke-virtual {p2}, Lcom/google/gson/JsonElement;->isJsonNull()Z
 
     move-result v0
@@ -399,7 +399,7 @@
 
     goto/16 :goto_2
 
-    .line 825
+    .line 922
     :cond_0
     invoke-virtual {p2}, Lcom/google/gson/JsonElement;->isJsonPrimitive()Z
 
@@ -407,19 +407,19 @@
 
     if-eqz v0, :cond_3
 
-    .line 826
+    .line 923
     invoke-virtual {p2}, Lcom/google/gson/JsonElement;->getAsJsonPrimitive()Lcom/google/gson/JsonPrimitive;
 
     move-result-object p0
 
-    .line 827
+    .line 924
     invoke-virtual {p0}, Lcom/google/gson/JsonPrimitive;->isNumber()Z
 
     move-result p2
 
     if-eqz p2, :cond_1
 
-    .line 828
+    .line 925
     invoke-virtual {p0}, Lcom/google/gson/JsonPrimitive;->getAsNumber()Ljava/lang/Number;
 
     move-result-object p0
@@ -428,7 +428,7 @@
 
     goto/16 :goto_3
 
-    .line 829
+    .line 926
     :cond_1
     invoke-virtual {p0}, Lcom/google/gson/JsonPrimitive;->isBoolean()Z
 
@@ -436,7 +436,7 @@
 
     if-eqz p2, :cond_2
 
-    .line 830
+    .line 927
     invoke-virtual {p0}, Lcom/google/gson/JsonPrimitive;->getAsBoolean()Z
 
     move-result p0
@@ -445,7 +445,7 @@
 
     goto/16 :goto_3
 
-    .line 832
+    .line 929
     :cond_2
     invoke-virtual {p0}, Lcom/google/gson/JsonPrimitive;->getAsString()Ljava/lang/String;
 
@@ -455,7 +455,7 @@
 
     goto/16 :goto_3
 
-    .line 835
+    .line 932
     :cond_3
     invoke-virtual {p2}, Lcom/google/gson/JsonElement;->isJsonArray()Z
 
@@ -463,10 +463,10 @@
 
     if-eqz v0, :cond_5
 
-    .line 836
+    .line 933
     invoke-virtual {p1}, Lcom/google/gson/stream/JsonWriter;->beginArray()Lcom/google/gson/stream/JsonWriter;
 
-    .line 837
+    .line 934
     invoke-virtual {p2}, Lcom/google/gson/JsonElement;->getAsJsonArray()Lcom/google/gson/JsonArray;
 
     move-result-object p2
@@ -488,18 +488,18 @@
 
     check-cast v0, Lcom/google/gson/JsonElement;
 
-    .line 838
+    .line 935
     invoke-virtual {p0, p1, v0}, Lcom/google/gson/internal/bind/TypeAdapters$28;->write(Lcom/google/gson/stream/JsonWriter;Lcom/google/gson/JsonElement;)V
 
     goto :goto_0
 
-    .line 840
+    .line 937
     :cond_4
     invoke-virtual {p1}, Lcom/google/gson/stream/JsonWriter;->endArray()Lcom/google/gson/stream/JsonWriter;
 
     goto :goto_3
 
-    .line 842
+    .line 939
     :cond_5
     invoke-virtual {p2}, Lcom/google/gson/JsonElement;->isJsonObject()Z
 
@@ -507,10 +507,10 @@
 
     if-eqz v0, :cond_7
 
-    .line 843
+    .line 940
     invoke-virtual {p1}, Lcom/google/gson/stream/JsonWriter;->beginObject()Lcom/google/gson/stream/JsonWriter;
 
-    .line 844
+    .line 941
     invoke-virtual {p2}, Lcom/google/gson/JsonElement;->getAsJsonObject()Lcom/google/gson/JsonObject;
 
     move-result-object p2
@@ -536,7 +536,7 @@
 
     check-cast v0, Ljava/util/Map$Entry;
 
-    .line 845
+    .line 942
     invoke-interface {v0}, Ljava/util/Map$Entry;->getKey()Ljava/lang/Object;
 
     move-result-object v1
@@ -545,7 +545,7 @@
 
     invoke-virtual {p1, v1}, Lcom/google/gson/stream/JsonWriter;->name(Ljava/lang/String;)Lcom/google/gson/stream/JsonWriter;
 
-    .line 846
+    .line 943
     invoke-interface {v0}, Ljava/util/Map$Entry;->getValue()Ljava/lang/Object;
 
     move-result-object v0
@@ -556,13 +556,13 @@
 
     goto :goto_1
 
-    .line 848
+    .line 945
     :cond_6
     invoke-virtual {p1}, Lcom/google/gson/stream/JsonWriter;->endObject()Lcom/google/gson/stream/JsonWriter;
 
     goto :goto_3
 
-    .line 851
+    .line 948
     :cond_7
     new-instance p0, Ljava/lang/IllegalArgumentException;
 
@@ -588,7 +588,7 @@
 
     throw p0
 
-    .line 824
+    .line 921
     :cond_8
     :goto_2
     invoke-virtual {p1}, Lcom/google/gson/stream/JsonWriter;->nullValue()Lcom/google/gson/stream/JsonWriter;
@@ -605,7 +605,7 @@
         }
     .end annotation
 
-    .line 725
+    .line 820
     check-cast p2, Lcom/google/gson/JsonElement;
 
     invoke-virtual {p0, p1, p2}, Lcom/google/gson/internal/bind/TypeAdapters$28;->write(Lcom/google/gson/stream/JsonWriter;Lcom/google/gson/JsonElement;)V

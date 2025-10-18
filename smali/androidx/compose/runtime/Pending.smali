@@ -5,7 +5,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/SourceDebugExtension;
-    value = "SMAP\nComposer.kt\nKotlin\n*S Kotlin\n*F\n+ 1 Composer.kt\nandroidx/compose/runtime/Pending\n+ 2 fake.kt\nkotlin/jvm/internal/FakeKt\n+ 3 _Collections.kt\nkotlin/collections/CollectionsKt___CollectionsKt\n*L\n1#1,4563:1\n1#2:4564\n1855#3,2:4565\n1855#3,2:4567\n1855#3,2:4569\n1855#3,2:4571\n1855#3,2:4573\n*S KotlinDebug\n*F\n+ 1 Composer.kt\nandroidx/compose/runtime/Pending\n*L\n155#1:4565,2\n161#1:4567,2\n171#1:4569,2\n177#1:4571,2\n197#1:4573,2\n*E\n"
+    value = "SMAP\nComposer.kt\nKotlin\n*S Kotlin\n*F\n+ 1 Composer.kt\nandroidx/compose/runtime/Pending\n+ 2 fake.kt\nkotlin/jvm/internal/FakeKt\n+ 3 _Collections.kt\nkotlin/collections/CollectionsKt___CollectionsKt\n*L\n1#1,4197:1\n1#2:4198\n1855#3,2:4199\n1855#3,2:4201\n1855#3,2:4203\n1855#3,2:4205\n1855#3,2:4207\n*S KotlinDebug\n*F\n+ 1 Composer.kt\nandroidx/compose/runtime/Pending\n*L\n153#1:4199,2\n159#1:4201,2\n169#1:4203,2\n175#1:4205,2\n195#1:4207,2\n*E\n"
 .end annotation
 
 .annotation runtime Lkotlin/Metadata;
@@ -127,22 +127,18 @@
         }
     .end annotation
 
-    const-string v0, "keyInfos"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 98
+    .line 96
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 99
+    .line 97
     iput-object p1, p0, Landroidx/compose/runtime/Pending;->keyInfos:Ljava/util/List;
 
-    .line 100
+    .line 98
     iput p2, p0, Landroidx/compose/runtime/Pending;->startIndex:I
 
     if-ltz p2, :cond_1
 
-    .line 108
+    .line 106
     new-instance p1, Ljava/util/ArrayList;
 
     invoke-direct {p1}, Ljava/util/ArrayList;-><init>()V
@@ -151,17 +147,17 @@
 
     iput-object p1, p0, Landroidx/compose/runtime/Pending;->usedKeys:Ljava/util/List;
 
-    .line 109
+    .line 107
     move-object p1, p0
 
     check-cast p1, Landroidx/compose/runtime/Pending;
 
-    .line 111
+    .line 109
     new-instance p1, Ljava/util/HashMap;
 
     invoke-direct {p1}, Ljava/util/HashMap;-><init>()V
 
-    .line 112
+    .line 110
     iget-object p2, p0, Landroidx/compose/runtime/Pending;->keyInfos:Ljava/util/List;
 
     invoke-interface {p2}, Ljava/util/List;->size()I
@@ -175,7 +171,7 @@
     :goto_0
     if-ge v0, p2, :cond_0
 
-    .line 113
+    .line 111
     iget-object v2, p0, Landroidx/compose/runtime/Pending;->keyInfos:Ljava/util/List;
 
     invoke-interface {v2, v0}, Ljava/util/List;->get(I)Ljava/lang/Object;
@@ -184,7 +180,7 @@
 
     check-cast v2, Landroidx/compose/runtime/KeyInfo;
 
-    .line 115
+    .line 113
     move-object v3, p1
 
     check-cast v3, Ljava/util/Map;
@@ -207,7 +203,7 @@
 
     invoke-interface {v3, v4, v5}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 117
+    .line 115
     invoke-virtual {v2}, Landroidx/compose/runtime/KeyInfo;->getNodes()I
 
     move-result v2
@@ -218,11 +214,11 @@
 
     goto :goto_0
 
-    .line 109
+    .line 107
     :cond_0
     iput-object p1, p0, Landroidx/compose/runtime/Pending;->groupInfos:Ljava/util/HashMap;
 
-    .line 126
+    .line 124
     new-instance p1, Landroidx/compose/runtime/Pending$keyMap$2;
 
     invoke-direct {p1, p0}, Landroidx/compose/runtime/Pending$keyMap$2;-><init>(Landroidx/compose/runtime/Pending;)V
@@ -237,7 +233,7 @@
 
     return-void
 
-    .line 105
+    .line 103
     :cond_1
     new-instance p0, Ljava/lang/IllegalArgumentException;
 
@@ -257,7 +253,7 @@
 .method public final getGroupIndex()I
     .locals 0
 
-    .line 102
+    .line 100
     iget p0, p0, Landroidx/compose/runtime/Pending;->groupIndex:I
 
     return p0
@@ -274,7 +270,7 @@
         }
     .end annotation
 
-    .line 99
+    .line 97
     iget-object p0, p0, Landroidx/compose/runtime/Pending;->keyInfos:Ljava/util/List;
 
     return-object p0
@@ -293,7 +289,7 @@
         }
     .end annotation
 
-    .line 126
+    .line 124
     iget-object p0, p0, Landroidx/compose/runtime/Pending;->keyMap$delegate:Lkotlin/Lazy;
 
     invoke-interface {p0}, Lkotlin/Lazy;->getValue()Ljava/lang/Object;
@@ -310,7 +306,7 @@
 
     if-eqz p2, :cond_0
 
-    .line 140
+    .line 138
     new-instance v0, Landroidx/compose/runtime/JoinedKey;
 
     invoke-static {p1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
@@ -326,7 +322,7 @@
 
     move-result-object v0
 
-    .line 141
+    .line 139
     :goto_0
     invoke-virtual {p0}, Landroidx/compose/runtime/Pending;->getKeyMap()Ljava/util/HashMap;
 
@@ -344,7 +340,7 @@
 .method public final getStartIndex()I
     .locals 0
 
-    .line 100
+    .line 98
     iget p0, p0, Landroidx/compose/runtime/Pending;->startIndex:I
 
     return p0
@@ -361,20 +357,16 @@
         }
     .end annotation
 
-    .line 149
+    .line 147
     iget-object p0, p0, Landroidx/compose/runtime/Pending;->usedKeys:Ljava/util/List;
 
     return-object p0
 .end method
 
 .method public final nodePositionOf(Landroidx/compose/runtime/KeyInfo;)I
-    .locals 1
+    .locals 0
 
-    const-string v0, "keyInfo"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 214
+    .line 212
     iget-object p0, p0, Landroidx/compose/runtime/Pending;->groupInfos:Ljava/util/HashMap;
 
     invoke-virtual {p1}, Landroidx/compose/runtime/KeyInfo;->getLocation()I
@@ -407,13 +399,9 @@
 .end method
 
 .method public final recordUsed(Landroidx/compose/runtime/KeyInfo;)Z
-    .locals 1
+    .locals 0
 
-    const-string v0, "keyInfo"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 147
+    .line 145
     iget-object p0, p0, Landroidx/compose/runtime/Pending;->usedKeys:Ljava/util/List;
 
     invoke-interface {p0, p1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
@@ -426,11 +414,7 @@
 .method public final registerInsert(Landroidx/compose/runtime/KeyInfo;I)V
     .locals 3
 
-    const-string v0, "keyInfo"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 187
+    .line 185
     iget-object p0, p0, Landroidx/compose/runtime/Pending;->groupInfos:Ljava/util/HashMap;
 
     check-cast p0, Ljava/util/Map;
@@ -459,23 +443,18 @@
 .method public final registerMoveNode(III)V
     .locals 3
 
-    .line 170
-    const-string v0, "groupInfos.values"
-
     if-le p1, p2, :cond_2
 
-    .line 171
+    .line 169
     iget-object p0, p0, Landroidx/compose/runtime/Pending;->groupInfos:Ljava/util/HashMap;
 
     invoke-virtual {p0}, Ljava/util/HashMap;->values()Ljava/util/Collection;
 
     move-result-object p0
 
-    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
-
     check-cast p0, Ljava/lang/Iterable;
 
-    .line 4569
+    .line 4203
     invoke-interface {p0}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
 
     move-result-object p0
@@ -494,7 +473,7 @@
 
     check-cast v0, Landroidx/compose/runtime/GroupInfo;
 
-    .line 172
+    .line 170
     invoke-virtual {v0}, Landroidx/compose/runtime/GroupInfo;->getNodeIndex()I
 
     move-result v1
@@ -509,7 +488,7 @@
 
     add-int/2addr v1, p2
 
-    .line 173
+    .line 171
     invoke-virtual {v0, v1}, Landroidx/compose/runtime/GroupInfo;->setNodeIndex(I)V
 
     goto :goto_0
@@ -521,7 +500,7 @@
 
     add-int/2addr v1, p3
 
-    .line 174
+    .line 172
     invoke-virtual {v0, v1}, Landroidx/compose/runtime/GroupInfo;->setNodeIndex(I)V
 
     goto :goto_0
@@ -529,18 +508,16 @@
     :cond_2
     if-le p2, p1, :cond_5
 
-    .line 177
+    .line 175
     iget-object p0, p0, Landroidx/compose/runtime/Pending;->groupInfos:Ljava/util/HashMap;
 
     invoke-virtual {p0}, Ljava/util/HashMap;->values()Ljava/util/Collection;
 
     move-result-object p0
 
-    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
-
     check-cast p0, Ljava/lang/Iterable;
 
-    .line 4571
+    .line 4205
     invoke-interface {p0}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
 
     move-result-object p0
@@ -559,7 +536,7 @@
 
     check-cast v0, Landroidx/compose/runtime/GroupInfo;
 
-    .line 178
+    .line 176
     invoke-virtual {v0}, Landroidx/compose/runtime/GroupInfo;->getNodeIndex()I
 
     move-result v1
@@ -574,7 +551,7 @@
 
     add-int/2addr v1, p2
 
-    .line 179
+    .line 177
     invoke-virtual {v0, v1}, Landroidx/compose/runtime/GroupInfo;->setNodeIndex(I)V
 
     goto :goto_1
@@ -588,7 +565,7 @@
 
     sub-int/2addr v1, p3
 
-    .line 180
+    .line 178
     invoke-virtual {v0, v1}, Landroidx/compose/runtime/GroupInfo;->setNodeIndex(I)V
 
     goto :goto_1
@@ -600,23 +577,18 @@
 .method public final registerMoveSlot(II)V
     .locals 3
 
-    .line 154
-    const-string v0, "groupInfos.values"
-
     if-le p1, p2, :cond_2
 
-    .line 155
+    .line 153
     iget-object p0, p0, Landroidx/compose/runtime/Pending;->groupInfos:Ljava/util/HashMap;
 
     invoke-virtual {p0}, Ljava/util/HashMap;->values()Ljava/util/Collection;
 
     move-result-object p0
 
-    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
-
     check-cast p0, Ljava/lang/Iterable;
 
-    .line 4565
+    .line 4199
     invoke-interface {p0}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
 
     move-result-object p0
@@ -635,14 +607,14 @@
 
     check-cast v0, Landroidx/compose/runtime/GroupInfo;
 
-    .line 156
+    .line 154
     invoke-virtual {v0}, Landroidx/compose/runtime/GroupInfo;->getSlotIndex()I
 
     move-result v1
 
     if-ne v1, p1, :cond_1
 
-    .line 157
+    .line 155
     invoke-virtual {v0, p2}, Landroidx/compose/runtime/GroupInfo;->setSlotIndex(I)V
 
     goto :goto_0
@@ -654,7 +626,7 @@
 
     add-int/lit8 v1, v1, 0x1
 
-    .line 158
+    .line 156
     invoke-virtual {v0, v1}, Landroidx/compose/runtime/GroupInfo;->setSlotIndex(I)V
 
     goto :goto_0
@@ -662,18 +634,16 @@
     :cond_2
     if-le p2, p1, :cond_5
 
-    .line 161
+    .line 159
     iget-object p0, p0, Landroidx/compose/runtime/Pending;->groupInfos:Ljava/util/HashMap;
 
     invoke-virtual {p0}, Ljava/util/HashMap;->values()Ljava/util/Collection;
 
     move-result-object p0
 
-    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
-
     check-cast p0, Ljava/lang/Iterable;
 
-    .line 4567
+    .line 4201
     invoke-interface {p0}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
 
     move-result-object p0
@@ -692,14 +662,14 @@
 
     check-cast v0, Landroidx/compose/runtime/GroupInfo;
 
-    .line 162
+    .line 160
     invoke-virtual {v0}, Landroidx/compose/runtime/GroupInfo;->getSlotIndex()I
 
     move-result v1
 
     if-ne v1, p1, :cond_4
 
-    .line 163
+    .line 161
     invoke-virtual {v0, p2}, Landroidx/compose/runtime/GroupInfo;->setSlotIndex(I)V
 
     goto :goto_1
@@ -713,7 +683,7 @@
 
     add-int/lit8 v1, v1, -0x1
 
-    .line 164
+    .line 162
     invoke-virtual {v0, v1}, Landroidx/compose/runtime/GroupInfo;->setSlotIndex(I)V
 
     goto :goto_1
@@ -725,20 +695,16 @@
 .method public final setGroupIndex(I)V
     .locals 0
 
-    .line 102
+    .line 100
     iput p1, p0, Landroidx/compose/runtime/Pending;->groupIndex:I
 
     return-void
 .end method
 
 .method public final slotPositionOf(Landroidx/compose/runtime/KeyInfo;)I
-    .locals 1
+    .locals 0
 
-    const-string v0, "keyInfo"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 211
+    .line 209
     iget-object p0, p0, Landroidx/compose/runtime/Pending;->groupInfos:Ljava/util/HashMap;
 
     invoke-virtual {p1}, Landroidx/compose/runtime/KeyInfo;->getLocation()I
@@ -773,7 +739,7 @@
 .method public final updateNodeCount(II)Z
     .locals 3
 
-    .line 191
+    .line 189
     iget-object v0, p0, Landroidx/compose/runtime/Pending;->groupInfos:Ljava/util/HashMap;
 
     invoke-static {p1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
@@ -788,37 +754,33 @@
 
     if-eqz p1, :cond_2
 
-    .line 193
+    .line 191
     invoke-virtual {p1}, Landroidx/compose/runtime/GroupInfo;->getNodeIndex()I
 
     move-result v0
 
-    .line 194
+    .line 192
     invoke-virtual {p1}, Landroidx/compose/runtime/GroupInfo;->getNodeCount()I
 
     move-result v1
 
     sub-int v1, p2, v1
 
-    .line 195
+    .line 193
     invoke-virtual {p1, p2}, Landroidx/compose/runtime/GroupInfo;->setNodeCount(I)V
 
     if-eqz v1, :cond_1
 
-    .line 197
+    .line 195
     iget-object p0, p0, Landroidx/compose/runtime/Pending;->groupInfos:Ljava/util/HashMap;
 
     invoke-virtual {p0}, Ljava/util/HashMap;->values()Ljava/util/Collection;
 
     move-result-object p0
 
-    const-string p2, "groupInfos.values"
-
-    invoke-static {p0, p2}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
-
     check-cast p0, Ljava/lang/Iterable;
 
-    .line 4573
+    .line 4207
     invoke-interface {p0}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
 
     move-result-object p0
@@ -837,7 +799,7 @@
 
     check-cast p2, Landroidx/compose/runtime/GroupInfo;
 
-    .line 198
+    .line 196
     invoke-virtual {p2}, Landroidx/compose/runtime/GroupInfo;->getNodeIndex()I
 
     move-result v2
@@ -850,7 +812,7 @@
 
     if-nez v2, :cond_0
 
-    .line 199
+    .line 197
     invoke-virtual {p2}, Landroidx/compose/runtime/GroupInfo;->getNodeIndex()I
 
     move-result v2
@@ -859,7 +821,7 @@
 
     if-ltz v2, :cond_0
 
-    .line 201
+    .line 199
     invoke-virtual {p2, v2}, Landroidx/compose/runtime/GroupInfo;->setNodeIndex(I)V
 
     goto :goto_0
@@ -878,11 +840,7 @@
 .method public final updatedNodeCountOf(Landroidx/compose/runtime/KeyInfo;)I
     .locals 1
 
-    const-string v0, "keyInfo"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 218
+    .line 216
     iget-object p0, p0, Landroidx/compose/runtime/Pending;->groupInfos:Ljava/util/HashMap;
 
     invoke-virtual {p1}, Landroidx/compose/runtime/KeyInfo;->getLocation()I

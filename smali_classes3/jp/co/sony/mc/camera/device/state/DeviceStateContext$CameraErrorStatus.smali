@@ -28,20 +28,20 @@
 .method constructor <init>(Ljp/co/sony/mc/camera/device/state/DeviceStateContext;)V
     .locals 0
 
-    .line 326
+    .line 337
     iput-object p1, p0, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CameraErrorStatus;->this$0:Ljp/co/sony/mc/camera/device/state/DeviceStateContext;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     const/4 p1, 0x0
 
-    .line 327
+    .line 338
     iput-boolean p1, p0, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CameraErrorStatus;->mIsCameraEvicted:Z
 
-    .line 328
+    .line 339
     iput-boolean p1, p0, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CameraErrorStatus;->mIsCameraError:Z
 
-    .line 329
+    .line 340
     iput-boolean p1, p0, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CameraErrorStatus;->mIsOtherError:Z
 
     return-void
@@ -58,7 +58,7 @@
 
     const/4 v1, 0x1
 
-    .line 344
+    .line 355
     :try_start_0
     new-array v2, v1, [Ljava/lang/String;
 
@@ -106,7 +106,7 @@
 
     invoke-static {v2}, Ljp/co/sony/mc/camera/util/CamLog;->i([Ljava/lang/String;)V
 
-    .line 348
+    .line 359
     iget-boolean v0, p0, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CameraErrorStatus;->mIsCameraEvicted:Z
 
     if-nez v0, :cond_1
@@ -147,13 +147,13 @@
 
     const/4 v0, 0x1
 
-    .line 336
+    .line 347
     :try_start_0
     iput-boolean v0, p0, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CameraErrorStatus;->mIsCameraError:Z
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 337
+    .line 348
     monitor-exit p0
 
     return-void
@@ -173,13 +173,13 @@
 
     const/4 v0, 0x1
 
-    .line 332
+    .line 343
     :try_start_0
     iput-boolean v0, p0, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CameraErrorStatus;->mIsCameraEvicted:Z
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 333
+    .line 344
     monitor-exit p0
 
     return-void
@@ -199,13 +199,13 @@
 
     const/4 v0, 0x1
 
-    .line 340
+    .line 351
     :try_start_0
     iput-boolean v0, p0, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CameraErrorStatus;->mIsOtherError:Z
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 341
+    .line 352
     monitor-exit p0
 
     return-void

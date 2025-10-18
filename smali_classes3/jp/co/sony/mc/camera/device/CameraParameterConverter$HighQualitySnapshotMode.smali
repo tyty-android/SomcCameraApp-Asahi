@@ -18,7 +18,7 @@
 .method constructor <init>()V
     .locals 0
 
-    .line 527
+    .line 571
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -27,7 +27,7 @@
 .method static getApi2Value(Ljava/lang/String;)Ljava/lang/Integer;
     .locals 1
 
-    .line 530
+    .line 574
     invoke-virtual {p0}, Ljava/lang/String;->hashCode()I
 
     const-string v0, "off"
@@ -53,7 +53,7 @@
     :cond_0
     const/4 p0, 0x1
 
-    .line 536
+    .line 580
     invoke-static {p0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object p0
@@ -63,7 +63,7 @@
     :cond_1
     const/4 p0, 0x0
 
-    .line 532
+    .line 576
     invoke-static {p0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object p0

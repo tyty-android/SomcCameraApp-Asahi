@@ -53,7 +53,7 @@
     f = "SelectionContainer.kt"
     i = {}
     l = {
-        0x7e
+        0x86
     }
     m = "invokeSuspend"
     n = {}
@@ -171,7 +171,7 @@
 
     move-result-object v0
 
-    .line 65535
+    .line 133
     iget v1, p0, Landroidx/compose/foundation/text/selection/SelectionContainerKt$SelectionContainer$3$1$1$1$1$1;->label:I
 
     const/4 v2, 0x1
@@ -200,7 +200,7 @@
 
     check-cast p1, Landroidx/compose/ui/input/pointer/PointerInputScope;
 
-    .line 126
+    .line 134
     iget-object v1, p0, Landroidx/compose/foundation/text/selection/SelectionContainerKt$SelectionContainer$3$1$1$1$1$1;->$observer:Landroidx/compose/foundation/text/TextDragObserver;
 
     move-object v3, p0
@@ -217,7 +217,7 @@
 
     return-object v0
 
-    .line 127
+    .line 135
     :cond_2
     :goto_0
     sget-object p0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;

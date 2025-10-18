@@ -48,7 +48,7 @@
 .method private constructor <init>()V
     .locals 0
 
-    .line 1911
+    .line 2080
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -59,13 +59,9 @@
 .method public final disallowForceDark(Landroid/view/View;)V
     .locals 0
 
-    const-string/jumbo p0, "view"
-
-    invoke-static {p1, p0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
     const/4 p0, 0x0
 
-    .line 1916
+    .line 2085
     invoke-virtual {p1, p0}, Landroid/view/View;->setForceDarkAllowed(Z)V
 
     return-void

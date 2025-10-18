@@ -96,7 +96,7 @@
 .end method
 
 .method public varargs handleOnPrepareBurstDone(Ljp/co/sony/mc/camera/device/state/DeviceStateContext;[Ljava/lang/Object;)V
-    .locals 4
+    .locals 5
 
     const/4 v0, 0x0
 
@@ -112,28 +112,28 @@
     .line 73
     invoke-virtual {p1}, Ljp/co/sony/mc/camera/device/state/DeviceStateContext;->getCameraInfo()Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CameraDeviceInfo;
 
-    move-result-object v0
+    move-result-object v1
 
-    invoke-virtual {v0}, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CameraDeviceInfo;->getSessionId()Ljp/co/sony/mc/camera/device/CameraDeviceHandler$CameraSessionId;
+    invoke-virtual {v1}, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CameraDeviceInfo;->getSessionId()Ljp/co/sony/mc/camera/device/CameraDeviceHandler$CameraSessionId;
 
-    move-result-object v0
+    move-result-object v1
 
     .line 74
     invoke-virtual {p1}, Ljp/co/sony/mc/camera/device/state/DeviceStateContext;->getSnapshotRequestInfo()Ljp/co/sony/mc/camera/device/state/DeviceStateContext$SnapshotRequestInfo;
 
-    move-result-object v1
+    move-result-object v2
 
     .line 75
     invoke-virtual {p1}, Ljp/co/sony/mc/camera/device/state/DeviceStateContext;->getCameraDeviceHandlerCallback()Ljp/co/sony/mc/camera/device/state/IDeviceStateMachineCallback;
 
-    move-result-object v2
+    move-result-object v3
 
     .line 76
     invoke-virtual {p1}, Ljp/co/sony/mc/camera/device/state/DeviceStateContext;->getCameraInfo()Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CameraDeviceInfo;
 
-    move-result-object v3
+    move-result-object v4
 
-    invoke-virtual {v3}, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CameraDeviceInfo;->getCameraId()Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;
+    invoke-virtual {v4}, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CameraDeviceInfo;->getCameraId()Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;
 
     if-eqz p2, :cond_0
 
@@ -141,40 +141,40 @@
     invoke-virtual {p0, p1}, Ljp/co/sony/mc/camera/device/state/DeviceStateBurstCaptureWaitingForPrepareBurst;->doCapture(Ljp/co/sony/mc/camera/device/state/DeviceStateContext;)V
 
     .line 80
-    new-instance v1, Ljp/co/sony/mc/camera/device/state/DeviceStateBurstCapture;
+    new-instance v2, Ljp/co/sony/mc/camera/device/state/DeviceStateBurstCapture;
 
-    iget-boolean v3, p0, Ljp/co/sony/mc/camera/device/state/DeviceStateBurstCaptureWaitingForPrepareBurst;->mIsFinishBurstRequested:Z
+    iget-boolean v4, p0, Ljp/co/sony/mc/camera/device/state/DeviceStateBurstCaptureWaitingForPrepareBurst;->mIsFinishBurstRequested:Z
 
-    invoke-direct {v1, v3}, Ljp/co/sony/mc/camera/device/state/DeviceStateBurstCapture;-><init>(Z)V
+    invoke-direct {v2, v4}, Ljp/co/sony/mc/camera/device/state/DeviceStateBurstCapture;-><init>(Z)V
 
-    invoke-virtual {p0, v1}, Ljp/co/sony/mc/camera/device/state/DeviceStateBurstCaptureWaitingForPrepareBurst;->setNextState(Ljp/co/sony/mc/camera/device/state/DeviceState;)V
+    invoke-virtual {p0, v2}, Ljp/co/sony/mc/camera/device/state/DeviceStateBurstCaptureWaitingForPrepareBurst;->setNextState(Ljp/co/sony/mc/camera/device/state/DeviceState;)V
 
     goto :goto_0
 
     .line 82
     :cond_0
-    invoke-virtual {v1}, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$SnapshotRequestInfo;->pollSnapshotRequest()Ljp/co/sony/mc/camera/device/SnapshotRequest;
+    invoke-virtual {v2}, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$SnapshotRequestInfo;->pollSnapshotRequest()Ljp/co/sony/mc/camera/device/SnapshotRequest;
 
-    move-result-object v3
+    move-result-object v4
 
     .line 83
-    invoke-virtual {v3}, Ljp/co/sony/mc/camera/device/SnapshotRequest;->convertToSingleCaptureRequest()Ljp/co/sony/mc/camera/device/SnapshotRequest;
+    invoke-virtual {v4}, Ljp/co/sony/mc/camera/device/SnapshotRequest;->convertToSingleCaptureRequest()Ljp/co/sony/mc/camera/device/SnapshotRequest;
 
-    move-result-object v3
+    move-result-object v4
 
-    invoke-virtual {v1, v3}, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$SnapshotRequestInfo;->addSnapshotRequest(Ljp/co/sony/mc/camera/device/SnapshotRequest;)V
+    invoke-virtual {v2, v4}, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$SnapshotRequestInfo;->addSnapshotRequest(Ljp/co/sony/mc/camera/device/SnapshotRequest;)V
 
     .line 84
-    iget-boolean v1, p0, Ljp/co/sony/mc/camera/device/state/DeviceStateBurstCaptureWaitingForPrepareBurst;->mIsFlashRequired:Z
+    iget-boolean v2, p0, Ljp/co/sony/mc/camera/device/state/DeviceStateBurstCaptureWaitingForPrepareBurst;->mIsFlashRequired:Z
 
-    if-eqz v1, :cond_1
+    if-eqz v2, :cond_1
 
     .line 85
-    new-instance v1, Ljp/co/sony/mc/camera/device/state/DeviceStatePhotoCaptureWaitingForPreCaptureDone;
+    new-instance v2, Ljp/co/sony/mc/camera/device/state/DeviceStatePhotoCaptureWaitingForPreCaptureDone;
 
-    invoke-direct {v1}, Ljp/co/sony/mc/camera/device/state/DeviceStatePhotoCaptureWaitingForPreCaptureDone;-><init>()V
+    invoke-direct {v2}, Ljp/co/sony/mc/camera/device/state/DeviceStatePhotoCaptureWaitingForPreCaptureDone;-><init>()V
 
-    invoke-virtual {p0, v1}, Ljp/co/sony/mc/camera/device/state/DeviceStateBurstCaptureWaitingForPrepareBurst;->setNextState(Ljp/co/sony/mc/camera/device/state/DeviceState;)V
+    invoke-virtual {p0, v2}, Ljp/co/sony/mc/camera/device/state/DeviceStateBurstCaptureWaitingForPrepareBurst;->setNextState(Ljp/co/sony/mc/camera/device/state/DeviceState;)V
 
     goto :goto_0
 
@@ -183,11 +183,11 @@
     invoke-virtual {p0, p1}, Ljp/co/sony/mc/camera/device/state/DeviceStateBurstCaptureWaitingForPrepareBurst;->doCapture(Ljp/co/sony/mc/camera/device/state/DeviceStateContext;)V
 
     .line 88
-    new-instance v1, Ljp/co/sony/mc/camera/device/state/DeviceStatePhotoCapture;
+    new-instance v2, Ljp/co/sony/mc/camera/device/state/DeviceStatePhotoCapture;
 
-    invoke-direct {v1}, Ljp/co/sony/mc/camera/device/state/DeviceStatePhotoCapture;-><init>()V
+    invoke-direct {v2}, Ljp/co/sony/mc/camera/device/state/DeviceStatePhotoCapture;-><init>()V
 
-    invoke-virtual {p0, v1}, Ljp/co/sony/mc/camera/device/state/DeviceStateBurstCaptureWaitingForPrepareBurst;->setNextState(Ljp/co/sony/mc/camera/device/state/DeviceState;)V
+    invoke-virtual {p0, v2}, Ljp/co/sony/mc/camera/device/state/DeviceStateBurstCaptureWaitingForPrepareBurst;->setNextState(Ljp/co/sony/mc/camera/device/state/DeviceState;)V
 
     .line 92
     :goto_0
@@ -195,12 +195,12 @@
 
     move-result p0
 
+    const/4 v2, 0x1
+
     if-nez p0, :cond_2
 
-    const/4 p0, 0x1
-
     .line 93
-    invoke-virtual {p1, p0}, Ljp/co/sony/mc/camera/device/state/DeviceStateContext;->publishBurstShooting(Z)V
+    invoke-virtual {p1, v2}, Ljp/co/sony/mc/camera/device/state/DeviceStateContext;->publishBurstShooting(Z)V
 
     goto :goto_1
 
@@ -211,18 +211,18 @@
     if-eqz p0, :cond_3
 
     .line 96
-    const-string p0, "Now is in high performance mode. So does not publish burst-shooting on"
+    new-array p0, v2, [Ljava/lang/String;
 
-    filled-new-array {p0}, [Ljava/lang/String;
+    const-string v2, "Now is in high performance mode. So does not publish burst-shooting on"
 
-    move-result-object p0
+    aput-object v2, p0, v0
 
     invoke-static {p0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
     .line 100
     :cond_3
     :goto_1
-    invoke-interface {v2, v0, p2}, Ljp/co/sony/mc/camera/device/state/IDeviceStateMachineCallback;->onPrepareBurstDone(Ljp/co/sony/mc/camera/device/CameraDeviceHandler$CameraSessionId;Z)V
+    invoke-interface {v3, v1, p2}, Ljp/co/sony/mc/camera/device/state/IDeviceStateMachineCallback;->onPrepareBurstDone(Ljp/co/sony/mc/camera/device/CameraDeviceHandler$CameraSessionId;Z)V
 
     .line 101
     invoke-virtual {p1}, Ljp/co/sony/mc/camera/device/state/DeviceStateContext;->removePrepareBurstStateChecker()Z

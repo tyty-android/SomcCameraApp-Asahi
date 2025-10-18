@@ -53,7 +53,7 @@
     f = "Slider.kt"
     i = {}
     l = {
-        0x3bb
+        0x3bf
     }
     m = "invokeSuspend"
     n = {}
@@ -182,7 +182,7 @@
 
     move-result-object v0
 
-    .line 953
+    .line 957
     iget v1, p0, Landroidx/compose/material/SliderKt$animateToTarget$2;->label:I
 
     const/4 v2, 0x1
@@ -211,7 +211,7 @@
 
     check-cast p1, Landroidx/compose/foundation/gestures/DragScope;
 
-    .line 954
+    .line 958
     new-instance v1, Lkotlin/jvm/internal/Ref$FloatRef;
 
     invoke-direct {v1}, Lkotlin/jvm/internal/Ref$FloatRef;-><init>()V
@@ -220,7 +220,7 @@
 
     iput v3, v1, Lkotlin/jvm/internal/Ref$FloatRef;->element:F
 
-    .line 955
+    .line 959
     iget v3, p0, Landroidx/compose/material/SliderKt$animateToTarget$2;->$current:F
 
     const/4 v4, 0x2
@@ -275,7 +275,7 @@
 
     return-object v0
 
-    .line 959
+    .line 963
     :cond_2
     :goto_0
     sget-object p0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;

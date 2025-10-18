@@ -82,7 +82,7 @@
 .method public bridge synthetic invoke(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
 
-    .line 435
+    .line 209
     check-cast p1, Landroidx/compose/ui/node/LayoutNode;
 
     check-cast p2, Lkotlin/jvm/functions/Function2;
@@ -95,7 +95,7 @@
 .end method
 
 .method public final invoke(Landroidx/compose/ui/node/LayoutNode;Lkotlin/jvm/functions/Function2;)V
-    .locals 1
+    .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -111,15 +111,7 @@
         }
     .end annotation
 
-    const-string v0, "$this$null"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string v0, "it"
-
-    invoke-static {p2, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 435
+    .line 209
     iget-object p0, p0, Landroidx/compose/ui/layout/SubcomposeLayoutState$setMeasurePolicy$1;->this$0:Landroidx/compose/ui/layout/SubcomposeLayoutState;
 
     invoke-static {p0}, Landroidx/compose/ui/layout/SubcomposeLayoutState;->access$getState(Landroidx/compose/ui/layout/SubcomposeLayoutState;)Landroidx/compose/ui/layout/LayoutNodeSubcompositionsState;

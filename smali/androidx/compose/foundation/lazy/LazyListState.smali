@@ -14,12 +14,12 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/SourceDebugExtension;
-    value = "SMAP\nLazyListState.kt\nKotlin\n*S Kotlin\n*F\n+ 1 LazyListState.kt\nandroidx/compose/foundation/lazy/LazyListState\n+ 2 SnapshotState.kt\nandroidx/compose/runtime/SnapshotStateKt__SnapshotStateKt\n+ 3 Snapshot.kt\nandroidx/compose/runtime/snapshots/Snapshot$Companion\n+ 4 Snapshot.kt\nandroidx/compose/runtime/snapshots/Snapshot\n*L\n1#1,439:1\n81#2:440\n81#2:441\n107#2,2:442\n81#2:444\n107#2,2:445\n495#3,4:447\n500#3:456\n129#4,5:451\n*S KotlinDebug\n*F\n+ 1 LazyListState.kt\nandroidx/compose/foundation/lazy/LazyListState\n*L\n229#1:440\n279#1:441\n279#1:442,2\n281#1:444\n281#1:445,2\n409#1:447,4\n409#1:456\n409#1:451,5\n*E\n"
+    value = "SMAP\nLazyListState.kt\nKotlin\n*S Kotlin\n*F\n+ 1 LazyListState.kt\nandroidx/compose/foundation/lazy/LazyListState\n+ 2 SnapshotState.kt\nandroidx/compose/runtime/SnapshotStateKt__SnapshotStateKt\n+ 3 fake.kt\nkotlin/jvm/internal/FakeKt\n+ 4 Snapshot.kt\nandroidx/compose/runtime/snapshots/Snapshot$Companion\n+ 5 Snapshot.kt\nandroidx/compose/runtime/snapshots/Snapshot\n*L\n1#1,567:1\n81#2:568\n81#2:569\n107#2,2:570\n81#2:572\n107#2,2:573\n1#3:575\n495#4,4:576\n500#4:585\n129#5,5:580\n*S KotlinDebug\n*F\n+ 1 LazyListState.kt\nandroidx/compose/foundation/lazy/LazyListState\n*L\n254#1:568\n304#1:569\n304#1:570,2\n306#1:572\n306#1:573,2\n489#1:576,4\n489#1:585\n489#1:580,5\n*E\n"
 .end annotation
 
 .annotation runtime Lkotlin/Metadata;
     d1 = {
-        "\u0000\u00d6\u0001\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0008\n\u0002\u0008\u0003\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0003\n\u0002\u0018\u0002\n\u0002\u0008\u0003\n\u0002\u0010\u000b\n\u0002\u0008\u000c\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\t\n\u0002\u0018\u0002\n\u0002\u0008\u0003\n\u0002\u0018\u0002\n\u0002\u0008\u0004\n\u0002\u0018\u0002\n\u0002\u0008\u0003\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0007\n\u0002\u0018\u0002\n\u0002\u0008\u0003\n\u0002\u0018\u0002\n\u0002\u0008\u0003\n\u0002\u0018\u0002\n\u0002\u0008\u0006\n\u0002\u0018\u0002\n\u0002\u0008\u0005\n\u0002\u0018\u0002\n\u0002\u0008\u0004\n\u0002\u0018\u0002\n\u0002\u0008\u0003\n\u0002\u0018\u0002\n\u0002\u0010\u0007\n\u0002\u0008\u0006\n\u0002\u0010\u0002\n\u0002\u0008\u0005\n\u0002\u0018\u0002\n\u0002\u0008\u000b\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0006\n\u0002\u0018\u0002\n\u0002\u0008\u0004\u0008\u0007\u0018\u0000 \u0089\u00012\u00020\u0001:\u0002\u0089\u0001B\u0019\u0012\u0008\u0008\u0002\u0010\u0002\u001a\u00020\u0003\u0012\u0008\u0008\u0002\u0010\u0004\u001a\u00020\u0003\u00a2\u0006\u0002\u0010\u0005J#\u0010f\u001a\u00020g2\u0006\u0010h\u001a\u00020\u00032\u0008\u0008\u0002\u0010i\u001a\u00020\u0003H\u0086@\u00f8\u0001\u0000\u00a2\u0006\u0002\u0010jJ\u0015\u0010k\u001a\u00020g2\u0006\u0010l\u001a\u00020mH\u0000\u00a2\u0006\u0002\u0008nJ\u0010\u0010o\u001a\u00020g2\u0006\u0010p\u001a\u000203H\u0002J\u0010\u0010q\u001a\u00020`2\u0006\u0010r\u001a\u00020`H\u0016J\u0010\u0010s\u001a\u00020g2\u0006\u0010r\u001a\u00020`H\u0002J\u0015\u0010t\u001a\u00020`2\u0006\u0010u\u001a\u00020`H\u0000\u00a2\u0006\u0002\u0008vJC\u0010w\u001a\u00020g2\u0006\u0010x\u001a\u00020y2\'\u0010z\u001a#\u0008\u0001\u0012\u0004\u0012\u00020|\u0012\n\u0012\u0008\u0012\u0004\u0012\u00020g0}\u0012\u0006\u0012\u0004\u0018\u00010~0{\u00a2\u0006\u0002\u0008\u007fH\u0096@\u00f8\u0001\u0000\u00a2\u0006\u0003\u0010\u0080\u0001J$\u0010\u0081\u0001\u001a\u00020g2\u0006\u0010h\u001a\u00020\u00032\u0008\u0008\u0002\u0010i\u001a\u00020\u0003H\u0086@\u00f8\u0001\u0000\u00a2\u0006\u0002\u0010jJ\u001f\u0010\u0082\u0001\u001a\u00020g2\u0006\u0010h\u001a\u00020\u00032\u0006\u0010i\u001a\u00020\u0003H\u0000\u00a2\u0006\u0003\u0008\u0083\u0001J$\u0010\u0084\u0001\u001a\u00020\u00032\u0008\u0010\u0085\u0001\u001a\u00030\u0086\u00012\t\u0008\u0002\u0010\u0087\u0001\u001a\u00020\u0003H\u0000\u00a2\u0006\u0003\u0008\u0088\u0001R\u000e\u0010\u0006\u001a\u00020\u0007X\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u0014\u0010\u0008\u001a\u00020\tX\u0080\u0004\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\n\u0010\u000bR\u0014\u0010\u000c\u001a\u00020\rX\u0080\u0004\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\u000e\u0010\u000fR+\u0010\u0012\u001a\u00020\u00112\u0006\u0010\u0010\u001a\u00020\u00118V@RX\u0096\u008e\u0002\u00a2\u0006\u0012\n\u0004\u0008\u0017\u0010\u0018\u001a\u0004\u0008\u0013\u0010\u0014\"\u0004\u0008\u0015\u0010\u0016R+\u0010\u0019\u001a\u00020\u00112\u0006\u0010\u0010\u001a\u00020\u00118V@RX\u0096\u008e\u0002\u00a2\u0006\u0012\n\u0004\u0008\u001c\u0010\u0018\u001a\u0004\u0008\u001a\u0010\u0014\"\u0004\u0008\u001b\u0010\u0016R\u0010\u0010\u001d\u001a\u0004\u0018\u00010\u001eX\u0082\u000e\u00a2\u0006\u0002\n\u0000R\u001a\u0010\u001f\u001a\u00020 X\u0080\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\u0008!\u0010\"\"\u0004\u0008#\u0010$R\u0011\u0010\u0002\u001a\u00020\u00038F\u00a2\u0006\u0006\u001a\u0004\u0008%\u0010&R\u0011\u0010\u0004\u001a\u00020\u00038F\u00a2\u0006\u0006\u001a\u0004\u0008\'\u0010&R\u000e\u0010(\u001a\u00020\u0003X\u0082\u000e\u00a2\u0006\u0002\n\u0000R\u0011\u0010)\u001a\u00020*8F\u00a2\u0006\u0006\u001a\u0004\u0008+\u0010,R\u0014\u0010-\u001a\u00020.X\u0080\u0004\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008/\u00100R\u0014\u00101\u001a\u00020\u00118VX\u0096\u0004\u00a2\u0006\u0006\u001a\u0004\u00081\u0010\u0014R\u0011\u00102\u001a\u0002038F\u00a2\u0006\u0006\u001a\u0004\u00084\u00105R\u0014\u00106\u001a\u0008\u0012\u0004\u0012\u00020307X\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u001b\u00108\u001a\u0002098@X\u0080\u0084\u0002\u00a2\u0006\u000c\u001a\u0004\u0008<\u0010=*\u0004\u0008:\u0010;R\u001e\u0010>\u001a\u00020\u00032\u0006\u0010\u0010\u001a\u00020\u0003@BX\u0080\u000e\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008?\u0010&R\u0014\u0010@\u001a\u00020AX\u0080\u0004\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008B\u0010CR\u0014\u0010D\u001a\u00020EX\u0080\u0004\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008F\u0010GR\u0014\u0010H\u001a\u00020IX\u0080\u0004\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008J\u0010KR\u001a\u0010L\u001a\u00020\u0011X\u0080\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\u0008M\u0010\u0014\"\u0004\u0008N\u0010\u0016R%\u0010O\u001a\u00020PX\u0080\u000e\u00f8\u0001\u0000\u00f8\u0001\u0001\u00f8\u0001\u0002\u00a2\u0006\u0010\n\u0002\u0010U\u001a\u0004\u0008Q\u0010R\"\u0004\u0008S\u0010TR\"\u0010W\u001a\u0004\u0018\u00010V2\u0008\u0010\u0010\u001a\u0004\u0018\u00010V@BX\u0080\u000e\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008X\u0010YR\u0014\u0010Z\u001a\u00020[X\u0080\u0004\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\\\u0010]R\u000e\u0010^\u001a\u00020_X\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u001e\u0010a\u001a\u00020`2\u0006\u0010\u0010\u001a\u00020`@BX\u0080\u000e\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008b\u0010cR\u000e\u0010d\u001a\u00020\u0001X\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u000e\u0010e\u001a\u00020\u0011X\u0082\u000e\u00a2\u0006\u0002\n\u0000\u0082\u0002\u000f\n\u0002\u0008\u0019\n\u0005\u0008\u00a1\u001e0\u0001\n\u0002\u0008!\u00a8\u0006\u008a\u0001"
+        "\u0000\u00ec\u0001\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0008\n\u0002\u0008\u0003\n\u0002\u0018\u0002\n\u0002\u0010\u0007\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0003\n\u0002\u0018\u0002\n\u0002\u0008\u0003\n\u0002\u0010\u000b\n\u0002\u0008\u000c\n\u0002\u0018\u0002\n\u0002\u0008\u0005\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u000b\n\u0002\u0018\u0002\n\u0002\u0008\u0003\n\u0002\u0018\u0002\n\u0002\u0008\u0004\n\u0002\u0018\u0002\n\u0002\u0008\u0003\n\u0002\u0018\u0002\n\u0002\u0008\u0003\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0007\n\u0002\u0018\u0002\n\u0002\u0008\u0003\n\u0002\u0018\u0002\n\u0002\u0008\u0006\n\u0002\u0018\u0002\n\u0002\u0008\u0006\n\u0002\u0018\u0002\n\u0002\u0008\u0005\n\u0002\u0018\u0002\n\u0002\u0008\u0004\n\u0002\u0018\u0002\n\u0002\u0008\u0006\n\u0002\u0018\u0002\n\u0002\u0008\u0005\n\u0002\u0010\u0002\n\u0002\u0008\u0012\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0007\n\u0002\u0018\u0002\n\u0002\u0008\u0004\u0008\u0007\u0018\u0000 \u00a0\u00012\u00020\u0001:\u0002\u00a0\u0001B\u0019\u0012\u0008\u0008\u0002\u0010\u0002\u001a\u00020\u0003\u0012\u0008\u0008\u0002\u0010\u0004\u001a\u00020\u0003\u00a2\u0006\u0002\u0010\u0005J\"\u0010{\u001a\u00020|2\u0008\u0008\u0001\u0010}\u001a\u00020\u00032\u0008\u0008\u0002\u0010~\u001a\u00020\u0003H\u0086@\u00a2\u0006\u0002\u0010\u007fJ,\u0010\u0080\u0001\u001a\u00020|2\u0007\u0010\u0081\u0001\u001a\u00020H2\u0007\u0010\u0082\u0001\u001a\u00020\u00152\t\u0008\u0002\u0010\u0083\u0001\u001a\u00020\u0015H\u0000\u00a2\u0006\u0003\u0008\u0084\u0001J\u0012\u0010\u0085\u0001\u001a\u00020|2\u0007\u0010\u0086\u0001\u001a\u00020CH\u0002J\u0012\u0010\u0087\u0001\u001a\u00020\u00082\u0007\u0010\u0088\u0001\u001a\u00020\u0008H\u0016J\u001c\u0010\u0089\u0001\u001a\u00020|2\u0007\u0010\u0088\u0001\u001a\u00020\u00082\u0008\u0008\u0002\u0010B\u001a\u00020CH\u0002J\u0018\u0010\u008a\u0001\u001a\u00020\u00082\u0007\u0010\u008b\u0001\u001a\u00020\u0008H\u0000\u00a2\u0006\u0003\u0008\u008c\u0001JI\u0010\u008d\u0001\u001a\u00020|2\u0008\u0010\u008e\u0001\u001a\u00030\u008f\u00012-\u0010\u0090\u0001\u001a(\u0008\u0001\u0012\u0005\u0012\u00030\u0092\u0001\u0012\u000b\u0012\t\u0012\u0004\u0012\u00020|0\u0093\u0001\u0012\u0007\u0012\u0005\u0018\u00010\u0094\u00010\u0091\u0001\u00a2\u0006\u0003\u0008\u0095\u0001H\u0096@\u00a2\u0006\u0003\u0010\u0096\u0001J#\u0010\u0097\u0001\u001a\u00020|2\u0008\u0008\u0001\u0010}\u001a\u00020\u00032\u0008\u0008\u0002\u0010~\u001a\u00020\u0003H\u0086@\u00a2\u0006\u0002\u0010\u007fJ\u001f\u0010\u0098\u0001\u001a\u00020|2\u0006\u0010}\u001a\u00020\u00032\u0006\u0010~\u001a\u00020\u0003H\u0000\u00a2\u0006\u0003\u0008\u0099\u0001J\u0012\u0010\u009a\u0001\u001a\u00020|2\u0007\u0010\u0088\u0001\u001a\u00020\u0008H\u0002J\"\u0010\u009b\u0001\u001a\u00020\u00032\u0008\u0010\u009c\u0001\u001a\u00030\u009d\u00012\u0007\u0010\u009e\u0001\u001a\u00020\u0003H\u0000\u00a2\u0006\u0003\u0008\u009f\u0001R\u001a\u0010\u0006\u001a\u000e\u0012\u0004\u0012\u00020\u0008\u0012\u0004\u0012\u00020\t0\u0007X\u0082\u000e\u00a2\u0006\u0002\n\u0000R\u000e\u0010\n\u001a\u00020\u000bX\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u0014\u0010\u000c\u001a\u00020\rX\u0080\u0004\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\u000e\u0010\u000fR\u0014\u0010\u0010\u001a\u00020\u0011X\u0080\u0004\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\u0012\u0010\u0013R+\u0010\u0016\u001a\u00020\u00152\u0006\u0010\u0014\u001a\u00020\u00158V@RX\u0096\u008e\u0002\u00a2\u0006\u0012\n\u0004\u0008\u001b\u0010\u001c\u001a\u0004\u0008\u0017\u0010\u0018\"\u0004\u0008\u0019\u0010\u001aR+\u0010\u001d\u001a\u00020\u00152\u0006\u0010\u0014\u001a\u00020\u00158V@RX\u0096\u008e\u0002\u00a2\u0006\u0012\n\u0004\u0008 \u0010\u001c\u001a\u0004\u0008\u001e\u0010\u0018\"\u0004\u0008\u001f\u0010\u001aR\u001c\u0010!\u001a\u0004\u0018\u00010\"X\u0080\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\u0008#\u0010$\"\u0004\u0008%\u0010&R\u0010\u0010\'\u001a\u0004\u0018\u00010(X\u0082\u000e\u00a2\u0006\u0002\n\u0000R\u001a\u0010)\u001a\u00020*X\u0080\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\u0008+\u0010,\"\u0004\u0008-\u0010.R\u0011\u0010\u0002\u001a\u00020\u00038F\u00a2\u0006\u0006\u001a\u0004\u0008/\u00100R\u0011\u0010\u0004\u001a\u00020\u00038F\u00a2\u0006\u0006\u001a\u0004\u00081\u00100R\u001e\u00102\u001a\u00020\u00152\u0006\u0010\u0014\u001a\u00020\u0015@BX\u0080\u000e\u00a2\u0006\u0008\n\u0000\u001a\u0004\u00083\u0010\u0018R\u000e\u00104\u001a\u00020\u0003X\u0082\u000e\u00a2\u0006\u0002\n\u0000R\u0011\u00105\u001a\u0002068F\u00a2\u0006\u0006\u001a\u0004\u00087\u00108R\u0014\u00109\u001a\u00020:X\u0080\u0004\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008;\u0010<R\u0014\u0010=\u001a\u00020\u00158VX\u0096\u0004\u00a2\u0006\u0006\u001a\u0004\u0008=\u0010\u0018R\u0014\u0010>\u001a\u00020?X\u0080\u0004\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008@\u0010AR\u0011\u0010B\u001a\u00020C8F\u00a2\u0006\u0006\u001a\u0004\u0008D\u0010ER\u0014\u0010F\u001a\u0008\u0012\u0004\u0012\u00020H0GX\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u001b\u0010I\u001a\u00020J8@X\u0080\u0084\u0002\u00a2\u0006\u000c\u001a\u0004\u0008M\u0010N*\u0004\u0008K\u0010LR\u001e\u0010O\u001a\u00020\u00032\u0006\u0010\u0014\u001a\u00020\u0003@BX\u0080\u000e\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008P\u00100R\u0014\u0010Q\u001a\u00020RX\u0080\u0004\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008S\u0010TR\u001c\u0010U\u001a\u00020VX\u0080\u0004\u00f8\u0001\u0000\u00f8\u0001\u0001\u00a2\u0006\n\n\u0002\u0010\u001c\u001a\u0004\u0008W\u0010XR\"\u0010Y\u001a\u0004\u0018\u00010H2\u0008\u0010\u0014\u001a\u0004\u0018\u00010H@BX\u0080\u000e\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008Z\u0010[R\u0014\u0010\\\u001a\u00020]X\u0080\u0004\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008^\u0010_R\u001a\u0010`\u001a\u00020\u0015X\u0080\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\u0008a\u0010\u0018\"\u0004\u0008b\u0010\u001aR\"\u0010c\u001a\u00020dX\u0080\u000e\u00f8\u0001\u0000\u00f8\u0001\u0001\u00a2\u0006\u0010\n\u0002\u0010i\u001a\u0004\u0008e\u0010f\"\u0004\u0008g\u0010hR\"\u0010k\u001a\u0004\u0018\u00010j2\u0008\u0010\u0014\u001a\u0004\u0018\u00010j@BX\u0080\u000e\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008l\u0010mR\u0014\u0010n\u001a\u00020oX\u0080\u0004\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008p\u0010qR\u0014\u0010r\u001a\u00020\u00088@X\u0080\u0004\u00a2\u0006\u0006\u001a\u0004\u0008s\u0010tR\u000e\u0010u\u001a\u00020vX\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u001e\u0010w\u001a\u00020\u00082\u0006\u0010\u0014\u001a\u00020\u0008@BX\u0080\u000e\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008x\u0010tR\u000e\u0010y\u001a\u00020\u0001X\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u000e\u0010z\u001a\u00020\u0015X\u0082\u000e\u00a2\u0006\u0002\n\u0000\u0082\u0002\u000b\n\u0005\u0008\u00a1\u001e0\u0001\n\u0002\u0008!\u00a8\u0006\u00a1\u0001"
     }
     d2 = {
         "Landroidx/compose/foundation/lazy/LazyListState;",
@@ -28,6 +28,10 @@
         "",
         "firstVisibleItemScrollOffset",
         "(II)V",
+        "_scrollDeltaBetweenPasses",
+        "Landroidx/compose/animation/core/AnimationState;",
+        "",
+        "Landroidx/compose/animation/core/AnimationVector1D;",
         "animateScrollScope",
         "Landroidx/compose/foundation/lazy/LazyListAnimateScrollScope;",
         "awaitLayoutModifier",
@@ -51,6 +55,12 @@
         "getCanScrollForward",
         "setCanScrollForward",
         "canScrollForward$delegate",
+        "coroutineScope",
+        "Lkotlinx/coroutines/CoroutineScope;",
+        "getCoroutineScope$foundation_release",
+        "()Lkotlinx/coroutines/CoroutineScope;",
+        "setCoroutineScope$foundation_release",
+        "(Lkotlinx/coroutines/CoroutineScope;)V",
         "currentPrefetchHandle",
         "Landroidx/compose/foundation/lazy/layout/LazyLayoutPrefetchState$PrefetchHandle;",
         "density",
@@ -62,6 +72,8 @@
         "getFirstVisibleItemIndex",
         "()I",
         "getFirstVisibleItemScrollOffset",
+        "hasLookaheadPassOccurred",
+        "getHasLookaheadPassOccurred$foundation_release",
         "indexToPrefetch",
         "interactionSource",
         "Landroidx/compose/foundation/interaction/InteractionSource;",
@@ -72,12 +84,17 @@
         "getInternalInteractionSource$foundation_release",
         "()Landroidx/compose/foundation/interaction/MutableInteractionSource;",
         "isScrollInProgress",
+        "itemAnimator",
+        "Landroidx/compose/foundation/lazy/LazyListItemAnimator;",
+        "getItemAnimator$foundation_release",
+        "()Landroidx/compose/foundation/lazy/LazyListItemAnimator;",
         "layoutInfo",
         "Landroidx/compose/foundation/lazy/LazyListLayoutInfo;",
         "getLayoutInfo",
         "()Landroidx/compose/foundation/lazy/LazyListLayoutInfo;",
         "layoutInfoState",
         "Landroidx/compose/runtime/MutableState;",
+        "Landroidx/compose/foundation/lazy/LazyListMeasureResult;",
         "nearestRange",
         "Lkotlin/ranges/IntRange;",
         "getNearestRange$foundation_release$delegate",
@@ -90,10 +107,13 @@
         "Landroidx/compose/foundation/lazy/layout/LazyLayoutPinnedItemList;",
         "getPinnedItems$foundation_release",
         "()Landroidx/compose/foundation/lazy/layout/LazyLayoutPinnedItemList;",
-        "placementAnimator",
-        "Landroidx/compose/foundation/lazy/LazyListItemPlacementAnimator;",
-        "getPlacementAnimator$foundation_release",
-        "()Landroidx/compose/foundation/lazy/LazyListItemPlacementAnimator;",
+        "placementScopeInvalidator",
+        "Landroidx/compose/foundation/lazy/layout/ObservableScopeInvalidator;",
+        "getPlacementScopeInvalidator-zYiylxw$foundation_release",
+        "()Landroidx/compose/runtime/MutableState;",
+        "postLookaheadLayoutInfo",
+        "getPostLookaheadLayoutInfo$foundation_release",
+        "()Landroidx/compose/foundation/lazy/LazyListMeasureResult;",
         "prefetchState",
         "Landroidx/compose/foundation/lazy/layout/LazyLayoutPrefetchState;",
         "getPrefetchState$foundation_release",
@@ -116,12 +136,13 @@
         "Landroidx/compose/ui/layout/RemeasurementModifier;",
         "getRemeasurementModifier$foundation_release",
         "()Landroidx/compose/ui/layout/RemeasurementModifier;",
+        "scrollDeltaBetweenPasses",
+        "getScrollDeltaBetweenPasses$foundation_release",
+        "()F",
         "scrollPosition",
         "Landroidx/compose/foundation/lazy/LazyListScrollPosition;",
-        "",
         "scrollToBeConsumed",
         "getScrollToBeConsumed$foundation_release",
-        "()F",
         "scrollableState",
         "wasScrollingForward",
         "animateScrollToItem",
@@ -131,7 +152,8 @@
         "(IILkotlin/coroutines/Continuation;)Ljava/lang/Object;",
         "applyMeasureResult",
         "result",
-        "Landroidx/compose/foundation/lazy/LazyListMeasureResult;",
+        "isLookingAhead",
+        "visibleItemsStayedTheSame",
         "applyMeasureResult$foundation_release",
         "cancelPrefetchIfVisibleItemsChanged",
         "info",
@@ -154,6 +176,7 @@
         "scrollToItem",
         "snapToItemIndexInternal",
         "snapToItemIndexInternal$foundation_release",
+        "updateScrollDeltaForPostLookahead",
         "updateScrollPositionIfTheFirstItemWasMoved",
         "itemProvider",
         "Landroidx/compose/foundation/lazy/LazyListItemProvider;",
@@ -189,6 +212,17 @@
 
 
 # instance fields
+.field private _scrollDeltaBetweenPasses:Landroidx/compose/animation/core/AnimationState;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Landroidx/compose/animation/core/AnimationState<",
+            "Ljava/lang/Float;",
+            "Landroidx/compose/animation/core/AnimationVector1D;",
+            ">;"
+        }
+    .end annotation
+.end field
+
 .field private final animateScrollScope:Landroidx/compose/foundation/lazy/LazyListAnimateScrollScope;
 
 .field private final awaitLayoutModifier:Landroidx/compose/foundation/lazy/layout/AwaitFirstLayoutModifier;
@@ -199,19 +233,25 @@
 
 .field private final canScrollForward$delegate:Landroidx/compose/runtime/MutableState;
 
+.field private coroutineScope:Lkotlinx/coroutines/CoroutineScope;
+
 .field private currentPrefetchHandle:Landroidx/compose/foundation/lazy/layout/LazyLayoutPrefetchState$PrefetchHandle;
 
 .field private density:Landroidx/compose/ui/unit/Density;
+
+.field private hasLookaheadPassOccurred:Z
 
 .field private indexToPrefetch:I
 
 .field private final internalInteractionSource:Landroidx/compose/foundation/interaction/MutableInteractionSource;
 
+.field private final itemAnimator:Landroidx/compose/foundation/lazy/LazyListItemAnimator;
+
 .field private final layoutInfoState:Landroidx/compose/runtime/MutableState;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Landroidx/compose/runtime/MutableState<",
-            "Landroidx/compose/foundation/lazy/LazyListLayoutInfo;",
+            "Landroidx/compose/foundation/lazy/LazyListMeasureResult;",
             ">;"
         }
     .end annotation
@@ -221,7 +261,17 @@
 
 .field private final pinnedItems:Landroidx/compose/foundation/lazy/layout/LazyLayoutPinnedItemList;
 
-.field private final placementAnimator:Landroidx/compose/foundation/lazy/LazyListItemPlacementAnimator;
+.field private final placementScopeInvalidator:Landroidx/compose/runtime/MutableState;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Landroidx/compose/runtime/MutableState<",
+            "Lkotlin/Unit;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field private postLookaheadLayoutInfo:Landroidx/compose/foundation/lazy/LazyListMeasureResult;
 
 .field private final prefetchState:Landroidx/compose/foundation/lazy/layout/LazyLayoutPrefetchState;
 
@@ -254,7 +304,7 @@
 
     sput-object v0, Landroidx/compose/foundation/lazy/LazyListState;->Companion:Landroidx/compose/foundation/lazy/LazyListState$Companion;
 
-    .line 416
+    .line 528
     sget-object v0, Landroidx/compose/foundation/lazy/LazyListState$Companion$Saver$1;->INSTANCE:Landroidx/compose/foundation/lazy/LazyListState$Companion$Saver$1;
 
     check-cast v0, Lkotlin/jvm/functions/Function2;
@@ -287,39 +337,43 @@
 .end method
 
 .method public constructor <init>(II)V
-    .locals 8
+    .locals 10
 
-    .line 79
+    .line 96
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 89
+    .line 112
     new-instance v0, Landroidx/compose/foundation/lazy/LazyListScrollPosition;
 
     invoke-direct {v0, p1, p2}, Landroidx/compose/foundation/lazy/LazyListScrollPosition;-><init>(II)V
 
     iput-object v0, p0, Landroidx/compose/foundation/lazy/LazyListState;->scrollPosition:Landroidx/compose/foundation/lazy/LazyListScrollPosition;
 
-    .line 91
+    .line 114
     new-instance p1, Landroidx/compose/foundation/lazy/LazyListAnimateScrollScope;
 
     invoke-direct {p1, p0}, Landroidx/compose/foundation/lazy/LazyListAnimateScrollScope;-><init>(Landroidx/compose/foundation/lazy/LazyListState;)V
 
     iput-object p1, p0, Landroidx/compose/foundation/lazy/LazyListState;->animateScrollScope:Landroidx/compose/foundation/lazy/LazyListAnimateScrollScope;
 
-    .line 120
-    sget-object p1, Landroidx/compose/foundation/lazy/EmptyLazyListLayoutInfo;->INSTANCE:Landroidx/compose/foundation/lazy/EmptyLazyListLayoutInfo;
+    .line 144
+    invoke-static {}, Landroidx/compose/foundation/lazy/LazyListStateKt;->access$getEmptyLazyListMeasureResult$p()Landroidx/compose/foundation/lazy/LazyListMeasureResult;
 
-    const/4 p2, 0x0
+    move-result-object p1
 
-    const/4 v1, 0x2
+    .line 145
+    invoke-static {}, Landroidx/compose/runtime/SnapshotStateKt;->neverEqualPolicy()Landroidx/compose/runtime/SnapshotMutationPolicy;
 
-    invoke-static {p1, p2, v1, p2}, Landroidx/compose/runtime/SnapshotStateKt;->mutableStateOf$default(Ljava/lang/Object;Landroidx/compose/runtime/SnapshotMutationPolicy;ILjava/lang/Object;)Landroidx/compose/runtime/MutableState;
+    move-result-object p2
+
+    .line 143
+    invoke-static {p1, p2}, Landroidx/compose/runtime/SnapshotStateKt;->mutableStateOf(Ljava/lang/Object;Landroidx/compose/runtime/SnapshotMutationPolicy;)Landroidx/compose/runtime/MutableState;
 
     move-result-object p1
 
     iput-object p1, p0, Landroidx/compose/foundation/lazy/LazyListState;->layoutInfoState:Landroidx/compose/runtime/MutableState;
 
-    .line 144
+    .line 169
     invoke-static {}, Landroidx/compose/foundation/interaction/InteractionSourceKt;->MutableInteractionSource()Landroidx/compose/foundation/interaction/MutableInteractionSource;
 
     move-result-object p1
@@ -328,14 +382,14 @@
 
     const/high16 p1, 0x3f800000    # 1.0f
 
-    .line 156
+    .line 181
     invoke-static {p1, p1}, Landroidx/compose/ui/unit/DensityKt;->Density(FF)Landroidx/compose/ui/unit/Density;
 
     move-result-object p1
 
     iput-object p1, p0, Landroidx/compose/foundation/lazy/LazyListState;->density:Landroidx/compose/ui/unit/Density;
 
-    .line 162
+    .line 187
     new-instance p1, Landroidx/compose/foundation/lazy/LazyListState$scrollableState$1;
 
     invoke-direct {p1, p0}, Landroidx/compose/foundation/lazy/LazyListState$scrollableState$1;-><init>(Landroidx/compose/foundation/lazy/LazyListState;)V
@@ -350,47 +404,49 @@
 
     const/4 p1, 0x1
 
-    .line 175
+    .line 200
     iput-boolean p1, p0, Landroidx/compose/foundation/lazy/LazyListState;->prefetchingEnabled:Z
 
-    const/4 p1, -0x1
+    const/4 p2, -0x1
 
-    .line 180
-    iput p1, p0, Landroidx/compose/foundation/lazy/LazyListState;->indexToPrefetch:I
+    .line 205
+    iput p2, p0, Landroidx/compose/foundation/lazy/LazyListState;->indexToPrefetch:I
 
-    .line 203
-    new-instance p1, Landroidx/compose/foundation/lazy/LazyListState$remeasurementModifier$1;
+    .line 228
+    new-instance p2, Landroidx/compose/foundation/lazy/LazyListState$remeasurementModifier$1;
 
-    invoke-direct {p1, p0}, Landroidx/compose/foundation/lazy/LazyListState$remeasurementModifier$1;-><init>(Landroidx/compose/foundation/lazy/LazyListState;)V
+    invoke-direct {p2, p0}, Landroidx/compose/foundation/lazy/LazyListState$remeasurementModifier$1;-><init>(Landroidx/compose/foundation/lazy/LazyListState;)V
 
-    check-cast p1, Landroidx/compose/ui/layout/RemeasurementModifier;
+    check-cast p2, Landroidx/compose/ui/layout/RemeasurementModifier;
 
-    iput-object p1, p0, Landroidx/compose/foundation/lazy/LazyListState;->remeasurementModifier:Landroidx/compose/ui/layout/RemeasurementModifier;
+    iput-object p2, p0, Landroidx/compose/foundation/lazy/LazyListState;->remeasurementModifier:Landroidx/compose/ui/layout/RemeasurementModifier;
 
-    .line 213
-    new-instance p1, Landroidx/compose/foundation/lazy/layout/AwaitFirstLayoutModifier;
+    .line 238
+    new-instance p2, Landroidx/compose/foundation/lazy/layout/AwaitFirstLayoutModifier;
 
-    invoke-direct {p1}, Landroidx/compose/foundation/lazy/layout/AwaitFirstLayoutModifier;-><init>()V
+    invoke-direct {p2}, Landroidx/compose/foundation/lazy/layout/AwaitFirstLayoutModifier;-><init>()V
 
-    iput-object p1, p0, Landroidx/compose/foundation/lazy/LazyListState;->awaitLayoutModifier:Landroidx/compose/foundation/lazy/layout/AwaitFirstLayoutModifier;
+    iput-object p2, p0, Landroidx/compose/foundation/lazy/LazyListState;->awaitLayoutModifier:Landroidx/compose/foundation/lazy/layout/AwaitFirstLayoutModifier;
 
-    .line 215
-    new-instance p1, Landroidx/compose/foundation/lazy/LazyListItemPlacementAnimator;
+    .line 240
+    new-instance p2, Landroidx/compose/foundation/lazy/LazyListItemAnimator;
 
-    invoke-direct {p1}, Landroidx/compose/foundation/lazy/LazyListItemPlacementAnimator;-><init>()V
+    invoke-direct {p2}, Landroidx/compose/foundation/lazy/LazyListItemAnimator;-><init>()V
 
-    iput-object p1, p0, Landroidx/compose/foundation/lazy/LazyListState;->placementAnimator:Landroidx/compose/foundation/lazy/LazyListItemPlacementAnimator;
+    iput-object p2, p0, Landroidx/compose/foundation/lazy/LazyListState;->itemAnimator:Landroidx/compose/foundation/lazy/LazyListItemAnimator;
 
-    .line 217
-    new-instance p1, Landroidx/compose/foundation/lazy/layout/LazyLayoutBeyondBoundsInfo;
+    .line 242
+    new-instance p2, Landroidx/compose/foundation/lazy/layout/LazyLayoutBeyondBoundsInfo;
 
-    invoke-direct {p1}, Landroidx/compose/foundation/lazy/layout/LazyLayoutBeyondBoundsInfo;-><init>()V
+    invoke-direct {p2}, Landroidx/compose/foundation/lazy/layout/LazyLayoutBeyondBoundsInfo;-><init>()V
 
-    iput-object p1, p0, Landroidx/compose/foundation/lazy/LazyListState;->beyondBoundsInfo:Landroidx/compose/foundation/lazy/layout/LazyLayoutBeyondBoundsInfo;
+    iput-object p2, p0, Landroidx/compose/foundation/lazy/LazyListState;->beyondBoundsInfo:Landroidx/compose/foundation/lazy/layout/LazyLayoutBeyondBoundsInfo;
 
-    const/16 v6, 0xf
+    const/16 v5, 0xf
 
-    const/4 v7, 0x0
+    const/4 v6, 0x0
+
+    const/4 v1, 0x0
 
     const/4 v2, 0x0
 
@@ -398,51 +454,91 @@
 
     const/4 v4, 0x0
 
-    const/4 v5, 0x0
+    .line 247
+    invoke-static/range {v1 .. v6}, Landroidx/compose/ui/unit/ConstraintsKt;->Constraints$default(IIIIILjava/lang/Object;)J
 
-    .line 222
-    invoke-static/range {v2 .. v7}, Landroidx/compose/ui/unit/ConstraintsKt;->Constraints$default(IIIIILjava/lang/Object;)J
+    move-result-wide v1
 
-    move-result-wide v2
+    iput-wide v1, p0, Landroidx/compose/foundation/lazy/LazyListState;->premeasureConstraints:J
 
-    iput-wide v2, p0, Landroidx/compose/foundation/lazy/LazyListState;->premeasureConstraints:J
+    .line 252
+    new-instance p2, Landroidx/compose/foundation/lazy/layout/LazyLayoutPinnedItemList;
 
-    .line 227
-    new-instance p1, Landroidx/compose/foundation/lazy/layout/LazyLayoutPinnedItemList;
+    invoke-direct {p2}, Landroidx/compose/foundation/lazy/layout/LazyLayoutPinnedItemList;-><init>()V
 
-    invoke-direct {p1}, Landroidx/compose/foundation/lazy/layout/LazyLayoutPinnedItemList;-><init>()V
+    iput-object p2, p0, Landroidx/compose/foundation/lazy/LazyListState;->pinnedItems:Landroidx/compose/foundation/lazy/layout/LazyLayoutPinnedItemList;
 
-    iput-object p1, p0, Landroidx/compose/foundation/lazy/LazyListState;->pinnedItems:Landroidx/compose/foundation/lazy/layout/LazyLayoutPinnedItemList;
-
-    .line 229
+    .line 254
     invoke-virtual {v0}, Landroidx/compose/foundation/lazy/LazyListScrollPosition;->getNearestRangeState()Landroidx/compose/foundation/lazy/layout/LazyLayoutNearestRangeState;
 
-    const/4 p1, 0x0
+    const/4 p2, 0x0
 
-    .line 279
-    invoke-static {p1}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
+    .line 304
+    invoke-static {p2}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
+
+    move-result-object p2
+
+    const/4 v0, 0x0
+
+    const/4 v1, 0x2
+
+    invoke-static {p2, v0, v1, v0}, Landroidx/compose/runtime/SnapshotStateKt;->mutableStateOf$default(Ljava/lang/Object;Landroidx/compose/runtime/SnapshotMutationPolicy;ILjava/lang/Object;)Landroidx/compose/runtime/MutableState;
+
+    move-result-object v2
+
+    iput-object v2, p0, Landroidx/compose/foundation/lazy/LazyListState;->canScrollForward$delegate:Landroidx/compose/runtime/MutableState;
+
+    .line 306
+    invoke-static {p2, v0, v1, v0}, Landroidx/compose/runtime/SnapshotStateKt;->mutableStateOf$default(Ljava/lang/Object;Landroidx/compose/runtime/SnapshotMutationPolicy;ILjava/lang/Object;)Landroidx/compose/runtime/MutableState;
+
+    move-result-object p2
+
+    iput-object p2, p0, Landroidx/compose/foundation/lazy/LazyListState;->canScrollBackward$delegate:Landroidx/compose/runtime/MutableState;
+
+    .line 309
+    invoke-static {v0, p1, v0}, Landroidx/compose/foundation/lazy/layout/ObservableScopeInvalidator;->constructor-impl$default(Landroidx/compose/runtime/MutableState;ILkotlin/jvm/internal/DefaultConstructorMarker;)Landroidx/compose/runtime/MutableState;
 
     move-result-object p1
 
-    invoke-static {p1, p2, v1, p2}, Landroidx/compose/runtime/SnapshotStateKt;->mutableStateOf$default(Ljava/lang/Object;Landroidx/compose/runtime/SnapshotMutationPolicy;ILjava/lang/Object;)Landroidx/compose/runtime/MutableState;
+    iput-object p1, p0, Landroidx/compose/foundation/lazy/LazyListState;->placementScopeInvalidator:Landroidx/compose/runtime/MutableState;
 
-    move-result-object v0
-
-    iput-object v0, p0, Landroidx/compose/foundation/lazy/LazyListState;->canScrollForward$delegate:Landroidx/compose/runtime/MutableState;
-
-    .line 281
-    invoke-static {p1, p2, v1, p2}, Landroidx/compose/runtime/SnapshotStateKt;->mutableStateOf$default(Ljava/lang/Object;Landroidx/compose/runtime/SnapshotMutationPolicy;ILjava/lang/Object;)Landroidx/compose/runtime/MutableState;
-
-    move-result-object p1
-
-    iput-object p1, p0, Landroidx/compose/foundation/lazy/LazyListState;->canScrollBackward$delegate:Landroidx/compose/runtime/MutableState;
-
-    .line 367
+    .line 418
     new-instance p1, Landroidx/compose/foundation/lazy/layout/LazyLayoutPrefetchState;
 
     invoke-direct {p1}, Landroidx/compose/foundation/lazy/layout/LazyLayoutPrefetchState;-><init>()V
 
     iput-object p1, p0, Landroidx/compose/foundation/lazy/LazyListState;->prefetchState:Landroidx/compose/foundation/lazy/layout/LazyLayoutPrefetchState;
+
+    .line 478
+    sget-object p1, Lkotlin/jvm/internal/FloatCompanionObject;->INSTANCE:Lkotlin/jvm/internal/FloatCompanionObject;
+
+    invoke-static {p1}, Landroidx/compose/animation/core/VectorConvertersKt;->getVectorConverter(Lkotlin/jvm/internal/FloatCompanionObject;)Landroidx/compose/animation/core/TwoWayConverter;
+
+    move-result-object v0
+
+    const/4 p1, 0x0
+
+    invoke-static {p1}, Ljava/lang/Float;->valueOf(F)Ljava/lang/Float;
+
+    move-result-object v2
+
+    const/16 v8, 0x38
+
+    const/4 v9, 0x0
+
+    const-wide/16 v3, 0x0
+
+    const-wide/16 v5, 0x0
+
+    const/4 v7, 0x0
+
+    move-object v1, v2
+
+    invoke-static/range {v0 .. v9}, Landroidx/compose/animation/core/AnimationStateKt;->AnimationState$default(Landroidx/compose/animation/core/TwoWayConverter;Ljava/lang/Object;Ljava/lang/Object;JJZILjava/lang/Object;)Landroidx/compose/animation/core/AnimationState;
+
+    move-result-object p1
+
+    iput-object p1, p0, Landroidx/compose/foundation/lazy/LazyListState;->_scrollDeltaBetweenPasses:Landroidx/compose/animation/core/AnimationState;
 
     return-void
 .end method
@@ -465,7 +561,7 @@
 
     move p2, v0
 
-    .line 81
+    .line 98
     :cond_1
     invoke-direct {p0, p1, p2}, Landroidx/compose/foundation/lazy/LazyListState;-><init>(II)V
 
@@ -475,16 +571,25 @@
 .method public static final synthetic access$getSaver$cp()Landroidx/compose/runtime/saveable/Saver;
     .locals 1
 
-    .line 79
+    .line 96
     sget-object v0, Landroidx/compose/foundation/lazy/LazyListState;->Saver:Landroidx/compose/runtime/saveable/Saver;
 
     return-object v0
 .end method
 
+.method public static final synthetic access$get_scrollDeltaBetweenPasses$p(Landroidx/compose/foundation/lazy/LazyListState;)Landroidx/compose/animation/core/AnimationState;
+    .locals 0
+
+    .line 96
+    iget-object p0, p0, Landroidx/compose/foundation/lazy/LazyListState;->_scrollDeltaBetweenPasses:Landroidx/compose/animation/core/AnimationState;
+
+    return-object p0
+.end method
+
 .method public static final synthetic access$setRemeasurement$p(Landroidx/compose/foundation/lazy/LazyListState;Landroidx/compose/ui/layout/Remeasurement;)V
     .locals 0
 
-    .line 79
+    .line 96
     iput-object p1, p0, Landroidx/compose/foundation/lazy/LazyListState;->remeasurement:Landroidx/compose/ui/layout/Remeasurement;
 
     return-void
@@ -499,7 +604,7 @@
 
     const/4 p2, 0x0
 
-    .line 377
+    .line 428
     :cond_0
     invoke-virtual {p0, p1, p2, p3}, Landroidx/compose/foundation/lazy/LazyListState;->animateScrollToItem(IILkotlin/coroutines/Continuation;)Ljava/lang/Object;
 
@@ -508,10 +613,26 @@
     return-object p0
 .end method
 
+.method public static synthetic applyMeasureResult$foundation_release$default(Landroidx/compose/foundation/lazy/LazyListState;Landroidx/compose/foundation/lazy/LazyListMeasureResult;ZZILjava/lang/Object;)V
+    .locals 0
+
+    and-int/lit8 p4, p4, 0x4
+
+    if-eqz p4, :cond_0
+
+    const/4 p3, 0x0
+
+    .line 444
+    :cond_0
+    invoke-virtual {p0, p1, p2, p3}, Landroidx/compose/foundation/lazy/LazyListState;->applyMeasureResult$foundation_release(Landroidx/compose/foundation/lazy/LazyListMeasureResult;ZZ)V
+
+    return-void
+.end method
+
 .method private final cancelPrefetchIfVisibleItemsChanged(Landroidx/compose/foundation/lazy/LazyListLayoutInfo;)V
     .locals 2
 
-    .line 353
+    .line 404
     iget v0, p0, Landroidx/compose/foundation/lazy/LazyListState;->indexToPrefetch:I
 
     const/4 v1, -0x1
@@ -532,12 +653,12 @@
 
     if-eqz v0, :cond_2
 
-    .line 354
+    .line 405
     iget-boolean v0, p0, Landroidx/compose/foundation/lazy/LazyListState;->wasScrollingForward:Z
 
     if-eqz v0, :cond_0
 
-    .line 355
+    .line 406
     invoke-interface {p1}, Landroidx/compose/foundation/lazy/LazyListLayoutInfo;->getVisibleItemsInfo()Ljava/util/List;
 
     move-result-object p1
@@ -556,7 +677,7 @@
 
     goto :goto_0
 
-    .line 357
+    .line 408
     :cond_0
     invoke-interface {p1}, Landroidx/compose/foundation/lazy/LazyListLayoutInfo;->getVisibleItemsInfo()Ljava/util/List;
 
@@ -574,16 +695,16 @@
 
     add-int/lit8 p1, p1, -0x1
 
-    .line 359
+    .line 410
     :goto_0
     iget v0, p0, Landroidx/compose/foundation/lazy/LazyListState;->indexToPrefetch:I
 
     if-eq v0, p1, :cond_2
 
-    .line 360
+    .line 411
     iput v1, p0, Landroidx/compose/foundation/lazy/LazyListState;->indexToPrefetch:I
 
-    .line 361
+    .line 412
     iget-object p1, p0, Landroidx/compose/foundation/lazy/LazyListState;->currentPrefetchHandle:Landroidx/compose/foundation/lazy/layout/LazyLayoutPrefetchState$PrefetchHandle;
 
     if-eqz p1, :cond_1
@@ -593,7 +714,7 @@
     :cond_1
     const/4 p1, 0x0
 
-    .line 362
+    .line 413
     iput-object p1, p0, Landroidx/compose/foundation/lazy/LazyListState;->currentPrefetchHandle:Landroidx/compose/foundation/lazy/layout/LazyLayoutPrefetchState$PrefetchHandle;
 
     :cond_2
@@ -603,7 +724,7 @@
 .method private static getNearestRange$foundation_release$delegate(Landroidx/compose/foundation/lazy/LazyListState;)Ljava/lang/Object;
     .locals 0
 
-    .line 229
+    .line 254
     iget-object p0, p0, Landroidx/compose/foundation/lazy/LazyListState;->scrollPosition:Landroidx/compose/foundation/lazy/LazyListScrollPosition;
 
     invoke-virtual {p0}, Landroidx/compose/foundation/lazy/LazyListScrollPosition;->getNearestRangeState()Landroidx/compose/foundation/lazy/layout/LazyLayoutNearestRangeState;
@@ -613,46 +734,41 @@
     return-object p0
 .end method
 
-.method private final notifyPrefetch(F)V
-    .locals 4
+.method private final notifyPrefetch(FLandroidx/compose/foundation/lazy/LazyListLayoutInfo;)V
+    .locals 3
 
-    .line 322
+    .line 373
     iget-boolean v0, p0, Landroidx/compose/foundation/lazy/LazyListState;->prefetchingEnabled:Z
 
     if-nez v0, :cond_0
 
     return-void
 
-    .line 325
+    .line 377
     :cond_0
-    invoke-virtual {p0}, Landroidx/compose/foundation/lazy/LazyListState;->getLayoutInfo()Landroidx/compose/foundation/lazy/LazyListLayoutInfo;
+    invoke-interface {p2}, Landroidx/compose/foundation/lazy/LazyListLayoutInfo;->getVisibleItemsInfo()Ljava/util/List;
 
     move-result-object v0
 
-    .line 326
-    invoke-interface {v0}, Landroidx/compose/foundation/lazy/LazyListLayoutInfo;->getVisibleItemsInfo()Ljava/util/List;
+    check-cast v0, Ljava/util/Collection;
 
-    move-result-object v1
+    invoke-interface {v0}, Ljava/util/Collection;->isEmpty()Z
 
-    check-cast v1, Ljava/util/Collection;
+    move-result v0
 
-    invoke-interface {v1}, Ljava/util/Collection;->isEmpty()Z
+    const/4 v1, 0x1
 
-    move-result v1
+    xor-int/2addr v0, v1
 
-    const/4 v2, 0x1
+    if-eqz v0, :cond_4
 
-    xor-int/2addr v1, v2
+    const/4 v0, 0x0
 
-    if-eqz v1, :cond_4
-
-    const/4 v1, 0x0
-
-    cmpg-float p1, p1, v1
+    cmpg-float p1, p1, v0
 
     if-gez p1, :cond_1
 
-    move p1, v2
+    move p1, v1
 
     goto :goto_0
 
@@ -662,91 +778,109 @@
     :goto_0
     if-eqz p1, :cond_2
 
-    .line 329
-    invoke-interface {v0}, Landroidx/compose/foundation/lazy/LazyListLayoutInfo;->getVisibleItemsInfo()Ljava/util/List;
+    .line 380
+    invoke-interface {p2}, Landroidx/compose/foundation/lazy/LazyListLayoutInfo;->getVisibleItemsInfo()Ljava/util/List;
 
-    move-result-object v1
+    move-result-object v0
 
-    invoke-static {v1}, Lkotlin/collections/CollectionsKt;->last(Ljava/util/List;)Ljava/lang/Object;
+    invoke-static {v0}, Lkotlin/collections/CollectionsKt;->last(Ljava/util/List;)Ljava/lang/Object;
 
-    move-result-object v1
+    move-result-object v0
 
-    check-cast v1, Landroidx/compose/foundation/lazy/LazyListItemInfo;
+    check-cast v0, Landroidx/compose/foundation/lazy/LazyListItemInfo;
 
-    invoke-interface {v1}, Landroidx/compose/foundation/lazy/LazyListItemInfo;->getIndex()I
-
-    move-result v1
-
-    add-int/2addr v1, v2
-
-    goto :goto_1
-
-    .line 331
-    :cond_2
-    invoke-interface {v0}, Landroidx/compose/foundation/lazy/LazyListLayoutInfo;->getVisibleItemsInfo()Ljava/util/List;
-
-    move-result-object v1
-
-    invoke-static {v1}, Lkotlin/collections/CollectionsKt;->first(Ljava/util/List;)Ljava/lang/Object;
-
-    move-result-object v1
-
-    check-cast v1, Landroidx/compose/foundation/lazy/LazyListItemInfo;
-
-    invoke-interface {v1}, Landroidx/compose/foundation/lazy/LazyListItemInfo;->getIndex()I
-
-    move-result v1
-
-    sub-int/2addr v1, v2
-
-    .line 333
-    :goto_1
-    iget v2, p0, Landroidx/compose/foundation/lazy/LazyListState;->indexToPrefetch:I
-
-    if-eq v1, v2, :cond_4
-
-    if-ltz v1, :cond_4
-
-    .line 334
-    invoke-interface {v0}, Landroidx/compose/foundation/lazy/LazyListLayoutInfo;->getTotalItemsCount()I
+    invoke-interface {v0}, Landroidx/compose/foundation/lazy/LazyListItemInfo;->getIndex()I
 
     move-result v0
 
-    if-ge v1, v0, :cond_4
+    add-int/2addr v0, v1
 
-    .line 336
-    iget-boolean v0, p0, Landroidx/compose/foundation/lazy/LazyListState;->wasScrollingForward:Z
+    goto :goto_1
 
-    if-eq v0, p1, :cond_3
+    .line 382
+    :cond_2
+    invoke-interface {p2}, Landroidx/compose/foundation/lazy/LazyListLayoutInfo;->getVisibleItemsInfo()Ljava/util/List;
 
-    .line 341
-    iget-object v0, p0, Landroidx/compose/foundation/lazy/LazyListState;->currentPrefetchHandle:Landroidx/compose/foundation/lazy/layout/LazyLayoutPrefetchState$PrefetchHandle;
+    move-result-object v0
 
-    if-eqz v0, :cond_3
+    invoke-static {v0}, Lkotlin/collections/CollectionsKt;->first(Ljava/util/List;)Ljava/lang/Object;
 
-    invoke-interface {v0}, Landroidx/compose/foundation/lazy/layout/LazyLayoutPrefetchState$PrefetchHandle;->cancel()V
+    move-result-object v0
 
-    .line 343
+    check-cast v0, Landroidx/compose/foundation/lazy/LazyListItemInfo;
+
+    invoke-interface {v0}, Landroidx/compose/foundation/lazy/LazyListItemInfo;->getIndex()I
+
+    move-result v0
+
+    sub-int/2addr v0, v1
+
+    .line 384
+    :goto_1
+    iget v1, p0, Landroidx/compose/foundation/lazy/LazyListState;->indexToPrefetch:I
+
+    if-eq v0, v1, :cond_4
+
+    if-ltz v0, :cond_4
+
+    .line 385
+    invoke-interface {p2}, Landroidx/compose/foundation/lazy/LazyListLayoutInfo;->getTotalItemsCount()I
+
+    move-result p2
+
+    if-ge v0, p2, :cond_4
+
+    .line 387
+    iget-boolean p2, p0, Landroidx/compose/foundation/lazy/LazyListState;->wasScrollingForward:Z
+
+    if-eq p2, p1, :cond_3
+
+    .line 392
+    iget-object p2, p0, Landroidx/compose/foundation/lazy/LazyListState;->currentPrefetchHandle:Landroidx/compose/foundation/lazy/layout/LazyLayoutPrefetchState$PrefetchHandle;
+
+    if-eqz p2, :cond_3
+
+    invoke-interface {p2}, Landroidx/compose/foundation/lazy/layout/LazyLayoutPrefetchState$PrefetchHandle;->cancel()V
+
+    .line 394
     :cond_3
     iput-boolean p1, p0, Landroidx/compose/foundation/lazy/LazyListState;->wasScrollingForward:Z
 
-    .line 344
-    iput v1, p0, Landroidx/compose/foundation/lazy/LazyListState;->indexToPrefetch:I
+    .line 395
+    iput v0, p0, Landroidx/compose/foundation/lazy/LazyListState;->indexToPrefetch:I
 
-    .line 345
+    .line 396
     iget-object p1, p0, Landroidx/compose/foundation/lazy/LazyListState;->prefetchState:Landroidx/compose/foundation/lazy/layout/LazyLayoutPrefetchState;
 
-    .line 346
-    iget-wide v2, p0, Landroidx/compose/foundation/lazy/LazyListState;->premeasureConstraints:J
+    .line 397
+    iget-wide v1, p0, Landroidx/compose/foundation/lazy/LazyListState;->premeasureConstraints:J
 
-    .line 345
-    invoke-virtual {p1, v1, v2, v3}, Landroidx/compose/foundation/lazy/layout/LazyLayoutPrefetchState;->schedulePrefetch-0kLqBqw(IJ)Landroidx/compose/foundation/lazy/layout/LazyLayoutPrefetchState$PrefetchHandle;
+    .line 396
+    invoke-virtual {p1, v0, v1, v2}, Landroidx/compose/foundation/lazy/layout/LazyLayoutPrefetchState;->schedulePrefetch-0kLqBqw(IJ)Landroidx/compose/foundation/lazy/layout/LazyLayoutPrefetchState$PrefetchHandle;
 
     move-result-object p1
 
     iput-object p1, p0, Landroidx/compose/foundation/lazy/LazyListState;->currentPrefetchHandle:Landroidx/compose/foundation/lazy/layout/LazyLayoutPrefetchState$PrefetchHandle;
 
     :cond_4
+    return-void
+.end method
+
+.method static synthetic notifyPrefetch$default(Landroidx/compose/foundation/lazy/LazyListState;FLandroidx/compose/foundation/lazy/LazyListLayoutInfo;ILjava/lang/Object;)V
+    .locals 0
+
+    and-int/lit8 p3, p3, 0x2
+
+    if-eqz p3, :cond_0
+
+    .line 372
+    invoke-virtual {p0}, Landroidx/compose/foundation/lazy/LazyListState;->getLayoutInfo()Landroidx/compose/foundation/lazy/LazyListLayoutInfo;
+
+    move-result-object p2
+
+    :cond_0
+    invoke-direct {p0, p1, p2}, Landroidx/compose/foundation/lazy/LazyListState;->notifyPrefetch(FLandroidx/compose/foundation/lazy/LazyListLayoutInfo;)V
+
     return-void
 .end method
 
@@ -759,7 +893,7 @@
 
     const/4 p2, 0x0
 
-    .line 240
+    .line 265
     :cond_0
     invoke-virtual {p0, p1, p2, p3}, Landroidx/compose/foundation/lazy/LazyListState;->scrollToItem(IILkotlin/coroutines/Continuation;)Ljava/lang/Object;
 
@@ -771,14 +905,14 @@
 .method private setCanScrollBackward(Z)V
     .locals 0
 
-    .line 281
+    .line 306
     iget-object p0, p0, Landroidx/compose/foundation/lazy/LazyListState;->canScrollBackward$delegate:Landroidx/compose/runtime/MutableState;
 
     invoke-static {p1}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
     move-result-object p1
 
-    .line 445
+    .line 573
     invoke-interface {p0, p1}, Landroidx/compose/runtime/MutableState;->setValue(Ljava/lang/Object;)V
 
     return-void
@@ -787,98 +921,229 @@
 .method private setCanScrollForward(Z)V
     .locals 0
 
-    .line 279
+    .line 304
     iget-object p0, p0, Landroidx/compose/foundation/lazy/LazyListState;->canScrollForward$delegate:Landroidx/compose/runtime/MutableState;
 
     invoke-static {p1}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
     move-result-object p1
 
-    .line 442
+    .line 570
     invoke-interface {p0, p1}, Landroidx/compose/runtime/MutableState;->setValue(Ljava/lang/Object;)V
 
     return-void
 .end method
 
-.method public static synthetic updateScrollPositionIfTheFirstItemWasMoved$foundation_release$default(Landroidx/compose/foundation/lazy/LazyListState;Landroidx/compose/foundation/lazy/LazyListItemProvider;IILjava/lang/Object;)I
-    .locals 0
+.method private final updateScrollDeltaForPostLookahead(F)V
+    .locals 24
 
-    and-int/lit8 p3, p3, 0x2
+    move-object/from16 v0, p0
 
-    if-eqz p3, :cond_0
+    move/from16 v1, p1
 
-    .line 409
-    sget-object p2, Landroidx/compose/runtime/snapshots/Snapshot;->Companion:Landroidx/compose/runtime/snapshots/Snapshot$Companion;
+    .line 482
+    iget-object v2, v0, Landroidx/compose/foundation/lazy/LazyListState;->density:Landroidx/compose/ui/unit/Density;
 
-    .line 448
-    invoke-virtual {p2}, Landroidx/compose/runtime/snapshots/Snapshot$Companion;->createNonObservableSnapshot()Landroidx/compose/runtime/snapshots/Snapshot;
+    invoke-static {}, Landroidx/compose/foundation/lazy/LazyListStateKt;->access$getDeltaThresholdForScrollAnimation$p()F
 
-    move-result-object p2
+    move-result v3
 
-    .line 451
+    invoke-interface {v2, v3}, Landroidx/compose/ui/unit/Density;->toPx-0680j_4(F)F
+
+    move-result v2
+
+    cmpg-float v2, v1, v2
+
+    if-gtz v2, :cond_0
+
+    return-void
+
+    .line 489
+    :cond_0
+    sget-object v2, Landroidx/compose/runtime/snapshots/Snapshot;->Companion:Landroidx/compose/runtime/snapshots/Snapshot$Companion;
+
+    .line 577
+    invoke-virtual {v2}, Landroidx/compose/runtime/snapshots/Snapshot$Companion;->createNonObservableSnapshot()Landroidx/compose/runtime/snapshots/Snapshot;
+
+    move-result-object v2
+
+    .line 580
     :try_start_0
-    invoke-virtual {p2}, Landroidx/compose/runtime/snapshots/Snapshot;->makeCurrent()Landroidx/compose/runtime/snapshots/Snapshot;
+    invoke-virtual {v2}, Landroidx/compose/runtime/snapshots/Snapshot;->makeCurrent()Landroidx/compose/runtime/snapshots/Snapshot;
 
-    move-result-object p3
+    move-result-object v3
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_1
 
-    .line 409
+    .line 490
     :try_start_1
-    iget-object p4, p0, Landroidx/compose/foundation/lazy/LazyListState;->scrollPosition:Landroidx/compose/foundation/lazy/LazyListScrollPosition;
+    iget-object v4, v0, Landroidx/compose/foundation/lazy/LazyListState;->_scrollDeltaBetweenPasses:Landroidx/compose/animation/core/AnimationState;
 
-    invoke-virtual {p4}, Landroidx/compose/foundation/lazy/LazyListScrollPosition;->getIndex()I
+    invoke-virtual {v4}, Landroidx/compose/animation/core/AnimationState;->getValue()Ljava/lang/Object;
 
-    move-result p4
-    :try_end_1
-    .catchall {:try_start_1 .. :try_end_1} :catchall_0
+    move-result-object v4
 
-    .line 455
-    :try_start_2
-    invoke-virtual {p2, p3}, Landroidx/compose/runtime/snapshots/Snapshot;->restoreCurrent(Landroidx/compose/runtime/snapshots/Snapshot;)V
-    :try_end_2
-    .catchall {:try_start_2 .. :try_end_2} :catchall_1
+    check-cast v4, Ljava/lang/Number;
 
-    .line 456
-    invoke-virtual {p2}, Landroidx/compose/runtime/snapshots/Snapshot;->dispose()V
+    invoke-virtual {v4}, Ljava/lang/Number;->floatValue()F
 
-    move p2, p4
+    move-result v4
+
+    .line 492
+    iget-object v5, v0, Landroidx/compose/foundation/lazy/LazyListState;->_scrollDeltaBetweenPasses:Landroidx/compose/animation/core/AnimationState;
+
+    invoke-virtual {v5}, Landroidx/compose/animation/core/AnimationState;->isRunning()Z
+
+    move-result v5
+
+    const/4 v6, 0x0
+
+    if-eqz v5, :cond_1
+
+    .line 493
+    iget-object v7, v0, Landroidx/compose/foundation/lazy/LazyListState;->_scrollDeltaBetweenPasses:Landroidx/compose/animation/core/AnimationState;
+
+    sub-float v8, v4, v1
+
+    const/16 v15, 0x1e
+
+    const/16 v16, 0x0
+
+    const/4 v9, 0x0
+
+    const-wide/16 v10, 0x0
+
+    const-wide/16 v12, 0x0
+
+    const/4 v14, 0x0
+
+    invoke-static/range {v7 .. v16}, Landroidx/compose/animation/core/AnimationStateKt;->copy$default(Landroidx/compose/animation/core/AnimationState;FFJJZILjava/lang/Object;)Landroidx/compose/animation/core/AnimationState;
+
+    move-result-object v1
+
+    iput-object v1, v0, Landroidx/compose/foundation/lazy/LazyListState;->_scrollDeltaBetweenPasses:Landroidx/compose/animation/core/AnimationState;
+
+    .line 494
+    iget-object v7, v0, Landroidx/compose/foundation/lazy/LazyListState;->coroutineScope:Lkotlinx/coroutines/CoroutineScope;
+
+    if-eqz v7, :cond_2
+
+    new-instance v1, Landroidx/compose/foundation/lazy/LazyListState$updateScrollDeltaForPostLookahead$2$1;
+
+    invoke-direct {v1, v0, v6}, Landroidx/compose/foundation/lazy/LazyListState$updateScrollDeltaForPostLookahead$2$1;-><init>(Landroidx/compose/foundation/lazy/LazyListState;Lkotlin/coroutines/Continuation;)V
+
+    move-object v10, v1
+
+    check-cast v10, Lkotlin/jvm/functions/Function2;
+
+    const/4 v11, 0x3
+
+    const/4 v12, 0x0
+
+    const/4 v8, 0x0
+
+    const/4 v9, 0x0
+
+    invoke-static/range {v7 .. v12}, Lkotlinx/coroutines/BuildersKt;->launch$default(Lkotlinx/coroutines/CoroutineScope;Lkotlin/coroutines/CoroutineContext;Lkotlinx/coroutines/CoroutineStart;Lkotlin/jvm/functions/Function2;ILjava/lang/Object;)Lkotlinx/coroutines/Job;
 
     goto :goto_0
 
+    .line 502
+    :cond_1
+    new-instance v4, Landroidx/compose/animation/core/AnimationState;
+
+    sget-object v5, Lkotlin/jvm/internal/FloatCompanionObject;->INSTANCE:Lkotlin/jvm/internal/FloatCompanionObject;
+
+    invoke-static {v5}, Landroidx/compose/animation/core/VectorConvertersKt;->getVectorConverter(Lkotlin/jvm/internal/FloatCompanionObject;)Landroidx/compose/animation/core/TwoWayConverter;
+
+    move-result-object v14
+
+    neg-float v1, v1
+
+    invoke-static {v1}, Ljava/lang/Float;->valueOf(F)Ljava/lang/Float;
+
+    move-result-object v15
+
+    const/16 v22, 0x3c
+
+    const/16 v23, 0x0
+
+    const/16 v16, 0x0
+
+    const-wide/16 v17, 0x0
+
+    const-wide/16 v19, 0x0
+
+    const/16 v21, 0x0
+
+    move-object v13, v4
+
+    invoke-direct/range {v13 .. v23}, Landroidx/compose/animation/core/AnimationState;-><init>(Landroidx/compose/animation/core/TwoWayConverter;Ljava/lang/Object;Landroidx/compose/animation/core/AnimationVector;JJZILkotlin/jvm/internal/DefaultConstructorMarker;)V
+
+    iput-object v4, v0, Landroidx/compose/foundation/lazy/LazyListState;->_scrollDeltaBetweenPasses:Landroidx/compose/animation/core/AnimationState;
+
+    .line 503
+    iget-object v7, v0, Landroidx/compose/foundation/lazy/LazyListState;->coroutineScope:Lkotlinx/coroutines/CoroutineScope;
+
+    if-eqz v7, :cond_2
+
+    new-instance v1, Landroidx/compose/foundation/lazy/LazyListState$updateScrollDeltaForPostLookahead$2$2;
+
+    invoke-direct {v1, v0, v6}, Landroidx/compose/foundation/lazy/LazyListState$updateScrollDeltaForPostLookahead$2$2;-><init>(Landroidx/compose/foundation/lazy/LazyListState;Lkotlin/coroutines/Continuation;)V
+
+    move-object v10, v1
+
+    check-cast v10, Lkotlin/jvm/functions/Function2;
+
+    const/4 v11, 0x3
+
+    const/4 v12, 0x0
+
+    const/4 v8, 0x0
+
+    const/4 v9, 0x0
+
+    invoke-static/range {v7 .. v12}, Lkotlinx/coroutines/BuildersKt;->launch$default(Lkotlinx/coroutines/CoroutineScope;Lkotlin/coroutines/CoroutineContext;Lkotlinx/coroutines/CoroutineStart;Lkotlin/jvm/functions/Function2;ILjava/lang/Object;)Lkotlinx/coroutines/Job;
+    :try_end_1
+    .catchall {:try_start_1 .. :try_end_1} :catchall_0
+
+    .line 584
+    :cond_2
+    :goto_0
+    :try_start_2
+    invoke-virtual {v2, v3}, Landroidx/compose/runtime/snapshots/Snapshot;->restoreCurrent(Landroidx/compose/runtime/snapshots/Snapshot;)V
+    :try_end_2
+    .catchall {:try_start_2 .. :try_end_2} :catchall_1
+
+    .line 585
+    invoke-virtual {v2}, Landroidx/compose/runtime/snapshots/Snapshot;->dispose()V
+
+    return-void
+
     :catchall_0
-    move-exception p0
+    move-exception v0
 
-    .line 455
+    .line 584
     :try_start_3
-    invoke-virtual {p2, p3}, Landroidx/compose/runtime/snapshots/Snapshot;->restoreCurrent(Landroidx/compose/runtime/snapshots/Snapshot;)V
+    invoke-virtual {v2, v3}, Landroidx/compose/runtime/snapshots/Snapshot;->restoreCurrent(Landroidx/compose/runtime/snapshots/Snapshot;)V
 
-    throw p0
+    throw v0
     :try_end_3
     .catchall {:try_start_3 .. :try_end_3} :catchall_1
 
     :catchall_1
-    move-exception p0
+    move-exception v0
 
-    .line 456
-    invoke-virtual {p2}, Landroidx/compose/runtime/snapshots/Snapshot;->dispose()V
+    .line 585
+    invoke-virtual {v2}, Landroidx/compose/runtime/snapshots/Snapshot;->dispose()V
 
-    throw p0
-
-    .line 407
-    :cond_0
-    :goto_0
-    invoke-virtual {p0, p1, p2}, Landroidx/compose/foundation/lazy/LazyListState;->updateScrollPositionIfTheFirstItemWasMoved$foundation_release(Landroidx/compose/foundation/lazy/LazyListItemProvider;I)I
-
-    move-result p0
-
-    return p0
+    throw v0
 .end method
 
 
 # virtual methods
 .method public final animateScrollToItem(IILkotlin/coroutines/Continuation;)Ljava/lang/Object;
-    .locals 0
+    .locals 7
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(II",
@@ -890,12 +1155,26 @@
         }
     .end annotation
 
-    .line 382
-    iget-object p0, p0, Landroidx/compose/foundation/lazy/LazyListState;->animateScrollScope:Landroidx/compose/foundation/lazy/LazyListAnimateScrollScope;
+    .line 433
+    iget-object v0, p0, Landroidx/compose/foundation/lazy/LazyListState;->animateScrollScope:Landroidx/compose/foundation/lazy/LazyListAnimateScrollScope;
 
-    check-cast p0, Landroidx/compose/foundation/lazy/layout/LazyAnimateScrollScope;
+    move-object v1, v0
 
-    invoke-static {p0, p1, p2, p3}, Landroidx/compose/foundation/lazy/layout/LazyAnimateScrollKt;->animateScrollToItem(Landroidx/compose/foundation/lazy/layout/LazyAnimateScrollScope;IILkotlin/coroutines/Continuation;)Ljava/lang/Object;
+    check-cast v1, Landroidx/compose/foundation/lazy/layout/LazyLayoutAnimateScrollScope;
+
+    const/16 v4, 0x64
+
+    .line 437
+    iget-object v5, p0, Landroidx/compose/foundation/lazy/LazyListState;->density:Landroidx/compose/ui/unit/Density;
+
+    move v2, p1
+
+    move v3, p2
+
+    move-object v6, p3
+
+    .line 433
+    invoke-static/range {v1 .. v6}, Landroidx/compose/foundation/lazy/layout/LazyAnimateScrollKt;->animateScrollToItem(Landroidx/compose/foundation/lazy/layout/LazyLayoutAnimateScrollScope;IIILandroidx/compose/ui/unit/Density;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
 
     move-result-object p0
 
@@ -913,95 +1192,112 @@
     return-object p0
 .end method
 
-.method public final applyMeasureResult$foundation_release(Landroidx/compose/foundation/lazy/LazyListMeasureResult;)V
+.method public final applyMeasureResult$foundation_release(Landroidx/compose/foundation/lazy/LazyListMeasureResult;ZZ)V
     .locals 2
 
-    const-string v0, "result"
+    if-nez p2, :cond_0
 
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+    .line 449
+    iget-boolean v0, p0, Landroidx/compose/foundation/lazy/LazyListState;->hasLookaheadPassOccurred:Z
 
-    .line 389
-    iget-object v0, p0, Landroidx/compose/foundation/lazy/LazyListState;->scrollPosition:Landroidx/compose/foundation/lazy/LazyListScrollPosition;
+    if-eqz v0, :cond_0
 
-    invoke-virtual {v0, p1}, Landroidx/compose/foundation/lazy/LazyListScrollPosition;->updateFromMeasureResult(Landroidx/compose/foundation/lazy/LazyListMeasureResult;)V
+    .line 451
+    iput-object p1, p0, Landroidx/compose/foundation/lazy/LazyListState;->postLookaheadLayoutInfo:Landroidx/compose/foundation/lazy/LazyListMeasureResult;
 
-    .line 390
-    iget v0, p0, Landroidx/compose/foundation/lazy/LazyListState;->scrollToBeConsumed:F
+    goto :goto_1
+
+    :cond_0
+    const/4 v0, 0x1
+
+    if-eqz p2, :cond_1
+
+    .line 454
+    iput-boolean v0, p0, Landroidx/compose/foundation/lazy/LazyListState;->hasLookaheadPassOccurred:Z
+
+    :cond_1
+    if-eqz p3, :cond_2
+
+    .line 457
+    iget-object p3, p0, Landroidx/compose/foundation/lazy/LazyListState;->scrollPosition:Landroidx/compose/foundation/lazy/LazyListScrollPosition;
+
+    invoke-virtual {p1}, Landroidx/compose/foundation/lazy/LazyListMeasureResult;->getFirstVisibleItemScrollOffset()I
+
+    move-result v1
+
+    invoke-virtual {p3, v1}, Landroidx/compose/foundation/lazy/LazyListScrollPosition;->updateScrollOffset(I)V
+
+    goto :goto_0
+
+    .line 459
+    :cond_2
+    iget-object p3, p0, Landroidx/compose/foundation/lazy/LazyListState;->scrollPosition:Landroidx/compose/foundation/lazy/LazyListScrollPosition;
+
+    invoke-virtual {p3, p1}, Landroidx/compose/foundation/lazy/LazyListScrollPosition;->updateFromMeasureResult(Landroidx/compose/foundation/lazy/LazyListMeasureResult;)V
+
+    .line 460
+    move-object p3, p1
+
+    check-cast p3, Landroidx/compose/foundation/lazy/LazyListLayoutInfo;
+
+    invoke-direct {p0, p3}, Landroidx/compose/foundation/lazy/LazyListState;->cancelPrefetchIfVisibleItemsChanged(Landroidx/compose/foundation/lazy/LazyListLayoutInfo;)V
+
+    .line 462
+    :goto_0
+    invoke-virtual {p1}, Landroidx/compose/foundation/lazy/LazyListMeasureResult;->getCanScrollBackward()Z
+
+    move-result p3
+
+    invoke-direct {p0, p3}, Landroidx/compose/foundation/lazy/LazyListState;->setCanScrollBackward(Z)V
+
+    .line 463
+    invoke-virtual {p1}, Landroidx/compose/foundation/lazy/LazyListMeasureResult;->getCanScrollForward()Z
+
+    move-result p3
+
+    invoke-direct {p0, p3}, Landroidx/compose/foundation/lazy/LazyListState;->setCanScrollForward(Z)V
+
+    .line 464
+    iget p3, p0, Landroidx/compose/foundation/lazy/LazyListState;->scrollToBeConsumed:F
 
     invoke-virtual {p1}, Landroidx/compose/foundation/lazy/LazyListMeasureResult;->getConsumedScroll()F
 
     move-result v1
 
-    sub-float/2addr v0, v1
+    sub-float/2addr p3, v1
 
-    iput v0, p0, Landroidx/compose/foundation/lazy/LazyListState;->scrollToBeConsumed:F
+    iput p3, p0, Landroidx/compose/foundation/lazy/LazyListState;->scrollToBeConsumed:F
 
-    .line 391
-    iget-object v0, p0, Landroidx/compose/foundation/lazy/LazyListState;->layoutInfoState:Landroidx/compose/runtime/MutableState;
+    .line 465
+    iget-object p3, p0, Landroidx/compose/foundation/lazy/LazyListState;->layoutInfoState:Landroidx/compose/runtime/MutableState;
 
-    invoke-interface {v0, p1}, Landroidx/compose/runtime/MutableState;->setValue(Ljava/lang/Object;)V
+    invoke-interface {p3, p1}, Landroidx/compose/runtime/MutableState;->setValue(Ljava/lang/Object;)V
 
-    .line 393
-    invoke-virtual {p1}, Landroidx/compose/foundation/lazy/LazyListMeasureResult;->getCanScrollForward()Z
+    if-eqz p2, :cond_3
 
-    move-result v0
+    .line 467
+    invoke-virtual {p1}, Landroidx/compose/foundation/lazy/LazyListMeasureResult;->getScrollBackAmount()F
 
-    invoke-direct {p0, v0}, Landroidx/compose/foundation/lazy/LazyListState;->setCanScrollForward(Z)V
+    move-result p1
 
-    .line 394
-    invoke-virtual {p1}, Landroidx/compose/foundation/lazy/LazyListMeasureResult;->getFirstVisibleItem()Landroidx/compose/foundation/lazy/LazyListMeasuredItem;
+    invoke-direct {p0, p1}, Landroidx/compose/foundation/lazy/LazyListState;->updateScrollDeltaForPostLookahead(F)V
 
-    move-result-object v0
+    .line 468
+    :cond_3
+    iget p1, p0, Landroidx/compose/foundation/lazy/LazyListState;->numMeasurePasses:I
 
-    const/4 v1, 0x1
+    add-int/2addr p1, v0
 
-    if-eqz v0, :cond_0
+    iput p1, p0, Landroidx/compose/foundation/lazy/LazyListState;->numMeasurePasses:I
 
-    invoke-virtual {v0}, Landroidx/compose/foundation/lazy/LazyListMeasuredItem;->getIndex()I
-
-    move-result v0
-
-    if-nez v0, :cond_1
-
-    .line 395
-    :cond_0
-    invoke-virtual {p1}, Landroidx/compose/foundation/lazy/LazyListMeasureResult;->getFirstVisibleItemScrollOffset()I
-
-    move-result v0
-
-    if-eqz v0, :cond_2
-
-    :cond_1
-    move v0, v1
-
-    goto :goto_0
-
-    :cond_2
-    const/4 v0, 0x0
-
-    .line 394
-    :goto_0
-    invoke-direct {p0, v0}, Landroidx/compose/foundation/lazy/LazyListState;->setCanScrollBackward(Z)V
-
-    .line 397
-    iget v0, p0, Landroidx/compose/foundation/lazy/LazyListState;->numMeasurePasses:I
-
-    add-int/2addr v0, v1
-
-    iput v0, p0, Landroidx/compose/foundation/lazy/LazyListState;->numMeasurePasses:I
-
-    .line 399
-    check-cast p1, Landroidx/compose/foundation/lazy/LazyListLayoutInfo;
-
-    invoke-direct {p0, p1}, Landroidx/compose/foundation/lazy/LazyListState;->cancelPrefetchIfVisibleItemsChanged(Landroidx/compose/foundation/lazy/LazyListLayoutInfo;)V
-
+    :goto_1
     return-void
 .end method
 
 .method public dispatchRawDelta(F)F
     .locals 0
 
-    .line 274
+    .line 299
     iget-object p0, p0, Landroidx/compose/foundation/lazy/LazyListState;->scrollableState:Landroidx/compose/foundation/gestures/ScrollableState;
 
     invoke-interface {p0, p1}, Landroidx/compose/foundation/gestures/ScrollableState;->dispatchRawDelta(F)F
@@ -1014,7 +1310,7 @@
 .method public final getAwaitLayoutModifier$foundation_release()Landroidx/compose/foundation/lazy/layout/AwaitFirstLayoutModifier;
     .locals 0
 
-    .line 213
+    .line 238
     iget-object p0, p0, Landroidx/compose/foundation/lazy/LazyListState;->awaitLayoutModifier:Landroidx/compose/foundation/lazy/layout/AwaitFirstLayoutModifier;
 
     return-object p0
@@ -1023,7 +1319,7 @@
 .method public final getBeyondBoundsInfo$foundation_release()Landroidx/compose/foundation/lazy/layout/LazyLayoutBeyondBoundsInfo;
     .locals 0
 
-    .line 217
+    .line 242
     iget-object p0, p0, Landroidx/compose/foundation/lazy/LazyListState;->beyondBoundsInfo:Landroidx/compose/foundation/lazy/layout/LazyLayoutBeyondBoundsInfo;
 
     return-object p0
@@ -1032,12 +1328,12 @@
 .method public getCanScrollBackward()Z
     .locals 0
 
-    .line 281
+    .line 306
     iget-object p0, p0, Landroidx/compose/foundation/lazy/LazyListState;->canScrollBackward$delegate:Landroidx/compose/runtime/MutableState;
 
     check-cast p0, Landroidx/compose/runtime/State;
 
-    .line 444
+    .line 572
     invoke-interface {p0}, Landroidx/compose/runtime/State;->getValue()Ljava/lang/Object;
 
     move-result-object p0
@@ -1054,12 +1350,12 @@
 .method public getCanScrollForward()Z
     .locals 0
 
-    .line 279
+    .line 304
     iget-object p0, p0, Landroidx/compose/foundation/lazy/LazyListState;->canScrollForward$delegate:Landroidx/compose/runtime/MutableState;
 
     check-cast p0, Landroidx/compose/runtime/State;
 
-    .line 441
+    .line 569
     invoke-interface {p0}, Landroidx/compose/runtime/State;->getValue()Ljava/lang/Object;
 
     move-result-object p0
@@ -1073,10 +1369,19 @@
     return p0
 .end method
 
+.method public final getCoroutineScope$foundation_release()Lkotlinx/coroutines/CoroutineScope;
+    .locals 0
+
+    .line 472
+    iget-object p0, p0, Landroidx/compose/foundation/lazy/LazyListState;->coroutineScope:Lkotlinx/coroutines/CoroutineScope;
+
+    return-object p0
+.end method
+
 .method public final getDensity$foundation_release()Landroidx/compose/ui/unit/Density;
     .locals 0
 
-    .line 156
+    .line 181
     iget-object p0, p0, Landroidx/compose/foundation/lazy/LazyListState;->density:Landroidx/compose/ui/unit/Density;
 
     return-object p0
@@ -1085,7 +1390,7 @@
 .method public final getFirstVisibleItemIndex()I
     .locals 0
 
-    .line 107
+    .line 130
     iget-object p0, p0, Landroidx/compose/foundation/lazy/LazyListState;->scrollPosition:Landroidx/compose/foundation/lazy/LazyListScrollPosition;
 
     invoke-virtual {p0}, Landroidx/compose/foundation/lazy/LazyListScrollPosition;->getIndex()I
@@ -1098,7 +1403,7 @@
 .method public final getFirstVisibleItemScrollOffset()I
     .locals 0
 
-    .line 117
+    .line 140
     iget-object p0, p0, Landroidx/compose/foundation/lazy/LazyListState;->scrollPosition:Landroidx/compose/foundation/lazy/LazyListScrollPosition;
 
     invoke-virtual {p0}, Landroidx/compose/foundation/lazy/LazyListScrollPosition;->getScrollOffset()I
@@ -1108,10 +1413,19 @@
     return p0
 .end method
 
+.method public final getHasLookaheadPassOccurred$foundation_release()Z
+    .locals 0
+
+    .line 103
+    iget-boolean p0, p0, Landroidx/compose/foundation/lazy/LazyListState;->hasLookaheadPassOccurred:Z
+
+    return p0
+.end method
+
 .method public final getInteractionSource()Landroidx/compose/foundation/interaction/InteractionSource;
     .locals 0
 
-    .line 142
+    .line 167
     iget-object p0, p0, Landroidx/compose/foundation/lazy/LazyListState;->internalInteractionSource:Landroidx/compose/foundation/interaction/MutableInteractionSource;
 
     check-cast p0, Landroidx/compose/foundation/interaction/InteractionSource;
@@ -1122,8 +1436,17 @@
 .method public final getInternalInteractionSource$foundation_release()Landroidx/compose/foundation/interaction/MutableInteractionSource;
     .locals 0
 
-    .line 144
+    .line 169
     iget-object p0, p0, Landroidx/compose/foundation/lazy/LazyListState;->internalInteractionSource:Landroidx/compose/foundation/interaction/MutableInteractionSource;
+
+    return-object p0
+.end method
+
+.method public final getItemAnimator$foundation_release()Landroidx/compose/foundation/lazy/LazyListItemAnimator;
+    .locals 0
+
+    .line 240
+    iget-object p0, p0, Landroidx/compose/foundation/lazy/LazyListState;->itemAnimator:Landroidx/compose/foundation/lazy/LazyListItemAnimator;
 
     return-object p0
 .end method
@@ -1131,7 +1454,7 @@
 .method public final getLayoutInfo()Landroidx/compose/foundation/lazy/LazyListLayoutInfo;
     .locals 0
 
-    .line 135
+    .line 160
     iget-object p0, p0, Landroidx/compose/foundation/lazy/LazyListState;->layoutInfoState:Landroidx/compose/runtime/MutableState;
 
     invoke-interface {p0}, Landroidx/compose/runtime/MutableState;->getValue()Ljava/lang/Object;
@@ -1146,7 +1469,7 @@
 .method public final getNearestRange$foundation_release()Lkotlin/ranges/IntRange;
     .locals 0
 
-    .line 229
+    .line 254
     iget-object p0, p0, Landroidx/compose/foundation/lazy/LazyListState;->scrollPosition:Landroidx/compose/foundation/lazy/LazyListScrollPosition;
 
     invoke-virtual {p0}, Landroidx/compose/foundation/lazy/LazyListScrollPosition;->getNearestRangeState()Landroidx/compose/foundation/lazy/layout/LazyLayoutNearestRangeState;
@@ -1155,7 +1478,7 @@
 
     check-cast p0, Landroidx/compose/runtime/State;
 
-    .line 440
+    .line 568
     invoke-interface {p0}, Landroidx/compose/runtime/State;->getValue()Ljava/lang/Object;
 
     move-result-object p0
@@ -1168,7 +1491,7 @@
 .method public final getNumMeasurePasses$foundation_release()I
     .locals 0
 
-    .line 168
+    .line 193
     iget p0, p0, Landroidx/compose/foundation/lazy/LazyListState;->numMeasurePasses:I
 
     return p0
@@ -1177,17 +1500,34 @@
 .method public final getPinnedItems$foundation_release()Landroidx/compose/foundation/lazy/layout/LazyLayoutPinnedItemList;
     .locals 0
 
-    .line 227
+    .line 252
     iget-object p0, p0, Landroidx/compose/foundation/lazy/LazyListState;->pinnedItems:Landroidx/compose/foundation/lazy/layout/LazyLayoutPinnedItemList;
 
     return-object p0
 .end method
 
-.method public final getPlacementAnimator$foundation_release()Landroidx/compose/foundation/lazy/LazyListItemPlacementAnimator;
+.method public final getPlacementScopeInvalidator-zYiylxw$foundation_release()Landroidx/compose/runtime/MutableState;
+    .locals 0
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()",
+            "Landroidx/compose/runtime/MutableState<",
+            "Lkotlin/Unit;",
+            ">;"
+        }
+    .end annotation
+
+    .line 309
+    iget-object p0, p0, Landroidx/compose/foundation/lazy/LazyListState;->placementScopeInvalidator:Landroidx/compose/runtime/MutableState;
+
+    return-object p0
+.end method
+
+.method public final getPostLookaheadLayoutInfo$foundation_release()Landroidx/compose/foundation/lazy/LazyListMeasureResult;
     .locals 0
 
-    .line 215
-    iget-object p0, p0, Landroidx/compose/foundation/lazy/LazyListState;->placementAnimator:Landroidx/compose/foundation/lazy/LazyListItemPlacementAnimator;
+    .line 105
+    iget-object p0, p0, Landroidx/compose/foundation/lazy/LazyListState;->postLookaheadLayoutInfo:Landroidx/compose/foundation/lazy/LazyListMeasureResult;
 
     return-object p0
 .end method
@@ -1195,7 +1535,7 @@
 .method public final getPrefetchState$foundation_release()Landroidx/compose/foundation/lazy/layout/LazyLayoutPrefetchState;
     .locals 0
 
-    .line 367
+    .line 418
     iget-object p0, p0, Landroidx/compose/foundation/lazy/LazyListState;->prefetchState:Landroidx/compose/foundation/lazy/layout/LazyLayoutPrefetchState;
 
     return-object p0
@@ -1204,7 +1544,7 @@
 .method public final getPrefetchingEnabled$foundation_release()Z
     .locals 0
 
-    .line 175
+    .line 200
     iget-boolean p0, p0, Landroidx/compose/foundation/lazy/LazyListState;->prefetchingEnabled:Z
 
     return p0
@@ -1213,7 +1553,7 @@
 .method public final getPremeasureConstraints-msEJaDk$foundation_release()J
     .locals 2
 
-    .line 222
+    .line 247
     iget-wide v0, p0, Landroidx/compose/foundation/lazy/LazyListState;->premeasureConstraints:J
 
     return-wide v0
@@ -1222,7 +1562,7 @@
 .method public final getRemeasurement$foundation_release()Landroidx/compose/ui/layout/Remeasurement;
     .locals 0
 
-    .line 197
+    .line 222
     iget-object p0, p0, Landroidx/compose/foundation/lazy/LazyListState;->remeasurement:Landroidx/compose/ui/layout/Remeasurement;
 
     return-object p0
@@ -1231,16 +1571,35 @@
 .method public final getRemeasurementModifier$foundation_release()Landroidx/compose/ui/layout/RemeasurementModifier;
     .locals 0
 
-    .line 203
+    .line 228
     iget-object p0, p0, Landroidx/compose/foundation/lazy/LazyListState;->remeasurementModifier:Landroidx/compose/ui/layout/RemeasurementModifier;
 
     return-object p0
 .end method
 
+.method public final getScrollDeltaBetweenPasses$foundation_release()F
+    .locals 0
+
+    .line 475
+    iget-object p0, p0, Landroidx/compose/foundation/lazy/LazyListState;->_scrollDeltaBetweenPasses:Landroidx/compose/animation/core/AnimationState;
+
+    invoke-virtual {p0}, Landroidx/compose/animation/core/AnimationState;->getValue()Ljava/lang/Object;
+
+    move-result-object p0
+
+    check-cast p0, Ljava/lang/Number;
+
+    invoke-virtual {p0}, Ljava/lang/Number;->floatValue()F
+
+    move-result p0
+
+    return p0
+.end method
+
 .method public final getScrollToBeConsumed$foundation_release()F
     .locals 0
 
-    .line 150
+    .line 175
     iget p0, p0, Landroidx/compose/foundation/lazy/LazyListState;->scrollToBeConsumed:F
 
     return p0
@@ -1249,7 +1608,7 @@
 .method public isScrollInProgress()Z
     .locals 0
 
-    .line 277
+    .line 302
     iget-object p0, p0, Landroidx/compose/foundation/lazy/LazyListState;->scrollableState:Landroidx/compose/foundation/gestures/ScrollableState;
 
     invoke-interface {p0}, Landroidx/compose/foundation/gestures/ScrollableState;->isScrollInProgress()Z
@@ -1260,7 +1619,7 @@
 .end method
 
 .method public final onScroll$foundation_release(F)F
-    .locals 4
+    .locals 8
 
     const/4 v0, 0x0
 
@@ -1268,7 +1627,7 @@
 
     if-gez v1, :cond_0
 
-    .line 288
+    .line 315
     invoke-virtual {p0}, Landroidx/compose/foundation/lazy/LazyListState;->getCanScrollForward()Z
 
     move-result v1
@@ -1289,7 +1648,7 @@
     :cond_1
     return v0
 
-    .line 291
+    .line 318
     :cond_2
     iget v1, p0, Landroidx/compose/foundation/lazy/LazyListState;->scrollToBeConsumed:F
 
@@ -1301,49 +1660,113 @@
 
     cmpg-float v1, v1, v2
 
-    if-gtz v1, :cond_6
+    if-gtz v1, :cond_8
 
-    .line 294
+    .line 321
     iget v1, p0, Landroidx/compose/foundation/lazy/LazyListState;->scrollToBeConsumed:F
 
     add-float/2addr v1, p1
 
     iput v1, p0, Landroidx/compose/foundation/lazy/LazyListState;->scrollToBeConsumed:F
 
-    .line 299
+    .line 326
     invoke-static {v1}, Ljava/lang/Math;->abs(F)F
 
     move-result v1
 
     cmpl-float v1, v1, v2
 
-    if-lez v1, :cond_4
+    if-lez v1, :cond_6
 
-    .line 300
-    iget v1, p0, Landroidx/compose/foundation/lazy/LazyListState;->scrollToBeConsumed:F
+    .line 327
+    iget-object v1, p0, Landroidx/compose/foundation/lazy/LazyListState;->layoutInfoState:Landroidx/compose/runtime/MutableState;
 
-    .line 301
-    iget-object v3, p0, Landroidx/compose/foundation/lazy/LazyListState;->remeasurement:Landroidx/compose/ui/layout/Remeasurement;
+    invoke-interface {v1}, Landroidx/compose/runtime/MutableState;->getValue()Ljava/lang/Object;
 
-    if-eqz v3, :cond_3
+    move-result-object v1
 
-    invoke-interface {v3}, Landroidx/compose/ui/layout/Remeasurement;->forceRemeasure()V
+    check-cast v1, Landroidx/compose/foundation/lazy/LazyListMeasureResult;
 
-    .line 302
-    :cond_3
-    iget-boolean v3, p0, Landroidx/compose/foundation/lazy/LazyListState;->prefetchingEnabled:Z
-
-    if-eqz v3, :cond_4
-
-    .line 303
+    .line 328
     iget v3, p0, Landroidx/compose/foundation/lazy/LazyListState;->scrollToBeConsumed:F
 
-    sub-float/2addr v1, v3
+    .line 329
+    invoke-static {v3}, Lkotlin/math/MathKt;->roundToInt(F)I
 
-    invoke-direct {p0, v1}, Landroidx/compose/foundation/lazy/LazyListState;->notifyPrefetch(F)V
+    move-result v4
 
-    .line 308
+    .line 330
+    iget-object v5, p0, Landroidx/compose/foundation/lazy/LazyListState;->postLookaheadLayoutInfo:Landroidx/compose/foundation/lazy/LazyListMeasureResult;
+
+    .line 333
+    iget-boolean v6, p0, Landroidx/compose/foundation/lazy/LazyListState;->hasLookaheadPassOccurred:Z
+
+    const/4 v7, 0x1
+
+    xor-int/2addr v6, v7
+
+    .line 331
+    invoke-virtual {v1, v4, v6}, Landroidx/compose/foundation/lazy/LazyListMeasureResult;->tryToApplyScrollWithoutRemeasure(IZ)Z
+
+    move-result v6
+
+    if-eqz v6, :cond_3
+
+    if-eqz v5, :cond_3
+
+    .line 336
+    invoke-virtual {v5, v4, v7}, Landroidx/compose/foundation/lazy/LazyListMeasureResult;->tryToApplyScrollWithoutRemeasure(IZ)Z
+
+    move-result v6
+
+    :cond_3
+    if-eqz v6, :cond_4
+
+    .line 344
+    iget-boolean v4, p0, Landroidx/compose/foundation/lazy/LazyListState;->hasLookaheadPassOccurred:Z
+
+    .line 342
+    invoke-virtual {p0, v1, v4, v7}, Landroidx/compose/foundation/lazy/LazyListState;->applyMeasureResult$foundation_release(Landroidx/compose/foundation/lazy/LazyListMeasureResult;ZZ)V
+
+    .line 348
+    iget-object v4, p0, Landroidx/compose/foundation/lazy/LazyListState;->placementScopeInvalidator:Landroidx/compose/runtime/MutableState;
+
+    invoke-static {v4}, Landroidx/compose/foundation/lazy/layout/ObservableScopeInvalidator;->invalidateScope-impl(Landroidx/compose/runtime/MutableState;)V
+
+    .line 350
+    iget v4, p0, Landroidx/compose/foundation/lazy/LazyListState;->scrollToBeConsumed:F
+
+    sub-float/2addr v3, v4
+
+    check-cast v1, Landroidx/compose/foundation/lazy/LazyListLayoutInfo;
+
+    invoke-direct {p0, v3, v1}, Landroidx/compose/foundation/lazy/LazyListState;->notifyPrefetch(FLandroidx/compose/foundation/lazy/LazyListLayoutInfo;)V
+
+    goto :goto_0
+
+    .line 352
     :cond_4
+    iget-object v1, p0, Landroidx/compose/foundation/lazy/LazyListState;->remeasurement:Landroidx/compose/ui/layout/Remeasurement;
+
+    if-eqz v1, :cond_5
+
+    invoke-interface {v1}, Landroidx/compose/ui/layout/Remeasurement;->forceRemeasure()V
+
+    .line 354
+    :cond_5
+    iget v1, p0, Landroidx/compose/foundation/lazy/LazyListState;->scrollToBeConsumed:F
+
+    sub-float/2addr v3, v1
+
+    const/4 v1, 0x2
+
+    const/4 v4, 0x0
+
+    invoke-static {p0, v3, v4, v1, v4}, Landroidx/compose/foundation/lazy/LazyListState;->notifyPrefetch$default(Landroidx/compose/foundation/lazy/LazyListState;FLandroidx/compose/foundation/lazy/LazyListLayoutInfo;ILjava/lang/Object;)V
+
+    .line 359
+    :cond_6
+    :goto_0
     iget v1, p0, Landroidx/compose/foundation/lazy/LazyListState;->scrollToBeConsumed:F
 
     invoke-static {v1}, Ljava/lang/Math;->abs(F)F
@@ -1352,23 +1775,23 @@
 
     cmpg-float v1, v1, v2
 
-    if-gtz v1, :cond_5
+    if-gtz v1, :cond_7
 
     return p1
 
-    .line 313
-    :cond_5
+    .line 364
+    :cond_7
     iget v1, p0, Landroidx/compose/foundation/lazy/LazyListState;->scrollToBeConsumed:F
 
     sub-float/2addr p1, v1
 
-    .line 316
+    .line 367
     iput v0, p0, Landroidx/compose/foundation/lazy/LazyListState;->scrollToBeConsumed:F
 
     return p1
 
-    .line 292
-    :cond_6
+    .line 319
+    :cond_8
     new-instance p1, Ljava/lang/StringBuilder;
 
     const-string v0, "entered drag with non-zero pending scroll: "
@@ -1385,7 +1808,7 @@
 
     move-result-object p0
 
-    .line 291
+    .line 318
     new-instance p1, Ljava/lang/IllegalStateException;
 
     invoke-virtual {p0}, Ljava/lang/Object;->toString()Ljava/lang/String;
@@ -1457,7 +1880,7 @@
 
     move-result-object v1
 
-    .line 265
+    .line 290
     iget v2, v0, Landroidx/compose/foundation/lazy/LazyListState$scroll$1;->label:I
 
     const/4 v3, 0x2
@@ -1507,7 +1930,7 @@
     :cond_3
     invoke-static {p3}, Lkotlin/ResultKt;->throwOnFailure(Ljava/lang/Object;)V
 
-    .line 269
+    .line 294
     iget-object p3, p0, Landroidx/compose/foundation/lazy/LazyListState;->awaitLayoutModifier:Landroidx/compose/foundation/lazy/layout/AwaitFirstLayoutModifier;
 
     iput-object p0, v0, Landroidx/compose/foundation/lazy/LazyListState$scroll$1;->L$0:Ljava/lang/Object;
@@ -1526,7 +1949,7 @@
 
     return-object v1
 
-    .line 270
+    .line 295
     :cond_4
     :goto_1
     iget-object p0, p0, Landroidx/compose/foundation/lazy/LazyListState;->scrollableState:Landroidx/compose/foundation/gestures/ScrollableState;
@@ -1549,7 +1972,7 @@
 
     return-object v1
 
-    .line 271
+    .line 296
     :cond_5
     :goto_2
     sget-object p0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
@@ -1570,7 +1993,7 @@
         }
     .end annotation
 
-    .line 245
+    .line 270
     move-object v0, p0
 
     check-cast v0, Landroidx/compose/foundation/gestures/ScrollableState;
@@ -1611,14 +2034,19 @@
     return-object p0
 .end method
 
+.method public final setCoroutineScope$foundation_release(Lkotlinx/coroutines/CoroutineScope;)V
+    .locals 0
+
+    .line 472
+    iput-object p1, p0, Landroidx/compose/foundation/lazy/LazyListState;->coroutineScope:Lkotlinx/coroutines/CoroutineScope;
+
+    return-void
+.end method
+
 .method public final setDensity$foundation_release(Landroidx/compose/ui/unit/Density;)V
-    .locals 1
+    .locals 0
 
-    const-string v0, "<set-?>"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 156
+    .line 181
     iput-object p1, p0, Landroidx/compose/foundation/lazy/LazyListState;->density:Landroidx/compose/ui/unit/Density;
 
     return-void
@@ -1627,7 +2055,7 @@
 .method public final setPrefetchingEnabled$foundation_release(Z)V
     .locals 0
 
-    .line 175
+    .line 200
     iput-boolean p1, p0, Landroidx/compose/foundation/lazy/LazyListState;->prefetchingEnabled:Z
 
     return-void
@@ -1636,7 +2064,7 @@
 .method public final setPremeasureConstraints-BRTryo0$foundation_release(J)V
     .locals 0
 
-    .line 222
+    .line 247
     iput-wide p1, p0, Landroidx/compose/foundation/lazy/LazyListState;->premeasureConstraints:J
 
     return-void
@@ -1645,17 +2073,17 @@
 .method public final snapToItemIndexInternal$foundation_release(II)V
     .locals 1
 
-    .line 251
+    .line 276
     iget-object v0, p0, Landroidx/compose/foundation/lazy/LazyListState;->scrollPosition:Landroidx/compose/foundation/lazy/LazyListScrollPosition;
 
     invoke-virtual {v0, p1, p2}, Landroidx/compose/foundation/lazy/LazyListScrollPosition;->requestPosition(II)V
 
-    .line 253
-    iget-object p1, p0, Landroidx/compose/foundation/lazy/LazyListState;->placementAnimator:Landroidx/compose/foundation/lazy/LazyListItemPlacementAnimator;
+    .line 278
+    iget-object p1, p0, Landroidx/compose/foundation/lazy/LazyListState;->itemAnimator:Landroidx/compose/foundation/lazy/LazyListItemAnimator;
 
-    invoke-virtual {p1}, Landroidx/compose/foundation/lazy/LazyListItemPlacementAnimator;->reset()V
+    invoke-virtual {p1}, Landroidx/compose/foundation/lazy/LazyListItemAnimator;->reset()V
 
-    .line 254
+    .line 279
     iget-object p0, p0, Landroidx/compose/foundation/lazy/LazyListState;->remeasurement:Landroidx/compose/ui/layout/Remeasurement;
 
     if-eqz p0, :cond_0
@@ -1667,13 +2095,9 @@
 .end method
 
 .method public final updateScrollPositionIfTheFirstItemWasMoved$foundation_release(Landroidx/compose/foundation/lazy/LazyListItemProvider;I)I
-    .locals 1
+    .locals 0
 
-    const-string v0, "itemProvider"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 410
+    .line 522
     iget-object p0, p0, Landroidx/compose/foundation/lazy/LazyListState;->scrollPosition:Landroidx/compose/foundation/lazy/LazyListScrollPosition;
 
     invoke-virtual {p0, p1, p2}, Landroidx/compose/foundation/lazy/LazyListScrollPosition;->updateScrollPositionIfTheFirstItemWasMoved(Landroidx/compose/foundation/lazy/LazyListItemProvider;I)I

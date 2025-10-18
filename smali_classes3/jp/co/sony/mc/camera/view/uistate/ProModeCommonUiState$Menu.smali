@@ -42,14 +42,14 @@
     d2 = {
         "Ljp/co/sony/mc/camera/view/uistate/ProModeCommonUiState$Menu;",
         "",
-        "EvFnSubmenu",
-        "FnMenu",
-        "FnSubmenu",
-        "FocusMagnifier",
-        "IsoFnSubmenu",
         "None",
+        "FnMenu",
+        "FocusMagnifier",
+        "FnSubmenu",
         "PopupFnSubmenu",
         "WBFnSubmenu",
+        "IsoFnSubmenu",
+        "EvFnSubmenu",
         "Ljp/co/sony/mc/camera/view/uistate/ProModeCommonUiState$Menu$FnMenu;",
         "Ljp/co/sony/mc/camera/view/uistate/ProModeCommonUiState$Menu$FnSubmenu;",
         "Ljp/co/sony/mc/camera/view/uistate/ProModeCommonUiState$Menu$FocusMagnifier;",
@@ -58,8 +58,8 @@
     }
     k = 0x1
     mv = {
-        0x1,
-        0x9,
+        0x2,
+        0x0,
         0x0
     }
     xi = 0x30

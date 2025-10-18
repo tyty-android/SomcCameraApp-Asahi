@@ -15,7 +15,7 @@
 
 .annotation runtime Lkotlin/Metadata;
     d1 = {
-        "\u0000$\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0010\u0007\n\u0002\u0008\u0003\u0008g\u0018\u00002\u00020\u0001J\u001f\u0010\u0002\u001a\u00020\u0003*\u00020\u00032\u000e\u0008\u0002\u0010\u0004\u001a\u0008\u0012\u0004\u0012\u00020\u00060\u0005H\'\u00f8\u0001\u0000J\u0016\u0010\u0007\u001a\u00020\u0003*\u00020\u00032\u0008\u0008\u0002\u0010\u0008\u001a\u00020\tH&J\u0016\u0010\n\u001a\u00020\u0003*\u00020\u00032\u0008\u0008\u0002\u0010\u0008\u001a\u00020\tH&J\u0016\u0010\u000b\u001a\u00020\u0003*\u00020\u00032\u0008\u0008\u0002\u0010\u0008\u001a\u00020\tH&\u00f8\u0001\u0001\u0082\u0002\n\n\u0002\u0008\u0019\n\u0004\u0008!0\u0001\u00a8\u0006\u000c\u00c0\u0006\u0003"
+        "\u0000$\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0010\u0007\n\u0002\u0008\u0003\u0008g\u0018\u00002\u00020\u0001J\u001c\u0010\u0002\u001a\u00020\u0003*\u00020\u00032\u000e\u0008\u0002\u0010\u0004\u001a\u0008\u0012\u0004\u0012\u00020\u00060\u0005H\'J\u0016\u0010\u0007\u001a\u00020\u0003*\u00020\u00032\u0008\u0008\u0003\u0010\u0008\u001a\u00020\tH&J\u0016\u0010\n\u001a\u00020\u0003*\u00020\u00032\u0008\u0008\u0003\u0010\u0008\u001a\u00020\tH&J\u0016\u0010\u000b\u001a\u00020\u0003*\u00020\u00032\u0008\u0008\u0003\u0010\u0008\u001a\u00020\tH&\u00f8\u0001\u0000\u0082\u0002\u0006\n\u0004\u0008!0\u0001\u00a8\u0006\u000c\u00c0\u0006\u0003"
     }
     d2 = {
         "Landroidx/compose/foundation/lazy/LazyItemScope;",
@@ -54,7 +54,7 @@
 
     if-eqz p3, :cond_0
 
-    .line 98
+    .line 99
     sget-object p2, Landroidx/compose/ui/unit/IntOffset;->Companion:Landroidx/compose/ui/unit/IntOffset$Companion;
 
     invoke-static {p2}, Landroidx/compose/animation/core/VisibilityThresholdsKt;->getVisibilityThreshold(Landroidx/compose/ui/unit/IntOffset$Companion;)J
@@ -71,14 +71,14 @@
 
     const/high16 v1, 0x43c80000    # 400.0f
 
-    .line 96
+    .line 97
     invoke-static {v0, v1, p2, p4, p3}, Landroidx/compose/animation/core/AnimationSpecKt;->spring$default(FFLjava/lang/Object;ILjava/lang/Object;)Landroidx/compose/animation/core/SpringSpec;
 
     move-result-object p2
 
     check-cast p2, Landroidx/compose/animation/core/FiniteAnimationSpec;
 
-    .line 95
+    .line 96
     :cond_0
     invoke-interface {p0, p1, p2}, Landroidx/compose/foundation/lazy/LazyItemScope;->animateItemPlacement(Landroidx/compose/ui/Modifier;Landroidx/compose/animation/core/FiniteAnimationSpec;)Landroidx/compose/ui/Modifier;
 
@@ -107,7 +107,7 @@
 
     const/high16 p2, 0x3f800000    # 1.0f
 
-    .line 78
+    .line 79
     :cond_0
     invoke-interface {p0, p1, p2}, Landroidx/compose/foundation/lazy/LazyItemScope;->fillParentMaxHeight(Landroidx/compose/ui/Modifier;F)Landroidx/compose/ui/Modifier;
 
@@ -136,7 +136,7 @@
 
     const/high16 p2, 0x3f800000    # 1.0f
 
-    .line 48
+    .line 49
     :cond_0
     invoke-interface {p0, p1, p2}, Landroidx/compose/foundation/lazy/LazyItemScope;->fillParentMaxSize(Landroidx/compose/ui/Modifier;F)Landroidx/compose/ui/Modifier;
 
@@ -165,7 +165,7 @@
 
     const/high16 p2, 0x3f800000    # 1.0f
 
-    .line 63
+    .line 64
     :cond_0
     invoke-interface {p0, p1, p2}, Landroidx/compose/foundation/lazy/LazyItemScope;->fillParentMaxWidth(Landroidx/compose/ui/Modifier;F)Landroidx/compose/ui/Modifier;
 

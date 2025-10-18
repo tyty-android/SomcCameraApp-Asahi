@@ -1,6 +1,6 @@
 .class final Landroidx/compose/ui/tooling/ComposeViewAdapter$init$3$1$composable$1;
 .super Lkotlin/jvm/internal/Lambda;
-.source "ComposeViewAdapter.kt"
+.source "ComposeViewAdapter.android.kt"
 
 # interfaces
 .implements Lkotlin/jvm/functions/Function0;
@@ -109,7 +109,7 @@
 .method public bridge synthetic invoke()Ljava/lang/Object;
     .locals 0
 
-    .line 507
+    .line 502
     invoke-virtual {p0}, Landroidx/compose/ui/tooling/ComposeViewAdapter$init$3$1$composable$1;->invoke()V
 
     sget-object p0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
@@ -120,25 +120,25 @@
 .method public final invoke()V
     .locals 6
 
-    .line 509
+    .line 504
     :try_start_0
     sget-object v0, Landroidx/compose/ui/tooling/ComposableInvoker;->INSTANCE:Landroidx/compose/ui/tooling/ComposableInvoker;
 
-    .line 510
+    .line 505
     iget-object v1, p0, Landroidx/compose/ui/tooling/ComposeViewAdapter$init$3$1$composable$1;->$className:Ljava/lang/String;
 
-    .line 511
+    .line 506
     iget-object v2, p0, Landroidx/compose/ui/tooling/ComposeViewAdapter$init$3$1$composable$1;->$methodName:Ljava/lang/String;
 
-    .line 512
+    .line 507
     iget-object v3, p0, Landroidx/compose/ui/tooling/ComposeViewAdapter$init$3$1$composable$1;->$composer:Landroidx/compose/runtime/Composer;
 
-    .line 513
+    .line 508
     iget-object v4, p0, Landroidx/compose/ui/tooling/ComposeViewAdapter$init$3$1$composable$1;->$parameterProvider:Ljava/lang/Class;
 
     iget v5, p0, Landroidx/compose/ui/tooling/ComposeViewAdapter$init$3$1$composable$1;->$parameterProviderIndex:I
 
-    invoke-static {v4, v5}, Landroidx/compose/ui/tooling/PreviewUtilsKt;->getPreviewProviderParameters(Ljava/lang/Class;I)[Ljava/lang/Object;
+    invoke-static {v4, v5}, Landroidx/compose/ui/tooling/PreviewUtils_androidKt;->getPreviewProviderParameters(Ljava/lang/Class;I)[Ljava/lang/Object;
 
     move-result-object v4
 
@@ -148,7 +148,7 @@
 
     move-result-object v4
 
-    .line 509
+    .line 504
     invoke-virtual {v0, v1, v2, v3, v4}, Landroidx/compose/ui/tooling/ComposableInvoker;->invokeComposable(Ljava/lang/String;Ljava/lang/String;Landroidx/compose/runtime/Composer;[Ljava/lang/Object;)V
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
@@ -160,13 +160,13 @@
 
     move-object v1, v0
 
-    .line 520
+    .line 515
     :goto_0
     instance-of v2, v1, Ljava/lang/ReflectiveOperationException;
 
     if-eqz v2, :cond_0
 
-    .line 521
+    .line 516
     invoke-virtual {v1}, Ljava/lang/Throwable;->getCause()Ljava/lang/Throwable;
 
     move-result-object v2
@@ -177,7 +177,7 @@
 
     goto :goto_0
 
-    .line 523
+    .line 518
     :cond_0
     iget-object p0, p0, Landroidx/compose/ui/tooling/ComposeViewAdapter$init$3$1$composable$1;->this$0:Landroidx/compose/ui/tooling/ComposeViewAdapter;
 
@@ -187,6 +187,6 @@
 
     invoke-virtual {p0, v1}, Landroidx/compose/ui/tooling/ThreadSafeException;->set(Ljava/lang/Throwable;)V
 
-    .line 524
+    .line 519
     throw v0
 .end method

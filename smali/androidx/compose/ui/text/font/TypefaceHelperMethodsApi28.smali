@@ -32,6 +32,8 @@
 
 
 # static fields
+.field public static final $stable:I
+
 .field public static final INSTANCE:Landroidx/compose/ui/text/font/TypefaceHelperMethodsApi28;
 
 
@@ -62,18 +64,10 @@
 .method public final create(Landroid/graphics/Typeface;IZ)Landroid/graphics/Typeface;
     .locals 0
 
-    const-string/jumbo p0, "typeface"
-
-    invoke-static {p1, p0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
     .line 72
     invoke-static {p1, p2, p3}, Landroid/graphics/Typeface;->create(Landroid/graphics/Typeface;IZ)Landroid/graphics/Typeface;
 
     move-result-object p0
-
-    const-string p1, "create(typeface, finalFontWeight, finalFontStyle)"
-
-    invoke-static {p0, p1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
 
     return-object p0
 .end method

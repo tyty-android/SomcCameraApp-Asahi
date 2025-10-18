@@ -26,16 +26,16 @@
 .method public constructor <init>(Landroid/media/Image;Ljava/nio/ByteBuffer;I)V
     .locals 0
 
-    .line 3950
+    .line 4152
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 3951
+    .line 4153
     iput-object p1, p0, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$ImageDataInfo;->image:Landroid/media/Image;
 
-    .line 3952
+    .line 4154
     iput-object p2, p0, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$ImageDataInfo;->byteBuffer:Ljava/nio/ByteBuffer;
 
-    .line 3953
+    .line 4155
     iput p3, p0, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$ImageDataInfo;->imageFormat:I
 
     return-void

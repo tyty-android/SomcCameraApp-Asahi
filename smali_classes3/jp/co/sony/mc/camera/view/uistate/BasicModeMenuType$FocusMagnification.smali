@@ -15,18 +15,19 @@
 
 .annotation runtime Lkotlin/Metadata;
     d1 = {
-        "\u0000\u000c\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0002\u0008\u00c7\u0002\u0018\u00002\u00020\u0001B\u0007\u0008\u0002\u00a2\u0006\u0002\u0010\u0002\u00a8\u0006\u0003"
+        "\u0000\u000c\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0003\u0008\u00c7\u0002\u0018\u00002\u00020\u0001B\t\u0008\u0003\u00a2\u0006\u0004\u0008\u0002\u0010\u0003\u00a8\u0006\u0004"
     }
     d2 = {
         "Ljp/co/sony/mc/camera/view/uistate/BasicModeMenuType$FocusMagnification;",
         "Ljp/co/sony/mc/camera/view/uistate/BasicModeMenuType;",
+        "<init>",
         "()V",
         "SomcCamera_release"
     }
     k = 0x1
     mv = {
-        0x1,
-        0x9,
+        0x2,
+        0x0,
         0x0
     }
     xi = 0x30
@@ -55,9 +56,9 @@
 .method private constructor <init>()V
     .locals 3
 
-    const/4 v0, 0x2
+    const/4 v0, 0x3
 
-    .line 348
+    .line 315
     new-array v0, v0, [Ljp/co/sony/mc/camera/view/uistate/BasicModeCloseMenuReason;
 
     const/4 v1, 0x0
@@ -68,19 +69,26 @@
 
     const/4 v1, 0x1
 
-    .line 349
+    .line 316
+    sget-object v2, Ljp/co/sony/mc/camera/view/uistate/BasicModeCloseMenuReason$FinderLongClicked;->INSTANCE:Ljp/co/sony/mc/camera/view/uistate/BasicModeCloseMenuReason$FinderLongClicked;
+
+    aput-object v2, v0, v1
+
+    const/4 v1, 0x2
+
+    .line 317
     sget-object v2, Ljp/co/sony/mc/camera/view/uistate/BasicModeCloseMenuReason$FinderSwiped;->INSTANCE:Ljp/co/sony/mc/camera/view/uistate/BasicModeCloseMenuReason$FinderSwiped;
 
     aput-object v2, v0, v1
 
-    .line 347
+    .line 314
     invoke-static {v0}, Lkotlin/collections/CollectionsKt;->listOf([Ljava/lang/Object;)Ljava/util/List;
 
     move-result-object v0
 
     const/4 v1, 0x0
 
-    .line 346
+    .line 313
     invoke-direct {p0, v0, v1}, Ljp/co/sony/mc/camera/view/uistate/BasicModeMenuType;-><init>(Ljava/util/List;Lkotlin/jvm/internal/DefaultConstructorMarker;)V
 
     return-void

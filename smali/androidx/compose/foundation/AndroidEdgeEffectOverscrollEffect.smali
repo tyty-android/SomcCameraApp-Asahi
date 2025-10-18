@@ -1,6 +1,6 @@
 .class public final Landroidx/compose/foundation/AndroidEdgeEffectOverscrollEffect;
 .super Ljava/lang/Object;
-.source "AndroidOverscroll.kt"
+.source "AndroidOverscroll.android.kt"
 
 # interfaces
 .implements Landroidx/compose/foundation/OverscrollEffect;
@@ -8,12 +8,12 @@
 
 # annotations
 .annotation system Ldalvik/annotation/SourceDebugExtension;
-    value = "SMAP\nAndroidOverscroll.kt\nKotlin\n*S Kotlin\n*F\n+ 1 AndroidOverscroll.kt\nandroidx/compose/foundation/AndroidEdgeEffectOverscrollEffect\n+ 2 ListUtils.kt\nandroidx/compose/ui/util/ListUtilsKt\n+ 3 InspectableValue.kt\nandroidx/compose/ui/platform/InspectableValueKt\n+ 4 DrawScope.kt\nandroidx/compose/ui/graphics/drawscope/DrawScopeKt\n*L\n1#1,589:1\n33#2,6:590\n101#2,2:597\n33#2,6:599\n103#2:605\n33#2,6:607\n135#3:596\n245#4:606\n*S KotlinDebug\n*F\n+ 1 AndroidOverscroll.kt\nandroidx/compose/foundation/AndroidEdgeEffectOverscrollEffect\n*L\n123#1:590,6\n266#1:597,2\n266#1:599,6\n266#1:605\n445#1:607,6\n341#1:596\n351#1:606\n*E\n"
+    value = "SMAP\nAndroidOverscroll.android.kt\nKotlin\n*S Kotlin\n*F\n+ 1 AndroidOverscroll.android.kt\nandroidx/compose/foundation/AndroidEdgeEffectOverscrollEffect\n+ 2 ListUtils.kt\nandroidx/compose/ui/util/ListUtilsKt\n+ 3 InspectableValue.kt\nandroidx/compose/ui/platform/InspectableValueKt\n+ 4 SnapshotIntState.kt\nandroidx/compose/runtime/SnapshotIntStateKt__SnapshotIntStateKt\n+ 5 DrawScope.kt\nandroidx/compose/ui/graphics/drawscope/DrawScopeKt\n*L\n1#1,595:1\n33#2,6:596\n101#2,2:606\n33#2,6:608\n103#2:614\n33#2,6:616\n135#3:602\n75#4:603\n108#4,2:604\n246#5:615\n*S KotlinDebug\n*F\n+ 1 AndroidOverscroll.android.kt\nandroidx/compose/foundation/AndroidEdgeEffectOverscrollEffect\n*L\n125#1:596,6\n270#1:606,2\n270#1:608,6\n270#1:614\n451#1:616,6\n345#1:602\n130#1:603\n130#1:604,2\n355#1:615\n*E\n"
 .end annotation
 
 .annotation runtime Lkotlin/Metadata;
     d1 = {
-        "\u0000\u0098\u0001\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0010 \n\u0002\u0018\u0002\n\u0002\u0008\u0003\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0003\n\u0002\u0010\u000b\n\u0002\u0008\n\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0008\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\u0008\u0005\n\u0002\u0018\u0002\n\u0002\u0008\u0005\n\u0002\u0010\u0007\n\u0002\u0008\u000f\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0008\u0008\u0000\u0018\u00002\u00020\u0001B\u0015\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\u0006\u0010\u0004\u001a\u00020\u0005\u00a2\u0006\u0002\u0010\u0006J\u0008\u0010-\u001a\u00020!H\u0002JE\u0010.\u001a\u00020!2\u0006\u0010/\u001a\u0002002\"\u00101\u001a\u001e\u0008\u0001\u0012\u0004\u0012\u000200\u0012\n\u0012\u0008\u0012\u0004\u0012\u00020003\u0012\u0006\u0012\u0004\u0018\u00010402H\u0096@\u00f8\u0001\u0001\u00f8\u0001\u0000\u00f8\u0001\u0000\u00a2\u0006\u0004\u00085\u00106J9\u00107\u001a\u00020%2\u0006\u00108\u001a\u00020%2\u0006\u00109\u001a\u00020:2\u0012\u0010;\u001a\u000e\u0012\u0004\u0012\u00020%\u0012\u0004\u0012\u00020%0\u001fH\u0016\u00f8\u0001\u0001\u00f8\u0001\u0000\u00a2\u0006\u0004\u0008<\u0010=J\u0008\u0010>\u001a\u00020!H\u0002J%\u0010?\u001a\u00020@2\u0006\u0010A\u001a\u00020%2\u0006\u0010B\u001a\u00020%H\u0002\u00f8\u0001\u0001\u00f8\u0001\u0000\u00a2\u0006\u0004\u0008C\u0010DJ%\u0010E\u001a\u00020@2\u0006\u0010A\u001a\u00020%2\u0006\u0010B\u001a\u00020%H\u0002\u00f8\u0001\u0001\u00f8\u0001\u0000\u00a2\u0006\u0004\u0008F\u0010DJ%\u0010G\u001a\u00020@2\u0006\u0010A\u001a\u00020%2\u0006\u0010B\u001a\u00020%H\u0002\u00f8\u0001\u0001\u00f8\u0001\u0000\u00a2\u0006\u0004\u0008H\u0010DJ%\u0010I\u001a\u00020@2\u0006\u0010A\u001a\u00020%2\u0006\u0010B\u001a\u00020%H\u0002\u00f8\u0001\u0001\u00f8\u0001\u0000\u00a2\u0006\u0004\u0008J\u0010DJ\u001d\u0010K\u001a\u00020\u00142\u0006\u00108\u001a\u00020%H\u0002\u00f8\u0001\u0001\u00f8\u0001\u0000\u00a2\u0006\u0004\u0008L\u0010MJ\u0008\u0010N\u001a\u00020\u0014H\u0002J \u0010O\u001a\u00020\u0014*\u00020P2\u0006\u0010Q\u001a\u00020\t2\n\u0010R\u001a\u00060Sj\u0002`TH\u0002J \u0010U\u001a\u00020\u0014*\u00020P2\u0006\u0010V\u001a\u00020\t2\n\u0010R\u001a\u00060Sj\u0002`TH\u0002J\n\u0010W\u001a\u00020!*\u00020PJ \u0010X\u001a\u00020\u0014*\u00020P2\u0006\u0010Y\u001a\u00020\t2\n\u0010R\u001a\u00060Sj\u0002`TH\u0002J \u0010Z\u001a\u00020\u0014*\u00020P2\u0006\u0010[\u001a\u00020\t2\n\u0010R\u001a\u00060Sj\u0002`TH\u0002R\u0014\u0010\u0007\u001a\u0008\u0012\u0004\u0012\u00020\t0\u0008X\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u000e\u0010\n\u001a\u00020\tX\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u000b\u001a\u00020\tX\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u0019\u0010\u000c\u001a\u00020\rX\u0082\u000e\u00f8\u0001\u0000\u00f8\u0001\u0001\u00f8\u0001\u0002\u00a2\u0006\u0004\n\u0002\u0010\u000eR\u0014\u0010\u000f\u001a\u00020\u0010X\u0096\u0004\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\u0011\u0010\u0012R$\u0010\u0013\u001a\u00020\u00148\u0000@\u0000X\u0081\u000e\u00a2\u0006\u0014\n\u0000\u0012\u0004\u0008\u0015\u0010\u0016\u001a\u0004\u0008\u0017\u0010\u0018\"\u0004\u0008\u0019\u0010\u001aR\u0014\u0010\u001b\u001a\u00020\u00148VX\u0096\u0004\u00a2\u0006\u0006\u001a\u0004\u0008\u001b\u0010\u0018R\u000e\u0010\u001c\u001a\u00020\tX\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u001d\u001a\u00020\tX\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u001d\u0010\u001e\u001a\u000e\u0012\u0004\u0012\u00020 \u0012\u0004\u0012\u00020!0\u001fX\u0082\u0004\u00f8\u0001\u0000\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u0004\u001a\u00020\u0005X\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u0019\u0010\"\u001a\u0004\u0018\u00010#X\u0082\u000e\u00f8\u0001\u0000\u00f8\u0001\u0001\u00f8\u0001\u0002\u00a2\u0006\u0002\n\u0000R\u0019\u0010$\u001a\u0004\u0018\u00010%X\u0082\u000e\u00f8\u0001\u0000\u00f8\u0001\u0001\u00f8\u0001\u0002\u00a2\u0006\u0002\n\u0000R\u0014\u0010&\u001a\u0008\u0012\u0004\u0012\u00020!0\'X\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u000e\u0010(\u001a\u00020\tX\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u000e\u0010)\u001a\u00020\tX\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u000e\u0010*\u001a\u00020\u0014X\u0082\u000e\u00a2\u0006\u0002\n\u0000R\u000e\u0010+\u001a\u00020\tX\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u000e\u0010,\u001a\u00020\tX\u0082\u0004\u00a2\u0006\u0002\n\u0000\u0082\u0002\u000f\n\u0002\u0008\u0019\n\u0005\u0008\u00a1\u001e0\u0001\n\u0002\u0008!\u00a8\u0006\\"
+        "\u0000\u0098\u0001\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0010 \n\u0002\u0018\u0002\n\u0002\u0008\u0003\n\u0002\u0010\u0008\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u000b\n\u0002\u0010\u000b\n\u0002\u0008\n\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0008\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\u0008\u0005\n\u0002\u0018\u0002\n\u0002\u0008\u0005\n\u0002\u0010\u0007\n\u0002\u0008\u000f\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0008\u0008\u0000\u0018\u00002\u00020\u0001B\u0015\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\u0006\u0010\u0004\u001a\u00020\u0005\u00a2\u0006\u0002\u0010\u0006J\u0008\u00105\u001a\u00020+H\u0002J?\u00106\u001a\u00020+2\u0006\u00107\u001a\u0002082\"\u00109\u001a\u001e\u0008\u0001\u0012\u0004\u0012\u000208\u0012\n\u0012\u0008\u0012\u0004\u0012\u0002080;\u0012\u0006\u0012\u0004\u0018\u00010<0:H\u0096@\u00f8\u0001\u0000\u00a2\u0006\u0004\u0008=\u0010>J6\u0010?\u001a\u00020/2\u0006\u0010@\u001a\u00020/2\u0006\u0010A\u001a\u00020B2\u0012\u0010C\u001a\u000e\u0012\u0004\u0012\u00020/\u0012\u0004\u0012\u00020/0)H\u0016\u00f8\u0001\u0000\u00a2\u0006\u0004\u0008D\u0010EJ\u0008\u0010F\u001a\u00020+H\u0002J\"\u0010G\u001a\u00020H2\u0006\u0010I\u001a\u00020/2\u0006\u0010J\u001a\u00020/H\u0002\u00f8\u0001\u0000\u00a2\u0006\u0004\u0008K\u0010LJ\"\u0010M\u001a\u00020H2\u0006\u0010I\u001a\u00020/2\u0006\u0010J\u001a\u00020/H\u0002\u00f8\u0001\u0000\u00a2\u0006\u0004\u0008N\u0010LJ\"\u0010O\u001a\u00020H2\u0006\u0010I\u001a\u00020/2\u0006\u0010J\u001a\u00020/H\u0002\u00f8\u0001\u0000\u00a2\u0006\u0004\u0008P\u0010LJ\"\u0010Q\u001a\u00020H2\u0006\u0010I\u001a\u00020/2\u0006\u0010J\u001a\u00020/H\u0002\u00f8\u0001\u0000\u00a2\u0006\u0004\u0008R\u0010LJ\u001a\u0010S\u001a\u00020\u001e2\u0006\u0010@\u001a\u00020/H\u0002\u00f8\u0001\u0000\u00a2\u0006\u0004\u0008T\u0010UJ\u0008\u0010V\u001a\u00020\u001eH\u0002J \u0010W\u001a\u00020\u001e*\u00020X2\u0006\u0010Y\u001a\u00020\t2\n\u0010Z\u001a\u00060[j\u0002`\\H\u0002J \u0010]\u001a\u00020\u001e*\u00020X2\u0006\u0010^\u001a\u00020\t2\n\u0010Z\u001a\u00060[j\u0002`\\H\u0002J\n\u0010_\u001a\u00020+*\u00020XJ \u0010`\u001a\u00020\u001e*\u00020X2\u0006\u0010a\u001a\u00020\t2\n\u0010Z\u001a\u00060[j\u0002`\\H\u0002J \u0010b\u001a\u00020\u001e*\u00020X2\u0006\u0010c\u001a\u00020\t2\n\u0010Z\u001a\u00060[j\u0002`\\H\u0002R\u0014\u0010\u0007\u001a\u0008\u0012\u0004\u0012\u00020\t0\u0008X\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u000e\u0010\n\u001a\u00020\tX\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u000b\u001a\u00020\tX\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u000c\u001a\u00020\rX\u0082\u000e\u00a2\u0006\u0002\n\u0000R\u0016\u0010\u000e\u001a\u00020\u000fX\u0082\u000e\u00f8\u0001\u0000\u00f8\u0001\u0001\u00a2\u0006\u0004\n\u0002\u0010\u0010R\u0014\u0010\u0011\u001a\u00020\u0012X\u0096\u0004\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\u0013\u0010\u0014R+\u0010\u0016\u001a\u00020\r2\u0006\u0010\u0015\u001a\u00020\r8B@BX\u0082\u008e\u0002\u00a2\u0006\u0012\n\u0004\u0008\u001b\u0010\u001c\u001a\u0004\u0008\u0017\u0010\u0018\"\u0004\u0008\u0019\u0010\u001aR$\u0010\u001d\u001a\u00020\u001e8\u0000@\u0000X\u0081\u000e\u00a2\u0006\u0014\n\u0000\u0012\u0004\u0008\u001f\u0010 \u001a\u0004\u0008!\u0010\"\"\u0004\u0008#\u0010$R\u0014\u0010%\u001a\u00020\u001e8VX\u0096\u0004\u00a2\u0006\u0006\u001a\u0004\u0008%\u0010\"R\u000e\u0010&\u001a\u00020\tX\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u000e\u0010\'\u001a\u00020\tX\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u001a\u0010(\u001a\u000e\u0012\u0004\u0012\u00020*\u0012\u0004\u0012\u00020+0)X\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u0004\u001a\u00020\u0005X\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u0016\u0010,\u001a\u0004\u0018\u00010-X\u0082\u000e\u00f8\u0001\u0000\u00f8\u0001\u0001\u00a2\u0006\u0002\n\u0000R\u0016\u0010.\u001a\u0004\u0018\u00010/X\u0082\u000e\u00f8\u0001\u0000\u00f8\u0001\u0001\u00a2\u0006\u0002\n\u0000R\u000e\u00100\u001a\u00020\tX\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u000e\u00101\u001a\u00020\tX\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u000e\u00102\u001a\u00020\u001eX\u0082\u000e\u00a2\u0006\u0002\n\u0000R\u000e\u00103\u001a\u00020\tX\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u000e\u00104\u001a\u00020\tX\u0082\u0004\u00a2\u0006\u0002\n\u0000\u0082\u0002\u000b\n\u0005\u0008\u00a1\u001e0\u0001\n\u0002\u0008!\u00a8\u0006d"
     }
     d2 = {
         "Landroidx/compose/foundation/AndroidEdgeEffectOverscrollEffect;",
@@ -28,6 +28,8 @@
         "Landroid/widget/EdgeEffect;",
         "bottomEffect",
         "bottomEffectNegation",
+        "consumeCount",
+        "",
         "containerSize",
         "Landroidx/compose/ui/geometry/Size;",
         "J",
@@ -35,6 +37,14 @@
         "Landroidx/compose/ui/Modifier;",
         "getEffectModifier",
         "()Landroidx/compose/ui/Modifier;",
+        "<set-?>",
+        "invalidateCount",
+        "getInvalidateCount",
+        "()I",
+        "setInvalidateCount",
+        "(I)V",
+        "invalidateCount$delegate",
+        "Landroidx/compose/runtime/MutableIntState;",
         "invalidationEnabled",
         "",
         "getInvalidationEnabled$foundation_release$annotations",
@@ -54,8 +64,6 @@
         "Landroidx/compose/ui/input/pointer/PointerId;",
         "pointerPosition",
         "Landroidx/compose/ui/geometry/Offset;",
-        "redrawSignal",
-        "Landroidx/compose/runtime/MutableState;",
         "rightEffect",
         "rightEffectNegation",
         "scrollCycleInProgress",
@@ -120,6 +128,10 @@
 .end annotation
 
 
+# static fields
+.field public static final $stable:I
+
+
 # instance fields
 .field private final allEffects:Ljava/util/List;
     .annotation system Ldalvik/annotation/Signature;
@@ -135,9 +147,13 @@
 
 .field private final bottomEffectNegation:Landroid/widget/EdgeEffect;
 
+.field private consumeCount:I
+
 .field private containerSize:J
 
 .field private final effectModifier:Landroidx/compose/ui/Modifier;
+
+.field private final invalidateCount$delegate:Landroidx/compose/runtime/MutableIntState;
 
 .field private invalidationEnabled:Z
 
@@ -162,16 +178,6 @@
 
 .field private pointerPosition:Landroidx/compose/ui/geometry/Offset;
 
-.field private final redrawSignal:Landroidx/compose/runtime/MutableState;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Landroidx/compose/runtime/MutableState<",
-            "Lkotlin/Unit;",
-            ">;"
-        }
-    .end annotation
-.end field
-
 .field private final rightEffect:Landroid/widget/EdgeEffect;
 
 .field private final rightEffectNegation:Landroid/widget/EdgeEffect;
@@ -184,24 +190,22 @@
 
 
 # direct methods
+.method static constructor <clinit>()V
+    .locals 0
+
+    return-void
+.end method
+
 .method public constructor <init>(Landroid/content/Context;Landroidx/compose/foundation/OverscrollConfiguration;)V
-    .locals 6
+    .locals 8
 
-    const-string v0, "context"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string v0, "overscrollConfig"
-
-    invoke-static {p2, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 101
+    .line 103
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 104
+    .line 106
     iput-object p2, p0, Landroidx/compose/foundation/AndroidEdgeEffectOverscrollEffect;->overscrollConfig:Landroidx/compose/foundation/OverscrollConfiguration;
 
-    .line 108
+    .line 110
     sget-object p2, Landroidx/compose/foundation/EdgeEffectCompat;->INSTANCE:Landroidx/compose/foundation/EdgeEffectCompat;
 
     const/4 v0, 0x0
@@ -212,7 +216,7 @@
 
     iput-object p2, p0, Landroidx/compose/foundation/AndroidEdgeEffectOverscrollEffect;->topEffect:Landroid/widget/EdgeEffect;
 
-    .line 109
+    .line 111
     sget-object v1, Landroidx/compose/foundation/EdgeEffectCompat;->INSTANCE:Landroidx/compose/foundation/EdgeEffectCompat;
 
     invoke-virtual {v1, p1, v0}, Landroidx/compose/foundation/EdgeEffectCompat;->create(Landroid/content/Context;Landroid/util/AttributeSet;)Landroid/widget/EdgeEffect;
@@ -221,7 +225,7 @@
 
     iput-object v1, p0, Landroidx/compose/foundation/AndroidEdgeEffectOverscrollEffect;->bottomEffect:Landroid/widget/EdgeEffect;
 
-    .line 110
+    .line 112
     sget-object v2, Landroidx/compose/foundation/EdgeEffectCompat;->INSTANCE:Landroidx/compose/foundation/EdgeEffectCompat;
 
     invoke-virtual {v2, p1, v0}, Landroidx/compose/foundation/EdgeEffectCompat;->create(Landroid/content/Context;Landroid/util/AttributeSet;)Landroid/widget/EdgeEffect;
@@ -230,7 +234,7 @@
 
     iput-object v2, p0, Landroidx/compose/foundation/AndroidEdgeEffectOverscrollEffect;->leftEffect:Landroid/widget/EdgeEffect;
 
-    .line 111
+    .line 113
     sget-object v3, Landroidx/compose/foundation/EdgeEffectCompat;->INSTANCE:Landroidx/compose/foundation/EdgeEffectCompat;
 
     invoke-virtual {v3, p1, v0}, Landroidx/compose/foundation/EdgeEffectCompat;->create(Landroid/content/Context;Landroid/util/AttributeSet;)Landroid/widget/EdgeEffect;
@@ -241,7 +245,7 @@
 
     const/4 v4, 0x4
 
-    .line 112
+    .line 114
     new-array v4, v4, [Landroid/widget/EdgeEffect;
 
     const/4 v5, 0x0
@@ -266,7 +270,7 @@
 
     iput-object p2, p0, Landroidx/compose/foundation/AndroidEdgeEffectOverscrollEffect;->allEffects:Ljava/util/List;
 
-    .line 117
+    .line 119
     sget-object v1, Landroidx/compose/foundation/EdgeEffectCompat;->INSTANCE:Landroidx/compose/foundation/EdgeEffectCompat;
 
     invoke-virtual {v1, p1, v0}, Landroidx/compose/foundation/EdgeEffectCompat;->create(Landroid/content/Context;Landroid/util/AttributeSet;)Landroid/widget/EdgeEffect;
@@ -275,7 +279,7 @@
 
     iput-object v1, p0, Landroidx/compose/foundation/AndroidEdgeEffectOverscrollEffect;->topEffectNegation:Landroid/widget/EdgeEffect;
 
-    .line 118
+    .line 120
     sget-object v1, Landroidx/compose/foundation/EdgeEffectCompat;->INSTANCE:Landroidx/compose/foundation/EdgeEffectCompat;
 
     invoke-virtual {v1, p1, v0}, Landroidx/compose/foundation/EdgeEffectCompat;->create(Landroid/content/Context;Landroid/util/AttributeSet;)Landroid/widget/EdgeEffect;
@@ -284,7 +288,7 @@
 
     iput-object v1, p0, Landroidx/compose/foundation/AndroidEdgeEffectOverscrollEffect;->bottomEffectNegation:Landroid/widget/EdgeEffect;
 
-    .line 119
+    .line 121
     sget-object v1, Landroidx/compose/foundation/EdgeEffectCompat;->INSTANCE:Landroidx/compose/foundation/EdgeEffectCompat;
 
     invoke-virtual {v1, p1, v0}, Landroidx/compose/foundation/EdgeEffectCompat;->create(Landroid/content/Context;Landroid/util/AttributeSet;)Landroid/widget/EdgeEffect;
@@ -293,7 +297,7 @@
 
     iput-object v1, p0, Landroidx/compose/foundation/AndroidEdgeEffectOverscrollEffect;->leftEffectNegation:Landroid/widget/EdgeEffect;
 
-    .line 120
+    .line 122
     sget-object v1, Landroidx/compose/foundation/EdgeEffectCompat;->INSTANCE:Landroidx/compose/foundation/EdgeEffectCompat;
 
     invoke-virtual {v1, p1, v0}, Landroidx/compose/foundation/EdgeEffectCompat;->create(Landroid/content/Context;Landroid/util/AttributeSet;)Landroid/widget/EdgeEffect;
@@ -302,57 +306,58 @@
 
     iput-object p1, p0, Landroidx/compose/foundation/AndroidEdgeEffectOverscrollEffect;->rightEffectNegation:Landroid/widget/EdgeEffect;
 
-    .line 591
+    .line 597
     invoke-interface {p2}, Ljava/util/List;->size()I
 
     move-result p1
 
+    move v1, v5
+
     :goto_0
-    if-ge v5, p1, :cond_0
+    if-ge v1, p1, :cond_0
 
-    .line 592
-    invoke-interface {p2, v5}, Ljava/util/List;->get(I)Ljava/lang/Object;
+    .line 598
+    invoke-interface {p2, v1}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
-    move-result-object v1
+    move-result-object v3
 
-    .line 593
-    check-cast v1, Landroid/widget/EdgeEffect;
+    .line 599
+    check-cast v3, Landroid/widget/EdgeEffect;
 
-    .line 123
-    iget-object v3, p0, Landroidx/compose/foundation/AndroidEdgeEffectOverscrollEffect;->overscrollConfig:Landroidx/compose/foundation/OverscrollConfiguration;
+    .line 125
+    iget-object v4, p0, Landroidx/compose/foundation/AndroidEdgeEffectOverscrollEffect;->overscrollConfig:Landroidx/compose/foundation/OverscrollConfiguration;
 
-    invoke-virtual {v3}, Landroidx/compose/foundation/OverscrollConfiguration;->getGlowColor-0d7_KjU()J
+    invoke-virtual {v4}, Landroidx/compose/foundation/OverscrollConfiguration;->getGlowColor-0d7_KjU()J
 
-    move-result-wide v3
+    move-result-wide v6
 
-    invoke-static {v3, v4}, Landroidx/compose/ui/graphics/ColorKt;->toArgb-8_81llA(J)I
+    invoke-static {v6, v7}, Landroidx/compose/ui/graphics/ColorKt;->toArgb-8_81llA(J)I
 
-    move-result v3
+    move-result v4
 
-    invoke-virtual {v1, v3}, Landroid/widget/EdgeEffect;->setColor(I)V
+    invoke-virtual {v3, v4}, Landroid/widget/EdgeEffect;->setColor(I)V
 
-    add-int/lit8 v5, v5, 0x1
+    add-int/lit8 v1, v1, 0x1
 
     goto :goto_0
 
-    .line 126
     :cond_0
-    sget-object p1, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
+    const/4 p1, -0x1
 
-    invoke-static {}, Landroidx/compose/runtime/SnapshotStateKt;->neverEqualPolicy()Landroidx/compose/runtime/SnapshotMutationPolicy;
+    .line 129
+    iput p1, p0, Landroidx/compose/foundation/AndroidEdgeEffectOverscrollEffect;->consumeCount:I
 
-    move-result-object p2
-
-    invoke-static {p1, p2}, Landroidx/compose/runtime/SnapshotStateKt;->mutableStateOf(Ljava/lang/Object;Landroidx/compose/runtime/SnapshotMutationPolicy;)Landroidx/compose/runtime/MutableState;
+    .line 130
+    invoke-static {v5}, Landroidx/compose/runtime/SnapshotIntStateKt;->mutableIntStateOf(I)Landroidx/compose/runtime/MutableIntState;
 
     move-result-object p1
 
-    iput-object p1, p0, Landroidx/compose/foundation/AndroidEdgeEffectOverscrollEffect;->redrawSignal:Landroidx/compose/runtime/MutableState;
+    iput-object p1, p0, Landroidx/compose/foundation/AndroidEdgeEffectOverscrollEffect;->invalidateCount$delegate:Landroidx/compose/runtime/MutableIntState;
 
-    .line 129
+    .line 133
     iput-boolean v2, p0, Landroidx/compose/foundation/AndroidEdgeEffectOverscrollEffect;->invalidationEnabled:Z
 
-    .line 262
+    .line 266
     sget-object p1, Landroidx/compose/ui/geometry/Size;->Companion:Landroidx/compose/ui/geometry/Size$Companion;
 
     invoke-virtual {p1}, Landroidx/compose/ui/geometry/Size$Companion;->getZero-NH-jbRc()J
@@ -361,7 +366,7 @@
 
     iput-wide p1, p0, Landroidx/compose/foundation/AndroidEdgeEffectOverscrollEffect;->containerSize:J
 
-    .line 291
+    .line 295
     new-instance p1, Landroidx/compose/foundation/AndroidEdgeEffectOverscrollEffect$onNewSize$1;
 
     invoke-direct {p1, p0}, Landroidx/compose/foundation/AndroidEdgeEffectOverscrollEffect$onNewSize$1;-><init>(Landroidx/compose/foundation/AndroidEdgeEffectOverscrollEffect;)V
@@ -370,11 +375,11 @@
 
     iput-object p1, p0, Landroidx/compose/foundation/AndroidEdgeEffectOverscrollEffect;->onNewSize:Lkotlin/jvm/functions/Function1;
 
-    .line 313
+    .line 317
     sget-object p2, Landroidx/compose/ui/Modifier;->Companion:Landroidx/compose/ui/Modifier$Companion;
 
-    .line 314
-    invoke-static {}, Landroidx/compose/foundation/AndroidOverscrollKt;->access$getStretchOverscrollNonClippingLayer$p()Landroidx/compose/ui/Modifier;
+    .line 318
+    invoke-static {}, Landroidx/compose/foundation/AndroidOverscroll_androidKt;->access$getStretchOverscrollNonClippingLayer$p()Landroidx/compose/ui/Modifier;
 
     move-result-object v1
 
@@ -382,7 +387,7 @@
 
     move-result-object p2
 
-    .line 315
+    .line 319
     sget-object v1, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
 
     new-instance v2, Landroidx/compose/foundation/AndroidEdgeEffectOverscrollEffect$effectModifier$1;
@@ -395,15 +400,15 @@
 
     move-result-object p2
 
-    .line 337
+    .line 341
     invoke-static {p2, p1}, Landroidx/compose/ui/layout/OnRemeasuredModifierKt;->onSizeChanged(Landroidx/compose/ui/Modifier;Lkotlin/jvm/functions/Function1;)Landroidx/compose/ui/Modifier;
 
     move-result-object p1
 
-    .line 339
+    .line 343
     new-instance p2, Landroidx/compose/foundation/DrawOverscrollModifier;
 
-    .line 596
+    .line 602
     invoke-static {}, Landroidx/compose/ui/platform/InspectableValueKt;->isDebugInspectorInfoEnabled()Z
 
     move-result v0
@@ -423,13 +428,13 @@
 
     move-result-object v0
 
-    .line 339
+    .line 343
     :goto_1
     invoke-direct {p2, p0, v0}, Landroidx/compose/foundation/DrawOverscrollModifier;-><init>(Landroidx/compose/foundation/AndroidEdgeEffectOverscrollEffect;Lkotlin/jvm/functions/Function1;)V
 
     check-cast p2, Landroidx/compose/ui/Modifier;
 
-    .line 338
+    .line 342
     invoke-interface {p1, p2}, Landroidx/compose/ui/Modifier;->then(Landroidx/compose/ui/Modifier;)Landroidx/compose/ui/Modifier;
 
     move-result-object p1
@@ -442,7 +447,7 @@
 .method public static final synthetic access$animateToRelease(Landroidx/compose/foundation/AndroidEdgeEffectOverscrollEffect;)V
     .locals 0
 
-    .line 101
+    .line 103
     invoke-direct {p0}, Landroidx/compose/foundation/AndroidEdgeEffectOverscrollEffect;->animateToRelease()V
 
     return-void
@@ -451,7 +456,7 @@
 .method public static final synthetic access$getBottomEffect$p(Landroidx/compose/foundation/AndroidEdgeEffectOverscrollEffect;)Landroid/widget/EdgeEffect;
     .locals 0
 
-    .line 101
+    .line 103
     iget-object p0, p0, Landroidx/compose/foundation/AndroidEdgeEffectOverscrollEffect;->bottomEffect:Landroid/widget/EdgeEffect;
 
     return-object p0
@@ -460,7 +465,7 @@
 .method public static final synthetic access$getBottomEffectNegation$p(Landroidx/compose/foundation/AndroidEdgeEffectOverscrollEffect;)Landroid/widget/EdgeEffect;
     .locals 0
 
-    .line 101
+    .line 103
     iget-object p0, p0, Landroidx/compose/foundation/AndroidEdgeEffectOverscrollEffect;->bottomEffectNegation:Landroid/widget/EdgeEffect;
 
     return-object p0
@@ -469,7 +474,7 @@
 .method public static final synthetic access$getContainerSize$p(Landroidx/compose/foundation/AndroidEdgeEffectOverscrollEffect;)J
     .locals 2
 
-    .line 101
+    .line 103
     iget-wide v0, p0, Landroidx/compose/foundation/AndroidEdgeEffectOverscrollEffect;->containerSize:J
 
     return-wide v0
@@ -478,7 +483,7 @@
 .method public static final synthetic access$getLeftEffect$p(Landroidx/compose/foundation/AndroidEdgeEffectOverscrollEffect;)Landroid/widget/EdgeEffect;
     .locals 0
 
-    .line 101
+    .line 103
     iget-object p0, p0, Landroidx/compose/foundation/AndroidEdgeEffectOverscrollEffect;->leftEffect:Landroid/widget/EdgeEffect;
 
     return-object p0
@@ -487,7 +492,7 @@
 .method public static final synthetic access$getLeftEffectNegation$p(Landroidx/compose/foundation/AndroidEdgeEffectOverscrollEffect;)Landroid/widget/EdgeEffect;
     .locals 0
 
-    .line 101
+    .line 103
     iget-object p0, p0, Landroidx/compose/foundation/AndroidEdgeEffectOverscrollEffect;->leftEffectNegation:Landroid/widget/EdgeEffect;
 
     return-object p0
@@ -496,7 +501,7 @@
 .method public static final synthetic access$getPointerId$p(Landroidx/compose/foundation/AndroidEdgeEffectOverscrollEffect;)Landroidx/compose/ui/input/pointer/PointerId;
     .locals 0
 
-    .line 101
+    .line 103
     iget-object p0, p0, Landroidx/compose/foundation/AndroidEdgeEffectOverscrollEffect;->pointerId:Landroidx/compose/ui/input/pointer/PointerId;
 
     return-object p0
@@ -505,7 +510,7 @@
 .method public static final synthetic access$getRightEffect$p(Landroidx/compose/foundation/AndroidEdgeEffectOverscrollEffect;)Landroid/widget/EdgeEffect;
     .locals 0
 
-    .line 101
+    .line 103
     iget-object p0, p0, Landroidx/compose/foundation/AndroidEdgeEffectOverscrollEffect;->rightEffect:Landroid/widget/EdgeEffect;
 
     return-object p0
@@ -514,7 +519,7 @@
 .method public static final synthetic access$getRightEffectNegation$p(Landroidx/compose/foundation/AndroidEdgeEffectOverscrollEffect;)Landroid/widget/EdgeEffect;
     .locals 0
 
-    .line 101
+    .line 103
     iget-object p0, p0, Landroidx/compose/foundation/AndroidEdgeEffectOverscrollEffect;->rightEffectNegation:Landroid/widget/EdgeEffect;
 
     return-object p0
@@ -523,7 +528,7 @@
 .method public static final synthetic access$getTopEffect$p(Landroidx/compose/foundation/AndroidEdgeEffectOverscrollEffect;)Landroid/widget/EdgeEffect;
     .locals 0
 
-    .line 101
+    .line 103
     iget-object p0, p0, Landroidx/compose/foundation/AndroidEdgeEffectOverscrollEffect;->topEffect:Landroid/widget/EdgeEffect;
 
     return-object p0
@@ -532,7 +537,7 @@
 .method public static final synthetic access$getTopEffectNegation$p(Landroidx/compose/foundation/AndroidEdgeEffectOverscrollEffect;)Landroid/widget/EdgeEffect;
     .locals 0
 
-    .line 101
+    .line 103
     iget-object p0, p0, Landroidx/compose/foundation/AndroidEdgeEffectOverscrollEffect;->topEffectNegation:Landroid/widget/EdgeEffect;
 
     return-object p0
@@ -541,7 +546,7 @@
 .method public static final synthetic access$invalidateOverscroll(Landroidx/compose/foundation/AndroidEdgeEffectOverscrollEffect;)V
     .locals 0
 
-    .line 101
+    .line 103
     invoke-direct {p0}, Landroidx/compose/foundation/AndroidEdgeEffectOverscrollEffect;->invalidateOverscroll()V
 
     return-void
@@ -550,7 +555,7 @@
 .method public static final synthetic access$setContainerSize$p(Landroidx/compose/foundation/AndroidEdgeEffectOverscrollEffect;J)V
     .locals 0
 
-    .line 101
+    .line 103
     iput-wide p1, p0, Landroidx/compose/foundation/AndroidEdgeEffectOverscrollEffect;->containerSize:J
 
     return-void
@@ -559,7 +564,7 @@
 .method public static final synthetic access$setPointerId$p(Landroidx/compose/foundation/AndroidEdgeEffectOverscrollEffect;Landroidx/compose/ui/input/pointer/PointerId;)V
     .locals 0
 
-    .line 101
+    .line 103
     iput-object p1, p0, Landroidx/compose/foundation/AndroidEdgeEffectOverscrollEffect;->pointerId:Landroidx/compose/ui/input/pointer/PointerId;
 
     return-void
@@ -568,7 +573,7 @@
 .method public static final synthetic access$setPointerPosition$p(Landroidx/compose/foundation/AndroidEdgeEffectOverscrollEffect;Landroidx/compose/ui/geometry/Offset;)V
     .locals 0
 
-    .line 101
+    .line 103
     iput-object p1, p0, Landroidx/compose/foundation/AndroidEdgeEffectOverscrollEffect;->pointerPosition:Landroidx/compose/ui/geometry/Offset;
 
     return-void
@@ -577,10 +582,10 @@
 .method private final animateToRelease()V
     .locals 6
 
-    .line 445
+    .line 451
     iget-object v0, p0, Landroidx/compose/foundation/AndroidEdgeEffectOverscrollEffect;->allEffects:Ljava/util/List;
 
-    .line 608
+    .line 617
     invoke-interface {v0}, Ljava/util/List;->size()I
 
     move-result v1
@@ -594,18 +599,18 @@
     :goto_0
     if-ge v3, v1, :cond_2
 
-    .line 609
+    .line 618
     invoke-interface {v0, v3}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
     move-result-object v5
 
-    .line 610
+    .line 619
     check-cast v5, Landroid/widget/EdgeEffect;
 
-    .line 446
+    .line 452
     invoke-virtual {v5}, Landroid/widget/EdgeEffect;->onRelease()V
 
-    .line 447
+    .line 453
     invoke-virtual {v5}, Landroid/widget/EdgeEffect;->isFinished()Z
 
     move-result v5
@@ -633,7 +638,7 @@
     :cond_2
     if-eqz v4, :cond_3
 
-    .line 449
+    .line 455
     invoke-direct {p0}, Landroidx/compose/foundation/AndroidEdgeEffectOverscrollEffect;->invalidateOverscroll()V
 
     :cond_3
@@ -643,17 +648,17 @@
 .method private final drawBottom(Landroidx/compose/ui/graphics/drawscope/DrawScope;Landroid/widget/EdgeEffect;Landroid/graphics/Canvas;)Z
     .locals 4
 
-    .line 427
+    .line 431
     invoke-virtual {p3}, Landroid/graphics/Canvas;->save()I
 
     move-result v0
 
     const/high16 v1, 0x43340000    # 180.0f
 
-    .line 428
+    .line 432
     invoke-virtual {p3, v1}, Landroid/graphics/Canvas;->rotate(F)V
 
-    .line 429
+    .line 433
     iget-object v1, p0, Landroidx/compose/foundation/AndroidEdgeEffectOverscrollEffect;->overscrollConfig:Landroidx/compose/foundation/OverscrollConfiguration;
 
     invoke-virtual {v1}, Landroidx/compose/foundation/OverscrollConfiguration;->getDrawPadding()Landroidx/compose/foundation/layout/PaddingValues;
@@ -668,7 +673,7 @@
 
     move-result p1
 
-    .line 430
+    .line 434
     iget-wide v1, p0, Landroidx/compose/foundation/AndroidEdgeEffectOverscrollEffect;->containerSize:J
 
     invoke-static {v1, v2}, Landroidx/compose/ui/geometry/Size;->getWidth-impl(J)F
@@ -689,12 +694,12 @@
 
     invoke-virtual {p3, v1, p0}, Landroid/graphics/Canvas;->translate(FF)V
 
-    .line 431
+    .line 435
     invoke-virtual {p2, p3}, Landroid/widget/EdgeEffect;->draw(Landroid/graphics/Canvas;)Z
 
     move-result p0
 
-    .line 432
+    .line 436
     invoke-virtual {p3, v0}, Landroid/graphics/Canvas;->restoreToCount(I)V
 
     return p0
@@ -703,17 +708,17 @@
 .method private final drawLeft(Landroidx/compose/ui/graphics/drawscope/DrawScope;Landroid/widget/EdgeEffect;Landroid/graphics/Canvas;)Z
     .locals 3
 
-    .line 396
+    .line 400
     invoke-virtual {p3}, Landroid/graphics/Canvas;->save()I
 
     move-result v0
 
     const/high16 v1, 0x43870000    # 270.0f
 
-    .line 397
+    .line 401
     invoke-virtual {p3, v1}, Landroid/graphics/Canvas;->rotate(F)V
 
-    .line 399
+    .line 403
     iget-wide v1, p0, Landroidx/compose/foundation/AndroidEdgeEffectOverscrollEffect;->containerSize:J
 
     invoke-static {v1, v2}, Landroidx/compose/ui/geometry/Size;->getHeight-impl(J)F
@@ -722,7 +727,7 @@
 
     neg-float v1, v1
 
-    .line 400
+    .line 404
     iget-object p0, p0, Landroidx/compose/foundation/AndroidEdgeEffectOverscrollEffect;->overscrollConfig:Landroidx/compose/foundation/OverscrollConfiguration;
 
     invoke-virtual {p0}, Landroidx/compose/foundation/OverscrollConfiguration;->getDrawPadding()Landroidx/compose/foundation/layout/PaddingValues;
@@ -741,15 +746,15 @@
 
     move-result p0
 
-    .line 398
+    .line 402
     invoke-virtual {p3, v1, p0}, Landroid/graphics/Canvas;->translate(FF)V
 
-    .line 402
+    .line 406
     invoke-virtual {p2, p3}, Landroid/widget/EdgeEffect;->draw(Landroid/graphics/Canvas;)Z
 
     move-result p0
 
-    .line 403
+    .line 407
     invoke-virtual {p3, v0}, Landroid/graphics/Canvas;->restoreToCount(I)V
 
     return p0
@@ -758,12 +763,12 @@
 .method private final drawRight(Landroidx/compose/ui/graphics/drawscope/DrawScope;Landroid/widget/EdgeEffect;Landroid/graphics/Canvas;)Z
     .locals 3
 
-    .line 416
+    .line 420
     invoke-virtual {p3}, Landroid/graphics/Canvas;->save()I
 
     move-result v0
 
-    .line 417
+    .line 421
     iget-wide v1, p0, Landroidx/compose/foundation/AndroidEdgeEffectOverscrollEffect;->containerSize:J
 
     invoke-static {v1, v2}, Landroidx/compose/ui/geometry/Size;->getWidth-impl(J)F
@@ -774,7 +779,7 @@
 
     move-result v1
 
-    .line 418
+    .line 422
     iget-object p0, p0, Landroidx/compose/foundation/AndroidEdgeEffectOverscrollEffect;->overscrollConfig:Landroidx/compose/foundation/OverscrollConfiguration;
 
     invoke-virtual {p0}, Landroidx/compose/foundation/OverscrollConfiguration;->getDrawPadding()Landroidx/compose/foundation/layout/PaddingValues;
@@ -791,14 +796,14 @@
 
     const/high16 v2, 0x42b40000    # 90.0f
 
-    .line 419
+    .line 423
     invoke-virtual {p3, v2}, Landroid/graphics/Canvas;->rotate(F)V
 
     int-to-float v1, v1
 
     neg-float v1, v1
 
-    .line 420
+    .line 424
     invoke-interface {p1, p0}, Landroidx/compose/ui/graphics/drawscope/DrawScope;->toPx-0680j_4(F)F
 
     move-result p0
@@ -809,12 +814,12 @@
 
     invoke-virtual {p3, p0, v1}, Landroid/graphics/Canvas;->translate(FF)V
 
-    .line 421
+    .line 425
     invoke-virtual {p2, p3}, Landroid/widget/EdgeEffect;->draw(Landroid/graphics/Canvas;)Z
 
     move-result p0
 
-    .line 422
+    .line 426
     invoke-virtual {p3, v0}, Landroid/graphics/Canvas;->restoreToCount(I)V
 
     return p0
@@ -823,12 +828,12 @@
 .method private final drawTop(Landroidx/compose/ui/graphics/drawscope/DrawScope;Landroid/widget/EdgeEffect;Landroid/graphics/Canvas;)Z
     .locals 1
 
-    .line 408
+    .line 412
     invoke-virtual {p3}, Landroid/graphics/Canvas;->save()I
 
     move-result v0
 
-    .line 409
+    .line 413
     iget-object p0, p0, Landroidx/compose/foundation/AndroidEdgeEffectOverscrollEffect;->overscrollConfig:Landroidx/compose/foundation/OverscrollConfiguration;
 
     invoke-virtual {p0}, Landroidx/compose/foundation/OverscrollConfiguration;->getDrawPadding()Landroidx/compose/foundation/layout/PaddingValues;
@@ -847,13 +852,29 @@
 
     invoke-virtual {p3, p1, p0}, Landroid/graphics/Canvas;->translate(FF)V
 
-    .line 410
+    .line 414
     invoke-virtual {p2, p3}, Landroid/widget/EdgeEffect;->draw(Landroid/graphics/Canvas;)Z
 
     move-result p0
 
-    .line 411
+    .line 415
     invoke-virtual {p3, v0}, Landroid/graphics/Canvas;->restoreToCount(I)V
+
+    return p0
+.end method
+
+.method private final getInvalidateCount()I
+    .locals 0
+
+    .line 130
+    iget-object p0, p0, Landroidx/compose/foundation/AndroidEdgeEffectOverscrollEffect;->invalidateCount$delegate:Landroidx/compose/runtime/MutableIntState;
+
+    check-cast p0, Landroidx/compose/runtime/IntState;
+
+    .line 603
+    invoke-interface {p0}, Landroidx/compose/runtime/IntState;->getIntValue()I
+
+    move-result p0
 
     return p0
 .end method
@@ -865,19 +886,30 @@
 .end method
 
 .method private final invalidateOverscroll()V
-    .locals 1
+    .locals 2
 
-    .line 437
+    .line 441
     iget-boolean v0, p0, Landroidx/compose/foundation/AndroidEdgeEffectOverscrollEffect;->invalidationEnabled:Z
 
     if-eqz v0, :cond_0
 
-    .line 438
-    iget-object p0, p0, Landroidx/compose/foundation/AndroidEdgeEffectOverscrollEffect;->redrawSignal:Landroidx/compose/runtime/MutableState;
+    .line 442
+    iget v0, p0, Landroidx/compose/foundation/AndroidEdgeEffectOverscrollEffect;->consumeCount:I
 
-    sget-object v0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
+    invoke-direct {p0}, Landroidx/compose/foundation/AndroidEdgeEffectOverscrollEffect;->getInvalidateCount()I
 
-    invoke-interface {p0, v0}, Landroidx/compose/runtime/MutableState;->setValue(Ljava/lang/Object;)V
+    move-result v1
+
+    if-ne v0, v1, :cond_0
+
+    .line 443
+    invoke-direct {p0}, Landroidx/compose/foundation/AndroidEdgeEffectOverscrollEffect;->getInvalidateCount()I
+
+    move-result v0
+
+    add-int/lit8 v0, v0, 0x1
+
+    invoke-direct {p0, v0}, Landroidx/compose/foundation/AndroidEdgeEffectOverscrollEffect;->setInvalidateCount(I)V
 
     :cond_0
     return-void
@@ -886,7 +918,7 @@
 .method private final pullBottom-0a9Yr6o(JJ)F
     .locals 3
 
-    .line 487
+    .line 493
     invoke-static {p3, p4}, Landroidx/compose/ui/geometry/Offset;->getX-impl(J)F
 
     move-result p3
@@ -899,7 +931,7 @@
 
     div-float/2addr p3, p4
 
-    .line 488
+    .line 494
     invoke-static {p1, p2}, Landroidx/compose/ui/geometry/Offset;->getY-impl(J)F
 
     move-result p4
@@ -912,7 +944,7 @@
 
     div-float/2addr p4, v0
 
-    .line 489
+    .line 495
     sget-object v0, Landroidx/compose/foundation/EdgeEffectCompat;->INSTANCE:Landroidx/compose/foundation/EdgeEffectCompat;
 
     iget-object v1, p0, Landroidx/compose/foundation/AndroidEdgeEffectOverscrollEffect;->bottomEffect:Landroid/widget/EdgeEffect;
@@ -931,7 +963,7 @@
 
     neg-float p3, p3
 
-    .line 492
+    .line 498
     iget-wide v0, p0, Landroidx/compose/foundation/AndroidEdgeEffectOverscrollEffect;->containerSize:J
 
     invoke-static {v0, v1}, Landroidx/compose/ui/geometry/Size;->getHeight-impl(J)F
@@ -940,7 +972,7 @@
 
     mul-float/2addr p3, p4
 
-    .line 495
+    .line 501
     sget-object p4, Landroidx/compose/foundation/EdgeEffectCompat;->INSTANCE:Landroidx/compose/foundation/EdgeEffectCompat;
 
     iget-object p0, p0, Landroidx/compose/foundation/AndroidEdgeEffectOverscrollEffect;->bottomEffect:Landroid/widget/EdgeEffect;
@@ -957,7 +989,7 @@
 
     goto :goto_0
 
-    .line 496
+    .line 502
     :cond_0
     invoke-static {p1, p2}, Landroidx/compose/ui/geometry/Offset;->getY-impl(J)F
 
@@ -970,7 +1002,7 @@
 .method private final pullLeft-0a9Yr6o(JJ)F
     .locals 3
 
-    .line 503
+    .line 509
     invoke-static {p3, p4}, Landroidx/compose/ui/geometry/Offset;->getY-impl(J)F
 
     move-result p3
@@ -983,7 +1015,7 @@
 
     div-float/2addr p3, p4
 
-    .line 504
+    .line 510
     invoke-static {p1, p2}, Landroidx/compose/ui/geometry/Offset;->getX-impl(J)F
 
     move-result p4
@@ -996,7 +1028,7 @@
 
     div-float/2addr p4, v0
 
-    .line 505
+    .line 511
     sget-object v0, Landroidx/compose/foundation/EdgeEffectCompat;->INSTANCE:Landroidx/compose/foundation/EdgeEffectCompat;
 
     iget-object v1, p0, Landroidx/compose/foundation/AndroidEdgeEffectOverscrollEffect;->leftEffect:Landroid/widget/EdgeEffect;
@@ -1011,7 +1043,7 @@
 
     move-result p3
 
-    .line 508
+    .line 514
     iget-wide v0, p0, Landroidx/compose/foundation/AndroidEdgeEffectOverscrollEffect;->containerSize:J
 
     invoke-static {v0, v1}, Landroidx/compose/ui/geometry/Size;->getWidth-impl(J)F
@@ -1020,7 +1052,7 @@
 
     mul-float/2addr p3, p4
 
-    .line 511
+    .line 517
     sget-object p4, Landroidx/compose/foundation/EdgeEffectCompat;->INSTANCE:Landroidx/compose/foundation/EdgeEffectCompat;
 
     iget-object p0, p0, Landroidx/compose/foundation/AndroidEdgeEffectOverscrollEffect;->leftEffect:Landroid/widget/EdgeEffect;
@@ -1037,7 +1069,7 @@
 
     goto :goto_0
 
-    .line 512
+    .line 518
     :cond_0
     invoke-static {p1, p2}, Landroidx/compose/ui/geometry/Offset;->getX-impl(J)F
 
@@ -1050,7 +1082,7 @@
 .method private final pullRight-0a9Yr6o(JJ)F
     .locals 2
 
-    .line 519
+    .line 525
     invoke-static {p3, p4}, Landroidx/compose/ui/geometry/Offset;->getY-impl(J)F
 
     move-result p3
@@ -1063,7 +1095,7 @@
 
     div-float/2addr p3, p4
 
-    .line 520
+    .line 526
     invoke-static {p1, p2}, Landroidx/compose/ui/geometry/Offset;->getX-impl(J)F
 
     move-result p4
@@ -1076,7 +1108,7 @@
 
     div-float/2addr p4, v0
 
-    .line 521
+    .line 527
     sget-object v0, Landroidx/compose/foundation/EdgeEffectCompat;->INSTANCE:Landroidx/compose/foundation/EdgeEffectCompat;
 
     iget-object v1, p0, Landroidx/compose/foundation/AndroidEdgeEffectOverscrollEffect;->rightEffect:Landroid/widget/EdgeEffect;
@@ -1089,7 +1121,7 @@
 
     neg-float p3, p3
 
-    .line 524
+    .line 530
     iget-wide v0, p0, Landroidx/compose/foundation/AndroidEdgeEffectOverscrollEffect;->containerSize:J
 
     invoke-static {v0, v1}, Landroidx/compose/ui/geometry/Size;->getWidth-impl(J)F
@@ -1098,7 +1130,7 @@
 
     mul-float/2addr p3, p4
 
-    .line 527
+    .line 533
     sget-object p4, Landroidx/compose/foundation/EdgeEffectCompat;->INSTANCE:Landroidx/compose/foundation/EdgeEffectCompat;
 
     iget-object p0, p0, Landroidx/compose/foundation/AndroidEdgeEffectOverscrollEffect;->rightEffect:Landroid/widget/EdgeEffect;
@@ -1115,7 +1147,7 @@
 
     goto :goto_0
 
-    .line 528
+    .line 534
     :cond_0
     invoke-static {p1, p2}, Landroidx/compose/ui/geometry/Offset;->getX-impl(J)F
 
@@ -1128,7 +1160,7 @@
 .method private final pullTop-0a9Yr6o(JJ)F
     .locals 2
 
-    .line 474
+    .line 480
     invoke-static {p3, p4}, Landroidx/compose/ui/geometry/Offset;->getX-impl(J)F
 
     move-result p3
@@ -1141,7 +1173,7 @@
 
     div-float/2addr p3, p4
 
-    .line 475
+    .line 481
     invoke-static {p1, p2}, Landroidx/compose/ui/geometry/Offset;->getY-impl(J)F
 
     move-result p4
@@ -1154,7 +1186,7 @@
 
     div-float/2addr p4, v0
 
-    .line 476
+    .line 482
     sget-object v0, Landroidx/compose/foundation/EdgeEffectCompat;->INSTANCE:Landroidx/compose/foundation/EdgeEffectCompat;
 
     iget-object v1, p0, Landroidx/compose/foundation/AndroidEdgeEffectOverscrollEffect;->topEffect:Landroid/widget/EdgeEffect;
@@ -1171,7 +1203,7 @@
 
     mul-float/2addr p3, p4
 
-    .line 479
+    .line 485
     sget-object p4, Landroidx/compose/foundation/EdgeEffectCompat;->INSTANCE:Landroidx/compose/foundation/EdgeEffectCompat;
 
     iget-object p0, p0, Landroidx/compose/foundation/AndroidEdgeEffectOverscrollEffect;->topEffect:Landroid/widget/EdgeEffect;
@@ -1188,7 +1220,7 @@
 
     goto :goto_0
 
-    .line 480
+    .line 486
     :cond_0
     invoke-static {p1, p2}, Landroidx/compose/ui/geometry/Offset;->getY-impl(J)F
 
@@ -1201,7 +1233,7 @@
 .method private final releaseOppositeOverscroll-k-4lQ0M(J)Z
     .locals 7
 
-    .line 454
+    .line 460
     iget-object v0, p0, Landroidx/compose/foundation/AndroidEdgeEffectOverscrollEffect;->leftEffect:Landroid/widget/EdgeEffect;
 
     invoke-virtual {v0}, Landroid/widget/EdgeEffect;->isFinished()Z
@@ -1222,7 +1254,7 @@
 
     if-gez v0, :cond_0
 
-    .line 455
+    .line 461
     sget-object v0, Landroidx/compose/foundation/EdgeEffectCompat;->INSTANCE:Landroidx/compose/foundation/EdgeEffectCompat;
 
     iget-object v3, p0, Landroidx/compose/foundation/AndroidEdgeEffectOverscrollEffect;->leftEffect:Landroid/widget/EdgeEffect;
@@ -1233,7 +1265,7 @@
 
     invoke-virtual {v0, v3, v4}, Landroidx/compose/foundation/EdgeEffectCompat;->onReleaseWithOppositeDelta(Landroid/widget/EdgeEffect;F)V
 
-    .line 456
+    .line 462
     iget-object v0, p0, Landroidx/compose/foundation/AndroidEdgeEffectOverscrollEffect;->leftEffect:Landroid/widget/EdgeEffect;
 
     invoke-virtual {v0}, Landroid/widget/EdgeEffect;->isFinished()Z
@@ -1245,7 +1277,7 @@
     :cond_0
     move v0, v2
 
-    .line 458
+    .line 464
     :goto_0
     iget-object v3, p0, Landroidx/compose/foundation/AndroidEdgeEffectOverscrollEffect;->rightEffect:Landroid/widget/EdgeEffect;
 
@@ -1265,7 +1297,7 @@
 
     if-lez v3, :cond_3
 
-    .line 459
+    .line 465
     sget-object v3, Landroidx/compose/foundation/EdgeEffectCompat;->INSTANCE:Landroidx/compose/foundation/EdgeEffectCompat;
 
     iget-object v5, p0, Landroidx/compose/foundation/AndroidEdgeEffectOverscrollEffect;->rightEffect:Landroid/widget/EdgeEffect;
@@ -1278,7 +1310,7 @@
 
     if-nez v0, :cond_2
 
-    .line 460
+    .line 466
     iget-object v0, p0, Landroidx/compose/foundation/AndroidEdgeEffectOverscrollEffect;->rightEffect:Landroid/widget/EdgeEffect;
 
     invoke-virtual {v0}, Landroid/widget/EdgeEffect;->isFinished()Z
@@ -1298,7 +1330,7 @@
     :goto_1
     move v0, v4
 
-    .line 462
+    .line 468
     :cond_3
     :goto_2
     iget-object v3, p0, Landroidx/compose/foundation/AndroidEdgeEffectOverscrollEffect;->topEffect:Landroid/widget/EdgeEffect;
@@ -1317,7 +1349,7 @@
 
     if-gez v3, :cond_6
 
-    .line 463
+    .line 469
     sget-object v3, Landroidx/compose/foundation/EdgeEffectCompat;->INSTANCE:Landroidx/compose/foundation/EdgeEffectCompat;
 
     iget-object v5, p0, Landroidx/compose/foundation/AndroidEdgeEffectOverscrollEffect;->topEffect:Landroid/widget/EdgeEffect;
@@ -1330,7 +1362,7 @@
 
     if-nez v0, :cond_5
 
-    .line 464
+    .line 470
     iget-object v0, p0, Landroidx/compose/foundation/AndroidEdgeEffectOverscrollEffect;->topEffect:Landroid/widget/EdgeEffect;
 
     invoke-virtual {v0}, Landroid/widget/EdgeEffect;->isFinished()Z
@@ -1350,7 +1382,7 @@
     :goto_3
     move v0, v4
 
-    .line 466
+    .line 472
     :cond_6
     :goto_4
     iget-object v3, p0, Landroidx/compose/foundation/AndroidEdgeEffectOverscrollEffect;->bottomEffect:Landroid/widget/EdgeEffect;
@@ -1369,7 +1401,7 @@
 
     if-lez v1, :cond_9
 
-    .line 467
+    .line 473
     sget-object v1, Landroidx/compose/foundation/EdgeEffectCompat;->INSTANCE:Landroidx/compose/foundation/EdgeEffectCompat;
 
     iget-object v3, p0, Landroidx/compose/foundation/AndroidEdgeEffectOverscrollEffect;->bottomEffect:Landroid/widget/EdgeEffect;
@@ -1382,7 +1414,7 @@
 
     if-nez v0, :cond_7
 
-    .line 468
+    .line 474
     iget-object p0, p0, Landroidx/compose/foundation/AndroidEdgeEffectOverscrollEffect;->bottomEffect:Landroid/widget/EdgeEffect;
 
     invoke-virtual {p0}, Landroid/widget/EdgeEffect;->isFinished()Z
@@ -1401,17 +1433,29 @@
     return v0
 .end method
 
+.method private final setInvalidateCount(I)V
+    .locals 0
+
+    .line 130
+    iget-object p0, p0, Landroidx/compose/foundation/AndroidEdgeEffectOverscrollEffect;->invalidateCount$delegate:Landroidx/compose/runtime/MutableIntState;
+
+    .line 604
+    invoke-interface {p0, p1}, Landroidx/compose/runtime/MutableIntState;->setIntValue(I)V
+
+    return-void
+.end method
+
 .method private final stopOverscrollAnimation()Z
     .locals 7
 
-    .line 271
+    .line 275
     iget-wide v0, p0, Landroidx/compose/foundation/AndroidEdgeEffectOverscrollEffect;->containerSize:J
 
     invoke-static {v0, v1}, Landroidx/compose/ui/geometry/SizeKt;->getCenter-uvyYCjk(J)J
 
     move-result-wide v0
 
-    .line 272
+    .line 276
     sget-object v2, Landroidx/compose/foundation/EdgeEffectCompat;->INSTANCE:Landroidx/compose/foundation/EdgeEffectCompat;
 
     iget-object v3, p0, Landroidx/compose/foundation/AndroidEdgeEffectOverscrollEffect;->leftEffect:Landroid/widget/EdgeEffect;
@@ -1432,7 +1476,7 @@
 
     goto :goto_0
 
-    .line 273
+    .line 277
     :cond_0
     sget-object v2, Landroidx/compose/ui/geometry/Offset;->Companion:Landroidx/compose/ui/geometry/Offset$Companion;
 
@@ -1444,7 +1488,7 @@
 
     move v2, v4
 
-    .line 276
+    .line 280
     :goto_0
     sget-object v5, Landroidx/compose/foundation/EdgeEffectCompat;->INSTANCE:Landroidx/compose/foundation/EdgeEffectCompat;
 
@@ -1460,7 +1504,7 @@
 
     goto :goto_1
 
-    .line 277
+    .line 281
     :cond_1
     sget-object v2, Landroidx/compose/ui/geometry/Offset;->Companion:Landroidx/compose/ui/geometry/Offset$Companion;
 
@@ -1472,7 +1516,7 @@
 
     move v2, v4
 
-    .line 280
+    .line 284
     :goto_1
     sget-object v5, Landroidx/compose/foundation/EdgeEffectCompat;->INSTANCE:Landroidx/compose/foundation/EdgeEffectCompat;
 
@@ -1488,7 +1532,7 @@
 
     goto :goto_2
 
-    .line 281
+    .line 285
     :cond_2
     sget-object v2, Landroidx/compose/ui/geometry/Offset;->Companion:Landroidx/compose/ui/geometry/Offset$Companion;
 
@@ -1500,7 +1544,7 @@
 
     move v2, v4
 
-    .line 284
+    .line 288
     :goto_2
     sget-object v5, Landroidx/compose/foundation/EdgeEffectCompat;->INSTANCE:Landroidx/compose/foundation/EdgeEffectCompat;
 
@@ -1518,7 +1562,7 @@
 
     goto :goto_3
 
-    .line 285
+    .line 289
     :cond_3
     sget-object v2, Landroidx/compose/ui/geometry/Offset;->Companion:Landroidx/compose/ui/geometry/Offset$Companion;
 
@@ -1599,7 +1643,7 @@
 
     move-result-object v4
 
-    .line 213
+    .line 217
     iget v5, v3, Landroidx/compose/foundation/AndroidEdgeEffectOverscrollEffect$applyToFling$1;->label:I
 
     const/4 v6, 0x2
@@ -1645,7 +1689,7 @@
     :cond_3
     invoke-static {v2}, Lkotlin/ResultKt;->throwOnFailure(Ljava/lang/Object;)V
 
-    .line 218
+    .line 222
     iget-wide v9, v0, Landroidx/compose/foundation/AndroidEdgeEffectOverscrollEffect;->containerSize:J
 
     invoke-static {v9, v10}, Landroidx/compose/ui/geometry/Size;->isEmpty-impl(J)Z
@@ -1654,7 +1698,7 @@
 
     if-eqz v2, :cond_5
 
-    .line 219
+    .line 223
     invoke-static {p1, p2}, Landroidx/compose/ui/unit/Velocity;->box-impl(J)Landroidx/compose/ui/unit/Velocity;
 
     move-result-object v0
@@ -1669,14 +1713,14 @@
 
     return-object v4
 
-    .line 220
+    .line 224
     :cond_4
     :goto_1
     sget-object v0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
 
     return-object v0
 
-    .line 222
+    .line 226
     :cond_5
     invoke-static {p1, p2}, Landroidx/compose/ui/unit/Velocity;->getX-impl(J)F
 
@@ -1700,7 +1744,7 @@
 
     goto :goto_2
 
-    .line 223
+    .line 227
     :cond_6
     sget-object v2, Landroidx/compose/foundation/EdgeEffectCompat;->INSTANCE:Landroidx/compose/foundation/EdgeEffectCompat;
 
@@ -1716,14 +1760,14 @@
 
     invoke-virtual {v2, v5, v7}, Landroidx/compose/foundation/EdgeEffectCompat;->onAbsorbCompat(Landroid/widget/EdgeEffect;I)V
 
-    .line 224
+    .line 228
     invoke-static {p1, p2}, Landroidx/compose/ui/unit/Velocity;->getX-impl(J)F
 
     move-result v2
 
     goto :goto_4
 
-    .line 225
+    .line 229
     :cond_7
     :goto_2
     invoke-static {p1, p2}, Landroidx/compose/ui/unit/Velocity;->getX-impl(J)F
@@ -1748,7 +1792,7 @@
 
     goto :goto_3
 
-    .line 226
+    .line 230
     :cond_8
     sget-object v2, Landroidx/compose/foundation/EdgeEffectCompat;->INSTANCE:Landroidx/compose/foundation/EdgeEffectCompat;
 
@@ -1766,7 +1810,7 @@
 
     invoke-virtual {v2, v5, v7}, Landroidx/compose/foundation/EdgeEffectCompat;->onAbsorbCompat(Landroid/widget/EdgeEffect;I)V
 
-    .line 227
+    .line 231
     invoke-static {p1, p2}, Landroidx/compose/ui/unit/Velocity;->getX-impl(J)F
 
     move-result v2
@@ -1777,7 +1821,7 @@
     :goto_3
     move v2, v8
 
-    .line 231
+    .line 235
     :goto_4
     invoke-static {p1, p2}, Landroidx/compose/ui/unit/Velocity;->getY-impl(J)F
 
@@ -1801,7 +1845,7 @@
 
     goto :goto_5
 
-    .line 232
+    .line 236
     :cond_a
     sget-object v5, Landroidx/compose/foundation/EdgeEffectCompat;->INSTANCE:Landroidx/compose/foundation/EdgeEffectCompat;
 
@@ -1817,14 +1861,14 @@
 
     invoke-virtual {v5, v7, v9}, Landroidx/compose/foundation/EdgeEffectCompat;->onAbsorbCompat(Landroid/widget/EdgeEffect;I)V
 
-    .line 233
+    .line 237
     invoke-static {p1, p2}, Landroidx/compose/ui/unit/Velocity;->getY-impl(J)F
 
     move-result v5
 
     goto :goto_7
 
-    .line 234
+    .line 238
     :cond_b
     :goto_5
     invoke-static {p1, p2}, Landroidx/compose/ui/unit/Velocity;->getY-impl(J)F
@@ -1849,7 +1893,7 @@
 
     goto :goto_6
 
-    .line 235
+    .line 239
     :cond_c
     sget-object v5, Landroidx/compose/foundation/EdgeEffectCompat;->INSTANCE:Landroidx/compose/foundation/EdgeEffectCompat;
 
@@ -1867,7 +1911,7 @@
 
     invoke-virtual {v5, v7, v9}, Landroidx/compose/foundation/EdgeEffectCompat;->onAbsorbCompat(Landroid/widget/EdgeEffect;I)V
 
-    .line 236
+    .line 240
     invoke-static {p1, p2}, Landroidx/compose/ui/unit/Velocity;->getY-impl(J)F
 
     move-result v5
@@ -1878,13 +1922,13 @@
     :goto_6
     move v5, v8
 
-    .line 240
+    .line 244
     :goto_7
     invoke-static {v2, v5}, Landroidx/compose/ui/unit/VelocityKt;->Velocity(FF)J
 
     move-result-wide v9
 
-    .line 241
+    .line 245
     sget-object v2, Landroidx/compose/ui/unit/Velocity;->Companion:Landroidx/compose/ui/unit/Velocity$Companion;
 
     invoke-virtual {v2}, Landroidx/compose/ui/unit/Velocity$Companion;->getZero-9UxMQ8M()J
@@ -1902,12 +1946,12 @@
     :cond_e
     move-wide v11, p1
 
-    .line 243
+    .line 247
     invoke-static {p1, p2, v9, v10}, Landroidx/compose/ui/unit/Velocity;->minus-AH228Gc(JJ)J
 
     move-result-wide v9
 
-    .line 244
+    .line 248
     invoke-static {v9, v10}, Landroidx/compose/ui/unit/Velocity;->box-impl(J)Landroidx/compose/ui/unit/Velocity;
 
     move-result-object v2
@@ -1934,17 +1978,17 @@
 
     move-result-wide v1
 
-    .line 245
+    .line 249
     invoke-static {v9, v10, v1, v2}, Landroidx/compose/ui/unit/Velocity;->minus-AH228Gc(JJ)J
 
     move-result-wide v1
 
     const/4 v3, 0x0
 
-    .line 247
+    .line 251
     iput-boolean v3, v0, Landroidx/compose/foundation/AndroidEdgeEffectOverscrollEffect;->scrollCycleInProgress:Z
 
-    .line 248
+    .line 252
     invoke-static {v1, v2}, Landroidx/compose/ui/unit/Velocity;->getX-impl(J)F
 
     move-result v3
@@ -1953,7 +1997,7 @@
 
     if-lez v3, :cond_10
 
-    .line 249
+    .line 253
     sget-object v3, Landroidx/compose/foundation/EdgeEffectCompat;->INSTANCE:Landroidx/compose/foundation/EdgeEffectCompat;
 
     iget-object v4, v0, Landroidx/compose/foundation/AndroidEdgeEffectOverscrollEffect;->leftEffect:Landroid/widget/EdgeEffect;
@@ -1970,7 +2014,7 @@
 
     goto :goto_9
 
-    .line 250
+    .line 254
     :cond_10
     invoke-static {v1, v2}, Landroidx/compose/ui/unit/Velocity;->getX-impl(J)F
 
@@ -1980,7 +2024,7 @@
 
     if-gez v3, :cond_11
 
-    .line 251
+    .line 255
     sget-object v3, Landroidx/compose/foundation/EdgeEffectCompat;->INSTANCE:Landroidx/compose/foundation/EdgeEffectCompat;
 
     iget-object v4, v0, Landroidx/compose/foundation/AndroidEdgeEffectOverscrollEffect;->rightEffect:Landroid/widget/EdgeEffect;
@@ -1997,7 +2041,7 @@
 
     invoke-virtual {v3, v4, v5}, Landroidx/compose/foundation/EdgeEffectCompat;->onAbsorbCompat(Landroid/widget/EdgeEffect;I)V
 
-    .line 253
+    .line 257
     :cond_11
     :goto_9
     invoke-static {v1, v2}, Landroidx/compose/ui/unit/Velocity;->getY-impl(J)F
@@ -2008,7 +2052,7 @@
 
     if-lez v3, :cond_12
 
-    .line 254
+    .line 258
     sget-object v3, Landroidx/compose/foundation/EdgeEffectCompat;->INSTANCE:Landroidx/compose/foundation/EdgeEffectCompat;
 
     iget-object v4, v0, Landroidx/compose/foundation/AndroidEdgeEffectOverscrollEffect;->topEffect:Landroid/widget/EdgeEffect;
@@ -2025,7 +2069,7 @@
 
     goto :goto_a
 
-    .line 255
+    .line 259
     :cond_12
     invoke-static {v1, v2}, Landroidx/compose/ui/unit/Velocity;->getY-impl(J)F
 
@@ -2035,7 +2079,7 @@
 
     if-gez v3, :cond_13
 
-    .line 256
+    .line 260
     sget-object v3, Landroidx/compose/foundation/EdgeEffectCompat;->INSTANCE:Landroidx/compose/foundation/EdgeEffectCompat;
 
     iget-object v4, v0, Landroidx/compose/foundation/AndroidEdgeEffectOverscrollEffect;->bottomEffect:Landroid/widget/EdgeEffect;
@@ -2052,7 +2096,7 @@
 
     invoke-virtual {v3, v4, v5}, Landroidx/compose/foundation/EdgeEffectCompat;->onAbsorbCompat(Landroid/widget/EdgeEffect;I)V
 
-    .line 258
+    .line 262
     :cond_13
     :goto_a
     sget-object v3, Landroidx/compose/ui/unit/Velocity;->Companion:Landroidx/compose/ui/unit/Velocity$Companion;
@@ -2069,11 +2113,11 @@
 
     invoke-direct {v0}, Landroidx/compose/foundation/AndroidEdgeEffectOverscrollEffect;->invalidateOverscroll()V
 
-    .line 259
+    .line 263
     :cond_14
     invoke-direct {v0}, Landroidx/compose/foundation/AndroidEdgeEffectOverscrollEffect;->animateToRelease()V
 
-    .line 260
+    .line 264
     sget-object v0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
 
     return-object v0
@@ -2098,11 +2142,7 @@
 
     move-object/from16 v3, p4
 
-    const-string v4, "performScroll"
-
-    invoke-static {v3, v4}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 139
+    .line 143
     iget-wide v4, v0, Landroidx/compose/foundation/AndroidEdgeEffectOverscrollEffect;->containerSize:J
 
     invoke-static {v4, v5}, Landroidx/compose/ui/geometry/Size;->isEmpty-impl(J)Z
@@ -2111,7 +2151,7 @@
 
     if-eqz v4, :cond_0
 
-    .line 140
+    .line 144
     invoke-static/range {p1 .. p2}, Landroidx/compose/ui/geometry/Offset;->box-impl(J)Landroidx/compose/ui/geometry/Offset;
 
     move-result-object v0
@@ -2128,7 +2168,7 @@
 
     return-wide v0
 
-    .line 143
+    .line 147
     :cond_0
     iget-boolean v4, v0, Landroidx/compose/foundation/AndroidEdgeEffectOverscrollEffect;->scrollCycleInProgress:Z
 
@@ -2136,13 +2176,13 @@
 
     if-nez v4, :cond_1
 
-    .line 144
+    .line 148
     invoke-direct/range {p0 .. p0}, Landroidx/compose/foundation/AndroidEdgeEffectOverscrollEffect;->stopOverscrollAnimation()Z
 
-    .line 145
+    .line 149
     iput-boolean v5, v0, Landroidx/compose/foundation/AndroidEdgeEffectOverscrollEffect;->scrollCycleInProgress:Z
 
-    .line 147
+    .line 151
     :cond_1
     iget-object v4, v0, Landroidx/compose/foundation/AndroidEdgeEffectOverscrollEffect;->pointerPosition:Landroidx/compose/ui/geometry/Offset;
 
@@ -2161,7 +2201,7 @@
 
     move-result-wide v6
 
-    .line 149
+    .line 153
     :goto_0
     invoke-static/range {p1 .. p2}, Landroidx/compose/ui/geometry/Offset;->getY-impl(J)F
 
@@ -2178,7 +2218,7 @@
 
     goto :goto_2
 
-    .line 150
+    .line 154
     :cond_3
     sget-object v4, Landroidx/compose/foundation/EdgeEffectCompat;->INSTANCE:Landroidx/compose/foundation/EdgeEffectCompat;
 
@@ -2192,7 +2232,7 @@
 
     if-nez v4, :cond_5
 
-    .line 155
+    .line 159
     sget-object v4, Landroidx/compose/foundation/EdgeEffectCompat;->INSTANCE:Landroidx/compose/foundation/EdgeEffectCompat;
 
     iget-object v9, v0, Landroidx/compose/foundation/AndroidEdgeEffectOverscrollEffect;->bottomEffect:Landroid/widget/EdgeEffect;
@@ -2207,13 +2247,13 @@
 
     goto :goto_1
 
-    .line 156
+    .line 160
     :cond_4
     invoke-direct {v0, v1, v2, v6, v7}, Landroidx/compose/foundation/AndroidEdgeEffectOverscrollEffect;->pullBottom-0a9Yr6o(JJ)F
 
     move-result v4
 
-    .line 157
+    .line 161
     sget-object v9, Landroidx/compose/foundation/EdgeEffectCompat;->INSTANCE:Landroidx/compose/foundation/EdgeEffectCompat;
 
     iget-object v10, v0, Landroidx/compose/foundation/AndroidEdgeEffectOverscrollEffect;->bottomEffect:Landroid/widget/EdgeEffect;
@@ -2232,13 +2272,13 @@
 
     goto :goto_2
 
-    .line 151
+    .line 155
     :cond_5
     invoke-direct {v0, v1, v2, v6, v7}, Landroidx/compose/foundation/AndroidEdgeEffectOverscrollEffect;->pullTop-0a9Yr6o(JJ)F
 
     move-result v4
 
-    .line 152
+    .line 156
     sget-object v9, Landroidx/compose/foundation/EdgeEffectCompat;->INSTANCE:Landroidx/compose/foundation/EdgeEffectCompat;
 
     iget-object v10, v0, Landroidx/compose/foundation/AndroidEdgeEffectOverscrollEffect;->topEffect:Landroid/widget/EdgeEffect;
@@ -2255,7 +2295,7 @@
 
     invoke-virtual {v9}, Landroid/widget/EdgeEffect;->onRelease()V
 
-    .line 163
+    .line 167
     :cond_6
     :goto_2
     invoke-static/range {p1 .. p2}, Landroidx/compose/ui/geometry/Offset;->getX-impl(J)F
@@ -2268,7 +2308,7 @@
 
     goto :goto_4
 
-    .line 164
+    .line 168
     :cond_7
     sget-object v9, Landroidx/compose/foundation/EdgeEffectCompat;->INSTANCE:Landroidx/compose/foundation/EdgeEffectCompat;
 
@@ -2282,7 +2322,7 @@
 
     if-nez v9, :cond_9
 
-    .line 169
+    .line 173
     sget-object v9, Landroidx/compose/foundation/EdgeEffectCompat;->INSTANCE:Landroidx/compose/foundation/EdgeEffectCompat;
 
     iget-object v10, v0, Landroidx/compose/foundation/AndroidEdgeEffectOverscrollEffect;->rightEffect:Landroid/widget/EdgeEffect;
@@ -2297,13 +2337,13 @@
 
     goto :goto_4
 
-    .line 170
+    .line 174
     :cond_8
     invoke-direct {v0, v1, v2, v6, v7}, Landroidx/compose/foundation/AndroidEdgeEffectOverscrollEffect;->pullRight-0a9Yr6o(JJ)F
 
     move-result v9
 
-    .line 171
+    .line 175
     sget-object v10, Landroidx/compose/foundation/EdgeEffectCompat;->INSTANCE:Landroidx/compose/foundation/EdgeEffectCompat;
 
     iget-object v11, v0, Landroidx/compose/foundation/AndroidEdgeEffectOverscrollEffect;->rightEffect:Landroid/widget/EdgeEffect;
@@ -2322,13 +2362,13 @@
 
     goto :goto_3
 
-    .line 165
+    .line 169
     :cond_9
     invoke-direct {v0, v1, v2, v6, v7}, Landroidx/compose/foundation/AndroidEdgeEffectOverscrollEffect;->pullLeft-0a9Yr6o(JJ)F
 
     move-result v9
 
-    .line 166
+    .line 170
     sget-object v10, Landroidx/compose/foundation/EdgeEffectCompat;->INSTANCE:Landroidx/compose/foundation/EdgeEffectCompat;
 
     iget-object v11, v0, Landroidx/compose/foundation/AndroidEdgeEffectOverscrollEffect;->leftEffect:Landroid/widget/EdgeEffect;
@@ -2349,13 +2389,13 @@
     :goto_3
     move v8, v9
 
-    .line 176
+    .line 180
     :goto_4
     invoke-static {v8, v4}, Landroidx/compose/ui/geometry/OffsetKt;->Offset(FF)J
 
     move-result-wide v8
 
-    .line 177
+    .line 181
     sget-object v4, Landroidx/compose/ui/geometry/Offset;->Companion:Landroidx/compose/ui/geometry/Offset$Companion;
 
     invoke-virtual {v4}, Landroidx/compose/ui/geometry/Offset$Companion;->getZero-F1C5BW0()J
@@ -2370,13 +2410,13 @@
 
     invoke-direct/range {p0 .. p0}, Landroidx/compose/foundation/AndroidEdgeEffectOverscrollEffect;->invalidateOverscroll()V
 
-    .line 179
+    .line 183
     :cond_b
     invoke-static {v1, v2, v8, v9}, Landroidx/compose/ui/geometry/Offset;->minus-MK-Hz9U(JJ)J
 
     move-result-wide v10
 
-    .line 180
+    .line 184
     invoke-static {v10, v11}, Landroidx/compose/ui/geometry/Offset;->box-impl(J)Landroidx/compose/ui/geometry/Offset;
 
     move-result-object v4
@@ -2391,12 +2431,12 @@
 
     move-result-wide v3
 
-    .line 181
+    .line 185
     invoke-static {v10, v11, v3, v4}, Landroidx/compose/ui/geometry/Offset;->minus-MK-Hz9U(JJ)J
 
     move-result-wide v10
 
-    .line 184
+    .line 188
     sget-object v12, Landroidx/compose/ui/input/nestedscroll/NestedScrollSource;->Companion:Landroidx/compose/ui/input/nestedscroll/NestedScrollSource$Companion;
 
     invoke-virtual {v12}, Landroidx/compose/ui/input/nestedscroll/NestedScrollSource$Companion;->getDrag-WNlRxjI()I
@@ -2413,7 +2453,7 @@
 
     if-eqz v12, :cond_12
 
-    .line 187
+    .line 191
     invoke-static {v10, v11}, Landroidx/compose/ui/geometry/Offset;->getX-impl(J)F
 
     move-result v12
@@ -2426,7 +2466,7 @@
 
     if-lez v12, :cond_c
 
-    .line 188
+    .line 192
     invoke-direct {v0, v10, v11, v6, v7}, Landroidx/compose/foundation/AndroidEdgeEffectOverscrollEffect;->pullLeft-0a9Yr6o(JJ)F
 
     :goto_5
@@ -2434,7 +2474,7 @@
 
     goto :goto_6
 
-    .line 190
+    .line 194
     :cond_c
     invoke-static {v10, v11}, Landroidx/compose/ui/geometry/Offset;->getX-impl(J)F
 
@@ -2444,7 +2484,7 @@
 
     if-gez v12, :cond_d
 
-    .line 191
+    .line 195
     invoke-direct {v0, v10, v11, v6, v7}, Landroidx/compose/foundation/AndroidEdgeEffectOverscrollEffect;->pullRight-0a9Yr6o(JJ)F
 
     goto :goto_5
@@ -2452,7 +2492,7 @@
     :cond_d
     move v12, v13
 
-    .line 196
+    .line 200
     :goto_6
     invoke-static {v10, v11}, Landroidx/compose/ui/geometry/Offset;->getY-impl(J)F
 
@@ -2462,7 +2502,7 @@
 
     if-lez v14, :cond_e
 
-    .line 197
+    .line 201
     invoke-direct {v0, v10, v11, v6, v7}, Landroidx/compose/foundation/AndroidEdgeEffectOverscrollEffect;->pullTop-0a9Yr6o(JJ)F
 
     :goto_7
@@ -2470,7 +2510,7 @@
 
     goto :goto_8
 
-    .line 199
+    .line 203
     :cond_e
     invoke-static {v10, v11}, Landroidx/compose/ui/geometry/Offset;->getY-impl(J)F
 
@@ -2480,7 +2520,7 @@
 
     if-gez v14, :cond_f
 
-    .line 200
+    .line 204
     invoke-direct {v0, v10, v11, v6, v7}, Landroidx/compose/foundation/AndroidEdgeEffectOverscrollEffect;->pullBottom-0a9Yr6o(JJ)F
 
     goto :goto_7
@@ -2502,7 +2542,7 @@
     :goto_9
     move v13, v5
 
-    .line 207
+    .line 211
     :cond_12
     invoke-direct/range {p0 .. p2}, Landroidx/compose/foundation/AndroidEdgeEffectOverscrollEffect;->releaseOppositeOverscroll-k-4lQ0M(J)Z
 
@@ -2512,11 +2552,11 @@
 
     if-eqz v13, :cond_14
 
-    .line 208
+    .line 212
     :cond_13
     invoke-direct/range {p0 .. p0}, Landroidx/compose/foundation/AndroidEdgeEffectOverscrollEffect;->invalidateOverscroll()V
 
-    .line 210
+    .line 214
     :cond_14
     invoke-static {v8, v9, v3, v4}, Landroidx/compose/ui/geometry/Offset;->plus-MK-Hz9U(JJ)J
 
@@ -2528,11 +2568,7 @@
 .method public final drawOverscroll(Landroidx/compose/ui/graphics/drawscope/DrawScope;)V
     .locals 9
 
-    const-string v0, "<this>"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 348
+    .line 352
     iget-wide v0, p0, Landroidx/compose/foundation/AndroidEdgeEffectOverscrollEffect;->containerSize:J
 
     invoke-static {v0, v1}, Landroidx/compose/ui/geometry/Size;->isEmpty-impl(J)Z
@@ -2543,7 +2579,7 @@
 
     return-void
 
-    .line 606
+    .line 615
     :cond_0
     invoke-interface {p1}, Landroidx/compose/ui/graphics/drawscope/DrawScope;->getDrawContext()Landroidx/compose/ui/graphics/drawscope/DrawContext;
 
@@ -2553,17 +2589,19 @@
 
     move-result-object v0
 
-    .line 352
-    iget-object v1, p0, Landroidx/compose/foundation/AndroidEdgeEffectOverscrollEffect;->redrawSignal:Landroidx/compose/runtime/MutableState;
+    .line 356
+    invoke-direct {p0}, Landroidx/compose/foundation/AndroidEdgeEffectOverscrollEffect;->getInvalidateCount()I
 
-    invoke-interface {v1}, Landroidx/compose/runtime/MutableState;->getValue()Ljava/lang/Object;
+    move-result v1
 
-    .line 353
+    iput v1, p0, Landroidx/compose/foundation/AndroidEdgeEffectOverscrollEffect;->consumeCount:I
+
+    .line 357
     invoke-static {v0}, Landroidx/compose/ui/graphics/AndroidCanvas_androidKt;->getNativeCanvas(Landroidx/compose/ui/graphics/Canvas;)Landroid/graphics/Canvas;
 
     move-result-object v0
 
-    .line 359
+    .line 363
     sget-object v1, Landroidx/compose/foundation/EdgeEffectCompat;->INSTANCE:Landroidx/compose/foundation/EdgeEffectCompat;
 
     iget-object v2, p0, Landroidx/compose/foundation/AndroidEdgeEffectOverscrollEffect;->leftEffectNegation:Landroid/widget/EdgeEffect;
@@ -2580,18 +2618,18 @@
 
     goto :goto_0
 
-    .line 360
+    .line 364
     :cond_1
     iget-object v1, p0, Landroidx/compose/foundation/AndroidEdgeEffectOverscrollEffect;->leftEffectNegation:Landroid/widget/EdgeEffect;
 
     invoke-direct {p0, p1, v1, v0}, Landroidx/compose/foundation/AndroidEdgeEffectOverscrollEffect;->drawRight(Landroidx/compose/ui/graphics/drawscope/DrawScope;Landroid/widget/EdgeEffect;Landroid/graphics/Canvas;)Z
 
-    .line 361
+    .line 365
     iget-object v1, p0, Landroidx/compose/foundation/AndroidEdgeEffectOverscrollEffect;->leftEffectNegation:Landroid/widget/EdgeEffect;
 
     invoke-virtual {v1}, Landroid/widget/EdgeEffect;->finish()V
 
-    .line 363
+    .line 367
     :goto_0
     iget-object v1, p0, Landroidx/compose/foundation/AndroidEdgeEffectOverscrollEffect;->leftEffect:Landroid/widget/EdgeEffect;
 
@@ -2603,14 +2641,14 @@
 
     if-nez v1, :cond_2
 
-    .line 364
+    .line 368
     iget-object v1, p0, Landroidx/compose/foundation/AndroidEdgeEffectOverscrollEffect;->leftEffect:Landroid/widget/EdgeEffect;
 
     invoke-direct {p0, p1, v1, v0}, Landroidx/compose/foundation/AndroidEdgeEffectOverscrollEffect;->drawLeft(Landroidx/compose/ui/graphics/drawscope/DrawScope;Landroid/widget/EdgeEffect;Landroid/graphics/Canvas;)Z
 
     move-result v1
 
-    .line 365
+    .line 369
     sget-object v4, Landroidx/compose/foundation/EdgeEffectCompat;->INSTANCE:Landroidx/compose/foundation/EdgeEffectCompat;
 
     iget-object v5, p0, Landroidx/compose/foundation/AndroidEdgeEffectOverscrollEffect;->leftEffectNegation:Landroid/widget/EdgeEffect;
@@ -2630,7 +2668,7 @@
     :cond_2
     move v1, v3
 
-    .line 367
+    .line 371
     :goto_1
     sget-object v4, Landroidx/compose/foundation/EdgeEffectCompat;->INSTANCE:Landroidx/compose/foundation/EdgeEffectCompat;
 
@@ -2646,18 +2684,18 @@
 
     goto :goto_2
 
-    .line 368
+    .line 372
     :cond_3
     iget-object v4, p0, Landroidx/compose/foundation/AndroidEdgeEffectOverscrollEffect;->topEffectNegation:Landroid/widget/EdgeEffect;
 
     invoke-direct {p0, p1, v4, v0}, Landroidx/compose/foundation/AndroidEdgeEffectOverscrollEffect;->drawBottom(Landroidx/compose/ui/graphics/drawscope/DrawScope;Landroid/widget/EdgeEffect;Landroid/graphics/Canvas;)Z
 
-    .line 369
+    .line 373
     iget-object v4, p0, Landroidx/compose/foundation/AndroidEdgeEffectOverscrollEffect;->topEffectNegation:Landroid/widget/EdgeEffect;
 
     invoke-virtual {v4}, Landroid/widget/EdgeEffect;->finish()V
 
-    .line 371
+    .line 375
     :goto_2
     iget-object v4, p0, Landroidx/compose/foundation/AndroidEdgeEffectOverscrollEffect;->topEffect:Landroid/widget/EdgeEffect;
 
@@ -2669,7 +2707,7 @@
 
     if-nez v4, :cond_6
 
-    .line 372
+    .line 376
     iget-object v4, p0, Landroidx/compose/foundation/AndroidEdgeEffectOverscrollEffect;->topEffect:Landroid/widget/EdgeEffect;
 
     invoke-direct {p0, p1, v4, v0}, Landroidx/compose/foundation/AndroidEdgeEffectOverscrollEffect;->drawTop(Landroidx/compose/ui/graphics/drawscope/DrawScope;Landroid/widget/EdgeEffect;Landroid/graphics/Canvas;)Z
@@ -2691,7 +2729,7 @@
     :goto_3
     move v1, v5
 
-    .line 373
+    .line 377
     :goto_4
     sget-object v4, Landroidx/compose/foundation/EdgeEffectCompat;->INSTANCE:Landroidx/compose/foundation/EdgeEffectCompat;
 
@@ -2707,7 +2745,7 @@
 
     invoke-virtual {v4, v6, v7, v2}, Landroidx/compose/foundation/EdgeEffectCompat;->onPullDistanceCompat(Landroid/widget/EdgeEffect;FF)F
 
-    .line 375
+    .line 379
     :cond_6
     sget-object v4, Landroidx/compose/foundation/EdgeEffectCompat;->INSTANCE:Landroidx/compose/foundation/EdgeEffectCompat;
 
@@ -2723,18 +2761,18 @@
 
     goto :goto_5
 
-    .line 376
+    .line 380
     :cond_7
     iget-object v4, p0, Landroidx/compose/foundation/AndroidEdgeEffectOverscrollEffect;->rightEffectNegation:Landroid/widget/EdgeEffect;
 
     invoke-direct {p0, p1, v4, v0}, Landroidx/compose/foundation/AndroidEdgeEffectOverscrollEffect;->drawLeft(Landroidx/compose/ui/graphics/drawscope/DrawScope;Landroid/widget/EdgeEffect;Landroid/graphics/Canvas;)Z
 
-    .line 377
+    .line 381
     iget-object v4, p0, Landroidx/compose/foundation/AndroidEdgeEffectOverscrollEffect;->rightEffectNegation:Landroid/widget/EdgeEffect;
 
     invoke-virtual {v4}, Landroid/widget/EdgeEffect;->finish()V
 
-    .line 379
+    .line 383
     :goto_5
     iget-object v4, p0, Landroidx/compose/foundation/AndroidEdgeEffectOverscrollEffect;->rightEffect:Landroid/widget/EdgeEffect;
 
@@ -2744,7 +2782,7 @@
 
     if-nez v4, :cond_a
 
-    .line 380
+    .line 384
     iget-object v4, p0, Landroidx/compose/foundation/AndroidEdgeEffectOverscrollEffect;->rightEffect:Landroid/widget/EdgeEffect;
 
     invoke-direct {p0, p1, v4, v0}, Landroidx/compose/foundation/AndroidEdgeEffectOverscrollEffect;->drawRight(Landroidx/compose/ui/graphics/drawscope/DrawScope;Landroid/widget/EdgeEffect;Landroid/graphics/Canvas;)Z
@@ -2766,7 +2804,7 @@
     :goto_6
     move v1, v5
 
-    .line 381
+    .line 385
     :goto_7
     sget-object v4, Landroidx/compose/foundation/EdgeEffectCompat;->INSTANCE:Landroidx/compose/foundation/EdgeEffectCompat;
 
@@ -2782,7 +2820,7 @@
 
     invoke-virtual {v4, v6, v7, v2}, Landroidx/compose/foundation/EdgeEffectCompat;->onPullDistanceCompat(Landroid/widget/EdgeEffect;FF)F
 
-    .line 383
+    .line 387
     :cond_a
     sget-object v4, Landroidx/compose/foundation/EdgeEffectCompat;->INSTANCE:Landroidx/compose/foundation/EdgeEffectCompat;
 
@@ -2798,18 +2836,18 @@
 
     goto :goto_8
 
-    .line 384
+    .line 388
     :cond_b
     iget-object v4, p0, Landroidx/compose/foundation/AndroidEdgeEffectOverscrollEffect;->bottomEffectNegation:Landroid/widget/EdgeEffect;
 
     invoke-direct {p0, p1, v4, v0}, Landroidx/compose/foundation/AndroidEdgeEffectOverscrollEffect;->drawTop(Landroidx/compose/ui/graphics/drawscope/DrawScope;Landroid/widget/EdgeEffect;Landroid/graphics/Canvas;)Z
 
-    .line 385
+    .line 389
     iget-object v4, p0, Landroidx/compose/foundation/AndroidEdgeEffectOverscrollEffect;->bottomEffectNegation:Landroid/widget/EdgeEffect;
 
     invoke-virtual {v4}, Landroid/widget/EdgeEffect;->finish()V
 
-    .line 387
+    .line 391
     :goto_8
     iget-object v4, p0, Landroidx/compose/foundation/AndroidEdgeEffectOverscrollEffect;->bottomEffect:Landroid/widget/EdgeEffect;
 
@@ -2819,7 +2857,7 @@
 
     if-nez v4, :cond_e
 
-    .line 388
+    .line 392
     iget-object v4, p0, Landroidx/compose/foundation/AndroidEdgeEffectOverscrollEffect;->bottomEffect:Landroid/widget/EdgeEffect;
 
     invoke-direct {p0, p1, v4, v0}, Landroidx/compose/foundation/AndroidEdgeEffectOverscrollEffect;->drawBottom(Landroidx/compose/ui/graphics/drawscope/DrawScope;Landroid/widget/EdgeEffect;Landroid/graphics/Canvas;)Z
@@ -2833,7 +2871,7 @@
     :cond_c
     move v3, v5
 
-    .line 389
+    .line 393
     :cond_d
     sget-object p1, Landroidx/compose/foundation/EdgeEffectCompat;->INSTANCE:Landroidx/compose/foundation/EdgeEffectCompat;
 
@@ -2854,7 +2892,7 @@
     :cond_e
     if-eqz v1, :cond_f
 
-    .line 391
+    .line 395
     invoke-direct {p0}, Landroidx/compose/foundation/AndroidEdgeEffectOverscrollEffect;->invalidateOverscroll()V
 
     :cond_f
@@ -2864,7 +2902,7 @@
 .method public getEffectModifier()Landroidx/compose/ui/Modifier;
     .locals 0
 
-    .line 313
+    .line 317
     iget-object p0, p0, Landroidx/compose/foundation/AndroidEdgeEffectOverscrollEffect;->effectModifier:Landroidx/compose/ui/Modifier;
 
     return-object p0
@@ -2873,7 +2911,7 @@
 .method public final getInvalidationEnabled$foundation_release()Z
     .locals 0
 
-    .line 129
+    .line 133
     iget-boolean p0, p0, Landroidx/compose/foundation/AndroidEdgeEffectOverscrollEffect;->invalidationEnabled:Z
 
     return p0
@@ -2882,10 +2920,10 @@
 .method public isInProgress()Z
     .locals 5
 
-    .line 266
+    .line 270
     iget-object p0, p0, Landroidx/compose/foundation/AndroidEdgeEffectOverscrollEffect;->allEffects:Ljava/util/List;
 
-    .line 600
+    .line 609
     invoke-interface {p0}, Ljava/util/List;->size()I
 
     move-result v0
@@ -2897,15 +2935,15 @@
     :goto_0
     if-ge v2, v0, :cond_2
 
-    .line 601
+    .line 610
     invoke-interface {p0, v2}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
     move-result-object v3
 
-    .line 598
+    .line 607
     check-cast v3, Landroid/widget/EdgeEffect;
 
-    .line 266
+    .line 270
     sget-object v4, Landroidx/compose/foundation/EdgeEffectCompat;->INSTANCE:Landroidx/compose/foundation/EdgeEffectCompat;
 
     invoke-virtual {v4, v3}, Landroidx/compose/foundation/EdgeEffectCompat;->getDistanceCompat(Landroid/widget/EdgeEffect;)F
@@ -2949,7 +2987,7 @@
 .method public final setInvalidationEnabled$foundation_release(Z)V
     .locals 0
 
-    .line 129
+    .line 133
     iput-boolean p1, p0, Landroidx/compose/foundation/AndroidEdgeEffectOverscrollEffect;->invalidationEnabled:Z
 
     return-void

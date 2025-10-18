@@ -59,7 +59,7 @@
 .method private constructor <init>()V
     .locals 0
 
-    .line 3232
+    .line 3433
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -70,22 +70,14 @@
     .annotation runtime Lkotlin/jvm/JvmStatic;
     .end annotation
 
-    const-string v0, "info"
-
-    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string v0, "semanticsNode"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 3240
+    .line 3441
     invoke-static {p1}, Landroidx/compose/ui/platform/AndroidComposeViewAccessibilityDelegateCompat_androidKt;->access$enabled(Landroidx/compose/ui/semantics/SemanticsNode;)Z
 
     move-result v0
 
     if-eqz v0, :cond_3
 
-    .line 3241
+    .line 3442
     invoke-virtual {p1}, Landroidx/compose/ui/semantics/SemanticsNode;->getUnmergedConfig$ui_release()Landroidx/compose/ui/semantics/SemanticsConfiguration;
 
     move-result-object v0
@@ -104,10 +96,10 @@
 
     if-eqz v0, :cond_0
 
-    .line 3243
+    .line 3444
     new-instance v1, Landroidx/core/view/accessibility/AccessibilityNodeInfoCompat$AccessibilityActionCompat;
 
-    .line 3245
+    .line 3446
     invoke-virtual {v0}, Landroidx/compose/ui/semantics/AccessibilityAction;->getLabel()Ljava/lang/String;
 
     move-result-object v0
@@ -116,13 +108,13 @@
 
     const v2, 0x1020046
 
-    .line 3243
+    .line 3444
     invoke-direct {v1, v2, v0}, Landroidx/core/view/accessibility/AccessibilityNodeInfoCompat$AccessibilityActionCompat;-><init>(ILjava/lang/CharSequence;)V
 
-    .line 3242
+    .line 3443
     invoke-virtual {p0, v1}, Landroidx/core/view/accessibility/AccessibilityNodeInfoCompat;->addAction(Landroidx/core/view/accessibility/AccessibilityNodeInfoCompat$AccessibilityActionCompat;)V
 
-    .line 3249
+    .line 3450
     :cond_0
     invoke-virtual {p1}, Landroidx/compose/ui/semantics/SemanticsNode;->getUnmergedConfig$ui_release()Landroidx/compose/ui/semantics/SemanticsConfiguration;
 
@@ -142,10 +134,10 @@
 
     if-eqz v0, :cond_1
 
-    .line 3251
+    .line 3452
     new-instance v1, Landroidx/core/view/accessibility/AccessibilityNodeInfoCompat$AccessibilityActionCompat;
 
-    .line 3253
+    .line 3454
     invoke-virtual {v0}, Landroidx/compose/ui/semantics/AccessibilityAction;->getLabel()Ljava/lang/String;
 
     move-result-object v0
@@ -154,13 +146,13 @@
 
     const v2, 0x1020047
 
-    .line 3251
+    .line 3452
     invoke-direct {v1, v2, v0}, Landroidx/core/view/accessibility/AccessibilityNodeInfoCompat$AccessibilityActionCompat;-><init>(ILjava/lang/CharSequence;)V
 
-    .line 3250
+    .line 3451
     invoke-virtual {p0, v1}, Landroidx/core/view/accessibility/AccessibilityNodeInfoCompat;->addAction(Landroidx/core/view/accessibility/AccessibilityNodeInfoCompat$AccessibilityActionCompat;)V
 
-    .line 3257
+    .line 3458
     :cond_1
     invoke-virtual {p1}, Landroidx/compose/ui/semantics/SemanticsNode;->getUnmergedConfig$ui_release()Landroidx/compose/ui/semantics/SemanticsConfiguration;
 
@@ -180,10 +172,10 @@
 
     if-eqz v0, :cond_2
 
-    .line 3259
+    .line 3460
     new-instance v1, Landroidx/core/view/accessibility/AccessibilityNodeInfoCompat$AccessibilityActionCompat;
 
-    .line 3261
+    .line 3462
     invoke-virtual {v0}, Landroidx/compose/ui/semantics/AccessibilityAction;->getLabel()Ljava/lang/String;
 
     move-result-object v0
@@ -192,13 +184,13 @@
 
     const v2, 0x1020048
 
-    .line 3259
+    .line 3460
     invoke-direct {v1, v2, v0}, Landroidx/core/view/accessibility/AccessibilityNodeInfoCompat$AccessibilityActionCompat;-><init>(ILjava/lang/CharSequence;)V
 
-    .line 3258
+    .line 3459
     invoke-virtual {p0, v1}, Landroidx/core/view/accessibility/AccessibilityNodeInfoCompat;->addAction(Landroidx/core/view/accessibility/AccessibilityNodeInfoCompat$AccessibilityActionCompat;)V
 
-    .line 3265
+    .line 3466
     :cond_2
     invoke-virtual {p1}, Landroidx/compose/ui/semantics/SemanticsNode;->getUnmergedConfig$ui_release()Landroidx/compose/ui/semantics/SemanticsConfiguration;
 
@@ -218,10 +210,10 @@
 
     if-eqz p1, :cond_3
 
-    .line 3267
+    .line 3468
     new-instance v0, Landroidx/core/view/accessibility/AccessibilityNodeInfoCompat$AccessibilityActionCompat;
 
-    .line 3269
+    .line 3470
     invoke-virtual {p1}, Landroidx/compose/ui/semantics/AccessibilityAction;->getLabel()Ljava/lang/String;
 
     move-result-object p1
@@ -230,10 +222,10 @@
 
     const v1, 0x1020049
 
-    .line 3267
+    .line 3468
     invoke-direct {v0, v1, p1}, Landroidx/core/view/accessibility/AccessibilityNodeInfoCompat$AccessibilityActionCompat;-><init>(ILjava/lang/CharSequence;)V
 
-    .line 3266
+    .line 3467
     invoke-virtual {p0, v0}, Landroidx/core/view/accessibility/AccessibilityNodeInfoCompat;->addAction(Landroidx/core/view/accessibility/AccessibilityNodeInfoCompat$AccessibilityActionCompat;)V
 
     :cond_3

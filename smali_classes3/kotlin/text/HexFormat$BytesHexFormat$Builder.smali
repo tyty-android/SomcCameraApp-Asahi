@@ -79,10 +79,10 @@
 .method public constructor <init>()V
     .locals 1
 
-    .line 101
+    .line 117
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 109
+    .line 125
     sget-object v0, Lkotlin/text/HexFormat$BytesHexFormat;->Companion:Lkotlin/text/HexFormat$BytesHexFormat$Companion;
 
     invoke-virtual {v0}, Lkotlin/text/HexFormat$BytesHexFormat$Companion;->getDefault$kotlin_stdlib()Lkotlin/text/HexFormat$BytesHexFormat;
@@ -95,7 +95,7 @@
 
     iput v0, p0, Lkotlin/text/HexFormat$BytesHexFormat$Builder;->bytesPerLine:I
 
-    .line 123
+    .line 139
     sget-object v0, Lkotlin/text/HexFormat$BytesHexFormat;->Companion:Lkotlin/text/HexFormat$BytesHexFormat$Companion;
 
     invoke-virtual {v0}, Lkotlin/text/HexFormat$BytesHexFormat$Companion;->getDefault$kotlin_stdlib()Lkotlin/text/HexFormat$BytesHexFormat;
@@ -108,7 +108,7 @@
 
     iput v0, p0, Lkotlin/text/HexFormat$BytesHexFormat$Builder;->bytesPerGroup:I
 
-    .line 131
+    .line 147
     sget-object v0, Lkotlin/text/HexFormat$BytesHexFormat;->Companion:Lkotlin/text/HexFormat$BytesHexFormat$Companion;
 
     invoke-virtual {v0}, Lkotlin/text/HexFormat$BytesHexFormat$Companion;->getDefault$kotlin_stdlib()Lkotlin/text/HexFormat$BytesHexFormat;
@@ -121,7 +121,7 @@
 
     iput-object v0, p0, Lkotlin/text/HexFormat$BytesHexFormat$Builder;->groupSeparator:Ljava/lang/String;
 
-    .line 140
+    .line 156
     sget-object v0, Lkotlin/text/HexFormat$BytesHexFormat;->Companion:Lkotlin/text/HexFormat$BytesHexFormat$Companion;
 
     invoke-virtual {v0}, Lkotlin/text/HexFormat$BytesHexFormat$Companion;->getDefault$kotlin_stdlib()Lkotlin/text/HexFormat$BytesHexFormat;
@@ -134,7 +134,7 @@
 
     iput-object v0, p0, Lkotlin/text/HexFormat$BytesHexFormat$Builder;->byteSeparator:Ljava/lang/String;
 
-    .line 154
+    .line 170
     sget-object v0, Lkotlin/text/HexFormat$BytesHexFormat;->Companion:Lkotlin/text/HexFormat$BytesHexFormat$Companion;
 
     invoke-virtual {v0}, Lkotlin/text/HexFormat$BytesHexFormat$Companion;->getDefault$kotlin_stdlib()Lkotlin/text/HexFormat$BytesHexFormat;
@@ -147,7 +147,7 @@
 
     iput-object v0, p0, Lkotlin/text/HexFormat$BytesHexFormat$Builder;->bytePrefix:Ljava/lang/String;
 
-    .line 168
+    .line 184
     sget-object v0, Lkotlin/text/HexFormat$BytesHexFormat;->Companion:Lkotlin/text/HexFormat$BytesHexFormat$Companion;
 
     invoke-virtual {v0}, Lkotlin/text/HexFormat$BytesHexFormat$Companion;->getDefault$kotlin_stdlib()Lkotlin/text/HexFormat$BytesHexFormat;
@@ -168,7 +168,7 @@
 .method public final build$kotlin_stdlib()Lkotlin/text/HexFormat$BytesHexFormat;
     .locals 8
 
-    .line 176
+    .line 192
     new-instance v7, Lkotlin/text/HexFormat$BytesHexFormat;
 
     iget v1, p0, Lkotlin/text/HexFormat$BytesHexFormat$Builder;->bytesPerLine:I
@@ -193,7 +193,7 @@
 .method public final getBytePrefix()Ljava/lang/String;
     .locals 0
 
-    .line 154
+    .line 170
     iget-object p0, p0, Lkotlin/text/HexFormat$BytesHexFormat$Builder;->bytePrefix:Ljava/lang/String;
 
     return-object p0
@@ -202,7 +202,7 @@
 .method public final getByteSeparator()Ljava/lang/String;
     .locals 0
 
-    .line 140
+    .line 156
     iget-object p0, p0, Lkotlin/text/HexFormat$BytesHexFormat$Builder;->byteSeparator:Ljava/lang/String;
 
     return-object p0
@@ -211,7 +211,7 @@
 .method public final getByteSuffix()Ljava/lang/String;
     .locals 0
 
-    .line 168
+    .line 184
     iget-object p0, p0, Lkotlin/text/HexFormat$BytesHexFormat$Builder;->byteSuffix:Ljava/lang/String;
 
     return-object p0
@@ -220,7 +220,7 @@
 .method public final getBytesPerGroup()I
     .locals 0
 
-    .line 123
+    .line 139
     iget p0, p0, Lkotlin/text/HexFormat$BytesHexFormat$Builder;->bytesPerGroup:I
 
     return p0
@@ -229,7 +229,7 @@
 .method public final getBytesPerLine()I
     .locals 0
 
-    .line 109
+    .line 125
     iget p0, p0, Lkotlin/text/HexFormat$BytesHexFormat$Builder;->bytesPerLine:I
 
     return p0
@@ -238,7 +238,7 @@
 .method public final getGroupSeparator()Ljava/lang/String;
     .locals 0
 
-    .line 131
+    .line 147
     iget-object p0, p0, Lkotlin/text/HexFormat$BytesHexFormat$Builder;->groupSeparator:Ljava/lang/String;
 
     return-object p0
@@ -251,7 +251,7 @@
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 156
+    .line 172
     move-object v0, p1
 
     check-cast v0, Ljava/lang/CharSequence;
@@ -278,12 +278,12 @@
 
     if-nez v0, :cond_0
 
-    .line 158
+    .line 174
     iput-object p1, p0, Lkotlin/text/HexFormat$BytesHexFormat$Builder;->bytePrefix:Ljava/lang/String;
 
     return-void
 
-    .line 157
+    .line 173
     :cond_0
     new-instance p0, Ljava/lang/IllegalArgumentException;
 
@@ -313,7 +313,7 @@
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 142
+    .line 158
     move-object v0, p1
 
     check-cast v0, Ljava/lang/CharSequence;
@@ -340,12 +340,12 @@
 
     if-nez v0, :cond_0
 
-    .line 144
+    .line 160
     iput-object p1, p0, Lkotlin/text/HexFormat$BytesHexFormat$Builder;->byteSeparator:Ljava/lang/String;
 
     return-void
 
-    .line 143
+    .line 159
     :cond_0
     new-instance p0, Ljava/lang/IllegalArgumentException;
 
@@ -375,7 +375,7 @@
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 170
+    .line 186
     move-object v0, p1
 
     check-cast v0, Ljava/lang/CharSequence;
@@ -402,12 +402,12 @@
 
     if-nez v0, :cond_0
 
-    .line 172
+    .line 188
     iput-object p1, p0, Lkotlin/text/HexFormat$BytesHexFormat$Builder;->byteSuffix:Ljava/lang/String;
 
     return-void
 
-    .line 171
+    .line 187
     :cond_0
     new-instance p0, Ljava/lang/IllegalArgumentException;
 
@@ -435,12 +435,12 @@
 
     if-lez p1, :cond_0
 
-    .line 127
+    .line 143
     iput p1, p0, Lkotlin/text/HexFormat$BytesHexFormat$Builder;->bytesPerGroup:I
 
     return-void
 
-    .line 126
+    .line 142
     :cond_0
     new-instance p0, Ljava/lang/IllegalArgumentException;
 
@@ -468,12 +468,12 @@
 
     if-lez p1, :cond_0
 
-    .line 113
+    .line 129
     iput p1, p0, Lkotlin/text/HexFormat$BytesHexFormat$Builder;->bytesPerLine:I
 
     return-void
 
-    .line 112
+    .line 128
     :cond_0
     new-instance p0, Ljava/lang/IllegalArgumentException;
 
@@ -503,7 +503,7 @@
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 131
+    .line 147
     iput-object p1, p0, Lkotlin/text/HexFormat$BytesHexFormat$Builder;->groupSeparator:Ljava/lang/String;
 
     return-void

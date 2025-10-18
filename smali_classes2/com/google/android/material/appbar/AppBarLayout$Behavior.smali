@@ -32,7 +32,7 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 1433
+    .line 1477
     invoke-direct {p0}, Lcom/google/android/material/appbar/AppBarLayout$BaseBehavior;-><init>()V
 
     return-void
@@ -41,7 +41,7 @@
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 0
 
-    .line 1437
+    .line 1481
     invoke-direct {p0, p1, p2}, Lcom/google/android/material/appbar/AppBarLayout$BaseBehavior;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
     return-void
@@ -52,7 +52,7 @@
 .method public bridge synthetic getLeftAndRightOffset()I
     .locals 0
 
-    .line 1427
+    .line 1471
     invoke-super {p0}, Lcom/google/android/material/appbar/AppBarLayout$BaseBehavior;->getLeftAndRightOffset()I
 
     move-result p0
@@ -63,7 +63,7 @@
 .method public bridge synthetic getTopAndBottomOffset()I
     .locals 0
 
-    .line 1427
+    .line 1471
     invoke-super {p0}, Lcom/google/android/material/appbar/AppBarLayout$BaseBehavior;->getTopAndBottomOffset()I
 
     move-result p0
@@ -74,7 +74,7 @@
 .method public bridge synthetic isHorizontalOffsetEnabled()Z
     .locals 0
 
-    .line 1427
+    .line 1471
     invoke-super {p0}, Lcom/google/android/material/appbar/AppBarLayout$BaseBehavior;->isHorizontalOffsetEnabled()Z
 
     move-result p0
@@ -85,7 +85,7 @@
 .method public bridge synthetic isVerticalOffsetEnabled()Z
     .locals 0
 
-    .line 1427
+    .line 1471
     invoke-super {p0}, Lcom/google/android/material/appbar/AppBarLayout$BaseBehavior;->isVerticalOffsetEnabled()Z
 
     move-result p0
@@ -96,7 +96,7 @@
 .method public bridge synthetic onInterceptTouchEvent(Landroidx/coordinatorlayout/widget/CoordinatorLayout;Landroid/view/View;Landroid/view/MotionEvent;)Z
     .locals 0
 
-    .line 1427
+    .line 1471
     invoke-super {p0, p1, p2, p3}, Lcom/google/android/material/appbar/AppBarLayout$BaseBehavior;->onInterceptTouchEvent(Landroidx/coordinatorlayout/widget/CoordinatorLayout;Landroid/view/View;Landroid/view/MotionEvent;)Z
 
     move-result p0
@@ -107,7 +107,7 @@
 .method public bridge synthetic onLayoutChild(Landroidx/coordinatorlayout/widget/CoordinatorLayout;Lcom/google/android/material/appbar/AppBarLayout;I)Z
     .locals 0
 
-    .line 1427
+    .line 1471
     invoke-super {p0, p1, p2, p3}, Lcom/google/android/material/appbar/AppBarLayout$BaseBehavior;->onLayoutChild(Landroidx/coordinatorlayout/widget/CoordinatorLayout;Lcom/google/android/material/appbar/AppBarLayout;I)Z
 
     move-result p0
@@ -118,7 +118,7 @@
 .method public bridge synthetic onMeasureChild(Landroidx/coordinatorlayout/widget/CoordinatorLayout;Lcom/google/android/material/appbar/AppBarLayout;IIII)Z
     .locals 0
 
-    .line 1427
+    .line 1471
     invoke-super/range {p0 .. p6}, Lcom/google/android/material/appbar/AppBarLayout$BaseBehavior;->onMeasureChild(Landroidx/coordinatorlayout/widget/CoordinatorLayout;Lcom/google/android/material/appbar/AppBarLayout;IIII)Z
 
     move-result p0
@@ -129,7 +129,7 @@
 .method public bridge synthetic onNestedPreScroll(Landroidx/coordinatorlayout/widget/CoordinatorLayout;Lcom/google/android/material/appbar/AppBarLayout;Landroid/view/View;II[II)V
     .locals 0
 
-    .line 1427
+    .line 1471
     invoke-super/range {p0 .. p7}, Lcom/google/android/material/appbar/AppBarLayout$BaseBehavior;->onNestedPreScroll(Landroidx/coordinatorlayout/widget/CoordinatorLayout;Lcom/google/android/material/appbar/AppBarLayout;Landroid/view/View;II[II)V
 
     return-void
@@ -138,7 +138,7 @@
 .method public bridge synthetic onNestedScroll(Landroidx/coordinatorlayout/widget/CoordinatorLayout;Lcom/google/android/material/appbar/AppBarLayout;Landroid/view/View;IIIII[I)V
     .locals 0
 
-    .line 1427
+    .line 1471
     invoke-super/range {p0 .. p9}, Lcom/google/android/material/appbar/AppBarLayout$BaseBehavior;->onNestedScroll(Landroidx/coordinatorlayout/widget/CoordinatorLayout;Lcom/google/android/material/appbar/AppBarLayout;Landroid/view/View;IIIII[I)V
 
     return-void
@@ -147,7 +147,7 @@
 .method public bridge synthetic onRestoreInstanceState(Landroidx/coordinatorlayout/widget/CoordinatorLayout;Lcom/google/android/material/appbar/AppBarLayout;Landroid/os/Parcelable;)V
     .locals 0
 
-    .line 1427
+    .line 1471
     invoke-super {p0, p1, p2, p3}, Lcom/google/android/material/appbar/AppBarLayout$BaseBehavior;->onRestoreInstanceState(Landroidx/coordinatorlayout/widget/CoordinatorLayout;Lcom/google/android/material/appbar/AppBarLayout;Landroid/os/Parcelable;)V
 
     return-void
@@ -156,7 +156,7 @@
 .method public bridge synthetic onSaveInstanceState(Landroidx/coordinatorlayout/widget/CoordinatorLayout;Lcom/google/android/material/appbar/AppBarLayout;)Landroid/os/Parcelable;
     .locals 0
 
-    .line 1427
+    .line 1471
     invoke-super {p0, p1, p2}, Lcom/google/android/material/appbar/AppBarLayout$BaseBehavior;->onSaveInstanceState(Landroidx/coordinatorlayout/widget/CoordinatorLayout;Lcom/google/android/material/appbar/AppBarLayout;)Landroid/os/Parcelable;
 
     move-result-object p0
@@ -167,7 +167,7 @@
 .method public bridge synthetic onStartNestedScroll(Landroidx/coordinatorlayout/widget/CoordinatorLayout;Lcom/google/android/material/appbar/AppBarLayout;Landroid/view/View;Landroid/view/View;II)Z
     .locals 0
 
-    .line 1427
+    .line 1471
     invoke-super/range {p0 .. p6}, Lcom/google/android/material/appbar/AppBarLayout$BaseBehavior;->onStartNestedScroll(Landroidx/coordinatorlayout/widget/CoordinatorLayout;Lcom/google/android/material/appbar/AppBarLayout;Landroid/view/View;Landroid/view/View;II)Z
 
     move-result p0
@@ -178,7 +178,7 @@
 .method public bridge synthetic onStopNestedScroll(Landroidx/coordinatorlayout/widget/CoordinatorLayout;Lcom/google/android/material/appbar/AppBarLayout;Landroid/view/View;I)V
     .locals 0
 
-    .line 1427
+    .line 1471
     invoke-super {p0, p1, p2, p3, p4}, Lcom/google/android/material/appbar/AppBarLayout$BaseBehavior;->onStopNestedScroll(Landroidx/coordinatorlayout/widget/CoordinatorLayout;Lcom/google/android/material/appbar/AppBarLayout;Landroid/view/View;I)V
 
     return-void
@@ -187,7 +187,7 @@
 .method public bridge synthetic onTouchEvent(Landroidx/coordinatorlayout/widget/CoordinatorLayout;Landroid/view/View;Landroid/view/MotionEvent;)Z
     .locals 0
 
-    .line 1427
+    .line 1471
     invoke-super {p0, p1, p2, p3}, Lcom/google/android/material/appbar/AppBarLayout$BaseBehavior;->onTouchEvent(Landroidx/coordinatorlayout/widget/CoordinatorLayout;Landroid/view/View;Landroid/view/MotionEvent;)Z
 
     move-result p0
@@ -198,7 +198,7 @@
 .method public bridge synthetic setDragCallback(Lcom/google/android/material/appbar/AppBarLayout$BaseBehavior$BaseDragCallback;)V
     .locals 0
 
-    .line 1427
+    .line 1471
     invoke-super {p0, p1}, Lcom/google/android/material/appbar/AppBarLayout$BaseBehavior;->setDragCallback(Lcom/google/android/material/appbar/AppBarLayout$BaseBehavior$BaseDragCallback;)V
 
     return-void
@@ -207,7 +207,7 @@
 .method public bridge synthetic setHorizontalOffsetEnabled(Z)V
     .locals 0
 
-    .line 1427
+    .line 1471
     invoke-super {p0, p1}, Lcom/google/android/material/appbar/AppBarLayout$BaseBehavior;->setHorizontalOffsetEnabled(Z)V
 
     return-void
@@ -216,7 +216,7 @@
 .method public bridge synthetic setLeftAndRightOffset(I)Z
     .locals 0
 
-    .line 1427
+    .line 1471
     invoke-super {p0, p1}, Lcom/google/android/material/appbar/AppBarLayout$BaseBehavior;->setLeftAndRightOffset(I)Z
 
     move-result p0
@@ -227,7 +227,7 @@
 .method public bridge synthetic setTopAndBottomOffset(I)Z
     .locals 0
 
-    .line 1427
+    .line 1471
     invoke-super {p0, p1}, Lcom/google/android/material/appbar/AppBarLayout$BaseBehavior;->setTopAndBottomOffset(I)Z
 
     move-result p0
@@ -238,7 +238,7 @@
 .method public bridge synthetic setVerticalOffsetEnabled(Z)V
     .locals 0
 
-    .line 1427
+    .line 1471
     invoke-super {p0, p1}, Lcom/google/android/material/appbar/AppBarLayout$BaseBehavior;->setVerticalOffsetEnabled(Z)V
 
     return-void

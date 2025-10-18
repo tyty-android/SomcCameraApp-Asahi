@@ -48,8 +48,6 @@
 
 
 # instance fields
-.field final synthetic $$dirty:I
-
 .field final synthetic $content:Lkotlin/jvm/functions/Function3;
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -67,7 +65,7 @@
 
 
 # direct methods
-.method constructor <init>(Lkotlin/jvm/functions/Function3;Landroidx/compose/material/SnackbarData;I)V
+.method constructor <init>(Lkotlin/jvm/functions/Function3;Landroidx/compose/material/SnackbarData;)V
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -82,15 +80,13 @@
             "Lkotlin/Unit;",
             ">;",
             "Landroidx/compose/material/SnackbarData;",
-            "I)V"
+            ")V"
         }
     .end annotation
 
     iput-object p1, p0, Landroidx/compose/material/SnackbarHostKt$FadeInFadeOutWithScale$2$1$1;->$content:Lkotlin/jvm/functions/Function3;
 
     iput-object p2, p0, Landroidx/compose/material/SnackbarHostKt$FadeInFadeOutWithScale$2$1$1;->$item:Landroidx/compose/material/SnackbarData;
-
-    iput p3, p0, Landroidx/compose/material/SnackbarHostKt$FadeInFadeOutWithScale$2$1$1;->$$dirty:I
 
     const/4 p1, 0x2
 
@@ -104,7 +100,7 @@
 .method public bridge synthetic invoke(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
 
-    .line 320
+    .line 327
     check-cast p1, Landroidx/compose/runtime/Composer;
 
     check-cast p2, Ljava/lang/Number;
@@ -123,7 +119,7 @@
 .method public final invoke(Landroidx/compose/runtime/Composer;I)V
     .locals 3
 
-    const-string v0, "C320@11640L15:SnackbarHost.kt#jmzs0o"
+    const-string v0, "C327@11868L15:SnackbarHost.kt#jmzs0o"
 
     invoke-static {p1, v0}, Landroidx/compose/runtime/ComposerKt;->sourceInformation(Landroidx/compose/runtime/Composer;Ljava/lang/String;)V
 
@@ -133,7 +129,7 @@
 
     if-ne v0, v1, :cond_1
 
-    .line 321
+    .line 328
     invoke-interface {p1}, Landroidx/compose/runtime/Composer;->getSkipping()Z
 
     move-result v0
@@ -157,7 +153,7 @@
 
     const/4 v0, -0x1
 
-    const-string v1, "androidx.compose.material.FadeInFadeOutWithScale.<anonymous>.<anonymous>.<anonymous>.<anonymous> (SnackbarHost.kt:319)"
+    const-string v1, "androidx.compose.material.FadeInFadeOutWithScale.<anonymous>.<anonymous>.<anonymous>.<anonymous> (SnackbarHost.kt:327)"
 
     const v2, 0x79b62c7c
 
@@ -166,21 +162,17 @@
     :cond_2
     iget-object p2, p0, Landroidx/compose/material/SnackbarHostKt$FadeInFadeOutWithScale$2$1$1;->$content:Lkotlin/jvm/functions/Function3;
 
-    iget-object v0, p0, Landroidx/compose/material/SnackbarHostKt$FadeInFadeOutWithScale$2$1$1;->$item:Landroidx/compose/material/SnackbarData;
+    iget-object p0, p0, Landroidx/compose/material/SnackbarHostKt$FadeInFadeOutWithScale$2$1$1;->$item:Landroidx/compose/material/SnackbarData;
 
-    invoke-static {v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;)V
+    invoke-static {p0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;)V
 
-    iget p0, p0, Landroidx/compose/material/SnackbarHostKt$FadeInFadeOutWithScale$2$1$1;->$$dirty:I
+    const/4 v0, 0x0
 
-    shr-int/lit8 p0, p0, 0x3
+    invoke-static {v0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
-    and-int/lit8 p0, p0, 0x70
+    move-result-object v0
 
-    invoke-static {p0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
-
-    move-result-object p0
-
-    invoke-interface {p2, v0, p1, p0}, Lkotlin/jvm/functions/Function3;->invoke(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-interface {p2, p0, p1, v0}, Lkotlin/jvm/functions/Function3;->invoke(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     invoke-static {}, Landroidx/compose/runtime/ComposerKt;->isTraceInProgress()Z
 

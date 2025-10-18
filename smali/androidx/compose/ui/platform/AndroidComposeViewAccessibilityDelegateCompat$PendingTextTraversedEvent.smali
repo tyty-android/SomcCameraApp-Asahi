@@ -67,31 +67,27 @@
 
 # direct methods
 .method public constructor <init>(Landroidx/compose/ui/semantics/SemanticsNode;IIIIJ)V
-    .locals 1
+    .locals 0
 
-    const-string v0, "node"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 365
+    .line 322
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 366
+    .line 323
     iput-object p1, p0, Landroidx/compose/ui/platform/AndroidComposeViewAccessibilityDelegateCompat$PendingTextTraversedEvent;->node:Landroidx/compose/ui/semantics/SemanticsNode;
 
-    .line 367
+    .line 324
     iput p2, p0, Landroidx/compose/ui/platform/AndroidComposeViewAccessibilityDelegateCompat$PendingTextTraversedEvent;->action:I
 
-    .line 368
+    .line 325
     iput p3, p0, Landroidx/compose/ui/platform/AndroidComposeViewAccessibilityDelegateCompat$PendingTextTraversedEvent;->granularity:I
 
-    .line 369
+    .line 326
     iput p4, p0, Landroidx/compose/ui/platform/AndroidComposeViewAccessibilityDelegateCompat$PendingTextTraversedEvent;->fromIndex:I
 
-    .line 370
+    .line 327
     iput p5, p0, Landroidx/compose/ui/platform/AndroidComposeViewAccessibilityDelegateCompat$PendingTextTraversedEvent;->toIndex:I
 
-    .line 371
+    .line 328
     iput-wide p6, p0, Landroidx/compose/ui/platform/AndroidComposeViewAccessibilityDelegateCompat$PendingTextTraversedEvent;->traverseTime:J
 
     return-void
@@ -102,7 +98,7 @@
 .method public final getAction()I
     .locals 0
 
-    .line 367
+    .line 324
     iget p0, p0, Landroidx/compose/ui/platform/AndroidComposeViewAccessibilityDelegateCompat$PendingTextTraversedEvent;->action:I
 
     return p0
@@ -111,7 +107,7 @@
 .method public final getFromIndex()I
     .locals 0
 
-    .line 369
+    .line 326
     iget p0, p0, Landroidx/compose/ui/platform/AndroidComposeViewAccessibilityDelegateCompat$PendingTextTraversedEvent;->fromIndex:I
 
     return p0
@@ -120,7 +116,7 @@
 .method public final getGranularity()I
     .locals 0
 
-    .line 368
+    .line 325
     iget p0, p0, Landroidx/compose/ui/platform/AndroidComposeViewAccessibilityDelegateCompat$PendingTextTraversedEvent;->granularity:I
 
     return p0
@@ -129,7 +125,7 @@
 .method public final getNode()Landroidx/compose/ui/semantics/SemanticsNode;
     .locals 0
 
-    .line 366
+    .line 323
     iget-object p0, p0, Landroidx/compose/ui/platform/AndroidComposeViewAccessibilityDelegateCompat$PendingTextTraversedEvent;->node:Landroidx/compose/ui/semantics/SemanticsNode;
 
     return-object p0
@@ -138,7 +134,7 @@
 .method public final getToIndex()I
     .locals 0
 
-    .line 370
+    .line 327
     iget p0, p0, Landroidx/compose/ui/platform/AndroidComposeViewAccessibilityDelegateCompat$PendingTextTraversedEvent;->toIndex:I
 
     return p0
@@ -147,7 +143,7 @@
 .method public final getTraverseTime()J
     .locals 2
 
-    .line 371
+    .line 328
     iget-wide v0, p0, Landroidx/compose/ui/platform/AndroidComposeViewAccessibilityDelegateCompat$PendingTextTraversedEvent;->traverseTime:J
 
     return-wide v0

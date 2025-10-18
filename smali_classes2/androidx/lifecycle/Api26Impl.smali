@@ -16,7 +16,7 @@
         "",
         "timeout",
         "Ljava/time/Duration;",
-        "lifecycle-livedata-ktx_release"
+        "lifecycle-livedata_release"
     }
     k = 0x1
     mv = {
@@ -48,7 +48,7 @@
 .method private constructor <init>()V
     .locals 0
 
-    .line 471
+    .line 473
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -63,7 +63,7 @@
 
     invoke-static {p1, p0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 474
+    .line 476
     invoke-virtual {p1}, Ljava/time/Duration;->toMillis()J
 
     move-result-wide p0

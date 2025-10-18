@@ -94,7 +94,7 @@
 .method public final invoke()Landroidx/compose/ui/geometry/Rect;
     .locals 2
 
-    .line 170
+    .line 176
     iget-object v0, p0, Landroidx/compose/foundation/relocation/BringIntoViewResponderNode$bringChildIntoView$2$1$1;->this$0:Landroidx/compose/foundation/relocation/BringIntoViewResponderNode;
 
     iget-object v1, p0, Landroidx/compose/foundation/relocation/BringIntoViewResponderNode$bringChildIntoView$2$1$1;->$childCoordinates:Landroidx/compose/ui/layout/LayoutCoordinates;
@@ -111,7 +111,7 @@
 .method public bridge synthetic invoke()Ljava/lang/Object;
     .locals 0
 
-    .line 170
+    .line 176
     invoke-virtual {p0}, Landroidx/compose/foundation/relocation/BringIntoViewResponderNode$bringChildIntoView$2$1$1;->invoke()Landroidx/compose/ui/geometry/Rect;
 
     move-result-object p0

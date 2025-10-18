@@ -55,10 +55,10 @@
 .method public constructor <init>(Landroidx/compose/foundation/interaction/MutableInteractionSource;)V
     .locals 0
 
-    .line 166
+    .line 167
     invoke-direct {p0}, Landroidx/compose/ui/node/ModifierNodeElement;-><init>()V
 
-    .line 165
+    .line 166
     iput-object p1, p0, Landroidx/compose/foundation/FocusableElement;->interactionSource:Landroidx/compose/foundation/interaction/MutableInteractionSource;
 
     return-void
@@ -69,7 +69,7 @@
 .method public create()Landroidx/compose/foundation/FocusableNode;
     .locals 1
 
-    .line 169
+    .line 170
     new-instance v0, Landroidx/compose/foundation/FocusableNode;
 
     iget-object p0, p0, Landroidx/compose/foundation/FocusableElement;->interactionSource:Landroidx/compose/foundation/interaction/MutableInteractionSource;
@@ -82,7 +82,7 @@
 .method public bridge synthetic create()Landroidx/compose/ui/Modifier$Node;
     .locals 0
 
-    .line 164
+    .line 165
     invoke-virtual {p0}, Landroidx/compose/foundation/FocusableElement;->create()Landroidx/compose/foundation/FocusableNode;
 
     move-result-object p0
@@ -101,7 +101,7 @@
 
     return v0
 
-    .line 177
+    .line 178
     :cond_0
     instance-of v1, p1, Landroidx/compose/foundation/FocusableElement;
 
@@ -111,7 +111,7 @@
 
     return v2
 
-    .line 179
+    .line 180
     :cond_1
     iget-object p0, p0, Landroidx/compose/foundation/FocusableElement;->interactionSource:Landroidx/compose/foundation/interaction/MutableInteractionSource;
 
@@ -134,7 +134,7 @@
 .method public hashCode()I
     .locals 0
 
-    .line 184
+    .line 185
     iget-object p0, p0, Landroidx/compose/foundation/FocusableElement;->interactionSource:Landroidx/compose/foundation/interaction/MutableInteractionSource;
 
     if-eqz p0, :cond_0
@@ -155,16 +155,12 @@
 .method public inspectableProperties(Landroidx/compose/ui/platform/InspectorInfo;)V
     .locals 3
 
-    const-string v0, "<this>"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 188
+    .line 189
     const-string v0, "focusable"
 
     invoke-virtual {p1, v0}, Landroidx/compose/ui/platform/InspectorInfo;->setName(Ljava/lang/String;)V
 
-    .line 189
+    .line 190
     invoke-virtual {p1}, Landroidx/compose/ui/platform/InspectorInfo;->getProperties()Landroidx/compose/ui/platform/ValueElementSequence;
 
     move-result-object v0
@@ -179,7 +175,7 @@
 
     invoke-virtual {v0, v2, v1}, Landroidx/compose/ui/platform/ValueElementSequence;->set(Ljava/lang/String;Ljava/lang/Object;)V
 
-    .line 190
+    .line 191
     invoke-virtual {p1}, Landroidx/compose/ui/platform/InspectorInfo;->getProperties()Landroidx/compose/ui/platform/ValueElementSequence;
 
     move-result-object p1
@@ -194,13 +190,9 @@
 .end method
 
 .method public update(Landroidx/compose/foundation/FocusableNode;)V
-    .locals 1
+    .locals 0
 
-    const-string v0, "node"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 172
+    .line 173
     iget-object p0, p0, Landroidx/compose/foundation/FocusableElement;->interactionSource:Landroidx/compose/foundation/interaction/MutableInteractionSource;
 
     invoke-virtual {p1, p0}, Landroidx/compose/foundation/FocusableNode;->update(Landroidx/compose/foundation/interaction/MutableInteractionSource;)V
@@ -211,7 +203,7 @@
 .method public bridge synthetic update(Landroidx/compose/ui/Modifier$Node;)V
     .locals 0
 
-    .line 164
+    .line 165
     check-cast p1, Landroidx/compose/foundation/FocusableNode;
 
     invoke-virtual {p0, p1}, Landroidx/compose/foundation/FocusableElement;->update(Landroidx/compose/foundation/FocusableNode;)V

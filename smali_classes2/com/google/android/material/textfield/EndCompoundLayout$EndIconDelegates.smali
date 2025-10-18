@@ -36,20 +36,20 @@
 .method constructor <init>(Lcom/google/android/material/textfield/EndCompoundLayout;Landroidx/appcompat/widget/TintTypedArray;)V
     .locals 1
 
-    .line 805
+    .line 820
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 799
+    .line 814
     new-instance v0, Landroid/util/SparseArray;
 
     invoke-direct {v0}, Landroid/util/SparseArray;-><init>()V
 
     iput-object v0, p0, Lcom/google/android/material/textfield/EndCompoundLayout$EndIconDelegates;->delegates:Landroid/util/SparseArray;
 
-    .line 806
+    .line 821
     iput-object p1, p0, Lcom/google/android/material/textfield/EndCompoundLayout$EndIconDelegates;->endLayout:Lcom/google/android/material/textfield/EndCompoundLayout;
 
-    .line 807
+    .line 822
     sget p1, Lcom/google/android/material/R$styleable;->TextInputLayout_endIconDrawable:I
 
     const/4 v0, 0x0
@@ -60,10 +60,10 @@
 
     iput p1, p0, Lcom/google/android/material/textfield/EndCompoundLayout$EndIconDelegates;->customEndIconDrawableId:I
 
-    .line 808
+    .line 823
     sget p1, Lcom/google/android/material/R$styleable;->TextInputLayout_passwordToggleDrawable:I
 
-    .line 809
+    .line 824
     invoke-virtual {p2, p1, v0}, Landroidx/appcompat/widget/TintTypedArray;->getResourceId(II)I
 
     move-result p1
@@ -76,7 +76,7 @@
 .method static synthetic access$500(Lcom/google/android/material/textfield/EndCompoundLayout$EndIconDelegates;)I
     .locals 0
 
-    .line 798
+    .line 813
     iget p0, p0, Lcom/google/android/material/textfield/EndCompoundLayout$EndIconDelegates;->customEndIconDrawableId:I
 
     return p0
@@ -103,7 +103,7 @@
 
     if-ne p1, v0, :cond_0
 
-    .line 828
+    .line 843
     new-instance p1, Lcom/google/android/material/textfield/DropdownMenuEndIconDelegate;
 
     iget-object p0, p0, Lcom/google/android/material/textfield/EndCompoundLayout$EndIconDelegates;->endLayout:Lcom/google/android/material/textfield/EndCompoundLayout;
@@ -112,7 +112,7 @@
 
     return-object p1
 
-    .line 834
+    .line 849
     :cond_0
     new-instance p0, Ljava/lang/IllegalArgumentException;
 
@@ -134,7 +134,7 @@
 
     throw p0
 
-    .line 826
+    .line 841
     :cond_1
     new-instance p1, Lcom/google/android/material/textfield/ClearTextEndIconDelegate;
 
@@ -144,7 +144,7 @@
 
     return-object p1
 
-    .line 824
+    .line 839
     :cond_2
     new-instance p1, Lcom/google/android/material/textfield/PasswordToggleEndIconDelegate;
 
@@ -156,7 +156,7 @@
 
     return-object p1
 
-    .line 832
+    .line 847
     :cond_3
     new-instance p1, Lcom/google/android/material/textfield/NoEndIconDelegate;
 
@@ -166,7 +166,7 @@
 
     return-object p1
 
-    .line 830
+    .line 845
     :cond_4
     new-instance p1, Lcom/google/android/material/textfield/CustomEndIconDelegate;
 
@@ -182,7 +182,7 @@
 .method get(I)Lcom/google/android/material/textfield/EndIconDelegate;
     .locals 1
 
-    .line 813
+    .line 828
     iget-object v0, p0, Lcom/google/android/material/textfield/EndCompoundLayout$EndIconDelegates;->delegates:Landroid/util/SparseArray;
 
     invoke-virtual {v0, p1}, Landroid/util/SparseArray;->get(I)Ljava/lang/Object;
@@ -193,12 +193,12 @@
 
     if-nez v0, :cond_0
 
-    .line 815
+    .line 830
     invoke-direct {p0, p1}, Lcom/google/android/material/textfield/EndCompoundLayout$EndIconDelegates;->create(I)Lcom/google/android/material/textfield/EndIconDelegate;
 
     move-result-object v0
 
-    .line 816
+    .line 831
     iget-object p0, p0, Lcom/google/android/material/textfield/EndCompoundLayout$EndIconDelegates;->delegates:Landroid/util/SparseArray;
 
     invoke-virtual {p0, p1, v0}, Landroid/util/SparseArray;->append(ILjava/lang/Object;)V

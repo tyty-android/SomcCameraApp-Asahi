@@ -20,7 +20,7 @@
 
 .annotation runtime Lkotlin/Metadata;
     d1 = {
-        "\u0000,\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0002\u0010\u000b\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0003\n\u0002\u0010\u0002\n\u0002\u0008\u0007\u0008\u0007\u0018\u0000 \u00132\u0008\u0012\u0004\u0012\u00020\u00020\u0001:\u0001\u0013B#\u0012\u0006\u0010\u0003\u001a\u00020\u0002\u0012\u0014\u0008\u0002\u0010\u0004\u001a\u000e\u0012\u0004\u0012\u00020\u0002\u0012\u0004\u0012\u00020\u00060\u0005\u00a2\u0006\u0002\u0010\u0007J\u0019\u0010\u000c\u001a\u00020\r2\u0006\u0010\u000e\u001a\u00020\tH\u0086@\u00f8\u0001\u0000\u00a2\u0006\u0002\u0010\u000fJ\u000e\u0010\u0010\u001a\u00020\u00062\u0006\u0010\u000e\u001a\u00020\tJ\u0011\u0010\u0011\u001a\u00020\rH\u0086@\u00f8\u0001\u0000\u00a2\u0006\u0002\u0010\u0012R\u0013\u0010\u0008\u001a\u0004\u0018\u00010\t8F\u00a2\u0006\u0006\u001a\u0004\u0008\n\u0010\u000b\u0082\u0002\u0004\n\u0002\u0008\u0019\u00a8\u0006\u0014"
+        "\u0000,\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0002\u0010\u000b\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0003\n\u0002\u0010\u0002\n\u0002\u0008\u0007\u0008\u0007\u0018\u0000 \u00132\u0008\u0012\u0004\u0012\u00020\u00020\u0001:\u0001\u0013B#\u0012\u0006\u0010\u0003\u001a\u00020\u0002\u0012\u0014\u0008\u0002\u0010\u0004\u001a\u000e\u0012\u0004\u0012\u00020\u0002\u0012\u0004\u0012\u00020\u00060\u0005\u00a2\u0006\u0002\u0010\u0007J\u0016\u0010\u000c\u001a\u00020\r2\u0006\u0010\u000e\u001a\u00020\tH\u0086@\u00a2\u0006\u0002\u0010\u000fJ\u000e\u0010\u0010\u001a\u00020\u00062\u0006\u0010\u000e\u001a\u00020\tJ\u000e\u0010\u0011\u001a\u00020\rH\u0086@\u00a2\u0006\u0002\u0010\u0012R\u0013\u0010\u0008\u001a\u0004\u0018\u00010\t8F\u00a2\u0006\u0006\u001a\u0004\u0008\n\u0010\u000b\u00a8\u0006\u0014"
     }
     d2 = {
         "Landroidx/compose/material/DismissState;",
@@ -77,7 +77,7 @@
 .end method
 
 .method public constructor <init>(Landroidx/compose/material/DismissValue;Lkotlin/jvm/functions/Function1;)V
-    .locals 7
+    .locals 6
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -90,28 +90,20 @@
         }
     .end annotation
 
-    const-string v0, "initialValue"
+    const/4 v4, 0x2
 
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+    const/4 v5, 0x0
 
-    const-string v0, "confirmStateChange"
+    const/4 v2, 0x0
 
-    invoke-static {p2, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+    move-object v0, p0
 
-    const/4 v5, 0x2
+    move-object v1, p1
 
-    const/4 v6, 0x0
+    move-object v3, p2
 
-    const/4 v3, 0x0
-
-    move-object v1, p0
-
-    move-object v2, p1
-
-    move-object v4, p2
-
-    .line 89
-    invoke-direct/range {v1 .. v6}, Landroidx/compose/material/SwipeableState;-><init>(Ljava/lang/Object;Landroidx/compose/animation/core/AnimationSpec;Lkotlin/jvm/functions/Function1;ILkotlin/jvm/internal/DefaultConstructorMarker;)V
+    .line 90
+    invoke-direct/range {v0 .. v5}, Landroidx/compose/material/SwipeableState;-><init>(Ljava/lang/Object;Landroidx/compose/animation/core/AnimationSpec;Lkotlin/jvm/functions/Function1;ILkotlin/jvm/internal/DefaultConstructorMarker;)V
 
     return-void
 .end method
@@ -123,12 +115,12 @@
 
     if-eqz p3, :cond_0
 
-    .line 88
+    .line 89
     sget-object p2, Landroidx/compose/material/DismissState$1;->INSTANCE:Landroidx/compose/material/DismissState$1;
 
     check-cast p2, Lkotlin/jvm/functions/Function1;
 
-    .line 86
+    .line 87
     :cond_0
     invoke-direct {p0, p1, p2}, Landroidx/compose/material/DismissState;-><init>(Landroidx/compose/material/DismissValue;Lkotlin/jvm/functions/Function1;)V
 
@@ -151,7 +143,7 @@
         }
     .end annotation
 
-    .line 124
+    .line 125
     sget-object v0, Landroidx/compose/material/DismissDirection;->StartToEnd:Landroidx/compose/material/DismissDirection;
 
     if-ne p1, v0, :cond_0
@@ -166,7 +158,7 @@
     :goto_0
     move-object v1, p1
 
-    .line 125
+    .line 126
     move-object v0, p0
 
     check-cast v0, Landroidx/compose/material/SwipeableState;
@@ -200,7 +192,7 @@
 .method public final getDismissDirection()Landroidx/compose/material/DismissDirection;
     .locals 2
 
-    .line 97
+    .line 98
     invoke-virtual {p0}, Landroidx/compose/material/DismissState;->getOffset()Landroidx/compose/runtime/State;
 
     move-result-object v0
@@ -258,11 +250,7 @@
 .method public final isDismissed(Landroidx/compose/material/DismissDirection;)Z
     .locals 1
 
-    const-string v0, "direction"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 105
+    .line 106
     invoke-virtual {p0}, Landroidx/compose/material/DismissState;->getCurrentValue()Ljava/lang/Object;
 
     move-result-object p0
@@ -305,7 +293,7 @@
         }
     .end annotation
 
-    .line 115
+    .line 116
     move-object v0, p0
 
     check-cast v0, Landroidx/compose/material/SwipeableState;

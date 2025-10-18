@@ -58,7 +58,7 @@
 .method static constructor <clinit>()V
     .locals 1
 
-    .line 202
+    .line 187
     const-class v0, Lio/grpc/PersistentHashArrayMappedTrie;
 
     return-void
@@ -74,16 +74,16 @@
         }
     .end annotation
 
-    .line 210
+    .line 195
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 211
+    .line 196
     iput p1, p0, Lio/grpc/PersistentHashArrayMappedTrie$CompressedIndex;->bitmap:I
 
-    .line 212
+    .line 197
     iput-object p2, p0, Lio/grpc/PersistentHashArrayMappedTrie$CompressedIndex;->values:[Lio/grpc/PersistentHashArrayMappedTrie$Node;
 
-    .line 213
+    .line 198
     iput p3, p0, Lio/grpc/PersistentHashArrayMappedTrie$CompressedIndex;->size:I
 
     return-void
@@ -107,12 +107,12 @@
         }
     .end annotation
 
-    .line 264
+    .line 249
     invoke-static {p1, p4}, Lio/grpc/PersistentHashArrayMappedTrie$CompressedIndex;->indexBit(II)I
 
     move-result v0
 
-    .line 265
+    .line 250
     invoke-static {p3, p4}, Lio/grpc/PersistentHashArrayMappedTrie$CompressedIndex;->indexBit(II)I
 
     move-result v1
@@ -121,17 +121,17 @@
 
     add-int/lit8 p4, p4, 0x5
 
-    .line 267
+    .line 252
     invoke-static {p0, p1, p2, p3, p4}, Lio/grpc/PersistentHashArrayMappedTrie$CompressedIndex;->combine(Lio/grpc/PersistentHashArrayMappedTrie$Node;ILio/grpc/PersistentHashArrayMappedTrie$Node;II)Lio/grpc/PersistentHashArrayMappedTrie$Node;
 
     move-result-object p0
 
-    .line 269
+    .line 254
     filled-new-array {p0}, [Lio/grpc/PersistentHashArrayMappedTrie$Node;
 
     move-result-object p1
 
-    .line 270
+    .line 255
     new-instance p2, Lio/grpc/PersistentHashArrayMappedTrie$CompressedIndex;
 
     invoke-interface {p0}, Lio/grpc/PersistentHashArrayMappedTrie$Node;->size()I
@@ -142,7 +142,7 @@
 
     return-object p2
 
-    .line 273
+    .line 258
     :cond_0
     invoke-static {p1, p4}, Lio/grpc/PersistentHashArrayMappedTrie$CompressedIndex;->uncompressedIndex(II)I
 
@@ -160,13 +160,13 @@
 
     move-object p0, v2
 
-    .line 279
+    .line 264
     :cond_1
     filled-new-array {p0, p2}, [Lio/grpc/PersistentHashArrayMappedTrie$Node;
 
     move-result-object p1
 
-    .line 280
+    .line 265
     new-instance p3, Lio/grpc/PersistentHashArrayMappedTrie$CompressedIndex;
 
     or-int p4, v0, v1
@@ -189,7 +189,7 @@
 .method private compressedIndex(I)I
     .locals 0
 
-    .line 296
+    .line 281
     iget p0, p0, Lio/grpc/PersistentHashArrayMappedTrie$CompressedIndex;->bitmap:I
 
     add-int/lit8 p1, p1, -0x1
@@ -206,7 +206,7 @@
 .method private static indexBit(II)I
     .locals 0
 
-    .line 304
+    .line 289
     invoke-static {p0, p1}, Lio/grpc/PersistentHashArrayMappedTrie$CompressedIndex;->uncompressedIndex(II)I
 
     move-result p0
@@ -238,12 +238,12 @@
         }
     .end annotation
 
-    .line 223
+    .line 208
     invoke-static {p2, p3}, Lio/grpc/PersistentHashArrayMappedTrie$CompressedIndex;->indexBit(II)I
 
     move-result v0
 
-    .line 224
+    .line 209
     iget v1, p0, Lio/grpc/PersistentHashArrayMappedTrie$CompressedIndex;->bitmap:I
 
     and-int/2addr v1, v0
@@ -254,13 +254,13 @@
 
     return-object p0
 
-    .line 227
+    .line 212
     :cond_0
     invoke-direct {p0, v0}, Lio/grpc/PersistentHashArrayMappedTrie$CompressedIndex;->compressedIndex(I)I
 
     move-result v0
 
-    .line 228
+    .line 213
     iget-object p0, p0, Lio/grpc/PersistentHashArrayMappedTrie$CompressedIndex;->values:[Lio/grpc/PersistentHashArrayMappedTrie$Node;
 
     aget-object p0, p0, v0
@@ -284,17 +284,17 @@
         }
     .end annotation
 
-    .line 233
+    .line 218
     invoke-static {p3, p4}, Lio/grpc/PersistentHashArrayMappedTrie$CompressedIndex;->indexBit(II)I
 
     move-result v0
 
-    .line 234
+    .line 219
     invoke-direct {p0, v0}, Lio/grpc/PersistentHashArrayMappedTrie$CompressedIndex;->compressedIndex(I)I
 
     move-result v1
 
-    .line 235
+    .line 220
     iget v2, p0, Lio/grpc/PersistentHashArrayMappedTrie$CompressedIndex;->bitmap:I
 
     and-int v3, v2, v0
@@ -303,7 +303,7 @@
 
     or-int p3, v2, v0
 
-    .line 239
+    .line 224
     iget-object p4, p0, Lio/grpc/PersistentHashArrayMappedTrie$CompressedIndex;->values:[Lio/grpc/PersistentHashArrayMappedTrie$Node;
 
     array-length v0, p4
@@ -314,17 +314,17 @@
 
     const/4 v2, 0x0
 
-    .line 240
+    .line 225
     invoke-static {p4, v2, v0, v2, v1}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
 
-    .line 241
+    .line 226
     new-instance p4, Lio/grpc/PersistentHashArrayMappedTrie$Leaf;
 
     invoke-direct {p4, p1, p2}, Lio/grpc/PersistentHashArrayMappedTrie$Leaf;-><init>(Ljava/lang/Object;Ljava/lang/Object;)V
 
     aput-object p4, v0, v1
 
-    .line 242
+    .line 227
     iget-object p1, p0, Lio/grpc/PersistentHashArrayMappedTrie$CompressedIndex;->values:[Lio/grpc/PersistentHashArrayMappedTrie$Node;
 
     add-int/lit8 p2, v1, 0x1
@@ -335,7 +335,7 @@
 
     invoke-static {p1, v1, v0, p2, p4}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
 
-    .line 248
+    .line 233
     new-instance p1, Lio/grpc/PersistentHashArrayMappedTrie$CompressedIndex;
 
     invoke-virtual {p0}, Lio/grpc/PersistentHashArrayMappedTrie$CompressedIndex;->size()I
@@ -348,7 +348,7 @@
 
     return-object p1
 
-    .line 251
+    .line 236
     :cond_0
     iget-object v0, p0, Lio/grpc/PersistentHashArrayMappedTrie$CompressedIndex;->values:[Lio/grpc/PersistentHashArrayMappedTrie$Node;
 
@@ -360,26 +360,26 @@
 
     check-cast v0, [Lio/grpc/PersistentHashArrayMappedTrie$Node;
 
-    .line 252
+    .line 237
     iget-object v2, p0, Lio/grpc/PersistentHashArrayMappedTrie$CompressedIndex;->values:[Lio/grpc/PersistentHashArrayMappedTrie$Node;
 
     aget-object v2, v2, v1
 
     add-int/lit8 p4, p4, 0x5
 
-    .line 253
+    .line 238
     invoke-interface {v2, p1, p2, p3, p4}, Lio/grpc/PersistentHashArrayMappedTrie$Node;->put(Ljava/lang/Object;Ljava/lang/Object;II)Lio/grpc/PersistentHashArrayMappedTrie$Node;
 
     move-result-object p1
 
     aput-object p1, v0, v1
 
-    .line 254
+    .line 239
     invoke-virtual {p0}, Lio/grpc/PersistentHashArrayMappedTrie$CompressedIndex;->size()I
 
     move-result p1
 
-    .line 255
+    .line 240
     aget-object p2, v0, v1
 
     invoke-interface {p2}, Lio/grpc/PersistentHashArrayMappedTrie$Node;->size()I
@@ -388,7 +388,7 @@
 
     add-int/2addr p1, p2
 
-    .line 256
+    .line 241
     iget-object p2, p0, Lio/grpc/PersistentHashArrayMappedTrie$CompressedIndex;->values:[Lio/grpc/PersistentHashArrayMappedTrie$Node;
 
     aget-object p2, p2, v1
@@ -399,7 +399,7 @@
 
     sub-int/2addr p1, p2
 
-    .line 257
+    .line 242
     new-instance p2, Lio/grpc/PersistentHashArrayMappedTrie$CompressedIndex;
 
     iget p0, p0, Lio/grpc/PersistentHashArrayMappedTrie$CompressedIndex;->bitmap:I
@@ -412,7 +412,7 @@
 .method public size()I
     .locals 0
 
-    .line 218
+    .line 203
     iget p0, p0, Lio/grpc/PersistentHashArrayMappedTrie$CompressedIndex;->size:I
 
     return p0
@@ -421,17 +421,17 @@
 .method public toString()Ljava/lang/String;
     .locals 5
 
-    .line 286
+    .line 271
     new-instance v0, Ljava/lang/StringBuilder;
 
     const-string v1, "CompressedIndex("
 
     invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
-    .line 287
+    .line 272
     iget v1, p0, Lio/grpc/PersistentHashArrayMappedTrie$CompressedIndex;->bitmap:I
 
-    .line 288
+    .line 273
     invoke-static {v1}, Ljava/lang/Integer;->toBinaryString(I)Ljava/lang/String;
 
     move-result-object v1
@@ -448,7 +448,7 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 289
+    .line 274
     iget-object p0, p0, Lio/grpc/PersistentHashArrayMappedTrie$CompressedIndex;->values:[Lio/grpc/PersistentHashArrayMappedTrie$Node;
 
     array-length v1, p0
@@ -460,7 +460,7 @@
 
     aget-object v3, p0, v2
 
-    .line 290
+    .line 275
     invoke-virtual {v0, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
     move-result-object v3
@@ -473,7 +473,7 @@
 
     goto :goto_0
 
-    .line 292
+    .line 277
     :cond_0
     const-string p0, ")"
 

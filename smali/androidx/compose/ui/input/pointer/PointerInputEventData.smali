@@ -6,7 +6,7 @@
 # annotations
 .annotation runtime Lkotlin/Metadata;
     d1 = {
-        "\u0000J\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\t\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0010\u000b\n\u0000\n\u0002\u0010\u0007\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0010 \n\u0002\u0018\u0002\n\u0002\u0008(\n\u0002\u0010\u0008\n\u0000\n\u0002\u0010\u000e\n\u0000\u0008\u0080\u0008\u0018\u00002\u00020\u0001Bd\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\u0006\u0010\u0004\u001a\u00020\u0005\u0012\u0006\u0010\u0006\u001a\u00020\u0007\u0012\u0006\u0010\u0008\u001a\u00020\u0007\u0012\u0006\u0010\t\u001a\u00020\n\u0012\u0006\u0010\u000b\u001a\u00020\u000c\u0012\u0006\u0010\r\u001a\u00020\u000e\u0012\u0008\u0008\u0002\u0010\u000f\u001a\u00020\n\u0012\u000e\u0008\u0002\u0010\u0010\u001a\u0008\u0012\u0004\u0012\u00020\u00120\u0011\u0012\u0008\u0008\u0002\u0010\u0013\u001a\u00020\u0007\u00f8\u0001\u0000\u00a2\u0006\u0002\u0010\u0014J\u0019\u0010&\u001a\u00020\u0003H\u00c6\u0003\u00f8\u0001\u0002\u00f8\u0001\u0001\u00f8\u0001\u0000\u00a2\u0006\u0004\u0008\'\u0010\u001aJ\u0019\u0010(\u001a\u00020\u0007H\u00c6\u0003\u00f8\u0001\u0002\u00f8\u0001\u0001\u00f8\u0001\u0000\u00a2\u0006\u0004\u0008)\u0010\u001aJ\t\u0010*\u001a\u00020\u0005H\u00c6\u0003J\u0019\u0010+\u001a\u00020\u0007H\u00c6\u0003\u00f8\u0001\u0002\u00f8\u0001\u0001\u00f8\u0001\u0000\u00a2\u0006\u0004\u0008,\u0010\u001aJ\u0019\u0010-\u001a\u00020\u0007H\u00c6\u0003\u00f8\u0001\u0002\u00f8\u0001\u0001\u00f8\u0001\u0000\u00a2\u0006\u0004\u0008.\u0010\u001aJ\t\u0010/\u001a\u00020\nH\u00c6\u0003J\t\u00100\u001a\u00020\u000cH\u00c6\u0003J\u0019\u00101\u001a\u00020\u000eH\u00c6\u0003\u00f8\u0001\u0002\u00f8\u0001\u0001\u00f8\u0001\u0000\u00a2\u0006\u0004\u00082\u0010#J\t\u00103\u001a\u00020\nH\u00c6\u0003J\u000f\u00104\u001a\u0008\u0012\u0004\u0012\u00020\u00120\u0011H\u00c6\u0003J\u0080\u0001\u00105\u001a\u00020\u00002\u0008\u0008\u0002\u0010\u0002\u001a\u00020\u00032\u0008\u0008\u0002\u0010\u0004\u001a\u00020\u00052\u0008\u0008\u0002\u0010\u0006\u001a\u00020\u00072\u0008\u0008\u0002\u0010\u0008\u001a\u00020\u00072\u0008\u0008\u0002\u0010\t\u001a\u00020\n2\u0008\u0008\u0002\u0010\u000b\u001a\u00020\u000c2\u0008\u0008\u0002\u0010\r\u001a\u00020\u000e2\u0008\u0008\u0002\u0010\u000f\u001a\u00020\n2\u000e\u0008\u0002\u0010\u0010\u001a\u0008\u0012\u0004\u0012\u00020\u00120\u00112\u0008\u0008\u0002\u0010\u0013\u001a\u00020\u0007H\u00c6\u0001\u00f8\u0001\u0001\u00f8\u0001\u0000\u00a2\u0006\u0004\u00086\u00107J\u0013\u00108\u001a\u00020\n2\u0008\u00109\u001a\u0004\u0018\u00010\u0001H\u00d6\u0003J\t\u0010:\u001a\u00020;H\u00d6\u0001J\t\u0010<\u001a\u00020=H\u00d6\u0001R\u0011\u0010\t\u001a\u00020\n\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\u0015\u0010\u0016R\u0017\u0010\u0010\u001a\u0008\u0012\u0004\u0012\u00020\u00120\u0011\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\u0017\u0010\u0018R\u001c\u0010\u0002\u001a\u00020\u0003\u00f8\u0001\u0000\u00f8\u0001\u0001\u00f8\u0001\u0002\u00a2\u0006\n\n\u0002\u0010\u001b\u001a\u0004\u0008\u0019\u0010\u001aR\u0011\u0010\u000f\u001a\u00020\n\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\u001c\u0010\u0016R\u001c\u0010\u0008\u001a\u00020\u0007\u00f8\u0001\u0000\u00f8\u0001\u0001\u00f8\u0001\u0002\u00a2\u0006\n\n\u0002\u0010\u001b\u001a\u0004\u0008\u001d\u0010\u001aR\u001c\u0010\u0006\u001a\u00020\u0007\u00f8\u0001\u0000\u00f8\u0001\u0001\u00f8\u0001\u0002\u00a2\u0006\n\n\u0002\u0010\u001b\u001a\u0004\u0008\u001e\u0010\u001aR\u0011\u0010\u000b\u001a\u00020\u000c\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\u001f\u0010 R\u001c\u0010\u0013\u001a\u00020\u0007\u00f8\u0001\u0000\u00f8\u0001\u0001\u00f8\u0001\u0002\u00a2\u0006\n\n\u0002\u0010\u001b\u001a\u0004\u0008!\u0010\u001aR\u001c\u0010\r\u001a\u00020\u000e\u00f8\u0001\u0000\u00f8\u0001\u0001\u00f8\u0001\u0002\u00a2\u0006\n\n\u0002\u0010$\u001a\u0004\u0008\"\u0010#R\u0011\u0010\u0004\u001a\u00020\u0005\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008%\u0010\u001a\u0082\u0002\u000f\n\u0002\u0008\u0019\n\u0005\u0008\u00a1\u001e0\u0001\n\u0002\u0008!\u00a8\u0006>"
+        "\u0000J\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\t\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0010\u000b\n\u0000\n\u0002\u0010\u0007\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0010 \n\u0002\u0018\u0002\n\u0002\u0008,\n\u0002\u0010\u0008\n\u0000\n\u0002\u0010\u000e\n\u0000\u0008\u0080\u0008\u0018\u00002\u00020\u0001Bk\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\u0006\u0010\u0004\u001a\u00020\u0005\u0012\u0006\u0010\u0006\u001a\u00020\u0007\u0012\u0006\u0010\u0008\u001a\u00020\u0007\u0012\u0006\u0010\t\u001a\u00020\n\u0012\u0006\u0010\u000b\u001a\u00020\u000c\u0012\u0006\u0010\r\u001a\u00020\u000e\u0012\u0008\u0008\u0002\u0010\u000f\u001a\u00020\n\u0012\u000e\u0008\u0002\u0010\u0010\u001a\u0008\u0012\u0004\u0012\u00020\u00120\u0011\u0012\u0008\u0008\u0002\u0010\u0013\u001a\u00020\u0007\u0012\u0008\u0008\u0002\u0010\u0014\u001a\u00020\u0007\u00a2\u0006\u0002\u0010\u0015J\u0016\u0010(\u001a\u00020\u0003H\u00c6\u0003\u00f8\u0001\u0001\u00f8\u0001\u0000\u00a2\u0006\u0004\u0008)\u0010\u001bJ\u0016\u0010*\u001a\u00020\u0007H\u00c6\u0003\u00f8\u0001\u0001\u00f8\u0001\u0000\u00a2\u0006\u0004\u0008+\u0010\u001bJ\u0016\u0010,\u001a\u00020\u0007H\u00c6\u0003\u00f8\u0001\u0001\u00f8\u0001\u0000\u00a2\u0006\u0004\u0008-\u0010\u001bJ\t\u0010.\u001a\u00020\u0005H\u00c6\u0003J\u0016\u0010/\u001a\u00020\u0007H\u00c6\u0003\u00f8\u0001\u0001\u00f8\u0001\u0000\u00a2\u0006\u0004\u00080\u0010\u001bJ\u0016\u00101\u001a\u00020\u0007H\u00c6\u0003\u00f8\u0001\u0001\u00f8\u0001\u0000\u00a2\u0006\u0004\u00082\u0010\u001bJ\t\u00103\u001a\u00020\nH\u00c6\u0003J\t\u00104\u001a\u00020\u000cH\u00c6\u0003J\u0016\u00105\u001a\u00020\u000eH\u00c6\u0003\u00f8\u0001\u0001\u00f8\u0001\u0000\u00a2\u0006\u0004\u00086\u0010%J\t\u00107\u001a\u00020\nH\u00c6\u0003J\u000f\u00108\u001a\u0008\u0012\u0004\u0012\u00020\u00120\u0011H\u00c6\u0003J\u0087\u0001\u00109\u001a\u00020\u00002\u0008\u0008\u0002\u0010\u0002\u001a\u00020\u00032\u0008\u0008\u0002\u0010\u0004\u001a\u00020\u00052\u0008\u0008\u0002\u0010\u0006\u001a\u00020\u00072\u0008\u0008\u0002\u0010\u0008\u001a\u00020\u00072\u0008\u0008\u0002\u0010\t\u001a\u00020\n2\u0008\u0008\u0002\u0010\u000b\u001a\u00020\u000c2\u0008\u0008\u0002\u0010\r\u001a\u00020\u000e2\u0008\u0008\u0002\u0010\u000f\u001a\u00020\n2\u000e\u0008\u0002\u0010\u0010\u001a\u0008\u0012\u0004\u0012\u00020\u00120\u00112\u0008\u0008\u0002\u0010\u0013\u001a\u00020\u00072\u0008\u0008\u0002\u0010\u0014\u001a\u00020\u0007H\u00c6\u0001\u00f8\u0001\u0000\u00a2\u0006\u0004\u0008:\u0010;J\u0013\u0010<\u001a\u00020\n2\u0008\u0010=\u001a\u0004\u0018\u00010\u0001H\u00d6\u0003J\t\u0010>\u001a\u00020?H\u00d6\u0001J\t\u0010@\u001a\u00020AH\u00d6\u0001R\u0011\u0010\t\u001a\u00020\n\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\u0016\u0010\u0017R\u0017\u0010\u0010\u001a\u0008\u0012\u0004\u0012\u00020\u00120\u0011\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\u0018\u0010\u0019R\u0019\u0010\u0002\u001a\u00020\u0003\u00f8\u0001\u0000\u00f8\u0001\u0001\u00a2\u0006\n\n\u0002\u0010\u001c\u001a\u0004\u0008\u001a\u0010\u001bR\u0011\u0010\u000f\u001a\u00020\n\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\u001d\u0010\u0017R\u0019\u0010\u0014\u001a\u00020\u0007\u00f8\u0001\u0000\u00f8\u0001\u0001\u00a2\u0006\n\n\u0002\u0010\u001c\u001a\u0004\u0008\u001e\u0010\u001bR\u0019\u0010\u0008\u001a\u00020\u0007\u00f8\u0001\u0000\u00f8\u0001\u0001\u00a2\u0006\n\n\u0002\u0010\u001c\u001a\u0004\u0008\u001f\u0010\u001bR\u0019\u0010\u0006\u001a\u00020\u0007\u00f8\u0001\u0000\u00f8\u0001\u0001\u00a2\u0006\n\n\u0002\u0010\u001c\u001a\u0004\u0008 \u0010\u001bR\u0011\u0010\u000b\u001a\u00020\u000c\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008!\u0010\"R\u0019\u0010\u0013\u001a\u00020\u0007\u00f8\u0001\u0000\u00f8\u0001\u0001\u00a2\u0006\n\n\u0002\u0010\u001c\u001a\u0004\u0008#\u0010\u001bR\u0019\u0010\r\u001a\u00020\u000e\u00f8\u0001\u0000\u00f8\u0001\u0001\u00a2\u0006\n\n\u0002\u0010&\u001a\u0004\u0008$\u0010%R\u0011\u0010\u0004\u001a\u00020\u0005\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\'\u0010\u001b\u0082\u0002\u000b\n\u0005\u0008\u00a1\u001e0\u0001\n\u0002\u0008!\u00a8\u0006B"
     }
     d2 = {
         "Landroidx/compose/ui/input/pointer/PointerInputEventData;",
@@ -29,7 +29,8 @@
         "",
         "Landroidx/compose/ui/input/pointer/HistoricalChange;",
         "scrollDelta",
-        "(JJJJZFIZLjava/util/List;JLkotlin/jvm/internal/DefaultConstructorMarker;)V",
+        "originalEventPosition",
+        "(JJJJZFIZLjava/util/List;JJLkotlin/jvm/internal/DefaultConstructorMarker;)V",
         "getDown",
         "()Z",
         "getHistorical",
@@ -38,6 +39,7 @@
         "()J",
         "J",
         "getIssuesEnterExit",
+        "getOriginalEventPosition-F1C5BW0",
         "getPosition-F1C5BW0",
         "getPositionOnScreen-F1C5BW0",
         "getPressure",
@@ -51,6 +53,8 @@
         "component1-J3iCeTQ",
         "component10",
         "component10-F1C5BW0",
+        "component11",
+        "component11-F1C5BW0",
         "component2",
         "component3",
         "component3-F1C5BW0",
@@ -63,8 +67,8 @@
         "component8",
         "component9",
         "copy",
-        "copy-gYeeOSc",
-        "(JJJJZFIZLjava/util/List;J)Landroidx/compose/ui/input/pointer/PointerInputEventData;",
+        "copy-rc8HELY",
+        "(JJJJZFIZLjava/util/List;JJ)Landroidx/compose/ui/input/pointer/PointerInputEventData;",
         "equals",
         "other",
         "hashCode",
@@ -81,6 +85,10 @@
     }
     xi = 0x30
 .end annotation
+
+
+# static fields
+.field public static final $stable:I = 0x8
 
 
 # instance fields
@@ -100,6 +108,8 @@
 
 .field private final issuesEnterExit:Z
 
+.field private final originalEventPosition:J
+
 .field private final position:J
 
 .field private final positionOnScreen:J
@@ -114,83 +124,90 @@
 
 
 # direct methods
-.method private constructor <init>(JJJJZFIZLjava/util/List;J)V
-    .locals 4
+.method static constructor <clinit>()V
+    .locals 0
+
+    return-void
+.end method
+
+.method private constructor <init>(JJJJZFIZLjava/util/List;JJ)V
+    .locals 3
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(JJJJZFIZ",
             "Ljava/util/List<",
             "Landroidx/compose/ui/input/pointer/HistoricalChange;",
-            ">;J)V"
+            ">;JJ)V"
         }
     .end annotation
 
     move-object v0, p0
 
-    move-object/from16 v1, p13
-
-    const-string v2, "historical"
-
-    invoke-static {v1, v2}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 41
+    .line 42
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    move-wide v2, p1
-
-    .line 43
-    iput-wide v2, v0, Landroidx/compose/ui/input/pointer/PointerInputEventData;->id:J
-
-    move-wide v2, p3
+    move-wide v1, p1
 
     .line 44
-    iput-wide v2, v0, Landroidx/compose/ui/input/pointer/PointerInputEventData;->uptime:J
+    iput-wide v1, v0, Landroidx/compose/ui/input/pointer/PointerInputEventData;->id:J
 
-    move-wide v2, p5
+    move-wide v1, p3
 
     .line 45
-    iput-wide v2, v0, Landroidx/compose/ui/input/pointer/PointerInputEventData;->positionOnScreen:J
+    iput-wide v1, v0, Landroidx/compose/ui/input/pointer/PointerInputEventData;->uptime:J
 
-    move-wide v2, p7
+    move-wide v1, p5
 
     .line 46
-    iput-wide v2, v0, Landroidx/compose/ui/input/pointer/PointerInputEventData;->position:J
+    iput-wide v1, v0, Landroidx/compose/ui/input/pointer/PointerInputEventData;->positionOnScreen:J
 
-    move v2, p9
+    move-wide v1, p7
 
     .line 47
-    iput-boolean v2, v0, Landroidx/compose/ui/input/pointer/PointerInputEventData;->down:Z
+    iput-wide v1, v0, Landroidx/compose/ui/input/pointer/PointerInputEventData;->position:J
 
-    move v2, p10
+    move v1, p9
 
     .line 48
-    iput v2, v0, Landroidx/compose/ui/input/pointer/PointerInputEventData;->pressure:F
+    iput-boolean v1, v0, Landroidx/compose/ui/input/pointer/PointerInputEventData;->down:Z
 
-    move v2, p11
+    move v1, p10
 
     .line 49
-    iput v2, v0, Landroidx/compose/ui/input/pointer/PointerInputEventData;->type:I
+    iput v1, v0, Landroidx/compose/ui/input/pointer/PointerInputEventData;->pressure:F
 
-    move/from16 v2, p12
+    move v1, p11
 
     .line 50
-    iput-boolean v2, v0, Landroidx/compose/ui/input/pointer/PointerInputEventData;->issuesEnterExit:Z
+    iput v1, v0, Landroidx/compose/ui/input/pointer/PointerInputEventData;->type:I
+
+    move v1, p12
 
     .line 51
+    iput-boolean v1, v0, Landroidx/compose/ui/input/pointer/PointerInputEventData;->issuesEnterExit:Z
+
+    move-object/from16 v1, p13
+
+    .line 52
     iput-object v1, v0, Landroidx/compose/ui/input/pointer/PointerInputEventData;->historical:Ljava/util/List;
 
     move-wide/from16 v1, p14
 
-    .line 52
+    .line 53
     iput-wide v1, v0, Landroidx/compose/ui/input/pointer/PointerInputEventData;->scrollDelta:J
+
+    move-wide/from16 v1, p16
+
+    .line 54
+    iput-wide v1, v0, Landroidx/compose/ui/input/pointer/PointerInputEventData;->originalEventPosition:J
 
     return-void
 .end method
 
-.method public synthetic constructor <init>(JJJJZFIZLjava/util/List;JILkotlin/jvm/internal/DefaultConstructorMarker;)V
-    .locals 19
+.method public synthetic constructor <init>(JJJJZFIZLjava/util/List;JJILkotlin/jvm/internal/DefaultConstructorMarker;)V
+    .locals 21
 
-    move/from16 v0, p16
+    move/from16 v0, p18
 
     and-int/lit16 v1, v0, 0x80
 
@@ -210,7 +227,7 @@
 
     if-eqz v1, :cond_1
 
-    .line 51
+    .line 52
     new-instance v1, Ljava/util/ArrayList;
 
     invoke-direct {v1}, Ljava/util/ArrayList;-><init>()V
@@ -225,18 +242,18 @@
     move-object/from16 v15, p13
 
     :goto_1
-    and-int/lit16 v0, v0, 0x200
+    and-int/lit16 v1, v0, 0x200
 
-    if-eqz v0, :cond_2
+    if-eqz v1, :cond_2
 
-    .line 52
-    sget-object v0, Landroidx/compose/ui/geometry/Offset;->Companion:Landroidx/compose/ui/geometry/Offset$Companion;
+    .line 53
+    sget-object v1, Landroidx/compose/ui/geometry/Offset;->Companion:Landroidx/compose/ui/geometry/Offset$Companion;
 
-    invoke-virtual {v0}, Landroidx/compose/ui/geometry/Offset$Companion;->getZero-F1C5BW0()J
+    invoke-virtual {v1}, Landroidx/compose/ui/geometry/Offset$Companion;->getZero-F1C5BW0()J
 
-    move-result-wide v0
+    move-result-wide v1
 
-    move-wide/from16 v16, v0
+    move-wide/from16 v16, v1
 
     goto :goto_2
 
@@ -244,7 +261,26 @@
     move-wide/from16 v16, p14
 
     :goto_2
-    const/16 v18, 0x0
+    and-int/lit16 v0, v0, 0x400
+
+    if-eqz v0, :cond_3
+
+    .line 54
+    sget-object v0, Landroidx/compose/ui/geometry/Offset;->Companion:Landroidx/compose/ui/geometry/Offset$Companion;
+
+    invoke-virtual {v0}, Landroidx/compose/ui/geometry/Offset$Companion;->getZero-F1C5BW0()J
+
+    move-result-wide v0
+
+    move-wide/from16 v18, v0
+
+    goto :goto_3
+
+    :cond_3
+    move-wide/from16 v18, p16
+
+    :goto_3
+    const/16 v20, 0x0
 
     move-object/from16 v2, p0
 
@@ -262,26 +298,26 @@
 
     move/from16 v13, p11
 
-    .line 42
-    invoke-direct/range {v2 .. v18}, Landroidx/compose/ui/input/pointer/PointerInputEventData;-><init>(JJJJZFIZLjava/util/List;JLkotlin/jvm/internal/DefaultConstructorMarker;)V
+    .line 43
+    invoke-direct/range {v2 .. v20}, Landroidx/compose/ui/input/pointer/PointerInputEventData;-><init>(JJJJZFIZLjava/util/List;JJLkotlin/jvm/internal/DefaultConstructorMarker;)V
 
     return-void
 .end method
 
-.method public synthetic constructor <init>(JJJJZFIZLjava/util/List;JLkotlin/jvm/internal/DefaultConstructorMarker;)V
+.method public synthetic constructor <init>(JJJJZFIZLjava/util/List;JJLkotlin/jvm/internal/DefaultConstructorMarker;)V
     .locals 0
 
-    invoke-direct/range {p0 .. p15}, Landroidx/compose/ui/input/pointer/PointerInputEventData;-><init>(JJJJZFIZLjava/util/List;J)V
+    invoke-direct/range {p0 .. p17}, Landroidx/compose/ui/input/pointer/PointerInputEventData;-><init>(JJJJZFIZLjava/util/List;JJ)V
 
     return-void
 .end method
 
-.method public static synthetic copy-gYeeOSc$default(Landroidx/compose/ui/input/pointer/PointerInputEventData;JJJJZFIZLjava/util/List;JILjava/lang/Object;)Landroidx/compose/ui/input/pointer/PointerInputEventData;
+.method public static synthetic copy-rc8HELY$default(Landroidx/compose/ui/input/pointer/PointerInputEventData;JJJJZFIZLjava/util/List;JJILjava/lang/Object;)Landroidx/compose/ui/input/pointer/PointerInputEventData;
     .locals 16
 
     move-object/from16 v0, p0
 
-    move/from16 v1, p16
+    move/from16 v1, p18
 
     and-int/lit8 v2, v1, 0x1
 
@@ -391,11 +427,11 @@
     move-object/from16 v14, p13
 
     :goto_8
-    and-int/lit16 v1, v1, 0x200
+    and-int/lit16 v15, v1, 0x200
 
     move-object/from16 p13, v14
 
-    if-eqz v1, :cond_9
+    if-eqz v15, :cond_9
 
     iget-wide v14, v0, Landroidx/compose/ui/input/pointer/PointerInputEventData;->scrollDelta:J
 
@@ -405,6 +441,20 @@
     move-wide/from16 v14, p14
 
     :goto_9
+    and-int/lit16 v1, v1, 0x400
+
+    move-wide/from16 p14, v14
+
+    if-eqz v1, :cond_a
+
+    iget-wide v14, v0, Landroidx/compose/ui/input/pointer/PointerInputEventData;->originalEventPosition:J
+
+    goto :goto_a
+
+    :cond_a
+    move-wide/from16 v14, p16
+
+    :goto_a
     move-wide/from16 p1, v2
 
     move-wide/from16 p3, v4
@@ -421,9 +471,9 @@
 
     move/from16 p12, v13
 
-    move-wide/from16 p14, v14
+    move-wide/from16 p16, v14
 
-    invoke-virtual/range {p0 .. p15}, Landroidx/compose/ui/input/pointer/PointerInputEventData;->copy-gYeeOSc(JJJJZFIZLjava/util/List;J)Landroidx/compose/ui/input/pointer/PointerInputEventData;
+    invoke-virtual/range {p0 .. p17}, Landroidx/compose/ui/input/pointer/PointerInputEventData;->copy-rc8HELY(JJJJZFIZLjava/util/List;JJ)Landroidx/compose/ui/input/pointer/PointerInputEventData;
 
     move-result-object v0
 
@@ -444,6 +494,14 @@
     .locals 2
 
     iget-wide v0, p0, Landroidx/compose/ui/input/pointer/PointerInputEventData;->scrollDelta:J
+
+    return-wide v0
+.end method
+
+.method public final component11-F1C5BW0()J
+    .locals 2
+
+    iget-wide v0, p0, Landroidx/compose/ui/input/pointer/PointerInputEventData;->originalEventPosition:J
 
     return-wide v0
 .end method
@@ -520,14 +578,14 @@
     return-object p0
 .end method
 
-.method public final copy-gYeeOSc(JJJJZFIZLjava/util/List;J)Landroidx/compose/ui/input/pointer/PointerInputEventData;
-    .locals 18
+.method public final copy-rc8HELY(JJJJZFIZLjava/util/List;JJ)Landroidx/compose/ui/input/pointer/PointerInputEventData;
+    .locals 20
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(JJJJZFIZ",
             "Ljava/util/List<",
             "Landroidx/compose/ui/input/pointer/HistoricalChange;",
-            ">;J)",
+            ">;JJ)",
             "Landroidx/compose/ui/input/pointer/PointerInputEventData;"
         }
     .end annotation
@@ -552,25 +610,17 @@
 
     move-wide/from16 v14, p14
 
-    const-string v0, "historical"
+    move-wide/from16 v16, p16
 
-    move-wide/from16 p0, v1
+    new-instance v19, Landroidx/compose/ui/input/pointer/PointerInputEventData;
 
-    move-object/from16 v1, p13
+    move-object/from16 v0, v19
 
-    invoke-static {v1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+    const/16 v18, 0x0
 
-    new-instance v17, Landroidx/compose/ui/input/pointer/PointerInputEventData;
+    invoke-direct/range {v0 .. v18}, Landroidx/compose/ui/input/pointer/PointerInputEventData;-><init>(JJJJZFIZLjava/util/List;JJLkotlin/jvm/internal/DefaultConstructorMarker;)V
 
-    move-object/from16 v0, v17
-
-    const/16 v16, 0x0
-
-    move-wide/from16 v1, p0
-
-    invoke-direct/range {v0 .. v16}, Landroidx/compose/ui/input/pointer/PointerInputEventData;-><init>(JJJJZFIZLjava/util/List;JLkotlin/jvm/internal/DefaultConstructorMarker;)V
-
-    return-object v17
+    return-object v19
 .end method
 
 .method public equals(Ljava/lang/Object;)Z
@@ -703,24 +753,37 @@
     :cond_a
     iget-wide v3, p0, Landroidx/compose/ui/input/pointer/PointerInputEventData;->scrollDelta:J
 
-    iget-wide p0, p1, Landroidx/compose/ui/input/pointer/PointerInputEventData;->scrollDelta:J
+    iget-wide v5, p1, Landroidx/compose/ui/input/pointer/PointerInputEventData;->scrollDelta:J
+
+    invoke-static {v3, v4, v5, v6}, Landroidx/compose/ui/geometry/Offset;->equals-impl0(JJ)Z
+
+    move-result v1
+
+    if-nez v1, :cond_b
+
+    return v2
+
+    :cond_b
+    iget-wide v3, p0, Landroidx/compose/ui/input/pointer/PointerInputEventData;->originalEventPosition:J
+
+    iget-wide p0, p1, Landroidx/compose/ui/input/pointer/PointerInputEventData;->originalEventPosition:J
 
     invoke-static {v3, v4, p0, p1}, Landroidx/compose/ui/geometry/Offset;->equals-impl0(JJ)Z
 
     move-result p0
 
-    if-nez p0, :cond_b
+    if-nez p0, :cond_c
 
     return v2
 
-    :cond_b
+    :cond_c
     return v0
 .end method
 
 .method public final getDown()Z
     .locals 0
 
-    .line 47
+    .line 48
     iget-boolean p0, p0, Landroidx/compose/ui/input/pointer/PointerInputEventData;->down:Z
 
     return p0
@@ -737,7 +800,7 @@
         }
     .end annotation
 
-    .line 51
+    .line 52
     iget-object p0, p0, Landroidx/compose/ui/input/pointer/PointerInputEventData;->historical:Ljava/util/List;
 
     return-object p0
@@ -746,7 +809,7 @@
 .method public final getId-J3iCeTQ()J
     .locals 2
 
-    .line 43
+    .line 44
     iget-wide v0, p0, Landroidx/compose/ui/input/pointer/PointerInputEventData;->id:J
 
     return-wide v0
@@ -755,16 +818,25 @@
 .method public final getIssuesEnterExit()Z
     .locals 0
 
-    .line 50
+    .line 51
     iget-boolean p0, p0, Landroidx/compose/ui/input/pointer/PointerInputEventData;->issuesEnterExit:Z
 
     return p0
 .end method
 
+.method public final getOriginalEventPosition-F1C5BW0()J
+    .locals 2
+
+    .line 54
+    iget-wide v0, p0, Landroidx/compose/ui/input/pointer/PointerInputEventData;->originalEventPosition:J
+
+    return-wide v0
+.end method
+
 .method public final getPosition-F1C5BW0()J
     .locals 2
 
-    .line 46
+    .line 47
     iget-wide v0, p0, Landroidx/compose/ui/input/pointer/PointerInputEventData;->position:J
 
     return-wide v0
@@ -773,7 +845,7 @@
 .method public final getPositionOnScreen-F1C5BW0()J
     .locals 2
 
-    .line 45
+    .line 46
     iget-wide v0, p0, Landroidx/compose/ui/input/pointer/PointerInputEventData;->positionOnScreen:J
 
     return-wide v0
@@ -782,7 +854,7 @@
 .method public final getPressure()F
     .locals 0
 
-    .line 48
+    .line 49
     iget p0, p0, Landroidx/compose/ui/input/pointer/PointerInputEventData;->pressure:F
 
     return p0
@@ -791,7 +863,7 @@
 .method public final getScrollDelta-F1C5BW0()J
     .locals 2
 
-    .line 52
+    .line 53
     iget-wide v0, p0, Landroidx/compose/ui/input/pointer/PointerInputEventData;->scrollDelta:J
 
     return-wide v0
@@ -800,7 +872,7 @@
 .method public final getType-T8wyACA()I
     .locals 0
 
-    .line 49
+    .line 50
     iget p0, p0, Landroidx/compose/ui/input/pointer/PointerInputEventData;->type:I
 
     return p0
@@ -809,7 +881,7 @@
 .method public final getUptime()J
     .locals 2
 
-    .line 44
+    .line 45
     iget-wide v0, p0, Landroidx/compose/ui/input/pointer/PointerInputEventData;->uptime:J
 
     return-wide v0
@@ -858,13 +930,10 @@
 
     iget-boolean v1, p0, Landroidx/compose/ui/input/pointer/PointerInputEventData;->down:Z
 
-    const/4 v2, 0x1
+    invoke-static {v1}, Ljava/lang/Boolean;->hashCode(Z)I
 
-    if-eqz v1, :cond_0
+    move-result v1
 
-    move v1, v2
-
-    :cond_0
     add-int/2addr v0, v1
 
     mul-int/lit8 v0, v0, 0x1f
@@ -891,15 +960,11 @@
 
     iget-boolean v1, p0, Landroidx/compose/ui/input/pointer/PointerInputEventData;->issuesEnterExit:Z
 
-    if-eqz v1, :cond_1
+    invoke-static {v1}, Ljava/lang/Boolean;->hashCode(Z)I
 
-    goto :goto_0
+    move-result v1
 
-    :cond_1
-    move v2, v1
-
-    :goto_0
-    add-int/2addr v0, v2
+    add-int/2addr v0, v1
 
     mul-int/lit8 v0, v0, 0x1f
 
@@ -917,6 +982,16 @@
 
     invoke-static {v1, v2}, Landroidx/compose/ui/geometry/Offset;->hashCode-impl(J)I
 
+    move-result v1
+
+    add-int/2addr v0, v1
+
+    mul-int/lit8 v0, v0, 0x1f
+
+    iget-wide v1, p0, Landroidx/compose/ui/input/pointer/PointerInputEventData;->originalEventPosition:J
+
+    invoke-static {v1, v2}, Landroidx/compose/ui/geometry/Offset;->hashCode-impl(J)I
+
     move-result p0
 
     add-int/2addr v0, p0
@@ -925,7 +1000,7 @@
 .end method
 
 .method public toString()Ljava/lang/String;
-    .locals 3
+    .locals 4
 
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -941,139 +1016,153 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
-    move-result-object v0
+    move-result-object v1
 
-    const-string v1, ", uptime="
+    const-string v2, ", uptime="
 
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v0
-
-    iget-wide v1, p0, Landroidx/compose/ui/input/pointer/PointerInputEventData;->uptime:J
-
-    invoke-virtual {v0, v1, v2}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
-
-    move-result-object v0
-
-    const-string v1, ", positionOnScreen="
-
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v0
-
-    iget-wide v1, p0, Landroidx/compose/ui/input/pointer/PointerInputEventData;->positionOnScreen:J
-
-    invoke-static {v1, v2}, Landroidx/compose/ui/geometry/Offset;->toString-impl(J)Ljava/lang/String;
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v1
 
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+    iget-wide v2, p0, Landroidx/compose/ui/input/pointer/PointerInputEventData;->uptime:J
 
-    move-result-object v0
-
-    const-string v1, ", position="
-
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v0
-
-    iget-wide v1, p0, Landroidx/compose/ui/input/pointer/PointerInputEventData;->position:J
-
-    invoke-static {v1, v2}, Landroidx/compose/ui/geometry/Offset;->toString-impl(J)Ljava/lang/String;
+    invoke-virtual {v1, v2, v3}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
 
     move-result-object v1
 
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+    const-string v2, ", positionOnScreen="
 
-    move-result-object v0
-
-    const-string v1, ", down="
-
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v0
-
-    iget-boolean v1, p0, Landroidx/compose/ui/input/pointer/PointerInputEventData;->down:Z
-
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
-
-    move-result-object v0
-
-    const-string v1, ", pressure="
-
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v0
-
-    iget v1, p0, Landroidx/compose/ui/input/pointer/PointerInputEventData;->pressure:F
-
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(F)Ljava/lang/StringBuilder;
-
-    move-result-object v0
-
-    const-string v1, ", type="
-
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v0
-
-    iget v1, p0, Landroidx/compose/ui/input/pointer/PointerInputEventData;->type:I
-
-    invoke-static {v1}, Landroidx/compose/ui/input/pointer/PointerType;->toString-impl(I)Ljava/lang/String;
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v1
 
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+    iget-wide v2, p0, Landroidx/compose/ui/input/pointer/PointerInputEventData;->positionOnScreen:J
 
-    move-result-object v0
+    invoke-static {v2, v3}, Landroidx/compose/ui/geometry/Offset;->toString-impl(J)Ljava/lang/String;
 
-    const-string v1, ", issuesEnterExit="
+    move-result-object v2
 
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
-    move-result-object v0
+    move-result-object v1
 
-    iget-boolean v1, p0, Landroidx/compose/ui/input/pointer/PointerInputEventData;->issuesEnterExit:Z
+    const-string v2, ", position="
 
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    move-result-object v0
+    move-result-object v1
 
-    const-string v1, ", historical="
+    iget-wide v2, p0, Landroidx/compose/ui/input/pointer/PointerInputEventData;->position:J
 
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-static {v2, v3}, Landroidx/compose/ui/geometry/Offset;->toString-impl(J)Ljava/lang/String;
 
-    move-result-object v0
+    move-result-object v2
 
-    iget-object v1, p0, Landroidx/compose/ui/input/pointer/PointerInputEventData;->historical:Ljava/util/List;
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+    move-result-object v1
 
-    move-result-object v0
+    const-string v2, ", down="
 
-    const-string v1, ", scrollDelta="
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    move-result-object v1
 
-    move-result-object v0
+    iget-boolean v2, p0, Landroidx/compose/ui/input/pointer/PointerInputEventData;->down:Z
 
-    iget-wide v1, p0, Landroidx/compose/ui/input/pointer/PointerInputEventData;->scrollDelta:J
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
 
-    invoke-static {v1, v2}, Landroidx/compose/ui/geometry/Offset;->toString-impl(J)Ljava/lang/String;
+    move-result-object v1
+
+    const-string v2, ", pressure="
+
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v1
+
+    iget v2, p0, Landroidx/compose/ui/input/pointer/PointerInputEventData;->pressure:F
+
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(F)Ljava/lang/StringBuilder;
+
+    move-result-object v1
+
+    const-string v2, ", type="
+
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v1
+
+    iget v2, p0, Landroidx/compose/ui/input/pointer/PointerInputEventData;->type:I
+
+    invoke-static {v2}, Landroidx/compose/ui/input/pointer/PointerType;->toString-impl(I)Ljava/lang/String;
+
+    move-result-object v2
+
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    move-result-object v1
+
+    const-string v2, ", issuesEnterExit="
+
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v1
+
+    iget-boolean v2, p0, Landroidx/compose/ui/input/pointer/PointerInputEventData;->issuesEnterExit:Z
+
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
+
+    move-result-object v1
+
+    const-string v2, ", historical="
+
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v1
+
+    iget-object v2, p0, Landroidx/compose/ui/input/pointer/PointerInputEventData;->historical:Ljava/util/List;
+
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    move-result-object v1
+
+    const-string v2, ", scrollDelta="
+
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v1
+
+    iget-wide v2, p0, Landroidx/compose/ui/input/pointer/PointerInputEventData;->scrollDelta:J
+
+    invoke-static {v2, v3}, Landroidx/compose/ui/geometry/Offset;->toString-impl(J)Ljava/lang/String;
+
+    move-result-object v2
+
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    move-result-object v1
+
+    const-string v2, ", originalEventPosition="
+
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v1
+
+    iget-wide v2, p0, Landroidx/compose/ui/input/pointer/PointerInputEventData;->originalEventPosition:J
+
+    invoke-static {v2, v3}, Landroidx/compose/ui/geometry/Offset;->toString-impl(J)Ljava/lang/String;
 
     move-result-object p0
 
-    invoke-virtual {v0, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+    invoke-virtual {v1, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
     move-result-object p0
 
-    const/16 v0, 0x29
+    const/16 v1, 0x29
 
-    invoke-virtual {p0, v0}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
+    invoke-virtual {p0, v1}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
 
-    move-result-object p0
-
-    invoke-virtual {p0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object p0
 

@@ -44,7 +44,7 @@
 .method private constructor <init>()V
     .locals 0
 
-    .line 242
+    .line 241
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -77,11 +77,7 @@
         }
     .end annotation
 
-    const-string p0, "confirmStateChange"
-
-    invoke-static {p1, p0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 247
+    .line 246
     sget-object p0, Landroidx/compose/material/DrawerState$Companion$Saver$1;->INSTANCE:Landroidx/compose/material/DrawerState$Companion$Saver$1;
 
     check-cast p0, Lkotlin/jvm/functions/Function2;

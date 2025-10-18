@@ -27,7 +27,7 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/SourceDebugExtension;
-    value = "SMAP\nSemanticsNode.kt\nKotlin\n*S Kotlin\n*F\n+ 1 SemanticsNode.kt\nandroidx/compose/ui/semantics/SemanticsNode$parent$2\n+ 2 NodeKind.kt\nandroidx/compose/ui/node/Nodes\n*L\n1#1,457:1\n76#2:458\n*S KotlinDebug\n*F\n+ 1 SemanticsNode.kt\nandroidx/compose/ui/semantics/SemanticsNode$parent$2\n*L\n331#1:458\n*E\n"
+    value = "SMAP\nSemanticsNode.kt\nKotlin\n*S Kotlin\n*F\n+ 1 SemanticsNode.kt\nandroidx/compose/ui/semantics/SemanticsNode$parent$2\n+ 2 NodeKind.kt\nandroidx/compose/ui/node/Nodes\n*L\n1#1,475:1\n76#2:476\n*S KotlinDebug\n*F\n+ 1 SemanticsNode.kt\nandroidx/compose/ui/semantics/SemanticsNode$parent$2\n*L\n348#1:476\n*E\n"
 .end annotation
 
 .annotation runtime Lkotlin/Metadata;
@@ -84,23 +84,19 @@
 .method public final invoke(Landroidx/compose/ui/node/LayoutNode;)Ljava/lang/Boolean;
     .locals 0
 
-    const-string p0, "it"
-
-    invoke-static {p1, p0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 331
+    .line 348
     invoke-virtual {p1}, Landroidx/compose/ui/node/LayoutNode;->getNodes$ui_release()Landroidx/compose/ui/node/NodeChain;
 
     move-result-object p0
 
     const/16 p1, 0x8
 
-    .line 458
+    .line 476
     invoke-static {p1}, Landroidx/compose/ui/node/NodeKind;->constructor-impl(I)I
 
     move-result p1
 
-    .line 331
+    .line 348
     invoke-virtual {p0, p1}, Landroidx/compose/ui/node/NodeChain;->has-H91voCI$ui_release(I)Z
 
     move-result p0
@@ -115,7 +111,7 @@
 .method public bridge synthetic invoke(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
 
-    .line 331
+    .line 348
     check-cast p1, Landroidx/compose/ui/node/LayoutNode;
 
     invoke-virtual {p0, p1}, Landroidx/compose/ui/semantics/SemanticsNode$parent$2;->invoke(Landroidx/compose/ui/node/LayoutNode;)Ljava/lang/Boolean;

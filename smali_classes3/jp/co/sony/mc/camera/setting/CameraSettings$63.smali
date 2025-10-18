@@ -21,7 +21,7 @@
 .method constructor <init>()V
     .locals 0
 
-    .line 1064
+    .line 1118
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -42,11 +42,11 @@
         }
     .end annotation
 
-    .line 1068
+    .line 1122
     check-cast p1, Ljp/co/sony/mc/camera/setting/CameraSettings;
 
-    .line 1069
-    invoke-static {p1}, Ljp/co/sony/mc/camera/setting/CameraSettings;->-$$Nest$mgetProductShowcase(Ljp/co/sony/mc/camera/setting/CameraSettings;)Ljp/co/sony/mc/camera/configuration/parameters/ProductShowcase;
+    .line 1123
+    invoke-static {p1}, Ljp/co/sony/mc/camera/setting/CameraSettings;->-$$Nest$mgetColorToneProfile(Ljp/co/sony/mc/camera/setting/CameraSettings;)Ljp/co/sony/mc/camera/configuration/parameters/ColorToneProfile;
 
     move-result-object p0
 

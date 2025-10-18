@@ -62,54 +62,46 @@
     return-void
 .end method
 
-.method static bridge synthetic -$$Nest$fgetmResultData(Ljp/co/sony/mc/camera/SetupWizardActivity;)Landroid/content/Intent;
-    .locals 0
-
-    iget-object p0, p0, Ljp/co/sony/mc/camera/SetupWizardActivity;->mResultData:Landroid/content/Intent;
-
-    return-object p0
-.end method
-
-.method static bridge synthetic -$$Nest$mrequestPermission(Ljp/co/sony/mc/camera/SetupWizardActivity;Ljp/co/sony/mc/camera/SetupWizardActivity$PermissionRequest;)V
-    .locals 0
-
-    invoke-direct {p0, p1}, Ljp/co/sony/mc/camera/SetupWizardActivity;->requestPermission(Ljp/co/sony/mc/camera/SetupWizardActivity$PermissionRequest;)V
-
-    return-void
-.end method
-
 .method public constructor <init>()V
-    .locals 2
+    .locals 4
 
-    .line 45
+    .line 43
     invoke-direct {p0}, Landroidx/appcompat/app/AppCompatActivity;-><init>()V
 
-    .line 55
+    .line 53
     sget-object v0, Ljp/co/sony/mc/camera/SetupWizardActivity$PermissionRequest;->NONE:Ljp/co/sony/mc/camera/SetupWizardActivity$PermissionRequest;
 
     iput-object v0, p0, Ljp/co/sony/mc/camera/SetupWizardActivity;->mPermissionRequest:Ljp/co/sony/mc/camera/SetupWizardActivity$PermissionRequest;
 
-    .line 64
-    const-string v0, "android.permission.ACCESS_FINE_LOCATION"
+    const/4 v0, 0x2
+
+    .line 62
+    new-array v0, v0, [Ljava/lang/String;
+
+    const-string v1, "android.permission.ACCESS_FINE_LOCATION"
+
+    const/4 v2, 0x0
+
+    aput-object v1, v0, v2
 
     const-string v1, "android.permission.ACCESS_COARSE_LOCATION"
 
-    filled-new-array {v0, v1}, [Ljava/lang/String;
+    const/4 v3, 0x1
 
-    move-result-object v0
+    aput-object v1, v0, v3
 
     iput-object v0, p0, Ljp/co/sony/mc/camera/SetupWizardActivity;->LOCATION_PERMISSION:[Ljava/lang/String;
 
-    .line 69
-    const-string v0, "android.permission.POST_NOTIFICATIONS"
+    .line 67
+    new-array v0, v3, [Ljava/lang/String;
 
-    filled-new-array {v0}, [Ljava/lang/String;
+    const-string v1, "android.permission.POST_NOTIFICATIONS"
 
-    move-result-object v0
+    aput-object v1, v0, v2
 
     iput-object v0, p0, Ljp/co/sony/mc/camera/SetupWizardActivity;->NOTIFICATION_PERMISSION:[Ljava/lang/String;
 
-    .line 73
+    .line 71
     new-instance v0, Landroid/content/Intent;
 
     invoke-direct {v0}, Landroid/content/Intent;-><init>()V
@@ -118,13 +110,13 @@
 
     const/4 v0, 0x0
 
-    .line 74
+    .line 72
     iput-object v0, p0, Ljp/co/sony/mc/camera/SetupWizardActivity;->storedSettings:Ljp/co/sony/mc/camera/setting/StoredSettings;
 
-    .line 76
+    .line 74
     iput-object v0, p0, Ljp/co/sony/mc/camera/SetupWizardActivity;->mMessageDialog:Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController;
 
-    .line 77
+    .line 75
     new-instance v1, Ljp/co/sony/mc/camera/SetupWizardActivity$MessageDialogCallbackAdapter;
 
     invoke-direct {v1, v0}, Ljp/co/sony/mc/camera/SetupWizardActivity$MessageDialogCallbackAdapter;-><init>(Ljp/co/sony/mc/camera/SetupWizardActivity$MessageDialogCallbackAdapter-IA;)V
@@ -133,24 +125,24 @@
 
     const/16 v0, 0x100
 
-    .line 79
+    .line 77
     iput v0, p0, Ljp/co/sony/mc/camera/SetupWizardActivity;->REQUEST_CODE_FOR_PERMISSION:I
 
-    .line 107
+    .line 105
     new-instance v0, Ljp/co/sony/mc/camera/SetupWizardActivity$$ExternalSyntheticLambda0;
 
     invoke-direct {v0, p0}, Ljp/co/sony/mc/camera/SetupWizardActivity$$ExternalSyntheticLambda0;-><init>(Ljp/co/sony/mc/camera/SetupWizardActivity;)V
 
     iput-object v0, p0, Ljp/co/sony/mc/camera/SetupWizardActivity;->mPositiveClickListener:Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$MessageDialogOnClickListener;
 
-    .line 113
+    .line 111
     new-instance v0, Ljp/co/sony/mc/camera/SetupWizardActivity$$ExternalSyntheticLambda1;
 
     invoke-direct {v0}, Ljp/co/sony/mc/camera/SetupWizardActivity$$ExternalSyntheticLambda1;-><init>()V
 
     iput-object v0, p0, Ljp/co/sony/mc/camera/SetupWizardActivity;->mNegativeClickListener:Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController$MessageDialogOnClickListener;
 
-    .line 117
+    .line 115
     new-instance v0, Ljp/co/sony/mc/camera/SetupWizardActivity$$ExternalSyntheticLambda2;
 
     invoke-direct {v0, p0}, Ljp/co/sony/mc/camera/SetupWizardActivity$$ExternalSyntheticLambda2;-><init>(Ljp/co/sony/mc/camera/SetupWizardActivity;)V
@@ -163,7 +155,7 @@
 .method private checkAndRequestNotificationsPermission()Z
     .locals 2
 
-    .line 180
+    .line 157
     iget-object v0, p0, Ljp/co/sony/mc/camera/SetupWizardActivity;->storedSettings:Ljp/co/sony/mc/camera/setting/StoredSettings;
 
     invoke-interface {v0}, Ljp/co/sony/mc/camera/setting/StoredSettings;->getMessageSettings()Ljp/co/sony/mc/camera/setting/MessageSettings;
@@ -182,7 +174,7 @@
 
     return v1
 
-    .line 184
+    .line 161
     :cond_0
     iget-object v0, p0, Ljp/co/sony/mc/camera/SetupWizardActivity;->NOTIFICATION_PERMISSION:[Ljava/lang/String;
 
@@ -192,7 +184,7 @@
 
     if-nez v0, :cond_1
 
-    .line 186
+    .line 163
     sget-object v0, Ljp/co/sony/mc/camera/SetupWizardActivity$PermissionRequest;->REQUEST_NOTIFICATIONS_PERMISSION:Ljp/co/sony/mc/camera/SetupWizardActivity$PermissionRequest;
 
     invoke-direct {p0, v0}, Ljp/co/sony/mc/camera/SetupWizardActivity;->requestPermission(Ljp/co/sony/mc/camera/SetupWizardActivity$PermissionRequest;)V
@@ -208,8 +200,8 @@
 .method private clearPermissionRequest()V
     .locals 2
 
-    .line 240
-    sget-object v0, Ljp/co/sony/mc/camera/SetupWizardActivity$2;->$SwitchMap$jp$co$sony$mc$camera$SetupWizardActivity$PermissionRequest:[I
+    .line 209
+    sget-object v0, Ljp/co/sony/mc/camera/SetupWizardActivity$1;->$SwitchMap$jp$co$sony$mc$camera$SetupWizardActivity$PermissionRequest:[I
 
     iget-object v1, p0, Ljp/co/sony/mc/camera/SetupWizardActivity;->mPermissionRequest:Ljp/co/sony/mc/camera/SetupWizardActivity$PermissionRequest;
 
@@ -225,7 +217,7 @@
 
     goto :goto_0
 
-    .line 242
+    .line 211
     :cond_0
     invoke-direct {p0}, Ljp/co/sony/mc/camera/SetupWizardActivity;->checkAndRequestNotificationsPermission()Z
 
@@ -233,10 +225,10 @@
 
     if-nez v0, :cond_1
 
-    .line 243
+    .line 212
     invoke-direct {p0}, Ljp/co/sony/mc/camera/SetupWizardActivity;->setupCompleted()V
 
-    .line 251
+    .line 220
     :cond_1
     :goto_0
     sget-object v0, Ljp/co/sony/mc/camera/SetupWizardActivity$PermissionRequest;->NONE:Ljp/co/sony/mc/camera/SetupWizardActivity$PermissionRequest;
@@ -246,113 +238,17 @@
     return-void
 .end method
 
-.method private dismissKeyguardForPermissionRequest(Ljp/co/sony/mc/camera/SetupWizardActivity$PermissionRequest;)V
-    .locals 2
-
-    .line 267
-    invoke-direct {p0}, Ljp/co/sony/mc/camera/SetupWizardActivity;->isRestrictedMode()Z
-
-    move-result v0
-
-    if-eqz v0, :cond_1
-
-    .line 268
-    invoke-direct {p0}, Ljp/co/sony/mc/camera/SetupWizardActivity;->isSecureLocked()Z
-
-    move-result v0
-
-    if-eqz v0, :cond_0
-
-    .line 269
-    const-class v0, Landroid/app/KeyguardManager;
-
-    invoke-virtual {p0, v0}, Ljp/co/sony/mc/camera/SetupWizardActivity;->getSystemService(Ljava/lang/Class;)Ljava/lang/Object;
-
-    move-result-object v0
-
-    check-cast v0, Landroid/app/KeyguardManager;
-
-    new-instance v1, Ljp/co/sony/mc/camera/SetupWizardActivity$1;
-
-    invoke-direct {v1, p0, p1}, Ljp/co/sony/mc/camera/SetupWizardActivity$1;-><init>(Ljp/co/sony/mc/camera/SetupWizardActivity;Ljp/co/sony/mc/camera/SetupWizardActivity$PermissionRequest;)V
-
-    invoke-virtual {v0, p0, v1}, Landroid/app/KeyguardManager;->requestDismissKeyguard(Landroid/app/Activity;Landroid/app/KeyguardManager$KeyguardDismissCallback;)V
-
-    goto :goto_0
-
-    .line 289
-    :cond_0
-    const-class v0, Landroid/app/KeyguardManager;
-
-    invoke-virtual {p0, v0}, Ljp/co/sony/mc/camera/SetupWizardActivity;->getSystemService(Ljava/lang/Class;)Ljava/lang/Object;
-
-    move-result-object v0
-
-    check-cast v0, Landroid/app/KeyguardManager;
-
-    const/4 v1, 0x0
-
-    invoke-virtual {v0, p0, v1}, Landroid/app/KeyguardManager;->requestDismissKeyguard(Landroid/app/Activity;Landroid/app/KeyguardManager$KeyguardDismissCallback;)V
-
-    .line 290
-    invoke-direct {p0, p1}, Ljp/co/sony/mc/camera/SetupWizardActivity;->requestPermission(Ljp/co/sony/mc/camera/SetupWizardActivity$PermissionRequest;)V
-
-    :cond_1
-    :goto_0
-    return-void
-.end method
-
-.method private isRestrictedMode()Z
-    .locals 1
-
-    .line 261
-    const-string v0, "keyguard"
-
-    invoke-virtual {p0, v0}, Ljp/co/sony/mc/camera/SetupWizardActivity;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
-
-    move-result-object p0
-
-    check-cast p0, Landroid/app/KeyguardManager;
-
-    .line 263
-    invoke-virtual {p0}, Landroid/app/KeyguardManager;->isKeyguardLocked()Z
-
-    move-result p0
-
-    return p0
-.end method
-
-.method private isSecureLocked()Z
-    .locals 1
-
-    .line 255
-    const-string v0, "keyguard"
-
-    invoke-virtual {p0, v0}, Ljp/co/sony/mc/camera/SetupWizardActivity;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
-
-    move-result-object p0
-
-    check-cast p0, Landroid/app/KeyguardManager;
-
-    .line 257
-    invoke-virtual {p0}, Landroid/app/KeyguardManager;->isKeyguardLocked()Z
-
-    move-result p0
-
-    return p0
-.end method
-
 .method private synthetic lambda$new$0(Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogRequest;)V
     .locals 1
 
-    .line 108
+    .line 106
     iget-object p1, p1, Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogRequest;->mDialogId:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
 
     sget-object v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->LOCATION_SERVICE_DISABLE_ON_LAUNCH:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
 
     if-ne p1, v0, :cond_0
 
-    .line 109
+    .line 107
     sget-object p1, Ljp/co/sony/mc/camera/SetupWizardActivity$PermissionRequest;->LAUNCH_LOCATION_SETTING:Ljp/co/sony/mc/camera/SetupWizardActivity$PermissionRequest;
 
     invoke-direct {p0, p1}, Ljp/co/sony/mc/camera/SetupWizardActivity;->requestPermission(Ljp/co/sony/mc/camera/SetupWizardActivity$PermissionRequest;)V
@@ -370,28 +266,28 @@
 .method private synthetic lambda$new$2(Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogRequest;)V
     .locals 1
 
-    .line 118
+    .line 116
     iget-object p1, p1, Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogRequest;->mDialogId:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
 
     sget-object v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->LOCATION_SERVICE_DISABLE_ON_LAUNCH:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
 
     if-ne p1, v0, :cond_0
 
-    .line 119
+    .line 117
     iget-object p1, p0, Ljp/co/sony/mc/camera/SetupWizardActivity;->mPermissionRequest:Ljp/co/sony/mc/camera/SetupWizardActivity$PermissionRequest;
 
     sget-object v0, Ljp/co/sony/mc/camera/SetupWizardActivity$PermissionRequest;->NONE:Ljp/co/sony/mc/camera/SetupWizardActivity$PermissionRequest;
 
     if-ne p1, v0, :cond_0
 
-    .line 120
+    .line 118
     invoke-direct {p0}, Ljp/co/sony/mc/camera/SetupWizardActivity;->checkAndRequestNotificationsPermission()Z
 
     move-result p1
 
     if-nez p1, :cond_0
 
-    .line 121
+    .line 119
     invoke-direct {p0}, Ljp/co/sony/mc/camera/SetupWizardActivity;->setupCompleted()V
 
     :cond_0
@@ -401,12 +297,12 @@
 .method private requestLocationPermissionIfNeeded()V
     .locals 2
 
-    .line 144
+    .line 142
     const-string v0, "requestLocationPermissionIfNeeded() E"
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/SetupWizardActivity;->trace(Ljava/lang/String;)V
 
-    .line 146
+    .line 144
     iget-object v0, p0, Ljp/co/sony/mc/camera/SetupWizardActivity;->storedSettings:Ljp/co/sony/mc/camera/setting/StoredSettings;
 
     invoke-interface {v0}, Ljp/co/sony/mc/camera/setting/StoredSettings;->getMessageSettings()Ljp/co/sony/mc/camera/setting/MessageSettings;
@@ -415,108 +311,33 @@
 
     sget-object v1, Ljp/co/sony/mc/camera/setting/MessageType;->SETUP_WIZARD_SAVE_LOCATION_PERMISSION:Ljp/co/sony/mc/camera/setting/MessageType;
 
-    .line 147
+    .line 145
     invoke-interface {v0, v1}, Ljp/co/sony/mc/camera/setting/MessageSettings;->isNeverShow(Ljp/co/sony/mc/camera/setting/MessageType;)Z
 
     move-result v0
 
-    if-nez v0, :cond_3
+    if-nez v0, :cond_0
+
+    .line 146
+    sget-object v0, Ljp/co/sony/mc/camera/SetupWizardActivity$PermissionRequest;->REQUEST_LOCATION_PERMISSION:Ljp/co/sony/mc/camera/SetupWizardActivity$PermissionRequest;
+
+    invoke-direct {p0, v0}, Ljp/co/sony/mc/camera/SetupWizardActivity;->requestPermission(Ljp/co/sony/mc/camera/SetupWizardActivity$PermissionRequest;)V
+
+    goto :goto_0
 
     .line 148
-    invoke-direct {p0}, Ljp/co/sony/mc/camera/SetupWizardActivity;->isRestrictedMode()Z
+    :cond_0
+    invoke-direct {p0}, Ljp/co/sony/mc/camera/SetupWizardActivity;->checkAndRequestNotificationsPermission()Z
 
     move-result v0
 
-    if-eqz v0, :cond_2
-
-    invoke-direct {p0}, Ljp/co/sony/mc/camera/SetupWizardActivity;->isSecureLocked()Z
-
-    move-result v0
-
-    if-eqz v0, :cond_2
+    if-nez v0, :cond_1
 
     .line 149
-    iget-object v0, p0, Ljp/co/sony/mc/camera/SetupWizardActivity;->LOCATION_PERMISSION:[Ljava/lang/String;
-
-    invoke-static {p0, v0}, Ljp/co/sony/mc/camera/util/PermissionsUtil;->arePermissionsGranted(Landroid/content/Context;[Ljava/lang/String;)Z
-
-    move-result v0
-
-    if-eqz v0, :cond_1
-
-    const/4 v0, 0x1
-
-    .line 152
-    invoke-direct {p0, v0}, Ljp/co/sony/mc/camera/SetupWizardActivity;->setGeoTagResult(Z)V
+    invoke-direct {p0}, Ljp/co/sony/mc/camera/SetupWizardActivity;->setupCompleted()V
 
     .line 153
-    sget-object v0, Ljp/co/sony/mc/camera/configuration/parameters/Geotag;->ON:Ljp/co/sony/mc/camera/configuration/parameters/Geotag;
-
-    invoke-static {v0, p0}, Ljp/co/sony/mc/camera/mediasaving/location/GeotagManager;->isGeoTagEnabled(Ljp/co/sony/mc/camera/configuration/parameters/Geotag;Landroid/content/Context;)Z
-
-    move-result v0
-
-    if-eqz v0, :cond_0
-
-    .line 155
-    invoke-direct {p0}, Ljp/co/sony/mc/camera/SetupWizardActivity;->checkAndRequestNotificationsPermission()Z
-
-    move-result v0
-
-    if-nez v0, :cond_4
-
-    .line 156
-    invoke-direct {p0}, Ljp/co/sony/mc/camera/SetupWizardActivity;->setupCompleted()V
-
-    goto :goto_0
-
-    .line 160
-    :cond_0
-    new-instance v0, Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogRequest;
-
-    invoke-direct {v0}, Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogRequest;-><init>()V
-
-    .line 161
-    sget-object v1, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->LOCATION_SERVICE_DISABLE_ON_LAUNCH:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
-
-    iput-object v1, v0, Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogRequest;->mDialogId:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
-
-    .line 162
-    iget-object p0, p0, Ljp/co/sony/mc/camera/SetupWizardActivity;->mMessageDialog:Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController;
-
-    invoke-virtual {p0, v0}, Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController;->request(Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogRequest;)Z
-
-    goto :goto_0
-
-    .line 165
     :cond_1
-    sget-object v0, Ljp/co/sony/mc/camera/SetupWizardActivity$PermissionRequest;->REQUEST_LOCATION_PERMISSION:Ljp/co/sony/mc/camera/SetupWizardActivity$PermissionRequest;
-
-    invoke-direct {p0, v0}, Ljp/co/sony/mc/camera/SetupWizardActivity;->requestPermission(Ljp/co/sony/mc/camera/SetupWizardActivity$PermissionRequest;)V
-
-    goto :goto_0
-
-    .line 168
-    :cond_2
-    sget-object v0, Ljp/co/sony/mc/camera/SetupWizardActivity$PermissionRequest;->REQUEST_LOCATION_PERMISSION:Ljp/co/sony/mc/camera/SetupWizardActivity$PermissionRequest;
-
-    invoke-direct {p0, v0}, Ljp/co/sony/mc/camera/SetupWizardActivity;->requestPermission(Ljp/co/sony/mc/camera/SetupWizardActivity$PermissionRequest;)V
-
-    goto :goto_0
-
-    .line 171
-    :cond_3
-    invoke-direct {p0}, Ljp/co/sony/mc/camera/SetupWizardActivity;->checkAndRequestNotificationsPermission()Z
-
-    move-result v0
-
-    if-nez v0, :cond_4
-
-    .line 172
-    invoke-direct {p0}, Ljp/co/sony/mc/camera/SetupWizardActivity;->setupCompleted()V
-
-    .line 176
-    :cond_4
     :goto_0
     const-string p0, "requestLocationPermissionIfNeeded() X"
 
@@ -528,11 +349,11 @@
 .method private requestPermission(Ljp/co/sony/mc/camera/SetupWizardActivity$PermissionRequest;)V
     .locals 3
 
-    .line 213
+    .line 190
     iput-object p1, p0, Ljp/co/sony/mc/camera/SetupWizardActivity;->mPermissionRequest:Ljp/co/sony/mc/camera/SetupWizardActivity$PermissionRequest;
 
-    .line 214
-    sget-object p1, Ljp/co/sony/mc/camera/SetupWizardActivity$2;->$SwitchMap$jp$co$sony$mc$camera$SetupWizardActivity$PermissionRequest:[I
+    .line 191
+    sget-object p1, Ljp/co/sony/mc/camera/SetupWizardActivity$1;->$SwitchMap$jp$co$sony$mc$camera$SetupWizardActivity$PermissionRequest:[I
 
     iget-object v0, p0, Ljp/co/sony/mc/camera/SetupWizardActivity;->mPermissionRequest:Ljp/co/sony/mc/camera/SetupWizardActivity$PermissionRequest;
 
@@ -544,13 +365,13 @@
 
     const/4 v0, 0x1
 
-    if-eq p1, v0, :cond_4
+    if-eq p1, v0, :cond_2
 
     const/4 v1, 0x2
 
     const/16 v2, 0x100
 
-    if-eq p1, v1, :cond_2
+    if-eq p1, v1, :cond_1
 
     const/4 v0, 0x3
 
@@ -558,60 +379,30 @@
 
     goto :goto_0
 
-    .line 230
+    .line 203
     :cond_0
-    invoke-direct {p0}, Ljp/co/sony/mc/camera/SetupWizardActivity;->isRestrictedMode()Z
-
-    move-result p1
-
-    if-eqz p1, :cond_1
-
-    .line 231
-    iget-object p1, p0, Ljp/co/sony/mc/camera/SetupWizardActivity;->mPermissionRequest:Ljp/co/sony/mc/camera/SetupWizardActivity$PermissionRequest;
-
-    invoke-direct {p0, p1}, Ljp/co/sony/mc/camera/SetupWizardActivity;->dismissKeyguardForPermissionRequest(Ljp/co/sony/mc/camera/SetupWizardActivity$PermissionRequest;)V
-
-    goto :goto_0
-
-    .line 233
-    :cond_1
     iget-object p1, p0, Ljp/co/sony/mc/camera/SetupWizardActivity;->NOTIFICATION_PERMISSION:[Ljava/lang/String;
 
     invoke-virtual {p0, p1, v2}, Ljp/co/sony/mc/camera/SetupWizardActivity;->requestPermissions([Ljava/lang/String;I)V
 
     goto :goto_0
 
-    .line 221
-    :cond_2
-    invoke-direct {p0}, Ljp/co/sony/mc/camera/SetupWizardActivity;->isRestrictedMode()Z
-
-    move-result p1
-
-    if-eqz p1, :cond_3
-
-    .line 222
-    iget-object p1, p0, Ljp/co/sony/mc/camera/SetupWizardActivity;->mPermissionRequest:Ljp/co/sony/mc/camera/SetupWizardActivity$PermissionRequest;
-
-    invoke-direct {p0, p1}, Ljp/co/sony/mc/camera/SetupWizardActivity;->dismissKeyguardForPermissionRequest(Ljp/co/sony/mc/camera/SetupWizardActivity$PermissionRequest;)V
-
-    goto :goto_0
-
-    .line 224
-    :cond_3
+    .line 198
+    :cond_1
     invoke-direct {p0, v0}, Ljp/co/sony/mc/camera/SetupWizardActivity;->setGeoTagResult(Z)V
 
-    .line 225
+    .line 199
     iget-object p1, p0, Ljp/co/sony/mc/camera/SetupWizardActivity;->LOCATION_PERMISSION:[Ljava/lang/String;
 
     invoke-virtual {p0, p1, v2}, Ljp/co/sony/mc/camera/SetupWizardActivity;->requestPermissions([Ljava/lang/String;I)V
 
     goto :goto_0
 
-    .line 216
-    :cond_4
+    .line 193
+    :cond_2
     invoke-direct {p0, v0}, Ljp/co/sony/mc/camera/SetupWizardActivity;->setGeoTagResult(Z)V
 
-    .line 217
+    .line 194
     invoke-static {p0}, Ljp/co/sony/mc/camera/controller/launcher/ApplicationLauncher;->launchLocationSourceSettings(Landroid/app/Activity;)V
 
     :goto_0
@@ -621,7 +412,7 @@
 .method private setGeoTagResult(Z)V
     .locals 1
 
-    .line 408
+    .line 331
     iget-object p0, p0, Ljp/co/sony/mc/camera/SetupWizardActivity;->mResultData:Landroid/content/Intent;
 
     const-string v0, "geo_tag_result"
@@ -636,12 +427,12 @@
 
     const/4 v0, -0x1
 
-    .line 412
+    .line 335
     iget-object v1, p0, Ljp/co/sony/mc/camera/SetupWizardActivity;->mResultData:Landroid/content/Intent;
 
     invoke-virtual {p0, v0, v1}, Ljp/co/sony/mc/camera/SetupWizardActivity;->setResult(ILandroid/content/Intent;)V
 
-    .line 413
+    .line 336
     iget-object v0, p0, Ljp/co/sony/mc/camera/SetupWizardActivity;->storedSettings:Ljp/co/sony/mc/camera/setting/StoredSettings;
 
     invoke-interface {v0}, Ljp/co/sony/mc/camera/setting/StoredSettings;->getMessageSettings()Ljp/co/sony/mc/camera/setting/MessageSettings;
@@ -654,7 +445,7 @@
 
     invoke-interface {v0, v1, v2}, Ljp/co/sony/mc/camera/setting/MessageSettings;->setNeverShow(Ljp/co/sony/mc/camera/setting/MessageType;Z)V
 
-    .line 414
+    .line 337
     iget-object v0, p0, Ljp/co/sony/mc/camera/SetupWizardActivity;->storedSettings:Ljp/co/sony/mc/camera/setting/StoredSettings;
 
     invoke-interface {v0}, Ljp/co/sony/mc/camera/setting/StoredSettings;->getMessageSettings()Ljp/co/sony/mc/camera/setting/MessageSettings;
@@ -665,7 +456,7 @@
 
     invoke-interface {v0, v1, v2}, Ljp/co/sony/mc/camera/setting/MessageSettings;->setNeverShow(Ljp/co/sony/mc/camera/setting/MessageType;Z)V
 
-    .line 416
+    .line 339
     iget-object v0, p0, Ljp/co/sony/mc/camera/SetupWizardActivity;->storedSettings:Ljp/co/sony/mc/camera/setting/StoredSettings;
 
     invoke-interface {v0}, Ljp/co/sony/mc/camera/setting/StoredSettings;->getMessageSettings()Ljp/co/sony/mc/camera/setting/MessageSettings;
@@ -674,40 +465,35 @@
 
     invoke-interface {v0}, Ljp/co/sony/mc/camera/setting/MessageSettings;->save()V
 
-    .line 417
+    .line 340
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/SetupWizardActivity;->finish()V
 
     return-void
 .end method
 
 .method private static trace(Ljava/lang/String;)V
-    .locals 0
+    .locals 2
 
-    .line 49
-    filled-new-array {p0}, [Ljava/lang/String;
+    const/4 v0, 0x1
 
-    move-result-object p0
+    .line 47
+    new-array v0, v0, [Ljava/lang/String;
 
-    invoke-static {p0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
+    const/4 v1, 0x0
+
+    aput-object p0, v0, v1
+
+    invoke-static {v0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public onActivityResult(IILandroid/content/Intent;)V
-    .locals 0
-
-    .line 404
-    invoke-super {p0, p1, p2, p3}, Landroidx/appcompat/app/AppCompatActivity;->onActivityResult(IILandroid/content/Intent;)V
-
-    return-void
-.end method
-
 .method public onBackPressed()V
     .locals 2
 
-    .line 299
+    .line 227
     iget-object v0, p0, Ljp/co/sony/mc/camera/SetupWizardActivity;->mResultData:Landroid/content/Intent;
 
     const-string v1, "geo_tag_result"
@@ -718,7 +504,7 @@
 
     if-eqz v0, :cond_0
 
-    .line 300
+    .line 228
     invoke-direct {p0}, Ljp/co/sony/mc/camera/SetupWizardActivity;->setupCompleted()V
 
     return-void
@@ -726,12 +512,12 @@
     :cond_0
     const/4 v0, 0x1
 
-    .line 304
+    .line 232
     iget-object v1, p0, Ljp/co/sony/mc/camera/SetupWizardActivity;->mResultData:Landroid/content/Intent;
 
     invoke-virtual {p0, v0, v1}, Ljp/co/sony/mc/camera/SetupWizardActivity;->setResult(ILandroid/content/Intent;)V
 
-    .line 305
+    .line 233
     invoke-super {p0}, Landroidx/appcompat/app/AppCompatActivity;->onBackPressed()V
 
     return-void
@@ -740,15 +526,15 @@
 .method protected onCreate(Landroid/os/Bundle;)V
     .locals 8
 
-    .line 129
+    .line 127
     const-string v0, "onCreate() E"
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/SetupWizardActivity;->trace(Ljava/lang/String;)V
 
-    .line 130
+    .line 128
     invoke-super {p0, p1}, Landroidx/appcompat/app/AppCompatActivity;->onCreate(Landroid/os/Bundle;)V
 
-    .line 131
+    .line 129
     invoke-static {}, Ljp/co/sony/mc/camera/setting/CameraProSetting;->getInstance()Ljp/co/sony/mc/camera/setting/CameraProSetting;
 
     move-result-object p1
@@ -759,12 +545,12 @@
 
     if-nez p1, :cond_0
 
-    .line 132
+    .line 130
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/SetupWizardActivity;->finish()V
 
     return-void
 
-    .line 135
+    .line 133
     :cond_0
     new-instance p1, Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController;
 
@@ -788,7 +574,7 @@
 
     iput-object p1, p0, Ljp/co/sony/mc/camera/SetupWizardActivity;->mMessageDialog:Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController;
 
-    .line 137
+    .line 135
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/SetupWizardActivity;->getApplicationContext()Landroid/content/Context;
 
     move-result-object p1
@@ -801,10 +587,10 @@
 
     iput-object p1, p0, Ljp/co/sony/mc/camera/SetupWizardActivity;->storedSettings:Ljp/co/sony/mc/camera/setting/StoredSettings;
 
-    .line 138
+    .line 136
     invoke-direct {p0}, Ljp/co/sony/mc/camera/SetupWizardActivity;->requestLocationPermissionIfNeeded()V
 
-    .line 140
+    .line 138
     const-string p0, "onCreate() X"
 
     invoke-static {p0}, Ljp/co/sony/mc/camera/SetupWizardActivity;->trace(Ljava/lang/String;)V
@@ -823,7 +609,7 @@
 
     return p0
 
-    .line 315
+    .line 243
     :cond_0
     invoke-super {p0, p1, p2}, Landroidx/appcompat/app/AppCompatActivity;->onKeyDown(ILandroid/view/KeyEvent;)Z
 
@@ -843,7 +629,7 @@
 
     return v1
 
-    .line 325
+    .line 253
     :cond_0
     invoke-static {p1}, Ljp/co/sony/mc/camera/util/KeyEventTranslator;->translateKeyCode(I)Ljp/co/sony/mc/camera/util/KeyEventTranslator$TranslatedKeyCode;
 
@@ -853,12 +639,12 @@
 
     if-ne v0, v2, :cond_1
 
-    .line 327
+    .line 255
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/SetupWizardActivity;->onBackPressed()V
 
     return v1
 
-    .line 331
+    .line 259
     :cond_1
     invoke-super {p0, p1, p2}, Landroidx/appcompat/app/AppCompatActivity;->onKeyUp(ILandroid/view/KeyEvent;)Z
 
@@ -870,20 +656,20 @@
 .method public onRequestPermissionsResult(I[Ljava/lang/String;[I)V
     .locals 4
 
-    .line 336
+    .line 264
     const-string v0, "onRequestPermissionsResult() E"
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/SetupWizardActivity;->trace(Ljava/lang/String;)V
 
-    .line 337
+    .line 265
     invoke-super {p0, p1, p2, p3}, Landroidx/appcompat/app/AppCompatActivity;->onRequestPermissionsResult(I[Ljava/lang/String;[I)V
 
-    .line 340
+    .line 268
     new-instance p1, Ljava/util/HashMap;
 
     invoke-direct {p1}, Ljava/util/HashMap;-><init>()V
 
-    .line 341
+    .line 269
     array-length v0, p2
 
     const/4 v1, 0x0
@@ -892,13 +678,13 @@
 
     move v0, v1
 
-    .line 342
+    .line 270
     :goto_0
     array-length v2, p2
 
     if-ge v0, v2, :cond_0
 
-    .line 343
+    .line 271
     aget-object v2, p2, v0
 
     aget v3, p3, v0
@@ -913,7 +699,7 @@
 
     goto :goto_0
 
-    .line 348
+    .line 276
     :cond_0
     iget-object p2, p0, Ljp/co/sony/mc/camera/SetupWizardActivity;->LOCATION_PERMISSION:[Ljava/lang/String;
 
@@ -931,14 +717,14 @@
 
     aget-object p2, p2, p3
 
-    .line 349
+    .line 277
     invoke-interface {p1, p2}, Ljava/util/Map;->containsKey(Ljava/lang/Object;)Z
 
     move-result p2
 
     if-eqz p2, :cond_4
 
-    .line 350
+    .line 278
     iget-object p2, p0, Ljp/co/sony/mc/camera/SetupWizardActivity;->LOCATION_PERMISSION:[Ljava/lang/String;
 
     aget-object p2, p2, v1
@@ -959,7 +745,7 @@
 
     aget-object p2, p2, p3
 
-    .line 351
+    .line 279
     invoke-interface {p1, p2}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p2
@@ -974,28 +760,28 @@
 
     goto :goto_1
 
-    .line 366
+    .line 294
     :cond_1
     invoke-direct {p0, v1}, Ljp/co/sony/mc/camera/SetupWizardActivity;->setGeoTagResult(Z)V
 
-    .line 367
+    .line 295
     invoke-direct {p0}, Ljp/co/sony/mc/camera/SetupWizardActivity;->checkAndRequestNotificationsPermission()Z
 
     move-result p2
 
     if-nez p2, :cond_4
 
-    .line 368
+    .line 296
     invoke-direct {p0}, Ljp/co/sony/mc/camera/SetupWizardActivity;->setupCompleted()V
 
     goto :goto_2
 
-    .line 353
+    .line 281
     :cond_2
     :goto_1
     invoke-direct {p0, p3}, Ljp/co/sony/mc/camera/SetupWizardActivity;->setGeoTagResult(Z)V
 
-    .line 354
+    .line 282
     sget-object p2, Ljp/co/sony/mc/camera/configuration/parameters/Geotag;->ON:Ljp/co/sony/mc/camera/configuration/parameters/Geotag;
 
     invoke-static {p2, p0}, Ljp/co/sony/mc/camera/mediasaving/location/GeotagManager;->isGeoTagEnabled(Ljp/co/sony/mc/camera/configuration/parameters/Geotag;Landroid/content/Context;)Z
@@ -1004,35 +790,35 @@
 
     if-eqz p2, :cond_3
 
-    .line 355
+    .line 283
     invoke-direct {p0}, Ljp/co/sony/mc/camera/SetupWizardActivity;->checkAndRequestNotificationsPermission()Z
 
     move-result p2
 
     if-nez p2, :cond_4
 
-    .line 356
+    .line 284
     invoke-direct {p0}, Ljp/co/sony/mc/camera/SetupWizardActivity;->setupCompleted()V
 
     goto :goto_2
 
-    .line 360
+    .line 288
     :cond_3
     new-instance p2, Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogRequest;
 
     invoke-direct {p2}, Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogRequest;-><init>()V
 
-    .line 361
+    .line 289
     sget-object p3, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->LOCATION_SERVICE_DISABLE_ON_LAUNCH:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
 
     iput-object p3, p2, Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogRequest;->mDialogId:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
 
-    .line 362
+    .line 290
     iget-object p3, p0, Ljp/co/sony/mc/camera/SetupWizardActivity;->mMessageDialog:Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController;
 
     invoke-virtual {p3, p2}, Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController;->request(Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogRequest;)Z
 
-    .line 373
+    .line 301
     :cond_4
     :goto_2
     iget-object p2, p0, Ljp/co/sony/mc/camera/SetupWizardActivity;->NOTIFICATION_PERMISSION:[Ljava/lang/String;
@@ -1045,10 +831,10 @@
 
     if-eqz p1, :cond_5
 
-    .line 374
+    .line 302
     invoke-direct {p0}, Ljp/co/sony/mc/camera/SetupWizardActivity;->setupCompleted()V
 
-    .line 377
+    .line 305
     :cond_5
     const-string p0, "onRequestPermissionsResult() X"
 
@@ -1060,18 +846,18 @@
 .method protected onResume()V
     .locals 1
 
-    .line 195
+    .line 172
     const-string v0, "onResume() E"
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/SetupWizardActivity;->trace(Ljava/lang/String;)V
 
-    .line 197
+    .line 174
     invoke-super {p0}, Landroidx/appcompat/app/AppCompatActivity;->onResume()V
 
-    .line 199
+    .line 176
     invoke-direct {p0}, Ljp/co/sony/mc/camera/SetupWizardActivity;->clearPermissionRequest()V
 
-    .line 201
+    .line 178
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/SetupWizardActivity;->getWindow()Landroid/view/Window;
 
     move-result-object p0
@@ -1080,14 +866,14 @@
 
     move-result-object p0
 
-    .line 202
+    .line 179
     invoke-virtual {p0}, Landroid/view/View;->getWindowInsetsController()Landroid/view/WindowInsetsController;
 
     move-result-object p0
 
     if-eqz p0, :cond_0
 
-    .line 205
+    .line 182
     invoke-static {}, Landroid/view/WindowInsets$Type;->statusBars()I
 
     move-result v0
@@ -1096,10 +882,10 @@
 
     const/4 v0, 0x2
 
-    .line 206
+    .line 183
     invoke-interface {p0, v0}, Landroid/view/WindowInsetsController;->setSystemBarsBehavior(I)V
 
-    .line 209
+    .line 186
     :cond_0
     const-string p0, "onResume() X"
 

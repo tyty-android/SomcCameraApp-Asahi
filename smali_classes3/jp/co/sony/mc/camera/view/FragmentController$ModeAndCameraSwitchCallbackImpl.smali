@@ -93,19 +93,19 @@
 .method constructor <init>(Ljp/co/sony/mc/camera/view/FragmentController;Ljp/co/sony/mc/camera/setting/CameraSettingsHolder;Ljp/co/sony/mc/camera/view/FragmentController$CallbackType;Ljp/co/sony/mc/camera/view/FragmentController$StartupAction;)V
     .locals 0
 
-    .line 6823
+    .line 7075
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 6824
+    .line 7076
     iput-object p1, p0, Ljp/co/sony/mc/camera/view/FragmentController$ModeAndCameraSwitchCallbackImpl;->mController:Ljp/co/sony/mc/camera/view/FragmentController;
 
-    .line 6825
+    .line 7077
     iput-object p3, p0, Ljp/co/sony/mc/camera/view/FragmentController$ModeAndCameraSwitchCallbackImpl;->mCallbackType:Ljp/co/sony/mc/camera/view/FragmentController$CallbackType;
 
-    .line 6826
+    .line 7078
     iput-object p2, p0, Ljp/co/sony/mc/camera/view/FragmentController$ModeAndCameraSwitchCallbackImpl;->mSettingsHolder:Ljp/co/sony/mc/camera/setting/CameraSettingsHolder;
 
-    .line 6827
+    .line 7079
     iput-object p4, p0, Ljp/co/sony/mc/camera/view/FragmentController$ModeAndCameraSwitchCallbackImpl;->mStartupAction:Ljp/co/sony/mc/camera/view/FragmentController$StartupAction;
 
     return-void
@@ -114,7 +114,7 @@
 .method private synthetic lambda$onSwitchedLensDuringStreaming$0()V
     .locals 2
 
-    .line 7104
+    .line 7353
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/FragmentController$ModeAndCameraSwitchCallbackImpl;->mController:Ljp/co/sony/mc/camera/view/FragmentController;
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/view/FragmentController;->-$$Nest$fgetmCameraEventNotifier(Ljp/co/sony/mc/camera/view/FragmentController;)Ljp/co/sony/mc/camera/view/CameraEventListener;
@@ -125,12 +125,12 @@
 
     invoke-interface {v0, v1}, Ljp/co/sony/mc/camera/view/CameraEventListener;->onLensChange(Z)V
 
-    .line 7105
+    .line 7354
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/FragmentController$ModeAndCameraSwitchCallbackImpl;->mController:Ljp/co/sony/mc/camera/view/FragmentController;
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/view/FragmentController;->-$$Nest$mswitchFaceDetection(Ljp/co/sony/mc/camera/view/FragmentController;)V
 
-    .line 7106
+    .line 7355
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/FragmentController$ModeAndCameraSwitchCallbackImpl;->mController:Ljp/co/sony/mc/camera/view/FragmentController;
 
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/view/FragmentController;->updateUiOrientation()V
@@ -141,7 +141,7 @@
 .method private runOnUiThread(Ljava/lang/Runnable;)V
     .locals 0
 
-    .line 7111
+    .line 7360
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/FragmentController$ModeAndCameraSwitchCallbackImpl;->mController:Ljp/co/sony/mc/camera/view/FragmentController;
 
     invoke-static {p0}, Ljp/co/sony/mc/camera/view/FragmentController;->-$$Nest$fgetmActivity(Ljp/co/sony/mc/camera/view/FragmentController;)Ljp/co/sony/mc/camera/CameraActivity;
@@ -156,7 +156,7 @@
 .method private updateSavingProgressText(IIZ)V
     .locals 2
 
-    .line 6878
+    .line 7130
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/FragmentController$ModeAndCameraSwitchCallbackImpl;->mController:Ljp/co/sony/mc/camera/view/FragmentController;
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/view/FragmentController;->-$$Nest$fgetmActivity(Ljp/co/sony/mc/camera/view/FragmentController;)Ljp/co/sony/mc/camera/CameraActivity;
@@ -175,14 +175,14 @@
 
     if-eqz p3, :cond_0
 
-    const p0, 0x7f110321
+    const p0, 0x7f110353
 
-    .line 6882
+    .line 7134
     invoke-virtual {v0, p0}, Landroid/widget/TextView;->setText(I)V
 
     goto :goto_0
 
-    .line 6885
+    .line 7137
     :cond_0
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/FragmentController$ModeAndCameraSwitchCallbackImpl;->mController:Ljp/co/sony/mc/camera/view/FragmentController;
 
@@ -190,23 +190,23 @@
 
     move-result-object p0
 
-    .line 6886
+    .line 7138
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/CameraActivity;->getResources()Landroid/content/res/Resources;
 
     move-result-object p0
 
-    const p3, 0x7f110337
+    const p3, 0x7f110369
 
     invoke-virtual {p0, p3}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
     move-result-object p0
 
-    .line 6888
+    .line 7140
     invoke-static {p2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object p2
 
-    .line 6889
+    .line 7141
     invoke-static {p1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object p1
@@ -215,7 +215,7 @@
 
     move-result-object p1
 
-    .line 6885
+    .line 7137
     invoke-static {p0, p1}, Ljava/lang/String;->format(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
 
     move-result-object p0
@@ -230,22 +230,26 @@
 
 # virtual methods
 .method public onAccepted()V
-    .locals 2
+    .locals 3
 
-    .line 6896
+    .line 7148
     sget-boolean v0, Ljp/co/sony/mc/camera/util/CamLog;->DEBUG:Z
 
     if-eqz v0, :cond_0
 
-    const-string v0, "invoke"
+    const/4 v0, 0x1
 
-    filled-new-array {v0}, [Ljava/lang/String;
+    new-array v0, v0, [Ljava/lang/String;
 
-    move-result-object v0
+    const/4 v1, 0x0
+
+    const-string v2, "invoke"
+
+    aput-object v2, v0, v1
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
-    .line 6897
+    .line 7149
     :cond_0
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/FragmentController$ModeAndCameraSwitchCallbackImpl;->mCallbackType:Ljp/co/sony/mc/camera/view/FragmentController$CallbackType;
 
@@ -253,7 +257,7 @@
 
     if-ne v0, v1, :cond_1
 
-    .line 6898
+    .line 7150
     new-instance v0, Ljp/co/sony/mc/camera/view/FragmentController$ModeAndCameraSwitchCallbackImpl$4;
 
     invoke-direct {v0, p0}, Ljp/co/sony/mc/camera/view/FragmentController$ModeAndCameraSwitchCallbackImpl$4;-><init>(Ljp/co/sony/mc/camera/view/FragmentController$ModeAndCameraSwitchCallbackImpl;)V
@@ -262,7 +266,7 @@
 
     goto :goto_0
 
-    .line 6907
+    .line 7159
     :cond_1
     new-instance v0, Ljp/co/sony/mc/camera/view/FragmentController$ModeAndCameraSwitchCallbackImpl$5;
 
@@ -275,22 +279,26 @@
 .end method
 
 .method public onCameraDeviceClosed()V
-    .locals 2
+    .locals 3
 
-    .line 6932
+    .line 7184
     sget-boolean v0, Ljp/co/sony/mc/camera/util/CamLog;->DEBUG:Z
 
     if-eqz v0, :cond_0
 
-    const-string v0, "invoke"
+    const/4 v0, 0x1
 
-    filled-new-array {v0}, [Ljava/lang/String;
+    new-array v0, v0, [Ljava/lang/String;
 
-    move-result-object v0
+    const/4 v1, 0x0
+
+    const-string v2, "invoke"
+
+    aput-object v2, v0, v1
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
-    .line 6933
+    .line 7185
     :cond_0
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/FragmentController$ModeAndCameraSwitchCallbackImpl;->mCallbackType:Ljp/co/sony/mc/camera/view/FragmentController$CallbackType;
 
@@ -300,7 +308,7 @@
 
     return-void
 
-    .line 6938
+    .line 7190
     :cond_1
     new-instance v0, Ljp/co/sony/mc/camera/view/FragmentController$ModeAndCameraSwitchCallbackImpl$6;
 
@@ -312,55 +320,59 @@
 .end method
 
 .method public onChangeToReady()V
-    .locals 3
+    .locals 5
 
-    .line 7036
+    .line 7285
     sget-boolean v0, Ljp/co/sony/mc/camera/util/CamLog;->DEBUG:Z
+
+    const/4 v1, 0x0
+
+    const/4 v2, 0x1
 
     if-eqz v0, :cond_0
 
-    const-string v0, "invoke"
+    new-array v0, v2, [Ljava/lang/String;
 
-    filled-new-array {v0}, [Ljava/lang/String;
+    const-string v3, "invoke"
 
-    move-result-object v0
+    aput-object v3, v0, v1
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
-    .line 7037
+    .line 7286
     :cond_0
-    new-instance v0, Ljava/lang/StringBuilder;
+    new-array v0, v2, [Ljava/lang/String;
 
-    const-string v1, "KeyTimestamp ON_CHANGE_TO_READY currentElapsedRealtimeNanos = "
+    new-instance v2, Ljava/lang/StringBuilder;
 
-    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+    const-string v3, "KeyTimestamp ON_CHANGE_TO_READY currentElapsedRealtimeNanos = "
 
-    .line 7038
+    invoke-direct {v2, v3}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+
+    .line 7287
     invoke-static {}, Landroid/os/SystemClock;->elapsedRealtimeNanos()J
 
-    move-result-wide v1
+    move-result-wide v3
 
-    invoke-virtual {v0, v1, v2}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
+    invoke-virtual {v2, v3, v4}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
 
-    move-result-object v0
+    move-result-object v2
 
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    move-result-object v0
+    move-result-object v2
 
-    filled-new-array {v0}, [Ljava/lang/String;
+    aput-object v2, v0, v1
 
-    move-result-object v0
-
-    .line 7037
+    .line 7286
     invoke-static {v0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
-    .line 7039
+    .line 7288
     sget-object v0, Ljp/co/sony/mc/camera/util/PerfLog;->ON_CHANGE_TO_READY:Ljp/co/sony/mc/camera/util/PerfLog;
 
     invoke-virtual {v0}, Ljp/co/sony/mc/camera/util/PerfLog;->transit()V
 
-    .line 7040
+    .line 7289
     new-instance v0, Ljp/co/sony/mc/camera/view/FragmentController$ModeAndCameraSwitchCallbackImpl$10;
 
     invoke-direct {v0, p0}, Ljp/co/sony/mc/camera/view/FragmentController$ModeAndCameraSwitchCallbackImpl$10;-><init>(Ljp/co/sony/mc/camera/view/FragmentController$ModeAndCameraSwitchCallbackImpl;)V
@@ -371,28 +383,30 @@
 .end method
 
 .method public onDenied()V
-    .locals 2
+    .locals 3
 
-    .line 6921
+    .line 7173
     sget-boolean v0, Ljp/co/sony/mc/camera/util/CamLog;->DEBUG:Z
+
+    const/4 v1, 0x0
 
     if-eqz v0, :cond_0
 
-    const-string v0, "invoke"
+    const/4 v0, 0x1
 
-    filled-new-array {v0}, [Ljava/lang/String;
+    new-array v0, v0, [Ljava/lang/String;
 
-    move-result-object v0
+    const-string v2, "invoke"
+
+    aput-object v2, v0, v1
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
-    .line 6922
+    .line 7174
     :cond_0
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/FragmentController$ModeAndCameraSwitchCallbackImpl;->mController:Ljp/co/sony/mc/camera/view/FragmentController;
 
     sget-object v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->ERROR_USE_OF_CAMERA_RESTRICTED:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
-
-    const/4 v1, 0x0
 
     new-array v1, v1, [Ljava/lang/Object;
 
@@ -402,22 +416,26 @@
 .end method
 
 .method public onNewSettingsApplied(Z)V
-    .locals 2
+    .locals 3
 
-    .line 6965
+    .line 7217
     sget-boolean v0, Ljp/co/sony/mc/camera/util/CamLog;->DEBUG:Z
 
     if-eqz v0, :cond_0
 
-    const-string v0, "invoke"
+    const/4 v0, 0x1
 
-    filled-new-array {v0}, [Ljava/lang/String;
+    new-array v0, v0, [Ljava/lang/String;
 
-    move-result-object v0
+    const/4 v1, 0x0
+
+    const-string v2, "invoke"
+
+    aput-object v2, v0, v1
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
-    .line 6966
+    .line 7218
     :cond_0
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/FragmentController$ModeAndCameraSwitchCallbackImpl;->mCallbackType:Ljp/co/sony/mc/camera/view/FragmentController$CallbackType;
 
@@ -427,7 +445,7 @@
 
     return-void
 
-    .line 6971
+    .line 7223
     :cond_1
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/FragmentController$ModeAndCameraSwitchCallbackImpl;->mController:Ljp/co/sony/mc/camera/view/FragmentController;
 
@@ -445,22 +463,26 @@
 .end method
 
 .method public onPreviewStarted()V
-    .locals 1
+    .locals 3
 
-    .line 6992
+    .line 7244
     sget-boolean v0, Ljp/co/sony/mc/camera/util/CamLog;->DEBUG:Z
 
     if-eqz v0, :cond_0
 
-    const-string v0, "invoke"
+    const/4 v0, 0x1
 
-    filled-new-array {v0}, [Ljava/lang/String;
+    new-array v0, v0, [Ljava/lang/String;
 
-    move-result-object v0
+    const/4 v1, 0x0
+
+    const-string v2, "invoke"
+
+    aput-object v2, v0, v1
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
-    .line 6993
+    .line 7245
     :cond_0
     new-instance v0, Ljp/co/sony/mc/camera/view/FragmentController$ModeAndCameraSwitchCallbackImpl$9;
 
@@ -472,18 +494,22 @@
 .end method
 
 .method public onPreviewStopped()V
-    .locals 0
+    .locals 2
 
-    .line 6927
+    .line 7179
     sget-boolean p0, Ljp/co/sony/mc/camera/util/CamLog;->DEBUG:Z
 
     if-eqz p0, :cond_0
 
-    const-string p0, "invoke"
+    const/4 p0, 0x1
 
-    filled-new-array {p0}, [Ljava/lang/String;
+    new-array p0, p0, [Ljava/lang/String;
 
-    move-result-object p0
+    const/4 v0, 0x0
+
+    const-string v1, "invoke"
+
+    aput-object v1, p0, v0
 
     invoke-static {p0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
@@ -492,22 +518,26 @@
 .end method
 
 .method public onReadyToResizeSurface()V
-    .locals 2
+    .locals 3
 
-    .line 6948
+    .line 7200
     sget-boolean v0, Ljp/co/sony/mc/camera/util/CamLog;->DEBUG:Z
 
     if-eqz v0, :cond_0
 
-    const-string v0, "invoke"
+    const/4 v0, 0x1
 
-    filled-new-array {v0}, [Ljava/lang/String;
+    new-array v0, v0, [Ljava/lang/String;
 
-    move-result-object v0
+    const/4 v1, 0x0
+
+    const-string v2, "invoke"
+
+    aput-object v2, v0, v1
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
-    .line 6949
+    .line 7201
     :cond_0
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/FragmentController$ModeAndCameraSwitchCallbackImpl;->mCallbackType:Ljp/co/sony/mc/camera/view/FragmentController$CallbackType;
 
@@ -517,7 +547,7 @@
 
     return-void
 
-    .line 6954
+    .line 7206
     :cond_1
     new-instance v0, Ljp/co/sony/mc/camera/view/FragmentController$ModeAndCameraSwitchCallbackImpl$7;
 
@@ -529,22 +559,26 @@
 .end method
 
 .method public onRemainSavingMediaFound(IZ)V
-    .locals 2
+    .locals 3
 
-    .line 6832
+    .line 7084
     sget-boolean v0, Ljp/co/sony/mc/camera/util/CamLog;->DEBUG:Z
 
     if-eqz v0, :cond_0
 
-    const-string v0, "invoke"
+    const/4 v0, 0x1
 
-    filled-new-array {v0}, [Ljava/lang/String;
+    new-array v0, v0, [Ljava/lang/String;
 
-    move-result-object v0
+    const/4 v1, 0x0
+
+    const-string v2, "invoke"
+
+    aput-object v2, v0, v1
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
-    .line 6833
+    .line 7085
     :cond_0
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/FragmentController$ModeAndCameraSwitchCallbackImpl;->mCallbackType:Ljp/co/sony/mc/camera/view/FragmentController$CallbackType;
 
@@ -552,7 +586,7 @@
 
     if-ne v0, v1, :cond_1
 
-    .line 6834
+    .line 7086
     new-instance v0, Ljp/co/sony/mc/camera/view/FragmentController$ModeAndCameraSwitchCallbackImpl$1;
 
     invoke-direct {v0, p0, p1, p2}, Ljp/co/sony/mc/camera/view/FragmentController$ModeAndCameraSwitchCallbackImpl$1;-><init>(Ljp/co/sony/mc/camera/view/FragmentController$ModeAndCameraSwitchCallbackImpl;IZ)V
@@ -564,22 +598,26 @@
 .end method
 
 .method public onRemainSavingProgress(II)V
-    .locals 2
+    .locals 3
 
-    .line 6851
+    .line 7103
     sget-boolean v0, Ljp/co/sony/mc/camera/util/CamLog;->DEBUG:Z
 
     if-eqz v0, :cond_0
 
-    const-string v0, "invoke"
+    const/4 v0, 0x1
 
-    filled-new-array {v0}, [Ljava/lang/String;
+    new-array v0, v0, [Ljava/lang/String;
 
-    move-result-object v0
+    const/4 v1, 0x0
+
+    const-string v2, "invoke"
+
+    aput-object v2, v0, v1
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
-    .line 6852
+    .line 7104
     :cond_0
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/FragmentController$ModeAndCameraSwitchCallbackImpl;->mCallbackType:Ljp/co/sony/mc/camera/view/FragmentController$CallbackType;
 
@@ -587,7 +625,7 @@
 
     if-ne v0, v1, :cond_1
 
-    .line 6853
+    .line 7105
     new-instance v0, Ljp/co/sony/mc/camera/view/FragmentController$ModeAndCameraSwitchCallbackImpl$2;
 
     invoke-direct {v0, p0, p1, p2}, Ljp/co/sony/mc/camera/view/FragmentController$ModeAndCameraSwitchCallbackImpl$2;-><init>(Ljp/co/sony/mc/camera/view/FragmentController$ModeAndCameraSwitchCallbackImpl;II)V
@@ -599,28 +637,30 @@
 .end method
 
 .method public onResumeTimeout()V
-    .locals 2
+    .locals 3
 
-    .line 6986
+    .line 7238
     sget-boolean v0, Ljp/co/sony/mc/camera/util/CamLog;->DEBUG:Z
+
+    const/4 v1, 0x0
 
     if-eqz v0, :cond_0
 
-    const-string v0, "invoke"
+    const/4 v0, 0x1
 
-    filled-new-array {v0}, [Ljava/lang/String;
+    new-array v0, v0, [Ljava/lang/String;
 
-    move-result-object v0
+    const-string v2, "invoke"
+
+    aput-object v2, v0, v1
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
-    .line 6987
+    .line 7239
     :cond_0
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/FragmentController$ModeAndCameraSwitchCallbackImpl;->mController:Ljp/co/sony/mc/camera/view/FragmentController;
 
     sget-object v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->ERROR_IN_USE_BY_ANOTHER_APPLICATION:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
-
-    const/4 v1, 0x0
 
     new-array v1, v1, [Ljava/lang/Object;
 
@@ -630,22 +670,26 @@
 .end method
 
 .method public onSavingMediaCompleted()V
-    .locals 1
+    .locals 3
 
-    .line 6864
+    .line 7116
     sget-boolean v0, Ljp/co/sony/mc/camera/util/CamLog;->DEBUG:Z
 
     if-eqz v0, :cond_0
 
-    const-string v0, "invoke"
+    const/4 v0, 0x1
 
-    filled-new-array {v0}, [Ljava/lang/String;
+    new-array v0, v0, [Ljava/lang/String;
 
-    move-result-object v0
+    const/4 v1, 0x0
+
+    const-string v2, "invoke"
+
+    aput-object v2, v0, v1
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
-    .line 6865
+    .line 7117
     :cond_0
     new-instance v0, Ljp/co/sony/mc/camera/view/FragmentController$ModeAndCameraSwitchCallbackImpl$3;
 
@@ -661,10 +705,10 @@
 
     const/4 v0, 0x0
 
-    .line 7102
+    .line 7351
     invoke-virtual {p0, v0}, Ljp/co/sony/mc/camera/view/FragmentController$ModeAndCameraSwitchCallbackImpl;->onNewSettingsApplied(Z)V
 
-    .line 7103
+    .line 7352
     new-instance v0, Ljp/co/sony/mc/camera/view/FragmentController$ModeAndCameraSwitchCallbackImpl$$ExternalSyntheticLambda0;
 
     invoke-direct {v0, p0}, Ljp/co/sony/mc/camera/view/FragmentController$ModeAndCameraSwitchCallbackImpl$$ExternalSyntheticLambda0;-><init>(Ljp/co/sony/mc/camera/view/FragmentController$ModeAndCameraSwitchCallbackImpl;)V

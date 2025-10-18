@@ -3,7 +3,7 @@
 .source "D8$$SyntheticClass"
 
 # interfaces
-.implements Landroid/view/View$OnTouchListener;
+.implements Lkotlin/jvm/functions/Function1;
 
 
 # instance fields
@@ -24,15 +24,17 @@
 
 
 # virtual methods
-.method public final onTouch(Landroid/view/View;Landroid/view/MotionEvent;)Z
+.method public final invoke(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
 
     .line 0
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/viewbinder/StreamingModeQuickSettingViewBinder$$ExternalSyntheticLambda1;->f$0:Ljp/co/sony/mc/camera/view/viewbinder/StreamingModeQuickSettingViewBinder;
 
-    invoke-static {p0, p1, p2}, Ljp/co/sony/mc/camera/view/viewbinder/StreamingModeQuickSettingViewBinder;->$r8$lambda$w4bbZ4TOInMsoa5O1nJ2K-AYEH0(Ljp/co/sony/mc/camera/view/viewbinder/StreamingModeQuickSettingViewBinder;Landroid/view/View;Landroid/view/MotionEvent;)Z
+    check-cast p1, Ljava/lang/String;
 
-    move-result p0
+    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/view/viewbinder/StreamingModeQuickSettingViewBinder;->$r8$lambda$OpKlEtrtFMLzhDgnICsLs7Us9rs(Ljp/co/sony/mc/camera/view/viewbinder/StreamingModeQuickSettingViewBinder;Ljava/lang/String;)Lkotlin/Unit;
 
-    return p0
+    move-result-object p0
+
+    return-object p0
 .end method

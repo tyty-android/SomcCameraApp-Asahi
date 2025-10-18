@@ -57,7 +57,7 @@
     .line 24
     new-instance v6, Ljp/co/sony/mc/camera/configuration/parameters/ObjectTracking;
 
-    const v4, 0x7f1103bf
+    const v4, 0x7f1103f4
 
     sget-object v5, Ljp/co/sony/mc/camera/configuration/parameters/FocusArea;->OBJECT_TRACKING:Ljp/co/sony/mc/camera/configuration/parameters/FocusArea;
 
@@ -76,7 +76,7 @@
     .line 28
     new-instance v0, Ljp/co/sony/mc/camera/configuration/parameters/ObjectTracking;
 
-    const v11, 0x7f1103be
+    const v11, 0x7f1103f3
 
     sget-object v12, Ljp/co/sony/mc/camera/configuration/parameters/FocusArea;->FACE_DETECTION:Ljp/co/sony/mc/camera/configuration/parameters/FocusArea;
 

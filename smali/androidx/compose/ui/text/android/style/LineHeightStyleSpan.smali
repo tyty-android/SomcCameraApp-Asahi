@@ -9,7 +9,7 @@
 # annotations
 .annotation runtime Lkotlin/Metadata;
     d1 = {
-        "\u00006\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0007\n\u0000\n\u0002\u0010\u0008\n\u0002\u0008\u0002\n\u0002\u0010\u000b\n\u0002\u0008\u0012\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0010\r\n\u0002\u0008\u0006\u0008\u0001\u0018\u00002\u00020\u0001B7\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\u0006\u0010\u0004\u001a\u00020\u0005\u0012\u0006\u0010\u0006\u001a\u00020\u0005\u0012\u0006\u0010\u0007\u001a\u00020\u0008\u0012\u0006\u0010\t\u001a\u00020\u0008\u0012\u0008\u0008\u0001\u0010\n\u001a\u00020\u0003\u00a2\u0006\u0002\u0010\u000bJ\u0010\u0010\u001a\u001a\u00020\u001b2\u0006\u0010\u001c\u001a\u00020\u001dH\u0002J8\u0010\u001e\u001a\u00020\u001b2\u0006\u0010\u001f\u001a\u00020 2\u0006\u0010!\u001a\u00020\u00052\u0006\u0010\"\u001a\u00020\u00052\u0006\u0010#\u001a\u00020\u00052\u0006\u0010\u0002\u001a\u00020\u00052\u0006\u0010\u001c\u001a\u00020\u001dH\u0016J\'\u0010$\u001a\u00020\u00002\u0006\u0010\u0004\u001a\u00020\u00052\u0006\u0010\u0006\u001a\u00020\u00052\u0008\u0008\u0002\u0010\u0007\u001a\u00020\u0008H\u0000\u00a2\u0006\u0002\u0008%R\u000e\u0010\u000c\u001a\u00020\u0005X\u0082\u000e\u00a2\u0006\u0002\n\u0000R\u000e\u0010\r\u001a\u00020\u0005X\u0082\u000e\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u0006\u001a\u00020\u0005X\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u000e\u001a\u00020\u0005X\u0082\u000e\u00a2\u0006\u0002\n\u0000R\u001e\u0010\u0010\u001a\u00020\u00052\u0006\u0010\u000f\u001a\u00020\u0005@BX\u0086\u000e\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\u0011\u0010\u0012R\u000e\u0010\u0013\u001a\u00020\u0005X\u0082\u000e\u00a2\u0006\u0002\n\u0000R\u001e\u0010\u0014\u001a\u00020\u00052\u0006\u0010\u000f\u001a\u00020\u0005@BX\u0086\u000e\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\u0015\u0010\u0012R\u0011\u0010\u0002\u001a\u00020\u0003\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\u0016\u0010\u0017R\u000e\u0010\u0004\u001a\u00020\u0005X\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u000e\u0010\n\u001a\u00020\u0003X\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u0007\u001a\u00020\u0008X\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u0011\u0010\t\u001a\u00020\u0008\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\u0018\u0010\u0019\u00a8\u0006&"
+        "\u00006\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0007\n\u0000\n\u0002\u0010\u0008\n\u0002\u0008\u0002\n\u0002\u0010\u000b\n\u0002\u0008\u0012\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0010\r\n\u0002\u0008\u0006\u0008\u0000\u0018\u00002\u00020\u0001B7\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\u0006\u0010\u0004\u001a\u00020\u0005\u0012\u0006\u0010\u0006\u001a\u00020\u0005\u0012\u0006\u0010\u0007\u001a\u00020\u0008\u0012\u0006\u0010\t\u001a\u00020\u0008\u0012\u0008\u0008\u0001\u0010\n\u001a\u00020\u0003\u00a2\u0006\u0002\u0010\u000bJ\u0010\u0010\u001a\u001a\u00020\u001b2\u0006\u0010\u001c\u001a\u00020\u001dH\u0002J8\u0010\u001e\u001a\u00020\u001b2\u0006\u0010\u001f\u001a\u00020 2\u0006\u0010!\u001a\u00020\u00052\u0006\u0010\"\u001a\u00020\u00052\u0006\u0010#\u001a\u00020\u00052\u0006\u0010\u0002\u001a\u00020\u00052\u0006\u0010\u001c\u001a\u00020\u001dH\u0016J\'\u0010$\u001a\u00020\u00002\u0006\u0010\u0004\u001a\u00020\u00052\u0006\u0010\u0006\u001a\u00020\u00052\u0008\u0008\u0002\u0010\u0007\u001a\u00020\u0008H\u0000\u00a2\u0006\u0002\u0008%R\u000e\u0010\u000c\u001a\u00020\u0005X\u0082\u000e\u00a2\u0006\u0002\n\u0000R\u000e\u0010\r\u001a\u00020\u0005X\u0082\u000e\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u0006\u001a\u00020\u0005X\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u000e\u001a\u00020\u0005X\u0082\u000e\u00a2\u0006\u0002\n\u0000R\u001e\u0010\u0010\u001a\u00020\u00052\u0006\u0010\u000f\u001a\u00020\u0005@BX\u0086\u000e\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\u0011\u0010\u0012R\u000e\u0010\u0013\u001a\u00020\u0005X\u0082\u000e\u00a2\u0006\u0002\n\u0000R\u001e\u0010\u0014\u001a\u00020\u00052\u0006\u0010\u000f\u001a\u00020\u0005@BX\u0086\u000e\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\u0015\u0010\u0012R\u0011\u0010\u0002\u001a\u00020\u0003\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\u0016\u0010\u0017R\u000e\u0010\u0004\u001a\u00020\u0005X\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u000e\u0010\n\u001a\u00020\u0003X\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u0007\u001a\u00020\u0008X\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u0011\u0010\t\u001a\u00020\u0008\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\u0018\u0010\u0019\u00a8\u0006&"
     }
     d2 = {
         "Landroidx/compose/ui/text/android/style/LineHeightStyleSpan;",
@@ -62,6 +62,10 @@
 .end annotation
 
 
+# static fields
+.field public static final $stable:I = 0x8
+
+
 # instance fields
 .field private ascent:I
 
@@ -89,42 +93,48 @@
 
 
 # direct methods
+.method static constructor <clinit>()V
+    .locals 0
+
+    return-void
+.end method
+
 .method public constructor <init>(FIIZZF)V
     .locals 0
 
-    .line 46
+    .line 43
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 48
+    .line 44
     iput p1, p0, Landroidx/compose/ui/text/android/style/LineHeightStyleSpan;->lineHeight:F
 
-    .line 49
+    .line 45
     iput p2, p0, Landroidx/compose/ui/text/android/style/LineHeightStyleSpan;->startIndex:I
 
-    .line 50
+    .line 46
     iput p3, p0, Landroidx/compose/ui/text/android/style/LineHeightStyleSpan;->endIndex:I
 
-    .line 51
+    .line 47
     iput-boolean p4, p0, Landroidx/compose/ui/text/android/style/LineHeightStyleSpan;->trimFirstLineTop:Z
 
-    .line 52
+    .line 48
     iput-boolean p5, p0, Landroidx/compose/ui/text/android/style/LineHeightStyleSpan;->trimLastLineBottom:Z
 
-    .line 53
+    .line 49
     iput p6, p0, Landroidx/compose/ui/text/android/style/LineHeightStyleSpan;->topRatio:F
 
     const/high16 p1, -0x80000000
 
-    .line 56
+    .line 52
     iput p1, p0, Landroidx/compose/ui/text/android/style/LineHeightStyleSpan;->firstAscent:I
 
-    .line 57
+    .line 53
     iput p1, p0, Landroidx/compose/ui/text/android/style/LineHeightStyleSpan;->ascent:I
 
-    .line 58
+    .line 54
     iput p1, p0, Landroidx/compose/ui/text/android/style/LineHeightStyleSpan;->descent:I
 
-    .line 59
+    .line 55
     iput p1, p0, Landroidx/compose/ui/text/android/style/LineHeightStyleSpan;->lastDescent:I
 
     const/4 p0, 0x0
@@ -151,7 +161,7 @@
     :goto_0
     return-void
 
-    .line 70
+    .line 66
     :cond_1
     new-instance p0, Ljava/lang/IllegalStateException;
 
@@ -169,12 +179,12 @@
 .method private final calculateTargetMetrics(Landroid/graphics/Paint$FontMetricsInt;)V
     .locals 4
 
-    .line 102
+    .line 98
     invoke-static {p1}, Landroidx/compose/ui/text/android/style/LineHeightStyleSpanKt;->lineHeight(Landroid/graphics/Paint$FontMetricsInt;)I
 
     move-result v0
 
-    .line 103
+    .line 99
     iget v1, p0, Landroidx/compose/ui/text/android/style/LineHeightStyleSpan;->lineHeight:F
 
     float-to-double v1, v1
@@ -189,7 +199,7 @@
 
     sub-int v0, v1, v0
 
-    .line 108
+    .line 104
     iget v2, p0, Landroidx/compose/ui/text/android/style/LineHeightStyleSpan;->topRatio:F
 
     const/high16 v3, -0x40800000    # -1.0f
@@ -198,7 +208,7 @@
 
     if-nez v3, :cond_0
 
-    .line 109
+    .line 105
     iget v2, p1, Landroid/graphics/Paint$FontMetricsInt;->ascent:I
 
     int-to-float v2, v2
@@ -224,7 +234,7 @@
 
     float-to-double v2, v0
 
-    .line 116
+    .line 112
     invoke-static {v2, v3}, Ljava/lang/Math;->ceil(D)D
 
     move-result-wide v2
@@ -242,7 +252,7 @@
 
     float-to-double v2, v0
 
-    .line 119
+    .line 115
     invoke-static {v2, v3}, Ljava/lang/Math;->ceil(D)D
 
     move-result-wide v2
@@ -252,7 +262,7 @@
 
     float-to-int v0, v0
 
-    .line 122
+    .line 118
     iget v2, p1, Landroid/graphics/Paint$FontMetricsInt;->descent:I
 
     add-int/2addr v2, v0
@@ -261,10 +271,10 @@
 
     sub-int/2addr v2, v1
 
-    .line 123
+    .line 119
     iput v2, p0, Landroidx/compose/ui/text/android/style/LineHeightStyleSpan;->ascent:I
 
-    .line 125
+    .line 121
     iget-boolean v0, p0, Landroidx/compose/ui/text/android/style/LineHeightStyleSpan;->trimFirstLineTop:Z
 
     if-eqz v0, :cond_2
@@ -274,7 +284,7 @@
     :cond_2
     iput v2, p0, Landroidx/compose/ui/text/android/style/LineHeightStyleSpan;->firstAscent:I
 
-    .line 126
+    .line 122
     iget-boolean v0, p0, Landroidx/compose/ui/text/android/style/LineHeightStyleSpan;->trimLastLineBottom:Z
 
     if-eqz v0, :cond_3
@@ -289,7 +299,7 @@
     :goto_1
     iput v0, p0, Landroidx/compose/ui/text/android/style/LineHeightStyleSpan;->lastDescent:I
 
-    .line 127
+    .line 123
     iget v0, p1, Landroid/graphics/Paint$FontMetricsInt;->ascent:I
 
     iget v1, p0, Landroidx/compose/ui/text/android/style/LineHeightStyleSpan;->firstAscent:I
@@ -298,7 +308,7 @@
 
     iput v0, p0, Landroidx/compose/ui/text/android/style/LineHeightStyleSpan;->firstAscentDiff:I
 
-    .line 128
+    .line 124
     iget v0, p0, Landroidx/compose/ui/text/android/style/LineHeightStyleSpan;->lastDescent:I
 
     iget p1, p1, Landroid/graphics/Paint$FontMetricsInt;->descent:I
@@ -317,10 +327,10 @@
 
     if-eqz p4, :cond_0
 
-    .line 134
+    .line 130
     iget-boolean p3, p0, Landroidx/compose/ui/text/android/style/LineHeightStyleSpan;->trimFirstLineTop:Z
 
-    .line 131
+    .line 127
     :cond_0
     invoke-virtual {p0, p1, p2, p3}, Landroidx/compose/ui/text/android/style/LineHeightStyleSpan;->copy$ui_text_release(IIZ)Landroidx/compose/ui/text/android/style/LineHeightStyleSpan;
 
@@ -334,15 +344,7 @@
 .method public chooseHeight(Ljava/lang/CharSequence;IIIILandroid/graphics/Paint$FontMetricsInt;)V
     .locals 0
 
-    const-string/jumbo p4, "text"
-
-    invoke-static {p1, p4}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string p1, "fontMetricsInt"
-
-    invoke-static {p6, p1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 83
+    .line 79
     invoke-static {p6}, Landroidx/compose/ui/text/android/style/LineHeightStyleSpanKt;->lineHeight(Landroid/graphics/Paint$FontMetricsInt;)I
 
     move-result p1
@@ -351,7 +353,7 @@
 
     return-void
 
-    .line 87
+    .line 83
     :cond_0
     iget p1, p0, Landroidx/compose/ui/text/android/style/LineHeightStyleSpan;->startIndex:I
 
@@ -368,7 +370,7 @@
     :cond_1
     move p1, p5
 
-    .line 88
+    .line 84
     :goto_0
     iget p2, p0, Landroidx/compose/ui/text/android/style/LineHeightStyleSpan;->endIndex:I
 
@@ -384,7 +386,7 @@
 
     if-eqz p4, :cond_3
 
-    .line 91
+    .line 87
     iget-boolean p2, p0, Landroidx/compose/ui/text/android/style/LineHeightStyleSpan;->trimFirstLineTop:Z
 
     if-eqz p2, :cond_3
@@ -395,7 +397,7 @@
 
     return-void
 
-    .line 93
+    .line 89
     :cond_3
     iget p2, p0, Landroidx/compose/ui/text/android/style/LineHeightStyleSpan;->firstAscent:I
 
@@ -403,13 +405,13 @@
 
     if-ne p2, p3, :cond_4
 
-    .line 94
+    .line 90
     invoke-direct {p0, p6}, Landroidx/compose/ui/text/android/style/LineHeightStyleSpan;->calculateTargetMetrics(Landroid/graphics/Paint$FontMetricsInt;)V
 
     :cond_4
     if-eqz p1, :cond_5
 
-    .line 97
+    .line 93
     iget p1, p0, Landroidx/compose/ui/text/android/style/LineHeightStyleSpan;->firstAscent:I
 
     goto :goto_2
@@ -422,7 +424,7 @@
 
     if-eqz p4, :cond_6
 
-    .line 98
+    .line 94
     iget p0, p0, Landroidx/compose/ui/text/android/style/LineHeightStyleSpan;->lastDescent:I
 
     goto :goto_3
@@ -439,16 +441,16 @@
 .method public final copy$ui_text_release(IIZ)Landroidx/compose/ui/text/android/style/LineHeightStyleSpan;
     .locals 8
 
-    .line 135
+    .line 131
     new-instance v7, Landroidx/compose/ui/text/android/style/LineHeightStyleSpan;
 
-    .line 136
+    .line 132
     iget v1, p0, Landroidx/compose/ui/text/android/style/LineHeightStyleSpan;->lineHeight:F
 
-    .line 140
+    .line 136
     iget-boolean v5, p0, Landroidx/compose/ui/text/android/style/LineHeightStyleSpan;->trimLastLineBottom:Z
 
-    .line 141
+    .line 137
     iget v6, p0, Landroidx/compose/ui/text/android/style/LineHeightStyleSpan;->topRatio:F
 
     move-object v0, v7
@@ -459,7 +461,7 @@
 
     move v4, p3
 
-    .line 135
+    .line 131
     invoke-direct/range {v0 .. v6}, Landroidx/compose/ui/text/android/style/LineHeightStyleSpan;-><init>(FIIZZF)V
 
     return-object v7
@@ -468,7 +470,7 @@
 .method public final getFirstAscentDiff()I
     .locals 0
 
-    .line 62
+    .line 58
     iget p0, p0, Landroidx/compose/ui/text/android/style/LineHeightStyleSpan;->firstAscentDiff:I
 
     return p0
@@ -477,7 +479,7 @@
 .method public final getLastDescentDiff()I
     .locals 0
 
-    .line 66
+    .line 62
     iget p0, p0, Landroidx/compose/ui/text/android/style/LineHeightStyleSpan;->lastDescentDiff:I
 
     return p0
@@ -486,7 +488,7 @@
 .method public final getLineHeight()F
     .locals 0
 
-    .line 48
+    .line 44
     iget p0, p0, Landroidx/compose/ui/text/android/style/LineHeightStyleSpan;->lineHeight:F
 
     return p0
@@ -495,7 +497,7 @@
 .method public final getTrimLastLineBottom()Z
     .locals 0
 
-    .line 52
+    .line 48
     iget-boolean p0, p0, Landroidx/compose/ui/text/android/style/LineHeightStyleSpan;->trimLastLineBottom:Z
 
     return p0

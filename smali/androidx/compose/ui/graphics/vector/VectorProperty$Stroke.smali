@@ -66,7 +66,7 @@
 
     const/4 v0, 0x0
 
-    .line 299
+    .line 284
     invoke-direct {p0, v0}, Landroidx/compose/ui/graphics/vector/VectorProperty;-><init>(Lkotlin/jvm/internal/DefaultConstructorMarker;)V
 
     return-void

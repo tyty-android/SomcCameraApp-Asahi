@@ -3,7 +3,7 @@
 .source "D8$$SyntheticClass"
 
 # interfaces
-.implements Landroid/view/accessibility/AccessibilityManager$TouchExplorationStateChangeListener;
+.implements Ljava/lang/Runnable;
 
 
 # instance fields
@@ -24,13 +24,13 @@
 
 
 # virtual methods
-.method public final onTouchExplorationStateChanged(Z)V
+.method public final run()V
     .locals 0
 
     .line 0
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/HorizontalLevelMeterView$$ExternalSyntheticLambda0;->f$0:Ljp/co/sony/mc/camera/view/HorizontalLevelMeterView;
 
-    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/view/HorizontalLevelMeterView;->$r8$lambda$E1C6bUeWGZ222hS1rFAcspwHUS8(Ljp/co/sony/mc/camera/view/HorizontalLevelMeterView;Z)V
+    invoke-static {p0}, Ljp/co/sony/mc/camera/view/HorizontalLevelMeterView;->$r8$lambda$7JYfTTBerdeaLiiYUbdrix1HPU0(Ljp/co/sony/mc/camera/view/HorizontalLevelMeterView;)V
 
     return-void
 .end method

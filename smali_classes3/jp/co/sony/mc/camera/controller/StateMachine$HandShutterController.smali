@@ -47,21 +47,21 @@
 .method private constructor <init>()V
     .locals 1
 
-    .line 8553
+    .line 8378
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     const/4 v0, 0x0
 
-    .line 8558
+    .line 8383
     iput-boolean v0, p0, Ljp/co/sony/mc/camera/controller/StateMachine$HandShutterController;->mIsEnabled:Z
 
-    .line 8559
+    .line 8384
     iput-boolean v0, p0, Ljp/co/sony/mc/camera/controller/StateMachine$HandShutterController;->mIsStarted:Z
 
-    .line 8560
+    .line 8385
     iput-boolean v0, p0, Ljp/co/sony/mc/camera/controller/StateMachine$HandShutterController;->mIsWaitingStartPreview:Z
 
-    .line 8561
+    .line 8386
     new-instance v0, Ljava/lang/Object;
 
     invoke-direct {v0}, Ljava/lang/Object;-><init>()V
@@ -70,13 +70,13 @@
 
     const/4 v0, 0x0
 
-    .line 8562
+    .line 8387
     iput-object v0, p0, Ljp/co/sony/mc/camera/controller/StateMachine$HandShutterController;->mPreviewFrameProvider:Ljp/co/sony/mc/camera/device/PreviewFrameProvider;
 
-    .line 8563
+    .line 8388
     iput-object v0, p0, Ljp/co/sony/mc/camera/controller/StateMachine$HandShutterController;->mDetector:Ljp/co/sony/mc/camera/controller/gestureshutter/HandSignsDetectorInterface;
 
-    .line 8564
+    .line 8389
     iput-object v0, p0, Ljp/co/sony/mc/camera/controller/StateMachine$HandShutterController;->mHandDetectionCallback:Ljp/co/sony/mc/camera/controller/StateMachine$HandShutterController$HandDetectionCallback;
 
     return-void
@@ -95,7 +95,7 @@
 .method public onDetectResult(Ljp/co/sony/mc/camera/controller/gestureshutter/HandSignsDetectorInterface$DetectResultInterface;)V
     .locals 3
 
-    .line 8583
+    .line 8408
     sget-boolean v0, Ljp/co/sony/mc/camera/util/CamLog;->VERBOSE:Z
 
     if-eqz v0, :cond_1
@@ -112,7 +112,7 @@
 
     if-eqz p1, :cond_0
 
-    .line 8584
+    .line 8409
     invoke-interface {p1}, Ljp/co/sony/mc/camera/controller/gestureshutter/HandSignsDetectorInterface$DetectResultInterface;->getArea()Landroid/graphics/Rect;
 
     move-result-object v2
@@ -135,16 +135,16 @@
 
     aput-object v1, v0, v2
 
-    .line 8583
+    .line 8408
     invoke-static {v0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
-    .line 8585
+    .line 8410
     :cond_1
     iget-object v0, p0, Ljp/co/sony/mc/camera/controller/StateMachine$HandShutterController;->mLockObject:Ljava/lang/Object;
 
     monitor-enter v0
 
-    .line 8586
+    .line 8411
     :try_start_0
     iget-object v1, p0, Ljp/co/sony/mc/camera/controller/StateMachine$HandShutterController;->mDetector:Ljp/co/sony/mc/camera/controller/gestureshutter/HandSignsDetectorInterface;
 
@@ -156,7 +156,7 @@
 
     if-eqz p1, :cond_2
 
-    .line 8588
+    .line 8413
     invoke-interface {v1}, Ljp/co/sony/mc/camera/controller/gestureshutter/HandSignsDetectorInterface;->getDetectWidth()I
 
     move-result v1
@@ -167,10 +167,10 @@
 
     move-result p0
 
-    .line 8587
+    .line 8412
     invoke-interface {v2, p1, v1, p0}, Ljp/co/sony/mc/camera/controller/StateMachine$HandShutterController$HandDetectionCallback;->onDetected(Ljp/co/sony/mc/camera/controller/gestureshutter/HandSignsDetectorInterface$DetectResultInterface;II)V
 
-    .line 8590
+    .line 8415
     :cond_2
     monitor-exit v0
 
@@ -187,47 +187,49 @@
 .end method
 
 .method public onPreviewStarted(Ljp/co/sony/mc/camera/device/PreviewFrameProvider;Ljp/co/sony/mc/camera/OrientationService$LayoutOrientation;)V
-    .locals 1
+    .locals 3
 
-    .line 8610
+    .line 8435
     sget-boolean v0, Ljp/co/sony/mc/camera/util/CamLog;->VERBOSE:Z
+
+    const/4 v1, 0x0
 
     if-eqz v0, :cond_0
 
-    const-string v0, "[HandShutterController] onPreviewStarted"
+    const/4 v0, 0x1
 
-    filled-new-array {v0}, [Ljava/lang/String;
+    new-array v0, v0, [Ljava/lang/String;
 
-    move-result-object v0
+    const-string v2, "[HandShutterController] onPreviewStarted"
+
+    aput-object v2, v0, v1
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
-    .line 8611
+    .line 8436
     :cond_0
     iget-object v0, p0, Ljp/co/sony/mc/camera/controller/StateMachine$HandShutterController;->mLockObject:Ljava/lang/Object;
 
     monitor-enter v0
 
-    .line 8612
+    .line 8437
     :try_start_0
     iput-object p1, p0, Ljp/co/sony/mc/camera/controller/StateMachine$HandShutterController;->mPreviewFrameProvider:Ljp/co/sony/mc/camera/device/PreviewFrameProvider;
 
-    .line 8613
+    .line 8438
     iget-boolean p1, p0, Ljp/co/sony/mc/camera/controller/StateMachine$HandShutterController;->mIsWaitingStartPreview:Z
 
     if-eqz p1, :cond_1
 
-    .line 8614
+    .line 8439
     iget-object p1, p0, Ljp/co/sony/mc/camera/controller/StateMachine$HandShutterController;->mHandDetectionCallback:Ljp/co/sony/mc/camera/controller/StateMachine$HandShutterController$HandDetectionCallback;
 
     invoke-virtual {p0, p2, p1}, Ljp/co/sony/mc/camera/controller/StateMachine$HandShutterController;->startHandDetection(Ljp/co/sony/mc/camera/OrientationService$LayoutOrientation;Ljp/co/sony/mc/camera/controller/StateMachine$HandShutterController$HandDetectionCallback;)V
 
-    const/4 p1, 0x0
+    .line 8440
+    iput-boolean v1, p0, Ljp/co/sony/mc/camera/controller/StateMachine$HandShutterController;->mIsWaitingStartPreview:Z
 
-    .line 8615
-    iput-boolean p1, p0, Ljp/co/sony/mc/camera/controller/StateMachine$HandShutterController;->mIsWaitingStartPreview:Z
-
-    .line 8617
+    .line 8442
     :cond_1
     monitor-exit v0
 
@@ -244,33 +246,37 @@
 .end method
 
 .method public release()V
-    .locals 1
+    .locals 3
 
-    .line 8685
+    .line 8510
     sget-boolean v0, Ljp/co/sony/mc/camera/util/CamLog;->VERBOSE:Z
 
     if-eqz v0, :cond_0
 
-    const-string v0, "[HandShutterController] release"
+    const/4 v0, 0x1
 
-    filled-new-array {v0}, [Ljava/lang/String;
+    new-array v0, v0, [Ljava/lang/String;
 
-    move-result-object v0
+    const/4 v1, 0x0
+
+    const-string v2, "[HandShutterController] release"
+
+    aput-object v2, v0, v1
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
-    .line 8686
+    .line 8511
     :cond_0
     iget-object v0, p0, Ljp/co/sony/mc/camera/controller/StateMachine$HandShutterController;->mDetector:Ljp/co/sony/mc/camera/controller/gestureshutter/HandSignsDetectorInterface;
 
     if-eqz v0, :cond_1
 
-    .line 8687
+    .line 8512
     invoke-interface {v0}, Ljp/co/sony/mc/camera/controller/gestureshutter/HandSignsDetectorInterface;->release()V
 
     const/4 v0, 0x0
 
-    .line 8688
+    .line 8513
     iput-object v0, p0, Ljp/co/sony/mc/camera/controller/StateMachine$HandShutterController;->mDetector:Ljp/co/sony/mc/camera/controller/gestureshutter/HandSignsDetectorInterface;
 
     :cond_1
@@ -278,34 +284,38 @@
 .end method
 
 .method public setEnabled(Z)V
-    .locals 2
+    .locals 3
 
-    .line 8599
+    .line 8424
     sget-boolean v0, Ljp/co/sony/mc/camera/util/CamLog;->VERBOSE:Z
 
     if-eqz v0, :cond_0
 
-    new-instance v0, Ljava/lang/StringBuilder;
+    const/4 v0, 0x1
 
-    const-string v1, "[HandShutterController] setEnabled: "
+    new-array v0, v0, [Ljava/lang/String;
 
-    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+    new-instance v1, Ljava/lang/StringBuilder;
 
-    invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
+    const-string v2, "[HandShutterController] setEnabled: "
 
-    move-result-object v0
+    invoke-direct {v1, v2}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-virtual {v1, p1}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
 
-    move-result-object v0
+    move-result-object v1
 
-    filled-new-array {v0}, [Ljava/lang/String;
+    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    move-result-object v0
+    move-result-object v1
+
+    const/4 v2, 0x0
+
+    aput-object v1, v0, v2
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
-    .line 8600
+    .line 8425
     :cond_0
     iput-boolean p1, p0, Ljp/co/sony/mc/camera/controller/StateMachine$HandShutterController;->mIsEnabled:Z
 
@@ -313,28 +323,32 @@
 .end method
 
 .method public setOrientation(Ljp/co/sony/mc/camera/OrientationService$LayoutOrientation;)V
-    .locals 1
+    .locals 3
 
-    .line 8673
+    .line 8498
     sget-boolean v0, Ljp/co/sony/mc/camera/util/CamLog;->VERBOSE:Z
 
     if-eqz v0, :cond_0
 
-    const-string v0, "[HandShutterController] setOrientation"
+    const/4 v0, 0x1
 
-    filled-new-array {v0}, [Ljava/lang/String;
+    new-array v0, v0, [Ljava/lang/String;
 
-    move-result-object v0
+    const/4 v1, 0x0
+
+    const-string v2, "[HandShutterController] setOrientation"
+
+    aput-object v2, v0, v1
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
-    .line 8674
+    .line 8499
     :cond_0
     iget-object p0, p0, Ljp/co/sony/mc/camera/controller/StateMachine$HandShutterController;->mDetector:Ljp/co/sony/mc/camera/controller/gestureshutter/HandSignsDetectorInterface;
 
     if-eqz p0, :cond_1
 
-    .line 8675
+    .line 8500
     invoke-interface {p0, p1}, Ljp/co/sony/mc/camera/controller/gestureshutter/HandSignsDetectorInterface;->setLayoutOrientation(Ljp/co/sony/mc/camera/OrientationService$LayoutOrientation;)V
 
     :cond_1
@@ -342,50 +356,54 @@
 .end method
 
 .method public startHandDetection(Ljp/co/sony/mc/camera/OrientationService$LayoutOrientation;Ljp/co/sony/mc/camera/controller/StateMachine$HandShutterController$HandDetectionCallback;)V
-    .locals 1
+    .locals 4
 
-    .line 8638
+    .line 8463
     sget-boolean v0, Ljp/co/sony/mc/camera/util/CamLog;->VERBOSE:Z
+
+    const/4 v1, 0x1
 
     if-eqz v0, :cond_0
 
-    const-string v0, "[HandShutterController] startHandDetection"
+    new-array v0, v1, [Ljava/lang/String;
 
-    filled-new-array {v0}, [Ljava/lang/String;
+    const/4 v2, 0x0
 
-    move-result-object v0
+    const-string v3, "[HandShutterController] startHandDetection"
+
+    aput-object v3, v0, v2
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
-    .line 8639
+    .line 8464
     :cond_0
     sget-object v0, Ljp/co/sony/mc/camera/OrientationService$LayoutOrientation;->Unknown:Ljp/co/sony/mc/camera/OrientationService$LayoutOrientation;
 
     if-ne p1, v0, :cond_1
 
-    .line 8640
+    .line 8465
     sget-object p1, Ljp/co/sony/mc/camera/OrientationService$LayoutOrientation;->Portrait:Ljp/co/sony/mc/camera/OrientationService$LayoutOrientation;
 
-    .line 8642
+    .line 8467
     :cond_1
     iget-object v0, p0, Ljp/co/sony/mc/camera/controller/StateMachine$HandShutterController;->mDetector:Ljp/co/sony/mc/camera/controller/gestureshutter/HandSignsDetectorInterface;
 
     if-nez v0, :cond_2
 
-    .line 8643
+    .line 8468
     new-instance v0, Ljp/co/sony/mc/camera/controller/gestureshutter/HandSignsDetector;
 
     invoke-direct {v0, p1, p0}, Ljp/co/sony/mc/camera/controller/gestureshutter/HandSignsDetector;-><init>(Ljp/co/sony/mc/camera/OrientationService$LayoutOrientation;Ljp/co/sony/mc/camera/controller/gestureshutter/HandSignsDetectorInterface$DetectResultListener;)V
 
     iput-object v0, p0, Ljp/co/sony/mc/camera/controller/StateMachine$HandShutterController;->mDetector:Ljp/co/sony/mc/camera/controller/gestureshutter/HandSignsDetectorInterface;
 
-    .line 8645
+    .line 8470
     :cond_2
     iget-object p1, p0, Ljp/co/sony/mc/camera/controller/StateMachine$HandShutterController;->mLockObject:Ljava/lang/Object;
 
     monitor-enter p1
 
-    .line 8646
+    .line 8471
     :try_start_0
     iget-boolean v0, p0, Ljp/co/sony/mc/camera/controller/StateMachine$HandShutterController;->mIsStarted:Z
 
@@ -395,28 +413,26 @@
 
     if-eqz v0, :cond_4
 
-    .line 8647
+    .line 8472
     iput-object p2, p0, Ljp/co/sony/mc/camera/controller/StateMachine$HandShutterController;->mHandDetectionCallback:Ljp/co/sony/mc/camera/controller/StateMachine$HandShutterController$HandDetectionCallback;
 
-    .line 8648
+    .line 8473
     iget-object p2, p0, Ljp/co/sony/mc/camera/controller/StateMachine$HandShutterController;->mPreviewFrameProvider:Ljp/co/sony/mc/camera/device/PreviewFrameProvider;
 
     if-eqz p2, :cond_3
 
-    .line 8649
+    .line 8474
     iget-object p0, p0, Ljp/co/sony/mc/camera/controller/StateMachine$HandShutterController;->mDetector:Ljp/co/sony/mc/camera/controller/gestureshutter/HandSignsDetectorInterface;
 
     invoke-interface {p0, p2}, Ljp/co/sony/mc/camera/controller/gestureshutter/HandSignsDetectorInterface;->startDetect(Ljp/co/sony/mc/camera/device/PreviewFrameProvider;)V
 
     goto :goto_0
 
+    .line 8476
     :cond_3
-    const/4 p2, 0x1
+    iput-boolean v1, p0, Ljp/co/sony/mc/camera/controller/StateMachine$HandShutterController;->mIsWaitingStartPreview:Z
 
-    .line 8651
-    iput-boolean p2, p0, Ljp/co/sony/mc/camera/controller/StateMachine$HandShutterController;->mIsWaitingStartPreview:Z
-
-    .line 8654
+    .line 8479
     :cond_4
     :goto_0
     monitor-exit p1
@@ -434,22 +450,26 @@
 .end method
 
 .method public stopHandDetection()V
-    .locals 1
+    .locals 3
 
-    .line 8661
+    .line 8486
     sget-boolean v0, Ljp/co/sony/mc/camera/util/CamLog;->VERBOSE:Z
 
     if-eqz v0, :cond_0
 
-    const-string v0, "[HandShutterController] stopHandDetection"
+    const/4 v0, 0x1
 
-    filled-new-array {v0}, [Ljava/lang/String;
+    new-array v0, v0, [Ljava/lang/String;
 
-    move-result-object v0
+    const/4 v1, 0x0
+
+    const-string v2, "[HandShutterController] stopHandDetection"
+
+    aput-object v2, v0, v1
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
-    .line 8662
+    .line 8487
     :cond_0
     iget-object v0, p0, Ljp/co/sony/mc/camera/controller/StateMachine$HandShutterController;->mDetector:Ljp/co/sony/mc/camera/controller/gestureshutter/HandSignsDetectorInterface;
 
@@ -459,7 +479,7 @@
 
     if-eqz p0, :cond_1
 
-    .line 8663
+    .line 8488
     invoke-interface {v0}, Ljp/co/sony/mc/camera/controller/gestureshutter/HandSignsDetectorInterface;->stopDetect()V
 
     :cond_1
@@ -467,22 +487,26 @@
 .end method
 
 .method public stopPreview()V
-    .locals 2
+    .locals 3
 
-    .line 8624
+    .line 8449
     sget-boolean v0, Ljp/co/sony/mc/camera/util/CamLog;->VERBOSE:Z
 
     if-eqz v0, :cond_0
 
-    const-string v0, "[HandShutterController] stopPreview"
+    const/4 v0, 0x1
 
-    filled-new-array {v0}, [Ljava/lang/String;
+    new-array v0, v0, [Ljava/lang/String;
 
-    move-result-object v0
+    const/4 v1, 0x0
+
+    const-string v2, "[HandShutterController] stopPreview"
+
+    aput-object v2, v0, v1
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
-    .line 8625
+    .line 8450
     :cond_0
     iget-object v0, p0, Ljp/co/sony/mc/camera/controller/StateMachine$HandShutterController;->mLockObject:Ljava/lang/Object;
 
@@ -490,11 +514,11 @@
 
     const/4 v1, 0x0
 
-    .line 8626
+    .line 8451
     :try_start_0
     iput-object v1, p0, Ljp/co/sony/mc/camera/controller/StateMachine$HandShutterController;->mPreviewFrameProvider:Ljp/co/sony/mc/camera/device/PreviewFrameProvider;
 
-    .line 8627
+    .line 8452
     monitor-exit v0
 
     return-void

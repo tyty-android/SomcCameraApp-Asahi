@@ -3,1172 +3,11 @@
 .source "MaterialDynamicColors.java"
 
 
-# static fields
-.field private static final CONTAINER_ACCENT_TONE_DELTA:D = 15.0
-
-.field public static final background:Lcom/google/android/material/color/utilities/DynamicColor;
-
-.field public static final controlActivated:Lcom/google/android/material/color/utilities/DynamicColor;
-
-.field public static final controlHighlight:Lcom/google/android/material/color/utilities/DynamicColor;
-
-.field public static final controlNormal:Lcom/google/android/material/color/utilities/DynamicColor;
-
-.field public static final error:Lcom/google/android/material/color/utilities/DynamicColor;
-
-.field public static final errorContainer:Lcom/google/android/material/color/utilities/DynamicColor;
-
-.field public static final onBackground:Lcom/google/android/material/color/utilities/DynamicColor;
-
-.field public static final onError:Lcom/google/android/material/color/utilities/DynamicColor;
-
-.field public static final onErrorContainer:Lcom/google/android/material/color/utilities/DynamicColor;
-
-.field public static final onPrimary:Lcom/google/android/material/color/utilities/DynamicColor;
-
-.field public static final onPrimaryContainer:Lcom/google/android/material/color/utilities/DynamicColor;
-
-.field public static final onPrimaryFixed:Lcom/google/android/material/color/utilities/DynamicColor;
-
-.field public static final onPrimaryFixedVariant:Lcom/google/android/material/color/utilities/DynamicColor;
-
-.field public static final onSecondary:Lcom/google/android/material/color/utilities/DynamicColor;
-
-.field public static final onSecondaryContainer:Lcom/google/android/material/color/utilities/DynamicColor;
-
-.field public static final onSecondaryFixed:Lcom/google/android/material/color/utilities/DynamicColor;
-
-.field public static final onSecondaryFixedVariant:Lcom/google/android/material/color/utilities/DynamicColor;
-
-.field public static final onSurface:Lcom/google/android/material/color/utilities/DynamicColor;
-
-.field public static final onSurfaceInverse:Lcom/google/android/material/color/utilities/DynamicColor;
-
-.field public static final onSurfaceVariant:Lcom/google/android/material/color/utilities/DynamicColor;
-
-.field public static final onTertiary:Lcom/google/android/material/color/utilities/DynamicColor;
-
-.field public static final onTertiaryContainer:Lcom/google/android/material/color/utilities/DynamicColor;
-
-.field public static final onTertiaryFixed:Lcom/google/android/material/color/utilities/DynamicColor;
-
-.field public static final onTertiaryFixedVariant:Lcom/google/android/material/color/utilities/DynamicColor;
-
-.field public static final outline:Lcom/google/android/material/color/utilities/DynamicColor;
-
-.field public static final outlineVariant:Lcom/google/android/material/color/utilities/DynamicColor;
-
-.field public static final primary:Lcom/google/android/material/color/utilities/DynamicColor;
-
-.field public static final primaryContainer:Lcom/google/android/material/color/utilities/DynamicColor;
-
-.field public static final primaryFixed:Lcom/google/android/material/color/utilities/DynamicColor;
-
-.field public static final primaryFixedDarker:Lcom/google/android/material/color/utilities/DynamicColor;
-
-.field public static final primaryInverse:Lcom/google/android/material/color/utilities/DynamicColor;
-
-.field public static final secondary:Lcom/google/android/material/color/utilities/DynamicColor;
-
-.field public static final secondaryContainer:Lcom/google/android/material/color/utilities/DynamicColor;
-
-.field public static final secondaryFixed:Lcom/google/android/material/color/utilities/DynamicColor;
-
-.field public static final secondaryFixedDarker:Lcom/google/android/material/color/utilities/DynamicColor;
-
-.field public static final surface:Lcom/google/android/material/color/utilities/DynamicColor;
-
-.field public static final surfaceAdd1:Lcom/google/android/material/color/utilities/DynamicColor;
-
-.field public static final surfaceAdd2:Lcom/google/android/material/color/utilities/DynamicColor;
-
-.field public static final surfaceBright:Lcom/google/android/material/color/utilities/DynamicColor;
-
-.field public static final surfaceContainer:Lcom/google/android/material/color/utilities/DynamicColor;
-
-.field public static final surfaceDim:Lcom/google/android/material/color/utilities/DynamicColor;
-
-.field public static final surfaceInverse:Lcom/google/android/material/color/utilities/DynamicColor;
-
-.field public static final surfaceSub1:Lcom/google/android/material/color/utilities/DynamicColor;
-
-.field public static final surfaceSub2:Lcom/google/android/material/color/utilities/DynamicColor;
-
-.field public static final surfaceVariant:Lcom/google/android/material/color/utilities/DynamicColor;
-
-.field public static final tertiary:Lcom/google/android/material/color/utilities/DynamicColor;
-
-.field public static final tertiaryContainer:Lcom/google/android/material/color/utilities/DynamicColor;
-
-.field public static final tertiaryFixed:Lcom/google/android/material/color/utilities/DynamicColor;
-
-.field public static final tertiaryFixedDarker:Lcom/google/android/material/color/utilities/DynamicColor;
-
-.field public static final textHintInverse:Lcom/google/android/material/color/utilities/DynamicColor;
-
-.field public static final textPrimaryInverse:Lcom/google/android/material/color/utilities/DynamicColor;
-
-.field public static final textPrimaryInverseDisableOnly:Lcom/google/android/material/color/utilities/DynamicColor;
-
-.field public static final textSecondaryAndTertiaryInverse:Lcom/google/android/material/color/utilities/DynamicColor;
-
-.field public static final textSecondaryAndTertiaryInverseDisabled:Lcom/google/android/material/color/utilities/DynamicColor;
-
-
 # direct methods
-.method static constructor <clinit>()V
-    .locals 10
-
-    .line 38
-    new-instance v0, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda64;
-
-    invoke-direct {v0}, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda64;-><init>()V
-
-    new-instance v1, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda112;
-
-    invoke-direct {v1}, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda112;-><init>()V
-
-    .line 39
-    invoke-static {v0, v1}, Lcom/google/android/material/color/utilities/DynamicColor;->fromPalette(Ljava/util/function/Function;Ljava/util/function/Function;)Lcom/google/android/material/color/utilities/DynamicColor;
-
-    move-result-object v0
-
-    sput-object v0, Lcom/google/android/material/color/utilities/MaterialDynamicColors;->background:Lcom/google/android/material/color/utilities/DynamicColor;
-
-    .line 41
-    new-instance v0, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda124;
-
-    invoke-direct {v0}, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda124;-><init>()V
-
-    new-instance v1, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda136;
-
-    invoke-direct {v1}, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda136;-><init>()V
-
-    new-instance v2, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda148;
-
-    invoke-direct {v2}, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda148;-><init>()V
-
-    .line 42
-    invoke-static {v0, v1, v2}, Lcom/google/android/material/color/utilities/DynamicColor;->fromPalette(Ljava/util/function/Function;Ljava/util/function/Function;Ljava/util/function/Function;)Lcom/google/android/material/color/utilities/DynamicColor;
-
-    move-result-object v0
-
-    sput-object v0, Lcom/google/android/material/color/utilities/MaterialDynamicColors;->onBackground:Lcom/google/android/material/color/utilities/DynamicColor;
-
-    .line 45
-    new-instance v0, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda8;
-
-    invoke-direct {v0}, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda8;-><init>()V
-
-    new-instance v1, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda20;
-
-    invoke-direct {v1}, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda20;-><init>()V
-
-    .line 46
-    invoke-static {v0, v1}, Lcom/google/android/material/color/utilities/DynamicColor;->fromPalette(Ljava/util/function/Function;Ljava/util/function/Function;)Lcom/google/android/material/color/utilities/DynamicColor;
-
-    move-result-object v0
-
-    sput-object v0, Lcom/google/android/material/color/utilities/MaterialDynamicColors;->surface:Lcom/google/android/material/color/utilities/DynamicColor;
-
-    .line 48
-    new-instance v0, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda32;
-
-    invoke-direct {v0}, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda32;-><init>()V
-
-    new-instance v1, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda45;
-
-    invoke-direct {v1}, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda45;-><init>()V
-
-    .line 49
-    invoke-static {v0, v1}, Lcom/google/android/material/color/utilities/DynamicColor;->fromPalette(Ljava/util/function/Function;Ljava/util/function/Function;)Lcom/google/android/material/color/utilities/DynamicColor;
-
-    move-result-object v0
-
-    sput-object v0, Lcom/google/android/material/color/utilities/MaterialDynamicColors;->surfaceInverse:Lcom/google/android/material/color/utilities/DynamicColor;
-
-    .line 51
-    new-instance v0, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda57;
-
-    invoke-direct {v0}, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda57;-><init>()V
-
-    new-instance v1, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda33;
-
-    invoke-direct {v1}, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda33;-><init>()V
-
-    .line 52
-    invoke-static {v0, v1}, Lcom/google/android/material/color/utilities/DynamicColor;->fromPalette(Ljava/util/function/Function;Ljava/util/function/Function;)Lcom/google/android/material/color/utilities/DynamicColor;
-
-    move-result-object v0
-
-    sput-object v0, Lcom/google/android/material/color/utilities/MaterialDynamicColors;->surfaceBright:Lcom/google/android/material/color/utilities/DynamicColor;
-
-    .line 54
-    new-instance v0, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda68;
-
-    invoke-direct {v0}, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda68;-><init>()V
-
-    new-instance v1, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda80;
-
-    invoke-direct {v1}, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda80;-><init>()V
-
-    .line 55
-    invoke-static {v0, v1}, Lcom/google/android/material/color/utilities/DynamicColor;->fromPalette(Ljava/util/function/Function;Ljava/util/function/Function;)Lcom/google/android/material/color/utilities/DynamicColor;
-
-    move-result-object v0
-
-    sput-object v0, Lcom/google/android/material/color/utilities/MaterialDynamicColors;->surfaceDim:Lcom/google/android/material/color/utilities/DynamicColor;
-
-    .line 57
-    new-instance v0, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda92;
-
-    invoke-direct {v0}, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda92;-><init>()V
-
-    new-instance v1, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda104;
-
-    invoke-direct {v1}, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda104;-><init>()V
-
-    .line 58
-    invoke-static {v0, v1}, Lcom/google/android/material/color/utilities/DynamicColor;->fromPalette(Ljava/util/function/Function;Ljava/util/function/Function;)Lcom/google/android/material/color/utilities/DynamicColor;
-
-    move-result-object v0
-
-    sput-object v0, Lcom/google/android/material/color/utilities/MaterialDynamicColors;->surfaceSub2:Lcom/google/android/material/color/utilities/DynamicColor;
-
-    .line 60
-    new-instance v0, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda106;
-
-    invoke-direct {v0}, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda106;-><init>()V
-
-    new-instance v1, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda107;
-
-    invoke-direct {v1}, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda107;-><init>()V
-
-    .line 61
-    invoke-static {v0, v1}, Lcom/google/android/material/color/utilities/DynamicColor;->fromPalette(Ljava/util/function/Function;Ljava/util/function/Function;)Lcom/google/android/material/color/utilities/DynamicColor;
-
-    move-result-object v0
-
-    sput-object v0, Lcom/google/android/material/color/utilities/MaterialDynamicColors;->surfaceSub1:Lcom/google/android/material/color/utilities/DynamicColor;
-
-    .line 63
-    new-instance v0, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda109;
-
-    invoke-direct {v0}, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda109;-><init>()V
-
-    new-instance v1, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda110;
-
-    invoke-direct {v1}, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda110;-><init>()V
-
-    .line 64
-    invoke-static {v0, v1}, Lcom/google/android/material/color/utilities/DynamicColor;->fromPalette(Ljava/util/function/Function;Ljava/util/function/Function;)Lcom/google/android/material/color/utilities/DynamicColor;
-
-    move-result-object v0
-
-    sput-object v0, Lcom/google/android/material/color/utilities/MaterialDynamicColors;->surfaceContainer:Lcom/google/android/material/color/utilities/DynamicColor;
-
-    .line 66
-    new-instance v0, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda111;
-
-    invoke-direct {v0}, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda111;-><init>()V
-
-    new-instance v1, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda113;
-
-    invoke-direct {v1}, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda113;-><init>()V
-
-    .line 67
-    invoke-static {v0, v1}, Lcom/google/android/material/color/utilities/DynamicColor;->fromPalette(Ljava/util/function/Function;Ljava/util/function/Function;)Lcom/google/android/material/color/utilities/DynamicColor;
-
-    move-result-object v0
-
-    sput-object v0, Lcom/google/android/material/color/utilities/MaterialDynamicColors;->surfaceAdd1:Lcom/google/android/material/color/utilities/DynamicColor;
-
-    .line 69
-    new-instance v0, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda114;
-
-    invoke-direct {v0}, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda114;-><init>()V
-
-    new-instance v1, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda115;
-
-    invoke-direct {v1}, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda115;-><init>()V
-
-    .line 70
-    invoke-static {v0, v1}, Lcom/google/android/material/color/utilities/DynamicColor;->fromPalette(Ljava/util/function/Function;Ljava/util/function/Function;)Lcom/google/android/material/color/utilities/DynamicColor;
-
-    move-result-object v0
-
-    sput-object v0, Lcom/google/android/material/color/utilities/MaterialDynamicColors;->surfaceAdd2:Lcom/google/android/material/color/utilities/DynamicColor;
-
-    .line 72
-    new-instance v0, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda116;
-
-    invoke-direct {v0}, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda116;-><init>()V
-
-    new-instance v1, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda117;
-
-    invoke-direct {v1}, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda117;-><init>()V
-
-    new-instance v2, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda118;
-
-    invoke-direct {v2}, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda118;-><init>()V
-
-    .line 73
-    invoke-static {v0, v1, v2}, Lcom/google/android/material/color/utilities/DynamicColor;->fromPalette(Ljava/util/function/Function;Ljava/util/function/Function;Ljava/util/function/Function;)Lcom/google/android/material/color/utilities/DynamicColor;
-
-    move-result-object v0
-
-    sput-object v0, Lcom/google/android/material/color/utilities/MaterialDynamicColors;->onSurface:Lcom/google/android/material/color/utilities/DynamicColor;
-
-    .line 76
-    new-instance v0, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda120;
-
-    invoke-direct {v0}, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda120;-><init>()V
-
-    new-instance v1, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda121;
-
-    invoke-direct {v1}, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda121;-><init>()V
-
-    new-instance v2, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda122;
-
-    invoke-direct {v2}, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda122;-><init>()V
-
-    .line 77
-    invoke-static {v0, v1, v2}, Lcom/google/android/material/color/utilities/DynamicColor;->fromPalette(Ljava/util/function/Function;Ljava/util/function/Function;Ljava/util/function/Function;)Lcom/google/android/material/color/utilities/DynamicColor;
-
-    move-result-object v0
-
-    sput-object v0, Lcom/google/android/material/color/utilities/MaterialDynamicColors;->onSurfaceInverse:Lcom/google/android/material/color/utilities/DynamicColor;
-
-    .line 80
-    new-instance v0, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda123;
-
-    invoke-direct {v0}, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda123;-><init>()V
-
-    new-instance v1, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda125;
-
-    invoke-direct {v1}, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda125;-><init>()V
-
-    .line 81
-    invoke-static {v0, v1}, Lcom/google/android/material/color/utilities/DynamicColor;->fromPalette(Ljava/util/function/Function;Ljava/util/function/Function;)Lcom/google/android/material/color/utilities/DynamicColor;
-
-    move-result-object v0
-
-    sput-object v0, Lcom/google/android/material/color/utilities/MaterialDynamicColors;->surfaceVariant:Lcom/google/android/material/color/utilities/DynamicColor;
-
-    .line 83
-    new-instance v0, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda126;
-
-    invoke-direct {v0}, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda126;-><init>()V
-
-    new-instance v1, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda127;
-
-    invoke-direct {v1}, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda127;-><init>()V
-
-    new-instance v2, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda128;
-
-    invoke-direct {v2}, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda128;-><init>()V
-
-    .line 84
-    invoke-static {v0, v1, v2}, Lcom/google/android/material/color/utilities/DynamicColor;->fromPalette(Ljava/util/function/Function;Ljava/util/function/Function;Ljava/util/function/Function;)Lcom/google/android/material/color/utilities/DynamicColor;
-
-    move-result-object v0
-
-    sput-object v0, Lcom/google/android/material/color/utilities/MaterialDynamicColors;->onSurfaceVariant:Lcom/google/android/material/color/utilities/DynamicColor;
-
-    .line 87
-    new-instance v0, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda129;
-
-    invoke-direct {v0}, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda129;-><init>()V
-
-    new-instance v1, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda131;
-
-    invoke-direct {v1}, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda131;-><init>()V
-
-    new-instance v2, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda132;
-
-    invoke-direct {v2}, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda132;-><init>()V
-
-    .line 88
-    invoke-static {v0, v1, v2}, Lcom/google/android/material/color/utilities/DynamicColor;->fromPalette(Ljava/util/function/Function;Ljava/util/function/Function;Ljava/util/function/Function;)Lcom/google/android/material/color/utilities/DynamicColor;
-
-    move-result-object v0
-
-    sput-object v0, Lcom/google/android/material/color/utilities/MaterialDynamicColors;->outline:Lcom/google/android/material/color/utilities/DynamicColor;
-
-    .line 91
-    new-instance v0, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda133;
-
-    invoke-direct {v0}, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda133;-><init>()V
-
-    new-instance v1, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda134;
-
-    invoke-direct {v1}, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda134;-><init>()V
-
-    new-instance v2, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda135;
-
-    invoke-direct {v2}, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda135;-><init>()V
-
-    .line 92
-    invoke-static {v0, v1, v2}, Lcom/google/android/material/color/utilities/DynamicColor;->fromPalette(Ljava/util/function/Function;Ljava/util/function/Function;Ljava/util/function/Function;)Lcom/google/android/material/color/utilities/DynamicColor;
-
-    move-result-object v0
-
-    sput-object v0, Lcom/google/android/material/color/utilities/MaterialDynamicColors;->outlineVariant:Lcom/google/android/material/color/utilities/DynamicColor;
-
-    .line 95
-    new-instance v0, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda137;
-
-    invoke-direct {v0}, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda137;-><init>()V
-
-    new-instance v1, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda138;
-
-    invoke-direct {v1}, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda138;-><init>()V
-
-    new-instance v2, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda139;
-
-    invoke-direct {v2}, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda139;-><init>()V
-
-    .line 96
-    invoke-static {v0, v1, v2}, Lcom/google/android/material/color/utilities/DynamicColor;->fromPalette(Ljava/util/function/Function;Ljava/util/function/Function;Ljava/util/function/Function;)Lcom/google/android/material/color/utilities/DynamicColor;
-
-    move-result-object v0
-
-    sput-object v0, Lcom/google/android/material/color/utilities/MaterialDynamicColors;->primaryContainer:Lcom/google/android/material/color/utilities/DynamicColor;
-
-    .line 106
-    new-instance v0, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda140;
-
-    invoke-direct {v0}, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda140;-><init>()V
-
-    new-instance v1, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda142;
-
-    invoke-direct {v1}, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda142;-><init>()V
-
-    new-instance v2, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda143;
-
-    invoke-direct {v2}, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda143;-><init>()V
-
-    const/4 v3, 0x0
-
-    .line 107
-    invoke-static {v0, v1, v2, v3}, Lcom/google/android/material/color/utilities/DynamicColor;->fromPalette(Ljava/util/function/Function;Ljava/util/function/Function;Ljava/util/function/Function;Ljava/util/function/Function;)Lcom/google/android/material/color/utilities/DynamicColor;
-
-    move-result-object v0
-
-    sput-object v0, Lcom/google/android/material/color/utilities/MaterialDynamicColors;->onPrimaryContainer:Lcom/google/android/material/color/utilities/DynamicColor;
-
-    .line 118
-    new-instance v0, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda144;
-
-    invoke-direct {v0}, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda144;-><init>()V
-
-    new-instance v1, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda145;
-
-    invoke-direct {v1}, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda145;-><init>()V
-
-    new-instance v2, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda146;
-
-    invoke-direct {v2}, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda146;-><init>()V
-
-    new-instance v4, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda147;
-
-    invoke-direct {v4}, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda147;-><init>()V
-
-    .line 119
-    invoke-static {v0, v1, v2, v4}, Lcom/google/android/material/color/utilities/DynamicColor;->fromPalette(Ljava/util/function/Function;Ljava/util/function/Function;Ljava/util/function/Function;Ljava/util/function/Function;)Lcom/google/android/material/color/utilities/DynamicColor;
-
-    move-result-object v0
-
-    sput-object v0, Lcom/google/android/material/color/utilities/MaterialDynamicColors;->primary:Lcom/google/android/material/color/utilities/DynamicColor;
-
-    .line 129
-    new-instance v0, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda149;
-
-    invoke-direct {v0}, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda149;-><init>()V
-
-    new-instance v1, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda150;
-
-    invoke-direct {v1}, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda150;-><init>()V
-
-    new-instance v2, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda151;
-
-    invoke-direct {v2}, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda151;-><init>()V
-
-    .line 130
-    invoke-static {v0, v1, v2}, Lcom/google/android/material/color/utilities/DynamicColor;->fromPalette(Ljava/util/function/Function;Ljava/util/function/Function;Ljava/util/function/Function;)Lcom/google/android/material/color/utilities/DynamicColor;
-
-    move-result-object v0
-
-    sput-object v0, Lcom/google/android/material/color/utilities/MaterialDynamicColors;->primaryInverse:Lcom/google/android/material/color/utilities/DynamicColor;
-
-    .line 133
-    new-instance v0, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda1;
-
-    invoke-direct {v0}, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda1;-><init>()V
-
-    new-instance v1, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda2;
-
-    invoke-direct {v1}, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda2;-><init>()V
-
-    new-instance v2, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda3;
-
-    invoke-direct {v2}, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda3;-><init>()V
-
-    .line 134
-    invoke-static {v0, v1, v2}, Lcom/google/android/material/color/utilities/DynamicColor;->fromPalette(Ljava/util/function/Function;Ljava/util/function/Function;Ljava/util/function/Function;)Lcom/google/android/material/color/utilities/DynamicColor;
-
-    move-result-object v0
-
-    sput-object v0, Lcom/google/android/material/color/utilities/MaterialDynamicColors;->onPrimary:Lcom/google/android/material/color/utilities/DynamicColor;
-
-    .line 137
-    new-instance v0, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda4;
-
-    invoke-direct {v0}, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda4;-><init>()V
-
-    new-instance v1, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda5;
-
-    invoke-direct {v1}, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda5;-><init>()V
-
-    new-instance v2, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda6;
-
-    invoke-direct {v2}, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda6;-><init>()V
-
-    .line 138
-    invoke-static {v0, v1, v2}, Lcom/google/android/material/color/utilities/DynamicColor;->fromPalette(Ljava/util/function/Function;Ljava/util/function/Function;Ljava/util/function/Function;)Lcom/google/android/material/color/utilities/DynamicColor;
-
-    move-result-object v0
-
-    sput-object v0, Lcom/google/android/material/color/utilities/MaterialDynamicColors;->secondaryContainer:Lcom/google/android/material/color/utilities/DynamicColor;
-
-    .line 156
-    new-instance v0, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda7;
-
-    invoke-direct {v0}, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda7;-><init>()V
-
-    new-instance v1, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda9;
-
-    invoke-direct {v1}, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda9;-><init>()V
-
-    new-instance v2, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda10;
-
-    invoke-direct {v2}, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda10;-><init>()V
-
-    .line 157
-    invoke-static {v0, v1, v2}, Lcom/google/android/material/color/utilities/DynamicColor;->fromPalette(Ljava/util/function/Function;Ljava/util/function/Function;Ljava/util/function/Function;)Lcom/google/android/material/color/utilities/DynamicColor;
-
-    move-result-object v0
-
-    sput-object v0, Lcom/google/android/material/color/utilities/MaterialDynamicColors;->onSecondaryContainer:Lcom/google/android/material/color/utilities/DynamicColor;
-
-    .line 167
-    new-instance v0, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda12;
-
-    invoke-direct {v0}, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda12;-><init>()V
-
-    new-instance v1, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda13;
-
-    invoke-direct {v1}, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda13;-><init>()V
-
-    new-instance v2, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda14;
-
-    invoke-direct {v2}, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda14;-><init>()V
-
-    new-instance v4, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda15;
-
-    invoke-direct {v4}, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda15;-><init>()V
-
-    .line 168
-    invoke-static {v0, v1, v2, v4}, Lcom/google/android/material/color/utilities/DynamicColor;->fromPalette(Ljava/util/function/Function;Ljava/util/function/Function;Ljava/util/function/Function;Ljava/util/function/Function;)Lcom/google/android/material/color/utilities/DynamicColor;
-
-    move-result-object v0
-
-    sput-object v0, Lcom/google/android/material/color/utilities/MaterialDynamicColors;->secondary:Lcom/google/android/material/color/utilities/DynamicColor;
-
-    .line 178
-    new-instance v0, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda16;
-
-    invoke-direct {v0}, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda16;-><init>()V
-
-    new-instance v1, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda17;
-
-    invoke-direct {v1}, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda17;-><init>()V
-
-    new-instance v2, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda18;
-
-    invoke-direct {v2}, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda18;-><init>()V
-
-    .line 179
-    invoke-static {v0, v1, v2}, Lcom/google/android/material/color/utilities/DynamicColor;->fromPalette(Ljava/util/function/Function;Ljava/util/function/Function;Ljava/util/function/Function;)Lcom/google/android/material/color/utilities/DynamicColor;
-
-    move-result-object v0
-
-    sput-object v0, Lcom/google/android/material/color/utilities/MaterialDynamicColors;->onSecondary:Lcom/google/android/material/color/utilities/DynamicColor;
-
-    .line 182
-    new-instance v0, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda19;
-
-    invoke-direct {v0}, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda19;-><init>()V
-
-    new-instance v1, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda21;
-
-    invoke-direct {v1}, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda21;-><init>()V
-
-    new-instance v2, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda23;
-
-    invoke-direct {v2}, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda23;-><init>()V
-
-    .line 183
-    invoke-static {v0, v1, v2}, Lcom/google/android/material/color/utilities/DynamicColor;->fromPalette(Ljava/util/function/Function;Ljava/util/function/Function;Ljava/util/function/Function;)Lcom/google/android/material/color/utilities/DynamicColor;
-
-    move-result-object v0
-
-    sput-object v0, Lcom/google/android/material/color/utilities/MaterialDynamicColors;->tertiaryContainer:Lcom/google/android/material/color/utilities/DynamicColor;
-
-    .line 196
-    new-instance v0, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda24;
-
-    invoke-direct {v0}, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda24;-><init>()V
-
-    new-instance v1, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda25;
-
-    invoke-direct {v1}, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda25;-><init>()V
-
-    new-instance v2, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda26;
-
-    invoke-direct {v2}, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda26;-><init>()V
-
-    .line 197
-    invoke-static {v0, v1, v2}, Lcom/google/android/material/color/utilities/DynamicColor;->fromPalette(Ljava/util/function/Function;Ljava/util/function/Function;Ljava/util/function/Function;)Lcom/google/android/material/color/utilities/DynamicColor;
-
-    move-result-object v0
-
-    sput-object v0, Lcom/google/android/material/color/utilities/MaterialDynamicColors;->onTertiaryContainer:Lcom/google/android/material/color/utilities/DynamicColor;
-
-    .line 207
-    new-instance v0, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda27;
-
-    invoke-direct {v0}, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda27;-><init>()V
-
-    new-instance v1, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda28;
-
-    invoke-direct {v1}, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda28;-><init>()V
-
-    new-instance v2, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda29;
-
-    invoke-direct {v2}, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda29;-><init>()V
-
-    new-instance v4, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda30;
-
-    invoke-direct {v4}, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda30;-><init>()V
-
-    .line 208
-    invoke-static {v0, v1, v2, v4}, Lcom/google/android/material/color/utilities/DynamicColor;->fromPalette(Ljava/util/function/Function;Ljava/util/function/Function;Ljava/util/function/Function;Ljava/util/function/Function;)Lcom/google/android/material/color/utilities/DynamicColor;
-
-    move-result-object v0
-
-    sput-object v0, Lcom/google/android/material/color/utilities/MaterialDynamicColors;->tertiary:Lcom/google/android/material/color/utilities/DynamicColor;
-
-    .line 218
-    new-instance v0, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda31;
-
-    invoke-direct {v0}, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda31;-><init>()V
-
-    new-instance v1, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda34;
-
-    invoke-direct {v1}, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda34;-><init>()V
-
-    new-instance v2, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda35;
-
-    invoke-direct {v2}, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda35;-><init>()V
-
-    .line 219
-    invoke-static {v0, v1, v2}, Lcom/google/android/material/color/utilities/DynamicColor;->fromPalette(Ljava/util/function/Function;Ljava/util/function/Function;Ljava/util/function/Function;)Lcom/google/android/material/color/utilities/DynamicColor;
-
-    move-result-object v0
-
-    sput-object v0, Lcom/google/android/material/color/utilities/MaterialDynamicColors;->onTertiary:Lcom/google/android/material/color/utilities/DynamicColor;
-
-    .line 222
-    new-instance v0, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda36;
-
-    invoke-direct {v0}, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda36;-><init>()V
-
-    new-instance v1, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda37;
-
-    invoke-direct {v1}, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda37;-><init>()V
-
-    new-instance v2, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda38;
-
-    invoke-direct {v2}, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda38;-><init>()V
-
-    .line 223
-    invoke-static {v0, v1, v2}, Lcom/google/android/material/color/utilities/DynamicColor;->fromPalette(Ljava/util/function/Function;Ljava/util/function/Function;Ljava/util/function/Function;)Lcom/google/android/material/color/utilities/DynamicColor;
-
-    move-result-object v0
-
-    sput-object v0, Lcom/google/android/material/color/utilities/MaterialDynamicColors;->errorContainer:Lcom/google/android/material/color/utilities/DynamicColor;
-
-    .line 226
-    new-instance v0, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda39;
-
-    invoke-direct {v0}, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda39;-><init>()V
-
-    new-instance v1, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda40;
-
-    invoke-direct {v1}, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda40;-><init>()V
-
-    new-instance v2, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda41;
-
-    invoke-direct {v2}, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda41;-><init>()V
-
-    .line 227
-    invoke-static {v0, v1, v2}, Lcom/google/android/material/color/utilities/DynamicColor;->fromPalette(Ljava/util/function/Function;Ljava/util/function/Function;Ljava/util/function/Function;)Lcom/google/android/material/color/utilities/DynamicColor;
-
-    move-result-object v0
-
-    sput-object v0, Lcom/google/android/material/color/utilities/MaterialDynamicColors;->onErrorContainer:Lcom/google/android/material/color/utilities/DynamicColor;
-
-    .line 230
-    new-instance v0, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda42;
-
-    invoke-direct {v0}, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda42;-><init>()V
-
-    new-instance v1, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda43;
-
-    invoke-direct {v1}, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda43;-><init>()V
-
-    new-instance v2, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda46;
-
-    invoke-direct {v2}, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda46;-><init>()V
-
-    new-instance v4, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda47;
-
-    invoke-direct {v4}, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda47;-><init>()V
-
-    .line 231
-    invoke-static {v0, v1, v2, v4}, Lcom/google/android/material/color/utilities/DynamicColor;->fromPalette(Ljava/util/function/Function;Ljava/util/function/Function;Ljava/util/function/Function;Ljava/util/function/Function;)Lcom/google/android/material/color/utilities/DynamicColor;
-
-    move-result-object v0
-
-    sput-object v0, Lcom/google/android/material/color/utilities/MaterialDynamicColors;->error:Lcom/google/android/material/color/utilities/DynamicColor;
-
-    .line 241
-    new-instance v0, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda48;
-
-    invoke-direct {v0}, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda48;-><init>()V
-
-    new-instance v1, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda49;
-
-    invoke-direct {v1}, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda49;-><init>()V
-
-    new-instance v2, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda50;
-
-    invoke-direct {v2}, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda50;-><init>()V
-
-    .line 242
-    invoke-static {v0, v1, v2}, Lcom/google/android/material/color/utilities/DynamicColor;->fromPalette(Ljava/util/function/Function;Ljava/util/function/Function;Ljava/util/function/Function;)Lcom/google/android/material/color/utilities/DynamicColor;
-
-    move-result-object v0
-
-    sput-object v0, Lcom/google/android/material/color/utilities/MaterialDynamicColors;->onError:Lcom/google/android/material/color/utilities/DynamicColor;
-
-    .line 244
-    new-instance v0, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda51;
-
-    invoke-direct {v0}, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda51;-><init>()V
-
-    new-instance v1, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda52;
-
-    invoke-direct {v1}, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda52;-><init>()V
-
-    new-instance v2, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda53;
-
-    invoke-direct {v2}, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda53;-><init>()V
-
-    .line 245
-    invoke-static {v0, v1, v2}, Lcom/google/android/material/color/utilities/DynamicColor;->fromPalette(Ljava/util/function/Function;Ljava/util/function/Function;Ljava/util/function/Function;)Lcom/google/android/material/color/utilities/DynamicColor;
-
-    move-result-object v0
-
-    sput-object v0, Lcom/google/android/material/color/utilities/MaterialDynamicColors;->primaryFixed:Lcom/google/android/material/color/utilities/DynamicColor;
-
-    .line 247
-    new-instance v0, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda54;
-
-    invoke-direct {v0}, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda54;-><init>()V
-
-    new-instance v1, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda56;
-
-    invoke-direct {v1}, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda56;-><init>()V
-
-    new-instance v2, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda75;
-
-    invoke-direct {v2}, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda75;-><init>()V
-
-    .line 248
-    invoke-static {v0, v1, v2}, Lcom/google/android/material/color/utilities/DynamicColor;->fromPalette(Ljava/util/function/Function;Ljava/util/function/Function;Ljava/util/function/Function;)Lcom/google/android/material/color/utilities/DynamicColor;
-
-    move-result-object v0
-
-    sput-object v0, Lcom/google/android/material/color/utilities/MaterialDynamicColors;->primaryFixedDarker:Lcom/google/android/material/color/utilities/DynamicColor;
-
-    .line 250
-    new-instance v0, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda86;
-
-    invoke-direct {v0}, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda86;-><init>()V
-
-    new-instance v1, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda97;
-
-    invoke-direct {v1}, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda97;-><init>()V
-
-    new-instance v2, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda108;
-
-    invoke-direct {v2}, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda108;-><init>()V
-
-    .line 251
-    invoke-static {v0, v1, v2}, Lcom/google/android/material/color/utilities/DynamicColor;->fromPalette(Ljava/util/function/Function;Ljava/util/function/Function;Ljava/util/function/Function;)Lcom/google/android/material/color/utilities/DynamicColor;
-
-    move-result-object v0
-
-    sput-object v0, Lcom/google/android/material/color/utilities/MaterialDynamicColors;->onPrimaryFixed:Lcom/google/android/material/color/utilities/DynamicColor;
-
-    .line 253
-    new-instance v0, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda119;
-
-    invoke-direct {v0}, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda119;-><init>()V
-
-    new-instance v1, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda130;
-
-    invoke-direct {v1}, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda130;-><init>()V
-
-    new-instance v2, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda141;
-
-    invoke-direct {v2}, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda141;-><init>()V
-
-    .line 254
-    invoke-static {v0, v1, v2}, Lcom/google/android/material/color/utilities/DynamicColor;->fromPalette(Ljava/util/function/Function;Ljava/util/function/Function;Ljava/util/function/Function;)Lcom/google/android/material/color/utilities/DynamicColor;
-
-    move-result-object v0
-
-    sput-object v0, Lcom/google/android/material/color/utilities/MaterialDynamicColors;->onPrimaryFixedVariant:Lcom/google/android/material/color/utilities/DynamicColor;
-
-    .line 256
-    new-instance v0, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda152;
-
-    invoke-direct {v0}, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda152;-><init>()V
-
-    new-instance v1, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda11;
-
-    invoke-direct {v1}, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda11;-><init>()V
-
-    new-instance v2, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda22;
-
-    invoke-direct {v2}, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda22;-><init>()V
-
-    .line 257
-    invoke-static {v0, v1, v2}, Lcom/google/android/material/color/utilities/DynamicColor;->fromPalette(Ljava/util/function/Function;Ljava/util/function/Function;Ljava/util/function/Function;)Lcom/google/android/material/color/utilities/DynamicColor;
-
-    move-result-object v0
-
-    sput-object v0, Lcom/google/android/material/color/utilities/MaterialDynamicColors;->secondaryFixed:Lcom/google/android/material/color/utilities/DynamicColor;
-
-    .line 259
-    new-instance v0, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda44;
-
-    invoke-direct {v0}, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda44;-><init>()V
-
-    new-instance v1, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda55;
-
-    invoke-direct {v1}, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda55;-><init>()V
-
-    new-instance v2, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda59;
-
-    invoke-direct {v2}, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda59;-><init>()V
-
-    .line 260
-    invoke-static {v0, v1, v2}, Lcom/google/android/material/color/utilities/DynamicColor;->fromPalette(Ljava/util/function/Function;Ljava/util/function/Function;Ljava/util/function/Function;)Lcom/google/android/material/color/utilities/DynamicColor;
-
-    move-result-object v0
-
-    sput-object v0, Lcom/google/android/material/color/utilities/MaterialDynamicColors;->secondaryFixedDarker:Lcom/google/android/material/color/utilities/DynamicColor;
-
-    .line 262
-    new-instance v0, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda60;
-
-    invoke-direct {v0}, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda60;-><init>()V
-
-    new-instance v1, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda61;
-
-    invoke-direct {v1}, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda61;-><init>()V
-
-    new-instance v2, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda62;
-
-    invoke-direct {v2}, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda62;-><init>()V
-
-    .line 263
-    invoke-static {v0, v1, v2}, Lcom/google/android/material/color/utilities/DynamicColor;->fromPalette(Ljava/util/function/Function;Ljava/util/function/Function;Ljava/util/function/Function;)Lcom/google/android/material/color/utilities/DynamicColor;
-
-    move-result-object v0
-
-    sput-object v0, Lcom/google/android/material/color/utilities/MaterialDynamicColors;->onSecondaryFixed:Lcom/google/android/material/color/utilities/DynamicColor;
-
-    .line 265
-    new-instance v0, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda63;
-
-    invoke-direct {v0}, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda63;-><init>()V
-
-    new-instance v1, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda65;
-
-    invoke-direct {v1}, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda65;-><init>()V
-
-    new-instance v2, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda66;
-
-    invoke-direct {v2}, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda66;-><init>()V
-
-    .line 266
-    invoke-static {v0, v1, v2}, Lcom/google/android/material/color/utilities/DynamicColor;->fromPalette(Ljava/util/function/Function;Ljava/util/function/Function;Ljava/util/function/Function;)Lcom/google/android/material/color/utilities/DynamicColor;
-
-    move-result-object v0
-
-    sput-object v0, Lcom/google/android/material/color/utilities/MaterialDynamicColors;->onSecondaryFixedVariant:Lcom/google/android/material/color/utilities/DynamicColor;
-
-    .line 268
-    new-instance v0, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda67;
-
-    invoke-direct {v0}, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda67;-><init>()V
-
-    new-instance v1, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda69;
-
-    invoke-direct {v1}, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda69;-><init>()V
-
-    new-instance v2, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda70;
-
-    invoke-direct {v2}, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda70;-><init>()V
-
-    .line 269
-    invoke-static {v0, v1, v2}, Lcom/google/android/material/color/utilities/DynamicColor;->fromPalette(Ljava/util/function/Function;Ljava/util/function/Function;Ljava/util/function/Function;)Lcom/google/android/material/color/utilities/DynamicColor;
-
-    move-result-object v0
-
-    sput-object v0, Lcom/google/android/material/color/utilities/MaterialDynamicColors;->tertiaryFixed:Lcom/google/android/material/color/utilities/DynamicColor;
-
-    .line 271
-    new-instance v0, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda71;
-
-    invoke-direct {v0}, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda71;-><init>()V
-
-    new-instance v1, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda72;
-
-    invoke-direct {v1}, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda72;-><init>()V
-
-    new-instance v2, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda73;
-
-    invoke-direct {v2}, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda73;-><init>()V
-
-    .line 272
-    invoke-static {v0, v1, v2}, Lcom/google/android/material/color/utilities/DynamicColor;->fromPalette(Ljava/util/function/Function;Ljava/util/function/Function;Ljava/util/function/Function;)Lcom/google/android/material/color/utilities/DynamicColor;
-
-    move-result-object v0
-
-    sput-object v0, Lcom/google/android/material/color/utilities/MaterialDynamicColors;->tertiaryFixedDarker:Lcom/google/android/material/color/utilities/DynamicColor;
-
-    .line 274
-    new-instance v0, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda74;
-
-    invoke-direct {v0}, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda74;-><init>()V
-
-    new-instance v1, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda76;
-
-    invoke-direct {v1}, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda76;-><init>()V
-
-    new-instance v2, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda77;
-
-    invoke-direct {v2}, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda77;-><init>()V
-
-    .line 275
-    invoke-static {v0, v1, v2}, Lcom/google/android/material/color/utilities/DynamicColor;->fromPalette(Ljava/util/function/Function;Ljava/util/function/Function;Ljava/util/function/Function;)Lcom/google/android/material/color/utilities/DynamicColor;
-
-    move-result-object v0
-
-    sput-object v0, Lcom/google/android/material/color/utilities/MaterialDynamicColors;->onTertiaryFixed:Lcom/google/android/material/color/utilities/DynamicColor;
-
-    .line 277
-    new-instance v0, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda78;
-
-    invoke-direct {v0}, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda78;-><init>()V
-
-    new-instance v1, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda79;
-
-    invoke-direct {v1}, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda79;-><init>()V
-
-    new-instance v2, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda81;
-
-    invoke-direct {v2}, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda81;-><init>()V
-
-    .line 278
-    invoke-static {v0, v1, v2}, Lcom/google/android/material/color/utilities/DynamicColor;->fromPalette(Ljava/util/function/Function;Ljava/util/function/Function;Ljava/util/function/Function;)Lcom/google/android/material/color/utilities/DynamicColor;
-
-    move-result-object v0
-
-    sput-object v0, Lcom/google/android/material/color/utilities/MaterialDynamicColors;->onTertiaryFixedVariant:Lcom/google/android/material/color/utilities/DynamicColor;
-
-    .line 293
-    new-instance v0, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda82;
-
-    invoke-direct {v0}, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda82;-><init>()V
-
-    new-instance v1, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda83;
-
-    invoke-direct {v1}, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda83;-><init>()V
-
-    .line 294
-    invoke-static {v0, v1, v3}, Lcom/google/android/material/color/utilities/DynamicColor;->fromPalette(Ljava/util/function/Function;Ljava/util/function/Function;Ljava/util/function/Function;)Lcom/google/android/material/color/utilities/DynamicColor;
-
-    move-result-object v0
-
-    sput-object v0, Lcom/google/android/material/color/utilities/MaterialDynamicColors;->controlActivated:Lcom/google/android/material/color/utilities/DynamicColor;
-
-    .line 299
-    new-instance v0, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda84;
-
-    invoke-direct {v0}, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda84;-><init>()V
-
-    new-instance v1, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda85;
-
-    invoke-direct {v1}, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda85;-><init>()V
-
-    .line 300
-    invoke-static {v0, v1}, Lcom/google/android/material/color/utilities/DynamicColor;->fromPalette(Ljava/util/function/Function;Ljava/util/function/Function;)Lcom/google/android/material/color/utilities/DynamicColor;
-
-    move-result-object v0
-
-    sput-object v0, Lcom/google/android/material/color/utilities/MaterialDynamicColors;->controlNormal:Lcom/google/android/material/color/utilities/DynamicColor;
-
-    .line 310
-    new-instance v0, Lcom/google/android/material/color/utilities/DynamicColor;
-
-    new-instance v2, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda87;
-
-    invoke-direct {v2}, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda87;-><init>()V
-
-    new-instance v3, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda88;
-
-    invoke-direct {v3}, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda88;-><init>()V
-
-    new-instance v4, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda89;
-
-    invoke-direct {v4}, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda89;-><init>()V
-
-    new-instance v5, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda90;
-
-    invoke-direct {v5}, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda90;-><init>()V
-
-    new-instance v7, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda91;
-
-    invoke-direct {v7}, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda91;-><init>()V
-
-    new-instance v8, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda93;
-
-    invoke-direct {v8}, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda93;-><init>()V
-
-    const/4 v9, 0x0
-
-    const/4 v6, 0x0
-
-    move-object v1, v0
-
-    invoke-direct/range {v1 .. v9}, Lcom/google/android/material/color/utilities/DynamicColor;-><init>(Ljava/util/function/Function;Ljava/util/function/Function;Ljava/util/function/Function;Ljava/util/function/Function;Ljava/util/function/Function;Ljava/util/function/Function;Ljava/util/function/Function;Ljava/util/function/Function;)V
-
-    sput-object v0, Lcom/google/android/material/color/utilities/MaterialDynamicColors;->controlHighlight:Lcom/google/android/material/color/utilities/DynamicColor;
-
-    .line 326
-    new-instance v0, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda94;
-
-    invoke-direct {v0}, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda94;-><init>()V
-
-    new-instance v1, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda95;
-
-    invoke-direct {v1}, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda95;-><init>()V
-
-    .line 327
-    invoke-static {v0, v1}, Lcom/google/android/material/color/utilities/DynamicColor;->fromPalette(Ljava/util/function/Function;Ljava/util/function/Function;)Lcom/google/android/material/color/utilities/DynamicColor;
-
-    move-result-object v0
-
-    sput-object v0, Lcom/google/android/material/color/utilities/MaterialDynamicColors;->textPrimaryInverse:Lcom/google/android/material/color/utilities/DynamicColor;
-
-    .line 330
-    new-instance v0, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda96;
-
-    invoke-direct {v0}, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda96;-><init>()V
-
-    new-instance v1, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda98;
-
-    invoke-direct {v1}, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda98;-><init>()V
-
-    .line 331
-    invoke-static {v0, v1}, Lcom/google/android/material/color/utilities/DynamicColor;->fromPalette(Ljava/util/function/Function;Ljava/util/function/Function;)Lcom/google/android/material/color/utilities/DynamicColor;
-
-    move-result-object v0
-
-    sput-object v0, Lcom/google/android/material/color/utilities/MaterialDynamicColors;->textSecondaryAndTertiaryInverse:Lcom/google/android/material/color/utilities/DynamicColor;
-
-    .line 334
-    new-instance v0, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda99;
-
-    invoke-direct {v0}, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda99;-><init>()V
-
-    new-instance v1, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda100;
-
-    invoke-direct {v1}, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda100;-><init>()V
-
-    .line 335
-    invoke-static {v0, v1}, Lcom/google/android/material/color/utilities/DynamicColor;->fromPalette(Ljava/util/function/Function;Ljava/util/function/Function;)Lcom/google/android/material/color/utilities/DynamicColor;
-
-    move-result-object v0
-
-    sput-object v0, Lcom/google/android/material/color/utilities/MaterialDynamicColors;->textPrimaryInverseDisableOnly:Lcom/google/android/material/color/utilities/DynamicColor;
-
-    .line 339
-    new-instance v0, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda101;
-
-    invoke-direct {v0}, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda101;-><init>()V
-
-    new-instance v1, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda102;
-
-    invoke-direct {v1}, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda102;-><init>()V
-
-    .line 340
-    invoke-static {v0, v1}, Lcom/google/android/material/color/utilities/DynamicColor;->fromPalette(Ljava/util/function/Function;Ljava/util/function/Function;)Lcom/google/android/material/color/utilities/DynamicColor;
-
-    move-result-object v0
-
-    sput-object v0, Lcom/google/android/material/color/utilities/MaterialDynamicColors;->textSecondaryAndTertiaryInverseDisabled:Lcom/google/android/material/color/utilities/DynamicColor;
-
-    .line 343
-    new-instance v0, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda103;
-
-    invoke-direct {v0}, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda103;-><init>()V
-
-    new-instance v1, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda105;
-
-    invoke-direct {v1}, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda105;-><init>()V
-
-    .line 344
-    invoke-static {v0, v1}, Lcom/google/android/material/color/utilities/DynamicColor;->fromPalette(Ljava/util/function/Function;Ljava/util/function/Function;)Lcom/google/android/material/color/utilities/DynamicColor;
-
-    move-result-object v0
-
-    sput-object v0, Lcom/google/android/material/color/utilities/MaterialDynamicColors;->textHintInverse:Lcom/google/android/material/color/utilities/DynamicColor;
-
-    return-void
-.end method
-
-.method private constructor <init>()V
+.method public constructor <init>()V
     .locals 0
 
-    .line 32
+    .line 38
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -1177,12 +16,12 @@
 .method static findDesiredChromaByTone(DDDZ)D
     .locals 11
 
-    .line 358
+    .line 932
     invoke-static/range {p0 .. p5}, Lcom/google/android/material/color/utilities/Hct;->from(DDD)Lcom/google/android/material/color/utilities/Hct;
 
     move-result-object v0
 
-    .line 359
+    .line 933
     invoke-virtual {v0}, Lcom/google/android/material/color/utilities/Hct;->getChroma()D
 
     move-result-wide v1
@@ -1191,7 +30,7 @@
 
     if-gez v1, :cond_5
 
-    .line 360
+    .line 934
     invoke-virtual {v0}, Lcom/google/android/material/color/utilities/Hct;->getChroma()D
 
     move-result-wide v1
@@ -1202,7 +41,7 @@
 
     move-wide v0, p4
 
-    .line 361
+    .line 935
     :goto_0
     invoke-virtual {v6}, Lcom/google/android/material/color/utilities/Hct;->getChroma()D
 
@@ -1230,12 +69,12 @@
 
     move-wide v4, v9
 
-    .line 363
+    .line 937
     invoke-static/range {v0 .. v5}, Lcom/google/android/material/color/utilities/Hct;->from(DDD)Lcom/google/android/material/color/utilities/Hct;
 
     move-result-object v0
 
-    .line 364
+    .line 938
     invoke-virtual {v0}, Lcom/google/android/material/color/utilities/Hct;->getChroma()D
 
     move-result-wide v1
@@ -1246,7 +85,7 @@
 
     goto :goto_2
 
-    .line 367
+    .line 941
     :cond_1
     invoke-virtual {v0}, Lcom/google/android/material/color/utilities/Hct;->getChroma()D
 
@@ -1266,7 +105,7 @@
 
     goto :goto_2
 
-    .line 371
+    .line 945
     :cond_2
     invoke-virtual {v0}, Lcom/google/android/material/color/utilities/Hct;->getChroma()D
 
@@ -1278,7 +117,7 @@
 
     move-result-wide v1
 
-    .line 372
+    .line 946
     invoke-virtual {v6}, Lcom/google/android/material/color/utilities/Hct;->getChroma()D
 
     move-result-wide v3
@@ -1295,7 +134,7 @@
 
     move-object v6, v0
 
-    .line 376
+    .line 950
     :cond_3
     invoke-virtual {v0}, Lcom/google/android/material/color/utilities/Hct;->getChroma()D
 
@@ -1321,29 +160,10 @@
     return-wide v9
 .end method
 
-.method public static highestSurface(Lcom/google/android/material/color/utilities/DynamicScheme;)Lcom/google/android/material/color/utilities/DynamicColor;
-    .locals 0
-
-    .line 35
-    iget-boolean p0, p0, Lcom/google/android/material/color/utilities/DynamicScheme;->isDark:Z
-
-    if-eqz p0, :cond_0
-
-    sget-object p0, Lcom/google/android/material/color/utilities/MaterialDynamicColors;->surfaceBright:Lcom/google/android/material/color/utilities/DynamicColor;
-
-    goto :goto_0
-
-    :cond_0
-    sget-object p0, Lcom/google/android/material/color/utilities/MaterialDynamicColors;->surfaceDim:Lcom/google/android/material/color/utilities/DynamicColor;
-
-    :goto_0
-    return-object p0
-.end method
-
 .method private static isFidelity(Lcom/google/android/material/color/utilities/DynamicScheme;)Z
     .locals 2
 
-    .line 351
+    .line 921
     iget-object v0, p0, Lcom/google/android/material/color/utilities/DynamicScheme;->variant:Lcom/google/android/material/color/utilities/Variant;
 
     sget-object v1, Lcom/google/android/material/color/utilities/Variant;->FIDELITY:Lcom/google/android/material/color/utilities/Variant;
@@ -1371,19 +191,40 @@
     return p0
 .end method
 
-.method static synthetic lambda$static$0(Lcom/google/android/material/color/utilities/DynamicScheme;)Lcom/google/android/material/color/utilities/TonalPalette;
+.method private static isMonochrome(Lcom/google/android/material/color/utilities/DynamicScheme;)Z
+    .locals 1
+
+    .line 925
+    iget-object p0, p0, Lcom/google/android/material/color/utilities/DynamicScheme;->variant:Lcom/google/android/material/color/utilities/Variant;
+
+    sget-object v0, Lcom/google/android/material/color/utilities/Variant;->MONOCHROME:Lcom/google/android/material/color/utilities/Variant;
+
+    if-ne p0, v0, :cond_0
+
+    const/4 p0, 0x1
+
+    goto :goto_0
+
+    :cond_0
+    const/4 p0, 0x0
+
+    :goto_0
+    return p0
+.end method
+
+.method static synthetic lambda$background$10(Lcom/google/android/material/color/utilities/DynamicScheme;)Lcom/google/android/material/color/utilities/TonalPalette;
     .locals 0
 
-    .line 39
+    .line 90
     iget-object p0, p0, Lcom/google/android/material/color/utilities/DynamicScheme;->neutralPalette:Lcom/google/android/material/color/utilities/TonalPalette;
 
     return-object p0
 .end method
 
-.method static synthetic lambda$static$1(Lcom/google/android/material/color/utilities/DynamicScheme;)Ljava/lang/Double;
+.method static synthetic lambda$background$11(Lcom/google/android/material/color/utilities/DynamicScheme;)Ljava/lang/Double;
     .locals 2
 
-    .line 39
+    .line 91
     iget-boolean p0, p0, Lcom/google/android/material/color/utilities/DynamicScheme;->isDark:Z
 
     if-eqz p0, :cond_0
@@ -1403,20 +244,29 @@
     return-object p0
 .end method
 
-.method static synthetic lambda$static$10(Lcom/google/android/material/color/utilities/DynamicScheme;)Ljava/lang/Double;
+.method static synthetic lambda$controlActivated$145(Lcom/google/android/material/color/utilities/DynamicScheme;)Lcom/google/android/material/color/utilities/TonalPalette;
+    .locals 0
+
+    .line 839
+    iget-object p0, p0, Lcom/google/android/material/color/utilities/DynamicScheme;->primaryPalette:Lcom/google/android/material/color/utilities/TonalPalette;
+
+    return-object p0
+.end method
+
+.method static synthetic lambda$controlActivated$146(Lcom/google/android/material/color/utilities/DynamicScheme;)Ljava/lang/Double;
     .locals 2
 
-    .line 52
+    .line 839
     iget-boolean p0, p0, Lcom/google/android/material/color/utilities/DynamicScheme;->isDark:Z
 
     if-eqz p0, :cond_0
 
-    const-wide/high16 v0, 0x4038000000000000L    # 24.0
+    const-wide/high16 v0, 0x403e000000000000L    # 30.0
 
     goto :goto_0
 
     :cond_0
-    const-wide v0, 0x4058800000000000L    # 98.0
+    const-wide v0, 0x4056800000000000L    # 90.0
 
     :goto_0
     invoke-static {v0, v1}, Ljava/lang/Double;->valueOf(D)Ljava/lang/Double;
@@ -1426,470 +276,19 @@
     return-object p0
 .end method
 
-.method static synthetic lambda$static$100(Lcom/google/android/material/color/utilities/DynamicScheme;)Lcom/google/android/material/color/utilities/DynamicColor;
+.method static synthetic lambda$controlHighlight$149(Lcom/google/android/material/color/utilities/DynamicScheme;)Lcom/google/android/material/color/utilities/TonalPalette;
     .locals 0
 
-    .line 248
-    invoke-static {p0}, Lcom/google/android/material/color/utilities/MaterialDynamicColors;->highestSurface(Lcom/google/android/material/color/utilities/DynamicScheme;)Lcom/google/android/material/color/utilities/DynamicColor;
-
-    move-result-object p0
-
-    return-object p0
-.end method
-
-.method static synthetic lambda$static$101(Lcom/google/android/material/color/utilities/DynamicScheme;)Lcom/google/android/material/color/utilities/TonalPalette;
-    .locals 0
-
-    .line 251
-    iget-object p0, p0, Lcom/google/android/material/color/utilities/DynamicScheme;->primaryPalette:Lcom/google/android/material/color/utilities/TonalPalette;
-
-    return-object p0
-.end method
-
-.method static synthetic lambda$static$102(Lcom/google/android/material/color/utilities/DynamicScheme;)Ljava/lang/Double;
-    .locals 2
-
-    const-wide/high16 v0, 0x4024000000000000L    # 10.0
-
-    .line 251
-    invoke-static {v0, v1}, Ljava/lang/Double;->valueOf(D)Ljava/lang/Double;
-
-    move-result-object p0
-
-    return-object p0
-.end method
-
-.method static synthetic lambda$static$103(Lcom/google/android/material/color/utilities/DynamicScheme;)Lcom/google/android/material/color/utilities/DynamicColor;
-    .locals 0
-
-    .line 251
-    sget-object p0, Lcom/google/android/material/color/utilities/MaterialDynamicColors;->primaryFixedDarker:Lcom/google/android/material/color/utilities/DynamicColor;
-
-    return-object p0
-.end method
-
-.method static synthetic lambda$static$104(Lcom/google/android/material/color/utilities/DynamicScheme;)Lcom/google/android/material/color/utilities/TonalPalette;
-    .locals 0
-
-    .line 254
-    iget-object p0, p0, Lcom/google/android/material/color/utilities/DynamicScheme;->primaryPalette:Lcom/google/android/material/color/utilities/TonalPalette;
-
-    return-object p0
-.end method
-
-.method static synthetic lambda$static$105(Lcom/google/android/material/color/utilities/DynamicScheme;)Ljava/lang/Double;
-    .locals 2
-
-    const-wide/high16 v0, 0x403e000000000000L    # 30.0
-
-    .line 254
-    invoke-static {v0, v1}, Ljava/lang/Double;->valueOf(D)Ljava/lang/Double;
-
-    move-result-object p0
-
-    return-object p0
-.end method
-
-.method static synthetic lambda$static$106(Lcom/google/android/material/color/utilities/DynamicScheme;)Lcom/google/android/material/color/utilities/DynamicColor;
-    .locals 0
-
-    .line 254
-    sget-object p0, Lcom/google/android/material/color/utilities/MaterialDynamicColors;->primaryFixedDarker:Lcom/google/android/material/color/utilities/DynamicColor;
-
-    return-object p0
-.end method
-
-.method static synthetic lambda$static$107(Lcom/google/android/material/color/utilities/DynamicScheme;)Lcom/google/android/material/color/utilities/TonalPalette;
-    .locals 0
-
-    .line 257
-    iget-object p0, p0, Lcom/google/android/material/color/utilities/DynamicScheme;->secondaryPalette:Lcom/google/android/material/color/utilities/TonalPalette;
-
-    return-object p0
-.end method
-
-.method static synthetic lambda$static$108(Lcom/google/android/material/color/utilities/DynamicScheme;)Ljava/lang/Double;
-    .locals 2
-
-    const-wide v0, 0x4056800000000000L    # 90.0
-
-    .line 257
-    invoke-static {v0, v1}, Ljava/lang/Double;->valueOf(D)Ljava/lang/Double;
-
-    move-result-object p0
-
-    return-object p0
-.end method
-
-.method static synthetic lambda$static$109(Lcom/google/android/material/color/utilities/DynamicScheme;)Lcom/google/android/material/color/utilities/DynamicColor;
-    .locals 0
-
-    .line 257
-    invoke-static {p0}, Lcom/google/android/material/color/utilities/MaterialDynamicColors;->highestSurface(Lcom/google/android/material/color/utilities/DynamicScheme;)Lcom/google/android/material/color/utilities/DynamicColor;
-
-    move-result-object p0
-
-    return-object p0
-.end method
-
-.method static synthetic lambda$static$11(Lcom/google/android/material/color/utilities/DynamicScheme;)Lcom/google/android/material/color/utilities/TonalPalette;
-    .locals 0
-
-    .line 55
+    .line 863
     iget-object p0, p0, Lcom/google/android/material/color/utilities/DynamicScheme;->neutralPalette:Lcom/google/android/material/color/utilities/TonalPalette;
 
     return-object p0
 .end method
 
-.method static synthetic lambda$static$110(Lcom/google/android/material/color/utilities/DynamicScheme;)Lcom/google/android/material/color/utilities/TonalPalette;
-    .locals 0
-
-    .line 260
-    iget-object p0, p0, Lcom/google/android/material/color/utilities/DynamicScheme;->secondaryPalette:Lcom/google/android/material/color/utilities/TonalPalette;
-
-    return-object p0
-.end method
-
-.method static synthetic lambda$static$111(Lcom/google/android/material/color/utilities/DynamicScheme;)Ljava/lang/Double;
+.method static synthetic lambda$controlHighlight$150(Lcom/google/android/material/color/utilities/DynamicScheme;)Ljava/lang/Double;
     .locals 2
 
-    const-wide/high16 v0, 0x4054000000000000L    # 80.0
-
-    .line 260
-    invoke-static {v0, v1}, Ljava/lang/Double;->valueOf(D)Ljava/lang/Double;
-
-    move-result-object p0
-
-    return-object p0
-.end method
-
-.method static synthetic lambda$static$112(Lcom/google/android/material/color/utilities/DynamicScheme;)Lcom/google/android/material/color/utilities/DynamicColor;
-    .locals 0
-
-    .line 260
-    invoke-static {p0}, Lcom/google/android/material/color/utilities/MaterialDynamicColors;->highestSurface(Lcom/google/android/material/color/utilities/DynamicScheme;)Lcom/google/android/material/color/utilities/DynamicColor;
-
-    move-result-object p0
-
-    return-object p0
-.end method
-
-.method static synthetic lambda$static$113(Lcom/google/android/material/color/utilities/DynamicScheme;)Lcom/google/android/material/color/utilities/TonalPalette;
-    .locals 0
-
-    .line 263
-    iget-object p0, p0, Lcom/google/android/material/color/utilities/DynamicScheme;->secondaryPalette:Lcom/google/android/material/color/utilities/TonalPalette;
-
-    return-object p0
-.end method
-
-.method static synthetic lambda$static$114(Lcom/google/android/material/color/utilities/DynamicScheme;)Ljava/lang/Double;
-    .locals 2
-
-    const-wide/high16 v0, 0x4024000000000000L    # 10.0
-
-    .line 263
-    invoke-static {v0, v1}, Ljava/lang/Double;->valueOf(D)Ljava/lang/Double;
-
-    move-result-object p0
-
-    return-object p0
-.end method
-
-.method static synthetic lambda$static$115(Lcom/google/android/material/color/utilities/DynamicScheme;)Lcom/google/android/material/color/utilities/DynamicColor;
-    .locals 0
-
-    .line 263
-    sget-object p0, Lcom/google/android/material/color/utilities/MaterialDynamicColors;->secondaryFixedDarker:Lcom/google/android/material/color/utilities/DynamicColor;
-
-    return-object p0
-.end method
-
-.method static synthetic lambda$static$116(Lcom/google/android/material/color/utilities/DynamicScheme;)Lcom/google/android/material/color/utilities/TonalPalette;
-    .locals 0
-
-    .line 266
-    iget-object p0, p0, Lcom/google/android/material/color/utilities/DynamicScheme;->secondaryPalette:Lcom/google/android/material/color/utilities/TonalPalette;
-
-    return-object p0
-.end method
-
-.method static synthetic lambda$static$117(Lcom/google/android/material/color/utilities/DynamicScheme;)Ljava/lang/Double;
-    .locals 2
-
-    const-wide/high16 v0, 0x403e000000000000L    # 30.0
-
-    .line 266
-    invoke-static {v0, v1}, Ljava/lang/Double;->valueOf(D)Ljava/lang/Double;
-
-    move-result-object p0
-
-    return-object p0
-.end method
-
-.method static synthetic lambda$static$118(Lcom/google/android/material/color/utilities/DynamicScheme;)Lcom/google/android/material/color/utilities/DynamicColor;
-    .locals 0
-
-    .line 266
-    sget-object p0, Lcom/google/android/material/color/utilities/MaterialDynamicColors;->secondaryFixedDarker:Lcom/google/android/material/color/utilities/DynamicColor;
-
-    return-object p0
-.end method
-
-.method static synthetic lambda$static$119(Lcom/google/android/material/color/utilities/DynamicScheme;)Lcom/google/android/material/color/utilities/TonalPalette;
-    .locals 0
-
-    .line 269
-    iget-object p0, p0, Lcom/google/android/material/color/utilities/DynamicScheme;->tertiaryPalette:Lcom/google/android/material/color/utilities/TonalPalette;
-
-    return-object p0
-.end method
-
-.method static synthetic lambda$static$12(Lcom/google/android/material/color/utilities/DynamicScheme;)Ljava/lang/Double;
-    .locals 2
-
-    .line 55
-    iget-boolean p0, p0, Lcom/google/android/material/color/utilities/DynamicScheme;->isDark:Z
-
-    if-eqz p0, :cond_0
-
-    const-wide/high16 v0, 0x4018000000000000L    # 6.0
-
-    goto :goto_0
-
-    :cond_0
-    const-wide v0, 0x4055c00000000000L    # 87.0
-
-    :goto_0
-    invoke-static {v0, v1}, Ljava/lang/Double;->valueOf(D)Ljava/lang/Double;
-
-    move-result-object p0
-
-    return-object p0
-.end method
-
-.method static synthetic lambda$static$120(Lcom/google/android/material/color/utilities/DynamicScheme;)Ljava/lang/Double;
-    .locals 2
-
-    const-wide v0, 0x4056800000000000L    # 90.0
-
-    .line 269
-    invoke-static {v0, v1}, Ljava/lang/Double;->valueOf(D)Ljava/lang/Double;
-
-    move-result-object p0
-
-    return-object p0
-.end method
-
-.method static synthetic lambda$static$121(Lcom/google/android/material/color/utilities/DynamicScheme;)Lcom/google/android/material/color/utilities/DynamicColor;
-    .locals 0
-
-    .line 269
-    invoke-static {p0}, Lcom/google/android/material/color/utilities/MaterialDynamicColors;->highestSurface(Lcom/google/android/material/color/utilities/DynamicScheme;)Lcom/google/android/material/color/utilities/DynamicColor;
-
-    move-result-object p0
-
-    return-object p0
-.end method
-
-.method static synthetic lambda$static$122(Lcom/google/android/material/color/utilities/DynamicScheme;)Lcom/google/android/material/color/utilities/TonalPalette;
-    .locals 0
-
-    .line 272
-    iget-object p0, p0, Lcom/google/android/material/color/utilities/DynamicScheme;->tertiaryPalette:Lcom/google/android/material/color/utilities/TonalPalette;
-
-    return-object p0
-.end method
-
-.method static synthetic lambda$static$123(Lcom/google/android/material/color/utilities/DynamicScheme;)Ljava/lang/Double;
-    .locals 2
-
-    const-wide/high16 v0, 0x4054000000000000L    # 80.0
-
-    .line 272
-    invoke-static {v0, v1}, Ljava/lang/Double;->valueOf(D)Ljava/lang/Double;
-
-    move-result-object p0
-
-    return-object p0
-.end method
-
-.method static synthetic lambda$static$124(Lcom/google/android/material/color/utilities/DynamicScheme;)Lcom/google/android/material/color/utilities/DynamicColor;
-    .locals 0
-
-    .line 272
-    invoke-static {p0}, Lcom/google/android/material/color/utilities/MaterialDynamicColors;->highestSurface(Lcom/google/android/material/color/utilities/DynamicScheme;)Lcom/google/android/material/color/utilities/DynamicColor;
-
-    move-result-object p0
-
-    return-object p0
-.end method
-
-.method static synthetic lambda$static$125(Lcom/google/android/material/color/utilities/DynamicScheme;)Lcom/google/android/material/color/utilities/TonalPalette;
-    .locals 0
-
-    .line 275
-    iget-object p0, p0, Lcom/google/android/material/color/utilities/DynamicScheme;->tertiaryPalette:Lcom/google/android/material/color/utilities/TonalPalette;
-
-    return-object p0
-.end method
-
-.method static synthetic lambda$static$126(Lcom/google/android/material/color/utilities/DynamicScheme;)Ljava/lang/Double;
-    .locals 2
-
-    const-wide/high16 v0, 0x4024000000000000L    # 10.0
-
-    .line 275
-    invoke-static {v0, v1}, Ljava/lang/Double;->valueOf(D)Ljava/lang/Double;
-
-    move-result-object p0
-
-    return-object p0
-.end method
-
-.method static synthetic lambda$static$127(Lcom/google/android/material/color/utilities/DynamicScheme;)Lcom/google/android/material/color/utilities/DynamicColor;
-    .locals 0
-
-    .line 275
-    sget-object p0, Lcom/google/android/material/color/utilities/MaterialDynamicColors;->tertiaryFixedDarker:Lcom/google/android/material/color/utilities/DynamicColor;
-
-    return-object p0
-.end method
-
-.method static synthetic lambda$static$128(Lcom/google/android/material/color/utilities/DynamicScheme;)Lcom/google/android/material/color/utilities/TonalPalette;
-    .locals 0
-
-    .line 278
-    iget-object p0, p0, Lcom/google/android/material/color/utilities/DynamicScheme;->tertiaryPalette:Lcom/google/android/material/color/utilities/TonalPalette;
-
-    return-object p0
-.end method
-
-.method static synthetic lambda$static$129(Lcom/google/android/material/color/utilities/DynamicScheme;)Ljava/lang/Double;
-    .locals 2
-
-    const-wide/high16 v0, 0x403e000000000000L    # 30.0
-
-    .line 278
-    invoke-static {v0, v1}, Ljava/lang/Double;->valueOf(D)Ljava/lang/Double;
-
-    move-result-object p0
-
-    return-object p0
-.end method
-
-.method static synthetic lambda$static$13(Lcom/google/android/material/color/utilities/DynamicScheme;)Lcom/google/android/material/color/utilities/TonalPalette;
-    .locals 0
-
-    .line 58
-    iget-object p0, p0, Lcom/google/android/material/color/utilities/DynamicScheme;->neutralPalette:Lcom/google/android/material/color/utilities/TonalPalette;
-
-    return-object p0
-.end method
-
-.method static synthetic lambda$static$130(Lcom/google/android/material/color/utilities/DynamicScheme;)Lcom/google/android/material/color/utilities/DynamicColor;
-    .locals 0
-
-    .line 278
-    sget-object p0, Lcom/google/android/material/color/utilities/MaterialDynamicColors;->tertiaryFixedDarker:Lcom/google/android/material/color/utilities/DynamicColor;
-
-    return-object p0
-.end method
-
-.method static synthetic lambda$static$131(Lcom/google/android/material/color/utilities/DynamicScheme;)Lcom/google/android/material/color/utilities/TonalPalette;
-    .locals 0
-
-    .line 294
-    iget-object p0, p0, Lcom/google/android/material/color/utilities/DynamicScheme;->primaryPalette:Lcom/google/android/material/color/utilities/TonalPalette;
-
-    return-object p0
-.end method
-
-.method static synthetic lambda$static$132(Lcom/google/android/material/color/utilities/DynamicScheme;)Ljava/lang/Double;
-    .locals 2
-
-    .line 294
-    iget-boolean p0, p0, Lcom/google/android/material/color/utilities/DynamicScheme;->isDark:Z
-
-    if-eqz p0, :cond_0
-
-    const-wide/high16 v0, 0x403e000000000000L    # 30.0
-
-    goto :goto_0
-
-    :cond_0
-    const-wide v0, 0x4056800000000000L    # 90.0
-
-    :goto_0
-    invoke-static {v0, v1}, Ljava/lang/Double;->valueOf(D)Ljava/lang/Double;
-
-    move-result-object p0
-
-    return-object p0
-.end method
-
-.method static synthetic lambda$static$133(Lcom/google/android/material/color/utilities/DynamicScheme;)Lcom/google/android/material/color/utilities/TonalPalette;
-    .locals 0
-
-    .line 300
-    iget-object p0, p0, Lcom/google/android/material/color/utilities/DynamicScheme;->neutralVariantPalette:Lcom/google/android/material/color/utilities/TonalPalette;
-
-    return-object p0
-.end method
-
-.method static synthetic lambda$static$134(Lcom/google/android/material/color/utilities/DynamicScheme;)Ljava/lang/Double;
-    .locals 2
-
-    .line 300
-    iget-boolean p0, p0, Lcom/google/android/material/color/utilities/DynamicScheme;->isDark:Z
-
-    if-eqz p0, :cond_0
-
-    const-wide/high16 v0, 0x4054000000000000L    # 80.0
-
-    goto :goto_0
-
-    :cond_0
-    const-wide/high16 v0, 0x403e000000000000L    # 30.0
-
-    :goto_0
-    invoke-static {v0, v1}, Ljava/lang/Double;->valueOf(D)Ljava/lang/Double;
-
-    move-result-object p0
-
-    return-object p0
-.end method
-
-.method static synthetic lambda$static$135(Lcom/google/android/material/color/utilities/DynamicScheme;)Ljava/lang/Double;
-    .locals 2
-
-    const-wide/16 v0, 0x0
-
-    .line 312
-    invoke-static {v0, v1}, Ljava/lang/Double;->valueOf(D)Ljava/lang/Double;
-
-    move-result-object p0
-
-    return-object p0
-.end method
-
-.method static synthetic lambda$static$136(Lcom/google/android/material/color/utilities/DynamicScheme;)Ljava/lang/Double;
-    .locals 2
-
-    const-wide/16 v0, 0x0
-
-    .line 313
-    invoke-static {v0, v1}, Ljava/lang/Double;->valueOf(D)Ljava/lang/Double;
-
-    move-result-object p0
-
-    return-object p0
-.end method
-
-.method static synthetic lambda$static$137(Lcom/google/android/material/color/utilities/DynamicScheme;)Ljava/lang/Double;
-    .locals 2
-
-    .line 314
+    .line 864
     iget-boolean p0, p0, Lcom/google/android/material/color/utilities/DynamicScheme;->isDark:Z
 
     if-eqz p0, :cond_0
@@ -1909,10 +308,10 @@
     return-object p0
 .end method
 
-.method static synthetic lambda$static$138(Lcom/google/android/material/color/utilities/DynamicScheme;)Ljava/lang/Double;
+.method static synthetic lambda$controlHighlight$151(Lcom/google/android/material/color/utilities/DynamicScheme;)Ljava/lang/Double;
     .locals 2
 
-    .line 315
+    .line 870
     iget-boolean p0, p0, Lcom/google/android/material/color/utilities/DynamicScheme;->isDark:Z
 
     if-eqz p0, :cond_0
@@ -1932,162 +331,83 @@
     return-object p0
 .end method
 
-.method static synthetic lambda$static$139(Lcom/google/android/material/color/utilities/DynamicScheme;)Ljava/lang/Double;
-    .locals 2
-
-    .line 319
-    iget-boolean p0, p0, Lcom/google/android/material/color/utilities/DynamicScheme;->isDark:Z
-
-    if-eqz p0, :cond_0
-
-    const-wide/high16 v0, 0x4059000000000000L    # 100.0
-
-    goto :goto_0
-
-    :cond_0
-    const-wide/16 v0, 0x0
-
-    :goto_0
-    invoke-static {v0, v1}, Ljava/lang/Double;->valueOf(D)Ljava/lang/Double;
-
-    move-result-object p0
-
-    return-object p0
-.end method
-
-.method static synthetic lambda$static$14(Lcom/google/android/material/color/utilities/DynamicScheme;)Ljava/lang/Double;
-    .locals 2
-
-    .line 58
-    iget-boolean p0, p0, Lcom/google/android/material/color/utilities/DynamicScheme;->isDark:Z
-
-    if-eqz p0, :cond_0
-
-    const-wide/high16 v0, 0x4010000000000000L    # 4.0
-
-    goto :goto_0
-
-    :cond_0
-    const-wide/high16 v0, 0x4059000000000000L    # 100.0
-
-    :goto_0
-    invoke-static {v0, v1}, Ljava/lang/Double;->valueOf(D)Ljava/lang/Double;
-
-    move-result-object p0
-
-    return-object p0
-.end method
-
-.method static synthetic lambda$static$140(Lcom/google/android/material/color/utilities/DynamicScheme;)Ljava/lang/Double;
-    .locals 2
-
-    .line 318
-    new-instance v0, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda0;
-
-    invoke-direct {v0}, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda0;-><init>()V
-
-    const/4 v1, 0x0
-
-    invoke-static {v0, v1, p0, v1}, Lcom/google/android/material/color/utilities/DynamicColor;->toneMinContrastDefault(Ljava/util/function/Function;Ljava/util/function/Function;Lcom/google/android/material/color/utilities/DynamicScheme;Ljava/util/function/Function;)D
-
-    move-result-wide v0
-
-    invoke-static {v0, v1}, Ljava/lang/Double;->valueOf(D)Ljava/lang/Double;
-
-    move-result-object p0
-
-    return-object p0
-.end method
-
-.method static synthetic lambda$static$141(Lcom/google/android/material/color/utilities/DynamicScheme;)Ljava/lang/Double;
-    .locals 2
-
-    .line 322
-    iget-boolean p0, p0, Lcom/google/android/material/color/utilities/DynamicScheme;->isDark:Z
-
-    if-eqz p0, :cond_0
-
-    const-wide/high16 v0, 0x4059000000000000L    # 100.0
-
-    goto :goto_0
-
-    :cond_0
-    const-wide/16 v0, 0x0
-
-    :goto_0
-    invoke-static {v0, v1}, Ljava/lang/Double;->valueOf(D)Ljava/lang/Double;
-
-    move-result-object p0
-
-    return-object p0
-.end method
-
-.method static synthetic lambda$static$142(Lcom/google/android/material/color/utilities/DynamicScheme;)Ljava/lang/Double;
-    .locals 2
-
-    .line 321
-    new-instance v0, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda58;
-
-    invoke-direct {v0}, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda58;-><init>()V
-
-    const/4 v1, 0x0
-
-    invoke-static {v0, v1, p0, v1}, Lcom/google/android/material/color/utilities/DynamicColor;->toneMaxContrastDefault(Ljava/util/function/Function;Ljava/util/function/Function;Lcom/google/android/material/color/utilities/DynamicScheme;Ljava/util/function/Function;)D
-
-    move-result-wide v0
-
-    invoke-static {v0, v1}, Ljava/lang/Double;->valueOf(D)Ljava/lang/Double;
-
-    move-result-object p0
-
-    return-object p0
-.end method
-
-.method static synthetic lambda$static$143(Lcom/google/android/material/color/utilities/DynamicScheme;)Lcom/google/android/material/color/utilities/TonalPalette;
+.method static synthetic lambda$controlNormal$147(Lcom/google/android/material/color/utilities/DynamicScheme;)Lcom/google/android/material/color/utilities/TonalPalette;
     .locals 0
 
-    .line 327
-    iget-object p0, p0, Lcom/google/android/material/color/utilities/DynamicScheme;->neutralPalette:Lcom/google/android/material/color/utilities/TonalPalette;
-
-    return-object p0
-.end method
-
-.method static synthetic lambda$static$144(Lcom/google/android/material/color/utilities/DynamicScheme;)Ljava/lang/Double;
-    .locals 2
-
-    .line 327
-    iget-boolean p0, p0, Lcom/google/android/material/color/utilities/DynamicScheme;->isDark:Z
-
-    if-eqz p0, :cond_0
-
-    const-wide/high16 v0, 0x4024000000000000L    # 10.0
-
-    goto :goto_0
-
-    :cond_0
-    const-wide v0, 0x4056800000000000L    # 90.0
-
-    :goto_0
-    invoke-static {v0, v1}, Ljava/lang/Double;->valueOf(D)Ljava/lang/Double;
-
-    move-result-object p0
-
-    return-object p0
-.end method
-
-.method static synthetic lambda$static$145(Lcom/google/android/material/color/utilities/DynamicScheme;)Lcom/google/android/material/color/utilities/TonalPalette;
-    .locals 0
-
-    .line 331
+    .line 848
     iget-object p0, p0, Lcom/google/android/material/color/utilities/DynamicScheme;->neutralVariantPalette:Lcom/google/android/material/color/utilities/TonalPalette;
 
     return-object p0
 .end method
 
-.method static synthetic lambda$static$146(Lcom/google/android/material/color/utilities/DynamicScheme;)Ljava/lang/Double;
+.method static synthetic lambda$controlNormal$148(Lcom/google/android/material/color/utilities/DynamicScheme;)Ljava/lang/Double;
     .locals 2
 
-    .line 331
+    .line 848
+    iget-boolean p0, p0, Lcom/google/android/material/color/utilities/DynamicScheme;->isDark:Z
+
+    if-eqz p0, :cond_0
+
+    const-wide/high16 v0, 0x4054000000000000L    # 80.0
+
+    goto :goto_0
+
+    :cond_0
+    const-wide/high16 v0, 0x403e000000000000L    # 30.0
+
+    :goto_0
+    invoke-static {v0, v1}, Ljava/lang/Double;->valueOf(D)Ljava/lang/Double;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method static synthetic lambda$error$91(Lcom/google/android/material/color/utilities/DynamicScheme;)Lcom/google/android/material/color/utilities/TonalPalette;
+    .locals 0
+
+    .line 607
+    iget-object p0, p0, Lcom/google/android/material/color/utilities/DynamicScheme;->errorPalette:Lcom/google/android/material/color/utilities/TonalPalette;
+
+    return-object p0
+.end method
+
+.method static synthetic lambda$error$92(Lcom/google/android/material/color/utilities/DynamicScheme;)Ljava/lang/Double;
+    .locals 2
+
+    .line 608
+    iget-boolean p0, p0, Lcom/google/android/material/color/utilities/DynamicScheme;->isDark:Z
+
+    if-eqz p0, :cond_0
+
+    const-wide/high16 v0, 0x4054000000000000L    # 80.0
+
+    goto :goto_0
+
+    :cond_0
+    const-wide/high16 v0, 0x4044000000000000L    # 40.0
+
+    :goto_0
+    invoke-static {v0, v1}, Ljava/lang/Double;->valueOf(D)Ljava/lang/Double;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method static synthetic lambda$errorContainer$97(Lcom/google/android/material/color/utilities/DynamicScheme;)Lcom/google/android/material/color/utilities/TonalPalette;
+    .locals 0
+
+    .line 634
+    iget-object p0, p0, Lcom/google/android/material/color/utilities/DynamicScheme;->errorPalette:Lcom/google/android/material/color/utilities/TonalPalette;
+
+    return-object p0
+.end method
+
+.method static synthetic lambda$errorContainer$98(Lcom/google/android/material/color/utilities/DynamicScheme;)Ljava/lang/Double;
+    .locals 2
+
+    .line 635
     iget-boolean p0, p0, Lcom/google/android/material/color/utilities/DynamicScheme;->isDark:Z
 
     if-eqz p0, :cond_0
@@ -2097,38 +417,6 @@
     goto :goto_0
 
     :cond_0
-    const-wide/high16 v0, 0x4054000000000000L    # 80.0
-
-    :goto_0
-    invoke-static {v0, v1}, Ljava/lang/Double;->valueOf(D)Ljava/lang/Double;
-
-    move-result-object p0
-
-    return-object p0
-.end method
-
-.method static synthetic lambda$static$147(Lcom/google/android/material/color/utilities/DynamicScheme;)Lcom/google/android/material/color/utilities/TonalPalette;
-    .locals 0
-
-    .line 335
-    iget-object p0, p0, Lcom/google/android/material/color/utilities/DynamicScheme;->neutralPalette:Lcom/google/android/material/color/utilities/TonalPalette;
-
-    return-object p0
-.end method
-
-.method static synthetic lambda$static$148(Lcom/google/android/material/color/utilities/DynamicScheme;)Ljava/lang/Double;
-    .locals 2
-
-    .line 335
-    iget-boolean p0, p0, Lcom/google/android/material/color/utilities/DynamicScheme;->isDark:Z
-
-    if-eqz p0, :cond_0
-
-    const-wide/high16 v0, 0x4024000000000000L    # 10.0
-
-    goto :goto_0
-
-    :cond_0
     const-wide v0, 0x4056800000000000L    # 90.0
 
     :goto_0
@@ -2139,263 +427,19 @@
     return-object p0
 .end method
 
-.method static synthetic lambda$static$149(Lcom/google/android/material/color/utilities/DynamicScheme;)Lcom/google/android/material/color/utilities/TonalPalette;
+.method static synthetic lambda$inverseOnSurface$39(Lcom/google/android/material/color/utilities/DynamicScheme;)Lcom/google/android/material/color/utilities/TonalPalette;
     .locals 0
 
-    .line 340
+    .line 272
     iget-object p0, p0, Lcom/google/android/material/color/utilities/DynamicScheme;->neutralPalette:Lcom/google/android/material/color/utilities/TonalPalette;
 
     return-object p0
 .end method
 
-.method static synthetic lambda$static$15(Lcom/google/android/material/color/utilities/DynamicScheme;)Lcom/google/android/material/color/utilities/TonalPalette;
-    .locals 0
-
-    .line 61
-    iget-object p0, p0, Lcom/google/android/material/color/utilities/DynamicScheme;->neutralPalette:Lcom/google/android/material/color/utilities/TonalPalette;
-
-    return-object p0
-.end method
-
-.method static synthetic lambda$static$150(Lcom/google/android/material/color/utilities/DynamicScheme;)Ljava/lang/Double;
+.method static synthetic lambda$inverseOnSurface$40(Lcom/google/android/material/color/utilities/DynamicScheme;)Ljava/lang/Double;
     .locals 2
 
-    .line 340
-    iget-boolean p0, p0, Lcom/google/android/material/color/utilities/DynamicScheme;->isDark:Z
-
-    if-eqz p0, :cond_0
-
-    const-wide/high16 v0, 0x4024000000000000L    # 10.0
-
-    goto :goto_0
-
-    :cond_0
-    const-wide v0, 0x4056800000000000L    # 90.0
-
-    :goto_0
-    invoke-static {v0, v1}, Ljava/lang/Double;->valueOf(D)Ljava/lang/Double;
-
-    move-result-object p0
-
-    return-object p0
-.end method
-
-.method static synthetic lambda$static$151(Lcom/google/android/material/color/utilities/DynamicScheme;)Lcom/google/android/material/color/utilities/TonalPalette;
-    .locals 0
-
-    .line 344
-    iget-object p0, p0, Lcom/google/android/material/color/utilities/DynamicScheme;->neutralPalette:Lcom/google/android/material/color/utilities/TonalPalette;
-
-    return-object p0
-.end method
-
-.method static synthetic lambda$static$152(Lcom/google/android/material/color/utilities/DynamicScheme;)Ljava/lang/Double;
-    .locals 2
-
-    .line 344
-    iget-boolean p0, p0, Lcom/google/android/material/color/utilities/DynamicScheme;->isDark:Z
-
-    if-eqz p0, :cond_0
-
-    const-wide/high16 v0, 0x4024000000000000L    # 10.0
-
-    goto :goto_0
-
-    :cond_0
-    const-wide v0, 0x4056800000000000L    # 90.0
-
-    :goto_0
-    invoke-static {v0, v1}, Ljava/lang/Double;->valueOf(D)Ljava/lang/Double;
-
-    move-result-object p0
-
-    return-object p0
-.end method
-
-.method static synthetic lambda$static$16(Lcom/google/android/material/color/utilities/DynamicScheme;)Ljava/lang/Double;
-    .locals 2
-
-    .line 61
-    iget-boolean p0, p0, Lcom/google/android/material/color/utilities/DynamicScheme;->isDark:Z
-
-    if-eqz p0, :cond_0
-
-    const-wide/high16 v0, 0x4024000000000000L    # 10.0
-
-    goto :goto_0
-
-    :cond_0
-    const-wide/high16 v0, 0x4058000000000000L    # 96.0
-
-    :goto_0
-    invoke-static {v0, v1}, Ljava/lang/Double;->valueOf(D)Ljava/lang/Double;
-
-    move-result-object p0
-
-    return-object p0
-.end method
-
-.method static synthetic lambda$static$17(Lcom/google/android/material/color/utilities/DynamicScheme;)Lcom/google/android/material/color/utilities/TonalPalette;
-    .locals 0
-
-    .line 64
-    iget-object p0, p0, Lcom/google/android/material/color/utilities/DynamicScheme;->neutralPalette:Lcom/google/android/material/color/utilities/TonalPalette;
-
-    return-object p0
-.end method
-
-.method static synthetic lambda$static$18(Lcom/google/android/material/color/utilities/DynamicScheme;)Ljava/lang/Double;
-    .locals 2
-
-    .line 64
-    iget-boolean p0, p0, Lcom/google/android/material/color/utilities/DynamicScheme;->isDark:Z
-
-    if-eqz p0, :cond_0
-
-    const-wide/high16 v0, 0x4028000000000000L    # 12.0
-
-    goto :goto_0
-
-    :cond_0
-    const-wide v0, 0x4057800000000000L    # 94.0
-
-    :goto_0
-    invoke-static {v0, v1}, Ljava/lang/Double;->valueOf(D)Ljava/lang/Double;
-
-    move-result-object p0
-
-    return-object p0
-.end method
-
-.method static synthetic lambda$static$19(Lcom/google/android/material/color/utilities/DynamicScheme;)Lcom/google/android/material/color/utilities/TonalPalette;
-    .locals 0
-
-    .line 67
-    iget-object p0, p0, Lcom/google/android/material/color/utilities/DynamicScheme;->neutralPalette:Lcom/google/android/material/color/utilities/TonalPalette;
-
-    return-object p0
-.end method
-
-.method static synthetic lambda$static$2(Lcom/google/android/material/color/utilities/DynamicScheme;)Lcom/google/android/material/color/utilities/TonalPalette;
-    .locals 0
-
-    .line 43
-    iget-object p0, p0, Lcom/google/android/material/color/utilities/DynamicScheme;->neutralPalette:Lcom/google/android/material/color/utilities/TonalPalette;
-
-    return-object p0
-.end method
-
-.method static synthetic lambda$static$20(Lcom/google/android/material/color/utilities/DynamicScheme;)Ljava/lang/Double;
-    .locals 2
-
-    .line 67
-    iget-boolean p0, p0, Lcom/google/android/material/color/utilities/DynamicScheme;->isDark:Z
-
-    if-eqz p0, :cond_0
-
-    const-wide/high16 v0, 0x4031000000000000L    # 17.0
-
-    goto :goto_0
-
-    :cond_0
-    const-wide/high16 v0, 0x4057000000000000L    # 92.0
-
-    :goto_0
-    invoke-static {v0, v1}, Ljava/lang/Double;->valueOf(D)Ljava/lang/Double;
-
-    move-result-object p0
-
-    return-object p0
-.end method
-
-.method static synthetic lambda$static$21(Lcom/google/android/material/color/utilities/DynamicScheme;)Lcom/google/android/material/color/utilities/TonalPalette;
-    .locals 0
-
-    .line 70
-    iget-object p0, p0, Lcom/google/android/material/color/utilities/DynamicScheme;->neutralPalette:Lcom/google/android/material/color/utilities/TonalPalette;
-
-    return-object p0
-.end method
-
-.method static synthetic lambda$static$22(Lcom/google/android/material/color/utilities/DynamicScheme;)Ljava/lang/Double;
-    .locals 2
-
-    .line 70
-    iget-boolean p0, p0, Lcom/google/android/material/color/utilities/DynamicScheme;->isDark:Z
-
-    if-eqz p0, :cond_0
-
-    const-wide/high16 v0, 0x4036000000000000L    # 22.0
-
-    goto :goto_0
-
-    :cond_0
-    const-wide v0, 0x4056800000000000L    # 90.0
-
-    :goto_0
-    invoke-static {v0, v1}, Ljava/lang/Double;->valueOf(D)Ljava/lang/Double;
-
-    move-result-object p0
-
-    return-object p0
-.end method
-
-.method static synthetic lambda$static$23(Lcom/google/android/material/color/utilities/DynamicScheme;)Lcom/google/android/material/color/utilities/TonalPalette;
-    .locals 0
-
-    .line 74
-    iget-object p0, p0, Lcom/google/android/material/color/utilities/DynamicScheme;->neutralPalette:Lcom/google/android/material/color/utilities/TonalPalette;
-
-    return-object p0
-.end method
-
-.method static synthetic lambda$static$24(Lcom/google/android/material/color/utilities/DynamicScheme;)Ljava/lang/Double;
-    .locals 2
-
-    .line 74
-    iget-boolean p0, p0, Lcom/google/android/material/color/utilities/DynamicScheme;->isDark:Z
-
-    if-eqz p0, :cond_0
-
-    const-wide v0, 0x4056800000000000L    # 90.0
-
-    goto :goto_0
-
-    :cond_0
-    const-wide/high16 v0, 0x4024000000000000L    # 10.0
-
-    :goto_0
-    invoke-static {v0, v1}, Ljava/lang/Double;->valueOf(D)Ljava/lang/Double;
-
-    move-result-object p0
-
-    return-object p0
-.end method
-
-.method static synthetic lambda$static$25(Lcom/google/android/material/color/utilities/DynamicScheme;)Lcom/google/android/material/color/utilities/DynamicColor;
-    .locals 0
-
-    .line 74
-    invoke-static {p0}, Lcom/google/android/material/color/utilities/MaterialDynamicColors;->highestSurface(Lcom/google/android/material/color/utilities/DynamicScheme;)Lcom/google/android/material/color/utilities/DynamicColor;
-
-    move-result-object p0
-
-    return-object p0
-.end method
-
-.method static synthetic lambda$static$26(Lcom/google/android/material/color/utilities/DynamicScheme;)Lcom/google/android/material/color/utilities/TonalPalette;
-    .locals 0
-
-    .line 78
-    iget-object p0, p0, Lcom/google/android/material/color/utilities/DynamicScheme;->neutralPalette:Lcom/google/android/material/color/utilities/TonalPalette;
-
-    return-object p0
-.end method
-
-.method static synthetic lambda$static$27(Lcom/google/android/material/color/utilities/DynamicScheme;)Ljava/lang/Double;
-    .locals 2
-
-    .line 78
+    .line 273
     iget-boolean p0, p0, Lcom/google/android/material/color/utilities/DynamicScheme;->isDark:Z
 
     if-eqz p0, :cond_0
@@ -2415,342 +459,30 @@
     return-object p0
 .end method
 
-.method static synthetic lambda$static$28(Lcom/google/android/material/color/utilities/DynamicScheme;)Lcom/google/android/material/color/utilities/DynamicColor;
+.method static synthetic lambda$inversePrimary$64(Lcom/google/android/material/color/utilities/DynamicScheme;)Lcom/google/android/material/color/utilities/TonalPalette;
     .locals 0
 
-    .line 78
-    sget-object p0, Lcom/google/android/material/color/utilities/MaterialDynamicColors;->surfaceInverse:Lcom/google/android/material/color/utilities/DynamicColor;
-
-    return-object p0
-.end method
-
-.method static synthetic lambda$static$29(Lcom/google/android/material/color/utilities/DynamicScheme;)Lcom/google/android/material/color/utilities/TonalPalette;
-    .locals 0
-
-    .line 81
-    iget-object p0, p0, Lcom/google/android/material/color/utilities/DynamicScheme;->neutralVariantPalette:Lcom/google/android/material/color/utilities/TonalPalette;
-
-    return-object p0
-.end method
-
-.method static synthetic lambda$static$3(Lcom/google/android/material/color/utilities/DynamicScheme;)Ljava/lang/Double;
-    .locals 2
-
-    .line 43
-    iget-boolean p0, p0, Lcom/google/android/material/color/utilities/DynamicScheme;->isDark:Z
-
-    if-eqz p0, :cond_0
-
-    const-wide v0, 0x4056800000000000L    # 90.0
-
-    goto :goto_0
-
-    :cond_0
-    const-wide/high16 v0, 0x4024000000000000L    # 10.0
-
-    :goto_0
-    invoke-static {v0, v1}, Ljava/lang/Double;->valueOf(D)Ljava/lang/Double;
-
-    move-result-object p0
-
-    return-object p0
-.end method
-
-.method static synthetic lambda$static$30(Lcom/google/android/material/color/utilities/DynamicScheme;)Ljava/lang/Double;
-    .locals 2
-
-    .line 81
-    iget-boolean p0, p0, Lcom/google/android/material/color/utilities/DynamicScheme;->isDark:Z
-
-    if-eqz p0, :cond_0
-
-    const-wide/high16 v0, 0x403e000000000000L    # 30.0
-
-    goto :goto_0
-
-    :cond_0
-    const-wide v0, 0x4056800000000000L    # 90.0
-
-    :goto_0
-    invoke-static {v0, v1}, Ljava/lang/Double;->valueOf(D)Ljava/lang/Double;
-
-    move-result-object p0
-
-    return-object p0
-.end method
-
-.method static synthetic lambda$static$31(Lcom/google/android/material/color/utilities/DynamicScheme;)Lcom/google/android/material/color/utilities/TonalPalette;
-    .locals 0
-
-    .line 85
-    iget-object p0, p0, Lcom/google/android/material/color/utilities/DynamicScheme;->neutralVariantPalette:Lcom/google/android/material/color/utilities/TonalPalette;
-
-    return-object p0
-.end method
-
-.method static synthetic lambda$static$32(Lcom/google/android/material/color/utilities/DynamicScheme;)Ljava/lang/Double;
-    .locals 2
-
-    .line 85
-    iget-boolean p0, p0, Lcom/google/android/material/color/utilities/DynamicScheme;->isDark:Z
-
-    if-eqz p0, :cond_0
-
-    const-wide/high16 v0, 0x4054000000000000L    # 80.0
-
-    goto :goto_0
-
-    :cond_0
-    const-wide/high16 v0, 0x403e000000000000L    # 30.0
-
-    :goto_0
-    invoke-static {v0, v1}, Ljava/lang/Double;->valueOf(D)Ljava/lang/Double;
-
-    move-result-object p0
-
-    return-object p0
-.end method
-
-.method static synthetic lambda$static$33(Lcom/google/android/material/color/utilities/DynamicScheme;)Lcom/google/android/material/color/utilities/DynamicColor;
-    .locals 0
-
-    .line 85
-    sget-object p0, Lcom/google/android/material/color/utilities/MaterialDynamicColors;->surfaceVariant:Lcom/google/android/material/color/utilities/DynamicColor;
-
-    return-object p0
-.end method
-
-.method static synthetic lambda$static$34(Lcom/google/android/material/color/utilities/DynamicScheme;)Lcom/google/android/material/color/utilities/TonalPalette;
-    .locals 0
-
-    .line 89
-    iget-object p0, p0, Lcom/google/android/material/color/utilities/DynamicScheme;->neutralVariantPalette:Lcom/google/android/material/color/utilities/TonalPalette;
-
-    return-object p0
-.end method
-
-.method static synthetic lambda$static$35(Lcom/google/android/material/color/utilities/DynamicScheme;)Ljava/lang/Double;
-    .locals 2
-
-    const-wide/high16 v0, 0x4049000000000000L    # 50.0
-
-    .line 89
-    invoke-static {v0, v1}, Ljava/lang/Double;->valueOf(D)Ljava/lang/Double;
-
-    move-result-object p0
-
-    return-object p0
-.end method
-
-.method static synthetic lambda$static$36(Lcom/google/android/material/color/utilities/DynamicScheme;)Lcom/google/android/material/color/utilities/DynamicColor;
-    .locals 0
-
-    .line 89
-    invoke-static {p0}, Lcom/google/android/material/color/utilities/MaterialDynamicColors;->highestSurface(Lcom/google/android/material/color/utilities/DynamicScheme;)Lcom/google/android/material/color/utilities/DynamicColor;
-
-    move-result-object p0
-
-    return-object p0
-.end method
-
-.method static synthetic lambda$static$37(Lcom/google/android/material/color/utilities/DynamicScheme;)Lcom/google/android/material/color/utilities/TonalPalette;
-    .locals 0
-
-    .line 93
-    iget-object p0, p0, Lcom/google/android/material/color/utilities/DynamicScheme;->neutralVariantPalette:Lcom/google/android/material/color/utilities/TonalPalette;
-
-    return-object p0
-.end method
-
-.method static synthetic lambda$static$38(Lcom/google/android/material/color/utilities/DynamicScheme;)Ljava/lang/Double;
-    .locals 2
-
-    const-wide/high16 v0, 0x4054000000000000L    # 80.0
-
-    .line 93
-    invoke-static {v0, v1}, Ljava/lang/Double;->valueOf(D)Ljava/lang/Double;
-
-    move-result-object p0
-
-    return-object p0
-.end method
-
-.method static synthetic lambda$static$39(Lcom/google/android/material/color/utilities/DynamicScheme;)Lcom/google/android/material/color/utilities/DynamicColor;
-    .locals 0
-
-    .line 93
-    invoke-static {p0}, Lcom/google/android/material/color/utilities/MaterialDynamicColors;->highestSurface(Lcom/google/android/material/color/utilities/DynamicScheme;)Lcom/google/android/material/color/utilities/DynamicColor;
-
-    move-result-object p0
-
-    return-object p0
-.end method
-
-.method static synthetic lambda$static$4(Lcom/google/android/material/color/utilities/DynamicScheme;)Lcom/google/android/material/color/utilities/DynamicColor;
-    .locals 0
-
-    .line 43
-    sget-object p0, Lcom/google/android/material/color/utilities/MaterialDynamicColors;->background:Lcom/google/android/material/color/utilities/DynamicColor;
-
-    return-object p0
-.end method
-
-.method static synthetic lambda$static$40(Lcom/google/android/material/color/utilities/DynamicScheme;)Lcom/google/android/material/color/utilities/TonalPalette;
-    .locals 0
-
-    .line 97
+    .line 430
     iget-object p0, p0, Lcom/google/android/material/color/utilities/DynamicScheme;->primaryPalette:Lcom/google/android/material/color/utilities/TonalPalette;
 
     return-object p0
 .end method
 
-.method static synthetic lambda$static$41(Lcom/google/android/material/color/utilities/DynamicScheme;)Ljava/lang/Double;
+.method static synthetic lambda$inversePrimary$65(Lcom/google/android/material/color/utilities/DynamicScheme;)Ljava/lang/Double;
     .locals 2
 
-    .line 99
-    invoke-static {p0}, Lcom/google/android/material/color/utilities/MaterialDynamicColors;->isFidelity(Lcom/google/android/material/color/utilities/DynamicScheme;)Z
-
-    move-result v0
-
-    if-nez v0, :cond_1
-
-    .line 100
+    .line 431
     iget-boolean p0, p0, Lcom/google/android/material/color/utilities/DynamicScheme;->isDark:Z
 
     if-eqz p0, :cond_0
 
-    const-wide/high16 v0, 0x403e000000000000L    # 30.0
-
-    goto :goto_0
-
-    :cond_0
-    const-wide v0, 0x4056800000000000L    # 90.0
-
-    :goto_0
-    invoke-static {v0, v1}, Ljava/lang/Double;->valueOf(D)Ljava/lang/Double;
-
-    move-result-object p0
-
-    return-object p0
-
-    .line 102
-    :cond_1
-    iget-object v0, p0, Lcom/google/android/material/color/utilities/DynamicScheme;->sourceColorHct:Lcom/google/android/material/color/utilities/Hct;
-
-    invoke-static {v0, p0}, Lcom/google/android/material/color/utilities/MaterialDynamicColors;->performAlbers(Lcom/google/android/material/color/utilities/Hct;Lcom/google/android/material/color/utilities/DynamicScheme;)D
-
-    move-result-wide v0
-
-    invoke-static {v0, v1}, Ljava/lang/Double;->valueOf(D)Ljava/lang/Double;
-
-    move-result-object p0
-
-    return-object p0
-.end method
-
-.method static synthetic lambda$static$42(Lcom/google/android/material/color/utilities/DynamicScheme;)Lcom/google/android/material/color/utilities/DynamicColor;
-    .locals 0
-
-    .line 104
-    invoke-static {p0}, Lcom/google/android/material/color/utilities/MaterialDynamicColors;->highestSurface(Lcom/google/android/material/color/utilities/DynamicScheme;)Lcom/google/android/material/color/utilities/DynamicColor;
-
-    move-result-object p0
-
-    return-object p0
-.end method
-
-.method static synthetic lambda$static$43(Lcom/google/android/material/color/utilities/DynamicScheme;)Lcom/google/android/material/color/utilities/TonalPalette;
-    .locals 0
-
-    .line 108
-    iget-object p0, p0, Lcom/google/android/material/color/utilities/DynamicScheme;->primaryPalette:Lcom/google/android/material/color/utilities/TonalPalette;
-
-    return-object p0
-.end method
-
-.method static synthetic lambda$static$44(Lcom/google/android/material/color/utilities/DynamicScheme;)Ljava/lang/Double;
-    .locals 4
-
-    .line 110
-    invoke-static {p0}, Lcom/google/android/material/color/utilities/MaterialDynamicColors;->isFidelity(Lcom/google/android/material/color/utilities/DynamicScheme;)Z
-
-    move-result v0
-
-    if-nez v0, :cond_1
-
-    .line 111
-    iget-boolean p0, p0, Lcom/google/android/material/color/utilities/DynamicScheme;->isDark:Z
-
-    if-eqz p0, :cond_0
-
-    const-wide v0, 0x4056800000000000L    # 90.0
-
-    goto :goto_0
-
-    :cond_0
-    const-wide/high16 v0, 0x4024000000000000L    # 10.0
-
-    :goto_0
-    invoke-static {v0, v1}, Ljava/lang/Double;->valueOf(D)Ljava/lang/Double;
-
-    move-result-object p0
-
-    return-object p0
-
-    .line 113
-    :cond_1
-    sget-object v0, Lcom/google/android/material/color/utilities/MaterialDynamicColors;->primaryContainer:Lcom/google/android/material/color/utilities/DynamicColor;
-
-    invoke-virtual {v0, p0}, Lcom/google/android/material/color/utilities/DynamicColor;->getTone(Lcom/google/android/material/color/utilities/DynamicScheme;)D
-
-    move-result-wide v0
-
-    const-wide/high16 v2, 0x4012000000000000L    # 4.5
-
-    invoke-static {v0, v1, v2, v3}, Lcom/google/android/material/color/utilities/DynamicColor;->contrastingTone(DD)D
-
-    move-result-wide v0
-
-    invoke-static {v0, v1}, Ljava/lang/Double;->valueOf(D)Ljava/lang/Double;
-
-    move-result-object p0
-
-    return-object p0
-.end method
-
-.method static synthetic lambda$static$45(Lcom/google/android/material/color/utilities/DynamicScheme;)Lcom/google/android/material/color/utilities/DynamicColor;
-    .locals 0
-
-    .line 115
-    sget-object p0, Lcom/google/android/material/color/utilities/MaterialDynamicColors;->primaryContainer:Lcom/google/android/material/color/utilities/DynamicColor;
-
-    return-object p0
-.end method
-
-.method static synthetic lambda$static$46(Lcom/google/android/material/color/utilities/DynamicScheme;)Lcom/google/android/material/color/utilities/TonalPalette;
-    .locals 0
-
-    .line 120
-    iget-object p0, p0, Lcom/google/android/material/color/utilities/DynamicScheme;->primaryPalette:Lcom/google/android/material/color/utilities/TonalPalette;
-
-    return-object p0
-.end method
-
-.method static synthetic lambda$static$47(Lcom/google/android/material/color/utilities/DynamicScheme;)Ljava/lang/Double;
-    .locals 2
-
-    .line 121
-    iget-boolean p0, p0, Lcom/google/android/material/color/utilities/DynamicScheme;->isDark:Z
-
-    if-eqz p0, :cond_0
-
-    const-wide/high16 v0, 0x4054000000000000L    # 80.0
-
-    goto :goto_0
-
-    :cond_0
     const-wide/high16 v0, 0x4044000000000000L    # 40.0
 
+    goto :goto_0
+
+    :cond_0
+    const-wide/high16 v0, 0x4054000000000000L    # 80.0
+
     :goto_0
     invoke-static {v0, v1}, Ljava/lang/Double;->valueOf(D)Ljava/lang/Double;
 
@@ -2759,77 +491,29 @@
     return-object p0
 .end method
 
-.method static synthetic lambda$static$48(Lcom/google/android/material/color/utilities/DynamicScheme;)Lcom/google/android/material/color/utilities/DynamicColor;
+.method static synthetic lambda$inverseSurface$37(Lcom/google/android/material/color/utilities/DynamicScheme;)Lcom/google/android/material/color/utilities/TonalPalette;
     .locals 0
 
-    .line 122
-    invoke-static {p0}, Lcom/google/android/material/color/utilities/MaterialDynamicColors;->highestSurface(Lcom/google/android/material/color/utilities/DynamicScheme;)Lcom/google/android/material/color/utilities/DynamicColor;
-
-    move-result-object p0
-
-    return-object p0
-.end method
-
-.method static synthetic lambda$static$49(Lcom/google/android/material/color/utilities/DynamicScheme;)Lcom/google/android/material/color/utilities/ToneDeltaConstraint;
-    .locals 4
-
-    .line 124
-    new-instance v0, Lcom/google/android/material/color/utilities/ToneDeltaConstraint;
-
-    sget-object v1, Lcom/google/android/material/color/utilities/MaterialDynamicColors;->primaryContainer:Lcom/google/android/material/color/utilities/DynamicColor;
-
-    .line 127
-    iget-boolean p0, p0, Lcom/google/android/material/color/utilities/DynamicScheme;->isDark:Z
-
-    if-eqz p0, :cond_0
-
-    sget-object p0, Lcom/google/android/material/color/utilities/TonePolarity;->DARKER:Lcom/google/android/material/color/utilities/TonePolarity;
-
-    goto :goto_0
-
-    :cond_0
-    sget-object p0, Lcom/google/android/material/color/utilities/TonePolarity;->LIGHTER:Lcom/google/android/material/color/utilities/TonePolarity;
-
-    :goto_0
-    const-wide/high16 v2, 0x402e000000000000L    # 15.0
-
-    invoke-direct {v0, v2, v3, v1, p0}, Lcom/google/android/material/color/utilities/ToneDeltaConstraint;-><init>(DLcom/google/android/material/color/utilities/DynamicColor;Lcom/google/android/material/color/utilities/TonePolarity;)V
-
-    return-object v0
-.end method
-
-.method static synthetic lambda$static$5(Lcom/google/android/material/color/utilities/DynamicScheme;)Lcom/google/android/material/color/utilities/TonalPalette;
-    .locals 0
-
-    .line 46
+    .line 259
     iget-object p0, p0, Lcom/google/android/material/color/utilities/DynamicScheme;->neutralPalette:Lcom/google/android/material/color/utilities/TonalPalette;
 
     return-object p0
 .end method
 
-.method static synthetic lambda$static$50(Lcom/google/android/material/color/utilities/DynamicScheme;)Lcom/google/android/material/color/utilities/TonalPalette;
-    .locals 0
-
-    .line 131
-    iget-object p0, p0, Lcom/google/android/material/color/utilities/DynamicScheme;->primaryPalette:Lcom/google/android/material/color/utilities/TonalPalette;
-
-    return-object p0
-.end method
-
-.method static synthetic lambda$static$51(Lcom/google/android/material/color/utilities/DynamicScheme;)Ljava/lang/Double;
+.method static synthetic lambda$inverseSurface$38(Lcom/google/android/material/color/utilities/DynamicScheme;)Ljava/lang/Double;
     .locals 2
 
-    .line 131
+    .line 260
     iget-boolean p0, p0, Lcom/google/android/material/color/utilities/DynamicScheme;->isDark:Z
 
     if-eqz p0, :cond_0
 
-    const-wide/high16 v0, 0x4044000000000000L    # 40.0
+    const-wide v0, 0x4056800000000000L    # 90.0
 
     goto :goto_0
 
     :cond_0
-    const-wide/high16 v0, 0x4054000000000000L    # 80.0
+    const-wide/high16 v0, 0x4034000000000000L    # 20.0
 
     :goto_0
     invoke-static {v0, v1}, Ljava/lang/Double;->valueOf(D)Ljava/lang/Double;
@@ -2839,28 +523,111 @@
     return-object p0
 .end method
 
-.method static synthetic lambda$static$52(Lcom/google/android/material/color/utilities/DynamicScheme;)Lcom/google/android/material/color/utilities/DynamicColor;
+.method static synthetic lambda$neutralPaletteKeyColor$6(Lcom/google/android/material/color/utilities/DynamicScheme;)Lcom/google/android/material/color/utilities/TonalPalette;
     .locals 0
 
-    .line 131
-    sget-object p0, Lcom/google/android/material/color/utilities/MaterialDynamicColors;->surfaceInverse:Lcom/google/android/material/color/utilities/DynamicColor;
+    .line 74
+    iget-object p0, p0, Lcom/google/android/material/color/utilities/DynamicScheme;->neutralPalette:Lcom/google/android/material/color/utilities/TonalPalette;
 
     return-object p0
 .end method
 
-.method static synthetic lambda$static$53(Lcom/google/android/material/color/utilities/DynamicScheme;)Lcom/google/android/material/color/utilities/TonalPalette;
-    .locals 0
-
-    .line 135
-    iget-object p0, p0, Lcom/google/android/material/color/utilities/DynamicScheme;->primaryPalette:Lcom/google/android/material/color/utilities/TonalPalette;
-
-    return-object p0
-.end method
-
-.method static synthetic lambda$static$54(Lcom/google/android/material/color/utilities/DynamicScheme;)Ljava/lang/Double;
+.method static synthetic lambda$neutralPaletteKeyColor$7(Lcom/google/android/material/color/utilities/DynamicScheme;)Ljava/lang/Double;
     .locals 2
 
-    .line 135
+    .line 75
+    iget-object p0, p0, Lcom/google/android/material/color/utilities/DynamicScheme;->neutralPalette:Lcom/google/android/material/color/utilities/TonalPalette;
+
+    invoke-virtual {p0}, Lcom/google/android/material/color/utilities/TonalPalette;->getKeyColor()Lcom/google/android/material/color/utilities/Hct;
+
+    move-result-object p0
+
+    invoke-virtual {p0}, Lcom/google/android/material/color/utilities/Hct;->getTone()D
+
+    move-result-wide v0
+
+    invoke-static {v0, v1}, Ljava/lang/Double;->valueOf(D)Ljava/lang/Double;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method static synthetic lambda$neutralVariantPaletteKeyColor$8(Lcom/google/android/material/color/utilities/DynamicScheme;)Lcom/google/android/material/color/utilities/TonalPalette;
+    .locals 0
+
+    .line 82
+    iget-object p0, p0, Lcom/google/android/material/color/utilities/DynamicScheme;->neutralVariantPalette:Lcom/google/android/material/color/utilities/TonalPalette;
+
+    return-object p0
+.end method
+
+.method static synthetic lambda$neutralVariantPaletteKeyColor$9(Lcom/google/android/material/color/utilities/DynamicScheme;)Ljava/lang/Double;
+    .locals 2
+
+    .line 83
+    iget-object p0, p0, Lcom/google/android/material/color/utilities/DynamicScheme;->neutralVariantPalette:Lcom/google/android/material/color/utilities/TonalPalette;
+
+    invoke-virtual {p0}, Lcom/google/android/material/color/utilities/TonalPalette;->getKeyColor()Lcom/google/android/material/color/utilities/Hct;
+
+    move-result-object p0
+
+    invoke-virtual {p0}, Lcom/google/android/material/color/utilities/Hct;->getTone()D
+
+    move-result-wide v0
+
+    invoke-static {v0, v1}, Ljava/lang/Double;->valueOf(D)Ljava/lang/Double;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method static synthetic lambda$onBackground$12(Lcom/google/android/material/color/utilities/DynamicScheme;)Lcom/google/android/material/color/utilities/TonalPalette;
+    .locals 0
+
+    .line 103
+    iget-object p0, p0, Lcom/google/android/material/color/utilities/DynamicScheme;->neutralPalette:Lcom/google/android/material/color/utilities/TonalPalette;
+
+    return-object p0
+.end method
+
+.method static synthetic lambda$onBackground$13(Lcom/google/android/material/color/utilities/DynamicScheme;)Ljava/lang/Double;
+    .locals 2
+
+    .line 104
+    iget-boolean p0, p0, Lcom/google/android/material/color/utilities/DynamicScheme;->isDark:Z
+
+    if-eqz p0, :cond_0
+
+    const-wide v0, 0x4056800000000000L    # 90.0
+
+    goto :goto_0
+
+    :cond_0
+    const-wide/high16 v0, 0x4024000000000000L    # 10.0
+
+    :goto_0
+    invoke-static {v0, v1}, Ljava/lang/Double;->valueOf(D)Ljava/lang/Double;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method static synthetic lambda$onError$94(Lcom/google/android/material/color/utilities/DynamicScheme;)Lcom/google/android/material/color/utilities/TonalPalette;
+    .locals 0
+
+    .line 621
+    iget-object p0, p0, Lcom/google/android/material/color/utilities/DynamicScheme;->errorPalette:Lcom/google/android/material/color/utilities/TonalPalette;
+
+    return-object p0
+.end method
+
+.method static synthetic lambda$onError$95(Lcom/google/android/material/color/utilities/DynamicScheme;)Ljava/lang/Double;
+    .locals 2
+
+    .line 622
     iget-boolean p0, p0, Lcom/google/android/material/color/utilities/DynamicScheme;->isDark:Z
 
     if-eqz p0, :cond_0
@@ -2880,33 +647,63 @@
     return-object p0
 .end method
 
-.method static synthetic lambda$static$55(Lcom/google/android/material/color/utilities/DynamicScheme;)Lcom/google/android/material/color/utilities/DynamicColor;
+.method static synthetic lambda$onErrorContainer$100(Lcom/google/android/material/color/utilities/DynamicScheme;)Lcom/google/android/material/color/utilities/TonalPalette;
     .locals 0
 
-    .line 135
-    sget-object p0, Lcom/google/android/material/color/utilities/MaterialDynamicColors;->primary:Lcom/google/android/material/color/utilities/DynamicColor;
+    .line 648
+    iget-object p0, p0, Lcom/google/android/material/color/utilities/DynamicScheme;->errorPalette:Lcom/google/android/material/color/utilities/TonalPalette;
 
     return-object p0
 .end method
 
-.method static synthetic lambda$static$56(Lcom/google/android/material/color/utilities/DynamicScheme;)Lcom/google/android/material/color/utilities/TonalPalette;
-    .locals 0
+.method static synthetic lambda$onErrorContainer$101(Lcom/google/android/material/color/utilities/DynamicScheme;)Ljava/lang/Double;
+    .locals 2
 
-    .line 139
-    iget-object p0, p0, Lcom/google/android/material/color/utilities/DynamicScheme;->secondaryPalette:Lcom/google/android/material/color/utilities/TonalPalette;
+    .line 649
+    iget-boolean p0, p0, Lcom/google/android/material/color/utilities/DynamicScheme;->isDark:Z
+
+    if-eqz p0, :cond_0
+
+    const-wide v0, 0x4056800000000000L    # 90.0
+
+    goto :goto_0
+
+    :cond_0
+    const-wide/high16 v0, 0x4024000000000000L    # 10.0
+
+    :goto_0
+    invoke-static {v0, v1}, Ljava/lang/Double;->valueOf(D)Ljava/lang/Double;
+
+    move-result-object p0
 
     return-object p0
 .end method
 
-.method static synthetic lambda$static$57(Lcom/google/android/material/color/utilities/DynamicScheme;)Ljava/lang/Double;
-    .locals 9
+.method static synthetic lambda$onPrimary$55(Lcom/google/android/material/color/utilities/DynamicScheme;)Lcom/google/android/material/color/utilities/TonalPalette;
+    .locals 0
 
-    .line 141
-    iget-boolean v0, p0, Lcom/google/android/material/color/utilities/DynamicScheme;->isDark:Z
+    .line 369
+    iget-object p0, p0, Lcom/google/android/material/color/utilities/DynamicScheme;->primaryPalette:Lcom/google/android/material/color/utilities/TonalPalette;
 
-    if-eqz v0, :cond_0
+    return-object p0
+.end method
 
-    const-wide/high16 v0, 0x403e000000000000L    # 30.0
+.method static synthetic lambda$onPrimary$56(Lcom/google/android/material/color/utilities/DynamicScheme;)Ljava/lang/Double;
+    .locals 2
+
+    .line 371
+    invoke-static {p0}, Lcom/google/android/material/color/utilities/MaterialDynamicColors;->isMonochrome(Lcom/google/android/material/color/utilities/DynamicScheme;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_1
+
+    .line 372
+    iget-boolean p0, p0, Lcom/google/android/material/color/utilities/DynamicScheme;->isDark:Z
+
+    if-eqz p0, :cond_0
+
+    const-wide/high16 v0, 0x4024000000000000L    # 10.0
 
     goto :goto_0
 
@@ -2914,48 +711,875 @@
     const-wide v0, 0x4056800000000000L    # 90.0
 
     :goto_0
-    move-wide v6, v0
-
-    .line 142
-    invoke-static {p0}, Lcom/google/android/material/color/utilities/MaterialDynamicColors;->isFidelity(Lcom/google/android/material/color/utilities/DynamicScheme;)Z
-
-    move-result v0
-
-    if-nez v0, :cond_1
-
-    .line 143
-    invoke-static {v6, v7}, Ljava/lang/Double;->valueOf(D)Ljava/lang/Double;
+    invoke-static {v0, v1}, Ljava/lang/Double;->valueOf(D)Ljava/lang/Double;
 
     move-result-object p0
 
     return-object p0
 
-    .line 145
+    .line 374
     :cond_1
-    iget-object v0, p0, Lcom/google/android/material/color/utilities/DynamicScheme;->secondaryPalette:Lcom/google/android/material/color/utilities/TonalPalette;
+    iget-boolean p0, p0, Lcom/google/android/material/color/utilities/DynamicScheme;->isDark:Z
 
-    .line 147
-    invoke-virtual {v0}, Lcom/google/android/material/color/utilities/TonalPalette;->getHue()D
+    if-eqz p0, :cond_2
 
-    move-result-wide v2
+    const-wide/high16 v0, 0x4034000000000000L    # 20.0
 
-    iget-object v0, p0, Lcom/google/android/material/color/utilities/DynamicScheme;->secondaryPalette:Lcom/google/android/material/color/utilities/TonalPalette;
+    goto :goto_1
 
-    .line 148
-    invoke-virtual {v0}, Lcom/google/android/material/color/utilities/TonalPalette;->getChroma()D
+    :cond_2
+    const-wide/high16 v0, 0x4059000000000000L    # 100.0
 
-    move-result-wide v4
+    :goto_1
+    invoke-static {v0, v1}, Ljava/lang/Double;->valueOf(D)Ljava/lang/Double;
 
-    iget-boolean v0, p0, Lcom/google/android/material/color/utilities/DynamicScheme;->isDark:Z
+    move-result-object p0
 
-    xor-int/lit8 v8, v0, 0x1
+    return-object p0
+.end method
 
-    .line 146
-    invoke-static/range {v2 .. v8}, Lcom/google/android/material/color/utilities/MaterialDynamicColors;->findDesiredChromaByTone(DDDZ)D
+.method static synthetic lambda$onPrimaryContainer$61(Lcom/google/android/material/color/utilities/DynamicScheme;)Lcom/google/android/material/color/utilities/TonalPalette;
+    .locals 0
+
+    .line 409
+    iget-object p0, p0, Lcom/google/android/material/color/utilities/DynamicScheme;->primaryPalette:Lcom/google/android/material/color/utilities/TonalPalette;
+
+    return-object p0
+.end method
+
+.method static synthetic lambda$onPrimaryFixed$109(Lcom/google/android/material/color/utilities/DynamicScheme;)Lcom/google/android/material/color/utilities/TonalPalette;
+    .locals 0
+
+    .line 689
+    iget-object p0, p0, Lcom/google/android/material/color/utilities/DynamicScheme;->primaryPalette:Lcom/google/android/material/color/utilities/TonalPalette;
+
+    return-object p0
+.end method
+
+.method static synthetic lambda$onPrimaryFixed$110(Lcom/google/android/material/color/utilities/DynamicScheme;)Ljava/lang/Double;
+    .locals 2
+
+    .line 690
+    invoke-static {p0}, Lcom/google/android/material/color/utilities/MaterialDynamicColors;->isMonochrome(Lcom/google/android/material/color/utilities/DynamicScheme;)Z
+
+    move-result p0
+
+    if-eqz p0, :cond_0
+
+    const-wide/high16 v0, 0x4059000000000000L    # 100.0
+
+    goto :goto_0
+
+    :cond_0
+    const-wide/high16 v0, 0x4024000000000000L    # 10.0
+
+    :goto_0
+    invoke-static {v0, v1}, Ljava/lang/Double;->valueOf(D)Ljava/lang/Double;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method static synthetic lambda$onPrimaryFixedVariant$113(Lcom/google/android/material/color/utilities/DynamicScheme;)Lcom/google/android/material/color/utilities/TonalPalette;
+    .locals 0
+
+    .line 702
+    iget-object p0, p0, Lcom/google/android/material/color/utilities/DynamicScheme;->primaryPalette:Lcom/google/android/material/color/utilities/TonalPalette;
+
+    return-object p0
+.end method
+
+.method static synthetic lambda$onPrimaryFixedVariant$114(Lcom/google/android/material/color/utilities/DynamicScheme;)Ljava/lang/Double;
+    .locals 2
+
+    .line 703
+    invoke-static {p0}, Lcom/google/android/material/color/utilities/MaterialDynamicColors;->isMonochrome(Lcom/google/android/material/color/utilities/DynamicScheme;)Z
+
+    move-result p0
+
+    if-eqz p0, :cond_0
+
+    const-wide v0, 0x4056800000000000L    # 90.0
+
+    goto :goto_0
+
+    :cond_0
+    const-wide/high16 v0, 0x403e000000000000L    # 30.0
+
+    :goto_0
+    invoke-static {v0, v1}, Ljava/lang/Double;->valueOf(D)Ljava/lang/Double;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method static synthetic lambda$onSecondary$70(Lcom/google/android/material/color/utilities/DynamicScheme;)Lcom/google/android/material/color/utilities/TonalPalette;
+    .locals 0
+
+    .line 457
+    iget-object p0, p0, Lcom/google/android/material/color/utilities/DynamicScheme;->secondaryPalette:Lcom/google/android/material/color/utilities/TonalPalette;
+
+    return-object p0
+.end method
+
+.method static synthetic lambda$onSecondary$71(Lcom/google/android/material/color/utilities/DynamicScheme;)Ljava/lang/Double;
+    .locals 3
+
+    .line 459
+    invoke-static {p0}, Lcom/google/android/material/color/utilities/MaterialDynamicColors;->isMonochrome(Lcom/google/android/material/color/utilities/DynamicScheme;)Z
+
+    move-result v0
+
+    const-wide/high16 v1, 0x4059000000000000L    # 100.0
+
+    if-eqz v0, :cond_1
+
+    .line 460
+    iget-boolean p0, p0, Lcom/google/android/material/color/utilities/DynamicScheme;->isDark:Z
+
+    if-eqz p0, :cond_0
+
+    const-wide/high16 v1, 0x4024000000000000L    # 10.0
+
+    :cond_0
+    invoke-static {v1, v2}, Ljava/lang/Double;->valueOf(D)Ljava/lang/Double;
+
+    move-result-object p0
+
+    return-object p0
+
+    .line 462
+    :cond_1
+    iget-boolean p0, p0, Lcom/google/android/material/color/utilities/DynamicScheme;->isDark:Z
+
+    if-eqz p0, :cond_2
+
+    const-wide/high16 v1, 0x4034000000000000L    # 20.0
+
+    :cond_2
+    invoke-static {v1, v2}, Ljava/lang/Double;->valueOf(D)Ljava/lang/Double;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method static synthetic lambda$onSecondaryContainer$76(Lcom/google/android/material/color/utilities/DynamicScheme;)Lcom/google/android/material/color/utilities/TonalPalette;
+    .locals 0
+
+    .line 506
+    iget-object p0, p0, Lcom/google/android/material/color/utilities/DynamicScheme;->secondaryPalette:Lcom/google/android/material/color/utilities/TonalPalette;
+
+    return-object p0
+.end method
+
+.method static synthetic lambda$onSecondaryFixed$123(Lcom/google/android/material/color/utilities/DynamicScheme;)Lcom/google/android/material/color/utilities/TonalPalette;
+    .locals 0
+
+    .line 745
+    iget-object p0, p0, Lcom/google/android/material/color/utilities/DynamicScheme;->secondaryPalette:Lcom/google/android/material/color/utilities/TonalPalette;
+
+    return-object p0
+.end method
+
+.method static synthetic lambda$onSecondaryFixed$124(Lcom/google/android/material/color/utilities/DynamicScheme;)Ljava/lang/Double;
+    .locals 2
+
+    const-wide/high16 v0, 0x4024000000000000L    # 10.0
+
+    .line 746
+    invoke-static {v0, v1}, Ljava/lang/Double;->valueOf(D)Ljava/lang/Double;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method static synthetic lambda$onSecondaryFixedVariant$127(Lcom/google/android/material/color/utilities/DynamicScheme;)Lcom/google/android/material/color/utilities/TonalPalette;
+    .locals 0
+
+    .line 758
+    iget-object p0, p0, Lcom/google/android/material/color/utilities/DynamicScheme;->secondaryPalette:Lcom/google/android/material/color/utilities/TonalPalette;
+
+    return-object p0
+.end method
+
+.method static synthetic lambda$onSecondaryFixedVariant$128(Lcom/google/android/material/color/utilities/DynamicScheme;)Ljava/lang/Double;
+    .locals 2
+
+    .line 759
+    invoke-static {p0}, Lcom/google/android/material/color/utilities/MaterialDynamicColors;->isMonochrome(Lcom/google/android/material/color/utilities/DynamicScheme;)Z
+
+    move-result p0
+
+    if-eqz p0, :cond_0
+
+    const-wide/high16 v0, 0x4039000000000000L    # 25.0
+
+    goto :goto_0
+
+    :cond_0
+    const-wide/high16 v0, 0x403e000000000000L    # 30.0
+
+    :goto_0
+    invoke-static {v0, v1}, Ljava/lang/Double;->valueOf(D)Ljava/lang/Double;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method static synthetic lambda$onSurface$31(Lcom/google/android/material/color/utilities/DynamicScheme;)Lcom/google/android/material/color/utilities/TonalPalette;
+    .locals 0
+
+    .line 220
+    iget-object p0, p0, Lcom/google/android/material/color/utilities/DynamicScheme;->neutralPalette:Lcom/google/android/material/color/utilities/TonalPalette;
+
+    return-object p0
+.end method
+
+.method static synthetic lambda$onSurface$32(Lcom/google/android/material/color/utilities/DynamicScheme;)Ljava/lang/Double;
+    .locals 2
+
+    .line 221
+    iget-boolean p0, p0, Lcom/google/android/material/color/utilities/DynamicScheme;->isDark:Z
+
+    if-eqz p0, :cond_0
+
+    const-wide v0, 0x4056800000000000L    # 90.0
+
+    goto :goto_0
+
+    :cond_0
+    const-wide/high16 v0, 0x4024000000000000L    # 10.0
+
+    :goto_0
+    invoke-static {v0, v1}, Ljava/lang/Double;->valueOf(D)Ljava/lang/Double;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method static synthetic lambda$onSurfaceVariant$35(Lcom/google/android/material/color/utilities/DynamicScheme;)Lcom/google/android/material/color/utilities/TonalPalette;
+    .locals 0
+
+    .line 246
+    iget-object p0, p0, Lcom/google/android/material/color/utilities/DynamicScheme;->neutralVariantPalette:Lcom/google/android/material/color/utilities/TonalPalette;
+
+    return-object p0
+.end method
+
+.method static synthetic lambda$onSurfaceVariant$36(Lcom/google/android/material/color/utilities/DynamicScheme;)Ljava/lang/Double;
+    .locals 2
+
+    .line 247
+    iget-boolean p0, p0, Lcom/google/android/material/color/utilities/DynamicScheme;->isDark:Z
+
+    if-eqz p0, :cond_0
+
+    const-wide/high16 v0, 0x4054000000000000L    # 80.0
+
+    goto :goto_0
+
+    :cond_0
+    const-wide/high16 v0, 0x403e000000000000L    # 30.0
+
+    :goto_0
+    invoke-static {v0, v1}, Ljava/lang/Double;->valueOf(D)Ljava/lang/Double;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method static synthetic lambda$onTertiary$82(Lcom/google/android/material/color/utilities/DynamicScheme;)Lcom/google/android/material/color/utilities/TonalPalette;
+    .locals 0
+
+    .line 543
+    iget-object p0, p0, Lcom/google/android/material/color/utilities/DynamicScheme;->tertiaryPalette:Lcom/google/android/material/color/utilities/TonalPalette;
+
+    return-object p0
+.end method
+
+.method static synthetic lambda$onTertiary$83(Lcom/google/android/material/color/utilities/DynamicScheme;)Ljava/lang/Double;
+    .locals 2
+
+    .line 545
+    invoke-static {p0}, Lcom/google/android/material/color/utilities/MaterialDynamicColors;->isMonochrome(Lcom/google/android/material/color/utilities/DynamicScheme;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_1
+
+    .line 546
+    iget-boolean p0, p0, Lcom/google/android/material/color/utilities/DynamicScheme;->isDark:Z
+
+    if-eqz p0, :cond_0
+
+    const-wide/high16 v0, 0x4024000000000000L    # 10.0
+
+    goto :goto_0
+
+    :cond_0
+    const-wide v0, 0x4056800000000000L    # 90.0
+
+    :goto_0
+    invoke-static {v0, v1}, Ljava/lang/Double;->valueOf(D)Ljava/lang/Double;
+
+    move-result-object p0
+
+    return-object p0
+
+    .line 548
+    :cond_1
+    iget-boolean p0, p0, Lcom/google/android/material/color/utilities/DynamicScheme;->isDark:Z
+
+    if-eqz p0, :cond_2
+
+    const-wide/high16 v0, 0x4034000000000000L    # 20.0
+
+    goto :goto_1
+
+    :cond_2
+    const-wide/high16 v0, 0x4059000000000000L    # 100.0
+
+    :goto_1
+    invoke-static {v0, v1}, Ljava/lang/Double;->valueOf(D)Ljava/lang/Double;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method static synthetic lambda$onTertiaryContainer$88(Lcom/google/android/material/color/utilities/DynamicScheme;)Lcom/google/android/material/color/utilities/TonalPalette;
+    .locals 0
+
+    .line 586
+    iget-object p0, p0, Lcom/google/android/material/color/utilities/DynamicScheme;->tertiaryPalette:Lcom/google/android/material/color/utilities/TonalPalette;
+
+    return-object p0
+.end method
+
+.method static synthetic lambda$onTertiaryFixed$137(Lcom/google/android/material/color/utilities/DynamicScheme;)Lcom/google/android/material/color/utilities/TonalPalette;
+    .locals 0
+
+    .line 801
+    iget-object p0, p0, Lcom/google/android/material/color/utilities/DynamicScheme;->tertiaryPalette:Lcom/google/android/material/color/utilities/TonalPalette;
+
+    return-object p0
+.end method
+
+.method static synthetic lambda$onTertiaryFixed$138(Lcom/google/android/material/color/utilities/DynamicScheme;)Ljava/lang/Double;
+    .locals 2
+
+    .line 802
+    invoke-static {p0}, Lcom/google/android/material/color/utilities/MaterialDynamicColors;->isMonochrome(Lcom/google/android/material/color/utilities/DynamicScheme;)Z
+
+    move-result p0
+
+    if-eqz p0, :cond_0
+
+    const-wide/high16 v0, 0x4059000000000000L    # 100.0
+
+    goto :goto_0
+
+    :cond_0
+    const-wide/high16 v0, 0x4024000000000000L    # 10.0
+
+    :goto_0
+    invoke-static {v0, v1}, Ljava/lang/Double;->valueOf(D)Ljava/lang/Double;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method static synthetic lambda$onTertiaryFixedVariant$141(Lcom/google/android/material/color/utilities/DynamicScheme;)Lcom/google/android/material/color/utilities/TonalPalette;
+    .locals 0
+
+    .line 814
+    iget-object p0, p0, Lcom/google/android/material/color/utilities/DynamicScheme;->tertiaryPalette:Lcom/google/android/material/color/utilities/TonalPalette;
+
+    return-object p0
+.end method
+
+.method static synthetic lambda$onTertiaryFixedVariant$142(Lcom/google/android/material/color/utilities/DynamicScheme;)Ljava/lang/Double;
+    .locals 2
+
+    .line 815
+    invoke-static {p0}, Lcom/google/android/material/color/utilities/MaterialDynamicColors;->isMonochrome(Lcom/google/android/material/color/utilities/DynamicScheme;)Z
+
+    move-result p0
+
+    if-eqz p0, :cond_0
+
+    const-wide v0, 0x4056800000000000L    # 90.0
+
+    goto :goto_0
+
+    :cond_0
+    const-wide/high16 v0, 0x403e000000000000L    # 30.0
+
+    :goto_0
+    invoke-static {v0, v1}, Ljava/lang/Double;->valueOf(D)Ljava/lang/Double;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method static synthetic lambda$outline$42(Lcom/google/android/material/color/utilities/DynamicScheme;)Lcom/google/android/material/color/utilities/TonalPalette;
+    .locals 0
+
+    .line 285
+    iget-object p0, p0, Lcom/google/android/material/color/utilities/DynamicScheme;->neutralVariantPalette:Lcom/google/android/material/color/utilities/TonalPalette;
+
+    return-object p0
+.end method
+
+.method static synthetic lambda$outline$43(Lcom/google/android/material/color/utilities/DynamicScheme;)Ljava/lang/Double;
+    .locals 2
+
+    .line 286
+    iget-boolean p0, p0, Lcom/google/android/material/color/utilities/DynamicScheme;->isDark:Z
+
+    if-eqz p0, :cond_0
+
+    const-wide/high16 v0, 0x404e000000000000L    # 60.0
+
+    goto :goto_0
+
+    :cond_0
+    const-wide/high16 v0, 0x4049000000000000L    # 50.0
+
+    :goto_0
+    invoke-static {v0, v1}, Ljava/lang/Double;->valueOf(D)Ljava/lang/Double;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method static synthetic lambda$outlineVariant$44(Lcom/google/android/material/color/utilities/DynamicScheme;)Lcom/google/android/material/color/utilities/TonalPalette;
+    .locals 0
+
+    .line 298
+    iget-object p0, p0, Lcom/google/android/material/color/utilities/DynamicScheme;->neutralVariantPalette:Lcom/google/android/material/color/utilities/TonalPalette;
+
+    return-object p0
+.end method
+
+.method static synthetic lambda$outlineVariant$45(Lcom/google/android/material/color/utilities/DynamicScheme;)Ljava/lang/Double;
+    .locals 2
+
+    .line 299
+    iget-boolean p0, p0, Lcom/google/android/material/color/utilities/DynamicScheme;->isDark:Z
+
+    if-eqz p0, :cond_0
+
+    const-wide/high16 v0, 0x403e000000000000L    # 30.0
+
+    goto :goto_0
+
+    :cond_0
+    const-wide/high16 v0, 0x4054000000000000L    # 80.0
+
+    :goto_0
+    invoke-static {v0, v1}, Ljava/lang/Double;->valueOf(D)Ljava/lang/Double;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method static synthetic lambda$primary$52(Lcom/google/android/material/color/utilities/DynamicScheme;)Lcom/google/android/material/color/utilities/TonalPalette;
+    .locals 0
+
+    .line 350
+    iget-object p0, p0, Lcom/google/android/material/color/utilities/DynamicScheme;->primaryPalette:Lcom/google/android/material/color/utilities/TonalPalette;
+
+    return-object p0
+.end method
+
+.method static synthetic lambda$primary$53(Lcom/google/android/material/color/utilities/DynamicScheme;)Ljava/lang/Double;
+    .locals 2
+
+    .line 352
+    invoke-static {p0}, Lcom/google/android/material/color/utilities/MaterialDynamicColors;->isMonochrome(Lcom/google/android/material/color/utilities/DynamicScheme;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_1
+
+    .line 353
+    iget-boolean p0, p0, Lcom/google/android/material/color/utilities/DynamicScheme;->isDark:Z
+
+    if-eqz p0, :cond_0
+
+    const-wide/high16 v0, 0x4059000000000000L    # 100.0
+
+    goto :goto_0
+
+    :cond_0
+    const-wide/16 v0, 0x0
+
+    :goto_0
+    invoke-static {v0, v1}, Ljava/lang/Double;->valueOf(D)Ljava/lang/Double;
+
+    move-result-object p0
+
+    return-object p0
+
+    .line 355
+    :cond_1
+    iget-boolean p0, p0, Lcom/google/android/material/color/utilities/DynamicScheme;->isDark:Z
+
+    if-eqz p0, :cond_2
+
+    const-wide/high16 v0, 0x4054000000000000L    # 80.0
+
+    goto :goto_1
+
+    :cond_2
+    const-wide/high16 v0, 0x4044000000000000L    # 40.0
+
+    :goto_1
+    invoke-static {v0, v1}, Ljava/lang/Double;->valueOf(D)Ljava/lang/Double;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method static synthetic lambda$primaryContainer$58(Lcom/google/android/material/color/utilities/DynamicScheme;)Lcom/google/android/material/color/utilities/TonalPalette;
+    .locals 0
+
+    .line 387
+    iget-object p0, p0, Lcom/google/android/material/color/utilities/DynamicScheme;->primaryPalette:Lcom/google/android/material/color/utilities/TonalPalette;
+
+    return-object p0
+.end method
+
+.method static synthetic lambda$primaryContainer$59(Lcom/google/android/material/color/utilities/DynamicScheme;)Ljava/lang/Double;
+    .locals 2
+
+    .line 389
+    invoke-static {p0}, Lcom/google/android/material/color/utilities/MaterialDynamicColors;->isFidelity(Lcom/google/android/material/color/utilities/DynamicScheme;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_0
+
+    .line 390
+    iget-object v0, p0, Lcom/google/android/material/color/utilities/DynamicScheme;->sourceColorHct:Lcom/google/android/material/color/utilities/Hct;
+
+    invoke-static {v0, p0}, Lcom/google/android/material/color/utilities/MaterialDynamicColors;->performAlbers(Lcom/google/android/material/color/utilities/Hct;Lcom/google/android/material/color/utilities/DynamicScheme;)D
 
     move-result-wide v0
 
-    .line 151
+    invoke-static {v0, v1}, Ljava/lang/Double;->valueOf(D)Ljava/lang/Double;
+
+    move-result-object p0
+
+    return-object p0
+
+    .line 392
+    :cond_0
+    invoke-static {p0}, Lcom/google/android/material/color/utilities/MaterialDynamicColors;->isMonochrome(Lcom/google/android/material/color/utilities/DynamicScheme;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_2
+
+    .line 393
+    iget-boolean p0, p0, Lcom/google/android/material/color/utilities/DynamicScheme;->isDark:Z
+
+    if-eqz p0, :cond_1
+
+    const-wide v0, 0x4055400000000000L    # 85.0
+
+    goto :goto_0
+
+    :cond_1
+    const-wide/high16 v0, 0x4039000000000000L    # 25.0
+
+    :goto_0
+    invoke-static {v0, v1}, Ljava/lang/Double;->valueOf(D)Ljava/lang/Double;
+
+    move-result-object p0
+
+    return-object p0
+
+    .line 395
+    :cond_2
+    iget-boolean p0, p0, Lcom/google/android/material/color/utilities/DynamicScheme;->isDark:Z
+
+    if-eqz p0, :cond_3
+
+    const-wide/high16 v0, 0x403e000000000000L    # 30.0
+
+    goto :goto_1
+
+    :cond_3
+    const-wide v0, 0x4056800000000000L    # 90.0
+
+    :goto_1
+    invoke-static {v0, v1}, Ljava/lang/Double;->valueOf(D)Ljava/lang/Double;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method static synthetic lambda$primaryFixed$103(Lcom/google/android/material/color/utilities/DynamicScheme;)Lcom/google/android/material/color/utilities/TonalPalette;
+    .locals 0
+
+    .line 661
+    iget-object p0, p0, Lcom/google/android/material/color/utilities/DynamicScheme;->primaryPalette:Lcom/google/android/material/color/utilities/TonalPalette;
+
+    return-object p0
+.end method
+
+.method static synthetic lambda$primaryFixed$104(Lcom/google/android/material/color/utilities/DynamicScheme;)Ljava/lang/Double;
+    .locals 2
+
+    .line 662
+    invoke-static {p0}, Lcom/google/android/material/color/utilities/MaterialDynamicColors;->isMonochrome(Lcom/google/android/material/color/utilities/DynamicScheme;)Z
+
+    move-result p0
+
+    if-eqz p0, :cond_0
+
+    const-wide/high16 v0, 0x4044000000000000L    # 40.0
+
+    goto :goto_0
+
+    :cond_0
+    const-wide v0, 0x4056800000000000L    # 90.0
+
+    :goto_0
+    invoke-static {v0, v1}, Ljava/lang/Double;->valueOf(D)Ljava/lang/Double;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method static synthetic lambda$primaryFixedDim$106(Lcom/google/android/material/color/utilities/DynamicScheme;)Lcom/google/android/material/color/utilities/TonalPalette;
+    .locals 0
+
+    .line 675
+    iget-object p0, p0, Lcom/google/android/material/color/utilities/DynamicScheme;->primaryPalette:Lcom/google/android/material/color/utilities/TonalPalette;
+
+    return-object p0
+.end method
+
+.method static synthetic lambda$primaryFixedDim$107(Lcom/google/android/material/color/utilities/DynamicScheme;)Ljava/lang/Double;
+    .locals 2
+
+    .line 676
+    invoke-static {p0}, Lcom/google/android/material/color/utilities/MaterialDynamicColors;->isMonochrome(Lcom/google/android/material/color/utilities/DynamicScheme;)Z
+
+    move-result p0
+
+    if-eqz p0, :cond_0
+
+    const-wide/high16 v0, 0x403e000000000000L    # 30.0
+
+    goto :goto_0
+
+    :cond_0
+    const-wide/high16 v0, 0x4054000000000000L    # 80.0
+
+    :goto_0
+    invoke-static {v0, v1}, Ljava/lang/Double;->valueOf(D)Ljava/lang/Double;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method static synthetic lambda$primaryPaletteKeyColor$0(Lcom/google/android/material/color/utilities/DynamicScheme;)Lcom/google/android/material/color/utilities/TonalPalette;
+    .locals 0
+
+    .line 50
+    iget-object p0, p0, Lcom/google/android/material/color/utilities/DynamicScheme;->primaryPalette:Lcom/google/android/material/color/utilities/TonalPalette;
+
+    return-object p0
+.end method
+
+.method static synthetic lambda$primaryPaletteKeyColor$1(Lcom/google/android/material/color/utilities/DynamicScheme;)Ljava/lang/Double;
+    .locals 2
+
+    .line 51
+    iget-object p0, p0, Lcom/google/android/material/color/utilities/DynamicScheme;->primaryPalette:Lcom/google/android/material/color/utilities/TonalPalette;
+
+    invoke-virtual {p0}, Lcom/google/android/material/color/utilities/TonalPalette;->getKeyColor()Lcom/google/android/material/color/utilities/Hct;
+
+    move-result-object p0
+
+    invoke-virtual {p0}, Lcom/google/android/material/color/utilities/Hct;->getTone()D
+
+    move-result-wide v0
+
+    invoke-static {v0, v1}, Ljava/lang/Double;->valueOf(D)Ljava/lang/Double;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method static synthetic lambda$scrim$48(Lcom/google/android/material/color/utilities/DynamicScheme;)Lcom/google/android/material/color/utilities/TonalPalette;
+    .locals 0
+
+    .line 324
+    iget-object p0, p0, Lcom/google/android/material/color/utilities/DynamicScheme;->neutralPalette:Lcom/google/android/material/color/utilities/TonalPalette;
+
+    return-object p0
+.end method
+
+.method static synthetic lambda$scrim$49(Lcom/google/android/material/color/utilities/DynamicScheme;)Ljava/lang/Double;
+    .locals 2
+
+    const-wide/16 v0, 0x0
+
+    .line 325
+    invoke-static {v0, v1}, Ljava/lang/Double;->valueOf(D)Ljava/lang/Double;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method static synthetic lambda$secondary$67(Lcom/google/android/material/color/utilities/DynamicScheme;)Lcom/google/android/material/color/utilities/TonalPalette;
+    .locals 0
+
+    .line 443
+    iget-object p0, p0, Lcom/google/android/material/color/utilities/DynamicScheme;->secondaryPalette:Lcom/google/android/material/color/utilities/TonalPalette;
+
+    return-object p0
+.end method
+
+.method static synthetic lambda$secondary$68(Lcom/google/android/material/color/utilities/DynamicScheme;)Ljava/lang/Double;
+    .locals 2
+
+    .line 444
+    iget-boolean p0, p0, Lcom/google/android/material/color/utilities/DynamicScheme;->isDark:Z
+
+    if-eqz p0, :cond_0
+
+    const-wide/high16 v0, 0x4054000000000000L    # 80.0
+
+    goto :goto_0
+
+    :cond_0
+    const-wide/high16 v0, 0x4044000000000000L    # 40.0
+
+    :goto_0
+    invoke-static {v0, v1}, Ljava/lang/Double;->valueOf(D)Ljava/lang/Double;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method static synthetic lambda$secondaryContainer$73(Lcom/google/android/material/color/utilities/DynamicScheme;)Lcom/google/android/material/color/utilities/TonalPalette;
+    .locals 0
+
+    .line 476
+    iget-object p0, p0, Lcom/google/android/material/color/utilities/DynamicScheme;->secondaryPalette:Lcom/google/android/material/color/utilities/TonalPalette;
+
+    return-object p0
+.end method
+
+.method static synthetic lambda$secondaryContainer$74(Lcom/google/android/material/color/utilities/DynamicScheme;)Ljava/lang/Double;
+    .locals 12
+
+    .line 478
+    iget-boolean v0, p0, Lcom/google/android/material/color/utilities/DynamicScheme;->isDark:Z
+
+    const-wide/high16 v1, 0x403e000000000000L    # 30.0
+
+    if-eqz v0, :cond_0
+
+    move-wide v9, v1
+
+    goto :goto_0
+
+    :cond_0
+    const-wide v3, 0x4056800000000000L    # 90.0
+
+    move-wide v9, v3
+
+    .line 479
+    :goto_0
+    invoke-static {p0}, Lcom/google/android/material/color/utilities/MaterialDynamicColors;->isMonochrome(Lcom/google/android/material/color/utilities/DynamicScheme;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_2
+
+    .line 480
+    iget-boolean p0, p0, Lcom/google/android/material/color/utilities/DynamicScheme;->isDark:Z
+
+    if-eqz p0, :cond_1
+
+    goto :goto_1
+
+    :cond_1
+    const-wide v1, 0x4055400000000000L    # 85.0
+
+    :goto_1
+    invoke-static {v1, v2}, Ljava/lang/Double;->valueOf(D)Ljava/lang/Double;
+
+    move-result-object p0
+
+    return-object p0
+
+    .line 482
+    :cond_2
+    invoke-static {p0}, Lcom/google/android/material/color/utilities/MaterialDynamicColors;->isFidelity(Lcom/google/android/material/color/utilities/DynamicScheme;)Z
+
+    move-result v0
+
+    if-nez v0, :cond_3
+
+    .line 483
+    invoke-static {v9, v10}, Ljava/lang/Double;->valueOf(D)Ljava/lang/Double;
+
+    move-result-object p0
+
+    return-object p0
+
+    .line 485
+    :cond_3
+    iget-object v0, p0, Lcom/google/android/material/color/utilities/DynamicScheme;->secondaryPalette:Lcom/google/android/material/color/utilities/TonalPalette;
+
+    .line 487
+    invoke-virtual {v0}, Lcom/google/android/material/color/utilities/TonalPalette;->getHue()D
+
+    move-result-wide v5
+
+    iget-object v0, p0, Lcom/google/android/material/color/utilities/DynamicScheme;->secondaryPalette:Lcom/google/android/material/color/utilities/TonalPalette;
+
+    .line 488
+    invoke-virtual {v0}, Lcom/google/android/material/color/utilities/TonalPalette;->getChroma()D
+
+    move-result-wide v7
+
+    iget-boolean v0, p0, Lcom/google/android/material/color/utilities/DynamicScheme;->isDark:Z
+
+    xor-int/lit8 v11, v0, 0x1
+
+    .line 486
+    invoke-static/range {v5 .. v11}, Lcom/google/android/material/color/utilities/MaterialDynamicColors;->findDesiredChromaByTone(DDDZ)D
+
+    move-result-wide v0
+
+    .line 491
     iget-object v2, p0, Lcom/google/android/material/color/utilities/DynamicScheme;->secondaryPalette:Lcom/google/android/material/color/utilities/TonalPalette;
 
     invoke-virtual {v2, v0, v1}, Lcom/google/android/material/color/utilities/TonalPalette;->getHct(D)Lcom/google/android/material/color/utilities/Hct;
@@ -2966,7 +1590,7 @@
 
     move-result-wide v0
 
-    .line 152
+    .line 492
     invoke-static {v0, v1}, Ljava/lang/Double;->valueOf(D)Ljava/lang/Double;
 
     move-result-object p0
@@ -2974,30 +1598,139 @@
     return-object p0
 .end method
 
-.method static synthetic lambda$static$58(Lcom/google/android/material/color/utilities/DynamicScheme;)Lcom/google/android/material/color/utilities/DynamicColor;
+.method static synthetic lambda$secondaryFixed$117(Lcom/google/android/material/color/utilities/DynamicScheme;)Lcom/google/android/material/color/utilities/TonalPalette;
     .locals 0
 
-    .line 154
-    invoke-static {p0}, Lcom/google/android/material/color/utilities/MaterialDynamicColors;->highestSurface(Lcom/google/android/material/color/utilities/DynamicScheme;)Lcom/google/android/material/color/utilities/DynamicColor;
+    .line 715
+    iget-object p0, p0, Lcom/google/android/material/color/utilities/DynamicScheme;->secondaryPalette:Lcom/google/android/material/color/utilities/TonalPalette;
+
+    return-object p0
+.end method
+
+.method static synthetic lambda$secondaryFixed$118(Lcom/google/android/material/color/utilities/DynamicScheme;)Ljava/lang/Double;
+    .locals 2
+
+    .line 716
+    invoke-static {p0}, Lcom/google/android/material/color/utilities/MaterialDynamicColors;->isMonochrome(Lcom/google/android/material/color/utilities/DynamicScheme;)Z
+
+    move-result p0
+
+    if-eqz p0, :cond_0
+
+    const-wide/high16 v0, 0x4054000000000000L    # 80.0
+
+    goto :goto_0
+
+    :cond_0
+    const-wide v0, 0x4056800000000000L    # 90.0
+
+    :goto_0
+    invoke-static {v0, v1}, Ljava/lang/Double;->valueOf(D)Ljava/lang/Double;
 
     move-result-object p0
 
     return-object p0
 .end method
 
-.method static synthetic lambda$static$59(Lcom/google/android/material/color/utilities/DynamicScheme;)Lcom/google/android/material/color/utilities/TonalPalette;
+.method static synthetic lambda$secondaryFixedDim$120(Lcom/google/android/material/color/utilities/DynamicScheme;)Lcom/google/android/material/color/utilities/TonalPalette;
     .locals 0
 
-    .line 158
+    .line 730
     iget-object p0, p0, Lcom/google/android/material/color/utilities/DynamicScheme;->secondaryPalette:Lcom/google/android/material/color/utilities/TonalPalette;
 
     return-object p0
 .end method
 
-.method static synthetic lambda$static$6(Lcom/google/android/material/color/utilities/DynamicScheme;)Ljava/lang/Double;
+.method static synthetic lambda$secondaryFixedDim$121(Lcom/google/android/material/color/utilities/DynamicScheme;)Ljava/lang/Double;
     .locals 2
 
-    .line 46
+    .line 731
+    invoke-static {p0}, Lcom/google/android/material/color/utilities/MaterialDynamicColors;->isMonochrome(Lcom/google/android/material/color/utilities/DynamicScheme;)Z
+
+    move-result p0
+
+    if-eqz p0, :cond_0
+
+    const-wide v0, 0x4051800000000000L    # 70.0
+
+    goto :goto_0
+
+    :cond_0
+    const-wide/high16 v0, 0x4054000000000000L    # 80.0
+
+    :goto_0
+    invoke-static {v0, v1}, Ljava/lang/Double;->valueOf(D)Ljava/lang/Double;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method static synthetic lambda$secondaryPaletteKeyColor$2(Lcom/google/android/material/color/utilities/DynamicScheme;)Lcom/google/android/material/color/utilities/TonalPalette;
+    .locals 0
+
+    .line 58
+    iget-object p0, p0, Lcom/google/android/material/color/utilities/DynamicScheme;->secondaryPalette:Lcom/google/android/material/color/utilities/TonalPalette;
+
+    return-object p0
+.end method
+
+.method static synthetic lambda$secondaryPaletteKeyColor$3(Lcom/google/android/material/color/utilities/DynamicScheme;)Ljava/lang/Double;
+    .locals 2
+
+    .line 59
+    iget-object p0, p0, Lcom/google/android/material/color/utilities/DynamicScheme;->secondaryPalette:Lcom/google/android/material/color/utilities/TonalPalette;
+
+    invoke-virtual {p0}, Lcom/google/android/material/color/utilities/TonalPalette;->getKeyColor()Lcom/google/android/material/color/utilities/Hct;
+
+    move-result-object p0
+
+    invoke-virtual {p0}, Lcom/google/android/material/color/utilities/Hct;->getTone()D
+
+    move-result-wide v0
+
+    invoke-static {v0, v1}, Ljava/lang/Double;->valueOf(D)Ljava/lang/Double;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method static synthetic lambda$shadow$46(Lcom/google/android/material/color/utilities/DynamicScheme;)Lcom/google/android/material/color/utilities/TonalPalette;
+    .locals 0
+
+    .line 311
+    iget-object p0, p0, Lcom/google/android/material/color/utilities/DynamicScheme;->neutralPalette:Lcom/google/android/material/color/utilities/TonalPalette;
+
+    return-object p0
+.end method
+
+.method static synthetic lambda$shadow$47(Lcom/google/android/material/color/utilities/DynamicScheme;)Ljava/lang/Double;
+    .locals 2
+
+    const-wide/16 v0, 0x0
+
+    .line 312
+    invoke-static {v0, v1}, Ljava/lang/Double;->valueOf(D)Ljava/lang/Double;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method static synthetic lambda$surface$15(Lcom/google/android/material/color/utilities/DynamicScheme;)Lcom/google/android/material/color/utilities/TonalPalette;
+    .locals 0
+
+    .line 116
+    iget-object p0, p0, Lcom/google/android/material/color/utilities/DynamicScheme;->neutralPalette:Lcom/google/android/material/color/utilities/TonalPalette;
+
+    return-object p0
+.end method
+
+.method static synthetic lambda$surface$16(Lcom/google/android/material/color/utilities/DynamicScheme;)Ljava/lang/Double;
+    .locals 2
+
+    .line 117
     iget-boolean p0, p0, Lcom/google/android/material/color/utilities/DynamicScheme;->isDark:Z
 
     if-eqz p0, :cond_0
@@ -3017,27 +1750,29 @@
     return-object p0
 .end method
 
-.method static synthetic lambda$static$60(Lcom/google/android/material/color/utilities/DynamicScheme;)Ljava/lang/Double;
-    .locals 4
+.method static synthetic lambda$surfaceBright$19(Lcom/google/android/material/color/utilities/DynamicScheme;)Lcom/google/android/material/color/utilities/TonalPalette;
+    .locals 0
 
-    .line 160
-    invoke-static {p0}, Lcom/google/android/material/color/utilities/MaterialDynamicColors;->isFidelity(Lcom/google/android/material/color/utilities/DynamicScheme;)Z
+    .line 142
+    iget-object p0, p0, Lcom/google/android/material/color/utilities/DynamicScheme;->neutralPalette:Lcom/google/android/material/color/utilities/TonalPalette;
 
-    move-result v0
+    return-object p0
+.end method
 
-    if-nez v0, :cond_1
+.method static synthetic lambda$surfaceBright$20(Lcom/google/android/material/color/utilities/DynamicScheme;)Ljava/lang/Double;
+    .locals 2
 
-    .line 161
+    .line 143
     iget-boolean p0, p0, Lcom/google/android/material/color/utilities/DynamicScheme;->isDark:Z
 
     if-eqz p0, :cond_0
 
-    const-wide v0, 0x4056800000000000L    # 90.0
+    const-wide/high16 v0, 0x4038000000000000L    # 24.0
 
     goto :goto_0
 
     :cond_0
-    const-wide/high16 v0, 0x4024000000000000L    # 10.0
+    const-wide v0, 0x4058800000000000L    # 98.0
 
     :goto_0
     invoke-static {v0, v1}, Ljava/lang/Double;->valueOf(D)Ljava/lang/Double;
@@ -3045,21 +1780,33 @@
     move-result-object p0
 
     return-object p0
+.end method
 
-    .line 163
-    :cond_1
-    sget-object v0, Lcom/google/android/material/color/utilities/MaterialDynamicColors;->secondaryContainer:Lcom/google/android/material/color/utilities/DynamicColor;
+.method static synthetic lambda$surfaceContainer$25(Lcom/google/android/material/color/utilities/DynamicScheme;)Lcom/google/android/material/color/utilities/TonalPalette;
+    .locals 0
 
-    invoke-virtual {v0, p0}, Lcom/google/android/material/color/utilities/DynamicColor;->getTone(Lcom/google/android/material/color/utilities/DynamicScheme;)D
+    .line 181
+    iget-object p0, p0, Lcom/google/android/material/color/utilities/DynamicScheme;->neutralPalette:Lcom/google/android/material/color/utilities/TonalPalette;
 
-    move-result-wide v0
+    return-object p0
+.end method
 
-    const-wide/high16 v2, 0x4012000000000000L    # 4.5
+.method static synthetic lambda$surfaceContainer$26(Lcom/google/android/material/color/utilities/DynamicScheme;)Ljava/lang/Double;
+    .locals 2
 
-    invoke-static {v0, v1, v2, v3}, Lcom/google/android/material/color/utilities/DynamicColor;->contrastingTone(DD)D
+    .line 182
+    iget-boolean p0, p0, Lcom/google/android/material/color/utilities/DynamicScheme;->isDark:Z
 
-    move-result-wide v0
+    if-eqz p0, :cond_0
 
+    const-wide/high16 v0, 0x4028000000000000L    # 12.0
+
+    goto :goto_0
+
+    :cond_0
+    const-wide v0, 0x4057800000000000L    # 94.0
+
+    :goto_0
     invoke-static {v0, v1}, Ljava/lang/Double;->valueOf(D)Ljava/lang/Double;
 
     move-result-object p0
@@ -3067,28 +1814,179 @@
     return-object p0
 .end method
 
-.method static synthetic lambda$static$61(Lcom/google/android/material/color/utilities/DynamicScheme;)Lcom/google/android/material/color/utilities/DynamicColor;
+.method static synthetic lambda$surfaceContainerHigh$27(Lcom/google/android/material/color/utilities/DynamicScheme;)Lcom/google/android/material/color/utilities/TonalPalette;
     .locals 0
 
-    .line 165
-    sget-object p0, Lcom/google/android/material/color/utilities/MaterialDynamicColors;->secondaryContainer:Lcom/google/android/material/color/utilities/DynamicColor;
+    .line 194
+    iget-object p0, p0, Lcom/google/android/material/color/utilities/DynamicScheme;->neutralPalette:Lcom/google/android/material/color/utilities/TonalPalette;
 
     return-object p0
 .end method
 
-.method static synthetic lambda$static$62(Lcom/google/android/material/color/utilities/DynamicScheme;)Lcom/google/android/material/color/utilities/TonalPalette;
-    .locals 0
-
-    .line 169
-    iget-object p0, p0, Lcom/google/android/material/color/utilities/DynamicScheme;->secondaryPalette:Lcom/google/android/material/color/utilities/TonalPalette;
-
-    return-object p0
-.end method
-
-.method static synthetic lambda$static$63(Lcom/google/android/material/color/utilities/DynamicScheme;)Ljava/lang/Double;
+.method static synthetic lambda$surfaceContainerHigh$28(Lcom/google/android/material/color/utilities/DynamicScheme;)Ljava/lang/Double;
     .locals 2
 
-    .line 170
+    .line 195
+    iget-boolean p0, p0, Lcom/google/android/material/color/utilities/DynamicScheme;->isDark:Z
+
+    if-eqz p0, :cond_0
+
+    const-wide/high16 v0, 0x4031000000000000L    # 17.0
+
+    goto :goto_0
+
+    :cond_0
+    const-wide/high16 v0, 0x4057000000000000L    # 92.0
+
+    :goto_0
+    invoke-static {v0, v1}, Ljava/lang/Double;->valueOf(D)Ljava/lang/Double;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method static synthetic lambda$surfaceContainerHighest$29(Lcom/google/android/material/color/utilities/DynamicScheme;)Lcom/google/android/material/color/utilities/TonalPalette;
+    .locals 0
+
+    .line 207
+    iget-object p0, p0, Lcom/google/android/material/color/utilities/DynamicScheme;->neutralPalette:Lcom/google/android/material/color/utilities/TonalPalette;
+
+    return-object p0
+.end method
+
+.method static synthetic lambda$surfaceContainerHighest$30(Lcom/google/android/material/color/utilities/DynamicScheme;)Ljava/lang/Double;
+    .locals 2
+
+    .line 208
+    iget-boolean p0, p0, Lcom/google/android/material/color/utilities/DynamicScheme;->isDark:Z
+
+    if-eqz p0, :cond_0
+
+    const-wide/high16 v0, 0x4036000000000000L    # 22.0
+
+    goto :goto_0
+
+    :cond_0
+    const-wide v0, 0x4056800000000000L    # 90.0
+
+    :goto_0
+    invoke-static {v0, v1}, Ljava/lang/Double;->valueOf(D)Ljava/lang/Double;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method static synthetic lambda$surfaceContainerLow$23(Lcom/google/android/material/color/utilities/DynamicScheme;)Lcom/google/android/material/color/utilities/TonalPalette;
+    .locals 0
+
+    .line 168
+    iget-object p0, p0, Lcom/google/android/material/color/utilities/DynamicScheme;->neutralPalette:Lcom/google/android/material/color/utilities/TonalPalette;
+
+    return-object p0
+.end method
+
+.method static synthetic lambda$surfaceContainerLow$24(Lcom/google/android/material/color/utilities/DynamicScheme;)Ljava/lang/Double;
+    .locals 2
+
+    .line 169
+    iget-boolean p0, p0, Lcom/google/android/material/color/utilities/DynamicScheme;->isDark:Z
+
+    if-eqz p0, :cond_0
+
+    const-wide/high16 v0, 0x4024000000000000L    # 10.0
+
+    goto :goto_0
+
+    :cond_0
+    const-wide/high16 v0, 0x4058000000000000L    # 96.0
+
+    :goto_0
+    invoke-static {v0, v1}, Ljava/lang/Double;->valueOf(D)Ljava/lang/Double;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method static synthetic lambda$surfaceContainerLowest$21(Lcom/google/android/material/color/utilities/DynamicScheme;)Lcom/google/android/material/color/utilities/TonalPalette;
+    .locals 0
+
+    .line 155
+    iget-object p0, p0, Lcom/google/android/material/color/utilities/DynamicScheme;->neutralPalette:Lcom/google/android/material/color/utilities/TonalPalette;
+
+    return-object p0
+.end method
+
+.method static synthetic lambda$surfaceContainerLowest$22(Lcom/google/android/material/color/utilities/DynamicScheme;)Ljava/lang/Double;
+    .locals 2
+
+    .line 156
+    iget-boolean p0, p0, Lcom/google/android/material/color/utilities/DynamicScheme;->isDark:Z
+
+    if-eqz p0, :cond_0
+
+    const-wide/high16 v0, 0x4010000000000000L    # 4.0
+
+    goto :goto_0
+
+    :cond_0
+    const-wide/high16 v0, 0x4059000000000000L    # 100.0
+
+    :goto_0
+    invoke-static {v0, v1}, Ljava/lang/Double;->valueOf(D)Ljava/lang/Double;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method static synthetic lambda$surfaceDim$17(Lcom/google/android/material/color/utilities/DynamicScheme;)Lcom/google/android/material/color/utilities/TonalPalette;
+    .locals 0
+
+    .line 129
+    iget-object p0, p0, Lcom/google/android/material/color/utilities/DynamicScheme;->neutralPalette:Lcom/google/android/material/color/utilities/TonalPalette;
+
+    return-object p0
+.end method
+
+.method static synthetic lambda$surfaceDim$18(Lcom/google/android/material/color/utilities/DynamicScheme;)Ljava/lang/Double;
+    .locals 2
+
+    .line 130
+    iget-boolean p0, p0, Lcom/google/android/material/color/utilities/DynamicScheme;->isDark:Z
+
+    if-eqz p0, :cond_0
+
+    const-wide/high16 v0, 0x4018000000000000L    # 6.0
+
+    goto :goto_0
+
+    :cond_0
+    const-wide v0, 0x4055c00000000000L    # 87.0
+
+    :goto_0
+    invoke-static {v0, v1}, Ljava/lang/Double;->valueOf(D)Ljava/lang/Double;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method static synthetic lambda$surfaceTint$50(Lcom/google/android/material/color/utilities/DynamicScheme;)Lcom/google/android/material/color/utilities/TonalPalette;
+    .locals 0
+
+    .line 337
+    iget-object p0, p0, Lcom/google/android/material/color/utilities/DynamicScheme;->primaryPalette:Lcom/google/android/material/color/utilities/TonalPalette;
+
+    return-object p0
+.end method
+
+.method static synthetic lambda$surfaceTint$51(Lcom/google/android/material/color/utilities/DynamicScheme;)Ljava/lang/Double;
+    .locals 2
+
+    .line 338
     iget-boolean p0, p0, Lcom/google/android/material/color/utilities/DynamicScheme;->isDark:Z
 
     if-eqz p0, :cond_0
@@ -3108,115 +2006,19 @@
     return-object p0
 .end method
 
-.method static synthetic lambda$static$64(Lcom/google/android/material/color/utilities/DynamicScheme;)Lcom/google/android/material/color/utilities/DynamicColor;
+.method static synthetic lambda$surfaceVariant$33(Lcom/google/android/material/color/utilities/DynamicScheme;)Lcom/google/android/material/color/utilities/TonalPalette;
     .locals 0
 
-    .line 171
-    invoke-static {p0}, Lcom/google/android/material/color/utilities/MaterialDynamicColors;->highestSurface(Lcom/google/android/material/color/utilities/DynamicScheme;)Lcom/google/android/material/color/utilities/DynamicColor;
-
-    move-result-object p0
+    .line 233
+    iget-object p0, p0, Lcom/google/android/material/color/utilities/DynamicScheme;->neutralVariantPalette:Lcom/google/android/material/color/utilities/TonalPalette;
 
     return-object p0
 .end method
 
-.method static synthetic lambda$static$65(Lcom/google/android/material/color/utilities/DynamicScheme;)Lcom/google/android/material/color/utilities/ToneDeltaConstraint;
-    .locals 4
-
-    .line 173
-    new-instance v0, Lcom/google/android/material/color/utilities/ToneDeltaConstraint;
-
-    sget-object v1, Lcom/google/android/material/color/utilities/MaterialDynamicColors;->secondaryContainer:Lcom/google/android/material/color/utilities/DynamicColor;
-
-    .line 176
-    iget-boolean p0, p0, Lcom/google/android/material/color/utilities/DynamicScheme;->isDark:Z
-
-    if-eqz p0, :cond_0
-
-    sget-object p0, Lcom/google/android/material/color/utilities/TonePolarity;->DARKER:Lcom/google/android/material/color/utilities/TonePolarity;
-
-    goto :goto_0
-
-    :cond_0
-    sget-object p0, Lcom/google/android/material/color/utilities/TonePolarity;->LIGHTER:Lcom/google/android/material/color/utilities/TonePolarity;
-
-    :goto_0
-    const-wide/high16 v2, 0x402e000000000000L    # 15.0
-
-    invoke-direct {v0, v2, v3, v1, p0}, Lcom/google/android/material/color/utilities/ToneDeltaConstraint;-><init>(DLcom/google/android/material/color/utilities/DynamicColor;Lcom/google/android/material/color/utilities/TonePolarity;)V
-
-    return-object v0
-.end method
-
-.method static synthetic lambda$static$66(Lcom/google/android/material/color/utilities/DynamicScheme;)Lcom/google/android/material/color/utilities/TonalPalette;
-    .locals 0
-
-    .line 180
-    iget-object p0, p0, Lcom/google/android/material/color/utilities/DynamicScheme;->secondaryPalette:Lcom/google/android/material/color/utilities/TonalPalette;
-
-    return-object p0
-.end method
-
-.method static synthetic lambda$static$67(Lcom/google/android/material/color/utilities/DynamicScheme;)Ljava/lang/Double;
+.method static synthetic lambda$surfaceVariant$34(Lcom/google/android/material/color/utilities/DynamicScheme;)Ljava/lang/Double;
     .locals 2
 
-    .line 180
-    iget-boolean p0, p0, Lcom/google/android/material/color/utilities/DynamicScheme;->isDark:Z
-
-    if-eqz p0, :cond_0
-
-    const-wide/high16 v0, 0x4034000000000000L    # 20.0
-
-    goto :goto_0
-
-    :cond_0
-    const-wide/high16 v0, 0x4059000000000000L    # 100.0
-
-    :goto_0
-    invoke-static {v0, v1}, Ljava/lang/Double;->valueOf(D)Ljava/lang/Double;
-
-    move-result-object p0
-
-    return-object p0
-.end method
-
-.method static synthetic lambda$static$68(Lcom/google/android/material/color/utilities/DynamicScheme;)Lcom/google/android/material/color/utilities/DynamicColor;
-    .locals 0
-
-    .line 180
-    sget-object p0, Lcom/google/android/material/color/utilities/MaterialDynamicColors;->secondary:Lcom/google/android/material/color/utilities/DynamicColor;
-
-    return-object p0
-.end method
-
-.method static synthetic lambda$static$69(Lcom/google/android/material/color/utilities/DynamicScheme;)Lcom/google/android/material/color/utilities/TonalPalette;
-    .locals 0
-
-    .line 184
-    iget-object p0, p0, Lcom/google/android/material/color/utilities/DynamicScheme;->tertiaryPalette:Lcom/google/android/material/color/utilities/TonalPalette;
-
-    return-object p0
-.end method
-
-.method static synthetic lambda$static$7(Lcom/google/android/material/color/utilities/DynamicScheme;)Lcom/google/android/material/color/utilities/TonalPalette;
-    .locals 0
-
-    .line 49
-    iget-object p0, p0, Lcom/google/android/material/color/utilities/DynamicScheme;->neutralPalette:Lcom/google/android/material/color/utilities/TonalPalette;
-
-    return-object p0
-.end method
-
-.method static synthetic lambda$static$70(Lcom/google/android/material/color/utilities/DynamicScheme;)Ljava/lang/Double;
-    .locals 3
-
-    .line 186
-    invoke-static {p0}, Lcom/google/android/material/color/utilities/MaterialDynamicColors;->isFidelity(Lcom/google/android/material/color/utilities/DynamicScheme;)Z
-
-    move-result v0
-
-    if-nez v0, :cond_1
-
-    .line 187
+    .line 234
     iget-boolean p0, p0, Lcom/google/android/material/color/utilities/DynamicScheme;->isDark:Z
 
     if-eqz p0, :cond_0
@@ -3234,14 +2036,139 @@
     move-result-object p0
 
     return-object p0
+.end method
 
-    .line 189
+.method static synthetic lambda$tertiary$79(Lcom/google/android/material/color/utilities/DynamicScheme;)Lcom/google/android/material/color/utilities/TonalPalette;
+    .locals 0
+
+    .line 524
+    iget-object p0, p0, Lcom/google/android/material/color/utilities/DynamicScheme;->tertiaryPalette:Lcom/google/android/material/color/utilities/TonalPalette;
+
+    return-object p0
+.end method
+
+.method static synthetic lambda$tertiary$80(Lcom/google/android/material/color/utilities/DynamicScheme;)Ljava/lang/Double;
+    .locals 2
+
+    .line 526
+    invoke-static {p0}, Lcom/google/android/material/color/utilities/MaterialDynamicColors;->isMonochrome(Lcom/google/android/material/color/utilities/DynamicScheme;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_1
+
+    .line 527
+    iget-boolean p0, p0, Lcom/google/android/material/color/utilities/DynamicScheme;->isDark:Z
+
+    if-eqz p0, :cond_0
+
+    const-wide v0, 0x4056800000000000L    # 90.0
+
+    goto :goto_0
+
+    :cond_0
+    const-wide/high16 v0, 0x4039000000000000L    # 25.0
+
+    :goto_0
+    invoke-static {v0, v1}, Ljava/lang/Double;->valueOf(D)Ljava/lang/Double;
+
+    move-result-object p0
+
+    return-object p0
+
+    .line 529
     :cond_1
+    iget-boolean p0, p0, Lcom/google/android/material/color/utilities/DynamicScheme;->isDark:Z
+
+    if-eqz p0, :cond_2
+
+    const-wide/high16 v0, 0x4054000000000000L    # 80.0
+
+    goto :goto_1
+
+    :cond_2
+    const-wide/high16 v0, 0x4044000000000000L    # 40.0
+
+    :goto_1
+    invoke-static {v0, v1}, Ljava/lang/Double;->valueOf(D)Ljava/lang/Double;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method static synthetic lambda$tertiaryContainer$85(Lcom/google/android/material/color/utilities/DynamicScheme;)Lcom/google/android/material/color/utilities/TonalPalette;
+    .locals 0
+
+    .line 561
+    iget-object p0, p0, Lcom/google/android/material/color/utilities/DynamicScheme;->tertiaryPalette:Lcom/google/android/material/color/utilities/TonalPalette;
+
+    return-object p0
+.end method
+
+.method static synthetic lambda$tertiaryContainer$86(Lcom/google/android/material/color/utilities/DynamicScheme;)Ljava/lang/Double;
+    .locals 3
+
+    .line 563
+    invoke-static {p0}, Lcom/google/android/material/color/utilities/MaterialDynamicColors;->isMonochrome(Lcom/google/android/material/color/utilities/DynamicScheme;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_1
+
+    .line 564
+    iget-boolean p0, p0, Lcom/google/android/material/color/utilities/DynamicScheme;->isDark:Z
+
+    if-eqz p0, :cond_0
+
+    const-wide/high16 v0, 0x404e000000000000L    # 60.0
+
+    goto :goto_0
+
+    :cond_0
+    const-wide v0, 0x4048800000000000L    # 49.0
+
+    :goto_0
+    invoke-static {v0, v1}, Ljava/lang/Double;->valueOf(D)Ljava/lang/Double;
+
+    move-result-object p0
+
+    return-object p0
+
+    .line 566
+    :cond_1
+    invoke-static {p0}, Lcom/google/android/material/color/utilities/MaterialDynamicColors;->isFidelity(Lcom/google/android/material/color/utilities/DynamicScheme;)Z
+
+    move-result v0
+
+    if-nez v0, :cond_3
+
+    .line 567
+    iget-boolean p0, p0, Lcom/google/android/material/color/utilities/DynamicScheme;->isDark:Z
+
+    if-eqz p0, :cond_2
+
+    const-wide/high16 v0, 0x403e000000000000L    # 30.0
+
+    goto :goto_1
+
+    :cond_2
+    const-wide v0, 0x4056800000000000L    # 90.0
+
+    :goto_1
+    invoke-static {v0, v1}, Ljava/lang/Double;->valueOf(D)Ljava/lang/Double;
+
+    move-result-object p0
+
+    return-object p0
+
+    .line 569
+    :cond_3
     iget-object v0, p0, Lcom/google/android/material/color/utilities/DynamicScheme;->tertiaryPalette:Lcom/google/android/material/color/utilities/TonalPalette;
 
     iget-object v1, p0, Lcom/google/android/material/color/utilities/DynamicScheme;->sourceColorHct:Lcom/google/android/material/color/utilities/Hct;
 
-    .line 190
+    .line 570
     invoke-virtual {v1}, Lcom/google/android/material/color/utilities/Hct;->getTone()D
 
     move-result-wide v1
@@ -3254,14 +2181,14 @@
 
     move-result-wide v0
 
-    .line 191
+    .line 571
     iget-object p0, p0, Lcom/google/android/material/color/utilities/DynamicScheme;->tertiaryPalette:Lcom/google/android/material/color/utilities/TonalPalette;
 
     invoke-virtual {p0, v0, v1}, Lcom/google/android/material/color/utilities/TonalPalette;->getHct(D)Lcom/google/android/material/color/utilities/Hct;
 
     move-result-object p0
 
-    .line 192
+    .line 572
     invoke-static {p0}, Lcom/google/android/material/color/utilities/DislikeAnalyzer;->fixIfDisliked(Lcom/google/android/material/color/utilities/Hct;)Lcom/google/android/material/color/utilities/Hct;
 
     move-result-object p0
@@ -3277,109 +2204,32 @@
     return-object p0
 .end method
 
-.method static synthetic lambda$static$71(Lcom/google/android/material/color/utilities/DynamicScheme;)Lcom/google/android/material/color/utilities/DynamicColor;
+.method static synthetic lambda$tertiaryFixed$131(Lcom/google/android/material/color/utilities/DynamicScheme;)Lcom/google/android/material/color/utilities/TonalPalette;
     .locals 0
 
-    .line 194
-    invoke-static {p0}, Lcom/google/android/material/color/utilities/MaterialDynamicColors;->highestSurface(Lcom/google/android/material/color/utilities/DynamicScheme;)Lcom/google/android/material/color/utilities/DynamicColor;
-
-    move-result-object p0
-
-    return-object p0
-.end method
-
-.method static synthetic lambda$static$72(Lcom/google/android/material/color/utilities/DynamicScheme;)Lcom/google/android/material/color/utilities/TonalPalette;
-    .locals 0
-
-    .line 198
+    .line 771
     iget-object p0, p0, Lcom/google/android/material/color/utilities/DynamicScheme;->tertiaryPalette:Lcom/google/android/material/color/utilities/TonalPalette;
 
     return-object p0
 .end method
 
-.method static synthetic lambda$static$73(Lcom/google/android/material/color/utilities/DynamicScheme;)Ljava/lang/Double;
-    .locals 4
-
-    .line 200
-    invoke-static {p0}, Lcom/google/android/material/color/utilities/MaterialDynamicColors;->isFidelity(Lcom/google/android/material/color/utilities/DynamicScheme;)Z
-
-    move-result v0
-
-    if-nez v0, :cond_1
-
-    .line 201
-    iget-boolean p0, p0, Lcom/google/android/material/color/utilities/DynamicScheme;->isDark:Z
-
-    if-eqz p0, :cond_0
-
-    const-wide v0, 0x4056800000000000L    # 90.0
-
-    goto :goto_0
-
-    :cond_0
-    const-wide/high16 v0, 0x4024000000000000L    # 10.0
-
-    :goto_0
-    invoke-static {v0, v1}, Ljava/lang/Double;->valueOf(D)Ljava/lang/Double;
-
-    move-result-object p0
-
-    return-object p0
-
-    .line 203
-    :cond_1
-    sget-object v0, Lcom/google/android/material/color/utilities/MaterialDynamicColors;->tertiaryContainer:Lcom/google/android/material/color/utilities/DynamicColor;
-
-    invoke-virtual {v0, p0}, Lcom/google/android/material/color/utilities/DynamicColor;->getTone(Lcom/google/android/material/color/utilities/DynamicScheme;)D
-
-    move-result-wide v0
-
-    const-wide/high16 v2, 0x4012000000000000L    # 4.5
-
-    invoke-static {v0, v1, v2, v3}, Lcom/google/android/material/color/utilities/DynamicColor;->contrastingTone(DD)D
-
-    move-result-wide v0
-
-    invoke-static {v0, v1}, Ljava/lang/Double;->valueOf(D)Ljava/lang/Double;
-
-    move-result-object p0
-
-    return-object p0
-.end method
-
-.method static synthetic lambda$static$74(Lcom/google/android/material/color/utilities/DynamicScheme;)Lcom/google/android/material/color/utilities/DynamicColor;
-    .locals 0
-
-    .line 205
-    sget-object p0, Lcom/google/android/material/color/utilities/MaterialDynamicColors;->tertiaryContainer:Lcom/google/android/material/color/utilities/DynamicColor;
-
-    return-object p0
-.end method
-
-.method static synthetic lambda$static$75(Lcom/google/android/material/color/utilities/DynamicScheme;)Lcom/google/android/material/color/utilities/TonalPalette;
-    .locals 0
-
-    .line 209
-    iget-object p0, p0, Lcom/google/android/material/color/utilities/DynamicScheme;->tertiaryPalette:Lcom/google/android/material/color/utilities/TonalPalette;
-
-    return-object p0
-.end method
-
-.method static synthetic lambda$static$76(Lcom/google/android/material/color/utilities/DynamicScheme;)Ljava/lang/Double;
+.method static synthetic lambda$tertiaryFixed$132(Lcom/google/android/material/color/utilities/DynamicScheme;)Ljava/lang/Double;
     .locals 2
 
-    .line 210
-    iget-boolean p0, p0, Lcom/google/android/material/color/utilities/DynamicScheme;->isDark:Z
+    .line 772
+    invoke-static {p0}, Lcom/google/android/material/color/utilities/MaterialDynamicColors;->isMonochrome(Lcom/google/android/material/color/utilities/DynamicScheme;)Z
+
+    move-result p0
 
     if-eqz p0, :cond_0
 
-    const-wide/high16 v0, 0x4054000000000000L    # 80.0
-
-    goto :goto_0
-
-    :cond_0
     const-wide/high16 v0, 0x4044000000000000L    # 40.0
 
+    goto :goto_0
+
+    :cond_0
+    const-wide v0, 0x4056800000000000L    # 90.0
+
     :goto_0
     invoke-static {v0, v1}, Ljava/lang/Double;->valueOf(D)Ljava/lang/Double;
 
@@ -3388,69 +2238,94 @@
     return-object p0
 .end method
 
-.method static synthetic lambda$static$77(Lcom/google/android/material/color/utilities/DynamicScheme;)Lcom/google/android/material/color/utilities/DynamicColor;
+.method static synthetic lambda$tertiaryFixedDim$134(Lcom/google/android/material/color/utilities/DynamicScheme;)Lcom/google/android/material/color/utilities/TonalPalette;
     .locals 0
 
-    .line 211
-    invoke-static {p0}, Lcom/google/android/material/color/utilities/MaterialDynamicColors;->highestSurface(Lcom/google/android/material/color/utilities/DynamicScheme;)Lcom/google/android/material/color/utilities/DynamicColor;
-
-    move-result-object p0
-
-    return-object p0
-.end method
-
-.method static synthetic lambda$static$78(Lcom/google/android/material/color/utilities/DynamicScheme;)Lcom/google/android/material/color/utilities/ToneDeltaConstraint;
-    .locals 4
-
-    .line 213
-    new-instance v0, Lcom/google/android/material/color/utilities/ToneDeltaConstraint;
-
-    sget-object v1, Lcom/google/android/material/color/utilities/MaterialDynamicColors;->tertiaryContainer:Lcom/google/android/material/color/utilities/DynamicColor;
-
-    .line 216
-    iget-boolean p0, p0, Lcom/google/android/material/color/utilities/DynamicScheme;->isDark:Z
-
-    if-eqz p0, :cond_0
-
-    sget-object p0, Lcom/google/android/material/color/utilities/TonePolarity;->DARKER:Lcom/google/android/material/color/utilities/TonePolarity;
-
-    goto :goto_0
-
-    :cond_0
-    sget-object p0, Lcom/google/android/material/color/utilities/TonePolarity;->LIGHTER:Lcom/google/android/material/color/utilities/TonePolarity;
-
-    :goto_0
-    const-wide/high16 v2, 0x402e000000000000L    # 15.0
-
-    invoke-direct {v0, v2, v3, v1, p0}, Lcom/google/android/material/color/utilities/ToneDeltaConstraint;-><init>(DLcom/google/android/material/color/utilities/DynamicColor;Lcom/google/android/material/color/utilities/TonePolarity;)V
-
-    return-object v0
-.end method
-
-.method static synthetic lambda$static$79(Lcom/google/android/material/color/utilities/DynamicScheme;)Lcom/google/android/material/color/utilities/TonalPalette;
-    .locals 0
-
-    .line 220
+    .line 786
     iget-object p0, p0, Lcom/google/android/material/color/utilities/DynamicScheme;->tertiaryPalette:Lcom/google/android/material/color/utilities/TonalPalette;
 
     return-object p0
 .end method
 
-.method static synthetic lambda$static$8(Lcom/google/android/material/color/utilities/DynamicScheme;)Ljava/lang/Double;
+.method static synthetic lambda$tertiaryFixedDim$135(Lcom/google/android/material/color/utilities/DynamicScheme;)Ljava/lang/Double;
     .locals 2
 
-    .line 49
+    .line 787
+    invoke-static {p0}, Lcom/google/android/material/color/utilities/MaterialDynamicColors;->isMonochrome(Lcom/google/android/material/color/utilities/DynamicScheme;)Z
+
+    move-result p0
+
+    if-eqz p0, :cond_0
+
+    const-wide/high16 v0, 0x403e000000000000L    # 30.0
+
+    goto :goto_0
+
+    :cond_0
+    const-wide/high16 v0, 0x4054000000000000L    # 80.0
+
+    :goto_0
+    invoke-static {v0, v1}, Ljava/lang/Double;->valueOf(D)Ljava/lang/Double;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method static synthetic lambda$tertiaryPaletteKeyColor$4(Lcom/google/android/material/color/utilities/DynamicScheme;)Lcom/google/android/material/color/utilities/TonalPalette;
+    .locals 0
+
+    .line 66
+    iget-object p0, p0, Lcom/google/android/material/color/utilities/DynamicScheme;->tertiaryPalette:Lcom/google/android/material/color/utilities/TonalPalette;
+
+    return-object p0
+.end method
+
+.method static synthetic lambda$tertiaryPaletteKeyColor$5(Lcom/google/android/material/color/utilities/DynamicScheme;)Ljava/lang/Double;
+    .locals 2
+
+    .line 67
+    iget-object p0, p0, Lcom/google/android/material/color/utilities/DynamicScheme;->tertiaryPalette:Lcom/google/android/material/color/utilities/TonalPalette;
+
+    invoke-virtual {p0}, Lcom/google/android/material/color/utilities/TonalPalette;->getKeyColor()Lcom/google/android/material/color/utilities/Hct;
+
+    move-result-object p0
+
+    invoke-virtual {p0}, Lcom/google/android/material/color/utilities/Hct;->getTone()D
+
+    move-result-wide v0
+
+    invoke-static {v0, v1}, Ljava/lang/Double;->valueOf(D)Ljava/lang/Double;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method static synthetic lambda$textHintInverse$160(Lcom/google/android/material/color/utilities/DynamicScheme;)Lcom/google/android/material/color/utilities/TonalPalette;
+    .locals 0
+
+    .line 913
+    iget-object p0, p0, Lcom/google/android/material/color/utilities/DynamicScheme;->neutralPalette:Lcom/google/android/material/color/utilities/TonalPalette;
+
+    return-object p0
+.end method
+
+.method static synthetic lambda$textHintInverse$161(Lcom/google/android/material/color/utilities/DynamicScheme;)Ljava/lang/Double;
+    .locals 2
+
+    .line 913
     iget-boolean p0, p0, Lcom/google/android/material/color/utilities/DynamicScheme;->isDark:Z
 
     if-eqz p0, :cond_0
 
+    const-wide/high16 v0, 0x4024000000000000L    # 10.0
+
+    goto :goto_0
+
+    :cond_0
     const-wide v0, 0x4056800000000000L    # 90.0
 
-    goto :goto_0
-
-    :cond_0
-    const-wide/high16 v0, 0x4034000000000000L    # 20.0
-
     :goto_0
     invoke-static {v0, v1}, Ljava/lang/Double;->valueOf(D)Ljava/lang/Double;
 
@@ -3459,20 +2334,29 @@
     return-object p0
 .end method
 
-.method static synthetic lambda$static$80(Lcom/google/android/material/color/utilities/DynamicScheme;)Ljava/lang/Double;
+.method static synthetic lambda$textPrimaryInverse$152(Lcom/google/android/material/color/utilities/DynamicScheme;)Lcom/google/android/material/color/utilities/TonalPalette;
+    .locals 0
+
+    .line 877
+    iget-object p0, p0, Lcom/google/android/material/color/utilities/DynamicScheme;->neutralPalette:Lcom/google/android/material/color/utilities/TonalPalette;
+
+    return-object p0
+.end method
+
+.method static synthetic lambda$textPrimaryInverse$153(Lcom/google/android/material/color/utilities/DynamicScheme;)Ljava/lang/Double;
     .locals 2
 
-    .line 220
+    .line 877
     iget-boolean p0, p0, Lcom/google/android/material/color/utilities/DynamicScheme;->isDark:Z
 
     if-eqz p0, :cond_0
 
-    const-wide/high16 v0, 0x4034000000000000L    # 20.0
+    const-wide/high16 v0, 0x4024000000000000L    # 10.0
 
     goto :goto_0
 
     :cond_0
-    const-wide/high16 v0, 0x4059000000000000L    # 100.0
+    const-wide v0, 0x4056800000000000L    # 90.0
 
     :goto_0
     invoke-static {v0, v1}, Ljava/lang/Double;->valueOf(D)Ljava/lang/Double;
@@ -3482,28 +2366,51 @@
     return-object p0
 .end method
 
-.method static synthetic lambda$static$81(Lcom/google/android/material/color/utilities/DynamicScheme;)Lcom/google/android/material/color/utilities/DynamicColor;
+.method static synthetic lambda$textPrimaryInverseDisableOnly$156(Lcom/google/android/material/color/utilities/DynamicScheme;)Lcom/google/android/material/color/utilities/TonalPalette;
     .locals 0
 
-    .line 220
-    sget-object p0, Lcom/google/android/material/color/utilities/MaterialDynamicColors;->tertiary:Lcom/google/android/material/color/utilities/DynamicColor;
+    .line 895
+    iget-object p0, p0, Lcom/google/android/material/color/utilities/DynamicScheme;->neutralPalette:Lcom/google/android/material/color/utilities/TonalPalette;
 
     return-object p0
 .end method
 
-.method static synthetic lambda$static$82(Lcom/google/android/material/color/utilities/DynamicScheme;)Lcom/google/android/material/color/utilities/TonalPalette;
-    .locals 0
-
-    .line 224
-    iget-object p0, p0, Lcom/google/android/material/color/utilities/DynamicScheme;->errorPalette:Lcom/google/android/material/color/utilities/TonalPalette;
-
-    return-object p0
-.end method
-
-.method static synthetic lambda$static$83(Lcom/google/android/material/color/utilities/DynamicScheme;)Ljava/lang/Double;
+.method static synthetic lambda$textPrimaryInverseDisableOnly$157(Lcom/google/android/material/color/utilities/DynamicScheme;)Ljava/lang/Double;
     .locals 2
 
-    .line 224
+    .line 896
+    iget-boolean p0, p0, Lcom/google/android/material/color/utilities/DynamicScheme;->isDark:Z
+
+    if-eqz p0, :cond_0
+
+    const-wide/high16 v0, 0x4024000000000000L    # 10.0
+
+    goto :goto_0
+
+    :cond_0
+    const-wide v0, 0x4056800000000000L    # 90.0
+
+    :goto_0
+    invoke-static {v0, v1}, Ljava/lang/Double;->valueOf(D)Ljava/lang/Double;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method static synthetic lambda$textSecondaryAndTertiaryInverse$154(Lcom/google/android/material/color/utilities/DynamicScheme;)Lcom/google/android/material/color/utilities/TonalPalette;
+    .locals 0
+
+    .line 886
+    iget-object p0, p0, Lcom/google/android/material/color/utilities/DynamicScheme;->neutralVariantPalette:Lcom/google/android/material/color/utilities/TonalPalette;
+
+    return-object p0
+.end method
+
+.method static synthetic lambda$textSecondaryAndTertiaryInverse$155(Lcom/google/android/material/color/utilities/DynamicScheme;)Ljava/lang/Double;
+    .locals 2
+
+    .line 887
     iget-boolean p0, p0, Lcom/google/android/material/color/utilities/DynamicScheme;->isDark:Z
 
     if-eqz p0, :cond_0
@@ -3513,92 +2420,8 @@
     goto :goto_0
 
     :cond_0
-    const-wide v0, 0x4056800000000000L    # 90.0
-
-    :goto_0
-    invoke-static {v0, v1}, Ljava/lang/Double;->valueOf(D)Ljava/lang/Double;
-
-    move-result-object p0
-
-    return-object p0
-.end method
-
-.method static synthetic lambda$static$84(Lcom/google/android/material/color/utilities/DynamicScheme;)Lcom/google/android/material/color/utilities/DynamicColor;
-    .locals 0
-
-    .line 224
-    invoke-static {p0}, Lcom/google/android/material/color/utilities/MaterialDynamicColors;->highestSurface(Lcom/google/android/material/color/utilities/DynamicScheme;)Lcom/google/android/material/color/utilities/DynamicColor;
-
-    move-result-object p0
-
-    return-object p0
-.end method
-
-.method static synthetic lambda$static$85(Lcom/google/android/material/color/utilities/DynamicScheme;)Lcom/google/android/material/color/utilities/TonalPalette;
-    .locals 0
-
-    .line 228
-    iget-object p0, p0, Lcom/google/android/material/color/utilities/DynamicScheme;->errorPalette:Lcom/google/android/material/color/utilities/TonalPalette;
-
-    return-object p0
-.end method
-
-.method static synthetic lambda$static$86(Lcom/google/android/material/color/utilities/DynamicScheme;)Ljava/lang/Double;
-    .locals 2
-
-    .line 228
-    iget-boolean p0, p0, Lcom/google/android/material/color/utilities/DynamicScheme;->isDark:Z
-
-    if-eqz p0, :cond_0
-
-    const-wide v0, 0x4056800000000000L    # 90.0
-
-    goto :goto_0
-
-    :cond_0
-    const-wide/high16 v0, 0x4024000000000000L    # 10.0
-
-    :goto_0
-    invoke-static {v0, v1}, Ljava/lang/Double;->valueOf(D)Ljava/lang/Double;
-
-    move-result-object p0
-
-    return-object p0
-.end method
-
-.method static synthetic lambda$static$87(Lcom/google/android/material/color/utilities/DynamicScheme;)Lcom/google/android/material/color/utilities/DynamicColor;
-    .locals 0
-
-    .line 228
-    sget-object p0, Lcom/google/android/material/color/utilities/MaterialDynamicColors;->errorContainer:Lcom/google/android/material/color/utilities/DynamicColor;
-
-    return-object p0
-.end method
-
-.method static synthetic lambda$static$88(Lcom/google/android/material/color/utilities/DynamicScheme;)Lcom/google/android/material/color/utilities/TonalPalette;
-    .locals 0
-
-    .line 232
-    iget-object p0, p0, Lcom/google/android/material/color/utilities/DynamicScheme;->errorPalette:Lcom/google/android/material/color/utilities/TonalPalette;
-
-    return-object p0
-.end method
-
-.method static synthetic lambda$static$89(Lcom/google/android/material/color/utilities/DynamicScheme;)Ljava/lang/Double;
-    .locals 2
-
-    .line 233
-    iget-boolean p0, p0, Lcom/google/android/material/color/utilities/DynamicScheme;->isDark:Z
-
-    if-eqz p0, :cond_0
-
     const-wide/high16 v0, 0x4054000000000000L    # 80.0
 
-    goto :goto_0
-
-    :cond_0
-    const-wide/high16 v0, 0x4044000000000000L    # 40.0
-
     :goto_0
     invoke-static {v0, v1}, Ljava/lang/Double;->valueOf(D)Ljava/lang/Double;
 
@@ -3607,143 +2430,31 @@
     return-object p0
 .end method
 
-.method static synthetic lambda$static$9(Lcom/google/android/material/color/utilities/DynamicScheme;)Lcom/google/android/material/color/utilities/TonalPalette;
+.method static synthetic lambda$textSecondaryAndTertiaryInverseDisabled$158(Lcom/google/android/material/color/utilities/DynamicScheme;)Lcom/google/android/material/color/utilities/TonalPalette;
     .locals 0
 
-    .line 52
+    .line 905
     iget-object p0, p0, Lcom/google/android/material/color/utilities/DynamicScheme;->neutralPalette:Lcom/google/android/material/color/utilities/TonalPalette;
 
     return-object p0
 .end method
 
-.method static synthetic lambda$static$90(Lcom/google/android/material/color/utilities/DynamicScheme;)Lcom/google/android/material/color/utilities/DynamicColor;
-    .locals 0
+.method static synthetic lambda$textSecondaryAndTertiaryInverseDisabled$159(Lcom/google/android/material/color/utilities/DynamicScheme;)Ljava/lang/Double;
+    .locals 2
 
-    .line 234
-    invoke-static {p0}, Lcom/google/android/material/color/utilities/MaterialDynamicColors;->highestSurface(Lcom/google/android/material/color/utilities/DynamicScheme;)Lcom/google/android/material/color/utilities/DynamicColor;
-
-    move-result-object p0
-
-    return-object p0
-.end method
-
-.method static synthetic lambda$static$91(Lcom/google/android/material/color/utilities/DynamicScheme;)Lcom/google/android/material/color/utilities/ToneDeltaConstraint;
-    .locals 4
-
-    .line 236
-    new-instance v0, Lcom/google/android/material/color/utilities/ToneDeltaConstraint;
-
-    sget-object v1, Lcom/google/android/material/color/utilities/MaterialDynamicColors;->errorContainer:Lcom/google/android/material/color/utilities/DynamicColor;
-
-    .line 239
+    .line 906
     iget-boolean p0, p0, Lcom/google/android/material/color/utilities/DynamicScheme;->isDark:Z
 
     if-eqz p0, :cond_0
 
-    sget-object p0, Lcom/google/android/material/color/utilities/TonePolarity;->DARKER:Lcom/google/android/material/color/utilities/TonePolarity;
+    const-wide/high16 v0, 0x4024000000000000L    # 10.0
 
     goto :goto_0
 
     :cond_0
-    sget-object p0, Lcom/google/android/material/color/utilities/TonePolarity;->LIGHTER:Lcom/google/android/material/color/utilities/TonePolarity;
-
-    :goto_0
-    const-wide/high16 v2, 0x402e000000000000L    # 15.0
-
-    invoke-direct {v0, v2, v3, v1, p0}, Lcom/google/android/material/color/utilities/ToneDeltaConstraint;-><init>(DLcom/google/android/material/color/utilities/DynamicColor;Lcom/google/android/material/color/utilities/TonePolarity;)V
-
-    return-object v0
-.end method
-
-.method static synthetic lambda$static$92(Lcom/google/android/material/color/utilities/DynamicScheme;)Lcom/google/android/material/color/utilities/TonalPalette;
-    .locals 0
-
-    .line 242
-    iget-object p0, p0, Lcom/google/android/material/color/utilities/DynamicScheme;->errorPalette:Lcom/google/android/material/color/utilities/TonalPalette;
-
-    return-object p0
-.end method
-
-.method static synthetic lambda$static$93(Lcom/google/android/material/color/utilities/DynamicScheme;)Ljava/lang/Double;
-    .locals 2
-
-    .line 242
-    iget-boolean p0, p0, Lcom/google/android/material/color/utilities/DynamicScheme;->isDark:Z
-
-    if-eqz p0, :cond_0
-
-    const-wide/high16 v0, 0x4034000000000000L    # 20.0
-
-    goto :goto_0
-
-    :cond_0
-    const-wide/high16 v0, 0x4059000000000000L    # 100.0
-
-    :goto_0
-    invoke-static {v0, v1}, Ljava/lang/Double;->valueOf(D)Ljava/lang/Double;
-
-    move-result-object p0
-
-    return-object p0
-.end method
-
-.method static synthetic lambda$static$94(Lcom/google/android/material/color/utilities/DynamicScheme;)Lcom/google/android/material/color/utilities/DynamicColor;
-    .locals 0
-
-    .line 242
-    sget-object p0, Lcom/google/android/material/color/utilities/MaterialDynamicColors;->error:Lcom/google/android/material/color/utilities/DynamicColor;
-
-    return-object p0
-.end method
-
-.method static synthetic lambda$static$95(Lcom/google/android/material/color/utilities/DynamicScheme;)Lcom/google/android/material/color/utilities/TonalPalette;
-    .locals 0
-
-    .line 245
-    iget-object p0, p0, Lcom/google/android/material/color/utilities/DynamicScheme;->primaryPalette:Lcom/google/android/material/color/utilities/TonalPalette;
-
-    return-object p0
-.end method
-
-.method static synthetic lambda$static$96(Lcom/google/android/material/color/utilities/DynamicScheme;)Ljava/lang/Double;
-    .locals 2
-
     const-wide v0, 0x4056800000000000L    # 90.0
 
-    .line 245
-    invoke-static {v0, v1}, Ljava/lang/Double;->valueOf(D)Ljava/lang/Double;
-
-    move-result-object p0
-
-    return-object p0
-.end method
-
-.method static synthetic lambda$static$97(Lcom/google/android/material/color/utilities/DynamicScheme;)Lcom/google/android/material/color/utilities/DynamicColor;
-    .locals 0
-
-    .line 245
-    invoke-static {p0}, Lcom/google/android/material/color/utilities/MaterialDynamicColors;->highestSurface(Lcom/google/android/material/color/utilities/DynamicScheme;)Lcom/google/android/material/color/utilities/DynamicColor;
-
-    move-result-object p0
-
-    return-object p0
-.end method
-
-.method static synthetic lambda$static$98(Lcom/google/android/material/color/utilities/DynamicScheme;)Lcom/google/android/material/color/utilities/TonalPalette;
-    .locals 0
-
-    .line 248
-    iget-object p0, p0, Lcom/google/android/material/color/utilities/DynamicScheme;->primaryPalette:Lcom/google/android/material/color/utilities/TonalPalette;
-
-    return-object p0
-.end method
-
-.method static synthetic lambda$static$99(Lcom/google/android/material/color/utilities/DynamicScheme;)Ljava/lang/Double;
-    .locals 2
-
-    const-wide/high16 v0, 0x4054000000000000L    # 80.0
-
-    .line 248
+    :goto_0
     invoke-static {v0, v1}, Ljava/lang/Double;->valueOf(D)Ljava/lang/Double;
 
     move-result-object p0
@@ -3754,7 +2465,7 @@
 .method static performAlbers(Lcom/google/android/material/color/utilities/Hct;Lcom/google/android/material/color/utilities/DynamicScheme;)D
     .locals 2
 
-    .line 384
+    .line 958
     invoke-static {p1}, Lcom/google/android/material/color/utilities/MaterialDynamicColors;->viewingConditionsForAlbers(Lcom/google/android/material/color/utilities/DynamicScheme;)Lcom/google/android/material/color/utilities/ViewingConditions;
 
     move-result-object p1
@@ -3763,7 +2474,7 @@
 
     move-result-object p1
 
-    .line 385
+    .line 959
     invoke-virtual {p0}, Lcom/google/android/material/color/utilities/Hct;->getTone()D
 
     move-result-wide v0
@@ -3774,7 +2485,7 @@
 
     if-eqz v0, :cond_0
 
-    .line 386
+    .line 960
     invoke-virtual {p1}, Lcom/google/android/material/color/utilities/Hct;->getTone()D
 
     move-result-wide v0
@@ -3785,7 +2496,7 @@
 
     if-nez v0, :cond_0
 
-    .line 387
+    .line 961
     invoke-virtual {p0}, Lcom/google/android/material/color/utilities/Hct;->getTone()D
 
     move-result-wide p0
@@ -3796,7 +2507,7 @@
 
     return-wide p0
 
-    .line 389
+    .line 963
     :cond_0
     invoke-virtual {p1}, Lcom/google/android/material/color/utilities/Hct;->getTone()D
 
@@ -3812,7 +2523,7 @@
 .method private static viewingConditionsForAlbers(Lcom/google/android/material/color/utilities/DynamicScheme;)Lcom/google/android/material/color/utilities/ViewingConditions;
     .locals 2
 
-    .line 347
+    .line 917
     iget-boolean p0, p0, Lcom/google/android/material/color/utilities/DynamicScheme;->isDark:Z
 
     if-eqz p0, :cond_0
@@ -3826,6 +2537,3406 @@
 
     :goto_0
     invoke-static {v0, v1}, Lcom/google/android/material/color/utilities/ViewingConditions;->defaultWithBackgroundLstar(D)Lcom/google/android/material/color/utilities/ViewingConditions;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+
+# virtual methods
+.method public background()Lcom/google/android/material/color/utilities/DynamicColor;
+    .locals 9
+
+    .line 88
+    new-instance p0, Lcom/google/android/material/color/utilities/DynamicColor;
+
+    new-instance v2, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda100;
+
+    invoke-direct {v2}, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda100;-><init>()V
+
+    new-instance v3, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda101;
+
+    invoke-direct {v3}, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda101;-><init>()V
+
+    const/4 v7, 0x0
+
+    const/4 v8, 0x0
+
+    const-string v1, "background"
+
+    const/4 v4, 0x1
+
+    const/4 v5, 0x0
+
+    const/4 v6, 0x0
+
+    move-object v0, p0
+
+    invoke-direct/range {v0 .. v8}, Lcom/google/android/material/color/utilities/DynamicColor;-><init>(Ljava/lang/String;Ljava/util/function/Function;Ljava/util/function/Function;ZLjava/util/function/Function;Ljava/util/function/Function;Lcom/google/android/material/color/utilities/ContrastCurve;Ljava/util/function/Function;)V
+
+    return-object p0
+.end method
+
+.method public controlActivated()Lcom/google/android/material/color/utilities/DynamicColor;
+    .locals 2
+
+    .line 838
+    new-instance p0, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda70;
+
+    invoke-direct {p0}, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda70;-><init>()V
+
+    new-instance v0, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda71;
+
+    invoke-direct {v0}, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda71;-><init>()V
+
+    const-string v1, "control_activated"
+
+    invoke-static {v1, p0, v0}, Lcom/google/android/material/color/utilities/DynamicColor;->fromPalette(Ljava/lang/String;Ljava/util/function/Function;Ljava/util/function/Function;)Lcom/google/android/material/color/utilities/DynamicColor;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method public controlHighlight()Lcom/google/android/material/color/utilities/DynamicColor;
+    .locals 10
+
+    .line 861
+    new-instance p0, Lcom/google/android/material/color/utilities/DynamicColor;
+
+    new-instance v2, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda93;
+
+    invoke-direct {v2}, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda93;-><init>()V
+
+    new-instance v3, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda94;
+
+    invoke-direct {v3}, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda94;-><init>()V
+
+    new-instance v9, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda95;
+
+    invoke-direct {v9}, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda95;-><init>()V
+
+    const-string v1, "control_highlight"
+
+    const/4 v4, 0x0
+
+    const/4 v5, 0x0
+
+    const/4 v6, 0x0
+
+    const/4 v7, 0x0
+
+    const/4 v8, 0x0
+
+    move-object v0, p0
+
+    invoke-direct/range {v0 .. v9}, Lcom/google/android/material/color/utilities/DynamicColor;-><init>(Ljava/lang/String;Ljava/util/function/Function;Ljava/util/function/Function;ZLjava/util/function/Function;Ljava/util/function/Function;Lcom/google/android/material/color/utilities/ContrastCurve;Ljava/util/function/Function;Ljava/util/function/Function;)V
+
+    return-object p0
+.end method
+
+.method public controlNormal()Lcom/google/android/material/color/utilities/DynamicColor;
+    .locals 2
+
+    .line 847
+    new-instance p0, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda55;
+
+    invoke-direct {p0}, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda55;-><init>()V
+
+    new-instance v0, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda66;
+
+    invoke-direct {v0}, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda66;-><init>()V
+
+    const-string v1, "control_normal"
+
+    invoke-static {v1, p0, v0}, Lcom/google/android/material/color/utilities/DynamicColor;->fromPalette(Ljava/lang/String;Ljava/util/function/Function;Ljava/util/function/Function;)Lcom/google/android/material/color/utilities/DynamicColor;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method public error()Lcom/google/android/material/color/utilities/DynamicColor;
+    .locals 19
+
+    move-object/from16 v0, p0
+
+    .line 605
+    new-instance v9, Lcom/google/android/material/color/utilities/DynamicColor;
+
+    new-instance v2, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda32;
+
+    invoke-direct {v2}, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda32;-><init>()V
+
+    new-instance v3, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda34;
+
+    invoke-direct {v3}, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda34;-><init>()V
+
+    new-instance v5, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda162;
+
+    invoke-direct {v5, v0}, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda162;-><init>(Lcom/google/android/material/color/utilities/MaterialDynamicColors;)V
+
+    new-instance v7, Lcom/google/android/material/color/utilities/ContrastCurve;
+
+    const-wide/high16 v15, 0x401c000000000000L    # 7.0
+
+    const-wide/high16 v17, 0x4026000000000000L    # 11.0
+
+    const-wide/high16 v11, 0x4008000000000000L    # 3.0
+
+    const-wide/high16 v13, 0x4012000000000000L    # 4.5
+
+    move-object v10, v7
+
+    invoke-direct/range {v10 .. v18}, Lcom/google/android/material/color/utilities/ContrastCurve;-><init>(DDDD)V
+
+    new-instance v8, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda35;
+
+    invoke-direct {v8, v0}, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda35;-><init>(Lcom/google/android/material/color/utilities/MaterialDynamicColors;)V
+
+    const-string v1, "error"
+
+    const/4 v4, 0x1
+
+    const/4 v6, 0x0
+
+    move-object v0, v9
+
+    invoke-direct/range {v0 .. v8}, Lcom/google/android/material/color/utilities/DynamicColor;-><init>(Ljava/lang/String;Ljava/util/function/Function;Ljava/util/function/Function;ZLjava/util/function/Function;Ljava/util/function/Function;Lcom/google/android/material/color/utilities/ContrastCurve;Ljava/util/function/Function;)V
+
+    return-object v9
+.end method
+
+.method public errorContainer()Lcom/google/android/material/color/utilities/DynamicColor;
+    .locals 19
+
+    move-object/from16 v0, p0
+
+    .line 632
+    new-instance v9, Lcom/google/android/material/color/utilities/DynamicColor;
+
+    new-instance v2, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda50;
+
+    invoke-direct {v2}, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda50;-><init>()V
+
+    new-instance v3, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda51;
+
+    invoke-direct {v3}, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda51;-><init>()V
+
+    new-instance v5, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda162;
+
+    invoke-direct {v5, v0}, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda162;-><init>(Lcom/google/android/material/color/utilities/MaterialDynamicColors;)V
+
+    new-instance v7, Lcom/google/android/material/color/utilities/ContrastCurve;
+
+    const-wide/high16 v15, 0x4008000000000000L    # 3.0
+
+    const-wide/high16 v17, 0x401c000000000000L    # 7.0
+
+    const-wide/high16 v11, 0x3ff0000000000000L    # 1.0
+
+    const-wide/high16 v13, 0x3ff0000000000000L    # 1.0
+
+    move-object v10, v7
+
+    invoke-direct/range {v10 .. v18}, Lcom/google/android/material/color/utilities/ContrastCurve;-><init>(DDDD)V
+
+    new-instance v8, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda52;
+
+    invoke-direct {v8, v0}, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda52;-><init>(Lcom/google/android/material/color/utilities/MaterialDynamicColors;)V
+
+    const-string v1, "error_container"
+
+    const/4 v4, 0x1
+
+    const/4 v6, 0x0
+
+    move-object v0, v9
+
+    invoke-direct/range {v0 .. v8}, Lcom/google/android/material/color/utilities/DynamicColor;-><init>(Ljava/lang/String;Ljava/util/function/Function;Ljava/util/function/Function;ZLjava/util/function/Function;Ljava/util/function/Function;Lcom/google/android/material/color/utilities/ContrastCurve;Ljava/util/function/Function;)V
+
+    return-object v9
+.end method
+
+.method public highestSurface(Lcom/google/android/material/color/utilities/DynamicScheme;)Lcom/google/android/material/color/utilities/DynamicColor;
+    .locals 0
+
+    .line 42
+    iget-boolean p1, p1, Lcom/google/android/material/color/utilities/DynamicScheme;->isDark:Z
+
+    if-eqz p1, :cond_0
+
+    invoke-virtual {p0}, Lcom/google/android/material/color/utilities/MaterialDynamicColors;->surfaceBright()Lcom/google/android/material/color/utilities/DynamicColor;
+
+    move-result-object p0
+
+    goto :goto_0
+
+    :cond_0
+    invoke-virtual {p0}, Lcom/google/android/material/color/utilities/MaterialDynamicColors;->surfaceDim()Lcom/google/android/material/color/utilities/DynamicColor;
+
+    move-result-object p0
+
+    :goto_0
+    return-object p0
+.end method
+
+.method public inverseOnSurface()Lcom/google/android/material/color/utilities/DynamicColor;
+    .locals 19
+
+    .line 270
+    new-instance v9, Lcom/google/android/material/color/utilities/DynamicColor;
+
+    new-instance v2, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda18;
+
+    invoke-direct {v2}, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda18;-><init>()V
+
+    new-instance v3, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda19;
+
+    invoke-direct {v3}, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda19;-><init>()V
+
+    new-instance v5, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda20;
+
+    move-object/from16 v0, p0
+
+    invoke-direct {v5, v0}, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda20;-><init>(Lcom/google/android/material/color/utilities/MaterialDynamicColors;)V
+
+    new-instance v7, Lcom/google/android/material/color/utilities/ContrastCurve;
+
+    const-wide/high16 v15, 0x4026000000000000L    # 11.0
+
+    const-wide/high16 v17, 0x4035000000000000L    # 21.0
+
+    const-wide/high16 v11, 0x4012000000000000L    # 4.5
+
+    const-wide/high16 v13, 0x401c000000000000L    # 7.0
+
+    move-object v10, v7
+
+    invoke-direct/range {v10 .. v18}, Lcom/google/android/material/color/utilities/ContrastCurve;-><init>(DDDD)V
+
+    const/4 v8, 0x0
+
+    const-string v1, "inverse_on_surface"
+
+    const/4 v4, 0x0
+
+    const/4 v6, 0x0
+
+    move-object v0, v9
+
+    invoke-direct/range {v0 .. v8}, Lcom/google/android/material/color/utilities/DynamicColor;-><init>(Ljava/lang/String;Ljava/util/function/Function;Ljava/util/function/Function;ZLjava/util/function/Function;Ljava/util/function/Function;Lcom/google/android/material/color/utilities/ContrastCurve;Ljava/util/function/Function;)V
+
+    return-object v9
+.end method
+
+.method public inversePrimary()Lcom/google/android/material/color/utilities/DynamicColor;
+    .locals 19
+
+    .line 428
+    new-instance v9, Lcom/google/android/material/color/utilities/DynamicColor;
+
+    new-instance v2, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda115;
+
+    invoke-direct {v2}, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda115;-><init>()V
+
+    new-instance v3, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda116;
+
+    invoke-direct {v3}, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda116;-><init>()V
+
+    new-instance v5, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda117;
+
+    move-object/from16 v0, p0
+
+    invoke-direct {v5, v0}, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda117;-><init>(Lcom/google/android/material/color/utilities/MaterialDynamicColors;)V
+
+    new-instance v7, Lcom/google/android/material/color/utilities/ContrastCurve;
+
+    const-wide/high16 v15, 0x401c000000000000L    # 7.0
+
+    const-wide/high16 v17, 0x4026000000000000L    # 11.0
+
+    const-wide/high16 v11, 0x4008000000000000L    # 3.0
+
+    const-wide/high16 v13, 0x4012000000000000L    # 4.5
+
+    move-object v10, v7
+
+    invoke-direct/range {v10 .. v18}, Lcom/google/android/material/color/utilities/ContrastCurve;-><init>(DDDD)V
+
+    const/4 v8, 0x0
+
+    const-string v1, "inverse_primary"
+
+    const/4 v4, 0x0
+
+    const/4 v6, 0x0
+
+    move-object v0, v9
+
+    invoke-direct/range {v0 .. v8}, Lcom/google/android/material/color/utilities/DynamicColor;-><init>(Ljava/lang/String;Ljava/util/function/Function;Ljava/util/function/Function;ZLjava/util/function/Function;Ljava/util/function/Function;Lcom/google/android/material/color/utilities/ContrastCurve;Ljava/util/function/Function;)V
+
+    return-object v9
+.end method
+
+.method public inverseSurface()Lcom/google/android/material/color/utilities/DynamicColor;
+    .locals 9
+
+    .line 257
+    new-instance p0, Lcom/google/android/material/color/utilities/DynamicColor;
+
+    new-instance v2, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda42;
+
+    invoke-direct {v2}, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda42;-><init>()V
+
+    new-instance v3, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda43;
+
+    invoke-direct {v3}, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda43;-><init>()V
+
+    const/4 v7, 0x0
+
+    const/4 v8, 0x0
+
+    const-string v1, "inverse_surface"
+
+    const/4 v4, 0x0
+
+    const/4 v5, 0x0
+
+    const/4 v6, 0x0
+
+    move-object v0, p0
+
+    invoke-direct/range {v0 .. v8}, Lcom/google/android/material/color/utilities/DynamicColor;-><init>(Ljava/lang/String;Ljava/util/function/Function;Ljava/util/function/Function;ZLjava/util/function/Function;Ljava/util/function/Function;Lcom/google/android/material/color/utilities/ContrastCurve;Ljava/util/function/Function;)V
+
+    return-object p0
+.end method
+
+.method synthetic lambda$error$93$com-google-android-material-color-utilities-MaterialDynamicColors(Lcom/google/android/material/color/utilities/DynamicScheme;)Lcom/google/android/material/color/utilities/ToneDeltaPair;
+    .locals 7
+
+    .line 614
+    new-instance p1, Lcom/google/android/material/color/utilities/ToneDeltaPair;
+
+    invoke-virtual {p0}, Lcom/google/android/material/color/utilities/MaterialDynamicColors;->errorContainer()Lcom/google/android/material/color/utilities/DynamicColor;
+
+    move-result-object v1
+
+    invoke-virtual {p0}, Lcom/google/android/material/color/utilities/MaterialDynamicColors;->error()Lcom/google/android/material/color/utilities/DynamicColor;
+
+    move-result-object v2
+
+    sget-object v5, Lcom/google/android/material/color/utilities/TonePolarity;->NEARER:Lcom/google/android/material/color/utilities/TonePolarity;
+
+    const/4 v6, 0x0
+
+    const-wide/high16 v3, 0x402e000000000000L    # 15.0
+
+    move-object v0, p1
+
+    invoke-direct/range {v0 .. v6}, Lcom/google/android/material/color/utilities/ToneDeltaPair;-><init>(Lcom/google/android/material/color/utilities/DynamicColor;Lcom/google/android/material/color/utilities/DynamicColor;DLcom/google/android/material/color/utilities/TonePolarity;Z)V
+
+    return-object p1
+.end method
+
+.method synthetic lambda$errorContainer$99$com-google-android-material-color-utilities-MaterialDynamicColors(Lcom/google/android/material/color/utilities/DynamicScheme;)Lcom/google/android/material/color/utilities/ToneDeltaPair;
+    .locals 7
+
+    .line 641
+    new-instance p1, Lcom/google/android/material/color/utilities/ToneDeltaPair;
+
+    invoke-virtual {p0}, Lcom/google/android/material/color/utilities/MaterialDynamicColors;->errorContainer()Lcom/google/android/material/color/utilities/DynamicColor;
+
+    move-result-object v1
+
+    invoke-virtual {p0}, Lcom/google/android/material/color/utilities/MaterialDynamicColors;->error()Lcom/google/android/material/color/utilities/DynamicColor;
+
+    move-result-object v2
+
+    sget-object v5, Lcom/google/android/material/color/utilities/TonePolarity;->NEARER:Lcom/google/android/material/color/utilities/TonePolarity;
+
+    const/4 v6, 0x0
+
+    const-wide/high16 v3, 0x402e000000000000L    # 15.0
+
+    move-object v0, p1
+
+    invoke-direct/range {v0 .. v6}, Lcom/google/android/material/color/utilities/ToneDeltaPair;-><init>(Lcom/google/android/material/color/utilities/DynamicColor;Lcom/google/android/material/color/utilities/DynamicColor;DLcom/google/android/material/color/utilities/TonePolarity;Z)V
+
+    return-object p1
+.end method
+
+.method synthetic lambda$inverseOnSurface$41$com-google-android-material-color-utilities-MaterialDynamicColors(Lcom/google/android/material/color/utilities/DynamicScheme;)Lcom/google/android/material/color/utilities/DynamicColor;
+    .locals 0
+
+    .line 275
+    invoke-virtual {p0}, Lcom/google/android/material/color/utilities/MaterialDynamicColors;->inverseSurface()Lcom/google/android/material/color/utilities/DynamicColor;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method synthetic lambda$inversePrimary$66$com-google-android-material-color-utilities-MaterialDynamicColors(Lcom/google/android/material/color/utilities/DynamicScheme;)Lcom/google/android/material/color/utilities/DynamicColor;
+    .locals 0
+
+    .line 433
+    invoke-virtual {p0}, Lcom/google/android/material/color/utilities/MaterialDynamicColors;->inverseSurface()Lcom/google/android/material/color/utilities/DynamicColor;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method synthetic lambda$onBackground$14$com-google-android-material-color-utilities-MaterialDynamicColors(Lcom/google/android/material/color/utilities/DynamicScheme;)Lcom/google/android/material/color/utilities/DynamicColor;
+    .locals 0
+
+    .line 106
+    invoke-virtual {p0}, Lcom/google/android/material/color/utilities/MaterialDynamicColors;->background()Lcom/google/android/material/color/utilities/DynamicColor;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method synthetic lambda$onError$96$com-google-android-material-color-utilities-MaterialDynamicColors(Lcom/google/android/material/color/utilities/DynamicScheme;)Lcom/google/android/material/color/utilities/DynamicColor;
+    .locals 0
+
+    .line 624
+    invoke-virtual {p0}, Lcom/google/android/material/color/utilities/MaterialDynamicColors;->error()Lcom/google/android/material/color/utilities/DynamicColor;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method synthetic lambda$onErrorContainer$102$com-google-android-material-color-utilities-MaterialDynamicColors(Lcom/google/android/material/color/utilities/DynamicScheme;)Lcom/google/android/material/color/utilities/DynamicColor;
+    .locals 0
+
+    .line 651
+    invoke-virtual {p0}, Lcom/google/android/material/color/utilities/MaterialDynamicColors;->errorContainer()Lcom/google/android/material/color/utilities/DynamicColor;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method synthetic lambda$onPrimary$57$com-google-android-material-color-utilities-MaterialDynamicColors(Lcom/google/android/material/color/utilities/DynamicScheme;)Lcom/google/android/material/color/utilities/DynamicColor;
+    .locals 0
+
+    .line 377
+    invoke-virtual {p0}, Lcom/google/android/material/color/utilities/MaterialDynamicColors;->primary()Lcom/google/android/material/color/utilities/DynamicColor;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method synthetic lambda$onPrimaryContainer$62$com-google-android-material-color-utilities-MaterialDynamicColors(Lcom/google/android/material/color/utilities/DynamicScheme;)Ljava/lang/Double;
+    .locals 2
+
+    .line 411
+    invoke-static {p1}, Lcom/google/android/material/color/utilities/MaterialDynamicColors;->isFidelity(Lcom/google/android/material/color/utilities/DynamicScheme;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_0
+
+    .line 412
+    invoke-virtual {p0}, Lcom/google/android/material/color/utilities/MaterialDynamicColors;->primaryContainer()Lcom/google/android/material/color/utilities/DynamicColor;
+
+    move-result-object p0
+
+    iget-object p0, p0, Lcom/google/android/material/color/utilities/DynamicColor;->tone:Ljava/util/function/Function;
+
+    invoke-interface {p0, p1}, Ljava/util/function/Function;->apply(Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object p0
+
+    check-cast p0, Ljava/lang/Double;
+
+    invoke-virtual {p0}, Ljava/lang/Double;->doubleValue()D
+
+    move-result-wide p0
+
+    const-wide/high16 v0, 0x4012000000000000L    # 4.5
+
+    invoke-static {p0, p1, v0, v1}, Lcom/google/android/material/color/utilities/DynamicColor;->foregroundTone(DD)D
+
+    move-result-wide p0
+
+    invoke-static {p0, p1}, Ljava/lang/Double;->valueOf(D)Ljava/lang/Double;
+
+    move-result-object p0
+
+    return-object p0
+
+    .line 414
+    :cond_0
+    invoke-static {p1}, Lcom/google/android/material/color/utilities/MaterialDynamicColors;->isMonochrome(Lcom/google/android/material/color/utilities/DynamicScheme;)Z
+
+    move-result p0
+
+    if-eqz p0, :cond_2
+
+    .line 415
+    iget-boolean p0, p1, Lcom/google/android/material/color/utilities/DynamicScheme;->isDark:Z
+
+    if-eqz p0, :cond_1
+
+    const-wide/16 p0, 0x0
+
+    goto :goto_0
+
+    :cond_1
+    const-wide/high16 p0, 0x4059000000000000L    # 100.0
+
+    :goto_0
+    invoke-static {p0, p1}, Ljava/lang/Double;->valueOf(D)Ljava/lang/Double;
+
+    move-result-object p0
+
+    return-object p0
+
+    .line 417
+    :cond_2
+    iget-boolean p0, p1, Lcom/google/android/material/color/utilities/DynamicScheme;->isDark:Z
+
+    if-eqz p0, :cond_3
+
+    const-wide p0, 0x4056800000000000L    # 90.0
+
+    goto :goto_1
+
+    :cond_3
+    const-wide/high16 p0, 0x4024000000000000L    # 10.0
+
+    :goto_1
+    invoke-static {p0, p1}, Ljava/lang/Double;->valueOf(D)Ljava/lang/Double;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method synthetic lambda$onPrimaryContainer$63$com-google-android-material-color-utilities-MaterialDynamicColors(Lcom/google/android/material/color/utilities/DynamicScheme;)Lcom/google/android/material/color/utilities/DynamicColor;
+    .locals 0
+
+    .line 420
+    invoke-virtual {p0}, Lcom/google/android/material/color/utilities/MaterialDynamicColors;->primaryContainer()Lcom/google/android/material/color/utilities/DynamicColor;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method synthetic lambda$onPrimaryFixed$111$com-google-android-material-color-utilities-MaterialDynamicColors(Lcom/google/android/material/color/utilities/DynamicScheme;)Lcom/google/android/material/color/utilities/DynamicColor;
+    .locals 0
+
+    .line 692
+    invoke-virtual {p0}, Lcom/google/android/material/color/utilities/MaterialDynamicColors;->primaryFixedDim()Lcom/google/android/material/color/utilities/DynamicColor;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method synthetic lambda$onPrimaryFixed$112$com-google-android-material-color-utilities-MaterialDynamicColors(Lcom/google/android/material/color/utilities/DynamicScheme;)Lcom/google/android/material/color/utilities/DynamicColor;
+    .locals 0
+
+    .line 693
+    invoke-virtual {p0}, Lcom/google/android/material/color/utilities/MaterialDynamicColors;->primaryFixed()Lcom/google/android/material/color/utilities/DynamicColor;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method synthetic lambda$onPrimaryFixedVariant$115$com-google-android-material-color-utilities-MaterialDynamicColors(Lcom/google/android/material/color/utilities/DynamicScheme;)Lcom/google/android/material/color/utilities/DynamicColor;
+    .locals 0
+
+    .line 705
+    invoke-virtual {p0}, Lcom/google/android/material/color/utilities/MaterialDynamicColors;->primaryFixedDim()Lcom/google/android/material/color/utilities/DynamicColor;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method synthetic lambda$onPrimaryFixedVariant$116$com-google-android-material-color-utilities-MaterialDynamicColors(Lcom/google/android/material/color/utilities/DynamicScheme;)Lcom/google/android/material/color/utilities/DynamicColor;
+    .locals 0
+
+    .line 706
+    invoke-virtual {p0}, Lcom/google/android/material/color/utilities/MaterialDynamicColors;->primaryFixed()Lcom/google/android/material/color/utilities/DynamicColor;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method synthetic lambda$onSecondary$72$com-google-android-material-color-utilities-MaterialDynamicColors(Lcom/google/android/material/color/utilities/DynamicScheme;)Lcom/google/android/material/color/utilities/DynamicColor;
+    .locals 0
+
+    .line 466
+    invoke-virtual {p0}, Lcom/google/android/material/color/utilities/MaterialDynamicColors;->secondary()Lcom/google/android/material/color/utilities/DynamicColor;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method synthetic lambda$onSecondaryContainer$77$com-google-android-material-color-utilities-MaterialDynamicColors(Lcom/google/android/material/color/utilities/DynamicScheme;)Ljava/lang/Double;
+    .locals 2
+
+    .line 508
+    invoke-static {p1}, Lcom/google/android/material/color/utilities/MaterialDynamicColors;->isFidelity(Lcom/google/android/material/color/utilities/DynamicScheme;)Z
+
+    move-result v0
+
+    if-nez v0, :cond_1
+
+    .line 509
+    iget-boolean p0, p1, Lcom/google/android/material/color/utilities/DynamicScheme;->isDark:Z
+
+    if-eqz p0, :cond_0
+
+    const-wide p0, 0x4056800000000000L    # 90.0
+
+    goto :goto_0
+
+    :cond_0
+    const-wide/high16 p0, 0x4024000000000000L    # 10.0
+
+    :goto_0
+    invoke-static {p0, p1}, Ljava/lang/Double;->valueOf(D)Ljava/lang/Double;
+
+    move-result-object p0
+
+    return-object p0
+
+    .line 511
+    :cond_1
+    invoke-virtual {p0}, Lcom/google/android/material/color/utilities/MaterialDynamicColors;->secondaryContainer()Lcom/google/android/material/color/utilities/DynamicColor;
+
+    move-result-object p0
+
+    iget-object p0, p0, Lcom/google/android/material/color/utilities/DynamicColor;->tone:Ljava/util/function/Function;
+
+    invoke-interface {p0, p1}, Ljava/util/function/Function;->apply(Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object p0
+
+    check-cast p0, Ljava/lang/Double;
+
+    invoke-virtual {p0}, Ljava/lang/Double;->doubleValue()D
+
+    move-result-wide p0
+
+    const-wide/high16 v0, 0x4012000000000000L    # 4.5
+
+    invoke-static {p0, p1, v0, v1}, Lcom/google/android/material/color/utilities/DynamicColor;->foregroundTone(DD)D
+
+    move-result-wide p0
+
+    invoke-static {p0, p1}, Ljava/lang/Double;->valueOf(D)Ljava/lang/Double;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method synthetic lambda$onSecondaryContainer$78$com-google-android-material-color-utilities-MaterialDynamicColors(Lcom/google/android/material/color/utilities/DynamicScheme;)Lcom/google/android/material/color/utilities/DynamicColor;
+    .locals 0
+
+    .line 514
+    invoke-virtual {p0}, Lcom/google/android/material/color/utilities/MaterialDynamicColors;->secondaryContainer()Lcom/google/android/material/color/utilities/DynamicColor;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method synthetic lambda$onSecondaryFixed$125$com-google-android-material-color-utilities-MaterialDynamicColors(Lcom/google/android/material/color/utilities/DynamicScheme;)Lcom/google/android/material/color/utilities/DynamicColor;
+    .locals 0
+
+    .line 748
+    invoke-virtual {p0}, Lcom/google/android/material/color/utilities/MaterialDynamicColors;->secondaryFixedDim()Lcom/google/android/material/color/utilities/DynamicColor;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method synthetic lambda$onSecondaryFixed$126$com-google-android-material-color-utilities-MaterialDynamicColors(Lcom/google/android/material/color/utilities/DynamicScheme;)Lcom/google/android/material/color/utilities/DynamicColor;
+    .locals 0
+
+    .line 749
+    invoke-virtual {p0}, Lcom/google/android/material/color/utilities/MaterialDynamicColors;->secondaryFixed()Lcom/google/android/material/color/utilities/DynamicColor;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method synthetic lambda$onSecondaryFixedVariant$129$com-google-android-material-color-utilities-MaterialDynamicColors(Lcom/google/android/material/color/utilities/DynamicScheme;)Lcom/google/android/material/color/utilities/DynamicColor;
+    .locals 0
+
+    .line 761
+    invoke-virtual {p0}, Lcom/google/android/material/color/utilities/MaterialDynamicColors;->secondaryFixedDim()Lcom/google/android/material/color/utilities/DynamicColor;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method synthetic lambda$onSecondaryFixedVariant$130$com-google-android-material-color-utilities-MaterialDynamicColors(Lcom/google/android/material/color/utilities/DynamicScheme;)Lcom/google/android/material/color/utilities/DynamicColor;
+    .locals 0
+
+    .line 762
+    invoke-virtual {p0}, Lcom/google/android/material/color/utilities/MaterialDynamicColors;->secondaryFixed()Lcom/google/android/material/color/utilities/DynamicColor;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method synthetic lambda$onTertiary$84$com-google-android-material-color-utilities-MaterialDynamicColors(Lcom/google/android/material/color/utilities/DynamicScheme;)Lcom/google/android/material/color/utilities/DynamicColor;
+    .locals 0
+
+    .line 551
+    invoke-virtual {p0}, Lcom/google/android/material/color/utilities/MaterialDynamicColors;->tertiary()Lcom/google/android/material/color/utilities/DynamicColor;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method synthetic lambda$onTertiaryContainer$89$com-google-android-material-color-utilities-MaterialDynamicColors(Lcom/google/android/material/color/utilities/DynamicScheme;)Ljava/lang/Double;
+    .locals 2
+
+    .line 588
+    invoke-static {p1}, Lcom/google/android/material/color/utilities/MaterialDynamicColors;->isMonochrome(Lcom/google/android/material/color/utilities/DynamicScheme;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_1
+
+    .line 589
+    iget-boolean p0, p1, Lcom/google/android/material/color/utilities/DynamicScheme;->isDark:Z
+
+    if-eqz p0, :cond_0
+
+    const-wide/16 p0, 0x0
+
+    goto :goto_0
+
+    :cond_0
+    const-wide/high16 p0, 0x4059000000000000L    # 100.0
+
+    :goto_0
+    invoke-static {p0, p1}, Ljava/lang/Double;->valueOf(D)Ljava/lang/Double;
+
+    move-result-object p0
+
+    return-object p0
+
+    .line 591
+    :cond_1
+    invoke-static {p1}, Lcom/google/android/material/color/utilities/MaterialDynamicColors;->isFidelity(Lcom/google/android/material/color/utilities/DynamicScheme;)Z
+
+    move-result v0
+
+    if-nez v0, :cond_3
+
+    .line 592
+    iget-boolean p0, p1, Lcom/google/android/material/color/utilities/DynamicScheme;->isDark:Z
+
+    if-eqz p0, :cond_2
+
+    const-wide p0, 0x4056800000000000L    # 90.0
+
+    goto :goto_1
+
+    :cond_2
+    const-wide/high16 p0, 0x4024000000000000L    # 10.0
+
+    :goto_1
+    invoke-static {p0, p1}, Ljava/lang/Double;->valueOf(D)Ljava/lang/Double;
+
+    move-result-object p0
+
+    return-object p0
+
+    .line 594
+    :cond_3
+    invoke-virtual {p0}, Lcom/google/android/material/color/utilities/MaterialDynamicColors;->tertiaryContainer()Lcom/google/android/material/color/utilities/DynamicColor;
+
+    move-result-object p0
+
+    iget-object p0, p0, Lcom/google/android/material/color/utilities/DynamicColor;->tone:Ljava/util/function/Function;
+
+    invoke-interface {p0, p1}, Ljava/util/function/Function;->apply(Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object p0
+
+    check-cast p0, Ljava/lang/Double;
+
+    invoke-virtual {p0}, Ljava/lang/Double;->doubleValue()D
+
+    move-result-wide p0
+
+    const-wide/high16 v0, 0x4012000000000000L    # 4.5
+
+    invoke-static {p0, p1, v0, v1}, Lcom/google/android/material/color/utilities/DynamicColor;->foregroundTone(DD)D
+
+    move-result-wide p0
+
+    invoke-static {p0, p1}, Ljava/lang/Double;->valueOf(D)Ljava/lang/Double;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method synthetic lambda$onTertiaryContainer$90$com-google-android-material-color-utilities-MaterialDynamicColors(Lcom/google/android/material/color/utilities/DynamicScheme;)Lcom/google/android/material/color/utilities/DynamicColor;
+    .locals 0
+
+    .line 597
+    invoke-virtual {p0}, Lcom/google/android/material/color/utilities/MaterialDynamicColors;->tertiaryContainer()Lcom/google/android/material/color/utilities/DynamicColor;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method synthetic lambda$onTertiaryFixed$139$com-google-android-material-color-utilities-MaterialDynamicColors(Lcom/google/android/material/color/utilities/DynamicScheme;)Lcom/google/android/material/color/utilities/DynamicColor;
+    .locals 0
+
+    .line 804
+    invoke-virtual {p0}, Lcom/google/android/material/color/utilities/MaterialDynamicColors;->tertiaryFixedDim()Lcom/google/android/material/color/utilities/DynamicColor;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method synthetic lambda$onTertiaryFixed$140$com-google-android-material-color-utilities-MaterialDynamicColors(Lcom/google/android/material/color/utilities/DynamicScheme;)Lcom/google/android/material/color/utilities/DynamicColor;
+    .locals 0
+
+    .line 805
+    invoke-virtual {p0}, Lcom/google/android/material/color/utilities/MaterialDynamicColors;->tertiaryFixed()Lcom/google/android/material/color/utilities/DynamicColor;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method synthetic lambda$onTertiaryFixedVariant$143$com-google-android-material-color-utilities-MaterialDynamicColors(Lcom/google/android/material/color/utilities/DynamicScheme;)Lcom/google/android/material/color/utilities/DynamicColor;
+    .locals 0
+
+    .line 817
+    invoke-virtual {p0}, Lcom/google/android/material/color/utilities/MaterialDynamicColors;->tertiaryFixedDim()Lcom/google/android/material/color/utilities/DynamicColor;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method synthetic lambda$onTertiaryFixedVariant$144$com-google-android-material-color-utilities-MaterialDynamicColors(Lcom/google/android/material/color/utilities/DynamicScheme;)Lcom/google/android/material/color/utilities/DynamicColor;
+    .locals 0
+
+    .line 818
+    invoke-virtual {p0}, Lcom/google/android/material/color/utilities/MaterialDynamicColors;->tertiaryFixed()Lcom/google/android/material/color/utilities/DynamicColor;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method synthetic lambda$primary$54$com-google-android-material-color-utilities-MaterialDynamicColors(Lcom/google/android/material/color/utilities/DynamicScheme;)Lcom/google/android/material/color/utilities/ToneDeltaPair;
+    .locals 7
+
+    .line 362
+    new-instance p1, Lcom/google/android/material/color/utilities/ToneDeltaPair;
+
+    invoke-virtual {p0}, Lcom/google/android/material/color/utilities/MaterialDynamicColors;->primaryContainer()Lcom/google/android/material/color/utilities/DynamicColor;
+
+    move-result-object v1
+
+    invoke-virtual {p0}, Lcom/google/android/material/color/utilities/MaterialDynamicColors;->primary()Lcom/google/android/material/color/utilities/DynamicColor;
+
+    move-result-object v2
+
+    sget-object v5, Lcom/google/android/material/color/utilities/TonePolarity;->NEARER:Lcom/google/android/material/color/utilities/TonePolarity;
+
+    const/4 v6, 0x0
+
+    const-wide/high16 v3, 0x402e000000000000L    # 15.0
+
+    move-object v0, p1
+
+    invoke-direct/range {v0 .. v6}, Lcom/google/android/material/color/utilities/ToneDeltaPair;-><init>(Lcom/google/android/material/color/utilities/DynamicColor;Lcom/google/android/material/color/utilities/DynamicColor;DLcom/google/android/material/color/utilities/TonePolarity;Z)V
+
+    return-object p1
+.end method
+
+.method synthetic lambda$primaryContainer$60$com-google-android-material-color-utilities-MaterialDynamicColors(Lcom/google/android/material/color/utilities/DynamicScheme;)Lcom/google/android/material/color/utilities/ToneDeltaPair;
+    .locals 7
+
+    .line 402
+    new-instance p1, Lcom/google/android/material/color/utilities/ToneDeltaPair;
+
+    invoke-virtual {p0}, Lcom/google/android/material/color/utilities/MaterialDynamicColors;->primaryContainer()Lcom/google/android/material/color/utilities/DynamicColor;
+
+    move-result-object v1
+
+    invoke-virtual {p0}, Lcom/google/android/material/color/utilities/MaterialDynamicColors;->primary()Lcom/google/android/material/color/utilities/DynamicColor;
+
+    move-result-object v2
+
+    sget-object v5, Lcom/google/android/material/color/utilities/TonePolarity;->NEARER:Lcom/google/android/material/color/utilities/TonePolarity;
+
+    const/4 v6, 0x0
+
+    const-wide/high16 v3, 0x402e000000000000L    # 15.0
+
+    move-object v0, p1
+
+    invoke-direct/range {v0 .. v6}, Lcom/google/android/material/color/utilities/ToneDeltaPair;-><init>(Lcom/google/android/material/color/utilities/DynamicColor;Lcom/google/android/material/color/utilities/DynamicColor;DLcom/google/android/material/color/utilities/TonePolarity;Z)V
+
+    return-object p1
+.end method
+
+.method synthetic lambda$primaryFixed$105$com-google-android-material-color-utilities-MaterialDynamicColors(Lcom/google/android/material/color/utilities/DynamicScheme;)Lcom/google/android/material/color/utilities/ToneDeltaPair;
+    .locals 7
+
+    .line 668
+    new-instance p1, Lcom/google/android/material/color/utilities/ToneDeltaPair;
+
+    invoke-virtual {p0}, Lcom/google/android/material/color/utilities/MaterialDynamicColors;->primaryFixed()Lcom/google/android/material/color/utilities/DynamicColor;
+
+    move-result-object v1
+
+    invoke-virtual {p0}, Lcom/google/android/material/color/utilities/MaterialDynamicColors;->primaryFixedDim()Lcom/google/android/material/color/utilities/DynamicColor;
+
+    move-result-object v2
+
+    sget-object v5, Lcom/google/android/material/color/utilities/TonePolarity;->LIGHTER:Lcom/google/android/material/color/utilities/TonePolarity;
+
+    const/4 v6, 0x1
+
+    const-wide/high16 v3, 0x4024000000000000L    # 10.0
+
+    move-object v0, p1
+
+    invoke-direct/range {v0 .. v6}, Lcom/google/android/material/color/utilities/ToneDeltaPair;-><init>(Lcom/google/android/material/color/utilities/DynamicColor;Lcom/google/android/material/color/utilities/DynamicColor;DLcom/google/android/material/color/utilities/TonePolarity;Z)V
+
+    return-object p1
+.end method
+
+.method synthetic lambda$primaryFixedDim$108$com-google-android-material-color-utilities-MaterialDynamicColors(Lcom/google/android/material/color/utilities/DynamicScheme;)Lcom/google/android/material/color/utilities/ToneDeltaPair;
+    .locals 7
+
+    .line 682
+    new-instance p1, Lcom/google/android/material/color/utilities/ToneDeltaPair;
+
+    invoke-virtual {p0}, Lcom/google/android/material/color/utilities/MaterialDynamicColors;->primaryFixed()Lcom/google/android/material/color/utilities/DynamicColor;
+
+    move-result-object v1
+
+    invoke-virtual {p0}, Lcom/google/android/material/color/utilities/MaterialDynamicColors;->primaryFixedDim()Lcom/google/android/material/color/utilities/DynamicColor;
+
+    move-result-object v2
+
+    sget-object v5, Lcom/google/android/material/color/utilities/TonePolarity;->LIGHTER:Lcom/google/android/material/color/utilities/TonePolarity;
+
+    const/4 v6, 0x1
+
+    const-wide/high16 v3, 0x4024000000000000L    # 10.0
+
+    move-object v0, p1
+
+    invoke-direct/range {v0 .. v6}, Lcom/google/android/material/color/utilities/ToneDeltaPair;-><init>(Lcom/google/android/material/color/utilities/DynamicColor;Lcom/google/android/material/color/utilities/DynamicColor;DLcom/google/android/material/color/utilities/TonePolarity;Z)V
+
+    return-object p1
+.end method
+
+.method synthetic lambda$secondary$69$com-google-android-material-color-utilities-MaterialDynamicColors(Lcom/google/android/material/color/utilities/DynamicScheme;)Lcom/google/android/material/color/utilities/ToneDeltaPair;
+    .locals 7
+
+    .line 450
+    new-instance p1, Lcom/google/android/material/color/utilities/ToneDeltaPair;
+
+    invoke-virtual {p0}, Lcom/google/android/material/color/utilities/MaterialDynamicColors;->secondaryContainer()Lcom/google/android/material/color/utilities/DynamicColor;
+
+    move-result-object v1
+
+    invoke-virtual {p0}, Lcom/google/android/material/color/utilities/MaterialDynamicColors;->secondary()Lcom/google/android/material/color/utilities/DynamicColor;
+
+    move-result-object v2
+
+    sget-object v5, Lcom/google/android/material/color/utilities/TonePolarity;->NEARER:Lcom/google/android/material/color/utilities/TonePolarity;
+
+    const/4 v6, 0x0
+
+    const-wide/high16 v3, 0x402e000000000000L    # 15.0
+
+    move-object v0, p1
+
+    invoke-direct/range {v0 .. v6}, Lcom/google/android/material/color/utilities/ToneDeltaPair;-><init>(Lcom/google/android/material/color/utilities/DynamicColor;Lcom/google/android/material/color/utilities/DynamicColor;DLcom/google/android/material/color/utilities/TonePolarity;Z)V
+
+    return-object p1
+.end method
+
+.method synthetic lambda$secondaryContainer$75$com-google-android-material-color-utilities-MaterialDynamicColors(Lcom/google/android/material/color/utilities/DynamicScheme;)Lcom/google/android/material/color/utilities/ToneDeltaPair;
+    .locals 7
+
+    .line 499
+    new-instance p1, Lcom/google/android/material/color/utilities/ToneDeltaPair;
+
+    invoke-virtual {p0}, Lcom/google/android/material/color/utilities/MaterialDynamicColors;->secondaryContainer()Lcom/google/android/material/color/utilities/DynamicColor;
+
+    move-result-object v1
+
+    invoke-virtual {p0}, Lcom/google/android/material/color/utilities/MaterialDynamicColors;->secondary()Lcom/google/android/material/color/utilities/DynamicColor;
+
+    move-result-object v2
+
+    sget-object v5, Lcom/google/android/material/color/utilities/TonePolarity;->NEARER:Lcom/google/android/material/color/utilities/TonePolarity;
+
+    const/4 v6, 0x0
+
+    const-wide/high16 v3, 0x402e000000000000L    # 15.0
+
+    move-object v0, p1
+
+    invoke-direct/range {v0 .. v6}, Lcom/google/android/material/color/utilities/ToneDeltaPair;-><init>(Lcom/google/android/material/color/utilities/DynamicColor;Lcom/google/android/material/color/utilities/DynamicColor;DLcom/google/android/material/color/utilities/TonePolarity;Z)V
+
+    return-object p1
+.end method
+
+.method synthetic lambda$secondaryFixed$119$com-google-android-material-color-utilities-MaterialDynamicColors(Lcom/google/android/material/color/utilities/DynamicScheme;)Lcom/google/android/material/color/utilities/ToneDeltaPair;
+    .locals 7
+
+    .line 722
+    new-instance p1, Lcom/google/android/material/color/utilities/ToneDeltaPair;
+
+    .line 723
+    invoke-virtual {p0}, Lcom/google/android/material/color/utilities/MaterialDynamicColors;->secondaryFixed()Lcom/google/android/material/color/utilities/DynamicColor;
+
+    move-result-object v1
+
+    invoke-virtual {p0}, Lcom/google/android/material/color/utilities/MaterialDynamicColors;->secondaryFixedDim()Lcom/google/android/material/color/utilities/DynamicColor;
+
+    move-result-object v2
+
+    sget-object v5, Lcom/google/android/material/color/utilities/TonePolarity;->LIGHTER:Lcom/google/android/material/color/utilities/TonePolarity;
+
+    const/4 v6, 0x1
+
+    const-wide/high16 v3, 0x4024000000000000L    # 10.0
+
+    move-object v0, p1
+
+    invoke-direct/range {v0 .. v6}, Lcom/google/android/material/color/utilities/ToneDeltaPair;-><init>(Lcom/google/android/material/color/utilities/DynamicColor;Lcom/google/android/material/color/utilities/DynamicColor;DLcom/google/android/material/color/utilities/TonePolarity;Z)V
+
+    return-object p1
+.end method
+
+.method synthetic lambda$secondaryFixedDim$122$com-google-android-material-color-utilities-MaterialDynamicColors(Lcom/google/android/material/color/utilities/DynamicScheme;)Lcom/google/android/material/color/utilities/ToneDeltaPair;
+    .locals 7
+
+    .line 737
+    new-instance p1, Lcom/google/android/material/color/utilities/ToneDeltaPair;
+
+    .line 738
+    invoke-virtual {p0}, Lcom/google/android/material/color/utilities/MaterialDynamicColors;->secondaryFixed()Lcom/google/android/material/color/utilities/DynamicColor;
+
+    move-result-object v1
+
+    invoke-virtual {p0}, Lcom/google/android/material/color/utilities/MaterialDynamicColors;->secondaryFixedDim()Lcom/google/android/material/color/utilities/DynamicColor;
+
+    move-result-object v2
+
+    sget-object v5, Lcom/google/android/material/color/utilities/TonePolarity;->LIGHTER:Lcom/google/android/material/color/utilities/TonePolarity;
+
+    const/4 v6, 0x1
+
+    const-wide/high16 v3, 0x4024000000000000L    # 10.0
+
+    move-object v0, p1
+
+    invoke-direct/range {v0 .. v6}, Lcom/google/android/material/color/utilities/ToneDeltaPair;-><init>(Lcom/google/android/material/color/utilities/DynamicColor;Lcom/google/android/material/color/utilities/DynamicColor;DLcom/google/android/material/color/utilities/TonePolarity;Z)V
+
+    return-object p1
+.end method
+
+.method synthetic lambda$tertiary$81$com-google-android-material-color-utilities-MaterialDynamicColors(Lcom/google/android/material/color/utilities/DynamicScheme;)Lcom/google/android/material/color/utilities/ToneDeltaPair;
+    .locals 7
+
+    .line 536
+    new-instance p1, Lcom/google/android/material/color/utilities/ToneDeltaPair;
+
+    invoke-virtual {p0}, Lcom/google/android/material/color/utilities/MaterialDynamicColors;->tertiaryContainer()Lcom/google/android/material/color/utilities/DynamicColor;
+
+    move-result-object v1
+
+    invoke-virtual {p0}, Lcom/google/android/material/color/utilities/MaterialDynamicColors;->tertiary()Lcom/google/android/material/color/utilities/DynamicColor;
+
+    move-result-object v2
+
+    sget-object v5, Lcom/google/android/material/color/utilities/TonePolarity;->NEARER:Lcom/google/android/material/color/utilities/TonePolarity;
+
+    const/4 v6, 0x0
+
+    const-wide/high16 v3, 0x402e000000000000L    # 15.0
+
+    move-object v0, p1
+
+    invoke-direct/range {v0 .. v6}, Lcom/google/android/material/color/utilities/ToneDeltaPair;-><init>(Lcom/google/android/material/color/utilities/DynamicColor;Lcom/google/android/material/color/utilities/DynamicColor;DLcom/google/android/material/color/utilities/TonePolarity;Z)V
+
+    return-object p1
+.end method
+
+.method synthetic lambda$tertiaryContainer$87$com-google-android-material-color-utilities-MaterialDynamicColors(Lcom/google/android/material/color/utilities/DynamicScheme;)Lcom/google/android/material/color/utilities/ToneDeltaPair;
+    .locals 7
+
+    .line 579
+    new-instance p1, Lcom/google/android/material/color/utilities/ToneDeltaPair;
+
+    invoke-virtual {p0}, Lcom/google/android/material/color/utilities/MaterialDynamicColors;->tertiaryContainer()Lcom/google/android/material/color/utilities/DynamicColor;
+
+    move-result-object v1
+
+    invoke-virtual {p0}, Lcom/google/android/material/color/utilities/MaterialDynamicColors;->tertiary()Lcom/google/android/material/color/utilities/DynamicColor;
+
+    move-result-object v2
+
+    sget-object v5, Lcom/google/android/material/color/utilities/TonePolarity;->NEARER:Lcom/google/android/material/color/utilities/TonePolarity;
+
+    const/4 v6, 0x0
+
+    const-wide/high16 v3, 0x402e000000000000L    # 15.0
+
+    move-object v0, p1
+
+    invoke-direct/range {v0 .. v6}, Lcom/google/android/material/color/utilities/ToneDeltaPair;-><init>(Lcom/google/android/material/color/utilities/DynamicColor;Lcom/google/android/material/color/utilities/DynamicColor;DLcom/google/android/material/color/utilities/TonePolarity;Z)V
+
+    return-object p1
+.end method
+
+.method synthetic lambda$tertiaryFixed$133$com-google-android-material-color-utilities-MaterialDynamicColors(Lcom/google/android/material/color/utilities/DynamicScheme;)Lcom/google/android/material/color/utilities/ToneDeltaPair;
+    .locals 7
+
+    .line 778
+    new-instance p1, Lcom/google/android/material/color/utilities/ToneDeltaPair;
+
+    .line 779
+    invoke-virtual {p0}, Lcom/google/android/material/color/utilities/MaterialDynamicColors;->tertiaryFixed()Lcom/google/android/material/color/utilities/DynamicColor;
+
+    move-result-object v1
+
+    invoke-virtual {p0}, Lcom/google/android/material/color/utilities/MaterialDynamicColors;->tertiaryFixedDim()Lcom/google/android/material/color/utilities/DynamicColor;
+
+    move-result-object v2
+
+    sget-object v5, Lcom/google/android/material/color/utilities/TonePolarity;->LIGHTER:Lcom/google/android/material/color/utilities/TonePolarity;
+
+    const/4 v6, 0x1
+
+    const-wide/high16 v3, 0x4024000000000000L    # 10.0
+
+    move-object v0, p1
+
+    invoke-direct/range {v0 .. v6}, Lcom/google/android/material/color/utilities/ToneDeltaPair;-><init>(Lcom/google/android/material/color/utilities/DynamicColor;Lcom/google/android/material/color/utilities/DynamicColor;DLcom/google/android/material/color/utilities/TonePolarity;Z)V
+
+    return-object p1
+.end method
+
+.method synthetic lambda$tertiaryFixedDim$136$com-google-android-material-color-utilities-MaterialDynamicColors(Lcom/google/android/material/color/utilities/DynamicScheme;)Lcom/google/android/material/color/utilities/ToneDeltaPair;
+    .locals 7
+
+    .line 793
+    new-instance p1, Lcom/google/android/material/color/utilities/ToneDeltaPair;
+
+    .line 794
+    invoke-virtual {p0}, Lcom/google/android/material/color/utilities/MaterialDynamicColors;->tertiaryFixed()Lcom/google/android/material/color/utilities/DynamicColor;
+
+    move-result-object v1
+
+    invoke-virtual {p0}, Lcom/google/android/material/color/utilities/MaterialDynamicColors;->tertiaryFixedDim()Lcom/google/android/material/color/utilities/DynamicColor;
+
+    move-result-object v2
+
+    sget-object v5, Lcom/google/android/material/color/utilities/TonePolarity;->LIGHTER:Lcom/google/android/material/color/utilities/TonePolarity;
+
+    const/4 v6, 0x1
+
+    const-wide/high16 v3, 0x4024000000000000L    # 10.0
+
+    move-object v0, p1
+
+    invoke-direct/range {v0 .. v6}, Lcom/google/android/material/color/utilities/ToneDeltaPair;-><init>(Lcom/google/android/material/color/utilities/DynamicColor;Lcom/google/android/material/color/utilities/DynamicColor;DLcom/google/android/material/color/utilities/TonePolarity;Z)V
+
+    return-object p1
+.end method
+
+.method public neutralPaletteKeyColor()Lcom/google/android/material/color/utilities/DynamicColor;
+    .locals 2
+
+    .line 72
+    new-instance p0, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda11;
+
+    invoke-direct {p0}, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda11;-><init>()V
+
+    new-instance v0, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda22;
+
+    invoke-direct {v0}, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda22;-><init>()V
+
+    const-string v1, "neutral_palette_key_color"
+
+    invoke-static {v1, p0, v0}, Lcom/google/android/material/color/utilities/DynamicColor;->fromPalette(Ljava/lang/String;Ljava/util/function/Function;Ljava/util/function/Function;)Lcom/google/android/material/color/utilities/DynamicColor;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method public neutralVariantPaletteKeyColor()Lcom/google/android/material/color/utilities/DynamicColor;
+    .locals 2
+
+    .line 80
+    new-instance p0, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda144;
+
+    invoke-direct {p0}, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda144;-><init>()V
+
+    new-instance v0, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda145;
+
+    invoke-direct {v0}, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda145;-><init>()V
+
+    const-string v1, "neutral_variant_palette_key_color"
+
+    invoke-static {v1, p0, v0}, Lcom/google/android/material/color/utilities/DynamicColor;->fromPalette(Ljava/lang/String;Ljava/util/function/Function;Ljava/util/function/Function;)Lcom/google/android/material/color/utilities/DynamicColor;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method public onBackground()Lcom/google/android/material/color/utilities/DynamicColor;
+    .locals 19
+
+    .line 101
+    new-instance v9, Lcom/google/android/material/color/utilities/DynamicColor;
+
+    new-instance v2, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda104;
+
+    invoke-direct {v2}, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda104;-><init>()V
+
+    new-instance v3, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda105;
+
+    invoke-direct {v3}, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda105;-><init>()V
+
+    new-instance v5, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda106;
+
+    move-object/from16 v0, p0
+
+    invoke-direct {v5, v0}, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda106;-><init>(Lcom/google/android/material/color/utilities/MaterialDynamicColors;)V
+
+    new-instance v7, Lcom/google/android/material/color/utilities/ContrastCurve;
+
+    const-wide/high16 v15, 0x4012000000000000L    # 4.5
+
+    const-wide/high16 v17, 0x401c000000000000L    # 7.0
+
+    const-wide/high16 v11, 0x4008000000000000L    # 3.0
+
+    const-wide/high16 v13, 0x4008000000000000L    # 3.0
+
+    move-object v10, v7
+
+    invoke-direct/range {v10 .. v18}, Lcom/google/android/material/color/utilities/ContrastCurve;-><init>(DDDD)V
+
+    const/4 v8, 0x0
+
+    const-string v1, "on_background"
+
+    const/4 v4, 0x0
+
+    const/4 v6, 0x0
+
+    move-object v0, v9
+
+    invoke-direct/range {v0 .. v8}, Lcom/google/android/material/color/utilities/DynamicColor;-><init>(Ljava/lang/String;Ljava/util/function/Function;Ljava/util/function/Function;ZLjava/util/function/Function;Ljava/util/function/Function;Lcom/google/android/material/color/utilities/ContrastCurve;Ljava/util/function/Function;)V
+
+    return-object v9
+.end method
+
+.method public onError()Lcom/google/android/material/color/utilities/DynamicColor;
+    .locals 19
+
+    .line 619
+    new-instance v9, Lcom/google/android/material/color/utilities/DynamicColor;
+
+    new-instance v2, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda130;
+
+    invoke-direct {v2}, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda130;-><init>()V
+
+    new-instance v3, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda131;
+
+    invoke-direct {v3}, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda131;-><init>()V
+
+    new-instance v5, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda132;
+
+    move-object/from16 v0, p0
+
+    invoke-direct {v5, v0}, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda132;-><init>(Lcom/google/android/material/color/utilities/MaterialDynamicColors;)V
+
+    new-instance v7, Lcom/google/android/material/color/utilities/ContrastCurve;
+
+    const-wide/high16 v15, 0x4026000000000000L    # 11.0
+
+    const-wide/high16 v17, 0x4035000000000000L    # 21.0
+
+    const-wide/high16 v11, 0x4012000000000000L    # 4.5
+
+    const-wide/high16 v13, 0x401c000000000000L    # 7.0
+
+    move-object v10, v7
+
+    invoke-direct/range {v10 .. v18}, Lcom/google/android/material/color/utilities/ContrastCurve;-><init>(DDDD)V
+
+    const/4 v8, 0x0
+
+    const-string v1, "on_error"
+
+    const/4 v4, 0x0
+
+    const/4 v6, 0x0
+
+    move-object v0, v9
+
+    invoke-direct/range {v0 .. v8}, Lcom/google/android/material/color/utilities/DynamicColor;-><init>(Ljava/lang/String;Ljava/util/function/Function;Ljava/util/function/Function;ZLjava/util/function/Function;Ljava/util/function/Function;Lcom/google/android/material/color/utilities/ContrastCurve;Ljava/util/function/Function;)V
+
+    return-object v9
+.end method
+
+.method public onErrorContainer()Lcom/google/android/material/color/utilities/DynamicColor;
+    .locals 19
+
+    .line 646
+    new-instance v9, Lcom/google/android/material/color/utilities/DynamicColor;
+
+    new-instance v2, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda45;
+
+    invoke-direct {v2}, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda45;-><init>()V
+
+    new-instance v3, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda46;
+
+    invoke-direct {v3}, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda46;-><init>()V
+
+    new-instance v5, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda47;
+
+    move-object/from16 v0, p0
+
+    invoke-direct {v5, v0}, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda47;-><init>(Lcom/google/android/material/color/utilities/MaterialDynamicColors;)V
+
+    new-instance v7, Lcom/google/android/material/color/utilities/ContrastCurve;
+
+    const-wide/high16 v15, 0x4026000000000000L    # 11.0
+
+    const-wide/high16 v17, 0x4035000000000000L    # 21.0
+
+    const-wide/high16 v11, 0x4012000000000000L    # 4.5
+
+    const-wide/high16 v13, 0x401c000000000000L    # 7.0
+
+    move-object v10, v7
+
+    invoke-direct/range {v10 .. v18}, Lcom/google/android/material/color/utilities/ContrastCurve;-><init>(DDDD)V
+
+    const/4 v8, 0x0
+
+    const-string v1, "on_error_container"
+
+    const/4 v4, 0x0
+
+    const/4 v6, 0x0
+
+    move-object v0, v9
+
+    invoke-direct/range {v0 .. v8}, Lcom/google/android/material/color/utilities/DynamicColor;-><init>(Ljava/lang/String;Ljava/util/function/Function;Ljava/util/function/Function;ZLjava/util/function/Function;Ljava/util/function/Function;Lcom/google/android/material/color/utilities/ContrastCurve;Ljava/util/function/Function;)V
+
+    return-object v9
+.end method
+
+.method public onPrimary()Lcom/google/android/material/color/utilities/DynamicColor;
+    .locals 19
+
+    .line 367
+    new-instance v9, Lcom/google/android/material/color/utilities/DynamicColor;
+
+    new-instance v2, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda112;
+
+    invoke-direct {v2}, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda112;-><init>()V
+
+    new-instance v3, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda113;
+
+    invoke-direct {v3}, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda113;-><init>()V
+
+    new-instance v5, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda114;
+
+    move-object/from16 v0, p0
+
+    invoke-direct {v5, v0}, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda114;-><init>(Lcom/google/android/material/color/utilities/MaterialDynamicColors;)V
+
+    new-instance v7, Lcom/google/android/material/color/utilities/ContrastCurve;
+
+    const-wide/high16 v15, 0x4026000000000000L    # 11.0
+
+    const-wide/high16 v17, 0x4035000000000000L    # 21.0
+
+    const-wide/high16 v11, 0x4012000000000000L    # 4.5
+
+    const-wide/high16 v13, 0x401c000000000000L    # 7.0
+
+    move-object v10, v7
+
+    invoke-direct/range {v10 .. v18}, Lcom/google/android/material/color/utilities/ContrastCurve;-><init>(DDDD)V
+
+    const/4 v8, 0x0
+
+    const-string v1, "on_primary"
+
+    const/4 v4, 0x0
+
+    const/4 v6, 0x0
+
+    move-object v0, v9
+
+    invoke-direct/range {v0 .. v8}, Lcom/google/android/material/color/utilities/DynamicColor;-><init>(Ljava/lang/String;Ljava/util/function/Function;Ljava/util/function/Function;ZLjava/util/function/Function;Ljava/util/function/Function;Lcom/google/android/material/color/utilities/ContrastCurve;Ljava/util/function/Function;)V
+
+    return-object v9
+.end method
+
+.method public onPrimaryContainer()Lcom/google/android/material/color/utilities/DynamicColor;
+    .locals 19
+
+    move-object/from16 v0, p0
+
+    .line 407
+    new-instance v9, Lcom/google/android/material/color/utilities/DynamicColor;
+
+    new-instance v2, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda135;
+
+    invoke-direct {v2}, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda135;-><init>()V
+
+    new-instance v3, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda136;
+
+    invoke-direct {v3, v0}, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda136;-><init>(Lcom/google/android/material/color/utilities/MaterialDynamicColors;)V
+
+    new-instance v5, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda137;
+
+    invoke-direct {v5, v0}, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda137;-><init>(Lcom/google/android/material/color/utilities/MaterialDynamicColors;)V
+
+    new-instance v7, Lcom/google/android/material/color/utilities/ContrastCurve;
+
+    const-wide/high16 v15, 0x4026000000000000L    # 11.0
+
+    const-wide/high16 v17, 0x4035000000000000L    # 21.0
+
+    const-wide/high16 v11, 0x4012000000000000L    # 4.5
+
+    const-wide/high16 v13, 0x401c000000000000L    # 7.0
+
+    move-object v10, v7
+
+    invoke-direct/range {v10 .. v18}, Lcom/google/android/material/color/utilities/ContrastCurve;-><init>(DDDD)V
+
+    const/4 v8, 0x0
+
+    const-string v1, "on_primary_container"
+
+    const/4 v4, 0x0
+
+    const/4 v6, 0x0
+
+    move-object v0, v9
+
+    invoke-direct/range {v0 .. v8}, Lcom/google/android/material/color/utilities/DynamicColor;-><init>(Ljava/lang/String;Ljava/util/function/Function;Ljava/util/function/Function;ZLjava/util/function/Function;Ljava/util/function/Function;Lcom/google/android/material/color/utilities/ContrastCurve;Ljava/util/function/Function;)V
+
+    return-object v9
+.end method
+
+.method public onPrimaryFixed()Lcom/google/android/material/color/utilities/DynamicColor;
+    .locals 19
+
+    move-object/from16 v0, p0
+
+    .line 687
+    new-instance v9, Lcom/google/android/material/color/utilities/DynamicColor;
+
+    new-instance v2, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda28;
+
+    invoke-direct {v2}, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda28;-><init>()V
+
+    new-instance v3, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda29;
+
+    invoke-direct {v3}, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda29;-><init>()V
+
+    new-instance v5, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda30;
+
+    invoke-direct {v5, v0}, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda30;-><init>(Lcom/google/android/material/color/utilities/MaterialDynamicColors;)V
+
+    new-instance v6, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda31;
+
+    invoke-direct {v6, v0}, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda31;-><init>(Lcom/google/android/material/color/utilities/MaterialDynamicColors;)V
+
+    new-instance v7, Lcom/google/android/material/color/utilities/ContrastCurve;
+
+    const-wide/high16 v15, 0x4026000000000000L    # 11.0
+
+    const-wide/high16 v17, 0x4035000000000000L    # 21.0
+
+    const-wide/high16 v11, 0x4012000000000000L    # 4.5
+
+    const-wide/high16 v13, 0x401c000000000000L    # 7.0
+
+    move-object v10, v7
+
+    invoke-direct/range {v10 .. v18}, Lcom/google/android/material/color/utilities/ContrastCurve;-><init>(DDDD)V
+
+    const/4 v8, 0x0
+
+    const-string v1, "on_primary_fixed"
+
+    const/4 v4, 0x0
+
+    move-object v0, v9
+
+    invoke-direct/range {v0 .. v8}, Lcom/google/android/material/color/utilities/DynamicColor;-><init>(Ljava/lang/String;Ljava/util/function/Function;Ljava/util/function/Function;ZLjava/util/function/Function;Ljava/util/function/Function;Lcom/google/android/material/color/utilities/ContrastCurve;Ljava/util/function/Function;)V
+
+    return-object v9
+.end method
+
+.method public onPrimaryFixedVariant()Lcom/google/android/material/color/utilities/DynamicColor;
+    .locals 19
+
+    move-object/from16 v0, p0
+
+    .line 700
+    new-instance v9, Lcom/google/android/material/color/utilities/DynamicColor;
+
+    new-instance v2, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda122;
+
+    invoke-direct {v2}, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda122;-><init>()V
+
+    new-instance v3, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda123;
+
+    invoke-direct {v3}, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda123;-><init>()V
+
+    new-instance v5, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda124;
+
+    invoke-direct {v5, v0}, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda124;-><init>(Lcom/google/android/material/color/utilities/MaterialDynamicColors;)V
+
+    new-instance v6, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda125;
+
+    invoke-direct {v6, v0}, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda125;-><init>(Lcom/google/android/material/color/utilities/MaterialDynamicColors;)V
+
+    new-instance v7, Lcom/google/android/material/color/utilities/ContrastCurve;
+
+    const-wide/high16 v15, 0x401c000000000000L    # 7.0
+
+    const-wide/high16 v17, 0x4026000000000000L    # 11.0
+
+    const-wide/high16 v11, 0x4008000000000000L    # 3.0
+
+    const-wide/high16 v13, 0x4012000000000000L    # 4.5
+
+    move-object v10, v7
+
+    invoke-direct/range {v10 .. v18}, Lcom/google/android/material/color/utilities/ContrastCurve;-><init>(DDDD)V
+
+    const/4 v8, 0x0
+
+    const-string v1, "on_primary_fixed_variant"
+
+    const/4 v4, 0x0
+
+    move-object v0, v9
+
+    invoke-direct/range {v0 .. v8}, Lcom/google/android/material/color/utilities/DynamicColor;-><init>(Ljava/lang/String;Ljava/util/function/Function;Ljava/util/function/Function;ZLjava/util/function/Function;Ljava/util/function/Function;Lcom/google/android/material/color/utilities/ContrastCurve;Ljava/util/function/Function;)V
+
+    return-object v9
+.end method
+
+.method public onSecondary()Lcom/google/android/material/color/utilities/DynamicColor;
+    .locals 19
+
+    .line 455
+    new-instance v9, Lcom/google/android/material/color/utilities/DynamicColor;
+
+    new-instance v2, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda1;
+
+    invoke-direct {v2}, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda1;-><init>()V
+
+    new-instance v3, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda2;
+
+    invoke-direct {v3}, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda2;-><init>()V
+
+    new-instance v5, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda3;
+
+    move-object/from16 v0, p0
+
+    invoke-direct {v5, v0}, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda3;-><init>(Lcom/google/android/material/color/utilities/MaterialDynamicColors;)V
+
+    new-instance v7, Lcom/google/android/material/color/utilities/ContrastCurve;
+
+    const-wide/high16 v15, 0x4026000000000000L    # 11.0
+
+    const-wide/high16 v17, 0x4035000000000000L    # 21.0
+
+    const-wide/high16 v11, 0x4012000000000000L    # 4.5
+
+    const-wide/high16 v13, 0x401c000000000000L    # 7.0
+
+    move-object v10, v7
+
+    invoke-direct/range {v10 .. v18}, Lcom/google/android/material/color/utilities/ContrastCurve;-><init>(DDDD)V
+
+    const/4 v8, 0x0
+
+    const-string v1, "on_secondary"
+
+    const/4 v4, 0x0
+
+    const/4 v6, 0x0
+
+    move-object v0, v9
+
+    invoke-direct/range {v0 .. v8}, Lcom/google/android/material/color/utilities/DynamicColor;-><init>(Ljava/lang/String;Ljava/util/function/Function;Ljava/util/function/Function;ZLjava/util/function/Function;Ljava/util/function/Function;Lcom/google/android/material/color/utilities/ContrastCurve;Ljava/util/function/Function;)V
+
+    return-object v9
+.end method
+
+.method public onSecondaryContainer()Lcom/google/android/material/color/utilities/DynamicColor;
+    .locals 19
+
+    move-object/from16 v0, p0
+
+    .line 504
+    new-instance v9, Lcom/google/android/material/color/utilities/DynamicColor;
+
+    new-instance v2, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda25;
+
+    invoke-direct {v2}, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda25;-><init>()V
+
+    new-instance v3, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda26;
+
+    invoke-direct {v3, v0}, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda26;-><init>(Lcom/google/android/material/color/utilities/MaterialDynamicColors;)V
+
+    new-instance v5, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda27;
+
+    invoke-direct {v5, v0}, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda27;-><init>(Lcom/google/android/material/color/utilities/MaterialDynamicColors;)V
+
+    new-instance v7, Lcom/google/android/material/color/utilities/ContrastCurve;
+
+    const-wide/high16 v15, 0x4026000000000000L    # 11.0
+
+    const-wide/high16 v17, 0x4035000000000000L    # 21.0
+
+    const-wide/high16 v11, 0x4012000000000000L    # 4.5
+
+    const-wide/high16 v13, 0x401c000000000000L    # 7.0
+
+    move-object v10, v7
+
+    invoke-direct/range {v10 .. v18}, Lcom/google/android/material/color/utilities/ContrastCurve;-><init>(DDDD)V
+
+    const/4 v8, 0x0
+
+    const-string v1, "on_secondary_container"
+
+    const/4 v4, 0x0
+
+    const/4 v6, 0x0
+
+    move-object v0, v9
+
+    invoke-direct/range {v0 .. v8}, Lcom/google/android/material/color/utilities/DynamicColor;-><init>(Ljava/lang/String;Ljava/util/function/Function;Ljava/util/function/Function;ZLjava/util/function/Function;Ljava/util/function/Function;Lcom/google/android/material/color/utilities/ContrastCurve;Ljava/util/function/Function;)V
+
+    return-object v9
+.end method
+
+.method public onSecondaryFixed()Lcom/google/android/material/color/utilities/DynamicColor;
+    .locals 19
+
+    move-object/from16 v0, p0
+
+    .line 743
+    new-instance v9, Lcom/google/android/material/color/utilities/DynamicColor;
+
+    new-instance v2, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda14;
+
+    invoke-direct {v2}, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda14;-><init>()V
+
+    new-instance v3, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda15;
+
+    invoke-direct {v3}, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda15;-><init>()V
+
+    new-instance v5, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda16;
+
+    invoke-direct {v5, v0}, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda16;-><init>(Lcom/google/android/material/color/utilities/MaterialDynamicColors;)V
+
+    new-instance v6, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda17;
+
+    invoke-direct {v6, v0}, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda17;-><init>(Lcom/google/android/material/color/utilities/MaterialDynamicColors;)V
+
+    new-instance v7, Lcom/google/android/material/color/utilities/ContrastCurve;
+
+    const-wide/high16 v15, 0x4026000000000000L    # 11.0
+
+    const-wide/high16 v17, 0x4035000000000000L    # 21.0
+
+    const-wide/high16 v11, 0x4012000000000000L    # 4.5
+
+    const-wide/high16 v13, 0x401c000000000000L    # 7.0
+
+    move-object v10, v7
+
+    invoke-direct/range {v10 .. v18}, Lcom/google/android/material/color/utilities/ContrastCurve;-><init>(DDDD)V
+
+    const/4 v8, 0x0
+
+    const-string v1, "on_secondary_fixed"
+
+    const/4 v4, 0x0
+
+    move-object v0, v9
+
+    invoke-direct/range {v0 .. v8}, Lcom/google/android/material/color/utilities/DynamicColor;-><init>(Ljava/lang/String;Ljava/util/function/Function;Ljava/util/function/Function;ZLjava/util/function/Function;Ljava/util/function/Function;Lcom/google/android/material/color/utilities/ContrastCurve;Ljava/util/function/Function;)V
+
+    return-object v9
+.end method
+
+.method public onSecondaryFixedVariant()Lcom/google/android/material/color/utilities/DynamicColor;
+    .locals 19
+
+    move-object/from16 v0, p0
+
+    .line 756
+    new-instance v9, Lcom/google/android/material/color/utilities/DynamicColor;
+
+    new-instance v2, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda62;
+
+    invoke-direct {v2}, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda62;-><init>()V
+
+    new-instance v3, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda63;
+
+    invoke-direct {v3}, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda63;-><init>()V
+
+    new-instance v5, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda64;
+
+    invoke-direct {v5, v0}, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda64;-><init>(Lcom/google/android/material/color/utilities/MaterialDynamicColors;)V
+
+    new-instance v6, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda65;
+
+    invoke-direct {v6, v0}, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda65;-><init>(Lcom/google/android/material/color/utilities/MaterialDynamicColors;)V
+
+    new-instance v7, Lcom/google/android/material/color/utilities/ContrastCurve;
+
+    const-wide/high16 v15, 0x401c000000000000L    # 7.0
+
+    const-wide/high16 v17, 0x4026000000000000L    # 11.0
+
+    const-wide/high16 v11, 0x4008000000000000L    # 3.0
+
+    const-wide/high16 v13, 0x4012000000000000L    # 4.5
+
+    move-object v10, v7
+
+    invoke-direct/range {v10 .. v18}, Lcom/google/android/material/color/utilities/ContrastCurve;-><init>(DDDD)V
+
+    const/4 v8, 0x0
+
+    const-string v1, "on_secondary_fixed_variant"
+
+    const/4 v4, 0x0
+
+    move-object v0, v9
+
+    invoke-direct/range {v0 .. v8}, Lcom/google/android/material/color/utilities/DynamicColor;-><init>(Ljava/lang/String;Ljava/util/function/Function;Ljava/util/function/Function;ZLjava/util/function/Function;Ljava/util/function/Function;Lcom/google/android/material/color/utilities/ContrastCurve;Ljava/util/function/Function;)V
+
+    return-object v9
+.end method
+
+.method public onSurface()Lcom/google/android/material/color/utilities/DynamicColor;
+    .locals 19
+
+    .line 218
+    new-instance v9, Lcom/google/android/material/color/utilities/DynamicColor;
+
+    new-instance v2, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda140;
+
+    invoke-direct {v2}, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda140;-><init>()V
+
+    new-instance v3, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda151;
+
+    invoke-direct {v3}, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda151;-><init>()V
+
+    new-instance v5, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda162;
+
+    move-object/from16 v0, p0
+
+    invoke-direct {v5, v0}, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda162;-><init>(Lcom/google/android/material/color/utilities/MaterialDynamicColors;)V
+
+    new-instance v7, Lcom/google/android/material/color/utilities/ContrastCurve;
+
+    const-wide/high16 v15, 0x4026000000000000L    # 11.0
+
+    const-wide/high16 v17, 0x4035000000000000L    # 21.0
+
+    const-wide/high16 v11, 0x4012000000000000L    # 4.5
+
+    const-wide/high16 v13, 0x401c000000000000L    # 7.0
+
+    move-object v10, v7
+
+    invoke-direct/range {v10 .. v18}, Lcom/google/android/material/color/utilities/ContrastCurve;-><init>(DDDD)V
+
+    const/4 v8, 0x0
+
+    const-string v1, "on_surface"
+
+    const/4 v4, 0x0
+
+    const/4 v6, 0x0
+
+    move-object v0, v9
+
+    invoke-direct/range {v0 .. v8}, Lcom/google/android/material/color/utilities/DynamicColor;-><init>(Ljava/lang/String;Ljava/util/function/Function;Ljava/util/function/Function;ZLjava/util/function/Function;Ljava/util/function/Function;Lcom/google/android/material/color/utilities/ContrastCurve;Ljava/util/function/Function;)V
+
+    return-object v9
+.end method
+
+.method public onSurfaceVariant()Lcom/google/android/material/color/utilities/DynamicColor;
+    .locals 19
+
+    .line 244
+    new-instance v9, Lcom/google/android/material/color/utilities/DynamicColor;
+
+    new-instance v2, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda40;
+
+    invoke-direct {v2}, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda40;-><init>()V
+
+    new-instance v3, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda41;
+
+    invoke-direct {v3}, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda41;-><init>()V
+
+    new-instance v5, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda162;
+
+    move-object/from16 v0, p0
+
+    invoke-direct {v5, v0}, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda162;-><init>(Lcom/google/android/material/color/utilities/MaterialDynamicColors;)V
+
+    new-instance v7, Lcom/google/android/material/color/utilities/ContrastCurve;
+
+    const-wide/high16 v15, 0x401c000000000000L    # 7.0
+
+    const-wide/high16 v17, 0x4026000000000000L    # 11.0
+
+    const-wide/high16 v11, 0x4008000000000000L    # 3.0
+
+    const-wide/high16 v13, 0x4012000000000000L    # 4.5
+
+    move-object v10, v7
+
+    invoke-direct/range {v10 .. v18}, Lcom/google/android/material/color/utilities/ContrastCurve;-><init>(DDDD)V
+
+    const/4 v8, 0x0
+
+    const-string v1, "on_surface_variant"
+
+    const/4 v4, 0x0
+
+    const/4 v6, 0x0
+
+    move-object v0, v9
+
+    invoke-direct/range {v0 .. v8}, Lcom/google/android/material/color/utilities/DynamicColor;-><init>(Ljava/lang/String;Ljava/util/function/Function;Ljava/util/function/Function;ZLjava/util/function/Function;Ljava/util/function/Function;Lcom/google/android/material/color/utilities/ContrastCurve;Ljava/util/function/Function;)V
+
+    return-object v9
+.end method
+
+.method public onTertiary()Lcom/google/android/material/color/utilities/DynamicColor;
+    .locals 19
+
+    .line 541
+    new-instance v9, Lcom/google/android/material/color/utilities/DynamicColor;
+
+    new-instance v2, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda107;
+
+    invoke-direct {v2}, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda107;-><init>()V
+
+    new-instance v3, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda118;
+
+    invoke-direct {v3}, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda118;-><init>()V
+
+    new-instance v5, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda129;
+
+    move-object/from16 v0, p0
+
+    invoke-direct {v5, v0}, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda129;-><init>(Lcom/google/android/material/color/utilities/MaterialDynamicColors;)V
+
+    new-instance v7, Lcom/google/android/material/color/utilities/ContrastCurve;
+
+    const-wide/high16 v15, 0x4026000000000000L    # 11.0
+
+    const-wide/high16 v17, 0x4035000000000000L    # 21.0
+
+    const-wide/high16 v11, 0x4012000000000000L    # 4.5
+
+    const-wide/high16 v13, 0x401c000000000000L    # 7.0
+
+    move-object v10, v7
+
+    invoke-direct/range {v10 .. v18}, Lcom/google/android/material/color/utilities/ContrastCurve;-><init>(DDDD)V
+
+    const/4 v8, 0x0
+
+    const-string v1, "on_tertiary"
+
+    const/4 v4, 0x0
+
+    const/4 v6, 0x0
+
+    move-object v0, v9
+
+    invoke-direct/range {v0 .. v8}, Lcom/google/android/material/color/utilities/DynamicColor;-><init>(Ljava/lang/String;Ljava/util/function/Function;Ljava/util/function/Function;ZLjava/util/function/Function;Ljava/util/function/Function;Lcom/google/android/material/color/utilities/ContrastCurve;Ljava/util/function/Function;)V
+
+    return-object v9
+.end method
+
+.method public onTertiaryContainer()Lcom/google/android/material/color/utilities/DynamicColor;
+    .locals 19
+
+    move-object/from16 v0, p0
+
+    .line 584
+    new-instance v9, Lcom/google/android/material/color/utilities/DynamicColor;
+
+    new-instance v2, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda21;
+
+    invoke-direct {v2}, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda21;-><init>()V
+
+    new-instance v3, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda23;
+
+    invoke-direct {v3, v0}, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda23;-><init>(Lcom/google/android/material/color/utilities/MaterialDynamicColors;)V
+
+    new-instance v5, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda24;
+
+    invoke-direct {v5, v0}, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda24;-><init>(Lcom/google/android/material/color/utilities/MaterialDynamicColors;)V
+
+    new-instance v7, Lcom/google/android/material/color/utilities/ContrastCurve;
+
+    const-wide/high16 v15, 0x4026000000000000L    # 11.0
+
+    const-wide/high16 v17, 0x4035000000000000L    # 21.0
+
+    const-wide/high16 v11, 0x4012000000000000L    # 4.5
+
+    const-wide/high16 v13, 0x401c000000000000L    # 7.0
+
+    move-object v10, v7
+
+    invoke-direct/range {v10 .. v18}, Lcom/google/android/material/color/utilities/ContrastCurve;-><init>(DDDD)V
+
+    const/4 v8, 0x0
+
+    const-string v1, "on_tertiary_container"
+
+    const/4 v4, 0x0
+
+    const/4 v6, 0x0
+
+    move-object v0, v9
+
+    invoke-direct/range {v0 .. v8}, Lcom/google/android/material/color/utilities/DynamicColor;-><init>(Ljava/lang/String;Ljava/util/function/Function;Ljava/util/function/Function;ZLjava/util/function/Function;Ljava/util/function/Function;Lcom/google/android/material/color/utilities/ContrastCurve;Ljava/util/function/Function;)V
+
+    return-object v9
+.end method
+
+.method public onTertiaryFixed()Lcom/google/android/material/color/utilities/DynamicColor;
+    .locals 19
+
+    move-object/from16 v0, p0
+
+    .line 799
+    new-instance v9, Lcom/google/android/material/color/utilities/DynamicColor;
+
+    new-instance v2, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda87;
+
+    invoke-direct {v2}, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda87;-><init>()V
+
+    new-instance v3, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda88;
+
+    invoke-direct {v3}, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda88;-><init>()V
+
+    new-instance v5, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda89;
+
+    invoke-direct {v5, v0}, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda89;-><init>(Lcom/google/android/material/color/utilities/MaterialDynamicColors;)V
+
+    new-instance v6, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda90;
+
+    invoke-direct {v6, v0}, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda90;-><init>(Lcom/google/android/material/color/utilities/MaterialDynamicColors;)V
+
+    new-instance v7, Lcom/google/android/material/color/utilities/ContrastCurve;
+
+    const-wide/high16 v15, 0x4026000000000000L    # 11.0
+
+    const-wide/high16 v17, 0x4035000000000000L    # 21.0
+
+    const-wide/high16 v11, 0x4012000000000000L    # 4.5
+
+    const-wide/high16 v13, 0x401c000000000000L    # 7.0
+
+    move-object v10, v7
+
+    invoke-direct/range {v10 .. v18}, Lcom/google/android/material/color/utilities/ContrastCurve;-><init>(DDDD)V
+
+    const/4 v8, 0x0
+
+    const-string v1, "on_tertiary_fixed"
+
+    const/4 v4, 0x0
+
+    move-object v0, v9
+
+    invoke-direct/range {v0 .. v8}, Lcom/google/android/material/color/utilities/DynamicColor;-><init>(Ljava/lang/String;Ljava/util/function/Function;Ljava/util/function/Function;ZLjava/util/function/Function;Ljava/util/function/Function;Lcom/google/android/material/color/utilities/ContrastCurve;Ljava/util/function/Function;)V
+
+    return-object v9
+.end method
+
+.method public onTertiaryFixedVariant()Lcom/google/android/material/color/utilities/DynamicColor;
+    .locals 19
+
+    move-object/from16 v0, p0
+
+    .line 812
+    new-instance v9, Lcom/google/android/material/color/utilities/DynamicColor;
+
+    new-instance v2, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda75;
+
+    invoke-direct {v2}, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda75;-><init>()V
+
+    new-instance v3, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda76;
+
+    invoke-direct {v3}, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda76;-><init>()V
+
+    new-instance v5, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda77;
+
+    invoke-direct {v5, v0}, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda77;-><init>(Lcom/google/android/material/color/utilities/MaterialDynamicColors;)V
+
+    new-instance v6, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda78;
+
+    invoke-direct {v6, v0}, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda78;-><init>(Lcom/google/android/material/color/utilities/MaterialDynamicColors;)V
+
+    new-instance v7, Lcom/google/android/material/color/utilities/ContrastCurve;
+
+    const-wide/high16 v15, 0x401c000000000000L    # 7.0
+
+    const-wide/high16 v17, 0x4026000000000000L    # 11.0
+
+    const-wide/high16 v11, 0x4008000000000000L    # 3.0
+
+    const-wide/high16 v13, 0x4012000000000000L    # 4.5
+
+    move-object v10, v7
+
+    invoke-direct/range {v10 .. v18}, Lcom/google/android/material/color/utilities/ContrastCurve;-><init>(DDDD)V
+
+    const/4 v8, 0x0
+
+    const-string v1, "on_tertiary_fixed_variant"
+
+    const/4 v4, 0x0
+
+    move-object v0, v9
+
+    invoke-direct/range {v0 .. v8}, Lcom/google/android/material/color/utilities/DynamicColor;-><init>(Ljava/lang/String;Ljava/util/function/Function;Ljava/util/function/Function;ZLjava/util/function/Function;Ljava/util/function/Function;Lcom/google/android/material/color/utilities/ContrastCurve;Ljava/util/function/Function;)V
+
+    return-object v9
+.end method
+
+.method public outline()Lcom/google/android/material/color/utilities/DynamicColor;
+    .locals 19
+
+    .line 283
+    new-instance v9, Lcom/google/android/material/color/utilities/DynamicColor;
+
+    new-instance v2, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda9;
+
+    invoke-direct {v2}, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda9;-><init>()V
+
+    new-instance v3, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda10;
+
+    invoke-direct {v3}, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda10;-><init>()V
+
+    new-instance v5, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda162;
+
+    move-object/from16 v0, p0
+
+    invoke-direct {v5, v0}, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda162;-><init>(Lcom/google/android/material/color/utilities/MaterialDynamicColors;)V
+
+    new-instance v7, Lcom/google/android/material/color/utilities/ContrastCurve;
+
+    const-wide/high16 v15, 0x4012000000000000L    # 4.5
+
+    const-wide/high16 v17, 0x401c000000000000L    # 7.0
+
+    const-wide/high16 v11, 0x3ff8000000000000L    # 1.5
+
+    const-wide/high16 v13, 0x4008000000000000L    # 3.0
+
+    move-object v10, v7
+
+    invoke-direct/range {v10 .. v18}, Lcom/google/android/material/color/utilities/ContrastCurve;-><init>(DDDD)V
+
+    const/4 v8, 0x0
+
+    const-string v1, "outline"
+
+    const/4 v4, 0x0
+
+    const/4 v6, 0x0
+
+    move-object v0, v9
+
+    invoke-direct/range {v0 .. v8}, Lcom/google/android/material/color/utilities/DynamicColor;-><init>(Ljava/lang/String;Ljava/util/function/Function;Ljava/util/function/Function;ZLjava/util/function/Function;Ljava/util/function/Function;Lcom/google/android/material/color/utilities/ContrastCurve;Ljava/util/function/Function;)V
+
+    return-object v9
+.end method
+
+.method public outlineVariant()Lcom/google/android/material/color/utilities/DynamicColor;
+    .locals 19
+
+    .line 296
+    new-instance v9, Lcom/google/android/material/color/utilities/DynamicColor;
+
+    new-instance v2, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda108;
+
+    invoke-direct {v2}, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda108;-><init>()V
+
+    new-instance v3, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda109;
+
+    invoke-direct {v3}, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda109;-><init>()V
+
+    new-instance v5, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda162;
+
+    move-object/from16 v0, p0
+
+    invoke-direct {v5, v0}, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda162;-><init>(Lcom/google/android/material/color/utilities/MaterialDynamicColors;)V
+
+    new-instance v7, Lcom/google/android/material/color/utilities/ContrastCurve;
+
+    const-wide/high16 v15, 0x4008000000000000L    # 3.0
+
+    const-wide/high16 v17, 0x401c000000000000L    # 7.0
+
+    const-wide/high16 v11, 0x3ff0000000000000L    # 1.0
+
+    const-wide/high16 v13, 0x3ff0000000000000L    # 1.0
+
+    move-object v10, v7
+
+    invoke-direct/range {v10 .. v18}, Lcom/google/android/material/color/utilities/ContrastCurve;-><init>(DDDD)V
+
+    const/4 v8, 0x0
+
+    const-string v1, "outline_variant"
+
+    const/4 v4, 0x0
+
+    const/4 v6, 0x0
+
+    move-object v0, v9
+
+    invoke-direct/range {v0 .. v8}, Lcom/google/android/material/color/utilities/DynamicColor;-><init>(Ljava/lang/String;Ljava/util/function/Function;Ljava/util/function/Function;ZLjava/util/function/Function;Ljava/util/function/Function;Lcom/google/android/material/color/utilities/ContrastCurve;Ljava/util/function/Function;)V
+
+    return-object v9
+.end method
+
+.method public primary()Lcom/google/android/material/color/utilities/DynamicColor;
+    .locals 19
+
+    move-object/from16 v0, p0
+
+    .line 348
+    new-instance v9, Lcom/google/android/material/color/utilities/DynamicColor;
+
+    new-instance v2, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda57;
+
+    invoke-direct {v2}, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda57;-><init>()V
+
+    new-instance v3, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda58;
+
+    invoke-direct {v3}, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda58;-><init>()V
+
+    new-instance v5, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda162;
+
+    invoke-direct {v5, v0}, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda162;-><init>(Lcom/google/android/material/color/utilities/MaterialDynamicColors;)V
+
+    new-instance v7, Lcom/google/android/material/color/utilities/ContrastCurve;
+
+    const-wide/high16 v15, 0x401c000000000000L    # 7.0
+
+    const-wide/high16 v17, 0x4026000000000000L    # 11.0
+
+    const-wide/high16 v11, 0x4008000000000000L    # 3.0
+
+    const-wide/high16 v13, 0x4012000000000000L    # 4.5
+
+    move-object v10, v7
+
+    invoke-direct/range {v10 .. v18}, Lcom/google/android/material/color/utilities/ContrastCurve;-><init>(DDDD)V
+
+    new-instance v8, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda59;
+
+    invoke-direct {v8, v0}, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda59;-><init>(Lcom/google/android/material/color/utilities/MaterialDynamicColors;)V
+
+    const-string v1, "primary"
+
+    const/4 v4, 0x1
+
+    const/4 v6, 0x0
+
+    move-object v0, v9
+
+    invoke-direct/range {v0 .. v8}, Lcom/google/android/material/color/utilities/DynamicColor;-><init>(Ljava/lang/String;Ljava/util/function/Function;Ljava/util/function/Function;ZLjava/util/function/Function;Ljava/util/function/Function;Lcom/google/android/material/color/utilities/ContrastCurve;Ljava/util/function/Function;)V
+
+    return-object v9
+.end method
+
+.method public primaryContainer()Lcom/google/android/material/color/utilities/DynamicColor;
+    .locals 19
+
+    move-object/from16 v0, p0
+
+    .line 385
+    new-instance v9, Lcom/google/android/material/color/utilities/DynamicColor;
+
+    new-instance v2, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda97;
+
+    invoke-direct {v2}, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda97;-><init>()V
+
+    new-instance v3, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda98;
+
+    invoke-direct {v3}, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda98;-><init>()V
+
+    new-instance v5, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda162;
+
+    invoke-direct {v5, v0}, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda162;-><init>(Lcom/google/android/material/color/utilities/MaterialDynamicColors;)V
+
+    new-instance v7, Lcom/google/android/material/color/utilities/ContrastCurve;
+
+    const-wide/high16 v15, 0x4008000000000000L    # 3.0
+
+    const-wide/high16 v17, 0x401c000000000000L    # 7.0
+
+    const-wide/high16 v11, 0x3ff0000000000000L    # 1.0
+
+    const-wide/high16 v13, 0x3ff0000000000000L    # 1.0
+
+    move-object v10, v7
+
+    invoke-direct/range {v10 .. v18}, Lcom/google/android/material/color/utilities/ContrastCurve;-><init>(DDDD)V
+
+    new-instance v8, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda99;
+
+    invoke-direct {v8, v0}, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda99;-><init>(Lcom/google/android/material/color/utilities/MaterialDynamicColors;)V
+
+    const-string v1, "primary_container"
+
+    const/4 v4, 0x1
+
+    const/4 v6, 0x0
+
+    move-object v0, v9
+
+    invoke-direct/range {v0 .. v8}, Lcom/google/android/material/color/utilities/DynamicColor;-><init>(Ljava/lang/String;Ljava/util/function/Function;Ljava/util/function/Function;ZLjava/util/function/Function;Ljava/util/function/Function;Lcom/google/android/material/color/utilities/ContrastCurve;Ljava/util/function/Function;)V
+
+    return-object v9
+.end method
+
+.method public primaryFixed()Lcom/google/android/material/color/utilities/DynamicColor;
+    .locals 19
+
+    move-object/from16 v0, p0
+
+    .line 659
+    new-instance v9, Lcom/google/android/material/color/utilities/DynamicColor;
+
+    new-instance v2, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda153;
+
+    invoke-direct {v2}, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda153;-><init>()V
+
+    new-instance v3, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda154;
+
+    invoke-direct {v3}, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda154;-><init>()V
+
+    new-instance v5, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda162;
+
+    invoke-direct {v5, v0}, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda162;-><init>(Lcom/google/android/material/color/utilities/MaterialDynamicColors;)V
+
+    new-instance v7, Lcom/google/android/material/color/utilities/ContrastCurve;
+
+    const-wide/high16 v15, 0x4008000000000000L    # 3.0
+
+    const-wide/high16 v17, 0x401c000000000000L    # 7.0
+
+    const-wide/high16 v11, 0x3ff0000000000000L    # 1.0
+
+    const-wide/high16 v13, 0x3ff0000000000000L    # 1.0
+
+    move-object v10, v7
+
+    invoke-direct/range {v10 .. v18}, Lcom/google/android/material/color/utilities/ContrastCurve;-><init>(DDDD)V
+
+    new-instance v8, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda155;
+
+    invoke-direct {v8, v0}, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda155;-><init>(Lcom/google/android/material/color/utilities/MaterialDynamicColors;)V
+
+    const-string v1, "primary_fixed"
+
+    const/4 v4, 0x1
+
+    const/4 v6, 0x0
+
+    move-object v0, v9
+
+    invoke-direct/range {v0 .. v8}, Lcom/google/android/material/color/utilities/DynamicColor;-><init>(Ljava/lang/String;Ljava/util/function/Function;Ljava/util/function/Function;ZLjava/util/function/Function;Ljava/util/function/Function;Lcom/google/android/material/color/utilities/ContrastCurve;Ljava/util/function/Function;)V
+
+    return-object v9
+.end method
+
+.method public primaryFixedDim()Lcom/google/android/material/color/utilities/DynamicColor;
+    .locals 19
+
+    move-object/from16 v0, p0
+
+    .line 673
+    new-instance v9, Lcom/google/android/material/color/utilities/DynamicColor;
+
+    new-instance v2, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda156;
+
+    invoke-direct {v2}, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda156;-><init>()V
+
+    new-instance v3, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda157;
+
+    invoke-direct {v3}, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda157;-><init>()V
+
+    new-instance v5, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda162;
+
+    invoke-direct {v5, v0}, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda162;-><init>(Lcom/google/android/material/color/utilities/MaterialDynamicColors;)V
+
+    new-instance v7, Lcom/google/android/material/color/utilities/ContrastCurve;
+
+    const-wide/high16 v15, 0x4008000000000000L    # 3.0
+
+    const-wide/high16 v17, 0x401c000000000000L    # 7.0
+
+    const-wide/high16 v11, 0x3ff0000000000000L    # 1.0
+
+    const-wide/high16 v13, 0x3ff0000000000000L    # 1.0
+
+    move-object v10, v7
+
+    invoke-direct/range {v10 .. v18}, Lcom/google/android/material/color/utilities/ContrastCurve;-><init>(DDDD)V
+
+    new-instance v8, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda158;
+
+    invoke-direct {v8, v0}, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda158;-><init>(Lcom/google/android/material/color/utilities/MaterialDynamicColors;)V
+
+    const-string v1, "primary_fixed_dim"
+
+    const/4 v4, 0x1
+
+    const/4 v6, 0x0
+
+    move-object v0, v9
+
+    invoke-direct/range {v0 .. v8}, Lcom/google/android/material/color/utilities/DynamicColor;-><init>(Ljava/lang/String;Ljava/util/function/Function;Ljava/util/function/Function;ZLjava/util/function/Function;Ljava/util/function/Function;Lcom/google/android/material/color/utilities/ContrastCurve;Ljava/util/function/Function;)V
+
+    return-object v9
+.end method
+
+.method public primaryPaletteKeyColor()Lcom/google/android/material/color/utilities/DynamicColor;
+    .locals 2
+
+    .line 48
+    new-instance p0, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda72;
+
+    invoke-direct {p0}, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda72;-><init>()V
+
+    new-instance v0, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda73;
+
+    invoke-direct {v0}, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda73;-><init>()V
+
+    const-string v1, "primary_palette_key_color"
+
+    invoke-static {v1, p0, v0}, Lcom/google/android/material/color/utilities/DynamicColor;->fromPalette(Ljava/lang/String;Ljava/util/function/Function;Ljava/util/function/Function;)Lcom/google/android/material/color/utilities/DynamicColor;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method public scrim()Lcom/google/android/material/color/utilities/DynamicColor;
+    .locals 9
+
+    .line 322
+    new-instance p0, Lcom/google/android/material/color/utilities/DynamicColor;
+
+    new-instance v2, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda60;
+
+    invoke-direct {v2}, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda60;-><init>()V
+
+    new-instance v3, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda61;
+
+    invoke-direct {v3}, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda61;-><init>()V
+
+    const/4 v7, 0x0
+
+    const/4 v8, 0x0
+
+    const-string v1, "scrim"
+
+    const/4 v4, 0x0
+
+    const/4 v5, 0x0
+
+    const/4 v6, 0x0
+
+    move-object v0, p0
+
+    invoke-direct/range {v0 .. v8}, Lcom/google/android/material/color/utilities/DynamicColor;-><init>(Ljava/lang/String;Ljava/util/function/Function;Ljava/util/function/Function;ZLjava/util/function/Function;Ljava/util/function/Function;Lcom/google/android/material/color/utilities/ContrastCurve;Ljava/util/function/Function;)V
+
+    return-object p0
+.end method
+
+.method public secondary()Lcom/google/android/material/color/utilities/DynamicColor;
+    .locals 19
+
+    move-object/from16 v0, p0
+
+    .line 441
+    new-instance v9, Lcom/google/android/material/color/utilities/DynamicColor;
+
+    new-instance v2, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda4;
+
+    invoke-direct {v2}, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda4;-><init>()V
+
+    new-instance v3, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda5;
+
+    invoke-direct {v3}, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda5;-><init>()V
+
+    new-instance v5, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda162;
+
+    invoke-direct {v5, v0}, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda162;-><init>(Lcom/google/android/material/color/utilities/MaterialDynamicColors;)V
+
+    new-instance v7, Lcom/google/android/material/color/utilities/ContrastCurve;
+
+    const-wide/high16 v15, 0x401c000000000000L    # 7.0
+
+    const-wide/high16 v17, 0x4026000000000000L    # 11.0
+
+    const-wide/high16 v11, 0x4008000000000000L    # 3.0
+
+    const-wide/high16 v13, 0x4012000000000000L    # 4.5
+
+    move-object v10, v7
+
+    invoke-direct/range {v10 .. v18}, Lcom/google/android/material/color/utilities/ContrastCurve;-><init>(DDDD)V
+
+    new-instance v8, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda6;
+
+    invoke-direct {v8, v0}, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda6;-><init>(Lcom/google/android/material/color/utilities/MaterialDynamicColors;)V
+
+    const-string v1, "secondary"
+
+    const/4 v4, 0x1
+
+    const/4 v6, 0x0
+
+    move-object v0, v9
+
+    invoke-direct/range {v0 .. v8}, Lcom/google/android/material/color/utilities/DynamicColor;-><init>(Ljava/lang/String;Ljava/util/function/Function;Ljava/util/function/Function;ZLjava/util/function/Function;Ljava/util/function/Function;Lcom/google/android/material/color/utilities/ContrastCurve;Ljava/util/function/Function;)V
+
+    return-object v9
+.end method
+
+.method public secondaryContainer()Lcom/google/android/material/color/utilities/DynamicColor;
+    .locals 19
+
+    move-object/from16 v0, p0
+
+    .line 474
+    new-instance v9, Lcom/google/android/material/color/utilities/DynamicColor;
+
+    new-instance v2, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda83;
+
+    invoke-direct {v2}, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda83;-><init>()V
+
+    new-instance v3, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda84;
+
+    invoke-direct {v3}, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda84;-><init>()V
+
+    new-instance v5, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda162;
+
+    invoke-direct {v5, v0}, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda162;-><init>(Lcom/google/android/material/color/utilities/MaterialDynamicColors;)V
+
+    new-instance v7, Lcom/google/android/material/color/utilities/ContrastCurve;
+
+    const-wide/high16 v15, 0x4008000000000000L    # 3.0
+
+    const-wide/high16 v17, 0x401c000000000000L    # 7.0
+
+    const-wide/high16 v11, 0x3ff0000000000000L    # 1.0
+
+    const-wide/high16 v13, 0x3ff0000000000000L    # 1.0
+
+    move-object v10, v7
+
+    invoke-direct/range {v10 .. v18}, Lcom/google/android/material/color/utilities/ContrastCurve;-><init>(DDDD)V
+
+    new-instance v8, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda86;
+
+    invoke-direct {v8, v0}, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda86;-><init>(Lcom/google/android/material/color/utilities/MaterialDynamicColors;)V
+
+    const-string v1, "secondary_container"
+
+    const/4 v4, 0x1
+
+    const/4 v6, 0x0
+
+    move-object v0, v9
+
+    invoke-direct/range {v0 .. v8}, Lcom/google/android/material/color/utilities/DynamicColor;-><init>(Ljava/lang/String;Ljava/util/function/Function;Ljava/util/function/Function;ZLjava/util/function/Function;Ljava/util/function/Function;Lcom/google/android/material/color/utilities/ContrastCurve;Ljava/util/function/Function;)V
+
+    return-object v9
+.end method
+
+.method public secondaryFixed()Lcom/google/android/material/color/utilities/DynamicColor;
+    .locals 19
+
+    move-object/from16 v0, p0
+
+    .line 713
+    new-instance v9, Lcom/google/android/material/color/utilities/DynamicColor;
+
+    new-instance v2, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda119;
+
+    invoke-direct {v2}, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda119;-><init>()V
+
+    new-instance v3, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda120;
+
+    invoke-direct {v3}, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda120;-><init>()V
+
+    new-instance v5, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda162;
+
+    invoke-direct {v5, v0}, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda162;-><init>(Lcom/google/android/material/color/utilities/MaterialDynamicColors;)V
+
+    new-instance v7, Lcom/google/android/material/color/utilities/ContrastCurve;
+
+    const-wide/high16 v15, 0x4008000000000000L    # 3.0
+
+    const-wide/high16 v17, 0x401c000000000000L    # 7.0
+
+    const-wide/high16 v11, 0x3ff0000000000000L    # 1.0
+
+    const-wide/high16 v13, 0x3ff0000000000000L    # 1.0
+
+    move-object v10, v7
+
+    invoke-direct/range {v10 .. v18}, Lcom/google/android/material/color/utilities/ContrastCurve;-><init>(DDDD)V
+
+    new-instance v8, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda121;
+
+    invoke-direct {v8, v0}, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda121;-><init>(Lcom/google/android/material/color/utilities/MaterialDynamicColors;)V
+
+    const-string v1, "secondary_fixed"
+
+    const/4 v4, 0x1
+
+    const/4 v6, 0x0
+
+    move-object v0, v9
+
+    invoke-direct/range {v0 .. v8}, Lcom/google/android/material/color/utilities/DynamicColor;-><init>(Ljava/lang/String;Ljava/util/function/Function;Ljava/util/function/Function;ZLjava/util/function/Function;Ljava/util/function/Function;Lcom/google/android/material/color/utilities/ContrastCurve;Ljava/util/function/Function;)V
+
+    return-object v9
+.end method
+
+.method public secondaryFixedDim()Lcom/google/android/material/color/utilities/DynamicColor;
+    .locals 19
+
+    move-object/from16 v0, p0
+
+    .line 728
+    new-instance v9, Lcom/google/android/material/color/utilities/DynamicColor;
+
+    new-instance v2, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda138;
+
+    invoke-direct {v2}, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda138;-><init>()V
+
+    new-instance v3, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda139;
+
+    invoke-direct {v3}, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda139;-><init>()V
+
+    new-instance v5, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda162;
+
+    invoke-direct {v5, v0}, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda162;-><init>(Lcom/google/android/material/color/utilities/MaterialDynamicColors;)V
+
+    new-instance v7, Lcom/google/android/material/color/utilities/ContrastCurve;
+
+    const-wide/high16 v15, 0x4008000000000000L    # 3.0
+
+    const-wide/high16 v17, 0x401c000000000000L    # 7.0
+
+    const-wide/high16 v11, 0x3ff0000000000000L    # 1.0
+
+    const-wide/high16 v13, 0x3ff0000000000000L    # 1.0
+
+    move-object v10, v7
+
+    invoke-direct/range {v10 .. v18}, Lcom/google/android/material/color/utilities/ContrastCurve;-><init>(DDDD)V
+
+    new-instance v8, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda141;
+
+    invoke-direct {v8, v0}, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda141;-><init>(Lcom/google/android/material/color/utilities/MaterialDynamicColors;)V
+
+    const-string v1, "secondary_fixed_dim"
+
+    const/4 v4, 0x1
+
+    const/4 v6, 0x0
+
+    move-object v0, v9
+
+    invoke-direct/range {v0 .. v8}, Lcom/google/android/material/color/utilities/DynamicColor;-><init>(Ljava/lang/String;Ljava/util/function/Function;Ljava/util/function/Function;ZLjava/util/function/Function;Ljava/util/function/Function;Lcom/google/android/material/color/utilities/ContrastCurve;Ljava/util/function/Function;)V
+
+    return-object v9
+.end method
+
+.method public secondaryPaletteKeyColor()Lcom/google/android/material/color/utilities/DynamicColor;
+    .locals 2
+
+    .line 56
+    new-instance p0, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda79;
+
+    invoke-direct {p0}, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda79;-><init>()V
+
+    new-instance v0, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda80;
+
+    invoke-direct {v0}, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda80;-><init>()V
+
+    const-string v1, "secondary_palette_key_color"
+
+    invoke-static {v1, p0, v0}, Lcom/google/android/material/color/utilities/DynamicColor;->fromPalette(Ljava/lang/String;Ljava/util/function/Function;Ljava/util/function/Function;)Lcom/google/android/material/color/utilities/DynamicColor;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method public shadow()Lcom/google/android/material/color/utilities/DynamicColor;
+    .locals 9
+
+    .line 309
+    new-instance p0, Lcom/google/android/material/color/utilities/DynamicColor;
+
+    new-instance v2, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda148;
+
+    invoke-direct {v2}, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda148;-><init>()V
+
+    new-instance v3, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda149;
+
+    invoke-direct {v3}, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda149;-><init>()V
+
+    const/4 v7, 0x0
+
+    const/4 v8, 0x0
+
+    const-string v1, "shadow"
+
+    const/4 v4, 0x0
+
+    const/4 v5, 0x0
+
+    const/4 v6, 0x0
+
+    move-object v0, p0
+
+    invoke-direct/range {v0 .. v8}, Lcom/google/android/material/color/utilities/DynamicColor;-><init>(Ljava/lang/String;Ljava/util/function/Function;Ljava/util/function/Function;ZLjava/util/function/Function;Ljava/util/function/Function;Lcom/google/android/material/color/utilities/ContrastCurve;Ljava/util/function/Function;)V
+
+    return-object p0
+.end method
+
+.method public surface()Lcom/google/android/material/color/utilities/DynamicColor;
+    .locals 9
+
+    .line 114
+    new-instance p0, Lcom/google/android/material/color/utilities/DynamicColor;
+
+    new-instance v2, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda0;
+
+    invoke-direct {v2}, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda0;-><init>()V
+
+    new-instance v3, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda74;
+
+    invoke-direct {v3}, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda74;-><init>()V
+
+    const/4 v7, 0x0
+
+    const/4 v8, 0x0
+
+    const-string v1, "surface"
+
+    const/4 v4, 0x1
+
+    const/4 v5, 0x0
+
+    const/4 v6, 0x0
+
+    move-object v0, p0
+
+    invoke-direct/range {v0 .. v8}, Lcom/google/android/material/color/utilities/DynamicColor;-><init>(Ljava/lang/String;Ljava/util/function/Function;Ljava/util/function/Function;ZLjava/util/function/Function;Ljava/util/function/Function;Lcom/google/android/material/color/utilities/ContrastCurve;Ljava/util/function/Function;)V
+
+    return-object p0
+.end method
+
+.method public surfaceBright()Lcom/google/android/material/color/utilities/DynamicColor;
+    .locals 9
+
+    .line 140
+    new-instance p0, Lcom/google/android/material/color/utilities/DynamicColor;
+
+    new-instance v2, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda110;
+
+    invoke-direct {v2}, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda110;-><init>()V
+
+    new-instance v3, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda111;
+
+    invoke-direct {v3}, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda111;-><init>()V
+
+    const/4 v7, 0x0
+
+    const/4 v8, 0x0
+
+    const-string v1, "surface_bright"
+
+    const/4 v4, 0x1
+
+    const/4 v5, 0x0
+
+    const/4 v6, 0x0
+
+    move-object v0, p0
+
+    invoke-direct/range {v0 .. v8}, Lcom/google/android/material/color/utilities/DynamicColor;-><init>(Ljava/lang/String;Ljava/util/function/Function;Ljava/util/function/Function;ZLjava/util/function/Function;Ljava/util/function/Function;Lcom/google/android/material/color/utilities/ContrastCurve;Ljava/util/function/Function;)V
+
+    return-object p0
+.end method
+
+.method public surfaceContainer()Lcom/google/android/material/color/utilities/DynamicColor;
+    .locals 9
+
+    .line 179
+    new-instance p0, Lcom/google/android/material/color/utilities/DynamicColor;
+
+    new-instance v2, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda38;
+
+    invoke-direct {v2}, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda38;-><init>()V
+
+    new-instance v3, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda39;
+
+    invoke-direct {v3}, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda39;-><init>()V
+
+    const/4 v7, 0x0
+
+    const/4 v8, 0x0
+
+    const-string v1, "surface_container"
+
+    const/4 v4, 0x1
+
+    const/4 v5, 0x0
+
+    const/4 v6, 0x0
+
+    move-object v0, p0
+
+    invoke-direct/range {v0 .. v8}, Lcom/google/android/material/color/utilities/DynamicColor;-><init>(Ljava/lang/String;Ljava/util/function/Function;Ljava/util/function/Function;ZLjava/util/function/Function;Ljava/util/function/Function;Lcom/google/android/material/color/utilities/ContrastCurve;Ljava/util/function/Function;)V
+
+    return-object p0
+.end method
+
+.method public surfaceContainerHigh()Lcom/google/android/material/color/utilities/DynamicColor;
+    .locals 9
+
+    .line 192
+    new-instance p0, Lcom/google/android/material/color/utilities/DynamicColor;
+
+    new-instance v2, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda102;
+
+    invoke-direct {v2}, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda102;-><init>()V
+
+    new-instance v3, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda103;
+
+    invoke-direct {v3}, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda103;-><init>()V
+
+    const/4 v7, 0x0
+
+    const/4 v8, 0x0
+
+    const-string v1, "surface_container_high"
+
+    const/4 v4, 0x1
+
+    const/4 v5, 0x0
+
+    const/4 v6, 0x0
+
+    move-object v0, p0
+
+    invoke-direct/range {v0 .. v8}, Lcom/google/android/material/color/utilities/DynamicColor;-><init>(Ljava/lang/String;Ljava/util/function/Function;Ljava/util/function/Function;ZLjava/util/function/Function;Ljava/util/function/Function;Lcom/google/android/material/color/utilities/ContrastCurve;Ljava/util/function/Function;)V
+
+    return-object p0
+.end method
+
+.method public surfaceContainerHighest()Lcom/google/android/material/color/utilities/DynamicColor;
+    .locals 9
+
+    .line 205
+    new-instance p0, Lcom/google/android/material/color/utilities/DynamicColor;
+
+    new-instance v2, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda150;
+
+    invoke-direct {v2}, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda150;-><init>()V
+
+    new-instance v3, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda152;
+
+    invoke-direct {v3}, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda152;-><init>()V
+
+    const/4 v7, 0x0
+
+    const/4 v8, 0x0
+
+    const-string v1, "surface_container_highest"
+
+    const/4 v4, 0x1
+
+    const/4 v5, 0x0
+
+    const/4 v6, 0x0
+
+    move-object v0, p0
+
+    invoke-direct/range {v0 .. v8}, Lcom/google/android/material/color/utilities/DynamicColor;-><init>(Ljava/lang/String;Ljava/util/function/Function;Ljava/util/function/Function;ZLjava/util/function/Function;Ljava/util/function/Function;Lcom/google/android/material/color/utilities/ContrastCurve;Ljava/util/function/Function;)V
+
+    return-object p0
+.end method
+
+.method public surfaceContainerLow()Lcom/google/android/material/color/utilities/DynamicColor;
+    .locals 9
+
+    .line 166
+    new-instance p0, Lcom/google/android/material/color/utilities/DynamicColor;
+
+    new-instance v2, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda81;
+
+    invoke-direct {v2}, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda81;-><init>()V
+
+    new-instance v3, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda82;
+
+    invoke-direct {v3}, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda82;-><init>()V
+
+    const/4 v7, 0x0
+
+    const/4 v8, 0x0
+
+    const-string v1, "surface_container_low"
+
+    const/4 v4, 0x1
+
+    const/4 v5, 0x0
+
+    const/4 v6, 0x0
+
+    move-object v0, p0
+
+    invoke-direct/range {v0 .. v8}, Lcom/google/android/material/color/utilities/DynamicColor;-><init>(Ljava/lang/String;Ljava/util/function/Function;Ljava/util/function/Function;ZLjava/util/function/Function;Ljava/util/function/Function;Lcom/google/android/material/color/utilities/ContrastCurve;Ljava/util/function/Function;)V
+
+    return-object p0
+.end method
+
+.method public surfaceContainerLowest()Lcom/google/android/material/color/utilities/DynamicColor;
+    .locals 9
+
+    .line 153
+    new-instance p0, Lcom/google/android/material/color/utilities/DynamicColor;
+
+    new-instance v2, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda7;
+
+    invoke-direct {v2}, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda7;-><init>()V
+
+    new-instance v3, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda8;
+
+    invoke-direct {v3}, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda8;-><init>()V
+
+    const/4 v7, 0x0
+
+    const/4 v8, 0x0
+
+    const-string v1, "surface_container_lowest"
+
+    const/4 v4, 0x1
+
+    const/4 v5, 0x0
+
+    const/4 v6, 0x0
+
+    move-object v0, p0
+
+    invoke-direct/range {v0 .. v8}, Lcom/google/android/material/color/utilities/DynamicColor;-><init>(Ljava/lang/String;Ljava/util/function/Function;Ljava/util/function/Function;ZLjava/util/function/Function;Ljava/util/function/Function;Lcom/google/android/material/color/utilities/ContrastCurve;Ljava/util/function/Function;)V
+
+    return-object p0
+.end method
+
+.method public surfaceDim()Lcom/google/android/material/color/utilities/DynamicColor;
+    .locals 9
+
+    .line 127
+    new-instance p0, Lcom/google/android/material/color/utilities/DynamicColor;
+
+    new-instance v2, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda33;
+
+    invoke-direct {v2}, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda33;-><init>()V
+
+    new-instance v3, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda44;
+
+    invoke-direct {v3}, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda44;-><init>()V
+
+    const/4 v7, 0x0
+
+    const/4 v8, 0x0
+
+    const-string v1, "surface_dim"
+
+    const/4 v4, 0x1
+
+    const/4 v5, 0x0
+
+    const/4 v6, 0x0
+
+    move-object v0, p0
+
+    invoke-direct/range {v0 .. v8}, Lcom/google/android/material/color/utilities/DynamicColor;-><init>(Ljava/lang/String;Ljava/util/function/Function;Ljava/util/function/Function;ZLjava/util/function/Function;Ljava/util/function/Function;Lcom/google/android/material/color/utilities/ContrastCurve;Ljava/util/function/Function;)V
+
+    return-object p0
+.end method
+
+.method public surfaceTint()Lcom/google/android/material/color/utilities/DynamicColor;
+    .locals 9
+
+    .line 335
+    new-instance p0, Lcom/google/android/material/color/utilities/DynamicColor;
+
+    new-instance v2, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda12;
+
+    invoke-direct {v2}, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda12;-><init>()V
+
+    new-instance v3, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda13;
+
+    invoke-direct {v3}, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda13;-><init>()V
+
+    const/4 v7, 0x0
+
+    const/4 v8, 0x0
+
+    const-string v1, "surface_tint"
+
+    const/4 v4, 0x1
+
+    const/4 v5, 0x0
+
+    const/4 v6, 0x0
+
+    move-object v0, p0
+
+    invoke-direct/range {v0 .. v8}, Lcom/google/android/material/color/utilities/DynamicColor;-><init>(Ljava/lang/String;Ljava/util/function/Function;Ljava/util/function/Function;ZLjava/util/function/Function;Ljava/util/function/Function;Lcom/google/android/material/color/utilities/ContrastCurve;Ljava/util/function/Function;)V
+
+    return-object p0
+.end method
+
+.method public surfaceVariant()Lcom/google/android/material/color/utilities/DynamicColor;
+    .locals 9
+
+    .line 231
+    new-instance p0, Lcom/google/android/material/color/utilities/DynamicColor;
+
+    new-instance v2, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda142;
+
+    invoke-direct {v2}, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda142;-><init>()V
+
+    new-instance v3, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda143;
+
+    invoke-direct {v3}, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda143;-><init>()V
+
+    const/4 v7, 0x0
+
+    const/4 v8, 0x0
+
+    const-string v1, "surface_variant"
+
+    const/4 v4, 0x1
+
+    const/4 v5, 0x0
+
+    const/4 v6, 0x0
+
+    move-object v0, p0
+
+    invoke-direct/range {v0 .. v8}, Lcom/google/android/material/color/utilities/DynamicColor;-><init>(Ljava/lang/String;Ljava/util/function/Function;Ljava/util/function/Function;ZLjava/util/function/Function;Ljava/util/function/Function;Lcom/google/android/material/color/utilities/ContrastCurve;Ljava/util/function/Function;)V
+
+    return-object p0
+.end method
+
+.method public tertiary()Lcom/google/android/material/color/utilities/DynamicColor;
+    .locals 19
+
+    move-object/from16 v0, p0
+
+    .line 522
+    new-instance v9, Lcom/google/android/material/color/utilities/DynamicColor;
+
+    new-instance v2, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda67;
+
+    invoke-direct {v2}, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda67;-><init>()V
+
+    new-instance v3, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda68;
+
+    invoke-direct {v3}, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda68;-><init>()V
+
+    new-instance v5, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda162;
+
+    invoke-direct {v5, v0}, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda162;-><init>(Lcom/google/android/material/color/utilities/MaterialDynamicColors;)V
+
+    new-instance v7, Lcom/google/android/material/color/utilities/ContrastCurve;
+
+    const-wide/high16 v15, 0x401c000000000000L    # 7.0
+
+    const-wide/high16 v17, 0x4026000000000000L    # 11.0
+
+    const-wide/high16 v11, 0x4008000000000000L    # 3.0
+
+    const-wide/high16 v13, 0x4012000000000000L    # 4.5
+
+    move-object v10, v7
+
+    invoke-direct/range {v10 .. v18}, Lcom/google/android/material/color/utilities/ContrastCurve;-><init>(DDDD)V
+
+    new-instance v8, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda69;
+
+    invoke-direct {v8, v0}, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda69;-><init>(Lcom/google/android/material/color/utilities/MaterialDynamicColors;)V
+
+    const-string v1, "tertiary"
+
+    const/4 v4, 0x1
+
+    const/4 v6, 0x0
+
+    move-object v0, v9
+
+    invoke-direct/range {v0 .. v8}, Lcom/google/android/material/color/utilities/DynamicColor;-><init>(Ljava/lang/String;Ljava/util/function/Function;Ljava/util/function/Function;ZLjava/util/function/Function;Ljava/util/function/Function;Lcom/google/android/material/color/utilities/ContrastCurve;Ljava/util/function/Function;)V
+
+    return-object v9
+.end method
+
+.method public tertiaryContainer()Lcom/google/android/material/color/utilities/DynamicColor;
+    .locals 19
+
+    move-object/from16 v0, p0
+
+    .line 559
+    new-instance v9, Lcom/google/android/material/color/utilities/DynamicColor;
+
+    new-instance v2, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda159;
+
+    invoke-direct {v2}, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda159;-><init>()V
+
+    new-instance v3, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda160;
+
+    invoke-direct {v3}, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda160;-><init>()V
+
+    new-instance v5, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda162;
+
+    invoke-direct {v5, v0}, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda162;-><init>(Lcom/google/android/material/color/utilities/MaterialDynamicColors;)V
+
+    new-instance v7, Lcom/google/android/material/color/utilities/ContrastCurve;
+
+    const-wide/high16 v15, 0x4008000000000000L    # 3.0
+
+    const-wide/high16 v17, 0x401c000000000000L    # 7.0
+
+    const-wide/high16 v11, 0x3ff0000000000000L    # 1.0
+
+    const-wide/high16 v13, 0x3ff0000000000000L    # 1.0
+
+    move-object v10, v7
+
+    invoke-direct/range {v10 .. v18}, Lcom/google/android/material/color/utilities/ContrastCurve;-><init>(DDDD)V
+
+    new-instance v8, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda161;
+
+    invoke-direct {v8, v0}, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda161;-><init>(Lcom/google/android/material/color/utilities/MaterialDynamicColors;)V
+
+    const-string v1, "tertiary_container"
+
+    const/4 v4, 0x1
+
+    const/4 v6, 0x0
+
+    move-object v0, v9
+
+    invoke-direct/range {v0 .. v8}, Lcom/google/android/material/color/utilities/DynamicColor;-><init>(Ljava/lang/String;Ljava/util/function/Function;Ljava/util/function/Function;ZLjava/util/function/Function;Ljava/util/function/Function;Lcom/google/android/material/color/utilities/ContrastCurve;Ljava/util/function/Function;)V
+
+    return-object v9
+.end method
+
+.method public tertiaryFixed()Lcom/google/android/material/color/utilities/DynamicColor;
+    .locals 19
+
+    move-object/from16 v0, p0
+
+    .line 769
+    new-instance v9, Lcom/google/android/material/color/utilities/DynamicColor;
+
+    new-instance v2, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda53;
+
+    invoke-direct {v2}, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda53;-><init>()V
+
+    new-instance v3, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda54;
+
+    invoke-direct {v3}, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda54;-><init>()V
+
+    new-instance v5, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda162;
+
+    invoke-direct {v5, v0}, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda162;-><init>(Lcom/google/android/material/color/utilities/MaterialDynamicColors;)V
+
+    new-instance v7, Lcom/google/android/material/color/utilities/ContrastCurve;
+
+    const-wide/high16 v15, 0x4008000000000000L    # 3.0
+
+    const-wide/high16 v17, 0x401c000000000000L    # 7.0
+
+    const-wide/high16 v11, 0x3ff0000000000000L    # 1.0
+
+    const-wide/high16 v13, 0x3ff0000000000000L    # 1.0
+
+    move-object v10, v7
+
+    invoke-direct/range {v10 .. v18}, Lcom/google/android/material/color/utilities/ContrastCurve;-><init>(DDDD)V
+
+    new-instance v8, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda56;
+
+    invoke-direct {v8, v0}, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda56;-><init>(Lcom/google/android/material/color/utilities/MaterialDynamicColors;)V
+
+    const-string v1, "tertiary_fixed"
+
+    const/4 v4, 0x1
+
+    const/4 v6, 0x0
+
+    move-object v0, v9
+
+    invoke-direct/range {v0 .. v8}, Lcom/google/android/material/color/utilities/DynamicColor;-><init>(Ljava/lang/String;Ljava/util/function/Function;Ljava/util/function/Function;ZLjava/util/function/Function;Ljava/util/function/Function;Lcom/google/android/material/color/utilities/ContrastCurve;Ljava/util/function/Function;)V
+
+    return-object v9
+.end method
+
+.method public tertiaryFixedDim()Lcom/google/android/material/color/utilities/DynamicColor;
+    .locals 19
+
+    move-object/from16 v0, p0
+
+    .line 784
+    new-instance v9, Lcom/google/android/material/color/utilities/DynamicColor;
+
+    new-instance v2, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda126;
+
+    invoke-direct {v2}, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda126;-><init>()V
+
+    new-instance v3, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda127;
+
+    invoke-direct {v3}, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda127;-><init>()V
+
+    new-instance v5, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda162;
+
+    invoke-direct {v5, v0}, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda162;-><init>(Lcom/google/android/material/color/utilities/MaterialDynamicColors;)V
+
+    new-instance v7, Lcom/google/android/material/color/utilities/ContrastCurve;
+
+    const-wide/high16 v15, 0x4008000000000000L    # 3.0
+
+    const-wide/high16 v17, 0x401c000000000000L    # 7.0
+
+    const-wide/high16 v11, 0x3ff0000000000000L    # 1.0
+
+    const-wide/high16 v13, 0x3ff0000000000000L    # 1.0
+
+    move-object v10, v7
+
+    invoke-direct/range {v10 .. v18}, Lcom/google/android/material/color/utilities/ContrastCurve;-><init>(DDDD)V
+
+    new-instance v8, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda128;
+
+    invoke-direct {v8, v0}, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda128;-><init>(Lcom/google/android/material/color/utilities/MaterialDynamicColors;)V
+
+    const-string v1, "tertiary_fixed_dim"
+
+    const/4 v4, 0x1
+
+    const/4 v6, 0x0
+
+    move-object v0, v9
+
+    invoke-direct/range {v0 .. v8}, Lcom/google/android/material/color/utilities/DynamicColor;-><init>(Ljava/lang/String;Ljava/util/function/Function;Ljava/util/function/Function;ZLjava/util/function/Function;Ljava/util/function/Function;Lcom/google/android/material/color/utilities/ContrastCurve;Ljava/util/function/Function;)V
+
+    return-object v9
+.end method
+
+.method public tertiaryPaletteKeyColor()Lcom/google/android/material/color/utilities/DynamicColor;
+    .locals 2
+
+    .line 64
+    new-instance p0, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda91;
+
+    invoke-direct {p0}, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda91;-><init>()V
+
+    new-instance v0, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda92;
+
+    invoke-direct {v0}, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda92;-><init>()V
+
+    const-string v1, "tertiary_palette_key_color"
+
+    invoke-static {v1, p0, v0}, Lcom/google/android/material/color/utilities/DynamicColor;->fromPalette(Ljava/lang/String;Ljava/util/function/Function;Ljava/util/function/Function;)Lcom/google/android/material/color/utilities/DynamicColor;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method public textHintInverse()Lcom/google/android/material/color/utilities/DynamicColor;
+    .locals 2
+
+    .line 912
+    new-instance p0, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda146;
+
+    invoke-direct {p0}, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda146;-><init>()V
+
+    new-instance v0, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda147;
+
+    invoke-direct {v0}, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda147;-><init>()V
+
+    const-string v1, "text_hint_inverse"
+
+    invoke-static {v1, p0, v0}, Lcom/google/android/material/color/utilities/DynamicColor;->fromPalette(Ljava/lang/String;Ljava/util/function/Function;Ljava/util/function/Function;)Lcom/google/android/material/color/utilities/DynamicColor;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method public textPrimaryInverse()Lcom/google/android/material/color/utilities/DynamicColor;
+    .locals 2
+
+    .line 876
+    new-instance p0, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda36;
+
+    invoke-direct {p0}, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda36;-><init>()V
+
+    new-instance v0, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda37;
+
+    invoke-direct {v0}, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda37;-><init>()V
+
+    const-string v1, "text_primary_inverse"
+
+    invoke-static {v1, p0, v0}, Lcom/google/android/material/color/utilities/DynamicColor;->fromPalette(Ljava/lang/String;Ljava/util/function/Function;Ljava/util/function/Function;)Lcom/google/android/material/color/utilities/DynamicColor;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method public textPrimaryInverseDisableOnly()Lcom/google/android/material/color/utilities/DynamicColor;
+    .locals 2
+
+    .line 893
+    new-instance p0, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda133;
+
+    invoke-direct {p0}, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda133;-><init>()V
+
+    new-instance v0, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda134;
+
+    invoke-direct {v0}, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda134;-><init>()V
+
+    const-string v1, "text_primary_inverse_disable_only"
+
+    invoke-static {v1, p0, v0}, Lcom/google/android/material/color/utilities/DynamicColor;->fromPalette(Ljava/lang/String;Ljava/util/function/Function;Ljava/util/function/Function;)Lcom/google/android/material/color/utilities/DynamicColor;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method public textSecondaryAndTertiaryInverse()Lcom/google/android/material/color/utilities/DynamicColor;
+    .locals 2
+
+    .line 884
+    new-instance p0, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda48;
+
+    invoke-direct {p0}, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda48;-><init>()V
+
+    new-instance v0, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda49;
+
+    invoke-direct {v0}, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda49;-><init>()V
+
+    const-string v1, "text_secondary_and_tertiary_inverse"
+
+    invoke-static {v1, p0, v0}, Lcom/google/android/material/color/utilities/DynamicColor;->fromPalette(Ljava/lang/String;Ljava/util/function/Function;Ljava/util/function/Function;)Lcom/google/android/material/color/utilities/DynamicColor;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method public textSecondaryAndTertiaryInverseDisabled()Lcom/google/android/material/color/utilities/DynamicColor;
+    .locals 2
+
+    .line 903
+    new-instance p0, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda85;
+
+    invoke-direct {p0}, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda85;-><init>()V
+
+    new-instance v0, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda96;
+
+    invoke-direct {v0}, Lcom/google/android/material/color/utilities/MaterialDynamicColors$$ExternalSyntheticLambda96;-><init>()V
+
+    const-string v1, "text_secondary_and_tertiary_inverse_disabled"
+
+    invoke-static {v1, p0, v0}, Lcom/google/android/material/color/utilities/DynamicColor;->fromPalette(Ljava/lang/String;Ljava/util/function/Function;Ljava/util/function/Function;)Lcom/google/android/material/color/utilities/DynamicColor;
 
     move-result-object p0
 

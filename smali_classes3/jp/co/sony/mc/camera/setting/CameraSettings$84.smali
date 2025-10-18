@@ -21,7 +21,7 @@
 .method constructor <init>()V
     .locals 0
 
-    .line 1233
+    .line 1289
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -46,13 +46,13 @@
         }
     .end annotation
 
-    .line 1237
+    .line 1293
     check-cast p1, Ljp/co/sony/mc/camera/setting/CameraSettings;
 
-    .line 1238
-    check-cast p3, Ljp/co/sony/mc/camera/configuration/parameters/FocusMagnification;
+    .line 1294
+    check-cast p3, Ljava/lang/Integer;
 
-    invoke-static {p1, p3}, Ljp/co/sony/mc/camera/setting/CameraSettings;->-$$Nest$msetFocusMagnification(Ljp/co/sony/mc/camera/setting/CameraSettings;Ljp/co/sony/mc/camera/configuration/parameters/FocusMagnification;)Z
+    invoke-static {p1, p3}, Ljp/co/sony/mc/camera/setting/CameraSettings;->-$$Nest$msetBokehStrength(Ljp/co/sony/mc/camera/setting/CameraSettings;Ljava/lang/Integer;)Z
 
     move-result p0
 

@@ -11,11 +11,13 @@
 
 .field public final synthetic f$1:Ljava/util/List;
 
-.field public final synthetic f$2:Z
+.field public final synthetic f$2:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
+
+.field public final synthetic f$3:Z
 
 
 # direct methods
-.method public synthetic constructor <init>(Ljp/co/sony/mc/camera/view/FragmentController$SettingChangedListenerImpl$17;Ljava/util/List;Z)V
+.method public synthetic constructor <init>(Ljp/co/sony/mc/camera/view/FragmentController$SettingChangedListenerImpl$17;Ljava/util/List;Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Z)V
     .locals 0
 
     .line 0
@@ -25,7 +27,9 @@
 
     iput-object p2, p0, Ljp/co/sony/mc/camera/view/FragmentController$SettingChangedListenerImpl$17$$ExternalSyntheticLambda0;->f$1:Ljava/util/List;
 
-    iput-boolean p3, p0, Ljp/co/sony/mc/camera/view/FragmentController$SettingChangedListenerImpl$17$$ExternalSyntheticLambda0;->f$2:Z
+    iput-object p3, p0, Ljp/co/sony/mc/camera/view/FragmentController$SettingChangedListenerImpl$17$$ExternalSyntheticLambda0;->f$2:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
+
+    iput-boolean p4, p0, Ljp/co/sony/mc/camera/view/FragmentController$SettingChangedListenerImpl$17$$ExternalSyntheticLambda0;->f$3:Z
 
     return-void
 .end method
@@ -33,16 +37,18 @@
 
 # virtual methods
 .method public final onPreviewStarted()V
-    .locals 2
+    .locals 3
 
     .line 0
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/FragmentController$SettingChangedListenerImpl$17$$ExternalSyntheticLambda0;->f$0:Ljp/co/sony/mc/camera/view/FragmentController$SettingChangedListenerImpl$17;
 
     iget-object v1, p0, Ljp/co/sony/mc/camera/view/FragmentController$SettingChangedListenerImpl$17$$ExternalSyntheticLambda0;->f$1:Ljava/util/List;
 
-    iget-boolean p0, p0, Ljp/co/sony/mc/camera/view/FragmentController$SettingChangedListenerImpl$17$$ExternalSyntheticLambda0;->f$2:Z
+    iget-object v2, p0, Ljp/co/sony/mc/camera/view/FragmentController$SettingChangedListenerImpl$17$$ExternalSyntheticLambda0;->f$2:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
-    invoke-static {v0, v1, p0}, Ljp/co/sony/mc/camera/view/FragmentController$SettingChangedListenerImpl$17;->$r8$lambda$_2NTk3Kq-vvFNAdOEjFPtsKitVo(Ljp/co/sony/mc/camera/view/FragmentController$SettingChangedListenerImpl$17;Ljava/util/List;Z)V
+    iget-boolean p0, p0, Ljp/co/sony/mc/camera/view/FragmentController$SettingChangedListenerImpl$17$$ExternalSyntheticLambda0;->f$3:Z
+
+    invoke-static {v0, v1, v2, p0}, Ljp/co/sony/mc/camera/view/FragmentController$SettingChangedListenerImpl$17;->$r8$lambda$0dR76D6P0s4Wv2N7Ai0Yvl4ul3Q(Ljp/co/sony/mc/camera/view/FragmentController$SettingChangedListenerImpl$17;Ljava/util/List;Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Z)V
 
     return-void
 .end method

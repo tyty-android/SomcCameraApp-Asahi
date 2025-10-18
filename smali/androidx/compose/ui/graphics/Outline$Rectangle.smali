@@ -53,13 +53,9 @@
 .method public constructor <init>(Landroidx/compose/ui/geometry/Rect;)V
     .locals 1
 
-    const-string v0, "rect"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
     const/4 v0, 0x0
 
-    .line 41
+    .line 42
     invoke-direct {p0, v0}, Landroidx/compose/ui/graphics/Outline;-><init>(Lkotlin/jvm/internal/DefaultConstructorMarker;)V
 
     iput-object p1, p0, Landroidx/compose/ui/graphics/Outline$Rectangle;->rect:Landroidx/compose/ui/geometry/Rect;
@@ -78,7 +74,7 @@
 
     return v0
 
-    .line 48
+    .line 49
     :cond_0
     instance-of v1, p1, Landroidx/compose/ui/graphics/Outline$Rectangle;
 
@@ -88,7 +84,7 @@
 
     return v2
 
-    .line 50
+    .line 51
     :cond_1
     iget-object p0, p0, Landroidx/compose/ui/graphics/Outline$Rectangle;->rect:Landroidx/compose/ui/geometry/Rect;
 
@@ -111,7 +107,7 @@
 .method public getBounds()Landroidx/compose/ui/geometry/Rect;
     .locals 0
 
-    .line 44
+    .line 45
     iget-object p0, p0, Landroidx/compose/ui/graphics/Outline$Rectangle;->rect:Landroidx/compose/ui/geometry/Rect;
 
     return-object p0
@@ -120,7 +116,7 @@
 .method public final getRect()Landroidx/compose/ui/geometry/Rect;
     .locals 0
 
-    .line 41
+    .line 42
     iget-object p0, p0, Landroidx/compose/ui/graphics/Outline$Rectangle;->rect:Landroidx/compose/ui/geometry/Rect;
 
     return-object p0
@@ -129,7 +125,7 @@
 .method public hashCode()I
     .locals 0
 
-    .line 56
+    .line 57
     iget-object p0, p0, Landroidx/compose/ui/graphics/Outline$Rectangle;->rect:Landroidx/compose/ui/geometry/Rect;
 
     invoke-virtual {p0}, Landroidx/compose/ui/geometry/Rect;->hashCode()I

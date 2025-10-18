@@ -32,8 +32,8 @@
     }
     k = 0x1
     mv = {
-        0x1,
-        0x9,
+        0x2,
+        0x0,
         0x0
     }
     xi = 0x30
@@ -50,7 +50,7 @@
 
     iput-object p1, p0, Ljp/co/sony/mc/camera/view/fragment/BasicModeMainFragment$createContentsViewController$1;->this$0:Ljp/co/sony/mc/camera/view/fragment/BasicModeMainFragment;
 
-    .line 857
+    .line 1003
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -65,7 +65,7 @@
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 860
+    .line 1006
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/fragment/BasicModeMainFragment$createContentsViewController$1;->this$0:Ljp/co/sony/mc/camera/view/fragment/BasicModeMainFragment;
 
     move-object v0, p0

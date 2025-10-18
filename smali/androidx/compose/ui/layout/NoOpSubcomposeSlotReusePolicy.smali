@@ -56,7 +56,7 @@
 .method private constructor <init>()V
     .locals 0
 
-    .line 1056
+    .line 980
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -75,11 +75,7 @@
 .method public getSlotsToRetain(Landroidx/compose/ui/layout/SubcomposeSlotReusePolicy$SlotIdsSet;)V
     .locals 0
 
-    const-string/jumbo p0, "slotIds"
-
-    invoke-static {p1, p0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 1058
+    .line 982
     invoke-virtual {p1}, Landroidx/compose/ui/layout/SubcomposeSlotReusePolicy$SlotIdsSet;->clear()V
 
     return-void

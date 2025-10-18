@@ -47,10 +47,6 @@
         }
     .end annotation
 
-    const-string v0, "<this>"
-
-    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
     .line 109
     instance-of v0, p0, Landroidx/compose/runtime/DoubleState;
 
@@ -84,10 +80,6 @@
             "Landroidx/compose/runtime/FloatState;"
         }
     .end annotation
-
-    const-string v0, "<this>"
-
-    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 83
     instance-of v0, p0, Landroidx/compose/runtime/FloatState;
@@ -123,10 +115,6 @@
         }
     .end annotation
 
-    const-string v0, "<this>"
-
-    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
     .line 31
     instance-of v0, p0, Landroidx/compose/runtime/IntState;
 
@@ -160,10 +148,6 @@
             "Landroidx/compose/runtime/LongState;"
         }
     .end annotation
-
-    const-string v0, "<this>"
-
-    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 57
     instance-of v0, p0, Landroidx/compose/runtime/LongState;

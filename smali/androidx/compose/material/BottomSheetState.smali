@@ -12,7 +12,7 @@
 
 .annotation runtime Lkotlin/Metadata;
     d1 = {
-        "\u0000>\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0010\u0007\n\u0000\n\u0002\u0018\u0002\n\u0002\u0010\u000b\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0006\n\u0002\u0018\u0002\n\u0002\u0008\u0016\n\u0002\u0010\u0002\n\u0002\u0008\u0010\u0008\u0007\u0018\u0000 92\u00020\u0001:\u00019B5\u0008\u0007\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\u000e\u0008\u0002\u0010\u0004\u001a\u0008\u0012\u0004\u0012\u00020\u00060\u0005\u0012\u0014\u0008\u0002\u0010\u0007\u001a\u000e\u0012\u0004\u0012\u00020\u0003\u0012\u0004\u0012\u00020\t0\u0008\u00a2\u0006\u0002\u0010\nJ%\u0010)\u001a\u00020*2\u0006\u0010+\u001a\u00020\u00032\u0008\u0008\u0002\u0010,\u001a\u00020\u0006H\u0080@\u00f8\u0001\u0000\u00a2\u0006\u0004\u0008-\u0010.J\u0011\u0010/\u001a\u00020*H\u0086@\u00f8\u0001\u0000\u00a2\u0006\u0002\u00100J\u0011\u00101\u001a\u00020*H\u0086@\u00f8\u0001\u0000\u00a2\u0006\u0002\u00100J\u0008\u00102\u001a\u00020\u0013H\u0002J\u0006\u00103\u001a\u00020\u0006J\u001b\u00104\u001a\u00020*2\u0006\u0010+\u001a\u00020\u0003H\u0080@\u00f8\u0001\u0000\u00a2\u0006\u0004\u00085\u00106J\u0015\u00107\u001a\u00020\t2\u0006\u0010+\u001a\u00020\u0003H\u0000\u00a2\u0006\u0002\u00088R\u001a\u0010\u000b\u001a\u0008\u0012\u0004\u0012\u00020\u00030\u000cX\u0080\u0004\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\r\u0010\u000eR\u0011\u0010\u000f\u001a\u00020\u00038F\u00a2\u0006\u0006\u001a\u0004\u0008\u0010\u0010\u0011R\u001c\u0010\u0012\u001a\u0004\u0018\u00010\u0013X\u0080\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\u0008\u0014\u0010\u0015\"\u0004\u0008\u0016\u0010\u0017R\u0014\u0010\u0018\u001a\u00020\t8@X\u0080\u0004\u00a2\u0006\u0006\u001a\u0004\u0008\u0019\u0010\u001aR\u0011\u0010\u001b\u001a\u00020\t8F\u00a2\u0006\u0006\u001a\u0004\u0008\u001b\u0010\u001aR\u0011\u0010\u001c\u001a\u00020\t8F\u00a2\u0006\u0006\u001a\u0004\u0008\u001c\u0010\u001aR\u0014\u0010\u001d\u001a\u00020\u00068@X\u0080\u0004\u00a2\u0006\u0006\u001a\u0004\u0008\u001e\u0010\u001fR\u001a\u0010 \u001a\u00020\u00068FX\u0087\u0004\u00a2\u0006\u000c\u0012\u0004\u0008!\u0010\"\u001a\u0004\u0008#\u0010\u001fR\u001a\u0010$\u001a\u00020\u00068FX\u0087\u0004\u00a2\u0006\u000c\u0012\u0004\u0008%\u0010\"\u001a\u0004\u0008&\u0010\u001fR\u0011\u0010\'\u001a\u00020\u00038F\u00a2\u0006\u0006\u001a\u0004\u0008(\u0010\u0011\u0082\u0002\u0004\n\u0002\u0008\u0019\u00a8\u0006:"
+        "\u0000>\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0010\u0007\n\u0000\n\u0002\u0018\u0002\n\u0002\u0010\u000b\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0006\n\u0002\u0018\u0002\n\u0002\u0008\u0012\n\u0002\u0010\u0002\n\u0002\u0008\u000e\u0008\u0007\u0018\u0000 32\u00020\u0001:\u00013B5\u0008\u0007\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\u000e\u0008\u0002\u0010\u0004\u001a\u0008\u0012\u0004\u0012\u00020\u00060\u0005\u0012\u0014\u0008\u0002\u0010\u0007\u001a\u000e\u0012\u0004\u0012\u00020\u0003\u0012\u0004\u0012\u00020\t0\u0008\u00a2\u0006\u0002\u0010\nJ\"\u0010%\u001a\u00020&2\u0006\u0010\'\u001a\u00020\u00032\u0008\u0008\u0002\u0010(\u001a\u00020\u0006H\u0080@\u00a2\u0006\u0004\u0008)\u0010*J\u000e\u0010+\u001a\u00020&H\u0086@\u00a2\u0006\u0002\u0010,J\u000e\u0010-\u001a\u00020&H\u0086@\u00a2\u0006\u0002\u0010,J\u0008\u0010.\u001a\u00020\u0013H\u0002J\u0006\u0010/\u001a\u00020\u0006J\u0018\u00100\u001a\u00020&2\u0006\u0010\'\u001a\u00020\u0003H\u0080@\u00a2\u0006\u0004\u00081\u00102R\u001a\u0010\u000b\u001a\u0008\u0012\u0004\u0012\u00020\u00030\u000cX\u0080\u0004\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\r\u0010\u000eR\u0011\u0010\u000f\u001a\u00020\u00038F\u00a2\u0006\u0006\u001a\u0004\u0008\u0010\u0010\u0011R\u001c\u0010\u0012\u001a\u0004\u0018\u00010\u0013X\u0080\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\u0008\u0014\u0010\u0015\"\u0004\u0008\u0016\u0010\u0017R\u0011\u0010\u0018\u001a\u00020\t8F\u00a2\u0006\u0006\u001a\u0004\u0008\u0018\u0010\u0019R\u0011\u0010\u001a\u001a\u00020\t8F\u00a2\u0006\u0006\u001a\u0004\u0008\u001a\u0010\u0019R\u001a\u0010\u001b\u001a\u00020\u00068FX\u0087\u0004\u00a2\u0006\u000c\u0012\u0004\u0008\u001c\u0010\u001d\u001a\u0004\u0008\u001e\u0010\u001fR\u001a\u0010 \u001a\u00020\u00068GX\u0087\u0004\u00a2\u0006\u000c\u0012\u0004\u0008!\u0010\u001d\u001a\u0004\u0008\"\u0010\u001fR\u0011\u0010#\u001a\u00020\u00038F\u00a2\u0006\u0006\u001a\u0004\u0008$\u0010\u0011\u00a8\u00064"
     }
     d2 = {
         "Landroidx/compose/material/BottomSheetState;",
@@ -39,18 +39,14 @@
         "()Landroidx/compose/ui/unit/Density;",
         "setDensity$material_release",
         "(Landroidx/compose/ui/unit/Density;)V",
-        "isAnimationRunning",
-        "isAnimationRunning$material_release",
-        "()Z",
         "isCollapsed",
+        "()Z",
         "isExpanded",
-        "lastVelocity",
-        "getLastVelocity$material_release",
-        "()F",
         "offset",
         "getOffset$annotations",
         "()V",
         "getOffset",
+        "()F",
         "progress",
         "getProgress$annotations",
         "getProgress",
@@ -70,8 +66,6 @@
         "snapTo",
         "snapTo$material_release",
         "(Landroidx/compose/material/BottomSheetValue;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;",
-        "trySnapTo",
-        "trySnapTo$material_release",
         "Companion",
         "material_release"
     }
@@ -145,54 +139,42 @@
         .end subannotation
     .end annotation
 
-    const-string v0, "initialValue"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string v0, "animationSpec"
-
-    invoke-static {p2, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string v0, "confirmValueChange"
-
-    invoke-static {p3, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
     .line 124
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 145
-    new-instance v0, Landroidx/compose/material/AnchoredDraggableState;
+    new-instance v6, Landroidx/compose/material/AnchoredDraggableState;
 
     .line 149
-    new-instance v1, Landroidx/compose/material/BottomSheetState$anchoredDraggableState$1;
+    new-instance v0, Landroidx/compose/material/BottomSheetState$anchoredDraggableState$1;
 
-    invoke-direct {v1, p0}, Landroidx/compose/material/BottomSheetState$anchoredDraggableState$1;-><init>(Landroidx/compose/material/BottomSheetState;)V
+    invoke-direct {v0, p0}, Landroidx/compose/material/BottomSheetState$anchoredDraggableState$1;-><init>(Landroidx/compose/material/BottomSheetState;)V
 
-    move-object v3, v1
+    move-object v2, v0
 
-    check-cast v3, Lkotlin/jvm/functions/Function1;
+    check-cast v2, Lkotlin/jvm/functions/Function1;
 
     .line 154
-    new-instance v1, Landroidx/compose/material/BottomSheetState$anchoredDraggableState$2;
+    new-instance v0, Landroidx/compose/material/BottomSheetState$anchoredDraggableState$2;
 
-    invoke-direct {v1, p0}, Landroidx/compose/material/BottomSheetState$anchoredDraggableState$2;-><init>(Landroidx/compose/material/BottomSheetState;)V
+    invoke-direct {v0, p0}, Landroidx/compose/material/BottomSheetState$anchoredDraggableState$2;-><init>(Landroidx/compose/material/BottomSheetState;)V
 
-    move-object v4, v1
+    move-object v3, v0
 
-    check-cast v4, Lkotlin/jvm/functions/Function0;
+    check-cast v3, Lkotlin/jvm/functions/Function0;
 
-    move-object v1, v0
+    move-object v0, v6
 
-    move-object v2, p1
+    move-object v1, p1
 
-    move-object v5, p2
+    move-object v4, p2
 
-    move-object v6, p3
+    move-object v5, p3
 
     .line 145
-    invoke-direct/range {v1 .. v6}, Landroidx/compose/material/AnchoredDraggableState;-><init>(Ljava/lang/Object;Lkotlin/jvm/functions/Function1;Lkotlin/jvm/functions/Function0;Landroidx/compose/animation/core/AnimationSpec;Lkotlin/jvm/functions/Function1;)V
+    invoke-direct/range {v0 .. v5}, Landroidx/compose/material/AnchoredDraggableState;-><init>(Ljava/lang/Object;Lkotlin/jvm/functions/Function1;Lkotlin/jvm/functions/Function0;Landroidx/compose/animation/core/AnimationSpec;Lkotlin/jvm/functions/Function1;)V
 
-    iput-object v0, p0, Landroidx/compose/material/BottomSheetState;->anchoredDraggableState:Landroidx/compose/material/AnchoredDraggableState;
+    iput-object v6, p0, Landroidx/compose/material/BottomSheetState;->anchoredDraggableState:Landroidx/compose/material/AnchoredDraggableState;
 
     return-void
 .end method
@@ -205,9 +187,9 @@
     if-eqz p5, :cond_0
 
     .line 141
-    sget-object p2, Landroidx/compose/material/SwipeableDefaults;->INSTANCE:Landroidx/compose/material/SwipeableDefaults;
+    sget-object p2, Landroidx/compose/material/AnchoredDraggableDefaults;->INSTANCE:Landroidx/compose/material/AnchoredDraggableDefaults;
 
-    invoke-virtual {p2}, Landroidx/compose/material/SwipeableDefaults;->getAnimationSpec()Landroidx/compose/animation/core/SpringSpec;
+    invoke-virtual {p2}, Landroidx/compose/material/AnchoredDraggableDefaults;->getAnimationSpec()Landroidx/compose/animation/core/SpringSpec;
 
     move-result-object p2
 
@@ -248,14 +230,14 @@
 
     if-eqz p4, :cond_0
 
-    .line 230
+    .line 234
     iget-object p2, p0, Landroidx/compose/material/BottomSheetState;->anchoredDraggableState:Landroidx/compose/material/AnchoredDraggableState;
 
     invoke-virtual {p2}, Landroidx/compose/material/AnchoredDraggableState;->getLastVelocity()F
 
     move-result p2
 
-    .line 228
+    .line 232
     :cond_0
     invoke-virtual {p0, p1, p2, p3}, Landroidx/compose/material/BottomSheetState;->animateTo$material_release(Landroidx/compose/material/BottomSheetValue;FLkotlin/coroutines/Continuation;)Ljava/lang/Object;
 
@@ -344,7 +326,7 @@
         }
     .end annotation
 
-    .line 231
+    .line 235
     iget-object p0, p0, Landroidx/compose/material/BottomSheetState;->anchoredDraggableState:Landroidx/compose/material/AnchoredDraggableState;
 
     invoke-static {p0, p1, p2, p3}, Landroidx/compose/material/AnchoredDraggableKt;->animateTo(Landroidx/compose/material/AnchoredDraggableState;Ljava/lang/Object;FLkotlin/coroutines/Continuation;)Ljava/lang/Object;
@@ -378,7 +360,7 @@
         }
     .end annotation
 
-    .line 213
+    .line 217
     iget-object v0, p0, Landroidx/compose/material/BottomSheetState;->anchoredDraggableState:Landroidx/compose/material/AnchoredDraggableState;
 
     sget-object v1, Landroidx/compose/material/BottomSheetValue;->Collapsed:Landroidx/compose/material/BottomSheetValue;
@@ -425,25 +407,31 @@
     .line 204
     iget-object v0, p0, Landroidx/compose/material/BottomSheetState;->anchoredDraggableState:Landroidx/compose/material/AnchoredDraggableState;
 
+    invoke-virtual {v0}, Landroidx/compose/material/AnchoredDraggableState;->getAnchors()Landroidx/compose/material/DraggableAnchors;
+
+    move-result-object v0
+
     sget-object v1, Landroidx/compose/material/BottomSheetValue;->Expanded:Landroidx/compose/material/BottomSheetValue;
 
-    invoke-virtual {v0, v1}, Landroidx/compose/material/AnchoredDraggableState;->hasAnchorForValue(Ljava/lang/Object;)Z
+    invoke-interface {v0, v1}, Landroidx/compose/material/DraggableAnchors;->hasAnchorFor(Ljava/lang/Object;)Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
+    .line 205
     sget-object v0, Landroidx/compose/material/BottomSheetValue;->Expanded:Landroidx/compose/material/BottomSheetValue;
 
     goto :goto_0
 
+    .line 207
     :cond_0
     sget-object v0, Landroidx/compose/material/BottomSheetValue;->Collapsed:Landroidx/compose/material/BottomSheetValue;
 
     :goto_0
     move-object v2, v0
 
-    .line 205
+    .line 209
     iget-object v1, p0, Landroidx/compose/material/BottomSheetState;->anchoredDraggableState:Landroidx/compose/material/AnchoredDraggableState;
 
     const/4 v5, 0x2
@@ -513,25 +501,12 @@
     return-object p0
 .end method
 
-.method public final getLastVelocity$material_release()F
-    .locals 0
-
-    .line 245
-    iget-object p0, p0, Landroidx/compose/material/BottomSheetState;->anchoredDraggableState:Landroidx/compose/material/AnchoredDraggableState;
-
-    invoke-virtual {p0}, Landroidx/compose/material/AnchoredDraggableState;->getLastVelocity()F
-
-    move-result p0
-
-    return p0
-.end method
-
 .method public final getOffset()F
     .locals 1
 
     new-instance p0, Ljava/lang/IllegalStateException;
 
-    .line 219
+    .line 223
     const-string v0, "Use requireOffset() to access the offset."
 
     invoke-virtual {v0}, Ljava/lang/Object;->toString()Ljava/lang/String;
@@ -569,19 +544,6 @@
     check-cast p0, Landroidx/compose/material/BottomSheetValue;
 
     return-object p0
-.end method
-
-.method public final isAnimationRunning$material_release()Z
-    .locals 0
-
-    .line 237
-    iget-object p0, p0, Landroidx/compose/material/BottomSheetState;->anchoredDraggableState:Landroidx/compose/material/AnchoredDraggableState;
-
-    invoke-virtual {p0}, Landroidx/compose/material/AnchoredDraggableState;->isAnimationRunning()Z
-
-    move-result p0
-
-    return p0
 .end method
 
 .method public final isCollapsed()Z
@@ -637,7 +599,7 @@
 .method public final requireOffset()F
     .locals 0
 
-    .line 226
+    .line 230
     iget-object p0, p0, Landroidx/compose/material/BottomSheetState;->anchoredDraggableState:Landroidx/compose/material/AnchoredDraggableState;
 
     invoke-virtual {p0}, Landroidx/compose/material/AnchoredDraggableState;->requireOffset()F
@@ -670,7 +632,7 @@
         }
     .end annotation
 
-    .line 233
+    .line 237
     iget-object p0, p0, Landroidx/compose/material/BottomSheetState;->anchoredDraggableState:Landroidx/compose/material/AnchoredDraggableState;
 
     invoke-static {p0, p1, p2}, Landroidx/compose/material/AnchoredDraggableKt;->snapTo(Landroidx/compose/material/AnchoredDraggableState;Ljava/lang/Object;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
@@ -689,21 +651,4 @@
     sget-object p0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
 
     return-object p0
-.end method
-
-.method public final trySnapTo$material_release(Landroidx/compose/material/BottomSheetValue;)Z
-    .locals 1
-
-    const-string/jumbo v0, "target"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 235
-    iget-object p0, p0, Landroidx/compose/material/BottomSheetState;->anchoredDraggableState:Landroidx/compose/material/AnchoredDraggableState;
-
-    invoke-virtual {p0, p1}, Landroidx/compose/material/AnchoredDraggableState;->trySnapTo$material_release(Ljava/lang/Object;)Z
-
-    move-result p0
-
-    return p0
 .end method

@@ -53,7 +53,7 @@
     f = "Slider.kt"
     i = {}
     l = {
-        0x169
+        0x16c
     }
     m = "invokeSuspend"
     n = {}
@@ -273,7 +273,7 @@
 
     move-result-object v1
 
-    .line 65535
+    .line 363
     iget v2, v0, Landroidx/compose/material/SliderKt$RangeSlider$2$gestureEndAction$1$1;->label:I
 
     const/4 v3, 0x1
@@ -298,7 +298,7 @@
     :cond_1
     invoke-static/range {p1 .. p1}, Lkotlin/ResultKt;->throwOnFailure(Ljava/lang/Object;)V
 
-    .line 361
+    .line 364
     iget v2, v0, Landroidx/compose/material/SliderKt$RangeSlider$2$gestureEndAction$1$1;->$current:F
 
     const/4 v4, 0x2
@@ -311,7 +311,7 @@
 
     move-result-object v7
 
-    .line 362
+    .line 365
     iget v2, v0, Landroidx/compose/material/SliderKt$RangeSlider$2$gestureEndAction$1$1;->$target:F
 
     invoke-static {v2}, Lkotlin/coroutines/jvm/internal/Boxing;->boxFloat(F)Ljava/lang/Float;
@@ -326,12 +326,12 @@
 
     check-cast v9, Landroidx/compose/animation/core/AnimationSpec;
 
-    .line 363
+    .line 366
     invoke-static {v6}, Lkotlin/coroutines/jvm/internal/Boxing;->boxFloat(F)Ljava/lang/Float;
 
     move-result-object v10
 
-    .line 361
+    .line 364
     new-instance v2, Landroidx/compose/material/SliderKt$RangeSlider$2$gestureEndAction$1$1$1;
 
     iget-boolean v12, v0, Landroidx/compose/material/SliderKt$RangeSlider$2$gestureEndAction$1$1;->$isStart:Z
@@ -376,7 +376,7 @@
 
     return-object v1
 
-    .line 371
+    .line 374
     :cond_2
     :goto_0
     iget-object v0, v0, Landroidx/compose/material/SliderKt$RangeSlider$2$gestureEndAction$1$1;->$onValueChangeFinished:Lkotlin/jvm/functions/Function0;
@@ -385,7 +385,7 @@
 
     invoke-interface {v0}, Lkotlin/jvm/functions/Function0;->invoke()Ljava/lang/Object;
 
-    .line 372
+    .line 375
     :cond_3
     sget-object v0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
 

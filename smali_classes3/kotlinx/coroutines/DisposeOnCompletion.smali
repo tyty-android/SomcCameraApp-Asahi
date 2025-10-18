@@ -23,7 +23,7 @@
     k = 0x1
     mv = {
         0x1,
-        0x6,
+        0x8,
         0x0
     }
     xi = 0x30
@@ -38,10 +38,10 @@
 .method public constructor <init>(Lkotlinx/coroutines/DisposableHandle;)V
     .locals 0
 
-    .line 1420
+    .line 1413
     invoke-direct {p0}, Lkotlinx/coroutines/JobNode;-><init>()V
 
-    .line 1419
+    .line 1412
     iput-object p1, p0, Lkotlinx/coroutines/DisposeOnCompletion;->handle:Lkotlinx/coroutines/DisposableHandle;
 
     return-void
@@ -52,7 +52,7 @@
 .method public bridge synthetic invoke(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
 
-    .line 1418
+    .line 1411
     check-cast p1, Ljava/lang/Throwable;
 
     invoke-virtual {p0, p1}, Lkotlinx/coroutines/DisposeOnCompletion;->invoke(Ljava/lang/Throwable;)V
@@ -65,7 +65,7 @@
 .method public invoke(Ljava/lang/Throwable;)V
     .locals 0
 
-    .line 1421
+    .line 1414
     iget-object p0, p0, Lkotlinx/coroutines/DisposeOnCompletion;->handle:Lkotlinx/coroutines/DisposableHandle;
 
     invoke-interface {p0}, Lkotlinx/coroutines/DisposableHandle;->dispose()V

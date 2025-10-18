@@ -32,10 +32,6 @@
         0x0,
         0x0,
         0x0,
-        0x0,
-        0x0,
-        0x1,
-        0x1,
         0x1,
         0x1,
         0x1,
@@ -44,43 +40,35 @@
         0x1
     }
     l = {
-        0x37a,
-        0x3ac
+        0x374,
+        0x39e
     }
     m = "awaitHorizontalTouchSlopOrCancellation-jO51t88"
     n = {
         "onTouchSlopReached",
-        "$this$awaitPointerSlopOrCancellation_u2dwtdNQyU_u24default$iv",
+        "$this$awaitPointerSlopOrCancellation_u2dpn7EDYM$iv",
         "pointer$iv",
-        "triggerOnMainAxisSlop$iv",
         "touchSlop$iv",
-        "totalMainPositionChange$iv",
-        "totalCrossPositionChange$iv",
+        "totalPositionChange$iv",
         "onTouchSlopReached",
-        "$this$awaitPointerSlopOrCancellation_u2dwtdNQyU_u24default$iv",
+        "$this$awaitPointerSlopOrCancellation_u2dpn7EDYM$iv",
         "pointer$iv",
         "dragEvent$iv",
-        "triggerOnMainAxisSlop$iv",
         "touchSlop$iv",
-        "totalMainPositionChange$iv",
-        "totalCrossPositionChange$iv"
+        "totalPositionChange$iv"
     }
     s = {
         "L$0",
         "L$2",
         "L$3",
-        "I$0",
         "F$0",
-        "F$1",
-        "F$2",
+        "J$0",
         "L$0",
         "L$2",
         "L$3",
         "L$4",
-        "I$0",
         "F$0",
-        "F$1",
-        "F$2"
+        "J$0"
     }
 .end annotation
 
@@ -88,11 +76,7 @@
 # instance fields
 .field F$0:F
 
-.field F$1:F
-
-.field F$2:F
-
-.field I$0:I
+.field J$0:J
 
 .field L$0:Ljava/lang/Object;
 

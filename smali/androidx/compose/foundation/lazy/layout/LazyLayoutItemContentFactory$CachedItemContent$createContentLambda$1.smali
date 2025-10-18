@@ -96,7 +96,7 @@
 .method public final invoke(Landroidx/compose/runtime/Composer;I)V
     .locals 8
 
-    const-string v0, "C99@3691L258,107@3962L219:LazyLayoutItemContentFactory.kt#wow0x6"
+    const-string v0, "C99@3690L258,107@3961L219:LazyLayoutItemContentFactory.kt#wow0x6"
 
     invoke-static {p1, v0}, Landroidx/compose/runtime/ComposerKt;->sourceInformation(Landroidx/compose/runtime/Composer;Ljava/lang/String;)V
 
@@ -134,7 +134,7 @@
 
     const v0, 0x53af4291
 
-    const-string v2, "androidx.compose.foundation.lazy.layout.LazyLayoutItemContentFactory.CachedItemContent.createContentLambda.<anonymous> (LazyLayoutItemContentFactory.kt:90)"
+    const-string v2, "androidx.compose.foundation.lazy.layout.LazyLayoutItemContentFactory.CachedItemContent.createContentLambda.<anonymous> (LazyLayoutItemContentFactory.kt:91)"
 
     invoke-static {v0, p2, v1, v2}, Landroidx/compose/runtime/ComposerKt;->traceEventStart(IIILjava/lang/String;)V
 
@@ -236,10 +236,10 @@
 
     if-eqz p2, :cond_6
 
-    const p2, -0x61e57649
+    const p2, -0x61e5764a
 
     .line 142
-    const-string v3, "C100@3751L184:LazyLayoutItemContentFactory.kt#wow0x6"
+    const-string v3, "C100@3750L184:LazyLayoutItemContentFactory.kt#wow0x6"
 
     .line 101
     invoke-static {p1, p2, v3}, Landroidx/compose/runtime/ComposerKt;->sourceInformationMarkerStart(Landroidx/compose/runtime/Composer;ILjava/lang/String;)V

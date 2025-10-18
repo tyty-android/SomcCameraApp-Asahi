@@ -198,7 +198,7 @@
 
     move-result-object v0
 
-    const-string/jumbo p0, "super.postVisitDirectory(dir, exc)"
+    const-string p0, "postVisitDirectory(...)"
 
     invoke-static {v0, p0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
 
@@ -248,7 +248,7 @@
 
     move-result-object v0
 
-    const-string/jumbo p0, "super.preVisitDirectory(dir, attrs)"
+    const-string p0, "preVisitDirectory(...)"
 
     invoke-static {v0, p0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
 
@@ -298,7 +298,7 @@
 
     move-result-object v0
 
-    const-string/jumbo p0, "super.visitFile(file, attrs)"
+    const-string/jumbo p0, "visitFile(...)"
 
     invoke-static {v0, p0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
 
@@ -348,7 +348,7 @@
 
     move-result-object v0
 
-    const-string/jumbo p0, "super.visitFileFailed(file, exc)"
+    const-string/jumbo p0, "visitFileFailed(...)"
 
     invoke-static {v0, p0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
 

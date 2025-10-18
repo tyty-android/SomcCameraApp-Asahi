@@ -5,7 +5,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/SourceDebugExtension;
-    value = "SMAP\nFontListFontFamilyTypefaceAdapter.kt\nKotlin\n*S Kotlin\n*F\n+ 1 FontListFontFamilyTypefaceAdapter.kt\nandroidx/compose/ui/text/font/FontListFontFamilyTypefaceAdapterKt\n+ 2 FontListFontFamilyTypefaceAdapter.kt\nandroidx/compose/ui/text/font/AsyncTypefaceCache\n+ 3 Synchronization.jvm.kt\nandroidx/compose/ui/text/platform/Synchronization_jvmKt\n+ 4 fake.kt\nkotlin/jvm/internal/FakeKt\n*L\n1#1,427:1\n416#2:428\n417#2,9:430\n416#2:439\n417#2,7:441\n424#2,2:449\n24#3:429\n24#3:440\n1#4:448\n*S KotlinDebug\n*F\n+ 1 FontListFontFamilyTypefaceAdapter.kt\nandroidx/compose/ui/text/font/FontListFontFamilyTypefaceAdapterKt\n*L\n185#1:428\n185#1:430,9\n201#1:439\n201#1:441,7\n201#1:449,2\n185#1:429\n201#1:440\n*E\n"
+    value = "SMAP\nFontListFontFamilyTypefaceAdapter.kt\nKotlin\n*S Kotlin\n*F\n+ 1 FontListFontFamilyTypefaceAdapter.kt\nandroidx/compose/ui/text/font/FontListFontFamilyTypefaceAdapterKt\n+ 2 FontListFontFamilyTypefaceAdapter.kt\nandroidx/compose/ui/text/font/AsyncTypefaceCache\n+ 3 Synchronization.jvm.kt\nandroidx/compose/ui/text/platform/Synchronization_jvmKt\n+ 4 fake.kt\nkotlin/jvm/internal/FakeKt\n*L\n1#1,432:1\n420#2:433\n421#2,9:435\n420#2:444\n421#2,7:446\n428#2,2:454\n26#3:434\n26#3:445\n1#4:453\n*S KotlinDebug\n*F\n+ 1 FontListFontFamilyTypefaceAdapter.kt\nandroidx/compose/ui/text/font/FontListFontFamilyTypefaceAdapterKt\n*L\n189#1:433\n189#1:435,9\n205#1:444\n205#1:446,7\n205#1:454,2\n189#1:434\n205#1:445\n*E\n"
 .end annotation
 
 .annotation runtime Lkotlin/Metadata;
@@ -51,7 +51,7 @@
 .end method
 
 .method private static final firstImmediatelyAvailable(Ljava/util/List;Landroidx/compose/ui/text/font/TypefaceRequest;Landroidx/compose/ui/text/font/AsyncTypefaceCache;Landroidx/compose/ui/text/font/PlatformFontLoader;Lkotlin/jvm/functions/Function1;)Lkotlin/Pair;
-    .locals 15
+    .locals 16
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -79,39 +79,39 @@
 
     move-object/from16 v8, p3
 
-    .line 181
-    invoke-interface {p0}, Ljava/util/List;->size()I
+    .line 185
+    invoke-interface/range {p0 .. p0}, Ljava/util/List;->size()I
 
     move-result v9
 
     const/4 v10, 0x0
 
-    const/4 v0, 0x0
+    const/4 v11, 0x0
 
-    move v11, v0
+    move-object v13, v10
 
-    move-object v12, v10
+    move v12, v11
 
     :goto_0
-    if-ge v11, v9, :cond_e
+    if-ge v12, v9, :cond_e
 
-    move-object v13, p0
+    move-object/from16 v14, p0
 
-    .line 182
-    invoke-interface {p0, v11}, Ljava/util/List;->get(I)Ljava/lang/Object;
+    .line 186
+    invoke-interface {v14, v12}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
     move-result-object v0
 
-    move-object v14, v0
+    move-object v15, v0
 
-    check-cast v14, Landroidx/compose/ui/text/font/Font;
+    check-cast v15, Landroidx/compose/ui/text/font/Font;
 
-    .line 183
-    invoke-interface {v14}, Landroidx/compose/ui/text/font/Font;->getLoadingStrategy-PKNRLFQ()I
+    .line 187
+    invoke-interface {v15}, Landroidx/compose/ui/text/font/Font;->getLoadingStrategy-PKNRLFQ()I
 
     move-result v0
 
-    .line 184
+    .line 188
     sget-object v1, Landroidx/compose/ui/text/font/FontLoadingStrategy;->Companion:Landroidx/compose/ui/text/font/FontLoadingStrategy$Companion;
 
     invoke-virtual {v1}, Landroidx/compose/ui/text/font/FontLoadingStrategy$Companion;->getBlocking-PKNRLFQ()I
@@ -124,15 +124,15 @@
 
     if-eqz v1, :cond_3
 
-    .line 428
+    .line 433
     invoke-static/range {p2 .. p2}, Landroidx/compose/ui/text/font/AsyncTypefaceCache;->access$getCacheLock$p(Landroidx/compose/ui/text/font/AsyncTypefaceCache;)Landroidx/compose/ui/text/platform/SynchronizedObject;
 
     move-result-object v1
 
-    .line 429
+    .line 434
     monitor-enter v1
 
-    .line 430
+    .line 435
     :try_start_0
     new-instance v0, Landroidx/compose/ui/text/font/AsyncTypefaceCache$Key;
 
@@ -140,9 +140,9 @@
 
     move-result-object v2
 
-    invoke-direct {v0, v14, v2}, Landroidx/compose/ui/text/font/AsyncTypefaceCache$Key;-><init>(Landroidx/compose/ui/text/font/Font;Ljava/lang/Object;)V
+    invoke-direct {v0, v15, v2}, Landroidx/compose/ui/text/font/AsyncTypefaceCache$Key;-><init>(Landroidx/compose/ui/text/font/Font;Ljava/lang/Object;)V
 
-    .line 431
+    .line 436
     invoke-static/range {p2 .. p2}, Landroidx/compose/ui/text/font/AsyncTypefaceCache;->access$getResultCache$p(Landroidx/compose/ui/text/font/AsyncTypefaceCache;)Landroidx/compose/ui/text/caches/LruCache;
 
     move-result-object v2
@@ -170,7 +170,7 @@
     :cond_0
     if-eqz v2, :cond_1
 
-    .line 433
+    .line 438
     invoke-virtual {v2}, Landroidx/compose/ui/text/font/AsyncTypefaceCache$AsyncTypefaceResult;->unbox-impl()Ljava/lang/Object;
 
     move-result-object v0
@@ -181,19 +181,19 @@
 
     goto :goto_1
 
-    .line 435
+    .line 440
     :cond_1
     :try_start_1
     sget-object v0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
-    .line 429
+    .line 434
     monitor-exit v1
 
-    .line 187
+    .line 191
     :try_start_2
-    invoke-interface {v8, v14}, Landroidx/compose/ui/text/font/PlatformFontLoader;->loadBlocking(Landroidx/compose/ui/text/font/Font;)Ljava/lang/Object;
+    invoke-interface {v8, v15}, Landroidx/compose/ui/text/font/PlatformFontLoader;->loadBlocking(Landroidx/compose/ui/text/font/Font;)Ljava/lang/Object;
 
     move-result-object v0
     :try_end_2
@@ -207,46 +207,46 @@
 
     move-object/from16 v1, p2
 
-    move-object v2, v14
+    move-object v2, v15
 
     move-object/from16 v3, p3
 
     move-object v4, v0
 
-    .line 437
+    .line 442
     invoke-static/range {v1 .. v7}, Landroidx/compose/ui/text/font/AsyncTypefaceCache;->put$default(Landroidx/compose/ui/text/font/AsyncTypefaceCache;Landroidx/compose/ui/text/font/Font;Landroidx/compose/ui/text/font/PlatformFontLoader;Ljava/lang/Object;ZILjava/lang/Object;)V
 
     :goto_1
     if-eqz v0, :cond_2
 
-    .line 193
+    .line 197
     invoke-virtual/range {p1 .. p1}, Landroidx/compose/ui/text/font/TypefaceRequest;->getFontSynthesis-GVVA2EU()I
 
     move-result v1
 
-    .line 196
+    .line 200
     invoke-virtual/range {p1 .. p1}, Landroidx/compose/ui/text/font/TypefaceRequest;->getFontWeight()Landroidx/compose/ui/text/font/FontWeight;
 
     move-result-object v2
 
-    .line 197
+    .line 201
     invoke-virtual/range {p1 .. p1}, Landroidx/compose/ui/text/font/TypefaceRequest;->getFontStyle-_-LCdwA()I
 
     move-result v3
 
-    .line 193
-    invoke-static {v1, v0, v14, v2, v3}, Landroidx/compose/ui/text/font/FontSynthesis_androidKt;->synthesizeTypeface-FxwP2eA(ILjava/lang/Object;Landroidx/compose/ui/text/font/Font;Landroidx/compose/ui/text/font/FontWeight;I)Ljava/lang/Object;
+    .line 197
+    invoke-static {v1, v0, v15, v2, v3}, Landroidx/compose/ui/text/font/FontSynthesis_androidKt;->synthesizeTypeface-FxwP2eA(ILjava/lang/Object;Landroidx/compose/ui/text/font/Font;Landroidx/compose/ui/text/font/FontWeight;I)Ljava/lang/Object;
 
     move-result-object v0
 
-    .line 192
-    invoke-static {v12, v0}, Lkotlin/TuplesKt;->to(Ljava/lang/Object;Ljava/lang/Object;)Lkotlin/Pair;
+    .line 196
+    invoke-static {v13, v0}, Lkotlin/TuplesKt;->to(Ljava/lang/Object;Ljava/lang/Object;)Lkotlin/Pair;
 
     move-result-object v0
 
     return-object v0
 
-    .line 191
+    .line 195
     :cond_2
     new-instance v0, Ljava/lang/IllegalStateException;
 
@@ -256,7 +256,7 @@
 
     invoke-direct {v1, v2}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
-    invoke-virtual {v1, v14}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+    invoke-virtual {v1, v15}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
     move-result-object v1
 
@@ -273,7 +273,7 @@
 
     move-object v1, v0
 
-    .line 189
+    .line 193
     new-instance v0, Ljava/lang/IllegalStateException;
 
     new-instance v2, Ljava/lang/StringBuilder;
@@ -282,7 +282,7 @@
 
     invoke-direct {v2, v3}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
-    invoke-virtual {v2, v14}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+    invoke-virtual {v2, v15}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
     move-result-object v2
 
@@ -299,12 +299,12 @@
     :catchall_0
     move-exception v0
 
-    .line 429
+    .line 434
     monitor-exit v1
 
     throw v0
 
-    .line 200
+    .line 204
     :cond_3
     sget-object v1, Landroidx/compose/ui/text/font/FontLoadingStrategy;->Companion:Landroidx/compose/ui/text/font/FontLoadingStrategy$Companion;
 
@@ -318,15 +318,15 @@
 
     if-eqz v1, :cond_8
 
-    .line 439
+    .line 444
     invoke-static/range {p2 .. p2}, Landroidx/compose/ui/text/font/AsyncTypefaceCache;->access$getCacheLock$p(Landroidx/compose/ui/text/font/AsyncTypefaceCache;)Landroidx/compose/ui/text/platform/SynchronizedObject;
 
     move-result-object v1
 
-    .line 440
+    .line 445
     monitor-enter v1
 
-    .line 441
+    .line 446
     :try_start_3
     new-instance v0, Landroidx/compose/ui/text/font/AsyncTypefaceCache$Key;
 
@@ -334,9 +334,9 @@
 
     move-result-object v2
 
-    invoke-direct {v0, v14, v2}, Landroidx/compose/ui/text/font/AsyncTypefaceCache$Key;-><init>(Landroidx/compose/ui/text/font/Font;Ljava/lang/Object;)V
+    invoke-direct {v0, v15, v2}, Landroidx/compose/ui/text/font/AsyncTypefaceCache$Key;-><init>(Landroidx/compose/ui/text/font/Font;Ljava/lang/Object;)V
 
-    .line 442
+    .line 447
     invoke-static/range {p2 .. p2}, Landroidx/compose/ui/text/font/AsyncTypefaceCache;->access$getResultCache$p(Landroidx/compose/ui/text/font/AsyncTypefaceCache;)Landroidx/compose/ui/text/caches/LruCache;
 
     move-result-object v2
@@ -364,7 +364,7 @@
     :cond_4
     if-eqz v2, :cond_5
 
-    .line 444
+    .line 449
     invoke-virtual {v2}, Landroidx/compose/ui/text/font/AsyncTypefaceCache$AsyncTypefaceResult;->unbox-impl()Ljava/lang/Object;
 
     move-result-object v0
@@ -375,21 +375,21 @@
 
     goto :goto_3
 
-    .line 446
+    .line 451
     :cond_5
     :try_start_4
     sget-object v0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
     :try_end_4
     .catchall {:try_start_4 .. :try_end_4} :catchall_2
 
-    .line 440
+    .line 445
     monitor-exit v1
 
-    .line 203
+    .line 207
     :try_start_5
     sget-object v0, Lkotlin/Result;->Companion:Lkotlin/Result$Companion;
 
-    invoke-interface {v8, v14}, Landroidx/compose/ui/text/font/PlatformFontLoader;->loadBlocking(Landroidx/compose/ui/text/font/Font;)Ljava/lang/Object;
+    invoke-interface {v8, v15}, Landroidx/compose/ui/text/font/PlatformFontLoader;->loadBlocking(Landroidx/compose/ui/text/font/Font;)Ljava/lang/Object;
 
     move-result-object v0
 
@@ -432,40 +432,40 @@
 
     move-object/from16 v1, p2
 
-    move-object v2, v14
+    move-object v2, v15
 
     move-object/from16 v3, p3
 
     move-object v4, v0
 
-    .line 449
+    .line 454
     invoke-static/range {v1 .. v7}, Landroidx/compose/ui/text/font/AsyncTypefaceCache;->put$default(Landroidx/compose/ui/text/font/AsyncTypefaceCache;Landroidx/compose/ui/text/font/Font;Landroidx/compose/ui/text/font/PlatformFontLoader;Ljava/lang/Object;ZILjava/lang/Object;)V
 
     :goto_3
     if-eqz v0, :cond_7
 
-    .line 207
+    .line 211
     invoke-virtual/range {p1 .. p1}, Landroidx/compose/ui/text/font/TypefaceRequest;->getFontSynthesis-GVVA2EU()I
 
     move-result v1
 
-    .line 210
+    .line 214
     invoke-virtual/range {p1 .. p1}, Landroidx/compose/ui/text/font/TypefaceRequest;->getFontWeight()Landroidx/compose/ui/text/font/FontWeight;
 
     move-result-object v2
 
-    .line 211
+    .line 215
     invoke-virtual/range {p1 .. p1}, Landroidx/compose/ui/text/font/TypefaceRequest;->getFontStyle-_-LCdwA()I
 
     move-result v3
 
-    .line 207
-    invoke-static {v1, v0, v14, v2, v3}, Landroidx/compose/ui/text/font/FontSynthesis_androidKt;->synthesizeTypeface-FxwP2eA(ILjava/lang/Object;Landroidx/compose/ui/text/font/Font;Landroidx/compose/ui/text/font/FontWeight;I)Ljava/lang/Object;
+    .line 211
+    invoke-static {v1, v0, v15, v2, v3}, Landroidx/compose/ui/text/font/FontSynthesis_androidKt;->synthesizeTypeface-FxwP2eA(ILjava/lang/Object;Landroidx/compose/ui/text/font/Font;Landroidx/compose/ui/text/font/FontWeight;I)Ljava/lang/Object;
 
     move-result-object v0
 
-    .line 206
-    invoke-static {v12, v0}, Lkotlin/TuplesKt;->to(Ljava/lang/Object;Ljava/lang/Object;)Lkotlin/Pair;
+    .line 210
+    invoke-static {v13, v0}, Lkotlin/TuplesKt;->to(Ljava/lang/Object;Ljava/lang/Object;)Lkotlin/Pair;
 
     move-result-object v0
 
@@ -479,12 +479,12 @@
     :catchall_2
     move-exception v0
 
-    .line 440
+    .line 445
     monitor-exit v1
 
     throw v0
 
-    .line 215
+    .line 219
     :cond_8
     sget-object v1, Landroidx/compose/ui/text/font/FontLoadingStrategy;->Companion:Landroidx/compose/ui/text/font/FontLoadingStrategy$Companion;
 
@@ -500,33 +500,35 @@
 
     move-object/from16 v1, p2
 
-    .line 216
-    invoke-virtual {v1, v14, v8}, Landroidx/compose/ui/text/font/AsyncTypefaceCache;->get-1ASDuI8(Landroidx/compose/ui/text/font/Font;Landroidx/compose/ui/text/font/PlatformFontLoader;)Landroidx/compose/ui/text/font/AsyncTypefaceCache$AsyncTypefaceResult;
+    .line 220
+    invoke-virtual {v1, v15, v8}, Landroidx/compose/ui/text/font/AsyncTypefaceCache;->get-1ASDuI8(Landroidx/compose/ui/text/font/Font;Landroidx/compose/ui/text/font/PlatformFontLoader;)Landroidx/compose/ui/text/font/AsyncTypefaceCache$AsyncTypefaceResult;
 
     move-result-object v0
 
     if-nez v0, :cond_a
 
-    if-nez v12, :cond_9
+    if-nez v13, :cond_9
 
-    .line 219
-    filled-new-array {v14}, [Landroidx/compose/ui/text/font/Font;
+    const/4 v0, 0x1
 
-    move-result-object v0
+    .line 223
+    new-array v0, v0, [Landroidx/compose/ui/text/font/Font;
+
+    aput-object v15, v0, v11
 
     invoke-static {v0}, Lkotlin/collections/CollectionsKt;->mutableListOf([Ljava/lang/Object;)Ljava/util/List;
 
-    move-result-object v12
+    move-result-object v13
 
     goto :goto_4
 
-    .line 221
+    .line 225
     :cond_9
-    invoke-interface {v12, v14}, Ljava/util/List;->add(Ljava/lang/Object;)Z
+    invoke-interface {v13, v15}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
     goto :goto_4
 
-    .line 223
+    .line 227
     :cond_a
     invoke-virtual {v0}, Landroidx/compose/ui/text/font/AsyncTypefaceCache$AsyncTypefaceResult;->unbox-impl()Ljava/lang/Object;
 
@@ -540,7 +542,7 @@
 
     goto :goto_4
 
-    .line 225
+    .line 229
     :cond_b
     invoke-virtual {v0}, Landroidx/compose/ui/text/font/AsyncTypefaceCache$AsyncTypefaceResult;->unbox-impl()Ljava/lang/Object;
 
@@ -548,33 +550,33 @@
 
     if-eqz v2, :cond_c
 
-    .line 228
+    .line 232
     invoke-virtual/range {p1 .. p1}, Landroidx/compose/ui/text/font/TypefaceRequest;->getFontSynthesis-GVVA2EU()I
 
     move-result v1
 
-    .line 229
+    .line 233
     invoke-virtual {v0}, Landroidx/compose/ui/text/font/AsyncTypefaceCache$AsyncTypefaceResult;->unbox-impl()Ljava/lang/Object;
 
     move-result-object v0
 
-    .line 231
+    .line 235
     invoke-virtual/range {p1 .. p1}, Landroidx/compose/ui/text/font/TypefaceRequest;->getFontWeight()Landroidx/compose/ui/text/font/FontWeight;
 
     move-result-object v2
 
-    .line 232
+    .line 236
     invoke-virtual/range {p1 .. p1}, Landroidx/compose/ui/text/font/TypefaceRequest;->getFontStyle-_-LCdwA()I
 
     move-result v3
 
-    .line 228
-    invoke-static {v1, v0, v14, v2, v3}, Landroidx/compose/ui/text/font/FontSynthesis_androidKt;->synthesizeTypeface-FxwP2eA(ILjava/lang/Object;Landroidx/compose/ui/text/font/Font;Landroidx/compose/ui/text/font/FontWeight;I)Ljava/lang/Object;
+    .line 232
+    invoke-static {v1, v0, v15, v2, v3}, Landroidx/compose/ui/text/font/FontSynthesis_androidKt;->synthesizeTypeface-FxwP2eA(ILjava/lang/Object;Landroidx/compose/ui/text/font/Font;Landroidx/compose/ui/text/font/FontWeight;I)Ljava/lang/Object;
 
     move-result-object v0
 
-    .line 227
-    invoke-static {v12, v0}, Lkotlin/TuplesKt;->to(Ljava/lang/Object;Ljava/lang/Object;)Lkotlin/Pair;
+    .line 231
+    invoke-static {v13, v0}, Lkotlin/TuplesKt;->to(Ljava/lang/Object;Ljava/lang/Object;)Lkotlin/Pair;
 
     move-result-object v0
 
@@ -582,11 +584,11 @@
 
     :cond_c
     :goto_4
-    add-int/lit8 v11, v11, 0x1
+    add-int/lit8 v12, v12, 0x1
 
     goto/16 :goto_0
 
-    .line 236
+    .line 240
     :cond_d
     new-instance v0, Ljava/lang/IllegalStateException;
 
@@ -596,7 +598,7 @@
 
     invoke-direct {v1, v2}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
-    invoke-virtual {v1, v14}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+    invoke-virtual {v1, v15}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
     move-result-object v1
 
@@ -613,13 +615,13 @@
 
     move-object/from16 v2, p4
 
-    .line 240
+    .line 244
     invoke-interface {v2, v1}, Lkotlin/jvm/functions/Function1;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v0
 
-    .line 241
-    invoke-static {v12, v0}, Lkotlin/TuplesKt;->to(Ljava/lang/Object;Ljava/lang/Object;)Lkotlin/Pair;
+    .line 245
+    invoke-static {v13, v0}, Lkotlin/TuplesKt;->to(Ljava/lang/Object;Ljava/lang/Object;)Lkotlin/Pair;
 
     move-result-object v0
 

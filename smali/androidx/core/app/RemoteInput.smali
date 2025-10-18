@@ -125,7 +125,7 @@
     :cond_0
     new-instance p0, Ljava/lang/IllegalArgumentException;
 
-    const-string/jumbo p1, "setEditChoicesBeforeSending requires setAllowFreeFormInput"
+    const-string p1, "setEditChoicesBeforeSending requires setAllowFreeFormInput"
 
     invoke-direct {p0, p1}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
 

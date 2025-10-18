@@ -4,20 +4,4 @@
         <item quantity="other">%d புதிய அறிவிப்புகள்</item>
         <item quantity="one">%d புதிய அறிவிப்பு</item>
     </plurals>
-    <plurals name="mv_minute_remaining_txt">
-        <item quantity="other">%1$d நிமி. மீதமுள்ளன</item>
-        <item quantity="one">1 நிமி. மீதமுள்ளது</item>
-    </plurals>
-    <plurals name="mv_minute_txt">
-        <item quantity="other">%1$d நிமிடங்க.</item>
-        <item quantity="one">1 நிமிடம்</item>
-    </plurals>
-    <plurals name="mv_second_remaining_txt">
-        <item quantity="other">%1$d நொ. மீதமுள்ளன</item>
-        <item quantity="one">1 நொ. மீதமுள்ளது</item>
-    </plurals>
-    <plurals name="mv_second_txt">
-        <item quantity="other">%1$d நொடிகள்</item>
-        <item quantity="one">1 வினாடி</item>
-    </plurals>
 </resources>

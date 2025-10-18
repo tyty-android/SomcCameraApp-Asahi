@@ -5,7 +5,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/SourceDebugExtension;
-    value = "SMAP\nAndroidAutofill.android.kt\nKotlin\n*S Kotlin\n*F\n+ 1 AndroidAutofill.android.kt\nandroidx/compose/ui/autofill/AndroidAutofill_androidKt\n+ 2 ListUtils.kt\nandroidx/compose/ui/util/ListUtilsKt\n+ 3 ArraysJVM.kt\nkotlin/collections/ArraysKt__ArraysJVMKt\n*L\n1#1,230:1\n151#2,3:231\n33#2,4:234\n154#2,2:238\n38#2:240\n156#2:241\n37#3,2:242\n*S KotlinDebug\n*F\n+ 1 AndroidAutofill.android.kt\nandroidx/compose/ui/autofill/AndroidAutofill_androidKt\n*L\n96#1:231,3\n96#1:234,4\n96#1:238,2\n96#1:240\n96#1:241\n96#1:242,2\n*E\n"
+    value = "SMAP\nAndroidAutofill.android.kt\nKotlin\n*S Kotlin\n*F\n+ 1 AndroidAutofill.android.kt\nandroidx/compose/ui/autofill/AndroidAutofill_androidKt\n+ 2 ListUtils.kt\nandroidx/compose/ui/util/ListUtilsKt\n+ 3 ArraysJVM.kt\nkotlin/collections/ArraysKt__ArraysJVMKt\n*L\n1#1,231:1\n151#2,3:232\n33#2,4:235\n154#2,2:239\n38#2:241\n156#2:242\n37#3,2:243\n*S KotlinDebug\n*F\n+ 1 AndroidAutofill.android.kt\nandroidx/compose/ui/autofill/AndroidAutofill_androidKt\n*L\n96#1:232,3\n96#1:235,4\n96#1:239,2\n96#1:241\n96#1:242\n96#1:243,2\n*E\n"
 .end annotation
 
 .annotation runtime Lkotlin/Metadata;
@@ -47,14 +47,6 @@
         }
     .end annotation
 
-    const-string v0, "<this>"
-
-    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string/jumbo v0, "values"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
     .line 128
     invoke-virtual {p1}, Landroid/util/SparseArray;->size()I
 
@@ -79,10 +71,6 @@
 
     .line 132
     sget-object v4, Landroidx/compose/ui/autofill/AutofillApi26Helper;->INSTANCE:Landroidx/compose/ui/autofill/AutofillApi26Helper;
-
-    const-string/jumbo v5, "value"
-
-    invoke-static {v3, v5}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
 
     invoke-virtual {v4, v3}, Landroidx/compose/ui/autofill/AutofillApi26Helper;->isText(Landroid/view/autofill/AutofillValue;)Z
 
@@ -178,279 +166,269 @@
 .end method
 
 .method public static final populateViewStructure(Landroidx/compose/ui/autofill/AndroidAutofill;Landroid/view/ViewStructure;)V
-    .locals 17
+    .locals 16
 
     move-object/from16 v0, p1
-
-    const-string v1, "<this>"
-
-    move-object/from16 v2, p0
-
-    invoke-static {v2, v1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string v1, "root"
-
-    invoke-static {v0, v1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 83
     sget-object v1, Landroidx/compose/ui/autofill/AutofillApi23Helper;->INSTANCE:Landroidx/compose/ui/autofill/AutofillApi23Helper;
 
     invoke-virtual/range {p0 .. p0}, Landroidx/compose/ui/autofill/AndroidAutofill;->getAutofillTree()Landroidx/compose/ui/autofill/AutofillTree;
 
-    move-result-object v3
+    move-result-object v2
 
-    invoke-virtual {v3}, Landroidx/compose/ui/autofill/AutofillTree;->getChildren()Ljava/util/Map;
+    invoke-virtual {v2}, Landroidx/compose/ui/autofill/AutofillTree;->getChildren()Ljava/util/Map;
 
-    move-result-object v3
+    move-result-object v2
 
-    invoke-interface {v3}, Ljava/util/Map;->size()I
+    invoke-interface {v2}, Ljava/util/Map;->size()I
 
-    move-result v3
+    move-result v2
 
-    invoke-virtual {v1, v0, v3}, Landroidx/compose/ui/autofill/AutofillApi23Helper;->addChildCount(Landroid/view/ViewStructure;I)I
+    invoke-virtual {v1, v0, v2}, Landroidx/compose/ui/autofill/AutofillApi23Helper;->addChildCount(Landroid/view/ViewStructure;I)I
 
     move-result v1
 
     .line 85
     invoke-virtual/range {p0 .. p0}, Landroidx/compose/ui/autofill/AndroidAutofill;->getAutofillTree()Landroidx/compose/ui/autofill/AutofillTree;
 
-    move-result-object v3
+    move-result-object v2
 
-    invoke-virtual {v3}, Landroidx/compose/ui/autofill/AutofillTree;->getChildren()Ljava/util/Map;
+    invoke-virtual {v2}, Landroidx/compose/ui/autofill/AutofillTree;->getChildren()Ljava/util/Map;
 
-    move-result-object v3
+    move-result-object v2
 
-    invoke-interface {v3}, Ljava/util/Map;->entrySet()Ljava/util/Set;
+    invoke-interface {v2}, Ljava/util/Map;->entrySet()Ljava/util/Set;
 
-    move-result-object v3
+    move-result-object v2
 
-    invoke-interface {v3}, Ljava/util/Set;->iterator()Ljava/util/Iterator;
+    invoke-interface {v2}, Ljava/util/Set;->iterator()Ljava/util/Iterator;
 
-    move-result-object v3
+    move-result-object v2
 
     :goto_0
-    invoke-interface {v3}, Ljava/util/Iterator;->hasNext()Z
+    invoke-interface {v2}, Ljava/util/Iterator;->hasNext()Z
 
-    move-result v4
+    move-result v3
 
-    if-eqz v4, :cond_3
+    if-eqz v3, :cond_3
 
-    invoke-interface {v3}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+    invoke-interface {v2}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
-    move-result-object v4
+    move-result-object v3
 
-    check-cast v4, Ljava/util/Map$Entry;
+    check-cast v3, Ljava/util/Map$Entry;
 
-    invoke-interface {v4}, Ljava/util/Map$Entry;->getKey()Ljava/lang/Object;
-
-    move-result-object v5
-
-    check-cast v5, Ljava/lang/Number;
-
-    invoke-virtual {v5}, Ljava/lang/Number;->intValue()I
-
-    move-result v8
-
-    invoke-interface {v4}, Ljava/util/Map$Entry;->getValue()Ljava/lang/Object;
+    invoke-interface {v3}, Ljava/util/Map$Entry;->getKey()Ljava/lang/Object;
 
     move-result-object v4
 
-    check-cast v4, Landroidx/compose/ui/autofill/AutofillNode;
+    check-cast v4, Ljava/lang/Number;
+
+    invoke-virtual {v4}, Ljava/lang/Number;->intValue()I
+
+    move-result v7
+
+    invoke-interface {v3}, Ljava/util/Map$Entry;->getValue()Ljava/lang/Object;
+
+    move-result-object v3
+
+    check-cast v3, Landroidx/compose/ui/autofill/AutofillNode;
 
     .line 86
-    sget-object v5, Landroidx/compose/ui/autofill/AutofillApi23Helper;->INSTANCE:Landroidx/compose/ui/autofill/AutofillApi23Helper;
+    sget-object v4, Landroidx/compose/ui/autofill/AutofillApi23Helper;->INSTANCE:Landroidx/compose/ui/autofill/AutofillApi23Helper;
 
-    invoke-virtual {v5, v0, v1}, Landroidx/compose/ui/autofill/AutofillApi23Helper;->newChild(Landroid/view/ViewStructure;I)Landroid/view/ViewStructure;
+    invoke-virtual {v4, v0, v1}, Landroidx/compose/ui/autofill/AutofillApi23Helper;->newChild(Landroid/view/ViewStructure;I)Landroid/view/ViewStructure;
 
-    move-result-object v5
+    move-result-object v4
 
-    if-eqz v5, :cond_2
+    if-eqz v4, :cond_2
 
     .line 87
-    sget-object v6, Landroidx/compose/ui/autofill/AutofillApi26Helper;->INSTANCE:Landroidx/compose/ui/autofill/AutofillApi26Helper;
+    sget-object v5, Landroidx/compose/ui/autofill/AutofillApi26Helper;->INSTANCE:Landroidx/compose/ui/autofill/AutofillApi26Helper;
 
     .line 89
-    sget-object v7, Landroidx/compose/ui/autofill/AutofillApi26Helper;->INSTANCE:Landroidx/compose/ui/autofill/AutofillApi26Helper;
+    sget-object v6, Landroidx/compose/ui/autofill/AutofillApi26Helper;->INSTANCE:Landroidx/compose/ui/autofill/AutofillApi26Helper;
 
-    invoke-virtual {v7, v0}, Landroidx/compose/ui/autofill/AutofillApi26Helper;->getAutofillId(Landroid/view/ViewStructure;)Landroid/view/autofill/AutofillId;
+    invoke-virtual {v6, v0}, Landroidx/compose/ui/autofill/AutofillApi26Helper;->getAutofillId(Landroid/view/ViewStructure;)Landroid/view/autofill/AutofillId;
 
-    move-result-object v7
+    move-result-object v6
 
-    invoke-static {v7}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;)V
+    invoke-static {v6}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;)V
 
     .line 87
-    invoke-virtual {v6, v5, v7, v8}, Landroidx/compose/ui/autofill/AutofillApi26Helper;->setAutofillId(Landroid/view/ViewStructure;Landroid/view/autofill/AutofillId;I)V
+    invoke-virtual {v5, v4, v6, v7}, Landroidx/compose/ui/autofill/AutofillApi26Helper;->setAutofillId(Landroid/view/ViewStructure;Landroid/view/autofill/AutofillId;I)V
 
     .line 92
-    sget-object v6, Landroidx/compose/ui/autofill/AutofillApi23Helper;->INSTANCE:Landroidx/compose/ui/autofill/AutofillApi23Helper;
+    sget-object v5, Landroidx/compose/ui/autofill/AutofillApi23Helper;->INSTANCE:Landroidx/compose/ui/autofill/AutofillApi23Helper;
 
     invoke-virtual/range {p0 .. p0}, Landroidx/compose/ui/autofill/AndroidAutofill;->getView()Landroid/view/View;
 
-    move-result-object v7
+    move-result-object v6
 
-    invoke-virtual {v7}, Landroid/view/View;->getContext()Landroid/content/Context;
+    invoke-virtual {v6}, Landroid/view/View;->getContext()Landroid/content/Context;
 
-    move-result-object v7
+    move-result-object v6
 
-    invoke-virtual {v7}, Landroid/content/Context;->getPackageName()Ljava/lang/String;
+    invoke-virtual {v6}, Landroid/content/Context;->getPackageName()Ljava/lang/String;
 
-    move-result-object v9
+    move-result-object v8
+
+    const/4 v9, 0x0
 
     const/4 v10, 0x0
 
-    const/4 v11, 0x0
+    move-object v6, v4
 
-    move-object v7, v5
-
-    invoke-virtual/range {v6 .. v11}, Landroidx/compose/ui/autofill/AutofillApi23Helper;->setId(Landroid/view/ViewStructure;ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+    invoke-virtual/range {v5 .. v10}, Landroidx/compose/ui/autofill/AutofillApi23Helper;->setId(Landroid/view/ViewStructure;ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 
     .line 93
-    sget-object v6, Landroidx/compose/ui/autofill/AutofillApi26Helper;->INSTANCE:Landroidx/compose/ui/autofill/AutofillApi26Helper;
+    sget-object v5, Landroidx/compose/ui/autofill/AutofillApi26Helper;->INSTANCE:Landroidx/compose/ui/autofill/AutofillApi26Helper;
 
-    const/4 v7, 0x1
+    const/4 v6, 0x1
 
-    invoke-virtual {v6, v5, v7}, Landroidx/compose/ui/autofill/AutofillApi26Helper;->setAutofillType(Landroid/view/ViewStructure;I)V
+    invoke-virtual {v5, v4, v6}, Landroidx/compose/ui/autofill/AutofillApi26Helper;->setAutofillType(Landroid/view/ViewStructure;I)V
 
     .line 94
-    sget-object v6, Landroidx/compose/ui/autofill/AutofillApi26Helper;->INSTANCE:Landroidx/compose/ui/autofill/AutofillApi26Helper;
+    sget-object v5, Landroidx/compose/ui/autofill/AutofillApi26Helper;->INSTANCE:Landroidx/compose/ui/autofill/AutofillApi26Helper;
 
     .line 96
-    invoke-virtual {v4}, Landroidx/compose/ui/autofill/AutofillNode;->getAutofillTypes()Ljava/util/List;
+    invoke-virtual {v3}, Landroidx/compose/ui/autofill/AutofillNode;->getAutofillTypes()Ljava/util/List;
 
-    move-result-object v7
+    move-result-object v6
 
-    .line 232
-    new-instance v8, Ljava/util/ArrayList;
+    .line 233
+    new-instance v7, Ljava/util/ArrayList;
 
-    invoke-interface {v7}, Ljava/util/List;->size()I
+    invoke-interface {v6}, Ljava/util/List;->size()I
 
-    move-result v9
+    move-result v8
 
-    invoke-direct {v8, v9}, Ljava/util/ArrayList;-><init>(I)V
-
-    .line 235
-    invoke-interface {v7}, Ljava/util/List;->size()I
-
-    move-result v9
-
-    const/4 v10, 0x0
-
-    move v11, v10
-
-    :goto_1
-    if-ge v11, v9, :cond_0
+    invoke-direct {v7, v8}, Ljava/util/ArrayList;-><init>(I)V
 
     .line 236
-    invoke-interface {v7, v11}, Ljava/util/List;->get(I)Ljava/lang/Object;
+    invoke-interface {v6}, Ljava/util/List;->size()I
 
-    move-result-object v12
+    move-result v8
 
-    .line 238
-    move-object v13, v8
+    const/4 v9, 0x0
 
-    check-cast v13, Ljava/util/Collection;
+    move v10, v9
 
-    check-cast v12, Landroidx/compose/ui/autofill/AutofillType;
+    :goto_1
+    if-ge v10, v8, :cond_0
+
+    .line 237
+    invoke-interface {v6, v10}, Ljava/util/List;->get(I)Ljava/lang/Object;
+
+    move-result-object v11
+
+    .line 239
+    move-object v12, v7
+
+    check-cast v12, Ljava/util/Collection;
+
+    check-cast v11, Landroidx/compose/ui/autofill/AutofillType;
 
     .line 96
-    invoke-static {v12}, Landroidx/compose/ui/autofill/AndroidAutofillType_androidKt;->getAndroidType(Landroidx/compose/ui/autofill/AutofillType;)Ljava/lang/String;
+    invoke-static {v11}, Landroidx/compose/ui/autofill/AndroidAutofillType_androidKt;->getAndroidType(Landroidx/compose/ui/autofill/AutofillType;)Ljava/lang/String;
 
-    move-result-object v12
+    move-result-object v11
 
-    .line 238
-    invoke-interface {v13, v12}, Ljava/util/Collection;->add(Ljava/lang/Object;)Z
+    .line 239
+    invoke-interface {v12, v11}, Ljava/util/Collection;->add(Ljava/lang/Object;)Z
 
-    add-int/lit8 v11, v11, 0x1
+    add-int/lit8 v10, v10, 0x1
 
     goto :goto_1
 
-    .line 241
+    .line 242
     :cond_0
-    check-cast v8, Ljava/util/List;
+    check-cast v7, Ljava/util/List;
 
-    check-cast v8, Ljava/util/Collection;
+    check-cast v7, Ljava/util/Collection;
 
-    .line 243
-    new-array v7, v10, [Ljava/lang/String;
+    .line 244
+    new-array v6, v9, [Ljava/lang/String;
 
-    invoke-interface {v8, v7}, Ljava/util/Collection;->toArray([Ljava/lang/Object;)[Ljava/lang/Object;
+    invoke-interface {v7, v6}, Ljava/util/Collection;->toArray([Ljava/lang/Object;)[Ljava/lang/Object;
 
-    move-result-object v7
+    move-result-object v6
 
-    check-cast v7, [Ljava/lang/String;
+    check-cast v6, [Ljava/lang/String;
 
     .line 94
-    invoke-virtual {v6, v5, v7}, Landroidx/compose/ui/autofill/AutofillApi26Helper;->setAutofillHints(Landroid/view/ViewStructure;[Ljava/lang/String;)V
+    invoke-virtual {v5, v4, v6}, Landroidx/compose/ui/autofill/AutofillApi26Helper;->setAutofillHints(Landroid/view/ViewStructure;[Ljava/lang/String;)V
 
     .line 99
-    invoke-virtual {v4}, Landroidx/compose/ui/autofill/AutofillNode;->getBoundingBox()Landroidx/compose/ui/geometry/Rect;
+    invoke-virtual {v3}, Landroidx/compose/ui/autofill/AutofillNode;->getBoundingBox()Landroidx/compose/ui/geometry/Rect;
 
-    move-result-object v4
+    move-result-object v3
 
-    if-nez v4, :cond_1
+    if-nez v3, :cond_1
 
     .line 104
-    const-string v4, "Autofill Warning"
+    const-string v3, "Autofill Warning"
 
     .line 105
-    const-string v5, "Bounding box not set.\n                        Did you call perform autofillTree before the component was positioned? "
+    const-string v4, "Bounding box not set.\n                        Did you call perform autofillTree before the component was positioned? "
 
     .line 103
-    invoke-static {v4, v5}, Landroid/util/Log;->w(Ljava/lang/String;Ljava/lang/String;)I
+    invoke-static {v3, v4}, Landroid/util/Log;->w(Ljava/lang/String;Ljava/lang/String;)I
 
     goto :goto_2
 
     .line 109
     :cond_1
-    invoke-virtual {v4}, Landroidx/compose/ui/geometry/Rect;->getLeft()F
+    invoke-virtual {v3}, Landroidx/compose/ui/geometry/Rect;->getLeft()F
 
-    move-result v6
+    move-result v5
 
-    invoke-static {v6}, Lkotlin/math/MathKt;->roundToInt(F)I
+    invoke-static {v5}, Lkotlin/math/MathKt;->roundToInt(F)I
+
+    move-result v10
+
+    .line 110
+    invoke-virtual {v3}, Landroidx/compose/ui/geometry/Rect;->getTop()F
+
+    move-result v5
+
+    invoke-static {v5}, Lkotlin/math/MathKt;->roundToInt(F)I
 
     move-result v11
 
-    .line 110
-    invoke-virtual {v4}, Landroidx/compose/ui/geometry/Rect;->getTop()F
-
-    move-result v6
-
-    invoke-static {v6}, Lkotlin/math/MathKt;->roundToInt(F)I
-
-    move-result v12
-
     .line 111
-    invoke-virtual {v4}, Landroidx/compose/ui/geometry/Rect;->getRight()F
+    invoke-virtual {v3}, Landroidx/compose/ui/geometry/Rect;->getRight()F
 
-    move-result v6
+    move-result v5
 
-    invoke-static {v6}, Lkotlin/math/MathKt;->roundToInt(F)I
+    invoke-static {v5}, Lkotlin/math/MathKt;->roundToInt(F)I
 
-    move-result v6
+    move-result v5
 
     .line 112
-    invoke-virtual {v4}, Landroidx/compose/ui/geometry/Rect;->getBottom()F
+    invoke-virtual {v3}, Landroidx/compose/ui/geometry/Rect;->getBottom()F
 
-    move-result v4
+    move-result v3
 
-    invoke-static {v4}, Lkotlin/math/MathKt;->roundToInt(F)I
+    invoke-static {v3}, Lkotlin/math/MathKt;->roundToInt(F)I
 
-    move-result v4
+    move-result v3
 
-    sub-int v15, v6, v11
+    sub-int v14, v5, v10
 
-    sub-int v16, v4, v12
+    sub-int v15, v3, v11
 
     .line 115
-    sget-object v9, Landroidx/compose/ui/autofill/AutofillApi23Helper;->INSTANCE:Landroidx/compose/ui/autofill/AutofillApi23Helper;
+    sget-object v8, Landroidx/compose/ui/autofill/AutofillApi23Helper;->INSTANCE:Landroidx/compose/ui/autofill/AutofillApi23Helper;
+
+    const/4 v12, 0x0
 
     const/4 v13, 0x0
 
-    const/4 v14, 0x0
+    move-object v9, v4
 
-    move-object v10, v5
-
-    invoke-virtual/range {v9 .. v16}, Landroidx/compose/ui/autofill/AutofillApi23Helper;->setDimens(Landroid/view/ViewStructure;IIIIII)V
+    invoke-virtual/range {v8 .. v15}, Landroidx/compose/ui/autofill/AutofillApi23Helper;->setDimens(Landroid/view/ViewStructure;IIIIII)V
 
     :cond_2
     :goto_2

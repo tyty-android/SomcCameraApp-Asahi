@@ -37,10 +37,6 @@
 .method public static final getLayoutCoordinates(Landroidx/compose/ui/node/PointerInputModifierNode;)Landroidx/compose/ui/layout/LayoutCoordinates;
     .locals 1
 
-    const-string v0, "<this>"
-
-    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
     .line 126
     check-cast p0, Landroidx/compose/ui/node/DelegatableNode;
 
@@ -62,11 +58,7 @@
 .end method
 
 .method public static final isAttached(Landroidx/compose/ui/node/PointerInputModifierNode;)Z
-    .locals 1
-
-    const-string v0, "<this>"
-
-    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+    .locals 0
 
     .line 123
     invoke-interface {p0}, Landroidx/compose/ui/node/PointerInputModifierNode;->getNode()Landroidx/compose/ui/Modifier$Node;

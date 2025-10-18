@@ -139,15 +139,15 @@
     move-result-object v0
 
     .line 62
-    new-array v5, v13, [Ljava/lang/Object;
+    aget v5, p2, v14
 
-    aget v7, p2, v14
+    invoke-static {v5}, Ljava/lang/Float;->valueOf(F)Ljava/lang/Float;
 
-    invoke-static {v7}, Ljava/lang/Float;->valueOf(F)Ljava/lang/Float;
+    move-result-object v5
 
-    move-result-object v7
+    filled-new-array {v5}, [Ljava/lang/Object;
 
-    aput-object v7, v5, v14
+    move-result-object v5
 
     invoke-virtual {v0, v1, v5}, Ljava/lang/reflect/Method;->invoke(Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -166,15 +166,13 @@
     move-result-object v0
 
     .line 58
-    new-array v5, v13, [Ljava/lang/Object;
+    aget v5, p2, v14
 
-    aget v7, p2, v14
+    const/high16 v7, 0x3f000000    # 0.5f
 
-    const/high16 v8, 0x3f000000    # 0.5f
+    cmpl-float v5, v5, v7
 
-    cmpl-float v7, v7, v8
-
-    if-lez v7, :cond_0
+    if-lez v5, :cond_0
 
     goto :goto_0
 
@@ -184,9 +182,11 @@
     :goto_0
     invoke-static {v13}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
-    move-result-object v7
+    move-result-object v5
 
-    aput-object v7, v5, v14
+    filled-new-array {v5}, [Ljava/lang/Object;
+
+    move-result-object v5
 
     invoke-virtual {v0, v1, v5}, Ljava/lang/reflect/Method;->invoke(Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -248,28 +248,26 @@
     move-result v5
 
     .line 47
-    aget v14, p2, v13
+    aget v7, p2, v13
 
-    float-to-double v14, v14
+    float-to-double v13, v7
 
-    invoke-static {v14, v15, v10, v11}, Ljava/lang/Math;->pow(DD)D
+    invoke-static {v13, v14, v10, v11}, Ljava/lang/Math;->pow(DD)D
 
-    move-result-wide v14
+    move-result-wide v13
 
-    double-to-float v14, v14
+    double-to-float v7, v13
 
-    mul-float/2addr v14, v12
+    mul-float/2addr v7, v12
 
-    float-to-int v14, v14
+    float-to-int v7, v7
 
-    invoke-static {v14}, Landroidx/constraintlayout/motion/utils/CustomSupport;->clamp(I)I
+    invoke-static {v7}, Landroidx/constraintlayout/motion/utils/CustomSupport;->clamp(I)I
 
-    move-result v14
+    move-result v7
 
     .line 48
     aget v9, p2, v9
-
-    move/from16 p0, v14
 
     float-to-double v13, v9
 
@@ -304,55 +302,47 @@
 
     or-int/2addr v5, v8
 
-    shl-int/lit8 v8, p0, 0x8
+    shl-int/lit8 v7, v7, 0x8
 
-    or-int/2addr v5, v8
+    or-int/2addr v5, v7
 
     or-int/2addr v5, v9
 
-    const/4 v8, 0x1
-
     .line 51
-    new-array v8, v8, [Ljava/lang/Object;
-
     invoke-static {v5}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object v5
 
-    const/4 v7, 0x0
+    filled-new-array {v5}, [Ljava/lang/Object;
 
-    aput-object v5, v8, v7
+    move-result-object v5
 
-    invoke-virtual {v0, v1, v8}, Ljava/lang/reflect/Method;->invoke(Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v0, v1, v5}, Ljava/lang/reflect/Method;->invoke(Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;
 
     goto/16 :goto_1
 
-    :pswitch_4
-    move v0, v13
-
     .line 33
-    new-array v13, v0, [Ljava/lang/Class;
+    :pswitch_4
+    new-array v0, v13, [Ljava/lang/Class;
 
-    const-class v0, Landroid/graphics/drawable/Drawable;
+    const-class v7, Landroid/graphics/drawable/Drawable;
 
-    const/4 v7, 0x0
+    aput-object v7, v0, v14
 
-    aput-object v0, v13, v7
-
-    invoke-virtual {v5, v6, v13}, Ljava/lang/Class;->getMethod(Ljava/lang/String;[Ljava/lang/Class;)Ljava/lang/reflect/Method;
+    invoke-virtual {v5, v6, v0}, Ljava/lang/Class;->getMethod(Ljava/lang/String;[Ljava/lang/Class;)Ljava/lang/reflect/Method;
 
     move-result-object v0
 
     .line 34
-    aget v5, p2, v7
+    aget v5, p2, v14
 
-    float-to-double v13, v5
+    float-to-double v14, v5
 
-    invoke-static {v13, v14, v10, v11}, Ljava/lang/Math;->pow(DD)D
+    invoke-static {v14, v15, v10, v11}, Ljava/lang/Math;->pow(DD)D
 
-    move-result-wide v13
+    move-result-wide v14
 
-    double-to-float v5, v13
+    double-to-float v5, v14
 
     mul-float/2addr v5, v12
 
@@ -362,10 +352,8 @@
 
     move-result v5
 
-    const/4 v7, 0x1
-
     .line 35
-    aget v7, p2, v7
+    aget v7, p2, v13
 
     float-to-double v13, v7
 
@@ -442,67 +430,59 @@
 
     goto/16 :goto_1
 
-    :pswitch_5
-    move v0, v13
-
     .line 29
-    new-array v8, v0, [Ljava/lang/Class;
+    :pswitch_5
+    new-array v0, v13, [Ljava/lang/Class;
 
-    sget-object v9, Ljava/lang/Float;->TYPE:Ljava/lang/Class;
+    sget-object v7, Ljava/lang/Float;->TYPE:Ljava/lang/Class;
 
-    const/4 v7, 0x0
+    aput-object v7, v0, v14
 
-    aput-object v9, v8, v7
+    invoke-virtual {v5, v6, v0}, Ljava/lang/Class;->getMethod(Ljava/lang/String;[Ljava/lang/Class;)Ljava/lang/reflect/Method;
 
-    invoke-virtual {v5, v6, v8}, Ljava/lang/Class;->getMethod(Ljava/lang/String;[Ljava/lang/Class;)Ljava/lang/reflect/Method;
+    move-result-object v0
+
+    .line 30
+    aget v5, p2, v14
+
+    invoke-static {v5}, Ljava/lang/Float;->valueOf(F)Ljava/lang/Float;
 
     move-result-object v5
 
-    .line 30
-    new-array v0, v0, [Ljava/lang/Object;
+    filled-new-array {v5}, [Ljava/lang/Object;
 
-    aget v8, p2, v7
+    move-result-object v5
 
-    invoke-static {v8}, Ljava/lang/Float;->valueOf(F)Ljava/lang/Float;
-
-    move-result-object v8
-
-    aput-object v8, v0, v7
-
-    invoke-virtual {v5, v1, v0}, Ljava/lang/reflect/Method;->invoke(Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v0, v1, v5}, Ljava/lang/reflect/Method;->invoke(Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;
 
     goto :goto_1
 
-    :pswitch_6
-    move v0, v13
-
     .line 25
-    new-array v8, v0, [Ljava/lang/Class;
+    :pswitch_6
+    new-array v0, v13, [Ljava/lang/Class;
 
-    sget-object v9, Ljava/lang/Integer;->TYPE:Ljava/lang/Class;
+    sget-object v7, Ljava/lang/Integer;->TYPE:Ljava/lang/Class;
 
-    const/4 v7, 0x0
+    aput-object v7, v0, v14
 
-    aput-object v9, v8, v7
+    invoke-virtual {v5, v6, v0}, Ljava/lang/Class;->getMethod(Ljava/lang/String;[Ljava/lang/Class;)Ljava/lang/reflect/Method;
 
-    invoke-virtual {v5, v6, v8}, Ljava/lang/Class;->getMethod(Ljava/lang/String;[Ljava/lang/Class;)Ljava/lang/reflect/Method;
+    move-result-object v0
+
+    .line 26
+    aget v5, p2, v14
+
+    float-to-int v5, v5
+
+    invoke-static {v5}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object v5
 
-    .line 26
-    new-array v0, v0, [Ljava/lang/Object;
+    filled-new-array {v5}, [Ljava/lang/Object;
 
-    aget v8, p2, v7
+    move-result-object v5
 
-    float-to-int v8, v8
-
-    invoke-static {v8}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
-
-    move-result-object v8
-
-    aput-object v8, v0, v7
-
-    invoke-virtual {v5, v1, v0}, Ljava/lang/reflect/Method;->invoke(Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v0, v1, v5}, Ljava/lang/reflect/Method;->invoke(Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;
     :try_end_0
     .catch Ljava/lang/NoSuchMethodException; {:try_start_0 .. :try_end_0} :catch_2
     .catch Ljava/lang/IllegalAccessException; {:try_start_0 .. :try_end_0} :catch_1
@@ -600,6 +580,8 @@
 
     :goto_1
     return-void
+
+    nop
 
     :pswitch_data_0
     .packed-switch 0x1

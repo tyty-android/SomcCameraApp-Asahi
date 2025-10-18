@@ -19,5 +19,4 @@ Vklopite omrežje WLAN v NASTAVITVAH."</string>
     <string name="camera_strings_runtime_permission_rationale_network_cta_txt">"Ta aplikacija za pošiljanje uporabniških podatkov (na primer posnetih slik/videoposnetkov, glasovnih podatkov, podatkov o računu uporabljenih storitev ipd.) v internet uporablja omrežje WLAN in prenos podatkov prek mobilnega omrežja.
 Zavedajte se, da vam lahko omrežni operater ali ponudnik internetnih storitev zaračuna prenos podatkov v skladu z vašo pogodbo z njimi."</string>
     <string name="camera_strings_streaming_error_wifi_disconnected_txt">Ni povezave z omr. WLAN</string>
-    <string name="mv_wireless_network_txt">Uporabiti WLAN in mob. pod.</string>
 </resources>

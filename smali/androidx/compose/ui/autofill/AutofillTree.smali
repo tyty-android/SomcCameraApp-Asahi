@@ -101,11 +101,7 @@
 .end method
 
 .method public final performAutofill(ILjava/lang/String;)Lkotlin/Unit;
-    .locals 1
-
-    const-string/jumbo v0, "value"
-
-    invoke-static {p2, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+    .locals 0
 
     .line 50
     iget-object p0, p0, Landroidx/compose/ui/autofill/AutofillTree;->children:Ljava/util/Map;
@@ -143,10 +139,6 @@
 
 .method public final plusAssign(Landroidx/compose/ui/autofill/AutofillNode;)V
     .locals 1
-
-    const-string v0, "autofillNode"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 43
     iget-object p0, p0, Landroidx/compose/ui/autofill/AutofillTree;->children:Ljava/util/Map;

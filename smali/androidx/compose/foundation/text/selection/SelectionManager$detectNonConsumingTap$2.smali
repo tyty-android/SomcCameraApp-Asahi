@@ -53,7 +53,7 @@
     f = "SelectionManager.kt"
     i = {}
     l = {
-        0x273
+        0x298
     }
     m = "invokeSuspend"
     n = {}
@@ -184,7 +184,7 @@
 
     move-result-object v0
 
-    .line 626
+    .line 663
     iget v1, p0, Landroidx/compose/foundation/text/selection/SelectionManager$detectNonConsumingTap$2;->label:I
 
     const/4 v2, 0x1
@@ -213,7 +213,7 @@
 
     check-cast p1, Landroidx/compose/ui/input/pointer/AwaitPointerEventScope;
 
-    .line 627
+    .line 664
     move-object v1, p0
 
     check-cast v1, Lkotlin/coroutines/Continuation;
@@ -238,7 +238,7 @@
 
     iget-object p0, p0, Landroidx/compose/foundation/text/selection/SelectionManager$detectNonConsumingTap$2;->$onTap:Lkotlin/jvm/functions/Function1;
 
-    .line 628
+    .line 665
     invoke-virtual {p1}, Landroidx/compose/ui/input/pointer/PointerInputChange;->getPosition-F1C5BW0()J
 
     move-result-wide v0
@@ -249,7 +249,7 @@
 
     invoke-interface {p0, p1}, Lkotlin/jvm/functions/Function1;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 630
+    .line 667
     :cond_3
     sget-object p0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
 

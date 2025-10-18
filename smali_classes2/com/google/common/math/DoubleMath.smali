@@ -332,7 +332,7 @@
 .end method
 
 .method public static log2(DLjava/math/RoundingMode;)I
-    .locals 4
+    .locals 5
 
     const-wide/16 v0, 0x0
 
@@ -415,13 +415,15 @@
 
     mul-double/2addr p0, p0
 
-    const-wide/high16 v1, 0x4000000000000000L    # 2.0
+    const-wide/high16 v3, 0x4000000000000000L    # 2.0
 
-    cmpl-double p0, p0, v1
+    cmpl-double p0, p0, v3
 
     if-lez p0, :cond_4
 
-    goto :goto_3
+    move v1, v2
+
+    goto :goto_2
 
     :pswitch_1
     if-ltz v0, :cond_2
@@ -450,7 +452,7 @@
     :goto_1
     xor-int/2addr p0, v2
 
-    and-int/2addr p0, v1
+    and-int/2addr v1, p0
 
     goto :goto_2
 
@@ -460,15 +462,9 @@
 
     move-result p0
 
-    xor-int/2addr p0, v2
+    xor-int/lit8 v1, p0, 0x1
 
-    :goto_2
-    if-eqz p0, :cond_4
-
-    :goto_3
-    add-int/lit8 v0, v0, 0x1
-
-    goto :goto_4
+    goto :goto_2
 
     .line 249
     :pswitch_4
@@ -479,8 +475,13 @@
     invoke-static {p0}, Lcom/google/common/math/MathPreconditions;->checkRoundingUnnecessary(Z)V
 
     :cond_4
-    :goto_4
+    :goto_2
     :pswitch_5
+    if-eqz v1, :cond_5
+
+    add-int/lit8 v0, v0, 0x1
+
+    :cond_5
     return v0
 
     nop

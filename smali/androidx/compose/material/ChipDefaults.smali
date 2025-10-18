@@ -5,12 +5,12 @@
 
 # annotations
 .annotation system Ldalvik/annotation/SourceDebugExtension;
-    value = "SMAP\nChip.kt\nKotlin\n*S Kotlin\n*F\n+ 1 Chip.kt\nandroidx/compose/material/ChipDefaults\n+ 2 Dp.kt\nandroidx/compose/ui/unit/DpKt\n*L\n1#1,753:1\n154#2:754\n154#2:755\n154#2:756\n154#2:757\n*S KotlinDebug\n*F\n+ 1 Chip.kt\nandroidx/compose/material/ChipDefaults\n*L\n370#1:754\n565#1:755\n570#1:756\n575#1:757\n*E\n"
+    value = "SMAP\nChip.kt\nKotlin\n*S Kotlin\n*F\n+ 1 Chip.kt\nandroidx/compose/material/ChipDefaults\n+ 2 Dp.kt\nandroidx/compose/ui/unit/DpKt\n*L\n1#1,761:1\n154#2:762\n154#2:763\n154#2:764\n154#2:765\n*S KotlinDebug\n*F\n+ 1 Chip.kt\nandroidx/compose/material/ChipDefaults\n*L\n377#1:762\n572#1:763\n577#1:764\n582#1:765\n*E\n"
 .end annotation
 
 .annotation runtime Lkotlin/Metadata;
     d1 = {
-        "\u0000:\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\u0008\u0002\n\u0002\u0010\u0007\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u000b\n\u0002\u0018\u0002\n\u0002\u0008\u0003\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0008\n\u0002\u0018\u0002\n\u0002\u0008\u000c\u0008\u00c7\u0002\u0018\u00002\u00020\u0001B\u0007\u0008\u0002\u00a2\u0006\u0002\u0010\u0002JQ\u0010\u0016\u001a\u00020\u00172\u0008\u0008\u0002\u0010\u0018\u001a\u00020\u00192\u0008\u0008\u0002\u0010\u001a\u001a\u00020\u00192\u0008\u0008\u0002\u0010\u001b\u001a\u00020\u00192\u0008\u0008\u0002\u0010\u001c\u001a\u00020\u00192\u0008\u0008\u0002\u0010\u001d\u001a\u00020\u00192\u0008\u0008\u0002\u0010\u001e\u001a\u00020\u0019H\u0007\u00f8\u0001\u0001\u00f8\u0001\u0000\u00a2\u0006\u0004\u0008\u001f\u0010 Jo\u0010!\u001a\u00020\"2\u0008\u0008\u0002\u0010\u0018\u001a\u00020\u00192\u0008\u0008\u0002\u0010\u001a\u001a\u00020\u00192\u0008\u0008\u0002\u0010#\u001a\u00020\u00192\u0008\u0008\u0002\u0010\u001c\u001a\u00020\u00192\u0008\u0008\u0002\u0010\u001d\u001a\u00020\u00192\u0008\u0008\u0002\u0010$\u001a\u00020\u00192\u0008\u0008\u0002\u0010%\u001a\u00020\u00192\u0008\u0008\u0002\u0010&\u001a\u00020\u00192\u0008\u0008\u0002\u0010\'\u001a\u00020\u0019H\u0007\u00f8\u0001\u0001\u00f8\u0001\u0000\u00a2\u0006\u0004\u0008(\u0010)JQ\u0010*\u001a\u00020\u00172\u0008\u0008\u0002\u0010\u0018\u001a\u00020\u00192\u0008\u0008\u0002\u0010\u001a\u001a\u00020\u00192\u0008\u0008\u0002\u0010\u001b\u001a\u00020\u00192\u0008\u0008\u0002\u0010\u001c\u001a\u00020\u00192\u0008\u0008\u0002\u0010\u001d\u001a\u00020\u00192\u0008\u0008\u0002\u0010\u001e\u001a\u00020\u0019H\u0007\u00f8\u0001\u0001\u00f8\u0001\u0000\u00a2\u0006\u0004\u0008+\u0010 Jo\u0010,\u001a\u00020\"2\u0008\u0008\u0002\u0010\u0018\u001a\u00020\u00192\u0008\u0008\u0002\u0010\u001a\u001a\u00020\u00192\u0008\u0008\u0002\u0010#\u001a\u00020\u00192\u0008\u0008\u0002\u0010\u001c\u001a\u00020\u00192\u0008\u0008\u0002\u0010\u001d\u001a\u00020\u00192\u0008\u0008\u0002\u0010$\u001a\u00020\u00192\u0008\u0008\u0002\u0010%\u001a\u00020\u00192\u0008\u0008\u0002\u0010&\u001a\u00020\u00192\u0008\u0008\u0002\u0010\'\u001a\u00020\u0019H\u0007\u00f8\u0001\u0001\u00f8\u0001\u0000\u00a2\u0006\u0004\u0008-\u0010)R\u000e\u0010\u0003\u001a\u00020\u0004X\u0086T\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u0005\u001a\u00020\u0004X\u0086T\u00a2\u0006\u0002\n\u0000R\u001c\u0010\u0006\u001a\u00020\u0007\u00f8\u0001\u0000\u00f8\u0001\u0001\u00f8\u0001\u0002\u00a2\u0006\n\n\u0002\u0010\n\u001a\u0004\u0008\u0008\u0010\tR\u001c\u0010\u000b\u001a\u00020\u0007\u00f8\u0001\u0000\u00f8\u0001\u0001\u00f8\u0001\u0002\u00a2\u0006\n\n\u0002\u0010\n\u001a\u0004\u0008\u000c\u0010\tR\u000e\u0010\r\u001a\u00020\u0004X\u0086T\u00a2\u0006\u0002\n\u0000R\u001c\u0010\u000e\u001a\u00020\u0007\u00f8\u0001\u0000\u00f8\u0001\u0001\u00f8\u0001\u0002\u00a2\u0006\n\n\u0002\u0010\n\u001a\u0004\u0008\u000f\u0010\tR\u001c\u0010\u0010\u001a\u00020\u0007\u00f8\u0001\u0000\u00f8\u0001\u0001\u00f8\u0001\u0002\u00a2\u0006\n\n\u0002\u0010\n\u001a\u0004\u0008\u0011\u0010\tR\u0011\u0010\u0012\u001a\u00020\u00138G\u00a2\u0006\u0006\u001a\u0004\u0008\u0014\u0010\u0015\u0082\u0002\u000f\n\u0002\u0008\u0019\n\u0005\u0008\u00a1\u001e0\u0001\n\u0002\u0008!\u00a8\u0006."
+        "\u0000:\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\u0008\u0002\n\u0002\u0010\u0007\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u000b\n\u0002\u0018\u0002\n\u0002\u0008\u0003\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0008\n\u0002\u0018\u0002\n\u0002\u0008\u000c\u0008\u00c7\u0002\u0018\u00002\u00020\u0001B\u0007\u0008\u0002\u00a2\u0006\u0002\u0010\u0002JN\u0010\u0016\u001a\u00020\u00172\u0008\u0008\u0002\u0010\u0018\u001a\u00020\u00192\u0008\u0008\u0002\u0010\u001a\u001a\u00020\u00192\u0008\u0008\u0002\u0010\u001b\u001a\u00020\u00192\u0008\u0008\u0002\u0010\u001c\u001a\u00020\u00192\u0008\u0008\u0002\u0010\u001d\u001a\u00020\u00192\u0008\u0008\u0002\u0010\u001e\u001a\u00020\u0019H\u0007\u00f8\u0001\u0000\u00a2\u0006\u0004\u0008\u001f\u0010 Jl\u0010!\u001a\u00020\"2\u0008\u0008\u0002\u0010\u0018\u001a\u00020\u00192\u0008\u0008\u0002\u0010\u001a\u001a\u00020\u00192\u0008\u0008\u0002\u0010#\u001a\u00020\u00192\u0008\u0008\u0002\u0010\u001c\u001a\u00020\u00192\u0008\u0008\u0002\u0010\u001d\u001a\u00020\u00192\u0008\u0008\u0002\u0010$\u001a\u00020\u00192\u0008\u0008\u0002\u0010%\u001a\u00020\u00192\u0008\u0008\u0002\u0010&\u001a\u00020\u00192\u0008\u0008\u0002\u0010\'\u001a\u00020\u0019H\u0007\u00f8\u0001\u0000\u00a2\u0006\u0004\u0008(\u0010)JN\u0010*\u001a\u00020\u00172\u0008\u0008\u0002\u0010\u0018\u001a\u00020\u00192\u0008\u0008\u0002\u0010\u001a\u001a\u00020\u00192\u0008\u0008\u0002\u0010\u001b\u001a\u00020\u00192\u0008\u0008\u0002\u0010\u001c\u001a\u00020\u00192\u0008\u0008\u0002\u0010\u001d\u001a\u00020\u00192\u0008\u0008\u0002\u0010\u001e\u001a\u00020\u0019H\u0007\u00f8\u0001\u0000\u00a2\u0006\u0004\u0008+\u0010 Jl\u0010,\u001a\u00020\"2\u0008\u0008\u0002\u0010\u0018\u001a\u00020\u00192\u0008\u0008\u0002\u0010\u001a\u001a\u00020\u00192\u0008\u0008\u0002\u0010#\u001a\u00020\u00192\u0008\u0008\u0002\u0010\u001c\u001a\u00020\u00192\u0008\u0008\u0002\u0010\u001d\u001a\u00020\u00192\u0008\u0008\u0002\u0010$\u001a\u00020\u00192\u0008\u0008\u0002\u0010%\u001a\u00020\u00192\u0008\u0008\u0002\u0010&\u001a\u00020\u00192\u0008\u0008\u0002\u0010\'\u001a\u00020\u0019H\u0007\u00f8\u0001\u0000\u00a2\u0006\u0004\u0008-\u0010)R\u000e\u0010\u0003\u001a\u00020\u0004X\u0086T\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u0005\u001a\u00020\u0004X\u0086T\u00a2\u0006\u0002\n\u0000R\u0019\u0010\u0006\u001a\u00020\u0007\u00f8\u0001\u0000\u00f8\u0001\u0001\u00a2\u0006\n\n\u0002\u0010\n\u001a\u0004\u0008\u0008\u0010\tR\u0019\u0010\u000b\u001a\u00020\u0007\u00f8\u0001\u0000\u00f8\u0001\u0001\u00a2\u0006\n\n\u0002\u0010\n\u001a\u0004\u0008\u000c\u0010\tR\u000e\u0010\r\u001a\u00020\u0004X\u0086T\u00a2\u0006\u0002\n\u0000R\u0019\u0010\u000e\u001a\u00020\u0007\u00f8\u0001\u0000\u00f8\u0001\u0001\u00a2\u0006\n\n\u0002\u0010\n\u001a\u0004\u0008\u000f\u0010\tR\u0019\u0010\u0010\u001a\u00020\u0007\u00f8\u0001\u0000\u00f8\u0001\u0001\u00a2\u0006\n\n\u0002\u0010\n\u001a\u0004\u0008\u0011\u0010\tR\u0011\u0010\u0012\u001a\u00020\u00138G\u00a2\u0006\u0006\u001a\u0004\u0008\u0014\u0010\u0015\u0082\u0002\u000b\n\u0005\u0008\u00a1\u001e0\u0001\n\u0002\u0008!\u00a8\u0006."
     }
     d2 = {
         "Landroidx/compose/material/ChipDefaults;",
@@ -105,48 +105,48 @@
 
     int-to-float v0, v0
 
-    .line 754
+    .line 762
     invoke-static {v0}, Landroidx/compose/ui/unit/Dp;->constructor-impl(F)F
 
     move-result v0
 
-    .line 370
+    .line 377
     sput v0, Landroidx/compose/material/ChipDefaults;->MinHeight:F
 
     const/4 v0, 0x1
 
     int-to-float v0, v0
 
-    .line 755
+    .line 763
     invoke-static {v0}, Landroidx/compose/ui/unit/Dp;->constructor-impl(F)F
 
     move-result v0
 
-    .line 565
+    .line 572
     sput v0, Landroidx/compose/material/ChipDefaults;->OutlinedBorderSize:F
 
     const/16 v0, 0x14
 
     int-to-float v0, v0
 
-    .line 756
+    .line 764
     invoke-static {v0}, Landroidx/compose/ui/unit/Dp;->constructor-impl(F)F
 
     move-result v0
 
-    .line 570
+    .line 577
     sput v0, Landroidx/compose/material/ChipDefaults;->LeadingIconSize:F
 
     const/16 v0, 0x12
 
     int-to-float v0, v0
 
-    .line 757
+    .line 765
     invoke-static {v0}, Landroidx/compose/ui/unit/Dp;->constructor-impl(F)F
 
     move-result v0
 
-    .line 575
+    .line 582
     sput v0, Landroidx/compose/material/ChipDefaults;->SelectedIconSize:F
 
     return-void
@@ -155,7 +155,7 @@
 .method private constructor <init>()V
     .locals 0
 
-    .line 364
+    .line 371
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -172,7 +172,7 @@
 
     invoke-interface {v0, v1}, Landroidx/compose/runtime/Composer;->startReplaceableGroup(I)V
 
-    const-string v2, "C(chipColors)P(0:c#ui.graphics.Color,1:c#ui.graphics.Color,5:c#ui.graphics.Color,2:c#ui.graphics.Color,3:c#ui.graphics.Color,4:c#ui.graphics.Color)385@16874L6,386@16968L6,387@17029L6,390@17231L6,391@17291L8,392@17366L6,394@17473L8,397@17621L8:Chip.kt#jmzs0o"
+    const-string v2, "C(chipColors)P(0:c#ui.graphics.Color,1:c#ui.graphics.Color,5:c#ui.graphics.Color,2:c#ui.graphics.Color,3:c#ui.graphics.Color,4:c#ui.graphics.Color)392@17235L6,393@17329L6,394@17390L6,397@17592L6,398@17652L8,399@17727L6,401@17834L8,404@17982L8:Chip.kt#jmzs0o"
 
     invoke-static {v0, v2}, Landroidx/compose/runtime/ComposerKt;->sourceInformation(Landroidx/compose/runtime/Composer;Ljava/lang/String;)V
 
@@ -182,7 +182,7 @@
 
     if-eqz v2, :cond_0
 
-    .line 386
+    .line 393
     sget-object v2, Landroidx/compose/material/MaterialTheme;->INSTANCE:Landroidx/compose/material/MaterialTheme;
 
     invoke-virtual {v2, v0, v3}, Landroidx/compose/material/MaterialTheme;->getColors(Landroidx/compose/runtime/Composer;I)Landroidx/compose/material/Colors;
@@ -209,7 +209,7 @@
 
     move-result-wide v4
 
-    .line 387
+    .line 394
     sget-object v2, Landroidx/compose/material/MaterialTheme;->INSTANCE:Landroidx/compose/material/MaterialTheme;
 
     invoke-virtual {v2, v0, v3}, Landroidx/compose/material/MaterialTheme;->getColors(Landroidx/compose/runtime/Composer;I)Landroidx/compose/material/Colors;
@@ -236,7 +236,7 @@
 
     if-eqz v2, :cond_1
 
-    .line 388
+    .line 395
     sget-object v2, Landroidx/compose/material/MaterialTheme;->INSTANCE:Landroidx/compose/material/MaterialTheme;
 
     invoke-virtual {v2, v0, v3}, Landroidx/compose/material/MaterialTheme;->getColors(Landroidx/compose/runtime/Composer;I)Landroidx/compose/material/Colors;
@@ -287,7 +287,7 @@
 
     move-wide v9, v4
 
-    .line 389
+    .line 396
     invoke-static/range {v9 .. v16}, Landroidx/compose/ui/graphics/Color;->copy-wmQWz5c$default(JFFFFILjava/lang/Object;)J
 
     move-result-wide v9
@@ -304,7 +304,7 @@
 
     if-eqz v2, :cond_3
 
-    .line 391
+    .line 398
     sget-object v2, Landroidx/compose/material/MaterialTheme;->INSTANCE:Landroidx/compose/material/MaterialTheme;
 
     invoke-virtual {v2, v0, v3}, Landroidx/compose/material/MaterialTheme;->getColors(Landroidx/compose/runtime/Composer;I)Landroidx/compose/material/Colors;
@@ -315,7 +315,7 @@
 
     move-result-wide v9
 
-    .line 392
+    .line 399
     sget-object v2, Landroidx/compose/material/ContentAlpha;->INSTANCE:Landroidx/compose/material/ContentAlpha;
 
     invoke-virtual {v2, v0, v3}, Landroidx/compose/material/ContentAlpha;->getDisabled(Landroidx/compose/runtime/Composer;I)F
@@ -350,12 +350,12 @@
 
     move-object/from16 p7, v13
 
-    .line 391
+    .line 398
     invoke-static/range {p0 .. p7}, Landroidx/compose/ui/graphics/Color;->copy-wmQWz5c$default(JFFFFILjava/lang/Object;)J
 
     move-result-wide v9
 
-    .line 393
+    .line 400
     sget-object v2, Landroidx/compose/material/MaterialTheme;->INSTANCE:Landroidx/compose/material/MaterialTheme;
 
     invoke-virtual {v2, v0, v3}, Landroidx/compose/material/MaterialTheme;->getColors(Landroidx/compose/runtime/Composer;I)Landroidx/compose/material/Colors;
@@ -382,7 +382,7 @@
 
     if-eqz v2, :cond_4
 
-    .line 395
+    .line 402
     sget-object v2, Landroidx/compose/material/ContentAlpha;->INSTANCE:Landroidx/compose/material/ContentAlpha;
 
     invoke-virtual {v2, v0, v3}, Landroidx/compose/material/ContentAlpha;->getDisabled(Landroidx/compose/runtime/Composer;I)F
@@ -417,7 +417,7 @@
 
     move-object/from16 p7, v9
 
-    .line 394
+    .line 401
     invoke-static/range {p0 .. p7}, Landroidx/compose/ui/graphics/Color;->copy-wmQWz5c$default(JFFFFILjava/lang/Object;)J
 
     move-result-wide v9
@@ -434,7 +434,7 @@
 
     if-eqz v2, :cond_5
 
-    .line 398
+    .line 405
     sget-object v2, Landroidx/compose/material/ContentAlpha;->INSTANCE:Landroidx/compose/material/ContentAlpha;
 
     invoke-virtual {v2, v0, v3}, Landroidx/compose/material/ContentAlpha;->getDisabled(Landroidx/compose/runtime/Composer;I)F
@@ -489,11 +489,11 @@
 
     const/4 v2, -0x1
 
-    const-string v3, "androidx.compose.material.ChipDefaults.chipColors (Chip.kt:384)"
+    const-string v3, "androidx.compose.material.ChipDefaults.chipColors (Chip.kt:405)"
 
     move/from16 v6, p14
 
-    .line 399
+    .line 406
     invoke-static {v1, v6, v2, v3}, Landroidx/compose/runtime/ComposerKt;->traceEventStart(IIILjava/lang/String;)V
 
     :cond_6
@@ -534,7 +534,7 @@
 
     invoke-interface {v0, v2}, Landroidx/compose/runtime/Composer;->startReplaceableGroup(I)V
 
-    const-string v3, "C(filterChipColors)P(0:c#ui.graphics.Color,1:c#ui.graphics.Color,5:c#ui.graphics.Color,2:c#ui.graphics.Color,3:c#ui.graphics.Color,4:c#ui.graphics.Color,6:c#ui.graphics.Color,7:c#ui.graphics.Color,8:c#ui.graphics.Color)455@20699L6,456@20793L6,457@20854L6,460@21041L6,461@21101L8,462@21176L6,464@21283L8,467@21418L8,469@21514L6,472@21673L6,475@21834L6:Chip.kt#jmzs0o"
+    const-string v3, "C(filterChipColors)P(0:c#ui.graphics.Color,1:c#ui.graphics.Color,5:c#ui.graphics.Color,2:c#ui.graphics.Color,3:c#ui.graphics.Color,4:c#ui.graphics.Color,6:c#ui.graphics.Color,7:c#ui.graphics.Color,8:c#ui.graphics.Color)462@21060L6,463@21154L6,464@21215L6,467@21402L6,468@21462L8,469@21537L6,471@21644L8,474@21779L8,476@21875L6,479@22034L6,482@22195L6:Chip.kt#jmzs0o"
 
     invoke-static {v0, v3}, Landroidx/compose/runtime/ComposerKt;->sourceInformation(Landroidx/compose/runtime/Composer;Ljava/lang/String;)V
 
@@ -544,7 +544,7 @@
 
     if-eqz v3, :cond_0
 
-    .line 456
+    .line 463
     sget-object v3, Landroidx/compose/material/MaterialTheme;->INSTANCE:Landroidx/compose/material/MaterialTheme;
 
     invoke-virtual {v3, v0, v4}, Landroidx/compose/material/MaterialTheme;->getColors(Landroidx/compose/runtime/Composer;I)Landroidx/compose/material/Colors;
@@ -571,7 +571,7 @@
 
     move-result-wide v5
 
-    .line 457
+    .line 464
     sget-object v3, Landroidx/compose/material/MaterialTheme;->INSTANCE:Landroidx/compose/material/MaterialTheme;
 
     invoke-virtual {v3, v0, v4}, Landroidx/compose/material/MaterialTheme;->getColors(Landroidx/compose/runtime/Composer;I)Landroidx/compose/material/Colors;
@@ -598,7 +598,7 @@
 
     if-eqz v3, :cond_1
 
-    .line 458
+    .line 465
     sget-object v3, Landroidx/compose/material/MaterialTheme;->INSTANCE:Landroidx/compose/material/MaterialTheme;
 
     invoke-virtual {v3, v0, v4}, Landroidx/compose/material/MaterialTheme;->getColors(Landroidx/compose/runtime/Composer;I)Landroidx/compose/material/Colors;
@@ -649,7 +649,7 @@
 
     move-wide v10, v5
 
-    .line 459
+    .line 466
     invoke-static/range {v10 .. v17}, Landroidx/compose/ui/graphics/Color;->copy-wmQWz5c$default(JFFFFILjava/lang/Object;)J
 
     move-result-wide v10
@@ -666,7 +666,7 @@
 
     if-eqz v3, :cond_3
 
-    .line 461
+    .line 468
     sget-object v3, Landroidx/compose/material/MaterialTheme;->INSTANCE:Landroidx/compose/material/MaterialTheme;
 
     invoke-virtual {v3, v0, v4}, Landroidx/compose/material/MaterialTheme;->getColors(Landroidx/compose/runtime/Composer;I)Landroidx/compose/material/Colors;
@@ -677,7 +677,7 @@
 
     move-result-wide v10
 
-    .line 462
+    .line 469
     sget-object v3, Landroidx/compose/material/ContentAlpha;->INSTANCE:Landroidx/compose/material/ContentAlpha;
 
     invoke-virtual {v3, v0, v4}, Landroidx/compose/material/ContentAlpha;->getDisabled(Landroidx/compose/runtime/Composer;I)F
@@ -712,12 +712,12 @@
 
     move-object/from16 p7, v14
 
-    .line 461
+    .line 468
     invoke-static/range {p0 .. p7}, Landroidx/compose/ui/graphics/Color;->copy-wmQWz5c$default(JFFFFILjava/lang/Object;)J
 
     move-result-wide v10
 
-    .line 463
+    .line 470
     sget-object v3, Landroidx/compose/material/MaterialTheme;->INSTANCE:Landroidx/compose/material/MaterialTheme;
 
     invoke-virtual {v3, v0, v4}, Landroidx/compose/material/MaterialTheme;->getColors(Landroidx/compose/runtime/Composer;I)Landroidx/compose/material/Colors;
@@ -744,7 +744,7 @@
 
     if-eqz v3, :cond_4
 
-    .line 465
+    .line 472
     sget-object v3, Landroidx/compose/material/ContentAlpha;->INSTANCE:Landroidx/compose/material/ContentAlpha;
 
     invoke-virtual {v3, v0, v4}, Landroidx/compose/material/ContentAlpha;->getDisabled(Landroidx/compose/runtime/Composer;I)F
@@ -779,7 +779,7 @@
 
     move-object/from16 p7, v10
 
-    .line 464
+    .line 471
     invoke-static/range {p0 .. p7}, Landroidx/compose/ui/graphics/Color;->copy-wmQWz5c$default(JFFFFILjava/lang/Object;)J
 
     move-result-wide v10
@@ -796,7 +796,7 @@
 
     if-eqz v3, :cond_5
 
-    .line 468
+    .line 475
     sget-object v3, Landroidx/compose/material/ContentAlpha;->INSTANCE:Landroidx/compose/material/ContentAlpha;
 
     invoke-virtual {v3, v0, v4}, Landroidx/compose/material/ContentAlpha;->getDisabled(Landroidx/compose/runtime/Composer;I)F
@@ -831,7 +831,7 @@
 
     move-object/from16 p7, v10
 
-    .line 467
+    .line 474
     invoke-static/range {p0 .. p7}, Landroidx/compose/ui/graphics/Color;->copy-wmQWz5c$default(JFFFFILjava/lang/Object;)J
 
     move-result-wide v10
@@ -848,7 +848,7 @@
 
     if-eqz v3, :cond_6
 
-    .line 470
+    .line 477
     sget-object v3, Landroidx/compose/material/MaterialTheme;->INSTANCE:Landroidx/compose/material/MaterialTheme;
 
     invoke-virtual {v3, v0, v4}, Landroidx/compose/material/MaterialTheme;->getColors(Landroidx/compose/runtime/Composer;I)Landroidx/compose/material/Colors;
@@ -889,7 +889,7 @@
 
     move-result-wide v10
 
-    .line 472
+    .line 479
     invoke-static {v10, v11, v8, v9}, Landroidx/compose/ui/graphics/ColorKt;->compositeOver--OWjLjI(JJ)J
 
     move-result-wide v10
@@ -906,7 +906,7 @@
 
     if-eqz v3, :cond_7
 
-    .line 473
+    .line 480
     sget-object v3, Landroidx/compose/material/MaterialTheme;->INSTANCE:Landroidx/compose/material/MaterialTheme;
 
     invoke-virtual {v3, v0, v4}, Landroidx/compose/material/MaterialTheme;->getColors(Landroidx/compose/runtime/Composer;I)Landroidx/compose/material/Colors;
@@ -947,7 +947,7 @@
 
     move-result-wide v10
 
-    .line 475
+    .line 482
     invoke-static {v10, v11, v5, v6}, Landroidx/compose/ui/graphics/ColorKt;->compositeOver--OWjLjI(JJ)J
 
     move-result-wide v10
@@ -964,7 +964,7 @@
 
     if-eqz v1, :cond_8
 
-    .line 476
+    .line 483
     sget-object v1, Landroidx/compose/material/MaterialTheme;->INSTANCE:Landroidx/compose/material/MaterialTheme;
 
     invoke-virtual {v1, v0, v4}, Landroidx/compose/material/MaterialTheme;->getColors(Landroidx/compose/runtime/Composer;I)Landroidx/compose/material/Colors;
@@ -1005,7 +1005,7 @@
 
     move-result-wide v3
 
-    .line 478
+    .line 485
     invoke-static {v3, v4, v12, v13}, Landroidx/compose/ui/graphics/ColorKt;->compositeOver--OWjLjI(JJ)J
 
     move-result-wide v3
@@ -1026,11 +1026,11 @@
 
     const/4 v1, -0x1
 
-    const-string v3, "androidx.compose.material.ChipDefaults.filterChipColors (Chip.kt:454)"
+    const-string v3, "androidx.compose.material.ChipDefaults.filterChipColors (Chip.kt:485)"
 
     move/from16 v4, p20
 
-    .line 479
+    .line 486
     invoke-static {v2, v4, v1, v3}, Landroidx/compose/runtime/ComposerKt;->traceEventStart(IIILjava/lang/String;)V
 
     :cond_9
@@ -1063,7 +1063,7 @@
 .method public final getLeadingIconSize-D9Ej5fM()F
     .locals 0
 
-    .line 570
+    .line 577
     sget p0, Landroidx/compose/material/ChipDefaults;->LeadingIconSize:F
 
     return p0
@@ -1072,7 +1072,7 @@
 .method public final getMinHeight-D9Ej5fM()F
     .locals 0
 
-    .line 370
+    .line 377
     sget p0, Landroidx/compose/material/ChipDefaults;->MinHeight:F
 
     return p0
@@ -1085,7 +1085,7 @@
 
     invoke-interface {p1, p0}, Landroidx/compose/runtime/Composer;->startReplaceableGroup(I)V
 
-    const-string v0, "C543@25203L6:Chip.kt#jmzs0o"
+    const-string v0, "C550@25564L6:Chip.kt#jmzs0o"
 
     invoke-static {p1, v0}, Landroidx/compose/runtime/ComposerKt;->sourceInformation(Landroidx/compose/runtime/Composer;Ljava/lang/String;)V
 
@@ -1097,12 +1097,12 @@
 
     const/4 v0, -0x1
 
-    const-string v1, "androidx.compose.material.ChipDefaults.<get-outlinedBorder> (Chip.kt:542)"
+    const-string v1, "androidx.compose.material.ChipDefaults.<get-outlinedBorder> (Chip.kt:549)"
 
-    .line 543
+    .line 550
     invoke-static {p0, p2, v0, v1}, Landroidx/compose/runtime/ComposerKt;->traceEventStart(IIILjava/lang/String;)V
 
-    .line 544
+    .line 551
     :cond_0
     sget p0, Landroidx/compose/material/ChipDefaults;->OutlinedBorderSize:F
 
@@ -1134,7 +1134,7 @@
 
     move-result-wide v0
 
-    .line 543
+    .line 550
     invoke-static {p0, v0, v1}, Landroidx/compose/foundation/BorderStrokeKt;->BorderStroke-cXLIe8U(FJ)Landroidx/compose/foundation/BorderStroke;
 
     move-result-object p0
@@ -1156,7 +1156,7 @@
 .method public final getOutlinedBorderSize-D9Ej5fM()F
     .locals 0
 
-    .line 565
+    .line 572
     sget p0, Landroidx/compose/material/ChipDefaults;->OutlinedBorderSize:F
 
     return p0
@@ -1165,7 +1165,7 @@
 .method public final getSelectedIconSize-D9Ej5fM()F
     .locals 0
 
-    .line 575
+    .line 582
     sget p0, Landroidx/compose/material/ChipDefaults;->SelectedIconSize:F
 
     return p0
@@ -1182,7 +1182,7 @@
 
     invoke-interface {v15, v1}, Landroidx/compose/runtime/Composer;->startReplaceableGroup(I)V
 
-    const-string v2, "C(outlinedChipColors)P(0:c#ui.graphics.Color,1:c#ui.graphics.Color,5:c#ui.graphics.Color,2:c#ui.graphics.Color,3:c#ui.graphics.Color,4:c#ui.graphics.Color)421@18817L6,422@18877L6,426@19160L8,429@19308L8,430@19360L342:Chip.kt#jmzs0o"
+    const-string v2, "C(outlinedChipColors)P(0:c#ui.graphics.Color,1:c#ui.graphics.Color,5:c#ui.graphics.Color,2:c#ui.graphics.Color,3:c#ui.graphics.Color,4:c#ui.graphics.Color)428@19178L6,429@19238L6,433@19521L8,436@19669L8,437@19721L342:Chip.kt#jmzs0o"
 
     invoke-static {v15, v2}, Landroidx/compose/runtime/ComposerKt;->sourceInformation(Landroidx/compose/runtime/Composer;Ljava/lang/String;)V
 
@@ -1192,7 +1192,7 @@
 
     if-eqz v2, :cond_0
 
-    .line 422
+    .line 429
     sget-object v2, Landroidx/compose/material/MaterialTheme;->INSTANCE:Landroidx/compose/material/MaterialTheme;
 
     invoke-virtual {v2, v15, v3}, Landroidx/compose/material/MaterialTheme;->getColors(Landroidx/compose/runtime/Composer;I)Landroidx/compose/material/Colors;
@@ -1213,7 +1213,7 @@
 
     if-eqz v2, :cond_1
 
-    .line 423
+    .line 430
     sget-object v2, Landroidx/compose/material/MaterialTheme;->INSTANCE:Landroidx/compose/material/MaterialTheme;
 
     invoke-virtual {v2, v15, v3}, Landroidx/compose/material/MaterialTheme;->getColors(Landroidx/compose/runtime/Composer;I)Landroidx/compose/material/Colors;
@@ -1264,7 +1264,7 @@
 
     move-wide/from16 v16, v6
 
-    .line 424
+    .line 431
     invoke-static/range {v16 .. v23}, Landroidx/compose/ui/graphics/Color;->copy-wmQWz5c$default(JFFFFILjava/lang/Object;)J
 
     move-result-wide v8
@@ -1291,7 +1291,7 @@
 
     if-eqz v2, :cond_4
 
-    .line 427
+    .line 434
     sget-object v2, Landroidx/compose/material/ContentAlpha;->INSTANCE:Landroidx/compose/material/ContentAlpha;
 
     invoke-virtual {v2, v15, v3}, Landroidx/compose/material/ContentAlpha;->getDisabled(Landroidx/compose/runtime/Composer;I)F
@@ -1326,7 +1326,7 @@
 
     move-object/from16 p8, v13
 
-    .line 426
+    .line 433
     invoke-static/range {p1 .. p8}, Landroidx/compose/ui/graphics/Color;->copy-wmQWz5c$default(JFFFFILjava/lang/Object;)J
 
     move-result-wide v12
@@ -1341,7 +1341,7 @@
 
     if-eqz v2, :cond_5
 
-    .line 430
+    .line 437
     sget-object v2, Landroidx/compose/material/ContentAlpha;->INSTANCE:Landroidx/compose/material/ContentAlpha;
 
     invoke-virtual {v2, v15, v3}, Landroidx/compose/material/ContentAlpha;->getDisabled(Landroidx/compose/runtime/Composer;I)F
@@ -1396,9 +1396,9 @@
 
     const/4 v2, -0x1
 
-    const-string v3, "androidx.compose.material.ChipDefaults.outlinedChipColors (Chip.kt:420)"
+    const-string v3, "androidx.compose.material.ChipDefaults.outlinedChipColors (Chip.kt:437)"
 
-    .line 431
+    .line 438
     invoke-static {v1, v0, v2, v3}, Landroidx/compose/runtime/ComposerKt;->traceEventStart(IIILjava/lang/String;)V
 
     :cond_6
@@ -1483,7 +1483,7 @@
 
     invoke-interface {v0, v2}, Landroidx/compose/runtime/Composer;->startReplaceableGroup(I)V
 
-    const-string v3, "C(outlinedFilterChipColors)P(0:c#ui.graphics.Color,1:c#ui.graphics.Color,5:c#ui.graphics.Color,2:c#ui.graphics.Color,3:c#ui.graphics.Color,4:c#ui.graphics.Color,6:c#ui.graphics.Color,7:c#ui.graphics.Color,8:c#ui.graphics.Color)506@23484L6,507@23544L6,511@23804L8,514@23939L8,516@24035L6,519@24195L6,522@24356L6:Chip.kt#jmzs0o"
+    const-string v3, "C(outlinedFilterChipColors)P(0:c#ui.graphics.Color,1:c#ui.graphics.Color,5:c#ui.graphics.Color,2:c#ui.graphics.Color,3:c#ui.graphics.Color,4:c#ui.graphics.Color,6:c#ui.graphics.Color,7:c#ui.graphics.Color,8:c#ui.graphics.Color)513@23845L6,514@23905L6,518@24165L8,521@24300L8,523@24396L6,526@24556L6,529@24717L6:Chip.kt#jmzs0o"
 
     invoke-static {v0, v3}, Landroidx/compose/runtime/ComposerKt;->sourceInformation(Landroidx/compose/runtime/Composer;Ljava/lang/String;)V
 
@@ -1493,7 +1493,7 @@
 
     if-eqz v3, :cond_0
 
-    .line 507
+    .line 514
     sget-object v3, Landroidx/compose/material/MaterialTheme;->INSTANCE:Landroidx/compose/material/MaterialTheme;
 
     invoke-virtual {v3, v0, v4}, Landroidx/compose/material/MaterialTheme;->getColors(Landroidx/compose/runtime/Composer;I)Landroidx/compose/material/Colors;
@@ -1516,7 +1516,7 @@
 
     if-eqz v3, :cond_1
 
-    .line 508
+    .line 515
     sget-object v3, Landroidx/compose/material/MaterialTheme;->INSTANCE:Landroidx/compose/material/MaterialTheme;
 
     invoke-virtual {v3, v0, v4}, Landroidx/compose/material/MaterialTheme;->getColors(Landroidx/compose/runtime/Composer;I)Landroidx/compose/material/Colors;
@@ -1567,7 +1567,7 @@
 
     move-wide v10, v5
 
-    .line 509
+    .line 516
     invoke-static/range {v10 .. v17}, Landroidx/compose/ui/graphics/Color;->copy-wmQWz5c$default(JFFFFILjava/lang/Object;)J
 
     move-result-wide v10
@@ -1596,7 +1596,7 @@
 
     if-eqz v3, :cond_4
 
-    .line 512
+    .line 519
     sget-object v3, Landroidx/compose/material/ContentAlpha;->INSTANCE:Landroidx/compose/material/ContentAlpha;
 
     invoke-virtual {v3, v0, v4}, Landroidx/compose/material/ContentAlpha;->getDisabled(Landroidx/compose/runtime/Composer;I)F
@@ -1631,7 +1631,7 @@
 
     move-object/from16 p7, v10
 
-    .line 511
+    .line 518
     invoke-static/range {p0 .. p7}, Landroidx/compose/ui/graphics/Color;->copy-wmQWz5c$default(JFFFFILjava/lang/Object;)J
 
     move-result-wide v10
@@ -1648,7 +1648,7 @@
 
     if-eqz v3, :cond_5
 
-    .line 515
+    .line 522
     sget-object v3, Landroidx/compose/material/ContentAlpha;->INSTANCE:Landroidx/compose/material/ContentAlpha;
 
     invoke-virtual {v3, v0, v4}, Landroidx/compose/material/ContentAlpha;->getDisabled(Landroidx/compose/runtime/Composer;I)F
@@ -1683,7 +1683,7 @@
 
     move-object/from16 p7, v10
 
-    .line 514
+    .line 521
     invoke-static/range {p0 .. p7}, Landroidx/compose/ui/graphics/Color;->copy-wmQWz5c$default(JFFFFILjava/lang/Object;)J
 
     move-result-wide v10
@@ -1700,7 +1700,7 @@
 
     if-eqz v3, :cond_6
 
-    .line 517
+    .line 524
     sget-object v3, Landroidx/compose/material/MaterialTheme;->INSTANCE:Landroidx/compose/material/MaterialTheme;
 
     invoke-virtual {v3, v0, v4}, Landroidx/compose/material/MaterialTheme;->getColors(Landroidx/compose/runtime/Composer;I)Landroidx/compose/material/Colors;
@@ -1741,7 +1741,7 @@
 
     move-result-wide v10
 
-    .line 519
+    .line 526
     invoke-static {v10, v11, v8, v9}, Landroidx/compose/ui/graphics/ColorKt;->compositeOver--OWjLjI(JJ)J
 
     move-result-wide v10
@@ -1758,7 +1758,7 @@
 
     if-eqz v3, :cond_7
 
-    .line 520
+    .line 527
     sget-object v3, Landroidx/compose/material/MaterialTheme;->INSTANCE:Landroidx/compose/material/MaterialTheme;
 
     invoke-virtual {v3, v0, v4}, Landroidx/compose/material/MaterialTheme;->getColors(Landroidx/compose/runtime/Composer;I)Landroidx/compose/material/Colors;
@@ -1799,7 +1799,7 @@
 
     move-result-wide v10
 
-    .line 522
+    .line 529
     invoke-static {v10, v11, v5, v6}, Landroidx/compose/ui/graphics/ColorKt;->compositeOver--OWjLjI(JJ)J
 
     move-result-wide v10
@@ -1816,7 +1816,7 @@
 
     if-eqz v1, :cond_8
 
-    .line 523
+    .line 530
     sget-object v1, Landroidx/compose/material/MaterialTheme;->INSTANCE:Landroidx/compose/material/MaterialTheme;
 
     invoke-virtual {v1, v0, v4}, Landroidx/compose/material/MaterialTheme;->getColors(Landroidx/compose/runtime/Composer;I)Landroidx/compose/material/Colors;
@@ -1857,7 +1857,7 @@
 
     move-result-wide v3
 
-    .line 525
+    .line 532
     invoke-static {v3, v4, v12, v13}, Landroidx/compose/ui/graphics/ColorKt;->compositeOver--OWjLjI(JJ)J
 
     move-result-wide v3
@@ -1878,11 +1878,11 @@
 
     const/4 v1, -0x1
 
-    const-string v3, "androidx.compose.material.ChipDefaults.outlinedFilterChipColors (Chip.kt:505)"
+    const-string v3, "androidx.compose.material.ChipDefaults.outlinedFilterChipColors (Chip.kt:532)"
 
     move/from16 v4, p20
 
-    .line 526
+    .line 533
     invoke-static {v2, v4, v1, v3}, Landroidx/compose/runtime/ComposerKt;->traceEventStart(IIILjava/lang/String;)V
 
     :cond_9

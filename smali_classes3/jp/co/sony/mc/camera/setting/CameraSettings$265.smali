@@ -21,7 +21,7 @@
 .method constructor <init>()V
     .locals 0
 
-    .line 2798
+    .line 2873
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -42,8 +42,15 @@
         }
     .end annotation
 
-    .line 2802
-    sget-object p0, Ljp/co/sony/mc/camera/configuration/parameters/RecommendedSettings;->DUMMY_OFF:Ljp/co/sony/mc/camera/configuration/parameters/RecommendedSettings;
+    .line 2877
+    check-cast p1, Ljp/co/sony/mc/camera/setting/CameraSettings;
+
+    .line 2878
+    sget-object p0, Ljp/co/sony/mc/camera/setting/CameraSettings;->BASE_ZOOM_RATIO:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
+
+    invoke-virtual {p1, p0}, Ljp/co/sony/mc/camera/setting/CameraSettings;->getDefaultValue(Ljp/co/sony/mc/camera/setting/SettingKey$Key;)Ljava/lang/Object;
+
+    move-result-object p0
 
     return-object p0
 .end method

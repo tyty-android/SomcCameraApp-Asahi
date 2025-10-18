@@ -1,6 +1,6 @@
 .class final synthetic Landroidx/compose/ui/tooling/ComposeViewAdapter$findAndTrackAnimations$2;
 .super Lkotlin/jvm/internal/FunctionReferenceImpl;
-.source "ComposeViewAdapter.kt"
+.source "ComposeViewAdapter.android.kt"
 
 # interfaces
 .implements Lkotlin/jvm/functions/Function0;
@@ -64,7 +64,7 @@
 .method public bridge synthetic invoke()Ljava/lang/Object;
     .locals 0
 
-    .line 320
+    .line 318
     invoke-virtual {p0}, Landroidx/compose/ui/tooling/ComposeViewAdapter$findAndTrackAnimations$2;->invoke()V
 
     sget-object p0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
@@ -75,7 +75,7 @@
 .method public final invoke()V
     .locals 0
 
-    .line 320
+    .line 318
     iget-object p0, p0, Landroidx/compose/ui/tooling/ComposeViewAdapter$findAndTrackAnimations$2;->receiver:Ljava/lang/Object;
 
     check-cast p0, Landroidx/compose/ui/tooling/ComposeViewAdapter;

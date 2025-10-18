@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <integer name="basic_color_tone_profile_display_column_count">5</integer>
-    <integer name="capturing_mode_display_column_count">5</integer>
+    <integer name="mode_custom_column_count">3</integer>
+    <integer name="mode_custom_max_row_count_portrait">4</integer>
+    <integer name="mode_custom_more_mode_max_row_count_landscape">3</integer>
+    <integer name="pro_mode_fn_dial_picker_display_column_count">5</integer>
 </resources>

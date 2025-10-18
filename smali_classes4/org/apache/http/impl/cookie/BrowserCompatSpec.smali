@@ -14,40 +14,96 @@
 
 # direct methods
 .method static constructor <clinit>()V
-    .locals 14
+    .locals 3
+
+    const/16 v0, 0xe
 
     .line 69
-    const-string v12, "EEE,dd-MMM-yyyy HH:mm:ss z"
+    new-array v0, v0, [Ljava/lang/String;
 
-    const-string v13, "EEE, dd-MM-yyyy HH:mm:ss z"
+    const/4 v1, 0x0
 
-    const-string v0, "EEE, dd MMM yyyy HH:mm:ss zzz"
+    const-string v2, "EEE, dd MMM yyyy HH:mm:ss zzz"
 
-    const-string v1, "EEE, dd-MMM-yy HH:mm:ss zzz"
+    aput-object v2, v0, v1
+
+    const/4 v1, 0x1
+
+    const-string v2, "EEE, dd-MMM-yy HH:mm:ss zzz"
+
+    aput-object v2, v0, v1
+
+    const/4 v1, 0x2
 
     const-string v2, "EEE MMM d HH:mm:ss yyyy"
 
-    const-string v3, "EEE, dd-MMM-yyyy HH:mm:ss z"
+    aput-object v2, v0, v1
 
-    const-string v4, "EEE, dd-MMM-yyyy HH-mm-ss z"
+    const/4 v1, 0x3
 
-    const-string v5, "EEE, dd MMM yy HH:mm:ss z"
+    const-string v2, "EEE, dd-MMM-yyyy HH:mm:ss z"
 
-    const-string v6, "EEE dd-MMM-yyyy HH:mm:ss z"
+    aput-object v2, v0, v1
 
-    const-string v7, "EEE dd MMM yyyy HH:mm:ss z"
+    const/4 v1, 0x4
 
-    const-string v8, "EEE dd-MMM-yyyy HH-mm-ss z"
+    const-string v2, "EEE, dd-MMM-yyyy HH-mm-ss z"
 
-    const-string v9, "EEE dd-MMM-yy HH:mm:ss z"
+    aput-object v2, v0, v1
 
-    const-string v10, "EEE dd MMM yy HH:mm:ss z"
+    const/4 v1, 0x5
 
-    const-string v11, "EEE,dd-MMM-yy HH:mm:ss z"
+    const-string v2, "EEE, dd MMM yy HH:mm:ss z"
 
-    filled-new-array/range {v0 .. v13}, [Ljava/lang/String;
+    aput-object v2, v0, v1
 
-    move-result-object v0
+    const/4 v1, 0x6
+
+    const-string v2, "EEE dd-MMM-yyyy HH:mm:ss z"
+
+    aput-object v2, v0, v1
+
+    const/4 v1, 0x7
+
+    const-string v2, "EEE dd MMM yyyy HH:mm:ss z"
+
+    aput-object v2, v0, v1
+
+    const/16 v1, 0x8
+
+    const-string v2, "EEE dd-MMM-yyyy HH-mm-ss z"
+
+    aput-object v2, v0, v1
+
+    const/16 v1, 0x9
+
+    const-string v2, "EEE dd-MMM-yy HH:mm:ss z"
+
+    aput-object v2, v0, v1
+
+    const/16 v1, 0xa
+
+    const-string v2, "EEE dd MMM yy HH:mm:ss z"
+
+    aput-object v2, v0, v1
+
+    const/16 v1, 0xb
+
+    const-string v2, "EEE,dd-MMM-yy HH:mm:ss z"
+
+    aput-object v2, v0, v1
+
+    const/16 v1, 0xc
+
+    const-string v2, "EEE,dd-MMM-yyyy HH:mm:ss z"
+
+    aput-object v2, v0, v1
+
+    const/16 v1, 0xd
+
+    const-string v2, "EEE, dd-MM-yyyy HH:mm:ss z"
+
+    aput-object v2, v0, v1
 
     sput-object v0, Lorg/apache/http/impl/cookie/BrowserCompatSpec;->DEFAULT_DATE_PATTERNS:[Ljava/lang/String;
 

@@ -101,10 +101,6 @@
 .method public final invoke-kLtJ_vA(Landroidx/compose/ui/graphics/vector/PathComponent;I)V
     .locals 0
 
-    const-string p0, "$this$set"
-
-    invoke-static {p1, p0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
     .line 127
     invoke-virtual {p1, p2}, Landroidx/compose/ui/graphics/vector/PathComponent;->setStrokeLineJoin-Ww9F2mQ(I)V
 

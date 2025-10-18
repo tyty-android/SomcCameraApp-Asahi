@@ -27,7 +27,7 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/SourceDebugExtension;
-    value = "SMAP\nRootMeasurePolicy.kt\nKotlin\n*S Kotlin\n*F\n+ 1 RootMeasurePolicy.kt\nandroidx/compose/ui/layout/RootMeasurePolicy$measure$4\n+ 2 ListUtils.kt\nandroidx/compose/ui/util/ListUtilsKt\n*L\n1#1,67:1\n33#2,6:68\n*S KotlinDebug\n*F\n+ 1 RootMeasurePolicy.kt\nandroidx/compose/ui/layout/RootMeasurePolicy$measure$4\n*L\n60#1:68,6\n*E\n"
+    value = "SMAP\nRootMeasurePolicy.kt\nKotlin\n*S Kotlin\n*F\n+ 1 RootMeasurePolicy.kt\nandroidx/compose/ui/layout/RootMeasurePolicy$measure$4\n+ 2 ListUtils.kt\nandroidx/compose/ui/util/ListUtilsKt\n*L\n1#1,68:1\n33#2,6:69\n*S KotlinDebug\n*F\n+ 1 RootMeasurePolicy.kt\nandroidx/compose/ui/layout/RootMeasurePolicy$measure$4\n*L\n60#1:69,6\n*E\n"
 .end annotation
 
 .annotation runtime Lkotlin/Metadata;
@@ -102,14 +102,10 @@
 .method public final invoke(Landroidx/compose/ui/layout/Placeable$PlacementScope;)V
     .locals 11
 
-    const-string v0, "$this$layout"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
     .line 60
     iget-object p0, p0, Landroidx/compose/ui/layout/RootMeasurePolicy$measure$4;->$placeables:Ljava/util/List;
 
-    .line 69
+    .line 70
     invoke-interface {p0}, Ljava/util/List;->size()I
 
     move-result v0
@@ -119,12 +115,12 @@
     :goto_0
     if-ge v1, v0, :cond_0
 
-    .line 70
+    .line 71
     invoke-interface {p0, v1}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
     move-result-object v2
 
-    .line 71
+    .line 72
     move-object v4, v2
 
     check-cast v4, Landroidx/compose/ui/layout/Placeable;

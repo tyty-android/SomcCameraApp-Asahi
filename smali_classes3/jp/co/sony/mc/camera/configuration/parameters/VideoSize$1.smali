@@ -15,15 +15,17 @@
 
 
 # static fields
+.field static final synthetic $SwitchMap$jp$co$sony$mc$camera$configuration$parameters$AutoFramingMode:[I
+
 .field static final synthetic $SwitchMap$jp$co$sony$mc$camera$configuration$parameters$VideoSize:[I
 
 
 # direct methods
 .method static constructor <clinit>()V
-    .locals 3
+    .locals 5
 
-    .line 377
-    invoke-static {}, Ljp/co/sony/mc/camera/configuration/parameters/VideoSize;->values()[Ljp/co/sony/mc/camera/configuration/parameters/VideoSize;
+    .line 434
+    invoke-static {}, Ljp/co/sony/mc/camera/configuration/parameters/AutoFramingMode;->values()[Ljp/co/sony/mc/camera/configuration/parameters/AutoFramingMode;
 
     move-result-object v0
 
@@ -31,39 +33,92 @@
 
     new-array v0, v0, [I
 
-    sput-object v0, Ljp/co/sony/mc/camera/configuration/parameters/VideoSize$1;->$SwitchMap$jp$co$sony$mc$camera$configuration$parameters$VideoSize:[I
+    sput-object v0, Ljp/co/sony/mc/camera/configuration/parameters/VideoSize$1;->$SwitchMap$jp$co$sony$mc$camera$configuration$parameters$AutoFramingMode:[I
+
+    const/4 v1, 0x1
 
     :try_start_0
-    sget-object v1, Ljp/co/sony/mc/camera/configuration/parameters/VideoSize;->FULL_HD:Ljp/co/sony/mc/camera/configuration/parameters/VideoSize;
+    sget-object v2, Ljp/co/sony/mc/camera/configuration/parameters/AutoFramingMode;->AUTO_FRAMING:Ljp/co/sony/mc/camera/configuration/parameters/AutoFramingMode;
 
-    invoke-virtual {v1}, Ljp/co/sony/mc/camera/configuration/parameters/VideoSize;->ordinal()I
+    invoke-virtual {v2}, Ljp/co/sony/mc/camera/configuration/parameters/AutoFramingMode;->ordinal()I
 
-    move-result v1
+    move-result v2
 
-    const/4 v2, 0x1
-
-    aput v2, v0, v1
+    aput v1, v0, v2
     :try_end_0
     .catch Ljava/lang/NoSuchFieldError; {:try_start_0 .. :try_end_0} :catch_0
 
     :catch_0
+    const/4 v0, 0x2
+
     :try_start_1
-    sget-object v0, Ljp/co/sony/mc/camera/configuration/parameters/VideoSize$1;->$SwitchMap$jp$co$sony$mc$camera$configuration$parameters$VideoSize:[I
+    sget-object v2, Ljp/co/sony/mc/camera/configuration/parameters/VideoSize$1;->$SwitchMap$jp$co$sony$mc$camera$configuration$parameters$AutoFramingMode:[I
 
-    sget-object v1, Ljp/co/sony/mc/camera/configuration/parameters/VideoSize;->HD:Ljp/co/sony/mc/camera/configuration/parameters/VideoSize;
+    sget-object v3, Ljp/co/sony/mc/camera/configuration/parameters/AutoFramingMode;->FRAMING_ASSIST:Ljp/co/sony/mc/camera/configuration/parameters/AutoFramingMode;
 
-    invoke-virtual {v1}, Ljp/co/sony/mc/camera/configuration/parameters/VideoSize;->ordinal()I
+    invoke-virtual {v3}, Ljp/co/sony/mc/camera/configuration/parameters/AutoFramingMode;->ordinal()I
 
-    move-result v1
+    move-result v3
 
-    const/4 v2, 0x2
-
-    aput v2, v0, v1
+    aput v0, v2, v3
     :try_end_1
     .catch Ljava/lang/NoSuchFieldError; {:try_start_1 .. :try_end_1} :catch_1
 
     :catch_1
+    const/4 v2, 0x3
+
     :try_start_2
+    sget-object v3, Ljp/co/sony/mc/camera/configuration/parameters/VideoSize$1;->$SwitchMap$jp$co$sony$mc$camera$configuration$parameters$AutoFramingMode:[I
+
+    sget-object v4, Ljp/co/sony/mc/camera/configuration/parameters/AutoFramingMode;->OFF_KEEP_FRAMING_ASSIST:Ljp/co/sony/mc/camera/configuration/parameters/AutoFramingMode;
+
+    invoke-virtual {v4}, Ljp/co/sony/mc/camera/configuration/parameters/AutoFramingMode;->ordinal()I
+
+    move-result v4
+
+    aput v2, v3, v4
+    :try_end_2
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_2 .. :try_end_2} :catch_2
+
+    .line 392
+    :catch_2
+    invoke-static {}, Ljp/co/sony/mc/camera/configuration/parameters/VideoSize;->values()[Ljp/co/sony/mc/camera/configuration/parameters/VideoSize;
+
+    move-result-object v3
+
+    array-length v3, v3
+
+    new-array v3, v3, [I
+
+    sput-object v3, Ljp/co/sony/mc/camera/configuration/parameters/VideoSize$1;->$SwitchMap$jp$co$sony$mc$camera$configuration$parameters$VideoSize:[I
+
+    :try_start_3
+    sget-object v4, Ljp/co/sony/mc/camera/configuration/parameters/VideoSize;->FULL_HD:Ljp/co/sony/mc/camera/configuration/parameters/VideoSize;
+
+    invoke-virtual {v4}, Ljp/co/sony/mc/camera/configuration/parameters/VideoSize;->ordinal()I
+
+    move-result v4
+
+    aput v1, v3, v4
+    :try_end_3
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_3 .. :try_end_3} :catch_3
+
+    :catch_3
+    :try_start_4
+    sget-object v1, Ljp/co/sony/mc/camera/configuration/parameters/VideoSize$1;->$SwitchMap$jp$co$sony$mc$camera$configuration$parameters$VideoSize:[I
+
+    sget-object v3, Ljp/co/sony/mc/camera/configuration/parameters/VideoSize;->HD:Ljp/co/sony/mc/camera/configuration/parameters/VideoSize;
+
+    invoke-virtual {v3}, Ljp/co/sony/mc/camera/configuration/parameters/VideoSize;->ordinal()I
+
+    move-result v3
+
+    aput v0, v1, v3
+    :try_end_4
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_4 .. :try_end_4} :catch_4
+
+    :catch_4
+    :try_start_5
     sget-object v0, Ljp/co/sony/mc/camera/configuration/parameters/VideoSize$1;->$SwitchMap$jp$co$sony$mc$camera$configuration$parameters$VideoSize:[I
 
     sget-object v1, Ljp/co/sony/mc/camera/configuration/parameters/VideoSize;->VGA:Ljp/co/sony/mc/camera/configuration/parameters/VideoSize;
@@ -72,14 +127,12 @@
 
     move-result v1
 
-    const/4 v2, 0x3
-
     aput v2, v0, v1
-    :try_end_2
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_2 .. :try_end_2} :catch_2
+    :try_end_5
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_5 .. :try_end_5} :catch_5
 
-    :catch_2
-    :try_start_3
+    :catch_5
+    :try_start_6
     sget-object v0, Ljp/co/sony/mc/camera/configuration/parameters/VideoSize$1;->$SwitchMap$jp$co$sony$mc$camera$configuration$parameters$VideoSize:[I
 
     sget-object v1, Ljp/co/sony/mc/camera/configuration/parameters/VideoSize;->MMS:Ljp/co/sony/mc/camera/configuration/parameters/VideoSize;
@@ -91,9 +144,9 @@
     const/4 v2, 0x4
 
     aput v2, v0, v1
-    :try_end_3
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_3 .. :try_end_3} :catch_3
+    :try_end_6
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_6 .. :try_end_6} :catch_6
 
-    :catch_3
+    :catch_6
     return-void
 .end method

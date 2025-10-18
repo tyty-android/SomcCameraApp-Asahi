@@ -72,17 +72,17 @@
 .method public constructor <init>()V
     .locals 1
 
-    .line 328
+    .line 335
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 330
+    .line 337
     new-instance v0, Ljava/lang/Object;
 
     invoke-direct {v0}, Ljava/lang/Object;-><init>()V
 
     iput-object v0, p0, Landroidx/compose/material/FadeInFadeOutState;->current:Ljava/lang/Object;
 
-    .line 331
+    .line 338
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
@@ -99,7 +99,7 @@
 .method public final getCurrent()Ljava/lang/Object;
     .locals 0
 
-    .line 330
+    .line 337
     iget-object p0, p0, Landroidx/compose/material/FadeInFadeOutState;->current:Ljava/lang/Object;
 
     return-object p0
@@ -116,7 +116,7 @@
         }
     .end annotation
 
-    .line 331
+    .line 338
     iget-object p0, p0, Landroidx/compose/material/FadeInFadeOutState;->items:Ljava/util/List;
 
     return-object p0
@@ -125,7 +125,7 @@
 .method public final getScope()Landroidx/compose/runtime/RecomposeScope;
     .locals 0
 
-    .line 332
+    .line 339
     iget-object p0, p0, Landroidx/compose/material/FadeInFadeOutState;->scope:Landroidx/compose/runtime/RecomposeScope;
 
     return-object p0
@@ -134,14 +134,14 @@
 .method public final setCurrent(Ljava/lang/Object;)V
     .locals 0
 
-    .line 330
+    .line 337
     iput-object p1, p0, Landroidx/compose/material/FadeInFadeOutState;->current:Ljava/lang/Object;
 
     return-void
 .end method
 
 .method public final setItems(Ljava/util/List;)V
-    .locals 1
+    .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -151,11 +151,7 @@
         }
     .end annotation
 
-    const-string v0, "<set-?>"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 331
+    .line 338
     iput-object p1, p0, Landroidx/compose/material/FadeInFadeOutState;->items:Ljava/util/List;
 
     return-void
@@ -164,7 +160,7 @@
 .method public final setScope(Landroidx/compose/runtime/RecomposeScope;)V
     .locals 0
 
-    .line 332
+    .line 339
     iput-object p1, p0, Landroidx/compose/material/FadeInFadeOutState;->scope:Landroidx/compose/runtime/RecomposeScope;
 
     return-void

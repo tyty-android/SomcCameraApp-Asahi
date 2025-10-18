@@ -147,7 +147,7 @@
 .end method
 
 .method public call()Ljava/util/Map;
-    .locals 2
+    .locals 4
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()",
@@ -162,13 +162,17 @@
     .line 51
     sget-boolean v0, Ljp/co/sony/mc/camera/util/CamLog;->VERBOSE:Z
 
+    const/4 v1, 0x0
+
+    const/4 v2, 0x1
+
     if-eqz v0, :cond_0
 
-    const-string v0, "InflateTask.call in"
+    new-array v0, v2, [Ljava/lang/String;
 
-    filled-new-array {v0}, [Ljava/lang/String;
+    const-string v3, "InflateTask.call in"
 
-    move-result-object v0
+    aput-object v3, v0, v1
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
@@ -180,9 +184,7 @@
 
     sget-object v0, Ljp/co/sony/mc/camera/util/MeasurePerformance$PerformanceIds;->INFLATE_VIEWS:Ljp/co/sony/mc/camera/util/MeasurePerformance$PerformanceIds;
 
-    const/4 v1, 0x1
-
-    invoke-static {v0, v1}, Ljp/co/sony/mc/camera/util/MeasurePerformance;->measureTime(Ljp/co/sony/mc/camera/util/MeasurePerformance$PerformanceIds;Z)V
+    invoke-static {v0, v2}, Ljp/co/sony/mc/camera/util/MeasurePerformance;->measureTime(Ljp/co/sony/mc/camera/util/MeasurePerformance$PerformanceIds;Z)V
 
     .line 53
     :cond_1
@@ -200,18 +202,18 @@
     :goto_0
     invoke-interface {v0}, Ljava/util/Iterator;->hasNext()Z
 
-    move-result v1
+    move-result v3
 
-    if-eqz v1, :cond_2
+    if-eqz v3, :cond_2
 
     invoke-interface {v0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
-    move-result-object v1
+    move-result-object v3
 
-    check-cast v1, Ljp/co/sony/mc/camera/viewfinder/InflateItem;
+    check-cast v3, Ljp/co/sony/mc/camera/viewfinder/InflateItem;
 
     .line 55
-    invoke-direct {p0, v1}, Ljp/co/sony/mc/camera/viewfinder/InflateTask;->register(Ljp/co/sony/mc/camera/viewfinder/InflateItem;)V
+    invoke-direct {p0, v3}, Ljp/co/sony/mc/camera/viewfinder/InflateTask;->register(Ljp/co/sony/mc/camera/viewfinder/InflateItem;)V
 
     goto :goto_0
 
@@ -228,8 +230,6 @@
 
     sget-object v0, Ljp/co/sony/mc/camera/util/MeasurePerformance$PerformanceIds;->INFLATE_VIEWS:Ljp/co/sony/mc/camera/util/MeasurePerformance$PerformanceIds;
 
-    const/4 v1, 0x0
-
     invoke-static {v0, v1}, Ljp/co/sony/mc/camera/util/MeasurePerformance;->measureTime(Ljp/co/sony/mc/camera/util/MeasurePerformance$PerformanceIds;Z)V
 
     .line 60
@@ -238,11 +238,11 @@
 
     if-eqz v0, :cond_4
 
-    const-string v0, "InflateTask.call out"
+    new-array v0, v2, [Ljava/lang/String;
 
-    filled-new-array {v0}, [Ljava/lang/String;
+    const-string v2, "InflateTask.call out"
 
-    move-result-object v0
+    aput-object v2, v0, v1
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 

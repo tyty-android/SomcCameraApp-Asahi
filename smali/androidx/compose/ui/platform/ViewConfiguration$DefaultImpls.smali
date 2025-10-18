@@ -25,6 +25,19 @@
 
 
 # direct methods
+.method public static getMaximumFlingVelocity(Landroidx/compose/ui/platform/ViewConfiguration;)F
+    .locals 0
+    .annotation runtime Ljava/lang/Deprecated;
+    .end annotation
+
+    .line 61
+    invoke-static {p0}, Landroidx/compose/ui/platform/ViewConfiguration;->access$getMaximumFlingVelocity$jd(Landroidx/compose/ui/platform/ViewConfiguration;)F
+
+    move-result p0
+
+    return p0
+.end method
+
 .method public static getMinimumTouchTargetSize-MYxV2XQ(Landroidx/compose/ui/platform/ViewConfiguration;)J
     .locals 2
     .annotation runtime Ljava/lang/Deprecated;

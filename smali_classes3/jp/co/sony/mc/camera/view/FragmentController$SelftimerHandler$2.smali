@@ -25,7 +25,7 @@
 .method constructor <init>(Ljp/co/sony/mc/camera/view/FragmentController$SelftimerHandler;)V
     .locals 0
 
-    .line 8020
+    .line 8296
     iput-object p1, p0, Ljp/co/sony/mc/camera/view/FragmentController$SelftimerHandler$2;->this$0:Ljp/co/sony/mc/camera/view/FragmentController$SelftimerHandler;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -38,7 +38,7 @@
 .method public onBlinkFinished()V
     .locals 0
 
-    .line 8024
+    .line 8300
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/FragmentController$SelftimerHandler$2;->this$0:Ljp/co/sony/mc/camera/view/FragmentController$SelftimerHandler;
 
     invoke-static {p0}, Ljp/co/sony/mc/camera/view/FragmentController$SelftimerHandler;->-$$Nest$mrecoverFlash(Ljp/co/sony/mc/camera/view/FragmentController$SelftimerHandler;)V
@@ -49,7 +49,7 @@
 .method public onCountDownFinished()V
     .locals 2
 
-    .line 8029
+    .line 8305
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/FragmentController$SelftimerHandler$2;->this$0:Ljp/co/sony/mc/camera/view/FragmentController$SelftimerHandler;
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/view/FragmentController$SelftimerHandler;->-$$Nest$fgetmFragmentController(Ljp/co/sony/mc/camera/view/FragmentController$SelftimerHandler;)Ljp/co/sony/mc/camera/view/FragmentController;
@@ -64,7 +64,7 @@
 
     if-eqz v0, :cond_0
 
-    .line 8030
+    .line 8306
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/FragmentController$SelftimerHandler$2;->this$0:Ljp/co/sony/mc/camera/view/FragmentController$SelftimerHandler;
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/view/FragmentController$SelftimerHandler;->-$$Nest$fgetmFragmentController(Ljp/co/sony/mc/camera/view/FragmentController$SelftimerHandler;)Ljp/co/sony/mc/camera/view/FragmentController;
@@ -77,7 +77,7 @@
 
     invoke-virtual {v0, v1}, Lcom/sonymobile/camera/bleremotecontrol/RemoconManager;->setSelfTimerFeedback(I)V
 
-    .line 8032
+    .line 8308
     :cond_0
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/FragmentController$SelftimerHandler$2;->this$0:Ljp/co/sony/mc/camera/view/FragmentController$SelftimerHandler;
 
@@ -87,7 +87,7 @@
 
     invoke-virtual {v0, v1}, Ljp/co/sony/mc/camera/view/FragmentController;->requestCaptureReady(Z)Z
 
-    .line 8033
+    .line 8309
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/FragmentController$SelftimerHandler$2;->this$0:Ljp/co/sony/mc/camera/view/FragmentController$SelftimerHandler;
 
     invoke-static {p0}, Ljp/co/sony/mc/camera/view/FragmentController$SelftimerHandler;->-$$Nest$fgetmFragmentController(Ljp/co/sony/mc/camera/view/FragmentController$SelftimerHandler;)Ljp/co/sony/mc/camera/view/FragmentController;
@@ -102,7 +102,7 @@
 .method public onSoundTypeChange(J)V
     .locals 4
 
-    .line 8038
+    .line 8314
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/FragmentController$SelftimerHandler$2;->this$0:Ljp/co/sony/mc/camera/view/FragmentController$SelftimerHandler;
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/view/FragmentController$SelftimerHandler;->-$$Nest$fgetmFragmentController(Ljp/co/sony/mc/camera/view/FragmentController$SelftimerHandler;)Ljp/co/sony/mc/camera/view/FragmentController;
@@ -121,7 +121,7 @@
 
     if-nez v0, :cond_0
 
-    .line 8039
+    .line 8315
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/FragmentController$SelftimerHandler$2;->this$0:Ljp/co/sony/mc/camera/view/FragmentController$SelftimerHandler;
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/view/FragmentController$SelftimerHandler;->-$$Nest$fgetmFragmentController(Ljp/co/sony/mc/camera/view/FragmentController$SelftimerHandler;)Ljp/co/sony/mc/camera/view/FragmentController;
@@ -138,7 +138,7 @@
 
     invoke-virtual {v0, v3}, Lcom/sonymobile/camera/bleremotecontrol/RemoconManager;->setSelfTimerFeedback(I)V
 
-    .line 8041
+    .line 8317
     :cond_0
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/FragmentController$SelftimerHandler$2;->this$0:Ljp/co/sony/mc/camera/view/FragmentController$SelftimerHandler;
 
@@ -152,7 +152,7 @@
 
     if-nez p1, :cond_1
 
-    .line 8043
+    .line 8319
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/FragmentController$SelftimerHandler$2;->this$0:Ljp/co/sony/mc/camera/view/FragmentController$SelftimerHandler;
 
     invoke-static {p0}, Ljp/co/sony/mc/camera/view/FragmentController$SelftimerHandler;->-$$Nest$fgetmFragmentController(Ljp/co/sony/mc/camera/view/FragmentController$SelftimerHandler;)Ljp/co/sony/mc/camera/view/FragmentController;
@@ -169,7 +169,7 @@
 
     goto :goto_0
 
-    .line 8045
+    .line 8321
     :cond_1
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/FragmentController$SelftimerHandler$2;->this$0:Ljp/co/sony/mc/camera/view/FragmentController$SelftimerHandler;
 

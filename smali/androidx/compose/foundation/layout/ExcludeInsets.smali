@@ -53,23 +53,15 @@
 
 # direct methods
 .method public constructor <init>(Landroidx/compose/foundation/layout/WindowInsets;Landroidx/compose/foundation/layout/WindowInsets;)V
-    .locals 1
-
-    const-string v0, "included"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string v0, "excluded"
-
-    invoke-static {p2, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 495
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    .locals 0
 
     .line 497
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 499
     iput-object p1, p0, Landroidx/compose/foundation/layout/ExcludeInsets;->included:Landroidx/compose/foundation/layout/WindowInsets;
 
-    .line 498
+    .line 500
     iput-object p2, p0, Landroidx/compose/foundation/layout/ExcludeInsets;->excluded:Landroidx/compose/foundation/layout/WindowInsets;
 
     return-void
@@ -86,7 +78,7 @@
 
     return v0
 
-    .line 520
+    .line 522
     :cond_0
     instance-of v1, p1, Landroidx/compose/foundation/layout/ExcludeInsets;
 
@@ -96,7 +88,7 @@
 
     return v2
 
-    .line 524
+    .line 526
     :cond_1
     check-cast p1, Landroidx/compose/foundation/layout/ExcludeInsets;
 
@@ -132,11 +124,7 @@
 .method public getBottom(Landroidx/compose/ui/unit/Density;)I
     .locals 1
 
-    const-string v0, "density"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 512
+    .line 514
     iget-object v0, p0, Landroidx/compose/foundation/layout/ExcludeInsets;->included:Landroidx/compose/foundation/layout/WindowInsets;
 
     invoke-interface {v0, p1}, Landroidx/compose/foundation/layout/WindowInsets;->getBottom(Landroidx/compose/ui/unit/Density;)I
@@ -163,15 +151,7 @@
 .method public getLeft(Landroidx/compose/ui/unit/Density;Landroidx/compose/ui/unit/LayoutDirection;)I
     .locals 1
 
-    const-string v0, "density"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string v0, "layoutDirection"
-
-    invoke-static {p2, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 501
+    .line 503
     iget-object v0, p0, Landroidx/compose/foundation/layout/ExcludeInsets;->included:Landroidx/compose/foundation/layout/WindowInsets;
 
     invoke-interface {v0, p1, p2}, Landroidx/compose/foundation/layout/WindowInsets;->getLeft(Landroidx/compose/ui/unit/Density;Landroidx/compose/ui/unit/LayoutDirection;)I
@@ -188,7 +168,7 @@
 
     const/4 p0, 0x0
 
-    .line 502
+    .line 504
     invoke-static {v0, p0}, Lkotlin/ranges/RangesKt;->coerceAtLeast(II)I
 
     move-result p0
@@ -199,15 +179,7 @@
 .method public getRight(Landroidx/compose/ui/unit/Density;Landroidx/compose/ui/unit/LayoutDirection;)I
     .locals 1
 
-    const-string v0, "density"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string v0, "layoutDirection"
-
-    invoke-static {p2, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 508
+    .line 510
     iget-object v0, p0, Landroidx/compose/foundation/layout/ExcludeInsets;->included:Landroidx/compose/foundation/layout/WindowInsets;
 
     invoke-interface {v0, p1, p2}, Landroidx/compose/foundation/layout/WindowInsets;->getRight(Landroidx/compose/ui/unit/Density;Landroidx/compose/ui/unit/LayoutDirection;)I
@@ -224,7 +196,7 @@
 
     const/4 p0, 0x0
 
-    .line 509
+    .line 511
     invoke-static {v0, p0}, Lkotlin/ranges/RangesKt;->coerceAtLeast(II)I
 
     move-result p0
@@ -235,11 +207,7 @@
 .method public getTop(Landroidx/compose/ui/unit/Density;)I
     .locals 1
 
-    const-string v0, "density"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 505
+    .line 507
     iget-object v0, p0, Landroidx/compose/foundation/layout/ExcludeInsets;->included:Landroidx/compose/foundation/layout/WindowInsets;
 
     invoke-interface {v0, p1}, Landroidx/compose/foundation/layout/WindowInsets;->getTop(Landroidx/compose/ui/unit/Density;)I
@@ -266,7 +234,7 @@
 .method public hashCode()I
     .locals 1
 
-    .line 527
+    .line 529
     iget-object v0, p0, Landroidx/compose/foundation/layout/ExcludeInsets;->included:Landroidx/compose/foundation/layout/WindowInsets;
 
     invoke-virtual {v0}, Ljava/lang/Object;->hashCode()I
@@ -289,7 +257,7 @@
 .method public toString()Ljava/lang/String;
     .locals 2
 
-    .line 514
+    .line 516
     new-instance v0, Ljava/lang/StringBuilder;
 
     const-string v1, "("

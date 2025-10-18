@@ -66,7 +66,7 @@
 .method public final invoke()Landroidx/compose/foundation/text/TextFieldScrollerPosition;
     .locals 4
 
-    .line 219
+    .line 233
     new-instance v0, Landroidx/compose/foundation/text/TextFieldScrollerPosition;
 
     iget-object p0, p0, Landroidx/compose/foundation/text/CoreTextFieldKt$CoreTextField$scrollerPosition$1$1;->$orientation:Landroidx/compose/foundation/gestures/Orientation;
@@ -85,7 +85,7 @@
 .method public bridge synthetic invoke()Ljava/lang/Object;
     .locals 0
 
-    .line 219
+    .line 233
     invoke-virtual {p0}, Landroidx/compose/foundation/text/CoreTextFieldKt$CoreTextField$scrollerPosition$1$1;->invoke()Landroidx/compose/foundation/text/TextFieldScrollerPosition;
 
     move-result-object p0

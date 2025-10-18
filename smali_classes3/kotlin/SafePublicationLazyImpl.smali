@@ -106,7 +106,7 @@
 
     sput-object v0, Lkotlin/SafePublicationLazyImpl;->Companion:Lkotlin/SafePublicationLazyImpl$Companion;
 
-    .line 124
+    .line 126
     const-class v0, Ljava/lang/Object;
 
     .line 127

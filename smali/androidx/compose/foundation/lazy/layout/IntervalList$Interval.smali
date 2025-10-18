@@ -23,7 +23,7 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/SourceDebugExtension;
-    value = "SMAP\nIntervalList.kt\nKotlin\n*S Kotlin\n*F\n+ 1 IntervalList.kt\nandroidx/compose/foundation/lazy/layout/IntervalList$Interval\n+ 2 fake.kt\nkotlin/jvm/internal/FakeKt\n*L\n1#1,216:1\n1#2:217\n*E\n"
+    value = "SMAP\nIntervalList.kt\nKotlin\n*S Kotlin\n*F\n+ 1 IntervalList.kt\nandroidx/compose/foundation/lazy/layout/IntervalList$Interval\n+ 2 fake.kt\nkotlin/jvm/internal/FakeKt\n*L\n1#1,222:1\n1#2:223\n*E\n"
 .end annotation
 
 .annotation runtime Lkotlin/Metadata;
@@ -90,16 +90,16 @@
         }
     .end annotation
 
-    .line 72
+    .line 75
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 76
+    .line 79
     iput p1, p0, Landroidx/compose/foundation/lazy/layout/IntervalList$Interval;->startIndex:I
 
-    .line 80
+    .line 83
     iput p2, p0, Landroidx/compose/foundation/lazy/layout/IntervalList$Interval;->size:I
 
-    .line 84
+    .line 87
     iput-object p3, p0, Landroidx/compose/foundation/lazy/layout/IntervalList$Interval;->value:Ljava/lang/Object;
 
     if-ltz p1, :cond_1
@@ -108,7 +108,7 @@
 
     return-void
 
-    .line 88
+    .line 91
     :cond_0
     new-instance p0, Ljava/lang/StringBuilder;
 
@@ -134,7 +134,7 @@
 
     throw p1
 
-    .line 87
+    .line 90
     :cond_1
     new-instance p0, Ljava/lang/StringBuilder;
 
@@ -166,7 +166,7 @@
 .method public final getSize()I
     .locals 0
 
-    .line 80
+    .line 83
     iget p0, p0, Landroidx/compose/foundation/lazy/layout/IntervalList$Interval;->size:I
 
     return p0
@@ -175,7 +175,7 @@
 .method public final getStartIndex()I
     .locals 0
 
-    .line 76
+    .line 79
     iget p0, p0, Landroidx/compose/foundation/lazy/layout/IntervalList$Interval;->startIndex:I
 
     return p0
@@ -189,7 +189,7 @@
         }
     .end annotation
 
-    .line 84
+    .line 87
     iget-object p0, p0, Landroidx/compose/foundation/lazy/layout/IntervalList$Interval;->value:Ljava/lang/Object;
 
     return-object p0

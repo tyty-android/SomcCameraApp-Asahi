@@ -134,7 +134,7 @@
 .method public bridge synthetic invoke()Ljava/lang/Object;
     .locals 0
 
-    .line 840
+    .line 844
     invoke-virtual {p0}, Landroidx/compose/material/SliderKt$CorrectValueSideEffect$1$1;->invoke()V
 
     sget-object p0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
@@ -145,7 +145,7 @@
 .method public final invoke()V
     .locals 3
 
-    .line 841
+    .line 845
     iget-object v0, p0, Landroidx/compose/material/SliderKt$CorrectValueSideEffect$1$1;->$valueRange:Lkotlin/ranges/ClosedFloatingPointRange;
 
     invoke-interface {v0}, Lkotlin/ranges/ClosedFloatingPointRange;->getEndInclusive()Ljava/lang/Comparable;
@@ -178,7 +178,7 @@
 
     div-float/2addr v0, v1
 
-    .line 842
+    .line 846
     iget-object v1, p0, Landroidx/compose/material/SliderKt$CorrectValueSideEffect$1$1;->$scaleToOffset:Lkotlin/jvm/functions/Function1;
 
     iget v2, p0, Landroidx/compose/material/SliderKt$CorrectValueSideEffect$1$1;->$value:F
@@ -197,7 +197,7 @@
 
     move-result v1
 
-    .line 843
+    .line 847
     iget-object v2, p0, Landroidx/compose/material/SliderKt$CorrectValueSideEffect$1$1;->$valueState:Landroidx/compose/runtime/MutableState;
 
     invoke-interface {v2}, Landroidx/compose/runtime/MutableState;->getValue()Ljava/lang/Object;
@@ -220,7 +220,7 @@
 
     if-lez v0, :cond_0
 
-    .line 844
+    .line 848
     iget-object v0, p0, Landroidx/compose/material/SliderKt$CorrectValueSideEffect$1$1;->$trackRange:Lkotlin/ranges/ClosedFloatingPointRange;
 
     iget-object v2, p0, Landroidx/compose/material/SliderKt$CorrectValueSideEffect$1$1;->$valueState:Landroidx/compose/runtime/MutableState;
@@ -237,7 +237,7 @@
 
     if-eqz v0, :cond_0
 
-    .line 845
+    .line 849
     iget-object p0, p0, Landroidx/compose/material/SliderKt$CorrectValueSideEffect$1$1;->$valueState:Landroidx/compose/runtime/MutableState;
 
     invoke-static {v1}, Ljava/lang/Float;->valueOf(F)Ljava/lang/Float;

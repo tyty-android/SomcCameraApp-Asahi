@@ -10,14 +10,21 @@
     }
 .end annotation
 
+.annotation system Ldalvik/annotation/SourceDebugExtension;
+    value = "SMAP\nUpdatableAnimationState.kt\nKotlin\n*S Kotlin\n*F\n+ 1 UpdatableAnimationState.kt\nandroidx/compose/foundation/gestures/UpdatableAnimationState\n+ 2 fake.kt\nkotlin/jvm/internal/FakeKt\n*L\n1#1,170:1\n1#2:171\n*E\n"
+.end annotation
+
 .annotation runtime Lkotlin/Metadata;
     d1 = {
-        "\u0000@\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\u0008\u0002\n\u0002\u0010\u000b\n\u0000\n\u0002\u0010\t\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0007\n\u0002\u0008\u0005\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0003\n\u0002\u0018\u0002\n\u0002\u0008\u0003\u0008\u0000\u0018\u0000 \u00192\u00020\u0001:\u0001\u0019B\u0005\u00a2\u0006\u0002\u0010\u0002JM\u0010\u000f\u001a\u00020\u00102!\u0010\u0011\u001a\u001d\u0012\u0013\u0012\u00110\n\u00a2\u0006\u000c\u0008\u0013\u0012\u0008\u0008\u0014\u0012\u0004\u0008\u0008(\u0015\u0012\u0004\u0012\u00020\u00100\u00122\u000c\u0010\u0016\u001a\u0008\u0012\u0004\u0012\u00020\u00100\u0017H\u0086@\u00f8\u0001\u0000\u0082\u0002\u0008\n\u0006\u0008\u0001\u0012\u0002\u0010\u0001\u00a2\u0006\u0002\u0010\u0018R\u000e\u0010\u0003\u001a\u00020\u0004X\u0082\u000e\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u0005\u001a\u00020\u0006X\u0082\u000e\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u0007\u001a\u00020\u0008X\u0082\u000e\u00a2\u0006\u0002\n\u0000R\u001a\u0010\t\u001a\u00020\nX\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\u0008\u000b\u0010\u000c\"\u0004\u0008\r\u0010\u000e\u0082\u0002\u0004\n\u0002\u0008\u0019\u00a8\u0006\u001a"
+        "\u0000J\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0018\u0002\n\u0002\u0010\u0007\n\u0002\u0008\u0002\n\u0002\u0010\u000b\n\u0000\n\u0002\u0010\t\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0006\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0003\n\u0002\u0018\u0002\n\u0002\u0008\u0003\u0008\u0000\u0018\u0000 \u001d2\u00020\u0001:\u0001\u001dB\u0013\u0012\u000c\u0010\u0002\u001a\u0008\u0012\u0004\u0012\u00020\u00040\u0003\u00a2\u0006\u0002\u0010\u0005JJ\u0010\u0013\u001a\u00020\u00142!\u0010\u0015\u001a\u001d\u0012\u0013\u0012\u00110\u0004\u00a2\u0006\u000c\u0008\u0017\u0012\u0008\u0008\u0018\u0012\u0004\u0008\u0008(\u0019\u0012\u0004\u0012\u00020\u00140\u00162\u000c\u0010\u001a\u001a\u0008\u0012\u0004\u0012\u00020\u00140\u001bH\u0086@\u0082\u0002\u0008\n\u0006\u0008\u0001\u0012\u0002\u0010\u0001\u00a2\u0006\u0002\u0010\u001cR\u000e\u0010\u0006\u001a\u00020\u0007X\u0082\u000e\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u0008\u001a\u00020\tX\u0082\u000e\u00a2\u0006\u0002\n\u0000R\u000e\u0010\n\u001a\u00020\u000bX\u0082\u000e\u00a2\u0006\u0002\n\u0000R\u001a\u0010\u000c\u001a\u00020\u0004X\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\u0008\r\u0010\u000e\"\u0004\u0008\u000f\u0010\u0010R\u0014\u0010\u0011\u001a\u0008\u0012\u0004\u0012\u00020\u000b0\u0012X\u0082\u0004\u00a2\u0006\u0002\n\u0000\u00a8\u0006\u001e"
     }
     d2 = {
         "Landroidx/compose/foundation/gestures/UpdatableAnimationState;",
         "",
-        "()V",
+        "animationSpec",
+        "Landroidx/compose/animation/core/AnimationSpec;",
+        "",
+        "(Landroidx/compose/animation/core/AnimationSpec;)V",
         "isRunning",
         "",
         "lastFrameTime",
@@ -25,11 +32,12 @@
         "lastVelocity",
         "Landroidx/compose/animation/core/AnimationVector1D;",
         "value",
-        "",
         "getValue",
         "()F",
         "setValue",
         "(F)V",
+        "vectorizedSpec",
+        "Landroidx/compose/animation/core/VectorizedAnimationSpec;",
         "animateToZero",
         "",
         "beforeFrame",
@@ -54,17 +62,9 @@
 
 
 # static fields
-.field private static final Companion:Landroidx/compose/foundation/gestures/UpdatableAnimationState$Companion;
+.field public static final $stable:I
 
-.field private static final RebasableAnimationSpec:Landroidx/compose/animation/core/VectorizedSpringSpec;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Landroidx/compose/animation/core/VectorizedSpringSpec<",
-            "Landroidx/compose/animation/core/AnimationVector1D;",
-            ">;"
-        }
-    .end annotation
-.end field
+.field private static final Companion:Landroidx/compose/foundation/gestures/UpdatableAnimationState$Companion;
 
 .field public static final VisibilityThreshold:F = 0.01f
     .annotation runtime Ljava/lang/Deprecated;
@@ -83,10 +83,20 @@
 
 .field private value:F
 
+.field private final vectorizedSpec:Landroidx/compose/animation/core/VectorizedAnimationSpec;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Landroidx/compose/animation/core/VectorizedAnimationSpec<",
+            "Landroidx/compose/animation/core/AnimationVector1D;",
+            ">;"
+        }
+    .end annotation
+.end field
+
 
 # direct methods
 .method static constructor <clinit>()V
-    .locals 3
+    .locals 2
 
     new-instance v0, Landroidx/compose/foundation/gestures/UpdatableAnimationState$Companion;
 
@@ -96,52 +106,58 @@
 
     sput-object v0, Landroidx/compose/foundation/gestures/UpdatableAnimationState;->Companion:Landroidx/compose/foundation/gestures/UpdatableAnimationState$Companion;
 
-    .line 164
+    const/16 v0, 0x8
+
+    sput v0, Landroidx/compose/foundation/gestures/UpdatableAnimationState;->$stable:I
+
+    .line 165
     new-instance v0, Landroidx/compose/animation/core/AnimationVector1D;
 
-    const/4 v2, 0x0
+    const/4 v1, 0x0
 
-    invoke-direct {v0, v2}, Landroidx/compose/animation/core/AnimationVector1D;-><init>(F)V
+    invoke-direct {v0, v1}, Landroidx/compose/animation/core/AnimationVector1D;-><init>(F)V
 
     sput-object v0, Landroidx/compose/foundation/gestures/UpdatableAnimationState;->ZeroVector:Landroidx/compose/animation/core/AnimationVector1D;
-
-    const/4 v0, 0x7
-
-    .line 170
-    invoke-static {v2, v2, v1, v0, v1}, Landroidx/compose/animation/core/AnimationSpecKt;->spring$default(FFLjava/lang/Object;ILjava/lang/Object;)Landroidx/compose/animation/core/SpringSpec;
-
-    move-result-object v0
-
-    sget-object v1, Lkotlin/jvm/internal/FloatCompanionObject;->INSTANCE:Lkotlin/jvm/internal/FloatCompanionObject;
-
-    invoke-static {v1}, Landroidx/compose/animation/core/VectorConvertersKt;->getVectorConverter(Lkotlin/jvm/internal/FloatCompanionObject;)Landroidx/compose/animation/core/TwoWayConverter;
-
-    move-result-object v1
-
-    invoke-virtual {v0, v1}, Landroidx/compose/animation/core/SpringSpec;->vectorize(Landroidx/compose/animation/core/TwoWayConverter;)Landroidx/compose/animation/core/VectorizedSpringSpec;
-
-    move-result-object v0
-
-    sput-object v0, Landroidx/compose/foundation/gestures/UpdatableAnimationState;->RebasableAnimationSpec:Landroidx/compose/animation/core/VectorizedSpringSpec;
 
     return-void
 .end method
 
-.method public constructor <init>()V
+.method public constructor <init>(Landroidx/compose/animation/core/AnimationSpec;)V
     .locals 2
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Landroidx/compose/animation/core/AnimationSpec<",
+            "Ljava/lang/Float;",
+            ">;)V"
+        }
+    .end annotation
 
     .line 51
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
+    .line 53
+    sget-object v0, Lkotlin/jvm/internal/FloatCompanionObject;->INSTANCE:Lkotlin/jvm/internal/FloatCompanionObject;
+
+    invoke-static {v0}, Landroidx/compose/animation/core/VectorConvertersKt;->getVectorConverter(Lkotlin/jvm/internal/FloatCompanionObject;)Landroidx/compose/animation/core/TwoWayConverter;
+
+    move-result-object v0
+
+    invoke-interface {p1, v0}, Landroidx/compose/animation/core/AnimationSpec;->vectorize(Landroidx/compose/animation/core/TwoWayConverter;)Landroidx/compose/animation/core/VectorizedAnimationSpec;
+
+    move-result-object p1
+
+    iput-object p1, p0, Landroidx/compose/foundation/gestures/UpdatableAnimationState;->vectorizedSpec:Landroidx/compose/animation/core/VectorizedAnimationSpec;
+
     const-wide/high16 v0, -0x8000000000000000L
 
-    .line 53
+    .line 54
     iput-wide v0, p0, Landroidx/compose/foundation/gestures/UpdatableAnimationState;->lastFrameTime:J
 
-    .line 54
-    sget-object v0, Landroidx/compose/foundation/gestures/UpdatableAnimationState;->ZeroVector:Landroidx/compose/animation/core/AnimationVector1D;
+    .line 55
+    sget-object p1, Landroidx/compose/foundation/gestures/UpdatableAnimationState;->ZeroVector:Landroidx/compose/animation/core/AnimationVector1D;
 
-    iput-object v0, p0, Landroidx/compose/foundation/gestures/UpdatableAnimationState;->lastVelocity:Landroidx/compose/animation/core/AnimationVector1D;
+    iput-object p1, p0, Landroidx/compose/foundation/gestures/UpdatableAnimationState;->lastVelocity:Landroidx/compose/animation/core/AnimationVector1D;
 
     return-void
 .end method
@@ -173,13 +189,13 @@
     return-object p0
 .end method
 
-.method public static final synthetic access$getRebasableAnimationSpec$cp()Landroidx/compose/animation/core/VectorizedSpringSpec;
-    .locals 1
+.method public static final synthetic access$getVectorizedSpec$p(Landroidx/compose/foundation/gestures/UpdatableAnimationState;)Landroidx/compose/animation/core/VectorizedAnimationSpec;
+    .locals 0
 
     .line 51
-    sget-object v0, Landroidx/compose/foundation/gestures/UpdatableAnimationState;->RebasableAnimationSpec:Landroidx/compose/animation/core/VectorizedSpringSpec;
+    iget-object p0, p0, Landroidx/compose/foundation/gestures/UpdatableAnimationState;->vectorizedSpec:Landroidx/compose/animation/core/VectorizedAnimationSpec;
 
-    return-object v0
+    return-object p0
 .end method
 
 .method public static final synthetic access$getZeroVector$cp()Landroidx/compose/animation/core/AnimationVector1D;
@@ -268,7 +284,7 @@
 
     move-result-object v1
 
-    .line 85
+    .line 86
     iget v2, v0, Landroidx/compose/foundation/gestures/UpdatableAnimationState$animateToZero$1;->label:I
 
     const/4 v3, 0x0
@@ -358,14 +374,14 @@
     :cond_3
     invoke-static {p3}, Lkotlin/ResultKt;->throwOnFailure(Ljava/lang/Object;)V
 
-    .line 90
+    .line 91
     iget-boolean p3, p0, Landroidx/compose/foundation/gestures/UpdatableAnimationState;->isRunning:Z
 
     xor-int/2addr p3, v8
 
     if-eqz p3, :cond_a
 
-    .line 92
+    .line 93
     invoke-interface {v0}, Lkotlin/coroutines/Continuation;->getContext()Lkotlin/coroutines/CoroutineContext;
 
     move-result-object p3
@@ -391,11 +407,11 @@
     :cond_4
     const/high16 p3, 0x3f800000    # 1.0f
 
-    .line 93
+    .line 94
     :goto_1
     iput-boolean v8, p0, Landroidx/compose/foundation/gestures/UpdatableAnimationState;->isRunning:Z
 
-    .line 99
+    .line 100
     :cond_5
     :try_start_2
     sget-object v2, Landroidx/compose/foundation/gestures/UpdatableAnimationState;->Companion:Landroidx/compose/foundation/gestures/UpdatableAnimationState$Companion;
@@ -408,10 +424,10 @@
 
     if-nez v2, :cond_7
 
-    .line 100
-    new-instance v2, Landroidx/compose/foundation/gestures/UpdatableAnimationState$animateToZero$3;
+    .line 101
+    new-instance v2, Landroidx/compose/foundation/gestures/UpdatableAnimationState$animateToZero$4;
 
-    invoke-direct {v2, p0, p3, p1}, Landroidx/compose/foundation/gestures/UpdatableAnimationState$animateToZero$3;-><init>(Landroidx/compose/foundation/gestures/UpdatableAnimationState;FLkotlin/jvm/functions/Function1;)V
+    invoke-direct {v2, p0, p3, p1}, Landroidx/compose/foundation/gestures/UpdatableAnimationState$animateToZero$4;-><init>(Landroidx/compose/foundation/gestures/UpdatableAnimationState;FLkotlin/jvm/functions/Function1;)V
 
     check-cast v2, Lkotlin/jvm/functions/Function1;
 
@@ -433,7 +449,7 @@
 
     return-object v1
 
-    .line 135
+    .line 136
     :cond_6
     :goto_2
     invoke-interface {p2}, Lkotlin/jvm/functions/Function0;->invoke()Ljava/lang/Object;
@@ -466,7 +482,7 @@
 
     goto :goto_6
 
-    .line 145
+    .line 146
     :goto_3
     :try_start_3
     iget p3, p1, Landroidx/compose/foundation/gestures/UpdatableAnimationState;->value:F
@@ -481,11 +497,11 @@
 
     goto :goto_5
 
-    .line 146
+    .line 147
     :cond_8
-    new-instance p3, Landroidx/compose/foundation/gestures/UpdatableAnimationState$animateToZero$4;
+    new-instance p3, Landroidx/compose/foundation/gestures/UpdatableAnimationState$animateToZero$5;
 
-    invoke-direct {p3, p1, p2}, Landroidx/compose/foundation/gestures/UpdatableAnimationState$animateToZero$4;-><init>(Landroidx/compose/foundation/gestures/UpdatableAnimationState;Lkotlin/jvm/functions/Function1;)V
+    invoke-direct {p3, p1, p2}, Landroidx/compose/foundation/gestures/UpdatableAnimationState$animateToZero$5;-><init>(Landroidx/compose/foundation/gestures/UpdatableAnimationState;Lkotlin/jvm/functions/Function1;)V
 
     check-cast p3, Lkotlin/jvm/functions/Function1;
 
@@ -507,49 +523,49 @@
 
     return-object v1
 
-    .line 153
+    .line 154
     :cond_9
     :goto_4
     invoke-interface {p0}, Lkotlin/jvm/functions/Function0;->invoke()Ljava/lang/Object;
     :try_end_3
     .catchall {:try_start_3 .. :try_end_3} :catchall_0
 
-    .line 156
+    .line 157
     :goto_5
     iput-wide v5, p1, Landroidx/compose/foundation/gestures/UpdatableAnimationState;->lastFrameTime:J
 
-    .line 157
+    .line 158
     sget-object p0, Landroidx/compose/foundation/gestures/UpdatableAnimationState;->ZeroVector:Landroidx/compose/animation/core/AnimationVector1D;
 
     iput-object p0, p1, Landroidx/compose/foundation/gestures/UpdatableAnimationState;->lastVelocity:Landroidx/compose/animation/core/AnimationVector1D;
 
-    .line 158
+    .line 159
     iput-boolean v4, p1, Landroidx/compose/foundation/gestures/UpdatableAnimationState;->isRunning:Z
 
-    .line 160
+    .line 161
     sget-object p0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
 
     return-object p0
 
-    .line 156
+    .line 157
     :goto_6
     iput-wide v5, p1, Landroidx/compose/foundation/gestures/UpdatableAnimationState;->lastFrameTime:J
 
-    .line 157
+    .line 158
     sget-object p2, Landroidx/compose/foundation/gestures/UpdatableAnimationState;->ZeroVector:Landroidx/compose/animation/core/AnimationVector1D;
 
     iput-object p2, p1, Landroidx/compose/foundation/gestures/UpdatableAnimationState;->lastVelocity:Landroidx/compose/animation/core/AnimationVector1D;
 
-    .line 158
+    .line 159
     iput-boolean v4, p1, Landroidx/compose/foundation/gestures/UpdatableAnimationState;->isRunning:Z
 
     throw p0
 
-    .line 90
+    .line 91
     :cond_a
     new-instance p0, Ljava/lang/IllegalStateException;
 
-    const-string p1, "Check failed."
+    const-string p1, "animateToZero called while previous animation is running"
 
     invoke-virtual {p1}, Ljava/lang/Object;->toString()Ljava/lang/String;
 
@@ -563,7 +579,7 @@
 .method public final getValue()F
     .locals 0
 
-    .line 67
+    .line 68
     iget p0, p0, Landroidx/compose/foundation/gestures/UpdatableAnimationState;->value:F
 
     return p0
@@ -572,7 +588,7 @@
 .method public final setValue(F)V
     .locals 0
 
-    .line 67
+    .line 68
     iput p1, p0, Landroidx/compose/foundation/gestures/UpdatableAnimationState;->value:F
 
     return-void

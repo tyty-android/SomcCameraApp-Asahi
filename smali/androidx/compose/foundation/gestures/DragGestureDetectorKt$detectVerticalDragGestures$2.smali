@@ -80,7 +80,7 @@
 .method public bridge synthetic invoke(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 2
 
-    .line 385
+    .line 384
     check-cast p1, Landroidx/compose/ui/geometry/Offset;
 
     invoke-virtual {p1}, Landroidx/compose/ui/geometry/Offset;->unbox-impl()J

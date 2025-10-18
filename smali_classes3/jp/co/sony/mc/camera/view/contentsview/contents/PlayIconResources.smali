@@ -34,7 +34,7 @@
     return p0
 
     :cond_0
-    const p0, 0x7f0802de
+    const p0, 0x7f0802f4
 
     return p0
 .end method

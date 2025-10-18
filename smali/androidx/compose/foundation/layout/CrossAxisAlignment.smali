@@ -66,6 +66,8 @@
 
 
 # static fields
+.field public static final $stable:I
+
 .field private static final Center:Landroidx/compose/foundation/layout/CrossAxisAlignment;
 
 .field public static final Companion:Landroidx/compose/foundation/layout/CrossAxisAlignment$Companion;
@@ -87,21 +89,21 @@
 
     sput-object v0, Landroidx/compose/foundation/layout/CrossAxisAlignment;->Companion:Landroidx/compose/foundation/layout/CrossAxisAlignment$Companion;
 
-    .line 180
+    .line 181
     sget-object v0, Landroidx/compose/foundation/layout/CrossAxisAlignment$CenterCrossAxisAlignment;->INSTANCE:Landroidx/compose/foundation/layout/CrossAxisAlignment$CenterCrossAxisAlignment;
 
     check-cast v0, Landroidx/compose/foundation/layout/CrossAxisAlignment;
 
     sput-object v0, Landroidx/compose/foundation/layout/CrossAxisAlignment;->Center:Landroidx/compose/foundation/layout/CrossAxisAlignment;
 
-    .line 187
+    .line 188
     sget-object v0, Landroidx/compose/foundation/layout/CrossAxisAlignment$StartCrossAxisAlignment;->INSTANCE:Landroidx/compose/foundation/layout/CrossAxisAlignment$StartCrossAxisAlignment;
 
     check-cast v0, Landroidx/compose/foundation/layout/CrossAxisAlignment;
 
     sput-object v0, Landroidx/compose/foundation/layout/CrossAxisAlignment;->Start:Landroidx/compose/foundation/layout/CrossAxisAlignment;
 
-    .line 194
+    .line 195
     sget-object v0, Landroidx/compose/foundation/layout/CrossAxisAlignment$EndCrossAxisAlignment;->INSTANCE:Landroidx/compose/foundation/layout/CrossAxisAlignment$EndCrossAxisAlignment;
 
     check-cast v0, Landroidx/compose/foundation/layout/CrossAxisAlignment;
@@ -114,7 +116,7 @@
 .method private constructor <init>()V
     .locals 0
 
-    .line 143
+    .line 144
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -131,7 +133,7 @@
 .method public static final synthetic access$getCenter$cp()Landroidx/compose/foundation/layout/CrossAxisAlignment;
     .locals 1
 
-    .line 143
+    .line 144
     sget-object v0, Landroidx/compose/foundation/layout/CrossAxisAlignment;->Center:Landroidx/compose/foundation/layout/CrossAxisAlignment;
 
     return-object v0
@@ -140,7 +142,7 @@
 .method public static final synthetic access$getEnd$cp()Landroidx/compose/foundation/layout/CrossAxisAlignment;
     .locals 1
 
-    .line 143
+    .line 144
     sget-object v0, Landroidx/compose/foundation/layout/CrossAxisAlignment;->End:Landroidx/compose/foundation/layout/CrossAxisAlignment;
 
     return-object v0
@@ -149,7 +151,7 @@
 .method public static final synthetic access$getStart$cp()Landroidx/compose/foundation/layout/CrossAxisAlignment;
     .locals 1
 
-    .line 143
+    .line 144
     sget-object v0, Landroidx/compose/foundation/layout/CrossAxisAlignment;->Start:Landroidx/compose/foundation/layout/CrossAxisAlignment;
 
     return-object v0
@@ -162,10 +164,6 @@
 
 .method public calculateAlignmentLinePosition$foundation_layout_release(Landroidx/compose/ui/layout/Placeable;)Ljava/lang/Integer;
     .locals 0
-
-    const-string p0, "placeable"
-
-    invoke-static {p1, p0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
     const/4 p0, 0x0
 

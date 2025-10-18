@@ -76,7 +76,7 @@
 .method public final invoke()Landroidx/compose/ui/platform/TextToolbar;
     .locals 0
 
-    .line 159
+    .line 151
     const-string p0, "LocalTextToolbar"
 
     invoke-static {p0}, Landroidx/compose/ui/platform/CompositionLocalsKt;->access$noLocalProvidedFor(Ljava/lang/String;)Ljava/lang/Void;
@@ -91,7 +91,7 @@
 .method public bridge synthetic invoke()Ljava/lang/Object;
     .locals 0
 
-    .line 158
+    .line 150
     invoke-virtual {p0}, Landroidx/compose/ui/platform/CompositionLocalsKt$LocalTextToolbar$1;->invoke()Landroidx/compose/ui/platform/TextToolbar;
 
     move-result-object p0

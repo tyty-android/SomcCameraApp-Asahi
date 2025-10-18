@@ -27,7 +27,7 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/SourceDebugExtension;
-    value = "SMAP\nAnimatedVisibility.kt\nKotlin\n*S Kotlin\n*F\n+ 1 AnimatedVisibility.kt\nandroidx/compose/animation/AnimatedEnterExitMeasurePolicy$measure$1\n+ 2 ListUtils.kt\nandroidx/compose/ui/util/ListUtilsKt\n*L\n1#1,863:1\n33#2,6:864\n*S KotlinDebug\n*F\n+ 1 AnimatedVisibility.kt\nandroidx/compose/animation/AnimatedEnterExitMeasurePolicy$measure$1\n*L\n801#1:864,6\n*E\n"
+    value = "SMAP\nAnimatedVisibility.kt\nKotlin\n*S Kotlin\n*F\n+ 1 AnimatedVisibility.kt\nandroidx/compose/animation/AnimatedEnterExitMeasurePolicy$measure$1\n+ 2 ListUtils.kt\nandroidx/compose/ui/util/ListUtilsKt\n*L\n1#1,919:1\n33#2,6:920\n*S KotlinDebug\n*F\n+ 1 AnimatedVisibility.kt\nandroidx/compose/animation/AnimatedEnterExitMeasurePolicy$measure$1\n*L\n857#1:920,6\n*E\n"
 .end annotation
 
 .annotation runtime Lkotlin/Metadata;
@@ -89,7 +89,7 @@
 .method public bridge synthetic invoke(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
 
-    .line 800
+    .line 856
     check-cast p1, Landroidx/compose/ui/layout/Placeable$PlacementScope;
 
     invoke-virtual {p0, p1}, Landroidx/compose/animation/AnimatedEnterExitMeasurePolicy$measure$1;->invoke(Landroidx/compose/ui/layout/Placeable$PlacementScope;)V
@@ -102,14 +102,10 @@
 .method public final invoke(Landroidx/compose/ui/layout/Placeable$PlacementScope;)V
     .locals 10
 
-    const-string v0, "$this$layout"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 801
+    .line 857
     iget-object p0, p0, Landroidx/compose/animation/AnimatedEnterExitMeasurePolicy$measure$1;->$placeables:Ljava/util/List;
 
-    .line 865
+    .line 921
     invoke-interface {p0}, Ljava/util/List;->size()I
 
     move-result v0
@@ -119,12 +115,12 @@
     :goto_0
     if-ge v1, v0, :cond_0
 
-    .line 866
+    .line 922
     invoke-interface {p0, v1}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
     move-result-object v2
 
-    .line 867
+    .line 923
     move-object v4, v2
 
     check-cast v4, Landroidx/compose/ui/layout/Placeable;
@@ -141,7 +137,7 @@
 
     move-object v3, p1
 
-    .line 802
+    .line 858
     invoke-static/range {v3 .. v9}, Landroidx/compose/ui/layout/Placeable$PlacementScope;->place$default(Landroidx/compose/ui/layout/Placeable$PlacementScope;Landroidx/compose/ui/layout/Placeable;IIFILjava/lang/Object;)V
 
     add-int/lit8 v1, v1, 0x1

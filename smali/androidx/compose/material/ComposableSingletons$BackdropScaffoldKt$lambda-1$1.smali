@@ -82,7 +82,7 @@
 .method public bridge synthetic invoke(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
 
-    .line 274
+    .line 276
     check-cast p1, Landroidx/compose/material/SnackbarHostState;
 
     check-cast p2, Landroidx/compose/runtime/Composer;
@@ -103,11 +103,7 @@
 .method public final invoke(Landroidx/compose/material/SnackbarHostState;Landroidx/compose/runtime/Composer;I)V
     .locals 8
 
-    const-string p0, "it"
-
-    invoke-static {p1, p0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string p0, "C273@12626L16:BackdropScaffold.kt#jmzs0o"
+    const-string p0, "C275@12672L16:BackdropScaffold.kt#jmzs0o"
 
     invoke-static {p2, p0}, Landroidx/compose/runtime/ComposerKt;->sourceInformation(Landroidx/compose/runtime/Composer;Ljava/lang/String;)V
 
@@ -138,7 +134,7 @@
 
     if-ne p0, v0, :cond_3
 
-    .line 274
+    .line 276
     invoke-interface {p2}, Landroidx/compose/runtime/Composer;->getSkipping()Z
 
     move-result p0
@@ -162,7 +158,7 @@
 
     const/4 p0, -0x1
 
-    const-string v0, "androidx.compose.material.ComposableSingletons$BackdropScaffoldKt.lambda-1.<anonymous> (BackdropScaffold.kt:273)"
+    const-string v0, "androidx.compose.material.ComposableSingletons$BackdropScaffoldKt.lambda-1.<anonymous> (BackdropScaffold.kt:275)"
 
     const v1, 0xdad0f74
 

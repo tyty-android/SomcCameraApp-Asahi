@@ -26,11 +26,7 @@
 
 # direct methods
 .method public static final invalidateParentData(Landroidx/compose/ui/node/ParentDataModifierNode;)V
-    .locals 1
-
-    const-string v0, "<this>"
-
-    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+    .locals 0
 
     .line 44
     check-cast p0, Landroidx/compose/ui/node/DelegatableNode;

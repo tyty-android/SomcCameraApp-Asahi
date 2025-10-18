@@ -1,6 +1,6 @@
 .class public final Landroidx/compose/ui/tooling/animation/AnimationSearch$AnimateXAsStateSearchInfo;
 .super Ljava/lang/Object;
-.source "AnimationSearch.kt"
+.source "AnimationSearch.android.kt"
 
 
 # annotations
@@ -111,7 +111,7 @@
 .end method
 
 .method public constructor <init>(Landroidx/compose/animation/core/Animatable;Landroidx/compose/animation/core/AnimationSpec;Landroidx/compose/ui/tooling/animation/ToolingState;)V
-    .locals 1
+    .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -124,28 +124,16 @@
         }
     .end annotation
 
-    const-string v0, "animatable"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string v0, "animationSpec"
-
-    invoke-static {p2, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string/jumbo v0, "toolingState"
-
-    invoke-static {p3, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 228
+    .line 268
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 229
+    .line 269
     iput-object p1, p0, Landroidx/compose/ui/tooling/animation/AnimationSearch$AnimateXAsStateSearchInfo;->animatable:Landroidx/compose/animation/core/Animatable;
 
-    .line 230
+    .line 270
     iput-object p2, p0, Landroidx/compose/ui/tooling/animation/AnimationSearch$AnimateXAsStateSearchInfo;->animationSpec:Landroidx/compose/animation/core/AnimationSpec;
 
-    .line 231
+    .line 271
     iput-object p3, p0, Landroidx/compose/ui/tooling/animation/AnimationSearch$AnimateXAsStateSearchInfo;->toolingState:Landroidx/compose/ui/tooling/animation/ToolingState;
 
     return-void
@@ -245,18 +233,6 @@
         }
     .end annotation
 
-    const-string p0, "animatable"
-
-    invoke-static {p1, p0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string p0, "animationSpec"
-
-    invoke-static {p2, p0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string/jumbo p0, "toolingState"
-
-    invoke-static {p3, p0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
     new-instance p0, Landroidx/compose/ui/tooling/animation/AnimationSearch$AnimateXAsStateSearchInfo;
 
     invoke-direct {p0, p1, p2, p3}, Landroidx/compose/ui/tooling/animation/AnimationSearch$AnimateXAsStateSearchInfo;-><init>(Landroidx/compose/animation/core/Animatable;Landroidx/compose/animation/core/AnimationSpec;Landroidx/compose/ui/tooling/animation/ToolingState;)V
@@ -337,7 +313,7 @@
         }
     .end annotation
 
-    .line 229
+    .line 269
     iget-object p0, p0, Landroidx/compose/ui/tooling/animation/AnimationSearch$AnimateXAsStateSearchInfo;->animatable:Landroidx/compose/animation/core/Animatable;
 
     return-object p0
@@ -353,7 +329,7 @@
         }
     .end annotation
 
-    .line 230
+    .line 270
     iget-object p0, p0, Landroidx/compose/ui/tooling/animation/AnimationSearch$AnimateXAsStateSearchInfo;->animationSpec:Landroidx/compose/animation/core/AnimationSpec;
 
     return-object p0
@@ -369,7 +345,7 @@
         }
     .end annotation
 
-    .line 231
+    .line 271
     iget-object p0, p0, Landroidx/compose/ui/tooling/animation/AnimationSearch$AnimateXAsStateSearchInfo;->toolingState:Landroidx/compose/ui/tooling/animation/ToolingState;
 
     return-object p0

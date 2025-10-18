@@ -78,7 +78,7 @@
 
     move-result-object p0
 
-    const-string/jumbo v0, "this as java.lang.annota\u2026otation).annotationType()"
+    const-string v0, "annotationType(...)"
 
     invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
 
@@ -116,7 +116,7 @@
 
     move-result-object p0
 
-    const-string/jumbo v0, "this as java.lang.Enum<E>).declaringClass"
+    const-string v0, "getDeclaringClass(...)"
 
     invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
 
@@ -260,11 +260,13 @@
 
     goto/16 :goto_0
 
+    .line 66
     :cond_1
     const-class p0, Ljava/lang/Short;
 
     goto/16 :goto_0
 
+    .line 62
     :sswitch_1
     const-string v2, "float"
 
@@ -276,11 +278,13 @@
 
     goto :goto_0
 
+    .line 68
     :cond_2
     const-class p0, Ljava/lang/Float;
 
     goto :goto_0
 
+    .line 62
     :sswitch_2
     const-string v2, "boolean"
 
@@ -292,11 +296,13 @@
 
     goto :goto_0
 
+    .line 63
     :cond_3
     const-class p0, Ljava/lang/Boolean;
 
     goto :goto_0
 
+    .line 62
     :sswitch_3
     const-string/jumbo v2, "void"
 
@@ -308,11 +314,13 @@
 
     goto :goto_0
 
+    .line 71
     :cond_4
     const-class p0, Ljava/lang/Void;
 
     goto :goto_0
 
+    .line 62
     :sswitch_4
     const-string v2, "long"
 
@@ -324,11 +332,13 @@
 
     goto :goto_0
 
+    .line 69
     :cond_5
     const-class p0, Ljava/lang/Long;
 
     goto :goto_0
 
+    .line 62
     :sswitch_5
     const-string v2, "char"
 
@@ -340,11 +350,13 @@
 
     goto :goto_0
 
+    .line 64
     :cond_6
     const-class p0, Ljava/lang/Character;
 
     goto :goto_0
 
+    .line 62
     :sswitch_6
     const-string v2, "byte"
 
@@ -356,11 +368,13 @@
 
     goto :goto_0
 
+    .line 65
     :cond_7
     const-class p0, Ljava/lang/Byte;
 
     goto :goto_0
 
+    .line 62
     :sswitch_7
     const-string v2, "int"
 
@@ -372,11 +386,13 @@
 
     goto :goto_0
 
+    .line 67
     :cond_8
     const-class p0, Ljava/lang/Integer;
 
     goto :goto_0
 
+    .line 62
     :sswitch_8
     const-string v2, "double"
 
@@ -388,9 +404,11 @@
 
     goto :goto_0
 
+    .line 70
     :cond_9
     const-class p0, Ljava/lang/Double;
 
+    .line 62
     :cond_a
     :goto_0
     invoke-static {p0, v1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;Ljava/lang/String;)V
@@ -478,11 +496,13 @@
 
     goto/16 :goto_0
 
+    .line 47
     :cond_1
     sget-object p0, Ljava/lang/Double;->TYPE:Ljava/lang/Class;
 
     goto/16 :goto_1
 
+    .line 39
     :sswitch_1
     const-string v0, "java.lang.Void"
 
@@ -512,11 +532,13 @@
 
     goto :goto_0
 
+    .line 46
     :cond_3
     sget-object p0, Ljava/lang/Long;->TYPE:Ljava/lang/Class;
 
     goto :goto_1
 
+    .line 39
     :sswitch_3
     const-string v0, "java.lang.Byte"
 
@@ -528,11 +550,13 @@
 
     goto :goto_0
 
+    .line 42
     :cond_4
     sget-object p0, Ljava/lang/Byte;->TYPE:Ljava/lang/Class;
 
     goto :goto_1
 
+    .line 39
     :sswitch_4
     const-string v0, "java.lang.Boolean"
 
@@ -544,11 +568,13 @@
 
     goto :goto_0
 
+    .line 40
     :cond_5
     sget-object p0, Ljava/lang/Boolean;->TYPE:Ljava/lang/Class;
 
     goto :goto_1
 
+    .line 39
     :sswitch_5
     const-string v0, "java.lang.Character"
 
@@ -560,11 +586,13 @@
 
     goto :goto_0
 
+    .line 41
     :cond_6
     sget-object p0, Ljava/lang/Character;->TYPE:Ljava/lang/Class;
 
     goto :goto_1
 
+    .line 39
     :sswitch_6
     const-string v0, "java.lang.Short"
 
@@ -576,11 +604,13 @@
 
     goto :goto_0
 
+    .line 43
     :cond_7
     sget-object p0, Ljava/lang/Short;->TYPE:Ljava/lang/Class;
 
     goto :goto_1
 
+    .line 39
     :sswitch_7
     const-string v0, "java.lang.Float"
 
@@ -592,11 +622,13 @@
 
     goto :goto_0
 
+    .line 45
     :cond_8
     sget-object p0, Ljava/lang/Float;->TYPE:Ljava/lang/Class;
 
     goto :goto_1
 
+    .line 39
     :sswitch_8
     const-string v0, "java.lang.Integer"
 
@@ -608,6 +640,7 @@
 
     goto :goto_0
 
+    .line 44
     :cond_9
     sget-object p0, Ljava/lang/Integer;->TYPE:Ljava/lang/Class;
 
@@ -716,6 +749,7 @@
 
     const/4 v0, 0x4
 
+    .line 102
     const-string v1, "T"
 
     invoke-static {v0, v1}, Lkotlin/jvm/internal/Intrinsics;->reifiedOperationMarker(ILjava/lang/String;)V
@@ -726,7 +760,6 @@
 
     check-cast v1, Ljava/lang/Class;
 
-    .line 102
     invoke-virtual {p0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     move-result-object p0

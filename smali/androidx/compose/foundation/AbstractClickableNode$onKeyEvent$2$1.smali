@@ -53,7 +53,7 @@
     f = "Clickable.kt"
     i = {}
     l = {
-        0x2d7
+        0x333
     }
     m = "invokeSuspend"
     n = {}
@@ -174,7 +174,7 @@
 
     move-result-object v0
 
-    .line 726
+    .line 818
     iget v1, p0, Landroidx/compose/foundation/AbstractClickableNode$onKeyEvent$2$1;->label:I
 
     const/4 v2, 0x1
@@ -199,7 +199,7 @@
     :cond_1
     invoke-static {p1}, Lkotlin/ResultKt;->throwOnFailure(Ljava/lang/Object;)V
 
-    .line 727
+    .line 819
     iget-object p1, p0, Landroidx/compose/foundation/AbstractClickableNode$onKeyEvent$2$1;->this$0:Landroidx/compose/foundation/AbstractClickableNode;
 
     invoke-static {p1}, Landroidx/compose/foundation/AbstractClickableNode;->access$getInteractionSource$p(Landroidx/compose/foundation/AbstractClickableNode;)Landroidx/compose/foundation/interaction/MutableInteractionSource;
@@ -228,7 +228,7 @@
 
     return-object v0
 
-    .line 728
+    .line 820
     :cond_2
     :goto_0
     sget-object p0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;

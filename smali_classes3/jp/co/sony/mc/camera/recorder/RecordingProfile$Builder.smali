@@ -27,6 +27,8 @@
 
 .field private mFileFormat:I
 
+.field private mIsAutoFraming:Ljava/lang/Boolean;
+
 .field private mIsStreaming:Ljava/lang/Boolean;
 
 .field private mOperatingRate:I
@@ -64,7 +66,7 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 259
+    .line 265
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -73,36 +75,52 @@
 .method private setupOutputFormatWithQuality(I)V
     .locals 1
 
-    if-eqz p1, :cond_0
+    if-eqz p1, :cond_1
 
     const/4 v0, 0x2
 
-    if-eq p1, v0, :cond_0
+    if-eq p1, v0, :cond_1
 
-    .line 355
+    .line 366
+    iget-object p1, p0, Ljp/co/sony/mc/camera/recorder/RecordingProfile$Builder;->mIsAutoFraming:Ljava/lang/Boolean;
+
+    invoke-virtual {p1}, Ljava/lang/Boolean;->booleanValue()Z
+
+    move-result p1
+
+    if-eqz p1, :cond_0
+
+    .line 367
+    const-string p1, "_framing.mp4"
+
+    goto :goto_0
+
+    .line 368
+    :cond_0
     const-string p1, ".mp4"
 
+    :goto_0
     iput-object p1, p0, Ljp/co/sony/mc/camera/recorder/RecordingProfile$Builder;->mResultExt:Ljava/lang/String;
 
-    .line 356
+    .line 369
     const-string/jumbo p1, "video/mp4"
 
     iput-object p1, p0, Ljp/co/sony/mc/camera/recorder/RecordingProfile$Builder;->mResultMimeType:Ljava/lang/String;
 
-    goto :goto_0
+    goto :goto_1
 
-    .line 350
-    :cond_0
+    .line 361
+    :cond_1
     const-string p1, ".3gp"
 
     iput-object p1, p0, Ljp/co/sony/mc/camera/recorder/RecordingProfile$Builder;->mResultExt:Ljava/lang/String;
 
-    .line 351
+    .line 362
     const-string/jumbo p1, "video/3gpp"
 
     iput-object p1, p0, Ljp/co/sony/mc/camera/recorder/RecordingProfile$Builder;->mResultMimeType:Ljava/lang/String;
 
-    :goto_0
+    :goto_1
     return-void
 .end method
 
@@ -111,13 +129,13 @@
 
     const/4 v0, 0x2
 
-    .line 362
+    .line 375
     iput v0, p0, Ljp/co/sony/mc/camera/recorder/RecordingProfile$Builder;->mFileFormat:I
 
-    .line 363
+    .line 376
     iput v0, p0, Ljp/co/sony/mc/camera/recorder/RecordingProfile$Builder;->mVideoEncoder:I
 
-    .line 364
+    .line 377
     iget-object v1, p0, Ljp/co/sony/mc/camera/recorder/RecordingProfile$Builder;->mIsStreaming:Ljava/lang/Boolean;
 
     invoke-virtual {v1}, Ljava/lang/Boolean;->booleanValue()Z
@@ -128,41 +146,41 @@
 
     if-eqz v1, :cond_0
 
-    .line 366
+    .line 379
     iput v0, p0, Ljp/co/sony/mc/camera/recorder/RecordingProfile$Builder;->mVideoBitRateMode:I
 
-    .line 367
+    .line 380
     iput v0, p0, Ljp/co/sony/mc/camera/recorder/RecordingProfile$Builder;->mVideoIFrameInterval:I
 
     goto :goto_0
 
-    .line 370
+    .line 383
     :cond_0
     iput v2, p0, Ljp/co/sony/mc/camera/recorder/RecordingProfile$Builder;->mVideoBitRateMode:I
 
-    .line 371
+    .line 384
     iput v2, p0, Ljp/co/sony/mc/camera/recorder/RecordingProfile$Builder;->mVideoIFrameInterval:I
 
     :goto_0
     const/4 v1, 0x3
 
-    .line 374
+    .line 387
     iput v1, p0, Ljp/co/sony/mc/camera/recorder/RecordingProfile$Builder;->mAudioCodec:I
 
     const v3, 0x26160
 
-    .line 375
+    .line 388
     iput v3, p0, Ljp/co/sony/mc/camera/recorder/RecordingProfile$Builder;->mAudioBitRate:I
 
     const v3, 0xbb80
 
-    .line 376
+    .line 389
     iput v3, p0, Ljp/co/sony/mc/camera/recorder/RecordingProfile$Builder;->mAudioSampleRate:I
 
-    .line 377
+    .line 390
     iput v0, p0, Ljp/co/sony/mc/camera/recorder/RecordingProfile$Builder;->mAudioChannels:I
 
-    .line 379
+    .line 392
     iget-object v3, p0, Ljp/co/sony/mc/camera/recorder/RecordingProfile$Builder;->mVideoSize:Ljp/co/sony/mc/camera/configuration/parameters/VideoSize;
 
     invoke-static {v3}, Ljp/co/sony/mc/camera/recorder/RecordingProfile;->-$$Nest$smdecideQuality(Ljp/co/sony/mc/camera/configuration/parameters/VideoSize;)I
@@ -171,16 +189,22 @@
 
     iput v3, p0, Ljp/co/sony/mc/camera/recorder/RecordingProfile$Builder;->mQuality:I
 
-    .line 381
+    .line 394
     iget-object v3, p0, Ljp/co/sony/mc/camera/recorder/RecordingProfile$Builder;->mVideoStabilizer:Ljp/co/sony/mc/camera/configuration/parameters/VideoStabilizer;
 
     sget-object v4, Ljp/co/sony/mc/camera/configuration/parameters/VideoStabilizer;->INTELLIGENT_ACTIVE:Ljp/co/sony/mc/camera/configuration/parameters/VideoStabilizer;
 
     if-eq v3, v4, :cond_2
 
+    iget-object v3, p0, Ljp/co/sony/mc/camera/recorder/RecordingProfile$Builder;->mVideoStabilizer:Ljp/co/sony/mc/camera/configuration/parameters/VideoStabilizer;
+
+    sget-object v4, Ljp/co/sony/mc/camera/configuration/parameters/VideoStabilizer;->ACTION_MODE:Ljp/co/sony/mc/camera/configuration/parameters/VideoStabilizer;
+
+    if-eq v3, v4, :cond_2
+
     iget-object v3, p0, Ljp/co/sony/mc/camera/recorder/RecordingProfile$Builder;->mCaptureFps:Ljp/co/sony/mc/camera/configuration/parameters/CaptureFps;
 
-    .line 382
+    .line 396
     invoke-virtual {v3}, Ljp/co/sony/mc/camera/configuration/parameters/CaptureFps;->getFpsIntValue()I
 
     move-result v3
@@ -196,7 +220,7 @@
     :cond_1
     const/4 v3, 0x0
 
-    .line 385
+    .line 399
     iput v3, p0, Ljp/co/sony/mc/camera/recorder/RecordingProfile$Builder;->mOperatingRate:I
 
     goto :goto_2
@@ -205,10 +229,10 @@
     :goto_1
     const/16 v3, 0x78
 
-    .line 383
+    .line 397
     iput v3, p0, Ljp/co/sony/mc/camera/recorder/RecordingProfile$Builder;->mOperatingRate:I
 
-    .line 388
+    .line 402
     :goto_2
     iget-object v3, p0, Ljp/co/sony/mc/camera/recorder/RecordingProfile$Builder;->mVideoHdr:Ljp/co/sony/mc/camera/configuration/parameters/VideoHdr;
 
@@ -218,12 +242,12 @@
 
     if-ne v3, v4, :cond_3
 
-    .line 389
+    .line 403
     iput v5, p0, Ljp/co/sony/mc/camera/recorder/RecordingProfile$Builder;->mVideoEncoder:I
 
     goto :goto_3
 
-    .line 390
+    .line 404
     :cond_3
     iget-object v3, p0, Ljp/co/sony/mc/camera/recorder/RecordingProfile$Builder;->mVideoSize:Ljp/co/sony/mc/camera/configuration/parameters/VideoSize;
 
@@ -237,16 +261,16 @@
 
     if-ne v3, v4, :cond_4
 
-    .line 392
+    .line 406
     iput v5, p0, Ljp/co/sony/mc/camera/recorder/RecordingProfile$Builder;->mVideoEncoder:I
 
     goto :goto_3
 
-    .line 394
+    .line 408
     :cond_4
     iput v0, p0, Ljp/co/sony/mc/camera/recorder/RecordingProfile$Builder;->mVideoEncoder:I
 
-    .line 397
+    .line 411
     :goto_3
     iget-object v3, p0, Ljp/co/sony/mc/camera/recorder/RecordingProfile$Builder;->mIsStreaming:Ljava/lang/Boolean;
 
@@ -256,7 +280,7 @@
 
     if-eqz v3, :cond_5
 
-    .line 398
+    .line 412
     iget-object v0, p0, Ljp/co/sony/mc/camera/recorder/RecordingProfile$Builder;->mVideoSize:Ljp/co/sony/mc/camera/configuration/parameters/VideoSize;
 
     iget-object v1, p0, Ljp/co/sony/mc/camera/recorder/RecordingProfile$Builder;->mVideoQuality:Ljp/co/sony/mc/camera/configuration/parameters/VideoQuality;
@@ -269,7 +293,7 @@
 
     goto/16 :goto_4
 
-    .line 400
+    .line 414
     :cond_5
     sget-object v3, Ljp/co/sony/mc/camera/recorder/RecordingProfile$1;->$SwitchMap$jp$co$sony$mc$camera$configuration$parameters$VideoSize:[I
 
@@ -300,23 +324,23 @@
     :cond_6
     const v0, 0x33450
 
-    .line 507
+    .line 521
     iput v0, p0, Ljp/co/sony/mc/camera/recorder/RecordingProfile$Builder;->mVideoBitRate:I
 
-    .line 508
+    .line 522
     iput v2, p0, Ljp/co/sony/mc/camera/recorder/RecordingProfile$Builder;->mAudioCodec:I
 
     const/16 v0, 0x2fa8
 
-    .line 509
+    .line 523
     iput v0, p0, Ljp/co/sony/mc/camera/recorder/RecordingProfile$Builder;->mAudioBitRate:I
 
     const/16 v0, 0x1f40
 
-    .line 510
+    .line 524
     iput v0, p0, Ljp/co/sony/mc/camera/recorder/RecordingProfile$Builder;->mAudioSampleRate:I
 
-    .line 511
+    .line 525
     iput v2, p0, Ljp/co/sony/mc/camera/recorder/RecordingProfile$Builder;->mAudioChannels:I
 
     goto/16 :goto_4
@@ -324,12 +348,12 @@
     :cond_7
     const v0, 0x3640e3
 
-    .line 504
+    .line 518
     iput v0, p0, Ljp/co/sony/mc/camera/recorder/RecordingProfile$Builder;->mVideoBitRate:I
 
     goto/16 :goto_4
 
-    .line 468
+    .line 482
     :cond_8
     iget-object v3, p0, Ljp/co/sony/mc/camera/recorder/RecordingProfile$Builder;->mVideoFps:Ljp/co/sony/mc/camera/configuration/parameters/VideoFps;
 
@@ -347,12 +371,12 @@
 
     if-eq v3, v5, :cond_9
 
-    .line 469
+    .line 483
     iput v7, p0, Ljp/co/sony/mc/camera/recorder/RecordingProfile$Builder;->mVideoBitRate:I
 
     goto/16 :goto_4
 
-    .line 471
+    .line 485
     :cond_9
     sget-object v3, Ljp/co/sony/mc/camera/recorder/RecordingProfile$1;->$SwitchMap$jp$co$sony$mc$camera$configuration$parameters$CaptureFps:[I
 
@@ -376,7 +400,7 @@
 
     goto/16 :goto_4
 
-    .line 494
+    .line 508
     :cond_a
     iget-object v1, p0, Ljp/co/sony/mc/camera/recorder/RecordingProfile$Builder;->mVideoHdr:Ljp/co/sony/mc/camera/configuration/parameters/VideoHdr;
 
@@ -384,7 +408,7 @@
 
     if-ne v1, v2, :cond_b
 
-    .line 495
+    .line 509
     iput v0, p0, Ljp/co/sony/mc/camera/recorder/RecordingProfile$Builder;->mVideoBitRate:I
 
     goto/16 :goto_4
@@ -392,12 +416,12 @@
     :cond_b
     const v0, 0x90f560
 
-    .line 497
+    .line 511
     iput v0, p0, Ljp/co/sony/mc/camera/recorder/RecordingProfile$Builder;->mVideoBitRate:I
 
     goto/16 :goto_4
 
-    .line 487
+    .line 501
     :cond_c
     iget-object v1, p0, Ljp/co/sony/mc/camera/recorder/RecordingProfile$Builder;->mVideoHdr:Ljp/co/sony/mc/camera/configuration/parameters/VideoHdr;
 
@@ -407,18 +431,18 @@
 
     const v0, 0xf42400
 
-    .line 488
+    .line 502
     iput v0, p0, Ljp/co/sony/mc/camera/recorder/RecordingProfile$Builder;->mVideoBitRate:I
 
     goto/16 :goto_4
 
-    .line 490
+    .line 504
     :cond_d
     iput v0, p0, Ljp/co/sony/mc/camera/recorder/RecordingProfile$Builder;->mVideoBitRate:I
 
     goto/16 :goto_4
 
-    .line 480
+    .line 494
     :cond_e
     iget-object v0, p0, Ljp/co/sony/mc/camera/recorder/RecordingProfile$Builder;->mVideoHdr:Ljp/co/sony/mc/camera/configuration/parameters/VideoHdr;
 
@@ -428,18 +452,18 @@
 
     const v0, 0x16e3600
 
-    .line 481
+    .line 495
     iput v0, p0, Ljp/co/sony/mc/camera/recorder/RecordingProfile$Builder;->mVideoBitRate:I
 
     goto/16 :goto_4
 
-    .line 483
+    .line 497
     :cond_f
     iput v4, p0, Ljp/co/sony/mc/camera/recorder/RecordingProfile$Builder;->mVideoBitRate:I
 
     goto/16 :goto_4
 
-    .line 473
+    .line 487
     :cond_10
     iget-object v0, p0, Ljp/co/sony/mc/camera/recorder/RecordingProfile$Builder;->mVideoHdr:Ljp/co/sony/mc/camera/configuration/parameters/VideoHdr;
 
@@ -447,18 +471,18 @@
 
     if-ne v0, v1, :cond_11
 
-    .line 474
+    .line 488
     iput v7, p0, Ljp/co/sony/mc/camera/recorder/RecordingProfile$Builder;->mVideoBitRate:I
 
     goto/16 :goto_4
 
-    .line 476
+    .line 490
     :cond_11
     iput v7, p0, Ljp/co/sony/mc/camera/recorder/RecordingProfile$Builder;->mVideoBitRate:I
 
     goto/16 :goto_4
 
-    .line 435
+    .line 449
     :cond_12
     sget-object v3, Ljp/co/sony/mc/camera/recorder/RecordingProfile$1;->$SwitchMap$jp$co$sony$mc$camera$configuration$parameters$CaptureFps:[I
 
@@ -478,25 +502,25 @@
 
     if-eq v3, v1, :cond_14
 
-    .line 459
+    .line 473
     iget-object v1, p0, Ljp/co/sony/mc/camera/recorder/RecordingProfile$Builder;->mVideoHdr:Ljp/co/sony/mc/camera/configuration/parameters/VideoHdr;
 
     sget-object v2, Ljp/co/sony/mc/camera/configuration/parameters/VideoHdr;->HDR_ON:Ljp/co/sony/mc/camera/configuration/parameters/VideoHdr;
 
     if-ne v1, v2, :cond_13
 
-    .line 460
+    .line 474
     iput v0, p0, Ljp/co/sony/mc/camera/recorder/RecordingProfile$Builder;->mVideoBitRate:I
 
     goto/16 :goto_4
 
-    .line 462
+    .line 476
     :cond_13
     iput v4, p0, Ljp/co/sony/mc/camera/recorder/RecordingProfile$Builder;->mVideoBitRate:I
 
     goto/16 :goto_4
 
-    .line 451
+    .line 465
     :cond_14
     iget-object v1, p0, Ljp/co/sony/mc/camera/recorder/RecordingProfile$Builder;->mVideoHdr:Ljp/co/sony/mc/camera/configuration/parameters/VideoHdr;
 
@@ -506,18 +530,18 @@
 
     const v0, 0x15ef3c0
 
-    .line 452
+    .line 466
     iput v0, p0, Ljp/co/sony/mc/camera/recorder/RecordingProfile$Builder;->mVideoBitRate:I
 
     goto/16 :goto_4
 
-    .line 454
+    .line 468
     :cond_15
     iput v0, p0, Ljp/co/sony/mc/camera/recorder/RecordingProfile$Builder;->mVideoBitRate:I
 
     goto/16 :goto_4
 
-    .line 444
+    .line 458
     :cond_16
     iget-object v0, p0, Ljp/co/sony/mc/camera/recorder/RecordingProfile$Builder;->mVideoHdr:Ljp/co/sony/mc/camera/configuration/parameters/VideoHdr;
 
@@ -527,7 +551,7 @@
 
     const v0, 0x2255100
 
-    .line 445
+    .line 459
     iput v0, p0, Ljp/co/sony/mc/camera/recorder/RecordingProfile$Builder;->mVideoBitRate:I
 
     goto/16 :goto_4
@@ -535,12 +559,12 @@
     :cond_17
     const v0, 0x1c9c380
 
-    .line 447
+    .line 461
     iput v0, p0, Ljp/co/sony/mc/camera/recorder/RecordingProfile$Builder;->mVideoBitRate:I
 
     goto :goto_4
 
-    .line 437
+    .line 451
     :cond_18
     iget-object v0, p0, Ljp/co/sony/mc/camera/recorder/RecordingProfile$Builder;->mVideoHdr:Ljp/co/sony/mc/camera/configuration/parameters/VideoHdr;
 
@@ -550,18 +574,18 @@
 
     if-ne v0, v1, :cond_19
 
-    .line 438
+    .line 452
     iput v2, p0, Ljp/co/sony/mc/camera/recorder/RecordingProfile$Builder;->mVideoBitRate:I
 
     goto :goto_4
 
-    .line 440
+    .line 454
     :cond_19
     iput v2, p0, Ljp/co/sony/mc/camera/recorder/RecordingProfile$Builder;->mVideoBitRate:I
 
     goto :goto_4
 
-    .line 402
+    .line 416
     :cond_1a
     sget-object v3, Ljp/co/sony/mc/camera/recorder/RecordingProfile$1;->$SwitchMap$jp$co$sony$mc$camera$configuration$parameters$CaptureFps:[I
 
@@ -581,14 +605,14 @@
 
     if-eq v3, v1, :cond_1c
 
-    .line 426
+    .line 440
     iget-object v1, p0, Ljp/co/sony/mc/camera/recorder/RecordingProfile$Builder;->mVideoHdr:Ljp/co/sony/mc/camera/configuration/parameters/VideoHdr;
 
     sget-object v2, Ljp/co/sony/mc/camera/configuration/parameters/VideoHdr;->HDR_ON:Ljp/co/sony/mc/camera/configuration/parameters/VideoHdr;
 
     if-ne v1, v2, :cond_1b
 
-    .line 427
+    .line 441
     iput v0, p0, Ljp/co/sony/mc/camera/recorder/RecordingProfile$Builder;->mVideoBitRate:I
 
     goto :goto_4
@@ -596,12 +620,12 @@
     :cond_1b
     const v0, 0x29f6300
 
-    .line 429
+    .line 443
     iput v0, p0, Ljp/co/sony/mc/camera/recorder/RecordingProfile$Builder;->mVideoBitRate:I
 
     goto :goto_4
 
-    .line 418
+    .line 432
     :cond_1c
     iget-object v1, p0, Ljp/co/sony/mc/camera/recorder/RecordingProfile$Builder;->mVideoHdr:Ljp/co/sony/mc/camera/configuration/parameters/VideoHdr;
 
@@ -611,18 +635,18 @@
 
     const v0, 0x42c1d80
 
-    .line 419
+    .line 433
     iput v0, p0, Ljp/co/sony/mc/camera/recorder/RecordingProfile$Builder;->mVideoBitRate:I
 
     goto :goto_4
 
-    .line 421
+    .line 435
     :cond_1d
     iput v0, p0, Ljp/co/sony/mc/camera/recorder/RecordingProfile$Builder;->mVideoBitRate:I
 
     goto :goto_4
 
-    .line 411
+    .line 425
     :cond_1e
     iget-object v0, p0, Ljp/co/sony/mc/camera/recorder/RecordingProfile$Builder;->mVideoHdr:Ljp/co/sony/mc/camera/configuration/parameters/VideoHdr;
 
@@ -632,18 +656,18 @@
 
     if-ne v0, v1, :cond_1f
 
-    .line 412
+    .line 426
     iput v2, p0, Ljp/co/sony/mc/camera/recorder/RecordingProfile$Builder;->mVideoBitRate:I
 
     goto :goto_4
 
-    .line 414
+    .line 428
     :cond_1f
     iput v2, p0, Ljp/co/sony/mc/camera/recorder/RecordingProfile$Builder;->mVideoBitRate:I
 
     goto :goto_4
 
-    .line 404
+    .line 418
     :cond_20
     iget-object v0, p0, Ljp/co/sony/mc/camera/recorder/RecordingProfile$Builder;->mVideoHdr:Ljp/co/sony/mc/camera/configuration/parameters/VideoHdr;
 
@@ -653,16 +677,16 @@
 
     if-ne v0, v1, :cond_21
 
-    .line 405
+    .line 419
     iput v2, p0, Ljp/co/sony/mc/camera/recorder/RecordingProfile$Builder;->mVideoBitRate:I
 
     goto :goto_4
 
-    .line 407
+    .line 421
     :cond_21
     iput v2, p0, Ljp/co/sony/mc/camera/recorder/RecordingProfile$Builder;->mVideoBitRate:I
 
-    .line 520
+    .line 534
     :goto_4
     iget-object v0, p0, Ljp/co/sony/mc/camera/recorder/RecordingProfile$Builder;->mVideoFps:Ljp/co/sony/mc/camera/configuration/parameters/VideoFps;
 
@@ -682,7 +706,7 @@
 
     div-double/2addr v0, v2
 
-    .line 521
+    .line 535
     iget v2, p0, Ljp/co/sony/mc/camera/recorder/RecordingProfile$Builder;->mVideoBitRate:I
 
     int-to-double v2, v2
@@ -693,14 +717,14 @@
 
     iput v0, p0, Ljp/co/sony/mc/camera/recorder/RecordingProfile$Builder;->mVideoBitRate:I
 
-    .line 523
+    .line 537
     iget-object v0, p0, Ljp/co/sony/mc/camera/recorder/RecordingProfile$Builder;->mVideoSize:Ljp/co/sony/mc/camera/configuration/parameters/VideoSize;
 
     invoke-virtual {v0}, Ljp/co/sony/mc/camera/configuration/parameters/VideoSize;->getVideoRect()Landroid/graphics/Rect;
 
     move-result-object v0
 
-    .line 525
+    .line 539
     invoke-virtual {v0}, Landroid/graphics/Rect;->width()I
 
     move-result v1
@@ -717,7 +741,7 @@
 
     if-eq v1, v2, :cond_23
 
-    .line 526
+    .line 540
     :cond_22
     invoke-virtual {v0}, Landroid/graphics/Rect;->width()I
 
@@ -725,7 +749,7 @@
 
     iput v1, p0, Ljp/co/sony/mc/camera/recorder/RecordingProfile$Builder;->mVideoFrameWidth:I
 
-    .line 527
+    .line 541
     invoke-virtual {v0}, Landroid/graphics/Rect;->height()I
 
     move-result v0
@@ -739,39 +763,39 @@
 
 # virtual methods
 .method public build()Ljp/co/sony/mc/camera/recorder/RecordingProfile;
-    .locals 32
+    .locals 33
 
     move-object/from16 v0, p0
 
-    .line 298
+    .line 309
     invoke-direct/range {p0 .. p0}, Ljp/co/sony/mc/camera/recorder/RecordingProfile$Builder;->setupRecordingProfile()V
 
-    .line 300
+    .line 311
     iget-object v1, v0, Ljp/co/sony/mc/camera/recorder/RecordingProfile$Builder;->mVideoSize:Ljp/co/sony/mc/camera/configuration/parameters/VideoSize;
 
     sget-object v2, Ljp/co/sony/mc/camera/configuration/parameters/VideoSize;->MMS:Ljp/co/sony/mc/camera/configuration/parameters/VideoSize;
 
     if-eq v1, v2, :cond_0
 
-    .line 301
+    .line 312
     iget v1, v0, Ljp/co/sony/mc/camera/recorder/RecordingProfile$Builder;->mQuality:I
 
     invoke-direct {v0, v1}, Ljp/co/sony/mc/camera/recorder/RecordingProfile$Builder;->setupOutputFormatWithQuality(I)V
 
     goto :goto_0
 
-    .line 303
+    .line 314
     :cond_0
     const-string v1, ".mp4"
 
     iput-object v1, v0, Ljp/co/sony/mc/camera/recorder/RecordingProfile$Builder;->mResultExt:Ljava/lang/String;
 
-    .line 304
+    .line 315
     const-string/jumbo v1, "video/mp4"
 
     iput-object v1, v0, Ljp/co/sony/mc/camera/recorder/RecordingProfile$Builder;->mResultMimeType:Ljava/lang/String;
 
-    .line 309
+    .line 320
     :goto_0
     iget-object v1, v0, Ljp/co/sony/mc/camera/recorder/RecordingProfile$Builder;->mVideoSize:Ljp/co/sony/mc/camera/configuration/parameters/VideoSize;
 
@@ -789,7 +813,7 @@
     :goto_1
     move/from16 v24, v1
 
-    .line 313
+    .line 324
     iget v1, v0, Ljp/co/sony/mc/camera/recorder/RecordingProfile$Builder;->mAudioBitRate:I
 
     int-to-long v2, v1
@@ -800,12 +824,12 @@
 
     const-wide/16 v6, 0x3c
 
-    .line 314
+    .line 325
     invoke-static/range {v2 .. v7}, Ljp/co/sony/mc/camera/recorder/RecordingProfile;->-$$Nest$smcomputeSize(JJJ)J
 
     move-result-wide v20
 
-    .line 315
+    .line 326
     iget v1, v0, Ljp/co/sony/mc/camera/recorder/RecordingProfile$Builder;->mAudioBitRate:I
 
     int-to-long v2, v1
@@ -820,7 +844,7 @@
 
     move-result-wide v22
 
-    .line 321
+    .line 332
     iget-object v1, v0, Ljp/co/sony/mc/camera/recorder/RecordingProfile$Builder;->mVideoHdr:Ljp/co/sony/mc/camera/configuration/parameters/VideoHdr;
 
     sget-object v2, Ljp/co/sony/mc/camera/configuration/parameters/VideoHdr;->HDR_ON:Ljp/co/sony/mc/camera/configuration/parameters/VideoHdr;
@@ -833,7 +857,7 @@
 
     goto :goto_3
 
-    .line 326
+    .line 337
     :cond_2
     iget v1, v0, Ljp/co/sony/mc/camera/recorder/RecordingProfile$Builder;->mVideoFrameHeight:I
 
@@ -851,7 +875,7 @@
     :goto_2
     const/4 v2, 0x3
 
-    .line 334
+    .line 345
     :goto_3
     new-instance v15, Ljp/co/sony/mc/camera/recorder/RecorderParameters$DataSpace;
 
@@ -859,7 +883,7 @@
 
     invoke-direct {v15, v1, v2, v4}, Ljp/co/sony/mc/camera/recorder/RecorderParameters$DataSpace;-><init>(III)V
 
-    .line 336
+    .line 347
     new-instance v1, Ljp/co/sony/mc/camera/recorder/RecordingProfile;
 
     iget v4, v0, Ljp/co/sony/mc/camera/recorder/RecordingProfile$Builder;->mFileFormat:I
@@ -872,7 +896,7 @@
 
     iget-object v2, v0, Ljp/co/sony/mc/camera/recorder/RecordingProfile$Builder;->mCaptureFps:Ljp/co/sony/mc/camera/configuration/parameters/CaptureFps;
 
-    .line 337
+    .line 348
     invoke-virtual {v2}, Ljp/co/sony/mc/camera/configuration/parameters/CaptureFps;->getFpsIntValue()I
 
     move-result v6
@@ -925,12 +949,12 @@
 
     if-ne v3, v2, :cond_4
 
-    const/16 v30, 0x1
+    const/16 v31, 0x1
 
     goto :goto_4
 
     :cond_4
-    move/from16 v30, v28
+    move/from16 v31, v28
 
     :goto_4
     iget-object v2, v0, Ljp/co/sony/mc/camera/recorder/RecordingProfile$Builder;->mVideoHdr:Ljp/co/sony/mc/camera/configuration/parameters/VideoHdr;
@@ -939,22 +963,28 @@
 
     if-ne v2, v3, :cond_5
 
-    const/16 v31, 0x1
+    const/16 v32, 0x1
 
     goto :goto_5
 
     :cond_5
-    move/from16 v31, v28
+    move/from16 v32, v28
 
     :goto_5
-    iget-object v0, v0, Ljp/co/sony/mc/camera/recorder/RecordingProfile$Builder;->mIsStreaming:Ljava/lang/Boolean;
+    iget-object v2, v0, Ljp/co/sony/mc/camera/recorder/RecordingProfile$Builder;->mIsStreaming:Ljava/lang/Boolean;
 
-    .line 342
-    invoke-virtual {v0}, Ljava/lang/Boolean;->booleanValue()Z
+    .line 353
+    invoke-virtual {v2}, Ljava/lang/Boolean;->booleanValue()Z
 
     move-result v28
 
-    const/16 v29, 0x0
+    iget-object v0, v0, Ljp/co/sony/mc/camera/recorder/RecordingProfile$Builder;->mIsAutoFraming:Ljava/lang/Boolean;
+
+    invoke-virtual {v0}, Ljava/lang/Boolean;->booleanValue()Z
+
+    move-result v29
+
+    const/16 v30, 0x0
 
     move/from16 v0, v27
 
@@ -1004,11 +1034,11 @@
 
     move-object/from16 v25, v0
 
-    move/from16 v26, v30
+    move/from16 v26, v31
 
-    move/from16 v27, v31
+    move/from16 v27, v32
 
-    invoke-direct/range {v2 .. v29}, Ljp/co/sony/mc/camera/recorder/RecordingProfile;-><init>(IIIIIIIIIIIIIIILjava/lang/String;Ljava/lang/String;JJILjp/co/sony/mc/camera/recorder/RecorderParameters$DataSpace;ZZZLjp/co/sony/mc/camera/recorder/RecordingProfile-IA;)V
+    invoke-direct/range {v2 .. v30}, Ljp/co/sony/mc/camera/recorder/RecordingProfile;-><init>(IIIIIIIIIIIIIIILjava/lang/String;Ljava/lang/String;JJILjp/co/sony/mc/camera/recorder/RecorderParameters$DataSpace;ZZZZLjp/co/sony/mc/camera/recorder/RecordingProfile-IA;)V
 
     return-object v1
 .end method
@@ -1016,8 +1046,17 @@
 .method public captureFps(Ljp/co/sony/mc/camera/configuration/parameters/CaptureFps;)Ljp/co/sony/mc/camera/recorder/RecordingProfile$Builder;
     .locals 0
 
-    .line 268
+    .line 274
     iput-object p1, p0, Ljp/co/sony/mc/camera/recorder/RecordingProfile$Builder;->mCaptureFps:Ljp/co/sony/mc/camera/configuration/parameters/CaptureFps;
+
+    return-object p0
+.end method
+
+.method public isAutoFraming(Ljava/lang/Boolean;)Ljp/co/sony/mc/camera/recorder/RecordingProfile$Builder;
+    .locals 0
+
+    .line 299
+    iput-object p1, p0, Ljp/co/sony/mc/camera/recorder/RecordingProfile$Builder;->mIsAutoFraming:Ljava/lang/Boolean;
 
     return-object p0
 .end method
@@ -1025,7 +1064,7 @@
 .method public isStreaming(Ljava/lang/Boolean;)Ljp/co/sony/mc/camera/recorder/RecordingProfile$Builder;
     .locals 0
 
-    .line 288
+    .line 294
     iput-object p1, p0, Ljp/co/sony/mc/camera/recorder/RecordingProfile$Builder;->mIsStreaming:Ljava/lang/Boolean;
 
     return-object p0
@@ -1034,7 +1073,7 @@
 .method public videoFps(Ljp/co/sony/mc/camera/configuration/parameters/VideoFps;)Ljp/co/sony/mc/camera/recorder/RecordingProfile$Builder;
     .locals 0
 
-    .line 273
+    .line 279
     iput-object p1, p0, Ljp/co/sony/mc/camera/recorder/RecordingProfile$Builder;->mVideoFps:Ljp/co/sony/mc/camera/configuration/parameters/VideoFps;
 
     return-object p0
@@ -1043,7 +1082,7 @@
 .method public videoHdr(Ljp/co/sony/mc/camera/configuration/parameters/VideoHdr;)Ljp/co/sony/mc/camera/recorder/RecordingProfile$Builder;
     .locals 0
 
-    .line 278
+    .line 284
     iput-object p1, p0, Ljp/co/sony/mc/camera/recorder/RecordingProfile$Builder;->mVideoHdr:Ljp/co/sony/mc/camera/configuration/parameters/VideoHdr;
 
     return-object p0
@@ -1052,7 +1091,7 @@
 .method public videoQuality(Ljp/co/sony/mc/camera/configuration/parameters/VideoQuality;)Ljp/co/sony/mc/camera/recorder/RecordingProfile$Builder;
     .locals 0
 
-    .line 293
+    .line 304
     iput-object p1, p0, Ljp/co/sony/mc/camera/recorder/RecordingProfile$Builder;->mVideoQuality:Ljp/co/sony/mc/camera/configuration/parameters/VideoQuality;
 
     return-object p0
@@ -1061,7 +1100,7 @@
 .method public videoSize(Ljp/co/sony/mc/camera/configuration/parameters/VideoSize;)Ljp/co/sony/mc/camera/recorder/RecordingProfile$Builder;
     .locals 0
 
-    .line 263
+    .line 269
     iput-object p1, p0, Ljp/co/sony/mc/camera/recorder/RecordingProfile$Builder;->mVideoSize:Ljp/co/sony/mc/camera/configuration/parameters/VideoSize;
 
     return-object p0
@@ -1070,7 +1109,7 @@
 .method public videoStabilizer(Ljp/co/sony/mc/camera/configuration/parameters/VideoStabilizer;)Ljp/co/sony/mc/camera/recorder/RecordingProfile$Builder;
     .locals 0
 
-    .line 283
+    .line 289
     iput-object p1, p0, Ljp/co/sony/mc/camera/recorder/RecordingProfile$Builder;->mVideoStabilizer:Ljp/co/sony/mc/camera/configuration/parameters/VideoStabilizer;
 
     return-object p0

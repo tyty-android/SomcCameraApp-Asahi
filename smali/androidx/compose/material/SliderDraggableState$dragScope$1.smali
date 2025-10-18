@@ -49,7 +49,7 @@
 
     iput-object p1, p0, Landroidx/compose/material/SliderDraggableState$dragScope$1;->this$0:Landroidx/compose/material/SliderDraggableState;
 
-    .line 1172
+    .line 1176
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -60,7 +60,7 @@
 .method public dragBy(F)V
     .locals 0
 
-    .line 1173
+    .line 1177
     iget-object p0, p0, Landroidx/compose/material/SliderDraggableState$dragScope$1;->this$0:Landroidx/compose/material/SliderDraggableState;
 
     invoke-virtual {p0}, Landroidx/compose/material/SliderDraggableState;->getOnDelta()Lkotlin/jvm/functions/Function1;

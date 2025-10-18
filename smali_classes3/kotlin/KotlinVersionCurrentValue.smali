@@ -53,20 +53,18 @@
 .end method
 
 .method public static final get()Lkotlin/KotlinVersion;
-    .locals 4
+    .locals 3
     .annotation runtime Lkotlin/jvm/JvmStatic;
     .end annotation
 
     .line 82
     new-instance v0, Lkotlin/KotlinVersion;
 
-    const/16 v1, 0x9
+    const/4 v1, 0x2
 
     const/4 v2, 0x0
 
-    const/4 v3, 0x1
-
-    invoke-direct {v0, v3, v1, v2}, Lkotlin/KotlinVersion;-><init>(III)V
+    invoke-direct {v0, v1, v2, v2}, Lkotlin/KotlinVersion;-><init>(III)V
 
     return-object v0
 .end method

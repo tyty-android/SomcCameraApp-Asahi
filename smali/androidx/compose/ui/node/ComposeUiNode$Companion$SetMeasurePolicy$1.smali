@@ -96,14 +96,6 @@
 .method public final invoke(Landroidx/compose/ui/node/ComposeUiNode;Landroidx/compose/ui/layout/MeasurePolicy;)V
     .locals 0
 
-    const-string p0, "$this$null"
-
-    invoke-static {p1, p0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string p0, "it"
-
-    invoke-static {p2, p0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
     .line 52
     invoke-interface {p1, p2}, Landroidx/compose/ui/node/ComposeUiNode;->setMeasurePolicy(Landroidx/compose/ui/layout/MeasurePolicy;)V
 

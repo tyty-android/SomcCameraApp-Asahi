@@ -74,13 +74,13 @@
 .method public constructor <init>(ZZ)V
     .locals 0
 
-    .line 837
+    .line 858
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 839
+    .line 860
     iput-boolean p1, p0, Landroidx/compose/ui/input/pointer/ConsumedData;->positionChange:Z
 
-    .line 845
+    .line 866
     iput-boolean p2, p0, Landroidx/compose/ui/input/pointer/ConsumedData;->downChange:Z
 
     return-void
@@ -104,7 +104,7 @@
 
     move p2, v0
 
-    .line 838
+    .line 859
     :cond_1
     invoke-direct {p0, p1, p2}, Landroidx/compose/ui/input/pointer/ConsumedData;-><init>(ZZ)V
 
@@ -134,7 +134,7 @@
 .method public final getDownChange()Z
     .locals 0
 
-    .line 849
+    .line 870
     iget-boolean p0, p0, Landroidx/compose/ui/input/pointer/ConsumedData;->downChange:Z
 
     return p0
@@ -143,7 +143,7 @@
 .method public final getPositionChange()Z
     .locals 0
 
-    .line 843
+    .line 864
     iget-boolean p0, p0, Landroidx/compose/ui/input/pointer/ConsumedData;->positionChange:Z
 
     return p0
@@ -152,7 +152,7 @@
 .method public final setDownChange(Z)V
     .locals 0
 
-    .line 849
+    .line 870
     iput-boolean p1, p0, Landroidx/compose/ui/input/pointer/ConsumedData;->downChange:Z
 
     return-void
@@ -161,7 +161,7 @@
 .method public final setPositionChange(Z)V
     .locals 0
 
-    .line 843
+    .line 864
     iput-boolean p1, p0, Landroidx/compose/ui/input/pointer/ConsumedData;->positionChange:Z
 
     return-void

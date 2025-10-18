@@ -24,35 +24,36 @@
 
 .annotation runtime Lkotlin/Metadata;
     d1 = {
-        "\u0000,\n\u0002\u0018\u0002\n\u0002\u0010\u0010\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0008\n\u0002\u0008\u0004\n\u0002\u0010\u000e\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0003\n\u0002\u0010\u000b\n\u0002\u0008\u0005\u0008\u0086\u0081\u0002\u0018\u0000 \u00132\u0008\u0012\u0004\u0012\u00020\u00000\u00012\u00020\u0002:\u0001\u0013B\u0017\u0008\u0002\u0012\u0006\u0010\u0003\u001a\u00020\u0004\u0012\u0006\u0010\u0005\u001a\u00020\u0004\u00a2\u0006\u0002\u0010\u0006J\u0008\u0010\u0007\u001a\u00020\u0004H\u0016J\u0008\u0010\u0008\u001a\u00020\tH\u0016J\u000c\u0010\n\u001a\u0006\u0012\u0002\u0008\u00030\u000bH\u0016J\u0008\u0010\u000c\u001a\u00020\u0004H\u0016J\u0008\u0010\r\u001a\u00020\tH\u0016J\u0008\u0010\u000e\u001a\u00020\u000fH\u0016R\u000e\u0010\u0003\u001a\u00020\u0004X\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u0005\u001a\u00020\u0004X\u0082\u0004\u00a2\u0006\u0002\n\u0000j\u0002\u0008\u0010j\u0002\u0008\u0011j\u0002\u0008\u0012\u00a8\u0006\u0014"
+        "\u0000.\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0010\u0010\n\u0000\n\u0002\u0010\u0008\n\u0002\u0008\u0007\n\u0002\u0018\u0002\n\u0002\u0008\u0003\n\u0002\u0010\u000e\n\u0002\u0008\u0002\n\u0002\u0010\u000b\n\u0002\u0008\u0002\u0008\u0086\u0081\u0002\u0018\u0000 \u00142\u00020\u00012\u0008\u0012\u0004\u0012\u00020\u00000\u0002:\u0001\u0014B\u0019\u0008\u0002\u0012\u0006\u0010\u0003\u001a\u00020\u0004\u0012\u0006\u0010\u0005\u001a\u00020\u0004\u00a2\u0006\u0004\u0008\u0006\u0010\u0007J\u000c\u0010\u000b\u001a\u0006\u0012\u0002\u0008\u00030\u000cH\u0016J\u0008\u0010\r\u001a\u00020\u0004H\u0016J\u0008\u0010\u000e\u001a\u00020\u0004H\u0016J\u0008\u0010\u000f\u001a\u00020\u0010H\u0016J\u0008\u0010\u0011\u001a\u00020\u0010H\u0016J\u0008\u0010\u0012\u001a\u00020\u0013H\u0016R\u000e\u0010\u0003\u001a\u00020\u0004X\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u0005\u001a\u00020\u0004X\u0082\u0004\u00a2\u0006\u0002\n\u0000j\u0002\u0008\u0008j\u0002\u0008\tj\u0002\u0008\n\u00a8\u0006\u0015"
     }
     d2 = {
         "Ljp/co/sony/mc/camera/configuration/parameters/StreamingConnectMode;",
-        "",
         "Ljp/co/sony/mc/camera/configuration/parameters/UserSettingValue;",
+        "",
         "mIconId",
         "",
         "mTextId",
+        "<init>",
         "(Ljava/lang/String;III)V",
-        "getIconId",
-        "getName",
-        "",
-        "getSettingKey",
-        "Ljp/co/sony/mc/camera/setting/SettingKey$Key;",
-        "getTextId",
-        "getValue",
-        "isCurrentValueVisible",
-        "",
         "RTMP_URL",
         "YOUTUBE",
         "FACEBOOK",
+        "getSettingKey",
+        "Ljp/co/sony/mc/camera/setting/SettingKey$Key;",
+        "getIconId",
+        "getTextId",
+        "getName",
+        "",
+        "getValue",
+        "isCurrentValueVisible",
+        "",
         "Companion",
         "SomcCamera_release"
     }
     k = 0x1
     mv = {
-        0x1,
-        0x9,
+        0x2,
+        0x0,
         0x0
     }
     xi = 0x30
@@ -102,7 +103,7 @@
     .line 15
     new-instance v0, Ljp/co/sony/mc/camera/configuration/parameters/StreamingConnectMode;
 
-    const v1, 0x7f110161
+    const v1, 0x7f110164
 
     const-string v2, "RTMP_URL"
 
@@ -119,7 +120,7 @@
 
     const/4 v1, 0x1
 
-    const v2, 0x7f110162
+    const v2, 0x7f110165
 
     const-string v3, "YOUTUBE"
 
@@ -132,7 +133,7 @@
 
     const/4 v1, 0x2
 
-    const v2, 0x7f110160
+    const v2, 0x7f110163
 
     const-string v3, "FACEBOOK"
 
@@ -236,6 +237,7 @@
 
     move-result-object p0
 
+    .line 95
     check-cast p0, Ljp/co/sony/mc/camera/configuration/parameters/StreamingConnectMode;
 
     return-object p0
@@ -246,10 +248,11 @@
 
     sget-object v0, Ljp/co/sony/mc/camera/configuration/parameters/StreamingConnectMode;->$VALUES:[Ljp/co/sony/mc/camera/configuration/parameters/StreamingConnectMode;
 
-    invoke-virtual {v0}, [Ljava/lang/Object;->clone()Ljava/lang/Object;
+    invoke-virtual {v0}, Ljava/lang/Object;->clone()Ljava/lang/Object;
 
     move-result-object v0
 
+    .line 95
     check-cast v0, [Ljp/co/sony/mc/camera/configuration/parameters/StreamingConnectMode;
 
     return-object v0

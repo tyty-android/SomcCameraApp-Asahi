@@ -1,6 +1,6 @@
 .class final Landroidx/compose/ui/tooling/PreviewActivity$setParameterizedContent$1;
 .super Lkotlin/jvm/internal/Lambda;
-.source "PreviewActivity.kt"
+.source "PreviewActivity.android.kt"
 
 # interfaces
 .implements Lkotlin/jvm/functions/Function2;
@@ -28,7 +28,7 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/SourceDebugExtension;
-    value = "SMAP\nPreviewActivity.kt\nKotlin\n*S Kotlin\n*F\n+ 1 PreviewActivity.kt\nandroidx/compose/ui/tooling/PreviewActivity$setParameterizedContent$1\n+ 2 Composables.kt\nandroidx/compose/runtime/ComposablesKt\n+ 3 Composer.kt\nandroidx/compose/runtime/ComposerKt\n*L\n1#1,145:1\n25#2:146\n1097#3,6:147\n*S KotlinDebug\n*F\n+ 1 PreviewActivity.kt\nandroidx/compose/ui/tooling/PreviewActivity$setParameterizedContent$1\n*L\n110#1:146\n110#1:147,6\n*E\n"
+    value = "SMAP\nPreviewActivity.android.kt\nKotlin\n*S Kotlin\n*F\n+ 1 PreviewActivity.android.kt\nandroidx/compose/ui/tooling/PreviewActivity$setParameterizedContent$1\n+ 2 Composables.kt\nandroidx/compose/runtime/ComposablesKt\n+ 3 Composer.kt\nandroidx/compose/runtime/ComposerKt\n*L\n1#1,145:1\n25#2:146\n1116#3,6:147\n*S KotlinDebug\n*F\n+ 1 PreviewActivity.android.kt\nandroidx/compose/ui/tooling/PreviewActivity$setParameterizedContent$1\n*L\n110#1:146\n110#1:147,6\n*E\n"
 .end annotation
 
 .annotation runtime Lkotlin/Metadata;
@@ -106,7 +106,7 @@
 
     move/from16 v1, p2
 
-    const-string v2, "C109@4593L33,111@4644L837:PreviewActivity.kt#hevd2p"
+    const-string v2, "C109@4613L33,111@4664L837:PreviewActivity.android.kt#hevd2p"
 
     invoke-static {v15, v2}, Landroidx/compose/runtime/ComposerKt;->sourceInformation(Landroidx/compose/runtime/Composer;Ljava/lang/String;)V
 
@@ -142,9 +142,9 @@
 
     const/4 v2, -0x1
 
-    const-string v3, "androidx.compose.ui.tooling.PreviewActivity.setParameterizedContent.<anonymous> (PreviewActivity.kt:108)"
+    const-string v3, "androidx.compose.ui.tooling.PreviewActivity.setParameterizedContent.<anonymous> (PreviewActivity.android.kt:109)"
 
-    const v4, -0x6776ed02
+    const v4, -0x33602623    # -8.3807976E7f
 
     invoke-static {v4, v1, v2, v3}, Landroidx/compose/runtime/ComposerKt;->traceEventStart(IIILjava/lang/String;)V
 
@@ -195,7 +195,7 @@
 
     invoke-direct {v2, v1, v3}, Landroidx/compose/ui/tooling/PreviewActivity$setParameterizedContent$1$1;-><init>(Landroidx/compose/runtime/MutableIntState;[Ljava/lang/Object;)V
 
-    const v3, 0x7f69a7c6
+    const v3, 0x392326a5
 
     const/4 v4, 0x1
 
@@ -218,7 +218,7 @@
 
     invoke-direct {v2, v3, v5, v0, v1}, Landroidx/compose/ui/tooling/PreviewActivity$setParameterizedContent$1$2;-><init>(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/Object;Landroidx/compose/runtime/MutableIntState;)V
 
-    const v0, -0x5e14aa44
+    const v0, 0x36a7e9b
 
     invoke-static {v15, v0, v4, v2}, Landroidx/compose/runtime/internal/ComposableLambdaKt;->composableLambda(Landroidx/compose/runtime/Composer;IZLjava/lang/Object;)Landroidx/compose/runtime/internal/ComposableLambda;
 

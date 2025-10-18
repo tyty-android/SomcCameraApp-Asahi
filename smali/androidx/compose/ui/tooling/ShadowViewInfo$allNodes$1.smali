@@ -1,6 +1,6 @@
 .class final Landroidx/compose/ui/tooling/ShadowViewInfo$allNodes$1;
 .super Lkotlin/coroutines/jvm/internal/RestrictedSuspendLambda;
-.source "ShadowViewInfo.kt"
+.source "ShadowViewInfo.android.kt"
 
 # interfaces
 .implements Lkotlin/jvm/functions/Function2;
@@ -34,7 +34,7 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/SourceDebugExtension;
-    value = "SMAP\nShadowViewInfo.kt\nKotlin\n*S Kotlin\n*F\n+ 1 ShadowViewInfo.kt\nandroidx/compose/ui/tooling/ShadowViewInfo$allNodes$1\n+ 2 _Collections.kt\nkotlin/collections/CollectionsKt___CollectionsKt\n*L\n1#1,120:1\n1373#2:121\n1461#2,5:122\n1855#2,2:127\n*S KotlinDebug\n*F\n+ 1 ShadowViewInfo.kt\nandroidx/compose/ui/tooling/ShadowViewInfo$allNodes$1\n*L\n46#1:121\n46#1:122,5\n46#1:127,2\n*E\n"
+    value = "SMAP\nShadowViewInfo.android.kt\nKotlin\n*S Kotlin\n*F\n+ 1 ShadowViewInfo.android.kt\nandroidx/compose/ui/tooling/ShadowViewInfo$allNodes$1\n+ 2 _Collections.kt\nkotlin/collections/CollectionsKt___CollectionsKt\n*L\n1#1,121:1\n1373#2:122\n1461#2,5:123\n1855#2,2:128\n*S KotlinDebug\n*F\n+ 1 ShadowViewInfo.android.kt\nandroidx/compose/ui/tooling/ShadowViewInfo$allNodes$1\n*L\n46#1:122\n46#1:123,5\n46#1:128,2\n*E\n"
 .end annotation
 
 .annotation runtime Lkotlin/Metadata;
@@ -58,7 +58,7 @@
 
 .annotation runtime Lkotlin/coroutines/jvm/internal/DebugMetadata;
     c = "androidx.compose.ui.tooling.ShadowViewInfo$allNodes$1"
-    f = "ShadowViewInfo.kt"
+    f = "ShadowViewInfo.android.kt"
     i = {
         0x0,
         0x1
@@ -276,14 +276,14 @@
 
     check-cast p1, Ljava/lang/Iterable;
 
-    .line 121
+    .line 122
     new-instance v3, Ljava/util/ArrayList;
 
     invoke-direct {v3}, Ljava/util/ArrayList;-><init>()V
 
     check-cast v3, Ljava/util/Collection;
 
-    .line 122
+    .line 123
     invoke-interface {p1}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
 
     move-result-object p1
@@ -299,7 +299,7 @@
 
     move-result-object v4
 
-    .line 123
+    .line 124
     check-cast v4, Landroidx/compose/ui/tooling/ShadowViewInfo;
 
     .line 46
@@ -307,19 +307,19 @@
 
     move-result-object v4
 
-    .line 124
+    .line 125
     invoke-static {v3, v4}, Lkotlin/collections/CollectionsKt;->addAll(Ljava/util/Collection;Lkotlin/sequences/Sequence;)Z
 
     goto :goto_1
 
-    .line 126
+    .line 127
     :cond_4
     check-cast v3, Ljava/util/List;
 
-    .line 121
+    .line 122
     check-cast v3, Ljava/lang/Iterable;
 
-    .line 127
+    .line 128
     invoke-interface {v3}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
 
     move-result-object p1

@@ -8,6 +8,28 @@
 
 
 # instance fields
+.field public final ACTION_MODE_CONFIGURATION:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljp/co/sony/mc/camera/util/capability/CapabilityItem<",
+            "Ljava/util/List<",
+            "Ljp/co/sony/mc/camera/util/capability/VideoConfiguration;",
+            ">;>;"
+        }
+    .end annotation
+.end field
+
+.field public final ACTION_MODE_HDR_CONFIGURATION:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljp/co/sony/mc/camera/util/capability/CapabilityItem<",
+            "Ljava/util/List<",
+            "Ljp/co/sony/mc/camera/util/capability/VideoConfiguration;",
+            ">;>;"
+        }
+    .end annotation
+.end field
+
 .field public final ACTIVE_ARRAY_SIZE:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -61,7 +83,7 @@
     .end annotation
 .end field
 
-.field public final ANDROID_FOCAL_LENGTH:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
+.field public final APERTURE:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljp/co/sony/mc/camera/util/capability/CapabilityItem<",
@@ -72,12 +94,23 @@
     .end annotation
 .end field
 
-.field public final APERTURE:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
+.field public final AUTO_FRAMING_MODE:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljp/co/sony/mc/camera/util/capability/CapabilityItem<",
             "Ljava/util/List<",
-            "Ljava/lang/Float;",
+            "Ljava/lang/String;",
+            ">;>;"
+        }
+    .end annotation
+.end field
+
+.field public final AUTO_FRAMING_VIDEO_CONFIGURATION_MAP:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljp/co/sony/mc/camera/util/capability/CapabilityItem<",
+            "Ljava/util/List<",
+            "Ljp/co/sony/mc/camera/util/capability/AutoFramingVideoConfiguration;",
             ">;>;"
         }
     .end annotation
@@ -368,6 +401,17 @@
     .end annotation
 .end field
 
+.field public final FRAMING_ASSIST_POSITION_MODE:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljp/co/sony/mc/camera/util/capability/CapabilityItem<",
+            "Ljava/util/List<",
+            "Ljava/lang/String;",
+            ">;>;"
+        }
+    .end annotation
+.end field
+
 .field public final HDR:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -474,16 +518,6 @@
     .end annotation
 .end field
 
-.field public final HYBRID_ZOOM_MIN_FRAME_DURATION:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Ljp/co/sony/mc/camera/util/capability/CapabilityItem<",
-            "Ljava/lang/Long;",
-            ">;"
-        }
-    .end annotation
-.end field
-
 .field public final HYBRID_ZOOM_MODE:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -561,47 +595,6 @@
     .end annotation
 .end field
 
-.field public final LENS_FACING:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Ljp/co/sony/mc/camera/util/capability/CapabilityItem<",
-            "Ljava/lang/Integer;",
-            ">;"
-        }
-    .end annotation
-.end field
-
-.field public final LOGICAL_MULTI_CAMERA_BOKEH_SUPPORTED:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Ljp/co/sony/mc/camera/util/capability/CapabilityItem<",
-            "Ljava/lang/Boolean;",
-            ">;"
-        }
-    .end annotation
-.end field
-
-.field public final LOGICAL_MULTI_CAMERA_OPTICAL_ZOOM:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Ljp/co/sony/mc/camera/util/capability/CapabilityItem<",
-            "Ljava/lang/Boolean;",
-            ">;"
-        }
-    .end annotation
-.end field
-
-.field public final LOGICAL_MULTI_CAMERA_SUPPORTED_BOKEH_FOCAL_LENGTHS:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Ljp/co/sony/mc/camera/util/capability/CapabilityItem<",
-            "Ljava/util/List<",
-            "Ljava/lang/Float;",
-            ">;>;"
-        }
-    .end annotation
-.end field
-
 .field public final LOW_LIGHT_MODE:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -619,27 +612,6 @@
             "Ljp/co/sony/mc/camera/util/capability/CapabilityItem<",
             "Ljava/lang/Float;",
             ">;"
-        }
-    .end annotation
-.end field
-
-.field public final MANUAL_FOCUS:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Ljp/co/sony/mc/camera/util/capability/CapabilityItem<",
-            "Ljava/lang/Boolean;",
-            ">;"
-        }
-    .end annotation
-.end field
-
-.field public final MANUAL_ISO_SUPPORTED_PICTURE_SIZE:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Ljp/co/sony/mc/camera/util/capability/CapabilityItem<",
-            "Ljava/util/List<",
-            "Landroid/graphics/Rect;",
-            ">;>;"
         }
     .end annotation
 .end field
@@ -715,16 +687,6 @@
 .end field
 
 .field public final MAX_HISTOGRAM_COUNT:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Ljp/co/sony/mc/camera/util/capability/CapabilityItem<",
-            "Ljava/lang/Integer;",
-            ">;"
-        }
-    .end annotation
-.end field
-
-.field public final MAX_NUM_FACE:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljp/co/sony/mc/camera/util/capability/CapabilityItem<",
@@ -846,16 +808,6 @@
 .end field
 
 .field public final MIN_FRAME_DURATION:Ljp/co/sony/mc/camera/util/capability/MinimumDurationConfigurationListCapabilityItem;
-
-.field public final MIN_HYBRID_ZOOM_FRAME_DURATION:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Ljp/co/sony/mc/camera/util/capability/CapabilityItem<",
-            "Ljava/lang/Long;",
-            ">;"
-        }
-    .end annotation
-.end field
 
 .field public final MIN_SHUTTER_SPEED:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
     .annotation system Ldalvik/annotation/Signature;
@@ -1037,16 +989,6 @@
     .end annotation
 .end field
 
-.field public final PREVIEW_SIZE_FOR_STILL:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Ljp/co/sony/mc/camera/util/capability/CapabilityItem<",
-            "Landroid/graphics/Rect;",
-            ">;"
-        }
-    .end annotation
-.end field
-
 .field public final PREVIEW_SIZE_FOR_VIDEO:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -1120,28 +1062,6 @@
     .end annotation
 .end field
 
-.field public final SONY_DISTORTION_CORRECTION:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Ljp/co/sony/mc/camera/util/capability/CapabilityItem<",
-            "Ljava/util/List<",
-            "Ljava/lang/String;",
-            ">;>;"
-        }
-    .end annotation
-.end field
-
-.field public final SONY_FOCAL_LENGTH:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Ljp/co/sony/mc/camera/util/capability/CapabilityItem<",
-            "Ljava/util/List<",
-            "Ljava/lang/Float;",
-            ">;>;"
-        }
-    .end annotation
-.end field
-
 .field public final STEADY_SHOT_CONFIGURATION:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -1186,28 +1106,7 @@
     .end annotation
 .end field
 
-.field public final STILL_HDR_SUPPORTED_PICTURE_SIZE:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Ljp/co/sony/mc/camera/util/capability/CapabilityItem<",
-            "Ljava/util/List<",
-            "Landroid/graphics/Rect;",
-            ">;>;"
-        }
-    .end annotation
-.end field
-
 .field public final SUPER_RESOLUTION_ZOOM:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Ljp/co/sony/mc/camera/util/capability/CapabilityItem<",
-            "Ljava/lang/Boolean;",
-            ">;"
-        }
-    .end annotation
-.end field
-
-.field public final TRACKING_BURST_SUPPORTED:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljp/co/sony/mc/camera/util/capability/CapabilityItem<",
@@ -1253,17 +1152,6 @@
             "Ljp/co/sony/mc/camera/util/capability/CapabilityItem<",
             "Ljava/util/List<",
             "Ljava/lang/String;",
-            ">;>;"
-        }
-    .end annotation
-.end field
-
-.field public final VIDEO_CONFIGURATION:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Ljp/co/sony/mc/camera/util/capability/CapabilityItem<",
-            "Ljava/util/List<",
-            "Ljp/co/sony/mc/camera/util/capability/VideoConfiguration;",
             ">;>;"
         }
     .end annotation
@@ -1378,7 +1266,7 @@
     .end annotation
 .end field
 
-.field public final WHITE_BALANCE:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
+.field public final VOLUME_DISTORTION_CORRECTION:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljp/co/sony/mc/camera/util/capability/CapabilityItem<",
@@ -1389,12 +1277,13 @@
     .end annotation
 .end field
 
-.field public final WIDE_ZOOM_TARGET_RATIO:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
+.field public final WHITE_BALANCE:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljp/co/sony/mc/camera/util/capability/CapabilityItem<",
-            "Ljava/lang/Float;",
-            ">;"
+            "Ljava/util/List<",
+            "Ljava/lang/String;",
+            ">;>;"
         }
     .end annotation
 .end field
@@ -1425,10 +1314,10 @@
 .method public constructor <init>(Landroid/content/Context;Landroid/content/SharedPreferences;)V
     .locals 2
 
-    .line 329
+    .line 308
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 331
+    .line 310
     new-instance v0, Ljp/co/sony/mc/camera/util/capability/IntegerCapabilityItem;
 
     const-string v1, "max-exposure-compensation"
@@ -1437,7 +1326,7 @@
 
     iput-object v0, p0, Ljp/co/sony/mc/camera/util/capability/CameraCapabilityList;->EV_MAX:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
 
-    .line 332
+    .line 311
     new-instance v0, Ljp/co/sony/mc/camera/util/capability/IntegerCapabilityItem;
 
     const-string v1, "min-exposure-compensation"
@@ -1446,7 +1335,7 @@
 
     iput-object v0, p0, Ljp/co/sony/mc/camera/util/capability/CameraCapabilityList;->EV_MIN:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
 
-    .line 333
+    .line 312
     new-instance v0, Ljp/co/sony/mc/camera/util/capability/FloatCapabilityItem;
 
     const-string v1, "exposure-compensation-step"
@@ -1455,7 +1344,7 @@
 
     iput-object v0, p0, Ljp/co/sony/mc/camera/util/capability/CameraCapabilityList;->EV_STEP:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
 
-    .line 334
+    .line 313
     new-instance v0, Ljp/co/sony/mc/camera/util/capability/StringListCapabilityItem;
 
     const-string v1, "flash-mode"
@@ -1464,7 +1353,7 @@
 
     iput-object v0, p0, Ljp/co/sony/mc/camera/util/capability/CameraCapabilityList;->FLASH:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
 
-    .line 335
+    .line 314
     new-instance v0, Ljp/co/sony/mc/camera/util/capability/StringListCapabilityItem;
 
     const-string v1, "focus-mode"
@@ -1473,7 +1362,7 @@
 
     iput-object v0, p0, Ljp/co/sony/mc/camera/util/capability/CameraCapabilityList;->FOCUS_MODE:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
 
-    .line 336
+    .line 315
     new-instance v0, Ljp/co/sony/mc/camera/util/capability/IntArrayListCapabilityItem;
 
     const-string v1, "preview-fps-range"
@@ -1482,16 +1371,7 @@
 
     iput-object v0, p0, Ljp/co/sony/mc/camera/util/capability/CameraCapabilityList;->FPS_RANGE:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
 
-    .line 338
-    new-instance v0, Ljp/co/sony/mc/camera/util/capability/IntegerCapabilityItem;
-
-    const-string v1, "max-num-detected-faces"
-
-    invoke-direct {v0, v1, p2}, Ljp/co/sony/mc/camera/util/capability/IntegerCapabilityItem;-><init>(Ljava/lang/String;Landroid/content/SharedPreferences;)V
-
-    iput-object v0, p0, Ljp/co/sony/mc/camera/util/capability/CameraCapabilityList;->MAX_NUM_FACE:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
-
-    .line 339
+    .line 317
     new-instance v0, Ljp/co/sony/mc/camera/util/capability/IntegerCapabilityItem;
 
     const-string v1, "max-num-focus-areas"
@@ -1500,7 +1380,7 @@
 
     iput-object v0, p0, Ljp/co/sony/mc/camera/util/capability/CameraCapabilityList;->MAX_NUM_FOCUS_AREA:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
 
-    .line 340
+    .line 318
     new-instance v0, Ljp/co/sony/mc/camera/util/capability/FloatCapabilityItem;
 
     const-string v1, "min-zoom-ratio"
@@ -1509,7 +1389,7 @@
 
     iput-object v0, p0, Ljp/co/sony/mc/camera/util/capability/CameraCapabilityList;->MIN_ZOOM_RATIO:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
 
-    .line 341
+    .line 319
     new-instance v0, Ljp/co/sony/mc/camera/util/capability/FloatCapabilityItem;
 
     const-string v1, "max-zoom-ratio"
@@ -1518,7 +1398,7 @@
 
     iput-object v0, p0, Ljp/co/sony/mc/camera/util/capability/CameraCapabilityList;->MAX_ZOOM_RATIO:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
 
-    .line 342
+    .line 320
     new-instance v0, Ljp/co/sony/mc/camera/util/capability/FloatRangeListCapabilityItem;
 
     const-string/jumbo v1, "sony-optical-zoom-ratio-range"
@@ -1527,7 +1407,7 @@
 
     iput-object v0, p0, Ljp/co/sony/mc/camera/util/capability/CameraCapabilityList;->OPTICAL_ZOOM_RATIO_RANGE:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
 
-    .line 344
+    .line 322
     new-instance v0, Ljp/co/sony/mc/camera/util/capability/FloatRangeListCapabilityItem;
 
     const-string/jumbo v1, "sony-bokeh-zoom-ratio-range"
@@ -1536,7 +1416,7 @@
 
     iput-object v0, p0, Ljp/co/sony/mc/camera/util/capability/CameraCapabilityList;->BOKEH_ZOOM_RATIO_RANGE:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
 
-    .line 346
+    .line 324
     new-instance v0, Ljp/co/sony/mc/camera/util/capability/FloatRangeCapabilityItem;
 
     const-string/jumbo v1, "sony-hybrid-zoom-ratio-range-values"
@@ -1545,7 +1425,7 @@
 
     iput-object v0, p0, Ljp/co/sony/mc/camera/util/capability/CameraCapabilityList;->HYBRID_ZOOM_RATIO_RANGE:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
 
-    .line 348
+    .line 326
     new-instance v0, Ljp/co/sony/mc/camera/util/capability/FloatRangeCapabilityItem;
 
     const-string/jumbo v1, "sony-close-up-mode-zoom-ratio-range-values"
@@ -1554,16 +1434,7 @@
 
     iput-object v0, p0, Ljp/co/sony/mc/camera/util/capability/CameraCapabilityList;->CLOSE_UP_MODE_ZOOM_RATIO_RANGE:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
 
-    .line 350
-    new-instance v0, Ljp/co/sony/mc/camera/util/capability/FloatCapabilityItem;
-
-    const-string/jumbo v1, "wide-zoom-target-ratio"
-
-    invoke-direct {v0, v1, p2}, Ljp/co/sony/mc/camera/util/capability/FloatCapabilityItem;-><init>(Ljava/lang/String;Landroid/content/SharedPreferences;)V
-
-    iput-object v0, p0, Ljp/co/sony/mc/camera/util/capability/CameraCapabilityList;->WIDE_ZOOM_TARGET_RATIO:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
-
-    .line 351
+    .line 328
     new-instance v0, Ljp/co/sony/mc/camera/util/capability/RectListCapabilityItem;
 
     const-string v1, "picture-size"
@@ -1572,25 +1443,7 @@
 
     iput-object v0, p0, Ljp/co/sony/mc/camera/util/capability/CameraCapabilityList;->PICTURE_SIZE:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
 
-    .line 352
-    new-instance v0, Ljp/co/sony/mc/camera/util/capability/RectListCapabilityItem;
-
-    const-string/jumbo v1, "sony-manual-iso-size-values"
-
-    invoke-direct {v0, v1, p2}, Ljp/co/sony/mc/camera/util/capability/RectListCapabilityItem;-><init>(Ljava/lang/String;Landroid/content/SharedPreferences;)V
-
-    iput-object v0, p0, Ljp/co/sony/mc/camera/util/capability/CameraCapabilityList;->MANUAL_ISO_SUPPORTED_PICTURE_SIZE:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
-
-    .line 354
-    new-instance v0, Ljp/co/sony/mc/camera/util/capability/RectListCapabilityItem;
-
-    const-string/jumbo v1, "sony-still-hdr-size-values"
-
-    invoke-direct {v0, v1, p2}, Ljp/co/sony/mc/camera/util/capability/RectListCapabilityItem;-><init>(Ljava/lang/String;Landroid/content/SharedPreferences;)V
-
-    iput-object v0, p0, Ljp/co/sony/mc/camera/util/capability/CameraCapabilityList;->STILL_HDR_SUPPORTED_PICTURE_SIZE:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
-
-    .line 356
+    .line 329
     new-instance v0, Ljp/co/sony/mc/camera/util/capability/RectListCapabilityItem;
 
     const-string v1, "photo-high-resolution-picture-values"
@@ -1599,7 +1452,7 @@
 
     iput-object v0, p0, Ljp/co/sony/mc/camera/util/capability/CameraCapabilityList;->HIGH_RESOLUTION_SUPPORTED_PICTURE_SIZE:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
 
-    .line 358
+    .line 331
     new-instance v0, Ljp/co/sony/mc/camera/util/capability/RectListCapabilityItem;
 
     const-string v1, "preview-size"
@@ -1608,16 +1461,7 @@
 
     iput-object v0, p0, Ljp/co/sony/mc/camera/util/capability/CameraCapabilityList;->PREVIEW_SIZE:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
 
-    .line 359
-    new-instance v0, Ljp/co/sony/mc/camera/util/capability/RectCapabilityItem;
-
-    const-string/jumbo v1, "sony-preferred-preview-size-for-still"
-
-    invoke-direct {v0, v1, p2}, Ljp/co/sony/mc/camera/util/capability/RectCapabilityItem;-><init>(Ljava/lang/String;Landroid/content/SharedPreferences;)V
-
-    iput-object v0, p0, Ljp/co/sony/mc/camera/util/capability/CameraCapabilityList;->PREVIEW_SIZE_FOR_STILL:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
-
-    .line 361
+    .line 332
     new-instance v0, Ljp/co/sony/mc/camera/util/capability/RectCapabilityItem;
 
     const-string/jumbo v1, "sony-preferred-preview-size-for-video"
@@ -1626,7 +1470,7 @@
 
     iput-object v0, p0, Ljp/co/sony/mc/camera/util/capability/CameraCapabilityList;->PREVIEW_SIZE_FOR_VIDEO:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
 
-    .line 363
+    .line 334
     new-instance v0, Ljp/co/sony/mc/camera/util/capability/RectCapabilityItem;
 
     const-string/jumbo v1, "sony-preferred-preview-size-for-hdr-video"
@@ -1635,16 +1479,7 @@
 
     iput-object v0, p0, Ljp/co/sony/mc/camera/util/capability/CameraCapabilityList;->PREVIEW_SIZE_FOR_HDR_VIDEO:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
 
-    .line 365
-    new-instance v0, Ljp/co/sony/mc/camera/util/capability/VideoConfigurationListCapabilityItem;
-
-    const-string/jumbo v1, "video-size"
-
-    invoke-direct {v0, v1, p2}, Ljp/co/sony/mc/camera/util/capability/VideoConfigurationListCapabilityItem;-><init>(Ljava/lang/String;Landroid/content/SharedPreferences;)V
-
-    iput-object v0, p0, Ljp/co/sony/mc/camera/util/capability/CameraCapabilityList;->VIDEO_CONFIGURATION:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
-
-    .line 368
+    .line 336
     new-instance v0, Ljp/co/sony/mc/camera/util/capability/VideoConfigurationMapListCapabilityItem;
 
     const-string/jumbo v1, "video-size-map"
@@ -1653,7 +1488,7 @@
 
     iput-object v0, p0, Ljp/co/sony/mc/camera/util/capability/CameraCapabilityList;->VIDEO_CONFIGURATION_MAP:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
 
-    .line 371
+    .line 339
     new-instance v0, Ljp/co/sony/mc/camera/util/capability/VideoSnapshotSizeListCapabilityItem;
 
     const-string/jumbo v1, "video-snapshot-size"
@@ -1662,7 +1497,7 @@
 
     iput-object v0, p0, Ljp/co/sony/mc/camera/util/capability/CameraCapabilityList;->VIDEO_SNAPSHOT_SIZE:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
 
-    .line 373
+    .line 341
     new-instance v0, Ljp/co/sony/mc/camera/util/capability/HighSpeedVideoConfigurationListCapabilityItem;
 
     const-string v1, "high-speed-video-config"
@@ -1671,7 +1506,7 @@
 
     iput-object v0, p0, Ljp/co/sony/mc/camera/util/capability/CameraCapabilityList;->HIGH_SPEED_VIDEO_CONFIGURATION:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
 
-    .line 375
+    .line 343
     new-instance v0, Ljp/co/sony/mc/camera/util/capability/StringListCapabilityItem;
 
     const-string/jumbo v1, "whitebalance"
@@ -1680,7 +1515,7 @@
 
     iput-object v0, p0, Ljp/co/sony/mc/camera/util/capability/CameraCapabilityList;->WHITE_BALANCE:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
 
-    .line 377
+    .line 345
     new-instance v0, Ljp/co/sony/mc/camera/util/capability/StringListCapabilityItem;
 
     const-string/jumbo v1, "sony-ae-mode-values"
@@ -1689,7 +1524,7 @@
 
     iput-object v0, p0, Ljp/co/sony/mc/camera/util/capability/CameraCapabilityList;->AE:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
 
-    .line 379
+    .line 347
     new-instance v0, Ljp/co/sony/mc/camera/util/capability/BooleanCapabilityItem;
 
     const-string v1, "auto-exposure-lock-available"
@@ -1698,7 +1533,7 @@
 
     iput-object v0, p0, Ljp/co/sony/mc/camera/util/capability/CameraCapabilityList;->AEL:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
 
-    .line 381
+    .line 349
     new-instance v0, Ljp/co/sony/mc/camera/util/capability/BooleanCapabilityItem;
 
     const-string v1, "auto-white-balance-lock-available"
@@ -1707,7 +1542,7 @@
 
     iput-object v0, p0, Ljp/co/sony/mc/camera/util/capability/CameraCapabilityList;->AWBL:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
 
-    .line 383
+    .line 351
     new-instance v0, Ljp/co/sony/mc/camera/util/capability/StringListCapabilityItem;
 
     const-string/jumbo v1, "sony-focus-area-values"
@@ -1716,7 +1551,7 @@
 
     iput-object v0, p0, Ljp/co/sony/mc/camera/util/capability/CameraCapabilityList;->FOCUS_AREA:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
 
-    .line 385
+    .line 353
     new-instance v0, Ljp/co/sony/mc/camera/util/capability/StringListCapabilityItem;
 
     const-string/jumbo v1, "sony-is-values"
@@ -1725,7 +1560,7 @@
 
     iput-object v0, p0, Ljp/co/sony/mc/camera/util/capability/CameraCapabilityList;->HDR:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
 
-    .line 387
+    .line 355
     new-instance v0, Ljp/co/sony/mc/camera/util/capability/IntegerRangeCapabilityItem;
 
     const-string/jumbo v1, "sony-iso-range"
@@ -1734,7 +1569,7 @@
 
     iput-object v0, p0, Ljp/co/sony/mc/camera/util/capability/CameraCapabilityList;->ISO_RANGE:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
 
-    .line 389
+    .line 357
     new-instance v0, Ljp/co/sony/mc/camera/util/capability/IntegerRangeCapabilityItem;
 
     const-string/jumbo v1, "sony-hybrid-zoom-iso-range"
@@ -1743,7 +1578,7 @@
 
     iput-object v0, p0, Ljp/co/sony/mc/camera/util/capability/CameraCapabilityList;->HYBRID_ZOOM_ISO_RANGE:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
 
-    .line 391
+    .line 359
     new-instance v0, Ljp/co/sony/mc/camera/util/capability/IntegerRangeCapabilityItem;
 
     const-string/jumbo v1, "sony-video-iso-range"
@@ -1752,7 +1587,7 @@
 
     iput-object v0, p0, Ljp/co/sony/mc/camera/util/capability/CameraCapabilityList;->VIDEO_SDR_ISO_RANGE:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
 
-    .line 393
+    .line 361
     new-instance v0, Ljp/co/sony/mc/camera/util/capability/IntegerRangeCapabilityItem;
 
     const-string/jumbo v1, "sony-video-hybrid-zoom-iso-range"
@@ -1761,7 +1596,7 @@
 
     iput-object v0, p0, Ljp/co/sony/mc/camera/util/capability/CameraCapabilityList;->VIDEO_HYBRID_ZOOM_SDR_ISO_RANGE:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
 
-    .line 395
+    .line 363
     new-instance v0, Ljp/co/sony/mc/camera/util/capability/IntegerRangeCapabilityItem;
 
     const-string/jumbo v1, "sony-video-hdr-iso-range"
@@ -1770,7 +1605,7 @@
 
     iput-object v0, p0, Ljp/co/sony/mc/camera/util/capability/CameraCapabilityList;->VIDEO_HDR_ISO_RANGE:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
 
-    .line 397
+    .line 365
     new-instance v0, Ljp/co/sony/mc/camera/util/capability/IntegerRangeCapabilityItem;
 
     const-string/jumbo v1, "sony-video-hybrid-zoom-hdr-iso-range"
@@ -1779,7 +1614,7 @@
 
     iput-object v0, p0, Ljp/co/sony/mc/camera/util/capability/CameraCapabilityList;->VIDEO_HYBRID_ZOOM_HDR_ISO_RANGE:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
 
-    .line 399
+    .line 367
     new-instance v0, Ljp/co/sony/mc/camera/util/capability/IntegerRangeCapabilityItem;
 
     const-string/jumbo v1, "sony-video-scinetone-iso-range"
@@ -1788,7 +1623,7 @@
 
     iput-object v0, p0, Ljp/co/sony/mc/camera/util/capability/CameraCapabilityList;->VIDEO_SCINETONE_ISO_RANGE:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
 
-    .line 401
+    .line 369
     new-instance v0, Ljp/co/sony/mc/camera/util/capability/IntegerRangeCapabilityItem;
 
     const-string/jumbo v1, "sony-video-scinetone-hybrid_zoom-iso-range"
@@ -1797,7 +1632,7 @@
 
     iput-object v0, p0, Ljp/co/sony/mc/camera/util/capability/CameraCapabilityList;->VIDEO_SCINETONE_HYBRID_ZOOM_ISO_RANGE:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
 
-    .line 403
+    .line 371
     new-instance v0, Ljp/co/sony/mc/camera/util/capability/IntegerCapabilityItem;
 
     const-string/jumbo v1, "sony-default-iso"
@@ -1806,7 +1641,7 @@
 
     iput-object v0, p0, Ljp/co/sony/mc/camera/util/capability/CameraCapabilityList;->DEFAULT_ISO:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
 
-    .line 405
+    .line 373
     new-instance v0, Ljp/co/sony/mc/camera/util/capability/IntegerCapabilityItem;
 
     const-string/jumbo v1, "sony-default-video-iso"
@@ -1815,7 +1650,7 @@
 
     iput-object v0, p0, Ljp/co/sony/mc/camera/util/capability/CameraCapabilityList;->DEFAULT_VIDEO_ISO:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
 
-    .line 407
+    .line 375
     new-instance v0, Ljp/co/sony/mc/camera/util/capability/StringListCapabilityItem;
 
     const-string/jumbo v1, "sony-metering-mode-values"
@@ -1824,7 +1659,7 @@
 
     iput-object v0, p0, Ljp/co/sony/mc/camera/util/capability/CameraCapabilityList;->METERING:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
 
-    .line 409
+    .line 377
     new-instance v0, Ljp/co/sony/mc/camera/util/capability/BooleanCapabilityItem;
 
     const-string/jumbo v1, "sony-object-tracking-supported"
@@ -1833,7 +1668,7 @@
 
     iput-object v0, p0, Ljp/co/sony/mc/camera/util/capability/CameraCapabilityList;->OBJECT_TRACKING:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
 
-    .line 411
+    .line 379
     new-instance v0, Ljp/co/sony/mc/camera/util/capability/BooleanCapabilityItem;
 
     const-string/jumbo v1, "sony-tracking-focus-during-lock-supported"
@@ -1842,7 +1677,7 @@
 
     iput-object v0, p0, Ljp/co/sony/mc/camera/util/capability/CameraCapabilityList;->TRACKING_FOCUS_DURING_LOCK:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
 
-    .line 413
+    .line 381
     new-instance v0, Ljp/co/sony/mc/camera/util/capability/BooleanCapabilityItem;
 
     const-string/jumbo v1, "sony-face-detection-supported"
@@ -1851,7 +1686,7 @@
 
     iput-object v0, p0, Ljp/co/sony/mc/camera/util/capability/CameraCapabilityList;->FACE_DETECTION:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
 
-    .line 415
+    .line 383
     new-instance v0, Ljp/co/sony/mc/camera/util/capability/StringListCapabilityItem;
 
     const-string/jumbo v1, "sony-eye-detect-modes"
@@ -1860,7 +1695,7 @@
 
     iput-object v0, p0, Ljp/co/sony/mc/camera/util/capability/CameraCapabilityList;->EYE_DETECTION_MODES:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
 
-    .line 417
+    .line 385
     new-instance v0, Ljp/co/sony/mc/camera/util/capability/VideoConfigurationListCapabilityItem;
 
     const-string/jumbo v1, "sony-vs-steady-shot-config"
@@ -1869,7 +1704,7 @@
 
     iput-object v0, p0, Ljp/co/sony/mc/camera/util/capability/CameraCapabilityList;->STEADY_SHOT_CONFIGURATION:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
 
-    .line 419
+    .line 387
     new-instance v0, Ljp/co/sony/mc/camera/util/capability/VideoConfigurationListCapabilityItem;
 
     const-string/jumbo v1, "sony-vs-intelligent-active-config"
@@ -1878,7 +1713,7 @@
 
     iput-object v0, p0, Ljp/co/sony/mc/camera/util/capability/CameraCapabilityList;->INTELLIGENT_ACTIVE_CONFIGURATION:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
 
-    .line 421
+    .line 389
     new-instance v0, Ljp/co/sony/mc/camera/util/capability/VideoConfigurationListCapabilityItem;
 
     const-string/jumbo v1, "sony-vs-steady-shot-hdr-config"
@@ -1887,7 +1722,7 @@
 
     iput-object v0, p0, Ljp/co/sony/mc/camera/util/capability/CameraCapabilityList;->STEADY_SHOT_HDR_CONFIGURATION:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
 
-    .line 423
+    .line 391
     new-instance v0, Ljp/co/sony/mc/camera/util/capability/VideoConfigurationListCapabilityItem;
 
     const-string/jumbo v1, "sony-vs-intelligent-active-hdr-config"
@@ -1896,7 +1731,7 @@
 
     iput-object v0, p0, Ljp/co/sony/mc/camera/util/capability/CameraCapabilityList;->INTELLIGENT_ACTIVE_HDR_CONFIGURATION:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
 
-    .line 425
+    .line 393
     new-instance v0, Ljp/co/sony/mc/camera/util/capability/VideoConfigurationListCapabilityItem;
 
     const-string/jumbo v1, "sony-vs-steady-shot-mfhdr-config"
@@ -1905,7 +1740,7 @@
 
     iput-object v0, p0, Ljp/co/sony/mc/camera/util/capability/CameraCapabilityList;->STEADY_SHOT_MFHDR_CONFIGURATION:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
 
-    .line 427
+    .line 395
     new-instance v0, Ljp/co/sony/mc/camera/util/capability/VideoConfigurationListCapabilityItem;
 
     const-string/jumbo v1, "sony-vs-intelligent-active-mfhdr-config"
@@ -1914,7 +1749,7 @@
 
     iput-object v0, p0, Ljp/co/sony/mc/camera/util/capability/CameraCapabilityList;->INTELLIGENT_ACTIVE_MFHDR_CONFIGURATION:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
 
-    .line 429
+    .line 397
     new-instance v0, Ljp/co/sony/mc/camera/util/capability/VideoConfigurationListCapabilityItem;
 
     const-string/jumbo v1, "sony-vs-steady-shot-hdr-mfhdr-config"
@@ -1923,7 +1758,7 @@
 
     iput-object v0, p0, Ljp/co/sony/mc/camera/util/capability/CameraCapabilityList;->STEADY_SHOT_HDR_MFHDR_CONFIGURATION:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
 
-    .line 431
+    .line 399
     new-instance v0, Ljp/co/sony/mc/camera/util/capability/VideoConfigurationListCapabilityItem;
 
     const-string/jumbo v1, "sony-vs-intelligent-active-hdr-mfhdr-config"
@@ -1932,7 +1767,25 @@
 
     iput-object v0, p0, Ljp/co/sony/mc/camera/util/capability/CameraCapabilityList;->INTELLIGENT_ACTIVE_HDR_MFHDR_CONFIGURATION:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
 
-    .line 434
+    .line 401
+    new-instance v0, Ljp/co/sony/mc/camera/util/capability/VideoConfigurationListCapabilityItem;
+
+    const-string/jumbo v1, "sony-vs-action-mode-config"
+
+    invoke-direct {v0, v1, p2}, Ljp/co/sony/mc/camera/util/capability/VideoConfigurationListCapabilityItem;-><init>(Ljava/lang/String;Landroid/content/SharedPreferences;)V
+
+    iput-object v0, p0, Ljp/co/sony/mc/camera/util/capability/CameraCapabilityList;->ACTION_MODE_CONFIGURATION:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
+
+    .line 403
+    new-instance v0, Ljp/co/sony/mc/camera/util/capability/VideoConfigurationListCapabilityItem;
+
+    const-string/jumbo v1, "sony-vs-action-mode-hdr-config"
+
+    invoke-direct {v0, v1, p2}, Ljp/co/sony/mc/camera/util/capability/VideoConfigurationListCapabilityItem;-><init>(Ljava/lang/String;Landroid/content/SharedPreferences;)V
+
+    iput-object v0, p0, Ljp/co/sony/mc/camera/util/capability/CameraCapabilityList;->ACTION_MODE_HDR_CONFIGURATION:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
+
+    .line 406
     new-instance v0, Ljp/co/sony/mc/camera/util/capability/IntegerCapabilityItem;
 
     const-string/jumbo v1, "sony-max-soft-skin-level"
@@ -1941,7 +1794,7 @@
 
     iput-object v0, p0, Ljp/co/sony/mc/camera/util/capability/CameraCapabilityList;->MAX_SOFT_SKIN_LEVEL:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
 
-    .line 436
+    .line 408
     new-instance v0, Ljp/co/sony/mc/camera/util/capability/IntegerCapabilityItem;
 
     const-string/jumbo v1, "sony-min-soft-skin-level"
@@ -1950,7 +1803,7 @@
 
     iput-object v0, p0, Ljp/co/sony/mc/camera/util/capability/CameraCapabilityList;->MIN_SOFT_SKIN_LEVEL:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
 
-    .line 439
+    .line 411
     new-instance v0, Ljp/co/sony/mc/camera/util/capability/FloatCapabilityItem;
 
     const-string/jumbo v1, "sony-max-awb-temperature"
@@ -1959,7 +1812,7 @@
 
     iput-object v0, p0, Ljp/co/sony/mc/camera/util/capability/CameraCapabilityList;->MAX_AWB_TEMPERATURE:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
 
-    .line 441
+    .line 413
     new-instance v0, Ljp/co/sony/mc/camera/util/capability/FloatCapabilityItem;
 
     const-string/jumbo v1, "sony-min-awb-temperature"
@@ -1968,7 +1821,7 @@
 
     iput-object v0, p0, Ljp/co/sony/mc/camera/util/capability/CameraCapabilityList;->MIN_AWB_TEMPERATURE:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
 
-    .line 444
+    .line 416
     new-instance v0, Ljp/co/sony/mc/camera/util/capability/FloatCapabilityItem;
 
     const-string/jumbo v1, "sony-max-awb-compensation-ab-float"
@@ -1977,7 +1830,7 @@
 
     iput-object v0, p0, Ljp/co/sony/mc/camera/util/capability/CameraCapabilityList;->MAX_AWB_AB_FLOAT:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
 
-    .line 446
+    .line 418
     new-instance v0, Ljp/co/sony/mc/camera/util/capability/FloatCapabilityItem;
 
     const-string/jumbo v1, "sony-min-awb-compensation-ab-float"
@@ -1986,7 +1839,7 @@
 
     iput-object v0, p0, Ljp/co/sony/mc/camera/util/capability/CameraCapabilityList;->MIN_AWB_AB_FLOAT:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
 
-    .line 449
+    .line 421
     new-instance v0, Ljp/co/sony/mc/camera/util/capability/FloatCapabilityItem;
 
     const-string/jumbo v1, "sony-max-awb-compensation-gm-float"
@@ -1995,7 +1848,7 @@
 
     iput-object v0, p0, Ljp/co/sony/mc/camera/util/capability/CameraCapabilityList;->MAX_AWB_GM_FLOAT:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
 
-    .line 451
+    .line 423
     new-instance v0, Ljp/co/sony/mc/camera/util/capability/FloatCapabilityItem;
 
     const-string/jumbo v1, "sony-min-awb-compensation-gm-float"
@@ -2004,7 +1857,7 @@
 
     iput-object v0, p0, Ljp/co/sony/mc/camera/util/capability/CameraCapabilityList;->MIN_AWB_GM_FLOAT:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
 
-    .line 454
+    .line 426
     new-instance v0, Ljp/co/sony/mc/camera/util/capability/IntegerCapabilityItem;
 
     const-string/jumbo v1, "sony-max-awb-compensation-ab"
@@ -2013,7 +1866,7 @@
 
     iput-object v0, p0, Ljp/co/sony/mc/camera/util/capability/CameraCapabilityList;->MAX_AWB_AB:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
 
-    .line 456
+    .line 428
     new-instance v0, Ljp/co/sony/mc/camera/util/capability/IntegerCapabilityItem;
 
     const-string/jumbo v1, "sony-min-awb-compensation-ab"
@@ -2022,7 +1875,7 @@
 
     iput-object v0, p0, Ljp/co/sony/mc/camera/util/capability/CameraCapabilityList;->MIN_AWB_AB:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
 
-    .line 459
+    .line 431
     new-instance v0, Ljp/co/sony/mc/camera/util/capability/IntegerCapabilityItem;
 
     const-string/jumbo v1, "sony-max-awb-compensation-gm"
@@ -2031,7 +1884,7 @@
 
     iput-object v0, p0, Ljp/co/sony/mc/camera/util/capability/CameraCapabilityList;->MAX_AWB_GM:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
 
-    .line 461
+    .line 433
     new-instance v0, Ljp/co/sony/mc/camera/util/capability/IntegerCapabilityItem;
 
     const-string/jumbo v1, "sony-min-awb-compensation-gm"
@@ -2040,7 +1893,7 @@
 
     iput-object v0, p0, Ljp/co/sony/mc/camera/util/capability/CameraCapabilityList;->MIN_AWB_GM:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
 
-    .line 464
+    .line 436
     new-instance v0, Ljp/co/sony/mc/camera/util/capability/FloatCapabilityItem;
 
     const-string/jumbo v1, "sony-manual-focus-for-macro"
@@ -2049,7 +1902,7 @@
 
     iput-object v0, p0, Ljp/co/sony/mc/camera/util/capability/CameraCapabilityList;->MACRO_FOCUS_RANGE:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
 
-    .line 467
+    .line 439
     new-instance v0, Ljp/co/sony/mc/camera/util/capability/StringListCapabilityItem;
 
     const-string/jumbo v1, "sony-focus-magnification-use-case"
@@ -2058,7 +1911,7 @@
 
     iput-object v0, p0, Ljp/co/sony/mc/camera/util/capability/CameraCapabilityList;->FOCUS_MAGNIFICATION_USE_CASES:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
 
-    .line 471
+    .line 443
     new-instance v0, Ljp/co/sony/mc/camera/util/capability/FloatCapabilityItem;
 
     const-string/jumbo v1, "sony-max-focus-magnification-ratio"
@@ -2067,16 +1920,7 @@
 
     iput-object v0, p0, Ljp/co/sony/mc/camera/util/capability/CameraCapabilityList;->MAX_FOCUS_MAGNIFICATION_RATIO:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
 
-    .line 474
-    new-instance v0, Ljp/co/sony/mc/camera/util/capability/BooleanCapabilityItem;
-
-    const-string v1, "manual-focus-supported"
-
-    invoke-direct {v0, v1, p2}, Ljp/co/sony/mc/camera/util/capability/BooleanCapabilityItem;-><init>(Ljava/lang/String;Landroid/content/SharedPreferences;)V
-
-    iput-object v0, p0, Ljp/co/sony/mc/camera/util/capability/CameraCapabilityList;->MANUAL_FOCUS:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
-
-    .line 477
+    .line 446
     new-instance v0, Ljp/co/sony/mc/camera/util/capability/BooleanCapabilityItem;
 
     const-string v1, "extend-fps-supported"
@@ -2085,7 +1929,7 @@
 
     iput-object v0, p0, Ljp/co/sony/mc/camera/util/capability/CameraCapabilityList;->EXTEND_FPS:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
 
-    .line 480
+    .line 449
     new-instance v0, Ljp/co/sony/mc/camera/util/capability/StringListCapabilityItem;
 
     const-string/jumbo v1, "variable-fps-supported"
@@ -2094,7 +1938,7 @@
 
     iput-object v0, p0, Ljp/co/sony/mc/camera/util/capability/CameraCapabilityList;->VARIABLE_FPS:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
 
-    .line 483
+    .line 452
     new-instance v0, Ljp/co/sony/mc/camera/util/capability/LongCapabilityItem;
 
     const-string/jumbo v1, "sony-max-shutter-speed"
@@ -2103,7 +1947,7 @@
 
     iput-object v0, p0, Ljp/co/sony/mc/camera/util/capability/CameraCapabilityList;->MAX_SHUTTER_SPEED:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
 
-    .line 486
+    .line 455
     new-instance v0, Ljp/co/sony/mc/camera/util/capability/LongCapabilityItem;
 
     const-string/jumbo v1, "sony-min-shutter-speed"
@@ -2112,7 +1956,7 @@
 
     iput-object v0, p0, Ljp/co/sony/mc/camera/util/capability/CameraCapabilityList;->MIN_SHUTTER_SPEED:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
 
-    .line 489
+    .line 458
     new-instance v0, Ljp/co/sony/mc/camera/util/capability/StringListCapabilityItem;
 
     const-string/jumbo v1, "sony-power-save-mode-values"
@@ -2121,7 +1965,7 @@
 
     iput-object v0, p0, Ljp/co/sony/mc/camera/util/capability/CameraCapabilityList;->POWER_SAVING_MODE:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
 
-    .line 492
+    .line 461
     new-instance v0, Ljp/co/sony/mc/camera/util/capability/LongCapabilityItem;
 
     const-string/jumbo v1, "sony-min-shutter-speed-limit"
@@ -2130,34 +1974,7 @@
 
     iput-object v0, p0, Ljp/co/sony/mc/camera/util/capability/CameraCapabilityList;->MIN_SHUTTER_SPEED_LIMIT:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
 
-    .line 495
-    new-instance v0, Ljp/co/sony/mc/camera/util/capability/BooleanCapabilityItem;
-
-    const-string/jumbo v1, "sony-logical-multi-camera-optical-zoom-supported"
-
-    invoke-direct {v0, v1, p2}, Ljp/co/sony/mc/camera/util/capability/BooleanCapabilityItem;-><init>(Ljava/lang/String;Landroid/content/SharedPreferences;)V
-
-    iput-object v0, p0, Ljp/co/sony/mc/camera/util/capability/CameraCapabilityList;->LOGICAL_MULTI_CAMERA_OPTICAL_ZOOM:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
-
-    .line 498
-    new-instance v0, Ljp/co/sony/mc/camera/util/capability/BooleanCapabilityItem;
-
-    const-string/jumbo v1, "sony-logical-multi-camera-bokeh-supported"
-
-    invoke-direct {v0, v1, p2}, Ljp/co/sony/mc/camera/util/capability/BooleanCapabilityItem;-><init>(Ljava/lang/String;Landroid/content/SharedPreferences;)V
-
-    iput-object v0, p0, Ljp/co/sony/mc/camera/util/capability/CameraCapabilityList;->LOGICAL_MULTI_CAMERA_BOKEH_SUPPORTED:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
-
-    .line 501
-    new-instance v0, Ljp/co/sony/mc/camera/util/capability/FloatListCapabilityItem;
-
-    const-string/jumbo v1, "sony-logical-multi-camera-supported-bokeh-focal-lengths"
-
-    invoke-direct {v0, v1, p2}, Ljp/co/sony/mc/camera/util/capability/FloatListCapabilityItem;-><init>(Ljava/lang/String;Landroid/content/SharedPreferences;)V
-
-    iput-object v0, p0, Ljp/co/sony/mc/camera/util/capability/CameraCapabilityList;->LOGICAL_MULTI_CAMERA_SUPPORTED_BOKEH_FOCAL_LENGTHS:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
-
-    .line 504
+    .line 464
     new-instance v0, Ljp/co/sony/mc/camera/util/capability/StringListCapabilityItem;
 
     const-string v1, "extended-scene-modes"
@@ -2166,7 +1983,7 @@
 
     iput-object v0, p0, Ljp/co/sony/mc/camera/util/capability/CameraCapabilityList;->EXTENDED_SCENE_MODES:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
 
-    .line 507
+    .line 467
     new-instance v0, Ljp/co/sony/mc/camera/util/capability/BooleanCapabilityItem;
 
     const-string/jumbo v1, "super-resolution-zoom-supported"
@@ -2175,7 +1992,7 @@
 
     iput-object v0, p0, Ljp/co/sony/mc/camera/util/capability/CameraCapabilityList;->SUPER_RESOLUTION_ZOOM:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
 
-    .line 510
+    .line 470
     new-instance v0, Ljp/co/sony/mc/camera/util/capability/RectCapabilityItem;
 
     const-string v1, "active-array-size"
@@ -2184,16 +2001,7 @@
 
     iput-object v0, p0, Ljp/co/sony/mc/camera/util/capability/CameraCapabilityList;->ACTIVE_ARRAY_SIZE:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
 
-    .line 513
-    new-instance v0, Ljp/co/sony/mc/camera/util/capability/IntegerCapabilityItem;
-
-    const-string v1, "lens-facing"
-
-    invoke-direct {v0, v1, p2}, Ljp/co/sony/mc/camera/util/capability/IntegerCapabilityItem;-><init>(Ljava/lang/String;Landroid/content/SharedPreferences;)V
-
-    iput-object v0, p0, Ljp/co/sony/mc/camera/util/capability/CameraCapabilityList;->LENS_FACING:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
-
-    .line 516
+    .line 473
     new-instance v0, Ljp/co/sony/mc/camera/util/capability/StringCapabilityItem;
 
     const-string v1, "sensor-name"
@@ -2202,7 +2010,7 @@
 
     iput-object v0, p0, Ljp/co/sony/mc/camera/util/capability/CameraCapabilityList;->SENSOR_NAME:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
 
-    .line 519
+    .line 476
     new-instance v0, Ljp/co/sony/mc/camera/util/capability/BooleanCapabilityItem;
 
     const-string v1, "hdr-video-supported"
@@ -2211,7 +2019,7 @@
 
     iput-object v0, p0, Ljp/co/sony/mc/camera/util/capability/CameraCapabilityList;->HDR_VIDEO_SUPPORTED:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
 
-    .line 522
+    .line 479
     new-instance v0, Ljp/co/sony/mc/camera/util/capability/StringListCapabilityItem;
 
     const-string v1, "android-distortion-correction-values"
@@ -2220,16 +2028,16 @@
 
     iput-object v0, p0, Ljp/co/sony/mc/camera/util/capability/CameraCapabilityList;->ANDROID_DISTORTION_CORRECTION:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
 
-    .line 525
+    .line 482
     new-instance v0, Ljp/co/sony/mc/camera/util/capability/StringListCapabilityItem;
 
-    const-string/jumbo v1, "sony-distortion-correction-values"
+    const-string/jumbo v1, "volume-distortion-correction-values"
 
     invoke-direct {v0, v1, p2}, Ljp/co/sony/mc/camera/util/capability/StringListCapabilityItem;-><init>(Ljava/lang/String;Landroid/content/SharedPreferences;)V
 
-    iput-object v0, p0, Ljp/co/sony/mc/camera/util/capability/CameraCapabilityList;->SONY_DISTORTION_CORRECTION:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
+    iput-object v0, p0, Ljp/co/sony/mc/camera/util/capability/CameraCapabilityList;->VOLUME_DISTORTION_CORRECTION:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
 
-    .line 528
+    .line 485
     new-instance v0, Ljp/co/sony/mc/camera/util/capability/BooleanCapabilityItem;
 
     const-string/jumbo v1, "usecase"
@@ -2238,7 +2046,7 @@
 
     iput-object v0, p0, Ljp/co/sony/mc/camera/util/capability/CameraCapabilityList;->USECASE:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
 
-    .line 531
+    .line 488
     new-instance v0, Ljp/co/sony/mc/camera/util/capability/BooleanCapabilityItem;
 
     const-string/jumbo v1, "vague-control-mode"
@@ -2247,7 +2055,7 @@
 
     iput-object v0, p0, Ljp/co/sony/mc/camera/util/capability/CameraCapabilityList;->VAGUE_CONTROL_MODE:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
 
-    .line 534
+    .line 491
     new-instance v0, Ljp/co/sony/mc/camera/util/capability/BooleanCapabilityItem;
 
     const-string v1, "high-quality-snapshot-mode"
@@ -2256,7 +2064,7 @@
 
     iput-object v0, p0, Ljp/co/sony/mc/camera/util/capability/CameraCapabilityList;->HIGH_QUALITY_SNAPSHOT_MODE:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
 
-    .line 537
+    .line 494
     new-instance v0, Ljp/co/sony/mc/camera/util/capability/StringListCapabilityItem;
 
     const-string/jumbo v1, "video-stabilization-mode"
@@ -2265,7 +2073,7 @@
 
     iput-object v0, p0, Ljp/co/sony/mc/camera/util/capability/CameraCapabilityList;->VIDEO_STABILIZATION_MODE:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
 
-    .line 540
+    .line 497
     new-instance v0, Ljp/co/sony/mc/camera/util/capability/StringListCapabilityItem;
 
     const-string v1, "optical-stabilization"
@@ -2274,16 +2082,7 @@
 
     iput-object v0, p0, Ljp/co/sony/mc/camera/util/capability/CameraCapabilityList;->OPTICAL_STABILIZATION:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
 
-    .line 543
-    new-instance v0, Ljp/co/sony/mc/camera/util/capability/BooleanCapabilityItem;
-
-    const-string/jumbo v1, "sony-tracking-burst-supported"
-
-    invoke-direct {v0, v1, p2}, Ljp/co/sony/mc/camera/util/capability/BooleanCapabilityItem;-><init>(Ljava/lang/String;Landroid/content/SharedPreferences;)V
-
-    iput-object v0, p0, Ljp/co/sony/mc/camera/util/capability/CameraCapabilityList;->TRACKING_BURST_SUPPORTED:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
-
-    .line 546
+    .line 500
     new-instance v0, Ljp/co/sony/mc/camera/util/capability/IntegerListCapabilityItem;
 
     const-string/jumbo v1, "sony-burst-fps-values"
@@ -2292,7 +2091,7 @@
 
     iput-object v0, p0, Ljp/co/sony/mc/camera/util/capability/CameraCapabilityList;->BURST_FPS:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
 
-    .line 549
+    .line 503
     new-instance v0, Ljp/co/sony/mc/camera/util/capability/IntegerListCapabilityItem;
 
     const-string/jumbo v1, "sony-hdr-burst-fps-values"
@@ -2301,7 +2100,7 @@
 
     iput-object v0, p0, Ljp/co/sony/mc/camera/util/capability/CameraCapabilityList;->HDR_BURST_FPS:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
 
-    .line 552
+    .line 506
     new-instance v0, Ljp/co/sony/mc/camera/util/capability/IntegerListCapabilityItem;
 
     const-string/jumbo v1, "sony-bokeh-burst-fps-values"
@@ -2310,7 +2109,7 @@
 
     iput-object v0, p0, Ljp/co/sony/mc/camera/util/capability/CameraCapabilityList;->BOKEH_BURST_FPS:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
 
-    .line 555
+    .line 509
     new-instance v0, Ljp/co/sony/mc/camera/util/capability/IntegerCapabilityItem;
 
     const-string v1, "max-normal-burst-queueing-num"
@@ -2319,7 +2118,7 @@
 
     iput-object v0, p0, Ljp/co/sony/mc/camera/util/capability/CameraCapabilityList;->NORMAL_BURST_MAX_QUEUEING_NUM:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
 
-    .line 558
+    .line 512
     new-instance v0, Ljp/co/sony/mc/camera/util/capability/IntegerCapabilityItem;
 
     const-string v1, "max-bokeh-burst-queueing-num"
@@ -2328,7 +2127,7 @@
 
     iput-object v0, p0, Ljp/co/sony/mc/camera/util/capability/CameraCapabilityList;->BOKEH_BURST_MAX_QUEUEING_NUM:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
 
-    .line 561
+    .line 515
     new-instance v0, Ljp/co/sony/mc/camera/util/capability/IntegerCapabilityItem;
 
     const-string v1, "max-hdr-burst-queueing-num"
@@ -2337,7 +2136,7 @@
 
     iput-object v0, p0, Ljp/co/sony/mc/camera/util/capability/CameraCapabilityList;->HDR_BURST_MAX_QUEUEING_NUM:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
 
-    .line 564
+    .line 518
     new-instance v0, Ljp/co/sony/mc/camera/util/capability/AvailablePreviewFpsMapListCapabilityItem;
 
     const-string/jumbo v1, "sony-preview-fps-map"
@@ -2346,7 +2145,7 @@
 
     iput-object v0, p0, Ljp/co/sony/mc/camera/util/capability/CameraCapabilityList;->PREVIEW_FPS_MAP:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
 
-    .line 567
+    .line 521
     new-instance v0, Ljp/co/sony/mc/camera/util/capability/IntegerCapabilityItem;
 
     const-string/jumbo v1, "sony-max-preview-fps"
@@ -2355,7 +2154,7 @@
 
     iput-object v0, p0, Ljp/co/sony/mc/camera/util/capability/CameraCapabilityList;->MAX_PREVIEW_FPS:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
 
-    .line 570
+    .line 524
     new-instance v0, Ljp/co/sony/mc/camera/util/capability/RectCapabilityItem;
 
     const-string v1, "light-shielding-rect"
@@ -2364,7 +2163,7 @@
 
     iput-object v0, p0, Ljp/co/sony/mc/camera/util/capability/CameraCapabilityList;->DISPLAY_FLASH_LIGHT_SHIELDING_RECT:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
 
-    .line 573
+    .line 527
     new-instance v0, Ljp/co/sony/mc/camera/util/capability/IntegerCapabilityItem;
 
     const-string v1, "light-shielding-color"
@@ -2373,7 +2172,7 @@
 
     iput-object v0, p0, Ljp/co/sony/mc/camera/util/capability/CameraCapabilityList;->DISPLAY_FLASH_LIGHT_SHIELDING_COLOR:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
 
-    .line 576
+    .line 530
     new-instance v0, Ljp/co/sony/mc/camera/util/capability/StringListCapabilityItem;
 
     const-string/jumbo v1, "sony-multi-frame-nr-mode"
@@ -2382,25 +2181,7 @@
 
     iput-object v0, p0, Ljp/co/sony/mc/camera/util/capability/CameraCapabilityList;->MULTI_FRAME_NR_MODE:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
 
-    .line 579
-    new-instance v0, Ljp/co/sony/mc/camera/util/capability/FloatListCapabilityItem;
-
-    const-string v1, "android-focal-length-values"
-
-    invoke-direct {v0, v1, p2}, Ljp/co/sony/mc/camera/util/capability/FloatListCapabilityItem;-><init>(Ljava/lang/String;Landroid/content/SharedPreferences;)V
-
-    iput-object v0, p0, Ljp/co/sony/mc/camera/util/capability/CameraCapabilityList;->ANDROID_FOCAL_LENGTH:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
-
-    .line 582
-    new-instance v0, Ljp/co/sony/mc/camera/util/capability/FloatListCapabilityItem;
-
-    const-string/jumbo v1, "sony-focal-length-values"
-
-    invoke-direct {v0, v1, p2}, Ljp/co/sony/mc/camera/util/capability/FloatListCapabilityItem;-><init>(Ljava/lang/String;Landroid/content/SharedPreferences;)V
-
-    iput-object v0, p0, Ljp/co/sony/mc/camera/util/capability/CameraCapabilityList;->SONY_FOCAL_LENGTH:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
-
-    .line 585
+    .line 533
     new-instance v0, Ljp/co/sony/mc/camera/util/capability/FloatListCapabilityItem;
 
     const-string v1, "aperture"
@@ -2409,7 +2190,7 @@
 
     iput-object v0, p0, Ljp/co/sony/mc/camera/util/capability/CameraCapabilityList;->APERTURE:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
 
-    .line 587
+    .line 535
     new-instance v0, Ljp/co/sony/mc/camera/util/capability/StringListCapabilityItem;
 
     const-string/jumbo v1, "sony-cinema-histogram-values"
@@ -2418,7 +2199,7 @@
 
     iput-object v0, p0, Ljp/co/sony/mc/camera/util/capability/CameraCapabilityList;->HISTOGRAM:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
 
-    .line 590
+    .line 538
     new-instance v0, Ljp/co/sony/mc/camera/util/capability/IntegerCapabilityItem;
 
     const-string/jumbo v1, "sony-cinema-histogram-bucket-count"
@@ -2427,7 +2208,7 @@
 
     iput-object v0, p0, Ljp/co/sony/mc/camera/util/capability/CameraCapabilityList;->HISTOGRAM_BUCKET_COUNT:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
 
-    .line 593
+    .line 541
     new-instance v0, Ljp/co/sony/mc/camera/util/capability/IntegerCapabilityItem;
 
     const-string/jumbo v1, "sony-cinema-max-histogram-count"
@@ -2436,7 +2217,7 @@
 
     iput-object v0, p0, Ljp/co/sony/mc/camera/util/capability/CameraCapabilityList;->MAX_HISTOGRAM_COUNT:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
 
-    .line 596
+    .line 544
     new-instance v0, Ljp/co/sony/mc/camera/util/capability/StringListCapabilityItem;
 
     const-string v1, "priority-set-in-awb"
@@ -2445,7 +2226,7 @@
 
     iput-object v0, p0, Ljp/co/sony/mc/camera/util/capability/CameraCapabilityList;->AWB_PRIORITY:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
 
-    .line 599
+    .line 547
     new-instance v0, Ljp/co/sony/mc/camera/util/capability/StringListCapabilityItem;
 
     const-string/jumbo v1, "sony-af-drive-mode"
@@ -2454,7 +2235,7 @@
 
     iput-object v0, p0, Ljp/co/sony/mc/camera/util/capability/CameraCapabilityList;->AF_DRIVE_MODE:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
 
-    .line 601
+    .line 549
     new-instance v0, Ljp/co/sony/mc/camera/util/capability/BooleanCapabilityItem;
 
     const-string v1, "raw-capability"
@@ -2463,7 +2244,7 @@
 
     iput-object v0, p0, Ljp/co/sony/mc/camera/util/capability/CameraCapabilityList;->RAW_CAPABILITY:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
 
-    .line 603
+    .line 551
     new-instance v0, Ljp/co/sony/mc/camera/util/capability/RectListCapabilityItem;
 
     const-string v1, "raw-picture-size"
@@ -2472,7 +2253,7 @@
 
     iput-object v0, p0, Ljp/co/sony/mc/camera/util/capability/CameraCapabilityList;->RAW_PICTURE_SIZE:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
 
-    .line 605
+    .line 553
     new-instance v0, Ljp/co/sony/mc/camera/util/capability/RectCapabilityItem;
 
     const-string/jumbo v1, "sony-precise-focus-area"
@@ -2481,7 +2262,7 @@
 
     iput-object v0, p0, Ljp/co/sony/mc/camera/util/capability/CameraCapabilityList;->PRECISE_FOCUS_AREA:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
 
-    .line 607
+    .line 555
     new-instance v0, Ljp/co/sony/mc/camera/util/capability/StringListCapabilityItem;
 
     const-string/jumbo v1, "sony-yuv-draw-frame-mode"
@@ -2490,7 +2271,7 @@
 
     iput-object v0, p0, Ljp/co/sony/mc/camera/util/capability/CameraCapabilityList;->YUV_DRAW_FRAME_MODE:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
 
-    .line 610
+    .line 558
     new-instance v0, Ljp/co/sony/mc/camera/util/capability/MinimumDurationConfigurationListCapabilityItem;
 
     const-string v1, "minimum-frame-duration"
@@ -2499,7 +2280,7 @@
 
     iput-object v0, p0, Ljp/co/sony/mc/camera/util/capability/CameraCapabilityList;->MIN_FRAME_DURATION:Ljp/co/sony/mc/camera/util/capability/MinimumDurationConfigurationListCapabilityItem;
 
-    .line 613
+    .line 561
     new-instance v0, Ljp/co/sony/mc/camera/util/capability/LongCapabilityItem;
 
     const-string v1, "maximum-frame-duration"
@@ -2508,16 +2289,7 @@
 
     iput-object v0, p0, Ljp/co/sony/mc/camera/util/capability/CameraCapabilityList;->MAX_FRAME_DURATION:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
 
-    .line 616
-    new-instance v0, Ljp/co/sony/mc/camera/util/capability/LongCapabilityItem;
-
-    const-string v1, "minimum-hybrid-zoom-frame-duration"
-
-    invoke-direct {v0, v1, p2}, Ljp/co/sony/mc/camera/util/capability/LongCapabilityItem;-><init>(Ljava/lang/String;Landroid/content/SharedPreferences;)V
-
-    iput-object v0, p0, Ljp/co/sony/mc/camera/util/capability/CameraCapabilityList;->MIN_HYBRID_ZOOM_FRAME_DURATION:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
-
-    .line 619
+    .line 564
     new-instance v0, Ljp/co/sony/mc/camera/util/capability/StringListCapabilityItem;
 
     const-string/jumbo v1, "video-multi-frame-hdr-mode"
@@ -2526,7 +2298,7 @@
 
     iput-object v0, p0, Ljp/co/sony/mc/camera/util/capability/CameraCapabilityList;->MULTI_FRAME_HDR_MODE:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
 
-    .line 622
+    .line 567
     new-instance v0, Ljp/co/sony/mc/camera/util/capability/StringListCapabilityItem;
 
     const-string/jumbo v1, "sony-photopro-peaking-mode"
@@ -2535,7 +2307,7 @@
 
     iput-object v0, p0, Ljp/co/sony/mc/camera/util/capability/CameraCapabilityList;->PEAKING_MODE:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
 
-    .line 625
+    .line 570
     new-instance v0, Ljp/co/sony/mc/camera/util/capability/StringListCapabilityItem;
 
     const-string/jumbo v1, "sony-color-tone-profile"
@@ -2544,7 +2316,7 @@
 
     iput-object v0, p0, Ljp/co/sony/mc/camera/util/capability/CameraCapabilityList;->COLOR_TONE_PROFILE:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
 
-    .line 628
+    .line 573
     new-instance v0, Ljp/co/sony/mc/camera/util/capability/StringListCapabilityItem;
 
     const-string/jumbo v1, "sony-product-showcase-mode"
@@ -2553,7 +2325,7 @@
 
     iput-object v0, p0, Ljp/co/sony/mc/camera/util/capability/CameraCapabilityList;->PRODUCT_SHOWCASE_MODE:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
 
-    .line 631
+    .line 576
     new-instance v0, Ljp/co/sony/mc/camera/util/capability/StringListCapabilityItem;
 
     const-string/jumbo v1, "sony-low-light-mode-supported-values"
@@ -2562,7 +2334,7 @@
 
     iput-object v0, p0, Ljp/co/sony/mc/camera/util/capability/CameraCapabilityList;->LOW_LIGHT_MODE:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
 
-    .line 634
+    .line 579
     new-instance v0, Ljp/co/sony/mc/camera/util/capability/StringListCapabilityItem;
 
     const-string/jumbo v1, "sony-photo-hybrid-zoom"
@@ -2571,7 +2343,7 @@
 
     iput-object v0, p0, Ljp/co/sony/mc/camera/util/capability/CameraCapabilityList;->HYBRID_ZOOM_MODE:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
 
-    .line 636
+    .line 581
     new-instance v0, Ljp/co/sony/mc/camera/util/capability/BooleanCapabilityItem;
 
     const-string v1, "control-fps"
@@ -2580,16 +2352,7 @@
 
     iput-object v0, p0, Ljp/co/sony/mc/camera/util/capability/CameraCapabilityList;->CONTROL_FPS:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
 
-    .line 639
-    new-instance v0, Ljp/co/sony/mc/camera/util/capability/LongCapabilityItem;
-
-    const-string/jumbo v1, "sony-hybrid-zoom-minimum-frame-duration"
-
-    invoke-direct {v0, v1, p2}, Ljp/co/sony/mc/camera/util/capability/LongCapabilityItem;-><init>(Ljava/lang/String;Landroid/content/SharedPreferences;)V
-
-    iput-object v0, p0, Ljp/co/sony/mc/camera/util/capability/CameraCapabilityList;->HYBRID_ZOOM_MIN_FRAME_DURATION:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
-
-    .line 642
+    .line 584
     new-instance v0, Ljp/co/sony/mc/camera/util/capability/StringListCapabilityItem;
 
     const-string/jumbo v1, "sony-fallback-mode-supported-values"
@@ -2598,7 +2361,7 @@
 
     iput-object v0, p0, Ljp/co/sony/mc/camera/util/capability/CameraCapabilityList;->FALLBACK_MODE:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
 
-    .line 645
+    .line 587
     new-instance v0, Ljp/co/sony/mc/camera/util/capability/StringListCapabilityItem;
 
     const-string/jumbo v1, "sony-close-up-mode"
@@ -2607,7 +2370,7 @@
 
     iput-object v0, p0, Ljp/co/sony/mc/camera/util/capability/CameraCapabilityList;->CLOSE_UP_MODE:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
 
-    .line 647
+    .line 589
     new-instance v0, Ljp/co/sony/mc/camera/util/capability/BooleanCapabilityItem;
 
     const-string/jumbo v1, "sony-video-stream-orientation-supported"
@@ -2616,7 +2379,7 @@
 
     iput-object v0, p0, Ljp/co/sony/mc/camera/util/capability/CameraCapabilityList;->VIDEO_STREAM_ORIENTATION:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
 
-    .line 650
+    .line 592
     new-instance v0, Ljp/co/sony/mc/camera/util/capability/StringListCapabilityItem;
 
     const-string/jumbo v1, "video-sensitivity-smoothing-mode"
@@ -2625,14 +2388,41 @@
 
     iput-object v0, p0, Ljp/co/sony/mc/camera/util/capability/CameraCapabilityList;->SENSITIVITY_SMOOTHING_MODE:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
 
-    .line 653
+    .line 595
+    new-instance v0, Ljp/co/sony/mc/camera/util/capability/StringListCapabilityItem;
+
+    const-string/jumbo v1, "sony-auto-framing-mode-supported-values"
+
+    invoke-direct {v0, v1, p2}, Ljp/co/sony/mc/camera/util/capability/StringListCapabilityItem;-><init>(Ljava/lang/String;Landroid/content/SharedPreferences;)V
+
+    iput-object v0, p0, Ljp/co/sony/mc/camera/util/capability/CameraCapabilityList;->AUTO_FRAMING_MODE:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
+
+    .line 598
+    new-instance v0, Ljp/co/sony/mc/camera/util/capability/AutoFramingVideoConfigurationListCapabilityItem;
+
+    const-string/jumbo v1, "sony-auto-framing-video-configuration"
+
+    invoke-direct {v0, v1, p2}, Ljp/co/sony/mc/camera/util/capability/AutoFramingVideoConfigurationListCapabilityItem;-><init>(Ljava/lang/String;Landroid/content/SharedPreferences;)V
+
+    iput-object v0, p0, Ljp/co/sony/mc/camera/util/capability/CameraCapabilityList;->AUTO_FRAMING_VIDEO_CONFIGURATION_MAP:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
+
+    .line 601
+    new-instance v0, Ljp/co/sony/mc/camera/util/capability/StringListCapabilityItem;
+
+    const-string/jumbo v1, "sony-framing-assist-position-mode-supported-values"
+
+    invoke-direct {v0, v1, p2}, Ljp/co/sony/mc/camera/util/capability/StringListCapabilityItem;-><init>(Ljava/lang/String;Landroid/content/SharedPreferences;)V
+
+    iput-object v0, p0, Ljp/co/sony/mc/camera/util/capability/CameraCapabilityList;->FRAMING_ASSIST_POSITION_MODE:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
+
+    .line 604
     invoke-direct {p0}, Ljp/co/sony/mc/camera/util/capability/CameraCapabilityList;->createList()Ljava/util/List;
 
     move-result-object p2
 
     iput-object p2, p0, Ljp/co/sony/mc/camera/util/capability/CameraCapabilityList;->mValues:Ljava/util/List;
 
-    .line 655
+    .line 606
     new-instance p2, Ljp/co/sony/mc/camera/util/capability/ResolutionCapabilityItem;
 
     invoke-direct {p0, p1}, Ljp/co/sony/mc/camera/util/capability/CameraCapabilityList;->getResolutionOptions(Landroid/content/Context;)Ljp/co/sony/mc/camera/util/capability/ResolutionOptions;
@@ -2649,13 +2439,13 @@
 .method public constructor <init>(Landroid/content/Context;Ljp/co/sony/mc/camera/util/capability/CameraStaticParameters;)V
     .locals 5
 
-    .line 658
+    .line 609
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 659
+    .line 610
     new-instance v0, Ljp/co/sony/mc/camera/util/capability/IntegerCapabilityItem;
 
-    .line 660
+    .line 611
     invoke-virtual {p2}, Ljp/co/sony/mc/camera/util/capability/CameraStaticParameters;->getMaxExposureCompensation()I
 
     move-result v1
@@ -2670,10 +2460,10 @@
 
     iput-object v0, p0, Ljp/co/sony/mc/camera/util/capability/CameraCapabilityList;->EV_MAX:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
 
-    .line 661
+    .line 612
     new-instance v0, Ljp/co/sony/mc/camera/util/capability/IntegerCapabilityItem;
 
-    .line 662
+    .line 613
     invoke-virtual {p2}, Ljp/co/sony/mc/camera/util/capability/CameraStaticParameters;->getMinExposureCompensation()I
 
     move-result v1
@@ -2688,10 +2478,10 @@
 
     iput-object v0, p0, Ljp/co/sony/mc/camera/util/capability/CameraCapabilityList;->EV_MIN:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
 
-    .line 663
+    .line 614
     new-instance v0, Ljp/co/sony/mc/camera/util/capability/FloatCapabilityItem;
 
-    .line 664
+    .line 615
     invoke-virtual {p2}, Ljp/co/sony/mc/camera/util/capability/CameraStaticParameters;->getExposureCompensationStep()F
 
     move-result v1
@@ -2706,12 +2496,12 @@
 
     iput-object v0, p0, Ljp/co/sony/mc/camera/util/capability/CameraCapabilityList;->EV_STEP:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
 
-    .line 665
+    .line 616
     new-instance v0, Ljp/co/sony/mc/camera/util/capability/StringListCapabilityItem;
 
     const-string v1, "flash-mode"
 
-    .line 666
+    .line 617
     invoke-virtual {p2}, Ljp/co/sony/mc/camera/util/capability/CameraStaticParameters;->getSupportedFlashModes()Ljava/util/List;
 
     move-result-object v2
@@ -2720,12 +2510,12 @@
 
     iput-object v0, p0, Ljp/co/sony/mc/camera/util/capability/CameraCapabilityList;->FLASH:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
 
-    .line 667
+    .line 618
     new-instance v0, Ljp/co/sony/mc/camera/util/capability/StringListCapabilityItem;
 
     const-string v1, "focus-mode"
 
-    .line 668
+    .line 619
     invoke-virtual {p2}, Ljp/co/sony/mc/camera/util/capability/CameraStaticParameters;->getSupportedFocusModes()Ljava/util/List;
 
     move-result-object v2
@@ -2734,12 +2524,12 @@
 
     iput-object v0, p0, Ljp/co/sony/mc/camera/util/capability/CameraCapabilityList;->FOCUS_MODE:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
 
-    .line 669
+    .line 620
     new-instance v0, Ljp/co/sony/mc/camera/util/capability/IntArrayListCapabilityItem;
 
     const-string v1, "preview-fps-range"
 
-    .line 670
+    .line 621
     invoke-virtual {p2}, Ljp/co/sony/mc/camera/util/capability/CameraStaticParameters;->getSupportedPreviewFpsRange()Ljava/util/List;
 
     move-result-object v2
@@ -2748,28 +2538,10 @@
 
     iput-object v0, p0, Ljp/co/sony/mc/camera/util/capability/CameraCapabilityList;->FPS_RANGE:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
 
-    .line 671
+    .line 622
     new-instance v0, Ljp/co/sony/mc/camera/util/capability/IntegerCapabilityItem;
 
-    .line 672
-    invoke-virtual {p2}, Ljp/co/sony/mc/camera/util/capability/CameraStaticParameters;->getMaxNumDetectedFaces()I
-
-    move-result v1
-
-    invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
-
-    move-result-object v1
-
-    const-string v2, "max-num-detected-faces"
-
-    invoke-direct {v0, v2, v1}, Ljp/co/sony/mc/camera/util/capability/IntegerCapabilityItem;-><init>(Ljava/lang/String;Ljava/lang/Integer;)V
-
-    iput-object v0, p0, Ljp/co/sony/mc/camera/util/capability/CameraCapabilityList;->MAX_NUM_FACE:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
-
-    .line 673
-    new-instance v0, Ljp/co/sony/mc/camera/util/capability/IntegerCapabilityItem;
-
-    .line 674
+    .line 623
     invoke-virtual {p2}, Ljp/co/sony/mc/camera/util/capability/CameraStaticParameters;->getMaxNumFocusAreas()I
 
     move-result v1
@@ -2784,10 +2556,10 @@
 
     iput-object v0, p0, Ljp/co/sony/mc/camera/util/capability/CameraCapabilityList;->MAX_NUM_FOCUS_AREA:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
 
-    .line 675
+    .line 624
     new-instance v0, Ljp/co/sony/mc/camera/util/capability/FloatCapabilityItem;
 
-    .line 676
+    .line 625
     invoke-virtual {p2}, Ljp/co/sony/mc/camera/util/capability/CameraStaticParameters;->getMinZoomRatio()F
 
     move-result v1
@@ -2802,10 +2574,10 @@
 
     iput-object v0, p0, Ljp/co/sony/mc/camera/util/capability/CameraCapabilityList;->MIN_ZOOM_RATIO:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
 
-    .line 677
+    .line 626
     new-instance v0, Ljp/co/sony/mc/camera/util/capability/FloatCapabilityItem;
 
-    .line 678
+    .line 627
     invoke-virtual {p2}, Ljp/co/sony/mc/camera/util/capability/CameraStaticParameters;->getMaxZoomRatio()F
 
     move-result v1
@@ -2820,12 +2592,12 @@
 
     iput-object v0, p0, Ljp/co/sony/mc/camera/util/capability/CameraCapabilityList;->MAX_ZOOM_RATIO:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
 
-    .line 679
+    .line 628
     new-instance v0, Ljp/co/sony/mc/camera/util/capability/FloatRangeListCapabilityItem;
 
     const-string/jumbo v1, "sony-optical-zoom-ratio-range"
 
-    .line 681
+    .line 630
     invoke-virtual {p2}, Ljp/co/sony/mc/camera/util/capability/CameraStaticParameters;->getOpticalZoomRatioRange()Ljava/util/List;
 
     move-result-object v2
@@ -2834,12 +2606,12 @@
 
     iput-object v0, p0, Ljp/co/sony/mc/camera/util/capability/CameraCapabilityList;->OPTICAL_ZOOM_RATIO_RANGE:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
 
-    .line 682
+    .line 631
     new-instance v0, Ljp/co/sony/mc/camera/util/capability/FloatRangeListCapabilityItem;
 
     const-string/jumbo v1, "sony-bokeh-zoom-ratio-range"
 
-    .line 684
+    .line 633
     invoke-virtual {p2}, Ljp/co/sony/mc/camera/util/capability/CameraStaticParameters;->getBokehZoomRatioRange()Ljava/util/List;
 
     move-result-object v2
@@ -2848,12 +2620,12 @@
 
     iput-object v0, p0, Ljp/co/sony/mc/camera/util/capability/CameraCapabilityList;->BOKEH_ZOOM_RATIO_RANGE:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
 
-    .line 685
+    .line 634
     new-instance v0, Ljp/co/sony/mc/camera/util/capability/FloatRangeCapabilityItem;
 
     const-string/jumbo v1, "sony-hybrid-zoom-ratio-range-values"
 
-    .line 687
+    .line 636
     invoke-virtual {p2}, Ljp/co/sony/mc/camera/util/capability/CameraStaticParameters;->getHybridZoomRatioRange()Landroid/util/Range;
 
     move-result-object v2
@@ -2862,12 +2634,12 @@
 
     iput-object v0, p0, Ljp/co/sony/mc/camera/util/capability/CameraCapabilityList;->HYBRID_ZOOM_RATIO_RANGE:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
 
-    .line 688
+    .line 637
     new-instance v0, Ljp/co/sony/mc/camera/util/capability/FloatRangeCapabilityItem;
 
     const-string/jumbo v1, "sony-close-up-mode-zoom-ratio-range-values"
 
-    .line 690
+    .line 639
     invoke-virtual {p2}, Ljp/co/sony/mc/camera/util/capability/CameraStaticParameters;->getCloseUpModeZoomRatioRange()Landroid/util/Range;
 
     move-result-object v2
@@ -2876,30 +2648,12 @@
 
     iput-object v0, p0, Ljp/co/sony/mc/camera/util/capability/CameraCapabilityList;->CLOSE_UP_MODE_ZOOM_RATIO_RANGE:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
 
-    .line 691
-    new-instance v0, Ljp/co/sony/mc/camera/util/capability/FloatCapabilityItem;
-
-    .line 693
-    invoke-virtual {p2}, Ljp/co/sony/mc/camera/util/capability/CameraStaticParameters;->getWideZoomTargetRatio()F
-
-    move-result v1
-
-    invoke-static {v1}, Ljava/lang/Float;->valueOf(F)Ljava/lang/Float;
-
-    move-result-object v1
-
-    const-string/jumbo v2, "wide-zoom-target-ratio"
-
-    invoke-direct {v0, v2, v1}, Ljp/co/sony/mc/camera/util/capability/FloatCapabilityItem;-><init>(Ljava/lang/String;Ljava/lang/Float;)V
-
-    iput-object v0, p0, Ljp/co/sony/mc/camera/util/capability/CameraCapabilityList;->WIDE_ZOOM_TARGET_RATIO:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
-
-    .line 694
+    .line 640
     new-instance v0, Ljp/co/sony/mc/camera/util/capability/RectListCapabilityItem;
 
     const-string v1, "picture-size"
 
-    .line 695
+    .line 641
     invoke-virtual {p2}, Ljp/co/sony/mc/camera/util/capability/CameraStaticParameters;->getSupportedPictureSizes()Ljava/util/List;
 
     move-result-object v2
@@ -2908,40 +2662,12 @@
 
     iput-object v0, p0, Ljp/co/sony/mc/camera/util/capability/CameraCapabilityList;->PICTURE_SIZE:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
 
-    .line 696
-    new-instance v0, Ljp/co/sony/mc/camera/util/capability/RectListCapabilityItem;
-
-    const-string/jumbo v1, "sony-manual-iso-size-values"
-
-    .line 698
-    invoke-virtual {p2}, Ljp/co/sony/mc/camera/util/capability/CameraStaticParameters;->getManualIsoSupportedPictureSizes()Ljava/util/List;
-
-    move-result-object v2
-
-    invoke-direct {v0, v1, v2}, Ljp/co/sony/mc/camera/util/capability/RectListCapabilityItem;-><init>(Ljava/lang/String;Ljava/util/List;)V
-
-    iput-object v0, p0, Ljp/co/sony/mc/camera/util/capability/CameraCapabilityList;->MANUAL_ISO_SUPPORTED_PICTURE_SIZE:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
-
-    .line 699
-    new-instance v0, Ljp/co/sony/mc/camera/util/capability/RectListCapabilityItem;
-
-    const-string/jumbo v1, "sony-still-hdr-size-values"
-
-    .line 701
-    invoke-virtual {p2}, Ljp/co/sony/mc/camera/util/capability/CameraStaticParameters;->getStillHdrSupportedPictureSizes()Ljava/util/List;
-
-    move-result-object v2
-
-    invoke-direct {v0, v1, v2}, Ljp/co/sony/mc/camera/util/capability/RectListCapabilityItem;-><init>(Ljava/lang/String;Ljava/util/List;)V
-
-    iput-object v0, p0, Ljp/co/sony/mc/camera/util/capability/CameraCapabilityList;->STILL_HDR_SUPPORTED_PICTURE_SIZE:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
-
-    .line 702
+    .line 642
     new-instance v0, Ljp/co/sony/mc/camera/util/capability/RectListCapabilityItem;
 
     const-string v1, "photo-high-resolution-picture-values"
 
-    .line 704
+    .line 644
     invoke-virtual {p2}, Ljp/co/sony/mc/camera/util/capability/CameraStaticParameters;->getHighResolutionSupportedPictureSizes()Ljava/util/List;
 
     move-result-object v2
@@ -2950,12 +2676,12 @@
 
     iput-object v0, p0, Ljp/co/sony/mc/camera/util/capability/CameraCapabilityList;->HIGH_RESOLUTION_SUPPORTED_PICTURE_SIZE:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
 
-    .line 705
+    .line 645
     new-instance v0, Ljp/co/sony/mc/camera/util/capability/RectListCapabilityItem;
 
     const-string v1, "preview-size"
 
-    .line 706
+    .line 646
     invoke-virtual {p2}, Ljp/co/sony/mc/camera/util/capability/CameraStaticParameters;->getSupportedPreviewSizes()Ljava/util/List;
 
     move-result-object v2
@@ -2964,26 +2690,12 @@
 
     iput-object v0, p0, Ljp/co/sony/mc/camera/util/capability/CameraCapabilityList;->PREVIEW_SIZE:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
 
-    .line 707
-    new-instance v0, Ljp/co/sony/mc/camera/util/capability/RectCapabilityItem;
-
-    const-string/jumbo v1, "sony-preferred-preview-size-for-still"
-
-    .line 708
-    invoke-virtual {p2}, Ljp/co/sony/mc/camera/util/capability/CameraStaticParameters;->getPreferredPreviewSizeForStill()Landroid/graphics/Rect;
-
-    move-result-object v2
-
-    invoke-direct {v0, v1, v2}, Ljp/co/sony/mc/camera/util/capability/RectCapabilityItem;-><init>(Ljava/lang/String;Landroid/graphics/Rect;)V
-
-    iput-object v0, p0, Ljp/co/sony/mc/camera/util/capability/CameraCapabilityList;->PREVIEW_SIZE_FOR_STILL:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
-
-    .line 709
+    .line 647
     new-instance v0, Ljp/co/sony/mc/camera/util/capability/RectCapabilityItem;
 
     const-string/jumbo v1, "sony-preferred-preview-size-for-video"
 
-    .line 710
+    .line 648
     invoke-virtual {p2}, Ljp/co/sony/mc/camera/util/capability/CameraStaticParameters;->getPreferredPreviewSizeForVideo()Landroid/graphics/Rect;
 
     move-result-object v2
@@ -2992,12 +2704,12 @@
 
     iput-object v0, p0, Ljp/co/sony/mc/camera/util/capability/CameraCapabilityList;->PREVIEW_SIZE_FOR_VIDEO:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
 
-    .line 711
+    .line 649
     new-instance v0, Ljp/co/sony/mc/camera/util/capability/RectCapabilityItem;
 
     const-string/jumbo v1, "sony-preferred-preview-size-for-hdr-video"
 
-    .line 712
+    .line 650
     invoke-virtual {p2}, Ljp/co/sony/mc/camera/util/capability/CameraStaticParameters;->getPreferredPreviewSizeForHdrVideo()Landroid/graphics/Rect;
 
     move-result-object v2
@@ -3006,34 +2718,12 @@
 
     iput-object v0, p0, Ljp/co/sony/mc/camera/util/capability/CameraCapabilityList;->PREVIEW_SIZE_FOR_HDR_VIDEO:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
 
-    .line 714
-    invoke-virtual {p2}, Ljp/co/sony/mc/camera/util/capability/CameraStaticParameters;->getSupportedVideoConfiguration()Ljava/util/List;
-
-    move-result-object v0
-
-    .line 715
-    new-instance v1, Ljava/util/ArrayList;
-
-    invoke-direct {v1}, Ljava/util/ArrayList;-><init>()V
-
-    .line 717
-    invoke-interface {v0, v1}, Ljava/util/List;->addAll(Ljava/util/Collection;)Z
-
-    .line 718
-    new-instance v1, Ljp/co/sony/mc/camera/util/capability/VideoConfigurationListCapabilityItem;
-
-    const-string/jumbo v2, "video-size"
-
-    invoke-direct {v1, v2, v0}, Ljp/co/sony/mc/camera/util/capability/VideoConfigurationListCapabilityItem;-><init>(Ljava/lang/String;Ljava/util/List;)V
-
-    iput-object v1, p0, Ljp/co/sony/mc/camera/util/capability/CameraCapabilityList;->VIDEO_CONFIGURATION:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
-
-    .line 721
+    .line 652
     invoke-virtual {p2}, Ljp/co/sony/mc/camera/util/capability/CameraStaticParameters;->getSupportedVideoConfigurationMap()Ljava/util/List;
 
     move-result-object v0
 
-    .line 723
+    .line 654
     new-instance v1, Ljp/co/sony/mc/camera/util/capability/VideoConfigurationMapListCapabilityItem;
 
     const-string/jumbo v2, "video-size-map"
@@ -3042,12 +2732,12 @@
 
     iput-object v1, p0, Ljp/co/sony/mc/camera/util/capability/CameraCapabilityList;->VIDEO_CONFIGURATION_MAP:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
 
-    .line 725
+    .line 656
     new-instance v0, Ljp/co/sony/mc/camera/util/capability/VideoSnapshotSizeListCapabilityItem;
 
     const-string/jumbo v1, "video-snapshot-size"
 
-    .line 727
+    .line 658
     invoke-virtual {p2}, Ljp/co/sony/mc/camera/util/capability/CameraStaticParameters;->getSupportedVideoSnapshotSize()Ljava/util/List;
 
     move-result-object v2
@@ -3056,12 +2746,12 @@
 
     iput-object v0, p0, Ljp/co/sony/mc/camera/util/capability/CameraCapabilityList;->VIDEO_SNAPSHOT_SIZE:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
 
-    .line 729
+    .line 660
     invoke-virtual {p2}, Ljp/co/sony/mc/camera/util/capability/CameraStaticParameters;->getHighSpeedVideoConfiguration()Ljava/util/List;
 
     move-result-object v0
 
-    .line 730
+    .line 661
     new-instance v1, Ljp/co/sony/mc/camera/util/capability/HighSpeedVideoConfigurationListCapabilityItem;
 
     const-string v2, "high-speed-video-config"
@@ -3070,12 +2760,12 @@
 
     iput-object v1, p0, Ljp/co/sony/mc/camera/util/capability/CameraCapabilityList;->HIGH_SPEED_VIDEO_CONFIGURATION:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
 
-    .line 733
+    .line 664
     new-instance v0, Ljp/co/sony/mc/camera/util/capability/StringListCapabilityItem;
 
     const-string/jumbo v1, "whitebalance"
 
-    .line 734
+    .line 665
     invoke-virtual {p2}, Ljp/co/sony/mc/camera/util/capability/CameraStaticParameters;->getSupportedWhiteBalance()Ljava/util/List;
 
     move-result-object v2
@@ -3084,12 +2774,12 @@
 
     iput-object v0, p0, Ljp/co/sony/mc/camera/util/capability/CameraCapabilityList;->WHITE_BALANCE:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
 
-    .line 736
+    .line 667
     new-instance v0, Ljp/co/sony/mc/camera/util/capability/StringListCapabilityItem;
 
     const-string/jumbo v1, "sony-ae-mode-values"
 
-    .line 737
+    .line 668
     invoke-virtual {p2}, Ljp/co/sony/mc/camera/util/capability/CameraStaticParameters;->getSupportedAeModes()Ljava/util/List;
 
     move-result-object v2
@@ -3098,12 +2788,12 @@
 
     iput-object v0, p0, Ljp/co/sony/mc/camera/util/capability/CameraCapabilityList;->AE:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
 
-    .line 738
+    .line 669
     new-instance v0, Ljp/co/sony/mc/camera/util/capability/BooleanCapabilityItem;
 
     const-string v1, "auto-exposure-lock-available"
 
-    .line 739
+    .line 670
     invoke-virtual {p2}, Ljp/co/sony/mc/camera/util/capability/CameraStaticParameters;->isAeLockAvailable()Ljava/lang/Boolean;
 
     move-result-object v2
@@ -3112,12 +2802,12 @@
 
     iput-object v0, p0, Ljp/co/sony/mc/camera/util/capability/CameraCapabilityList;->AEL:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
 
-    .line 740
+    .line 671
     new-instance v0, Ljp/co/sony/mc/camera/util/capability/BooleanCapabilityItem;
 
     const-string v1, "auto-white-balance-lock-available"
 
-    .line 741
+    .line 672
     invoke-virtual {p2}, Ljp/co/sony/mc/camera/util/capability/CameraStaticParameters;->isAwbLockAvailable()Ljava/lang/Boolean;
 
     move-result-object v2
@@ -3126,12 +2816,12 @@
 
     iput-object v0, p0, Ljp/co/sony/mc/camera/util/capability/CameraCapabilityList;->AWBL:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
 
-    .line 743
+    .line 674
     new-instance v0, Ljp/co/sony/mc/camera/util/capability/StringListCapabilityItem;
 
     const-string/jumbo v1, "sony-focus-area-values"
 
-    .line 745
+    .line 676
     invoke-virtual {p2}, Ljp/co/sony/mc/camera/util/capability/CameraStaticParameters;->getSupportedFocusAreaModes()Ljava/util/List;
 
     move-result-object v2
@@ -3140,12 +2830,12 @@
 
     iput-object v0, p0, Ljp/co/sony/mc/camera/util/capability/CameraCapabilityList;->FOCUS_AREA:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
 
-    .line 746
+    .line 677
     new-instance v0, Ljp/co/sony/mc/camera/util/capability/StringListCapabilityItem;
 
     const-string/jumbo v1, "sony-is-values"
 
-    .line 748
+    .line 679
     invoke-virtual {p2}, Ljp/co/sony/mc/camera/util/capability/CameraStaticParameters;->getSupportedStillHdrValues()Ljava/util/List;
 
     move-result-object v2
@@ -3154,10 +2844,10 @@
 
     iput-object v0, p0, Ljp/co/sony/mc/camera/util/capability/CameraCapabilityList;->HDR:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
 
-    .line 749
+    .line 680
     new-instance v0, Ljp/co/sony/mc/camera/util/capability/IntegerRangeCapabilityItem;
 
-    .line 751
+    .line 682
     const-string v1, "off"
 
     invoke-virtual {p2, v1}, Ljp/co/sony/mc/camera/util/capability/CameraStaticParameters;->getSupportedIsoRange(Ljava/lang/String;)Landroid/util/Range;
@@ -3170,10 +2860,10 @@
 
     iput-object v0, p0, Ljp/co/sony/mc/camera/util/capability/CameraCapabilityList;->ISO_RANGE:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
 
-    .line 752
+    .line 683
     new-instance v0, Ljp/co/sony/mc/camera/util/capability/IntegerRangeCapabilityItem;
 
-    .line 754
+    .line 685
     const-string v2, "auto"
 
     invoke-virtual {p2, v2}, Ljp/co/sony/mc/camera/util/capability/CameraStaticParameters;->getSupportedIsoRange(Ljava/lang/String;)Landroid/util/Range;
@@ -3186,12 +2876,12 @@
 
     iput-object v0, p0, Ljp/co/sony/mc/camera/util/capability/CameraCapabilityList;->HYBRID_ZOOM_ISO_RANGE:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
 
-    .line 755
+    .line 686
     new-instance v0, Ljp/co/sony/mc/camera/util/capability/IntegerRangeCapabilityItem;
 
     const-string/jumbo v3, "sony-video-iso-range"
 
-    .line 757
+    .line 688
     invoke-virtual {p2, v1}, Ljp/co/sony/mc/camera/util/capability/CameraStaticParameters;->getSupportedVideoIsoRange(Ljava/lang/String;)Landroid/util/Range;
 
     move-result-object v4
@@ -3200,12 +2890,12 @@
 
     iput-object v0, p0, Ljp/co/sony/mc/camera/util/capability/CameraCapabilityList;->VIDEO_SDR_ISO_RANGE:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
 
-    .line 758
+    .line 689
     new-instance v0, Ljp/co/sony/mc/camera/util/capability/IntegerRangeCapabilityItem;
 
     const-string/jumbo v3, "sony-video-hybrid-zoom-iso-range"
 
-    .line 760
+    .line 691
     invoke-virtual {p2, v2}, Ljp/co/sony/mc/camera/util/capability/CameraStaticParameters;->getSupportedVideoIsoRange(Ljava/lang/String;)Landroid/util/Range;
 
     move-result-object v4
@@ -3214,12 +2904,12 @@
 
     iput-object v0, p0, Ljp/co/sony/mc/camera/util/capability/CameraCapabilityList;->VIDEO_HYBRID_ZOOM_SDR_ISO_RANGE:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
 
-    .line 761
+    .line 692
     new-instance v0, Ljp/co/sony/mc/camera/util/capability/IntegerRangeCapabilityItem;
 
     const-string/jumbo v3, "sony-video-hdr-iso-range"
 
-    .line 763
+    .line 694
     invoke-virtual {p2, v1}, Ljp/co/sony/mc/camera/util/capability/CameraStaticParameters;->getSupportedVideoHdrIsoRange(Ljava/lang/String;)Landroid/util/Range;
 
     move-result-object v4
@@ -3228,12 +2918,12 @@
 
     iput-object v0, p0, Ljp/co/sony/mc/camera/util/capability/CameraCapabilityList;->VIDEO_HDR_ISO_RANGE:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
 
-    .line 764
+    .line 695
     new-instance v0, Ljp/co/sony/mc/camera/util/capability/IntegerRangeCapabilityItem;
 
     const-string/jumbo v3, "sony-video-hybrid-zoom-hdr-iso-range"
 
-    .line 766
+    .line 697
     invoke-virtual {p2, v2}, Ljp/co/sony/mc/camera/util/capability/CameraStaticParameters;->getSupportedVideoHdrIsoRange(Ljava/lang/String;)Landroid/util/Range;
 
     move-result-object v4
@@ -3242,12 +2932,12 @@
 
     iput-object v0, p0, Ljp/co/sony/mc/camera/util/capability/CameraCapabilityList;->VIDEO_HYBRID_ZOOM_HDR_ISO_RANGE:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
 
-    .line 767
+    .line 698
     new-instance v0, Ljp/co/sony/mc/camera/util/capability/IntegerRangeCapabilityItem;
 
     const-string/jumbo v3, "sony-video-scinetone-iso-range"
 
-    .line 769
+    .line 700
     invoke-virtual {p2, v1}, Ljp/co/sony/mc/camera/util/capability/CameraStaticParameters;->getSupportedVideoSCinetoneIsoRange(Ljava/lang/String;)Landroid/util/Range;
 
     move-result-object v1
@@ -3256,12 +2946,12 @@
 
     iput-object v0, p0, Ljp/co/sony/mc/camera/util/capability/CameraCapabilityList;->VIDEO_SCINETONE_ISO_RANGE:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
 
-    .line 770
+    .line 701
     new-instance v0, Ljp/co/sony/mc/camera/util/capability/IntegerRangeCapabilityItem;
 
     const-string/jumbo v1, "sony-video-scinetone-hybrid_zoom-iso-range"
 
-    .line 772
+    .line 703
     invoke-virtual {p2, v2}, Ljp/co/sony/mc/camera/util/capability/CameraStaticParameters;->getSupportedVideoSCinetoneIsoRange(Ljava/lang/String;)Landroid/util/Range;
 
     move-result-object v2
@@ -3270,12 +2960,12 @@
 
     iput-object v0, p0, Ljp/co/sony/mc/camera/util/capability/CameraCapabilityList;->VIDEO_SCINETONE_HYBRID_ZOOM_ISO_RANGE:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
 
-    .line 773
+    .line 704
     new-instance v0, Ljp/co/sony/mc/camera/util/capability/IntegerCapabilityItem;
 
     const/4 v1, 0x0
 
-    .line 775
+    .line 706
     invoke-virtual {p2, v1}, Ljp/co/sony/mc/camera/util/capability/CameraStaticParameters;->getSupportedDefaultIso(Z)I
 
     move-result v1
@@ -3290,12 +2980,12 @@
 
     iput-object v0, p0, Ljp/co/sony/mc/camera/util/capability/CameraCapabilityList;->DEFAULT_ISO:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
 
-    .line 776
+    .line 707
     new-instance v0, Ljp/co/sony/mc/camera/util/capability/IntegerCapabilityItem;
 
     const/4 v1, 0x1
 
-    .line 778
+    .line 709
     invoke-virtual {p2, v1}, Ljp/co/sony/mc/camera/util/capability/CameraStaticParameters;->getSupportedDefaultIso(Z)I
 
     move-result v1
@@ -3310,12 +3000,12 @@
 
     iput-object v0, p0, Ljp/co/sony/mc/camera/util/capability/CameraCapabilityList;->DEFAULT_VIDEO_ISO:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
 
-    .line 779
+    .line 710
     new-instance v0, Ljp/co/sony/mc/camera/util/capability/StringListCapabilityItem;
 
     const-string/jumbo v1, "sony-metering-mode-values"
 
-    .line 781
+    .line 712
     invoke-virtual {p2}, Ljp/co/sony/mc/camera/util/capability/CameraStaticParameters;->getSupportedAeRegionModes()Ljava/util/List;
 
     move-result-object v2
@@ -3324,10 +3014,10 @@
 
     iput-object v0, p0, Ljp/co/sony/mc/camera/util/capability/CameraCapabilityList;->METERING:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
 
-    .line 782
+    .line 713
     new-instance v0, Ljp/co/sony/mc/camera/util/capability/BooleanCapabilityItem;
 
-    .line 784
+    .line 715
     invoke-virtual {p2}, Ljp/co/sony/mc/camera/util/capability/CameraStaticParameters;->isObjectTrackingSupported()Z
 
     move-result v1
@@ -3342,10 +3032,10 @@
 
     iput-object v0, p0, Ljp/co/sony/mc/camera/util/capability/CameraCapabilityList;->OBJECT_TRACKING:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
 
-    .line 785
+    .line 716
     new-instance v0, Ljp/co/sony/mc/camera/util/capability/BooleanCapabilityItem;
 
-    .line 787
+    .line 718
     invoke-virtual {p2}, Ljp/co/sony/mc/camera/util/capability/CameraStaticParameters;->isTrackingFocusDuringLockSupported()Z
 
     move-result v1
@@ -3360,10 +3050,10 @@
 
     iput-object v0, p0, Ljp/co/sony/mc/camera/util/capability/CameraCapabilityList;->TRACKING_FOCUS_DURING_LOCK:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
 
-    .line 788
+    .line 719
     new-instance v0, Ljp/co/sony/mc/camera/util/capability/BooleanCapabilityItem;
 
-    .line 790
+    .line 721
     invoke-virtual {p2}, Ljp/co/sony/mc/camera/util/capability/CameraStaticParameters;->isFaceDetectionAvailable()Z
 
     move-result v1
@@ -3378,12 +3068,12 @@
 
     iput-object v0, p0, Ljp/co/sony/mc/camera/util/capability/CameraCapabilityList;->FACE_DETECTION:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
 
-    .line 791
+    .line 722
     new-instance v0, Ljp/co/sony/mc/camera/util/capability/StringListCapabilityItem;
 
     const-string/jumbo v1, "sony-eye-detect-modes"
 
-    .line 793
+    .line 724
     invoke-virtual {p2}, Ljp/co/sony/mc/camera/util/capability/CameraStaticParameters;->getSupportedEyeDetectModes()Ljava/util/List;
 
     move-result-object v2
@@ -3392,14 +3082,14 @@
 
     iput-object v0, p0, Ljp/co/sony/mc/camera/util/capability/CameraCapabilityList;->EYE_DETECTION_MODES:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
 
-    .line 794
+    .line 725
     new-instance v0, Ljp/co/sony/mc/camera/util/capability/VideoConfigurationListCapabilityItem;
 
     sget-object v1, Ljp/co/sony/mc/camera/configuration/parameters/VideoHdr;->HDR_OFF:Ljp/co/sony/mc/camera/configuration/parameters/VideoHdr;
 
     sget-object v2, Ljp/co/sony/mc/camera/configuration/parameters/VideoMfHdr;->MF_HDR_OFF:Ljp/co/sony/mc/camera/configuration/parameters/VideoMfHdr;
 
-    .line 796
+    .line 727
     invoke-virtual {p2, v1, v2}, Ljp/co/sony/mc/camera/util/capability/CameraStaticParameters;->getSupportedSteadyShotConfiguration(Ljp/co/sony/mc/camera/configuration/parameters/VideoHdr;Ljp/co/sony/mc/camera/configuration/parameters/VideoMfHdr;)Ljava/util/List;
 
     move-result-object v1
@@ -3410,14 +3100,14 @@
 
     iput-object v0, p0, Ljp/co/sony/mc/camera/util/capability/CameraCapabilityList;->STEADY_SHOT_CONFIGURATION:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
 
-    .line 798
+    .line 729
     new-instance v0, Ljp/co/sony/mc/camera/util/capability/VideoConfigurationListCapabilityItem;
 
     sget-object v1, Ljp/co/sony/mc/camera/configuration/parameters/VideoHdr;->HDR_OFF:Ljp/co/sony/mc/camera/configuration/parameters/VideoHdr;
 
     sget-object v2, Ljp/co/sony/mc/camera/configuration/parameters/VideoMfHdr;->MF_HDR_OFF:Ljp/co/sony/mc/camera/configuration/parameters/VideoMfHdr;
 
-    .line 800
+    .line 731
     invoke-virtual {p2, v1, v2}, Ljp/co/sony/mc/camera/util/capability/CameraStaticParameters;->getSupportedIntelligentActiveConfiguration(Ljp/co/sony/mc/camera/configuration/parameters/VideoHdr;Ljp/co/sony/mc/camera/configuration/parameters/VideoMfHdr;)Ljava/util/List;
 
     move-result-object v1
@@ -3428,14 +3118,14 @@
 
     iput-object v0, p0, Ljp/co/sony/mc/camera/util/capability/CameraCapabilityList;->INTELLIGENT_ACTIVE_CONFIGURATION:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
 
-    .line 802
+    .line 733
     new-instance v0, Ljp/co/sony/mc/camera/util/capability/VideoConfigurationListCapabilityItem;
 
     sget-object v1, Ljp/co/sony/mc/camera/configuration/parameters/VideoHdr;->HDR_ON:Ljp/co/sony/mc/camera/configuration/parameters/VideoHdr;
 
     sget-object v2, Ljp/co/sony/mc/camera/configuration/parameters/VideoMfHdr;->MF_HDR_OFF:Ljp/co/sony/mc/camera/configuration/parameters/VideoMfHdr;
 
-    .line 804
+    .line 735
     invoke-virtual {p2, v1, v2}, Ljp/co/sony/mc/camera/util/capability/CameraStaticParameters;->getSupportedSteadyShotConfiguration(Ljp/co/sony/mc/camera/configuration/parameters/VideoHdr;Ljp/co/sony/mc/camera/configuration/parameters/VideoMfHdr;)Ljava/util/List;
 
     move-result-object v1
@@ -3446,14 +3136,14 @@
 
     iput-object v0, p0, Ljp/co/sony/mc/camera/util/capability/CameraCapabilityList;->STEADY_SHOT_HDR_CONFIGURATION:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
 
-    .line 805
+    .line 736
     new-instance v0, Ljp/co/sony/mc/camera/util/capability/VideoConfigurationListCapabilityItem;
 
     sget-object v1, Ljp/co/sony/mc/camera/configuration/parameters/VideoHdr;->HDR_ON:Ljp/co/sony/mc/camera/configuration/parameters/VideoHdr;
 
     sget-object v2, Ljp/co/sony/mc/camera/configuration/parameters/VideoMfHdr;->MF_HDR_OFF:Ljp/co/sony/mc/camera/configuration/parameters/VideoMfHdr;
 
-    .line 807
+    .line 738
     invoke-virtual {p2, v1, v2}, Ljp/co/sony/mc/camera/util/capability/CameraStaticParameters;->getSupportedIntelligentActiveConfiguration(Ljp/co/sony/mc/camera/configuration/parameters/VideoHdr;Ljp/co/sony/mc/camera/configuration/parameters/VideoMfHdr;)Ljava/util/List;
 
     move-result-object v1
@@ -3464,14 +3154,14 @@
 
     iput-object v0, p0, Ljp/co/sony/mc/camera/util/capability/CameraCapabilityList;->INTELLIGENT_ACTIVE_HDR_CONFIGURATION:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
 
-    .line 809
+    .line 740
     new-instance v0, Ljp/co/sony/mc/camera/util/capability/VideoConfigurationListCapabilityItem;
 
     sget-object v1, Ljp/co/sony/mc/camera/configuration/parameters/VideoHdr;->HDR_OFF:Ljp/co/sony/mc/camera/configuration/parameters/VideoHdr;
 
     sget-object v2, Ljp/co/sony/mc/camera/configuration/parameters/VideoMfHdr;->MF_HDR_ON:Ljp/co/sony/mc/camera/configuration/parameters/VideoMfHdr;
 
-    .line 811
+    .line 742
     invoke-virtual {p2, v1, v2}, Ljp/co/sony/mc/camera/util/capability/CameraStaticParameters;->getSupportedSteadyShotConfiguration(Ljp/co/sony/mc/camera/configuration/parameters/VideoHdr;Ljp/co/sony/mc/camera/configuration/parameters/VideoMfHdr;)Ljava/util/List;
 
     move-result-object v1
@@ -3482,14 +3172,14 @@
 
     iput-object v0, p0, Ljp/co/sony/mc/camera/util/capability/CameraCapabilityList;->STEADY_SHOT_MFHDR_CONFIGURATION:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
 
-    .line 812
+    .line 743
     new-instance v0, Ljp/co/sony/mc/camera/util/capability/VideoConfigurationListCapabilityItem;
 
     sget-object v1, Ljp/co/sony/mc/camera/configuration/parameters/VideoHdr;->HDR_OFF:Ljp/co/sony/mc/camera/configuration/parameters/VideoHdr;
 
     sget-object v2, Ljp/co/sony/mc/camera/configuration/parameters/VideoMfHdr;->MF_HDR_ON:Ljp/co/sony/mc/camera/configuration/parameters/VideoMfHdr;
 
-    .line 814
+    .line 745
     invoke-virtual {p2, v1, v2}, Ljp/co/sony/mc/camera/util/capability/CameraStaticParameters;->getSupportedIntelligentActiveConfiguration(Ljp/co/sony/mc/camera/configuration/parameters/VideoHdr;Ljp/co/sony/mc/camera/configuration/parameters/VideoMfHdr;)Ljava/util/List;
 
     move-result-object v1
@@ -3500,14 +3190,14 @@
 
     iput-object v0, p0, Ljp/co/sony/mc/camera/util/capability/CameraCapabilityList;->INTELLIGENT_ACTIVE_MFHDR_CONFIGURATION:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
 
-    .line 816
+    .line 747
     new-instance v0, Ljp/co/sony/mc/camera/util/capability/VideoConfigurationListCapabilityItem;
 
     sget-object v1, Ljp/co/sony/mc/camera/configuration/parameters/VideoHdr;->HDR_ON:Ljp/co/sony/mc/camera/configuration/parameters/VideoHdr;
 
     sget-object v2, Ljp/co/sony/mc/camera/configuration/parameters/VideoMfHdr;->MF_HDR_ON:Ljp/co/sony/mc/camera/configuration/parameters/VideoMfHdr;
 
-    .line 818
+    .line 749
     invoke-virtual {p2, v1, v2}, Ljp/co/sony/mc/camera/util/capability/CameraStaticParameters;->getSupportedSteadyShotConfiguration(Ljp/co/sony/mc/camera/configuration/parameters/VideoHdr;Ljp/co/sony/mc/camera/configuration/parameters/VideoMfHdr;)Ljava/util/List;
 
     move-result-object v1
@@ -3518,14 +3208,14 @@
 
     iput-object v0, p0, Ljp/co/sony/mc/camera/util/capability/CameraCapabilityList;->STEADY_SHOT_HDR_MFHDR_CONFIGURATION:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
 
-    .line 819
+    .line 750
     new-instance v0, Ljp/co/sony/mc/camera/util/capability/VideoConfigurationListCapabilityItem;
 
     sget-object v1, Ljp/co/sony/mc/camera/configuration/parameters/VideoHdr;->HDR_ON:Ljp/co/sony/mc/camera/configuration/parameters/VideoHdr;
 
     sget-object v2, Ljp/co/sony/mc/camera/configuration/parameters/VideoMfHdr;->MF_HDR_ON:Ljp/co/sony/mc/camera/configuration/parameters/VideoMfHdr;
 
-    .line 821
+    .line 752
     invoke-virtual {p2, v1, v2}, Ljp/co/sony/mc/camera/util/capability/CameraStaticParameters;->getSupportedIntelligentActiveConfiguration(Ljp/co/sony/mc/camera/configuration/parameters/VideoHdr;Ljp/co/sony/mc/camera/configuration/parameters/VideoMfHdr;)Ljava/util/List;
 
     move-result-object v1
@@ -3536,10 +3226,46 @@
 
     iput-object v0, p0, Ljp/co/sony/mc/camera/util/capability/CameraCapabilityList;->INTELLIGENT_ACTIVE_HDR_MFHDR_CONFIGURATION:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
 
-    .line 824
+    .line 754
+    new-instance v0, Ljp/co/sony/mc/camera/util/capability/VideoConfigurationListCapabilityItem;
+
+    sget-object v1, Ljp/co/sony/mc/camera/configuration/parameters/VideoHdr;->HDR_OFF:Ljp/co/sony/mc/camera/configuration/parameters/VideoHdr;
+
+    sget-object v2, Ljp/co/sony/mc/camera/configuration/parameters/VideoMfHdr;->MF_HDR_OFF:Ljp/co/sony/mc/camera/configuration/parameters/VideoMfHdr;
+
+    .line 756
+    invoke-virtual {p2, v1, v2}, Ljp/co/sony/mc/camera/util/capability/CameraStaticParameters;->getSupportedActionModeConfiguration(Ljp/co/sony/mc/camera/configuration/parameters/VideoHdr;Ljp/co/sony/mc/camera/configuration/parameters/VideoMfHdr;)Ljava/util/List;
+
+    move-result-object v1
+
+    const-string/jumbo v2, "sony-vs-action-mode-config"
+
+    invoke-direct {v0, v2, v1}, Ljp/co/sony/mc/camera/util/capability/VideoConfigurationListCapabilityItem;-><init>(Ljava/lang/String;Ljava/util/List;)V
+
+    iput-object v0, p0, Ljp/co/sony/mc/camera/util/capability/CameraCapabilityList;->ACTION_MODE_CONFIGURATION:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
+
+    .line 758
+    new-instance v0, Ljp/co/sony/mc/camera/util/capability/VideoConfigurationListCapabilityItem;
+
+    sget-object v1, Ljp/co/sony/mc/camera/configuration/parameters/VideoHdr;->HDR_ON:Ljp/co/sony/mc/camera/configuration/parameters/VideoHdr;
+
+    sget-object v2, Ljp/co/sony/mc/camera/configuration/parameters/VideoMfHdr;->MF_HDR_OFF:Ljp/co/sony/mc/camera/configuration/parameters/VideoMfHdr;
+
+    .line 760
+    invoke-virtual {p2, v1, v2}, Ljp/co/sony/mc/camera/util/capability/CameraStaticParameters;->getSupportedActionModeConfiguration(Ljp/co/sony/mc/camera/configuration/parameters/VideoHdr;Ljp/co/sony/mc/camera/configuration/parameters/VideoMfHdr;)Ljava/util/List;
+
+    move-result-object v1
+
+    const-string/jumbo v2, "sony-vs-action-mode-hdr-config"
+
+    invoke-direct {v0, v2, v1}, Ljp/co/sony/mc/camera/util/capability/VideoConfigurationListCapabilityItem;-><init>(Ljava/lang/String;Ljava/util/List;)V
+
+    iput-object v0, p0, Ljp/co/sony/mc/camera/util/capability/CameraCapabilityList;->ACTION_MODE_HDR_CONFIGURATION:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
+
+    .line 762
     new-instance v0, Ljp/co/sony/mc/camera/util/capability/IntegerCapabilityItem;
 
-    .line 825
+    .line 763
     invoke-virtual {p2}, Ljp/co/sony/mc/camera/util/capability/CameraStaticParameters;->getMaxSoftSkinLevel()I
 
     move-result v1
@@ -3554,10 +3280,10 @@
 
     iput-object v0, p0, Ljp/co/sony/mc/camera/util/capability/CameraCapabilityList;->MAX_SOFT_SKIN_LEVEL:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
 
-    .line 826
+    .line 764
     new-instance v0, Ljp/co/sony/mc/camera/util/capability/IntegerCapabilityItem;
 
-    .line 827
+    .line 765
     invoke-virtual {p2}, Ljp/co/sony/mc/camera/util/capability/CameraStaticParameters;->getMinSoftSkinLevel()I
 
     move-result v1
@@ -3572,10 +3298,10 @@
 
     iput-object v0, p0, Ljp/co/sony/mc/camera/util/capability/CameraCapabilityList;->MIN_SOFT_SKIN_LEVEL:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
 
-    .line 829
+    .line 767
     new-instance v0, Ljp/co/sony/mc/camera/util/capability/FloatCapabilityItem;
 
-    .line 831
+    .line 769
     invoke-virtual {p2}, Ljp/co/sony/mc/camera/util/capability/CameraStaticParameters;->getMaxAwbTemperature()F
 
     move-result v1
@@ -3590,10 +3316,10 @@
 
     iput-object v0, p0, Ljp/co/sony/mc/camera/util/capability/CameraCapabilityList;->MAX_AWB_TEMPERATURE:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
 
-    .line 832
+    .line 770
     new-instance v0, Ljp/co/sony/mc/camera/util/capability/FloatCapabilityItem;
 
-    .line 834
+    .line 772
     invoke-virtual {p2}, Ljp/co/sony/mc/camera/util/capability/CameraStaticParameters;->getMinAwbTemperature()F
 
     move-result v1
@@ -3608,10 +3334,10 @@
 
     iput-object v0, p0, Ljp/co/sony/mc/camera/util/capability/CameraCapabilityList;->MIN_AWB_TEMPERATURE:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
 
-    .line 836
+    .line 774
     new-instance v0, Ljp/co/sony/mc/camera/util/capability/FloatCapabilityItem;
 
-    .line 838
+    .line 776
     invoke-virtual {p2}, Ljp/co/sony/mc/camera/util/capability/CameraStaticParameters;->getMaxAwbColorCompensationAbFloat()F
 
     move-result v1
@@ -3626,10 +3352,10 @@
 
     iput-object v0, p0, Ljp/co/sony/mc/camera/util/capability/CameraCapabilityList;->MAX_AWB_AB_FLOAT:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
 
-    .line 839
+    .line 777
     new-instance v0, Ljp/co/sony/mc/camera/util/capability/FloatCapabilityItem;
 
-    .line 841
+    .line 779
     invoke-virtual {p2}, Ljp/co/sony/mc/camera/util/capability/CameraStaticParameters;->getMinAwbColorCompensationAbFloat()F
 
     move-result v1
@@ -3644,10 +3370,10 @@
 
     iput-object v0, p0, Ljp/co/sony/mc/camera/util/capability/CameraCapabilityList;->MIN_AWB_AB_FLOAT:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
 
-    .line 843
+    .line 781
     new-instance v0, Ljp/co/sony/mc/camera/util/capability/FloatCapabilityItem;
 
-    .line 845
+    .line 783
     invoke-virtual {p2}, Ljp/co/sony/mc/camera/util/capability/CameraStaticParameters;->getMaxAwbColorCompensationGmFloat()F
 
     move-result v1
@@ -3662,10 +3388,10 @@
 
     iput-object v0, p0, Ljp/co/sony/mc/camera/util/capability/CameraCapabilityList;->MAX_AWB_GM_FLOAT:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
 
-    .line 846
+    .line 784
     new-instance v0, Ljp/co/sony/mc/camera/util/capability/FloatCapabilityItem;
 
-    .line 848
+    .line 786
     invoke-virtual {p2}, Ljp/co/sony/mc/camera/util/capability/CameraStaticParameters;->getMinAwbColorCompensationGmFloat()F
 
     move-result v1
@@ -3680,10 +3406,10 @@
 
     iput-object v0, p0, Ljp/co/sony/mc/camera/util/capability/CameraCapabilityList;->MIN_AWB_GM_FLOAT:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
 
-    .line 850
+    .line 788
     new-instance v0, Ljp/co/sony/mc/camera/util/capability/IntegerCapabilityItem;
 
-    .line 852
+    .line 790
     invoke-virtual {p2}, Ljp/co/sony/mc/camera/util/capability/CameraStaticParameters;->getMaxAwbColorCompensationAb()I
 
     move-result v1
@@ -3698,10 +3424,10 @@
 
     iput-object v0, p0, Ljp/co/sony/mc/camera/util/capability/CameraCapabilityList;->MAX_AWB_AB:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
 
-    .line 853
+    .line 791
     new-instance v0, Ljp/co/sony/mc/camera/util/capability/IntegerCapabilityItem;
 
-    .line 855
+    .line 793
     invoke-virtual {p2}, Ljp/co/sony/mc/camera/util/capability/CameraStaticParameters;->getMinAwbColorCompensationAb()I
 
     move-result v1
@@ -3716,10 +3442,10 @@
 
     iput-object v0, p0, Ljp/co/sony/mc/camera/util/capability/CameraCapabilityList;->MIN_AWB_AB:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
 
-    .line 857
+    .line 795
     new-instance v0, Ljp/co/sony/mc/camera/util/capability/IntegerCapabilityItem;
 
-    .line 859
+    .line 797
     invoke-virtual {p2}, Ljp/co/sony/mc/camera/util/capability/CameraStaticParameters;->getMaxAwbColorCompensationGm()I
 
     move-result v1
@@ -3734,10 +3460,10 @@
 
     iput-object v0, p0, Ljp/co/sony/mc/camera/util/capability/CameraCapabilityList;->MAX_AWB_GM:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
 
-    .line 860
+    .line 798
     new-instance v0, Ljp/co/sony/mc/camera/util/capability/IntegerCapabilityItem;
 
-    .line 862
+    .line 800
     invoke-virtual {p2}, Ljp/co/sony/mc/camera/util/capability/CameraStaticParameters;->getMinAwbColorCompensationGm()I
 
     move-result v1
@@ -3752,10 +3478,10 @@
 
     iput-object v0, p0, Ljp/co/sony/mc/camera/util/capability/CameraCapabilityList;->MIN_AWB_GM:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
 
-    .line 864
+    .line 802
     new-instance v0, Ljp/co/sony/mc/camera/util/capability/FloatCapabilityItem;
 
-    .line 866
+    .line 804
     invoke-virtual {p2}, Ljp/co/sony/mc/camera/util/capability/CameraStaticParameters;->getMacroValueForManualFocus()F
 
     move-result v1
@@ -3770,12 +3496,12 @@
 
     iput-object v0, p0, Ljp/co/sony/mc/camera/util/capability/CameraCapabilityList;->MACRO_FOCUS_RANGE:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
 
-    .line 868
+    .line 806
     new-instance v0, Ljp/co/sony/mc/camera/util/capability/StringListCapabilityItem;
 
     const-string/jumbo v1, "sony-focus-magnification-use-case"
 
-    .line 870
+    .line 808
     invoke-virtual {p2}, Ljp/co/sony/mc/camera/util/capability/CameraStaticParameters;->getSupportedFocusMagnificationUseCases()Ljava/util/List;
 
     move-result-object v2
@@ -3784,10 +3510,10 @@
 
     iput-object v0, p0, Ljp/co/sony/mc/camera/util/capability/CameraCapabilityList;->FOCUS_MAGNIFICATION_USE_CASES:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
 
-    .line 872
+    .line 810
     new-instance v0, Ljp/co/sony/mc/camera/util/capability/FloatCapabilityItem;
 
-    .line 874
+    .line 812
     invoke-virtual {p2}, Ljp/co/sony/mc/camera/util/capability/CameraStaticParameters;->getSupportedMaxFocusMagnificationRatio()F
 
     move-result v1
@@ -3802,28 +3528,10 @@
 
     iput-object v0, p0, Ljp/co/sony/mc/camera/util/capability/CameraCapabilityList;->MAX_FOCUS_MAGNIFICATION_RATIO:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
 
-    .line 876
+    .line 814
     new-instance v0, Ljp/co/sony/mc/camera/util/capability/BooleanCapabilityItem;
 
-    .line 877
-    invoke-virtual {p2}, Ljp/co/sony/mc/camera/util/capability/CameraStaticParameters;->isManualFocusSupported()Z
-
-    move-result v1
-
-    invoke-static {v1}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
-
-    move-result-object v1
-
-    const-string v2, "manual-focus-supported"
-
-    invoke-direct {v0, v2, v1}, Ljp/co/sony/mc/camera/util/capability/BooleanCapabilityItem;-><init>(Ljava/lang/String;Ljava/lang/Boolean;)V
-
-    iput-object v0, p0, Ljp/co/sony/mc/camera/util/capability/CameraCapabilityList;->MANUAL_FOCUS:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
-
-    .line 879
-    new-instance v0, Ljp/co/sony/mc/camera/util/capability/BooleanCapabilityItem;
-
-    .line 880
+    .line 815
     invoke-virtual {p2}, Ljp/co/sony/mc/camera/util/capability/CameraStaticParameters;->isExtendFpsSupported()Z
 
     move-result v1
@@ -3838,12 +3546,12 @@
 
     iput-object v0, p0, Ljp/co/sony/mc/camera/util/capability/CameraCapabilityList;->EXTEND_FPS:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
 
-    .line 882
+    .line 817
     new-instance v0, Ljp/co/sony/mc/camera/util/capability/StringListCapabilityItem;
 
     const-string/jumbo v1, "variable-fps-supported"
 
-    .line 884
+    .line 819
     invoke-virtual {p2}, Ljp/co/sony/mc/camera/util/capability/CameraStaticParameters;->getSupportedVariableFpsModes()Ljava/util/List;
 
     move-result-object v2
@@ -3852,10 +3560,10 @@
 
     iput-object v0, p0, Ljp/co/sony/mc/camera/util/capability/CameraCapabilityList;->VARIABLE_FPS:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
 
-    .line 886
+    .line 821
     new-instance v0, Ljp/co/sony/mc/camera/util/capability/LongCapabilityItem;
 
-    .line 887
+    .line 822
     invoke-virtual {p2}, Ljp/co/sony/mc/camera/util/capability/CameraStaticParameters;->getMaxShutterSpeed()J
 
     move-result-wide v1
@@ -3870,10 +3578,10 @@
 
     iput-object v0, p0, Ljp/co/sony/mc/camera/util/capability/CameraCapabilityList;->MAX_SHUTTER_SPEED:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
 
-    .line 889
+    .line 824
     new-instance v0, Ljp/co/sony/mc/camera/util/capability/LongCapabilityItem;
 
-    .line 890
+    .line 825
     invoke-virtual {p2}, Ljp/co/sony/mc/camera/util/capability/CameraStaticParameters;->getMinShutterSpeed()J
 
     move-result-wide v1
@@ -3888,12 +3596,12 @@
 
     iput-object v0, p0, Ljp/co/sony/mc/camera/util/capability/CameraCapabilityList;->MIN_SHUTTER_SPEED:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
 
-    .line 892
+    .line 827
     new-instance v0, Ljp/co/sony/mc/camera/util/capability/StringListCapabilityItem;
 
     const-string/jumbo v1, "sony-power-save-mode-values"
 
-    .line 894
+    .line 829
     invoke-virtual {p2}, Ljp/co/sony/mc/camera/util/capability/CameraStaticParameters;->getSupportedPowerSaveModes()Ljava/util/List;
 
     move-result-object v2
@@ -3902,10 +3610,10 @@
 
     iput-object v0, p0, Ljp/co/sony/mc/camera/util/capability/CameraCapabilityList;->POWER_SAVING_MODE:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
 
-    .line 896
+    .line 831
     new-instance v0, Ljp/co/sony/mc/camera/util/capability/LongCapabilityItem;
 
-    .line 898
+    .line 833
     invoke-virtual {p2}, Ljp/co/sony/mc/camera/util/capability/CameraStaticParameters;->getMinExposureTimeLimit()J
 
     move-result-wide v1
@@ -3920,62 +3628,12 @@
 
     iput-object v0, p0, Ljp/co/sony/mc/camera/util/capability/CameraCapabilityList;->MIN_SHUTTER_SPEED_LIMIT:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
 
-    .line 900
-    new-instance v0, Ljp/co/sony/mc/camera/util/capability/BooleanCapabilityItem;
-
-    .line 902
-    invoke-virtual {p2}, Ljp/co/sony/mc/camera/util/capability/CameraStaticParameters;->isOpticalZoomSupported()Z
-
-    move-result v1
-
-    invoke-static {v1}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
-
-    move-result-object v1
-
-    const-string/jumbo v2, "sony-logical-multi-camera-optical-zoom-supported"
-
-    invoke-direct {v0, v2, v1}, Ljp/co/sony/mc/camera/util/capability/BooleanCapabilityItem;-><init>(Ljava/lang/String;Ljava/lang/Boolean;)V
-
-    iput-object v0, p0, Ljp/co/sony/mc/camera/util/capability/CameraCapabilityList;->LOGICAL_MULTI_CAMERA_OPTICAL_ZOOM:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
-
-    .line 904
-    new-instance v0, Ljp/co/sony/mc/camera/util/capability/BooleanCapabilityItem;
-
-    .line 906
-    invoke-virtual {p2}, Ljp/co/sony/mc/camera/util/capability/CameraStaticParameters;->isMultiCameraModeBokehSupported()Z
-
-    move-result v1
-
-    invoke-static {v1}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
-
-    move-result-object v1
-
-    const-string/jumbo v2, "sony-logical-multi-camera-bokeh-supported"
-
-    invoke-direct {v0, v2, v1}, Ljp/co/sony/mc/camera/util/capability/BooleanCapabilityItem;-><init>(Ljava/lang/String;Ljava/lang/Boolean;)V
-
-    iput-object v0, p0, Ljp/co/sony/mc/camera/util/capability/CameraCapabilityList;->LOGICAL_MULTI_CAMERA_BOKEH_SUPPORTED:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
-
-    .line 908
-    new-instance v0, Ljp/co/sony/mc/camera/util/capability/FloatListCapabilityItem;
-
-    const-string/jumbo v1, "sony-logical-multi-camera-supported-bokeh-focal-lengths"
-
-    .line 910
-    invoke-virtual {p2}, Ljp/co/sony/mc/camera/util/capability/CameraStaticParameters;->getSupportedBokehFocalLength()Ljava/util/List;
-
-    move-result-object v2
-
-    invoke-direct {v0, v1, v2}, Ljp/co/sony/mc/camera/util/capability/FloatListCapabilityItem;-><init>(Ljava/lang/String;Ljava/util/List;)V
-
-    iput-object v0, p0, Ljp/co/sony/mc/camera/util/capability/CameraCapabilityList;->LOGICAL_MULTI_CAMERA_SUPPORTED_BOKEH_FOCAL_LENGTHS:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
-
-    .line 912
+    .line 835
     new-instance v0, Ljp/co/sony/mc/camera/util/capability/StringListCapabilityItem;
 
     const-string v1, "extended-scene-modes"
 
-    .line 914
+    .line 837
     invoke-virtual {p2}, Ljp/co/sony/mc/camera/util/capability/CameraStaticParameters;->getSupportedExtendedSceneMode()Ljava/util/List;
 
     move-result-object v2
@@ -3984,10 +3642,10 @@
 
     iput-object v0, p0, Ljp/co/sony/mc/camera/util/capability/CameraCapabilityList;->EXTENDED_SCENE_MODES:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
 
-    .line 916
+    .line 839
     new-instance v0, Ljp/co/sony/mc/camera/util/capability/BooleanCapabilityItem;
 
-    .line 918
+    .line 841
     invoke-virtual {p2}, Ljp/co/sony/mc/camera/util/capability/CameraStaticParameters;->isSuperResolutionZoomSupported()Z
 
     move-result v1
@@ -4002,12 +3660,12 @@
 
     iput-object v0, p0, Ljp/co/sony/mc/camera/util/capability/CameraCapabilityList;->SUPER_RESOLUTION_ZOOM:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
 
-    .line 920
+    .line 843
     new-instance v0, Ljp/co/sony/mc/camera/util/capability/RectCapabilityItem;
 
     const-string v1, "active-array-size"
 
-    .line 921
+    .line 844
     invoke-virtual {p2}, Ljp/co/sony/mc/camera/util/capability/CameraStaticParameters;->getActiveArraySize()Landroid/graphics/Rect;
 
     move-result-object v2
@@ -4016,30 +3674,12 @@
 
     iput-object v0, p0, Ljp/co/sony/mc/camera/util/capability/CameraCapabilityList;->ACTIVE_ARRAY_SIZE:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
 
-    .line 923
-    new-instance v0, Ljp/co/sony/mc/camera/util/capability/IntegerCapabilityItem;
-
-    .line 924
-    invoke-virtual {p2}, Ljp/co/sony/mc/camera/util/capability/CameraStaticParameters;->getLensFacing()I
-
-    move-result v1
-
-    invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
-
-    move-result-object v1
-
-    const-string v2, "lens-facing"
-
-    invoke-direct {v0, v2, v1}, Ljp/co/sony/mc/camera/util/capability/IntegerCapabilityItem;-><init>(Ljava/lang/String;Ljava/lang/Integer;)V
-
-    iput-object v0, p0, Ljp/co/sony/mc/camera/util/capability/CameraCapabilityList;->LENS_FACING:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
-
-    .line 926
+    .line 846
     new-instance v0, Ljp/co/sony/mc/camera/util/capability/StringCapabilityItem;
 
     const-string v1, "sensor-name"
 
-    .line 927
+    .line 847
     invoke-virtual {p2}, Ljp/co/sony/mc/camera/util/capability/CameraStaticParameters;->getSensorName()Ljava/lang/String;
 
     move-result-object v2
@@ -4048,10 +3688,10 @@
 
     iput-object v0, p0, Ljp/co/sony/mc/camera/util/capability/CameraCapabilityList;->SENSOR_NAME:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
 
-    .line 929
+    .line 849
     new-instance v0, Ljp/co/sony/mc/camera/util/capability/BooleanCapabilityItem;
 
-    .line 931
+    .line 851
     invoke-virtual {p2}, Ljp/co/sony/mc/camera/util/capability/CameraStaticParameters;->isVideoHdrSupported()Z
 
     move-result v1
@@ -4066,12 +3706,12 @@
 
     iput-object v0, p0, Ljp/co/sony/mc/camera/util/capability/CameraCapabilityList;->HDR_VIDEO_SUPPORTED:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
 
-    .line 933
+    .line 853
     new-instance v0, Ljp/co/sony/mc/camera/util/capability/StringListCapabilityItem;
 
     const-string v1, "android-distortion-correction-values"
 
-    .line 935
+    .line 855
     invoke-virtual {p2}, Ljp/co/sony/mc/camera/util/capability/CameraStaticParameters;->getSupportedAndroidDistortionCorrection()Ljava/util/List;
 
     move-result-object v2
@@ -4080,24 +3720,24 @@
 
     iput-object v0, p0, Ljp/co/sony/mc/camera/util/capability/CameraCapabilityList;->ANDROID_DISTORTION_CORRECTION:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
 
-    .line 937
+    .line 857
     new-instance v0, Ljp/co/sony/mc/camera/util/capability/StringListCapabilityItem;
 
-    const-string/jumbo v1, "sony-distortion-correction-values"
+    const-string/jumbo v1, "volume-distortion-correction-values"
 
-    .line 939
-    invoke-virtual {p2}, Ljp/co/sony/mc/camera/util/capability/CameraStaticParameters;->getSupportedSonyDistortionCorrection()Ljava/util/List;
+    .line 859
+    invoke-virtual {p2}, Ljp/co/sony/mc/camera/util/capability/CameraStaticParameters;->getSupportedVolumeDistortionCorrection()Ljava/util/List;
 
     move-result-object v2
 
     invoke-direct {v0, v1, v2}, Ljp/co/sony/mc/camera/util/capability/StringListCapabilityItem;-><init>(Ljava/lang/String;Ljava/util/List;)V
 
-    iput-object v0, p0, Ljp/co/sony/mc/camera/util/capability/CameraCapabilityList;->SONY_DISTORTION_CORRECTION:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
+    iput-object v0, p0, Ljp/co/sony/mc/camera/util/capability/CameraCapabilityList;->VOLUME_DISTORTION_CORRECTION:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
 
-    .line 941
+    .line 861
     new-instance v0, Ljp/co/sony/mc/camera/util/capability/BooleanCapabilityItem;
 
-    .line 942
+    .line 862
     invoke-virtual {p2}, Ljp/co/sony/mc/camera/util/capability/CameraStaticParameters;->isUsecaseSupported()Z
 
     move-result v1
@@ -4112,10 +3752,10 @@
 
     iput-object v0, p0, Ljp/co/sony/mc/camera/util/capability/CameraCapabilityList;->USECASE:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
 
-    .line 944
+    .line 864
     new-instance v0, Ljp/co/sony/mc/camera/util/capability/BooleanCapabilityItem;
 
-    .line 945
+    .line 865
     invoke-virtual {p2}, Ljp/co/sony/mc/camera/util/capability/CameraStaticParameters;->isVagueControlModeSupported()Z
 
     move-result v1
@@ -4130,10 +3770,10 @@
 
     iput-object v0, p0, Ljp/co/sony/mc/camera/util/capability/CameraCapabilityList;->VAGUE_CONTROL_MODE:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
 
-    .line 947
+    .line 867
     new-instance v0, Ljp/co/sony/mc/camera/util/capability/BooleanCapabilityItem;
 
-    .line 949
+    .line 869
     invoke-virtual {p2}, Ljp/co/sony/mc/camera/util/capability/CameraStaticParameters;->isHighQualitySnapshotModeSupported()Z
 
     move-result v1
@@ -4148,12 +3788,12 @@
 
     iput-object v0, p0, Ljp/co/sony/mc/camera/util/capability/CameraCapabilityList;->HIGH_QUALITY_SNAPSHOT_MODE:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
 
-    .line 951
+    .line 871
     new-instance v0, Ljp/co/sony/mc/camera/util/capability/StringListCapabilityItem;
 
     const-string/jumbo v1, "video-stabilization-mode"
 
-    .line 953
+    .line 873
     invoke-virtual {p2}, Ljp/co/sony/mc/camera/util/capability/CameraStaticParameters;->getVideoStabilizationModes()Ljava/util/List;
 
     move-result-object v2
@@ -4162,12 +3802,12 @@
 
     iput-object v0, p0, Ljp/co/sony/mc/camera/util/capability/CameraCapabilityList;->VIDEO_STABILIZATION_MODE:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
 
-    .line 955
+    .line 875
     new-instance v0, Ljp/co/sony/mc/camera/util/capability/StringListCapabilityItem;
 
     const-string v1, "optical-stabilization"
 
-    .line 956
+    .line 876
     invoke-virtual {p2}, Ljp/co/sony/mc/camera/util/capability/CameraStaticParameters;->getSupportedOpticalStabilization()Ljava/util/List;
 
     move-result-object v2
@@ -4176,30 +3816,12 @@
 
     iput-object v0, p0, Ljp/co/sony/mc/camera/util/capability/CameraCapabilityList;->OPTICAL_STABILIZATION:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
 
-    .line 958
-    new-instance v0, Ljp/co/sony/mc/camera/util/capability/BooleanCapabilityItem;
-
-    .line 960
-    invoke-virtual {p2}, Ljp/co/sony/mc/camera/util/capability/CameraStaticParameters;->isTrackingBurstSupported()Z
-
-    move-result v1
-
-    invoke-static {v1}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
-
-    move-result-object v1
-
-    const-string/jumbo v2, "sony-tracking-burst-supported"
-
-    invoke-direct {v0, v2, v1}, Ljp/co/sony/mc/camera/util/capability/BooleanCapabilityItem;-><init>(Ljava/lang/String;Ljava/lang/Boolean;)V
-
-    iput-object v0, p0, Ljp/co/sony/mc/camera/util/capability/CameraCapabilityList;->TRACKING_BURST_SUPPORTED:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
-
-    .line 962
+    .line 878
     new-instance v0, Ljp/co/sony/mc/camera/util/capability/IntegerListCapabilityItem;
 
     const-string/jumbo v1, "sony-burst-fps-values"
 
-    .line 963
+    .line 879
     invoke-virtual {p2}, Ljp/co/sony/mc/camera/util/capability/CameraStaticParameters;->getSupportBurstFps()Ljava/util/List;
 
     move-result-object v2
@@ -4208,12 +3830,12 @@
 
     iput-object v0, p0, Ljp/co/sony/mc/camera/util/capability/CameraCapabilityList;->BURST_FPS:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
 
-    .line 965
+    .line 881
     new-instance v0, Ljp/co/sony/mc/camera/util/capability/IntegerListCapabilityItem;
 
     const-string/jumbo v1, "sony-hdr-burst-fps-values"
 
-    .line 966
+    .line 882
     invoke-virtual {p2}, Ljp/co/sony/mc/camera/util/capability/CameraStaticParameters;->getSupportedHdrBurstFps()Ljava/util/List;
 
     move-result-object v2
@@ -4222,12 +3844,12 @@
 
     iput-object v0, p0, Ljp/co/sony/mc/camera/util/capability/CameraCapabilityList;->HDR_BURST_FPS:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
 
-    .line 968
+    .line 884
     new-instance v0, Ljp/co/sony/mc/camera/util/capability/IntegerListCapabilityItem;
 
     const-string/jumbo v1, "sony-bokeh-burst-fps-values"
 
-    .line 970
+    .line 886
     invoke-virtual {p2}, Ljp/co/sony/mc/camera/util/capability/CameraStaticParameters;->getSupportedBokehBurstFps()Ljava/util/List;
 
     move-result-object v2
@@ -4236,10 +3858,10 @@
 
     iput-object v0, p0, Ljp/co/sony/mc/camera/util/capability/CameraCapabilityList;->BOKEH_BURST_FPS:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
 
-    .line 972
+    .line 888
     new-instance v0, Ljp/co/sony/mc/camera/util/capability/IntegerCapabilityItem;
 
-    .line 974
+    .line 890
     invoke-virtual {p2}, Ljp/co/sony/mc/camera/util/capability/CameraStaticParameters;->getMaxNormalBurstQueueingNum()I
 
     move-result v1
@@ -4254,10 +3876,10 @@
 
     iput-object v0, p0, Ljp/co/sony/mc/camera/util/capability/CameraCapabilityList;->NORMAL_BURST_MAX_QUEUEING_NUM:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
 
-    .line 976
+    .line 892
     new-instance v0, Ljp/co/sony/mc/camera/util/capability/IntegerCapabilityItem;
 
-    .line 978
+    .line 894
     invoke-virtual {p2}, Ljp/co/sony/mc/camera/util/capability/CameraStaticParameters;->getMaxBokehBurstQueueingNum()I
 
     move-result v1
@@ -4272,10 +3894,10 @@
 
     iput-object v0, p0, Ljp/co/sony/mc/camera/util/capability/CameraCapabilityList;->BOKEH_BURST_MAX_QUEUEING_NUM:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
 
-    .line 980
+    .line 896
     new-instance v0, Ljp/co/sony/mc/camera/util/capability/IntegerCapabilityItem;
 
-    .line 981
+    .line 897
     invoke-virtual {p2}, Ljp/co/sony/mc/camera/util/capability/CameraStaticParameters;->getMaxHdrBurstQueueingNum()I
 
     move-result v1
@@ -4290,12 +3912,12 @@
 
     iput-object v0, p0, Ljp/co/sony/mc/camera/util/capability/CameraCapabilityList;->HDR_BURST_MAX_QUEUEING_NUM:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
 
-    .line 983
+    .line 899
     invoke-virtual {p2}, Ljp/co/sony/mc/camera/util/capability/CameraStaticParameters;->getAvailablePreviewFpsList()Ljava/util/List;
 
     move-result-object v0
 
-    .line 984
+    .line 900
     new-instance v1, Ljp/co/sony/mc/camera/util/capability/AvailablePreviewFpsMapListCapabilityItem;
 
     const-string/jumbo v2, "sony-preview-fps-map"
@@ -4304,10 +3926,10 @@
 
     iput-object v1, p0, Ljp/co/sony/mc/camera/util/capability/CameraCapabilityList;->PREVIEW_FPS_MAP:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
 
-    .line 988
+    .line 904
     new-instance v0, Ljp/co/sony/mc/camera/util/capability/IntegerCapabilityItem;
 
-    .line 989
+    .line 905
     invoke-virtual {p2}, Ljp/co/sony/mc/camera/util/capability/CameraStaticParameters;->getMaxPreviewFps()I
 
     move-result v1
@@ -4322,12 +3944,12 @@
 
     iput-object v0, p0, Ljp/co/sony/mc/camera/util/capability/CameraCapabilityList;->MAX_PREVIEW_FPS:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
 
-    .line 991
+    .line 907
     new-instance v0, Ljp/co/sony/mc/camera/util/capability/RectCapabilityItem;
 
     const-string v1, "light-shielding-rect"
 
-    .line 993
+    .line 909
     invoke-virtual {p2}, Ljp/co/sony/mc/camera/util/capability/CameraStaticParameters;->getDisplayFlashLightShieldingRect()Landroid/graphics/Rect;
 
     move-result-object v2
@@ -4336,10 +3958,10 @@
 
     iput-object v0, p0, Ljp/co/sony/mc/camera/util/capability/CameraCapabilityList;->DISPLAY_FLASH_LIGHT_SHIELDING_RECT:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
 
-    .line 995
+    .line 911
     new-instance v0, Ljp/co/sony/mc/camera/util/capability/IntegerCapabilityItem;
 
-    .line 997
+    .line 913
     invoke-virtual {p2}, Ljp/co/sony/mc/camera/util/capability/CameraStaticParameters;->getDisplayFlashColor()I
 
     move-result v1
@@ -4354,12 +3976,12 @@
 
     iput-object v0, p0, Ljp/co/sony/mc/camera/util/capability/CameraCapabilityList;->DISPLAY_FLASH_LIGHT_SHIELDING_COLOR:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
 
-    .line 999
+    .line 915
     new-instance v0, Ljp/co/sony/mc/camera/util/capability/StringListCapabilityItem;
 
     const-string/jumbo v1, "sony-multi-frame-nr-mode"
 
-    .line 1000
+    .line 916
     invoke-virtual {p2}, Ljp/co/sony/mc/camera/util/capability/CameraStaticParameters;->getSupportedMultiFrameNrModes()Ljava/util/List;
 
     move-result-object v2
@@ -4368,40 +3990,12 @@
 
     iput-object v0, p0, Ljp/co/sony/mc/camera/util/capability/CameraCapabilityList;->MULTI_FRAME_NR_MODE:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
 
-    .line 1002
-    new-instance v0, Ljp/co/sony/mc/camera/util/capability/FloatListCapabilityItem;
-
-    const-string v1, "android-focal-length-values"
-
-    .line 1004
-    invoke-virtual {p2}, Ljp/co/sony/mc/camera/util/capability/CameraStaticParameters;->getSupportedAndroidFocalLength()Ljava/util/List;
-
-    move-result-object v2
-
-    invoke-direct {v0, v1, v2}, Ljp/co/sony/mc/camera/util/capability/FloatListCapabilityItem;-><init>(Ljava/lang/String;Ljava/util/List;)V
-
-    iput-object v0, p0, Ljp/co/sony/mc/camera/util/capability/CameraCapabilityList;->ANDROID_FOCAL_LENGTH:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
-
-    .line 1006
-    new-instance v0, Ljp/co/sony/mc/camera/util/capability/FloatListCapabilityItem;
-
-    const-string/jumbo v1, "sony-focal-length-values"
-
-    .line 1008
-    invoke-virtual {p2}, Ljp/co/sony/mc/camera/util/capability/CameraStaticParameters;->getSupportedSonyFocalLength()Ljava/util/List;
-
-    move-result-object v2
-
-    invoke-direct {v0, v1, v2}, Ljp/co/sony/mc/camera/util/capability/FloatListCapabilityItem;-><init>(Ljava/lang/String;Ljava/util/List;)V
-
-    iput-object v0, p0, Ljp/co/sony/mc/camera/util/capability/CameraCapabilityList;->SONY_FOCAL_LENGTH:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
-
-    .line 1010
+    .line 918
     new-instance v0, Ljp/co/sony/mc/camera/util/capability/FloatListCapabilityItem;
 
     const-string v1, "aperture"
 
-    .line 1011
+    .line 919
     invoke-virtual {p2}, Ljp/co/sony/mc/camera/util/capability/CameraStaticParameters;->getSupportedApertures()Ljava/util/List;
 
     move-result-object v2
@@ -4410,12 +4004,12 @@
 
     iput-object v0, p0, Ljp/co/sony/mc/camera/util/capability/CameraCapabilityList;->APERTURE:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
 
-    .line 1013
+    .line 921
     new-instance v0, Ljp/co/sony/mc/camera/util/capability/StringListCapabilityItem;
 
     const-string/jumbo v1, "sony-cinema-histogram-values"
 
-    .line 1014
+    .line 922
     invoke-virtual {p2}, Ljp/co/sony/mc/camera/util/capability/CameraStaticParameters;->getSupportedHistogramModes()Ljava/util/List;
 
     move-result-object v2
@@ -4424,12 +4018,12 @@
 
     iput-object v0, p0, Ljp/co/sony/mc/camera/util/capability/CameraCapabilityList;->HISTOGRAM:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
 
-    .line 1016
+    .line 924
     new-instance v0, Ljp/co/sony/mc/camera/util/capability/IntegerCapabilityItem;
 
     const-string/jumbo v1, "sony-cinema-histogram-bucket-count"
 
-    .line 1017
+    .line 925
     invoke-virtual {p2}, Ljp/co/sony/mc/camera/util/capability/CameraStaticParameters;->getHistogramBucketCount()Ljava/lang/Integer;
 
     move-result-object v2
@@ -4438,12 +4032,12 @@
 
     iput-object v0, p0, Ljp/co/sony/mc/camera/util/capability/CameraCapabilityList;->HISTOGRAM_BUCKET_COUNT:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
 
-    .line 1019
+    .line 927
     new-instance v0, Ljp/co/sony/mc/camera/util/capability/IntegerCapabilityItem;
 
     const-string/jumbo v1, "sony-cinema-max-histogram-count"
 
-    .line 1020
+    .line 928
     invoke-virtual {p2}, Ljp/co/sony/mc/camera/util/capability/CameraStaticParameters;->getMaxHistogramCount()Ljava/lang/Integer;
 
     move-result-object v2
@@ -4452,12 +4046,12 @@
 
     iput-object v0, p0, Ljp/co/sony/mc/camera/util/capability/CameraCapabilityList;->MAX_HISTOGRAM_COUNT:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
 
-    .line 1022
+    .line 930
     new-instance v0, Ljp/co/sony/mc/camera/util/capability/StringListCapabilityItem;
 
     const-string v1, "priority-set-in-awb"
 
-    .line 1023
+    .line 931
     invoke-virtual {p2}, Ljp/co/sony/mc/camera/util/capability/CameraStaticParameters;->getAwbPriority()Ljava/util/List;
 
     move-result-object v2
@@ -4466,12 +4060,12 @@
 
     iput-object v0, p0, Ljp/co/sony/mc/camera/util/capability/CameraCapabilityList;->AWB_PRIORITY:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
 
-    .line 1025
+    .line 933
     new-instance v0, Ljp/co/sony/mc/camera/util/capability/StringListCapabilityItem;
 
     const-string/jumbo v1, "sony-af-drive-mode"
 
-    .line 1026
+    .line 934
     invoke-virtual {p2}, Ljp/co/sony/mc/camera/util/capability/CameraStaticParameters;->getSupportedAfDriveModes()Ljava/util/List;
 
     move-result-object v2
@@ -4480,10 +4074,10 @@
 
     iput-object v0, p0, Ljp/co/sony/mc/camera/util/capability/CameraCapabilityList;->AF_DRIVE_MODE:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
 
-    .line 1028
+    .line 936
     new-instance v0, Ljp/co/sony/mc/camera/util/capability/BooleanCapabilityItem;
 
-    .line 1029
+    .line 937
     invoke-virtual {p2}, Ljp/co/sony/mc/camera/util/capability/CameraStaticParameters;->isRawCaptureSupported()Z
 
     move-result v1
@@ -4498,12 +4092,12 @@
 
     iput-object v0, p0, Ljp/co/sony/mc/camera/util/capability/CameraCapabilityList;->RAW_CAPABILITY:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
 
-    .line 1031
+    .line 939
     new-instance v0, Ljp/co/sony/mc/camera/util/capability/RectListCapabilityItem;
 
     const-string v1, "raw-picture-size"
 
-    .line 1032
+    .line 940
     invoke-virtual {p2}, Ljp/co/sony/mc/camera/util/capability/CameraStaticParameters;->getSupportedRawPictureSizes()Ljava/util/List;
 
     move-result-object v2
@@ -4512,12 +4106,12 @@
 
     iput-object v0, p0, Ljp/co/sony/mc/camera/util/capability/CameraCapabilityList;->RAW_PICTURE_SIZE:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
 
-    .line 1034
+    .line 942
     new-instance v0, Ljp/co/sony/mc/camera/util/capability/RectCapabilityItem;
 
     const-string/jumbo v1, "sony-precise-focus-area"
 
-    .line 1035
+    .line 943
     invoke-virtual {p2}, Ljp/co/sony/mc/camera/util/capability/CameraStaticParameters;->getPreciseFocusArea()Landroid/graphics/Rect;
 
     move-result-object v2
@@ -4526,12 +4120,12 @@
 
     iput-object v0, p0, Ljp/co/sony/mc/camera/util/capability/CameraCapabilityList;->PRECISE_FOCUS_AREA:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
 
-    .line 1037
+    .line 945
     new-instance v0, Ljp/co/sony/mc/camera/util/capability/StringListCapabilityItem;
 
     const-string/jumbo v1, "sony-yuv-draw-frame-mode"
 
-    .line 1038
+    .line 946
     invoke-virtual {p2}, Ljp/co/sony/mc/camera/util/capability/CameraStaticParameters;->getSupportedYuvFrameDrawModes()Ljava/util/List;
 
     move-result-object v2
@@ -4540,12 +4134,12 @@
 
     iput-object v0, p0, Ljp/co/sony/mc/camera/util/capability/CameraCapabilityList;->YUV_DRAW_FRAME_MODE:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
 
-    .line 1040
+    .line 948
     new-instance v0, Ljp/co/sony/mc/camera/util/capability/MinimumDurationConfigurationListCapabilityItem;
 
     const-string v1, "minimum-frame-duration"
 
-    .line 1041
+    .line 949
     invoke-virtual {p2}, Ljp/co/sony/mc/camera/util/capability/CameraStaticParameters;->getMinimumFrameDuration()Ljava/util/List;
 
     move-result-object v2
@@ -4554,10 +4148,10 @@
 
     iput-object v0, p0, Ljp/co/sony/mc/camera/util/capability/CameraCapabilityList;->MIN_FRAME_DURATION:Ljp/co/sony/mc/camera/util/capability/MinimumDurationConfigurationListCapabilityItem;
 
-    .line 1043
+    .line 951
     new-instance v0, Ljp/co/sony/mc/camera/util/capability/LongCapabilityItem;
 
-    .line 1044
+    .line 952
     invoke-virtual {p2}, Ljp/co/sony/mc/camera/util/capability/CameraStaticParameters;->getMaxFrameDuration()J
 
     move-result-wide v1
@@ -4572,30 +4166,12 @@
 
     iput-object v0, p0, Ljp/co/sony/mc/camera/util/capability/CameraCapabilityList;->MAX_FRAME_DURATION:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
 
-    .line 1046
-    new-instance v0, Ljp/co/sony/mc/camera/util/capability/LongCapabilityItem;
-
-    .line 1047
-    invoke-virtual {p2}, Ljp/co/sony/mc/camera/util/capability/CameraStaticParameters;->getHybridZoomMinFrameDuration()J
-
-    move-result-wide v1
-
-    invoke-static {v1, v2}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
-
-    move-result-object v1
-
-    const-string v2, "minimum-hybrid-zoom-frame-duration"
-
-    invoke-direct {v0, v2, v1}, Ljp/co/sony/mc/camera/util/capability/LongCapabilityItem;-><init>(Ljava/lang/String;Ljava/lang/Long;)V
-
-    iput-object v0, p0, Ljp/co/sony/mc/camera/util/capability/CameraCapabilityList;->MIN_HYBRID_ZOOM_FRAME_DURATION:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
-
-    .line 1049
+    .line 954
     new-instance v0, Ljp/co/sony/mc/camera/util/capability/StringListCapabilityItem;
 
     const-string/jumbo v1, "video-multi-frame-hdr-mode"
 
-    .line 1051
+    .line 956
     invoke-virtual {p2}, Ljp/co/sony/mc/camera/util/capability/CameraStaticParameters;->getSupportedMultiFrameHdrModes()Ljava/util/List;
 
     move-result-object v2
@@ -4604,12 +4180,12 @@
 
     iput-object v0, p0, Ljp/co/sony/mc/camera/util/capability/CameraCapabilityList;->MULTI_FRAME_HDR_MODE:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
 
-    .line 1053
+    .line 958
     new-instance v0, Ljp/co/sony/mc/camera/util/capability/StringListCapabilityItem;
 
     const-string/jumbo v1, "sony-photopro-peaking-mode"
 
-    .line 1054
+    .line 959
     invoke-virtual {p2}, Ljp/co/sony/mc/camera/util/capability/CameraStaticParameters;->getSupportedPeakingModes()Ljava/util/List;
 
     move-result-object v2
@@ -4618,12 +4194,12 @@
 
     iput-object v0, p0, Ljp/co/sony/mc/camera/util/capability/CameraCapabilityList;->PEAKING_MODE:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
 
-    .line 1056
+    .line 961
     new-instance v0, Ljp/co/sony/mc/camera/util/capability/StringListCapabilityItem;
 
     const-string/jumbo v1, "sony-color-tone-profile"
 
-    .line 1058
+    .line 963
     invoke-virtual {p2}, Ljp/co/sony/mc/camera/util/capability/CameraStaticParameters;->getAvailableColorToneProfiles()Ljava/util/List;
 
     move-result-object v2
@@ -4632,12 +4208,12 @@
 
     iput-object v0, p0, Ljp/co/sony/mc/camera/util/capability/CameraCapabilityList;->COLOR_TONE_PROFILE:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
 
-    .line 1060
+    .line 965
     new-instance v0, Ljp/co/sony/mc/camera/util/capability/StringListCapabilityItem;
 
     const-string/jumbo v1, "sony-product-showcase-mode"
 
-    .line 1062
+    .line 967
     invoke-virtual {p2}, Ljp/co/sony/mc/camera/util/capability/CameraStaticParameters;->getSupportedProductShowcaseModes()Ljava/util/List;
 
     move-result-object v2
@@ -4646,12 +4222,12 @@
 
     iput-object v0, p0, Ljp/co/sony/mc/camera/util/capability/CameraCapabilityList;->PRODUCT_SHOWCASE_MODE:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
 
-    .line 1064
+    .line 969
     new-instance v0, Ljp/co/sony/mc/camera/util/capability/StringListCapabilityItem;
 
     const-string/jumbo v1, "sony-low-light-mode-supported-values"
 
-    .line 1066
+    .line 971
     invoke-virtual {p2}, Ljp/co/sony/mc/camera/util/capability/CameraStaticParameters;->getSupportedLowLightModes()Ljava/util/List;
 
     move-result-object v2
@@ -4660,12 +4236,12 @@
 
     iput-object v0, p0, Ljp/co/sony/mc/camera/util/capability/CameraCapabilityList;->LOW_LIGHT_MODE:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
 
-    .line 1068
+    .line 973
     new-instance v0, Ljp/co/sony/mc/camera/util/capability/StringListCapabilityItem;
 
     const-string/jumbo v1, "sony-photo-hybrid-zoom"
 
-    .line 1069
+    .line 974
     invoke-virtual {p2}, Ljp/co/sony/mc/camera/util/capability/CameraStaticParameters;->getSupportedHybridZoomModes()Ljava/util/List;
 
     move-result-object v2
@@ -4674,10 +4250,10 @@
 
     iput-object v0, p0, Ljp/co/sony/mc/camera/util/capability/CameraCapabilityList;->HYBRID_ZOOM_MODE:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
 
-    .line 1071
+    .line 976
     new-instance v0, Ljp/co/sony/mc/camera/util/capability/BooleanCapabilityItem;
 
-    .line 1072
+    .line 977
     invoke-virtual {p2}, Ljp/co/sony/mc/camera/util/capability/CameraStaticParameters;->isControlFpsSupported()Z
 
     move-result v1
@@ -4692,30 +4268,12 @@
 
     iput-object v0, p0, Ljp/co/sony/mc/camera/util/capability/CameraCapabilityList;->CONTROL_FPS:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
 
-    .line 1074
-    new-instance v0, Ljp/co/sony/mc/camera/util/capability/LongCapabilityItem;
-
-    .line 1076
-    invoke-virtual {p2}, Ljp/co/sony/mc/camera/util/capability/CameraStaticParameters;->getHybridZoomMinFrameDuration()J
-
-    move-result-wide v1
-
-    invoke-static {v1, v2}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
-
-    move-result-object v1
-
-    const-string/jumbo v2, "sony-hybrid-zoom-minimum-frame-duration"
-
-    invoke-direct {v0, v2, v1}, Ljp/co/sony/mc/camera/util/capability/LongCapabilityItem;-><init>(Ljava/lang/String;Ljava/lang/Long;)V
-
-    iput-object v0, p0, Ljp/co/sony/mc/camera/util/capability/CameraCapabilityList;->HYBRID_ZOOM_MIN_FRAME_DURATION:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
-
-    .line 1078
+    .line 979
     new-instance v0, Ljp/co/sony/mc/camera/util/capability/StringListCapabilityItem;
 
     const-string/jumbo v1, "sony-fallback-mode-supported-values"
 
-    .line 1080
+    .line 981
     invoke-virtual {p2}, Ljp/co/sony/mc/camera/util/capability/CameraStaticParameters;->getSupportedFallbackModes()Ljava/util/List;
 
     move-result-object v2
@@ -4724,12 +4282,12 @@
 
     iput-object v0, p0, Ljp/co/sony/mc/camera/util/capability/CameraCapabilityList;->FALLBACK_MODE:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
 
-    .line 1082
+    .line 983
     new-instance v0, Ljp/co/sony/mc/camera/util/capability/StringListCapabilityItem;
 
     const-string/jumbo v1, "sony-close-up-mode"
 
-    .line 1083
+    .line 984
     invoke-virtual {p2}, Ljp/co/sony/mc/camera/util/capability/CameraStaticParameters;->getSupportedCloseUpModes()Ljava/util/List;
 
     move-result-object v2
@@ -4738,10 +4296,10 @@
 
     iput-object v0, p0, Ljp/co/sony/mc/camera/util/capability/CameraCapabilityList;->CLOSE_UP_MODE:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
 
-    .line 1085
+    .line 986
     new-instance v0, Ljp/co/sony/mc/camera/util/capability/BooleanCapabilityItem;
 
-    .line 1087
+    .line 988
     invoke-virtual {p2}, Ljp/co/sony/mc/camera/util/capability/CameraStaticParameters;->isVideoStreamOrientationSupported()Z
 
     move-result v1
@@ -4756,28 +4314,70 @@
 
     iput-object v0, p0, Ljp/co/sony/mc/camera/util/capability/CameraCapabilityList;->VIDEO_STREAM_ORIENTATION:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
 
-    .line 1089
+    .line 990
     new-instance v0, Ljp/co/sony/mc/camera/util/capability/StringListCapabilityItem;
 
     const-string/jumbo v1, "video-sensitivity-smoothing-mode"
 
-    .line 1091
+    .line 992
     invoke-virtual {p2}, Ljp/co/sony/mc/camera/util/capability/CameraStaticParameters;->getSupportedSensitivitySmoothingModes()Ljava/util/List;
+
+    move-result-object v2
+
+    invoke-direct {v0, v1, v2}, Ljp/co/sony/mc/camera/util/capability/StringListCapabilityItem;-><init>(Ljava/lang/String;Ljava/util/List;)V
+
+    iput-object v0, p0, Ljp/co/sony/mc/camera/util/capability/CameraCapabilityList;->SENSITIVITY_SMOOTHING_MODE:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
+
+    .line 994
+    new-instance v0, Ljp/co/sony/mc/camera/util/capability/StringListCapabilityItem;
+
+    const-string/jumbo v1, "sony-auto-framing-mode-supported-values"
+
+    .line 996
+    invoke-virtual {p2}, Ljp/co/sony/mc/camera/util/capability/CameraStaticParameters;->getSupportedAutoFramingModes()Ljava/util/List;
+
+    move-result-object v2
+
+    invoke-direct {v0, v1, v2}, Ljp/co/sony/mc/camera/util/capability/StringListCapabilityItem;-><init>(Ljava/lang/String;Ljava/util/List;)V
+
+    iput-object v0, p0, Ljp/co/sony/mc/camera/util/capability/CameraCapabilityList;->AUTO_FRAMING_MODE:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
+
+    .line 998
+    new-instance v0, Ljp/co/sony/mc/camera/util/capability/AutoFramingVideoConfigurationListCapabilityItem;
+
+    const-string/jumbo v1, "sony-auto-framing-video-configuration"
+
+    .line 1000
+    invoke-virtual {p2}, Ljp/co/sony/mc/camera/util/capability/CameraStaticParameters;->getAutoFramingVideoConfiguration()Ljava/util/List;
+
+    move-result-object v2
+
+    invoke-direct {v0, v1, v2}, Ljp/co/sony/mc/camera/util/capability/AutoFramingVideoConfigurationListCapabilityItem;-><init>(Ljava/lang/String;Ljava/util/List;)V
+
+    iput-object v0, p0, Ljp/co/sony/mc/camera/util/capability/CameraCapabilityList;->AUTO_FRAMING_VIDEO_CONFIGURATION_MAP:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
+
+    .line 1002
+    new-instance v0, Ljp/co/sony/mc/camera/util/capability/StringListCapabilityItem;
+
+    const-string/jumbo v1, "sony-framing-assist-position-mode-supported-values"
+
+    .line 1004
+    invoke-virtual {p2}, Ljp/co/sony/mc/camera/util/capability/CameraStaticParameters;->getSupportedFramingAssistPositionModes()Ljava/util/List;
 
     move-result-object p2
 
     invoke-direct {v0, v1, p2}, Ljp/co/sony/mc/camera/util/capability/StringListCapabilityItem;-><init>(Ljava/lang/String;Ljava/util/List;)V
 
-    iput-object v0, p0, Ljp/co/sony/mc/camera/util/capability/CameraCapabilityList;->SENSITIVITY_SMOOTHING_MODE:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
+    iput-object v0, p0, Ljp/co/sony/mc/camera/util/capability/CameraCapabilityList;->FRAMING_ASSIST_POSITION_MODE:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
 
-    .line 1093
+    .line 1006
     invoke-direct {p0}, Ljp/co/sony/mc/camera/util/capability/CameraCapabilityList;->createList()Ljava/util/List;
 
     move-result-object p2
 
     iput-object p2, p0, Ljp/co/sony/mc/camera/util/capability/CameraCapabilityList;->mValues:Ljava/util/List;
 
-    .line 1095
+    .line 1008
     new-instance p2, Ljp/co/sony/mc/camera/util/capability/ResolutionCapabilityItem;
 
     invoke-direct {p0, p1}, Ljp/co/sony/mc/camera/util/capability/CameraCapabilityList;->getResolutionOptions(Landroid/content/Context;)Ljp/co/sony/mc/camera/util/capability/ResolutionOptions;
@@ -4802,673 +4402,618 @@
         }
     .end annotation
 
-    .line 1099
+    .line 1012
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
-    .line 1101
+    .line 1014
     iget-object v1, p0, Ljp/co/sony/mc/camera/util/capability/CameraCapabilityList;->AE:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
 
     invoke-interface {v0, v1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    .line 1102
+    .line 1015
     iget-object v1, p0, Ljp/co/sony/mc/camera/util/capability/CameraCapabilityList;->AEL:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
 
     invoke-interface {v0, v1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    .line 1103
+    .line 1016
     iget-object v1, p0, Ljp/co/sony/mc/camera/util/capability/CameraCapabilityList;->AWBL:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
 
     invoke-interface {v0, v1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    .line 1104
+    .line 1017
     iget-object v1, p0, Ljp/co/sony/mc/camera/util/capability/CameraCapabilityList;->EV_MAX:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
 
     invoke-interface {v0, v1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    .line 1105
+    .line 1018
     iget-object v1, p0, Ljp/co/sony/mc/camera/util/capability/CameraCapabilityList;->EV_MIN:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
 
     invoke-interface {v0, v1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    .line 1106
+    .line 1019
     iget-object v1, p0, Ljp/co/sony/mc/camera/util/capability/CameraCapabilityList;->EV_STEP:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
 
     invoke-interface {v0, v1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    .line 1107
+    .line 1020
     iget-object v1, p0, Ljp/co/sony/mc/camera/util/capability/CameraCapabilityList;->EXTEND_FPS:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
 
     invoke-interface {v0, v1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    .line 1108
+    .line 1021
     iget-object v1, p0, Ljp/co/sony/mc/camera/util/capability/CameraCapabilityList;->VARIABLE_FPS:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
 
     invoke-interface {v0, v1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    .line 1109
+    .line 1022
     iget-object v1, p0, Ljp/co/sony/mc/camera/util/capability/CameraCapabilityList;->FLASH:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
 
     invoke-interface {v0, v1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    .line 1110
+    .line 1023
     iget-object v1, p0, Ljp/co/sony/mc/camera/util/capability/CameraCapabilityList;->FOCUS_AREA:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
 
     invoke-interface {v0, v1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    .line 1111
+    .line 1024
     iget-object v1, p0, Ljp/co/sony/mc/camera/util/capability/CameraCapabilityList;->FOCUS_MODE:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
 
     invoke-interface {v0, v1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    .line 1112
+    .line 1025
     iget-object v1, p0, Ljp/co/sony/mc/camera/util/capability/CameraCapabilityList;->FPS_RANGE:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
 
     invoke-interface {v0, v1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    .line 1113
+    .line 1026
     iget-object v1, p0, Ljp/co/sony/mc/camera/util/capability/CameraCapabilityList;->HDR:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
 
     invoke-interface {v0, v1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    .line 1114
+    .line 1027
     iget-object v1, p0, Ljp/co/sony/mc/camera/util/capability/CameraCapabilityList;->ISO_RANGE:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
 
     invoke-interface {v0, v1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    .line 1115
+    .line 1028
     iget-object v1, p0, Ljp/co/sony/mc/camera/util/capability/CameraCapabilityList;->HYBRID_ZOOM_ISO_RANGE:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
 
     invoke-interface {v0, v1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    .line 1116
+    .line 1029
     iget-object v1, p0, Ljp/co/sony/mc/camera/util/capability/CameraCapabilityList;->VIDEO_SDR_ISO_RANGE:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
 
     invoke-interface {v0, v1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    .line 1117
+    .line 1030
     iget-object v1, p0, Ljp/co/sony/mc/camera/util/capability/CameraCapabilityList;->VIDEO_HYBRID_ZOOM_SDR_ISO_RANGE:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
 
     invoke-interface {v0, v1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    .line 1118
+    .line 1031
     iget-object v1, p0, Ljp/co/sony/mc/camera/util/capability/CameraCapabilityList;->VIDEO_HDR_ISO_RANGE:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
 
     invoke-interface {v0, v1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    .line 1119
+    .line 1032
     iget-object v1, p0, Ljp/co/sony/mc/camera/util/capability/CameraCapabilityList;->VIDEO_HYBRID_ZOOM_HDR_ISO_RANGE:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
 
     invoke-interface {v0, v1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    .line 1120
+    .line 1033
     iget-object v1, p0, Ljp/co/sony/mc/camera/util/capability/CameraCapabilityList;->VIDEO_SCINETONE_ISO_RANGE:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
 
     invoke-interface {v0, v1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    .line 1121
+    .line 1034
     iget-object v1, p0, Ljp/co/sony/mc/camera/util/capability/CameraCapabilityList;->VIDEO_SCINETONE_HYBRID_ZOOM_ISO_RANGE:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
 
     invoke-interface {v0, v1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    .line 1122
+    .line 1035
     iget-object v1, p0, Ljp/co/sony/mc/camera/util/capability/CameraCapabilityList;->DEFAULT_ISO:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
 
     invoke-interface {v0, v1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    .line 1123
+    .line 1036
     iget-object v1, p0, Ljp/co/sony/mc/camera/util/capability/CameraCapabilityList;->DEFAULT_VIDEO_ISO:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
 
     invoke-interface {v0, v1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    .line 1124
-    iget-object v1, p0, Ljp/co/sony/mc/camera/util/capability/CameraCapabilityList;->MAX_NUM_FACE:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
-
-    invoke-interface {v0, v1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
-
-    .line 1125
+    .line 1037
     iget-object v1, p0, Ljp/co/sony/mc/camera/util/capability/CameraCapabilityList;->MAX_NUM_FOCUS_AREA:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
 
     invoke-interface {v0, v1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    .line 1126
+    .line 1038
     iget-object v1, p0, Ljp/co/sony/mc/camera/util/capability/CameraCapabilityList;->MIN_ZOOM_RATIO:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
 
     invoke-interface {v0, v1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    .line 1127
+    .line 1039
     iget-object v1, p0, Ljp/co/sony/mc/camera/util/capability/CameraCapabilityList;->MAX_ZOOM_RATIO:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
 
     invoke-interface {v0, v1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    .line 1128
+    .line 1040
     iget-object v1, p0, Ljp/co/sony/mc/camera/util/capability/CameraCapabilityList;->OPTICAL_ZOOM_RATIO_RANGE:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
 
     invoke-interface {v0, v1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    .line 1129
+    .line 1041
     iget-object v1, p0, Ljp/co/sony/mc/camera/util/capability/CameraCapabilityList;->BOKEH_ZOOM_RATIO_RANGE:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
 
     invoke-interface {v0, v1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    .line 1130
+    .line 1042
     iget-object v1, p0, Ljp/co/sony/mc/camera/util/capability/CameraCapabilityList;->HYBRID_ZOOM_RATIO_RANGE:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
 
     invoke-interface {v0, v1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    .line 1131
+    .line 1043
     iget-object v1, p0, Ljp/co/sony/mc/camera/util/capability/CameraCapabilityList;->CLOSE_UP_MODE_ZOOM_RATIO_RANGE:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
 
     invoke-interface {v0, v1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    .line 1132
-    iget-object v1, p0, Ljp/co/sony/mc/camera/util/capability/CameraCapabilityList;->WIDE_ZOOM_TARGET_RATIO:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
-
-    invoke-interface {v0, v1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
-
-    .line 1133
+    .line 1044
     iget-object v1, p0, Ljp/co/sony/mc/camera/util/capability/CameraCapabilityList;->METERING:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
 
     invoke-interface {v0, v1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    .line 1134
+    .line 1045
     iget-object v1, p0, Ljp/co/sony/mc/camera/util/capability/CameraCapabilityList;->OBJECT_TRACKING:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
 
     invoke-interface {v0, v1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    .line 1135
+    .line 1046
     iget-object v1, p0, Ljp/co/sony/mc/camera/util/capability/CameraCapabilityList;->TRACKING_FOCUS_DURING_LOCK:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
 
     invoke-interface {v0, v1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    .line 1136
+    .line 1047
     iget-object v1, p0, Ljp/co/sony/mc/camera/util/capability/CameraCapabilityList;->PICTURE_SIZE:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
 
     invoke-interface {v0, v1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    .line 1137
-    iget-object v1, p0, Ljp/co/sony/mc/camera/util/capability/CameraCapabilityList;->MANUAL_ISO_SUPPORTED_PICTURE_SIZE:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
-
-    invoke-interface {v0, v1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
-
-    .line 1138
-    iget-object v1, p0, Ljp/co/sony/mc/camera/util/capability/CameraCapabilityList;->STILL_HDR_SUPPORTED_PICTURE_SIZE:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
-
-    invoke-interface {v0, v1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
-
-    .line 1139
+    .line 1048
     iget-object v1, p0, Ljp/co/sony/mc/camera/util/capability/CameraCapabilityList;->HIGH_RESOLUTION_SUPPORTED_PICTURE_SIZE:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
 
     invoke-interface {v0, v1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    .line 1140
+    .line 1049
     iget-object v1, p0, Ljp/co/sony/mc/camera/util/capability/CameraCapabilityList;->PREVIEW_SIZE:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
 
     invoke-interface {v0, v1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    .line 1141
-    iget-object v1, p0, Ljp/co/sony/mc/camera/util/capability/CameraCapabilityList;->PREVIEW_SIZE_FOR_STILL:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
-
-    invoke-interface {v0, v1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
-
-    .line 1142
+    .line 1050
     iget-object v1, p0, Ljp/co/sony/mc/camera/util/capability/CameraCapabilityList;->PREVIEW_SIZE_FOR_VIDEO:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
 
     invoke-interface {v0, v1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    .line 1143
+    .line 1051
     iget-object v1, p0, Ljp/co/sony/mc/camera/util/capability/CameraCapabilityList;->PREVIEW_SIZE_FOR_HDR_VIDEO:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
 
     invoke-interface {v0, v1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    .line 1144
+    .line 1052
     iget-object v1, p0, Ljp/co/sony/mc/camera/util/capability/CameraCapabilityList;->FACE_DETECTION:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
 
     invoke-interface {v0, v1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    .line 1145
+    .line 1053
     iget-object v1, p0, Ljp/co/sony/mc/camera/util/capability/CameraCapabilityList;->EYE_DETECTION_MODES:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
 
     invoke-interface {v0, v1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    .line 1146
-    iget-object v1, p0, Ljp/co/sony/mc/camera/util/capability/CameraCapabilityList;->VIDEO_CONFIGURATION:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
-
-    invoke-interface {v0, v1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
-
-    .line 1147
+    .line 1054
     iget-object v1, p0, Ljp/co/sony/mc/camera/util/capability/CameraCapabilityList;->VIDEO_CONFIGURATION_MAP:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
 
     invoke-interface {v0, v1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    .line 1148
+    .line 1055
     iget-object v1, p0, Ljp/co/sony/mc/camera/util/capability/CameraCapabilityList;->VIDEO_SNAPSHOT_SIZE:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
 
     invoke-interface {v0, v1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    .line 1149
+    .line 1056
     iget-object v1, p0, Ljp/co/sony/mc/camera/util/capability/CameraCapabilityList;->WHITE_BALANCE:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
 
     invoke-interface {v0, v1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    .line 1150
+    .line 1057
     iget-object v1, p0, Ljp/co/sony/mc/camera/util/capability/CameraCapabilityList;->STEADY_SHOT_CONFIGURATION:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
 
     invoke-interface {v0, v1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    .line 1151
+    .line 1058
     iget-object v1, p0, Ljp/co/sony/mc/camera/util/capability/CameraCapabilityList;->INTELLIGENT_ACTIVE_CONFIGURATION:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
 
     invoke-interface {v0, v1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    .line 1152
+    .line 1059
     iget-object v1, p0, Ljp/co/sony/mc/camera/util/capability/CameraCapabilityList;->STEADY_SHOT_HDR_CONFIGURATION:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
 
     invoke-interface {v0, v1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    .line 1153
+    .line 1060
     iget-object v1, p0, Ljp/co/sony/mc/camera/util/capability/CameraCapabilityList;->INTELLIGENT_ACTIVE_HDR_CONFIGURATION:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
 
     invoke-interface {v0, v1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    .line 1154
+    .line 1061
     iget-object v1, p0, Ljp/co/sony/mc/camera/util/capability/CameraCapabilityList;->STEADY_SHOT_MFHDR_CONFIGURATION:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
 
     invoke-interface {v0, v1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    .line 1155
+    .line 1062
     iget-object v1, p0, Ljp/co/sony/mc/camera/util/capability/CameraCapabilityList;->INTELLIGENT_ACTIVE_MFHDR_CONFIGURATION:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
 
     invoke-interface {v0, v1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    .line 1156
+    .line 1063
     iget-object v1, p0, Ljp/co/sony/mc/camera/util/capability/CameraCapabilityList;->STEADY_SHOT_HDR_MFHDR_CONFIGURATION:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
 
     invoke-interface {v0, v1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    .line 1157
+    .line 1064
     iget-object v1, p0, Ljp/co/sony/mc/camera/util/capability/CameraCapabilityList;->INTELLIGENT_ACTIVE_HDR_MFHDR_CONFIGURATION:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
 
     invoke-interface {v0, v1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    .line 1158
+    .line 1065
+    iget-object v1, p0, Ljp/co/sony/mc/camera/util/capability/CameraCapabilityList;->ACTION_MODE_CONFIGURATION:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
+
+    invoke-interface {v0, v1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
+
+    .line 1066
+    iget-object v1, p0, Ljp/co/sony/mc/camera/util/capability/CameraCapabilityList;->ACTION_MODE_HDR_CONFIGURATION:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
+
+    invoke-interface {v0, v1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
+
+    .line 1067
     iget-object v1, p0, Ljp/co/sony/mc/camera/util/capability/CameraCapabilityList;->MAX_SOFT_SKIN_LEVEL:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
 
     invoke-interface {v0, v1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    .line 1159
+    .line 1068
     iget-object v1, p0, Ljp/co/sony/mc/camera/util/capability/CameraCapabilityList;->MIN_SOFT_SKIN_LEVEL:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
 
     invoke-interface {v0, v1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    .line 1160
+    .line 1069
     iget-object v1, p0, Ljp/co/sony/mc/camera/util/capability/CameraCapabilityList;->MAX_AWB_TEMPERATURE:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
 
     invoke-interface {v0, v1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    .line 1161
+    .line 1070
     iget-object v1, p0, Ljp/co/sony/mc/camera/util/capability/CameraCapabilityList;->MIN_AWB_TEMPERATURE:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
 
     invoke-interface {v0, v1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    .line 1162
+    .line 1071
     iget-object v1, p0, Ljp/co/sony/mc/camera/util/capability/CameraCapabilityList;->MAX_AWB_AB_FLOAT:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
 
     invoke-interface {v0, v1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    .line 1163
+    .line 1072
     iget-object v1, p0, Ljp/co/sony/mc/camera/util/capability/CameraCapabilityList;->MIN_AWB_AB_FLOAT:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
 
     invoke-interface {v0, v1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    .line 1164
+    .line 1073
     iget-object v1, p0, Ljp/co/sony/mc/camera/util/capability/CameraCapabilityList;->MAX_AWB_GM_FLOAT:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
 
     invoke-interface {v0, v1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    .line 1165
+    .line 1074
     iget-object v1, p0, Ljp/co/sony/mc/camera/util/capability/CameraCapabilityList;->MIN_AWB_GM_FLOAT:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
 
     invoke-interface {v0, v1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    .line 1166
+    .line 1075
     iget-object v1, p0, Ljp/co/sony/mc/camera/util/capability/CameraCapabilityList;->MAX_AWB_AB:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
 
     invoke-interface {v0, v1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    .line 1167
+    .line 1076
     iget-object v1, p0, Ljp/co/sony/mc/camera/util/capability/CameraCapabilityList;->MIN_AWB_AB:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
 
     invoke-interface {v0, v1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    .line 1168
+    .line 1077
     iget-object v1, p0, Ljp/co/sony/mc/camera/util/capability/CameraCapabilityList;->MAX_AWB_GM:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
 
     invoke-interface {v0, v1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    .line 1169
+    .line 1078
     iget-object v1, p0, Ljp/co/sony/mc/camera/util/capability/CameraCapabilityList;->MIN_AWB_GM:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
 
     invoke-interface {v0, v1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    .line 1170
+    .line 1079
     iget-object v1, p0, Ljp/co/sony/mc/camera/util/capability/CameraCapabilityList;->MACRO_FOCUS_RANGE:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
 
     invoke-interface {v0, v1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    .line 1171
+    .line 1080
     iget-object v1, p0, Ljp/co/sony/mc/camera/util/capability/CameraCapabilityList;->FOCUS_MAGNIFICATION_USE_CASES:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
 
     invoke-interface {v0, v1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    .line 1172
+    .line 1081
     iget-object v1, p0, Ljp/co/sony/mc/camera/util/capability/CameraCapabilityList;->MAX_FOCUS_MAGNIFICATION_RATIO:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
 
     invoke-interface {v0, v1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    .line 1173
-    iget-object v1, p0, Ljp/co/sony/mc/camera/util/capability/CameraCapabilityList;->MANUAL_FOCUS:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
-
-    invoke-interface {v0, v1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
-
-    .line 1174
+    .line 1082
     iget-object v1, p0, Ljp/co/sony/mc/camera/util/capability/CameraCapabilityList;->MAX_SHUTTER_SPEED:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
 
     invoke-interface {v0, v1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    .line 1175
+    .line 1083
     iget-object v1, p0, Ljp/co/sony/mc/camera/util/capability/CameraCapabilityList;->MIN_SHUTTER_SPEED:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
 
     invoke-interface {v0, v1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    .line 1176
+    .line 1084
     iget-object v1, p0, Ljp/co/sony/mc/camera/util/capability/CameraCapabilityList;->POWER_SAVING_MODE:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
 
     invoke-interface {v0, v1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    .line 1177
+    .line 1085
     iget-object v1, p0, Ljp/co/sony/mc/camera/util/capability/CameraCapabilityList;->MIN_SHUTTER_SPEED_LIMIT:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
 
     invoke-interface {v0, v1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    .line 1178
-    iget-object v1, p0, Ljp/co/sony/mc/camera/util/capability/CameraCapabilityList;->LOGICAL_MULTI_CAMERA_OPTICAL_ZOOM:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
-
-    invoke-interface {v0, v1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
-
-    .line 1179
-    iget-object v1, p0, Ljp/co/sony/mc/camera/util/capability/CameraCapabilityList;->LOGICAL_MULTI_CAMERA_BOKEH_SUPPORTED:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
-
-    invoke-interface {v0, v1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
-
-    .line 1180
-    iget-object v1, p0, Ljp/co/sony/mc/camera/util/capability/CameraCapabilityList;->LOGICAL_MULTI_CAMERA_SUPPORTED_BOKEH_FOCAL_LENGTHS:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
-
-    invoke-interface {v0, v1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
-
-    .line 1181
+    .line 1086
     iget-object v1, p0, Ljp/co/sony/mc/camera/util/capability/CameraCapabilityList;->EXTENDED_SCENE_MODES:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
 
     invoke-interface {v0, v1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    .line 1182
+    .line 1087
     iget-object v1, p0, Ljp/co/sony/mc/camera/util/capability/CameraCapabilityList;->SUPER_RESOLUTION_ZOOM:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
 
     invoke-interface {v0, v1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    .line 1183
+    .line 1088
     iget-object v1, p0, Ljp/co/sony/mc/camera/util/capability/CameraCapabilityList;->ACTIVE_ARRAY_SIZE:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
 
     invoke-interface {v0, v1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    .line 1184
-    iget-object v1, p0, Ljp/co/sony/mc/camera/util/capability/CameraCapabilityList;->LENS_FACING:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
-
-    invoke-interface {v0, v1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
-
-    .line 1185
+    .line 1089
     iget-object v1, p0, Ljp/co/sony/mc/camera/util/capability/CameraCapabilityList;->SENSOR_NAME:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
 
     invoke-interface {v0, v1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    .line 1186
+    .line 1090
     iget-object v1, p0, Ljp/co/sony/mc/camera/util/capability/CameraCapabilityList;->HDR_VIDEO_SUPPORTED:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
 
     invoke-interface {v0, v1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    .line 1187
+    .line 1091
     iget-object v1, p0, Ljp/co/sony/mc/camera/util/capability/CameraCapabilityList;->ANDROID_DISTORTION_CORRECTION:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
 
     invoke-interface {v0, v1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    .line 1188
-    iget-object v1, p0, Ljp/co/sony/mc/camera/util/capability/CameraCapabilityList;->SONY_DISTORTION_CORRECTION:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
+    .line 1092
+    iget-object v1, p0, Ljp/co/sony/mc/camera/util/capability/CameraCapabilityList;->VOLUME_DISTORTION_CORRECTION:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
 
     invoke-interface {v0, v1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    .line 1189
+    .line 1093
     iget-object v1, p0, Ljp/co/sony/mc/camera/util/capability/CameraCapabilityList;->USECASE:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
 
     invoke-interface {v0, v1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    .line 1190
+    .line 1094
     iget-object v1, p0, Ljp/co/sony/mc/camera/util/capability/CameraCapabilityList;->VAGUE_CONTROL_MODE:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
 
     invoke-interface {v0, v1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    .line 1191
+    .line 1095
     iget-object v1, p0, Ljp/co/sony/mc/camera/util/capability/CameraCapabilityList;->HIGH_QUALITY_SNAPSHOT_MODE:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
 
     invoke-interface {v0, v1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    .line 1192
+    .line 1096
     iget-object v1, p0, Ljp/co/sony/mc/camera/util/capability/CameraCapabilityList;->VIDEO_STABILIZATION_MODE:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
 
     invoke-interface {v0, v1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    .line 1193
+    .line 1097
     iget-object v1, p0, Ljp/co/sony/mc/camera/util/capability/CameraCapabilityList;->HIGH_SPEED_VIDEO_CONFIGURATION:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
 
     invoke-interface {v0, v1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    .line 1194
+    .line 1098
     iget-object v1, p0, Ljp/co/sony/mc/camera/util/capability/CameraCapabilityList;->OPTICAL_STABILIZATION:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
 
     invoke-interface {v0, v1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    .line 1195
-    iget-object v1, p0, Ljp/co/sony/mc/camera/util/capability/CameraCapabilityList;->TRACKING_BURST_SUPPORTED:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
-
-    invoke-interface {v0, v1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
-
-    .line 1196
+    .line 1099
     iget-object v1, p0, Ljp/co/sony/mc/camera/util/capability/CameraCapabilityList;->DISPLAY_FLASH_LIGHT_SHIELDING_RECT:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
 
     invoke-interface {v0, v1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    .line 1197
+    .line 1100
     iget-object v1, p0, Ljp/co/sony/mc/camera/util/capability/CameraCapabilityList;->DISPLAY_FLASH_LIGHT_SHIELDING_COLOR:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
 
     invoke-interface {v0, v1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    .line 1198
+    .line 1101
     iget-object v1, p0, Ljp/co/sony/mc/camera/util/capability/CameraCapabilityList;->MULTI_FRAME_NR_MODE:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
 
     invoke-interface {v0, v1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    .line 1199
-    iget-object v1, p0, Ljp/co/sony/mc/camera/util/capability/CameraCapabilityList;->ANDROID_FOCAL_LENGTH:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
-
-    invoke-interface {v0, v1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
-
-    .line 1200
-    iget-object v1, p0, Ljp/co/sony/mc/camera/util/capability/CameraCapabilityList;->SONY_FOCAL_LENGTH:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
-
-    invoke-interface {v0, v1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
-
-    .line 1201
+    .line 1102
     iget-object v1, p0, Ljp/co/sony/mc/camera/util/capability/CameraCapabilityList;->APERTURE:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
 
     invoke-interface {v0, v1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    .line 1202
+    .line 1103
     iget-object v1, p0, Ljp/co/sony/mc/camera/util/capability/CameraCapabilityList;->HISTOGRAM:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
 
     invoke-interface {v0, v1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    .line 1203
+    .line 1104
     iget-object v1, p0, Ljp/co/sony/mc/camera/util/capability/CameraCapabilityList;->HISTOGRAM_BUCKET_COUNT:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
 
     invoke-interface {v0, v1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    .line 1204
+    .line 1105
     iget-object v1, p0, Ljp/co/sony/mc/camera/util/capability/CameraCapabilityList;->MAX_HISTOGRAM_COUNT:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
 
     invoke-interface {v0, v1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    .line 1205
+    .line 1106
     iget-object v1, p0, Ljp/co/sony/mc/camera/util/capability/CameraCapabilityList;->AWB_PRIORITY:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
 
     invoke-interface {v0, v1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    .line 1206
+    .line 1107
     iget-object v1, p0, Ljp/co/sony/mc/camera/util/capability/CameraCapabilityList;->AF_DRIVE_MODE:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
 
     invoke-interface {v0, v1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    .line 1207
+    .line 1108
     iget-object v1, p0, Ljp/co/sony/mc/camera/util/capability/CameraCapabilityList;->BURST_FPS:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
 
     invoke-interface {v0, v1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    .line 1208
+    .line 1109
     iget-object v1, p0, Ljp/co/sony/mc/camera/util/capability/CameraCapabilityList;->HDR_BURST_FPS:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
 
     invoke-interface {v0, v1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    .line 1209
+    .line 1110
     iget-object v1, p0, Ljp/co/sony/mc/camera/util/capability/CameraCapabilityList;->BOKEH_BURST_FPS:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
 
     invoke-interface {v0, v1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    .line 1210
+    .line 1111
     iget-object v1, p0, Ljp/co/sony/mc/camera/util/capability/CameraCapabilityList;->NORMAL_BURST_MAX_QUEUEING_NUM:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
 
     invoke-interface {v0, v1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    .line 1211
+    .line 1112
     iget-object v1, p0, Ljp/co/sony/mc/camera/util/capability/CameraCapabilityList;->BOKEH_BURST_MAX_QUEUEING_NUM:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
 
     invoke-interface {v0, v1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    .line 1212
+    .line 1113
     iget-object v1, p0, Ljp/co/sony/mc/camera/util/capability/CameraCapabilityList;->HDR_BURST_MAX_QUEUEING_NUM:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
 
     invoke-interface {v0, v1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    .line 1213
+    .line 1114
     iget-object v1, p0, Ljp/co/sony/mc/camera/util/capability/CameraCapabilityList;->PREVIEW_FPS_MAP:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
 
     invoke-interface {v0, v1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    .line 1214
+    .line 1115
     iget-object v1, p0, Ljp/co/sony/mc/camera/util/capability/CameraCapabilityList;->MAX_PREVIEW_FPS:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
 
     invoke-interface {v0, v1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    .line 1215
+    .line 1116
     iget-object v1, p0, Ljp/co/sony/mc/camera/util/capability/CameraCapabilityList;->RAW_CAPABILITY:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
 
     invoke-interface {v0, v1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    .line 1216
+    .line 1117
     iget-object v1, p0, Ljp/co/sony/mc/camera/util/capability/CameraCapabilityList;->RAW_PICTURE_SIZE:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
 
     invoke-interface {v0, v1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    .line 1217
+    .line 1118
     iget-object v1, p0, Ljp/co/sony/mc/camera/util/capability/CameraCapabilityList;->PRECISE_FOCUS_AREA:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
 
     invoke-interface {v0, v1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    .line 1218
+    .line 1119
     iget-object v1, p0, Ljp/co/sony/mc/camera/util/capability/CameraCapabilityList;->YUV_DRAW_FRAME_MODE:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
 
     invoke-interface {v0, v1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    .line 1219
+    .line 1120
     iget-object v1, p0, Ljp/co/sony/mc/camera/util/capability/CameraCapabilityList;->MIN_FRAME_DURATION:Ljp/co/sony/mc/camera/util/capability/MinimumDurationConfigurationListCapabilityItem;
 
     invoke-interface {v0, v1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    .line 1220
+    .line 1121
     iget-object v1, p0, Ljp/co/sony/mc/camera/util/capability/CameraCapabilityList;->MAX_FRAME_DURATION:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
 
     invoke-interface {v0, v1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    .line 1221
-    iget-object v1, p0, Ljp/co/sony/mc/camera/util/capability/CameraCapabilityList;->MIN_HYBRID_ZOOM_FRAME_DURATION:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
-
-    invoke-interface {v0, v1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
-
-    .line 1222
+    .line 1122
     iget-object v1, p0, Ljp/co/sony/mc/camera/util/capability/CameraCapabilityList;->MULTI_FRAME_HDR_MODE:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
 
     invoke-interface {v0, v1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    .line 1223
+    .line 1123
     iget-object v1, p0, Ljp/co/sony/mc/camera/util/capability/CameraCapabilityList;->PEAKING_MODE:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
 
     invoke-interface {v0, v1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    .line 1224
+    .line 1124
     iget-object v1, p0, Ljp/co/sony/mc/camera/util/capability/CameraCapabilityList;->COLOR_TONE_PROFILE:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
 
     invoke-interface {v0, v1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    .line 1225
+    .line 1125
     iget-object v1, p0, Ljp/co/sony/mc/camera/util/capability/CameraCapabilityList;->PRODUCT_SHOWCASE_MODE:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
 
     invoke-interface {v0, v1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    .line 1226
+    .line 1126
     iget-object v1, p0, Ljp/co/sony/mc/camera/util/capability/CameraCapabilityList;->LOW_LIGHT_MODE:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
 
     invoke-interface {v0, v1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    .line 1227
+    .line 1127
     iget-object v1, p0, Ljp/co/sony/mc/camera/util/capability/CameraCapabilityList;->HYBRID_ZOOM_MODE:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
 
     invoke-interface {v0, v1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    .line 1228
+    .line 1128
     iget-object v1, p0, Ljp/co/sony/mc/camera/util/capability/CameraCapabilityList;->CONTROL_FPS:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
 
     invoke-interface {v0, v1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    .line 1229
-    iget-object v1, p0, Ljp/co/sony/mc/camera/util/capability/CameraCapabilityList;->HYBRID_ZOOM_MIN_FRAME_DURATION:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
-
-    invoke-interface {v0, v1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
-
-    .line 1230
+    .line 1129
     iget-object v1, p0, Ljp/co/sony/mc/camera/util/capability/CameraCapabilityList;->FALLBACK_MODE:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
 
     invoke-interface {v0, v1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    .line 1231
+    .line 1130
     iget-object v1, p0, Ljp/co/sony/mc/camera/util/capability/CameraCapabilityList;->CLOSE_UP_MODE:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
 
     invoke-interface {v0, v1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    .line 1232
+    .line 1131
     iget-object v1, p0, Ljp/co/sony/mc/camera/util/capability/CameraCapabilityList;->VIDEO_STREAM_ORIENTATION:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
 
     invoke-interface {v0, v1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    .line 1233
-    iget-object p0, p0, Ljp/co/sony/mc/camera/util/capability/CameraCapabilityList;->SENSITIVITY_SMOOTHING_MODE:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
+    .line 1132
+    iget-object v1, p0, Ljp/co/sony/mc/camera/util/capability/CameraCapabilityList;->SENSITIVITY_SMOOTHING_MODE:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
+
+    invoke-interface {v0, v1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
+
+    .line 1133
+    iget-object v1, p0, Ljp/co/sony/mc/camera/util/capability/CameraCapabilityList;->AUTO_FRAMING_MODE:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
+
+    invoke-interface {v0, v1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
+
+    .line 1134
+    iget-object v1, p0, Ljp/co/sony/mc/camera/util/capability/CameraCapabilityList;->AUTO_FRAMING_VIDEO_CONFIGURATION_MAP:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
+
+    invoke-interface {v0, v1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
+
+    .line 1135
+    iget-object p0, p0, Ljp/co/sony/mc/camera/util/capability/CameraCapabilityList;->FRAMING_ASSIST_POSITION_MODE:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
 
     invoke-interface {v0, p0}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
@@ -5478,7 +5023,7 @@
 .method private getResolutionOptions(Landroid/content/Context;)Ljp/co/sony/mc/camera/util/capability/ResolutionOptions;
     .locals 3
 
-    .line 1242
+    .line 1144
     new-instance v0, Ljp/co/sony/mc/camera/util/capability/ResolutionOptions;
 
     iget-object v1, p0, Ljp/co/sony/mc/camera/util/capability/CameraCapabilityList;->SENSOR_NAME:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
@@ -5499,7 +5044,7 @@
 
     iget-object p0, p0, Ljp/co/sony/mc/camera/util/capability/CameraCapabilityList;->HIGH_RESOLUTION_SUPPORTED_PICTURE_SIZE:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
 
-    .line 1243
+    .line 1145
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/util/capability/CapabilityItem;->get()Ljava/lang/Object;
 
     move-result-object p0
@@ -5524,7 +5069,7 @@
         }
     .end annotation
 
-    .line 1238
+    .line 1140
     iget-object p0, p0, Ljp/co/sony/mc/camera/util/capability/CameraCapabilityList;->mValues:Ljava/util/List;
 
     return-object p0

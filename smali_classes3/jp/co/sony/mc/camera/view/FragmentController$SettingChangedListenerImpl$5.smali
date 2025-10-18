@@ -25,7 +25,7 @@
 .method constructor <init>(Ljp/co/sony/mc/camera/view/FragmentController$SettingChangedListenerImpl;)V
     .locals 0
 
-    .line 5222
+    .line 5396
     iput-object p1, p0, Ljp/co/sony/mc/camera/view/FragmentController$SettingChangedListenerImpl$5;->this$1:Ljp/co/sony/mc/camera/view/FragmentController$SettingChangedListenerImpl;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -38,7 +38,7 @@
 .method public run()V
     .locals 2
 
-    .line 5225
+    .line 5399
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/FragmentController$SettingChangedListenerImpl$5;->this$1:Ljp/co/sony/mc/camera/view/FragmentController$SettingChangedListenerImpl;
 
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/FragmentController$SettingChangedListenerImpl;->this$0:Ljp/co/sony/mc/camera/view/FragmentController;
@@ -47,7 +47,7 @@
 
     move-result-object p0
 
-    .line 5226
+    .line 5400
     invoke-static {}, Ljp/co/sony/mc/camera/setting/CameraProSetting;->getInstance()Ljp/co/sony/mc/camera/setting/CameraProSetting;
 
     move-result-object v0
@@ -60,7 +60,7 @@
 
     check-cast v0, Ljava/lang/String;
 
-    .line 5225
+    .line 5399
     invoke-interface {p0, v0}, Ljp/co/sony/mc/camera/view/CameraEventListener;->onRtmpStreamUrlSettingChanged(Ljava/lang/String;)V
 
     return-void

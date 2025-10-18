@@ -3,7 +3,7 @@
 .source "D8$$SyntheticClass"
 
 # interfaces
-.implements Landroid/view/View$OnKeyListener;
+.implements Lkotlin/jvm/functions/Function1;
 
 
 # instance fields
@@ -24,15 +24,17 @@
 
 
 # virtual methods
-.method public final onKey(Landroid/view/View;ILandroid/view/KeyEvent;)Z
+.method public final invoke(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
 
     .line 0
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/viewbinder/BasicFinderOverlayViewBinder$$ExternalSyntheticLambda3;->f$0:Ljp/co/sony/mc/camera/view/viewbinder/BasicFinderOverlayViewBinder;
 
-    invoke-static {p0, p1, p2, p3}, Ljp/co/sony/mc/camera/view/viewbinder/BasicFinderOverlayViewBinder;->$r8$lambda$crBRDsWI8qPM0tRCcX-dL6S3jlI(Ljp/co/sony/mc/camera/view/viewbinder/BasicFinderOverlayViewBinder;Landroid/view/View;ILandroid/view/KeyEvent;)Z
+    check-cast p1, Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;
 
-    move-result p0
+    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/view/viewbinder/BasicFinderOverlayViewBinder;->$r8$lambda$hH31QqjkYs6i0FbNisk9NdGQwsk(Ljp/co/sony/mc/camera/view/viewbinder/BasicFinderOverlayViewBinder;Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;)Lkotlin/Unit;
 
-    return p0
+    move-result-object p0
+
+    return-object p0
 .end method

@@ -24,7 +24,7 @@
 
 .field public static final enum WHITE:Ljp/co/sony/mc/camera/configuration/parameters/FocusFrameColor;
 
-.field private static final sParameterTextId:I = 0x7f110246
+.field private static final sParameterTextId:I = 0x7f11024a
 
 
 # instance fields
@@ -55,9 +55,9 @@
     .line 20
     new-instance v0, Ljp/co/sony/mc/camera/configuration/parameters/FocusFrameColor;
 
-    const v1, 0x7f0801d6
+    const v1, 0x7f0801db
 
-    const v2, 0x7f110247
+    const v2, 0x7f11024b
 
     const-string v3, "WHITE"
 
@@ -70,9 +70,9 @@
     .line 24
     new-instance v0, Ljp/co/sony/mc/camera/configuration/parameters/FocusFrameColor;
 
-    const v1, 0x7f0801d5
+    const v1, 0x7f0801da
 
-    const v2, 0x7f110245
+    const v2, 0x7f110249
 
     const-string v3, "RED"
 

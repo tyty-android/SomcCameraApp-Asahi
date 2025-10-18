@@ -33,7 +33,7 @@
 .method public bridge synthetic onValueChange(Ljava/lang/Object;FZ)V
     .locals 0
 
-    .line 45
+    .line 50
     check-cast p1, Lcom/google/android/material/slider/Slider;
 
     invoke-interface {p0, p1, p2, p3}, Lcom/google/android/material/slider/Slider$OnChangeListener;->onValueChange(Lcom/google/android/material/slider/Slider;FZ)V

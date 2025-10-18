@@ -61,16 +61,16 @@
 
     invoke-static {p2, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 382
+    .line 351
     invoke-direct {p0}, Landroidx/lifecycle/LifecycleCoroutineScope;-><init>()V
 
-    .line 380
+    .line 349
     iput-object p1, p0, Landroidx/lifecycle/LifecycleCoroutineScopeImpl;->lifecycle:Landroidx/lifecycle/Lifecycle;
 
-    .line 381
+    .line 350
     iput-object p2, p0, Landroidx/lifecycle/LifecycleCoroutineScopeImpl;->coroutineContext:Lkotlin/coroutines/CoroutineContext;
 
-    .line 387
+    .line 356
     invoke-virtual {p0}, Landroidx/lifecycle/LifecycleCoroutineScopeImpl;->getLifecycle$lifecycle_common()Landroidx/lifecycle/Lifecycle;
 
     move-result-object p1
@@ -83,7 +83,7 @@
 
     if-ne p1, p2, :cond_0
 
-    .line 388
+    .line 357
     invoke-virtual {p0}, Landroidx/lifecycle/LifecycleCoroutineScopeImpl;->getCoroutineContext()Lkotlin/coroutines/CoroutineContext;
 
     move-result-object p0
@@ -103,7 +103,7 @@
 .method public getCoroutineContext()Lkotlin/coroutines/CoroutineContext;
     .locals 0
 
-    .line 381
+    .line 350
     iget-object p0, p0, Landroidx/lifecycle/LifecycleCoroutineScopeImpl;->coroutineContext:Lkotlin/coroutines/CoroutineContext;
 
     return-object p0
@@ -112,7 +112,7 @@
 .method public getLifecycle$lifecycle_common()Landroidx/lifecycle/Lifecycle;
     .locals 0
 
-    .line 380
+    .line 349
     iget-object p0, p0, Landroidx/lifecycle/LifecycleCoroutineScopeImpl;->lifecycle:Landroidx/lifecycle/Lifecycle;
 
     return-object p0
@@ -129,7 +129,7 @@
 
     invoke-static {p2, p1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 403
+    .line 372
     invoke-virtual {p0}, Landroidx/lifecycle/LifecycleCoroutineScopeImpl;->getLifecycle$lifecycle_common()Landroidx/lifecycle/Lifecycle;
 
     move-result-object p1
@@ -148,7 +148,7 @@
 
     if-gtz p1, :cond_0
 
-    .line 404
+    .line 373
     invoke-virtual {p0}, Landroidx/lifecycle/LifecycleCoroutineScopeImpl;->getLifecycle$lifecycle_common()Landroidx/lifecycle/Lifecycle;
 
     move-result-object p1
@@ -159,7 +159,7 @@
 
     invoke-virtual {p1, p2}, Landroidx/lifecycle/Lifecycle;->removeObserver(Landroidx/lifecycle/LifecycleObserver;)V
 
-    .line 405
+    .line 374
     invoke-virtual {p0}, Landroidx/lifecycle/LifecycleCoroutineScopeImpl;->getCoroutineContext()Lkotlin/coroutines/CoroutineContext;
 
     move-result-object p0
@@ -177,7 +177,7 @@
 .method public final register()V
     .locals 6
 
-    .line 393
+    .line 362
     move-object v0, p0
 
     check-cast v0, Lkotlinx/coroutines/CoroutineScope;

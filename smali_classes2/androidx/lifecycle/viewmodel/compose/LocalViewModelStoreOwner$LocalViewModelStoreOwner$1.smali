@@ -84,7 +84,7 @@
 .method public bridge synthetic invoke()Ljava/lang/Object;
     .locals 0
 
-    .line 32
+    .line 30
     invoke-virtual {p0}, Landroidx/lifecycle/viewmodel/compose/LocalViewModelStoreOwner$LocalViewModelStoreOwner$1;->invoke()Landroidx/lifecycle/ViewModelStoreOwner;
 
     move-result-object p0

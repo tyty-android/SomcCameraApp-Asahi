@@ -237,7 +237,7 @@
 .end method
 
 .method invokeSubscriberMethod(Ljava/lang/Object;)V
-    .locals 4
+    .locals 3
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/reflect/InvocationTargetException;
@@ -250,17 +250,13 @@
 
     iget-object p0, p0, Lcom/google/common/eventbus/Subscriber;->target:Ljava/lang/Object;
 
-    const/4 v1, 0x1
-
-    new-array v1, v1, [Ljava/lang/Object;
-
     invoke-static {p1}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
-    move-result-object v2
+    move-result-object v1
 
-    const/4 v3, 0x0
+    filled-new-array {v1}, [Ljava/lang/Object;
 
-    aput-object v2, v1, v3
+    move-result-object v1
 
     invoke-virtual {v0, p0, v1}, Ljava/lang/reflect/Method;->invoke(Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;
     :try_end_0

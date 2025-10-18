@@ -22,7 +22,7 @@
 .method static constructor <clinit>()V
     .locals 3
 
-    .line 1035
+    .line 1071
     invoke-static {}, Ljp/co/sony/mc/camera/recorder/RecorderController$Result;->values()[Ljp/co/sony/mc/camera/recorder/RecorderController$Result;
 
     move-result-object v0

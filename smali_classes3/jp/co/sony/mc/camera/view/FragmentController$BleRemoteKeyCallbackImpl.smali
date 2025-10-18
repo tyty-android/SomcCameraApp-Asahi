@@ -73,24 +73,24 @@
 .method private constructor <init>(Ljp/co/sony/mc/camera/view/FragmentController;)V
     .locals 0
 
-    .line 8665
+    .line 8949
     iput-object p1, p0, Ljp/co/sony/mc/camera/view/FragmentController$BleRemoteKeyCallbackImpl;->this$0:Ljp/co/sony/mc/camera/view/FragmentController;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     const/4 p1, 0x0
 
-    .line 8667
+    .line 8951
     iput-object p1, p0, Ljp/co/sony/mc/camera/view/FragmentController$BleRemoteKeyCallbackImpl;->mCurrentKeyCode:Lcom/sonymobile/camera/bleremotecontrol/RemoconManager$BleRemoteKeyEvents;
 
     const/4 p1, 0x0
 
-    .line 8668
+    .line 8952
     iput p1, p0, Ljp/co/sony/mc/camera/view/FragmentController$BleRemoteKeyCallbackImpl;->mCurrentKeyLevel:I
 
     const/4 p1, 0x1
 
-    .line 8669
+    .line 8953
     iput-boolean p1, p0, Ljp/co/sony/mc/camera/view/FragmentController$BleRemoteKeyCallbackImpl;->mIsKeyEnabled:Z
 
     return-void
@@ -107,7 +107,7 @@
 .method private canAcceptOtherEvent()Z
     .locals 2
 
-    .line 9052
+    .line 9337
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/FragmentController$BleRemoteKeyCallbackImpl;->mCurrentKeyCode:Lcom/sonymobile/camera/bleremotecontrol/RemoconManager$BleRemoteKeyEvents;
 
     const/4 v1, 0x1
@@ -116,7 +116,7 @@
 
     return v1
 
-    .line 9056
+    .line 9341
     :cond_0
     sget-object v0, Ljp/co/sony/mc/camera/view/FragmentController$26;->$SwitchMap$com$sonymobile$camera$bleremotecontrol$RemoconManager$BleRemoteKeyEvents:[I
 
@@ -157,17 +157,17 @@
 .method private clearKeyCode()V
     .locals 2
 
-    .line 9039
+    .line 9324
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/FragmentController$BleRemoteKeyCallbackImpl;->mCurrentKeyCode:Lcom/sonymobile/camera/bleremotecontrol/RemoconManager$BleRemoteKeyEvents;
 
     if-eqz v0, :cond_1
 
-    .line 9040
+    .line 9325
     sget-object v1, Lcom/sonymobile/camera/bleremotecontrol/RemoconManager$BleRemoteKeyEvents;->KEY_CODE_S2:Lcom/sonymobile/camera/bleremotecontrol/RemoconManager$BleRemoteKeyEvents;
 
     if-ne v0, v1, :cond_0
 
-    .line 9041
+    .line 9326
     sget-object v0, Lcom/sonymobile/camera/bleremotecontrol/RemoconManager$BleRemoteKeyEvents;->KEY_CODE_S2:Lcom/sonymobile/camera/bleremotecontrol/RemoconManager$BleRemoteKeyEvents;
 
     iget v1, p0, Ljp/co/sony/mc/camera/view/FragmentController$BleRemoteKeyCallbackImpl;->mCurrentKeyLevel:I
@@ -178,7 +178,7 @@
 
     invoke-virtual {p0, v0, v1}, Ljp/co/sony/mc/camera/view/FragmentController$BleRemoteKeyCallbackImpl;->onKeyUp(Lcom/sonymobile/camera/bleremotecontrol/RemoconManager$BleRemoteKeyEvents;Ljava/lang/Integer;)V
 
-    .line 9042
+    .line 9327
     sget-object v0, Lcom/sonymobile/camera/bleremotecontrol/RemoconManager$BleRemoteKeyEvents;->KEY_CODE_S1:Lcom/sonymobile/camera/bleremotecontrol/RemoconManager$BleRemoteKeyEvents;
 
     iget v1, p0, Ljp/co/sony/mc/camera/view/FragmentController$BleRemoteKeyCallbackImpl;->mCurrentKeyLevel:I
@@ -191,7 +191,7 @@
 
     goto :goto_0
 
-    .line 9044
+    .line 9329
     :cond_0
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/FragmentController$BleRemoteKeyCallbackImpl;->mCurrentKeyCode:Lcom/sonymobile/camera/bleremotecontrol/RemoconManager$BleRemoteKeyEvents;
 
@@ -206,12 +206,12 @@
     :goto_0
     const/4 v0, 0x0
 
-    .line 9046
+    .line 9331
     iput-object v0, p0, Ljp/co/sony/mc/camera/view/FragmentController$BleRemoteKeyCallbackImpl;->mCurrentKeyCode:Lcom/sonymobile/camera/bleremotecontrol/RemoconManager$BleRemoteKeyEvents;
 
     const/4 v0, 0x0
 
-    .line 9047
+    .line 9332
     iput v0, p0, Ljp/co/sony/mc/camera/view/FragmentController$BleRemoteKeyCallbackImpl;->mCurrentKeyLevel:I
 
     :cond_1
@@ -221,22 +221,22 @@
 .method private isAcceptableKeyEvent(Lcom/sonymobile/camera/bleremotecontrol/RemoconManager$BleRemoteKeyEvents;)Z
     .locals 9
 
-    .line 8925
+    .line 9209
     invoke-static {}, Ljp/co/sony/mc/camera/setting/CameraProSetting;->getInstance()Ljp/co/sony/mc/camera/setting/CameraProSetting;
 
     move-result-object v0
 
-    .line 8926
+    .line 9210
     invoke-virtual {v0}, Ljp/co/sony/mc/camera/setting/CameraProSetting;->getCurrentCapturingMode()Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
     move-result-object v1
 
-    .line 8927
+    .line 9211
     invoke-virtual {v0}, Ljp/co/sony/mc/camera/setting/CameraProSetting;->getCurrentCameraId()Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;
 
     move-result-object v2
 
-    .line 8928
+    .line 9212
     sget-object v3, Ljp/co/sony/mc/camera/setting/CameraSettings;->VIDEO_MF_HDR:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
 
     invoke-virtual {v0, v3}, Ljp/co/sony/mc/camera/setting/CameraProSetting;->get(Ljp/co/sony/mc/camera/setting/SettingKey$Key;)Ljava/lang/Object;
@@ -245,7 +245,7 @@
 
     check-cast v3, Ljp/co/sony/mc/camera/configuration/parameters/VideoMfHdr;
 
-    .line 8929
+    .line 9213
     sget-object v4, Ljp/co/sony/mc/camera/setting/CommonSettings;->REMOTE_BUTTON_CUSTOM:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
 
     invoke-virtual {v0, v4}, Ljp/co/sony/mc/camera/setting/CameraProSetting;->get(Ljp/co/sony/mc/camera/setting/SettingKey$Key;)Ljava/lang/Object;
@@ -254,7 +254,7 @@
 
     check-cast v4, Ljp/co/sony/mc/camera/configuration/parameters/RemoteButtonCustom;
 
-    .line 8930
+    .line 9214
     iget-object v5, p0, Ljp/co/sony/mc/camera/view/FragmentController$BleRemoteKeyCallbackImpl;->this$0:Ljp/co/sony/mc/camera/view/FragmentController;
 
     invoke-static {v5}, Ljp/co/sony/mc/camera/view/FragmentController;->-$$Nest$misInputDialogOpened(Ljp/co/sony/mc/camera/view/FragmentController;)Z
@@ -267,7 +267,7 @@
 
     return v6
 
-    .line 8933
+    .line 9217
     :cond_0
     iget-object v5, p0, Ljp/co/sony/mc/camera/view/FragmentController$BleRemoteKeyCallbackImpl;->this$0:Ljp/co/sony/mc/camera/view/FragmentController;
 
@@ -279,7 +279,7 @@
 
     return v6
 
-    .line 8936
+    .line 9220
     :cond_1
     iget-object v5, p0, Ljp/co/sony/mc/camera/view/FragmentController$BleRemoteKeyCallbackImpl;->this$0:Ljp/co/sony/mc/camera/view/FragmentController;
 
@@ -291,7 +291,7 @@
 
     return v6
 
-    .line 8939
+    .line 9223
     :cond_2
     sget-object v5, Lcom/sonymobile/camera/bleremotecontrol/RemoconManager$BleRemoteKeyEvents;->KEY_CODE_S1:Lcom/sonymobile/camera/bleremotecontrol/RemoconManager$BleRemoteKeyEvents;
 
@@ -305,13 +305,13 @@
 
     goto/16 :goto_1
 
-    .line 8947
+    .line 9231
     :cond_3
     sget-object v5, Lcom/sonymobile/camera/bleremotecontrol/RemoconManager$BleRemoteKeyEvents;->KEY_CODE_REC:Lcom/sonymobile/camera/bleremotecontrol/RemoconManager$BleRemoteKeyEvents;
 
     if-ne p1, v5, :cond_5
 
-    .line 8948
+    .line 9232
     invoke-virtual {v1}, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->isVideo()Z
 
     move-result p0
@@ -323,7 +323,7 @@
     :cond_4
     return v6
 
-    .line 8954
+    .line 9238
     :cond_5
     iget-object v5, p0, Ljp/co/sony/mc/camera/view/FragmentController$BleRemoteKeyCallbackImpl;->this$0:Ljp/co/sony/mc/camera/view/FragmentController;
 
@@ -335,7 +335,7 @@
 
     return v6
 
-    .line 8957
+    .line 9241
     :cond_6
     sget-object v5, Lcom/sonymobile/camera/bleremotecontrol/RemoconManager$BleRemoteKeyEvents;->KEY_CODE_ZOOM_PLUS:Lcom/sonymobile/camera/bleremotecontrol/RemoconManager$BleRemoteKeyEvents;
 
@@ -347,7 +347,7 @@
 
     goto/16 :goto_0
 
-    .line 8961
+    .line 9245
     :cond_7
     sget-object v5, Lcom/sonymobile/camera/bleremotecontrol/RemoconManager$BleRemoteKeyEvents;->KEY_CODE_C1:Lcom/sonymobile/camera/bleremotecontrol/RemoconManager$BleRemoteKeyEvents;
 
@@ -357,7 +357,7 @@
 
     if-ne v4, v5, :cond_8
 
-    .line 8962
+    .line 9246
     invoke-virtual {v1}, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->isSlowMotion()Z
 
     move-result v5
@@ -366,7 +366,7 @@
 
     return v6
 
-    .line 8965
+    .line 9249
     :cond_8
     iget-boolean v5, p0, Ljp/co/sony/mc/camera/view/FragmentController$BleRemoteKeyCallbackImpl;->mIsKeyEnabled:Z
 
@@ -374,7 +374,7 @@
 
     return v6
 
-    .line 8968
+    .line 9252
     :cond_9
     iget-object v5, p0, Ljp/co/sony/mc/camera/view/FragmentController$BleRemoteKeyCallbackImpl;->this$0:Ljp/co/sony/mc/camera/view/FragmentController;
 
@@ -386,7 +386,7 @@
 
     return v6
 
-    .line 8971
+    .line 9255
     :cond_a
     iget-object v5, p0, Ljp/co/sony/mc/camera/view/FragmentController$BleRemoteKeyCallbackImpl;->this$0:Ljp/co/sony/mc/camera/view/FragmentController;
 
@@ -398,7 +398,7 @@
 
     return v6
 
-    .line 8974
+    .line 9258
     :cond_b
     sget-object v5, Ljp/co/sony/mc/camera/setting/CameraSettings;->FOCUS_MODE:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
 
@@ -421,7 +421,7 @@
     :cond_c
     return v6
 
-    .line 8979
+    .line 9263
     :cond_d
     sget-object v5, Ljp/co/sony/mc/camera/setting/CameraSettings;->FOCUS_MODE:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
 
@@ -439,7 +439,7 @@
 
     return v6
 
-    .line 8983
+    .line 9267
     :cond_e
     sget-object v5, Lcom/sonymobile/camera/bleremotecontrol/RemoconManager$BleRemoteKeyEvents;->KEY_CODE_AF_ON:Lcom/sonymobile/camera/bleremotecontrol/RemoconManager$BleRemoteKeyEvents;
 
@@ -457,7 +457,7 @@
 
     return v6
 
-    .line 8987
+    .line 9271
     :cond_f
     sget-object v5, Lcom/sonymobile/camera/bleremotecontrol/RemoconManager$BleRemoteKeyEvents;->KEY_CODE_AF_ON:Lcom/sonymobile/camera/bleremotecontrol/RemoconManager$BleRemoteKeyEvents;
 
@@ -471,7 +471,7 @@
 
     return v6
 
-    .line 8990
+    .line 9274
     :cond_10
     iget-object v5, p0, Ljp/co/sony/mc/camera/view/FragmentController$BleRemoteKeyCallbackImpl;->this$0:Ljp/co/sony/mc/camera/view/FragmentController;
 
@@ -481,7 +481,7 @@
 
     if-eqz v5, :cond_13
 
-    .line 8991
+    .line 9275
     iget-object v5, p0, Ljp/co/sony/mc/camera/view/FragmentController$BleRemoteKeyCallbackImpl;->this$0:Ljp/co/sony/mc/camera/view/FragmentController;
 
     invoke-static {v5}, Ljp/co/sony/mc/camera/view/FragmentController;->-$$Nest$fgetmIsBurstPostProcessing(Ljp/co/sony/mc/camera/view/FragmentController;)Z
@@ -490,19 +490,19 @@
 
     if-eqz v5, :cond_12
 
-    .line 8992
+    .line 9276
     sget-object v5, Lcom/sonymobile/camera/bleremotecontrol/RemoconManager$BleRemoteKeyEvents;->KEY_CODE_C1:Lcom/sonymobile/camera/bleremotecontrol/RemoconManager$BleRemoteKeyEvents;
 
     if-ne p1, v5, :cond_11
 
-    .line 8993
+    .line 9277
     sget-object v5, Ljp/co/sony/mc/camera/configuration/parameters/RemoteButtonCustom;->FOCUS_MODE:Ljp/co/sony/mc/camera/configuration/parameters/RemoteButtonCustom;
 
     if-eq v4, v5, :cond_13
 
     return v6
 
-    .line 8996
+    .line 9280
     :cond_11
     sget-object v5, Lcom/sonymobile/camera/bleremotecontrol/RemoconManager$BleRemoteKeyEvents;->KEY_CODE_AF_ON:Lcom/sonymobile/camera/bleremotecontrol/RemoconManager$BleRemoteKeyEvents;
 
@@ -519,7 +519,7 @@
     :cond_12
     return v6
 
-    .line 9005
+    .line 9289
     :cond_13
     iget-object v5, p0, Ljp/co/sony/mc/camera/view/FragmentController$BleRemoteKeyCallbackImpl;->this$0:Ljp/co/sony/mc/camera/view/FragmentController;
 
@@ -529,7 +529,7 @@
 
     if-nez v5, :cond_17
 
-    .line 9006
+    .line 9290
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/FragmentController$BleRemoteKeyCallbackImpl;->this$0:Ljp/co/sony/mc/camera/view/FragmentController;
 
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/view/FragmentController;->isInRecording()Z
@@ -538,7 +538,7 @@
 
     if-eqz p0, :cond_16
 
-    .line 9007
+    .line 9291
     sget-object p0, Lcom/sonymobile/camera/bleremotecontrol/RemoconManager$BleRemoteKeyEvents;->KEY_CODE_FOCUS_PLUS:Lcom/sonymobile/camera/bleremotecontrol/RemoconManager$BleRemoteKeyEvents;
 
     if-eq p1, p0, :cond_17
@@ -549,18 +549,18 @@
 
     goto :goto_0
 
-    .line 9010
+    .line 9294
     :cond_14
     sget-object p0, Lcom/sonymobile/camera/bleremotecontrol/RemoconManager$BleRemoteKeyEvents;->KEY_CODE_C1:Lcom/sonymobile/camera/bleremotecontrol/RemoconManager$BleRemoteKeyEvents;
 
     if-ne p1, p0, :cond_16
 
-    .line 9014
+    .line 9298
     sget-object p0, Ljp/co/sony/mc/camera/configuration/parameters/RemoteButtonCustom;->FOCAL_LENGTH:Ljp/co/sony/mc/camera/configuration/parameters/RemoteButtonCustom;
 
     if-ne v4, p0, :cond_16
 
-    .line 9015
+    .line 9299
     invoke-virtual {v1}, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->isSeamlessZoom()Z
 
     move-result p0
@@ -569,7 +569,7 @@
 
     goto :goto_0
 
-    .line 9017
+    .line 9301
     :cond_15
     sget-object p0, Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;->TELE_PHYSICAL:Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;
 
@@ -577,7 +577,7 @@
 
     sget-object p0, Ljp/co/sony/mc/camera/setting/CameraSettings;->CAPTURE_FPS:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
 
-    .line 9020
+    .line 9304
     invoke-virtual {v0, p0}, Ljp/co/sony/mc/camera/setting/CameraProSetting;->get(Ljp/co/sony/mc/camera/setting/SettingKey$Key;)Ljava/lang/Object;
 
     move-result-object p0
@@ -588,8 +588,17 @@
 
     move-result p0
 
-    .line 9018
-    invoke-static {v2, v3, p0}, Ljp/co/sony/mc/camera/util/capability/PlatformCapability;->isOpticalZoomSupported(Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;Ljp/co/sony/mc/camera/configuration/parameters/VideoMfHdr;Z)Z
+    .line 9305
+    invoke-virtual {v1}, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->isAutoFraming()Z
+
+    move-result p1
+
+    invoke-virtual {v1}, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->isGimbal()Z
+
+    move-result v0
+
+    .line 9302
+    invoke-static {v2, v3, p0, p1, v0}, Ljp/co/sony/mc/camera/util/capability/PlatformCapability;->isOpticalZoomSupported(Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;Ljp/co/sony/mc/camera/configuration/parameters/VideoMfHdr;ZZZ)Z
 
     move-result p0
 
@@ -604,7 +613,7 @@
     :goto_0
     return v7
 
-    .line 8941
+    .line 9225
     :cond_18
     :goto_1
     invoke-virtual {v1}, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->isVideo()Z
@@ -622,7 +631,7 @@
 .method private synthetic lambda$onKeyDown$0(Lcom/sonymobile/camera/bleremotecontrol/RemoconManager$BleRemoteKeyEvents;)V
     .locals 6
 
-    .line 8693
+    .line 8977
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/FragmentController$BleRemoteKeyCallbackImpl;->this$0:Ljp/co/sony/mc/camera/view/FragmentController;
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/view/FragmentController;->-$$Nest$fgetmUserOperationNotifier(Ljp/co/sony/mc/camera/view/FragmentController;)Ljp/co/sony/mc/camera/view/UserOperationListener;
@@ -631,7 +640,7 @@
 
     invoke-interface {v0}, Ljp/co/sony/mc/camera/view/UserOperationListener;->onRemoconKeyPressed()V
 
-    .line 8696
+    .line 8980
     sget-object v0, Ljp/co/sony/mc/camera/view/FragmentController$26;->$SwitchMap$com$sonymobile$camera$bleremotecontrol$RemoconManager$BleRemoteKeyEvents:[I
 
     invoke-virtual {p1}, Lcom/sonymobile/camera/bleremotecontrol/RemoconManager$BleRemoteKeyEvents;->ordinal()I
@@ -650,7 +659,7 @@
 
     goto/16 :goto_3
 
-    .line 8842
+    .line 9126
     :pswitch_0
     invoke-direct {p0, p1}, Ljp/co/sony/mc/camera/view/FragmentController$BleRemoteKeyCallbackImpl;->isAcceptableKeyEvent(Lcom/sonymobile/camera/bleremotecontrol/RemoconManager$BleRemoteKeyEvents;)Z
 
@@ -658,7 +667,7 @@
 
     if-eqz p1, :cond_11
 
-    .line 8843
+    .line 9127
     iget-object p1, p0, Ljp/co/sony/mc/camera/view/FragmentController$BleRemoteKeyCallbackImpl;->this$0:Ljp/co/sony/mc/camera/view/FragmentController;
 
     invoke-static {p1}, Ljp/co/sony/mc/camera/view/FragmentController;->-$$Nest$fgetmCameraEventNotifier(Ljp/co/sony/mc/camera/view/FragmentController;)Ljp/co/sony/mc/camera/view/CameraEventListener;
@@ -669,7 +678,7 @@
 
     goto/16 :goto_3
 
-    .line 8852
+    .line 9136
     :pswitch_1
     invoke-direct {p0, p1}, Ljp/co/sony/mc/camera/view/FragmentController$BleRemoteKeyCallbackImpl;->isAcceptableKeyEvent(Lcom/sonymobile/camera/bleremotecontrol/RemoconManager$BleRemoteKeyEvents;)Z
 
@@ -677,7 +686,7 @@
 
     if-eqz p1, :cond_11
 
-    .line 8853
+    .line 9137
     iget-object p1, p0, Ljp/co/sony/mc/camera/view/FragmentController$BleRemoteKeyCallbackImpl;->this$0:Ljp/co/sony/mc/camera/view/FragmentController;
 
     invoke-static {p1}, Ljp/co/sony/mc/camera/view/FragmentController;->-$$Nest$fgetmCameraEventNotifier(Ljp/co/sony/mc/camera/view/FragmentController;)Ljp/co/sony/mc/camera/view/CameraEventListener;
@@ -688,7 +697,7 @@
 
     goto/16 :goto_3
 
-    .line 8847
+    .line 9131
     :pswitch_2
     invoke-direct {p0, p1}, Ljp/co/sony/mc/camera/view/FragmentController$BleRemoteKeyCallbackImpl;->isAcceptableKeyEvent(Lcom/sonymobile/camera/bleremotecontrol/RemoconManager$BleRemoteKeyEvents;)Z
 
@@ -696,7 +705,7 @@
 
     if-eqz p1, :cond_11
 
-    .line 8848
+    .line 9132
     iget-object p1, p0, Ljp/co/sony/mc/camera/view/FragmentController$BleRemoteKeyCallbackImpl;->this$0:Ljp/co/sony/mc/camera/view/FragmentController;
 
     invoke-static {p1}, Ljp/co/sony/mc/camera/view/FragmentController;->-$$Nest$fgetmCameraEventNotifier(Ljp/co/sony/mc/camera/view/FragmentController;)Ljp/co/sony/mc/camera/view/CameraEventListener;
@@ -707,7 +716,7 @@
 
     goto/16 :goto_3
 
-    .line 8730
+    .line 9014
     :pswitch_3
     invoke-direct {p0, p1}, Ljp/co/sony/mc/camera/view/FragmentController$BleRemoteKeyCallbackImpl;->isAcceptableKeyEvent(Lcom/sonymobile/camera/bleremotecontrol/RemoconManager$BleRemoteKeyEvents;)Z
 
@@ -715,12 +724,12 @@
 
     if-eqz p1, :cond_11
 
-    .line 8731
+    .line 9015
     invoke-static {}, Ljp/co/sony/mc/camera/setting/CameraProSetting;->getInstance()Ljp/co/sony/mc/camera/setting/CameraProSetting;
 
     move-result-object p1
 
-    .line 8732
+    .line 9016
     sget-object v0, Ljp/co/sony/mc/camera/setting/CommonSettings;->REMOTE_BUTTON_CUSTOM:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
 
     invoke-virtual {p1, v0}, Ljp/co/sony/mc/camera/setting/CameraProSetting;->get(Ljp/co/sony/mc/camera/setting/SettingKey$Key;)Ljava/lang/Object;
@@ -729,7 +738,7 @@
 
     check-cast v0, Ljp/co/sony/mc/camera/configuration/parameters/RemoteButtonCustom;
 
-    .line 8734
+    .line 9018
     sget-object v4, Ljp/co/sony/mc/camera/setting/CommonSettings;->CAPTURING_MODE:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
 
     invoke-virtual {p1, v4}, Ljp/co/sony/mc/camera/setting/CameraProSetting;->get(Ljp/co/sony/mc/camera/setting/SettingKey$Key;)Ljava/lang/Object;
@@ -738,12 +747,12 @@
 
     check-cast p1, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
-    .line 8735
+    .line 9019
     sget-object v4, Ljp/co/sony/mc/camera/configuration/parameters/RemoteButtonCustom;->FOCAL_LENGTH:Ljp/co/sony/mc/camera/configuration/parameters/RemoteButtonCustom;
 
     if-ne v0, v4, :cond_3
 
-    .line 8736
+    .line 9020
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/FragmentController$BleRemoteKeyCallbackImpl;->this$0:Ljp/co/sony/mc/camera/view/FragmentController;
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/view/FragmentController;->-$$Nest$fgetmCameraOperator(Ljp/co/sony/mc/camera/view/FragmentController;)Ljp/co/sony/mc/camera/view/FragmentController$CameraOperatorImpl;
@@ -756,7 +765,7 @@
 
     if-eqz v0, :cond_0
 
-    .line 8737
+    .line 9021
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/FragmentController$BleRemoteKeyCallbackImpl;->this$0:Ljp/co/sony/mc/camera/view/FragmentController;
 
     invoke-static {p0}, Ljp/co/sony/mc/camera/view/FragmentController;->-$$Nest$fgetmCameraOperator(Ljp/co/sony/mc/camera/view/FragmentController;)Ljp/co/sony/mc/camera/view/FragmentController$CameraOperatorImpl;
@@ -767,7 +776,7 @@
 
     return-void
 
-    .line 8740
+    .line 9024
     :cond_0
     invoke-virtual {p1}, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->isHighResolution()Z
 
@@ -783,7 +792,7 @@
 
     goto :goto_0
 
-    .line 8743
+    .line 9027
     :cond_1
     iget-object p1, p0, Ljp/co/sony/mc/camera/view/FragmentController$BleRemoteKeyCallbackImpl;->this$0:Ljp/co/sony/mc/camera/view/FragmentController;
 
@@ -799,13 +808,13 @@
     :goto_0
     return-void
 
-    .line 8744
+    .line 9028
     :cond_3
     sget-object v4, Ljp/co/sony/mc/camera/configuration/parameters/RemoteButtonCustom;->CAPTURING_MODE:Ljp/co/sony/mc/camera/configuration/parameters/RemoteButtonCustom;
 
     if-ne v0, v4, :cond_5
 
-    .line 8745
+    .line 9029
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/FragmentController$BleRemoteKeyCallbackImpl;->this$0:Ljp/co/sony/mc/camera/view/FragmentController;
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/view/FragmentController;->-$$Nest$fgetmCameraOperator(Ljp/co/sony/mc/camera/view/FragmentController;)Ljp/co/sony/mc/camera/view/FragmentController$CameraOperatorImpl;
@@ -818,7 +827,7 @@
 
     if-eqz v0, :cond_4
 
-    .line 8746
+    .line 9030
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/FragmentController$BleRemoteKeyCallbackImpl;->this$0:Ljp/co/sony/mc/camera/view/FragmentController;
 
     invoke-static {p0}, Ljp/co/sony/mc/camera/view/FragmentController;->-$$Nest$fgetmCameraOperator(Ljp/co/sony/mc/camera/view/FragmentController;)Ljp/co/sony/mc/camera/view/FragmentController$CameraOperatorImpl;
@@ -829,7 +838,7 @@
 
     return-void
 
-    .line 8749
+    .line 9033
     :cond_4
     sget-object v0, Ljp/co/sony/mc/camera/view/FragmentController$26;->$SwitchMap$jp$co$sony$mc$camera$configuration$parameters$CapturingMode:[I
 
@@ -843,7 +852,7 @@
 
     goto/16 :goto_3
 
-    .line 8762
+    .line 9046
     :pswitch_4
     iget-object p1, p0, Ljp/co/sony/mc/camera/view/FragmentController$BleRemoteKeyCallbackImpl;->this$0:Ljp/co/sony/mc/camera/view/FragmentController;
 
@@ -857,7 +866,7 @@
 
     goto/16 :goto_3
 
-    .line 8759
+    .line 9043
     :pswitch_5
     iget-object p1, p0, Ljp/co/sony/mc/camera/view/FragmentController$BleRemoteKeyCallbackImpl;->this$0:Ljp/co/sony/mc/camera/view/FragmentController;
 
@@ -871,7 +880,7 @@
 
     goto/16 :goto_3
 
-    .line 8756
+    .line 9040
     :pswitch_6
     iget-object p1, p0, Ljp/co/sony/mc/camera/view/FragmentController$BleRemoteKeyCallbackImpl;->this$0:Ljp/co/sony/mc/camera/view/FragmentController;
 
@@ -885,7 +894,7 @@
 
     goto/16 :goto_3
 
-    .line 8753
+    .line 9037
     :pswitch_7
     iget-object p1, p0, Ljp/co/sony/mc/camera/view/FragmentController$BleRemoteKeyCallbackImpl;->this$0:Ljp/co/sony/mc/camera/view/FragmentController;
 
@@ -899,13 +908,13 @@
 
     goto/16 :goto_3
 
-    .line 8767
+    .line 9051
     :cond_5
     sget-object v4, Ljp/co/sony/mc/camera/configuration/parameters/RemoteButtonCustom;->PHOTO_VIDEO:Ljp/co/sony/mc/camera/configuration/parameters/RemoteButtonCustom;
 
     if-ne v0, v4, :cond_6
 
-    .line 8768
+    .line 9052
     iget-object p1, p0, Ljp/co/sony/mc/camera/view/FragmentController$BleRemoteKeyCallbackImpl;->this$0:Ljp/co/sony/mc/camera/view/FragmentController;
 
     invoke-static {p1}, Ljp/co/sony/mc/camera/view/FragmentController;->-$$Nest$fgetmCameraEventNotifier(Ljp/co/sony/mc/camera/view/FragmentController;)Ljp/co/sony/mc/camera/view/CameraEventListener;
@@ -916,13 +925,13 @@
 
     goto/16 :goto_3
 
-    .line 8769
+    .line 9053
     :cond_6
     sget-object v4, Ljp/co/sony/mc/camera/configuration/parameters/RemoteButtonCustom;->FRONT:Ljp/co/sony/mc/camera/configuration/parameters/RemoteButtonCustom;
 
     if-ne v0, v4, :cond_7
 
-    .line 8770
+    .line 9054
     iget-object p1, p0, Ljp/co/sony/mc/camera/view/FragmentController$BleRemoteKeyCallbackImpl;->this$0:Ljp/co/sony/mc/camera/view/FragmentController;
 
     invoke-static {p1}, Ljp/co/sony/mc/camera/view/FragmentController;->-$$Nest$fgetmCameraEventNotifier(Ljp/co/sony/mc/camera/view/FragmentController;)Ljp/co/sony/mc/camera/view/CameraEventListener;
@@ -933,13 +942,13 @@
 
     goto/16 :goto_3
 
-    .line 8771
+    .line 9055
     :cond_7
     sget-object v4, Ljp/co/sony/mc/camera/configuration/parameters/RemoteButtonCustom;->FOCUS_MODE:Ljp/co/sony/mc/camera/configuration/parameters/RemoteButtonCustom;
 
     if-ne v0, v4, :cond_11
 
-    .line 8772
+    .line 9056
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/FragmentController$BleRemoteKeyCallbackImpl;->this$0:Ljp/co/sony/mc/camera/view/FragmentController;
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/view/FragmentController;->-$$Nest$fgetmCameraOperator(Ljp/co/sony/mc/camera/view/FragmentController;)Ljp/co/sony/mc/camera/view/FragmentController$CameraOperatorImpl;
@@ -952,7 +961,7 @@
 
     if-eqz v0, :cond_8
 
-    .line 8773
+    .line 9057
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/FragmentController$BleRemoteKeyCallbackImpl;->this$0:Ljp/co/sony/mc/camera/view/FragmentController;
 
     invoke-static {p0}, Ljp/co/sony/mc/camera/view/FragmentController;->-$$Nest$fgetmCameraOperator(Ljp/co/sony/mc/camera/view/FragmentController;)Ljp/co/sony/mc/camera/view/FragmentController$CameraOperatorImpl;
@@ -963,7 +972,7 @@
 
     return-void
 
-    .line 8776
+    .line 9060
     :cond_8
     invoke-static {}, Ljp/co/sony/mc/camera/setting/CameraProSetting;->getInstance()Ljp/co/sony/mc/camera/setting/CameraProSetting;
 
@@ -977,7 +986,7 @@
 
     check-cast v0, Ljp/co/sony/mc/camera/configuration/parameters/FocusMode;
 
-    .line 8778
+    .line 9062
     iget-object v4, p0, Ljp/co/sony/mc/camera/view/FragmentController$BleRemoteKeyCallbackImpl;->this$0:Ljp/co/sony/mc/camera/view/FragmentController;
 
     invoke-static {v4}, Ljp/co/sony/mc/camera/view/FragmentController;->-$$Nest$fgetmLastThermalStatus(Ljp/co/sony/mc/camera/view/FragmentController;)Ljp/co/sony/mc/camera/SystemEventNotifier$ThermalStatus;
@@ -1003,60 +1012,60 @@
     :cond_9
     move v1, v2
 
-    .line 8782
+    .line 9066
     :cond_a
     :goto_1
     iget-object v2, p0, Ljp/co/sony/mc/camera/view/FragmentController$BleRemoteKeyCallbackImpl;->this$0:Ljp/co/sony/mc/camera/view/FragmentController;
 
-    .line 8783
+    .line 9067
     invoke-static {v2}, Ljp/co/sony/mc/camera/view/FragmentController;->-$$Nest$mgetFragmentManager(Ljp/co/sony/mc/camera/view/FragmentController;)Landroidx/fragment/app/FragmentManager;
 
     move-result-object v4
 
-    .line 8782
+    .line 9066
     invoke-static {v2, v4}, Ljp/co/sony/mc/camera/view/FragmentController;->-$$Nest$mgetViewFinderFragment(Ljp/co/sony/mc/camera/view/FragmentController;Landroidx/fragment/app/FragmentManager;)Ljp/co/sony/mc/camera/view/fragment/ViewFinderFragment;
 
     move-result-object v2
 
-    .line 8784
+    .line 9068
     sget-object v4, Ljp/co/sony/mc/camera/view/hint/HintTextTimedOutMessage$MessageType;->REMOCON_CUSTOM_AF_C:Ljp/co/sony/mc/camera/view/hint/HintTextTimedOutMessage$MessageType;
 
-    .line 8785
+    .line 9069
     invoke-static {v4}, Ljp/co/sony/mc/camera/view/hint/HintTextTimedOutMessage;->createTag(Ljp/co/sony/mc/camera/view/hint/HintTextTimedOutMessage$MessageType;)Ljava/lang/String;
 
     move-result-object v4
 
-    .line 8784
+    .line 9068
     invoke-virtual {v2, v4}, Ljp/co/sony/mc/camera/view/fragment/ViewFinderFragment;->hideHintText(Ljava/lang/String;)V
 
-    .line 8787
+    .line 9071
     sget-object v4, Ljp/co/sony/mc/camera/view/hint/HintTextTimedOutMessage$MessageType;->REMOCON_CUSTOM_MF:Ljp/co/sony/mc/camera/view/hint/HintTextTimedOutMessage$MessageType;
 
-    .line 8788
+    .line 9072
     invoke-static {v4}, Ljp/co/sony/mc/camera/view/hint/HintTextTimedOutMessage;->createTag(Ljp/co/sony/mc/camera/view/hint/HintTextTimedOutMessage$MessageType;)Ljava/lang/String;
 
     move-result-object v4
 
-    .line 8787
+    .line 9071
     invoke-virtual {v2, v4}, Ljp/co/sony/mc/camera/view/fragment/ViewFinderFragment;->hideHintText(Ljava/lang/String;)V
 
-    .line 8790
+    .line 9074
     sget-object v4, Ljp/co/sony/mc/camera/view/hint/HintTextTimedOutMessage$MessageType;->REMOCON_CUSTOM_AF_S:Ljp/co/sony/mc/camera/view/hint/HintTextTimedOutMessage$MessageType;
 
-    .line 8791
+    .line 9075
     invoke-static {v4}, Ljp/co/sony/mc/camera/view/hint/HintTextTimedOutMessage;->createTag(Ljp/co/sony/mc/camera/view/hint/HintTextTimedOutMessage$MessageType;)Ljava/lang/String;
 
     move-result-object v4
 
-    .line 8790
+    .line 9074
     invoke-virtual {v2, v4}, Ljp/co/sony/mc/camera/view/fragment/ViewFinderFragment;->hideHintText(Ljava/lang/String;)V
 
-    .line 8793
+    .line 9077
     sget-object v4, Ljp/co/sony/mc/camera/configuration/parameters/FocusMode;->AF_S:Ljp/co/sony/mc/camera/configuration/parameters/FocusMode;
 
     if-ne v0, v4, :cond_b
 
-    .line 8794
+    .line 9078
     iget-object p1, p0, Ljp/co/sony/mc/camera/view/FragmentController$BleRemoteKeyCallbackImpl;->this$0:Ljp/co/sony/mc/camera/view/FragmentController;
 
     invoke-static {p1}, Ljp/co/sony/mc/camera/view/FragmentController;->-$$Nest$fgetmCameraOperator(Ljp/co/sony/mc/camera/view/FragmentController;)Ljp/co/sony/mc/camera/view/FragmentController$CameraOperatorImpl;
@@ -1071,7 +1080,7 @@
 
     if-nez v1, :cond_11
 
-    .line 8797
+    .line 9081
     new-instance p1, Ljp/co/sony/mc/camera/view/hint/HintTextTimedOutMessage;
 
     sget-object v0, Ljp/co/sony/mc/camera/view/hint/HintTextTimedOutMessage$MessageType;->REMOCON_CUSTOM_AF_C:Ljp/co/sony/mc/camera/view/hint/HintTextTimedOutMessage$MessageType;
@@ -1082,13 +1091,13 @@
 
     goto/16 :goto_3
 
-    .line 8801
+    .line 9085
     :cond_b
     sget-object v4, Ljp/co/sony/mc/camera/configuration/parameters/FocusMode;->AF_C:Ljp/co/sony/mc/camera/configuration/parameters/FocusMode;
 
     if-ne v0, v4, :cond_e
 
-    .line 8802
+    .line 9086
     invoke-virtual {p1}, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->isPro()Z
 
     move-result v0
@@ -1103,7 +1112,7 @@
 
     goto :goto_2
 
-    .line 8810
+    .line 9094
     :cond_c
     invoke-virtual {p1}, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->isAutoPhotoMode()Z
 
@@ -1111,7 +1120,7 @@
 
     if-eqz p1, :cond_11
 
-    .line 8811
+    .line 9095
     iget-object p1, p0, Ljp/co/sony/mc/camera/view/FragmentController$BleRemoteKeyCallbackImpl;->this$0:Ljp/co/sony/mc/camera/view/FragmentController;
 
     invoke-static {p1}, Ljp/co/sony/mc/camera/view/FragmentController;->-$$Nest$fgetmCameraOperator(Ljp/co/sony/mc/camera/view/FragmentController;)Ljp/co/sony/mc/camera/view/FragmentController$CameraOperatorImpl;
@@ -1126,7 +1135,7 @@
 
     if-nez v1, :cond_11
 
-    .line 8814
+    .line 9098
     new-instance p1, Ljp/co/sony/mc/camera/view/hint/HintTextTimedOutMessage;
 
     sget-object v0, Ljp/co/sony/mc/camera/view/hint/HintTextTimedOutMessage$MessageType;->REMOCON_CUSTOM_AF_S:Ljp/co/sony/mc/camera/view/hint/HintTextTimedOutMessage$MessageType;
@@ -1137,7 +1146,7 @@
 
     goto/16 :goto_3
 
-    .line 8803
+    .line 9087
     :cond_d
     :goto_2
     iget-object p1, p0, Ljp/co/sony/mc/camera/view/FragmentController$BleRemoteKeyCallbackImpl;->this$0:Ljp/co/sony/mc/camera/view/FragmentController;
@@ -1154,7 +1163,7 @@
 
     if-nez v1, :cond_11
 
-    .line 8806
+    .line 9090
     new-instance p1, Ljp/co/sony/mc/camera/view/hint/HintTextTimedOutMessage;
 
     sget-object v0, Ljp/co/sony/mc/camera/view/hint/HintTextTimedOutMessage$MessageType;->REMOCON_CUSTOM_MF:Ljp/co/sony/mc/camera/view/hint/HintTextTimedOutMessage$MessageType;
@@ -1165,20 +1174,20 @@
 
     goto/16 :goto_3
 
-    .line 8819
+    .line 9103
     :cond_e
     sget-object v4, Ljp/co/sony/mc/camera/configuration/parameters/FocusMode;->MF:Ljp/co/sony/mc/camera/configuration/parameters/FocusMode;
 
     if-ne v0, v4, :cond_11
 
-    .line 8820
+    .line 9104
     invoke-virtual {p1}, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->isBasicMode()Z
 
     move-result p1
 
     if-eqz p1, :cond_f
 
-    .line 8821
+    .line 9105
     iget-object p1, p0, Ljp/co/sony/mc/camera/view/FragmentController$BleRemoteKeyCallbackImpl;->this$0:Ljp/co/sony/mc/camera/view/FragmentController;
 
     invoke-static {p1}, Ljp/co/sony/mc/camera/view/FragmentController;->-$$Nest$fgetmCameraOperator(Ljp/co/sony/mc/camera/view/FragmentController;)Ljp/co/sony/mc/camera/view/FragmentController$CameraOperatorImpl;
@@ -1193,7 +1202,7 @@
 
     if-nez v1, :cond_11
 
-    .line 8824
+    .line 9108
     new-instance p1, Ljp/co/sony/mc/camera/view/hint/HintTextTimedOutMessage;
 
     sget-object v0, Ljp/co/sony/mc/camera/view/hint/HintTextTimedOutMessage$MessageType;->REMOCON_CUSTOM_AF_C:Ljp/co/sony/mc/camera/view/hint/HintTextTimedOutMessage$MessageType;
@@ -1204,7 +1213,7 @@
 
     goto :goto_3
 
-    .line 8829
+    .line 9113
     :cond_f
     iget-object p1, p0, Ljp/co/sony/mc/camera/view/FragmentController$BleRemoteKeyCallbackImpl;->this$0:Ljp/co/sony/mc/camera/view/FragmentController;
 
@@ -1220,7 +1229,7 @@
 
     if-nez v1, :cond_11
 
-    .line 8832
+    .line 9116
     new-instance p1, Ljp/co/sony/mc/camera/view/hint/HintTextTimedOutMessage;
 
     sget-object v0, Ljp/co/sony/mc/camera/view/hint/HintTextTimedOutMessage$MessageType;->REMOCON_CUSTOM_AF_S:Ljp/co/sony/mc/camera/view/hint/HintTextTimedOutMessage$MessageType;
@@ -1231,7 +1240,7 @@
 
     goto :goto_3
 
-    .line 8724
+    .line 9008
     :pswitch_8
     invoke-direct {p0, p1}, Ljp/co/sony/mc/camera/view/FragmentController$BleRemoteKeyCallbackImpl;->isAcceptableKeyEvent(Lcom/sonymobile/camera/bleremotecontrol/RemoconManager$BleRemoteKeyEvents;)Z
 
@@ -1243,7 +1252,7 @@
 
     goto :goto_4
 
-    .line 8718
+    .line 9002
     :pswitch_9
     invoke-direct {p0, p1}, Ljp/co/sony/mc/camera/view/FragmentController$BleRemoteKeyCallbackImpl;->isAcceptableKeyEvent(Lcom/sonymobile/camera/bleremotecontrol/RemoconManager$BleRemoteKeyEvents;)Z
 
@@ -1255,7 +1264,7 @@
 
     goto :goto_4
 
-    .line 8712
+    .line 8996
     :pswitch_a
     invoke-direct {p0, p1}, Ljp/co/sony/mc/camera/view/FragmentController$BleRemoteKeyCallbackImpl;->isAcceptableKeyEvent(Lcom/sonymobile/camera/bleremotecontrol/RemoconManager$BleRemoteKeyEvents;)Z
 
@@ -1267,7 +1276,7 @@
 
     goto :goto_4
 
-    .line 8704
+    .line 8988
     :pswitch_b
     invoke-direct {p0, p1}, Ljp/co/sony/mc/camera/view/FragmentController$BleRemoteKeyCallbackImpl;->isAcceptableKeyEvent(Lcom/sonymobile/camera/bleremotecontrol/RemoconManager$BleRemoteKeyEvents;)Z
 
@@ -1279,7 +1288,7 @@
 
     goto :goto_4
 
-    .line 8707
+    .line 8991
     :cond_10
     iget-object p1, p0, Ljp/co/sony/mc/camera/view/FragmentController$BleRemoteKeyCallbackImpl;->this$0:Ljp/co/sony/mc/camera/view/FragmentController;
 
@@ -1289,7 +1298,7 @@
 
     if-eqz p1, :cond_11
 
-    .line 8708
+    .line 8992
     iget-object p1, p0, Ljp/co/sony/mc/camera/view/FragmentController$BleRemoteKeyCallbackImpl;->this$0:Ljp/co/sony/mc/camera/view/FragmentController;
 
     invoke-static {p1}, Ljp/co/sony/mc/camera/view/FragmentController;->-$$Nest$fgetmCameraEventNotifier(Ljp/co/sony/mc/camera/view/FragmentController;)Ljp/co/sony/mc/camera/view/CameraEventListener;
@@ -1300,7 +1309,7 @@
 
     goto :goto_3
 
-    .line 8698
+    .line 8982
     :pswitch_c
     invoke-direct {p0, p1}, Ljp/co/sony/mc/camera/view/FragmentController$BleRemoteKeyCallbackImpl;->isAcceptableKeyEvent(Lcom/sonymobile/camera/bleremotecontrol/RemoconManager$BleRemoteKeyEvents;)Z
 
@@ -1323,12 +1332,12 @@
 
     if-eq p1, v3, :cond_12
 
-    .line 8862
+    .line 9146
     new-instance v0, Landroid/view/KeyEvent;
 
     invoke-direct {v0, v2, p1}, Landroid/view/KeyEvent;-><init>(II)V
 
-    .line 8863
+    .line 9147
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/FragmentController$BleRemoteKeyCallbackImpl;->this$0:Ljp/co/sony/mc/camera/view/FragmentController;
 
     invoke-static {p0}, Ljp/co/sony/mc/camera/view/FragmentController;->-$$Nest$fgetmActivity(Ljp/co/sony/mc/camera/view/FragmentController;)Ljp/co/sony/mc/camera/CameraActivity;
@@ -1369,7 +1378,7 @@
 .method private synthetic lambda$onKeyUp$1(Lcom/sonymobile/camera/bleremotecontrol/RemoconManager$BleRemoteKeyEvents;)V
     .locals 3
 
-    .line 8881
+    .line 9165
     sget-object v0, Ljp/co/sony/mc/camera/view/FragmentController$26;->$SwitchMap$com$sonymobile$camera$bleremotecontrol$RemoconManager$BleRemoteKeyEvents:[I
 
     invoke-virtual {p1}, Lcom/sonymobile/camera/bleremotecontrol/RemoconManager$BleRemoteKeyEvents;->ordinal()I
@@ -1389,7 +1398,7 @@
     :pswitch_0
     goto :goto_0
 
-    .line 8906
+    .line 9190
     :pswitch_1
     iget-object p1, p0, Ljp/co/sony/mc/camera/view/FragmentController$BleRemoteKeyCallbackImpl;->this$0:Ljp/co/sony/mc/camera/view/FragmentController;
 
@@ -1401,7 +1410,7 @@
 
     goto :goto_0
 
-    .line 8903
+    .line 9187
     :pswitch_2
     iget-object p1, p0, Ljp/co/sony/mc/camera/view/FragmentController$BleRemoteKeyCallbackImpl;->this$0:Ljp/co/sony/mc/camera/view/FragmentController;
 
@@ -1448,12 +1457,12 @@
 
     if-eq p1, v2, :cond_0
 
-    .line 8918
+    .line 9202
     new-instance v0, Landroid/view/KeyEvent;
 
     invoke-direct {v0, v1, p1}, Landroid/view/KeyEvent;-><init>(II)V
 
-    .line 8919
+    .line 9203
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/FragmentController$BleRemoteKeyCallbackImpl;->this$0:Ljp/co/sony/mc/camera/view/FragmentController;
 
     invoke-static {p0}, Ljp/co/sony/mc/camera/view/FragmentController;->-$$Nest$fgetmActivity(Ljp/co/sony/mc/camera/view/FragmentController;)Ljp/co/sony/mc/camera/CameraActivity;
@@ -1483,7 +1492,7 @@
 .method private setKeyEnabled(Z)V
     .locals 0
 
-    .line 9073
+    .line 9358
     iput-boolean p1, p0, Ljp/co/sony/mc/camera/view/FragmentController$BleRemoteKeyCallbackImpl;->mIsKeyEnabled:Z
 
     return-void
@@ -1494,7 +1503,7 @@
 .method public onKeyDown(Lcom/sonymobile/camera/bleremotecontrol/RemoconManager$BleRemoteKeyEvents;Ljava/lang/Integer;)V
     .locals 2
 
-    .line 8673
+    .line 8957
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/FragmentController$BleRemoteKeyCallbackImpl;->this$0:Ljp/co/sony/mc/camera/view/FragmentController;
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/view/FragmentController;->-$$Nest$fgetmActivity(Ljp/co/sony/mc/camera/view/FragmentController;)Ljp/co/sony/mc/camera/CameraActivity;
@@ -1503,7 +1512,7 @@
 
     invoke-virtual {v0}, Ljp/co/sony/mc/camera/CameraActivity;->restartAutoPowerOffTimer()V
 
-    .line 8674
+    .line 8958
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/FragmentController$BleRemoteKeyCallbackImpl;->mCurrentKeyCode:Lcom/sonymobile/camera/bleremotecontrol/RemoconManager$BleRemoteKeyEvents;
 
     if-nez v0, :cond_1
@@ -1518,7 +1527,7 @@
 
     goto :goto_0
 
-    .line 8684
+    .line 8968
     :cond_0
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/FragmentController$BleRemoteKeyCallbackImpl;->mCurrentKeyCode:Lcom/sonymobile/camera/bleremotecontrol/RemoconManager$BleRemoteKeyEvents;
 
@@ -1530,7 +1539,7 @@
 
     return-void
 
-    .line 8676
+    .line 8960
     :cond_1
     :goto_0
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/FragmentController$BleRemoteKeyCallbackImpl;->mCurrentKeyCode:Lcom/sonymobile/camera/bleremotecontrol/RemoconManager$BleRemoteKeyEvents;
@@ -1539,14 +1548,14 @@
 
     if-ne v0, v1, :cond_4
 
-    .line 8677
+    .line 8961
     sget-object v0, Lcom/sonymobile/camera/bleremotecontrol/RemoconManager$BleRemoteKeyEvents;->KEY_CODE_S2:Lcom/sonymobile/camera/bleremotecontrol/RemoconManager$BleRemoteKeyEvents;
 
     if-eq p1, v0, :cond_2
 
     return-void
 
-    .line 8689
+    .line 8973
     :cond_2
     iput-object p1, p0, Ljp/co/sony/mc/camera/view/FragmentController$BleRemoteKeyCallbackImpl;->mCurrentKeyCode:Lcom/sonymobile/camera/bleremotecontrol/RemoconManager$BleRemoteKeyEvents;
 
@@ -1556,7 +1565,7 @@
 
     goto :goto_1
 
-    .line 8690
+    .line 8974
     :cond_3
     invoke-virtual {p2}, Ljava/lang/Integer;->intValue()I
 
@@ -1565,7 +1574,7 @@
     :goto_1
     iput p2, p0, Ljp/co/sony/mc/camera/view/FragmentController$BleRemoteKeyCallbackImpl;->mCurrentKeyLevel:I
 
-    .line 8692
+    .line 8976
     iget-object p2, p0, Ljp/co/sony/mc/camera/view/FragmentController$BleRemoteKeyCallbackImpl;->this$0:Ljp/co/sony/mc/camera/view/FragmentController;
 
     invoke-static {p2}, Ljp/co/sony/mc/camera/view/FragmentController;->-$$Nest$fgetmActivity(Ljp/co/sony/mc/camera/view/FragmentController;)Ljp/co/sony/mc/camera/CameraActivity;
@@ -1585,7 +1594,7 @@
 .method public onKeyUp(Lcom/sonymobile/camera/bleremotecontrol/RemoconManager$BleRemoteKeyEvents;Ljava/lang/Integer;)V
     .locals 1
 
-    .line 8870
+    .line 9154
     iget-object p2, p0, Ljp/co/sony/mc/camera/view/FragmentController$BleRemoteKeyCallbackImpl;->this$0:Ljp/co/sony/mc/camera/view/FragmentController;
 
     invoke-static {p2}, Ljp/co/sony/mc/camera/view/FragmentController;->-$$Nest$fgetmActivity(Ljp/co/sony/mc/camera/view/FragmentController;)Ljp/co/sony/mc/camera/CameraActivity;
@@ -1594,7 +1603,7 @@
 
     invoke-virtual {p2}, Ljp/co/sony/mc/camera/CameraActivity;->restartAutoPowerOffTimer()V
 
-    .line 8871
+    .line 9155
     sget-object p2, Lcom/sonymobile/camera/bleremotecontrol/RemoconManager$BleRemoteKeyEvents;->KEY_CODE_S2:Lcom/sonymobile/camera/bleremotecontrol/RemoconManager$BleRemoteKeyEvents;
 
     if-ne p1, p2, :cond_0
@@ -1603,7 +1612,7 @@
 
     if-eqz p2, :cond_0
 
-    .line 8872
+    .line 9156
     sget-object p2, Lcom/sonymobile/camera/bleremotecontrol/RemoconManager$BleRemoteKeyEvents;->KEY_CODE_S1:Lcom/sonymobile/camera/bleremotecontrol/RemoconManager$BleRemoteKeyEvents;
 
     iput-object p2, p0, Ljp/co/sony/mc/camera/view/FragmentController$BleRemoteKeyCallbackImpl;->mCurrentKeyCode:Lcom/sonymobile/camera/bleremotecontrol/RemoconManager$BleRemoteKeyEvents;
@@ -1613,15 +1622,15 @@
     :cond_0
     const/4 p2, 0x0
 
-    .line 8874
+    .line 9158
     iput-object p2, p0, Ljp/co/sony/mc/camera/view/FragmentController$BleRemoteKeyCallbackImpl;->mCurrentKeyCode:Lcom/sonymobile/camera/bleremotecontrol/RemoconManager$BleRemoteKeyEvents;
 
     const/4 p2, 0x0
 
-    .line 8875
+    .line 9159
     iput p2, p0, Ljp/co/sony/mc/camera/view/FragmentController$BleRemoteKeyCallbackImpl;->mCurrentKeyLevel:I
 
-    .line 8878
+    .line 9162
     :goto_0
     iget-object p2, p0, Ljp/co/sony/mc/camera/view/FragmentController$BleRemoteKeyCallbackImpl;->this$0:Ljp/co/sony/mc/camera/view/FragmentController;
 

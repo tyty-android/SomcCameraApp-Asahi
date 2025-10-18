@@ -86,11 +86,7 @@
 .end method
 
 .method public constructor <init>(IILandroidx/compose/animation/core/Easing;)V
-    .locals 1
-
-    const-string v0, "easing"
-
-    invoke-static {p3, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+    .locals 0
 
     .line 200
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V

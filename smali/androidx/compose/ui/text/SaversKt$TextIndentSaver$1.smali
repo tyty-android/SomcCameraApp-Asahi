@@ -81,15 +81,7 @@
 .method public final invoke(Landroidx/compose/runtime/saveable/SaverScope;Landroidx/compose/ui/text/style/TextIndent;)Ljava/lang/Object;
     .locals 2
 
-    const-string p0, "$this$Saver"
-
-    invoke-static {p1, p0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string p0, "it"
-
-    invoke-static {p2, p0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 287
+    .line 308
     invoke-virtual {p2}, Landroidx/compose/ui/text/style/TextIndent;->getFirstLine-XSAIIZE()J
 
     move-result-wide v0
@@ -108,7 +100,7 @@
 
     move-result-object p0
 
-    .line 288
+    .line 309
     invoke-virtual {p2}, Landroidx/compose/ui/text/style/TextIndent;->getRestLine-XSAIIZE()J
 
     move-result-wide v0
@@ -131,7 +123,7 @@
 
     move-result-object p0
 
-    .line 286
+    .line 307
     invoke-static {p0}, Lkotlin/collections/CollectionsKt;->arrayListOf([Ljava/lang/Object;)Ljava/util/ArrayList;
 
     move-result-object p0
@@ -142,7 +134,7 @@
 .method public bridge synthetic invoke(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
 
-    .line 284
+    .line 305
     check-cast p1, Landroidx/compose/runtime/saveable/SaverScope;
 
     check-cast p2, Landroidx/compose/ui/text/style/TextIndent;

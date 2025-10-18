@@ -5,7 +5,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/SourceDebugExtension;
-    value = "SMAP\nSimpleLayout.kt\nKotlin\n*S Kotlin\n*F\n+ 1 SimpleLayout.kt\nandroidx/compose/foundation/text/selection/SimpleLayoutKt\n+ 2 Layout.kt\nandroidx/compose/ui/layout/LayoutKt\n+ 3 Composables.kt\nandroidx/compose/runtime/ComposablesKt\n+ 4 Composer.kt\nandroidx/compose/runtime/Updater\n*L\n1#1,53:1\n78#2,11:54\n91#2:85\n456#3,8:65\n464#3,6:79\n4144#4,6:73\n*S KotlinDebug\n*F\n+ 1 SimpleLayout.kt\nandroidx/compose/foundation/text/selection/SimpleLayoutKt\n*L\n33#1:54,11\n33#1:85\n33#1:65,8\n33#1:79,6\n33#1:73,6\n*E\n"
+    value = "SMAP\nSimpleLayout.kt\nKotlin\n*S Kotlin\n*F\n+ 1 SimpleLayout.kt\nandroidx/compose/foundation/text/selection/SimpleLayoutKt\n+ 2 Layout.kt\nandroidx/compose/ui/layout/LayoutKt\n+ 3 Composables.kt\nandroidx/compose/runtime/ComposablesKt\n+ 4 Composer.kt\nandroidx/compose/runtime/Updater\n*L\n1#1,53:1\n79#2,11:54\n92#2:85\n456#3,8:65\n464#3,6:79\n3737#4,6:73\n*S KotlinDebug\n*F\n+ 1 SimpleLayout.kt\nandroidx/compose/foundation/text/selection/SimpleLayoutKt\n*L\n33#1:54,11\n33#1:85\n33#1:65,8\n33#1:79,6\n33#1:73,6\n*E\n"
 .end annotation
 
 .annotation runtime Lkotlin/Metadata;
@@ -52,10 +52,6 @@
         }
     .end annotation
 
-    const-string v0, "content"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
     const v0, -0x7d7b3e30
 
     .line 32
@@ -63,7 +59,7 @@
 
     move-result-object p2
 
-    const-string v1, "C(SimpleLayout)P(1)32@1172L592:SimpleLayout.kt#eksfi3"
+    const-string v1, "C(SimpleLayout)P(1)32@1169L592:SimpleLayout.kt#eksfi3"
 
     invoke-static {p2, v1}, Landroidx/compose/runtime/ComposerKt;->sourceInformation(Landroidx/compose/runtime/Composer;Ljava/lang/String;)V
 
@@ -185,6 +181,8 @@
 
     and-int/lit8 v1, v1, 0xe
 
+    or-int/lit16 v1, v1, 0x180
+
     shl-int/lit8 v2, v2, 0x3
 
     and-int/lit8 v2, v2, 0x70
@@ -195,7 +193,7 @@
 
     invoke-interface {p2, v2}, Landroidx/compose/runtime/Composer;->startReplaceableGroup(I)V
 
-    const-string v2, "CC(Layout)P(!1,2)77@3132L23,79@3222L420:Layout.kt#80mrfh"
+    const-string v2, "CC(Layout)P(!1,2)78@3182L23,80@3272L420:Layout.kt#80mrfh"
 
     invoke-static {p2, v2}, Landroidx/compose/runtime/ComposerKt;->sourceInformation(Landroidx/compose/runtime/Composer;Ljava/lang/String;)V
 
@@ -384,11 +382,8 @@
 
     move-result-object p2
 
-    if-nez p2, :cond_f
+    if-eqz p2, :cond_f
 
-    goto :goto_7
-
-    :cond_f
     new-instance v0, Landroidx/compose/foundation/text/selection/SimpleLayoutKt$SimpleLayout$2;
 
     invoke-direct {v0, p0, p1, p3, p4}, Landroidx/compose/foundation/text/selection/SimpleLayoutKt$SimpleLayout$2;-><init>(Landroidx/compose/ui/Modifier;Lkotlin/jvm/functions/Function2;II)V
@@ -397,6 +392,6 @@
 
     invoke-interface {p2, v0}, Landroidx/compose/runtime/ScopeUpdateScope;->updateScope(Lkotlin/jvm/functions/Function2;)V
 
-    :goto_7
+    :cond_f
     return-void
 .end method

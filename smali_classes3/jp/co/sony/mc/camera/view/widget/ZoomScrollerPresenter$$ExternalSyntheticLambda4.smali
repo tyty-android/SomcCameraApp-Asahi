@@ -3,7 +3,7 @@
 .source "D8$$SyntheticClass"
 
 # interfaces
-.implements Landroid/view/View$OnLayoutChangeListener;
+.implements Ljava/lang/Runnable;
 
 
 # instance fields
@@ -24,33 +24,13 @@
 
 
 # virtual methods
-.method public final onLayoutChange(Landroid/view/View;IIIIIIII)V
-    .locals 10
+.method public final run()V
+    .locals 0
 
     .line 0
-    move-object v0, p0
+    iget-object p0, p0, Ljp/co/sony/mc/camera/view/widget/ZoomScrollerPresenter$$ExternalSyntheticLambda4;->f$0:Ljp/co/sony/mc/camera/view/widget/ZoomScrollerPresenter;
 
-    iget-object v0, v0, Ljp/co/sony/mc/camera/view/widget/ZoomScrollerPresenter$$ExternalSyntheticLambda4;->f$0:Ljp/co/sony/mc/camera/view/widget/ZoomScrollerPresenter;
-
-    move-object v1, p1
-
-    move v2, p2
-
-    move v3, p3
-
-    move v4, p4
-
-    move v5, p5
-
-    move/from16 v6, p6
-
-    move/from16 v7, p7
-
-    move/from16 v8, p8
-
-    move/from16 v9, p9
-
-    invoke-static/range {v0 .. v9}, Ljp/co/sony/mc/camera/view/widget/ZoomScrollerPresenter;->$r8$lambda$W1hXRBWeXP30Dn3JlFCqhgfW0X0(Ljp/co/sony/mc/camera/view/widget/ZoomScrollerPresenter;Landroid/view/View;IIIIIIII)V
+    invoke-static {p0}, Ljp/co/sony/mc/camera/view/widget/ZoomScrollerPresenter;->$r8$lambda$WAednhwFiLwLhjVT9FV71ugxI5c(Ljp/co/sony/mc/camera/view/widget/ZoomScrollerPresenter;)V
 
     return-void
 .end method

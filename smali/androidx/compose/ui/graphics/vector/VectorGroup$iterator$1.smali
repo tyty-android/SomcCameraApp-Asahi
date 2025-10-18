@@ -69,10 +69,10 @@
 .method constructor <init>(Landroidx/compose/ui/graphics/vector/VectorGroup;)V
     .locals 0
 
-    .line 510
+    .line 521
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 512
+    .line 523
     invoke-static {p1}, Landroidx/compose/ui/graphics/vector/VectorGroup;->access$getChildren$p(Landroidx/compose/ui/graphics/vector/VectorGroup;)Ljava/util/List;
 
     move-result-object p1
@@ -99,7 +99,7 @@
         }
     .end annotation
 
-    .line 512
+    .line 523
     iget-object p0, p0, Landroidx/compose/ui/graphics/vector/VectorGroup$iterator$1;->it:Ljava/util/Iterator;
 
     return-object p0
@@ -108,7 +108,7 @@
 .method public hasNext()Z
     .locals 0
 
-    .line 514
+    .line 525
     iget-object p0, p0, Landroidx/compose/ui/graphics/vector/VectorGroup$iterator$1;->it:Ljava/util/Iterator;
 
     invoke-interface {p0}, Ljava/util/Iterator;->hasNext()Z
@@ -121,7 +121,7 @@
 .method public next()Landroidx/compose/ui/graphics/vector/VectorNode;
     .locals 0
 
-    .line 516
+    .line 527
     iget-object p0, p0, Landroidx/compose/ui/graphics/vector/VectorGroup$iterator$1;->it:Ljava/util/Iterator;
 
     invoke-interface {p0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
@@ -136,7 +136,7 @@
 .method public bridge synthetic next()Ljava/lang/Object;
     .locals 0
 
-    .line 510
+    .line 521
     invoke-virtual {p0}, Landroidx/compose/ui/graphics/vector/VectorGroup$iterator$1;->next()Landroidx/compose/ui/graphics/vector/VectorNode;
 
     move-result-object p0

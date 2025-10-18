@@ -219,13 +219,18 @@
 
     if-eq v4, v2, :cond_1
 
+    move v2, v0
+
     goto :goto_0
 
     :cond_0
-    if-eqz p2, :cond_2
+    move v2, p2
+
+    :cond_1
+    :goto_0
+    if-eqz v2, :cond_2
 
     .line 103
-    :cond_1
     invoke-virtual {p1, v1, v3}, Ljp/co/sony/mc/camera/device/state/DeviceStateContext;->setSnapshotRequestInfo(Ljp/co/sony/mc/camera/device/SnapshotRequest;Z)V
 
     .line 104
@@ -243,7 +248,6 @@
 
     .line 107
     :cond_2
-    :goto_0
     invoke-virtual {v1}, Ljp/co/sony/mc/camera/device/SnapshotRequest;->convertToSingleCaptureRequest()Ljp/co/sony/mc/camera/device/SnapshotRequest;
 
     move-result-object p2
@@ -360,11 +364,15 @@
 
     if-eqz p0, :cond_0
 
-    const-string p0, "FaceDetection is already running."
+    const/4 p0, 0x1
 
-    filled-new-array {p0}, [Ljava/lang/String;
+    new-array p0, p0, [Ljava/lang/String;
 
-    move-result-object p0
+    const/4 p1, 0x0
+
+    const-string p2, "FaceDetection is already running."
+
+    aput-object p2, p0, p1
 
     invoke-static {p0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 

@@ -30,7 +30,7 @@
     .line 0
     iget-object p0, p0, Lkotlinx/coroutines/android/HandlerDispatcherKt$$ExternalSyntheticLambda0;->f$0:Lkotlinx/coroutines/CancellableContinuation;
 
-    invoke-static {p0, p1, p2}, Lkotlinx/coroutines/android/HandlerDispatcherKt;->$r8$lambda$gp6JLGBkWOxUeE1_JLllkAXyyxM(Lkotlinx/coroutines/CancellableContinuation;J)V
+    invoke-static {p0, p1, p2}, Lkotlinx/coroutines/android/HandlerDispatcherKt;->$r8$lambda$_-s4SOKmmdhN7PexQng1D-Olurw(Lkotlinx/coroutines/CancellableContinuation;J)V
 
     return-void
 .end method

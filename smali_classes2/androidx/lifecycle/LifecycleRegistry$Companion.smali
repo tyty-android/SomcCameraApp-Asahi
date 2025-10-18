@@ -1,6 +1,6 @@
 .class public final Landroidx/lifecycle/LifecycleRegistry$Companion;
 .super Ljava/lang/Object;
-.source "LifecycleRegistry.kt"
+.source "LifecycleRegistry.jvm.kt"
 
 
 # annotations
@@ -46,7 +46,7 @@
 .method private constructor <init>()V
     .locals 0
 
-    .line 319
+    .line 325
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -71,7 +71,7 @@
 
     invoke-static {p1, p0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 331
+    .line 337
     new-instance p0, Landroidx/lifecycle/LifecycleRegistry;
 
     const/4 v0, 0x0
@@ -94,7 +94,7 @@
 
     if-eqz p2, :cond_0
 
-    .line 336
+    .line 342
     move-object p0, p1
 
     check-cast p0, Ljava/lang/Enum;

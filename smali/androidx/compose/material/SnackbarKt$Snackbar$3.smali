@@ -69,7 +69,7 @@
 .method public bridge synthetic invoke(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
 
-    .line 176
+    .line 177
     check-cast p1, Landroidx/compose/runtime/Composer;
 
     check-cast p2, Ljava/lang/Number;
@@ -90,7 +90,7 @@
 
     move/from16 v0, p2
 
-    const-string v1, "C175@7858L26:Snackbar.kt#jmzs0o"
+    const-string v1, "C176@7900L26:Snackbar.kt#jmzs0o"
 
     move-object/from16 v15, p1
 
@@ -102,7 +102,7 @@
 
     if-ne v1, v2, :cond_1
 
-    .line 176
+    .line 177
     invoke-interface/range {p1 .. p1}, Landroidx/compose/runtime/Composer;->getSkipping()Z
 
     move-result v1
@@ -126,7 +126,7 @@
 
     const/4 v1, -0x1
 
-    const-string v2, "androidx.compose.material.Snackbar.<anonymous> (Snackbar.kt:175)"
+    const-string v2, "androidx.compose.material.Snackbar.<anonymous> (Snackbar.kt:176)"
 
     const v3, -0xf9b7319
 

@@ -28,7 +28,7 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/SourceDebugExtension;
-    value = "SMAP\nBackdropScaffold.kt\nKotlin\n*S Kotlin\n*F\n+ 1 BackdropScaffold.kt\nandroidx/compose/material/BackdropScaffoldKt$BackdropScaffold$1\n+ 2 Effects.kt\nandroidx/compose/runtime/EffectsKt\n+ 3 Composables.kt\nandroidx/compose/runtime/ComposablesKt\n+ 4 Composer.kt\nandroidx/compose/runtime/ComposerKt\n+ 5 Effects.kt\nandroidx/compose/runtime/EffectsKt$rememberCoroutineScope$1\n*L\n1#1,522:1\n486#2,4:523\n490#2,2:531\n494#2:537\n25#3:527\n1097#4,3:528\n1100#4,3:534\n486#5:533\n*S KotlinDebug\n*F\n+ 1 BackdropScaffold.kt\nandroidx/compose/material/BackdropScaffoldKt$BackdropScaffold$1\n*L\n298#1:523,4\n298#1:531,2\n298#1:537\n298#1:527\n298#1:528,3\n298#1:534,3\n298#1:533\n*E\n"
+    value = "SMAP\nBackdropScaffold.kt\nKotlin\n*S Kotlin\n*F\n+ 1 BackdropScaffold.kt\nandroidx/compose/material/BackdropScaffoldKt$BackdropScaffold$1\n+ 2 Effects.kt\nandroidx/compose/runtime/EffectsKt\n+ 3 Composables.kt\nandroidx/compose/runtime/ComposablesKt\n+ 4 Composer.kt\nandroidx/compose/runtime/ComposerKt\n+ 5 Effects.kt\nandroidx/compose/runtime/EffectsKt$rememberCoroutineScope$1\n*L\n1#1,524:1\n487#2,4:525\n491#2,2:533\n495#2:539\n25#3:529\n1116#4,3:530\n1119#4,3:536\n487#5:535\n*S KotlinDebug\n*F\n+ 1 BackdropScaffold.kt\nandroidx/compose/material/BackdropScaffoldKt$BackdropScaffold$1\n*L\n300#1:525,4\n300#1:533,2\n300#1:539\n300#1:529\n300#1:530,3\n300#1:536,3\n300#1:535\n*E\n"
 .end annotation
 
 .annotation runtime Lkotlin/Metadata;
@@ -52,10 +52,6 @@
 
 
 # instance fields
-.field final synthetic $$dirty:I
-
-.field final synthetic $$dirty1:I
-
 .field final synthetic $backLayer:Lkotlin/jvm/functions/Function2;
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -132,7 +128,7 @@
 
 
 # direct methods
-.method constructor <init>(Landroidx/compose/ui/Modifier;Lkotlin/jvm/functions/Function2;Lkotlin/jvm/functions/Function1;FZZLandroidx/compose/material/BackdropScaffoldState;FILandroidx/compose/ui/graphics/Shape;JJFIFFLkotlin/jvm/functions/Function2;JLkotlin/jvm/functions/Function3;)V
+.method constructor <init>(Landroidx/compose/ui/Modifier;Lkotlin/jvm/functions/Function2;Lkotlin/jvm/functions/Function1;FZZLandroidx/compose/material/BackdropScaffoldState;FLandroidx/compose/ui/graphics/Shape;JJFFFLkotlin/jvm/functions/Function2;JLkotlin/jvm/functions/Function3;)V
     .locals 3
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -151,9 +147,9 @@
             "Landroidx/compose/ui/unit/Constraints;",
             ">;FZZ",
             "Landroidx/compose/material/BackdropScaffoldState;",
-            "FI",
+            "F",
             "Landroidx/compose/ui/graphics/Shape;",
-            "JJFIFF",
+            "JJFFF",
             "Lkotlin/jvm/functions/Function2<",
             "-",
             "Landroidx/compose/runtime/Composer;",
@@ -207,47 +203,39 @@
 
     iput v1, v0, Landroidx/compose/material/BackdropScaffoldKt$BackdropScaffold$1;->$peekHeightPx:F
 
-    move v1, p9
-
-    iput v1, v0, Landroidx/compose/material/BackdropScaffoldKt$BackdropScaffold$1;->$$dirty:I
-
-    move-object v1, p10
+    move-object v1, p9
 
     iput-object v1, v0, Landroidx/compose/material/BackdropScaffoldKt$BackdropScaffold$1;->$frontLayerShape:Landroidx/compose/ui/graphics/Shape;
 
-    move-wide v1, p11
+    move-wide v1, p10
 
     iput-wide v1, v0, Landroidx/compose/material/BackdropScaffoldKt$BackdropScaffold$1;->$frontLayerBackgroundColor:J
 
-    move-wide/from16 v1, p13
+    move-wide v1, p12
 
     iput-wide v1, v0, Landroidx/compose/material/BackdropScaffoldKt$BackdropScaffold$1;->$frontLayerContentColor:J
 
-    move/from16 v1, p15
+    move/from16 v1, p14
 
     iput v1, v0, Landroidx/compose/material/BackdropScaffoldKt$BackdropScaffold$1;->$frontLayerElevation:F
 
-    move/from16 v1, p16
-
-    iput v1, v0, Landroidx/compose/material/BackdropScaffoldKt$BackdropScaffold$1;->$$dirty1:I
-
-    move/from16 v1, p17
+    move/from16 v1, p15
 
     iput v1, v0, Landroidx/compose/material/BackdropScaffoldKt$BackdropScaffold$1;->$headerHeight:F
 
-    move/from16 v1, p18
+    move/from16 v1, p16
 
     iput v1, v0, Landroidx/compose/material/BackdropScaffoldKt$BackdropScaffold$1;->$peekHeight:F
 
-    move-object/from16 v1, p19
+    move-object/from16 v1, p17
 
     iput-object v1, v0, Landroidx/compose/material/BackdropScaffoldKt$BackdropScaffold$1;->$frontLayerContent:Lkotlin/jvm/functions/Function2;
 
-    move-wide/from16 v1, p20
+    move-wide/from16 v1, p18
 
     iput-wide v1, v0, Landroidx/compose/material/BackdropScaffoldKt$BackdropScaffold$1;->$frontLayerScrimColor:J
 
-    move-object/from16 v1, p22
+    move-object/from16 v1, p20
 
     iput-object v1, v0, Landroidx/compose/material/BackdropScaffoldKt$BackdropScaffold$1;->$snackbarHost:Lkotlin/jvm/functions/Function3;
 
@@ -263,7 +251,7 @@
 .method public bridge synthetic invoke(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
 
-    .line 297
+    .line 299
     check-cast p1, Landroidx/compose/runtime/Composer;
 
     check-cast p2, Ljava/lang/Number;
@@ -280,7 +268,7 @@
 .end method
 
 .method public final invoke(Landroidx/compose/runtime/Composer;I)V
-    .locals 28
+    .locals 26
 
     move-object/from16 v0, p0
 
@@ -288,7 +276,7 @@
 
     move/from16 v1, p2
 
-    const-string v2, "C297@13395L24,298@13428L3119:BackdropScaffold.kt#jmzs0o"
+    const-string v2, "C299@13441L24,300@13474L3119:BackdropScaffold.kt#jmzs0o"
 
     invoke-static {v4, v2}, Landroidx/compose/runtime/ComposerKt;->sourceInformation(Landroidx/compose/runtime/Composer;Ljava/lang/String;)V
 
@@ -298,7 +286,7 @@
 
     if-ne v2, v3, :cond_1
 
-    .line 298
+    .line 300
     invoke-interface/range {p1 .. p1}, Landroidx/compose/runtime/Composer;->getSkipping()Z
 
     move-result v2
@@ -307,13 +295,13 @@
 
     goto :goto_0
 
-    .line 378
+    .line 380
     :cond_0
     invoke-interface/range {p1 .. p1}, Landroidx/compose/runtime/Composer;->skipToGroupEnd()V
 
     goto/16 :goto_1
 
-    .line 298
+    .line 300
     :cond_1
     :goto_0
     invoke-static {}, Landroidx/compose/runtime/ComposerKt;->isTraceInProgress()Z
@@ -324,7 +312,7 @@
 
     const/4 v2, -0x1
 
-    const-string v3, "androidx.compose.material.BackdropScaffold.<anonymous> (BackdropScaffold.kt:296)"
+    const-string v3, "androidx.compose.material.BackdropScaffold.<anonymous> (BackdropScaffold.kt:299)"
 
     const v5, -0x3e94597f
 
@@ -335,25 +323,25 @@
 
     invoke-interface {v4, v1}, Landroidx/compose/runtime/Composer;->startReplaceableGroup(I)V
 
-    const-string v1, "CC(rememberCoroutineScope)488@20446L144:Effects.kt#9igjgp"
+    const-string v1, "CC(rememberCoroutineScope)489@20472L144:Effects.kt#9igjgp"
 
     invoke-static {v4, v1}, Landroidx/compose/runtime/ComposerKt;->sourceInformation(Landroidx/compose/runtime/Composer;Ljava/lang/String;)V
 
     const v1, -0x1d58f75c
 
-    .line 526
+    .line 528
     invoke-interface {v4, v1}, Landroidx/compose/runtime/Composer;->startReplaceableGroup(I)V
 
     const-string v1, "CC(remember):Composables.kt#9igjgp"
 
     invoke-static {v4, v1}, Landroidx/compose/runtime/ComposerKt;->sourceInformation(Landroidx/compose/runtime/Composer;Ljava/lang/String;)V
 
-    .line 528
+    .line 530
     invoke-interface/range {p1 .. p1}, Landroidx/compose/runtime/Composer;->rememberedValue()Ljava/lang/Object;
 
     move-result-object v1
 
-    .line 529
+    .line 531
     sget-object v2, Landroidx/compose/runtime/Composer;->Companion:Landroidx/compose/runtime/Composer$Companion;
 
     invoke-virtual {v2}, Landroidx/compose/runtime/Composer$Companion;->getEmpty()Ljava/lang/Object;
@@ -362,63 +350,63 @@
 
     if-ne v1, v2, :cond_3
 
-    .line 533
+    .line 535
     sget-object v1, Lkotlin/coroutines/EmptyCoroutineContext;->INSTANCE:Lkotlin/coroutines/EmptyCoroutineContext;
 
-    .line 532
+    .line 534
     check-cast v1, Lkotlin/coroutines/CoroutineContext;
 
     invoke-static {v1, v4}, Landroidx/compose/runtime/EffectsKt;->createCompositionCoroutineScope(Lkotlin/coroutines/CoroutineContext;Landroidx/compose/runtime/Composer;)Lkotlinx/coroutines/CoroutineScope;
 
     move-result-object v1
 
-    .line 531
+    .line 533
     new-instance v2, Landroidx/compose/runtime/CompositionScopedCoroutineScopeCanceller;
 
     invoke-direct {v2, v1}, Landroidx/compose/runtime/CompositionScopedCoroutineScopeCanceller;-><init>(Lkotlinx/coroutines/CoroutineScope;)V
 
-    .line 534
+    .line 536
     invoke-interface {v4, v2}, Landroidx/compose/runtime/Composer;->updateRememberedValue(Ljava/lang/Object;)V
 
     move-object v1, v2
 
-    .line 527
+    .line 529
     :cond_3
     invoke-interface/range {p1 .. p1}, Landroidx/compose/runtime/Composer;->endReplaceableGroup()V
 
-    .line 526
+    .line 528
     check-cast v1, Landroidx/compose/runtime/CompositionScopedCoroutineScopeCanceller;
 
-    .line 537
+    .line 539
     invoke-virtual {v1}, Landroidx/compose/runtime/CompositionScopedCoroutineScopeCanceller;->getCoroutineScope()Lkotlinx/coroutines/CoroutineScope;
 
-    move-result-object v20
+    move-result-object v18
 
     invoke-interface/range {p1 .. p1}, Landroidx/compose/runtime/Composer;->endReplaceableGroup()V
 
-    .line 300
+    .line 302
     iget-object v1, v0, Landroidx/compose/material/BackdropScaffoldKt$BackdropScaffold$1;->$modifier:Landroidx/compose/ui/Modifier;
 
     const/4 v2, 0x0
 
     const/4 v3, 0x0
 
-    const/4 v15, 0x1
+    const/4 v14, 0x1
 
-    invoke-static {v1, v2, v15, v3}, Landroidx/compose/foundation/layout/SizeKt;->fillMaxSize$default(Landroidx/compose/ui/Modifier;FILjava/lang/Object;)Landroidx/compose/ui/Modifier;
+    invoke-static {v1, v2, v14, v3}, Landroidx/compose/foundation/layout/SizeKt;->fillMaxSize$default(Landroidx/compose/ui/Modifier;FILjava/lang/Object;)Landroidx/compose/ui/Modifier;
 
     move-result-object v1
 
-    .line 301
+    .line 303
     iget-object v2, v0, Landroidx/compose/material/BackdropScaffoldKt$BackdropScaffold$1;->$backLayer:Lkotlin/jvm/functions/Function2;
 
-    .line 302
+    .line 304
     iget-object v3, v0, Landroidx/compose/material/BackdropScaffoldKt$BackdropScaffold$1;->$calculateBackLayerConstraints:Lkotlin/jvm/functions/Function1;
 
-    .line 303
-    new-instance v13, Landroidx/compose/material/BackdropScaffoldKt$BackdropScaffold$1$1;
+    .line 305
+    new-instance v15, Landroidx/compose/material/BackdropScaffoldKt$BackdropScaffold$1$1;
 
-    move-object v5, v13
+    move-object v5, v15
 
     iget v6, v0, Landroidx/compose/material/BackdropScaffoldKt$BackdropScaffold$1;->$headerHeightPx:F
 
@@ -430,55 +418,49 @@
 
     iget v10, v0, Landroidx/compose/material/BackdropScaffoldKt$BackdropScaffold$1;->$peekHeightPx:F
 
-    iget v11, v0, Landroidx/compose/material/BackdropScaffoldKt$BackdropScaffold$1;->$$dirty:I
+    iget-object v11, v0, Landroidx/compose/material/BackdropScaffoldKt$BackdropScaffold$1;->$frontLayerShape:Landroidx/compose/ui/graphics/Shape;
 
-    iget-object v12, v0, Landroidx/compose/material/BackdropScaffoldKt$BackdropScaffold$1;->$frontLayerShape:Landroidx/compose/ui/graphics/Shape;
+    iget-wide v12, v0, Landroidx/compose/material/BackdropScaffoldKt$BackdropScaffold$1;->$frontLayerBackgroundColor:J
 
-    move-object/from16 p2, v13
+    move-object/from16 v16, v15
 
-    iget-wide v13, v0, Landroidx/compose/material/BackdropScaffoldKt$BackdropScaffold$1;->$frontLayerBackgroundColor:J
+    iget-wide v14, v0, Landroidx/compose/material/BackdropScaffoldKt$BackdropScaffold$1;->$frontLayerContentColor:J
 
-    move-object/from16 v26, v3
+    move-object/from16 p2, v2
 
-    move-object/from16 v3, p2
+    move-object/from16 v24, v3
 
-    move-object/from16 p2, v1
+    move-object/from16 v3, v16
 
-    move-object/from16 v27, v2
+    const/4 v2, 0x1
 
-    iget-wide v1, v0, Landroidx/compose/material/BackdropScaffoldKt$BackdropScaffold$1;->$frontLayerContentColor:J
+    iget v2, v0, Landroidx/compose/material/BackdropScaffoldKt$BackdropScaffold$1;->$frontLayerElevation:F
 
-    move-wide v15, v1
+    move/from16 v16, v2
 
-    iget v1, v0, Landroidx/compose/material/BackdropScaffoldKt$BackdropScaffold$1;->$frontLayerElevation:F
+    iget v2, v0, Landroidx/compose/material/BackdropScaffoldKt$BackdropScaffold$1;->$headerHeight:F
 
-    move/from16 v17, v1
+    move/from16 v17, v2
 
-    iget v1, v0, Landroidx/compose/material/BackdropScaffoldKt$BackdropScaffold$1;->$$dirty1:I
+    iget v2, v0, Landroidx/compose/material/BackdropScaffoldKt$BackdropScaffold$1;->$peekHeight:F
 
-    move/from16 v18, v1
+    move/from16 v19, v2
 
-    iget v1, v0, Landroidx/compose/material/BackdropScaffoldKt$BackdropScaffold$1;->$headerHeight:F
+    iget-object v2, v0, Landroidx/compose/material/BackdropScaffoldKt$BackdropScaffold$1;->$frontLayerContent:Lkotlin/jvm/functions/Function2;
 
-    move/from16 v19, v1
+    move-object/from16 v20, v2
 
-    iget v1, v0, Landroidx/compose/material/BackdropScaffoldKt$BackdropScaffold$1;->$peekHeight:F
-
-    move/from16 v21, v1
-
-    iget-object v1, v0, Landroidx/compose/material/BackdropScaffoldKt$BackdropScaffold$1;->$frontLayerContent:Lkotlin/jvm/functions/Function2;
-
-    move-object/from16 v22, v1
+    move-object/from16 v25, v1
 
     iget-wide v1, v0, Landroidx/compose/material/BackdropScaffoldKt$BackdropScaffold$1;->$frontLayerScrimColor:J
 
-    move-wide/from16 v23, v1
+    move-wide/from16 v21, v1
 
     iget-object v0, v0, Landroidx/compose/material/BackdropScaffoldKt$BackdropScaffold$1;->$snackbarHost:Lkotlin/jvm/functions/Function3;
 
-    move-object/from16 v25, v0
+    move-object/from16 v23, v0
 
-    invoke-direct/range {v5 .. v25}, Landroidx/compose/material/BackdropScaffoldKt$BackdropScaffold$1$1;-><init>(FZZLandroidx/compose/material/BackdropScaffoldState;FILandroidx/compose/ui/graphics/Shape;JJFIFLkotlinx/coroutines/CoroutineScope;FLkotlin/jvm/functions/Function2;JLkotlin/jvm/functions/Function3;)V
+    invoke-direct/range {v5 .. v23}, Landroidx/compose/material/BackdropScaffoldKt$BackdropScaffold$1$1;-><init>(FZZLandroidx/compose/material/BackdropScaffoldState;FLandroidx/compose/ui/graphics/Shape;JJFFLkotlinx/coroutines/CoroutineScope;FLkotlin/jvm/functions/Function2;JLkotlin/jvm/functions/Function3;)V
 
     const v0, 0x6b4a8b95
 
@@ -494,15 +476,15 @@
 
     const/16 v5, 0xc30
 
-    move-object/from16 v0, p2
+    move-object/from16 v0, v25
 
-    move-object/from16 v1, v27
+    move-object/from16 v1, p2
 
-    move-object/from16 v2, v26
+    move-object/from16 v2, v24
 
     move-object/from16 v4, p1
 
-    .line 299
+    .line 301
     invoke-static/range {v0 .. v5}, Landroidx/compose/material/BackdropScaffoldKt;->access$BackdropStack(Landroidx/compose/ui/Modifier;Lkotlin/jvm/functions/Function2;Lkotlin/jvm/functions/Function1;Lkotlin/jvm/functions/Function4;Landroidx/compose/runtime/Composer;I)V
 
     invoke-static {}, Landroidx/compose/runtime/ComposerKt;->isTraceInProgress()Z

@@ -54,7 +54,7 @@
 .method private constructor <init>()V
     .locals 0
 
-    .line 1351
+    .line 1366
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -81,7 +81,7 @@
         }
     .end annotation
 
-    .line 1370
+    .line 1385
     invoke-static {}, Landroidx/compose/ui/node/LayoutNode;->access$getConstructor$cp()Lkotlin/jvm/functions/Function0;
 
     move-result-object p0
@@ -92,7 +92,7 @@
 .method public final getDummyViewConfiguration$ui_release()Landroidx/compose/ui/platform/ViewConfiguration;
     .locals 0
 
-    .line 1376
+    .line 1391
     invoke-static {}, Landroidx/compose/ui/node/LayoutNode;->access$getDummyViewConfiguration$cp()Landroidx/compose/ui/platform/ViewConfiguration;
 
     move-result-object p0
@@ -111,7 +111,7 @@
         }
     .end annotation
 
-    .line 1392
+    .line 1407
     invoke-static {}, Landroidx/compose/ui/node/LayoutNode;->access$getZComparator$cp()Ljava/util/Comparator;
 
     move-result-object p0

@@ -75,11 +75,11 @@
 
 .field final synthetic $p6:Ljava/lang/Object;
 
+.field final synthetic $p7:Ljava/lang/Object;
+
 .field final synthetic $p8:Ljava/lang/Object;
 
 .field final synthetic $p9:Ljava/lang/Object;
-
-.field final synthetic $param7:Ljava/lang/Object;
 
 .field final synthetic this$0:Landroidx/compose/runtime/internal/ComposableLambdaImpl;
 
@@ -120,7 +120,7 @@
 
     move-object v1, p8
 
-    iput-object v1, v0, Landroidx/compose/runtime/internal/ComposableLambdaImpl$invoke$13;->$param7:Ljava/lang/Object;
+    iput-object v1, v0, Landroidx/compose/runtime/internal/ComposableLambdaImpl$invoke$13;->$p7:Ljava/lang/Object;
 
     move-object v1, p9
 
@@ -166,7 +166,7 @@
 .method public bridge synthetic invoke(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
 
-    .line 685
+    .line 692
     check-cast p1, Landroidx/compose/runtime/Composer;
 
     check-cast p2, Ljava/lang/Number;
@@ -189,57 +189,51 @@
 
     move-object/from16 v15, p1
 
-    const-string v1, "nc"
-
-    move-object/from16 v2, p1
-
-    invoke-static {v2, v1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 686
+    .line 693
     iget-object v1, v0, Landroidx/compose/runtime/internal/ComposableLambdaImpl$invoke$13;->this$0:Landroidx/compose/runtime/internal/ComposableLambdaImpl;
 
-    .line 687
+    .line 694
     iget-object v2, v0, Landroidx/compose/runtime/internal/ComposableLambdaImpl$invoke$13;->$p1:Ljava/lang/Object;
 
-    .line 688
+    .line 695
     iget-object v3, v0, Landroidx/compose/runtime/internal/ComposableLambdaImpl$invoke$13;->$p2:Ljava/lang/Object;
 
-    .line 689
+    .line 696
     iget-object v4, v0, Landroidx/compose/runtime/internal/ComposableLambdaImpl$invoke$13;->$p3:Ljava/lang/Object;
 
-    .line 690
+    .line 697
     iget-object v5, v0, Landroidx/compose/runtime/internal/ComposableLambdaImpl$invoke$13;->$p4:Ljava/lang/Object;
 
-    .line 691
+    .line 698
     iget-object v6, v0, Landroidx/compose/runtime/internal/ComposableLambdaImpl$invoke$13;->$p5:Ljava/lang/Object;
 
-    .line 692
+    .line 699
     iget-object v7, v0, Landroidx/compose/runtime/internal/ComposableLambdaImpl$invoke$13;->$p6:Ljava/lang/Object;
 
-    .line 693
-    iget-object v8, v0, Landroidx/compose/runtime/internal/ComposableLambdaImpl$invoke$13;->$param7:Ljava/lang/Object;
+    .line 700
+    iget-object v8, v0, Landroidx/compose/runtime/internal/ComposableLambdaImpl$invoke$13;->$p7:Ljava/lang/Object;
 
-    .line 694
+    .line 701
     iget-object v9, v0, Landroidx/compose/runtime/internal/ComposableLambdaImpl$invoke$13;->$p8:Ljava/lang/Object;
 
-    .line 695
+    .line 702
     iget-object v10, v0, Landroidx/compose/runtime/internal/ComposableLambdaImpl$invoke$13;->$p9:Ljava/lang/Object;
 
-    .line 696
+    .line 703
     iget-object v11, v0, Landroidx/compose/runtime/internal/ComposableLambdaImpl$invoke$13;->$p10:Ljava/lang/Object;
 
-    .line 697
+    .line 704
     iget-object v12, v0, Landroidx/compose/runtime/internal/ComposableLambdaImpl$invoke$13;->$p11:Ljava/lang/Object;
 
-    .line 698
+    .line 705
     iget-object v13, v0, Landroidx/compose/runtime/internal/ComposableLambdaImpl$invoke$13;->$p12:Ljava/lang/Object;
 
-    .line 699
+    .line 706
     iget-object v14, v0, Landroidx/compose/runtime/internal/ComposableLambdaImpl$invoke$13;->$p13:Ljava/lang/Object;
 
     move-object/from16 p1, v1
 
-    .line 701
+    .line 708
     iget v1, v0, Landroidx/compose/runtime/internal/ComposableLambdaImpl$invoke$13;->$changed:I
 
     invoke-static {v1}, Landroidx/compose/runtime/RecomposeScopeImplKt;->updateChangedFlags(I)I
@@ -248,7 +242,7 @@
 
     or-int/lit8 v16, v1, 0x1
 
-    .line 702
+    .line 709
     iget v0, v0, Landroidx/compose/runtime/internal/ComposableLambdaImpl$invoke$13;->$changed1:I
 
     invoke-static {v0}, Landroidx/compose/runtime/RecomposeScopeImplKt;->updateChangedFlags(I)I
@@ -257,7 +251,7 @@
 
     move-object/from16 v1, p1
 
-    .line 686
+    .line 693
     invoke-virtual/range {v1 .. v17}, Landroidx/compose/runtime/internal/ComposableLambdaImpl;->invoke(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Landroidx/compose/runtime/Composer;II)Ljava/lang/Object;
 
     return-void

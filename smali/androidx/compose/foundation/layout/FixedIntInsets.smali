@@ -61,19 +61,19 @@
 .method public constructor <init>(IIII)V
     .locals 0
 
-    .line 282
+    .line 284
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 284
+    .line 286
     iput p1, p0, Landroidx/compose/foundation/layout/FixedIntInsets;->leftVal:I
 
-    .line 285
+    .line 287
     iput p2, p0, Landroidx/compose/foundation/layout/FixedIntInsets;->topVal:I
 
-    .line 286
+    .line 288
     iput p3, p0, Landroidx/compose/foundation/layout/FixedIntInsets;->rightVal:I
 
-    .line 287
+    .line 289
     iput p4, p0, Landroidx/compose/foundation/layout/FixedIntInsets;->bottomVal:I
 
     return-void
@@ -90,7 +90,7 @@
 
     return v0
 
-    .line 302
+    .line 304
     :cond_0
     instance-of v1, p1, Landroidx/compose/foundation/layout/FixedIntInsets;
 
@@ -100,7 +100,7 @@
 
     return v2
 
-    .line 306
+    .line 308
     :cond_1
     iget v1, p0, Landroidx/compose/foundation/layout/FixedIntInsets;->leftVal:I
 
@@ -116,7 +116,7 @@
 
     if-ne v1, v3, :cond_2
 
-    .line 307
+    .line 309
     iget v1, p0, Landroidx/compose/foundation/layout/FixedIntInsets;->rightVal:I
 
     iget v3, p1, Landroidx/compose/foundation/layout/FixedIntInsets;->rightVal:I
@@ -139,60 +139,36 @@
 .end method
 
 .method public getBottom(Landroidx/compose/ui/unit/Density;)I
-    .locals 1
+    .locals 0
 
-    const-string v0, "density"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 292
+    .line 294
     iget p0, p0, Landroidx/compose/foundation/layout/FixedIntInsets;->bottomVal:I
 
     return p0
 .end method
 
 .method public getLeft(Landroidx/compose/ui/unit/Density;Landroidx/compose/ui/unit/LayoutDirection;)I
-    .locals 1
+    .locals 0
 
-    const-string v0, "density"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string p1, "layoutDirection"
-
-    invoke-static {p2, p1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 289
+    .line 291
     iget p0, p0, Landroidx/compose/foundation/layout/FixedIntInsets;->leftVal:I
 
     return p0
 .end method
 
 .method public getRight(Landroidx/compose/ui/unit/Density;Landroidx/compose/ui/unit/LayoutDirection;)I
-    .locals 1
+    .locals 0
 
-    const-string v0, "density"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string p1, "layoutDirection"
-
-    invoke-static {p2, p1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 291
+    .line 293
     iget p0, p0, Landroidx/compose/foundation/layout/FixedIntInsets;->rightVal:I
 
     return p0
 .end method
 
 .method public getTop(Landroidx/compose/ui/unit/Density;)I
-    .locals 1
+    .locals 0
 
-    const-string v0, "density"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 290
+    .line 292
     iget p0, p0, Landroidx/compose/foundation/layout/FixedIntInsets;->topVal:I
 
     return p0
@@ -201,26 +177,26 @@
 .method public hashCode()I
     .locals 2
 
-    .line 311
+    .line 313
     iget v0, p0, Landroidx/compose/foundation/layout/FixedIntInsets;->leftVal:I
 
     mul-int/lit8 v0, v0, 0x1f
 
-    .line 312
+    .line 314
     iget v1, p0, Landroidx/compose/foundation/layout/FixedIntInsets;->topVal:I
 
     add-int/2addr v0, v1
 
     mul-int/lit8 v0, v0, 0x1f
 
-    .line 313
+    .line 315
     iget v1, p0, Landroidx/compose/foundation/layout/FixedIntInsets;->rightVal:I
 
     add-int/2addr v0, v1
 
     mul-int/lit8 v0, v0, 0x1f
 
-    .line 314
+    .line 316
     iget p0, p0, Landroidx/compose/foundation/layout/FixedIntInsets;->bottomVal:I
 
     add-int/2addr v0, p0
@@ -231,7 +207,7 @@
 .method public toString()Ljava/lang/String;
     .locals 2
 
-    .line 295
+    .line 297
     new-instance v0, Ljava/lang/StringBuilder;
 
     const-string v1, "Insets(left="

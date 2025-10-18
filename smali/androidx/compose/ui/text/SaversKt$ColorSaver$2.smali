@@ -79,7 +79,7 @@
 .method public bridge synthetic invoke(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
 
-    .line 358
+    .line 379
     invoke-virtual {p0, p1}, Landroidx/compose/ui/text/SaversKt$ColorSaver$2;->invoke-ijrfgN4(Ljava/lang/Object;)Landroidx/compose/ui/graphics/Color;
 
     move-result-object p0
@@ -90,21 +90,43 @@
 .method public final invoke-ijrfgN4(Ljava/lang/Object;)Landroidx/compose/ui/graphics/Color;
     .locals 0
 
-    const-string p0, "it"
+    const/4 p0, 0x0
 
-    invoke-static {p1, p0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+    .line 384
+    invoke-static {p0}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
-    .line 360
-    check-cast p1, Lkotlin/ULong;
+    move-result-object p0
 
-    invoke-virtual {p1}, Lkotlin/ULong;->unbox-impl()J
+    invoke-static {p1, p0}, Lkotlin/jvm/internal/Intrinsics;->areEqual(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    move-result p0
+
+    if-eqz p0, :cond_0
+
+    sget-object p0, Landroidx/compose/ui/graphics/Color;->Companion:Landroidx/compose/ui/graphics/Color$Companion;
+
+    invoke-virtual {p0}, Landroidx/compose/ui/graphics/Color$Companion;->getUnspecified-0d7_KjU()J
 
     move-result-wide p0
 
-    invoke-static {p0, p1}, Landroidx/compose/ui/graphics/Color;->constructor-impl(J)J
+    goto :goto_0
+
+    :cond_0
+    const-string p0, "null cannot be cast to non-null type kotlin.Int"
+
+    invoke-static {p1, p0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;Ljava/lang/String;)V
+
+    check-cast p1, Ljava/lang/Integer;
+
+    invoke-virtual {p1}, Ljava/lang/Integer;->intValue()I
+
+    move-result p0
+
+    invoke-static {p0}, Landroidx/compose/ui/graphics/ColorKt;->Color(I)J
 
     move-result-wide p0
 
+    :goto_0
     invoke-static {p0, p1}, Landroidx/compose/ui/graphics/Color;->box-impl(J)Landroidx/compose/ui/graphics/Color;
 
     move-result-object p0

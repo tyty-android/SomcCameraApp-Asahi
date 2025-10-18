@@ -151,7 +151,7 @@
 
     invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 626
+    .line 644
     instance-of v0, p0, Lkotlin/sequences/ConstrainedOnceSequence;
 
     if-eqz v0, :cond_0
@@ -229,7 +229,7 @@
 
     invoke-static {p2, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 328
+    .line 346
     new-instance v0, Lkotlin/sequences/SequencesKt__SequencesKt$flatMapIndexed$1;
 
     const/4 v1, 0x0
@@ -378,14 +378,14 @@
 
     if-nez p0, :cond_0
 
-    .line 660
+    .line 678
     sget-object p0, Lkotlin/sequences/EmptySequence;->INSTANCE:Lkotlin/sequences/EmptySequence;
 
     check-cast p0, Lkotlin/sequences/Sequence;
 
     goto :goto_0
 
-    .line 662
+    .line 680
     :cond_0
     new-instance v0, Lkotlin/sequences/GeneratorSequence;
 
@@ -423,7 +423,7 @@
 
     invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 641
+    .line 659
     new-instance v0, Lkotlin/sequences/GeneratorSequence;
 
     new-instance v1, Lkotlin/sequences/SequencesKt__SequencesKt$generateSequence$1;
@@ -467,7 +467,7 @@
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 678
+    .line 696
     new-instance v0, Lkotlin/sequences/GeneratorSequence;
 
     invoke-direct {v0, p0, p1}, Lkotlin/sequences/GeneratorSequence;-><init>(Lkotlin/jvm/functions/Function0;Lkotlin/jvm/functions/Function1;)V
@@ -561,22 +561,10 @@
     invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 37
-    array-length v0, p0
-
-    if-nez v0, :cond_0
-
-    invoke-static {}, Lkotlin/sequences/SequencesKt;->emptySequence()Lkotlin/sequences/Sequence;
-
-    move-result-object p0
-
-    goto :goto_0
-
-    :cond_0
     invoke-static {p0}, Lkotlin/collections/ArraysKt;->asSequence([Ljava/lang/Object;)Lkotlin/sequences/Sequence;
 
     move-result-object p0
 
-    :goto_0
     return-object p0
 .end method
 

@@ -22,10 +22,10 @@
 .method constructor <init>(Lcom/sonymobile/android/media/internal/AudioTrack;Landroid/os/Looper;)V
     .locals 0
 
-    .line 711
+    .line 737
     iput-object p1, p0, Lcom/sonymobile/android/media/internal/AudioTrack$AudioRecordHandler;->this$0:Lcom/sonymobile/android/media/internal/AudioTrack;
 
-    .line 712
+    .line 738
     invoke-direct {p0, p2}, Landroid/os/Handler;-><init>(Landroid/os/Looper;)V
 
     return-void
@@ -43,7 +43,7 @@
 
     move/from16 v2, p1
 
-    .line 723
+    .line 749
     iget-object v1, v0, Lcom/sonymobile/android/media/internal/AudioTrack$AudioRecordHandler;->this$0:Lcom/sonymobile/android/media/internal/AudioTrack;
 
     iget-object v1, v1, Lcom/sonymobile/android/media/internal/AudioTrack;->mEncoder:Landroid/media/MediaCodec;
@@ -56,7 +56,7 @@
 
     return-void
 
-    .line 727
+    .line 753
     :cond_0
     iget-object v3, v0, Lcom/sonymobile/android/media/internal/AudioTrack$AudioRecordHandler;->this$0:Lcom/sonymobile/android/media/internal/AudioTrack;
 
@@ -74,7 +74,7 @@
 
     invoke-static {v3, v4, v5}, Lcom/sonymobile/android/media/internal/AudioTrack;->-$$Nest$fputmTotalMuteBytes(Lcom/sonymobile/android/media/internal/AudioTrack;J)V
 
-    .line 728
+    .line 754
     iget-object v3, v0, Lcom/sonymobile/android/media/internal/AudioTrack$AudioRecordHandler;->this$0:Lcom/sonymobile/android/media/internal/AudioTrack;
 
     invoke-static {v3}, Lcom/sonymobile/android/media/internal/AudioTrack;->-$$Nest$fgetmTotalMuteBytes(Lcom/sonymobile/android/media/internal/AudioTrack;)J
@@ -115,14 +115,14 @@
 
     div-long v8, v3, v7
 
-    .line 731
+    .line 757
     iget-object v3, v0, Lcom/sonymobile/android/media/internal/AudioTrack$AudioRecordHandler;->this$0:Lcom/sonymobile/android/media/internal/AudioTrack;
 
     iget v3, v3, Lcom/sonymobile/android/media/internal/AudioTrack;->mCaptureRate:I
 
     if-lez v3, :cond_1
 
-    .line 732
+    .line 758
     iget-object v3, v0, Lcom/sonymobile/android/media/internal/AudioTrack$AudioRecordHandler;->this$0:Lcom/sonymobile/android/media/internal/AudioTrack;
 
     iget v3, v3, Lcom/sonymobile/android/media/internal/AudioTrack;->mCaptureRate:I
@@ -147,7 +147,7 @@
 
     if-gez v3, :cond_2
 
-    .line 735
+    .line 761
     invoke-virtual {v1}, Ljava/nio/ByteBuffer;->limit()I
 
     move-result v3
@@ -156,7 +156,7 @@
 
     invoke-virtual {v1, v3}, Ljava/nio/ByteBuffer;->put([B)Ljava/nio/ByteBuffer;
 
-    .line 736
+    .line 762
     iget-object v3, v0, Lcom/sonymobile/android/media/internal/AudioTrack$AudioRecordHandler;->this$0:Lcom/sonymobile/android/media/internal/AudioTrack;
 
     iget-object v3, v3, Lcom/sonymobile/android/media/internal/AudioTrack;->mEncoder:Landroid/media/MediaCodec;
@@ -183,14 +183,14 @@
 
     invoke-virtual/range {v1 .. v7}, Landroid/media/MediaCodec;->queueInputBuffer(IIIJI)V
 
-    .line 738
+    .line 764
     iget-object v0, v0, Lcom/sonymobile/android/media/internal/AudioTrack$AudioRecordHandler;->this$0:Lcom/sonymobile/android/media/internal/AudioTrack;
 
     invoke-static {v0, v8, v9}, Lcom/sonymobile/android/media/internal/AudioTrack;->-$$Nest$fputmTotalMuteDurationUs(Lcom/sonymobile/android/media/internal/AudioTrack;J)V
 
     return-void
 
-    .line 742
+    .line 768
     :cond_2
     iget-object v3, v0, Lcom/sonymobile/android/media/internal/AudioTrack$AudioRecordHandler;->this$0:Lcom/sonymobile/android/media/internal/AudioTrack;
 
@@ -214,7 +214,7 @@
 
     add-long/2addr v7, v3
 
-    .line 743
+    .line 769
     iget-object v3, v0, Lcom/sonymobile/android/media/internal/AudioTrack$AudioRecordHandler;->this$0:Lcom/sonymobile/android/media/internal/AudioTrack;
 
     invoke-static {v3}, Lcom/sonymobile/android/media/internal/AudioTrack;->-$$Nest$fgetmAudioRecorder(Lcom/sonymobile/android/media/internal/AudioTrack;)Landroid/media/AudioRecord;
@@ -231,7 +231,7 @@
 
     move-result v3
 
-    .line 744
+    .line 770
     iget-object v4, v0, Lcom/sonymobile/android/media/internal/AudioTrack$AudioRecordHandler;->this$0:Lcom/sonymobile/android/media/internal/AudioTrack;
 
     invoke-static {v4}, Lcom/sonymobile/android/media/internal/AudioTrack;->-$$Nest$fgetmNumAudioChannels(Lcom/sonymobile/android/media/internal/AudioTrack;)I
@@ -252,7 +252,7 @@
 
     mul-long/2addr v9, v5
 
-    .line 745
+    .line 771
     iget-object v4, v0, Lcom/sonymobile/android/media/internal/AudioTrack$AudioRecordHandler;->this$0:Lcom/sonymobile/android/media/internal/AudioTrack;
 
     invoke-static {v4}, Lcom/sonymobile/android/media/internal/AudioTrack;->-$$Nest$fgetmAudioEncodeSamplingRate(Lcom/sonymobile/android/media/internal/AudioTrack;)I
@@ -263,7 +263,7 @@
 
     div-long/2addr v9, v4
 
-    .line 747
+    .line 773
     iget-object v4, v0, Lcom/sonymobile/android/media/internal/AudioTrack$AudioRecordHandler;->this$0:Lcom/sonymobile/android/media/internal/AudioTrack;
 
     invoke-static {v4}, Lcom/sonymobile/android/media/internal/AudioTrack;->-$$Nest$fgetmFirstAudioFrameTimeUs(Lcom/sonymobile/android/media/internal/AudioTrack;)J
@@ -276,7 +276,7 @@
 
     if-gez v4, :cond_3
 
-    .line 748
+    .line 774
     iget-object v4, v0, Lcom/sonymobile/android/media/internal/AudioTrack$AudioRecordHandler;->this$0:Lcom/sonymobile/android/media/internal/AudioTrack;
 
     invoke-static {v4}, Lcom/sonymobile/android/media/internal/AudioTrack;->-$$Nest$mcalculateFirstAudioFrameTimeUs(Lcom/sonymobile/android/media/internal/AudioTrack;)J
@@ -293,7 +293,7 @@
 
     invoke-static {v4, v5, v6}, Lcom/sonymobile/android/media/internal/AudioTrack;->-$$Nest$fputmFirstAudioFrameTimeUs(Lcom/sonymobile/android/media/internal/AudioTrack;J)V
 
-    .line 751
+    .line 777
     :cond_3
     iget-object v4, v0, Lcom/sonymobile/android/media/internal/AudioTrack$AudioRecordHandler;->this$0:Lcom/sonymobile/android/media/internal/AudioTrack;
 
@@ -325,7 +325,7 @@
 
     iget-object v15, v15, Lcom/sonymobile/android/media/internal/AudioTrack;->mClock:Lcom/sonymobile/android/media/internal/ClockInterface;
 
-    .line 752
+    .line 778
     invoke-interface {v15}, Lcom/sonymobile/android/media/internal/ClockInterface;->getDurationAtPauseUs()J
 
     move-result-wide v15
@@ -343,7 +343,7 @@
 
     if-eqz v4, :cond_9
 
-    .line 754
+    .line 780
     :cond_5
     iget-object v4, v0, Lcom/sonymobile/android/media/internal/AudioTrack$AudioRecordHandler;->this$0:Lcom/sonymobile/android/media/internal/AudioTrack;
 
@@ -351,19 +351,19 @@
 
     if-nez v4, :cond_6
 
-    .line 755
+    .line 781
     iget-object v4, v0, Lcom/sonymobile/android/media/internal/AudioTrack$AudioRecordHandler;->this$0:Lcom/sonymobile/android/media/internal/AudioTrack;
 
     iget-object v4, v4, Lcom/sonymobile/android/media/internal/AudioTrack;->mPauseLatch:Ljava/util/concurrent/CountDownLatch;
 
     invoke-virtual {v4}, Ljava/util/concurrent/CountDownLatch;->countDown()V
 
-    .line 756
+    .line 782
     iget-object v4, v0, Lcom/sonymobile/android/media/internal/AudioTrack$AudioRecordHandler;->this$0:Lcom/sonymobile/android/media/internal/AudioTrack;
 
     iput-boolean v13, v4, Lcom/sonymobile/android/media/internal/AudioTrack;->mIsPauseLatchDown:Z
 
-    .line 759
+    .line 785
     :cond_6
     iget-object v4, v0, Lcom/sonymobile/android/media/internal/AudioTrack$AudioRecordHandler;->this$0:Lcom/sonymobile/android/media/internal/AudioTrack;
 
@@ -373,7 +373,7 @@
 
     if-nez v4, :cond_14
 
-    .line 760
+    .line 786
     iget-object v4, v0, Lcom/sonymobile/android/media/internal/AudioTrack$AudioRecordHandler;->this$0:Lcom/sonymobile/android/media/internal/AudioTrack;
 
     invoke-static {v4}, Lcom/sonymobile/android/media/internal/AudioTrack;->-$$Nest$fgetmInputBufferSize(Lcom/sonymobile/android/media/internal/AudioTrack;)I
@@ -386,7 +386,7 @@
 
     if-le v4, v5, :cond_7
 
-    .line 761
+    .line 787
     iget-object v4, v0, Lcom/sonymobile/android/media/internal/AudioTrack$AudioRecordHandler;->this$0:Lcom/sonymobile/android/media/internal/AudioTrack;
 
     invoke-virtual {v1}, Ljava/nio/ByteBuffer;->limit()I
@@ -398,10 +398,10 @@
     :cond_7
     if-gez v3, :cond_8
 
-    .line 764
+    .line 790
     invoke-static {v11, v6}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 765
+    .line 791
     iget-object v0, v0, Lcom/sonymobile/android/media/internal/AudioTrack$AudioRecordHandler;->this$0:Lcom/sonymobile/android/media/internal/AudioTrack;
 
     invoke-static {v0}, Lcom/sonymobile/android/media/internal/AudioTrack;->-$$Nest$fgetmCallback(Lcom/sonymobile/android/media/internal/AudioTrack;)Landroid/os/Handler;
@@ -412,12 +412,12 @@
 
     move-result-object v0
 
-    .line 766
+    .line 792
     invoke-virtual {v0}, Landroid/os/Message;->sendToTarget()V
 
     return-void
 
-    .line 770
+    .line 796
     :cond_8
     iget-object v1, v0, Lcom/sonymobile/android/media/internal/AudioTrack$AudioRecordHandler;->this$0:Lcom/sonymobile/android/media/internal/AudioTrack;
 
@@ -431,7 +431,7 @@
 
     move-result-object v1
 
-    .line 772
+    .line 798
     iget-object v0, v0, Lcom/sonymobile/android/media/internal/AudioTrack$AudioRecordHandler;->this$0:Lcom/sonymobile/android/media/internal/AudioTrack;
 
     invoke-static {v0}, Lcom/sonymobile/android/media/internal/AudioTrack;->-$$Nest$fgetmAudioRecordHandler(Lcom/sonymobile/android/media/internal/AudioTrack;)Lcom/sonymobile/android/media/internal/AudioTrack$AudioRecordHandler;
@@ -444,7 +444,7 @@
 
     goto/16 :goto_5
 
-    .line 774
+    .line 800
     :cond_9
     iget-object v4, v0, Lcom/sonymobile/android/media/internal/AudioTrack$AudioRecordHandler;->this$0:Lcom/sonymobile/android/media/internal/AudioTrack;
 
@@ -454,7 +454,7 @@
 
     if-eq v4, v5, :cond_14
 
-    .line 775
+    .line 801
     iget-object v4, v0, Lcom/sonymobile/android/media/internal/AudioTrack$AudioRecordHandler;->this$0:Lcom/sonymobile/android/media/internal/AudioTrack;
 
     iget-object v4, v4, Lcom/sonymobile/android/media/internal/AudioTrack;->mState:Lcom/sonymobile/android/media/internal/Track$States;
@@ -463,7 +463,7 @@
 
     if-ne v4, v5, :cond_a
 
-    .line 776
+    .line 802
     iget-object v4, v0, Lcom/sonymobile/android/media/internal/AudioTrack$AudioRecordHandler;->this$0:Lcom/sonymobile/android/media/internal/AudioTrack;
 
     invoke-static {}, Ljava/lang/System;->nanoTime()J
@@ -476,7 +476,7 @@
 
     invoke-static {v4, v12, v13}, Lcom/sonymobile/android/media/internal/AudioTrack;->-$$Nest$fputmClockStopQueueInputBufferTimeUs(Lcom/sonymobile/android/media/internal/AudioTrack;J)V
 
-    .line 778
+    .line 804
     :cond_a
     iget-object v4, v0, Lcom/sonymobile/android/media/internal/AudioTrack$AudioRecordHandler;->this$0:Lcom/sonymobile/android/media/internal/AudioTrack;
 
@@ -486,7 +486,7 @@
 
     if-nez v4, :cond_14
 
-    .line 779
+    .line 805
     iget-object v4, v0, Lcom/sonymobile/android/media/internal/AudioTrack$AudioRecordHandler;->this$0:Lcom/sonymobile/android/media/internal/AudioTrack;
 
     invoke-static {v4}, Lcom/sonymobile/android/media/internal/AudioTrack;->-$$Nest$fgetmInputBufferSize(Lcom/sonymobile/android/media/internal/AudioTrack;)I
@@ -499,7 +499,7 @@
 
     if-le v4, v12, :cond_b
 
-    .line 780
+    .line 806
     iget-object v4, v0, Lcom/sonymobile/android/media/internal/AudioTrack$AudioRecordHandler;->this$0:Lcom/sonymobile/android/media/internal/AudioTrack;
 
     invoke-virtual {v1}, Ljava/nio/ByteBuffer;->limit()I
@@ -511,19 +511,19 @@
     :cond_b
     if-lez v3, :cond_10
 
-    .line 785
+    .line 811
     div-int/lit8 v4, v3, 0x2
 
     new-array v12, v4, [S
 
-    .line 786
+    .line 812
     invoke-virtual {v1}, Ljava/nio/ByteBuffer;->asShortBuffer()Ljava/nio/ShortBuffer;
 
     move-result-object v13
 
     invoke-virtual {v13, v12}, Ljava/nio/ShortBuffer;->get([S)Ljava/nio/ShortBuffer;
 
-    .line 787
+    .line 813
     iget-object v13, v0, Lcom/sonymobile/android/media/internal/AudioTrack$AudioRecordHandler;->this$0:Lcom/sonymobile/android/media/internal/AudioTrack;
 
     iget-boolean v13, v13, Lcom/sonymobile/android/media/internal/AudioTrack;->mIsStreamingMode:Z
@@ -536,7 +536,7 @@
 
     sget-object v15, Ljp/co/sony/mc/camera/setting/CommonSettings;->STREAMING_AUDIO_MUTE:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
 
-    .line 788
+    .line 814
     invoke-virtual {v13, v15}, Ljp/co/sony/mc/camera/setting/CameraProSetting;->get(Ljp/co/sony/mc/camera/setting/SettingKey$Key;)Ljava/lang/Object;
 
     move-result-object v13
@@ -556,7 +556,7 @@
     :cond_c
     move v13, v14
 
-    .line 787
+    .line 813
     :goto_1
     invoke-static {v13}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
@@ -567,14 +567,14 @@
     :goto_2
     if-ge v15, v4, :cond_e
 
-    .line 790
+    .line 816
     invoke-virtual {v13}, Ljava/lang/Boolean;->booleanValue()Z
 
     move-result v16
 
     if-eqz v16, :cond_d
 
-    .line 791
+    .line 817
     aput-short v14, v12, v15
 
     :cond_d
@@ -582,13 +582,13 @@
 
     goto :goto_2
 
-    .line 795
+    .line 821
     :cond_e
     sget-object v4, Ljp/co/sony/mc/camera/recorder/AudioLevelMonitor;->INSTANCE:Ljp/co/sony/mc/camera/recorder/AudioLevelMonitor;
 
     invoke-virtual {v4, v12}, Ljp/co/sony/mc/camera/recorder/AudioLevelMonitor;->sendAudioData([S)V
 
-    .line 798
+    .line 824
     iget-object v4, v0, Lcom/sonymobile/android/media/internal/AudioTrack$AudioRecordHandler;->this$0:Lcom/sonymobile/android/media/internal/AudioTrack;
 
     invoke-static {v4}, Lcom/sonymobile/android/media/internal/AudioTrack;->-$$Nest$fgetmStartVolumeDelayUs(Lcom/sonymobile/android/media/internal/AudioTrack;)I
@@ -603,18 +603,18 @@
 
     if-gez v4, :cond_f
 
-    .line 799
+    .line 825
     new-array v4, v3, [B
 
-    .line 800
+    .line 826
     invoke-static {v4, v14}, Ljava/util/Arrays;->fill([BB)V
 
-    .line 801
+    .line 827
     invoke-virtual {v1, v4}, Ljava/nio/ByteBuffer;->put([B)Ljava/nio/ByteBuffer;
 
     goto :goto_3
 
-    .line 803
+    .line 829
     :cond_f
     invoke-virtual {v1}, Ljava/nio/ByteBuffer;->asShortBuffer()Ljava/nio/ShortBuffer;
 
@@ -627,7 +627,7 @@
     :cond_10
     move-object v13, v6
 
-    .line 806
+    .line 832
     :goto_3
     iget-object v1, v0, Lcom/sonymobile/android/media/internal/AudioTrack$AudioRecordHandler;->this$0:Lcom/sonymobile/android/media/internal/AudioTrack;
 
@@ -639,7 +639,7 @@
 
     invoke-static {v1, v4, v5}, Lcom/sonymobile/android/media/internal/AudioTrack;->-$$Nest$fputmAudioDurationUs(Lcom/sonymobile/android/media/internal/AudioTrack;J)V
 
-    .line 808
+    .line 834
     iget-object v1, v0, Lcom/sonymobile/android/media/internal/AudioTrack$AudioRecordHandler;->this$0:Lcom/sonymobile/android/media/internal/AudioTrack;
 
     iget-object v1, v1, Lcom/sonymobile/android/media/internal/AudioTrack;->mState:Lcom/sonymobile/android/media/internal/Track$States;
@@ -648,7 +648,7 @@
 
     if-ne v1, v4, :cond_12
 
-    .line 813
+    .line 839
     iget-object v1, v0, Lcom/sonymobile/android/media/internal/AudioTrack$AudioRecordHandler;->this$0:Lcom/sonymobile/android/media/internal/AudioTrack;
 
     const/4 v4, 0x1
@@ -669,10 +669,10 @@
 
     if-gez v3, :cond_13
 
-    .line 819
+    .line 845
     invoke-static {v11, v13}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 820
+    .line 846
     iget-object v0, v0, Lcom/sonymobile/android/media/internal/AudioTrack$AudioRecordHandler;->this$0:Lcom/sonymobile/android/media/internal/AudioTrack;
 
     invoke-static {v0}, Lcom/sonymobile/android/media/internal/AudioTrack;->-$$Nest$fgetmCallback(Lcom/sonymobile/android/media/internal/AudioTrack;)Landroid/os/Handler;
@@ -685,7 +685,7 @@
 
     move-result-object v0
 
-    .line 821
+    .line 847
     invoke-virtual {v0}, Landroid/os/Message;->sendToTarget()V
 
     return-void
@@ -693,7 +693,7 @@
     :cond_13
     move v6, v14
 
-    .line 825
+    .line 851
     :goto_4
     iget-object v0, v0, Lcom/sonymobile/android/media/internal/AudioTrack$AudioRecordHandler;->this$0:Lcom/sonymobile/android/media/internal/AudioTrack;
 
@@ -717,7 +717,7 @@
 .method private doReleaseAudioRecorder()V
     .locals 1
 
-    .line 875
+    .line 901
     iget-object v0, p0, Lcom/sonymobile/android/media/internal/AudioTrack$AudioRecordHandler;->this$0:Lcom/sonymobile/android/media/internal/AudioTrack;
 
     invoke-static {v0}, Lcom/sonymobile/android/media/internal/AudioTrack;->-$$Nest$fgetmAudioRecorder(Lcom/sonymobile/android/media/internal/AudioTrack;)Landroid/media/AudioRecord;
@@ -726,7 +726,7 @@
 
     if-eqz v0, :cond_0
 
-    .line 876
+    .line 902
     iget-object v0, p0, Lcom/sonymobile/android/media/internal/AudioTrack$AudioRecordHandler;->this$0:Lcom/sonymobile/android/media/internal/AudioTrack;
 
     invoke-static {v0}, Lcom/sonymobile/android/media/internal/AudioTrack;->-$$Nest$fgetmAudioRecorder(Lcom/sonymobile/android/media/internal/AudioTrack;)Landroid/media/AudioRecord;
@@ -735,7 +735,7 @@
 
     invoke-virtual {v0}, Landroid/media/AudioRecord;->release()V
 
-    .line 877
+    .line 903
     iget-object p0, p0, Lcom/sonymobile/android/media/internal/AudioTrack$AudioRecordHandler;->this$0:Lcom/sonymobile/android/media/internal/AudioTrack;
 
     const/4 v0, 0x0
@@ -749,7 +749,7 @@
 .method private doStartAudioRecorder()V
     .locals 5
 
-    .line 834
+    .line 860
     const-string v0, "AudioTrack"
 
     iget-object v1, p0, Lcom/sonymobile/android/media/internal/AudioTrack$AudioRecordHandler;->this$0:Lcom/sonymobile/android/media/internal/AudioTrack;
@@ -758,7 +758,7 @@
 
     invoke-static {v1, v2}, Lcom/sonymobile/android/media/internal/AudioTrack;->-$$Nest$fputmEosFlagged(Lcom/sonymobile/android/media/internal/AudioTrack;Z)V
 
-    .line 835
+    .line 861
     iget-object v1, p0, Lcom/sonymobile/android/media/internal/AudioTrack$AudioRecordHandler;->this$0:Lcom/sonymobile/android/media/internal/AudioTrack;
 
     const/4 v2, 0x1
@@ -767,7 +767,7 @@
 
     const/4 v1, 0x4
 
-    .line 842
+    .line 868
     :try_start_0
     iget-object v3, p0, Lcom/sonymobile/android/media/internal/AudioTrack$AudioRecordHandler;->this$0:Lcom/sonymobile/android/media/internal/AudioTrack;
 
@@ -777,7 +777,7 @@
 
     invoke-virtual {v3}, Landroid/media/AudioRecord;->startRecording()V
 
-    .line 844
+    .line 870
     iget-object v3, p0, Lcom/sonymobile/android/media/internal/AudioTrack$AudioRecordHandler;->this$0:Lcom/sonymobile/android/media/internal/AudioTrack;
 
     invoke-static {v3}, Lcom/sonymobile/android/media/internal/AudioTrack;->-$$Nest$fgetmAudioRecorder(Lcom/sonymobile/android/media/internal/AudioTrack;)Landroid/media/AudioRecord;
@@ -790,12 +790,12 @@
 
     if-ne v3, v2, :cond_0
 
-    .line 845
+    .line 871
     const-string v3, "Could not start audio recorder, Recording state is STOPPED"
 
     invoke-static {v0, v3}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 846
+    .line 872
     iget-object v3, p0, Lcom/sonymobile/android/media/internal/AudioTrack$AudioRecordHandler;->this$0:Lcom/sonymobile/android/media/internal/AudioTrack;
 
     invoke-static {v3}, Lcom/sonymobile/android/media/internal/AudioTrack;->-$$Nest$fgetmCallback(Lcom/sonymobile/android/media/internal/AudioTrack;)Landroid/os/Handler;
@@ -808,20 +808,20 @@
 
     move-result-object v3
 
-    .line 847
+    .line 873
     invoke-virtual {v3}, Landroid/os/Message;->sendToTarget()V
     :try_end_0
     .catch Ljava/lang/IllegalStateException; {:try_start_0 .. :try_end_0} :catch_0
 
     return-void
 
-    .line 851
+    .line 877
     :catch_0
     const-string v3, "Could not start audio recorder, illegal state"
 
     invoke-static {v0, v3}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 852
+    .line 878
     iget-object v0, p0, Lcom/sonymobile/android/media/internal/AudioTrack$AudioRecordHandler;->this$0:Lcom/sonymobile/android/media/internal/AudioTrack;
 
     invoke-static {v0}, Lcom/sonymobile/android/media/internal/AudioTrack;->-$$Nest$fgetmCallback(Lcom/sonymobile/android/media/internal/AudioTrack;)Landroid/os/Handler;
@@ -834,10 +834,10 @@
 
     move-result-object v0
 
-    .line 853
+    .line 879
     invoke-virtual {v0}, Landroid/os/Message;->sendToTarget()V
 
-    .line 855
+    .line 881
     :cond_0
     iget-object v0, p0, Lcom/sonymobile/android/media/internal/AudioTrack$AudioRecordHandler;->this$0:Lcom/sonymobile/android/media/internal/AudioTrack;
 
@@ -845,7 +845,7 @@
 
     invoke-virtual {v0}, Landroid/media/MediaCodec;->start()V
 
-    .line 856
+    .line 882
     iget-object p0, p0, Lcom/sonymobile/android/media/internal/AudioTrack$AudioRecordHandler;->this$0:Lcom/sonymobile/android/media/internal/AudioTrack;
 
     sget-object v0, Lcom/sonymobile/android/media/internal/Track$States;->STARTED:Lcom/sonymobile/android/media/internal/Track$States;
@@ -858,7 +858,7 @@
 .method private doStopAudioRecorder()V
     .locals 4
 
-    .line 861
+    .line 887
     iget-object v0, p0, Lcom/sonymobile/android/media/internal/AudioTrack$AudioRecordHandler;->this$0:Lcom/sonymobile/android/media/internal/AudioTrack;
 
     invoke-static {v0}, Lcom/sonymobile/android/media/internal/AudioTrack;->-$$Nest$fgetmAudioRecorder(Lcom/sonymobile/android/media/internal/AudioTrack;)Landroid/media/AudioRecord;
@@ -867,7 +867,7 @@
 
     if-eqz v0, :cond_0
 
-    .line 863
+    .line 889
     :try_start_0
     iget-object v0, p0, Lcom/sonymobile/android/media/internal/AudioTrack$AudioRecordHandler;->this$0:Lcom/sonymobile/android/media/internal/AudioTrack;
 
@@ -881,7 +881,7 @@
 
     goto :goto_0
 
-    .line 865
+    .line 891
     :catch_0
     const-string v0, "AudioTrack"
 
@@ -889,7 +889,7 @@
 
     invoke-static {v0, v1}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 866
+    .line 892
     iget-object v0, p0, Lcom/sonymobile/android/media/internal/AudioTrack$AudioRecordHandler;->this$0:Lcom/sonymobile/android/media/internal/AudioTrack;
 
     invoke-static {v0}, Lcom/sonymobile/android/media/internal/AudioTrack;->-$$Nest$fgetmCallback(Lcom/sonymobile/android/media/internal/AudioTrack;)Landroid/os/Handler;
@@ -906,10 +906,10 @@
 
     move-result-object v0
 
-    .line 867
+    .line 893
     invoke-virtual {v0}, Landroid/os/Message;->sendToTarget()V
 
-    .line 870
+    .line 896
     :cond_0
     :goto_0
     iget-object p0, p0, Lcom/sonymobile/android/media/internal/AudioTrack$AudioRecordHandler;->this$0:Lcom/sonymobile/android/media/internal/AudioTrack;
@@ -926,7 +926,7 @@
 .method public handleMessage(Landroid/os/Message;)V
     .locals 2
 
-    .line 883
+    .line 909
     iget v0, p1, Landroid/os/Message;->what:I
 
     const/16 v1, 0x66
@@ -937,85 +937,85 @@
 
     goto :goto_0
 
-    .line 892
+    .line 918
     :pswitch_0
     invoke-direct {p0}, Lcom/sonymobile/android/media/internal/AudioTrack$AudioRecordHandler;->doStartAudioRecorder()V
 
-    .line 894
+    .line 920
     iget-object p0, p1, Landroid/os/Message;->obj:Ljava/lang/Object;
 
     check-cast p0, Landroid/os/Handler;
 
-    .line 895
+    .line 921
     invoke-virtual {p0}, Landroid/os/Handler;->obtainMessage()Landroid/os/Message;
 
     move-result-object p0
 
-    .line 896
+    .line 922
     new-instance p1, Ljava/lang/Object;
 
     invoke-direct {p1}, Ljava/lang/Object;-><init>()V
 
     iput-object p1, p0, Landroid/os/Message;->obj:Ljava/lang/Object;
 
-    .line 897
+    .line 923
     invoke-virtual {p0}, Landroid/os/Message;->sendToTarget()V
 
     goto :goto_0
 
-    .line 910
+    .line 936
     :pswitch_1
     invoke-direct {p0}, Lcom/sonymobile/android/media/internal/AudioTrack$AudioRecordHandler;->doReleaseAudioRecorder()V
 
-    .line 912
+    .line 938
     iget-object p0, p1, Landroid/os/Message;->obj:Ljava/lang/Object;
 
     check-cast p0, Landroid/os/Handler;
 
-    .line 913
+    .line 939
     invoke-virtual {p0}, Landroid/os/Handler;->obtainMessage()Landroid/os/Message;
 
     move-result-object p0
 
-    .line 914
+    .line 940
     new-instance p1, Ljava/lang/Object;
 
     invoke-direct {p1}, Ljava/lang/Object;-><init>()V
 
     iput-object p1, p0, Landroid/os/Message;->obj:Ljava/lang/Object;
 
-    .line 915
+    .line 941
     invoke-virtual {p0}, Landroid/os/Message;->sendToTarget()V
 
     goto :goto_0
 
-    .line 901
+    .line 927
     :pswitch_2
     invoke-direct {p0}, Lcom/sonymobile/android/media/internal/AudioTrack$AudioRecordHandler;->doStopAudioRecorder()V
 
-    .line 903
+    .line 929
     iget-object p0, p1, Landroid/os/Message;->obj:Ljava/lang/Object;
 
     check-cast p0, Landroid/os/Handler;
 
-    .line 904
+    .line 930
     invoke-virtual {p0}, Landroid/os/Handler;->obtainMessage()Landroid/os/Message;
 
     move-result-object p0
 
-    .line 905
+    .line 931
     new-instance p1, Ljava/lang/Object;
 
     invoke-direct {p1}, Ljava/lang/Object;-><init>()V
 
     iput-object p1, p0, Landroid/os/Message;->obj:Ljava/lang/Object;
 
-    .line 906
+    .line 932
     invoke-virtual {p0}, Landroid/os/Message;->sendToTarget()V
 
     goto :goto_0
 
-    .line 886
+    .line 912
     :cond_0
     :try_start_0
     iget p1, p1, Landroid/os/Message;->arg1:I

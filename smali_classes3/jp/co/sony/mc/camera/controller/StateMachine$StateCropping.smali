@@ -24,22 +24,22 @@
 .method public constructor <init>(Ljp/co/sony/mc/camera/controller/StateMachine;Ljp/co/sony/mc/camera/controller/StateMachine$CaptureState;)V
     .locals 1
 
-    .line 3588
+    .line 3616
     iput-object p1, p0, Ljp/co/sony/mc/camera/controller/StateMachine$StateCropping;->this$0:Ljp/co/sony/mc/camera/controller/StateMachine;
 
     const/4 v0, 0x0
 
     invoke-direct {p0, p1, v0}, Ljp/co/sony/mc/camera/controller/StateMachine$State;-><init>(Ljp/co/sony/mc/camera/controller/StateMachine;Ljp/co/sony/mc/camera/controller/StateMachine$State-IA;)V
 
-    .line 3586
+    .line 3614
     iput-object v0, p0, Ljp/co/sony/mc/camera/controller/StateMachine$StateCropping;->mPreviousCaptureState:Ljp/co/sony/mc/camera/controller/StateMachine$CaptureState;
 
-    .line 3589
+    .line 3617
     sget-object p1, Ljp/co/sony/mc/camera/controller/StateMachine$CaptureState;->STATE_CROPPING:Ljp/co/sony/mc/camera/controller/StateMachine$CaptureState;
 
     iput-object p1, p0, Ljp/co/sony/mc/camera/controller/StateMachine$StateCropping;->mCaptureState:Ljp/co/sony/mc/camera/controller/StateMachine$CaptureState;
 
-    .line 3590
+    .line 3618
     iput-object p2, p0, Ljp/co/sony/mc/camera/controller/StateMachine$StateCropping;->mPreviousCaptureState:Ljp/co/sony/mc/camera/controller/StateMachine$CaptureState;
 
     return-void
@@ -48,18 +48,22 @@
 
 # virtual methods
 .method public entry()V
-    .locals 0
+    .locals 2
 
-    .line 3595
+    .line 3623
     sget-boolean p0, Ljp/co/sony/mc/camera/util/CamLog;->DEBUG:Z
 
     if-eqz p0, :cond_0
 
-    const-string p0, "invoke StateCropping"
+    const/4 p0, 0x1
 
-    filled-new-array {p0}, [Ljava/lang/String;
+    new-array p0, p0, [Ljava/lang/String;
 
-    move-result-object p0
+    const/4 v0, 0x0
+
+    const-string v1, "invoke StateCropping"
+
+    aput-object v1, p0, v0
 
     invoke-static {p0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
@@ -76,7 +80,7 @@
 .method public varargs handlePause([Ljava/lang/Object;)V
     .locals 3
 
-    .line 3606
+    .line 3634
     iget-object v0, p0, Ljp/co/sony/mc/camera/controller/StateMachine$StateCropping;->this$0:Ljp/co/sony/mc/camera/controller/StateMachine;
 
     new-instance v1, Ljp/co/sony/mc/camera/controller/StateMachine$StatePause;

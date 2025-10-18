@@ -30,28 +30,30 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/databinding/FragmentPreviewSurfaceOverlayBindingImpl;->sIncludes:Landroidx/databinding/ViewDataBinding$IncludedLayouts;
 
+    const/4 v1, 0x1
+
     .line 16
-    const-string v1, "gesture_shutter_view"
+    new-array v2, v1, [Ljava/lang/String;
 
-    filled-new-array {v1}, [Ljava/lang/String;
+    const/4 v3, 0x0
 
-    move-result-object v1
+    const-string v4, "gesture_shutter_view"
 
-    const/4 v2, 0x2
+    aput-object v4, v2, v3
 
-    filled-new-array {v2}, [I
-
-    move-result-object v2
-
-    const v3, 0x7f0c00c7
+    const/4 v3, 0x2
 
     filled-new-array {v3}, [I
 
     move-result-object v3
 
-    const/4 v4, 0x1
+    const v4, 0x7f0c00c7
 
-    invoke-virtual {v0, v4, v1, v2, v3}, Landroidx/databinding/ViewDataBinding$IncludedLayouts;->setIncludes(I[Ljava/lang/String;[I[I)V
+    filled-new-array {v4}, [I
+
+    move-result-object v4
+
+    invoke-virtual {v0, v1, v2, v3, v4}, Landroidx/databinding/ViewDataBinding$IncludedLayouts;->setIncludes(I[Ljava/lang/String;[I[I)V
 
     .line 20
     new-instance v0, Landroid/util/SparseIntArray;
@@ -60,21 +62,21 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/databinding/FragmentPreviewSurfaceOverlayBindingImpl;->sViewsWithIds:Landroid/util/SparseIntArray;
 
-    const v1, 0x7f090216
+    const v1, 0x7f090214
 
     const/4 v2, 0x3
 
     .line 21
     invoke-virtual {v0, v1, v2}, Landroid/util/SparseIntArray;->put(II)V
 
-    const v1, 0x7f0900d6
+    const v1, 0x7f0900d4
 
     const/4 v2, 0x4
 
     .line 22
     invoke-virtual {v0, v1, v2}, Landroid/util/SparseIntArray;->put(II)V
 
-    const v1, 0x7f090101
+    const v1, 0x7f0900fd
 
     const/4 v2, 0x5
 

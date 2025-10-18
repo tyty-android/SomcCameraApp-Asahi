@@ -53,7 +53,7 @@
     f = "Slider.kt"
     i = {}
     l = {
-        0x39a
+        0x39e
     }
     m = "invokeSuspend"
     n = {}
@@ -190,7 +190,7 @@
 
     move-result-object v0
 
-    .line 65535
+    .line 925
     iget v1, p0, Landroidx/compose/material/SliderKt$sliderTapModifier$2$1$2$1;->label:I
 
     const/4 v2, 0x1
@@ -215,7 +215,7 @@
     :cond_1
     invoke-static {p1}, Lkotlin/ResultKt;->throwOnFailure(Ljava/lang/Object;)V
 
-    .line 922
+    .line 926
     iget-object p1, p0, Landroidx/compose/material/SliderKt$sliderTapModifier$2$1$2$1;->$draggableState:Landroidx/compose/foundation/gestures/DraggableState;
 
     sget-object v1, Landroidx/compose/foundation/MutatePriority;->UserInput:Landroidx/compose/foundation/MutatePriority;
@@ -242,7 +242,7 @@
 
     return-object v0
 
-    .line 926
+    .line 930
     :cond_2
     :goto_0
     iget-object p0, p0, Landroidx/compose/material/SliderKt$sliderTapModifier$2$1$2$1;->$gestureEndAction:Landroidx/compose/runtime/State;
@@ -261,7 +261,7 @@
 
     invoke-interface {p0, p1}, Lkotlin/jvm/functions/Function1;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 927
+    .line 931
     sget-object p0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
 
     return-object p0

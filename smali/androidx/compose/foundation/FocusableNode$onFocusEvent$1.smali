@@ -53,7 +53,7 @@
     f = "Focusable.kt"
     i = {}
     l = {
-        0xed
+        0xee
     }
     m = "invokeSuspend"
     n = {}
@@ -167,7 +167,7 @@
 
     move-result-object v0
 
-    .line 236
+    .line 237
     iget v1, p0, Landroidx/compose/foundation/FocusableNode$onFocusEvent$1;->label:I
 
     const/4 v2, 0x1
@@ -192,7 +192,7 @@
     :cond_1
     invoke-static {p1}, Lkotlin/ResultKt;->throwOnFailure(Ljava/lang/Object;)V
 
-    .line 237
+    .line 238
     iget-object p1, p0, Landroidx/compose/foundation/FocusableNode$onFocusEvent$1;->this$0:Landroidx/compose/foundation/FocusableNode;
 
     invoke-static {p1}, Landroidx/compose/foundation/FocusableNode;->access$getBringIntoViewRequester$p(Landroidx/compose/foundation/FocusableNode;)Landroidx/compose/foundation/relocation/BringIntoViewRequester;
@@ -215,7 +215,7 @@
 
     return-object v0
 
-    .line 238
+    .line 239
     :cond_2
     :goto_0
     sget-object p0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;

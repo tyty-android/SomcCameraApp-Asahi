@@ -99,10 +99,6 @@
         }
     .end annotation
 
-    const-string v0, "$this$animateTo"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
     .line 139
     iget-object v0, p0, Landroidx/compose/foundation/gestures/TransformableStateKt$animateZoomBy$3$1;->$previous:Lkotlin/jvm/internal/Ref$FloatRef;
 

@@ -66,7 +66,7 @@
 
 # virtual methods
 .method log()V
-    .locals 6
+    .locals 8
 
     .line 128
     new-instance v0, Ljava/lang/StringBuilder;
@@ -111,61 +111,61 @@
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
 
     .line 149
-    iget-wide v2, p0, Ljp/co/sony/mc/camera/util/CapturePerformanceLogger$TimeLog;->shutterDone:J
+    iget-wide v4, p0, Ljp/co/sony/mc/camera/util/CapturePerformanceLogger$TimeLog;->shutterDone:J
 
-    iget-wide v4, p0, Ljp/co/sony/mc/camera/util/CapturePerformanceLogger$TimeLog;->startSnapshot:J
+    iget-wide v6, p0, Ljp/co/sony/mc/camera/util/CapturePerformanceLogger$TimeLog;->startSnapshot:J
 
-    sub-long/2addr v2, v4
+    sub-long/2addr v4, v6
 
-    invoke-virtual {v0, v2, v3}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
+    invoke-virtual {v0, v4, v5}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
 
     .line 150
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
 
     .line 151
-    iget-wide v2, p0, Ljp/co/sony/mc/camera/util/CapturePerformanceLogger$TimeLog;->snapshotDone:J
+    iget-wide v4, p0, Ljp/co/sony/mc/camera/util/CapturePerformanceLogger$TimeLog;->snapshotDone:J
 
-    iget-wide v4, p0, Ljp/co/sony/mc/camera/util/CapturePerformanceLogger$TimeLog;->startSnapshot:J
+    iget-wide v6, p0, Ljp/co/sony/mc/camera/util/CapturePerformanceLogger$TimeLog;->startSnapshot:J
 
-    sub-long/2addr v2, v4
+    sub-long/2addr v4, v6
 
-    invoke-virtual {v0, v2, v3}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
+    invoke-virtual {v0, v4, v5}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
 
     .line 152
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
 
     .line 153
-    iget-wide v2, p0, Ljp/co/sony/mc/camera/util/CapturePerformanceLogger$TimeLog;->startSave:J
+    iget-wide v4, p0, Ljp/co/sony/mc/camera/util/CapturePerformanceLogger$TimeLog;->startSave:J
 
-    iget-wide v4, p0, Ljp/co/sony/mc/camera/util/CapturePerformanceLogger$TimeLog;->startSnapshot:J
+    iget-wide v6, p0, Ljp/co/sony/mc/camera/util/CapturePerformanceLogger$TimeLog;->startSnapshot:J
 
-    sub-long/2addr v2, v4
+    sub-long/2addr v4, v6
 
-    invoke-virtual {v0, v2, v3}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
+    invoke-virtual {v0, v4, v5}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
 
     .line 154
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
 
     .line 155
-    iget-wide v2, p0, Ljp/co/sony/mc/camera/util/CapturePerformanceLogger$TimeLog;->writeFileDone:J
+    iget-wide v4, p0, Ljp/co/sony/mc/camera/util/CapturePerformanceLogger$TimeLog;->writeFileDone:J
 
-    iget-wide v4, p0, Ljp/co/sony/mc/camera/util/CapturePerformanceLogger$TimeLog;->startSnapshot:J
+    iget-wide v6, p0, Ljp/co/sony/mc/camera/util/CapturePerformanceLogger$TimeLog;->startSnapshot:J
 
-    sub-long/2addr v2, v4
+    sub-long/2addr v4, v6
 
-    invoke-virtual {v0, v2, v3}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
+    invoke-virtual {v0, v4, v5}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
 
     .line 156
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
 
     .line 157
-    iget-wide v2, p0, Ljp/co/sony/mc/camera/util/CapturePerformanceLogger$TimeLog;->startScan:J
+    iget-wide v4, p0, Ljp/co/sony/mc/camera/util/CapturePerformanceLogger$TimeLog;->startScan:J
 
-    iget-wide v4, p0, Ljp/co/sony/mc/camera/util/CapturePerformanceLogger$TimeLog;->startSnapshot:J
+    iget-wide v6, p0, Ljp/co/sony/mc/camera/util/CapturePerformanceLogger$TimeLog;->startSnapshot:J
 
-    sub-long/2addr v2, v4
+    sub-long/2addr v4, v6
 
-    invoke-virtual {v0, v2, v3}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
+    invoke-virtual {v0, v4, v5}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
 
     .line 158
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
@@ -173,9 +173,9 @@
     .line 159
     iget-wide v1, p0, Ljp/co/sony/mc/camera/util/CapturePerformanceLogger$TimeLog;->scanFileDone:J
 
-    iget-wide v3, p0, Ljp/co/sony/mc/camera/util/CapturePerformanceLogger$TimeLog;->startSnapshot:J
+    iget-wide v4, p0, Ljp/co/sony/mc/camera/util/CapturePerformanceLogger$TimeLog;->startSnapshot:J
 
-    sub-long/2addr v1, v3
+    sub-long/2addr v1, v4
 
     invoke-virtual {v0, v1, v2}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
 
@@ -205,13 +205,13 @@
     .line 136
     iget v2, p0, Ljp/co/sony/mc/camera/util/CapturePerformanceLogger$TimeLog;->fileSize:I
 
-    int-to-double v2, v2
+    int-to-double v4, v2
 
-    const-wide/high16 v4, 0x4130000000000000L    # 1048576.0
+    const-wide/high16 v6, 0x4130000000000000L    # 1048576.0
 
-    div-double/2addr v2, v4
+    div-double/2addr v4, v6
 
-    invoke-virtual {v1, v2, v3}, Ljava/text/DecimalFormat;->format(D)Ljava/lang/String;
+    invoke-virtual {v1, v4, v5}, Ljava/text/DecimalFormat;->format(D)Ljava/lang/String;
 
     move-result-object v1
 
@@ -225,9 +225,9 @@
     .line 139
     iget-wide v1, p0, Ljp/co/sony/mc/camera/util/CapturePerformanceLogger$TimeLog;->snapshotDone:J
 
-    iget-wide v3, p0, Ljp/co/sony/mc/camera/util/CapturePerformanceLogger$TimeLog;->startSnapshot:J
+    iget-wide v4, p0, Ljp/co/sony/mc/camera/util/CapturePerformanceLogger$TimeLog;->startSnapshot:J
 
-    sub-long/2addr v1, v3
+    sub-long/2addr v1, v4
 
     invoke-virtual {v0, v1, v2}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
 
@@ -239,9 +239,9 @@
     .line 141
     iget-wide v1, p0, Ljp/co/sony/mc/camera/util/CapturePerformanceLogger$TimeLog;->writeFileDone:J
 
-    iget-wide v3, p0, Ljp/co/sony/mc/camera/util/CapturePerformanceLogger$TimeLog;->startSave:J
+    iget-wide v4, p0, Ljp/co/sony/mc/camera/util/CapturePerformanceLogger$TimeLog;->startSave:J
 
-    sub-long/2addr v1, v3
+    sub-long/2addr v1, v4
 
     invoke-virtual {v0, v1, v2}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
 
@@ -253,21 +253,23 @@
     .line 143
     iget-wide v1, p0, Ljp/co/sony/mc/camera/util/CapturePerformanceLogger$TimeLog;->scanFileDone:J
 
-    iget-wide v3, p0, Ljp/co/sony/mc/camera/util/CapturePerformanceLogger$TimeLog;->startScan:J
+    iget-wide v4, p0, Ljp/co/sony/mc/camera/util/CapturePerformanceLogger$TimeLog;->startScan:J
 
-    sub-long/2addr v1, v3
+    sub-long/2addr v1, v4
 
     invoke-virtual {v0, v1, v2}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
 
     .line 163
     :goto_0
+    new-array p0, v3, [Ljava/lang/String;
+
+    const/4 v1, 0x0
+
     invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    move-result-object p0
+    move-result-object v0
 
-    filled-new-array {p0}, [Ljava/lang/String;
-
-    move-result-object p0
+    aput-object v0, p0, v1
 
     invoke-static {p0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 

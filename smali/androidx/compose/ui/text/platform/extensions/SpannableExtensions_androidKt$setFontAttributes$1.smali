@@ -108,7 +108,7 @@
 .method public bridge synthetic invoke(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
 
-    .line 298
+    .line 313
     check-cast p1, Landroidx/compose/ui/text/SpanStyle;
 
     check-cast p2, Ljava/lang/Number;
@@ -133,25 +133,21 @@
 .method public final invoke(Landroidx/compose/ui/text/SpanStyle;II)V
     .locals 5
 
-    const-string/jumbo v0, "spanStyle"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 302
+    .line 317
     iget-object v0, p0, Landroidx/compose/ui/text/platform/extensions/SpannableExtensions_androidKt$setFontAttributes$1;->$this_setFontAttributes:Landroid/text/Spannable;
 
-    .line 303
+    .line 318
     new-instance v1, Landroidx/compose/ui/text/android/style/TypefaceSpan;
 
-    .line 304
+    .line 319
     iget-object p0, p0, Landroidx/compose/ui/text/platform/extensions/SpannableExtensions_androidKt$setFontAttributes$1;->$resolveTypeface:Lkotlin/jvm/functions/Function4;
 
-    .line 305
+    .line 320
     invoke-virtual {p1}, Landroidx/compose/ui/text/SpanStyle;->getFontFamily()Landroidx/compose/ui/text/font/FontFamily;
 
     move-result-object v2
 
-    .line 306
+    .line 321
     invoke-virtual {p1}, Landroidx/compose/ui/text/SpanStyle;->getFontWeight()Landroidx/compose/ui/text/font/FontWeight;
 
     move-result-object v3
@@ -164,7 +160,7 @@
 
     move-result-object v3
 
-    .line 307
+    .line 322
     :cond_0
     invoke-virtual {p1}, Landroidx/compose/ui/text/SpanStyle;->getFontStyle-4Lr2A7w()Landroidx/compose/ui/text/font/FontStyle;
 
@@ -190,7 +186,7 @@
 
     move-result-object v4
 
-    .line 308
+    .line 323
     invoke-virtual {p1}, Landroidx/compose/ui/text/SpanStyle;->getFontSynthesis-ZQGJjVo()Landroidx/compose/ui/text/font/FontSynthesis;
 
     move-result-object p1
@@ -215,19 +211,19 @@
 
     move-result-object p1
 
-    .line 304
+    .line 319
     invoke-interface {p0, v2, v3, v4, p1}, Lkotlin/jvm/functions/Function4;->invoke(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p0
 
     check-cast p0, Landroid/graphics/Typeface;
 
-    .line 303
+    .line 318
     invoke-direct {v1, p0}, Landroidx/compose/ui/text/android/style/TypefaceSpan;-><init>(Landroid/graphics/Typeface;)V
 
     const/16 p0, 0x21
 
-    .line 302
+    .line 317
     invoke-interface {v0, v1, p2, p3, p0}, Landroid/text/Spannable;->setSpan(Ljava/lang/Object;III)V
 
     return-void

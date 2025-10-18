@@ -19,5 +19,4 @@
     <string name="camera_strings_runtime_permission_rationale_network_cta_txt">"แอปนี้ใช้ LAN ไร้สาย และข้อมูลอุปกรณ์เคลื่อนที่เพื่อส่งข้อมูลผู้ใช้ (กล่าวคือ รูปภาพ/วิดีโอที่บันทึกไว้ ข้อมูลเสียง ข้อมูลบัญชีของบริการที่ใช้งานอยู่ ฯลฯ) ไปยังอินเทอร์เน็ต
 โปรดทราบว่าคุณอาจต้องเสียค่าบริการข้อมูลซึ่งขึ้นอยู่กับสัญญาของผู้ให้บริการเครือข่ายหรือผู้ให้บริการอินเทอร์เน็ต"</string>
     <string name="camera_strings_streaming_error_wifi_disconnected_txt">ไม่มีการเชื่อมต่อ WLAN</string>
-    <string name="mv_wireless_network_txt">ใช้ WLAN และข้อมูลมือถือ</string>
 </resources>

@@ -1,6 +1,6 @@
 .class public interface abstract Landroidx/compose/ui/tooling/animation/clock/ComposeAnimationClock;
 .super Ljava/lang/Object;
-.source "ComposeAnimationClock.kt"
+.source "ComposeAnimationClock.android.kt"
 
 
 # annotations

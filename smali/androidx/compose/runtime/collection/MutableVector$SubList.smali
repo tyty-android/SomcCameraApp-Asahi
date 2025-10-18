@@ -30,7 +30,7 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/SourceDebugExtension;
-    value = "SMAP\nMutableVector.kt\nKotlin\n*S Kotlin\n*F\n+ 1 MutableVector.kt\nandroidx/compose/runtime/collection/MutableVector$SubList\n+ 2 _Collections.kt\nkotlin/collections/CollectionsKt___CollectionsKt\n*L\n1#1,1194:1\n1855#2,2:1195\n1855#2,2:1197\n*S KotlinDebug\n*F\n+ 1 MutableVector.kt\nandroidx/compose/runtime/collection/MutableVector$SubList\n*L\n1013#1:1195,2\n1095#1:1197,2\n*E\n"
+    value = "SMAP\nMutableVector.kt\nKotlin\n*S Kotlin\n*F\n+ 1 MutableVector.kt\nandroidx/compose/runtime/collection/MutableVector$SubList\n+ 2 _Collections.kt\nkotlin/collections/CollectionsKt___CollectionsKt\n*L\n1#1,1220:1\n1855#2,2:1221\n1855#2,2:1223\n*S KotlinDebug\n*F\n+ 1 MutableVector.kt\nandroidx/compose/runtime/collection/MutableVector$SubList\n*L\n1039#1:1221,2\n1121#1:1223,2\n*E\n"
 .end annotation
 
 .annotation runtime Lkotlin/Metadata;
@@ -110,7 +110,7 @@
 
 # direct methods
 .method public constructor <init>(Ljava/util/List;II)V
-    .locals 1
+    .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -119,20 +119,16 @@
         }
     .end annotation
 
-    const-string v0, "list"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 995
+    .line 1021
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 996
+    .line 1022
     iput-object p1, p0, Landroidx/compose/runtime/collection/MutableVector$SubList;->list:Ljava/util/List;
 
-    .line 997
+    .line 1023
     iput p2, p0, Landroidx/compose/runtime/collection/MutableVector$SubList;->start:I
 
-    .line 998
+    .line 1024
     iput p3, p0, Landroidx/compose/runtime/collection/MutableVector$SubList;->end:I
 
     return-void
@@ -148,7 +144,7 @@
         }
     .end annotation
 
-    .line 1054
+    .line 1080
     iget-object v0, p0, Landroidx/compose/runtime/collection/MutableVector$SubList;->list:Ljava/util/List;
 
     iget v1, p0, Landroidx/compose/runtime/collection/MutableVector$SubList;->start:I
@@ -157,7 +153,7 @@
 
     invoke-interface {v0, p1, p2}, Ljava/util/List;->add(ILjava/lang/Object;)V
 
-    .line 1055
+    .line 1081
     iget p1, p0, Landroidx/compose/runtime/collection/MutableVector$SubList;->end:I
 
     add-int/lit8 p1, p1, 0x1
@@ -175,7 +171,7 @@
         }
     .end annotation
 
-    .line 1049
+    .line 1075
     iget-object v0, p0, Landroidx/compose/runtime/collection/MutableVector$SubList;->list:Ljava/util/List;
 
     iget v1, p0, Landroidx/compose/runtime/collection/MutableVector$SubList;->end:I
@@ -201,11 +197,7 @@
         }
     .end annotation
 
-    const-string v0, "elements"
-
-    invoke-static {p2, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 1059
+    .line 1085
     iget-object v0, p0, Landroidx/compose/runtime/collection/MutableVector$SubList;->list:Ljava/util/List;
 
     iget v1, p0, Landroidx/compose/runtime/collection/MutableVector$SubList;->start:I
@@ -214,7 +206,7 @@
 
     invoke-interface {v0, p1, p2}, Ljava/util/List;->addAll(ILjava/util/Collection;)Z
 
-    .line 1060
+    .line 1086
     iget p1, p0, Landroidx/compose/runtime/collection/MutableVector$SubList;->end:I
 
     invoke-interface {p2}, Ljava/util/Collection;->size()I
@@ -225,7 +217,7 @@
 
     iput p1, p0, Landroidx/compose/runtime/collection/MutableVector$SubList;->end:I
 
-    .line 1061
+    .line 1087
     invoke-interface {p2}, Ljava/util/Collection;->size()I
 
     move-result p0
@@ -253,18 +245,14 @@
         }
     .end annotation
 
-    const-string v0, "elements"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 1065
+    .line 1091
     iget-object v0, p0, Landroidx/compose/runtime/collection/MutableVector$SubList;->list:Ljava/util/List;
 
     iget v1, p0, Landroidx/compose/runtime/collection/MutableVector$SubList;->end:I
 
     invoke-interface {v0, v1, p1}, Ljava/util/List;->addAll(ILjava/util/Collection;)Z
 
-    .line 1066
+    .line 1092
     iget v0, p0, Landroidx/compose/runtime/collection/MutableVector$SubList;->end:I
 
     invoke-interface {p1}, Ljava/util/Collection;->size()I
@@ -275,7 +263,7 @@
 
     iput v0, p0, Landroidx/compose/runtime/collection/MutableVector$SubList;->end:I
 
-    .line 1067
+    .line 1093
     invoke-interface {p1}, Ljava/util/Collection;->size()I
 
     move-result p0
@@ -296,7 +284,7 @@
 .method public clear()V
     .locals 3
 
-    .line 1071
+    .line 1097
     iget v0, p0, Landroidx/compose/runtime/collection/MutableVector$SubList;->end:I
 
     add-int/lit8 v0, v0, -0x1
@@ -305,7 +293,7 @@
 
     if-gt v1, v0, :cond_0
 
-    .line 1072
+    .line 1098
     :goto_0
     iget-object v2, p0, Landroidx/compose/runtime/collection/MutableVector$SubList;->list:Ljava/util/List;
 
@@ -317,7 +305,7 @@
 
     goto :goto_0
 
-    .line 1074
+    .line 1100
     :cond_0
     iget v0, p0, Landroidx/compose/runtime/collection/MutableVector$SubList;->start:I
 
@@ -329,7 +317,7 @@
 .method public contains(Ljava/lang/Object;)Z
     .locals 3
 
-    .line 1004
+    .line 1030
     iget v0, p0, Landroidx/compose/runtime/collection/MutableVector$SubList;->start:I
 
     iget v1, p0, Landroidx/compose/runtime/collection/MutableVector$SubList;->end:I
@@ -337,7 +325,7 @@
     :goto_0
     if-ge v0, v1, :cond_1
 
-    .line 1005
+    .line 1031
     iget-object v2, p0, Landroidx/compose/runtime/collection/MutableVector$SubList;->list:Ljava/util/List;
 
     invoke-interface {v2, v0}, Ljava/util/List;->get(I)Ljava/lang/Object;
@@ -377,14 +365,10 @@
         }
     .end annotation
 
-    const-string v0, "elements"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 1013
+    .line 1039
     check-cast p1, Ljava/lang/Iterable;
 
-    .line 1195
+    .line 1221
     invoke-interface {p1}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
 
     move-result-object p1
@@ -400,7 +384,7 @@
 
     move-result-object v0
 
-    .line 1014
+    .line 1040
     invoke-virtual {p0, v0}, Landroidx/compose/runtime/collection/MutableVector$SubList;->contains(Ljava/lang/Object;)Z
 
     move-result v0
@@ -425,14 +409,14 @@
         }
     .end annotation
 
-    .line 1022
+    .line 1048
     move-object v0, p0
 
     check-cast v0, Ljava/util/List;
 
     invoke-static {v0, p1}, Landroidx/compose/runtime/collection/MutableVectorKt;->access$checkIndex(Ljava/util/List;I)V
 
-    .line 1023
+    .line 1049
     iget-object v0, p0, Landroidx/compose/runtime/collection/MutableVector$SubList;->list:Ljava/util/List;
 
     iget p0, p0, Landroidx/compose/runtime/collection/MutableVector$SubList;->start:I
@@ -449,7 +433,7 @@
 .method public getSize()I
     .locals 1
 
-    .line 1001
+    .line 1027
     iget v0, p0, Landroidx/compose/runtime/collection/MutableVector$SubList;->end:I
 
     iget p0, p0, Landroidx/compose/runtime/collection/MutableVector$SubList;->start:I
@@ -462,7 +446,7 @@
 .method public indexOf(Ljava/lang/Object;)I
     .locals 3
 
-    .line 1027
+    .line 1053
     iget v0, p0, Landroidx/compose/runtime/collection/MutableVector$SubList;->start:I
 
     iget v1, p0, Landroidx/compose/runtime/collection/MutableVector$SubList;->end:I
@@ -470,7 +454,7 @@
     :goto_0
     if-ge v0, v1, :cond_1
 
-    .line 1028
+    .line 1054
     iget-object v2, p0, Landroidx/compose/runtime/collection/MutableVector$SubList;->list:Ljava/util/List;
 
     invoke-interface {v2, v0}, Ljava/util/List;->get(I)Ljava/lang/Object;
@@ -483,7 +467,7 @@
 
     if-eqz v2, :cond_0
 
-    .line 1029
+    .line 1055
     iget p0, p0, Landroidx/compose/runtime/collection/MutableVector$SubList;->start:I
 
     sub-int/2addr v0, p0
@@ -504,7 +488,7 @@
 .method public isEmpty()Z
     .locals 1
 
-    .line 1035
+    .line 1061
     iget v0, p0, Landroidx/compose/runtime/collection/MutableVector$SubList;->end:I
 
     iget p0, p0, Landroidx/compose/runtime/collection/MutableVector$SubList;->start:I
@@ -532,7 +516,7 @@
         }
     .end annotation
 
-    .line 1037
+    .line 1063
     new-instance v0, Landroidx/compose/runtime/collection/MutableVector$VectorListIterator;
 
     check-cast p0, Ljava/util/List;
@@ -549,7 +533,7 @@
 .method public lastIndexOf(Ljava/lang/Object;)I
     .locals 3
 
-    .line 1040
+    .line 1066
     iget v0, p0, Landroidx/compose/runtime/collection/MutableVector$SubList;->end:I
 
     add-int/lit8 v0, v0, -0x1
@@ -558,7 +542,7 @@
 
     if-gt v1, v0, :cond_1
 
-    .line 1041
+    .line 1067
     :goto_0
     iget-object v2, p0, Landroidx/compose/runtime/collection/MutableVector$SubList;->list:Ljava/util/List;
 
@@ -572,7 +556,7 @@
 
     if-eqz v2, :cond_0
 
-    .line 1042
+    .line 1068
     iget p0, p0, Landroidx/compose/runtime/collection/MutableVector$SubList;->start:I
 
     sub-int/2addr v0, p0
@@ -602,7 +586,7 @@
         }
     .end annotation
 
-    .line 1077
+    .line 1103
     new-instance v0, Landroidx/compose/runtime/collection/MutableVector$VectorListIterator;
 
     check-cast p0, Ljava/util/List;
@@ -626,7 +610,7 @@
         }
     .end annotation
 
-    .line 1080
+    .line 1106
     new-instance v0, Landroidx/compose/runtime/collection/MutableVector$VectorListIterator;
 
     check-cast p0, Ljava/util/List;
@@ -646,7 +630,7 @@
         }
     .end annotation
 
-    .line 995
+    .line 1021
     invoke-virtual {p0, p1}, Landroidx/compose/runtime/collection/MutableVector$SubList;->removeAt(I)Ljava/lang/Object;
 
     move-result-object p0
@@ -657,7 +641,7 @@
 .method public remove(Ljava/lang/Object;)Z
     .locals 3
 
-    .line 1083
+    .line 1109
     iget v0, p0, Landroidx/compose/runtime/collection/MutableVector$SubList;->start:I
 
     iget v1, p0, Landroidx/compose/runtime/collection/MutableVector$SubList;->end:I
@@ -665,7 +649,7 @@
     :goto_0
     if-ge v0, v1, :cond_1
 
-    .line 1084
+    .line 1110
     iget-object v2, p0, Landroidx/compose/runtime/collection/MutableVector$SubList;->list:Ljava/util/List;
 
     invoke-interface {v2, v0}, Ljava/util/List;->get(I)Ljava/lang/Object;
@@ -678,12 +662,12 @@
 
     if-eqz v2, :cond_0
 
-    .line 1085
+    .line 1111
     iget-object p1, p0, Landroidx/compose/runtime/collection/MutableVector$SubList;->list:Ljava/util/List;
 
     invoke-interface {p1, v0}, Ljava/util/List;->remove(I)Ljava/lang/Object;
 
-    .line 1086
+    .line 1112
     iget p1, p0, Landroidx/compose/runtime/collection/MutableVector$SubList;->end:I
 
     add-int/lit8 p1, p1, -0x1
@@ -717,17 +701,13 @@
         }
     .end annotation
 
-    const-string v0, "elements"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 1094
+    .line 1120
     iget v0, p0, Landroidx/compose/runtime/collection/MutableVector$SubList;->end:I
 
-    .line 1095
+    .line 1121
     check-cast p1, Ljava/lang/Iterable;
 
-    .line 1197
+    .line 1223
     invoke-interface {p1}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
 
     move-result-object p1
@@ -743,12 +723,12 @@
 
     move-result-object v1
 
-    .line 1096
+    .line 1122
     invoke-virtual {p0, v1}, Landroidx/compose/runtime/collection/MutableVector$SubList;->remove(Ljava/lang/Object;)Z
 
     goto :goto_0
 
-    .line 1098
+    .line 1124
     :cond_0
     iget p0, p0, Landroidx/compose/runtime/collection/MutableVector$SubList;->end:I
 
@@ -773,14 +753,14 @@
         }
     .end annotation
 
-    .line 1102
+    .line 1128
     move-object v0, p0
 
     check-cast v0, Ljava/util/List;
 
     invoke-static {v0, p1}, Landroidx/compose/runtime/collection/MutableVectorKt;->access$checkIndex(Ljava/util/List;I)V
 
-    .line 1103
+    .line 1129
     iget-object v0, p0, Landroidx/compose/runtime/collection/MutableVector$SubList;->list:Ljava/util/List;
 
     iget v1, p0, Landroidx/compose/runtime/collection/MutableVector$SubList;->start:I
@@ -791,7 +771,7 @@
 
     move-result-object p1
 
-    .line 1104
+    .line 1130
     iget v0, p0, Landroidx/compose/runtime/collection/MutableVector$SubList;->end:I
 
     add-int/lit8 v0, v0, -0x1
@@ -813,21 +793,17 @@
         }
     .end annotation
 
-    const-string v0, "elements"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 1109
+    .line 1135
     iget v0, p0, Landroidx/compose/runtime/collection/MutableVector$SubList;->end:I
 
     add-int/lit8 v1, v0, -0x1
 
-    .line 1110
+    .line 1136
     iget v2, p0, Landroidx/compose/runtime/collection/MutableVector$SubList;->start:I
 
     if-gt v2, v1, :cond_1
 
-    .line 1111
+    .line 1137
     :goto_0
     iget-object v3, p0, Landroidx/compose/runtime/collection/MutableVector$SubList;->list:Ljava/util/List;
 
@@ -835,19 +811,19 @@
 
     move-result-object v3
 
-    .line 1112
+    .line 1138
     invoke-interface {p1, v3}, Ljava/util/Collection;->contains(Ljava/lang/Object;)Z
 
     move-result v3
 
     if-nez v3, :cond_0
 
-    .line 1113
+    .line 1139
     iget-object v3, p0, Landroidx/compose/runtime/collection/MutableVector$SubList;->list:Ljava/util/List;
 
     invoke-interface {v3, v1}, Ljava/util/List;->remove(I)Ljava/lang/Object;
 
-    .line 1114
+    .line 1140
     iget v3, p0, Landroidx/compose/runtime/collection/MutableVector$SubList;->end:I
 
     add-int/lit8 v3, v3, -0x1
@@ -861,7 +837,7 @@
 
     goto :goto_0
 
-    .line 1117
+    .line 1143
     :cond_1
     iget p0, p0, Landroidx/compose/runtime/collection/MutableVector$SubList;->end:I
 
@@ -886,14 +862,14 @@
         }
     .end annotation
 
-    .line 1121
+    .line 1147
     move-object v0, p0
 
     check-cast v0, Ljava/util/List;
 
     invoke-static {v0, p1}, Landroidx/compose/runtime/collection/MutableVectorKt;->access$checkIndex(Ljava/util/List;I)V
 
-    .line 1122
+    .line 1148
     iget-object v0, p0, Landroidx/compose/runtime/collection/MutableVector$SubList;->list:Ljava/util/List;
 
     iget p0, p0, Landroidx/compose/runtime/collection/MutableVector$SubList;->start:I
@@ -910,7 +886,7 @@
 .method public final bridge size()I
     .locals 0
 
-    .line 995
+    .line 1021
     invoke-virtual {p0}, Landroidx/compose/runtime/collection/MutableVector$SubList;->getSize()I
 
     move-result p0
@@ -928,12 +904,12 @@
         }
     .end annotation
 
-    .line 1126
+    .line 1152
     check-cast p0, Ljava/util/List;
 
     invoke-static {p0, p1, p2}, Landroidx/compose/runtime/collection/MutableVectorKt;->access$checkSubIndex(Ljava/util/List;II)V
 
-    .line 1127
+    .line 1153
     new-instance v0, Landroidx/compose/runtime/collection/MutableVector$SubList;
 
     invoke-direct {v0, p0, p1, p2}, Landroidx/compose/runtime/collection/MutableVector$SubList;-><init>(Ljava/util/List;II)V
@@ -956,7 +932,7 @@
 .end method
 
 .method public toArray([Ljava/lang/Object;)[Ljava/lang/Object;
-    .locals 1
+    .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<T:",
@@ -964,10 +940,6 @@
             ">([TT;)[TT;"
         }
     .end annotation
-
-    const-string v0, "array"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
     check-cast p0, Ljava/util/Collection;
 

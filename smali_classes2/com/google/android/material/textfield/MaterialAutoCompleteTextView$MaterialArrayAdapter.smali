@@ -37,13 +37,13 @@
 .method constructor <init>(Lcom/google/android/material/textfield/MaterialAutoCompleteTextView;Landroid/content/Context;I[Ljava/lang/String;)V
     .locals 0
 
-    .line 460
+    .line 545
     iput-object p1, p0, Lcom/google/android/material/textfield/MaterialAutoCompleteTextView$MaterialArrayAdapter;->this$0:Lcom/google/android/material/textfield/MaterialAutoCompleteTextView;
 
-    .line 461
+    .line 546
     invoke-direct {p0, p2, p3, p4}, Landroid/widget/ArrayAdapter;-><init>(Landroid/content/Context;I[Ljava/lang/Object;)V
 
-    .line 462
+    .line 547
     invoke-virtual {p0}, Lcom/google/android/material/textfield/MaterialAutoCompleteTextView$MaterialArrayAdapter;->updateSelectedItemColorStateList()V
 
     return-void
@@ -52,14 +52,14 @@
 .method private createItemSelectedColorStateList()Landroid/content/res/ColorStateList;
     .locals 6
 
-    .line 509
+    .line 594
     invoke-direct {p0}, Lcom/google/android/material/textfield/MaterialAutoCompleteTextView$MaterialArrayAdapter;->hasSelectedColor()Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
-    .line 510
+    .line 595
     invoke-direct {p0}, Lcom/google/android/material/textfield/MaterialAutoCompleteTextView$MaterialArrayAdapter;->hasSelectedRippleColor()Z
 
     move-result v0
@@ -70,22 +70,22 @@
 
     const v1, -0x10100a7
 
-    .line 514
+    .line 599
     filled-new-array {v0, v1}, [I
 
     move-result-object v0
 
     const v2, 0x10100a1
 
-    .line 515
+    .line 600
     filled-new-array {v2, v1}, [I
 
     move-result-object v1
 
-    .line 517
+    .line 602
     iget-object v2, p0, Lcom/google/android/material/textfield/MaterialAutoCompleteTextView$MaterialArrayAdapter;->this$0:Lcom/google/android/material/textfield/MaterialAutoCompleteTextView;
 
-    .line 518
+    .line 603
     invoke-static {v2}, Lcom/google/android/material/textfield/MaterialAutoCompleteTextView;->access$300(Lcom/google/android/material/textfield/MaterialAutoCompleteTextView;)Landroid/content/res/ColorStateList;
 
     move-result-object v2
@@ -96,10 +96,10 @@
 
     move-result v2
 
-    .line 519
+    .line 604
     iget-object v4, p0, Lcom/google/android/material/textfield/MaterialAutoCompleteTextView$MaterialArrayAdapter;->this$0:Lcom/google/android/material/textfield/MaterialAutoCompleteTextView;
 
-    .line 520
+    .line 605
     invoke-static {v4}, Lcom/google/android/material/textfield/MaterialAutoCompleteTextView;->access$300(Lcom/google/android/material/textfield/MaterialAutoCompleteTextView;)Landroid/content/res/ColorStateList;
 
     move-result-object v4
@@ -108,10 +108,10 @@
 
     move-result v4
 
-    .line 522
+    .line 607
     iget-object v5, p0, Lcom/google/android/material/textfield/MaterialAutoCompleteTextView$MaterialArrayAdapter;->this$0:Lcom/google/android/material/textfield/MaterialAutoCompleteTextView;
 
-    .line 524
+    .line 609
     invoke-static {v5}, Lcom/google/android/material/textfield/MaterialAutoCompleteTextView;->access$200(Lcom/google/android/material/textfield/MaterialAutoCompleteTextView;)I
 
     move-result v5
@@ -122,7 +122,7 @@
 
     iget-object v5, p0, Lcom/google/android/material/textfield/MaterialAutoCompleteTextView$MaterialArrayAdapter;->this$0:Lcom/google/android/material/textfield/MaterialAutoCompleteTextView;
 
-    .line 525
+    .line 610
     invoke-static {v5}, Lcom/google/android/material/textfield/MaterialAutoCompleteTextView;->access$200(Lcom/google/android/material/textfield/MaterialAutoCompleteTextView;)I
 
     move-result v5
@@ -133,7 +133,7 @@
 
     iget-object p0, p0, Lcom/google/android/material/textfield/MaterialAutoCompleteTextView$MaterialArrayAdapter;->this$0:Lcom/google/android/material/textfield/MaterialAutoCompleteTextView;
 
-    .line 526
+    .line 611
     invoke-static {p0}, Lcom/google/android/material/textfield/MaterialAutoCompleteTextView;->access$200(Lcom/google/android/material/textfield/MaterialAutoCompleteTextView;)I
 
     move-result p0
@@ -142,14 +142,14 @@
 
     move-result-object p0
 
-    .line 528
+    .line 613
     new-array v2, v3, [I
 
     filled-new-array {v1, v0, v2}, [[I
 
     move-result-object v0
 
-    .line 530
+    .line 615
     new-instance v1, Landroid/content/res/ColorStateList;
 
     invoke-direct {v1, v0, p0}, Landroid/content/res/ColorStateList;-><init>([[I[I)V
@@ -165,7 +165,7 @@
 .method private getSelectedItemDrawable()Landroid/graphics/drawable/Drawable;
     .locals 3
 
-    .line 485
+    .line 570
     invoke-direct {p0}, Lcom/google/android/material/textfield/MaterialAutoCompleteTextView$MaterialArrayAdapter;->hasSelectedColor()Z
 
     move-result v0
@@ -174,7 +174,7 @@
 
     if-eqz v0, :cond_1
 
-    .line 493
+    .line 578
     new-instance v0, Landroid/graphics/drawable/ColorDrawable;
 
     iget-object v2, p0, Lcom/google/android/material/textfield/MaterialAutoCompleteTextView$MaterialArrayAdapter;->this$0:Lcom/google/android/material/textfield/MaterialAutoCompleteTextView;
@@ -185,17 +185,17 @@
 
     invoke-direct {v0, v2}, Landroid/graphics/drawable/ColorDrawable;-><init>(I)V
 
-    .line 494
+    .line 579
     iget-object v2, p0, Lcom/google/android/material/textfield/MaterialAutoCompleteTextView$MaterialArrayAdapter;->pressedRippleColor:Landroid/content/res/ColorStateList;
 
     if-eqz v2, :cond_0
 
-    .line 500
+    .line 585
     iget-object v2, p0, Lcom/google/android/material/textfield/MaterialAutoCompleteTextView$MaterialArrayAdapter;->selectedItemRippleOverlaidColor:Landroid/content/res/ColorStateList;
 
     invoke-static {v0, v2}, Landroidx/core/graphics/drawable/DrawableCompat;->setTintList(Landroid/graphics/drawable/Drawable;Landroid/content/res/ColorStateList;)V
 
-    .line 501
+    .line 586
     new-instance v2, Landroid/graphics/drawable/RippleDrawable;
 
     iget-object p0, p0, Lcom/google/android/material/textfield/MaterialAutoCompleteTextView$MaterialArrayAdapter;->pressedRippleColor:Landroid/content/res/ColorStateList;
@@ -214,7 +214,7 @@
 .method private hasSelectedColor()Z
     .locals 0
 
-    .line 551
+    .line 636
     iget-object p0, p0, Lcom/google/android/material/textfield/MaterialAutoCompleteTextView$MaterialArrayAdapter;->this$0:Lcom/google/android/material/textfield/MaterialAutoCompleteTextView;
 
     invoke-static {p0}, Lcom/google/android/material/textfield/MaterialAutoCompleteTextView;->access$200(Lcom/google/android/material/textfield/MaterialAutoCompleteTextView;)I
@@ -237,7 +237,7 @@
 .method private hasSelectedRippleColor()Z
     .locals 0
 
-    .line 555
+    .line 640
     iget-object p0, p0, Lcom/google/android/material/textfield/MaterialAutoCompleteTextView$MaterialArrayAdapter;->this$0:Lcom/google/android/material/textfield/MaterialAutoCompleteTextView;
 
     invoke-static {p0}, Lcom/google/android/material/textfield/MaterialAutoCompleteTextView;->access$300(Lcom/google/android/material/textfield/MaterialAutoCompleteTextView;)Landroid/content/res/ColorStateList;
@@ -260,7 +260,7 @@
 .method private sanitizeDropdownItemSelectedRippleColor()Landroid/content/res/ColorStateList;
     .locals 2
 
-    .line 534
+    .line 619
     invoke-direct {p0}, Lcom/google/android/material/textfield/MaterialAutoCompleteTextView$MaterialArrayAdapter;->hasSelectedRippleColor()Z
 
     move-result v0
@@ -274,15 +274,15 @@
     :cond_0
     const v0, 0x10100a7
 
-    .line 540
+    .line 625
     filled-new-array {v0}, [I
 
     move-result-object v0
 
-    .line 541
+    .line 626
     iget-object p0, p0, Lcom/google/android/material/textfield/MaterialAutoCompleteTextView$MaterialArrayAdapter;->this$0:Lcom/google/android/material/textfield/MaterialAutoCompleteTextView;
 
-    .line 543
+    .line 628
     invoke-static {p0}, Lcom/google/android/material/textfield/MaterialAutoCompleteTextView;->access$300(Lcom/google/android/material/textfield/MaterialAutoCompleteTextView;)Landroid/content/res/ColorStateList;
 
     move-result-object p0
@@ -297,14 +297,14 @@
 
     move-result-object p0
 
-    .line 546
+    .line 631
     new-array v1, v1, [I
 
     filled-new-array {v0, v1}, [[I
 
     move-result-object v0
 
-    .line 547
+    .line 632
     new-instance v1, Landroid/content/res/ColorStateList;
 
     invoke-direct {v1, v0, p0}, Landroid/content/res/ColorStateList;-><init>([[I[I)V
@@ -317,22 +317,22 @@
 .method public getView(ILandroid/view/View;Landroid/view/ViewGroup;)Landroid/view/View;
     .locals 1
 
-    .line 472
+    .line 557
     invoke-super {p0, p1, p2, p3}, Landroid/widget/ArrayAdapter;->getView(ILandroid/view/View;Landroid/view/ViewGroup;)Landroid/view/View;
 
     move-result-object p1
 
-    .line 474
+    .line 559
     instance-of p2, p1, Landroid/widget/TextView;
 
     if-eqz p2, :cond_1
 
-    .line 475
+    .line 560
     move-object p2, p1
 
     check-cast p2, Landroid/widget/TextView;
 
-    .line 476
+    .line 561
     iget-object p3, p0, Lcom/google/android/material/textfield/MaterialAutoCompleteTextView$MaterialArrayAdapter;->this$0:Lcom/google/android/material/textfield/MaterialAutoCompleteTextView;
 
     invoke-virtual {p3}, Lcom/google/android/material/textfield/MaterialAutoCompleteTextView;->getText()Landroid/text/Editable;
@@ -353,7 +353,7 @@
 
     if-eqz p3, :cond_0
 
-    .line 477
+    .line 562
     invoke-direct {p0}, Lcom/google/android/material/textfield/MaterialAutoCompleteTextView$MaterialArrayAdapter;->getSelectedItemDrawable()Landroid/graphics/drawable/Drawable;
 
     move-result-object p0
@@ -373,14 +373,14 @@
 .method updateSelectedItemColorStateList()V
     .locals 1
 
-    .line 466
+    .line 551
     invoke-direct {p0}, Lcom/google/android/material/textfield/MaterialAutoCompleteTextView$MaterialArrayAdapter;->sanitizeDropdownItemSelectedRippleColor()Landroid/content/res/ColorStateList;
 
     move-result-object v0
 
     iput-object v0, p0, Lcom/google/android/material/textfield/MaterialAutoCompleteTextView$MaterialArrayAdapter;->pressedRippleColor:Landroid/content/res/ColorStateList;
 
-    .line 467
+    .line 552
     invoke-direct {p0}, Lcom/google/android/material/textfield/MaterialAutoCompleteTextView$MaterialArrayAdapter;->createItemSelectedColorStateList()Landroid/content/res/ColorStateList;
 
     move-result-object v0

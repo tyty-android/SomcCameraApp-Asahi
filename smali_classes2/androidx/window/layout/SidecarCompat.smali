@@ -891,13 +891,13 @@
     move-result-object v3
 
     .line 232
-    new-array v4, v2, [Ljava/lang/Object;
-
     invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
-    move-result-object v5
+    move-result-object v4
 
-    aput-object v5, v4, v0
+    filled-new-array {v4}, [Ljava/lang/Object;
+
+    move-result-object v4
 
     invoke-virtual {v3, p0, v4}, Ljava/lang/reflect/Method;->invoke(Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;
 

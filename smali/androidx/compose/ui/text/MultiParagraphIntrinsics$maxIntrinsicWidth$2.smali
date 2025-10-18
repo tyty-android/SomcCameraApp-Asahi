@@ -26,7 +26,7 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/SourceDebugExtension;
-    value = "SMAP\nMultiParagraphIntrinsics.kt\nKotlin\n*S Kotlin\n*F\n+ 1 MultiParagraphIntrinsics.kt\nandroidx/compose/ui/text/MultiParagraphIntrinsics$maxIntrinsicWidth$2\n+ 2 ListUtils.kt\nandroidx/compose/ui/util/ListUtilsKt\n*L\n1#1,152:1\n171#2,13:153\n*S KotlinDebug\n*F\n+ 1 MultiParagraphIntrinsics.kt\nandroidx/compose/ui/text/MultiParagraphIntrinsics$maxIntrinsicWidth$2\n*L\n81#1:153,13\n*E\n"
+    value = "SMAP\nMultiParagraphIntrinsics.kt\nKotlin\n*S Kotlin\n*F\n+ 1 MultiParagraphIntrinsics.kt\nandroidx/compose/ui/text/MultiParagraphIntrinsics$maxIntrinsicWidth$2\n+ 2 ListUtils.kt\nandroidx/compose/ui/util/ListUtilsKt\n*L\n1#1,154:1\n171#2,13:155\n*S KotlinDebug\n*F\n+ 1 MultiParagraphIntrinsics.kt\nandroidx/compose/ui/text/MultiParagraphIntrinsics$maxIntrinsicWidth$2\n*L\n82#1:155,13\n*E\n"
 .end annotation
 
 .annotation runtime Lkotlin/Metadata;
@@ -71,14 +71,14 @@
 .method public final invoke()Ljava/lang/Float;
     .locals 7
 
-    .line 81
+    .line 82
     iget-object p0, p0, Landroidx/compose/ui/text/MultiParagraphIntrinsics$maxIntrinsicWidth$2;->this$0:Landroidx/compose/ui/text/MultiParagraphIntrinsics;
 
     invoke-virtual {p0}, Landroidx/compose/ui/text/MultiParagraphIntrinsics;->getInfoList$ui_text_release()Ljava/util/List;
 
     move-result-object p0
 
-    .line 154
+    .line 156
     invoke-interface {p0}, Ljava/util/List;->isEmpty()Z
 
     move-result v0
@@ -92,17 +92,17 @@
     :cond_0
     const/4 v0, 0x0
 
-    .line 155
+    .line 157
     invoke-interface {p0, v0}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
     move-result-object v0
 
-    .line 156
+    .line 158
     move-object v1, v0
 
     check-cast v1, Landroidx/compose/ui/text/ParagraphIntrinsicInfo;
 
-    .line 82
+    .line 83
     invoke-virtual {v1}, Landroidx/compose/ui/text/ParagraphIntrinsicInfo;->getIntrinsics()Landroidx/compose/ui/text/ParagraphIntrinsics;
 
     move-result-object v1
@@ -111,7 +111,7 @@
 
     move-result v1
 
-    .line 157
+    .line 159
     invoke-static {p0}, Lkotlin/collections/CollectionsKt;->getLastIndex(Ljava/util/List;)I
 
     move-result v2
@@ -120,18 +120,18 @@
 
     if-gt v3, v2, :cond_2
 
-    .line 158
+    .line 160
     :goto_0
     invoke-interface {p0, v3}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
     move-result-object v4
 
-    .line 159
+    .line 161
     move-object v5, v4
 
     check-cast v5, Landroidx/compose/ui/text/ParagraphIntrinsicInfo;
 
-    .line 82
+    .line 83
     invoke-virtual {v5}, Landroidx/compose/ui/text/ParagraphIntrinsicInfo;->getIntrinsics()Landroidx/compose/ui/text/ParagraphIntrinsics;
 
     move-result-object v5
@@ -140,7 +140,7 @@
 
     move-result v5
 
-    .line 160
+    .line 162
     invoke-static {v1, v5}, Ljava/lang/Float;->compare(FF)I
 
     move-result v6
@@ -161,13 +161,13 @@
     :cond_2
     move-object p0, v0
 
-    .line 81
+    .line 82
     :goto_1
     check-cast p0, Landroidx/compose/ui/text/ParagraphIntrinsicInfo;
 
     if-eqz p0, :cond_3
 
-    .line 83
+    .line 84
     invoke-virtual {p0}, Landroidx/compose/ui/text/ParagraphIntrinsicInfo;->getIntrinsics()Landroidx/compose/ui/text/ParagraphIntrinsics;
 
     move-result-object p0
@@ -194,7 +194,7 @@
 .method public bridge synthetic invoke()Ljava/lang/Object;
     .locals 0
 
-    .line 80
+    .line 81
     invoke-virtual {p0}, Landroidx/compose/ui/text/MultiParagraphIntrinsics$maxIntrinsicWidth$2;->invoke()Ljava/lang/Float;
 
     move-result-object p0

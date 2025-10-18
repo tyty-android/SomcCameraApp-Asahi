@@ -21,7 +21,7 @@
 .method constructor <init>()V
     .locals 0
 
-    .line 1225
+    .line 1229
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -42,8 +42,8 @@
         }
     .end annotation
 
-    .line 1229
-    invoke-static {}, Ljp/co/sony/mc/camera/configuration/parameters/VolumeKey;->values()[Ljp/co/sony/mc/camera/configuration/parameters/VolumeKey;
+    .line 1233
+    invoke-static {}, Ljp/co/sony/mc/camera/configuration/parameters/DestinationToSave;->getOptions()[Ljp/co/sony/mc/camera/configuration/parameters/DestinationToSave;
 
     move-result-object p0
 

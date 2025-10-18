@@ -30,7 +30,7 @@
 .method constructor <init>(Lcom/google/api/client/googleapis/extensions/android/gms/auth/GoogleAccountCredential;)V
     .locals 0
 
-    .line 283
+    .line 273
     iput-object p1, p0, Lcom/google/api/client/googleapis/extensions/android/gms/auth/GoogleAccountCredential$RequestHandler;->this$0:Lcom/google/api/client/googleapis/extensions/android/gms/auth/GoogleAccountCredential;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -48,7 +48,7 @@
         }
     .end annotation
 
-    .line 307
+    .line 298
     :try_start_0
     invoke-virtual {p2}, Lcom/google/api/client/http/HttpResponse;->getStatusCode()I
 
@@ -64,10 +64,10 @@
 
     const/4 p1, 0x1
 
-    .line 308
+    .line 299
     iput-boolean p1, p0, Lcom/google/api/client/googleapis/extensions/android/gms/auth/GoogleAccountCredential$RequestHandler;->received401:Z
 
-    .line 309
+    .line 300
     iget-object p2, p0, Lcom/google/api/client/googleapis/extensions/android/gms/auth/GoogleAccountCredential$RequestHandler;->this$0:Lcom/google/api/client/googleapis/extensions/android/gms/auth/GoogleAccountCredential;
 
     iget-object p2, p2, Lcom/google/api/client/googleapis/extensions/android/gms/auth/GoogleAccountCredential;->context:Landroid/content/Context;
@@ -88,7 +88,7 @@
     :catch_0
     move-exception p0
 
-    .line 313
+    .line 304
     new-instance p1, Lcom/google/api/client/googleapis/extensions/android/gms/auth/GoogleAuthIOException;
 
     invoke-direct {p1, p0}, Lcom/google/api/client/googleapis/extensions/android/gms/auth/GoogleAuthIOException;-><init>(Lcom/google/android/gms/auth/GoogleAuthException;)V
@@ -106,7 +106,7 @@
 
     const-string v0, "Bearer "
 
-    .line 292
+    .line 283
     :try_start_0
     iget-object v1, p0, Lcom/google/api/client/googleapis/extensions/android/gms/auth/GoogleAccountCredential$RequestHandler;->this$0:Lcom/google/api/client/googleapis/extensions/android/gms/auth/GoogleAccountCredential;
 
@@ -116,7 +116,7 @@
 
     iput-object v1, p0, Lcom/google/api/client/googleapis/extensions/android/gms/auth/GoogleAccountCredential$RequestHandler;->token:Ljava/lang/String;
 
-    .line 293
+    .line 284
     invoke-virtual {p1}, Lcom/google/api/client/http/HttpRequest;->getHeaders()Lcom/google/api/client/http/HttpHeaders;
 
     move-result-object p1
@@ -146,7 +146,7 @@
     :catch_0
     move-exception p0
 
-    .line 299
+    .line 290
     new-instance p1, Lcom/google/api/client/googleapis/extensions/android/gms/auth/GoogleAuthIOException;
 
     invoke-direct {p1, p0}, Lcom/google/api/client/googleapis/extensions/android/gms/auth/GoogleAuthIOException;-><init>(Lcom/google/android/gms/auth/GoogleAuthException;)V
@@ -156,7 +156,7 @@
     :catch_1
     move-exception p0
 
-    .line 297
+    .line 288
     new-instance p1, Lcom/google/api/client/googleapis/extensions/android/gms/auth/UserRecoverableAuthIOException;
 
     invoke-direct {p1, p0}, Lcom/google/api/client/googleapis/extensions/android/gms/auth/UserRecoverableAuthIOException;-><init>(Lcom/google/android/gms/auth/UserRecoverableAuthException;)V
@@ -166,7 +166,7 @@
     :catch_2
     move-exception p0
 
-    .line 295
+    .line 286
     new-instance p1, Lcom/google/api/client/googleapis/extensions/android/gms/auth/GooglePlayServicesAvailabilityIOException;
 
     invoke-direct {p1, p0}, Lcom/google/api/client/googleapis/extensions/android/gms/auth/GooglePlayServicesAvailabilityIOException;-><init>(Lcom/google/android/gms/auth/GooglePlayServicesAvailabilityException;)V

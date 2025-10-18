@@ -21,7 +21,7 @@
 .method constructor <init>()V
     .locals 0
 
-    .line 1195
+    .line 1201
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -42,8 +42,8 @@
         }
     .end annotation
 
-    .line 1199
-    invoke-static {}, Ljp/co/sony/mc/camera/configuration/parameters/HorizontalLevelCalibration;->values()[Ljp/co/sony/mc/camera/configuration/parameters/HorizontalLevelCalibration;
+    .line 1205
+    invoke-static {}, Ljp/co/sony/mc/camera/configuration/parameters/Geotag;->values()[Ljp/co/sony/mc/camera/configuration/parameters/Geotag;
 
     move-result-object p0
 

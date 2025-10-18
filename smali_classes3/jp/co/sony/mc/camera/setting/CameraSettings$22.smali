@@ -21,7 +21,7 @@
 .method constructor <init>()V
     .locals 0
 
-    .line 718
+    .line 771
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -42,11 +42,11 @@
         }
     .end annotation
 
-    .line 722
+    .line 775
     check-cast p1, Ljp/co/sony/mc/camera/setting/CameraSettings;
 
-    .line 723
-    invoke-static {p1}, Ljp/co/sony/mc/camera/setting/CameraSettings;->-$$Nest$mgetShutterSpeed(Ljp/co/sony/mc/camera/setting/CameraSettings;)Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;
+    .line 776
+    invoke-static {p1}, Ljp/co/sony/mc/camera/setting/CameraSettings;->-$$Nest$mgetResolution(Ljp/co/sony/mc/camera/setting/CameraSettings;)Ljp/co/sony/mc/camera/configuration/parameters/Resolution;
 
     move-result-object p0
 

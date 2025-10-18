@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <style name="TextAppearance.ExtraSmall" parent="@android:style/TextAppearance.DeviceDefault.Small">
-        <item name="android:textSize">14.0dip</item>
-    </style>
-</resources>

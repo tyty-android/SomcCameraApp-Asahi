@@ -46,7 +46,7 @@
 .end method
 
 .method private static getFpsRange(ILjava/util/List;)[I
-    .locals 5
+    .locals 7
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(I",
@@ -71,7 +71,9 @@
 
     move-result v0
 
-    const/4 v1, 0x0
+    const/4 v1, 0x1
+
+    const/4 v2, 0x0
 
     if-eqz v0, :cond_3
 
@@ -81,61 +83,59 @@
 
     check-cast v0, [I
 
-    const/4 v2, 0x1
-
     .line 196
-    aget v2, v0, v2
+    aget v3, v0, v1
 
     .line 197
-    aget v0, v0, v1
+    aget v0, v0, v2
 
     .line 199
-    sget-boolean v3, Ljp/co/sony/mc/camera/util/CamLog;->VERBOSE:Z
+    sget-boolean v4, Ljp/co/sony/mc/camera/util/CamLog;->VERBOSE:Z
 
-    if-eqz v3, :cond_1
+    if-eqz v4, :cond_1
 
     .line 200
-    new-instance v3, Ljava/lang/StringBuilder;
+    new-array v4, v1, [Ljava/lang/String;
 
-    const-string v4, "getFpsRange: Supported frame rate: "
+    new-instance v5, Ljava/lang/StringBuilder;
 
-    invoke-direct {v3, v4}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+    const-string v6, "getFpsRange: Supported frame rate: "
 
-    invoke-virtual {v3, v0}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+    invoke-direct {v5, v6}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
-    move-result-object v3
+    invoke-virtual {v5, v0}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
-    const-string v4, ", "
+    move-result-object v5
 
-    invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    const-string v6, ", "
 
-    move-result-object v3
+    invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v3, v2}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+    move-result-object v5
 
-    move-result-object v3
+    invoke-virtual {v5, v3}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v3}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    move-result-object v5
 
-    move-result-object v3
+    invoke-virtual {v5}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    filled-new-array {v3}, [Ljava/lang/String;
+    move-result-object v5
 
-    move-result-object v3
+    aput-object v5, v4, v2
 
-    invoke-static {v3}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
+    invoke-static {v4}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
     .line 202
-    const-string v3, "getFpsRange: current candidate max fps: 0"
+    new-array v4, v1, [Ljava/lang/String;
 
-    filled-new-array {v3}, [Ljava/lang/String;
+    const-string v5, "getFpsRange: current candidate max fps: 0"
 
-    move-result-object v3
+    aput-object v5, v4, v2
 
-    invoke-static {v3}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
+    invoke-static {v4}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
     :cond_1
-    if-le p0, v2, :cond_2
+    if-le p0, v3, :cond_2
 
     .line 206
     sget-boolean v0, Ljp/co/sony/mc/camera/util/CamLog;->VERBOSE:Z
@@ -143,11 +143,11 @@
     if-eqz v0, :cond_0
 
     .line 207
-    const-string/jumbo v0, "targetFps over the supported max frame"
+    new-array v0, v1, [Ljava/lang/String;
 
-    filled-new-array {v0}, [Ljava/lang/String;
+    const-string/jumbo v1, "targetFps over the supported max frame"
 
-    move-result-object v0
+    aput-object v1, v0, v2
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
@@ -162,20 +162,20 @@
     if-eqz v0, :cond_0
 
     .line 214
-    const-string/jumbo v0, "targetFps under the supported min frame"
+    new-array v0, v1, [Ljava/lang/String;
 
-    filled-new-array {v0}, [Ljava/lang/String;
+    const-string/jumbo v1, "targetFps under the supported min frame"
 
-    move-result-object v0
+    aput-object v1, v0, v2
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
     goto :goto_0
 
     :cond_3
-    move v0, v1
+    move v0, v2
 
-    move v2, v0
+    move v3, v0
 
     .line 224
     :cond_4
@@ -184,49 +184,55 @@
     if-eqz p0, :cond_5
 
     .line 225
-    new-instance p0, Ljava/lang/StringBuilder;
+    new-array p0, v1, [Ljava/lang/String;
 
-    const-string p1, "Max: "
+    new-instance p1, Ljava/lang/StringBuilder;
 
-    invoke-direct {p0, p1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+    const-string v4, "Max: "
 
-    invoke-virtual {p0, v2}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+    invoke-direct {p1, v4}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
-    move-result-object p0
+    invoke-virtual {p1, v3}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
-    const-string p1, ", Min: "
+    move-result-object p1
 
-    invoke-virtual {p0, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    const-string v4, ", Min: "
 
-    move-result-object p0
+    invoke-virtual {p1, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {p0, v0}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+    move-result-object p1
 
-    move-result-object p0
+    invoke-virtual {p1, v0}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
-    invoke-virtual {p0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    move-result-object p1
 
-    move-result-object p0
+    invoke-virtual {p1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    filled-new-array {p0}, [Ljava/lang/String;
+    move-result-object p1
 
-    move-result-object p0
+    aput-object p1, p0, v2
 
     invoke-static {p0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
     :cond_5
-    if-lez v2, :cond_6
+    if-lez v3, :cond_6
+
+    const/4 p0, 0x2
+
+    .line 228
+    new-array p0, p0, [I
+
+    .line 229
+    aput v3, p0, v1
 
     .line 230
-    filled-new-array {v0, v2}, [I
-
-    move-result-object p0
+    aput v0, p0, v2
 
     return-object p0
 
     .line 233
     :cond_6
-    new-array p0, v1, [I
+    new-array p0, v2, [I
 
     return-object p0
 .end method
@@ -288,12 +294,18 @@
 
     if-lez p1, :cond_0
 
+    const/4 v1, 0x2
+
+    .line 89
+    new-array v1, v1, [I
+
+    .line 90
+    aput p1, v1, v2
+
     .line 91
-    filled-new-array {v0, p1}, [I
+    aput v0, v1, p0
 
-    move-result-object p0
-
-    return-object p0
+    return-object v1
 
     .line 94
     :cond_0
@@ -336,52 +348,60 @@
     .line 130
     sget-boolean v0, Ljp/co/sony/mc/camera/util/CamLog;->VERBOSE:Z
 
+    const/4 v1, 0x1
+
+    const/4 v2, 0x0
+
     if-eqz v0, :cond_0
 
-    new-instance v0, Ljava/lang/StringBuilder;
+    new-array v0, v1, [Ljava/lang/String;
 
-    const-string v1, "getFpsRangeForVideoPreview: videoSize "
+    new-instance v3, Ljava/lang/StringBuilder;
 
-    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+    const-string v4, "getFpsRangeForVideoPreview: videoSize "
 
-    invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+    invoke-direct {v3, v4}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
-    move-result-object v0
+    invoke-virtual {v3, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
-    const-string v1, ", targetFps "
+    move-result-object v3
 
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    const-string v4, ", targetFps "
 
-    move-result-object v0
+    invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v0, p2}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+    move-result-object v3
 
-    move-result-object v0
+    invoke-virtual {v3, p2}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    move-result-object v3
 
-    move-result-object v0
+    invoke-virtual {v3}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    filled-new-array {v0}, [Ljava/lang/String;
+    move-result-object v3
 
-    move-result-object v0
+    aput-object v3, v0, v2
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
-    .line 135
     :cond_0
-    filled-new-array {p2, p2}, [I
+    const/4 v0, 0x2
 
-    move-result-object v0
+    .line 133
+    new-array v0, v0, [I
+
+    .line 134
+    aput p2, v0, v1
+
+    .line 135
+    aput p2, v0, v2
 
     .line 137
     invoke-static {p2}, Ljp/co/sony/mc/camera/device/FpsProvider;->isHighSpeedFps(I)Z
 
-    move-result v1
+    move-result v3
 
-    const/4 v2, 0x0
-
-    if-eqz v1, :cond_3
+    if-eqz v3, :cond_3
 
     .line 139
     invoke-static {p0}, Ljp/co/sony/mc/camera/util/capability/PlatformCapability;->getCameraCapability(Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;)Ljp/co/sony/mc/camera/util/capability/CameraCapabilityList;
@@ -498,20 +518,18 @@
     check-cast p2, [I
 
     .line 157
-    aget v1, p2, v2
+    aget v3, p2, v2
 
-    const/16 v3, 0x1e
+    const/16 v4, 0x1e
 
-    if-ne v1, v3, :cond_4
-
-    const/4 v1, 0x1
+    if-ne v3, v4, :cond_4
 
     aget p2, p2, v1
 
     if-ne p2, p1, :cond_4
 
     .line 158
-    aput v3, v0, v2
+    aput v4, v0, v2
 
     :cond_5
     :goto_1
@@ -519,7 +537,7 @@
 .end method
 
 .method public static getFpsRangeForVideoRecording(I)Landroid/util/Range;
-    .locals 2
+    .locals 3
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(I)",
@@ -534,23 +552,27 @@
 
     if-eqz v0, :cond_0
 
-    new-instance v0, Ljava/lang/StringBuilder;
+    const/4 v0, 0x1
 
-    const-string v1, "getFpsRangeForVideoRecording: targetFps "
+    new-array v0, v0, [Ljava/lang/String;
 
-    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+    new-instance v1, Ljava/lang/StringBuilder;
 
-    invoke-virtual {v0, p0}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+    const-string v2, "getFpsRangeForVideoRecording: targetFps "
 
-    move-result-object v0
+    invoke-direct {v1, v2}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-virtual {v1, p0}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
-    move-result-object v0
+    move-result-object v1
 
-    filled-new-array {v0}, [Ljava/lang/String;
+    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    move-result-object v0
+    move-result-object v1
+
+    const/4 v2, 0x0
+
+    aput-object v1, v0, v2
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 

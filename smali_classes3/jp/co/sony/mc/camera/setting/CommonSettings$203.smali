@@ -21,7 +21,7 @@
 .method constructor <init>()V
     .locals 0
 
-    .line 1852
+    .line 1858
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -42,8 +42,10 @@
         }
     .end annotation
 
-    .line 1856
-    sget-object p0, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->VIDEO_PRO_P:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
+    .line 1862
+    invoke-static {}, Ljp/co/sony/mc/camera/configuration/parameters/StreamingAudioMute;->getDefaultValue()Ljp/co/sony/mc/camera/configuration/parameters/StreamingAudioMute;
+
+    move-result-object p0
 
     return-object p0
 .end method

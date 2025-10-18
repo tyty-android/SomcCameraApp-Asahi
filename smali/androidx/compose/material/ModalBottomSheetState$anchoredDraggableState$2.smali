@@ -26,7 +26,7 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/SourceDebugExtension;
-    value = "SMAP\nModalBottomSheet.kt\nKotlin\n*S Kotlin\n*F\n+ 1 ModalBottomSheet.kt\nandroidx/compose/material/ModalBottomSheetState$anchoredDraggableState$2\n+ 2 fake.kt\nkotlin/jvm/internal/FakeKt\n*L\n1#1,831:1\n1#2:832\n*E\n"
+    value = "SMAP\nModalBottomSheet.kt\nKotlin\n*S Kotlin\n*F\n+ 1 ModalBottomSheet.kt\nandroidx/compose/material/ModalBottomSheetState$anchoredDraggableState$2\n+ 2 fake.kt\nkotlin/jvm/internal/FakeKt\n*L\n1#1,817:1\n1#2:818\n*E\n"
 .end annotation
 
 .annotation runtime Lkotlin/Metadata;
@@ -71,7 +71,7 @@
 .method public final invoke()Ljava/lang/Float;
     .locals 1
 
-    .line 211
+    .line 210
     iget-object p0, p0, Landroidx/compose/material/ModalBottomSheetState$anchoredDraggableState$2;->this$0:Landroidx/compose/material/ModalBottomSheetState;
 
     invoke-static {p0}, Landroidx/compose/material/ModalBottomSheetState;->access$requireDensity(Landroidx/compose/material/ModalBottomSheetState;)Landroidx/compose/ui/unit/Density;
@@ -96,7 +96,7 @@
 .method public bridge synthetic invoke()Ljava/lang/Object;
     .locals 0
 
-    .line 211
+    .line 210
     invoke-virtual {p0}, Landroidx/compose/material/ModalBottomSheetState$anchoredDraggableState$2;->invoke()Ljava/lang/Float;
 
     move-result-object p0

@@ -16,12 +16,12 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/SourceDebugExtension;
-    value = "SMAP\nBasicMarquee.kt\nKotlin\n*S Kotlin\n*F\n+ 1 BasicMarquee.kt\nandroidx/compose/foundation/MarqueeModifierNode\n+ 2 SnapshotIntState.kt\nandroidx/compose/runtime/SnapshotIntStateKt__SnapshotIntStateKt\n+ 3 SnapshotState.kt\nandroidx/compose/runtime/SnapshotStateKt__SnapshotStateKt\n+ 4 DrawScope.kt\nandroidx/compose/ui/graphics/drawscope/DrawScopeKt\n*L\n1#1,497:1\n75#2:498\n108#2,2:499\n75#2:501\n108#2,2:502\n81#3:504\n107#3,2:505\n81#3:507\n107#3,2:508\n81#3:510\n107#3,2:511\n81#3:513\n214#4,8:514\n261#4,8:522\n115#4,9:530\n269#4,3:539\n*S KotlinDebug\n*F\n+ 1 BasicMarquee.kt\nandroidx/compose/foundation/MarqueeModifierNode\n*L\n205#1:498\n205#1:499,2\n206#1:501\n206#1:502,2\n207#1:504\n207#1:505,2\n208#1:507\n208#1:508,2\n209#1:510\n209#1:511,2\n217#1:513\n311#1:514,8\n311#1:522,8\n321#1:530,9\n311#1:539,3\n*E\n"
+    value = "SMAP\nBasicMarquee.kt\nKotlin\n*S Kotlin\n*F\n+ 1 BasicMarquee.kt\nandroidx/compose/foundation/MarqueeModifierNode\n+ 2 SnapshotIntState.kt\nandroidx/compose/runtime/SnapshotIntStateKt__SnapshotIntStateKt\n+ 3 SnapshotState.kt\nandroidx/compose/runtime/SnapshotStateKt__SnapshotStateKt\n+ 4 DrawScope.kt\nandroidx/compose/ui/graphics/drawscope/DrawScopeKt\n*L\n1#1,515:1\n75#2:516\n108#2,2:517\n75#2:519\n108#2,2:520\n81#3:522\n107#3,2:523\n81#3:525\n107#3,2:526\n81#3:528\n107#3,2:529\n81#3:531\n215#4,8:532\n262#4,8:540\n116#4,9:548\n270#4,3:557\n*S KotlinDebug\n*F\n+ 1 BasicMarquee.kt\nandroidx/compose/foundation/MarqueeModifierNode\n*L\n210#1:516\n210#1:517,2\n211#1:519\n211#1:520,2\n212#1:522\n212#1:523,2\n214#1:525\n214#1:526,2\n215#1:528\n215#1:529,2\n223#1:531\n322#1:532,8\n322#1:540,8\n332#1:548,9\n322#1:557,3\n*E\n"
 .end annotation
 
 .annotation runtime Lkotlin/Metadata;
     d1 = {
-        "\u0000\u0088\u0001\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0008\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0003\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0012\n\u0002\u0010\u0007\n\u0002\u0008\u0002\n\u0002\u0010\u000b\n\u0002\u0008\u0007\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u000b\n\u0002\u0010\u0002\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0007\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0004\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0005\u0008\u0002\u0018\u00002\u00020\u00012\u00020\u00022\u00020\u00032\u00020\u0004B8\u0012\u0006\u0010\u0005\u001a\u00020\u0006\u0012\u0006\u0010\u0007\u001a\u00020\u0008\u0012\u0006\u0010\t\u001a\u00020\u0006\u0012\u0006\u0010\n\u001a\u00020\u0006\u0012\u0006\u0010\u000b\u001a\u00020\u000c\u0012\u0006\u0010\r\u001a\u00020\u000e\u00f8\u0001\u0000\u00a2\u0006\u0002\u0010\u000fJ\u0008\u00108\u001a\u000209H\u0016J\u0010\u0010:\u001a\u0002092\u0006\u0010;\u001a\u00020<H\u0016J\u0008\u0010=\u001a\u000209H\u0002J\u0011\u0010>\u001a\u000209H\u0082@\u00f8\u0001\u0000\u00a2\u0006\u0002\u0010?JC\u0010@\u001a\u0002092\u0006\u0010\u0005\u001a\u00020\u00062\u0006\u0010\u0007\u001a\u00020\u00082\u0006\u0010\t\u001a\u00020\u00062\u0006\u0010\n\u001a\u00020\u00062\u0006\u0010\u000b\u001a\u00020\u000c2\u0006\u0010\r\u001a\u00020\u000e\u00f8\u0001\u0001\u00f8\u0001\u0000\u00a2\u0006\u0004\u0008A\u0010BJ\u000c\u0010C\u001a\u000209*\u00020DH\u0016J\u001c\u0010E\u001a\u00020\u0006*\u00020F2\u0006\u0010G\u001a\u00020H2\u0006\u0010I\u001a\u00020\u0006H\u0016J\u001c\u0010J\u001a\u00020\u0006*\u00020F2\u0006\u0010G\u001a\u00020H2\u0006\u0010K\u001a\u00020\u0006H\u0016J)\u0010L\u001a\u00020M*\u00020N2\u0006\u0010G\u001a\u00020O2\u0006\u0010P\u001a\u00020QH\u0016\u00f8\u0001\u0001\u00f8\u0001\u0000\u00a2\u0006\u0004\u0008R\u0010SJ\u001c\u0010T\u001a\u00020\u0006*\u00020F2\u0006\u0010G\u001a\u00020H2\u0006\u0010I\u001a\u00020\u0006H\u0016J\u001c\u0010U\u001a\u00020\u0006*\u00020F2\u0006\u0010G\u001a\u00020H2\u0006\u0010K\u001a\u00020\u0006H\u0016R4\u0010\u0007\u001a\u00020\u00082\u0006\u0010\u0010\u001a\u00020\u00088F@FX\u0086\u008e\u0002\u00f8\u0001\u0000\u00f8\u0001\u0001\u00f8\u0001\u0002\u00a2\u0006\u0012\n\u0004\u0008\u0015\u0010\u0016\u001a\u0004\u0008\u0011\u0010\u0012\"\u0004\u0008\u0013\u0010\u0014R+\u0010\u0017\u001a\u00020\u00062\u0006\u0010\u0010\u001a\u00020\u00068B@BX\u0082\u008e\u0002\u00a2\u0006\u0012\n\u0004\u0008\u001a\u0010\u001b\u001a\u0004\u0008\u0018\u0010\u0012\"\u0004\u0008\u0019\u0010\u0014R+\u0010\u001c\u001a\u00020\u00062\u0006\u0010\u0010\u001a\u00020\u00068B@BX\u0082\u008e\u0002\u00a2\u0006\u0012\n\u0004\u0008\u001f\u0010\u001b\u001a\u0004\u0008\u001d\u0010\u0012\"\u0004\u0008\u001e\u0010\u0014R\u000e\u0010\t\u001a\u00020\u0006X\u0082\u000e\u00a2\u0006\u0002\n\u0000R\u0014\u0010 \u001a\u00020!8BX\u0082\u0004\u00a2\u0006\u0006\u001a\u0004\u0008\"\u0010#R+\u0010%\u001a\u00020$2\u0006\u0010\u0010\u001a\u00020$8B@BX\u0082\u008e\u0002\u00a2\u0006\u0012\n\u0004\u0008*\u0010\u0016\u001a\u0004\u0008&\u0010\'\"\u0004\u0008(\u0010)R\u000e\u0010\n\u001a\u00020\u0006X\u0082\u000e\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u0005\u001a\u00020\u0006X\u0082\u000e\u00a2\u0006\u0002\n\u0000R\u001a\u0010+\u001a\u000e\u0012\u0004\u0012\u00020!\u0012\u0004\u0012\u00020-0,X\u0082\u0004\u00a2\u0006\u0002\n\u0000R+\u0010\u000b\u001a\u00020\u000c2\u0006\u0010\u0010\u001a\u00020\u000c8F@FX\u0086\u008e\u0002\u00a2\u0006\u0012\n\u0004\u00082\u0010\u0016\u001a\u0004\u0008.\u0010/\"\u0004\u00080\u00101R\u001b\u00103\u001a\u00020\u00068BX\u0082\u0084\u0002\u00a2\u0006\u000c\n\u0004\u00085\u00106\u001a\u0004\u00084\u0010\u0012R\u0019\u0010\r\u001a\u00020\u000eX\u0082\u000e\u00f8\u0001\u0000\u00f8\u0001\u0001\u00f8\u0001\u0002\u00a2\u0006\u0004\n\u0002\u00107\u0082\u0002\u000f\n\u0002\u0008\u0019\n\u0005\u0008\u00a1\u001e0\u0001\n\u0002\u0008!\u00a8\u0006V"
+        "\u0000\u0090\u0001\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0008\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0003\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0011\n\u0002\u0010\u0007\n\u0002\u0008\u0002\n\u0002\u0010\u000b\n\u0002\u0008\u0007\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u000b\n\u0002\u0010\u0002\n\u0002\u0008\u0003\n\u0002\u0018\u0002\n\u0002\u0008\u0007\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0004\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0005\u0008\u0002\u0018\u00002\u00020\u00012\u00020\u00022\u00020\u00032\u00020\u0004B5\u0012\u0006\u0010\u0005\u001a\u00020\u0006\u0012\u0006\u0010\u0007\u001a\u00020\u0008\u0012\u0006\u0010\t\u001a\u00020\u0006\u0012\u0006\u0010\n\u001a\u00020\u0006\u0012\u0006\u0010\u000b\u001a\u00020\u000c\u0012\u0006\u0010\r\u001a\u00020\u000e\u00a2\u0006\u0002\u0010\u000fJ\u0008\u0010:\u001a\u00020;H\u0016J\u0008\u0010<\u001a\u00020;H\u0016J\u0010\u0010=\u001a\u00020;2\u0006\u0010>\u001a\u00020?H\u0016J\u0008\u0010@\u001a\u00020;H\u0002J\u000e\u0010A\u001a\u00020;H\u0082@\u00a2\u0006\u0002\u0010BJ@\u0010C\u001a\u00020;2\u0006\u0010\u0005\u001a\u00020\u00062\u0006\u0010\u0007\u001a\u00020\u00082\u0006\u0010\t\u001a\u00020\u00062\u0006\u0010\n\u001a\u00020\u00062\u0006\u0010\u000b\u001a\u00020\u000c2\u0006\u0010\r\u001a\u00020\u000e\u00f8\u0001\u0000\u00a2\u0006\u0004\u0008D\u0010EJ\u000c\u0010F\u001a\u00020;*\u00020GH\u0016J\u001c\u0010H\u001a\u00020\u0006*\u00020I2\u0006\u0010J\u001a\u00020K2\u0006\u0010L\u001a\u00020\u0006H\u0016J\u001c\u0010M\u001a\u00020\u0006*\u00020I2\u0006\u0010J\u001a\u00020K2\u0006\u0010N\u001a\u00020\u0006H\u0016J&\u0010O\u001a\u00020P*\u00020Q2\u0006\u0010J\u001a\u00020R2\u0006\u0010S\u001a\u00020TH\u0016\u00f8\u0001\u0000\u00a2\u0006\u0004\u0008U\u0010VJ\u001c\u0010W\u001a\u00020\u0006*\u00020I2\u0006\u0010J\u001a\u00020K2\u0006\u0010L\u001a\u00020\u0006H\u0016J\u001c\u0010X\u001a\u00020\u0006*\u00020I2\u0006\u0010J\u001a\u00020K2\u0006\u0010N\u001a\u00020\u0006H\u0016R\u0010\u0010\u0010\u001a\u0004\u0018\u00010\u0011X\u0082\u000e\u00a2\u0006\u0002\n\u0000R1\u0010\u0007\u001a\u00020\u00082\u0006\u0010\u0012\u001a\u00020\u00088F@FX\u0086\u008e\u0002\u00f8\u0001\u0000\u00f8\u0001\u0001\u00a2\u0006\u0012\n\u0004\u0008\u0017\u0010\u0018\u001a\u0004\u0008\u0013\u0010\u0014\"\u0004\u0008\u0015\u0010\u0016R+\u0010\u0019\u001a\u00020\u00062\u0006\u0010\u0012\u001a\u00020\u00068B@BX\u0082\u008e\u0002\u00a2\u0006\u0012\n\u0004\u0008\u001c\u0010\u001d\u001a\u0004\u0008\u001a\u0010\u0014\"\u0004\u0008\u001b\u0010\u0016R+\u0010\u001e\u001a\u00020\u00062\u0006\u0010\u0012\u001a\u00020\u00068B@BX\u0082\u008e\u0002\u00a2\u0006\u0012\n\u0004\u0008!\u0010\u001d\u001a\u0004\u0008\u001f\u0010\u0014\"\u0004\u0008 \u0010\u0016R\u000e\u0010\t\u001a\u00020\u0006X\u0082\u000e\u00a2\u0006\u0002\n\u0000R\u0014\u0010\"\u001a\u00020#8BX\u0082\u0004\u00a2\u0006\u0006\u001a\u0004\u0008$\u0010%R+\u0010\'\u001a\u00020&2\u0006\u0010\u0012\u001a\u00020&8B@BX\u0082\u008e\u0002\u00a2\u0006\u0012\n\u0004\u0008,\u0010\u0018\u001a\u0004\u0008(\u0010)\"\u0004\u0008*\u0010+R\u000e\u0010\n\u001a\u00020\u0006X\u0082\u000e\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u0005\u001a\u00020\u0006X\u0082\u000e\u00a2\u0006\u0002\n\u0000R\u001a\u0010-\u001a\u000e\u0012\u0004\u0012\u00020#\u0012\u0004\u0012\u00020/0.X\u0082\u0004\u00a2\u0006\u0002\n\u0000R+\u0010\u000b\u001a\u00020\u000c2\u0006\u0010\u0012\u001a\u00020\u000c8F@FX\u0086\u008e\u0002\u00a2\u0006\u0012\n\u0004\u00084\u0010\u0018\u001a\u0004\u00080\u00101\"\u0004\u00082\u00103R\u001b\u00105\u001a\u00020\u00068BX\u0082\u0084\u0002\u00a2\u0006\u000c\n\u0004\u00087\u00108\u001a\u0004\u00086\u0010\u0014R\u0016\u0010\r\u001a\u00020\u000eX\u0082\u000e\u00f8\u0001\u0000\u00f8\u0001\u0001\u00a2\u0006\u0004\n\u0002\u00109\u0082\u0002\u000b\n\u0005\u0008\u00a1\u001e0\u0001\n\u0002\u0008!\u00a8\u0006Y"
     }
     d2 = {
         "Landroidx/compose/foundation/MarqueeModifierNode;",
@@ -40,6 +40,8 @@
         "velocity",
         "Landroidx/compose/ui/unit/Dp;",
         "(IIIILandroidx/compose/foundation/MarqueeSpacing;FLkotlin/jvm/internal/DefaultConstructorMarker;)V",
+        "animationJob",
+        "Lkotlinx/coroutines/Job;",
         "<set-?>",
         "getAnimationMode-ZbEOnfQ",
         "()I",
@@ -82,6 +84,7 @@
         "F",
         "onAttach",
         "",
+        "onDetach",
         "onFocusEvent",
         "focusState",
         "Landroidx/compose/ui/focus/FocusState;",
@@ -123,6 +126,8 @@
 
 
 # instance fields
+.field private animationJob:Lkotlinx/coroutines/Job;
+
 .field private final animationMode$delegate:Landroidx/compose/runtime/MutableState;
 
 .field private final containerWidth$delegate:Landroidx/compose/runtime/MutableIntState;
@@ -157,44 +162,40 @@
 
 # direct methods
 .method private constructor <init>(IIIILandroidx/compose/foundation/MarqueeSpacing;F)V
-    .locals 1
+    .locals 0
 
-    const-string/jumbo v0, "spacing"
-
-    invoke-static {p5, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 200
+    .line 205
     invoke-direct {p0}, Landroidx/compose/ui/Modifier$Node;-><init>()V
 
-    .line 194
+    .line 199
     iput p1, p0, Landroidx/compose/foundation/MarqueeModifierNode;->iterations:I
 
-    .line 196
+    .line 201
     iput p3, p0, Landroidx/compose/foundation/MarqueeModifierNode;->delayMillis:I
 
-    .line 197
+    .line 202
     iput p4, p0, Landroidx/compose/foundation/MarqueeModifierNode;->initialDelayMillis:I
 
-    .line 199
+    .line 204
     iput p6, p0, Landroidx/compose/foundation/MarqueeModifierNode;->velocity:F
 
     const/4 p1, 0x0
 
-    .line 205
+    .line 210
     invoke-static {p1}, Landroidx/compose/runtime/SnapshotIntStateKt;->mutableIntStateOf(I)Landroidx/compose/runtime/MutableIntState;
 
     move-result-object p3
 
     iput-object p3, p0, Landroidx/compose/foundation/MarqueeModifierNode;->contentWidth$delegate:Landroidx/compose/runtime/MutableIntState;
 
-    .line 206
+    .line 211
     invoke-static {p1}, Landroidx/compose/runtime/SnapshotIntStateKt;->mutableIntStateOf(I)Landroidx/compose/runtime/MutableIntState;
 
     move-result-object p3
 
     iput-object p3, p0, Landroidx/compose/foundation/MarqueeModifierNode;->containerWidth$delegate:Landroidx/compose/runtime/MutableIntState;
 
-    .line 207
+    .line 212
     invoke-static {p1}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
     move-result-object p1
@@ -209,14 +210,14 @@
 
     iput-object p1, p0, Landroidx/compose/foundation/MarqueeModifierNode;->hasFocus$delegate:Landroidx/compose/runtime/MutableState;
 
-    .line 208
+    .line 214
     invoke-static {p5, p3, p4, p3}, Landroidx/compose/runtime/SnapshotStateKt;->mutableStateOf$default(Ljava/lang/Object;Landroidx/compose/runtime/SnapshotMutationPolicy;ILjava/lang/Object;)Landroidx/compose/runtime/MutableState;
 
     move-result-object p1
 
     iput-object p1, p0, Landroidx/compose/foundation/MarqueeModifierNode;->spacing$delegate:Landroidx/compose/runtime/MutableState;
 
-    .line 209
+    .line 215
     invoke-static {p2}, Landroidx/compose/foundation/MarqueeAnimationMode;->box-impl(I)Landroidx/compose/foundation/MarqueeAnimationMode;
 
     move-result-object p1
@@ -229,14 +230,14 @@
 
     const/4 p1, 0x0
 
-    .line 211
+    .line 217
     invoke-static {p1, p1, p4, p3}, Landroidx/compose/animation/core/AnimatableKt;->Animatable$default(FFILjava/lang/Object;)Landroidx/compose/animation/core/Animatable;
 
     move-result-object p1
 
     iput-object p1, p0, Landroidx/compose/foundation/MarqueeModifierNode;->offset:Landroidx/compose/animation/core/Animatable;
 
-    .line 217
+    .line 223
     new-instance p1, Landroidx/compose/foundation/MarqueeModifierNode$spacingPx$2;
 
     invoke-direct {p1, p5, p0}, Landroidx/compose/foundation/MarqueeModifierNode$spacingPx$2;-><init>(Landroidx/compose/foundation/MarqueeSpacing;Landroidx/compose/foundation/MarqueeModifierNode;)V
@@ -263,7 +264,7 @@
 .method public static final synthetic access$getContainerWidth(Landroidx/compose/foundation/MarqueeModifierNode;)I
     .locals 0
 
-    .line 193
+    .line 198
     invoke-direct {p0}, Landroidx/compose/foundation/MarqueeModifierNode;->getContainerWidth()I
 
     move-result p0
@@ -274,7 +275,7 @@
 .method public static final synthetic access$getContentWidth(Landroidx/compose/foundation/MarqueeModifierNode;)I
     .locals 0
 
-    .line 193
+    .line 198
     invoke-direct {p0}, Landroidx/compose/foundation/MarqueeModifierNode;->getContentWidth()I
 
     move-result p0
@@ -285,7 +286,7 @@
 .method public static final synthetic access$getDelayMillis$p(Landroidx/compose/foundation/MarqueeModifierNode;)I
     .locals 0
 
-    .line 193
+    .line 198
     iget p0, p0, Landroidx/compose/foundation/MarqueeModifierNode;->delayMillis:I
 
     return p0
@@ -294,7 +295,7 @@
 .method public static final synthetic access$getDirection(Landroidx/compose/foundation/MarqueeModifierNode;)F
     .locals 0
 
-    .line 193
+    .line 198
     invoke-direct {p0}, Landroidx/compose/foundation/MarqueeModifierNode;->getDirection()F
 
     move-result p0
@@ -305,7 +306,7 @@
 .method public static final synthetic access$getHasFocus(Landroidx/compose/foundation/MarqueeModifierNode;)Z
     .locals 0
 
-    .line 193
+    .line 198
     invoke-direct {p0}, Landroidx/compose/foundation/MarqueeModifierNode;->getHasFocus()Z
 
     move-result p0
@@ -316,7 +317,7 @@
 .method public static final synthetic access$getInitialDelayMillis$p(Landroidx/compose/foundation/MarqueeModifierNode;)I
     .locals 0
 
-    .line 193
+    .line 198
     iget p0, p0, Landroidx/compose/foundation/MarqueeModifierNode;->initialDelayMillis:I
 
     return p0
@@ -325,7 +326,7 @@
 .method public static final synthetic access$getIterations$p(Landroidx/compose/foundation/MarqueeModifierNode;)I
     .locals 0
 
-    .line 193
+    .line 198
     iget p0, p0, Landroidx/compose/foundation/MarqueeModifierNode;->iterations:I
 
     return p0
@@ -334,7 +335,7 @@
 .method public static final synthetic access$getOffset$p(Landroidx/compose/foundation/MarqueeModifierNode;)Landroidx/compose/animation/core/Animatable;
     .locals 0
 
-    .line 193
+    .line 198
     iget-object p0, p0, Landroidx/compose/foundation/MarqueeModifierNode;->offset:Landroidx/compose/animation/core/Animatable;
 
     return-object p0
@@ -343,7 +344,7 @@
 .method public static final synthetic access$getSpacingPx(Landroidx/compose/foundation/MarqueeModifierNode;)I
     .locals 0
 
-    .line 193
+    .line 198
     invoke-direct {p0}, Landroidx/compose/foundation/MarqueeModifierNode;->getSpacingPx()I
 
     move-result p0
@@ -354,7 +355,7 @@
 .method public static final synthetic access$getVelocity$p(Landroidx/compose/foundation/MarqueeModifierNode;)F
     .locals 0
 
-    .line 193
+    .line 198
     iget p0, p0, Landroidx/compose/foundation/MarqueeModifierNode;->velocity:F
 
     return p0
@@ -363,7 +364,7 @@
 .method public static final synthetic access$runAnimation(Landroidx/compose/foundation/MarqueeModifierNode;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
     .locals 0
 
-    .line 193
+    .line 198
     invoke-direct {p0, p1}, Landroidx/compose/foundation/MarqueeModifierNode;->runAnimation(Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
 
     move-result-object p0
@@ -374,12 +375,12 @@
 .method private final getContainerWidth()I
     .locals 0
 
-    .line 206
+    .line 211
     iget-object p0, p0, Landroidx/compose/foundation/MarqueeModifierNode;->containerWidth$delegate:Landroidx/compose/runtime/MutableIntState;
 
     check-cast p0, Landroidx/compose/runtime/IntState;
 
-    .line 501
+    .line 519
     invoke-interface {p0}, Landroidx/compose/runtime/IntState;->getIntValue()I
 
     move-result p0
@@ -390,12 +391,12 @@
 .method private final getContentWidth()I
     .locals 0
 
-    .line 205
+    .line 210
     iget-object p0, p0, Landroidx/compose/foundation/MarqueeModifierNode;->contentWidth$delegate:Landroidx/compose/runtime/MutableIntState;
 
     check-cast p0, Landroidx/compose/runtime/IntState;
 
-    .line 498
+    .line 516
     invoke-interface {p0}, Landroidx/compose/runtime/IntState;->getIntValue()I
 
     move-result p0
@@ -406,7 +407,7 @@
 .method private final getDirection()F
     .locals 2
 
-    .line 213
+    .line 219
     iget v0, p0, Landroidx/compose/foundation/MarqueeModifierNode;->velocity:F
 
     invoke-static {v0}, Ljava/lang/Math;->signum(F)F
@@ -439,7 +440,7 @@
 
     goto :goto_0
 
-    .line 215
+    .line 221
     :cond_0
     new-instance p0, Lkotlin/NoWhenBranchMatchedException;
 
@@ -459,12 +460,12 @@
 .method private final getHasFocus()Z
     .locals 0
 
-    .line 207
+    .line 212
     iget-object p0, p0, Landroidx/compose/foundation/MarqueeModifierNode;->hasFocus$delegate:Landroidx/compose/runtime/MutableState;
 
     check-cast p0, Landroidx/compose/runtime/State;
 
-    .line 504
+    .line 522
     invoke-interface {p0}, Landroidx/compose/runtime/State;->getValue()Ljava/lang/Object;
 
     move-result-object p0
@@ -481,10 +482,10 @@
 .method private final getSpacingPx()I
     .locals 0
 
-    .line 217
+    .line 223
     iget-object p0, p0, Landroidx/compose/foundation/MarqueeModifierNode;->spacingPx$delegate:Landroidx/compose/runtime/State;
 
-    .line 513
+    .line 531
     invoke-interface {p0}, Landroidx/compose/runtime/State;->getValue()Ljava/lang/Object;
 
     move-result-object p0
@@ -499,39 +500,56 @@
 .end method
 
 .method private final restartAnimation()V
-    .locals 7
+    .locals 9
 
-    .line 329
-    invoke-virtual {p0}, Landroidx/compose/foundation/MarqueeModifierNode;->isAttached()Z
+    .line 340
+    iget-object v0, p0, Landroidx/compose/foundation/MarqueeModifierNode;->animationJob:Lkotlinx/coroutines/Job;
 
-    move-result v0
+    const/4 v1, 0x0
 
     if-eqz v0, :cond_0
 
-    .line 330
+    const/4 v2, 0x1
+
+    .line 341
+    invoke-static {v0, v1, v2, v1}, Lkotlinx/coroutines/Job$DefaultImpls;->cancel$default(Lkotlinx/coroutines/Job;Ljava/util/concurrent/CancellationException;ILjava/lang/Object;)V
+
+    .line 342
+    :cond_0
+    invoke-virtual {p0}, Landroidx/compose/foundation/MarqueeModifierNode;->isAttached()Z
+
+    move-result v2
+
+    if-eqz v2, :cond_1
+
+    .line 343
     invoke-virtual {p0}, Landroidx/compose/foundation/MarqueeModifierNode;->getCoroutineScope()Lkotlinx/coroutines/CoroutineScope;
 
-    move-result-object v1
+    move-result-object v3
 
-    new-instance v0, Landroidx/compose/foundation/MarqueeModifierNode$restartAnimation$1;
+    new-instance v2, Landroidx/compose/foundation/MarqueeModifierNode$restartAnimation$1;
 
-    const/4 v2, 0x0
+    invoke-direct {v2, v0, p0, v1}, Landroidx/compose/foundation/MarqueeModifierNode$restartAnimation$1;-><init>(Lkotlinx/coroutines/Job;Landroidx/compose/foundation/MarqueeModifierNode;Lkotlin/coroutines/Continuation;)V
 
-    invoke-direct {v0, p0, v2}, Landroidx/compose/foundation/MarqueeModifierNode$restartAnimation$1;-><init>(Landroidx/compose/foundation/MarqueeModifierNode;Lkotlin/coroutines/Continuation;)V
+    move-object v6, v2
 
-    move-object v4, v0
+    check-cast v6, Lkotlin/jvm/functions/Function2;
 
-    check-cast v4, Lkotlin/jvm/functions/Function2;
+    const/4 v7, 0x3
 
-    const/4 v5, 0x3
+    const/4 v8, 0x0
 
-    const/4 v6, 0x0
+    const/4 v4, 0x0
 
-    const/4 v3, 0x0
+    const/4 v5, 0x0
 
-    invoke-static/range {v1 .. v6}, Lkotlinx/coroutines/BuildersKt;->launch$default(Lkotlinx/coroutines/CoroutineScope;Lkotlin/coroutines/CoroutineContext;Lkotlinx/coroutines/CoroutineStart;Lkotlin/jvm/functions/Function2;ILjava/lang/Object;)Lkotlinx/coroutines/Job;
+    invoke-static/range {v3 .. v8}, Lkotlinx/coroutines/BuildersKt;->launch$default(Lkotlinx/coroutines/CoroutineScope;Lkotlin/coroutines/CoroutineContext;Lkotlinx/coroutines/CoroutineStart;Lkotlin/jvm/functions/Function2;ILjava/lang/Object;)Lkotlinx/coroutines/Job;
 
-    :cond_0
+    move-result-object v0
+
+    iput-object v0, p0, Landroidx/compose/foundation/MarqueeModifierNode;->animationJob:Lkotlinx/coroutines/Job;
+
+    :cond_1
     return-void
 .end method
 
@@ -548,17 +566,17 @@
         }
     .end annotation
 
-    .line 337
+    .line 352
     iget v0, p0, Landroidx/compose/foundation/MarqueeModifierNode;->iterations:I
 
     if-gtz v0, :cond_0
 
-    .line 339
+    .line 354
     sget-object p0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
 
     return-object p0
 
-    .line 345
+    .line 360
     :cond_0
     sget-object v0, Landroidx/compose/foundation/FixedMotionDurationScale;->INSTANCE:Landroidx/compose/foundation/FixedMotionDurationScale;
 
@@ -593,10 +611,10 @@
 .method private final setContainerWidth(I)V
     .locals 0
 
-    .line 206
+    .line 211
     iget-object p0, p0, Landroidx/compose/foundation/MarqueeModifierNode;->containerWidth$delegate:Landroidx/compose/runtime/MutableIntState;
 
-    .line 502
+    .line 520
     invoke-interface {p0, p1}, Landroidx/compose/runtime/MutableIntState;->setIntValue(I)V
 
     return-void
@@ -605,10 +623,10 @@
 .method private final setContentWidth(I)V
     .locals 0
 
-    .line 205
+    .line 210
     iget-object p0, p0, Landroidx/compose/foundation/MarqueeModifierNode;->contentWidth$delegate:Landroidx/compose/runtime/MutableIntState;
 
-    .line 499
+    .line 517
     invoke-interface {p0, p1}, Landroidx/compose/runtime/MutableIntState;->setIntValue(I)V
 
     return-void
@@ -617,14 +635,14 @@
 .method private final setHasFocus(Z)V
     .locals 0
 
-    .line 207
+    .line 212
     iget-object p0, p0, Landroidx/compose/foundation/MarqueeModifierNode;->hasFocus$delegate:Landroidx/compose/runtime/MutableState;
 
     invoke-static {p1}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
     move-result-object p1
 
-    .line 505
+    .line 523
     invoke-interface {p0, p1}, Landroidx/compose/runtime/MutableState;->setValue(Ljava/lang/Object;)V
 
     return-void
@@ -635,11 +653,7 @@
 .method public draw(Landroidx/compose/ui/graphics/drawscope/ContentDrawScope;)V
     .locals 12
 
-    const-string v0, "<this>"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 297
+    .line 308
     iget-object v0, p0, Landroidx/compose/foundation/MarqueeModifierNode;->offset:Landroidx/compose/animation/core/Animatable;
 
     invoke-virtual {v0}, Landroidx/compose/animation/core/Animatable;->getValue()Ljava/lang/Object;
@@ -658,7 +672,7 @@
 
     mul-float v3, v0, v1
 
-    .line 298
+    .line 309
     invoke-direct {p0}, Landroidx/compose/foundation/MarqueeModifierNode;->getDirection()F
 
     move-result v0
@@ -673,7 +687,7 @@
 
     if-nez v0, :cond_0
 
-    .line 299
+    .line 310
     iget-object v0, p0, Landroidx/compose/foundation/MarqueeModifierNode;->offset:Landroidx/compose/animation/core/Animatable;
 
     invoke-virtual {v0}, Landroidx/compose/animation/core/Animatable;->getValue()Ljava/lang/Object;
@@ -698,7 +712,7 @@
 
     goto :goto_0
 
-    .line 300
+    .line 311
     :cond_0
     iget-object v0, p0, Landroidx/compose/foundation/MarqueeModifierNode;->offset:Landroidx/compose/animation/core/Animatable;
 
@@ -730,7 +744,7 @@
     :cond_1
     move v0, v4
 
-    .line 302
+    .line 313
     :goto_1
     invoke-direct {p0}, Landroidx/compose/foundation/MarqueeModifierNode;->getDirection()F
 
@@ -740,7 +754,7 @@
 
     if-nez v5, :cond_2
 
-    .line 303
+    .line 314
     iget-object v5, p0, Landroidx/compose/foundation/MarqueeModifierNode;->offset:Landroidx/compose/animation/core/Animatable;
 
     invoke-virtual {v5}, Landroidx/compose/animation/core/Animatable;->getValue()Ljava/lang/Object;
@@ -777,7 +791,7 @@
 
     goto :goto_2
 
-    .line 304
+    .line 315
     :cond_2
     iget-object v5, p0, Landroidx/compose/foundation/MarqueeModifierNode;->offset:Landroidx/compose/animation/core/Animatable;
 
@@ -809,7 +823,7 @@
     :cond_3
     move v8, v4
 
-    .line 306
+    .line 317
     :goto_3
     invoke-direct {p0}, Landroidx/compose/foundation/MarqueeModifierNode;->getDirection()F
 
@@ -819,7 +833,7 @@
 
     if-nez v1, :cond_4
 
-    .line 307
+    .line 318
     invoke-direct {p0}, Landroidx/compose/foundation/MarqueeModifierNode;->getContentWidth()I
 
     move-result v1
@@ -832,7 +846,7 @@
 
     goto :goto_4
 
-    .line 308
+    .line 319
     :cond_4
     invoke-direct {p0}, Landroidx/compose/foundation/MarqueeModifierNode;->getContentWidth()I
 
@@ -849,7 +863,7 @@
     :goto_4
     int-to-float v1, v1
 
-    .line 311
+    .line 322
     move-object v9, p1
 
     check-cast v9, Landroidx/compose/ui/graphics/drawscope/DrawScope;
@@ -862,7 +876,7 @@
 
     add-float v5, v3, p0
 
-    .line 518
+    .line 536
     invoke-interface {v9}, Landroidx/compose/ui/graphics/drawscope/DrawScope;->getSize-NH-jbRc()J
 
     move-result-wide v6
@@ -871,49 +885,49 @@
 
     move-result v6
 
-    .line 519
+    .line 537
     sget-object p0, Landroidx/compose/ui/graphics/ClipOp;->Companion:Landroidx/compose/ui/graphics/ClipOp$Companion;
 
     invoke-virtual {p0}, Landroidx/compose/ui/graphics/ClipOp$Companion;->getIntersect-rtfAjoo()I
 
     move-result v7
 
-    .line 522
+    .line 540
     invoke-interface {v9}, Landroidx/compose/ui/graphics/drawscope/DrawScope;->getDrawContext()Landroidx/compose/ui/graphics/drawscope/DrawContext;
 
     move-result-object p0
 
-    .line 526
+    .line 544
     invoke-interface {p0}, Landroidx/compose/ui/graphics/drawscope/DrawContext;->getSize-NH-jbRc()J
 
     move-result-wide v10
 
-    .line 527
+    .line 545
     invoke-interface {p0}, Landroidx/compose/ui/graphics/drawscope/DrawContext;->getCanvas()Landroidx/compose/ui/graphics/Canvas;
 
     move-result-object v2
 
     invoke-interface {v2}, Landroidx/compose/ui/graphics/Canvas;->save()V
 
-    .line 528
+    .line 546
     invoke-interface {p0}, Landroidx/compose/ui/graphics/drawscope/DrawContext;->getTransform()Landroidx/compose/ui/graphics/drawscope/DrawTransform;
 
     move-result-object v2
 
     const/4 v4, 0x0
 
-    .line 521
+    .line 539
     invoke-interface/range {v2 .. v7}, Landroidx/compose/ui/graphics/drawscope/DrawTransform;->clipRect-N_I0leg(FFFFI)V
 
     if-eqz v0, :cond_5
 
-    .line 318
+    .line 329
     invoke-interface {p1}, Landroidx/compose/ui/graphics/drawscope/ContentDrawScope;->drawContent()V
 
     :cond_5
     if-eqz v8, :cond_6
 
-    .line 535
+    .line 553
     invoke-interface {v9}, Landroidx/compose/ui/graphics/drawscope/DrawScope;->getDrawContext()Landroidx/compose/ui/graphics/drawscope/DrawContext;
 
     move-result-object v0
@@ -926,10 +940,10 @@
 
     invoke-interface {v0, v1, v2}, Landroidx/compose/ui/graphics/drawscope/DrawTransform;->translate(FF)V
 
-    .line 322
+    .line 333
     invoke-interface {p1}, Landroidx/compose/ui/graphics/drawscope/ContentDrawScope;->drawContent()V
 
-    .line 537
+    .line 555
     invoke-interface {v9}, Landroidx/compose/ui/graphics/drawscope/DrawScope;->getDrawContext()Landroidx/compose/ui/graphics/drawscope/DrawContext;
 
     move-result-object p1
@@ -944,7 +958,7 @@
 
     invoke-interface {p1, v0, v1}, Landroidx/compose/ui/graphics/drawscope/DrawTransform;->translate(FF)V
 
-    .line 539
+    .line 557
     :cond_6
     invoke-interface {p0}, Landroidx/compose/ui/graphics/drawscope/DrawContext;->getCanvas()Landroidx/compose/ui/graphics/Canvas;
 
@@ -952,7 +966,7 @@
 
     invoke-interface {p1}, Landroidx/compose/ui/graphics/Canvas;->restore()V
 
-    .line 540
+    .line 558
     invoke-interface {p0, v10, v11}, Landroidx/compose/ui/graphics/drawscope/DrawContext;->setSize-uvyYCjk(J)V
 
     return-void
@@ -961,12 +975,12 @@
 .method public final getAnimationMode-ZbEOnfQ()I
     .locals 0
 
-    .line 209
+    .line 215
     iget-object p0, p0, Landroidx/compose/foundation/MarqueeModifierNode;->animationMode$delegate:Landroidx/compose/runtime/MutableState;
 
     check-cast p0, Landroidx/compose/runtime/State;
 
-    .line 510
+    .line 528
     invoke-interface {p0}, Landroidx/compose/runtime/State;->getValue()Ljava/lang/Object;
 
     move-result-object p0
@@ -983,12 +997,12 @@
 .method public final getSpacing()Landroidx/compose/foundation/MarqueeSpacing;
     .locals 0
 
-    .line 208
+    .line 214
     iget-object p0, p0, Landroidx/compose/foundation/MarqueeModifierNode;->spacing$delegate:Landroidx/compose/runtime/MutableState;
 
     check-cast p0, Landroidx/compose/runtime/State;
 
-    .line 507
+    .line 525
     invoke-interface {p0}, Landroidx/compose/runtime/State;->getValue()Ljava/lang/Object;
 
     move-result-object p0
@@ -1001,17 +1015,9 @@
 .method public maxIntrinsicHeight(Landroidx/compose/ui/layout/IntrinsicMeasureScope;Landroidx/compose/ui/layout/IntrinsicMeasurable;I)I
     .locals 0
 
-    const-string p0, "<this>"
-
-    invoke-static {p1, p0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string p0, "measurable"
-
-    invoke-static {p2, p0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
     const p0, 0x7fffffff
 
-    .line 294
+    .line 305
     invoke-interface {p2, p0}, Landroidx/compose/ui/layout/IntrinsicMeasurable;->maxIntrinsicHeight(I)I
 
     move-result p0
@@ -1022,15 +1028,7 @@
 .method public maxIntrinsicWidth(Landroidx/compose/ui/layout/IntrinsicMeasureScope;Landroidx/compose/ui/layout/IntrinsicMeasurable;I)I
     .locals 0
 
-    const-string p0, "<this>"
-
-    invoke-static {p1, p0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string p0, "measurable"
-
-    invoke-static {p2, p0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 282
+    .line 293
     invoke-interface {p2, p3}, Landroidx/compose/ui/layout/IntrinsicMeasurable;->maxIntrinsicWidth(I)I
 
     move-result p0
@@ -1039,41 +1037,33 @@
 .end method
 
 .method public measure-3p2s80s(Landroidx/compose/ui/layout/MeasureScope;Landroidx/compose/ui/layout/Measurable;J)Landroidx/compose/ui/layout/MeasureResult;
-    .locals 9
+    .locals 8
 
-    const-string v0, "$this$measure"
+    const/16 v6, 0xd
 
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+    const/4 v7, 0x0
 
-    const-string v0, "measurable"
+    const/4 v2, 0x0
 
-    invoke-static {p2, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+    const v3, 0x7fffffff
 
-    const/16 v7, 0xd
-
-    const/4 v8, 0x0
-
-    const/4 v3, 0x0
-
-    const v4, 0x7fffffff
+    const/4 v4, 0x0
 
     const/4 v5, 0x0
 
-    const/4 v6, 0x0
+    move-wide v0, p3
 
-    move-wide v1, p3
-
-    .line 260
-    invoke-static/range {v1 .. v8}, Landroidx/compose/ui/unit/Constraints;->copy-Zbe2FdA$default(JIIIIILjava/lang/Object;)J
+    .line 271
+    invoke-static/range {v0 .. v7}, Landroidx/compose/ui/unit/Constraints;->copy-Zbe2FdA$default(JIIIIILjava/lang/Object;)J
 
     move-result-wide v0
 
-    .line 261
+    .line 272
     invoke-interface {p2, v0, v1}, Landroidx/compose/ui/layout/Measurable;->measure-BRTryo0(J)Landroidx/compose/ui/layout/Placeable;
 
     move-result-object p2
 
-    .line 262
+    .line 273
     invoke-virtual {p2}, Landroidx/compose/ui/layout/Placeable;->getWidth()I
 
     move-result v0
@@ -1084,14 +1074,14 @@
 
     invoke-direct {p0, p3}, Landroidx/compose/foundation/MarqueeModifierNode;->setContainerWidth(I)V
 
-    .line 263
+    .line 274
     invoke-virtual {p2}, Landroidx/compose/ui/layout/Placeable;->getWidth()I
 
     move-result p3
 
     invoke-direct {p0, p3}, Landroidx/compose/foundation/MarqueeModifierNode;->setContentWidth(I)V
 
-    .line 264
+    .line 275
     invoke-direct {p0}, Landroidx/compose/foundation/MarqueeModifierNode;->getContainerWidth()I
 
     move-result v1
@@ -1126,17 +1116,9 @@
 .method public minIntrinsicHeight(Landroidx/compose/ui/layout/IntrinsicMeasureScope;Landroidx/compose/ui/layout/IntrinsicMeasurable;I)I
     .locals 0
 
-    const-string p0, "<this>"
-
-    invoke-static {p1, p0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string p0, "measurable"
-
-    invoke-static {p2, p0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
     const p0, 0x7fffffff
 
-    .line 288
+    .line 299
     invoke-interface {p2, p0}, Landroidx/compose/ui/layout/IntrinsicMeasurable;->minIntrinsicHeight(I)I
 
     move-result p0
@@ -1147,14 +1129,6 @@
 .method public minIntrinsicWidth(Landroidx/compose/ui/layout/IntrinsicMeasureScope;Landroidx/compose/ui/layout/IntrinsicMeasurable;I)I
     .locals 0
 
-    const-string p0, "<this>"
-
-    invoke-static {p1, p0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string p0, "measurable"
-
-    invoke-static {p2, p0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
     const/4 p0, 0x0
 
     return p0
@@ -1163,20 +1137,37 @@
 .method public onAttach()V
     .locals 0
 
-    .line 224
+    .line 230
     invoke-direct {p0}, Landroidx/compose/foundation/MarqueeModifierNode;->restartAnimation()V
 
     return-void
 .end method
 
+.method public onDetach()V
+    .locals 3
+
+    .line 234
+    iget-object v0, p0, Landroidx/compose/foundation/MarqueeModifierNode;->animationJob:Lkotlinx/coroutines/Job;
+
+    const/4 v1, 0x0
+
+    if-eqz v0, :cond_0
+
+    const/4 v2, 0x1
+
+    invoke-static {v0, v1, v2, v1}, Lkotlinx/coroutines/Job$DefaultImpls;->cancel$default(Lkotlinx/coroutines/Job;Ljava/util/concurrent/CancellationException;ILjava/lang/Object;)V
+
+    .line 235
+    :cond_0
+    iput-object v1, p0, Landroidx/compose/foundation/MarqueeModifierNode;->animationJob:Lkotlinx/coroutines/Job;
+
+    return-void
+.end method
+
 .method public onFocusEvent(Landroidx/compose/ui/focus/FocusState;)V
-    .locals 1
+    .locals 0
 
-    const-string v0, "focusState"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 253
+    .line 264
     invoke-interface {p1}, Landroidx/compose/ui/focus/FocusState;->getHasFocus()Z
 
     move-result p1
@@ -1189,64 +1180,56 @@
 .method public final setAnimationMode-97h66l8(I)V
     .locals 0
 
-    .line 209
+    .line 215
     iget-object p0, p0, Landroidx/compose/foundation/MarqueeModifierNode;->animationMode$delegate:Landroidx/compose/runtime/MutableState;
 
     invoke-static {p1}, Landroidx/compose/foundation/MarqueeAnimationMode;->box-impl(I)Landroidx/compose/foundation/MarqueeAnimationMode;
 
     move-result-object p1
 
-    .line 511
+    .line 529
     invoke-interface {p0, p1}, Landroidx/compose/runtime/MutableState;->setValue(Ljava/lang/Object;)V
 
     return-void
 .end method
 
 .method public final setSpacing(Landroidx/compose/foundation/MarqueeSpacing;)V
-    .locals 1
+    .locals 0
 
-    const-string v0, "<set-?>"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 208
+    .line 214
     iget-object p0, p0, Landroidx/compose/foundation/MarqueeModifierNode;->spacing$delegate:Landroidx/compose/runtime/MutableState;
 
-    .line 508
+    .line 526
     invoke-interface {p0, p1}, Landroidx/compose/runtime/MutableState;->setValue(Ljava/lang/Object;)V
 
     return-void
 .end method
 
 .method public final update-lWfNwf4(IIIILandroidx/compose/foundation/MarqueeSpacing;F)V
-    .locals 1
+    .locals 0
 
-    const-string/jumbo v0, "spacing"
-
-    invoke-static {p5, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 235
+    .line 246
     invoke-virtual {p0, p5}, Landroidx/compose/foundation/MarqueeModifierNode;->setSpacing(Landroidx/compose/foundation/MarqueeSpacing;)V
 
-    .line 236
+    .line 247
     invoke-virtual {p0, p2}, Landroidx/compose/foundation/MarqueeModifierNode;->setAnimationMode-97h66l8(I)V
 
-    .line 239
+    .line 250
     iget p2, p0, Landroidx/compose/foundation/MarqueeModifierNode;->iterations:I
 
     if-ne p2, p1, :cond_0
 
-    .line 240
+    .line 251
     iget p2, p0, Landroidx/compose/foundation/MarqueeModifierNode;->delayMillis:I
 
     if-ne p2, p3, :cond_0
 
-    .line 241
+    .line 252
     iget p2, p0, Landroidx/compose/foundation/MarqueeModifierNode;->initialDelayMillis:I
 
     if-ne p2, p4, :cond_0
 
-    .line 242
+    .line 253
     iget p2, p0, Landroidx/compose/foundation/MarqueeModifierNode;->velocity:F
 
     invoke-static {p2, p6}, Landroidx/compose/ui/unit/Dp;->equals-impl0(FF)Z
@@ -1255,20 +1238,20 @@
 
     if-nez p2, :cond_1
 
-    .line 244
+    .line 255
     :cond_0
     iput p1, p0, Landroidx/compose/foundation/MarqueeModifierNode;->iterations:I
 
-    .line 245
+    .line 256
     iput p3, p0, Landroidx/compose/foundation/MarqueeModifierNode;->delayMillis:I
 
-    .line 246
+    .line 257
     iput p4, p0, Landroidx/compose/foundation/MarqueeModifierNode;->initialDelayMillis:I
 
-    .line 247
+    .line 258
     iput p6, p0, Landroidx/compose/foundation/MarqueeModifierNode;->velocity:F
 
-    .line 248
+    .line 259
     invoke-direct {p0}, Landroidx/compose/foundation/MarqueeModifierNode;->restartAnimation()V
 
     :cond_1

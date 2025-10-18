@@ -20,6 +20,22 @@
 
 
 # virtual methods
+.method public abstract getAmbientTemperature()I
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Landroid/os/RemoteException;
+        }
+    .end annotation
+.end method
+
+.method public abstract getCameraLowTempBurnMonitor()I
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Landroid/os/RemoteException;
+        }
+    .end annotation
+.end method
+
 .method public abstract getCameraLowTempBurnTimeoutSec()I
     .annotation system Ldalvik/annotation/Throws;
         value = {

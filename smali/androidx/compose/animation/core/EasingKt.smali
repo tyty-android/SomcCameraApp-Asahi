@@ -46,6 +46,16 @@
 
 
 # direct methods
+.method public static synthetic $r8$lambda$mMxEzlbH87hNiWQOEalATwCIuTQ(F)F
+    .locals 0
+
+    invoke-static {p0}, Landroidx/compose/animation/core/EasingKt;->LinearEasing$lambda$0(F)F
+
+    move-result p0
+
+    return p0
+.end method
+
 .method static constructor <clinit>()V
     .locals 5
 
@@ -85,13 +95,19 @@
     sput-object v0, Landroidx/compose/animation/core/EasingKt;->FastOutLinearInEasing:Landroidx/compose/animation/core/Easing;
 
     .line 68
-    sget-object v0, Landroidx/compose/animation/core/EasingKt$LinearEasing$1;->INSTANCE:Landroidx/compose/animation/core/EasingKt$LinearEasing$1;
+    new-instance v0, Landroidx/compose/animation/core/EasingKt$$ExternalSyntheticLambda0;
 
-    check-cast v0, Landroidx/compose/animation/core/Easing;
+    invoke-direct {v0}, Landroidx/compose/animation/core/EasingKt$$ExternalSyntheticLambda0;-><init>()V
 
     sput-object v0, Landroidx/compose/animation/core/EasingKt;->LinearEasing:Landroidx/compose/animation/core/Easing;
 
     return-void
+.end method
+
+.method private static final LinearEasing$lambda$0(F)F
+    .locals 0
+
+    return p0
 .end method
 
 .method public static final getFastOutLinearInEasing()Landroidx/compose/animation/core/Easing;

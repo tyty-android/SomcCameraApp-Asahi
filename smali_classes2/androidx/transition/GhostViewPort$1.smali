@@ -25,7 +25,7 @@
 .method constructor <init>(Landroidx/transition/GhostViewPort;)V
     .locals 0
 
-    .line 52
+    .line 51
     iput-object p1, p0, Landroidx/transition/GhostViewPort$1;->this$0:Landroidx/transition/GhostViewPort;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -38,12 +38,12 @@
 .method public onPreDraw()Z
     .locals 2
 
-    .line 56
+    .line 55
     iget-object v0, p0, Landroidx/transition/GhostViewPort$1;->this$0:Landroidx/transition/GhostViewPort;
 
-    invoke-static {v0}, Landroidx/core/view/ViewCompat;->postInvalidateOnAnimation(Landroid/view/View;)V
+    invoke-virtual {v0}, Landroidx/transition/GhostViewPort;->postInvalidateOnAnimation()V
 
-    .line 57
+    .line 56
     iget-object v0, p0, Landroidx/transition/GhostViewPort$1;->this$0:Landroidx/transition/GhostViewPort;
 
     iget-object v0, v0, Landroidx/transition/GhostViewPort;->mStartParent:Landroid/view/ViewGroup;
@@ -56,7 +56,7 @@
 
     if-eqz v0, :cond_0
 
-    .line 58
+    .line 57
     iget-object v0, p0, Landroidx/transition/GhostViewPort$1;->this$0:Landroidx/transition/GhostViewPort;
 
     iget-object v0, v0, Landroidx/transition/GhostViewPort;->mStartParent:Landroid/view/ViewGroup;
@@ -67,21 +67,21 @@
 
     invoke-virtual {v0, v1}, Landroid/view/ViewGroup;->endViewTransition(Landroid/view/View;)V
 
-    .line 59
+    .line 58
     iget-object v0, p0, Landroidx/transition/GhostViewPort$1;->this$0:Landroidx/transition/GhostViewPort;
 
     iget-object v0, v0, Landroidx/transition/GhostViewPort;->mStartParent:Landroid/view/ViewGroup;
 
-    invoke-static {v0}, Landroidx/core/view/ViewCompat;->postInvalidateOnAnimation(Landroid/view/View;)V
+    invoke-virtual {v0}, Landroid/view/ViewGroup;->postInvalidateOnAnimation()V
 
-    .line 60
+    .line 59
     iget-object v0, p0, Landroidx/transition/GhostViewPort$1;->this$0:Landroidx/transition/GhostViewPort;
 
     const/4 v1, 0x0
 
     iput-object v1, v0, Landroidx/transition/GhostViewPort;->mStartParent:Landroid/view/ViewGroup;
 
-    .line 61
+    .line 60
     iget-object p0, p0, Landroidx/transition/GhostViewPort$1;->this$0:Landroidx/transition/GhostViewPort;
 
     iput-object v1, p0, Landroidx/transition/GhostViewPort;->mStartView:Landroid/view/View;

@@ -13,7 +13,7 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/SourceDebugExtension;
-    value = "SMAP\nAspectRatio.kt\nKotlin\n*S Kotlin\n*F\n+ 1 AspectRatio.kt\nandroidx/compose/foundation/layout/AspectRatioElement\n+ 2 fake.kt\nkotlin/jvm/internal/FakeKt\n*L\n1#1,235:1\n1#2:236\n*E\n"
+    value = "SMAP\nAspectRatio.kt\nKotlin\n*S Kotlin\n*F\n+ 1 AspectRatio.kt\nandroidx/compose/foundation/layout/AspectRatioElement\n+ 2 fake.kt\nkotlin/jvm/internal/FakeKt\n*L\n1#1,236:1\n1#2:237\n*E\n"
 .end annotation
 
 .annotation runtime Lkotlin/Metadata;
@@ -80,7 +80,7 @@
 
 # direct methods
 .method public constructor <init>(FZLkotlin/jvm/functions/Function1;)V
-    .locals 1
+    .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(FZ",
@@ -92,20 +92,16 @@
         }
     .end annotation
 
-    const-string v0, "inspectorInfo"
-
-    invoke-static {p3, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 74
+    .line 75
     invoke-direct {p0}, Landroidx/compose/ui/node/ModifierNodeElement;-><init>()V
 
-    .line 71
+    .line 72
     iput p1, p0, Landroidx/compose/foundation/layout/AspectRatioElement;->aspectRatio:F
 
-    .line 72
+    .line 73
     iput-boolean p2, p0, Landroidx/compose/foundation/layout/AspectRatioElement;->matchHeightConstraintsFirst:Z
 
-    .line 73
+    .line 74
     iput-object p3, p0, Landroidx/compose/foundation/layout/AspectRatioElement;->inspectorInfo:Lkotlin/jvm/functions/Function1;
 
     const/4 p0, 0x0
@@ -116,7 +112,7 @@
 
     return-void
 
-    .line 76
+    .line 77
     :cond_0
     new-instance p0, Ljava/lang/StringBuilder;
 
@@ -154,16 +150,16 @@
 .method public create()Landroidx/compose/foundation/layout/AspectRatioNode;
     .locals 2
 
-    .line 80
+    .line 81
     new-instance v0, Landroidx/compose/foundation/layout/AspectRatioNode;
 
-    .line 81
+    .line 82
     iget v1, p0, Landroidx/compose/foundation/layout/AspectRatioElement;->aspectRatio:F
 
-    .line 82
+    .line 83
     iget-boolean p0, p0, Landroidx/compose/foundation/layout/AspectRatioElement;->matchHeightConstraintsFirst:Z
 
-    .line 80
+    .line 81
     invoke-direct {v0, v1, p0}, Landroidx/compose/foundation/layout/AspectRatioNode;-><init>(FZ)V
 
     return-object v0
@@ -172,7 +168,7 @@
 .method public bridge synthetic create()Landroidx/compose/ui/Modifier$Node;
     .locals 0
 
-    .line 70
+    .line 71
     invoke-virtual {p0}, Landroidx/compose/foundation/layout/AspectRatioElement;->create()Landroidx/compose/foundation/layout/AspectRatioNode;
 
     move-result-object p0
@@ -191,7 +187,7 @@
 
     return v0
 
-    .line 95
+    .line 96
     :cond_0
     instance-of v1, p1, Landroidx/compose/foundation/layout/AspectRatioElement;
 
@@ -213,7 +209,7 @@
 
     return v2
 
-    .line 96
+    .line 97
     :cond_2
     iget v3, p0, Landroidx/compose/foundation/layout/AspectRatioElement;->aspectRatio:F
 
@@ -223,7 +219,7 @@
 
     if-nez v1, :cond_3
 
-    .line 97
+    .line 98
     iget-boolean p0, p0, Landroidx/compose/foundation/layout/AspectRatioElement;->matchHeightConstraintsFirst:Z
 
     check-cast p1, Landroidx/compose/foundation/layout/AspectRatioElement;
@@ -244,7 +240,7 @@
 .method public final getAspectRatio()F
     .locals 0
 
-    .line 71
+    .line 72
     iget p0, p0, Landroidx/compose/foundation/layout/AspectRatioElement;->aspectRatio:F
 
     return p0
@@ -262,7 +258,7 @@
         }
     .end annotation
 
-    .line 73
+    .line 74
     iget-object p0, p0, Landroidx/compose/foundation/layout/AspectRatioElement;->inspectorInfo:Lkotlin/jvm/functions/Function1;
 
     return-object p0
@@ -271,7 +267,7 @@
 .method public final getMatchHeightConstraintsFirst()Z
     .locals 0
 
-    .line 72
+    .line 73
     iget-boolean p0, p0, Landroidx/compose/foundation/layout/AspectRatioElement;->matchHeightConstraintsFirst:Z
 
     return p0
@@ -280,7 +276,7 @@
 .method public hashCode()I
     .locals 1
 
-    .line 101
+    .line 102
     iget v0, p0, Landroidx/compose/foundation/layout/AspectRatioElement;->aspectRatio:F
 
     invoke-static {v0}, Ljava/lang/Float;->hashCode(F)I
@@ -301,13 +297,9 @@
 .end method
 
 .method public inspectableProperties(Landroidx/compose/ui/platform/InspectorInfo;)V
-    .locals 1
+    .locals 0
 
-    const-string v0, "<this>"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 91
+    .line 92
     iget-object p0, p0, Landroidx/compose/foundation/layout/AspectRatioElement;->inspectorInfo:Lkotlin/jvm/functions/Function1;
 
     invoke-interface {p0, p1}, Lkotlin/jvm/functions/Function1;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
@@ -318,16 +310,12 @@
 .method public update(Landroidx/compose/foundation/layout/AspectRatioNode;)V
     .locals 1
 
-    const-string v0, "node"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 87
+    .line 88
     iget v0, p0, Landroidx/compose/foundation/layout/AspectRatioElement;->aspectRatio:F
 
     invoke-virtual {p1, v0}, Landroidx/compose/foundation/layout/AspectRatioNode;->setAspectRatio(F)V
 
-    .line 88
+    .line 89
     iget-boolean p0, p0, Landroidx/compose/foundation/layout/AspectRatioElement;->matchHeightConstraintsFirst:Z
 
     invoke-virtual {p1, p0}, Landroidx/compose/foundation/layout/AspectRatioNode;->setMatchHeightConstraintsFirst(Z)V
@@ -338,7 +326,7 @@
 .method public bridge synthetic update(Landroidx/compose/ui/Modifier$Node;)V
     .locals 0
 
-    .line 70
+    .line 71
     check-cast p1, Landroidx/compose/foundation/layout/AspectRatioNode;
 
     invoke-virtual {p0, p1}, Landroidx/compose/foundation/layout/AspectRatioElement;->update(Landroidx/compose/foundation/layout/AspectRatioNode;)V

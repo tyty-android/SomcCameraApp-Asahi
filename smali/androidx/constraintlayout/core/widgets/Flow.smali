@@ -1569,13 +1569,12 @@
 
     if-nez v2, :cond_4
 
-    goto :goto_2
+    move/from16 v0, v20
 
     :cond_4
     if-eqz v0, :cond_6
 
     .line 817
-    :goto_2
     new-instance v10, Landroidx/constraintlayout/core/widgets/Flow$WidgetsList;
 
     iget-object v3, v8, Landroidx/constraintlayout/core/widgets/Flow;->mLeft:Landroidx/constraintlayout/core/widgets/ConstraintAnchor;
@@ -1607,7 +1606,7 @@
     :cond_5
     move v1, v13
 
-    goto :goto_3
+    goto :goto_2
 
     :cond_6
     if-lez v11, :cond_5
@@ -1620,7 +1619,7 @@
     add-int/2addr v1, v0
 
     .line 827
-    :goto_3
+    :goto_2
     invoke-virtual {v10, v12}, Landroidx/constraintlayout/core/widgets/Flow$WidgetsList;->add(Landroidx/constraintlayout/core/widgets/ConstraintWidget;)V
 
     add-int/lit8 v11, v11, 0x1
@@ -1636,7 +1635,7 @@
 
     move v11, v1
 
-    :goto_4
+    :goto_3
     if-ge v11, v9, :cond_e
 
     .line 832
@@ -1681,12 +1680,12 @@
 
     move/from16 v0, v20
 
-    goto :goto_5
+    goto :goto_4
 
     :cond_a
     move/from16 v0, v21
 
-    :goto_5
+    :goto_4
     if-nez v0, :cond_b
 
     if-lez v11, :cond_b
@@ -1700,13 +1699,12 @@
 
     if-nez v2, :cond_b
 
-    goto :goto_6
+    move/from16 v0, v20
 
     :cond_b
     if-eqz v0, :cond_d
 
     .line 843
-    :goto_6
     new-instance v10, Landroidx/constraintlayout/core/widgets/Flow$WidgetsList;
 
     iget-object v3, v8, Landroidx/constraintlayout/core/widgets/Flow;->mLeft:Landroidx/constraintlayout/core/widgets/ConstraintAnchor;
@@ -1738,7 +1736,7 @@
     :cond_c
     move v1, v13
 
-    goto :goto_7
+    goto :goto_5
 
     :cond_d
     if-lez v11, :cond_c
@@ -1751,14 +1749,14 @@
     add-int/2addr v1, v0
 
     .line 853
-    :goto_7
+    :goto_5
     invoke-virtual {v10, v12}, Landroidx/constraintlayout/core/widgets/Flow$WidgetsList;->add(Landroidx/constraintlayout/core/widgets/ConstraintWidget;)V
 
     add-int/lit8 v11, v11, 0x1
 
     move v0, v14
 
-    goto :goto_4
+    goto :goto_3
 
     .line 856
     :cond_e
@@ -1818,25 +1816,25 @@
 
     if-ne v11, v12, :cond_f
 
-    goto :goto_8
+    goto :goto_6
 
     :cond_f
     move/from16 v11, v21
 
-    goto :goto_9
+    goto :goto_7
 
     :cond_10
-    :goto_8
+    :goto_6
     move/from16 v11, v20
 
-    :goto_9
+    :goto_7
     if-lez v0, :cond_12
 
     if-eqz v11, :cond_12
 
     move/from16 v0, v21
 
-    :goto_a
+    :goto_8
     if-ge v0, v1, :cond_12
 
     .line 878
@@ -1859,7 +1857,7 @@
 
     invoke-virtual {v11, v12}, Landroidx/constraintlayout/core/widgets/Flow$WidgetsList;->measureMatchConstraints(I)V
 
-    goto :goto_b
+    goto :goto_9
 
     .line 882
     :cond_11
@@ -1871,10 +1869,10 @@
 
     invoke-virtual {v11, v12}, Landroidx/constraintlayout/core/widgets/Flow$WidgetsList;->measureMatchConstraints(I)V
 
-    :goto_b
+    :goto_9
     add-int/lit8 v0, v0, 0x1
 
-    goto :goto_a
+    goto :goto_8
 
     :cond_12
     move/from16 v22, v7
@@ -1895,7 +1893,7 @@
 
     move v2, v10
 
-    :goto_c
+    :goto_a
     if-ge v14, v1, :cond_18
 
     .line 888
@@ -1935,7 +1933,7 @@
 
     move/from16 v5, v21
 
-    goto :goto_d
+    goto :goto_b
 
     .line 895
     :cond_13
@@ -1947,7 +1945,7 @@
     move-result v5
 
     .line 898
-    :goto_d
+    :goto_b
     invoke-static/range {v23 .. v23}, Landroidx/constraintlayout/core/widgets/Flow$WidgetsList;->access$2000(Landroidx/constraintlayout/core/widgets/Flow$WidgetsList;)Landroidx/constraintlayout/core/widgets/ConstraintWidget;
 
     move-result-object v9
@@ -2031,7 +2029,7 @@
 
     move/from16 v2, v27
 
-    goto/16 :goto_f
+    goto/16 :goto_d
 
     :cond_15
     move-object/from16 p1, v3
@@ -2068,7 +2066,7 @@
 
     move/from16 v25, v21
 
-    goto :goto_e
+    goto :goto_c
 
     .line 914
     :cond_16
@@ -2084,7 +2082,7 @@
     move/from16 v25, v10
 
     .line 917
-    :goto_e
+    :goto_c
     invoke-static/range {v23 .. v23}, Landroidx/constraintlayout/core/widgets/Flow$WidgetsList;->access$2000(Landroidx/constraintlayout/core/widgets/Flow$WidgetsList;)Landroidx/constraintlayout/core/widgets/ConstraintWidget;
 
     move-result-object v9
@@ -2150,14 +2148,14 @@
 
     move-object/from16 v3, v26
 
-    :goto_f
+    :goto_d
     add-int/lit8 v14, v4, 0x1
 
     move/from16 v15, p4
 
     move-object/from16 v4, v24
 
-    goto/16 :goto_c
+    goto/16 :goto_a
 
     :cond_18
     move v3, v12
@@ -2296,13 +2294,12 @@
 
     if-le v12, v1, :cond_4
 
-    goto :goto_2
+    move/from16 v0, v20
 
     :cond_4
     if-eqz v0, :cond_5
 
     .line 971
-    :goto_2
     new-instance v10, Landroidx/constraintlayout/core/widgets/Flow$WidgetsList;
 
     iget-object v3, v8, Landroidx/constraintlayout/core/widgets/Flow;->mLeft:Landroidx/constraintlayout/core/widgets/ConstraintAnchor;
@@ -2335,7 +2332,7 @@
 
     move v2, v14
 
-    goto :goto_4
+    goto :goto_3
 
     :cond_5
     if-lez v11, :cond_6
@@ -2347,16 +2344,16 @@
 
     add-int/2addr v2, v0
 
-    goto :goto_3
+    goto :goto_2
 
     :cond_6
     move v2, v14
 
-    :goto_3
+    :goto_2
     move/from16 v0, v21
 
     .line 982
-    :goto_4
+    :goto_3
     invoke-virtual {v10, v13}, Landroidx/constraintlayout/core/widgets/Flow$WidgetsList;->add(Landroidx/constraintlayout/core/widgets/ConstraintWidget;)V
 
     add-int/lit8 v11, v11, 0x1
@@ -2372,7 +2369,7 @@
 
     move v11, v1
 
-    :goto_5
+    :goto_4
     if-ge v11, v9, :cond_e
 
     .line 988
@@ -2417,12 +2414,12 @@
 
     move/from16 v1, v20
 
-    goto :goto_6
+    goto :goto_5
 
     :cond_a
     move/from16 v1, v21
 
-    :goto_6
+    :goto_5
     if-nez v1, :cond_b
 
     if-lez v11, :cond_b
@@ -2434,13 +2431,12 @@
 
     if-gez v2, :cond_b
 
-    goto :goto_7
+    move/from16 v1, v20
 
     :cond_b
     if-eqz v1, :cond_d
 
     .line 999
-    :goto_7
     new-instance v10, Landroidx/constraintlayout/core/widgets/Flow$WidgetsList;
 
     iget-object v3, v8, Landroidx/constraintlayout/core/widgets/Flow;->mLeft:Landroidx/constraintlayout/core/widgets/ConstraintAnchor;
@@ -2472,7 +2468,7 @@
     :cond_c
     move v0, v13
 
-    goto :goto_8
+    goto :goto_6
 
     :cond_d
     if-lez v11, :cond_c
@@ -2485,14 +2481,14 @@
     add-int/2addr v0, v1
 
     .line 1010
-    :goto_8
+    :goto_6
     invoke-virtual {v10, v12}, Landroidx/constraintlayout/core/widgets/Flow$WidgetsList;->add(Landroidx/constraintlayout/core/widgets/ConstraintWidget;)V
 
     add-int/lit8 v11, v11, 0x1
 
     move v1, v14
 
-    goto :goto_5
+    goto :goto_4
 
     .line 1013
     :cond_e
@@ -2552,25 +2548,25 @@
 
     if-ne v11, v12, :cond_f
 
-    goto :goto_9
+    goto :goto_7
 
     :cond_f
     move/from16 v11, v21
 
-    goto :goto_a
+    goto :goto_8
 
     :cond_10
-    :goto_9
+    :goto_7
     move/from16 v11, v20
 
-    :goto_a
+    :goto_8
     if-lez v1, :cond_12
 
     if-eqz v11, :cond_12
 
     move/from16 v1, v21
 
-    :goto_b
+    :goto_9
     if-ge v1, v0, :cond_12
 
     .line 1035
@@ -2593,7 +2589,7 @@
 
     invoke-virtual {v11, v12}, Landroidx/constraintlayout/core/widgets/Flow$WidgetsList;->measureMatchConstraints(I)V
 
-    goto :goto_c
+    goto :goto_a
 
     .line 1039
     :cond_11
@@ -2605,10 +2601,10 @@
 
     invoke-virtual {v11, v12}, Landroidx/constraintlayout/core/widgets/Flow$WidgetsList;->measureMatchConstraints(I)V
 
-    :goto_c
+    :goto_a
     add-int/lit8 v1, v1, 0x1
 
-    goto :goto_b
+    goto :goto_9
 
     :cond_12
     move/from16 v22, v7
@@ -2629,7 +2625,7 @@
 
     move v2, v10
 
-    :goto_d
+    :goto_b
     if-ge v14, v0, :cond_18
 
     .line 1045
@@ -2669,7 +2665,7 @@
 
     move/from16 v5, v21
 
-    goto :goto_e
+    goto :goto_c
 
     .line 1052
     :cond_13
@@ -2681,7 +2677,7 @@
     move-result v5
 
     .line 1055
-    :goto_e
+    :goto_c
     invoke-static/range {v23 .. v23}, Landroidx/constraintlayout/core/widgets/Flow$WidgetsList;->access$2000(Landroidx/constraintlayout/core/widgets/Flow$WidgetsList;)Landroidx/constraintlayout/core/widgets/ConstraintWidget;
 
     move-result-object v9
@@ -2765,7 +2761,7 @@
 
     move/from16 v2, v27
 
-    goto/16 :goto_10
+    goto/16 :goto_e
 
     :cond_15
     move-object/from16 p1, v3
@@ -2802,7 +2798,7 @@
 
     move/from16 v25, v21
 
-    goto :goto_f
+    goto :goto_d
 
     .line 1071
     :cond_16
@@ -2818,7 +2814,7 @@
     move/from16 v25, v10
 
     .line 1074
-    :goto_f
+    :goto_d
     invoke-static/range {v23 .. v23}, Landroidx/constraintlayout/core/widgets/Flow$WidgetsList;->access$2000(Landroidx/constraintlayout/core/widgets/Flow$WidgetsList;)Landroidx/constraintlayout/core/widgets/ConstraintWidget;
 
     move-result-object v9
@@ -2884,14 +2880,14 @@
 
     move-object/from16 v3, v26
 
-    :goto_10
+    :goto_e
     add-int/lit8 v14, v4, 0x1
 
     move/from16 v15, p4
 
     move-object/from16 v4, v24
 
-    goto/16 :goto_d
+    goto/16 :goto_b
 
     :cond_18
     move v3, v12

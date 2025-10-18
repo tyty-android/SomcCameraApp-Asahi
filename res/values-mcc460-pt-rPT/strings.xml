@@ -19,5 +19,4 @@ Ligue o WLAN nas DEFINIÇÕES."</string>
     <string name="camera_strings_runtime_permission_rationale_network_cta_txt">"Esta aplicação utiliza dados de WLAN e móveis para enviar dados do utilizador (por exemplo, fotografias/vídeos gravados, dados de voz, informações da conta dos serviços em utilização, etc.) para a Internet.
 Tenha em atenção que a utilização de dados poder ser-lhe cobrada consoante os contratos celebrados com o seu operador de rede ou fornecedor de serviços de Internet."</string>
     <string name="camera_strings_streaming_error_wifi_disconnected_txt">Sem ligação WLAN</string>
-    <string name="mv_wireless_network_txt">Utiliz. WLAN e dados móveis</string>
 </resources>

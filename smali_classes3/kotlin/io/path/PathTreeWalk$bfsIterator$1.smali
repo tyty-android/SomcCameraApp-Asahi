@@ -34,7 +34,7 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/SourceDebugExtension;
-    value = "SMAP\nPathTreeWalk.kt\nKotlin\n*S Kotlin\n*F\n+ 1 PathTreeWalk.kt\nkotlin/io/path/PathTreeWalk$bfsIterator$1\n+ 2 PathTreeWalk.kt\nkotlin/io/path/PathTreeWalk\n*L\n1#1,177:1\n45#2,15:178\n*S KotlinDebug\n*F\n+ 1 PathTreeWalk.kt\nkotlin/io/path/PathTreeWalk$bfsIterator$1\n*L\n98#1:178,15\n*E\n"
+    value = "SMAP\nPathTreeWalk.kt\nKotlin\n*S Kotlin\n*F\n+ 1 PathTreeWalk.kt\nkotlin/io/path/PathTreeWalk$bfsIterator$1\n+ 2 PathTreeWalk.kt\nkotlin/io/path/PathTreeWalk\n*L\n1#1,181:1\n45#2,19:182\n*S KotlinDebug\n*F\n+ 1 PathTreeWalk.kt\nkotlin/io/path/PathTreeWalk$bfsIterator$1\n*L\n102#1:182,19\n*E\n"
 .end annotation
 
 .annotation runtime Lkotlin/Metadata;
@@ -71,8 +71,8 @@
         0x1
     }
     l = {
-        0xb8,
-        0xbe
+        0xc0,
+        0xc6
     }
     m = "invokeSuspend"
     n = {
@@ -223,7 +223,7 @@
 
     move-result-object v0
 
-    .line 89
+    .line 93
     iget v1, p0, Lkotlin/io/path/PathTreeWalk$bfsIterator$1;->label:I
 
     const/4 v2, 0x2
@@ -299,12 +299,12 @@
 
     check-cast p1, Lkotlin/sequences/SequenceScope;
 
-    .line 91
+    .line 95
     new-instance v1, Lkotlin/collections/ArrayDeque;
 
     invoke-direct {v1}, Lkotlin/collections/ArrayDeque;-><init>()V
 
-    .line 92
+    .line 96
     new-instance v5, Lkotlin/io/path/DirectoryEntriesReader;
 
     iget-object v6, p0, Lkotlin/io/path/PathTreeWalk$bfsIterator$1;->this$0:Lkotlin/io/path/PathTreeWalk;
@@ -315,7 +315,7 @@
 
     invoke-direct {v5, v6}, Lkotlin/io/path/DirectoryEntriesReader;-><init>(Z)V
 
-    .line 94
+    .line 98
     new-instance v6, Lkotlin/io/path/PathNode;
 
     iget-object v7, p0, Lkotlin/io/path/PathTreeWalk$bfsIterator$1;->this$0:Lkotlin/io/path/PathTreeWalk;
@@ -352,7 +352,7 @@
 
     move-object v1, v11
 
-    .line 96
+    .line 100
     :cond_3
     :goto_0
     move-object p1, v5
@@ -365,24 +365,35 @@
 
     xor-int/2addr p1, v4
 
-    if-eqz p1, :cond_8
+    if-eqz p1, :cond_9
 
-    .line 97
+    .line 101
     invoke-virtual {v5}, Lkotlin/collections/ArrayDeque;->removeFirst()Ljava/lang/Object;
 
     move-result-object p1
 
     check-cast p1, Lkotlin/io/path/PathNode;
 
-    .line 98
+    .line 102
     iget-object v7, p0, Lkotlin/io/path/PathTreeWalk$bfsIterator$1;->this$0:Lkotlin/io/path/PathTreeWalk;
 
-    .line 178
+    .line 182
     invoke-virtual {p1}, Lkotlin/io/path/PathNode;->getPath()Ljava/nio/file/Path;
 
     move-result-object v8
 
-    .line 179
+    .line 183
+    invoke-virtual {p1}, Lkotlin/io/path/PathNode;->getParent()Lkotlin/io/path/PathNode;
+
+    move-result-object v9
+
+    if-eqz v9, :cond_4
+
+    .line 185
+    invoke-static {v8}, Lkotlin/io/path/PathsKt;->checkFileName(Ljava/nio/file/Path;)V
+
+    .line 187
+    :cond_4
     invoke-static {v7}, Lkotlin/io/path/PathTreeWalk;->access$getLinkOptions(Lkotlin/io/path/PathTreeWalk;)[Ljava/nio/file/LinkOption;
 
     move-result-object v9
@@ -407,23 +418,23 @@
 
     move-result v9
 
-    if-eqz v9, :cond_7
+    if-eqz v9, :cond_8
 
-    .line 180
+    .line 188
     invoke-static {p1}, Lkotlin/io/path/PathTreeWalkKt;->access$createsCycle(Lkotlin/io/path/PathNode;)Z
 
     move-result v9
 
-    if-nez v9, :cond_6
+    if-nez v9, :cond_7
 
-    .line 183
+    .line 191
     invoke-static {v7}, Lkotlin/io/path/PathTreeWalk;->access$getIncludeDirectories(Lkotlin/io/path/PathTreeWalk;)Z
 
     move-result v9
 
-    if-eqz v9, :cond_5
+    if-eqz v9, :cond_6
 
-    .line 184
+    .line 192
     move-object v9, p0
 
     check-cast v9, Lkotlin/coroutines/Continuation;
@@ -446,11 +457,11 @@
 
     move-result-object v9
 
-    if-ne v9, v0, :cond_4
+    if-ne v9, v0, :cond_5
 
     return-object v0
 
-    :cond_4
+    :cond_5
     move-object v9, v6
 
     move-object v6, p1
@@ -480,8 +491,8 @@
 
     move-object v5, v11
 
-    .line 186
-    :cond_5
+    .line 194
+    :cond_6
     invoke-static {v7}, Lkotlin/io/path/PathTreeWalk;->access$getLinkOptions(Lkotlin/io/path/PathTreeWalk;)[Ljava/nio/file/LinkOption;
 
     move-result-object v7
@@ -508,20 +519,20 @@
 
     if-eqz v7, :cond_3
 
-    .line 187
+    .line 195
     invoke-virtual {v1, p1}, Lkotlin/io/path/DirectoryEntriesReader;->readEntries(Lkotlin/io/path/PathNode;)Ljava/util/List;
 
     move-result-object p1
 
-    .line 99
+    .line 103
     check-cast p1, Ljava/util/Collection;
 
     invoke-virtual {v5, p1}, Lkotlin/collections/ArrayDeque;->addAll(Ljava/util/Collection;)Z
 
     goto/16 :goto_0
 
-    .line 181
-    :cond_6
+    .line 189
+    :cond_7
     new-instance p0, Ljava/nio/file/FileSystemLoopException;
 
     invoke-virtual {v8}, Ljava/lang/Object;->toString()Ljava/lang/String;
@@ -532,15 +543,15 @@
 
     throw p0
 
-    .line 189
-    :cond_7
+    .line 197
+    :cond_8
     new-array p1, v4, [Ljava/nio/file/LinkOption;
 
-    sget-object v7, Ljava/nio/file/LinkOption;->NOFOLLOW_LINKS:Ljava/nio/file/LinkOption;
+    const/4 v7, 0x0
 
-    const/4 v9, 0x0
+    sget-object v9, Ljava/nio/file/LinkOption;->NOFOLLOW_LINKS:Ljava/nio/file/LinkOption;
 
-    aput-object v7, p1, v9
+    aput-object v9, p1, v7
 
     invoke-static {p1, v4}, Ljava/util/Arrays;->copyOf([Ljava/lang/Object;I)[Ljava/lang/Object;
 
@@ -554,7 +565,7 @@
 
     if-eqz p1, :cond_3
 
-    .line 190
+    .line 198
     move-object p1, p0
 
     check-cast p1, Lkotlin/coroutines/Continuation;
@@ -581,8 +592,8 @@
 
     return-object v0
 
-    .line 102
-    :cond_8
+    .line 106
+    :cond_9
     sget-object p0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
 
     return-object p0

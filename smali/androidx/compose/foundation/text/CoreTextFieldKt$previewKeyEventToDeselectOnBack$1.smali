@@ -74,7 +74,7 @@
 .method public bridge synthetic invoke(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
 
-    .line 757
+    .line 802
     check-cast p1, Landroidx/compose/ui/input/key/KeyEvent;
 
     invoke-virtual {p1}, Landroidx/compose/ui/input/key/KeyEvent;->unbox-impl()Landroid/view/KeyEvent;
@@ -91,11 +91,7 @@
 .method public final invoke-ZmokQxo(Landroid/view/KeyEvent;)Ljava/lang/Boolean;
     .locals 2
 
-    const-string v0, "keyEvent"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 758
+    .line 803
     iget-object v0, p0, Landroidx/compose/foundation/text/CoreTextFieldKt$previewKeyEventToDeselectOnBack$1;->$state:Landroidx/compose/foundation/text/TextFieldState;
 
     invoke-virtual {v0}, Landroidx/compose/foundation/text/TextFieldState;->getHandleState()Landroidx/compose/foundation/text/HandleState;
@@ -112,7 +108,7 @@
 
     if-eqz p1, :cond_0
 
-    .line 759
+    .line 804
     iget-object p0, p0, Landroidx/compose/foundation/text/CoreTextFieldKt$previewKeyEventToDeselectOnBack$1;->$manager:Landroidx/compose/foundation/text/selection/TextFieldSelectionManager;
 
     const/4 p1, 0x0
@@ -126,7 +122,7 @@
     :cond_0
     const/4 v0, 0x0
 
-    .line 762
+    .line 807
     :goto_0
     invoke-static {v0}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 

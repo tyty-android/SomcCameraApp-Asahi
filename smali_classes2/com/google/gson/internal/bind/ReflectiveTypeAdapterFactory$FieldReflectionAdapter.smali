@@ -36,24 +36,22 @@
 
 
 # direct methods
-.method constructor <init>(Lcom/google/gson/internal/ObjectConstructor;Ljava/util/Map;)V
+.method constructor <init>(Lcom/google/gson/internal/ObjectConstructor;Lcom/google/gson/internal/bind/ReflectiveTypeAdapterFactory$FieldsData;)V
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
             "Lcom/google/gson/internal/ObjectConstructor<",
             "TT;>;",
-            "Ljava/util/Map<",
-            "Ljava/lang/String;",
-            "Lcom/google/gson/internal/bind/ReflectiveTypeAdapterFactory$BoundField;",
-            ">;)V"
+            "Lcom/google/gson/internal/bind/ReflectiveTypeAdapterFactory$FieldsData;",
+            ")V"
         }
     .end annotation
 
-    .line 421
-    invoke-direct {p0, p2}, Lcom/google/gson/internal/bind/ReflectiveTypeAdapterFactory$Adapter;-><init>(Ljava/util/Map;)V
+    .line 546
+    invoke-direct {p0, p2}, Lcom/google/gson/internal/bind/ReflectiveTypeAdapterFactory$Adapter;-><init>(Lcom/google/gson/internal/bind/ReflectiveTypeAdapterFactory$FieldsData;)V
 
-    .line 422
+    .line 547
     iput-object p1, p0, Lcom/google/gson/internal/bind/ReflectiveTypeAdapterFactory$FieldReflectionAdapter;->constructor:Lcom/google/gson/internal/ObjectConstructor;
 
     return-void
@@ -69,7 +67,7 @@
         }
     .end annotation
 
-    .line 427
+    .line 552
     iget-object p0, p0, Lcom/google/gson/internal/bind/ReflectiveTypeAdapterFactory$FieldReflectionAdapter;->constructor:Lcom/google/gson/internal/ObjectConstructor;
 
     invoke-interface {p0}, Lcom/google/gson/internal/ObjectConstructor;->construct()Ljava/lang/Object;
@@ -108,7 +106,7 @@
         }
     .end annotation
 
-    .line 433
+    .line 558
     invoke-virtual {p3, p2, p1}, Lcom/google/gson/internal/bind/ReflectiveTypeAdapterFactory$BoundField;->readIntoField(Lcom/google/gson/stream/JsonReader;Ljava/lang/Object;)V
 
     return-void

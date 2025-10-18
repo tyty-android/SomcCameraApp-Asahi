@@ -30,7 +30,7 @@
     .line 0
     iget-object p0, p0, Lcom/google/android/material/search/SearchView$$ExternalSyntheticLambda9;->f$0:Lcom/google/android/material/search/SearchView;
 
-    invoke-virtual {p0, p1}, Lcom/google/android/material/search/SearchView;->lambda$setUpClearButton$2$com-google-android-material-search-SearchView(Landroid/view/View;)V
+    invoke-virtual {p0, p1}, Lcom/google/android/material/search/SearchView;->lambda$setUpBackButton$1$com-google-android-material-search-SearchView(Landroid/view/View;)V
 
     return-void
 .end method

@@ -26,7 +26,7 @@
 
     invoke-direct {p0}, Ljava/lang/StringBuilder;-><init>()V
 
-    const p2, 0x7f1103a6
+    const p2, 0x7f1103da
 
     invoke-virtual {p1, p2}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -42,7 +42,7 @@
 
     move-result-object p0
 
-    const p2, 0x7f1103a0
+    const p2, 0x7f1103d4
 
     .line 84
     invoke-virtual {p1, p2}, Landroid/content/Context;->getString(I)Ljava/lang/String;
@@ -65,14 +65,14 @@
 
     if-ne p2, p0, :cond_1
 
-    const p0, 0x7f11013b
+    const p0, 0x7f11013e
 
     .line 89
     invoke-virtual {p1, p0}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
     move-result-object p0
 
-    const p2, 0x7f11010c
+    const p2, 0x7f11010d
 
     .line 90
     invoke-virtual {p1, p2}, Landroid/content/Context;->getString(I)Ljava/lang/String;
@@ -83,7 +83,7 @@
 
     move-result-object p0
 
-    const p2, 0x7f110425
+    const p2, 0x7f11045a
 
     .line 87
     invoke-virtual {p1, p2, p0}, Landroid/content/Context;->getString(I[Ljava/lang/Object;)Ljava/lang/String;
@@ -168,7 +168,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f0c004a
+    const v2, 0x7f0c0049
 
     const/4 v3, 0x0
 
@@ -177,7 +177,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f0902f9
+    const v2, 0x7f0902ed
 
     .line 56
     invoke-virtual {v1, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;

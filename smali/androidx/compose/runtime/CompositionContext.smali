@@ -6,7 +6,7 @@
 # annotations
 .annotation runtime Lkotlin/Metadata;
     d1 = {
-        "\u0000p\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\u0008\u0002\n\u0002\u0010\u000b\n\u0002\u0008\u0003\n\u0002\u0010\u0008\n\u0002\u0008\u0003\n\u0002\u0018\u0002\n\u0002\u0008\u0005\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0004\n\u0002\u0018\u0002\n\u0002\u0008\u0004\n\u0002\u0018\u0002\n\u0002\u0008\u0007\n\u0002\u0018\u0002\n\u0002\u0008\u0003\n\u0002\u0018\u0002\n\u0002\u0008\u0005\n\u0002\u0010#\n\u0002\u0018\u0002\n\u0002\u0008\u0003\n\u0002\u0018\u0002\n\u0002\u0008\u000c\u0008\'\u0018\u00002\u00020\u0001B\u0007\u0008\u0000\u00a2\u0006\u0002\u0010\u0002J*\u0010\u0011\u001a\u00020\u00122\u0006\u0010\u0013\u001a\u00020\u00142\u0011\u0010\u0015\u001a\r\u0012\u0004\u0012\u00020\u00120\u0016\u00a2\u0006\u0002\u0008\u0017H \u00a2\u0006\u0004\u0008\u0018\u0010\u0019J\u0015\u0010\u001a\u001a\u00020\u00122\u0006\u0010\u001b\u001a\u00020\u001cH \u00a2\u0006\u0002\u0008\u001dJ\r\u0010\u001e\u001a\u00020\u0012H\u0010\u00a2\u0006\u0002\u0008\u001fJ\r\u0010 \u001a\u00020!H\u0010\u00a2\u0006\u0002\u0008\"J\u0015\u0010#\u001a\u00020\u00122\u0006\u0010\u001b\u001a\u00020\u001cH \u00a2\u0006\u0002\u0008$J\u0015\u0010%\u001a\u00020\u00122\u0006\u0010\u0013\u001a\u00020\u0014H \u00a2\u0006\u0002\u0008&J\u0015\u0010\'\u001a\u00020\u00122\u0006\u0010(\u001a\u00020)H \u00a2\u0006\u0002\u0008*J\u001d\u0010+\u001a\u00020\u00122\u0006\u0010\u001b\u001a\u00020\u001c2\u0006\u0010,\u001a\u00020-H \u00a2\u0006\u0002\u0008.J\u0017\u0010/\u001a\u0004\u0018\u00010-2\u0006\u0010\u001b\u001a\u00020\u001cH\u0010\u00a2\u0006\u0002\u00080J\u001b\u00101\u001a\u00020\u00122\u000c\u00102\u001a\u0008\u0012\u0004\u0012\u00020403H\u0010\u00a2\u0006\u0002\u00085J\u0015\u00106\u001a\u00020\u00122\u0006\u00107\u001a\u000208H\u0010\u00a2\u0006\u0002\u00089J\u0015\u0010:\u001a\u00020\u00122\u0006\u0010\u0013\u001a\u00020\u0014H \u00a2\u0006\u0002\u0008;J\u0015\u0010<\u001a\u00020\u00122\u0006\u0010\u0013\u001a\u00020\u0014H \u00a2\u0006\u0002\u0008=J\r\u0010>\u001a\u00020\u0012H\u0010\u00a2\u0006\u0002\u0008?J\u0015\u0010@\u001a\u00020\u00122\u0006\u00107\u001a\u000208H\u0010\u00a2\u0006\u0002\u0008AJ\u0015\u0010B\u001a\u00020\u00122\u0006\u0010\u0013\u001a\u00020\u0014H \u00a2\u0006\u0002\u0008CR\u0012\u0010\u0003\u001a\u00020\u0004X\u00a0\u0004\u00a2\u0006\u0006\u001a\u0004\u0008\u0005\u0010\u0006R\u0012\u0010\u0007\u001a\u00020\u0008X\u00a0\u0004\u00a2\u0006\u0006\u001a\u0004\u0008\t\u0010\nR\u0012\u0010\u000b\u001a\u00020\u000cX\u00a6\u0004\u00a2\u0006\u0006\u001a\u0004\u0008\r\u0010\u000eR\u0012\u0010\u000f\u001a\u00020\u000cX\u00a0\u0004\u00a2\u0006\u0006\u001a\u0004\u0008\u0010\u0010\u000e\u00a8\u0006D"
+        "\u0000x\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\u0008\u0002\n\u0002\u0010\u000b\n\u0002\u0008\u0005\n\u0002\u0010\u0008\n\u0002\u0008\u0003\n\u0002\u0018\u0002\n\u0002\u0008\u0003\n\u0002\u0018\u0002\n\u0002\u0008\u0005\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0004\n\u0002\u0018\u0002\n\u0002\u0008\u0004\n\u0002\u0018\u0002\n\u0002\u0008\u0007\n\u0002\u0018\u0002\n\u0002\u0008\u0003\n\u0002\u0018\u0002\n\u0002\u0008\u0005\n\u0002\u0010#\n\u0002\u0018\u0002\n\u0002\u0008\u0003\n\u0002\u0018\u0002\n\u0002\u0008\u000c\u0008\'\u0018\u00002\u00020\u0001B\u0007\u0008\u0000\u00a2\u0006\u0002\u0010\u0002J*\u0010\u0017\u001a\u00020\u00182\u0006\u0010\u0019\u001a\u00020\u001a2\u0011\u0010\u001b\u001a\r\u0012\u0004\u0012\u00020\u00180\u001c\u00a2\u0006\u0002\u0008\u001dH \u00a2\u0006\u0004\u0008\u001e\u0010\u001fJ\u0015\u0010 \u001a\u00020\u00182\u0006\u0010!\u001a\u00020\"H \u00a2\u0006\u0002\u0008#J\r\u0010$\u001a\u00020\u0018H\u0010\u00a2\u0006\u0002\u0008%J\r\u0010&\u001a\u00020\'H\u0010\u00a2\u0006\u0002\u0008(J\u0015\u0010)\u001a\u00020\u00182\u0006\u0010!\u001a\u00020\"H \u00a2\u0006\u0002\u0008*J\u0015\u0010+\u001a\u00020\u00182\u0006\u0010\u0019\u001a\u00020\u001aH \u00a2\u0006\u0002\u0008,J\u0015\u0010-\u001a\u00020\u00182\u0006\u0010.\u001a\u00020/H \u00a2\u0006\u0002\u00080J\u001d\u00101\u001a\u00020\u00182\u0006\u0010!\u001a\u00020\"2\u0006\u00102\u001a\u000203H \u00a2\u0006\u0002\u00084J\u0017\u00105\u001a\u0004\u0018\u0001032\u0006\u0010!\u001a\u00020\"H\u0010\u00a2\u0006\u0002\u00086J\u001b\u00107\u001a\u00020\u00182\u000c\u00108\u001a\u0008\u0012\u0004\u0012\u00020:09H\u0010\u00a2\u0006\u0002\u0008;J\u0015\u0010<\u001a\u00020\u00182\u0006\u0010=\u001a\u00020>H\u0010\u00a2\u0006\u0002\u0008?J\u0015\u0010@\u001a\u00020\u00182\u0006\u0010\u0019\u001a\u00020\u001aH \u00a2\u0006\u0002\u0008AJ\u0015\u0010B\u001a\u00020\u00182\u0006\u0010\u0019\u001a\u00020\u001aH \u00a2\u0006\u0002\u0008CJ\r\u0010D\u001a\u00020\u0018H\u0010\u00a2\u0006\u0002\u0008EJ\u0015\u0010F\u001a\u00020\u00182\u0006\u0010=\u001a\u00020>H\u0010\u00a2\u0006\u0002\u0008GJ\u0015\u0010H\u001a\u00020\u00182\u0006\u0010\u0019\u001a\u00020\u001aH \u00a2\u0006\u0002\u0008IR\u0012\u0010\u0003\u001a\u00020\u0004X\u00a0\u0004\u00a2\u0006\u0006\u001a\u0004\u0008\u0005\u0010\u0006R\u0012\u0010\u0007\u001a\u00020\u0004X\u00a0\u0004\u00a2\u0006\u0006\u001a\u0004\u0008\u0008\u0010\u0006R\u0012\u0010\t\u001a\u00020\nX\u00a0\u0004\u00a2\u0006\u0006\u001a\u0004\u0008\u000b\u0010\u000cR\u0012\u0010\r\u001a\u00020\u000eX\u00a6\u0004\u00a2\u0006\u0006\u001a\u0004\u0008\u000f\u0010\u0010R\u0016\u0010\u0011\u001a\u0004\u0018\u00010\u00128PX\u0090\u0004\u00a2\u0006\u0006\u001a\u0004\u0008\u0013\u0010\u0014R\u0012\u0010\u0015\u001a\u00020\u000eX\u00a0\u0004\u00a2\u0006\u0006\u001a\u0004\u0008\u0016\u0010\u0010\u00a8\u0006J"
     }
     d2 = {
         "Landroidx/compose/runtime/CompositionContext;",
@@ -16,6 +16,8 @@
         "",
         "getCollectingParameterInformation$runtime_release",
         "()Z",
+        "collectingSourceInformation",
+        "getCollectingSourceInformation$runtime_release",
         "compoundHashKey",
         "",
         "getCompoundHashKey$runtime_release",
@@ -24,6 +26,10 @@
         "Lkotlin/coroutines/CoroutineContext;",
         "getEffectCoroutineContext",
         "()Lkotlin/coroutines/CoroutineContext;",
+        "observerHolder",
+        "Landroidx/compose/runtime/CompositionObserverHolder;",
+        "getObserverHolder$runtime_release",
+        "()Landroidx/compose/runtime/CompositionObserverHolder;",
         "recomposeCoroutineContext",
         "getRecomposeCoroutineContext$runtime_release",
         "composeInitial",
@@ -139,10 +145,13 @@
 .method public abstract getCollectingParameterInformation$runtime_release()Z
 .end method
 
+.method public abstract getCollectingSourceInformation$runtime_release()Z
+.end method
+
 .method public getCompositionLocalScope$runtime_release()Landroidx/compose/runtime/PersistentCompositionLocalMap;
     .locals 0
 
-    .line 60
+    .line 63
     invoke-static {}, Landroidx/compose/runtime/CompositionContextKt;->access$getEmptyPersistentCompositionLocalMap$p()Landroidx/compose/runtime/PersistentCompositionLocalMap;
 
     move-result-object p0
@@ -154,6 +163,14 @@
 .end method
 
 .method public abstract getEffectCoroutineContext()Lkotlin/coroutines/CoroutineContext;
+.end method
+
+.method public getObserverHolder$runtime_release()Landroidx/compose/runtime/CompositionObserverHolder;
+    .locals 0
+
+    const/4 p0, 0x0
+
+    return-object p0
 .end method
 
 .method public abstract getRecomposeCoroutineContext$runtime_release()Lkotlin/coroutines/CoroutineContext;
@@ -174,10 +191,6 @@
 .method public movableContentStateResolve$runtime_release(Landroidx/compose/runtime/MovableContentStateReference;)Landroidx/compose/runtime/MovableContentState;
     .locals 0
 
-    const-string p0, "reference"
-
-    invoke-static {p1, p0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
     const/4 p0, 0x0
 
     return-object p0
@@ -194,19 +207,11 @@
         }
     .end annotation
 
-    const-string/jumbo p0, "table"
-
-    invoke-static {p1, p0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
     return-void
 .end method
 
 .method public registerComposer$runtime_release(Landroidx/compose/runtime/Composer;)V
     .locals 0
-
-    const-string p0, "composer"
-
-    invoke-static {p1, p0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
     return-void
 .end method
@@ -225,10 +230,6 @@
 
 .method public unregisterComposer$runtime_release(Landroidx/compose/runtime/Composer;)V
     .locals 0
-
-    const-string p0, "composer"
-
-    invoke-static {p1, p0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
     return-void
 .end method

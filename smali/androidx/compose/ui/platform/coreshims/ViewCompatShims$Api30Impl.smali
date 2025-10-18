@@ -18,7 +18,7 @@
 .method private constructor <init>()V
     .locals 0
 
-    .line 180
+    .line 183
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -27,7 +27,7 @@
 .method static setImportantForContentCapture(Landroid/view/View;I)V
     .locals 0
 
-    .line 185
+    .line 188
     invoke-virtual {p0, p1}, Landroid/view/View;->setImportantForContentCapture(I)V
 
     return-void

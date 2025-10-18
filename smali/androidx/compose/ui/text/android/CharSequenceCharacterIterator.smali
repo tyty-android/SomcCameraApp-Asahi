@@ -9,10 +9,11 @@
 # annotations
 .annotation runtime Lkotlin/Metadata;
     d1 = {
-        "\u0000&\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\r\n\u0000\n\u0002\u0010\u0008\n\u0002\u0008\u0004\n\u0002\u0010\u0000\n\u0000\n\u0002\u0010\u000c\n\u0002\u0008\n\u0008\u0000\u0018\u00002\u00020\u0001B\u001d\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\u0006\u0010\u0004\u001a\u00020\u0005\u0012\u0006\u0010\u0006\u001a\u00020\u0005\u00a2\u0006\u0002\u0010\u0007J\u0008\u0010\t\u001a\u00020\nH\u0016J\u0008\u0010\u000b\u001a\u00020\u000cH\u0016J\u0008\u0010\r\u001a\u00020\u000cH\u0016J\u0008\u0010\u000e\u001a\u00020\u0005H\u0016J\u0008\u0010\u000f\u001a\u00020\u0005H\u0016J\u0008\u0010\u0010\u001a\u00020\u0005H\u0016J\u0008\u0010\u0011\u001a\u00020\u000cH\u0016J\t\u0010\u0012\u001a\u00020\u000cH\u0096\u0002J\u0008\u0010\u0013\u001a\u00020\u000cH\u0016J\u0010\u0010\u0014\u001a\u00020\u000c2\u0006\u0010\u0015\u001a\u00020\u0005H\u0016R\u000e\u0010\u0002\u001a\u00020\u0003X\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u0006\u001a\u00020\u0005X\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u0008\u001a\u00020\u0005X\u0082\u000e\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u0004\u001a\u00020\u0005X\u0082\u0004\u00a2\u0006\u0002\n\u0000\u00a8\u0006\u0016"
+        "\u0000*\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\r\n\u0000\n\u0002\u0010\u0008\n\u0002\u0008\u0004\n\u0002\u0010\u0000\n\u0000\n\u0002\u0010\u000c\n\u0002\u0008\n\u0008\u0000\u0018\u00002\u00020\u00012\u00020\u0002B\u001d\u0012\u0006\u0010\u0003\u001a\u00020\u0004\u0012\u0006\u0010\u0005\u001a\u00020\u0006\u0012\u0006\u0010\u0007\u001a\u00020\u0006\u00a2\u0006\u0002\u0010\u0008J\u0008\u0010\n\u001a\u00020\u000bH\u0016J\u0008\u0010\u000c\u001a\u00020\rH\u0016J\u0008\u0010\u000e\u001a\u00020\rH\u0016J\u0008\u0010\u000f\u001a\u00020\u0006H\u0016J\u0008\u0010\u0010\u001a\u00020\u0006H\u0016J\u0008\u0010\u0011\u001a\u00020\u0006H\u0016J\u0008\u0010\u0012\u001a\u00020\rH\u0016J\t\u0010\u0013\u001a\u00020\rH\u0096\u0002J\u0008\u0010\u0014\u001a\u00020\rH\u0016J\u0010\u0010\u0015\u001a\u00020\r2\u0006\u0010\u0016\u001a\u00020\u0006H\u0016R\u000e\u0010\u0003\u001a\u00020\u0004X\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u0007\u001a\u00020\u0006X\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u000e\u0010\t\u001a\u00020\u0006X\u0082\u000e\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u0005\u001a\u00020\u0006X\u0082\u0004\u00a2\u0006\u0002\n\u0000\u00a8\u0006\u0017"
     }
     d2 = {
         "Landroidx/compose/ui/text/android/CharSequenceCharacterIterator;",
+        "Ljava/lang/Object;",
         "Ljava/text/CharacterIterator;",
         "charSequence",
         "",
@@ -46,6 +47,10 @@
 .end annotation
 
 
+# static fields
+.field public static final $stable:I = 0x8
+
+
 # instance fields
 .field private final charSequence:Ljava/lang/CharSequence;
 
@@ -57,26 +62,28 @@
 
 
 # direct methods
+.method static constructor <clinit>()V
+    .locals 0
+
+    return-void
+.end method
+
 .method public constructor <init>(Ljava/lang/CharSequence;II)V
-    .locals 1
-
-    const-string v0, "charSequence"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 32
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    .line 33
-    iput-object p1, p0, Landroidx/compose/ui/text/android/CharSequenceCharacterIterator;->charSequence:Ljava/lang/CharSequence;
-
-    .line 34
-    iput p2, p0, Landroidx/compose/ui/text/android/CharSequenceCharacterIterator;->start:I
-
-    .line 35
-    iput p3, p0, Landroidx/compose/ui/text/android/CharSequenceCharacterIterator;->end:I
+    .locals 0
 
     .line 37
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 34
+    iput-object p1, p0, Landroidx/compose/ui/text/android/CharSequenceCharacterIterator;->charSequence:Ljava/lang/CharSequence;
+
+    .line 35
+    iput p2, p0, Landroidx/compose/ui/text/android/CharSequenceCharacterIterator;->start:I
+
+    .line 36
+    iput p3, p0, Landroidx/compose/ui/text/android/CharSequenceCharacterIterator;->end:I
+
+    .line 38
     iput p2, p0, Landroidx/compose/ui/text/android/CharSequenceCharacterIterator;->index:I
 
     return-void
@@ -85,18 +92,13 @@
 
 # virtual methods
 .method public clone()Ljava/lang/Object;
-    .locals 1
+    .locals 0
 
     .line 177
     :try_start_0
-    invoke-super {p0}, Ljava/text/CharacterIterator;->clone()Ljava/lang/Object;
+    invoke-super {p0}, Ljava/lang/Object;->clone()Ljava/lang/Object;
 
     move-result-object p0
-
-    .line 175
-    const-string/jumbo v0, "{\n            @Suppress(\u2026  super.clone()\n        }"
-
-    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
     :try_end_0
     .catch Ljava/lang/CloneNotSupportedException; {:try_start_0 .. :try_end_0} :catch_0
 
@@ -114,7 +116,7 @@
 .method public current()C
     .locals 2
 
-    .line 79
+    .line 80
     iget v0, p0, Landroidx/compose/ui/text/android/CharSequenceCharacterIterator;->index:I
 
     iget v1, p0, Landroidx/compose/ui/text/android/CharSequenceCharacterIterator;->end:I
@@ -139,12 +141,12 @@
 .method public first()C
     .locals 1
 
-    .line 48
+    .line 49
     iget v0, p0, Landroidx/compose/ui/text/android/CharSequenceCharacterIterator;->start:I
 
     iput v0, p0, Landroidx/compose/ui/text/android/CharSequenceCharacterIterator;->index:I
 
-    .line 49
+    .line 50
     invoke-virtual {p0}, Landroidx/compose/ui/text/android/CharSequenceCharacterIterator;->current()C
 
     move-result p0
@@ -155,7 +157,7 @@
 .method public getBeginIndex()I
     .locals 0
 
-    .line 147
+    .line 148
     iget p0, p0, Landroidx/compose/ui/text/android/CharSequenceCharacterIterator;->start:I
 
     return p0
@@ -164,7 +166,7 @@
 .method public getEndIndex()I
     .locals 0
 
-    .line 157
+    .line 158
     iget p0, p0, Landroidx/compose/ui/text/android/CharSequenceCharacterIterator;->end:I
 
     return p0
@@ -173,7 +175,7 @@
 .method public getIndex()I
     .locals 0
 
-    .line 166
+    .line 167
     iget p0, p0, Landroidx/compose/ui/text/android/CharSequenceCharacterIterator;->index:I
 
     return p0
@@ -182,14 +184,14 @@
 .method public last()C
     .locals 2
 
-    .line 61
+    .line 62
     iget v0, p0, Landroidx/compose/ui/text/android/CharSequenceCharacterIterator;->start:I
 
     iget v1, p0, Landroidx/compose/ui/text/android/CharSequenceCharacterIterator;->end:I
 
     if-ne v0, v1, :cond_0
 
-    .line 62
+    .line 63
     iput v1, p0, Landroidx/compose/ui/text/android/CharSequenceCharacterIterator;->index:I
 
     const p0, 0xffff
@@ -199,10 +201,10 @@
     :cond_0
     add-int/lit8 v1, v1, -0x1
 
-    .line 65
+    .line 66
     iput v1, p0, Landroidx/compose/ui/text/android/CharSequenceCharacterIterator;->index:I
 
-    .line 66
+    .line 67
     iget-object p0, p0, Landroidx/compose/ui/text/android/CharSequenceCharacterIterator;->charSequence:Ljava/lang/CharSequence;
 
     invoke-interface {p0, v1}, Ljava/lang/CharSequence;->charAt(I)C
@@ -216,26 +218,26 @@
 .method public next()C
     .locals 2
 
-    .line 93
+    .line 94
     iget v0, p0, Landroidx/compose/ui/text/android/CharSequenceCharacterIterator;->index:I
 
     add-int/lit8 v0, v0, 0x1
 
     iput v0, p0, Landroidx/compose/ui/text/android/CharSequenceCharacterIterator;->index:I
 
-    .line 94
+    .line 95
     iget v1, p0, Landroidx/compose/ui/text/android/CharSequenceCharacterIterator;->end:I
 
     if-lt v0, v1, :cond_0
 
-    .line 95
+    .line 96
     iput v1, p0, Landroidx/compose/ui/text/android/CharSequenceCharacterIterator;->index:I
 
     const p0, 0xffff
 
     goto :goto_0
 
-    .line 98
+    .line 99
     :cond_0
     iget-object p0, p0, Landroidx/compose/ui/text/android/CharSequenceCharacterIterator;->charSequence:Ljava/lang/CharSequence;
 
@@ -250,7 +252,7 @@
 .method public previous()C
     .locals 2
 
-    .line 113
+    .line 114
     iget v0, p0, Landroidx/compose/ui/text/android/CharSequenceCharacterIterator;->index:I
 
     iget v1, p0, Landroidx/compose/ui/text/android/CharSequenceCharacterIterator;->start:I
@@ -264,10 +266,10 @@
     :cond_0
     add-int/lit8 v0, v0, -0x1
 
-    .line 116
+    .line 117
     iput v0, p0, Landroidx/compose/ui/text/android/CharSequenceCharacterIterator;->index:I
 
-    .line 117
+    .line 118
     iget-object p0, p0, Landroidx/compose/ui/text/android/CharSequenceCharacterIterator;->charSequence:Ljava/lang/CharSequence;
 
     invoke-interface {p0, v0}, Ljava/lang/CharSequence;->charAt(I)C
@@ -281,7 +283,7 @@
 .method public setIndex(I)C
     .locals 2
 
-    .line 133
+    .line 134
     iget v0, p0, Landroidx/compose/ui/text/android/CharSequenceCharacterIterator;->start:I
 
     iget v1, p0, Landroidx/compose/ui/text/android/CharSequenceCharacterIterator;->end:I
@@ -290,17 +292,17 @@
 
     if-gt v0, p1, :cond_0
 
-    .line 134
+    .line 135
     iput p1, p0, Landroidx/compose/ui/text/android/CharSequenceCharacterIterator;->index:I
 
-    .line 135
+    .line 136
     invoke-virtual {p0}, Landroidx/compose/ui/text/android/CharSequenceCharacterIterator;->current()C
 
     move-result p0
 
     return p0
 
-    .line 137
+    .line 138
     :cond_0
     new-instance p0, Ljava/lang/IllegalArgumentException;
 

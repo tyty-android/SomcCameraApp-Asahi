@@ -20,35 +20,48 @@
 
 # direct methods
 .method public static synthetic lambda$showKeyboardWithAutoHideBehavior$0([Landroid/widget/EditText;Landroid/view/View;Z)V
-    .locals 2
+    .locals 3
 
     .line 137
     array-length p2, p0
 
     const/4 v0, 0x0
 
-    :goto_0
-    if-ge v0, p2, :cond_1
+    move v1, v0
 
-    aget-object v1, p0, v0
+    :goto_0
+    if-ge v1, p2, :cond_1
+
+    aget-object v2, p0, v1
 
     .line 138
-    invoke-virtual {v1}, Landroid/widget/EditText;->hasFocus()Z
+    invoke-virtual {v2}, Landroid/widget/EditText;->hasFocus()Z
 
-    move-result v1
+    move-result v2
 
-    if-eqz v1, :cond_0
+    if-eqz v2, :cond_0
 
     return-void
 
     :cond_0
-    add-int/lit8 v0, v0, 0x1
+    add-int/lit8 v1, v1, 0x1
 
     goto :goto_0
 
     .line 142
     :cond_1
-    invoke-static {p1}, Lcom/google/android/material/internal/ViewUtils;->hideKeyboard(Landroid/view/View;)V
+    invoke-static {p1, v0}, Lcom/google/android/material/internal/ViewUtils;->hideKeyboard(Landroid/view/View;Z)V
+
+    return-void
+.end method
+
+.method public static synthetic lambda$showKeyboardWithAutoHideBehavior$1(Landroid/view/View;)V
+    .locals 1
+
+    const/4 v0, 0x0
+
+    .line 153
+    invoke-static {p0, v0}, Lcom/google/android/material/internal/ViewUtils;->requestFocusAndShowKeyboard(Landroid/view/View;Z)V
 
     return-void
 .end method
@@ -88,11 +101,18 @@
 
     goto :goto_0
 
-    .line 149
+    .line 150
     :cond_1
     aget-object p0, p0, v2
 
-    invoke-static {p0}, Lcom/google/android/material/internal/ViewUtils;->requestFocusAndShowKeyboard(Landroid/view/View;)V
+    .line 151
+    new-instance v0, Lcom/google/android/material/datepicker/DateSelector$$ExternalSyntheticLambda1;
+
+    invoke-direct {v0, p0}, Lcom/google/android/material/datepicker/DateSelector$$ExternalSyntheticLambda1;-><init>(Landroid/view/View;)V
+
+    const-wide/16 v1, 0x64
+
+    invoke-virtual {p0, v0, v1, v2}, Landroid/view/View;->postDelayed(Ljava/lang/Runnable;J)Z
 
     return-void
 .end method

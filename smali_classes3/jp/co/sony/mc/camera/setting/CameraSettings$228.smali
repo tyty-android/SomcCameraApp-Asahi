@@ -21,7 +21,7 @@
 .method constructor <init>()V
     .locals 0
 
-    .line 2451
+    .line 2516
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -42,10 +42,10 @@
         }
     .end annotation
 
-    .line 2455
+    .line 2520
     check-cast p1, Ljp/co/sony/mc/camera/setting/CameraSettings;
 
-    .line 2456
+    .line 2521
     invoke-static {p1}, Ljp/co/sony/mc/camera/setting/CameraSettings;->-$$Nest$fgetmCapturingMode(Ljp/co/sony/mc/camera/setting/CameraSettings;)Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
     move-result-object p0
@@ -54,12 +54,12 @@
 
     move-result-object p0
 
-    .line 2457
+    .line 2522
     invoke-static {p1}, Ljp/co/sony/mc/camera/setting/CameraSettings;->-$$Nest$fgetmCameraId(Ljp/co/sony/mc/camera/setting/CameraSettings;)Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;
 
     move-result-object p1
 
-    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/configuration/parameters/TouchIntention;->getDefaultValue(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;)Ljp/co/sony/mc/camera/configuration/parameters/TouchIntention;
+    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/configuration/parameters/AspectRatio;->getDefaultValue(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;)Ljp/co/sony/mc/camera/configuration/parameters/AspectRatio;
 
     move-result-object p0
 

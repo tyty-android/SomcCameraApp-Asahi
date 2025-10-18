@@ -542,7 +542,7 @@
 .end method
 
 .method public hide()V
-    .locals 1
+    .locals 2
 
     .line 237
     iget-object v0, p0, Lcom/google/android/material/timepicker/TimePickerTextInputPresenter;->timePickerView:Landroid/widget/LinearLayout;
@@ -553,8 +553,10 @@
 
     if-eqz v0, :cond_0
 
+    const/4 v1, 0x0
+
     .line 239
-    invoke-static {v0}, Lcom/google/android/material/internal/ViewUtils;->hideKeyboard(Landroid/view/View;)V
+    invoke-static {v0, v1}, Lcom/google/android/material/internal/ViewUtils;->hideKeyboard(Landroid/view/View;Z)V
 
     .line 242
     :cond_0

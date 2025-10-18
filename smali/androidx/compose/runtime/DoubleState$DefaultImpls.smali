@@ -30,7 +30,7 @@
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
-    .line 67
+    .line 68
     invoke-static {p0}, Landroidx/compose/runtime/DoubleState;->access$getValue$jd(Landroidx/compose/runtime/DoubleState;)D
 
     move-result-wide v0

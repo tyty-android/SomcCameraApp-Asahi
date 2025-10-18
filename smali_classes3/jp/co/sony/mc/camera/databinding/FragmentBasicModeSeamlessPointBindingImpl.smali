@@ -26,7 +26,7 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeSeamlessPointBindingImpl;->sViewsWithIds:Landroid/util/SparseIntArray;
 
-    const v1, 0x7f090279
+    const v1, 0x7f090274
 
     const/4 v2, 0x2
 
@@ -378,7 +378,7 @@
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    const/16 p1, 0xf
+    const/16 p1, 0x11
 
     .line 78
     invoke-virtual {p0, p1}, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeSeamlessPointBindingImpl;->notifyPropertyChanged(I)V
@@ -403,7 +403,7 @@
 .method public setVariable(ILjava/lang/Object;)Z
     .locals 1
 
-    const/16 v0, 0xf
+    const/16 v0, 0x11
 
     if-ne v0, p1, :cond_0
 

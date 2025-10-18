@@ -53,7 +53,7 @@
     f = "Draggable.kt"
     i = {}
     l = {
-        0x233
+        0x294
     }
     m = "invokeSuspend"
     n = {}
@@ -203,7 +203,7 @@
 
     move-result-object v0
 
-    .line 562
+    .line 659
     iget v1, p0, Landroidx/compose/foundation/gestures/DefaultDraggableState$drag$2;->label:I
 
     const/4 v2, 0x1
@@ -228,7 +228,7 @@
     :cond_1
     invoke-static {p1}, Lkotlin/ResultKt;->throwOnFailure(Ljava/lang/Object;)V
 
-    .line 563
+    .line 660
     iget-object p1, p0, Landroidx/compose/foundation/gestures/DefaultDraggableState$drag$2;->this$0:Landroidx/compose/foundation/gestures/DefaultDraggableState;
 
     invoke-static {p1}, Landroidx/compose/foundation/gestures/DefaultDraggableState;->access$getScrollMutex$p(Landroidx/compose/foundation/gestures/DefaultDraggableState;)Landroidx/compose/foundation/MutatorMutex;
@@ -259,7 +259,7 @@
 
     return-object v0
 
-    .line 564
+    .line 661
     :cond_2
     :goto_0
     sget-object p0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;

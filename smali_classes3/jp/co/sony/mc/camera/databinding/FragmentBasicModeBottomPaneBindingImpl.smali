@@ -28,18 +28,20 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeBottomPaneBindingImpl;->sIncludes:Landroidx/databinding/ViewDataBinding$IncludedLayouts;
 
-    .line 16
-    const-string v1, "fragment_basic_mode_right_pane_capture"
+    const/4 v1, 0x1
 
-    filled-new-array {v1}, [Ljava/lang/String;
+    .line 16
+    new-array v2, v1, [Ljava/lang/String;
+
+    const-string v3, "fragment_basic_mode_right_pane_capture"
+
+    const/4 v4, 0x0
+
+    aput-object v3, v2, v4
+
+    filled-new-array {v1}, [I
 
     move-result-object v1
-
-    const/4 v2, 0x1
-
-    filled-new-array {v2}, [I
-
-    move-result-object v2
 
     const v3, 0x7f0c0068
 
@@ -47,9 +49,7 @@
 
     move-result-object v3
 
-    const/4 v4, 0x0
-
-    invoke-virtual {v0, v4, v1, v2, v3}, Landroidx/databinding/ViewDataBinding$IncludedLayouts;->setIncludes(I[Ljava/lang/String;[I[I)V
+    invoke-virtual {v0, v4, v2, v1, v3}, Landroidx/databinding/ViewDataBinding$IncludedLayouts;->setIncludes(I[Ljava/lang/String;[I[I)V
 
     const/4 v0, 0x0
 

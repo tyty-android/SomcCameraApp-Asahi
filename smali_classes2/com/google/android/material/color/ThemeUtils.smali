@@ -1,4 +1,4 @@
-.class final Lcom/google/android/material/color/ThemeUtils;
+.class public final Lcom/google/android/material/color/ThemeUtils;
 .super Ljava/lang/Object;
 .source "ThemeUtils.java"
 
@@ -7,16 +7,16 @@
 .method private constructor <init>()V
     .locals 0
 
-    .line 31
+    .line 41
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
 .end method
 
-.method static applyThemeOverlay(Landroid/content/Context;I)V
+.method public static applyThemeOverlay(Landroid/content/Context;I)V
     .locals 2
 
-    .line 35
+    .line 45
     invoke-virtual {p0}, Landroid/content/Context;->getTheme()Landroid/content/res/Resources$Theme;
 
     move-result-object v0
@@ -25,12 +25,12 @@
 
     invoke-virtual {v0, p1, v1}, Landroid/content/res/Resources$Theme;->applyStyle(IZ)V
 
-    .line 39
+    .line 49
     instance-of v0, p0, Landroid/app/Activity;
 
     if-eqz v0, :cond_0
 
-    .line 40
+    .line 50
     check-cast p0, Landroid/app/Activity;
 
     invoke-static {p0}, Lcom/google/android/material/color/ThemeUtils;->getWindowDecorViewTheme(Landroid/app/Activity;)Landroid/content/res/Resources$Theme;
@@ -39,7 +39,7 @@
 
     if-eqz p0, :cond_0
 
-    .line 42
+    .line 52
     invoke-virtual {p0, p1, v1}, Landroid/content/res/Resources$Theme;->applyStyle(IZ)V
 
     :cond_0
@@ -49,28 +49,28 @@
 .method private static getWindowDecorViewTheme(Landroid/app/Activity;)Landroid/content/res/Resources$Theme;
     .locals 0
 
-    .line 49
+    .line 59
     invoke-virtual {p0}, Landroid/app/Activity;->getWindow()Landroid/view/Window;
 
     move-result-object p0
 
     if-eqz p0, :cond_0
 
-    .line 52
+    .line 62
     invoke-virtual {p0}, Landroid/view/Window;->peekDecorView()Landroid/view/View;
 
     move-result-object p0
 
     if-eqz p0, :cond_0
 
-    .line 54
+    .line 64
     invoke-virtual {p0}, Landroid/view/View;->getContext()Landroid/content/Context;
 
     move-result-object p0
 
     if-eqz p0, :cond_0
 
-    .line 56
+    .line 66
     invoke-virtual {p0}, Landroid/content/Context;->getTheme()Landroid/content/res/Resources$Theme;
 
     move-result-object p0

@@ -69,7 +69,7 @@
 .method public bridge synthetic invoke(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
 
-    .line 794
+    .line 829
     check-cast p1, Ljava/lang/Number;
 
     invoke-virtual {p1}, Ljava/lang/Number;->floatValue()F
@@ -86,7 +86,7 @@
 .method public final invoke(F)V
     .locals 0
 
-    .line 795
+    .line 830
     iget-object p0, p0, Landroidx/compose/foundation/pager/PagerWrapperFlingBehavior$performFling$2$1;->this$0:Landroidx/compose/foundation/pager/PagerWrapperFlingBehavior;
 
     invoke-virtual {p0}, Landroidx/compose/foundation/pager/PagerWrapperFlingBehavior;->getPagerState()Landroidx/compose/foundation/pager/PagerState;

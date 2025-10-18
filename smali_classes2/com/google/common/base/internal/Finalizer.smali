@@ -363,7 +363,7 @@
 .end method
 
 .method public static startFinalizer(Ljava/lang/Class;Ljava/lang/ref/ReferenceQueue;Ljava/lang/ref/PhantomReference;)V
-    .locals 6
+    .locals 4
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -406,53 +406,35 @@
     .line 81
     sget-object p1, Lcom/google/common/base/internal/Finalizer;->bigThreadConstructor:Ljava/lang/reflect/Constructor;
 
-    const/4 p2, 0x1
-
-    const/4 v1, 0x0
+    const/4 p2, 0x0
 
     if-eqz p1, :cond_0
 
-    const/4 v2, 0x5
-
     .line 85
     :try_start_0
-    new-array v2, v2, [Ljava/lang/Object;
+    move-object v1, p2
 
-    move-object v3, v1
+    check-cast v1, Ljava/lang/ThreadGroup;
 
-    check-cast v3, Ljava/lang/ThreadGroup;
-
-    const/4 v3, 0x0
-
-    aput-object v1, v2, v3
-
-    aput-object v0, v2, p2
-
-    const/4 v4, 0x2
-
-    aput-object p0, v2, v4
-
-    const-wide/16 v4, 0x0
+    const-wide/16 v1, 0x0
 
     .line 87
-    invoke-static {v4, v5}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
+    invoke-static {v1, v2}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
 
-    move-result-object v4
+    move-result-object v1
 
-    const/4 v5, 0x3
+    const/4 v2, 0x0
 
-    aput-object v4, v2, v5
+    invoke-static {v2}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
-    invoke-static {v3}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
+    move-result-object v2
 
-    move-result-object v3
+    filled-new-array {p2, v0, p0, v1, v2}, [Ljava/lang/Object;
 
-    const/4 v4, 0x4
-
-    aput-object v3, v2, v4
+    move-result-object v1
 
     .line 86
-    invoke-virtual {p1, v2}, Ljava/lang/reflect/Constructor;->newInstance([Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {p1, v1}, Ljava/lang/reflect/Constructor;->newInstance([Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p1
 
@@ -466,16 +448,16 @@
     move-exception p1
 
     .line 89
-    sget-object v2, Lcom/google/common/base/internal/Finalizer;->logger:Ljava/util/logging/Logger;
+    sget-object v1, Lcom/google/common/base/internal/Finalizer;->logger:Ljava/util/logging/Logger;
 
-    sget-object v3, Ljava/util/logging/Level;->INFO:Ljava/util/logging/Level;
+    sget-object v2, Ljava/util/logging/Level;->INFO:Ljava/util/logging/Level;
 
-    const-string v4, "Failed to create a thread without inherited thread-local values"
+    const-string v3, "Failed to create a thread without inherited thread-local values"
 
-    invoke-virtual {v2, v3, v4, p1}, Ljava/util/logging/Logger;->log(Ljava/util/logging/Level;Ljava/lang/String;Ljava/lang/Throwable;)V
+    invoke-virtual {v1, v2, v3, p1}, Ljava/util/logging/Logger;->log(Ljava/util/logging/Level;Ljava/lang/String;Ljava/lang/Throwable;)V
 
     :cond_0
-    move-object p1, v1
+    move-object p1, p2
 
     :goto_0
     if-nez p1, :cond_1
@@ -483,15 +465,17 @@
     .line 94
     new-instance p1, Ljava/lang/Thread;
 
-    move-object v2, v1
+    move-object v1, p2
 
-    check-cast v2, Ljava/lang/ThreadGroup;
+    check-cast v1, Ljava/lang/ThreadGroup;
 
-    invoke-direct {p1, v1, v0, p0}, Ljava/lang/Thread;-><init>(Ljava/lang/ThreadGroup;Ljava/lang/Runnable;Ljava/lang/String;)V
+    invoke-direct {p1, p2, v0, p0}, Ljava/lang/Thread;-><init>(Ljava/lang/ThreadGroup;Ljava/lang/Runnable;Ljava/lang/String;)V
+
+    :cond_1
+    const/4 p0, 0x1
 
     .line 96
-    :cond_1
-    invoke-virtual {p1, p2}, Ljava/lang/Thread;->setDaemon(Z)V
+    invoke-virtual {p1, p0}, Ljava/lang/Thread;->setDaemon(Z)V
 
     .line 99
     :try_start_1
@@ -500,7 +484,7 @@
     if-eqz p0, :cond_2
 
     .line 100
-    invoke-virtual {p0, p1, v1}, Ljava/lang/reflect/Field;->set(Ljava/lang/Object;Ljava/lang/Object;)V
+    invoke-virtual {p0, p1, p2}, Ljava/lang/reflect/Field;->set(Ljava/lang/Object;Ljava/lang/Object;)V
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_1
 

@@ -60,7 +60,7 @@
 .method static constructor <clinit>()V
     .locals 3
 
-    .line 287
+    .line 288
     new-instance v0, Landroidx/compose/ui/layout/IntrinsicMinMax;
 
     const-string v1, "Min"
@@ -98,7 +98,7 @@
         }
     .end annotation
 
-    .line 286
+    .line 287
     invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
     return-void

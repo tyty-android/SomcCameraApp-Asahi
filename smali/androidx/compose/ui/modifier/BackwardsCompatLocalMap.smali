@@ -43,6 +43,10 @@
 .end annotation
 
 
+# static fields
+.field public static final $stable:I = 0x8
+
+
 # instance fields
 .field private element:Landroidx/compose/ui/modifier/ModifierLocalProvider;
     .annotation system Ldalvik/annotation/Signature;
@@ -55,6 +59,12 @@
 
 
 # direct methods
+.method static constructor <clinit>()V
+    .locals 0
+
+    return-void
+.end method
+
 .method public constructor <init>(Landroidx/compose/ui/modifier/ModifierLocalProvider;)V
     .locals 1
     .annotation system Ldalvik/annotation/Signature;
@@ -65,16 +75,12 @@
         }
     .end annotation
 
-    const-string v0, "element"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
     const/4 v0, 0x0
 
-    .line 62
+    .line 63
     invoke-direct {p0, v0}, Landroidx/compose/ui/modifier/ModifierLocalMap;-><init>(Lkotlin/jvm/internal/DefaultConstructorMarker;)V
 
-    .line 61
+    .line 62
     iput-object p1, p0, Landroidx/compose/ui/modifier/BackwardsCompatLocalMap;->element:Landroidx/compose/ui/modifier/ModifierLocalProvider;
 
     return-void
@@ -83,7 +89,7 @@
 
 # virtual methods
 .method public contains$ui_release(Landroidx/compose/ui/modifier/ModifierLocal;)Z
-    .locals 1
+    .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -92,11 +98,7 @@
         }
     .end annotation
 
-    const-string v0, "key"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 73
+    .line 74
     iget-object p0, p0, Landroidx/compose/ui/modifier/BackwardsCompatLocalMap;->element:Landroidx/compose/ui/modifier/ModifierLocalProvider;
 
     invoke-interface {p0}, Landroidx/compose/ui/modifier/ModifierLocalProvider;->getKey()Landroidx/compose/ui/modifier/ProvidableModifierLocal;
@@ -128,11 +130,7 @@
         }
     .end annotation
 
-    const-string v0, "key"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 68
+    .line 70
     iget-object v0, p0, Landroidx/compose/ui/modifier/BackwardsCompatLocalMap;->element:Landroidx/compose/ui/modifier/ModifierLocalProvider;
 
     invoke-interface {v0}, Landroidx/compose/ui/modifier/ModifierLocalProvider;->getKey()Landroidx/compose/ui/modifier/ProvidableModifierLocal;
@@ -141,7 +139,7 @@
 
     if-ne p1, v0, :cond_0
 
-    .line 70
+    .line 71
     iget-object p0, p0, Landroidx/compose/ui/modifier/BackwardsCompatLocalMap;->element:Landroidx/compose/ui/modifier/ModifierLocalProvider;
 
     invoke-interface {p0}, Landroidx/compose/ui/modifier/ModifierLocalProvider;->getValue()Ljava/lang/Object;
@@ -150,7 +148,7 @@
 
     return-object p0
 
-    .line 68
+    .line 70
     :cond_0
     new-instance p0, Ljava/lang/IllegalStateException;
 
@@ -175,7 +173,7 @@
         }
     .end annotation
 
-    .line 61
+    .line 62
     iget-object p0, p0, Landroidx/compose/ui/modifier/BackwardsCompatLocalMap;->element:Landroidx/compose/ui/modifier/ModifierLocalProvider;
 
     return-object p0
@@ -193,13 +191,9 @@
         }
     .end annotation
 
-    const-string p0, "key"
-
-    invoke-static {p1, p0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
     new-instance p0, Ljava/lang/IllegalStateException;
 
-    .line 64
+    .line 65
     const-string p1, "Set is not allowed on a backwards compat provider"
 
     invoke-virtual {p1}, Ljava/lang/Object;->toString()Ljava/lang/String;
@@ -212,7 +206,7 @@
 .end method
 
 .method public final setElement(Landroidx/compose/ui/modifier/ModifierLocalProvider;)V
-    .locals 1
+    .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -221,11 +215,7 @@
         }
     .end annotation
 
-    const-string v0, "<set-?>"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 61
+    .line 62
     iput-object p1, p0, Landroidx/compose/ui/modifier/BackwardsCompatLocalMap;->element:Landroidx/compose/ui/modifier/ModifierLocalProvider;
 
     return-void

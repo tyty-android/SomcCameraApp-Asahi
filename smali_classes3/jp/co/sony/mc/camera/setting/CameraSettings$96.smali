@@ -21,7 +21,7 @@
 .method constructor <init>()V
     .locals 0
 
-    .line 1329
+    .line 1386
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -46,13 +46,13 @@
         }
     .end annotation
 
-    .line 1333
+    .line 1390
     check-cast p1, Ljp/co/sony/mc/camera/setting/CameraSettings;
 
-    .line 1334
-    check-cast p3, Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;
+    .line 1391
+    check-cast p3, Landroid/graphics/Point;
 
-    invoke-static {p1, p3}, Ljp/co/sony/mc/camera/setting/CameraSettings;->-$$Nest$msetShutterSpeed(Ljp/co/sony/mc/camera/setting/CameraSettings;Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;)Z
+    invoke-static {p1, p3}, Ljp/co/sony/mc/camera/setting/CameraSettings;->-$$Nest$msetFocusMagnificationPosition(Ljp/co/sony/mc/camera/setting/CameraSettings;Landroid/graphics/Point;)Z
 
     move-result p0
 

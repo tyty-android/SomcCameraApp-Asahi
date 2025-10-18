@@ -25,7 +25,7 @@
 .method private constructor <init>(Ljp/co/sony/mc/camera/device/state/DeviceStateContext;)V
     .locals 0
 
-    .line 3052
+    .line 3128
     iput-object p1, p0, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$OnPreviewResultCallback;->this$0:Ljp/co/sony/mc/camera/device/state/DeviceStateContext;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -46,7 +46,7 @@
 .method public onApertureReceived(F)V
     .locals 0
 
-    .line 3060
+    .line 3136
     iget-object p0, p0, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$OnPreviewResultCallback;->this$0:Ljp/co/sony/mc/camera/device/state/DeviceStateContext;
 
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/device/state/DeviceStateContext;->getCameraDeviceHandlerCallback()Ljp/co/sony/mc/camera/device/state/IDeviceStateMachineCallback;
@@ -61,7 +61,7 @@
 .method public onAutoHdrResultChanged(Z)V
     .locals 0
 
-    .line 3068
+    .line 3144
     iget-object p0, p0, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$OnPreviewResultCallback;->this$0:Ljp/co/sony/mc/camera/device/state/DeviceStateContext;
 
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/device/state/DeviceStateContext;->getCameraDeviceHandlerCallback()Ljp/co/sony/mc/camera/device/state/IDeviceStateMachineCallback;
@@ -76,7 +76,7 @@
 .method public onSsIsoEvReceived(JII)V
     .locals 0
 
-    .line 3055
+    .line 3131
     iget-object p0, p0, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$OnPreviewResultCallback;->this$0:Ljp/co/sony/mc/camera/device/state/DeviceStateContext;
 
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/device/state/DeviceStateContext;->getCameraDeviceHandlerCallback()Ljp/co/sony/mc/camera/device/state/IDeviceStateMachineCallback;

@@ -18,7 +18,7 @@
     d2 = {
         "Landroidx/compose/ui/InternalComposeUiApi;",
         "",
-        "ui_release"
+        "ui-util_release"
     }
     k = 0x1
     mv = {

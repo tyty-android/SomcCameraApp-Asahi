@@ -18,7 +18,7 @@
 .method constructor <init>()V
     .locals 0
 
-    .line 495
+    .line 539
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -27,7 +27,7 @@
 .method static getApi2Value(Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;ZLjava/lang/String;)Ljava/lang/Integer;
     .locals 1
 
-    .line 499
+    .line 543
     invoke-virtual {p2}, Ljava/lang/String;->hashCode()I
 
     const-string v0, "on"
@@ -50,7 +50,7 @@
 
     goto :goto_0
 
-    .line 501
+    .line 545
     :cond_0
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;->isFront()Z
 
@@ -60,14 +60,14 @@
 
     const/4 p0, 0x0
 
-    .line 502
+    .line 546
     invoke-static {p0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object p0
 
     goto :goto_0
 
-    .line 504
+    .line 548
     :cond_1
     invoke-static {p0}, Ljp/co/sony/mc/camera/util/capability/PlatformCapability;->getDefaultLogicalMultiCameraMode(Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;)I
 
@@ -79,7 +79,7 @@
 
     goto :goto_0
 
-    .line 508
+    .line 552
     :cond_2
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;->isFront()Z
 
@@ -91,7 +91,7 @@
 
     if-eqz p1, :cond_3
 
-    .line 510
+    .line 554
     invoke-static {p2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object p0
@@ -101,14 +101,14 @@
     :cond_3
     const/4 p0, 0x1
 
-    .line 513
+    .line 557
     invoke-static {p0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object p0
 
     goto :goto_0
 
-    .line 517
+    .line 561
     :cond_4
     invoke-static {p2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 

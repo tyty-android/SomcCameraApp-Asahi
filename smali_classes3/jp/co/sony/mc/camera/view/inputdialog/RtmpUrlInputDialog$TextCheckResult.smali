@@ -38,7 +38,7 @@
 .method private static synthetic $values()[Ljp/co/sony/mc/camera/view/inputdialog/RtmpUrlInputDialog$TextCheckResult;
     .locals 2
 
-    .line 175
+    .line 172
     sget-object v0, Ljp/co/sony/mc/camera/view/inputdialog/RtmpUrlInputDialog$TextCheckResult;->OK:Ljp/co/sony/mc/camera/view/inputdialog/RtmpUrlInputDialog$TextCheckResult;
 
     sget-object v1, Ljp/co/sony/mc/camera/view/inputdialog/RtmpUrlInputDialog$TextCheckResult;->ILLEGAL_CHARACTER:Ljp/co/sony/mc/camera/view/inputdialog/RtmpUrlInputDialog$TextCheckResult;
@@ -73,7 +73,7 @@
 .method static constructor <clinit>()V
     .locals 4
 
-    .line 176
+    .line 173
     new-instance v0, Ljp/co/sony/mc/camera/view/inputdialog/RtmpUrlInputDialog$TextCheckResult;
 
     const/4 v1, 0x0
@@ -86,12 +86,12 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/view/inputdialog/RtmpUrlInputDialog$TextCheckResult;->OK:Ljp/co/sony/mc/camera/view/inputdialog/RtmpUrlInputDialog$TextCheckResult;
 
-    .line 177
+    .line 174
     new-instance v0, Ljp/co/sony/mc/camera/view/inputdialog/RtmpUrlInputDialog$TextCheckResult;
 
     const/4 v1, 0x1
 
-    const v2, 0x7f110397
+    const v2, 0x7f1103cb
 
     const-string v3, "ILLEGAL_CHARACTER"
 
@@ -99,7 +99,7 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/view/inputdialog/RtmpUrlInputDialog$TextCheckResult;->ILLEGAL_CHARACTER:Ljp/co/sony/mc/camera/view/inputdialog/RtmpUrlInputDialog$TextCheckResult;
 
-    .line 175
+    .line 172
     invoke-static {}, Ljp/co/sony/mc/camera/view/inputdialog/RtmpUrlInputDialog$TextCheckResult;->$values()[Ljp/co/sony/mc/camera/view/inputdialog/RtmpUrlInputDialog$TextCheckResult;
 
     move-result-object v0
@@ -117,10 +117,10 @@
         }
     .end annotation
 
-    .line 181
+    .line 178
     invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
-    .line 182
+    .line 179
     iput p3, p0, Ljp/co/sony/mc/camera/view/inputdialog/RtmpUrlInputDialog$TextCheckResult;->mTextId:I
 
     return-void
@@ -129,7 +129,7 @@
 .method private getText()I
     .locals 0
 
-    .line 186
+    .line 183
     iget p0, p0, Ljp/co/sony/mc/camera/view/inputdialog/RtmpUrlInputDialog$TextCheckResult;->mTextId:I
 
     return p0
@@ -138,7 +138,7 @@
 .method private isValid()Z
     .locals 1
 
-    .line 190
+    .line 187
     sget-object v0, Ljp/co/sony/mc/camera/view/inputdialog/RtmpUrlInputDialog$TextCheckResult;->OK:Ljp/co/sony/mc/camera/view/inputdialog/RtmpUrlInputDialog$TextCheckResult;
 
     if-ne p0, v0, :cond_0
@@ -157,7 +157,7 @@
 .method public static valueOf(Ljava/lang/String;)Ljp/co/sony/mc/camera/view/inputdialog/RtmpUrlInputDialog$TextCheckResult;
     .locals 1
 
-    .line 175
+    .line 172
     const-class v0, Ljp/co/sony/mc/camera/view/inputdialog/RtmpUrlInputDialog$TextCheckResult;
 
     invoke-static {v0, p0}, Ljava/lang/Enum;->valueOf(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
@@ -172,7 +172,7 @@
 .method public static values()[Ljp/co/sony/mc/camera/view/inputdialog/RtmpUrlInputDialog$TextCheckResult;
     .locals 1
 
-    .line 175
+    .line 172
     sget-object v0, Ljp/co/sony/mc/camera/view/inputdialog/RtmpUrlInputDialog$TextCheckResult;->$VALUES:[Ljp/co/sony/mc/camera/view/inputdialog/RtmpUrlInputDialog$TextCheckResult;
 
     invoke-virtual {v0}, [Ljp/co/sony/mc/camera/view/inputdialog/RtmpUrlInputDialog$TextCheckResult;->clone()Ljava/lang/Object;

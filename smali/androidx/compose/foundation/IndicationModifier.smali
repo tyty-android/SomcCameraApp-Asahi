@@ -40,11 +40,7 @@
 
 # direct methods
 .method public constructor <init>(Landroidx/compose/foundation/IndicationInstance;)V
-    .locals 1
-
-    const-string v0, "indicationInstance"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+    .locals 0
 
     .line 177
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -58,11 +54,7 @@
 
 # virtual methods
 .method public draw(Landroidx/compose/ui/graphics/drawscope/ContentDrawScope;)V
-    .locals 1
-
-    const-string v0, "<this>"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+    .locals 0
 
     .line 182
     iget-object p0, p0, Landroidx/compose/foundation/IndicationModifier;->indicationInstance:Landroidx/compose/foundation/IndicationInstance;

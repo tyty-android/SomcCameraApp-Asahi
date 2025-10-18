@@ -27,6 +27,11 @@
     .end annotation
 .end field
 
+.field protected mViewFinderUiState:Ljp/co/sony/mc/camera/view/uistate/ViewFinderUiState;
+    .annotation runtime Landroidx/databinding/Bindable;
+    .end annotation
+.end field
+
 .field public final networkIcon:Landroid/widget/ImageView;
 
 .field public final networkOffline:Ljp/co/sony/mc/camera/view/widget/OutlineTextView;
@@ -44,37 +49,37 @@
 .method protected constructor <init>(Ljava/lang/Object;Landroid/view/View;ILjp/co/sony/mc/camera/view/widget/TextTextureView;Landroid/widget/ImageView;Landroid/widget/ImageView;Landroid/widget/LinearLayout;Landroid/widget/ImageView;Ljp/co/sony/mc/camera/view/widget/OutlineTextView;Landroidx/constraintlayout/widget/ConstraintLayout;Landroid/widget/ImageView;Landroidx/constraintlayout/widget/ConstraintLayout;Landroid/widget/ImageView;)V
     .locals 0
 
-    .line 69
+    .line 73
     invoke-direct {p0, p1, p2, p3}, Landroidx/databinding/ViewDataBinding;-><init>(Ljava/lang/Object;Landroid/view/View;I)V
 
-    .line 70
+    .line 74
     iput-object p4, p0, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeIndicatorBinding;->bitrateValue:Ljp/co/sony/mc/camera/view/widget/TextTextureView;
 
-    .line 71
+    .line 75
     iput-object p5, p0, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeIndicatorBinding;->enduranceMode:Landroid/widget/ImageView;
 
-    .line 72
+    .line 76
     iput-object p6, p0, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeIndicatorBinding;->externalMic:Landroid/widget/ImageView;
 
-    .line 73
+    .line 77
     iput-object p7, p0, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeIndicatorBinding;->indicatorIconContainer:Landroid/widget/LinearLayout;
 
-    .line 74
+    .line 78
     iput-object p8, p0, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeIndicatorBinding;->networkIcon:Landroid/widget/ImageView;
 
-    .line 75
+    .line 79
     iput-object p9, p0, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeIndicatorBinding;->networkOffline:Ljp/co/sony/mc/camera/view/widget/OutlineTextView;
 
-    .line 76
+    .line 80
     iput-object p10, p0, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeIndicatorBinding;->networkStateArea:Landroidx/constraintlayout/widget/ConstraintLayout;
 
-    .line 77
+    .line 81
     iput-object p11, p0, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeIndicatorBinding;->remoteControl:Landroid/widget/ImageView;
 
-    .line 78
+    .line 82
     iput-object p12, p0, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeIndicatorBinding;->root:Landroidx/constraintlayout/widget/ConstraintLayout;
 
-    .line 79
+    .line 83
     iput-object p13, p0, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeIndicatorBinding;->thermal:Landroid/widget/ImageView;
 
     return-void
@@ -83,7 +88,7 @@
 .method public static bind(Landroid/view/View;)Ljp/co/sony/mc/camera/databinding/FragmentBasicModeIndicatorBinding;
     .locals 1
 
-    .line 143
+    .line 154
     invoke-static {}, Landroidx/databinding/DataBindingUtil;->getDefaultComponent()Landroidx/databinding/DataBindingComponent;
 
     move-result-object v0
@@ -102,7 +107,7 @@
 
     const v0, 0x7f0c0065
 
-    .line 156
+    .line 167
     invoke-static {p1, p0, v0}, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeIndicatorBinding;->bind(Ljava/lang/Object;Landroid/view/View;I)Landroidx/databinding/ViewDataBinding;
 
     move-result-object p0
@@ -115,7 +120,7 @@
 .method public static inflate(Landroid/view/LayoutInflater;)Ljp/co/sony/mc/camera/databinding/FragmentBasicModeIndicatorBinding;
     .locals 1
 
-    .line 125
+    .line 136
     invoke-static {}, Landroidx/databinding/DataBindingUtil;->getDefaultComponent()Landroidx/databinding/DataBindingComponent;
 
     move-result-object v0
@@ -130,7 +135,7 @@
 .method public static inflate(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Z)Ljp/co/sony/mc/camera/databinding/FragmentBasicModeIndicatorBinding;
     .locals 1
 
-    .line 106
+    .line 117
     invoke-static {}, Landroidx/databinding/DataBindingUtil;->getDefaultComponent()Landroidx/databinding/DataBindingComponent;
 
     move-result-object v0
@@ -149,7 +154,7 @@
 
     const v0, 0x7f0c0065
 
-    .line 120
+    .line 131
     invoke-static {p0, v0, p1, p2, p3}, Landroidx/databinding/ViewDataBinding;->inflateInternal(Landroid/view/LayoutInflater;ILandroid/view/ViewGroup;ZLjava/lang/Object;)Landroidx/databinding/ViewDataBinding;
 
     move-result-object p0
@@ -170,7 +175,7 @@
 
     const v2, 0x7f0c0065
 
-    .line 139
+    .line 150
     invoke-static {p0, v2, v0, v1, p1}, Landroidx/databinding/ViewDataBinding;->inflateInternal(Landroid/view/LayoutInflater;ILandroid/view/ViewGroup;ZLjava/lang/Object;)Landroidx/databinding/ViewDataBinding;
 
     move-result-object p0
@@ -185,7 +190,7 @@
 .method public getIndicatorUiState()Ljp/co/sony/mc/camera/view/uistate/IndicatorUiState;
     .locals 0
 
-    .line 100
+    .line 104
     iget-object p0, p0, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeIndicatorBinding;->mIndicatorUiState:Ljp/co/sony/mc/camera/view/uistate/IndicatorUiState;
 
     return-object p0
@@ -194,7 +199,7 @@
 .method public getOrientationViewModel()Ljp/co/sony/mc/camera/view/viewmodel/OrientationViewModel;
     .locals 0
 
-    .line 93
+    .line 97
     iget-object p0, p0, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeIndicatorBinding;->mOrientationViewModel:Ljp/co/sony/mc/camera/view/viewmodel/OrientationViewModel;
 
     return-object p0
@@ -203,8 +208,17 @@
 .method public getSystemStatusModel()Ljp/co/sony/mc/camera/view/viewmodel/SystemStatusModel;
     .locals 0
 
-    .line 86
+    .line 90
     iget-object p0, p0, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeIndicatorBinding;->mSystemStatusModel:Ljp/co/sony/mc/camera/view/viewmodel/SystemStatusModel;
+
+    return-object p0
+.end method
+
+.method public getViewFinderUiState()Ljp/co/sony/mc/camera/view/uistate/ViewFinderUiState;
+    .locals 0
+
+    .line 111
+    iget-object p0, p0, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeIndicatorBinding;->mViewFinderUiState:Ljp/co/sony/mc/camera/view/uistate/ViewFinderUiState;
 
     return-object p0
 .end method
@@ -216,4 +230,7 @@
 .end method
 
 .method public abstract setSystemStatusModel(Ljp/co/sony/mc/camera/view/viewmodel/SystemStatusModel;)V
+.end method
+
+.method public abstract setViewFinderUiState(Ljp/co/sony/mc/camera/view/uistate/ViewFinderUiState;)V
 .end method

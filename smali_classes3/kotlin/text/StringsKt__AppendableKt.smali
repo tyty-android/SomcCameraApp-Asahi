@@ -72,7 +72,7 @@
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 62
+    .line 61
     array-length v0, p1
 
     const/4 v1, 0x0
@@ -82,7 +82,7 @@
 
     aget-object v2, p1, v1
 
-    .line 63
+    .line 62
     invoke-interface {p0, v2}, Ljava/lang/Appendable;->append(Ljava/lang/CharSequence;)Ljava/lang/Appendable;
 
     add-int/lit8 v1, v1, 0x1
@@ -115,7 +115,7 @@
 
     if-eqz p2, :cond_0
 
-    .line 85
+    .line 84
     invoke-interface {p2, p1}, Lkotlin/jvm/functions/Function1;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p1
@@ -129,22 +129,24 @@
     :cond_0
     if-nez p1, :cond_1
 
+    const/4 p2, 0x1
+
     goto :goto_0
 
-    .line 86
+    .line 85
     :cond_1
     instance-of p2, p1, Ljava/lang/CharSequence;
 
+    :goto_0
     if-eqz p2, :cond_2
 
-    :goto_0
     check-cast p1, Ljava/lang/CharSequence;
 
     invoke-interface {p0, p1}, Ljava/lang/Appendable;->append(Ljava/lang/CharSequence;)Ljava/lang/Appendable;
 
     goto :goto_1
 
-    .line 87
+    .line 86
     :cond_2
     instance-of p2, p1, Ljava/lang/Character;
 
@@ -160,7 +162,7 @@
 
     goto :goto_1
 
-    .line 88
+    .line 87
     :cond_3
     invoke-static {p1}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
 
@@ -183,12 +185,12 @@
 
     const/16 v0, 0xa
 
-    .line 70
+    .line 69
     invoke-interface {p0, v0}, Ljava/lang/Appendable;->append(C)Ljava/lang/Appendable;
 
     move-result-object p0
 
-    const-string v0, "append(\'\\n\')"
+    const-string v0, "append(...)"
 
     invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
 
@@ -202,22 +204,20 @@
 
     invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 80
+    .line 79
     invoke-interface {p0, p1}, Ljava/lang/Appendable;->append(C)Ljava/lang/Appendable;
 
     move-result-object p0
 
-    const-string p1, "append(value)"
+    const-string p1, "append(...)"
 
     invoke-static {p0, p1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
 
-    const/16 p1, 0xa
+    const/16 v0, 0xa
 
-    invoke-interface {p0, p1}, Ljava/lang/Appendable;->append(C)Ljava/lang/Appendable;
+    invoke-interface {p0, v0}, Ljava/lang/Appendable;->append(C)Ljava/lang/Appendable;
 
     move-result-object p0
-
-    const-string p1, "append(\'\\n\')"
 
     invoke-static {p0, p1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
 
@@ -231,22 +231,20 @@
 
     invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 75
+    .line 74
     invoke-interface {p0, p1}, Ljava/lang/Appendable;->append(Ljava/lang/CharSequence;)Ljava/lang/Appendable;
 
     move-result-object p0
 
-    const-string p1, "append(value)"
+    const-string p1, "append(...)"
 
     invoke-static {p0, p1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
 
-    const/16 p1, 0xa
+    const/16 v0, 0xa
 
-    invoke-interface {p0, p1}, Ljava/lang/Appendable;->append(C)Ljava/lang/Appendable;
+    invoke-interface {p0, v0}, Ljava/lang/Appendable;->append(C)Ljava/lang/Appendable;
 
     move-result-object p0
-
-    const-string p1, "append(\'\\n\')"
 
     invoke-static {p0, p1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
 
@@ -273,7 +271,7 @@
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 55
+    .line 54
     invoke-interface {p0, p1, p2, p3}, Ljava/lang/Appendable;->append(Ljava/lang/CharSequence;II)Ljava/lang/Appendable;
 
     move-result-object p0

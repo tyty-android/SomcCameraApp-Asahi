@@ -76,7 +76,7 @@
 .method public bridge synthetic invoke(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
 
-    .line 732
+    .line 742
     check-cast p1, Landroidx/compose/ui/semantics/SemanticsPropertyReceiver;
 
     invoke-virtual {p0, p1}, Landroidx/compose/material/DrawerKt$BottomDrawer$2$1$4;->invoke(Landroidx/compose/ui/semantics/SemanticsPropertyReceiver;)V
@@ -89,16 +89,12 @@
 .method public final invoke(Landroidx/compose/ui/semantics/SemanticsPropertyReceiver;)V
     .locals 2
 
-    const-string v0, "$this$semantics"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 733
+    .line 743
     iget-object v0, p0, Landroidx/compose/material/DrawerKt$BottomDrawer$2$1$4;->$navigationMenu:Ljava/lang/String;
 
     invoke-static {p1, v0}, Landroidx/compose/ui/semantics/SemanticsPropertiesKt;->setPaneTitle(Landroidx/compose/ui/semantics/SemanticsPropertyReceiver;Ljava/lang/String;)V
 
-    .line 734
+    .line 744
     iget-object v0, p0, Landroidx/compose/material/DrawerKt$BottomDrawer$2$1$4;->$drawerState:Landroidx/compose/material/BottomDrawerState;
 
     invoke-virtual {v0}, Landroidx/compose/material/BottomDrawerState;->isOpen()Z
@@ -107,7 +103,7 @@
 
     if-eqz v0, :cond_0
 
-    .line 736
+    .line 746
     new-instance v0, Landroidx/compose/material/DrawerKt$BottomDrawer$2$1$4$1;
 
     iget-object v1, p0, Landroidx/compose/material/DrawerKt$BottomDrawer$2$1$4;->$drawerState:Landroidx/compose/material/BottomDrawerState;

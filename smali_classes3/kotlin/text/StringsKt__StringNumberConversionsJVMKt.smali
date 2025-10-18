@@ -637,15 +637,11 @@
 
     move-result p1
 
-    invoke-static {p1}, Lkotlin/text/CharsKt;->checkRadix(I)I
-
-    move-result p1
-
     invoke-static {p0, p1}, Ljava/lang/Integer;->toString(II)Ljava/lang/String;
 
     move-result-object p0
 
-    const-string/jumbo p1, "toString(this, checkRadix(radix))"
+    const-string/jumbo p1, "toString(...)"
 
     invoke-static {p0, p1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
 
@@ -664,7 +660,7 @@
 
     move-result-object p0
 
-    const-string/jumbo p1, "toString(this, checkRadix(radix))"
+    const-string/jumbo p1, "toString(...)"
 
     invoke-static {p0, p1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
 
@@ -683,7 +679,7 @@
 
     move-result-object p0
 
-    const-string/jumbo p1, "toString(this, checkRadix(radix))"
+    const-string/jumbo p1, "toString(...)"
 
     invoke-static {p0, p1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
 
@@ -698,15 +694,11 @@
 
     move-result p1
 
-    invoke-static {p1}, Lkotlin/text/CharsKt;->checkRadix(I)I
-
-    move-result p1
-
     invoke-static {p0, p1}, Ljava/lang/Integer;->toString(II)Ljava/lang/String;
 
     move-result-object p0
 
-    const-string/jumbo p1, "toString(this, checkRadix(radix))"
+    const-string/jumbo p1, "toString(...)"
 
     invoke-static {p0, p1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
 

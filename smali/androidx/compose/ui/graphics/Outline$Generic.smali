@@ -55,13 +55,9 @@
 .method public constructor <init>(Landroidx/compose/ui/graphics/Path;)V
     .locals 1
 
-    const-string v0, "path"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
     const/4 v0, 0x0
 
-    .line 103
+    .line 104
     invoke-direct {p0, v0}, Landroidx/compose/ui/graphics/Outline;-><init>(Lkotlin/jvm/internal/DefaultConstructorMarker;)V
 
     iput-object p1, p0, Landroidx/compose/ui/graphics/Outline$Generic;->path:Landroidx/compose/ui/graphics/Path;
@@ -80,7 +76,7 @@
 
     return v0
 
-    .line 109
+    .line 110
     :cond_0
     instance-of v1, p1, Landroidx/compose/ui/graphics/Outline$Generic;
 
@@ -90,7 +86,7 @@
 
     return v2
 
-    .line 111
+    .line 112
     :cond_1
     iget-object p0, p0, Landroidx/compose/ui/graphics/Outline$Generic;->path:Landroidx/compose/ui/graphics/Path;
 
@@ -113,7 +109,7 @@
 .method public getBounds()Landroidx/compose/ui/geometry/Rect;
     .locals 0
 
-    .line 105
+    .line 106
     iget-object p0, p0, Landroidx/compose/ui/graphics/Outline$Generic;->path:Landroidx/compose/ui/graphics/Path;
 
     invoke-interface {p0}, Landroidx/compose/ui/graphics/Path;->getBounds()Landroidx/compose/ui/geometry/Rect;
@@ -126,7 +122,7 @@
 .method public final getPath()Landroidx/compose/ui/graphics/Path;
     .locals 0
 
-    .line 103
+    .line 104
     iget-object p0, p0, Landroidx/compose/ui/graphics/Outline$Generic;->path:Landroidx/compose/ui/graphics/Path;
 
     return-object p0
@@ -135,7 +131,7 @@
 .method public hashCode()I
     .locals 0
 
-    .line 117
+    .line 118
     iget-object p0, p0, Landroidx/compose/ui/graphics/Outline$Generic;->path:Landroidx/compose/ui/graphics/Path;
 
     invoke-virtual {p0}, Ljava/lang/Object;->hashCode()I

@@ -53,7 +53,7 @@
     .line 20
     new-instance v0, Ljp/co/sony/mc/camera/configuration/parameters/FocusMagnification;
 
-    const v1, 0x7f1103bf
+    const v1, 0x7f1103f4
 
     const-string v2, "ON"
 
@@ -70,7 +70,7 @@
 
     const/4 v1, 0x1
 
-    const v2, 0x7f1103be
+    const v2, 0x7f1103f3
 
     const-string v3, "OFF"
 
@@ -108,11 +108,11 @@
     return-void
 .end method
 
-.method public static calcFocusMagnificationRatio(Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;IZ)F
+.method public static calcFocusMagnificationRatio(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;I)F
     .locals 3
 
     .line 134
-    invoke-static {p0}, Ljp/co/sony/mc/camera/util/capability/PlatformCapability;->getMaxFocusMagnificationRatio(Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;)Ljava/lang/Float;
+    invoke-static {p1}, Ljp/co/sony/mc/camera/util/capability/PlatformCapability;->getMaxFocusMagnificationRatio(Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;)Ljava/lang/Float;
 
     move-result-object v0
 
@@ -127,7 +127,7 @@
     if-lez v0, :cond_0
 
     .line 135
-    invoke-static {p0}, Ljp/co/sony/mc/camera/util/capability/PlatformCapability;->getMaxFocusMagnificationRatio(Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;)Ljava/lang/Float;
+    invoke-static {p1}, Ljp/co/sony/mc/camera/util/capability/PlatformCapability;->getMaxFocusMagnificationRatio(Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;)Ljava/lang/Float;
 
     move-result-object v0
 
@@ -141,14 +141,14 @@
 
     const/4 v2, 0x0
 
-    invoke-static {p0, p1, v0, p2, v2}, Ljp/co/sony/mc/camera/configuration/parameters/ZoomRatio;->isInOpticalZoomRange(Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;ILjp/co/sony/mc/camera/configuration/parameters/VideoMfHdr;ZZ)Z
+    invoke-static {p0, p1, p2, v0, v2}, Ljp/co/sony/mc/camera/configuration/parameters/ZoomRatio;->isInOpticalZoomRange(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;ILjp/co/sony/mc/camera/configuration/parameters/VideoMfHdr;Z)Z
 
     move-result v0
 
     if-eqz v0, :cond_1
 
     .line 139
-    invoke-static {p1}, Ljp/co/sony/mc/camera/configuration/parameters/ZoomStep;->getZoomRatio(I)F
+    invoke-static {p2}, Ljp/co/sony/mc/camera/configuration/parameters/ZoomStep;->getZoomRatio(I)F
 
     move-result p0
 
@@ -161,7 +161,7 @@
     :cond_1
     sget-object v0, Ljp/co/sony/mc/camera/configuration/parameters/VideoMfHdr;->MF_HDR_OFF:Ljp/co/sony/mc/camera/configuration/parameters/VideoMfHdr;
 
-    invoke-static {p0, p1, v0, p2, v2}, Ljp/co/sony/mc/camera/configuration/parameters/ZoomRatio;->getBaseZoomRatio(Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;ILjp/co/sony/mc/camera/configuration/parameters/VideoMfHdr;ZZ)F
+    invoke-static {p0, p1, p2, v0, v2}, Ljp/co/sony/mc/camera/configuration/parameters/ZoomRatio;->getBaseZoomRatio(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;ILjp/co/sony/mc/camera/configuration/parameters/VideoMfHdr;Z)F
 
     move-result p0
 

@@ -103,20 +103,12 @@
         }
     .end annotation
 
-    const-string v0, "$this$Saver"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string/jumbo v0, "state"
-
-    invoke-static {p2, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 153
+    .line 217
     instance-of v0, p2, Landroidx/compose/runtime/snapshots/SnapshotMutableState;
 
-    if-eqz v0, :cond_0
+    if-eqz v0, :cond_1
 
-    .line 157
+    .line 221
     iget-object p0, p0, Landroidx/compose/runtime/saveable/RememberSaveableKt$mutableStateSaver$1$1;->$this_with:Landroidx/compose/runtime/saveable/Saver;
 
     invoke-interface {p2}, Landroidx/compose/runtime/MutableState;->getValue()Ljava/lang/Object;
@@ -127,6 +119,9 @@
 
     move-result-object p0
 
+    if-eqz p0, :cond_0
+
+    .line 223
     check-cast p2, Landroidx/compose/runtime/snapshots/SnapshotMutableState;
 
     invoke-interface {p2}, Landroidx/compose/runtime/snapshots/SnapshotMutableState;->getPolicy()Landroidx/compose/runtime/SnapshotMutationPolicy;
@@ -141,10 +136,16 @@
 
     move-result-object p0
 
+    goto :goto_0
+
+    :cond_0
+    const/4 p0, 0x0
+
+    :goto_0
     return-object p0
 
-    .line 153
-    :cond_0
+    .line 217
+    :cond_1
     new-instance p0, Ljava/lang/IllegalArgumentException;
 
     const-string p1, "If you use a custom MutableState implementation you have to write a custom Saver and pass it as a saver param to rememberSaveable()"
@@ -161,7 +162,7 @@
 .method public bridge synthetic invoke(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
 
-    .line 151
+    .line 215
     check-cast p1, Landroidx/compose/runtime/saveable/SaverScope;
 
     check-cast p2, Landroidx/compose/runtime/MutableState;

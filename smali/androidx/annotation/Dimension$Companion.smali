@@ -1,6 +1,6 @@
 .class public final Landroidx/annotation/Dimension$Companion;
 .super Ljava/lang/Object;
-.source "Dimension.kt"
+.source "Dimension.jvm.kt"
 
 
 # annotations
@@ -30,7 +30,7 @@
     k = 0x1
     mv = {
         0x1,
-        0x8,
+        0x7,
         0x0
     }
     xi = 0x30

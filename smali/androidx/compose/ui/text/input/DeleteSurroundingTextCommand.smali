@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/SourceDebugExtension;
-    value = "SMAP\nEditCommand.kt\nKotlin\n*S Kotlin\n*F\n+ 1 EditCommand.kt\nandroidx/compose/ui/text/input/DeleteSurroundingTextCommand\n+ 2 MathUtils.kt\nandroidx/compose/ui/text/input/MathUtilsKt\n*L\n1#1,563:1\n23#2,3:564\n*S KotlinDebug\n*F\n+ 1 EditCommand.kt\nandroidx/compose/ui/text/input/DeleteSurroundingTextCommand\n*L\n268#1:564,3\n*E\n"
+    value = "SMAP\nEditCommand.kt\nKotlin\n*S Kotlin\n*F\n+ 1 EditCommand.kt\nandroidx/compose/ui/text/input/DeleteSurroundingTextCommand\n+ 2 MathUtils.kt\nandroidx/compose/ui/text/input/MathUtilsKt\n*L\n1#1,564:1\n23#2,3:565\n32#2,4:568\n*S KotlinDebug\n*F\n+ 1 EditCommand.kt\nandroidx/compose/ui/text/input/DeleteSurroundingTextCommand\n*L\n268#1:565,3\n273#1:568,4\n*E\n"
 .end annotation
 
 .annotation runtime Lkotlin/Metadata;
@@ -136,10 +136,6 @@
 .method public applyTo(Landroidx/compose/ui/text/input/EditingBuffer;)V
     .locals 3
 
-    const-string v0, "buffer"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
     .line 268
     invoke-virtual {p1}, Landroidx/compose/ui/text/input/EditingBuffer;->getSelectionEnd$ui_text_release()I
 
@@ -184,18 +180,23 @@
 
     iget p0, p0, Landroidx/compose/ui/text/input/DeleteSurroundingTextCommand;->lengthBeforeCursor:I
 
-    sget-object v1, Landroidx/compose/ui/text/input/DeleteSurroundingTextCommand$applyTo$start$1;->INSTANCE:Landroidx/compose/ui/text/input/DeleteSurroundingTextCommand$applyTo$start$1;
+    sub-int v1, v0, p0
 
-    check-cast v1, Lkotlin/jvm/functions/Function0;
+    xor-int/2addr p0, v0
 
-    invoke-static {v0, p0, v1}, Landroidx/compose/ui/text/input/MathUtilsKt;->subtractExactOrElse(IILkotlin/jvm/functions/Function0;)I
+    xor-int/2addr v0, v1
 
-    move-result p0
+    and-int/2addr p0, v0
 
     const/4 v0, 0x0
 
+    if-gez p0, :cond_1
+
+    move v1, v0
+
     .line 274
-    invoke-static {v0, p0}, Ljava/lang/Math;->max(II)I
+    :cond_1
+    invoke-static {v0, v1}, Ljava/lang/Math;->max(II)I
 
     move-result p0
 

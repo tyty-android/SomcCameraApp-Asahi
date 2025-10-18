@@ -86,7 +86,7 @@
 .end method
 
 .method public createIntent(Landroid/content/Context;Ljava/lang/String;)Landroid/content/Intent;
-    .locals 0
+    .locals 1
 
     const-string p0, "context"
 
@@ -99,9 +99,13 @@
     .line 220
     sget-object p0, Landroidx/activity/result/contract/ActivityResultContracts$RequestMultiplePermissions;->Companion:Landroidx/activity/result/contract/ActivityResultContracts$RequestMultiplePermissions$Companion;
 
-    filled-new-array {p2}, [Ljava/lang/String;
+    const/4 p1, 0x1
 
-    move-result-object p1
+    new-array p1, p1, [Ljava/lang/String;
+
+    const/4 v0, 0x0
+
+    aput-object p2, p1, v0
 
     invoke-virtual {p0, p1}, Landroidx/activity/result/contract/ActivityResultContracts$RequestMultiplePermissions$Companion;->createIntent$activity_release([Ljava/lang/String;)Landroid/content/Intent;
 

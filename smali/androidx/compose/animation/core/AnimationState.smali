@@ -133,10 +133,6 @@
         }
     .end annotation
 
-    const-string/jumbo v0, "typeConverter"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
     .line 42
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -401,16 +397,12 @@
 .end method
 
 .method public final setVelocityVector$animation_core_release(Landroidx/compose/animation/core/AnimationVector;)V
-    .locals 1
+    .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TV;)V"
         }
     .end annotation
-
-    const-string v0, "<set-?>"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 61
     iput-object p1, p0, Landroidx/compose/animation/core/AnimationState;->velocityVector:Landroidx/compose/animation/core/AnimationVector;

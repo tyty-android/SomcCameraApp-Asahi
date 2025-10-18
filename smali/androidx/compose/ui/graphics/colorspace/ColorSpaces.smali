@@ -6,7 +6,7 @@
 # annotations
 .annotation runtime Lkotlin/Metadata;
     d1 = {
-        "\u0000<\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u000b\n\u0002\u0018\u0002\n\u0002\u0008\u0005\n\u0002\u0010\u0011\n\u0002\u0008\u000e\n\u0002\u0018\u0002\n\u0002\u0008\u0003\n\u0002\u0010\u0014\n\u0002\u0008\u0013\n\u0002\u0010\u0008\n\u0002\u0008\u0005\u0008\u00c6\u0002\u0018\u00002\u00020\u0001B\u0007\u0008\u0002\u00a2\u0006\u0002\u0010\u0002J\u0016\u0010;\u001a\u00020\u00102\u0006\u0010<\u001a\u00020=H\u0080\u0008\u00a2\u0006\u0002\u0008>J\u0018\u0010?\u001a\u0004\u0018\u00010\u00102\u0006\u0010@\u001a\u00020)2\u0006\u0010A\u001a\u00020%R\u0011\u0010\u0003\u001a\u00020\u0004\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\u0005\u0010\u0006R\u0011\u0010\u0007\u001a\u00020\u0004\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\u0008\u0010\u0006R\u0011\u0010\t\u001a\u00020\u0004\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\n\u0010\u0006R\u0011\u0010\u000b\u001a\u00020\u0004\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\u000c\u0010\u0006R\u0011\u0010\r\u001a\u00020\u0004\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\u000e\u0010\u0006R\u0011\u0010\u000f\u001a\u00020\u0010\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\u0011\u0010\u0012R\u0011\u0010\u0013\u001a\u00020\u0010\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\u0014\u0010\u0012R\u001c\u0010\u0015\u001a\u0008\u0012\u0004\u0012\u00020\u00100\u0016X\u0080\u0004\u00a2\u0006\n\n\u0002\u0010\u0019\u001a\u0004\u0008\u0017\u0010\u0018R\u0011\u0010\u001a\u001a\u00020\u0004\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\u001b\u0010\u0006R\u0011\u0010\u001c\u001a\u00020\u0004\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\u001d\u0010\u0006R\u0011\u0010\u001e\u001a\u00020\u0004\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\u001f\u0010\u0006R\u0011\u0010 \u001a\u00020\u0004\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008!\u0010\u0006R\u0011\u0010\"\u001a\u00020\u0004\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008#\u0010\u0006R\u000e\u0010$\u001a\u00020%X\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u0011\u0010&\u001a\u00020\u0004\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\'\u0010\u0006R\u0014\u0010(\u001a\u00020)X\u0080\u0004\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008*\u0010+R\u0011\u0010,\u001a\u00020\u0010\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008-\u0010\u0012R\u0011\u0010.\u001a\u00020\u0004\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008/\u0010\u0006R\u0011\u00100\u001a\u00020\u0004\u00a2\u0006\u0008\n\u0000\u001a\u0004\u00081\u0010\u0006R\u0011\u00102\u001a\u00020\u0004\u00a2\u0006\u0008\n\u0000\u001a\u0004\u00083\u0010\u0006R\u0014\u00104\u001a\u00020)X\u0080\u0004\u00a2\u0006\u0008\n\u0000\u001a\u0004\u00085\u0010+R\u0014\u00106\u001a\u00020%X\u0080\u0004\u00a2\u0006\u0008\n\u0000\u001a\u0004\u00087\u00108R\u0014\u00109\u001a\u00020\u0004X\u0080\u0004\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008:\u0010\u0006\u00a8\u0006B"
+        "\u0000<\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u000b\n\u0002\u0018\u0002\n\u0002\u0008\u0005\n\u0002\u0010\u0011\n\u0002\u0008\u000e\n\u0002\u0018\u0002\n\u0002\u0008\u0003\n\u0002\u0010\u0014\n\u0002\u0008\u0013\n\u0002\u0010\u0008\n\u0002\u0008\u0005\u0008\u00c6\u0002\u0018\u00002\u00020\u0001B\u0007\u0008\u0002\u00a2\u0006\u0002\u0010\u0002J\u0016\u0010;\u001a\u00020\u00102\u0006\u0010<\u001a\u00020=H\u0080\u0008\u00a2\u0006\u0002\u0008>J\u001a\u0010?\u001a\u0004\u0018\u00010\u00102\u0008\u0008\u0001\u0010@\u001a\u00020)2\u0006\u0010A\u001a\u00020%R\u0011\u0010\u0003\u001a\u00020\u0004\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\u0005\u0010\u0006R\u0011\u0010\u0007\u001a\u00020\u0004\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\u0008\u0010\u0006R\u0011\u0010\t\u001a\u00020\u0004\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\n\u0010\u0006R\u0011\u0010\u000b\u001a\u00020\u0004\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\u000c\u0010\u0006R\u0011\u0010\r\u001a\u00020\u0004\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\u000e\u0010\u0006R\u0011\u0010\u000f\u001a\u00020\u0010\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\u0011\u0010\u0012R\u0011\u0010\u0013\u001a\u00020\u0010\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\u0014\u0010\u0012R\u001c\u0010\u0015\u001a\u0008\u0012\u0004\u0012\u00020\u00100\u0016X\u0080\u0004\u00a2\u0006\n\n\u0002\u0010\u0019\u001a\u0004\u0008\u0017\u0010\u0018R\u0011\u0010\u001a\u001a\u00020\u0004\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\u001b\u0010\u0006R\u0011\u0010\u001c\u001a\u00020\u0004\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\u001d\u0010\u0006R\u0011\u0010\u001e\u001a\u00020\u0004\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\u001f\u0010\u0006R\u0011\u0010 \u001a\u00020\u0004\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008!\u0010\u0006R\u0011\u0010\"\u001a\u00020\u0004\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008#\u0010\u0006R\u000e\u0010$\u001a\u00020%X\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u0011\u0010&\u001a\u00020\u0004\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\'\u0010\u0006R\u0014\u0010(\u001a\u00020)X\u0080\u0004\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008*\u0010+R\u0011\u0010,\u001a\u00020\u0010\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008-\u0010\u0012R\u0011\u0010.\u001a\u00020\u0004\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008/\u0010\u0006R\u0011\u00100\u001a\u00020\u0004\u00a2\u0006\u0008\n\u0000\u001a\u0004\u00081\u0010\u0006R\u0011\u00102\u001a\u00020\u0004\u00a2\u0006\u0008\n\u0000\u001a\u0004\u00083\u0010\u0006R\u0014\u00104\u001a\u00020)X\u0080\u0004\u00a2\u0006\u0008\n\u0000\u001a\u0004\u00085\u0010+R\u0014\u00106\u001a\u00020%X\u0080\u0004\u00a2\u0006\u0008\n\u0000\u001a\u0004\u00087\u00108R\u0014\u00109\u001a\u00020\u0004X\u0080\u0004\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008:\u0010\u0006\u00a8\u0006B"
     }
     d2 = {
         "Landroidx/compose/ui/graphics/colorspace/ColorSpaces;",
@@ -169,21 +169,21 @@
 
     const/4 v0, 0x6
 
-    .line 22
+    .line 24
     new-array v12, v0, [F
 
     fill-array-data v12, :array_0
 
     sput-object v12, Landroidx/compose/ui/graphics/colorspace/ColorSpaces;->SrgbPrimaries:[F
 
-    .line 23
+    .line 25
     new-array v13, v0, [F
 
     fill-array-data v13, :array_1
 
     sput-object v13, Landroidx/compose/ui/graphics/colorspace/ColorSpaces;->Ntsc1953Primaries:[F
 
-    .line 25
+    .line 27
     new-instance v31, Landroidx/compose/ui/graphics/colorspace/TransferParameters;
 
     move-object/from16 v14, v31
@@ -210,7 +210,7 @@
 
     sput-object v31, Landroidx/compose/ui/graphics/colorspace/ColorSpaces;->SrgbTransferParameters:Landroidx/compose/ui/graphics/colorspace/TransferParameters;
 
-    .line 27
+    .line 29
     new-instance v14, Landroidx/compose/ui/graphics/colorspace/TransferParameters;
 
     move-object/from16 v32, v14
@@ -237,10 +237,10 @@
 
     sput-object v14, Landroidx/compose/ui/graphics/colorspace/ColorSpaces;->NoneTransferParameters:Landroidx/compose/ui/graphics/colorspace/TransferParameters;
 
-    .line 33
+    .line 35
     new-instance v15, Landroidx/compose/ui/graphics/colorspace/Rgb;
 
-    .line 36
+    .line 38
     sget-object v1, Landroidx/compose/ui/graphics/colorspace/Illuminant;->INSTANCE:Landroidx/compose/ui/graphics/colorspace/Illuminant;
 
     invoke-virtual {v1}, Landroidx/compose/ui/graphics/colorspace/Illuminant;->getD65()Landroidx/compose/ui/graphics/colorspace/WhitePoint;
@@ -249,7 +249,7 @@
 
     const/4 v6, 0x0
 
-    .line 33
+    .line 35
     const-string v2, "sRGB IEC61966-2.1"
 
     move-object v1, v15
@@ -262,10 +262,10 @@
 
     sput-object v15, Landroidx/compose/ui/graphics/colorspace/ColorSpaces;->Srgb:Landroidx/compose/ui/graphics/colorspace/Rgb;
 
-    .line 45
+    .line 47
     new-instance v16, Landroidx/compose/ui/graphics/colorspace/Rgb;
 
-    .line 48
+    .line 50
     sget-object v1, Landroidx/compose/ui/graphics/colorspace/Illuminant;->INSTANCE:Landroidx/compose/ui/graphics/colorspace/Illuminant;
 
     invoke-virtual {v1}, Landroidx/compose/ui/graphics/colorspace/Illuminant;->getD65()Landroidx/compose/ui/graphics/colorspace/WhitePoint;
@@ -276,7 +276,7 @@
 
     const/4 v9, 0x1
 
-    .line 45
+    .line 47
     const-string v2, "sRGB IEC61966-2.1 (Linear)"
 
     const-wide/high16 v5, 0x3ff0000000000000L    # 1.0
@@ -289,10 +289,10 @@
 
     sput-object v16, Landroidx/compose/ui/graphics/colorspace/ColorSpaces;->LinearSrgb:Landroidx/compose/ui/graphics/colorspace/Rgb;
 
-    .line 58
+    .line 60
     new-instance v17, Landroidx/compose/ui/graphics/colorspace/Rgb;
 
-    .line 61
+    .line 63
     sget-object v1, Landroidx/compose/ui/graphics/colorspace/Illuminant;->INSTANCE:Landroidx/compose/ui/graphics/colorspace/Illuminant;
 
     invoke-virtual {v1}, Landroidx/compose/ui/graphics/colorspace/Illuminant;->getD65()Landroidx/compose/ui/graphics/colorspace/WhitePoint;
@@ -311,7 +311,7 @@
 
     const/4 v11, 0x2
 
-    .line 58
+    .line 60
     const-string v2, "scRGB-nl IEC 61966-2-2:2003"
 
     const/4 v5, 0x0
@@ -326,10 +326,10 @@
 
     sput-object v17, Landroidx/compose/ui/graphics/colorspace/ColorSpaces;->ExtendedSrgb:Landroidx/compose/ui/graphics/colorspace/Rgb;
 
-    .line 90
+    .line 92
     new-instance v10, Landroidx/compose/ui/graphics/colorspace/Rgb;
 
-    .line 93
+    .line 95
     sget-object v1, Landroidx/compose/ui/graphics/colorspace/Illuminant;->INSTANCE:Landroidx/compose/ui/graphics/colorspace/Illuminant;
 
     invoke-virtual {v1}, Landroidx/compose/ui/graphics/colorspace/Illuminant;->getD65()Landroidx/compose/ui/graphics/colorspace/WhitePoint;
@@ -340,7 +340,7 @@
 
     const/4 v9, 0x3
 
-    .line 90
+    .line 92
     const-string v2, "scRGB IEC 61966-2-2:2003"
 
     const-wide/high16 v5, 0x3ff0000000000000L    # 1.0
@@ -353,22 +353,22 @@
 
     sput-object v10, Landroidx/compose/ui/graphics/colorspace/ColorSpaces;->LinearExtendedSrgb:Landroidx/compose/ui/graphics/colorspace/Rgb;
 
-    .line 103
+    .line 105
     new-instance v7, Landroidx/compose/ui/graphics/colorspace/Rgb;
 
-    .line 105
+    .line 107
     new-array v1, v0, [F
 
     fill-array-data v1, :array_2
 
-    .line 106
+    .line 108
     sget-object v2, Landroidx/compose/ui/graphics/colorspace/Illuminant;->INSTANCE:Landroidx/compose/ui/graphics/colorspace/Illuminant;
 
     invoke-virtual {v2}, Landroidx/compose/ui/graphics/colorspace/Illuminant;->getD65()Landroidx/compose/ui/graphics/colorspace/WhitePoint;
 
     move-result-object v21
 
-    .line 107
+    .line 109
     new-instance v22, Landroidx/compose/ui/graphics/colorspace/TransferParameters;
 
     move-object/from16 v32, v22
@@ -387,7 +387,7 @@
 
     const/16 v23, 0x4
 
-    .line 103
+    .line 105
     const-string v19, "Rec. ITU-R BT.709-5"
 
     move-object/from16 v18, v7
@@ -398,22 +398,22 @@
 
     sput-object v7, Landroidx/compose/ui/graphics/colorspace/ColorSpaces;->Bt709:Landroidx/compose/ui/graphics/colorspace/Rgb;
 
-    .line 115
+    .line 117
     new-instance v8, Landroidx/compose/ui/graphics/colorspace/Rgb;
 
-    .line 117
+    .line 119
     new-array v1, v0, [F
 
     fill-array-data v1, :array_3
 
-    .line 118
+    .line 120
     sget-object v2, Landroidx/compose/ui/graphics/colorspace/Illuminant;->INSTANCE:Landroidx/compose/ui/graphics/colorspace/Illuminant;
 
     invoke-virtual {v2}, Landroidx/compose/ui/graphics/colorspace/Illuminant;->getD65()Landroidx/compose/ui/graphics/colorspace/WhitePoint;
 
     move-result-object v27
 
-    .line 119
+    .line 121
     new-instance v28, Landroidx/compose/ui/graphics/colorspace/TransferParameters;
 
     move-object/from16 v32, v28
@@ -428,7 +428,7 @@
 
     const/16 v29, 0x5
 
-    .line 115
+    .line 117
     const-string v25, "Rec. ITU-R BT.2020-1"
 
     move-object/from16 v24, v8
@@ -439,15 +439,15 @@
 
     sput-object v8, Landroidx/compose/ui/graphics/colorspace/ColorSpaces;->Bt2020:Landroidx/compose/ui/graphics/colorspace/Rgb;
 
-    .line 127
+    .line 129
     new-instance v9, Landroidx/compose/ui/graphics/colorspace/Rgb;
 
-    .line 129
+    .line 131
     new-array v1, v0, [F
 
     fill-array-data v1, :array_4
 
-    .line 130
+    .line 132
     new-instance v2, Landroidx/compose/ui/graphics/colorspace/WhitePoint;
 
     const v3, 0x3ea0c49c    # 0.314f
@@ -460,7 +460,7 @@
 
     const/16 v40, 0x6
 
-    .line 127
+    .line 129
     const-string v33, "SMPTE RP 431-2-2007 DCI (P3)"
 
     const-wide v36, 0x4004cccccccccccdL    # 2.6
@@ -477,15 +477,15 @@
 
     sput-object v9, Landroidx/compose/ui/graphics/colorspace/ColorSpaces;->DciP3:Landroidx/compose/ui/graphics/colorspace/Rgb;
 
-    .line 140
+    .line 142
     new-instance v11, Landroidx/compose/ui/graphics/colorspace/Rgb;
 
-    .line 142
+    .line 144
     new-array v3, v0, [F
 
     fill-array-data v3, :array_5
 
-    .line 143
+    .line 145
     sget-object v1, Landroidx/compose/ui/graphics/colorspace/Illuminant;->INSTANCE:Landroidx/compose/ui/graphics/colorspace/Illuminant;
 
     invoke-virtual {v1}, Landroidx/compose/ui/graphics/colorspace/Illuminant;->getD65()Landroidx/compose/ui/graphics/colorspace/WhitePoint;
@@ -494,7 +494,7 @@
 
     const/4 v6, 0x7
 
-    .line 140
+    .line 142
     const-string v2, "Display P3"
 
     move-object v1, v11
@@ -505,17 +505,17 @@
 
     sput-object v11, Landroidx/compose/ui/graphics/colorspace/ColorSpaces;->DisplayP3:Landroidx/compose/ui/graphics/colorspace/Rgb;
 
-    .line 152
+    .line 154
     new-instance v18, Landroidx/compose/ui/graphics/colorspace/Rgb;
 
-    .line 155
+    .line 157
     sget-object v1, Landroidx/compose/ui/graphics/colorspace/Illuminant;->INSTANCE:Landroidx/compose/ui/graphics/colorspace/Illuminant;
 
     invoke-virtual {v1}, Landroidx/compose/ui/graphics/colorspace/Illuminant;->getC()Landroidx/compose/ui/graphics/colorspace/WhitePoint;
 
     move-result-object v4
 
-    .line 156
+    .line 158
     new-instance v5, Landroidx/compose/ui/graphics/colorspace/TransferParameters;
 
     move-object/from16 v19, v5
@@ -542,7 +542,7 @@
 
     const/16 v6, 0x8
 
-    .line 152
+    .line 154
     const-string v2, "NTSC (1953)"
 
     move-object/from16 v1, v18
@@ -553,22 +553,22 @@
 
     sput-object v18, Landroidx/compose/ui/graphics/colorspace/ColorSpaces;->Ntsc1953:Landroidx/compose/ui/graphics/colorspace/Rgb;
 
-    .line 164
+    .line 166
     new-instance v13, Landroidx/compose/ui/graphics/colorspace/Rgb;
 
-    .line 166
+    .line 168
     new-array v1, v0, [F
 
     fill-array-data v1, :array_6
 
-    .line 167
+    .line 169
     sget-object v2, Landroidx/compose/ui/graphics/colorspace/Illuminant;->INSTANCE:Landroidx/compose/ui/graphics/colorspace/Illuminant;
 
     invoke-virtual {v2}, Landroidx/compose/ui/graphics/colorspace/Illuminant;->getD65()Landroidx/compose/ui/graphics/colorspace/WhitePoint;
 
     move-result-object v22
 
-    .line 168
+    .line 170
     new-instance v2, Landroidx/compose/ui/graphics/colorspace/TransferParameters;
 
     move-object/from16 v23, v2
@@ -595,7 +595,7 @@
 
     const/16 v24, 0x9
 
-    .line 164
+    .line 166
     const-string v20, "SMPTE-C RGB"
 
     move-object/from16 v19, v13
@@ -606,15 +606,15 @@
 
     sput-object v13, Landroidx/compose/ui/graphics/colorspace/ColorSpaces;->SmpteC:Landroidx/compose/ui/graphics/colorspace/Rgb;
 
-    .line 176
+    .line 178
     new-instance v19, Landroidx/compose/ui/graphics/colorspace/Rgb;
 
-    .line 178
+    .line 180
     new-array v1, v0, [F
 
     fill-array-data v1, :array_7
 
-    .line 179
+    .line 181
     sget-object v2, Landroidx/compose/ui/graphics/colorspace/Illuminant;->INSTANCE:Landroidx/compose/ui/graphics/colorspace/Illuminant;
 
     invoke-virtual {v2}, Landroidx/compose/ui/graphics/colorspace/Illuminant;->getD65()Landroidx/compose/ui/graphics/colorspace/WhitePoint;
@@ -625,7 +625,7 @@
 
     const/16 v33, 0xa
 
-    .line 176
+    .line 178
     const-string v26, "Adobe RGB (1998)"
 
     const-wide v29, 0x400199999999999aL    # 2.2
@@ -640,22 +640,22 @@
 
     sput-object v19, Landroidx/compose/ui/graphics/colorspace/ColorSpaces;->AdobeRgb:Landroidx/compose/ui/graphics/colorspace/Rgb;
 
-    .line 189
+    .line 191
     new-instance v26, Landroidx/compose/ui/graphics/colorspace/Rgb;
 
-    .line 191
+    .line 193
     new-array v1, v0, [F
 
     fill-array-data v1, :array_8
 
-    .line 192
+    .line 194
     sget-object v2, Landroidx/compose/ui/graphics/colorspace/Illuminant;->INSTANCE:Landroidx/compose/ui/graphics/colorspace/Illuminant;
 
     invoke-virtual {v2}, Landroidx/compose/ui/graphics/colorspace/Illuminant;->getD50()Landroidx/compose/ui/graphics/colorspace/WhitePoint;
 
     move-result-object v23
 
-    .line 193
+    .line 195
     new-instance v24, Landroidx/compose/ui/graphics/colorspace/TransferParameters;
 
     move-object/from16 v27, v24
@@ -682,7 +682,7 @@
 
     const/16 v25, 0xb
 
-    .line 189
+    .line 191
     const-string v21, "ROMM RGB ISO 22028-2:2013"
 
     move-object/from16 v20, v26
@@ -693,15 +693,15 @@
 
     sput-object v26, Landroidx/compose/ui/graphics/colorspace/ColorSpaces;->ProPhotoRgb:Landroidx/compose/ui/graphics/colorspace/Rgb;
 
-    .line 201
+    .line 203
     new-instance v20, Landroidx/compose/ui/graphics/colorspace/Rgb;
 
-    .line 203
+    .line 205
     new-array v1, v0, [F
 
     fill-array-data v1, :array_9
 
-    .line 204
+    .line 206
     sget-object v2, Landroidx/compose/ui/graphics/colorspace/Illuminant;->INSTANCE:Landroidx/compose/ui/graphics/colorspace/Illuminant;
 
     invoke-virtual {v2}, Landroidx/compose/ui/graphics/colorspace/Illuminant;->getD60()Landroidx/compose/ui/graphics/colorspace/WhitePoint;
@@ -712,7 +712,7 @@
 
     const/16 v35, 0xc
 
-    .line 201
+    .line 203
     const-string v28, "SMPTE ST 2065-1:2012 ACES"
 
     const-wide/high16 v31, 0x3ff0000000000000L    # 1.0
@@ -727,15 +727,15 @@
 
     sput-object v20, Landroidx/compose/ui/graphics/colorspace/ColorSpaces;->Aces:Landroidx/compose/ui/graphics/colorspace/Rgb;
 
-    .line 214
+    .line 216
     new-instance v21, Landroidx/compose/ui/graphics/colorspace/Rgb;
 
-    .line 216
+    .line 218
     new-array v1, v0, [F
 
     fill-array-data v1, :array_a
 
-    .line 217
+    .line 219
     sget-object v2, Landroidx/compose/ui/graphics/colorspace/Illuminant;->INSTANCE:Landroidx/compose/ui/graphics/colorspace/Illuminant;
 
     invoke-virtual {v2}, Landroidx/compose/ui/graphics/colorspace/Illuminant;->getD60()Landroidx/compose/ui/graphics/colorspace/WhitePoint;
@@ -746,7 +746,7 @@
 
     const/16 v44, 0xd
 
-    .line 214
+    .line 216
     const-string v37, "Academy S-2014-004 ACEScg"
 
     const-wide/high16 v40, 0x3ff0000000000000L    # 1.0
@@ -761,7 +761,7 @@
 
     sput-object v21, Landroidx/compose/ui/graphics/colorspace/ColorSpaces;->Acescg:Landroidx/compose/ui/graphics/colorspace/Rgb;
 
-    .line 235
+    .line 237
     new-instance v1, Landroidx/compose/ui/graphics/colorspace/Xyz;
 
     const-string v2, "Generic XYZ"
@@ -776,7 +776,7 @@
 
     sput-object v22, Landroidx/compose/ui/graphics/colorspace/ColorSpaces;->CieXyz:Landroidx/compose/ui/graphics/colorspace/ColorSpace;
 
-    .line 252
+    .line 254
     new-instance v1, Landroidx/compose/ui/graphics/colorspace/Lab;
 
     const-string v2, "Generic L*a*b*"
@@ -791,10 +791,10 @@
 
     sput-object v23, Landroidx/compose/ui/graphics/colorspace/ColorSpaces;->CieLab:Landroidx/compose/ui/graphics/colorspace/ColorSpace;
 
-    .line 260
+    .line 262
     new-instance v24, Landroidx/compose/ui/graphics/colorspace/Rgb;
 
-    .line 263
+    .line 265
     sget-object v1, Landroidx/compose/ui/graphics/colorspace/Illuminant;->INSTANCE:Landroidx/compose/ui/graphics/colorspace/Illuminant;
 
     invoke-virtual {v1}, Landroidx/compose/ui/graphics/colorspace/Illuminant;->getD65()Landroidx/compose/ui/graphics/colorspace/WhitePoint;
@@ -803,7 +803,7 @@
 
     const/16 v25, 0x10
 
-    .line 260
+    .line 262
     const-string v2, "None"
 
     move-object/from16 v1, v24
@@ -822,7 +822,7 @@
 
     sput-object v24, Landroidx/compose/ui/graphics/colorspace/ColorSpaces;->Unspecified:Landroidx/compose/ui/graphics/colorspace/Rgb;
 
-    .line 280
+    .line 282
     new-instance v1, Landroidx/compose/ui/graphics/colorspace/Oklab;
 
     const-string v2, "Oklab"
@@ -837,7 +837,7 @@
 
     const/16 v2, 0x12
 
-    .line 326
+    .line 328
     new-array v2, v2, [Landroidx/compose/ui/graphics/colorspace/ColorSpace;
 
     const/4 v4, 0x0
@@ -846,82 +846,82 @@
 
     const/4 v4, 0x1
 
-    .line 327
+    .line 329
     aput-object v16, v2, v4
 
     const/4 v4, 0x2
 
-    .line 328
+    .line 330
     aput-object v17, v2, v4
 
     const/4 v4, 0x3
 
-    .line 329
+    .line 331
     aput-object v10, v2, v4
 
     const/4 v4, 0x4
 
-    .line 330
+    .line 332
     aput-object v7, v2, v4
 
     const/4 v4, 0x5
 
-    .line 331
+    .line 333
     aput-object v8, v2, v4
 
-    .line 332
+    .line 334
     aput-object v9, v2, v0
 
     const/4 v0, 0x7
 
-    .line 333
+    .line 335
     aput-object v11, v2, v0
 
     const/16 v0, 0x8
 
-    .line 334
+    .line 336
     aput-object v18, v2, v0
 
     const/16 v0, 0x9
 
-    .line 335
+    .line 337
     aput-object v13, v2, v0
 
     const/16 v0, 0xa
 
-    .line 336
+    .line 338
     aput-object v19, v2, v0
 
     const/16 v0, 0xb
 
-    .line 337
+    .line 339
     aput-object v26, v2, v0
 
     const/16 v0, 0xc
 
-    .line 338
+    .line 340
     aput-object v20, v2, v0
 
     const/16 v0, 0xd
 
-    .line 339
+    .line 341
     aput-object v21, v2, v0
 
-    .line 340
+    .line 342
     aput-object v22, v2, v14
 
-    .line 341
+    .line 343
     aput-object v23, v2, v12
 
     const/16 v0, 0x10
 
-    .line 342
+    .line 344
     aput-object v24, v2, v0
 
-    .line 343
+    .line 345
     aput-object v1, v2, v3
 
-    .line 325
+    .line 327
     sput-object v2, Landroidx/compose/ui/graphics/colorspace/ColorSpaces;->ColorSpacesArray:[Landroidx/compose/ui/graphics/colorspace/ColorSpace;
 
     return-void
@@ -1040,7 +1040,7 @@
 .method private constructor <init>()V
     .locals 0
 
-    .line 21
+    .line 23
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -1061,7 +1061,7 @@
 
     move-wide v0, p0
 
-    .line 63
+    .line 65
     invoke-static/range {v0 .. v11}, Landroidx/compose/ui/graphics/colorspace/ColorSpaceKt;->absRcpResponse(DDDDDD)D
 
     move-result-wide p0
@@ -1084,7 +1084,7 @@
 
     move-wide v0, p0
 
-    .line 73
+    .line 75
     invoke-static/range {v0 .. v11}, Landroidx/compose/ui/graphics/colorspace/ColorSpaceKt;->absResponse(DDDDDD)D
 
     move-result-wide p0
@@ -1097,7 +1097,7 @@
 .method public final getAces()Landroidx/compose/ui/graphics/colorspace/Rgb;
     .locals 0
 
-    .line 201
+    .line 203
     sget-object p0, Landroidx/compose/ui/graphics/colorspace/ColorSpaces;->Aces:Landroidx/compose/ui/graphics/colorspace/Rgb;
 
     return-object p0
@@ -1106,7 +1106,7 @@
 .method public final getAcescg()Landroidx/compose/ui/graphics/colorspace/Rgb;
     .locals 0
 
-    .line 214
+    .line 216
     sget-object p0, Landroidx/compose/ui/graphics/colorspace/ColorSpaces;->Acescg:Landroidx/compose/ui/graphics/colorspace/Rgb;
 
     return-object p0
@@ -1115,7 +1115,7 @@
 .method public final getAdobeRgb()Landroidx/compose/ui/graphics/colorspace/Rgb;
     .locals 0
 
-    .line 176
+    .line 178
     sget-object p0, Landroidx/compose/ui/graphics/colorspace/ColorSpaces;->AdobeRgb:Landroidx/compose/ui/graphics/colorspace/Rgb;
 
     return-object p0
@@ -1124,7 +1124,7 @@
 .method public final getBt2020()Landroidx/compose/ui/graphics/colorspace/Rgb;
     .locals 0
 
-    .line 115
+    .line 117
     sget-object p0, Landroidx/compose/ui/graphics/colorspace/ColorSpaces;->Bt2020:Landroidx/compose/ui/graphics/colorspace/Rgb;
 
     return-object p0
@@ -1133,7 +1133,7 @@
 .method public final getBt709()Landroidx/compose/ui/graphics/colorspace/Rgb;
     .locals 0
 
-    .line 103
+    .line 105
     sget-object p0, Landroidx/compose/ui/graphics/colorspace/ColorSpaces;->Bt709:Landroidx/compose/ui/graphics/colorspace/Rgb;
 
     return-object p0
@@ -1142,7 +1142,7 @@
 .method public final getCieLab()Landroidx/compose/ui/graphics/colorspace/ColorSpace;
     .locals 0
 
-    .line 252
+    .line 254
     sget-object p0, Landroidx/compose/ui/graphics/colorspace/ColorSpaces;->CieLab:Landroidx/compose/ui/graphics/colorspace/ColorSpace;
 
     return-object p0
@@ -1151,7 +1151,7 @@
 .method public final getCieXyz()Landroidx/compose/ui/graphics/colorspace/ColorSpace;
     .locals 0
 
-    .line 235
+    .line 237
     sget-object p0, Landroidx/compose/ui/graphics/colorspace/ColorSpaces;->CieXyz:Landroidx/compose/ui/graphics/colorspace/ColorSpace;
 
     return-object p0
@@ -1160,7 +1160,7 @@
 .method public final getColorSpace$ui_graphics_release(I)Landroidx/compose/ui/graphics/colorspace/ColorSpace;
     .locals 0
 
-    .line 320
+    .line 322
     invoke-virtual {p0}, Landroidx/compose/ui/graphics/colorspace/ColorSpaces;->getColorSpacesArray$ui_graphics_release()[Landroidx/compose/ui/graphics/colorspace/ColorSpace;
 
     move-result-object p0
@@ -1173,7 +1173,7 @@
 .method public final getColorSpacesArray$ui_graphics_release()[Landroidx/compose/ui/graphics/colorspace/ColorSpace;
     .locals 0
 
-    .line 325
+    .line 327
     sget-object p0, Landroidx/compose/ui/graphics/colorspace/ColorSpaces;->ColorSpacesArray:[Landroidx/compose/ui/graphics/colorspace/ColorSpace;
 
     return-object p0
@@ -1182,7 +1182,7 @@
 .method public final getDciP3()Landroidx/compose/ui/graphics/colorspace/Rgb;
     .locals 0
 
-    .line 127
+    .line 129
     sget-object p0, Landroidx/compose/ui/graphics/colorspace/ColorSpaces;->DciP3:Landroidx/compose/ui/graphics/colorspace/Rgb;
 
     return-object p0
@@ -1191,7 +1191,7 @@
 .method public final getDisplayP3()Landroidx/compose/ui/graphics/colorspace/Rgb;
     .locals 0
 
-    .line 140
+    .line 142
     sget-object p0, Landroidx/compose/ui/graphics/colorspace/ColorSpaces;->DisplayP3:Landroidx/compose/ui/graphics/colorspace/Rgb;
 
     return-object p0
@@ -1200,7 +1200,7 @@
 .method public final getExtendedSrgb()Landroidx/compose/ui/graphics/colorspace/Rgb;
     .locals 0
 
-    .line 58
+    .line 60
     sget-object p0, Landroidx/compose/ui/graphics/colorspace/ColorSpaces;->ExtendedSrgb:Landroidx/compose/ui/graphics/colorspace/Rgb;
 
     return-object p0
@@ -1209,7 +1209,7 @@
 .method public final getLinearExtendedSrgb()Landroidx/compose/ui/graphics/colorspace/Rgb;
     .locals 0
 
-    .line 90
+    .line 92
     sget-object p0, Landroidx/compose/ui/graphics/colorspace/ColorSpaces;->LinearExtendedSrgb:Landroidx/compose/ui/graphics/colorspace/Rgb;
 
     return-object p0
@@ -1218,7 +1218,7 @@
 .method public final getLinearSrgb()Landroidx/compose/ui/graphics/colorspace/Rgb;
     .locals 0
 
-    .line 45
+    .line 47
     sget-object p0, Landroidx/compose/ui/graphics/colorspace/ColorSpaces;->LinearSrgb:Landroidx/compose/ui/graphics/colorspace/Rgb;
 
     return-object p0
@@ -1227,7 +1227,7 @@
 .method public final getNtsc1953()Landroidx/compose/ui/graphics/colorspace/Rgb;
     .locals 0
 
-    .line 152
+    .line 154
     sget-object p0, Landroidx/compose/ui/graphics/colorspace/ColorSpaces;->Ntsc1953:Landroidx/compose/ui/graphics/colorspace/Rgb;
 
     return-object p0
@@ -1236,7 +1236,7 @@
 .method public final getNtsc1953Primaries$ui_graphics_release()[F
     .locals 0
 
-    .line 23
+    .line 25
     sget-object p0, Landroidx/compose/ui/graphics/colorspace/ColorSpaces;->Ntsc1953Primaries:[F
 
     return-object p0
@@ -1245,7 +1245,7 @@
 .method public final getOklab()Landroidx/compose/ui/graphics/colorspace/ColorSpace;
     .locals 0
 
-    .line 280
+    .line 282
     sget-object p0, Landroidx/compose/ui/graphics/colorspace/ColorSpaces;->Oklab:Landroidx/compose/ui/graphics/colorspace/ColorSpace;
 
     return-object p0
@@ -1254,7 +1254,7 @@
 .method public final getProPhotoRgb()Landroidx/compose/ui/graphics/colorspace/Rgb;
     .locals 0
 
-    .line 189
+    .line 191
     sget-object p0, Landroidx/compose/ui/graphics/colorspace/ColorSpaces;->ProPhotoRgb:Landroidx/compose/ui/graphics/colorspace/Rgb;
 
     return-object p0
@@ -1263,7 +1263,7 @@
 .method public final getSmpteC()Landroidx/compose/ui/graphics/colorspace/Rgb;
     .locals 0
 
-    .line 164
+    .line 166
     sget-object p0, Landroidx/compose/ui/graphics/colorspace/ColorSpaces;->SmpteC:Landroidx/compose/ui/graphics/colorspace/Rgb;
 
     return-object p0
@@ -1272,7 +1272,7 @@
 .method public final getSrgb()Landroidx/compose/ui/graphics/colorspace/Rgb;
     .locals 0
 
-    .line 33
+    .line 35
     sget-object p0, Landroidx/compose/ui/graphics/colorspace/ColorSpaces;->Srgb:Landroidx/compose/ui/graphics/colorspace/Rgb;
 
     return-object p0
@@ -1281,7 +1281,7 @@
 .method public final getSrgbPrimaries$ui_graphics_release()[F
     .locals 0
 
-    .line 22
+    .line 24
     sget-object p0, Landroidx/compose/ui/graphics/colorspace/ColorSpaces;->SrgbPrimaries:[F
 
     return-object p0
@@ -1290,7 +1290,7 @@
 .method public final getSrgbTransferParameters$ui_graphics_release()Landroidx/compose/ui/graphics/colorspace/TransferParameters;
     .locals 0
 
-    .line 24
+    .line 26
     sget-object p0, Landroidx/compose/ui/graphics/colorspace/ColorSpaces;->SrgbTransferParameters:Landroidx/compose/ui/graphics/colorspace/TransferParameters;
 
     return-object p0
@@ -1299,7 +1299,7 @@
 .method public final getUnspecified$ui_graphics_release()Landroidx/compose/ui/graphics/colorspace/Rgb;
     .locals 0
 
-    .line 260
+    .line 262
     sget-object p0, Landroidx/compose/ui/graphics/colorspace/ColorSpaces;->Unspecified:Landroidx/compose/ui/graphics/colorspace/Rgb;
 
     return-object p0
@@ -1308,15 +1308,7 @@
 .method public final match([FLandroidx/compose/ui/graphics/colorspace/TransferParameters;)Landroidx/compose/ui/graphics/colorspace/ColorSpace;
     .locals 8
 
-    const-string/jumbo p0, "toXYZD50"
-
-    invoke-static {p1, p0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string p0, "function"
-
-    invoke-static {p2, p0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 303
+    .line 305
     sget-object p0, Landroidx/compose/ui/graphics/colorspace/ColorSpaces;->ColorSpacesArray:[Landroidx/compose/ui/graphics/colorspace/ColorSpace;
 
     array-length v0, p0
@@ -1330,7 +1322,7 @@
 
     aget-object v3, p0, v1
 
-    .line 304
+    .line 306
     invoke-virtual {v3}, Landroidx/compose/ui/graphics/colorspace/ColorSpace;->getModel-xdoWZVw()J
 
     move-result-wide v4
@@ -1347,7 +1339,7 @@
 
     if-eqz v4, :cond_0
 
-    .line 305
+    .line 307
     sget-object v4, Landroidx/compose/ui/graphics/colorspace/Illuminant;->INSTANCE:Landroidx/compose/ui/graphics/colorspace/Illuminant;
 
     invoke-virtual {v4}, Landroidx/compose/ui/graphics/colorspace/Illuminant;->getD50()Landroidx/compose/ui/graphics/colorspace/WhitePoint;
@@ -1366,7 +1358,7 @@
 
     check-cast v2, Landroidx/compose/ui/graphics/colorspace/Rgb;
 
-    .line 307
+    .line 309
     invoke-virtual {v2}, Landroidx/compose/ui/graphics/colorspace/Rgb;->getTransform$ui_graphics_release()[F
 
     move-result-object v4
@@ -1377,7 +1369,7 @@
 
     if-eqz v4, :cond_0
 
-    .line 308
+    .line 310
     invoke-virtual {v2}, Landroidx/compose/ui/graphics/colorspace/Rgb;->getTransferParameters()Landroidx/compose/ui/graphics/colorspace/TransferParameters;
 
     move-result-object v2

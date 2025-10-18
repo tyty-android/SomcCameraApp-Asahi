@@ -82,14 +82,14 @@
 .method public final invoke()Ljava/lang/Object;
     .locals 1
 
-    .line 388
+    .line 395
     new-instance v0, Landroid/util/SparseArray;
 
     invoke-direct {v0}, Landroid/util/SparseArray;-><init>()V
 
     iget-object p0, p0, Landroidx/compose/ui/viewinterop/ViewFactoryHolder$registerSaveStateProvider$1;->this$0:Landroidx/compose/ui/viewinterop/ViewFactoryHolder;
 
-    .line 389
+    .line 396
     invoke-static {p0}, Landroidx/compose/ui/viewinterop/ViewFactoryHolder;->access$getTypedView$p(Landroidx/compose/ui/viewinterop/ViewFactoryHolder;)Landroid/view/View;
 
     move-result-object p0

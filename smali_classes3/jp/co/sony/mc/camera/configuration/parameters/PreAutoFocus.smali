@@ -55,7 +55,7 @@
 
     const/4 v1, 0x0
 
-    const v2, 0x7f1103bf
+    const v2, 0x7f1103f4
 
     const-string v3, "ON"
 
@@ -68,7 +68,7 @@
 
     const/4 v1, 0x1
 
-    const v2, 0x7f1103be
+    const v2, 0x7f1103f3
 
     const-string v3, "OFF"
 
@@ -113,7 +113,7 @@
 .end method
 
 .method public static getOptions(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;)[Ljp/co/sony/mc/camera/configuration/parameters/PreAutoFocus;
-    .locals 2
+    .locals 4
 
     .line 76
     new-instance v0, Ljava/util/ArrayList;
@@ -141,34 +141,36 @@
     :cond_0
     sget-boolean p0, Ljp/co/sony/mc/camera/util/CamLog;->DEBUG:Z
 
+    const/4 v1, 0x0
+
     if-eqz p0, :cond_1
 
+    const/4 p0, 0x1
+
     .line 82
-    new-instance p0, Ljava/lang/StringBuilder;
+    new-array p0, p0, [Ljava/lang/String;
 
-    const-string v1, "options: "
+    new-instance v2, Ljava/lang/StringBuilder;
 
-    invoke-direct {p0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+    const-string v3, "options: "
 
-    invoke-virtual {p0, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+    invoke-direct {v2, v3}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
-    move-result-object p0
+    invoke-virtual {v2, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {p0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    move-result-object v2
 
-    move-result-object p0
+    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    filled-new-array {p0}, [Ljava/lang/String;
+    move-result-object v2
 
-    move-result-object p0
+    aput-object v2, p0, v1
 
     invoke-static {p0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
-    :cond_1
-    const/4 p0, 0x0
-
     .line 84
-    new-array p0, p0, [Ljp/co/sony/mc/camera/configuration/parameters/PreAutoFocus;
+    :cond_1
+    new-array p0, v1, [Ljp/co/sony/mc/camera/configuration/parameters/PreAutoFocus;
 
     invoke-virtual {v0, p0}, Ljava/util/ArrayList;->toArray([Ljava/lang/Object;)[Ljava/lang/Object;
 

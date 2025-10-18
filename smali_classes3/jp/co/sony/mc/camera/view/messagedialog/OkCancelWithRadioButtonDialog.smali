@@ -120,7 +120,7 @@
     .line 145
     iget-object v4, p0, Ljp/co/sony/mc/camera/view/messagedialog/OkCancelWithRadioButtonDialog;->mContext:Landroid/app/Activity;
 
-    const v5, 0x7f11016e
+    const v5, 0x7f110171
 
     invoke-virtual {v4, v5}, Landroid/app/Activity;->getString(I)Ljava/lang/String;
 
@@ -329,7 +329,7 @@
     .line 94
     new-instance p2, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Builder;
 
-    const v0, 0x7f1202a9
+    const v0, 0x7f1202ab
 
     invoke-direct {p2, p1, v0}, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Builder;-><init>(Landroid/content/Context;I)V
 
@@ -404,7 +404,7 @@
     .line 109
     invoke-virtual {v5, p0}, Ljp/co/sony/mc/camera/rtmp/YouTubeStreamingDataManager;->registerNotifyListener(Ljp/co/sony/mc/camera/rtmp/YouTubeStreamingDataManager$NotifyListener;)V
 
-    const v5, 0x7f0903a3
+    const v5, 0x7f0903a2
 
     .line 111
     invoke-virtual {v1, v5}, Landroid/view/View;->findViewById(I)Landroid/view/View;
@@ -415,7 +415,7 @@
 
     iput-object v5, p0, Ljp/co/sony/mc/camera/view/messagedialog/OkCancelWithRadioButtonDialog;->mProgressBar:Landroid/widget/ProgressBar;
 
-    const v5, 0x7f0903af
+    const v5, 0x7f0903ad
 
     .line 112
     invoke-virtual {v1, v5}, Landroid/view/View;->findViewById(I)Landroid/view/View;
@@ -450,7 +450,7 @@
 
     check-cast v0, Landroid/widget/RadioButton;
 
-    const v5, 0x7f11016e
+    const v5, 0x7f110171
 
     .line 116
     invoke-virtual {p1, v5}, Landroid/content/Context;->getString(I)Ljava/lang/String;
@@ -561,12 +561,16 @@
 .method public onUpdateList(Z)V
     .locals 3
 
+    const/4 v0, 0x1
+
     .line 41
-    const-string v0, "onUpdateList enter"
+    new-array v0, v0, [Ljava/lang/String;
 
-    filled-new-array {v0}, [Ljava/lang/String;
+    const/4 v1, 0x0
 
-    move-result-object v0
+    const-string v2, "onUpdateList enter"
+
+    aput-object v2, v0, v1
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 

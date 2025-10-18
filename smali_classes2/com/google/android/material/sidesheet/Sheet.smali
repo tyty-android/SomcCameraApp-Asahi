@@ -2,6 +2,9 @@
 .super Ljava/lang/Object;
 .source "Sheet.java"
 
+# interfaces
+.implements Lcom/google/android/material/motion/MaterialBackHandler;
+
 
 # annotations
 .annotation system Ldalvik/annotation/MemberClasses;
@@ -17,12 +20,15 @@
         "<C::",
         "Lcom/google/android/material/sidesheet/SheetCallback;",
         ">",
-        "Ljava/lang/Object;"
+        "Ljava/lang/Object;",
+        "Lcom/google/android/material/motion/MaterialBackHandler;"
     }
 .end annotation
 
 
 # static fields
+.field public static final EDGE_LEFT:I = 0x1
+
 .field public static final EDGE_RIGHT:I = 0x0
 
 .field public static final STATE_DRAGGING:I = 0x1

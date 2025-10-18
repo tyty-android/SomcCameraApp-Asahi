@@ -61,10 +61,6 @@
 .method public final create(Landroid/content/Context;I)Landroid/graphics/Typeface;
     .locals 0
 
-    const-string p0, "context"
-
-    invoke-static {p1, p0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
     .line 68
     invoke-virtual {p1}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
 
@@ -73,10 +69,6 @@
     invoke-virtual {p0, p2}, Landroid/content/res/Resources;->getFont(I)Landroid/graphics/Typeface;
 
     move-result-object p0
-
-    const-string p1, "context.resources.getFont(resourceId)"
-
-    invoke-static {p0, p1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
 
     return-object p0
 .end method

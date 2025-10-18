@@ -19,5 +19,4 @@
     <string name="camera_strings_runtime_permission_rationale_network_cta_txt">"Ця програма використовує WLAN та мобільні дані для надсилання даних користувачів (тобто записаних фотознімків/відеозаписів, голосових даних, даних облікового запису використовуваних служб тощо) до Інтернету.
 Зверніть увагу, що з вас може стягуватися плата за передачу даних відповідно до умов договорів, укладених із вашим оператором мережі або постачальником інтернет-послуг."</string>
     <string name="camera_strings_streaming_error_wifi_disconnected_txt">Немає з’єднання WLAN</string>
-    <string name="mv_wireless_network_txt">Викор. WLAN і пакетні дані</string>
 </resources>

@@ -66,7 +66,7 @@
 .method public final invoke()Landroidx/compose/ui/text/TextLayoutResult;
     .locals 0
 
-    .line 96
+    .line 93
     iget-object p0, p0, Landroidx/compose/foundation/text/modifiers/SelectionController$onRemembered$2;->this$0:Landroidx/compose/foundation/text/modifiers/SelectionController;
 
     invoke-static {p0}, Landroidx/compose/foundation/text/modifiers/SelectionController;->access$getParams$p(Landroidx/compose/foundation/text/modifiers/SelectionController;)Landroidx/compose/foundation/text/modifiers/StaticTextSelectionParams;
@@ -83,7 +83,7 @@
 .method public bridge synthetic invoke()Ljava/lang/Object;
     .locals 0
 
-    .line 92
+    .line 89
     invoke-virtual {p0}, Landroidx/compose/foundation/text/modifiers/SelectionController$onRemembered$2;->invoke()Landroidx/compose/ui/text/TextLayoutResult;
 
     move-result-object p0

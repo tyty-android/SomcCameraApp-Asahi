@@ -25,10 +25,10 @@
 .method constructor <init>()V
     .locals 1
 
-    .line 1146
+    .line 1173
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 1147
+    .line 1174
     invoke-direct {p0}, Landroidx/activity/ComponentActivity$ReportFullyDrawnExecutorApi1;->createHandler()Landroid/os/Handler;
 
     move-result-object v0
@@ -41,12 +41,12 @@
 .method private createHandler()Landroid/os/Handler;
     .locals 1
 
-    .line 1165
+    .line 1196
     invoke-static {}, Landroid/os/Looper;->myLooper()Landroid/os/Looper;
 
     move-result-object p0
 
-    .line 1166
+    .line 1197
     new-instance v0, Landroid/os/Handler;
 
     if-nez p0, :cond_0
@@ -63,10 +63,16 @@
 
 
 # virtual methods
+.method public activityDestroyed()V
+    .locals 0
+
+    return-void
+.end method
+
 .method public execute(Ljava/lang/Runnable;)V
     .locals 0
 
-    .line 1160
+    .line 1191
     iget-object p0, p0, Landroidx/activity/ComponentActivity$ReportFullyDrawnExecutorApi1;->mHandler:Landroid/os/Handler;
 
     invoke-virtual {p0, p1}, Landroid/os/Handler;->postAtFrontOfQueue(Ljava/lang/Runnable;)Z

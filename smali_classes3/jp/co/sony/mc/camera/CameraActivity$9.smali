@@ -3,12 +3,12 @@
 .source "CameraActivity.java"
 
 # interfaces
-.implements Landroid/content/DialogInterface$OnDismissListener;
+.implements Landroid/preference/PreferenceManager$OnActivityResultListener;
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Ljp/co/sony/mc/camera/CameraActivity;->doResume()V
+    value = Ljp/co/sony/mc/camera/CameraActivity;->requireCtaDataConsent()Z
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -25,7 +25,7 @@
 .method constructor <init>(Ljp/co/sony/mc/camera/CameraActivity;)V
     .locals 0
 
-    .line 1093
+    .line 812
     iput-object p1, p0, Ljp/co/sony/mc/camera/CameraActivity$9;->this$0:Ljp/co/sony/mc/camera/CameraActivity;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -35,22 +35,10 @@
 
 
 # virtual methods
-.method public onDismiss(Landroid/content/DialogInterface;)V
-    .locals 1
+.method public onActivityResult(IILandroid/content/Intent;)Z
+    .locals 0
 
-    .line 1096
-    new-instance p1, Ljp/co/sony/mc/camera/idd/event/IddCloseDialogEvent;
+    const/4 p0, 0x1
 
-    sget-object v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->MEMORY_INTERNAL_UNAVAILABLE:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
-
-    invoke-direct {p1, v0}, Ljp/co/sony/mc/camera/idd/event/IddCloseDialogEvent;-><init>(Ljp/co/sony/mc/camera/view/messagedialog/DialogId;)V
-
-    invoke-virtual {p1}, Ljp/co/sony/mc/camera/idd/event/IddCloseDialogEvent;->send()V
-
-    .line 1097
-    iget-object p0, p0, Ljp/co/sony/mc/camera/CameraActivity$9;->this$0:Ljp/co/sony/mc/camera/CameraActivity;
-
-    invoke-virtual {p0}, Ljp/co/sony/mc/camera/CameraActivity;->abort()V
-
-    return-void
+    return p0
 .end method

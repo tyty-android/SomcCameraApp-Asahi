@@ -21,7 +21,7 @@
 .method constructor <init>()V
     .locals 0
 
-    .line 2467
+    .line 2532
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -42,8 +42,8 @@
         }
     .end annotation
 
-    .line 2471
-    invoke-static {}, Ljp/co/sony/mc/camera/configuration/parameters/VideoMfHdr;->getDefault()Ljp/co/sony/mc/camera/configuration/parameters/VideoMfHdr;
+    .line 2536
+    invoke-static {}, Ljp/co/sony/mc/camera/configuration/parameters/DisplayFlash;->getDefaultValue()Ljp/co/sony/mc/camera/configuration/parameters/DisplayFlash;
 
     move-result-object p0
 

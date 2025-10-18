@@ -20,7 +20,7 @@
 .end method
 
 .method public static convertAbsolutePosition2Relative(II)I
-    .locals 2
+    .locals 3
 
     mul-int/lit8 v0, p0, 0x64
 
@@ -32,19 +32,23 @@
 
     if-eqz p1, :cond_0
 
-    new-instance p1, Ljava/lang/StringBuilder;
+    const/4 p1, 0x1
 
-    const-string v1, "###### convertAbsolutePosition2Relative: from "
+    new-array p1, p1, [Ljava/lang/String;
 
-    invoke-direct {p1, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+    new-instance v1, Ljava/lang/StringBuilder;
 
-    invoke-virtual {p1, p0}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+    const-string v2, "###### convertAbsolutePosition2Relative: from "
+
+    invoke-direct {v1, v2}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+
+    invoke-virtual {v1, p0}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
     move-result-object p0
 
-    const-string p1, " to "
+    const-string v1, " to "
 
-    invoke-virtual {p0, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {p0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object p0
 
@@ -56,101 +60,105 @@
 
     move-result-object p0
 
-    filled-new-array {p0}, [Ljava/lang/String;
+    const/4 v1, 0x0
 
-    move-result-object p0
+    aput-object p0, p1, v1
 
-    invoke-static {p0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
+    invoke-static {p1}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
     :cond_0
     return v0
 .end method
 
 .method public static convertDev2View(Landroid/graphics/Rect;Landroid/graphics/Rect;I)Landroid/graphics/Rect;
-    .locals 3
+    .locals 5
 
     .line 119
     sget-boolean v0, Ljp/co/sony/mc/camera/util/CamLog;->VERBOSE:Z
 
+    const/4 v1, 0x1
+
     if-eqz v0, :cond_0
 
-    new-instance v0, Ljava/lang/StringBuilder;
+    new-array v0, v1, [Ljava/lang/String;
 
-    const-string v1, "###### convertDev2View: srcArea: left, top, right, bottom, previewW, previewH: "
+    new-instance v2, Ljava/lang/StringBuilder;
 
-    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+    const-string v3, "###### convertDev2View: srcArea: left, top, right, bottom, previewW, previewH: "
 
-    iget v1, p0, Landroid/graphics/Rect;->left:I
+    invoke-direct {v2, v3}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+    iget v3, p0, Landroid/graphics/Rect;->left:I
 
-    move-result-object v0
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
-    const-string v1, ", "
+    move-result-object v2
 
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    const-string v3, ", "
 
-    move-result-object v0
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget v2, p0, Landroid/graphics/Rect;->top:I
+    move-result-object v2
 
-    invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+    iget v4, p0, Landroid/graphics/Rect;->top:I
 
-    move-result-object v0
+    invoke-virtual {v2, v4}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    move-result-object v2
 
-    move-result-object v0
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget v2, p0, Landroid/graphics/Rect;->right:I
+    move-result-object v2
 
-    invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+    iget v4, p0, Landroid/graphics/Rect;->right:I
 
-    move-result-object v0
+    invoke-virtual {v2, v4}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    move-result-object v2
 
-    move-result-object v0
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget v2, p0, Landroid/graphics/Rect;->bottom:I
+    move-result-object v2
 
-    invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+    iget v4, p0, Landroid/graphics/Rect;->bottom:I
 
-    move-result-object v0
+    invoke-virtual {v2, v4}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    move-result-object v2
 
-    move-result-object v0
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v2
 
     .line 125
     invoke-virtual {p1}, Landroid/graphics/Rect;->width()I
 
-    move-result v2
+    move-result v4
 
-    invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+    invoke-virtual {v2, v4}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
-    move-result-object v0
+    move-result-object v2
 
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    move-result-object v0
+    move-result-object v2
 
     .line 126
     invoke-virtual {p1}, Landroid/graphics/Rect;->height()I
 
-    move-result v1
+    move-result v3
 
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
-    move-result-object v0
+    move-result-object v2
 
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    move-result-object v0
+    move-result-object v2
 
-    filled-new-array {v0}, [Ljava/lang/String;
+    const/4 v3, 0x0
 
-    move-result-object v0
+    aput-object v2, v0, v3
 
     .line 119
     invoke-static {v0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
@@ -160,8 +168,6 @@
     new-instance v0, Landroid/graphics/Rect;
 
     invoke-direct {v0, p0}, Landroid/graphics/Rect;-><init>(Landroid/graphics/Rect;)V
-
-    const/4 v1, 0x1
 
     if-ne p2, v1, :cond_1
 
@@ -337,7 +343,11 @@
 .end method
 
 .method public static convertPositionToAligned(IILandroid/graphics/Rect;Landroid/graphics/Rect;II)Landroid/graphics/Rect;
-    .locals 6
+    .locals 8
+
+    const/4 v0, 0x0
+
+    const/4 v1, 0x1
 
     if-nez p2, :cond_1
 
@@ -346,11 +356,11 @@
 
     if-eqz p0, :cond_0
 
-    const-string/jumbo p0, "surface is null"
+    new-array p0, v1, [Ljava/lang/String;
 
-    filled-new-array {p0}, [Ljava/lang/String;
+    const-string/jumbo p1, "surface is null"
 
-    move-result-object p0
+    aput-object p1, p0, v0
 
     invoke-static {p0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
@@ -370,11 +380,11 @@
 
     if-eqz p0, :cond_2
 
-    const-string p0, "Touch area is null."
+    new-array p0, v1, [Ljava/lang/String;
 
-    filled-new-array {p0}, [Ljava/lang/String;
+    const-string p1, "Touch area is null."
 
-    move-result-object p0
+    aput-object p1, p0, v0
 
     invoke-static {p0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
@@ -390,62 +400,62 @@
     :cond_3
     invoke-virtual {p2, p0, p1}, Landroid/graphics/Rect;->contains(II)Z
 
-    move-result v0
+    move-result v2
 
-    if-eqz v0, :cond_5
+    if-eqz v2, :cond_5
 
     .line 357
-    iget v0, p2, Landroid/graphics/Rect;->left:I
+    iget v2, p2, Landroid/graphics/Rect;->left:I
 
     .line 358
-    iget v1, p2, Landroid/graphics/Rect;->top:I
-
-    sub-int/2addr p0, v0
-
-    .line 361
-    div-int/lit8 v2, p4, 0x2
+    iget v3, p2, Landroid/graphics/Rect;->top:I
 
     sub-int/2addr p0, v2
 
-    sub-int/2addr p1, v1
+    .line 361
+    div-int/lit8 v4, p4, 0x2
+
+    sub-int/2addr p0, v4
+
+    sub-int/2addr p1, v3
 
     .line 362
-    div-int/lit8 v2, p5, 0x2
+    div-int/lit8 v4, p5, 0x2
 
-    sub-int/2addr p1, v2
+    sub-int/2addr p1, v4
 
     .line 364
-    new-instance v2, Landroid/graphics/Rect;
+    new-instance v4, Landroid/graphics/Rect;
 
-    iget v3, p3, Landroid/graphics/Rect;->left:I
+    iget v5, p3, Landroid/graphics/Rect;->left:I
 
-    sub-int/2addr v3, v0
+    sub-int/2addr v5, v2
 
-    iget v4, p3, Landroid/graphics/Rect;->top:I
+    iget v6, p3, Landroid/graphics/Rect;->top:I
 
-    sub-int/2addr v4, v1
+    sub-int/2addr v6, v3
 
-    iget v5, p3, Landroid/graphics/Rect;->right:I
+    iget v7, p3, Landroid/graphics/Rect;->right:I
 
-    sub-int/2addr v5, v0
+    sub-int/2addr v7, v2
 
-    sub-int/2addr v5, p4
+    sub-int/2addr v7, p4
 
     iget p3, p3, Landroid/graphics/Rect;->bottom:I
 
-    sub-int/2addr p3, v1
+    sub-int/2addr p3, v3
 
     sub-int/2addr p3, p5
 
-    invoke-direct {v2, v3, v4, v5, p3}, Landroid/graphics/Rect;-><init>(IIII)V
+    invoke-direct {v4, v5, v6, v7, p3}, Landroid/graphics/Rect;-><init>(IIII)V
 
     .line 370
-    iget p3, v2, Landroid/graphics/Rect;->left:I
+    iget p3, v4, Landroid/graphics/Rect;->left:I
 
-    iget v0, v2, Landroid/graphics/Rect;->right:I
+    iget v2, v4, Landroid/graphics/Rect;->right:I
 
     .line 371
-    invoke-static {v0, p0}, Ljava/lang/Math;->min(II)I
+    invoke-static {v2, p0}, Ljava/lang/Math;->min(II)I
 
     move-result p0
 
@@ -455,12 +465,12 @@
     move-result p0
 
     .line 372
-    iget p3, v2, Landroid/graphics/Rect;->top:I
+    iget p3, v4, Landroid/graphics/Rect;->top:I
 
-    iget v0, v2, Landroid/graphics/Rect;->bottom:I
+    iget v2, v4, Landroid/graphics/Rect;->bottom:I
 
     .line 373
-    invoke-static {v0, p1}, Ljava/lang/Math;->min(II)I
+    invoke-static {v2, p1}, Ljava/lang/Math;->min(II)I
 
     move-result p1
 
@@ -475,61 +485,109 @@
     if-eqz p3, :cond_4
 
     .line 376
-    new-instance p3, Ljava/lang/StringBuilder;
+    new-array p3, v1, [Ljava/lang/String;
 
-    const-string/jumbo v0, "surface-left = "
+    new-instance v2, Ljava/lang/StringBuilder;
 
-    invoke-direct {p3, v0}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+    const-string/jumbo v3, "surface-left = "
 
-    iget v0, p2, Landroid/graphics/Rect;->left:I
+    invoke-direct {v2, v3}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
-    invoke-virtual {p3, v0}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+    iget v3, p2, Landroid/graphics/Rect;->left:I
 
-    move-result-object p3
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
-    invoke-virtual {p3}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    move-result-object v2
 
-    move-result-object p3
+    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    filled-new-array {p3}, [Ljava/lang/String;
+    move-result-object v2
 
-    move-result-object p3
+    aput-object v2, p3, v0
 
     invoke-static {p3}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
     .line 377
-    new-instance p3, Ljava/lang/StringBuilder;
+    new-array p3, v1, [Ljava/lang/String;
 
-    const-string/jumbo v0, "surface-top  = "
+    new-instance v2, Ljava/lang/StringBuilder;
 
-    invoke-direct {p3, v0}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+    const-string/jumbo v3, "surface-top  = "
 
-    iget v0, p2, Landroid/graphics/Rect;->top:I
+    invoke-direct {v2, v3}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
-    invoke-virtual {p3, v0}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+    iget v3, p2, Landroid/graphics/Rect;->top:I
 
-    move-result-object p3
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
-    invoke-virtual {p3}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    move-result-object v2
 
-    move-result-object p3
+    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    filled-new-array {p3}, [Ljava/lang/String;
+    move-result-object v2
 
-    move-result-object p3
+    aput-object v2, p3, v0
 
     invoke-static {p3}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
     .line 378
+    new-array p3, v1, [Ljava/lang/String;
+
+    new-instance v2, Ljava/lang/StringBuilder;
+
+    const-string/jumbo v3, "surface-right = "
+
+    invoke-direct {v2, v3}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+
+    iget v3, p2, Landroid/graphics/Rect;->right:I
+
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    move-result-object v2
+
+    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v2
+
+    aput-object v2, p3, v0
+
+    invoke-static {p3}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
+
+    .line 379
+    new-array p3, v1, [Ljava/lang/String;
+
+    new-instance v2, Ljava/lang/StringBuilder;
+
+    const-string/jumbo v3, "surface-bottom = "
+
+    invoke-direct {v2, v3}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+
+    iget p2, p2, Landroid/graphics/Rect;->bottom:I
+
+    invoke-virtual {v2, p2}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    move-result-object p2
+
+    invoke-virtual {p2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object p2
+
+    aput-object p2, p3, v0
+
+    invoke-static {p3}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
+
+    .line 380
+    new-array p2, v1, [Ljava/lang/String;
+
     new-instance p3, Ljava/lang/StringBuilder;
 
-    const-string/jumbo v0, "surface-right = "
+    const-string v2, "positionBound-left = "
 
-    invoke-direct {p3, v0}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+    invoke-direct {p3, v2}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
-    iget v0, p2, Landroid/graphics/Rect;->right:I
+    iget v2, v4, Landroid/graphics/Rect;->left:I
 
-    invoke-virtual {p3, v0}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+    invoke-virtual {p3, v2}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
     move-result-object p3
 
@@ -537,166 +595,118 @@
 
     move-result-object p3
 
-    filled-new-array {p3}, [Ljava/lang/String;
-
-    move-result-object p3
-
-    invoke-static {p3}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
-
-    .line 379
-    new-instance p3, Ljava/lang/StringBuilder;
-
-    const-string/jumbo v0, "surface-bottom = "
-
-    invoke-direct {p3, v0}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
-
-    iget p2, p2, Landroid/graphics/Rect;->bottom:I
-
-    invoke-virtual {p3, p2}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
-
-    move-result-object p2
-
-    invoke-virtual {p2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object p2
-
-    filled-new-array {p2}, [Ljava/lang/String;
-
-    move-result-object p2
-
-    invoke-static {p2}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
-
-    .line 380
-    new-instance p2, Ljava/lang/StringBuilder;
-
-    const-string p3, "positionBound-left = "
-
-    invoke-direct {p2, p3}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
-
-    iget p3, v2, Landroid/graphics/Rect;->left:I
-
-    invoke-virtual {p2, p3}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
-
-    move-result-object p2
-
-    invoke-virtual {p2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object p2
-
-    filled-new-array {p2}, [Ljava/lang/String;
-
-    move-result-object p2
+    aput-object p3, p2, v0
 
     invoke-static {p2}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
     .line 381
-    new-instance p2, Ljava/lang/StringBuilder;
+    new-array p2, v1, [Ljava/lang/String;
 
-    const-string p3, "positionBound-top  = "
+    new-instance p3, Ljava/lang/StringBuilder;
 
-    invoke-direct {p2, p3}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+    const-string v2, "positionBound-top  = "
 
-    iget p3, v2, Landroid/graphics/Rect;->top:I
+    invoke-direct {p3, v2}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
-    invoke-virtual {p2, p3}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+    iget v2, v4, Landroid/graphics/Rect;->top:I
 
-    move-result-object p2
+    invoke-virtual {p3, v2}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
-    invoke-virtual {p2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    move-result-object p3
 
-    move-result-object p2
+    invoke-virtual {p3}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    filled-new-array {p2}, [Ljava/lang/String;
+    move-result-object p3
 
-    move-result-object p2
+    aput-object p3, p2, v0
 
     invoke-static {p2}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
     .line 382
-    new-instance p2, Ljava/lang/StringBuilder;
+    new-array p2, v1, [Ljava/lang/String;
 
-    const-string p3, "positionBound-right = "
+    new-instance p3, Ljava/lang/StringBuilder;
 
-    invoke-direct {p2, p3}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+    const-string v2, "positionBound-right = "
 
-    iget p3, v2, Landroid/graphics/Rect;->right:I
+    invoke-direct {p3, v2}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
-    invoke-virtual {p2, p3}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+    iget v2, v4, Landroid/graphics/Rect;->right:I
 
-    move-result-object p2
+    invoke-virtual {p3, v2}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
-    invoke-virtual {p2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    move-result-object p3
 
-    move-result-object p2
+    invoke-virtual {p3}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    filled-new-array {p2}, [Ljava/lang/String;
+    move-result-object p3
 
-    move-result-object p2
+    aput-object p3, p2, v0
 
     invoke-static {p2}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
     .line 383
-    new-instance p2, Ljava/lang/StringBuilder;
+    new-array p2, v1, [Ljava/lang/String;
 
-    const-string p3, "positionBound-bottom = "
+    new-instance p3, Ljava/lang/StringBuilder;
 
-    invoke-direct {p2, p3}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+    const-string v2, "positionBound-bottom = "
 
-    iget p3, v2, Landroid/graphics/Rect;->bottom:I
+    invoke-direct {p3, v2}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
-    invoke-virtual {p2, p3}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+    iget v2, v4, Landroid/graphics/Rect;->bottom:I
 
-    move-result-object p2
+    invoke-virtual {p3, v2}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
-    invoke-virtual {p2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    move-result-object p3
 
-    move-result-object p2
+    invoke-virtual {p3}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    filled-new-array {p2}, [Ljava/lang/String;
+    move-result-object p3
 
-    move-result-object p2
+    aput-object p3, p2, v0
 
     invoke-static {p2}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
     .line 384
-    new-instance p2, Ljava/lang/StringBuilder;
+    new-array p2, v1, [Ljava/lang/String;
 
-    const-string p3, "aligned-left = "
+    new-instance p3, Ljava/lang/StringBuilder;
 
-    invoke-direct {p2, p3}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+    const-string v2, "aligned-left = "
 
-    invoke-virtual {p2, p0}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+    invoke-direct {p3, v2}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
-    move-result-object p2
+    invoke-virtual {p3, p0}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
-    invoke-virtual {p2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    move-result-object p3
 
-    move-result-object p2
+    invoke-virtual {p3}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    filled-new-array {p2}, [Ljava/lang/String;
+    move-result-object p3
 
-    move-result-object p2
+    aput-object p3, p2, v0
 
     invoke-static {p2}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
     .line 385
-    new-instance p2, Ljava/lang/StringBuilder;
+    new-array p2, v1, [Ljava/lang/String;
 
-    const-string p3, "aligned-top  = "
+    new-instance p3, Ljava/lang/StringBuilder;
 
-    invoke-direct {p2, p3}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+    const-string v1, "aligned-top  = "
 
-    invoke-virtual {p2, p1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+    invoke-direct {p3, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
-    move-result-object p2
+    invoke-virtual {p3, p1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
-    invoke-virtual {p2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    move-result-object p3
 
-    move-result-object p2
+    invoke-virtual {p3}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    filled-new-array {p2}, [Ljava/lang/String;
+    move-result-object p3
 
-    move-result-object p2
+    aput-object p3, p2, v0
 
     invoke-static {p2}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
@@ -722,7 +732,7 @@
 .end method
 
 .method public static convertPositionToSurface([Landroid/graphics/RectF;III)[Landroid/graphics/Rect;
-    .locals 8
+    .locals 9
 
     .line 156
     array-length p3, p0
@@ -731,152 +741,156 @@
 
     const/4 v0, 0x0
 
+    move v1, v0
+
     .line 158
     :goto_0
-    array-length v1, p0
+    array-length v2, p0
 
-    if-ge v0, v1, :cond_1
+    if-ge v1, v2, :cond_1
 
     .line 159
-    aget-object v1, p0, v0
+    aget-object v2, p0, v1
 
-    invoke-virtual {v1}, Landroid/graphics/RectF;->centerX()F
+    invoke-virtual {v2}, Landroid/graphics/RectF;->centerX()F
 
-    move-result v1
+    move-result v2
 
-    int-to-float v2, p1
+    int-to-float v3, p1
 
-    mul-float/2addr v1, v2
+    mul-float/2addr v2, v3
 
-    float-to-int v1, v1
+    float-to-int v2, v2
 
     .line 160
-    aget-object v3, p0, v0
+    aget-object v4, p0, v1
 
-    invoke-virtual {v3}, Landroid/graphics/RectF;->centerY()F
+    invoke-virtual {v4}, Landroid/graphics/RectF;->centerY()F
 
-    move-result v3
+    move-result v4
 
-    int-to-float v4, p2
+    int-to-float v5, p2
 
-    mul-float/2addr v3, v4
+    mul-float/2addr v4, v5
 
-    float-to-int v3, v3
+    float-to-int v4, v4
 
     .line 161
-    aget-object v5, p0, v0
+    aget-object v6, p0, v1
 
-    invoke-virtual {v5}, Landroid/graphics/RectF;->width()F
+    invoke-virtual {v6}, Landroid/graphics/RectF;->width()F
 
-    move-result v5
+    move-result v6
 
-    mul-float/2addr v5, v2
+    mul-float/2addr v6, v3
 
-    float-to-int v2, v5
+    float-to-int v3, v6
 
     .line 162
-    aget-object v5, p0, v0
+    aget-object v6, p0, v1
 
-    invoke-virtual {v5}, Landroid/graphics/RectF;->height()F
+    invoke-virtual {v6}, Landroid/graphics/RectF;->height()F
 
-    move-result v5
+    move-result v6
 
-    mul-float/2addr v5, v4
+    mul-float/2addr v6, v5
 
-    float-to-int v4, v5
+    float-to-int v5, v6
 
     .line 165
-    new-instance v5, Landroid/graphics/Rect;
+    new-instance v6, Landroid/graphics/Rect;
 
-    div-int/lit8 v2, v2, 0x2
+    div-int/lit8 v3, v3, 0x2
 
-    sub-int v6, v1, v2
+    sub-int v7, v2, v3
 
-    div-int/lit8 v4, v4, 0x2
+    div-int/lit8 v5, v5, 0x2
 
-    sub-int v7, v3, v4
+    sub-int v8, v4, v5
 
-    add-int/2addr v1, v2
+    add-int/2addr v2, v3
 
-    add-int/2addr v3, v4
+    add-int/2addr v4, v5
 
-    invoke-direct {v5, v6, v7, v1, v3}, Landroid/graphics/Rect;-><init>(IIII)V
+    invoke-direct {v6, v7, v8, v2, v4}, Landroid/graphics/Rect;-><init>(IIII)V
 
-    aput-object v5, p3, v0
+    aput-object v6, p3, v1
 
     .line 170
-    sget-boolean v1, Ljp/co/sony/mc/camera/util/CamLog;->VERBOSE:Z
+    sget-boolean v2, Ljp/co/sony/mc/camera/util/CamLog;->VERBOSE:Z
 
-    if-eqz v1, :cond_0
+    if-eqz v2, :cond_0
 
-    new-instance v1, Ljava/lang/StringBuilder;
+    const/4 v2, 0x1
 
-    const-string v2, "###### convertDev2SurfaceView: convertedRect [px]: left: "
+    new-array v2, v2, [Ljava/lang/String;
 
-    invoke-direct {v1, v2}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+    new-instance v3, Ljava/lang/StringBuilder;
 
-    aget-object v2, p3, v0
+    const-string v4, "###### convertDev2SurfaceView: convertedRect [px]: left: "
 
-    iget v2, v2, Landroid/graphics/Rect;->left:I
+    invoke-direct {v3, v4}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
-    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+    aget-object v4, p3, v1
 
-    move-result-object v1
+    iget v4, v4, Landroid/graphics/Rect;->left:I
 
-    const-string v2, ", top: "
+    invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    move-result-object v3
 
-    move-result-object v1
+    const-string v4, ", top: "
 
-    aget-object v2, p3, v0
+    invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget v2, v2, Landroid/graphics/Rect;->top:I
+    move-result-object v3
 
-    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+    aget-object v4, p3, v1
 
-    move-result-object v1
+    iget v4, v4, Landroid/graphics/Rect;->top:I
 
-    const-string v2, ", right: "
+    invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    move-result-object v3
 
-    move-result-object v1
+    const-string v4, ", right: "
 
-    aget-object v2, p3, v0
+    invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget v2, v2, Landroid/graphics/Rect;->right:I
+    move-result-object v3
 
-    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+    aget-object v4, p3, v1
 
-    move-result-object v1
+    iget v4, v4, Landroid/graphics/Rect;->right:I
 
-    const-string v2, ", bottom: "
+    invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    move-result-object v3
 
-    move-result-object v1
+    const-string v4, ", bottom: "
 
-    aget-object v2, p3, v0
+    invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget v2, v2, Landroid/graphics/Rect;->bottom:I
+    move-result-object v3
 
-    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+    aget-object v4, p3, v1
 
-    move-result-object v1
+    iget v4, v4, Landroid/graphics/Rect;->bottom:I
 
-    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
-    move-result-object v1
+    move-result-object v3
 
-    filled-new-array {v1}, [Ljava/lang/String;
+    invoke-virtual {v3}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    move-result-object v1
+    move-result-object v3
 
-    invoke-static {v1}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
+    aput-object v3, v2, v0
+
+    invoke-static {v2}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
     :cond_0
-    add-int/lit8 v0, v0, 0x1
+    add-int/lit8 v1, v1, 0x1
 
     goto/16 :goto_0
 
@@ -1020,90 +1034,94 @@
 .end method
 
 .method public static convertView2Dev(Landroid/graphics/Rect;Landroid/graphics/Rect;I)Landroid/graphics/Rect;
-    .locals 3
+    .locals 5
 
     .line 194
     sget-boolean v0, Ljp/co/sony/mc/camera/util/CamLog;->VERBOSE:Z
 
+    const/4 v1, 0x1
+
     if-eqz v0, :cond_0
 
-    new-instance v0, Ljava/lang/StringBuilder;
+    new-array v0, v1, [Ljava/lang/String;
 
-    const-string v1, "###### convertView2Dev: srcArea: left, top, right, bottom, previewW, previewH: "
+    new-instance v2, Ljava/lang/StringBuilder;
 
-    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+    const-string v3, "###### convertView2Dev: srcArea: left, top, right, bottom, previewW, previewH: "
 
-    iget v1, p0, Landroid/graphics/Rect;->left:I
+    invoke-direct {v2, v3}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+    iget v3, p0, Landroid/graphics/Rect;->left:I
 
-    move-result-object v0
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
-    const-string v1, ", "
+    move-result-object v2
 
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    const-string v3, ", "
 
-    move-result-object v0
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget v2, p0, Landroid/graphics/Rect;->top:I
+    move-result-object v2
 
-    invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+    iget v4, p0, Landroid/graphics/Rect;->top:I
 
-    move-result-object v0
+    invoke-virtual {v2, v4}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    move-result-object v2
 
-    move-result-object v0
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget v2, p0, Landroid/graphics/Rect;->right:I
+    move-result-object v2
 
-    invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+    iget v4, p0, Landroid/graphics/Rect;->right:I
 
-    move-result-object v0
+    invoke-virtual {v2, v4}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    move-result-object v2
 
-    move-result-object v0
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget v2, p0, Landroid/graphics/Rect;->bottom:I
+    move-result-object v2
 
-    invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+    iget v4, p0, Landroid/graphics/Rect;->bottom:I
 
-    move-result-object v0
+    invoke-virtual {v2, v4}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    move-result-object v2
 
-    move-result-object v0
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v2
 
     .line 200
     invoke-virtual {p1}, Landroid/graphics/Rect;->width()I
 
-    move-result v2
+    move-result v4
 
-    invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+    invoke-virtual {v2, v4}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
-    move-result-object v0
+    move-result-object v2
 
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    move-result-object v0
+    move-result-object v2
 
     .line 201
     invoke-virtual {p1}, Landroid/graphics/Rect;->height()I
 
-    move-result v1
+    move-result v3
 
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
-    move-result-object v0
+    move-result-object v2
 
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    move-result-object v0
+    move-result-object v2
 
-    filled-new-array {v0}, [Ljava/lang/String;
+    const/4 v3, 0x0
 
-    move-result-object v0
+    aput-object v2, v0, v3
 
     .line 194
     invoke-static {v0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
@@ -1113,8 +1131,6 @@
     new-instance v0, Landroid/graphics/Rect;
 
     invoke-direct {v0, p0}, Landroid/graphics/Rect;-><init>(Landroid/graphics/Rect;)V
-
-    const/4 v1, 0x1
 
     if-ne p2, v1, :cond_1
 
@@ -1155,7 +1171,7 @@
 .end method
 
 .method public static scale(Landroid/graphics/Rect;Landroid/graphics/Rect;Landroid/graphics/Rect;)Landroid/graphics/Rect;
-    .locals 7
+    .locals 9
 
     .line 43
     invoke-virtual {p1}, Landroid/graphics/Rect;->height()I
@@ -1180,35 +1196,39 @@
     .line 47
     sget-boolean v2, Ljp/co/sony/mc/camera/util/CamLog;->VERBOSE:Z
 
+    const/4 v3, 0x0
+
+    const/4 v4, 0x1
+
     if-eqz v2, :cond_0
 
-    new-instance v2, Ljava/lang/StringBuilder;
+    new-array v2, v4, [Ljava/lang/String;
 
-    const-string v3, "scale: origWidth: "
+    new-instance v5, Ljava/lang/StringBuilder;
 
-    invoke-direct {v2, v3}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+    const-string v6, "scale: origWidth: "
 
-    invoke-virtual {v2, p1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+    invoke-direct {v5, v6}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
-    move-result-object v2
+    invoke-virtual {v5, p1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
-    const-string v3, ", showWidth: "
+    move-result-object v5
 
-    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    const-string v6, ", showWidth: "
 
-    move-result-object v2
+    invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v2, p2}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+    move-result-object v5
 
-    move-result-object v2
+    invoke-virtual {v5, p2}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    move-result-object v5
 
-    move-result-object v2
+    invoke-virtual {v5}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    filled-new-array {v2}, [Ljava/lang/String;
+    move-result-object v5
 
-    move-result-object v2
+    aput-object v5, v2, v3
 
     invoke-static {v2}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
@@ -1216,65 +1236,65 @@
     :cond_0
     sget-boolean v2, Ljp/co/sony/mc/camera/util/CamLog;->VERBOSE:Z
 
-    const-string v3, ")"
+    const-string v5, ")"
 
-    const-string v4, ","
+    const-string v6, ","
 
     if-eqz v2, :cond_1
 
-    new-instance v2, Ljava/lang/StringBuilder;
+    new-array v2, v4, [Ljava/lang/String;
 
-    const-string v5, "Original position:top,left,right,bottom   :"
+    new-instance v7, Ljava/lang/StringBuilder;
 
-    invoke-direct {v2, v5}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+    const-string v8, "Original position:top,left,right,bottom   :"
 
-    iget v5, p0, Landroid/graphics/Rect;->top:I
+    invoke-direct {v7, v8}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
-    invoke-virtual {v2, v5}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+    iget v8, p0, Landroid/graphics/Rect;->top:I
 
-    move-result-object v2
+    invoke-virtual {v7, v8}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v2, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    move-result-object v7
 
-    move-result-object v2
+    invoke-virtual {v7, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget v5, p0, Landroid/graphics/Rect;->left:I
+    move-result-object v7
 
-    invoke-virtual {v2, v5}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+    iget v8, p0, Landroid/graphics/Rect;->left:I
 
-    move-result-object v2
+    invoke-virtual {v7, v8}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v2, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    move-result-object v7
 
-    move-result-object v2
+    invoke-virtual {v7, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget v5, p0, Landroid/graphics/Rect;->right:I
+    move-result-object v7
 
-    invoke-virtual {v2, v5}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+    iget v8, p0, Landroid/graphics/Rect;->right:I
 
-    move-result-object v2
+    invoke-virtual {v7, v8}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v2, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    move-result-object v7
 
-    move-result-object v2
+    invoke-virtual {v7, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget v5, p0, Landroid/graphics/Rect;->bottom:I
+    move-result-object v7
 
-    invoke-virtual {v2, v5}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+    iget v8, p0, Landroid/graphics/Rect;->bottom:I
 
-    move-result-object v2
+    invoke-virtual {v7, v8}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    move-result-object v7
 
-    move-result-object v2
+    invoke-virtual {v7, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    move-result-object v7
 
-    move-result-object v2
+    invoke-virtual {v7}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    filled-new-array {v2}, [Ljava/lang/String;
+    move-result-object v7
 
-    move-result-object v2
+    aput-object v7, v2, v3
 
     invoke-static {v2}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
@@ -1287,18 +1307,18 @@
     div-int/2addr v2, v0
 
     .line 57
-    iget v5, p0, Landroid/graphics/Rect;->left:I
+    iget v7, p0, Landroid/graphics/Rect;->left:I
 
-    mul-int/2addr v5, p2
+    mul-int/2addr v7, p2
 
-    div-int/2addr v5, p1
+    div-int/2addr v7, p1
 
     .line 58
-    iget v6, p0, Landroid/graphics/Rect;->bottom:I
+    iget v8, p0, Landroid/graphics/Rect;->bottom:I
 
-    mul-int/2addr v6, v1
+    mul-int/2addr v8, v1
 
-    div-int/2addr v6, v0
+    div-int/2addr v8, v0
 
     .line 59
     iget p0, p0, Landroid/graphics/Rect;->right:I
@@ -1312,51 +1332,51 @@
 
     if-eqz p1, :cond_2
 
-    new-instance p1, Ljava/lang/StringBuilder;
+    new-array p1, v4, [Ljava/lang/String;
 
-    const-string p2, "Display position:top,left,right,bottom   :"
+    new-instance p2, Ljava/lang/StringBuilder;
 
-    invoke-direct {p1, p2}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+    const-string v0, "Display position:top,left,right,bottom   :"
 
-    invoke-virtual {p1, v2}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+    invoke-direct {p2, v0}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
-    move-result-object p1
+    invoke-virtual {p2, v2}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
-    invoke-virtual {p1, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    move-result-object p2
 
-    move-result-object p1
+    invoke-virtual {p2, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {p1, v5}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+    move-result-object p2
 
-    move-result-object p1
+    invoke-virtual {p2, v7}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
-    invoke-virtual {p1, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    move-result-object p2
 
-    move-result-object p1
+    invoke-virtual {p2, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {p1, p0}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+    move-result-object p2
 
-    move-result-object p1
+    invoke-virtual {p2, p0}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
-    invoke-virtual {p1, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    move-result-object p2
 
-    move-result-object p1
+    invoke-virtual {p2, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {p1, v6}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+    move-result-object p2
 
-    move-result-object p1
+    invoke-virtual {p2, v8}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
-    invoke-virtual {p1, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    move-result-object p2
 
-    move-result-object p1
+    invoke-virtual {p2, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {p1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    move-result-object p2
 
-    move-result-object p1
+    invoke-virtual {p2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    filled-new-array {p1}, [Ljava/lang/String;
+    move-result-object p2
 
-    move-result-object p1
+    aput-object p2, p1, v3
 
     invoke-static {p1}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
@@ -1364,13 +1384,13 @@
     :cond_2
     new-instance p1, Landroid/graphics/Rect;
 
-    invoke-direct {p1, v5, v2, p0, v6}, Landroid/graphics/Rect;-><init>(IIII)V
+    invoke-direct {p1, v7, v2, p0, v8}, Landroid/graphics/Rect;-><init>(IIII)V
 
     return-object p1
 .end method
 
 .method public static scale2Dev(Landroid/graphics/Rect;Landroid/graphics/Rect;Landroid/graphics/Rect;)Landroid/graphics/Rect;
-    .locals 11
+    .locals 13
 
     .line 71
     invoke-virtual {p1}, Landroid/graphics/Rect;->height()I
@@ -1395,44 +1415,48 @@
     .line 75
     sget-boolean v2, Ljp/co/sony/mc/camera/util/CamLog;->VERBOSE:Z
 
+    const/4 v3, 0x0
+
+    const/4 v4, 0x1
+
     if-eqz v2, :cond_0
 
-    new-instance v2, Ljava/lang/StringBuilder;
+    new-array v2, v4, [Ljava/lang/String;
 
-    const-string v3, "scale2Dev: origWidth: "
+    new-instance v5, Ljava/lang/StringBuilder;
 
-    invoke-direct {v2, v3}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+    const-string v6, "scale2Dev: origWidth: "
 
-    invoke-virtual {v2, p1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+    invoke-direct {v5, v6}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
-    move-result-object v2
+    invoke-virtual {v5, p1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
-    const-string v3, ", showWidth: "
+    move-result-object v5
 
-    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    const-string v6, ", showWidth: "
 
-    move-result-object v2
+    invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v2, p2}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+    move-result-object v5
 
-    move-result-object v2
+    invoke-virtual {v5, p2}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    move-result-object v5
 
-    move-result-object v2
+    invoke-virtual {v5}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    filled-new-array {v2}, [Ljava/lang/String;
+    move-result-object v5
 
-    move-result-object v2
+    aput-object v5, v2, v3
 
     invoke-static {v2}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
     :cond_0
-    int-to-double v2, p1
+    int-to-double v5, p1
 
     int-to-double p1, p2
 
-    div-double/2addr v2, p1
+    div-double/2addr v5, p1
 
     int-to-double p1, v0
 
@@ -1445,33 +1469,33 @@
 
     if-eqz v0, :cond_1
 
-    new-instance v0, Ljava/lang/StringBuilder;
+    new-array v0, v4, [Ljava/lang/String;
 
-    const-string v1, "scale2Dev: ratio: width: "
+    new-instance v1, Ljava/lang/StringBuilder;
 
-    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+    const-string v2, "scale2Dev: ratio: width: "
 
-    invoke-virtual {v0, v2, v3}, Ljava/lang/StringBuilder;->append(D)Ljava/lang/StringBuilder;
+    invoke-direct {v1, v2}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
-    move-result-object v0
+    invoke-virtual {v1, v5, v6}, Ljava/lang/StringBuilder;->append(D)Ljava/lang/StringBuilder;
 
-    const-string v1, ", height: "
+    move-result-object v1
 
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    const-string v2, ", height: "
 
-    move-result-object v0
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v0, p1, p2}, Ljava/lang/StringBuilder;->append(D)Ljava/lang/StringBuilder;
+    move-result-object v1
 
-    move-result-object v0
+    invoke-virtual {v1, p1, p2}, Ljava/lang/StringBuilder;->append(D)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    move-result-object v1
 
-    move-result-object v0
+    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    filled-new-array {v0}, [Ljava/lang/String;
+    move-result-object v1
 
-    move-result-object v0
+    aput-object v1, v0, v3
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
@@ -1481,49 +1505,133 @@
 
     const-string v1, ")"
 
-    const-string v4, ","
+    const-string v2, ","
 
     if-eqz v0, :cond_2
 
+    new-array v0, v4, [Ljava/lang/String;
+
+    new-instance v7, Ljava/lang/StringBuilder;
+
+    const-string v8, "scale2Dev: Display position:top,left,right,bottom   :"
+
+    invoke-direct {v7, v8}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+
+    iget v8, p0, Landroid/graphics/Rect;->top:I
+
+    invoke-virtual {v7, v8}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    move-result-object v7
+
+    invoke-virtual {v7, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v7
+
+    iget v8, p0, Landroid/graphics/Rect;->left:I
+
+    invoke-virtual {v7, v8}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    move-result-object v7
+
+    invoke-virtual {v7, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v7
+
+    iget v8, p0, Landroid/graphics/Rect;->right:I
+
+    invoke-virtual {v7, v8}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    move-result-object v7
+
+    invoke-virtual {v7, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v7
+
+    iget v8, p0, Landroid/graphics/Rect;->bottom:I
+
+    invoke-virtual {v7, v8}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    move-result-object v7
+
+    invoke-virtual {v7, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v7
+
+    invoke-virtual {v7}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v7
+
+    aput-object v7, v0, v3
+
+    invoke-static {v0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
+
+    .line 90
+    :cond_2
+    iget v0, p0, Landroid/graphics/Rect;->top:I
+
+    int-to-double v7, v0
+
+    mul-double/2addr v7, p1
+
+    .line 91
+    iget v0, p0, Landroid/graphics/Rect;->left:I
+
+    int-to-double v9, v0
+
+    mul-double/2addr v9, v5
+
+    .line 92
+    iget v0, p0, Landroid/graphics/Rect;->bottom:I
+
+    int-to-double v11, v0
+
+    mul-double/2addr v11, p1
+
+    .line 93
+    iget p0, p0, Landroid/graphics/Rect;->right:I
+
+    int-to-double p0, p0
+
+    mul-double/2addr p0, v5
+
+    .line 95
+    sget-boolean p2, Ljp/co/sony/mc/camera/util/CamLog;->VERBOSE:Z
+
+    if-eqz p2, :cond_3
+
+    new-array p2, v4, [Ljava/lang/String;
+
     new-instance v0, Ljava/lang/StringBuilder;
 
-    const-string v5, "scale2Dev: Display position:top,left,right,bottom   :"
+    const-string v4, "scale2Dev: Device position:top,left,right,bottom   :"
 
-    invoke-direct {v0, v5}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+    invoke-direct {v0, v4}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
-    iget v5, p0, Landroid/graphics/Rect;->top:I
-
-    invoke-virtual {v0, v5}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+    invoke-virtual {v0, v7, v8}, Ljava/lang/StringBuilder;->append(D)Ljava/lang/StringBuilder;
 
     move-result-object v0
 
-    invoke-virtual {v0, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v0
 
-    iget v5, p0, Landroid/graphics/Rect;->left:I
-
-    invoke-virtual {v0, v5}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+    invoke-virtual {v0, v9, v10}, Ljava/lang/StringBuilder;->append(D)Ljava/lang/StringBuilder;
 
     move-result-object v0
 
-    invoke-virtual {v0, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v0
 
-    iget v5, p0, Landroid/graphics/Rect;->right:I
-
-    invoke-virtual {v0, v5}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+    invoke-virtual {v0, p0, p1}, Ljava/lang/StringBuilder;->append(D)Ljava/lang/StringBuilder;
 
     move-result-object v0
 
-    invoke-virtual {v0, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v0
 
-    iget v5, p0, Landroid/graphics/Rect;->bottom:I
-
-    invoke-virtual {v0, v5}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+    invoke-virtual {v0, v11, v12}, Ljava/lang/StringBuilder;->append(D)Ljava/lang/StringBuilder;
 
     move-result-object v0
 
@@ -1535,91 +1643,7 @@
 
     move-result-object v0
 
-    filled-new-array {v0}, [Ljava/lang/String;
-
-    move-result-object v0
-
-    invoke-static {v0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
-
-    .line 90
-    :cond_2
-    iget v0, p0, Landroid/graphics/Rect;->top:I
-
-    int-to-double v5, v0
-
-    mul-double/2addr v5, p1
-
-    .line 91
-    iget v0, p0, Landroid/graphics/Rect;->left:I
-
-    int-to-double v7, v0
-
-    mul-double/2addr v7, v2
-
-    .line 92
-    iget v0, p0, Landroid/graphics/Rect;->bottom:I
-
-    int-to-double v9, v0
-
-    mul-double/2addr v9, p1
-
-    .line 93
-    iget p0, p0, Landroid/graphics/Rect;->right:I
-
-    int-to-double p0, p0
-
-    mul-double/2addr p0, v2
-
-    .line 95
-    sget-boolean p2, Ljp/co/sony/mc/camera/util/CamLog;->VERBOSE:Z
-
-    if-eqz p2, :cond_3
-
-    new-instance p2, Ljava/lang/StringBuilder;
-
-    const-string v0, "scale2Dev: Device position:top,left,right,bottom   :"
-
-    invoke-direct {p2, v0}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
-
-    invoke-virtual {p2, v5, v6}, Ljava/lang/StringBuilder;->append(D)Ljava/lang/StringBuilder;
-
-    move-result-object p2
-
-    invoke-virtual {p2, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object p2
-
-    invoke-virtual {p2, v7, v8}, Ljava/lang/StringBuilder;->append(D)Ljava/lang/StringBuilder;
-
-    move-result-object p2
-
-    invoke-virtual {p2, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object p2
-
-    invoke-virtual {p2, p0, p1}, Ljava/lang/StringBuilder;->append(D)Ljava/lang/StringBuilder;
-
-    move-result-object p2
-
-    invoke-virtual {p2, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object p2
-
-    invoke-virtual {p2, v9, v10}, Ljava/lang/StringBuilder;->append(D)Ljava/lang/StringBuilder;
-
-    move-result-object p2
-
-    invoke-virtual {p2, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object p2
-
-    invoke-virtual {p2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object p2
-
-    filled-new-array {p2}, [Ljava/lang/String;
-
-    move-result-object p2
+    aput-object v0, p2, v3
 
     invoke-static {p2}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
@@ -1627,13 +1651,13 @@
     :cond_3
     new-instance p2, Landroid/graphics/Rect;
 
-    double-to-int v0, v7
+    double-to-int v0, v9
 
-    double-to-int v1, v5
+    double-to-int v1, v7
 
     double-to-int p0, p0
 
-    double-to-int p1, v9
+    double-to-int p1, v11
 
     invoke-direct {p2, v0, v1, p0, p1}, Landroid/graphics/Rect;-><init>(IIII)V
 

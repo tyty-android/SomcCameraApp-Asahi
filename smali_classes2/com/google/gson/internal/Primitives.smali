@@ -16,7 +16,7 @@
 .method public static isPrimitive(Ljava/lang/reflect/Type;)Z
     .locals 1
 
-    .line 34
+    .line 32
     instance-of v0, p0, Ljava/lang/Class;
 
     if-eqz v0, :cond_0
@@ -43,7 +43,7 @@
 .method public static isWrapperType(Ljava/lang/reflect/Type;)Z
     .locals 1
 
-    .line 44
+    .line 42
     const-class v0, Ljava/lang/Integer;
 
     if-eq p0, v0, :cond_1
@@ -214,7 +214,7 @@
         }
     .end annotation
 
-    .line 66
+    .line 65
     sget-object v0, Ljava/lang/Integer;->TYPE:Ljava/lang/Class;
 
     if-ne p0, v0, :cond_0
@@ -223,7 +223,7 @@
 
     return-object p0
 
-    .line 67
+    .line 66
     :cond_0
     sget-object v0, Ljava/lang/Float;->TYPE:Ljava/lang/Class;
 
@@ -233,7 +233,7 @@
 
     return-object p0
 
-    .line 68
+    .line 67
     :cond_1
     sget-object v0, Ljava/lang/Byte;->TYPE:Ljava/lang/Class;
 
@@ -243,7 +243,7 @@
 
     return-object p0
 
-    .line 69
+    .line 68
     :cond_2
     sget-object v0, Ljava/lang/Double;->TYPE:Ljava/lang/Class;
 
@@ -253,7 +253,7 @@
 
     return-object p0
 
-    .line 70
+    .line 69
     :cond_3
     sget-object v0, Ljava/lang/Long;->TYPE:Ljava/lang/Class;
 
@@ -263,7 +263,7 @@
 
     return-object p0
 
-    .line 71
+    .line 70
     :cond_4
     sget-object v0, Ljava/lang/Character;->TYPE:Ljava/lang/Class;
 
@@ -273,7 +273,7 @@
 
     return-object p0
 
-    .line 72
+    .line 71
     :cond_5
     sget-object v0, Ljava/lang/Boolean;->TYPE:Ljava/lang/Class;
 
@@ -283,7 +283,7 @@
 
     return-object p0
 
-    .line 73
+    .line 72
     :cond_6
     sget-object v0, Ljava/lang/Short;->TYPE:Ljava/lang/Class;
 
@@ -293,7 +293,7 @@
 
     return-object p0
 
-    .line 74
+    .line 73
     :cond_7
     sget-object v0, Ljava/lang/Void;->TYPE:Ljava/lang/Class;
 

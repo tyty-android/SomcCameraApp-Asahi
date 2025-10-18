@@ -16,8 +16,8 @@
 .annotation runtime Lkotlin/Metadata;
     k = 0x3
     mv = {
-        0x1,
-        0x9,
+        0x2,
+        0x0,
         0x0
     }
     xi = 0x30
@@ -45,7 +45,7 @@
     return-void
 .end method
 
-.method public static onFinderClick(Ljp/co/sony/mc/camera/view/UserOperationListener;Landroid/graphics/Point;ZZ)V
+.method public static onFinderClick(Ljp/co/sony/mc/camera/view/UserOperationListener;Landroid/graphics/Point;Z)V
     .locals 0
 
     const-string p0, "coordinate"
@@ -56,6 +56,16 @@
 .end method
 
 .method public static onFinderDoubleClick(Ljp/co/sony/mc/camera/view/UserOperationListener;Landroid/graphics/Point;Z)V
+    .locals 0
+
+    const-string p0, "coordinate"
+
+    invoke-static {p1, p0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+
+    return-void
+.end method
+
+.method public static onFinderLongClick(Ljp/co/sony/mc/camera/view/UserOperationListener;Landroid/graphics/Point;ZZ)V
     .locals 0
 
     const-string p0, "coordinate"

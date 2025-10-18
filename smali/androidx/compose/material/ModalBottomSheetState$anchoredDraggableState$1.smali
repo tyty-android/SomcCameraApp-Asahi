@@ -69,14 +69,14 @@
 .method public final invoke(F)Ljava/lang/Float;
     .locals 0
 
-    .line 207
+    .line 206
     iget-object p0, p0, Landroidx/compose/material/ModalBottomSheetState$anchoredDraggableState$1;->this$0:Landroidx/compose/material/ModalBottomSheetState;
 
     invoke-static {p0}, Landroidx/compose/material/ModalBottomSheetState;->access$requireDensity(Landroidx/compose/material/ModalBottomSheetState;)Landroidx/compose/ui/unit/Density;
 
     move-result-object p0
 
-    .line 208
+    .line 207
     invoke-static {}, Landroidx/compose/material/ModalBottomSheetKt;->access$getModalBottomSheetPositionalThreshold$p()F
 
     move-result p1
@@ -95,7 +95,7 @@
 .method public bridge synthetic invoke(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
 
-    .line 206
+    .line 205
     check-cast p1, Ljava/lang/Number;
 
     invoke-virtual {p1}, Ljava/lang/Number;->floatValue()F

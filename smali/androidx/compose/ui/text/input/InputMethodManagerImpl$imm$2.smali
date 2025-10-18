@@ -1,6 +1,6 @@
 .class final Landroidx/compose/ui/text/input/InputMethodManagerImpl$imm$2;
 .super Lkotlin/jvm/internal/Lambda;
-.source "InputMethodManager.kt"
+.source "InputMethodManager.android.kt"
 
 # interfaces
 .implements Lkotlin/jvm/functions/Function0;
@@ -66,7 +66,7 @@
 .method public final invoke()Landroid/view/inputmethod/InputMethodManager;
     .locals 1
 
-    .line 52
+    .line 57
     iget-object p0, p0, Landroidx/compose/ui/text/input/InputMethodManagerImpl$imm$2;->this$0:Landroidx/compose/ui/text/input/InputMethodManagerImpl;
 
     invoke-static {p0}, Landroidx/compose/ui/text/input/InputMethodManagerImpl;->access$getView$p(Landroidx/compose/ui/text/input/InputMethodManagerImpl;)Landroid/view/View;
@@ -95,7 +95,7 @@
 .method public bridge synthetic invoke()Ljava/lang/Object;
     .locals 0
 
-    .line 51
+    .line 56
     invoke-virtual {p0}, Landroidx/compose/ui/text/input/InputMethodManagerImpl$imm$2;->invoke()Landroid/view/inputmethod/InputMethodManager;
 
     move-result-object p0

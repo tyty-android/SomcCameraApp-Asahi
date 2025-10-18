@@ -32,7 +32,7 @@
 
 .annotation runtime Lkotlin/Metadata;
     d1 = {
-        "\u0000\n\n\u0000\n\u0002\u0010\u0002\n\u0002\u0018\u0002\u0010\u0000\u001a\u00020\u0001*\u00020\u0002H\u008a@"
+        "\u0000\n\n\u0000\n\u0002\u0010\u0002\n\u0002\u0018\u0002\u0010\u0000\u001a\u00020\u0001*\u00020\u0002H\n"
     }
     d2 = {
         "<anonymous>",
@@ -41,8 +41,8 @@
     }
     k = 0x3
     mv = {
-        0x1,
-        0x9,
+        0x2,
+        0x0,
         0x0
     }
     xi = 0x30
@@ -159,7 +159,7 @@
 .end method
 
 .method public final invokeSuspend(Ljava/lang/Object;)Ljava/lang/Object;
-    .locals 1
+    .locals 2
 
     invoke-static {}, Lkotlin/coroutines/intrinsics/IntrinsicsKt;->getCOROUTINE_SUSPENDED()Ljava/lang/Object;
 
@@ -175,11 +175,15 @@
 
     if-eqz p1, :cond_0
 
-    const-string p1, "selfie accessory not found"
+    const/4 p1, 0x1
 
-    filled-new-array {p1}, [Ljava/lang/String;
+    new-array p1, p1, [Ljava/lang/String;
 
-    move-result-object p1
+    const/4 v0, 0x0
+
+    const-string v1, "selfie accessory not found"
+
+    aput-object v1, p1, v0
 
     invoke-static {p1}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 

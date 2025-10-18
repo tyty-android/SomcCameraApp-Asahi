@@ -76,7 +76,7 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 262
+    .line 255
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -85,7 +85,7 @@
 .method public static final synthetic access$getStaticLayoutConstructor$cp()Ljava/lang/reflect/Constructor;
     .locals 1
 
-    .line 262
+    .line 255
     sget-object v0, Landroidx/compose/ui/text/android/StaticLayoutFactoryDefault;->staticLayoutConstructor:Ljava/lang/reflect/Constructor;
 
     return-object v0
@@ -94,7 +94,7 @@
 .method public static final synthetic access$isInitialized$cp()Z
     .locals 1
 
-    .line 262
+    .line 255
     sget-boolean v0, Landroidx/compose/ui/text/android/StaticLayoutFactoryDefault;->isInitialized:Z
 
     return v0
@@ -103,7 +103,7 @@
 .method public static final synthetic access$setInitialized$cp(Z)V
     .locals 0
 
-    .line 262
+    .line 255
     sput-boolean p0, Landroidx/compose/ui/text/android/StaticLayoutFactoryDefault;->isInitialized:Z
 
     return-void
@@ -112,7 +112,7 @@
 .method public static final synthetic access$setStaticLayoutConstructor$cp(Ljava/lang/reflect/Constructor;)V
     .locals 0
 
-    .line 262
+    .line 255
     sput-object p0, Landroidx/compose/ui/text/android/StaticLayoutFactoryDefault;->staticLayoutConstructor:Ljava/lang/reflect/Constructor;
 
     return-void
@@ -123,55 +123,37 @@
 .method public create(Landroidx/compose/ui/text/android/StaticLayoutParams;)Landroid/text/StaticLayout;
     .locals 17
 
+    .line 294
     const-string/jumbo v0, "unable to call constructor"
 
     const-string v1, "StaticLayoutFactory"
 
-    const-string v2, "params"
-
-    move-object/from16 v3, p1
-
-    invoke-static {v3, v2}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 301
     sget-object v2, Landroidx/compose/ui/text/android/StaticLayoutFactoryDefault;->Companion:Landroidx/compose/ui/text/android/StaticLayoutFactoryDefault$Companion;
 
     invoke-static {v2}, Landroidx/compose/ui/text/android/StaticLayoutFactoryDefault$Companion;->access$getStaticLayoutConstructor(Landroidx/compose/ui/text/android/StaticLayoutFactoryDefault$Companion;)Ljava/lang/reflect/Constructor;
 
     move-result-object v2
 
-    const/4 v4, 0x0
+    const/4 v3, 0x0
 
     if-eqz v2, :cond_0
 
-    const/16 v5, 0xd
-
-    .line 304
+    .line 297
     :try_start_0
-    new-array v5, v5, [Ljava/lang/Object;
-
     invoke-virtual/range {p1 .. p1}, Landroidx/compose/ui/text/android/StaticLayoutParams;->getText()Ljava/lang/CharSequence;
 
-    move-result-object v6
+    move-result-object v4
 
-    const/4 v7, 0x0
-
-    aput-object v6, v5, v7
-
-    .line 305
+    .line 298
     invoke-virtual/range {p1 .. p1}, Landroidx/compose/ui/text/android/StaticLayoutParams;->getStart()I
 
-    move-result v6
+    move-result v5
 
-    invoke-static {v6}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+    invoke-static {v5}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
-    move-result-object v6
+    move-result-object v5
 
-    const/4 v7, 0x1
-
-    aput-object v6, v5, v7
-
-    .line 306
+    .line 299
     invoke-virtual/range {p1 .. p1}, Landroidx/compose/ui/text/android/StaticLayoutParams;->getEnd()I
 
     move-result v6
@@ -180,126 +162,86 @@
 
     move-result-object v6
 
-    const/4 v7, 0x2
-
-    aput-object v6, v5, v7
-
-    .line 307
+    .line 300
     invoke-virtual/range {p1 .. p1}, Landroidx/compose/ui/text/android/StaticLayoutParams;->getPaint()Landroid/text/TextPaint;
 
-    move-result-object v6
+    move-result-object v7
 
-    const/4 v7, 0x3
-
-    aput-object v6, v5, v7
-
-    .line 308
+    .line 301
     invoke-virtual/range {p1 .. p1}, Landroidx/compose/ui/text/android/StaticLayoutParams;->getWidth()I
 
-    move-result v6
+    move-result v8
 
-    invoke-static {v6}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+    invoke-static {v8}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
-    move-result-object v6
+    move-result-object v8
 
-    const/4 v7, 0x4
-
-    aput-object v6, v5, v7
-
-    .line 309
+    .line 302
     invoke-virtual/range {p1 .. p1}, Landroidx/compose/ui/text/android/StaticLayoutParams;->getAlignment()Landroid/text/Layout$Alignment;
 
-    move-result-object v6
-
-    const/4 v7, 0x5
-
-    aput-object v6, v5, v7
-
-    .line 310
-    invoke-virtual/range {p1 .. p1}, Landroidx/compose/ui/text/android/StaticLayoutParams;->getTextDir()Landroid/text/TextDirectionHeuristic;
-
-    move-result-object v6
-
-    const/4 v7, 0x6
-
-    aput-object v6, v5, v7
-
-    .line 311
-    invoke-virtual/range {p1 .. p1}, Landroidx/compose/ui/text/android/StaticLayoutParams;->getLineSpacingMultiplier()F
-
-    move-result v6
-
-    invoke-static {v6}, Ljava/lang/Float;->valueOf(F)Ljava/lang/Float;
-
-    move-result-object v6
-
-    const/4 v7, 0x7
-
-    aput-object v6, v5, v7
-
-    .line 312
-    invoke-virtual/range {p1 .. p1}, Landroidx/compose/ui/text/android/StaticLayoutParams;->getLineSpacingExtra()F
-
-    move-result v6
-
-    invoke-static {v6}, Ljava/lang/Float;->valueOf(F)Ljava/lang/Float;
-
-    move-result-object v6
-
-    const/16 v7, 0x8
-
-    aput-object v6, v5, v7
-
-    .line 313
-    invoke-virtual/range {p1 .. p1}, Landroidx/compose/ui/text/android/StaticLayoutParams;->getIncludePadding()Z
-
-    move-result v6
-
-    invoke-static {v6}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
-
-    move-result-object v6
-
-    const/16 v7, 0x9
-
-    aput-object v6, v5, v7
-
-    .line 314
-    invoke-virtual/range {p1 .. p1}, Landroidx/compose/ui/text/android/StaticLayoutParams;->getEllipsize()Landroid/text/TextUtils$TruncateAt;
-
-    move-result-object v6
-
-    const/16 v7, 0xa
-
-    aput-object v6, v5, v7
-
-    .line 315
-    invoke-virtual/range {p1 .. p1}, Landroidx/compose/ui/text/android/StaticLayoutParams;->getEllipsizedWidth()I
-
-    move-result v6
-
-    invoke-static {v6}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
-
-    move-result-object v6
-
-    const/16 v7, 0xb
-
-    aput-object v6, v5, v7
-
-    .line 316
-    invoke-virtual/range {p1 .. p1}, Landroidx/compose/ui/text/android/StaticLayoutParams;->getMaxLines()I
-
-    move-result v6
-
-    invoke-static {v6}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
-
-    move-result-object v6
-
-    const/16 v7, 0xc
-
-    aput-object v6, v5, v7
+    move-result-object v9
 
     .line 303
-    invoke-virtual {v2, v5}, Ljava/lang/reflect/Constructor;->newInstance([Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual/range {p1 .. p1}, Landroidx/compose/ui/text/android/StaticLayoutParams;->getTextDir()Landroid/text/TextDirectionHeuristic;
+
+    move-result-object v10
+
+    .line 304
+    invoke-virtual/range {p1 .. p1}, Landroidx/compose/ui/text/android/StaticLayoutParams;->getLineSpacingMultiplier()F
+
+    move-result v11
+
+    invoke-static {v11}, Ljava/lang/Float;->valueOf(F)Ljava/lang/Float;
+
+    move-result-object v11
+
+    .line 305
+    invoke-virtual/range {p1 .. p1}, Landroidx/compose/ui/text/android/StaticLayoutParams;->getLineSpacingExtra()F
+
+    move-result v12
+
+    invoke-static {v12}, Ljava/lang/Float;->valueOf(F)Ljava/lang/Float;
+
+    move-result-object v12
+
+    .line 306
+    invoke-virtual/range {p1 .. p1}, Landroidx/compose/ui/text/android/StaticLayoutParams;->getIncludePadding()Z
+
+    move-result v13
+
+    invoke-static {v13}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
+
+    move-result-object v13
+
+    .line 307
+    invoke-virtual/range {p1 .. p1}, Landroidx/compose/ui/text/android/StaticLayoutParams;->getEllipsize()Landroid/text/TextUtils$TruncateAt;
+
+    move-result-object v14
+
+    .line 308
+    invoke-virtual/range {p1 .. p1}, Landroidx/compose/ui/text/android/StaticLayoutParams;->getEllipsizedWidth()I
+
+    move-result v15
+
+    invoke-static {v15}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v15
+
+    .line 309
+    invoke-virtual/range {p1 .. p1}, Landroidx/compose/ui/text/android/StaticLayoutParams;->getMaxLines()I
+
+    move-result v16
+
+    invoke-static/range {v16 .. v16}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v16
+
+    filled-new-array/range {v4 .. v16}, [Ljava/lang/Object;
+
+    move-result-object v4
+
+    .line 296
+    invoke-virtual {v2, v4}, Ljava/lang/reflect/Constructor;->newInstance([Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v2
 
@@ -309,114 +251,110 @@
     .catch Ljava/lang/InstantiationException; {:try_start_0 .. :try_end_0} :catch_1
     .catch Ljava/lang/reflect/InvocationTargetException; {:try_start_0 .. :try_end_0} :catch_0
 
-    move-object v4, v2
+    move-object v3, v2
 
     goto :goto_0
-
-    .line 327
-    :catch_0
-    sput-object v4, Landroidx/compose/ui/text/android/StaticLayoutFactoryDefault;->staticLayoutConstructor:Ljava/lang/reflect/Constructor;
-
-    .line 328
-    invoke-static {v1, v0}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
-
-    goto :goto_0
-
-    .line 323
-    :catch_1
-    sput-object v4, Landroidx/compose/ui/text/android/StaticLayoutFactoryDefault;->staticLayoutConstructor:Ljava/lang/reflect/Constructor;
-
-    .line 324
-    invoke-static {v1, v0}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
-
-    goto :goto_0
-
-    .line 319
-    :catch_2
-    sput-object v4, Landroidx/compose/ui/text/android/StaticLayoutFactoryDefault;->staticLayoutConstructor:Ljava/lang/reflect/Constructor;
 
     .line 320
+    :catch_0
+    sput-object v3, Landroidx/compose/ui/text/android/StaticLayoutFactoryDefault;->staticLayoutConstructor:Ljava/lang/reflect/Constructor;
+
+    .line 321
+    invoke-static {v1, v0}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
+
+    goto :goto_0
+
+    .line 316
+    :catch_1
+    sput-object v3, Landroidx/compose/ui/text/android/StaticLayoutFactoryDefault;->staticLayoutConstructor:Ljava/lang/reflect/Constructor;
+
+    .line 317
+    invoke-static {v1, v0}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
+
+    goto :goto_0
+
+    .line 312
+    :catch_2
+    sput-object v3, Landroidx/compose/ui/text/android/StaticLayoutFactoryDefault;->staticLayoutConstructor:Ljava/lang/reflect/Constructor;
+
+    .line 313
     invoke-static {v1, v0}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
 
     :cond_0
     :goto_0
-    if-eqz v4, :cond_1
+    if-eqz v3, :cond_1
 
-    return-object v4
+    return-object v3
 
-    .line 338
+    .line 331
     :cond_1
     new-instance v0, Landroid/text/StaticLayout;
 
-    .line 339
+    .line 332
     invoke-virtual/range {p1 .. p1}, Landroidx/compose/ui/text/android/StaticLayoutParams;->getText()Ljava/lang/CharSequence;
 
-    move-result-object v6
+    move-result-object v5
 
-    .line 340
+    .line 333
     invoke-virtual/range {p1 .. p1}, Landroidx/compose/ui/text/android/StaticLayoutParams;->getStart()I
+
+    move-result v6
+
+    .line 334
+    invoke-virtual/range {p1 .. p1}, Landroidx/compose/ui/text/android/StaticLayoutParams;->getEnd()I
 
     move-result v7
 
-    .line 341
-    invoke-virtual/range {p1 .. p1}, Landroidx/compose/ui/text/android/StaticLayoutParams;->getEnd()I
-
-    move-result v8
-
-    .line 342
+    .line 335
     invoke-virtual/range {p1 .. p1}, Landroidx/compose/ui/text/android/StaticLayoutParams;->getPaint()Landroid/text/TextPaint;
 
-    move-result-object v9
+    move-result-object v8
 
-    .line 343
+    .line 336
     invoke-virtual/range {p1 .. p1}, Landroidx/compose/ui/text/android/StaticLayoutParams;->getWidth()I
 
-    move-result v10
+    move-result v9
 
-    .line 344
+    .line 337
     invoke-virtual/range {p1 .. p1}, Landroidx/compose/ui/text/android/StaticLayoutParams;->getAlignment()Landroid/text/Layout$Alignment;
 
-    move-result-object v11
+    move-result-object v10
 
-    .line 345
+    .line 338
     invoke-virtual/range {p1 .. p1}, Landroidx/compose/ui/text/android/StaticLayoutParams;->getLineSpacingMultiplier()F
+
+    move-result v11
+
+    .line 339
+    invoke-virtual/range {p1 .. p1}, Landroidx/compose/ui/text/android/StaticLayoutParams;->getLineSpacingExtra()F
 
     move-result v12
 
-    .line 346
-    invoke-virtual/range {p1 .. p1}, Landroidx/compose/ui/text/android/StaticLayoutParams;->getLineSpacingExtra()F
+    .line 340
+    invoke-virtual/range {p1 .. p1}, Landroidx/compose/ui/text/android/StaticLayoutParams;->getIncludePadding()Z
 
     move-result v13
 
-    .line 347
-    invoke-virtual/range {p1 .. p1}, Landroidx/compose/ui/text/android/StaticLayoutParams;->getIncludePadding()Z
-
-    move-result v14
-
-    .line 348
+    .line 341
     invoke-virtual/range {p1 .. p1}, Landroidx/compose/ui/text/android/StaticLayoutParams;->getEllipsize()Landroid/text/TextUtils$TruncateAt;
 
-    move-result-object v15
+    move-result-object v14
 
-    .line 349
+    .line 342
     invoke-virtual/range {p1 .. p1}, Landroidx/compose/ui/text/android/StaticLayoutParams;->getEllipsizedWidth()I
 
-    move-result v16
+    move-result v15
 
-    move-object v5, v0
+    move-object v4, v0
 
-    .line 338
-    invoke-direct/range {v5 .. v16}, Landroid/text/StaticLayout;-><init>(Ljava/lang/CharSequence;IILandroid/text/TextPaint;ILandroid/text/Layout$Alignment;FFZLandroid/text/TextUtils$TruncateAt;I)V
+    .line 331
+    invoke-direct/range {v4 .. v15}, Landroid/text/StaticLayout;-><init>(Ljava/lang/CharSequence;IILandroid/text/TextPaint;ILandroid/text/Layout$Alignment;FFZLandroid/text/TextUtils$TruncateAt;I)V
 
     return-object v0
 .end method
 
 .method public isFallbackLineSpacingEnabled(Landroid/text/StaticLayout;Z)Z
     .locals 0
-
-    const-string p0, "layout"
-
-    invoke-static {p1, p0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
     const/4 p0, 0x0
 

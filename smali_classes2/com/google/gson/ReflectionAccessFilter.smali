@@ -25,28 +25,28 @@
 .method static constructor <clinit>()V
     .locals 1
 
-    .line 105
+    .line 112
     new-instance v0, Lcom/google/gson/ReflectionAccessFilter$1;
 
     invoke-direct {v0}, Lcom/google/gson/ReflectionAccessFilter$1;-><init>()V
 
     sput-object v0, Lcom/google/gson/ReflectionAccessFilter;->BLOCK_INACCESSIBLE_JAVA:Lcom/google/gson/ReflectionAccessFilter;
 
-    .line 130
+    .line 143
     new-instance v0, Lcom/google/gson/ReflectionAccessFilter$2;
 
     invoke-direct {v0}, Lcom/google/gson/ReflectionAccessFilter$2;-><init>()V
 
     sput-object v0, Lcom/google/gson/ReflectionAccessFilter;->BLOCK_ALL_JAVA:Lcom/google/gson/ReflectionAccessFilter;
 
-    .line 154
+    .line 174
     new-instance v0, Lcom/google/gson/ReflectionAccessFilter$3;
 
     invoke-direct {v0}, Lcom/google/gson/ReflectionAccessFilter$3;-><init>()V
 
     sput-object v0, Lcom/google/gson/ReflectionAccessFilter;->BLOCK_ALL_ANDROID:Lcom/google/gson/ReflectionAccessFilter;
 
-    .line 179
+    .line 206
     new-instance v0, Lcom/google/gson/ReflectionAccessFilter$4;
 
     invoke-direct {v0}, Lcom/google/gson/ReflectionAccessFilter$4;-><init>()V

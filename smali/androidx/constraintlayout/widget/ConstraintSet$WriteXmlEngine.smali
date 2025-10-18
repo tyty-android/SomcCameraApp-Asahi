@@ -855,7 +855,7 @@
 .end method
 
 .method writeLayout()V
-    .locals 18
+    .locals 16
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -1225,13 +1225,13 @@
     invoke-direct {v0, v3, v12, v13}, Landroidx/constraintlayout/widget/ConstraintSet$WriteXmlEngine;->writeBoolen(Ljava/lang/String;ZZ)V
 
     .line 5491
-    iget-boolean v3, v2, Landroidx/constraintlayout/widget/ConstraintSet$Layout;->mBarrierAllowsGoneWidgets:Z
+    const-string v3, "app:barrierAllowsGoneWidgets"
 
-    const/4 v12, 0x1
+    iget-boolean v12, v2, Landroidx/constraintlayout/widget/ConstraintSet$Layout;->mBarrierAllowsGoneWidgets:Z
 
-    const-string v14, "app:barrierAllowsGoneWidgets"
+    const/4 v14, 0x1
 
-    invoke-direct {v0, v14, v3, v12}, Landroidx/constraintlayout/widget/ConstraintSet$WriteXmlEngine;->writeBoolen(Ljava/lang/String;ZZ)V
+    invoke-direct {v0, v3, v12, v14}, Landroidx/constraintlayout/widget/ConstraintSet$WriteXmlEngine;->writeBoolen(Ljava/lang/String;ZZ)V
 
     .line 5492
     iget v3, v2, Landroidx/constraintlayout/widget/ConstraintSet$Layout;->mWrapBehavior:I
@@ -1347,88 +1347,96 @@
 
     invoke-virtual {v0, v3, v7}, Landroidx/constraintlayout/widget/ConstraintSet$WriteXmlEngine;->writeXmlConstraint(Ljava/lang/String;I)V
 
-    .line 5510
-    const-string/jumbo v3, "wrap"
+    const/4 v3, 0x3
 
-    const-string v7, "percent"
+    .line 5510
+    new-array v7, v3, [Ljava/lang/String;
 
     const-string/jumbo v12, "spread"
 
-    filled-new-array {v12, v3, v7}, [Ljava/lang/String;
+    aput-object v12, v7, v13
 
-    move-result-object v3
+    const-string/jumbo v12, "wrap"
+
+    aput-object v12, v7, v14
+
+    const-string v12, "percent"
+
+    const/4 v15, 0x2
+
+    aput-object v12, v7, v15
 
     .line 5511
-    const-string v7, "app:layout_constraintHeight_default"
+    const-string v12, "app:layout_constraintHeight_default"
 
-    iget v12, v2, Landroidx/constraintlayout/widget/ConstraintSet$Layout;->heightDefault:I
+    iget v6, v2, Landroidx/constraintlayout/widget/ConstraintSet$Layout;->heightDefault:I
 
-    invoke-direct {v0, v7, v12, v3, v13}, Landroidx/constraintlayout/widget/ConstraintSet$WriteXmlEngine;->writeEnum(Ljava/lang/String;I[Ljava/lang/String;I)V
+    invoke-direct {v0, v12, v6, v7, v13}, Landroidx/constraintlayout/widget/ConstraintSet$WriteXmlEngine;->writeEnum(Ljava/lang/String;I[Ljava/lang/String;I)V
 
     .line 5512
-    const-string v7, "app:layout_constraintHeight_percent"
+    const-string v6, "app:layout_constraintHeight_percent"
 
     iget v12, v2, Landroidx/constraintlayout/widget/ConstraintSet$Layout;->heightPercent:F
 
-    const/high16 v14, 0x3f800000    # 1.0f
+    const/high16 v3, 0x3f800000    # 1.0f
 
-    invoke-virtual {v0, v7, v12, v14}, Landroidx/constraintlayout/widget/ConstraintSet$WriteXmlEngine;->writeVariable(Ljava/lang/String;FF)V
+    invoke-virtual {v0, v6, v12, v3}, Landroidx/constraintlayout/widget/ConstraintSet$WriteXmlEngine;->writeVariable(Ljava/lang/String;FF)V
 
     .line 5513
-    const-string v7, "app:layout_constraintHeight_min"
+    const-string v6, "app:layout_constraintHeight_min"
 
     iget v12, v2, Landroidx/constraintlayout/widget/ConstraintSet$Layout;->heightMin:I
 
-    invoke-direct {v0, v7, v12, v13}, Landroidx/constraintlayout/widget/ConstraintSet$WriteXmlEngine;->writeDimension(Ljava/lang/String;II)V
+    invoke-direct {v0, v6, v12, v13}, Landroidx/constraintlayout/widget/ConstraintSet$WriteXmlEngine;->writeDimension(Ljava/lang/String;II)V
 
     .line 5514
-    const-string v7, "app:layout_constraintHeight_max"
+    const-string v6, "app:layout_constraintHeight_max"
 
     iget v12, v2, Landroidx/constraintlayout/widget/ConstraintSet$Layout;->heightMax:I
 
-    invoke-direct {v0, v7, v12, v13}, Landroidx/constraintlayout/widget/ConstraintSet$WriteXmlEngine;->writeDimension(Ljava/lang/String;II)V
+    invoke-direct {v0, v6, v12, v13}, Landroidx/constraintlayout/widget/ConstraintSet$WriteXmlEngine;->writeDimension(Ljava/lang/String;II)V
 
     .line 5515
-    const-string v7, "android:layout_constrainedHeight"
+    const-string v6, "android:layout_constrainedHeight"
 
     iget-boolean v12, v2, Landroidx/constraintlayout/widget/ConstraintSet$Layout;->constrainedHeight:Z
 
-    invoke-direct {v0, v7, v12, v13}, Landroidx/constraintlayout/widget/ConstraintSet$WriteXmlEngine;->writeBoolen(Ljava/lang/String;ZZ)V
+    invoke-direct {v0, v6, v12, v13}, Landroidx/constraintlayout/widget/ConstraintSet$WriteXmlEngine;->writeBoolen(Ljava/lang/String;ZZ)V
 
     .line 5517
-    const-string v7, "app:layout_constraintWidth_default"
+    const-string v6, "app:layout_constraintWidth_default"
 
     iget v12, v2, Landroidx/constraintlayout/widget/ConstraintSet$Layout;->widthDefault:I
 
-    invoke-direct {v0, v7, v12, v3, v13}, Landroidx/constraintlayout/widget/ConstraintSet$WriteXmlEngine;->writeEnum(Ljava/lang/String;I[Ljava/lang/String;I)V
+    invoke-direct {v0, v6, v12, v7, v13}, Landroidx/constraintlayout/widget/ConstraintSet$WriteXmlEngine;->writeEnum(Ljava/lang/String;I[Ljava/lang/String;I)V
 
     .line 5518
-    const-string v3, "app:layout_constraintWidth_percent"
+    const-string v6, "app:layout_constraintWidth_percent"
 
     iget v7, v2, Landroidx/constraintlayout/widget/ConstraintSet$Layout;->widthPercent:F
 
-    invoke-virtual {v0, v3, v7, v14}, Landroidx/constraintlayout/widget/ConstraintSet$WriteXmlEngine;->writeVariable(Ljava/lang/String;FF)V
+    invoke-virtual {v0, v6, v7, v3}, Landroidx/constraintlayout/widget/ConstraintSet$WriteXmlEngine;->writeVariable(Ljava/lang/String;FF)V
 
     .line 5519
     const-string v3, "app:layout_constraintWidth_min"
 
-    iget v7, v2, Landroidx/constraintlayout/widget/ConstraintSet$Layout;->widthMin:I
+    iget v6, v2, Landroidx/constraintlayout/widget/ConstraintSet$Layout;->widthMin:I
 
-    invoke-direct {v0, v3, v7, v13}, Landroidx/constraintlayout/widget/ConstraintSet$WriteXmlEngine;->writeDimension(Ljava/lang/String;II)V
+    invoke-direct {v0, v3, v6, v13}, Landroidx/constraintlayout/widget/ConstraintSet$WriteXmlEngine;->writeDimension(Ljava/lang/String;II)V
 
     .line 5520
     const-string v3, "app:layout_constraintWidth_max"
 
-    iget v7, v2, Landroidx/constraintlayout/widget/ConstraintSet$Layout;->widthMax:I
+    iget v6, v2, Landroidx/constraintlayout/widget/ConstraintSet$Layout;->widthMax:I
 
-    invoke-direct {v0, v3, v7, v13}, Landroidx/constraintlayout/widget/ConstraintSet$WriteXmlEngine;->writeDimension(Ljava/lang/String;II)V
+    invoke-direct {v0, v3, v6, v13}, Landroidx/constraintlayout/widget/ConstraintSet$WriteXmlEngine;->writeDimension(Ljava/lang/String;II)V
 
     .line 5521
     const-string v3, "android:layout_constrainedWidth"
 
-    iget-boolean v7, v2, Landroidx/constraintlayout/widget/ConstraintSet$Layout;->constrainedWidth:Z
+    iget-boolean v6, v2, Landroidx/constraintlayout/widget/ConstraintSet$Layout;->constrainedWidth:Z
 
-    invoke-direct {v0, v3, v7, v13}, Landroidx/constraintlayout/widget/ConstraintSet$WriteXmlEngine;->writeBoolen(Ljava/lang/String;ZZ)V
+    invoke-direct {v0, v3, v6, v13}, Landroidx/constraintlayout/widget/ConstraintSet$WriteXmlEngine;->writeBoolen(Ljava/lang/String;ZZ)V
 
     .line 5523
     iget v3, v2, Landroidx/constraintlayout/widget/ConstraintSet$Layout;->verticalWeight:F
@@ -1450,22 +1458,40 @@
 
     invoke-virtual {v0, v10, v3}, Landroidx/constraintlayout/widget/ConstraintSet$WriteXmlEngine;->writeVariable(Ljava/lang/String;I)V
 
+    const/4 v3, 0x6
+
     .line 5527
-    const-string/jumbo v16, "start"
+    new-array v3, v3, [Ljava/lang/String;
 
-    const-string v17, "end"
+    const-string v4, "left"
 
-    const-string v12, "left"
+    aput-object v4, v3, v13
 
-    const-string v13, "right"
+    const-string v4, "right"
 
-    const-string/jumbo v14, "top"
+    aput-object v4, v3, v14
 
-    const-string v15, "bottom"
+    const-string/jumbo v4, "top"
 
-    filled-new-array/range {v12 .. v17}, [Ljava/lang/String;
+    aput-object v4, v3, v15
 
-    move-result-object v3
+    const-string v4, "bottom"
+
+    const/4 v5, 0x3
+
+    aput-object v4, v3, v5
+
+    const/4 v4, 0x4
+
+    const-string/jumbo v5, "start"
+
+    aput-object v5, v3, v4
+
+    const/4 v4, 0x5
+
+    const-string v5, "end"
+
+    aput-object v5, v3, v4
 
     .line 5528
     iget v4, v2, Landroidx/constraintlayout/widget/ConstraintSet$Layout;->mBarrierDirection:I
@@ -1479,7 +1505,9 @@
 
     iget-object v4, v2, Landroidx/constraintlayout/widget/ConstraintSet$Layout;->mConstraintTag:Ljava/lang/String;
 
-    invoke-virtual {v0, v3, v4, v6}, Landroidx/constraintlayout/widget/ConstraintSet$WriteXmlEngine;->writeVariable(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+    const/4 v5, 0x0
+
+    invoke-virtual {v0, v3, v4, v5}, Landroidx/constraintlayout/widget/ConstraintSet$WriteXmlEngine;->writeVariable(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 
     .line 5531
     iget-object v3, v2, Landroidx/constraintlayout/widget/ConstraintSet$Layout;->mReferenceIds:[I

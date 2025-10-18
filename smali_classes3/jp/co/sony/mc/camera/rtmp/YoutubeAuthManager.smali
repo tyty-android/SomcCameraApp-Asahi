@@ -13,57 +13,58 @@
 
 .annotation runtime Lkotlin/Metadata;
     d1 = {
-        "\u0000n\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\u0008\u0002\n\u0002\u0010\u000e\n\u0002\u0008\u0005\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000b\n\u0002\u0008\u0003\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0003\u0008\u0007\u0018\u0000 )2\u00020\u0001:\u0002()B\u0005\u00a2\u0006\u0002\u0010\u0002J\u0010\u0010\u0008\u001a\u00020\u00042\u0006\u0010\u000f\u001a\u00020\u0010H\u0002J\u0016\u0010\u0011\u001a\u00020\u00122\u0006\u0010\u0013\u001a\u00020\u00142\u0006\u0010\u0015\u001a\u00020\u0016J\n\u0010\u0017\u001a\u00060\nR\u00020\u0000J\u0006\u0010\u0018\u001a\u00020\u0019J\u000e\u0010\u001a\u001a\u00020\u001b2\u0006\u0010\u0013\u001a\u00020\u0014J\u0010\u0010\u001c\u001a\u00020\u00122\u0006\u0010\u001d\u001a\u00020\u0019H\u0002J\u0016\u0010\u001e\u001a\u00020\u00122\u0006\u0010\u0013\u001a\u00020\u001f2\u0006\u0010 \u001a\u00020!J\u001a\u0010\"\u001a\u00020\u00122\u0008\u0010#\u001a\u0004\u0018\u00010$2\u0008\u0010%\u001a\u0004\u0018\u00010&J\u001c\u0010\"\u001a\u00020\u00122\u0008\u0010#\u001a\u0004\u0018\u00010\'2\u0008\u0010%\u001a\u0004\u0018\u00010&H\u0002R\u000e\u0010\u0003\u001a\u00020\u0004X\u0082D\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u0005\u001a\u00020\u0004X\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u0006\u001a\u00020\u0004X\u0082D\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u0007\u001a\u00020\u0004X\u0082D\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u0008\u001a\u00020\u0004X\u0082D\u00a2\u0006\u0002\n\u0000R\u0012\u0010\t\u001a\u00060\nR\u00020\u0000X\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u000b\u001a\u00020\u000cX\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u000e\u0010\r\u001a\u00020\u000eX\u0082\u0004\u00a2\u0006\u0002\n\u0000\u00a8\u0006*"
+        "\u0000p\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\u0008\u0003\n\u0002\u0010\u000e\n\u0002\u0008\u0004\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0002\n\u0002\u0008\u0003\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000b\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0003\u0008\u0007\u0018\u0000 )2\u00020\u0001:\u0002)*B\t\u0008\u0007\u00a2\u0006\u0004\u0008\u0002\u0010\u0003J\n\u0010\u0010\u001a\u00060\u000cR\u00020\u0000J\u0006\u0010\u0011\u001a\u00020\u0012J\u0010\u0010\u0013\u001a\u00020\u00142\u0006\u0010\u0015\u001a\u00020\u0012H\u0002J\u001a\u0010\u0016\u001a\u00020\u00142\u0008\u0010\u0017\u001a\u0004\u0018\u00010\u00182\u0008\u0010\u0019\u001a\u0004\u0018\u00010\u001aJ\u001c\u0010\u0016\u001a\u00020\u00142\u0008\u0010\u0017\u001a\u0004\u0018\u00010\u001b2\u0008\u0010\u0019\u001a\u0004\u0018\u00010\u001aH\u0002J\u0016\u0010\u001c\u001a\u00020\u00142\u0006\u0010\u001d\u001a\u00020\u001e2\u0006\u0010\u001f\u001a\u00020 J\u0016\u0010!\u001a\u00020\u00142\u0006\u0010\u001d\u001a\u00020\"2\u0006\u0010#\u001a\u00020$J\u000e\u0010%\u001a\u00020&2\u0006\u0010\u001d\u001a\u00020\"J\u0010\u0010\r\u001a\u00020\u00052\u0006\u0010\'\u001a\u00020(H\u0002R\u000e\u0010\u0004\u001a\u00020\u0005X\u0082D\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u0006\u001a\u00020\u0005X\u0082D\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u0007\u001a\u00020\u0005X\u0082D\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u0008\u001a\u00020\u0005X\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u000e\u0010\t\u001a\u00020\nX\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u0012\u0010\u000b\u001a\u00060\u000cR\u00020\u0000X\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u000e\u0010\r\u001a\u00020\u0005X\u0082D\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u000e\u001a\u00020\u000fX\u0082\u0004\u00a2\u0006\u0002\n\u0000\u00a8\u0006+"
     }
     d2 = {
         "Ljp/co/sony/mc/camera/rtmp/YoutubeAuthManager;",
         "",
+        "<init>",
         "()V",
         "AUTHORIZATION_ENDPOINT",
         "",
-        "REDIRECT_URI",
-        "REQUEST_SCOPE",
         "TOKEN_ENDPOINT",
-        "c",
-        "mAuthServiceHolder",
-        "Ljp/co/sony/mc/camera/rtmp/YoutubeAuthManager$AuthorizationServiceHolder;",
+        "REQUEST_SCOPE",
+        "REDIRECT_URI",
         "mAuthStateLock",
         "Ljava/lang/Object;",
+        "mAuthServiceHolder",
+        "Ljp/co/sony/mc/camera/rtmp/YoutubeAuthManager$AuthorizationServiceHolder;",
+        "c",
         "o",
         "Ljp/co/sony/mc/camera/rtmp/Obf;",
-        "a",
-        "Landroid/content/Context;",
-        "exchangeAccessToken",
-        "",
-        "activity",
-        "Landroid/app/Activity;",
-        "callback",
-        "Ljp/co/sony/mc/camera/rtmp/YoutubeDataCallback;",
         "getAuthServiceHolder",
         "loadAuthState",
         "Lnet/openid/appauth/AuthState;",
-        "refreshAccessTokenIfNeeded",
-        "",
         "saveAuthState",
+        "",
         "authState",
-        "startYoutubeChannelAuthorization",
-        "Ljp/co/sony/mc/camera/CameraActivity;",
-        "onActivityResultListener",
-        "Landroid/preference/PreferenceManager$OnActivityResultListener;",
         "updateAuthState",
         "response",
         "Lnet/openid/appauth/AuthorizationResponse;",
         "exception",
         "Lnet/openid/appauth/AuthorizationException;",
         "Lnet/openid/appauth/TokenResponse;",
-        "AuthorizationServiceHolder",
+        "startYoutubeChannelAuthorization",
+        "activity",
+        "Ljp/co/sony/mc/camera/CameraActivity;",
+        "onActivityResultListener",
+        "Landroid/preference/PreferenceManager$OnActivityResultListener;",
+        "exchangeAccessToken",
+        "Landroid/app/Activity;",
+        "callback",
+        "Ljp/co/sony/mc/camera/rtmp/YoutubeDataCallback;",
+        "refreshAccessTokenIfNeeded",
+        "",
+        "a",
+        "Landroid/content/Context;",
         "Companion",
+        "AuthorizationServiceHolder",
         "SomcCamera_release"
     }
     k = 0x1
     mv = {
-        0x1,
-        0x9,
+        0x2,
+        0x0,
         0x0
     }
     xi = 0x30
@@ -227,9 +228,9 @@
 .end method
 
 .method private final c(Landroid/content/Context;)Ljava/lang/String;
-    .locals 8
+    .locals 9
 
-    const v0, 0x7f110026
+    const v0, 0x7f11001d
 
     .line 287
     invoke-virtual {p1, v0}, Landroid/content/Context;->getString(I)Ljava/lang/String;
@@ -280,59 +281,59 @@
 
     move-result v0
 
+    const/4 v4, 0x2
+
     .line 290
-    new-instance v4, Lkotlin/ranges/IntRange;
-
-    const/16 v5, -0x3c
-
-    invoke-direct {v4, v5, v0}, Lkotlin/ranges/IntRange;-><init>(II)V
+    new-array v4, v4, [Lkotlin/ranges/IntRange;
 
     new-instance v5, Lkotlin/ranges/IntRange;
 
-    const/16 v6, 0x13
+    const/16 v6, -0x3c
 
-    const/16 v7, 0x14
+    invoke-direct {v5, v6, v0}, Lkotlin/ranges/IntRange;-><init>(II)V
 
-    invoke-direct {v5, v6, v7}, Lkotlin/ranges/IntRange;-><init>(II)V
+    const/4 v6, 0x0
 
-    const/4 v6, 0x2
+    aput-object v5, v4, v6
 
-    new-array v6, v6, [Lkotlin/ranges/IntRange;
+    new-instance v5, Lkotlin/ranges/IntRange;
 
-    const/4 v7, 0x0
+    const/16 v7, 0x13
 
-    aput-object v4, v6, v7
+    const/16 v8, 0x14
 
-    const/4 v4, 0x1
+    invoke-direct {v5, v7, v8}, Lkotlin/ranges/IntRange;-><init>(II)V
 
-    aput-object v5, v6, v4
+    const/4 v7, 0x1
+
+    aput-object v5, v4, v7
 
     .line 291
-    aget-object v5, v6, v7
-
-    sget-object v7, Lkotlin/random/Random;->Default:Lkotlin/random/Random$Default;
-
-    check-cast v7, Lkotlin/random/Random;
-
-    invoke-static {v5, v7}, Lkotlin/ranges/RangesKt;->random(Lkotlin/ranges/IntRange;Lkotlin/random/Random;)I
-
-    move-result v5
-
-    mul-int/2addr v0, v2
-
-    aget-object v2, v6, v4
+    aget-object v5, v4, v6
 
     sget-object v6, Lkotlin/random/Random;->Default:Lkotlin/random/Random$Default;
 
     check-cast v6, Lkotlin/random/Random;
 
-    invoke-static {v2, v6}, Lkotlin/ranges/RangesKt;->random(Lkotlin/ranges/IntRange;Lkotlin/random/Random;)I
+    invoke-static {v5, v6}, Lkotlin/ranges/RangesKt;->random(Lkotlin/ranges/IntRange;Lkotlin/random/Random;)I
+
+    move-result v5
+
+    mul-int/2addr v0, v2
+
+    aget-object v2, v4, v7
+
+    sget-object v4, Lkotlin/random/Random;->Default:Lkotlin/random/Random$Default;
+
+    check-cast v4, Lkotlin/random/Random;
+
+    invoke-static {v2, v4}, Lkotlin/ranges/RangesKt;->random(Lkotlin/ranges/IntRange;Lkotlin/random/Random;)I
 
     move-result v2
 
-    const/16 v6, 0x52
+    const/16 v4, 0x52
 
-    invoke-static {v6, v3}, Lkotlin/ranges/RangesKt;->coerceAtLeast(II)I
+    invoke-static {v4, v3}, Lkotlin/ranges/RangesKt;->coerceAtLeast(II)I
 
     move-result v3
 
@@ -345,23 +346,23 @@
     .line 294
     div-int/lit8 v2, v0, 0x5
 
-    if-gt v4, v2, :cond_0
+    if-gt v7, v2, :cond_0
 
     .line 295
     :goto_0
     iget-object v3, p0, Ljp/co/sony/mc/camera/rtmp/YoutubeAuthManager;->o:Ljp/co/sony/mc/camera/rtmp/Obf;
 
-    rsub-int/lit8 v5, v0, 0x53
+    rsub-int/lit8 v4, v0, 0x53
 
-    int-to-char v5, v5
+    int-to-char v4, v4
 
-    invoke-virtual {v3, p1, v5}, Ljp/co/sony/mc/camera/rtmp/Obf;->d(Ljava/lang/String;C)Ljava/lang/String;
+    invoke-virtual {v3, p1, v4}, Ljp/co/sony/mc/camera/rtmp/Obf;->d(Ljava/lang/String;C)Ljava/lang/String;
 
     move-result-object p1
 
-    if-eq v4, v2, :cond_0
+    if-eq v7, v2, :cond_0
 
-    add-int/lit8 v4, v4, 0x1
+    add-int/lit8 v7, v7, 0x1
 
     goto :goto_0
 
@@ -430,7 +431,7 @@
 .end method
 
 .method private static final refreshAccessTokenIfNeeded$lambda$9$lambda$8(Lkotlin/jvm/internal/Ref$BooleanRef;Ljp/co/sony/mc/camera/rtmp/YoutubeAuthManager;Lnet/openid/appauth/AuthState;Ljava/util/concurrent/CountDownLatch;Ljava/lang/String;Ljava/lang/String;Lnet/openid/appauth/AuthorizationException;)V
-    .locals 0
+    .locals 1
 
     const-string p4, "$refreshed"
 
@@ -448,47 +449,50 @@
 
     invoke-static {p3, p4}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
+    const/4 p4, 0x0
+
+    const/4 p5, 0x1
+
     if-nez p6, :cond_0
 
-    const/4 p4, 0x1
-
     .line 211
-    iput-boolean p4, p0, Lkotlin/jvm/internal/Ref$BooleanRef;->element:Z
+    iput-boolean p5, p0, Lkotlin/jvm/internal/Ref$BooleanRef;->element:Z
 
     .line 212
-    const-string p0, "YouTube access token is refreshed."
+    new-array p0, p5, [Ljava/lang/String;
 
-    filled-new-array {p0}, [Ljava/lang/String;
+    const-string p5, "YouTube access token is refreshed."
 
-    move-result-object p0
+    aput-object p5, p0, p4
 
     invoke-static {p0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
     goto :goto_0
 
-    .line 215
+    .line 214
     :cond_0
+    new-array p0, p5, [Ljava/lang/String;
+
+    .line 215
     invoke-virtual {p6}, Lnet/openid/appauth/AuthorizationException;->getMessage()Ljava/lang/String;
 
-    move-result-object p0
+    move-result-object p5
 
-    new-instance p4, Ljava/lang/StringBuilder;
+    new-instance p6, Ljava/lang/StringBuilder;
 
-    const-string p5, "Failed to refresh YouTube access token. reason: "
+    const-string v0, "Failed to refresh YouTube access token. reason: "
 
-    invoke-direct {p4, p5}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+    invoke-direct {p6, v0}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
-    invoke-virtual {p4, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {p6, p5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    move-result-object p0
+    move-result-object p5
 
-    invoke-virtual {p0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-virtual {p5}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    move-result-object p0
+    move-result-object p5
 
-    filled-new-array {p0}, [Ljava/lang/String;
-
-    move-result-object p0
+    aput-object p5, p0, p4
 
     .line 214
     invoke-static {p0}, Ljp/co/sony/mc/camera/util/CamLog;->e([Ljava/lang/String;)V
@@ -588,59 +592,52 @@
 
     move-result-object v0
 
-    const/4 v1, 0x0
-
-    if-eqz v0, :cond_2
+    if-eqz v0, :cond_1
 
     invoke-virtual {v0}, Lnet/openid/appauth/AuthorizationResponse;->createTokenExchangeRequest()Lnet/openid/appauth/TokenRequest;
 
     move-result-object v0
 
-    if-eqz v0, :cond_2
+    if-eqz v0, :cond_1
 
     .line 180
-    iget-object v2, p0, Ljp/co/sony/mc/camera/rtmp/YoutubeAuthManager;->mAuthServiceHolder:Ljp/co/sony/mc/camera/rtmp/YoutubeAuthManager$AuthorizationServiceHolder;
+    iget-object v1, p0, Ljp/co/sony/mc/camera/rtmp/YoutubeAuthManager;->mAuthServiceHolder:Ljp/co/sony/mc/camera/rtmp/YoutubeAuthManager$AuthorizationServiceHolder;
 
-    invoke-virtual {v2, p1}, Ljp/co/sony/mc/camera/rtmp/YoutubeAuthManager$AuthorizationServiceHolder;->startAuthorizationService(Landroid/app/Activity;)V
+    invoke-virtual {v1, p1}, Ljp/co/sony/mc/camera/rtmp/YoutubeAuthManager$AuthorizationServiceHolder;->startAuthorizationService(Landroid/app/Activity;)V
 
     .line 181
-    iget-object v2, p0, Ljp/co/sony/mc/camera/rtmp/YoutubeAuthManager;->mAuthServiceHolder:Ljp/co/sony/mc/camera/rtmp/YoutubeAuthManager$AuthorizationServiceHolder;
+    iget-object v1, p0, Ljp/co/sony/mc/camera/rtmp/YoutubeAuthManager;->mAuthServiceHolder:Ljp/co/sony/mc/camera/rtmp/YoutubeAuthManager$AuthorizationServiceHolder;
 
-    invoke-virtual {v2}, Ljp/co/sony/mc/camera/rtmp/YoutubeAuthManager$AuthorizationServiceHolder;->getAuthorizationService()Lnet/openid/appauth/AuthorizationService;
+    invoke-virtual {v1}, Ljp/co/sony/mc/camera/rtmp/YoutubeAuthManager$AuthorizationServiceHolder;->getAuthorizationService()Lnet/openid/appauth/AuthorizationService;
 
-    move-result-object v2
+    move-result-object v1
 
-    if-eqz v2, :cond_0
+    if-eqz v1, :cond_0
 
     .line 182
-    new-instance v1, Ljp/co/sony/mc/camera/rtmp/YoutubeAuthManager$$ExternalSyntheticLambda1;
+    new-instance v2, Ljp/co/sony/mc/camera/rtmp/YoutubeAuthManager$$ExternalSyntheticLambda1;
 
-    invoke-direct {v1, p0, p1, p2}, Ljp/co/sony/mc/camera/rtmp/YoutubeAuthManager$$ExternalSyntheticLambda1;-><init>(Ljp/co/sony/mc/camera/rtmp/YoutubeAuthManager;Landroid/app/Activity;Ljp/co/sony/mc/camera/rtmp/YoutubeDataCallback;)V
+    invoke-direct {v2, p0, p1, p2}, Ljp/co/sony/mc/camera/rtmp/YoutubeAuthManager$$ExternalSyntheticLambda1;-><init>(Ljp/co/sony/mc/camera/rtmp/YoutubeAuthManager;Landroid/app/Activity;Ljp/co/sony/mc/camera/rtmp/YoutubeDataCallback;)V
 
-    invoke-virtual {v2, v0, v1}, Lnet/openid/appauth/AuthorizationService;->performTokenRequest(Lnet/openid/appauth/TokenRequest;Lnet/openid/appauth/AuthorizationService$TokenResponseCallback;)V
+    invoke-virtual {v1, v0, v2}, Lnet/openid/appauth/AuthorizationService;->performTokenRequest(Lnet/openid/appauth/TokenRequest;Lnet/openid/appauth/AuthorizationService$TokenResponseCallback;)V
 
-    sget-object v1, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
-
-    :cond_0
-    if-nez v1, :cond_1
+    goto :goto_0
 
     .line 191
+    :cond_0
     sget-object p0, Ljp/co/sony/mc/camera/rtmp/ErrCode;->ERROR_AUTH:Ljp/co/sony/mc/camera/rtmp/ErrCode;
 
     invoke-interface {p2, p0}, Ljp/co/sony/mc/camera/rtmp/YoutubeDataCallback;->onFailure(Ljp/co/sony/mc/camera/rtmp/ErrCode;)V
 
-    :cond_1
-    move-object v1, v0
-
-    :cond_2
-    if-nez v1, :cond_3
+    goto :goto_0
 
     .line 193
+    :cond_1
     sget-object p0, Ljp/co/sony/mc/camera/rtmp/ErrCode;->ERROR_AUTH:Ljp/co/sony/mc/camera/rtmp/ErrCode;
 
     invoke-interface {p2, p0}, Ljp/co/sony/mc/camera/rtmp/YoutubeDataCallback;->onFailure(Ljp/co/sony/mc/camera/rtmp/ErrCode;)V
 
-    :cond_3
+    :goto_0
     return-void
 .end method
 
@@ -695,7 +692,7 @@
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    goto :goto_1
+    goto :goto_0
 
     .line 86
     :cond_0
@@ -715,15 +712,11 @@
     new-instance v0, Lnet/openid/appauth/AuthState;
 
     invoke-direct {v0}, Lnet/openid/appauth/AuthState;-><init>()V
-
-    .line 84
-    :goto_0
-    invoke-static {v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;)V
     :try_end_2
     .catchall {:try_start_2 .. :try_end_2} :catchall_0
 
     .line 82
-    :goto_1
+    :goto_0
     monitor-exit p0
 
     return-object v0
@@ -737,7 +730,7 @@
 .end method
 
 .method public final refreshAccessTokenIfNeeded(Landroid/app/Activity;)Z
-    .locals 4
+    .locals 6
 
     const-string v0, "activity"
 
@@ -758,6 +751,10 @@
 
     move-result v2
 
+    const/4 v3, 0x0
+
+    const/4 v4, 0x1
+
     if-eqz v2, :cond_1
 
     .line 205
@@ -777,16 +774,14 @@
     .line 208
     new-instance v2, Ljava/util/concurrent/CountDownLatch;
 
-    const/4 v3, 0x1
-
-    invoke-direct {v2, v3}, Ljava/util/concurrent/CountDownLatch;-><init>(I)V
+    invoke-direct {v2, v4}, Ljava/util/concurrent/CountDownLatch;-><init>(I)V
 
     .line 209
-    new-instance v3, Ljp/co/sony/mc/camera/rtmp/YoutubeAuthManager$$ExternalSyntheticLambda0;
+    new-instance v5, Ljp/co/sony/mc/camera/rtmp/YoutubeAuthManager$$ExternalSyntheticLambda0;
 
-    invoke-direct {v3, v0, p0, v1, v2}, Ljp/co/sony/mc/camera/rtmp/YoutubeAuthManager$$ExternalSyntheticLambda0;-><init>(Lkotlin/jvm/internal/Ref$BooleanRef;Ljp/co/sony/mc/camera/rtmp/YoutubeAuthManager;Lnet/openid/appauth/AuthState;Ljava/util/concurrent/CountDownLatch;)V
+    invoke-direct {v5, v0, p0, v1, v2}, Ljp/co/sony/mc/camera/rtmp/YoutubeAuthManager$$ExternalSyntheticLambda0;-><init>(Lkotlin/jvm/internal/Ref$BooleanRef;Ljp/co/sony/mc/camera/rtmp/YoutubeAuthManager;Lnet/openid/appauth/AuthState;Ljava/util/concurrent/CountDownLatch;)V
 
-    invoke-virtual {v1, p1, v3}, Lnet/openid/appauth/AuthState;->performActionWithFreshTokens(Lnet/openid/appauth/AuthorizationService;Lnet/openid/appauth/AuthState$AuthStateAction;)V
+    invoke-virtual {v1, p1, v5}, Lnet/openid/appauth/AuthState;->performActionWithFreshTokens(Lnet/openid/appauth/AuthorizationService;Lnet/openid/appauth/AuthState$AuthStateAction;)V
 
     .line 221
     :try_start_0
@@ -800,13 +795,15 @@
     move-exception p0
 
     .line 223
-    new-instance p1, Ljava/lang/StringBuilder;
+    new-array p1, v4, [Ljava/lang/String;
 
-    const-string/jumbo v1, "wait for access token refresh is interrupted. reason: "
+    new-instance v1, Ljava/lang/StringBuilder;
 
-    invoke-direct {p1, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+    const-string/jumbo v2, "wait for access token refresh is interrupted. reason: "
 
-    invoke-virtual {p1, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+    invoke-direct {v1, v2}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+
+    invoke-virtual {v1, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
     move-result-object p0
 
@@ -814,21 +811,19 @@
 
     move-result-object p0
 
-    filled-new-array {p0}, [Ljava/lang/String;
+    aput-object p0, p1, v3
 
-    move-result-object p0
-
-    invoke-static {p0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
+    invoke-static {p1}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
     goto :goto_0
 
     .line 226
     :cond_0
-    const-string p0, "authorization service is not exist."
+    new-array p0, v4, [Ljava/lang/String;
 
-    filled-new-array {p0}, [Ljava/lang/String;
+    const-string p1, "authorization service is not exist."
 
-    move-result-object p0
+    aput-object p1, p0, v3
 
     invoke-static {p0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
@@ -836,11 +831,11 @@
 
     .line 229
     :cond_1
-    const-string p0, "access token is still valid."
+    new-array p0, v4, [Ljava/lang/String;
 
-    filled-new-array {p0}, [Ljava/lang/String;
+    const-string p1, "access token is still valid."
 
-    move-result-object p0
+    aput-object p1, p0, v3
 
     invoke-static {p0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
@@ -905,30 +900,34 @@
 
     invoke-direct {v1, v0, v2, v4, v3}, Lnet/openid/appauth/AuthorizationRequest$Builder;-><init>(Lnet/openid/appauth/AuthorizationServiceConfiguration;Ljava/lang/String;Ljava/lang/String;Landroid/net/Uri;)V
 
+    const/4 v0, 0x1
+
     .line 150
-    iget-object v0, p0, Ljp/co/sony/mc/camera/rtmp/YoutubeAuthManager;->REQUEST_SCOPE:Ljava/lang/String;
+    new-array v2, v0, [Ljava/lang/String;
 
-    filled-new-array {v0}, [Ljava/lang/String;
+    iget-object v3, p0, Ljp/co/sony/mc/camera/rtmp/YoutubeAuthManager;->REQUEST_SCOPE:Ljava/lang/String;
 
-    move-result-object v0
+    const/4 v4, 0x0
 
-    invoke-virtual {v1, v0}, Lnet/openid/appauth/AuthorizationRequest$Builder;->setScopes([Ljava/lang/String;)Lnet/openid/appauth/AuthorizationRequest$Builder;
+    aput-object v3, v2, v4
 
-    move-result-object v0
+    invoke-virtual {v1, v2}, Lnet/openid/appauth/AuthorizationRequest$Builder;->setScopes([Ljava/lang/String;)Lnet/openid/appauth/AuthorizationRequest$Builder;
 
-    const-string/jumbo v1, "setScopes(...)"
+    move-result-object v1
 
-    invoke-static {v0, v1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
+    const-string/jumbo v2, "setScopes(...)"
+
+    invoke-static {v1, v2}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 153
     :try_start_0
-    iget-object v1, p0, Ljp/co/sony/mc/camera/rtmp/YoutubeAuthManager;->mAuthServiceHolder:Ljp/co/sony/mc/camera/rtmp/YoutubeAuthManager$AuthorizationServiceHolder;
+    iget-object v2, p0, Ljp/co/sony/mc/camera/rtmp/YoutubeAuthManager;->mAuthServiceHolder:Ljp/co/sony/mc/camera/rtmp/YoutubeAuthManager$AuthorizationServiceHolder;
 
-    move-object v2, p1
+    move-object v3, p1
 
-    check-cast v2, Landroid/app/Activity;
+    check-cast v3, Landroid/app/Activity;
 
-    invoke-virtual {v1, v2}, Ljp/co/sony/mc/camera/rtmp/YoutubeAuthManager$AuthorizationServiceHolder;->startAuthorizationService(Landroid/app/Activity;)V
+    invoke-virtual {v2, v3}, Ljp/co/sony/mc/camera/rtmp/YoutubeAuthManager$AuthorizationServiceHolder;->startAuthorizationService(Landroid/app/Activity;)V
 
     .line 154
     iget-object p0, p0, Ljp/co/sony/mc/camera/rtmp/YoutubeAuthManager;->mAuthServiceHolder:Ljp/co/sony/mc/camera/rtmp/YoutubeAuthManager$AuthorizationServiceHolder;
@@ -940,11 +939,11 @@
     if-eqz p0, :cond_0
 
     .line 155
-    invoke-virtual {v0}, Lnet/openid/appauth/AuthorizationRequest$Builder;->build()Lnet/openid/appauth/AuthorizationRequest;
+    invoke-virtual {v1}, Lnet/openid/appauth/AuthorizationRequest$Builder;->build()Lnet/openid/appauth/AuthorizationRequest;
 
-    move-result-object v0
+    move-result-object v1
 
-    invoke-virtual {p0, v0}, Lnet/openid/appauth/AuthorizationService;->getAuthorizationRequestIntent(Lnet/openid/appauth/AuthorizationRequest;)Landroid/content/Intent;
+    invoke-virtual {p0, v1}, Lnet/openid/appauth/AuthorizationService;->getAuthorizationRequestIntent(Lnet/openid/appauth/AuthorizationRequest;)Landroid/content/Intent;
 
     move-result-object p0
 
@@ -954,26 +953,22 @@
     const/4 p0, 0x0
 
     :goto_0
-    const/4 v0, 0x0
-
-    const/4 v1, 0x1
-
     if-eqz p0, :cond_1
 
-    const/16 v2, 0x22
+    const/16 v1, 0x22
 
     .line 157
-    invoke-virtual {p1, p0, v2, p2}, Ljp/co/sony/mc/camera/CameraActivity;->startActivityForResult(Landroid/content/Intent;ILandroid/preference/PreferenceManager$OnActivityResultListener;)V
+    invoke-virtual {p1, p0, v1, p2}, Ljp/co/sony/mc/camera/CameraActivity;->startActivityForResult(Landroid/content/Intent;ILandroid/preference/PreferenceManager$OnActivityResultListener;)V
 
     if-nez p0, :cond_2
 
     .line 163
     :cond_1
-    new-array p1, v1, [Ljava/lang/String;
+    new-array p1, v0, [Ljava/lang/String;
 
     const-string p2, "Failed to get authorization request intent."
 
-    aput-object p2, p1, v0
+    aput-object p2, p1, v4
 
     invoke-static {p1}, Ljp/co/sony/mc/camera/util/CamLog;->e([Ljava/lang/String;)V
 
@@ -983,11 +978,11 @@
     if-nez p0, :cond_3
 
     .line 165
-    new-array p0, v1, [Ljava/lang/String;
+    new-array p0, v0, [Ljava/lang/String;
 
     const-string p1, "Authorization service does not exist."
 
-    aput-object p1, p0, v0
+    aput-object p1, p0, v4
 
     invoke-static {p0}, Ljp/co/sony/mc/camera/util/CamLog;->e([Ljava/lang/String;)V
 
@@ -1001,17 +996,19 @@
     move-exception p0
 
     .line 167
+    new-array p1, v0, [Ljava/lang/String;
+
     invoke-virtual {p0}, Landroid/content/ActivityNotFoundException;->getMessage()Ljava/lang/String;
 
     move-result-object p0
 
-    new-instance p1, Ljava/lang/StringBuilder;
+    new-instance p2, Ljava/lang/StringBuilder;
 
-    const-string p2, "Failed to start youtube authorization: "
+    const-string v0, "Failed to start youtube authorization: "
 
-    invoke-direct {p1, p2}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+    invoke-direct {p2, v0}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
-    invoke-virtual {p1, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {p2, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object p0
 
@@ -1019,11 +1016,9 @@
 
     move-result-object p0
 
-    filled-new-array {p0}, [Ljava/lang/String;
+    aput-object p0, p1, v4
 
-    move-result-object p0
-
-    invoke-static {p0}, Ljp/co/sony/mc/camera/util/CamLog;->e([Ljava/lang/String;)V
+    invoke-static {p1}, Ljp/co/sony/mc/camera/util/CamLog;->e([Ljava/lang/String;)V
 
     :cond_3
     :goto_1

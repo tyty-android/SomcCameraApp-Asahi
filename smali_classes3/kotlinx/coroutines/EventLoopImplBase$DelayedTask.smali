@@ -32,12 +32,12 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/SourceDebugExtension;
-    value = "SMAP\nEventLoop.common.kt\nKotlin\n*S Kotlin\n*F\n+ 1 EventLoop.common.kt\nkotlinx/coroutines/EventLoopImplBase$DelayedTask\n+ 2 ThreadSafeHeap.kt\nkotlinx/coroutines/internal/ThreadSafeHeap\n+ 3 Synchronized.kt\nkotlinx/coroutines/internal/SynchronizedKt\n*L\n1#1,550:1\n72#2:551\n73#2,7:553\n20#3:552\n*S KotlinDebug\n*F\n+ 1 EventLoop.common.kt\nkotlinx/coroutines/EventLoopImplBase$DelayedTask\n*L\n444#1:551\n444#1:553,7\n444#1:552\n*E\n"
+    value = "SMAP\nEventLoop.common.kt\nKotlin\n*S Kotlin\n*F\n+ 1 EventLoop.common.kt\nkotlinx/coroutines/EventLoopImplBase$DelayedTask\n+ 2 Synchronized.common.kt\nkotlinx/coroutines/internal/Synchronized_commonKt\n+ 3 Synchronized.kt\nkotlinx/coroutines/internal/SynchronizedKt\n+ 4 ThreadSafeHeap.kt\nkotlinx/coroutines/internal/ThreadSafeHeap\n*L\n1#1,543:1\n28#2,4:544\n28#2,4:550\n28#2,4:562\n20#3:548\n20#3:554\n20#3:566\n72#4:549\n73#4,7:555\n*S KotlinDebug\n*F\n+ 1 EventLoop.common.kt\nkotlinx/coroutines/EventLoopImplBase$DelayedTask\n*L\n437#1:544,4\n439#1:550,4\n479#1:562,4\n437#1:548\n439#1:554\n479#1:566\n439#1:549\n439#1:555,7\n*E\n"
 .end annotation
 
 .annotation runtime Lkotlin/Metadata;
     d1 = {
-        "\u0000X\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0010\u000f\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\t\n\u0002\u0008\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0006\n\u0002\u0010\u0008\n\u0002\u0008\u0007\n\u0002\u0010\u0002\n\u0002\u0008\u0003\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000b\n\u0000\n\u0002\u0010\u000e\n\u0000\u0008 \u0018\u00002\u00060\u0001j\u0002`\u00022\u0008\u0012\u0004\u0012\u00020\u00000\u00032\u00020\u00042\u00020\u0005B\r\u0012\u0006\u0010\u0006\u001a\u00020\u0007\u00a2\u0006\u0002\u0010\u0008J\u0011\u0010\u0018\u001a\u00020\u00132\u0006\u0010\u0019\u001a\u00020\u0000H\u0096\u0002J\u0006\u0010\u001a\u001a\u00020\u001bJ\u001e\u0010\u001c\u001a\u00020\u00132\u0006\u0010\u001d\u001a\u00020\u00072\u0006\u0010\u001e\u001a\u00020\u001f2\u0006\u0010 \u001a\u00020!J\u000e\u0010\"\u001a\u00020#2\u0006\u0010\u001d\u001a\u00020\u0007J\u0008\u0010$\u001a\u00020%H\u0016R\u0010\u0010\t\u001a\u0004\u0018\u00010\nX\u0082\u000e\u00a2\u0006\u0002\n\u0000R0\u0010\r\u001a\u0008\u0012\u0002\u0008\u0003\u0018\u00010\u000c2\u000c\u0010\u000b\u001a\u0008\u0012\u0002\u0008\u0003\u0018\u00010\u000c8V@VX\u0096\u000e\u00a2\u0006\u000c\u001a\u0004\u0008\u000e\u0010\u000f\"\u0004\u0008\u0010\u0010\u0011R\u001a\u0010\u0012\u001a\u00020\u0013X\u0096\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\u0008\u0014\u0010\u0015\"\u0004\u0008\u0016\u0010\u0017R\u0012\u0010\u0006\u001a\u00020\u00078\u0006@\u0006X\u0087\u000e\u00a2\u0006\u0002\n\u0000\u00a8\u0006&"
+        "\u0000Z\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0010\u000f\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\t\n\u0002\u0008\u0003\n\u0002\u0018\u0002\n\u0002\u0008\u0006\n\u0002\u0010\u0008\n\u0002\u0008\u0007\n\u0002\u0010\u0002\n\u0002\u0008\u0003\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000b\n\u0000\n\u0002\u0010\u000e\n\u0000\u0008 \u0018\u00002\u00060\u0001j\u0002`\u00022\u0008\u0012\u0004\u0012\u00020\u00000\u00032\u00020\u00042\u00020\u00052\u00060\u0006j\u0002`\u0007B\r\u0012\u0006\u0010\u0008\u001a\u00020\t\u00a2\u0006\u0002\u0010\nJ\u0011\u0010\u0019\u001a\u00020\u00142\u0006\u0010\u001a\u001a\u00020\u0000H\u0096\u0002J\u0006\u0010\u001b\u001a\u00020\u001cJ\u001e\u0010\u001d\u001a\u00020\u00142\u0006\u0010\u001e\u001a\u00020\t2\u0006\u0010\u001f\u001a\u00020 2\u0006\u0010!\u001a\u00020\"J\u000e\u0010#\u001a\u00020$2\u0006\u0010\u001e\u001a\u00020\tJ\u0008\u0010%\u001a\u00020&H\u0016R\u0010\u0010\u000b\u001a\u0004\u0018\u00010\u0006X\u0082\u000e\u00a2\u0006\u0002\n\u0000R0\u0010\u000e\u001a\u0008\u0012\u0002\u0008\u0003\u0018\u00010\r2\u000c\u0010\u000c\u001a\u0008\u0012\u0002\u0008\u0003\u0018\u00010\r8V@VX\u0096\u000e\u00a2\u0006\u000c\u001a\u0004\u0008\u000f\u0010\u0010\"\u0004\u0008\u0011\u0010\u0012R\u001a\u0010\u0013\u001a\u00020\u0014X\u0096\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\u0008\u0015\u0010\u0016\"\u0004\u0008\u0017\u0010\u0018R\u0012\u0010\u0008\u001a\u00020\t8\u0006@\u0006X\u0087\u000e\u00a2\u0006\u0002\n\u0000\u00a8\u0006\'"
     }
     d2 = {
         "Lkotlinx/coroutines/EventLoopImplBase$DelayedTask;",
@@ -46,11 +46,12 @@
         "",
         "Lkotlinx/coroutines/DisposableHandle;",
         "Lkotlinx/coroutines/internal/ThreadSafeHeapNode;",
+        "",
+        "Lkotlinx/coroutines/internal/SynchronizedObject;",
         "nanoTime",
         "",
         "(J)V",
         "_heap",
-        "",
         "value",
         "Lkotlinx/coroutines/internal/ThreadSafeHeap;",
         "heap",
@@ -83,7 +84,7 @@
     k = 0x1
     mv = {
         0x1,
-        0x6,
+        0x8,
         0x0
     }
     xi = 0x30
@@ -102,15 +103,15 @@
 .method public constructor <init>(J)V
     .locals 0
 
-    .line 411
+    .line 413
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 416
+    .line 412
     iput-wide p1, p0, Lkotlinx/coroutines/EventLoopImplBase$DelayedTask;->nanoTime:J
 
     const/4 p1, -0x1
 
-    .line 428
+    .line 424
     iput p1, p0, Lkotlinx/coroutines/EventLoopImplBase$DelayedTask;->index:I
 
     return-void
@@ -121,7 +122,7 @@
 .method public bridge synthetic compareTo(Ljava/lang/Object;)I
     .locals 0
 
-    .line 411
+    .line 407
     check-cast p1, Lkotlinx/coroutines/EventLoopImplBase$DelayedTask;
 
     invoke-virtual {p0, p1}, Lkotlinx/coroutines/EventLoopImplBase$DelayedTask;->compareTo(Lkotlinx/coroutines/EventLoopImplBase$DelayedTask;)I
@@ -134,7 +135,7 @@
 .method public compareTo(Lkotlinx/coroutines/EventLoopImplBase$DelayedTask;)I
     .locals 2
 
-    .line 431
+    .line 427
     iget-wide v0, p0, Lkotlinx/coroutines/EventLoopImplBase$DelayedTask;->nanoTime:J
 
     iget-wide p0, p1, Lkotlinx/coroutines/EventLoopImplBase$DelayedTask;->nanoTime:J
@@ -165,16 +166,17 @@
     return p0
 .end method
 
-.method public final declared-synchronized dispose()V
+.method public final dispose()V
     .locals 2
 
+    .line 566
     monitor-enter p0
 
-    .line 486
+    .line 480
     :try_start_0
     iget-object v0, p0, Lkotlinx/coroutines/EventLoopImplBase$DelayedTask;->_heap:Ljava/lang/Object;
 
-    .line 487
+    .line 481
     invoke-static {}, Lkotlinx/coroutines/EventLoop_commonKt;->access$getDISPOSED_TASK$p()Lkotlinx/coroutines/internal/Symbol;
 
     move-result-object v1
@@ -187,7 +189,7 @@
 
     return-void
 
-    .line 489
+    .line 482
     :cond_0
     :try_start_1
     instance-of v1, v0, Lkotlinx/coroutines/EventLoopImplBase$DelayedTaskQueue;
@@ -210,17 +212,20 @@
 
     invoke-virtual {v0, v1}, Lkotlinx/coroutines/EventLoopImplBase$DelayedTaskQueue;->remove(Lkotlinx/coroutines/internal/ThreadSafeHeapNode;)Z
 
-    .line 490
+    .line 483
     :cond_2
     invoke-static {}, Lkotlinx/coroutines/EventLoop_commonKt;->access$getDISPOSED_TASK$p()Lkotlinx/coroutines/internal/Symbol;
 
     move-result-object v0
 
     iput-object v0, p0, Lkotlinx/coroutines/EventLoopImplBase$DelayedTask;->_heap:Ljava/lang/Object;
+
+    .line 484
+    sget-object v0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
-    .line 491
+    .line 566
     monitor-exit p0
 
     return-void
@@ -243,7 +248,7 @@
         }
     .end annotation
 
-    .line 422
+    .line 418
     iget-object p0, p0, Lkotlinx/coroutines/EventLoopImplBase$DelayedTask;->_heap:Ljava/lang/Object;
 
     instance-of v0, p0, Lkotlinx/coroutines/internal/ThreadSafeHeap;
@@ -264,18 +269,19 @@
 .method public getIndex()I
     .locals 0
 
-    .line 428
+    .line 424
     iget p0, p0, Lkotlinx/coroutines/EventLoopImplBase$DelayedTask;->index:I
 
     return p0
 .end method
 
-.method public final declared-synchronized scheduleTask(JLkotlinx/coroutines/EventLoopImplBase$DelayedTaskQueue;Lkotlinx/coroutines/EventLoopImplBase;)I
+.method public final scheduleTask(JLkotlinx/coroutines/EventLoopImplBase$DelayedTaskQueue;Lkotlinx/coroutines/EventLoopImplBase;)I
     .locals 8
 
+    .line 548
     monitor-enter p0
 
-    .line 443
+    .line 438
     :try_start_0
     iget-object v0, p0, Lkotlinx/coroutines/EventLoopImplBase$DelayedTask;->_heap:Ljava/lang/Object;
 
@@ -293,19 +299,19 @@
 
     return p0
 
-    .line 444
+    .line 439
     :cond_0
     :try_start_1
     move-object v0, p3
 
     check-cast v0, Lkotlinx/coroutines/internal/ThreadSafeHeap;
 
-    .line 552
+    .line 554
     monitor-enter v0
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_1
 
-    .line 553
+    .line 555
     :try_start_2
     invoke-virtual {v0}, Lkotlinx/coroutines/internal/ThreadSafeHeap;->firstImpl()Lkotlinx/coroutines/internal/ThreadSafeHeapNode;
 
@@ -313,7 +319,7 @@
 
     check-cast v1, Lkotlinx/coroutines/EventLoopImplBase$DelayedTask;
 
-    .line 445
+    .line 440
     invoke-static {p4}, Lkotlinx/coroutines/EventLoopImplBase;->access$isCompleted(Lkotlinx/coroutines/EventLoopImplBase;)Z
 
     move-result p4
@@ -338,13 +344,13 @@
 
     if-nez v1, :cond_2
 
-    .line 458
+    .line 453
     :try_start_4
     iput-wide p1, p3, Lkotlinx/coroutines/EventLoopImplBase$DelayedTaskQueue;->timeNow:J
 
     goto :goto_1
 
-    .line 465
+    .line 460
     :cond_2
     iget-wide v4, v1, Lkotlinx/coroutines/EventLoopImplBase$DelayedTask;->nanoTime:J
 
@@ -359,7 +365,7 @@
     :cond_3
     move-wide p1, v4
 
-    .line 469
+    .line 464
     :goto_0
     iget-wide v4, p3, Lkotlinx/coroutines/EventLoopImplBase$DelayedTaskQueue;->timeNow:J
 
@@ -371,7 +377,7 @@
 
     iput-wide p1, p3, Lkotlinx/coroutines/EventLoopImplBase$DelayedTaskQueue;->timeNow:J
 
-    .line 478
+    .line 473
     :cond_4
     :goto_1
     iget-wide p1, p0, Lkotlinx/coroutines/EventLoopImplBase$DelayedTask;->nanoTime:J
@@ -388,7 +394,7 @@
 
     iput-wide p1, p0, Lkotlinx/coroutines/EventLoopImplBase$DelayedTask;->nanoTime:J
 
-    .line 554
+    .line 556
     :cond_5
     move-object p1, p0
 
@@ -398,13 +404,13 @@
     :try_end_4
     .catchall {:try_start_4 .. :try_end_4} :catchall_0
 
-    .line 553
+    .line 554
     :try_start_5
     monitor-exit v0
     :try_end_5
     .catchall {:try_start_5 .. :try_end_5} :catchall_1
 
-    .line 481
+    .line 476
     monitor-exit p0
 
     const/4 p0, 0x0
@@ -414,7 +420,7 @@
     :catchall_0
     move-exception p1
 
-    .line 553
+    .line 554
     :try_start_6
     monitor-exit v0
 
@@ -425,6 +431,7 @@
     :catchall_1
     move-exception p1
 
+    .line 476
     monitor-exit p0
 
     throw p1
@@ -440,7 +447,7 @@
         }
     .end annotation
 
-    .line 424
+    .line 420
     iget-object v0, p0, Lkotlinx/coroutines/EventLoopImplBase$DelayedTask;->_heap:Ljava/lang/Object;
 
     invoke-static {}, Lkotlinx/coroutines/EventLoop_commonKt;->access$getDISPOSED_TASK$p()Lkotlinx/coroutines/internal/Symbol;
@@ -449,12 +456,12 @@
 
     if-eq v0, v1, :cond_0
 
-    .line 425
+    .line 421
     iput-object p1, p0, Lkotlinx/coroutines/EventLoopImplBase$DelayedTask;->_heap:Ljava/lang/Object;
 
     return-void
 
-    .line 424
+    .line 420
     :cond_0
     new-instance p0, Ljava/lang/IllegalArgumentException;
 
@@ -472,7 +479,7 @@
 .method public setIndex(I)V
     .locals 0
 
-    .line 428
+    .line 424
     iput p1, p0, Lkotlinx/coroutines/EventLoopImplBase$DelayedTask;->index:I
 
     return-void
@@ -481,7 +488,7 @@
 .method public final timeToExecute(J)Z
     .locals 2
 
-    .line 439
+    .line 435
     iget-wide v0, p0, Lkotlinx/coroutines/EventLoopImplBase$DelayedTask;->nanoTime:J
 
     sub-long/2addr p1, v0
@@ -506,7 +513,7 @@
 .method public toString()Ljava/lang/String;
     .locals 3
 
-    .line 493
+    .line 486
     new-instance v0, Ljava/lang/StringBuilder;
 
     const-string v1, "Delayed[nanos="

@@ -69,7 +69,7 @@
 .method public bridge synthetic invoke()Ljava/lang/Object;
     .locals 0
 
-    .line 5198
+    .line 5215
     invoke-virtual {p0}, Lkotlin/collections/unsigned/UArraysKt___UArraysKt$withIndex$4;->invoke()Ljava/util/Iterator;
 
     move-result-object p0
@@ -88,7 +88,7 @@
         }
     .end annotation
 
-    .line 5198
+    .line 5215
     iget-object p0, p0, Lkotlin/collections/unsigned/UArraysKt___UArraysKt$withIndex$4;->$this_withIndex:[S
 
     invoke-static {p0}, Lkotlin/UShortArray;->iterator-impl([S)Ljava/util/Iterator;

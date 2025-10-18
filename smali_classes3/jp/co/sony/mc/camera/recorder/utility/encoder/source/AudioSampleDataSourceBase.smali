@@ -211,6 +211,10 @@
     .line 215
     iget-boolean v0, p0, Ljp/co/sony/mc/camera/recorder/utility/encoder/source/AudioSampleDataSourceBase;->mAlreadyEos:Z
 
+    const/4 v1, 0x0
+
+    const/4 v2, 0x1
+
     if-eqz v0, :cond_1
 
     .line 216
@@ -219,11 +223,11 @@
     if-eqz p0, :cond_0
 
     .line 217
-    const-string p0, "Already End of Stream"
+    new-array p0, v2, [Ljava/lang/String;
 
-    filled-new-array {p0}, [Ljava/lang/String;
+    const-string p1, "Already End of Stream"
 
-    move-result-object p0
+    aput-object p1, p0, v1
 
     invoke-static {p0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
@@ -234,25 +238,21 @@
     :cond_1
     iget-object v0, p0, Ljp/co/sony/mc/camera/recorder/utility/encoder/source/AudioSampleDataSourceBase;->mAudioRecord:Landroid/media/AudioRecord;
 
-    iget-object v1, p0, Ljp/co/sony/mc/camera/recorder/utility/encoder/source/AudioSampleDataSourceBase;->mAudioBuffer:[B
+    iget-object v3, p0, Ljp/co/sony/mc/camera/recorder/utility/encoder/source/AudioSampleDataSourceBase;->mAudioBuffer:[B
 
-    const/4 v2, 0x0
+    array-length v4, v3
 
-    array-length v3, v1
-
-    const/4 v4, 0x1
-
-    invoke-virtual {v0, v1, v2, v3, v4}, Landroid/media/AudioRecord;->read([BIII)I
+    invoke-virtual {v0, v3, v1, v4, v2}, Landroid/media/AudioRecord;->read([BIII)I
 
     move-result v0
 
-    const/4 v1, -0x3
+    const/4 v3, -0x3
 
-    if-eq v0, v1, :cond_3
+    if-eq v0, v3, :cond_3
 
-    const/4 v1, -0x2
+    const/4 v3, -0x2
 
-    if-eq v0, v1, :cond_2
+    if-eq v0, v3, :cond_2
 
     goto :goto_0
 
@@ -263,11 +263,11 @@
     if-eqz p0, :cond_5
 
     .line 228
-    const-string p0, "ERROR_BAD_VALUE"
+    new-array p0, v2, [Ljava/lang/String;
 
-    filled-new-array {p0}, [Ljava/lang/String;
+    const-string p1, "ERROR_BAD_VALUE"
 
-    move-result-object p0
+    aput-object p1, p0, v1
 
     invoke-static {p0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
@@ -280,16 +280,16 @@
     if-eqz p1, :cond_4
 
     .line 234
-    const-string p1, "ERROR_INVALID_OPERATION"
+    new-array p1, v2, [Ljava/lang/String;
 
-    filled-new-array {p1}, [Ljava/lang/String;
+    const-string v3, "ERROR_INVALID_OPERATION"
 
-    move-result-object p1
+    aput-object v3, p1, v1
 
     invoke-static {p1}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
     :cond_4
-    move p1, v4
+    move p1, v2
 
     .line 239
     :goto_0
@@ -305,7 +305,7 @@
     if-eqz p1, :cond_5
 
     .line 242
-    iput-boolean v4, p0, Ljp/co/sony/mc/camera/recorder/utility/encoder/source/AudioSampleDataSourceBase;->mAlreadyEos:Z
+    iput-boolean v2, p0, Ljp/co/sony/mc/camera/recorder/utility/encoder/source/AudioSampleDataSourceBase;->mAlreadyEos:Z
 
     :cond_5
     :goto_1
@@ -464,12 +464,16 @@
 .end method
 
 .method public release()V
-    .locals 2
+    .locals 3
 
     .line 84
     iget-object v0, p0, Ljp/co/sony/mc/camera/recorder/utility/encoder/source/AudioSampleDataSourceBase;->mAudioRecord:Landroid/media/AudioRecord;
 
     invoke-virtual {v0}, Landroid/media/AudioRecord;->release()V
+
+    const/4 v0, 0x0
+
+    const/4 v1, 0x1
 
     .line 86
     :try_start_0
@@ -482,16 +486,12 @@
 
     if-eqz p0, :cond_0
 
-    const/4 p0, 0x1
-
     .line 88
-    new-array p0, p0, [Ljava/lang/String;
+    new-array p0, v1, [Ljava/lang/String;
 
-    const-string/jumbo v0, "worker.quit FINISHED"
+    const-string/jumbo v2, "worker.quit FINISHED"
 
-    const/4 v1, 0x0
-
-    aput-object v0, p0, v1
+    aput-object v2, p0, v0
 
     invoke-static {p0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
     :try_end_0
@@ -506,11 +506,11 @@
     if-eqz p0, :cond_0
 
     .line 92
-    const-string/jumbo p0, "worker.quit INTERRUPTED"
+    new-array p0, v1, [Ljava/lang/String;
 
-    filled-new-array {p0}, [Ljava/lang/String;
+    const-string/jumbo v1, "worker.quit INTERRUPTED"
 
-    move-result-object p0
+    aput-object v1, p0, v0
 
     invoke-static {p0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
@@ -520,7 +520,7 @@
 .end method
 
 .method public start()V
-    .locals 2
+    .locals 4
 
     const-wide/16 v0, 0x0
 
@@ -536,14 +536,18 @@
 
     move-result v0
 
+    const/4 v1, 0x1
+
+    const/4 v2, 0x0
+
     if-eqz v0, :cond_0
 
     .line 103
-    const-string/jumbo v0, "setPositionNotificationPeriod:failed"
+    new-array v0, v1, [Ljava/lang/String;
 
-    filled-new-array {v0}, [Ljava/lang/String;
+    const-string/jumbo v3, "setPositionNotificationPeriod:failed"
 
-    move-result-object v0
+    aput-object v3, v0, v2
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/util/CamLog;->e([Ljava/lang/String;)V
 
@@ -551,23 +555,21 @@
     :cond_0
     iget-object v0, p0, Ljp/co/sony/mc/camera/recorder/utility/encoder/source/AudioSampleDataSourceBase;->mAudioRecord:Landroid/media/AudioRecord;
 
-    iget-object v1, p0, Ljp/co/sony/mc/camera/recorder/utility/encoder/source/AudioSampleDataSourceBase;->mWorker:Ljp/co/sony/mc/camera/util/BackgroundWorker;
+    iget-object v3, p0, Ljp/co/sony/mc/camera/recorder/utility/encoder/source/AudioSampleDataSourceBase;->mWorker:Ljp/co/sony/mc/camera/util/BackgroundWorker;
 
-    invoke-virtual {v1}, Ljp/co/sony/mc/camera/util/BackgroundWorker;->getHandler()Landroid/os/Handler;
+    invoke-virtual {v3}, Ljp/co/sony/mc/camera/util/BackgroundWorker;->getHandler()Landroid/os/Handler;
 
-    move-result-object v1
+    move-result-object v3
 
-    invoke-virtual {v0, p0, v1}, Landroid/media/AudioRecord;->setRecordPositionUpdateListener(Landroid/media/AudioRecord$OnRecordPositionUpdateListener;Landroid/os/Handler;)V
+    invoke-virtual {v0, p0, v3}, Landroid/media/AudioRecord;->setRecordPositionUpdateListener(Landroid/media/AudioRecord$OnRecordPositionUpdateListener;Landroid/os/Handler;)V
 
     .line 106
     iget-object v0, p0, Ljp/co/sony/mc/camera/recorder/utility/encoder/source/AudioSampleDataSourceBase;->mAudioRecord:Landroid/media/AudioRecord;
 
     invoke-virtual {v0}, Landroid/media/AudioRecord;->startRecording()V
 
-    const/4 v0, 0x0
-
     .line 110
-    invoke-direct {p0, v0}, Ljp/co/sony/mc/camera/recorder/utility/encoder/source/AudioSampleDataSourceBase;->requestToReadSampleData(Z)V
+    invoke-direct {p0, v2}, Ljp/co/sony/mc/camera/recorder/utility/encoder/source/AudioSampleDataSourceBase;->requestToReadSampleData(Z)V
 
     .line 112
     iget-object p0, p0, Ljp/co/sony/mc/camera/recorder/utility/encoder/source/AudioSampleDataSourceBase;->mAudioRecord:Landroid/media/AudioRecord;
@@ -576,32 +578,30 @@
 
     move-result p0
 
-    const/4 v0, 0x1
-
-    if-eq p0, v0, :cond_1
+    if-eq p0, v1, :cond_1
 
     return-void
 
     .line 113
     :cond_1
-    const-string p0, "Could not start audio recorder, Recording state is STOPPED"
+    new-array p0, v1, [Ljava/lang/String;
 
-    filled-new-array {p0}, [Ljava/lang/String;
+    const-string v0, "Could not start audio recorder, Recording state is STOPPED"
 
-    move-result-object v0
+    aput-object v0, p0, v2
 
-    invoke-static {v0}, Ljp/co/sony/mc/camera/util/CamLog;->e([Ljava/lang/String;)V
+    invoke-static {p0}, Ljp/co/sony/mc/camera/util/CamLog;->e([Ljava/lang/String;)V
 
     .line 114
-    new-instance v0, Ljava/lang/IllegalStateException;
+    new-instance p0, Ljava/lang/IllegalStateException;
 
-    invoke-direct {v0, p0}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
+    invoke-direct {p0, v0}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
 
-    throw v0
+    throw p0
 .end method
 
 .method public stop()V
-    .locals 2
+    .locals 3
 
     .line 121
     iget-object v0, p0, Ljp/co/sony/mc/camera/recorder/utility/encoder/source/AudioSampleDataSourceBase;->mAudioRecord:Landroid/media/AudioRecord;
@@ -612,6 +612,8 @@
 
     .line 122
     invoke-direct {p0, v0}, Ljp/co/sony/mc/camera/recorder/utility/encoder/source/AudioSampleDataSourceBase;->requestToReadSampleData(Z)V
+
+    const/4 v1, 0x0
 
     .line 125
     :try_start_0
@@ -627,11 +629,9 @@
     .line 127
     new-array p0, v0, [Ljava/lang/String;
 
-    const-string/jumbo v0, "worker.quit FINISHED"
+    const-string/jumbo v2, "worker.quit FINISHED"
 
-    const/4 v1, 0x0
-
-    aput-object v0, p0, v1
+    aput-object v2, p0, v1
 
     invoke-static {p0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
     :try_end_0
@@ -646,11 +646,11 @@
     if-eqz p0, :cond_0
 
     .line 131
-    const-string/jumbo p0, "worker.quit INTERRUPTED"
+    new-array p0, v0, [Ljava/lang/String;
 
-    filled-new-array {p0}, [Ljava/lang/String;
+    const-string/jumbo v0, "worker.quit INTERRUPTED"
 
-    move-result-object p0
+    aput-object v0, p0, v1
 
     invoke-static {p0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 

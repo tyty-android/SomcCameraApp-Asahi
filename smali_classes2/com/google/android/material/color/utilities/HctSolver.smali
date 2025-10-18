@@ -621,23 +621,31 @@
     .line 468
     new-array v0, v0, [D
 
-    fill-array-data v0, :array_0
+    const/4 v1, 0x0
 
-    const-wide/16 v1, 0x0
+    const-wide/high16 v2, -0x4010000000000000L    # -1.0
 
-    const/4 v3, 0x0
+    aput-wide v2, v0, v1
 
     const/4 v4, 0x1
 
+    aput-wide v2, v0, v4
+
+    const/4 v5, 0x2
+
+    aput-wide v2, v0, v5
+
+    const-wide/16 v2, 0x0
+
     move-object v5, v0
 
-    move-wide v15, v1
-
-    move-wide/from16 v17, v15
-
-    move v6, v3
+    move v6, v1
 
     move v7, v6
+
+    move-wide v15, v2
+
+    move-wide/from16 v17, v15
 
     move v8, v4
 
@@ -654,9 +662,9 @@
     move-result-object v19
 
     .line 476
-    aget-wide v9, v19, v3
+    aget-wide v9, v19, v1
 
-    cmpg-double v9, v9, v1
+    cmpg-double v9, v9, v2
 
     if-gez v9, :cond_0
 
@@ -712,7 +720,7 @@
 
     if-eqz v8, :cond_3
 
-    move v8, v3
+    move v8, v1
 
     move-object/from16 v5, v19
 
@@ -721,7 +729,7 @@
     goto :goto_1
 
     :cond_3
-    move v8, v3
+    move v8, v1
 
     move-object/from16 v0, v19
 
@@ -740,13 +748,6 @@
     move-result-object v0
 
     return-object v0
-
-    :array_0
-    .array-data 8
-        -0x4010000000000000L    # -1.0
-        -0x4010000000000000L    # -1.0
-        -0x4010000000000000L    # -1.0
-    .end array-data
 .end method
 
 .method static chromaticAdaptation(D)D

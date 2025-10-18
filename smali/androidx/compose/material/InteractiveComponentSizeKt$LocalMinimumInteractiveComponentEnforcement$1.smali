@@ -79,7 +79,7 @@
 
     const/4 p0, 0x1
 
-    .line 75
+    .line 116
     invoke-static {p0}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
     move-result-object p0
@@ -90,7 +90,7 @@
 .method public bridge synthetic invoke()Ljava/lang/Object;
     .locals 0
 
-    .line 75
+    .line 116
     invoke-virtual {p0}, Landroidx/compose/material/InteractiveComponentSizeKt$LocalMinimumInteractiveComponentEnforcement$1;->invoke()Ljava/lang/Boolean;
 
     move-result-object p0

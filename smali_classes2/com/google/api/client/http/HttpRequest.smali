@@ -204,7 +204,7 @@
 
     if-eqz p2, :cond_0
 
-    .line 1221
+    .line 1223
     invoke-static {p2}, Lio/opencensus/trace/AttributeValue;->stringAttributeValue(Ljava/lang/String;)Lio/opencensus/trace/AttributeValue;
 
     move-result-object p2
@@ -218,16 +218,16 @@
 .method private static getVersion()Ljava/lang/String;
     .locals 4
 
-    .line 1228
+    .line 1230
     const-string v0, "unknown-version"
 
-    .line 1229
+    .line 1231
     :try_start_0
     const-class v1, Lcom/google/api/client/http/HttpRequest;
 
     const-string v2, "/com/google/api/client/http/google-http-client.properties"
 
-    .line 1230
+    .line 1232
     invoke-virtual {v1, v2}, Ljava/lang/Class;->getResourceAsStream(Ljava/lang/String;)Ljava/io/InputStream;
 
     move-result-object v1
@@ -236,16 +236,16 @@
 
     if-eqz v1, :cond_1
 
-    .line 1233
+    .line 1235
     :try_start_1
     new-instance v2, Ljava/util/Properties;
 
     invoke-direct {v2}, Ljava/util/Properties;-><init>()V
 
-    .line 1234
+    .line 1236
     invoke-virtual {v2, v1}, Ljava/util/Properties;->load(Ljava/io/InputStream;)V
 
-    .line 1235
+    .line 1237
     const-string v3, "google-http-client.version"
 
     invoke-virtual {v2, v3}, Ljava/util/Properties;->getProperty(Ljava/lang/String;)Ljava/lang/String;
@@ -259,7 +259,7 @@
     :catchall_0
     move-exception v2
 
-    .line 1229
+    .line 1231
     :try_start_2
     throw v2
     :try_end_2
@@ -270,7 +270,7 @@
 
     if-eqz v1, :cond_0
 
-    .line 1237
+    .line 1239
     :try_start_3
     invoke-virtual {v1}, Ljava/io/InputStream;->close()V
     :try_end_3
@@ -1350,9 +1350,23 @@
     .line 1116
     :cond_27
     :try_start_7
-    new-instance v0, Lcom/google/api/client/http/HttpResponseException;
+    new-instance v0, Lcom/google/api/client/http/HttpResponseException$Builder;
 
-    invoke-direct {v0, v4}, Lcom/google/api/client/http/HttpResponseException;-><init>(Lcom/google/api/client/http/HttpResponse;)V
+    invoke-direct {v0, v4}, Lcom/google/api/client/http/HttpResponseException$Builder;-><init>(Lcom/google/api/client/http/HttpResponse;)V
+
+    iget v1, v1, Lcom/google/api/client/http/HttpRequest;->numRetries:I
+
+    sub-int/2addr v1, v6
+
+    .line 1117
+    invoke-virtual {v0, v1}, Lcom/google/api/client/http/HttpResponseException$Builder;->setAttemptCount(I)Lcom/google/api/client/http/HttpResponseException$Builder;
+
+    move-result-object v0
+
+    .line 1118
+    invoke-virtual {v0}, Lcom/google/api/client/http/HttpResponseException$Builder;->build()Lcom/google/api/client/http/HttpResponseException;
+
+    move-result-object v0
 
     throw v0
     :try_end_7
@@ -1361,10 +1375,10 @@
     :catchall_3
     move-exception v0
 
-    .line 1118
+    .line 1120
     invoke-virtual {v4}, Lcom/google/api/client/http/HttpResponse;->disconnect()V
 
-    .line 1119
+    .line 1121
     throw v0
 
     :cond_28
@@ -1401,14 +1415,14 @@
         }
     .end annotation
 
-    .line 1156
+    .line 1158
     new-instance v0, Lcom/google/common/util/concurrent/ThreadFactoryBuilder;
 
     invoke-direct {v0}, Lcom/google/common/util/concurrent/ThreadFactoryBuilder;-><init>()V
 
     const/4 v1, 0x1
 
-    .line 1157
+    .line 1159
     invoke-virtual {v0, v1}, Lcom/google/common/util/concurrent/ThreadFactoryBuilder;->setDaemon(Z)Lcom/google/common/util/concurrent/ThreadFactoryBuilder;
 
     move-result-object v0
@@ -1421,7 +1435,7 @@
 
     move-result-object v0
 
-    .line 1156
+    .line 1158
     invoke-virtual {p0, v0}, Lcom/google/api/client/http/HttpRequest;->executeAsync(Ljava/util/concurrent/Executor;)Ljava/util/concurrent/Future;
 
     move-result-object p0
@@ -1442,7 +1456,7 @@
         }
     .end annotation
 
-    .line 1134
+    .line 1136
     new-instance v0, Ljava/util/concurrent/FutureTask;
 
     new-instance v1, Lcom/google/api/client/http/HttpRequest$1;
@@ -1451,7 +1465,7 @@
 
     invoke-direct {v0, v1}, Ljava/util/concurrent/FutureTask;-><init>(Ljava/util/concurrent/Callable;)V
 
-    .line 1142
+    .line 1144
     invoke-interface {p1, v0}, Ljava/util/concurrent/Executor;->execute(Ljava/lang/Runnable;)V
 
     return-object v0
@@ -1617,7 +1631,7 @@
 .method public getSleeper()Lcom/google/api/client/util/Sleeper;
     .locals 0
 
-    .line 1206
+    .line 1208
     iget-object p0, p0, Lcom/google/api/client/http/HttpRequest;->sleeper:Lcom/google/api/client/util/Sleeper;
 
     return-object p0
@@ -1689,19 +1703,19 @@
 .method public handleRedirect(ILcom/google/api/client/http/HttpHeaders;)Z
     .locals 2
 
-    .line 1176
+    .line 1178
     invoke-virtual {p2}, Lcom/google/api/client/http/HttpHeaders;->getLocation()Ljava/lang/String;
 
     move-result-object p2
 
-    .line 1177
+    .line 1179
     invoke-virtual {p0}, Lcom/google/api/client/http/HttpRequest;->getFollowRedirects()Z
 
     move-result v0
 
     if-eqz v0, :cond_1
 
-    .line 1178
+    .line 1180
     invoke-static {p1}, Lcom/google/api/client/http/HttpStatusCodes;->isRedirect(I)Z
 
     move-result v0
@@ -1710,7 +1724,7 @@
 
     if-eqz p2, :cond_1
 
-    .line 1181
+    .line 1183
     new-instance v0, Lcom/google/api/client/http/GenericUrl;
 
     iget-object v1, p0, Lcom/google/api/client/http/HttpRequest;->url:Lcom/google/api/client/http/GenericUrl;
@@ -1731,15 +1745,15 @@
 
     if-ne p1, p2, :cond_0
 
-    .line 1184
+    .line 1186
     const-string p1, "GET"
 
     invoke-virtual {p0, p1}, Lcom/google/api/client/http/HttpRequest;->setRequestMethod(Ljava/lang/String;)Lcom/google/api/client/http/HttpRequest;
 
-    .line 1186
+    .line 1188
     invoke-virtual {p0, v0}, Lcom/google/api/client/http/HttpRequest;->setContent(Lcom/google/api/client/http/HttpContent;)Lcom/google/api/client/http/HttpRequest;
 
-    .line 1189
+    .line 1191
     :cond_0
     iget-object p1, p0, Lcom/google/api/client/http/HttpRequest;->headers:Lcom/google/api/client/http/HttpHeaders;
 
@@ -1749,27 +1763,27 @@
 
     invoke-virtual {p1, v0}, Lcom/google/api/client/http/HttpHeaders;->setAuthorization(Ljava/lang/String;)Lcom/google/api/client/http/HttpHeaders;
 
-    .line 1190
+    .line 1192
     iget-object p1, p0, Lcom/google/api/client/http/HttpRequest;->headers:Lcom/google/api/client/http/HttpHeaders;
 
     invoke-virtual {p1, v0}, Lcom/google/api/client/http/HttpHeaders;->setIfMatch(Ljava/lang/String;)Lcom/google/api/client/http/HttpHeaders;
 
-    .line 1191
+    .line 1193
     iget-object p1, p0, Lcom/google/api/client/http/HttpRequest;->headers:Lcom/google/api/client/http/HttpHeaders;
 
     invoke-virtual {p1, v0}, Lcom/google/api/client/http/HttpHeaders;->setIfNoneMatch(Ljava/lang/String;)Lcom/google/api/client/http/HttpHeaders;
 
-    .line 1192
+    .line 1194
     iget-object p1, p0, Lcom/google/api/client/http/HttpRequest;->headers:Lcom/google/api/client/http/HttpHeaders;
 
     invoke-virtual {p1, v0}, Lcom/google/api/client/http/HttpHeaders;->setIfModifiedSince(Ljava/lang/String;)Lcom/google/api/client/http/HttpHeaders;
 
-    .line 1193
+    .line 1195
     iget-object p1, p0, Lcom/google/api/client/http/HttpRequest;->headers:Lcom/google/api/client/http/HttpHeaders;
 
     invoke-virtual {p1, v0}, Lcom/google/api/client/http/HttpHeaders;->setIfUnmodifiedSince(Ljava/lang/String;)Lcom/google/api/client/http/HttpHeaders;
 
-    .line 1194
+    .line 1196
     iget-object p0, p0, Lcom/google/api/client/http/HttpRequest;->headers:Lcom/google/api/client/http/HttpHeaders;
 
     invoke-virtual {p0, v0}, Lcom/google/api/client/http/HttpHeaders;->setIfRange(Ljava/lang/String;)Lcom/google/api/client/http/HttpHeaders;
@@ -2069,7 +2083,7 @@
 .method public setSleeper(Lcom/google/api/client/util/Sleeper;)Lcom/google/api/client/http/HttpRequest;
     .locals 0
 
-    .line 1215
+    .line 1217
     invoke-static {p1}, Lcom/google/api/client/util/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p1

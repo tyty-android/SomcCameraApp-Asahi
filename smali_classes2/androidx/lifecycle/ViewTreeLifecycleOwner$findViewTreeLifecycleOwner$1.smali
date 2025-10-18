@@ -1,6 +1,6 @@
 .class final Landroidx/lifecycle/ViewTreeLifecycleOwner$findViewTreeLifecycleOwner$1;
 .super Lkotlin/jvm/internal/Lambda;
-.source "ViewTreeLifecycleOwner.kt"
+.source "ViewTreeLifecycleOwner.android.kt"
 
 # interfaces
 .implements Lkotlin/jvm/functions/Function1;

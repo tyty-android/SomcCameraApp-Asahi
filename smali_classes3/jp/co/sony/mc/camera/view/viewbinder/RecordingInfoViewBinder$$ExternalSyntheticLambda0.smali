@@ -3,7 +3,7 @@
 .source "D8$$SyntheticClass"
 
 # interfaces
-.implements Landroid/view/View$OnLayoutChangeListener;
+.implements Lkotlin/jvm/functions/Function1;
 
 
 # instance fields
@@ -24,33 +24,17 @@
 
 
 # virtual methods
-.method public final onLayoutChange(Landroid/view/View;IIIIIIII)V
-    .locals 10
+.method public final invoke(Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 0
 
     .line 0
-    move-object v0, p0
+    iget-object p0, p0, Ljp/co/sony/mc/camera/view/viewbinder/RecordingInfoViewBinder$$ExternalSyntheticLambda0;->f$0:Ljp/co/sony/mc/camera/view/viewbinder/RecordingInfoViewBinder;
 
-    iget-object v0, v0, Ljp/co/sony/mc/camera/view/viewbinder/RecordingInfoViewBinder$$ExternalSyntheticLambda0;->f$0:Ljp/co/sony/mc/camera/view/viewbinder/RecordingInfoViewBinder;
+    check-cast p1, Ljava/lang/Boolean;
 
-    move-object v1, p1
+    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/view/viewbinder/RecordingInfoViewBinder;->$r8$lambda$veKRvcI7MGdbH9pBL8XDs7MyiD4(Ljp/co/sony/mc/camera/view/viewbinder/RecordingInfoViewBinder;Ljava/lang/Boolean;)Lkotlin/Unit;
 
-    move v2, p2
+    move-result-object p0
 
-    move v3, p3
-
-    move v4, p4
-
-    move v5, p5
-
-    move/from16 v6, p6
-
-    move/from16 v7, p7
-
-    move/from16 v8, p8
-
-    move/from16 v9, p9
-
-    invoke-static/range {v0 .. v9}, Ljp/co/sony/mc/camera/view/viewbinder/RecordingInfoViewBinder;->$r8$lambda$y-EXw1A4Q3h_4fRrnslt719vxoE(Ljp/co/sony/mc/camera/view/viewbinder/RecordingInfoViewBinder;Landroid/view/View;IIIIIIII)V
-
-    return-void
+    return-object p0
 .end method

@@ -44,7 +44,7 @@
 .method private constructor <init>()V
     .locals 0
 
-    .line 61
+    .line 62
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -63,7 +63,7 @@
 .method public final fromClosedRange(CCI)Lkotlin/ranges/CharProgression;
     .locals 0
 
-    .line 70
+    .line 71
     new-instance p0, Lkotlin/ranges/CharProgression;
 
     invoke-direct {p0, p1, p2, p3}, Lkotlin/ranges/CharProgression;-><init>(CCI)V

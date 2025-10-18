@@ -35,22 +35,28 @@
 .end annotation
 
 
+# static fields
+.field public static final $stable:I = 0x8
+
+
 # instance fields
 .field private final coroutineScope:Lkotlinx/coroutines/CoroutineScope;
 
 
 # direct methods
+.method static constructor <clinit>()V
+    .locals 0
+
+    return-void
+.end method
+
 .method public constructor <init>(Lkotlinx/coroutines/CoroutineScope;)V
-    .locals 1
+    .locals 0
 
-    const-string v0, "coroutineScope"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 422
+    .line 423
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 424
+    .line 425
     iput-object p1, p0, Landroidx/compose/runtime/CompositionScopedCoroutineScopeCanceller;->coroutineScope:Lkotlinx/coroutines/CoroutineScope;
 
     return-void
@@ -61,7 +67,7 @@
 .method public final getCoroutineScope()Lkotlinx/coroutines/CoroutineScope;
     .locals 0
 
-    .line 424
+    .line 425
     iget-object p0, p0, Landroidx/compose/runtime/CompositionScopedCoroutineScopeCanceller;->coroutineScope:Lkotlinx/coroutines/CoroutineScope;
 
     return-object p0
@@ -70,7 +76,7 @@
 .method public onAbandoned()V
     .locals 1
 
-    .line 435
+    .line 436
     iget-object p0, p0, Landroidx/compose/runtime/CompositionScopedCoroutineScopeCanceller;->coroutineScope:Lkotlinx/coroutines/CoroutineScope;
 
     new-instance v0, Landroidx/compose/runtime/LeftCompositionCancellationException;
@@ -87,7 +93,7 @@
 .method public onForgotten()V
     .locals 1
 
-    .line 431
+    .line 432
     iget-object p0, p0, Landroidx/compose/runtime/CompositionScopedCoroutineScopeCanceller;->coroutineScope:Lkotlinx/coroutines/CoroutineScope;
 
     new-instance v0, Landroidx/compose/runtime/LeftCompositionCancellationException;

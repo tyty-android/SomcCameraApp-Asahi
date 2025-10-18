@@ -651,14 +651,20 @@
 
     iput v2, p0, Landroidx/constraintlayout/core/motion/utils/HyperSpline;->mPoints:I
 
+    const/4 v3, 0x2
+
     .line 50
-    filled-new-array {v1, v2}, [I
+    new-array v3, v3, [I
 
-    move-result-object v1
+    const/4 v4, 0x1
 
-    sget-object v2, Ljava/lang/Double;->TYPE:Ljava/lang/Class;
+    aput v2, v3, v4
 
-    invoke-static {v2, v1}, Ljava/lang/reflect/Array;->newInstance(Ljava/lang/Class;[I)Ljava/lang/Object;
+    aput v1, v3, v0
+
+    sget-object v1, Ljava/lang/Double;->TYPE:Ljava/lang/Class;
+
+    invoke-static {v1, v3}, Ljava/lang/reflect/Array;->newInstance(Ljava/lang/Class;[I)Ljava/lang/Object;
 
     move-result-object v1
 
@@ -694,11 +700,11 @@
 
     aget-object v3, v3, v1
 
-    aget-object v4, p1, v2
+    aget-object v5, p1, v2
 
-    aget-wide v4, v4, v1
+    aget-wide v5, v5, v1
 
-    aput-wide v4, v3, v2
+    aput-wide v5, v3, v2
 
     add-int/lit8 v2, v2, 0x1
 
@@ -741,7 +747,7 @@
     :cond_2
     iget p1, p0, Landroidx/constraintlayout/core/motion/utils/HyperSpline;->mPoints:I
 
-    add-int/lit8 p1, p1, -0x1
+    sub-int/2addr p1, v4
 
     new-array p1, p1, [D
 

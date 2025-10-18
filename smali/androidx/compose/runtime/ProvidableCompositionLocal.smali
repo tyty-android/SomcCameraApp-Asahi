@@ -63,13 +63,9 @@
         }
     .end annotation
 
-    const-string v0, "defaultFactory"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
     const/4 v0, 0x0
 
-    .line 89
+    .line 87
     invoke-direct {p0, p1, v0}, Landroidx/compose/runtime/CompositionLocal;-><init>(Lkotlin/jvm/functions/Function0;Lkotlin/jvm/internal/DefaultConstructorMarker;)V
 
     return-void
@@ -87,7 +83,7 @@
         }
     .end annotation
 
-    .line 98
+    .line 95
     new-instance v0, Landroidx/compose/runtime/ProvidedValue;
 
     check-cast p0, Landroidx/compose/runtime/CompositionLocal;
@@ -109,7 +105,7 @@
         }
     .end annotation
 
-    .line 108
+    .line 104
     new-instance v0, Landroidx/compose/runtime/ProvidedValue;
 
     check-cast p0, Landroidx/compose/runtime/CompositionLocal;

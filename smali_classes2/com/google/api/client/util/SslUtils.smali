@@ -7,7 +7,7 @@
 .method private constructor <init>()V
     .locals 0
 
-    .line 191
+    .line 193
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -21,7 +21,7 @@
         }
     .end annotation
 
-    .line 81
+    .line 82
     invoke-static {}, Ljavax/net/ssl/KeyManagerFactory;->getDefaultAlgorithm()Ljava/lang/String;
 
     move-result-object v0
@@ -41,7 +41,7 @@
         }
     .end annotation
 
-    .line 63
+    .line 64
     invoke-static {}, Ljavax/net/ssl/TrustManagerFactory;->getDefaultAlgorithm()Ljava/lang/String;
 
     move-result-object v0
@@ -61,7 +61,7 @@
         }
     .end annotation
 
-    .line 90
+    .line 91
     const-string v0, "PKIX"
 
     invoke-static {v0}, Ljavax/net/ssl/KeyManagerFactory;->getInstance(Ljava/lang/String;)Ljavax/net/ssl/KeyManagerFactory;
@@ -79,7 +79,7 @@
         }
     .end annotation
 
-    .line 72
+    .line 73
     const-string v0, "PKIX"
 
     invoke-static {v0}, Ljavax/net/ssl/TrustManagerFactory;->getInstance(Ljava/lang/String;)Ljavax/net/ssl/TrustManagerFactory;
@@ -97,7 +97,7 @@
         }
     .end annotation
 
-    .line 44
+    .line 45
     const-string v0, "SSL"
 
     invoke-static {v0}, Ljavax/net/ssl/SSLContext;->getInstance(Ljava/lang/String;)Ljavax/net/ssl/SSLContext;
@@ -115,7 +115,7 @@
         }
     .end annotation
 
-    .line 53
+    .line 54
     const-string v0, "TLS"
 
     invoke-static {v0}, Ljavax/net/ssl/SSLContext;->getInstance(Ljava/lang/String;)Ljavax/net/ssl/SSLContext;
@@ -133,12 +133,12 @@
         }
     .end annotation
 
-    .line 107
+    .line 109
     invoke-virtual {p2, p1}, Ljavax/net/ssl/TrustManagerFactory;->init(Ljava/security/KeyStore;)V
 
     const/4 p1, 0x0
 
-    .line 108
+    .line 110
     invoke-virtual {p2}, Ljavax/net/ssl/TrustManagerFactory;->getTrustManagers()[Ljavax/net/ssl/TrustManager;
 
     move-result-object p2
@@ -156,17 +156,17 @@
         }
     .end annotation
 
-    .line 138
+    .line 140
     invoke-virtual {p2, p1}, Ljavax/net/ssl/TrustManagerFactory;->init(Ljava/security/KeyStore;)V
 
-    .line 139
+    .line 141
     invoke-virtual {p4}, Ljava/lang/String;->toCharArray()[C
 
     move-result-object p1
 
     invoke-virtual {p5, p3, p1}, Ljavax/net/ssl/KeyManagerFactory;->init(Ljava/security/KeyStore;[C)V
 
-    .line 141
+    .line 143
     invoke-virtual {p5}, Ljavax/net/ssl/KeyManagerFactory;->getKeyManagers()[Ljavax/net/ssl/KeyManager;
 
     move-result-object p1
@@ -177,7 +177,7 @@
 
     const/4 p3, 0x0
 
-    .line 140
+    .line 142
     invoke-virtual {p0, p1, p2, p3}, Ljavax/net/ssl/SSLContext;->init([Ljavax/net/ssl/KeyManager;[Ljavax/net/ssl/TrustManager;Ljava/security/SecureRandom;)V
 
     return-object p0
@@ -186,7 +186,7 @@
 .method public static trustAllHostnameVerifier()Ljavax/net/ssl/HostnameVerifier;
     .locals 1
 
-    .line 183
+    .line 185
     new-instance v0, Lcom/google/api/client/util/SslUtils$2;
 
     invoke-direct {v0}, Lcom/google/api/client/util/SslUtils$2;-><init>()V
@@ -204,7 +204,7 @@
 
     const/4 v0, 0x1
 
-    .line 154
+    .line 156
     new-array v0, v0, [Ljavax/net/ssl/TrustManager;
 
     new-instance v1, Lcom/google/api/client/util/SslUtils$1;
@@ -215,14 +215,14 @@
 
     aput-object v1, v0, v2
 
-    .line 169
+    .line 171
     invoke-static {}, Lcom/google/api/client/util/SslUtils;->getTlsSslContext()Ljavax/net/ssl/SSLContext;
 
     move-result-object v1
 
     const/4 v2, 0x0
 
-    .line 170
+    .line 172
     invoke-virtual {v1, v2, v0, v2}, Ljavax/net/ssl/SSLContext;->init([Ljavax/net/ssl/KeyManager;[Ljavax/net/ssl/TrustManager;Ljava/security/SecureRandom;)V
 
     return-object v1

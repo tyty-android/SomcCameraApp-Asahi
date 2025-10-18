@@ -5,12 +5,12 @@
 
 # annotations
 .annotation system Ldalvik/annotation/SourceDebugExtension;
-    value = "SMAP\nBasicModeColorToneProfileUiState.kt\nKotlin\n*S Kotlin\n*F\n+ 1 BasicModeColorToneProfileUiState.kt\njp/co/sony/mc/camera/view/uistate/BasicModeColorToneProfileUiState\n+ 2 _Arrays.kt\nkotlin/collections/ArraysKt___ArraysKt\n+ 3 _Collections.kt\nkotlin/collections/CollectionsKt___CollectionsKt\n+ 4 fake.kt\nkotlin/jvm/internal/FakeKt\n*L\n1#1,88:1\n3792#2:89\n4307#2,2:90\n1569#3,11:92\n1864#3,2:103\n1866#3:106\n1580#3:107\n1#4:105\n*S KotlinDebug\n*F\n+ 1 BasicModeColorToneProfileUiState.kt\njp/co/sony/mc/camera/view/uistate/BasicModeColorToneProfileUiState\n*L\n74#1:89\n74#1:90,2\n84#1:92,11\n84#1:103,2\n84#1:106\n84#1:107\n84#1:105\n*E\n"
+    value = "SMAP\nBasicModeColorToneProfileUiState.kt\nKotlin\n*S Kotlin\n*F\n+ 1 BasicModeColorToneProfileUiState.kt\njp/co/sony/mc/camera/view/uistate/BasicModeColorToneProfileUiState\n+ 2 _Arrays.kt\nkotlin/collections/ArraysKt___ArraysKt\n+ 3 _Collections.kt\nkotlin/collections/CollectionsKt___CollectionsKt\n+ 4 fake.kt\nkotlin/jvm/internal/FakeKt\n*L\n1#1,88:1\n3829#2:89\n4344#2,2:90\n1577#3,11:92\n1872#3,2:103\n1874#3:106\n1588#3:107\n1#4:105\n*S KotlinDebug\n*F\n+ 1 BasicModeColorToneProfileUiState.kt\njp/co/sony/mc/camera/view/uistate/BasicModeColorToneProfileUiState\n*L\n74#1:89\n74#1:90,2\n84#1:92,11\n84#1:103,2\n84#1:106\n84#1:107\n84#1:105\n*E\n"
 .end annotation
 
 .annotation runtime Lkotlin/Metadata;
     d1 = {
-        "\u0000^\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0003\n\u0002\u0018\u0002\n\u0002\u0010\u0008\n\u0002\u0008\u0007\n\u0002\u0010\u000b\n\u0002\u0008\u0005\n\u0002\u0018\u0002\n\u0002\u0008\u0005\n\u0002\u0018\u0002\n\u0002\u0008\u0004\n\u0002\u0010 \n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0002\n\u0002\u0008\u0002\u0008\u0007\u0018\u00002\u00020\u0001B\u001d\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\u0006\u0010\u0004\u001a\u00020\u0005\u0012\u0006\u0010\u0006\u001a\u00020\u0007\u00a2\u0006\u0002\u0010\u0008J\u000c\u0010\'\u001a\u0008\u0012\u0004\u0012\u00020\u000f0(J\u000c\u0010)\u001a\u0008\u0012\u0004\u0012\u00020*0(J\u000e\u0010+\u001a\u00020,2\u0006\u0010-\u001a\u00020*R\u000e\u0010\u0002\u001a\u00020\u0003X\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u0006\u001a\u00020\u0007X\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u0004\u001a\u00020\u0005X\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u0014\u0010\t\u001a\u00020\n8BX\u0082\u0004\u00a2\u0006\u0006\u001a\u0004\u0008\u000b\u0010\u000cR\u0017\u0010\r\u001a\u0008\u0012\u0004\u0012\u00020\u000f0\u000e\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\u0010\u0010\u0011R\u0017\u0010\u0012\u001a\u0008\u0012\u0004\u0012\u00020\u000f0\u000e\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\u0013\u0010\u0011R\u0017\u0010\u0014\u001a\u0008\u0012\u0004\u0012\u00020\u000f0\u000e\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\u0015\u0010\u0011R\u0017\u0010\u0016\u001a\u0008\u0012\u0004\u0012\u00020\u00170\u000e\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\u0018\u0010\u0011R\u0017\u0010\u0019\u001a\u0008\u0012\u0004\u0012\u00020\u00170\u000e\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\u001a\u0010\u0011R\u0017\u0010\u001b\u001a\u0008\u0012\u0004\u0012\u00020\u00170\u000e\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\u001b\u0010\u0011R\u001c\u0010\u001c\u001a\u0004\u0018\u00010\u001dX\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\u0008\u001e\u0010\u001f\"\u0004\u0008 \u0010!R\u001c\u0010\"\u001a\n $*\u0004\u0018\u00010#0#8BX\u0082\u0004\u00a2\u0006\u0006\u001a\u0004\u0008%\u0010&\u00a8\u0006."
+        "\u0000d\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0003\n\u0002\u0018\u0002\n\u0002\u0008\u0005\n\u0002\u0018\u0002\n\u0002\u0008\u0004\n\u0002\u0018\u0002\n\u0002\u0008\u0003\n\u0002\u0018\u0002\n\u0002\u0010\u000b\n\u0002\u0008\u0006\n\u0002\u0010\u0008\n\u0002\u0008\u0006\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010 \n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0003\u0008\u0007\u0018\u00002\u00020\u0001B\u001f\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\u0006\u0010\u0004\u001a\u00020\u0005\u0012\u0006\u0010\u0006\u001a\u00020\u0007\u00a2\u0006\u0004\u0008\u0008\u0010\tJ\u000e\u0010(\u001a\u00020)2\u0006\u0010*\u001a\u00020+J\u000c\u0010,\u001a\u0008\u0012\u0004\u0012\u00020+0-J\u001b\u0010.\u001a\u0017\u0012\u0013\u0012\u00110\"\u00a2\u0006\u000c\u0008/\u0012\u0008\u00080\u0012\u0004\u0008\u0008(10-R\u000e\u0010\u0002\u001a\u00020\u0003X\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u0004\u001a\u00020\u0005X\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u0006\u001a\u00020\u0007X\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u001c\u0010\n\u001a\u0004\u0018\u00010\u000bX\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\u0008\u000c\u0010\r\"\u0004\u0008\u000e\u0010\u000fR\u001c\u0010\u0010\u001a\n \u0012*\u0004\u0018\u00010\u00110\u00118BX\u0082\u0004\u00a2\u0006\u0006\u001a\u0004\u0008\u0013\u0010\u0014R\u0014\u0010\u0015\u001a\u00020\u00168BX\u0082\u0004\u00a2\u0006\u0006\u001a\u0004\u0008\u0017\u0010\u0018R\u0017\u0010\u0019\u001a\u0008\u0012\u0004\u0012\u00020\u001b0\u001a\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\u0019\u0010\u001cR\u0017\u0010\u001d\u001a\u0008\u0012\u0004\u0012\u00020\u001b0\u001a\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\u001e\u0010\u001cR\u0017\u0010\u001f\u001a\u0008\u0012\u0004\u0012\u00020\u001b0\u001a\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008 \u0010\u001cR\u0017\u0010!\u001a\u0008\u0012\u0004\u0012\u00020\"0\u001a\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008#\u0010\u001cR\u0017\u0010$\u001a\u0008\u0012\u0004\u0012\u00020\"0\u001a\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008%\u0010\u001cR\u0017\u0010&\u001a\u0008\u0012\u0004\u0012\u00020\"0\u001a\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\'\u0010\u001c\u00a8\u00062"
     }
     d2 = {
         "Ljp/co/sony/mc/camera/view/uistate/BasicModeColorToneProfileUiState;",
@@ -21,26 +21,8 @@
         "Ljp/co/sony/mc/camera/view/viewmodel/CameraStatusModel;",
         "cameraSettingsModel",
         "Ljp/co/sony/mc/camera/view/viewmodel/CameraSettingsModel;",
+        "<init>",
         "(Ljp/co/sony/mc/camera/view/uistate/BasicModeCommonUiState;Ljp/co/sony/mc/camera/view/viewmodel/CameraStatusModel;Ljp/co/sony/mc/camera/view/viewmodel/CameraSettingsModel;)V",
-        "checker",
-        "Ljp/co/sony/mc/camera/setting/SettingAppearanceChecker;",
-        "getChecker",
-        "()Ljp/co/sony/mc/camera/setting/SettingAppearanceChecker;",
-        "colorToneProfileBtnContentDescription",
-        "Landroidx/lifecycle/LiveData;",
-        "",
-        "getColorToneProfileBtnContentDescription",
-        "()Landroidx/lifecycle/LiveData;",
-        "colorToneProfileBtnSrc",
-        "getColorToneProfileBtnSrc",
-        "colorToneProfileInfoSrc",
-        "getColorToneProfileInfoSrc",
-        "colorToneProfileInfoVisible",
-        "",
-        "getColorToneProfileInfoVisible",
-        "colorToneProfileVisible",
-        "getColorToneProfileVisible",
-        "isColorToneProfileEnable",
         "operator",
         "Ljp/co/sony/mc/camera/view/CameraOperator;",
         "getOperator",
@@ -52,19 +34,41 @@
         "kotlin.jvm.PlatformType",
         "getSettings",
         "()Ljp/co/sony/mc/camera/setting/CameraProSetting;",
-        "colorToneProfileDisableOptions",
+        "checker",
+        "Ljp/co/sony/mc/camera/setting/SettingAppearanceChecker;",
+        "getChecker",
+        "()Ljp/co/sony/mc/camera/setting/SettingAppearanceChecker;",
+        "isColorToneProfileEnable",
+        "Landroidx/lifecycle/LiveData;",
         "",
-        "colorToneProfileOptions",
-        "Ljp/co/sony/mc/camera/configuration/parameters/ColorToneProfile;",
+        "()Landroidx/lifecycle/LiveData;",
+        "colorToneProfileVisible",
+        "getColorToneProfileVisible",
+        "colorToneProfileInfoVisible",
+        "getColorToneProfileInfoVisible",
+        "colorToneProfileBtnContentDescription",
+        "",
+        "getColorToneProfileBtnContentDescription",
+        "colorToneProfileBtnSrc",
+        "getColorToneProfileBtnSrc",
+        "colorToneProfileInfoSrc",
+        "getColorToneProfileInfoSrc",
         "setColorToneProfile",
         "",
         "value",
+        "Ljp/co/sony/mc/camera/configuration/parameters/ColorToneProfile;",
+        "colorToneProfileOptions",
+        "",
+        "colorToneProfileDisableOptions",
+        "Lkotlin/ParameterName;",
+        "name",
+        "index",
         "SomcCamera_release"
     }
     k = 0x1
     mv = {
-        0x1,
-        0x9,
+        0x2,
+        0x0,
         0x0
     }
     xi = 0x30
@@ -146,6 +150,66 @@
 
 
 # direct methods
+.method public static synthetic $r8$lambda$0Pwuqi06iA3qUEiRTjI_YW6RjPc(Ljp/co/sony/mc/camera/configuration/parameters/ColorToneProfile;)I
+    .locals 0
+
+    invoke-static {p0}, Ljp/co/sony/mc/camera/view/uistate/BasicModeColorToneProfileUiState;->colorToneProfileBtnContentDescription$lambda$3(Ljp/co/sony/mc/camera/configuration/parameters/ColorToneProfile;)I
+
+    move-result p0
+
+    return p0
+.end method
+
+.method public static synthetic $r8$lambda$BanfNlSePeyDUcd6s1DYiQFGhEQ(Ljp/co/sony/mc/camera/configuration/parameters/ColorToneProfile;)I
+    .locals 0
+
+    invoke-static {p0}, Ljp/co/sony/mc/camera/view/uistate/BasicModeColorToneProfileUiState;->colorToneProfileBtnSrc$lambda$4(Ljp/co/sony/mc/camera/configuration/parameters/ColorToneProfile;)I
+
+    move-result p0
+
+    return p0
+.end method
+
+.method public static synthetic $r8$lambda$bbxcbYr3TaXIniZPjgQ8DLWS2Ow(Z)I
+    .locals 0
+
+    invoke-static {p0}, Ljp/co/sony/mc/camera/view/uistate/BasicModeColorToneProfileUiState;->colorToneProfileInfoSrc$lambda$5(Z)I
+
+    move-result p0
+
+    return p0
+.end method
+
+.method public static synthetic $r8$lambda$iPTzvPjK1o1D7OUxaHxoRcLih3A(Ljp/co/sony/mc/camera/view/uistate/BasicModeMenuType;)Z
+    .locals 0
+
+    invoke-static {p0}, Ljp/co/sony/mc/camera/view/uistate/BasicModeColorToneProfileUiState;->colorToneProfileInfoVisible$lambda$2(Ljp/co/sony/mc/camera/view/uistate/BasicModeMenuType;)Z
+
+    move-result p0
+
+    return p0
+.end method
+
+.method public static synthetic $r8$lambda$j5S6FOe-GTGDCuleS70HXu9eqnA(Ljp/co/sony/mc/camera/view/uistate/BasicModeMenuType;)Z
+    .locals 0
+
+    invoke-static {p0}, Ljp/co/sony/mc/camera/view/uistate/BasicModeColorToneProfileUiState;->colorToneProfileVisible$lambda$1(Ljp/co/sony/mc/camera/view/uistate/BasicModeMenuType;)Z
+
+    move-result p0
+
+    return p0
+.end method
+
+.method public static synthetic $r8$lambda$k1STARR2KiJRizpTjSjF2Nlpmys(ZLjava/lang/Boolean;Ljava/lang/Boolean;ZLjp/co/sony/mc/camera/configuration/parameters/CapturingMode;)Z
+    .locals 0
+
+    invoke-static {p0, p1, p2, p3, p4}, Ljp/co/sony/mc/camera/view/uistate/BasicModeColorToneProfileUiState;->isColorToneProfileEnable$lambda$0(ZLjava/lang/Boolean;Ljava/lang/Boolean;ZLjp/co/sony/mc/camera/configuration/parameters/CapturingMode;)Z
+
+    move-result p0
+
+    return p0
+.end method
+
 .method static constructor <clinit>()V
     .locals 0
 
@@ -207,13 +271,11 @@
 
     move-result-object v6
 
+    new-instance v7, Ljp/co/sony/mc/camera/view/uistate/BasicModeColorToneProfileUiState$$ExternalSyntheticLambda0;
+
+    invoke-direct {v7}, Ljp/co/sony/mc/camera/view/uistate/BasicModeColorToneProfileUiState$$ExternalSyntheticLambda0;-><init>()V
+
     .line 31
-    sget-object p2, Ljp/co/sony/mc/camera/view/uistate/BasicModeColorToneProfileUiState$isColorToneProfileEnable$1;->INSTANCE:Ljp/co/sony/mc/camera/view/uistate/BasicModeColorToneProfileUiState$isColorToneProfileEnable$1;
-
-    move-object v7, p2
-
-    check-cast v7, Lkotlin/jvm/functions/Function5;
-
     invoke-virtual/range {v1 .. v7}, Ljp/co/sony/mc/camera/view/viewmodel/LiveDataMediators;->notNulls(Landroidx/lifecycle/LiveData;Landroidx/lifecycle/LiveData;Landroidx/lifecycle/LiveData;Landroidx/lifecycle/LiveData;Landroidx/lifecycle/LiveData;Lkotlin/jvm/functions/Function5;)Landroidx/lifecycle/LiveData;
 
     move-result-object p2
@@ -225,9 +287,9 @@
 
     move-result-object p2
 
-    sget-object v0, Ljp/co/sony/mc/camera/view/uistate/BasicModeColorToneProfileUiState$colorToneProfileVisible$1;->INSTANCE:Ljp/co/sony/mc/camera/view/uistate/BasicModeColorToneProfileUiState$colorToneProfileVisible$1;
+    new-instance v0, Ljp/co/sony/mc/camera/view/uistate/BasicModeColorToneProfileUiState$$ExternalSyntheticLambda1;
 
-    check-cast v0, Lkotlin/jvm/functions/Function1;
+    invoke-direct {v0}, Ljp/co/sony/mc/camera/view/uistate/BasicModeColorToneProfileUiState$$ExternalSyntheticLambda1;-><init>()V
 
     invoke-static {p2, v0}, Landroidx/lifecycle/Transformations;->map(Landroidx/lifecycle/LiveData;Lkotlin/jvm/functions/Function1;)Landroidx/lifecycle/LiveData;
 
@@ -240,9 +302,9 @@
 
     move-result-object p1
 
-    sget-object p2, Ljp/co/sony/mc/camera/view/uistate/BasicModeColorToneProfileUiState$colorToneProfileInfoVisible$1;->INSTANCE:Ljp/co/sony/mc/camera/view/uistate/BasicModeColorToneProfileUiState$colorToneProfileInfoVisible$1;
+    new-instance p2, Ljp/co/sony/mc/camera/view/uistate/BasicModeColorToneProfileUiState$$ExternalSyntheticLambda2;
 
-    check-cast p2, Lkotlin/jvm/functions/Function1;
+    invoke-direct {p2}, Ljp/co/sony/mc/camera/view/uistate/BasicModeColorToneProfileUiState$$ExternalSyntheticLambda2;-><init>()V
 
     invoke-static {p1, p2}, Landroidx/lifecycle/Transformations;->map(Landroidx/lifecycle/LiveData;Lkotlin/jvm/functions/Function1;)Landroidx/lifecycle/LiveData;
 
@@ -255,9 +317,9 @@
 
     move-result-object p2
 
-    sget-object v0, Ljp/co/sony/mc/camera/view/uistate/BasicModeColorToneProfileUiState$colorToneProfileBtnContentDescription$1;->INSTANCE:Ljp/co/sony/mc/camera/view/uistate/BasicModeColorToneProfileUiState$colorToneProfileBtnContentDescription$1;
+    new-instance v0, Ljp/co/sony/mc/camera/view/uistate/BasicModeColorToneProfileUiState$$ExternalSyntheticLambda3;
 
-    check-cast v0, Lkotlin/jvm/functions/Function1;
+    invoke-direct {v0}, Ljp/co/sony/mc/camera/view/uistate/BasicModeColorToneProfileUiState$$ExternalSyntheticLambda3;-><init>()V
 
     invoke-static {p2, v0}, Landroidx/lifecycle/Transformations;->map(Landroidx/lifecycle/LiveData;Lkotlin/jvm/functions/Function1;)Landroidx/lifecycle/LiveData;
 
@@ -270,9 +332,9 @@
 
     move-result-object p2
 
-    sget-object p3, Ljp/co/sony/mc/camera/view/uistate/BasicModeColorToneProfileUiState$colorToneProfileBtnSrc$1;->INSTANCE:Ljp/co/sony/mc/camera/view/uistate/BasicModeColorToneProfileUiState$colorToneProfileBtnSrc$1;
+    new-instance p3, Ljp/co/sony/mc/camera/view/uistate/BasicModeColorToneProfileUiState$$ExternalSyntheticLambda4;
 
-    check-cast p3, Lkotlin/jvm/functions/Function1;
+    invoke-direct {p3}, Ljp/co/sony/mc/camera/view/uistate/BasicModeColorToneProfileUiState$$ExternalSyntheticLambda4;-><init>()V
 
     invoke-static {p2, p3}, Landroidx/lifecycle/Transformations;->map(Landroidx/lifecycle/LiveData;Lkotlin/jvm/functions/Function1;)Landroidx/lifecycle/LiveData;
 
@@ -281,9 +343,9 @@
     iput-object p2, p0, Ljp/co/sony/mc/camera/view/uistate/BasicModeColorToneProfileUiState;->colorToneProfileBtnSrc:Landroidx/lifecycle/LiveData;
 
     .line 61
-    sget-object p2, Ljp/co/sony/mc/camera/view/uistate/BasicModeColorToneProfileUiState$colorToneProfileInfoSrc$1;->INSTANCE:Ljp/co/sony/mc/camera/view/uistate/BasicModeColorToneProfileUiState$colorToneProfileInfoSrc$1;
+    new-instance p2, Ljp/co/sony/mc/camera/view/uistate/BasicModeColorToneProfileUiState$$ExternalSyntheticLambda5;
 
-    check-cast p2, Lkotlin/jvm/functions/Function1;
+    invoke-direct {p2}, Ljp/co/sony/mc/camera/view/uistate/BasicModeColorToneProfileUiState$$ExternalSyntheticLambda5;-><init>()V
 
     invoke-static {p1, p2}, Landroidx/lifecycle/Transformations;->map(Landroidx/lifecycle/LiveData;Lkotlin/jvm/functions/Function1;)Landroidx/lifecycle/LiveData;
 
@@ -292,6 +354,112 @@
     iput-object p1, p0, Ljp/co/sony/mc/camera/view/uistate/BasicModeColorToneProfileUiState;->colorToneProfileInfoSrc:Landroidx/lifecycle/LiveData;
 
     return-void
+.end method
+
+.method private static final colorToneProfileBtnContentDescription$lambda$3(Ljp/co/sony/mc/camera/configuration/parameters/ColorToneProfile;)I
+    .locals 1
+
+    .line 48
+    sget-object v0, Ljp/co/sony/mc/camera/configuration/parameters/ColorToneProfile;->Companion:Ljp/co/sony/mc/camera/configuration/parameters/ColorToneProfile$Companion;
+
+    invoke-virtual {v0}, Ljp/co/sony/mc/camera/configuration/parameters/ColorToneProfile$Companion;->getDefaultValue()Ljp/co/sony/mc/camera/configuration/parameters/ColorToneProfile;
+
+    move-result-object v0
+
+    if-ne p0, v0, :cond_0
+
+    const p0, 0x7f110083
+
+    goto :goto_0
+
+    :cond_0
+    const p0, 0x7f110082
+
+    :goto_0
+    return p0
+.end method
+
+.method private static final colorToneProfileBtnSrc$lambda$4(Ljp/co/sony/mc/camera/configuration/parameters/ColorToneProfile;)I
+    .locals 1
+
+    .line 55
+    sget-object v0, Ljp/co/sony/mc/camera/configuration/parameters/ColorToneProfile;->Companion:Ljp/co/sony/mc/camera/configuration/parameters/ColorToneProfile$Companion;
+
+    invoke-virtual {v0}, Ljp/co/sony/mc/camera/configuration/parameters/ColorToneProfile$Companion;->getDefaultValue()Ljp/co/sony/mc/camera/configuration/parameters/ColorToneProfile;
+
+    move-result-object v0
+
+    if-ne p0, v0, :cond_0
+
+    const p0, 0x7f080101
+
+    goto :goto_0
+
+    :cond_0
+    const p0, 0x7f080102
+
+    :goto_0
+    return p0
+.end method
+
+.method private static final colorToneProfileInfoSrc$lambda$5(Z)I
+    .locals 0
+
+    if-eqz p0, :cond_0
+
+    const p0, 0x7f080237
+
+    goto :goto_0
+
+    :cond_0
+    const p0, 0x7f080236
+
+    :goto_0
+    return p0
+.end method
+
+.method private static final colorToneProfileInfoVisible$lambda$2(Ljp/co/sony/mc/camera/view/uistate/BasicModeMenuType;)Z
+    .locals 1
+
+    const-string v0, "it"
+
+    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 45
+    instance-of v0, p0, Ljp/co/sony/mc/camera/view/uistate/BasicModeMenuType$ColorToneProfile;
+
+    if-eqz v0, :cond_0
+
+    check-cast p0, Ljp/co/sony/mc/camera/view/uistate/BasicModeMenuType$ColorToneProfile;
+
+    invoke-virtual {p0}, Ljp/co/sony/mc/camera/view/uistate/BasicModeMenuType$ColorToneProfile;->getInfoVisible()Z
+
+    move-result p0
+
+    if-eqz p0, :cond_0
+
+    const/4 p0, 0x1
+
+    goto :goto_0
+
+    :cond_0
+    const/4 p0, 0x0
+
+    :goto_0
+    return p0
+.end method
+
+.method private static final colorToneProfileVisible$lambda$1(Ljp/co/sony/mc/camera/view/uistate/BasicModeMenuType;)Z
+    .locals 1
+
+    const-string v0, "it"
+
+    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 42
+    instance-of p0, p0, Ljp/co/sony/mc/camera/view/uistate/BasicModeMenuType$ColorToneProfile;
+
+    return p0
 .end method
 
 .method private final getChecker()Ljp/co/sony/mc/camera/setting/SettingAppearanceChecker;
@@ -322,6 +490,58 @@
     move-result-object p0
 
     return-object p0
+.end method
+
+.method private static final isColorToneProfileEnable$lambda$0(ZLjava/lang/Boolean;Ljava/lang/Boolean;ZLjp/co/sony/mc/camera/configuration/parameters/CapturingMode;)Z
+    .locals 0
+
+    if-eqz p0, :cond_2
+
+    .line 38
+    invoke-virtual {p1}, Ljava/lang/Boolean;->booleanValue()Z
+
+    move-result p0
+
+    if-nez p0, :cond_2
+
+    invoke-virtual {p4}, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->isBokehPhoto()Z
+
+    move-result p0
+
+    if-eqz p0, :cond_0
+
+    invoke-virtual {p2}, Ljava/lang/Boolean;->booleanValue()Z
+
+    move-result p0
+
+    if-nez p0, :cond_2
+
+    :cond_0
+    if-eqz p3, :cond_1
+
+    .line 39
+    invoke-virtual {p4}, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->isBokehVideo()Z
+
+    move-result p0
+
+    if-nez p0, :cond_2
+
+    invoke-virtual {p4}, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->isAutoFraming()Z
+
+    move-result p0
+
+    if-nez p0, :cond_2
+
+    :cond_1
+    const/4 p0, 0x1
+
+    goto :goto_0
+
+    :cond_2
+    const/4 p0, 0x0
+
+    :goto_0
+    return p0
 .end method
 
 

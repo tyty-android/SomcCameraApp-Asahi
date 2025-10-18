@@ -1,6 +1,6 @@
 .class public interface abstract annotation Landroidx/compose/ui/tooling/preview/UiMode;
 .super Ljava/lang/Object;
-.source "UiMode.kt"
+.source "UiMode.android.kt"
 
 # interfaces
 .implements Ljava/lang/annotation/Annotation;

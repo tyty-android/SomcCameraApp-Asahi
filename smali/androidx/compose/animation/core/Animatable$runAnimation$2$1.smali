@@ -125,7 +125,7 @@
 .method public bridge synthetic invoke(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
 
-    .line 305
+    .line 312
     check-cast p1, Landroidx/compose/animation/core/AnimationScope;
 
     invoke-virtual {p0, p1}, Landroidx/compose/animation/core/Animatable$runAnimation$2$1;->invoke(Landroidx/compose/animation/core/AnimationScope;)V
@@ -145,11 +145,7 @@
         }
     .end annotation
 
-    const-string v0, "$this$animate"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 309
+    .line 316
     iget-object v0, p0, Landroidx/compose/animation/core/Animatable$runAnimation$2$1;->this$0:Landroidx/compose/animation/core/Animatable;
 
     invoke-virtual {v0}, Landroidx/compose/animation/core/Animatable;->getInternalState$animation_core_release()Landroidx/compose/animation/core/AnimationState;
@@ -158,7 +154,7 @@
 
     invoke-static {p1, v0}, Landroidx/compose/animation/core/SuspendAnimationKt;->updateState(Landroidx/compose/animation/core/AnimationScope;Landroidx/compose/animation/core/AnimationState;)V
 
-    .line 310
+    .line 317
     iget-object v0, p0, Landroidx/compose/animation/core/Animatable$runAnimation$2$1;->this$0:Landroidx/compose/animation/core/Animatable;
 
     invoke-virtual {p1}, Landroidx/compose/animation/core/AnimationScope;->getValue()Ljava/lang/Object;
@@ -169,7 +165,7 @@
 
     move-result-object v0
 
-    .line 311
+    .line 318
     invoke-virtual {p1}, Landroidx/compose/animation/core/AnimationScope;->getValue()Ljava/lang/Object;
 
     move-result-object v1
@@ -180,7 +176,7 @@
 
     if-nez v1, :cond_1
 
-    .line 312
+    .line 319
     iget-object v1, p0, Landroidx/compose/animation/core/Animatable$runAnimation$2$1;->this$0:Landroidx/compose/animation/core/Animatable;
 
     invoke-virtual {v1}, Landroidx/compose/animation/core/Animatable;->getInternalState$animation_core_release()Landroidx/compose/animation/core/AnimationState;
@@ -189,12 +185,12 @@
 
     invoke-virtual {v1, v0}, Landroidx/compose/animation/core/AnimationState;->setValue$animation_core_release(Ljava/lang/Object;)V
 
-    .line 313
+    .line 320
     iget-object v1, p0, Landroidx/compose/animation/core/Animatable$runAnimation$2$1;->$endState:Landroidx/compose/animation/core/AnimationState;
 
     invoke-virtual {v1, v0}, Landroidx/compose/animation/core/AnimationState;->setValue$animation_core_release(Ljava/lang/Object;)V
 
-    .line 314
+    .line 321
     iget-object v0, p0, Landroidx/compose/animation/core/Animatable$runAnimation$2$1;->$block:Lkotlin/jvm/functions/Function1;
 
     if-eqz v0, :cond_0
@@ -203,11 +199,11 @@
 
     invoke-interface {v0, v1}, Lkotlin/jvm/functions/Function1;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 315
+    .line 322
     :cond_0
     invoke-virtual {p1}, Landroidx/compose/animation/core/AnimationScope;->cancelAnimation()V
 
-    .line 316
+    .line 323
     iget-object p0, p0, Landroidx/compose/animation/core/Animatable$runAnimation$2$1;->$clampingNeeded:Lkotlin/jvm/internal/Ref$BooleanRef;
 
     const/4 p1, 0x1
@@ -216,7 +212,7 @@
 
     goto :goto_0
 
-    .line 318
+    .line 325
     :cond_1
     iget-object p1, p0, Landroidx/compose/animation/core/Animatable$runAnimation$2$1;->$block:Lkotlin/jvm/functions/Function1;
 

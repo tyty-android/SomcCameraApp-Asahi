@@ -48,6 +48,14 @@
 
 
 # direct methods
+.method public static synthetic $r8$lambda$1EnlY-0mfWTWqOp5qrEZy4cqUPk(Landroidx/compose/ui/platform/AbstractComposeView;)V
+    .locals 0
+
+    invoke-static {p0}, Landroidx/compose/ui/platform/ViewCompositionStrategy$DisposeOnDetachedFromWindowOrReleasedFromPool;->installFor$lambda$0(Landroidx/compose/ui/platform/AbstractComposeView;)V
+
+    return-void
+.end method
+
 .method static constructor <clinit>()V
     .locals 1
 
@@ -69,6 +77,15 @@
     return-void
 .end method
 
+.method private static final installFor$lambda$0(Landroidx/compose/ui/platform/AbstractComposeView;)V
+    .locals 0
+
+    .line 96
+    invoke-virtual {p0}, Landroidx/compose/ui/platform/AbstractComposeView;->disposeComposition()V
+
+    return-void
+.end method
+
 
 # virtual methods
 .method public installFor(Landroidx/compose/ui/platform/AbstractComposeView;)Lkotlin/jvm/functions/Function0;
@@ -84,10 +101,6 @@
         }
     .end annotation
 
-    const-string/jumbo p0, "view"
-
-    invoke-static {p1, p0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
     .line 85
     new-instance p0, Landroidx/compose/ui/platform/ViewCompositionStrategy$DisposeOnDetachedFromWindowOrReleasedFromPool$installFor$listener$1;
 
@@ -101,11 +114,9 @@
     invoke-virtual {p1, v0}, Landroidx/compose/ui/platform/AbstractComposeView;->addOnAttachStateChangeListener(Landroid/view/View$OnAttachStateChangeListener;)V
 
     .line 96
-    new-instance v0, Landroidx/compose/ui/platform/ViewCompositionStrategy$DisposeOnDetachedFromWindowOrReleasedFromPool$installFor$poolingContainerListener$1;
+    new-instance v0, Landroidx/compose/ui/platform/ViewCompositionStrategy$DisposeOnDetachedFromWindowOrReleasedFromPool$$ExternalSyntheticLambda0;
 
-    invoke-direct {v0, p1}, Landroidx/compose/ui/platform/ViewCompositionStrategy$DisposeOnDetachedFromWindowOrReleasedFromPool$installFor$poolingContainerListener$1;-><init>(Landroidx/compose/ui/platform/AbstractComposeView;)V
-
-    check-cast v0, Landroidx/customview/poolingcontainer/PoolingContainerListener;
+    invoke-direct {v0, p1}, Landroidx/compose/ui/platform/ViewCompositionStrategy$DisposeOnDetachedFromWindowOrReleasedFromPool$$ExternalSyntheticLambda0;-><init>(Landroidx/compose/ui/platform/AbstractComposeView;)V
 
     .line 97
     move-object v1, p1

@@ -17,28 +17,7 @@
 
 # direct methods
 .method static constructor <clinit>()V
-    .locals 3
-
-    .line 16
-    new-instance v0, Landroid/util/SparseIntArray;
-
-    invoke-direct {v0}, Landroid/util/SparseIntArray;-><init>()V
-
-    sput-object v0, Ljp/co/sony/mc/camera/databinding/IndicatorViewBindingImpl;->sViewsWithIds:Landroid/util/SparseIntArray;
-
-    const v1, 0x7f090074
-
-    const/4 v2, 0x3
-
-    .line 17
-    invoke-virtual {v0, v1, v2}, Landroid/util/SparseIntArray;->put(II)V
-
-    const v1, 0x7f090231
-
-    const/4 v2, 0x4
-
-    .line 18
-    invoke-virtual {v0, v1, v2}, Landroid/util/SparseIntArray;->put(II)V
+    .locals 0
 
     return-void
 .end method
@@ -46,7 +25,7 @@
 .method public constructor <init>(Landroidx/databinding/DataBindingComponent;Landroid/view/View;)V
     .locals 3
 
-    .line 29
+    .line 27
     sget-object v0, Ljp/co/sony/mc/camera/databinding/IndicatorViewBindingImpl;->sIncludes:Landroidx/databinding/ViewDataBinding$IncludedLayouts;
 
     sget-object v1, Ljp/co/sony/mc/camera/databinding/IndicatorViewBindingImpl;->sViewsWithIds:Landroid/util/SparseIntArray;
@@ -67,14 +46,14 @@
 
     const/4 v0, 0x1
 
-    .line 32
+    .line 30
     aget-object v0, p3, v0
 
     move-object v5, v0
 
     check-cast v5, Landroidx/constraintlayout/widget/ConstraintLayout;
 
-    const/4 v0, 0x3
+    const/4 v0, 0x2
 
     aget-object v0, p3, v0
 
@@ -90,15 +69,15 @@
 
     check-cast v7, Ljp/co/sony/mc/camera/view/widget/HistogramView;
 
-    const/4 v0, 0x2
+    const/4 v0, 0x3
 
     aget-object v0, p3, v0
 
     move-object v8, v0
 
-    check-cast v8, Landroid/widget/ImageView;
+    check-cast v8, Ljp/co/sony/mc/camera/view/widget/PenetrableImageView;
 
-    const/4 v4, 0x2
+    const/4 v4, 0x3
 
     move-object v1, p0
 
@@ -106,19 +85,29 @@
 
     move-object v3, p2
 
-    invoke-direct/range {v1 .. v8}, Ljp/co/sony/mc/camera/databinding/IndicatorViewBinding;-><init>(Ljava/lang/Object;Landroid/view/View;ILandroidx/constraintlayout/widget/ConstraintLayout;Ljp/co/sony/mc/camera/view/widget/AudioLevelWidget;Ljp/co/sony/mc/camera/view/widget/HistogramView;Landroid/widget/ImageView;)V
+    invoke-direct/range {v1 .. v8}, Ljp/co/sony/mc/camera/databinding/IndicatorViewBinding;-><init>(Ljava/lang/Object;Landroid/view/View;ILandroidx/constraintlayout/widget/ConstraintLayout;Ljp/co/sony/mc/camera/view/widget/AudioLevelWidget;Ljp/co/sony/mc/camera/view/widget/HistogramView;Ljp/co/sony/mc/camera/view/widget/PenetrableImageView;)V
 
     const-wide/16 v0, -0x1
 
-    .line 203
+    .line 263
     iput-wide v0, p0, Ljp/co/sony/mc/camera/databinding/IndicatorViewBindingImpl;->mDirtyFlags:J
 
-    .line 38
+    .line 36
     iget-object p1, p0, Ljp/co/sony/mc/camera/databinding/IndicatorViewBindingImpl;->audioIndicator:Landroidx/constraintlayout/widget/ConstraintLayout;
 
     const/4 v0, 0x0
 
     invoke-virtual {p1, v0}, Landroidx/constraintlayout/widget/ConstraintLayout;->setTag(Ljava/lang/Object;)V
+
+    .line 37
+    iget-object p1, p0, Ljp/co/sony/mc/camera/databinding/IndicatorViewBindingImpl;->audioLevel:Ljp/co/sony/mc/camera/view/widget/AudioLevelWidget;
+
+    invoke-virtual {p1, v0}, Ljp/co/sony/mc/camera/view/widget/AudioLevelWidget;->setTag(Ljava/lang/Object;)V
+
+    .line 38
+    iget-object p1, p0, Ljp/co/sony/mc/camera/databinding/IndicatorViewBindingImpl;->histogramView:Ljp/co/sony/mc/camera/view/widget/HistogramView;
+
+    invoke-virtual {p1, v0}, Ljp/co/sony/mc/camera/view/widget/HistogramView;->setTag(Ljava/lang/Object;)V
 
     const/4 p1, 0x0
 
@@ -133,9 +122,9 @@
     invoke-virtual {p1, v0}, Landroidx/constraintlayout/widget/ConstraintLayout;->setTag(Ljava/lang/Object;)V
 
     .line 41
-    iget-object p1, p0, Ljp/co/sony/mc/camera/databinding/IndicatorViewBindingImpl;->micIcon:Landroid/widget/ImageView;
+    iget-object p1, p0, Ljp/co/sony/mc/camera/databinding/IndicatorViewBindingImpl;->micIcon:Ljp/co/sony/mc/camera/view/widget/PenetrableImageView;
 
-    invoke-virtual {p1, v0}, Landroid/widget/ImageView;->setTag(Ljava/lang/Object;)V
+    invoke-virtual {p1, v0}, Ljp/co/sony/mc/camera/view/widget/PenetrableImageView;->setTag(Ljava/lang/Object;)V
 
     .line 42
     invoke-virtual {p0, p2}, Ljp/co/sony/mc/camera/databinding/IndicatorViewBindingImpl;->setRootTag(Landroid/view/View;)V
@@ -159,20 +148,20 @@
 
     if-nez p2, :cond_0
 
-    .line 116
+    .line 138
     monitor-enter p0
 
-    .line 117
+    .line 139
     :try_start_0
     iget-wide p1, p0, Ljp/co/sony/mc/camera/databinding/IndicatorViewBindingImpl;->mDirtyFlags:J
 
-    const-wide/16 v0, 0x1
+    const-wide/16 v0, 0x2
 
     or-long/2addr p1, v0
 
     iput-wide p1, p0, Ljp/co/sony/mc/camera/databinding/IndicatorViewBindingImpl;->mDirtyFlags:J
 
-    .line 118
+    .line 140
     monitor-exit p0
 
     const/4 p0, 0x1
@@ -207,20 +196,68 @@
 
     if-nez p2, :cond_0
 
-    .line 125
+    .line 147
     monitor-enter p0
 
-    .line 126
+    .line 148
     :try_start_0
     iget-wide p1, p0, Ljp/co/sony/mc/camera/databinding/IndicatorViewBindingImpl;->mDirtyFlags:J
 
-    const-wide/16 v0, 0x2
+    const-wide/16 v0, 0x4
 
     or-long/2addr p1, v0
 
     iput-wide p1, p0, Ljp/co/sony/mc/camera/databinding/IndicatorViewBindingImpl;->mDirtyFlags:J
 
-    .line 127
+    .line 149
+    monitor-exit p0
+
+    const/4 p0, 0x1
+
+    return p0
+
+    :catchall_0
+    move-exception p1
+
+    monitor-exit p0
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    throw p1
+
+    :cond_0
+    const/4 p0, 0x0
+
+    return p0
+.end method
+
+.method private onChangeViewFinderUiStateIsViewFinderItemClickable(Landroidx/lifecycle/LiveData;I)Z
+    .locals 2
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Landroidx/lifecycle/LiveData<",
+            "Ljava/lang/Boolean;",
+            ">;I)Z"
+        }
+    .end annotation
+
+    if-nez p2, :cond_0
+
+    .line 129
+    monitor-enter p0
+
+    .line 130
+    :try_start_0
+    iget-wide p1, p0, Ljp/co/sony/mc/camera/databinding/IndicatorViewBindingImpl;->mDirtyFlags:J
+
+    const-wide/16 v0, 0x1
+
+    or-long/2addr p1, v0
+
+    iput-wide p1, p0, Ljp/co/sony/mc/camera/databinding/IndicatorViewBindingImpl;->mDirtyFlags:J
+
+    .line 131
     monitor-exit p0
 
     const/4 p0, 0x1
@@ -245,101 +282,106 @@
 
 # virtual methods
 .method protected executeBindings()V
-    .locals 14
+    .locals 15
 
-    .line 136
+    .line 158
     monitor-enter p0
 
-    .line 137
+    .line 159
     :try_start_0
     iget-wide v0, p0, Ljp/co/sony/mc/camera/databinding/IndicatorViewBindingImpl;->mDirtyFlags:J
 
     const-wide/16 v2, 0x0
 
-    .line 138
+    .line 160
     iput-wide v2, p0, Ljp/co/sony/mc/camera/databinding/IndicatorViewBindingImpl;->mDirtyFlags:J
 
-    .line 139
+    .line 161
     monitor-exit p0
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 140
+    .line 163
     iget-object v4, p0, Ljp/co/sony/mc/camera/databinding/IndicatorViewBindingImpl;->mProModeFinderOverlayUiState:Ljp/co/sony/mc/camera/view/uistate/ProModeFinderOverlayUiState;
 
-    const-wide/16 v5, 0x47
+    .line 164
+    iget-object v5, p0, Ljp/co/sony/mc/camera/databinding/IndicatorViewBindingImpl;->mViewFinderUiState:Ljp/co/sony/mc/camera/view/uistate/ViewFinderUiState;
 
-    and-long/2addr v5, v0
+    const-wide/16 v6, 0x10e
 
-    cmp-long v5, v5, v2
+    and-long/2addr v6, v0
 
-    const-wide/16 v6, 0x46
+    cmp-long v6, v6, v2
 
-    const-wide/16 v8, 0x45
+    const-wide/16 v7, 0x10c
 
-    const/4 v10, 0x0
-
-    if-eqz v5, :cond_6
-
-    and-long v11, v0, v8
-
-    cmp-long v5, v11, v2
+    const-wide/16 v9, 0x10a
 
     const/4 v11, 0x0
 
-    if-eqz v5, :cond_2
+    const/4 v12, 0x0
+
+    if-eqz v6, :cond_6
+
+    and-long v13, v0, v9
+
+    cmp-long v6, v13, v2
+
+    if-eqz v6, :cond_2
 
     if-eqz v4, :cond_0
 
-    .line 155
+    .line 181
     invoke-virtual {v4}, Ljp/co/sony/mc/camera/view/uistate/ProModeFinderOverlayUiState;->isAudioLevelVisible()Landroidx/lifecycle/LiveData;
 
-    move-result-object v5
+    move-result-object v6
 
     goto :goto_0
 
     :cond_0
-    move-object v5, v11
+    move-object v6, v11
 
-    .line 157
     :goto_0
-    invoke-virtual {p0, v10, v5}, Ljp/co/sony/mc/camera/databinding/IndicatorViewBindingImpl;->updateLiveDataRegistration(ILandroidx/lifecycle/LiveData;)Z
+    const/4 v13, 0x1
 
-    if-eqz v5, :cond_1
+    .line 183
+    invoke-virtual {p0, v13, v6}, Ljp/co/sony/mc/camera/databinding/IndicatorViewBindingImpl;->updateLiveDataRegistration(ILandroidx/lifecycle/LiveData;)Z
 
-    .line 162
-    invoke-virtual {v5}, Landroidx/lifecycle/LiveData;->getValue()Ljava/lang/Object;
+    if-eqz v6, :cond_1
 
-    move-result-object v5
+    .line 188
+    invoke-virtual {v6}, Landroidx/lifecycle/LiveData;->getValue()Ljava/lang/Object;
 
-    check-cast v5, Ljava/lang/Boolean;
+    move-result-object v6
+
+    check-cast v6, Ljava/lang/Boolean;
 
     goto :goto_1
 
     :cond_1
-    move-object v5, v11
+    move-object v6, v11
 
-    .line 167
+    .line 193
     :goto_1
-    invoke-static {v5}, Landroidx/databinding/ViewDataBinding;->safeUnbox(Ljava/lang/Boolean;)Z
+    invoke-static {v6}, Landroidx/databinding/ViewDataBinding;->safeUnbox(Ljava/lang/Boolean;)Z
 
-    move-result v5
+    move-result v6
 
     goto :goto_2
 
     :cond_2
-    move v5, v10
+    move v6, v12
 
     :goto_2
-    and-long v12, v0, v6
+    and-long v13, v0, v7
 
-    cmp-long v12, v12, v2
+    cmp-long v13, v13, v2
 
-    if-eqz v12, :cond_5
+    if-eqz v13, :cond_5
 
     if-eqz v4, :cond_3
 
-    .line 173
+    .line 199
     invoke-virtual {v4}, Ljp/co/sony/mc/camera/view/uistate/ProModeFinderOverlayUiState;->isMicIndicatorVisible()Landroidx/lifecycle/LiveData;
 
     move-result-object v4
@@ -350,69 +392,163 @@
     move-object v4, v11
 
     :goto_3
-    const/4 v10, 0x1
+    const/4 v13, 0x2
 
-    .line 175
-    invoke-virtual {p0, v10, v4}, Ljp/co/sony/mc/camera/databinding/IndicatorViewBindingImpl;->updateLiveDataRegistration(ILandroidx/lifecycle/LiveData;)Z
+    .line 201
+    invoke-virtual {p0, v13, v4}, Ljp/co/sony/mc/camera/databinding/IndicatorViewBindingImpl;->updateLiveDataRegistration(ILandroidx/lifecycle/LiveData;)Z
 
     if-eqz v4, :cond_4
 
-    .line 180
+    .line 206
     invoke-virtual {v4}, Landroidx/lifecycle/LiveData;->getValue()Ljava/lang/Object;
 
     move-result-object v4
 
-    move-object v11, v4
-
-    check-cast v11, Ljava/lang/Boolean;
-
-    .line 185
-    :cond_4
-    invoke-static {v11}, Landroidx/databinding/ViewDataBinding;->safeUnbox(Ljava/lang/Boolean;)Z
-
-    move-result v10
-
-    :cond_5
-    move v4, v10
-
-    move v10, v5
+    check-cast v4, Ljava/lang/Boolean;
 
     goto :goto_4
 
-    :cond_6
-    move v4, v10
+    :cond_4
+    move-object v4, v11
 
+    .line 211
     :goto_4
-    and-long/2addr v8, v0
+    invoke-static {v4}, Landroidx/databinding/ViewDataBinding;->safeUnbox(Ljava/lang/Boolean;)Z
 
-    cmp-long v5, v8, v2
+    move-result v4
+
+    goto :goto_5
+
+    :cond_5
+    move v4, v12
+
+    goto :goto_5
+
+    :cond_6
+    move v4, v12
+
+    move v6, v4
+
+    :goto_5
+    const-wide/16 v13, 0x121
+
+    and-long/2addr v13, v0
+
+    cmp-long v13, v13, v2
+
+    if-eqz v13, :cond_9
 
     if-eqz v5, :cond_7
 
-    .line 192
-    iget-object v5, p0, Ljp/co/sony/mc/camera/databinding/IndicatorViewBindingImpl;->audioIndicator:Landroidx/constraintlayout/widget/ConstraintLayout;
+    .line 220
+    invoke-virtual {v5}, Ljp/co/sony/mc/camera/view/uistate/ViewFinderUiState;->isViewFinderItemClickable()Landroidx/lifecycle/LiveData;
 
-    invoke-static {v5, v10}, Ljp/co/sony/mc/camera/view/viewbinder/BindingAdapters;->setVisible(Landroid/view/View;Z)V
+    move-result-object v5
+
+    goto :goto_6
 
     :cond_7
-    and-long/2addr v0, v6
+    move-object v5, v11
+
+    .line 222
+    :goto_6
+    invoke-virtual {p0, v12, v5}, Ljp/co/sony/mc/camera/databinding/IndicatorViewBindingImpl;->updateLiveDataRegistration(ILandroidx/lifecycle/LiveData;)Z
+
+    if-eqz v5, :cond_8
+
+    .line 227
+    invoke-virtual {v5}, Landroidx/lifecycle/LiveData;->getValue()Ljava/lang/Object;
+
+    move-result-object v5
+
+    move-object v11, v5
+
+    check-cast v11, Ljava/lang/Boolean;
+
+    .line 232
+    :cond_8
+    invoke-static {v11}, Landroidx/databinding/ViewDataBinding;->safeUnbox(Ljava/lang/Boolean;)Z
+
+    move-result v5
+
+    goto :goto_7
+
+    :cond_9
+    move v5, v12
+
+    :goto_7
+    and-long/2addr v9, v0
+
+    cmp-long v9, v9, v2
+
+    if-eqz v9, :cond_a
+
+    .line 238
+    iget-object v9, p0, Ljp/co/sony/mc/camera/databinding/IndicatorViewBindingImpl;->audioIndicator:Landroidx/constraintlayout/widget/ConstraintLayout;
+
+    invoke-static {v9, v6}, Ljp/co/sony/mc/camera/view/viewbinder/BindingAdapters;->setVisible(Landroid/view/View;Z)V
+
+    :cond_a
+    if-eqz v13, :cond_b
+
+    .line 243
+    iget-object v6, p0, Ljp/co/sony/mc/camera/databinding/IndicatorViewBindingImpl;->audioLevel:Ljp/co/sony/mc/camera/view/widget/AudioLevelWidget;
+
+    invoke-virtual {v6, v5}, Ljp/co/sony/mc/camera/view/widget/AudioLevelWidget;->setClickable(Z)V
+
+    .line 244
+    iget-object v6, p0, Ljp/co/sony/mc/camera/databinding/IndicatorViewBindingImpl;->histogramView:Ljp/co/sony/mc/camera/view/widget/HistogramView;
+
+    invoke-virtual {v6, v5}, Ljp/co/sony/mc/camera/view/widget/HistogramView;->setClickable(Z)V
+
+    .line 245
+    iget-object v6, p0, Ljp/co/sony/mc/camera/databinding/IndicatorViewBindingImpl;->micIcon:Ljp/co/sony/mc/camera/view/widget/PenetrableImageView;
+
+    invoke-virtual {v6, v5}, Ljp/co/sony/mc/camera/view/widget/PenetrableImageView;->setClickable(Z)V
+
+    :cond_b
+    const-wide/16 v5, 0x100
+
+    and-long/2addr v5, v0
+
+    cmp-long v5, v5, v2
+
+    if-eqz v5, :cond_c
+
+    .line 250
+    iget-object v5, p0, Ljp/co/sony/mc/camera/databinding/IndicatorViewBindingImpl;->audioLevel:Ljp/co/sony/mc/camera/view/widget/AudioLevelWidget;
+
+    invoke-static {v5, v12}, Ljp/co/sony/mc/camera/view/viewbinder/BindingAdapters;->setAccessibilityClickable(Landroid/view/View;Z)V
+
+    .line 251
+    iget-object v5, p0, Ljp/co/sony/mc/camera/databinding/IndicatorViewBindingImpl;->histogramView:Ljp/co/sony/mc/camera/view/widget/HistogramView;
+
+    invoke-static {v5, v12}, Ljp/co/sony/mc/camera/view/viewbinder/BindingAdapters;->setAccessibilityClickable(Landroid/view/View;Z)V
+
+    .line 252
+    iget-object v5, p0, Ljp/co/sony/mc/camera/databinding/IndicatorViewBindingImpl;->micIcon:Ljp/co/sony/mc/camera/view/widget/PenetrableImageView;
+
+    invoke-static {v5, v12}, Ljp/co/sony/mc/camera/view/viewbinder/BindingAdapters;->setAccessibilityClickable(Landroid/view/View;Z)V
+
+    :cond_c
+    and-long/2addr v0, v7
 
     cmp-long v0, v0, v2
 
-    if-eqz v0, :cond_8
+    if-eqz v0, :cond_d
 
-    .line 197
-    iget-object p0, p0, Ljp/co/sony/mc/camera/databinding/IndicatorViewBindingImpl;->micIcon:Landroid/widget/ImageView;
+    .line 257
+    iget-object p0, p0, Ljp/co/sony/mc/camera/databinding/IndicatorViewBindingImpl;->micIcon:Ljp/co/sony/mc/camera/view/widget/PenetrableImageView;
 
     invoke-static {p0, v4}, Ljp/co/sony/mc/camera/view/viewbinder/BindingAdapters;->setVisible(Landroid/view/View;Z)V
 
-    :cond_8
+    :cond_d
     return-void
 
     :catchall_0
     move-exception v0
 
-    .line 139
+    .line 161
     :try_start_1
     monitor-exit p0
     :try_end_1
@@ -468,7 +604,7 @@
     .line 49
     monitor-enter p0
 
-    const-wide/16 v0, 0x40
+    const-wide/16 v0, 0x100
 
     .line 50
     :try_start_0
@@ -499,9 +635,13 @@
 .method protected onFieldChange(ILjava/lang/Object;I)Z
     .locals 1
 
-    if-eqz p1, :cond_1
+    if-eqz p1, :cond_2
 
     const/4 v0, 0x1
+
+    if-eq p1, v0, :cond_1
+
+    const/4 v0, 0x2
 
     if-eq p1, v0, :cond_0
 
@@ -509,7 +649,7 @@
 
     return p0
 
-    .line 110
+    .line 123
     :cond_0
     check-cast p2, Landroidx/lifecycle/LiveData;
 
@@ -519,11 +659,21 @@
 
     return p0
 
-    .line 108
+    .line 121
     :cond_1
     check-cast p2, Landroidx/lifecycle/LiveData;
 
     invoke-direct {p0, p2, p3}, Ljp/co/sony/mc/camera/databinding/IndicatorViewBindingImpl;->onChangeProModeFinderOverlayUiStateIsAudioLevelVisible(Landroidx/lifecycle/LiveData;I)Z
+
+    move-result p0
+
+    return p0
+
+    .line 119
+    :cond_2
+    check-cast p2, Landroidx/lifecycle/LiveData;
+
+    invoke-direct {p0, p2, p3}, Ljp/co/sony/mc/camera/databinding/IndicatorViewBindingImpl;->onChangeViewFinderUiStateIsViewFinderItemClickable(Landroidx/lifecycle/LiveData;I)Z
 
     move-result p0
 
@@ -533,7 +683,7 @@
 .method public setCameraSettingsModel(Ljp/co/sony/mc/camera/view/viewmodel/CameraSettingsModel;)V
     .locals 0
 
-    .line 98
+    .line 109
     iput-object p1, p0, Ljp/co/sony/mc/camera/databinding/IndicatorViewBindingImpl;->mCameraSettingsModel:Ljp/co/sony/mc/camera/view/viewmodel/CameraSettingsModel;
 
     return-void
@@ -542,7 +692,7 @@
 .method public setOrientationViewModel(Ljp/co/sony/mc/camera/view/viewmodel/OrientationViewModel;)V
     .locals 0
 
-    .line 95
+    .line 98
     iput-object p1, p0, Ljp/co/sony/mc/camera/databinding/IndicatorViewBindingImpl;->mOrientationViewModel:Ljp/co/sony/mc/camera/view/viewmodel/OrientationViewModel;
 
     return-void
@@ -551,33 +701,33 @@
 .method public setProModeFinderOverlayUiState(Ljp/co/sony/mc/camera/view/uistate/ProModeFinderOverlayUiState;)V
     .locals 4
 
-    .line 87
+    .line 90
     iput-object p1, p0, Ljp/co/sony/mc/camera/databinding/IndicatorViewBindingImpl;->mProModeFinderOverlayUiState:Ljp/co/sony/mc/camera/view/uistate/ProModeFinderOverlayUiState;
 
-    .line 88
+    .line 91
     monitor-enter p0
 
-    .line 89
+    .line 92
     :try_start_0
     iget-wide v0, p0, Ljp/co/sony/mc/camera/databinding/IndicatorViewBindingImpl;->mDirtyFlags:J
 
-    const-wide/16 v2, 0x4
+    const-wide/16 v2, 0x8
 
     or-long/2addr v0, v2
 
     iput-wide v0, p0, Ljp/co/sony/mc/camera/databinding/IndicatorViewBindingImpl;->mDirtyFlags:J
 
-    .line 90
+    .line 93
     monitor-exit p0
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    const/16 p1, 0x16
+    const/16 p1, 0x19
 
-    .line 91
+    .line 94
     invoke-virtual {p0, p1}, Ljp/co/sony/mc/camera/databinding/IndicatorViewBindingImpl;->notifyPropertyChanged(I)V
 
-    .line 92
+    .line 95
     invoke-super {p0}, Ljp/co/sony/mc/camera/databinding/IndicatorViewBinding;->requestRebind()V
 
     return-void
@@ -585,7 +735,7 @@
     :catchall_0
     move-exception p1
 
-    .line 90
+    .line 93
     :try_start_1
     monitor-exit p0
     :try_end_1
@@ -597,7 +747,7 @@
 .method public setProModeFocusUiState(Ljp/co/sony/mc/camera/view/uistate/ProModeFocusUiState;)V
     .locals 0
 
-    .line 101
+    .line 112
     iput-object p1, p0, Ljp/co/sony/mc/camera/databinding/IndicatorViewBindingImpl;->mProModeFocusUiState:Ljp/co/sony/mc/camera/view/uistate/ProModeFocusUiState;
 
     return-void
@@ -606,7 +756,7 @@
 .method public setVariable(ILjava/lang/Object;)Z
     .locals 1
 
-    const/16 v0, 0x16
+    const/16 v0, 0x19
 
     if-ne v0, p1, :cond_0
 
@@ -618,7 +768,7 @@
     goto :goto_0
 
     :cond_0
-    const/16 v0, 0x13
+    const/16 v0, 0x16
 
     if-ne v0, p1, :cond_1
 
@@ -630,23 +780,35 @@
     goto :goto_0
 
     :cond_1
-    const/4 v0, 0x7
+    const/16 v0, 0x25
 
     if-ne v0, p1, :cond_2
 
     .line 75
+    check-cast p2, Ljp/co/sony/mc/camera/view/uistate/ViewFinderUiState;
+
+    invoke-virtual {p0, p2}, Ljp/co/sony/mc/camera/databinding/IndicatorViewBindingImpl;->setViewFinderUiState(Ljp/co/sony/mc/camera/view/uistate/ViewFinderUiState;)V
+
+    goto :goto_0
+
+    :cond_2
+    const/16 v0, 0x8
+
+    if-ne v0, p1, :cond_3
+
+    .line 78
     check-cast p2, Ljp/co/sony/mc/camera/view/viewmodel/CameraSettingsModel;
 
     invoke-virtual {p0, p2}, Ljp/co/sony/mc/camera/databinding/IndicatorViewBindingImpl;->setCameraSettingsModel(Ljp/co/sony/mc/camera/view/viewmodel/CameraSettingsModel;)V
 
     goto :goto_0
 
-    :cond_2
-    const/16 v0, 0x19
+    :cond_3
+    const/16 v0, 0x1b
 
-    if-ne v0, p1, :cond_3
+    if-ne v0, p1, :cond_4
 
-    .line 78
+    .line 81
     check-cast p2, Ljp/co/sony/mc/camera/view/uistate/ProModeFocusUiState;
 
     invoke-virtual {p0, p2}, Ljp/co/sony/mc/camera/databinding/IndicatorViewBindingImpl;->setProModeFocusUiState(Ljp/co/sony/mc/camera/view/uistate/ProModeFocusUiState;)V
@@ -656,9 +818,55 @@
 
     goto :goto_1
 
-    :cond_3
+    :cond_4
     const/4 p0, 0x0
 
     :goto_1
     return p0
+.end method
+
+.method public setViewFinderUiState(Ljp/co/sony/mc/camera/view/uistate/ViewFinderUiState;)V
+    .locals 4
+
+    .line 101
+    iput-object p1, p0, Ljp/co/sony/mc/camera/databinding/IndicatorViewBindingImpl;->mViewFinderUiState:Ljp/co/sony/mc/camera/view/uistate/ViewFinderUiState;
+
+    .line 102
+    monitor-enter p0
+
+    .line 103
+    :try_start_0
+    iget-wide v0, p0, Ljp/co/sony/mc/camera/databinding/IndicatorViewBindingImpl;->mDirtyFlags:J
+
+    const-wide/16 v2, 0x20
+
+    or-long/2addr v0, v2
+
+    iput-wide v0, p0, Ljp/co/sony/mc/camera/databinding/IndicatorViewBindingImpl;->mDirtyFlags:J
+
+    .line 104
+    monitor-exit p0
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    const/16 p1, 0x25
+
+    .line 105
+    invoke-virtual {p0, p1}, Ljp/co/sony/mc/camera/databinding/IndicatorViewBindingImpl;->notifyPropertyChanged(I)V
+
+    .line 106
+    invoke-super {p0}, Ljp/co/sony/mc/camera/databinding/IndicatorViewBinding;->requestRebind()V
+
+    return-void
+
+    :catchall_0
+    move-exception p1
+
+    .line 104
+    :try_start_1
+    monitor-exit p0
+    :try_end_1
+    .catchall {:try_start_1 .. :try_end_1} :catchall_0
+
+    throw p1
 .end method

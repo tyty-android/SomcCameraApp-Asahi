@@ -9,21 +9,20 @@
 
 # annotations
 .annotation system Ldalvik/annotation/SourceDebugExtension;
-    value = "SMAP\nScrollable.kt\nKotlin\n*S Kotlin\n*F\n+ 1 Scrollable.kt\nandroidx/compose/foundation/gestures/ScrollDraggableState\n+ 2 fake.kt\nkotlin/jvm/internal/FakeKt\n*L\n1#1,637:1\n1#2:638\n*E\n"
+    value = "SMAP\nScrollable.kt\nKotlin\n*S Kotlin\n*F\n+ 1 Scrollable.kt\nandroidx/compose/foundation/gestures/ScrollDraggableState\n+ 2 fake.kt\nkotlin/jvm/internal/FakeKt\n*L\n1#1,1021:1\n1#2:1022\n*E\n"
 .end annotation
 
 .annotation runtime Lkotlin/Metadata;
     d1 = {
-        "\u0000J\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0007\n\u0002\u0010\u0002\n\u0000\n\u0002\u0010\u0007\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0004\u0008\u0002\u0018\u00002\u00020\u00012\u00020\u0002B\u0013\u0012\u000c\u0010\u0003\u001a\u0008\u0012\u0004\u0012\u00020\u00050\u0004\u00a2\u0006\u0002\u0010\u0006J\u0010\u0010\u000f\u001a\u00020\u00102\u0006\u0010\u0011\u001a\u00020\u0012H\u0016JB\u0010\u0013\u001a\u00020\u00102\u0006\u0010\u0014\u001a\u00020\u00152\'\u0010\u0016\u001a#\u0008\u0001\u0012\u0004\u0012\u00020\u0002\u0012\n\u0012\u0008\u0012\u0004\u0012\u00020\u00100\u0018\u0012\u0006\u0012\u0004\u0018\u00010\u00190\u0017\u00a2\u0006\u0002\u0008\u001aH\u0096@\u00f8\u0001\u0000\u00a2\u0006\u0002\u0010\u001bJ\u0010\u0010\u001c\u001a\u00020\u00102\u0006\u0010\u001d\u001a\u00020\u0012H\u0016R\u001a\u0010\u0007\u001a\u00020\u0008X\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\u0008\t\u0010\n\"\u0004\u0008\u000b\u0010\u000cR\u0017\u0010\u0003\u001a\u0008\u0012\u0004\u0012\u00020\u00050\u0004\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\r\u0010\u000e\u0082\u0002\u0004\n\u0002\u0008\u0019\u00a8\u0006\u001e"
+        "\u0000F\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0008\n\u0002\u0010\u0002\n\u0000\n\u0002\u0010\u0007\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0004\u0008\u0002\u0018\u00002\u00020\u00012\u00020\u0002B\r\u0012\u0006\u0010\u0003\u001a\u00020\u0004\u00a2\u0006\u0002\u0010\u0005J\u0010\u0010\u000f\u001a\u00020\u00102\u0006\u0010\u0011\u001a\u00020\u0012H\u0016J?\u0010\u0013\u001a\u00020\u00102\u0006\u0010\u0014\u001a\u00020\u00152\'\u0010\u0016\u001a#\u0008\u0001\u0012\u0004\u0012\u00020\u0002\u0012\n\u0012\u0008\u0012\u0004\u0012\u00020\u00100\u0018\u0012\u0006\u0012\u0004\u0018\u00010\u00190\u0017\u00a2\u0006\u0002\u0008\u001aH\u0096@\u00a2\u0006\u0002\u0010\u001bJ\u0010\u0010\u001c\u001a\u00020\u00102\u0006\u0010\u001d\u001a\u00020\u0012H\u0016R\u001a\u0010\u0006\u001a\u00020\u0007X\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\u0008\u0008\u0010\t\"\u0004\u0008\n\u0010\u000bR\u001a\u0010\u0003\u001a\u00020\u0004X\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\u0008\u000c\u0010\r\"\u0004\u0008\u000e\u0010\u0005\u00a8\u0006\u001e"
     }
     d2 = {
         "Landroidx/compose/foundation/gestures/ScrollDraggableState;",
         "Landroidx/compose/foundation/gestures/DraggableState;",
         "Landroidx/compose/foundation/gestures/DragScope;",
         "scrollLogic",
-        "Landroidx/compose/runtime/State;",
         "Landroidx/compose/foundation/gestures/ScrollingLogic;",
-        "(Landroidx/compose/runtime/State;)V",
+        "(Landroidx/compose/foundation/gestures/ScrollingLogic;)V",
         "latestScrollScope",
         "Landroidx/compose/foundation/gestures/ScrollScope;",
         "getLatestScrollScope",
@@ -31,7 +30,8 @@
         "setLatestScrollScope",
         "(Landroidx/compose/foundation/gestures/ScrollScope;)V",
         "getScrollLogic",
-        "()Landroidx/compose/runtime/State;",
+        "()Landroidx/compose/foundation/gestures/ScrollingLogic;",
+        "setScrollLogic",
         "dispatchRawDelta",
         "",
         "delta",
@@ -62,40 +62,20 @@
 # instance fields
 .field private latestScrollScope:Landroidx/compose/foundation/gestures/ScrollScope;
 
-.field private final scrollLogic:Landroidx/compose/runtime/State;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Landroidx/compose/runtime/State<",
-            "Landroidx/compose/foundation/gestures/ScrollingLogic;",
-            ">;"
-        }
-    .end annotation
-.end field
+.field private scrollLogic:Landroidx/compose/foundation/gestures/ScrollingLogic;
 
 
 # direct methods
-.method public constructor <init>(Landroidx/compose/runtime/State;)V
-    .locals 1
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(",
-            "Landroidx/compose/runtime/State<",
-            "Landroidx/compose/foundation/gestures/ScrollingLogic;",
-            ">;)V"
-        }
-    .end annotation
+.method public constructor <init>(Landroidx/compose/foundation/gestures/ScrollingLogic;)V
+    .locals 0
 
-    const-string v0, "scrollLogic"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 518
+    .line 878
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 519
-    iput-object p1, p0, Landroidx/compose/foundation/gestures/ScrollDraggableState;->scrollLogic:Landroidx/compose/runtime/State;
+    .line 879
+    iput-object p1, p0, Landroidx/compose/foundation/gestures/ScrollDraggableState;->scrollLogic:Landroidx/compose/foundation/gestures/ScrollingLogic;
 
-    .line 521
+    .line 881
     invoke-static {}, Landroidx/compose/foundation/gestures/ScrollableKt;->access$getNoOpScrollScope$p()Landroidx/compose/foundation/gestures/ScrollScope;
 
     move-result-object p1
@@ -110,14 +90,8 @@
 .method public dispatchRawDelta(F)V
     .locals 2
 
-    .line 539
-    iget-object p0, p0, Landroidx/compose/foundation/gestures/ScrollDraggableState;->scrollLogic:Landroidx/compose/runtime/State;
-
-    invoke-interface {p0}, Landroidx/compose/runtime/State;->getValue()Ljava/lang/Object;
-
-    move-result-object p0
-
-    check-cast p0, Landroidx/compose/foundation/gestures/ScrollingLogic;
+    .line 899
+    iget-object p0, p0, Landroidx/compose/foundation/gestures/ScrollDraggableState;->scrollLogic:Landroidx/compose/foundation/gestures/ScrollingLogic;
 
     invoke-virtual {p0, p1}, Landroidx/compose/foundation/gestures/ScrollingLogic;->toOffset-tuRUvjQ(F)J
 
@@ -152,14 +126,8 @@
         }
     .end annotation
 
-    .line 532
-    iget-object v0, p0, Landroidx/compose/foundation/gestures/ScrollDraggableState;->scrollLogic:Landroidx/compose/runtime/State;
-
-    invoke-interface {v0}, Landroidx/compose/runtime/State;->getValue()Ljava/lang/Object;
-
-    move-result-object v0
-
-    check-cast v0, Landroidx/compose/foundation/gestures/ScrollingLogic;
+    .line 892
+    iget-object v0, p0, Landroidx/compose/foundation/gestures/ScrollDraggableState;->scrollLogic:Landroidx/compose/foundation/gestures/ScrollingLogic;
 
     invoke-virtual {v0}, Landroidx/compose/foundation/gestures/ScrollingLogic;->getScrollableState()Landroidx/compose/foundation/gestures/ScrollableState;
 
@@ -194,19 +162,13 @@
 .method public dragBy(F)V
     .locals 3
 
-    .line 524
-    iget-object v0, p0, Landroidx/compose/foundation/gestures/ScrollDraggableState;->scrollLogic:Landroidx/compose/runtime/State;
+    .line 884
+    iget-object v0, p0, Landroidx/compose/foundation/gestures/ScrollDraggableState;->scrollLogic:Landroidx/compose/foundation/gestures/ScrollingLogic;
 
-    invoke-interface {v0}, Landroidx/compose/runtime/State;->getValue()Ljava/lang/Object;
-
-    move-result-object v0
-
-    check-cast v0, Landroidx/compose/foundation/gestures/ScrollingLogic;
-
-    .line 525
+    .line 885
     iget-object p0, p0, Landroidx/compose/foundation/gestures/ScrollDraggableState;->latestScrollScope:Landroidx/compose/foundation/gestures/ScrollScope;
 
-    .line 526
+    .line 886
     invoke-virtual {v0, p1}, Landroidx/compose/foundation/gestures/ScrollingLogic;->toOffset-tuRUvjQ(F)J
 
     move-result-wide v1
@@ -225,38 +187,35 @@
 .method public final getLatestScrollScope()Landroidx/compose/foundation/gestures/ScrollScope;
     .locals 0
 
-    .line 521
+    .line 881
     iget-object p0, p0, Landroidx/compose/foundation/gestures/ScrollDraggableState;->latestScrollScope:Landroidx/compose/foundation/gestures/ScrollScope;
 
     return-object p0
 .end method
 
-.method public final getScrollLogic()Landroidx/compose/runtime/State;
+.method public final getScrollLogic()Landroidx/compose/foundation/gestures/ScrollingLogic;
     .locals 0
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "()",
-            "Landroidx/compose/runtime/State<",
-            "Landroidx/compose/foundation/gestures/ScrollingLogic;",
-            ">;"
-        }
-    .end annotation
 
-    .line 519
-    iget-object p0, p0, Landroidx/compose/foundation/gestures/ScrollDraggableState;->scrollLogic:Landroidx/compose/runtime/State;
+    .line 879
+    iget-object p0, p0, Landroidx/compose/foundation/gestures/ScrollDraggableState;->scrollLogic:Landroidx/compose/foundation/gestures/ScrollingLogic;
 
     return-object p0
 .end method
 
 .method public final setLatestScrollScope(Landroidx/compose/foundation/gestures/ScrollScope;)V
-    .locals 1
+    .locals 0
 
-    const-string v0, "<set-?>"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 521
+    .line 881
     iput-object p1, p0, Landroidx/compose/foundation/gestures/ScrollDraggableState;->latestScrollScope:Landroidx/compose/foundation/gestures/ScrollScope;
+
+    return-void
+.end method
+
+.method public final setScrollLogic(Landroidx/compose/foundation/gestures/ScrollingLogic;)V
+    .locals 0
+
+    .line 879
+    iput-object p1, p0, Landroidx/compose/foundation/gestures/ScrollDraggableState;->scrollLogic:Landroidx/compose/foundation/gestures/ScrollingLogic;
 
     return-void
 .end method

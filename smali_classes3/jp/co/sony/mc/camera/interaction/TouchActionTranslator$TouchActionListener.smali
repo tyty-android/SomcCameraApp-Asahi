@@ -15,53 +15,104 @@
 
 
 # virtual methods
-.method public abstract onDoubleCanceled()V
+.method public onDoubleCanceled()V
+    .locals 0
+
+    return-void
 .end method
 
-.method public abstract onDoubleMoved(Landroid/graphics/Point;Landroid/graphics/Point;)V
+.method public onDoubleMoved(Landroid/graphics/Point;Landroid/graphics/Point;)V
+    .locals 0
+
+    return-void
 .end method
 
-.method public abstract onDoubleRotated(FF)V
+.method public onDoubleRotated(FF)V
+    .locals 0
+
+    return-void
 .end method
 
-.method public abstract onDoubleScaled(FFF)V
+.method public onDoubleScaled(FFF)V
+    .locals 0
+
+    return-void
 .end method
 
-.method public abstract onDoubleTapUp(Landroid/view/MotionEvent;)V
+.method public onDoubleTapUp(Landroid/view/MotionEvent;)V
+    .locals 0
+
+    return-void
 .end method
 
-.method public abstract onDoubleTouched(Landroid/graphics/Point;Landroid/graphics/Point;)V
+.method public onDoubleTouched(Landroid/graphics/Point;Landroid/graphics/Point;)V
+    .locals 0
+
+    return-void
 .end method
 
-.method public abstract onFling(Landroid/view/MotionEvent;Landroid/view/MotionEvent;FF)V
+.method public onFling(Landroid/view/MotionEvent;Landroid/view/MotionEvent;FF)V
+    .locals 0
+
+    return-void
 .end method
 
-.method public abstract onLongPress(Landroid/view/MotionEvent;)V
+.method public onLongPress(Landroid/view/MotionEvent;)V
+    .locals 0
+
+    return-void
 .end method
 
-.method public abstract onOverTripleCanceled()V
+.method public onOverTripleCanceled()V
+    .locals 0
+
+    return-void
 .end method
 
-.method public abstract onShowPress(Landroid/view/MotionEvent;)V
+.method public onShowPress(Landroid/view/MotionEvent;)V
+    .locals 0
+
+    return-void
 .end method
 
-.method public abstract onSingleCanceled()V
+.method public onSingleCanceled()V
+    .locals 0
+
+    return-void
 .end method
 
-.method public abstract onSingleMoved(Landroid/graphics/Point;Landroid/graphics/Point;Landroid/graphics/Point;)V
+.method public onSingleMoved(Landroid/graphics/Point;Landroid/graphics/Point;Landroid/graphics/Point;)V
+    .locals 0
+
+    return-void
 .end method
 
-.method public abstract onSingleReleased(Landroid/graphics/Point;)V
+.method public onSingleReleased(Landroid/graphics/Point;)V
+    .locals 0
+
+    return-void
 .end method
 
-.method public abstract onSingleReleasedInDouble(Landroid/graphics/Point;Landroid/graphics/Point;)V
+.method public onSingleReleasedInDouble(Landroid/graphics/Point;Landroid/graphics/Point;)V
+    .locals 0
+
+    return-void
 .end method
 
-.method public abstract onSingleStopped(Landroid/graphics/Point;Landroid/graphics/Point;Landroid/graphics/Point;)V
+.method public onSingleStopped(Landroid/graphics/Point;Landroid/graphics/Point;Landroid/graphics/Point;)V
+    .locals 0
+
+    return-void
 .end method
 
-.method public abstract onSingleTapUp(Landroid/view/MotionEvent;)V
+.method public onSingleTapUp(Landroid/view/MotionEvent;)V
+    .locals 0
+
+    return-void
 .end method
 
-.method public abstract onSingleTouched(Landroid/graphics/Point;)V
+.method public onSingleTouched(Landroid/graphics/Point;)V
+    .locals 0
+
+    return-void
 .end method

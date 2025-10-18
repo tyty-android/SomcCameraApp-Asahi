@@ -84,7 +84,7 @@
 .method public bridge synthetic invoke(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
 
-    .line 245
+    .line 246
     check-cast p1, Landroidx/compose/ui/graphics/drawscope/DrawScope;
 
     invoke-virtual {p0, p1}, Landroidx/compose/material/SwitchKt$SwitchImpl$2$1;->invoke(Landroidx/compose/ui/graphics/drawscope/DrawScope;)V
@@ -97,14 +97,10 @@
 .method public final invoke(Landroidx/compose/ui/graphics/drawscope/DrawScope;)V
     .locals 3
 
-    const-string v0, "$this$Canvas"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 246
+    .line 247
     iget-object p0, p0, Landroidx/compose/material/SwitchKt$SwitchImpl$2$1;->$trackColor$delegate:Landroidx/compose/runtime/State;
 
-    invoke-static {p0}, Landroidx/compose/material/SwitchKt;->access$SwitchImpl$lambda$16(Landroidx/compose/runtime/State;)J
+    invoke-static {p0}, Landroidx/compose/material/SwitchKt;->access$SwitchImpl$lambda$15(Landroidx/compose/runtime/State;)J
 
     move-result-wide v0
 

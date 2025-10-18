@@ -76,7 +76,7 @@
 .method public bridge synthetic invoke(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
 
-    .line 401
+    .line 406
     check-cast p1, Landroidx/compose/ui/layout/Placeable$PlacementScope;
 
     invoke-virtual {p0, p1}, Landroidx/compose/foundation/ScrollingLayoutNode$measure$1;->invoke(Landroidx/compose/ui/layout/Placeable$PlacementScope;)V
@@ -89,11 +89,7 @@
 .method public final invoke(Landroidx/compose/ui/layout/Placeable$PlacementScope;)V
     .locals 11
 
-    const-string v0, "$this$layout"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 402
+    .line 407
     iget-object v0, p0, Landroidx/compose/foundation/ScrollingLayoutNode$measure$1;->this$0:Landroidx/compose/foundation/ScrollingLayoutNode;
 
     invoke-virtual {v0}, Landroidx/compose/foundation/ScrollingLayoutNode;->getScrollerState()Landroidx/compose/foundation/ScrollState;
@@ -112,7 +108,7 @@
 
     move-result v0
 
-    .line 403
+    .line 408
     iget-object v1, p0, Landroidx/compose/foundation/ScrollingLayoutNode$measure$1;->this$0:Landroidx/compose/foundation/ScrollingLayoutNode;
 
     invoke-virtual {v1}, Landroidx/compose/foundation/ScrollingLayoutNode;->isReversed()Z
@@ -130,7 +126,7 @@
     :cond_0
     neg-int v0, v0
 
-    .line 404
+    .line 409
     :goto_0
     iget-object v1, p0, Landroidx/compose/foundation/ScrollingLayoutNode$measure$1;->this$0:Landroidx/compose/foundation/ScrollingLayoutNode;
 
@@ -147,7 +143,7 @@
     :cond_1
     move v5, v0
 
-    .line 405
+    .line 410
     :goto_1
     iget-object v1, p0, Landroidx/compose/foundation/ScrollingLayoutNode$measure$1;->this$0:Landroidx/compose/foundation/ScrollingLayoutNode;
 
@@ -164,7 +160,7 @@
     :cond_2
     move v6, v2
 
-    .line 406
+    .line 411
     :goto_2
     iget-object v4, p0, Landroidx/compose/foundation/ScrollingLayoutNode$measure$1;->$placeable:Landroidx/compose/ui/layout/Placeable;
 

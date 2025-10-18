@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Landroidx/compose/foundation/pager/PagerMeasurePolicyKt;->rememberPagerMeasurePolicy-BxUkNYg(Lkotlin/jvm/functions/Function0;Landroidx/compose/foundation/pager/PagerState;Landroidx/compose/foundation/layout/PaddingValues;ZLandroidx/compose/foundation/gestures/Orientation;IFLandroidx/compose/foundation/pager/PageSize;Landroidx/compose/ui/Alignment$Horizontal;Landroidx/compose/ui/Alignment$Vertical;Lkotlin/jvm/functions/Function0;Landroidx/compose/runtime/Composer;II)Lkotlin/jvm/functions/Function2;
+    value = Landroidx/compose/foundation/pager/PagerMeasurePolicyKt;->rememberPagerMeasurePolicy-121YqSk(Lkotlin/jvm/functions/Function0;Landroidx/compose/foundation/pager/PagerState;Landroidx/compose/foundation/layout/PaddingValues;ZLandroidx/compose/foundation/gestures/Orientation;IFLandroidx/compose/foundation/pager/PageSize;Landroidx/compose/ui/Alignment$Horizontal;Landroidx/compose/ui/Alignment$Vertical;Landroidx/compose/foundation/gestures/snapping/SnapPositionInLayout;Lkotlin/jvm/functions/Function0;Landroidx/compose/runtime/Composer;II)Lkotlin/jvm/functions/Function2;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -28,7 +28,7 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/SourceDebugExtension;
-    value = "SMAP\nPagerMeasurePolicy.kt\nKotlin\n*S Kotlin\n*F\n+ 1 PagerMeasurePolicy.kt\nandroidx/compose/foundation/pager/PagerMeasurePolicyKt$rememberPagerMeasurePolicy$1$1\n+ 2 fake.kt\nkotlin/jvm/internal/FakeKt\n+ 3 Snapshot.kt\nandroidx/compose/runtime/snapshots/Snapshot$Companion\n+ 4 Snapshot.kt\nandroidx/compose/runtime/snapshots/Snapshot\n*L\n1#1,190:1\n1#2:191\n495#3,4:192\n500#3:201\n129#4,5:196\n*S KotlinDebug\n*F\n+ 1 PagerMeasurePolicy.kt\nandroidx/compose/foundation/pager/PagerMeasurePolicyKt$rememberPagerMeasurePolicy$1$1\n*L\n144#1:192,4\n144#1:201\n144#1:196,5\n*E\n"
+    value = "SMAP\nPagerMeasurePolicy.kt\nKotlin\n*S Kotlin\n*F\n+ 1 PagerMeasurePolicy.kt\nandroidx/compose/foundation/pager/PagerMeasurePolicyKt$rememberPagerMeasurePolicy$1$1\n+ 2 fake.kt\nkotlin/jvm/internal/FakeKt\n+ 3 Snapshot.kt\nandroidx/compose/runtime/snapshots/Snapshot$Companion\n+ 4 Snapshot.kt\nandroidx/compose/runtime/snapshots/Snapshot\n*L\n1#1,221:1\n1#2:222\n495#3,4:223\n500#3:232\n129#4,5:227\n*S KotlinDebug\n*F\n+ 1 PagerMeasurePolicy.kt\nandroidx/compose/foundation/pager/PagerMeasurePolicyKt$rememberPagerMeasurePolicy$1$1\n*L\n149#1:223,4\n149#1:232\n149#1:227,5\n*E\n"
 .end annotation
 
 .annotation runtime Lkotlin/Metadata;
@@ -89,13 +89,15 @@
 
 .field final synthetic $reverseLayout:Z
 
+.field final synthetic $snapPositionInLayout:Landroidx/compose/foundation/gestures/snapping/SnapPositionInLayout;
+
 .field final synthetic $state:Landroidx/compose/foundation/pager/PagerState;
 
 .field final synthetic $verticalAlignment:Landroidx/compose/ui/Alignment$Vertical;
 
 
 # direct methods
-.method constructor <init>(Landroidx/compose/foundation/gestures/Orientation;Landroidx/compose/foundation/layout/PaddingValues;ZLandroidx/compose/foundation/pager/PagerState;FLandroidx/compose/foundation/pager/PageSize;Lkotlin/jvm/functions/Function0;Lkotlin/jvm/functions/Function0;Landroidx/compose/ui/Alignment$Vertical;Landroidx/compose/ui/Alignment$Horizontal;I)V
+.method constructor <init>(Landroidx/compose/foundation/gestures/Orientation;Landroidx/compose/foundation/layout/PaddingValues;ZLandroidx/compose/foundation/pager/PagerState;FLandroidx/compose/foundation/pager/PageSize;Lkotlin/jvm/functions/Function0;Lkotlin/jvm/functions/Function0;Landroidx/compose/ui/Alignment$Vertical;Landroidx/compose/ui/Alignment$Horizontal;ILandroidx/compose/foundation/gestures/snapping/SnapPositionInLayout;)V
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -114,7 +116,9 @@
             ">;",
             "Landroidx/compose/ui/Alignment$Vertical;",
             "Landroidx/compose/ui/Alignment$Horizontal;",
-            "I)V"
+            "I",
+            "Landroidx/compose/foundation/gestures/snapping/SnapPositionInLayout;",
+            ")V"
         }
     .end annotation
 
@@ -140,6 +144,8 @@
 
     iput p11, p0, Landroidx/compose/foundation/pager/PagerMeasurePolicyKt$rememberPagerMeasurePolicy$1$1;->$beyondBoundsPageCount:I
 
+    iput-object p12, p0, Landroidx/compose/foundation/pager/PagerMeasurePolicyKt$rememberPagerMeasurePolicy$1$1;->$snapPositionInLayout:Landroidx/compose/foundation/gestures/snapping/SnapPositionInLayout;
+
     const/4 p1, 0x2
 
     invoke-direct {p0, p1}, Lkotlin/jvm/internal/Lambda;-><init>(I)V
@@ -152,7 +158,7 @@
 .method public bridge synthetic invoke(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
     .locals 2
 
-    .line 66
+    .line 69
     check-cast p1, Landroidx/compose/foundation/lazy/layout/LazyLayoutMeasureScope;
 
     check-cast p2, Landroidx/compose/ui/unit/Constraints;
@@ -169,7 +175,7 @@
 .end method
 
 .method public final invoke-0kLqBqw(Landroidx/compose/foundation/lazy/layout/LazyLayoutMeasureScope;J)Landroidx/compose/foundation/pager/PagerMeasureResult;
-    .locals 31
+    .locals 32
 
     move-object/from16 v0, p0
 
@@ -177,11 +183,7 @@
 
     move-wide/from16 v3, p2
 
-    const-string v1, "$this$null"
-
-    invoke-static {v7, v1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 67
+    .line 70
     iget-object v1, v0, Landroidx/compose/foundation/pager/PagerMeasurePolicyKt$rememberPagerMeasurePolicy$1$1;->$orientation:Landroidx/compose/foundation/gestures/Orientation;
 
     sget-object v2, Landroidx/compose/foundation/gestures/Orientation;->Vertical:Landroidx/compose/foundation/gestures/Orientation;
@@ -198,7 +200,7 @@
     :goto_0
     if-eqz v1, :cond_1
 
-    .line 70
+    .line 73
     sget-object v2, Landroidx/compose/foundation/gestures/Orientation;->Vertical:Landroidx/compose/foundation/gestures/Orientation;
 
     goto :goto_1
@@ -206,13 +208,13 @@
     :cond_1
     sget-object v2, Landroidx/compose/foundation/gestures/Orientation;->Horizontal:Landroidx/compose/foundation/gestures/Orientation;
 
-    .line 68
+    .line 71
     :goto_1
     invoke-static {v3, v4, v2}, Landroidx/compose/foundation/CheckScrollableContainerConstraintsKt;->checkScrollableContainerConstraints-K40F9xA(JLandroidx/compose/foundation/gestures/Orientation;)V
 
     if-eqz v1, :cond_2
 
-    .line 76
+    .line 79
     iget-object v2, v0, Landroidx/compose/foundation/pager/PagerMeasurePolicyKt$rememberPagerMeasurePolicy$1$1;->$contentPadding:Landroidx/compose/foundation/layout/PaddingValues;
 
     invoke-interface/range {p1 .. p1}, Landroidx/compose/foundation/lazy/layout/LazyLayoutMeasureScope;->getLayoutDirection()Landroidx/compose/ui/unit/LayoutDirection;
@@ -229,7 +231,7 @@
 
     goto :goto_2
 
-    .line 79
+    .line 82
     :cond_2
     iget-object v2, v0, Landroidx/compose/foundation/pager/PagerMeasurePolicyKt$rememberPagerMeasurePolicy$1$1;->$contentPadding:Landroidx/compose/foundation/layout/PaddingValues;
 
@@ -248,7 +250,7 @@
     :goto_2
     if-eqz v1, :cond_3
 
-    .line 84
+    .line 87
     iget-object v5, v0, Landroidx/compose/foundation/pager/PagerMeasurePolicyKt$rememberPagerMeasurePolicy$1$1;->$contentPadding:Landroidx/compose/foundation/layout/PaddingValues;
 
     invoke-interface/range {p1 .. p1}, Landroidx/compose/foundation/lazy/layout/LazyLayoutMeasureScope;->getLayoutDirection()Landroidx/compose/ui/unit/LayoutDirection;
@@ -265,7 +267,7 @@
 
     goto :goto_3
 
-    .line 87
+    .line 90
     :cond_3
     iget-object v5, v0, Landroidx/compose/foundation/pager/PagerMeasurePolicyKt$rememberPagerMeasurePolicy$1$1;->$contentPadding:Landroidx/compose/foundation/layout/PaddingValues;
 
@@ -281,7 +283,7 @@
 
     move-result v5
 
-    .line 89
+    .line 92
     :goto_3
     iget-object v6, v0, Landroidx/compose/foundation/pager/PagerMeasurePolicyKt$rememberPagerMeasurePolicy$1$1;->$contentPadding:Landroidx/compose/foundation/layout/PaddingValues;
 
@@ -293,7 +295,7 @@
 
     move-result v6
 
-    .line 90
+    .line 93
     iget-object v8, v0, Landroidx/compose/foundation/pager/PagerMeasurePolicyKt$rememberPagerMeasurePolicy$1$1;->$contentPadding:Landroidx/compose/foundation/layout/PaddingValues;
 
     invoke-interface {v8}, Landroidx/compose/foundation/layout/PaddingValues;->calculateBottomPadding-D9Ej5fM()F
@@ -304,23 +306,23 @@
 
     move-result v8
 
-    add-int v10, v6, v8
+    add-int v9, v6, v8
 
-    add-int v11, v2, v5
+    add-int v10, v2, v5
 
     if-eqz v1, :cond_4
 
-    move v9, v10
+    move v11, v9
 
     goto :goto_4
 
     :cond_4
-    move v9, v11
+    move v11, v10
 
     :goto_4
     if-eqz v1, :cond_5
 
-    .line 95
+    .line 98
     iget-boolean v12, v0, Landroidx/compose/foundation/pager/PagerMeasurePolicyKt$rememberPagerMeasurePolicy$1$1;->$reverseLayout:Z
 
     if-nez v12, :cond_5
@@ -332,7 +334,7 @@
     :cond_5
     if-eqz v1, :cond_6
 
-    .line 96
+    .line 99
     iget-boolean v12, v0, Landroidx/compose/foundation/pager/PagerMeasurePolicyKt$rememberPagerMeasurePolicy$1$1;->$reverseLayout:Z
 
     if-eqz v12, :cond_6
@@ -344,7 +346,7 @@
     :cond_6
     if-nez v1, :cond_7
 
-    .line 97
+    .line 100
     iget-boolean v8, v0, Landroidx/compose/foundation/pager/PagerMeasurePolicyKt$rememberPagerMeasurePolicy$1$1;->$reverseLayout:Z
 
     if-nez v8, :cond_7
@@ -357,18 +359,18 @@
     move v12, v5
 
     :goto_5
-    sub-int v13, v9, v12
+    sub-int v13, v11, v12
 
-    neg-int v5, v11
+    neg-int v5, v10
 
-    neg-int v8, v10
+    neg-int v8, v9
 
-    .line 102
+    .line 105
     invoke-static {v3, v4, v5, v8}, Landroidx/compose/ui/unit/ConstraintsKt;->offset-NN6Ew-U(JII)J
 
-    move-result-wide v17
+    move-result-wide v16
 
-    .line 104
+    .line 107
     iget-object v5, v0, Landroidx/compose/foundation/pager/PagerMeasurePolicyKt$rememberPagerMeasurePolicy$1$1;->$state:Landroidx/compose/foundation/pager/PagerState;
 
     move-object v8, v7
@@ -377,7 +379,7 @@
 
     invoke-virtual {v5, v8}, Landroidx/compose/foundation/pager/PagerState;->setDensity$foundation_release(Landroidx/compose/ui/unit/Density;)V
 
-    .line 106
+    .line 109
     iget v5, v0, Landroidx/compose/foundation/pager/PagerMeasurePolicyKt$rememberPagerMeasurePolicy$1$1;->$pageSpacing:F
 
     invoke-interface {v7, v5}, Landroidx/compose/foundation/lazy/layout/LazyLayoutMeasureScope;->roundToPx-0680j_4(F)I
@@ -386,32 +388,32 @@
 
     if-eqz v1, :cond_8
 
-    .line 110
+    .line 113
     invoke-static/range {p2 .. p3}, Landroidx/compose/ui/unit/Constraints;->getMaxHeight-impl(J)I
 
     move-result v5
 
-    sub-int/2addr v5, v10
+    sub-int/2addr v5, v9
 
     goto :goto_6
 
-    .line 112
+    .line 115
     :cond_8
     invoke-static/range {p2 .. p3}, Landroidx/compose/ui/unit/Constraints;->getMaxWidth-impl(J)I
 
     move-result v5
 
-    sub-int/2addr v5, v11
+    sub-int/2addr v5, v10
 
     :goto_6
-    move v15, v5
+    move v11, v5
 
-    .line 114
+    .line 117
     iget-boolean v5, v0, Landroidx/compose/foundation/pager/PagerMeasurePolicyKt$rememberPagerMeasurePolicy$1$1;->$reverseLayout:Z
 
     if-eqz v5, :cond_c
 
-    if-lez v15, :cond_9
+    if-lez v11, :cond_9
 
     goto :goto_8
 
@@ -421,14 +423,14 @@
     goto :goto_7
 
     :cond_a
-    add-int/2addr v2, v15
+    add-int/2addr v2, v11
 
     :goto_7
     if-eqz v1, :cond_b
 
-    add-int/2addr v6, v15
+    add-int/2addr v6, v11
 
-    .line 120
+    .line 123
     :cond_b
     invoke-static {v2, v6}, Landroidx/compose/ui/unit/IntOffsetKt;->IntOffset(II)J
 
@@ -436,7 +438,7 @@
 
     goto :goto_9
 
-    .line 115
+    .line 118
     :cond_c
     :goto_8
     invoke-static {v2, v6}, Landroidx/compose/ui/unit/IntOffsetKt;->IntOffset(II)J
@@ -444,27 +446,27 @@
     move-result-wide v1
 
     :goto_9
-    move-wide/from16 v23, v1
-
-    .line 127
-    iget-object v1, v0, Landroidx/compose/foundation/pager/PagerMeasurePolicyKt$rememberPagerMeasurePolicy$1$1;->$pageSize:Landroidx/compose/foundation/pager/PageSize;
-
-    invoke-interface {v1, v8, v15, v14}, Landroidx/compose/foundation/pager/PageSize;->calculateMainAxisPageSize(Landroidx/compose/ui/unit/Density;II)I
-
-    move-result v6
-
-    .line 129
-    iget-object v1, v0, Landroidx/compose/foundation/pager/PagerMeasurePolicyKt$rememberPagerMeasurePolicy$1$1;->$state:Landroidx/compose/foundation/pager/PagerState;
+    move-wide/from16 v22, v1
 
     .line 130
+    iget-object v1, v0, Landroidx/compose/foundation/pager/PagerMeasurePolicyKt$rememberPagerMeasurePolicy$1$1;->$pageSize:Landroidx/compose/foundation/pager/PageSize;
+
+    invoke-interface {v1, v8, v11, v14}, Landroidx/compose/foundation/pager/PageSize;->calculateMainAxisPageSize(Landroidx/compose/ui/unit/Density;II)I
+
+    move-result v24
+
+    .line 132
+    iget-object v1, v0, Landroidx/compose/foundation/pager/PagerMeasurePolicyKt$rememberPagerMeasurePolicy$1$1;->$state:Landroidx/compose/foundation/pager/PagerState;
+
+    .line 133
     iget-object v2, v0, Landroidx/compose/foundation/pager/PagerMeasurePolicyKt$rememberPagerMeasurePolicy$1$1;->$orientation:Landroidx/compose/foundation/gestures/Orientation;
 
     sget-object v5, Landroidx/compose/foundation/gestures/Orientation;->Vertical:Landroidx/compose/foundation/gestures/Orientation;
 
     if-ne v2, v5, :cond_d
 
-    .line 131
-    invoke-static/range {v17 .. v18}, Landroidx/compose/ui/unit/Constraints;->getMaxWidth-impl(J)I
+    .line 134
+    invoke-static/range {v16 .. v17}, Landroidx/compose/ui/unit/Constraints;->getMaxWidth-impl(J)I
 
     move-result v2
 
@@ -473,9 +475,9 @@
     goto :goto_a
 
     :cond_d
-    move/from16 v26, v6
+    move/from16 v26, v24
 
-    .line 135
+    .line 138
     :goto_a
     iget-object v2, v0, Landroidx/compose/foundation/pager/PagerMeasurePolicyKt$rememberPagerMeasurePolicy$1$1;->$orientation:Landroidx/compose/foundation/gestures/Orientation;
 
@@ -483,8 +485,8 @@
 
     if-eq v2, v5, :cond_e
 
-    .line 136
-    invoke-static/range {v17 .. v18}, Landroidx/compose/ui/unit/Constraints;->getMaxHeight-impl(J)I
+    .line 139
+    invoke-static/range {v16 .. v17}, Landroidx/compose/ui/unit/Constraints;->getMaxHeight-impl(J)I
 
     move-result v2
 
@@ -493,7 +495,7 @@
     goto :goto_b
 
     :cond_e
-    move/from16 v28, v6
+    move/from16 v28, v24
 
     :goto_b
     const/16 v29, 0x5
@@ -504,102 +506,76 @@
 
     const/16 v27, 0x0
 
-    .line 129
+    .line 132
     invoke-static/range {v25 .. v30}, Landroidx/compose/ui/unit/ConstraintsKt;->Constraints$default(IIIIILjava/lang/Object;)J
 
-    move-result-wide v8
+    move-result-wide v5
 
-    invoke-virtual {v1, v8, v9}, Landroidx/compose/foundation/pager/PagerState;->setPremeasureConstraints-BRTryo0$foundation_release(J)V
+    invoke-virtual {v1, v5, v6}, Landroidx/compose/foundation/pager/PagerState;->setPremeasureConstraints-BRTryo0$foundation_release(J)V
 
     .line 144
-    sget-object v1, Landroidx/compose/runtime/snapshots/Snapshot;->Companion:Landroidx/compose/runtime/snapshots/Snapshot$Companion;
-
-    iget-object v2, v0, Landroidx/compose/foundation/pager/PagerMeasurePolicyKt$rememberPagerMeasurePolicy$1$1;->$state:Landroidx/compose/foundation/pager/PagerState;
-
-    .line 193
-    invoke-virtual {v1}, Landroidx/compose/runtime/snapshots/Snapshot$Companion;->createNonObservableSnapshot()Landroidx/compose/runtime/snapshots/Snapshot;
-
-    move-result-object v1
-
-    .line 196
-    :try_start_0
-    invoke-virtual {v1}, Landroidx/compose/runtime/snapshots/Snapshot;->makeCurrent()Landroidx/compose/runtime/snapshots/Snapshot;
-
-    move-result-object v5
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_1
-
-    .line 145
-    :try_start_1
-    invoke-virtual {v2}, Landroidx/compose/foundation/pager/PagerState;->getFirstVisiblePage$foundation_release()I
-
-    move-result v25
-
-    .line 146
-    invoke-virtual {v2}, Landroidx/compose/foundation/pager/PagerState;->getLayoutInfo$foundation_release()Landroidx/compose/foundation/pager/PagerLayoutInfo;
-
-    move-result-object v8
-
-    invoke-static {}, Landroidx/compose/foundation/pager/PagerStateKt;->getEmptyLayoutInfo()Landroidx/compose/foundation/pager/PagerLayoutInfo;
-
-    move-result-object v9
-
-    invoke-static {v8, v9}, Lkotlin/jvm/internal/Intrinsics;->areEqual(Ljava/lang/Object;Ljava/lang/Object;)Z
-
-    move-result v8
-
-    if-eqz v8, :cond_f
-
-    .line 147
-    invoke-virtual {v2}, Landroidx/compose/foundation/pager/PagerState;->getInitialPageOffsetFraction()F
-
-    move-result v2
-
-    int-to-float v8, v6
-
-    mul-float/2addr v2, v8
-
-    invoke-static {v2}, Lkotlin/math/MathKt;->roundToInt(F)I
-
-    move-result v2
-
-    goto :goto_c
-
-    .line 149
-    :cond_f
-    invoke-virtual {v2}, Landroidx/compose/foundation/pager/PagerState;->getFirstVisiblePageOffset$foundation_release()I
-
-    move-result v2
-
-    :goto_c
-    move/from16 v29, v2
-
-    .line 151
-    sget-object v2, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
-    :try_end_1
-    .catchall {:try_start_1 .. :try_end_1} :catchall_0
-
-    .line 200
-    :try_start_2
-    invoke-virtual {v1, v5}, Landroidx/compose/runtime/snapshots/Snapshot;->restoreCurrent(Landroidx/compose/runtime/snapshots/Snapshot;)V
-    :try_end_2
-    .catchall {:try_start_2 .. :try_end_2} :catchall_1
-
-    .line 201
-    invoke-virtual {v1}, Landroidx/compose/runtime/snapshots/Snapshot;->dispose()V
-
-    .line 153
     iget-object v1, v0, Landroidx/compose/foundation/pager/PagerMeasurePolicyKt$rememberPagerMeasurePolicy$1$1;->$itemProviderLambda:Lkotlin/jvm/functions/Function0;
 
     invoke-interface {v1}, Lkotlin/jvm/functions/Function0;->invoke()Ljava/lang/Object;
 
     move-result-object v1
 
-    check-cast v1, Landroidx/compose/foundation/pager/PagerLazyLayoutItemProvider;
+    move-object v6, v1
 
-    move-object v9, v1
+    check-cast v6, Landroidx/compose/foundation/pager/PagerLazyLayoutItemProvider;
+
+    add-int v1, v24, v14
+
+    .line 149
+    sget-object v2, Landroidx/compose/runtime/snapshots/Snapshot;->Companion:Landroidx/compose/runtime/snapshots/Snapshot$Companion;
+
+    iget-object v5, v0, Landroidx/compose/foundation/pager/PagerMeasurePolicyKt$rememberPagerMeasurePolicy$1$1;->$state:Landroidx/compose/foundation/pager/PagerState;
+
+    .line 224
+    invoke-virtual {v2}, Landroidx/compose/runtime/snapshots/Snapshot$Companion;->createNonObservableSnapshot()Landroidx/compose/runtime/snapshots/Snapshot;
+
+    move-result-object v2
+
+    .line 227
+    :try_start_0
+    invoke-virtual {v2}, Landroidx/compose/runtime/snapshots/Snapshot;->makeCurrent()Landroidx/compose/runtime/snapshots/Snapshot;
+
+    move-result-object v8
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_1
+
+    .line 150
+    :try_start_1
+    invoke-virtual {v5}, Landroidx/compose/foundation/pager/PagerState;->getCurrentPage()I
+
+    move-result v15
+
+    invoke-virtual {v5, v6, v15}, Landroidx/compose/foundation/pager/PagerState;->matchScrollPositionWithKey$foundation_release(Landroidx/compose/foundation/pager/PagerLazyLayoutItemProvider;I)I
+
+    move-result v15
+
+    .line 151
+    invoke-static {v5, v1}, Landroidx/compose/foundation/pager/PagerMeasurePolicyKt;->calculateCurrentPageLayoutOffset(Landroidx/compose/foundation/pager/PagerState;I)I
+
+    move-result v31
+
+    .line 152
+    sget-object v1, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
+    :try_end_1
+    .catchall {:try_start_1 .. :try_end_1} :catchall_0
+
+    .line 231
+    :try_start_2
+    invoke-virtual {v2, v8}, Landroidx/compose/runtime/snapshots/Snapshot;->restoreCurrent(Landroidx/compose/runtime/snapshots/Snapshot;)V
+    :try_end_2
+    .catchall {:try_start_2 .. :try_end_2} :catchall_1
+
+    .line 232
+    invoke-virtual {v2}, Landroidx/compose/runtime/snapshots/Snapshot;->dispose()V
 
     .line 154
+    move-object v1, v6
+
     check-cast v1, Landroidx/compose/foundation/lazy/layout/LazyLayoutItemProvider;
 
     .line 155
@@ -619,7 +595,7 @@
     .line 154
     invoke-static {v1, v2, v5}, Landroidx/compose/foundation/lazy/layout/LazyLayoutBeyondBoundsStateKt;->calculateLazyLayoutPinnedIndices(Landroidx/compose/foundation/lazy/layout/LazyLayoutItemProvider;Landroidx/compose/foundation/lazy/layout/LazyLayoutPinnedItemList;Landroidx/compose/foundation/lazy/layout/LazyLayoutBeyondBoundsInfo;)Ljava/util/List;
 
-    move-result-object v27
+    move-result-object v26
 
     .line 163
     iget-object v1, v0, Landroidx/compose/foundation/pager/PagerMeasurePolicyKt$rememberPagerMeasurePolicy$1$1;->$pageCount:Lkotlin/jvm/functions/Function0;
@@ -634,60 +610,67 @@
 
     move-result v8
 
-    .line 176
+    .line 178
     iget-object v1, v0, Landroidx/compose/foundation/pager/PagerMeasurePolicyKt$rememberPagerMeasurePolicy$1$1;->$state:Landroidx/compose/foundation/pager/PagerState;
 
-    invoke-virtual {v1}, Landroidx/compose/foundation/pager/PagerState;->getScrollToBeConsumed$foundation_release()F
+    invoke-virtual {v1}, Landroidx/compose/foundation/pager/PagerState;->getPlacementScopeInvalidator-zYiylxw$foundation_release()Landroidx/compose/runtime/MutableState;
 
-    move-result v16
+    move-result-object v28
 
     .line 169
     iget-object v1, v0, Landroidx/compose/foundation/pager/PagerMeasurePolicyKt$rememberPagerMeasurePolicy$1$1;->$orientation:Landroidx/compose/foundation/gestures/Orientation;
 
-    move-object/from16 v19, v1
+    move-object/from16 v18, v1
 
     .line 173
     iget-object v1, v0, Landroidx/compose/foundation/pager/PagerMeasurePolicyKt$rememberPagerMeasurePolicy$1$1;->$verticalAlignment:Landroidx/compose/ui/Alignment$Vertical;
 
-    move-object/from16 v20, v1
+    move-object/from16 v19, v1
 
     .line 172
     iget-object v1, v0, Landroidx/compose/foundation/pager/PagerMeasurePolicyKt$rememberPagerMeasurePolicy$1$1;->$horizontalAlignment:Landroidx/compose/ui/Alignment$Horizontal;
 
-    move-object/from16 v21, v1
+    move-object/from16 v20, v1
 
     .line 175
     iget-boolean v1, v0, Landroidx/compose/foundation/pager/PagerMeasurePolicyKt$rememberPagerMeasurePolicy$1$1;->$reverseLayout:Z
 
-    move/from16 v22, v1
+    move/from16 v21, v1
 
     .line 168
     iget v1, v0, Landroidx/compose/foundation/pager/PagerMeasurePolicyKt$rememberPagerMeasurePolicy$1$1;->$beyondBoundsPageCount:I
 
-    move/from16 v26, v1
+    move/from16 v25, v1
+
+    .line 177
+    iget-object v1, v0, Landroidx/compose/foundation/pager/PagerMeasurePolicyKt$rememberPagerMeasurePolicy$1$1;->$snapPositionInLayout:Landroidx/compose/foundation/gestures/snapping/SnapPositionInLayout;
+
+    move-object/from16 v27, v1
 
     .line 159
-    new-instance v28, Landroidx/compose/foundation/pager/PagerMeasurePolicyKt$rememberPagerMeasurePolicy$1$1$2;
+    new-instance v29, Landroidx/compose/foundation/pager/PagerMeasurePolicyKt$rememberPagerMeasurePolicy$1$1$2;
 
-    move-object/from16 v1, v28
+    move-object/from16 v1, v29
 
     move-object/from16 v2, p1
 
     move-wide/from16 v3, p2
 
-    move v5, v11
+    move v5, v10
 
-    move/from16 v30, v6
+    move-object v10, v6
 
-    move v6, v10
+    move v6, v9
 
     invoke-direct/range {v1 .. v6}, Landroidx/compose/foundation/pager/PagerMeasurePolicyKt$rememberPagerMeasurePolicy$1$1$2;-><init>(Landroidx/compose/foundation/lazy/layout/LazyLayoutMeasureScope;JII)V
 
-    check-cast v28, Lkotlin/jvm/functions/Function3;
+    check-cast v29, Lkotlin/jvm/functions/Function3;
 
     move-object/from16 v7, p1
 
-    move v10, v15
+    move-object v9, v10
+
+    move v10, v11
 
     move v11, v12
 
@@ -695,30 +678,34 @@
 
     move v13, v14
 
-    move/from16 v14, v25
+    move v14, v15
 
-    move/from16 v15, v29
+    const/4 v1, 0x0
 
-    move/from16 v25, v30
+    move/from16 v15, v31
 
-    invoke-static/range {v7 .. v28}, Landroidx/compose/foundation/pager/PagerMeasureKt;->measurePager-ntgEbfI(Landroidx/compose/foundation/lazy/layout/LazyLayoutMeasureScope;ILandroidx/compose/foundation/pager/PagerLazyLayoutItemProvider;IIIIIIFJLandroidx/compose/foundation/gestures/Orientation;Landroidx/compose/ui/Alignment$Vertical;Landroidx/compose/ui/Alignment$Horizontal;ZJIILjava/util/List;Lkotlin/jvm/functions/Function3;)Landroidx/compose/foundation/pager/PagerMeasureResult;
+    invoke-static/range {v7 .. v29}, Landroidx/compose/foundation/pager/PagerMeasureKt;->measurePager-_JDW0YA(Landroidx/compose/foundation/lazy/layout/LazyLayoutMeasureScope;ILandroidx/compose/foundation/pager/PagerLazyLayoutItemProvider;IIIIIIJLandroidx/compose/foundation/gestures/Orientation;Landroidx/compose/ui/Alignment$Vertical;Landroidx/compose/ui/Alignment$Horizontal;ZJIILjava/util/List;Landroidx/compose/foundation/gestures/snapping/SnapPositionInLayout;Landroidx/compose/runtime/MutableState;Lkotlin/jvm/functions/Function3;)Landroidx/compose/foundation/pager/PagerMeasureResult;
 
-    move-result-object v1
-
-    .line 186
-    iget-object v0, v0, Landroidx/compose/foundation/pager/PagerMeasurePolicyKt$rememberPagerMeasurePolicy$1$1;->$state:Landroidx/compose/foundation/pager/PagerState;
+    move-result-object v2
 
     .line 187
-    invoke-virtual {v0, v1}, Landroidx/compose/foundation/pager/PagerState;->applyMeasureResult$foundation_release(Landroidx/compose/foundation/pager/PagerMeasureResult;)V
+    iget-object v0, v0, Landroidx/compose/foundation/pager/PagerMeasurePolicyKt$rememberPagerMeasurePolicy$1$1;->$state:Landroidx/compose/foundation/pager/PagerState;
 
-    return-object v1
+    const/4 v3, 0x2
+
+    const/4 v4, 0x0
+
+    .line 188
+    invoke-static {v0, v2, v1, v3, v4}, Landroidx/compose/foundation/pager/PagerState;->applyMeasureResult$foundation_release$default(Landroidx/compose/foundation/pager/PagerState;Landroidx/compose/foundation/pager/PagerMeasureResult;ZILjava/lang/Object;)V
+
+    return-object v2
 
     :catchall_0
     move-exception v0
 
-    .line 200
+    .line 231
     :try_start_3
-    invoke-virtual {v1, v5}, Landroidx/compose/runtime/snapshots/Snapshot;->restoreCurrent(Landroidx/compose/runtime/snapshots/Snapshot;)V
+    invoke-virtual {v2, v8}, Landroidx/compose/runtime/snapshots/Snapshot;->restoreCurrent(Landroidx/compose/runtime/snapshots/Snapshot;)V
 
     throw v0
     :try_end_3
@@ -727,8 +714,8 @@
     :catchall_1
     move-exception v0
 
-    .line 201
-    invoke-virtual {v1}, Landroidx/compose/runtime/snapshots/Snapshot;->dispose()V
+    .line 232
+    invoke-virtual {v2}, Landroidx/compose/runtime/snapshots/Snapshot;->dispose()V
 
     throw v0
 .end method

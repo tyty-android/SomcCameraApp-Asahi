@@ -29,7 +29,7 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/SourceDebugExtension;
-    value = "SMAP\nTextFieldImpl.kt\nKotlin\n*S Kotlin\n*F\n+ 1 TextFieldImpl.kt\nandroidx/compose/material/TextFieldImplKt$CommonDecorationBox$3$decoratedPlaceholder$1\n+ 2 Box.kt\nandroidx/compose/foundation/layout/BoxKt\n+ 3 Layout.kt\nandroidx/compose/ui/layout/LayoutKt\n+ 4 Composables.kt\nandroidx/compose/runtime/ComposablesKt\n+ 5 Composer.kt\nandroidx/compose/runtime/Updater\n*L\n1#1,376:1\n66#2,6:377\n72#2:411\n76#2:416\n78#3,11:383\n91#3:415\n456#4,8:394\n464#4,3:408\n467#4,3:412\n4144#5,6:402\n*S KotlinDebug\n*F\n+ 1 TextFieldImpl.kt\nandroidx/compose/material/TextFieldImplKt$CommonDecorationBox$3$decoratedPlaceholder$1\n*L\n139#1:377,6\n139#1:411\n139#1:416\n139#1:383,11\n139#1:415\n139#1:394,8\n139#1:408,3\n139#1:412,3\n139#1:402,6\n*E\n"
+    value = "SMAP\nTextFieldImpl.kt\nKotlin\n*S Kotlin\n*F\n+ 1 TextFieldImpl.kt\nandroidx/compose/material/TextFieldImplKt$CommonDecorationBox$3$decoratedPlaceholder$1\n+ 2 Box.kt\nandroidx/compose/foundation/layout/BoxKt\n+ 3 Layout.kt\nandroidx/compose/ui/layout/LayoutKt\n+ 4 Composables.kt\nandroidx/compose/runtime/ComposablesKt\n+ 5 Composer.kt\nandroidx/compose/runtime/Updater\n*L\n1#1,369:1\n68#2,6:370\n74#2:404\n78#2:409\n79#3,11:376\n92#3:408\n456#4,8:387\n464#4,3:401\n467#4,3:405\n3737#5,6:395\n*S KotlinDebug\n*F\n+ 1 TextFieldImpl.kt\nandroidx/compose/material/TextFieldImplKt$CommonDecorationBox$3$decoratedPlaceholder$1\n*L\n138#1:370,6\n138#1:404\n138#1:409\n138#1:376,11\n138#1:408\n138#1:387,8\n138#1:401,3\n138#1:405,3\n138#1:395,6\n*E\n"
 .end annotation
 
 .annotation runtime Lkotlin/Metadata;
@@ -55,10 +55,6 @@
 
 
 # instance fields
-.field final synthetic $$dirty:I
-
-.field final synthetic $$dirty1:I
-
 .field final synthetic $colors:Landroidx/compose/material/TextFieldColors;
 
 .field final synthetic $enabled:Z
@@ -79,13 +75,13 @@
 
 
 # direct methods
-.method constructor <init>(FLandroidx/compose/material/TextFieldColors;ZIILkotlin/jvm/functions/Function2;)V
+.method constructor <init>(FLandroidx/compose/material/TextFieldColors;ZLkotlin/jvm/functions/Function2;)V
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(F",
             "Landroidx/compose/material/TextFieldColors;",
-            "ZII",
+            "Z",
             "Lkotlin/jvm/functions/Function2<",
             "-",
             "Landroidx/compose/runtime/Composer;",
@@ -102,11 +98,7 @@
 
     iput-boolean p3, p0, Landroidx/compose/material/TextFieldImplKt$CommonDecorationBox$3$decoratedPlaceholder$1;->$enabled:Z
 
-    iput p4, p0, Landroidx/compose/material/TextFieldImplKt$CommonDecorationBox$3$decoratedPlaceholder$1;->$$dirty:I
-
-    iput p5, p0, Landroidx/compose/material/TextFieldImplKt$CommonDecorationBox$3$decoratedPlaceholder$1;->$$dirty1:I
-
-    iput-object p6, p0, Landroidx/compose/material/TextFieldImplKt$CommonDecorationBox$3$decoratedPlaceholder$1;->$placeholder:Lkotlin/jvm/functions/Function2;
+    iput-object p4, p0, Landroidx/compose/material/TextFieldImplKt$CommonDecorationBox$3$decoratedPlaceholder$1;->$placeholder:Lkotlin/jvm/functions/Function2;
 
     const/4 p1, 0x3
 
@@ -120,7 +112,7 @@
 .method public bridge synthetic invoke(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
 
-    .line 138
+    .line 137
     check-cast p1, Landroidx/compose/ui/Modifier;
 
     check-cast p2, Landroidx/compose/runtime/Composer;
@@ -139,13 +131,9 @@
 .end method
 
 .method public final invoke(Landroidx/compose/ui/Modifier;Landroidx/compose/runtime/Composer;I)V
-    .locals 11
+    .locals 9
 
-    const-string v0, "modifier"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string v0, "C138@5768L341:TextFieldImpl.kt#jmzs0o"
+    const-string v0, "C137@5697L341:TextFieldImpl.kt#jmzs0o"
 
     invoke-static {p2, v0}, Landroidx/compose/runtime/ComposerKt;->sourceInformation(Landroidx/compose/runtime/Composer;Ljava/lang/String;)V
 
@@ -167,38 +155,33 @@
     const/4 v0, 0x2
 
     :goto_0
-    or-int/2addr v0, p3
-
-    goto :goto_1
+    or-int/2addr p3, v0
 
     :cond_1
-    move v0, p3
-
-    :goto_1
-    and-int/lit8 v0, v0, 0x5b
+    and-int/lit8 v0, p3, 0x5b
 
     const/16 v1, 0x12
 
     if-ne v0, v1, :cond_3
 
-    .line 139
+    .line 138
     invoke-interface {p2}, Landroidx/compose/runtime/Composer;->getSkipping()Z
 
     move-result v0
 
     if-nez v0, :cond_2
 
-    goto :goto_2
+    goto :goto_1
 
-    .line 145
+    .line 144
     :cond_2
     invoke-interface {p2}, Landroidx/compose/runtime/Composer;->skipToGroupEnd()V
 
-    goto/16 :goto_4
+    goto/16 :goto_3
 
-    .line 139
+    .line 138
     :cond_3
-    :goto_2
+    :goto_1
     invoke-static {}, Landroidx/compose/runtime/ComposerKt;->isTraceInProgress()Z
 
     move-result v0
@@ -224,164 +207,160 @@
 
     iget-boolean v0, p0, Landroidx/compose/material/TextFieldImplKt$CommonDecorationBox$3$decoratedPlaceholder$1;->$enabled:Z
 
-    iget v1, p0, Landroidx/compose/material/TextFieldImplKt$CommonDecorationBox$3$decoratedPlaceholder$1;->$$dirty:I
-
-    iget v2, p0, Landroidx/compose/material/TextFieldImplKt$CommonDecorationBox$3$decoratedPlaceholder$1;->$$dirty1:I
-
-    iget-object v7, p0, Landroidx/compose/material/TextFieldImplKt$CommonDecorationBox$3$decoratedPlaceholder$1;->$placeholder:Lkotlin/jvm/functions/Function2;
+    iget-object v5, p0, Landroidx/compose/material/TextFieldImplKt$CommonDecorationBox$3$decoratedPlaceholder$1;->$placeholder:Lkotlin/jvm/functions/Function2;
 
     const p0, 0x2bb5b5d7
 
     invoke-interface {p2, p0}, Landroidx/compose/runtime/Composer;->startReplaceableGroup(I)V
 
-    const-string p0, "CC(Box)P(2,1,3)69@3214L67,70@3286L130:Box.kt#2w3rfo"
+    const-string p0, "CC(Box)P(2,1,3)71@3309L67,72@3381L130:Box.kt#2w3rfo"
 
     invoke-static {p2, p0}, Landroidx/compose/runtime/ComposerKt;->sourceInformation(Landroidx/compose/runtime/Composer;Ljava/lang/String;)V
 
-    .line 377
+    .line 370
     sget-object p0, Landroidx/compose/ui/Alignment;->Companion:Landroidx/compose/ui/Alignment$Companion;
 
     invoke-virtual {p0}, Landroidx/compose/ui/Alignment$Companion;->getTopStart()Landroidx/compose/ui/Alignment;
 
     move-result-object p0
 
-    const/4 v3, 0x0
+    const/4 v1, 0x0
 
-    .line 381
-    invoke-static {p0, v3, p2, v3}, Landroidx/compose/foundation/layout/BoxKt;->rememberBoxMeasurePolicy(Landroidx/compose/ui/Alignment;ZLandroidx/compose/runtime/Composer;I)Landroidx/compose/ui/layout/MeasurePolicy;
+    .line 374
+    invoke-static {p0, v1, p2, v1}, Landroidx/compose/foundation/layout/BoxKt;->rememberBoxMeasurePolicy(Landroidx/compose/ui/Alignment;ZLandroidx/compose/runtime/Composer;I)Landroidx/compose/ui/layout/MeasurePolicy;
 
     move-result-object p0
 
-    const v4, -0x4ee9b9da
+    const v2, -0x4ee9b9da
 
-    .line 382
-    invoke-interface {p2, v4}, Landroidx/compose/runtime/Composer;->startReplaceableGroup(I)V
+    .line 375
+    invoke-interface {p2, v2}, Landroidx/compose/runtime/Composer;->startReplaceableGroup(I)V
 
-    const-string v4, "CC(Layout)P(!1,2)77@3132L23,79@3222L420:Layout.kt#80mrfh"
+    const-string v2, "CC(Layout)P(!1,2)78@3182L23,80@3272L420:Layout.kt#80mrfh"
 
-    invoke-static {p2, v4}, Landroidx/compose/runtime/ComposerKt;->sourceInformation(Landroidx/compose/runtime/Composer;Ljava/lang/String;)V
+    invoke-static {p2, v2}, Landroidx/compose/runtime/ComposerKt;->sourceInformation(Landroidx/compose/runtime/Composer;Ljava/lang/String;)V
 
-    .line 383
-    invoke-static {p2, v3}, Landroidx/compose/runtime/ComposablesKt;->getCurrentCompositeKeyHash(Landroidx/compose/runtime/Composer;I)I
+    .line 376
+    invoke-static {p2, v1}, Landroidx/compose/runtime/ComposablesKt;->getCurrentCompositeKeyHash(Landroidx/compose/runtime/Composer;I)I
 
-    move-result v4
+    move-result v2
 
-    .line 384
+    .line 377
     invoke-interface {p2}, Landroidx/compose/runtime/Composer;->getCurrentCompositionLocalMap()Landroidx/compose/runtime/CompositionLocalMap;
 
-    move-result-object v5
+    move-result-object v3
+
+    .line 379
+    sget-object v4, Landroidx/compose/ui/node/ComposeUiNode;->Companion:Landroidx/compose/ui/node/ComposeUiNode$Companion;
+
+    invoke-virtual {v4}, Landroidx/compose/ui/node/ComposeUiNode$Companion;->getConstructor()Lkotlin/jvm/functions/Function0;
+
+    move-result-object v4
 
     .line 386
-    sget-object v6, Landroidx/compose/ui/node/ComposeUiNode;->Companion:Landroidx/compose/ui/node/ComposeUiNode$Companion;
-
-    invoke-virtual {v6}, Landroidx/compose/ui/node/ComposeUiNode$Companion;->getConstructor()Lkotlin/jvm/functions/Function0;
-
-    move-result-object v6
-
-    .line 393
     invoke-static {p1}, Landroidx/compose/ui/layout/LayoutKt;->modifierMaterializerOf(Landroidx/compose/ui/Modifier;)Lkotlin/jvm/functions/Function3;
 
     move-result-object p1
 
-    .line 394
+    .line 387
     invoke-interface {p2}, Landroidx/compose/runtime/Composer;->getApplier()Landroidx/compose/runtime/Applier;
-
-    move-result-object v8
-
-    instance-of v8, v8, Landroidx/compose/runtime/Applier;
-
-    if-nez v8, :cond_5
-
-    invoke-static {}, Landroidx/compose/runtime/ComposablesKt;->invalidApplier()V
-
-    .line 395
-    :cond_5
-    invoke-interface {p2}, Landroidx/compose/runtime/Composer;->startReusableNode()V
-
-    .line 396
-    invoke-interface {p2}, Landroidx/compose/runtime/Composer;->getInserting()Z
-
-    move-result v8
-
-    if-eqz v8, :cond_6
-
-    .line 397
-    invoke-interface {p2, v6}, Landroidx/compose/runtime/Composer;->createNode(Lkotlin/jvm/functions/Function0;)V
-
-    goto :goto_3
-
-    .line 399
-    :cond_6
-    invoke-interface {p2}, Landroidx/compose/runtime/Composer;->useNode()V
-
-    .line 401
-    :goto_3
-    invoke-static {p2}, Landroidx/compose/runtime/Updater;->constructor-impl(Landroidx/compose/runtime/Composer;)Landroidx/compose/runtime/Composer;
 
     move-result-object v6
 
+    instance-of v6, v6, Landroidx/compose/runtime/Applier;
+
+    if-nez v6, :cond_5
+
+    invoke-static {}, Landroidx/compose/runtime/ComposablesKt;->invalidApplier()V
+
     .line 388
-    sget-object v8, Landroidx/compose/ui/node/ComposeUiNode;->Companion:Landroidx/compose/ui/node/ComposeUiNode$Companion;
-
-    invoke-virtual {v8}, Landroidx/compose/ui/node/ComposeUiNode$Companion;->getSetMeasurePolicy()Lkotlin/jvm/functions/Function2;
-
-    move-result-object v8
-
-    invoke-static {v6, p0, v8}, Landroidx/compose/runtime/Updater;->set-impl(Landroidx/compose/runtime/Composer;Ljava/lang/Object;Lkotlin/jvm/functions/Function2;)V
+    :cond_5
+    invoke-interface {p2}, Landroidx/compose/runtime/Composer;->startReusableNode()V
 
     .line 389
+    invoke-interface {p2}, Landroidx/compose/runtime/Composer;->getInserting()Z
+
+    move-result v6
+
+    if-eqz v6, :cond_6
+
+    .line 390
+    invoke-interface {p2, v4}, Landroidx/compose/runtime/Composer;->createNode(Lkotlin/jvm/functions/Function0;)V
+
+    goto :goto_2
+
+    .line 392
+    :cond_6
+    invoke-interface {p2}, Landroidx/compose/runtime/Composer;->useNode()V
+
+    .line 394
+    :goto_2
+    invoke-static {p2}, Landroidx/compose/runtime/Updater;->constructor-impl(Landroidx/compose/runtime/Composer;)Landroidx/compose/runtime/Composer;
+
+    move-result-object v4
+
+    .line 381
+    sget-object v6, Landroidx/compose/ui/node/ComposeUiNode;->Companion:Landroidx/compose/ui/node/ComposeUiNode$Companion;
+
+    invoke-virtual {v6}, Landroidx/compose/ui/node/ComposeUiNode$Companion;->getSetMeasurePolicy()Lkotlin/jvm/functions/Function2;
+
+    move-result-object v6
+
+    invoke-static {v4, p0, v6}, Landroidx/compose/runtime/Updater;->set-impl(Landroidx/compose/runtime/Composer;Ljava/lang/Object;Lkotlin/jvm/functions/Function2;)V
+
+    .line 382
     sget-object p0, Landroidx/compose/ui/node/ComposeUiNode;->Companion:Landroidx/compose/ui/node/ComposeUiNode$Companion;
 
     invoke-virtual {p0}, Landroidx/compose/ui/node/ComposeUiNode$Companion;->getSetResolvedCompositionLocals()Lkotlin/jvm/functions/Function2;
 
     move-result-object p0
 
-    invoke-static {v6, v5, p0}, Landroidx/compose/runtime/Updater;->set-impl(Landroidx/compose/runtime/Composer;Ljava/lang/Object;Lkotlin/jvm/functions/Function2;)V
+    invoke-static {v4, v3, p0}, Landroidx/compose/runtime/Updater;->set-impl(Landroidx/compose/runtime/Composer;Ljava/lang/Object;Lkotlin/jvm/functions/Function2;)V
 
-    .line 391
+    .line 384
     sget-object p0, Landroidx/compose/ui/node/ComposeUiNode;->Companion:Landroidx/compose/ui/node/ComposeUiNode$Companion;
 
     invoke-virtual {p0}, Landroidx/compose/ui/node/ComposeUiNode$Companion;->getSetCompositeKeyHash()Lkotlin/jvm/functions/Function2;
 
     move-result-object p0
 
-    .line 403
-    invoke-interface {v6}, Landroidx/compose/runtime/Composer;->getInserting()Z
+    .line 396
+    invoke-interface {v4}, Landroidx/compose/runtime/Composer;->getInserting()Z
 
-    move-result v5
+    move-result v3
 
-    if-nez v5, :cond_7
+    if-nez v3, :cond_7
 
-    invoke-interface {v6}, Landroidx/compose/runtime/Composer;->rememberedValue()Ljava/lang/Object;
+    invoke-interface {v4}, Landroidx/compose/runtime/Composer;->rememberedValue()Ljava/lang/Object;
 
-    move-result-object v5
+    move-result-object v3
 
-    invoke-static {v4}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+    invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
-    move-result-object v8
+    move-result-object v6
 
-    invoke-static {v5, v8}, Lkotlin/jvm/internal/Intrinsics;->areEqual(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v3, v6}, Lkotlin/jvm/internal/Intrinsics;->areEqual(Ljava/lang/Object;Ljava/lang/Object;)Z
 
-    move-result v5
+    move-result v3
 
-    if-nez v5, :cond_8
+    if-nez v3, :cond_8
 
-    .line 404
+    .line 397
     :cond_7
-    invoke-static {v4}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+    invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
-    move-result-object v5
+    move-result-object v3
 
-    invoke-interface {v6, v5}, Landroidx/compose/runtime/Composer;->updateRememberedValue(Ljava/lang/Object;)V
+    invoke-interface {v4, v3}, Landroidx/compose/runtime/Composer;->updateRememberedValue(Ljava/lang/Object;)V
 
-    .line 405
-    invoke-static {v4}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+    .line 398
+    invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
-    move-result-object v4
+    move-result-object v2
 
-    invoke-interface {v6, v4, p0}, Landroidx/compose/runtime/Composer;->apply(Ljava/lang/Object;Lkotlin/jvm/functions/Function2;)V
+    invoke-interface {v4, v2, p0}, Landroidx/compose/runtime/Composer;->apply(Ljava/lang/Object;Lkotlin/jvm/functions/Function2;)V
 
-    .line 408
+    .line 401
     :cond_8
     invoke-static {p2}, Landroidx/compose/runtime/SkippableUpdater;->constructor-impl(Landroidx/compose/runtime/Composer;)Landroidx/compose/runtime/Composer;
 
@@ -391,50 +370,38 @@
 
     move-result-object p0
 
-    invoke-static {v3}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+    invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
-    move-result-object v3
+    move-result-object v2
 
-    invoke-interface {p1, p0, p2, v3}, Lkotlin/jvm/functions/Function3;->invoke(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-interface {p1, p0, p2, v2}, Lkotlin/jvm/functions/Function3;->invoke(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     const p0, 0x7ab4aae9
 
-    .line 409
+    .line 402
     invoke-interface {p2, p0}, Landroidx/compose/runtime/Composer;->startReplaceableGroup(I)V
 
-    const p0, -0x4ab8ddae
+    const p0, -0x4ab8dd4f
 
-    .line 410
-    const-string p1, "C71@3331L9:Box.kt#2w3rfo"
+    .line 403
+    const-string p1, "C73@3426L9:Box.kt#2w3rfo"
 
-    .line 411
+    .line 404
     invoke-static {p2, p0, p1}, Landroidx/compose/runtime/ComposerKt;->sourceInformationMarkerStart(Landroidx/compose/runtime/Composer;ILjava/lang/String;)V
 
     sget-object p0, Landroidx/compose/foundation/layout/BoxScopeInstance;->INSTANCE:Landroidx/compose/foundation/layout/BoxScopeInstance;
 
     check-cast p0, Landroidx/compose/foundation/layout/BoxScope;
 
-    const p0, -0x5b97e637
+    const p0, -0x5b97e67e
 
-    const-string p1, "C140@5902L25,141@5990L10,139@5840L247:TextFieldImpl.kt#jmzs0o"
+    const-string p1, "C139@5831L25,140@5919L10,138@5769L247:TextFieldImpl.kt#jmzs0o"
 
-    .line 140
+    .line 139
     invoke-static {p2, p0, p1}, Landroidx/compose/runtime/ComposerKt;->sourceInformationMarkerStart(Landroidx/compose/runtime/Composer;ILjava/lang/String;)V
 
-    shr-int/lit8 p0, v1, 0x1b
-
-    and-int/lit8 p0, p0, 0xe
-
-    const/4 p1, 0x6
-
-    shr-int/2addr v2, p1
-
-    and-int/lit8 v2, v2, 0x70
-
-    or-int/2addr p0, v2
-
-    .line 141
-    invoke-interface {p3, v0, p2, p0}, Landroidx/compose/material/TextFieldColors;->placeholderColor(ZLandroidx/compose/runtime/Composer;I)Landroidx/compose/runtime/State;
+    .line 140
+    invoke-interface {p3, v0, p2, v1}, Landroidx/compose/material/TextFieldColors;->placeholderColor(ZLandroidx/compose/runtime/Composer;I)Landroidx/compose/runtime/State;
 
     move-result-object p0
 
@@ -446,10 +413,12 @@
 
     invoke-virtual {p0}, Landroidx/compose/ui/graphics/Color;->unbox-impl()J
 
-    move-result-wide v3
+    move-result-wide v1
 
-    .line 142
+    .line 141
     sget-object p0, Landroidx/compose/material/MaterialTheme;->INSTANCE:Landroidx/compose/material/MaterialTheme;
+
+    const/4 p1, 0x6
 
     invoke-virtual {p0, p2, p1}, Landroidx/compose/material/MaterialTheme;->getTypography(Landroidx/compose/runtime/Composer;I)Landroidx/compose/material/Typography;
 
@@ -457,39 +426,37 @@
 
     invoke-virtual {p0}, Landroidx/compose/material/Typography;->getSubtitle1()Landroidx/compose/ui/text/TextStyle;
 
-    move-result-object v5
+    move-result-object v3
 
-    shr-int/lit8 p0, v1, 0x6
+    const/4 v7, 0x0
 
-    and-int/lit16 v9, p0, 0x1c00
+    const/4 v8, 0x4
 
-    const/4 v10, 0x4
+    const/4 v4, 0x0
 
-    const/4 v6, 0x0
+    move-object v6, p2
 
-    move-object v8, p2
-
-    .line 140
-    invoke-static/range {v3 .. v10}, Landroidx/compose/material/TextFieldImplKt;->Decoration-euL9pac(JLandroidx/compose/ui/text/TextStyle;Ljava/lang/Float;Lkotlin/jvm/functions/Function2;Landroidx/compose/runtime/Composer;II)V
+    .line 139
+    invoke-static/range {v1 .. v8}, Landroidx/compose/material/TextFieldImplKt;->Decoration-euL9pac(JLandroidx/compose/ui/text/TextStyle;Ljava/lang/Float;Lkotlin/jvm/functions/Function2;Landroidx/compose/runtime/Composer;II)V
 
     invoke-static {p2}, Landroidx/compose/runtime/ComposerKt;->sourceInformationMarkerEnd(Landroidx/compose/runtime/Composer;)V
 
-    .line 411
+    .line 404
     invoke-static {p2}, Landroidx/compose/runtime/ComposerKt;->sourceInformationMarkerEnd(Landroidx/compose/runtime/Composer;)V
 
-    .line 412
+    .line 405
     invoke-interface {p2}, Landroidx/compose/runtime/Composer;->endReplaceableGroup()V
 
-    .line 413
+    .line 406
     invoke-interface {p2}, Landroidx/compose/runtime/Composer;->endNode()V
 
-    .line 414
+    .line 407
     invoke-interface {p2}, Landroidx/compose/runtime/Composer;->endReplaceableGroup()V
 
-    .line 415
+    .line 408
     invoke-interface {p2}, Landroidx/compose/runtime/Composer;->endReplaceableGroup()V
 
-    .line 416
+    .line 409
     invoke-static {}, Landroidx/compose/runtime/ComposerKt;->isTraceInProgress()Z
 
     move-result p0
@@ -499,6 +466,6 @@
     invoke-static {}, Landroidx/compose/runtime/ComposerKt;->traceEventEnd()V
 
     :cond_9
-    :goto_4
+    :goto_3
     return-void
 .end method

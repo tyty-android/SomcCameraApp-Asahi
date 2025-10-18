@@ -1,6 +1,6 @@
 .class public final Landroidx/compose/runtime/ParcelableSnapshotMutableState;
 .super Landroidx/compose/runtime/SnapshotMutableStateImpl;
-.source "ParcelableSnapshotMutableState.kt"
+.source "ParcelableSnapshotMutableState.android.kt"
 
 # interfaces
 .implements Landroid/os/Parcelable;
@@ -58,6 +58,8 @@
 
 
 # static fields
+.field public static final $stable:I = 0x0
+
 .field public static final CREATOR:Landroid/os/Parcelable$Creator;
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -103,7 +105,7 @@
 .end method
 
 .method public constructor <init>(Ljava/lang/Object;Landroidx/compose/runtime/SnapshotMutationPolicy;)V
-    .locals 1
+    .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TT;",
@@ -111,10 +113,6 @@
             "TT;>;)V"
         }
     .end annotation
-
-    const-string v0, "policy"
-
-    invoke-static {p2, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 27
     invoke-direct {p0, p1, p2}, Landroidx/compose/runtime/SnapshotMutableStateImpl;-><init>(Ljava/lang/Object;Landroidx/compose/runtime/SnapshotMutationPolicy;)V
@@ -134,10 +132,6 @@
 
 .method public writeToParcel(Landroid/os/Parcel;I)V
     .locals 0
-
-    const-string p2, "parcel"
-
-    invoke-static {p1, p2}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 30
     invoke-virtual {p0}, Landroidx/compose/runtime/ParcelableSnapshotMutableState;->getValue()Ljava/lang/Object;

@@ -45,6 +45,8 @@
 
 
 # static fields
+.field public static final $stable:I
+
 .field public static final INSTANCE:Landroidx/compose/animation/AndroidFlingSpline;
 
 .field private static final NbSamples:I = 0x64
@@ -80,6 +82,11 @@
 
     .line 81
     invoke-static {v1, v0, v2}, Landroidx/compose/animation/SplineBasedDecayKt;->access$computeSplineInfo([F[FI)V
+
+    const/16 v0, 0x8
+
+    .line 82
+    sput v0, Landroidx/compose/animation/AndroidFlingSpline;->$stable:I
 
     return-void
 .end method

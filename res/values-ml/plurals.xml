@@ -4,20 +4,4 @@
         <item quantity="other">%d പുതിയ അറിയിപ്പുകൾ</item>
         <item quantity="one">%d പുതിയ അറിയിപ്പ്</item>
     </plurals>
-    <plurals name="mv_minute_remaining_txt">
-        <item quantity="other">%1$d മിനി. ശേഷിക്കുന്നു</item>
-        <item quantity="one">1 മിനി. ശേഷിക്കുന്നു</item>
-    </plurals>
-    <plurals name="mv_minute_txt">
-        <item quantity="other">%1$d മിനിറ്റ്</item>
-        <item quantity="one">1 മിനിറ്റ്</item>
-    </plurals>
-    <plurals name="mv_second_remaining_txt">
-        <item quantity="other">%1$d സെക്ക. ശേഷി.</item>
-        <item quantity="one">1 സെക്ക. ശേഷി.</item>
-    </plurals>
-    <plurals name="mv_second_txt">
-        <item quantity="other">%1$d സെക്കന്‍ഡ്</item>
-        <item quantity="one">1 സെക്കന്‍ഡ്</item>
-    </plurals>
 </resources>

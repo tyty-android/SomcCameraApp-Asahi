@@ -90,7 +90,7 @@
 .method public final invoke()Landroidx/compose/material/DismissState;
     .locals 2
 
-    .line 154
+    .line 155
     new-instance v0, Landroidx/compose/material/DismissState;
 
     iget-object v1, p0, Landroidx/compose/material/SwipeToDismissKt$rememberDismissState$2$1;->$initialValue:Landroidx/compose/material/DismissValue;
@@ -105,7 +105,7 @@
 .method public bridge synthetic invoke()Ljava/lang/Object;
     .locals 0
 
-    .line 153
+    .line 154
     invoke-virtual {p0}, Landroidx/compose/material/SwipeToDismissKt$rememberDismissState$2$1;->invoke()Landroidx/compose/material/DismissState;
 
     move-result-object p0

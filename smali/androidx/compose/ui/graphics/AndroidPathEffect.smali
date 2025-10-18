@@ -37,11 +37,7 @@
 
 # direct methods
 .method public constructor <init>(Landroid/graphics/PathEffect;)V
-    .locals 1
-
-    const-string v0, "nativePathEffect"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+    .locals 0
 
     .line 24
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V

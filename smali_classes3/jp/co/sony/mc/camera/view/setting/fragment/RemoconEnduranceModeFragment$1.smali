@@ -22,7 +22,7 @@
 .method constructor <init>(Ljp/co/sony/mc/camera/view/setting/fragment/RemoconEnduranceModeFragment;)V
     .locals 0
 
-    .line 113
+    .line 115
     iput-object p1, p0, Ljp/co/sony/mc/camera/view/setting/fragment/RemoconEnduranceModeFragment$1;->this$0:Ljp/co/sony/mc/camera/view/setting/fragment/RemoconEnduranceModeFragment;
 
     invoke-direct {p0}, Landroid/content/BroadcastReceiver;-><init>()V
@@ -35,12 +35,12 @@
 .method public onReceive(Landroid/content/Context;Landroid/content/Intent;)V
     .locals 2
 
-    .line 117
+    .line 119
     invoke-virtual {p2}, Landroid/content/Intent;->getAction()Ljava/lang/String;
 
     move-result-object p1
 
-    .line 118
+    .line 120
     const-string v0, "android.bluetooth.adapter.extra.STATE"
 
     const/4 v1, 0x0
@@ -49,7 +49,7 @@
 
     move-result p2
 
-    .line 119
+    .line 121
     const-string v0, "android.bluetooth.adapter.action.STATE_CHANGED"
 
     invoke-virtual {v0, p1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
@@ -62,7 +62,7 @@
 
     if-ne p1, p2, :cond_0
 
-    .line 121
+    .line 123
     iget-object p1, p0, Ljp/co/sony/mc/camera/view/setting/fragment/RemoconEnduranceModeFragment$1;->this$0:Ljp/co/sony/mc/camera/view/setting/fragment/RemoconEnduranceModeFragment;
 
     invoke-static {p1}, Ljp/co/sony/mc/camera/view/setting/fragment/RemoconEnduranceModeFragment;->-$$Nest$fgetmSettings(Ljp/co/sony/mc/camera/view/setting/fragment/RemoconEnduranceModeFragment;)Ljp/co/sony/mc/camera/setting/CameraProSetting;
@@ -75,7 +75,7 @@
 
     invoke-virtual {p1, p2, v0}, Ljp/co/sony/mc/camera/setting/CameraProSetting;->set(Ljp/co/sony/mc/camera/setting/SettingKey$Key;Ljava/lang/Object;)V
 
-    .line 122
+    .line 124
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/setting/fragment/RemoconEnduranceModeFragment$1;->this$0:Ljp/co/sony/mc/camera/view/setting/fragment/RemoconEnduranceModeFragment;
 
     invoke-static {p0}, Ljp/co/sony/mc/camera/view/setting/fragment/RemoconEnduranceModeFragment;->-$$Nest$mfinishEnduranceModeFragment(Ljp/co/sony/mc/camera/view/setting/fragment/RemoconEnduranceModeFragment;)V

@@ -92,25 +92,21 @@
 .end method
 
 .method public static newProxy(Lorg/apache/http/HttpResponse;)Lorg/apache/http/client/methods/CloseableHttpResponse;
-    .locals 3
+    .locals 2
 
     .line 94
     :try_start_0
     sget-object v0, Lorg/apache/http/impl/client/CloseableHttpResponseProxy;->CONSTRUCTOR:Ljava/lang/reflect/Constructor;
 
-    const/4 v1, 0x1
+    new-instance v1, Lorg/apache/http/impl/client/CloseableHttpResponseProxy;
 
-    new-array v1, v1, [Ljava/lang/Object;
+    invoke-direct {v1, p0}, Lorg/apache/http/impl/client/CloseableHttpResponseProxy;-><init>(Lorg/apache/http/HttpResponse;)V
 
-    new-instance v2, Lorg/apache/http/impl/client/CloseableHttpResponseProxy;
+    filled-new-array {v1}, [Ljava/lang/Object;
 
-    invoke-direct {v2, p0}, Lorg/apache/http/impl/client/CloseableHttpResponseProxy;-><init>(Lorg/apache/http/HttpResponse;)V
+    move-result-object p0
 
-    const/4 p0, 0x0
-
-    aput-object v2, v1, p0
-
-    invoke-virtual {v0, v1}, Ljava/lang/reflect/Constructor;->newInstance([Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v0, p0}, Ljava/lang/reflect/Constructor;->newInstance([Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p0
 

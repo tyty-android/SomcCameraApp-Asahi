@@ -84,10 +84,6 @@
 .method public onViewAttachedToWindow(Landroid/view/View;)V
     .locals 2
 
-    const-string/jumbo v0, "v"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
     .line 163
     iget-object p1, p0, Landroidx/compose/ui/platform/ViewCompositionStrategy$DisposeOnViewTreeLifecycleDestroyed$installFor$listener$1;->$view:Landroidx/compose/ui/platform/AbstractComposeView;
 
@@ -159,10 +155,6 @@
 
 .method public onViewDetachedFromWindow(Landroid/view/View;)V
     .locals 0
-
-    const-string/jumbo p0, "v"
-
-    invoke-static {p1, p0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
     return-void
 .end method

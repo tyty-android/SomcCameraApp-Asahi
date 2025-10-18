@@ -27,9 +27,11 @@
 
 
 # static fields
+.field public static final $stable:I = 0x0
+
 .field public static final INSTANCE:Landroidx/compose/runtime/ComposeVersion;
 
-.field public static final version:I = 0x28a2
+.field public static final version:I = 0x2ef2
 
 
 # direct methods

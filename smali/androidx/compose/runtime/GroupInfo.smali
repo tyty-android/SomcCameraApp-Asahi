@@ -48,16 +48,16 @@
 .method public constructor <init>(III)V
     .locals 0
 
-    .line 42
+    .line 40
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 46
+    .line 44
     iput p1, p0, Landroidx/compose/runtime/GroupInfo;->slotIndex:I
 
-    .line 52
+    .line 50
     iput p2, p0, Landroidx/compose/runtime/GroupInfo;->nodeIndex:I
 
-    .line 57
+    .line 55
     iput p3, p0, Landroidx/compose/runtime/GroupInfo;->nodeCount:I
 
     return-void
@@ -68,7 +68,7 @@
 .method public final getNodeCount()I
     .locals 0
 
-    .line 57
+    .line 55
     iget p0, p0, Landroidx/compose/runtime/GroupInfo;->nodeCount:I
 
     return p0
@@ -77,7 +77,7 @@
 .method public final getNodeIndex()I
     .locals 0
 
-    .line 52
+    .line 50
     iget p0, p0, Landroidx/compose/runtime/GroupInfo;->nodeIndex:I
 
     return p0
@@ -86,7 +86,7 @@
 .method public final getSlotIndex()I
     .locals 0
 
-    .line 46
+    .line 44
     iget p0, p0, Landroidx/compose/runtime/GroupInfo;->slotIndex:I
 
     return p0
@@ -95,7 +95,7 @@
 .method public final setNodeCount(I)V
     .locals 0
 
-    .line 57
+    .line 55
     iput p1, p0, Landroidx/compose/runtime/GroupInfo;->nodeCount:I
 
     return-void
@@ -104,7 +104,7 @@
 .method public final setNodeIndex(I)V
     .locals 0
 
-    .line 52
+    .line 50
     iput p1, p0, Landroidx/compose/runtime/GroupInfo;->nodeIndex:I
 
     return-void
@@ -113,7 +113,7 @@
 .method public final setSlotIndex(I)V
     .locals 0
 
-    .line 46
+    .line 44
     iput p1, p0, Landroidx/compose/runtime/GroupInfo;->slotIndex:I
 
     return-void

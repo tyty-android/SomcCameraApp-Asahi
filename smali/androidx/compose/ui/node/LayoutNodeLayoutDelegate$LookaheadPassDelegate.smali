@@ -24,12 +24,12 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/SourceDebugExtension;
-    value = "SMAP\nLayoutNodeLayoutDelegate.kt\nKotlin\n*S Kotlin\n*F\n+ 1 LayoutNodeLayoutDelegate.kt\nandroidx/compose/ui/node/LayoutNodeLayoutDelegate$LookaheadPassDelegate\n+ 2 MutableVector.kt\nandroidx/compose/runtime/collection/MutableVectorKt\n+ 3 LayoutNodeLayoutDelegate.kt\nandroidx/compose/ui/node/LayoutNodeLayoutDelegateKt\n+ 4 LayoutNode.kt\nandroidx/compose/ui/node/LayoutNode\n+ 5 MutableVector.kt\nandroidx/compose/runtime/collection/MutableVector\n*L\n1#1,1652:1\n1002#1:1691\n1003#1,2:1700\n1002#1:1706\n1003#1,2:1715\n1002#1:1745\n1003#1,2:1754\n1161#2,2:1653\n1570#3:1655\n1571#3,6:1664\n1577#3,5:1674\n199#4:1656\n197#4:1679\n197#4:1692\n197#4:1707\n197#4:1721\n197#4:1733\n197#4:1746\n197#4:1760\n197#4:1772\n476#5,7:1657\n483#5,4:1670\n460#5,11:1680\n460#5,7:1693\n467#5,4:1702\n460#5,7:1708\n467#5,4:1717\n460#5,11:1722\n460#5,11:1734\n460#5,7:1747\n467#5,4:1756\n460#5,11:1761\n460#5,11:1773\n*S KotlinDebug\n*F\n+ 1 LayoutNodeLayoutDelegate.kt\nandroidx/compose/ui/node/LayoutNodeLayoutDelegate$LookaheadPassDelegate\n*L\n1054#1:1691\n1054#1:1700,2\n1069#1:1706\n1069#1:1715,2\n1392#1:1745\n1392#1:1754,2\n982#1:1653,2\n991#1:1655\n991#1:1664,6\n991#1:1674,5\n991#1:1656\n1002#1:1679\n1054#1:1692\n1069#1:1707\n1096#1:1721\n1122#1:1733\n1392#1:1746\n1414#1:1760\n1447#1:1772\n991#1:1657,7\n991#1:1670,4\n1002#1:1680,11\n1054#1:1693,7\n1054#1:1702,4\n1069#1:1708,7\n1069#1:1717,4\n1096#1:1722,11\n1122#1:1734,11\n1392#1:1747,7\n1392#1:1756,4\n1414#1:1761,11\n1447#1:1773,11\n*E\n"
+    value = "SMAP\nLayoutNodeLayoutDelegate.kt\nKotlin\n*S Kotlin\n*F\n+ 1 LayoutNodeLayoutDelegate.kt\nandroidx/compose/ui/node/LayoutNodeLayoutDelegate$LookaheadPassDelegate\n+ 2 MutableVector.kt\nandroidx/compose/runtime/collection/MutableVectorKt\n+ 3 LayoutNodeLayoutDelegate.kt\nandroidx/compose/ui/node/LayoutNodeLayoutDelegateKt\n+ 4 LayoutNode.kt\nandroidx/compose/ui/node/LayoutNode\n+ 5 MutableVector.kt\nandroidx/compose/runtime/collection/MutableVector\n+ 6 fake.kt\nkotlin/jvm/internal/FakeKt\n*L\n1#1,1781:1\n1078#1:1820\n1079#1,2:1829\n1078#1:1835\n1079#1,2:1844\n1078#1:1874\n1079#1,2:1883\n1187#2,2:1782\n1699#3:1784\n1700#3,6:1793\n1706#3,5:1803\n199#4:1785\n197#4:1808\n197#4:1821\n197#4:1836\n197#4:1850\n197#4:1862\n197#4:1875\n197#4:1889\n197#4:1901\n476#5,7:1786\n483#5,4:1799\n460#5,11:1809\n460#5,7:1822\n467#5,4:1831\n460#5,7:1837\n467#5,4:1846\n460#5,11:1851\n460#5,11:1863\n460#5,7:1876\n467#5,4:1885\n460#5,11:1890\n460#5,11:1902\n1#6:1913\n*S KotlinDebug\n*F\n+ 1 LayoutNodeLayoutDelegate.kt\nandroidx/compose/ui/node/LayoutNodeLayoutDelegate$LookaheadPassDelegate\n*L\n1141#1:1820\n1141#1:1829,2\n1156#1:1835\n1156#1:1844,2\n1512#1:1874\n1512#1:1883,2\n1058#1:1782,2\n1067#1:1784\n1067#1:1793,6\n1067#1:1803,5\n1067#1:1785\n1078#1:1808\n1141#1:1821\n1156#1:1836\n1183#1:1850\n1209#1:1862\n1512#1:1875\n1534#1:1889\n1567#1:1901\n1067#1:1786,7\n1067#1:1799,4\n1078#1:1809,11\n1141#1:1822,7\n1141#1:1831,4\n1156#1:1837,7\n1156#1:1846,4\n1183#1:1851,11\n1209#1:1863,11\n1512#1:1876,7\n1512#1:1885,4\n1534#1:1890,11\n1567#1:1902,11\n*E\n"
 .end annotation
 
 .annotation runtime Lkotlin/Metadata;
     d1 = {
-        "\u0000\u009e\u0001\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0003\n\u0002\u0010 \n\u0002\u0008\u0003\n\u0002\u0010\u000b\n\u0002\u0008\u0008\n\u0002\u0018\u0002\n\u0002\u0008\u0005\n\u0002\u0018\u0002\n\u0002\u0008\u0003\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0010\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0003\n\u0002\u0018\u0002\n\u0002\u0008\u0004\n\u0002\u0010\u0007\n\u0002\u0008\u0007\n\u0002\u0018\u0002\n\u0002\u0008\u0003\n\u0002\u0018\u0002\n\u0002\u0008\u0005\n\u0002\u0010\u0008\n\u0002\u0008\u0008\n\u0002\u0010\u0000\n\u0002\u0008\u000c\n\u0002\u0010$\n\u0002\u0018\u0002\n\u0002\u0008+\n\u0002\u0018\u0002\n\u0002\u0008\u0002\u0008\u0086\u0004\u0018\u00002\u00020\u00012\u00020\u00022\u00020\u0003B\u0005\u00a2\u0006\u0002\u0010\u0004J\u0014\u0010W\u001a\u000e\u0012\u0004\u0012\u00020Y\u0012\u0004\u0012\u00020B0XH\u0016J\u0008\u0010Z\u001a\u00020&H\u0002J\u0008\u0010[\u001a\u00020&H\u0002J\u001c\u0010\\\u001a\u00020&2\u0012\u0010]\u001a\u000e\u0012\u0004\u0012\u00020\u0003\u0012\u0004\u0012\u00020&0$H\u0016J!\u0010^\u001a\u00020&2\u0016\u0010]\u001a\u0012\u0012\u0008\u0012\u00060\u0000R\u00020\u0007\u0012\u0004\u0012\u00020&0$H\u0082\u0008J\u0011\u0010_\u001a\u00020B2\u0006\u0010`\u001a\u00020YH\u0096\u0002J\u000e\u0010a\u001a\u00020&2\u0006\u0010b\u001a\u00020\u0011J\u0006\u0010c\u001a\u00020&J\u0008\u0010d\u001a\u00020&H\u0016J\u0008\u0010e\u001a\u00020&H\u0002J\u0008\u0010f\u001a\u00020&H\u0002J\u0010\u0010g\u001a\u00020B2\u0006\u0010h\u001a\u00020BH\u0016J\u0010\u0010i\u001a\u00020B2\u0006\u0010j\u001a\u00020BH\u0016J\u001d\u0010k\u001a\u00020\u00012\u0006\u0010l\u001a\u00020 H\u0016\u00f8\u0001\u0001\u00f8\u0001\u0000\u00a2\u0006\u0004\u0008m\u0010nJ\u0010\u0010o\u001a\u00020B2\u0006\u0010h\u001a\u00020BH\u0016J\u0010\u0010p\u001a\u00020B2\u0006\u0010j\u001a\u00020BH\u0016J\u0006\u0010q\u001a\u00020&J\u0008\u0010r\u001a\u00020&H\u0002J\u0008\u0010s\u001a\u00020&H\u0002J\u0006\u0010t\u001a\u00020&J\r\u0010u\u001a\u00020&H\u0000\u00a2\u0006\u0002\u0008vJ@\u0010w\u001a\u00020&2\u0006\u0010x\u001a\u00020+2\u0006\u0010y\u001a\u0002002\u0019\u0010z\u001a\u0015\u0012\u0004\u0012\u00020%\u0012\u0004\u0012\u00020&\u0018\u00010$\u00a2\u0006\u0002\u0008\'H\u0014\u00f8\u0001\u0001\u00f8\u0001\u0000\u00a2\u0006\u0004\u0008{\u0010|J\u001b\u0010}\u001a\u00020\u00112\u0006\u0010l\u001a\u00020 \u00f8\u0001\u0001\u00f8\u0001\u0000\u00a2\u0006\u0004\u0008~\u0010\u007fJ\u0007\u0010\u0080\u0001\u001a\u00020&J\t\u0010\u0081\u0001\u001a\u00020&H\u0016J\t\u0010\u0082\u0001\u001a\u00020&H\u0016J\u0013\u0010\u0083\u0001\u001a\u00020&2\u0008\u0010\u0084\u0001\u001a\u00030\u0085\u0001H\u0002J\u0007\u0010\u0086\u0001\u001a\u00020\u0011R\u0018\u0010\u0005\u001a\u000c\u0012\u0008\u0012\u00060\u0000R\u00020\u00070\u0006X\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u0014\u0010\u0008\u001a\u00020\tX\u0096\u0004\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\n\u0010\u000bR\u001e\u0010\u000c\u001a\u000c\u0012\u0008\u0012\u00060\u0000R\u00020\u00070\r8@X\u0080\u0004\u00a2\u0006\u0006\u001a\u0004\u0008\u000e\u0010\u000fR\u001a\u0010\u0010\u001a\u00020\u0011X\u0080\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\u0008\u0012\u0010\u0013\"\u0004\u0008\u0014\u0010\u0015R\u001a\u0010\u0016\u001a\u00020\u0011X\u0080\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\u0008\u0017\u0010\u0013\"\u0004\u0008\u0018\u0010\u0015R\u0014\u0010\u0019\u001a\u00020\u001a8VX\u0096\u0004\u00a2\u0006\u0006\u001a\u0004\u0008\u001b\u0010\u001cR\u001a\u0010\u001d\u001a\u00020\u0011X\u0096\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\u0008\u001d\u0010\u0013\"\u0004\u0008\u001e\u0010\u0015R\u001c\u0010\u001f\u001a\u0004\u0018\u00010 8F\u00f8\u0001\u0000\u00f8\u0001\u0001\u00f8\u0001\u0002\u00a2\u0006\u0006\u001a\u0004\u0008!\u0010\"RD\u0010(\u001a\u0015\u0012\u0004\u0012\u00020%\u0012\u0004\u0012\u00020&\u0018\u00010$\u00a2\u0006\u0002\u0008\'2\u0019\u0010#\u001a\u0015\u0012\u0004\u0012\u00020%\u0012\u0004\u0012\u00020&\u0018\u00010$\u00a2\u0006\u0002\u0008\'@BX\u0080\u000e\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008)\u0010*R)\u0010,\u001a\u00020+2\u0006\u0010#\u001a\u00020+@BX\u0080\u000e\u00f8\u0001\u0000\u00f8\u0001\u0001\u00f8\u0001\u0002\u00a2\u0006\n\n\u0002\u0010/\u001a\u0004\u0008-\u0010.R\u001e\u00101\u001a\u0002002\u0006\u0010#\u001a\u000200@BX\u0080\u000e\u00a2\u0006\u0008\n\u0000\u001a\u0004\u00082\u00103R\u001e\u00104\u001a\u00020\u00112\u0006\u0010#\u001a\u00020\u0011@BX\u0086\u000e\u00a2\u0006\u0008\n\u0000\u001a\u0004\u00085\u0010\u0013R\u0019\u00106\u001a\u0004\u0018\u00010 X\u0082\u000e\u00f8\u0001\u0000\u00f8\u0001\u0001\u00f8\u0001\u0002\u00a2\u0006\u0002\n\u0000R\u0018\u00107\u001a\u000608R\u00020\u00078@X\u0080\u0004\u00a2\u0006\u0006\u001a\u0004\u00089\u0010:R\u001a\u0010;\u001a\u00020<X\u0080\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\u0008=\u0010>\"\u0004\u0008?\u0010@R\u0014\u0010A\u001a\u00020B8VX\u0096\u0004\u00a2\u0006\u0006\u001a\u0004\u0008C\u0010DR\u000e\u0010E\u001a\u00020\u0011X\u0082\u000e\u00a2\u0006\u0002\n\u0000R\u0014\u0010F\u001a\u00020B8VX\u0096\u0004\u00a2\u0006\u0006\u001a\u0004\u0008G\u0010DR\u0016\u0010H\u001a\u0004\u0018\u00010\u00038VX\u0096\u0004\u00a2\u0006\u0006\u001a\u0004\u0008I\u0010JR\"\u0010L\u001a\u0004\u0018\u00010K2\u0008\u0010#\u001a\u0004\u0018\u00010K@RX\u0096\u000e\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008M\u0010NR\u000e\u0010O\u001a\u00020\u0011X\u0082\u000e\u00a2\u0006\u0002\n\u0000R\u001a\u0010P\u001a\u00020BX\u0080\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\u0008Q\u0010D\"\u0004\u0008R\u0010SR\u000e\u0010T\u001a\u00020\u0011X\u0082\u000e\u00a2\u0006\u0002\n\u0000R\u0018\u0010U\u001a\u00020B2\u0006\u0010#\u001a\u00020B@BX\u0082\u000e\u00a2\u0006\u0002\n\u0000R\u000e\u0010V\u001a\u00020\u0011X\u0082\u000e\u00a2\u0006\u0002\n\u0000\u0082\u0002\u000f\n\u0002\u0008\u0019\n\u0005\u0008\u00a1\u001e0\u0001\n\u0002\u0008!\u00a8\u0006\u0087\u0001"
+        "\u0000\u009e\u0001\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0003\n\u0002\u0010 \n\u0002\u0008\u0003\n\u0002\u0010\u000b\n\u0002\u0008\u0008\n\u0002\u0018\u0002\n\u0002\u0008\u0005\n\u0002\u0018\u0002\n\u0002\u0008\u0003\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0010\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0003\n\u0002\u0018\u0002\n\u0002\u0008\u0004\n\u0002\u0010\u0007\n\u0002\u0008\u0007\n\u0002\u0018\u0002\n\u0002\u0008\u0003\n\u0002\u0018\u0002\n\u0002\u0008\u0005\n\u0002\u0010\u0008\n\u0002\u0008\t\n\u0002\u0010\u0000\n\u0002\u0008\u000e\n\u0002\u0010$\n\u0002\u0018\u0002\n\u0002\u0008+\n\u0002\u0018\u0002\n\u0002\u0008\u0002\u0008\u0086\u0004\u0018\u00002\u00020\u00012\u00020\u00022\u00020\u0003B\u0005\u00a2\u0006\u0002\u0010\u0004J\u0014\u0010Z\u001a\u000e\u0012\u0004\u0012\u00020\\\u0012\u0004\u0012\u00020B0[H\u0016J\u0008\u0010]\u001a\u00020&H\u0002J\u0008\u0010^\u001a\u00020&H\u0002J\u001c\u0010_\u001a\u00020&2\u0012\u0010`\u001a\u000e\u0012\u0004\u0012\u00020\u0003\u0012\u0004\u0012\u00020&0$H\u0016J!\u0010a\u001a\u00020&2\u0016\u0010`\u001a\u0012\u0012\u0008\u0012\u00060\u0000R\u00020\u0007\u0012\u0004\u0012\u00020&0$H\u0082\u0008J\u0011\u0010b\u001a\u00020B2\u0006\u0010c\u001a\u00020\\H\u0096\u0002J\u000e\u0010d\u001a\u00020&2\u0006\u0010e\u001a\u00020\u0011J\u0006\u0010f\u001a\u00020&J\u0008\u0010g\u001a\u00020&H\u0016J\u0008\u0010h\u001a\u00020&H\u0002J\u0008\u0010i\u001a\u00020&H\u0002J\u0010\u0010j\u001a\u00020B2\u0006\u0010k\u001a\u00020BH\u0016J\u0010\u0010l\u001a\u00020B2\u0006\u0010m\u001a\u00020BH\u0016J\u001a\u0010n\u001a\u00020\u00012\u0006\u0010o\u001a\u00020 H\u0016\u00f8\u0001\u0000\u00a2\u0006\u0004\u0008p\u0010qJ\u0010\u0010r\u001a\u00020B2\u0006\u0010k\u001a\u00020BH\u0016J\u0010\u0010s\u001a\u00020B2\u0006\u0010m\u001a\u00020BH\u0016J\u0006\u0010t\u001a\u00020&J\u0008\u0010u\u001a\u00020&H\u0002J\u0008\u0010v\u001a\u00020&H\u0002J\u0006\u0010w\u001a\u00020&J\r\u0010x\u001a\u00020&H\u0000\u00a2\u0006\u0002\u0008yJ=\u0010z\u001a\u00020&2\u0006\u0010{\u001a\u00020+2\u0006\u0010|\u001a\u0002002\u0019\u0010}\u001a\u0015\u0012\u0004\u0012\u00020%\u0012\u0004\u0012\u00020&\u0018\u00010$\u00a2\u0006\u0002\u0008\'H\u0014\u00f8\u0001\u0000\u00a2\u0006\u0004\u0008~\u0010\u007fJ\u001b\u0010\u0080\u0001\u001a\u00020\u00112\u0006\u0010o\u001a\u00020 \u00f8\u0001\u0000\u00a2\u0006\u0006\u0008\u0081\u0001\u0010\u0082\u0001J\u0007\u0010\u0083\u0001\u001a\u00020&J\t\u0010\u0084\u0001\u001a\u00020&H\u0016J\t\u0010\u0085\u0001\u001a\u00020&H\u0016J\u0013\u0010\u0086\u0001\u001a\u00020&2\u0008\u0010\u0087\u0001\u001a\u00030\u0088\u0001H\u0002J\u0007\u0010\u0089\u0001\u001a\u00020\u0011R\u0018\u0010\u0005\u001a\u000c\u0012\u0008\u0012\u00060\u0000R\u00020\u00070\u0006X\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u0014\u0010\u0008\u001a\u00020\tX\u0096\u0004\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\n\u0010\u000bR\u001e\u0010\u000c\u001a\u000c\u0012\u0008\u0012\u00060\u0000R\u00020\u00070\r8@X\u0080\u0004\u00a2\u0006\u0006\u001a\u0004\u0008\u000e\u0010\u000fR\u001a\u0010\u0010\u001a\u00020\u0011X\u0080\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\u0008\u0012\u0010\u0013\"\u0004\u0008\u0014\u0010\u0015R\u001a\u0010\u0016\u001a\u00020\u0011X\u0080\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\u0008\u0017\u0010\u0013\"\u0004\u0008\u0018\u0010\u0015R\u0014\u0010\u0019\u001a\u00020\u001a8VX\u0096\u0004\u00a2\u0006\u0006\u001a\u0004\u0008\u001b\u0010\u001cR\u001a\u0010\u001d\u001a\u00020\u0011X\u0096\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\u0008\u001d\u0010\u0013\"\u0004\u0008\u001e\u0010\u0015R\u0019\u0010\u001f\u001a\u0004\u0018\u00010 8F\u00f8\u0001\u0000\u00f8\u0001\u0001\u00a2\u0006\u0006\u001a\u0004\u0008!\u0010\"RD\u0010(\u001a\u0015\u0012\u0004\u0012\u00020%\u0012\u0004\u0012\u00020&\u0018\u00010$\u00a2\u0006\u0002\u0008\'2\u0019\u0010#\u001a\u0015\u0012\u0004\u0012\u00020%\u0012\u0004\u0012\u00020&\u0018\u00010$\u00a2\u0006\u0002\u0008\'@BX\u0080\u000e\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008)\u0010*R&\u0010,\u001a\u00020+2\u0006\u0010#\u001a\u00020+@BX\u0080\u000e\u00f8\u0001\u0000\u00f8\u0001\u0001\u00a2\u0006\n\n\u0002\u0010/\u001a\u0004\u0008-\u0010.R\u001e\u00101\u001a\u0002002\u0006\u0010#\u001a\u000200@BX\u0080\u000e\u00a2\u0006\u0008\n\u0000\u001a\u0004\u00082\u00103R\u001e\u00104\u001a\u00020\u00112\u0006\u0010#\u001a\u00020\u0011@BX\u0086\u000e\u00a2\u0006\u0008\n\u0000\u001a\u0004\u00085\u0010\u0013R\u0016\u00106\u001a\u0004\u0018\u00010 X\u0082\u000e\u00f8\u0001\u0000\u00f8\u0001\u0001\u00a2\u0006\u0002\n\u0000R\u0018\u00107\u001a\u000608R\u00020\u00078@X\u0080\u0004\u00a2\u0006\u0006\u001a\u0004\u00089\u0010:R\u001a\u0010;\u001a\u00020<X\u0080\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\u0008=\u0010>\"\u0004\u0008?\u0010@R\u0014\u0010A\u001a\u00020B8VX\u0096\u0004\u00a2\u0006\u0006\u001a\u0004\u0008C\u0010DR\u000e\u0010E\u001a\u00020\u0011X\u0082\u000e\u00a2\u0006\u0002\n\u0000R\u0014\u0010F\u001a\u00020B8VX\u0096\u0004\u00a2\u0006\u0006\u001a\u0004\u0008G\u0010DR\u000e\u0010H\u001a\u00020\u0011X\u0082\u000e\u00a2\u0006\u0002\n\u0000R\u0016\u0010I\u001a\u0004\u0018\u00010\u00038VX\u0096\u0004\u00a2\u0006\u0006\u001a\u0004\u0008J\u0010KR\"\u0010M\u001a\u0004\u0018\u00010L2\u0008\u0010#\u001a\u0004\u0018\u00010L@RX\u0096\u000e\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008N\u0010OR\u000e\u0010P\u001a\u00020\u0011X\u0082\u000e\u00a2\u0006\u0002\n\u0000R\u001a\u0010Q\u001a\u00020BX\u0080\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\u0008R\u0010D\"\u0004\u0008S\u0010TR\u001a\u0010U\u001a\u00020\u0011X\u0080\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\u0008V\u0010\u0013\"\u0004\u0008W\u0010\u0015R\u0018\u0010X\u001a\u00020B2\u0006\u0010#\u001a\u00020B@BX\u0082\u000e\u00a2\u0006\u0002\n\u0000R\u000e\u0010Y\u001a\u00020\u0011X\u0082\u000e\u00a2\u0006\u0002\n\u0000\u0082\u0002\u000b\n\u0005\u0008\u00a1\u001e0\u0001\n\u0002\u0008!\u00a8\u0006\u008a\u0001"
     }
     d2 = {
         "Landroidx/compose/ui/node/LayoutNodeLayoutDelegate$LookaheadPassDelegate;",
@@ -104,6 +104,7 @@
         "measuredOnce",
         "measuredWidth",
         "getMeasuredWidth",
+        "onNodePlacedCalled",
         "parentAlignmentLinesOwner",
         "getParentAlignmentLinesOwner",
         "()Landroidx/compose/ui/node/AlignmentLinesOwner;",
@@ -117,6 +118,8 @@
         "setPlaceOrder$ui_release",
         "(I)V",
         "placedOnce",
+        "getPlacedOnce$ui_release",
+        "setPlacedOnce$ui_release",
         "previousPlaceOrder",
         "relayoutWithoutParentInProgress",
         "calculateAlignmentLines",
@@ -222,6 +225,8 @@
 
 .field private measuredOnce:Z
 
+.field private onNodePlacedCalled:Z
+
 .field private parentData:Ljava/lang/Object;
 
 .field private parentDataDirty:Z
@@ -246,25 +251,25 @@
         }
     .end annotation
 
-    .line 934
+    .line 1010
     iput-object p1, p0, Landroidx/compose/ui/node/LayoutNodeLayoutDelegate$LookaheadPassDelegate;->this$0:Landroidx/compose/ui/node/LayoutNodeLayoutDelegate;
 
     invoke-direct {p0}, Landroidx/compose/ui/layout/Placeable;-><init>()V
 
     const p1, 0x7fffffff
 
-    .line 948
+    .line 1024
     iput p1, p0, Landroidx/compose/ui/node/LayoutNodeLayoutDelegate$LookaheadPassDelegate;->previousPlaceOrder:I
 
-    .line 958
+    .line 1034
     iput p1, p0, Landroidx/compose/ui/node/LayoutNodeLayoutDelegate$LookaheadPassDelegate;->placeOrder:I
 
-    .line 960
+    .line 1036
     sget-object p1, Landroidx/compose/ui/node/LayoutNode$UsageByParent;->NotUsed:Landroidx/compose/ui/node/LayoutNode$UsageByParent;
 
     iput-object p1, p0, Landroidx/compose/ui/node/LayoutNodeLayoutDelegate$LookaheadPassDelegate;->measuredByParent:Landroidx/compose/ui/node/LayoutNode$UsageByParent;
 
-    .line 969
+    .line 1045
     sget-object p1, Landroidx/compose/ui/unit/IntOffset;->Companion:Landroidx/compose/ui/unit/IntOffset$Companion;
 
     invoke-virtual {p1}, Landroidx/compose/ui/unit/IntOffset$Companion;->getZero-nOcc-ac()J
@@ -273,7 +278,7 @@
 
     iput-wide v0, p0, Landroidx/compose/ui/node/LayoutNodeLayoutDelegate$LookaheadPassDelegate;->lastPosition:J
 
-    .line 980
+    .line 1056
     new-instance p1, Landroidx/compose/ui/node/LookaheadAlignmentLines;
 
     move-object v0, p0
@@ -286,7 +291,7 @@
 
     iput-object p1, p0, Landroidx/compose/ui/node/LayoutNodeLayoutDelegate$LookaheadPassDelegate;->alignmentLines:Landroidx/compose/ui/node/AlignmentLines;
 
-    .line 1654
+    .line 1783
     new-instance p1, Landroidx/compose/runtime/collection/MutableVector;
 
     const/16 v0, 0x10
@@ -297,18 +302,18 @@
 
     invoke-direct {p1, v0, v1}, Landroidx/compose/runtime/collection/MutableVector;-><init>([Ljava/lang/Object;I)V
 
-    .line 982
+    .line 1058
     iput-object p1, p0, Landroidx/compose/ui/node/LayoutNodeLayoutDelegate$LookaheadPassDelegate;->_childDelegates:Landroidx/compose/runtime/collection/MutableVector;
 
     const/4 p1, 0x1
 
-    .line 984
+    .line 1060
     iput-boolean p1, p0, Landroidx/compose/ui/node/LayoutNodeLayoutDelegate$LookaheadPassDelegate;->childDelegatesDirty:Z
 
-    .line 1176
+    .line 1268
     iput-boolean p1, p0, Landroidx/compose/ui/node/LayoutNodeLayoutDelegate$LookaheadPassDelegate;->parentDataDirty:Z
 
-    .line 1177
+    .line 1269
     invoke-virtual {p0}, Landroidx/compose/ui/node/LayoutNodeLayoutDelegate$LookaheadPassDelegate;->getMeasurePassDelegate$ui_release()Landroidx/compose/ui/node/LayoutNodeLayoutDelegate$MeasurePassDelegate;
 
     move-result-object p1
@@ -325,7 +330,7 @@
 .method public static final synthetic access$checkChildrenPlaceOrderForUpdates(Landroidx/compose/ui/node/LayoutNodeLayoutDelegate$LookaheadPassDelegate;)V
     .locals 0
 
-    .line 934
+    .line 1010
     invoke-direct {p0}, Landroidx/compose/ui/node/LayoutNodeLayoutDelegate$LookaheadPassDelegate;->checkChildrenPlaceOrderForUpdates()V
 
     return-void
@@ -334,7 +339,7 @@
 .method public static final synthetic access$clearPlaceOrder(Landroidx/compose/ui/node/LayoutNodeLayoutDelegate$LookaheadPassDelegate;)V
     .locals 0
 
-    .line 934
+    .line 1010
     invoke-direct {p0}, Landroidx/compose/ui/node/LayoutNodeLayoutDelegate$LookaheadPassDelegate;->clearPlaceOrder()V
 
     return-void
@@ -343,39 +348,39 @@
 .method private final checkChildrenPlaceOrderForUpdates()V
     .locals 5
 
-    .line 1691
+    .line 1820
     iget-object p0, p0, Landroidx/compose/ui/node/LayoutNodeLayoutDelegate$LookaheadPassDelegate;->this$0:Landroidx/compose/ui/node/LayoutNodeLayoutDelegate;
 
     invoke-static {p0}, Landroidx/compose/ui/node/LayoutNodeLayoutDelegate;->access$getLayoutNode$p(Landroidx/compose/ui/node/LayoutNodeLayoutDelegate;)Landroidx/compose/ui/node/LayoutNode;
 
     move-result-object p0
 
-    .line 1692
+    .line 1821
     invoke-virtual {p0}, Landroidx/compose/ui/node/LayoutNode;->get_children$ui_release()Landroidx/compose/runtime/collection/MutableVector;
 
     move-result-object p0
 
-    .line 1694
+    .line 1823
     invoke-virtual {p0}, Landroidx/compose/runtime/collection/MutableVector;->getSize()I
 
     move-result v0
 
     if-lez v0, :cond_2
 
-    .line 1697
+    .line 1826
     invoke-virtual {p0}, Landroidx/compose/runtime/collection/MutableVector;->getContent()[Ljava/lang/Object;
 
     move-result-object p0
 
     const/4 v1, 0x0
 
-    .line 1699
+    .line 1828
     :cond_0
     aget-object v2, p0, v1
 
     check-cast v2, Landroidx/compose/ui/node/LayoutNode;
 
-    .line 1700
+    .line 1829
     invoke-virtual {v2}, Landroidx/compose/ui/node/LayoutNode;->getLayoutDelegate$ui_release()Landroidx/compose/ui/node/LayoutNodeLayoutDelegate;
 
     move-result-object v2
@@ -386,7 +391,7 @@
 
     invoke-static {v2}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;)V
 
-    .line 1058
+    .line 1145
     iget v3, v2, Landroidx/compose/ui/node/LayoutNodeLayoutDelegate$LookaheadPassDelegate;->previousPlaceOrder:I
 
     iget v4, v2, Landroidx/compose/ui/node/LayoutNodeLayoutDelegate$LookaheadPassDelegate;->placeOrder:I
@@ -397,7 +402,7 @@
 
     if-ne v4, v3, :cond_1
 
-    .line 1060
+    .line 1147
     invoke-direct {v2}, Landroidx/compose/ui/node/LayoutNodeLayoutDelegate$LookaheadPassDelegate;->markSubtreeAsNotPlaced()V
 
     :cond_1
@@ -412,44 +417,44 @@
 .method private final clearPlaceOrder()V
     .locals 5
 
-    .line 1391
+    .line 1511
     iget-object v0, p0, Landroidx/compose/ui/node/LayoutNodeLayoutDelegate$LookaheadPassDelegate;->this$0:Landroidx/compose/ui/node/LayoutNodeLayoutDelegate;
 
     const/4 v1, 0x0
 
     invoke-static {v0, v1}, Landroidx/compose/ui/node/LayoutNodeLayoutDelegate;->access$setNextChildLookaheadPlaceOrder$p(Landroidx/compose/ui/node/LayoutNodeLayoutDelegate;I)V
 
-    .line 1745
+    .line 1874
     iget-object p0, p0, Landroidx/compose/ui/node/LayoutNodeLayoutDelegate$LookaheadPassDelegate;->this$0:Landroidx/compose/ui/node/LayoutNodeLayoutDelegate;
 
     invoke-static {p0}, Landroidx/compose/ui/node/LayoutNodeLayoutDelegate;->access$getLayoutNode$p(Landroidx/compose/ui/node/LayoutNodeLayoutDelegate;)Landroidx/compose/ui/node/LayoutNode;
 
     move-result-object p0
 
-    .line 1746
+    .line 1875
     invoke-virtual {p0}, Landroidx/compose/ui/node/LayoutNode;->get_children$ui_release()Landroidx/compose/runtime/collection/MutableVector;
 
     move-result-object p0
 
-    .line 1748
+    .line 1877
     invoke-virtual {p0}, Landroidx/compose/runtime/collection/MutableVector;->getSize()I
 
     move-result v0
 
     if-lez v0, :cond_2
 
-    .line 1751
+    .line 1880
     invoke-virtual {p0}, Landroidx/compose/runtime/collection/MutableVector;->getContent()[Ljava/lang/Object;
 
     move-result-object p0
 
-    .line 1753
+    .line 1882
     :cond_0
     aget-object v2, p0, v1
 
     check-cast v2, Landroidx/compose/ui/node/LayoutNode;
 
-    .line 1754
+    .line 1883
     invoke-virtual {v2}, Landroidx/compose/ui/node/LayoutNode;->getLayoutDelegate$ui_release()Landroidx/compose/ui/node/LayoutNodeLayoutDelegate;
 
     move-result-object v2
@@ -460,24 +465,24 @@
 
     invoke-static {v2}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;)V
 
-    .line 1394
+    .line 1514
     iget v3, v2, Landroidx/compose/ui/node/LayoutNodeLayoutDelegate$LookaheadPassDelegate;->placeOrder:I
 
     iput v3, v2, Landroidx/compose/ui/node/LayoutNodeLayoutDelegate$LookaheadPassDelegate;->previousPlaceOrder:I
 
     const v3, 0x7fffffff
 
-    .line 1395
+    .line 1515
     iput v3, v2, Landroidx/compose/ui/node/LayoutNodeLayoutDelegate$LookaheadPassDelegate;->placeOrder:I
 
-    .line 1398
+    .line 1518
     iget-object v3, v2, Landroidx/compose/ui/node/LayoutNodeLayoutDelegate$LookaheadPassDelegate;->measuredByParent:Landroidx/compose/ui/node/LayoutNode$UsageByParent;
 
     sget-object v4, Landroidx/compose/ui/node/LayoutNode$UsageByParent;->InLayoutBlock:Landroidx/compose/ui/node/LayoutNode$UsageByParent;
 
     if-ne v3, v4, :cond_1
 
-    .line 1399
+    .line 1519
     sget-object v3, Landroidx/compose/ui/node/LayoutNode$UsageByParent;->NotUsed:Landroidx/compose/ui/node/LayoutNode$UsageByParent;
 
     iput-object v3, v2, Landroidx/compose/ui/node/LayoutNodeLayoutDelegate$LookaheadPassDelegate;->measuredByParent:Landroidx/compose/ui/node/LayoutNode$UsageByParent;
@@ -504,39 +509,39 @@
         }
     .end annotation
 
-    .line 1002
+    .line 1078
     iget-object p0, p0, Landroidx/compose/ui/node/LayoutNodeLayoutDelegate$LookaheadPassDelegate;->this$0:Landroidx/compose/ui/node/LayoutNodeLayoutDelegate;
 
     invoke-static {p0}, Landroidx/compose/ui/node/LayoutNodeLayoutDelegate;->access$getLayoutNode$p(Landroidx/compose/ui/node/LayoutNodeLayoutDelegate;)Landroidx/compose/ui/node/LayoutNode;
 
     move-result-object p0
 
-    .line 1679
+    .line 1808
     invoke-virtual {p0}, Landroidx/compose/ui/node/LayoutNode;->get_children$ui_release()Landroidx/compose/runtime/collection/MutableVector;
 
     move-result-object p0
 
-    .line 1681
+    .line 1810
     invoke-virtual {p0}, Landroidx/compose/runtime/collection/MutableVector;->getSize()I
 
     move-result v0
 
     if-lez v0, :cond_1
 
-    .line 1684
+    .line 1813
     invoke-virtual {p0}, Landroidx/compose/runtime/collection/MutableVector;->getContent()[Ljava/lang/Object;
 
     move-result-object p0
 
     const/4 v1, 0x0
 
-    .line 1686
+    .line 1815
     :cond_0
     aget-object v2, p0, v1
 
     check-cast v2, Landroidx/compose/ui/node/LayoutNode;
 
-    .line 1003
+    .line 1079
     invoke-virtual {v2}, Landroidx/compose/ui/node/LayoutNode;->getLayoutDelegate$ui_release()Landroidx/compose/ui/node/LayoutNodeLayoutDelegate;
 
     move-result-object v2
@@ -560,21 +565,21 @@
 .method private final markNodeAndSubtreeAsPlaced()V
     .locals 5
 
-    .line 1405
+    .line 1525
     invoke-virtual {p0}, Landroidx/compose/ui/node/LayoutNodeLayoutDelegate$LookaheadPassDelegate;->isPlaced()Z
 
     move-result v0
 
     const/4 v1, 0x1
 
-    .line 1406
+    .line 1526
     invoke-virtual {p0, v1}, Landroidx/compose/ui/node/LayoutNodeLayoutDelegate$LookaheadPassDelegate;->setPlaced(Z)V
 
     const/4 v2, 0x0
 
     if-nez v0, :cond_0
 
-    .line 1408
+    .line 1528
     iget-object v0, p0, Landroidx/compose/ui/node/LayoutNodeLayoutDelegate$LookaheadPassDelegate;->this$0:Landroidx/compose/ui/node/LayoutNodeLayoutDelegate;
 
     invoke-virtual {v0}, Landroidx/compose/ui/node/LayoutNodeLayoutDelegate;->getLookaheadMeasurePending$ui_release()Z
@@ -583,7 +588,7 @@
 
     if-eqz v0, :cond_0
 
-    .line 1410
+    .line 1530
     iget-object v0, p0, Landroidx/compose/ui/node/LayoutNodeLayoutDelegate$LookaheadPassDelegate;->this$0:Landroidx/compose/ui/node/LayoutNodeLayoutDelegate;
 
     invoke-static {v0}, Landroidx/compose/ui/node/LayoutNodeLayoutDelegate;->access$getLayoutNode$p(Landroidx/compose/ui/node/LayoutNodeLayoutDelegate;)Landroidx/compose/ui/node/LayoutNode;
@@ -596,7 +601,7 @@
 
     invoke-static {v0, v1, v2, v3, v4}, Landroidx/compose/ui/node/LayoutNode;->requestLookaheadRemeasure$ui_release$default(Landroidx/compose/ui/node/LayoutNode;ZZILjava/lang/Object;)V
 
-    .line 1414
+    .line 1534
     :cond_0
     iget-object p0, p0, Landroidx/compose/ui/node/LayoutNodeLayoutDelegate$LookaheadPassDelegate;->this$0:Landroidx/compose/ui/node/LayoutNodeLayoutDelegate;
 
@@ -604,30 +609,30 @@
 
     move-result-object p0
 
-    .line 1760
+    .line 1889
     invoke-virtual {p0}, Landroidx/compose/ui/node/LayoutNode;->get_children$ui_release()Landroidx/compose/runtime/collection/MutableVector;
 
     move-result-object p0
 
-    .line 1762
+    .line 1891
     invoke-virtual {p0}, Landroidx/compose/runtime/collection/MutableVector;->getSize()I
 
     move-result v0
 
     if-lez v0, :cond_3
 
-    .line 1765
+    .line 1894
     invoke-virtual {p0}, Landroidx/compose/runtime/collection/MutableVector;->getContent()[Ljava/lang/Object;
 
     move-result-object p0
 
-    .line 1767
+    .line 1896
     :cond_1
     aget-object v1, p0, v2
 
     check-cast v1, Landroidx/compose/ui/node/LayoutNode;
 
-    .line 1417
+    .line 1537
     invoke-virtual {v1}, Landroidx/compose/ui/node/LayoutNode;->getPlaceOrder$ui_release()I
 
     move-result v3
@@ -636,7 +641,7 @@
 
     if-eq v3, v4, :cond_2
 
-    .line 1418
+    .line 1538
     invoke-virtual {v1}, Landroidx/compose/ui/node/LayoutNode;->getLookaheadPassDelegate$ui_release()Landroidx/compose/ui/node/LayoutNodeLayoutDelegate$LookaheadPassDelegate;
 
     move-result-object v3
@@ -645,7 +650,7 @@
 
     invoke-direct {v3}, Landroidx/compose/ui/node/LayoutNodeLayoutDelegate$LookaheadPassDelegate;->markNodeAndSubtreeAsPlaced()V
 
-    .line 1419
+    .line 1539
     invoke-virtual {v1, v1}, Landroidx/compose/ui/node/LayoutNode;->rescheduleRemeasureOrRelayout$ui_release(Landroidx/compose/ui/node/LayoutNode;)V
 
     :cond_2
@@ -660,7 +665,7 @@
 .method private final markSubtreeAsNotPlaced()V
     .locals 3
 
-    .line 1067
+    .line 1154
     invoke-virtual {p0}, Landroidx/compose/ui/node/LayoutNodeLayoutDelegate$LookaheadPassDelegate;->isPlaced()Z
 
     move-result v0
@@ -669,40 +674,40 @@
 
     const/4 v0, 0x0
 
-    .line 1068
+    .line 1155
     invoke-virtual {p0, v0}, Landroidx/compose/ui/node/LayoutNodeLayoutDelegate$LookaheadPassDelegate;->setPlaced(Z)V
 
-    .line 1706
+    .line 1835
     iget-object p0, p0, Landroidx/compose/ui/node/LayoutNodeLayoutDelegate$LookaheadPassDelegate;->this$0:Landroidx/compose/ui/node/LayoutNodeLayoutDelegate;
 
     invoke-static {p0}, Landroidx/compose/ui/node/LayoutNodeLayoutDelegate;->access$getLayoutNode$p(Landroidx/compose/ui/node/LayoutNodeLayoutDelegate;)Landroidx/compose/ui/node/LayoutNode;
 
     move-result-object p0
 
-    .line 1707
+    .line 1836
     invoke-virtual {p0}, Landroidx/compose/ui/node/LayoutNode;->get_children$ui_release()Landroidx/compose/runtime/collection/MutableVector;
 
     move-result-object p0
 
-    .line 1709
+    .line 1838
     invoke-virtual {p0}, Landroidx/compose/runtime/collection/MutableVector;->getSize()I
 
     move-result v1
 
     if-lez v1, :cond_1
 
-    .line 1712
+    .line 1841
     invoke-virtual {p0}, Landroidx/compose/runtime/collection/MutableVector;->getContent()[Ljava/lang/Object;
 
     move-result-object p0
 
-    .line 1714
+    .line 1843
     :cond_0
     aget-object v2, p0, v0
 
     check-cast v2, Landroidx/compose/ui/node/LayoutNode;
 
-    .line 1715
+    .line 1844
     invoke-virtual {v2}, Landroidx/compose/ui/node/LayoutNode;->getLayoutDelegate$ui_release()Landroidx/compose/ui/node/LayoutNodeLayoutDelegate;
 
     move-result-object v2
@@ -713,7 +718,7 @@
 
     invoke-static {v2}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;)V
 
-    .line 1069
+    .line 1156
     invoke-direct {v2}, Landroidx/compose/ui/node/LayoutNodeLayoutDelegate$LookaheadPassDelegate;->markSubtreeAsNotPlaced()V
 
     add-int/lit8 v0, v0, 0x1
@@ -727,60 +732,60 @@
 .method private final onBeforeLayoutChildren()V
     .locals 8
 
-    .line 1447
+    .line 1567
     iget-object v0, p0, Landroidx/compose/ui/node/LayoutNodeLayoutDelegate$LookaheadPassDelegate;->this$0:Landroidx/compose/ui/node/LayoutNodeLayoutDelegate;
 
     invoke-static {v0}, Landroidx/compose/ui/node/LayoutNodeLayoutDelegate;->access$getLayoutNode$p(Landroidx/compose/ui/node/LayoutNodeLayoutDelegate;)Landroidx/compose/ui/node/LayoutNode;
 
     move-result-object v0
 
-    iget-object v1, p0, Landroidx/compose/ui/node/LayoutNodeLayoutDelegate$LookaheadPassDelegate;->this$0:Landroidx/compose/ui/node/LayoutNodeLayoutDelegate;
+    iget-object p0, p0, Landroidx/compose/ui/node/LayoutNodeLayoutDelegate$LookaheadPassDelegate;->this$0:Landroidx/compose/ui/node/LayoutNodeLayoutDelegate;
 
-    .line 1772
+    .line 1901
     invoke-virtual {v0}, Landroidx/compose/ui/node/LayoutNode;->get_children$ui_release()Landroidx/compose/runtime/collection/MutableVector;
 
     move-result-object v0
 
-    .line 1774
+    .line 1903
     invoke-virtual {v0}, Landroidx/compose/runtime/collection/MutableVector;->getSize()I
 
-    move-result v2
+    move-result v1
 
-    if-lez v2, :cond_2
+    if-lez v1, :cond_2
 
-    .line 1777
+    .line 1906
     invoke-virtual {v0}, Landroidx/compose/runtime/collection/MutableVector;->getContent()[Ljava/lang/Object;
 
     move-result-object v0
 
-    const/4 v3, 0x0
+    const/4 v2, 0x0
 
-    move v4, v3
+    move v3, v2
 
-    .line 1779
+    .line 1908
     :cond_0
-    aget-object v5, v0, v4
+    aget-object v4, v0, v3
 
-    check-cast v5, Landroidx/compose/ui/node/LayoutNode;
+    check-cast v4, Landroidx/compose/ui/node/LayoutNode;
 
-    .line 1448
-    invoke-virtual {v5}, Landroidx/compose/ui/node/LayoutNode;->getLookaheadMeasurePending$ui_release()Z
+    .line 1568
+    invoke-virtual {v4}, Landroidx/compose/ui/node/LayoutNode;->getLookaheadMeasurePending$ui_release()Z
 
-    move-result v6
+    move-result v5
 
-    if-eqz v6, :cond_1
+    if-eqz v5, :cond_1
 
-    .line 1449
-    invoke-virtual {v5}, Landroidx/compose/ui/node/LayoutNode;->getMeasuredByParentInLookahead$ui_release()Landroidx/compose/ui/node/LayoutNode$UsageByParent;
+    .line 1569
+    invoke-virtual {v4}, Landroidx/compose/ui/node/LayoutNode;->getMeasuredByParentInLookahead$ui_release()Landroidx/compose/ui/node/LayoutNode$UsageByParent;
 
-    move-result-object v6
+    move-result-object v5
 
-    sget-object v7, Landroidx/compose/ui/node/LayoutNode$UsageByParent;->InMeasureBlock:Landroidx/compose/ui/node/LayoutNode$UsageByParent;
+    sget-object v6, Landroidx/compose/ui/node/LayoutNode$UsageByParent;->InMeasureBlock:Landroidx/compose/ui/node/LayoutNode$UsageByParent;
 
-    if-ne v6, v7, :cond_1
+    if-ne v5, v6, :cond_1
 
-    .line 1451
-    invoke-virtual {v5}, Landroidx/compose/ui/node/LayoutNode;->getLayoutDelegate$ui_release()Landroidx/compose/ui/node/LayoutNodeLayoutDelegate;
+    .line 1571
+    invoke-virtual {v4}, Landroidx/compose/ui/node/LayoutNode;->getLayoutDelegate$ui_release()Landroidx/compose/ui/node/LayoutNodeLayoutDelegate;
 
     move-result-object v5
 
@@ -790,39 +795,43 @@
 
     invoke-static {v5}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;)V
 
-    .line 1452
-    invoke-virtual {p0}, Landroidx/compose/ui/node/LayoutNodeLayoutDelegate$LookaheadPassDelegate;->getLastConstraints-DWUhwKw()Landroidx/compose/ui/unit/Constraints;
+    .line 1572
+    invoke-virtual {v4}, Landroidx/compose/ui/node/LayoutNode;->getLayoutDelegate$ui_release()Landroidx/compose/ui/node/LayoutNodeLayoutDelegate;
 
-    move-result-object v6
+    move-result-object v4
 
-    invoke-static {v6}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;)V
+    invoke-virtual {v4}, Landroidx/compose/ui/node/LayoutNodeLayoutDelegate;->getLastLookaheadConstraints-DWUhwKw()Landroidx/compose/ui/unit/Constraints;
 
-    invoke-virtual {v6}, Landroidx/compose/ui/unit/Constraints;->unbox-impl()J
+    move-result-object v4
+
+    invoke-static {v4}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;)V
+
+    invoke-virtual {v4}, Landroidx/compose/ui/unit/Constraints;->unbox-impl()J
 
     move-result-wide v6
 
-    .line 1451
+    .line 1571
     invoke-virtual {v5, v6, v7}, Landroidx/compose/ui/node/LayoutNodeLayoutDelegate$LookaheadPassDelegate;->remeasure-BRTryo0(J)Z
 
-    move-result v5
+    move-result v4
 
-    if-eqz v5, :cond_1
+    if-eqz v4, :cond_1
 
-    .line 1455
-    invoke-static {v1}, Landroidx/compose/ui/node/LayoutNodeLayoutDelegate;->access$getLayoutNode$p(Landroidx/compose/ui/node/LayoutNodeLayoutDelegate;)Landroidx/compose/ui/node/LayoutNode;
+    .line 1575
+    invoke-static {p0}, Landroidx/compose/ui/node/LayoutNodeLayoutDelegate;->access$getLayoutNode$p(Landroidx/compose/ui/node/LayoutNodeLayoutDelegate;)Landroidx/compose/ui/node/LayoutNode;
 
-    move-result-object v5
+    move-result-object v4
 
-    const/4 v6, 0x3
+    const/4 v5, 0x3
 
-    const/4 v7, 0x0
+    const/4 v6, 0x0
 
-    invoke-static {v5, v3, v3, v6, v7}, Landroidx/compose/ui/node/LayoutNode;->requestLookaheadRemeasure$ui_release$default(Landroidx/compose/ui/node/LayoutNode;ZZILjava/lang/Object;)V
+    invoke-static {v4, v2, v2, v5, v6}, Landroidx/compose/ui/node/LayoutNode;->requestLookaheadRemeasure$ui_release$default(Landroidx/compose/ui/node/LayoutNode;ZZILjava/lang/Object;)V
 
     :cond_1
-    add-int/lit8 v4, v4, 0x1
+    add-int/lit8 v3, v3, 0x1
 
-    if-lt v4, v2, :cond_0
+    if-lt v3, v1, :cond_0
 
     :cond_2
     return-void
@@ -831,7 +840,7 @@
 .method private final onIntrinsicsQueried()V
     .locals 4
 
-    .line 1299
+    .line 1411
     iget-object v0, p0, Landroidx/compose/ui/node/LayoutNodeLayoutDelegate$LookaheadPassDelegate;->this$0:Landroidx/compose/ui/node/LayoutNodeLayoutDelegate;
 
     invoke-static {v0}, Landroidx/compose/ui/node/LayoutNodeLayoutDelegate;->access$getLayoutNode$p(Landroidx/compose/ui/node/LayoutNodeLayoutDelegate;)Landroidx/compose/ui/node/LayoutNode;
@@ -846,7 +855,7 @@
 
     invoke-static {v0, v2, v2, v3, v1}, Landroidx/compose/ui/node/LayoutNode;->requestLookaheadRemeasure$ui_release$default(Landroidx/compose/ui/node/LayoutNode;ZZILjava/lang/Object;)V
 
-    .line 1302
+    .line 1414
     iget-object v0, p0, Landroidx/compose/ui/node/LayoutNodeLayoutDelegate$LookaheadPassDelegate;->this$0:Landroidx/compose/ui/node/LayoutNodeLayoutDelegate;
 
     invoke-static {v0}, Landroidx/compose/ui/node/LayoutNodeLayoutDelegate;->access$getLayoutNode$p(Landroidx/compose/ui/node/LayoutNodeLayoutDelegate;)Landroidx/compose/ui/node/LayoutNode;
@@ -859,7 +868,7 @@
 
     if-eqz v0, :cond_2
 
-    .line 1304
+    .line 1416
     iget-object v1, p0, Landroidx/compose/ui/node/LayoutNodeLayoutDelegate$LookaheadPassDelegate;->this$0:Landroidx/compose/ui/node/LayoutNodeLayoutDelegate;
 
     invoke-static {v1}, Landroidx/compose/ui/node/LayoutNodeLayoutDelegate;->access$getLayoutNode$p(Landroidx/compose/ui/node/LayoutNodeLayoutDelegate;)Landroidx/compose/ui/node/LayoutNode;
@@ -874,7 +883,7 @@
 
     if-ne v1, v2, :cond_2
 
-    .line 1306
+    .line 1418
     iget-object p0, p0, Landroidx/compose/ui/node/LayoutNodeLayoutDelegate$LookaheadPassDelegate;->this$0:Landroidx/compose/ui/node/LayoutNodeLayoutDelegate;
 
     invoke-static {p0}, Landroidx/compose/ui/node/LayoutNodeLayoutDelegate;->access$getLayoutNode$p(Landroidx/compose/ui/node/LayoutNodeLayoutDelegate;)Landroidx/compose/ui/node/LayoutNode;
@@ -899,24 +908,24 @@
 
     if-eq v1, v3, :cond_0
 
-    .line 1310
+    .line 1422
     invoke-virtual {v0}, Landroidx/compose/ui/node/LayoutNode;->getIntrinsicsUsageByParent$ui_release()Landroidx/compose/ui/node/LayoutNode$UsageByParent;
 
     move-result-object v0
 
     goto :goto_0
 
-    .line 1308
+    .line 1420
     :cond_0
     sget-object v0, Landroidx/compose/ui/node/LayoutNode$UsageByParent;->InLayoutBlock:Landroidx/compose/ui/node/LayoutNode$UsageByParent;
 
     goto :goto_0
 
-    .line 1307
+    .line 1419
     :cond_1
     sget-object v0, Landroidx/compose/ui/node/LayoutNode$UsageByParent;->InMeasureBlock:Landroidx/compose/ui/node/LayoutNode$UsageByParent;
 
-    .line 1306
+    .line 1418
     :goto_0
     invoke-virtual {p0, v0}, Landroidx/compose/ui/node/LayoutNode;->setIntrinsicsUsageByParent$ui_release(Landroidx/compose/ui/node/LayoutNode$UsageByParent;)V
 
@@ -927,21 +936,21 @@
 .method private final trackLookaheadMeasurementByParent(Landroidx/compose/ui/node/LayoutNode;)V
     .locals 3
 
-    .line 1153
+    .line 1245
     invoke-virtual {p1}, Landroidx/compose/ui/node/LayoutNode;->getParent$ui_release()Landroidx/compose/ui/node/LayoutNode;
 
     move-result-object v0
 
     if-eqz v0, :cond_5
 
-    .line 1156
+    .line 1248
     iget-object v1, p0, Landroidx/compose/ui/node/LayoutNodeLayoutDelegate$LookaheadPassDelegate;->measuredByParent:Landroidx/compose/ui/node/LayoutNode$UsageByParent;
 
     sget-object v2, Landroidx/compose/ui/node/LayoutNode$UsageByParent;->NotUsed:Landroidx/compose/ui/node/LayoutNode$UsageByParent;
 
     if-eq v1, v2, :cond_1
 
-    .line 1157
+    .line 1249
     invoke-virtual {p1}, Landroidx/compose/ui/node/LayoutNode;->getCanMultiMeasure$ui_release()Z
 
     move-result p1
@@ -950,7 +959,7 @@
 
     goto :goto_0
 
-    .line 1155
+    .line 1247
     :cond_0
     new-instance p0, Ljava/lang/IllegalStateException;
 
@@ -964,7 +973,7 @@
 
     throw p0
 
-    .line 1159
+    .line 1251
     :cond_1
     :goto_0
     invoke-virtual {v0}, Landroidx/compose/ui/node/LayoutNode;->getLayoutState$ui_release()Landroidx/compose/ui/node/LayoutNode$LayoutState;
@@ -997,23 +1006,23 @@
 
     goto :goto_1
 
-    .line 1166
+    .line 1258
     :cond_2
     new-instance p0, Ljava/lang/IllegalStateException;
 
-    .line 1167
+    .line 1259
     new-instance p1, Ljava/lang/StringBuilder;
 
     const-string v1, "Measurable could be only measured from the parent\'s measure or layout block. Parents state is "
 
     invoke-direct {p1, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
-    .line 1168
+    .line 1260
     invoke-virtual {v0}, Landroidx/compose/ui/node/LayoutNode;->getLayoutState$ui_release()Landroidx/compose/ui/node/LayoutNode$LayoutState;
 
     move-result-object v0
 
-    .line 1167
+    .line 1259
     invoke-virtual {p1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
     move-result-object p1
@@ -1022,29 +1031,29 @@
 
     move-result-object p1
 
-    .line 1166
+    .line 1258
     invoke-direct {p0, p1}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
 
     throw p0
 
-    .line 1164
+    .line 1256
     :cond_3
     :goto_1
     sget-object p1, Landroidx/compose/ui/node/LayoutNode$UsageByParent;->InLayoutBlock:Landroidx/compose/ui/node/LayoutNode$UsageByParent;
 
     goto :goto_2
 
-    .line 1161
+    .line 1253
     :cond_4
     sget-object p1, Landroidx/compose/ui/node/LayoutNode$UsageByParent;->InMeasureBlock:Landroidx/compose/ui/node/LayoutNode$UsageByParent;
 
-    .line 1159
+    .line 1251
     :goto_2
     iput-object p1, p0, Landroidx/compose/ui/node/LayoutNodeLayoutDelegate$LookaheadPassDelegate;->measuredByParent:Landroidx/compose/ui/node/LayoutNode$UsageByParent;
 
     goto :goto_3
 
-    .line 1172
+    .line 1264
     :cond_5
     sget-object p1, Landroidx/compose/ui/node/LayoutNode$UsageByParent;->NotUsed:Landroidx/compose/ui/node/LayoutNode$UsageByParent;
 
@@ -1068,14 +1077,14 @@
         }
     .end annotation
 
-    .line 1074
+    .line 1161
     iget-boolean v0, p0, Landroidx/compose/ui/node/LayoutNodeLayoutDelegate$LookaheadPassDelegate;->duringAlignmentLinesQuery:Z
 
     const/4 v1, 0x1
 
     if-nez v0, :cond_1
 
-    .line 1075
+    .line 1162
     iget-object v0, p0, Landroidx/compose/ui/node/LayoutNodeLayoutDelegate$LookaheadPassDelegate;->this$0:Landroidx/compose/ui/node/LayoutNodeLayoutDelegate;
 
     invoke-virtual {v0}, Landroidx/compose/ui/node/LayoutNodeLayoutDelegate;->getLayoutState$ui_release()Landroidx/compose/ui/node/LayoutNode$LayoutState;
@@ -1086,14 +1095,14 @@
 
     if-ne v0, v2, :cond_0
 
-    .line 1077
+    .line 1164
     invoke-virtual {p0}, Landroidx/compose/ui/node/LayoutNodeLayoutDelegate$LookaheadPassDelegate;->getAlignmentLines()Landroidx/compose/ui/node/AlignmentLines;
 
     move-result-object v0
 
     invoke-virtual {v0, v1}, Landroidx/compose/ui/node/AlignmentLines;->setUsedByModifierMeasurement$ui_release(Z)V
 
-    .line 1080
+    .line 1167
     invoke-virtual {p0}, Landroidx/compose/ui/node/LayoutNodeLayoutDelegate$LookaheadPassDelegate;->getAlignmentLines()Landroidx/compose/ui/node/AlignmentLines;
 
     move-result-object v0
@@ -1110,7 +1119,7 @@
 
     goto :goto_0
 
-    .line 1083
+    .line 1170
     :cond_0
     invoke-virtual {p0}, Landroidx/compose/ui/node/LayoutNodeLayoutDelegate$LookaheadPassDelegate;->getAlignmentLines()Landroidx/compose/ui/node/AlignmentLines;
 
@@ -1118,7 +1127,7 @@
 
     invoke-virtual {v0, v1}, Landroidx/compose/ui/node/AlignmentLines;->setUsedByModifierLayout$ui_release(Z)V
 
-    .line 1086
+    .line 1173
     :cond_1
     :goto_0
     invoke-virtual {p0}, Landroidx/compose/ui/node/LayoutNodeLayoutDelegate$LookaheadPassDelegate;->getInnerCoordinator()Landroidx/compose/ui/node/NodeCoordinator;
@@ -1136,11 +1145,11 @@
     :cond_2
     invoke-virtual {v0, v1}, Landroidx/compose/ui/node/LookaheadDelegate;->setPlacingForAlignment$ui_release(Z)V
 
-    .line 1087
+    .line 1174
     :goto_1
     invoke-virtual {p0}, Landroidx/compose/ui/node/LayoutNodeLayoutDelegate$LookaheadPassDelegate;->layoutChildren()V
 
-    .line 1088
+    .line 1175
     invoke-virtual {p0}, Landroidx/compose/ui/node/LayoutNodeLayoutDelegate$LookaheadPassDelegate;->getInnerCoordinator()Landroidx/compose/ui/node/NodeCoordinator;
 
     move-result-object v0
@@ -1158,7 +1167,7 @@
 
     invoke-virtual {v0, v1}, Landroidx/compose/ui/node/LookaheadDelegate;->setPlacingForAlignment$ui_release(Z)V
 
-    .line 1089
+    .line 1176
     :goto_2
     invoke-virtual {p0}, Landroidx/compose/ui/node/LayoutNodeLayoutDelegate$LookaheadPassDelegate;->getAlignmentLines()Landroidx/compose/ui/node/AlignmentLines;
 
@@ -1184,43 +1193,39 @@
         }
     .end annotation
 
-    const-string v0, "block"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 1096
+    .line 1183
     iget-object p0, p0, Landroidx/compose/ui/node/LayoutNodeLayoutDelegate$LookaheadPassDelegate;->this$0:Landroidx/compose/ui/node/LayoutNodeLayoutDelegate;
 
     invoke-static {p0}, Landroidx/compose/ui/node/LayoutNodeLayoutDelegate;->access$getLayoutNode$p(Landroidx/compose/ui/node/LayoutNodeLayoutDelegate;)Landroidx/compose/ui/node/LayoutNode;
 
     move-result-object p0
 
-    .line 1721
+    .line 1850
     invoke-virtual {p0}, Landroidx/compose/ui/node/LayoutNode;->get_children$ui_release()Landroidx/compose/runtime/collection/MutableVector;
 
     move-result-object p0
 
-    .line 1723
+    .line 1852
     invoke-virtual {p0}, Landroidx/compose/runtime/collection/MutableVector;->getSize()I
 
     move-result v0
 
     if-lez v0, :cond_1
 
-    .line 1726
+    .line 1855
     invoke-virtual {p0}, Landroidx/compose/runtime/collection/MutableVector;->getContent()[Ljava/lang/Object;
 
     move-result-object p0
 
     const/4 v1, 0x0
 
-    .line 1728
+    .line 1857
     :cond_0
     aget-object v2, p0, v1
 
     check-cast v2, Landroidx/compose/ui/node/LayoutNode;
 
-    .line 1097
+    .line 1184
     invoke-virtual {v2}, Landroidx/compose/ui/node/LayoutNode;->getLayoutDelegate$ui_release()Landroidx/compose/ui/node/LayoutNodeLayoutDelegate;
 
     move-result-object v2
@@ -1244,11 +1249,7 @@
 .method public get(Landroidx/compose/ui/layout/AlignmentLine;)I
     .locals 4
 
-    const-string v0, "alignmentLine"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 1259
+    .line 1371
     iget-object v0, p0, Landroidx/compose/ui/node/LayoutNodeLayoutDelegate$LookaheadPassDelegate;->this$0:Landroidx/compose/ui/node/LayoutNodeLayoutDelegate;
 
     invoke-static {v0}, Landroidx/compose/ui/node/LayoutNodeLayoutDelegate;->access$getLayoutNode$p(Landroidx/compose/ui/node/LayoutNodeLayoutDelegate;)Landroidx/compose/ui/node/LayoutNode;
@@ -1279,7 +1280,7 @@
 
     if-ne v0, v2, :cond_1
 
-    .line 1260
+    .line 1372
     invoke-virtual {p0}, Landroidx/compose/ui/node/LayoutNodeLayoutDelegate$LookaheadPassDelegate;->getAlignmentLines()Landroidx/compose/ui/node/AlignmentLines;
 
     move-result-object v0
@@ -1288,7 +1289,7 @@
 
     goto :goto_1
 
-    .line 1261
+    .line 1373
     :cond_1
     iget-object v0, p0, Landroidx/compose/ui/node/LayoutNodeLayoutDelegate$LookaheadPassDelegate;->this$0:Landroidx/compose/ui/node/LayoutNodeLayoutDelegate;
 
@@ -1311,19 +1312,19 @@
 
     if-ne v1, v0, :cond_3
 
-    .line 1262
+    .line 1374
     invoke-virtual {p0}, Landroidx/compose/ui/node/LayoutNodeLayoutDelegate$LookaheadPassDelegate;->getAlignmentLines()Landroidx/compose/ui/node/AlignmentLines;
 
     move-result-object v0
 
     invoke-virtual {v0, v3}, Landroidx/compose/ui/node/AlignmentLines;->setUsedDuringParentLayout$ui_release(Z)V
 
-    .line 1264
+    .line 1376
     :cond_3
     :goto_1
     iput-boolean v3, p0, Landroidx/compose/ui/node/LayoutNodeLayoutDelegate$LookaheadPassDelegate;->duringAlignmentLinesQuery:Z
 
-    .line 1265
+    .line 1377
     iget-object v0, p0, Landroidx/compose/ui/node/LayoutNodeLayoutDelegate$LookaheadPassDelegate;->this$0:Landroidx/compose/ui/node/LayoutNodeLayoutDelegate;
 
     invoke-virtual {v0}, Landroidx/compose/ui/node/LayoutNodeLayoutDelegate;->getOuterCoordinator()Landroidx/compose/ui/node/NodeCoordinator;
@@ -1342,7 +1343,7 @@
 
     const/4 v0, 0x0
 
-    .line 1266
+    .line 1378
     iput-boolean v0, p0, Landroidx/compose/ui/node/LayoutNodeLayoutDelegate$LookaheadPassDelegate;->duringAlignmentLinesQuery:Z
 
     return p1
@@ -1351,7 +1352,7 @@
 .method public getAlignmentLines()Landroidx/compose/ui/node/AlignmentLines;
     .locals 0
 
-    .line 980
+    .line 1056
     iget-object p0, p0, Landroidx/compose/ui/node/LayoutNodeLayoutDelegate$LookaheadPassDelegate;->alignmentLines:Landroidx/compose/ui/node/AlignmentLines;
 
     return-object p0
@@ -1368,7 +1369,7 @@
         }
     .end annotation
 
-    .line 987
+    .line 1063
     iget-object v0, p0, Landroidx/compose/ui/node/LayoutNodeLayoutDelegate$LookaheadPassDelegate;->this$0:Landroidx/compose/ui/node/LayoutNodeLayoutDelegate;
 
     invoke-static {v0}, Landroidx/compose/ui/node/LayoutNodeLayoutDelegate;->access$getLayoutNode$p(Landroidx/compose/ui/node/LayoutNodeLayoutDelegate;)Landroidx/compose/ui/node/LayoutNode;
@@ -1377,7 +1378,7 @@
 
     invoke-virtual {v0}, Landroidx/compose/ui/node/LayoutNode;->getChildren$ui_release()Ljava/util/List;
 
-    .line 989
+    .line 1065
     iget-boolean v0, p0, Landroidx/compose/ui/node/LayoutNodeLayoutDelegate$LookaheadPassDelegate;->childDelegatesDirty:Z
 
     if-nez v0, :cond_0
@@ -1390,7 +1391,7 @@
 
     return-object p0
 
-    .line 991
+    .line 1067
     :cond_0
     iget-object v0, p0, Landroidx/compose/ui/node/LayoutNodeLayoutDelegate$LookaheadPassDelegate;->this$0:Landroidx/compose/ui/node/LayoutNodeLayoutDelegate;
 
@@ -1400,12 +1401,12 @@
 
     iget-object v1, p0, Landroidx/compose/ui/node/LayoutNodeLayoutDelegate$LookaheadPassDelegate;->_childDelegates:Landroidx/compose/runtime/collection/MutableVector;
 
-    .line 1656
+    .line 1785
     invoke-virtual {v0}, Landroidx/compose/ui/node/LayoutNode;->get_children$ui_release()Landroidx/compose/runtime/collection/MutableVector;
 
     move-result-object v2
 
-    .line 1658
+    .line 1787
     invoke-virtual {v2}, Landroidx/compose/runtime/collection/MutableVector;->getSize()I
 
     move-result v3
@@ -1414,27 +1415,27 @@
 
     if-lez v3, :cond_3
 
-    .line 1661
+    .line 1790
     invoke-virtual {v2}, Landroidx/compose/runtime/collection/MutableVector;->getContent()[Ljava/lang/Object;
 
     move-result-object v2
 
     move v5, v4
 
-    .line 1663
+    .line 1792
     :cond_1
     aget-object v6, v2, v5
 
     check-cast v6, Landroidx/compose/ui/node/LayoutNode;
 
-    .line 1664
+    .line 1793
     invoke-virtual {v1}, Landroidx/compose/runtime/collection/MutableVector;->getSize()I
 
     move-result v7
 
     if-gt v7, v5, :cond_2
 
-    .line 992
+    .line 1068
     invoke-virtual {v6}, Landroidx/compose/ui/node/LayoutNode;->getLayoutDelegate$ui_release()Landroidx/compose/ui/node/LayoutNodeLayoutDelegate;
 
     move-result-object v6
@@ -1445,12 +1446,12 @@
 
     invoke-static {v6}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;)V
 
-    .line 1665
+    .line 1794
     invoke-virtual {v1, v6}, Landroidx/compose/runtime/collection/MutableVector;->add(Ljava/lang/Object;)Z
 
     goto :goto_0
 
-    .line 992
+    .line 1068
     :cond_2
     invoke-virtual {v6}, Landroidx/compose/ui/node/LayoutNode;->getLayoutDelegate$ui_release()Landroidx/compose/ui/node/LayoutNodeLayoutDelegate;
 
@@ -1462,7 +1463,7 @@
 
     invoke-static {v6}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;)V
 
-    .line 1667
+    .line 1796
     invoke-virtual {v1, v5, v6}, Landroidx/compose/runtime/collection/MutableVector;->set(ILjava/lang/Object;)Ljava/lang/Object;
 
     :goto_0
@@ -1470,7 +1471,7 @@
 
     if-lt v5, v3, :cond_1
 
-    .line 1675
+    .line 1804
     :cond_3
     invoke-virtual {v0}, Landroidx/compose/ui/node/LayoutNode;->getChildren$ui_release()Ljava/util/List;
 
@@ -1480,18 +1481,18 @@
 
     move-result v0
 
-    .line 1676
+    .line 1805
     invoke-virtual {v1}, Landroidx/compose/runtime/collection/MutableVector;->getSize()I
 
     move-result v2
 
-    .line 1674
+    .line 1803
     invoke-virtual {v1, v0, v2}, Landroidx/compose/runtime/collection/MutableVector;->removeRange(II)V
 
-    .line 994
+    .line 1070
     iput-boolean v4, p0, Landroidx/compose/ui/node/LayoutNodeLayoutDelegate$LookaheadPassDelegate;->childDelegatesDirty:Z
 
-    .line 995
+    .line 1071
     iget-object p0, p0, Landroidx/compose/ui/node/LayoutNodeLayoutDelegate$LookaheadPassDelegate;->_childDelegates:Landroidx/compose/runtime/collection/MutableVector;
 
     invoke-virtual {p0}, Landroidx/compose/runtime/collection/MutableVector;->asMutableList()Ljava/util/List;
@@ -1504,7 +1505,7 @@
 .method public final getChildDelegatesDirty$ui_release()Z
     .locals 0
 
-    .line 984
+    .line 1060
     iget-boolean p0, p0, Landroidx/compose/ui/node/LayoutNodeLayoutDelegate$LookaheadPassDelegate;->childDelegatesDirty:Z
 
     return p0
@@ -1513,7 +1514,7 @@
 .method public final getDuringAlignmentLinesQuery$ui_release()Z
     .locals 0
 
-    .line 963
+    .line 1039
     iget-boolean p0, p0, Landroidx/compose/ui/node/LayoutNodeLayoutDelegate$LookaheadPassDelegate;->duringAlignmentLinesQuery:Z
 
     return p0
@@ -1522,7 +1523,7 @@
 .method public getInnerCoordinator()Landroidx/compose/ui/node/NodeCoordinator;
     .locals 0
 
-    .line 979
+    .line 1055
     iget-object p0, p0, Landroidx/compose/ui/node/LayoutNodeLayoutDelegate$LookaheadPassDelegate;->this$0:Landroidx/compose/ui/node/LayoutNodeLayoutDelegate;
 
     invoke-static {p0}, Landroidx/compose/ui/node/LayoutNodeLayoutDelegate;->access$getLayoutNode$p(Landroidx/compose/ui/node/LayoutNodeLayoutDelegate;)Landroidx/compose/ui/node/LayoutNode;
@@ -1539,7 +1540,7 @@
 .method public final getLastConstraints-DWUhwKw()Landroidx/compose/ui/unit/Constraints;
     .locals 0
 
-    .line 967
+    .line 1043
     iget-object p0, p0, Landroidx/compose/ui/node/LayoutNodeLayoutDelegate$LookaheadPassDelegate;->lookaheadConstraints:Landroidx/compose/ui/unit/Constraints;
 
     return-object p0
@@ -1557,7 +1558,7 @@
         }
     .end annotation
 
-    .line 974
+    .line 1050
     iget-object p0, p0, Landroidx/compose/ui/node/LayoutNodeLayoutDelegate$LookaheadPassDelegate;->lastLayerBlock:Lkotlin/jvm/functions/Function1;
 
     return-object p0
@@ -1566,7 +1567,7 @@
 .method public final getLastPosition-nOcc-ac$ui_release()J
     .locals 2
 
-    .line 969
+    .line 1045
     iget-wide v0, p0, Landroidx/compose/ui/node/LayoutNodeLayoutDelegate$LookaheadPassDelegate;->lastPosition:J
 
     return-wide v0
@@ -1575,7 +1576,7 @@
 .method public final getLastZIndex$ui_release()F
     .locals 0
 
-    .line 971
+    .line 1047
     iget p0, p0, Landroidx/compose/ui/node/LayoutNodeLayoutDelegate$LookaheadPassDelegate;->lastZIndex:F
 
     return p0
@@ -1584,7 +1585,7 @@
 .method public final getLayingOutChildren()Z
     .locals 0
 
-    .line 998
+    .line 1074
     iget-boolean p0, p0, Landroidx/compose/ui/node/LayoutNodeLayoutDelegate$LookaheadPassDelegate;->layingOutChildren:Z
 
     return p0
@@ -1593,7 +1594,7 @@
 .method public final getMeasurePassDelegate$ui_release()Landroidx/compose/ui/node/LayoutNodeLayoutDelegate$MeasurePassDelegate;
     .locals 0
 
-    .line 962
+    .line 1038
     iget-object p0, p0, Landroidx/compose/ui/node/LayoutNodeLayoutDelegate$LookaheadPassDelegate;->this$0:Landroidx/compose/ui/node/LayoutNodeLayoutDelegate;
 
     invoke-virtual {p0}, Landroidx/compose/ui/node/LayoutNodeLayoutDelegate;->getMeasurePassDelegate$ui_release()Landroidx/compose/ui/node/LayoutNodeLayoutDelegate$MeasurePassDelegate;
@@ -1606,7 +1607,7 @@
 .method public final getMeasuredByParent$ui_release()Landroidx/compose/ui/node/LayoutNode$UsageByParent;
     .locals 0
 
-    .line 960
+    .line 1036
     iget-object p0, p0, Landroidx/compose/ui/node/LayoutNodeLayoutDelegate$LookaheadPassDelegate;->measuredByParent:Landroidx/compose/ui/node/LayoutNode$UsageByParent;
 
     return-object p0
@@ -1615,7 +1616,7 @@
 .method public getMeasuredHeight()I
     .locals 0
 
-    .line 1256
+    .line 1368
     iget-object p0, p0, Landroidx/compose/ui/node/LayoutNodeLayoutDelegate$LookaheadPassDelegate;->this$0:Landroidx/compose/ui/node/LayoutNodeLayoutDelegate;
 
     invoke-virtual {p0}, Landroidx/compose/ui/node/LayoutNodeLayoutDelegate;->getOuterCoordinator()Landroidx/compose/ui/node/NodeCoordinator;
@@ -1638,7 +1639,7 @@
 .method public getMeasuredWidth()I
     .locals 0
 
-    .line 1255
+    .line 1367
     iget-object p0, p0, Landroidx/compose/ui/node/LayoutNodeLayoutDelegate$LookaheadPassDelegate;->this$0:Landroidx/compose/ui/node/LayoutNodeLayoutDelegate;
 
     invoke-virtual {p0}, Landroidx/compose/ui/node/LayoutNodeLayoutDelegate;->getOuterCoordinator()Landroidx/compose/ui/node/NodeCoordinator;
@@ -1661,7 +1662,7 @@
 .method public getParentAlignmentLinesOwner()Landroidx/compose/ui/node/AlignmentLinesOwner;
     .locals 0
 
-    .line 1093
+    .line 1180
     iget-object p0, p0, Landroidx/compose/ui/node/LayoutNodeLayoutDelegate$LookaheadPassDelegate;->this$0:Landroidx/compose/ui/node/LayoutNodeLayoutDelegate;
 
     invoke-static {p0}, Landroidx/compose/ui/node/LayoutNodeLayoutDelegate;->access$getLayoutNode$p(Landroidx/compose/ui/node/LayoutNodeLayoutDelegate;)Landroidx/compose/ui/node/LayoutNode;
@@ -1696,7 +1697,7 @@
 .method public getParentData()Ljava/lang/Object;
     .locals 0
 
-    .line 1177
+    .line 1269
     iget-object p0, p0, Landroidx/compose/ui/node/LayoutNodeLayoutDelegate$LookaheadPassDelegate;->parentData:Ljava/lang/Object;
 
     return-object p0
@@ -1705,8 +1706,17 @@
 .method public final getPlaceOrder$ui_release()I
     .locals 0
 
-    .line 958
+    .line 1034
     iget p0, p0, Landroidx/compose/ui/node/LayoutNodeLayoutDelegate$LookaheadPassDelegate;->placeOrder:I
+
+    return p0
+.end method
+
+.method public final getPlacedOnce$ui_release()Z
+    .locals 0
+
+    .line 1040
+    iget-boolean p0, p0, Landroidx/compose/ui/node/LayoutNodeLayoutDelegate$LookaheadPassDelegate;->placedOnce:Z
 
     return p0
 .end method
@@ -1714,7 +1724,7 @@
 .method public final invalidateIntrinsicsParent(Z)V
     .locals 4
 
-    .line 1343
+    .line 1455
     iget-object v0, p0, Landroidx/compose/ui/node/LayoutNodeLayoutDelegate$LookaheadPassDelegate;->this$0:Landroidx/compose/ui/node/LayoutNodeLayoutDelegate;
 
     invoke-static {v0}, Landroidx/compose/ui/node/LayoutNodeLayoutDelegate;->access$getLayoutNode$p(Landroidx/compose/ui/node/LayoutNodeLayoutDelegate;)Landroidx/compose/ui/node/LayoutNode;
@@ -1725,7 +1735,7 @@
 
     move-result-object v0
 
-    .line 1321
+    .line 1433
     iget-object p0, p0, Landroidx/compose/ui/node/LayoutNodeLayoutDelegate$LookaheadPassDelegate;->this$0:Landroidx/compose/ui/node/LayoutNodeLayoutDelegate;
 
     invoke-static {p0}, Landroidx/compose/ui/node/LayoutNodeLayoutDelegate;->access$getLayoutNode$p(Landroidx/compose/ui/node/LayoutNodeLayoutDelegate;)Landroidx/compose/ui/node/LayoutNode;
@@ -1738,12 +1748,12 @@
 
     if-eqz v0, :cond_6
 
-    .line 1322
+    .line 1434
     sget-object v1, Landroidx/compose/ui/node/LayoutNode$UsageByParent;->NotUsed:Landroidx/compose/ui/node/LayoutNode$UsageByParent;
 
     if-eq p0, v1, :cond_6
 
-    .line 1325
+    .line 1437
     :goto_0
     invoke-virtual {v0}, Landroidx/compose/ui/node/LayoutNode;->getIntrinsicsUsageByParent$ui_release()Landroidx/compose/ui/node/LayoutNode$UsageByParent;
 
@@ -1751,7 +1761,7 @@
 
     if-ne v1, p0, :cond_1
 
-    .line 1326
+    .line 1438
     invoke-virtual {v0}, Landroidx/compose/ui/node/LayoutNode;->getParent$ui_release()Landroidx/compose/ui/node/LayoutNode;
 
     move-result-object v1
@@ -1765,7 +1775,7 @@
 
     goto :goto_0
 
-    .line 1328
+    .line 1440
     :cond_1
     :goto_1
     sget-object v1, Landroidx/compose/ui/node/LayoutNodeLayoutDelegate$LookaheadPassDelegate$WhenMappings;->$EnumSwitchMapping$1:[I
@@ -1784,19 +1794,19 @@
 
     if-ne p0, v2, :cond_3
 
-    .line 1337
+    .line 1449
     invoke-virtual {v0}, Landroidx/compose/ui/node/LayoutNode;->getLookaheadRoot$ui_release()Landroidx/compose/ui/node/LayoutNode;
 
     move-result-object p0
 
     if-eqz p0, :cond_2
 
-    .line 1338
+    .line 1450
     invoke-virtual {v0, p1}, Landroidx/compose/ui/node/LayoutNode;->requestLookaheadRelayout$ui_release(Z)V
 
     goto :goto_2
 
-    .line 1340
+    .line 1452
     :cond_2
     invoke-virtual {v0, p1}, Landroidx/compose/ui/node/LayoutNode;->requestRelayout$ui_release(Z)V
 
@@ -1805,7 +1815,7 @@
     :cond_3
     new-instance p0, Ljava/lang/IllegalStateException;
 
-    .line 1343
+    .line 1455
     const-string p1, "Intrinsics isn\'t used by the parent"
 
     invoke-virtual {p1}, Ljava/lang/Object;->toString()Ljava/lang/String;
@@ -1816,7 +1826,7 @@
 
     throw p0
 
-    .line 1330
+    .line 1442
     :cond_4
     invoke-virtual {v0}, Landroidx/compose/ui/node/LayoutNode;->getLookaheadRoot$ui_release()Landroidx/compose/ui/node/LayoutNode;
 
@@ -1828,12 +1838,12 @@
 
     if-eqz p0, :cond_5
 
-    .line 1331
+    .line 1443
     invoke-static {v0, p1, v3, v2, v1}, Landroidx/compose/ui/node/LayoutNode;->requestLookaheadRemeasure$ui_release$default(Landroidx/compose/ui/node/LayoutNode;ZZILjava/lang/Object;)V
 
     goto :goto_2
 
-    .line 1333
+    .line 1445
     :cond_5
     invoke-static {v0, p1, v3, v2, v1}, Landroidx/compose/ui/node/LayoutNode;->requestRemeasure$ui_release$default(Landroidx/compose/ui/node/LayoutNode;ZZILjava/lang/Object;)V
 
@@ -1847,7 +1857,7 @@
 
     const/4 v0, 0x1
 
-    .line 1349
+    .line 1461
     iput-boolean v0, p0, Landroidx/compose/ui/node/LayoutNodeLayoutDelegate$LookaheadPassDelegate;->parentDataDirty:Z
 
     return-void
@@ -1856,7 +1866,7 @@
 .method public isPlaced()Z
     .locals 0
 
-    .line 977
+    .line 1053
     iget-boolean p0, p0, Landroidx/compose/ui/node/LayoutNodeLayoutDelegate$LookaheadPassDelegate;->isPlaced:Z
 
     return p0
@@ -1867,17 +1877,17 @@
 
     const/4 v0, 0x1
 
-    .line 1007
+    .line 1083
     iput-boolean v0, p0, Landroidx/compose/ui/node/LayoutNodeLayoutDelegate$LookaheadPassDelegate;->layingOutChildren:Z
 
-    .line 1008
+    .line 1084
     invoke-virtual {p0}, Landroidx/compose/ui/node/LayoutNodeLayoutDelegate$LookaheadPassDelegate;->getAlignmentLines()Landroidx/compose/ui/node/AlignmentLines;
 
     move-result-object v1
 
     invoke-virtual {v1}, Landroidx/compose/ui/node/AlignmentLines;->recalculateQueryOwner()V
 
-    .line 1010
+    .line 1086
     iget-object v1, p0, Landroidx/compose/ui/node/LayoutNodeLayoutDelegate$LookaheadPassDelegate;->this$0:Landroidx/compose/ui/node/LayoutNodeLayoutDelegate;
 
     invoke-virtual {v1}, Landroidx/compose/ui/node/LayoutNodeLayoutDelegate;->getLookaheadLayoutPending$ui_release()Z
@@ -1886,10 +1896,10 @@
 
     if-eqz v1, :cond_0
 
-    .line 1011
+    .line 1087
     invoke-direct {p0}, Landroidx/compose/ui/node/LayoutNodeLayoutDelegate$LookaheadPassDelegate;->onBeforeLayoutChildren()V
 
-    .line 1013
+    .line 1089
     :cond_0
     invoke-virtual {p0}, Landroidx/compose/ui/node/LayoutNodeLayoutDelegate$LookaheadPassDelegate;->getInnerCoordinator()Landroidx/compose/ui/node/NodeCoordinator;
 
@@ -1901,7 +1911,7 @@
 
     invoke-static {v1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;)V
 
-    .line 1016
+    .line 1092
     iget-object v2, p0, Landroidx/compose/ui/node/LayoutNodeLayoutDelegate$LookaheadPassDelegate;->this$0:Landroidx/compose/ui/node/LayoutNodeLayoutDelegate;
 
     invoke-static {v2}, Landroidx/compose/ui/node/LayoutNodeLayoutDelegate;->access$getLookaheadLayoutPendingForAlignment$p(Landroidx/compose/ui/node/LayoutNodeLayoutDelegate;)Z
@@ -1912,7 +1922,7 @@
 
     if-nez v2, :cond_1
 
-    .line 1017
+    .line 1093
     iget-boolean v2, p0, Landroidx/compose/ui/node/LayoutNodeLayoutDelegate$LookaheadPassDelegate;->duringAlignmentLinesQuery:Z
 
     if-nez v2, :cond_3
@@ -1923,7 +1933,7 @@
 
     if-nez v2, :cond_3
 
-    .line 1018
+    .line 1094
     iget-object v2, p0, Landroidx/compose/ui/node/LayoutNodeLayoutDelegate$LookaheadPassDelegate;->this$0:Landroidx/compose/ui/node/LayoutNodeLayoutDelegate;
 
     invoke-virtual {v2}, Landroidx/compose/ui/node/LayoutNodeLayoutDelegate;->getLookaheadLayoutPending$ui_release()Z
@@ -1932,27 +1942,27 @@
 
     if-eqz v2, :cond_3
 
-    .line 1020
+    .line 1096
     :cond_1
     iget-object v2, p0, Landroidx/compose/ui/node/LayoutNodeLayoutDelegate$LookaheadPassDelegate;->this$0:Landroidx/compose/ui/node/LayoutNodeLayoutDelegate;
 
     invoke-static {v2, v3}, Landroidx/compose/ui/node/LayoutNodeLayoutDelegate;->access$setLookaheadLayoutPending$p(Landroidx/compose/ui/node/LayoutNodeLayoutDelegate;Z)V
 
-    .line 1021
+    .line 1097
     iget-object v2, p0, Landroidx/compose/ui/node/LayoutNodeLayoutDelegate$LookaheadPassDelegate;->this$0:Landroidx/compose/ui/node/LayoutNodeLayoutDelegate;
 
     invoke-virtual {v2}, Landroidx/compose/ui/node/LayoutNodeLayoutDelegate;->getLayoutState$ui_release()Landroidx/compose/ui/node/LayoutNode$LayoutState;
 
     move-result-object v2
 
-    .line 1022
+    .line 1098
     iget-object v4, p0, Landroidx/compose/ui/node/LayoutNodeLayoutDelegate$LookaheadPassDelegate;->this$0:Landroidx/compose/ui/node/LayoutNodeLayoutDelegate;
 
     sget-object v5, Landroidx/compose/ui/node/LayoutNode$LayoutState;->LookaheadLayingOut:Landroidx/compose/ui/node/LayoutNode$LayoutState;
 
     invoke-static {v4, v5}, Landroidx/compose/ui/node/LayoutNodeLayoutDelegate;->access$setLayoutState$p(Landroidx/compose/ui/node/LayoutNodeLayoutDelegate;Landroidx/compose/ui/node/LayoutNode$LayoutState;)V
 
-    .line 1023
+    .line 1099
     iget-object v4, p0, Landroidx/compose/ui/node/LayoutNodeLayoutDelegate$LookaheadPassDelegate;->this$0:Landroidx/compose/ui/node/LayoutNodeLayoutDelegate;
 
     invoke-static {v4}, Landroidx/compose/ui/node/LayoutNodeLayoutDelegate;->access$getLayoutNode$p(Landroidx/compose/ui/node/LayoutNodeLayoutDelegate;)Landroidx/compose/ui/node/LayoutNode;
@@ -1963,12 +1973,12 @@
 
     move-result-object v4
 
-    .line 1024
+    .line 1100
     iget-object v5, p0, Landroidx/compose/ui/node/LayoutNodeLayoutDelegate$LookaheadPassDelegate;->this$0:Landroidx/compose/ui/node/LayoutNodeLayoutDelegate;
 
     invoke-virtual {v5, v3}, Landroidx/compose/ui/node/LayoutNodeLayoutDelegate;->setCoordinatesAccessedDuringPlacement(Z)V
 
-    .line 1025
+    .line 1101
     invoke-interface {v4}, Landroidx/compose/ui/node/Owner;->getSnapshotObserver()Landroidx/compose/ui/node/OwnerSnapshotObserver;
 
     move-result-object v6
@@ -1981,7 +1991,9 @@
 
     new-instance v4, Landroidx/compose/ui/node/LayoutNodeLayoutDelegate$LookaheadPassDelegate$layoutChildren$1;
 
-    invoke-direct {v4, p0, v1}, Landroidx/compose/ui/node/LayoutNodeLayoutDelegate$LookaheadPassDelegate$layoutChildren$1;-><init>(Landroidx/compose/ui/node/LayoutNodeLayoutDelegate$LookaheadPassDelegate;Landroidx/compose/ui/node/LookaheadDelegate;)V
+    iget-object v5, p0, Landroidx/compose/ui/node/LayoutNodeLayoutDelegate$LookaheadPassDelegate;->this$0:Landroidx/compose/ui/node/LayoutNodeLayoutDelegate;
+
+    invoke-direct {v4, p0, v1, v5}, Landroidx/compose/ui/node/LayoutNodeLayoutDelegate$LookaheadPassDelegate$layoutChildren$1;-><init>(Landroidx/compose/ui/node/LayoutNodeLayoutDelegate$LookaheadPassDelegate;Landroidx/compose/ui/node/LookaheadDelegate;Landroidx/compose/ui/node/LayoutNodeLayoutDelegate;)V
 
     move-object v9, v4
 
@@ -1995,12 +2007,12 @@
 
     invoke-static/range {v6 .. v11}, Landroidx/compose/ui/node/OwnerSnapshotObserver;->observeLayoutSnapshotReads$ui_release$default(Landroidx/compose/ui/node/OwnerSnapshotObserver;Landroidx/compose/ui/node/LayoutNode;ZLkotlin/jvm/functions/Function0;ILjava/lang/Object;)V
 
-    .line 1037
+    .line 1124
     iget-object v4, p0, Landroidx/compose/ui/node/LayoutNodeLayoutDelegate$LookaheadPassDelegate;->this$0:Landroidx/compose/ui/node/LayoutNodeLayoutDelegate;
 
     invoke-static {v4, v2}, Landroidx/compose/ui/node/LayoutNodeLayoutDelegate;->access$setLayoutState$p(Landroidx/compose/ui/node/LayoutNodeLayoutDelegate;Landroidx/compose/ui/node/LayoutNode$LayoutState;)V
 
-    .line 1038
+    .line 1125
     iget-object v2, p0, Landroidx/compose/ui/node/LayoutNodeLayoutDelegate$LookaheadPassDelegate;->this$0:Landroidx/compose/ui/node/LayoutNodeLayoutDelegate;
 
     invoke-virtual {v2}, Landroidx/compose/ui/node/LayoutNodeLayoutDelegate;->getCoordinatesAccessedDuringPlacement()Z
@@ -2009,23 +2021,23 @@
 
     if-eqz v2, :cond_2
 
-    .line 1039
+    .line 1126
     invoke-virtual {v1}, Landroidx/compose/ui/node/LookaheadDelegate;->isPlacingForAlignment$ui_release()Z
 
     move-result v1
 
     if-eqz v1, :cond_2
 
-    .line 1041
+    .line 1128
     invoke-virtual {p0}, Landroidx/compose/ui/node/LayoutNodeLayoutDelegate$LookaheadPassDelegate;->requestLayout()V
 
-    .line 1043
+    .line 1130
     :cond_2
     iget-object v1, p0, Landroidx/compose/ui/node/LayoutNodeLayoutDelegate$LookaheadPassDelegate;->this$0:Landroidx/compose/ui/node/LayoutNodeLayoutDelegate;
 
     invoke-static {v1, v3}, Landroidx/compose/ui/node/LayoutNodeLayoutDelegate;->access$setLookaheadLayoutPendingForAlignment$p(Landroidx/compose/ui/node/LayoutNodeLayoutDelegate;Z)V
 
-    .line 1045
+    .line 1132
     :cond_3
     invoke-virtual {p0}, Landroidx/compose/ui/node/LayoutNodeLayoutDelegate$LookaheadPassDelegate;->getAlignmentLines()Landroidx/compose/ui/node/AlignmentLines;
 
@@ -2037,14 +2049,14 @@
 
     if-eqz v1, :cond_4
 
-    .line 1046
+    .line 1133
     invoke-virtual {p0}, Landroidx/compose/ui/node/LayoutNodeLayoutDelegate$LookaheadPassDelegate;->getAlignmentLines()Landroidx/compose/ui/node/AlignmentLines;
 
     move-result-object v1
 
     invoke-virtual {v1, v0}, Landroidx/compose/ui/node/AlignmentLines;->setPreviousUsedDuringParentLayout$ui_release(Z)V
 
-    .line 1048
+    .line 1135
     :cond_4
     invoke-virtual {p0}, Landroidx/compose/ui/node/LayoutNodeLayoutDelegate$LookaheadPassDelegate;->getAlignmentLines()Landroidx/compose/ui/node/AlignmentLines;
 
@@ -2072,7 +2084,7 @@
 
     invoke-virtual {v0}, Landroidx/compose/ui/node/AlignmentLines;->recalculate()V
 
-    .line 1050
+    .line 1137
     :cond_5
     iput-boolean v3, p0, Landroidx/compose/ui/node/LayoutNodeLayoutDelegate$LookaheadPassDelegate;->layingOutChildren:Z
 
@@ -2082,10 +2094,10 @@
 .method public maxIntrinsicHeight(I)I
     .locals 0
 
-    .line 1286
+    .line 1398
     invoke-direct {p0}, Landroidx/compose/ui/node/LayoutNodeLayoutDelegate$LookaheadPassDelegate;->onIntrinsicsQueried()V
 
-    .line 1287
+    .line 1399
     iget-object p0, p0, Landroidx/compose/ui/node/LayoutNodeLayoutDelegate$LookaheadPassDelegate;->this$0:Landroidx/compose/ui/node/LayoutNodeLayoutDelegate;
 
     invoke-virtual {p0}, Landroidx/compose/ui/node/LayoutNodeLayoutDelegate;->getOuterCoordinator()Landroidx/compose/ui/node/NodeCoordinator;
@@ -2108,10 +2120,10 @@
 .method public maxIntrinsicWidth(I)I
     .locals 0
 
-    .line 1276
+    .line 1388
     invoke-direct {p0}, Landroidx/compose/ui/node/LayoutNodeLayoutDelegate$LookaheadPassDelegate;->onIntrinsicsQueried()V
 
-    .line 1277
+    .line 1389
     iget-object p0, p0, Landroidx/compose/ui/node/LayoutNodeLayoutDelegate$LookaheadPassDelegate;->this$0:Landroidx/compose/ui/node/LayoutNodeLayoutDelegate;
 
     invoke-virtual {p0}, Landroidx/compose/ui/node/LayoutNodeLayoutDelegate;->getOuterCoordinator()Landroidx/compose/ui/node/NodeCoordinator;
@@ -2132,9 +2144,69 @@
 .end method
 
 .method public measure-BRTryo0(J)Landroidx/compose/ui/layout/Placeable;
-    .locals 2
+    .locals 3
 
-    .line 1136
+    .line 1223
+    iget-object v0, p0, Landroidx/compose/ui/node/LayoutNodeLayoutDelegate$LookaheadPassDelegate;->this$0:Landroidx/compose/ui/node/LayoutNodeLayoutDelegate;
+
+    invoke-static {v0}, Landroidx/compose/ui/node/LayoutNodeLayoutDelegate;->access$getLayoutNode$p(Landroidx/compose/ui/node/LayoutNodeLayoutDelegate;)Landroidx/compose/ui/node/LayoutNode;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Landroidx/compose/ui/node/LayoutNode;->getParent$ui_release()Landroidx/compose/ui/node/LayoutNode;
+
+    move-result-object v0
+
+    const/4 v1, 0x0
+
+    if-eqz v0, :cond_0
+
+    invoke-virtual {v0}, Landroidx/compose/ui/node/LayoutNode;->getLayoutState$ui_release()Landroidx/compose/ui/node/LayoutNode$LayoutState;
+
+    move-result-object v0
+
+    goto :goto_0
+
+    :cond_0
+    move-object v0, v1
+
+    :goto_0
+    sget-object v2, Landroidx/compose/ui/node/LayoutNode$LayoutState;->LookaheadMeasuring:Landroidx/compose/ui/node/LayoutNode$LayoutState;
+
+    if-eq v0, v2, :cond_2
+
+    .line 1224
+    iget-object v0, p0, Landroidx/compose/ui/node/LayoutNodeLayoutDelegate$LookaheadPassDelegate;->this$0:Landroidx/compose/ui/node/LayoutNodeLayoutDelegate;
+
+    invoke-static {v0}, Landroidx/compose/ui/node/LayoutNodeLayoutDelegate;->access$getLayoutNode$p(Landroidx/compose/ui/node/LayoutNodeLayoutDelegate;)Landroidx/compose/ui/node/LayoutNode;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Landroidx/compose/ui/node/LayoutNode;->getParent$ui_release()Landroidx/compose/ui/node/LayoutNode;
+
+    move-result-object v0
+
+    if-eqz v0, :cond_1
+
+    invoke-virtual {v0}, Landroidx/compose/ui/node/LayoutNode;->getLayoutState$ui_release()Landroidx/compose/ui/node/LayoutNode$LayoutState;
+
+    move-result-object v1
+
+    :cond_1
+    sget-object v0, Landroidx/compose/ui/node/LayoutNode$LayoutState;->LookaheadLayingOut:Landroidx/compose/ui/node/LayoutNode$LayoutState;
+
+    if-ne v1, v0, :cond_3
+
+    .line 1226
+    :cond_2
+    iget-object v0, p0, Landroidx/compose/ui/node/LayoutNodeLayoutDelegate$LookaheadPassDelegate;->this$0:Landroidx/compose/ui/node/LayoutNodeLayoutDelegate;
+
+    const/4 v1, 0x0
+
+    invoke-static {v0, v1}, Landroidx/compose/ui/node/LayoutNodeLayoutDelegate;->access$setDetachedFromParentLookaheadPass$p(Landroidx/compose/ui/node/LayoutNodeLayoutDelegate;Z)V
+
+    .line 1228
+    :cond_3
     iget-object v0, p0, Landroidx/compose/ui/node/LayoutNodeLayoutDelegate$LookaheadPassDelegate;->this$0:Landroidx/compose/ui/node/LayoutNodeLayoutDelegate;
 
     invoke-static {v0}, Landroidx/compose/ui/node/LayoutNodeLayoutDelegate;->access$getLayoutNode$p(Landroidx/compose/ui/node/LayoutNodeLayoutDelegate;)Landroidx/compose/ui/node/LayoutNode;
@@ -2143,7 +2215,7 @@
 
     invoke-direct {p0, v0}, Landroidx/compose/ui/node/LayoutNodeLayoutDelegate$LookaheadPassDelegate;->trackLookaheadMeasurementByParent(Landroidx/compose/ui/node/LayoutNode;)V
 
-    .line 1137
+    .line 1229
     iget-object v0, p0, Landroidx/compose/ui/node/LayoutNodeLayoutDelegate$LookaheadPassDelegate;->this$0:Landroidx/compose/ui/node/LayoutNodeLayoutDelegate;
 
     invoke-static {v0}, Landroidx/compose/ui/node/LayoutNodeLayoutDelegate;->access$getLayoutNode$p(Landroidx/compose/ui/node/LayoutNodeLayoutDelegate;)Landroidx/compose/ui/node/LayoutNode;
@@ -2156,9 +2228,9 @@
 
     sget-object v1, Landroidx/compose/ui/node/LayoutNode$UsageByParent;->NotUsed:Landroidx/compose/ui/node/LayoutNode$UsageByParent;
 
-    if-ne v0, v1, :cond_0
+    if-ne v0, v1, :cond_4
 
-    .line 1140
+    .line 1232
     iget-object v0, p0, Landroidx/compose/ui/node/LayoutNodeLayoutDelegate$LookaheadPassDelegate;->this$0:Landroidx/compose/ui/node/LayoutNodeLayoutDelegate;
 
     invoke-static {v0}, Landroidx/compose/ui/node/LayoutNodeLayoutDelegate;->access$getLayoutNode$p(Landroidx/compose/ui/node/LayoutNodeLayoutDelegate;)Landroidx/compose/ui/node/LayoutNode;
@@ -2167,11 +2239,11 @@
 
     invoke-virtual {v0}, Landroidx/compose/ui/node/LayoutNode;->clearSubtreeIntrinsicsUsage$ui_release()V
 
-    .line 1146
-    :cond_0
+    .line 1238
+    :cond_4
     invoke-virtual {p0, p1, p2}, Landroidx/compose/ui/node/LayoutNodeLayoutDelegate$LookaheadPassDelegate;->remeasure-BRTryo0(J)Z
 
-    .line 1147
+    .line 1239
     check-cast p0, Landroidx/compose/ui/layout/Placeable;
 
     return-object p0
@@ -2180,10 +2252,10 @@
 .method public minIntrinsicHeight(I)I
     .locals 0
 
-    .line 1281
+    .line 1393
     invoke-direct {p0}, Landroidx/compose/ui/node/LayoutNodeLayoutDelegate$LookaheadPassDelegate;->onIntrinsicsQueried()V
 
-    .line 1282
+    .line 1394
     iget-object p0, p0, Landroidx/compose/ui/node/LayoutNodeLayoutDelegate$LookaheadPassDelegate;->this$0:Landroidx/compose/ui/node/LayoutNodeLayoutDelegate;
 
     invoke-virtual {p0}, Landroidx/compose/ui/node/LayoutNodeLayoutDelegate;->getOuterCoordinator()Landroidx/compose/ui/node/NodeCoordinator;
@@ -2206,10 +2278,10 @@
 .method public minIntrinsicWidth(I)I
     .locals 0
 
-    .line 1271
+    .line 1383
     invoke-direct {p0}, Landroidx/compose/ui/node/LayoutNodeLayoutDelegate$LookaheadPassDelegate;->onIntrinsicsQueried()V
 
-    .line 1272
+    .line 1384
     iget-object p0, p0, Landroidx/compose/ui/node/LayoutNodeLayoutDelegate$LookaheadPassDelegate;->this$0:Landroidx/compose/ui/node/LayoutNodeLayoutDelegate;
 
     invoke-virtual {p0}, Landroidx/compose/ui/node/LayoutNodeLayoutDelegate;->getOuterCoordinator()Landroidx/compose/ui/node/NodeCoordinator;
@@ -2232,7 +2304,7 @@
 .method public final notifyChildrenUsingCoordinatesWhilePlacing()V
     .locals 7
 
-    .line 1121
+    .line 1208
     iget-object v0, p0, Landroidx/compose/ui/node/LayoutNodeLayoutDelegate$LookaheadPassDelegate;->this$0:Landroidx/compose/ui/node/LayoutNodeLayoutDelegate;
 
     invoke-virtual {v0}, Landroidx/compose/ui/node/LayoutNodeLayoutDelegate;->getChildrenAccessingCoordinatesDuringPlacement()I
@@ -2241,26 +2313,26 @@
 
     if-lez v0, :cond_4
 
-    .line 1122
+    .line 1209
     iget-object p0, p0, Landroidx/compose/ui/node/LayoutNodeLayoutDelegate$LookaheadPassDelegate;->this$0:Landroidx/compose/ui/node/LayoutNodeLayoutDelegate;
 
     invoke-static {p0}, Landroidx/compose/ui/node/LayoutNodeLayoutDelegate;->access$getLayoutNode$p(Landroidx/compose/ui/node/LayoutNodeLayoutDelegate;)Landroidx/compose/ui/node/LayoutNode;
 
     move-result-object p0
 
-    .line 1733
+    .line 1862
     invoke-virtual {p0}, Landroidx/compose/ui/node/LayoutNode;->get_children$ui_release()Landroidx/compose/runtime/collection/MutableVector;
 
     move-result-object p0
 
-    .line 1735
+    .line 1864
     invoke-virtual {p0}, Landroidx/compose/runtime/collection/MutableVector;->getSize()I
 
     move-result v0
 
     if-lez v0, :cond_4
 
-    .line 1738
+    .line 1867
     invoke-virtual {p0}, Landroidx/compose/runtime/collection/MutableVector;->getContent()[Ljava/lang/Object;
 
     move-result-object p0
@@ -2269,32 +2341,32 @@
 
     move v2, v1
 
-    .line 1740
+    .line 1869
     :cond_0
     aget-object v3, p0, v2
 
     check-cast v3, Landroidx/compose/ui/node/LayoutNode;
 
-    .line 1123
+    .line 1210
     invoke-virtual {v3}, Landroidx/compose/ui/node/LayoutNode;->getLayoutDelegate$ui_release()Landroidx/compose/ui/node/LayoutNodeLayoutDelegate;
 
     move-result-object v4
 
-    .line 1124
+    .line 1211
     invoke-virtual {v4}, Landroidx/compose/ui/node/LayoutNodeLayoutDelegate;->getCoordinatesAccessedDuringPlacement()Z
 
     move-result v5
 
     if-nez v5, :cond_1
 
-    .line 1125
+    .line 1212
     invoke-virtual {v4}, Landroidx/compose/ui/node/LayoutNodeLayoutDelegate;->getCoordinatesAccessedDuringModifierPlacement()Z
 
     move-result v5
 
     if-eqz v5, :cond_2
 
-    .line 1126
+    .line 1213
     :cond_1
     invoke-virtual {v4}, Landroidx/compose/ui/node/LayoutNodeLayoutDelegate;->getLayoutPending$ui_release()Z
 
@@ -2306,10 +2378,10 @@
 
     const/4 v6, 0x1
 
-    .line 1127
+    .line 1214
     invoke-static {v3, v1, v6, v5}, Landroidx/compose/ui/node/LayoutNode;->requestLookaheadRelayout$ui_release$default(Landroidx/compose/ui/node/LayoutNode;ZILjava/lang/Object;)V
 
-    .line 1129
+    .line 1216
     :cond_2
     invoke-virtual {v4}, Landroidx/compose/ui/node/LayoutNodeLayoutDelegate;->getLookaheadPassDelegate$ui_release()Landroidx/compose/ui/node/LayoutNodeLayoutDelegate$LookaheadPassDelegate;
 
@@ -2317,7 +2389,7 @@
 
     if-eqz v3, :cond_3
 
-    .line 1130
+    .line 1217
     invoke-virtual {v3}, Landroidx/compose/ui/node/LayoutNodeLayoutDelegate$LookaheadPassDelegate;->notifyChildrenUsingCoordinatesWhilePlacing()V
 
     :cond_3
@@ -2334,105 +2406,124 @@
 
     const v0, 0x7fffffff
 
-    .line 1472
+    .line 1600
     iput v0, p0, Landroidx/compose/ui/node/LayoutNodeLayoutDelegate$LookaheadPassDelegate;->placeOrder:I
 
-    .line 1473
+    .line 1601
     iput v0, p0, Landroidx/compose/ui/node/LayoutNodeLayoutDelegate$LookaheadPassDelegate;->previousPlaceOrder:I
 
     const/4 v0, 0x0
 
-    .line 1474
+    .line 1602
     invoke-virtual {p0, v0}, Landroidx/compose/ui/node/LayoutNodeLayoutDelegate$LookaheadPassDelegate;->setPlaced(Z)V
 
     return-void
 .end method
 
 .method public final onNodePlaced$ui_release()V
-    .locals 3
+    .locals 4
 
-    .line 1363
-    iget-object v0, p0, Landroidx/compose/ui/node/LayoutNodeLayoutDelegate$LookaheadPassDelegate;->this$0:Landroidx/compose/ui/node/LayoutNodeLayoutDelegate;
+    const/4 v0, 0x1
 
-    invoke-static {v0}, Landroidx/compose/ui/node/LayoutNodeLayoutDelegate;->access$getLayoutNode$p(Landroidx/compose/ui/node/LayoutNodeLayoutDelegate;)Landroidx/compose/ui/node/LayoutNode;
+    .line 1477
+    iput-boolean v0, p0, Landroidx/compose/ui/node/LayoutNodeLayoutDelegate$LookaheadPassDelegate;->onNodePlacedCalled:Z
 
-    move-result-object v0
+    .line 1478
+    iget-object v1, p0, Landroidx/compose/ui/node/LayoutNodeLayoutDelegate$LookaheadPassDelegate;->this$0:Landroidx/compose/ui/node/LayoutNodeLayoutDelegate;
 
-    invoke-virtual {v0}, Landroidx/compose/ui/node/LayoutNode;->getParent$ui_release()Landroidx/compose/ui/node/LayoutNode;
+    invoke-static {v1}, Landroidx/compose/ui/node/LayoutNodeLayoutDelegate;->access$getLayoutNode$p(Landroidx/compose/ui/node/LayoutNodeLayoutDelegate;)Landroidx/compose/ui/node/LayoutNode;
 
-    move-result-object v0
+    move-result-object v1
 
-    .line 1364
+    invoke-virtual {v1}, Landroidx/compose/ui/node/LayoutNode;->getParent$ui_release()Landroidx/compose/ui/node/LayoutNode;
+
+    move-result-object v1
+
+    .line 1479
     invoke-virtual {p0}, Landroidx/compose/ui/node/LayoutNodeLayoutDelegate$LookaheadPassDelegate;->isPlaced()Z
 
-    move-result v1
+    move-result v2
 
-    if-nez v1, :cond_0
+    const/4 v3, 0x0
 
-    .line 1365
+    if-nez v2, :cond_0
+
+    .line 1480
     invoke-direct {p0}, Landroidx/compose/ui/node/LayoutNodeLayoutDelegate$LookaheadPassDelegate;->markNodeAndSubtreeAsPlaced()V
 
+    .line 1481
+    iget-boolean v2, p0, Landroidx/compose/ui/node/LayoutNodeLayoutDelegate$LookaheadPassDelegate;->relayoutWithoutParentInProgress:Z
+
+    if-eqz v2, :cond_0
+
+    if-eqz v1, :cond_0
+
+    const/4 v2, 0x0
+
+    .line 1484
+    invoke-static {v1, v3, v0, v2}, Landroidx/compose/ui/node/LayoutNode;->requestLookaheadRelayout$ui_release$default(Landroidx/compose/ui/node/LayoutNode;ZILjava/lang/Object;)V
+
     :cond_0
-    if-eqz v0, :cond_3
+    if-eqz v1, :cond_3
 
-    .line 1368
-    iget-boolean v1, p0, Landroidx/compose/ui/node/LayoutNodeLayoutDelegate$LookaheadPassDelegate;->relayoutWithoutParentInProgress:Z
+    .line 1488
+    iget-boolean v2, p0, Landroidx/compose/ui/node/LayoutNodeLayoutDelegate$LookaheadPassDelegate;->relayoutWithoutParentInProgress:Z
 
-    if-nez v1, :cond_4
+    if-nez v2, :cond_4
 
-    .line 1369
-    invoke-virtual {v0}, Landroidx/compose/ui/node/LayoutNode;->getLayoutState$ui_release()Landroidx/compose/ui/node/LayoutNode$LayoutState;
+    .line 1489
+    invoke-virtual {v1}, Landroidx/compose/ui/node/LayoutNode;->getLayoutState$ui_release()Landroidx/compose/ui/node/LayoutNode$LayoutState;
 
-    move-result-object v1
+    move-result-object v2
 
-    sget-object v2, Landroidx/compose/ui/node/LayoutNode$LayoutState;->LayingOut:Landroidx/compose/ui/node/LayoutNode$LayoutState;
+    sget-object v3, Landroidx/compose/ui/node/LayoutNode$LayoutState;->LayingOut:Landroidx/compose/ui/node/LayoutNode$LayoutState;
 
-    if-eq v1, v2, :cond_1
+    if-eq v2, v3, :cond_1
 
-    .line 1370
-    invoke-virtual {v0}, Landroidx/compose/ui/node/LayoutNode;->getLayoutState$ui_release()Landroidx/compose/ui/node/LayoutNode$LayoutState;
+    .line 1490
+    invoke-virtual {v1}, Landroidx/compose/ui/node/LayoutNode;->getLayoutState$ui_release()Landroidx/compose/ui/node/LayoutNode$LayoutState;
 
-    move-result-object v1
+    move-result-object v2
 
-    sget-object v2, Landroidx/compose/ui/node/LayoutNode$LayoutState;->LookaheadLayingOut:Landroidx/compose/ui/node/LayoutNode$LayoutState;
+    sget-object v3, Landroidx/compose/ui/node/LayoutNode$LayoutState;->LookaheadLayingOut:Landroidx/compose/ui/node/LayoutNode$LayoutState;
 
-    if-ne v1, v2, :cond_4
+    if-ne v2, v3, :cond_4
 
-    .line 1373
+    .line 1493
     :cond_1
-    iget v1, p0, Landroidx/compose/ui/node/LayoutNodeLayoutDelegate$LookaheadPassDelegate;->placeOrder:I
+    iget v2, p0, Landroidx/compose/ui/node/LayoutNodeLayoutDelegate$LookaheadPassDelegate;->placeOrder:I
 
-    const v2, 0x7fffffff
+    const v3, 0x7fffffff
 
-    if-ne v1, v2, :cond_2
+    if-ne v2, v3, :cond_2
 
-    .line 1376
-    invoke-virtual {v0}, Landroidx/compose/ui/node/LayoutNode;->getLayoutDelegate$ui_release()Landroidx/compose/ui/node/LayoutNodeLayoutDelegate;
+    .line 1496
+    invoke-virtual {v1}, Landroidx/compose/ui/node/LayoutNode;->getLayoutDelegate$ui_release()Landroidx/compose/ui/node/LayoutNodeLayoutDelegate;
+
+    move-result-object v2
+
+    invoke-static {v2}, Landroidx/compose/ui/node/LayoutNodeLayoutDelegate;->access$getNextChildLookaheadPlaceOrder$p(Landroidx/compose/ui/node/LayoutNodeLayoutDelegate;)I
+
+    move-result v2
+
+    iput v2, p0, Landroidx/compose/ui/node/LayoutNodeLayoutDelegate$LookaheadPassDelegate;->placeOrder:I
+
+    .line 1497
+    invoke-virtual {v1}, Landroidx/compose/ui/node/LayoutNode;->getLayoutDelegate$ui_release()Landroidx/compose/ui/node/LayoutNodeLayoutDelegate;
 
     move-result-object v1
 
     invoke-static {v1}, Landroidx/compose/ui/node/LayoutNodeLayoutDelegate;->access$getNextChildLookaheadPlaceOrder$p(Landroidx/compose/ui/node/LayoutNodeLayoutDelegate;)I
 
-    move-result v1
+    move-result v2
 
-    iput v1, p0, Landroidx/compose/ui/node/LayoutNodeLayoutDelegate$LookaheadPassDelegate;->placeOrder:I
+    add-int/2addr v2, v0
 
-    .line 1377
-    invoke-virtual {v0}, Landroidx/compose/ui/node/LayoutNode;->getLayoutDelegate$ui_release()Landroidx/compose/ui/node/LayoutNodeLayoutDelegate;
-
-    move-result-object v0
-
-    invoke-static {v0}, Landroidx/compose/ui/node/LayoutNodeLayoutDelegate;->access$getNextChildLookaheadPlaceOrder$p(Landroidx/compose/ui/node/LayoutNodeLayoutDelegate;)I
-
-    move-result v1
-
-    add-int/lit8 v1, v1, 0x1
-
-    invoke-static {v0, v1}, Landroidx/compose/ui/node/LayoutNodeLayoutDelegate;->access$setNextChildLookaheadPlaceOrder$p(Landroidx/compose/ui/node/LayoutNodeLayoutDelegate;I)V
+    invoke-static {v1, v2}, Landroidx/compose/ui/node/LayoutNodeLayoutDelegate;->access$setNextChildLookaheadPlaceOrder$p(Landroidx/compose/ui/node/LayoutNodeLayoutDelegate;I)V
 
     goto :goto_0
 
-    .line 1373
+    .line 1493
     :cond_2
     new-instance p0, Ljava/lang/IllegalStateException;
 
@@ -2446,13 +2537,11 @@
 
     throw p0
 
+    .line 1504
     :cond_3
-    const/4 v0, 0x0
+    iput v3, p0, Landroidx/compose/ui/node/LayoutNodeLayoutDelegate$LookaheadPassDelegate;->placeOrder:I
 
-    .line 1384
-    iput v0, p0, Landroidx/compose/ui/node/LayoutNodeLayoutDelegate$LookaheadPassDelegate;->placeOrder:I
-
-    .line 1386
+    .line 1506
     :cond_4
     :goto_0
     invoke-virtual {p0}, Landroidx/compose/ui/node/LayoutNodeLayoutDelegate$LookaheadPassDelegate;->layoutChildren()V
@@ -2473,104 +2562,137 @@
         }
     .end annotation
 
-    .line 1223
-    iget-object v0, p0, Landroidx/compose/ui/node/LayoutNodeLayoutDelegate$LookaheadPassDelegate;->this$0:Landroidx/compose/ui/node/LayoutNodeLayoutDelegate;
-
-    sget-object v1, Landroidx/compose/ui/node/LayoutNode$LayoutState;->LookaheadLayingOut:Landroidx/compose/ui/node/LayoutNode$LayoutState;
-
-    invoke-static {v0, v1}, Landroidx/compose/ui/node/LayoutNodeLayoutDelegate;->access$setLayoutState$p(Landroidx/compose/ui/node/LayoutNodeLayoutDelegate;Landroidx/compose/ui/node/LayoutNode$LayoutState;)V
-
-    const/4 v0, 0x1
-
-    .line 1224
-    iput-boolean v0, p0, Landroidx/compose/ui/node/LayoutNodeLayoutDelegate$LookaheadPassDelegate;->placedOnce:Z
-
-    .line 1225
-    iget-wide v1, p0, Landroidx/compose/ui/node/LayoutNodeLayoutDelegate$LookaheadPassDelegate;->lastPosition:J
-
-    invoke-static {p1, p2, v1, v2}, Landroidx/compose/ui/unit/IntOffset;->equals-impl0(JJ)Z
-
-    move-result v1
-
-    if-nez v1, :cond_2
-
-    .line 1226
-    iget-object v1, p0, Landroidx/compose/ui/node/LayoutNodeLayoutDelegate$LookaheadPassDelegate;->this$0:Landroidx/compose/ui/node/LayoutNodeLayoutDelegate;
-
-    invoke-virtual {v1}, Landroidx/compose/ui/node/LayoutNodeLayoutDelegate;->getCoordinatesAccessedDuringModifierPlacement()Z
-
-    move-result v1
-
-    if-nez v1, :cond_0
-
-    .line 1227
-    iget-object v1, p0, Landroidx/compose/ui/node/LayoutNodeLayoutDelegate$LookaheadPassDelegate;->this$0:Landroidx/compose/ui/node/LayoutNodeLayoutDelegate;
-
-    invoke-virtual {v1}, Landroidx/compose/ui/node/LayoutNodeLayoutDelegate;->getCoordinatesAccessedDuringPlacement()Z
-
-    move-result v1
-
-    if-eqz v1, :cond_1
-
-    .line 1228
-    :cond_0
-    iget-object v1, p0, Landroidx/compose/ui/node/LayoutNodeLayoutDelegate$LookaheadPassDelegate;->this$0:Landroidx/compose/ui/node/LayoutNodeLayoutDelegate;
-
-    invoke-static {v1, v0}, Landroidx/compose/ui/node/LayoutNodeLayoutDelegate;->access$setLookaheadLayoutPending$p(Landroidx/compose/ui/node/LayoutNodeLayoutDelegate;Z)V
-
-    .line 1230
-    :cond_1
-    invoke-virtual {p0}, Landroidx/compose/ui/node/LayoutNodeLayoutDelegate$LookaheadPassDelegate;->notifyChildrenUsingCoordinatesWhilePlacing()V
-
-    .line 1232
-    :cond_2
+    .line 1324
     iget-object v0, p0, Landroidx/compose/ui/node/LayoutNodeLayoutDelegate$LookaheadPassDelegate;->this$0:Landroidx/compose/ui/node/LayoutNodeLayoutDelegate;
 
     invoke-static {v0}, Landroidx/compose/ui/node/LayoutNodeLayoutDelegate;->access$getLayoutNode$p(Landroidx/compose/ui/node/LayoutNodeLayoutDelegate;)Landroidx/compose/ui/node/LayoutNode;
 
     move-result-object v0
 
-    invoke-static {v0}, Landroidx/compose/ui/node/LayoutNodeKt;->requireOwner(Landroidx/compose/ui/node/LayoutNode;)Landroidx/compose/ui/node/Owner;
+    invoke-virtual {v0}, Landroidx/compose/ui/node/LayoutNode;->isDeactivated()Z
 
-    move-result-object v0
+    move-result v0
 
-    .line 1234
+    const/4 v1, 0x1
+
+    xor-int/2addr v0, v1
+
+    if-eqz v0, :cond_4
+
+    .line 1327
+    iget-object v0, p0, Landroidx/compose/ui/node/LayoutNodeLayoutDelegate$LookaheadPassDelegate;->this$0:Landroidx/compose/ui/node/LayoutNodeLayoutDelegate;
+
+    sget-object v2, Landroidx/compose/ui/node/LayoutNode$LayoutState;->LookaheadLayingOut:Landroidx/compose/ui/node/LayoutNode$LayoutState;
+
+    invoke-static {v0, v2}, Landroidx/compose/ui/node/LayoutNodeLayoutDelegate;->access$setLayoutState$p(Landroidx/compose/ui/node/LayoutNodeLayoutDelegate;Landroidx/compose/ui/node/LayoutNode$LayoutState;)V
+
+    .line 1328
+    iput-boolean v1, p0, Landroidx/compose/ui/node/LayoutNodeLayoutDelegate$LookaheadPassDelegate;->placedOnce:Z
+
+    const/4 v0, 0x0
+
+    .line 1329
+    iput-boolean v0, p0, Landroidx/compose/ui/node/LayoutNodeLayoutDelegate$LookaheadPassDelegate;->onNodePlacedCalled:Z
+
+    .line 1330
+    iget-wide v2, p0, Landroidx/compose/ui/node/LayoutNodeLayoutDelegate$LookaheadPassDelegate;->lastPosition:J
+
+    invoke-static {p1, p2, v2, v3}, Landroidx/compose/ui/unit/IntOffset;->equals-impl0(JJ)Z
+
+    move-result v2
+
+    if-nez v2, :cond_2
+
+    .line 1331
+    iget-object v2, p0, Landroidx/compose/ui/node/LayoutNodeLayoutDelegate$LookaheadPassDelegate;->this$0:Landroidx/compose/ui/node/LayoutNodeLayoutDelegate;
+
+    invoke-virtual {v2}, Landroidx/compose/ui/node/LayoutNodeLayoutDelegate;->getCoordinatesAccessedDuringModifierPlacement()Z
+
+    move-result v2
+
+    if-nez v2, :cond_0
+
+    .line 1332
+    iget-object v2, p0, Landroidx/compose/ui/node/LayoutNodeLayoutDelegate$LookaheadPassDelegate;->this$0:Landroidx/compose/ui/node/LayoutNodeLayoutDelegate;
+
+    invoke-virtual {v2}, Landroidx/compose/ui/node/LayoutNodeLayoutDelegate;->getCoordinatesAccessedDuringPlacement()Z
+
+    move-result v2
+
+    if-eqz v2, :cond_1
+
+    .line 1334
+    :cond_0
+    iget-object v2, p0, Landroidx/compose/ui/node/LayoutNodeLayoutDelegate$LookaheadPassDelegate;->this$0:Landroidx/compose/ui/node/LayoutNodeLayoutDelegate;
+
+    invoke-static {v2, v1}, Landroidx/compose/ui/node/LayoutNodeLayoutDelegate;->access$setLookaheadLayoutPending$p(Landroidx/compose/ui/node/LayoutNodeLayoutDelegate;Z)V
+
+    .line 1336
+    :cond_1
+    invoke-virtual {p0}, Landroidx/compose/ui/node/LayoutNodeLayoutDelegate$LookaheadPassDelegate;->notifyChildrenUsingCoordinatesWhilePlacing()V
+
+    .line 1338
+    :cond_2
     iget-object v1, p0, Landroidx/compose/ui/node/LayoutNodeLayoutDelegate$LookaheadPassDelegate;->this$0:Landroidx/compose/ui/node/LayoutNodeLayoutDelegate;
 
-    invoke-virtual {v1}, Landroidx/compose/ui/node/LayoutNodeLayoutDelegate;->getLookaheadLayoutPending$ui_release()Z
+    invoke-static {v1}, Landroidx/compose/ui/node/LayoutNodeLayoutDelegate;->access$getLayoutNode$p(Landroidx/compose/ui/node/LayoutNodeLayoutDelegate;)Landroidx/compose/ui/node/LayoutNode;
 
-    move-result v1
+    move-result-object v1
 
-    if-nez v1, :cond_3
+    invoke-static {v1}, Landroidx/compose/ui/node/LayoutNodeKt;->requireOwner(Landroidx/compose/ui/node/LayoutNode;)Landroidx/compose/ui/node/Owner;
+
+    move-result-object v1
+
+    .line 1340
+    iget-object v2, p0, Landroidx/compose/ui/node/LayoutNodeLayoutDelegate$LookaheadPassDelegate;->this$0:Landroidx/compose/ui/node/LayoutNodeLayoutDelegate;
+
+    invoke-virtual {v2}, Landroidx/compose/ui/node/LayoutNodeLayoutDelegate;->getLookaheadLayoutPending$ui_release()Z
+
+    move-result v2
+
+    if-nez v2, :cond_3
 
     invoke-virtual {p0}, Landroidx/compose/ui/node/LayoutNodeLayoutDelegate$LookaheadPassDelegate;->isPlaced()Z
 
-    move-result v1
+    move-result v2
 
-    if-eqz v1, :cond_3
+    if-eqz v2, :cond_3
 
-    .line 1235
+    .line 1341
+    iget-object v0, p0, Landroidx/compose/ui/node/LayoutNodeLayoutDelegate$LookaheadPassDelegate;->this$0:Landroidx/compose/ui/node/LayoutNodeLayoutDelegate;
+
+    invoke-virtual {v0}, Landroidx/compose/ui/node/LayoutNodeLayoutDelegate;->getOuterCoordinator()Landroidx/compose/ui/node/NodeCoordinator;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Landroidx/compose/ui/node/NodeCoordinator;->getLookaheadDelegate()Landroidx/compose/ui/node/LookaheadDelegate;
+
+    move-result-object v0
+
+    invoke-static {v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;)V
+
+    invoke-virtual {v0, p1, p2}, Landroidx/compose/ui/node/LookaheadDelegate;->placeSelfApparentToRealOffset--gyyYBs$ui_release(J)V
+
+    .line 1342
     invoke-virtual {p0}, Landroidx/compose/ui/node/LayoutNodeLayoutDelegate$LookaheadPassDelegate;->onNodePlaced$ui_release()V
 
     goto :goto_0
 
-    .line 1237
+    .line 1344
     :cond_3
-    iget-object v1, p0, Landroidx/compose/ui/node/LayoutNodeLayoutDelegate$LookaheadPassDelegate;->this$0:Landroidx/compose/ui/node/LayoutNodeLayoutDelegate;
+    iget-object v2, p0, Landroidx/compose/ui/node/LayoutNodeLayoutDelegate$LookaheadPassDelegate;->this$0:Landroidx/compose/ui/node/LayoutNodeLayoutDelegate;
 
-    const/4 v2, 0x0
+    invoke-virtual {v2, v0}, Landroidx/compose/ui/node/LayoutNodeLayoutDelegate;->setCoordinatesAccessedDuringModifierPlacement(Z)V
 
-    invoke-virtual {v1, v2}, Landroidx/compose/ui/node/LayoutNodeLayoutDelegate;->setCoordinatesAccessedDuringModifierPlacement(Z)V
-
-    .line 1238
+    .line 1345
     invoke-virtual {p0}, Landroidx/compose/ui/node/LayoutNodeLayoutDelegate$LookaheadPassDelegate;->getAlignmentLines()Landroidx/compose/ui/node/AlignmentLines;
 
-    move-result-object v1
+    move-result-object v2
 
-    invoke-virtual {v1, v2}, Landroidx/compose/ui/node/AlignmentLines;->setUsedByModifierLayout$ui_release(Z)V
+    invoke-virtual {v2, v0}, Landroidx/compose/ui/node/AlignmentLines;->setUsedByModifierLayout$ui_release(Z)V
 
-    .line 1239
-    invoke-interface {v0}, Landroidx/compose/ui/node/Owner;->getSnapshotObserver()Landroidx/compose/ui/node/OwnerSnapshotObserver;
+    .line 1346
+    invoke-interface {v1}, Landroidx/compose/ui/node/Owner;->getSnapshotObserver()Landroidx/compose/ui/node/OwnerSnapshotObserver;
 
     move-result-object v3
 
@@ -2580,11 +2702,11 @@
 
     move-result-object v4
 
-    new-instance v0, Landroidx/compose/ui/node/LayoutNodeLayoutDelegate$LookaheadPassDelegate$placeAt$1;
+    new-instance v0, Landroidx/compose/ui/node/LayoutNodeLayoutDelegate$LookaheadPassDelegate$placeAt$2;
 
-    iget-object v1, p0, Landroidx/compose/ui/node/LayoutNodeLayoutDelegate$LookaheadPassDelegate;->this$0:Landroidx/compose/ui/node/LayoutNodeLayoutDelegate;
+    iget-object v2, p0, Landroidx/compose/ui/node/LayoutNodeLayoutDelegate$LookaheadPassDelegate;->this$0:Landroidx/compose/ui/node/LayoutNodeLayoutDelegate;
 
-    invoke-direct {v0, v1, p1, p2}, Landroidx/compose/ui/node/LayoutNodeLayoutDelegate$LookaheadPassDelegate$placeAt$1;-><init>(Landroidx/compose/ui/node/LayoutNodeLayoutDelegate;J)V
+    invoke-direct {v0, v2, v1, p1, p2}, Landroidx/compose/ui/node/LayoutNodeLayoutDelegate$LookaheadPassDelegate$placeAt$2;-><init>(Landroidx/compose/ui/node/LayoutNodeLayoutDelegate;Landroidx/compose/ui/node/Owner;J)V
 
     move-object v6, v0
 
@@ -2598,17 +2720,17 @@
 
     invoke-static/range {v3 .. v8}, Landroidx/compose/ui/node/OwnerSnapshotObserver;->observeLayoutModifierSnapshotReads$ui_release$default(Landroidx/compose/ui/node/OwnerSnapshotObserver;Landroidx/compose/ui/node/LayoutNode;ZLkotlin/jvm/functions/Function0;ILjava/lang/Object;)V
 
-    .line 1245
+    .line 1357
     :goto_0
     iput-wide p1, p0, Landroidx/compose/ui/node/LayoutNodeLayoutDelegate$LookaheadPassDelegate;->lastPosition:J
 
-    .line 1246
+    .line 1358
     iput p3, p0, Landroidx/compose/ui/node/LayoutNodeLayoutDelegate$LookaheadPassDelegate;->lastZIndex:F
 
-    .line 1247
+    .line 1359
     iput-object p4, p0, Landroidx/compose/ui/node/LayoutNodeLayoutDelegate$LookaheadPassDelegate;->lastLayerBlock:Lkotlin/jvm/functions/Function1;
 
-    .line 1248
+    .line 1360
     iget-object p0, p0, Landroidx/compose/ui/node/LayoutNodeLayoutDelegate$LookaheadPassDelegate;->this$0:Landroidx/compose/ui/node/LayoutNodeLayoutDelegate;
 
     sget-object p1, Landroidx/compose/ui/node/LayoutNode$LayoutState;->Idle:Landroidx/compose/ui/node/LayoutNode$LayoutState;
@@ -2616,12 +2738,43 @@
     invoke-static {p0, p1}, Landroidx/compose/ui/node/LayoutNodeLayoutDelegate;->access$setLayoutState$p(Landroidx/compose/ui/node/LayoutNodeLayoutDelegate;Landroidx/compose/ui/node/LayoutNode$LayoutState;)V
 
     return-void
+
+    .line 1324
+    :cond_4
+    new-instance p0, Ljava/lang/IllegalArgumentException;
+
+    const-string p1, "place is called on a deactivated node"
+
+    invoke-virtual {p1}, Ljava/lang/Object;->toString()Ljava/lang/String;
+
+    move-result-object p1
+
+    invoke-direct {p0, p1}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
+
+    throw p0
 .end method
 
 .method public final remeasure-BRTryo0(J)Z
     .locals 6
 
-    .line 1182
+    .line 1274
+    iget-object v0, p0, Landroidx/compose/ui/node/LayoutNodeLayoutDelegate$LookaheadPassDelegate;->this$0:Landroidx/compose/ui/node/LayoutNodeLayoutDelegate;
+
+    invoke-static {v0}, Landroidx/compose/ui/node/LayoutNodeLayoutDelegate;->access$getLayoutNode$p(Landroidx/compose/ui/node/LayoutNodeLayoutDelegate;)Landroidx/compose/ui/node/LayoutNode;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Landroidx/compose/ui/node/LayoutNode;->isDeactivated()Z
+
+    move-result v0
+
+    const/4 v1, 0x1
+
+    xor-int/2addr v0, v1
+
+    if-eqz v0, :cond_b
+
+    .line 1277
     iget-object v0, p0, Landroidx/compose/ui/node/LayoutNodeLayoutDelegate$LookaheadPassDelegate;->this$0:Landroidx/compose/ui/node/LayoutNodeLayoutDelegate;
 
     invoke-static {v0}, Landroidx/compose/ui/node/LayoutNodeLayoutDelegate;->access$getLayoutNode$p(Landroidx/compose/ui/node/LayoutNodeLayoutDelegate;)Landroidx/compose/ui/node/LayoutNode;
@@ -2632,32 +2785,30 @@
 
     move-result-object v0
 
-    .line 1184
-    iget-object v1, p0, Landroidx/compose/ui/node/LayoutNodeLayoutDelegate$LookaheadPassDelegate;->this$0:Landroidx/compose/ui/node/LayoutNodeLayoutDelegate;
-
-    invoke-static {v1}, Landroidx/compose/ui/node/LayoutNodeLayoutDelegate;->access$getLayoutNode$p(Landroidx/compose/ui/node/LayoutNodeLayoutDelegate;)Landroidx/compose/ui/node/LayoutNode;
-
-    move-result-object v1
-
+    .line 1279
     iget-object v2, p0, Landroidx/compose/ui/node/LayoutNodeLayoutDelegate$LookaheadPassDelegate;->this$0:Landroidx/compose/ui/node/LayoutNodeLayoutDelegate;
 
     invoke-static {v2}, Landroidx/compose/ui/node/LayoutNodeLayoutDelegate;->access$getLayoutNode$p(Landroidx/compose/ui/node/LayoutNodeLayoutDelegate;)Landroidx/compose/ui/node/LayoutNode;
 
     move-result-object v2
 
-    invoke-virtual {v2}, Landroidx/compose/ui/node/LayoutNode;->getCanMultiMeasure$ui_release()Z
+    iget-object v3, p0, Landroidx/compose/ui/node/LayoutNodeLayoutDelegate$LookaheadPassDelegate;->this$0:Landroidx/compose/ui/node/LayoutNodeLayoutDelegate;
 
-    move-result v2
+    invoke-static {v3}, Landroidx/compose/ui/node/LayoutNodeLayoutDelegate;->access$getLayoutNode$p(Landroidx/compose/ui/node/LayoutNodeLayoutDelegate;)Landroidx/compose/ui/node/LayoutNode;
 
-    const/4 v3, 0x0
+    move-result-object v3
 
-    const/4 v4, 0x1
+    invoke-virtual {v3}, Landroidx/compose/ui/node/LayoutNode;->getCanMultiMeasure$ui_release()Z
 
-    if-nez v2, :cond_1
+    move-result v3
+
+    const/4 v4, 0x0
+
+    if-nez v3, :cond_1
 
     if-eqz v0, :cond_0
 
-    .line 1185
+    .line 1280
     invoke-virtual {v0}, Landroidx/compose/ui/node/LayoutNode;->getCanMultiMeasure$ui_release()Z
 
     move-result v0
@@ -2667,19 +2818,19 @@
     goto :goto_0
 
     :cond_0
-    move v0, v3
+    move v0, v4
 
     goto :goto_1
 
     :cond_1
     :goto_0
-    move v0, v4
+    move v0, v1
 
-    .line 1184
+    .line 1279
     :goto_1
-    invoke-virtual {v1, v0}, Landroidx/compose/ui/node/LayoutNode;->setCanMultiMeasure$ui_release(Z)V
+    invoke-virtual {v2, v0}, Landroidx/compose/ui/node/LayoutNode;->setCanMultiMeasure$ui_release(Z)V
 
-    .line 1186
+    .line 1281
     iget-object v0, p0, Landroidx/compose/ui/node/LayoutNodeLayoutDelegate$LookaheadPassDelegate;->this$0:Landroidx/compose/ui/node/LayoutNodeLayoutDelegate;
 
     invoke-static {v0}, Landroidx/compose/ui/node/LayoutNodeLayoutDelegate;->access$getLayoutNode$p(Landroidx/compose/ui/node/LayoutNodeLayoutDelegate;)Landroidx/compose/ui/node/LayoutNode;
@@ -2696,22 +2847,25 @@
 
     if-nez v0, :cond_2
 
+    move v0, v4
+
     goto :goto_2
 
     :cond_2
     invoke-virtual {v0}, Landroidx/compose/ui/unit/Constraints;->unbox-impl()J
 
-    move-result-wide v0
+    move-result-wide v2
 
-    invoke-static {v0, v1, p1, p2}, Landroidx/compose/ui/unit/Constraints;->equals-impl0(JJ)Z
+    invoke-static {v2, v3, p1, p2}, Landroidx/compose/ui/unit/Constraints;->equals-impl0(JJ)Z
 
     move-result v0
 
+    :goto_2
     if-nez v0, :cond_3
 
-    goto :goto_2
+    goto :goto_3
 
-    .line 1210
+    .line 1311
     :cond_3
     iget-object p1, p0, Landroidx/compose/ui/node/LayoutNodeLayoutDelegate$LookaheadPassDelegate;->this$0:Landroidx/compose/ui/node/LayoutNodeLayoutDelegate;
 
@@ -2731,9 +2885,9 @@
 
     move-result-object p2
 
-    invoke-interface {p1, p2, v4}, Landroidx/compose/ui/node/Owner;->forceMeasureTheSubtree(Landroidx/compose/ui/node/LayoutNode;Z)V
+    invoke-interface {p1, p2, v1}, Landroidx/compose/ui/node/Owner;->forceMeasureTheSubtree(Landroidx/compose/ui/node/LayoutNode;Z)V
 
-    .line 1213
+    .line 1314
     :cond_4
     iget-object p0, p0, Landroidx/compose/ui/node/LayoutNodeLayoutDelegate$LookaheadPassDelegate;->this$0:Landroidx/compose/ui/node/LayoutNodeLayoutDelegate;
 
@@ -2743,35 +2897,59 @@
 
     invoke-virtual {p0}, Landroidx/compose/ui/node/LayoutNode;->resetSubtreeIntrinsicsUsage$ui_release()V
 
-    return v3
+    return v4
 
-    .line 1187
+    .line 1282
     :cond_5
-    :goto_2
+    :goto_3
     invoke-static {p1, p2}, Landroidx/compose/ui/unit/Constraints;->box-impl(J)Landroidx/compose/ui/unit/Constraints;
 
     move-result-object v0
 
     iput-object v0, p0, Landroidx/compose/ui/node/LayoutNodeLayoutDelegate$LookaheadPassDelegate;->lookaheadConstraints:Landroidx/compose/ui/unit/Constraints;
 
-    .line 1188
+    .line 1283
+    invoke-virtual {p0, p1, p2}, Landroidx/compose/ui/node/LayoutNodeLayoutDelegate$LookaheadPassDelegate;->setMeasurementConstraints-BRTryo0(J)V
+
+    .line 1284
     invoke-virtual {p0}, Landroidx/compose/ui/node/LayoutNodeLayoutDelegate$LookaheadPassDelegate;->getAlignmentLines()Landroidx/compose/ui/node/AlignmentLines;
 
     move-result-object v0
 
-    invoke-virtual {v0, v3}, Landroidx/compose/ui/node/AlignmentLines;->setUsedByModifierMeasurement$ui_release(Z)V
+    invoke-virtual {v0, v4}, Landroidx/compose/ui/node/AlignmentLines;->setUsedByModifierMeasurement$ui_release(Z)V
 
-    .line 1189
-    sget-object v0, Landroidx/compose/ui/node/LayoutNodeLayoutDelegate$LookaheadPassDelegate$remeasure$1;->INSTANCE:Landroidx/compose/ui/node/LayoutNodeLayoutDelegate$LookaheadPassDelegate$remeasure$1;
+    .line 1285
+    sget-object v0, Landroidx/compose/ui/node/LayoutNodeLayoutDelegate$LookaheadPassDelegate$remeasure$2;->INSTANCE:Landroidx/compose/ui/node/LayoutNodeLayoutDelegate$LookaheadPassDelegate$remeasure$2;
 
     check-cast v0, Lkotlin/jvm/functions/Function1;
 
     invoke-virtual {p0, v0}, Landroidx/compose/ui/node/LayoutNodeLayoutDelegate$LookaheadPassDelegate;->forEachChildAlignmentLinesOwner(Lkotlin/jvm/functions/Function1;)V
 
-    .line 1192
-    iput-boolean v4, p0, Landroidx/compose/ui/node/LayoutNodeLayoutDelegate$LookaheadPassDelegate;->measuredOnce:Z
+    .line 1291
+    iget-boolean v0, p0, Landroidx/compose/ui/node/LayoutNodeLayoutDelegate$LookaheadPassDelegate;->measuredOnce:Z
 
-    .line 1193
+    if-eqz v0, :cond_6
+
+    .line 1292
+    invoke-virtual {p0}, Landroidx/compose/ui/node/LayoutNodeLayoutDelegate$LookaheadPassDelegate;->getMeasuredSize-YbymL2g()J
+
+    move-result-wide v2
+
+    goto :goto_4
+
+    :cond_6
+    const/high16 v0, -0x80000000
+
+    .line 1294
+    invoke-static {v0, v0}, Landroidx/compose/ui/unit/IntSizeKt;->IntSize(II)J
+
+    move-result-wide v2
+
+    .line 1295
+    :goto_4
+    iput-boolean v1, p0, Landroidx/compose/ui/node/LayoutNodeLayoutDelegate$LookaheadPassDelegate;->measuredOnce:Z
+
+    .line 1296
     iget-object v0, p0, Landroidx/compose/ui/node/LayoutNodeLayoutDelegate$LookaheadPassDelegate;->this$0:Landroidx/compose/ui/node/LayoutNodeLayoutDelegate;
 
     invoke-virtual {v0}, Landroidx/compose/ui/node/LayoutNodeLayoutDelegate;->getOuterCoordinator()Landroidx/compose/ui/node/NodeCoordinator;
@@ -2782,27 +2960,24 @@
 
     move-result-object v0
 
-    if-eqz v0, :cond_8
+    if-eqz v0, :cond_7
 
-    .line 1199
-    invoke-virtual {v0}, Landroidx/compose/ui/node/LookaheadDelegate;->getWidth()I
+    move v5, v1
 
-    move-result v1
+    goto :goto_5
 
-    invoke-virtual {v0}, Landroidx/compose/ui/node/LookaheadDelegate;->getHeight()I
+    :cond_7
+    move v5, v4
 
-    move-result v2
+    :goto_5
+    if-eqz v5, :cond_a
 
-    invoke-static {v1, v2}, Landroidx/compose/ui/unit/IntSizeKt;->IntSize(II)J
-
-    move-result-wide v1
-
-    .line 1200
+    .line 1301
     iget-object v5, p0, Landroidx/compose/ui/node/LayoutNodeLayoutDelegate$LookaheadPassDelegate;->this$0:Landroidx/compose/ui/node/LayoutNodeLayoutDelegate;
 
     invoke-static {v5, p1, p2}, Landroidx/compose/ui/node/LayoutNodeLayoutDelegate;->access$performLookaheadMeasure-BRTryo0(Landroidx/compose/ui/node/LayoutNodeLayoutDelegate;J)V
 
-    .line 1201
+    .line 1302
     invoke-virtual {v0}, Landroidx/compose/ui/node/LookaheadDelegate;->getWidth()I
 
     move-result p1
@@ -2817,8 +2992,8 @@
 
     invoke-virtual {p0, p1, p2}, Landroidx/compose/ui/node/LayoutNodeLayoutDelegate$LookaheadPassDelegate;->setMeasuredSize-ozmzZPI(J)V
 
-    .line 1202
-    invoke-static {v1, v2}, Landroidx/compose/ui/unit/IntSize;->getWidth-impl(J)I
+    .line 1303
+    invoke-static {v2, v3}, Landroidx/compose/ui/unit/IntSize;->getWidth-impl(J)I
 
     move-result p0
 
@@ -2826,10 +3001,10 @@
 
     move-result p1
 
-    if-ne p0, p1, :cond_6
+    if-ne p0, p1, :cond_9
 
-    .line 1203
-    invoke-static {v1, v2}, Landroidx/compose/ui/unit/IntSize;->getHeight-impl(J)I
+    .line 1304
+    invoke-static {v2, v3}, Landroidx/compose/ui/unit/IntSize;->getHeight-impl(J)I
 
     move-result p0
 
@@ -2837,16 +3012,19 @@
 
     move-result p1
 
-    if-eq p0, p1, :cond_7
+    if-eq p0, p1, :cond_8
 
-    :cond_6
-    move v3, v4
+    goto :goto_6
 
-    :cond_7
-    return v3
-
-    .line 1194
     :cond_8
+    move v1, v4
+
+    :cond_9
+    :goto_6
+    return v1
+
+    .line 1297
+    :cond_a
     new-instance p0, Ljava/lang/IllegalStateException;
 
     const-string p1, "Lookahead result from lookaheadRemeasure cannot be null"
@@ -2858,44 +3036,89 @@
     invoke-direct {p0, p1}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
 
     throw p0
+
+    .line 1274
+    :cond_b
+    new-instance p0, Ljava/lang/IllegalArgumentException;
+
+    const-string p1, "measure is called on a deactivated node"
+
+    invoke-virtual {p1}, Ljava/lang/Object;->toString()Ljava/lang/String;
+
+    move-result-object p1
+
+    invoke-direct {p0, p1}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
+
+    throw p0
 .end method
 
 .method public final replace()V
-    .locals 5
+    .locals 7
 
     const/4 v0, 0x1
 
     const/4 v1, 0x0
 
-    .line 1463
+    .line 1583
     :try_start_0
     iput-boolean v0, p0, Landroidx/compose/ui/node/LayoutNodeLayoutDelegate$LookaheadPassDelegate;->relayoutWithoutParentInProgress:Z
 
-    .line 1464
-    iget-boolean v0, p0, Landroidx/compose/ui/node/LayoutNodeLayoutDelegate$LookaheadPassDelegate;->placedOnce:Z
+    .line 1584
+    iget-boolean v2, p0, Landroidx/compose/ui/node/LayoutNodeLayoutDelegate$LookaheadPassDelegate;->placedOnce:Z
 
-    if-eqz v0, :cond_0
+    if-eqz v2, :cond_1
 
-    .line 1465
-    iget-wide v2, p0, Landroidx/compose/ui/node/LayoutNodeLayoutDelegate$LookaheadPassDelegate;->lastPosition:J
+    .line 1586
+    iput-boolean v1, p0, Landroidx/compose/ui/node/LayoutNodeLayoutDelegate$LookaheadPassDelegate;->onNodePlacedCalled:Z
 
-    const/4 v0, 0x0
+    .line 1587
+    invoke-virtual {p0}, Landroidx/compose/ui/node/LayoutNodeLayoutDelegate$LookaheadPassDelegate;->isPlaced()Z
 
-    const/4 v4, 0x0
+    move-result v2
 
-    invoke-virtual {p0, v2, v3, v0, v4}, Landroidx/compose/ui/node/LayoutNodeLayoutDelegate$LookaheadPassDelegate;->placeAt-f8xVGno(JFLkotlin/jvm/functions/Function1;)V
+    .line 1588
+    iget-wide v3, p0, Landroidx/compose/ui/node/LayoutNodeLayoutDelegate$LookaheadPassDelegate;->lastPosition:J
+
+    const/4 v5, 0x0
+
+    const/4 v6, 0x0
+
+    invoke-virtual {p0, v3, v4, v5, v6}, Landroidx/compose/ui/node/LayoutNodeLayoutDelegate$LookaheadPassDelegate;->placeAt-f8xVGno(JFLkotlin/jvm/functions/Function1;)V
+
+    if-eqz v2, :cond_0
+
+    .line 1589
+    iget-boolean v2, p0, Landroidx/compose/ui/node/LayoutNodeLayoutDelegate$LookaheadPassDelegate;->onNodePlacedCalled:Z
+
+    if-nez v2, :cond_0
+
+    .line 1592
+    iget-object v2, p0, Landroidx/compose/ui/node/LayoutNodeLayoutDelegate$LookaheadPassDelegate;->this$0:Landroidx/compose/ui/node/LayoutNodeLayoutDelegate;
+
+    invoke-static {v2}, Landroidx/compose/ui/node/LayoutNodeLayoutDelegate;->access$getLayoutNode$p(Landroidx/compose/ui/node/LayoutNodeLayoutDelegate;)Landroidx/compose/ui/node/LayoutNode;
+
+    move-result-object v2
+
+    invoke-virtual {v2}, Landroidx/compose/ui/node/LayoutNode;->getParent$ui_release()Landroidx/compose/ui/node/LayoutNode;
+
+    move-result-object v2
+
+    if-eqz v2, :cond_0
+
+    invoke-static {v2, v1, v0, v6}, Landroidx/compose/ui/node/LayoutNode;->requestLookaheadRelayout$ui_release$default(Landroidx/compose/ui/node/LayoutNode;ZILjava/lang/Object;)V
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 1467
+    .line 1595
+    :cond_0
     iput-boolean v1, p0, Landroidx/compose/ui/node/LayoutNodeLayoutDelegate$LookaheadPassDelegate;->relayoutWithoutParentInProgress:Z
 
     return-void
 
-    .line 1464
-    :cond_0
+    .line 1584
+    :cond_1
     :try_start_1
-    const-string v0, "Check failed."
+    const-string v0, "replace() called on item that was not placed"
 
     new-instance v2, Ljava/lang/IllegalStateException;
 
@@ -2912,7 +3135,7 @@
     :catchall_0
     move-exception v0
 
-    .line 1467
+    .line 1595
     iput-boolean v1, p0, Landroidx/compose/ui/node/LayoutNodeLayoutDelegate$LookaheadPassDelegate;->relayoutWithoutParentInProgress:Z
 
     throw v0
@@ -2921,7 +3144,7 @@
 .method public requestLayout()V
     .locals 3
 
-    .line 1102
+    .line 1189
     iget-object p0, p0, Landroidx/compose/ui/node/LayoutNodeLayoutDelegate$LookaheadPassDelegate;->this$0:Landroidx/compose/ui/node/LayoutNodeLayoutDelegate;
 
     invoke-static {p0}, Landroidx/compose/ui/node/LayoutNodeLayoutDelegate;->access$getLayoutNode$p(Landroidx/compose/ui/node/LayoutNodeLayoutDelegate;)Landroidx/compose/ui/node/LayoutNode;
@@ -2942,7 +3165,7 @@
 .method public requestMeasure()V
     .locals 3
 
-    .line 1106
+    .line 1193
     iget-object p0, p0, Landroidx/compose/ui/node/LayoutNodeLayoutDelegate$LookaheadPassDelegate;->this$0:Landroidx/compose/ui/node/LayoutNodeLayoutDelegate;
 
     invoke-static {p0}, Landroidx/compose/ui/node/LayoutNodeLayoutDelegate;->access$getLayoutNode$p(Landroidx/compose/ui/node/LayoutNodeLayoutDelegate;)Landroidx/compose/ui/node/LayoutNode;
@@ -2963,7 +3186,7 @@
 .method public final setChildDelegatesDirty$ui_release(Z)V
     .locals 0
 
-    .line 984
+    .line 1060
     iput-boolean p1, p0, Landroidx/compose/ui/node/LayoutNodeLayoutDelegate$LookaheadPassDelegate;->childDelegatesDirty:Z
 
     return-void
@@ -2972,20 +3195,16 @@
 .method public final setDuringAlignmentLinesQuery$ui_release(Z)V
     .locals 0
 
-    .line 963
+    .line 1039
     iput-boolean p1, p0, Landroidx/compose/ui/node/LayoutNodeLayoutDelegate$LookaheadPassDelegate;->duringAlignmentLinesQuery:Z
 
     return-void
 .end method
 
 .method public final setMeasuredByParent$ui_release(Landroidx/compose/ui/node/LayoutNode$UsageByParent;)V
-    .locals 1
+    .locals 0
 
-    const-string v0, "<set-?>"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 960
+    .line 1036
     iput-object p1, p0, Landroidx/compose/ui/node/LayoutNodeLayoutDelegate$LookaheadPassDelegate;->measuredByParent:Landroidx/compose/ui/node/LayoutNode$UsageByParent;
 
     return-void
@@ -2994,7 +3213,7 @@
 .method public final setPlaceOrder$ui_release(I)V
     .locals 0
 
-    .line 958
+    .line 1034
     iput p1, p0, Landroidx/compose/ui/node/LayoutNodeLayoutDelegate$LookaheadPassDelegate;->placeOrder:I
 
     return-void
@@ -3003,8 +3222,17 @@
 .method public setPlaced(Z)V
     .locals 0
 
-    .line 977
+    .line 1053
     iput-boolean p1, p0, Landroidx/compose/ui/node/LayoutNodeLayoutDelegate$LookaheadPassDelegate;->isPlaced:Z
+
+    return-void
+.end method
+
+.method public final setPlacedOnce$ui_release(Z)V
+    .locals 0
+
+    .line 1040
+    iput-boolean p1, p0, Landroidx/compose/ui/node/LayoutNodeLayoutDelegate$LookaheadPassDelegate;->placedOnce:Z
 
     return-void
 .end method
@@ -3012,7 +3240,7 @@
 .method public final updateParentData()Z
     .locals 2
 
-    .line 1353
+    .line 1465
     invoke-virtual {p0}, Landroidx/compose/ui/node/LayoutNodeLayoutDelegate$LookaheadPassDelegate;->getParentData()Ljava/lang/Object;
 
     move-result-object v0
@@ -3041,7 +3269,7 @@
 
     return v1
 
-    .line 1356
+    .line 1468
     :cond_0
     iget-boolean v0, p0, Landroidx/compose/ui/node/LayoutNodeLayoutDelegate$LookaheadPassDelegate;->parentDataDirty:Z
 
@@ -3049,11 +3277,11 @@
 
     return v1
 
-    .line 1357
+    .line 1469
     :cond_1
     iput-boolean v1, p0, Landroidx/compose/ui/node/LayoutNodeLayoutDelegate$LookaheadPassDelegate;->parentDataDirty:Z
 
-    .line 1358
+    .line 1470
     iget-object v0, p0, Landroidx/compose/ui/node/LayoutNodeLayoutDelegate$LookaheadPassDelegate;->this$0:Landroidx/compose/ui/node/LayoutNodeLayoutDelegate;
 
     invoke-virtual {v0}, Landroidx/compose/ui/node/LayoutNodeLayoutDelegate;->getOuterCoordinator()Landroidx/compose/ui/node/NodeCoordinator;

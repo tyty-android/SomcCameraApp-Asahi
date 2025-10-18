@@ -53,7 +53,7 @@
     f = "BringIntoViewResponder.kt"
     i = {}
     l = {
-        0xb3
+        0xb9
     }
     m = "invokeSuspend"
     n = {}
@@ -184,7 +184,7 @@
 
     move-result-object v0
 
-    .line 178
+    .line 184
     iget v1, p0, Landroidx/compose/foundation/relocation/BringIntoViewResponderNode$bringChildIntoView$2$2;->label:I
 
     const/4 v2, 0x1
@@ -209,7 +209,7 @@
     :cond_1
     invoke-static {p1}, Lkotlin/ResultKt;->throwOnFailure(Ljava/lang/Object;)V
 
-    .line 179
+    .line 185
     iget-object p1, p0, Landroidx/compose/foundation/relocation/BringIntoViewResponderNode$bringChildIntoView$2$2;->this$0:Landroidx/compose/foundation/relocation/BringIntoViewResponderNode;
 
     invoke-virtual {p1}, Landroidx/compose/foundation/relocation/BringIntoViewResponderNode;->getParent()Landroidx/compose/foundation/relocation/BringIntoViewParent;
@@ -245,7 +245,7 @@
 
     return-object v0
 
-    .line 180
+    .line 186
     :cond_3
     :goto_0
     sget-object p0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;

@@ -219,14 +219,16 @@
 .end method
 
 .method private needShowRecommendedSettingsNotification()Z
-    .locals 10
+    .locals 11
 
     .line 391
     invoke-static {}, Ljp/co/sony/mc/camera/util/capability/PlatformCapability;->isPrepared()Z
 
     move-result v0
 
-    const/4 v1, 0x0
+    const/4 v1, 0x1
+
+    const/4 v2, 0x0
 
     if-nez v0, :cond_1
 
@@ -235,16 +237,16 @@
 
     if-eqz p0, :cond_0
 
-    const-string p0, "PlatformCapability is not prepared yet"
+    new-array p0, v1, [Ljava/lang/String;
 
-    filled-new-array {p0}, [Ljava/lang/String;
+    const-string v0, "PlatformCapability is not prepared yet"
 
-    move-result-object p0
+    aput-object v0, p0, v2
 
     invoke-static {p0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
     :cond_0
-    return v1
+    return v2
 
     .line 396
     :cond_1
@@ -255,222 +257,213 @@
     .line 397
     invoke-virtual {v0}, Ljp/co/sony/mc/camera/setting/CameraProSetting;->isPrepared()Z
 
-    move-result v2
+    move-result v3
 
-    if-nez v2, :cond_2
+    if-nez v3, :cond_2
 
-    return v1
+    return v2
 
     .line 401
     :cond_2
-    new-instance v2, Ljp/co/sony/mc/camera/setting/SettingAppearanceChecker;
+    new-instance v3, Ljp/co/sony/mc/camera/setting/SettingAppearanceChecker;
 
-    invoke-direct {v2, v0}, Ljp/co/sony/mc/camera/setting/SettingAppearanceChecker;-><init>(Ljp/co/sony/mc/camera/setting/CameraProSetting;)V
+    invoke-direct {v3, v0}, Ljp/co/sony/mc/camera/setting/SettingAppearanceChecker;-><init>(Ljp/co/sony/mc/camera/setting/CameraProSetting;)V
 
     .line 402
-    sget-object v3, Ljp/co/sony/mc/camera/setting/CameraSettings;->RECOMMENDED_SETTINGS:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
+    sget-object v4, Ljp/co/sony/mc/camera/setting/CameraSettings;->RECOMMENDED_SETTINGS:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
 
-    invoke-virtual {v2, v3}, Ljp/co/sony/mc/camera/setting/SettingAppearanceChecker;->checkKey(Ljp/co/sony/mc/camera/setting/SettingKey$Key;)Ljp/co/sony/mc/camera/setting/SettingAppearance;
+    invoke-virtual {v3, v4}, Ljp/co/sony/mc/camera/setting/SettingAppearanceChecker;->checkKey(Ljp/co/sony/mc/camera/setting/SettingKey$Key;)Ljp/co/sony/mc/camera/setting/SettingAppearance;
 
-    move-result-object v2
+    move-result-object v3
 
-    sget-object v3, Ljp/co/sony/mc/camera/setting/SettingAppearance;->ENABLED:Ljp/co/sony/mc/camera/setting/SettingAppearance;
+    sget-object v4, Ljp/co/sony/mc/camera/setting/SettingAppearance;->ENABLED:Ljp/co/sony/mc/camera/setting/SettingAppearance;
 
-    if-eq v2, v3, :cond_3
+    if-eq v3, v4, :cond_3
 
-    return v1
+    return v2
 
     .line 406
     :cond_3
-    iget-object v2, p0, Ljp/co/sony/mc/camera/CameraApplication;->mMessageSettings:Ljp/co/sony/mc/camera/setting/MessageSettings;
+    iget-object v3, p0, Ljp/co/sony/mc/camera/CameraApplication;->mMessageSettings:Ljp/co/sony/mc/camera/setting/MessageSettings;
 
-    sget-object v3, Ljp/co/sony/mc/camera/setting/MessageType;->RECOMMENDED_SETTINGS_NOTIFICATION:Ljp/co/sony/mc/camera/setting/MessageType;
+    sget-object v4, Ljp/co/sony/mc/camera/setting/MessageType;->RECOMMENDED_SETTINGS_NOTIFICATION:Ljp/co/sony/mc/camera/setting/MessageType;
 
-    invoke-interface {v2, v3}, Ljp/co/sony/mc/camera/setting/MessageSettings;->isNeverShow(Ljp/co/sony/mc/camera/setting/MessageType;)Z
+    invoke-interface {v3, v4}, Ljp/co/sony/mc/camera/setting/MessageSettings;->isNeverShow(Ljp/co/sony/mc/camera/setting/MessageType;)Z
 
-    move-result v2
+    move-result v3
 
-    if-eqz v2, :cond_4
+    if-eqz v3, :cond_4
 
-    return v1
+    return v2
 
     .line 410
     :cond_4
-    iget-object v2, p0, Ljp/co/sony/mc/camera/CameraApplication;->mThermalInfo:Ljp/co/sony/mc/camera/CameraApplication$ThermalInfo;
+    iget-object v3, p0, Ljp/co/sony/mc/camera/CameraApplication;->mThermalInfo:Ljp/co/sony/mc/camera/CameraApplication$ThermalInfo;
 
-    invoke-static {v2}, Ljp/co/sony/mc/camera/CameraApplication$ThermalInfo;->-$$Nest$fgetstatus(Ljp/co/sony/mc/camera/CameraApplication$ThermalInfo;)Ljp/co/sony/mc/camera/SystemEventNotifier$ThermalStatus;
+    invoke-static {v3}, Ljp/co/sony/mc/camera/CameraApplication$ThermalInfo;->-$$Nest$fgetstatus(Ljp/co/sony/mc/camera/CameraApplication$ThermalInfo;)Ljp/co/sony/mc/camera/SystemEventNotifier$ThermalStatus;
 
-    move-result-object v2
+    move-result-object v3
 
-    sget-object v3, Ljp/co/sony/mc/camera/SystemEventNotifier$ThermalStatus;->NORMAL:Ljp/co/sony/mc/camera/SystemEventNotifier$ThermalStatus;
+    sget-object v4, Ljp/co/sony/mc/camera/SystemEventNotifier$ThermalStatus;->NORMAL:Ljp/co/sony/mc/camera/SystemEventNotifier$ThermalStatus;
 
-    if-eq v2, v3, :cond_9
+    if-eq v3, v4, :cond_9
 
-    iget-object v2, p0, Ljp/co/sony/mc/camera/CameraApplication;->mThermalInfo:Ljp/co/sony/mc/camera/CameraApplication$ThermalInfo;
+    iget-object v3, p0, Ljp/co/sony/mc/camera/CameraApplication;->mThermalInfo:Ljp/co/sony/mc/camera/CameraApplication$ThermalInfo;
 
-    invoke-static {v2}, Ljp/co/sony/mc/camera/CameraApplication$ThermalInfo;->-$$Nest$fgetstatus(Ljp/co/sony/mc/camera/CameraApplication$ThermalInfo;)Ljp/co/sony/mc/camera/SystemEventNotifier$ThermalStatus;
+    invoke-static {v3}, Ljp/co/sony/mc/camera/CameraApplication$ThermalInfo;->-$$Nest$fgetstatus(Ljp/co/sony/mc/camera/CameraApplication$ThermalInfo;)Ljp/co/sony/mc/camera/SystemEventNotifier$ThermalStatus;
 
-    move-result-object v2
+    move-result-object v3
 
     .line 411
-    invoke-virtual {v2}, Ljp/co/sony/mc/camera/SystemEventNotifier$ThermalStatus;->isCoolMode()Z
+    invoke-virtual {v3}, Ljp/co/sony/mc/camera/SystemEventNotifier$ThermalStatus;->isCoolMode()Z
 
-    move-result v2
+    move-result v3
 
-    if-eqz v2, :cond_5
+    if-eqz v3, :cond_5
 
-    iget-object v2, p0, Ljp/co/sony/mc/camera/CameraApplication;->mMessageSettings:Ljp/co/sony/mc/camera/setting/MessageSettings;
+    iget-object v3, p0, Ljp/co/sony/mc/camera/CameraApplication;->mMessageSettings:Ljp/co/sony/mc/camera/setting/MessageSettings;
 
-    sget-object v3, Ljp/co/sony/mc/camera/setting/MessageType;->RECOMMENDED_SETTINGS_NOTIFICATION_COOLING_MODE:Ljp/co/sony/mc/camera/setting/MessageType;
+    sget-object v4, Ljp/co/sony/mc/camera/setting/MessageType;->RECOMMENDED_SETTINGS_NOTIFICATION_COOLING_MODE:Ljp/co/sony/mc/camera/setting/MessageType;
 
-    invoke-interface {v2, v3}, Ljp/co/sony/mc/camera/setting/MessageSettings;->isNeverShow(Ljp/co/sony/mc/camera/setting/MessageType;)Z
+    invoke-interface {v3, v4}, Ljp/co/sony/mc/camera/setting/MessageSettings;->isNeverShow(Ljp/co/sony/mc/camera/setting/MessageType;)Z
 
-    move-result v2
+    move-result v3
 
-    if-eqz v2, :cond_5
+    if-eqz v3, :cond_5
 
     goto/16 :goto_1
 
     .line 417
     :cond_5
-    sget-object v2, Ljp/co/sony/mc/camera/view/viewmodel/RecommendedSettingsViewModel;->Companion:Ljp/co/sony/mc/camera/view/viewmodel/RecommendedSettingsViewModel$Companion;
+    sget-object v3, Ljp/co/sony/mc/camera/view/viewmodel/RecommendedSettingsViewModel;->Companion:Ljp/co/sony/mc/camera/view/viewmodel/RecommendedSettingsViewModel$Companion;
 
-    invoke-virtual {v2}, Ljp/co/sony/mc/camera/view/viewmodel/RecommendedSettingsViewModel$Companion;->getRecommendedSettingsMap()Ljava/util/Map;
-
-    move-result-object v2
-
-    invoke-interface {v2}, Ljava/util/Map;->entrySet()Ljava/util/Set;
-
-    move-result-object v2
-
-    invoke-interface {v2}, Ljava/util/Set;->iterator()Ljava/util/Iterator;
-
-    move-result-object v2
-
-    :cond_6
-    invoke-interface {v2}, Ljava/util/Iterator;->hasNext()Z
-
-    move-result v3
-
-    if-eqz v3, :cond_9
-
-    invoke-interface {v2}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+    invoke-virtual {v3}, Ljp/co/sony/mc/camera/view/viewmodel/RecommendedSettingsViewModel$Companion;->getRecommendedSettingsMap()Ljava/util/Map;
 
     move-result-object v3
 
-    check-cast v3, Ljava/util/Map$Entry;
+    invoke-interface {v3}, Ljava/util/Map;->entrySet()Ljava/util/Set;
+
+    move-result-object v3
+
+    invoke-interface {v3}, Ljava/util/Set;->iterator()Ljava/util/Iterator;
+
+    move-result-object v3
+
+    :cond_6
+    invoke-interface {v3}, Ljava/util/Iterator;->hasNext()Z
+
+    move-result v4
+
+    if-eqz v4, :cond_9
+
+    invoke-interface {v3}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+
+    move-result-object v4
+
+    check-cast v4, Ljava/util/Map$Entry;
 
     .line 418
     invoke-virtual {v0}, Ljp/co/sony/mc/camera/setting/CameraProSetting;->getAvailablePrimaryKeys()Ljava/util/ArrayList;
 
-    move-result-object v4
+    move-result-object v5
 
-    invoke-virtual {v4}, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;
-
-    move-result-object v4
-
-    :cond_7
-    :goto_0
-    invoke-interface {v4}, Ljava/util/Iterator;->hasNext()Z
-
-    move-result v5
-
-    if-eqz v5, :cond_6
-
-    invoke-interface {v4}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+    invoke-virtual {v5}, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;
 
     move-result-object v5
 
-    check-cast v5, Landroid/util/Pair;
+    :cond_7
+    :goto_0
+    invoke-interface {v5}, Ljava/util/Iterator;->hasNext()Z
+
+    move-result v6
+
+    if-eqz v6, :cond_6
+
+    invoke-interface {v5}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+
+    move-result-object v6
+
+    check-cast v6, Landroid/util/Pair;
 
     .line 419
-    iget-object v6, v5, Landroid/util/Pair;->first:Ljava/lang/Object;
+    iget-object v7, v6, Landroid/util/Pair;->first:Ljava/lang/Object;
 
-    check-cast v6, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
+    check-cast v7, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
     .line 420
-    iget-object v5, v5, Landroid/util/Pair;->second:Ljava/lang/Object;
+    iget-object v6, v6, Landroid/util/Pair;->second:Ljava/lang/Object;
 
-    check-cast v5, Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;
+    check-cast v6, Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;
 
     .line 421
-    invoke-static {v5}, Ljp/co/sony/mc/camera/util/capability/PlatformCapability;->isCameraSupported(Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;)Z
+    invoke-static {v6}, Ljp/co/sony/mc/camera/util/capability/PlatformCapability;->isCameraSupported(Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;)Z
 
-    move-result v7
+    move-result v8
 
-    if-eqz v7, :cond_7
+    if-eqz v8, :cond_7
 
-    iget-object v7, p0, Ljp/co/sony/mc/camera/CameraApplication;->mThermalInfo:Ljp/co/sony/mc/camera/CameraApplication$ThermalInfo;
+    iget-object v8, p0, Ljp/co/sony/mc/camera/CameraApplication;->mThermalInfo:Ljp/co/sony/mc/camera/CameraApplication$ThermalInfo;
 
-    invoke-static {v7}, Ljp/co/sony/mc/camera/CameraApplication$ThermalInfo;->-$$Nest$fgetmode(Ljp/co/sony/mc/camera/CameraApplication$ThermalInfo;)Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
+    invoke-static {v8}, Ljp/co/sony/mc/camera/CameraApplication$ThermalInfo;->-$$Nest$fgetmode(Ljp/co/sony/mc/camera/CameraApplication$ThermalInfo;)Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
-    move-result-object v7
+    move-result-object v8
 
-    if-eq v6, v7, :cond_8
+    if-eq v7, v8, :cond_8
 
     goto :goto_0
 
     .line 427
     :cond_8
-    invoke-interface {v3}, Ljava/util/Map$Entry;->getKey()Ljava/lang/Object;
+    invoke-interface {v4}, Ljava/util/Map$Entry;->getKey()Ljava/lang/Object;
 
-    move-result-object v7
+    move-result-object v8
 
-    check-cast v7, Ljp/co/sony/mc/camera/setting/SettingKey$Key;
+    check-cast v8, Ljp/co/sony/mc/camera/setting/SettingKey$Key;
 
-    invoke-virtual {v0, v6, v5, v7}, Ljp/co/sony/mc/camera/setting/CameraProSetting;->get(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;Ljp/co/sony/mc/camera/setting/SettingKey$Key;)Ljava/lang/Object;
-
-    move-result-object v7
-
-    check-cast v7, Ljp/co/sony/mc/camera/configuration/parameters/UserSettingPowerLevelValue;
-
-    .line 429
-    invoke-interface {v3}, Ljava/util/Map$Entry;->getValue()Ljava/lang/Object;
+    invoke-virtual {v0, v7, v6, v8}, Ljp/co/sony/mc/camera/setting/CameraProSetting;->get(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;Ljp/co/sony/mc/camera/setting/SettingKey$Key;)Ljava/lang/Object;
 
     move-result-object v8
 
     check-cast v8, Ljp/co/sony/mc/camera/configuration/parameters/UserSettingPowerLevelValue;
 
-    .line 431
-    invoke-interface {v3}, Ljava/util/Map$Entry;->getKey()Ljava/lang/Object;
+    .line 429
+    invoke-interface {v4}, Ljava/util/Map$Entry;->getValue()Ljava/lang/Object;
 
     move-result-object v9
 
-    check-cast v9, Ljp/co/sony/mc/camera/setting/SettingKey$Key;
+    check-cast v9, Ljp/co/sony/mc/camera/configuration/parameters/UserSettingPowerLevelValue;
 
-    invoke-virtual {v0, v6, v5, v9}, Ljp/co/sony/mc/camera/setting/CameraProSetting;->getOptions(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;Ljp/co/sony/mc/camera/setting/SettingKey$Key;)[Ljava/lang/Object;
+    .line 431
+    invoke-interface {v4}, Ljava/util/Map$Entry;->getKey()Ljava/lang/Object;
 
-    move-result-object v5
+    move-result-object v10
 
-    check-cast v5, [Ljp/co/sony/mc/camera/configuration/parameters/UserSettingValue;
+    check-cast v10, Ljp/co/sony/mc/camera/setting/SettingKey$Key;
 
-    if-eqz v5, :cond_7
-
-    .line 433
-    invoke-static {v5}, Ljava/util/Arrays;->asList([Ljava/lang/Object;)Ljava/util/List;
-
-    move-result-object v5
-
-    invoke-interface {v3}, Ljava/util/Map$Entry;->getValue()Ljava/lang/Object;
+    invoke-virtual {v0, v7, v6, v10}, Ljp/co/sony/mc/camera/setting/CameraProSetting;->getOptions(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;Ljp/co/sony/mc/camera/setting/SettingKey$Key;)[Ljava/lang/Object;
 
     move-result-object v6
 
-    invoke-interface {v5, v6}, Ljava/util/List;->contains(Ljava/lang/Object;)Z
+    check-cast v6, [Ljp/co/sony/mc/camera/configuration/parameters/UserSettingValue;
 
-    move-result v5
+    if-eqz v6, :cond_7
 
-    if-eqz v5, :cond_7
+    .line 433
+    invoke-static {v6}, Ljava/util/Arrays;->asList([Ljava/lang/Object;)Ljava/util/List;
+
+    move-result-object v6
+
+    invoke-interface {v4}, Ljava/util/Map$Entry;->getValue()Ljava/lang/Object;
+
+    move-result-object v7
+
+    invoke-interface {v6, v7}, Ljava/util/List;->contains(Ljava/lang/Object;)Z
+
+    move-result v6
+
+    if-eqz v6, :cond_7
 
     .line 434
-    invoke-interface {v7}, Ljp/co/sony/mc/camera/configuration/parameters/UserSettingPowerLevelValue;->getPowerLevel()Ljp/co/sony/mc/camera/configuration/parameters/PowerLevel;
-
-    move-result-object v5
-
-    invoke-virtual {v5}, Ljp/co/sony/mc/camera/configuration/parameters/PowerLevel;->ordinal()I
-
-    move-result v5
-
-    .line 435
     invoke-interface {v8}, Ljp/co/sony/mc/camera/configuration/parameters/UserSettingPowerLevelValue;->getPowerLevel()Ljp/co/sony/mc/camera/configuration/parameters/PowerLevel;
 
     move-result-object v6
@@ -479,15 +472,22 @@
 
     move-result v6
 
-    if-le v5, v6, :cond_7
+    .line 435
+    invoke-interface {v9}, Ljp/co/sony/mc/camera/configuration/parameters/UserSettingPowerLevelValue;->getPowerLevel()Ljp/co/sony/mc/camera/configuration/parameters/PowerLevel;
 
-    const/4 p0, 0x1
+    move-result-object v7
 
-    return p0
+    invoke-virtual {v7}, Ljp/co/sony/mc/camera/configuration/parameters/PowerLevel;->ordinal()I
+
+    move-result v7
+
+    if-le v6, v7, :cond_7
+
+    return v1
 
     :cond_9
     :goto_1
-    return v1
+    return v2
 .end method
 
 .method private postRecommendedSettingsNotification()V
@@ -572,7 +572,7 @@
 
     move-result-object v2
 
-    const v3, 0x7f0c0142
+    const v3, 0x7f0c0131
 
     invoke-direct {v1, v2, v3}, Landroid/widget/RemoteViews;-><init>(Ljava/lang/String;I)V
 
@@ -621,7 +621,7 @@
 
     move-result-object v2
 
-    const v3, 0x7f090186
+    const v3, 0x7f090182
 
     .line 468
     invoke-virtual {v1, v3, v2}, Landroid/widget/RemoteViews;->setOnClickPendingIntent(ILandroid/app/PendingIntent;)V
@@ -685,7 +685,7 @@
 
     move-result-object p0
 
-    const v2, 0x7f09034d
+    const v2, 0x7f09034c
 
     .line 479
     invoke-virtual {v1, v2, p0}, Landroid/widget/RemoteViews;->setOnClickPendingIntent(ILandroid/app/PendingIntent;)V
@@ -851,7 +851,7 @@
 .end method
 
 .method public onCreate()V
-    .locals 4
+    .locals 6
 
     .line 126
     sget-object v0, Ljp/co/sony/mc/camera/util/PerfLog;->APPLICATION_ON_CREATE:Ljp/co/sony/mc/camera/util/PerfLog;
@@ -861,13 +861,17 @@
     .line 127
     sget-boolean v0, Ljp/co/sony/mc/camera/util/CamLog;->DEBUG:Z
 
+    const/4 v1, 0x0
+
+    const/4 v2, 0x1
+
     if-eqz v0, :cond_0
 
-    const-string v0, "onCreate() : E"
+    new-array v0, v2, [Ljava/lang/String;
 
-    filled-new-array {v0}, [Ljava/lang/String;
+    const-string v3, "onCreate() : E"
 
-    move-result-object v0
+    aput-object v3, v0, v1
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
@@ -875,9 +879,9 @@
     :cond_0
     sget-object v0, Ljp/co/sony/mc/camera/CameraApplication;->sContext:Landroid/content/Context;
 
-    const/4 v1, 0x0
+    const/4 v3, 0x0
 
-    invoke-static {v0, v1}, Ljp/co/sony/mc/camera/setting/SettingsFactory;->create(Landroid/content/Context;Ljp/co/sony/mc/camera/storage/Storage;)Ljp/co/sony/mc/camera/setting/StoredSettings;
+    invoke-static {v0, v3}, Ljp/co/sony/mc/camera/setting/SettingsFactory;->create(Landroid/content/Context;Ljp/co/sony/mc/camera/storage/Storage;)Ljp/co/sony/mc/camera/setting/StoredSettings;
 
     move-result-object v0
 
@@ -895,11 +899,11 @@
     move-result-object v0
 
     .line 131
-    new-instance v2, Ljp/co/sony/mc/camera/CameraApplication$CreateStorageThread;
+    new-instance v4, Ljp/co/sony/mc/camera/CameraApplication$CreateStorageThread;
 
-    invoke-direct {v2, p0, v0}, Ljp/co/sony/mc/camera/CameraApplication$CreateStorageThread;-><init>(Ljp/co/sony/mc/camera/CameraApplication;Ljava/util/concurrent/ExecutorService;)V
+    invoke-direct {v4, p0, v0}, Ljp/co/sony/mc/camera/CameraApplication$CreateStorageThread;-><init>(Ljp/co/sony/mc/camera/CameraApplication;Ljava/util/concurrent/ExecutorService;)V
 
-    invoke-interface {v0, v2}, Ljava/util/concurrent/ExecutorService;->submit(Ljava/util/concurrent/Callable;)Ljava/util/concurrent/Future;
+    invoke-interface {v0, v4}, Ljava/util/concurrent/ExecutorService;->submit(Ljava/util/concurrent/Callable;)Ljava/util/concurrent/Future;
 
     move-result-object v0
 
@@ -913,11 +917,11 @@
     move-result-object v0
 
     .line 134
-    new-instance v2, Ljp/co/sony/mc/camera/CameraApplication$CreateCameraDeviceThread;
+    new-instance v4, Ljp/co/sony/mc/camera/CameraApplication$CreateCameraDeviceThread;
 
-    invoke-direct {v2, p0, v0}, Ljp/co/sony/mc/camera/CameraApplication$CreateCameraDeviceThread;-><init>(Ljp/co/sony/mc/camera/CameraApplication;Ljava/util/concurrent/ExecutorService;)V
+    invoke-direct {v4, p0, v0}, Ljp/co/sony/mc/camera/CameraApplication$CreateCameraDeviceThread;-><init>(Ljp/co/sony/mc/camera/CameraApplication;Ljava/util/concurrent/ExecutorService;)V
 
-    invoke-interface {v0, v2}, Ljava/util/concurrent/ExecutorService;->submit(Ljava/util/concurrent/Callable;)Ljava/util/concurrent/Future;
+    invoke-interface {v0, v4}, Ljava/util/concurrent/ExecutorService;->submit(Ljava/util/concurrent/Callable;)Ljava/util/concurrent/Future;
 
     move-result-object v0
 
@@ -931,11 +935,11 @@
     move-result-object v0
 
     .line 137
-    new-instance v2, Ljp/co/sony/mc/camera/CameraApplication$CreateCameraProSettingThread;
+    new-instance v4, Ljp/co/sony/mc/camera/CameraApplication$CreateCameraProSettingThread;
 
-    invoke-direct {v2, p0, v0}, Ljp/co/sony/mc/camera/CameraApplication$CreateCameraProSettingThread;-><init>(Ljp/co/sony/mc/camera/CameraApplication;Ljava/util/concurrent/ExecutorService;)V
+    invoke-direct {v4, p0, v0}, Ljp/co/sony/mc/camera/CameraApplication$CreateCameraProSettingThread;-><init>(Ljp/co/sony/mc/camera/CameraApplication;Ljava/util/concurrent/ExecutorService;)V
 
-    invoke-interface {v0, v2}, Ljava/util/concurrent/ExecutorService;->submit(Ljava/util/concurrent/Callable;)Ljava/util/concurrent/Future;
+    invoke-interface {v0, v4}, Ljava/util/concurrent/ExecutorService;->submit(Ljava/util/concurrent/Callable;)Ljava/util/concurrent/Future;
 
     move-result-object v0
 
@@ -946,9 +950,9 @@
 
     invoke-static {}, Ljp/co/sony/mc/camera/CameraApplication;->getContext()Landroid/content/Context;
 
-    move-result-object v2
+    move-result-object v4
 
-    invoke-virtual {v0, v2}, Lcom/sonymobile/camera/bleremotecontrol/RemoconManager$Companion;->init(Landroid/content/Context;)V
+    invoke-virtual {v0, v4}, Lcom/sonymobile/camera/bleremotecontrol/RemoconManager$Companion;->init(Landroid/content/Context;)V
 
     .line 141
     new-instance v0, Ljp/co/sony/mc/camera/CameraApplication$1;
@@ -960,30 +964,30 @@
     .line 153
     new-instance v0, Ljp/co/sony/mc/camera/CameraApplication$ClassPreloadDoneCallback;
 
-    invoke-direct {v0, p0, v1}, Ljp/co/sony/mc/camera/CameraApplication$ClassPreloadDoneCallback;-><init>(Ljp/co/sony/mc/camera/CameraApplication;Ljp/co/sony/mc/camera/CameraApplication$ClassPreloadDoneCallback-IA;)V
+    invoke-direct {v0, p0, v3}, Ljp/co/sony/mc/camera/CameraApplication$ClassPreloadDoneCallback;-><init>(Ljp/co/sony/mc/camera/CameraApplication;Ljp/co/sony/mc/camera/CameraApplication$ClassPreloadDoneCallback-IA;)V
 
     iput-object v0, p0, Ljp/co/sony/mc/camera/CameraApplication;->mClassPreloadDoneCallback:Ljp/co/sony/mc/camera/ClassStaticBlockPreLoadThread$PreloadDoneCallback;
 
     .line 154
     new-instance v0, Ljp/co/sony/mc/camera/ClassStaticBlockPreLoadThread;
 
-    iget-object v2, p0, Ljp/co/sony/mc/camera/CameraApplication;->mClassPreloadDoneCallback:Ljp/co/sony/mc/camera/ClassStaticBlockPreLoadThread$PreloadDoneCallback;
+    iget-object v4, p0, Ljp/co/sony/mc/camera/CameraApplication;->mClassPreloadDoneCallback:Ljp/co/sony/mc/camera/ClassStaticBlockPreLoadThread$PreloadDoneCallback;
 
-    invoke-direct {v0, v2}, Ljp/co/sony/mc/camera/ClassStaticBlockPreLoadThread;-><init>(Ljp/co/sony/mc/camera/ClassStaticBlockPreLoadThread$PreloadDoneCallback;)V
+    invoke-direct {v0, v4}, Ljp/co/sony/mc/camera/ClassStaticBlockPreLoadThread;-><init>(Ljp/co/sony/mc/camera/ClassStaticBlockPreLoadThread$PreloadDoneCallback;)V
 
     iput-object v0, p0, Ljp/co/sony/mc/camera/CameraApplication;->mClassPreloadThread:Ljp/co/sony/mc/camera/ClassStaticBlockPreLoadThread;
 
-    const/16 v2, 0xa
+    const/16 v4, 0xa
 
     .line 155
-    invoke-virtual {v0, v2}, Ljp/co/sony/mc/camera/ClassStaticBlockPreLoadThread;->setPriority(I)V
+    invoke-virtual {v0, v4}, Ljp/co/sony/mc/camera/ClassStaticBlockPreLoadThread;->setPriority(I)V
 
     .line 156
     iget-object v0, p0, Ljp/co/sony/mc/camera/CameraApplication;->mClassPreloadThread:Ljp/co/sony/mc/camera/ClassStaticBlockPreLoadThread;
 
-    const-string v2, "ClassStaticBlockPreLoadThread"
+    const-string v4, "ClassStaticBlockPreLoadThread"
 
-    invoke-virtual {v0, v2}, Ljp/co/sony/mc/camera/ClassStaticBlockPreLoadThread;->setName(Ljava/lang/String;)V
+    invoke-virtual {v0, v4}, Ljp/co/sony/mc/camera/ClassStaticBlockPreLoadThread;->setName(Ljava/lang/String;)V
 
     .line 157
     iget-object v0, p0, Ljp/co/sony/mc/camera/CameraApplication;->mClassPreloadThread:Ljp/co/sony/mc/camera/ClassStaticBlockPreLoadThread;
@@ -999,17 +1003,15 @@
 
     check-cast v0, Landroid/os/PowerManager;
 
-    const/4 v3, 0x1
-
     .line 162
-    invoke-virtual {v0, v3, v2}, Landroid/os/PowerManager;->newWakeLock(ILjava/lang/String;)Landroid/os/PowerManager$WakeLock;
+    invoke-virtual {v0, v2, v4}, Landroid/os/PowerManager;->newWakeLock(ILjava/lang/String;)Landroid/os/PowerManager$WakeLock;
 
     move-result-object v0
 
-    const-wide/16 v2, 0x7d0
+    const-wide/16 v4, 0x7d0
 
     .line 165
-    invoke-virtual {v0, v2, v3}, Landroid/os/PowerManager$WakeLock;->acquire(J)V
+    invoke-virtual {v0, v4, v5}, Landroid/os/PowerManager$WakeLock;->acquire(J)V
 
     .line 184
     invoke-super {p0}, Landroid/app/Application;->onCreate()V
@@ -1025,23 +1027,23 @@
     move-result-object v0
 
     .line 193
-    new-instance v2, Ljp/co/sony/mc/camera/CameraApplication$2;
+    new-instance v4, Ljp/co/sony/mc/camera/CameraApplication$2;
 
-    invoke-direct {v2, p0, v0}, Ljp/co/sony/mc/camera/CameraApplication$2;-><init>(Ljp/co/sony/mc/camera/CameraApplication;Ljava/lang/Thread$UncaughtExceptionHandler;)V
+    invoke-direct {v4, p0, v0}, Ljp/co/sony/mc/camera/CameraApplication$2;-><init>(Ljp/co/sony/mc/camera/CameraApplication;Ljava/lang/Thread$UncaughtExceptionHandler;)V
 
-    invoke-static {v2}, Ljava/lang/Thread;->setDefaultUncaughtExceptionHandler(Ljava/lang/Thread$UncaughtExceptionHandler;)V
+    invoke-static {v4}, Ljava/lang/Thread;->setDefaultUncaughtExceptionHandler(Ljava/lang/Thread$UncaughtExceptionHandler;)V
 
     .line 201
     sget-boolean v0, Ljp/co/sony/mc/camera/util/CamLog;->DEBUG:Z
 
     if-eqz v0, :cond_1
 
-    new-instance v1, Ljp/co/sony/mc/camera/idd/IddCamLog;
+    new-instance v3, Ljp/co/sony/mc/camera/idd/IddCamLog;
 
-    invoke-direct {v1}, Ljp/co/sony/mc/camera/idd/IddCamLog;-><init>()V
+    invoke-direct {v3}, Ljp/co/sony/mc/camera/idd/IddCamLog;-><init>()V
 
     :cond_1
-    invoke-static {p0, v1}, Ljp/co/sony/mc/camera/idd/core/IddManager;->init(Landroid/content/Context;Ljp/co/sony/mc/camera/idd/core/IddListener;)V
+    invoke-static {p0, v3}, Ljp/co/sony/mc/camera/idd/core/IddManager;->init(Landroid/content/Context;Ljp/co/sony/mc/camera/idd/core/IddListener;)V
 
     .line 203
     iget-object v0, p0, Ljp/co/sony/mc/camera/CameraApplication;->mLifeCycleCallback:Ljp/co/sony/mc/camera/CameraApplication$ActivityLifeCycleCallbackImpl;
@@ -1053,11 +1055,11 @@
 
     if-eqz p0, :cond_2
 
-    const-string p0, "onCreate() : X"
+    new-array p0, v2, [Ljava/lang/String;
 
-    filled-new-array {p0}, [Ljava/lang/String;
+    const-string v0, "onCreate() : X"
 
-    move-result-object p0
+    aput-object v0, p0, v1
 
     invoke-static {p0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 

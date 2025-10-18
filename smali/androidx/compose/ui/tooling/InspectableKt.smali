@@ -1,11 +1,11 @@
 .class public final Landroidx/compose/ui/tooling/InspectableKt;
 .super Ljava/lang/Object;
-.source "Inspectable.kt"
+.source "Inspectable.android.kt"
 
 
 # annotations
 .annotation system Ldalvik/annotation/SourceDebugExtension;
-    value = "SMAP\nInspectable.kt\nKotlin\n*S Kotlin\n*F\n+ 1 Inspectable.kt\nandroidx/compose/ui/tooling/InspectableKt\n+ 2 CompositionLocal.kt\nandroidx/compose/runtime/CompositionLocal\n*L\n1#1,80:1\n76#2:81\n*S KotlinDebug\n*F\n+ 1 Inspectable.kt\nandroidx/compose/ui/tooling/InspectableKt\n*L\n76#1:81\n*E\n"
+    value = "SMAP\nInspectable.android.kt\nKotlin\n*S Kotlin\n*F\n+ 1 Inspectable.android.kt\nandroidx/compose/ui/tooling/InspectableKt\n+ 2 CompositionLocal.kt\nandroidx/compose/runtime/CompositionLocal\n*L\n1#1,80:1\n74#2:81\n*S KotlinDebug\n*F\n+ 1 Inspectable.android.kt\nandroidx/compose/ui/tooling/InspectableKt\n*L\n76#1:81\n*E\n"
 .end annotation
 
 .annotation runtime Lkotlin/Metadata;
@@ -57,18 +57,14 @@
         message = "This method should not be used in application code and will be removed soon."
     .end annotation
 
-    const-string v0, "content"
-
-    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const v0, -0x56c9e16d
+    const v0, 0x1ce68072
 
     .line 75
     invoke-interface {p1, v0}, Landroidx/compose/runtime/Composer;->startRestartGroup(I)Landroidx/compose/runtime/Composer;
 
     move-result-object p1
 
-    const-string v1, "C(InInspectionModeOnly)75@2597L7,76@2616L9:Inspectable.kt#hevd2p"
+    const-string v1, "C(InInspectionModeOnly)75@2613L7,76@2632L9:Inspectable.android.kt#hevd2p"
 
     invoke-static {p1, v1}, Landroidx/compose/runtime/ComposerKt;->sourceInformation(Landroidx/compose/runtime/Composer;Ljava/lang/String;)V
 
@@ -129,7 +125,7 @@
 
     const/4 v2, -0x1
 
-    const-string v3, "androidx.compose.ui.tooling.InInspectionModeOnly (Inspectable.kt:74)"
+    const-string v3, "androidx.compose.ui.tooling.InInspectionModeOnly (Inspectable.android.kt:74)"
 
     invoke-static {v0, v1, v2, v3}, Landroidx/compose/runtime/ComposerKt;->traceEventStart(IIILjava/lang/String;)V
 
@@ -188,11 +184,8 @@
 
     move-result-object p1
 
-    if-nez p1, :cond_7
+    if-eqz p1, :cond_7
 
-    goto :goto_4
-
-    :cond_7
     new-instance v0, Landroidx/compose/ui/tooling/InspectableKt$InInspectionModeOnly$1;
 
     invoke-direct {v0, p0, p2}, Landroidx/compose/ui/tooling/InspectableKt$InInspectionModeOnly$1;-><init>(Lkotlin/jvm/functions/Function2;I)V
@@ -201,7 +194,7 @@
 
     invoke-interface {p1, v0}, Landroidx/compose/runtime/ScopeUpdateScope;->updateScope(Lkotlin/jvm/functions/Function2;)V
 
-    :goto_4
+    :cond_7
     return-void
 .end method
 
@@ -223,22 +216,14 @@
         }
     .end annotation
 
-    const-string v0, "compositionDataRecord"
-
-    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string v0, "content"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const v0, -0x36795930    # -1103066.0f
+    const v0, -0x63828451
 
     .line 57
     invoke-interface {p2, v0}, Landroidx/compose/runtime/Composer;->startRestartGroup(I)Landroidx/compose/runtime/Composer;
 
     move-result-object p2
 
-    const-string v1, "C(Inspectable)60@2034L146:Inspectable.kt#hevd2p"
+    const-string v1, "C(Inspectable)60@2050L146:Inspectable.android.kt#hevd2p"
 
     invoke-static {p2, v1}, Landroidx/compose/runtime/ComposerKt;->sourceInformation(Landroidx/compose/runtime/Composer;Ljava/lang/String;)V
 
@@ -322,7 +307,7 @@
 
     const/4 v3, -0x1
 
-    const-string v4, "androidx.compose.ui.tooling.Inspectable (Inspectable.kt:53)"
+    const-string v4, "androidx.compose.ui.tooling.Inspectable (Inspectable.android.kt:56)"
 
     invoke-static {v0, v1, v3, v4}, Landroidx/compose/runtime/ComposerKt;->traceEventStart(IIILjava/lang/String;)V
 
@@ -331,6 +316,10 @@
     invoke-interface {p2}, Landroidx/compose/runtime/Composer;->collectParameterInformation()V
 
     .line 59
+    const-string v0, "null cannot be cast to non-null type androidx.compose.ui.tooling.CompositionDataRecordImpl"
+
+    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;Ljava/lang/String;)V
+
     move-object v0, p0
 
     check-cast v0, Landroidx/compose/ui/tooling/CompositionDataRecordImpl;
@@ -347,6 +336,8 @@
     invoke-interface {v0, v3}, Ljava/util/Set;->add(Ljava/lang/Object;)Z
 
     .line 62
+    new-array v2, v2, [Landroidx/compose/runtime/ProvidedValue;
+
     invoke-static {}, Landroidx/compose/ui/platform/InspectionModeKt;->getLocalInspectionMode()Landroidx/compose/runtime/ProvidableCompositionLocal;
 
     move-result-object v3
@@ -361,20 +352,18 @@
 
     move-result-object v3
 
-    .line 63
-    invoke-static {}, Landroidx/compose/runtime/tooling/InspectionTablesKt;->getLocalInspectionTables()Landroidx/compose/runtime/ProvidableCompositionLocal;
-
-    move-result-object v5
-
-    invoke-virtual {v5, v0}, Landroidx/compose/runtime/ProvidableCompositionLocal;->provides(Ljava/lang/Object;)Landroidx/compose/runtime/ProvidedValue;
-
-    move-result-object v0
-
-    new-array v2, v2, [Landroidx/compose/runtime/ProvidedValue;
-
     const/4 v5, 0x0
 
     aput-object v3, v2, v5
+
+    .line 63
+    invoke-static {}, Landroidx/compose/runtime/tooling/InspectionTablesKt;->getLocalInspectionTables()Landroidx/compose/runtime/ProvidableCompositionLocal;
+
+    move-result-object v3
+
+    invoke-virtual {v3, v0}, Landroidx/compose/runtime/ProvidableCompositionLocal;->provides(Ljava/lang/Object;)Landroidx/compose/runtime/ProvidedValue;
+
+    move-result-object v0
 
     aput-object v0, v2, v4
 
@@ -400,11 +389,8 @@
 
     move-result-object p2
 
-    if-nez p2, :cond_8
+    if-eqz p2, :cond_8
 
-    goto :goto_5
-
-    :cond_8
     new-instance v0, Landroidx/compose/ui/tooling/InspectableKt$Inspectable$1;
 
     invoke-direct {v0, p0, p1, p3}, Landroidx/compose/ui/tooling/InspectableKt$Inspectable$1;-><init>(Landroidx/compose/ui/tooling/CompositionDataRecord;Lkotlin/jvm/functions/Function2;I)V
@@ -413,6 +399,6 @@
 
     invoke-interface {p2, v0}, Landroidx/compose/runtime/ScopeUpdateScope;->updateScope(Lkotlin/jvm/functions/Function2;)V
 
-    :goto_5
+    :cond_8
     return-void
 .end method

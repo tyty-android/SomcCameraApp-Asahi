@@ -88,7 +88,7 @@
 .method private constructor <init>()V
     .locals 0
 
-    .line 24
+    .line 25
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -97,7 +97,7 @@
 .method private final readResolve()Ljava/lang/Object;
     .locals 0
 
-    .line 52
+    .line 53
     sget-object p0, Lkotlin/collections/EmptyList;->INSTANCE:Lkotlin/collections/EmptyList;
 
     return-object p0
@@ -192,7 +192,7 @@
 .method public final bridge contains(Ljava/lang/Object;)Z
     .locals 1
 
-    .line 24
+    .line 25
     instance-of v0, p1, Ljava/lang/Void;
 
     if-nez v0, :cond_0
@@ -230,7 +230,7 @@
 
     invoke-static {p1, p0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 34
+    .line 35
     invoke-interface {p1}, Ljava/util/Collection;->isEmpty()Z
 
     move-result p0
@@ -241,7 +241,7 @@
 .method public equals(Ljava/lang/Object;)Z
     .locals 0
 
-    .line 27
+    .line 28
     instance-of p0, p1, Ljava/util/List;
 
     if-eqz p0, :cond_0
@@ -268,7 +268,7 @@
 .method public bridge synthetic get(I)Ljava/lang/Object;
     .locals 0
 
-    .line 24
+    .line 25
     invoke-virtual {p0, p1}, Lkotlin/collections/EmptyList;->get(I)Ljava/lang/Void;
 
     move-result-object p0
@@ -279,7 +279,7 @@
 .method public get(I)Ljava/lang/Void;
     .locals 2
 
-    .line 36
+    .line 37
     new-instance p0, Ljava/lang/IndexOutOfBoundsException;
 
     new-instance v0, Ljava/lang/StringBuilder;
@@ -326,7 +326,7 @@
 .method public final bridge indexOf(Ljava/lang/Object;)I
     .locals 1
 
-    .line 24
+    .line 25
     instance-of v0, p1, Ljava/lang/Void;
 
     if-nez v0, :cond_0
@@ -368,7 +368,7 @@
 .method public iterator()Ljava/util/Iterator;
     .locals 0
 
-    .line 40
+    .line 41
     sget-object p0, Lkotlin/collections/EmptyIterator;->INSTANCE:Lkotlin/collections/EmptyIterator;
 
     check-cast p0, Ljava/util/Iterator;
@@ -379,7 +379,7 @@
 .method public final bridge lastIndexOf(Ljava/lang/Object;)I
     .locals 1
 
-    .line 24
+    .line 25
     instance-of v0, p1, Ljava/lang/Void;
 
     if-nez v0, :cond_0
@@ -413,7 +413,7 @@
 .method public listIterator()Ljava/util/ListIterator;
     .locals 0
 
-    .line 41
+    .line 42
     sget-object p0, Lkotlin/collections/EmptyIterator;->INSTANCE:Lkotlin/collections/EmptyIterator;
 
     check-cast p0, Ljava/util/ListIterator;
@@ -426,14 +426,14 @@
 
     if-nez p1, :cond_0
 
-    .line 44
+    .line 45
     sget-object p0, Lkotlin/collections/EmptyIterator;->INSTANCE:Lkotlin/collections/EmptyIterator;
 
     check-cast p0, Ljava/util/ListIterator;
 
     return-object p0
 
-    .line 43
+    .line 44
     :cond_0
     new-instance p0, Ljava/lang/IndexOutOfBoundsException;
 
@@ -543,7 +543,7 @@
 .method public final bridge size()I
     .locals 0
 
-    .line 24
+    .line 25
     invoke-virtual {p0}, Lkotlin/collections/EmptyList;->getSize()I
 
     move-result p0
@@ -558,12 +558,12 @@
 
     if-nez p2, :cond_0
 
-    .line 48
+    .line 49
     check-cast p0, Ljava/util/List;
 
     return-object p0
 
-    .line 49
+    .line 50
     :cond_0
     new-instance p0, Ljava/lang/IndexOutOfBoundsException;
 
@@ -634,7 +634,7 @@
 .method public toString()Ljava/lang/String;
     .locals 0
 
-    .line 29
+    .line 30
     const-string p0, "[]"
 
     return-object p0

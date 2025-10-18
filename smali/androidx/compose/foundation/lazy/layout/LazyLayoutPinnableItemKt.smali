@@ -5,7 +5,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/SourceDebugExtension;
-    value = "SMAP\nLazyLayoutPinnableItem.kt\nKotlin\n*S Kotlin\n*F\n+ 1 LazyLayoutPinnableItem.kt\nandroidx/compose/foundation/lazy/layout/LazyLayoutPinnableItemKt\n+ 2 Composables.kt\nandroidx/compose/runtime/ComposablesKt\n+ 3 Composer.kt\nandroidx/compose/runtime/ComposerKt\n+ 4 CompositionLocal.kt\nandroidx/compose/runtime/CompositionLocal\n*L\n1#1,162:1\n50#2:163\n49#2:164\n36#2:172\n1097#3,6:165\n1097#3,6:173\n76#4:171\n*S KotlinDebug\n*F\n+ 1 LazyLayoutPinnableItem.kt\nandroidx/compose/foundation/lazy/layout/LazyLayoutPinnableItemKt\n*L\n50#1:163\n50#1:164\n53#1:172\n50#1:165,6\n53#1:173,6\n52#1:171\n*E\n"
+    value = "SMAP\nLazyLayoutPinnableItem.kt\nKotlin\n*S Kotlin\n*F\n+ 1 LazyLayoutPinnableItem.kt\nandroidx/compose/foundation/lazy/layout/LazyLayoutPinnableItemKt\n+ 2 Composables.kt\nandroidx/compose/runtime/ComposablesKt\n+ 3 Composer.kt\nandroidx/compose/runtime/ComposerKt\n+ 4 CompositionLocal.kt\nandroidx/compose/runtime/CompositionLocal\n*L\n1#1,174:1\n50#2:175\n49#2:176\n1116#3,6:177\n1116#3,6:184\n74#4:183\n*S KotlinDebug\n*F\n+ 1 LazyLayoutPinnableItem.kt\nandroidx/compose/foundation/lazy/layout/LazyLayoutPinnableItemKt\n*L\n54#1:175\n54#1:176\n54#1:177,6\n57#1:184,6\n56#1:183\n*E\n"
 .end annotation
 
 .annotation runtime Lkotlin/Metadata;
@@ -58,22 +58,14 @@
         }
     .end annotation
 
-    const-string v0, "pinnedItemList"
-
-    invoke-static {p2, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string v0, "content"
-
-    invoke-static {p3, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
     const v0, -0x7beccd10
 
-    .line 49
+    .line 53
     invoke-interface {p4, v0}, Landroidx/compose/runtime/Composer;->startRestartGroup(I)Landroidx/compose/runtime/Composer;
 
     move-result-object p4
 
-    const-string v1, "C(LazyLayoutPinnableItem)P(2,1,3)49@1914L77,51@2089L7,52@2132L43,52@2101L74,53@2180L103:LazyLayoutPinnableItem.kt#wow0x6"
+    const-string v1, "C(LazyLayoutPinnableItem)P(2,1,3)53@2119L77,55@2294L7,56@2306L74,57@2385L103:LazyLayoutPinnableItem.kt#wow0x6"
 
     invoke-static {p4, v1}, Landroidx/compose/runtime/ComposerKt;->sourceInformation(Landroidx/compose/runtime/Composer;Ljava/lang/String;)V
 
@@ -85,21 +77,21 @@
 
     const/4 v1, -0x1
 
-    const-string v2, "androidx.compose.foundation.lazy.layout.LazyLayoutPinnableItem (LazyLayoutPinnableItem.kt:43)"
+    const-string v2, "androidx.compose.foundation.lazy.layout.LazyLayoutPinnableItem (LazyLayoutPinnableItem.kt:52)"
 
     invoke-static {v0, p5, v1, v2}, Landroidx/compose/runtime/ComposerKt;->traceEventStart(IIILjava/lang/String;)V
 
     :cond_0
     const v0, 0x1e7b2b64
 
-    .line 50
+    .line 54
     invoke-interface {p4, v0}, Landroidx/compose/runtime/Composer;->startReplaceableGroup(I)V
 
     const-string v0, "CC(remember)P(1,2):Composables.kt#9igjgp"
 
     invoke-static {p4, v0}, Landroidx/compose/runtime/ComposerKt;->sourceInformation(Landroidx/compose/runtime/Composer;Ljava/lang/String;)V
 
-    .line 163
+    .line 175
     invoke-interface {p4, p0}, Landroidx/compose/runtime/Composer;->changed(Ljava/lang/Object;)Z
 
     move-result v0
@@ -110,14 +102,14 @@
 
     or-int/2addr v0, v1
 
-    .line 165
+    .line 177
     invoke-interface {p4}, Landroidx/compose/runtime/Composer;->rememberedValue()Ljava/lang/Object;
 
     move-result-object v1
 
     if-nez v0, :cond_1
 
-    .line 166
+    .line 178
     sget-object v0, Landroidx/compose/runtime/Composer;->Companion:Landroidx/compose/runtime/Composer$Companion;
 
     invoke-virtual {v0}, Landroidx/compose/runtime/Composer$Companion;->getEmpty()Ljava/lang/Object;
@@ -126,26 +118,26 @@
 
     if-ne v1, v0, :cond_2
 
-    .line 50
+    .line 54
     :cond_1
     new-instance v1, Landroidx/compose/foundation/lazy/layout/LazyLayoutPinnableItem;
 
     invoke-direct {v1, p0, p2}, Landroidx/compose/foundation/lazy/layout/LazyLayoutPinnableItem;-><init>(Ljava/lang/Object;Landroidx/compose/foundation/lazy/layout/LazyLayoutPinnedItemList;)V
 
-    .line 168
+    .line 180
     invoke-interface {p4, v1}, Landroidx/compose/runtime/Composer;->updateRememberedValue(Ljava/lang/Object;)V
 
-    .line 164
+    .line 176
     :cond_2
     invoke-interface {p4}, Landroidx/compose/runtime/Composer;->endReplaceableGroup()V
 
-    .line 50
+    .line 54
     check-cast v1, Landroidx/compose/foundation/lazy/layout/LazyLayoutPinnableItem;
 
-    .line 51
+    .line 55
     invoke-virtual {v1, p1}, Landroidx/compose/foundation/lazy/layout/LazyLayoutPinnableItem;->setIndex(I)V
 
-    .line 52
+    .line 56
     invoke-static {}, Landroidx/compose/ui/layout/PinnableContainerKt;->getLocalPinnableContainer()Landroidx/compose/runtime/ProvidableCompositionLocal;
 
     move-result-object v0
@@ -156,7 +148,7 @@
 
     const-string v3, "CC:CompositionLocal.kt#9igjgp"
 
-    .line 171
+    .line 183
     invoke-static {p4, v2, v3}, Landroidx/compose/runtime/ComposerKt;->sourceInformationMarkerStart(Landroidx/compose/runtime/Composer;ILjava/lang/String;)V
 
     invoke-interface {p4, v0}, Landroidx/compose/runtime/Composer;->consume(Landroidx/compose/runtime/CompositionLocal;)Ljava/lang/Object;
@@ -167,31 +159,26 @@
 
     check-cast v0, Landroidx/compose/ui/layout/PinnableContainer;
 
-    .line 52
+    .line 56
     invoke-virtual {v1, v0}, Landroidx/compose/foundation/lazy/layout/LazyLayoutPinnableItem;->setParentPinnableContainer(Landroidx/compose/ui/layout/PinnableContainer;)V
 
-    const v0, 0x44faf204
+    const v0, -0x366eddcd
 
-    .line 53
+    .line 57
     invoke-interface {p4, v0}, Landroidx/compose/runtime/Composer;->startReplaceableGroup(I)V
 
-    const-string v0, "CC(remember)P(1):Composables.kt#9igjgp"
-
-    invoke-static {p4, v0}, Landroidx/compose/runtime/ComposerKt;->sourceInformation(Landroidx/compose/runtime/Composer;Ljava/lang/String;)V
-
-    .line 172
     invoke-interface {p4, v1}, Landroidx/compose/runtime/Composer;->changed(Ljava/lang/Object;)Z
 
     move-result v0
 
-    .line 173
+    .line 184
     invoke-interface {p4}, Landroidx/compose/runtime/Composer;->rememberedValue()Ljava/lang/Object;
 
     move-result-object v2
 
     if-nez v0, :cond_3
 
-    .line 174
+    .line 185
     sget-object v0, Landroidx/compose/runtime/Composer;->Companion:Landroidx/compose/runtime/Composer$Companion;
 
     invoke-virtual {v0}, Landroidx/compose/runtime/Composer$Companion;->getEmpty()Ljava/lang/Object;
@@ -200,7 +187,7 @@
 
     if-ne v2, v0, :cond_4
 
-    .line 53
+    .line 57
     :cond_3
     new-instance v0, Landroidx/compose/foundation/lazy/layout/LazyLayoutPinnableItemKt$LazyLayoutPinnableItem$1$1;
 
@@ -210,43 +197,38 @@
 
     check-cast v2, Lkotlin/jvm/functions/Function1;
 
-    .line 176
+    .line 187
     invoke-interface {p4, v2}, Landroidx/compose/runtime/Composer;->updateRememberedValue(Ljava/lang/Object;)V
 
-    .line 172
+    .line 57
     :cond_4
-    invoke-interface {p4}, Landroidx/compose/runtime/Composer;->endReplaceableGroup()V
-
     check-cast v2, Lkotlin/jvm/functions/Function1;
+
+    invoke-interface {p4}, Landroidx/compose/runtime/Composer;->endReplaceableGroup()V
 
     const/4 v0, 0x0
 
-    .line 53
     invoke-static {v1, v2, p4, v0}, Landroidx/compose/runtime/EffectsKt;->DisposableEffect(Ljava/lang/Object;Lkotlin/jvm/functions/Function1;Landroidx/compose/runtime/Composer;I)V
 
-    .line 55
+    .line 59
     invoke-static {}, Landroidx/compose/ui/layout/PinnableContainerKt;->getLocalPinnableContainer()Landroidx/compose/runtime/ProvidableCompositionLocal;
 
-    move-result-object v2
+    move-result-object v0
 
-    invoke-virtual {v2, v1}, Landroidx/compose/runtime/ProvidableCompositionLocal;->provides(Ljava/lang/Object;)Landroidx/compose/runtime/ProvidedValue;
+    invoke-virtual {v0, v1}, Landroidx/compose/runtime/ProvidableCompositionLocal;->provides(Ljava/lang/Object;)Landroidx/compose/runtime/ProvidedValue;
 
-    move-result-object v1
+    move-result-object v0
 
-    const/4 v2, 0x1
+    sget v1, Landroidx/compose/runtime/ProvidedValue;->$stable:I
 
-    new-array v2, v2, [Landroidx/compose/runtime/ProvidedValue;
+    shr-int/lit8 v2, p5, 0x6
 
-    aput-object v1, v2, v0
+    and-int/lit8 v2, v2, 0x70
 
-    shr-int/lit8 v0, p5, 0x6
+    or-int/2addr v1, v2
 
-    and-int/lit8 v0, v0, 0x70
-
-    or-int/lit8 v0, v0, 0x8
-
-    .line 54
-    invoke-static {v2, p3, p4, v0}, Landroidx/compose/runtime/CompositionLocalKt;->CompositionLocalProvider([Landroidx/compose/runtime/ProvidedValue;Lkotlin/jvm/functions/Function2;Landroidx/compose/runtime/Composer;I)V
+    .line 58
+    invoke-static {v0, p3, p4, v1}, Landroidx/compose/runtime/CompositionLocalKt;->CompositionLocalProvider(Landroidx/compose/runtime/ProvidedValue;Lkotlin/jvm/functions/Function2;Landroidx/compose/runtime/Composer;I)V
 
     invoke-static {}, Landroidx/compose/runtime/ComposerKt;->isTraceInProgress()Z
 
@@ -261,11 +243,8 @@
 
     move-result-object p4
 
-    if-nez p4, :cond_6
+    if-eqz p4, :cond_6
 
-    goto :goto_0
-
-    :cond_6
     new-instance v6, Landroidx/compose/foundation/lazy/layout/LazyLayoutPinnableItemKt$LazyLayoutPinnableItem$2;
 
     move-object v0, v6
@@ -286,6 +265,6 @@
 
     invoke-interface {p4, v6}, Landroidx/compose/runtime/ScopeUpdateScope;->updateScope(Lkotlin/jvm/functions/Function2;)V
 
-    :goto_0
+    :cond_6
     return-void
 .end method

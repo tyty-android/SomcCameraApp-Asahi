@@ -3,7 +3,7 @@
 .source "D8$$SyntheticClass"
 
 # interfaces
-.implements Landroid/view/accessibility/AccessibilityManager$TouchExplorationStateChangeListener;
+.implements Landroid/view/View$OnLayoutChangeListener;
 
 
 # instance fields
@@ -24,13 +24,33 @@
 
 
 # virtual methods
-.method public final onTouchExplorationStateChanged(Z)V
-    .locals 0
+.method public final onLayoutChange(Landroid/view/View;IIIIIIII)V
+    .locals 10
 
     .line 0
-    iget-object p0, p0, Ljp/co/sony/mc/camera/view/viewbinder/ProModeCapturingModeMenuViewBinder$$ExternalSyntheticLambda1;->f$0:Ljp/co/sony/mc/camera/view/viewbinder/ProModeCapturingModeMenuViewBinder;
+    move-object v0, p0
 
-    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/view/viewbinder/ProModeCapturingModeMenuViewBinder;->$r8$lambda$zbjfg_54LQKBeez0EnkXv1_iWxM(Ljp/co/sony/mc/camera/view/viewbinder/ProModeCapturingModeMenuViewBinder;Z)V
+    iget-object v0, v0, Ljp/co/sony/mc/camera/view/viewbinder/ProModeCapturingModeMenuViewBinder$$ExternalSyntheticLambda1;->f$0:Ljp/co/sony/mc/camera/view/viewbinder/ProModeCapturingModeMenuViewBinder;
+
+    move-object v1, p1
+
+    move v2, p2
+
+    move v3, p3
+
+    move v4, p4
+
+    move v5, p5
+
+    move/from16 v6, p6
+
+    move/from16 v7, p7
+
+    move/from16 v8, p8
+
+    move/from16 v9, p9
+
+    invoke-static/range {v0 .. v9}, Ljp/co/sony/mc/camera/view/viewbinder/ProModeCapturingModeMenuViewBinder;->$r8$lambda$ytyWc0yNlnz4ND9NXRidIJQLmMM(Ljp/co/sony/mc/camera/view/viewbinder/ProModeCapturingModeMenuViewBinder;Landroid/view/View;IIIIIIII)V
 
     return-void
 .end method

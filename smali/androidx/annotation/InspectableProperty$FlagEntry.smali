@@ -1,6 +1,6 @@
 .class public interface abstract annotation Landroidx/annotation/InspectableProperty$FlagEntry;
 .super Ljava/lang/Object;
-.source "InspectableProperty.kt"
+.source "InspectableProperty.jvm.kt"
 
 # interfaces
 .implements Ljava/lang/annotation/Annotation;
@@ -52,7 +52,7 @@
     k = 0x1
     mv = {
         0x1,
-        0x8,
+        0x7,
         0x0
     }
     xi = 0x30

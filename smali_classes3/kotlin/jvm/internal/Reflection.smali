@@ -316,7 +316,7 @@
 .end method
 
 .method public static nullableTypeOf(Ljava/lang/Class;Lkotlin/reflect/KTypeProjection;Lkotlin/reflect/KTypeProjection;)Lkotlin/reflect/KType;
-    .locals 1
+    .locals 3
 
     .line 163
     sget-object v0, Lkotlin/jvm/internal/Reflection;->factory:Lkotlin/jvm/internal/ReflectionFactory;
@@ -325,17 +325,23 @@
 
     move-result-object p0
 
-    filled-new-array {p1, p2}, [Lkotlin/reflect/KTypeProjection;
+    const/4 v1, 0x2
 
-    move-result-object p1
+    new-array v1, v1, [Lkotlin/reflect/KTypeProjection;
 
-    invoke-static {p1}, Ljava/util/Arrays;->asList([Ljava/lang/Object;)Ljava/util/List;
+    const/4 v2, 0x0
 
-    move-result-object p1
+    aput-object p1, v1, v2
 
-    const/4 p2, 0x1
+    const/4 p1, 0x1
 
-    invoke-virtual {v0, p0, p1, p2}, Lkotlin/jvm/internal/ReflectionFactory;->typeOf(Lkotlin/reflect/KClassifier;Ljava/util/List;Z)Lkotlin/reflect/KType;
+    aput-object p2, v1, p1
+
+    invoke-static {v1}, Ljava/util/Arrays;->asList([Ljava/lang/Object;)Ljava/util/List;
+
+    move-result-object p2
+
+    invoke-virtual {v0, p0, p2, p1}, Lkotlin/jvm/internal/ReflectionFactory;->typeOf(Lkotlin/reflect/KClassifier;Ljava/util/List;Z)Lkotlin/reflect/KType;
 
     move-result-object p0
 
@@ -539,7 +545,7 @@
 .end method
 
 .method public static typeOf(Ljava/lang/Class;Lkotlin/reflect/KTypeProjection;Lkotlin/reflect/KTypeProjection;)Lkotlin/reflect/KType;
-    .locals 1
+    .locals 3
 
     .line 138
     sget-object v0, Lkotlin/jvm/internal/Reflection;->factory:Lkotlin/jvm/internal/ReflectionFactory;
@@ -548,17 +554,23 @@
 
     move-result-object p0
 
-    filled-new-array {p1, p2}, [Lkotlin/reflect/KTypeProjection;
+    const/4 v1, 0x2
+
+    new-array v1, v1, [Lkotlin/reflect/KTypeProjection;
+
+    const/4 v2, 0x0
+
+    aput-object p1, v1, v2
+
+    const/4 p1, 0x1
+
+    aput-object p2, v1, p1
+
+    invoke-static {v1}, Ljava/util/Arrays;->asList([Ljava/lang/Object;)Ljava/util/List;
 
     move-result-object p1
 
-    invoke-static {p1}, Ljava/util/Arrays;->asList([Ljava/lang/Object;)Ljava/util/List;
-
-    move-result-object p1
-
-    const/4 p2, 0x0
-
-    invoke-virtual {v0, p0, p1, p2}, Lkotlin/jvm/internal/ReflectionFactory;->typeOf(Lkotlin/reflect/KClassifier;Ljava/util/List;Z)Lkotlin/reflect/KType;
+    invoke-virtual {v0, p0, p1, v2}, Lkotlin/jvm/internal/ReflectionFactory;->typeOf(Lkotlin/reflect/KClassifier;Ljava/util/List;Z)Lkotlin/reflect/KType;
 
     move-result-object p0
 

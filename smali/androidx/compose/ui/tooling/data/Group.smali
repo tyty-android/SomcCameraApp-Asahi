@@ -1,6 +1,6 @@
 .class public abstract Landroidx/compose/ui/tooling/data/Group;
 .super Ljava/lang/Object;
-.source "SlotTree.kt"
+.source "SlotTree.jvm.kt"
 
 
 # annotations
@@ -127,31 +127,31 @@
         }
     .end annotation
 
-    .line 33
+    .line 35
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 38
+    .line 40
     iput-object p1, p0, Landroidx/compose/ui/tooling/data/Group;->key:Ljava/lang/Object;
 
-    .line 43
+    .line 45
     iput-object p2, p0, Landroidx/compose/ui/tooling/data/Group;->name:Ljava/lang/String;
 
-    .line 48
+    .line 50
     iput-object p3, p0, Landroidx/compose/ui/tooling/data/Group;->location:Landroidx/compose/ui/tooling/data/SourceLocation;
 
-    .line 53
+    .line 55
     iput-object p4, p0, Landroidx/compose/ui/tooling/data/Group;->identity:Ljava/lang/Object;
 
-    .line 58
+    .line 60
     iput-object p5, p0, Landroidx/compose/ui/tooling/data/Group;->box:Landroidx/compose/ui/unit/IntRect;
 
-    .line 63
+    .line 65
     iput-object p6, p0, Landroidx/compose/ui/tooling/data/Group;->data:Ljava/util/Collection;
 
-    .line 68
+    .line 70
     iput-object p7, p0, Landroidx/compose/ui/tooling/data/Group;->children:Ljava/util/Collection;
 
-    .line 73
+    .line 75
     iput-boolean p8, p0, Landroidx/compose/ui/tooling/data/Group;->isInline:Z
 
     return-void
@@ -170,7 +170,7 @@
 .method public final getBox()Landroidx/compose/ui/unit/IntRect;
     .locals 0
 
-    .line 58
+    .line 60
     iget-object p0, p0, Landroidx/compose/ui/tooling/data/Group;->box:Landroidx/compose/ui/unit/IntRect;
 
     return-object p0
@@ -187,7 +187,7 @@
         }
     .end annotation
 
-    .line 68
+    .line 70
     iget-object p0, p0, Landroidx/compose/ui/tooling/data/Group;->children:Ljava/util/Collection;
 
     return-object p0
@@ -204,7 +204,7 @@
         }
     .end annotation
 
-    .line 63
+    .line 65
     iget-object p0, p0, Landroidx/compose/ui/tooling/data/Group;->data:Ljava/util/Collection;
 
     return-object p0
@@ -213,7 +213,7 @@
 .method public final getIdentity()Ljava/lang/Object;
     .locals 0
 
-    .line 53
+    .line 55
     iget-object p0, p0, Landroidx/compose/ui/tooling/data/Group;->identity:Ljava/lang/Object;
 
     return-object p0
@@ -222,7 +222,7 @@
 .method public final getKey()Ljava/lang/Object;
     .locals 0
 
-    .line 38
+    .line 40
     iget-object p0, p0, Landroidx/compose/ui/tooling/data/Group;->key:Ljava/lang/Object;
 
     return-object p0
@@ -231,7 +231,7 @@
 .method public final getLocation()Landroidx/compose/ui/tooling/data/SourceLocation;
     .locals 0
 
-    .line 48
+    .line 50
     iget-object p0, p0, Landroidx/compose/ui/tooling/data/Group;->location:Landroidx/compose/ui/tooling/data/SourceLocation;
 
     return-object p0
@@ -248,7 +248,7 @@
         }
     .end annotation
 
-    .line 78
+    .line 80
     invoke-static {}, Lkotlin/collections/CollectionsKt;->emptyList()Ljava/util/List;
 
     move-result-object p0
@@ -259,7 +259,7 @@
 .method public final getName()Ljava/lang/String;
     .locals 0
 
-    .line 43
+    .line 45
     iget-object p0, p0, Landroidx/compose/ui/tooling/data/Group;->name:Ljava/lang/String;
 
     return-object p0
@@ -276,7 +276,7 @@
         }
     .end annotation
 
-    .line 83
+    .line 85
     invoke-static {}, Lkotlin/collections/CollectionsKt;->emptyList()Ljava/util/List;
 
     move-result-object p0
@@ -287,7 +287,7 @@
 .method public final isInline()Z
     .locals 0
 
-    .line 73
+    .line 75
     iget-boolean p0, p0, Landroidx/compose/ui/tooling/data/Group;->isInline:Z
 
     return p0

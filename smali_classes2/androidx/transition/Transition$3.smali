@@ -22,7 +22,7 @@
 .method constructor <init>(Landroidx/transition/Transition;)V
     .locals 0
 
-    .line 1898
+    .line 2029
     iput-object p1, p0, Landroidx/transition/Transition$3;->this$0:Landroidx/transition/Transition;
 
     invoke-direct {p0}, Landroid/animation/AnimatorListenerAdapter;-><init>()V
@@ -35,12 +35,12 @@
 .method public onAnimationEnd(Landroid/animation/Animator;)V
     .locals 1
 
-    .line 1901
+    .line 2032
     iget-object v0, p0, Landroidx/transition/Transition$3;->this$0:Landroidx/transition/Transition;
 
     invoke-virtual {v0}, Landroidx/transition/Transition;->end()V
 
-    .line 1902
+    .line 2033
     invoke-virtual {p1, p0}, Landroid/animation/Animator;->removeListener(Landroid/animation/Animator$AnimatorListener;)V
 
     return-void

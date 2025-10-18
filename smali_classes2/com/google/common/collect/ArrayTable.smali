@@ -154,13 +154,21 @@
 
     move-result v1
 
-    filled-new-array {v0, v1}, [I
+    const/4 v2, 0x2
 
-    move-result-object v0
+    new-array v2, v2, [I
 
-    const-class v1, Ljava/lang/Object;
+    const/4 v3, 0x1
 
-    invoke-static {v1, v0}, Ljava/lang/reflect/Array;->newInstance(Ljava/lang/Class;[I)Ljava/lang/Object;
+    aput v1, v2, v3
+
+    const/4 v1, 0x0
+
+    aput v0, v2, v1
+
+    const-class v0, Ljava/lang/Object;
+
+    invoke-static {v0, v2}, Ljava/lang/reflect/Array;->newInstance(Ljava/lang/Class;[I)Ljava/lang/Object;
 
     move-result-object v0
 
@@ -168,8 +176,6 @@
 
     .line 168
     iput-object v0, p0, Lcom/google/common/collect/ArrayTable;->array:[[Ljava/lang/Object;
-
-    const/4 v1, 0x0
 
     move v2, v1
 
@@ -230,7 +236,7 @@
 .end method
 
 .method private constructor <init>(Ljava/lang/Iterable;Ljava/lang/Iterable;)V
-    .locals 2
+    .locals 4
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -267,14 +273,18 @@
 
     move-result v1
 
+    const/4 v2, 0x1
+
+    const/4 v3, 0x0
+
     if-ne v0, v1, :cond_0
 
-    const/4 v0, 0x1
+    move v0, v2
 
     goto :goto_0
 
     :cond_0
-    const/4 v0, 0x0
+    move v0, v3
 
     :goto_0
     invoke-static {v0}, Lcom/google/common/base/Preconditions;->checkArgument(Z)V
@@ -302,13 +312,17 @@
 
     move-result p2
 
-    filled-new-array {p1, p2}, [I
+    const/4 v0, 0x2
 
-    move-result-object p1
+    new-array v0, v0, [I
 
-    const-class p2, Ljava/lang/Object;
+    aput p2, v0, v2
 
-    invoke-static {p2, p1}, Ljava/lang/reflect/Array;->newInstance(Ljava/lang/Class;[I)Ljava/lang/Object;
+    aput p1, v0, v3
+
+    const-class p1, Ljava/lang/Object;
+
+    invoke-static {p1, v0}, Ljava/lang/reflect/Array;->newInstance(Ljava/lang/Class;[I)Ljava/lang/Object;
 
     move-result-object p1
 

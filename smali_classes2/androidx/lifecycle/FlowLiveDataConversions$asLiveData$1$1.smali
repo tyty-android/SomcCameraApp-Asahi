@@ -92,7 +92,7 @@
         }
     .end annotation
 
-    .line 81
+    .line 79
     iget-object p0, p0, Landroidx/lifecycle/FlowLiveDataConversions$asLiveData$1$1;->$$this$liveData:Landroidx/lifecycle/LiveDataScope;
 
     invoke-interface {p0, p1, p2}, Landroidx/lifecycle/LiveDataScope;->emit(Ljava/lang/Object;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;

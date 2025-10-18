@@ -11,12 +11,12 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/SourceDebugExtension;
-    value = "SMAP\nSnapshot.kt\nKotlin\n*S Kotlin\n*F\n+ 1 Snapshot.kt\nandroidx/compose/runtime/snapshots/MutableSnapshot\n+ 2 Snapshot.kt\nandroidx/compose/runtime/snapshots/SnapshotKt\n+ 3 ActualJvm.jvm.kt\nandroidx/compose/runtime/ActualJvm_jvmKt\n+ 4 ListUtils.kt\nandroidx/compose/runtime/snapshots/ListUtilsKt\n+ 5 IdentityArraySet.kt\nandroidx/compose/runtime/collection/IdentityArraySet\n+ 6 Snapshot.kt\nandroidx/compose/runtime/snapshots/Snapshot\n+ 7 fake.kt\nkotlin/jvm/internal/FakeKt\n*L\n1#1,2290:1\n978#1,2:2291\n984#1,3:2295\n987#1,6:2300\n978#1,2:2342\n984#1,3:2346\n987#1,6:2351\n978#1,9:2387\n987#1,6:2398\n1722#2:2293\n1722#2:2298\n1722#2:2306\n1722#2:2320\n1722#2:2344\n1722#2:2349\n1722#2:2376\n1722#2:2385\n1722#2:2396\n1722#2:2404\n1722#2:2406\n70#3:2294\n70#3:2299\n70#3:2307\n70#3:2321\n70#3:2345\n70#3:2350\n70#3:2377\n70#3:2386\n70#3:2397\n70#3:2405\n70#3:2407\n33#4,6:2308\n33#4,6:2314\n33#4,6:2336\n33#4,4:2372\n38#4:2378\n33#4,6:2379\n108#5,7:2322\n108#5,7:2329\n108#5,7:2358\n108#5,7:2365\n192#6:2357\n1#7:2408\n*S KotlinDebug\n*F\n+ 1 Snapshot.kt\nandroidx/compose/runtime/snapshots/MutableSnapshot\n*L\n676#1:2291,2\n676#1:2295,3\n676#1:2300,6\n808#1:2342,2\n808#1:2346,3\n808#1:2351,6\n995#1:2387,9\n995#1:2398,6\n677#1:2293\n676#1:2298\n728#1:2306\n781#1:2320\n809#1:2344\n808#1:2349\n961#1:2376\n986#1:2385\n995#1:2396\n998#1:2404\n1022#1:2406\n677#1:2294\n676#1:2299\n728#1:2307\n781#1:2321\n809#1:2345\n808#1:2350\n961#1:2377\n986#1:2386\n995#1:2397\n998#1:2405\n1022#1:2407\n767#1:2308,6\n773#1:2314,6\n786#1:2336,6\n958#1:2372,4\n958#1:2378\n969#1:2379,6\n784#1:2322,7\n785#1:2329,7\n873#1:2358,7\n908#1:2365,7\n855#1:2357\n*E\n"
+    value = "SMAP\nSnapshot.kt\nKotlin\n*S Kotlin\n*F\n+ 1 Snapshot.kt\nandroidx/compose/runtime/snapshots/MutableSnapshot\n+ 2 Snapshot.kt\nandroidx/compose/runtime/snapshots/SnapshotKt\n+ 3 ActualJvm.jvm.kt\nandroidx/compose/runtime/ActualJvm_jvmKt\n+ 4 ListUtils.kt\nandroidx/compose/runtime/snapshots/ListUtilsKt\n+ 5 IdentityArraySet.kt\nandroidx/compose/runtime/collection/IdentityArraySet\n+ 6 fake.kt\nkotlin/jvm/internal/FakeKt\n+ 7 Snapshot.kt\nandroidx/compose/runtime/snapshots/Snapshot\n*L\n1#1,2294:1\n978#1,2:2295\n984#1,3:2299\n987#1,6:2304\n978#1,2:2346\n984#1,3:2350\n987#1,6:2355\n978#1,9:2392\n987#1,6:2403\n1714#2:2297\n1714#2:2302\n1714#2:2310\n1714#2:2324\n1714#2:2348\n1714#2:2353\n1714#2:2381\n1714#2:2390\n1714#2:2401\n1714#2:2409\n1714#2:2411\n82#3:2298\n82#3:2303\n82#3:2311\n82#3:2325\n82#3:2349\n82#3:2354\n82#3:2382\n82#3:2391\n82#3:2402\n82#3:2410\n82#3:2412\n33#4,6:2312\n33#4,6:2318\n33#4,6:2340\n33#4,4:2377\n38#4:2383\n33#4,6:2384\n108#5,7:2326\n108#5,7:2333\n108#5,7:2363\n108#5,7:2370\n1#6:2361\n192#7:2362\n*S KotlinDebug\n*F\n+ 1 Snapshot.kt\nandroidx/compose/runtime/snapshots/MutableSnapshot\n*L\n676#1:2295,2\n676#1:2299,3\n676#1:2304,6\n808#1:2346,2\n808#1:2350,3\n808#1:2355,6\n995#1:2392,9\n995#1:2403,6\n677#1:2297\n676#1:2302\n728#1:2310\n781#1:2324\n809#1:2348\n808#1:2353\n961#1:2381\n986#1:2390\n995#1:2401\n998#1:2409\n1022#1:2411\n677#1:2298\n676#1:2303\n728#1:2311\n781#1:2325\n809#1:2349\n808#1:2354\n961#1:2382\n986#1:2391\n995#1:2402\n998#1:2410\n1022#1:2412\n767#1:2312,6\n773#1:2318,6\n786#1:2340,6\n958#1:2377,4\n958#1:2383\n969#1:2384,6\n784#1:2326,7\n785#1:2333,7\n873#1:2363,7\n908#1:2370,7\n855#1:2362\n*E\n"
 .end annotation
 
 .annotation runtime Lkotlin/Metadata;
     d1 = {
-        "\u0000f\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0008\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\u0010\u0002\n\u0002\u0008\u0003\n\u0002\u0010\u000b\n\u0002\u0008\u0005\n\u0002\u0010 \n\u0002\u0018\u0002\n\u0002\u0008\u0005\n\u0002\u0018\u0002\n\u0002\u0008\u000b\n\u0002\u0010\u0015\n\u0002\u0008\u0017\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0007\n\u0002\u0010$\n\u0002\u0018\u0002\n\u0002\u0008\u001e\u0008\u0017\u0018\u0000 g2\u00020\u0001:\u0001gBC\u0008\u0000\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\u0006\u0010\u0004\u001a\u00020\u0005\u0012\u0014\u0010\u0006\u001a\u0010\u0012\u0004\u0012\u00020\u0008\u0012\u0004\u0012\u00020\t\u0018\u00010\u0007\u0012\u0014\u0010\n\u001a\u0010\u0012\u0004\u0012\u00020\u0008\u0012\u0004\u0012\u00020\t\u0018\u00010\u0007\u00a2\u0006\u0002\u0010\u000bJ\u0008\u00109\u001a\u00020\tH\u0002J\r\u0010:\u001a\u00020\tH\u0000\u00a2\u0006\u0002\u0008;J\'\u0010:\u001a\u0002H<\"\u0004\u0008\u0000\u0010<2\u000c\u0010=\u001a\u0008\u0012\u0004\u0012\u0002H<0>H\u0080\u0008\u00f8\u0001\u0000\u00a2\u0006\u0004\u0008;\u0010?J\u0008\u0010@\u001a\u00020AH\u0016J\r\u0010B\u001a\u00020\tH\u0010\u00a2\u0006\u0002\u0008CJ\u0008\u0010D\u001a\u00020\tH\u0016J\u0008\u0010E\u001a\u00020\rH\u0016J3\u0010F\u001a\u00020A2\u0006\u0010G\u001a\u00020\u00032\u0014\u0010H\u001a\u0010\u0012\u0004\u0012\u00020J\u0012\u0004\u0012\u00020J\u0018\u00010I2\u0006\u0010K\u001a\u00020\u0005H\u0000\u00a2\u0006\u0002\u0008LJ\u0015\u0010M\u001a\u00020\t2\u0006\u0010N\u001a\u00020\u0001H\u0010\u00a2\u0006\u0002\u0008OJ\u0015\u0010P\u001a\u00020\t2\u0006\u0010N\u001a\u00020\u0001H\u0010\u00a2\u0006\u0002\u0008QJ\r\u0010R\u001a\u00020\tH\u0010\u00a2\u0006\u0002\u0008SJ\u0015\u0010T\u001a\u00020\t2\u0006\u0010U\u001a\u00020\u0014H\u0010\u00a2\u0006\u0002\u0008VJ\u0015\u0010W\u001a\u00020\t2\u0006\u0010\u0002\u001a\u00020\u0003H\u0000\u00a2\u0006\u0002\u0008XJ\u0015\u0010Y\u001a\u00020\t2\u0006\u00102\u001a\u00020\u0005H\u0000\u00a2\u0006\u0002\u0008ZJ\u0015\u0010[\u001a\u00020\t2\u0006\u0010\u0002\u001a\u00020\u0003H\u0000\u00a2\u0006\u0002\u0008\\J\u0015\u0010]\u001a\u00020\t2\u0006\u0010^\u001a\u00020&H\u0000\u00a2\u0006\u0002\u0008_J\r\u0010`\u001a\u00020\tH\u0010\u00a2\u0006\u0002\u0008aJ\u0008\u0010b\u001a\u00020\tH\u0002J8\u0010c\u001a\u00020\u00002\u0016\u0008\u0002\u0010\u0006\u001a\u0010\u0012\u0004\u0012\u00020\u0008\u0012\u0004\u0012\u00020\t\u0018\u00010\u00072\u0016\u0008\u0002\u0010\n\u001a\u0010\u0012\u0004\u0012\u00020\u0008\u0012\u0004\u0012\u00020\t\u0018\u00010\u0007H\u0016J\u001e\u0010d\u001a\u00020\u00012\u0014\u0010\u0006\u001a\u0010\u0012\u0004\u0012\u00020\u0008\u0012\u0004\u0012\u00020\t\u0018\u00010\u0007H\u0016J\u0008\u0010e\u001a\u00020\tH\u0002J\u0008\u0010f\u001a\u00020\tH\u0002R\u001a\u0010\u000c\u001a\u00020\rX\u0080\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\u0008\u000e\u0010\u000f\"\u0004\u0008\u0010\u0010\u0011R\"\u0010\u0012\u001a\n\u0012\u0004\u0012\u00020\u0014\u0018\u00010\u0013X\u0080\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\u0008\u0015\u0010\u0016\"\u0004\u0008\u0017\u0010\u0018R4\u0010\u001b\u001a\n\u0012\u0004\u0012\u00020\u0014\u0018\u00010\u001a2\u000e\u0010\u0019\u001a\n\u0012\u0004\u0012\u00020\u0014\u0018\u00010\u001a@VX\u0090\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\u0008\u001c\u0010\u001d\"\u0004\u0008\u001e\u0010\u001fR\u001a\u0010 \u001a\u00020\u0005X\u0080\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\u0008!\u0010\"\"\u0004\u0008#\u0010$R\u001a\u0010%\u001a\u00020&X\u0080\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\u0008\'\u0010(\"\u0004\u0008)\u0010*R\"\u0010\u0006\u001a\u0010\u0012\u0004\u0012\u00020\u0008\u0012\u0004\u0012\u00020\t\u0018\u00010\u0007X\u0090\u0004\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008+\u0010,R\u0014\u0010-\u001a\u00020\r8VX\u0096\u0004\u00a2\u0006\u0006\u001a\u0004\u0008.\u0010\u000fR\u0014\u0010/\u001a\u00020\u00018VX\u0096\u0004\u00a2\u0006\u0006\u001a\u0004\u00080\u00101R\u000e\u00102\u001a\u00020\u0003X\u0082\u000e\u00a2\u0006\u0002\n\u0000R\u001a\u00103\u001a\u00020\u0003X\u0090\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\u00084\u00105\"\u0004\u00086\u00107R\"\u0010\n\u001a\u0010\u0012\u0004\u0012\u00020\u0008\u0012\u0004\u0012\u00020\t\u0018\u00010\u0007X\u0090\u0004\u00a2\u0006\u0008\n\u0000\u001a\u0004\u00088\u0010,\u0082\u0002\u0007\n\u0005\u0008\u009920\u0001\u00a8\u0006h"
+        "\u0000f\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0008\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\u0010\u0002\n\u0002\u0008\u0003\n\u0002\u0010\u000b\n\u0002\u0008\u0005\n\u0002\u0010 \n\u0002\u0018\u0002\n\u0002\u0008\u0005\n\u0002\u0018\u0002\n\u0002\u0008\u000b\n\u0002\u0010\u0015\n\u0002\u0008\u0017\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0007\n\u0002\u0010$\n\u0002\u0018\u0002\n\u0002\u0008\u001e\u0008\u0017\u0018\u0000 g2\u00020\u0001:\u0001gBC\u0008\u0000\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\u0006\u0010\u0004\u001a\u00020\u0005\u0012\u0014\u0010\u0006\u001a\u0010\u0012\u0004\u0012\u00020\u0008\u0012\u0004\u0012\u00020\t\u0018\u00010\u0007\u0012\u0014\u0010\n\u001a\u0010\u0012\u0004\u0012\u00020\u0008\u0012\u0004\u0012\u00020\t\u0018\u00010\u0007\u00a2\u0006\u0002\u0010\u000bJ\u0008\u00109\u001a\u00020\tH\u0002J\r\u0010:\u001a\u00020\tH\u0000\u00a2\u0006\u0002\u0008;J$\u0010:\u001a\u0002H<\"\u0004\u0008\u0000\u0010<2\u000c\u0010=\u001a\u0008\u0012\u0004\u0012\u0002H<0>H\u0080\u0008\u00a2\u0006\u0004\u0008;\u0010?J\u0008\u0010@\u001a\u00020AH\u0016J\r\u0010B\u001a\u00020\tH\u0010\u00a2\u0006\u0002\u0008CJ\u0008\u0010D\u001a\u00020\tH\u0016J\u0008\u0010E\u001a\u00020\rH\u0016J3\u0010F\u001a\u00020A2\u0006\u0010G\u001a\u00020\u00032\u0014\u0010H\u001a\u0010\u0012\u0004\u0012\u00020J\u0012\u0004\u0012\u00020J\u0018\u00010I2\u0006\u0010K\u001a\u00020\u0005H\u0000\u00a2\u0006\u0002\u0008LJ\u0015\u0010M\u001a\u00020\t2\u0006\u0010N\u001a\u00020\u0001H\u0010\u00a2\u0006\u0002\u0008OJ\u0015\u0010P\u001a\u00020\t2\u0006\u0010N\u001a\u00020\u0001H\u0010\u00a2\u0006\u0002\u0008QJ\r\u0010R\u001a\u00020\tH\u0010\u00a2\u0006\u0002\u0008SJ\u0015\u0010T\u001a\u00020\t2\u0006\u0010U\u001a\u00020\u0014H\u0010\u00a2\u0006\u0002\u0008VJ\u0015\u0010W\u001a\u00020\t2\u0006\u0010\u0002\u001a\u00020\u0003H\u0000\u00a2\u0006\u0002\u0008XJ\u0015\u0010Y\u001a\u00020\t2\u0006\u00102\u001a\u00020\u0005H\u0000\u00a2\u0006\u0002\u0008ZJ\u0015\u0010[\u001a\u00020\t2\u0006\u0010\u0002\u001a\u00020\u0003H\u0000\u00a2\u0006\u0002\u0008\\J\u0015\u0010]\u001a\u00020\t2\u0006\u0010^\u001a\u00020&H\u0000\u00a2\u0006\u0002\u0008_J\r\u0010`\u001a\u00020\tH\u0010\u00a2\u0006\u0002\u0008aJ\u0008\u0010b\u001a\u00020\tH\u0002J8\u0010c\u001a\u00020\u00002\u0016\u0008\u0002\u0010\u0006\u001a\u0010\u0012\u0004\u0012\u00020\u0008\u0012\u0004\u0012\u00020\t\u0018\u00010\u00072\u0016\u0008\u0002\u0010\n\u001a\u0010\u0012\u0004\u0012\u00020\u0008\u0012\u0004\u0012\u00020\t\u0018\u00010\u0007H\u0016J\u001e\u0010d\u001a\u00020\u00012\u0014\u0010\u0006\u001a\u0010\u0012\u0004\u0012\u00020\u0008\u0012\u0004\u0012\u00020\t\u0018\u00010\u0007H\u0016J\u0008\u0010e\u001a\u00020\tH\u0002J\u0008\u0010f\u001a\u00020\tH\u0002R\u001a\u0010\u000c\u001a\u00020\rX\u0080\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\u0008\u000e\u0010\u000f\"\u0004\u0008\u0010\u0010\u0011R\"\u0010\u0012\u001a\n\u0012\u0004\u0012\u00020\u0014\u0018\u00010\u0013X\u0080\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\u0008\u0015\u0010\u0016\"\u0004\u0008\u0017\u0010\u0018R4\u0010\u001b\u001a\n\u0012\u0004\u0012\u00020\u0014\u0018\u00010\u001a2\u000e\u0010\u0019\u001a\n\u0012\u0004\u0012\u00020\u0014\u0018\u00010\u001a@VX\u0090\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\u0008\u001c\u0010\u001d\"\u0004\u0008\u001e\u0010\u001fR\u001a\u0010 \u001a\u00020\u0005X\u0080\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\u0008!\u0010\"\"\u0004\u0008#\u0010$R\u001a\u0010%\u001a\u00020&X\u0080\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\u0008\'\u0010(\"\u0004\u0008)\u0010*R\"\u0010\u0006\u001a\u0010\u0012\u0004\u0012\u00020\u0008\u0012\u0004\u0012\u00020\t\u0018\u00010\u0007X\u0090\u0004\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008+\u0010,R\u0014\u0010-\u001a\u00020\r8VX\u0096\u0004\u00a2\u0006\u0006\u001a\u0004\u0008.\u0010\u000fR\u0014\u0010/\u001a\u00020\u00018VX\u0096\u0004\u00a2\u0006\u0006\u001a\u0004\u00080\u00101R\u000e\u00102\u001a\u00020\u0003X\u0082\u000e\u00a2\u0006\u0002\n\u0000R\u001a\u00103\u001a\u00020\u0003X\u0090\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\u00084\u00105\"\u0004\u00086\u00107R\"\u0010\n\u001a\u0010\u0012\u0004\u0012\u00020\u0008\u0012\u0004\u0012\u00020\t\u0018\u00010\u0007X\u0090\u0004\u00a2\u0006\u0008\n\u0000\u001a\u0004\u00088\u0010,\u00a8\u0006h"
     }
     d2 = {
         "Landroidx/compose/runtime/snapshots/MutableSnapshot;",
@@ -241,10 +241,6 @@
         }
     .end annotation
 
-    const-string v0, "invalid"
-
-    invoke-static {p2, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
     const/4 v0, 0x0
 
     .line 650
@@ -301,12 +297,12 @@
 
     move-result v1
 
-    .line 2359
+    .line 2364
     invoke-virtual {v0}, Landroidx/compose/runtime/collection/IdentityArraySet;->getValues()[Ljava/lang/Object;
 
     move-result-object v2
 
-    .line 2360
+    .line 2365
     invoke-virtual {v0}, Landroidx/compose/runtime/collection/IdentityArraySet;->size()I
 
     move-result v0
@@ -318,7 +314,7 @@
     :goto_0
     if-ge v4, v0, :cond_3
 
-    .line 2362
+    .line 2367
     aget-object v5, v2, v4
 
     const-string v6, "null cannot be cast to non-null type T of androidx.compose.runtime.collection.IdentityArraySet"
@@ -486,7 +482,7 @@
 
     check-cast p0, Landroidx/compose/runtime/snapshots/Snapshot;
 
-    .line 2357
+    .line 2362
     invoke-static {p0}, Landroidx/compose/runtime/snapshots/Snapshot;->access$getPinningTrackingHandle$p(Landroidx/compose/runtime/snapshots/Snapshot;)I
 
     move-result p0
@@ -528,10 +524,6 @@
         }
     .end annotation
 
-    const-string v0, "block"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
     .line 978
     invoke-virtual {p0}, Landroidx/compose/runtime/snapshots/MutableSnapshot;->getId()I
 
@@ -562,12 +554,12 @@
 
     move-result v0
 
-    .line 2385
+    .line 2390
     invoke-static {}, Landroidx/compose/runtime/snapshots/SnapshotKt;->getLock()Ljava/lang/Object;
 
     move-result-object v1
 
-    .line 2386
+    .line 2391
     monitor-enter v1
 
     const/4 v2, 0x1
@@ -604,7 +596,7 @@
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 2386
+    .line 2391
     invoke-static {v2}, Lkotlin/jvm/internal/InlineMarker;->finallyStart(I)V
 
     monitor-exit v1
@@ -633,7 +625,7 @@
     :catchall_0
     move-exception p0
 
-    .line 2386
+    .line 2391
     invoke-static {v2}, Lkotlin/jvm/internal/InlineMarker;->finallyStart(I)V
 
     monitor-exit v1
@@ -650,7 +642,7 @@
 .method public final advance$runtime_release()V
     .locals 4
 
-    .line 2387
+    .line 2392
     invoke-virtual {p0}, Landroidx/compose/runtime/snapshots/MutableSnapshot;->getId()I
 
     move-result v0
@@ -660,7 +652,7 @@
     .line 995
     sget-object v0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
 
-    .line 2393
+    .line 2398
     invoke-virtual {p0}, Landroidx/compose/runtime/snapshots/MutableSnapshot;->getApplied$runtime_release()Z
 
     move-result v0
@@ -673,20 +665,20 @@
 
     if-nez v0, :cond_0
 
-    .line 2394
+    .line 2399
     invoke-virtual {p0}, Landroidx/compose/runtime/snapshots/MutableSnapshot;->getId()I
 
     move-result v0
 
-    .line 2396
+    .line 2401
     invoke-static {}, Landroidx/compose/runtime/snapshots/SnapshotKt;->getLock()Ljava/lang/Object;
 
     move-result-object v1
 
-    .line 2397
+    .line 2402
     monitor-enter v1
 
-    .line 2398
+    .line 2403
     :try_start_0
     invoke-static {}, Landroidx/compose/runtime/snapshots/SnapshotKt;->access$getNextSnapshotId$p()I
 
@@ -698,7 +690,7 @@
 
     invoke-virtual {p0, v2}, Landroidx/compose/runtime/snapshots/MutableSnapshot;->setId$runtime_release(I)V
 
-    .line 2399
+    .line 2404
     invoke-static {}, Landroidx/compose/runtime/snapshots/SnapshotKt;->access$getOpenSnapshots$p()Landroidx/compose/runtime/snapshots/SnapshotIdSet;
 
     move-result-object v2
@@ -713,15 +705,15 @@
 
     invoke-static {v2}, Landroidx/compose/runtime/snapshots/SnapshotKt;->access$setOpenSnapshots$p(Landroidx/compose/runtime/snapshots/SnapshotIdSet;)V
 
-    .line 2400
+    .line 2405
     sget-object v2, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 2397
+    .line 2402
     monitor-exit v1
 
-    .line 2401
+    .line 2406
     invoke-virtual {p0}, Landroidx/compose/runtime/snapshots/MutableSnapshot;->getInvalid$runtime_release()Landroidx/compose/runtime/snapshots/SnapshotIdSet;
 
     move-result-object v1
@@ -743,7 +735,7 @@
     :catchall_0
     move-exception p0
 
-    .line 2397
+    .line 2402
     monitor-exit v1
 
     throw p0
@@ -773,10 +765,6 @@
     invoke-virtual {v2}, Ljava/util/concurrent/atomic/AtomicReference;->get()Ljava/lang/Object;
 
     move-result-object v2
-
-    const-string v3, "currentGlobalSnapshot.get()"
-
-    invoke-static {v2, v3}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
 
     check-cast v2, Landroidx/compose/runtime/snapshots/MutableSnapshot;
 
@@ -819,12 +807,12 @@
 
     move-result-object v3
 
-    .line 2306
+    .line 2310
     invoke-static {}, Landroidx/compose/runtime/snapshots/SnapshotKt;->getLock()Ljava/lang/Object;
 
     move-result-object v4
 
-    .line 2307
+    .line 2311
     monitor-enter v4
 
     .line 729
@@ -902,10 +890,6 @@
     invoke-virtual {p0}, Landroidx/compose/runtime/snapshots/MutableSnapshot;->closeLocked$runtime_release()V
 
     .line 751
-    const-string v2, "previousGlobalSnapshot"
-
-    invoke-static {v3, v2}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
-
     move-object v2, v3
 
     check-cast v2, Landroidx/compose/runtime/snapshots/Snapshot;
@@ -932,12 +916,6 @@
 
     move-result-object v3
 
-    check-cast v3, Ljava/util/Collection;
-
-    invoke-static {v3}, Lkotlin/collections/CollectionsKt;->toMutableList(Ljava/util/Collection;)Ljava/util/List;
-
-    move-result-object v3
-
     goto :goto_3
 
     .line 731
@@ -957,10 +935,6 @@
     check-cast v2, Landroidx/compose/runtime/snapshots/GlobalSnapshot;
 
     .line 733
-    const-string v5, "previousGlobalSnapshot"
-
-    invoke-static {v2, v5}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
-
     move-object v5, v2
 
     check-cast v5, Landroidx/compose/runtime/snapshots/Snapshot;
@@ -997,12 +971,6 @@
 
     move-result-object v3
 
-    check-cast v3, Ljava/util/Collection;
-
-    invoke-static {v3}, Lkotlin/collections/CollectionsKt;->toMutableList(Ljava/util/Collection;)Ljava/util/List;
-
-    move-result-object v3
-
     goto :goto_3
 
     :cond_5
@@ -1015,7 +983,7 @@
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_1
 
-    .line 2307
+    .line 2311
     monitor-exit v4
 
     const/4 v4, 0x1
@@ -1044,7 +1012,7 @@
     :cond_6
     invoke-static {v2}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;)V
 
-    .line 2309
+    .line 2313
     invoke-interface {v3}, Ljava/util/List;->size()I
 
     move-result v4
@@ -1054,12 +1022,12 @@
     :goto_4
     if-ge v6, v4, :cond_7
 
-    .line 2310
+    .line 2314
     invoke-interface {v3, v6}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
     move-result-object v7
 
-    .line 2311
+    .line 2315
     check-cast v7, Lkotlin/jvm/functions/Function2;
 
     .line 768
@@ -1086,7 +1054,7 @@
 
     goto :goto_7
 
-    .line 2315
+    .line 2319
     :cond_8
     invoke-interface {v3}, Ljava/util/List;->size()I
 
@@ -1097,12 +1065,12 @@
     :goto_6
     if-ge v6, v4, :cond_9
 
-    .line 2316
+    .line 2320
     invoke-interface {v3, v6}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
     move-result-object v7
 
-    .line 2317
+    .line 2321
     check-cast v7, Lkotlin/jvm/functions/Function2;
 
     .line 774
@@ -1112,14 +1080,14 @@
 
     goto :goto_6
 
-    .line 2320
+    .line 2324
     :cond_9
     :goto_7
     invoke-static {}, Landroidx/compose/runtime/snapshots/SnapshotKt;->getLock()Ljava/lang/Object;
 
     move-result-object v3
 
-    .line 2321
+    .line 2325
     monitor-enter v3
 
     .line 782
@@ -1131,12 +1099,12 @@
 
     if-eqz v2, :cond_a
 
-    .line 2323
+    .line 2327
     invoke-virtual {v2}, Landroidx/compose/runtime/collection/IdentityArraySet;->getValues()[Ljava/lang/Object;
 
     move-result-object v4
 
-    .line 2324
+    .line 2328
     invoke-virtual {v2}, Landroidx/compose/runtime/collection/IdentityArraySet;->size()I
 
     move-result v2
@@ -1146,7 +1114,7 @@
     :goto_8
     if-ge v6, v2, :cond_a
 
-    .line 2326
+    .line 2330
     aget-object v7, v4, v6
 
     const-string v8, "null cannot be cast to non-null type T of androidx.compose.runtime.collection.IdentityArraySet"
@@ -1165,12 +1133,12 @@
     :cond_a
     if-eqz v0, :cond_b
 
-    .line 2330
+    .line 2334
     invoke-virtual {v0}, Landroidx/compose/runtime/collection/IdentityArraySet;->getValues()[Ljava/lang/Object;
 
     move-result-object v2
 
-    .line 2331
+    .line 2335
     invoke-virtual {v0}, Landroidx/compose/runtime/collection/IdentityArraySet;->size()I
 
     move-result v0
@@ -1180,7 +1148,7 @@
     :goto_9
     if-ge v4, v0, :cond_b
 
-    .line 2333
+    .line 2337
     aget-object v6, v2, v4
 
     const-string v7, "null cannot be cast to non-null type T of androidx.compose.runtime.collection.IdentityArraySet"
@@ -1202,7 +1170,7 @@
 
     if-eqz v0, :cond_c
 
-    .line 2337
+    .line 2341
     invoke-interface {v0}, Ljava/util/List;->size()I
 
     move-result v2
@@ -1210,12 +1178,12 @@
     :goto_a
     if-ge v5, v2, :cond_c
 
-    .line 2338
+    .line 2342
     invoke-interface {v0, v5}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
     move-result-object v4
 
-    .line 2339
+    .line 2343
     check-cast v4, Landroidx/compose/runtime/snapshots/StateObject;
 
     .line 786
@@ -1234,7 +1202,7 @@
     :try_end_2
     .catchall {:try_start_2 .. :try_end_2} :catchall_0
 
-    .line 2321
+    .line 2325
     monitor-exit v3
 
     .line 790
@@ -1247,7 +1215,7 @@
     :catchall_0
     move-exception p0
 
-    .line 2321
+    .line 2325
     monitor-exit v3
 
     throw p0
@@ -1255,7 +1223,7 @@
     :catchall_1
     move-exception p0
 
-    .line 2307
+    .line 2311
     monitor-exit v4
 
     throw p0
@@ -1462,7 +1430,7 @@
 .end method
 
 .method public final innerApplyLocked$runtime_release(ILjava/util/Map;Landroidx/compose/runtime/snapshots/SnapshotIdSet;)Landroidx/compose/runtime/snapshots/SnapshotApplyResult;
-    .locals 17
+    .locals 18
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(I",
@@ -1481,81 +1449,77 @@
 
     move-object/from16 v1, p2
 
-    move-object/from16 v2, p3
-
-    const-string v3, "invalidSnapshots"
-
-    invoke-static {v2, v3}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
     .line 905
     invoke-virtual/range {p0 .. p0}, Landroidx/compose/runtime/snapshots/MutableSnapshot;->getInvalid$runtime_release()Landroidx/compose/runtime/snapshots/SnapshotIdSet;
 
-    move-result-object v3
+    move-result-object v2
 
     invoke-virtual/range {p0 .. p0}, Landroidx/compose/runtime/snapshots/MutableSnapshot;->getId()I
 
-    move-result v4
+    move-result v3
 
-    invoke-virtual {v3, v4}, Landroidx/compose/runtime/snapshots/SnapshotIdSet;->set(I)Landroidx/compose/runtime/snapshots/SnapshotIdSet;
+    invoke-virtual {v2, v3}, Landroidx/compose/runtime/snapshots/SnapshotIdSet;->set(I)Landroidx/compose/runtime/snapshots/SnapshotIdSet;
 
-    move-result-object v3
+    move-result-object v2
 
-    iget-object v4, v0, Landroidx/compose/runtime/snapshots/MutableSnapshot;->previousIds:Landroidx/compose/runtime/snapshots/SnapshotIdSet;
+    iget-object v3, v0, Landroidx/compose/runtime/snapshots/MutableSnapshot;->previousIds:Landroidx/compose/runtime/snapshots/SnapshotIdSet;
 
-    invoke-virtual {v3, v4}, Landroidx/compose/runtime/snapshots/SnapshotIdSet;->or(Landroidx/compose/runtime/snapshots/SnapshotIdSet;)Landroidx/compose/runtime/snapshots/SnapshotIdSet;
+    invoke-virtual {v2, v3}, Landroidx/compose/runtime/snapshots/SnapshotIdSet;->or(Landroidx/compose/runtime/snapshots/SnapshotIdSet;)Landroidx/compose/runtime/snapshots/SnapshotIdSet;
 
-    move-result-object v3
+    move-result-object v2
 
     .line 906
     invoke-virtual/range {p0 .. p0}, Landroidx/compose/runtime/snapshots/MutableSnapshot;->getModified$runtime_release()Landroidx/compose/runtime/collection/IdentityArraySet;
 
+    move-result-object v3
+
+    invoke-static {v3}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;)V
+
+    .line 2371
+    invoke-virtual {v3}, Landroidx/compose/runtime/collection/IdentityArraySet;->getValues()[Ljava/lang/Object;
+
     move-result-object v4
 
-    invoke-static {v4}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;)V
+    .line 2372
+    invoke-virtual {v3}, Landroidx/compose/runtime/collection/IdentityArraySet;->size()I
 
-    .line 2366
-    invoke-virtual {v4}, Landroidx/compose/runtime/collection/IdentityArraySet;->getValues()[Ljava/lang/Object;
+    move-result v5
 
-    move-result-object v5
+    const/4 v6, 0x0
 
-    .line 2367
-    invoke-virtual {v4}, Landroidx/compose/runtime/collection/IdentityArraySet;->size()I
+    move-object v8, v6
 
-    move-result v6
-
-    const/4 v7, 0x0
-
-    move-object v9, v7
-
-    const/4 v10, 0x0
+    const/4 v9, 0x0
 
     :goto_0
-    if-ge v10, v6, :cond_c
+    if-ge v9, v5, :cond_d
 
-    .line 2369
-    aget-object v11, v5, v10
+    .line 2374
+    aget-object v10, v4, v9
 
-    const-string v12, "null cannot be cast to non-null type T of androidx.compose.runtime.collection.IdentityArraySet"
+    const-string v11, "null cannot be cast to non-null type T of androidx.compose.runtime.collection.IdentityArraySet"
 
-    invoke-static {v11, v12}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v10, v11}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;Ljava/lang/String;)V
 
-    check-cast v11, Landroidx/compose/runtime/snapshots/StateObject;
+    check-cast v10, Landroidx/compose/runtime/snapshots/StateObject;
 
     .line 909
-    invoke-interface {v11}, Landroidx/compose/runtime/snapshots/StateObject;->getFirstStateRecord()Landroidx/compose/runtime/snapshots/StateRecord;
+    invoke-interface {v10}, Landroidx/compose/runtime/snapshots/StateObject;->getFirstStateRecord()Landroidx/compose/runtime/snapshots/StateRecord;
 
-    move-result-object v12
+    move-result-object v11
 
-    move/from16 v13, p1
+    move/from16 v12, p1
+
+    move-object/from16 v13, p3
 
     .line 912
-    invoke-static {v12, v13, v2}, Landroidx/compose/runtime/snapshots/SnapshotKt;->access$readable(Landroidx/compose/runtime/snapshots/StateRecord;ILandroidx/compose/runtime/snapshots/SnapshotIdSet;)Landroidx/compose/runtime/snapshots/StateRecord;
+    invoke-static {v11, v12, v13}, Landroidx/compose/runtime/snapshots/SnapshotKt;->access$readable(Landroidx/compose/runtime/snapshots/StateRecord;ILandroidx/compose/runtime/snapshots/SnapshotIdSet;)Landroidx/compose/runtime/snapshots/StateRecord;
 
     move-result-object v14
 
     if-nez v14, :cond_0
 
-    goto/16 :goto_2
+    goto :goto_1
 
     .line 913
     :cond_0
@@ -1563,60 +1527,66 @@
 
     move-result v15
 
-    invoke-static {v12, v15, v3}, Landroidx/compose/runtime/snapshots/SnapshotKt;->access$readable(Landroidx/compose/runtime/snapshots/StateRecord;ILandroidx/compose/runtime/snapshots/SnapshotIdSet;)Landroidx/compose/runtime/snapshots/StateRecord;
+    invoke-static {v11, v15, v2}, Landroidx/compose/runtime/snapshots/SnapshotKt;->access$readable(Landroidx/compose/runtime/snapshots/StateRecord;ILandroidx/compose/runtime/snapshots/SnapshotIdSet;)Landroidx/compose/runtime/snapshots/StateRecord;
 
     move-result-object v15
 
-    if-nez v15, :cond_1
+    if-nez v15, :cond_2
 
-    goto/16 :goto_2
+    :cond_1
+    :goto_1
+    move-object/from16 v17, v2
+
+    goto/16 :goto_3
 
     .line 914
-    :cond_1
+    :cond_2
     invoke-static {v14, v15}, Lkotlin/jvm/internal/Intrinsics;->areEqual(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v16
 
-    if-nez v16, :cond_b
+    if-nez v16, :cond_1
 
     .line 915
     invoke-virtual/range {p0 .. p0}, Landroidx/compose/runtime/snapshots/MutableSnapshot;->getId()I
 
-    move-result v8
+    move-result v7
+
+    move-object/from16 v17, v2
 
     invoke-virtual/range {p0 .. p0}, Landroidx/compose/runtime/snapshots/MutableSnapshot;->getInvalid$runtime_release()Landroidx/compose/runtime/snapshots/SnapshotIdSet;
 
     move-result-object v2
 
-    invoke-static {v12, v8, v2}, Landroidx/compose/runtime/snapshots/SnapshotKt;->access$readable(Landroidx/compose/runtime/snapshots/StateRecord;ILandroidx/compose/runtime/snapshots/SnapshotIdSet;)Landroidx/compose/runtime/snapshots/StateRecord;
+    invoke-static {v11, v7, v2}, Landroidx/compose/runtime/snapshots/SnapshotKt;->access$readable(Landroidx/compose/runtime/snapshots/StateRecord;ILandroidx/compose/runtime/snapshots/SnapshotIdSet;)Landroidx/compose/runtime/snapshots/StateRecord;
 
     move-result-object v2
 
-    if-eqz v2, :cond_a
+    if-eqz v2, :cond_b
 
-    if-eqz v1, :cond_2
+    if-eqz v1, :cond_3
 
     .line 916
     invoke-interface {v1, v14}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
-    move-result-object v8
+    move-result-object v7
 
-    check-cast v8, Landroidx/compose/runtime/snapshots/StateRecord;
+    check-cast v7, Landroidx/compose/runtime/snapshots/StateRecord;
 
-    if-nez v8, :cond_3
-
-    :cond_2
-    move-object v8, v0
-
-    check-cast v8, Landroidx/compose/runtime/snapshots/MutableSnapshot;
-
-    .line 917
-    invoke-interface {v11, v15, v14, v2}, Landroidx/compose/runtime/snapshots/StateObject;->mergeRecords(Landroidx/compose/runtime/snapshots/StateRecord;Landroidx/compose/runtime/snapshots/StateRecord;Landroidx/compose/runtime/snapshots/StateRecord;)Landroidx/compose/runtime/snapshots/StateRecord;
-
-    move-result-object v8
+    if-nez v7, :cond_4
 
     :cond_3
-    if-nez v8, :cond_4
+    move-object v7, v0
+
+    check-cast v7, Landroidx/compose/runtime/snapshots/MutableSnapshot;
+
+    .line 917
+    invoke-interface {v10, v15, v14, v2}, Landroidx/compose/runtime/snapshots/StateObject;->mergeRecords(Landroidx/compose/runtime/snapshots/StateRecord;Landroidx/compose/runtime/snapshots/StateRecord;Landroidx/compose/runtime/snapshots/StateRecord;)Landroidx/compose/runtime/snapshots/StateRecord;
+
+    move-result-object v7
+
+    :cond_4
+    if-nez v7, :cond_5
 
     .line 920
     new-instance v1, Landroidx/compose/runtime/snapshots/SnapshotApplyResult$Failure;
@@ -1630,104 +1600,104 @@
     return-object v1
 
     .line 921
-    :cond_4
-    invoke-static {v8, v2}, Lkotlin/jvm/internal/Intrinsics;->areEqual(Ljava/lang/Object;Ljava/lang/Object;)Z
+    :cond_5
+    invoke-static {v7, v2}, Lkotlin/jvm/internal/Intrinsics;->areEqual(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v2
 
-    if-nez v2, :cond_b
+    if-nez v2, :cond_c
 
     .line 925
-    invoke-static {v8, v14}, Lkotlin/jvm/internal/Intrinsics;->areEqual(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v7, v14}, Lkotlin/jvm/internal/Intrinsics;->areEqual(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v2
 
-    if-eqz v2, :cond_7
+    if-eqz v2, :cond_8
 
-    if-nez v7, :cond_5
+    if-nez v6, :cond_6
 
     .line 927
     new-instance v2, Ljava/util/ArrayList;
 
     invoke-direct {v2}, Ljava/util/ArrayList;-><init>()V
 
-    move-object v7, v2
+    move-object v6, v2
 
-    check-cast v7, Ljava/util/List;
+    check-cast v6, Ljava/util/List;
 
     .line 930
-    :cond_5
+    :cond_6
     invoke-virtual {v14}, Landroidx/compose/runtime/snapshots/StateRecord;->create()Landroidx/compose/runtime/snapshots/StateRecord;
 
     move-result-object v2
 
-    invoke-static {v11, v2}, Lkotlin/TuplesKt;->to(Ljava/lang/Object;Ljava/lang/Object;)Lkotlin/Pair;
+    invoke-static {v10, v2}, Lkotlin/TuplesKt;->to(Ljava/lang/Object;Ljava/lang/Object;)Lkotlin/Pair;
 
     move-result-object v2
 
-    invoke-interface {v7, v2}, Ljava/util/List;->add(Ljava/lang/Object;)Z
+    invoke-interface {v6, v2}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    if-nez v9, :cond_6
+    if-nez v8, :cond_7
 
     .line 934
     new-instance v2, Ljava/util/ArrayList;
 
     invoke-direct {v2}, Ljava/util/ArrayList;-><init>()V
 
-    move-object v9, v2
+    move-object v8, v2
 
-    check-cast v9, Ljava/util/List;
+    check-cast v8, Ljava/util/List;
 
     .line 937
-    :cond_6
-    invoke-interface {v9, v11}, Ljava/util/List;->add(Ljava/lang/Object;)Z
-
-    goto :goto_2
-
     :cond_7
-    if-nez v7, :cond_8
+    invoke-interface {v8, v10}, Ljava/util/List;->add(Ljava/lang/Object;)Z
+
+    goto :goto_3
+
+    :cond_8
+    if-nez v6, :cond_9
 
     .line 941
     new-instance v2, Ljava/util/ArrayList;
 
     invoke-direct {v2}, Ljava/util/ArrayList;-><init>()V
 
-    move-object v7, v2
+    move-object v6, v2
 
-    check-cast v7, Ljava/util/List;
+    check-cast v6, Ljava/util/List;
 
     .line 945
-    :cond_8
-    invoke-static {v8, v15}, Lkotlin/jvm/internal/Intrinsics;->areEqual(Ljava/lang/Object;Ljava/lang/Object;)Z
+    :cond_9
+    invoke-static {v7, v15}, Lkotlin/jvm/internal/Intrinsics;->areEqual(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v2
 
-    if-nez v2, :cond_9
+    if-nez v2, :cond_a
 
-    invoke-static {v11, v8}, Lkotlin/TuplesKt;->to(Ljava/lang/Object;Ljava/lang/Object;)Lkotlin/Pair;
+    invoke-static {v10, v7}, Lkotlin/TuplesKt;->to(Ljava/lang/Object;Ljava/lang/Object;)Lkotlin/Pair;
 
     move-result-object v2
 
-    goto :goto_1
+    goto :goto_2
 
     .line 946
-    :cond_9
+    :cond_a
     invoke-virtual {v15}, Landroidx/compose/runtime/snapshots/StateRecord;->create()Landroidx/compose/runtime/snapshots/StateRecord;
 
     move-result-object v2
 
-    invoke-static {v11, v2}, Lkotlin/TuplesKt;->to(Ljava/lang/Object;Ljava/lang/Object;)Lkotlin/Pair;
+    invoke-static {v10, v2}, Lkotlin/TuplesKt;->to(Ljava/lang/Object;Ljava/lang/Object;)Lkotlin/Pair;
 
     move-result-object v2
 
     .line 944
-    :goto_1
-    invoke-interface {v7, v2}, Ljava/util/List;->add(Ljava/lang/Object;)Z
+    :goto_2
+    invoke-interface {v6, v2}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    goto :goto_2
+    goto :goto_3
 
     .line 915
-    :cond_a
+    :cond_b
     invoke-static {}, Landroidx/compose/runtime/snapshots/SnapshotKt;->access$readError()Ljava/lang/Void;
 
     new-instance v0, Lkotlin/KotlinNothingValueException;
@@ -1736,147 +1706,147 @@
 
     throw v0
 
-    :cond_b
-    :goto_2
-    add-int/lit8 v10, v10, 0x1
+    :cond_c
+    :goto_3
+    add-int/lit8 v9, v9, 0x1
 
-    move-object/from16 v2, p3
+    move-object/from16 v2, v17
 
     goto/16 :goto_0
 
-    :cond_c
-    if-eqz v7, :cond_d
+    :cond_d
+    if-eqz v6, :cond_e
 
     .line 955
     invoke-virtual/range {p0 .. p0}, Landroidx/compose/runtime/snapshots/MutableSnapshot;->advance$runtime_release()V
 
-    .line 2373
-    invoke-interface {v7}, Ljava/util/List;->size()I
+    .line 2378
+    invoke-interface {v6}, Ljava/util/List;->size()I
 
     move-result v1
 
     const/4 v2, 0x0
 
-    :goto_3
-    if-ge v2, v1, :cond_d
+    :goto_4
+    if-ge v2, v1, :cond_e
 
-    .line 2374
-    invoke-interface {v7, v2}, Ljava/util/List;->get(I)Ljava/lang/Object;
+    .line 2379
+    invoke-interface {v6, v2}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
-    move-result-object v3
+    move-result-object v4
 
-    .line 2375
-    check-cast v3, Lkotlin/Pair;
+    .line 2380
+    check-cast v4, Lkotlin/Pair;
 
     .line 959
-    invoke-virtual {v3}, Lkotlin/Pair;->component1()Ljava/lang/Object;
+    invoke-virtual {v4}, Lkotlin/Pair;->component1()Ljava/lang/Object;
 
     move-result-object v5
 
     check-cast v5, Landroidx/compose/runtime/snapshots/StateObject;
 
-    invoke-virtual {v3}, Lkotlin/Pair;->component2()Ljava/lang/Object;
+    invoke-virtual {v4}, Lkotlin/Pair;->component2()Ljava/lang/Object;
 
-    move-result-object v3
+    move-result-object v4
 
-    check-cast v3, Landroidx/compose/runtime/snapshots/StateRecord;
+    check-cast v4, Landroidx/compose/runtime/snapshots/StateRecord;
 
     .line 960
     invoke-virtual/range {p0 .. p0}, Landroidx/compose/runtime/snapshots/MutableSnapshot;->getId()I
 
-    move-result v6
+    move-result v7
 
-    invoke-virtual {v3, v6}, Landroidx/compose/runtime/snapshots/StateRecord;->setSnapshotId$runtime_release(I)V
+    invoke-virtual {v4, v7}, Landroidx/compose/runtime/snapshots/StateRecord;->setSnapshotId$runtime_release(I)V
 
-    .line 2376
+    .line 2381
     invoke-static {}, Landroidx/compose/runtime/snapshots/SnapshotKt;->getLock()Ljava/lang/Object;
 
-    move-result-object v6
+    move-result-object v7
 
-    .line 2377
-    monitor-enter v6
+    .line 2382
+    monitor-enter v7
 
     .line 962
     :try_start_0
     invoke-interface {v5}, Landroidx/compose/runtime/snapshots/StateObject;->getFirstStateRecord()Landroidx/compose/runtime/snapshots/StateRecord;
 
-    move-result-object v8
+    move-result-object v9
 
-    invoke-virtual {v3, v8}, Landroidx/compose/runtime/snapshots/StateRecord;->setNext$runtime_release(Landroidx/compose/runtime/snapshots/StateRecord;)V
+    invoke-virtual {v4, v9}, Landroidx/compose/runtime/snapshots/StateRecord;->setNext$runtime_release(Landroidx/compose/runtime/snapshots/StateRecord;)V
 
     .line 963
-    invoke-interface {v5, v3}, Landroidx/compose/runtime/snapshots/StateObject;->prependStateRecord(Landroidx/compose/runtime/snapshots/StateRecord;)V
+    invoke-interface {v5, v4}, Landroidx/compose/runtime/snapshots/StateObject;->prependStateRecord(Landroidx/compose/runtime/snapshots/StateRecord;)V
 
     .line 964
-    sget-object v3, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
+    sget-object v4, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 2377
-    monitor-exit v6
+    .line 2382
+    monitor-exit v7
 
     add-int/lit8 v2, v2, 0x1
 
-    goto :goto_3
+    goto :goto_4
 
     :catchall_0
     move-exception v0
 
-    monitor-exit v6
+    monitor-exit v7
 
     throw v0
 
-    :cond_d
-    if-eqz v9, :cond_10
+    :cond_e
+    if-eqz v8, :cond_11
 
-    .line 2380
-    invoke-interface {v9}, Ljava/util/List;->size()I
+    .line 2385
+    invoke-interface {v8}, Ljava/util/List;->size()I
 
     move-result v1
 
-    const/4 v8, 0x0
+    const/4 v7, 0x0
 
-    :goto_4
-    if-ge v8, v1, :cond_e
+    :goto_5
+    if-ge v7, v1, :cond_f
 
-    .line 2381
-    invoke-interface {v9, v8}, Ljava/util/List;->get(I)Ljava/lang/Object;
+    .line 2386
+    invoke-interface {v8, v7}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
     move-result-object v2
 
-    .line 2382
+    .line 2387
     check-cast v2, Landroidx/compose/runtime/snapshots/StateObject;
 
     .line 969
-    invoke-virtual {v4, v2}, Landroidx/compose/runtime/collection/IdentityArraySet;->remove(Ljava/lang/Object;)Z
+    invoke-virtual {v3, v2}, Landroidx/compose/runtime/collection/IdentityArraySet;->remove(Ljava/lang/Object;)Z
 
-    add-int/lit8 v8, v8, 0x1
-
-    goto :goto_4
-
-    .line 970
-    :cond_e
-    iget-object v1, v0, Landroidx/compose/runtime/snapshots/MutableSnapshot;->merged:Ljava/util/List;
-
-    if-nez v1, :cond_f
+    add-int/lit8 v7, v7, 0x1
 
     goto :goto_5
 
-    .line 971
+    .line 970
     :cond_f
+    iget-object v1, v0, Landroidx/compose/runtime/snapshots/MutableSnapshot;->merged:Ljava/util/List;
+
+    if-nez v1, :cond_10
+
+    goto :goto_6
+
+    .line 971
+    :cond_10
     check-cast v1, Ljava/util/Collection;
 
-    check-cast v9, Ljava/lang/Iterable;
+    check-cast v8, Ljava/lang/Iterable;
 
-    invoke-static {v1, v9}, Lkotlin/collections/CollectionsKt;->plus(Ljava/util/Collection;Ljava/lang/Iterable;)Ljava/util/List;
+    invoke-static {v1, v8}, Lkotlin/collections/CollectionsKt;->plus(Ljava/util/Collection;Ljava/lang/Iterable;)Ljava/util/List;
 
-    move-result-object v9
+    move-result-object v8
 
-    :goto_5
-    iput-object v9, v0, Landroidx/compose/runtime/snapshots/MutableSnapshot;->merged:Ljava/util/List;
+    :goto_6
+    iput-object v8, v0, Landroidx/compose/runtime/snapshots/MutableSnapshot;->merged:Ljava/util/List;
 
     .line 974
-    :cond_10
+    :cond_11
     sget-object v0, Landroidx/compose/runtime/snapshots/SnapshotApplyResult$Success;->INSTANCE:Landroidx/compose/runtime/snapshots/SnapshotApplyResult$Success;
 
     check-cast v0, Landroidx/compose/runtime/snapshots/SnapshotApplyResult;
@@ -1885,11 +1855,7 @@
 .end method
 
 .method public nestedActivated$runtime_release(Landroidx/compose/runtime/snapshots/Snapshot;)V
-    .locals 1
-
-    const-string/jumbo v0, "snapshot"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+    .locals 0
 
     .line 822
     iget p1, p0, Landroidx/compose/runtime/snapshots/MutableSnapshot;->snapshots:I
@@ -1902,11 +1868,7 @@
 .end method
 
 .method public nestedDeactivated$runtime_release(Landroidx/compose/runtime/snapshots/Snapshot;)V
-    .locals 1
-
-    const-string/jumbo v0, "snapshot"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+    .locals 0
 
     .line 825
     iget p1, p0, Landroidx/compose/runtime/snapshots/MutableSnapshot;->snapshots:I
@@ -1935,7 +1897,7 @@
     :cond_1
     new-instance p0, Ljava/lang/IllegalArgumentException;
 
-    const-string p1, "Failed requirement."
+    const-string p1, "no pending nested snapshots"
 
     invoke-virtual {p1}, Ljava/lang/Object;->toString()Ljava/lang/String;
 
@@ -1974,10 +1936,6 @@
 .method public recordModified$runtime_release(Landroidx/compose/runtime/snapshots/StateObject;)V
     .locals 1
 
-    const-string/jumbo v0, "state"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
     .line 1028
     invoke-virtual {p0}, Landroidx/compose/runtime/snapshots/MutableSnapshot;->getModified$runtime_release()Landroidx/compose/runtime/collection/IdentityArraySet;
 
@@ -2000,12 +1958,12 @@
 .method public final recordPrevious$runtime_release(I)V
     .locals 2
 
-    .line 2404
+    .line 2409
     invoke-static {}, Landroidx/compose/runtime/snapshots/SnapshotKt;->getLock()Ljava/lang/Object;
 
     move-result-object v0
 
-    .line 2405
+    .line 2410
     monitor-enter v0
 
     .line 999
@@ -2023,7 +1981,7 @@
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 2405
+    .line 2410
     monitor-exit v0
 
     return-void
@@ -2039,16 +1997,12 @@
 .method public final recordPreviousList$runtime_release(Landroidx/compose/runtime/snapshots/SnapshotIdSet;)V
     .locals 2
 
-    const-string/jumbo v0, "snapshots"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 2406
+    .line 2411
     invoke-static {}, Landroidx/compose/runtime/snapshots/SnapshotKt;->getLock()Ljava/lang/Object;
 
     move-result-object v0
 
-    .line 2407
+    .line 2412
     monitor-enter v0
 
     .line 1023
@@ -2066,7 +2020,7 @@
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 2407
+    .line 2412
     monitor-exit v0
 
     return-void
@@ -2099,10 +2053,6 @@
 
 .method public final recordPreviousPinnedSnapshots$runtime_release([I)V
     .locals 2
-
-    const-string v0, "handles"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 1010
     array-length v0, p1
@@ -2190,11 +2140,7 @@
 .end method
 
 .method public final setPreviousIds$runtime_release(Landroidx/compose/runtime/snapshots/SnapshotIdSet;)V
-    .locals 1
-
-    const-string v0, "<set-?>"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+    .locals 0
 
     .line 1041
     iput-object p1, p0, Landroidx/compose/runtime/snapshots/MutableSnapshot;->previousIds:Landroidx/compose/runtime/snapshots/SnapshotIdSet;
@@ -2203,11 +2149,7 @@
 .end method
 
 .method public final setPreviousPinnedSnapshots$runtime_release([I)V
-    .locals 1
-
-    const-string v0, "<set-?>"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+    .locals 0
 
     .line 1046
     iput-object p1, p0, Landroidx/compose/runtime/snapshots/MutableSnapshot;->previousPinnedSnapshots:[I
@@ -2247,19 +2189,19 @@
     .line 675
     invoke-direct {p0}, Landroidx/compose/runtime/snapshots/MutableSnapshot;->validateNotAppliedOrPinned()V
 
-    .line 2291
+    .line 2295
     invoke-virtual {p0}, Landroidx/compose/runtime/snapshots/MutableSnapshot;->getId()I
 
     move-result v0
 
     invoke-virtual {p0, v0}, Landroidx/compose/runtime/snapshots/MutableSnapshot;->recordPrevious$runtime_release(I)V
 
-    .line 2293
+    .line 2297
     invoke-static {}, Landroidx/compose/runtime/snapshots/SnapshotKt;->getLock()Ljava/lang/Object;
 
     move-result-object v0
 
-    .line 2294
+    .line 2298
     monitor-enter v0
 
     .line 678
@@ -2342,10 +2284,10 @@
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_1
 
-    .line 2294
+    .line 2298
     monitor-exit v0
 
-    .line 2295
+    .line 2299
     invoke-virtual {p0}, Landroidx/compose/runtime/snapshots/MutableSnapshot;->getApplied$runtime_release()Z
 
     move-result p1
@@ -2358,20 +2300,20 @@
 
     if-nez p1, :cond_0
 
-    .line 2296
+    .line 2300
     invoke-virtual {p0}, Landroidx/compose/runtime/snapshots/MutableSnapshot;->getId()I
 
     move-result p1
 
-    .line 2298
+    .line 2302
     invoke-static {}, Landroidx/compose/runtime/snapshots/SnapshotKt;->getLock()Ljava/lang/Object;
 
     move-result-object p2
 
-    .line 2299
+    .line 2303
     monitor-enter p2
 
-    .line 2300
+    .line 2304
     :try_start_1
     invoke-static {}, Landroidx/compose/runtime/snapshots/SnapshotKt;->access$getNextSnapshotId$p()I
 
@@ -2383,7 +2325,7 @@
 
     invoke-virtual {p0, v0}, Landroidx/compose/runtime/snapshots/MutableSnapshot;->setId$runtime_release(I)V
 
-    .line 2301
+    .line 2305
     invoke-static {}, Landroidx/compose/runtime/snapshots/SnapshotKt;->access$getOpenSnapshots$p()Landroidx/compose/runtime/snapshots/SnapshotIdSet;
 
     move-result-object v0
@@ -2398,15 +2340,15 @@
 
     invoke-static {v0}, Landroidx/compose/runtime/snapshots/SnapshotKt;->access$setOpenSnapshots$p(Landroidx/compose/runtime/snapshots/SnapshotIdSet;)V
 
-    .line 2302
+    .line 2306
     sget-object v0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
-    .line 2299
+    .line 2303
     monitor-exit p2
 
-    .line 2303
+    .line 2307
     invoke-virtual {p0}, Landroidx/compose/runtime/snapshots/MutableSnapshot;->getInvalid$runtime_release()Landroidx/compose/runtime/snapshots/SnapshotIdSet;
 
     move-result-object p2
@@ -2428,12 +2370,12 @@
     :catchall_0
     move-exception p0
 
-    .line 2299
+    .line 2303
     monitor-exit p2
 
     throw p0
 
-    .line 2292
+    .line 2296
     :cond_0
     :goto_0
     check-cast v7, Landroidx/compose/runtime/snapshots/MutableSnapshot;
@@ -2443,7 +2385,7 @@
     :catchall_1
     move-exception p0
 
-    .line 2294
+    .line 2298
     monitor-exit v0
 
     throw p0
@@ -2473,19 +2415,19 @@
 
     move-result v0
 
-    .line 2342
+    .line 2346
     invoke-virtual {p0}, Landroidx/compose/runtime/snapshots/MutableSnapshot;->getId()I
 
     move-result v1
 
     invoke-virtual {p0, v1}, Landroidx/compose/runtime/snapshots/MutableSnapshot;->recordPrevious$runtime_release(I)V
 
-    .line 2344
+    .line 2348
     invoke-static {}, Landroidx/compose/runtime/snapshots/SnapshotKt;->getLock()Ljava/lang/Object;
 
     move-result-object v1
 
-    .line 2345
+    .line 2349
     monitor-enter v1
 
     .line 810
@@ -2533,10 +2475,10 @@
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_1
 
-    .line 2345
+    .line 2349
     monitor-exit v1
 
-    .line 2346
+    .line 2350
     invoke-virtual {p0}, Landroidx/compose/runtime/snapshots/MutableSnapshot;->getApplied$runtime_release()Z
 
     move-result p1
@@ -2549,20 +2491,20 @@
 
     if-nez p1, :cond_0
 
-    .line 2347
+    .line 2351
     invoke-virtual {p0}, Landroidx/compose/runtime/snapshots/MutableSnapshot;->getId()I
 
     move-result p1
 
-    .line 2349
+    .line 2353
     invoke-static {}, Landroidx/compose/runtime/snapshots/SnapshotKt;->getLock()Ljava/lang/Object;
 
     move-result-object v0
 
-    .line 2350
+    .line 2354
     monitor-enter v0
 
-    .line 2351
+    .line 2355
     :try_start_1
     invoke-static {}, Landroidx/compose/runtime/snapshots/SnapshotKt;->access$getNextSnapshotId$p()I
 
@@ -2574,7 +2516,7 @@
 
     invoke-virtual {p0, v1}, Landroidx/compose/runtime/snapshots/MutableSnapshot;->setId$runtime_release(I)V
 
-    .line 2352
+    .line 2356
     invoke-static {}, Landroidx/compose/runtime/snapshots/SnapshotKt;->access$getOpenSnapshots$p()Landroidx/compose/runtime/snapshots/SnapshotIdSet;
 
     move-result-object v1
@@ -2589,15 +2531,15 @@
 
     invoke-static {v1}, Landroidx/compose/runtime/snapshots/SnapshotKt;->access$setOpenSnapshots$p(Landroidx/compose/runtime/snapshots/SnapshotIdSet;)V
 
-    .line 2353
+    .line 2357
     sget-object v1, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
-    .line 2350
+    .line 2354
     monitor-exit v0
 
-    .line 2354
+    .line 2358
     invoke-virtual {p0}, Landroidx/compose/runtime/snapshots/MutableSnapshot;->getInvalid$runtime_release()Landroidx/compose/runtime/snapshots/SnapshotIdSet;
 
     move-result-object v0
@@ -2619,12 +2561,12 @@
     :catchall_0
     move-exception p0
 
-    .line 2350
+    .line 2354
     monitor-exit v0
 
     throw p0
 
-    .line 2343
+    .line 2347
     :cond_0
     :goto_0
     check-cast v3, Landroidx/compose/runtime/snapshots/Snapshot;
@@ -2634,7 +2576,7 @@
     :catchall_1
     move-exception p0
 
-    .line 2345
+    .line 2349
     monitor-exit v1
 
     throw p0

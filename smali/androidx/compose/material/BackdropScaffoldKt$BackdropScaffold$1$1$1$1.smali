@@ -69,7 +69,7 @@
 .method public bridge synthetic invoke(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
 
-    .line 345
+    .line 347
     check-cast p1, Landroidx/compose/ui/unit/Density;
 
     invoke-virtual {p0, p1}, Landroidx/compose/material/BackdropScaffoldKt$BackdropScaffold$1$1$1$1;->invoke-Bjo55l4(Landroidx/compose/ui/unit/Density;)J
@@ -84,13 +84,9 @@
 .end method
 
 .method public final invoke-Bjo55l4(Landroidx/compose/ui/unit/Density;)J
-    .locals 1
+    .locals 0
 
-    const-string v0, "$this$offset"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 345
+    .line 347
     iget-object p0, p0, Landroidx/compose/material/BackdropScaffoldKt$BackdropScaffold$1$1$1$1;->$scaffoldState:Landroidx/compose/material/BackdropScaffoldState;
 
     invoke-virtual {p0}, Landroidx/compose/material/BackdropScaffoldState;->getOffset()Landroidx/compose/runtime/State;

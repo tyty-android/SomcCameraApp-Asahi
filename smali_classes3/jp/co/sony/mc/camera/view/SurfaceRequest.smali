@@ -12,13 +12,14 @@
 
 .annotation runtime Lkotlin/Metadata;
     d1 = {
-        "\u0000\u001a\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0004\n\u0002\u0010\u000e\n\u0002\u0008\u0002\u0008\u0007\u0018\u0000 \t2\u00020\u0001:\u0001\tB\r\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u00a2\u0006\u0002\u0010\u0004J\u0008\u0010\u0007\u001a\u00020\u0008H\u0016R\u0011\u0010\u0002\u001a\u00020\u0003\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\u0005\u0010\u0006\u00a8\u0006\n"
+        "\u0000\u001a\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0005\n\u0002\u0010\u000e\n\u0002\u0008\u0002\u0008\u0007\u0018\u0000 \n2\u00020\u0001:\u0001\nB\u000f\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u00a2\u0006\u0004\u0008\u0004\u0010\u0005J\u0008\u0010\u0008\u001a\u00020\tH\u0016R\u0011\u0010\u0002\u001a\u00020\u0003\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\u0006\u0010\u0007\u00a8\u0006\u000b"
     }
     d2 = {
         "Ljp/co/sony/mc/camera/view/SurfaceRequest;",
         "",
         "size",
         "Landroid/util/Size;",
+        "<init>",
         "(Landroid/util/Size;)V",
         "getSize",
         "()Landroid/util/Size;",
@@ -29,8 +30,8 @@
     }
     k = 0x1
     mv = {
-        0x1,
-        0x9,
+        0x2,
+        0x0,
         0x0
     }
     xi = 0x30
@@ -65,7 +66,7 @@
 
     sput v0, Ljp/co/sony/mc/camera/view/SurfaceRequest;->$stable:I
 
-    .line 482
+    .line 510
     new-instance v0, Ljp/co/sony/mc/camera/view/SurfaceRequest;
 
     new-instance v1, Landroid/util/Size;
@@ -88,7 +89,7 @@
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 480
+    .line 508
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     iput-object p1, p0, Ljp/co/sony/mc/camera/view/SurfaceRequest;->size:Landroid/util/Size;
@@ -99,7 +100,7 @@
 .method public static final synthetic access$getInvalid$cp()Ljp/co/sony/mc/camera/view/SurfaceRequest;
     .locals 1
 
-    .line 480
+    .line 508
     sget-object v0, Ljp/co/sony/mc/camera/view/SurfaceRequest;->invalid:Ljp/co/sony/mc/camera/view/SurfaceRequest;
 
     return-object v0
@@ -110,7 +111,7 @@
 .method public final getSize()Landroid/util/Size;
     .locals 0
 
-    .line 480
+    .line 508
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/SurfaceRequest;->size:Landroid/util/Size;
 
     return-object p0
@@ -119,7 +120,7 @@
 .method public toString()Ljava/lang/String;
     .locals 3
 
-    .line 486
+    .line 514
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/view/SurfaceRequest;->hashCode()I
 
     move-result v0
@@ -134,7 +135,7 @@
 
     move-result-object v0
 
-    const-string/jumbo v1, "toString(this, checkRadix(radix))"
+    const-string/jumbo v1, "toString(...)"
 
     invoke-static {v0, v1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
 

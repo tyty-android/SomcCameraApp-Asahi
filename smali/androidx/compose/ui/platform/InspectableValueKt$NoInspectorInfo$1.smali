@@ -91,9 +91,5 @@
 .method public final invoke(Landroidx/compose/ui/platform/InspectorInfo;)V
     .locals 0
 
-    const-string p0, "$this$null"
-
-    invoke-static {p1, p0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
     return-void
 .end method

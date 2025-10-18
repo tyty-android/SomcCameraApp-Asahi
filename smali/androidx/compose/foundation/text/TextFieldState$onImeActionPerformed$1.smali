@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Landroidx/compose/foundation/text/TextFieldState;-><init>(Landroidx/compose/foundation/text/TextDelegate;Landroidx/compose/runtime/RecomposeScope;)V
+    value = Landroidx/compose/foundation/text/TextFieldState;-><init>(Landroidx/compose/foundation/text/TextDelegate;Landroidx/compose/runtime/RecomposeScope;Landroidx/compose/ui/platform/SoftwareKeyboardController;)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -70,7 +70,7 @@
 .method public bridge synthetic invoke(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
 
-    .line 887
+    .line 950
     check-cast p1, Landroidx/compose/ui/text/input/ImeAction;
 
     invoke-virtual {p1}, Landroidx/compose/ui/text/input/ImeAction;->unbox-impl()I
@@ -87,7 +87,7 @@
 .method public final invoke-KlQnJC8(I)V
     .locals 0
 
-    .line 888
+    .line 951
     iget-object p0, p0, Landroidx/compose/foundation/text/TextFieldState$onImeActionPerformed$1;->this$0:Landroidx/compose/foundation/text/TextFieldState;
 
     invoke-static {p0}, Landroidx/compose/foundation/text/TextFieldState;->access$getKeyboardActionRunner$p(Landroidx/compose/foundation/text/TextFieldState;)Landroidx/compose/foundation/text/KeyboardActionRunner;

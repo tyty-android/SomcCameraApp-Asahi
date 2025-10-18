@@ -29,7 +29,7 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/SourceDebugExtension;
-    value = "SMAP\nTextFieldSelectionManager.android.kt\nKotlin\n*S Kotlin\n*F\n+ 1 TextFieldSelectionManager.android.kt\nandroidx/compose/foundation/text/selection/TextFieldSelectionManager_androidKt$textFieldMagnifier$1\n+ 2 CompositionLocal.kt\nandroidx/compose/runtime/CompositionLocal\n+ 3 Composables.kt\nandroidx/compose/runtime/ComposablesKt\n+ 4 Composer.kt\nandroidx/compose/runtime/ComposerKt\n+ 5 SnapshotState.kt\nandroidx/compose/runtime/SnapshotStateKt__SnapshotStateKt\n*L\n1#1,66:1\n76#2:67\n25#3:68\n50#3:75\n49#3:76\n1097#4,6:69\n1097#4,6:77\n81#5:83\n107#5,2:84\n*S KotlinDebug\n*F\n+ 1 TextFieldSelectionManager.android.kt\nandroidx/compose/foundation/text/selection/TextFieldSelectionManager_androidKt$textFieldMagnifier$1\n*L\n45#1:67\n46#1:68\n51#1:75\n51#1:76\n46#1:69,6\n51#1:77,6\n46#1:83\n46#1:84,2\n*E\n"
+    value = "SMAP\nTextFieldSelectionManager.android.kt\nKotlin\n*S Kotlin\n*F\n+ 1 TextFieldSelectionManager.android.kt\nandroidx/compose/foundation/text/selection/TextFieldSelectionManager_androidKt$textFieldMagnifier$1\n+ 2 CompositionLocal.kt\nandroidx/compose/runtime/CompositionLocal\n+ 3 Composables.kt\nandroidx/compose/runtime/ComposablesKt\n+ 4 Composer.kt\nandroidx/compose/runtime/ComposerKt\n+ 5 SnapshotState.kt\nandroidx/compose/runtime/SnapshotStateKt__SnapshotStateKt\n*L\n1#1,67:1\n74#2:68\n25#3:69\n1116#4,6:70\n1116#4,6:76\n81#5:82\n107#5,2:83\n*S KotlinDebug\n*F\n+ 1 TextFieldSelectionManager.android.kt\nandroidx/compose/foundation/text/selection/TextFieldSelectionManager_androidKt$textFieldMagnifier$1\n*L\n46#1:68\n47#1:69\n47#1:70,6\n52#1:76,6\n47#1:82\n47#1:83,2\n*E\n"
 .end annotation
 
 .annotation runtime Lkotlin/Metadata;
@@ -72,7 +72,7 @@
 .method public static final synthetic access$invoke$lambda$1(Landroidx/compose/runtime/MutableState;)J
     .locals 2
 
-    .line 44
+    .line 45
     invoke-static {p0}, Landroidx/compose/foundation/text/selection/TextFieldSelectionManager_androidKt$textFieldMagnifier$1;->invoke$lambda$1(Landroidx/compose/runtime/MutableState;)J
 
     move-result-wide v0
@@ -83,7 +83,7 @@
 .method public static final synthetic access$invoke$lambda$2(Landroidx/compose/runtime/MutableState;J)V
     .locals 0
 
-    .line 44
+    .line 45
     invoke-static {p0, p1, p2}, Landroidx/compose/foundation/text/selection/TextFieldSelectionManager_androidKt$textFieldMagnifier$1;->invoke$lambda$2(Landroidx/compose/runtime/MutableState;J)V
 
     return-void
@@ -100,10 +100,10 @@
         }
     .end annotation
 
-    .line 46
+    .line 47
     check-cast p0, Landroidx/compose/runtime/State;
 
-    .line 83
+    .line 82
     invoke-interface {p0}, Landroidx/compose/runtime/State;->getValue()Ljava/lang/Object;
 
     move-result-object p0
@@ -128,12 +128,12 @@
         }
     .end annotation
 
-    .line 46
+    .line 47
     invoke-static {p1, p2}, Landroidx/compose/ui/unit/IntSize;->box-impl(J)Landroidx/compose/ui/unit/IntSize;
 
     move-result-object p1
 
-    .line 84
+    .line 83
     invoke-interface {p0, p1}, Landroidx/compose/runtime/MutableState;->setValue(Ljava/lang/Object;)V
 
     return-void
@@ -144,15 +144,11 @@
 .method public final invoke(Landroidx/compose/ui/Modifier;Landroidx/compose/runtime/Composer;I)Landroidx/compose/ui/Modifier;
     .locals 3
 
-    const-string v0, "$this$composed"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
     const v0, 0x760d4197
 
     invoke-interface {p2, v0}, Landroidx/compose/runtime/Composer;->startReplaceableGroup(I)V
 
-    const-string v1, "C44@1811L7,45@1848L41,50@2086L500:TextFieldSelectionManager.android.kt#eksfi3"
+    const-string v1, "C45@1877L7,46@1914L41:TextFieldSelectionManager.android.kt#eksfi3"
 
     invoke-static {p2, v1}, Landroidx/compose/runtime/ComposerKt;->sourceInformation(Landroidx/compose/runtime/Composer;Ljava/lang/String;)V
 
@@ -164,9 +160,9 @@
 
     const/4 v1, -0x1
 
-    const-string v2, "androidx.compose.foundation.text.selection.textFieldMagnifier.<anonymous> (TextFieldSelectionManager.android.kt:43)"
+    const-string v2, "androidx.compose.foundation.text.selection.textFieldMagnifier.<anonymous> (TextFieldSelectionManager.android.kt:45)"
 
-    .line 45
+    .line 46
     invoke-static {v0, p3, v1, v2}, Landroidx/compose/runtime/ComposerKt;->traceEventStart(IIILjava/lang/String;)V
 
     :cond_0
@@ -180,7 +176,7 @@
 
     const-string v1, "CC:CompositionLocal.kt#9igjgp"
 
-    .line 67
+    .line 68
     invoke-static {p2, v0, v1}, Landroidx/compose/runtime/ComposerKt;->sourceInformationMarkerStart(Landroidx/compose/runtime/Composer;ILjava/lang/String;)V
 
     invoke-interface {p2, p3}, Landroidx/compose/runtime/Composer;->consume(Landroidx/compose/runtime/CompositionLocal;)Ljava/lang/Object;
@@ -189,24 +185,24 @@
 
     invoke-static {p2}, Landroidx/compose/runtime/ComposerKt;->sourceInformationMarkerEnd(Landroidx/compose/runtime/Composer;)V
 
-    .line 45
+    .line 46
     check-cast p3, Landroidx/compose/ui/unit/Density;
 
     const v0, -0x1d58f75c
 
-    .line 46
+    .line 47
     invoke-interface {p2, v0}, Landroidx/compose/runtime/Composer;->startReplaceableGroup(I)V
 
     const-string v0, "CC(remember):Composables.kt#9igjgp"
 
     invoke-static {p2, v0}, Landroidx/compose/runtime/ComposerKt;->sourceInformation(Landroidx/compose/runtime/Composer;Ljava/lang/String;)V
 
-    .line 69
+    .line 70
     invoke-interface {p2}, Landroidx/compose/runtime/Composer;->rememberedValue()Ljava/lang/Object;
 
     move-result-object v0
 
-    .line 70
+    .line 71
     sget-object v1, Landroidx/compose/runtime/Composer;->Companion:Landroidx/compose/runtime/Composer$Companion;
 
     invoke-virtual {v1}, Landroidx/compose/runtime/Composer$Companion;->getEmpty()Ljava/lang/Object;
@@ -215,7 +211,7 @@
 
     if-ne v0, v1, :cond_1
 
-    .line 46
+    .line 47
     sget-object v0, Landroidx/compose/ui/unit/IntSize;->Companion:Landroidx/compose/ui/unit/IntSize$Companion;
 
     invoke-virtual {v0}, Landroidx/compose/ui/unit/IntSize$Companion;->getZero-YbymL2g()J
@@ -234,17 +230,17 @@
 
     move-result-object v0
 
-    .line 72
+    .line 73
     invoke-interface {p2, v0}, Landroidx/compose/runtime/Composer;->updateRememberedValue(Ljava/lang/Object;)V
 
-    .line 68
+    .line 69
     :cond_1
     invoke-interface {p2}, Landroidx/compose/runtime/Composer;->endReplaceableGroup()V
 
-    .line 46
+    .line 47
     check-cast v0, Landroidx/compose/runtime/MutableState;
 
-    .line 47
+    .line 48
     new-instance v1, Landroidx/compose/foundation/text/selection/TextFieldSelectionManager_androidKt$textFieldMagnifier$1$1;
 
     iget-object p0, p0, Landroidx/compose/foundation/text/selection/TextFieldSelectionManager_androidKt$textFieldMagnifier$1;->$manager:Landroidx/compose/foundation/text/selection/TextFieldSelectionManager;
@@ -253,16 +249,10 @@
 
     check-cast v1, Lkotlin/jvm/functions/Function0;
 
-    const p0, 0x1e7b2b64
+    const p0, -0x2ce821f5
 
-    .line 51
     invoke-interface {p2, p0}, Landroidx/compose/runtime/Composer;->startReplaceableGroup(I)V
 
-    const-string p0, "CC(remember)P(1,2):Composables.kt#9igjgp"
-
-    invoke-static {p2, p0}, Landroidx/compose/runtime/ComposerKt;->sourceInformation(Landroidx/compose/runtime/Composer;Ljava/lang/String;)V
-
-    .line 75
     invoke-interface {p2, v0}, Landroidx/compose/runtime/Composer;->changed(Ljava/lang/Object;)Z
 
     move-result p0
@@ -273,14 +263,14 @@
 
     or-int/2addr p0, v2
 
-    .line 77
+    .line 76
     invoke-interface {p2}, Landroidx/compose/runtime/Composer;->rememberedValue()Ljava/lang/Object;
 
     move-result-object v2
 
     if-nez p0, :cond_2
 
-    .line 78
+    .line 77
     sget-object p0, Landroidx/compose/runtime/Composer;->Companion:Landroidx/compose/runtime/Composer$Companion;
 
     invoke-virtual {p0}, Landroidx/compose/runtime/Composer$Companion;->getEmpty()Ljava/lang/Object;
@@ -289,7 +279,7 @@
 
     if-ne v2, p0, :cond_3
 
-    .line 51
+    .line 52
     :cond_2
     new-instance p0, Landroidx/compose/foundation/text/selection/TextFieldSelectionManager_androidKt$textFieldMagnifier$1$2$1;
 
@@ -299,16 +289,16 @@
 
     check-cast v2, Lkotlin/jvm/functions/Function1;
 
-    .line 80
+    .line 79
     invoke-interface {p2, v2}, Landroidx/compose/runtime/Composer;->updateRememberedValue(Ljava/lang/Object;)V
 
-    .line 76
+    .line 52
     :cond_3
-    invoke-interface {p2}, Landroidx/compose/runtime/Composer;->endReplaceableGroup()V
-
     check-cast v2, Lkotlin/jvm/functions/Function1;
 
-    .line 47
+    invoke-interface {p2}, Landroidx/compose/runtime/Composer;->endReplaceableGroup()V
+
+    .line 48
     invoke-static {p1, v1, v2}, Landroidx/compose/foundation/text/selection/SelectionMagnifierKt;->animatedSelectionMagnifier(Landroidx/compose/ui/Modifier;Lkotlin/jvm/functions/Function0;Lkotlin/jvm/functions/Function1;)Landroidx/compose/ui/Modifier;
 
     move-result-object p0
@@ -330,7 +320,7 @@
 .method public bridge synthetic invoke(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
 
-    .line 44
+    .line 45
     check-cast p1, Landroidx/compose/ui/Modifier;
 
     check-cast p2, Landroidx/compose/runtime/Composer;

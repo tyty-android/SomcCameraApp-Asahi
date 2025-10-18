@@ -8,12 +8,12 @@
 
 # annotations
 .annotation system Ldalvik/annotation/SourceDebugExtension;
-    value = "SMAP\nMeasuredPage.kt\nKotlin\n*S Kotlin\n*F\n+ 1 MeasuredPage.kt\nandroidx/compose/foundation/pager/MeasuredPage\n+ 2 ListUtils.kt\nandroidx/compose/ui/util/ListUtilsKt\n+ 3 fake.kt\nkotlin/jvm/internal/FakeKt\n+ 4 IntOffset.kt\nandroidx/compose/ui/unit/IntOffset\n*L\n1#1,119:1\n115#1:133\n33#2,6:120\n69#2,6:126\n1#3:132\n86#4:134\n*S KotlinDebug\n*F\n+ 1 MeasuredPage.kt\nandroidx/compose/foundation/pager/MeasuredPage\n*L\n98#1:133\n52#1:120,6\n76#1:126,6\n102#1:134\n*E\n"
+    value = "SMAP\nMeasuredPage.kt\nKotlin\n*S Kotlin\n*F\n+ 1 MeasuredPage.kt\nandroidx/compose/foundation/pager/MeasuredPage\n+ 2 ListUtils.kt\nandroidx/compose/ui/util/ListUtilsKt\n+ 3 fake.kt\nkotlin/jvm/internal/FakeKt\n+ 4 IntOffset.kt\nandroidx/compose/ui/unit/IntOffset\n*L\n1#1,133:1\n129#1:146\n33#2,6:134\n69#2,4:140\n74#2:145\n1#3:144\n86#4:147\n*S KotlinDebug\n*F\n+ 1 MeasuredPage.kt\nandroidx/compose/foundation/pager/MeasuredPage\n*L\n100#1:146\n52#1:134,6\n76#1:140,4\n76#1:145\n104#1:147\n*E\n"
 .end annotation
 
 .annotation runtime Lkotlin/Metadata;
     d1 = {
-        "\u0000f\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0008\n\u0002\u0008\u0002\n\u0002\u0010 \n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0000\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000b\n\u0002\u0008\r\n\u0002\u0010\u0015\n\u0002\u0008\u0008\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0005\n\u0002\u0018\u0002\n\u0002\u0008\u0003\u0008\u0000\u0018\u00002\u00020\u0001Bb\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\u0006\u0010\u0004\u001a\u00020\u0003\u0012\u000c\u0010\u0005\u001a\u0008\u0012\u0004\u0012\u00020\u00070\u0006\u0012\u0006\u0010\u0008\u001a\u00020\t\u0012\u0006\u0010\n\u001a\u00020\u000b\u0012\u0006\u0010\u000c\u001a\u00020\r\u0012\u0008\u0010\u000e\u001a\u0004\u0018\u00010\u000f\u0012\u0008\u0010\u0010\u001a\u0004\u0018\u00010\u0011\u0012\u0006\u0010\u0012\u001a\u00020\u0013\u0012\u0006\u0010\u0014\u001a\u00020\u0015\u00f8\u0001\u0000\u00a2\u0006\u0002\u0010\u0016J \u0010!\u001a\u00020\t2\u0006\u0010\u0002\u001a\u00020\u0003H\u0002\u00f8\u0001\u0002\u00f8\u0001\u0001\u00f8\u0001\u0000\u00a2\u0006\u0004\u0008)\u0010*J\u000e\u0010+\u001a\u00020,2\u0006\u0010-\u001a\u00020.J\u001e\u0010/\u001a\u00020,2\u0006\u0010 \u001a\u00020\u00032\u0006\u00100\u001a\u00020\u00032\u0006\u00101\u001a\u00020\u0003J.\u00102\u001a\u00020\t*\u00020\t2\u0012\u00103\u001a\u000e\u0012\u0004\u0012\u00020\u0003\u0012\u0004\u0012\u00020\u000304H\u0082\u0008\u00f8\u0001\u0001\u00f8\u0001\u0000\u00a2\u0006\u0004\u00085\u00106R\u0011\u0010\u0017\u001a\u00020\u0003\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\u0018\u0010\u0019R\u0010\u0010\u000e\u001a\u0004\u0018\u00010\u000fX\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u0014\u0010\u0002\u001a\u00020\u0003X\u0096\u0004\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\u001a\u0010\u0019R\u000e\u0010\u001b\u001a\u00020\u0015X\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u0011\u0010\n\u001a\u00020\u000b\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\u001c\u0010\u001dR\u000e\u0010\u0012\u001a\u00020\u0013X\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u001e\u001a\u00020\u0003X\u0082\u000e\u00a2\u0006\u0002\n\u0000R\u001e\u0010 \u001a\u00020\u00032\u0006\u0010\u001f\u001a\u00020\u0003@RX\u0096\u000e\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008!\u0010\u0019R\u000e\u0010\"\u001a\u00020#X\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u0014\u0010\u0005\u001a\u0008\u0012\u0004\u0012\u00020\u00070\u0006X\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u0014\u001a\u00020\u0015X\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u0011\u0010\u0004\u001a\u00020\u0003\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008$\u0010\u0019R\u0010\u0010\u0010\u001a\u0004\u0018\u00010\u0011X\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u0019\u0010\u0008\u001a\u00020\tX\u0082\u0004\u00f8\u0001\u0000\u00f8\u0001\u0001\u00f8\u0001\u0002\u00a2\u0006\u0004\n\u0002\u0010%R\u0018\u0010&\u001a\u00020\u0003*\u00020\u00078BX\u0082\u0004\u00a2\u0006\u0006\u001a\u0004\u0008\'\u0010(\u0082\u0002\u000f\n\u0002\u0008\u0019\n\u0005\u0008\u00a1\u001e0\u0001\n\u0002\u0008!\u00a8\u00067"
+        "\u0000h\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0008\n\u0002\u0008\u0002\n\u0002\u0010 \n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0000\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000b\n\u0002\u0008\r\n\u0002\u0010\u0015\n\u0002\u0008\u0006\n\u0002\u0010\u0002\n\u0002\u0008\u0005\n\u0002\u0018\u0002\n\u0002\u0008\u0005\n\u0002\u0018\u0002\n\u0002\u0008\u0003\u0008\u0000\u0018\u00002\u00020\u0001B_\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\u0006\u0010\u0004\u001a\u00020\u0003\u0012\u000c\u0010\u0005\u001a\u0008\u0012\u0004\u0012\u00020\u00070\u0006\u0012\u0006\u0010\u0008\u001a\u00020\t\u0012\u0006\u0010\n\u001a\u00020\u000b\u0012\u0006\u0010\u000c\u001a\u00020\r\u0012\u0008\u0010\u000e\u001a\u0004\u0018\u00010\u000f\u0012\u0008\u0010\u0010\u001a\u0004\u0018\u00010\u0011\u0012\u0006\u0010\u0012\u001a\u00020\u0013\u0012\u0006\u0010\u0014\u001a\u00020\u0015\u00a2\u0006\u0002\u0010\u0016J\u000e\u0010)\u001a\u00020*2\u0006\u0010+\u001a\u00020\u0003J\u001d\u0010!\u001a\u00020\t2\u0006\u0010\u0002\u001a\u00020\u0003H\u0002\u00f8\u0001\u0001\u00f8\u0001\u0000\u00a2\u0006\u0004\u0008,\u0010-J\u000e\u0010.\u001a\u00020*2\u0006\u0010/\u001a\u000200J\u001e\u00101\u001a\u00020*2\u0006\u0010 \u001a\u00020\u00032\u0006\u00102\u001a\u00020\u00032\u0006\u00103\u001a\u00020\u0003J+\u00104\u001a\u00020\t*\u00020\t2\u0012\u00105\u001a\u000e\u0012\u0004\u0012\u00020\u0003\u0012\u0004\u0012\u00020\u000306H\u0082\u0008\u00f8\u0001\u0000\u00a2\u0006\u0004\u00087\u00108R\u0011\u0010\u0017\u001a\u00020\u0003\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\u0018\u0010\u0019R\u0010\u0010\u000e\u001a\u0004\u0018\u00010\u000fX\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u0014\u0010\u0002\u001a\u00020\u0003X\u0096\u0004\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\u001a\u0010\u0019R\u000e\u0010\u001b\u001a\u00020\u0015X\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u0011\u0010\n\u001a\u00020\u000b\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\u001c\u0010\u001dR\u000e\u0010\u0012\u001a\u00020\u0013X\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u001e\u001a\u00020\u0003X\u0082\u000e\u00a2\u0006\u0002\n\u0000R\u001e\u0010 \u001a\u00020\u00032\u0006\u0010\u001f\u001a\u00020\u0003@RX\u0096\u000e\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008!\u0010\u0019R\u000e\u0010\"\u001a\u00020#X\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u0014\u0010\u0005\u001a\u0008\u0012\u0004\u0012\u00020\u00070\u0006X\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u0014\u001a\u00020\u0015X\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u0011\u0010\u0004\u001a\u00020\u0003\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008$\u0010\u0019R\u0010\u0010\u0010\u001a\u0004\u0018\u00010\u0011X\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u0016\u0010\u0008\u001a\u00020\tX\u0082\u0004\u00f8\u0001\u0000\u00f8\u0001\u0001\u00a2\u0006\u0004\n\u0002\u0010%R\u0018\u0010&\u001a\u00020\u0003*\u00020\u00078BX\u0082\u0004\u00a2\u0006\u0006\u001a\u0004\u0008\'\u0010(\u0082\u0002\u000b\n\u0005\u0008\u00a1\u001e0\u0001\n\u0002\u0008!\u00a8\u00069"
     }
     d2 = {
         "Landroidx/compose/foundation/pager/MeasuredPage;",
@@ -57,10 +57,12 @@
         "mainAxisSize",
         "getMainAxisSize",
         "(Landroidx/compose/ui/layout/Placeable;)I",
+        "applyScrollDelta",
+        "",
+        "delta",
         "getOffset-Bjo55l4",
         "(I)J",
         "place",
-        "",
         "scope",
         "Landroidx/compose/ui/layout/Placeable$PlacementScope;",
         "position",
@@ -81,6 +83,10 @@
     }
     xi = 0x30
 .end annotation
+
+
+# static fields
+.field public static final $stable:I = 0x8
 
 
 # instance fields
@@ -122,8 +128,14 @@
 
 
 # direct methods
+.method static constructor <clinit>()V
+    .locals 0
+
+    return-void
+.end method
+
 .method private constructor <init>(IILjava/util/List;JLjava/lang/Object;Landroidx/compose/foundation/gestures/Orientation;Landroidx/compose/ui/Alignment$Horizontal;Landroidx/compose/ui/Alignment$Vertical;Landroidx/compose/ui/unit/LayoutDirection;Z)V
-    .locals 1
+    .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(II",
@@ -139,22 +151,6 @@
             "Z)V"
         }
     .end annotation
-
-    const-string v0, "placeables"
-
-    invoke-static {p3, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string v0, "key"
-
-    invoke-static {p6, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string v0, "orientation"
-
-    invoke-static {p7, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string v0, "layoutDirection"
-
-    invoke-static {p10, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 28
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -203,7 +199,7 @@
     :goto_0
     iput-boolean p1, p0, Landroidx/compose/foundation/pager/MeasuredPage;->isVertical:Z
 
-    .line 121
+    .line 135
     invoke-interface {p3}, Ljava/util/List;->size()I
 
     move-result p1
@@ -213,12 +209,12 @@
     :goto_1
     if-ge p2, p1, :cond_2
 
-    .line 122
+    .line 136
     invoke-interface {p3, p2}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
     move-result-object p5
 
-    .line 123
+    .line 137
     check-cast p5, Landroidx/compose/ui/layout/Placeable;
 
     .line 55
@@ -292,7 +288,7 @@
         }
     .end annotation
 
-    .line 115
+    .line 129
     iget-boolean v0, p0, Landroidx/compose/foundation/pager/MeasuredPage;->isVertical:Z
 
     if-eqz v0, :cond_0
@@ -363,7 +359,7 @@
 .method private final getMainAxisSize(Landroidx/compose/ui/layout/Placeable;)I
     .locals 0
 
-    .line 113
+    .line 127
     iget-boolean p0, p0, Landroidx/compose/foundation/pager/MeasuredPage;->isVertical:Z
 
     if-eqz p0, :cond_0
@@ -386,7 +382,7 @@
 .method private final getOffset-Bjo55l4(I)J
     .locals 1
 
-    .line 112
+    .line 125
     iget-object p0, p0, Landroidx/compose/foundation/pager/MeasuredPage;->placeableOffsets:[I
 
     mul-int/lit8 p1, p1, 0x2
@@ -406,6 +402,65 @@
 
 
 # virtual methods
+.method public final applyScrollDelta(I)V
+    .locals 5
+
+    .line 114
+    invoke-virtual {p0}, Landroidx/compose/foundation/pager/MeasuredPage;->getOffset()I
+
+    move-result v0
+
+    add-int/2addr v0, p1
+
+    iput v0, p0, Landroidx/compose/foundation/pager/MeasuredPage;->offset:I
+
+    .line 115
+    iget-object v0, p0, Landroidx/compose/foundation/pager/MeasuredPage;->placeableOffsets:[I
+
+    array-length v0, v0
+
+    const/4 v1, 0x0
+
+    :goto_0
+    if-ge v1, v0, :cond_3
+
+    .line 118
+    iget-boolean v2, p0, Landroidx/compose/foundation/pager/MeasuredPage;->isVertical:Z
+
+    if-eqz v2, :cond_0
+
+    rem-int/lit8 v3, v1, 0x2
+
+    const/4 v4, 0x1
+
+    if-eq v3, v4, :cond_1
+
+    :cond_0
+    if-nez v2, :cond_2
+
+    rem-int/lit8 v2, v1, 0x2
+
+    if-nez v2, :cond_2
+
+    .line 119
+    :cond_1
+    iget-object v2, p0, Landroidx/compose/foundation/pager/MeasuredPage;->placeableOffsets:[I
+
+    aget v3, v2, v1
+
+    add-int/2addr v3, p1
+
+    aput v3, v2, v1
+
+    :cond_2
+    add-int/lit8 v1, v1, 0x1
+
+    goto :goto_0
+
+    :cond_3
+    return-void
+.end method
+
 .method public final getCrossAxisSize()I
     .locals 0
 
@@ -454,18 +509,14 @@
 .method public final place(Landroidx/compose/ui/layout/Placeable$PlacementScope;)V
     .locals 11
 
-    const-string v0, "scope"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 93
+    .line 95
     iget v0, p0, Landroidx/compose/foundation/pager/MeasuredPage;->mainAxisLayoutSize:I
 
     const/high16 v1, -0x80000000
 
     if-eq v0, v1, :cond_5
 
-    .line 94
+    .line 96
     iget-object v0, p0, Landroidx/compose/foundation/pager/MeasuredPage;->placeables:Ljava/util/List;
 
     invoke-interface {v0}, Ljava/util/List;->size()I
@@ -477,7 +528,7 @@
     :goto_0
     if-ge v1, v0, :cond_4
 
-    .line 95
+    .line 97
     iget-object v2, p0, Landroidx/compose/foundation/pager/MeasuredPage;->placeables:Ljava/util/List;
 
     invoke-interface {v2, v1}, Ljava/util/List;->get(I)Ljava/lang/Object;
@@ -488,17 +539,17 @@
 
     check-cast v4, Landroidx/compose/ui/layout/Placeable;
 
-    .line 96
+    .line 98
     invoke-direct {p0, v1}, Landroidx/compose/foundation/pager/MeasuredPage;->getOffset-Bjo55l4(I)J
 
     move-result-wide v2
 
-    .line 97
+    .line 99
     iget-boolean v5, p0, Landroidx/compose/foundation/pager/MeasuredPage;->reverseLayout:Z
 
     if-eqz v5, :cond_2
 
-    .line 133
+    .line 146
     iget-boolean v5, p0, Landroidx/compose/foundation/pager/MeasuredPage;->isVertical:Z
 
     if-eqz v5, :cond_0
@@ -514,7 +565,7 @@
 
     move-result v5
 
-    .line 99
+    .line 101
     iget v6, p0, Landroidx/compose/foundation/pager/MeasuredPage;->mainAxisLayoutSize:I
 
     sub-int/2addr v6, v5
@@ -525,7 +576,7 @@
 
     sub-int v5, v6, v5
 
-    .line 133
+    .line 146
     :goto_1
     iget-boolean v6, p0, Landroidx/compose/foundation/pager/MeasuredPage;->isVertical:Z
 
@@ -535,7 +586,7 @@
 
     move-result v2
 
-    .line 99
+    .line 101
     iget v3, p0, Landroidx/compose/foundation/pager/MeasuredPage;->mainAxisLayoutSize:I
 
     sub-int/2addr v3, v2
@@ -548,7 +599,7 @@
 
     goto :goto_2
 
-    .line 133
+    .line 146
     :cond_1
     invoke-static {v2, v3}, Landroidx/compose/ui/unit/IntOffset;->getY-impl(J)I
 
@@ -559,11 +610,11 @@
 
     move-result-wide v2
 
-    .line 102
+    .line 104
     :cond_2
     iget-wide v5, p0, Landroidx/compose/foundation/pager/MeasuredPage;->visualOffset:J
 
-    .line 134
+    .line 147
     invoke-static {v2, v3}, Landroidx/compose/ui/unit/IntOffset;->getX-impl(J)I
 
     move-result v7
@@ -588,7 +639,7 @@
 
     move-result-wide v5
 
-    .line 103
+    .line 105
     iget-boolean v2, p0, Landroidx/compose/foundation/pager/MeasuredPage;->isVertical:Z
 
     if-eqz v2, :cond_3
@@ -603,7 +654,7 @@
 
     move-object v3, p1
 
-    .line 104
+    .line 106
     invoke-static/range {v3 .. v10}, Landroidx/compose/ui/layout/Placeable$PlacementScope;->placeWithLayer-aW-9-wM$default(Landroidx/compose/ui/layout/Placeable$PlacementScope;Landroidx/compose/ui/layout/Placeable;JFLkotlin/jvm/functions/Function1;ILjava/lang/Object;)V
 
     goto :goto_3
@@ -619,7 +670,7 @@
 
     move-object v3, p1
 
-    .line 106
+    .line 108
     invoke-static/range {v3 .. v10}, Landroidx/compose/ui/layout/Placeable$PlacementScope;->placeRelativeWithLayer-aW-9-wM$default(Landroidx/compose/ui/layout/Placeable$PlacementScope;Landroidx/compose/ui/layout/Placeable;JFLkotlin/jvm/functions/Function1;ILjava/lang/Object;)V
 
     :goto_3
@@ -630,7 +681,7 @@
     :cond_4
     return-void
 
-    .line 93
+    .line 95
     :cond_5
     new-instance p0, Ljava/lang/IllegalArgumentException;
 
@@ -670,7 +721,7 @@
     .line 76
     iget-object v0, p0, Landroidx/compose/foundation/pager/MeasuredPage;->placeables:Ljava/util/List;
 
-    .line 127
+    .line 141
     invoke-interface {v0}, Ljava/util/List;->size()I
 
     move-result v1
@@ -680,12 +731,12 @@
     :goto_1
     if-ge v2, v1, :cond_4
 
-    .line 128
+    .line 142
     invoke-interface {v0, v2}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
     move-result-object v3
 
-    .line 129
+    .line 143
     check-cast v3, Landroidx/compose/ui/layout/Placeable;
 
     mul-int/lit8 v4, v2, 0x2
@@ -693,49 +744,50 @@
     .line 78
     iget-boolean v5, p0, Landroidx/compose/foundation/pager/MeasuredPage;->isVertical:Z
 
-    const-string v6, "Required value was null."
-
     if-eqz v5, :cond_2
 
     .line 79
     iget-object v5, p0, Landroidx/compose/foundation/pager/MeasuredPage;->placeableOffsets:[I
 
-    iget-object v7, p0, Landroidx/compose/foundation/pager/MeasuredPage;->horizontalAlignment:Landroidx/compose/ui/Alignment$Horizontal;
-
-    if-eqz v7, :cond_1
-
     .line 80
+    iget-object v6, p0, Landroidx/compose/foundation/pager/MeasuredPage;->horizontalAlignment:Landroidx/compose/ui/Alignment$Horizontal;
+
+    if-eqz v6, :cond_1
+
+    .line 81
     invoke-virtual {v3}, Landroidx/compose/ui/layout/Placeable;->getWidth()I
 
-    move-result v6
+    move-result v7
 
     iget-object v8, p0, Landroidx/compose/foundation/pager/MeasuredPage;->layoutDirection:Landroidx/compose/ui/unit/LayoutDirection;
 
-    invoke-interface {v7, v6, p2, v8}, Landroidx/compose/ui/Alignment$Horizontal;->align(IILandroidx/compose/ui/unit/LayoutDirection;)I
+    invoke-interface {v6, v7, p2, v8}, Landroidx/compose/ui/Alignment$Horizontal;->align(IILandroidx/compose/ui/unit/LayoutDirection;)I
 
     move-result v6
 
     aput v6, v5, v4
 
-    .line 81
+    .line 82
     iget-object v5, p0, Landroidx/compose/foundation/pager/MeasuredPage;->placeableOffsets:[I
 
     add-int/lit8 v4, v4, 0x1
 
     aput p1, v5, v4
 
-    .line 82
+    .line 83
     invoke-virtual {v3}, Landroidx/compose/ui/layout/Placeable;->getHeight()I
 
     move-result v3
 
     goto :goto_2
 
-    .line 79
+    .line 80
     :cond_1
     new-instance p0, Ljava/lang/IllegalArgumentException;
 
-    invoke-virtual {v6}, Ljava/lang/Object;->toString()Ljava/lang/String;
+    const-string p1, "null horizontalAlignment"
+
+    invoke-virtual {p1}, Ljava/lang/Object;->toString()Ljava/lang/String;
 
     move-result-object p1
 
@@ -743,7 +795,7 @@
 
     throw p0
 
-    .line 84
+    .line 85
     :cond_2
     iget-object v5, p0, Landroidx/compose/foundation/pager/MeasuredPage;->placeableOffsets:[I
 
@@ -751,23 +803,23 @@
 
     add-int/lit8 v4, v4, 0x1
 
-    .line 85
-    iget-object v7, p0, Landroidx/compose/foundation/pager/MeasuredPage;->verticalAlignment:Landroidx/compose/ui/Alignment$Vertical;
+    .line 87
+    iget-object v6, p0, Landroidx/compose/foundation/pager/MeasuredPage;->verticalAlignment:Landroidx/compose/ui/Alignment$Vertical;
 
-    if-eqz v7, :cond_3
+    if-eqz v6, :cond_3
 
-    .line 86
+    .line 88
     invoke-virtual {v3}, Landroidx/compose/ui/layout/Placeable;->getHeight()I
 
-    move-result v6
+    move-result v7
 
-    invoke-interface {v7, v6, p3}, Landroidx/compose/ui/Alignment$Vertical;->align(II)I
+    invoke-interface {v6, v7, p3}, Landroidx/compose/ui/Alignment$Vertical;->align(II)I
 
     move-result v6
 
     aput v6, v5, v4
 
-    .line 87
+    .line 89
     invoke-virtual {v3}, Landroidx/compose/ui/layout/Placeable;->getWidth()I
 
     move-result v3
@@ -779,11 +831,13 @@
 
     goto :goto_1
 
-    .line 85
+    .line 87
     :cond_3
     new-instance p0, Ljava/lang/IllegalArgumentException;
 
-    invoke-virtual {v6}, Ljava/lang/Object;->toString()Ljava/lang/String;
+    const-string p1, "null verticalAlignment"
+
+    invoke-virtual {p1}, Ljava/lang/Object;->toString()Ljava/lang/String;
 
     move-result-object p1
 

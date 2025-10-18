@@ -30,7 +30,7 @@
 .method private constructor <init>(Ljp/co/sony/mc/camera/view/hint/HintTextViewController;)V
     .locals 0
 
-    .line 580
+    .line 587
     iput-object p1, p0, Ljp/co/sony/mc/camera/view/hint/HintTextViewController$TimeoutHandler;->this$0:Ljp/co/sony/mc/camera/view/hint/HintTextViewController;
 
     invoke-direct {p0}, Landroid/os/Handler;-><init>()V
@@ -53,15 +53,15 @@
 
     const/4 v0, 0x1
 
-    .line 602
+    .line 609
     invoke-virtual {p0, v0}, Ljp/co/sony/mc/camera/view/hint/HintTextViewController$TimeoutHandler;->removeMessages(I)V
 
     const/4 v0, 0x2
 
-    .line 603
+    .line 610
     invoke-virtual {p0, v0}, Ljp/co/sony/mc/camera/view/hint/HintTextViewController$TimeoutHandler;->removeMessages(I)V
 
-    .line 604
+    .line 611
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/hint/HintTextViewController$TimeoutHandler;->this$0:Ljp/co/sony/mc/camera/view/hint/HintTextViewController;
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/view/hint/HintTextViewController;->-$$Nest$fgetmHintTextFadeOutAnimator(Ljp/co/sony/mc/camera/view/hint/HintTextViewController;)Landroid/animation/ObjectAnimator;
@@ -70,7 +70,7 @@
 
     invoke-virtual {v0}, Landroid/animation/ObjectAnimator;->cancel()V
 
-    .line 605
+    .line 612
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/hint/HintTextViewController$TimeoutHandler;->this$0:Ljp/co/sony/mc/camera/view/hint/HintTextViewController;
 
     invoke-static {p0}, Ljp/co/sony/mc/camera/view/hint/HintTextViewController;->-$$Nest$fgetmListener(Ljp/co/sony/mc/camera/view/hint/HintTextViewController;)Ljp/co/sony/mc/camera/view/hint/HintTextViewController$HintTextContentListener;
@@ -85,7 +85,7 @@
 .method public handleMessage(Landroid/os/Message;)V
     .locals 3
 
-    .line 610
+    .line 617
     iget v0, p1, Landroid/os/Message;->what:I
 
     const/4 v1, 0x1
@@ -98,7 +98,7 @@
 
     goto :goto_0
 
-    .line 617
+    .line 624
     :cond_0
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/hint/HintTextViewController$TimeoutHandler;->this$0:Ljp/co/sony/mc/camera/view/hint/HintTextViewController;
 
@@ -108,7 +108,7 @@
 
     invoke-virtual {v0}, Landroid/animation/ObjectAnimator;->cancel()V
 
-    .line 618
+    .line 625
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/hint/HintTextViewController$TimeoutHandler;->this$0:Ljp/co/sony/mc/camera/view/hint/HintTextViewController;
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/view/hint/HintTextViewController;->-$$Nest$fgetmHintTextFadeOutAnimator(Ljp/co/sony/mc/camera/view/hint/HintTextViewController;)Landroid/animation/ObjectAnimator;
@@ -121,7 +121,7 @@
 
     invoke-virtual {v0, v1, v2}, Landroid/animation/ObjectAnimator;->setDuration(J)Landroid/animation/ObjectAnimator;
 
-    .line 619
+    .line 626
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/hint/HintTextViewController$TimeoutHandler;->this$0:Ljp/co/sony/mc/camera/view/hint/HintTextViewController;
 
     invoke-static {p0}, Ljp/co/sony/mc/camera/view/hint/HintTextViewController;->-$$Nest$fgetmHintTextFadeOutAnimator(Ljp/co/sony/mc/camera/view/hint/HintTextViewController;)Landroid/animation/ObjectAnimator;
@@ -132,13 +132,13 @@
 
     goto :goto_0
 
-    .line 612
+    .line 619
     :cond_1
     iget-object p1, p0, Ljp/co/sony/mc/camera/view/hint/HintTextViewController$TimeoutHandler;->attachedContent:Ljp/co/sony/mc/camera/view/hint/HintTextContent;
 
     if-eqz p1, :cond_2
 
-    .line 613
+    .line 620
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/hint/HintTextViewController$TimeoutHandler;->this$0:Ljp/co/sony/mc/camera/view/hint/HintTextViewController;
 
     invoke-static {p0, p1}, Ljp/co/sony/mc/camera/view/hint/HintTextViewController;->-$$Nest$mcancelFromContentStack(Ljp/co/sony/mc/camera/view/hint/HintTextViewController;Ljp/co/sony/mc/camera/view/hint/HintTextContent;)Z
@@ -151,26 +151,26 @@
 .method public startFadeOut(JILjp/co/sony/mc/camera/view/hint/HintTextContent;)V
     .locals 2
 
-    .line 593
+    .line 600
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/view/hint/HintTextViewController$TimeoutHandler;->cancelCount()V
 
-    .line 594
+    .line 601
     invoke-static {}, Landroid/os/Message;->obtain()Landroid/os/Message;
 
     move-result-object v0
 
     const/4 v1, 0x2
 
-    .line 595
+    .line 602
     iput v1, v0, Landroid/os/Message;->what:I
 
-    .line 596
+    .line 603
     iput p3, v0, Landroid/os/Message;->arg1:I
 
-    .line 597
+    .line 604
     invoke-virtual {p0, v0, p1, p2}, Ljp/co/sony/mc/camera/view/hint/HintTextViewController$TimeoutHandler;->sendMessageDelayed(Landroid/os/Message;J)Z
 
-    .line 598
+    .line 605
     iput-object p4, p0, Ljp/co/sony/mc/camera/view/hint/HintTextViewController$TimeoutHandler;->attachedContent:Ljp/co/sony/mc/camera/view/hint/HintTextContent;
 
     return-void
@@ -181,10 +181,10 @@
 
     const/4 v0, 0x1
 
-    .line 587
+    .line 594
     invoke-virtual {p0, v0, p1, p2}, Ljp/co/sony/mc/camera/view/hint/HintTextViewController$TimeoutHandler;->sendEmptyMessageDelayed(IJ)Z
 
-    .line 588
+    .line 595
     iput-object p3, p0, Ljp/co/sony/mc/camera/view/hint/HintTextViewController$TimeoutHandler;->attachedContent:Ljp/co/sony/mc/camera/view/hint/HintTextContent;
 
     return-void

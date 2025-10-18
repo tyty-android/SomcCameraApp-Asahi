@@ -61,10 +61,6 @@
 .method public final enableZ(Landroid/graphics/Canvas;Z)V
     .locals 0
 
-    const-string p0, "canvas"
-
-    invoke-static {p1, p0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
     if-eqz p2, :cond_0
 
     .line 96

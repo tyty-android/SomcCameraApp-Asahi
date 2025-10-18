@@ -53,7 +53,7 @@
     f = "BackdropScaffold.kt"
     i = {}
     l = {
-        0x18a
+        0x18c
     }
     m = "invokeSuspend"
     n = {}
@@ -181,7 +181,7 @@
 
     move-result-object v0
 
-    .line 65535
+    .line 396
     iget v1, p0, Landroidx/compose/material/BackdropScaffoldKt$Scrim$dismissModifier$1$1;->label:I
 
     const/4 v2, 0x1
@@ -212,7 +212,6 @@
 
     check-cast v3, Landroidx/compose/ui/input/pointer/PointerInputScope;
 
-    .line 394
     new-instance p1, Landroidx/compose/material/BackdropScaffoldKt$Scrim$dismissModifier$1$1$1;
 
     iget-object v1, p0, Landroidx/compose/material/BackdropScaffoldKt$Scrim$dismissModifier$1$1;->$onDismiss:Lkotlin/jvm/functions/Function0;

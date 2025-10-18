@@ -27,7 +27,7 @@
 .method constructor <init>(Lorg/apache/http/impl/client/HttpClientBuilder;Lorg/apache/http/conn/HttpClientConnectionManager;)V
     .locals 0
 
-    .line 1240
+    .line 1244
     iput-object p1, p0, Lorg/apache/http/impl/client/HttpClientBuilder$2;->this$0:Lorg/apache/http/impl/client/HttpClientBuilder;
 
     iput-object p2, p0, Lorg/apache/http/impl/client/HttpClientBuilder$2;->val$cm:Lorg/apache/http/conn/HttpClientConnectionManager;
@@ -47,7 +47,7 @@
         }
     .end annotation
 
-    .line 1244
+    .line 1248
     iget-object p0, p0, Lorg/apache/http/impl/client/HttpClientBuilder$2;->val$cm:Lorg/apache/http/conn/HttpClientConnectionManager;
 
     invoke-interface {p0}, Lorg/apache/http/conn/HttpClientConnectionManager;->shutdown()V

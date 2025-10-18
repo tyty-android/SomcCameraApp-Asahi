@@ -85,7 +85,7 @@
 .end method
 
 .method private constructor <init>(Ljava/lang/Class;Z)V
-    .locals 13
+    .locals 12
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -223,32 +223,20 @@
     move v10, v0
 
     :goto_3
-    const/4 v11, 0x4
-
-    .line 185
-    new-array v11, v11, [Ljava/lang/Object;
-
     if-eqz p2, :cond_5
 
-    const-string v12, "case-insensitive "
+    .line 185
+    const-string v11, "case-insensitive "
 
     goto :goto_4
 
     :cond_5
-    const-string v12, ""
+    const-string v11, ""
 
     :goto_4
-    aput-object v12, v11, v0
-
-    aput-object v8, v11, v1
-
-    const/4 v12, 0x2
-
-    aput-object v6, v11, v12
-
     if-nez v9, :cond_6
 
-    const/4 v6, 0x0
+    const/4 v9, 0x0
 
     goto :goto_5
 
@@ -256,17 +244,17 @@
     :cond_6
     invoke-virtual {v9}, Lcom/google/api/client/util/FieldInfo;->getField()Ljava/lang/reflect/Field;
 
-    move-result-object v6
+    move-result-object v9
 
     :goto_5
-    const/4 v9, 0x3
+    filled-new-array {v11, v8, v6, v9}, [Ljava/lang/Object;
 
-    aput-object v6, v11, v9
+    move-result-object v6
 
     .line 185
-    const-string v6, "two fields have the same %sname <%s>: %s and %s"
+    const-string v9, "two fields have the same %sname <%s>: %s and %s"
 
-    invoke-static {v10, v6, v11}, Lcom/google/api/client/util/Preconditions;->checkArgument(ZLjava/lang/String;[Ljava/lang/Object;)V
+    invoke-static {v10, v9, v6}, Lcom/google/api/client/util/Preconditions;->checkArgument(ZLjava/lang/String;[Ljava/lang/Object;)V
 
     .line 192
     iget-object v6, p0, Lcom/google/api/client/util/ClassInfo;->nameToFieldInfoMap:Ljava/util/IdentityHashMap;

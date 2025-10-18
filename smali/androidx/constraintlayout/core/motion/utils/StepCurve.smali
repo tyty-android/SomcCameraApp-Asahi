@@ -176,40 +176,44 @@
 
     mul-int/lit8 v1, v1, 0x3
 
-    add-int/lit8 v1, v1, -0x2
+    const/4 v2, 0x2
+
+    sub-int/2addr v1, v2
 
     .line 62
-    array-length v2, v0
+    array-length v3, v0
 
-    const/4 v3, 0x1
+    const/4 v4, 0x1
 
-    sub-int/2addr v2, v3
+    sub-int/2addr v3, v4
 
-    int-to-double v4, v2
+    int-to-double v5, v3
 
-    const-wide/high16 v6, 0x3ff0000000000000L    # 1.0
+    const-wide/high16 v7, 0x3ff0000000000000L    # 1.0
 
-    div-double v4, v6, v4
+    div-double v5, v7, v5
 
     .line 64
-    filled-new-array {v1, v3}, [I
+    new-array v2, v2, [I
 
-    move-result-object v3
+    aput v4, v2, v4
 
-    sget-object v8, Ljava/lang/Double;->TYPE:Ljava/lang/Class;
+    const/4 v4, 0x0
 
-    invoke-static {v8, v3}, Ljava/lang/reflect/Array;->newInstance(Ljava/lang/Class;[I)Ljava/lang/Object;
+    aput v1, v2, v4
 
-    move-result-object v3
+    sget-object v9, Ljava/lang/Double;->TYPE:Ljava/lang/Class;
 
-    check-cast v3, [[D
+    invoke-static {v9, v2}, Ljava/lang/reflect/Array;->newInstance(Ljava/lang/Class;[I)Ljava/lang/Object;
+
+    move-result-object v2
+
+    check-cast v2, [[D
 
     .line 65
     new-array v1, v1, [D
 
-    const/4 v8, 0x0
-
-    move v9, v8
+    move v9, v4
 
     .line 66
     :goto_0
@@ -220,34 +224,34 @@
     .line 67
     aget-wide v10, v0, v9
 
-    add-int v12, v9, v2
+    add-int v12, v9, v3
 
     .line 68
-    aget-object v13, v3, v12
+    aget-object v13, v2, v12
 
-    aput-wide v10, v13, v8
+    aput-wide v10, v13, v4
 
     int-to-double v13, v9
 
-    mul-double/2addr v13, v4
+    mul-double/2addr v13, v5
 
     .line 69
     aput-wide v13, v1, v12
 
     if-lez v9, :cond_0
 
-    mul-int/lit8 v12, v2, 0x2
+    mul-int/lit8 v12, v3, 0x2
 
     add-int/2addr v12, v9
 
     .line 71
-    aget-object v15, v3, v12
+    aget-object v15, v2, v12
 
-    add-double v16, v10, v6
+    add-double v16, v10, v7
 
-    aput-wide v16, v15, v8
+    aput-wide v16, v15, v4
 
-    add-double v15, v13, v6
+    add-double v15, v13, v7
 
     .line 72
     aput-wide v15, v1, v12
@@ -255,19 +259,19 @@
     add-int/lit8 v12, v9, -0x1
 
     .line 74
-    aget-object v15, v3, v12
+    aget-object v15, v2, v12
 
-    sub-double/2addr v10, v6
+    sub-double/2addr v10, v7
 
-    sub-double/2addr v10, v4
+    sub-double/2addr v10, v5
 
-    aput-wide v10, v15, v8
+    aput-wide v10, v15, v4
 
     const-wide/high16 v10, -0x4010000000000000L    # -1.0
 
     add-double/2addr v13, v10
 
-    sub-double/2addr v13, v4
+    sub-double/2addr v13, v5
 
     .line 75
     aput-wide v13, v1, v12
@@ -281,7 +285,7 @@
     :cond_1
     new-instance v0, Landroidx/constraintlayout/core/motion/utils/MonotonicCurveFit;
 
-    invoke-direct {v0, v1, v3}, Landroidx/constraintlayout/core/motion/utils/MonotonicCurveFit;-><init>([D[[D)V
+    invoke-direct {v0, v1, v2}, Landroidx/constraintlayout/core/motion/utils/MonotonicCurveFit;-><init>([D[[D)V
 
     .line 90
     sget-object v1, Ljava/lang/System;->out:Ljava/io/PrintStream;
@@ -292,13 +296,13 @@
 
     invoke-direct {v2, v3}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
-    const-wide/16 v3, 0x0
+    const-wide/16 v5, 0x0
 
-    invoke-virtual {v0, v3, v4, v8}, Landroidx/constraintlayout/core/motion/utils/MonotonicCurveFit;->getPos(DI)D
+    invoke-virtual {v0, v5, v6, v4}, Landroidx/constraintlayout/core/motion/utils/MonotonicCurveFit;->getPos(DI)D
 
-    move-result-wide v3
+    move-result-wide v5
 
-    invoke-virtual {v2, v3, v4}, Ljava/lang/StringBuilder;->append(D)Ljava/lang/StringBuilder;
+    invoke-virtual {v2, v5, v6}, Ljava/lang/StringBuilder;->append(D)Ljava/lang/StringBuilder;
 
     move-result-object v2
 
@@ -317,7 +321,7 @@
 
     invoke-direct {v2, v3}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
-    invoke-virtual {v0, v6, v7, v8}, Landroidx/constraintlayout/core/motion/utils/MonotonicCurveFit;->getPos(DI)D
+    invoke-virtual {v0, v7, v8, v4}, Landroidx/constraintlayout/core/motion/utils/MonotonicCurveFit;->getPos(DI)D
 
     move-result-wide v3
 

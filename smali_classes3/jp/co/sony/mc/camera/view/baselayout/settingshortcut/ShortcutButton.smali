@@ -4,7 +4,7 @@
 
 
 # static fields
-.field private static final DISABLED_FILTER:I = 0x7f0600e6
+.field private static final DISABLED_FILTER:I = 0x7f0600de
 
 .field private static final ICON_FADE_SWITCH_ANIMATION_DURATION:I = 0xfa
 
@@ -180,7 +180,7 @@
     goto :goto_1
 
     :cond_1
-    const v0, 0x7f0600e6
+    const v0, 0x7f0600de
 
     .line 100
     invoke-virtual {p0, v0}, Ljp/co/sony/mc/camera/view/baselayout/settingshortcut/ShortcutButton;->setColorFilter(I)V

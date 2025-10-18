@@ -80,19 +80,19 @@
 .end method
 
 .method public varargs handleCapture(Ljp/co/sony/mc/camera/device/state/DeviceStateContext;[Ljava/lang/Object;)V
-    .locals 2
+    .locals 4
 
     const/4 v0, 0x0
 
     .line 120
-    aget-object v0, p2, v0
+    aget-object v1, p2, v0
 
-    check-cast v0, Ljp/co/sony/mc/camera/device/SnapshotRequest;
+    check-cast v1, Ljp/co/sony/mc/camera/device/SnapshotRequest;
 
-    const/4 v1, 0x1
+    const/4 v2, 0x1
 
     .line 121
-    aget-object p2, p2, v1
+    aget-object p2, p2, v2
 
     check-cast p2, Ljava/lang/Boolean;
 
@@ -101,14 +101,14 @@
     move-result p2
 
     .line 123
-    iget-boolean v1, p0, Ljp/co/sony/mc/camera/device/state/DeviceStatePhotoPrepareSnapshot;->mIsCancelRequested:Z
+    iget-boolean v3, p0, Ljp/co/sony/mc/camera/device/state/DeviceStatePhotoPrepareSnapshot;->mIsCancelRequested:Z
 
-    if-nez v1, :cond_1
+    if-nez v3, :cond_1
 
-    if-eqz v0, :cond_0
+    if-eqz v1, :cond_0
 
     .line 125
-    invoke-virtual {p1, v0, p2}, Ljp/co/sony/mc/camera/device/state/DeviceStateContext;->setSnapshotRequestInfo(Ljp/co/sony/mc/camera/device/SnapshotRequest;Z)V
+    invoke-virtual {p1, v1, p2}, Ljp/co/sony/mc/camera/device/state/DeviceStateContext;->setSnapshotRequestInfo(Ljp/co/sony/mc/camera/device/SnapshotRequest;Z)V
 
     .line 126
     new-instance p1, Ljp/co/sony/mc/camera/device/state/DeviceStatePhotoCaptureWaitingForPrepareSnapshotDone;
@@ -123,11 +123,11 @@
 
     .line 128
     :cond_0
-    const-string p0, "Capture request is nothing. Can not take picture."
+    new-array p0, v2, [Ljava/lang/String;
 
-    filled-new-array {p0}, [Ljava/lang/String;
+    const-string p1, "Capture request is nothing. Can not take picture."
 
-    move-result-object p0
+    aput-object p1, p0, v0
 
     invoke-static {p0}, Ljp/co/sony/mc/camera/util/CamLog;->w([Ljava/lang/String;)V
 
@@ -137,30 +137,30 @@
 .end method
 
 .method public varargs handleCaptureBurst(Ljp/co/sony/mc/camera/device/state/DeviceStateContext;[Ljava/lang/Object;)V
-    .locals 3
+    .locals 5
 
     const/4 v0, 0x0
 
     .line 138
-    aget-object v0, p2, v0
+    aget-object v1, p2, v0
 
-    check-cast v0, Ljp/co/sony/mc/camera/device/SnapshotRequest;
+    check-cast v1, Ljp/co/sony/mc/camera/device/SnapshotRequest;
 
-    const/4 v1, 0x1
+    const/4 v2, 0x1
 
     .line 139
-    aget-object v1, p2, v1
+    aget-object v3, p2, v2
 
-    check-cast v1, Ljava/lang/Boolean;
+    check-cast v3, Ljava/lang/Boolean;
 
-    invoke-virtual {v1}, Ljava/lang/Boolean;->booleanValue()Z
+    invoke-virtual {v3}, Ljava/lang/Boolean;->booleanValue()Z
 
-    move-result v1
+    move-result v3
 
-    const/4 v2, 0x2
+    const/4 v4, 0x2
 
     .line 140
-    aget-object p2, p2, v2
+    aget-object p2, p2, v4
 
     check-cast p2, Ljava/lang/Boolean;
 
@@ -169,14 +169,14 @@
     move-result p2
 
     .line 142
-    iget-boolean v2, p0, Ljp/co/sony/mc/camera/device/state/DeviceStatePhotoPrepareSnapshot;->mIsCancelRequested:Z
+    iget-boolean v4, p0, Ljp/co/sony/mc/camera/device/state/DeviceStatePhotoPrepareSnapshot;->mIsCancelRequested:Z
 
-    if-nez v2, :cond_1
+    if-nez v4, :cond_1
 
-    if-eqz v0, :cond_0
+    if-eqz v1, :cond_0
 
     .line 144
-    invoke-virtual {p1, v0, v1}, Ljp/co/sony/mc/camera/device/state/DeviceStateContext;->setSnapshotRequestInfo(Ljp/co/sony/mc/camera/device/SnapshotRequest;Z)V
+    invoke-virtual {p1, v1, v3}, Ljp/co/sony/mc/camera/device/state/DeviceStateContext;->setSnapshotRequestInfo(Ljp/co/sony/mc/camera/device/SnapshotRequest;Z)V
 
     .line 149
     new-instance p1, Ljp/co/sony/mc/camera/device/state/DeviceStateBurstCaptureWaitingForPrepareSnapshotDone;
@@ -191,11 +191,11 @@
 
     .line 146
     :cond_0
-    const-string p0, "Capture request is nothing. Can not take picture."
+    new-array p0, v2, [Ljava/lang/String;
 
-    filled-new-array {p0}, [Ljava/lang/String;
+    const-string p1, "Capture request is nothing. Can not take picture."
 
-    move-result-object p0
+    aput-object p1, p0, v0
 
     invoke-static {p0}, Ljp/co/sony/mc/camera/util/CamLog;->w([Ljava/lang/String;)V
 
@@ -464,11 +464,15 @@
 
     if-eqz p0, :cond_0
 
-    const-string p0, "FaceDetection is already running."
+    const/4 p0, 0x1
 
-    filled-new-array {p0}, [Ljava/lang/String;
+    new-array p0, p0, [Ljava/lang/String;
 
-    move-result-object p0
+    const/4 p1, 0x0
+
+    const-string p2, "FaceDetection is already running."
+
+    aput-object p2, p0, p1
 
     invoke-static {p0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 

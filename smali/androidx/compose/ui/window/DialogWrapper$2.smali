@@ -79,11 +79,7 @@
 .end method
 
 .method public final invoke(Landroidx/activity/OnBackPressedCallback;)V
-    .locals 1
-
-    const-string v0, "$this$addCallback"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+    .locals 0
 
     .line 369
     iget-object p1, p0, Landroidx/compose/ui/window/DialogWrapper$2;->this$0:Landroidx/compose/ui/window/DialogWrapper;

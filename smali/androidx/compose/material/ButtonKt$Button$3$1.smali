@@ -48,8 +48,6 @@
 
 
 # instance fields
-.field final synthetic $$dirty:I
-
 .field final synthetic $content:Lkotlin/jvm/functions/Function3;
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -67,7 +65,7 @@
 
 
 # direct methods
-.method constructor <init>(Landroidx/compose/foundation/layout/PaddingValues;Lkotlin/jvm/functions/Function3;I)V
+.method constructor <init>(Landroidx/compose/foundation/layout/PaddingValues;Lkotlin/jvm/functions/Function3;)V
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -81,15 +79,13 @@
             "-",
             "Ljava/lang/Integer;",
             "Lkotlin/Unit;",
-            ">;I)V"
+            ">;)V"
         }
     .end annotation
 
     iput-object p1, p0, Landroidx/compose/material/ButtonKt$Button$3$1;->$contentPadding:Landroidx/compose/foundation/layout/PaddingValues;
 
     iput-object p2, p0, Landroidx/compose/material/ButtonKt$Button$3$1;->$content:Lkotlin/jvm/functions/Function3;
-
-    iput p3, p0, Landroidx/compose/material/ButtonKt$Button$3$1;->$$dirty:I
 
     const/4 p1, 0x2
 
@@ -103,7 +99,7 @@
 .method public bridge synthetic invoke(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
 
-    .line 118
+    .line 117
     check-cast p1, Landroidx/compose/runtime/Composer;
 
     check-cast p2, Ljava/lang/Number;
@@ -122,7 +118,7 @@
 .method public final invoke(Landroidx/compose/runtime/Composer;I)V
     .locals 3
 
-    const-string v0, "C119@5651L10,118@5595L587:Button.kt#jmzs0o"
+    const-string v0, "C118@5612L10,117@5556L587:Button.kt#jmzs0o"
 
     invoke-static {p1, v0}, Landroidx/compose/runtime/ComposerKt;->sourceInformation(Landroidx/compose/runtime/Composer;Ljava/lang/String;)V
 
@@ -132,7 +128,7 @@
 
     if-ne v0, v1, :cond_1
 
-    .line 119
+    .line 118
     invoke-interface {p1}, Landroidx/compose/runtime/Composer;->getSkipping()Z
 
     move-result v0
@@ -141,13 +137,13 @@
 
     goto :goto_0
 
-    .line 133
+    .line 132
     :cond_0
     invoke-interface {p1}, Landroidx/compose/runtime/Composer;->skipToGroupEnd()V
 
     goto :goto_1
 
-    .line 119
+    .line 118
     :cond_1
     :goto_0
     invoke-static {}, Landroidx/compose/runtime/ComposerKt;->isTraceInProgress()Z
@@ -164,7 +160,7 @@
 
     invoke-static {v2, p2, v0, v1}, Landroidx/compose/runtime/ComposerKt;->traceEventStart(IIILjava/lang/String;)V
 
-    .line 120
+    .line 119
     :cond_2
     sget-object p2, Landroidx/compose/material/MaterialTheme;->INSTANCE:Landroidx/compose/material/MaterialTheme;
 
@@ -178,16 +174,14 @@
 
     move-result-object p2
 
-    .line 121
+    .line 120
     new-instance v0, Landroidx/compose/material/ButtonKt$Button$3$1$1;
 
     iget-object v1, p0, Landroidx/compose/material/ButtonKt$Button$3$1;->$contentPadding:Landroidx/compose/foundation/layout/PaddingValues;
 
-    iget-object v2, p0, Landroidx/compose/material/ButtonKt$Button$3$1;->$content:Lkotlin/jvm/functions/Function3;
+    iget-object p0, p0, Landroidx/compose/material/ButtonKt$Button$3$1;->$content:Lkotlin/jvm/functions/Function3;
 
-    iget p0, p0, Landroidx/compose/material/ButtonKt$Button$3$1;->$$dirty:I
-
-    invoke-direct {v0, v1, v2, p0}, Landroidx/compose/material/ButtonKt$Button$3$1$1;-><init>(Landroidx/compose/foundation/layout/PaddingValues;Lkotlin/jvm/functions/Function3;I)V
+    invoke-direct {v0, v1, p0}, Landroidx/compose/material/ButtonKt$Button$3$1$1;-><init>(Landroidx/compose/foundation/layout/PaddingValues;Lkotlin/jvm/functions/Function3;)V
 
     const p0, -0x25921360
 
@@ -201,7 +195,7 @@
 
     const/16 v0, 0x30
 
-    .line 119
+    .line 118
     invoke-static {p2, p0, p1, v0}, Landroidx/compose/material/TextKt;->ProvideTextStyle(Landroidx/compose/ui/text/TextStyle;Lkotlin/jvm/functions/Function2;Landroidx/compose/runtime/Composer;I)V
 
     invoke-static {}, Landroidx/compose/runtime/ComposerKt;->isTraceInProgress()Z

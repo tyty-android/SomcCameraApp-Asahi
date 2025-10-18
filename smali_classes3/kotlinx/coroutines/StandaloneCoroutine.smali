@@ -33,7 +33,7 @@
     k = 0x1
     mv = {
         0x1,
-        0x6,
+        0x8,
         0x0
     }
     xi = 0x30
@@ -46,7 +46,7 @@
 
     const/4 v0, 0x1
 
-    .line 194
+    .line 192
     invoke-direct {p0, p1, v0, p2}, Lkotlinx/coroutines/AbstractCoroutine;-><init>(Lkotlin/coroutines/CoroutineContext;ZZ)V
 
     return-void
@@ -57,7 +57,7 @@
 .method protected handleJobException(Ljava/lang/Throwable;)Z
     .locals 0
 
-    .line 196
+    .line 194
     invoke-virtual {p0}, Lkotlinx/coroutines/StandaloneCoroutine;->getContext()Lkotlin/coroutines/CoroutineContext;
 
     move-result-object p0

@@ -15,6 +15,8 @@
 
 
 # instance fields
+.field mAnimator:Landroid/animation/Animator;
+
 .field mName:Ljava/lang/String;
 
 .field mTransition:Landroidx/transition/Transition;
@@ -23,30 +25,33 @@
 
 .field mView:Landroid/view/View;
 
-.field mWindowId:Landroidx/transition/WindowIdImpl;
+.field mWindowId:Landroid/view/WindowId;
 
 
 # direct methods
-.method constructor <init>(Landroid/view/View;Ljava/lang/String;Landroidx/transition/Transition;Landroidx/transition/WindowIdImpl;Landroidx/transition/TransitionValues;)V
+.method constructor <init>(Landroid/view/View;Ljava/lang/String;Landroidx/transition/Transition;Landroid/view/WindowId;Landroidx/transition/TransitionValues;Landroid/animation/Animator;)V
     .locals 0
 
-    .line 2350
+    .line 2586
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2351
+    .line 2587
     iput-object p1, p0, Landroidx/transition/Transition$AnimationInfo;->mView:Landroid/view/View;
 
-    .line 2352
+    .line 2588
     iput-object p2, p0, Landroidx/transition/Transition$AnimationInfo;->mName:Ljava/lang/String;
 
-    .line 2353
+    .line 2589
     iput-object p5, p0, Landroidx/transition/Transition$AnimationInfo;->mValues:Landroidx/transition/TransitionValues;
 
-    .line 2354
-    iput-object p4, p0, Landroidx/transition/Transition$AnimationInfo;->mWindowId:Landroidx/transition/WindowIdImpl;
+    .line 2590
+    iput-object p4, p0, Landroidx/transition/Transition$AnimationInfo;->mWindowId:Landroid/view/WindowId;
 
-    .line 2355
+    .line 2591
     iput-object p3, p0, Landroidx/transition/Transition$AnimationInfo;->mTransition:Landroidx/transition/Transition;
+
+    .line 2592
+    iput-object p6, p0, Landroidx/transition/Transition$AnimationInfo;->mAnimator:Landroid/animation/Animator;
 
     return-void
 .end method

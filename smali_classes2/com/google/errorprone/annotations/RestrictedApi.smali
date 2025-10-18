@@ -12,6 +12,7 @@
         allowedOnPath = ""
         allowlistAnnotations = {}
         allowlistWithWarningAnnotations = {}
+        link = ""
     .end subannotation
 .end annotation
 

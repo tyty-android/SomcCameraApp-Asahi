@@ -33,12 +33,12 @@
 .method constructor <init>(Landroidx/activity/ComponentActivity;)V
     .locals 4
 
-    .line 1171
+    .line 1202
     iput-object p1, p0, Landroidx/activity/ComponentActivity$ReportFullyDrawnExecutorApi16Impl;->this$0:Landroidx/activity/ComponentActivity;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 1173
+    .line 1204
     invoke-static {}, Landroid/os/SystemClock;->uptimeMillis()J
 
     move-result-wide v0
@@ -51,7 +51,7 @@
 
     const/4 p1, 0x0
 
-    .line 1175
+    .line 1206
     iput-boolean p1, p0, Landroidx/activity/ComponentActivity$ReportFullyDrawnExecutorApi16Impl;->mOnDrawScheduled:Z
 
     return-void
@@ -59,13 +59,49 @@
 
 
 # virtual methods
+.method public activityDestroyed()V
+    .locals 1
+
+    .line 1218
+    iget-object v0, p0, Landroidx/activity/ComponentActivity$ReportFullyDrawnExecutorApi16Impl;->this$0:Landroidx/activity/ComponentActivity;
+
+    invoke-virtual {v0}, Landroidx/activity/ComponentActivity;->getWindow()Landroid/view/Window;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Landroid/view/Window;->getDecorView()Landroid/view/View;
+
+    move-result-object v0
+
+    invoke-virtual {v0, p0}, Landroid/view/View;->removeCallbacks(Ljava/lang/Runnable;)Z
+
+    .line 1219
+    iget-object v0, p0, Landroidx/activity/ComponentActivity$ReportFullyDrawnExecutorApi16Impl;->this$0:Landroidx/activity/ComponentActivity;
+
+    invoke-virtual {v0}, Landroidx/activity/ComponentActivity;->getWindow()Landroid/view/Window;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Landroid/view/Window;->getDecorView()Landroid/view/View;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Landroid/view/View;->getViewTreeObserver()Landroid/view/ViewTreeObserver;
+
+    move-result-object v0
+
+    invoke-virtual {v0, p0}, Landroid/view/ViewTreeObserver;->removeOnDrawListener(Landroid/view/ViewTreeObserver$OnDrawListener;)V
+
+    return-void
+.end method
+
 .method public execute(Ljava/lang/Runnable;)V
     .locals 1
 
-    .line 1192
+    .line 1229
     iput-object p1, p0, Landroidx/activity/ComponentActivity$ReportFullyDrawnExecutorApi16Impl;->mRunnable:Ljava/lang/Runnable;
 
-    .line 1193
+    .line 1230
     iget-object p1, p0, Landroidx/activity/ComponentActivity$ReportFullyDrawnExecutorApi16Impl;->this$0:Landroidx/activity/ComponentActivity;
 
     invoke-virtual {p1}, Landroidx/activity/ComponentActivity;->getWindow()Landroid/view/Window;
@@ -76,12 +112,12 @@
 
     move-result-object p1
 
-    .line 1194
+    .line 1231
     iget-boolean v0, p0, Landroidx/activity/ComponentActivity$ReportFullyDrawnExecutorApi16Impl;->mOnDrawScheduled:Z
 
     if-eqz v0, :cond_1
 
-    .line 1195
+    .line 1232
     invoke-static {}, Landroid/os/Looper;->myLooper()Landroid/os/Looper;
 
     move-result-object p0
@@ -92,18 +128,18 @@
 
     if-ne p0, v0, :cond_0
 
-    .line 1196
+    .line 1233
     invoke-virtual {p1}, Landroid/view/View;->invalidate()V
 
     goto :goto_0
 
-    .line 1198
+    .line 1235
     :cond_0
     invoke-virtual {p1}, Landroid/view/View;->postInvalidate()V
 
     goto :goto_0
 
-    .line 1203
+    .line 1240
     :cond_1
     new-instance v0, Landroidx/activity/ComponentActivity$ReportFullyDrawnExecutorApi16Impl$$ExternalSyntheticLambda0;
 
@@ -118,17 +154,17 @@
 .method synthetic lambda$execute$0$androidx-activity-ComponentActivity$ReportFullyDrawnExecutorApi16Impl()V
     .locals 1
 
-    .line 1204
+    .line 1241
     iget-object v0, p0, Landroidx/activity/ComponentActivity$ReportFullyDrawnExecutorApi16Impl;->mRunnable:Ljava/lang/Runnable;
 
     if-eqz v0, :cond_0
 
-    .line 1205
+    .line 1242
     invoke-interface {v0}, Ljava/lang/Runnable;->run()V
 
     const/4 v0, 0x0
 
-    .line 1206
+    .line 1243
     iput-object v0, p0, Landroidx/activity/ComponentActivity$ReportFullyDrawnExecutorApi16Impl;->mRunnable:Ljava/lang/Runnable;
 
     :cond_0
@@ -138,22 +174,22 @@
 .method public onDraw()V
     .locals 6
 
-    .line 1214
+    .line 1251
     iget-object v0, p0, Landroidx/activity/ComponentActivity$ReportFullyDrawnExecutorApi16Impl;->mRunnable:Ljava/lang/Runnable;
 
     const/4 v1, 0x0
 
     if-eqz v0, :cond_0
 
-    .line 1216
+    .line 1253
     invoke-interface {v0}, Ljava/lang/Runnable;->run()V
 
     const/4 v0, 0x0
 
-    .line 1217
+    .line 1254
     iput-object v0, p0, Landroidx/activity/ComponentActivity$ReportFullyDrawnExecutorApi16Impl;->mRunnable:Ljava/lang/Runnable;
 
-    .line 1218
+    .line 1255
     iget-object v0, p0, Landroidx/activity/ComponentActivity$ReportFullyDrawnExecutorApi16Impl;->this$0:Landroidx/activity/ComponentActivity;
 
     iget-object v0, v0, Landroidx/activity/ComponentActivity;->mFullyDrawnReporter:Landroidx/activity/FullyDrawnReporter;
@@ -164,10 +200,10 @@
 
     if-eqz v0, :cond_1
 
-    .line 1219
+    .line 1256
     iput-boolean v1, p0, Landroidx/activity/ComponentActivity$ReportFullyDrawnExecutorApi16Impl;->mOnDrawScheduled:Z
 
-    .line 1220
+    .line 1257
     iget-object v0, p0, Landroidx/activity/ComponentActivity$ReportFullyDrawnExecutorApi16Impl;->this$0:Landroidx/activity/ComponentActivity;
 
     invoke-virtual {v0}, Landroidx/activity/ComponentActivity;->getWindow()Landroid/view/Window;
@@ -182,7 +218,7 @@
 
     goto :goto_0
 
-    .line 1222
+    .line 1259
     :cond_0
     invoke-static {}, Landroid/os/SystemClock;->uptimeMillis()J
 
@@ -194,10 +230,10 @@
 
     if-lez v0, :cond_1
 
-    .line 1225
+    .line 1262
     iput-boolean v1, p0, Landroidx/activity/ComponentActivity$ReportFullyDrawnExecutorApi16Impl;->mOnDrawScheduled:Z
 
-    .line 1226
+    .line 1263
     iget-object v0, p0, Landroidx/activity/ComponentActivity$ReportFullyDrawnExecutorApi16Impl;->this$0:Landroidx/activity/ComponentActivity;
 
     invoke-virtual {v0}, Landroidx/activity/ComponentActivity;->getWindow()Landroid/view/Window;
@@ -218,7 +254,7 @@
 .method public run()V
     .locals 1
 
-    .line 1236
+    .line 1273
     iget-object v0, p0, Landroidx/activity/ComponentActivity$ReportFullyDrawnExecutorApi16Impl;->this$0:Landroidx/activity/ComponentActivity;
 
     invoke-virtual {v0}, Landroidx/activity/ComponentActivity;->getWindow()Landroid/view/Window;
@@ -241,17 +277,17 @@
 .method public viewCreated(Landroid/view/View;)V
     .locals 1
 
-    .line 1179
+    .line 1210
     iget-boolean v0, p0, Landroidx/activity/ComponentActivity$ReportFullyDrawnExecutorApi16Impl;->mOnDrawScheduled:Z
 
     if-nez v0, :cond_0
 
     const/4 v0, 0x1
 
-    .line 1180
+    .line 1211
     iput-boolean v0, p0, Landroidx/activity/ComponentActivity$ReportFullyDrawnExecutorApi16Impl;->mOnDrawScheduled:Z
 
-    .line 1181
+    .line 1212
     invoke-virtual {p1}, Landroid/view/View;->getViewTreeObserver()Landroid/view/ViewTreeObserver;
 
     move-result-object p1

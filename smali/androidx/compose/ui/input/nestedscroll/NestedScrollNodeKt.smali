@@ -82,10 +82,6 @@
 .method public static final nestedScrollModifierNode(Landroidx/compose/ui/input/nestedscroll/NestedScrollConnection;Landroidx/compose/ui/input/nestedscroll/NestedScrollDispatcher;)Landroidx/compose/ui/node/DelegatableNode;
     .locals 1
 
-    const-string v0, "connection"
-
-    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
     .line 39
     new-instance v0, Landroidx/compose/ui/input/nestedscroll/NestedScrollNode;
 

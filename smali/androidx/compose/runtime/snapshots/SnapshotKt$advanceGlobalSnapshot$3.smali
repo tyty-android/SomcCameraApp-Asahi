@@ -79,7 +79,7 @@
 .method public bridge synthetic invoke(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
 
-    .line 1839
+    .line 1830
     check-cast p1, Landroidx/compose/runtime/snapshots/SnapshotIdSet;
 
     invoke-virtual {p0, p1}, Landroidx/compose/runtime/snapshots/SnapshotKt$advanceGlobalSnapshot$3;->invoke(Landroidx/compose/runtime/snapshots/SnapshotIdSet;)V
@@ -91,10 +91,6 @@
 
 .method public final invoke(Landroidx/compose/runtime/snapshots/SnapshotIdSet;)V
     .locals 0
-
-    const-string p0, "it"
-
-    invoke-static {p1, p0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
     return-void
 .end method

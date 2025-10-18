@@ -81,41 +81,41 @@
 .method constructor <init>(Ljp/co/sony/mc/camera/device/state/DeviceStateContext;)V
     .locals 1
 
-    .line 355
+    .line 366
     iput-object p1, p0, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CaptureSessionInfo;->this$0:Ljp/co/sony/mc/camera/device/state/DeviceStateContext;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     const/4 p1, 0x0
 
-    .line 356
+    .line 367
     iput-object p1, p0, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CaptureSessionInfo;->captureSession:Landroid/hardware/camera2/CameraCaptureSession;
 
-    .line 359
+    .line 370
     iput-object p1, p0, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CaptureSessionInfo;->pastCaptureSession:Landroid/hardware/camera2/CameraCaptureSession;
 
-    .line 369
+    .line 380
     new-instance v0, Ljava/util/LinkedList;
 
     invoke-direct {v0}, Ljava/util/LinkedList;-><init>()V
 
     iput-object v0, p0, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CaptureSessionInfo;->mYuvListenerQueue:Ljava/util/Deque;
 
-    .line 370
+    .line 381
     new-instance v0, Ljava/lang/Object;
 
     invoke-direct {v0}, Ljava/lang/Object;-><init>()V
 
     iput-object v0, p0, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CaptureSessionInfo;->mYuvListenerLock:Ljava/lang/Object;
 
-    .line 371
+    .line 382
     new-instance v0, Ljava/lang/Object;
 
     invoke-direct {v0}, Ljava/lang/Object;-><init>()V
 
     iput-object v0, p0, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CaptureSessionInfo;->mPreviewFrameProviderLock:Ljava/lang/Object;
 
-    .line 373
+    .line 384
     new-instance v0, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CaptureSessionInfo$YuvHistogramImageAvailableListener;
 
     invoke-direct {v0, p0, p1}, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CaptureSessionInfo$YuvHistogramImageAvailableListener;-><init>(Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CaptureSessionInfo;Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CaptureSessionInfo$YuvHistogramImageAvailableListener-IA;)V
@@ -128,7 +128,7 @@
 .method private quitSourceAdapterThread()V
     .locals 4
 
-    .line 620
+    .line 634
     iget-object v0, p0, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CaptureSessionInfo;->this$0:Ljp/co/sony/mc/camera/device/state/DeviceStateContext;
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/device/state/DeviceStateContext;->-$$Nest$fgetmSourceAdapterThread(Ljp/co/sony/mc/camera/device/state/DeviceStateContext;)Landroid/os/HandlerThread;
@@ -137,7 +137,7 @@
 
     if-eqz v0, :cond_0
 
-    .line 621
+    .line 635
     iget-object v0, p0, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CaptureSessionInfo;->this$0:Ljp/co/sony/mc/camera/device/state/DeviceStateContext;
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/device/state/DeviceStateContext;->-$$Nest$fgetmSourceAdapterHandler(Ljp/co/sony/mc/camera/device/state/DeviceStateContext;)Landroid/os/Handler;
@@ -148,7 +148,7 @@
 
     invoke-virtual {v0, v1}, Landroid/os/Handler;->removeCallbacksAndMessages(Ljava/lang/Object;)V
 
-    .line 622
+    .line 636
     iget-object v0, p0, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CaptureSessionInfo;->this$0:Ljp/co/sony/mc/camera/device/state/DeviceStateContext;
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/device/state/DeviceStateContext;->-$$Nest$fgetmSourceAdapterThread(Ljp/co/sony/mc/camera/device/state/DeviceStateContext;)Landroid/os/HandlerThread;
@@ -157,7 +157,7 @@
 
     invoke-virtual {v0}, Landroid/os/HandlerThread;->quitSafely()Z
 
-    .line 624
+    .line 638
     :try_start_0
     iget-object v0, p0, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CaptureSessionInfo;->this$0:Ljp/co/sony/mc/camera/device/state/DeviceStateContext;
 
@@ -169,12 +169,12 @@
 
     invoke-virtual {v0, v2, v3}, Landroid/os/HandlerThread;->join(J)V
 
-    .line 625
+    .line 639
     iget-object v0, p0, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CaptureSessionInfo;->this$0:Ljp/co/sony/mc/camera/device/state/DeviceStateContext;
 
     invoke-static {v0, v1}, Ljp/co/sony/mc/camera/device/state/DeviceStateContext;->-$$Nest$fputmSourceAdapterThread(Ljp/co/sony/mc/camera/device/state/DeviceStateContext;Landroid/os/HandlerThread;)V
 
-    .line 626
+    .line 640
     iget-object p0, p0, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CaptureSessionInfo;->this$0:Ljp/co/sony/mc/camera/device/state/DeviceStateContext;
 
     invoke-static {p0, v1}, Ljp/co/sony/mc/camera/device/state/DeviceStateContext;->-$$Nest$fputmSourceAdapterHandler(Ljp/co/sony/mc/camera/device/state/DeviceStateContext;Landroid/os/Handler;)V
@@ -186,7 +186,7 @@
     :catch_0
     move-exception p0
 
-    .line 628
+    .line 642
     invoke-virtual {p0}, Ljava/lang/InterruptedException;->printStackTrace()V
 
     :cond_0
@@ -199,7 +199,7 @@
 .method public addPreviewFrameListener()V
     .locals 1
 
-    .line 744
+    .line 758
     iget-object v0, p0, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CaptureSessionInfo;->previewFrameReceiver:Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CaptureSessionInfo$PreviewFrameReceiver;
 
     invoke-virtual {p0, v0}, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CaptureSessionInfo;->addYuvImageAvailableListener(Ljp/co/sony/mc/camera/device/state/DeviceStateContext$YuvImageAvailableListener;)V
@@ -210,12 +210,12 @@
 .method public addThumbnailListener(II)V
     .locals 1
 
-    .line 738
+    .line 752
     new-instance v0, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CaptureSessionInfo$YuvThumbnailImageAvailableListener;
 
     invoke-direct {v0, p0, p1, p2}, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CaptureSessionInfo$YuvThumbnailImageAvailableListener;-><init>(Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CaptureSessionInfo;II)V
 
-    .line 740
+    .line 754
     invoke-virtual {p0, v0}, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CaptureSessionInfo;->addYuvImageAvailableListener(Ljp/co/sony/mc/camera/device/state/DeviceStateContext$YuvImageAvailableListener;)V
 
     return-void
@@ -224,18 +224,18 @@
 .method public addYuvImageAvailableListener(Ljp/co/sony/mc/camera/device/state/DeviceStateContext$YuvImageAvailableListener;)V
     .locals 1
 
-    .line 681
+    .line 695
     iget-object v0, p0, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CaptureSessionInfo;->mYuvListenerLock:Ljava/lang/Object;
 
     monitor-enter v0
 
-    .line 682
+    .line 696
     :try_start_0
     iget-object p0, p0, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CaptureSessionInfo;->mYuvListenerQueue:Ljava/util/Deque;
 
     invoke-interface {p0, p1}, Ljava/util/Deque;->add(Ljava/lang/Object;)Z
 
-    .line 683
+    .line 697
     monitor-exit v0
 
     return-void
@@ -253,17 +253,17 @@
 .method backupJpegCaptureImageReader()V
     .locals 1
 
-    .line 503
+    .line 517
     iget-object v0, p0, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CaptureSessionInfo;->jpegCaptureImageReader:Landroid/media/ImageReader;
 
     if-eqz v0, :cond_0
 
-    .line 504
+    .line 518
     iput-object v0, p0, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CaptureSessionInfo;->pastJpegCaptureImageReader:Landroid/media/ImageReader;
 
     const/4 v0, 0x0
 
-    .line 505
+    .line 519
     iput-object v0, p0, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CaptureSessionInfo;->jpegCaptureImageReader:Landroid/media/ImageReader;
 
     :cond_0
@@ -273,17 +273,17 @@
 .method backupRawCaptureImageReader()V
     .locals 1
 
-    .line 535
+    .line 549
     iget-object v0, p0, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CaptureSessionInfo;->rawCaptureImageReader:Landroid/media/ImageReader;
 
     if-eqz v0, :cond_0
 
-    .line 536
+    .line 550
     iput-object v0, p0, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CaptureSessionInfo;->pastRawCaptureImageReader:Landroid/media/ImageReader;
 
     const/4 v0, 0x0
 
-    .line 537
+    .line 551
     iput-object v0, p0, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CaptureSessionInfo;->rawCaptureImageReader:Landroid/media/ImageReader;
 
     :cond_0
@@ -293,26 +293,26 @@
 .method backupYuvImageReader()V
     .locals 2
 
-    .line 569
+    .line 583
     iget-object v0, p0, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CaptureSessionInfo;->mYuvListenerLock:Ljava/lang/Object;
 
     monitor-enter v0
 
-    .line 570
+    .line 584
     :try_start_0
     iget-object v1, p0, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CaptureSessionInfo;->yuvImageReader:Landroid/media/ImageReader;
 
     if-eqz v1, :cond_0
 
-    .line 571
+    .line 585
     iput-object v1, p0, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CaptureSessionInfo;->pastYuvImageReader:Landroid/media/ImageReader;
 
     const/4 v1, 0x0
 
-    .line 572
+    .line 586
     iput-object v1, p0, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CaptureSessionInfo;->yuvImageReader:Landroid/media/ImageReader;
 
-    .line 574
+    .line 588
     :cond_0
     monitor-exit v0
 
@@ -331,24 +331,24 @@
 .method clearAll()V
     .locals 1
 
-    .line 755
+    .line 769
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CaptureSessionInfo;->releaseJpegCaptureImageReader()V
 
-    .line 756
+    .line 770
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CaptureSessionInfo;->releaseRawCaptureImageReader()V
 
-    .line 757
+    .line 771
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CaptureSessionInfo;->releaseYuvImageReader()V
 
     const/4 v0, 0x0
 
-    .line 758
+    .line 772
     iput-object v0, p0, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CaptureSessionInfo;->outputConfiguration:Landroid/hardware/camera2/params/OutputConfiguration;
 
-    .line 759
+    .line 773
     iput-object v0, p0, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CaptureSessionInfo;->pastCaptureSession:Landroid/hardware/camera2/CameraCaptureSession;
 
-    .line 760
+    .line 774
     iput-object v0, p0, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CaptureSessionInfo;->captureSession:Landroid/hardware/camera2/CameraCaptureSession;
 
     return-void
@@ -357,7 +357,7 @@
 .method createOutputConfiguration(Landroid/util/Size;)V
     .locals 2
 
-    .line 391
+    .line 402
     new-instance v0, Landroid/hardware/camera2/params/OutputConfiguration;
 
     const-class v1, Landroid/view/SurfaceHolder;
@@ -372,7 +372,7 @@
 .method createOutputConfiguration(Landroid/view/Surface;)V
     .locals 1
 
-    .line 382
+    .line 393
     new-instance v0, Landroid/hardware/camera2/params/OutputConfiguration;
 
     invoke-direct {v0, p1}, Landroid/hardware/camera2/params/OutputConfiguration;-><init>(Landroid/view/Surface;)V
@@ -385,12 +385,12 @@
 .method public dequeueYuvAvailableListener()Ljp/co/sony/mc/camera/device/state/DeviceStateContext$YuvImageAvailableListener;
     .locals 1
 
-    .line 714
+    .line 728
     iget-object v0, p0, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CaptureSessionInfo;->mYuvListenerLock:Ljava/lang/Object;
 
     monitor-enter v0
 
-    .line 715
+    .line 729
     :try_start_0
     iget-object p0, p0, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CaptureSessionInfo;->mYuvListenerQueue:Ljava/util/Deque;
 
@@ -400,7 +400,7 @@
 
     check-cast p0, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$YuvImageAvailableListener;
 
-    .line 716
+    .line 730
     monitor-exit v0
 
     return-object p0
@@ -418,21 +418,21 @@
 .method discardFreeBuffersForCaptureReader()V
     .locals 1
 
-    .line 767
+    .line 781
     iget-object v0, p0, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CaptureSessionInfo;->jpegCaptureImageReader:Landroid/media/ImageReader;
 
     if-eqz v0, :cond_0
 
-    .line 768
+    .line 782
     invoke-virtual {v0}, Landroid/media/ImageReader;->discardFreeBuffers()V
 
-    .line 770
+    .line 784
     :cond_0
     iget-object p0, p0, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CaptureSessionInfo;->rawCaptureImageReader:Landroid/media/ImageReader;
 
     if-eqz p0, :cond_1
 
-    .line 771
+    .line 785
     invoke-virtual {p0}, Landroid/media/ImageReader;->discardFreeBuffers()V
 
     :cond_1
@@ -442,21 +442,21 @@
 .method public getHistogramImageAvailableListener()Ljp/co/sony/mc/camera/device/state/DeviceStateContext$YuvImageAvailableListener;
     .locals 0
 
-    .line 748
+    .line 762
     iget-object p0, p0, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CaptureSessionInfo;->mYuvHistogramImageAvailableListener:Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CaptureSessionInfo$YuvHistogramImageAvailableListener;
 
     return-object p0
 .end method
 
-.method prepareCaptureImageReader(IIZ)V
+.method prepareCaptureImageReader(IIZLjava/lang/String;)V
     .locals 6
 
-    .line 422
+    .line 434
     iget-object v0, p0, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CaptureSessionInfo;->rawCaptureImageReader:Landroid/media/ImageReader;
 
     if-eqz v0, :cond_1
 
-    .line 423
+    .line 435
     invoke-virtual {v0}, Landroid/media/ImageReader;->getWidth()I
 
     move-result v0
@@ -465,18 +465,18 @@
 
     iget-object v0, p0, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CaptureSessionInfo;->rawCaptureImageReader:Landroid/media/ImageReader;
 
-    .line 424
+    .line 436
     invoke-virtual {v0}, Landroid/media/ImageReader;->getHeight()I
 
     move-result v0
 
     if-eq v0, p2, :cond_1
 
-    .line 425
+    .line 437
     :cond_0
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CaptureSessionInfo;->releaseRawCaptureImageReader()V
 
-    .line 428
+    .line 440
     :cond_1
     iget-object v0, p0, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CaptureSessionInfo;->this$0:Ljp/co/sony/mc/camera/device/state/DeviceStateContext;
 
@@ -498,15 +498,15 @@
 
     if-eqz p3, :cond_8
 
-    .line 430
+    .line 442
     iget-object p3, p0, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CaptureSessionInfo;->rawCaptureImageReader:Landroid/media/ImageReader;
 
     if-nez p3, :cond_8
 
-    .line 431
+    .line 443
     iget-object p3, p0, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CaptureSessionInfo;->this$0:Ljp/co/sony/mc/camera/device/state/DeviceStateContext;
 
-    .line 432
+    .line 444
     invoke-virtual {p3}, Ljp/co/sony/mc/camera/device/state/DeviceStateContext;->getCameraInfo()Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CameraDeviceInfo;
 
     move-result-object p3
@@ -519,7 +519,7 @@
 
     move-result-object p3
 
-    .line 435
+    .line 447
     invoke-interface {p3}, Ljava/util/List;->iterator()Ljava/util/Iterator;
 
     move-result-object v0
@@ -540,7 +540,7 @@
 
     check-cast v3, Landroid/graphics/Rect;
 
-    .line 436
+    .line 448
     invoke-virtual {v3}, Landroid/graphics/Rect;->width()I
 
     move-result v4
@@ -553,7 +553,7 @@
 
     move-result-object v4
 
-    .line 437
+    .line 449
     invoke-static {p1, p2}, Ljp/co/sony/mc/camera/configuration/parameters/AspectRatio;->getAspectRatio(II)Ljp/co/sony/mc/camera/configuration/parameters/AspectRatio;
 
     move-result-object v5
@@ -564,7 +564,7 @@
 
     goto :goto_1
 
-    .line 440
+    .line 452
     :cond_3
     invoke-virtual {v3}, Landroid/graphics/Rect;->width()I
 
@@ -584,7 +584,7 @@
     :cond_4
     if-nez v2, :cond_7
 
-    .line 447
+    .line 459
     invoke-interface {p3}, Ljava/util/List;->iterator()Ljava/util/Iterator;
 
     move-result-object p3
@@ -603,10 +603,10 @@
 
     check-cast v0, Landroid/graphics/Rect;
 
-    .line 448
+    .line 460
     sget-object v3, Ljp/co/sony/mc/camera/configuration/parameters/AspectRatio;->FOUR_TO_THREE:Ljp/co/sony/mc/camera/configuration/parameters/AspectRatio;
 
-    .line 449
+    .line 461
     invoke-virtual {v0}, Landroid/graphics/Rect;->width()I
 
     move-result v4
@@ -625,7 +625,7 @@
 
     goto :goto_3
 
-    .line 452
+    .line 464
     :cond_6
     invoke-virtual {v0}, Landroid/graphics/Rect;->width()I
 
@@ -645,7 +645,7 @@
     :cond_7
     if-eqz v2, :cond_8
 
-    .line 460
+    .line 472
     invoke-virtual {v2}, Landroid/graphics/Rect;->width()I
 
     move-result p3
@@ -658,14 +658,14 @@
 
     const/16 v3, 0x18
 
-    .line 459
+    .line 471
     invoke-static {p3, v0, v2, v3}, Landroid/media/ImageReader;->newInstance(IIII)Landroid/media/ImageReader;
 
     move-result-object p3
 
     iput-object p3, p0, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CaptureSessionInfo;->rawCaptureImageReader:Landroid/media/ImageReader;
 
-    .line 462
+    .line 474
     new-instance v0, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CaptureSessionInfo$RawCaptureImageAvailableListener;
 
     invoke-direct {v0, p0, v1}, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CaptureSessionInfo$RawCaptureImageAvailableListener;-><init>(Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CaptureSessionInfo;Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CaptureSessionInfo$RawCaptureImageAvailableListener-IA;)V
@@ -678,13 +678,13 @@
 
     invoke-virtual {p3, v0, v2}, Landroid/media/ImageReader;->setOnImageAvailableListener(Landroid/media/ImageReader$OnImageAvailableListener;Landroid/os/Handler;)V
 
-    .line 467
+    .line 479
     :cond_8
     iget-object p3, p0, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CaptureSessionInfo;->jpegCaptureImageReader:Landroid/media/ImageReader;
 
     if-eqz p3, :cond_a
 
-    .line 468
+    .line 480
     invoke-virtual {p3}, Landroid/media/ImageReader;->getWidth()I
 
     move-result p3
@@ -693,35 +693,50 @@
 
     iget-object p3, p0, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CaptureSessionInfo;->jpegCaptureImageReader:Landroid/media/ImageReader;
 
-    .line 469
+    .line 481
     invoke-virtual {p3}, Landroid/media/ImageReader;->getHeight()I
 
     move-result p3
 
     if-eq p3, p2, :cond_a
 
-    .line 470
+    .line 482
     :cond_9
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CaptureSessionInfo;->releaseJpegCaptureImageReader()V
 
-    .line 473
+    .line 485
     :cond_a
     iget-object p3, p0, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CaptureSessionInfo;->jpegCaptureImageReader:Landroid/media/ImageReader;
 
-    if-nez p3, :cond_b
+    if-nez p3, :cond_c
 
+    .line 486
+    const-string p3, "auto"
+
+    invoke-virtual {p3, p4}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result p3
+
+    if-eqz p3, :cond_b
+
+    const/16 p3, 0x1005
+
+    goto :goto_4
+
+    :cond_b
     const/16 p3, 0x100
 
-    const/16 v0, 0x3c
+    :goto_4
+    const/16 p4, 0x3c
 
-    .line 474
-    invoke-static {p1, p2, p3, v0}, Landroid/media/ImageReader;->newInstance(IIII)Landroid/media/ImageReader;
+    .line 488
+    invoke-static {p1, p2, p3, p4}, Landroid/media/ImageReader;->newInstance(IIII)Landroid/media/ImageReader;
 
     move-result-object p1
 
     iput-object p1, p0, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CaptureSessionInfo;->jpegCaptureImageReader:Landroid/media/ImageReader;
 
-    .line 476
+    .line 490
     new-instance p2, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CaptureSessionInfo$JpegCaptureImageAvailableListener;
 
     invoke-direct {p2, p0, v1}, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CaptureSessionInfo$JpegCaptureImageAvailableListener;-><init>(Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CaptureSessionInfo;Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CaptureSessionInfo$JpegCaptureImageAvailableListener-IA;)V
@@ -734,17 +749,17 @@
 
     invoke-virtual {p1, p2, p3}, Landroid/media/ImageReader;->setOnImageAvailableListener(Landroid/media/ImageReader$OnImageAvailableListener;Landroid/os/Handler;)V
 
-    .line 480
-    :cond_b
+    .line 494
+    :cond_c
     iget-object p1, p0, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CaptureSessionInfo;->this$0:Ljp/co/sony/mc/camera/device/state/DeviceStateContext;
 
     invoke-static {p1}, Ljp/co/sony/mc/camera/device/state/DeviceStateContext;->-$$Nest$fgetmSourceAdapterThread(Ljp/co/sony/mc/camera/device/state/DeviceStateContext;)Landroid/os/HandlerThread;
 
     move-result-object p1
 
-    if-nez p1, :cond_c
+    if-nez p1, :cond_d
 
-    .line 481
+    .line 495
     iget-object p1, p0, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CaptureSessionInfo;->this$0:Ljp/co/sony/mc/camera/device/state/DeviceStateContext;
 
     new-instance p2, Landroid/os/HandlerThread;
@@ -755,7 +770,7 @@
 
     invoke-static {p1, p2}, Ljp/co/sony/mc/camera/device/state/DeviceStateContext;->-$$Nest$fputmSourceAdapterThread(Ljp/co/sony/mc/camera/device/state/DeviceStateContext;Landroid/os/HandlerThread;)V
 
-    .line 482
+    .line 496
     iget-object p1, p0, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CaptureSessionInfo;->this$0:Ljp/co/sony/mc/camera/device/state/DeviceStateContext;
 
     invoke-static {p1}, Ljp/co/sony/mc/camera/device/state/DeviceStateContext;->-$$Nest$fgetmSourceAdapterThread(Ljp/co/sony/mc/camera/device/state/DeviceStateContext;)Landroid/os/HandlerThread;
@@ -764,7 +779,7 @@
 
     invoke-virtual {p1}, Landroid/os/HandlerThread;->start()V
 
-    .line 483
+    .line 497
     iget-object p1, p0, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CaptureSessionInfo;->this$0:Ljp/co/sony/mc/camera/device/state/DeviceStateContext;
 
     new-instance p2, Landroid/os/Handler;
@@ -783,14 +798,14 @@
 
     invoke-static {p1, p2}, Ljp/co/sony/mc/camera/device/state/DeviceStateContext;->-$$Nest$fputmSourceAdapterHandler(Ljp/co/sony/mc/camera/device/state/DeviceStateContext;Landroid/os/Handler;)V
 
-    :cond_c
+    :cond_d
     return-void
 .end method
 
 .method preparePreviewFrameListener()V
     .locals 2
 
-    .line 395
+    .line 406
     new-instance v0, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CaptureSessionInfo$PreviewFrameReceiver;
 
     const/4 v1, 0x0
@@ -799,7 +814,7 @@
 
     iput-object v0, p0, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CaptureSessionInfo;->previewFrameReceiver:Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CaptureSessionInfo$PreviewFrameReceiver;
 
-    .line 396
+    .line 407
     new-instance v0, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CaptureSessionInfo$PreviewFrameProviderImpl;
 
     invoke-direct {v0, p0, v1}, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CaptureSessionInfo$PreviewFrameProviderImpl;-><init>(Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CaptureSessionInfo;Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CaptureSessionInfo$PreviewFrameProviderImpl-IA;)V
@@ -812,12 +827,12 @@
 .method prepareYuvImageReader(II)V
     .locals 2
 
-    .line 643
+    .line 657
     iget-object v0, p0, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CaptureSessionInfo;->yuvImageReader:Landroid/media/ImageReader;
 
     if-eqz v0, :cond_1
 
-    .line 644
+    .line 658
     invoke-virtual {v0}, Landroid/media/ImageReader;->getHeight()I
 
     move-result v0
@@ -826,25 +841,29 @@
 
     iget-object v0, p0, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CaptureSessionInfo;->yuvImageReader:Landroid/media/ImageReader;
 
-    .line 645
+    .line 659
     invoke-virtual {v0}, Landroid/media/ImageReader;->getWidth()I
 
     move-result v0
 
     if-ne v0, p1, :cond_0
 
-    .line 646
-    const-string p0, "mCaptureImageReader has bean already created"
+    const/4 p0, 0x1
 
-    filled-new-array {p0}, [Ljava/lang/String;
+    .line 660
+    new-array p0, p0, [Ljava/lang/String;
 
-    move-result-object p0
+    const/4 p1, 0x0
+
+    const-string p2, "mCaptureImageReader has bean already created"
+
+    aput-object p2, p0, p1
 
     invoke-static {p0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
     return-void
 
-    .line 649
+    .line 663
     :cond_0
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CaptureSessionInfo;->releaseYuvImageReader()V
 
@@ -853,14 +872,14 @@
 
     const/4 v1, 0x2
 
-    .line 652
+    .line 666
     invoke-static {p1, p2, v0, v1}, Landroid/media/ImageReader;->newInstance(IIII)Landroid/media/ImageReader;
 
     move-result-object p1
 
     iput-object p1, p0, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CaptureSessionInfo;->yuvImageReader:Landroid/media/ImageReader;
 
-    .line 655
+    .line 669
     new-instance p2, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CaptureSessionInfo$OnYuvImageAvailableListener;
 
     const/4 v0, 0x0
@@ -881,17 +900,17 @@
 .method releaseBackupJpegCaptureImageReader()V
     .locals 1
 
-    .line 513
+    .line 527
     iget-object v0, p0, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CaptureSessionInfo;->pastJpegCaptureImageReader:Landroid/media/ImageReader;
 
     if-eqz v0, :cond_0
 
-    .line 514
+    .line 528
     invoke-virtual {v0}, Landroid/media/ImageReader;->close()V
 
     const/4 v0, 0x0
 
-    .line 515
+    .line 529
     iput-object v0, p0, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CaptureSessionInfo;->pastJpegCaptureImageReader:Landroid/media/ImageReader;
 
     :cond_0
@@ -901,17 +920,17 @@
 .method releaseBackupRawCaptureImageReader()V
     .locals 1
 
-    .line 545
+    .line 559
     iget-object v0, p0, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CaptureSessionInfo;->pastRawCaptureImageReader:Landroid/media/ImageReader;
 
     if-eqz v0, :cond_0
 
-    .line 546
+    .line 560
     invoke-virtual {v0}, Landroid/media/ImageReader;->close()V
 
     const/4 v0, 0x0
 
-    .line 547
+    .line 561
     iput-object v0, p0, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CaptureSessionInfo;->pastRawCaptureImageReader:Landroid/media/ImageReader;
 
     :cond_0
@@ -921,26 +940,26 @@
 .method releaseBackupYuvImageReader()V
     .locals 2
 
-    .line 581
+    .line 595
     iget-object v0, p0, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CaptureSessionInfo;->mYuvListenerLock:Ljava/lang/Object;
 
     monitor-enter v0
 
-    .line 582
+    .line 596
     :try_start_0
     iget-object v1, p0, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CaptureSessionInfo;->pastYuvImageReader:Landroid/media/ImageReader;
 
     if-eqz v1, :cond_0
 
-    .line 583
+    .line 597
     invoke-virtual {v1}, Landroid/media/ImageReader;->close()V
 
     const/4 v1, 0x0
 
-    .line 584
+    .line 598
     iput-object v1, p0, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CaptureSessionInfo;->pastYuvImageReader:Landroid/media/ImageReader;
 
-    .line 586
+    .line 600
     :cond_0
     monitor-exit v0
 
@@ -961,31 +980,31 @@
 
     monitor-enter p0
 
-    .line 596
+    .line 610
     :try_start_0
     invoke-direct {p0}, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CaptureSessionInfo;->quitSourceAdapterThread()V
 
-    .line 597
+    .line 611
     iget-object v0, p0, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CaptureSessionInfo;->jpegCaptureImageReader:Landroid/media/ImageReader;
 
     if-eqz v0, :cond_0
 
     const/4 v1, 0x0
 
-    .line 598
+    .line 612
     invoke-virtual {v0, v1, v1}, Landroid/media/ImageReader;->setOnImageAvailableListener(Landroid/media/ImageReader$OnImageAvailableListener;Landroid/os/Handler;)V
 
-    .line 599
+    .line 613
     iget-object v0, p0, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CaptureSessionInfo;->jpegCaptureImageReader:Landroid/media/ImageReader;
 
     invoke-virtual {v0}, Landroid/media/ImageReader;->close()V
 
-    .line 600
+    .line 614
     iput-object v1, p0, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CaptureSessionInfo;->jpegCaptureImageReader:Landroid/media/ImageReader;
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 602
+    .line 616
     :cond_0
     monitor-exit p0
 
@@ -1002,35 +1021,35 @@
 .method releasePreviewFrameListener()V
     .locals 3
 
-    .line 400
+    .line 411
     iget-object v0, p0, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CaptureSessionInfo;->mPreviewFrameProviderLock:Ljava/lang/Object;
 
     monitor-enter v0
 
-    .line 401
+    .line 412
     :try_start_0
     iget-object v1, p0, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CaptureSessionInfo;->previewFrameProvider:Ljp/co/sony/mc/camera/device/PreviewFrameProvider;
 
     if-eqz v1, :cond_1
 
-    .line 402
+    .line 413
     iget-object v1, p0, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CaptureSessionInfo;->previewFrameReceiver:Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CaptureSessionInfo$PreviewFrameReceiver;
 
     const/4 v2, 0x0
 
     if-eqz v1, :cond_0
 
-    .line 403
+    .line 414
     invoke-static {v1, v2}, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CaptureSessionInfo$PreviewFrameReceiver;->-$$Nest$mregisterRequest(Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CaptureSessionInfo$PreviewFrameReceiver;Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CaptureSessionInfo$PreviewFrameRequest;)V
 
-    .line 405
+    .line 416
     :cond_0
     iput-object v2, p0, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CaptureSessionInfo;->previewFrameReceiver:Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CaptureSessionInfo$PreviewFrameReceiver;
 
-    .line 406
+    .line 417
     iput-object v2, p0, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CaptureSessionInfo;->previewFrameProvider:Ljp/co/sony/mc/camera/device/PreviewFrameProvider;
 
-    .line 408
+    .line 419
     :cond_1
     monitor-exit v0
 
@@ -1051,31 +1070,31 @@
 
     monitor-enter p0
 
-    .line 611
+    .line 625
     :try_start_0
     invoke-direct {p0}, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CaptureSessionInfo;->quitSourceAdapterThread()V
 
-    .line 612
+    .line 626
     iget-object v0, p0, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CaptureSessionInfo;->rawCaptureImageReader:Landroid/media/ImageReader;
 
     if-eqz v0, :cond_0
 
     const/4 v1, 0x0
 
-    .line 613
+    .line 627
     invoke-virtual {v0, v1, v1}, Landroid/media/ImageReader;->setOnImageAvailableListener(Landroid/media/ImageReader$OnImageAvailableListener;Landroid/os/Handler;)V
 
-    .line 614
+    .line 628
     iget-object v0, p0, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CaptureSessionInfo;->rawCaptureImageReader:Landroid/media/ImageReader;
 
     invoke-virtual {v0}, Landroid/media/ImageReader;->close()V
 
-    .line 615
+    .line 629
     iput-object v1, p0, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CaptureSessionInfo;->rawCaptureImageReader:Landroid/media/ImageReader;
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 617
+    .line 631
     :cond_0
     monitor-exit p0
 
@@ -1092,12 +1111,12 @@
 .method public releaseYuvHistogramImageAvailableListener()V
     .locals 4
 
-    .line 703
+    .line 717
     iget-object v0, p0, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CaptureSessionInfo;->mYuvListenerLock:Ljava/lang/Object;
 
     monitor-enter v0
 
-    .line 704
+    .line 718
     :try_start_0
     iget-object v1, p0, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CaptureSessionInfo;->mYuvListenerQueue:Ljava/util/Deque;
 
@@ -1119,19 +1138,19 @@
 
     check-cast v2, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$YuvImageAvailableListener;
 
-    .line 705
+    .line 719
     instance-of v3, v2, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CaptureSessionInfo$YuvHistogramImageAvailableListener;
 
     if-eqz v3, :cond_0
 
-    .line 706
+    .line 720
     iget-object v3, p0, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CaptureSessionInfo;->mYuvListenerQueue:Ljava/util/Deque;
 
     invoke-interface {v3, v2}, Ljava/util/Deque;->remove(Ljava/lang/Object;)Z
 
     goto :goto_0
 
-    .line 709
+    .line 723
     :cond_1
     monitor-exit v0
 
@@ -1150,18 +1169,18 @@
 .method public releaseYuvImageAvailableListener()V
     .locals 1
 
-    .line 687
+    .line 701
     iget-object v0, p0, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CaptureSessionInfo;->mYuvListenerLock:Ljava/lang/Object;
 
     monitor-enter v0
 
-    .line 688
+    .line 702
     :try_start_0
     iget-object p0, p0, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CaptureSessionInfo;->mYuvListenerQueue:Ljava/util/Deque;
 
     invoke-interface {p0}, Ljava/util/Deque;->clear()V
 
-    .line 689
+    .line 703
     monitor-exit v0
 
     return-void
@@ -1179,34 +1198,34 @@
 .method releaseYuvImageReader()V
     .locals 3
 
-    .line 727
+    .line 741
     iget-object v0, p0, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CaptureSessionInfo;->mYuvListenerLock:Ljava/lang/Object;
 
     monitor-enter v0
 
-    .line 728
+    .line 742
     :try_start_0
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CaptureSessionInfo;->releaseYuvImageAvailableListener()V
 
-    .line 729
+    .line 743
     iget-object v1, p0, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CaptureSessionInfo;->yuvImageReader:Landroid/media/ImageReader;
 
     if-eqz v1, :cond_0
 
     const/4 v2, 0x0
 
-    .line 730
+    .line 744
     invoke-virtual {v1, v2, v2}, Landroid/media/ImageReader;->setOnImageAvailableListener(Landroid/media/ImageReader$OnImageAvailableListener;Landroid/os/Handler;)V
 
-    .line 731
+    .line 745
     iget-object v1, p0, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CaptureSessionInfo;->yuvImageReader:Landroid/media/ImageReader;
 
     invoke-virtual {v1}, Landroid/media/ImageReader;->close()V
 
-    .line 732
+    .line 746
     iput-object v2, p0, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CaptureSessionInfo;->yuvImageReader:Landroid/media/ImageReader;
 
-    .line 734
+    .line 748
     :cond_0
     monitor-exit v0
 
@@ -1225,12 +1244,12 @@
 .method public releaseYuvThumbnailImageAvailableListener()V
     .locals 4
 
-    .line 693
+    .line 707
     iget-object v0, p0, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CaptureSessionInfo;->mYuvListenerLock:Ljava/lang/Object;
 
     monitor-enter v0
 
-    .line 694
+    .line 708
     :try_start_0
     iget-object v1, p0, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CaptureSessionInfo;->mYuvListenerQueue:Ljava/util/Deque;
 
@@ -1252,19 +1271,19 @@
 
     check-cast v2, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$YuvImageAvailableListener;
 
-    .line 695
+    .line 709
     instance-of v3, v2, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CaptureSessionInfo$YuvThumbnailImageAvailableListener;
 
     if-eqz v3, :cond_0
 
-    .line 696
+    .line 710
     iget-object v3, p0, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CaptureSessionInfo;->mYuvListenerQueue:Ljava/util/Deque;
 
     invoke-interface {v3, v2}, Ljava/util/Deque;->remove(Ljava/lang/Object;)Z
 
     goto :goto_0
 
-    .line 699
+    .line 713
     :cond_1
     monitor-exit v0
 
@@ -1283,14 +1302,14 @@
 .method resetCaptureImageAvailableListener()V
     .locals 4
 
-    .line 779
+    .line 793
     iget-object v0, p0, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CaptureSessionInfo;->jpegCaptureImageReader:Landroid/media/ImageReader;
 
     const/4 v1, 0x0
 
     if-eqz v0, :cond_0
 
-    .line 780
+    .line 794
     new-instance v2, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CaptureSessionInfo$JpegCaptureImageAvailableListener;
 
     invoke-direct {v2, p0, v1}, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CaptureSessionInfo$JpegCaptureImageAvailableListener;-><init>(Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CaptureSessionInfo;Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CaptureSessionInfo$JpegCaptureImageAvailableListener-IA;)V
@@ -1303,13 +1322,13 @@
 
     invoke-virtual {v0, v2, v3}, Landroid/media/ImageReader;->setOnImageAvailableListener(Landroid/media/ImageReader$OnImageAvailableListener;Landroid/os/Handler;)V
 
-    .line 783
+    .line 797
     :cond_0
     iget-object v0, p0, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CaptureSessionInfo;->rawCaptureImageReader:Landroid/media/ImageReader;
 
     if-eqz v0, :cond_1
 
-    .line 784
+    .line 798
     new-instance v2, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CaptureSessionInfo$RawCaptureImageAvailableListener;
 
     invoke-direct {v2, p0, v1}, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CaptureSessionInfo$RawCaptureImageAvailableListener;-><init>(Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CaptureSessionInfo;Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CaptureSessionInfo$RawCaptureImageAvailableListener-IA;)V
@@ -1329,28 +1348,28 @@
 .method stopJpegCaptureImageReaderListening()V
     .locals 2
 
-    .line 491
+    .line 505
     invoke-direct {p0}, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CaptureSessionInfo;->quitSourceAdapterThread()V
 
-    .line 492
+    .line 506
     iget-object v0, p0, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CaptureSessionInfo;->jpegCaptureImageReader:Landroid/media/ImageReader;
 
     const/4 v1, 0x0
 
     if-eqz v0, :cond_0
 
-    .line 493
+    .line 507
     invoke-virtual {v0, v1, v1}, Landroid/media/ImageReader;->setOnImageAvailableListener(Landroid/media/ImageReader$OnImageAvailableListener;Landroid/os/Handler;)V
 
     goto :goto_0
 
-    .line 494
+    .line 508
     :cond_0
     iget-object p0, p0, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CaptureSessionInfo;->pastJpegCaptureImageReader:Landroid/media/ImageReader;
 
     if-eqz p0, :cond_1
 
-    .line 495
+    .line 509
     invoke-virtual {p0, v1, v1}, Landroid/media/ImageReader;->setOnImageAvailableListener(Landroid/media/ImageReader$OnImageAvailableListener;Landroid/os/Handler;)V
 
     :cond_1
@@ -1361,28 +1380,28 @@
 .method stopRawCaptureImageReaderListening()V
     .locals 2
 
-    .line 523
+    .line 537
     invoke-direct {p0}, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CaptureSessionInfo;->quitSourceAdapterThread()V
 
-    .line 524
+    .line 538
     iget-object v0, p0, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CaptureSessionInfo;->rawCaptureImageReader:Landroid/media/ImageReader;
 
     const/4 v1, 0x0
 
     if-eqz v0, :cond_0
 
-    .line 525
+    .line 539
     invoke-virtual {v0, v1, v1}, Landroid/media/ImageReader;->setOnImageAvailableListener(Landroid/media/ImageReader$OnImageAvailableListener;Landroid/os/Handler;)V
 
     goto :goto_0
 
-    .line 526
+    .line 540
     :cond_0
     iget-object p0, p0, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CaptureSessionInfo;->pastRawCaptureImageReader:Landroid/media/ImageReader;
 
     if-eqz p0, :cond_1
 
-    .line 527
+    .line 541
     invoke-virtual {p0, v1, v1}, Landroid/media/ImageReader;->setOnImageAvailableListener(Landroid/media/ImageReader$OnImageAvailableListener;Landroid/os/Handler;)V
 
     :cond_1
@@ -1393,37 +1412,37 @@
 .method stopYuvImageReaderListening()V
     .locals 3
 
-    .line 555
+    .line 569
     iget-object v0, p0, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CaptureSessionInfo;->mYuvListenerLock:Ljava/lang/Object;
 
     monitor-enter v0
 
-    .line 556
+    .line 570
     :try_start_0
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CaptureSessionInfo;->releaseYuvImageAvailableListener()V
 
-    .line 557
+    .line 571
     iget-object v1, p0, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CaptureSessionInfo;->yuvImageReader:Landroid/media/ImageReader;
 
     const/4 v2, 0x0
 
     if-eqz v1, :cond_0
 
-    .line 558
+    .line 572
     invoke-virtual {v1, v2, v2}, Landroid/media/ImageReader;->setOnImageAvailableListener(Landroid/media/ImageReader$OnImageAvailableListener;Landroid/os/Handler;)V
 
     goto :goto_0
 
-    .line 559
+    .line 573
     :cond_0
     iget-object p0, p0, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CaptureSessionInfo;->pastYuvImageReader:Landroid/media/ImageReader;
 
     if-eqz p0, :cond_1
 
-    .line 560
+    .line 574
     invoke-virtual {p0, v2, v2}, Landroid/media/ImageReader;->setOnImageAvailableListener(Landroid/media/ImageReader$OnImageAvailableListener;Landroid/os/Handler;)V
 
-    .line 562
+    .line 576
     :cond_1
     :goto_0
     monitor-exit v0

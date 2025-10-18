@@ -6,7 +6,7 @@
 # annotations
 .annotation runtime Lkotlin/Metadata;
     d1 = {
-        "\u0000N\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000e\n\u0000\n\u0002\u0010 \n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0007\n\u0002\u0008\u0004\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u001a\n\u0002\u0010\u000b\n\u0000\n\u0002\u0010\u0000\n\u0000\n\u0002\u0010\u0008\n\u0000\u0008\u0007\u0018\u00002\u00020\u0001B\u009c\u0001\u0008\u0000\u0012\u0008\u0008\u0002\u0010\u0002\u001a\u00020\u0003\u0012\u000c\u0010\u0004\u001a\u0008\u0012\u0004\u0012\u00020\u00060\u0005\u0012\u0006\u0010\u0007\u001a\u00020\u0008\u0012\n\u0008\u0002\u0010\t\u001a\u0004\u0018\u00010\n\u0012\u0008\u0008\u0002\u0010\u000b\u001a\u00020\u000c\u0012\n\u0008\u0002\u0010\r\u001a\u0004\u0018\u00010\n\u0012\u0008\u0008\u0002\u0010\u000e\u001a\u00020\u000c\u0012\u0008\u0008\u0002\u0010\u000f\u001a\u00020\u000c\u0012\u0008\u0008\u0002\u0010\u0010\u001a\u00020\u0011\u0012\u0008\u0008\u0002\u0010\u0012\u001a\u00020\u0013\u0012\u0008\u0008\u0002\u0010\u0014\u001a\u00020\u000c\u0012\u0008\u0008\u0002\u0010\u0015\u001a\u00020\u000c\u0012\u0008\u0008\u0002\u0010\u0016\u001a\u00020\u000c\u0012\u0008\u0008\u0002\u0010\u0017\u001a\u00020\u000c\u00f8\u0001\u0000\u00a2\u0006\u0002\u0010\u0018J\u0013\u0010-\u001a\u00020.2\u0008\u0010/\u001a\u0004\u0018\u000100H\u0096\u0002J\u0008\u00101\u001a\u000202H\u0016R\u0013\u0010\t\u001a\u0004\u0018\u00010\n\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\u0019\u0010\u001aR\u0011\u0010\u000b\u001a\u00020\u000c\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\u001b\u0010\u001cR\u0011\u0010\u0002\u001a\u00020\u0003\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\u001d\u0010\u001eR\u0017\u0010\u0004\u001a\u0008\u0012\u0004\u0012\u00020\u00060\u0005\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\u001f\u0010 R\u001c\u0010\u0007\u001a\u00020\u0008\u00f8\u0001\u0000\u00f8\u0001\u0001\u00f8\u0001\u0002\u00a2\u0006\n\n\u0002\u0010#\u001a\u0004\u0008!\u0010\"R\u0013\u0010\r\u001a\u0004\u0018\u00010\n\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008$\u0010\u001aR\u0011\u0010\u000e\u001a\u00020\u000c\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008%\u0010\u001cR\u001c\u0010\u0010\u001a\u00020\u0011\u00f8\u0001\u0000\u00f8\u0001\u0001\u00f8\u0001\u0002\u00a2\u0006\n\n\u0002\u0010#\u001a\u0004\u0008&\u0010\"R\u001c\u0010\u0012\u001a\u00020\u0013\u00f8\u0001\u0000\u00f8\u0001\u0001\u00f8\u0001\u0002\u00a2\u0006\n\n\u0002\u0010#\u001a\u0004\u0008\'\u0010\"R\u0011\u0010\u0014\u001a\u00020\u000c\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008(\u0010\u001cR\u0011\u0010\u000f\u001a\u00020\u000c\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008)\u0010\u001cR\u0011\u0010\u0016\u001a\u00020\u000c\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008*\u0010\u001cR\u0011\u0010\u0017\u001a\u00020\u000c\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008+\u0010\u001cR\u0011\u0010\u0015\u001a\u00020\u000c\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008,\u0010\u001c\u0082\u0002\u000f\n\u0002\u0008\u0019\n\u0005\u0008\u00a1\u001e0\u0001\n\u0002\u0008!\u00a8\u00063"
+        "\u0000N\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000e\n\u0000\n\u0002\u0010 \n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0007\n\u0002\u0008\u0004\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u001a\n\u0002\u0010\u000b\n\u0000\n\u0002\u0010\u0000\n\u0000\n\u0002\u0010\u0008\n\u0000\u0008\u0007\u0018\u00002\u00020\u0001B\u0099\u0001\u0008\u0000\u0012\u0008\u0008\u0002\u0010\u0002\u001a\u00020\u0003\u0012\u000c\u0010\u0004\u001a\u0008\u0012\u0004\u0012\u00020\u00060\u0005\u0012\u0006\u0010\u0007\u001a\u00020\u0008\u0012\n\u0008\u0002\u0010\t\u001a\u0004\u0018\u00010\n\u0012\u0008\u0008\u0002\u0010\u000b\u001a\u00020\u000c\u0012\n\u0008\u0002\u0010\r\u001a\u0004\u0018\u00010\n\u0012\u0008\u0008\u0002\u0010\u000e\u001a\u00020\u000c\u0012\u0008\u0008\u0002\u0010\u000f\u001a\u00020\u000c\u0012\u0008\u0008\u0002\u0010\u0010\u001a\u00020\u0011\u0012\u0008\u0008\u0002\u0010\u0012\u001a\u00020\u0013\u0012\u0008\u0008\u0002\u0010\u0014\u001a\u00020\u000c\u0012\u0008\u0008\u0002\u0010\u0015\u001a\u00020\u000c\u0012\u0008\u0008\u0002\u0010\u0016\u001a\u00020\u000c\u0012\u0008\u0008\u0002\u0010\u0017\u001a\u00020\u000c\u00a2\u0006\u0002\u0010\u0018J\u0013\u0010-\u001a\u00020.2\u0008\u0010/\u001a\u0004\u0018\u000100H\u0096\u0002J\u0008\u00101\u001a\u000202H\u0016R\u0013\u0010\t\u001a\u0004\u0018\u00010\n\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\u0019\u0010\u001aR\u0011\u0010\u000b\u001a\u00020\u000c\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\u001b\u0010\u001cR\u0011\u0010\u0002\u001a\u00020\u0003\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\u001d\u0010\u001eR\u0017\u0010\u0004\u001a\u0008\u0012\u0004\u0012\u00020\u00060\u0005\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\u001f\u0010 R\u0019\u0010\u0007\u001a\u00020\u0008\u00f8\u0001\u0000\u00f8\u0001\u0001\u00a2\u0006\n\n\u0002\u0010#\u001a\u0004\u0008!\u0010\"R\u0013\u0010\r\u001a\u0004\u0018\u00010\n\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008$\u0010\u001aR\u0011\u0010\u000e\u001a\u00020\u000c\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008%\u0010\u001cR\u0019\u0010\u0010\u001a\u00020\u0011\u00f8\u0001\u0000\u00f8\u0001\u0001\u00a2\u0006\n\n\u0002\u0010#\u001a\u0004\u0008&\u0010\"R\u0019\u0010\u0012\u001a\u00020\u0013\u00f8\u0001\u0000\u00f8\u0001\u0001\u00a2\u0006\n\n\u0002\u0010#\u001a\u0004\u0008\'\u0010\"R\u0011\u0010\u0014\u001a\u00020\u000c\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008(\u0010\u001cR\u0011\u0010\u000f\u001a\u00020\u000c\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008)\u0010\u001cR\u0011\u0010\u0016\u001a\u00020\u000c\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008*\u0010\u001cR\u0011\u0010\u0017\u001a\u00020\u000c\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008+\u0010\u001cR\u0011\u0010\u0015\u001a\u00020\u000c\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008,\u0010\u001c\u0082\u0002\u000b\n\u0005\u0008\u00a1\u001e0\u0001\n\u0002\u0008!\u00a8\u00063"
     }
     d2 = {
         "Landroidx/compose/ui/graphics/vector/VectorPath;",
@@ -138,59 +138,51 @@
         }
     .end annotation
 
-    const-string v0, "name"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string v0, "pathData"
-
-    invoke-static {p2, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
     const/4 v0, 0x0
 
-    .line 633
+    .line 644
     invoke-direct {p0, v0}, Landroidx/compose/ui/graphics/vector/VectorNode;-><init>(Lkotlin/jvm/internal/DefaultConstructorMarker;)V
 
-    .line 564
+    .line 575
     iput-object p1, p0, Landroidx/compose/ui/graphics/vector/VectorPath;->name:Ljava/lang/String;
 
-    .line 569
+    .line 580
     iput-object p2, p0, Landroidx/compose/ui/graphics/vector/VectorPath;->pathData:Ljava/util/List;
 
-    .line 574
+    .line 585
     iput p3, p0, Landroidx/compose/ui/graphics/vector/VectorPath;->pathFillType:I
 
-    .line 579
+    .line 590
     iput-object p4, p0, Landroidx/compose/ui/graphics/vector/VectorPath;->fill:Landroidx/compose/ui/graphics/Brush;
 
-    .line 584
+    .line 595
     iput p5, p0, Landroidx/compose/ui/graphics/vector/VectorPath;->fillAlpha:F
 
-    .line 589
+    .line 600
     iput-object p6, p0, Landroidx/compose/ui/graphics/vector/VectorPath;->stroke:Landroidx/compose/ui/graphics/Brush;
 
-    .line 594
+    .line 605
     iput p7, p0, Landroidx/compose/ui/graphics/vector/VectorPath;->strokeAlpha:F
 
-    .line 599
+    .line 610
     iput p8, p0, Landroidx/compose/ui/graphics/vector/VectorPath;->strokeLineWidth:F
 
-    .line 604
+    .line 615
     iput p9, p0, Landroidx/compose/ui/graphics/vector/VectorPath;->strokeLineCap:I
 
-    .line 609
+    .line 620
     iput p10, p0, Landroidx/compose/ui/graphics/vector/VectorPath;->strokeLineJoin:I
 
-    .line 614
+    .line 625
     iput p11, p0, Landroidx/compose/ui/graphics/vector/VectorPath;->strokeLineMiter:F
 
-    .line 620
+    .line 631
     iput p12, p0, Landroidx/compose/ui/graphics/vector/VectorPath;->trimPathStart:F
 
-    .line 626
+    .line 637
     iput p13, p0, Landroidx/compose/ui/graphics/vector/VectorPath;->trimPathEnd:F
 
-    .line 632
+    .line 643
     iput p14, p0, Landroidx/compose/ui/graphics/vector/VectorPath;->trimPathOffset:F
 
     return-void
@@ -205,7 +197,7 @@
 
     if-eqz v1, :cond_0
 
-    .line 564
+    .line 575
     const-string v1, ""
 
     move-object v3, v1
@@ -286,7 +278,7 @@
 
     if-eqz v1, :cond_6
 
-    .line 604
+    .line 615
     invoke-static {}, Landroidx/compose/ui/graphics/vector/VectorKt;->getDefaultStrokeLineCap()I
 
     move-result v1
@@ -303,7 +295,7 @@
 
     if-eqz v1, :cond_7
 
-    .line 609
+    .line 620
     invoke-static {}, Landroidx/compose/ui/graphics/vector/VectorKt;->getDefaultStrokeLineJoin()I
 
     move-result v1
@@ -374,7 +366,7 @@
 
     move/from16 v5, p3
 
-    .line 560
+    .line 571
     invoke-direct/range {v2 .. v17}, Landroidx/compose/ui/graphics/vector/VectorPath;-><init>(Ljava/lang/String;Ljava/util/List;ILandroidx/compose/ui/graphics/Brush;FLandroidx/compose/ui/graphics/Brush;FFIIFFFFLkotlin/jvm/internal/DefaultConstructorMarker;)V
 
     return-void
@@ -404,7 +396,7 @@
 
     if-eqz p1, :cond_9
 
-    .line 637
+    .line 648
     invoke-virtual {p0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     move-result-object v2
@@ -417,11 +409,11 @@
 
     goto/16 :goto_0
 
-    .line 639
+    .line 650
     :cond_1
     check-cast p1, Landroidx/compose/ui/graphics/vector/VectorPath;
 
-    .line 641
+    .line 652
     iget-object v2, p0, Landroidx/compose/ui/graphics/vector/VectorPath;->name:Ljava/lang/String;
 
     iget-object v3, p1, Landroidx/compose/ui/graphics/vector/VectorPath;->name:Ljava/lang/String;
@@ -434,7 +426,7 @@
 
     return v1
 
-    .line 642
+    .line 653
     :cond_2
     iget-object v2, p0, Landroidx/compose/ui/graphics/vector/VectorPath;->fill:Landroidx/compose/ui/graphics/Brush;
 
@@ -448,7 +440,7 @@
 
     return v1
 
-    .line 643
+    .line 654
     :cond_3
     iget v2, p0, Landroidx/compose/ui/graphics/vector/VectorPath;->fillAlpha:F
 
@@ -458,7 +450,7 @@
 
     if-nez v2, :cond_9
 
-    .line 644
+    .line 655
     iget-object v2, p0, Landroidx/compose/ui/graphics/vector/VectorPath;->stroke:Landroidx/compose/ui/graphics/Brush;
 
     iget-object v3, p1, Landroidx/compose/ui/graphics/vector/VectorPath;->stroke:Landroidx/compose/ui/graphics/Brush;
@@ -471,7 +463,7 @@
 
     return v1
 
-    .line 645
+    .line 656
     :cond_4
     iget v2, p0, Landroidx/compose/ui/graphics/vector/VectorPath;->strokeAlpha:F
 
@@ -481,7 +473,7 @@
 
     if-nez v2, :cond_9
 
-    .line 646
+    .line 657
     iget v2, p0, Landroidx/compose/ui/graphics/vector/VectorPath;->strokeLineWidth:F
 
     iget v3, p1, Landroidx/compose/ui/graphics/vector/VectorPath;->strokeLineWidth:F
@@ -490,7 +482,7 @@
 
     if-nez v2, :cond_9
 
-    .line 647
+    .line 658
     iget v2, p0, Landroidx/compose/ui/graphics/vector/VectorPath;->strokeLineCap:I
 
     iget v3, p1, Landroidx/compose/ui/graphics/vector/VectorPath;->strokeLineCap:I
@@ -503,7 +495,7 @@
 
     return v1
 
-    .line 648
+    .line 659
     :cond_5
     iget v2, p0, Landroidx/compose/ui/graphics/vector/VectorPath;->strokeLineJoin:I
 
@@ -517,7 +509,7 @@
 
     return v1
 
-    .line 649
+    .line 660
     :cond_6
     iget v2, p0, Landroidx/compose/ui/graphics/vector/VectorPath;->strokeLineMiter:F
 
@@ -527,7 +519,7 @@
 
     if-nez v2, :cond_9
 
-    .line 650
+    .line 661
     iget v2, p0, Landroidx/compose/ui/graphics/vector/VectorPath;->trimPathStart:F
 
     iget v3, p1, Landroidx/compose/ui/graphics/vector/VectorPath;->trimPathStart:F
@@ -536,7 +528,7 @@
 
     if-nez v2, :cond_9
 
-    .line 651
+    .line 662
     iget v2, p0, Landroidx/compose/ui/graphics/vector/VectorPath;->trimPathEnd:F
 
     iget v3, p1, Landroidx/compose/ui/graphics/vector/VectorPath;->trimPathEnd:F
@@ -545,7 +537,7 @@
 
     if-nez v2, :cond_9
 
-    .line 652
+    .line 663
     iget v2, p0, Landroidx/compose/ui/graphics/vector/VectorPath;->trimPathOffset:F
 
     iget v3, p1, Landroidx/compose/ui/graphics/vector/VectorPath;->trimPathOffset:F
@@ -554,7 +546,7 @@
 
     if-nez v2, :cond_9
 
-    .line 653
+    .line 664
     iget v2, p0, Landroidx/compose/ui/graphics/vector/VectorPath;->pathFillType:I
 
     iget v3, p1, Landroidx/compose/ui/graphics/vector/VectorPath;->pathFillType:I
@@ -567,7 +559,7 @@
 
     return v1
 
-    .line 654
+    .line 665
     :cond_7
     iget-object p0, p0, Landroidx/compose/ui/graphics/vector/VectorPath;->pathData:Ljava/util/List;
 
@@ -592,7 +584,7 @@
 .method public final getFill()Landroidx/compose/ui/graphics/Brush;
     .locals 0
 
-    .line 579
+    .line 590
     iget-object p0, p0, Landroidx/compose/ui/graphics/vector/VectorPath;->fill:Landroidx/compose/ui/graphics/Brush;
 
     return-object p0
@@ -601,7 +593,7 @@
 .method public final getFillAlpha()F
     .locals 0
 
-    .line 584
+    .line 595
     iget p0, p0, Landroidx/compose/ui/graphics/vector/VectorPath;->fillAlpha:F
 
     return p0
@@ -610,7 +602,7 @@
 .method public final getName()Ljava/lang/String;
     .locals 0
 
-    .line 564
+    .line 575
     iget-object p0, p0, Landroidx/compose/ui/graphics/vector/VectorPath;->name:Ljava/lang/String;
 
     return-object p0
@@ -627,7 +619,7 @@
         }
     .end annotation
 
-    .line 569
+    .line 580
     iget-object p0, p0, Landroidx/compose/ui/graphics/vector/VectorPath;->pathData:Ljava/util/List;
 
     return-object p0
@@ -636,7 +628,7 @@
 .method public final getPathFillType-Rg-k1Os()I
     .locals 0
 
-    .line 574
+    .line 585
     iget p0, p0, Landroidx/compose/ui/graphics/vector/VectorPath;->pathFillType:I
 
     return p0
@@ -645,7 +637,7 @@
 .method public final getStroke()Landroidx/compose/ui/graphics/Brush;
     .locals 0
 
-    .line 589
+    .line 600
     iget-object p0, p0, Landroidx/compose/ui/graphics/vector/VectorPath;->stroke:Landroidx/compose/ui/graphics/Brush;
 
     return-object p0
@@ -654,7 +646,7 @@
 .method public final getStrokeAlpha()F
     .locals 0
 
-    .line 594
+    .line 605
     iget p0, p0, Landroidx/compose/ui/graphics/vector/VectorPath;->strokeAlpha:F
 
     return p0
@@ -663,7 +655,7 @@
 .method public final getStrokeLineCap-KaPHkGw()I
     .locals 0
 
-    .line 604
+    .line 615
     iget p0, p0, Landroidx/compose/ui/graphics/vector/VectorPath;->strokeLineCap:I
 
     return p0
@@ -672,7 +664,7 @@
 .method public final getStrokeLineJoin-LxFBmk8()I
     .locals 0
 
-    .line 609
+    .line 620
     iget p0, p0, Landroidx/compose/ui/graphics/vector/VectorPath;->strokeLineJoin:I
 
     return p0
@@ -681,7 +673,7 @@
 .method public final getStrokeLineMiter()F
     .locals 0
 
-    .line 614
+    .line 625
     iget p0, p0, Landroidx/compose/ui/graphics/vector/VectorPath;->strokeLineMiter:F
 
     return p0
@@ -690,7 +682,7 @@
 .method public final getStrokeLineWidth()F
     .locals 0
 
-    .line 599
+    .line 610
     iget p0, p0, Landroidx/compose/ui/graphics/vector/VectorPath;->strokeLineWidth:F
 
     return p0
@@ -699,7 +691,7 @@
 .method public final getTrimPathEnd()F
     .locals 0
 
-    .line 626
+    .line 637
     iget p0, p0, Landroidx/compose/ui/graphics/vector/VectorPath;->trimPathEnd:F
 
     return p0
@@ -708,7 +700,7 @@
 .method public final getTrimPathOffset()F
     .locals 0
 
-    .line 632
+    .line 643
     iget p0, p0, Landroidx/compose/ui/graphics/vector/VectorPath;->trimPathOffset:F
 
     return p0
@@ -717,7 +709,7 @@
 .method public final getTrimPathStart()F
     .locals 0
 
-    .line 620
+    .line 631
     iget p0, p0, Landroidx/compose/ui/graphics/vector/VectorPath;->trimPathStart:F
 
     return p0
@@ -726,7 +718,7 @@
 .method public hashCode()I
     .locals 3
 
-    .line 660
+    .line 671
     iget-object v0, p0, Landroidx/compose/ui/graphics/vector/VectorPath;->name:Ljava/lang/String;
 
     invoke-virtual {v0}, Ljava/lang/String;->hashCode()I
@@ -735,7 +727,7 @@
 
     mul-int/lit8 v0, v0, 0x1f
 
-    .line 661
+    .line 672
     iget-object v1, p0, Landroidx/compose/ui/graphics/vector/VectorPath;->pathData:Ljava/util/List;
 
     invoke-virtual {v1}, Ljava/lang/Object;->hashCode()I
@@ -746,7 +738,7 @@
 
     mul-int/lit8 v0, v0, 0x1f
 
-    .line 662
+    .line 673
     iget-object v1, p0, Landroidx/compose/ui/graphics/vector/VectorPath;->fill:Landroidx/compose/ui/graphics/Brush;
 
     const/4 v2, 0x0
@@ -767,7 +759,7 @@
 
     mul-int/lit8 v0, v0, 0x1f
 
-    .line 663
+    .line 674
     iget v1, p0, Landroidx/compose/ui/graphics/vector/VectorPath;->fillAlpha:F
 
     invoke-static {v1}, Ljava/lang/Float;->hashCode(F)I
@@ -778,7 +770,7 @@
 
     mul-int/lit8 v0, v0, 0x1f
 
-    .line 664
+    .line 675
     iget-object v1, p0, Landroidx/compose/ui/graphics/vector/VectorPath;->stroke:Landroidx/compose/ui/graphics/Brush;
 
     if-eqz v1, :cond_1
@@ -792,7 +784,7 @@
 
     mul-int/lit8 v0, v0, 0x1f
 
-    .line 665
+    .line 676
     iget v1, p0, Landroidx/compose/ui/graphics/vector/VectorPath;->strokeAlpha:F
 
     invoke-static {v1}, Ljava/lang/Float;->hashCode(F)I
@@ -803,7 +795,7 @@
 
     mul-int/lit8 v0, v0, 0x1f
 
-    .line 666
+    .line 677
     iget v1, p0, Landroidx/compose/ui/graphics/vector/VectorPath;->strokeLineWidth:F
 
     invoke-static {v1}, Ljava/lang/Float;->hashCode(F)I
@@ -814,7 +806,7 @@
 
     mul-int/lit8 v0, v0, 0x1f
 
-    .line 667
+    .line 678
     iget v1, p0, Landroidx/compose/ui/graphics/vector/VectorPath;->strokeLineCap:I
 
     invoke-static {v1}, Landroidx/compose/ui/graphics/StrokeCap;->hashCode-impl(I)I
@@ -825,7 +817,7 @@
 
     mul-int/lit8 v0, v0, 0x1f
 
-    .line 668
+    .line 679
     iget v1, p0, Landroidx/compose/ui/graphics/vector/VectorPath;->strokeLineJoin:I
 
     invoke-static {v1}, Landroidx/compose/ui/graphics/StrokeJoin;->hashCode-impl(I)I
@@ -836,7 +828,7 @@
 
     mul-int/lit8 v0, v0, 0x1f
 
-    .line 669
+    .line 680
     iget v1, p0, Landroidx/compose/ui/graphics/vector/VectorPath;->strokeLineMiter:F
 
     invoke-static {v1}, Ljava/lang/Float;->hashCode(F)I
@@ -847,7 +839,7 @@
 
     mul-int/lit8 v0, v0, 0x1f
 
-    .line 670
+    .line 681
     iget v1, p0, Landroidx/compose/ui/graphics/vector/VectorPath;->trimPathStart:F
 
     invoke-static {v1}, Ljava/lang/Float;->hashCode(F)I
@@ -858,7 +850,7 @@
 
     mul-int/lit8 v0, v0, 0x1f
 
-    .line 671
+    .line 682
     iget v1, p0, Landroidx/compose/ui/graphics/vector/VectorPath;->trimPathEnd:F
 
     invoke-static {v1}, Ljava/lang/Float;->hashCode(F)I
@@ -869,7 +861,7 @@
 
     mul-int/lit8 v0, v0, 0x1f
 
-    .line 672
+    .line 683
     iget v1, p0, Landroidx/compose/ui/graphics/vector/VectorPath;->trimPathOffset:F
 
     invoke-static {v1}, Ljava/lang/Float;->hashCode(F)I
@@ -880,7 +872,7 @@
 
     mul-int/lit8 v0, v0, 0x1f
 
-    .line 673
+    .line 684
     iget p0, p0, Landroidx/compose/ui/graphics/vector/VectorPath;->pathFillType:I
 
     invoke-static {p0}, Landroidx/compose/ui/graphics/PathFillType;->hashCode-impl(I)I

@@ -195,6 +195,17 @@
     return-object p0
 .end method
 
+.method public bridge synthetic isSeekingSupported()Z
+    .locals 0
+
+    .line 34
+    invoke-super {p0}, Lcom/google/android/material/transition/MaterialVisibility;->isSeekingSupported()Z
+
+    move-result p0
+
+    return p0
+.end method
+
 .method public bridge synthetic onAppear(Landroid/view/ViewGroup;Landroid/view/View;Landroidx/transition/TransitionValues;Landroidx/transition/TransitionValues;)Landroid/animation/Animator;
     .locals 0
 

@@ -19,7 +19,7 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/SourceDebugExtension;
-    value = "SMAP\nIntervalList.kt\nKotlin\n*S Kotlin\n*F\n+ 1 IntervalList.kt\nandroidx/compose/foundation/lazy/layout/MutableIntervalList\n+ 2 MutableVector.kt\nandroidx/compose/runtime/collection/MutableVectorKt\n+ 3 MutableVector.kt\nandroidx/compose/runtime/collection/MutableVector\n*L\n1#1,216:1\n1182#2:217\n1161#2,2:218\n523#3:220\n523#3:221\n523#3:222\n*S KotlinDebug\n*F\n+ 1 IntervalList.kt\nandroidx/compose/foundation/lazy/layout/MutableIntervalList\n*L\n98#1:217\n98#1:218,2\n150#1:220\n152#1:221\n169#1:222\n*E\n"
+    value = "SMAP\nIntervalList.kt\nKotlin\n*S Kotlin\n*F\n+ 1 IntervalList.kt\nandroidx/compose/foundation/lazy/layout/MutableIntervalList\n+ 2 MutableVector.kt\nandroidx/compose/runtime/collection/MutableVectorKt\n+ 3 MutableVector.kt\nandroidx/compose/runtime/collection/MutableVector\n*L\n1#1,222:1\n1208#2:223\n1187#2,2:224\n523#3:226\n523#3:227\n523#3:228\n*S KotlinDebug\n*F\n+ 1 IntervalList.kt\nandroidx/compose/foundation/lazy/layout/MutableIntervalList\n*L\n104#1:223\n104#1:224,2\n156#1:226\n158#1:227\n175#1:228\n*E\n"
 .end annotation
 
 .annotation runtime Lkotlin/Metadata;
@@ -105,10 +105,10 @@
 .method public constructor <init>()V
     .locals 3
 
-    .line 96
+    .line 102
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 219
+    .line 225
     new-instance v0, Landroidx/compose/runtime/collection/MutableVector;
 
     const/16 v1, 0x10
@@ -119,7 +119,7 @@
 
     invoke-direct {v0, v1, v2}, Landroidx/compose/runtime/collection/MutableVector;-><init>([Ljava/lang/Object;I)V
 
-    .line 98
+    .line 104
     iput-object v0, p0, Landroidx/compose/foundation/lazy/layout/MutableIntervalList;->intervals:Landroidx/compose/runtime/collection/MutableVector;
 
     return-void
@@ -130,7 +130,7 @@
 
     if-ltz p1, :cond_0
 
-    .line 176
+    .line 182
     invoke-virtual {p0}, Landroidx/compose/foundation/lazy/layout/MutableIntervalList;->getSize()I
 
     move-result v0
@@ -139,7 +139,7 @@
 
     return-void
 
-    .line 177
+    .line 183
     :cond_0
     new-instance v0, Ljava/lang/IndexOutOfBoundsException;
 
@@ -186,7 +186,7 @@
         }
     .end annotation
 
-    .line 182
+    .line 188
     invoke-virtual {p1}, Landroidx/compose/foundation/lazy/layout/IntervalList$Interval;->getStartIndex()I
 
     move-result p0
@@ -223,12 +223,12 @@
         }
     .end annotation
 
-    .line 165
+    .line 171
     iget-object v0, p0, Landroidx/compose/foundation/lazy/layout/MutableIntervalList;->lastInterval:Landroidx/compose/foundation/lazy/layout/IntervalList$Interval;
 
     if-eqz v0, :cond_0
 
-    .line 166
+    .line 172
     invoke-direct {p0, v0, p1}, Landroidx/compose/foundation/lazy/layout/MutableIntervalList;->contains(Landroidx/compose/foundation/lazy/layout/IntervalList$Interval;I)Z
 
     move-result v1
@@ -237,7 +237,7 @@
 
     goto :goto_0
 
-    .line 169
+    .line 175
     :cond_0
     iget-object v0, p0, Landroidx/compose/foundation/lazy/layout/MutableIntervalList;->intervals:Landroidx/compose/runtime/collection/MutableVector;
 
@@ -245,19 +245,19 @@
 
     move-result p1
 
-    .line 222
+    .line 228
     invoke-virtual {v0}, Landroidx/compose/runtime/collection/MutableVector;->getContent()[Ljava/lang/Object;
 
     move-result-object v0
 
     aget-object p1, v0, p1
 
-    .line 169
+    .line 175
     move-object v0, p1
 
     check-cast v0, Landroidx/compose/foundation/lazy/layout/IntervalList$Interval;
 
-    .line 170
+    .line 176
     iput-object v0, p0, Landroidx/compose/foundation/lazy/layout/MutableIntervalList;->lastInterval:Landroidx/compose/foundation/lazy/layout/IntervalList$Interval;
 
     :goto_0
@@ -280,19 +280,19 @@
 
     return-void
 
-    .line 123
+    .line 129
     :cond_0
     new-instance v0, Landroidx/compose/foundation/lazy/layout/IntervalList$Interval;
 
-    .line 124
+    .line 130
     invoke-virtual {p0}, Landroidx/compose/foundation/lazy/layout/MutableIntervalList;->getSize()I
 
     move-result v1
 
-    .line 123
+    .line 129
     invoke-direct {v0, v1, p1, p2}, Landroidx/compose/foundation/lazy/layout/IntervalList$Interval;-><init>(IILjava/lang/Object;)V
 
-    .line 128
+    .line 134
     invoke-virtual {p0}, Landroidx/compose/foundation/lazy/layout/MutableIntervalList;->getSize()I
 
     move-result p2
@@ -301,14 +301,14 @@
 
     iput p2, p0, Landroidx/compose/foundation/lazy/layout/MutableIntervalList;->size:I
 
-    .line 129
+    .line 135
     iget-object p0, p0, Landroidx/compose/foundation/lazy/layout/MutableIntervalList;->intervals:Landroidx/compose/runtime/collection/MutableVector;
 
     invoke-virtual {p0, v0}, Landroidx/compose/runtime/collection/MutableVector;->add(Ljava/lang/Object;)Z
 
     return-void
 
-    .line 117
+    .line 123
     :cond_1
     new-instance p0, Ljava/lang/StringBuilder;
 
@@ -324,7 +324,7 @@
 
     move-result-object p0
 
-    .line 116
+    .line 122
     new-instance p1, Ljava/lang/IllegalArgumentException;
 
     invoke-virtual {p0}, Ljava/lang/Object;->toString()Ljava/lang/String;
@@ -350,29 +350,25 @@
         }
     .end annotation
 
-    const-string v0, "block"
-
-    invoke-static {p3, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 143
+    .line 149
     invoke-direct {p0, p1}, Landroidx/compose/foundation/lazy/layout/MutableIntervalList;->checkIndexBounds(I)V
 
-    .line 144
+    .line 150
     invoke-direct {p0, p2}, Landroidx/compose/foundation/lazy/layout/MutableIntervalList;->checkIndexBounds(I)V
 
     if-lt p2, p1, :cond_1
 
-    .line 149
+    .line 155
     iget-object v0, p0, Landroidx/compose/foundation/lazy/layout/MutableIntervalList;->intervals:Landroidx/compose/runtime/collection/MutableVector;
 
     invoke-static {v0, p1}, Landroidx/compose/foundation/lazy/layout/IntervalListKt;->access$binarySearch(Landroidx/compose/runtime/collection/MutableVector;I)I
 
     move-result p1
 
-    .line 150
+    .line 156
     iget-object v0, p0, Landroidx/compose/foundation/lazy/layout/MutableIntervalList;->intervals:Landroidx/compose/runtime/collection/MutableVector;
 
-    .line 220
+    .line 226
     invoke-virtual {v0}, Landroidx/compose/runtime/collection/MutableVector;->getContent()[Ljava/lang/Object;
 
     move-result-object v0
@@ -381,7 +377,7 @@
 
     check-cast v0, Landroidx/compose/foundation/lazy/layout/IntervalList$Interval;
 
-    .line 150
+    .line 156
     invoke-virtual {v0}, Landroidx/compose/foundation/lazy/layout/IntervalList$Interval;->getStartIndex()I
 
     move-result v0
@@ -389,23 +385,23 @@
     :goto_0
     if-gt v0, p2, :cond_0
 
-    .line 152
+    .line 158
     iget-object v1, p0, Landroidx/compose/foundation/lazy/layout/MutableIntervalList;->intervals:Landroidx/compose/runtime/collection/MutableVector;
 
-    .line 221
+    .line 227
     invoke-virtual {v1}, Landroidx/compose/runtime/collection/MutableVector;->getContent()[Ljava/lang/Object;
 
     move-result-object v1
 
     aget-object v1, v1, p1
 
-    .line 152
+    .line 158
     check-cast v1, Landroidx/compose/foundation/lazy/layout/IntervalList$Interval;
 
-    .line 153
+    .line 159
     invoke-interface {p3, v1}, Lkotlin/jvm/functions/Function1;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 154
+    .line 160
     invoke-virtual {v1}, Landroidx/compose/foundation/lazy/layout/IntervalList$Interval;->getSize()I
 
     move-result v1
@@ -419,7 +415,7 @@
     :cond_0
     return-void
 
-    .line 146
+    .line 152
     :cond_1
     new-instance p0, Ljava/lang/StringBuilder;
 
@@ -451,7 +447,7 @@
 
     move-result-object p0
 
-    .line 145
+    .line 151
     new-instance p1, Ljava/lang/IllegalArgumentException;
 
     invoke-virtual {p0}, Ljava/lang/Object;->toString()Ljava/lang/String;
@@ -473,10 +469,10 @@
         }
     .end annotation
 
-    .line 160
+    .line 166
     invoke-direct {p0, p1}, Landroidx/compose/foundation/lazy/layout/MutableIntervalList;->checkIndexBounds(I)V
 
-    .line 161
+    .line 167
     invoke-direct {p0, p1}, Landroidx/compose/foundation/lazy/layout/MutableIntervalList;->getIntervalForIndex(I)Landroidx/compose/foundation/lazy/layout/IntervalList$Interval;
 
     move-result-object p0
@@ -487,7 +483,7 @@
 .method public getSize()I
     .locals 0
 
-    .line 100
+    .line 106
     iget p0, p0, Landroidx/compose/foundation/lazy/layout/MutableIntervalList;->size:I
 
     return p0

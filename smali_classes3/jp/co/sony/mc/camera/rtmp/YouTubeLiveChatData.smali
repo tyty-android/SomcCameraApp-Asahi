@@ -13,7 +13,7 @@
 
 .annotation runtime Lkotlin/Metadata;
     d1 = {
-        "\u00006\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0010\u000e\n\u0002\u0008\u0005\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000b\n\u0002\u0008\u0003\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u00084\n\u0002\u0010\u0008\n\u0002\u0008\u0004\u0008\u0087\u0008\u0018\u00002\u00020\u0001:\u0002HIB\u0099\u0001\u0012\n\u0008\u0002\u0010\u0002\u001a\u0004\u0018\u00010\u0003\u0012\n\u0008\u0002\u0010\u0004\u001a\u0004\u0018\u00010\u0003\u0012\n\u0008\u0002\u0010\u0005\u001a\u0004\u0018\u00010\u0003\u0012\n\u0008\u0002\u0010\u0006\u001a\u0004\u0018\u00010\u0003\u0012\n\u0008\u0002\u0010\u0007\u001a\u0004\u0018\u00010\u0003\u0012\n\u0008\u0002\u0010\u0008\u001a\u0004\u0018\u00010\t\u0012\u0008\u0008\u0002\u0010\n\u001a\u00020\u000b\u0012\u0008\u0008\u0002\u0010\u000c\u001a\u00020\u000b\u0012\u0008\u0008\u0002\u0010\r\u001a\u00020\u000b\u0012\n\u0008\u0002\u0010\u000e\u001a\u0004\u0018\u00010\u000f\u0012\n\u0008\u0002\u0010\u0010\u001a\u0004\u0018\u00010\u0011\u0012\n\u0008\u0002\u0010\u0012\u001a\u0004\u0018\u00010\u0003\u0012\u0008\u0008\u0002\u0010\u0013\u001a\u00020\u000b\u00a2\u0006\u0002\u0010\u0014J\u000b\u00105\u001a\u0004\u0018\u00010\u0003H\u00c6\u0003J\u000b\u00106\u001a\u0004\u0018\u00010\u000fH\u00c6\u0003J\u000b\u00107\u001a\u0004\u0018\u00010\u0011H\u00c6\u0003J\u000b\u00108\u001a\u0004\u0018\u00010\u0003H\u00c6\u0003J\t\u00109\u001a\u00020\u000bH\u00c6\u0003J\u000b\u0010:\u001a\u0004\u0018\u00010\u0003H\u00c6\u0003J\u000b\u0010;\u001a\u0004\u0018\u00010\u0003H\u00c6\u0003J\u000b\u0010<\u001a\u0004\u0018\u00010\u0003H\u00c6\u0003J\u000b\u0010=\u001a\u0004\u0018\u00010\u0003H\u00c6\u0003J\u000b\u0010>\u001a\u0004\u0018\u00010\tH\u00c6\u0003J\t\u0010?\u001a\u00020\u000bH\u00c6\u0003J\t\u0010@\u001a\u00020\u000bH\u00c6\u0003J\t\u0010A\u001a\u00020\u000bH\u00c6\u0003J\u009d\u0001\u0010B\u001a\u00020\u00002\n\u0008\u0002\u0010\u0002\u001a\u0004\u0018\u00010\u00032\n\u0008\u0002\u0010\u0004\u001a\u0004\u0018\u00010\u00032\n\u0008\u0002\u0010\u0005\u001a\u0004\u0018\u00010\u00032\n\u0008\u0002\u0010\u0006\u001a\u0004\u0018\u00010\u00032\n\u0008\u0002\u0010\u0007\u001a\u0004\u0018\u00010\u00032\n\u0008\u0002\u0010\u0008\u001a\u0004\u0018\u00010\t2\u0008\u0008\u0002\u0010\n\u001a\u00020\u000b2\u0008\u0008\u0002\u0010\u000c\u001a\u00020\u000b2\u0008\u0008\u0002\u0010\r\u001a\u00020\u000b2\n\u0008\u0002\u0010\u000e\u001a\u0004\u0018\u00010\u000f2\n\u0008\u0002\u0010\u0010\u001a\u0004\u0018\u00010\u00112\n\u0008\u0002\u0010\u0012\u001a\u0004\u0018\u00010\u00032\u0008\u0008\u0002\u0010\u0013\u001a\u00020\u000bH\u00c6\u0001J\u0013\u0010C\u001a\u00020\u000b2\u0008\u0010D\u001a\u0004\u0018\u00010\u0001H\u00d6\u0003J\t\u0010E\u001a\u00020FH\u00d6\u0001J\t\u0010G\u001a\u00020\u0003H\u00d6\u0001R\u001c\u0010\u0004\u001a\u0004\u0018\u00010\u0003X\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\u0008\u0015\u0010\u0016\"\u0004\u0008\u0017\u0010\u0018R\u001c\u0010\u0008\u001a\u0004\u0018\u00010\tX\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\u0008\u0019\u0010\u001a\"\u0004\u0008\u001b\u0010\u001cR\u001c\u0010\u0006\u001a\u0004\u0018\u00010\u0003X\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\u0008\u001d\u0010\u0016\"\u0004\u0008\u001e\u0010\u0018R\u001a\u0010\u0013\u001a\u00020\u000bX\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\u0008\u0013\u0010\u001f\"\u0004\u0008 \u0010!R\u001a\u0010\u000c\u001a\u00020\u000bX\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\u0008\u000c\u0010\u001f\"\u0004\u0008\"\u0010!R\u001a\u0010\n\u001a\u00020\u000bX\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\u0008\n\u0010\u001f\"\u0004\u0008#\u0010!R\u001a\u0010\r\u001a\u00020\u000bX\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\u0008\r\u0010\u001f\"\u0004\u0008$\u0010!R\u001c\u0010\u0002\u001a\u0004\u0018\u00010\u0003X\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\u0008%\u0010\u0016\"\u0004\u0008&\u0010\u0018R\u001c\u0010\u0012\u001a\u0004\u0018\u00010\u0003X\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\u0008\'\u0010\u0016\"\u0004\u0008(\u0010\u0018R\u001c\u0010\u000e\u001a\u0004\u0018\u00010\u000fX\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\u0008)\u0010*\"\u0004\u0008+\u0010,R\u001c\u0010\u0010\u001a\u0004\u0018\u00010\u0011X\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\u0008-\u0010.\"\u0004\u0008/\u00100R\u001c\u0010\u0005\u001a\u0004\u0018\u00010\u0003X\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\u00081\u0010\u0016\"\u0004\u00082\u0010\u0018R\u001c\u0010\u0007\u001a\u0004\u0018\u00010\u0003X\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\u00083\u0010\u0016\"\u0004\u00084\u0010\u0018\u00a8\u0006J"
+        "\u00006\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0010\u000e\n\u0002\u0008\u0005\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000b\n\u0002\u0008\u0003\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u00085\n\u0002\u0010\u0008\n\u0002\u0008\u0004\u0008\u0087\u0008\u0018\u00002\u00020\u0001:\u0002IJB\u009b\u0001\u0012\n\u0008\u0002\u0010\u0002\u001a\u0004\u0018\u00010\u0003\u0012\n\u0008\u0002\u0010\u0004\u001a\u0004\u0018\u00010\u0003\u0012\n\u0008\u0002\u0010\u0005\u001a\u0004\u0018\u00010\u0003\u0012\n\u0008\u0002\u0010\u0006\u001a\u0004\u0018\u00010\u0003\u0012\n\u0008\u0002\u0010\u0007\u001a\u0004\u0018\u00010\u0003\u0012\n\u0008\u0002\u0010\u0008\u001a\u0004\u0018\u00010\t\u0012\u0008\u0008\u0002\u0010\n\u001a\u00020\u000b\u0012\u0008\u0008\u0002\u0010\u000c\u001a\u00020\u000b\u0012\u0008\u0008\u0002\u0010\r\u001a\u00020\u000b\u0012\n\u0008\u0002\u0010\u000e\u001a\u0004\u0018\u00010\u000f\u0012\n\u0008\u0002\u0010\u0010\u001a\u0004\u0018\u00010\u0011\u0012\n\u0008\u0002\u0010\u0012\u001a\u0004\u0018\u00010\u0003\u0012\u0008\u0008\u0002\u0010\u0013\u001a\u00020\u000b\u00a2\u0006\u0004\u0008\u0014\u0010\u0015J\u000b\u00106\u001a\u0004\u0018\u00010\u0003H\u00c6\u0003J\u000b\u00107\u001a\u0004\u0018\u00010\u0003H\u00c6\u0003J\u000b\u00108\u001a\u0004\u0018\u00010\u0003H\u00c6\u0003J\u000b\u00109\u001a\u0004\u0018\u00010\u0003H\u00c6\u0003J\u000b\u0010:\u001a\u0004\u0018\u00010\u0003H\u00c6\u0003J\u000b\u0010;\u001a\u0004\u0018\u00010\tH\u00c6\u0003J\t\u0010<\u001a\u00020\u000bH\u00c6\u0003J\t\u0010=\u001a\u00020\u000bH\u00c6\u0003J\t\u0010>\u001a\u00020\u000bH\u00c6\u0003J\u000b\u0010?\u001a\u0004\u0018\u00010\u000fH\u00c6\u0003J\u000b\u0010@\u001a\u0004\u0018\u00010\u0011H\u00c6\u0003J\u000b\u0010A\u001a\u0004\u0018\u00010\u0003H\u00c6\u0003J\t\u0010B\u001a\u00020\u000bH\u00c6\u0003J\u009d\u0001\u0010C\u001a\u00020\u00002\n\u0008\u0002\u0010\u0002\u001a\u0004\u0018\u00010\u00032\n\u0008\u0002\u0010\u0004\u001a\u0004\u0018\u00010\u00032\n\u0008\u0002\u0010\u0005\u001a\u0004\u0018\u00010\u00032\n\u0008\u0002\u0010\u0006\u001a\u0004\u0018\u00010\u00032\n\u0008\u0002\u0010\u0007\u001a\u0004\u0018\u00010\u00032\n\u0008\u0002\u0010\u0008\u001a\u0004\u0018\u00010\t2\u0008\u0008\u0002\u0010\n\u001a\u00020\u000b2\u0008\u0008\u0002\u0010\u000c\u001a\u00020\u000b2\u0008\u0008\u0002\u0010\r\u001a\u00020\u000b2\n\u0008\u0002\u0010\u000e\u001a\u0004\u0018\u00010\u000f2\n\u0008\u0002\u0010\u0010\u001a\u0004\u0018\u00010\u00112\n\u0008\u0002\u0010\u0012\u001a\u0004\u0018\u00010\u00032\u0008\u0008\u0002\u0010\u0013\u001a\u00020\u000bH\u00c7\u0001J\u0013\u0010D\u001a\u00020\u000b2\u0008\u0010E\u001a\u0004\u0018\u00010\u0001H\u00d7\u0003J\t\u0010F\u001a\u00020GH\u00d7\u0001J\t\u0010H\u001a\u00020\u0003H\u00d7\u0001R\u001c\u0010\u0002\u001a\u0004\u0018\u00010\u0003X\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\u0008\u0016\u0010\u0017\"\u0004\u0008\u0018\u0010\u0019R\u001c\u0010\u0004\u001a\u0004\u0018\u00010\u0003X\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\u0008\u001a\u0010\u0017\"\u0004\u0008\u001b\u0010\u0019R\u001c\u0010\u0005\u001a\u0004\u0018\u00010\u0003X\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\u0008\u001c\u0010\u0017\"\u0004\u0008\u001d\u0010\u0019R\u001c\u0010\u0006\u001a\u0004\u0018\u00010\u0003X\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\u0008\u001e\u0010\u0017\"\u0004\u0008\u001f\u0010\u0019R\u001c\u0010\u0007\u001a\u0004\u0018\u00010\u0003X\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\u0008 \u0010\u0017\"\u0004\u0008!\u0010\u0019R\u001c\u0010\u0008\u001a\u0004\u0018\u00010\tX\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\u0008\"\u0010#\"\u0004\u0008$\u0010%R\u001a\u0010\n\u001a\u00020\u000bX\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\u0008\n\u0010&\"\u0004\u0008\'\u0010(R\u001a\u0010\u000c\u001a\u00020\u000bX\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\u0008\u000c\u0010&\"\u0004\u0008)\u0010(R\u001a\u0010\r\u001a\u00020\u000bX\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\u0008\r\u0010&\"\u0004\u0008*\u0010(R\u001c\u0010\u000e\u001a\u0004\u0018\u00010\u000fX\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\u0008+\u0010,\"\u0004\u0008-\u0010.R\u001c\u0010\u0010\u001a\u0004\u0018\u00010\u0011X\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\u0008/\u00100\"\u0004\u00081\u00102R\u001c\u0010\u0012\u001a\u0004\u0018\u00010\u0003X\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\u00083\u0010\u0017\"\u0004\u00084\u0010\u0019R\u001a\u0010\u0013\u001a\u00020\u000bX\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\u0008\u0013\u0010&\"\u0004\u00085\u0010(\u00a8\u0006K"
     }
     d2 = {
         "Ljp/co/sony/mc/camera/rtmp/YouTubeLiveChatData;",
@@ -36,27 +36,29 @@
         "Ljp/co/sony/mc/camera/rtmp/YouTubeLiveChatData$SuperStickerData;",
         "publishedAt",
         "isBanChat",
+        "<init>",
         "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljp/co/sony/mc/camera/view/util/UiText;ZZZLjp/co/sony/mc/camera/rtmp/YouTubeLiveChatData$SuperChatData;Ljp/co/sony/mc/camera/rtmp/YouTubeLiveChatData$SuperStickerData;Ljava/lang/String;Z)V",
-        "getChannelId",
+        "getMessageId",
         "()Ljava/lang/String;",
-        "setChannelId",
+        "setMessageId",
         "(Ljava/lang/String;)V",
+        "getChannelId",
+        "setChannelId",
+        "getType",
+        "setType",
+        "getDisplayName",
+        "setDisplayName",
+        "getUserImageUrl",
+        "setUserImageUrl",
         "getChatMessage",
         "()Ljp/co/sony/mc/camera/view/util/UiText;",
         "setChatMessage",
         "(Ljp/co/sony/mc/camera/view/util/UiText;)V",
-        "getDisplayName",
-        "setDisplayName",
         "()Z",
-        "setBanChat",
+        "setChatOwner",
         "(Z)V",
         "setChatModerator",
-        "setChatOwner",
         "setChatSponsor",
-        "getMessageId",
-        "setMessageId",
-        "getPublishedAt",
-        "setPublishedAt",
         "getSuperChatData",
         "()Ljp/co/sony/mc/camera/rtmp/YouTubeLiveChatData$SuperChatData;",
         "setSuperChatData",
@@ -65,15 +67,10 @@
         "()Ljp/co/sony/mc/camera/rtmp/YouTubeLiveChatData$SuperStickerData;",
         "setSuperStickerData",
         "(Ljp/co/sony/mc/camera/rtmp/YouTubeLiveChatData$SuperStickerData;)V",
-        "getType",
-        "setType",
-        "getUserImageUrl",
-        "setUserImageUrl",
+        "getPublishedAt",
+        "setPublishedAt",
+        "setBanChat",
         "component1",
-        "component10",
-        "component11",
-        "component12",
-        "component13",
         "component2",
         "component3",
         "component4",
@@ -82,6 +79,10 @@
         "component7",
         "component8",
         "component9",
+        "component10",
+        "component11",
+        "component12",
+        "component13",
         "copy",
         "equals",
         "other",
@@ -94,8 +95,8 @@
     }
     k = 0x1
     mv = {
-        0x1,
-        0x9,
+        0x2,
+        0x0,
         0x0
     }
     xi = 0x30
@@ -1021,7 +1022,7 @@
 .end method
 
 .method public hashCode()I
-    .locals 4
+    .locals 3
 
     iget-object v0, p0, Ljp/co/sony/mc/camera/rtmp/YouTubeLiveChatData;->messageId:Ljava/lang/String;
 
@@ -1133,48 +1134,43 @@
 
     iget-boolean v2, p0, Ljp/co/sony/mc/camera/rtmp/YouTubeLiveChatData;->isChatOwner:Z
 
-    const/4 v3, 0x1
+    invoke-static {v2}, Ljava/lang/Boolean;->hashCode(Z)I
 
-    if-eqz v2, :cond_6
+    move-result v2
 
-    move v2, v3
-
-    :cond_6
     add-int/2addr v0, v2
 
     mul-int/lit8 v0, v0, 0x1f
 
     iget-boolean v2, p0, Ljp/co/sony/mc/camera/rtmp/YouTubeLiveChatData;->isChatModerator:Z
 
-    if-eqz v2, :cond_7
+    invoke-static {v2}, Ljava/lang/Boolean;->hashCode(Z)I
 
-    move v2, v3
+    move-result v2
 
-    :cond_7
     add-int/2addr v0, v2
 
     mul-int/lit8 v0, v0, 0x1f
 
     iget-boolean v2, p0, Ljp/co/sony/mc/camera/rtmp/YouTubeLiveChatData;->isChatSponsor:Z
 
-    if-eqz v2, :cond_8
+    invoke-static {v2}, Ljava/lang/Boolean;->hashCode(Z)I
 
-    move v2, v3
+    move-result v2
 
-    :cond_8
     add-int/2addr v0, v2
 
     mul-int/lit8 v0, v0, 0x1f
 
     iget-object v2, p0, Ljp/co/sony/mc/camera/rtmp/YouTubeLiveChatData;->superChatData:Ljp/co/sony/mc/camera/rtmp/YouTubeLiveChatData$SuperChatData;
 
-    if-nez v2, :cond_9
+    if-nez v2, :cond_6
 
     move v2, v1
 
     goto :goto_6
 
-    :cond_9
+    :cond_6
     invoke-virtual {v2}, Ljp/co/sony/mc/camera/rtmp/YouTubeLiveChatData$SuperChatData;->hashCode()I
 
     move-result v2
@@ -1186,13 +1182,13 @@
 
     iget-object v2, p0, Ljp/co/sony/mc/camera/rtmp/YouTubeLiveChatData;->superStickerData:Ljp/co/sony/mc/camera/rtmp/YouTubeLiveChatData$SuperStickerData;
 
-    if-nez v2, :cond_a
+    if-nez v2, :cond_7
 
     move v2, v1
 
     goto :goto_7
 
-    :cond_a
+    :cond_7
     invoke-virtual {v2}, Ljp/co/sony/mc/camera/rtmp/YouTubeLiveChatData$SuperStickerData;->hashCode()I
 
     move-result v2
@@ -1204,11 +1200,11 @@
 
     iget-object v2, p0, Ljp/co/sony/mc/camera/rtmp/YouTubeLiveChatData;->publishedAt:Ljava/lang/String;
 
-    if-nez v2, :cond_b
+    if-nez v2, :cond_8
 
     goto :goto_8
 
-    :cond_b
+    :cond_8
     invoke-virtual {v2}, Ljava/lang/String;->hashCode()I
 
     move-result v1
@@ -1220,15 +1216,11 @@
 
     iget-boolean p0, p0, Ljp/co/sony/mc/camera/rtmp/YouTubeLiveChatData;->isBanChat:Z
 
-    if-eqz p0, :cond_c
+    invoke-static {p0}, Ljava/lang/Boolean;->hashCode(Z)I
 
-    goto :goto_9
+    move-result p0
 
-    :cond_c
-    move v3, p0
-
-    :goto_9
-    add-int/2addr v0, v3
+    add-int/2addr v0, p0
 
     return v0
 .end method

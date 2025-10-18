@@ -48,10 +48,6 @@
 
 
 # instance fields
-.field final synthetic $$dirty:I
-
-.field final synthetic $$dirty1:I
-
 .field final synthetic $colors:Landroidx/compose/material/SelectableChipColors;
 
 .field final synthetic $content:Lkotlin/jvm/functions/Function3;
@@ -119,7 +115,7 @@
 
 
 # direct methods
-.method constructor <init>(Lkotlin/jvm/functions/Function2;ZLkotlin/jvm/functions/Function2;Lkotlin/jvm/functions/Function2;Lkotlin/jvm/functions/Function3;ILandroidx/compose/material/SelectableChipColors;ZILandroidx/compose/runtime/State;)V
+.method constructor <init>(Lkotlin/jvm/functions/Function2;ZLkotlin/jvm/functions/Function2;Lkotlin/jvm/functions/Function2;Lkotlin/jvm/functions/Function3;Landroidx/compose/material/SelectableChipColors;ZLandroidx/compose/runtime/State;)V
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -153,9 +149,9 @@
             "-",
             "Ljava/lang/Integer;",
             "Lkotlin/Unit;",
-            ">;I",
+            ">;",
             "Landroidx/compose/material/SelectableChipColors;",
-            "ZI",
+            "Z",
             "Landroidx/compose/runtime/State<",
             "Landroidx/compose/ui/graphics/Color;",
             ">;)V"
@@ -172,15 +168,11 @@
 
     iput-object p5, p0, Landroidx/compose/material/ChipKt$FilterChip$3$1;->$content:Lkotlin/jvm/functions/Function3;
 
-    iput p6, p0, Landroidx/compose/material/ChipKt$FilterChip$3$1;->$$dirty1:I
+    iput-object p6, p0, Landroidx/compose/material/ChipKt$FilterChip$3$1;->$colors:Landroidx/compose/material/SelectableChipColors;
 
-    iput-object p7, p0, Landroidx/compose/material/ChipKt$FilterChip$3$1;->$colors:Landroidx/compose/material/SelectableChipColors;
+    iput-boolean p7, p0, Landroidx/compose/material/ChipKt$FilterChip$3$1;->$enabled:Z
 
-    iput-boolean p8, p0, Landroidx/compose/material/ChipKt$FilterChip$3$1;->$enabled:Z
-
-    iput p9, p0, Landroidx/compose/material/ChipKt$FilterChip$3$1;->$$dirty:I
-
-    iput-object p10, p0, Landroidx/compose/material/ChipKt$FilterChip$3$1;->$contentColor:Landroidx/compose/runtime/State;
+    iput-object p8, p0, Landroidx/compose/material/ChipKt$FilterChip$3$1;->$contentColor:Landroidx/compose/runtime/State;
 
     const/4 p1, 0x2
 
@@ -194,7 +186,7 @@
 .method public bridge synthetic invoke(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
 
-    .line 211
+    .line 212
     check-cast p1, Landroidx/compose/runtime/Composer;
 
     check-cast p2, Ljava/lang/Number;
@@ -211,9 +203,9 @@
 .end method
 
 .method public final invoke(Landroidx/compose/runtime/Composer;I)V
-    .locals 12
+    .locals 10
 
-    const-string v0, "C212@9835L10,211@9779L3543:Chip.kt#jmzs0o"
+    const-string v0, "C213@9891L10,212@9835L3848:Chip.kt#jmzs0o"
 
     invoke-static {p1, v0}, Landroidx/compose/runtime/ComposerKt;->sourceInformation(Landroidx/compose/runtime/Composer;Ljava/lang/String;)V
 
@@ -223,7 +215,7 @@
 
     if-ne v0, v1, :cond_1
 
-    .line 212
+    .line 213
     invoke-interface {p1}, Landroidx/compose/runtime/Composer;->getSkipping()Z
 
     move-result v0
@@ -232,13 +224,13 @@
 
     goto :goto_0
 
-    .line 284
+    .line 291
     :cond_0
     invoke-interface {p1}, Landroidx/compose/runtime/Composer;->skipToGroupEnd()V
 
     goto :goto_1
 
-    .line 212
+    .line 213
     :cond_1
     :goto_0
     invoke-static {}, Landroidx/compose/runtime/ComposerKt;->isTraceInProgress()Z
@@ -249,13 +241,13 @@
 
     const/4 v0, -0x1
 
-    const-string v1, "androidx.compose.material.FilterChip.<anonymous>.<anonymous> (Chip.kt:210)"
+    const-string v1, "androidx.compose.material.FilterChip.<anonymous>.<anonymous> (Chip.kt:212)"
 
     const v2, 0x5e4fd99f
 
     invoke-static {v2, p2, v0, v1}, Landroidx/compose/runtime/ComposerKt;->traceEventStart(IIILjava/lang/String;)V
 
-    .line 213
+    .line 214
     :cond_2
     sget-object p2, Landroidx/compose/material/MaterialTheme;->INSTANCE:Landroidx/compose/material/MaterialTheme;
 
@@ -269,8 +261,8 @@
 
     move-result-object p2
 
-    .line 214
-    new-instance v11, Landroidx/compose/material/ChipKt$FilterChip$3$1$1;
+    .line 215
+    new-instance v9, Landroidx/compose/material/ChipKt$FilterChip$3$1$1;
 
     iget-object v1, p0, Landroidx/compose/material/ChipKt$FilterChip$3$1;->$leadingIcon:Lkotlin/jvm/functions/Function2;
 
@@ -282,25 +274,21 @@
 
     iget-object v5, p0, Landroidx/compose/material/ChipKt$FilterChip$3$1;->$content:Lkotlin/jvm/functions/Function3;
 
-    iget v6, p0, Landroidx/compose/material/ChipKt$FilterChip$3$1;->$$dirty1:I
+    iget-object v6, p0, Landroidx/compose/material/ChipKt$FilterChip$3$1;->$colors:Landroidx/compose/material/SelectableChipColors;
 
-    iget-object v7, p0, Landroidx/compose/material/ChipKt$FilterChip$3$1;->$colors:Landroidx/compose/material/SelectableChipColors;
+    iget-boolean v7, p0, Landroidx/compose/material/ChipKt$FilterChip$3$1;->$enabled:Z
 
-    iget-boolean v8, p0, Landroidx/compose/material/ChipKt$FilterChip$3$1;->$enabled:Z
+    iget-object v8, p0, Landroidx/compose/material/ChipKt$FilterChip$3$1;->$contentColor:Landroidx/compose/runtime/State;
 
-    iget v9, p0, Landroidx/compose/material/ChipKt$FilterChip$3$1;->$$dirty:I
+    move-object v0, v9
 
-    iget-object v10, p0, Landroidx/compose/material/ChipKt$FilterChip$3$1;->$contentColor:Landroidx/compose/runtime/State;
-
-    move-object v0, v11
-
-    invoke-direct/range {v0 .. v10}, Landroidx/compose/material/ChipKt$FilterChip$3$1$1;-><init>(Lkotlin/jvm/functions/Function2;ZLkotlin/jvm/functions/Function2;Lkotlin/jvm/functions/Function2;Lkotlin/jvm/functions/Function3;ILandroidx/compose/material/SelectableChipColors;ZILandroidx/compose/runtime/State;)V
+    invoke-direct/range {v0 .. v8}, Landroidx/compose/material/ChipKt$FilterChip$3$1$1;-><init>(Lkotlin/jvm/functions/Function2;ZLkotlin/jvm/functions/Function2;Lkotlin/jvm/functions/Function2;Lkotlin/jvm/functions/Function3;Landroidx/compose/material/SelectableChipColors;ZLandroidx/compose/runtime/State;)V
 
     const p0, -0x5c030632
 
     const/4 v0, 0x1
 
-    invoke-static {p1, p0, v0, v11}, Landroidx/compose/runtime/internal/ComposableLambdaKt;->composableLambda(Landroidx/compose/runtime/Composer;IZLjava/lang/Object;)Landroidx/compose/runtime/internal/ComposableLambda;
+    invoke-static {p1, p0, v0, v9}, Landroidx/compose/runtime/internal/ComposableLambdaKt;->composableLambda(Landroidx/compose/runtime/Composer;IZLjava/lang/Object;)Landroidx/compose/runtime/internal/ComposableLambda;
 
     move-result-object p0
 
@@ -308,7 +296,7 @@
 
     const/16 v0, 0x30
 
-    .line 212
+    .line 213
     invoke-static {p2, p0, p1, v0}, Landroidx/compose/material/TextKt;->ProvideTextStyle(Landroidx/compose/ui/text/TextStyle;Lkotlin/jvm/functions/Function2;Landroidx/compose/runtime/Composer;I)V
 
     invoke-static {}, Landroidx/compose/runtime/ComposerKt;->isTraceInProgress()Z

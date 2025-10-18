@@ -21,7 +21,7 @@
 .method constructor <init>()V
     .locals 0
 
-    .line 2596
+    .line 2616
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -42,8 +42,30 @@
         }
     .end annotation
 
-    .line 2600
-    sget-object p0, Ljp/co/sony/mc/camera/configuration/parameters/AutoFocusLock;->OFF:Ljp/co/sony/mc/camera/configuration/parameters/AutoFocusLock;
+    .line 2620
+    check-cast p1, Ljp/co/sony/mc/camera/setting/CameraSettings;
 
-    return-object p0
+    .line 2621
+    invoke-static {p1}, Ljp/co/sony/mc/camera/setting/CameraSettings;->-$$Nest$fgetmCameraId(Ljp/co/sony/mc/camera/setting/CameraSettings;)Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;
+
+    move-result-object p0
+
+    invoke-static {p0}, Ljp/co/sony/mc/camera/util/capability/PlatformCapability;->getActiveArraySize(Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;)Landroid/graphics/Rect;
+
+    move-result-object p0
+
+    .line 2622
+    new-instance p1, Landroid/graphics/Point;
+
+    invoke-virtual {p0}, Landroid/graphics/Rect;->centerX()I
+
+    move-result p2
+
+    invoke-virtual {p0}, Landroid/graphics/Rect;->centerY()I
+
+    move-result p0
+
+    invoke-direct {p1, p2, p0}, Landroid/graphics/Point;-><init>(II)V
+
+    return-object p1
 .end method

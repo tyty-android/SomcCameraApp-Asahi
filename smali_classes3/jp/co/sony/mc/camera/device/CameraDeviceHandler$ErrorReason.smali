@@ -42,7 +42,7 @@
 .method private static synthetic $values()[Ljp/co/sony/mc/camera/device/CameraDeviceHandler$ErrorReason;
     .locals 6
 
-    .line 3564
+    .line 3753
     sget-object v0, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$ErrorReason;->ERROR_CAMERA_DEVICES:Ljp/co/sony/mc/camera/device/CameraDeviceHandler$ErrorReason;
 
     sget-object v1, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$ErrorReason;->ERROR_CAMERA_DISABLED:Ljp/co/sony/mc/camera/device/CameraDeviceHandler$ErrorReason;
@@ -65,7 +65,7 @@
 .method static constructor <clinit>()V
     .locals 3
 
-    .line 3565
+    .line 3754
     new-instance v0, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$ErrorReason;
 
     const-string v1, "ERROR_CAMERA_DEVICES"
@@ -76,7 +76,7 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$ErrorReason;->ERROR_CAMERA_DEVICES:Ljp/co/sony/mc/camera/device/CameraDeviceHandler$ErrorReason;
 
-    .line 3566
+    .line 3755
     new-instance v0, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$ErrorReason;
 
     const-string v1, "ERROR_CAMERA_DISABLED"
@@ -87,7 +87,7 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$ErrorReason;->ERROR_CAMERA_DISABLED:Ljp/co/sony/mc/camera/device/CameraDeviceHandler$ErrorReason;
 
-    .line 3567
+    .line 3756
     new-instance v0, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$ErrorReason;
 
     const-string v1, "ERROR_CAMERA_IN_USE"
@@ -98,7 +98,7 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$ErrorReason;->ERROR_CAMERA_IN_USE:Ljp/co/sony/mc/camera/device/CameraDeviceHandler$ErrorReason;
 
-    .line 3568
+    .line 3757
     new-instance v0, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$ErrorReason;
 
     const-string v1, "ERROR_CAMERA_SERVICE"
@@ -109,7 +109,7 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$ErrorReason;->ERROR_CAMERA_SERVICE:Ljp/co/sony/mc/camera/device/CameraDeviceHandler$ErrorReason;
 
-    .line 3569
+    .line 3758
     new-instance v0, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$ErrorReason;
 
     const-string v1, "ERROR_MAX_CAMERAS_IN_USE"
@@ -120,7 +120,7 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$ErrorReason;->ERROR_MAX_CAMERAS_IN_USE:Ljp/co/sony/mc/camera/device/CameraDeviceHandler$ErrorReason;
 
-    .line 3570
+    .line 3759
     new-instance v0, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$ErrorReason;
 
     const-string v1, "ERROR_UNKNOWN"
@@ -131,7 +131,7 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$ErrorReason;->ERROR_UNKNOWN:Ljp/co/sony/mc/camera/device/CameraDeviceHandler$ErrorReason;
 
-    .line 3564
+    .line 3753
     invoke-static {}, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$ErrorReason;->$values()[Ljp/co/sony/mc/camera/device/CameraDeviceHandler$ErrorReason;
 
     move-result-object v0
@@ -149,7 +149,7 @@
         }
     .end annotation
 
-    .line 3564
+    .line 3753
     invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
     return-void
@@ -158,7 +158,7 @@
 .method public static valueOf(Ljava/lang/String;)Ljp/co/sony/mc/camera/device/CameraDeviceHandler$ErrorReason;
     .locals 1
 
-    .line 3564
+    .line 3753
     const-class v0, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$ErrorReason;
 
     invoke-static {v0, p0}, Ljava/lang/Enum;->valueOf(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
@@ -173,7 +173,7 @@
 .method public static values()[Ljp/co/sony/mc/camera/device/CameraDeviceHandler$ErrorReason;
     .locals 1
 
-    .line 3564
+    .line 3753
     sget-object v0, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$ErrorReason;->$VALUES:[Ljp/co/sony/mc/camera/device/CameraDeviceHandler$ErrorReason;
 
     invoke-virtual {v0}, [Ljp/co/sony/mc/camera/device/CameraDeviceHandler$ErrorReason;->clone()Ljava/lang/Object;

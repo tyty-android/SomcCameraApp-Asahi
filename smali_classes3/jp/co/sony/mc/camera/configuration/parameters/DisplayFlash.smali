@@ -61,7 +61,7 @@
     .line 22
     new-instance v6, Ljp/co/sony/mc/camera/configuration/parameters/DisplayFlash;
 
-    const v4, 0x7f1103be
+    const v4, 0x7f1103f3
 
     const-string v5, "off"
 
@@ -69,7 +69,7 @@
 
     const/4 v2, 0x0
 
-    const v3, 0x7f080192
+    const v3, 0x7f080197
 
     move-object v0, v6
 
@@ -80,7 +80,7 @@
     .line 26
     new-instance v0, Ljp/co/sony/mc/camera/configuration/parameters/DisplayFlash;
 
-    const v11, 0x7f1103bd
+    const v11, 0x7f1103f2
 
     const-string v12, "display-auto"
 
@@ -88,7 +88,7 @@
 
     const/4 v9, 0x1
 
-    const v10, 0x7f08017a
+    const v10, 0x7f08017f
 
     move-object v7, v0
 
@@ -99,7 +99,7 @@
     .line 30
     new-instance v0, Ljp/co/sony/mc/camera/configuration/parameters/DisplayFlash;
 
-    const v5, 0x7f1103bf
+    const v5, 0x7f1103f4
 
     const-string v6, "display-on"
 
@@ -107,7 +107,7 @@
 
     const/4 v3, 0x2
 
-    const v4, 0x7f08017e
+    const v4, 0x7f080183
 
     move-object v1, v0
 

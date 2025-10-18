@@ -12,7 +12,7 @@
 
 .annotation runtime Lkotlin/Metadata;
     d1 = {
-        "\u00002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0003\n\u0002\u0010\u0007\n\u0002\u0008\u0003\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0005\u001a\u001e\u0010\u0000\u001a\u0004\u0018\u00010\u00012\u0008\u0010\u0002\u001a\u0004\u0018\u00010\u00032\u0008\u0010\u0004\u001a\u0004\u0018\u00010\u0005H\u0002\u001a\u001e\u0010\u0006\u001a\u00020\u00072\u0006\u0010\u0008\u001a\u00020\u00072\u0006\u0010\t\u001a\u00020\u00072\u0006\u0010\n\u001a\u00020\u000b\u001a\u0016\u0010\u000c\u001a\u00020\u00072\u0006\u0010\r\u001a\u00020\u00072\u0006\u0010\u000e\u001a\u00020\u000f\u001a\'\u0010\u0010\u001a\u00020\u00112\u0006\u0010\u0012\u001a\u00020\u000f2\u0008\u0010\u0013\u001a\u0004\u0018\u00010\u0011H\u0000\u00f8\u0001\u0000\u00f8\u0001\u0001\u00a2\u0006\u0004\u0008\u0014\u0010\u0015\u0082\u0002\u000b\n\u0005\u0008\u00a1\u001e0\u0001\n\u0002\u0008\u0019\u00a8\u0006\u0016"
+        "\u00002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0003\n\u0002\u0010\u0007\n\u0002\u0008\u0003\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0005\u001a\u001e\u0010\u0000\u001a\u0004\u0018\u00010\u00012\u0008\u0010\u0002\u001a\u0004\u0018\u00010\u00032\u0008\u0010\u0004\u001a\u0004\u0018\u00010\u0005H\u0002\u001a\u001e\u0010\u0006\u001a\u00020\u00072\u0006\u0010\u0008\u001a\u00020\u00072\u0006\u0010\t\u001a\u00020\u00072\u0006\u0010\n\u001a\u00020\u000b\u001a\u0016\u0010\u000c\u001a\u00020\u00072\u0006\u0010\r\u001a\u00020\u00072\u0006\u0010\u000e\u001a\u00020\u000f\u001a\"\u0010\u0010\u001a\u00020\u00112\u0006\u0010\u0012\u001a\u00020\u000f2\u0006\u0010\u0013\u001a\u00020\u0011H\u0000\u00f8\u0001\u0000\u00a2\u0006\u0004\u0008\u0014\u0010\u0015\u0082\u0002\u0007\n\u0005\u0008\u00a1\u001e0\u0001\u00a8\u0006\u0016"
     }
     d2 = {
         "createPlatformTextStyleInternal",
@@ -35,8 +35,8 @@
         "Landroidx/compose/ui/text/style/TextDirection;",
         "layoutDirection",
         "textDirection",
-        "resolveTextDirection-Yj3eThk",
-        "(Landroidx/compose/ui/unit/LayoutDirection;Landroidx/compose/ui/text/style/TextDirection;)I",
+        "resolveTextDirection-IhaHGbI",
+        "(Landroidx/compose/ui/unit/LayoutDirection;I)I",
         "ui-text_release"
     }
     k = 0x2
@@ -72,7 +72,7 @@
 
     goto :goto_0
 
-    .line 1266
+    .line 1617
     :cond_0
     invoke-static {p0, p1}, Landroidx/compose/ui/text/AndroidTextStyle_androidKt;->createPlatformTextStyle(Landroidx/compose/ui/text/PlatformSpanStyle;Landroidx/compose/ui/text/PlatformParagraphStyle;)Landroidx/compose/ui/text/PlatformTextStyle;
 
@@ -85,18 +85,10 @@
 .method public static final lerp(Landroidx/compose/ui/text/TextStyle;Landroidx/compose/ui/text/TextStyle;F)Landroidx/compose/ui/text/TextStyle;
     .locals 3
 
-    const-string/jumbo v0, "start"
-
-    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string/jumbo v0, "stop"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 1219
+    .line 1570
     new-instance v0, Landroidx/compose/ui/text/TextStyle;
 
-    .line 1220
+    .line 1571
     invoke-virtual {p0}, Landroidx/compose/ui/text/TextStyle;->toSpanStyle()Landroidx/compose/ui/text/SpanStyle;
 
     move-result-object v1
@@ -109,7 +101,7 @@
 
     move-result-object v1
 
-    .line 1221
+    .line 1572
     invoke-virtual {p0}, Landroidx/compose/ui/text/TextStyle;->toParagraphStyle()Landroidx/compose/ui/text/ParagraphStyle;
 
     move-result-object p0
@@ -122,7 +114,7 @@
 
     move-result-object p0
 
-    .line 1219
+    .line 1570
     invoke-direct {v0, v1, p0}, Landroidx/compose/ui/text/TextStyle;-><init>(Landroidx/compose/ui/text/SpanStyle;Landroidx/compose/ui/text/ParagraphStyle;)V
 
     return-object v0
@@ -131,18 +123,10 @@
 .method public static final resolveDefaults(Landroidx/compose/ui/text/TextStyle;Landroidx/compose/ui/unit/LayoutDirection;)Landroidx/compose/ui/text/TextStyle;
     .locals 3
 
-    const-string/jumbo v0, "style"
-
-    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string v0, "direction"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 1233
+    .line 1584
     new-instance v0, Landroidx/compose/ui/text/TextStyle;
 
-    .line 1234
+    .line 1585
     invoke-virtual {p0}, Landroidx/compose/ui/text/TextStyle;->getSpanStyle$ui_text_release()Landroidx/compose/ui/text/SpanStyle;
 
     move-result-object v1
@@ -151,7 +135,7 @@
 
     move-result-object v1
 
-    .line 1235
+    .line 1586
     invoke-virtual {p0}, Landroidx/compose/ui/text/TextStyle;->getParagraphStyle$ui_text_release()Landroidx/compose/ui/text/ParagraphStyle;
 
     move-result-object v2
@@ -160,28 +144,28 @@
 
     move-result-object p1
 
-    .line 1236
+    .line 1587
     invoke-virtual {p0}, Landroidx/compose/ui/text/TextStyle;->getPlatformStyle()Landroidx/compose/ui/text/PlatformTextStyle;
 
     move-result-object p0
 
-    .line 1233
+    .line 1584
     invoke-direct {v0, v1, p1, p0}, Landroidx/compose/ui/text/TextStyle;-><init>(Landroidx/compose/ui/text/SpanStyle;Landroidx/compose/ui/text/ParagraphStyle;Landroidx/compose/ui/text/PlatformTextStyle;)V
 
     return-object v0
 .end method
 
-.method public static final resolveTextDirection-Yj3eThk(Landroidx/compose/ui/unit/LayoutDirection;Landroidx/compose/ui/text/style/TextDirection;)I
-    .locals 4
+.method public static final resolveTextDirection-IhaHGbI(Landroidx/compose/ui/unit/LayoutDirection;I)I
+    .locals 3
 
-    const-string v0, "layoutDirection"
-
-    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 1247
+    .line 1598
     sget-object v0, Landroidx/compose/ui/text/style/TextDirection;->Companion:Landroidx/compose/ui/text/style/TextDirection$Companion;
 
     invoke-virtual {v0}, Landroidx/compose/ui/text/style/TextDirection$Companion;->getContent-s_7X-co()I
+
+    move-result v0
+
+    invoke-static {p1, v0}, Landroidx/compose/ui/text/style/TextDirection;->equals-impl0(II)Z
 
     move-result v0
 
@@ -189,20 +173,7 @@
 
     const/4 v2, 0x1
 
-    if-nez p1, :cond_0
-
-    goto :goto_0
-
-    :cond_0
-    invoke-virtual {p1}, Landroidx/compose/ui/text/style/TextDirection;->unbox-impl()I
-
-    move-result v3
-
-    invoke-static {v3, v0}, Landroidx/compose/ui/text/style/TextDirection;->equals-impl0(II)Z
-
-    move-result v0
-
-    if-eqz v0, :cond_3
+    if-eqz v0, :cond_2
 
     sget-object p1, Landroidx/compose/ui/text/TextStyleKt$WhenMappings;->$EnumSwitchMapping$0:[I
 
@@ -212,41 +183,50 @@
 
     aget p0, p1, p0
 
-    if-eq p0, v2, :cond_2
+    if-eq p0, v2, :cond_1
 
-    if-ne p0, v1, :cond_1
+    if-ne p0, v1, :cond_0
 
-    .line 1249
+    .line 1600
     sget-object p0, Landroidx/compose/ui/text/style/TextDirection;->Companion:Landroidx/compose/ui/text/style/TextDirection$Companion;
 
     invoke-virtual {p0}, Landroidx/compose/ui/text/style/TextDirection$Companion;->getContentOrRtl-s_7X-co()I
 
-    move-result p0
+    move-result p1
 
-    goto :goto_1
+    goto :goto_0
 
-    :cond_1
+    :cond_0
     new-instance p0, Lkotlin/NoWhenBranchMatchedException;
 
     invoke-direct {p0}, Lkotlin/NoWhenBranchMatchedException;-><init>()V
 
     throw p0
 
-    .line 1248
-    :cond_2
+    .line 1599
+    :cond_1
     sget-object p0, Landroidx/compose/ui/text/style/TextDirection;->Companion:Landroidx/compose/ui/text/style/TextDirection$Companion;
 
     invoke-virtual {p0}, Landroidx/compose/ui/text/style/TextDirection$Companion;->getContentOrLtr-s_7X-co()I
 
-    move-result p0
+    move-result p1
 
-    goto :goto_1
+    goto :goto_0
 
-    :cond_3
-    :goto_0
-    if-nez p1, :cond_6
+    .line 1602
+    :cond_2
+    sget-object v0, Landroidx/compose/ui/text/style/TextDirection;->Companion:Landroidx/compose/ui/text/style/TextDirection$Companion;
 
-    .line 1251
+    invoke-virtual {v0}, Landroidx/compose/ui/text/style/TextDirection$Companion;->getUnspecified-s_7X-co()I
+
+    move-result v0
+
+    invoke-static {p1, v0}, Landroidx/compose/ui/text/style/TextDirection;->equals-impl0(II)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_5
+
     sget-object p1, Landroidx/compose/ui/text/TextStyleKt$WhenMappings;->$EnumSwitchMapping$0:[I
 
     invoke-virtual {p0}, Landroidx/compose/ui/unit/LayoutDirection;->ordinal()I
@@ -255,42 +235,35 @@
 
     aget p0, p1, p0
 
-    if-eq p0, v2, :cond_5
+    if-eq p0, v2, :cond_4
 
-    if-ne p0, v1, :cond_4
+    if-ne p0, v1, :cond_3
 
-    .line 1253
+    .line 1604
     sget-object p0, Landroidx/compose/ui/text/style/TextDirection;->Companion:Landroidx/compose/ui/text/style/TextDirection$Companion;
 
     invoke-virtual {p0}, Landroidx/compose/ui/text/style/TextDirection$Companion;->getRtl-s_7X-co()I
 
-    move-result p0
+    move-result p1
 
-    goto :goto_1
+    goto :goto_0
 
-    :cond_4
+    :cond_3
     new-instance p0, Lkotlin/NoWhenBranchMatchedException;
 
     invoke-direct {p0}, Lkotlin/NoWhenBranchMatchedException;-><init>()V
 
     throw p0
 
-    .line 1252
-    :cond_5
+    .line 1603
+    :cond_4
     sget-object p0, Landroidx/compose/ui/text/style/TextDirection;->Companion:Landroidx/compose/ui/text/style/TextDirection$Companion;
 
     invoke-virtual {p0}, Landroidx/compose/ui/text/style/TextDirection$Companion;->getLtr-s_7X-co()I
 
-    move-result p0
+    move-result p1
 
-    goto :goto_1
-
-    .line 1255
-    :cond_6
-    invoke-virtual {p1}, Landroidx/compose/ui/text/style/TextDirection;->unbox-impl()I
-
-    move-result p0
-
-    :goto_1
-    return p0
+    :cond_5
+    :goto_0
+    return p1
 .end method

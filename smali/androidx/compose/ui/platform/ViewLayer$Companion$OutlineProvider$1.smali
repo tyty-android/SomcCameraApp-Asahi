@@ -42,7 +42,7 @@
 .method constructor <init>()V
     .locals 0
 
-    .line 399
+    .line 428
     invoke-direct {p0}, Landroid/view/ViewOutlineProvider;-><init>()V
 
     return-void
@@ -53,18 +53,14 @@
 .method public getOutline(Landroid/view/View;Landroid/graphics/Outline;)V
     .locals 0
 
-    const-string/jumbo p0, "view"
+    .line 430
+    const-string p0, "null cannot be cast to non-null type androidx.compose.ui.platform.ViewLayer"
 
-    invoke-static {p1, p0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, p0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;Ljava/lang/String;)V
 
-    const-string p0, "outline"
-
-    invoke-static {p2, p0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 401
     check-cast p1, Landroidx/compose/ui/platform/ViewLayer;
 
-    .line 402
+    .line 431
     invoke-static {p1}, Landroidx/compose/ui/platform/ViewLayer;->access$getOutlineResolver$p(Landroidx/compose/ui/platform/ViewLayer;)Landroidx/compose/ui/platform/OutlineResolver;
 
     move-result-object p0

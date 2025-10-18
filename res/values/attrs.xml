@@ -48,6 +48,7 @@
     <attr name="actionProviderClass" format="string" />
     <attr name="actionTextColorAlpha" format="float" />
     <attr name="actionViewClass" format="string" />
+    <attr name="activeIndicatorLabelPadding" format="dimension" />
     <attr name="activityAction" format="string" />
     <attr name="activityChooserViewStyle" format="reference" />
     <attr name="activityName" format="string" />
@@ -110,6 +111,7 @@
     <attr name="arrowShaftLength" format="dimension" />
     <attr name="aspectRatio" format="float" />
     <attr name="attributeName" format="string" />
+    <attr name="autoAdjustToWithinGrandparentBounds" format="boolean" />
     <attr name="autoCompleteMode">
         <enum name="continuousVelocity" value="0" />
         <enum name="spring" value="1" />
@@ -131,6 +133,7 @@
         <enum name="animateToStart" value="3" />
         <enum name="animateToEnd" value="4" />
     </attr>
+    <attr name="backHandlingEnabled" format="boolean" />
     <attr name="background" format="reference" />
     <attr name="backgroundColor" format="color" />
     <attr name="backgroundInsetBottom" format="dimension" />
@@ -160,8 +163,10 @@
     <attr name="badgeShapeAppearance" format="reference" />
     <attr name="badgeShapeAppearanceOverlay" format="reference" />
     <attr name="badgeStyle" format="reference" />
+    <attr name="badgeText" format="string" />
     <attr name="badgeTextAppearance" format="reference" />
     <attr name="badgeTextColor" format="color" />
+    <attr name="badgeVerticalPadding" format="dimension" />
     <attr name="badgeWidePadding" format="dimension" />
     <attr name="badgeWidth" format="dimension" />
     <attr name="badgeWithTextHeight" format="dimension" />
@@ -270,6 +275,10 @@
     <attr name="cardPreventCornerOverlap" format="boolean" />
     <attr name="cardUseCompatPadding" format="boolean" />
     <attr name="cardViewStyle" format="reference" />
+    <attr name="carousel_alignment">
+        <enum name="start" value="0" />
+        <enum name="center" value="1" />
+    </attr>
     <attr name="carousel_backwardTransition" format="reference" />
     <attr name="carousel_emptyViewsBehavior">
         <enum name="invisible" value="4" />
@@ -521,6 +530,8 @@
     <attr name="counterTextColor" format="reference" />
     <attr name="crossfade" format="float" />
     <attr name="currentState" format="reference" />
+    <attr name="cursorColor" format="color" />
+    <attr name="cursorErrorColor" format="color" />
     <attr name="curveFit">
         <enum name="spline" value="0" />
         <enum name="linear" value="1" />
@@ -614,6 +625,7 @@
     <attr name="drawerArrowStyle" format="reference" />
     <attr name="drawerLayoutCornerSize" format="dimension" />
     <attr name="drawerLayoutStyle" format="reference" />
+    <attr name="dropDownBackgroundTint" format="color" />
     <attr name="dropDownListViewStyle" format="reference" />
     <attr name="dropdownListPreferredItemHeight" format="dimension" />
     <attr name="dropdownPreferenceStyle" format="reference" />
@@ -861,6 +873,7 @@
         <enum name="none" value="0" />
         <enum name="outward" value="1" />
         <enum name="inward" value="2" />
+        <enum name="escape" value="3" />
     </attr>
     <attr name="hideMotionSpec" format="reference" />
     <attr name="hideNavigationIcon" format="boolean" />
@@ -926,6 +939,7 @@
     <attr name="indicatorInset" format="dimension" />
     <attr name="indicatorInterval" format="dimension" />
     <attr name="indicatorSize" format="dimension" />
+    <attr name="indicatorTrackGapSize" format="dimension" />
     <attr name="indicatorWidth" format="dimension" />
     <attr name="initialActivityCount" format="string" />
     <attr name="initialExpandedChildrenCount" format="integer" />
@@ -962,6 +976,7 @@
     <attr name="itemStrokeWidth" format="dimension" />
     <attr name="itemTextAppearance" format="reference" />
     <attr name="itemTextAppearanceActive" format="reference" />
+    <attr name="itemTextAppearanceActiveBoldEnabled" format="boolean" />
     <attr name="itemTextAppearanceInactive" format="reference" />
     <attr name="itemTextColor" format="color" />
     <attr name="itemVerticalPadding" format="dimension" />
@@ -987,6 +1002,7 @@
         <enum name="labeled" value="1" />
         <enum name="unlabeled" value="2" />
     </attr>
+    <attr name="largeFontVerticalOffsetAdjustment" format="dimension" />
     <attr name="lastBaselineToBottomHeight" format="dimension" />
     <attr name="lastItemDecorated" format="boolean" />
     <attr name="layout" format="reference" />
@@ -1281,6 +1297,8 @@
     <attr name="materialSearchBarStyle" format="reference" />
     <attr name="materialSearchViewPrefixStyle" format="reference" />
     <attr name="materialSearchViewStyle" format="reference" />
+    <attr name="materialSearchViewToolbarHeight" format="dimension" />
+    <attr name="materialSearchViewToolbarStyle" format="reference" />
     <attr name="materialSwitchStyle" format="reference|string|integer|boolean|color|float|dimension|fraction" />
     <attr name="materialThemeOverlay" format="reference" />
     <attr name="materialTimePickerStyle" format="reference" />
@@ -1293,6 +1311,7 @@
     <attr name="maxHeight" format="dimension" />
     <attr name="maxImageSize" format="dimension" />
     <attr name="maxLines" format="integer" />
+    <attr name="maxNumber" format="integer" />
     <attr name="maxVelocity" format="float" />
     <attr name="maxWidth" format="dimension" />
     <attr name="measureWithLargestChild" format="boolean" />
@@ -1455,6 +1474,7 @@
     <attr name="paddingLeftSystemWindowInsets" format="boolean" />
     <attr name="paddingRightSystemWindowInsets" format="boolean" />
     <attr name="paddingStart" format="dimension" />
+    <attr name="paddingStartSystemWindowInsets" format="boolean" />
     <attr name="paddingTopNoTitle" format="dimension" />
     <attr name="paddingTopSystemWindowInsets" format="boolean" />
     <attr name="panelBackground" format="reference" />
@@ -1505,7 +1525,6 @@
     <attr name="preferenceCategoryStyle" format="reference" />
     <attr name="preferenceCategoryTitleTextAppearance" format="reference" />
     <attr name="preferenceCategoryTitleTextColor" format="reference|color" />
-    <attr name="preferenceFragmentBackgroundColor" format="reference" />
     <attr name="preferenceFragmentCompatStyle" format="reference" />
     <attr name="preferenceFragmentListStyle" format="reference" />
     <attr name="preferenceFragmentStyle" format="reference" />
@@ -1576,7 +1595,6 @@
     <attr name="selectionRequired" format="boolean" />
     <attr name="selectorSize" format="dimension" />
     <attr name="setsTag" format="reference" />
-    <attr name="settingDividerColor" format="reference" />
     <attr name="shapeAppearance" format="reference" />
     <attr name="shapeAppearanceCornerExtraLarge" format="reference" />
     <attr name="shapeAppearanceCornerExtraSmall" format="reference" />
@@ -1613,6 +1631,7 @@
         <flag name="middle" value="0x00000002" />
         <flag name="end" value="0x00000004" />
     </attr>
+    <attr name="showMarker" format="boolean" />
     <attr name="showMotionSpec" format="reference" />
     <attr name="showPaths" format="boolean" />
     <attr name="showSeekBarValue" format="boolean" />
@@ -1861,7 +1880,9 @@
     <attr name="thickness" format="dimension" />
     <attr name="thumbColor" format="color" />
     <attr name="thumbElevation" format="dimension" />
+    <attr name="thumbHeight" format="dimension" />
     <attr name="thumbIcon" format="reference" />
+    <attr name="thumbIconSize" format="dimension" />
     <attr name="thumbIconTint" format="color" />
     <attr name="thumbIconTintMode">
         <enum name="src_over" value="3" />
@@ -1884,6 +1905,8 @@
         <enum name="screen" value="15" />
         <enum name="add" value="16" />
     </attr>
+    <attr name="thumbTrackGapSize" format="dimension" />
+    <attr name="thumbWidth" format="dimension" />
     <attr name="tickColor" format="color" />
     <attr name="tickColorActive" format="color" />
     <attr name="tickColorInactive" format="color" />
@@ -1936,10 +1959,8 @@
     <attr name="toggleCheckedStateOnClick" format="boolean" />
     <attr name="toolbarId" format="reference" />
     <attr name="toolbarNavigationButtonStyle" format="reference" />
-    <attr name="toolbarPopupTheme" format="reference" />
     <attr name="toolbarStyle" format="reference" />
     <attr name="toolbarSurfaceStyle" format="reference" />
-    <attr name="toolbarTheme" format="reference" />
     <attr name="tooltipForegroundColor" format="reference|color" />
     <attr name="tooltipFrameBackground" format="reference" />
     <attr name="tooltipStyle" format="reference" />
@@ -1972,6 +1993,8 @@
         <enum name="add" value="16" />
     </attr>
     <attr name="trackHeight" format="dimension" />
+    <attr name="trackInsideCornerSize" format="dimension" />
+    <attr name="trackStopIndicatorSize" format="dimension" />
     <attr name="trackThickness" format="dimension" />
     <attr name="trackTint" format="color" />
     <attr name="trackTintMode">

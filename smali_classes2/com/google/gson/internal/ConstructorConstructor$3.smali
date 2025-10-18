@@ -35,7 +35,7 @@
 .method constructor <init>(Lcom/google/gson/internal/ConstructorConstructor;Ljava/lang/String;)V
     .locals 0
 
-    .line 134
+    .line 150
     iput-object p1, p0, Lcom/google/gson/internal/ConstructorConstructor$3;->this$0:Lcom/google/gson/internal/ConstructorConstructor;
 
     iput-object p2, p0, Lcom/google/gson/internal/ConstructorConstructor$3;->val$exceptionMessage:Ljava/lang/String;
@@ -55,7 +55,7 @@
         }
     .end annotation
 
-    .line 136
+    .line 153
     new-instance v0, Lcom/google/gson/JsonIOException;
 
     iget-object p0, p0, Lcom/google/gson/internal/ConstructorConstructor$3;->val$exceptionMessage:Ljava/lang/String;

@@ -27,7 +27,7 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/SourceDebugExtension;
-    value = "SMAP\nLiveDataAdapter.kt\nKotlin\n*S Kotlin\n*F\n+ 1 LiveDataAdapter.kt\nandroidx/compose/runtime/livedata/LiveDataAdapterKt$observeAsState$1\n+ 2 Effects.kt\nandroidx/compose/runtime/DisposableEffectScope\n*L\n1#1,71:1\n63#2,5:72\n*S KotlinDebug\n*F\n+ 1 LiveDataAdapter.kt\nandroidx/compose/runtime/livedata/LiveDataAdapterKt$observeAsState$1\n*L\n67#1:72,5\n*E\n"
+    value = "SMAP\nLiveDataAdapter.kt\nKotlin\n*S Kotlin\n*F\n+ 1 LiveDataAdapter.kt\nandroidx/compose/runtime/livedata/LiveDataAdapterKt$observeAsState$1\n+ 2 Effects.kt\nandroidx/compose/runtime/DisposableEffectScope\n*L\n1#1,71:1\n64#2,5:72\n*S KotlinDebug\n*F\n+ 1 LiveDataAdapter.kt\nandroidx/compose/runtime/livedata/LiveDataAdapterKt$observeAsState$1\n*L\n67#1:72,5\n*E\n"
 .end annotation
 
 .annotation runtime Lkotlin/Metadata;
@@ -75,6 +75,14 @@
 
 
 # direct methods
+.method public static synthetic $r8$lambda$zC8jagSO85HDTKNhtdECxbEPjp0(Landroidx/compose/runtime/MutableState;Ljava/lang/Object;)V
+    .locals 0
+
+    invoke-static {p0, p1}, Landroidx/compose/runtime/livedata/LiveDataAdapterKt$observeAsState$1;->invoke$lambda$0(Landroidx/compose/runtime/MutableState;Ljava/lang/Object;)V
+
+    return-void
+.end method
+
 .method constructor <init>(Landroidx/lifecycle/LiveData;Landroidx/lifecycle/LifecycleOwner;Landroidx/compose/runtime/MutableState;)V
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
@@ -101,42 +109,45 @@
     return-void
 .end method
 
+.method private static final invoke$lambda$0(Landroidx/compose/runtime/MutableState;Ljava/lang/Object;)V
+    .locals 0
+
+    .line 65
+    invoke-interface {p0, p1}, Landroidx/compose/runtime/MutableState;->setValue(Ljava/lang/Object;)V
+
+    return-void
+.end method
+
 
 # virtual methods
 .method public final invoke(Landroidx/compose/runtime/DisposableEffectScope;)Landroidx/compose/runtime/DisposableEffectResult;
     .locals 2
 
-    const-string v0, "$this$DisposableEffect"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
     .line 65
-    new-instance p1, Landroidx/compose/runtime/livedata/LiveDataAdapterKt$observeAsState$1$observer$1;
+    iget-object p1, p0, Landroidx/compose/runtime/livedata/LiveDataAdapterKt$observeAsState$1;->$state:Landroidx/compose/runtime/MutableState;
 
-    iget-object v0, p0, Landroidx/compose/runtime/livedata/LiveDataAdapterKt$observeAsState$1;->$state:Landroidx/compose/runtime/MutableState;
+    new-instance v0, Landroidx/compose/runtime/livedata/LiveDataAdapterKt$observeAsState$1$$ExternalSyntheticLambda0;
 
-    invoke-direct {p1, v0}, Landroidx/compose/runtime/livedata/LiveDataAdapterKt$observeAsState$1$observer$1;-><init>(Landroidx/compose/runtime/MutableState;)V
-
-    check-cast p1, Landroidx/lifecycle/Observer;
+    invoke-direct {v0, p1}, Landroidx/compose/runtime/livedata/LiveDataAdapterKt$observeAsState$1$$ExternalSyntheticLambda0;-><init>(Landroidx/compose/runtime/MutableState;)V
 
     .line 66
-    iget-object v0, p0, Landroidx/compose/runtime/livedata/LiveDataAdapterKt$observeAsState$1;->$this_observeAsState:Landroidx/lifecycle/LiveData;
+    iget-object p1, p0, Landroidx/compose/runtime/livedata/LiveDataAdapterKt$observeAsState$1;->$this_observeAsState:Landroidx/lifecycle/LiveData;
 
     iget-object v1, p0, Landroidx/compose/runtime/livedata/LiveDataAdapterKt$observeAsState$1;->$lifecycleOwner:Landroidx/lifecycle/LifecycleOwner;
 
-    invoke-virtual {v0, v1, p1}, Landroidx/lifecycle/LiveData;->observe(Landroidx/lifecycle/LifecycleOwner;Landroidx/lifecycle/Observer;)V
+    invoke-virtual {p1, v1, v0}, Landroidx/lifecycle/LiveData;->observe(Landroidx/lifecycle/LifecycleOwner;Landroidx/lifecycle/Observer;)V
 
     .line 67
     iget-object p0, p0, Landroidx/compose/runtime/livedata/LiveDataAdapterKt$observeAsState$1;->$this_observeAsState:Landroidx/lifecycle/LiveData;
 
     .line 72
-    new-instance v0, Landroidx/compose/runtime/livedata/LiveDataAdapterKt$observeAsState$1$invoke$$inlined$onDispose$1;
+    new-instance p1, Landroidx/compose/runtime/livedata/LiveDataAdapterKt$observeAsState$1$invoke$$inlined$onDispose$1;
 
-    invoke-direct {v0, p0, p1}, Landroidx/compose/runtime/livedata/LiveDataAdapterKt$observeAsState$1$invoke$$inlined$onDispose$1;-><init>(Landroidx/lifecycle/LiveData;Landroidx/lifecycle/Observer;)V
+    invoke-direct {p1, p0, v0}, Landroidx/compose/runtime/livedata/LiveDataAdapterKt$observeAsState$1$invoke$$inlined$onDispose$1;-><init>(Landroidx/lifecycle/LiveData;Landroidx/lifecycle/Observer;)V
 
-    check-cast v0, Landroidx/compose/runtime/DisposableEffectResult;
+    check-cast p1, Landroidx/compose/runtime/DisposableEffectResult;
 
-    return-object v0
+    return-object p1
 .end method
 
 .method public bridge synthetic invoke(Ljava/lang/Object;)Ljava/lang/Object;

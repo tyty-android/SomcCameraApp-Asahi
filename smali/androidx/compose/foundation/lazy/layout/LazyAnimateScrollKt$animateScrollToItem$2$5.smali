@@ -30,7 +30,7 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/SourceDebugExtension;
-    value = "SMAP\nLazyAnimateScroll.kt\nKotlin\n*S Kotlin\n*F\n+ 1 LazyAnimateScroll.kt\nandroidx/compose/foundation/lazy/layout/LazyAnimateScrollKt$animateScrollToItem$2$5\n+ 2 LazyAnimateScroll.kt\nandroidx/compose/foundation/lazy/layout/LazyAnimateScrollKt\n*L\n1#1,268:1\n40#2,4:269\n40#2,4:273\n*S KotlinDebug\n*F\n+ 1 LazyAnimateScroll.kt\nandroidx/compose/foundation/lazy/layout/LazyAnimateScrollKt$animateScrollToItem$2$5\n*L\n247#1:269,4\n252#1:273,4\n*E\n"
+    value = "SMAP\nLazyAnimateScroll.kt\nKotlin\n*S Kotlin\n*F\n+ 1 LazyAnimateScroll.kt\nandroidx/compose/foundation/lazy/layout/LazyAnimateScrollKt$animateScrollToItem$2$5\n+ 2 LazyAnimateScroll.kt\nandroidx/compose/foundation/lazy/layout/LazyAnimateScrollKt\n*L\n1#1,317:1\n41#2,4:318\n41#2,4:322\n*S KotlinDebug\n*F\n+ 1 LazyAnimateScroll.kt\nandroidx/compose/foundation/lazy/layout/LazyAnimateScrollKt$animateScrollToItem$2$5\n*L\n295#1:318,4\n300#1:322,4\n*E\n"
 .end annotation
 
 .annotation runtime Lkotlin/Metadata;
@@ -85,7 +85,7 @@
 .method public bridge synthetic invoke(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
 
-    .line 237
+    .line 280
     check-cast p1, Landroidx/compose/animation/core/AnimationScope;
 
     invoke-virtual {p0, p1}, Landroidx/compose/foundation/lazy/layout/LazyAnimateScrollKt$animateScrollToItem$2$5;->invoke(Landroidx/compose/animation/core/AnimationScope;)V
@@ -107,11 +107,7 @@
         }
     .end annotation
 
-    const-string v0, "$this$animateTo"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 240
+    .line 286
     iget v0, p0, Landroidx/compose/foundation/lazy/layout/LazyAnimateScrollKt$animateScrollToItem$2$5;->$target:F
 
     const/4 v1, 0x0
@@ -120,7 +116,7 @@
 
     if-lez v2, :cond_0
 
-    .line 241
+    .line 287
     invoke-virtual {p1}, Landroidx/compose/animation/core/AnimationScope;->getValue()Ljava/lang/Object;
 
     move-result-object v0
@@ -144,7 +140,7 @@
 
     if-gez v0, :cond_1
 
-    .line 244
+    .line 291
     invoke-virtual {p1}, Landroidx/compose/animation/core/AnimationScope;->getValue()Ljava/lang/Object;
 
     move-result-object v0
@@ -161,7 +157,7 @@
 
     move-result v1
 
-    .line 251
+    .line 299
     :cond_1
     :goto_0
     iget-object v0, p0, Landroidx/compose/foundation/lazy/layout/LazyAnimateScrollKt$animateScrollToItem$2$5;->$prevValue:Lkotlin/jvm/internal/Ref$FloatRef;
@@ -170,7 +166,7 @@
 
     sub-float v0, v1, v0
 
-    .line 253
+    .line 301
     iget-object v2, p0, Landroidx/compose/foundation/lazy/layout/LazyAnimateScrollKt$animateScrollToItem$2$5;->$$this$scroll:Landroidx/compose/foundation/gestures/ScrollScope;
 
     invoke-interface {v2, v0}, Landroidx/compose/foundation/gestures/ScrollScope;->scrollBy(F)F
@@ -181,7 +177,7 @@
 
     if-nez v2, :cond_2
 
-    .line 255
+    .line 303
     invoke-virtual {p1}, Landroidx/compose/animation/core/AnimationScope;->getValue()Ljava/lang/Object;
 
     move-result-object v2
@@ -198,11 +194,11 @@
 
     goto :goto_1
 
-    .line 257
+    .line 305
     :cond_2
     invoke-virtual {p1}, Landroidx/compose/animation/core/AnimationScope;->cancelAnimation()V
 
-    .line 259
+    .line 307
     :goto_1
     iget-object p0, p0, Landroidx/compose/foundation/lazy/layout/LazyAnimateScrollKt$animateScrollToItem$2$5;->$prevValue:Lkotlin/jvm/internal/Ref$FloatRef;
 

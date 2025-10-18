@@ -25,7 +25,7 @@
 .method constructor <init>(Lcom/google/gson/internal/bind/NumberTypeAdapter;)V
     .locals 0
 
-    .line 49
+    .line 45
     iput-object p1, p0, Lcom/google/gson/internal/bind/NumberTypeAdapter$1;->val$adapter:Lcom/google/gson/internal/bind/NumberTypeAdapter;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -50,7 +50,7 @@
         }
     .end annotation
 
-    .line 52
+    .line 49
     invoke-virtual {p2}, Lcom/google/gson/reflect/TypeToken;->getRawType()Ljava/lang/Class;
 
     move-result-object p1

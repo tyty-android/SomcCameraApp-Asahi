@@ -35,16 +35,16 @@
 .method visitGenericArrayType(Ljava/lang/reflect/GenericArrayType;)V
     .locals 2
 
-    .line 874
-    invoke-interface {p1}, Ljava/lang/reflect/GenericArrayType;->getGenericComponentType()Ljava/lang/reflect/Type;
-
-    move-result-object p1
-
     const/4 v0, 0x1
 
+    .line 874
     new-array v0, v0, [Ljava/lang/reflect/Type;
 
     const/4 v1, 0x0
+
+    invoke-interface {p1}, Ljava/lang/reflect/GenericArrayType;->getGenericComponentType()Ljava/lang/reflect/Type;
+
+    move-result-object p1
 
     aput-object p1, v0, v1
 
@@ -63,16 +63,16 @@
 
     invoke-virtual {p0, v0}, Lcom/google/common/reflect/TypeToken$3;->visit([Ljava/lang/reflect/Type;)V
 
-    .line 869
-    invoke-interface {p1}, Ljava/lang/reflect/ParameterizedType;->getOwnerType()Ljava/lang/reflect/Type;
-
-    move-result-object p1
-
     const/4 v0, 0x1
 
+    .line 869
     new-array v0, v0, [Ljava/lang/reflect/Type;
 
     const/4 v1, 0x0
+
+    invoke-interface {p1}, Ljava/lang/reflect/ParameterizedType;->getOwnerType()Ljava/lang/reflect/Type;
+
+    move-result-object p1
 
     aput-object p1, v0, v1
 

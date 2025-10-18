@@ -14,62 +14,94 @@
 
 .field private final mboundView0:Landroidx/constraintlayout/widget/ConstraintLayout;
 
+.field private final mboundView1:Landroidx/constraintlayout/widget/ConstraintLayout;
+
 
 # direct methods
 .method static constructor <clinit>()V
-    .locals 5
+    .locals 6
 
     .line 15
     new-instance v0, Landroidx/databinding/ViewDataBinding$IncludedLayouts;
 
-    const/4 v1, 0x4
+    const/4 v1, 0x7
 
     invoke-direct {v0, v1}, Landroidx/databinding/ViewDataBinding$IncludedLayouts;-><init>(I)V
 
     sput-object v0, Ljp/co/sony/mc/camera/databinding/FragmentMoreModeSelectionBindingImpl;->sIncludes:Landroidx/databinding/ViewDataBinding$IncludedLayouts;
 
+    const/4 v1, 0x1
+
     .line 16
-    const-string v1, "fragment_basic_mode_indicator"
+    new-array v2, v1, [Ljava/lang/String;
 
-    filled-new-array {v1}, [Ljava/lang/String;
+    const-string v3, "mode_custom_layout"
 
-    move-result-object v1
+    const/4 v4, 0x0
 
-    const/4 v2, 0x1
+    aput-object v3, v2, v4
 
-    filled-new-array {v2}, [I
-
-    move-result-object v2
-
-    const v3, 0x7f0c0065
+    const/4 v3, 0x3
 
     filled-new-array {v3}, [I
 
     move-result-object v3
 
-    const/4 v4, 0x0
+    const v5, 0x7f0c00eb
 
-    invoke-virtual {v0, v4, v1, v2, v3}, Landroidx/databinding/ViewDataBinding$IncludedLayouts;->setIncludes(I[Ljava/lang/String;[I[I)V
+    filled-new-array {v5}, [I
+
+    move-result-object v5
+
+    invoke-virtual {v0, v4, v2, v3, v5}, Landroidx/databinding/ViewDataBinding$IncludedLayouts;->setIncludes(I[Ljava/lang/String;[I[I)V
 
     .line 20
+    new-array v2, v1, [Ljava/lang/String;
+
+    const-string v3, "fragment_basic_mode_indicator"
+
+    aput-object v3, v2, v4
+
+    const/4 v3, 0x2
+
+    filled-new-array {v3}, [I
+
+    move-result-object v3
+
+    const v4, 0x7f0c0065
+
+    filled-new-array {v4}, [I
+
+    move-result-object v4
+
+    invoke-virtual {v0, v1, v2, v3, v4}, Landroidx/databinding/ViewDataBinding$IncludedLayouts;->setIncludes(I[Ljava/lang/String;[I[I)V
+
+    .line 24
     new-instance v0, Landroid/util/SparseIntArray;
 
     invoke-direct {v0}, Landroid/util/SparseIntArray;-><init>()V
 
     sput-object v0, Ljp/co/sony/mc/camera/databinding/FragmentMoreModeSelectionBindingImpl;->sViewsWithIds:Landroid/util/SparseIntArray;
 
-    const v1, 0x7f0901d3
+    const v1, 0x7f0901d0
 
-    const/4 v2, 0x2
+    const/4 v2, 0x4
 
-    .line 21
+    .line 25
     invoke-virtual {v0, v1, v2}, Landroid/util/SparseIntArray;->put(II)V
 
-    const v1, 0x7f090306
+    const v1, 0x7f0902ff
 
-    const/4 v2, 0x3
+    const/4 v2, 0x5
 
-    .line 22
+    .line 26
+    invoke-virtual {v0, v1, v2}, Landroid/util/SparseIntArray;->put(II)V
+
+    const v1, 0x7f0902fe
+
+    const/4 v2, 0x6
+
+    .line 27
     invoke-virtual {v0, v1, v2}, Landroid/util/SparseIntArray;->put(II)V
 
     return-void
@@ -78,12 +110,12 @@
 .method public constructor <init>(Landroidx/databinding/DataBindingComponent;Landroid/view/View;)V
     .locals 3
 
-    .line 33
+    .line 40
     sget-object v0, Ljp/co/sony/mc/camera/databinding/FragmentMoreModeSelectionBindingImpl;->sIncludes:Landroidx/databinding/ViewDataBinding$IncludedLayouts;
 
     sget-object v1, Ljp/co/sony/mc/camera/databinding/FragmentMoreModeSelectionBindingImpl;->sViewsWithIds:Landroid/util/SparseIntArray;
 
-    const/4 v2, 0x4
+    const/4 v2, 0x7
 
     invoke-static {p1, p2, v2, v0, v1}, Ljp/co/sony/mc/camera/databinding/FragmentMoreModeSelectionBindingImpl;->mapBindings(Landroidx/databinding/DataBindingComponent;Landroid/view/View;ILandroidx/databinding/ViewDataBinding$IncludedLayouts;Landroid/util/SparseIntArray;)[Ljava/lang/Object;
 
@@ -95,11 +127,11 @@
 .end method
 
 .method private constructor <init>(Landroidx/databinding/DataBindingComponent;Landroid/view/View;[Ljava/lang/Object;)V
-    .locals 8
+    .locals 10
 
-    const/4 v0, 0x2
+    const/4 v0, 0x4
 
-    .line 36
+    .line 43
     aget-object v0, p3, v0
 
     move-object v5, v0
@@ -112,17 +144,33 @@
 
     move-object v6, v0
 
-    check-cast v6, Landroidx/recyclerview/widget/RecyclerView;
+    check-cast v6, Ljp/co/sony/mc/camera/databinding/ModeCustomLayoutBinding;
 
-    const/4 v0, 0x1
+    const/4 v0, 0x6
 
     aget-object v0, p3, v0
 
     move-object v7, v0
 
-    check-cast v7, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeIndicatorBinding;
+    check-cast v7, Landroidx/recyclerview/widget/RecyclerView;
 
-    const/4 v4, 0x1
+    const/4 v0, 0x5
+
+    aget-object v0, p3, v0
+
+    move-object v8, v0
+
+    check-cast v8, Landroidx/core/widget/NestedScrollView;
+
+    const/4 v0, 0x2
+
+    aget-object v0, p3, v0
+
+    move-object v9, v0
+
+    check-cast v9, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeIndicatorBinding;
+
+    const/4 v4, 0x3
 
     move-object v1, p0
 
@@ -130,39 +178,144 @@
 
     move-object v3, p2
 
-    invoke-direct/range {v1 .. v7}, Ljp/co/sony/mc/camera/databinding/FragmentMoreModeSelectionBinding;-><init>(Ljava/lang/Object;Landroid/view/View;ILandroid/widget/Space;Landroidx/recyclerview/widget/RecyclerView;Ljp/co/sony/mc/camera/databinding/FragmentBasicModeIndicatorBinding;)V
+    invoke-direct/range {v1 .. v9}, Ljp/co/sony/mc/camera/databinding/FragmentMoreModeSelectionBinding;-><init>(Ljava/lang/Object;Landroid/view/View;ILandroid/widget/Space;Ljp/co/sony/mc/camera/databinding/ModeCustomLayoutBinding;Landroidx/recyclerview/widget/RecyclerView;Landroidx/core/widget/NestedScrollView;Ljp/co/sony/mc/camera/databinding/FragmentBasicModeIndicatorBinding;)V
 
     const-wide/16 v0, -0x1
 
-    .line 114
+    .line 210
     iput-wide v0, p0, Ljp/co/sony/mc/camera/databinding/FragmentMoreModeSelectionBindingImpl;->mDirtyFlags:J
 
     const/4 p1, 0x0
 
-    .line 41
+    .line 50
     aget-object p1, p3, p1
 
     check-cast p1, Landroidx/constraintlayout/widget/ConstraintLayout;
 
     iput-object p1, p0, Ljp/co/sony/mc/camera/databinding/FragmentMoreModeSelectionBindingImpl;->mboundView0:Landroidx/constraintlayout/widget/ConstraintLayout;
 
-    const/4 p3, 0x0
+    const/4 v0, 0x0
 
-    .line 42
-    invoke-virtual {p1, p3}, Landroidx/constraintlayout/widget/ConstraintLayout;->setTag(Ljava/lang/Object;)V
+    .line 51
+    invoke-virtual {p1, v0}, Landroidx/constraintlayout/widget/ConstraintLayout;->setTag(Ljava/lang/Object;)V
 
-    .line 43
+    const/4 p1, 0x1
+
+    .line 52
+    aget-object p1, p3, p1
+
+    check-cast p1, Landroidx/constraintlayout/widget/ConstraintLayout;
+
+    iput-object p1, p0, Ljp/co/sony/mc/camera/databinding/FragmentMoreModeSelectionBindingImpl;->mboundView1:Landroidx/constraintlayout/widget/ConstraintLayout;
+
+    .line 53
+    invoke-virtual {p1, v0}, Landroidx/constraintlayout/widget/ConstraintLayout;->setTag(Ljava/lang/Object;)V
+
+    .line 54
+    iget-object p1, p0, Ljp/co/sony/mc/camera/databinding/FragmentMoreModeSelectionBindingImpl;->modeCustomLayout:Ljp/co/sony/mc/camera/databinding/ModeCustomLayoutBinding;
+
+    invoke-virtual {p0, p1}, Ljp/co/sony/mc/camera/databinding/FragmentMoreModeSelectionBindingImpl;->setContainedBinding(Landroidx/databinding/ViewDataBinding;)V
+
+    .line 55
     iget-object p1, p0, Ljp/co/sony/mc/camera/databinding/FragmentMoreModeSelectionBindingImpl;->moreIndicator:Ljp/co/sony/mc/camera/databinding/FragmentBasicModeIndicatorBinding;
 
     invoke-virtual {p0, p1}, Ljp/co/sony/mc/camera/databinding/FragmentMoreModeSelectionBindingImpl;->setContainedBinding(Landroidx/databinding/ViewDataBinding;)V
 
-    .line 44
+    .line 56
     invoke-virtual {p0, p2}, Ljp/co/sony/mc/camera/databinding/FragmentMoreModeSelectionBindingImpl;->setRootTag(Landroid/view/View;)V
 
-    .line 46
+    .line 58
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/databinding/FragmentMoreModeSelectionBindingImpl;->invalidateAll()V
 
     return-void
+.end method
+
+.method private onChangeModeCustomLayout(Ljp/co/sony/mc/camera/databinding/ModeCustomLayoutBinding;I)Z
+    .locals 2
+
+    if-nez p2, :cond_0
+
+    .line 138
+    monitor-enter p0
+
+    .line 139
+    :try_start_0
+    iget-wide p1, p0, Ljp/co/sony/mc/camera/databinding/FragmentMoreModeSelectionBindingImpl;->mDirtyFlags:J
+
+    const-wide/16 v0, 0x2
+
+    or-long/2addr p1, v0
+
+    iput-wide p1, p0, Ljp/co/sony/mc/camera/databinding/FragmentMoreModeSelectionBindingImpl;->mDirtyFlags:J
+
+    .line 140
+    monitor-exit p0
+
+    const/4 p0, 0x1
+
+    return p0
+
+    :catchall_0
+    move-exception p1
+
+    monitor-exit p0
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    throw p1
+
+    :cond_0
+    const/4 p0, 0x0
+
+    return p0
+.end method
+
+.method private onChangeModeCustomUiStateIsModeCustomLayoutVisible(Landroidx/lifecycle/LiveData;I)Z
+    .locals 2
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Landroidx/lifecycle/LiveData<",
+            "Ljava/lang/Boolean;",
+            ">;I)Z"
+        }
+    .end annotation
+
+    if-nez p2, :cond_0
+
+    .line 147
+    monitor-enter p0
+
+    .line 148
+    :try_start_0
+    iget-wide p1, p0, Ljp/co/sony/mc/camera/databinding/FragmentMoreModeSelectionBindingImpl;->mDirtyFlags:J
+
+    const-wide/16 v0, 0x4
+
+    or-long/2addr p1, v0
+
+    iput-wide p1, p0, Ljp/co/sony/mc/camera/databinding/FragmentMoreModeSelectionBindingImpl;->mDirtyFlags:J
+
+    .line 149
+    monitor-exit p0
+
+    const/4 p0, 0x1
+
+    return p0
+
+    :catchall_0
+    move-exception p1
+
+    monitor-exit p0
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    throw p1
+
+    :cond_0
+    const/4 p0, 0x0
+
+    return p0
 .end method
 
 .method private onChangeMoreIndicator(Ljp/co/sony/mc/camera/databinding/FragmentBasicModeIndicatorBinding;I)Z
@@ -170,10 +323,10 @@
 
     if-nez p2, :cond_0
 
-    .line 93
+    .line 129
     monitor-enter p0
 
-    .line 94
+    .line 130
     :try_start_0
     iget-wide p1, p0, Ljp/co/sony/mc/camera/databinding/FragmentMoreModeSelectionBindingImpl;->mDirtyFlags:J
 
@@ -183,7 +336,7 @@
 
     iput-wide p1, p0, Ljp/co/sony/mc/camera/databinding/FragmentMoreModeSelectionBindingImpl;->mDirtyFlags:J
 
-    .line 95
+    .line 131
     monitor-exit p0
 
     const/4 p0, 0x1
@@ -208,24 +361,114 @@
 
 # virtual methods
 .method protected executeBindings()V
-    .locals 2
+    .locals 7
 
-    .line 104
+    .line 158
     monitor-enter p0
 
-    const-wide/16 v0, 0x0
-
-    .line 106
+    .line 159
     :try_start_0
-    iput-wide v0, p0, Ljp/co/sony/mc/camera/databinding/FragmentMoreModeSelectionBindingImpl;->mDirtyFlags:J
+    iget-wide v0, p0, Ljp/co/sony/mc/camera/databinding/FragmentMoreModeSelectionBindingImpl;->mDirtyFlags:J
 
-    .line 107
+    const-wide/16 v2, 0x0
+
+    .line 160
+    iput-wide v2, p0, Ljp/co/sony/mc/camera/databinding/FragmentMoreModeSelectionBindingImpl;->mDirtyFlags:J
+
+    .line 161
     monitor-exit p0
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 109
-    iget-object p0, p0, Ljp/co/sony/mc/camera/databinding/FragmentMoreModeSelectionBindingImpl;->moreIndicator:Ljp/co/sony/mc/camera/databinding/FragmentBasicModeIndicatorBinding;
+    .line 167
+    iget-object v4, p0, Ljp/co/sony/mc/camera/databinding/FragmentMoreModeSelectionBindingImpl;->mModeCustomUiState:Ljp/co/sony/mc/camera/view/uistate/ModeCustomUiState;
+
+    const-wide/16 v5, 0x1c
+
+    and-long/2addr v0, v5
+
+    cmp-long v0, v0, v2
+
+    if-eqz v0, :cond_2
+
+    const/4 v1, 0x0
+
+    if-eqz v4, :cond_0
+
+    .line 175
+    invoke-virtual {v4}, Ljp/co/sony/mc/camera/view/uistate/ModeCustomUiState;->isModeCustomLayoutVisible()Landroidx/lifecycle/LiveData;
+
+    move-result-object v2
+
+    goto :goto_0
+
+    :cond_0
+    move-object v2, v1
+
+    :goto_0
+    const/4 v3, 0x2
+
+    .line 177
+    invoke-virtual {p0, v3, v2}, Ljp/co/sony/mc/camera/databinding/FragmentMoreModeSelectionBindingImpl;->updateLiveDataRegistration(ILandroidx/lifecycle/LiveData;)Z
+
+    if-eqz v2, :cond_1
+
+    .line 182
+    invoke-virtual {v2}, Landroidx/lifecycle/LiveData;->getValue()Ljava/lang/Object;
+
+    move-result-object v1
+
+    check-cast v1, Ljava/lang/Boolean;
+
+    .line 187
+    :cond_1
+    invoke-static {v1}, Landroidx/databinding/ViewDataBinding;->safeUnbox(Ljava/lang/Boolean;)Z
+
+    move-result v1
+
+    xor-int/lit8 v2, v1, 0x1
+
+    .line 195
+    invoke-static {v2}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
+
+    move-result-object v2
+
+    invoke-static {v2}, Landroidx/databinding/ViewDataBinding;->safeUnbox(Ljava/lang/Boolean;)Z
+
+    move-result v2
+
+    goto :goto_1
+
+    :cond_2
+    const/4 v1, 0x0
+
+    move v2, v1
+
+    :goto_1
+    if-eqz v0, :cond_3
+
+    .line 201
+    iget-object v0, p0, Ljp/co/sony/mc/camera/databinding/FragmentMoreModeSelectionBindingImpl;->mboundView1:Landroidx/constraintlayout/widget/ConstraintLayout;
+
+    invoke-static {v0, v2}, Ljp/co/sony/mc/camera/view/viewbinder/BindingAdapters;->setVisible(Landroid/view/View;Z)V
+
+    .line 202
+    iget-object v0, p0, Ljp/co/sony/mc/camera/databinding/FragmentMoreModeSelectionBindingImpl;->modeCustomLayout:Ljp/co/sony/mc/camera/databinding/ModeCustomLayoutBinding;
+
+    invoke-virtual {v0}, Ljp/co/sony/mc/camera/databinding/ModeCustomLayoutBinding;->getRoot()Landroid/view/View;
+
+    move-result-object v0
+
+    invoke-static {v0, v1}, Ljp/co/sony/mc/camera/view/viewbinder/BindingAdapters;->setVisible(Landroid/view/View;Z)V
+
+    .line 204
+    :cond_3
+    iget-object v0, p0, Ljp/co/sony/mc/camera/databinding/FragmentMoreModeSelectionBindingImpl;->moreIndicator:Ljp/co/sony/mc/camera/databinding/FragmentBasicModeIndicatorBinding;
+
+    invoke-static {v0}, Ljp/co/sony/mc/camera/databinding/FragmentMoreModeSelectionBindingImpl;->executeBindingsOn(Landroidx/databinding/ViewDataBinding;)V
+
+    .line 205
+    iget-object p0, p0, Ljp/co/sony/mc/camera/databinding/FragmentMoreModeSelectionBindingImpl;->modeCustomLayout:Ljp/co/sony/mc/camera/databinding/ModeCustomLayoutBinding;
 
     invoke-static {p0}, Ljp/co/sony/mc/camera/databinding/FragmentMoreModeSelectionBindingImpl;->executeBindingsOn(Landroidx/databinding/ViewDataBinding;)V
 
@@ -234,7 +477,7 @@
     :catchall_0
     move-exception v0
 
-    .line 107
+    .line 161
     :try_start_1
     monitor-exit p0
     :try_end_1
@@ -246,10 +489,10 @@
 .method public hasPendingBindings()Z
     .locals 4
 
-    .line 60
+    .line 73
     monitor-enter p0
 
-    .line 61
+    .line 74
     :try_start_0
     iget-wide v0, p0, Ljp/co/sony/mc/camera/databinding/FragmentMoreModeSelectionBindingImpl;->mDirtyFlags:J
 
@@ -261,29 +504,41 @@
 
     if-eqz v0, :cond_0
 
-    .line 62
+    .line 75
     monitor-exit p0
 
     return v1
 
-    .line 64
+    .line 77
     :cond_0
     monitor-exit p0
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 65
-    iget-object p0, p0, Ljp/co/sony/mc/camera/databinding/FragmentMoreModeSelectionBindingImpl;->moreIndicator:Ljp/co/sony/mc/camera/databinding/FragmentBasicModeIndicatorBinding;
+    .line 78
+    iget-object v0, p0, Ljp/co/sony/mc/camera/databinding/FragmentMoreModeSelectionBindingImpl;->moreIndicator:Ljp/co/sony/mc/camera/databinding/FragmentBasicModeIndicatorBinding;
 
-    invoke-virtual {p0}, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeIndicatorBinding;->hasPendingBindings()Z
+    invoke-virtual {v0}, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeIndicatorBinding;->hasPendingBindings()Z
 
-    move-result p0
+    move-result v0
 
-    if-eqz p0, :cond_1
+    if-eqz v0, :cond_1
 
     return v1
 
+    .line 81
     :cond_1
+    iget-object p0, p0, Ljp/co/sony/mc/camera/databinding/FragmentMoreModeSelectionBindingImpl;->modeCustomLayout:Ljp/co/sony/mc/camera/databinding/ModeCustomLayoutBinding;
+
+    invoke-virtual {p0}, Ljp/co/sony/mc/camera/databinding/ModeCustomLayoutBinding;->hasPendingBindings()Z
+
+    move-result p0
+
+    if-eqz p0, :cond_2
+
+    return v1
+
+    :cond_2
     const/4 p0, 0x0
 
     return p0
@@ -291,7 +546,7 @@
     :catchall_0
     move-exception v0
 
-    .line 64
+    .line 77
     :try_start_1
     monitor-exit p0
     :try_end_1
@@ -303,26 +558,31 @@
 .method public invalidateAll()V
     .locals 2
 
-    .line 51
+    .line 63
     monitor-enter p0
 
-    const-wide/16 v0, 0x2
+    const-wide/16 v0, 0x10
 
-    .line 52
+    .line 64
     :try_start_0
     iput-wide v0, p0, Ljp/co/sony/mc/camera/databinding/FragmentMoreModeSelectionBindingImpl;->mDirtyFlags:J
 
-    .line 53
+    .line 65
     monitor-exit p0
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 54
+    .line 66
     iget-object v0, p0, Ljp/co/sony/mc/camera/databinding/FragmentMoreModeSelectionBindingImpl;->moreIndicator:Ljp/co/sony/mc/camera/databinding/FragmentBasicModeIndicatorBinding;
 
     invoke-virtual {v0}, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeIndicatorBinding;->invalidateAll()V
 
-    .line 55
+    .line 67
+    iget-object v0, p0, Ljp/co/sony/mc/camera/databinding/FragmentMoreModeSelectionBindingImpl;->modeCustomLayout:Ljp/co/sony/mc/camera/databinding/ModeCustomLayoutBinding;
+
+    invoke-virtual {v0}, Ljp/co/sony/mc/camera/databinding/ModeCustomLayoutBinding;->invalidateAll()V
+
+    .line 68
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/databinding/FragmentMoreModeSelectionBindingImpl;->requestRebind()V
 
     return-void
@@ -330,7 +590,7 @@
     :catchall_0
     move-exception v0
 
-    .line 53
+    .line 65
     :try_start_1
     monitor-exit p0
     :try_end_1
@@ -340,16 +600,44 @@
 .end method
 
 .method protected onFieldChange(ILjava/lang/Object;I)Z
-    .locals 0
+    .locals 1
 
-    if-eqz p1, :cond_0
+    if-eqz p1, :cond_2
+
+    const/4 v0, 0x1
+
+    if-eq p1, v0, :cond_1
+
+    const/4 v0, 0x2
+
+    if-eq p1, v0, :cond_0
 
     const/4 p0, 0x0
 
     return p0
 
-    .line 87
+    .line 123
     :cond_0
+    check-cast p2, Landroidx/lifecycle/LiveData;
+
+    invoke-direct {p0, p2, p3}, Ljp/co/sony/mc/camera/databinding/FragmentMoreModeSelectionBindingImpl;->onChangeModeCustomUiStateIsModeCustomLayoutVisible(Landroidx/lifecycle/LiveData;I)Z
+
+    move-result p0
+
+    return p0
+
+    .line 121
+    :cond_1
+    check-cast p2, Ljp/co/sony/mc/camera/databinding/ModeCustomLayoutBinding;
+
+    invoke-direct {p0, p2, p3}, Ljp/co/sony/mc/camera/databinding/FragmentMoreModeSelectionBindingImpl;->onChangeModeCustomLayout(Ljp/co/sony/mc/camera/databinding/ModeCustomLayoutBinding;I)Z
+
+    move-result p0
+
+    return p0
+
+    .line 119
+    :cond_2
     check-cast p2, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeIndicatorBinding;
 
     invoke-direct {p0, p2, p3}, Ljp/co/sony/mc/camera/databinding/FragmentMoreModeSelectionBindingImpl;->onChangeMoreIndicator(Ljp/co/sony/mc/camera/databinding/FragmentBasicModeIndicatorBinding;I)Z
@@ -360,23 +648,89 @@
 .end method
 
 .method public setLifecycleOwner(Landroidx/lifecycle/LifecycleOwner;)V
-    .locals 0
+    .locals 1
 
-    .line 79
+    .line 110
     invoke-super {p0, p1}, Ljp/co/sony/mc/camera/databinding/FragmentMoreModeSelectionBinding;->setLifecycleOwner(Landroidx/lifecycle/LifecycleOwner;)V
 
-    .line 80
-    iget-object p0, p0, Ljp/co/sony/mc/camera/databinding/FragmentMoreModeSelectionBindingImpl;->moreIndicator:Ljp/co/sony/mc/camera/databinding/FragmentBasicModeIndicatorBinding;
+    .line 111
+    iget-object v0, p0, Ljp/co/sony/mc/camera/databinding/FragmentMoreModeSelectionBindingImpl;->moreIndicator:Ljp/co/sony/mc/camera/databinding/FragmentBasicModeIndicatorBinding;
 
-    invoke-virtual {p0, p1}, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeIndicatorBinding;->setLifecycleOwner(Landroidx/lifecycle/LifecycleOwner;)V
+    invoke-virtual {v0, p1}, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeIndicatorBinding;->setLifecycleOwner(Landroidx/lifecycle/LifecycleOwner;)V
+
+    .line 112
+    iget-object p0, p0, Ljp/co/sony/mc/camera/databinding/FragmentMoreModeSelectionBindingImpl;->modeCustomLayout:Ljp/co/sony/mc/camera/databinding/ModeCustomLayoutBinding;
+
+    invoke-virtual {p0, p1}, Ljp/co/sony/mc/camera/databinding/ModeCustomLayoutBinding;->setLifecycleOwner(Landroidx/lifecycle/LifecycleOwner;)V
 
     return-void
 .end method
 
+.method public setModeCustomUiState(Ljp/co/sony/mc/camera/view/uistate/ModeCustomUiState;)V
+    .locals 4
+
+    .line 100
+    iput-object p1, p0, Ljp/co/sony/mc/camera/databinding/FragmentMoreModeSelectionBindingImpl;->mModeCustomUiState:Ljp/co/sony/mc/camera/view/uistate/ModeCustomUiState;
+
+    .line 101
+    monitor-enter p0
+
+    .line 102
+    :try_start_0
+    iget-wide v0, p0, Ljp/co/sony/mc/camera/databinding/FragmentMoreModeSelectionBindingImpl;->mDirtyFlags:J
+
+    const-wide/16 v2, 0x8
+
+    or-long/2addr v0, v2
+
+    iput-wide v0, p0, Ljp/co/sony/mc/camera/databinding/FragmentMoreModeSelectionBindingImpl;->mDirtyFlags:J
+
+    .line 103
+    monitor-exit p0
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    const/16 p1, 0x14
+
+    .line 104
+    invoke-virtual {p0, p1}, Ljp/co/sony/mc/camera/databinding/FragmentMoreModeSelectionBindingImpl;->notifyPropertyChanged(I)V
+
+    .line 105
+    invoke-super {p0}, Ljp/co/sony/mc/camera/databinding/FragmentMoreModeSelectionBinding;->requestRebind()V
+
+    return-void
+
+    :catchall_0
+    move-exception p1
+
+    .line 103
+    :try_start_1
+    monitor-exit p0
+    :try_end_1
+    .catchall {:try_start_1 .. :try_end_1} :catchall_0
+
+    throw p1
+.end method
+
 .method public setVariable(ILjava/lang/Object;)Z
-    .locals 0
+    .locals 1
+
+    const/16 v0, 0x14
+
+    if-ne v0, p1, :cond_0
+
+    .line 91
+    check-cast p2, Ljp/co/sony/mc/camera/view/uistate/ModeCustomUiState;
+
+    invoke-virtual {p0, p2}, Ljp/co/sony/mc/camera/databinding/FragmentMoreModeSelectionBindingImpl;->setModeCustomUiState(Ljp/co/sony/mc/camera/view/uistate/ModeCustomUiState;)V
 
     const/4 p0, 0x1
 
+    goto :goto_0
+
+    :cond_0
+    const/4 p0, 0x0
+
+    :goto_0
     return p0
 .end method

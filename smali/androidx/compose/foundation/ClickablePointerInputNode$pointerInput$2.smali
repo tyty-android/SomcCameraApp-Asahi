@@ -56,7 +56,7 @@
     f = "Clickable.kt"
     i = {}
     l = {
-        0x37c
+        0x3d8
     }
     m = "invokeSuspend"
     n = {}
@@ -160,7 +160,7 @@
 
     move-result-object v0
 
-    .line 890
+    .line 982
     iget v1, p0, Landroidx/compose/foundation/ClickablePointerInputNode$pointerInput$2;->label:I
 
     const/4 v2, 0x1
@@ -191,7 +191,7 @@
 
     iget-wide v3, p0, Landroidx/compose/foundation/ClickablePointerInputNode$pointerInput$2;->J$0:J
 
-    .line 891
+    .line 983
     iget-object v1, p0, Landroidx/compose/foundation/ClickablePointerInputNode$pointerInput$2;->this$0:Landroidx/compose/foundation/ClickablePointerInputNode;
 
     invoke-virtual {v1}, Landroidx/compose/foundation/ClickablePointerInputNode;->getEnabled()Z
@@ -200,7 +200,7 @@
 
     if-eqz v1, :cond_2
 
-    .line 892
+    .line 984
     iget-object v1, p0, Landroidx/compose/foundation/ClickablePointerInputNode$pointerInput$2;->this$0:Landroidx/compose/foundation/ClickablePointerInputNode;
 
     move-object v5, p0
@@ -217,7 +217,7 @@
 
     return-object v0
 
-    .line 894
+    .line 986
     :cond_2
     :goto_0
     sget-object p0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;

@@ -598,11 +598,13 @@
 
     .line 161
     :catch_0
-    const-string p2, "Muxer can not write"
+    new-array p2, v4, [Ljava/lang/String;
 
-    filled-new-array {p2}, [Ljava/lang/String;
+    const/4 v1, 0x0
 
-    move-result-object p2
+    const-string v5, "Muxer can not write"
+
+    aput-object v5, p2, v1
 
     invoke-static {p2}, Ljp/co/sony/mc/camera/util/CamLog;->e([Ljava/lang/String;)V
 

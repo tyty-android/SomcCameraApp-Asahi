@@ -20,22 +20,24 @@
     value = {
         "Lkotlin/jvm/internal/Lambda;",
         "Lkotlin/jvm/functions/Function1<",
-        "Ljava/lang/Float;",
-        "Ljava/lang/Float;",
+        "Landroidx/compose/material/DraggableAnchorsConfig<",
+        "Ljava/lang/Boolean;",
+        ">;",
+        "Lkotlin/Unit;",
         ">;"
     }
 .end annotation
 
 .annotation runtime Lkotlin/Metadata;
     d1 = {
-        "\u0000\n\n\u0000\n\u0002\u0010\u0007\n\u0002\u0008\u0003\u0010\u0000\u001a\u00020\u00012\u0006\u0010\u0002\u001a\u00020\u0001H\n\u00a2\u0006\u0004\u0008\u0003\u0010\u0004"
+        "\u0000\u0010\n\u0000\n\u0002\u0010\u0002\n\u0002\u0018\u0002\n\u0002\u0010\u000b\n\u0000\u0010\u0000\u001a\u00020\u0001*\u0008\u0012\u0004\u0012\u00020\u00030\u0002H\n\u00a2\u0006\u0002\u0008\u0004"
     }
     d2 = {
         "<anonymous>",
         "",
-        "distance",
-        "invoke",
-        "(F)Ljava/lang/Float;"
+        "Landroidx/compose/material/DraggableAnchorsConfig;",
+        "",
+        "invoke"
     }
     k = 0x3
     mv = {
@@ -47,63 +49,74 @@
 .end annotation
 
 
-# static fields
-.field public static final INSTANCE:Landroidx/compose/material/SwitchKt$Switch$anchoredDraggableState$1$1;
+# instance fields
+.field final synthetic $maxBound:F
+
+.field final synthetic $minBound:F
 
 
 # direct methods
-.method static constructor <clinit>()V
-    .locals 1
+.method constructor <init>(FF)V
+    .locals 0
 
-    new-instance v0, Landroidx/compose/material/SwitchKt$Switch$anchoredDraggableState$1$1;
+    iput p1, p0, Landroidx/compose/material/SwitchKt$Switch$anchoredDraggableState$1$1;->$minBound:F
 
-    invoke-direct {v0}, Landroidx/compose/material/SwitchKt$Switch$anchoredDraggableState$1$1;-><init>()V
+    iput p2, p0, Landroidx/compose/material/SwitchKt$Switch$anchoredDraggableState$1$1;->$maxBound:F
 
-    sput-object v0, Landroidx/compose/material/SwitchKt$Switch$anchoredDraggableState$1$1;->INSTANCE:Landroidx/compose/material/SwitchKt$Switch$anchoredDraggableState$1$1;
+    const/4 p1, 0x1
 
-    return-void
-.end method
-
-.method constructor <init>()V
-    .locals 1
-
-    const/4 v0, 0x1
-
-    invoke-direct {p0, v0}, Lkotlin/jvm/internal/Lambda;-><init>(I)V
+    invoke-direct {p0, p1}, Lkotlin/jvm/internal/Lambda;-><init>(I)V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final invoke(F)Ljava/lang/Float;
+.method public bridge synthetic invoke(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
 
-    const p0, 0x3f333333    # 0.7f
+    .line 114
+    check-cast p1, Landroidx/compose/material/DraggableAnchorsConfig;
 
-    mul-float/2addr p1, p0
+    invoke-virtual {p0, p1}, Landroidx/compose/material/SwitchKt$Switch$anchoredDraggableState$1$1;->invoke(Landroidx/compose/material/DraggableAnchorsConfig;)V
 
-    .line 115
-    invoke-static {p1}, Ljava/lang/Float;->valueOf(F)Ljava/lang/Float;
-
-    move-result-object p0
+    sget-object p0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
 
     return-object p0
 .end method
 
-.method public bridge synthetic invoke(Ljava/lang/Object;)Ljava/lang/Object;
-    .locals 0
+.method public final invoke(Landroidx/compose/material/DraggableAnchorsConfig;)V
+    .locals 2
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Landroidx/compose/material/DraggableAnchorsConfig<",
+            "Ljava/lang/Boolean;",
+            ">;)V"
+        }
+    .end annotation
+
+    const/4 v0, 0x0
 
     .line 115
-    check-cast p1, Ljava/lang/Number;
+    invoke-static {v0}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
-    invoke-virtual {p1}, Ljava/lang/Number;->floatValue()F
+    move-result-object v0
 
-    move-result p1
+    iget v1, p0, Landroidx/compose/material/SwitchKt$Switch$anchoredDraggableState$1$1;->$minBound:F
 
-    invoke-virtual {p0, p1}, Landroidx/compose/material/SwitchKt$Switch$anchoredDraggableState$1$1;->invoke(F)Ljava/lang/Float;
+    invoke-virtual {p1, v0, v1}, Landroidx/compose/material/DraggableAnchorsConfig;->at(Ljava/lang/Object;F)V
 
-    move-result-object p0
+    const/4 v0, 0x1
 
-    return-object p0
+    .line 116
+    invoke-static {v0}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
+
+    move-result-object v0
+
+    iget p0, p0, Landroidx/compose/material/SwitchKt$Switch$anchoredDraggableState$1$1;->$maxBound:F
+
+    invoke-virtual {p1, v0, p0}, Landroidx/compose/material/DraggableAnchorsConfig;->at(Ljava/lang/Object;F)V
+
+    return-void
 .end method

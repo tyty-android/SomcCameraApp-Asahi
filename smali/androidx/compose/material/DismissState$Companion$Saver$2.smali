@@ -88,11 +88,7 @@
 .method public final invoke(Landroidx/compose/material/DismissValue;)Landroidx/compose/material/DismissState;
     .locals 1
 
-    const-string v0, "it"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 136
+    .line 137
     new-instance v0, Landroidx/compose/material/DismissState;
 
     iget-object p0, p0, Landroidx/compose/material/DismissState$Companion$Saver$2;->$confirmStateChange:Lkotlin/jvm/functions/Function1;
@@ -105,7 +101,7 @@
 .method public bridge synthetic invoke(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
 
-    .line 134
+    .line 135
     check-cast p1, Landroidx/compose/material/DismissValue;
 
     invoke-virtual {p0, p1}, Landroidx/compose/material/DismissState$Companion$Saver$2;->invoke(Landroidx/compose/material/DismissValue;)Landroidx/compose/material/DismissState;

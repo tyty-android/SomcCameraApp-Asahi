@@ -25,7 +25,7 @@
 .method constructor <init>(Ljp/co/sony/mc/camera/CameraActivity;)V
     .locals 0
 
-    .line 473
+    .line 477
     iput-object p1, p0, Ljp/co/sony/mc/camera/CameraActivity$3;->this$0:Ljp/co/sony/mc/camera/CameraActivity;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -38,7 +38,7 @@
 .method public onPowerConnectionStateChanged(Z)V
     .locals 0
 
-    .line 476
+    .line 480
     iget-object p0, p0, Ljp/co/sony/mc/camera/CameraActivity$3;->this$0:Ljp/co/sony/mc/camera/CameraActivity;
 
     invoke-static {p0}, Ljp/co/sony/mc/camera/CameraActivity;->-$$Nest$fgetmSystemEventNotifier(Ljp/co/sony/mc/camera/CameraActivity;)Ljp/co/sony/mc/camera/SystemEventNotifierImpl;

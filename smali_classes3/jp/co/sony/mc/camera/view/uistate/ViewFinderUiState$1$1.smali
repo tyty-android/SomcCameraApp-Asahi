@@ -32,19 +32,22 @@
 
 .annotation runtime Lkotlin/Metadata;
     d1 = {
-        "\u0000\u000e\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0010\u000b\n\u0000\u0010\u0000\u001a\u00020\u00012\u000e\u0010\u0002\u001a\n \u0004*\u0004\u0018\u00010\u00030\u0003H\u008a@"
+        "\u0000\u0014\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0010\u000b\n\u0002\u0018\u0002\n\u0002\u0008\u0003\u0010\u0000\u001a\u00020\u00012,\u0010\u0002\u001a( \u0007*\u0013\u0018\u00010\u0003\u00a2\u0006\u000c\u0008\u0004\u0012\u0008\u0008\u0005\u0012\u0004\u0008\u0008(\u00060\u0003\u00a2\u0006\u000c\u0008\u0004\u0012\u0008\u0008\u0005\u0012\u0004\u0008\u0008(\u0006H\n"
     }
     d2 = {
         "<anonymous>",
         "",
         "isTracking",
         "",
+        "Lkotlin/ParameterName;",
+        "name",
+        "value",
         "kotlin.jvm.PlatformType"
     }
     k = 0x3
     mv = {
-        0x1,
-        0x9,
+        0x2,
+        0x0,
         0x0
     }
     xi = 0x30
@@ -55,7 +58,7 @@
     f = "ViewFinderUiState.kt"
     i = {}
     l = {
-        0x132
+        0x13e
     }
     m = "invokeSuspend"
     n = {}
@@ -173,7 +176,7 @@
 
     move-result-object v0
 
-    .line 303
+    .line 315
     iget v1, p0, Ljp/co/sony/mc/camera/view/uistate/ViewFinderUiState$1$1;->label:I
 
     const/4 v2, 0x1
@@ -202,16 +205,14 @@
 
     check-cast p1, Ljava/lang/Boolean;
 
-    .line 304
-    invoke-static {p1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;)V
-
+    .line 316
     invoke-virtual {p1}, Ljava/lang/Boolean;->booleanValue()Z
 
     move-result p1
 
     if-eqz p1, :cond_2
 
-    .line 306
+    .line 318
     iget-object p1, p0, Ljp/co/sony/mc/camera/view/uistate/ViewFinderUiState$1$1;->this$0:Ljp/co/sony/mc/camera/view/uistate/ViewFinderUiState;
 
     move-object v1, p0
@@ -228,17 +229,26 @@
 
     return-object v0
 
-    .line 308
+    .line 320
     :cond_2
+    iget-object p1, p0, Ljp/co/sony/mc/camera/view/uistate/ViewFinderUiState$1$1;->this$0:Ljp/co/sony/mc/camera/view/uistate/ViewFinderUiState;
+
+    invoke-static {}, Ljp/co/sony/mc/camera/view/uistate/ViewFinderUiState;->access$getEmptyRect$cp()Landroid/graphics/Rect;
+
+    move-result-object v0
+
+    invoke-static {p1, v0}, Ljp/co/sony/mc/camera/view/uistate/ViewFinderUiState;->access$setSelectedTrackingRect$p(Ljp/co/sony/mc/camera/view/uistate/ViewFinderUiState;Landroid/graphics/Rect;)V
+
+    .line 321
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/uistate/ViewFinderUiState$1$1;->this$0:Ljp/co/sony/mc/camera/view/uistate/ViewFinderUiState;
 
     invoke-static {}, Ljp/co/sony/mc/camera/view/uistate/ViewFinderUiState;->access$getEmptyRect$cp()Landroid/graphics/Rect;
 
     move-result-object p1
 
-    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/view/uistate/ViewFinderUiState;->access$setActiveTrackingRect$p(Ljp/co/sony/mc/camera/view/uistate/ViewFinderUiState;Landroid/graphics/Rect;)V
+    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/view/uistate/ViewFinderUiState;->access$setSelectedFaceRect$p(Ljp/co/sony/mc/camera/view/uistate/ViewFinderUiState;Landroid/graphics/Rect;)V
 
-    .line 310
+    .line 323
     :cond_3
     :goto_0
     sget-object p0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;

@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Ljp/co/sony/mc/camera/view/uistate/ViewFinderUiState;-><init>(Lkotlinx/coroutines/CoroutineScope;Ljp/co/sony/mc/camera/view/uistate/BasicModeCommonUiState;Ljp/co/sony/mc/camera/view/viewmodel/CameraStatusModel;Ljp/co/sony/mc/camera/view/viewmodel/CameraSettingsModel;)V
+    value = Ljp/co/sony/mc/camera/view/uistate/ViewFinderUiState;-><init>(Lkotlinx/coroutines/CoroutineScope;Ljp/co/sony/mc/camera/view/uistate/BasicModeCommonUiState;Ljp/co/sony/mc/camera/view/viewmodel/CameraStatusModel;Ljp/co/sony/mc/camera/view/viewmodel/CameraSettingsModel;Ljp/co/sony/mc/camera/view/viewmodel/SystemStatusModel;Ljp/co/sony/mc/camera/view/uistate/MessageUiState;)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -32,7 +32,7 @@
 
 .annotation runtime Lkotlin/Metadata;
     d1 = {
-        "\u0000\n\n\u0000\n\u0002\u0010\u0002\n\u0002\u0018\u0002\u0010\u0000\u001a\u00020\u0001*\u00020\u0002H\u008a@"
+        "\u0000\n\n\u0000\n\u0002\u0010\u0002\n\u0002\u0018\u0002\u0010\u0000\u001a\u00020\u0001*\u00020\u0002H\n"
     }
     d2 = {
         "<anonymous>",
@@ -41,8 +41,8 @@
     }
     k = 0x3
     mv = {
-        0x1,
-        0x9,
+        0x2,
+        0x0,
         0x0
     }
     xi = 0x30
@@ -53,7 +53,7 @@
     f = "ViewFinderUiState.kt"
     i = {}
     l = {
-        0x157
+        0x167
     }
     m = "invokeSuspend"
     n = {}
@@ -161,13 +161,13 @@
 .end method
 
 .method public final invokeSuspend(Ljava/lang/Object;)Ljava/lang/Object;
-    .locals 4
+    .locals 6
 
     invoke-static {}, Lkotlin/coroutines/intrinsics/IntrinsicsKt;->getCOROUTINE_SUSPENDED()Ljava/lang/Object;
 
     move-result-object v0
 
-    .line 342
+    .line 353
     iget v1, p0, Ljp/co/sony/mc/camera/view/uistate/ViewFinderUiState$5;->label:I
 
     const/4 v2, 0x1
@@ -192,14 +192,14 @@
     :cond_1
     invoke-static {p1}, Lkotlin/ResultKt;->throwOnFailure(Ljava/lang/Object;)V
 
-    .line 343
+    .line 355
     iget-object p1, p0, Ljp/co/sony/mc/camera/view/uistate/ViewFinderUiState$5;->this$0:Ljp/co/sony/mc/camera/view/uistate/ViewFinderUiState;
 
     invoke-static {p1}, Ljp/co/sony/mc/camera/view/uistate/ViewFinderUiState;->access$getCameraSettingsModel$p(Ljp/co/sony/mc/camera/view/uistate/ViewFinderUiState;)Ljp/co/sony/mc/camera/view/viewmodel/CameraSettingsModel;
 
     move-result-object p1
 
-    invoke-virtual {p1}, Ljp/co/sony/mc/camera/view/viewmodel/CameraSettingsModel;->getBrightness()Landroidx/lifecycle/LiveData;
+    invoke-virtual {p1}, Ljp/co/sony/mc/camera/view/viewmodel/CameraSettingsModel;->getCapturingMode()Landroidx/lifecycle/LiveData;
 
     move-result-object p1
 
@@ -207,11 +207,38 @@
 
     move-result-object p1
 
-    new-instance v1, Ljp/co/sony/mc/camera/view/uistate/ViewFinderUiState$5$1;
+    .line 356
+    iget-object v1, p0, Ljp/co/sony/mc/camera/view/uistate/ViewFinderUiState$5;->this$0:Ljp/co/sony/mc/camera/view/uistate/ViewFinderUiState;
 
-    iget-object v3, p0, Ljp/co/sony/mc/camera/view/uistate/ViewFinderUiState$5;->this$0:Ljp/co/sony/mc/camera/view/uistate/ViewFinderUiState;
+    invoke-static {v1}, Ljp/co/sony/mc/camera/view/uistate/ViewFinderUiState;->access$getCameraSettingsModel$p(Ljp/co/sony/mc/camera/view/uistate/ViewFinderUiState;)Ljp/co/sony/mc/camera/view/viewmodel/CameraSettingsModel;
 
-    invoke-direct {v1, v3}, Ljp/co/sony/mc/camera/view/uistate/ViewFinderUiState$5$1;-><init>(Ljp/co/sony/mc/camera/view/uistate/ViewFinderUiState;)V
+    move-result-object v1
+
+    invoke-virtual {v1}, Ljp/co/sony/mc/camera/view/viewmodel/CameraSettingsModel;->isFrontCamera()Landroidx/lifecycle/LiveData;
+
+    move-result-object v1
+
+    invoke-static {v1}, Landroidx/lifecycle/FlowLiveDataConversions;->asFlow(Landroidx/lifecycle/LiveData;)Lkotlinx/coroutines/flow/Flow;
+
+    move-result-object v1
+
+    .line 354
+    new-instance v3, Ljp/co/sony/mc/camera/view/uistate/ViewFinderUiState$5$1;
+
+    iget-object v4, p0, Ljp/co/sony/mc/camera/view/uistate/ViewFinderUiState$5;->this$0:Ljp/co/sony/mc/camera/view/uistate/ViewFinderUiState;
+
+    const/4 v5, 0x0
+
+    invoke-direct {v3, v4, v5}, Ljp/co/sony/mc/camera/view/uistate/ViewFinderUiState$5$1;-><init>(Ljp/co/sony/mc/camera/view/uistate/ViewFinderUiState;Lkotlin/coroutines/Continuation;)V
+
+    check-cast v3, Lkotlin/jvm/functions/Function3;
+
+    invoke-static {p1, v1, v3}, Lkotlinx/coroutines/flow/FlowKt;->combine(Lkotlinx/coroutines/flow/Flow;Lkotlinx/coroutines/flow/Flow;Lkotlin/jvm/functions/Function3;)Lkotlinx/coroutines/flow/Flow;
+
+    move-result-object p1
+
+    .line 359
+    sget-object v1, Ljp/co/sony/mc/camera/view/uistate/ViewFinderUiState$5$2;->INSTANCE:Ljp/co/sony/mc/camera/view/uistate/ViewFinderUiState$5$2;
 
     check-cast v1, Lkotlinx/coroutines/flow/FlowCollector;
 
@@ -229,7 +256,7 @@
 
     return-object v0
 
-    .line 350
+    .line 360
     :cond_2
     :goto_0
     sget-object p0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;

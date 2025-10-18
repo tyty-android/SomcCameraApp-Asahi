@@ -70,10 +70,6 @@
 .method public final setRadius(Landroid/graphics/drawable/RippleDrawable;I)V
     .locals 0
 
-    const-string p0, "ripple"
-
-    invoke-static {p1, p0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
     .line 397
     invoke-virtual {p1, p2}, Landroid/graphics/drawable/RippleDrawable;->setRadius(I)V
 

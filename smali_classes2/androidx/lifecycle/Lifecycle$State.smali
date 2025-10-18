@@ -87,7 +87,7 @@
 .method static constructor <clinit>()V
     .locals 3
 
-    .line 236
+    .line 259
     new-instance v0, Landroidx/lifecycle/Lifecycle$State;
 
     const-string v1, "DESTROYED"
@@ -98,7 +98,7 @@
 
     sput-object v0, Landroidx/lifecycle/Lifecycle$State;->DESTROYED:Landroidx/lifecycle/Lifecycle$State;
 
-    .line 243
+    .line 266
     new-instance v0, Landroidx/lifecycle/Lifecycle$State;
 
     const-string v1, "INITIALIZED"
@@ -109,7 +109,7 @@
 
     sput-object v0, Landroidx/lifecycle/Lifecycle$State;->INITIALIZED:Landroidx/lifecycle/Lifecycle$State;
 
-    .line 253
+    .line 276
     new-instance v0, Landroidx/lifecycle/Lifecycle$State;
 
     const-string v1, "CREATED"
@@ -120,7 +120,7 @@
 
     sput-object v0, Landroidx/lifecycle/Lifecycle$State;->CREATED:Landroidx/lifecycle/Lifecycle$State;
 
-    .line 263
+    .line 286
     new-instance v0, Landroidx/lifecycle/Lifecycle$State;
 
     const-string v1, "STARTED"
@@ -131,7 +131,7 @@
 
     sput-object v0, Landroidx/lifecycle/Lifecycle$State;->STARTED:Landroidx/lifecycle/Lifecycle$State;
 
-    .line 269
+    .line 292
     new-instance v0, Landroidx/lifecycle/Lifecycle$State;
 
     const-string v1, "RESUMED"
@@ -159,7 +159,7 @@
         }
     .end annotation
 
-    .line 230
+    .line 253
     invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
     return-void
@@ -202,7 +202,7 @@
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 278
+    .line 301
     check-cast p1, Ljava/lang/Enum;
 
     invoke-virtual {p0, p1}, Landroidx/lifecycle/Lifecycle$State;->compareTo(Ljava/lang/Enum;)I

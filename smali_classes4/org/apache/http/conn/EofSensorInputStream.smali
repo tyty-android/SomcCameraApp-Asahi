@@ -130,10 +130,15 @@
 
     move-result v2
 
+    goto :goto_0
+
+    :cond_0
+    const/4 v2, 0x1
+
+    :goto_0
     if-eqz v2, :cond_1
 
     .line 262
-    :cond_0
     invoke-virtual {v0}, Ljava/io/InputStream;->close()V
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
@@ -142,7 +147,7 @@
     :cond_1
     iput-object v1, p0, Lorg/apache/http/conn/EofSensorInputStream;->wrappedStream:Ljava/io/InputStream;
 
-    goto :goto_0
+    goto :goto_1
 
     :catchall_0
     move-exception v0
@@ -152,7 +157,7 @@
     throw v0
 
     :cond_2
-    :goto_0
+    :goto_1
     return-void
 .end method
 
@@ -182,10 +187,15 @@
 
     move-result v2
 
+    goto :goto_0
+
+    :cond_0
+    const/4 v2, 0x1
+
+    :goto_0
     if-eqz v2, :cond_1
 
     .line 231
-    :cond_0
     invoke-virtual {v0}, Ljava/io/InputStream;->close()V
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
@@ -194,7 +204,7 @@
     :cond_1
     iput-object v1, p0, Lorg/apache/http/conn/EofSensorInputStream;->wrappedStream:Ljava/io/InputStream;
 
-    goto :goto_0
+    goto :goto_1
 
     :catchall_0
     move-exception v0
@@ -204,7 +214,7 @@
     throw v0
 
     :cond_2
-    :goto_0
+    :goto_1
     return-void
 .end method
 
@@ -236,10 +246,15 @@
 
     move-result v1
 
+    goto :goto_0
+
+    :cond_0
+    const/4 v1, 0x1
+
+    :goto_0
     if-eqz v1, :cond_1
 
     .line 202
-    :cond_0
     invoke-virtual {v0}, Ljava/io/InputStream;->close()V
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
@@ -248,7 +263,7 @@
     :cond_1
     iput-object p1, p0, Lorg/apache/http/conn/EofSensorInputStream;->wrappedStream:Ljava/io/InputStream;
 
-    goto :goto_0
+    goto :goto_1
 
     :catchall_0
     move-exception v0
@@ -258,7 +273,7 @@
     throw v0
 
     :cond_2
-    :goto_0
+    :goto_1
     return-void
 .end method
 

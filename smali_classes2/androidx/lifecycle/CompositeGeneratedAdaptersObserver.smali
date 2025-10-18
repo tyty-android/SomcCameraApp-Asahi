@@ -1,6 +1,6 @@
 .class public final Landroidx/lifecycle/CompositeGeneratedAdaptersObserver;
 .super Ljava/lang/Object;
-.source "CompositeGeneratedAdaptersObserver.kt"
+.source "CompositeGeneratedAdaptersObserver.jvm.kt"
 
 # interfaces
 .implements Landroidx/lifecycle/LifecycleEventObserver;

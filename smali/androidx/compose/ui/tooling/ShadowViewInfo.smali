@@ -1,11 +1,11 @@
 .class final Landroidx/compose/ui/tooling/ShadowViewInfo;
 .super Ljava/lang/Object;
-.source "ShadowViewInfo.kt"
+.source "ShadowViewInfo.android.kt"
 
 
 # annotations
 .annotation system Ldalvik/annotation/SourceDebugExtension;
-    value = "SMAP\nShadowViewInfo.kt\nKotlin\n*S Kotlin\n*F\n+ 1 ShadowViewInfo.kt\nandroidx/compose/ui/tooling/ShadowViewInfo\n+ 2 _Collections.kt\nkotlin/collections/CollectionsKt___CollectionsKt\n*L\n1#1,120:1\n1549#2:121\n1620#2,3:122\n1549#2:125\n1620#2,3:126\n*S KotlinDebug\n*F\n+ 1 ShadowViewInfo.kt\nandroidx/compose/ui/tooling/ShadowViewInfo\n*L\n36#1:121\n36#1:122,3\n66#1:125\n66#1:126,3\n*E\n"
+    value = "SMAP\nShadowViewInfo.android.kt\nKotlin\n*S Kotlin\n*F\n+ 1 ShadowViewInfo.android.kt\nandroidx/compose/ui/tooling/ShadowViewInfo\n+ 2 _Collections.kt\nkotlin/collections/CollectionsKt___CollectionsKt\n*L\n1#1,121:1\n1549#2:122\n1620#2,3:123\n1549#2:126\n1620#2,3:127\n*S KotlinDebug\n*F\n+ 1 ShadowViewInfo.android.kt\nandroidx/compose/ui/tooling/ShadowViewInfo\n*L\n36#1:122\n36#1:123,3\n66#1:126\n66#1:127,3\n*E\n"
 .end annotation
 
 .annotation runtime Lkotlin/Metadata;
@@ -100,7 +100,7 @@
 
     check-cast p1, Ljava/lang/Iterable;
 
-    .line 121
+    .line 122
     new-instance p2, Ljava/util/ArrayList;
 
     const/16 v0, 0xa
@@ -113,7 +113,7 @@
 
     check-cast p2, Ljava/util/Collection;
 
-    .line 122
+    .line 123
     invoke-interface {p1}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
 
     move-result-object p1
@@ -129,7 +129,7 @@
 
     move-result-object v0
 
-    .line 123
+    .line 124
     check-cast v0, Landroidx/compose/ui/tooling/ViewInfo;
 
     .line 36
@@ -137,16 +137,16 @@
 
     invoke-direct {v1, p0, v0}, Landroidx/compose/ui/tooling/ShadowViewInfo;-><init>(Landroidx/compose/ui/tooling/ShadowViewInfo;Landroidx/compose/ui/tooling/ViewInfo;)V
 
-    .line 123
+    .line 124
     invoke-interface {p2, v1}, Ljava/util/Collection;->add(Ljava/lang/Object;)Z
 
     goto :goto_0
 
-    .line 124
+    .line 125
     :cond_0
     check-cast p2, Ljava/util/List;
 
-    .line 121
+    .line 122
     check-cast p2, Ljava/util/Collection;
 
     .line 36
@@ -176,10 +176,6 @@
 
 .method public constructor <init>(Landroidx/compose/ui/tooling/ViewInfo;)V
     .locals 1
-
-    const-string/jumbo v0, "viewInfo"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
     const/4 v0, 0x0
 
@@ -284,10 +280,6 @@
 .method public final setNewParent(Landroidx/compose/ui/tooling/ShadowViewInfo;)V
     .locals 1
 
-    const-string v0, "parent"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
     .line 50
     iget-object v0, p0, Landroidx/compose/ui/tooling/ShadowViewInfo;->parent:Landroidx/compose/ui/tooling/ShadowViewInfo;
 
@@ -356,7 +348,7 @@
 
     check-cast v0, Ljava/lang/Iterable;
 
-    .line 125
+    .line 126
     new-instance v1, Ljava/util/ArrayList;
 
     const/16 v6, 0xa
@@ -369,7 +361,7 @@
 
     check-cast v1, Ljava/util/Collection;
 
-    .line 126
+    .line 127
     invoke-interface {v0}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
 
     move-result-object v0
@@ -385,7 +377,7 @@
 
     move-result-object v6
 
-    .line 127
+    .line 128
     check-cast v6, Landroidx/compose/ui/tooling/ShadowViewInfo;
 
     .line 66
@@ -393,12 +385,12 @@
 
     move-result-object v6
 
-    .line 127
+    .line 128
     invoke-interface {v1, v6}, Ljava/util/Collection;->add(Ljava/lang/Object;)Z
 
     goto :goto_0
 
-    .line 128
+    .line 129
     :cond_0
     move-object v6, v1
 

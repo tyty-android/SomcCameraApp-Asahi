@@ -543,7 +543,7 @@
     move v2, p3
 
     :goto_0
-    if-nez v2, :cond_2
+    if-nez v2, :cond_3
 
     .line 247
     invoke-virtual {p2}, Lcom/google/api/client/http/HttpResponse;->getStatusCode()I
@@ -552,15 +552,20 @@
 
     const/16 p3, 0x191
 
-    if-ne p2, p3, :cond_5
+    if-ne p2, p3, :cond_2
+
+    move p3, v0
 
     goto :goto_1
 
     :cond_2
-    if-eqz p3, :cond_5
+    move p3, v1
+
+    :cond_3
+    :goto_1
+    if-eqz p3, :cond_6
 
     .line 252
-    :goto_1
     :try_start_0
     iget-object p2, p0, Lcom/google/api/client/auth/oauth2/Credential;->lock:Ljava/util/concurrent/locks/Lock;
 
@@ -582,7 +587,7 @@
 
     move-result p1
 
-    if-eqz p1, :cond_4
+    if-eqz p1, :cond_5
 
     .line 256
     invoke-virtual {p0}, Lcom/google/api/client/auth/oauth2/Credential;->refreshToken()Z
@@ -591,15 +596,15 @@
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
-    if-eqz p1, :cond_3
+    if-eqz p1, :cond_4
 
     goto :goto_2
 
-    :cond_3
+    :cond_4
     move v0, v1
 
     .line 258
-    :cond_4
+    :cond_5
     :goto_2
     :try_start_2
     iget-object p0, p0, Lcom/google/api/client/auth/oauth2/Credential;->lock:Ljava/util/concurrent/locks/Lock;
@@ -632,7 +637,7 @@
 
     invoke-virtual {p1, p2, p3, p0}, Ljava/util/logging/Logger;->log(Ljava/util/logging/Level;Ljava/lang/String;Ljava/lang/Throwable;)V
 
-    :cond_5
+    :cond_6
     return v1
 .end method
 

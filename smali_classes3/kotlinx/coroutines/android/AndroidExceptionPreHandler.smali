@@ -31,7 +31,7 @@
     k = 0x1
     mv = {
         0x1,
-        0x6,
+        0x8,
         0x0
     }
     xi = 0x30
@@ -115,17 +115,9 @@
 
     move-object v0, v1
 
-    goto :goto_0
-
-    .line 27
-    :catchall_0
-    move-object v1, v0
-
-    check-cast v1, Ljava/lang/reflect/Method;
-
     .line 29
+    :catchall_0
     :cond_1
-    :goto_0
     iput-object v0, p0, Lkotlinx/coroutines/android/AndroidExceptionPreHandler;->_preHandler:Ljava/lang/Object;
 
     return-object v0

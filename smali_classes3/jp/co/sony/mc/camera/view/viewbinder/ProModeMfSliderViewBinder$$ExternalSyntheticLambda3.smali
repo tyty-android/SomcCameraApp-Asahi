@@ -30,7 +30,7 @@
     .line 0
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/viewbinder/ProModeMfSliderViewBinder$$ExternalSyntheticLambda3;->f$0:Ljp/co/sony/mc/camera/view/viewbinder/ProModeMfSliderViewBinder;
 
-    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/view/viewbinder/ProModeMfSliderViewBinder;->$r8$lambda$mU1kopGzN8YOZtrt283k73YZ0g4(Ljp/co/sony/mc/camera/view/viewbinder/ProModeMfSliderViewBinder;Landroid/view/View;)V
+    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/view/viewbinder/ProModeMfSliderViewBinder;->$r8$lambda$ppp_w7MLn0-wZmLGutkY70-Q74Y(Ljp/co/sony/mc/camera/view/viewbinder/ProModeMfSliderViewBinder;Landroid/view/View;)V
 
     return-void
 .end method

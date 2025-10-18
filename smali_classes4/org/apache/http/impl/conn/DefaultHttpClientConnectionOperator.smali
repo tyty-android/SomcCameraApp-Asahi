@@ -170,13 +170,13 @@
 
     if-eqz v0, :cond_0
 
+    new-array v0, v14, [Ljava/net/InetAddress;
+
     invoke-virtual/range {p2 .. p2}, Lorg/apache/http/HttpHost;->getAddress()Ljava/net/InetAddress;
 
-    move-result-object v0
+    move-result-object v3
 
-    new-array v3, v14, [Ljava/net/InetAddress;
-
-    aput-object v0, v3, v13
+    aput-object v3, v0, v13
 
     goto :goto_0
 
@@ -189,10 +189,10 @@
 
     invoke-interface {v0, v3}, Lorg/apache/http/conn/DnsResolver;->resolve(Ljava/lang/String;)[Ljava/net/InetAddress;
 
-    move-result-object v3
+    move-result-object v0
 
     :goto_0
-    move-object v15, v3
+    move-object v15, v0
 
     .line 114
     iget-object v0, v1, Lorg/apache/http/impl/conn/DefaultHttpClientConnectionOperator;->schemePortResolver:Lorg/apache/http/conn/SchemePortResolver;

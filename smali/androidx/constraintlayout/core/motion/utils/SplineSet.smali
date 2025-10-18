@@ -277,14 +277,18 @@
     :cond_2
     new-array v0, v1, [D
 
+    const/4 v2, 0x2
+
     .line 99
-    filled-new-array {v1, v3}, [I
+    new-array v2, v2, [I
 
-    move-result-object v1
+    aput v3, v2, v3
 
-    sget-object v2, Ljava/lang/Double;->TYPE:Ljava/lang/Class;
+    aput v1, v2, v4
 
-    invoke-static {v2, v1}, Ljava/lang/reflect/Array;->newInstance(Ljava/lang/Class;[I)Ljava/lang/Object;
+    sget-object v1, Ljava/lang/Double;->TYPE:Ljava/lang/Class;
+
+    invoke-static {v1, v2}, Ljava/lang/reflect/Array;->newInstance(Ljava/lang/Class;[I)Ljava/lang/Object;
 
     move-result-object v1
 

@@ -106,7 +106,7 @@
 .method public bridge synthetic invoke(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
 
-    .line 362
+    .line 364
     check-cast p1, Landroidx/compose/animation/core/AnimationScope;
 
     invoke-virtual {p0, p1}, Landroidx/compose/foundation/gestures/snapping/SnapFlingBehaviorKt$animateDecay$2;->invoke(Landroidx/compose/animation/core/AnimationScope;)V
@@ -128,11 +128,7 @@
         }
     .end annotation
 
-    const-string v0, "$this$animateDecay"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 366
+    .line 368
     invoke-virtual {p1}, Landroidx/compose/animation/core/AnimationScope;->getValue()Ljava/lang/Object;
 
     move-result-object v0
@@ -157,7 +153,7 @@
 
     if-ltz v0, :cond_0
 
-    .line 367
+    .line 369
     invoke-virtual {p1}, Landroidx/compose/animation/core/AnimationScope;->getValue()Ljava/lang/Object;
 
     move-result-object v0
@@ -174,31 +170,31 @@
 
     move-result v0
 
-    .line 368
+    .line 370
     iget-object v1, p0, Landroidx/compose/foundation/gestures/snapping/SnapFlingBehaviorKt$animateDecay$2;->$previousValue:Lkotlin/jvm/internal/Ref$FloatRef;
 
     iget v1, v1, Lkotlin/jvm/internal/Ref$FloatRef;->element:F
 
     sub-float v1, v0, v1
 
-    .line 369
+    .line 371
     iget-object v2, p0, Landroidx/compose/foundation/gestures/snapping/SnapFlingBehaviorKt$animateDecay$2;->$this_animateDecay:Landroidx/compose/foundation/gestures/ScrollScope;
 
     iget-object v3, p0, Landroidx/compose/foundation/gestures/snapping/SnapFlingBehaviorKt$animateDecay$2;->$onAnimationStep:Lkotlin/jvm/functions/Function1;
 
     invoke-static {p1, v2, v3, v1}, Landroidx/compose/foundation/gestures/snapping/SnapFlingBehaviorKt;->access$animateDecay$consumeDelta(Landroidx/compose/animation/core/AnimationScope;Landroidx/compose/foundation/gestures/ScrollScope;Lkotlin/jvm/functions/Function1;F)V
 
-    .line 370
+    .line 372
     invoke-virtual {p1}, Landroidx/compose/animation/core/AnimationScope;->cancelAnimation()V
 
-    .line 371
+    .line 373
     iget-object p0, p0, Landroidx/compose/foundation/gestures/snapping/SnapFlingBehaviorKt$animateDecay$2;->$previousValue:Lkotlin/jvm/internal/Ref$FloatRef;
 
     iput v0, p0, Lkotlin/jvm/internal/Ref$FloatRef;->element:F
 
     goto :goto_0
 
-    .line 373
+    .line 375
     :cond_0
     invoke-virtual {p1}, Landroidx/compose/animation/core/AnimationScope;->getValue()Ljava/lang/Object;
 
@@ -216,14 +212,14 @@
 
     sub-float/2addr v0, v1
 
-    .line 374
+    .line 376
     iget-object v1, p0, Landroidx/compose/foundation/gestures/snapping/SnapFlingBehaviorKt$animateDecay$2;->$this_animateDecay:Landroidx/compose/foundation/gestures/ScrollScope;
 
     iget-object v2, p0, Landroidx/compose/foundation/gestures/snapping/SnapFlingBehaviorKt$animateDecay$2;->$onAnimationStep:Lkotlin/jvm/functions/Function1;
 
     invoke-static {p1, v1, v2, v0}, Landroidx/compose/foundation/gestures/snapping/SnapFlingBehaviorKt;->access$animateDecay$consumeDelta(Landroidx/compose/animation/core/AnimationScope;Landroidx/compose/foundation/gestures/ScrollScope;Lkotlin/jvm/functions/Function1;F)V
 
-    .line 375
+    .line 377
     iget-object p0, p0, Landroidx/compose/foundation/gestures/snapping/SnapFlingBehaviorKt$animateDecay$2;->$previousValue:Lkotlin/jvm/internal/Ref$FloatRef;
 
     invoke-virtual {p1}, Landroidx/compose/animation/core/AnimationScope;->getValue()Ljava/lang/Object;

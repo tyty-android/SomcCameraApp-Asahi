@@ -78,7 +78,7 @@
 .method public bridge synthetic invoke(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
 
-    .line 316
+    .line 320
     check-cast p1, Landroid/view/View;
 
     invoke-virtual {p0, p1}, Landroidx/compose/ui/viewinterop/AndroidView_androidKt$NoOpUpdate$1;->invoke(Landroid/view/View;)V
@@ -90,10 +90,6 @@
 
 .method public final invoke(Landroid/view/View;)V
     .locals 0
-
-    const-string p0, "$this$null"
-
-    invoke-static {p1, p0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
     return-void
 .end method

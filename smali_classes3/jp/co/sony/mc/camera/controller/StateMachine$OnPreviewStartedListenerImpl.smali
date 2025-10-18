@@ -31,12 +31,12 @@
 .method private constructor <init>(Ljp/co/sony/mc/camera/controller/StateMachine;Ljp/co/sony/mc/camera/device/CameraDeviceHandler$CameraSessionId;)V
     .locals 0
 
-    .line 7888
+    .line 7953
     iput-object p1, p0, Ljp/co/sony/mc/camera/controller/StateMachine$OnPreviewStartedListenerImpl;->this$0:Ljp/co/sony/mc/camera/controller/StateMachine;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 7889
+    .line 7954
     iput-object p2, p0, Ljp/co/sony/mc/camera/controller/StateMachine$OnPreviewStartedListenerImpl;->mCameraSessionId:Ljp/co/sony/mc/camera/device/CameraDeviceHandler$CameraSessionId;
 
     return-void
@@ -53,15 +53,15 @@
 .method private constructor <init>(Ljp/co/sony/mc/camera/controller/StateMachine;ZLjp/co/sony/mc/camera/CameraAccessor$PreviewCallback;)V
     .locals 0
 
-    .line 7883
+    .line 7948
     iput-object p1, p0, Ljp/co/sony/mc/camera/controller/StateMachine$OnPreviewStartedListenerImpl;->this$0:Ljp/co/sony/mc/camera/controller/StateMachine;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 7884
+    .line 7949
     iput-boolean p2, p0, Ljp/co/sony/mc/camera/controller/StateMachine$OnPreviewStartedListenerImpl;->mIsStartup:Z
 
-    .line 7885
+    .line 7950
     iput-object p3, p0, Ljp/co/sony/mc/camera/controller/StateMachine$OnPreviewStartedListenerImpl;->mCallback:Ljp/co/sony/mc/camera/CameraAccessor$PreviewCallback;
 
     return-void
@@ -80,14 +80,14 @@
 .method public onPreviewStarted(Ljp/co/sony/mc/camera/device/CameraDeviceHandler$CameraSessionId;)V
     .locals 1
 
-    .line 7894
+    .line 7959
     iget-object v0, p0, Ljp/co/sony/mc/camera/controller/StateMachine$OnPreviewStartedListenerImpl;->mCameraSessionId:Ljp/co/sony/mc/camera/device/CameraDeviceHandler$CameraSessionId;
 
     if-eqz v0, :cond_0
 
     if-ne v0, p1, :cond_0
 
-    .line 7895
+    .line 7960
     iget-object p0, p0, Ljp/co/sony/mc/camera/controller/StateMachine$OnPreviewStartedListenerImpl;->this$0:Ljp/co/sony/mc/camera/controller/StateMachine;
 
     invoke-static {p0}, Ljp/co/sony/mc/camera/controller/StateMachine;->-$$Nest$fgetmActivity(Ljp/co/sony/mc/camera/controller/StateMachine;)Ljp/co/sony/mc/camera/CameraActivity;
@@ -98,16 +98,16 @@
 
     return-void
 
-    .line 7899
+    .line 7964
     :cond_0
     iget-object p1, p0, Ljp/co/sony/mc/camera/controller/StateMachine$OnPreviewStartedListenerImpl;->mCallback:Ljp/co/sony/mc/camera/CameraAccessor$PreviewCallback;
 
     if-eqz p1, :cond_1
 
-    .line 7900
+    .line 7965
     invoke-interface {p1}, Ljp/co/sony/mc/camera/CameraAccessor$PreviewCallback;->onPreviewStarted()V
 
-    .line 7902
+    .line 7967
     :cond_1
     iget-object p1, p0, Ljp/co/sony/mc/camera/controller/StateMachine$OnPreviewStartedListenerImpl;->this$0:Ljp/co/sony/mc/camera/controller/StateMachine;
 

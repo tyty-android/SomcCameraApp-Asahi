@@ -23,7 +23,7 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/SourceDebugExtension;
-    value = "SMAP\nTrieNode.kt\nKotlin\n*S Kotlin\n*F\n+ 1 TrieNode.kt\nandroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableMap/TrieNode\n+ 2 ForEachOneBit.kt\nandroidx/compose/runtime/external/kotlinx/collections/immutable/internal/ForEachOneBitKt\n+ 3 TrieNode.kt\nandroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableMap/TrieNode$ModificationResult\n+ 4 fake.kt\nkotlin/jvm/internal/FakeKt\n+ 5 ArrayIntrinsics.kt\nkotlin/ArrayIntrinsicsKt\n*L\n1#1,887:1\n10#2,9:888\n10#2,9:897\n10#2,9:906\n83#3:915\n1#4:916\n26#5:917\n*S KotlinDebug\n*F\n+ 1 TrieNode.kt\nandroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableMap/TrieNode\n*L\n619#1:888,9\n636#1:897,9\n640#1:906,9\n688#1:915\n688#1:916\n885#1:917\n*E\n"
+    value = "SMAP\nTrieNode.kt\nKotlin\n*S Kotlin\n*F\n+ 1 TrieNode.kt\nandroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableMap/TrieNode\n+ 2 ForEachOneBit.kt\nandroidx/compose/runtime/external/kotlinx/collections/immutable/internal/ForEachOneBitKt\n+ 3 TrieNode.kt\nandroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableMap/TrieNode$ModificationResult\n+ 4 fake.kt\nkotlin/jvm/internal/FakeKt\n+ 5 ArrayIntrinsics.kt\nkotlin/ArrayIntrinsicsKt\n*L\n1#1,898:1\n10#2,9:899\n10#2,9:908\n10#2,9:917\n83#3:926\n1#4:927\n26#5:928\n*S KotlinDebug\n*F\n+ 1 TrieNode.kt\nandroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableMap/TrieNode\n*L\n629#1:899,9\n647#1:908,9\n651#1:917,9\n699#1:926\n699#1:927\n896#1:928\n*E\n"
 .end annotation
 
 .annotation runtime Lkotlin/Metadata;
@@ -171,6 +171,8 @@
 
 
 # static fields
+.field public static final $stable:I
+
 .field public static final Companion:Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableMap/TrieNode$Companion;
 
 .field private static final EMPTY:Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableMap/TrieNode;
@@ -198,15 +200,19 @@
 
     sput-object v0, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableMap/TrieNode;->Companion:Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableMap/TrieNode$Companion;
 
-    .line 885
+    const/16 v0, 0x8
+
+    sput v0, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableMap/TrieNode;->$stable:I
+
+    .line 896
     new-instance v0, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableMap/TrieNode;
 
     const/4 v1, 0x0
 
-    .line 917
+    .line 928
     new-array v2, v1, [Ljava/lang/Object;
 
-    .line 885
+    .line 896
     invoke-direct {v0, v1, v1, v2}, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableMap/TrieNode;-><init>(II[Ljava/lang/Object;)V
 
     sput-object v0, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableMap/TrieNode;->EMPTY:Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableMap/TrieNode;
@@ -217,10 +223,6 @@
 .method public constructor <init>(II[Ljava/lang/Object;)V
     .locals 1
 
-    const-string v0, "buffer"
-
-    invoke-static {p3, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
     const/4 v0, 0x0
 
     .line 79
@@ -230,11 +232,7 @@
 .end method
 
 .method public constructor <init>(II[Ljava/lang/Object;Landroidx/compose/runtime/external/kotlinx/collections/immutable/internal/MutabilityOwnership;)V
-    .locals 1
-
-    const-string v0, "buffer"
-
-    invoke-static {p3, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+    .locals 0
 
     .line 73
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -275,7 +273,7 @@
         }
     .end annotation
 
-    .line 868
+    .line 879
     invoke-static {p3}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object v2
@@ -302,23 +300,23 @@
 
     invoke-interface/range {v0 .. v5}, Lkotlin/jvm/functions/Function5;->invoke(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 870
+    .line 881
     iget v0, p0, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableMap/TrieNode;->nodeMap:I
 
     :goto_0
     if-eqz v0, :cond_0
 
-    .line 872
+    .line 883
     invoke-static {v0}, Ljava/lang/Integer;->lowestOneBit(I)I
 
     move-result v1
 
-    .line 875
+    .line 886
     invoke-static {v1}, Ljava/lang/Integer;->numberOfTrailingZeros(I)I
 
     move-result v2
 
-    .line 877
+    .line 888
     invoke-virtual {p0, v1}, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableMap/TrieNode;->nodeIndex$runtime_release(I)I
 
     move-result v3
@@ -333,7 +331,7 @@
 
     add-int/lit8 v4, p3, 0x5
 
-    .line 878
+    .line 889
     invoke-direct {v3, p1, v2, v4}, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableMap/TrieNode;->accept(Lkotlin/jvm/functions/Function5;II)V
 
     sub-int/2addr v0, v1
@@ -472,7 +470,7 @@
 .method private final calculateSize()I
     .locals 4
 
-    .line 538
+    .line 547
     iget v0, p0, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableMap/TrieNode;->nodeMap:I
 
     if-nez v0, :cond_0
@@ -485,7 +483,7 @@
 
     return p0
 
-    .line 539
+    .line 548
     :cond_0
     iget v0, p0, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableMap/TrieNode;->dataMap:I
 
@@ -495,7 +493,7 @@
 
     mul-int/lit8 v1, v0, 0x2
 
-    .line 541
+    .line 550
     iget-object v2, p0, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableMap/TrieNode;->buffer:[Ljava/lang/Object;
 
     array-length v2, v2
@@ -503,7 +501,7 @@
     :goto_0
     if-ge v1, v2, :cond_1
 
-    .line 542
+    .line 551
     invoke-virtual {p0, v1}, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableMap/TrieNode;->nodeAtIndex$runtime_release(I)Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableMap/TrieNode;
 
     move-result-object v3
@@ -530,7 +528,7 @@
         }
     .end annotation
 
-    .line 350
+    .line 351
     iget-object v0, p0, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableMap/TrieNode;->buffer:[Ljava/lang/Object;
 
     array-length v0, v0
@@ -570,7 +568,7 @@
 
     if-gt v3, v2, :cond_3
 
-    .line 351
+    .line 352
     :cond_1
     :goto_0
     iget-object v4, p0, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableMap/TrieNode;->buffer:[Ljava/lang/Object;
@@ -606,7 +604,7 @@
         }
     .end annotation
 
-    .line 357
+    .line 359
     iget-object v0, p0, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableMap/TrieNode;->buffer:[Ljava/lang/Object;
 
     array-length v0, v0
@@ -646,7 +644,7 @@
 
     if-gt v2, v1, :cond_3
 
-    .line 358
+    .line 360
     :cond_1
     :goto_0
     invoke-direct {p0, v1}, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableMap/TrieNode;->keyAtIndex(I)Ljava/lang/Object;
@@ -659,7 +657,7 @@
 
     if-eqz v3, :cond_2
 
-    .line 359
+    .line 361
     invoke-direct {p0, v1}, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableMap/TrieNode;->valueAtKeyIndex(I)Ljava/lang/Object;
 
     move-result-object p0
@@ -689,7 +687,7 @@
         }
     .end annotation
 
-    .line 366
+    .line 369
     iget-object v0, p0, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableMap/TrieNode;->buffer:[Ljava/lang/Object;
 
     array-length v0, v0
@@ -729,7 +727,7 @@
 
     if-gt v3, v2, :cond_4
 
-    .line 367
+    .line 370
     :cond_1
     :goto_0
     invoke-direct {p0, v2}, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableMap/TrieNode;->keyAtIndex(I)Ljava/lang/Object;
@@ -742,7 +740,7 @@
 
     if-eqz v4, :cond_3
 
-    .line 368
+    .line 371
     invoke-direct {p0, v2}, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableMap/TrieNode;->valueAtKeyIndex(I)Ljava/lang/Object;
 
     move-result-object p1
@@ -753,7 +751,7 @@
 
     return-object p0
 
-    .line 371
+    .line 374
     :cond_2
     iget-object p0, p0, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableMap/TrieNode;->buffer:[Ljava/lang/Object;
 
@@ -769,10 +767,10 @@
 
     add-int/lit8 v2, v2, 0x1
 
-    .line 372
+    .line 375
     aput-object p2, p0, v2
 
-    .line 373
+    .line 376
     new-instance p1, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableMap/TrieNode;
 
     invoke-direct {p1, v1, v1, p0}, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableMap/TrieNode;-><init>(II[Ljava/lang/Object;)V
@@ -790,7 +788,7 @@
 
     goto :goto_0
 
-    .line 376
+    .line 379
     :cond_4
     iget-object p0, p0, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableMap/TrieNode;->buffer:[Ljava/lang/Object;
 
@@ -798,7 +796,7 @@
 
     move-result-object p0
 
-    .line 377
+    .line 380
     new-instance p1, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableMap/TrieNode;
 
     invoke-direct {p1, v1, v1, p0}, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableMap/TrieNode;-><init>(II[Ljava/lang/Object;)V
@@ -820,7 +818,7 @@
         }
     .end annotation
 
-    .line 407
+    .line 412
     iget-object v0, p0, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableMap/TrieNode;->buffer:[Ljava/lang/Object;
 
     array-length v0, v0
@@ -860,7 +858,7 @@
 
     if-gt v2, v1, :cond_3
 
-    .line 408
+    .line 413
     :cond_1
     :goto_0
     invoke-direct {p0, v1}, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableMap/TrieNode;->keyAtIndex(I)Ljava/lang/Object;
@@ -873,7 +871,7 @@
 
     if-eqz v3, :cond_2
 
-    .line 409
+    .line 414
     invoke-direct {p0, v1}, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableMap/TrieNode;->collisionRemoveEntryAtIndex(I)Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableMap/TrieNode;
 
     move-result-object p0
@@ -901,7 +899,7 @@
         }
     .end annotation
 
-    .line 425
+    .line 432
     iget-object v0, p0, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableMap/TrieNode;->buffer:[Ljava/lang/Object;
 
     array-length v0, v0
@@ -941,7 +939,7 @@
 
     if-gt v2, v1, :cond_3
 
-    .line 426
+    .line 433
     :cond_1
     :goto_0
     invoke-direct {p0, v1}, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableMap/TrieNode;->keyAtIndex(I)Ljava/lang/Object;
@@ -964,7 +962,7 @@
 
     if-eqz v3, :cond_2
 
-    .line 427
+    .line 434
     invoke-direct {p0, v1}, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableMap/TrieNode;->collisionRemoveEntryAtIndex(I)Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableMap/TrieNode;
 
     move-result-object p0
@@ -1037,7 +1035,7 @@
 
     return v0
 
-    .line 549
+    .line 558
     :cond_0
     iget v1, p0, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableMap/TrieNode;->nodeMap:I
 
@@ -1049,7 +1047,7 @@
 
     return v3
 
-    .line 550
+    .line 559
     :cond_1
     iget v1, p0, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableMap/TrieNode;->dataMap:I
 
@@ -1059,7 +1057,7 @@
 
     return v3
 
-    .line 551
+    .line 561
     :cond_2
     iget-object v1, p0, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableMap/TrieNode;->buffer:[Ljava/lang/Object;
 
@@ -1070,7 +1068,7 @@
     :goto_0
     if-ge v2, v1, :cond_4
 
-    .line 552
+    .line 562
     iget-object v4, p0, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableMap/TrieNode;->buffer:[Ljava/lang/Object;
 
     aget-object v4, v4, v2
@@ -1225,34 +1223,52 @@
 
     if-eq v11, v7, :cond_2
 
+    const/4 v0, 0x3
+
+    const/4 v1, 0x2
+
+    const/4 v4, 0x4
+
     if-ge v11, v7, :cond_1
 
     .line 297
-    filled-new-array {p2, v3, v5, v6}, [Ljava/lang/Object;
+    new-array v4, v4, [Ljava/lang/Object;
 
-    move-result-object v0
+    aput-object v2, v4, v10
+
+    aput-object v3, v4, v12
+
+    aput-object v5, v4, v1
+
+    aput-object v6, v4, v0
 
     goto :goto_0
 
     .line 299
     :cond_1
-    filled-new-array {v5, v6, p2, v3}, [Ljava/lang/Object;
+    new-array v4, v4, [Ljava/lang/Object;
 
-    move-result-object v0
+    aput-object v5, v4, v10
+
+    aput-object v6, v4, v12
+
+    aput-object v2, v4, v1
+
+    aput-object v3, v4, v0
 
     .line 301
     :goto_0
-    new-instance v1, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableMap/TrieNode;
+    new-instance v0, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableMap/TrieNode;
 
-    shl-int v2, v12, v11
+    shl-int v1, v12, v11
 
-    shl-int v3, v12, v7
+    shl-int v2, v12, v7
 
-    or-int/2addr v2, v3
+    or-int/2addr v1, v2
 
-    invoke-direct {v1, v2, v10, v0, v9}, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableMap/TrieNode;-><init>(II[Ljava/lang/Object;Landroidx/compose/runtime/external/kotlinx/collections/immutable/internal/MutabilityOwnership;)V
+    invoke-direct {v0, v1, v10, v4, v9}, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableMap/TrieNode;-><init>(II[Ljava/lang/Object;Landroidx/compose/runtime/external/kotlinx/collections/immutable/internal/MutabilityOwnership;)V
 
-    return-object v1
+    return-object v0
 
     :cond_2
     add-int/lit8 v7, v0, 0x5
@@ -1351,7 +1367,7 @@
         }
     .end annotation
 
-    .line 382
+    .line 386
     iget-object v0, p0, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableMap/TrieNode;->buffer:[Ljava/lang/Object;
 
     array-length v0, v0
@@ -1391,7 +1407,7 @@
 
     if-gt v3, v2, :cond_4
 
-    .line 383
+    .line 387
     :cond_1
     :goto_0
     invoke-direct {p0, v2}, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableMap/TrieNode;->keyAtIndex(I)Ljava/lang/Object;
@@ -1404,14 +1420,14 @@
 
     if-eqz v4, :cond_3
 
-    .line 384
+    .line 388
     invoke-direct {p0, v2}, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableMap/TrieNode;->valueAtKeyIndex(I)Ljava/lang/Object;
 
     move-result-object p1
 
     invoke-virtual {p3, p1}, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableMap/PersistentHashMapBuilder;->setOperationResult$runtime_release(Ljava/lang/Object;)V
 
-    .line 387
+    .line 391
     iget-object p1, p0, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableMap/TrieNode;->ownedBy:Landroidx/compose/runtime/external/kotlinx/collections/immutable/internal/MutabilityOwnership;
 
     invoke-virtual {p3}, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableMap/PersistentHashMapBuilder;->getOwnership()Landroidx/compose/runtime/external/kotlinx/collections/immutable/internal/MutabilityOwnership;
@@ -1420,7 +1436,7 @@
 
     if-ne p1, v0, :cond_2
 
-    .line 388
+    .line 392
     iget-object p1, p0, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableMap/TrieNode;->buffer:[Ljava/lang/Object;
 
     add-int/lit8 v2, v2, 0x1
@@ -1429,7 +1445,7 @@
 
     return-object p0
 
-    .line 393
+    .line 397
     :cond_2
     invoke-virtual {p3}, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableMap/PersistentHashMapBuilder;->getModCount$runtime_release()I
 
@@ -1439,7 +1455,7 @@
 
     invoke-virtual {p3, p1}, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableMap/PersistentHashMapBuilder;->setModCount$runtime_release(I)V
 
-    .line 395
+    .line 399
     iget-object p0, p0, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableMap/TrieNode;->buffer:[Ljava/lang/Object;
 
     array-length p1, p0
@@ -1454,10 +1470,10 @@
 
     add-int/lit8 v2, v2, 0x1
 
-    .line 396
+    .line 400
     aput-object p2, p0, v2
 
-    .line 397
+    .line 401
     new-instance p1, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableMap/TrieNode;
 
     invoke-virtual {p3}, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableMap/PersistentHashMapBuilder;->getOwnership()Landroidx/compose/runtime/external/kotlinx/collections/immutable/internal/MutabilityOwnership;
@@ -1475,7 +1491,7 @@
 
     goto :goto_0
 
-    .line 401
+    .line 405
     :cond_4
     invoke-virtual {p3}, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableMap/PersistentHashMapBuilder;->size()I
 
@@ -1485,14 +1501,14 @@
 
     invoke-virtual {p3, v0}, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableMap/PersistentHashMapBuilder;->setSize(I)V
 
-    .line 402
+    .line 406
     iget-object p0, p0, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableMap/TrieNode;->buffer:[Ljava/lang/Object;
 
     invoke-static {p0, v1, p1, p2}, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableMap/TrieNodeKt;->access$insertEntryAtIndex([Ljava/lang/Object;ILjava/lang/Object;Ljava/lang/Object;)[Ljava/lang/Object;
 
     move-result-object p0
 
-    .line 403
+    .line 407
     new-instance p1, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableMap/TrieNode;
 
     invoke-virtual {p3}, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableMap/PersistentHashMapBuilder;->getOwnership()Landroidx/compose/runtime/external/kotlinx/collections/immutable/internal/MutabilityOwnership;
@@ -1519,7 +1535,7 @@
         }
     .end annotation
 
-    .line 445
+    .line 453
     iget v0, p0, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableMap/TrieNode;->nodeMap:I
 
     const/4 v1, 0x1
@@ -1538,7 +1554,7 @@
     :goto_0
     invoke-static {v0}, Landroidx/compose/runtime/external/kotlinx/collections/immutable/internal/CommonFunctionsKt;->assert(Z)V
 
-    .line 446
+    .line 454
     iget v0, p0, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableMap/TrieNode;->dataMap:I
 
     if-nez v0, :cond_1
@@ -1553,7 +1569,7 @@
     :goto_1
     invoke-static {v0}, Landroidx/compose/runtime/external/kotlinx/collections/immutable/internal/CommonFunctionsKt;->assert(Z)V
 
-    .line 447
+    .line 455
     iget v0, p1, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableMap/TrieNode;->nodeMap:I
 
     if-nez v0, :cond_2
@@ -1568,7 +1584,7 @@
     :goto_2
     invoke-static {v0}, Landroidx/compose/runtime/external/kotlinx/collections/immutable/internal/CommonFunctionsKt;->assert(Z)V
 
-    .line 448
+    .line 456
     iget v0, p1, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableMap/TrieNode;->dataMap:I
 
     if-nez v0, :cond_3
@@ -1583,7 +1599,7 @@
     :goto_3
     invoke-static {v0}, Landroidx/compose/runtime/external/kotlinx/collections/immutable/internal/CommonFunctionsKt;->assert(Z)V
 
-    .line 449
+    .line 457
     iget-object v0, p0, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableMap/TrieNode;->buffer:[Ljava/lang/Object;
 
     array-length v3, v0
@@ -1602,12 +1618,12 @@
 
     invoke-static {v0, v3}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 450
+    .line 458
     iget-object v4, p0, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableMap/TrieNode;->buffer:[Ljava/lang/Object;
 
     array-length v4, v4
 
-    .line 451
+    .line 460
     iget-object v5, p1, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableMap/TrieNode;->buffer:[Ljava/lang/Object;
 
     array-length v5, v5
@@ -1645,7 +1661,7 @@
 
     if-gt v7, v6, :cond_7
 
-    .line 453
+    .line 462
     :cond_5
     :goto_4
     iget-object v8, p1, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableMap/TrieNode;->buffer:[Ljava/lang/Object;
@@ -1658,7 +1674,7 @@
 
     if-nez v8, :cond_6
 
-    .line 454
+    .line 463
     iget-object v8, p1, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableMap/TrieNode;->buffer:[Ljava/lang/Object;
 
     aget-object v9, v8, v6
@@ -1669,7 +1685,7 @@
 
     add-int/lit8 v10, v6, 0x1
 
-    .line 455
+    .line 464
     aget-object v8, v8, v10
 
     aput-object v8, v0, v9
@@ -1678,7 +1694,7 @@
 
     goto :goto_5
 
-    .line 457
+    .line 466
     :cond_6
     invoke-virtual {p2}, Landroidx/compose/runtime/external/kotlinx/collections/immutable/internal/DeltaCounter;->getCount()I
 
@@ -1695,7 +1711,7 @@
 
     goto :goto_4
 
-    .line 461
+    .line 470
     :cond_7
     iget-object p2, p0, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableMap/TrieNode;->buffer:[Ljava/lang/Object;
 
@@ -1705,7 +1721,7 @@
 
     goto :goto_6
 
-    .line 462
+    .line 471
     :cond_8
     iget-object p0, p1, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableMap/TrieNode;->buffer:[Ljava/lang/Object;
 
@@ -1717,7 +1733,7 @@
 
     goto :goto_6
 
-    .line 463
+    .line 472
     :cond_9
     array-length p0, v0
 
@@ -1729,7 +1745,7 @@
 
     goto :goto_6
 
-    .line 464
+    .line 473
     :cond_a
     new-instance p0, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableMap/TrieNode;
 
@@ -1757,7 +1773,7 @@
         }
     .end annotation
 
-    .line 416
+    .line 422
     iget-object v0, p0, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableMap/TrieNode;->buffer:[Ljava/lang/Object;
 
     array-length v0, v0
@@ -1797,7 +1813,7 @@
 
     if-gt v2, v1, :cond_3
 
-    .line 417
+    .line 423
     :cond_1
     :goto_0
     invoke-direct {p0, v1}, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableMap/TrieNode;->keyAtIndex(I)Ljava/lang/Object;
@@ -1810,7 +1826,7 @@
 
     if-eqz v3, :cond_2
 
-    .line 418
+    .line 424
     invoke-direct {p0, v1, p2}, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableMap/TrieNode;->mutableCollisionRemoveEntryAtIndex(ILandroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableMap/PersistentHashMapBuilder;)Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableMap/TrieNode;
 
     move-result-object p0
@@ -1840,7 +1856,7 @@
         }
     .end annotation
 
-    .line 434
+    .line 442
     iget-object v0, p0, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableMap/TrieNode;->buffer:[Ljava/lang/Object;
 
     array-length v0, v0
@@ -1880,7 +1896,7 @@
 
     if-gt v2, v1, :cond_3
 
-    .line 435
+    .line 443
     :cond_1
     :goto_0
     invoke-direct {p0, v1}, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableMap/TrieNode;->keyAtIndex(I)Ljava/lang/Object;
@@ -1903,7 +1919,7 @@
 
     if-eqz v3, :cond_2
 
-    .line 436
+    .line 444
     invoke-direct {p0, v1, p3}, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableMap/TrieNode;->mutableCollisionRemoveEntryAtIndex(ILandroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableMap/PersistentHashMapBuilder;)Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableMap/TrieNode;
 
     move-result-object p0
@@ -2152,7 +2168,7 @@
 
     move-object/from16 v3, p4
 
-    .line 478
+    .line 487
     invoke-direct {p0, p2}, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableMap/TrieNode;->hasNodeAt(I)Z
 
     move-result v4
@@ -2161,7 +2177,7 @@
 
     if-eqz v4, :cond_2
 
-    .line 479
+    .line 488
     invoke-virtual {p0, p2}, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableMap/TrieNode;->nodeIndex$runtime_release(I)I
 
     move-result v4
@@ -2170,14 +2186,14 @@
 
     move-result-object v6
 
-    .line 481
+    .line 490
     invoke-direct {p1, p2}, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableMap/TrieNode;->hasNodeAt(I)Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
-    .line 482
+    .line 491
     invoke-virtual {p1, p2}, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableMap/TrieNode;->nodeIndex$runtime_release(I)I
 
     move-result v0
@@ -2190,7 +2206,7 @@
 
     move-object/from16 v4, p5
 
-    .line 483
+    .line 492
     invoke-virtual {v6, v0, v1, v3, v4}, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableMap/TrieNode;->mutablePutAll(Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableMap/TrieNode;ILandroidx/compose/runtime/external/kotlinx/collections/immutable/internal/DeltaCounter;Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableMap/PersistentHashMapBuilder;)Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableMap/TrieNode;
 
     move-result-object v6
@@ -2200,36 +2216,36 @@
     :cond_0
     move-object/from16 v4, p5
 
-    .line 485
+    .line 494
     invoke-virtual {p1, p2}, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableMap/TrieNode;->hasEntryAt$runtime_release(I)Z
 
     move-result v0
 
     if-eqz v0, :cond_a
 
-    .line 486
+    .line 495
     invoke-virtual {p1, p2}, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableMap/TrieNode;->entryKeyIndex$runtime_release(I)I
 
     move-result v0
 
-    .line 487
+    .line 496
     invoke-direct {p1, v0}, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableMap/TrieNode;->keyAtIndex(I)Ljava/lang/Object;
 
     move-result-object v8
 
-    .line 488
+    .line 497
     invoke-direct {p1, v0}, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableMap/TrieNode;->valueAtKeyIndex(I)Ljava/lang/Object;
 
     move-result-object v9
 
-    .line 489
+    .line 498
     invoke-virtual/range {p5 .. p5}, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableMap/PersistentHashMapBuilder;->size()I
 
     move-result v0
 
     if-eqz v8, :cond_1
 
-    .line 490
+    .line 499
     invoke-virtual {v8}, Ljava/lang/Object;->hashCode()I
 
     move-result v5
@@ -2245,7 +2261,7 @@
 
     move-result-object v6
 
-    .line 491
+    .line 500
     invoke-virtual/range {p5 .. p5}, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableMap/PersistentHashMapBuilder;->size()I
 
     move-result v1
@@ -2265,14 +2281,14 @@
     :cond_2
     move-object/from16 v4, p5
 
-    .line 498
+    .line 507
     invoke-direct {p1, p2}, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableMap/TrieNode;->hasNodeAt(I)Z
 
     move-result v6
 
     if-eqz v6, :cond_7
 
-    .line 499
+    .line 508
     invoke-virtual {p1, p2}, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableMap/TrieNode;->nodeIndex$runtime_release(I)I
 
     move-result v6
@@ -2281,26 +2297,26 @@
 
     move-result-object v7
 
-    .line 501
+    .line 510
     invoke-virtual {p0, p2}, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableMap/TrieNode;->hasEntryAt$runtime_release(I)Z
 
     move-result v1
 
     if-eqz v1, :cond_6
 
-    .line 503
+    .line 512
     invoke-virtual {p0, p2}, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableMap/TrieNode;->entryKeyIndex$runtime_release(I)I
 
     move-result v1
 
-    .line 504
+    .line 513
     invoke-direct {p0, v1}, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableMap/TrieNode;->keyAtIndex(I)Ljava/lang/Object;
 
     move-result-object v9
 
     if-eqz v9, :cond_3
 
-    .line 505
+    .line 514
     invoke-virtual {v9}, Ljava/lang/Object;->hashCode()I
 
     move-result v2
@@ -2319,7 +2335,7 @@
 
     if-eqz v2, :cond_4
 
-    .line 506
+    .line 515
     invoke-virtual/range {p4 .. p4}, Landroidx/compose/runtime/external/kotlinx/collections/immutable/internal/DeltaCounter;->getCount()I
 
     move-result v0
@@ -2330,7 +2346,7 @@
 
     goto :goto_1
 
-    .line 509
+    .line 518
     :cond_4
     invoke-direct {p0, v1}, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableMap/TrieNode;->valueAtKeyIndex(I)Ljava/lang/Object;
 
@@ -2338,7 +2354,7 @@
 
     if-eqz v9, :cond_5
 
-    .line 510
+    .line 519
     invoke-virtual {v9}, Ljava/lang/Object;->hashCode()I
 
     move-result v5
@@ -2360,40 +2376,40 @@
 
     goto :goto_3
 
-    .line 518
+    .line 527
     :cond_7
     invoke-virtual {p0, p2}, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableMap/TrieNode;->entryKeyIndex$runtime_release(I)I
 
     move-result v3
 
-    .line 519
+    .line 528
     invoke-direct {p0, v3}, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableMap/TrieNode;->keyAtIndex(I)Ljava/lang/Object;
 
     move-result-object v6
 
-    .line 520
+    .line 529
     invoke-direct {p0, v3}, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableMap/TrieNode;->valueAtKeyIndex(I)Ljava/lang/Object;
 
     move-result-object v3
 
-    .line 521
+    .line 530
     invoke-virtual {p1, p2}, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableMap/TrieNode;->entryKeyIndex$runtime_release(I)I
 
     move-result v2
 
-    .line 522
+    .line 531
     invoke-direct {p1, v2}, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableMap/TrieNode;->keyAtIndex(I)Ljava/lang/Object;
 
     move-result-object v7
 
-    .line 523
+    .line 532
     invoke-direct {p1, v2}, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableMap/TrieNode;->valueAtKeyIndex(I)Ljava/lang/Object;
 
     move-result-object v8
 
     if-eqz v6, :cond_8
 
-    .line 525
+    .line 534
     invoke-virtual {v6}, Ljava/lang/Object;->hashCode()I
 
     move-result v1
@@ -2406,7 +2422,7 @@
     :goto_2
     if-eqz v7, :cond_9
 
-    .line 528
+    .line 537
     invoke-virtual {v7}, Ljava/lang/Object;->hashCode()I
 
     move-result v2
@@ -2416,7 +2432,7 @@
     :cond_9
     add-int/lit8 v9, p3, 0x5
 
-    .line 532
+    .line 541
     invoke-virtual/range {p5 .. p5}, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableMap/PersistentHashMapBuilder;->getOwnership()Landroidx/compose/runtime/external/kotlinx/collections/immutable/internal/MutabilityOwnership;
 
     move-result-object v10
@@ -2435,7 +2451,7 @@
 
     move-object v8, v10
 
-    .line 524
+    .line 533
     invoke-direct/range {v0 .. v8}, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableMap/TrieNode;->makeNode(ILjava/lang/Object;Ljava/lang/Object;ILjava/lang/Object;Ljava/lang/Object;ILandroidx/compose/runtime/external/kotlinx/collections/immutable/internal/MutabilityOwnership;)Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableMap/TrieNode;
 
     move-result-object v6
@@ -2625,14 +2641,14 @@
 
     if-nez p2, :cond_0
 
-    .line 797
+    .line 808
     invoke-direct {p0, p3, p4, p5}, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableMap/TrieNode;->mutableRemoveNodeAtIndex(IILandroidx/compose/runtime/external/kotlinx/collections/immutable/internal/MutabilityOwnership;)Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableMap/TrieNode;
 
     move-result-object p0
 
     goto :goto_0
 
-    .line 798
+    .line 809
     :cond_0
     iget-object p4, p0, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableMap/TrieNode;->ownedBy:Landroidx/compose/runtime/external/kotlinx/collections/immutable/internal/MutabilityOwnership;
 
@@ -2640,7 +2656,7 @@
 
     if-eq p1, p2, :cond_2
 
-    .line 799
+    .line 810
     :cond_1
     invoke-direct {p0, p3, p2, p5}, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableMap/TrieNode;->mutableUpdateNodeAtIndex(ILandroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableMap/TrieNode;Landroidx/compose/runtime/external/kotlinx/collections/immutable/internal/MutabilityOwnership;)Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableMap/TrieNode;
 
@@ -2907,7 +2923,7 @@
 
     if-nez p2, :cond_0
 
-    .line 761
+    .line 772
     invoke-direct {p0, p3, p4}, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableMap/TrieNode;->removeNodeAtIndex(II)Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableMap/TrieNode;
 
     move-result-object p0
@@ -2917,7 +2933,7 @@
     :cond_0
     if-eq p1, p2, :cond_1
 
-    .line 763
+    .line 774
     invoke-direct {p0, p3, p4, p2}, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableMap/TrieNode;->updateNodeAtIndex(IILandroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableMap/TrieNode;)Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableMap/TrieNode;
 
     move-result-object p0
@@ -3113,13 +3129,9 @@
         }
     .end annotation
 
-    const-string/jumbo v0, "visitor"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
     const/4 v0, 0x0
 
-    .line 860
+    .line 871
     invoke-direct {p0, p1, v0, v0}, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableMap/TrieNode;->accept(Lkotlin/jvm/functions/Function5;II)V
 
     return-void
@@ -3135,21 +3147,21 @@
 
     const/4 v0, 0x1
 
-    .line 558
+    .line 568
     invoke-static {p1, p3}, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableMap/TrieNodeKt;->indexSegment(II)I
 
     move-result v1
 
     shl-int/2addr v0, v1
 
-    .line 560
+    .line 570
     invoke-virtual {p0, v0}, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableMap/TrieNode;->hasEntryAt$runtime_release(I)Z
 
     move-result v1
 
     if-eqz v1, :cond_0
 
-    .line 561
+    .line 571
     invoke-virtual {p0, v0}, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableMap/TrieNode;->entryKeyIndex$runtime_release(I)I
 
     move-result p1
@@ -3164,7 +3176,7 @@
 
     return p0
 
-    .line 563
+    .line 573
     :cond_0
     invoke-direct {p0, v0}, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableMap/TrieNode;->hasNodeAt(I)Z
 
@@ -3172,7 +3184,7 @@
 
     if-eqz v1, :cond_2
 
-    .line 564
+    .line 574
     invoke-virtual {p0, v0}, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableMap/TrieNode;->nodeIndex$runtime_release(I)I
 
     move-result v0
@@ -3185,7 +3197,7 @@
 
     if-ne p3, v0, :cond_1
 
-    .line 566
+    .line 576
     invoke-direct {p0, p2}, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableMap/TrieNode;->collisionContainsKey(Ljava/lang/Object;)Z
 
     move-result p0
@@ -3195,7 +3207,7 @@
     :cond_1
     add-int/lit8 p3, p3, 0x5
 
-    .line 568
+    .line 578
     invoke-virtual {p0, p1, p2, p3}, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableMap/TrieNode;->containsKey(ILjava/lang/Object;I)Z
 
     move-result p0
@@ -3250,14 +3262,14 @@
 
     const/4 v0, 0x1
 
-    .line 576
+    .line 586
     invoke-static {p1, p3}, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableMap/TrieNodeKt;->indexSegment(II)I
 
     move-result v1
 
     shl-int/2addr v0, v1
 
-    .line 578
+    .line 588
     invoke-virtual {p0, v0}, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableMap/TrieNode;->hasEntryAt$runtime_release(I)Z
 
     move-result v1
@@ -3266,12 +3278,12 @@
 
     if-eqz v1, :cond_1
 
-    .line 579
+    .line 589
     invoke-virtual {p0, v0}, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableMap/TrieNode;->entryKeyIndex$runtime_release(I)I
 
     move-result p1
 
-    .line 581
+    .line 591
     invoke-direct {p0, p1}, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableMap/TrieNode;->keyAtIndex(I)Ljava/lang/Object;
 
     move-result-object p3
@@ -3282,7 +3294,7 @@
 
     if-eqz p2, :cond_0
 
-    .line 582
+    .line 592
     invoke-direct {p0, p1}, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableMap/TrieNode;->valueAtKeyIndex(I)Ljava/lang/Object;
 
     move-result-object p0
@@ -3292,7 +3304,7 @@
     :cond_0
     return-object v2
 
-    .line 586
+    .line 596
     :cond_1
     invoke-direct {p0, v0}, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableMap/TrieNode;->hasNodeAt(I)Z
 
@@ -3300,7 +3312,7 @@
 
     if-eqz v1, :cond_3
 
-    .line 587
+    .line 597
     invoke-virtual {p0, v0}, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableMap/TrieNode;->nodeIndex$runtime_release(I)I
 
     move-result v0
@@ -3313,7 +3325,7 @@
 
     if-ne p3, v0, :cond_2
 
-    .line 589
+    .line 599
     invoke-direct {p0, p2}, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableMap/TrieNode;->collisionGet(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p0
@@ -3323,7 +3335,7 @@
     :cond_2
     add-int/lit8 p3, p3, 0x5
 
-    .line 591
+    .line 601
     invoke-virtual {p0, p1, p2, p3}, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableMap/TrieNode;->get(ILjava/lang/Object;I)Ljava/lang/Object;
 
     move-result-object p0
@@ -3376,11 +3388,7 @@
         }
     .end annotation
 
-    const-string v0, "mutator"
-
-    invoke-static {p5, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 696
+    .line 707
     invoke-static {p1, p4}, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableMap/TrieNodeKt;->indexSegment(II)I
 
     move-result v0
@@ -3389,19 +3397,19 @@
 
     shl-int v4, v1, v0
 
-    .line 698
+    .line 709
     invoke-virtual {p0, v4}, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableMap/TrieNode;->hasEntryAt$runtime_release(I)Z
 
     move-result v0
 
     if-eqz v0, :cond_2
 
-    .line 699
+    .line 710
     invoke-virtual {p0, v4}, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableMap/TrieNode;->entryKeyIndex$runtime_release(I)I
 
     move-result v3
 
-    .line 701
+    .line 712
     invoke-direct {p0, v3}, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableMap/TrieNode;->keyAtIndex(I)Ljava/lang/Object;
 
     move-result-object v0
@@ -3412,14 +3420,14 @@
 
     if-eqz v0, :cond_1
 
-    .line 702
+    .line 713
     invoke-direct {p0, v3}, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableMap/TrieNode;->valueAtKeyIndex(I)Ljava/lang/Object;
 
     move-result-object p1
 
     invoke-virtual {p5, p1}, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableMap/PersistentHashMapBuilder;->setOperationResult$runtime_release(Ljava/lang/Object;)V
 
-    .line 703
+    .line 714
     invoke-direct {p0, v3}, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableMap/TrieNode;->valueAtKeyIndex(I)Ljava/lang/Object;
 
     move-result-object p1
@@ -3428,7 +3436,7 @@
 
     return-object p0
 
-    .line 707
+    .line 718
     :cond_0
     invoke-direct {p0, v3, p3, p5}, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableMap/TrieNode;->mutableUpdateValueAtIndex(ILjava/lang/Object;Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableMap/PersistentHashMapBuilder;)Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableMap/TrieNode;
 
@@ -3436,7 +3444,7 @@
 
     return-object p0
 
-    .line 709
+    .line 720
     :cond_1
     invoke-virtual {p5}, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableMap/PersistentHashMapBuilder;->size()I
 
@@ -3446,7 +3454,7 @@
 
     invoke-virtual {p5, v0}, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableMap/PersistentHashMapBuilder;->setSize(I)V
 
-    .line 710
+    .line 721
     invoke-virtual {p5}, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableMap/PersistentHashMapBuilder;->getOwnership()Landroidx/compose/runtime/external/kotlinx/collections/immutable/internal/MutabilityOwnership;
 
     move-result-object v9
@@ -3467,7 +3475,7 @@
 
     return-object p0
 
-    .line 712
+    .line 723
     :cond_2
     invoke-direct {p0, v4}, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableMap/TrieNode;->hasNodeAt(I)Z
 
@@ -3475,12 +3483,12 @@
 
     if-eqz v0, :cond_5
 
-    .line 713
+    .line 724
     invoke-virtual {p0, v4}, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableMap/TrieNode;->nodeIndex$runtime_release(I)I
 
     move-result v0
 
-    .line 715
+    .line 726
     invoke-virtual {p0, v0}, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableMap/TrieNode;->nodeAtIndex$runtime_release(I)Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableMap/TrieNode;
 
     move-result-object v7
@@ -3489,7 +3497,7 @@
 
     if-ne p4, v1, :cond_3
 
-    .line 717
+    .line 728
     invoke-direct {v7, p2, p3, p5}, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableMap/TrieNode;->mutableCollisionPut(Ljava/lang/Object;Ljava/lang/Object;Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableMap/PersistentHashMapBuilder;)Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableMap/TrieNode;
 
     move-result-object p1
@@ -3509,7 +3517,7 @@
 
     move-object v6, p5
 
-    .line 719
+    .line 730
     invoke-virtual/range {v1 .. v6}, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableMap/TrieNode;->mutablePut(ILjava/lang/Object;Ljava/lang/Object;ILandroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableMap/PersistentHashMapBuilder;)Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableMap/TrieNode;
 
     move-result-object p1
@@ -3519,7 +3527,7 @@
 
     return-object p0
 
-    .line 724
+    .line 735
     :cond_4
     invoke-virtual {p5}, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableMap/PersistentHashMapBuilder;->getOwnership()Landroidx/compose/runtime/external/kotlinx/collections/immutable/internal/MutabilityOwnership;
 
@@ -3531,7 +3539,7 @@
 
     return-object p0
 
-    .line 728
+    .line 739
     :cond_5
     invoke-virtual {p5}, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableMap/PersistentHashMapBuilder;->size()I
 
@@ -3541,7 +3549,7 @@
 
     invoke-virtual {p5, p1}, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableMap/PersistentHashMapBuilder;->setSize(I)V
 
-    .line 729
+    .line 740
     invoke-virtual {p5}, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableMap/PersistentHashMapBuilder;->getOwnership()Landroidx/compose/runtime/external/kotlinx/collections/immutable/internal/MutabilityOwnership;
 
     move-result-object p1
@@ -3554,7 +3562,7 @@
 .end method
 
 .method public final mutablePutAll(Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableMap/TrieNode;ILandroidx/compose/runtime/external/kotlinx/collections/immutable/internal/DeltaCounter;Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableMap/PersistentHashMapBuilder;)Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableMap/TrieNode;
-    .locals 19
+    .locals 18
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -3574,23 +3582,9 @@
 
     move-object/from16 v8, p3
 
-    const-string v0, "otherNode"
-
-    invoke-static {v7, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string v0, "intersectionCounter"
-
-    invoke-static {v8, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string v0, "mutator"
-
-    move-object/from16 v9, p4
-
-    invoke-static {v9, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
     if-ne v6, v7, :cond_0
 
-    .line 603
+    .line 613
     invoke-direct/range {p0 .. p0}, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableMap/TrieNode;->calculateSize()I
 
     move-result v0
@@ -3602,11 +3596,11 @@
     :cond_0
     const/16 v0, 0x1e
 
-    move/from16 v10, p2
+    move/from16 v9, p2
 
-    if-le v10, v0, :cond_1
+    if-le v9, v0, :cond_1
 
-    .line 608
+    .line 618
     invoke-virtual/range {p4 .. p4}, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableMap/PersistentHashMapBuilder;->getOwnership()Landroidx/compose/runtime/external/kotlinx/collections/immutable/internal/MutabilityOwnership;
 
     move-result-object v0
@@ -3617,7 +3611,7 @@
 
     return-object v0
 
-    .line 612
+    .line 622
     :cond_1
     iget v0, v6, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableMap/TrieNode;->nodeMap:I
 
@@ -3625,7 +3619,7 @@
 
     or-int/2addr v0, v1
 
-    .line 615
+    .line 625
     iget v1, v6, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableMap/TrieNode;->dataMap:I
 
     iget v2, v7, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableMap/TrieNode;->dataMap:I
@@ -3638,17 +3632,17 @@
 
     and-int/2addr v1, v2
 
-    move v11, v3
+    move v10, v3
 
     :goto_0
     if-eqz v1, :cond_3
 
-    .line 891
+    .line 902
     invoke-static {v1}, Ljava/lang/Integer;->lowestOneBit(I)I
 
     move-result v2
 
-    .line 620
+    .line 630
     invoke-virtual {v6, v2}, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableMap/TrieNode;->entryKeyIndex$runtime_release(I)I
 
     move-result v3
@@ -3657,7 +3651,7 @@
 
     move-result-object v3
 
-    .line 621
+    .line 631
     invoke-virtual {v7, v2}, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableMap/TrieNode;->entryKeyIndex$runtime_release(I)I
 
     move-result v4
@@ -3666,16 +3660,16 @@
 
     move-result-object v4
 
-    .line 623
+    .line 633
     invoke-static {v3, v4}, Lkotlin/jvm/internal/Intrinsics;->areEqual(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v3
 
     if-eqz v3, :cond_2
 
-    or-int v3, v11, v2
+    or-int v3, v10, v2
 
-    move v11, v3
+    move v10, v3
 
     goto :goto_1
 
@@ -3688,11 +3682,11 @@
     goto :goto_0
 
     :cond_3
-    and-int v1, v0, v11
+    and-int v1, v0, v10
 
     if-nez v1, :cond_b
 
-    .line 630
+    .line 641
     iget-object v1, v6, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableMap/TrieNode;->ownedBy:Landroidx/compose/runtime/external/kotlinx/collections/immutable/internal/MutabilityOwnership;
 
     invoke-virtual/range {p4 .. p4}, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableMap/PersistentHashMapBuilder;->getOwnership()Landroidx/compose/runtime/external/kotlinx/collections/immutable/internal/MutabilityOwnership;
@@ -3707,19 +3701,19 @@
 
     iget v1, v6, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableMap/TrieNode;->dataMap:I
 
-    if-ne v1, v11, :cond_4
+    if-ne v1, v10, :cond_4
 
     iget v1, v6, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableMap/TrieNode;->nodeMap:I
 
     if-ne v1, v0, :cond_4
 
-    move-object v12, v6
+    move-object v11, v6
 
     goto :goto_2
 
-    .line 632
+    .line 643
     :cond_4
-    invoke-static {v11}, Ljava/lang/Integer;->bitCount(I)I
+    invoke-static {v10}, Ljava/lang/Integer;->bitCount(I)I
 
     move-result v1
 
@@ -3733,89 +3727,89 @@
 
     new-array v1, v1, [Ljava/lang/Object;
 
-    .line 633
+    .line 644
     new-instance v2, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableMap/TrieNode;
 
-    invoke-direct {v2, v11, v0, v1}, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableMap/TrieNode;-><init>(II[Ljava/lang/Object;)V
+    invoke-direct {v2, v10, v0, v1}, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableMap/TrieNode;-><init>(II[Ljava/lang/Object;)V
 
-    move-object v12, v2
+    move-object v11, v2
 
     :goto_2
-    const/4 v13, 0x0
+    const/4 v12, 0x0
 
-    move v14, v0
+    move v13, v0
 
-    move v15, v13
+    move v14, v12
 
     :goto_3
-    if-eqz v14, :cond_5
+    if-eqz v13, :cond_5
 
-    .line 900
-    invoke-static {v14}, Ljava/lang/Integer;->lowestOneBit(I)I
+    .line 911
+    invoke-static {v13}, Ljava/lang/Integer;->lowestOneBit(I)I
 
-    move-result v16
+    move-result v15
 
-    .line 637
-    iget-object v5, v12, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableMap/TrieNode;->buffer:[Ljava/lang/Object;
+    .line 648
+    iget-object v5, v11, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableMap/TrieNode;->buffer:[Ljava/lang/Object;
 
     array-length v0, v5
 
     add-int/lit8 v0, v0, -0x1
 
-    sub-int v17, v0, v15
+    sub-int v16, v0, v14
 
     move-object/from16 v0, p0
 
     move-object/from16 v1, p1
 
-    move/from16 v2, v16
+    move v2, v15
 
     move/from16 v3, p2
 
     move-object/from16 v4, p3
 
-    move-object/from16 v18, v5
+    move-object/from16 v17, v5
 
     move-object/from16 v5, p4
 
-    .line 638
+    .line 649
     invoke-direct/range {v0 .. v5}, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableMap/TrieNode;->mutablePutAllFromOtherNodeCell(Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableMap/TrieNode;IILandroidx/compose/runtime/external/kotlinx/collections/immutable/internal/DeltaCounter;Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableMap/PersistentHashMapBuilder;)Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableMap/TrieNode;
 
     move-result-object v0
 
-    aput-object v0, v18, v17
+    aput-object v0, v17, v16
 
-    add-int/lit8 v15, v15, 0x1
+    add-int/lit8 v14, v14, 0x1
 
-    xor-int v14, v14, v16
+    xor-int/2addr v13, v15
 
     goto :goto_3
 
     :cond_5
     :goto_4
-    if-eqz v11, :cond_8
+    if-eqz v10, :cond_8
 
-    .line 909
-    invoke-static {v11}, Ljava/lang/Integer;->lowestOneBit(I)I
+    .line 920
+    invoke-static {v10}, Ljava/lang/Integer;->lowestOneBit(I)I
 
     move-result v0
 
-    mul-int/lit8 v1, v13, 0x2
+    mul-int/lit8 v1, v12, 0x2
 
-    .line 643
+    .line 654
     invoke-virtual {v7, v0}, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableMap/TrieNode;->hasEntryAt$runtime_release(I)Z
 
     move-result v2
 
     if-nez v2, :cond_6
 
-    .line 644
+    .line 655
     invoke-virtual {v6, v0}, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableMap/TrieNode;->entryKeyIndex$runtime_release(I)I
 
     move-result v2
 
-    .line 645
-    iget-object v3, v12, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableMap/TrieNode;->buffer:[Ljava/lang/Object;
+    .line 656
+    iget-object v3, v11, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableMap/TrieNode;->buffer:[Ljava/lang/Object;
 
     invoke-direct {v6, v2}, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableMap/TrieNode;->keyAtIndex(I)Ljava/lang/Object;
 
@@ -3823,8 +3817,8 @@
 
     aput-object v4, v3, v1
 
-    .line 646
-    iget-object v3, v12, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableMap/TrieNode;->buffer:[Ljava/lang/Object;
+    .line 657
+    iget-object v3, v11, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableMap/TrieNode;->buffer:[Ljava/lang/Object;
 
     add-int/lit8 v1, v1, 0x1
 
@@ -3836,14 +3830,14 @@
 
     goto :goto_5
 
-    .line 652
+    .line 663
     :cond_6
     invoke-virtual {v7, v0}, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableMap/TrieNode;->entryKeyIndex$runtime_release(I)I
 
     move-result v2
 
-    .line 653
-    iget-object v3, v12, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableMap/TrieNode;->buffer:[Ljava/lang/Object;
+    .line 664
+    iget-object v3, v11, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableMap/TrieNode;->buffer:[Ljava/lang/Object;
 
     invoke-direct {v7, v2}, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableMap/TrieNode;->keyAtIndex(I)Ljava/lang/Object;
 
@@ -3851,8 +3845,8 @@
 
     aput-object v4, v3, v1
 
-    .line 654
-    iget-object v3, v12, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableMap/TrieNode;->buffer:[Ljava/lang/Object;
+    .line 665
+    iget-object v3, v11, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableMap/TrieNode;->buffer:[Ljava/lang/Object;
 
     add-int/lit8 v1, v1, 0x1
 
@@ -3862,7 +3856,7 @@
 
     aput-object v2, v3, v1
 
-    .line 655
+    .line 666
     invoke-virtual {v6, v0}, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableMap/TrieNode;->hasEntryAt$runtime_release(I)Z
 
     move-result v1
@@ -3879,39 +3873,39 @@
 
     :cond_7
     :goto_5
-    add-int/lit8 v13, v13, 0x1
+    add-int/lit8 v12, v12, 0x1
 
-    xor-int/2addr v11, v0
+    xor-int/2addr v10, v0
 
     goto :goto_4
 
-    .line 660
+    .line 671
     :cond_8
-    invoke-direct {v6, v12}, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableMap/TrieNode;->elementsIdentityEquals(Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableMap/TrieNode;)Z
+    invoke-direct {v6, v11}, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableMap/TrieNode;->elementsIdentityEquals(Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableMap/TrieNode;)Z
 
     move-result v0
 
     if-eqz v0, :cond_9
 
-    move-object v12, v6
+    move-object v11, v6
 
     goto :goto_6
 
-    .line 661
+    .line 672
     :cond_9
-    invoke-direct {v7, v12}, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableMap/TrieNode;->elementsIdentityEquals(Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableMap/TrieNode;)Z
+    invoke-direct {v7, v11}, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableMap/TrieNode;->elementsIdentityEquals(Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableMap/TrieNode;)Z
 
     move-result v0
 
     if-eqz v0, :cond_a
 
-    move-object v12, v7
+    move-object v11, v7
 
     :cond_a
     :goto_6
-    return-object v12
+    return-object v11
 
-    .line 628
+    .line 639
     :cond_b
     new-instance v0, Ljava/lang/IllegalStateException;
 
@@ -3938,32 +3932,28 @@
         }
     .end annotation
 
-    const-string v0, "mutator"
-
-    invoke-static {p4, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
     const/4 v0, 0x1
 
-    .line 769
+    .line 780
     invoke-static {p1, p3}, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableMap/TrieNodeKt;->indexSegment(II)I
 
     move-result v1
 
     shl-int v6, v0, v1
 
-    .line 771
+    .line 782
     invoke-virtual {p0, v6}, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableMap/TrieNode;->hasEntryAt$runtime_release(I)Z
 
     move-result v0
 
     if-eqz v0, :cond_1
 
-    .line 772
+    .line 783
     invoke-virtual {p0, v6}, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableMap/TrieNode;->entryKeyIndex$runtime_release(I)I
 
     move-result p1
 
-    .line 774
+    .line 785
     invoke-direct {p0, p1}, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableMap/TrieNode;->keyAtIndex(I)Ljava/lang/Object;
 
     move-result-object p3
@@ -3974,7 +3964,7 @@
 
     if-eqz p2, :cond_0
 
-    .line 775
+    .line 786
     invoke-direct {p0, p1, v6, p4}, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableMap/TrieNode;->mutableRemoveEntryAtIndex(IILandroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableMap/PersistentHashMapBuilder;)Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableMap/TrieNode;
 
     move-result-object p0
@@ -3982,7 +3972,7 @@
     :cond_0
     return-object p0
 
-    .line 779
+    .line 790
     :cond_1
     invoke-direct {p0, v6}, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableMap/TrieNode;->hasNodeAt(I)Z
 
@@ -3990,12 +3980,12 @@
 
     if-eqz v0, :cond_3
 
-    .line 780
+    .line 791
     invoke-virtual {p0, v6}, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableMap/TrieNode;->nodeIndex$runtime_release(I)I
 
     move-result v5
 
-    .line 782
+    .line 793
     invoke-virtual {p0, v5}, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableMap/TrieNode;->nodeAtIndex$runtime_release(I)Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableMap/TrieNode;
 
     move-result-object v3
@@ -4004,7 +3994,7 @@
 
     if-ne p3, v0, :cond_2
 
-    .line 784
+    .line 795
     invoke-direct {v3, p2, p4}, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableMap/TrieNode;->mutableCollisionRemove(Ljava/lang/Object;Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableMap/PersistentHashMapBuilder;)Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableMap/TrieNode;
 
     move-result-object p1
@@ -4014,7 +4004,7 @@
     :cond_2
     add-int/lit8 p3, p3, 0x5
 
-    .line 786
+    .line 797
     invoke-virtual {v3, p1, p2, p3, p4}, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableMap/TrieNode;->mutableRemove(ILjava/lang/Object;ILandroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableMap/PersistentHashMapBuilder;)Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableMap/TrieNode;
 
     move-result-object p1
@@ -4022,7 +4012,7 @@
     :goto_0
     move-object v4, p1
 
-    .line 788
+    .line 799
     invoke-virtual {p4}, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableMap/PersistentHashMapBuilder;->getOwnership()Landroidx/compose/runtime/external/kotlinx/collections/immutable/internal/MutabilityOwnership;
 
     move-result-object v7
@@ -4049,32 +4039,28 @@
         }
     .end annotation
 
-    const-string v0, "mutator"
-
-    invoke-static {p5, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
     const/4 v0, 0x1
 
-    .line 832
+    .line 843
     invoke-static {p1, p4}, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableMap/TrieNodeKt;->indexSegment(II)I
 
     move-result v1
 
     shl-int/2addr v0, v1
 
-    .line 834
+    .line 845
     invoke-virtual {p0, v0}, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableMap/TrieNode;->hasEntryAt$runtime_release(I)Z
 
     move-result v1
 
     if-eqz v1, :cond_1
 
-    .line 835
+    .line 846
     invoke-virtual {p0, v0}, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableMap/TrieNode;->entryKeyIndex$runtime_release(I)I
 
     move-result p1
 
-    .line 837
+    .line 848
     invoke-direct {p0, p1}, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableMap/TrieNode;->keyAtIndex(I)Ljava/lang/Object;
 
     move-result-object p4
@@ -4095,7 +4081,7 @@
 
     if-eqz p2, :cond_0
 
-    .line 838
+    .line 849
     invoke-direct {p0, p1, v0, p5}, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableMap/TrieNode;->mutableRemoveEntryAtIndex(IILandroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableMap/PersistentHashMapBuilder;)Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableMap/TrieNode;
 
     move-result-object p0
@@ -4103,7 +4089,7 @@
     :cond_0
     return-object p0
 
-    .line 842
+    .line 853
     :cond_1
     invoke-direct {p0, v0}, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableMap/TrieNode;->hasNodeAt(I)Z
 
@@ -4111,12 +4097,12 @@
 
     if-eqz v1, :cond_3
 
-    .line 843
+    .line 854
     invoke-virtual {p0, v0}, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableMap/TrieNode;->nodeIndex$runtime_release(I)I
 
     move-result v1
 
-    .line 845
+    .line 856
     invoke-virtual {p0, v1}, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableMap/TrieNode;->nodeAtIndex$runtime_release(I)Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableMap/TrieNode;
 
     move-result-object v8
@@ -4125,7 +4111,7 @@
 
     if-ne p4, v2, :cond_2
 
-    .line 847
+    .line 858
     invoke-direct {v8, p2, p3, p5}, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableMap/TrieNode;->mutableCollisionRemove(Ljava/lang/Object;Ljava/lang/Object;Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableMap/PersistentHashMapBuilder;)Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableMap/TrieNode;
 
     move-result-object p1
@@ -4145,7 +4131,7 @@
 
     move-object v7, p5
 
-    .line 849
+    .line 860
     invoke-virtual/range {v2 .. v7}, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableMap/TrieNode;->mutableRemove(ILjava/lang/Object;Ljava/lang/Object;ILandroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableMap/PersistentHashMapBuilder;)Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableMap/TrieNode;
 
     move-result-object p1
@@ -4153,7 +4139,7 @@
     :goto_0
     move-object p2, p1
 
-    .line 851
+    .line 862
     invoke-virtual {p5}, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableMap/PersistentHashMapBuilder;->getOwnership()Landroidx/compose/runtime/external/kotlinx/collections/immutable/internal/MutabilityOwnership;
 
     move-result-object p5
@@ -4233,14 +4219,14 @@
 
     const/4 v0, 0x1
 
-    .line 667
+    .line 678
     invoke-static {p1, p4}, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableMap/TrieNodeKt;->indexSegment(II)I
 
     move-result v1
 
     shl-int v4, v0, v1
 
-    .line 669
+    .line 680
     invoke-virtual {p0, v4}, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableMap/TrieNode;->hasEntryAt$runtime_release(I)Z
 
     move-result v0
@@ -4249,12 +4235,12 @@
 
     if-eqz v0, :cond_2
 
-    .line 670
+    .line 681
     invoke-virtual {p0, v4}, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableMap/TrieNode;->entryKeyIndex$runtime_release(I)I
 
     move-result v3
 
-    .line 672
+    .line 683
     invoke-direct {p0, v3}, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableMap/TrieNode;->keyAtIndex(I)Ljava/lang/Object;
 
     move-result-object v0
@@ -4265,7 +4251,7 @@
 
     if-eqz v0, :cond_1
 
-    .line 673
+    .line 684
     invoke-direct {p0, v3}, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableMap/TrieNode;->valueAtKeyIndex(I)Ljava/lang/Object;
 
     move-result-object p1
@@ -4274,7 +4260,7 @@
 
     return-object v1
 
-    .line 675
+    .line 686
     :cond_0
     invoke-direct {p0, v3, p3}, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableMap/TrieNode;->updateValueAtIndex(ILjava/lang/Object;)Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableMap/TrieNode;
 
@@ -4297,7 +4283,7 @@
 
     move v8, p4
 
-    .line 677
+    .line 688
     invoke-direct/range {v2 .. v8}, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableMap/TrieNode;->moveEntryToNode(IIILjava/lang/Object;Ljava/lang/Object;I)Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableMap/TrieNode;
 
     move-result-object p0
@@ -4308,7 +4294,7 @@
 
     return-object p0
 
-    .line 679
+    .line 690
     :cond_2
     invoke-direct {p0, v4}, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableMap/TrieNode;->hasNodeAt(I)Z
 
@@ -4316,12 +4302,12 @@
 
     if-eqz v0, :cond_5
 
-    .line 680
+    .line 691
     invoke-virtual {p0, v4}, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableMap/TrieNode;->nodeIndex$runtime_release(I)I
 
     move-result v0
 
-    .line 682
+    .line 693
     invoke-virtual {p0, v0}, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableMap/TrieNode;->nodeAtIndex$runtime_release(I)Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableMap/TrieNode;
 
     move-result-object v2
@@ -4330,7 +4316,7 @@
 
     if-ne p4, v3, :cond_3
 
-    .line 684
+    .line 695
     invoke-direct {v2, p2, p3}, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableMap/TrieNode;->collisionPut(Ljava/lang/Object;Ljava/lang/Object;)Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableMap/TrieNode$ModificationResult;
 
     move-result-object p1
@@ -4342,7 +4328,7 @@
     :cond_3
     add-int/lit8 p4, p4, 0x5
 
-    .line 686
+    .line 697
     invoke-virtual {v2, p1, p2, p3, p4}, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableMap/TrieNode;->put(ILjava/lang/Object;Ljava/lang/Object;I)Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableMap/TrieNode$ModificationResult;
 
     move-result-object p1
@@ -4351,23 +4337,23 @@
 
     return-object v1
 
-    .line 915
+    .line 926
     :cond_4
     invoke-virtual {p1}, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableMap/TrieNode$ModificationResult;->getNode()Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableMap/TrieNode;
 
     move-result-object p2
 
-    .line 688
+    .line 699
     invoke-direct {p0, v0, v4, p2}, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableMap/TrieNode;->updateNodeAtIndex(IILandroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableMap/TrieNode;)Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableMap/TrieNode;
 
     move-result-object p0
 
-    .line 915
+    .line 926
     invoke-virtual {p1, p0}, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableMap/TrieNode$ModificationResult;->setNode(Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableMap/TrieNode;)V
 
     return-object p1
 
-    .line 692
+    .line 703
     :cond_5
     invoke-direct {p0, v4, p2, p3}, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableMap/TrieNode;->insertEntryAt(ILjava/lang/Object;Ljava/lang/Object;)Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableMap/TrieNode;
 
@@ -4392,26 +4378,26 @@
 
     const/4 v0, 0x1
 
-    .line 733
+    .line 744
     invoke-static {p1, p3}, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableMap/TrieNodeKt;->indexSegment(II)I
 
     move-result v1
 
     shl-int/2addr v0, v1
 
-    .line 735
+    .line 746
     invoke-virtual {p0, v0}, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableMap/TrieNode;->hasEntryAt$runtime_release(I)Z
 
     move-result v1
 
     if-eqz v1, :cond_1
 
-    .line 736
+    .line 747
     invoke-virtual {p0, v0}, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableMap/TrieNode;->entryKeyIndex$runtime_release(I)I
 
     move-result p1
 
-    .line 738
+    .line 749
     invoke-direct {p0, p1}, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableMap/TrieNode;->keyAtIndex(I)Ljava/lang/Object;
 
     move-result-object p3
@@ -4422,7 +4408,7 @@
 
     if-eqz p2, :cond_0
 
-    .line 739
+    .line 750
     invoke-direct {p0, p1, v0}, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableMap/TrieNode;->removeEntryAtIndex(II)Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableMap/TrieNode;
 
     move-result-object p0
@@ -4430,7 +4416,7 @@
     :cond_0
     return-object p0
 
-    .line 743
+    .line 754
     :cond_1
     invoke-direct {p0, v0}, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableMap/TrieNode;->hasNodeAt(I)Z
 
@@ -4438,12 +4424,12 @@
 
     if-eqz v1, :cond_3
 
-    .line 744
+    .line 755
     invoke-virtual {p0, v0}, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableMap/TrieNode;->nodeIndex$runtime_release(I)I
 
     move-result v1
 
-    .line 746
+    .line 757
     invoke-virtual {p0, v1}, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableMap/TrieNode;->nodeAtIndex$runtime_release(I)Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableMap/TrieNode;
 
     move-result-object v2
@@ -4452,7 +4438,7 @@
 
     if-ne p3, v3, :cond_2
 
-    .line 748
+    .line 759
     invoke-direct {v2, p2}, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableMap/TrieNode;->collisionRemove(Ljava/lang/Object;)Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableMap/TrieNode;
 
     move-result-object p1
@@ -4462,12 +4448,12 @@
     :cond_2
     add-int/lit8 p3, p3, 0x5
 
-    .line 750
+    .line 761
     invoke-virtual {v2, p1, p2, p3}, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableMap/TrieNode;->remove(ILjava/lang/Object;I)Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableMap/TrieNode;
 
     move-result-object p1
 
-    .line 752
+    .line 763
     :goto_0
     invoke-direct {p0, v2, p1, v1, v0}, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableMap/TrieNode;->replaceNode(Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableMap/TrieNode;Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableMap/TrieNode;II)Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableMap/TrieNode;
 
@@ -4489,26 +4475,26 @@
 
     const/4 v0, 0x1
 
-    .line 805
+    .line 816
     invoke-static {p1, p4}, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableMap/TrieNodeKt;->indexSegment(II)I
 
     move-result v1
 
     shl-int/2addr v0, v1
 
-    .line 807
+    .line 818
     invoke-virtual {p0, v0}, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableMap/TrieNode;->hasEntryAt$runtime_release(I)Z
 
     move-result v1
 
     if-eqz v1, :cond_1
 
-    .line 808
+    .line 819
     invoke-virtual {p0, v0}, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableMap/TrieNode;->entryKeyIndex$runtime_release(I)I
 
     move-result p1
 
-    .line 810
+    .line 821
     invoke-direct {p0, p1}, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableMap/TrieNode;->keyAtIndex(I)Ljava/lang/Object;
 
     move-result-object p4
@@ -4529,7 +4515,7 @@
 
     if-eqz p2, :cond_0
 
-    .line 811
+    .line 822
     invoke-direct {p0, p1, v0}, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableMap/TrieNode;->removeEntryAtIndex(II)Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableMap/TrieNode;
 
     move-result-object p0
@@ -4537,7 +4523,7 @@
     :cond_0
     return-object p0
 
-    .line 815
+    .line 826
     :cond_1
     invoke-direct {p0, v0}, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableMap/TrieNode;->hasNodeAt(I)Z
 
@@ -4545,12 +4531,12 @@
 
     if-eqz v1, :cond_3
 
-    .line 816
+    .line 827
     invoke-virtual {p0, v0}, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableMap/TrieNode;->nodeIndex$runtime_release(I)I
 
     move-result v1
 
-    .line 818
+    .line 829
     invoke-virtual {p0, v1}, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableMap/TrieNode;->nodeAtIndex$runtime_release(I)Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableMap/TrieNode;
 
     move-result-object v2
@@ -4559,7 +4545,7 @@
 
     if-ne p4, v3, :cond_2
 
-    .line 820
+    .line 831
     invoke-direct {v2, p2, p3}, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableMap/TrieNode;->collisionRemove(Ljava/lang/Object;Ljava/lang/Object;)Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableMap/TrieNode;
 
     move-result-object p1
@@ -4569,12 +4555,12 @@
     :cond_2
     add-int/lit8 p4, p4, 0x5
 
-    .line 822
+    .line 833
     invoke-virtual {v2, p1, p2, p3, p4}, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableMap/TrieNode;->remove(ILjava/lang/Object;Ljava/lang/Object;I)Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableMap/TrieNode;
 
     move-result-object p1
 
-    .line 824
+    .line 835
     :goto_0
     invoke-direct {p0, v2, p1, v1, v0}, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableMap/TrieNode;->replaceNode(Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableMap/TrieNode;Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableMap/TrieNode;II)Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableMap/TrieNode;
 

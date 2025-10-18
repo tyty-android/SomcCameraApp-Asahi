@@ -80,7 +80,7 @@
 .method public bridge synthetic invoke(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
 
-    .line 937
+    .line 1040
     check-cast p1, Landroidx/compose/animation/core/AnimationVector2D;
 
     invoke-virtual {p0, p1}, Landroidx/compose/animation/EnterExitTransitionKt$TransformOriginVectorConverter$2;->invoke-LIALnN8(Landroidx/compose/animation/core/AnimationVector2D;)J
@@ -97,11 +97,7 @@
 .method public final invoke-LIALnN8(Landroidx/compose/animation/core/AnimationVector2D;)J
     .locals 0
 
-    const-string p0, "it"
-
-    invoke-static {p1, p0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 939
+    .line 1042
     invoke-virtual {p1}, Landroidx/compose/animation/core/AnimationVector2D;->getV1()F
 
     move-result p0

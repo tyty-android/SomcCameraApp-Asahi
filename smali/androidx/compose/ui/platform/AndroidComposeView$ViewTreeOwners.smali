@@ -59,23 +59,15 @@
 .end method
 
 .method public constructor <init>(Landroidx/lifecycle/LifecycleOwner;Landroidx/savedstate/SavedStateRegistryOwner;)V
-    .locals 1
+    .locals 0
 
-    const-string v0, "lifecycleOwner"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string v0, "savedStateRegistryOwner"
-
-    invoke-static {p2, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 1839
+    .line 1987
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 1843
+    .line 1991
     iput-object p1, p0, Landroidx/compose/ui/platform/AndroidComposeView$ViewTreeOwners;->lifecycleOwner:Landroidx/lifecycle/LifecycleOwner;
 
-    .line 1847
+    .line 1995
     iput-object p2, p0, Landroidx/compose/ui/platform/AndroidComposeView$ViewTreeOwners;->savedStateRegistryOwner:Landroidx/savedstate/SavedStateRegistryOwner;
 
     return-void
@@ -86,7 +78,7 @@
 .method public final getLifecycleOwner()Landroidx/lifecycle/LifecycleOwner;
     .locals 0
 
-    .line 1843
+    .line 1991
     iget-object p0, p0, Landroidx/compose/ui/platform/AndroidComposeView$ViewTreeOwners;->lifecycleOwner:Landroidx/lifecycle/LifecycleOwner;
 
     return-object p0
@@ -95,7 +87,7 @@
 .method public final getSavedStateRegistryOwner()Landroidx/savedstate/SavedStateRegistryOwner;
     .locals 0
 
-    .line 1847
+    .line 1995
     iget-object p0, p0, Landroidx/compose/ui/platform/AndroidComposeView$ViewTreeOwners;->savedStateRegistryOwner:Landroidx/savedstate/SavedStateRegistryOwner;
 
     return-object p0

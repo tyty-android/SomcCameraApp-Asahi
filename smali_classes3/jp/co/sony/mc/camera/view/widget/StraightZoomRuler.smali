@@ -5,18 +5,19 @@
 
 # annotations
 .annotation system Ldalvik/annotation/SourceDebugExtension;
-    value = "SMAP\nStraightZoomRuler.kt\nKotlin\n*S Kotlin\n*F\n+ 1 StraightZoomRuler.kt\njp/co/sony/mc/camera/view/widget/StraightZoomRuler\n+ 2 fake.kt\nkotlin/jvm/internal/FakeKt\n+ 3 _Collections.kt\nkotlin/collections/CollectionsKt___CollectionsKt\n*L\n1#1,188:1\n1#2:189\n1855#3,2:190\n1855#3,2:192\n1855#3,2:194\n*S KotlinDebug\n*F\n+ 1 StraightZoomRuler.kt\njp/co/sony/mc/camera/view/widget/StraightZoomRuler\n*L\n136#1:190,2\n149#1:192,2\n163#1:194,2\n*E\n"
+    value = "SMAP\nStraightZoomRuler.kt\nKotlin\n*S Kotlin\n*F\n+ 1 StraightZoomRuler.kt\njp/co/sony/mc/camera/view/widget/StraightZoomRuler\n+ 2 fake.kt\nkotlin/jvm/internal/FakeKt\n+ 3 _Collections.kt\nkotlin/collections/CollectionsKt___CollectionsKt\n*L\n1#1,188:1\n1#2:189\n1863#3,2:190\n1863#3,2:192\n1863#3,2:194\n*S KotlinDebug\n*F\n+ 1 StraightZoomRuler.kt\njp/co/sony/mc/camera/view/widget/StraightZoomRuler\n*L\n136#1:190,2\n149#1:192,2\n163#1:194,2\n*E\n"
 .end annotation
 
 .annotation runtime Lkotlin/Metadata;
     d1 = {
-        "\u0000b\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0010\u0008\n\u0002\u0008\u0005\n\u0002\u0018\u0002\n\u0002\u0008\n\n\u0002\u0010\u0007\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0006\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0010\u0015\n\u0002\u0008\u0007\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0003\u0008\u0007\u0018\u00002\u00020\u0001B\u000f\u0008\u0016\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u00a2\u0006\u0002\u0010\u0004B\u0019\u0008\u0016\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\u0008\u0010\u0005\u001a\u0004\u0018\u00010\u0006\u00a2\u0006\u0002\u0010\u0007B!\u0008\u0016\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\u0008\u0010\u0005\u001a\u0004\u0018\u00010\u0006\u0012\u0006\u0010\u0008\u001a\u00020\t\u00a2\u0006\u0002\u0010\nJ\u0010\u0010\u001b\u001a\u00020\u001c2\u0006\u0010\u001d\u001a\u00020\u001eH\u0002J\u0010\u0010\u001f\u001a\u00020\u001c2\u0006\u0010\u001d\u001a\u00020\u001eH\u0002J\u0010\u0010 \u001a\u00020\u001c2\u0006\u0010\u001d\u001a\u00020\u001eH\u0002J\u0010\u0010!\u001a\u00020\u001c2\u0006\u0010\u001d\u001a\u00020\u001eH\u0002J\u0010\u0010\"\u001a\u00020\u001c2\u0006\u0010\u001d\u001a\u00020\u001eH\u0002J\u0010\u0010#\u001a\u00020\u001c2\u0006\u0010\u001d\u001a\u00020\u001eH\u0002J\u0010\u0010$\u001a\u00020%2\u0006\u0010&\u001a\u00020\'H\u0002J\u0008\u0010(\u001a\u00020%H\u0002J\u0010\u0010)\u001a\u00020*2\u0006\u0010+\u001a\u00020\tH\u0014J\u0010\u0010,\u001a\u00020\u001c2\u0006\u0010\u001d\u001a\u00020\u001eH\u0014J\u0018\u0010-\u001a\u00020\u001c2\u0006\u0010.\u001a\u00020\t2\u0006\u0010/\u001a\u00020\tH\u0014J\u0018\u00100\u001a\u00020\u001c2\u0006\u00101\u001a\u0002022\u0006\u00103\u001a\u000204H\u0016J\u0010\u00105\u001a\u00020\u001a2\u0006\u00106\u001a\u00020\tH\u0002R\u0014\u0010\u000b\u001a\u00020\t8BX\u0082\u0004\u00a2\u0006\u0006\u001a\u0004\u0008\u000c\u0010\rR\u001b\u0010\u000e\u001a\u00020\u000f8BX\u0082\u0084\u0002\u00a2\u0006\u000c\n\u0004\u0008\u0012\u0010\u0013\u001a\u0004\u0008\u0010\u0010\u0011R$\u0010\u0015\u001a\u00020\t2\u0006\u0010\u0014\u001a\u00020\t@FX\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\u0008\u0016\u0010\r\"\u0004\u0008\u0017\u0010\u0018R\u000e\u0010\u0019\u001a\u00020\u001aX\u0082D\u00a2\u0006\u0002\n\u0000\u00a8\u00067"
+        "\u0000d\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0003\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0010\u0008\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u000b\n\u0002\u0010\u0007\n\u0002\u0008\u0003\n\u0002\u0010\u0002\n\u0002\u0008\u0004\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0015\n\u0002\u0008\n\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0000\u0008\u0007\u0018\u00002\u00020\u0001B\u0011\u0008\u0016\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u00a2\u0006\u0004\u0008\u0004\u0010\u0005B\u001b\u0008\u0016\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\u0008\u0010\u0006\u001a\u0004\u0018\u00010\u0007\u00a2\u0006\u0004\u0008\u0004\u0010\u0008B#\u0008\u0016\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\u0008\u0010\u0006\u001a\u0004\u0018\u00010\u0007\u0012\u0006\u0010\t\u001a\u00020\n\u00a2\u0006\u0004\u0008\u0004\u0010\u000bJ\u0018\u0010\u001c\u001a\u00020\u001d2\u0006\u0010\u001e\u001a\u00020\n2\u0006\u0010\u001f\u001a\u00020\nH\u0014J\u0010\u0010 \u001a\u00020\u001d2\u0006\u0010!\u001a\u00020\"H\u0014J\u0018\u0010#\u001a\u00020\u001d2\u0006\u0010$\u001a\u00020%2\u0006\u0010&\u001a\u00020\'H\u0016J\u0010\u0010(\u001a\u00020)2\u0006\u0010*\u001a\u00020\nH\u0014J\u0010\u0010+\u001a\u00020\u001d2\u0006\u0010!\u001a\u00020\"H\u0002J\u0010\u0010,\u001a\u00020\u001d2\u0006\u0010!\u001a\u00020\"H\u0002J\u0010\u0010-\u001a\u00020\u001d2\u0006\u0010!\u001a\u00020\"H\u0002J\u0010\u0010.\u001a\u00020\u001d2\u0006\u0010!\u001a\u00020\"H\u0002J\u0010\u0010/\u001a\u00020\u001d2\u0006\u0010!\u001a\u00020\"H\u0002J\u0010\u00100\u001a\u00020\u001d2\u0006\u0010!\u001a\u00020\"H\u0002J\u0010\u00101\u001a\u00020\u00192\u0006\u00102\u001a\u00020\nH\u0002J\u0008\u00103\u001a\u000204H\u0002J\u0010\u00105\u001a\u0002042\u0006\u00106\u001a\u000207H\u0002R\u001b\u0010\u000c\u001a\u00020\r8BX\u0082\u0084\u0002\u00a2\u0006\u000c\n\u0004\u0008\u0010\u0010\u0011\u001a\u0004\u0008\u000e\u0010\u000fR$\u0010\u0013\u001a\u00020\n2\u0006\u0010\u0012\u001a\u00020\n@FX\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\u0008\u0014\u0010\u0015\"\u0004\u0008\u0016\u0010\u0017R\u000e\u0010\u0018\u001a\u00020\u0019X\u0082D\u00a2\u0006\u0002\n\u0000R\u0014\u0010\u001a\u001a\u00020\n8BX\u0082\u0004\u00a2\u0006\u0006\u001a\u0004\u0008\u001b\u0010\u0015\u00a8\u00068"
     }
     d2 = {
         "Ljp/co/sony/mc/camera/view/widget/StraightZoomRuler;",
         "Ljp/co/sony/mc/camera/view/widget/AbsZoomRuler;",
         "context",
         "Landroid/content/Context;",
+        "<init>",
         "(Landroid/content/Context;)V",
         "attrs",
         "Landroid/util/AttributeSet;",
@@ -24,9 +25,6 @@
         "defStyleAttr",
         "",
         "(Landroid/content/Context;Landroid/util/AttributeSet;I)V",
-        "barWidth",
-        "getBarWidth",
-        "()I",
         "fadeMaskPaint",
         "Landroid/graphics/Paint;",
         "getFadeMaskPaint",
@@ -36,44 +34,47 @@
         "value",
         "parentWidth",
         "getParentWidth",
+        "()I",
         "setParentWidth",
         "(I)V",
         "xPerStep",
         "",
-        "drawHighlightTrack",
-        "",
-        "canvas",
-        "Landroid/graphics/Canvas;",
-        "drawLabelMark",
-        "drawLabelText",
-        "drawRuler",
-        "drawThumb",
-        "drawTrack",
-        "getHighlightTrackRect",
-        "Landroid/graphics/Rect;",
-        "track",
-        "Ljp/co/sony/mc/camera/view/widget/IZoomRuler$HighlightTrack;",
-        "getSliderRect",
-        "onCreateDrawableState",
-        "",
-        "extraSpace",
-        "onDraw",
+        "barWidth",
+        "getBarWidth",
         "onMeasure",
+        "",
         "widthMeasureSpec",
         "heightMeasureSpec",
+        "onDraw",
+        "canvas",
+        "Landroid/graphics/Canvas;",
         "onTouchMove",
         "event",
         "Landroid/view/MotionEvent;",
         "prev",
         "Landroid/graphics/PointF;",
+        "onCreateDrawableState",
+        "",
+        "extraSpace",
+        "drawRuler",
+        "drawThumb",
+        "drawTrack",
+        "drawLabelMark",
+        "drawLabelText",
+        "drawHighlightTrack",
         "progressToPos",
         "progress",
+        "getSliderRect",
+        "Landroid/graphics/Rect;",
+        "getHighlightTrackRect",
+        "track",
+        "Ljp/co/sony/mc/camera/view/widget/IZoomRuler$HighlightTrack;",
         "SomcCamera_release"
     }
     k = 0x1
     mv = {
-        0x1,
-        0x9,
+        0x2,
+        0x0,
         0x0
     }
     xi = 0x30
@@ -93,6 +94,16 @@
 
 
 # direct methods
+.method public static synthetic $r8$lambda$fDAK4XA-jME-fRmBsFwzg2SmgPg(Ljp/co/sony/mc/camera/view/widget/StraightZoomRuler;)Landroid/graphics/Paint;
+    .locals 0
+
+    invoke-static {p0}, Ljp/co/sony/mc/camera/view/widget/StraightZoomRuler;->fadeMaskPaint_delegate$lambda$2(Ljp/co/sony/mc/camera/view/widget/StraightZoomRuler;)Landroid/graphics/Paint;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
 .method static constructor <clinit>()V
     .locals 0
 
@@ -121,7 +132,7 @@
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    const v0, 0x7f0403ef
+    const v0, 0x7f0403fe
 
     .line 27
     invoke-direct {p0, p1, p2, v0}, Ljp/co/sony/mc/camera/view/widget/StraightZoomRuler;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
@@ -140,11 +151,9 @@
     invoke-direct {p0, p1, p2, p3}, Ljp/co/sony/mc/camera/view/widget/AbsZoomRuler;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
 
     .line 46
-    new-instance p3, Ljp/co/sony/mc/camera/view/widget/StraightZoomRuler$fadeMaskPaint$2;
+    new-instance p3, Ljp/co/sony/mc/camera/view/widget/StraightZoomRuler$$ExternalSyntheticLambda0;
 
-    invoke-direct {p3, p0}, Ljp/co/sony/mc/camera/view/widget/StraightZoomRuler$fadeMaskPaint$2;-><init>(Ljp/co/sony/mc/camera/view/widget/StraightZoomRuler;)V
-
-    check-cast p3, Lkotlin/jvm/functions/Function0;
+    invoke-direct {p3, p0}, Ljp/co/sony/mc/camera/view/widget/StraightZoomRuler$$ExternalSyntheticLambda0;-><init>(Ljp/co/sony/mc/camera/view/widget/StraightZoomRuler;)V
 
     invoke-static {p3}, Lkotlin/LazyKt;->lazy(Lkotlin/jvm/functions/Function0;)Lkotlin/Lazy;
 
@@ -178,7 +187,7 @@
 
     move-result-object p3
 
-    const v0, 0x7f0603c6
+    const v0, 0x7f0603de
 
     const/4 v1, 0x0
 
@@ -200,7 +209,7 @@
 
     move-result-object p0
 
-    const p3, 0x7f0706c9
+    const p3, 0x7f070721
 
     invoke-virtual {p0, p3}, Landroid/content/res/Resources;->getDimension(I)F
 
@@ -567,6 +576,102 @@
     invoke-virtual {p1, v0, p0}, Landroid/graphics/Canvas;->drawRect(Landroid/graphics/Rect;Landroid/graphics/Paint;)V
 
     return-void
+.end method
+
+.method private static final fadeMaskPaint_delegate$lambda$2(Ljp/co/sony/mc/camera/view/widget/StraightZoomRuler;)Landroid/graphics/Paint;
+    .locals 10
+
+    const-string/jumbo v0, "this$0"
+
+    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 47
+    new-instance v0, Landroid/graphics/Paint;
+
+    invoke-direct {v0}, Landroid/graphics/Paint;-><init>()V
+
+    .line 48
+    new-instance v9, Landroid/graphics/LinearGradient;
+
+    invoke-virtual {p0}, Ljp/co/sony/mc/camera/view/widget/StraightZoomRuler;->getHeight()I
+
+    move-result v1
+
+    int-to-float v1, v1
+
+    const/high16 v2, 0x40000000    # 2.0f
+
+    div-float v3, v1, v2
+
+    iget v1, p0, Ljp/co/sony/mc/camera/view/widget/StraightZoomRuler;->parentWidth:I
+
+    int-to-float v4, v1
+
+    invoke-virtual {p0}, Ljp/co/sony/mc/camera/view/widget/StraightZoomRuler;->getHeight()I
+
+    move-result p0
+
+    int-to-float p0, p0
+
+    div-float v5, p0, v2
+
+    const/4 p0, 0x0
+
+    const/high16 v1, -0x1000000
+
+    .line 53
+    filled-new-array {p0, v1, v1, p0}, [I
+
+    move-result-object v6
+
+    const/4 p0, 0x4
+
+    .line 55
+    new-array v7, p0, [F
+
+    fill-array-data v7, :array_0
+
+    .line 56
+    sget-object v8, Landroid/graphics/Shader$TileMode;->CLAMP:Landroid/graphics/Shader$TileMode;
+
+    const/4 v2, 0x0
+
+    move-object v1, v9
+
+    .line 48
+    invoke-direct/range {v1 .. v8}, Landroid/graphics/LinearGradient;-><init>(FFFF[I[FLandroid/graphics/Shader$TileMode;)V
+
+    check-cast v9, Landroid/graphics/Shader;
+
+    invoke-virtual {v0, v9}, Landroid/graphics/Paint;->setShader(Landroid/graphics/Shader;)Landroid/graphics/Shader;
+
+    .line 57
+    sget-object p0, Landroid/graphics/Paint$Style;->FILL:Landroid/graphics/Paint$Style;
+
+    invoke-virtual {v0, p0}, Landroid/graphics/Paint;->setStyle(Landroid/graphics/Paint$Style;)V
+
+    .line 58
+    new-instance p0, Landroid/graphics/PorterDuffXfermode;
+
+    sget-object v1, Landroid/graphics/PorterDuff$Mode;->DST_IN:Landroid/graphics/PorterDuff$Mode;
+
+    invoke-direct {p0, v1}, Landroid/graphics/PorterDuffXfermode;-><init>(Landroid/graphics/PorterDuff$Mode;)V
+
+    check-cast p0, Landroid/graphics/Xfermode;
+
+    invoke-virtual {v0, p0}, Landroid/graphics/Paint;->setXfermode(Landroid/graphics/Xfermode;)Landroid/graphics/Xfermode;
+
+    return-object v0
+
+    nop
+
+    :array_0
+    .array-data 4
+        0x0
+        0x3ecccccd    # 0.4f
+        0x3f19999a    # 0.6f
+        0x3f800000    # 1.0f
+    .end array-data
 .end method
 
 .method private final getBarWidth()I

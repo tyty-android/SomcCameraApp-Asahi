@@ -21,7 +21,7 @@
 .method constructor <init>()V
     .locals 0
 
-    .line 1697
+    .line 1755
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -46,13 +46,13 @@
         }
     .end annotation
 
-    .line 1701
+    .line 1759
     check-cast p1, Ljp/co/sony/mc/camera/setting/CameraSettings;
 
-    .line 1702
-    check-cast p3, Ljp/co/sony/mc/camera/configuration/parameters/BasicModeShutterSpeedDisplay;
+    .line 1760
+    check-cast p3, Ljp/co/sony/mc/camera/configuration/parameters/ColorToneProfile;
 
-    invoke-static {p1, p3}, Ljp/co/sony/mc/camera/setting/CameraSettings;->-$$Nest$msetBasicModeShutterSpeedDisplay(Ljp/co/sony/mc/camera/setting/CameraSettings;Ljp/co/sony/mc/camera/configuration/parameters/BasicModeShutterSpeedDisplay;)Z
+    invoke-static {p1, p3}, Ljp/co/sony/mc/camera/setting/CameraSettings;->-$$Nest$msetColorToneProfile(Ljp/co/sony/mc/camera/setting/CameraSettings;Ljp/co/sony/mc/camera/configuration/parameters/ColorToneProfile;)Z
 
     move-result p0
 

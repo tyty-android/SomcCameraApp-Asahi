@@ -9,7 +9,7 @@
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
-    .line 36
+    .line 78
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -24,23 +24,29 @@
         }
     .end annotation
 
-    .line 99
+    .line 140
     const-string v0, " to Json"
 
     .line 0
     const-string v1, "Failed parsing JSON source: "
 
-    .line 99
-    invoke-virtual {p0}, Lcom/google/gson/stream/JsonReader;->isLenient()Z
+    .line 140
+    invoke-virtual {p0}, Lcom/google/gson/stream/JsonReader;->getStrictness()Lcom/google/gson/Strictness;
 
-    move-result v2
+    move-result-object v2
 
-    const/4 v3, 0x1
+    .line 141
+    sget-object v3, Lcom/google/gson/Strictness;->LEGACY_STRICT:Lcom/google/gson/Strictness;
 
-    .line 100
-    invoke-virtual {p0, v3}, Lcom/google/gson/stream/JsonReader;->setLenient(Z)V
+    if-ne v2, v3, :cond_0
 
-    .line 102
+    .line 143
+    sget-object v3, Lcom/google/gson/Strictness;->LENIENT:Lcom/google/gson/Strictness;
+
+    invoke-virtual {p0, v3}, Lcom/google/gson/stream/JsonReader;->setStrictness(Lcom/google/gson/Strictness;)V
+
+    .line 146
+    :cond_0
     :try_start_0
     invoke-static {p0}, Lcom/google/gson/internal/Streams;->parse(Lcom/google/gson/stream/JsonReader;)Lcom/google/gson/JsonElement;
 
@@ -50,8 +56,8 @@
     .catch Ljava/lang/OutOfMemoryError; {:try_start_0 .. :try_end_0} :catch_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 108
-    invoke-virtual {p0, v2}, Lcom/google/gson/stream/JsonReader;->setLenient(Z)V
+    .line 152
+    invoke-virtual {p0, v2}, Lcom/google/gson/stream/JsonReader;->setStrictness(Lcom/google/gson/Strictness;)V
 
     return-object v0
 
@@ -63,7 +69,7 @@
     :catch_0
     move-exception v3
 
-    .line 106
+    .line 150
     :try_start_1
     new-instance v4, Lcom/google/gson/JsonParseException;
 
@@ -90,7 +96,7 @@
     :catch_1
     move-exception v3
 
-    .line 104
+    .line 148
     new-instance v4, Lcom/google/gson/JsonParseException;
 
     new-instance v5, Ljava/lang/StringBuilder;
@@ -115,11 +121,11 @@
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
-    .line 108
+    .line 152
     :goto_0
-    invoke-virtual {p0, v2}, Lcom/google/gson/stream/JsonReader;->setLenient(Z)V
+    invoke-virtual {p0, v2}, Lcom/google/gson/stream/JsonReader;->setStrictness(Lcom/google/gson/Strictness;)V
 
-    .line 109
+    .line 153
     throw v0
 .end method
 
@@ -132,18 +138,18 @@
         }
     .end annotation
 
-    .line 69
+    .line 109
     :try_start_0
     new-instance v0, Lcom/google/gson/stream/JsonReader;
 
     invoke-direct {v0, p0}, Lcom/google/gson/stream/JsonReader;-><init>(Ljava/io/Reader;)V
 
-    .line 70
+    .line 110
     invoke-static {v0}, Lcom/google/gson/JsonParser;->parseReader(Lcom/google/gson/stream/JsonReader;)Lcom/google/gson/JsonElement;
 
     move-result-object p0
 
-    .line 71
+    .line 111
     invoke-virtual {p0}, Lcom/google/gson/JsonElement;->isJsonNull()Z
 
     move-result v1
@@ -160,7 +166,7 @@
 
     goto :goto_0
 
-    .line 72
+    .line 112
     :cond_0
     new-instance p0, Lcom/google/gson/JsonSyntaxException;
 
@@ -181,7 +187,7 @@
     :catch_0
     move-exception p0
 
-    .line 80
+    .line 120
     new-instance v0, Lcom/google/gson/JsonSyntaxException;
 
     invoke-direct {v0, p0}, Lcom/google/gson/JsonSyntaxException;-><init>(Ljava/lang/Throwable;)V
@@ -191,7 +197,7 @@
     :catch_1
     move-exception p0
 
-    .line 78
+    .line 118
     new-instance v0, Lcom/google/gson/JsonIOException;
 
     invoke-direct {v0, p0}, Lcom/google/gson/JsonIOException;-><init>(Ljava/lang/Throwable;)V
@@ -201,7 +207,7 @@
     :catch_2
     move-exception p0
 
-    .line 76
+    .line 116
     new-instance v0, Lcom/google/gson/JsonSyntaxException;
 
     invoke-direct {v0, p0}, Lcom/google/gson/JsonSyntaxException;-><init>(Ljava/lang/Throwable;)V
@@ -217,7 +223,7 @@
         }
     .end annotation
 
-    .line 51
+    .line 92
     new-instance v0, Ljava/io/StringReader;
 
     invoke-direct {v0, p0}, Ljava/io/StringReader;-><init>(Ljava/lang/String;)V
@@ -243,7 +249,7 @@
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
-    .line 127
+    .line 180
     invoke-static {p1}, Lcom/google/gson/JsonParser;->parseReader(Lcom/google/gson/stream/JsonReader;)Lcom/google/gson/JsonElement;
 
     move-result-object p0
@@ -263,7 +269,7 @@
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
-    .line 121
+    .line 171
     invoke-static {p1}, Lcom/google/gson/JsonParser;->parseReader(Ljava/io/Reader;)Lcom/google/gson/JsonElement;
 
     move-result-object p0
@@ -282,7 +288,7 @@
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
-    .line 115
+    .line 162
     invoke-static {p1}, Lcom/google/gson/JsonParser;->parseString(Ljava/lang/String;)Lcom/google/gson/JsonElement;
 
     move-result-object p0

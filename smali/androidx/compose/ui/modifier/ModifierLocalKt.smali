@@ -41,10 +41,6 @@
         }
     .end annotation
 
-    const-string v0, "defaultFactory"
-
-    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
     .line 95
     new-instance v0, Landroidx/compose/ui/modifier/ProvidableModifierLocal;
 

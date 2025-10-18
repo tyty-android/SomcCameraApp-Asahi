@@ -82,7 +82,7 @@
 .method public bridge synthetic invoke(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
 
-    .line 312
+    .line 333
     check-cast p1, Landroidx/compose/runtime/saveable/SaverScope;
 
     check-cast p2, Landroidx/compose/ui/text/style/BaselineShift;
@@ -101,11 +101,7 @@
 .method public final invoke-8a2Sb4w(Landroidx/compose/runtime/saveable/SaverScope;F)Ljava/lang/Object;
     .locals 0
 
-    const-string p0, "$this$Saver"
-
-    invoke-static {p1, p0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 313
+    .line 334
     invoke-static {p2}, Ljava/lang/Float;->valueOf(F)Ljava/lang/Float;
 
     move-result-object p0

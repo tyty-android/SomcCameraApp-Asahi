@@ -17,7 +17,7 @@
 
 # direct methods
 .method static constructor <clinit>()V
-    .locals 5
+    .locals 7
 
     .line 15
     new-instance v0, Landroidx/databinding/ViewDataBinding$IncludedLayouts;
@@ -28,36 +28,40 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/databinding/FragmentProModeControlSsIsoEvBindingImpl;->sIncludes:Landroidx/databinding/ViewDataBinding$IncludedLayouts;
 
+    const/4 v1, 0x3
+
     .line 16
-    const-string v1, "fragment_pro_mode_view_dial"
+    new-array v2, v1, [Ljava/lang/String;
 
-    const-string v2, "fragment_pro_mode_ev_slider"
+    const/4 v3, 0x0
 
-    filled-new-array {v1, v1, v2}, [Ljava/lang/String;
+    const-string v4, "fragment_pro_mode_view_dial"
+
+    aput-object v4, v2, v3
+
+    const/4 v5, 0x1
+
+    aput-object v4, v2, v5
+
+    const-string v4, "fragment_pro_mode_ev_slider"
+
+    const/4 v6, 0x2
+
+    aput-object v4, v2, v6
+
+    filled-new-array {v5, v6, v1}, [I
 
     move-result-object v1
 
-    const/4 v2, 0x2
+    const v4, 0x7f0c00b0
 
-    const/4 v3, 0x3
+    const v5, 0x7f0c00a0
 
-    const/4 v4, 0x1
+    filled-new-array {v4, v4, v5}, [I
 
-    filled-new-array {v4, v2, v3}, [I
+    move-result-object v4
 
-    move-result-object v2
-
-    const v3, 0x7f0c00b0
-
-    const v4, 0x7f0c00a0
-
-    filled-new-array {v3, v3, v4}, [I
-
-    move-result-object v3
-
-    const/4 v4, 0x0
-
-    invoke-virtual {v0, v4, v1, v2, v3}, Landroidx/databinding/ViewDataBinding$IncludedLayouts;->setIncludes(I[Ljava/lang/String;[I[I)V
+    invoke-virtual {v0, v3, v2, v1, v4}, Landroidx/databinding/ViewDataBinding$IncludedLayouts;->setIncludes(I[Ljava/lang/String;[I[I)V
 
     .line 22
     new-instance v0, Landroid/util/SparseIntArray;
@@ -66,21 +70,21 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/databinding/FragmentProModeControlSsIsoEvBindingImpl;->sViewsWithIds:Landroid/util/SparseIntArray;
 
-    const v1, 0x7f0900a3
+    const v1, 0x7f0900a4
 
     const/4 v2, 0x4
 
     .line 23
     invoke-virtual {v0, v1, v2}, Landroid/util/SparseIntArray;->put(II)V
 
-    const v1, 0x7f0904bc
+    const v1, 0x7f0904a9
 
     const/4 v2, 0x5
 
     .line 24
     invoke-virtual {v0, v1, v2}, Landroid/util/SparseIntArray;->put(II)V
 
-    const v1, 0x7f090192
+    const v1, 0x7f09018f
 
     const/4 v2, 0x6
 
@@ -632,7 +636,7 @@
 .method public setVariable(ILjava/lang/Object;)Z
     .locals 1
 
-    const/4 v0, 0x7
+    const/16 v0, 0x8
 
     if-ne v0, p1, :cond_0
 
@@ -644,7 +648,7 @@
     goto :goto_0
 
     :cond_0
-    const/16 v0, 0x13
+    const/16 v0, 0x16
 
     if-ne v0, p1, :cond_1
 
@@ -656,7 +660,7 @@
     goto :goto_0
 
     :cond_1
-    const/16 v0, 0x15
+    const/16 v0, 0x18
 
     if-ne v0, p1, :cond_2
 
@@ -668,7 +672,7 @@
     goto :goto_0
 
     :cond_2
-    const/16 v0, 0x14
+    const/16 v0, 0x17
 
     if-ne v0, p1, :cond_3
 
@@ -680,7 +684,7 @@
     goto :goto_0
 
     :cond_3
-    const/16 v0, 0x8
+    const/16 v0, 0x9
 
     if-ne v0, p1, :cond_4
 

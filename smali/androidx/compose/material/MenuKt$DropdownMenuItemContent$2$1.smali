@@ -48,10 +48,6 @@
 
 
 # instance fields
-.field final synthetic $$changed:I
-
-.field final synthetic $$dirty:I
-
 .field final synthetic $content:Lkotlin/jvm/functions/Function3;
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -71,7 +67,7 @@
 
 
 # direct methods
-.method constructor <init>(ZLkotlin/jvm/functions/Function3;Landroidx/compose/foundation/layout/RowScope;II)V
+.method constructor <init>(ZLkotlin/jvm/functions/Function3;Landroidx/compose/foundation/layout/RowScope;)V
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -86,7 +82,7 @@
             "Lkotlin/Unit;",
             ">;",
             "Landroidx/compose/foundation/layout/RowScope;",
-            "II)V"
+            ")V"
         }
     .end annotation
 
@@ -95,10 +91,6 @@
     iput-object p2, p0, Landroidx/compose/material/MenuKt$DropdownMenuItemContent$2$1;->$content:Lkotlin/jvm/functions/Function3;
 
     iput-object p3, p0, Landroidx/compose/material/MenuKt$DropdownMenuItemContent$2$1;->$this_Row:Landroidx/compose/foundation/layout/RowScope;
-
-    iput p4, p0, Landroidx/compose/material/MenuKt$DropdownMenuItemContent$2$1;->$$changed:I
-
-    iput p5, p0, Landroidx/compose/material/MenuKt$DropdownMenuItemContent$2$1;->$$dirty:I
 
     const/4 p1, 0x2
 
@@ -129,7 +121,7 @@
 .end method
 
 .method public final invoke(Landroidx/compose/runtime/Composer;I)V
-    .locals 5
+    .locals 3
 
     const-string v0, "C165@5938L107:Menu.kt#jmzs0o"
 
@@ -167,7 +159,7 @@
 
     const/4 v0, -0x1
 
-    const-string v1, "androidx.compose.material.DropdownMenuItemContent.<anonymous>.<anonymous> (Menu.kt:163)"
+    const-string v1, "androidx.compose.material.DropdownMenuItemContent.<anonymous>.<anonymous> (Menu.kt:164)"
 
     const v2, 0x46f56d98
 
@@ -227,37 +219,29 @@
 
     move-result-object p2
 
-    const/4 v0, 0x1
+    new-instance v0, Landroidx/compose/material/MenuKt$DropdownMenuItemContent$2$1$1;
 
-    new-array v1, v0, [Landroidx/compose/runtime/ProvidedValue;
+    iget-object v1, p0, Landroidx/compose/material/MenuKt$DropdownMenuItemContent$2$1;->$content:Lkotlin/jvm/functions/Function3;
 
-    const/4 v2, 0x0
+    iget-object p0, p0, Landroidx/compose/material/MenuKt$DropdownMenuItemContent$2$1;->$this_Row:Landroidx/compose/foundation/layout/RowScope;
 
-    aput-object p2, v1, v2
-
-    new-instance p2, Landroidx/compose/material/MenuKt$DropdownMenuItemContent$2$1$1;
-
-    iget-object v2, p0, Landroidx/compose/material/MenuKt$DropdownMenuItemContent$2$1;->$content:Lkotlin/jvm/functions/Function3;
-
-    iget-object v3, p0, Landroidx/compose/material/MenuKt$DropdownMenuItemContent$2$1;->$this_Row:Landroidx/compose/foundation/layout/RowScope;
-
-    iget v4, p0, Landroidx/compose/material/MenuKt$DropdownMenuItemContent$2$1;->$$changed:I
-
-    iget p0, p0, Landroidx/compose/material/MenuKt$DropdownMenuItemContent$2$1;->$$dirty:I
-
-    invoke-direct {p2, v2, v3, v4, p0}, Landroidx/compose/material/MenuKt$DropdownMenuItemContent$2$1$1;-><init>(Lkotlin/jvm/functions/Function3;Landroidx/compose/foundation/layout/RowScope;II)V
+    invoke-direct {v0, v1, p0}, Landroidx/compose/material/MenuKt$DropdownMenuItemContent$2$1$1;-><init>(Lkotlin/jvm/functions/Function3;Landroidx/compose/foundation/layout/RowScope;)V
 
     const p0, -0x65af6da8
 
-    invoke-static {p1, p0, v0, p2}, Landroidx/compose/runtime/internal/ComposableLambdaKt;->composableLambda(Landroidx/compose/runtime/Composer;IZLjava/lang/Object;)Landroidx/compose/runtime/internal/ComposableLambda;
+    const/4 v1, 0x1
+
+    invoke-static {p1, p0, v1, v0}, Landroidx/compose/runtime/internal/ComposableLambdaKt;->composableLambda(Landroidx/compose/runtime/Composer;IZLjava/lang/Object;)Landroidx/compose/runtime/internal/ComposableLambda;
 
     move-result-object p0
 
     check-cast p0, Lkotlin/jvm/functions/Function2;
 
-    const/16 p2, 0x38
+    sget v0, Landroidx/compose/runtime/ProvidedValue;->$stable:I
 
-    invoke-static {v1, p0, p1, p2}, Landroidx/compose/runtime/CompositionLocalKt;->CompositionLocalProvider([Landroidx/compose/runtime/ProvidedValue;Lkotlin/jvm/functions/Function2;Landroidx/compose/runtime/Composer;I)V
+    or-int/lit8 v0, v0, 0x30
+
+    invoke-static {p2, p0, p1, v0}, Landroidx/compose/runtime/CompositionLocalKt;->CompositionLocalProvider(Landroidx/compose/runtime/ProvidedValue;Lkotlin/jvm/functions/Function2;Landroidx/compose/runtime/Composer;I)V
 
     invoke-static {}, Landroidx/compose/runtime/ComposerKt;->isTraceInProgress()Z
 

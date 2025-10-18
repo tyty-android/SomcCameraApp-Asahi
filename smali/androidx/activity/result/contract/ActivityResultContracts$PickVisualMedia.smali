@@ -412,14 +412,22 @@
 
     invoke-virtual {p1, p0}, Landroid/content/Intent;->setType(Ljava/lang/String;)Landroid/content/Intent;
 
+    const/4 p0, 0x2
+
     .line 821
-    const-string p0, "image/*"
+    new-array p0, p0, [Ljava/lang/String;
 
-    const-string/jumbo p2, "video/*"
+    const/4 p2, 0x0
 
-    filled-new-array {p0, p2}, [Ljava/lang/String;
+    const-string v0, "image/*"
 
-    move-result-object p0
+    aput-object v0, p0, p2
+
+    const/4 p2, 0x1
+
+    const-string/jumbo v0, "video/*"
+
+    aput-object v0, p0, p2
 
     const-string p2, "android.intent.extra.MIME_TYPES"
 

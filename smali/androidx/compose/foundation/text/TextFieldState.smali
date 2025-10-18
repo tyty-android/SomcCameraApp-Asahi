@@ -5,12 +5,12 @@
 
 # annotations
 .annotation system Ldalvik/annotation/SourceDebugExtension;
-    value = "SMAP\nCoreTextField.kt\nKotlin\n*S Kotlin\n*F\n+ 1 CoreTextField.kt\nandroidx/compose/foundation/text/TextFieldState\n+ 2 Dp.kt\nandroidx/compose/ui/unit/DpKt\n+ 3 SnapshotState.kt\nandroidx/compose/runtime/SnapshotStateKt__SnapshotStateKt\n*L\n1#1,1121:1\n154#2:1122\n81#3:1123\n107#3,2:1124\n81#3:1126\n107#3,2:1127\n81#3:1129\n107#3,2:1130\n81#3:1132\n107#3,2:1133\n81#3:1135\n107#3,2:1136\n81#3:1138\n107#3,2:1139\n*S KotlinDebug\n*F\n+ 1 CoreTextField.kt\nandroidx/compose/foundation/text/TextFieldState\n*L\n783#1:1122\n778#1:1123\n778#1:1124,2\n783#1:1126\n783#1:1127,2\n834#1:1129\n834#1:1130,2\n845#1:1132\n845#1:1133,2\n851#1:1135\n851#1:1136,2\n857#1:1138\n857#1:1139,2\n*E\n"
+    value = "SMAP\nCoreTextField.kt\nKotlin\n*S Kotlin\n*F\n+ 1 CoreTextField.kt\nandroidx/compose/foundation/text/TextFieldState\n+ 2 Dp.kt\nandroidx/compose/ui/unit/DpKt\n+ 3 SnapshotState.kt\nandroidx/compose/runtime/SnapshotStateKt__SnapshotStateKt\n+ 4 fake.kt\nkotlin/jvm/internal/FakeKt\n*L\n1#1,1195:1\n154#2:1196\n81#3:1197\n107#3,2:1198\n81#3:1200\n107#3,2:1201\n81#3:1204\n107#3,2:1205\n81#3:1207\n107#3,2:1208\n81#3:1210\n107#3,2:1211\n81#3:1213\n107#3,2:1214\n81#3:1216\n107#3,2:1217\n81#3:1219\n107#3,2:1220\n1#4:1203\n*S KotlinDebug\n*F\n+ 1 CoreTextField.kt\nandroidx/compose/foundation/text/TextFieldState\n*L\n829#1:1196\n824#1:1197\n824#1:1198,2\n829#1:1200\n829#1:1201,2\n889#1:1204\n889#1:1205,2\n899#1:1207\n899#1:1208,2\n905#1:1210\n905#1:1211,2\n911#1:1213\n911#1:1214,2\n917#1:1216\n917#1:1217,2\n929#1:1219\n929#1:1220,2\n*E\n"
 .end annotation
 
 .annotation runtime Lkotlin/Metadata;
     d1 = {
-        "\u0000\u00aa\u0001\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0007\n\u0002\u0010\u000b\n\u0002\u0008\u0007\n\u0002\u0018\u0002\n\u0002\u0008\u0006\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0005\n\u0002\u0018\u0002\n\u0002\u0008\u0006\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0007\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0010\u0002\n\u0002\u0008\u0003\n\u0002\u0018\u0002\n\u0002\u0008\u0003\n\u0002\u0018\u0002\n\u0002\u0008\u0005\n\u0002\u0018\u0002\n\u0002\u0008\u0016\n\u0002\u0018\u0002\n\u0002\u0008\u0007\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0003\u0008\u0000\u0018\u00002\u00020\u0001B\u0015\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\u0006\u0010\u0004\u001a\u00020\u0005\u00a2\u0006\u0002\u0010\u0006Jo\u0010c\u001a\u0002092\u0006\u0010]\u001a\u00020^2\u0006\u0010d\u001a\u00020^2\u0006\u0010e\u001a\u00020f2\u0006\u0010g\u001a\u00020\u00102\u0006\u0010h\u001a\u00020i2\u0006\u0010j\u001a\u00020k2\u0012\u0010<\u001a\u000e\u0012\u0004\u0012\u00020=\u0012\u0004\u0012\u000209072\u0006\u0010l\u001a\u00020m2\u0006\u0010n\u001a\u00020o2\u0006\u0010p\u001a\u00020q\u00f8\u0001\u0001\u00f8\u0001\u0000\u00a2\u0006\u0004\u0008r\u0010sR+\u0010\t\u001a\u00020\u00082\u0006\u0010\u0007\u001a\u00020\u00088F@FX\u0086\u008e\u0002\u00a2\u0006\u0012\n\u0004\u0008\u000e\u0010\u000f\u001a\u0004\u0008\n\u0010\u000b\"\u0004\u0008\u000c\u0010\rR+\u0010\u0011\u001a\u00020\u00102\u0006\u0010\u0007\u001a\u00020\u00108F@FX\u0086\u008e\u0002\u00a2\u0006\u0012\n\u0004\u0008\u0016\u0010\u000f\u001a\u0004\u0008\u0012\u0010\u0013\"\u0004\u0008\u0014\u0010\u0015R\u001c\u0010\u0017\u001a\u0004\u0018\u00010\u0018X\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\u0008\u0019\u0010\u001a\"\u0004\u0008\u001b\u0010\u001cR\u001e\u0010\u001d\u001a\u00020\u00102\u0006\u0010\u0007\u001a\u00020\u0010@BX\u0086\u000e\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\u001d\u0010\u0013R\u000e\u0010\u001e\u001a\u00020\u001fX\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u001c\u0010 \u001a\u0004\u0018\u00010!X\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\u0008\"\u0010#\"\u0004\u0008$\u0010%R(\u0010(\u001a\u0004\u0018\u00010\'2\u0008\u0010&\u001a\u0004\u0018\u00010\'8F@FX\u0086\u000e\u00a2\u0006\u000c\u001a\u0004\u0008)\u0010*\"\u0004\u0008+\u0010,R\u0016\u0010-\u001a\n\u0012\u0006\u0012\u0004\u0018\u00010\'0.X\u0082\u0004\u00a2\u0006\u0002\n\u0000R4\u00100\u001a\u00020/2\u0006\u0010\u0007\u001a\u00020/8F@FX\u0086\u008e\u0002\u00f8\u0001\u0000\u00f8\u0001\u0001\u00f8\u0001\u0002\u00a2\u0006\u0012\n\u0004\u00085\u0010\u000f\u001a\u0004\u00081\u00102\"\u0004\u00083\u00104R \u00106\u001a\u000e\u0012\u0004\u0012\u000208\u0012\u0004\u0012\u00020907\u00f8\u0001\u0000\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008:\u0010;R\u001d\u0010<\u001a\u000e\u0012\u0004\u0012\u00020=\u0012\u0004\u0012\u00020907\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008>\u0010;R\u001a\u0010?\u001a\u000e\u0012\u0004\u0012\u00020=\u0012\u0004\u0012\u00020907X\u0082\u000e\u00a2\u0006\u0002\n\u0000R\u0011\u0010@\u001a\u00020A\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008B\u0010CR\u0011\u0010\u0004\u001a\u00020\u0005\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008D\u0010ER\u0011\u0010F\u001a\u00020G\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008H\u0010IR+\u0010J\u001a\u00020\u00102\u0006\u0010\u0007\u001a\u00020\u00108F@FX\u0086\u008e\u0002\u00a2\u0006\u0012\n\u0004\u0008M\u0010\u000f\u001a\u0004\u0008K\u0010\u0013\"\u0004\u0008L\u0010\u0015R\u001a\u0010N\u001a\u00020\u0010X\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\u0008O\u0010\u0013\"\u0004\u0008P\u0010\u0015R+\u0010Q\u001a\u00020\u00102\u0006\u0010\u0007\u001a\u00020\u00108F@FX\u0086\u008e\u0002\u00a2\u0006\u0012\n\u0004\u0008T\u0010\u000f\u001a\u0004\u0008R\u0010\u0013\"\u0004\u0008S\u0010\u0015R+\u0010U\u001a\u00020\u00102\u0006\u0010\u0007\u001a\u00020\u00108F@FX\u0086\u008e\u0002\u00a2\u0006\u0012\n\u0004\u0008X\u0010\u000f\u001a\u0004\u0008V\u0010\u0013\"\u0004\u0008W\u0010\u0015R\u001a\u0010\u0002\u001a\u00020\u0003X\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\u0008Y\u0010Z\"\u0004\u0008[\u0010\\R\u001c\u0010]\u001a\u0004\u0018\u00010^X\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\u0008_\u0010`\"\u0004\u0008a\u0010b\u0082\u0002\u000f\n\u0002\u0008\u0019\n\u0005\u0008\u00a1\u001e0\u0001\n\u0002\u0008!\u00a8\u0006t"
+        "\u0000\u00b0\u0001\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0007\n\u0002\u0010\u000b\n\u0002\u0008\u0007\n\u0002\u0018\u0002\n\u0002\u0008\t\n\u0002\u0018\u0002\n\u0002\u0008\u0008\n\u0002\u0018\u0002\n\u0002\u0008\u0006\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0007\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0010\u0002\n\u0002\u0008\u0003\n\u0002\u0018\u0002\n\u0002\u0008\u0003\n\u0002\u0018\u0002\n\u0002\u0008\u0005\n\u0002\u0018\u0002\n\u0002\u0008\u0017\n\u0002\u0018\u0002\n\u0002\u0008\u0007\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0003\u0008\u0000\u0018\u00002\u00020\u0001B\u001f\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\u0006\u0010\u0004\u001a\u00020\u0005\u0012\u0008\u0010\u0006\u001a\u0004\u0018\u00010\u0007\u00a2\u0006\u0002\u0010\u0008Jl\u0010l\u001a\u00020A2\u0006\u0010f\u001a\u00020g2\u0006\u0010m\u001a\u00020g2\u0006\u0010n\u001a\u00020o2\u0006\u0010p\u001a\u00020\u00142\u0006\u0010q\u001a\u00020r2\u0006\u0010s\u001a\u00020t2\u0012\u0010D\u001a\u000e\u0012\u0004\u0012\u00020E\u0012\u0004\u0012\u00020A0?2\u0006\u0010u\u001a\u00020v2\u0006\u0010w\u001a\u00020x2\u0006\u0010y\u001a\u00020z\u00f8\u0001\u0000\u00a2\u0006\u0004\u0008{\u0010|R\u0010\u0010\t\u001a\u0004\u0018\u00010\nX\u0082\u000e\u00a2\u0006\u0002\n\u0000R+\u0010\r\u001a\u00020\u000c2\u0006\u0010\u000b\u001a\u00020\u000c8F@FX\u0086\u008e\u0002\u00a2\u0006\u0012\n\u0004\u0008\u0012\u0010\u0013\u001a\u0004\u0008\u000e\u0010\u000f\"\u0004\u0008\u0010\u0010\u0011R+\u0010\u0015\u001a\u00020\u00142\u0006\u0010\u000b\u001a\u00020\u00148F@FX\u0086\u008e\u0002\u00a2\u0006\u0012\n\u0004\u0008\u001a\u0010\u0013\u001a\u0004\u0008\u0016\u0010\u0017\"\u0004\u0008\u0018\u0010\u0019R\u001c\u0010\u001b\u001a\u0004\u0018\u00010\u001cX\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\u0008\u001d\u0010\u001e\"\u0004\u0008\u001f\u0010 R+\u0010!\u001a\u00020\u00142\u0006\u0010\u000b\u001a\u00020\u00148F@FX\u0086\u008e\u0002\u00a2\u0006\u0012\n\u0004\u0008#\u0010\u0013\u001a\u0004\u0008!\u0010\u0017\"\u0004\u0008\"\u0010\u0019R\u001e\u0010$\u001a\u00020\u00142\u0006\u0010\u000b\u001a\u00020\u0014@BX\u0086\u000e\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008$\u0010\u0017R\u000e\u0010%\u001a\u00020&X\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u0013\u0010\u0006\u001a\u0004\u0018\u00010\u0007\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\'\u0010(R(\u0010*\u001a\u0004\u0018\u00010\n2\u0008\u0010)\u001a\u0004\u0018\u00010\n8F@FX\u0086\u000e\u00a2\u0006\u000c\u001a\u0004\u0008+\u0010,\"\u0004\u0008-\u0010.R(\u00100\u001a\u0004\u0018\u00010/2\u0008\u0010)\u001a\u0004\u0018\u00010/8F@FX\u0086\u000e\u00a2\u0006\u000c\u001a\u0004\u00081\u00102\"\u0004\u00083\u00104R\u0016\u00105\u001a\n\u0012\u0006\u0012\u0004\u0018\u00010/06X\u0082\u0004\u00a2\u0006\u0002\n\u0000R1\u00108\u001a\u0002072\u0006\u0010\u000b\u001a\u0002078F@FX\u0086\u008e\u0002\u00f8\u0001\u0000\u00f8\u0001\u0001\u00a2\u0006\u0012\n\u0004\u0008=\u0010\u0013\u001a\u0004\u00089\u0010:\"\u0004\u0008;\u0010<R\u001d\u0010>\u001a\u000e\u0012\u0004\u0012\u00020@\u0012\u0004\u0012\u00020A0?\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008B\u0010CR\u001d\u0010D\u001a\u000e\u0012\u0004\u0012\u00020E\u0012\u0004\u0012\u00020A0?\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008F\u0010CR\u001a\u0010G\u001a\u000e\u0012\u0004\u0012\u00020E\u0012\u0004\u0012\u00020A0?X\u0082\u000e\u00a2\u0006\u0002\n\u0000R\u0011\u0010H\u001a\u00020I\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008J\u0010KR\u0011\u0010\u0004\u001a\u00020\u0005\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008L\u0010MR\u0011\u0010N\u001a\u00020O\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008P\u0010QR+\u0010R\u001a\u00020\u00142\u0006\u0010\u000b\u001a\u00020\u00148F@FX\u0086\u008e\u0002\u00a2\u0006\u0012\n\u0004\u0008U\u0010\u0013\u001a\u0004\u0008S\u0010\u0017\"\u0004\u0008T\u0010\u0019R+\u0010V\u001a\u00020\u00142\u0006\u0010\u000b\u001a\u00020\u00148F@FX\u0086\u008e\u0002\u00a2\u0006\u0012\n\u0004\u0008Y\u0010\u0013\u001a\u0004\u0008W\u0010\u0017\"\u0004\u0008X\u0010\u0019R+\u0010Z\u001a\u00020\u00142\u0006\u0010\u000b\u001a\u00020\u00148F@FX\u0086\u008e\u0002\u00a2\u0006\u0012\n\u0004\u0008]\u0010\u0013\u001a\u0004\u0008[\u0010\u0017\"\u0004\u0008\\\u0010\u0019R+\u0010^\u001a\u00020\u00142\u0006\u0010\u000b\u001a\u00020\u00148F@FX\u0086\u008e\u0002\u00a2\u0006\u0012\n\u0004\u0008a\u0010\u0013\u001a\u0004\u0008_\u0010\u0017\"\u0004\u0008`\u0010\u0019R\u001a\u0010\u0002\u001a\u00020\u0003X\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\u0008b\u0010c\"\u0004\u0008d\u0010eR\u001c\u0010f\u001a\u0004\u0018\u00010gX\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\u0008h\u0010i\"\u0004\u0008j\u0010k\u0082\u0002\u000b\n\u0005\u0008\u00a1\u001e0\u0001\n\u0002\u0008!\u00a8\u0006}"
     }
     d2 = {
         "Landroidx/compose/foundation/text/TextFieldState;",
@@ -19,7 +19,11 @@
         "Landroidx/compose/foundation/text/TextDelegate;",
         "recomposeScope",
         "Landroidx/compose/runtime/RecomposeScope;",
-        "(Landroidx/compose/foundation/text/TextDelegate;Landroidx/compose/runtime/RecomposeScope;)V",
+        "keyboardController",
+        "Landroidx/compose/ui/platform/SoftwareKeyboardController;",
+        "(Landroidx/compose/foundation/text/TextDelegate;Landroidx/compose/runtime/RecomposeScope;Landroidx/compose/ui/platform/SoftwareKeyboardController;)V",
+        "_layoutCoordinates",
+        "Landroidx/compose/ui/layout/LayoutCoordinates;",
         "<set-?>",
         "Landroidx/compose/foundation/text/HandleState;",
         "handleState",
@@ -42,16 +46,20 @@
         "()Landroidx/compose/ui/text/input/TextInputSession;",
         "setInputSession",
         "(Landroidx/compose/ui/text/input/TextInputSession;)V",
+        "isInTouchMode",
+        "setInTouchMode",
+        "isInTouchMode$delegate",
         "isLayoutResultStale",
         "keyboardActionRunner",
         "Landroidx/compose/foundation/text/KeyboardActionRunner;",
+        "getKeyboardController",
+        "()Landroidx/compose/ui/platform/SoftwareKeyboardController;",
+        "value",
         "layoutCoordinates",
-        "Landroidx/compose/ui/layout/LayoutCoordinates;",
         "getLayoutCoordinates",
         "()Landroidx/compose/ui/layout/LayoutCoordinates;",
         "setLayoutCoordinates",
         "(Landroidx/compose/ui/layout/LayoutCoordinates;)V",
-        "value",
         "Landroidx/compose/foundation/text/TextLayoutResultProxy;",
         "layoutResult",
         "getLayoutResult",
@@ -94,6 +102,7 @@
         "showFloatingToolbar",
         "getShowFloatingToolbar",
         "setShowFloatingToolbar",
+        "showFloatingToolbar$delegate",
         "showSelectionHandleEnd",
         "getShowSelectionHandleEnd",
         "setShowSelectionHandleEnd",
@@ -141,18 +150,26 @@
 .end annotation
 
 
+# static fields
+.field public static final $stable:I = 0x8
+
+
 # instance fields
+.field private _layoutCoordinates:Landroidx/compose/ui/layout/LayoutCoordinates;
+
 .field private final handleState$delegate:Landroidx/compose/runtime/MutableState;
 
 .field private final hasFocus$delegate:Landroidx/compose/runtime/MutableState;
 
 .field private inputSession:Landroidx/compose/ui/text/input/TextInputSession;
 
+.field private final isInTouchMode$delegate:Landroidx/compose/runtime/MutableState;
+
 .field private isLayoutResultStale:Z
 
 .field private final keyboardActionRunner:Landroidx/compose/foundation/text/KeyboardActionRunner;
 
-.field private layoutCoordinates:Landroidx/compose/ui/layout/LayoutCoordinates;
+.field private final keyboardController:Landroidx/compose/ui/platform/SoftwareKeyboardController;
 
 .field private final layoutResultState:Landroidx/compose/runtime/MutableState;
     .annotation system Ldalvik/annotation/Signature;
@@ -208,7 +225,7 @@
 
 .field private final showCursorHandle$delegate:Landroidx/compose/runtime/MutableState;
 
-.field private showFloatingToolbar:Z
+.field private final showFloatingToolbar$delegate:Landroidx/compose/runtime/MutableState;
 
 .field private final showSelectionHandleEnd$delegate:Landroidx/compose/runtime/MutableState;
 
@@ -220,27 +237,28 @@
 
 
 # direct methods
-.method public constructor <init>(Landroidx/compose/foundation/text/TextDelegate;Landroidx/compose/runtime/RecomposeScope;)V
+.method static constructor <clinit>()V
+    .locals 0
+
+    return-void
+.end method
+
+.method public constructor <init>(Landroidx/compose/foundation/text/TextDelegate;Landroidx/compose/runtime/RecomposeScope;Landroidx/compose/ui/platform/SoftwareKeyboardController;)V
     .locals 3
 
-    const-string/jumbo v0, "textDelegate"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string v0, "recomposeScope"
-
-    invoke-static {p2, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 766
+    .line 811
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 768
+    .line 813
     iput-object p1, p0, Landroidx/compose/foundation/text/TextFieldState;->textDelegate:Landroidx/compose/foundation/text/TextDelegate;
 
-    .line 769
+    .line 814
     iput-object p2, p0, Landroidx/compose/foundation/text/TextFieldState;->recomposeScope:Landroidx/compose/runtime/RecomposeScope;
 
-    .line 771
+    .line 815
+    iput-object p3, p0, Landroidx/compose/foundation/text/TextFieldState;->keyboardController:Landroidx/compose/ui/platform/SoftwareKeyboardController;
+
+    .line 817
     new-instance p1, Landroidx/compose/ui/text/input/EditProcessor;
 
     invoke-direct {p1}, Landroidx/compose/ui/text/input/EditProcessor;-><init>()V
@@ -249,7 +267,7 @@
 
     const/4 p1, 0x0
 
-    .line 778
+    .line 824
     invoke-static {p1}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
     move-result-object p2
@@ -266,7 +284,7 @@
 
     int-to-float p1, p1
 
-    .line 1122
+    .line 1196
     invoke-static {p1}, Landroidx/compose/ui/unit/Dp;->constructor-impl(F)F
 
     move-result p1
@@ -275,21 +293,21 @@
 
     move-result-object p1
 
-    .line 783
+    .line 829
     invoke-static {p1, v0, v1, v0}, Landroidx/compose/runtime/SnapshotStateKt;->mutableStateOf$default(Ljava/lang/Object;Landroidx/compose/runtime/SnapshotMutationPolicy;ILjava/lang/Object;)Landroidx/compose/runtime/MutableState;
 
     move-result-object p1
 
     iput-object p1, p0, Landroidx/compose/foundation/text/TextFieldState;->minHeightForSingleLineField$delegate:Landroidx/compose/runtime/MutableState;
 
-    .line 799
+    .line 854
     invoke-static {v0, v0, v1, v0}, Landroidx/compose/runtime/SnapshotStateKt;->mutableStateOf$default(Ljava/lang/Object;Landroidx/compose/runtime/SnapshotMutationPolicy;ILjava/lang/Object;)Landroidx/compose/runtime/MutableState;
 
     move-result-object p1
 
     iput-object p1, p0, Landroidx/compose/foundation/text/TextFieldState;->layoutResultState:Landroidx/compose/runtime/MutableState;
 
-    .line 834
+    .line 889
     sget-object p1, Landroidx/compose/foundation/text/HandleState;->None:Landroidx/compose/foundation/text/HandleState;
 
     invoke-static {p1, v0, v1, v0}, Landroidx/compose/runtime/SnapshotStateKt;->mutableStateOf$default(Ljava/lang/Object;Landroidx/compose/runtime/SnapshotMutationPolicy;ILjava/lang/Object;)Landroidx/compose/runtime/MutableState;
@@ -298,21 +316,28 @@
 
     iput-object p1, p0, Landroidx/compose/foundation/text/TextFieldState;->handleState$delegate:Landroidx/compose/runtime/MutableState;
 
-    .line 845
+    .line 899
+    invoke-static {p2, v0, v1, v0}, Landroidx/compose/runtime/SnapshotStateKt;->mutableStateOf$default(Ljava/lang/Object;Landroidx/compose/runtime/SnapshotMutationPolicy;ILjava/lang/Object;)Landroidx/compose/runtime/MutableState;
+
+    move-result-object p1
+
+    iput-object p1, p0, Landroidx/compose/foundation/text/TextFieldState;->showFloatingToolbar$delegate:Landroidx/compose/runtime/MutableState;
+
+    .line 905
     invoke-static {p2, v0, v1, v0}, Landroidx/compose/runtime/SnapshotStateKt;->mutableStateOf$default(Ljava/lang/Object;Landroidx/compose/runtime/SnapshotMutationPolicy;ILjava/lang/Object;)Landroidx/compose/runtime/MutableState;
 
     move-result-object p1
 
     iput-object p1, p0, Landroidx/compose/foundation/text/TextFieldState;->showSelectionHandleStart$delegate:Landroidx/compose/runtime/MutableState;
 
-    .line 851
+    .line 911
     invoke-static {p2, v0, v1, v0}, Landroidx/compose/runtime/SnapshotStateKt;->mutableStateOf$default(Ljava/lang/Object;Landroidx/compose/runtime/SnapshotMutationPolicy;ILjava/lang/Object;)Landroidx/compose/runtime/MutableState;
 
     move-result-object p1
 
     iput-object p1, p0, Landroidx/compose/foundation/text/TextFieldState;->showSelectionHandleEnd$delegate:Landroidx/compose/runtime/MutableState;
 
-    .line 857
+    .line 917
     invoke-static {p2, v0, v1, v0}, Landroidx/compose/runtime/SnapshotStateKt;->mutableStateOf$default(Ljava/lang/Object;Landroidx/compose/runtime/SnapshotMutationPolicy;ILjava/lang/Object;)Landroidx/compose/runtime/MutableState;
 
     move-result-object p1
@@ -321,24 +346,35 @@
 
     const/4 p1, 0x1
 
-    .line 866
+    .line 926
     iput-boolean p1, p0, Landroidx/compose/foundation/text/TextFieldState;->isLayoutResultStale:Z
 
-    .line 869
+    .line 929
+    invoke-static {p1}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
+
+    move-result-object p1
+
+    invoke-static {p1, v0, v1, v0}, Landroidx/compose/runtime/SnapshotStateKt;->mutableStateOf$default(Ljava/lang/Object;Landroidx/compose/runtime/SnapshotMutationPolicy;ILjava/lang/Object;)Landroidx/compose/runtime/MutableState;
+
+    move-result-object p1
+
+    iput-object p1, p0, Landroidx/compose/foundation/text/TextFieldState;->isInTouchMode$delegate:Landroidx/compose/runtime/MutableState;
+
+    .line 932
     new-instance p1, Landroidx/compose/foundation/text/KeyboardActionRunner;
 
-    invoke-direct {p1}, Landroidx/compose/foundation/text/KeyboardActionRunner;-><init>()V
+    invoke-direct {p1, p3}, Landroidx/compose/foundation/text/KeyboardActionRunner;-><init>(Landroidx/compose/ui/platform/SoftwareKeyboardController;)V
 
     iput-object p1, p0, Landroidx/compose/foundation/text/TextFieldState;->keyboardActionRunner:Landroidx/compose/foundation/text/KeyboardActionRunner;
 
-    .line 876
+    .line 939
     sget-object p1, Landroidx/compose/foundation/text/TextFieldState$onValueChangeOriginal$1;->INSTANCE:Landroidx/compose/foundation/text/TextFieldState$onValueChangeOriginal$1;
 
     check-cast p1, Lkotlin/jvm/functions/Function1;
 
     iput-object p1, p0, Landroidx/compose/foundation/text/TextFieldState;->onValueChangeOriginal:Lkotlin/jvm/functions/Function1;
 
-    .line 878
+    .line 941
     new-instance p1, Landroidx/compose/foundation/text/TextFieldState$onValueChange$1;
 
     invoke-direct {p1, p0}, Landroidx/compose/foundation/text/TextFieldState$onValueChange$1;-><init>(Landroidx/compose/foundation/text/TextFieldState;)V
@@ -347,7 +383,7 @@
 
     iput-object p1, p0, Landroidx/compose/foundation/text/TextFieldState;->onValueChange:Lkotlin/jvm/functions/Function1;
 
-    .line 887
+    .line 950
     new-instance p1, Landroidx/compose/foundation/text/TextFieldState$onImeActionPerformed$1;
 
     invoke-direct {p1, p0}, Landroidx/compose/foundation/text/TextFieldState$onImeActionPerformed$1;-><init>(Landroidx/compose/foundation/text/TextFieldState;)V
@@ -356,7 +392,7 @@
 
     iput-object p1, p0, Landroidx/compose/foundation/text/TextFieldState;->onImeActionPerformed:Lkotlin/jvm/functions/Function1;
 
-    .line 892
+    .line 955
     invoke-static {}, Landroidx/compose/ui/graphics/AndroidPaint_androidKt;->Paint()Landroidx/compose/ui/graphics/Paint;
 
     move-result-object p1
@@ -369,7 +405,7 @@
 .method public static final synthetic access$getKeyboardActionRunner$p(Landroidx/compose/foundation/text/TextFieldState;)Landroidx/compose/foundation/text/KeyboardActionRunner;
     .locals 0
 
-    .line 766
+    .line 811
     iget-object p0, p0, Landroidx/compose/foundation/text/TextFieldState;->keyboardActionRunner:Landroidx/compose/foundation/text/KeyboardActionRunner;
 
     return-object p0
@@ -378,7 +414,7 @@
 .method public static final synthetic access$getOnValueChangeOriginal$p(Landroidx/compose/foundation/text/TextFieldState;)Lkotlin/jvm/functions/Function1;
     .locals 0
 
-    .line 766
+    .line 811
     iget-object p0, p0, Landroidx/compose/foundation/text/TextFieldState;->onValueChangeOriginal:Lkotlin/jvm/functions/Function1;
 
     return-object p0
@@ -389,12 +425,12 @@
 .method public final getHandleState()Landroidx/compose/foundation/text/HandleState;
     .locals 0
 
-    .line 834
+    .line 889
     iget-object p0, p0, Landroidx/compose/foundation/text/TextFieldState;->handleState$delegate:Landroidx/compose/runtime/MutableState;
 
     check-cast p0, Landroidx/compose/runtime/State;
 
-    .line 1129
+    .line 1204
     invoke-interface {p0}, Landroidx/compose/runtime/State;->getValue()Ljava/lang/Object;
 
     move-result-object p0
@@ -407,12 +443,12 @@
 .method public final getHasFocus()Z
     .locals 0
 
-    .line 778
+    .line 824
     iget-object p0, p0, Landroidx/compose/foundation/text/TextFieldState;->hasFocus$delegate:Landroidx/compose/runtime/MutableState;
 
     check-cast p0, Landroidx/compose/runtime/State;
 
-    .line 1123
+    .line 1197
     invoke-interface {p0}, Landroidx/compose/runtime/State;->getValue()Ljava/lang/Object;
 
     move-result-object p0
@@ -429,25 +465,50 @@
 .method public final getInputSession()Landroidx/compose/ui/text/input/TextInputSession;
     .locals 0
 
-    .line 772
+    .line 818
     iget-object p0, p0, Landroidx/compose/foundation/text/TextFieldState;->inputSession:Landroidx/compose/ui/text/input/TextInputSession;
 
     return-object p0
 .end method
 
-.method public final getLayoutCoordinates()Landroidx/compose/ui/layout/LayoutCoordinates;
+.method public final getKeyboardController()Landroidx/compose/ui/platform/SoftwareKeyboardController;
     .locals 0
 
-    .line 786
-    iget-object p0, p0, Landroidx/compose/foundation/text/TextFieldState;->layoutCoordinates:Landroidx/compose/ui/layout/LayoutCoordinates;
+    .line 815
+    iget-object p0, p0, Landroidx/compose/foundation/text/TextFieldState;->keyboardController:Landroidx/compose/ui/platform/SoftwareKeyboardController;
 
+    return-object p0
+.end method
+
+.method public final getLayoutCoordinates()Landroidx/compose/ui/layout/LayoutCoordinates;
+    .locals 2
+
+    .line 838
+    iget-object p0, p0, Landroidx/compose/foundation/text/TextFieldState;->_layoutCoordinates:Landroidx/compose/ui/layout/LayoutCoordinates;
+
+    const/4 v0, 0x0
+
+    if-eqz p0, :cond_0
+
+    invoke-interface {p0}, Landroidx/compose/ui/layout/LayoutCoordinates;->isAttached()Z
+
+    move-result v1
+
+    if-eqz v1, :cond_0
+
+    goto :goto_0
+
+    :cond_0
+    move-object p0, v0
+
+    :goto_0
     return-object p0
 .end method
 
 .method public final getLayoutResult()Landroidx/compose/foundation/text/TextLayoutResultProxy;
     .locals 0
 
-    .line 801
+    .line 856
     iget-object p0, p0, Landroidx/compose/foundation/text/TextFieldState;->layoutResultState:Landroidx/compose/runtime/MutableState;
 
     invoke-interface {p0}, Landroidx/compose/runtime/MutableState;->getValue()Ljava/lang/Object;
@@ -462,12 +523,12 @@
 .method public final getMinHeightForSingleLineField-D9Ej5fM()F
     .locals 0
 
-    .line 783
+    .line 829
     iget-object p0, p0, Landroidx/compose/foundation/text/TextFieldState;->minHeightForSingleLineField$delegate:Landroidx/compose/runtime/MutableState;
 
     check-cast p0, Landroidx/compose/runtime/State;
 
-    .line 1126
+    .line 1200
     invoke-interface {p0}, Landroidx/compose/runtime/State;->getValue()Ljava/lang/Object;
 
     move-result-object p0
@@ -493,7 +554,7 @@
         }
     .end annotation
 
-    .line 887
+    .line 950
     iget-object p0, p0, Landroidx/compose/foundation/text/TextFieldState;->onImeActionPerformed:Lkotlin/jvm/functions/Function1;
 
     return-object p0
@@ -511,7 +572,7 @@
         }
     .end annotation
 
-    .line 878
+    .line 941
     iget-object p0, p0, Landroidx/compose/foundation/text/TextFieldState;->onValueChange:Lkotlin/jvm/functions/Function1;
 
     return-object p0
@@ -520,7 +581,7 @@
 .method public final getProcessor()Landroidx/compose/ui/text/input/EditProcessor;
     .locals 0
 
-    .line 771
+    .line 817
     iget-object p0, p0, Landroidx/compose/foundation/text/TextFieldState;->processor:Landroidx/compose/ui/text/input/EditProcessor;
 
     return-object p0
@@ -529,7 +590,7 @@
 .method public final getRecomposeScope()Landroidx/compose/runtime/RecomposeScope;
     .locals 0
 
-    .line 769
+    .line 814
     iget-object p0, p0, Landroidx/compose/foundation/text/TextFieldState;->recomposeScope:Landroidx/compose/runtime/RecomposeScope;
 
     return-object p0
@@ -538,7 +599,7 @@
 .method public final getSelectionPaint()Landroidx/compose/ui/graphics/Paint;
     .locals 0
 
-    .line 892
+    .line 955
     iget-object p0, p0, Landroidx/compose/foundation/text/TextFieldState;->selectionPaint:Landroidx/compose/ui/graphics/Paint;
 
     return-object p0
@@ -547,12 +608,12 @@
 .method public final getShowCursorHandle()Z
     .locals 0
 
-    .line 857
+    .line 917
     iget-object p0, p0, Landroidx/compose/foundation/text/TextFieldState;->showCursorHandle$delegate:Landroidx/compose/runtime/MutableState;
 
     check-cast p0, Landroidx/compose/runtime/State;
 
-    .line 1138
+    .line 1216
     invoke-interface {p0}, Landroidx/compose/runtime/State;->getValue()Ljava/lang/Object;
 
     move-result-object p0
@@ -569,8 +630,21 @@
 .method public final getShowFloatingToolbar()Z
     .locals 0
 
-    .line 839
-    iget-boolean p0, p0, Landroidx/compose/foundation/text/TextFieldState;->showFloatingToolbar:Z
+    .line 899
+    iget-object p0, p0, Landroidx/compose/foundation/text/TextFieldState;->showFloatingToolbar$delegate:Landroidx/compose/runtime/MutableState;
+
+    check-cast p0, Landroidx/compose/runtime/State;
+
+    .line 1207
+    invoke-interface {p0}, Landroidx/compose/runtime/State;->getValue()Ljava/lang/Object;
+
+    move-result-object p0
+
+    check-cast p0, Ljava/lang/Boolean;
+
+    invoke-virtual {p0}, Ljava/lang/Boolean;->booleanValue()Z
+
+    move-result p0
 
     return p0
 .end method
@@ -578,12 +652,12 @@
 .method public final getShowSelectionHandleEnd()Z
     .locals 0
 
-    .line 851
+    .line 911
     iget-object p0, p0, Landroidx/compose/foundation/text/TextFieldState;->showSelectionHandleEnd$delegate:Landroidx/compose/runtime/MutableState;
 
     check-cast p0, Landroidx/compose/runtime/State;
 
-    .line 1135
+    .line 1213
     invoke-interface {p0}, Landroidx/compose/runtime/State;->getValue()Ljava/lang/Object;
 
     move-result-object p0
@@ -600,12 +674,12 @@
 .method public final getShowSelectionHandleStart()Z
     .locals 0
 
-    .line 845
+    .line 905
     iget-object p0, p0, Landroidx/compose/foundation/text/TextFieldState;->showSelectionHandleStart$delegate:Landroidx/compose/runtime/MutableState;
 
     check-cast p0, Landroidx/compose/runtime/State;
 
-    .line 1132
+    .line 1210
     invoke-interface {p0}, Landroidx/compose/runtime/State;->getValue()Ljava/lang/Object;
 
     move-result-object p0
@@ -622,7 +696,7 @@
 .method public final getTextDelegate()Landroidx/compose/foundation/text/TextDelegate;
     .locals 0
 
-    .line 768
+    .line 813
     iget-object p0, p0, Landroidx/compose/foundation/text/TextFieldState;->textDelegate:Landroidx/compose/foundation/text/TextDelegate;
 
     return-object p0
@@ -631,32 +705,50 @@
 .method public final getUntransformedText()Landroidx/compose/ui/text/AnnotatedString;
     .locals 0
 
-    .line 815
+    .line 870
     iget-object p0, p0, Landroidx/compose/foundation/text/TextFieldState;->untransformedText:Landroidx/compose/ui/text/AnnotatedString;
 
     return-object p0
 .end method
 
+.method public final isInTouchMode()Z
+    .locals 0
+
+    .line 929
+    iget-object p0, p0, Landroidx/compose/foundation/text/TextFieldState;->isInTouchMode$delegate:Landroidx/compose/runtime/MutableState;
+
+    check-cast p0, Landroidx/compose/runtime/State;
+
+    .line 1219
+    invoke-interface {p0}, Landroidx/compose/runtime/State;->getValue()Ljava/lang/Object;
+
+    move-result-object p0
+
+    check-cast p0, Ljava/lang/Boolean;
+
+    invoke-virtual {p0}, Ljava/lang/Boolean;->booleanValue()Z
+
+    move-result p0
+
+    return p0
+.end method
+
 .method public final isLayoutResultStale()Z
     .locals 0
 
-    .line 866
+    .line 926
     iget-boolean p0, p0, Landroidx/compose/foundation/text/TextFieldState;->isLayoutResultStale:Z
 
     return p0
 .end method
 
 .method public final setHandleState(Landroidx/compose/foundation/text/HandleState;)V
-    .locals 1
+    .locals 0
 
-    const-string v0, "<set-?>"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 834
+    .line 889
     iget-object p0, p0, Landroidx/compose/foundation/text/TextFieldState;->handleState$delegate:Landroidx/compose/runtime/MutableState;
 
-    .line 1130
+    .line 1205
     invoke-interface {p0, p1}, Landroidx/compose/runtime/MutableState;->setValue(Ljava/lang/Object;)V
 
     return-void
@@ -665,14 +757,30 @@
 .method public final setHasFocus(Z)V
     .locals 0
 
-    .line 778
+    .line 824
     iget-object p0, p0, Landroidx/compose/foundation/text/TextFieldState;->hasFocus$delegate:Landroidx/compose/runtime/MutableState;
 
     invoke-static {p1}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
     move-result-object p1
 
-    .line 1124
+    .line 1198
+    invoke-interface {p0, p1}, Landroidx/compose/runtime/MutableState;->setValue(Ljava/lang/Object;)V
+
+    return-void
+.end method
+
+.method public final setInTouchMode(Z)V
+    .locals 0
+
+    .line 929
+    iget-object p0, p0, Landroidx/compose/foundation/text/TextFieldState;->isInTouchMode$delegate:Landroidx/compose/runtime/MutableState;
+
+    invoke-static {p1}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
+
+    move-result-object p1
+
+    .line 1220
     invoke-interface {p0, p1}, Landroidx/compose/runtime/MutableState;->setValue(Ljava/lang/Object;)V
 
     return-void
@@ -681,7 +789,7 @@
 .method public final setInputSession(Landroidx/compose/ui/text/input/TextInputSession;)V
     .locals 0
 
-    .line 772
+    .line 818
     iput-object p1, p0, Landroidx/compose/foundation/text/TextFieldState;->inputSession:Landroidx/compose/ui/text/input/TextInputSession;
 
     return-void
@@ -690,8 +798,8 @@
 .method public final setLayoutCoordinates(Landroidx/compose/ui/layout/LayoutCoordinates;)V
     .locals 0
 
-    .line 786
-    iput-object p1, p0, Landroidx/compose/foundation/text/TextFieldState;->layoutCoordinates:Landroidx/compose/ui/layout/LayoutCoordinates;
+    .line 840
+    iput-object p1, p0, Landroidx/compose/foundation/text/TextFieldState;->_layoutCoordinates:Landroidx/compose/ui/layout/LayoutCoordinates;
 
     return-void
 .end method
@@ -699,14 +807,14 @@
 .method public final setLayoutResult(Landroidx/compose/foundation/text/TextLayoutResultProxy;)V
     .locals 1
 
-    .line 803
+    .line 858
     iget-object v0, p0, Landroidx/compose/foundation/text/TextFieldState;->layoutResultState:Landroidx/compose/runtime/MutableState;
 
     invoke-interface {v0, p1}, Landroidx/compose/runtime/MutableState;->setValue(Ljava/lang/Object;)V
 
     const/4 p1, 0x0
 
-    .line 804
+    .line 859
     iput-boolean p1, p0, Landroidx/compose/foundation/text/TextFieldState;->isLayoutResultStale:Z
 
     return-void
@@ -715,14 +823,14 @@
 .method public final setMinHeightForSingleLineField-0680j_4(F)V
     .locals 0
 
-    .line 783
+    .line 829
     iget-object p0, p0, Landroidx/compose/foundation/text/TextFieldState;->minHeightForSingleLineField$delegate:Landroidx/compose/runtime/MutableState;
 
     invoke-static {p1}, Landroidx/compose/ui/unit/Dp;->box-impl(F)Landroidx/compose/ui/unit/Dp;
 
     move-result-object p1
 
-    .line 1127
+    .line 1201
     invoke-interface {p0, p1}, Landroidx/compose/runtime/MutableState;->setValue(Ljava/lang/Object;)V
 
     return-void
@@ -731,14 +839,14 @@
 .method public final setShowCursorHandle(Z)V
     .locals 0
 
-    .line 857
+    .line 917
     iget-object p0, p0, Landroidx/compose/foundation/text/TextFieldState;->showCursorHandle$delegate:Landroidx/compose/runtime/MutableState;
 
     invoke-static {p1}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
     move-result-object p1
 
-    .line 1139
+    .line 1217
     invoke-interface {p0, p1}, Landroidx/compose/runtime/MutableState;->setValue(Ljava/lang/Object;)V
 
     return-void
@@ -747,8 +855,15 @@
 .method public final setShowFloatingToolbar(Z)V
     .locals 0
 
-    .line 839
-    iput-boolean p1, p0, Landroidx/compose/foundation/text/TextFieldState;->showFloatingToolbar:Z
+    .line 899
+    iget-object p0, p0, Landroidx/compose/foundation/text/TextFieldState;->showFloatingToolbar$delegate:Landroidx/compose/runtime/MutableState;
+
+    invoke-static {p1}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
+
+    move-result-object p1
+
+    .line 1208
+    invoke-interface {p0, p1}, Landroidx/compose/runtime/MutableState;->setValue(Ljava/lang/Object;)V
 
     return-void
 .end method
@@ -756,14 +871,14 @@
 .method public final setShowSelectionHandleEnd(Z)V
     .locals 0
 
-    .line 851
+    .line 911
     iget-object p0, p0, Landroidx/compose/foundation/text/TextFieldState;->showSelectionHandleEnd$delegate:Landroidx/compose/runtime/MutableState;
 
     invoke-static {p1}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
     move-result-object p1
 
-    .line 1136
+    .line 1214
     invoke-interface {p0, p1}, Landroidx/compose/runtime/MutableState;->setValue(Ljava/lang/Object;)V
 
     return-void
@@ -772,27 +887,23 @@
 .method public final setShowSelectionHandleStart(Z)V
     .locals 0
 
-    .line 845
+    .line 905
     iget-object p0, p0, Landroidx/compose/foundation/text/TextFieldState;->showSelectionHandleStart$delegate:Landroidx/compose/runtime/MutableState;
 
     invoke-static {p1}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
     move-result-object p1
 
-    .line 1133
+    .line 1211
     invoke-interface {p0, p1}, Landroidx/compose/runtime/MutableState;->setValue(Ljava/lang/Object;)V
 
     return-void
 .end method
 
 .method public final setTextDelegate(Landroidx/compose/foundation/text/TextDelegate;)V
-    .locals 1
+    .locals 0
 
-    const-string v0, "<set-?>"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 768
+    .line 813
     iput-object p1, p0, Landroidx/compose/foundation/text/TextFieldState;->textDelegate:Landroidx/compose/foundation/text/TextDelegate;
 
     return-void
@@ -801,14 +912,14 @@
 .method public final setUntransformedText(Landroidx/compose/ui/text/AnnotatedString;)V
     .locals 0
 
-    .line 815
+    .line 870
     iput-object p1, p0, Landroidx/compose/foundation/text/TextFieldState;->untransformedText:Landroidx/compose/ui/text/AnnotatedString;
 
     return-void
 .end method
 
 .method public final update-fnh65Uc(Landroidx/compose/ui/text/AnnotatedString;Landroidx/compose/ui/text/AnnotatedString;Landroidx/compose/ui/text/TextStyle;ZLandroidx/compose/ui/unit/Density;Landroidx/compose/ui/text/font/FontFamily$Resolver;Lkotlin/jvm/functions/Function1;Landroidx/compose/foundation/text/KeyboardActions;Landroidx/compose/ui/focus/FocusManager;J)V
-    .locals 18
+    .locals 13
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -829,109 +940,72 @@
         }
     .end annotation
 
-    move-object/from16 v0, p0
+    move-object v0, p0
 
-    move-object/from16 v1, p1
+    move-object/from16 v1, p7
 
-    move-object/from16 v2, p7
+    .line 969
+    iput-object v1, v0, Landroidx/compose/foundation/text/TextFieldState;->onValueChangeOriginal:Lkotlin/jvm/functions/Function1;
 
-    move-object/from16 v3, p8
+    .line 970
+    iget-object v1, v0, Landroidx/compose/foundation/text/TextFieldState;->selectionPaint:Landroidx/compose/ui/graphics/Paint;
 
-    move-object/from16 v4, p9
+    move-wide/from16 v2, p10
 
-    const-string/jumbo v5, "untransformedText"
+    invoke-interface {v1, v2, v3}, Landroidx/compose/ui/graphics/Paint;->setColor-8_81llA(J)V
 
-    invoke-static {v1, v5}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+    .line 971
+    iget-object v1, v0, Landroidx/compose/foundation/text/TextFieldState;->keyboardActionRunner:Landroidx/compose/foundation/text/KeyboardActionRunner;
 
-    const-string/jumbo v5, "visualText"
+    move-object/from16 v2, p8
 
-    move-object/from16 v7, p2
+    .line 972
+    invoke-virtual {v1, v2}, Landroidx/compose/foundation/text/KeyboardActionRunner;->setKeyboardActions(Landroidx/compose/foundation/text/KeyboardActions;)V
 
-    invoke-static {v7, v5}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+    move-object/from16 v2, p9
 
-    const-string/jumbo v5, "textStyle"
+    .line 973
+    invoke-virtual {v1, v2}, Landroidx/compose/foundation/text/KeyboardActionRunner;->setFocusManager(Landroidx/compose/ui/focus/FocusManager;)V
 
-    move-object/from16 v8, p3
+    move-object v1, p1
 
-    invoke-static {v8, v5}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string v5, "density"
-
-    move-object/from16 v9, p5
-
-    invoke-static {v9, v5}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string v5, "fontFamilyResolver"
-
-    move-object/from16 v10, p6
-
-    invoke-static {v10, v5}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string v5, "onValueChange"
-
-    invoke-static {v2, v5}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string v5, "keyboardActions"
-
-    invoke-static {v3, v5}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string v5, "focusManager"
-
-    invoke-static {v4, v5}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 906
-    iput-object v2, v0, Landroidx/compose/foundation/text/TextFieldState;->onValueChangeOriginal:Lkotlin/jvm/functions/Function1;
-
-    .line 907
-    iget-object v2, v0, Landroidx/compose/foundation/text/TextFieldState;->selectionPaint:Landroidx/compose/ui/graphics/Paint;
-
-    move-wide/from16 v5, p10
-
-    invoke-interface {v2, v5, v6}, Landroidx/compose/ui/graphics/Paint;->setColor-8_81llA(J)V
-
-    .line 908
-    iget-object v2, v0, Landroidx/compose/foundation/text/TextFieldState;->keyboardActionRunner:Landroidx/compose/foundation/text/KeyboardActionRunner;
-
-    .line 909
-    invoke-virtual {v2, v3}, Landroidx/compose/foundation/text/KeyboardActionRunner;->setKeyboardActions(Landroidx/compose/foundation/text/KeyboardActions;)V
-
-    .line 910
-    invoke-virtual {v2, v4}, Landroidx/compose/foundation/text/KeyboardActionRunner;->setFocusManager(Landroidx/compose/ui/focus/FocusManager;)V
-
-    .line 911
-    iget-object v3, v0, Landroidx/compose/foundation/text/TextFieldState;->inputSession:Landroidx/compose/ui/text/input/TextInputSession;
-
-    invoke-virtual {v2, v3}, Landroidx/compose/foundation/text/KeyboardActionRunner;->setInputSession(Landroidx/compose/ui/text/input/TextInputSession;)V
-
-    .line 913
+    .line 975
     iput-object v1, v0, Landroidx/compose/foundation/text/TextFieldState;->untransformedText:Landroidx/compose/ui/text/AnnotatedString;
 
-    .line 916
-    iget-object v6, v0, Landroidx/compose/foundation/text/TextFieldState;->textDelegate:Landroidx/compose/foundation/text/TextDelegate;
+    .line 978
+    iget-object v1, v0, Landroidx/compose/foundation/text/TextFieldState;->textDelegate:Landroidx/compose/foundation/text/TextDelegate;
 
-    .line 922
+    .line 984
     invoke-static {}, Lkotlin/collections/CollectionsKt;->emptyList()Ljava/util/List;
 
-    move-result-object v15
+    move-result-object v10
 
-    const/16 v16, 0x1c0
-
-    const/16 v17, 0x0
+    const/16 v11, 0x1c0
 
     const/4 v12, 0x0
 
-    const/4 v13, 0x0
+    const/4 v7, 0x0
 
-    const/4 v14, 0x0
+    const/4 v8, 0x0
 
-    move/from16 v11, p4
+    const/4 v9, 0x0
 
-    .line 915
-    invoke-static/range {v6 .. v17}, Landroidx/compose/foundation/text/TextDelegateKt;->updateTextDelegate-rm0N8CA$default(Landroidx/compose/foundation/text/TextDelegate;Landroidx/compose/ui/text/AnnotatedString;Landroidx/compose/ui/text/TextStyle;Landroidx/compose/ui/unit/Density;Landroidx/compose/ui/text/font/FontFamily$Resolver;ZIIILjava/util/List;ILjava/lang/Object;)Landroidx/compose/foundation/text/TextDelegate;
+    move-object v2, p2
+
+    move-object/from16 v3, p3
+
+    move-object/from16 v4, p5
+
+    move-object/from16 v5, p6
+
+    move/from16 v6, p4
+
+    .line 977
+    invoke-static/range {v1 .. v12}, Landroidx/compose/foundation/text/TextDelegateKt;->updateTextDelegate-rm0N8CA$default(Landroidx/compose/foundation/text/TextDelegate;Landroidx/compose/ui/text/AnnotatedString;Landroidx/compose/ui/text/TextStyle;Landroidx/compose/ui/unit/Density;Landroidx/compose/ui/text/font/FontFamily$Resolver;ZIIILjava/util/List;ILjava/lang/Object;)Landroidx/compose/foundation/text/TextDelegate;
 
     move-result-object v1
 
-    .line 925
+    .line 987
     iget-object v2, v0, Landroidx/compose/foundation/text/TextFieldState;->textDelegate:Landroidx/compose/foundation/text/TextDelegate;
 
     if-eq v2, v1, :cond_0
@@ -940,7 +1014,7 @@
 
     iput-boolean v2, v0, Landroidx/compose/foundation/text/TextFieldState;->isLayoutResultStale:Z
 
-    .line 926
+    .line 988
     :cond_0
     iput-object v1, v0, Landroidx/compose/foundation/text/TextFieldState;->textDelegate:Landroidx/compose/foundation/text/TextDelegate;
 

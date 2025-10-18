@@ -114,16 +114,16 @@
         }
     .end annotation
 
-    .line 134
+    .line 139
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 136
+    .line 141
     iput p1, p0, Landroidx/compose/animation/core/SpringSpec;->dampingRatio:F
 
-    .line 137
+    .line 142
     iput p2, p0, Landroidx/compose/animation/core/SpringSpec;->stiffness:F
 
-    .line 138
+    .line 143
     iput-object p3, p0, Landroidx/compose/animation/core/SpringSpec;->visibilityThreshold:Ljava/lang/Object;
 
     return-void
@@ -152,7 +152,7 @@
 
     const/4 p3, 0x0
 
-    .line 135
+    .line 140
     :cond_2
     invoke-direct {p0, p1, p2, p3}, Landroidx/compose/animation/core/SpringSpec;-><init>(FFLjava/lang/Object;)V
 
@@ -164,14 +164,14 @@
 .method public equals(Ljava/lang/Object;)Z
     .locals 3
 
-    .line 145
+    .line 150
     instance-of v0, p1, Landroidx/compose/animation/core/SpringSpec;
 
     const/4 v1, 0x0
 
     if-eqz v0, :cond_0
 
-    .line 146
+    .line 151
     check-cast p1, Landroidx/compose/animation/core/SpringSpec;
 
     iget v0, p1, Landroidx/compose/animation/core/SpringSpec;->dampingRatio:F
@@ -182,7 +182,7 @@
 
     if-nez v0, :cond_0
 
-    .line 147
+    .line 152
     iget v0, p1, Landroidx/compose/animation/core/SpringSpec;->stiffness:F
 
     iget v2, p0, Landroidx/compose/animation/core/SpringSpec;->stiffness:F
@@ -191,7 +191,7 @@
 
     if-nez v0, :cond_0
 
-    .line 148
+    .line 153
     iget-object p1, p1, Landroidx/compose/animation/core/SpringSpec;->visibilityThreshold:Ljava/lang/Object;
 
     iget-object p0, p0, Landroidx/compose/animation/core/SpringSpec;->visibilityThreshold:Ljava/lang/Object;
@@ -211,7 +211,7 @@
 .method public final getDampingRatio()F
     .locals 0
 
-    .line 136
+    .line 141
     iget p0, p0, Landroidx/compose/animation/core/SpringSpec;->dampingRatio:F
 
     return p0
@@ -220,7 +220,7 @@
 .method public final getStiffness()F
     .locals 0
 
-    .line 137
+    .line 142
     iget p0, p0, Landroidx/compose/animation/core/SpringSpec;->stiffness:F
 
     return p0
@@ -234,7 +234,7 @@
         }
     .end annotation
 
-    .line 138
+    .line 143
     iget-object p0, p0, Landroidx/compose/animation/core/SpringSpec;->visibilityThreshold:Ljava/lang/Object;
 
     return-object p0
@@ -243,7 +243,7 @@
 .method public hashCode()I
     .locals 2
 
-    .line 154
+    .line 159
     iget-object v0, p0, Landroidx/compose/animation/core/SpringSpec;->visibilityThreshold:Ljava/lang/Object;
 
     if-eqz v0, :cond_0
@@ -284,7 +284,7 @@
 .method public bridge synthetic vectorize(Landroidx/compose/animation/core/TwoWayConverter;)Landroidx/compose/animation/core/VectorizedAnimationSpec;
     .locals 0
 
-    .line 134
+    .line 139
     invoke-virtual {p0, p1}, Landroidx/compose/animation/core/SpringSpec;->vectorize(Landroidx/compose/animation/core/TwoWayConverter;)Landroidx/compose/animation/core/VectorizedSpringSpec;
 
     move-result-object p0
@@ -297,7 +297,7 @@
 .method public bridge synthetic vectorize(Landroidx/compose/animation/core/TwoWayConverter;)Landroidx/compose/animation/core/VectorizedFiniteAnimationSpec;
     .locals 0
 
-    .line 134
+    .line 139
     invoke-virtual {p0, p1}, Landroidx/compose/animation/core/SpringSpec;->vectorize(Landroidx/compose/animation/core/TwoWayConverter;)Landroidx/compose/animation/core/VectorizedSpringSpec;
 
     move-result-object p0
@@ -321,11 +321,7 @@
         }
     .end annotation
 
-    const-string v0, "converter"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 142
+    .line 147
     new-instance v0, Landroidx/compose/animation/core/VectorizedSpringSpec;
 
     iget v1, p0, Landroidx/compose/animation/core/SpringSpec;->dampingRatio:F

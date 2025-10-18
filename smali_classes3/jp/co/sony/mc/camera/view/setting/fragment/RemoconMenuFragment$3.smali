@@ -25,7 +25,7 @@
 .method constructor <init>(Ljp/co/sony/mc/camera/view/setting/fragment/RemoconMenuFragment;)V
     .locals 0
 
-    .line 435
+    .line 443
     iput-object p1, p0, Ljp/co/sony/mc/camera/view/setting/fragment/RemoconMenuFragment$3;->this$0:Ljp/co/sony/mc/camera/view/setting/fragment/RemoconMenuFragment;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -38,7 +38,7 @@
 .method public onConnected()V
     .locals 0
 
-    .line 440
+    .line 448
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/setting/fragment/RemoconMenuFragment$3;->this$0:Ljp/co/sony/mc/camera/view/setting/fragment/RemoconMenuFragment;
 
     invoke-static {p0}, Ljp/co/sony/mc/camera/view/setting/fragment/RemoconMenuFragment;->-$$Nest$menduranceMode(Ljp/co/sony/mc/camera/view/setting/fragment/RemoconMenuFragment;)V

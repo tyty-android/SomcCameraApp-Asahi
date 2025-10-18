@@ -69,7 +69,7 @@
 .end method
 
 .method private changeTo(Ljp/co/sony/mc/camera/device/AutoFocusResultChecker$State;)V
-    .locals 2
+    .locals 3
 
     .line 148
     iget-object v0, p0, Ljp/co/sony/mc/camera/device/AutoFocusResultChecker;->mState:Ljp/co/sony/mc/camera/device/AutoFocusResultChecker$State;
@@ -81,43 +81,47 @@
 
     if-eqz v0, :cond_0
 
-    new-instance v0, Ljava/lang/StringBuilder;
+    const/4 v0, 0x1
 
-    const-string v1, "invoke current:"
+    new-array v0, v0, [Ljava/lang/String;
 
-    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+    new-instance v1, Ljava/lang/StringBuilder;
 
-    iget-object v1, p0, Ljp/co/sony/mc/camera/device/AutoFocusResultChecker;->mState:Ljp/co/sony/mc/camera/device/AutoFocusResultChecker$State;
+    const-string v2, "invoke current:"
 
-    invoke-virtual {v1}, Ljp/co/sony/mc/camera/device/AutoFocusResultChecker$State;->name()Ljava/lang/String;
+    invoke-direct {v1, v2}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+
+    iget-object v2, p0, Ljp/co/sony/mc/camera/device/AutoFocusResultChecker;->mState:Ljp/co/sony/mc/camera/device/AutoFocusResultChecker$State;
+
+    invoke-virtual {v2}, Ljp/co/sony/mc/camera/device/AutoFocusResultChecker$State;->name()Ljava/lang/String;
+
+    move-result-object v2
+
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v1
 
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    const-string v2, ", to:"
 
-    move-result-object v0
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    const-string v1, ", to:"
-
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v0
+    move-result-object v1
 
     invoke-virtual {p1}, Ljp/co/sony/mc/camera/device/AutoFocusResultChecker$State;->name()Ljava/lang/String;
 
+    move-result-object v2
+
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
     move-result-object v1
 
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    move-result-object v0
+    move-result-object v1
 
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    const/4 v2, 0x0
 
-    move-result-object v0
-
-    filled-new-array {v0}, [Ljava/lang/String;
-
-    move-result-object v0
+    aput-object v1, v0, v2
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
@@ -151,9 +155,9 @@
 
     if-eq v0, p1, :cond_2
 
-    const/4 v1, 0x3
+    const/4 v2, 0x3
 
-    if-eq v0, v1, :cond_0
+    if-eq v0, v2, :cond_0
 
     goto/16 :goto_0
 
@@ -197,11 +201,13 @@
     if-eqz p1, :cond_1
 
     .line 90
-    const-string p0, "Ignore AF cancelled because of tag of prepare snapshot is contained."
+    new-array p0, v1, [Ljava/lang/String;
 
-    filled-new-array {p0}, [Ljava/lang/String;
+    const/4 p1, 0x0
 
-    move-result-object p0
+    const-string p2, "Ignore AF cancelled because of tag of prepare snapshot is contained."
+
+    aput-object p2, p0, p1
 
     invoke-static {p0}, Ljp/co/sony/mc/camera/util/CamLog;->w([Ljava/lang/String;)V
 

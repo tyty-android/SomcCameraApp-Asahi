@@ -100,14 +100,14 @@
         }
     .end annotation
 
-    .line 2407
+    .line 2408
     iget v0, p0, Lkotlin/text/StringsKt___StringsKt$windowedSequence$2;->$size:I
 
     add-int/2addr v0, p1
 
     if-ltz v0, :cond_0
 
-    .line 2408
+    .line 2409
     iget-object v1, p0, Lkotlin/text/StringsKt___StringsKt$windowedSequence$2;->$this_windowedSequence:Ljava/lang/CharSequence;
 
     invoke-interface {v1}, Ljava/lang/CharSequence;->length()I
@@ -123,7 +123,7 @@
 
     move-result v0
 
-    .line 2409
+    .line 2410
     :cond_1
     iget-object v1, p0, Lkotlin/text/StringsKt___StringsKt$windowedSequence$2;->$transform:Lkotlin/jvm/functions/Function1;
 
@@ -143,7 +143,7 @@
 .method public bridge synthetic invoke(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
 
-    .line 2406
+    .line 2407
     check-cast p1, Ljava/lang/Number;
 
     invoke-virtual {p1}, Ljava/lang/Number;->intValue()I

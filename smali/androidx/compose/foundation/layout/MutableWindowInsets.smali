@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/SourceDebugExtension;
-    value = "SMAP\nWindowInsets.kt\nKotlin\n*S Kotlin\n*F\n+ 1 WindowInsets.kt\nandroidx/compose/foundation/layout/MutableWindowInsets\n+ 2 SnapshotState.kt\nandroidx/compose/runtime/SnapshotStateKt__SnapshotStateKt\n*L\n1#1,674:1\n81#2:675\n107#2,2:676\n*S KotlinDebug\n*F\n+ 1 WindowInsets.kt\nandroidx/compose/foundation/layout/MutableWindowInsets\n*L\n81#1:675\n81#1:676,2\n*E\n"
+    value = "SMAP\nWindowInsets.kt\nKotlin\n*S Kotlin\n*F\n+ 1 WindowInsets.kt\nandroidx/compose/foundation/layout/MutableWindowInsets\n+ 2 SnapshotState.kt\nandroidx/compose/runtime/SnapshotStateKt__SnapshotStateKt\n*L\n1#1,748:1\n81#2:749\n107#2,2:750\n*S KotlinDebug\n*F\n+ 1 WindowInsets.kt\nandroidx/compose/foundation/layout/MutableWindowInsets\n*L\n83#1:749\n83#1:750,2\n*E\n"
 .end annotation
 
 .annotation runtime Lkotlin/Metadata;
@@ -78,18 +78,14 @@
 .method public constructor <init>(Landroidx/compose/foundation/layout/WindowInsets;)V
     .locals 2
 
-    const-string v0, "initialInsets"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 75
+    .line 77
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     const/4 v0, 0x0
 
     const/4 v1, 0x2
 
-    .line 81
+    .line 83
     invoke-static {p1, v0, v1, v0}, Landroidx/compose/runtime/SnapshotStateKt;->mutableStateOf$default(Ljava/lang/Object;Landroidx/compose/runtime/SnapshotMutationPolicy;ILjava/lang/Object;)Landroidx/compose/runtime/MutableState;
 
     move-result-object p1
@@ -108,7 +104,7 @@
 
     const/4 p1, 0x0
 
-    .line 76
+    .line 78
     invoke-static {p1, p1, p1, p1}, Landroidx/compose/foundation/layout/WindowInsetsKt;->WindowInsets(IIII)Landroidx/compose/foundation/layout/WindowInsets;
 
     move-result-object p1
@@ -122,13 +118,9 @@
 
 # virtual methods
 .method public getBottom(Landroidx/compose/ui/unit/Density;)I
-    .locals 1
+    .locals 0
 
-    const-string v0, "density"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 91
+    .line 93
     invoke-virtual {p0}, Landroidx/compose/foundation/layout/MutableWindowInsets;->getInsets()Landroidx/compose/foundation/layout/WindowInsets;
 
     move-result-object p0
@@ -143,12 +135,12 @@
 .method public final getInsets()Landroidx/compose/foundation/layout/WindowInsets;
     .locals 0
 
-    .line 81
+    .line 83
     iget-object p0, p0, Landroidx/compose/foundation/layout/MutableWindowInsets;->insets$delegate:Landroidx/compose/runtime/MutableState;
 
     check-cast p0, Landroidx/compose/runtime/State;
 
-    .line 675
+    .line 749
     invoke-interface {p0}, Landroidx/compose/runtime/State;->getValue()Ljava/lang/Object;
 
     move-result-object p0
@@ -159,17 +151,9 @@
 .end method
 
 .method public getLeft(Landroidx/compose/ui/unit/Density;Landroidx/compose/ui/unit/LayoutDirection;)I
-    .locals 1
+    .locals 0
 
-    const-string v0, "density"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string v0, "layoutDirection"
-
-    invoke-static {p2, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 84
+    .line 86
     invoke-virtual {p0}, Landroidx/compose/foundation/layout/MutableWindowInsets;->getInsets()Landroidx/compose/foundation/layout/WindowInsets;
 
     move-result-object p0
@@ -182,17 +166,9 @@
 .end method
 
 .method public getRight(Landroidx/compose/ui/unit/Density;Landroidx/compose/ui/unit/LayoutDirection;)I
-    .locals 1
+    .locals 0
 
-    const-string v0, "density"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string v0, "layoutDirection"
-
-    invoke-static {p2, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 89
+    .line 91
     invoke-virtual {p0}, Landroidx/compose/foundation/layout/MutableWindowInsets;->getInsets()Landroidx/compose/foundation/layout/WindowInsets;
 
     move-result-object p0
@@ -205,13 +181,9 @@
 .end method
 
 .method public getTop(Landroidx/compose/ui/unit/Density;)I
-    .locals 1
+    .locals 0
 
-    const-string v0, "density"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 86
+    .line 88
     invoke-virtual {p0}, Landroidx/compose/foundation/layout/MutableWindowInsets;->getInsets()Landroidx/compose/foundation/layout/WindowInsets;
 
     move-result-object p0
@@ -224,16 +196,12 @@
 .end method
 
 .method public final setInsets(Landroidx/compose/foundation/layout/WindowInsets;)V
-    .locals 1
+    .locals 0
 
-    const-string v0, "<set-?>"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 81
+    .line 83
     iget-object p0, p0, Landroidx/compose/foundation/layout/MutableWindowInsets;->insets$delegate:Landroidx/compose/runtime/MutableState;
 
-    .line 676
+    .line 750
     invoke-interface {p0, p1}, Landroidx/compose/runtime/MutableState;->setValue(Ljava/lang/Object;)V
 
     return-void

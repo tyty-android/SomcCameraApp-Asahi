@@ -187,26 +187,26 @@
 
     invoke-static {}, Lkotlin/coroutines/intrinsics/IntrinsicsKt;->getCOROUTINE_SUSPENDED()Ljava/lang/Object;
 
-    .line 110
+    .line 107
     iget v0, p0, Landroidx/lifecycle/FlowLiveDataConversions$asFlow$1$1;->label:I
 
     if-nez v0, :cond_0
 
     invoke-static {p1}, Lkotlin/ResultKt;->throwOnFailure(Ljava/lang/Object;)V
 
-    .line 111
+    .line 108
     iget-object p1, p0, Landroidx/lifecycle/FlowLiveDataConversions$asFlow$1$1;->$this_asFlow:Landroidx/lifecycle/LiveData;
 
     iget-object p0, p0, Landroidx/lifecycle/FlowLiveDataConversions$asFlow$1$1;->$observer:Landroidx/lifecycle/Observer;
 
     invoke-virtual {p1, p0}, Landroidx/lifecycle/LiveData;->observeForever(Landroidx/lifecycle/Observer;)V
 
-    .line 112
+    .line 109
     sget-object p0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
 
     return-object p0
 
-    .line 110
+    .line 107
     :cond_0
     new-instance p0, Ljava/lang/IllegalStateException;
 

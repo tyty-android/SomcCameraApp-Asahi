@@ -24,7 +24,7 @@
     .line 0
     check-cast p1, Lcom/google/android/material/color/utilities/DynamicScheme;
 
-    invoke-static {p1}, Lcom/google/android/material/color/utilities/MaterialDynamicColors;->lambda$static$135(Lcom/google/android/material/color/utilities/DynamicScheme;)Ljava/lang/Double;
+    invoke-static {p1}, Lcom/google/android/material/color/utilities/MaterialDynamicColors;->lambda$onTertiaryFixed$137(Lcom/google/android/material/color/utilities/DynamicScheme;)Lcom/google/android/material/color/utilities/TonalPalette;
 
     move-result-object p0
 

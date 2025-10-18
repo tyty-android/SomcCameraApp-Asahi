@@ -21,7 +21,7 @@
 .method constructor <init>()V
     .locals 0
 
-    .line 2844
+    .line 2933
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -42,10 +42,8 @@
         }
     .end annotation
 
-    .line 2848
-    invoke-static {}, Ljp/co/sony/mc/camera/configuration/parameters/BasicModeFocusDisplay;->getDefaultValue()Ljp/co/sony/mc/camera/configuration/parameters/BasicModeFocusDisplay;
-
-    move-result-object p0
+    .line 2937
+    sget-object p0, Ljp/co/sony/mc/camera/configuration/parameters/AwbPriority;->STANDARD:Ljp/co/sony/mc/camera/configuration/parameters/AwbPriority;
 
     return-object p0
 .end method

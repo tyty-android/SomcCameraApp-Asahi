@@ -41,12 +41,12 @@
 
     const v0, 0x7f0c00b8
 
-    const v1, 0x7f09010e
+    const v1, 0x7f09010a
 
-    .line 245
+    .line 289
     invoke-direct {p0, p1, v0, v1, p2}, Landroid/widget/ArrayAdapter;-><init>(Landroid/content/Context;IILjava/util/List;)V
 
-    .line 246
+    .line 290
     iput p3, p0, Ljp/co/sony/mc/camera/view/setting/fragment/CameraSettingsDetailFragment$ValueArrayAdapter;->mChoiceMode:I
 
     return-void
@@ -61,7 +61,7 @@
 
     if-nez p2, :cond_0
 
-    .line 254
+    .line 298
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/view/setting/fragment/CameraSettingsDetailFragment$ValueArrayAdapter;->getContext()Landroid/content/Context;
 
     move-result-object p2
@@ -72,12 +72,12 @@
 
     const v1, 0x7f0c00b8
 
-    .line 255
+    .line 299
     invoke-virtual {p2, v1, p3, v0}, Landroid/view/LayoutInflater;->inflate(ILandroid/view/ViewGroup;Z)Landroid/view/View;
 
     move-result-object p2
 
-    .line 258
+    .line 302
     :cond_0
     invoke-virtual {p0, p1}, Ljp/co/sony/mc/camera/view/setting/fragment/CameraSettingsDetailFragment$ValueArrayAdapter;->getItem(I)Ljava/lang/Object;
 
@@ -85,49 +85,49 @@
 
     check-cast p1, Ljp/co/sony/mc/camera/view/setting/settingitem/CameraSettingItem$CameraSettingValueItem;
 
+    const/4 p3, 0x1
+
     if-nez p1, :cond_1
 
-    .line 261
-    const-string p0, "lost CameraSettingValueItem"
+    .line 305
+    new-array p0, p3, [Ljava/lang/String;
 
-    filled-new-array {p0}, [Ljava/lang/String;
+    const-string p1, "lost CameraSettingValueItem"
 
-    move-result-object p0
+    aput-object p1, p0, v0
 
     invoke-static {p0}, Ljp/co/sony/mc/camera/util/CamLog;->w([Ljava/lang/String;)V
 
     return-object p2
 
-    .line 264
+    .line 308
     :cond_1
     invoke-virtual {p1}, Ljp/co/sony/mc/camera/view/setting/settingitem/CameraSettingItem$CameraSettingValueItem;->getAppearance()Ljp/co/sony/mc/camera/setting/SettingAppearance;
 
-    move-result-object p3
+    move-result-object v1
 
-    sget-object v1, Ljp/co/sony/mc/camera/setting/SettingAppearance;->ENABLED:Ljp/co/sony/mc/camera/setting/SettingAppearance;
+    sget-object v2, Ljp/co/sony/mc/camera/setting/SettingAppearance;->ENABLED:Ljp/co/sony/mc/camera/setting/SettingAppearance;
 
-    const/4 v2, 0x1
+    if-ne v1, v2, :cond_2
 
-    if-ne p3, v1, :cond_2
-
-    move p3, v2
+    move v1, p3
 
     goto :goto_0
 
     :cond_2
-    move p3, v0
+    move v1, v0
 
     :goto_0
-    const v1, 0x1010219
+    const v2, 0x1010219
 
     const v3, 0x101021a
 
-    .line 267
-    filled-new-array {v1, v3}, [I
+    .line 311
+    filled-new-array {v2, v3}, [I
 
-    move-result-object v1
+    move-result-object v2
 
-    .line 271
+    .line 315
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/view/setting/fragment/CameraSettingsDetailFragment$ValueArrayAdapter;->getContext()Landroid/content/Context;
 
     move-result-object v3
@@ -136,48 +136,48 @@
 
     move-result-object v3
 
-    invoke-virtual {v3, v1}, Landroid/content/res/Resources$Theme;->obtainStyledAttributes([I)Landroid/content/res/TypedArray;
+    invoke-virtual {v3, v2}, Landroid/content/res/Resources$Theme;->obtainStyledAttributes([I)Landroid/content/res/TypedArray;
 
-    move-result-object v1
+    move-result-object v2
 
-    .line 273
+    .line 317
     iget v3, p0, Ljp/co/sony/mc/camera/view/setting/fragment/CameraSettingsDetailFragment$ValueArrayAdapter;->mChoiceMode:I
 
     const/4 v4, 0x2
 
     if-ne v3, v4, :cond_3
 
-    .line 274
-    invoke-virtual {v1, v2}, Landroid/content/res/TypedArray;->getDrawable(I)Landroid/graphics/drawable/Drawable;
+    .line 318
+    invoke-virtual {v2, p3}, Landroid/content/res/TypedArray;->getDrawable(I)Landroid/graphics/drawable/Drawable;
 
-    move-result-object v1
+    move-result-object p3
 
     goto :goto_1
 
-    .line 276
+    .line 320
     :cond_3
-    invoke-virtual {v1, v0}, Landroid/content/res/TypedArray;->getDrawable(I)Landroid/graphics/drawable/Drawable;
+    invoke-virtual {v2, v0}, Landroid/content/res/TypedArray;->getDrawable(I)Landroid/graphics/drawable/Drawable;
 
-    move-result-object v1
+    move-result-object p3
 
     :goto_1
-    if-eqz v1, :cond_4
+    if-eqz p3, :cond_4
 
-    .line 279
-    invoke-virtual {v1}, Landroid/graphics/drawable/Drawable;->getMinimumWidth()I
+    .line 323
+    invoke-virtual {p3}, Landroid/graphics/drawable/Drawable;->getMinimumWidth()I
 
     move-result v2
 
-    invoke-virtual {v1}, Landroid/graphics/drawable/Drawable;->getMinimumHeight()I
+    invoke-virtual {p3}, Landroid/graphics/drawable/Drawable;->getMinimumHeight()I
 
     move-result v3
 
-    invoke-virtual {v1, v0, v0, v2, v3}, Landroid/graphics/drawable/Drawable;->setBounds(IIII)V
+    invoke-virtual {p3, v0, v0, v2, v3}, Landroid/graphics/drawable/Drawable;->setBounds(IIII)V
 
     :cond_4
-    const v2, 0x7f09010e
+    const v2, 0x7f09010a
 
-    .line 281
+    .line 325
     invoke-virtual {p2, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
     move-result-object v2
@@ -186,77 +186,77 @@
 
     const/4 v3, 0x0
 
-    .line 282
-    invoke-virtual {v2, v1, v3, v3, v3}, Landroid/widget/CheckedTextView;->setCompoundDrawablesRelative(Landroid/graphics/drawable/Drawable;Landroid/graphics/drawable/Drawable;Landroid/graphics/drawable/Drawable;Landroid/graphics/drawable/Drawable;)V
+    .line 326
+    invoke-virtual {v2, p3, v3, v3, v3}, Landroid/widget/CheckedTextView;->setCompoundDrawablesRelative(Landroid/graphics/drawable/Drawable;Landroid/graphics/drawable/Drawable;Landroid/graphics/drawable/Drawable;Landroid/graphics/drawable/Drawable;)V
 
-    .line 283
+    .line 327
     invoke-virtual {p1}, Ljp/co/sony/mc/camera/view/setting/settingitem/CameraSettingItem$CameraSettingValueItem;->isSelected()Z
 
-    move-result v1
+    move-result p3
 
-    invoke-virtual {v2, v1}, Landroid/widget/CheckedTextView;->setChecked(Z)V
+    invoke-virtual {v2, p3}, Landroid/widget/CheckedTextView;->setChecked(Z)V
 
-    .line 284
-    invoke-virtual {v2, p3}, Landroid/widget/CheckedTextView;->setEnabled(Z)V
+    .line 328
+    invoke-virtual {v2, v1}, Landroid/widget/CheckedTextView;->setEnabled(Z)V
 
-    const v1, 0x7f0904bc
+    const p3, 0x7f0904a9
 
-    .line 287
-    invoke-virtual {p2, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
+    .line 331
+    invoke-virtual {p2, p3}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
-    move-result-object v1
+    move-result-object p3
 
-    check-cast v1, Landroid/widget/TextView;
+    check-cast p3, Landroid/widget/TextView;
 
-    .line 288
-    invoke-virtual {p1}, Ljp/co/sony/mc/camera/view/setting/settingitem/CameraSettingItem$CameraSettingValueItem;->getNameResId()I
+    .line 332
+    invoke-virtual {p1}, Ljp/co/sony/mc/camera/view/setting/settingitem/CameraSettingItem$CameraSettingValueItem;->getNameString()Ljava/lang/String;
 
-    move-result v2
+    move-result-object v2
 
-    invoke-virtual {v1, v2}, Landroid/widget/TextView;->setText(I)V
+    invoke-virtual {p3, v2}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
-    .line 289
-    invoke-virtual {v1, p3}, Landroid/widget/TextView;->setEnabled(Z)V
+    .line 333
+    invoke-virtual {p3, v1}, Landroid/widget/TextView;->setEnabled(Z)V
 
-    const v1, 0x7f090484
+    const p3, 0x7f090472
 
-    .line 292
-    invoke-virtual {p2, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
+    .line 336
+    invoke-virtual {p2, p3}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
-    move-result-object v1
+    move-result-object p3
 
-    check-cast v1, Landroid/widget/TextView;
+    check-cast p3, Landroid/widget/TextView;
 
-    .line 293
+    .line 337
     invoke-virtual {p1}, Ljp/co/sony/mc/camera/view/setting/settingitem/CameraSettingItem$CameraSettingValueItem;->getSubDescriptionText()Ljava/lang/String;
 
     move-result-object v2
 
-    .line 294
+    .line 338
     invoke-static {v2}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
     move-result v3
 
     if-nez v3, :cond_5
 
-    .line 295
-    invoke-virtual {v1, v0}, Landroid/widget/TextView;->setVisibility(I)V
+    .line 339
+    invoke-virtual {p3, v0}, Landroid/widget/TextView;->setVisibility(I)V
 
-    .line 296
-    invoke-virtual {v1, v2}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
+    .line 340
+    invoke-virtual {p3, v2}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
-    .line 297
-    invoke-virtual {v1, p3}, Landroid/widget/TextView;->setEnabled(Z)V
+    .line 341
+    invoke-virtual {p3, v1}, Landroid/widget/TextView;->setEnabled(Z)V
 
     goto :goto_2
 
     :cond_5
-    const/16 p3, 0x8
+    const/16 v0, 0x8
 
-    .line 299
-    invoke-virtual {v1, p3}, Landroid/widget/TextView;->setVisibility(I)V
+    .line 343
+    invoke-virtual {p3, v0}, Landroid/widget/TextView;->setVisibility(I)V
 
-    .line 303
+    .line 347
     :goto_2
     invoke-virtual {p1}, Ljp/co/sony/mc/camera/view/setting/settingitem/CameraSettingItem$CameraSettingValueItem;->isSelected()Z
 
@@ -264,7 +264,7 @@
 
     if-eqz p3, :cond_6
 
-    .line 304
+    .line 348
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/view/setting/fragment/CameraSettingsDetailFragment$ValueArrayAdapter;->getContext()Landroid/content/Context;
 
     move-result-object p3
@@ -273,7 +273,7 @@
 
     move-result-object p3
 
-    const v0, 0x7f110086
+    const v0, 0x7f11007f
 
     invoke-virtual {p3, v0}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -281,13 +281,13 @@
 
     goto :goto_3
 
-    .line 306
+    .line 350
     :cond_6
     iget p3, p0, Ljp/co/sony/mc/camera/view/setting/fragment/CameraSettingsDetailFragment$ValueArrayAdapter;->mChoiceMode:I
 
     if-ne p3, v4, :cond_7
 
-    .line 307
+    .line 351
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/view/setting/fragment/CameraSettingsDetailFragment$ValueArrayAdapter;->getContext()Landroid/content/Context;
 
     move-result-object p3
@@ -296,7 +296,7 @@
 
     move-result-object p3
 
-    const v0, 0x7f110087
+    const v0, 0x7f110080
 
     invoke-virtual {p3, v0}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -304,17 +304,17 @@
 
     goto :goto_3
 
-    .line 306
+    .line 350
     :cond_7
     const-string p3, ""
 
-    .line 310
+    .line 354
     :goto_3
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
 
-    .line 311
+    .line 355
     invoke-virtual {v0, p3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object p3
@@ -325,7 +325,7 @@
 
     move-result-object p3
 
-    .line 312
+    .line 356
     invoke-virtual {p1}, Ljp/co/sony/mc/camera/view/setting/settingitem/CameraSettingItem$CameraSettingValueItem;->getAdditionalTextForAccessibility()Ljava/lang/String;
 
     move-result-object v0
@@ -334,10 +334,10 @@
 
     move-result-object p3
 
-    .line 310
+    .line 354
     invoke-virtual {p2, p3}, Landroid/view/View;->setContentDescription(Ljava/lang/CharSequence;)V
 
-    .line 315
+    .line 359
     invoke-virtual {p1}, Ljp/co/sony/mc/camera/view/setting/settingitem/CameraSettingItem$CameraSettingValueItem;->getItemType()Ljp/co/sony/mc/camera/view/setting/settingitem/CameraSettingItem$CameraSettingValueItem$ItemType;
 
     move-result-object p1
@@ -346,7 +346,7 @@
 
     if-ne p1, p3, :cond_8
 
-    .line 317
+    .line 361
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/view/setting/fragment/CameraSettingsDetailFragment$ValueArrayAdapter;->getContext()Landroid/content/Context;
 
     move-result-object p0
@@ -355,7 +355,7 @@
 
     move-result-object p0
 
-    const p1, 0x7f07073c
+    const p1, 0x7f07079d
 
     invoke-virtual {p0, p1}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
@@ -365,7 +365,7 @@
 
     goto :goto_4
 
-    .line 320
+    .line 364
     :cond_8
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/view/setting/fragment/CameraSettingsDetailFragment$ValueArrayAdapter;->getContext()Landroid/content/Context;
 
@@ -375,14 +375,14 @@
 
     move-result-object p0
 
-    const p1, 0x7f07073e
+    const p1, 0x7f07079f
 
-    .line 321
+    .line 365
     invoke-virtual {p0, p1}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
     move-result p0
 
-    .line 320
+    .line 364
     invoke-virtual {p2, p0}, Landroid/view/View;->setMinimumHeight(I)V
 
     :goto_4
@@ -400,7 +400,7 @@
 .method public isEnabled(I)Z
     .locals 1
 
-    .line 335
+    .line 379
     invoke-virtual {p0, p1}, Ljp/co/sony/mc/camera/view/setting/fragment/CameraSettingsDetailFragment$ValueArrayAdapter;->getItem(I)Ljava/lang/Object;
 
     move-result-object p0
@@ -409,7 +409,7 @@
 
     if-eqz p0, :cond_1
 
-    .line 337
+    .line 381
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/view/setting/settingitem/CameraSettingItem$CameraSettingValueItem;->getAppearance()Ljp/co/sony/mc/camera/setting/SettingAppearance;
 
     move-result-object p1
@@ -418,7 +418,7 @@
 
     if-eq p1, v0, :cond_0
 
-    .line 338
+    .line 382
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/view/setting/settingitem/CameraSettingItem$CameraSettingValueItem;->getAppearance()Ljp/co/sony/mc/camera/setting/SettingAppearance;
 
     move-result-object p0

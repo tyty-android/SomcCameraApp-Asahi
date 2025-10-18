@@ -60,10 +60,10 @@
 .method public constructor <init>()V
     .locals 1
 
-    .line 26
+    .line 25
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 27
+    .line 26
     new-instance v0, Ljava/util/LinkedHashMap;
 
     invoke-direct {v0}, Ljava/util/LinkedHashMap;-><init>()V
@@ -102,7 +102,7 @@
         }
     .end annotation
 
-    .line 27
+    .line 26
     iget-object p0, p0, Landroidx/lifecycle/viewmodel/CreationExtras;->map:Ljava/util/Map;
 
     return-object p0

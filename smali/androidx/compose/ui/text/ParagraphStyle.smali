@@ -6,7 +6,7 @@
 # annotations
 .annotation runtime Lkotlin/Metadata;
     d1 = {
-        "\u0000^\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0002\u0008&\n\u0002\u0010\u000b\n\u0002\u0008\u0002\n\u0002\u0010\u0008\n\u0002\u0008\u0003\n\u0002\u0010\u000e\n\u0000\u0008\u0007\u0018\u00002\u00020\u0001B8\u0008\u0017\u0012\n\u0008\u0002\u0010\u0002\u001a\u0004\u0018\u00010\u0003\u0012\n\u0008\u0002\u0010\u0004\u001a\u0004\u0018\u00010\u0005\u0012\u0008\u0008\u0002\u0010\u0006\u001a\u00020\u0007\u0012\n\u0008\u0002\u0010\u0008\u001a\u0004\u0018\u00010\t\u00f8\u0001\u0000\u00a2\u0006\u0002\u0010\nBP\u0008\u0017\u0012\n\u0008\u0002\u0010\u0002\u001a\u0004\u0018\u00010\u0003\u0012\n\u0008\u0002\u0010\u0004\u001a\u0004\u0018\u00010\u0005\u0012\u0008\u0008\u0002\u0010\u0006\u001a\u00020\u0007\u0012\n\u0008\u0002\u0010\u0008\u001a\u0004\u0018\u00010\t\u0012\n\u0008\u0002\u0010\u000b\u001a\u0004\u0018\u00010\u000c\u0012\n\u0008\u0002\u0010\r\u001a\u0004\u0018\u00010\u000e\u00f8\u0001\u0000\u00a2\u0006\u0002\u0010\u000fBh\u0008\u0017\u0012\n\u0008\u0002\u0010\u0002\u001a\u0004\u0018\u00010\u0003\u0012\n\u0008\u0002\u0010\u0004\u001a\u0004\u0018\u00010\u0005\u0012\u0008\u0008\u0002\u0010\u0006\u001a\u00020\u0007\u0012\n\u0008\u0002\u0010\u0008\u001a\u0004\u0018\u00010\t\u0012\n\u0008\u0002\u0010\u000b\u001a\u0004\u0018\u00010\u000c\u0012\n\u0008\u0002\u0010\r\u001a\u0004\u0018\u00010\u000e\u0012\n\u0008\u0002\u0010\u0010\u001a\u0004\u0018\u00010\u0011\u0012\n\u0008\u0002\u0010\u0012\u001a\u0004\u0018\u00010\u0013\u00f8\u0001\u0000\u00a2\u0006\u0002\u0010\u0014Br\u0012\n\u0008\u0002\u0010\u0002\u001a\u0004\u0018\u00010\u0003\u0012\n\u0008\u0002\u0010\u0004\u001a\u0004\u0018\u00010\u0005\u0012\u0008\u0008\u0002\u0010\u0006\u001a\u00020\u0007\u0012\n\u0008\u0002\u0010\u0008\u001a\u0004\u0018\u00010\t\u0012\n\u0008\u0002\u0010\u000b\u001a\u0004\u0018\u00010\u000c\u0012\n\u0008\u0002\u0010\r\u001a\u0004\u0018\u00010\u000e\u0012\n\u0008\u0002\u0010\u0010\u001a\u0004\u0018\u00010\u0011\u0012\n\u0008\u0002\u0010\u0012\u001a\u0004\u0018\u00010\u0013\u0012\n\u0008\u0002\u0010\u0015\u001a\u0004\u0018\u00010\u0016\u00f8\u0001\u0000\u00a2\u0006\u0002\u0010\u0017JC\u00103\u001a\u00020\u00002\n\u0008\u0002\u0010\u0002\u001a\u0004\u0018\u00010\u00032\n\u0008\u0002\u0010\u0004\u001a\u0004\u0018\u00010\u00052\u0008\u0008\u0002\u0010\u0006\u001a\u00020\u00072\n\u0008\u0002\u0010\u0008\u001a\u0004\u0018\u00010\tH\u0007\u00f8\u0001\u0001\u00f8\u0001\u0000\u00a2\u0006\u0004\u00084\u00105J[\u00103\u001a\u00020\u00002\n\u0008\u0002\u0010\u0002\u001a\u0004\u0018\u00010\u00032\n\u0008\u0002\u0010\u0004\u001a\u0004\u0018\u00010\u00052\u0008\u0008\u0002\u0010\u0006\u001a\u00020\u00072\n\u0008\u0002\u0010\u0008\u001a\u0004\u0018\u00010\t2\n\u0008\u0002\u0010\u000b\u001a\u0004\u0018\u00010\u000c2\n\u0008\u0002\u0010\r\u001a\u0004\u0018\u00010\u000eH\u0007\u00f8\u0001\u0001\u00f8\u0001\u0000\u00a2\u0006\u0004\u00086\u00107Js\u00103\u001a\u00020\u00002\n\u0008\u0002\u0010\u0002\u001a\u0004\u0018\u00010\u00032\n\u0008\u0002\u0010\u0004\u001a\u0004\u0018\u00010\u00052\u0008\u0008\u0002\u0010\u0006\u001a\u00020\u00072\n\u0008\u0002\u0010\u0008\u001a\u0004\u0018\u00010\t2\n\u0008\u0002\u0010\u000b\u001a\u0004\u0018\u00010\u000c2\n\u0008\u0002\u0010\r\u001a\u0004\u0018\u00010\u000e2\n\u0008\u0002\u0010\u0010\u001a\u0004\u0018\u00010\u00112\n\u0008\u0002\u0010\u0012\u001a\u0004\u0018\u00010\u0013H\u0007\u00f8\u0001\u0001\u00f8\u0001\u0000\u00a2\u0006\u0004\u00088\u00109J}\u00103\u001a\u00020\u00002\n\u0008\u0002\u0010\u0002\u001a\u0004\u0018\u00010\u00032\n\u0008\u0002\u0010\u0004\u001a\u0004\u0018\u00010\u00052\u0008\u0008\u0002\u0010\u0006\u001a\u00020\u00072\n\u0008\u0002\u0010\u0008\u001a\u0004\u0018\u00010\t2\n\u0008\u0002\u0010\u000b\u001a\u0004\u0018\u00010\u000c2\n\u0008\u0002\u0010\r\u001a\u0004\u0018\u00010\u000e2\n\u0008\u0002\u0010\u0010\u001a\u0004\u0018\u00010\u00112\n\u0008\u0002\u0010\u0012\u001a\u0004\u0018\u00010\u00132\n\u0008\u0002\u0010\u0015\u001a\u0004\u0018\u00010\u0016\u00f8\u0001\u0001\u00f8\u0001\u0000\u00a2\u0006\u0004\u0008:\u0010;J\u0013\u0010<\u001a\u00020=2\u0008\u0010>\u001a\u0004\u0018\u00010\u0001H\u0096\u0002J\u0008\u0010?\u001a\u00020@H\u0016J\u0014\u0010A\u001a\u00020\u00002\n\u0008\u0002\u0010>\u001a\u0004\u0018\u00010\u0000H\u0007J\u0011\u0010B\u001a\u00020\u00002\u0006\u0010>\u001a\u00020\u0000H\u0087\u0002J\u0008\u0010C\u001a\u00020DH\u0016R\u001c\u0010\u0012\u001a\u0004\u0018\u00010\u0013\u00f8\u0001\u0000\u00f8\u0001\u0001\u00f8\u0001\u0002\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\u0018\u0010\u0019R\u001f\u0010\u001a\u001a\u00020\u0013X\u0080\u0004\u00f8\u0001\u0000\u00f8\u0001\u0001\u00f8\u0001\u0002\u00a2\u0006\n\n\u0002\u0010\u001d\u001a\u0004\u0008\u001b\u0010\u001cR\u001c\u0010\u0010\u001a\u0004\u0018\u00010\u0011\u00f8\u0001\u0000\u00f8\u0001\u0001\u00f8\u0001\u0002\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\u001e\u0010\u001fR\u001f\u0010 \u001a\u00020\u0011X\u0080\u0004\u00f8\u0001\u0000\u00f8\u0001\u0001\u00f8\u0001\u0002\u00a2\u0006\n\n\u0002\u0010\u001d\u001a\u0004\u0008!\u0010\u001cR\u001c\u0010\u0006\u001a\u00020\u0007\u00f8\u0001\u0000\u00f8\u0001\u0001\u00f8\u0001\u0002\u00a2\u0006\n\n\u0002\u0010$\u001a\u0004\u0008\"\u0010#R\u0013\u0010\r\u001a\u0004\u0018\u00010\u000e\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008%\u0010&R\u0013\u0010\u000b\u001a\u0004\u0018\u00010\u000c\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\'\u0010(R\u001c\u0010\u0002\u001a\u0004\u0018\u00010\u0003\u00f8\u0001\u0000\u00f8\u0001\u0001\u00f8\u0001\u0002\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008)\u0010*R\u001f\u0010+\u001a\u00020\u0003X\u0080\u0004\u00f8\u0001\u0000\u00f8\u0001\u0001\u00f8\u0001\u0002\u00a2\u0006\n\n\u0002\u0010\u001d\u001a\u0004\u0008,\u0010\u001cR\u001c\u0010\u0004\u001a\u0004\u0018\u00010\u0005\u00f8\u0001\u0000\u00f8\u0001\u0001\u00f8\u0001\u0002\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008-\u0010.R\u0013\u0010\u0008\u001a\u0004\u0018\u00010\t\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008/\u00100R\u0013\u0010\u0015\u001a\u0004\u0018\u00010\u0016\u00a2\u0006\u0008\n\u0000\u001a\u0004\u00081\u00102\u0082\u0002\u000f\n\u0002\u0008\u0019\n\u0005\u0008\u00a1\u001e0\u0001\n\u0002\u0008!\u00a8\u0006E"
+        "\u0000X\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u00083\n\u0002\u0010\u000b\n\u0002\u0008\u0002\n\u0002\u0010\u0008\n\u0002\u0008\u0003\n\u0002\u0010\u000e\n\u0000\u0008\u0007\u0018\u00002\u00020\u0001Bq\u0008\u0017\u0012\n\u0008\u0002\u0010\u0002\u001a\u0004\u0018\u00010\u0003\u0012\n\u0008\u0002\u0010\u0004\u001a\u0004\u0018\u00010\u0005\u0012\u0008\u0008\u0002\u0010\u0006\u001a\u00020\u0007\u0012\n\u0008\u0002\u0010\u0008\u001a\u0004\u0018\u00010\t\u0012\n\u0008\u0002\u0010\n\u001a\u0004\u0018\u00010\u000b\u0012\n\u0008\u0002\u0010\u000c\u001a\u0004\u0018\u00010\r\u0012\n\u0008\u0002\u0010\u000e\u001a\u0004\u0018\u00010\u000f\u0012\n\u0008\u0002\u0010\u0010\u001a\u0004\u0018\u00010\u0011\u0012\n\u0008\u0002\u0010\u0012\u001a\u0004\u0018\u00010\u0013\u00a2\u0006\u0002\u0010\u0014B5\u0008\u0017\u0012\n\u0008\u0002\u0010\u0002\u001a\u0004\u0018\u00010\u0003\u0012\n\u0008\u0002\u0010\u0004\u001a\u0004\u0018\u00010\u0005\u0012\u0008\u0008\u0002\u0010\u0006\u001a\u00020\u0007\u0012\n\u0008\u0002\u0010\u0008\u001a\u0004\u0018\u00010\t\u00a2\u0006\u0002\u0010\u0015BM\u0008\u0017\u0012\n\u0008\u0002\u0010\u0002\u001a\u0004\u0018\u00010\u0003\u0012\n\u0008\u0002\u0010\u0004\u001a\u0004\u0018\u00010\u0005\u0012\u0008\u0008\u0002\u0010\u0006\u001a\u00020\u0007\u0012\n\u0008\u0002\u0010\u0008\u001a\u0004\u0018\u00010\t\u0012\n\u0008\u0002\u0010\n\u001a\u0004\u0018\u00010\u000b\u0012\n\u0008\u0002\u0010\u000c\u001a\u0004\u0018\u00010\r\u00a2\u0006\u0002\u0010\u0016Be\u0008\u0017\u0012\n\u0008\u0002\u0010\u0002\u001a\u0004\u0018\u00010\u0003\u0012\n\u0008\u0002\u0010\u0004\u001a\u0004\u0018\u00010\u0005\u0012\u0008\u0008\u0002\u0010\u0006\u001a\u00020\u0007\u0012\n\u0008\u0002\u0010\u0008\u001a\u0004\u0018\u00010\t\u0012\n\u0008\u0002\u0010\n\u001a\u0004\u0018\u00010\u000b\u0012\n\u0008\u0002\u0010\u000c\u001a\u0004\u0018\u00010\r\u0012\n\u0008\u0002\u0010\u000e\u001a\u0004\u0018\u00010\u000f\u0012\n\u0008\u0002\u0010\u0010\u001a\u0004\u0018\u00010\u0011\u00a2\u0006\u0002\u0010\u0017Bg\u0012\u0008\u0008\u0002\u0010\u0002\u001a\u00020\u0003\u0012\u0008\u0008\u0002\u0010\u0004\u001a\u00020\u0005\u0012\u0008\u0008\u0002\u0010\u0006\u001a\u00020\u0007\u0012\n\u0008\u0002\u0010\u0008\u001a\u0004\u0018\u00010\t\u0012\n\u0008\u0002\u0010\n\u001a\u0004\u0018\u00010\u000b\u0012\n\u0008\u0002\u0010\u000c\u001a\u0004\u0018\u00010\r\u0012\u0008\u0008\u0002\u0010\u000e\u001a\u00020\u000f\u0012\u0008\u0008\u0002\u0010\u0010\u001a\u00020\u0011\u0012\n\u0008\u0002\u0010\u0012\u001a\u0004\u0018\u00010\u0013\u00a2\u0006\u0002\u0010\u0018Jr\u0010;\u001a\u00020\u00002\u0008\u0008\u0002\u0010\u0002\u001a\u00020\u00032\u0008\u0008\u0002\u0010\u0004\u001a\u00020\u00052\u0008\u0008\u0002\u0010\u0006\u001a\u00020\u00072\n\u0008\u0002\u0010\u0008\u001a\u0004\u0018\u00010\t2\n\u0008\u0002\u0010\n\u001a\u0004\u0018\u00010\u000b2\n\u0008\u0002\u0010\u000c\u001a\u0004\u0018\u00010\r2\u0008\u0008\u0002\u0010\u000e\u001a\u00020\u000f2\u0008\u0008\u0002\u0010\u0010\u001a\u00020\u00112\n\u0008\u0002\u0010\u0012\u001a\u0004\u0018\u00010\u0013\u00f8\u0001\u0000\u00a2\u0006\u0004\u0008<\u0010=J@\u0010;\u001a\u00020\u00002\n\u0008\u0002\u0010\u0002\u001a\u0004\u0018\u00010\u00032\n\u0008\u0002\u0010\u0004\u001a\u0004\u0018\u00010\u00052\u0008\u0008\u0002\u0010\u0006\u001a\u00020\u00072\n\u0008\u0002\u0010\u0008\u001a\u0004\u0018\u00010\tH\u0007\u00f8\u0001\u0000\u00a2\u0006\u0004\u0008>\u0010?JX\u0010;\u001a\u00020\u00002\n\u0008\u0002\u0010\u0002\u001a\u0004\u0018\u00010\u00032\n\u0008\u0002\u0010\u0004\u001a\u0004\u0018\u00010\u00052\u0008\u0008\u0002\u0010\u0006\u001a\u00020\u00072\n\u0008\u0002\u0010\u0008\u001a\u0004\u0018\u00010\t2\n\u0008\u0002\u0010\n\u001a\u0004\u0018\u00010\u000b2\n\u0008\u0002\u0010\u000c\u001a\u0004\u0018\u00010\rH\u0007\u00f8\u0001\u0000\u00a2\u0006\u0004\u0008@\u0010AJp\u0010;\u001a\u00020\u00002\n\u0008\u0002\u0010\u0002\u001a\u0004\u0018\u00010\u00032\n\u0008\u0002\u0010\u0004\u001a\u0004\u0018\u00010\u00052\u0008\u0008\u0002\u0010\u0006\u001a\u00020\u00072\n\u0008\u0002\u0010\u0008\u001a\u0004\u0018\u00010\t2\n\u0008\u0002\u0010\n\u001a\u0004\u0018\u00010\u000b2\n\u0008\u0002\u0010\u000c\u001a\u0004\u0018\u00010\r2\n\u0008\u0002\u0010\u000e\u001a\u0004\u0018\u00010\u000f2\n\u0008\u0002\u0010\u0010\u001a\u0004\u0018\u00010\u0011H\u0007\u00f8\u0001\u0000\u00a2\u0006\u0004\u0008B\u0010CJ|\u0010;\u001a\u00020\u00002\n\u0008\u0002\u0010\u0002\u001a\u0004\u0018\u00010\u00032\n\u0008\u0002\u0010\u0004\u001a\u0004\u0018\u00010\u00052\u0008\u0008\u0002\u0010\u0006\u001a\u00020\u00072\n\u0008\u0002\u0010\u0008\u001a\u0004\u0018\u00010\t2\n\u0008\u0002\u0010\n\u001a\u0004\u0018\u00010\u000b2\n\u0008\u0002\u0010\u000c\u001a\u0004\u0018\u00010\r2\n\u0008\u0002\u0010\u000e\u001a\u0004\u0018\u00010\u000f2\n\u0008\u0002\u0010\u0010\u001a\u0004\u0018\u00010\u00112\n\u0008\u0002\u0010\u0012\u001a\u0004\u0018\u00010\u0013H\u0007\u00f8\u0001\u0000\u00a2\u0006\u0004\u0008D\u0010EJ\u0013\u0010F\u001a\u00020G2\u0008\u0010H\u001a\u0004\u0018\u00010\u0001H\u0096\u0002J\u0008\u0010I\u001a\u00020JH\u0016J\u0014\u0010K\u001a\u00020\u00002\n\u0008\u0002\u0010H\u001a\u0004\u0018\u00010\u0000H\u0007J\u0011\u0010L\u001a\u00020\u00002\u0006\u0010H\u001a\u00020\u0000H\u0087\u0002J\u0008\u0010M\u001a\u00020NH\u0016R\"\u0010\u0019\u001a\u0004\u0018\u00010\u00118GX\u0087\u0004\u00f8\u0001\u0000\u00f8\u0001\u0001\u00a2\u0006\u000c\u0012\u0004\u0008\u001a\u0010\u001b\u001a\u0004\u0008\u001c\u0010\u001dR\"\u0010\u001e\u001a\u0004\u0018\u00010\u000f8GX\u0087\u0004\u00f8\u0001\u0000\u00f8\u0001\u0001\u00a2\u0006\u000c\u0012\u0004\u0008\u001f\u0010\u001b\u001a\u0004\u0008 \u0010!R\"\u0010\"\u001a\u0004\u0018\u00010\u00038GX\u0087\u0004\u00f8\u0001\u0000\u00f8\u0001\u0001\u00a2\u0006\u000c\u0012\u0004\u0008#\u0010\u001b\u001a\u0004\u0008$\u0010%R\"\u0010&\u001a\u0004\u0018\u00010\u00058GX\u0087\u0004\u00f8\u0001\u0000\u00f8\u0001\u0001\u00a2\u0006\u000c\u0012\u0004\u0008\'\u0010\u001b\u001a\u0004\u0008(\u0010)R\u0019\u0010\u0010\u001a\u00020\u0011\u00f8\u0001\u0000\u00f8\u0001\u0001\u00a2\u0006\n\n\u0002\u0010,\u001a\u0004\u0008*\u0010+R\u0019\u0010\u000e\u001a\u00020\u000f\u00f8\u0001\u0000\u00f8\u0001\u0001\u00a2\u0006\n\n\u0002\u0010,\u001a\u0004\u0008-\u0010+R\u0019\u0010\u0006\u001a\u00020\u0007\u00f8\u0001\u0000\u00f8\u0001\u0001\u00a2\u0006\n\n\u0002\u00100\u001a\u0004\u0008.\u0010/R\u0013\u0010\u000c\u001a\u0004\u0018\u00010\r\u00a2\u0006\u0008\n\u0000\u001a\u0004\u00081\u00102R\u0013\u0010\n\u001a\u0004\u0018\u00010\u000b\u00a2\u0006\u0008\n\u0000\u001a\u0004\u00083\u00104R\u0019\u0010\u0002\u001a\u00020\u0003\u00f8\u0001\u0000\u00f8\u0001\u0001\u00a2\u0006\n\n\u0002\u0010,\u001a\u0004\u00085\u0010+R\u0019\u0010\u0004\u001a\u00020\u0005\u00f8\u0001\u0000\u00f8\u0001\u0001\u00a2\u0006\n\n\u0002\u0010,\u001a\u0004\u00086\u0010+R\u0013\u0010\u0008\u001a\u0004\u0018\u00010\t\u00a2\u0006\u0008\n\u0000\u001a\u0004\u00087\u00108R\u0013\u0010\u0012\u001a\u0004\u0018\u00010\u0013\u00a2\u0006\u0008\n\u0000\u001a\u0004\u00089\u0010:\u0082\u0002\u000b\n\u0005\u0008\u00a1\u001e0\u0001\n\u0002\u0008!\u00a8\u0006O"
     }
     d2 = {
         "Landroidx/compose/ui/text/ParagraphStyle;",
@@ -19,30 +19,42 @@
         "Landroidx/compose/ui/unit/TextUnit;",
         "textIndent",
         "Landroidx/compose/ui/text/style/TextIndent;",
-        "(Landroidx/compose/ui/text/style/TextAlign;Landroidx/compose/ui/text/style/TextDirection;JLandroidx/compose/ui/text/style/TextIndent;Lkotlin/jvm/internal/DefaultConstructorMarker;)V",
         "platformStyle",
         "Landroidx/compose/ui/text/PlatformParagraphStyle;",
         "lineHeightStyle",
         "Landroidx/compose/ui/text/style/LineHeightStyle;",
-        "(Landroidx/compose/ui/text/style/TextAlign;Landroidx/compose/ui/text/style/TextDirection;JLandroidx/compose/ui/text/style/TextIndent;Landroidx/compose/ui/text/PlatformParagraphStyle;Landroidx/compose/ui/text/style/LineHeightStyle;Lkotlin/jvm/internal/DefaultConstructorMarker;)V",
         "lineBreak",
         "Landroidx/compose/ui/text/style/LineBreak;",
         "hyphens",
         "Landroidx/compose/ui/text/style/Hyphens;",
-        "(Landroidx/compose/ui/text/style/TextAlign;Landroidx/compose/ui/text/style/TextDirection;JLandroidx/compose/ui/text/style/TextIndent;Landroidx/compose/ui/text/PlatformParagraphStyle;Landroidx/compose/ui/text/style/LineHeightStyle;Landroidx/compose/ui/text/style/LineBreak;Landroidx/compose/ui/text/style/Hyphens;Lkotlin/jvm/internal/DefaultConstructorMarker;)V",
         "textMotion",
         "Landroidx/compose/ui/text/style/TextMotion;",
         "(Landroidx/compose/ui/text/style/TextAlign;Landroidx/compose/ui/text/style/TextDirection;JLandroidx/compose/ui/text/style/TextIndent;Landroidx/compose/ui/text/PlatformParagraphStyle;Landroidx/compose/ui/text/style/LineHeightStyle;Landroidx/compose/ui/text/style/LineBreak;Landroidx/compose/ui/text/style/Hyphens;Landroidx/compose/ui/text/style/TextMotion;Lkotlin/jvm/internal/DefaultConstructorMarker;)V",
+        "(Landroidx/compose/ui/text/style/TextAlign;Landroidx/compose/ui/text/style/TextDirection;JLandroidx/compose/ui/text/style/TextIndent;Lkotlin/jvm/internal/DefaultConstructorMarker;)V",
+        "(Landroidx/compose/ui/text/style/TextAlign;Landroidx/compose/ui/text/style/TextDirection;JLandroidx/compose/ui/text/style/TextIndent;Landroidx/compose/ui/text/PlatformParagraphStyle;Landroidx/compose/ui/text/style/LineHeightStyle;Lkotlin/jvm/internal/DefaultConstructorMarker;)V",
+        "(Landroidx/compose/ui/text/style/TextAlign;Landroidx/compose/ui/text/style/TextDirection;JLandroidx/compose/ui/text/style/TextIndent;Landroidx/compose/ui/text/PlatformParagraphStyle;Landroidx/compose/ui/text/style/LineHeightStyle;Landroidx/compose/ui/text/style/LineBreak;Landroidx/compose/ui/text/style/Hyphens;Lkotlin/jvm/internal/DefaultConstructorMarker;)V",
+        "(IIJLandroidx/compose/ui/text/style/TextIndent;Landroidx/compose/ui/text/PlatformParagraphStyle;Landroidx/compose/ui/text/style/LineHeightStyle;IILandroidx/compose/ui/text/style/TextMotion;Lkotlin/jvm/internal/DefaultConstructorMarker;)V",
+        "deprecated_boxing_hyphens",
+        "getHyphens-EaSxIns$annotations",
+        "()V",
         "getHyphens-EaSxIns",
         "()Landroidx/compose/ui/text/style/Hyphens;",
-        "hyphensOrDefault",
-        "getHyphensOrDefault-vmbZdU8$ui_text_release",
-        "()I",
-        "I",
+        "deprecated_boxing_lineBreak",
+        "getLineBreak-LgCVezo$annotations",
         "getLineBreak-LgCVezo",
         "()Landroidx/compose/ui/text/style/LineBreak;",
-        "lineBreakOrDefault",
-        "getLineBreakOrDefault-rAG3T2k$ui_text_release",
+        "deprecated_boxing_textAlign",
+        "getTextAlign-buA522U$annotations",
+        "getTextAlign-buA522U",
+        "()Landroidx/compose/ui/text/style/TextAlign;",
+        "deprecated_boxing_textDirection",
+        "getTextDirection-mmuk1to$annotations",
+        "getTextDirection-mmuk1to",
+        "()Landroidx/compose/ui/text/style/TextDirection;",
+        "getHyphens-vmbZdU8",
+        "()I",
+        "I",
+        "getLineBreak-rAG3T2k",
         "getLineHeight-XSAIIZE",
         "()J",
         "J",
@@ -50,17 +62,15 @@
         "()Landroidx/compose/ui/text/style/LineHeightStyle;",
         "getPlatformStyle",
         "()Landroidx/compose/ui/text/PlatformParagraphStyle;",
-        "getTextAlign-buA522U",
-        "()Landroidx/compose/ui/text/style/TextAlign;",
-        "textAlignOrDefault",
-        "getTextAlignOrDefault-e0LSkKk$ui_text_release",
-        "getTextDirection-mmuk1to",
-        "()Landroidx/compose/ui/text/style/TextDirection;",
+        "getTextAlign-e0LSkKk",
+        "getTextDirection-s_7X-co",
         "getTextIndent",
         "()Landroidx/compose/ui/text/style/TextIndent;",
         "getTextMotion",
         "()Landroidx/compose/ui/text/style/TextMotion;",
         "copy",
+        "copy-ykzQM6k",
+        "(IIJLandroidx/compose/ui/text/style/TextIndent;Landroidx/compose/ui/text/PlatformParagraphStyle;Landroidx/compose/ui/text/style/LineHeightStyle;IILandroidx/compose/ui/text/style/TextMotion;)Landroidx/compose/ui/text/ParagraphStyle;",
         "copy-Elsmlbk",
         "(Landroidx/compose/ui/text/style/TextAlign;Landroidx/compose/ui/text/style/TextDirection;JLandroidx/compose/ui/text/style/TextIndent;)Landroidx/compose/ui/text/ParagraphStyle;",
         "copy-xPh5V4g",
@@ -95,13 +105,9 @@
 
 
 # instance fields
-.field private final hyphens:Landroidx/compose/ui/text/style/Hyphens;
+.field private final hyphens:I
 
-.field private final hyphensOrDefault:I
-
-.field private final lineBreak:Landroidx/compose/ui/text/style/LineBreak;
-
-.field private final lineBreakOrDefault:I
+.field private final lineBreak:I
 
 .field private final lineHeight:J
 
@@ -109,11 +115,9 @@
 
 .field private final platformStyle:Landroidx/compose/ui/text/PlatformParagraphStyle;
 
-.field private final textAlign:Landroidx/compose/ui/text/style/TextAlign;
+.field private final textAlign:I
 
-.field private final textAlignOrDefault:I
-
-.field private final textDirection:Landroidx/compose/ui/text/style/TextDirection;
+.field private final textDirection:I
 
 .field private final textIndent:Landroidx/compose/ui/text/style/TextIndent;
 
@@ -127,33 +131,352 @@
     return-void
 .end method
 
-.method private constructor <init>(Landroidx/compose/ui/text/style/TextAlign;Landroidx/compose/ui/text/style/TextDirection;JLandroidx/compose/ui/text/style/TextIndent;)V
-    .locals 12
+.method private constructor <init>(IIJLandroidx/compose/ui/text/style/TextIndent;Landroidx/compose/ui/text/PlatformParagraphStyle;Landroidx/compose/ui/text/style/LineHeightStyle;IILandroidx/compose/ui/text/style/TextMotion;)V
+    .locals 0
 
-    const/4 v10, 0x0
+    .line 65
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 67
+    iput p1, p0, Landroidx/compose/ui/text/ParagraphStyle;->textAlign:I
+
+    .line 68
+    iput p2, p0, Landroidx/compose/ui/text/ParagraphStyle;->textDirection:I
+
+    .line 69
+    iput-wide p3, p0, Landroidx/compose/ui/text/ParagraphStyle;->lineHeight:J
+
+    .line 70
+    iput-object p5, p0, Landroidx/compose/ui/text/ParagraphStyle;->textIndent:Landroidx/compose/ui/text/style/TextIndent;
+
+    .line 71
+    iput-object p6, p0, Landroidx/compose/ui/text/ParagraphStyle;->platformStyle:Landroidx/compose/ui/text/PlatformParagraphStyle;
+
+    .line 72
+    iput-object p7, p0, Landroidx/compose/ui/text/ParagraphStyle;->lineHeightStyle:Landroidx/compose/ui/text/style/LineHeightStyle;
+
+    .line 73
+    iput p8, p0, Landroidx/compose/ui/text/ParagraphStyle;->lineBreak:I
+
+    .line 74
+    iput p9, p0, Landroidx/compose/ui/text/ParagraphStyle;->hyphens:I
+
+    .line 75
+    iput-object p10, p0, Landroidx/compose/ui/text/ParagraphStyle;->textMotion:Landroidx/compose/ui/text/style/TextMotion;
+
+    .line 199
+    sget-object p0, Landroidx/compose/ui/unit/TextUnit;->Companion:Landroidx/compose/ui/unit/TextUnit$Companion;
+
+    invoke-virtual {p0}, Landroidx/compose/ui/unit/TextUnit$Companion;->getUnspecified-XSAIIZE()J
+
+    move-result-wide p0
+
+    invoke-static {p3, p4, p0, p1}, Landroidx/compose/ui/unit/TextUnit;->equals-impl0(JJ)Z
+
+    move-result p0
+
+    if-nez p0, :cond_1
+
+    .line 201
+    invoke-static {p3, p4}, Landroidx/compose/ui/unit/TextUnit;->getValue-impl(J)F
+
+    move-result p0
+
+    const/4 p1, 0x0
+
+    cmpl-float p0, p0, p1
+
+    if-ltz p0, :cond_0
+
+    goto :goto_0
+
+    .line 202
+    :cond_0
+    new-instance p0, Ljava/lang/StringBuilder;
+
+    const-string p1, "lineHeight can\'t be negative ("
+
+    invoke-direct {p0, p1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+
+    invoke-static {p3, p4}, Landroidx/compose/ui/unit/TextUnit;->getValue-impl(J)F
+
+    move-result p1
+
+    invoke-virtual {p0, p1}, Ljava/lang/StringBuilder;->append(F)Ljava/lang/StringBuilder;
+
+    move-result-object p0
+
+    const/16 p1, 0x29
+
+    invoke-virtual {p0, p1}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
+
+    move-result-object p0
+
+    invoke-virtual {p0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object p0
+
+    .line 201
+    new-instance p1, Ljava/lang/IllegalStateException;
+
+    invoke-virtual {p0}, Ljava/lang/Object;->toString()Ljava/lang/String;
+
+    move-result-object p0
+
+    invoke-direct {p1, p0}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
+
+    throw p1
+
+    :cond_1
+    :goto_0
+    return-void
+.end method
+
+.method public synthetic constructor <init>(IIJLandroidx/compose/ui/text/style/TextIndent;Landroidx/compose/ui/text/PlatformParagraphStyle;Landroidx/compose/ui/text/style/LineHeightStyle;IILandroidx/compose/ui/text/style/TextMotion;ILkotlin/jvm/internal/DefaultConstructorMarker;)V
+    .locals 11
+
+    move/from16 v0, p11
+
+    and-int/lit8 v1, v0, 0x1
+
+    if-eqz v1, :cond_0
+
+    .line 67
+    sget-object v1, Landroidx/compose/ui/text/style/TextAlign;->Companion:Landroidx/compose/ui/text/style/TextAlign$Companion;
+
+    invoke-virtual {v1}, Landroidx/compose/ui/text/style/TextAlign$Companion;->getUnspecified-e0LSkKk()I
+
+    move-result v1
+
+    goto :goto_0
+
+    :cond_0
+    move v1, p1
+
+    :goto_0
+    and-int/lit8 v2, v0, 0x2
+
+    if-eqz v2, :cond_1
+
+    .line 68
+    sget-object v2, Landroidx/compose/ui/text/style/TextDirection;->Companion:Landroidx/compose/ui/text/style/TextDirection$Companion;
+
+    invoke-virtual {v2}, Landroidx/compose/ui/text/style/TextDirection$Companion;->getUnspecified-s_7X-co()I
+
+    move-result v2
+
+    goto :goto_1
+
+    :cond_1
+    move v2, p2
+
+    :goto_1
+    and-int/lit8 v3, v0, 0x4
+
+    if-eqz v3, :cond_2
+
+    .line 69
+    sget-object v3, Landroidx/compose/ui/unit/TextUnit;->Companion:Landroidx/compose/ui/unit/TextUnit$Companion;
+
+    invoke-virtual {v3}, Landroidx/compose/ui/unit/TextUnit$Companion;->getUnspecified-XSAIIZE()J
+
+    move-result-wide v3
+
+    goto :goto_2
+
+    :cond_2
+    move-wide v3, p3
+
+    :goto_2
+    and-int/lit8 v5, v0, 0x8
+
+    const/4 v6, 0x0
+
+    if-eqz v5, :cond_3
+
+    move-object v5, v6
+
+    goto :goto_3
+
+    :cond_3
+    move-object/from16 v5, p5
+
+    :goto_3
+    and-int/lit8 v7, v0, 0x10
+
+    if-eqz v7, :cond_4
+
+    move-object v7, v6
+
+    goto :goto_4
+
+    :cond_4
+    move-object/from16 v7, p6
+
+    :goto_4
+    and-int/lit8 v8, v0, 0x20
+
+    if-eqz v8, :cond_5
+
+    move-object v8, v6
+
+    goto :goto_5
+
+    :cond_5
+    move-object/from16 v8, p7
+
+    :goto_5
+    and-int/lit8 v9, v0, 0x40
+
+    if-eqz v9, :cond_6
+
+    .line 73
+    sget-object v9, Landroidx/compose/ui/text/style/LineBreak;->Companion:Landroidx/compose/ui/text/style/LineBreak$Companion;
+
+    invoke-virtual {v9}, Landroidx/compose/ui/text/style/LineBreak$Companion;->getUnspecified-rAG3T2k()I
+
+    move-result v9
+
+    goto :goto_6
+
+    :cond_6
+    move/from16 v9, p8
+
+    :goto_6
+    and-int/lit16 v10, v0, 0x80
+
+    if-eqz v10, :cond_7
+
+    .line 74
+    sget-object v10, Landroidx/compose/ui/text/style/Hyphens;->Companion:Landroidx/compose/ui/text/style/Hyphens$Companion;
+
+    invoke-virtual {v10}, Landroidx/compose/ui/text/style/Hyphens$Companion;->getUnspecified-vmbZdU8()I
+
+    move-result v10
+
+    goto :goto_7
+
+    :cond_7
+    move/from16 v10, p9
+
+    :goto_7
+    and-int/lit16 v0, v0, 0x100
+
+    if-eqz v0, :cond_8
+
+    goto :goto_8
+
+    :cond_8
+    move-object/from16 v6, p10
+
+    :goto_8
+    const/4 v0, 0x0
+
+    move p1, v1
+
+    move p2, v2
+
+    move-wide p3, v3
+
+    move-object/from16 p5, v5
+
+    move-object/from16 p6, v7
+
+    move-object/from16 p7, v8
+
+    move/from16 p8, v9
+
+    move/from16 p9, v10
+
+    move-object/from16 p10, v6
+
+    move-object/from16 p11, v0
+
+    .line 66
+    invoke-direct/range {p0 .. p11}, Landroidx/compose/ui/text/ParagraphStyle;-><init>(IIJLandroidx/compose/ui/text/style/TextIndent;Landroidx/compose/ui/text/PlatformParagraphStyle;Landroidx/compose/ui/text/style/LineHeightStyle;IILandroidx/compose/ui/text/style/TextMotion;Lkotlin/jvm/internal/DefaultConstructorMarker;)V
+
+    return-void
+.end method
+
+.method public synthetic constructor <init>(IIJLandroidx/compose/ui/text/style/TextIndent;Landroidx/compose/ui/text/PlatformParagraphStyle;Landroidx/compose/ui/text/style/LineHeightStyle;IILandroidx/compose/ui/text/style/TextMotion;Lkotlin/jvm/internal/DefaultConstructorMarker;)V
+    .locals 0
+
+    invoke-direct/range {p0 .. p10}, Landroidx/compose/ui/text/ParagraphStyle;-><init>(IIJLandroidx/compose/ui/text/style/TextIndent;Landroidx/compose/ui/text/PlatformParagraphStyle;Landroidx/compose/ui/text/style/LineHeightStyle;IILandroidx/compose/ui/text/style/TextMotion;)V
+
+    return-void
+.end method
+
+.method private constructor <init>(Landroidx/compose/ui/text/style/TextAlign;Landroidx/compose/ui/text/style/TextDirection;JLandroidx/compose/ui/text/style/TextIndent;)V
+    .locals 13
+
+    if-eqz p1, :cond_0
+
+    .line 135
+    invoke-virtual {p1}, Landroidx/compose/ui/text/style/TextAlign;->unbox-impl()I
+
+    move-result v0
+
+    goto :goto_0
+
+    :cond_0
+    sget-object v0, Landroidx/compose/ui/text/style/TextAlign;->Companion:Landroidx/compose/ui/text/style/TextAlign$Companion;
+
+    invoke-virtual {v0}, Landroidx/compose/ui/text/style/TextAlign$Companion;->getUnspecified-e0LSkKk()I
+
+    move-result v0
+
+    :goto_0
+    move v2, v0
+
+    if-eqz p2, :cond_1
+
+    .line 136
+    invoke-virtual {p2}, Landroidx/compose/ui/text/style/TextDirection;->unbox-impl()I
+
+    move-result v0
+
+    goto :goto_1
+
+    :cond_1
+    sget-object v0, Landroidx/compose/ui/text/style/TextDirection;->Companion:Landroidx/compose/ui/text/style/TextDirection$Companion;
+
+    invoke-virtual {v0}, Landroidx/compose/ui/text/style/TextDirection$Companion;->getUnspecified-s_7X-co()I
+
+    move-result v0
+
+    :goto_1
+    move v3, v0
+
+    .line 141
+    sget-object v0, Landroidx/compose/ui/text/style/LineBreak;->Companion:Landroidx/compose/ui/text/style/LineBreak$Companion;
+
+    invoke-virtual {v0}, Landroidx/compose/ui/text/style/LineBreak$Companion;->getUnspecified-rAG3T2k()I
+
+    move-result v9
+
+    .line 142
+    sget-object v0, Landroidx/compose/ui/text/style/Hyphens;->Companion:Landroidx/compose/ui/text/style/Hyphens$Companion;
+
+    invoke-virtual {v0}, Landroidx/compose/ui/text/style/Hyphens$Companion;->getUnspecified-vmbZdU8()I
+
+    move-result v10
 
     const/4 v11, 0x0
 
-    const/4 v6, 0x0
+    const/4 v12, 0x0
 
     const/4 v7, 0x0
 
     const/4 v8, 0x0
 
-    const/4 v9, 0x0
+    move-object v1, p0
 
-    move-object v0, p0
+    move-wide/from16 v4, p3
 
-    move-object v1, p1
+    move-object/from16 v6, p5
 
-    move-object v2, p2
-
-    move-wide v3, p3
-
-    move-object/from16 v5, p5
-
-    .line 95
-    invoke-direct/range {v0 .. v11}, Landroidx/compose/ui/text/ParagraphStyle;-><init>(Landroidx/compose/ui/text/style/TextAlign;Landroidx/compose/ui/text/style/TextDirection;JLandroidx/compose/ui/text/style/TextIndent;Landroidx/compose/ui/text/PlatformParagraphStyle;Landroidx/compose/ui/text/style/LineHeightStyle;Landroidx/compose/ui/text/style/LineBreak;Landroidx/compose/ui/text/style/Hyphens;Landroidx/compose/ui/text/style/TextMotion;Lkotlin/jvm/internal/DefaultConstructorMarker;)V
+    .line 134
+    invoke-direct/range {v1 .. v12}, Landroidx/compose/ui/text/ParagraphStyle;-><init>(IIJLandroidx/compose/ui/text/style/TextIndent;Landroidx/compose/ui/text/PlatformParagraphStyle;Landroidx/compose/ui/text/style/LineHeightStyle;IILandroidx/compose/ui/text/style/TextMotion;Lkotlin/jvm/internal/DefaultConstructorMarker;)V
 
     return-void
 .end method
@@ -181,7 +504,7 @@
 
     if-eqz p7, :cond_2
 
-    .line 93
+    .line 132
     sget-object p3, Landroidx/compose/ui/unit/TextUnit;->Companion:Landroidx/compose/ui/unit/TextUnit$Companion;
 
     invoke-virtual {p3}, Landroidx/compose/ui/unit/TextUnit$Companion;->getUnspecified-XSAIIZE()J
@@ -198,39 +521,83 @@
     :cond_3
     const/4 p6, 0x0
 
-    .line 90
+    .line 129
     invoke-direct/range {p0 .. p6}, Landroidx/compose/ui/text/ParagraphStyle;-><init>(Landroidx/compose/ui/text/style/TextAlign;Landroidx/compose/ui/text/style/TextDirection;JLandroidx/compose/ui/text/style/TextIndent;Lkotlin/jvm/internal/DefaultConstructorMarker;)V
 
     return-void
 .end method
 
 .method private constructor <init>(Landroidx/compose/ui/text/style/TextAlign;Landroidx/compose/ui/text/style/TextDirection;JLandroidx/compose/ui/text/style/TextIndent;Landroidx/compose/ui/text/PlatformParagraphStyle;Landroidx/compose/ui/text/style/LineHeightStyle;)V
-    .locals 12
+    .locals 13
 
-    const/4 v10, 0x0
+    if-eqz p1, :cond_0
+
+    .line 160
+    invoke-virtual {p1}, Landroidx/compose/ui/text/style/TextAlign;->unbox-impl()I
+
+    move-result v0
+
+    goto :goto_0
+
+    :cond_0
+    sget-object v0, Landroidx/compose/ui/text/style/TextAlign;->Companion:Landroidx/compose/ui/text/style/TextAlign$Companion;
+
+    invoke-virtual {v0}, Landroidx/compose/ui/text/style/TextAlign$Companion;->getUnspecified-e0LSkKk()I
+
+    move-result v0
+
+    :goto_0
+    move v2, v0
+
+    if-eqz p2, :cond_1
+
+    .line 161
+    invoke-virtual {p2}, Landroidx/compose/ui/text/style/TextDirection;->unbox-impl()I
+
+    move-result v0
+
+    goto :goto_1
+
+    :cond_1
+    sget-object v0, Landroidx/compose/ui/text/style/TextDirection;->Companion:Landroidx/compose/ui/text/style/TextDirection$Companion;
+
+    invoke-virtual {v0}, Landroidx/compose/ui/text/style/TextDirection$Companion;->getUnspecified-s_7X-co()I
+
+    move-result v0
+
+    :goto_1
+    move v3, v0
+
+    .line 166
+    sget-object v0, Landroidx/compose/ui/text/style/LineBreak;->Companion:Landroidx/compose/ui/text/style/LineBreak$Companion;
+
+    invoke-virtual {v0}, Landroidx/compose/ui/text/style/LineBreak$Companion;->getUnspecified-rAG3T2k()I
+
+    move-result v9
+
+    .line 167
+    sget-object v0, Landroidx/compose/ui/text/style/Hyphens;->Companion:Landroidx/compose/ui/text/style/Hyphens$Companion;
+
+    invoke-virtual {v0}, Landroidx/compose/ui/text/style/Hyphens$Companion;->getUnspecified-vmbZdU8()I
+
+    move-result v10
 
     const/4 v11, 0x0
 
-    const/4 v8, 0x0
+    const/4 v12, 0x0
 
-    const/4 v9, 0x0
+    move-object v1, p0
 
-    move-object v0, p0
+    move-wide/from16 v4, p3
 
-    move-object v1, p1
+    move-object/from16 v6, p5
 
-    move-object v2, p2
+    move-object/from16 v7, p6
 
-    move-wide v3, p3
+    move-object/from16 v8, p7
 
-    move-object/from16 v5, p5
-
-    move-object/from16 v6, p6
-
-    move-object/from16 v7, p7
-
-    .line 120
-    invoke-direct/range {v0 .. v11}, Landroidx/compose/ui/text/ParagraphStyle;-><init>(Landroidx/compose/ui/text/style/TextAlign;Landroidx/compose/ui/text/style/TextDirection;JLandroidx/compose/ui/text/style/TextIndent;Landroidx/compose/ui/text/PlatformParagraphStyle;Landroidx/compose/ui/text/style/LineHeightStyle;Landroidx/compose/ui/text/style/LineBreak;Landroidx/compose/ui/text/style/Hyphens;Landroidx/compose/ui/text/style/TextMotion;Lkotlin/jvm/internal/DefaultConstructorMarker;)V
+    .line 159
+    invoke-direct/range {v1 .. v12}, Landroidx/compose/ui/text/ParagraphStyle;-><init>(IIJLandroidx/compose/ui/text/style/TextIndent;Landroidx/compose/ui/text/PlatformParagraphStyle;Landroidx/compose/ui/text/style/LineHeightStyle;IILandroidx/compose/ui/text/style/TextMotion;Lkotlin/jvm/internal/DefaultConstructorMarker;)V
 
     return-void
 .end method
@@ -258,7 +625,7 @@
 
     if-eqz p9, :cond_2
 
-    .line 116
+    .line 155
     sget-object p3, Landroidx/compose/ui/unit/TextUnit;->Companion:Landroidx/compose/ui/unit/TextUnit$Companion;
 
     invoke-virtual {p3}, Landroidx/compose/ui/unit/TextUnit$Companion;->getUnspecified-XSAIIZE()J
@@ -289,39 +656,107 @@
     :cond_5
     const/4 p8, 0x0
 
-    .line 113
+    .line 152
     invoke-direct/range {p0 .. p8}, Landroidx/compose/ui/text/ParagraphStyle;-><init>(Landroidx/compose/ui/text/style/TextAlign;Landroidx/compose/ui/text/style/TextDirection;JLandroidx/compose/ui/text/style/TextIndent;Landroidx/compose/ui/text/PlatformParagraphStyle;Landroidx/compose/ui/text/style/LineHeightStyle;Lkotlin/jvm/internal/DefaultConstructorMarker;)V
 
     return-void
 .end method
 
 .method private constructor <init>(Landroidx/compose/ui/text/style/TextAlign;Landroidx/compose/ui/text/style/TextDirection;JLandroidx/compose/ui/text/style/TextIndent;Landroidx/compose/ui/text/PlatformParagraphStyle;Landroidx/compose/ui/text/style/LineHeightStyle;Landroidx/compose/ui/text/style/LineBreak;Landroidx/compose/ui/text/style/Hyphens;)V
-    .locals 12
+    .locals 13
 
-    const/4 v10, 0x0
+    if-eqz p1, :cond_0
+
+    .line 187
+    invoke-virtual {p1}, Landroidx/compose/ui/text/style/TextAlign;->unbox-impl()I
+
+    move-result v0
+
+    goto :goto_0
+
+    :cond_0
+    sget-object v0, Landroidx/compose/ui/text/style/TextAlign;->Companion:Landroidx/compose/ui/text/style/TextAlign$Companion;
+
+    invoke-virtual {v0}, Landroidx/compose/ui/text/style/TextAlign$Companion;->getUnspecified-e0LSkKk()I
+
+    move-result v0
+
+    :goto_0
+    move v2, v0
+
+    if-eqz p2, :cond_1
+
+    .line 188
+    invoke-virtual {p2}, Landroidx/compose/ui/text/style/TextDirection;->unbox-impl()I
+
+    move-result v0
+
+    goto :goto_1
+
+    :cond_1
+    sget-object v0, Landroidx/compose/ui/text/style/TextDirection;->Companion:Landroidx/compose/ui/text/style/TextDirection$Companion;
+
+    invoke-virtual {v0}, Landroidx/compose/ui/text/style/TextDirection$Companion;->getUnspecified-s_7X-co()I
+
+    move-result v0
+
+    :goto_1
+    move v3, v0
+
+    if-eqz p8, :cond_2
+
+    .line 193
+    invoke-virtual/range {p8 .. p8}, Landroidx/compose/ui/text/style/LineBreak;->unbox-impl()I
+
+    move-result v0
+
+    goto :goto_2
+
+    :cond_2
+    sget-object v0, Landroidx/compose/ui/text/style/LineBreak;->Companion:Landroidx/compose/ui/text/style/LineBreak$Companion;
+
+    invoke-virtual {v0}, Landroidx/compose/ui/text/style/LineBreak$Companion;->getUnspecified-rAG3T2k()I
+
+    move-result v0
+
+    :goto_2
+    move v9, v0
+
+    if-eqz p9, :cond_3
+
+    .line 194
+    invoke-virtual/range {p9 .. p9}, Landroidx/compose/ui/text/style/Hyphens;->unbox-impl()I
+
+    move-result v0
+
+    goto :goto_3
+
+    :cond_3
+    sget-object v0, Landroidx/compose/ui/text/style/Hyphens;->Companion:Landroidx/compose/ui/text/style/Hyphens$Companion;
+
+    invoke-virtual {v0}, Landroidx/compose/ui/text/style/Hyphens$Companion;->getUnspecified-vmbZdU8()I
+
+    move-result v0
+
+    :goto_3
+    move v10, v0
 
     const/4 v11, 0x0
 
-    move-object v0, p0
+    const/4 v12, 0x0
 
-    move-object v1, p1
+    move-object v1, p0
 
-    move-object v2, p2
+    move-wide/from16 v4, p3
 
-    move-wide v3, p3
+    move-object/from16 v6, p5
 
-    move-object/from16 v5, p5
+    move-object/from16 v7, p6
 
-    move-object/from16 v6, p6
+    move-object/from16 v8, p7
 
-    move-object/from16 v7, p7
-
-    move-object/from16 v8, p8
-
-    move-object/from16 v9, p9
-
-    .line 147
-    invoke-direct/range {v0 .. v11}, Landroidx/compose/ui/text/ParagraphStyle;-><init>(Landroidx/compose/ui/text/style/TextAlign;Landroidx/compose/ui/text/style/TextDirection;JLandroidx/compose/ui/text/style/TextIndent;Landroidx/compose/ui/text/PlatformParagraphStyle;Landroidx/compose/ui/text/style/LineHeightStyle;Landroidx/compose/ui/text/style/LineBreak;Landroidx/compose/ui/text/style/Hyphens;Landroidx/compose/ui/text/style/TextMotion;Lkotlin/jvm/internal/DefaultConstructorMarker;)V
+    .line 186
+    invoke-direct/range {v1 .. v12}, Landroidx/compose/ui/text/ParagraphStyle;-><init>(IIJLandroidx/compose/ui/text/style/TextIndent;Landroidx/compose/ui/text/PlatformParagraphStyle;Landroidx/compose/ui/text/style/LineHeightStyle;IILandroidx/compose/ui/text/style/TextMotion;Lkotlin/jvm/internal/DefaultConstructorMarker;)V
 
     return-void
 .end method
@@ -349,7 +784,7 @@
 
     if-eqz p11, :cond_2
 
-    .line 141
+    .line 180
     sget-object p3, Landroidx/compose/ui/unit/TextUnit;->Companion:Landroidx/compose/ui/unit/TextUnit$Companion;
 
     invoke-virtual {p3}, Landroidx/compose/ui/unit/TextUnit$Companion;->getUnspecified-XSAIIZE()J
@@ -394,167 +829,108 @@
     :cond_7
     const/4 p10, 0x0
 
-    .line 138
+    .line 177
     invoke-direct/range {p0 .. p10}, Landroidx/compose/ui/text/ParagraphStyle;-><init>(Landroidx/compose/ui/text/style/TextAlign;Landroidx/compose/ui/text/style/TextDirection;JLandroidx/compose/ui/text/style/TextIndent;Landroidx/compose/ui/text/PlatformParagraphStyle;Landroidx/compose/ui/text/style/LineHeightStyle;Landroidx/compose/ui/text/style/LineBreak;Landroidx/compose/ui/text/style/Hyphens;Lkotlin/jvm/internal/DefaultConstructorMarker;)V
 
     return-void
 .end method
 
 .method private constructor <init>(Landroidx/compose/ui/text/style/TextAlign;Landroidx/compose/ui/text/style/TextDirection;JLandroidx/compose/ui/text/style/TextIndent;Landroidx/compose/ui/text/PlatformParagraphStyle;Landroidx/compose/ui/text/style/LineHeightStyle;Landroidx/compose/ui/text/style/LineBreak;Landroidx/compose/ui/text/style/Hyphens;Landroidx/compose/ui/text/style/TextMotion;)V
-    .locals 0
-
-    .line 65
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    .line 67
-    iput-object p1, p0, Landroidx/compose/ui/text/ParagraphStyle;->textAlign:Landroidx/compose/ui/text/style/TextAlign;
-
-    .line 68
-    iput-object p2, p0, Landroidx/compose/ui/text/ParagraphStyle;->textDirection:Landroidx/compose/ui/text/style/TextDirection;
-
-    .line 69
-    iput-wide p3, p0, Landroidx/compose/ui/text/ParagraphStyle;->lineHeight:J
-
-    .line 70
-    iput-object p5, p0, Landroidx/compose/ui/text/ParagraphStyle;->textIndent:Landroidx/compose/ui/text/style/TextIndent;
-
-    .line 71
-    iput-object p6, p0, Landroidx/compose/ui/text/ParagraphStyle;->platformStyle:Landroidx/compose/ui/text/PlatformParagraphStyle;
-
-    .line 72
-    iput-object p7, p0, Landroidx/compose/ui/text/ParagraphStyle;->lineHeightStyle:Landroidx/compose/ui/text/style/LineHeightStyle;
-
-    .line 73
-    iput-object p8, p0, Landroidx/compose/ui/text/ParagraphStyle;->lineBreak:Landroidx/compose/ui/text/style/LineBreak;
-
-    .line 74
-    iput-object p9, p0, Landroidx/compose/ui/text/ParagraphStyle;->hyphens:Landroidx/compose/ui/text/style/Hyphens;
-
-    .line 75
-    iput-object p10, p0, Landroidx/compose/ui/text/ParagraphStyle;->textMotion:Landroidx/compose/ui/text/style/TextMotion;
+    .locals 13
 
     if-eqz p1, :cond_0
 
-    .line 80
+    .line 113
     invoke-virtual {p1}, Landroidx/compose/ui/text/style/TextAlign;->unbox-impl()I
 
-    move-result p1
+    move-result v0
 
     goto :goto_0
 
     :cond_0
-    sget-object p1, Landroidx/compose/ui/text/style/TextAlign;->Companion:Landroidx/compose/ui/text/style/TextAlign$Companion;
+    sget-object v0, Landroidx/compose/ui/text/style/TextAlign;->Companion:Landroidx/compose/ui/text/style/TextAlign$Companion;
 
-    invoke-virtual {p1}, Landroidx/compose/ui/text/style/TextAlign$Companion;->getStart-e0LSkKk()I
+    invoke-virtual {v0}, Landroidx/compose/ui/text/style/TextAlign$Companion;->getUnspecified-e0LSkKk()I
 
-    move-result p1
+    move-result v0
 
     :goto_0
-    iput p1, p0, Landroidx/compose/ui/text/ParagraphStyle;->textAlignOrDefault:I
+    move v2, v0
 
-    if-eqz p8, :cond_1
+    if-eqz p2, :cond_1
 
-    .line 81
-    invoke-virtual {p8}, Landroidx/compose/ui/text/style/LineBreak;->unbox-impl()I
+    .line 114
+    invoke-virtual {p2}, Landroidx/compose/ui/text/style/TextDirection;->unbox-impl()I
 
-    move-result p1
+    move-result v0
 
     goto :goto_1
 
     :cond_1
-    sget-object p1, Landroidx/compose/ui/text/style/LineBreak;->Companion:Landroidx/compose/ui/text/style/LineBreak$Companion;
+    sget-object v0, Landroidx/compose/ui/text/style/TextDirection;->Companion:Landroidx/compose/ui/text/style/TextDirection$Companion;
 
-    invoke-virtual {p1}, Landroidx/compose/ui/text/style/LineBreak$Companion;->getSimple-rAG3T2k()I
+    invoke-virtual {v0}, Landroidx/compose/ui/text/style/TextDirection$Companion;->getUnspecified-s_7X-co()I
 
-    move-result p1
+    move-result v0
 
     :goto_1
-    iput p1, p0, Landroidx/compose/ui/text/ParagraphStyle;->lineBreakOrDefault:I
+    move v3, v0
 
-    if-eqz p9, :cond_2
+    if-eqz p8, :cond_2
 
-    .line 82
-    invoke-virtual {p9}, Landroidx/compose/ui/text/style/Hyphens;->unbox-impl()I
+    .line 119
+    invoke-virtual/range {p8 .. p8}, Landroidx/compose/ui/text/style/LineBreak;->unbox-impl()I
 
-    move-result p1
+    move-result v0
 
     goto :goto_2
 
     :cond_2
-    sget-object p1, Landroidx/compose/ui/text/style/Hyphens;->Companion:Landroidx/compose/ui/text/style/Hyphens$Companion;
+    sget-object v0, Landroidx/compose/ui/text/style/LineBreak;->Companion:Landroidx/compose/ui/text/style/LineBreak$Companion;
 
-    invoke-virtual {p1}, Landroidx/compose/ui/text/style/Hyphens$Companion;->getNone-vmbZdU8()I
+    invoke-virtual {v0}, Landroidx/compose/ui/text/style/LineBreak$Companion;->getUnspecified-rAG3T2k()I
 
-    move-result p1
+    move-result v0
 
     :goto_2
-    iput p1, p0, Landroidx/compose/ui/text/ParagraphStyle;->hyphensOrDefault:I
+    move v9, v0
 
-    .line 160
-    sget-object p0, Landroidx/compose/ui/unit/TextUnit;->Companion:Landroidx/compose/ui/unit/TextUnit$Companion;
+    if-eqz p9, :cond_3
 
-    invoke-virtual {p0}, Landroidx/compose/ui/unit/TextUnit$Companion;->getUnspecified-XSAIIZE()J
+    .line 120
+    invoke-virtual/range {p9 .. p9}, Landroidx/compose/ui/text/style/Hyphens;->unbox-impl()I
 
-    move-result-wide p0
-
-    invoke-static {p3, p4, p0, p1}, Landroidx/compose/ui/unit/TextUnit;->equals-impl0(JJ)Z
-
-    move-result p0
-
-    if-nez p0, :cond_4
-
-    .line 162
-    invoke-static {p3, p4}, Landroidx/compose/ui/unit/TextUnit;->getValue-impl(J)F
-
-    move-result p0
-
-    const/4 p1, 0x0
-
-    cmpl-float p0, p0, p1
-
-    if-ltz p0, :cond_3
+    move-result v0
 
     goto :goto_3
 
-    .line 163
     :cond_3
-    new-instance p0, Ljava/lang/StringBuilder;
+    sget-object v0, Landroidx/compose/ui/text/style/Hyphens;->Companion:Landroidx/compose/ui/text/style/Hyphens$Companion;
 
-    const-string p1, "lineHeight can\'t be negative ("
+    invoke-virtual {v0}, Landroidx/compose/ui/text/style/Hyphens$Companion;->getUnspecified-vmbZdU8()I
 
-    invoke-direct {p0, p1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+    move-result v0
 
-    invoke-static {p3, p4}, Landroidx/compose/ui/unit/TextUnit;->getValue-impl(J)F
-
-    move-result p1
-
-    invoke-virtual {p0, p1}, Ljava/lang/StringBuilder;->append(F)Ljava/lang/StringBuilder;
-
-    move-result-object p0
-
-    const/16 p1, 0x29
-
-    invoke-virtual {p0, p1}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
-
-    move-result-object p0
-
-    invoke-virtual {p0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object p0
-
-    .line 162
-    new-instance p1, Ljava/lang/IllegalStateException;
-
-    invoke-virtual {p0}, Ljava/lang/Object;->toString()Ljava/lang/String;
-
-    move-result-object p0
-
-    invoke-direct {p1, p0}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
-
-    throw p1
-
-    :cond_4
     :goto_3
+    move v10, v0
+
+    const/4 v12, 0x0
+
+    move-object v1, p0
+
+    move-wide/from16 v4, p3
+
+    move-object/from16 v6, p5
+
+    move-object/from16 v7, p6
+
+    move-object/from16 v8, p7
+
+    move-object/from16 v11, p10
+
+    .line 112
+    invoke-direct/range {v1 .. v12}, Landroidx/compose/ui/text/ParagraphStyle;-><init>(IIJLandroidx/compose/ui/text/style/TextIndent;Landroidx/compose/ui/text/PlatformParagraphStyle;Landroidx/compose/ui/text/style/LineHeightStyle;IILandroidx/compose/ui/text/style/TextMotion;Lkotlin/jvm/internal/DefaultConstructorMarker;)V
+
     return-void
 .end method
 
@@ -581,7 +957,7 @@
 
     if-eqz p12, :cond_2
 
-    .line 69
+    .line 105
     sget-object p3, Landroidx/compose/ui/unit/TextUnit;->Companion:Landroidx/compose/ui/unit/TextUnit$Companion;
 
     invoke-virtual {p3}, Landroidx/compose/ui/unit/TextUnit$Companion;->getUnspecified-XSAIIZE()J
@@ -633,7 +1009,7 @@
     :cond_8
     const/4 p11, 0x0
 
-    .line 66
+    .line 102
     invoke-direct/range {p0 .. p11}, Landroidx/compose/ui/text/ParagraphStyle;-><init>(Landroidx/compose/ui/text/style/TextAlign;Landroidx/compose/ui/text/style/TextDirection;JLandroidx/compose/ui/text/style/TextIndent;Landroidx/compose/ui/text/PlatformParagraphStyle;Landroidx/compose/ui/text/style/LineHeightStyle;Landroidx/compose/ui/text/style/LineBreak;Landroidx/compose/ui/text/style/Hyphens;Landroidx/compose/ui/text/style/TextMotion;Lkotlin/jvm/internal/DefaultConstructorMarker;)V
 
     return-void
@@ -641,6 +1017,10 @@
 
 .method public synthetic constructor <init>(Landroidx/compose/ui/text/style/TextAlign;Landroidx/compose/ui/text/style/TextDirection;JLandroidx/compose/ui/text/style/TextIndent;Landroidx/compose/ui/text/PlatformParagraphStyle;Landroidx/compose/ui/text/style/LineHeightStyle;Landroidx/compose/ui/text/style/LineBreak;Landroidx/compose/ui/text/style/Hyphens;Landroidx/compose/ui/text/style/TextMotion;Lkotlin/jvm/internal/DefaultConstructorMarker;)V
     .locals 0
+    .annotation runtime Lkotlin/Deprecated;
+        level = .enum Lkotlin/DeprecationLevel;->HIDDEN:Lkotlin/DeprecationLevel;
+        message = "ParagraphStyle constructors that take nullable TextAlign, TextDirection, LineBreak, and Hyphens are deprecated. Please use a new constructor where these parameters are non-nullable. Null value has been replaced by a special Unspecified object for performance reason."
+    .end annotation
 
     invoke-direct/range {p0 .. p10}, Landroidx/compose/ui/text/ParagraphStyle;-><init>(Landroidx/compose/ui/text/style/TextAlign;Landroidx/compose/ui/text/style/TextDirection;JLandroidx/compose/ui/text/style/TextIndent;Landroidx/compose/ui/text/PlatformParagraphStyle;Landroidx/compose/ui/text/style/LineHeightStyle;Landroidx/compose/ui/text/style/LineBreak;Landroidx/compose/ui/text/style/Hyphens;Landroidx/compose/ui/text/style/TextMotion;)V
 
@@ -690,16 +1070,24 @@
 
     if-eqz p7, :cond_0
 
-    .line 204
-    iget-object p1, p0, Landroidx/compose/ui/text/ParagraphStyle;->textAlign:Landroidx/compose/ui/text/style/TextAlign;
+    .line 243
+    iget p1, p0, Landroidx/compose/ui/text/ParagraphStyle;->textAlign:I
+
+    invoke-static {p1}, Landroidx/compose/ui/text/style/TextAlign;->box-impl(I)Landroidx/compose/ui/text/style/TextAlign;
+
+    move-result-object p1
 
     :cond_0
     and-int/lit8 p7, p6, 0x2
 
     if-eqz p7, :cond_1
 
-    .line 205
-    iget-object p2, p0, Landroidx/compose/ui/text/ParagraphStyle;->textDirection:Landroidx/compose/ui/text/style/TextDirection;
+    .line 244
+    iget p2, p0, Landroidx/compose/ui/text/ParagraphStyle;->textDirection:I
+
+    invoke-static {p2}, Landroidx/compose/ui/text/style/TextDirection;->box-impl(I)Landroidx/compose/ui/text/style/TextDirection;
+
+    move-result-object p2
 
     :cond_1
     move-object p7, p2
@@ -708,7 +1096,7 @@
 
     if-eqz p2, :cond_2
 
-    .line 206
+    .line 245
     iget-wide p3, p0, Landroidx/compose/ui/text/ParagraphStyle;->lineHeight:J
 
     :cond_2
@@ -718,7 +1106,7 @@
 
     if-eqz p2, :cond_3
 
-    .line 207
+    .line 246
     iget-object p5, p0, Landroidx/compose/ui/text/ParagraphStyle;->textIndent:Landroidx/compose/ui/text/style/TextIndent;
 
     :cond_3
@@ -734,7 +1122,7 @@
 
     move-object p7, v2
 
-    .line 203
+    .line 242
     invoke-virtual/range {p2 .. p7}, Landroidx/compose/ui/text/ParagraphStyle;->copy-Elsmlbk(Landroidx/compose/ui/text/style/TextAlign;Landroidx/compose/ui/text/style/TextDirection;JLandroidx/compose/ui/text/style/TextIndent;)Landroidx/compose/ui/text/ParagraphStyle;
 
     move-result-object p0
@@ -753,8 +1141,12 @@
 
     if-eqz v2, :cond_0
 
-    .line 279
-    iget-object v2, v0, Landroidx/compose/ui/text/ParagraphStyle;->textAlign:Landroidx/compose/ui/text/style/TextAlign;
+    .line 323
+    iget v2, v0, Landroidx/compose/ui/text/ParagraphStyle;->textAlign:I
+
+    invoke-static {v2}, Landroidx/compose/ui/text/style/TextAlign;->box-impl(I)Landroidx/compose/ui/text/style/TextAlign;
+
+    move-result-object v2
 
     goto :goto_0
 
@@ -766,8 +1158,12 @@
 
     if-eqz v3, :cond_1
 
-    .line 280
-    iget-object v3, v0, Landroidx/compose/ui/text/ParagraphStyle;->textDirection:Landroidx/compose/ui/text/style/TextDirection;
+    .line 324
+    iget v3, v0, Landroidx/compose/ui/text/ParagraphStyle;->textDirection:I
+
+    invoke-static {v3}, Landroidx/compose/ui/text/style/TextDirection;->box-impl(I)Landroidx/compose/ui/text/style/TextDirection;
+
+    move-result-object v3
 
     goto :goto_1
 
@@ -779,7 +1175,7 @@
 
     if-eqz v4, :cond_2
 
-    .line 281
+    .line 325
     iget-wide v4, v0, Landroidx/compose/ui/text/ParagraphStyle;->lineHeight:J
 
     goto :goto_2
@@ -792,7 +1188,7 @@
 
     if-eqz v6, :cond_3
 
-    .line 282
+    .line 326
     iget-object v6, v0, Landroidx/compose/ui/text/ParagraphStyle;->textIndent:Landroidx/compose/ui/text/style/TextIndent;
 
     goto :goto_3
@@ -805,7 +1201,7 @@
 
     if-eqz v7, :cond_4
 
-    .line 283
+    .line 327
     iget-object v7, v0, Landroidx/compose/ui/text/ParagraphStyle;->platformStyle:Landroidx/compose/ui/text/PlatformParagraphStyle;
 
     goto :goto_4
@@ -818,7 +1214,7 @@
 
     if-eqz v8, :cond_5
 
-    .line 284
+    .line 328
     iget-object v8, v0, Landroidx/compose/ui/text/ParagraphStyle;->lineHeightStyle:Landroidx/compose/ui/text/style/LineHeightStyle;
 
     goto :goto_5
@@ -831,8 +1227,12 @@
 
     if-eqz v9, :cond_6
 
-    .line 285
-    iget-object v9, v0, Landroidx/compose/ui/text/ParagraphStyle;->lineBreak:Landroidx/compose/ui/text/style/LineBreak;
+    .line 329
+    iget v9, v0, Landroidx/compose/ui/text/ParagraphStyle;->lineBreak:I
+
+    invoke-static {v9}, Landroidx/compose/ui/text/style/LineBreak;->box-impl(I)Landroidx/compose/ui/text/style/LineBreak;
+
+    move-result-object v9
 
     goto :goto_6
 
@@ -844,8 +1244,12 @@
 
     if-eqz v10, :cond_7
 
-    .line 286
-    iget-object v10, v0, Landroidx/compose/ui/text/ParagraphStyle;->hyphens:Landroidx/compose/ui/text/style/Hyphens;
+    .line 330
+    iget v10, v0, Landroidx/compose/ui/text/ParagraphStyle;->hyphens:I
+
+    invoke-static {v10}, Landroidx/compose/ui/text/style/Hyphens;->box-impl(I)Landroidx/compose/ui/text/style/Hyphens;
+
+    move-result-object v10
 
     goto :goto_7
 
@@ -857,7 +1261,7 @@
 
     if-eqz v1, :cond_8
 
-    .line 287
+    .line 331
     iget-object v1, v0, Landroidx/compose/ui/text/ParagraphStyle;->textMotion:Landroidx/compose/ui/text/style/TextMotion;
 
     goto :goto_8
@@ -884,7 +1288,7 @@
 
     move-object/from16 p10, v1
 
-    .line 278
+    .line 322
     invoke-virtual/range {p0 .. p10}, Landroidx/compose/ui/text/ParagraphStyle;->copy-NH1kkwU(Landroidx/compose/ui/text/style/TextAlign;Landroidx/compose/ui/text/style/TextDirection;JLandroidx/compose/ui/text/style/TextIndent;Landroidx/compose/ui/text/PlatformParagraphStyle;Landroidx/compose/ui/text/style/LineHeightStyle;Landroidx/compose/ui/text/style/LineBreak;Landroidx/compose/ui/text/style/Hyphens;Landroidx/compose/ui/text/style/TextMotion;)Landroidx/compose/ui/text/ParagraphStyle;
 
     move-result-object v0
@@ -903,8 +1307,12 @@
 
     if-eqz v2, :cond_0
 
-    .line 256
-    iget-object v2, v0, Landroidx/compose/ui/text/ParagraphStyle;->textAlign:Landroidx/compose/ui/text/style/TextAlign;
+    .line 295
+    iget v2, v0, Landroidx/compose/ui/text/ParagraphStyle;->textAlign:I
+
+    invoke-static {v2}, Landroidx/compose/ui/text/style/TextAlign;->box-impl(I)Landroidx/compose/ui/text/style/TextAlign;
+
+    move-result-object v2
 
     goto :goto_0
 
@@ -916,8 +1324,12 @@
 
     if-eqz v3, :cond_1
 
-    .line 257
-    iget-object v3, v0, Landroidx/compose/ui/text/ParagraphStyle;->textDirection:Landroidx/compose/ui/text/style/TextDirection;
+    .line 296
+    iget v3, v0, Landroidx/compose/ui/text/ParagraphStyle;->textDirection:I
+
+    invoke-static {v3}, Landroidx/compose/ui/text/style/TextDirection;->box-impl(I)Landroidx/compose/ui/text/style/TextDirection;
+
+    move-result-object v3
 
     goto :goto_1
 
@@ -929,7 +1341,7 @@
 
     if-eqz v4, :cond_2
 
-    .line 258
+    .line 297
     iget-wide v4, v0, Landroidx/compose/ui/text/ParagraphStyle;->lineHeight:J
 
     goto :goto_2
@@ -942,7 +1354,7 @@
 
     if-eqz v6, :cond_3
 
-    .line 259
+    .line 298
     iget-object v6, v0, Landroidx/compose/ui/text/ParagraphStyle;->textIndent:Landroidx/compose/ui/text/style/TextIndent;
 
     goto :goto_3
@@ -955,7 +1367,7 @@
 
     if-eqz v7, :cond_4
 
-    .line 260
+    .line 299
     iget-object v7, v0, Landroidx/compose/ui/text/ParagraphStyle;->platformStyle:Landroidx/compose/ui/text/PlatformParagraphStyle;
 
     goto :goto_4
@@ -968,7 +1380,7 @@
 
     if-eqz v8, :cond_5
 
-    .line 261
+    .line 300
     iget-object v8, v0, Landroidx/compose/ui/text/ParagraphStyle;->lineHeightStyle:Landroidx/compose/ui/text/style/LineHeightStyle;
 
     goto :goto_5
@@ -981,8 +1393,12 @@
 
     if-eqz v9, :cond_6
 
-    .line 262
-    iget-object v9, v0, Landroidx/compose/ui/text/ParagraphStyle;->lineBreak:Landroidx/compose/ui/text/style/LineBreak;
+    .line 301
+    iget v9, v0, Landroidx/compose/ui/text/ParagraphStyle;->lineBreak:I
+
+    invoke-static {v9}, Landroidx/compose/ui/text/style/LineBreak;->box-impl(I)Landroidx/compose/ui/text/style/LineBreak;
+
+    move-result-object v9
 
     goto :goto_6
 
@@ -994,8 +1410,12 @@
 
     if-eqz v1, :cond_7
 
-    .line 263
-    iget-object v1, v0, Landroidx/compose/ui/text/ParagraphStyle;->hyphens:Landroidx/compose/ui/text/style/Hyphens;
+    .line 302
+    iget v1, v0, Landroidx/compose/ui/text/ParagraphStyle;->hyphens:I
+
+    invoke-static {v1}, Landroidx/compose/ui/text/style/Hyphens;->box-impl(I)Landroidx/compose/ui/text/style/Hyphens;
+
+    move-result-object v1
 
     goto :goto_7
 
@@ -1019,7 +1439,7 @@
 
     move-object/from16 p9, v1
 
-    .line 255
+    .line 294
     invoke-virtual/range {p0 .. p9}, Landroidx/compose/ui/text/ParagraphStyle;->copy-ciSxzs0(Landroidx/compose/ui/text/style/TextAlign;Landroidx/compose/ui/text/style/TextDirection;JLandroidx/compose/ui/text/style/TextIndent;Landroidx/compose/ui/text/PlatformParagraphStyle;Landroidx/compose/ui/text/style/LineHeightStyle;Landroidx/compose/ui/text/style/LineBreak;Landroidx/compose/ui/text/style/Hyphens;)Landroidx/compose/ui/text/ParagraphStyle;
 
     move-result-object v0
@@ -1034,16 +1454,24 @@
 
     if-eqz p9, :cond_0
 
-    .line 229
-    iget-object p1, p0, Landroidx/compose/ui/text/ParagraphStyle;->textAlign:Landroidx/compose/ui/text/style/TextAlign;
+    .line 268
+    iget p1, p0, Landroidx/compose/ui/text/ParagraphStyle;->textAlign:I
+
+    invoke-static {p1}, Landroidx/compose/ui/text/style/TextAlign;->box-impl(I)Landroidx/compose/ui/text/style/TextAlign;
+
+    move-result-object p1
 
     :cond_0
     and-int/lit8 p9, p8, 0x2
 
     if-eqz p9, :cond_1
 
-    .line 230
-    iget-object p2, p0, Landroidx/compose/ui/text/ParagraphStyle;->textDirection:Landroidx/compose/ui/text/style/TextDirection;
+    .line 269
+    iget p2, p0, Landroidx/compose/ui/text/ParagraphStyle;->textDirection:I
+
+    invoke-static {p2}, Landroidx/compose/ui/text/style/TextDirection;->box-impl(I)Landroidx/compose/ui/text/style/TextDirection;
+
+    move-result-object p2
 
     :cond_1
     move-object p9, p2
@@ -1052,7 +1480,7 @@
 
     if-eqz p2, :cond_2
 
-    .line 231
+    .line 270
     iget-wide p3, p0, Landroidx/compose/ui/text/ParagraphStyle;->lineHeight:J
 
     :cond_2
@@ -1062,7 +1490,7 @@
 
     if-eqz p2, :cond_3
 
-    .line 232
+    .line 271
     iget-object p5, p0, Landroidx/compose/ui/text/ParagraphStyle;->textIndent:Landroidx/compose/ui/text/style/TextIndent;
 
     :cond_3
@@ -1072,7 +1500,7 @@
 
     if-eqz p2, :cond_4
 
-    .line 233
+    .line 272
     iget-object p6, p0, Landroidx/compose/ui/text/ParagraphStyle;->platformStyle:Landroidx/compose/ui/text/PlatformParagraphStyle;
 
     :cond_4
@@ -1082,7 +1510,7 @@
 
     if-eqz p2, :cond_5
 
-    .line 234
+    .line 273
     iget-object p7, p0, Landroidx/compose/ui/text/ParagraphStyle;->lineHeightStyle:Landroidx/compose/ui/text/style/LineHeightStyle;
 
     :cond_5
@@ -1102,12 +1530,202 @@
 
     move-object p9, v4
 
-    .line 228
+    .line 267
     invoke-virtual/range {p2 .. p9}, Landroidx/compose/ui/text/ParagraphStyle;->copy-xPh5V4g(Landroidx/compose/ui/text/style/TextAlign;Landroidx/compose/ui/text/style/TextDirection;JLandroidx/compose/ui/text/style/TextIndent;Landroidx/compose/ui/text/PlatformParagraphStyle;Landroidx/compose/ui/text/style/LineHeightStyle;)Landroidx/compose/ui/text/ParagraphStyle;
 
     move-result-object p0
 
     return-object p0
+.end method
+
+.method public static synthetic copy-ykzQM6k$default(Landroidx/compose/ui/text/ParagraphStyle;IIJLandroidx/compose/ui/text/style/TextIndent;Landroidx/compose/ui/text/PlatformParagraphStyle;Landroidx/compose/ui/text/style/LineHeightStyle;IILandroidx/compose/ui/text/style/TextMotion;ILjava/lang/Object;)Landroidx/compose/ui/text/ParagraphStyle;
+    .locals 11
+
+    move-object v0, p0
+
+    move/from16 v1, p11
+
+    and-int/lit8 v2, v1, 0x1
+
+    if-eqz v2, :cond_0
+
+    .line 347
+    iget v2, v0, Landroidx/compose/ui/text/ParagraphStyle;->textAlign:I
+
+    goto :goto_0
+
+    :cond_0
+    move v2, p1
+
+    :goto_0
+    and-int/lit8 v3, v1, 0x2
+
+    if-eqz v3, :cond_1
+
+    .line 348
+    iget v3, v0, Landroidx/compose/ui/text/ParagraphStyle;->textDirection:I
+
+    goto :goto_1
+
+    :cond_1
+    move v3, p2
+
+    :goto_1
+    and-int/lit8 v4, v1, 0x4
+
+    if-eqz v4, :cond_2
+
+    .line 349
+    iget-wide v4, v0, Landroidx/compose/ui/text/ParagraphStyle;->lineHeight:J
+
+    goto :goto_2
+
+    :cond_2
+    move-wide v4, p3
+
+    :goto_2
+    and-int/lit8 v6, v1, 0x8
+
+    if-eqz v6, :cond_3
+
+    .line 350
+    iget-object v6, v0, Landroidx/compose/ui/text/ParagraphStyle;->textIndent:Landroidx/compose/ui/text/style/TextIndent;
+
+    goto :goto_3
+
+    :cond_3
+    move-object/from16 v6, p5
+
+    :goto_3
+    and-int/lit8 v7, v1, 0x10
+
+    if-eqz v7, :cond_4
+
+    .line 351
+    iget-object v7, v0, Landroidx/compose/ui/text/ParagraphStyle;->platformStyle:Landroidx/compose/ui/text/PlatformParagraphStyle;
+
+    goto :goto_4
+
+    :cond_4
+    move-object/from16 v7, p6
+
+    :goto_4
+    and-int/lit8 v8, v1, 0x20
+
+    if-eqz v8, :cond_5
+
+    .line 352
+    iget-object v8, v0, Landroidx/compose/ui/text/ParagraphStyle;->lineHeightStyle:Landroidx/compose/ui/text/style/LineHeightStyle;
+
+    goto :goto_5
+
+    :cond_5
+    move-object/from16 v8, p7
+
+    :goto_5
+    and-int/lit8 v9, v1, 0x40
+
+    if-eqz v9, :cond_6
+
+    .line 353
+    iget v9, v0, Landroidx/compose/ui/text/ParagraphStyle;->lineBreak:I
+
+    goto :goto_6
+
+    :cond_6
+    move/from16 v9, p8
+
+    :goto_6
+    and-int/lit16 v10, v1, 0x80
+
+    if-eqz v10, :cond_7
+
+    .line 354
+    iget v10, v0, Landroidx/compose/ui/text/ParagraphStyle;->hyphens:I
+
+    goto :goto_7
+
+    :cond_7
+    move/from16 v10, p9
+
+    :goto_7
+    and-int/lit16 v1, v1, 0x100
+
+    if-eqz v1, :cond_8
+
+    .line 355
+    iget-object v1, v0, Landroidx/compose/ui/text/ParagraphStyle;->textMotion:Landroidx/compose/ui/text/style/TextMotion;
+
+    goto :goto_8
+
+    :cond_8
+    move-object/from16 v1, p10
+
+    :goto_8
+    move p1, v2
+
+    move p2, v3
+
+    move-wide p3, v4
+
+    move-object/from16 p5, v6
+
+    move-object/from16 p6, v7
+
+    move-object/from16 p7, v8
+
+    move/from16 p8, v9
+
+    move/from16 p9, v10
+
+    move-object/from16 p10, v1
+
+    .line 346
+    invoke-virtual/range {p0 .. p10}, Landroidx/compose/ui/text/ParagraphStyle;->copy-ykzQM6k(IIJLandroidx/compose/ui/text/style/TextIndent;Landroidx/compose/ui/text/PlatformParagraphStyle;Landroidx/compose/ui/text/style/LineHeightStyle;IILandroidx/compose/ui/text/style/TextMotion;)Landroidx/compose/ui/text/ParagraphStyle;
+
+    move-result-object v0
+
+    return-object v0
+.end method
+
+.method public static synthetic getHyphens-EaSxIns$annotations()V
+    .locals 0
+    .annotation runtime Lkotlin/Deprecated;
+        level = .enum Lkotlin/DeprecationLevel;->WARNING:Lkotlin/DeprecationLevel;
+        message = "Kept for backwards compatibility."
+    .end annotation
+
+    return-void
+.end method
+
+.method public static synthetic getLineBreak-LgCVezo$annotations()V
+    .locals 0
+    .annotation runtime Lkotlin/Deprecated;
+        level = .enum Lkotlin/DeprecationLevel;->WARNING:Lkotlin/DeprecationLevel;
+        message = "Kept for backwards compatibility."
+    .end annotation
+
+    return-void
+.end method
+
+.method public static synthetic getTextAlign-buA522U$annotations()V
+    .locals 0
+    .annotation runtime Lkotlin/Deprecated;
+        level = .enum Lkotlin/DeprecationLevel;->WARNING:Lkotlin/DeprecationLevel;
+        message = "Kept for backwards compatibility."
+    .end annotation
+
+    return-void
+.end method
+
+.method public static synthetic getTextDirection-mmuk1to$annotations()V
+    .locals 0
+    .annotation runtime Lkotlin/Deprecated;
+        level = .enum Lkotlin/DeprecationLevel;->WARNING:Lkotlin/DeprecationLevel;
+        message = "Kept for backwards compatibility."
+    .end annotation
+
+    return-void
 .end method
 
 .method public static synthetic merge$default(Landroidx/compose/ui/text/ParagraphStyle;Landroidx/compose/ui/text/ParagraphStyle;ILjava/lang/Object;)Landroidx/compose/ui/text/ParagraphStyle;
@@ -1119,7 +1737,7 @@
 
     const/4 p1, 0x0
 
-    .line 175
+    .line 214
     :cond_0
     invoke-virtual {p0, p1}, Landroidx/compose/ui/text/ParagraphStyle;->merge(Landroidx/compose/ui/text/ParagraphStyle;)Landroidx/compose/ui/text/ParagraphStyle;
 
@@ -1139,55 +1757,161 @@
 
     move-object v0, p0
 
-    .line 209
+    .line 248
     new-instance v12, Landroidx/compose/ui/text/ParagraphStyle;
 
-    .line 214
+    if-eqz p1, :cond_0
+
+    .line 249
+    invoke-virtual {p1}, Landroidx/compose/ui/text/style/TextAlign;->unbox-impl()I
+
+    move-result v1
+
+    goto :goto_0
+
+    :cond_0
+    sget-object v1, Landroidx/compose/ui/text/style/TextAlign;->Companion:Landroidx/compose/ui/text/style/TextAlign$Companion;
+
+    invoke-virtual {v1}, Landroidx/compose/ui/text/style/TextAlign$Companion;->getUnspecified-e0LSkKk()I
+
+    move-result v1
+
+    :goto_0
+    if-eqz p2, :cond_1
+
+    .line 250
+    invoke-virtual {p2}, Landroidx/compose/ui/text/style/TextDirection;->unbox-impl()I
+
+    move-result v2
+
+    goto :goto_1
+
+    :cond_1
+    sget-object v2, Landroidx/compose/ui/text/style/TextDirection;->Companion:Landroidx/compose/ui/text/style/TextDirection$Companion;
+
+    invoke-virtual {v2}, Landroidx/compose/ui/text/style/TextDirection$Companion;->getUnspecified-s_7X-co()I
+
+    move-result v2
+
+    .line 253
+    :goto_1
     iget-object v6, v0, Landroidx/compose/ui/text/ParagraphStyle;->platformStyle:Landroidx/compose/ui/text/PlatformParagraphStyle;
 
-    .line 215
+    .line 254
     iget-object v7, v0, Landroidx/compose/ui/text/ParagraphStyle;->lineHeightStyle:Landroidx/compose/ui/text/style/LineHeightStyle;
 
-    .line 216
-    iget-object v8, v0, Landroidx/compose/ui/text/ParagraphStyle;->lineBreak:Landroidx/compose/ui/text/style/LineBreak;
+    .line 255
+    iget v8, v0, Landroidx/compose/ui/text/ParagraphStyle;->lineBreak:I
 
-    .line 217
-    iget-object v9, v0, Landroidx/compose/ui/text/ParagraphStyle;->hyphens:Landroidx/compose/ui/text/style/Hyphens;
+    .line 256
+    iget v9, v0, Landroidx/compose/ui/text/ParagraphStyle;->hyphens:I
 
-    .line 218
+    .line 257
     iget-object v10, v0, Landroidx/compose/ui/text/ParagraphStyle;->textMotion:Landroidx/compose/ui/text/style/TextMotion;
 
     const/4 v11, 0x0
 
     move-object v0, v12
 
-    move-object v1, p1
-
-    move-object v2, p2
-
     move-wide/from16 v3, p3
 
     move-object/from16 v5, p5
 
-    .line 209
-    invoke-direct/range {v0 .. v11}, Landroidx/compose/ui/text/ParagraphStyle;-><init>(Landroidx/compose/ui/text/style/TextAlign;Landroidx/compose/ui/text/style/TextDirection;JLandroidx/compose/ui/text/style/TextIndent;Landroidx/compose/ui/text/PlatformParagraphStyle;Landroidx/compose/ui/text/style/LineHeightStyle;Landroidx/compose/ui/text/style/LineBreak;Landroidx/compose/ui/text/style/Hyphens;Landroidx/compose/ui/text/style/TextMotion;Lkotlin/jvm/internal/DefaultConstructorMarker;)V
+    .line 248
+    invoke-direct/range {v0 .. v11}, Landroidx/compose/ui/text/ParagraphStyle;-><init>(IIJLandroidx/compose/ui/text/style/TextIndent;Landroidx/compose/ui/text/PlatformParagraphStyle;Landroidx/compose/ui/text/style/LineHeightStyle;IILandroidx/compose/ui/text/style/TextMotion;Lkotlin/jvm/internal/DefaultConstructorMarker;)V
 
     return-object v12
 .end method
 
-.method public final copy-NH1kkwU(Landroidx/compose/ui/text/style/TextAlign;Landroidx/compose/ui/text/style/TextDirection;JLandroidx/compose/ui/text/style/TextIndent;Landroidx/compose/ui/text/PlatformParagraphStyle;Landroidx/compose/ui/text/style/LineHeightStyle;Landroidx/compose/ui/text/style/LineBreak;Landroidx/compose/ui/text/style/Hyphens;Landroidx/compose/ui/text/style/TextMotion;)Landroidx/compose/ui/text/ParagraphStyle;
+.method public final synthetic copy-NH1kkwU(Landroidx/compose/ui/text/style/TextAlign;Landroidx/compose/ui/text/style/TextDirection;JLandroidx/compose/ui/text/style/TextIndent;Landroidx/compose/ui/text/PlatformParagraphStyle;Landroidx/compose/ui/text/style/LineHeightStyle;Landroidx/compose/ui/text/style/LineBreak;Landroidx/compose/ui/text/style/Hyphens;Landroidx/compose/ui/text/style/TextMotion;)Landroidx/compose/ui/text/ParagraphStyle;
     .locals 13
+    .annotation runtime Lkotlin/Deprecated;
+        level = .enum Lkotlin/DeprecationLevel;->HIDDEN:Lkotlin/DeprecationLevel;
+        message = "ParagraphStyle copy constructors that take nullable TextAlign, TextDirection, LineBreak, and Hyphens are deprecated. Please use a new constructor where these parameters are non-nullable. Null value has been replaced by a special Unspecified object for performance reason."
+    .end annotation
 
-    .line 289
+    .line 333
     new-instance v12, Landroidx/compose/ui/text/ParagraphStyle;
+
+    if-eqz p1, :cond_0
+
+    .line 334
+    invoke-virtual {p1}, Landroidx/compose/ui/text/style/TextAlign;->unbox-impl()I
+
+    move-result v0
+
+    goto :goto_0
+
+    :cond_0
+    sget-object v0, Landroidx/compose/ui/text/style/TextAlign;->Companion:Landroidx/compose/ui/text/style/TextAlign$Companion;
+
+    invoke-virtual {v0}, Landroidx/compose/ui/text/style/TextAlign$Companion;->getUnspecified-e0LSkKk()I
+
+    move-result v0
+
+    :goto_0
+    move v1, v0
+
+    if-eqz p2, :cond_1
+
+    .line 335
+    invoke-virtual {p2}, Landroidx/compose/ui/text/style/TextDirection;->unbox-impl()I
+
+    move-result v0
+
+    goto :goto_1
+
+    :cond_1
+    sget-object v0, Landroidx/compose/ui/text/style/TextDirection;->Companion:Landroidx/compose/ui/text/style/TextDirection$Companion;
+
+    invoke-virtual {v0}, Landroidx/compose/ui/text/style/TextDirection$Companion;->getUnspecified-s_7X-co()I
+
+    move-result v0
+
+    :goto_1
+    move v2, v0
+
+    if-eqz p8, :cond_2
+
+    .line 340
+    invoke-virtual/range {p8 .. p8}, Landroidx/compose/ui/text/style/LineBreak;->unbox-impl()I
+
+    move-result v0
+
+    goto :goto_2
+
+    :cond_2
+    sget-object v0, Landroidx/compose/ui/text/style/LineBreak;->Companion:Landroidx/compose/ui/text/style/LineBreak$Companion;
+
+    invoke-virtual {v0}, Landroidx/compose/ui/text/style/LineBreak$Companion;->getUnspecified-rAG3T2k()I
+
+    move-result v0
+
+    :goto_2
+    move v8, v0
+
+    if-eqz p9, :cond_3
+
+    .line 341
+    invoke-virtual/range {p9 .. p9}, Landroidx/compose/ui/text/style/Hyphens;->unbox-impl()I
+
+    move-result v0
+
+    goto :goto_3
+
+    :cond_3
+    sget-object v0, Landroidx/compose/ui/text/style/Hyphens;->Companion:Landroidx/compose/ui/text/style/Hyphens$Companion;
+
+    invoke-virtual {v0}, Landroidx/compose/ui/text/style/Hyphens$Companion;->getUnspecified-vmbZdU8()I
+
+    move-result v0
+
+    :goto_3
+    move v9, v0
 
     const/4 v11, 0x0
 
     move-object v0, v12
-
-    move-object v1, p1
-
-    move-object v2, p2
 
     move-wide/from16 v3, p3
 
@@ -1197,13 +1921,10 @@
 
     move-object/from16 v7, p7
 
-    move-object/from16 v8, p8
-
-    move-object/from16 v9, p9
-
     move-object/from16 v10, p10
 
-    invoke-direct/range {v0 .. v11}, Landroidx/compose/ui/text/ParagraphStyle;-><init>(Landroidx/compose/ui/text/style/TextAlign;Landroidx/compose/ui/text/style/TextDirection;JLandroidx/compose/ui/text/style/TextIndent;Landroidx/compose/ui/text/PlatformParagraphStyle;Landroidx/compose/ui/text/style/LineHeightStyle;Landroidx/compose/ui/text/style/LineBreak;Landroidx/compose/ui/text/style/Hyphens;Landroidx/compose/ui/text/style/TextMotion;Lkotlin/jvm/internal/DefaultConstructorMarker;)V
+    .line 333
+    invoke-direct/range {v0 .. v11}, Landroidx/compose/ui/text/ParagraphStyle;-><init>(IIJLandroidx/compose/ui/text/style/TextIndent;Landroidx/compose/ui/text/PlatformParagraphStyle;Landroidx/compose/ui/text/style/LineHeightStyle;IILandroidx/compose/ui/text/style/TextMotion;Lkotlin/jvm/internal/DefaultConstructorMarker;)V
 
     return-object v12
 .end method
@@ -1215,21 +1936,93 @@
         message = "ParagraphStyle copy constructors that do not take new stable parameters like LineBreak, Hyphens, TextMotion are deprecated. Please use the new stable copy constructor."
     .end annotation
 
-    .line 265
+    .line 304
     new-instance v12, Landroidx/compose/ui/text/ParagraphStyle;
+
+    if-eqz p1, :cond_0
+
+    .line 305
+    invoke-virtual {p1}, Landroidx/compose/ui/text/style/TextAlign;->unbox-impl()I
+
+    move-result v0
+
+    goto :goto_0
+
+    :cond_0
+    sget-object v0, Landroidx/compose/ui/text/style/TextAlign;->Companion:Landroidx/compose/ui/text/style/TextAlign$Companion;
+
+    invoke-virtual {v0}, Landroidx/compose/ui/text/style/TextAlign$Companion;->getUnspecified-e0LSkKk()I
+
+    move-result v0
+
+    :goto_0
+    move v1, v0
+
+    if-eqz p2, :cond_1
+
+    .line 306
+    invoke-virtual {p2}, Landroidx/compose/ui/text/style/TextDirection;->unbox-impl()I
+
+    move-result v0
+
+    goto :goto_1
+
+    :cond_1
+    sget-object v0, Landroidx/compose/ui/text/style/TextDirection;->Companion:Landroidx/compose/ui/text/style/TextDirection$Companion;
+
+    invoke-virtual {v0}, Landroidx/compose/ui/text/style/TextDirection$Companion;->getUnspecified-s_7X-co()I
+
+    move-result v0
+
+    :goto_1
+    move v2, v0
+
+    if-eqz p8, :cond_2
+
+    .line 311
+    invoke-virtual/range {p8 .. p8}, Landroidx/compose/ui/text/style/LineBreak;->unbox-impl()I
+
+    move-result v0
+
+    goto :goto_2
+
+    :cond_2
+    sget-object v0, Landroidx/compose/ui/text/style/LineBreak;->Companion:Landroidx/compose/ui/text/style/LineBreak$Companion;
+
+    invoke-virtual {v0}, Landroidx/compose/ui/text/style/LineBreak$Companion;->getUnspecified-rAG3T2k()I
+
+    move-result v0
+
+    :goto_2
+    move v8, v0
+
+    if-eqz p9, :cond_3
+
+    .line 312
+    invoke-virtual/range {p9 .. p9}, Landroidx/compose/ui/text/style/Hyphens;->unbox-impl()I
+
+    move-result v0
+
+    goto :goto_3
+
+    :cond_3
+    sget-object v0, Landroidx/compose/ui/text/style/Hyphens;->Companion:Landroidx/compose/ui/text/style/Hyphens$Companion;
+
+    invoke-virtual {v0}, Landroidx/compose/ui/text/style/Hyphens$Companion;->getUnspecified-vmbZdU8()I
+
+    move-result v0
+
+    :goto_3
+    move v9, v0
 
     move-object v0, p0
 
-    .line 274
+    .line 313
     iget-object v10, v0, Landroidx/compose/ui/text/ParagraphStyle;->textMotion:Landroidx/compose/ui/text/style/TextMotion;
 
     const/4 v11, 0x0
 
     move-object v0, v12
-
-    move-object v1, p1
-
-    move-object v2, p2
 
     move-wide/from16 v3, p3
 
@@ -1239,12 +2032,8 @@
 
     move-object/from16 v7, p7
 
-    move-object/from16 v8, p8
-
-    move-object/from16 v9, p9
-
-    .line 265
-    invoke-direct/range {v0 .. v11}, Landroidx/compose/ui/text/ParagraphStyle;-><init>(Landroidx/compose/ui/text/style/TextAlign;Landroidx/compose/ui/text/style/TextDirection;JLandroidx/compose/ui/text/style/TextIndent;Landroidx/compose/ui/text/PlatformParagraphStyle;Landroidx/compose/ui/text/style/LineHeightStyle;Landroidx/compose/ui/text/style/LineBreak;Landroidx/compose/ui/text/style/Hyphens;Landroidx/compose/ui/text/style/TextMotion;Lkotlin/jvm/internal/DefaultConstructorMarker;)V
+    .line 304
+    invoke-direct/range {v0 .. v11}, Landroidx/compose/ui/text/ParagraphStyle;-><init>(IIJLandroidx/compose/ui/text/style/TextIndent;Landroidx/compose/ui/text/PlatformParagraphStyle;Landroidx/compose/ui/text/style/LineHeightStyle;IILandroidx/compose/ui/text/style/TextMotion;Lkotlin/jvm/internal/DefaultConstructorMarker;)V
 
     return-object v12
 .end method
@@ -1258,25 +2047,55 @@
 
     move-object v0, p0
 
-    .line 236
+    .line 275
     new-instance v12, Landroidx/compose/ui/text/ParagraphStyle;
 
-    .line 243
-    iget-object v8, v0, Landroidx/compose/ui/text/ParagraphStyle;->lineBreak:Landroidx/compose/ui/text/style/LineBreak;
+    if-eqz p1, :cond_0
 
-    .line 244
-    iget-object v9, v0, Landroidx/compose/ui/text/ParagraphStyle;->hyphens:Landroidx/compose/ui/text/style/Hyphens;
+    .line 276
+    invoke-virtual {p1}, Landroidx/compose/ui/text/style/TextAlign;->unbox-impl()I
 
-    .line 245
+    move-result v1
+
+    goto :goto_0
+
+    :cond_0
+    sget-object v1, Landroidx/compose/ui/text/style/TextAlign;->Companion:Landroidx/compose/ui/text/style/TextAlign$Companion;
+
+    invoke-virtual {v1}, Landroidx/compose/ui/text/style/TextAlign$Companion;->getUnspecified-e0LSkKk()I
+
+    move-result v1
+
+    :goto_0
+    if-eqz p2, :cond_1
+
+    .line 277
+    invoke-virtual {p2}, Landroidx/compose/ui/text/style/TextDirection;->unbox-impl()I
+
+    move-result v2
+
+    goto :goto_1
+
+    :cond_1
+    sget-object v2, Landroidx/compose/ui/text/style/TextDirection;->Companion:Landroidx/compose/ui/text/style/TextDirection$Companion;
+
+    invoke-virtual {v2}, Landroidx/compose/ui/text/style/TextDirection$Companion;->getUnspecified-s_7X-co()I
+
+    move-result v2
+
+    .line 282
+    :goto_1
+    iget v8, v0, Landroidx/compose/ui/text/ParagraphStyle;->lineBreak:I
+
+    .line 283
+    iget v9, v0, Landroidx/compose/ui/text/ParagraphStyle;->hyphens:I
+
+    .line 284
     iget-object v10, v0, Landroidx/compose/ui/text/ParagraphStyle;->textMotion:Landroidx/compose/ui/text/style/TextMotion;
 
     const/4 v11, 0x0
 
     move-object v0, v12
-
-    move-object v1, p1
-
-    move-object v2, p2
 
     move-wide/from16 v3, p3
 
@@ -1286,8 +2105,41 @@
 
     move-object/from16 v7, p7
 
-    .line 236
-    invoke-direct/range {v0 .. v11}, Landroidx/compose/ui/text/ParagraphStyle;-><init>(Landroidx/compose/ui/text/style/TextAlign;Landroidx/compose/ui/text/style/TextDirection;JLandroidx/compose/ui/text/style/TextIndent;Landroidx/compose/ui/text/PlatformParagraphStyle;Landroidx/compose/ui/text/style/LineHeightStyle;Landroidx/compose/ui/text/style/LineBreak;Landroidx/compose/ui/text/style/Hyphens;Landroidx/compose/ui/text/style/TextMotion;Lkotlin/jvm/internal/DefaultConstructorMarker;)V
+    .line 275
+    invoke-direct/range {v0 .. v11}, Landroidx/compose/ui/text/ParagraphStyle;-><init>(IIJLandroidx/compose/ui/text/style/TextIndent;Landroidx/compose/ui/text/PlatformParagraphStyle;Landroidx/compose/ui/text/style/LineHeightStyle;IILandroidx/compose/ui/text/style/TextMotion;Lkotlin/jvm/internal/DefaultConstructorMarker;)V
+
+    return-object v12
+.end method
+
+.method public final copy-ykzQM6k(IIJLandroidx/compose/ui/text/style/TextIndent;Landroidx/compose/ui/text/PlatformParagraphStyle;Landroidx/compose/ui/text/style/LineHeightStyle;IILandroidx/compose/ui/text/style/TextMotion;)Landroidx/compose/ui/text/ParagraphStyle;
+    .locals 13
+
+    .line 357
+    new-instance v12, Landroidx/compose/ui/text/ParagraphStyle;
+
+    const/4 v11, 0x0
+
+    move-object v0, v12
+
+    move v1, p1
+
+    move v2, p2
+
+    move-wide/from16 v3, p3
+
+    move-object/from16 v5, p5
+
+    move-object/from16 v6, p6
+
+    move-object/from16 v7, p7
+
+    move/from16 v8, p8
+
+    move/from16 v9, p9
+
+    move-object/from16 v10, p10
+
+    invoke-direct/range {v0 .. v11}, Landroidx/compose/ui/text/ParagraphStyle;-><init>(IIJLandroidx/compose/ui/text/style/TextIndent;Landroidx/compose/ui/text/PlatformParagraphStyle;Landroidx/compose/ui/text/style/LineHeightStyle;IILandroidx/compose/ui/text/style/TextMotion;Lkotlin/jvm/internal/DefaultConstructorMarker;)V
 
     return-object v12
 .end method
@@ -1301,7 +2153,7 @@
 
     return v0
 
-    .line 304
+    .line 372
     :cond_0
     instance-of v1, p1, Landroidx/compose/ui/text/ParagraphStyle;
 
@@ -1311,15 +2163,15 @@
 
     return v2
 
-    .line 306
+    .line 374
     :cond_1
-    iget-object v1, p0, Landroidx/compose/ui/text/ParagraphStyle;->textAlign:Landroidx/compose/ui/text/style/TextAlign;
+    iget v1, p0, Landroidx/compose/ui/text/ParagraphStyle;->textAlign:I
 
     check-cast p1, Landroidx/compose/ui/text/ParagraphStyle;
 
-    iget-object v3, p1, Landroidx/compose/ui/text/ParagraphStyle;->textAlign:Landroidx/compose/ui/text/style/TextAlign;
+    iget v3, p1, Landroidx/compose/ui/text/ParagraphStyle;->textAlign:I
 
-    invoke-static {v1, v3}, Lkotlin/jvm/internal/Intrinsics;->areEqual(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, v3}, Landroidx/compose/ui/text/style/TextAlign;->equals-impl0(II)Z
 
     move-result v1
 
@@ -1327,13 +2179,13 @@
 
     return v2
 
-    .line 307
+    .line 375
     :cond_2
-    iget-object v1, p0, Landroidx/compose/ui/text/ParagraphStyle;->textDirection:Landroidx/compose/ui/text/style/TextDirection;
+    iget v1, p0, Landroidx/compose/ui/text/ParagraphStyle;->textDirection:I
 
-    iget-object v3, p1, Landroidx/compose/ui/text/ParagraphStyle;->textDirection:Landroidx/compose/ui/text/style/TextDirection;
+    iget v3, p1, Landroidx/compose/ui/text/ParagraphStyle;->textDirection:I
 
-    invoke-static {v1, v3}, Lkotlin/jvm/internal/Intrinsics;->areEqual(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, v3}, Landroidx/compose/ui/text/style/TextDirection;->equals-impl0(II)Z
 
     move-result v1
 
@@ -1341,7 +2193,7 @@
 
     return v2
 
-    .line 308
+    .line 376
     :cond_3
     iget-wide v3, p0, Landroidx/compose/ui/text/ParagraphStyle;->lineHeight:J
 
@@ -1355,7 +2207,7 @@
 
     return v2
 
-    .line 309
+    .line 377
     :cond_4
     iget-object v1, p0, Landroidx/compose/ui/text/ParagraphStyle;->textIndent:Landroidx/compose/ui/text/style/TextIndent;
 
@@ -1369,7 +2221,7 @@
 
     return v2
 
-    .line 310
+    .line 378
     :cond_5
     iget-object v1, p0, Landroidx/compose/ui/text/ParagraphStyle;->platformStyle:Landroidx/compose/ui/text/PlatformParagraphStyle;
 
@@ -1383,7 +2235,7 @@
 
     return v2
 
-    .line 311
+    .line 379
     :cond_6
     iget-object v1, p0, Landroidx/compose/ui/text/ParagraphStyle;->lineHeightStyle:Landroidx/compose/ui/text/style/LineHeightStyle;
 
@@ -1397,13 +2249,13 @@
 
     return v2
 
-    .line 312
+    .line 380
     :cond_7
-    iget-object v1, p0, Landroidx/compose/ui/text/ParagraphStyle;->lineBreak:Landroidx/compose/ui/text/style/LineBreak;
+    iget v1, p0, Landroidx/compose/ui/text/ParagraphStyle;->lineBreak:I
 
-    iget-object v3, p1, Landroidx/compose/ui/text/ParagraphStyle;->lineBreak:Landroidx/compose/ui/text/style/LineBreak;
+    iget v3, p1, Landroidx/compose/ui/text/ParagraphStyle;->lineBreak:I
 
-    invoke-static {v1, v3}, Lkotlin/jvm/internal/Intrinsics;->areEqual(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, v3}, Landroidx/compose/ui/text/style/LineBreak;->equals-impl0(II)Z
 
     move-result v1
 
@@ -1411,13 +2263,13 @@
 
     return v2
 
-    .line 313
+    .line 381
     :cond_8
-    iget-object v1, p0, Landroidx/compose/ui/text/ParagraphStyle;->hyphens:Landroidx/compose/ui/text/style/Hyphens;
+    iget v1, p0, Landroidx/compose/ui/text/ParagraphStyle;->hyphens:I
 
-    iget-object v3, p1, Landroidx/compose/ui/text/ParagraphStyle;->hyphens:Landroidx/compose/ui/text/style/Hyphens;
+    iget v3, p1, Landroidx/compose/ui/text/ParagraphStyle;->hyphens:I
 
-    invoke-static {v1, v3}, Lkotlin/jvm/internal/Intrinsics;->areEqual(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, v3}, Landroidx/compose/ui/text/style/Hyphens;->equals-impl0(II)Z
 
     move-result v1
 
@@ -1425,7 +2277,7 @@
 
     return v2
 
-    .line 314
+    .line 382
     :cond_9
     iget-object p0, p0, Landroidx/compose/ui/text/ParagraphStyle;->textMotion:Landroidx/compose/ui/text/style/TextMotion;
 
@@ -1446,17 +2298,21 @@
 .method public final getHyphens-EaSxIns()Landroidx/compose/ui/text/style/Hyphens;
     .locals 0
 
-    .line 74
-    iget-object p0, p0, Landroidx/compose/ui/text/ParagraphStyle;->hyphens:Landroidx/compose/ui/text/style/Hyphens;
+    .line 90
+    iget p0, p0, Landroidx/compose/ui/text/ParagraphStyle;->hyphens:I
+
+    invoke-static {p0}, Landroidx/compose/ui/text/style/Hyphens;->box-impl(I)Landroidx/compose/ui/text/style/Hyphens;
+
+    move-result-object p0
 
     return-object p0
 .end method
 
-.method public final getHyphensOrDefault-vmbZdU8$ui_text_release()I
+.method public final getHyphens-vmbZdU8()I
     .locals 0
 
-    .line 82
-    iget p0, p0, Landroidx/compose/ui/text/ParagraphStyle;->hyphensOrDefault:I
+    .line 74
+    iget p0, p0, Landroidx/compose/ui/text/ParagraphStyle;->hyphens:I
 
     return p0
 .end method
@@ -1464,17 +2320,21 @@
 .method public final getLineBreak-LgCVezo()Landroidx/compose/ui/text/style/LineBreak;
     .locals 0
 
-    .line 73
-    iget-object p0, p0, Landroidx/compose/ui/text/ParagraphStyle;->lineBreak:Landroidx/compose/ui/text/style/LineBreak;
+    .line 95
+    iget p0, p0, Landroidx/compose/ui/text/ParagraphStyle;->lineBreak:I
+
+    invoke-static {p0}, Landroidx/compose/ui/text/style/LineBreak;->box-impl(I)Landroidx/compose/ui/text/style/LineBreak;
+
+    move-result-object p0
 
     return-object p0
 .end method
 
-.method public final getLineBreakOrDefault-rAG3T2k$ui_text_release()I
+.method public final getLineBreak-rAG3T2k()I
     .locals 0
 
-    .line 81
-    iget p0, p0, Landroidx/compose/ui/text/ParagraphStyle;->lineBreakOrDefault:I
+    .line 73
+    iget p0, p0, Landroidx/compose/ui/text/ParagraphStyle;->lineBreak:I
 
     return p0
 .end method
@@ -1509,17 +2369,21 @@
 .method public final getTextAlign-buA522U()Landroidx/compose/ui/text/style/TextAlign;
     .locals 0
 
-    .line 67
-    iget-object p0, p0, Landroidx/compose/ui/text/ParagraphStyle;->textAlign:Landroidx/compose/ui/text/style/TextAlign;
+    .line 80
+    iget p0, p0, Landroidx/compose/ui/text/ParagraphStyle;->textAlign:I
+
+    invoke-static {p0}, Landroidx/compose/ui/text/style/TextAlign;->box-impl(I)Landroidx/compose/ui/text/style/TextAlign;
+
+    move-result-object p0
 
     return-object p0
 .end method
 
-.method public final getTextAlignOrDefault-e0LSkKk$ui_text_release()I
+.method public final getTextAlign-e0LSkKk()I
     .locals 0
 
-    .line 80
-    iget p0, p0, Landroidx/compose/ui/text/ParagraphStyle;->textAlignOrDefault:I
+    .line 67
+    iget p0, p0, Landroidx/compose/ui/text/ParagraphStyle;->textAlign:I
 
     return p0
 .end method
@@ -1527,10 +2391,23 @@
 .method public final getTextDirection-mmuk1to()Landroidx/compose/ui/text/style/TextDirection;
     .locals 0
 
-    .line 68
-    iget-object p0, p0, Landroidx/compose/ui/text/ParagraphStyle;->textDirection:Landroidx/compose/ui/text/style/TextDirection;
+    .line 85
+    iget p0, p0, Landroidx/compose/ui/text/ParagraphStyle;->textDirection:I
+
+    invoke-static {p0}, Landroidx/compose/ui/text/style/TextDirection;->box-impl(I)Landroidx/compose/ui/text/style/TextDirection;
+
+    move-result-object p0
 
     return-object p0
+.end method
+
+.method public final getTextDirection-s_7X-co()I
+    .locals 0
+
+    .line 68
+    iget p0, p0, Landroidx/compose/ui/text/ParagraphStyle;->textDirection:I
+
+    return p0
 .end method
 
 .method public final getTextIndent()Landroidx/compose/ui/text/style/TextIndent;
@@ -1552,179 +2429,131 @@
 .end method
 
 .method public hashCode()I
-    .locals 4
+    .locals 3
 
-    .line 320
-    iget-object v0, p0, Landroidx/compose/ui/text/ParagraphStyle;->textAlign:Landroidx/compose/ui/text/style/TextAlign;
-
-    const/4 v1, 0x0
-
-    if-eqz v0, :cond_0
-
-    invoke-virtual {v0}, Landroidx/compose/ui/text/style/TextAlign;->unbox-impl()I
-
-    move-result v0
+    .line 388
+    iget v0, p0, Landroidx/compose/ui/text/ParagraphStyle;->textAlign:I
 
     invoke-static {v0}, Landroidx/compose/ui/text/style/TextAlign;->hashCode-impl(I)I
 
     move-result v0
 
+    mul-int/lit8 v0, v0, 0x1f
+
+    .line 389
+    iget v1, p0, Landroidx/compose/ui/text/ParagraphStyle;->textDirection:I
+
+    invoke-static {v1}, Landroidx/compose/ui/text/style/TextDirection;->hashCode-impl(I)I
+
+    move-result v1
+
+    add-int/2addr v0, v1
+
+    mul-int/lit8 v0, v0, 0x1f
+
+    .line 390
+    iget-wide v1, p0, Landroidx/compose/ui/text/ParagraphStyle;->lineHeight:J
+
+    invoke-static {v1, v2}, Landroidx/compose/ui/unit/TextUnit;->hashCode-impl(J)I
+
+    move-result v1
+
+    add-int/2addr v0, v1
+
+    mul-int/lit8 v0, v0, 0x1f
+
+    .line 391
+    iget-object v1, p0, Landroidx/compose/ui/text/ParagraphStyle;->textIndent:Landroidx/compose/ui/text/style/TextIndent;
+
+    const/4 v2, 0x0
+
+    if-eqz v1, :cond_0
+
+    invoke-virtual {v1}, Landroidx/compose/ui/text/style/TextIndent;->hashCode()I
+
+    move-result v1
+
     goto :goto_0
 
     :cond_0
-    move v0, v1
+    move v1, v2
 
     :goto_0
+    add-int/2addr v0, v1
+
     mul-int/lit8 v0, v0, 0x1f
 
-    .line 321
-    iget-object v2, p0, Landroidx/compose/ui/text/ParagraphStyle;->textDirection:Landroidx/compose/ui/text/style/TextDirection;
+    .line 392
+    iget-object v1, p0, Landroidx/compose/ui/text/ParagraphStyle;->platformStyle:Landroidx/compose/ui/text/PlatformParagraphStyle;
 
-    if-eqz v2, :cond_1
+    if-eqz v1, :cond_1
 
-    invoke-virtual {v2}, Landroidx/compose/ui/text/style/TextDirection;->unbox-impl()I
+    invoke-virtual {v1}, Landroidx/compose/ui/text/PlatformParagraphStyle;->hashCode()I
 
-    move-result v2
-
-    invoke-static {v2}, Landroidx/compose/ui/text/style/TextDirection;->hashCode-impl(I)I
-
-    move-result v2
+    move-result v1
 
     goto :goto_1
 
     :cond_1
-    move v2, v1
+    move v1, v2
 
     :goto_1
-    add-int/2addr v0, v2
+    add-int/2addr v0, v1
 
     mul-int/lit8 v0, v0, 0x1f
 
-    .line 322
-    iget-wide v2, p0, Landroidx/compose/ui/text/ParagraphStyle;->lineHeight:J
+    .line 393
+    iget-object v1, p0, Landroidx/compose/ui/text/ParagraphStyle;->lineHeightStyle:Landroidx/compose/ui/text/style/LineHeightStyle;
 
-    invoke-static {v2, v3}, Landroidx/compose/ui/unit/TextUnit;->hashCode-impl(J)I
+    if-eqz v1, :cond_2
 
-    move-result v2
+    invoke-virtual {v1}, Landroidx/compose/ui/text/style/LineHeightStyle;->hashCode()I
 
-    add-int/2addr v0, v2
-
-    mul-int/lit8 v0, v0, 0x1f
-
-    .line 323
-    iget-object v2, p0, Landroidx/compose/ui/text/ParagraphStyle;->textIndent:Landroidx/compose/ui/text/style/TextIndent;
-
-    if-eqz v2, :cond_2
-
-    invoke-virtual {v2}, Landroidx/compose/ui/text/style/TextIndent;->hashCode()I
-
-    move-result v2
+    move-result v1
 
     goto :goto_2
 
     :cond_2
-    move v2, v1
+    move v1, v2
 
     :goto_2
-    add-int/2addr v0, v2
+    add-int/2addr v0, v1
 
     mul-int/lit8 v0, v0, 0x1f
 
-    .line 324
-    iget-object v2, p0, Landroidx/compose/ui/text/ParagraphStyle;->platformStyle:Landroidx/compose/ui/text/PlatformParagraphStyle;
+    .line 394
+    iget v1, p0, Landroidx/compose/ui/text/ParagraphStyle;->lineBreak:I
 
-    if-eqz v2, :cond_3
-
-    invoke-virtual {v2}, Landroidx/compose/ui/text/PlatformParagraphStyle;->hashCode()I
-
-    move-result v2
-
-    goto :goto_3
-
-    :cond_3
-    move v2, v1
-
-    :goto_3
-    add-int/2addr v0, v2
-
-    mul-int/lit8 v0, v0, 0x1f
-
-    .line 325
-    iget-object v2, p0, Landroidx/compose/ui/text/ParagraphStyle;->lineHeightStyle:Landroidx/compose/ui/text/style/LineHeightStyle;
-
-    if-eqz v2, :cond_4
-
-    invoke-virtual {v2}, Landroidx/compose/ui/text/style/LineHeightStyle;->hashCode()I
-
-    move-result v2
-
-    goto :goto_4
-
-    :cond_4
-    move v2, v1
-
-    :goto_4
-    add-int/2addr v0, v2
-
-    mul-int/lit8 v0, v0, 0x1f
-
-    .line 326
-    iget-object v2, p0, Landroidx/compose/ui/text/ParagraphStyle;->lineBreak:Landroidx/compose/ui/text/style/LineBreak;
-
-    if-eqz v2, :cond_5
-
-    invoke-virtual {v2}, Landroidx/compose/ui/text/style/LineBreak;->unbox-impl()I
-
-    move-result v2
-
-    invoke-static {v2}, Landroidx/compose/ui/text/style/LineBreak;->hashCode-impl(I)I
-
-    move-result v2
-
-    goto :goto_5
-
-    :cond_5
-    move v2, v1
-
-    :goto_5
-    add-int/2addr v0, v2
-
-    mul-int/lit8 v0, v0, 0x1f
-
-    .line 327
-    iget-object v2, p0, Landroidx/compose/ui/text/ParagraphStyle;->hyphens:Landroidx/compose/ui/text/style/Hyphens;
-
-    if-eqz v2, :cond_6
-
-    invoke-virtual {v2}, Landroidx/compose/ui/text/style/Hyphens;->unbox-impl()I
-
-    move-result v2
-
-    invoke-static {v2}, Landroidx/compose/ui/text/style/Hyphens;->hashCode-impl(I)I
-
-    move-result v2
-
-    goto :goto_6
-
-    :cond_6
-    move v2, v1
-
-    :goto_6
-    add-int/2addr v0, v2
-
-    mul-int/lit8 v0, v0, 0x1f
-
-    .line 328
-    iget-object p0, p0, Landroidx/compose/ui/text/ParagraphStyle;->textMotion:Landroidx/compose/ui/text/style/TextMotion;
-
-    if-eqz p0, :cond_7
-
-    invoke-virtual {p0}, Landroidx/compose/ui/text/style/TextMotion;->hashCode()I
+    invoke-static {v1}, Landroidx/compose/ui/text/style/LineBreak;->hashCode-impl(I)I
 
     move-result v1
 
-    :cond_7
     add-int/2addr v0, v1
+
+    mul-int/lit8 v0, v0, 0x1f
+
+    .line 395
+    iget v1, p0, Landroidx/compose/ui/text/ParagraphStyle;->hyphens:I
+
+    invoke-static {v1}, Landroidx/compose/ui/text/style/Hyphens;->hashCode-impl(I)I
+
+    move-result v1
+
+    add-int/2addr v0, v1
+
+    mul-int/lit8 v0, v0, 0x1f
+
+    .line 396
+    iget-object p0, p0, Landroidx/compose/ui/text/ParagraphStyle;->textMotion:Landroidx/compose/ui/text/style/TextMotion;
+
+    if-eqz p0, :cond_3
+
+    invoke-virtual {p0}, Landroidx/compose/ui/text/style/TextMotion;->hashCode()I
+
+    move-result v2
+
+    :cond_3
+    add-int/2addr v0, v2
 
     return v0
 .end method
@@ -1736,38 +2565,38 @@
 
     return-object p0
 
-    .line 179
+    .line 218
     :cond_0
-    iget-object v1, p1, Landroidx/compose/ui/text/ParagraphStyle;->textAlign:Landroidx/compose/ui/text/style/TextAlign;
+    iget v1, p1, Landroidx/compose/ui/text/ParagraphStyle;->textAlign:I
 
-    .line 180
-    iget-object v2, p1, Landroidx/compose/ui/text/ParagraphStyle;->textDirection:Landroidx/compose/ui/text/style/TextDirection;
+    .line 219
+    iget v2, p1, Landroidx/compose/ui/text/ParagraphStyle;->textDirection:I
 
-    .line 181
+    .line 220
     iget-wide v3, p1, Landroidx/compose/ui/text/ParagraphStyle;->lineHeight:J
 
-    .line 182
+    .line 221
     iget-object v5, p1, Landroidx/compose/ui/text/ParagraphStyle;->textIndent:Landroidx/compose/ui/text/style/TextIndent;
 
-    .line 183
+    .line 222
     iget-object v6, p1, Landroidx/compose/ui/text/ParagraphStyle;->platformStyle:Landroidx/compose/ui/text/PlatformParagraphStyle;
 
-    .line 184
+    .line 223
     iget-object v7, p1, Landroidx/compose/ui/text/ParagraphStyle;->lineHeightStyle:Landroidx/compose/ui/text/style/LineHeightStyle;
 
-    .line 185
-    iget-object v8, p1, Landroidx/compose/ui/text/ParagraphStyle;->lineBreak:Landroidx/compose/ui/text/style/LineBreak;
+    .line 224
+    iget v8, p1, Landroidx/compose/ui/text/ParagraphStyle;->lineBreak:I
 
-    .line 186
-    iget-object v9, p1, Landroidx/compose/ui/text/ParagraphStyle;->hyphens:Landroidx/compose/ui/text/style/Hyphens;
+    .line 225
+    iget v9, p1, Landroidx/compose/ui/text/ParagraphStyle;->hyphens:I
 
-    .line 187
+    .line 226
     iget-object v10, p1, Landroidx/compose/ui/text/ParagraphStyle;->textMotion:Landroidx/compose/ui/text/style/TextMotion;
 
     move-object v0, p0
 
-    .line 178
-    invoke-static/range {v0 .. v10}, Landroidx/compose/ui/text/ParagraphStyleKt;->fastMerge-HtYhynw(Landroidx/compose/ui/text/ParagraphStyle;Landroidx/compose/ui/text/style/TextAlign;Landroidx/compose/ui/text/style/TextDirection;JLandroidx/compose/ui/text/style/TextIndent;Landroidx/compose/ui/text/PlatformParagraphStyle;Landroidx/compose/ui/text/style/LineHeightStyle;Landroidx/compose/ui/text/style/LineBreak;Landroidx/compose/ui/text/style/Hyphens;Landroidx/compose/ui/text/style/TextMotion;)Landroidx/compose/ui/text/ParagraphStyle;
+    .line 217
+    invoke-static/range {v0 .. v10}, Landroidx/compose/ui/text/ParagraphStyleKt;->fastMerge-j5T8yCg(Landroidx/compose/ui/text/ParagraphStyle;IIJLandroidx/compose/ui/text/style/TextIndent;Landroidx/compose/ui/text/PlatformParagraphStyle;Landroidx/compose/ui/text/style/LineHeightStyle;IILandroidx/compose/ui/text/style/TextMotion;)Landroidx/compose/ui/text/ParagraphStyle;
 
     move-result-object p0
 
@@ -1775,13 +2604,9 @@
 .end method
 
 .method public final plus(Landroidx/compose/ui/text/ParagraphStyle;)Landroidx/compose/ui/text/ParagraphStyle;
-    .locals 1
+    .locals 0
 
-    const-string v0, "other"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 195
+    .line 234
     invoke-virtual {p0, p1}, Landroidx/compose/ui/text/ParagraphStyle;->merge(Landroidx/compose/ui/text/ParagraphStyle;)Landroidx/compose/ui/text/ParagraphStyle;
 
     move-result-object p0
@@ -1792,49 +2617,57 @@
 .method public toString()Ljava/lang/String;
     .locals 3
 
-    .line 333
+    .line 401
     new-instance v0, Ljava/lang/StringBuilder;
 
     const-string v1, "ParagraphStyle(textAlign="
 
     invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
-    .line 334
-    iget-object v1, p0, Landroidx/compose/ui/text/ParagraphStyle;->textAlign:Landroidx/compose/ui/text/style/TextAlign;
+    .line 402
+    iget v1, p0, Landroidx/compose/ui/text/ParagraphStyle;->textAlign:I
 
-    .line 333
+    .line 401
+    invoke-static {v1}, Landroidx/compose/ui/text/style/TextAlign;->toString-impl(I)Ljava/lang/String;
+
+    move-result-object v1
+
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
     move-result-object v0
 
-    .line 334
+    .line 402
     const-string v1, ", textDirection="
 
-    .line 333
+    .line 401
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v0
 
-    .line 335
-    iget-object v1, p0, Landroidx/compose/ui/text/ParagraphStyle;->textDirection:Landroidx/compose/ui/text/style/TextDirection;
+    .line 403
+    iget v1, p0, Landroidx/compose/ui/text/ParagraphStyle;->textDirection:I
 
-    .line 333
+    .line 401
+    invoke-static {v1}, Landroidx/compose/ui/text/style/TextDirection;->toString-impl(I)Ljava/lang/String;
+
+    move-result-object v1
+
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
     move-result-object v0
 
-    .line 335
+    .line 403
     const-string v1, ", lineHeight="
 
-    .line 333
+    .line 401
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v0
 
-    .line 336
+    .line 404
     iget-wide v1, p0, Landroidx/compose/ui/text/ParagraphStyle;->lineHeight:J
 
-    .line 333
+    .line 401
     invoke-static {v1, v2}, Landroidx/compose/ui/unit/TextUnit;->toString-impl(J)Ljava/lang/String;
 
     move-result-object v1
@@ -1843,98 +2676,106 @@
 
     move-result-object v0
 
-    .line 336
+    .line 404
     const-string v1, ", textIndent="
 
-    .line 333
+    .line 401
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v0
 
-    .line 337
+    .line 405
     iget-object v1, p0, Landroidx/compose/ui/text/ParagraphStyle;->textIndent:Landroidx/compose/ui/text/style/TextIndent;
 
-    .line 333
+    .line 401
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
     move-result-object v0
 
-    .line 337
+    .line 405
     const-string v1, ", platformStyle="
 
-    .line 333
+    .line 401
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v0
 
-    .line 338
+    .line 406
     iget-object v1, p0, Landroidx/compose/ui/text/ParagraphStyle;->platformStyle:Landroidx/compose/ui/text/PlatformParagraphStyle;
 
-    .line 333
+    .line 401
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
     move-result-object v0
 
-    .line 338
+    .line 406
     const-string v1, ", lineHeightStyle="
 
-    .line 333
+    .line 401
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v0
 
-    .line 339
+    .line 407
     iget-object v1, p0, Landroidx/compose/ui/text/ParagraphStyle;->lineHeightStyle:Landroidx/compose/ui/text/style/LineHeightStyle;
 
-    .line 333
+    .line 401
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
     move-result-object v0
 
-    .line 339
+    .line 407
     const-string v1, ", lineBreak="
 
-    .line 333
+    .line 401
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v0
 
-    .line 340
-    iget-object v1, p0, Landroidx/compose/ui/text/ParagraphStyle;->lineBreak:Landroidx/compose/ui/text/style/LineBreak;
+    .line 408
+    iget v1, p0, Landroidx/compose/ui/text/ParagraphStyle;->lineBreak:I
 
-    .line 333
+    .line 401
+    invoke-static {v1}, Landroidx/compose/ui/text/style/LineBreak;->toString-impl(I)Ljava/lang/String;
+
+    move-result-object v1
+
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
     move-result-object v0
 
-    .line 340
+    .line 408
     const-string v1, ", hyphens="
 
-    .line 333
+    .line 401
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v0
 
-    .line 341
-    iget-object v1, p0, Landroidx/compose/ui/text/ParagraphStyle;->hyphens:Landroidx/compose/ui/text/style/Hyphens;
+    .line 409
+    iget v1, p0, Landroidx/compose/ui/text/ParagraphStyle;->hyphens:I
 
-    .line 333
+    .line 401
+    invoke-static {v1}, Landroidx/compose/ui/text/style/Hyphens;->toString-impl(I)Ljava/lang/String;
+
+    move-result-object v1
+
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
     move-result-object v0
 
-    .line 341
+    .line 409
     const-string v1, ", textMotion="
 
-    .line 333
+    .line 401
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v0
 
-    .line 342
+    .line 410
     iget-object p0, p0, Landroidx/compose/ui/text/ParagraphStyle;->textMotion:Landroidx/compose/ui/text/style/TextMotion;
 
-    .line 333
+    .line 401
     invoke-virtual {v0, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
     move-result-object p0

@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Landroidx/compose/material/NavigationRailKt;->NavigationRail-HsRjFd4(Landroidx/compose/ui/Modifier;JJFLkotlin/jvm/functions/Function3;Lkotlin/jvm/functions/Function3;Landroidx/compose/runtime/Composer;II)V
+    value = Landroidx/compose/material/NavigationRailKt;->NavigationRail-afqeVBk(Landroidx/compose/foundation/layout/WindowInsets;Landroidx/compose/ui/Modifier;JJFLkotlin/jvm/functions/Function3;Lkotlin/jvm/functions/Function3;Landroidx/compose/runtime/Composer;II)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -77,13 +77,16 @@
 
 .field final synthetic $modifier:Landroidx/compose/ui/Modifier;
 
+.field final synthetic $windowInsets:Landroidx/compose/foundation/layout/WindowInsets;
+
 
 # direct methods
-.method constructor <init>(Landroidx/compose/ui/Modifier;JJFLkotlin/jvm/functions/Function3;Lkotlin/jvm/functions/Function3;II)V
+.method constructor <init>(Landroidx/compose/foundation/layout/WindowInsets;Landroidx/compose/ui/Modifier;JJFLkotlin/jvm/functions/Function3;Lkotlin/jvm/functions/Function3;II)V
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
+            "Landroidx/compose/foundation/layout/WindowInsets;",
             "Landroidx/compose/ui/Modifier;",
             "JJF",
             "Lkotlin/jvm/functions/Function3<",
@@ -107,21 +110,23 @@
         }
     .end annotation
 
-    iput-object p1, p0, Landroidx/compose/material/NavigationRailKt$NavigationRail$2;->$modifier:Landroidx/compose/ui/Modifier;
+    iput-object p1, p0, Landroidx/compose/material/NavigationRailKt$NavigationRail$2;->$windowInsets:Landroidx/compose/foundation/layout/WindowInsets;
 
-    iput-wide p2, p0, Landroidx/compose/material/NavigationRailKt$NavigationRail$2;->$backgroundColor:J
+    iput-object p2, p0, Landroidx/compose/material/NavigationRailKt$NavigationRail$2;->$modifier:Landroidx/compose/ui/Modifier;
 
-    iput-wide p4, p0, Landroidx/compose/material/NavigationRailKt$NavigationRail$2;->$contentColor:J
+    iput-wide p3, p0, Landroidx/compose/material/NavigationRailKt$NavigationRail$2;->$backgroundColor:J
 
-    iput p6, p0, Landroidx/compose/material/NavigationRailKt$NavigationRail$2;->$elevation:F
+    iput-wide p5, p0, Landroidx/compose/material/NavigationRailKt$NavigationRail$2;->$contentColor:J
 
-    iput-object p7, p0, Landroidx/compose/material/NavigationRailKt$NavigationRail$2;->$header:Lkotlin/jvm/functions/Function3;
+    iput p7, p0, Landroidx/compose/material/NavigationRailKt$NavigationRail$2;->$elevation:F
 
-    iput-object p8, p0, Landroidx/compose/material/NavigationRailKt$NavigationRail$2;->$content:Lkotlin/jvm/functions/Function3;
+    iput-object p8, p0, Landroidx/compose/material/NavigationRailKt$NavigationRail$2;->$header:Lkotlin/jvm/functions/Function3;
 
-    iput p9, p0, Landroidx/compose/material/NavigationRailKt$NavigationRail$2;->$$changed:I
+    iput-object p9, p0, Landroidx/compose/material/NavigationRailKt$NavigationRail$2;->$content:Lkotlin/jvm/functions/Function3;
 
-    iput p10, p0, Landroidx/compose/material/NavigationRailKt$NavigationRail$2;->$$default:I
+    iput p10, p0, Landroidx/compose/material/NavigationRailKt$NavigationRail$2;->$$changed:I
+
+    iput p11, p0, Landroidx/compose/material/NavigationRailKt$NavigationRail$2;->$$default:I
 
     const/4 p1, 0x2
 
@@ -151,19 +156,21 @@
 .end method
 
 .method public final invoke(Landroidx/compose/runtime/Composer;I)V
-    .locals 11
+    .locals 12
 
-    iget-object v0, p0, Landroidx/compose/material/NavigationRailKt$NavigationRail$2;->$modifier:Landroidx/compose/ui/Modifier;
+    iget-object v0, p0, Landroidx/compose/material/NavigationRailKt$NavigationRail$2;->$windowInsets:Landroidx/compose/foundation/layout/WindowInsets;
 
-    iget-wide v1, p0, Landroidx/compose/material/NavigationRailKt$NavigationRail$2;->$backgroundColor:J
+    iget-object v1, p0, Landroidx/compose/material/NavigationRailKt$NavigationRail$2;->$modifier:Landroidx/compose/ui/Modifier;
 
-    iget-wide v3, p0, Landroidx/compose/material/NavigationRailKt$NavigationRail$2;->$contentColor:J
+    iget-wide v2, p0, Landroidx/compose/material/NavigationRailKt$NavigationRail$2;->$backgroundColor:J
 
-    iget v5, p0, Landroidx/compose/material/NavigationRailKt$NavigationRail$2;->$elevation:F
+    iget-wide v4, p0, Landroidx/compose/material/NavigationRailKt$NavigationRail$2;->$contentColor:J
 
-    iget-object v6, p0, Landroidx/compose/material/NavigationRailKt$NavigationRail$2;->$header:Lkotlin/jvm/functions/Function3;
+    iget v6, p0, Landroidx/compose/material/NavigationRailKt$NavigationRail$2;->$elevation:F
 
-    iget-object v7, p0, Landroidx/compose/material/NavigationRailKt$NavigationRail$2;->$content:Lkotlin/jvm/functions/Function3;
+    iget-object v7, p0, Landroidx/compose/material/NavigationRailKt$NavigationRail$2;->$header:Lkotlin/jvm/functions/Function3;
+
+    iget-object v8, p0, Landroidx/compose/material/NavigationRailKt$NavigationRail$2;->$content:Lkotlin/jvm/functions/Function3;
 
     iget p2, p0, Landroidx/compose/material/NavigationRailKt$NavigationRail$2;->$$changed:I
 
@@ -171,13 +178,13 @@
 
     invoke-static {p2}, Landroidx/compose/runtime/RecomposeScopeImplKt;->updateChangedFlags(I)I
 
-    move-result v9
+    move-result v10
 
-    iget v10, p0, Landroidx/compose/material/NavigationRailKt$NavigationRail$2;->$$default:I
+    iget v11, p0, Landroidx/compose/material/NavigationRailKt$NavigationRail$2;->$$default:I
 
-    move-object v8, p1
+    move-object v9, p1
 
-    invoke-static/range {v0 .. v10}, Landroidx/compose/material/NavigationRailKt;->NavigationRail-HsRjFd4(Landroidx/compose/ui/Modifier;JJFLkotlin/jvm/functions/Function3;Lkotlin/jvm/functions/Function3;Landroidx/compose/runtime/Composer;II)V
+    invoke-static/range {v0 .. v11}, Landroidx/compose/material/NavigationRailKt;->NavigationRail-afqeVBk(Landroidx/compose/foundation/layout/WindowInsets;Landroidx/compose/ui/Modifier;JJFLkotlin/jvm/functions/Function3;Lkotlin/jvm/functions/Function3;Landroidx/compose/runtime/Composer;II)V
 
     return-void
 .end method

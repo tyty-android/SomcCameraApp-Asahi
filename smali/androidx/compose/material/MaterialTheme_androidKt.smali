@@ -45,10 +45,6 @@
         }
     .end annotation
 
-    const-string v0, "content"
-
-    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
     const v0, -0x4eda09f6
 
     .line 22
@@ -146,11 +142,8 @@
 
     move-result-object p1
 
-    if-nez p1, :cond_6
+    if-eqz p1, :cond_6
 
-    goto :goto_4
-
-    :cond_6
     new-instance v0, Landroidx/compose/material/MaterialTheme_androidKt$PlatformMaterialTheme$1;
 
     invoke-direct {v0, p0, p2}, Landroidx/compose/material/MaterialTheme_androidKt$PlatformMaterialTheme$1;-><init>(Lkotlin/jvm/functions/Function2;I)V
@@ -159,6 +152,6 @@
 
     invoke-interface {p1, v0}, Landroidx/compose/runtime/ScopeUpdateScope;->updateScope(Lkotlin/jvm/functions/Function2;)V
 
-    :goto_4
+    :cond_6
     return-void
 .end method

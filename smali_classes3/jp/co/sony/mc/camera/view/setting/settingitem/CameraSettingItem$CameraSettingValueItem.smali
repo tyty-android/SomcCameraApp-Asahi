@@ -46,7 +46,7 @@
 
 .field private mItemType:Ljp/co/sony/mc/camera/view/setting/settingitem/CameraSettingItem$CameraSettingValueItem$ItemType;
 
-.field private mNameResId:I
+.field private mNameString:Ljava/lang/String;
 
 .field private mSubDescriptionText:Ljava/lang/String;
 
@@ -54,13 +54,13 @@
 
 
 # direct methods
-.method constructor <init>(Ljp/co/sony/mc/camera/configuration/parameters/UserSettingValue;ILjp/co/sony/mc/camera/view/setting/settingitem/CameraSettingItem$CameraSettingValueItem$ItemType;Ljava/lang/String;Ljava/lang/String;ZLjp/co/sony/mc/camera/setting/SettingAppearance;ZLjava/util/ArrayList;Z)V
+.method constructor <init>(Ljp/co/sony/mc/camera/configuration/parameters/UserSettingValue;Ljava/lang/String;Ljp/co/sony/mc/camera/view/setting/settingitem/CameraSettingItem$CameraSettingValueItem$ItemType;Ljava/lang/String;Ljava/lang/String;ZLjp/co/sony/mc/camera/setting/SettingAppearance;ZLjava/util/ArrayList;Z)V
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
             "Ljp/co/sony/mc/camera/configuration/parameters/UserSettingValue;",
-            "I",
+            "Ljava/lang/String;",
             "Ljp/co/sony/mc/camera/view/setting/settingitem/CameraSettingItem$CameraSettingValueItem$ItemType;",
             "Ljava/lang/String;",
             "Ljava/lang/String;",
@@ -83,7 +83,7 @@
     iput-object p3, p0, Ljp/co/sony/mc/camera/view/setting/settingitem/CameraSettingItem$CameraSettingValueItem;->mItemType:Ljp/co/sony/mc/camera/view/setting/settingitem/CameraSettingItem$CameraSettingValueItem$ItemType;
 
     .line 269
-    iput p2, p0, Ljp/co/sony/mc/camera/view/setting/settingitem/CameraSettingItem$CameraSettingValueItem;->mNameResId:I
+    iput-object p2, p0, Ljp/co/sony/mc/camera/view/setting/settingitem/CameraSettingItem$CameraSettingValueItem;->mNameString:Ljava/lang/String;
 
     .line 270
     iput-object p4, p0, Ljp/co/sony/mc/camera/view/setting/settingitem/CameraSettingItem$CameraSettingValueItem;->mSubDescriptionText:Ljava/lang/String;
@@ -155,13 +155,13 @@
     return-object p0
 .end method
 
-.method public getNameResId()I
+.method public getNameString()Ljava/lang/String;
     .locals 0
 
     .line 303
-    iget p0, p0, Ljp/co/sony/mc/camera/view/setting/settingitem/CameraSettingItem$CameraSettingValueItem;->mNameResId:I
+    iget-object p0, p0, Ljp/co/sony/mc/camera/view/setting/settingitem/CameraSettingItem$CameraSettingValueItem;->mNameString:Ljava/lang/String;
 
-    return p0
+    return-object p0
 .end method
 
 .method public getSubDescriptionText()Ljava/lang/String;

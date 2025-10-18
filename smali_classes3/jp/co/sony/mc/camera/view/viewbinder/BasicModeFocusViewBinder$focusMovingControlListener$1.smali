@@ -31,8 +31,8 @@
     }
     k = 0x1
     mv = {
-        0x1,
-        0x9,
+        0x2,
+        0x0,
         0x0
     }
     xi = 0x30
@@ -80,17 +80,9 @@
 
     move-result-object v0
 
-    invoke-virtual {v0}, Ljp/co/sony/mc/camera/view/uistate/BasicModeCommonUiState;->getCameraIdFromZoomRatio()Landroidx/lifecycle/LiveData;
+    invoke-virtual {v0}, Ljp/co/sony/mc/camera/view/uistate/BasicModeCommonUiState;->getCameraIdFromZoomRatio()Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;
 
     move-result-object v0
-
-    invoke-virtual {v0}, Landroidx/lifecycle/LiveData;->getValue()Ljava/lang/Object;
-
-    move-result-object v0
-
-    invoke-static {v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;)V
-
-    check-cast v0, Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;
 
     .line 55
     invoke-static {v0, p1}, Ljp/co/sony/mc/camera/configuration/parameters/FocusDistance;->calculateFocusDistance(Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;F)F

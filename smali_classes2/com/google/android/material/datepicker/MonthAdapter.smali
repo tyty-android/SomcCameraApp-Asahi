@@ -130,7 +130,7 @@
 .method private getDayContentDescription(Landroid/content/Context;J)Ljava/lang/String;
     .locals 6
 
-    .line 243
+    .line 245
     invoke-direct {p0, p2, p3}, Lcom/google/android/material/datepicker/MonthAdapter;->isToday(J)Z
 
     move-result v3
@@ -147,7 +147,7 @@
 
     move-wide v1, p2
 
-    .line 242
+    .line 244
     invoke-static/range {v0 .. v5}, Lcom/google/android/material/datepicker/DateStrings;->getDayContentDescription(Landroid/content/Context;JZZZ)Ljava/lang/String;
 
     move-result-object p0
@@ -158,12 +158,12 @@
 .method private initializeStyles(Landroid/content/Context;)V
     .locals 1
 
-    .line 280
+    .line 282
     iget-object v0, p0, Lcom/google/android/material/datepicker/MonthAdapter;->calendarStyle:Lcom/google/android/material/datepicker/CalendarStyle;
 
     if-nez v0, :cond_0
 
-    .line 281
+    .line 283
     new-instance v0, Lcom/google/android/material/datepicker/CalendarStyle;
 
     invoke-direct {v0, p1}, Lcom/google/android/material/datepicker/CalendarStyle;-><init>(Landroid/content/Context;)V
@@ -177,7 +177,7 @@
 .method private isSelected(J)Z
     .locals 4
 
-    .line 271
+    .line 273
     iget-object p0, p0, Lcom/google/android/material/datepicker/MonthAdapter;->dateSelector:Lcom/google/android/material/datepicker/DateSelector;
 
     invoke-interface {p0}, Lcom/google/android/material/datepicker/DateSelector;->getSelectedDays()Ljava/util/Collection;
@@ -205,7 +205,7 @@
 
     move-result-wide v0
 
-    .line 272
+    .line 274
     invoke-static {p1, p2}, Lcom/google/android/material/datepicker/UtcDates;->canonicalYearMonthDay(J)J
 
     move-result-wide v2
@@ -231,7 +231,7 @@
 .method private isToday(J)Z
     .locals 2
 
-    .line 247
+    .line 249
     invoke-static {}, Lcom/google/android/material/datepicker/UtcDates;->getTodayCalendar()Ljava/util/Calendar;
 
     move-result-object p0
@@ -402,42 +402,50 @@
     .line 216
     invoke-virtual/range {v2 .. v8}, Lcom/google/android/material/datepicker/DayViewDecorator;->getBackgroundColor(Landroid/content/Context;IIIZZ)Landroid/content/res/ColorStateList;
 
-    move-result-object v2
+    move-result-object v8
 
     .line 217
-    invoke-virtual {v12, v1, v2}, Lcom/google/android/material/datepicker/CalendarItemStyle;->styleItem(Landroid/widget/TextView;Landroid/content/res/ColorStateList;)V
-
-    .line 219
     iget-object v2, v0, Lcom/google/android/material/datepicker/MonthAdapter;->dayViewDecorator:Lcom/google/android/material/datepicker/DayViewDecorator;
 
     move/from16 v5, v16
-
-    .line 220
-    invoke-virtual/range {v2 .. v8}, Lcom/google/android/material/datepicker/DayViewDecorator;->getCompoundDrawableLeft(Landroid/content/Context;IIIZZ)Landroid/graphics/drawable/Drawable;
-
-    move-result-object v12
-
-    .line 222
-    iget-object v2, v0, Lcom/google/android/material/datepicker/MonthAdapter;->dayViewDecorator:Lcom/google/android/material/datepicker/DayViewDecorator;
-
-    .line 223
-    invoke-virtual/range {v2 .. v8}, Lcom/google/android/material/datepicker/DayViewDecorator;->getCompoundDrawableTop(Landroid/content/Context;IIIZZ)Landroid/graphics/drawable/Drawable;
-
-    move-result-object v8
-
-    .line 224
-    iget-object v2, v0, Lcom/google/android/material/datepicker/MonthAdapter;->dayViewDecorator:Lcom/google/android/material/datepicker/DayViewDecorator;
 
     move-object v14, v8
 
     move v8, v13
 
+    .line 218
+    invoke-virtual/range {v2 .. v8}, Lcom/google/android/material/datepicker/DayViewDecorator;->getTextColor(Landroid/content/Context;IIIZZ)Landroid/content/res/ColorStateList;
+
+    move-result-object v2
+
+    .line 219
+    invoke-virtual {v12, v1, v14, v2}, Lcom/google/android/material/datepicker/CalendarItemStyle;->styleItem(Landroid/widget/TextView;Landroid/content/res/ColorStateList;Landroid/content/res/ColorStateList;)V
+
+    .line 221
+    iget-object v2, v0, Lcom/google/android/material/datepicker/MonthAdapter;->dayViewDecorator:Lcom/google/android/material/datepicker/DayViewDecorator;
+
+    .line 222
+    invoke-virtual/range {v2 .. v8}, Lcom/google/android/material/datepicker/DayViewDecorator;->getCompoundDrawableLeft(Landroid/content/Context;IIIZZ)Landroid/graphics/drawable/Drawable;
+
+    move-result-object v12
+
+    .line 224
+    iget-object v2, v0, Lcom/google/android/material/datepicker/MonthAdapter;->dayViewDecorator:Lcom/google/android/material/datepicker/DayViewDecorator;
+
     .line 225
+    invoke-virtual/range {v2 .. v8}, Lcom/google/android/material/datepicker/DayViewDecorator;->getCompoundDrawableTop(Landroid/content/Context;IIIZZ)Landroid/graphics/drawable/Drawable;
+
+    move-result-object v14
+
+    .line 226
+    iget-object v2, v0, Lcom/google/android/material/datepicker/MonthAdapter;->dayViewDecorator:Lcom/google/android/material/datepicker/DayViewDecorator;
+
+    .line 227
     invoke-virtual/range {v2 .. v8}, Lcom/google/android/material/datepicker/DayViewDecorator;->getCompoundDrawableRight(Landroid/content/Context;IIIZZ)Landroid/graphics/drawable/Drawable;
 
     move-result-object v8
 
-    .line 227
+    .line 229
     iget-object v2, v0, Lcom/google/android/material/datepicker/MonthAdapter;->dayViewDecorator:Lcom/google/android/material/datepicker/DayViewDecorator;
 
     move-object/from16 v17, v10
@@ -446,30 +454,30 @@
 
     move v8, v13
 
-    .line 228
+    .line 230
     invoke-virtual/range {v2 .. v8}, Lcom/google/android/material/datepicker/DayViewDecorator;->getCompoundDrawableBottom(Landroid/content/Context;IIIZZ)Landroid/graphics/drawable/Drawable;
 
     move-result-object v2
 
-    .line 230
+    .line 232
     invoke-virtual {v1, v12, v14, v10, v2}, Landroid/widget/TextView;->setCompoundDrawables(Landroid/graphics/drawable/Drawable;Landroid/graphics/drawable/Drawable;Landroid/graphics/drawable/Drawable;Landroid/graphics/drawable/Drawable;)V
 
-    .line 232
+    .line 234
     iget-object v2, v0, Lcom/google/android/material/datepicker/MonthAdapter;->dayViewDecorator:Lcom/google/android/material/datepicker/DayViewDecorator;
 
     move-object/from16 v9, v17
 
-    .line 233
+    .line 235
     invoke-virtual/range {v2 .. v9}, Lcom/google/android/material/datepicker/DayViewDecorator;->getContentDescription(Landroid/content/Context;IIIZZLjava/lang/CharSequence;)Ljava/lang/CharSequence;
 
     move-result-object v0
 
-    .line 235
+    .line 237
     invoke-virtual {v1, v0}, Landroid/widget/TextView;->setContentDescription(Ljava/lang/CharSequence;)V
 
     goto :goto_2
 
-    .line 237
+    .line 239
     :cond_4
     invoke-virtual {v12, v1}, Lcom/google/android/material/datepicker/CalendarItemStyle;->styleItem(Landroid/widget/TextView;)V
 
@@ -536,7 +544,7 @@
 
     add-int/lit8 p1, p1, -0x1
 
-    .line 321
+    .line 323
     invoke-virtual {p0}, Lcom/google/android/material/datepicker/MonthAdapter;->firstPositionInMonth()I
 
     move-result p0
@@ -549,7 +557,7 @@
 .method firstPositionInMonth()I
     .locals 1
 
-    .line 293
+    .line 295
     iget-object v0, p0, Lcom/google/android/material/datepicker/MonthAdapter;->month:Lcom/google/android/material/datepicker/Month;
 
     iget-object p0, p0, Lcom/google/android/material/datepicker/MonthAdapter;->calendarConstraints:Lcom/google/android/material/datepicker/CalendarConstraints;
@@ -802,7 +810,7 @@
 .method isEndOfRange(J)Z
     .locals 2
 
-    .line 262
+    .line 264
     iget-object p0, p0, Lcom/google/android/material/datepicker/MonthAdapter;->dateSelector:Lcom/google/android/material/datepicker/DateSelector;
 
     invoke-interface {p0}, Lcom/google/android/material/datepicker/DateSelector;->getSelectedRanges()Ljava/util/Collection;
@@ -826,7 +834,7 @@
 
     check-cast v0, Landroidx/core/util/Pair;
 
-    .line 263
+    .line 265
     iget-object v1, v0, Landroidx/core/util/Pair;->second:Ljava/lang/Object;
 
     if-eqz v1, :cond_0
@@ -856,7 +864,7 @@
 .method isFirstInRow(I)Z
     .locals 0
 
-    .line 334
+    .line 336
     iget-object p0, p0, Lcom/google/android/material/datepicker/MonthAdapter;->month:Lcom/google/android/material/datepicker/Month;
 
     iget p0, p0, Lcom/google/android/material/datepicker/Month;->daysInWeek:I
@@ -883,7 +891,7 @@
 
     add-int/2addr p1, v0
 
-    .line 342
+    .line 344
     iget-object p0, p0, Lcom/google/android/material/datepicker/MonthAdapter;->month:Lcom/google/android/material/datepicker/Month;
 
     iget p0, p0, Lcom/google/android/material/datepicker/Month;->daysInWeek:I
@@ -904,7 +912,7 @@
 .method isStartOfRange(J)Z
     .locals 2
 
-    .line 252
+    .line 254
     iget-object p0, p0, Lcom/google/android/material/datepicker/MonthAdapter;->dateSelector:Lcom/google/android/material/datepicker/DateSelector;
 
     invoke-interface {p0}, Lcom/google/android/material/datepicker/DateSelector;->getSelectedRanges()Ljava/util/Collection;
@@ -928,7 +936,7 @@
 
     check-cast v0, Landroidx/core/util/Pair;
 
-    .line 253
+    .line 255
     iget-object v1, v0, Landroidx/core/util/Pair;->first:Ljava/lang/Object;
 
     if-eqz v1, :cond_0
@@ -958,7 +966,7 @@
 .method lastPositionInMonth()I
     .locals 1
 
-    .line 304
+    .line 306
     invoke-virtual {p0}, Lcom/google/android/material/datepicker/MonthAdapter;->firstPositionInMonth()I
 
     move-result v0
@@ -977,7 +985,7 @@
 .method positionToDay(I)I
     .locals 0
 
-    .line 315
+    .line 317
     invoke-virtual {p0}, Lcom/google/android/material/datepicker/MonthAdapter;->firstPositionInMonth()I
 
     move-result p0
@@ -1075,7 +1083,7 @@
 .method withinMonth(I)Z
     .locals 1
 
-    .line 326
+    .line 328
     invoke-virtual {p0}, Lcom/google/android/material/datepicker/MonthAdapter;->firstPositionInMonth()I
 
     move-result v0

@@ -54,7 +54,7 @@
 .method private finishZoomIfNeeded()V
     .locals 2
 
-    .line 432
+    .line 437
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/EventProcedure$PinchZoomEventProcedure;->this$0:Ljp/co/sony/mc/camera/view/EventProcedure;
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/view/EventProcedure;->-$$Nest$fgetmFragmentController(Ljp/co/sony/mc/camera/view/EventProcedure;)Ljp/co/sony/mc/camera/view/FragmentController;
@@ -71,7 +71,7 @@
 
     if-eqz v0, :cond_1
 
-    .line 433
+    .line 438
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/EventProcedure$PinchZoomEventProcedure;->this$0:Ljp/co/sony/mc/camera/view/EventProcedure;
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/view/EventProcedure;->-$$Nest$fgetmFragmentController(Ljp/co/sony/mc/camera/view/EventProcedure;)Ljp/co/sony/mc/camera/view/FragmentController;
@@ -80,7 +80,7 @@
 
     invoke-virtual {v0}, Ljp/co/sony/mc/camera/view/FragmentController;->finishZoom()V
 
-    .line 434
+    .line 439
     iget v0, p0, Ljp/co/sony/mc/camera/view/EventProcedure$PinchZoomEventProcedure;->mInitialZoomStep:I
 
     iget-object v1, p0, Ljp/co/sony/mc/camera/view/EventProcedure$PinchZoomEventProcedure;->mVariableIndex:Ljp/co/sony/mc/camera/view/angle/VariableIndex;
@@ -91,7 +91,7 @@
 
     if-eq v0, v1, :cond_0
 
-    .line 435
+    .line 440
     new-instance v0, Ljp/co/sony/mc/camera/idd/event/IddSettingEvent;
 
     invoke-direct {v0}, Ljp/co/sony/mc/camera/idd/event/IddSettingEvent;-><init>()V
@@ -104,15 +104,15 @@
 
     sget-object v1, Ljp/co/sony/mc/camera/setting/CameraSettings;->ZOOM_RATIO:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
 
-    .line 436
+    .line 441
     invoke-virtual {v0, v1}, Ljp/co/sony/mc/camera/idd/event/IddSettingEvent;->setting(Ljp/co/sony/mc/camera/setting/SettingKey$Key;)Ljp/co/sony/mc/camera/idd/event/IddSettingEvent;
 
     move-result-object v0
 
-    .line 437
+    .line 442
     invoke-virtual {v0}, Ljp/co/sony/mc/camera/idd/event/IddSettingEvent;->send()V
 
-    .line 438
+    .line 443
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/EventProcedure$PinchZoomEventProcedure;->this$0:Ljp/co/sony/mc/camera/view/EventProcedure;
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/view/EventProcedure;->-$$Nest$fgetmFragmentController(Ljp/co/sony/mc/camera/view/EventProcedure;)Ljp/co/sony/mc/camera/view/FragmentController;
@@ -125,16 +125,16 @@
 
     if-eqz v0, :cond_0
 
-    .line 439
+    .line 444
     sget-object v0, Ljp/co/sony/mc/camera/idd/event/IddRecordingEvent;->Context:Ljp/co/sony/mc/camera/idd/event/IddRecordingEvent$Context;
 
     invoke-virtual {v0}, Ljp/co/sony/mc/camera/idd/event/IddRecordingEvent$Context;->getEnv()Ljp/co/sony/mc/camera/idd/value/IddEnvironment;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Ljp/co/sony/mc/camera/idd/value/IddEnvironment;->IncrementCountZoomInRecording()V
+    invoke-virtual {v0}, Ljp/co/sony/mc/camera/idd/value/IddEnvironment;->incrementCountZoomInRecording()V
 
-    .line 440
+    .line 445
     sget-object v0, Ljp/co/sony/mc/camera/idd/event/IddStreamingFinishedEvent;->Context:Ljp/co/sony/mc/camera/idd/event/IddStreamingFinishedEvent$Context;
 
     invoke-virtual {v0}, Ljp/co/sony/mc/camera/idd/event/IddStreamingFinishedEvent$Context;->getEnv()Ljp/co/sony/mc/camera/idd/value/IddCameraAppStreamEnvironment;
@@ -146,7 +146,7 @@
     :cond_0
     const/4 v0, 0x0
 
-    .line 443
+    .line 448
     iput-object v0, p0, Ljp/co/sony/mc/camera/view/EventProcedure$PinchZoomEventProcedure;->mVariableIndex:Ljp/co/sony/mc/camera/view/angle/VariableIndex;
 
     :cond_1
@@ -158,7 +158,7 @@
 .method public doCancel()V
     .locals 0
 
-    .line 428
+    .line 433
     invoke-direct {p0}, Ljp/co/sony/mc/camera/view/EventProcedure$PinchZoomEventProcedure;->finishZoomIfNeeded()V
 
     return-void
@@ -208,10 +208,25 @@
     return-void
 .end method
 
+.method doLongClick(Landroid/graphics/Point;)V
+    .locals 0
+
+    .line 405
+    iget-object p0, p0, Ljp/co/sony/mc/camera/view/EventProcedure$PinchZoomEventProcedure;->this$0:Ljp/co/sony/mc/camera/view/EventProcedure;
+
+    invoke-static {p0}, Ljp/co/sony/mc/camera/view/EventProcedure;->-$$Nest$fgetmFragmentController(Ljp/co/sony/mc/camera/view/EventProcedure;)Ljp/co/sony/mc/camera/view/FragmentController;
+
+    move-result-object p0
+
+    invoke-virtual {p0, p1}, Ljp/co/sony/mc/camera/view/FragmentController;->handleViewFinderLongClick(Landroid/graphics/Point;)V
+
+    return-void
+.end method
+
 .method doTouchAreaMove(Landroid/graphics/Point;Landroid/graphics/Point;Landroid/graphics/Point;)V
     .locals 0
 
-    .line 413
+    .line 418
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/EventProcedure$PinchZoomEventProcedure;->this$0:Ljp/co/sony/mc/camera/view/EventProcedure;
 
     invoke-static {p0}, Ljp/co/sony/mc/camera/view/EventProcedure;->-$$Nest$fgetmFragmentController(Ljp/co/sony/mc/camera/view/EventProcedure;)Ljp/co/sony/mc/camera/view/FragmentController;
@@ -226,7 +241,7 @@
 .method public doTouchAreaScaleReady()V
     .locals 1
 
-    .line 405
+    .line 410
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/EventProcedure$PinchZoomEventProcedure;->this$0:Ljp/co/sony/mc/camera/view/EventProcedure;
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/view/EventProcedure;->-$$Nest$fgetmFragmentController(Ljp/co/sony/mc/camera/view/EventProcedure;)Ljp/co/sony/mc/camera/view/FragmentController;
@@ -239,7 +254,7 @@
 
     if-eqz v0, :cond_0
 
-    .line 406
+    .line 411
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/EventProcedure$PinchZoomEventProcedure;->this$0:Ljp/co/sony/mc/camera/view/EventProcedure;
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/view/EventProcedure;->-$$Nest$mgetVariableIndex(Ljp/co/sony/mc/camera/view/EventProcedure;)Ljp/co/sony/mc/camera/view/angle/VariableIndex;
@@ -248,7 +263,7 @@
 
     iput-object v0, p0, Ljp/co/sony/mc/camera/view/EventProcedure$PinchZoomEventProcedure;->mVariableIndex:Ljp/co/sony/mc/camera/view/angle/VariableIndex;
 
-    .line 407
+    .line 412
     invoke-virtual {v0}, Ljp/co/sony/mc/camera/view/angle/VariableIndex;->getIndex()I
 
     move-result v0
@@ -262,7 +277,7 @@
 .method public doTouchAreaScaling(F)V
     .locals 2
 
-    .line 418
+    .line 423
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/EventProcedure$PinchZoomEventProcedure;->this$0:Ljp/co/sony/mc/camera/view/EventProcedure;
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/view/EventProcedure;->-$$Nest$fgetmFragmentController(Ljp/co/sony/mc/camera/view/EventProcedure;)Ljp/co/sony/mc/camera/view/FragmentController;
@@ -275,12 +290,12 @@
 
     if-eqz v0, :cond_0
 
-    .line 419
+    .line 424
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/EventProcedure$PinchZoomEventProcedure;->mVariableIndex:Ljp/co/sony/mc/camera/view/angle/VariableIndex;
 
     if-eqz v0, :cond_0
 
-    .line 420
+    .line 425
     iget-object v1, p0, Ljp/co/sony/mc/camera/view/EventProcedure$PinchZoomEventProcedure;->mVariableIndexCalculator:Ljp/co/sony/mc/camera/view/angle/VariableIndex$Calculator;
 
     invoke-static {p1}, Ljava/lang/Float;->valueOf(F)Ljava/lang/Float;
@@ -293,7 +308,7 @@
 
     invoke-interface {v1, v0, p1}, Ljp/co/sony/mc/camera/view/angle/VariableIndex$Calculator;->calculate(Ljp/co/sony/mc/camera/view/angle/VariableIndex;[Ljava/lang/Object;)Ljp/co/sony/mc/camera/view/angle/VariableIndex;
 
-    .line 421
+    .line 426
     iget-object p1, p0, Ljp/co/sony/mc/camera/view/EventProcedure$PinchZoomEventProcedure;->this$0:Ljp/co/sony/mc/camera/view/EventProcedure;
 
     invoke-static {p1}, Ljp/co/sony/mc/camera/view/EventProcedure;->-$$Nest$fgetmFragmentController(Ljp/co/sony/mc/camera/view/EventProcedure;)Ljp/co/sony/mc/camera/view/FragmentController;

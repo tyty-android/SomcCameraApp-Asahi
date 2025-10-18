@@ -23,19 +23,19 @@
     d2 = {
         "jp/co/sony/mc/camera/rtmp/YoutubeDetailDataThread$run$1",
         "Ljp/co/sony/mc/camera/rtmp/LiveEventDetailDataRequestCallback;",
-        "onRequestError",
-        "",
-        "code",
-        "Ljp/co/sony/mc/camera/rtmp/ErrCode;",
         "onSuccess",
+        "",
         "eventData",
         "Ljp/co/sony/mc/camera/rtmp/YouTubeEventData;",
+        "onRequestError",
+        "code",
+        "Ljp/co/sony/mc/camera/rtmp/ErrCode;",
         "SomcCamera_release"
     }
     k = 0x1
     mv = {
-        0x1,
-        0x9,
+        0x2,
+        0x0,
         0x0
     }
     xi = 0x30
@@ -65,7 +65,7 @@
 
 # virtual methods
 .method public onRequestError(Ljp/co/sony/mc/camera/rtmp/ErrCode;)V
-    .locals 2
+    .locals 3
 
     const-string v0, "code"
 
@@ -76,23 +76,27 @@
 
     if-eqz v0, :cond_0
 
-    new-instance v0, Ljava/lang/StringBuilder;
+    const/4 v0, 0x1
 
-    const-string v1, "onRequestError : "
+    new-array v0, v0, [Ljava/lang/String;
 
-    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+    new-instance v1, Ljava/lang/StringBuilder;
 
-    invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+    const-string v2, "onRequestError : "
 
-    move-result-object v0
+    invoke-direct {v1, v2}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-virtual {v1, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
-    move-result-object v0
+    move-result-object v1
 
-    filled-new-array {v0}, [Ljava/lang/String;
+    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    move-result-object v0
+    move-result-object v1
+
+    const/4 v2, 0x0
+
+    aput-object v1, v0, v2
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 

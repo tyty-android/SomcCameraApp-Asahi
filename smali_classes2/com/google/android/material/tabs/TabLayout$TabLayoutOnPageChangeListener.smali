@@ -37,10 +37,10 @@
 .method public constructor <init>(Lcom/google/android/material/tabs/TabLayout;)V
     .locals 1
 
-    .line 3556
+    .line 3559
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 3557
+    .line 3560
     new-instance v0, Ljava/lang/ref/WeakReference;
 
     invoke-direct {v0, p1}, Ljava/lang/ref/WeakReference;-><init>(Ljava/lang/Object;)V
@@ -55,15 +55,15 @@
 .method public onPageScrollStateChanged(I)V
     .locals 1
 
-    .line 3562
+    .line 3565
     iget v0, p0, Lcom/google/android/material/tabs/TabLayout$TabLayoutOnPageChangeListener;->scrollState:I
 
     iput v0, p0, Lcom/google/android/material/tabs/TabLayout$TabLayoutOnPageChangeListener;->previousScrollState:I
 
-    .line 3563
+    .line 3566
     iput p1, p0, Lcom/google/android/material/tabs/TabLayout$TabLayoutOnPageChangeListener;->scrollState:I
 
-    .line 3564
+    .line 3567
     iget-object p1, p0, Lcom/google/android/material/tabs/TabLayout$TabLayoutOnPageChangeListener;->tabLayoutRef:Ljava/lang/ref/WeakReference;
 
     invoke-virtual {p1}, Ljava/lang/ref/WeakReference;->get()Ljava/lang/Object;
@@ -74,7 +74,7 @@
 
     if-eqz p1, :cond_0
 
-    .line 3566
+    .line 3569
     iget p0, p0, Lcom/google/android/material/tabs/TabLayout$TabLayoutOnPageChangeListener;->scrollState:I
 
     invoke-virtual {p1, p0}, Lcom/google/android/material/tabs/TabLayout;->updateViewPagerScrollState(I)V
@@ -86,7 +86,7 @@
 .method public onPageScrolled(IFI)V
     .locals 6
 
-    .line 3573
+    .line 3576
     iget-object p3, p0, Lcom/google/android/material/tabs/TabLayout$TabLayoutOnPageChangeListener;->tabLayoutRef:Ljava/lang/ref/WeakReference;
 
     invoke-virtual {p3}, Ljava/lang/ref/WeakReference;->get()Ljava/lang/Object;
@@ -99,7 +99,7 @@
 
     if-eqz v0, :cond_4
 
-    .line 3577
+    .line 3580
     iget p3, p0, Lcom/google/android/material/tabs/TabLayout$TabLayoutOnPageChangeListener;->scrollState:I
 
     const/4 v1, 0x0
@@ -128,7 +128,7 @@
     :goto_1
     if-ne p3, v2, :cond_3
 
-    .line 3582
+    .line 3585
     iget p0, p0, Lcom/google/android/material/tabs/TabLayout$TabLayoutOnPageChangeListener;->previousScrollState:I
 
     if-eqz p0, :cond_2
@@ -155,7 +155,7 @@
 
     move v4, p0
 
-    .line 3584
+    .line 3587
     invoke-virtual/range {v0 .. v5}, Lcom/google/android/material/tabs/TabLayout;->setScrollPosition(IFZZZ)V
 
     :cond_4
@@ -165,7 +165,7 @@
 .method public onPageSelected(I)V
     .locals 3
 
-    .line 3591
+    .line 3594
     iget-object v0, p0, Lcom/google/android/material/tabs/TabLayout$TabLayoutOnPageChangeListener;->tabLayoutRef:Ljava/lang/ref/WeakReference;
 
     invoke-virtual {v0}, Ljava/lang/ref/WeakReference;->get()Ljava/lang/Object;
@@ -176,21 +176,21 @@
 
     if-eqz v0, :cond_2
 
-    .line 3593
+    .line 3596
     invoke-virtual {v0}, Lcom/google/android/material/tabs/TabLayout;->getSelectedTabPosition()I
 
     move-result v1
 
     if-eq v1, p1, :cond_2
 
-    .line 3594
+    .line 3597
     invoke-virtual {v0}, Lcom/google/android/material/tabs/TabLayout;->getTabCount()I
 
     move-result v1
 
     if-ge p1, v1, :cond_2
 
-    .line 3597
+    .line 3600
     iget v1, p0, Lcom/google/android/material/tabs/TabLayout$TabLayoutOnPageChangeListener;->scrollState:I
 
     if-eqz v1, :cond_1
@@ -214,7 +214,7 @@
     :goto_0
     const/4 p0, 0x1
 
-    .line 3601
+    .line 3604
     :goto_1
     invoke-virtual {v0, p1}, Lcom/google/android/material/tabs/TabLayout;->getTabAt(I)Lcom/google/android/material/tabs/TabLayout$Tab;
 
@@ -231,7 +231,7 @@
 
     const/4 v0, 0x0
 
-    .line 3606
+    .line 3609
     iput v0, p0, Lcom/google/android/material/tabs/TabLayout$TabLayoutOnPageChangeListener;->scrollState:I
 
     iput v0, p0, Lcom/google/android/material/tabs/TabLayout$TabLayoutOnPageChangeListener;->previousScrollState:I

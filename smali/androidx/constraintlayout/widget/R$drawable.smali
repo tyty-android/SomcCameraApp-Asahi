@@ -162,49 +162,49 @@
 
 .field public static final abc_vector_test:I = 0x7f080076
 
-.field public static final btn_checkbox_checked_mtrl:I = 0x7f08008a
+.field public static final btn_checkbox_checked_mtrl:I = 0x7f080082
 
-.field public static final btn_checkbox_checked_to_unchecked_mtrl_animation:I = 0x7f08008b
+.field public static final btn_checkbox_checked_to_unchecked_mtrl_animation:I = 0x7f080083
 
-.field public static final btn_checkbox_unchecked_mtrl:I = 0x7f08008c
+.field public static final btn_checkbox_unchecked_mtrl:I = 0x7f080084
 
-.field public static final btn_checkbox_unchecked_to_checked_mtrl_animation:I = 0x7f08008d
+.field public static final btn_checkbox_unchecked_to_checked_mtrl_animation:I = 0x7f080085
 
-.field public static final btn_radio_off_mtrl:I = 0x7f08008e
+.field public static final btn_radio_off_mtrl:I = 0x7f080086
 
-.field public static final btn_radio_off_to_on_mtrl_animation:I = 0x7f08008f
+.field public static final btn_radio_off_to_on_mtrl_animation:I = 0x7f080087
 
-.field public static final btn_radio_on_mtrl:I = 0x7f080090
+.field public static final btn_radio_on_mtrl:I = 0x7f080088
 
-.field public static final btn_radio_on_to_off_mtrl_animation:I = 0x7f080091
+.field public static final btn_radio_on_to_off_mtrl_animation:I = 0x7f080089
 
-.field public static final notification_action_background:I = 0x7f08040a
+.field public static final notification_action_background:I = 0x7f0803ed
 
-.field public static final notification_bg:I = 0x7f08040b
+.field public static final notification_bg:I = 0x7f0803ee
 
-.field public static final notification_bg_low:I = 0x7f08040c
+.field public static final notification_bg_low:I = 0x7f0803ef
 
-.field public static final notification_bg_low_normal:I = 0x7f08040d
+.field public static final notification_bg_low_normal:I = 0x7f0803f0
 
-.field public static final notification_bg_low_pressed:I = 0x7f08040e
+.field public static final notification_bg_low_pressed:I = 0x7f0803f1
 
-.field public static final notification_bg_normal:I = 0x7f08040f
+.field public static final notification_bg_normal:I = 0x7f0803f2
 
-.field public static final notification_bg_normal_pressed:I = 0x7f080410
+.field public static final notification_bg_normal_pressed:I = 0x7f0803f3
 
-.field public static final notification_icon_background:I = 0x7f080411
+.field public static final notification_icon_background:I = 0x7f0803f4
 
-.field public static final notification_template_icon_bg:I = 0x7f080417
+.field public static final notification_template_icon_bg:I = 0x7f0803f6
 
-.field public static final notification_template_icon_low_bg:I = 0x7f080418
+.field public static final notification_template_icon_low_bg:I = 0x7f0803f7
 
-.field public static final notification_tile_bg:I = 0x7f080419
+.field public static final notification_tile_bg:I = 0x7f0803f8
 
-.field public static final notify_panel_notification_icon_bg:I = 0x7f08041a
+.field public static final notify_panel_notification_icon_bg:I = 0x7f0803f9
 
-.field public static final tooltip_frame_dark:I = 0x7f080444
+.field public static final tooltip_frame_dark:I = 0x7f08041b
 
-.field public static final tooltip_frame_light:I = 0x7f080445
+.field public static final tooltip_frame_light:I = 0x7f08041c
 
 
 # direct methods

@@ -312,6 +312,8 @@
 
     if-eqz v5, :cond_4
 
+    move v5, v2
+
     goto :goto_2
 
     :cond_4
@@ -325,9 +327,12 @@
 
     move-result v5
 
+    :goto_2
     if-eqz v5, :cond_5
 
-    goto :goto_2
+    move v4, v2
+
+    goto :goto_3
 
     :cond_5
     sget-object v5, Landroidx/compose/ui/input/pointer/PointerEventType;->Companion:Landroidx/compose/ui/input/pointer/PointerEventType$Companion;
@@ -340,10 +345,10 @@
 
     move-result v4
 
+    :goto_3
     if-eqz v4, :cond_2
 
     .line 47
-    :goto_2
     invoke-virtual {p1}, Landroidx/compose/ui/input/pointer/PointerEvent;->getChanges()Ljava/util/List;
 
     move-result-object p1
@@ -375,12 +380,12 @@
 
     if-nez v4, :cond_6
 
-    goto :goto_3
+    goto :goto_4
 
     :cond_6
     const/4 p1, 0x0
 
-    :goto_3
+    :goto_4
     if-eqz p1, :cond_2
 
     .line 49

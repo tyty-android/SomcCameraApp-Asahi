@@ -22,7 +22,7 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/SourceDebugExtension;
-    value = "SMAP\nSequences.kt\nKotlin\n*S Kotlin\n*F\n+ 1 Sequences.kt\nkotlin/sequences/TakeSequence\n+ 2 fake.kt\nkotlin/jvm/internal/FakeKt\n*L\n1#1,680:1\n1#2:681\n*E\n"
+    value = "SMAP\nSequences.kt\nKotlin\n*S Kotlin\n*F\n+ 1 Sequences.kt\nkotlin/sequences/TakeSequence\n+ 2 fake.kt\nkotlin/jvm/internal/FakeKt\n*L\n1#1,698:1\n1#2:699\n*E\n"
 .end annotation
 
 .annotation runtime Lkotlin/Metadata;
@@ -83,20 +83,20 @@
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 397
+    .line 415
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 398
+    .line 416
     iput-object p1, p0, Lkotlin/sequences/TakeSequence;->sequence:Lkotlin/sequences/Sequence;
 
-    .line 399
+    .line 417
     iput p2, p0, Lkotlin/sequences/TakeSequence;->count:I
 
     if-ltz p2, :cond_0
 
     return-void
 
-    .line 403
+    .line 421
     :cond_0
     new-instance p0, Ljava/lang/StringBuilder;
 
@@ -132,7 +132,7 @@
 .method public static final synthetic access$getCount$p(Lkotlin/sequences/TakeSequence;)I
     .locals 0
 
-    .line 397
+    .line 415
     iget p0, p0, Lkotlin/sequences/TakeSequence;->count:I
 
     return p0
@@ -141,7 +141,7 @@
 .method public static final synthetic access$getSequence$p(Lkotlin/sequences/TakeSequence;)Lkotlin/sequences/Sequence;
     .locals 0
 
-    .line 397
+    .line 415
     iget-object p0, p0, Lkotlin/sequences/TakeSequence;->sequence:Lkotlin/sequences/Sequence;
 
     return-object p0
@@ -159,7 +159,7 @@
         }
     .end annotation
 
-    .line 406
+    .line 424
     iget v0, p0, Lkotlin/sequences/TakeSequence;->count:I
 
     if-lt p1, v0, :cond_0
@@ -197,7 +197,7 @@
         }
     .end annotation
 
-    .line 409
+    .line 427
     new-instance v0, Lkotlin/sequences/TakeSequence$iterator$1;
 
     invoke-direct {v0, p0}, Lkotlin/sequences/TakeSequence$iterator$1;-><init>(Lkotlin/sequences/TakeSequence;)V
@@ -217,7 +217,7 @@
         }
     .end annotation
 
-    .line 407
+    .line 425
     iget v0, p0, Lkotlin/sequences/TakeSequence;->count:I
 
     if-lt p1, v0, :cond_0

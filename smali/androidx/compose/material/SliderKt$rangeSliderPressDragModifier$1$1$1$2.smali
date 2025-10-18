@@ -53,7 +53,7 @@
     f = "Slider.kt"
     i = {}
     l = {
-        0x407
+        0x40b
     }
     m = "invokeSuspend"
     n = {}
@@ -181,7 +181,7 @@
 
     move-result-object v0
 
-    .line 1028
+    .line 1032
     iget v1, p0, Landroidx/compose/material/SliderKt$rangeSliderPressDragModifier$1$1$1$2;->label:I
 
     const/4 v2, 0x1
@@ -206,10 +206,10 @@
     :cond_1
     invoke-static {p1}, Lkotlin/ResultKt;->throwOnFailure(Ljava/lang/Object;)V
 
-    .line 1029
+    .line 1033
     iget-object p1, p0, Landroidx/compose/material/SliderKt$rangeSliderPressDragModifier$1$1$1$2;->$rangeSliderLogic:Landroidx/compose/material/RangeSliderLogic;
 
-    .line 1030
+    .line 1034
     iget-object v1, p0, Landroidx/compose/material/SliderKt$rangeSliderPressDragModifier$1$1$1$2;->$draggingStart:Lkotlin/jvm/internal/Ref$BooleanRef;
 
     iget-boolean v1, v1, Lkotlin/jvm/internal/Ref$BooleanRef;->element:Z
@@ -218,7 +218,7 @@
 
     move-result-object p1
 
-    .line 1031
+    .line 1035
     iget-object v1, p0, Landroidx/compose/material/SliderKt$rangeSliderPressDragModifier$1$1$1$2;->$finishInteraction:Landroidx/compose/foundation/interaction/DragInteraction;
 
     check-cast v1, Landroidx/compose/foundation/interaction/Interaction;
@@ -237,7 +237,7 @@
 
     return-object v0
 
-    .line 1032
+    .line 1036
     :cond_2
     :goto_0
     sget-object p0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;

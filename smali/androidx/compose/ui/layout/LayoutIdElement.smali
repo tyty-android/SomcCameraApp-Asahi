@@ -56,11 +56,7 @@
 
 # direct methods
 .method public constructor <init>(Ljava/lang/Object;)V
-    .locals 1
-
-    const-string v0, "layoutId"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+    .locals 0
 
     .line 37
     invoke-direct {p0}, Landroidx/compose/ui/node/ModifierNodeElement;-><init>()V
@@ -100,10 +96,6 @@
 # virtual methods
 .method public final copy(Ljava/lang/Object;)Landroidx/compose/ui/layout/LayoutIdElement;
     .locals 0
-
-    const-string p0, "layoutId"
-
-    invoke-static {p1, p0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
     new-instance p0, Landroidx/compose/ui/layout/LayoutIdElement;
 
@@ -190,10 +182,6 @@
 .method public inspectableProperties(Landroidx/compose/ui/platform/InspectorInfo;)V
     .locals 1
 
-    const-string v0, "<this>"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
     .line 45
     const-string v0, "layoutId"
 
@@ -247,11 +235,7 @@
 .end method
 
 .method public update(Landroidx/compose/ui/layout/LayoutIdModifier;)V
-    .locals 1
-
-    const-string v0, "node"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+    .locals 0
 
     .line 41
     iget-object p0, p0, Landroidx/compose/ui/layout/LayoutIdElement;->layoutId:Ljava/lang/Object;

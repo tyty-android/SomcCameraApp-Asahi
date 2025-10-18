@@ -3,34 +3,40 @@
 .source "D8$$SyntheticClass"
 
 # interfaces
-.implements Ljava/util/function/BiConsumer;
-
-
-# instance fields
-.field public final synthetic f$0:Lkotlin/jvm/functions/Function2;
+.implements Lkotlin/jvm/functions/Function2;
 
 
 # direct methods
-.method public synthetic constructor <init>(Lkotlin/jvm/functions/Function2;)V
+.method public synthetic constructor <init>()V
     .locals 0
 
     .line 0
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    iput-object p1, p0, Ljp/co/sony/mc/camera/view/uistate/LensUiState$$ExternalSyntheticLambda1;->f$0:Lkotlin/jvm/functions/Function2;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final accept(Ljava/lang/Object;Ljava/lang/Object;)V
+.method public final invoke(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
 
     .line 0
-    iget-object p0, p0, Ljp/co/sony/mc/camera/view/uistate/LensUiState$$ExternalSyntheticLambda1;->f$0:Lkotlin/jvm/functions/Function2;
+    check-cast p1, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
-    invoke-static {p0, p1, p2}, Ljp/co/sony/mc/camera/view/uistate/LensUiState;->$r8$lambda$6_OlJz1eaRPNsB0LCOTIzUUxUEs(Lkotlin/jvm/functions/Function2;Ljava/lang/Object;Ljava/lang/Object;)V
+    check-cast p2, Ljava/lang/Boolean;
 
-    return-void
+    invoke-virtual {p2}, Ljava/lang/Boolean;->booleanValue()Z
+
+    move-result p0
+
+    invoke-static {p1, p0}, Ljp/co/sony/mc/camera/view/uistate/LensUiState;->$r8$lambda$HCFmdSK8s7wA_cVaINIULBl7OaM(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Z)Z
+
+    move-result p0
+
+    invoke-static {p0}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
+
+    move-result-object p0
+
+    return-object p0
 .end method

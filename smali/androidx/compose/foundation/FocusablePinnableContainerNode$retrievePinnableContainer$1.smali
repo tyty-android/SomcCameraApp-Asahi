@@ -88,7 +88,7 @@
 .method public bridge synthetic invoke()Ljava/lang/Object;
     .locals 0
 
-    .line 325
+    .line 326
     invoke-virtual {p0}, Landroidx/compose/foundation/FocusablePinnableContainerNode$retrievePinnableContainer$1;->invoke()V
 
     sget-object p0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
@@ -99,7 +99,7 @@
 .method public final invoke()V
     .locals 2
 
-    .line 326
+    .line 327
     iget-object v0, p0, Landroidx/compose/foundation/FocusablePinnableContainerNode$retrievePinnableContainer$1;->$container:Lkotlin/jvm/internal/Ref$ObjectRef;
 
     iget-object p0, p0, Landroidx/compose/foundation/FocusablePinnableContainerNode$retrievePinnableContainer$1;->this$0:Landroidx/compose/foundation/FocusablePinnableContainerNode;

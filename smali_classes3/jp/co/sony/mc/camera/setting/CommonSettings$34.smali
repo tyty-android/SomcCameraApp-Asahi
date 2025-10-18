@@ -21,7 +21,7 @@
 .method constructor <init>()V
     .locals 0
 
-    .line 580
+    .line 583
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -42,10 +42,10 @@
         }
     .end annotation
 
-    .line 584
+    .line 587
     check-cast p1, Ljp/co/sony/mc/camera/setting/CommonSettings;
 
-    .line 585
+    .line 588
     invoke-static {p1}, Ljp/co/sony/mc/camera/setting/CommonSettings;->-$$Nest$mgetConnectToMode(Ljp/co/sony/mc/camera/setting/CommonSettings;)Ljp/co/sony/mc/camera/configuration/parameters/StreamingConnectMode;
 
     move-result-object p0

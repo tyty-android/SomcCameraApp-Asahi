@@ -21,7 +21,7 @@
 .method constructor <init>()V
     .locals 0
 
-    .line 1426
+    .line 1482
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -46,13 +46,13 @@
         }
     .end annotation
 
-    .line 1430
+    .line 1486
     check-cast p1, Ljp/co/sony/mc/camera/setting/CameraSettings;
 
-    .line 1431
-    check-cast p3, Ljp/co/sony/mc/camera/configuration/parameters/WhiteBalance;
+    .line 1487
+    check-cast p3, Ljp/co/sony/mc/camera/configuration/parameters/FrontSoftSkin;
 
-    invoke-static {p1, p3}, Ljp/co/sony/mc/camera/setting/CameraSettings;->-$$Nest$msetWhiteBalance(Ljp/co/sony/mc/camera/setting/CameraSettings;Ljp/co/sony/mc/camera/configuration/parameters/WhiteBalance;)Z
+    invoke-static {p1, p3}, Ljp/co/sony/mc/camera/setting/CameraSettings;->-$$Nest$msetFrontSoftSkin(Ljp/co/sony/mc/camera/setting/CameraSettings;Ljp/co/sony/mc/camera/configuration/parameters/FrontSoftSkin;)Z
 
     move-result p0
 

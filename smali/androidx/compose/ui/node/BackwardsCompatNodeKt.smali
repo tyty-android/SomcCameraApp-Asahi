@@ -61,21 +61,21 @@
 .method static constructor <clinit>()V
     .locals 1
 
-    .line 428
+    .line 432
     new-instance v0, Landroidx/compose/ui/node/BackwardsCompatNodeKt$DetachedModifierLocalReadScope$1;
 
     invoke-direct {v0}, Landroidx/compose/ui/node/BackwardsCompatNodeKt$DetachedModifierLocalReadScope$1;-><init>()V
 
     sput-object v0, Landroidx/compose/ui/node/BackwardsCompatNodeKt;->DetachedModifierLocalReadScope:Landroidx/compose/ui/node/BackwardsCompatNodeKt$DetachedModifierLocalReadScope$1;
 
-    .line 433
+    .line 437
     sget-object v0, Landroidx/compose/ui/node/BackwardsCompatNodeKt$onDrawCacheReadsChanged$1;->INSTANCE:Landroidx/compose/ui/node/BackwardsCompatNodeKt$onDrawCacheReadsChanged$1;
 
     check-cast v0, Lkotlin/jvm/functions/Function1;
 
     sput-object v0, Landroidx/compose/ui/node/BackwardsCompatNodeKt;->onDrawCacheReadsChanged:Lkotlin/jvm/functions/Function1;
 
-    .line 437
+    .line 441
     sget-object v0, Landroidx/compose/ui/node/BackwardsCompatNodeKt$updateModifierLocalConsumer$1;->INSTANCE:Landroidx/compose/ui/node/BackwardsCompatNodeKt$updateModifierLocalConsumer$1;
 
     check-cast v0, Lkotlin/jvm/functions/Function1;
@@ -126,7 +126,7 @@
 .method private static final isChainUpdate(Landroidx/compose/ui/node/BackwardsCompatNode;)Z
     .locals 1
 
-    .line 455
+    .line 446
     check-cast p0, Landroidx/compose/ui/node/DelegatableNode;
 
     invoke-static {p0}, Landroidx/compose/ui/node/DelegatableNodeKt;->requireLayoutNode(Landroidx/compose/ui/node/DelegatableNode;)Landroidx/compose/ui/node/LayoutNode;
@@ -147,7 +147,7 @@
 
     check-cast p0, Landroidx/compose/ui/node/TailModifierNode;
 
-    .line 456
+    .line 447
     invoke-virtual {p0}, Landroidx/compose/ui/node/TailModifierNode;->getAttachHasBeenRun()Z
 
     move-result p0

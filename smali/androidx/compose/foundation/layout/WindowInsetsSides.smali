@@ -12,7 +12,7 @@
 
 .annotation runtime Lkotlin/Metadata;
     d1 = {
-        "\u0000\"\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0010\u0008\n\u0002\u0008\u0003\n\u0002\u0010\u000b\n\u0002\u0008\r\n\u0002\u0010\u000e\n\u0002\u0008\u0006\u0008\u0087@\u0018\u0000 \u001a2\u00020\u0001:\u0001\u001aB\u0014\u0008\u0002\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u00f8\u0001\u0000\u00a2\u0006\u0004\u0008\u0004\u0010\u0005J\u001a\u0010\u0006\u001a\u00020\u00072\u0008\u0010\u0008\u001a\u0004\u0018\u00010\u0001H\u00d6\u0003\u00a2\u0006\u0004\u0008\t\u0010\nJ\u001d\u0010\u000b\u001a\u00020\u00072\u0006\u0010\u000c\u001a\u00020\u0000H\u0000\u00f8\u0001\u0001\u00f8\u0001\u0000\u00a2\u0006\u0004\u0008\r\u0010\u000eJ\u0010\u0010\u000f\u001a\u00020\u0003H\u00d6\u0001\u00a2\u0006\u0004\u0008\u0010\u0010\u0005J\u001e\u0010\u0011\u001a\u00020\u00002\u0006\u0010\u000c\u001a\u00020\u0000H\u0086\u0002\u00f8\u0001\u0001\u00f8\u0001\u0000\u00a2\u0006\u0004\u0008\u0012\u0010\u0013J\u000f\u0010\u0014\u001a\u00020\u0015H\u0016\u00a2\u0006\u0004\u0008\u0016\u0010\u0017J\u000f\u0010\u0018\u001a\u00020\u0015H\u0002\u00a2\u0006\u0004\u0008\u0019\u0010\u0017R\u000e\u0010\u0002\u001a\u00020\u0003X\u0082\u0004\u00a2\u0006\u0002\n\u0000\u0088\u0001\u0002\u0092\u0001\u00020\u0003\u00f8\u0001\u0000\u0082\u0002\u000b\n\u0002\u0008\u0019\n\u0005\u0008\u00a1\u001e0\u0001\u00a8\u0006\u001b"
+        "\u0000\"\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0010\u0008\n\u0002\u0008\u0003\n\u0002\u0010\u000b\n\u0002\u0008\r\n\u0002\u0010\u000e\n\u0002\u0008\u0006\u0008\u0087@\u0018\u0000 \u001a2\u00020\u0001:\u0001\u001aB\u0011\u0008\u0002\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u00a2\u0006\u0004\u0008\u0004\u0010\u0005J\u001a\u0010\u0006\u001a\u00020\u00072\u0008\u0010\u0008\u001a\u0004\u0018\u00010\u0001H\u00d6\u0003\u00a2\u0006\u0004\u0008\t\u0010\nJ\u001a\u0010\u000b\u001a\u00020\u00072\u0006\u0010\u000c\u001a\u00020\u0000H\u0000\u00f8\u0001\u0000\u00a2\u0006\u0004\u0008\r\u0010\u000eJ\u0010\u0010\u000f\u001a\u00020\u0003H\u00d6\u0001\u00a2\u0006\u0004\u0008\u0010\u0010\u0005J\u001b\u0010\u0011\u001a\u00020\u00002\u0006\u0010\u000c\u001a\u00020\u0000H\u0086\u0002\u00f8\u0001\u0000\u00a2\u0006\u0004\u0008\u0012\u0010\u0013J\u000f\u0010\u0014\u001a\u00020\u0015H\u0016\u00a2\u0006\u0004\u0008\u0016\u0010\u0017J\u000f\u0010\u0018\u001a\u00020\u0015H\u0002\u00a2\u0006\u0004\u0008\u0019\u0010\u0017R\u000e\u0010\u0002\u001a\u00020\u0003X\u0082\u0004\u00a2\u0006\u0002\n\u0000\u0088\u0001\u0002\u0092\u0001\u00020\u0003\u0082\u0002\u0007\n\u0005\u0008\u00a1\u001e0\u0001\u00a8\u0006\u001b"
     }
     d2 = {
         "Landroidx/compose/foundation/layout/WindowInsetsSides;",
@@ -103,7 +103,7 @@
 
     const/16 v0, 0x8
 
-    .line 143
+    .line 145
     invoke-static {v0}, Landroidx/compose/foundation/layout/WindowInsetsSides;->constructor-impl(I)I
 
     move-result v0
@@ -112,7 +112,7 @@
 
     const/4 v1, 0x4
 
-    .line 144
+    .line 146
     invoke-static {v1}, Landroidx/compose/foundation/layout/WindowInsetsSides;->constructor-impl(I)I
 
     move-result v1
@@ -121,7 +121,7 @@
 
     const/4 v2, 0x2
 
-    .line 145
+    .line 147
     invoke-static {v2}, Landroidx/compose/foundation/layout/WindowInsetsSides;->constructor-impl(I)I
 
     move-result v2
@@ -130,21 +130,21 @@
 
     const/4 v3, 0x1
 
-    .line 146
+    .line 148
     invoke-static {v3}, Landroidx/compose/foundation/layout/WindowInsetsSides;->constructor-impl(I)I
 
     move-result v3
 
     sput v3, Landroidx/compose/foundation/layout/WindowInsetsSides;->AllowRightInRtl:I
 
-    .line 155
+    .line 157
     invoke-static {v0, v3}, Landroidx/compose/foundation/layout/WindowInsetsSides;->plus-gK_yJZ4(II)I
 
     move-result v4
 
     sput v4, Landroidx/compose/foundation/layout/WindowInsetsSides;->Start:I
 
-    .line 164
+    .line 166
     invoke-static {v1, v2}, Landroidx/compose/foundation/layout/WindowInsetsSides;->plus-gK_yJZ4(II)I
 
     move-result v4
@@ -153,7 +153,7 @@
 
     const/16 v4, 0x10
 
-    .line 169
+    .line 171
     invoke-static {v4}, Landroidx/compose/foundation/layout/WindowInsetsSides;->constructor-impl(I)I
 
     move-result v4
@@ -162,35 +162,35 @@
 
     const/16 v5, 0x20
 
-    .line 174
+    .line 176
     invoke-static {v5}, Landroidx/compose/foundation/layout/WindowInsetsSides;->constructor-impl(I)I
 
     move-result v5
 
     sput v5, Landroidx/compose/foundation/layout/WindowInsetsSides;->Bottom:I
 
-    .line 180
+    .line 182
     invoke-static {v0, v2}, Landroidx/compose/foundation/layout/WindowInsetsSides;->plus-gK_yJZ4(II)I
 
     move-result v0
 
     sput v0, Landroidx/compose/foundation/layout/WindowInsetsSides;->Left:I
 
-    .line 186
+    .line 188
     invoke-static {v1, v3}, Landroidx/compose/foundation/layout/WindowInsetsSides;->plus-gK_yJZ4(II)I
 
     move-result v1
 
     sput v1, Landroidx/compose/foundation/layout/WindowInsetsSides;->Right:I
 
-    .line 192
+    .line 194
     invoke-static {v0, v1}, Landroidx/compose/foundation/layout/WindowInsetsSides;->plus-gK_yJZ4(II)I
 
     move-result v0
 
     sput v0, Landroidx/compose/foundation/layout/WindowInsetsSides;->Horizontal:I
 
-    .line 197
+    .line 199
     invoke-static {v4, v5}, Landroidx/compose/foundation/layout/WindowInsetsSides;->plus-gK_yJZ4(II)I
 
     move-result v0
@@ -203,7 +203,7 @@
 .method private synthetic constructor <init>(I)V
     .locals 0
 
-    .line 99
+    .line 101
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     iput p1, p0, Landroidx/compose/foundation/layout/WindowInsetsSides;->value:I
@@ -214,7 +214,7 @@
 .method public static final synthetic access$getAllowLeftInLtr$cp()I
     .locals 1
 
-    .line 98
+    .line 100
     sget v0, Landroidx/compose/foundation/layout/WindowInsetsSides;->AllowLeftInLtr:I
 
     return v0
@@ -223,7 +223,7 @@
 .method public static final synthetic access$getAllowLeftInRtl$cp()I
     .locals 1
 
-    .line 98
+    .line 100
     sget v0, Landroidx/compose/foundation/layout/WindowInsetsSides;->AllowLeftInRtl:I
 
     return v0
@@ -232,7 +232,7 @@
 .method public static final synthetic access$getAllowRightInLtr$cp()I
     .locals 1
 
-    .line 98
+    .line 100
     sget v0, Landroidx/compose/foundation/layout/WindowInsetsSides;->AllowRightInLtr:I
 
     return v0
@@ -241,7 +241,7 @@
 .method public static final synthetic access$getAllowRightInRtl$cp()I
     .locals 1
 
-    .line 98
+    .line 100
     sget v0, Landroidx/compose/foundation/layout/WindowInsetsSides;->AllowRightInRtl:I
 
     return v0
@@ -250,7 +250,7 @@
 .method public static final synthetic access$getBottom$cp()I
     .locals 1
 
-    .line 98
+    .line 100
     sget v0, Landroidx/compose/foundation/layout/WindowInsetsSides;->Bottom:I
 
     return v0
@@ -259,7 +259,7 @@
 .method public static final synthetic access$getEnd$cp()I
     .locals 1
 
-    .line 98
+    .line 100
     sget v0, Landroidx/compose/foundation/layout/WindowInsetsSides;->End:I
 
     return v0
@@ -268,7 +268,7 @@
 .method public static final synthetic access$getHorizontal$cp()I
     .locals 1
 
-    .line 98
+    .line 100
     sget v0, Landroidx/compose/foundation/layout/WindowInsetsSides;->Horizontal:I
 
     return v0
@@ -277,7 +277,7 @@
 .method public static final synthetic access$getLeft$cp()I
     .locals 1
 
-    .line 98
+    .line 100
     sget v0, Landroidx/compose/foundation/layout/WindowInsetsSides;->Left:I
 
     return v0
@@ -286,7 +286,7 @@
 .method public static final synthetic access$getRight$cp()I
     .locals 1
 
-    .line 98
+    .line 100
     sget v0, Landroidx/compose/foundation/layout/WindowInsetsSides;->Right:I
 
     return v0
@@ -295,7 +295,7 @@
 .method public static final synthetic access$getStart$cp()I
     .locals 1
 
-    .line 98
+    .line 100
     sget v0, Landroidx/compose/foundation/layout/WindowInsetsSides;->Start:I
 
     return v0
@@ -304,7 +304,7 @@
 .method public static final synthetic access$getTop$cp()I
     .locals 1
 
-    .line 98
+    .line 100
     sget v0, Landroidx/compose/foundation/layout/WindowInsetsSides;->Top:I
 
     return v0
@@ -313,7 +313,7 @@
 .method public static final synthetic access$getVertical$cp()I
     .locals 1
 
-    .line 98
+    .line 100
     sget v0, Landroidx/compose/foundation/layout/WindowInsetsSides;->Vertical:I
 
     return v0
@@ -412,7 +412,7 @@
 
     or-int/2addr p0, p1
 
-    .line 105
+    .line 107
     invoke-static {p0}, Landroidx/compose/foundation/layout/WindowInsetsSides;->constructor-impl(I)I
 
     move-result p0
@@ -423,7 +423,7 @@
 .method public static toString-impl(I)Ljava/lang/String;
     .locals 2
 
-    .line 110
+    .line 112
     new-instance v0, Ljava/lang/StringBuilder;
 
     const-string v1, "WindowInsetsSides("
@@ -454,12 +454,12 @@
 .method private static final valueToString-impl(I)Ljava/lang/String;
     .locals 3
 
-    .line 112
+    .line 114
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
 
-    .line 118
+    .line 120
     sget v1, Landroidx/compose/foundation/layout/WindowInsetsSides;->Start:I
 
     and-int v2, p0, v1
@@ -470,7 +470,7 @@
 
     invoke-static {v0, v1}, Landroidx/compose/foundation/layout/WindowInsetsSides;->valueToString_impl$lambda$0$appendPlus(Ljava/lang/StringBuilder;Ljava/lang/String;)V
 
-    .line 119
+    .line 121
     :cond_0
     sget v1, Landroidx/compose/foundation/layout/WindowInsetsSides;->Left:I
 
@@ -482,7 +482,7 @@
 
     invoke-static {v0, v1}, Landroidx/compose/foundation/layout/WindowInsetsSides;->valueToString_impl$lambda$0$appendPlus(Ljava/lang/StringBuilder;Ljava/lang/String;)V
 
-    .line 120
+    .line 122
     :cond_1
     sget v1, Landroidx/compose/foundation/layout/WindowInsetsSides;->Top:I
 
@@ -494,7 +494,7 @@
 
     invoke-static {v0, v1}, Landroidx/compose/foundation/layout/WindowInsetsSides;->valueToString_impl$lambda$0$appendPlus(Ljava/lang/StringBuilder;Ljava/lang/String;)V
 
-    .line 121
+    .line 123
     :cond_2
     sget v1, Landroidx/compose/foundation/layout/WindowInsetsSides;->End:I
 
@@ -506,7 +506,7 @@
 
     invoke-static {v0, v1}, Landroidx/compose/foundation/layout/WindowInsetsSides;->valueToString_impl$lambda$0$appendPlus(Ljava/lang/StringBuilder;Ljava/lang/String;)V
 
-    .line 122
+    .line 124
     :cond_3
     sget v1, Landroidx/compose/foundation/layout/WindowInsetsSides;->Right:I
 
@@ -518,7 +518,7 @@
 
     invoke-static {v0, v1}, Landroidx/compose/foundation/layout/WindowInsetsSides;->valueToString_impl$lambda$0$appendPlus(Ljava/lang/StringBuilder;Ljava/lang/String;)V
 
-    .line 123
+    .line 125
     :cond_4
     sget v1, Landroidx/compose/foundation/layout/WindowInsetsSides;->Bottom:I
 
@@ -530,7 +530,7 @@
 
     invoke-static {v0, p0}, Landroidx/compose/foundation/layout/WindowInsetsSides;->valueToString_impl$lambda$0$appendPlus(Ljava/lang/StringBuilder;Ljava/lang/String;)V
 
-    .line 112
+    .line 114
     :cond_5
     invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
@@ -546,7 +546,7 @@
 .method private static final valueToString_impl$lambda$0$appendPlus(Ljava/lang/StringBuilder;Ljava/lang/String;)V
     .locals 1
 
-    .line 114
+    .line 116
     move-object v0, p0
 
     check-cast v0, Ljava/lang/CharSequence;
@@ -561,7 +561,7 @@
 
     invoke-virtual {p0, v0}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
 
-    .line 115
+    .line 117
     :cond_0
     invoke-virtual {p0, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -597,7 +597,7 @@
 .method public toString()Ljava/lang/String;
     .locals 0
 
-    .line 110
+    .line 112
     iget p0, p0, Landroidx/compose/foundation/layout/WindowInsetsSides;->value:I
 
     invoke-static {p0}, Landroidx/compose/foundation/layout/WindowInsetsSides;->toString-impl(I)Ljava/lang/String;

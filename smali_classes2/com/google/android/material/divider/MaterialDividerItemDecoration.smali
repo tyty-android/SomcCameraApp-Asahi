@@ -33,7 +33,7 @@
 .method static constructor <clinit>()V
     .locals 1
 
-    .line 61
+    .line 66
     sget v0, Lcom/google/android/material/R$style;->Widget_MaterialComponents_MaterialDivider:I
 
     sput v0, Lcom/google/android/material/divider/MaterialDividerItemDecoration;->DEF_STYLE_RES:I
@@ -46,7 +46,7 @@
 
     const/4 v0, 0x0
 
-    .line 74
+    .line 79
     invoke-direct {p0, p1, v0, p2}, Lcom/google/android/material/divider/MaterialDividerItemDecoration;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
 
     return-void
@@ -55,7 +55,7 @@
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
     .locals 1
 
-    .line 79
+    .line 84
     sget v0, Lcom/google/android/material/R$attr;->materialDividerStyle:I
 
     invoke-direct {p0, p1, p2, v0, p3}, Lcom/google/android/material/divider/MaterialDividerItemDecoration;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;II)V
@@ -66,17 +66,17 @@
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;II)V
     .locals 7
 
-    .line 83
+    .line 88
     invoke-direct {p0}, Landroidx/recyclerview/widget/RecyclerView$ItemDecoration;-><init>()V
 
-    .line 71
+    .line 76
     new-instance v0, Landroid/graphics/Rect;
 
     invoke-direct {v0}, Landroid/graphics/Rect;-><init>()V
 
     iput-object v0, p0, Lcom/google/android/material/divider/MaterialDividerItemDecoration;->tempRect:Landroid/graphics/Rect;
 
-    .line 84
+    .line 89
     sget-object v3, Lcom/google/android/material/R$styleable;->MaterialDivider:[I
 
     sget v5, Lcom/google/android/material/divider/MaterialDividerItemDecoration;->DEF_STYLE_RES:I
@@ -91,30 +91,30 @@
 
     move v4, p3
 
-    .line 85
+    .line 90
     invoke-static/range {v1 .. v6}, Lcom/google/android/material/internal/ThemeEnforcement;->obtainStyledAttributes(Landroid/content/Context;Landroid/util/AttributeSet;[III[I)Landroid/content/res/TypedArray;
 
     move-result-object p2
 
-    .line 88
+    .line 93
     sget p3, Lcom/google/android/material/R$styleable;->MaterialDivider_dividerColor:I
 
-    .line 89
+    .line 94
     invoke-static {p1, p2, p3}, Lcom/google/android/material/resources/MaterialResources;->getColorStateList(Landroid/content/Context;Landroid/content/res/TypedArray;I)Landroid/content/res/ColorStateList;
 
     move-result-object p3
 
-    .line 91
+    .line 96
     invoke-virtual {p3}, Landroid/content/res/ColorStateList;->getDefaultColor()I
 
     move-result p3
 
     iput p3, p0, Lcom/google/android/material/divider/MaterialDividerItemDecoration;->color:I
 
-    .line 92
+    .line 97
     sget p3, Lcom/google/android/material/R$styleable;->MaterialDivider_dividerThickness:I
 
-    .line 95
+    .line 100
     invoke-virtual {p1}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
 
     move-result-object p1
@@ -125,24 +125,24 @@
 
     move-result p1
 
-    .line 93
+    .line 98
     invoke-virtual {p2, p3, p1}, Landroid/content/res/TypedArray;->getDimensionPixelSize(II)I
 
     move-result p1
 
     iput p1, p0, Lcom/google/android/material/divider/MaterialDividerItemDecoration;->thickness:I
 
-    .line 96
+    .line 101
     sget p1, Lcom/google/android/material/R$styleable;->MaterialDivider_dividerInsetStart:I
 
-    .line 97
+    .line 102
     invoke-virtual {p2, p1, v0}, Landroid/content/res/TypedArray;->getDimensionPixelOffset(II)I
 
     move-result p1
 
     iput p1, p0, Lcom/google/android/material/divider/MaterialDividerItemDecoration;->insetStart:I
 
-    .line 98
+    .line 103
     sget p1, Lcom/google/android/material/R$styleable;->MaterialDivider_dividerInsetEnd:I
 
     invoke-virtual {p2, p1, v0}, Landroid/content/res/TypedArray;->getDimensionPixelOffset(II)I
@@ -151,46 +151,46 @@
 
     iput p1, p0, Lcom/google/android/material/divider/MaterialDividerItemDecoration;->insetEnd:I
 
-    .line 99
+    .line 104
     sget p1, Lcom/google/android/material/R$styleable;->MaterialDivider_lastItemDecorated:I
 
     const/4 p3, 0x1
 
-    .line 100
+    .line 105
     invoke-virtual {p2, p1, p3}, Landroid/content/res/TypedArray;->getBoolean(IZ)Z
 
     move-result p1
 
     iput-boolean p1, p0, Lcom/google/android/material/divider/MaterialDividerItemDecoration;->lastItemDecorated:Z
 
-    .line 102
+    .line 107
     invoke-virtual {p2}, Landroid/content/res/TypedArray;->recycle()V
 
-    .line 104
+    .line 109
     new-instance p1, Landroid/graphics/drawable/ShapeDrawable;
 
     invoke-direct {p1}, Landroid/graphics/drawable/ShapeDrawable;-><init>()V
 
     iput-object p1, p0, Lcom/google/android/material/divider/MaterialDividerItemDecoration;->dividerDrawable:Landroid/graphics/drawable/Drawable;
 
-    .line 105
+    .line 110
     iget p1, p0, Lcom/google/android/material/divider/MaterialDividerItemDecoration;->color:I
 
     invoke-virtual {p0, p1}, Lcom/google/android/material/divider/MaterialDividerItemDecoration;->setDividerColor(I)V
 
-    .line 106
+    .line 111
     invoke-virtual {p0, p4}, Lcom/google/android/material/divider/MaterialDividerItemDecoration;->setOrientation(I)V
 
     return-void
 .end method
 
 .method private drawForHorizontalOrientation(Landroid/graphics/Canvas;Landroidx/recyclerview/widget/RecyclerView;)V
-    .locals 7
+    .locals 9
 
-    .line 340
+    .line 347
     invoke-virtual {p1}, Landroid/graphics/Canvas;->save()I
 
-    .line 343
+    .line 350
     invoke-virtual {p2}, Landroidx/recyclerview/widget/RecyclerView;->getClipToPadding()Z
 
     move-result v0
@@ -199,12 +199,12 @@
 
     if-eqz v0, :cond_0
 
-    .line 344
+    .line 351
     invoke-virtual {p2}, Landroidx/recyclerview/widget/RecyclerView;->getPaddingTop()I
 
     move-result v0
 
-    .line 345
+    .line 352
     invoke-virtual {p2}, Landroidx/recyclerview/widget/RecyclerView;->getHeight()I
 
     move-result v2
@@ -215,7 +215,7 @@
 
     sub-int/2addr v2, v3
 
-    .line 347
+    .line 354
     invoke-virtual {p2}, Landroidx/recyclerview/widget/RecyclerView;->getPaddingLeft()I
 
     move-result v3
@@ -230,12 +230,12 @@
 
     sub-int/2addr v4, v5
 
-    .line 346
+    .line 353
     invoke-virtual {p1, v3, v0, v4, v2}, Landroid/graphics/Canvas;->clipRect(IIII)Z
 
     goto :goto_0
 
-    .line 350
+    .line 357
     :cond_0
     invoke-virtual {p2}, Landroidx/recyclerview/widget/RecyclerView;->getHeight()I
 
@@ -243,95 +243,137 @@
 
     move v0, v1
 
-    .line 352
+    .line 359
     :goto_0
     iget v3, p0, Lcom/google/android/material/divider/MaterialDividerItemDecoration;->insetStart:I
 
     add-int/2addr v0, v3
 
-    .line 353
+    .line 360
     iget v3, p0, Lcom/google/android/material/divider/MaterialDividerItemDecoration;->insetEnd:I
 
     sub-int/2addr v2, v3
 
-    .line 355
-    invoke-virtual {p2}, Landroidx/recyclerview/widget/RecyclerView;->getChildCount()I
+    .line 362
+    invoke-static {p2}, Lcom/google/android/material/internal/ViewUtils;->isLayoutRtl(Landroid/view/View;)Z
 
     move-result v3
 
+    .line 364
+    invoke-virtual {p2}, Landroidx/recyclerview/widget/RecyclerView;->getChildCount()I
+
+    move-result v4
+
     :goto_1
-    if-ge v1, v3, :cond_2
+    if-ge v1, v4, :cond_3
 
-    .line 357
+    .line 366
     invoke-virtual {p2, v1}, Landroidx/recyclerview/widget/RecyclerView;->getChildAt(I)Landroid/view/View;
-
-    move-result-object v4
-
-    .line 358
-    invoke-direct {p0, p2, v4}, Lcom/google/android/material/divider/MaterialDividerItemDecoration;->shouldDrawDivider(Landroidx/recyclerview/widget/RecyclerView;Landroid/view/View;)Z
-
-    move-result v5
-
-    if-eqz v5, :cond_1
-
-    .line 359
-    invoke-virtual {p2}, Landroidx/recyclerview/widget/RecyclerView;->getLayoutManager()Landroidx/recyclerview/widget/RecyclerView$LayoutManager;
 
     move-result-object v5
 
-    iget-object v6, p0, Lcom/google/android/material/divider/MaterialDividerItemDecoration;->tempRect:Landroid/graphics/Rect;
+    .line 367
+    invoke-direct {p0, p2, v5}, Lcom/google/android/material/divider/MaterialDividerItemDecoration;->shouldDrawDivider(Landroidx/recyclerview/widget/RecyclerView;Landroid/view/View;)Z
 
-    invoke-virtual {v5, v4, v6}, Landroidx/recyclerview/widget/RecyclerView$LayoutManager;->getDecoratedBoundsWithMargins(Landroid/view/View;Landroid/graphics/Rect;)V
+    move-result v6
 
-    .line 361
-    iget-object v5, p0, Lcom/google/android/material/divider/MaterialDividerItemDecoration;->tempRect:Landroid/graphics/Rect;
+    if-eqz v6, :cond_2
 
-    iget v5, v5, Landroid/graphics/Rect;->right:I
+    .line 368
+    invoke-virtual {p2}, Landroidx/recyclerview/widget/RecyclerView;->getLayoutManager()Landroidx/recyclerview/widget/RecyclerView$LayoutManager;
 
-    invoke-virtual {v4}, Landroid/view/View;->getTranslationX()F
+    move-result-object v6
 
-    move-result v4
+    iget-object v7, p0, Lcom/google/android/material/divider/MaterialDividerItemDecoration;->tempRect:Landroid/graphics/Rect;
 
-    invoke-static {v4}, Ljava/lang/Math;->round(F)I
+    invoke-virtual {v6, v5, v7}, Landroidx/recyclerview/widget/RecyclerView$LayoutManager;->getDecoratedBoundsWithMargins(Landroid/view/View;Landroid/graphics/Rect;)V
 
-    move-result v4
+    .line 370
+    invoke-virtual {v5}, Landroid/view/View;->getTranslationX()F
 
-    add-int/2addr v5, v4
+    move-result v6
 
-    .line 362
-    iget v4, p0, Lcom/google/android/material/divider/MaterialDividerItemDecoration;->thickness:I
+    invoke-static {v6}, Ljava/lang/Math;->round(F)I
 
-    sub-int v4, v5, v4
+    move-result v6
 
-    .line 363
+    if-eqz v3, :cond_1
+
+    .line 374
+    iget-object v7, p0, Lcom/google/android/material/divider/MaterialDividerItemDecoration;->tempRect:Landroid/graphics/Rect;
+
+    iget v7, v7, Landroid/graphics/Rect;->left:I
+
+    add-int/2addr v7, v6
+
+    .line 375
+    iget v6, p0, Lcom/google/android/material/divider/MaterialDividerItemDecoration;->thickness:I
+
+    add-int/2addr v6, v7
+
+    goto :goto_2
+
+    .line 377
+    :cond_1
+    iget-object v7, p0, Lcom/google/android/material/divider/MaterialDividerItemDecoration;->tempRect:Landroid/graphics/Rect;
+
+    iget v7, v7, Landroid/graphics/Rect;->right:I
+
+    add-int/2addr v6, v7
+
+    .line 378
+    iget v7, p0, Lcom/google/android/material/divider/MaterialDividerItemDecoration;->thickness:I
+
+    sub-int v7, v6, v7
+
+    .line 380
+    :goto_2
+    iget-object v8, p0, Lcom/google/android/material/divider/MaterialDividerItemDecoration;->dividerDrawable:Landroid/graphics/drawable/Drawable;
+
+    invoke-virtual {v8, v7, v0, v6, v2}, Landroid/graphics/drawable/Drawable;->setBounds(IIII)V
+
+    .line 381
+    invoke-virtual {v5}, Landroid/view/View;->getAlpha()F
+
+    move-result v5
+
+    const/high16 v6, 0x437f0000    # 255.0f
+
+    mul-float/2addr v5, v6
+
+    invoke-static {v5}, Ljava/lang/Math;->round(F)I
+
+    move-result v5
+
+    .line 382
     iget-object v6, p0, Lcom/google/android/material/divider/MaterialDividerItemDecoration;->dividerDrawable:Landroid/graphics/drawable/Drawable;
 
-    invoke-virtual {v6, v4, v0, v5, v2}, Landroid/graphics/drawable/Drawable;->setBounds(IIII)V
+    invoke-virtual {v6, v5}, Landroid/graphics/drawable/Drawable;->setAlpha(I)V
 
-    .line 364
-    iget-object v4, p0, Lcom/google/android/material/divider/MaterialDividerItemDecoration;->dividerDrawable:Landroid/graphics/drawable/Drawable;
+    .line 383
+    iget-object v5, p0, Lcom/google/android/material/divider/MaterialDividerItemDecoration;->dividerDrawable:Landroid/graphics/drawable/Drawable;
 
-    invoke-virtual {v4, p1}, Landroid/graphics/drawable/Drawable;->draw(Landroid/graphics/Canvas;)V
+    invoke-virtual {v5, p1}, Landroid/graphics/drawable/Drawable;->draw(Landroid/graphics/Canvas;)V
 
-    :cond_1
+    :cond_2
     add-int/lit8 v1, v1, 0x1
 
     goto :goto_1
 
-    .line 367
-    :cond_2
+    .line 386
+    :cond_3
     invoke-virtual {p1}, Landroid/graphics/Canvas;->restore()V
 
     return-void
 .end method
 
 .method private drawForVerticalOrientation(Landroid/graphics/Canvas;Landroidx/recyclerview/widget/RecyclerView;)V
-    .locals 7
+    .locals 8
 
-    .line 304
+    .line 309
     invoke-virtual {p1}, Landroid/graphics/Canvas;->save()I
 
-    .line 307
+    .line 312
     invoke-virtual {p2}, Landroidx/recyclerview/widget/RecyclerView;->getClipToPadding()Z
 
     move-result v0
@@ -340,12 +382,12 @@
 
     if-eqz v0, :cond_0
 
-    .line 308
+    .line 313
     invoke-virtual {p2}, Landroidx/recyclerview/widget/RecyclerView;->getPaddingLeft()I
 
     move-result v0
 
-    .line 309
+    .line 314
     invoke-virtual {p2}, Landroidx/recyclerview/widget/RecyclerView;->getWidth()I
 
     move-result v2
@@ -356,7 +398,7 @@
 
     sub-int/2addr v2, v3
 
-    .line 311
+    .line 316
     invoke-virtual {p2}, Landroidx/recyclerview/widget/RecyclerView;->getPaddingTop()I
 
     move-result v3
@@ -371,12 +413,12 @@
 
     sub-int/2addr v4, v5
 
-    .line 310
+    .line 315
     invoke-virtual {p1, v0, v3, v2, v4}, Landroid/graphics/Canvas;->clipRect(IIII)Z
 
     goto :goto_0
 
-    .line 314
+    .line 319
     :cond_0
     invoke-virtual {p2}, Landroidx/recyclerview/widget/RecyclerView;->getWidth()I
 
@@ -384,69 +426,59 @@
 
     move v0, v1
 
-    .line 316
+    .line 321
     :goto_0
-    invoke-static {p2}, Landroidx/core/view/ViewCompat;->getLayoutDirection(Landroid/view/View;)I
+    invoke-static {p2}, Lcom/google/android/material/internal/ViewUtils;->isLayoutRtl(Landroid/view/View;)Z
 
     move-result v3
 
-    const/4 v4, 0x1
+    if-eqz v3, :cond_1
 
-    if-ne v3, v4, :cond_1
+    .line 322
+    iget v4, p0, Lcom/google/android/material/divider/MaterialDividerItemDecoration;->insetEnd:I
 
     goto :goto_1
 
     :cond_1
-    move v4, v1
+    iget v4, p0, Lcom/google/android/material/divider/MaterialDividerItemDecoration;->insetStart:I
 
     :goto_1
-    if-eqz v4, :cond_2
+    add-int/2addr v0, v4
 
-    .line 317
-    iget v3, p0, Lcom/google/android/material/divider/MaterialDividerItemDecoration;->insetEnd:I
+    if-eqz v3, :cond_2
+
+    .line 323
+    iget v3, p0, Lcom/google/android/material/divider/MaterialDividerItemDecoration;->insetStart:I
 
     goto :goto_2
 
     :cond_2
-    iget v3, p0, Lcom/google/android/material/divider/MaterialDividerItemDecoration;->insetStart:I
-
-    :goto_2
-    add-int/2addr v0, v3
-
-    if-eqz v4, :cond_3
-
-    .line 318
-    iget v3, p0, Lcom/google/android/material/divider/MaterialDividerItemDecoration;->insetStart:I
-
-    goto :goto_3
-
-    :cond_3
     iget v3, p0, Lcom/google/android/material/divider/MaterialDividerItemDecoration;->insetEnd:I
 
-    :goto_3
+    :goto_2
     sub-int/2addr v2, v3
 
-    .line 320
+    .line 325
     invoke-virtual {p2}, Landroidx/recyclerview/widget/RecyclerView;->getChildCount()I
 
     move-result v3
 
-    :goto_4
-    if-ge v1, v3, :cond_5
+    :goto_3
+    if-ge v1, v3, :cond_4
 
-    .line 322
+    .line 327
     invoke-virtual {p2, v1}, Landroidx/recyclerview/widget/RecyclerView;->getChildAt(I)Landroid/view/View;
 
     move-result-object v4
 
-    .line 323
+    .line 328
     invoke-direct {p0, p2, v4}, Lcom/google/android/material/divider/MaterialDividerItemDecoration;->shouldDrawDivider(Landroidx/recyclerview/widget/RecyclerView;Landroid/view/View;)Z
 
     move-result v5
 
-    if-eqz v5, :cond_4
+    if-eqz v5, :cond_3
 
-    .line 324
+    .line 329
     invoke-virtual {p2}, Landroidx/recyclerview/widget/RecyclerView;->getLayoutManager()Landroidx/recyclerview/widget/RecyclerView$LayoutManager;
 
     move-result-object v5
@@ -455,43 +487,61 @@
 
     invoke-virtual {v5, v4, v6}, Landroidx/recyclerview/widget/RecyclerView$LayoutManager;->getDecoratedBoundsWithMargins(Landroid/view/View;Landroid/graphics/Rect;)V
 
-    .line 326
+    .line 331
     iget-object v5, p0, Lcom/google/android/material/divider/MaterialDividerItemDecoration;->tempRect:Landroid/graphics/Rect;
 
     iget v5, v5, Landroid/graphics/Rect;->bottom:I
 
     invoke-virtual {v4}, Landroid/view/View;->getTranslationY()F
 
+    move-result v6
+
+    invoke-static {v6}, Ljava/lang/Math;->round(F)I
+
+    move-result v6
+
+    add-int/2addr v5, v6
+
+    .line 332
+    iget v6, p0, Lcom/google/android/material/divider/MaterialDividerItemDecoration;->thickness:I
+
+    sub-int v6, v5, v6
+
+    .line 333
+    iget-object v7, p0, Lcom/google/android/material/divider/MaterialDividerItemDecoration;->dividerDrawable:Landroid/graphics/drawable/Drawable;
+
+    invoke-virtual {v7, v0, v6, v2, v5}, Landroid/graphics/drawable/Drawable;->setBounds(IIII)V
+
+    .line 334
+    invoke-virtual {v4}, Landroid/view/View;->getAlpha()F
+
     move-result v4
+
+    const/high16 v5, 0x437f0000    # 255.0f
+
+    mul-float/2addr v4, v5
 
     invoke-static {v4}, Ljava/lang/Math;->round(F)I
 
     move-result v4
 
-    add-int/2addr v5, v4
+    .line 335
+    iget-object v5, p0, Lcom/google/android/material/divider/MaterialDividerItemDecoration;->dividerDrawable:Landroid/graphics/drawable/Drawable;
 
-    .line 327
-    iget v4, p0, Lcom/google/android/material/divider/MaterialDividerItemDecoration;->thickness:I
+    invoke-virtual {v5, v4}, Landroid/graphics/drawable/Drawable;->setAlpha(I)V
 
-    sub-int v4, v5, v4
-
-    .line 328
-    iget-object v6, p0, Lcom/google/android/material/divider/MaterialDividerItemDecoration;->dividerDrawable:Landroid/graphics/drawable/Drawable;
-
-    invoke-virtual {v6, v0, v4, v2, v5}, Landroid/graphics/drawable/Drawable;->setBounds(IIII)V
-
-    .line 329
+    .line 336
     iget-object v4, p0, Lcom/google/android/material/divider/MaterialDividerItemDecoration;->dividerDrawable:Landroid/graphics/drawable/Drawable;
 
     invoke-virtual {v4, p1}, Landroid/graphics/drawable/Drawable;->draw(Landroid/graphics/Canvas;)V
 
-    :cond_4
+    :cond_3
     add-int/lit8 v1, v1, 0x1
 
-    goto :goto_4
+    goto :goto_3
 
-    .line 332
-    :cond_5
+    .line 339
+    :cond_4
     invoke-virtual {p1}, Landroid/graphics/Canvas;->restore()V
 
     return-void
@@ -500,12 +550,12 @@
 .method private shouldDrawDivider(Landroidx/recyclerview/widget/RecyclerView;Landroid/view/View;)Z
     .locals 4
 
-    .line 388
+    .line 411
     invoke-virtual {p1, p2}, Landroidx/recyclerview/widget/RecyclerView;->getChildAdapterPosition(Landroid/view/View;)I
 
     move-result p2
 
-    .line 389
+    .line 412
     invoke-virtual {p1}, Landroidx/recyclerview/widget/RecyclerView;->getAdapter()Landroidx/recyclerview/widget/RecyclerView$Adapter;
 
     move-result-object p1
@@ -516,7 +566,7 @@
 
     if-eqz p1, :cond_0
 
-    .line 390
+    .line 413
     invoke-virtual {p1}, Landroidx/recyclerview/widget/RecyclerView$Adapter;->getItemCount()I
 
     move-result v2
@@ -539,12 +589,12 @@
 
     if-eqz v2, :cond_1
 
-    .line 392
+    .line 415
     iget-boolean v2, p0, Lcom/google/android/material/divider/MaterialDividerItemDecoration;->lastItemDecorated:Z
 
     if-eqz v2, :cond_2
 
-    .line 394
+    .line 417
     :cond_1
     invoke-virtual {p0, p2, p1}, Lcom/google/android/material/divider/MaterialDividerItemDecoration;->shouldDrawDivider(ILandroidx/recyclerview/widget/RecyclerView$Adapter;)Z
 
@@ -563,7 +613,7 @@
 .method public getDividerColor()I
     .locals 0
 
-    .line 196
+    .line 201
     iget p0, p0, Lcom/google/android/material/divider/MaterialDividerItemDecoration;->color:I
 
     return p0
@@ -572,7 +622,7 @@
 .method public getDividerInsetEnd()I
     .locals 0
 
-    .line 262
+    .line 267
     iget p0, p0, Lcom/google/android/material/divider/MaterialDividerItemDecoration;->insetEnd:I
 
     return p0
@@ -581,7 +631,7 @@
 .method public getDividerInsetStart()I
     .locals 0
 
-    .line 229
+    .line 234
     iget p0, p0, Lcom/google/android/material/divider/MaterialDividerItemDecoration;->insetStart:I
 
     return p0
@@ -590,7 +640,7 @@
 .method public getDividerThickness()I
     .locals 0
 
-    .line 161
+    .line 166
     iget p0, p0, Lcom/google/android/material/divider/MaterialDividerItemDecoration;->thickness:I
 
     return p0
@@ -601,37 +651,52 @@
 
     const/4 p4, 0x0
 
-    .line 376
+    .line 395
     invoke-virtual {p1, p4, p4, p4, p4}, Landroid/graphics/Rect;->set(IIII)V
 
-    .line 378
+    .line 397
     invoke-direct {p0, p3, p2}, Lcom/google/android/material/divider/MaterialDividerItemDecoration;->shouldDrawDivider(Landroidx/recyclerview/widget/RecyclerView;Landroid/view/View;)Z
 
     move-result p2
 
-    if-eqz p2, :cond_1
+    if-eqz p2, :cond_2
 
-    .line 379
+    .line 398
     iget p2, p0, Lcom/google/android/material/divider/MaterialDividerItemDecoration;->orientation:I
 
-    const/4 p3, 0x1
+    const/4 p4, 0x1
 
-    if-ne p2, p3, :cond_0
+    if-ne p2, p4, :cond_0
 
-    .line 380
+    .line 399
     iget p0, p0, Lcom/google/android/material/divider/MaterialDividerItemDecoration;->thickness:I
 
     iput p0, p1, Landroid/graphics/Rect;->bottom:I
 
     goto :goto_0
 
-    .line 382
+    .line 401
     :cond_0
+    invoke-static {p3}, Lcom/google/android/material/internal/ViewUtils;->isLayoutRtl(Landroid/view/View;)Z
+
+    move-result p2
+
+    if-eqz p2, :cond_1
+
+    .line 402
+    iget p0, p0, Lcom/google/android/material/divider/MaterialDividerItemDecoration;->thickness:I
+
+    iput p0, p1, Landroid/graphics/Rect;->left:I
+
+    goto :goto_0
+
+    .line 404
+    :cond_1
     iget p0, p0, Lcom/google/android/material/divider/MaterialDividerItemDecoration;->thickness:I
 
     iput p0, p1, Landroid/graphics/Rect;->right:I
 
-    :cond_1
+    :cond_2
     :goto_0
     return-void
 .end method
@@ -639,7 +704,7 @@
 .method public getOrientation()I
     .locals 0
 
-    .line 128
+    .line 133
     iget p0, p0, Lcom/google/android/material/divider/MaterialDividerItemDecoration;->orientation:I
 
     return p0
@@ -648,7 +713,7 @@
 .method public isLastItemDecorated()Z
     .locals 0
 
-    .line 283
+    .line 288
     iget-boolean p0, p0, Lcom/google/android/material/divider/MaterialDividerItemDecoration;->lastItemDecorated:Z
 
     return p0
@@ -657,7 +722,7 @@
 .method public onDraw(Landroid/graphics/Canvas;Landroidx/recyclerview/widget/RecyclerView;Landroidx/recyclerview/widget/RecyclerView$State;)V
     .locals 1
 
-    .line 289
+    .line 294
     invoke-virtual {p2}, Landroidx/recyclerview/widget/RecyclerView;->getLayoutManager()Landroidx/recyclerview/widget/RecyclerView$LayoutManager;
 
     move-result-object p3
@@ -666,7 +731,7 @@
 
     return-void
 
-    .line 292
+    .line 297
     :cond_0
     iget p3, p0, Lcom/google/android/material/divider/MaterialDividerItemDecoration;->orientation:I
 
@@ -674,12 +739,12 @@
 
     if-ne p3, v0, :cond_1
 
-    .line 293
+    .line 298
     invoke-direct {p0, p1, p2}, Lcom/google/android/material/divider/MaterialDividerItemDecoration;->drawForVerticalOrientation(Landroid/graphics/Canvas;Landroidx/recyclerview/widget/RecyclerView;)V
 
     goto :goto_0
 
-    .line 295
+    .line 300
     :cond_1
     invoke-direct {p0, p1, p2}, Lcom/google/android/material/divider/MaterialDividerItemDecoration;->drawForHorizontalOrientation(Landroid/graphics/Canvas;Landroidx/recyclerview/widget/RecyclerView;)V
 
@@ -690,10 +755,10 @@
 .method public setDividerColor(I)V
     .locals 1
 
-    .line 172
+    .line 177
     iput p1, p0, Lcom/google/android/material/divider/MaterialDividerItemDecoration;->color:I
 
-    .line 173
+    .line 178
     iget-object v0, p0, Lcom/google/android/material/divider/MaterialDividerItemDecoration;->dividerDrawable:Landroid/graphics/drawable/Drawable;
 
     invoke-static {v0}, Landroidx/core/graphics/drawable/DrawableCompat;->wrap(Landroid/graphics/drawable/Drawable;)Landroid/graphics/drawable/Drawable;
@@ -702,7 +767,7 @@
 
     iput-object v0, p0, Lcom/google/android/material/divider/MaterialDividerItemDecoration;->dividerDrawable:Landroid/graphics/drawable/Drawable;
 
-    .line 174
+    .line 179
     invoke-static {v0, p1}, Landroidx/core/graphics/drawable/DrawableCompat;->setTint(Landroid/graphics/drawable/Drawable;I)V
 
     return-void
@@ -711,7 +776,7 @@
 .method public setDividerColorResource(Landroid/content/Context;I)V
     .locals 0
 
-    .line 185
+    .line 190
     invoke-static {p1, p2}, Landroidx/core/content/ContextCompat;->getColor(Landroid/content/Context;I)I
 
     move-result p1
@@ -724,7 +789,7 @@
 .method public setDividerInsetEnd(I)V
     .locals 0
 
-    .line 240
+    .line 245
     iput p1, p0, Lcom/google/android/material/divider/MaterialDividerItemDecoration;->insetEnd:I
 
     return-void
@@ -733,7 +798,7 @@
 .method public setDividerInsetEndResource(Landroid/content/Context;I)V
     .locals 0
 
-    .line 251
+    .line 256
     invoke-virtual {p1}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
 
     move-result-object p1
@@ -750,7 +815,7 @@
 .method public setDividerInsetStart(I)V
     .locals 0
 
-    .line 207
+    .line 212
     iput p1, p0, Lcom/google/android/material/divider/MaterialDividerItemDecoration;->insetStart:I
 
     return-void
@@ -759,7 +824,7 @@
 .method public setDividerInsetStartResource(Landroid/content/Context;I)V
     .locals 0
 
-    .line 218
+    .line 223
     invoke-virtual {p1}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
 
     move-result-object p1
@@ -776,7 +841,7 @@
 .method public setDividerThickness(I)V
     .locals 0
 
-    .line 139
+    .line 144
     iput p1, p0, Lcom/google/android/material/divider/MaterialDividerItemDecoration;->thickness:I
 
     return-void
@@ -785,7 +850,7 @@
 .method public setDividerThicknessResource(Landroid/content/Context;I)V
     .locals 0
 
-    .line 150
+    .line 155
     invoke-virtual {p1}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
 
     move-result-object p1
@@ -802,7 +867,7 @@
 .method public setLastItemDecorated(Z)V
     .locals 0
 
-    .line 273
+    .line 278
     iput-boolean p1, p0, Lcom/google/android/material/divider/MaterialDividerItemDecoration;->lastItemDecorated:Z
 
     return-void
@@ -819,7 +884,7 @@
 
     goto :goto_0
 
-    .line 121
+    .line 126
     :cond_0
     new-instance p0, Ljava/lang/IllegalArgumentException;
 
@@ -847,7 +912,7 @@
 
     throw p0
 
-    .line 124
+    .line 129
     :cond_1
     :goto_0
     iput p1, p0, Lcom/google/android/material/divider/MaterialDividerItemDecoration;->orientation:I

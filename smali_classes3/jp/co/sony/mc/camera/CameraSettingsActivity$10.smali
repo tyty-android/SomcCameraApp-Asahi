@@ -28,7 +28,7 @@
 .method static constructor <clinit>()V
     .locals 9
 
-    .line 1037
+    .line 1038
     invoke-static {}, Ljp/co/sony/mc/camera/setting/SettingAppearance;->values()[Ljp/co/sony/mc/camera/setting/SettingAppearance;
 
     move-result-object v0
@@ -100,7 +100,7 @@
     :try_end_3
     .catch Ljava/lang/NoSuchFieldError; {:try_start_3 .. :try_end_3} :catch_3
 
-    .line 793
+    .line 797
     :catch_3
     invoke-static {}, Ljp/co/sony/mc/camera/view/setting/settingitem/SettingLayoutType;->values()[Ljp/co/sony/mc/camera/view/setting/settingitem/SettingLayoutType;
 
@@ -213,7 +213,7 @@
     :try_end_a
     .catch Ljava/lang/NoSuchFieldError; {:try_start_a .. :try_end_a} :catch_a
 
-    .line 520
+    .line 522
     :catch_a
     invoke-static {}, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->values()[Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
 
@@ -960,8 +960,24 @@
     :try_end_39
     .catch Ljava/lang/NoSuchFieldError; {:try_start_39 .. :try_end_39} :catch_39
 
-    .line 444
     :catch_39
+    :try_start_3a
+    sget-object v4, Ljp/co/sony/mc/camera/CameraSettingsActivity$10;->$SwitchMap$jp$co$sony$mc$camera$view$messagedialog$DialogId:[I
+
+    sget-object v5, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->CONTINUOUS_SHOOTING_RESTRICTION:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
+
+    invoke-virtual {v5}, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->ordinal()I
+
+    move-result v5
+
+    const/16 v6, 0x30
+
+    aput v6, v4, v5
+    :try_end_3a
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_3a .. :try_end_3a} :catch_3a
+
+    .line 446
+    :catch_3a
     invoke-static {}, Ljp/co/sony/mc/camera/util/KeyEventTranslator$TranslatedKeyCode;->values()[Ljp/co/sony/mc/camera/util/KeyEventTranslator$TranslatedKeyCode;
 
     move-result-object v4
@@ -972,7 +988,7 @@
 
     sput-object v4, Ljp/co/sony/mc/camera/CameraSettingsActivity$10;->$SwitchMap$jp$co$sony$mc$camera$util$KeyEventTranslator$TranslatedKeyCode:[I
 
-    :try_start_3a
+    :try_start_3b
     sget-object v5, Ljp/co/sony/mc/camera/util/KeyEventTranslator$TranslatedKeyCode;->FOCUS:Ljp/co/sony/mc/camera/util/KeyEventTranslator$TranslatedKeyCode;
 
     invoke-virtual {v5}, Ljp/co/sony/mc/camera/util/KeyEventTranslator$TranslatedKeyCode;->ordinal()I
@@ -980,11 +996,11 @@
     move-result v5
 
     aput v1, v4, v5
-    :try_end_3a
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_3a .. :try_end_3a} :catch_3a
+    :try_end_3b
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_3b .. :try_end_3b} :catch_3b
 
-    :catch_3a
-    :try_start_3b
+    :catch_3b
+    :try_start_3c
     sget-object v1, Ljp/co/sony/mc/camera/CameraSettingsActivity$10;->$SwitchMap$jp$co$sony$mc$camera$util$KeyEventTranslator$TranslatedKeyCode:[I
 
     sget-object v4, Ljp/co/sony/mc/camera/util/KeyEventTranslator$TranslatedKeyCode;->SHUTTER:Ljp/co/sony/mc/camera/util/KeyEventTranslator$TranslatedKeyCode;
@@ -994,11 +1010,11 @@
     move-result v4
 
     aput v0, v1, v4
-    :try_end_3b
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_3b .. :try_end_3b} :catch_3b
+    :try_end_3c
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_3c .. :try_end_3c} :catch_3c
 
-    :catch_3b
-    :try_start_3c
+    :catch_3c
+    :try_start_3d
     sget-object v0, Ljp/co/sony/mc/camera/CameraSettingsActivity$10;->$SwitchMap$jp$co$sony$mc$camera$util$KeyEventTranslator$TranslatedKeyCode:[I
 
     sget-object v1, Ljp/co/sony/mc/camera/util/KeyEventTranslator$TranslatedKeyCode;->FOCUS_AND_SHUTTER_DOWN_KEY:Ljp/co/sony/mc/camera/util/KeyEventTranslator$TranslatedKeyCode;
@@ -1008,11 +1024,11 @@
     move-result v1
 
     aput v2, v0, v1
-    :try_end_3c
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_3c .. :try_end_3c} :catch_3c
+    :try_end_3d
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_3d .. :try_end_3d} :catch_3d
 
-    :catch_3c
-    :try_start_3d
+    :catch_3d
+    :try_start_3e
     sget-object v0, Ljp/co/sony/mc/camera/CameraSettingsActivity$10;->$SwitchMap$jp$co$sony$mc$camera$util$KeyEventTranslator$TranslatedKeyCode:[I
 
     sget-object v1, Ljp/co/sony/mc/camera/util/KeyEventTranslator$TranslatedKeyCode;->FOCUS_AND_SHUTTER_UP_KEY:Ljp/co/sony/mc/camera/util/KeyEventTranslator$TranslatedKeyCode;
@@ -1022,9 +1038,9 @@
     move-result v1
 
     aput v3, v0, v1
-    :try_end_3d
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_3d .. :try_end_3d} :catch_3d
+    :try_end_3e
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_3e .. :try_end_3e} :catch_3e
 
-    :catch_3d
+    :catch_3e
     return-void
 .end method

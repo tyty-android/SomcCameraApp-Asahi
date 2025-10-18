@@ -45,7 +45,7 @@
 
 # direct methods
 .method constructor <init>()V
-    .locals 8
+    .locals 10
 
     .line 40
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -77,61 +77,69 @@
 
     invoke-direct {v1, v2, v4}, Landroid/util/Pair;-><init>(Ljava/lang/Object;Ljava/lang/Object;)V
 
-    sget-object v2, Ljp/co/sony/mc/camera/configuration/parameters/VideoSize;->FOUR_K_UHD:Ljp/co/sony/mc/camera/configuration/parameters/VideoSize;
+    const/4 v2, 0x2
 
-    sget-object v4, Ljp/co/sony/mc/camera/setting/CameraSettings;->OBJECT_TRACKING:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
+    new-array v4, v2, [Ljp/co/sony/mc/camera/parameter/dependency/DependencyGuideInfo$SettingValueGroup;
 
-    new-array v5, v3, [Ljp/co/sony/mc/camera/configuration/parameters/UserSettingValue;
+    sget-object v5, Ljp/co/sony/mc/camera/configuration/parameters/VideoSize;->FOUR_K_UHD:Ljp/co/sony/mc/camera/configuration/parameters/VideoSize;
+
+    const/4 v6, 0x1
+
+    new-array v7, v6, [Ljp/co/sony/mc/camera/parameter/dependency/DependencyGuideInfo$SettingDependencyGroup;
+
+    sget-object v8, Ljp/co/sony/mc/camera/setting/CameraSettings;->OBJECT_TRACKING:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
+
+    new-array v9, v3, [Ljp/co/sony/mc/camera/configuration/parameters/UserSettingValue;
 
     .line 44
-    invoke-direct {p0, v4, v5}, Ljp/co/sony/mc/camera/parameter/dependency/DependencyGuideInfo;->settingDependencyGroup(Ljp/co/sony/mc/camera/setting/SettingKey$Key;[Ljp/co/sony/mc/camera/configuration/parameters/UserSettingValue;)Ljp/co/sony/mc/camera/parameter/dependency/DependencyGuideInfo$SettingDependencyGroup;
+    invoke-direct {p0, v8, v9}, Ljp/co/sony/mc/camera/parameter/dependency/DependencyGuideInfo;->settingDependencyGroup(Ljp/co/sony/mc/camera/setting/SettingKey$Key;[Ljp/co/sony/mc/camera/configuration/parameters/UserSettingValue;)Ljp/co/sony/mc/camera/parameter/dependency/DependencyGuideInfo$SettingDependencyGroup;
 
-    move-result-object v4
+    move-result-object v8
 
-    filled-new-array {v4}, [Ljp/co/sony/mc/camera/parameter/dependency/DependencyGuideInfo$SettingDependencyGroup;
-
-    move-result-object v4
+    aput-object v8, v7, v3
 
     .line 43
-    invoke-direct {p0, v2, v4}, Ljp/co/sony/mc/camera/parameter/dependency/DependencyGuideInfo;->settingValueGroup(Ljp/co/sony/mc/camera/configuration/parameters/UserSettingValue;[Ljp/co/sony/mc/camera/parameter/dependency/DependencyGuideInfo$SettingDependencyGroup;)Ljp/co/sony/mc/camera/parameter/dependency/DependencyGuideInfo$SettingValueGroup;
+    invoke-direct {p0, v5, v7}, Ljp/co/sony/mc/camera/parameter/dependency/DependencyGuideInfo;->settingValueGroup(Ljp/co/sony/mc/camera/configuration/parameters/UserSettingValue;[Ljp/co/sony/mc/camera/parameter/dependency/DependencyGuideInfo$SettingDependencyGroup;)Ljp/co/sony/mc/camera/parameter/dependency/DependencyGuideInfo$SettingValueGroup;
 
-    move-result-object v2
+    move-result-object v5
 
-    sget-object v4, Ljp/co/sony/mc/camera/configuration/parameters/VideoSize;->VGA:Ljp/co/sony/mc/camera/configuration/parameters/VideoSize;
+    aput-object v5, v4, v3
 
-    sget-object v5, Ljp/co/sony/mc/camera/setting/CameraSettings;->VIDEO_STABILIZER:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
+    sget-object v5, Ljp/co/sony/mc/camera/configuration/parameters/VideoSize;->VGA:Ljp/co/sony/mc/camera/configuration/parameters/VideoSize;
 
-    new-array v6, v3, [Ljp/co/sony/mc/camera/configuration/parameters/UserSettingValue;
+    new-array v2, v2, [Ljp/co/sony/mc/camera/parameter/dependency/DependencyGuideInfo$SettingDependencyGroup;
+
+    sget-object v7, Ljp/co/sony/mc/camera/setting/CameraSettings;->VIDEO_STABILIZER:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
+
+    new-array v8, v3, [Ljp/co/sony/mc/camera/configuration/parameters/UserSettingValue;
 
     .line 47
-    invoke-direct {p0, v5, v6}, Ljp/co/sony/mc/camera/parameter/dependency/DependencyGuideInfo;->settingDependencyGroup(Ljp/co/sony/mc/camera/setting/SettingKey$Key;[Ljp/co/sony/mc/camera/configuration/parameters/UserSettingValue;)Ljp/co/sony/mc/camera/parameter/dependency/DependencyGuideInfo$SettingDependencyGroup;
+    invoke-direct {p0, v7, v8}, Ljp/co/sony/mc/camera/parameter/dependency/DependencyGuideInfo;->settingDependencyGroup(Ljp/co/sony/mc/camera/setting/SettingKey$Key;[Ljp/co/sony/mc/camera/configuration/parameters/UserSettingValue;)Ljp/co/sony/mc/camera/parameter/dependency/DependencyGuideInfo$SettingDependencyGroup;
 
-    move-result-object v5
+    move-result-object v7
 
-    sget-object v6, Ljp/co/sony/mc/camera/setting/CameraSettings;->VIDEO_HDR:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
+    aput-object v7, v2, v3
 
-    new-array v7, v3, [Ljp/co/sony/mc/camera/configuration/parameters/UserSettingValue;
+    sget-object v7, Ljp/co/sony/mc/camera/setting/CameraSettings;->VIDEO_HDR:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
+
+    new-array v8, v3, [Ljp/co/sony/mc/camera/configuration/parameters/UserSettingValue;
 
     .line 48
-    invoke-direct {p0, v6, v7}, Ljp/co/sony/mc/camera/parameter/dependency/DependencyGuideInfo;->settingDependencyGroup(Ljp/co/sony/mc/camera/setting/SettingKey$Key;[Ljp/co/sony/mc/camera/configuration/parameters/UserSettingValue;)Ljp/co/sony/mc/camera/parameter/dependency/DependencyGuideInfo$SettingDependencyGroup;
+    invoke-direct {p0, v7, v8}, Ljp/co/sony/mc/camera/parameter/dependency/DependencyGuideInfo;->settingDependencyGroup(Ljp/co/sony/mc/camera/setting/SettingKey$Key;[Ljp/co/sony/mc/camera/configuration/parameters/UserSettingValue;)Ljp/co/sony/mc/camera/parameter/dependency/DependencyGuideInfo$SettingDependencyGroup;
 
-    move-result-object v6
+    move-result-object v7
 
-    filled-new-array {v5, v6}, [Ljp/co/sony/mc/camera/parameter/dependency/DependencyGuideInfo$SettingDependencyGroup;
-
-    move-result-object v5
+    aput-object v7, v2, v6
 
     .line 46
-    invoke-direct {p0, v4, v5}, Ljp/co/sony/mc/camera/parameter/dependency/DependencyGuideInfo;->settingValueGroup(Ljp/co/sony/mc/camera/configuration/parameters/UserSettingValue;[Ljp/co/sony/mc/camera/parameter/dependency/DependencyGuideInfo$SettingDependencyGroup;)Ljp/co/sony/mc/camera/parameter/dependency/DependencyGuideInfo$SettingValueGroup;
-
-    move-result-object v4
-
-    filled-new-array {v2, v4}, [Ljp/co/sony/mc/camera/parameter/dependency/DependencyGuideInfo$SettingValueGroup;
+    invoke-direct {p0, v5, v2}, Ljp/co/sony/mc/camera/parameter/dependency/DependencyGuideInfo;->settingValueGroup(Ljp/co/sony/mc/camera/configuration/parameters/UserSettingValue;[Ljp/co/sony/mc/camera/parameter/dependency/DependencyGuideInfo$SettingDependencyGroup;)Ljp/co/sony/mc/camera/parameter/dependency/DependencyGuideInfo$SettingValueGroup;
 
     move-result-object v2
 
+    aput-object v2, v4, v6
+
     .line 42
-    invoke-direct {p0, v2}, Ljp/co/sony/mc/camera/parameter/dependency/DependencyGuideInfo;->modeGroup([Ljp/co/sony/mc/camera/parameter/dependency/DependencyGuideInfo$SettingValueGroup;)Ljp/co/sony/mc/camera/parameter/dependency/DependencyGuideInfo$ModeGroup;
+    invoke-direct {p0, v4}, Ljp/co/sony/mc/camera/parameter/dependency/DependencyGuideInfo;->modeGroup([Ljp/co/sony/mc/camera/parameter/dependency/DependencyGuideInfo$SettingValueGroup;)Ljp/co/sony/mc/camera/parameter/dependency/DependencyGuideInfo$ModeGroup;
 
     move-result-object v2
 
@@ -142,37 +150,35 @@
 
     sget-object v2, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->VIDEO_BASIC:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
-    const/4 v4, 0x1
-
-    invoke-static {v4}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
+    invoke-static {v6}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
     move-result-object v4
 
     invoke-direct {v1, v2, v4}, Landroid/util/Pair;-><init>(Ljava/lang/Object;Ljava/lang/Object;)V
 
-    sget-object v2, Ljp/co/sony/mc/camera/configuration/parameters/VideoSize;->VGA:Ljp/co/sony/mc/camera/configuration/parameters/VideoSize;
+    new-array v2, v6, [Ljp/co/sony/mc/camera/parameter/dependency/DependencyGuideInfo$SettingValueGroup;
 
-    sget-object v4, Ljp/co/sony/mc/camera/setting/CameraSettings;->VIDEO_STABILIZER:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
+    sget-object v4, Ljp/co/sony/mc/camera/configuration/parameters/VideoSize;->VGA:Ljp/co/sony/mc/camera/configuration/parameters/VideoSize;
 
-    new-array v3, v3, [Ljp/co/sony/mc/camera/configuration/parameters/UserSettingValue;
+    new-array v5, v6, [Ljp/co/sony/mc/camera/parameter/dependency/DependencyGuideInfo$SettingDependencyGroup;
+
+    sget-object v6, Ljp/co/sony/mc/camera/setting/CameraSettings;->VIDEO_STABILIZER:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
+
+    new-array v7, v3, [Ljp/co/sony/mc/camera/configuration/parameters/UserSettingValue;
 
     .line 54
-    invoke-direct {p0, v4, v3}, Ljp/co/sony/mc/camera/parameter/dependency/DependencyGuideInfo;->settingDependencyGroup(Ljp/co/sony/mc/camera/setting/SettingKey$Key;[Ljp/co/sony/mc/camera/configuration/parameters/UserSettingValue;)Ljp/co/sony/mc/camera/parameter/dependency/DependencyGuideInfo$SettingDependencyGroup;
+    invoke-direct {p0, v6, v7}, Ljp/co/sony/mc/camera/parameter/dependency/DependencyGuideInfo;->settingDependencyGroup(Ljp/co/sony/mc/camera/setting/SettingKey$Key;[Ljp/co/sony/mc/camera/configuration/parameters/UserSettingValue;)Ljp/co/sony/mc/camera/parameter/dependency/DependencyGuideInfo$SettingDependencyGroup;
 
-    move-result-object v3
+    move-result-object v6
 
-    filled-new-array {v3}, [Ljp/co/sony/mc/camera/parameter/dependency/DependencyGuideInfo$SettingDependencyGroup;
-
-    move-result-object v3
+    aput-object v6, v5, v3
 
     .line 53
-    invoke-direct {p0, v2, v3}, Ljp/co/sony/mc/camera/parameter/dependency/DependencyGuideInfo;->settingValueGroup(Ljp/co/sony/mc/camera/configuration/parameters/UserSettingValue;[Ljp/co/sony/mc/camera/parameter/dependency/DependencyGuideInfo$SettingDependencyGroup;)Ljp/co/sony/mc/camera/parameter/dependency/DependencyGuideInfo$SettingValueGroup;
+    invoke-direct {p0, v4, v5}, Ljp/co/sony/mc/camera/parameter/dependency/DependencyGuideInfo;->settingValueGroup(Ljp/co/sony/mc/camera/configuration/parameters/UserSettingValue;[Ljp/co/sony/mc/camera/parameter/dependency/DependencyGuideInfo$SettingDependencyGroup;)Ljp/co/sony/mc/camera/parameter/dependency/DependencyGuideInfo$SettingValueGroup;
 
-    move-result-object v2
+    move-result-object v4
 
-    filled-new-array {v2}, [Ljp/co/sony/mc/camera/parameter/dependency/DependencyGuideInfo$SettingValueGroup;
-
-    move-result-object v2
+    aput-object v4, v2, v3
 
     .line 52
     invoke-direct {p0, v2}, Ljp/co/sony/mc/camera/parameter/dependency/DependencyGuideInfo;->modeGroup([Ljp/co/sony/mc/camera/parameter/dependency/DependencyGuideInfo$SettingValueGroup;)Ljp/co/sony/mc/camera/parameter/dependency/DependencyGuideInfo$ModeGroup;

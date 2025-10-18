@@ -342,12 +342,12 @@
         }
     .end annotation
 
-    .line 284
+    .line 280
     instance-of v0, p0, Ljava/util/RandomAccess;
 
     if-nez v0, :cond_0
 
-    .line 285
+    .line 281
     const-string v0, "null cannot be cast to non-null type kotlin.collections.MutableIterable<T of kotlin.collections.CollectionsKt__MutableCollectionsKt.filterInPlace>"
 
     invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;Ljava/lang/String;)V
@@ -362,41 +362,27 @@
 
     return p0
 
-    .line 288
+    .line 284
     :cond_0
-    new-instance v0, Lkotlin/ranges/IntRange;
-
     invoke-static {p0}, Lkotlin/collections/CollectionsKt;->getLastIndex(Ljava/util/List;)I
 
-    move-result v1
+    move-result v0
 
-    const/4 v2, 0x0
+    const/4 v1, 0x0
 
-    invoke-direct {v0, v2, v1}, Lkotlin/ranges/IntRange;-><init>(II)V
+    if-ltz v0, :cond_3
 
-    invoke-virtual {v0}, Lkotlin/ranges/IntRange;->iterator()Lkotlin/collections/IntIterator;
+    move v2, v1
 
-    move-result-object v0
+    move v3, v2
 
-    move v1, v2
-
+    .line 285
     :goto_0
-    invoke-virtual {v0}, Lkotlin/collections/IntIterator;->hasNext()Z
-
-    move-result v3
-
-    if-eqz v3, :cond_3
-
-    invoke-virtual {v0}, Lkotlin/collections/IntIterator;->nextInt()I
-
-    move-result v3
-
-    .line 289
-    invoke-interface {p0, v3}, Ljava/util/List;->get(I)Ljava/lang/Object;
+    invoke-interface {p0, v2}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
     move-result-object v4
 
-    .line 290
+    .line 286
     invoke-interface {p1, v4}, Lkotlin/jvm/functions/Function1;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v5
@@ -409,51 +395,59 @@
 
     if-ne v5, p2, :cond_1
 
-    goto :goto_0
+    goto :goto_1
 
     :cond_1
-    if-eq v1, v3, :cond_2
+    if-eq v3, v2, :cond_2
 
-    .line 294
-    invoke-interface {p0, v1, v4}, Ljava/util/List;->set(ILjava/lang/Object;)Ljava/lang/Object;
+    .line 290
+    invoke-interface {p0, v3, v4}, Ljava/util/List;->set(ILjava/lang/Object;)Ljava/lang/Object;
 
     :cond_2
-    add-int/lit8 v1, v1, 0x1
+    add-int/lit8 v3, v3, 0x1
+
+    :goto_1
+    if-eq v2, v0, :cond_4
+
+    add-int/lit8 v2, v2, 0x1
 
     goto :goto_0
 
-    .line 298
     :cond_3
+    move v3, v1
+
+    .line 294
+    :cond_4
     invoke-interface {p0}, Ljava/util/List;->size()I
 
     move-result p1
 
-    if-ge v1, p1, :cond_5
+    if-ge v3, p1, :cond_6
 
-    .line 299
+    .line 295
     invoke-static {p0}, Lkotlin/collections/CollectionsKt;->getLastIndex(Ljava/util/List;)I
 
     move-result p1
 
-    if-gt v1, p1, :cond_4
+    if-gt v3, p1, :cond_5
 
-    .line 300
-    :goto_1
+    .line 296
+    :goto_2
     invoke-interface {p0, p1}, Ljava/util/List;->remove(I)Ljava/lang/Object;
 
-    if-eq p1, v1, :cond_4
+    if-eq p1, v3, :cond_5
 
     add-int/lit8 p1, p1, -0x1
 
-    goto :goto_1
+    goto :goto_2
 
-    :cond_4
+    :cond_5
     const/4 p0, 0x1
 
     return p0
 
-    :cond_5
-    return v2
+    :cond_6
+    return v1
 .end method
 
 .method private static final minusAssign(Ljava/util/Collection;Ljava/lang/Iterable;)V
@@ -967,7 +961,7 @@
 
     const/4 v0, 0x1
 
-    .line 274
+    .line 270
     invoke-static {p0, p1, v0}, Lkotlin/collections/CollectionsKt__MutableCollectionsKt;->filterInPlace$CollectionsKt__MutableCollectionsKt(Ljava/util/List;Lkotlin/jvm/functions/Function1;Z)Z
 
     move-result p0
@@ -991,7 +985,7 @@
 
     invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 246
+    .line 245
     invoke-interface {p0}, Ljava/util/List;->isEmpty()Z
 
     move-result v0
@@ -1032,7 +1026,7 @@
 
     invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 253
+    .line 251
     invoke-interface {p0}, Ljava/util/List;->isEmpty()Z
 
     move-result v0
@@ -1070,7 +1064,7 @@
 
     invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 260
+    .line 257
     invoke-interface {p0}, Ljava/util/List;->isEmpty()Z
 
     move-result v0
@@ -1113,7 +1107,7 @@
 
     invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 267
+    .line 263
     invoke-interface {p0}, Ljava/util/List;->isEmpty()Z
 
     move-result v0
@@ -1380,7 +1374,7 @@
 
     const/4 v0, 0x0
 
-    .line 281
+    .line 277
     invoke-static {p0, p1, v0}, Lkotlin/collections/CollectionsKt__MutableCollectionsKt;->filterInPlace$CollectionsKt__MutableCollectionsKt(Ljava/util/List;Lkotlin/jvm/functions/Function1;Z)Z
 
     move-result p0

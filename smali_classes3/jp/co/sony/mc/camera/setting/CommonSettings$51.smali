@@ -21,7 +21,7 @@
 .method constructor <init>()V
     .locals 0
 
-    .line 716
+    .line 719
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -42,10 +42,10 @@
         }
     .end annotation
 
-    .line 720
+    .line 723
     check-cast p1, Ljp/co/sony/mc/camera/setting/CommonSettings;
 
-    .line 721
+    .line 724
     invoke-static {p1}, Ljp/co/sony/mc/camera/setting/CommonSettings;->-$$Nest$mgetStreamingAudioMute(Ljp/co/sony/mc/camera/setting/CommonSettings;)Ljp/co/sony/mc/camera/configuration/parameters/StreamingAudioMute;
 
     move-result-object p0

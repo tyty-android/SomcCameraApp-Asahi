@@ -5,7 +5,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/SourceDebugExtension;
-    value = "SMAP\n_Ranges.kt\nKotlin\n*S Kotlin\n*F\n+ 1 _Ranges.kt\nkotlin/ranges/RangesKt___RangesKt\n+ 2 fake.kt\nkotlin/jvm/internal/FakeKt\n*L\n1#1,1537:1\n1#2:1538\n*E\n"
+    value = "SMAP\n_Ranges.kt\nKotlin\n*S Kotlin\n*F\n+ 1 _Ranges.kt\nkotlin/ranges/RangesKt___RangesKt\n+ 2 fake.kt\nkotlin/jvm/internal/FakeKt\n*L\n1#1,1538:1\n1#2:1539\n*E\n"
 .end annotation
 
 .annotation runtime Lkotlin/Metadata;
@@ -131,7 +131,7 @@
 
     invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 438
+    .line 433
     invoke-static {p1, p2}, Lkotlin/ranges/RangesKt;->toByteExactOrNull(D)Ljava/lang/Byte;
 
     move-result-object p1
@@ -169,7 +169,7 @@
 
     invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 486
+    .line 481
     invoke-static {p1}, Lkotlin/ranges/RangesKt;->toByteExactOrNull(F)Ljava/lang/Byte;
 
     move-result-object p1
@@ -206,7 +206,7 @@
 
     invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 530
+    .line 525
     invoke-static {p1}, Lkotlin/ranges/RangesKt;->toByteExactOrNull(I)Ljava/lang/Byte;
 
     move-result-object p1
@@ -243,7 +243,7 @@
 
     invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 612
+    .line 607
     invoke-static {p1, p2}, Lkotlin/ranges/RangesKt;->toByteExactOrNull(J)Ljava/lang/Byte;
 
     move-result-object p1
@@ -280,7 +280,7 @@
 
     invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 702
+    .line 697
     invoke-static {p1}, Lkotlin/ranges/RangesKt;->toByteExactOrNull(S)Ljava/lang/Byte;
 
     move-result-object p1
@@ -317,7 +317,7 @@
 
     invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 578
+    .line 573
     invoke-static {p1}, Lkotlin/ranges/RangesKt;->toByteExactOrNull(I)Ljava/lang/Byte;
 
     move-result-object p1
@@ -354,7 +354,7 @@
 
     invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 660
+    .line 655
     invoke-static {p1, p2}, Lkotlin/ranges/RangesKt;->toByteExactOrNull(J)Ljava/lang/Byte;
 
     move-result-object p1
@@ -391,7 +391,7 @@
 
     invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 752
+    .line 747
     invoke-static {p1}, Lkotlin/ranges/RangesKt;->toByteExactOrNull(S)Ljava/lang/Byte;
 
     move-result-object p1
@@ -492,7 +492,7 @@
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 1211
+    .line 1212
     invoke-interface {p0, p1}, Ljava/lang/Comparable;->compareTo(Ljava/lang/Object;)I
 
     move-result v0
@@ -595,7 +595,7 @@
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 1288
+    .line 1289
     invoke-interface {p0, p1}, Ljava/lang/Comparable;->compareTo(Ljava/lang/Object;)I
 
     move-result v0
@@ -636,7 +636,7 @@
     :cond_1
     return p0
 
-    .line 1385
+    .line 1386
     :cond_2
     new-instance p0, Ljava/lang/IllegalArgumentException;
 
@@ -698,7 +698,7 @@
     :cond_1
     return-wide p0
 
-    .line 1455
+    .line 1456
     :cond_2
     new-instance p0, Ljava/lang/IllegalArgumentException;
 
@@ -760,7 +760,7 @@
     :cond_1
     return p0
 
-    .line 1441
+    .line 1442
     :cond_2
     new-instance p0, Ljava/lang/IllegalArgumentException;
 
@@ -816,7 +816,7 @@
     :cond_1
     return p0
 
-    .line 1413
+    .line 1414
     :cond_2
     new-instance p0, Ljava/lang/IllegalArgumentException;
 
@@ -870,12 +870,12 @@
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 1507
+    .line 1508
     instance-of v0, p1, Lkotlin/ranges/ClosedFloatingPointRange;
 
     if-eqz v0, :cond_0
 
-    .line 1508
+    .line 1509
     invoke-static {p0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object p0
@@ -896,7 +896,7 @@
 
     return p0
 
-    .line 1510
+    .line 1511
     :cond_0
     invoke-interface {p1}, Lkotlin/ranges/ClosedRange;->isEmpty()Z
 
@@ -904,7 +904,7 @@
 
     if-nez v0, :cond_3
 
-    .line 1512
+    .line 1513
     invoke-interface {p1}, Lkotlin/ranges/ClosedRange;->getStart()Ljava/lang/Comparable;
 
     move-result-object v0
@@ -929,7 +929,7 @@
 
     goto :goto_0
 
-    .line 1513
+    .line 1514
     :cond_1
     invoke-interface {p1}, Lkotlin/ranges/ClosedRange;->getEndInclusive()Ljava/lang/Comparable;
 
@@ -957,7 +957,7 @@
     :goto_0
     return p0
 
-    .line 1510
+    .line 1511
     :cond_3
     new-instance p0, Ljava/lang/IllegalArgumentException;
 
@@ -1009,7 +1009,7 @@
     :cond_1
     return-wide p0
 
-    .line 1427
+    .line 1428
     :cond_2
     new-instance p0, Ljava/lang/IllegalArgumentException;
 
@@ -1063,12 +1063,12 @@
 
     invoke-static {p2, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 1526
+    .line 1527
     instance-of v0, p2, Lkotlin/ranges/ClosedFloatingPointRange;
 
     if-eqz v0, :cond_0
 
-    .line 1527
+    .line 1528
     invoke-static {p0, p1}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
 
     move-result-object p0
@@ -1089,7 +1089,7 @@
 
     return-wide p0
 
-    .line 1529
+    .line 1530
     :cond_0
     invoke-interface {p2}, Lkotlin/ranges/ClosedRange;->isEmpty()Z
 
@@ -1097,7 +1097,7 @@
 
     if-nez v0, :cond_3
 
-    .line 1531
+    .line 1532
     invoke-interface {p2}, Lkotlin/ranges/ClosedRange;->getStart()Ljava/lang/Comparable;
 
     move-result-object v0
@@ -1124,7 +1124,7 @@
 
     goto :goto_0
 
-    .line 1532
+    .line 1533
     :cond_1
     invoke-interface {p2}, Lkotlin/ranges/ClosedRange;->getEndInclusive()Ljava/lang/Comparable;
 
@@ -1154,7 +1154,7 @@
     :goto_0
     return-wide p0
 
-    .line 1529
+    .line 1530
     :cond_3
     new-instance p0, Ljava/lang/IllegalArgumentException;
 
@@ -1201,14 +1201,14 @@
 
     if-eqz p2, :cond_2
 
-    .line 1366
+    .line 1367
     invoke-interface {p1, p2}, Ljava/lang/Comparable;->compareTo(Ljava/lang/Object;)I
 
     move-result v0
 
     if-gtz v0, :cond_1
 
-    .line 1367
+    .line 1368
     invoke-interface {p0, p1}, Ljava/lang/Comparable;->compareTo(Ljava/lang/Object;)I
 
     move-result v0
@@ -1217,7 +1217,7 @@
 
     return-object p1
 
-    .line 1368
+    .line 1369
     :cond_0
     invoke-interface {p0, p2}, Ljava/lang/Comparable;->compareTo(Ljava/lang/Object;)I
 
@@ -1227,7 +1227,7 @@
 
     return-object p2
 
-    .line 1366
+    .line 1367
     :cond_1
     new-instance p0, Ljava/lang/IllegalArgumentException;
 
@@ -1268,7 +1268,7 @@
     :cond_2
     if-eqz p1, :cond_3
 
-    .line 1371
+    .line 1372
     invoke-interface {p0, p1}, Ljava/lang/Comparable;->compareTo(Ljava/lang/Object;)I
 
     move-result v0
@@ -1280,7 +1280,7 @@
     :cond_3
     if-eqz p2, :cond_4
 
-    .line 1372
+    .line 1373
     invoke-interface {p0, p2}, Ljava/lang/Comparable;->compareTo(Ljava/lang/Object;)I
 
     move-result p1
@@ -1313,14 +1313,14 @@
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 1470
+    .line 1471
     invoke-interface {p1}, Lkotlin/ranges/ClosedFloatingPointRange;->isEmpty()Z
 
     move-result v0
 
     if-nez v0, :cond_2
 
-    .line 1473
+    .line 1474
     invoke-interface {p1}, Lkotlin/ranges/ClosedFloatingPointRange;->getStart()Ljava/lang/Comparable;
 
     move-result-object v0
@@ -1347,7 +1347,7 @@
 
     goto :goto_0
 
-    .line 1475
+    .line 1476
     :cond_0
     invoke-interface {p1}, Lkotlin/ranges/ClosedFloatingPointRange;->getEndInclusive()Ljava/lang/Comparable;
 
@@ -1377,7 +1377,7 @@
     :goto_0
     return-object p0
 
-    .line 1470
+    .line 1471
     :cond_2
     new-instance p0, Ljava/lang/IllegalArgumentException;
 
@@ -1426,12 +1426,12 @@
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 1488
+    .line 1489
     instance-of v0, p1, Lkotlin/ranges/ClosedFloatingPointRange;
 
     if-eqz v0, :cond_0
 
-    .line 1489
+    .line 1490
     check-cast p1, Lkotlin/ranges/ClosedFloatingPointRange;
 
     invoke-static {p0, p1}, Lkotlin/ranges/RangesKt;->coerceIn(Ljava/lang/Comparable;Lkotlin/ranges/ClosedFloatingPointRange;)Ljava/lang/Comparable;
@@ -1440,7 +1440,7 @@
 
     return-object p0
 
-    .line 1491
+    .line 1492
     :cond_0
     invoke-interface {p1}, Lkotlin/ranges/ClosedRange;->isEmpty()Z
 
@@ -1448,7 +1448,7 @@
 
     if-nez v0, :cond_3
 
-    .line 1493
+    .line 1494
     invoke-interface {p1}, Lkotlin/ranges/ClosedRange;->getStart()Ljava/lang/Comparable;
 
     move-result-object v0
@@ -1465,7 +1465,7 @@
 
     goto :goto_0
 
-    .line 1494
+    .line 1495
     :cond_1
     invoke-interface {p1}, Lkotlin/ranges/ClosedRange;->getEndInclusive()Ljava/lang/Comparable;
 
@@ -1485,7 +1485,7 @@
     :goto_0
     return-object p0
 
-    .line 1491
+    .line 1492
     :cond_3
     new-instance p0, Ljava/lang/IllegalArgumentException;
 
@@ -1531,7 +1531,7 @@
     :cond_1
     return p0
 
-    .line 1399
+    .line 1400
     :cond_2
     new-instance p0, Ljava/lang/IllegalArgumentException;
 
@@ -1579,7 +1579,7 @@
 
     if-eqz p1, :cond_0
 
-    .line 318
+    .line 313
     invoke-virtual {p1}, Ljava/lang/Character;->charValue()C
 
     move-result p1
@@ -1608,7 +1608,7 @@
 
     invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 400
+    .line 395
     check-cast p0, Lkotlin/ranges/ClosedRange;
 
     invoke-static {p0, p1}, Lkotlin/ranges/RangesKt;->intRangeContains(Lkotlin/ranges/ClosedRange;B)Z
@@ -1625,7 +1625,7 @@
 
     invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 678
+    .line 673
     check-cast p0, Lkotlin/ranges/ClosedRange;
 
     invoke-static {p0, p1, p2}, Lkotlin/ranges/RangesKt;->intRangeContains(Lkotlin/ranges/ClosedRange;J)Z
@@ -1644,7 +1644,7 @@
 
     if-eqz p1, :cond_0
 
-    .line 296
+    .line 291
     invoke-virtual {p1}, Ljava/lang/Integer;->intValue()I
 
     move-result p1
@@ -1673,7 +1673,7 @@
 
     invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 760
+    .line 755
     check-cast p0, Lkotlin/ranges/ClosedRange;
 
     invoke-static {p0, p1}, Lkotlin/ranges/RangesKt;->intRangeContains(Lkotlin/ranges/ClosedRange;S)Z
@@ -1690,7 +1690,7 @@
 
     invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 408
+    .line 403
     check-cast p0, Lkotlin/ranges/ClosedRange;
 
     invoke-static {p0, p1}, Lkotlin/ranges/RangesKt;->longRangeContains(Lkotlin/ranges/ClosedRange;B)Z
@@ -1707,7 +1707,7 @@
 
     invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 596
+    .line 591
     check-cast p0, Lkotlin/ranges/ClosedRange;
 
     invoke-static {p0, p1}, Lkotlin/ranges/RangesKt;->longRangeContains(Lkotlin/ranges/ClosedRange;I)Z
@@ -1726,7 +1726,7 @@
 
     if-eqz p1, :cond_0
 
-    .line 307
+    .line 302
     invoke-virtual {p1}, Ljava/lang/Long;->longValue()J
 
     move-result-wide v0
@@ -1755,7 +1755,7 @@
 
     invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 768
+    .line 763
     check-cast p0, Lkotlin/ranges/ClosedRange;
 
     invoke-static {p0, p1}, Lkotlin/ranges/RangesKt;->longRangeContains(Lkotlin/ranges/ClosedRange;S)Z
@@ -1783,7 +1783,7 @@
 
     int-to-double v0, p1
 
-    .line 352
+    .line 347
     invoke-static {v0, v1}, Ljava/lang/Double;->valueOf(D)Ljava/lang/Double;
 
     move-result-object p1
@@ -1814,7 +1814,7 @@
 
     float-to-double v0, p1
 
-    .line 504
+    .line 499
     invoke-static {v0, v1}, Ljava/lang/Double;->valueOf(D)Ljava/lang/Double;
 
     move-result-object p1
@@ -1846,7 +1846,7 @@
 
     int-to-double v0, p1
 
-    .line 548
+    .line 543
     invoke-static {v0, v1}, Ljava/lang/Double;->valueOf(D)Ljava/lang/Double;
 
     move-result-object p1
@@ -1878,7 +1878,7 @@
 
     long-to-double p1, p1
 
-    .line 630
+    .line 625
     invoke-static {p1, p2}, Ljava/lang/Double;->valueOf(D)Ljava/lang/Double;
 
     move-result-object p1
@@ -1910,7 +1910,7 @@
 
     int-to-double v0, p1
 
-    .line 712
+    .line 707
     invoke-static {v0, v1}, Ljava/lang/Double;->valueOf(D)Ljava/lang/Double;
 
     move-result-object p1
@@ -1941,7 +1941,7 @@
 
     float-to-double v0, p1
 
-    .line 514
+    .line 509
     invoke-static {v0, v1}, Ljava/lang/Double;->valueOf(D)Ljava/lang/Double;
 
     move-result-object p1
@@ -1958,7 +1958,7 @@
 .method public static final downTo(CC)Lkotlin/ranges/CharProgression;
     .locals 2
 
-    .line 818
+    .line 813
     sget-object v0, Lkotlin/ranges/CharProgression;->Companion:Lkotlin/ranges/CharProgression$Companion;
 
     const/4 v1, -0x1
@@ -1973,7 +1973,7 @@
 .method public static final downTo(BB)Lkotlin/ranges/IntProgression;
     .locals 2
 
-    .line 798
+    .line 793
     sget-object v0, Lkotlin/ranges/IntProgression;->Companion:Lkotlin/ranges/IntProgression$Companion;
 
     const/4 v1, -0x1
@@ -1988,7 +1988,7 @@
 .method public static final downTo(BI)Lkotlin/ranges/IntProgression;
     .locals 2
 
-    .line 848
+    .line 843
     sget-object v0, Lkotlin/ranges/IntProgression;->Companion:Lkotlin/ranges/IntProgression$Companion;
 
     const/4 v1, -0x1
@@ -2003,7 +2003,7 @@
 .method public static final downTo(BS)Lkotlin/ranges/IntProgression;
     .locals 2
 
-    .line 928
+    .line 923
     sget-object v0, Lkotlin/ranges/IntProgression;->Companion:Lkotlin/ranges/IntProgression$Companion;
 
     const/4 v1, -0x1
@@ -2018,7 +2018,7 @@
 .method public static final downTo(IB)Lkotlin/ranges/IntProgression;
     .locals 2
 
-    .line 778
+    .line 773
     sget-object v0, Lkotlin/ranges/IntProgression;->Companion:Lkotlin/ranges/IntProgression$Companion;
 
     const/4 v1, -0x1
@@ -2033,7 +2033,7 @@
 .method public static final downTo(II)Lkotlin/ranges/IntProgression;
     .locals 2
 
-    .line 828
+    .line 823
     sget-object v0, Lkotlin/ranges/IntProgression;->Companion:Lkotlin/ranges/IntProgression$Companion;
 
     const/4 v1, -0x1
@@ -2048,7 +2048,7 @@
 .method public static final downTo(IS)Lkotlin/ranges/IntProgression;
     .locals 2
 
-    .line 908
+    .line 903
     sget-object v0, Lkotlin/ranges/IntProgression;->Companion:Lkotlin/ranges/IntProgression$Companion;
 
     const/4 v1, -0x1
@@ -2063,7 +2063,7 @@
 .method public static final downTo(SB)Lkotlin/ranges/IntProgression;
     .locals 2
 
-    .line 808
+    .line 803
     sget-object v0, Lkotlin/ranges/IntProgression;->Companion:Lkotlin/ranges/IntProgression$Companion;
 
     const/4 v1, -0x1
@@ -2078,7 +2078,7 @@
 .method public static final downTo(SI)Lkotlin/ranges/IntProgression;
     .locals 2
 
-    .line 858
+    .line 853
     sget-object v0, Lkotlin/ranges/IntProgression;->Companion:Lkotlin/ranges/IntProgression$Companion;
 
     const/4 v1, -0x1
@@ -2093,7 +2093,7 @@
 .method public static final downTo(SS)Lkotlin/ranges/IntProgression;
     .locals 2
 
-    .line 938
+    .line 933
     sget-object v0, Lkotlin/ranges/IntProgression;->Companion:Lkotlin/ranges/IntProgression$Companion;
 
     const/4 v1, -0x1
@@ -2108,7 +2108,7 @@
 .method public static final downTo(BJ)Lkotlin/ranges/LongProgression;
     .locals 7
 
-    .line 888
+    .line 883
     sget-object v0, Lkotlin/ranges/LongProgression;->Companion:Lkotlin/ranges/LongProgression$Companion;
 
     int-to-long v1, p0
@@ -2127,7 +2127,7 @@
 .method public static final downTo(IJ)Lkotlin/ranges/LongProgression;
     .locals 7
 
-    .line 868
+    .line 863
     sget-object v0, Lkotlin/ranges/LongProgression;->Companion:Lkotlin/ranges/LongProgression$Companion;
 
     int-to-long v1, p0
@@ -2146,7 +2146,7 @@
 .method public static final downTo(JB)Lkotlin/ranges/LongProgression;
     .locals 7
 
-    .line 788
+    .line 783
     sget-object v0, Lkotlin/ranges/LongProgression;->Companion:Lkotlin/ranges/LongProgression$Companion;
 
     int-to-long v3, p2
@@ -2165,7 +2165,7 @@
 .method public static final downTo(JI)Lkotlin/ranges/LongProgression;
     .locals 7
 
-    .line 838
+    .line 833
     sget-object v0, Lkotlin/ranges/LongProgression;->Companion:Lkotlin/ranges/LongProgression$Companion;
 
     int-to-long v3, p2
@@ -2184,7 +2184,7 @@
 .method public static final downTo(JJ)Lkotlin/ranges/LongProgression;
     .locals 7
 
-    .line 878
+    .line 873
     sget-object v0, Lkotlin/ranges/LongProgression;->Companion:Lkotlin/ranges/LongProgression$Companion;
 
     const-wide/16 v5, -0x1
@@ -2203,7 +2203,7 @@
 .method public static final downTo(JS)Lkotlin/ranges/LongProgression;
     .locals 7
 
-    .line 918
+    .line 913
     sget-object v0, Lkotlin/ranges/LongProgression;->Companion:Lkotlin/ranges/LongProgression$Companion;
 
     int-to-long v3, p2
@@ -2222,7 +2222,7 @@
 .method public static final downTo(SJ)Lkotlin/ranges/LongProgression;
     .locals 7
 
-    .line 898
+    .line 893
     sget-object v0, Lkotlin/ranges/LongProgression;->Companion:Lkotlin/ranges/LongProgression$Companion;
 
     int-to-long v1, p0
@@ -2245,21 +2245,21 @@
 
     invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 49
+    .line 50
     invoke-virtual {p0}, Lkotlin/ranges/CharProgression;->isEmpty()Z
 
     move-result v0
 
     if-nez v0, :cond_0
 
-    .line 51
+    .line 52
     invoke-virtual {p0}, Lkotlin/ranges/CharProgression;->getFirst()C
 
     move-result p0
 
     return p0
 
-    .line 50
+    .line 51
     :cond_0
     new-instance v0, Ljava/util/NoSuchElementException;
 
@@ -2295,21 +2295,21 @@
 
     invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 25
+    .line 26
     invoke-virtual {p0}, Lkotlin/ranges/IntProgression;->isEmpty()Z
 
     move-result v0
 
     if-nez v0, :cond_0
 
-    .line 27
+    .line 28
     invoke-virtual {p0}, Lkotlin/ranges/IntProgression;->getFirst()I
 
     move-result p0
 
     return p0
 
-    .line 26
+    .line 27
     :cond_0
     new-instance v0, Ljava/util/NoSuchElementException;
 
@@ -2345,21 +2345,21 @@
 
     invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 37
+    .line 38
     invoke-virtual {p0}, Lkotlin/ranges/LongProgression;->isEmpty()Z
 
     move-result v0
 
     if-nez v0, :cond_0
 
-    .line 39
+    .line 40
     invoke-virtual {p0}, Lkotlin/ranges/LongProgression;->getFirst()J
 
     move-result-wide v0
 
     return-wide v0
 
-    .line 38
+    .line 39
     :cond_0
     new-instance v0, Ljava/util/NoSuchElementException;
 
@@ -2395,7 +2395,7 @@
 
     invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 75
+    .line 76
     invoke-virtual {p0}, Lkotlin/ranges/CharProgression;->isEmpty()Z
 
     move-result v0
@@ -2426,7 +2426,7 @@
 
     invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 59
+    .line 60
     invoke-virtual {p0}, Lkotlin/ranges/IntProgression;->isEmpty()Z
 
     move-result v0
@@ -2457,7 +2457,7 @@
 
     invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 67
+    .line 68
     invoke-virtual {p0}, Lkotlin/ranges/LongProgression;->isEmpty()Z
 
     move-result v0
@@ -2499,7 +2499,7 @@
 
     int-to-float p1, p1
 
-    .line 362
+    .line 357
     invoke-static {p1}, Ljava/lang/Float;->valueOf(F)Ljava/lang/Float;
 
     move-result-object p1
@@ -2530,7 +2530,7 @@
 
     double-to-float p1, p1
 
-    .line 456
+    .line 451
     invoke-static {p1}, Ljava/lang/Float;->valueOf(F)Ljava/lang/Float;
 
     move-result-object p1
@@ -2562,7 +2562,7 @@
 
     int-to-float p1, p1
 
-    .line 558
+    .line 553
     invoke-static {p1}, Ljava/lang/Float;->valueOf(F)Ljava/lang/Float;
 
     move-result-object p1
@@ -2594,7 +2594,7 @@
 
     long-to-float p1, p1
 
-    .line 640
+    .line 635
     invoke-static {p1}, Ljava/lang/Float;->valueOf(F)Ljava/lang/Float;
 
     move-result-object p1
@@ -2626,7 +2626,7 @@
 
     int-to-float p1, p1
 
-    .line 722
+    .line 717
     invoke-static {p1}, Ljava/lang/Float;->valueOf(F)Ljava/lang/Float;
 
     move-result-object p1
@@ -2655,7 +2655,7 @@
 
     invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 326
+    .line 321
     invoke-static {p1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object p1
@@ -2685,7 +2685,7 @@
 
     invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 418
+    .line 413
     invoke-static {p1, p2}, Lkotlin/ranges/RangesKt;->toIntExactOrNull(D)Ljava/lang/Integer;
 
     move-result-object p1
@@ -2723,7 +2723,7 @@
 
     invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 466
+    .line 461
     invoke-static {p1}, Lkotlin/ranges/RangesKt;->toIntExactOrNull(F)Ljava/lang/Integer;
 
     move-result-object p1
@@ -2760,7 +2760,7 @@
 
     invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 604
+    .line 599
     invoke-static {p1, p2}, Lkotlin/ranges/RangesKt;->toIntExactOrNull(J)Ljava/lang/Integer;
 
     move-result-object p1
@@ -2797,7 +2797,7 @@
 
     invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 686
+    .line 681
     invoke-static {p1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object p1
@@ -2826,7 +2826,7 @@
 
     invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 372
+    .line 367
     invoke-static {p1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object p1
@@ -2855,7 +2855,7 @@
 
     invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 650
+    .line 645
     invoke-static {p1, p2}, Lkotlin/ranges/RangesKt;->toIntExactOrNull(J)Ljava/lang/Integer;
 
     move-result-object p1
@@ -2892,7 +2892,7 @@
 
     invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 732
+    .line 727
     invoke-static {p1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object p1
@@ -2913,21 +2913,21 @@
 
     invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 115
+    .line 116
     invoke-virtual {p0}, Lkotlin/ranges/CharProgression;->isEmpty()Z
 
     move-result v0
 
     if-nez v0, :cond_0
 
-    .line 117
+    .line 118
     invoke-virtual {p0}, Lkotlin/ranges/CharProgression;->getLast()C
 
     move-result p0
 
     return p0
 
-    .line 116
+    .line 117
     :cond_0
     new-instance v0, Ljava/util/NoSuchElementException;
 
@@ -2963,21 +2963,21 @@
 
     invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 87
+    .line 88
     invoke-virtual {p0}, Lkotlin/ranges/IntProgression;->isEmpty()Z
 
     move-result v0
 
     if-nez v0, :cond_0
 
-    .line 89
+    .line 90
     invoke-virtual {p0}, Lkotlin/ranges/IntProgression;->getLast()I
 
     move-result p0
 
     return p0
 
-    .line 88
+    .line 89
     :cond_0
     new-instance v0, Ljava/util/NoSuchElementException;
 
@@ -3013,21 +3013,21 @@
 
     invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 101
+    .line 102
     invoke-virtual {p0}, Lkotlin/ranges/LongProgression;->isEmpty()Z
 
     move-result v0
 
     if-nez v0, :cond_0
 
-    .line 103
+    .line 104
     invoke-virtual {p0}, Lkotlin/ranges/LongProgression;->getLast()J
 
     move-result-wide v0
 
     return-wide v0
 
-    .line 102
+    .line 103
     :cond_0
     new-instance v0, Ljava/util/NoSuchElementException;
 
@@ -3063,7 +3063,7 @@
 
     invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 147
+    .line 148
     invoke-virtual {p0}, Lkotlin/ranges/CharProgression;->isEmpty()Z
 
     move-result v0
@@ -3094,7 +3094,7 @@
 
     invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 127
+    .line 128
     invoke-virtual {p0}, Lkotlin/ranges/IntProgression;->isEmpty()Z
 
     move-result v0
@@ -3125,7 +3125,7 @@
 
     invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 137
+    .line 138
     invoke-virtual {p0}, Lkotlin/ranges/LongProgression;->isEmpty()Z
 
     move-result v0
@@ -3166,7 +3166,7 @@
 
     int-to-long v0, p1
 
-    .line 334
+    .line 329
     invoke-static {v0, v1}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
 
     move-result-object p1
@@ -3196,7 +3196,7 @@
 
     invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 428
+    .line 423
     invoke-static {p1, p2}, Lkotlin/ranges/RangesKt;->toLongExactOrNull(D)Ljava/lang/Long;
 
     move-result-object p1
@@ -3234,7 +3234,7 @@
 
     invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 476
+    .line 471
     invoke-static {p1}, Lkotlin/ranges/RangesKt;->toLongExactOrNull(F)Ljava/lang/Long;
 
     move-result-object p1
@@ -3273,7 +3273,7 @@
 
     int-to-long v0, p1
 
-    .line 522
+    .line 517
     invoke-static {v0, v1}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
 
     move-result-object p1
@@ -3304,7 +3304,7 @@
 
     int-to-long v0, p1
 
-    .line 694
+    .line 689
     invoke-static {v0, v1}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
 
     move-result-object p1
@@ -3335,7 +3335,7 @@
 
     int-to-long v0, p1
 
-    .line 382
+    .line 377
     invoke-static {v0, v1}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
 
     move-result-object p1
@@ -3366,7 +3366,7 @@
 
     int-to-long v0, p1
 
-    .line 568
+    .line 563
     invoke-static {v0, v1}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
 
     move-result-object p1
@@ -3397,7 +3397,7 @@
 
     int-to-long v0, p1
 
-    .line 742
+    .line 737
     invoke-static {v0, v1}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
 
     move-result-object p1
@@ -3418,7 +3418,7 @@
 
     invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 180
+    .line 181
     sget-object v0, Lkotlin/random/Random;->Default:Lkotlin/random/Random$Default;
 
     check-cast v0, Lkotlin/random/Random;
@@ -3441,7 +3441,7 @@
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 219
+    .line 220
     :try_start_0
     invoke-virtual {p0}, Lkotlin/ranges/CharRange;->getFirst()C
 
@@ -3466,7 +3466,7 @@
     :catch_0
     move-exception p0
 
-    .line 221
+    .line 222
     new-instance p1, Ljava/util/NoSuchElementException;
 
     invoke-virtual {p0}, Ljava/lang/IllegalArgumentException;->getMessage()Ljava/lang/String;
@@ -3485,7 +3485,7 @@
 
     invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 158
+    .line 159
     sget-object v0, Lkotlin/random/Random;->Default:Lkotlin/random/Random$Default;
 
     check-cast v0, Lkotlin/random/Random;
@@ -3508,7 +3508,7 @@
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 191
+    .line 192
     :try_start_0
     invoke-static {p1, p0}, Lkotlin/random/RandomKt;->nextInt(Lkotlin/random/Random;Lkotlin/ranges/IntRange;)I
 
@@ -3521,7 +3521,7 @@
     :catch_0
     move-exception p0
 
-    .line 193
+    .line 194
     new-instance p1, Ljava/util/NoSuchElementException;
 
     invoke-virtual {p0}, Ljava/lang/IllegalArgumentException;->getMessage()Ljava/lang/String;
@@ -3540,7 +3540,7 @@
 
     invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 169
+    .line 170
     sget-object v0, Lkotlin/random/Random;->Default:Lkotlin/random/Random$Default;
 
     check-cast v0, Lkotlin/random/Random;
@@ -3563,7 +3563,7 @@
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 205
+    .line 206
     :try_start_0
     invoke-static {p1, p0}, Lkotlin/random/RandomKt;->nextLong(Lkotlin/random/Random;Lkotlin/ranges/LongRange;)J
 
@@ -3576,7 +3576,7 @@
     :catch_0
     move-exception p0
 
-    .line 207
+    .line 208
     new-instance p1, Ljava/util/NoSuchElementException;
 
     invoke-virtual {p0}, Ljava/lang/IllegalArgumentException;->getMessage()Ljava/lang/String;
@@ -3595,7 +3595,7 @@
 
     invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 252
+    .line 250
     sget-object v0, Lkotlin/random/Random;->Default:Lkotlin/random/Random$Default;
 
     check-cast v0, Lkotlin/random/Random;
@@ -3618,7 +3618,7 @@
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 283
+    .line 278
     invoke-virtual {p0}, Lkotlin/ranges/CharRange;->isEmpty()Z
 
     move-result v0
@@ -3629,7 +3629,7 @@
 
     return-object p0
 
-    .line 285
+    .line 280
     :cond_0
     invoke-virtual {p0}, Lkotlin/ranges/CharRange;->getFirst()C
 
@@ -3684,7 +3684,7 @@
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 261
+    .line 258
     invoke-virtual {p0}, Lkotlin/ranges/IntRange;->isEmpty()Z
 
     move-result v0
@@ -3695,7 +3695,7 @@
 
     return-object p0
 
-    .line 263
+    .line 260
     :cond_0
     invoke-static {p1, p0}, Lkotlin/random/RandomKt;->nextInt(Lkotlin/random/Random;Lkotlin/ranges/IntRange;)I
 
@@ -3715,7 +3715,7 @@
 
     invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 242
+    .line 241
     sget-object v0, Lkotlin/random/Random;->Default:Lkotlin/random/Random$Default;
 
     check-cast v0, Lkotlin/random/Random;
@@ -3738,7 +3738,7 @@
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 272
+    .line 268
     invoke-virtual {p0}, Lkotlin/ranges/LongRange;->isEmpty()Z
 
     move-result v0
@@ -3749,7 +3749,7 @@
 
     return-object p0
 
-    .line 274
+    .line 270
     :cond_0
     invoke-static {p1, p0}, Lkotlin/random/RandomKt;->nextLong(Lkotlin/random/Random;Lkotlin/ranges/LongRange;)J
 
@@ -3769,7 +3769,7 @@
 
     invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 959
+    .line 954
     sget-object v0, Lkotlin/ranges/CharProgression;->Companion:Lkotlin/ranges/CharProgression$Companion;
 
     invoke-virtual {p0}, Lkotlin/ranges/CharProgression;->getLast()C
@@ -3800,7 +3800,7 @@
 
     invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 945
+    .line 940
     sget-object v0, Lkotlin/ranges/IntProgression;->Companion:Lkotlin/ranges/IntProgression$Companion;
 
     invoke-virtual {p0}, Lkotlin/ranges/IntProgression;->getLast()I
@@ -3831,7 +3831,7 @@
 
     invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 952
+    .line 947
     sget-object v1, Lkotlin/ranges/LongProgression;->Companion:Lkotlin/ranges/LongProgression$Companion;
 
     invoke-virtual {p0}, Lkotlin/ranges/LongProgression;->getLast()J
@@ -3872,7 +3872,7 @@
 
     int-to-short p1, p1
 
-    .line 342
+    .line 337
     invoke-static {p1}, Ljava/lang/Short;->valueOf(S)Ljava/lang/Short;
 
     move-result-object p1
@@ -3902,7 +3902,7 @@
 
     invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 448
+    .line 443
     invoke-static {p1, p2}, Lkotlin/ranges/RangesKt;->toShortExactOrNull(D)Ljava/lang/Short;
 
     move-result-object p1
@@ -3940,7 +3940,7 @@
 
     invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 496
+    .line 491
     invoke-static {p1}, Lkotlin/ranges/RangesKt;->toShortExactOrNull(F)Ljava/lang/Short;
 
     move-result-object p1
@@ -3977,7 +3977,7 @@
 
     invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 538
+    .line 533
     invoke-static {p1}, Lkotlin/ranges/RangesKt;->toShortExactOrNull(I)Ljava/lang/Short;
 
     move-result-object p1
@@ -4014,7 +4014,7 @@
 
     invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 620
+    .line 615
     invoke-static {p1, p2}, Lkotlin/ranges/RangesKt;->toShortExactOrNull(J)Ljava/lang/Short;
 
     move-result-object p1
@@ -4053,7 +4053,7 @@
 
     int-to-short p1, p1
 
-    .line 392
+    .line 387
     invoke-static {p1}, Ljava/lang/Short;->valueOf(S)Ljava/lang/Short;
 
     move-result-object p1
@@ -4082,7 +4082,7 @@
 
     invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 588
+    .line 583
     invoke-static {p1}, Lkotlin/ranges/RangesKt;->toShortExactOrNull(I)Ljava/lang/Short;
 
     move-result-object p1
@@ -4119,7 +4119,7 @@
 
     invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 670
+    .line 665
     invoke-static {p1, p2}, Lkotlin/ranges/RangesKt;->toShortExactOrNull(J)Ljava/lang/Short;
 
     move-result-object p1
@@ -4157,7 +4157,7 @@
     :cond_0
     const/4 v0, 0x0
 
-    .line 982
+    .line 983
     :goto_0
     invoke-static {p1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -4167,7 +4167,7 @@
 
     invoke-static {v0, v1}, Lkotlin/ranges/RangesKt;->checkStepIsPositive(ZLjava/lang/Number;)V
 
-    .line 983
+    .line 984
     sget-object v0, Lkotlin/ranges/CharProgression;->Companion:Lkotlin/ranges/CharProgression$Companion;
 
     invoke-virtual {p0}, Lkotlin/ranges/CharProgression;->getFirst()C
@@ -4213,7 +4213,7 @@
     :cond_0
     const/4 v0, 0x0
 
-    .line 966
+    .line 963
     :goto_0
     invoke-static {p1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -4223,7 +4223,7 @@
 
     invoke-static {v0, v1}, Lkotlin/ranges/RangesKt;->checkStepIsPositive(ZLjava/lang/Number;)V
 
-    .line 967
+    .line 964
     sget-object v0, Lkotlin/ranges/IntProgression;->Companion:Lkotlin/ranges/IntProgression$Companion;
 
     invoke-virtual {p0}, Lkotlin/ranges/IntProgression;->getFirst()I
@@ -4273,7 +4273,7 @@
     :cond_0
     const/4 v2, 0x0
 
-    .line 974
+    .line 973
     :goto_0
     invoke-static {p1, p2}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
 
@@ -4283,7 +4283,7 @@
 
     invoke-static {v2, v3}, Lkotlin/ranges/RangesKt;->checkStepIsPositive(ZLjava/lang/Number;)V
 
-    .line 975
+    .line 974
     sget-object v4, Lkotlin/ranges/LongProgression;->Companion:Lkotlin/ranges/LongProgression$Companion;
 
     invoke-virtual {p0}, Lkotlin/ranges/LongProgression;->getFirst()J
@@ -4336,7 +4336,7 @@
 
     int-to-byte p0, p0
 
-    .line 999
+    .line 1000
     invoke-static {p0}, Ljava/lang/Byte;->valueOf(B)Ljava/lang/Byte;
 
     move-result-object p0
@@ -4369,7 +4369,7 @@
 
     int-to-byte p0, p0
 
-    .line 1003
+    .line 1004
     invoke-static {p0}, Ljava/lang/Byte;->valueOf(B)Ljava/lang/Byte;
 
     move-result-object p0
@@ -4384,25 +4384,19 @@
 .end method
 
 .method public static final toByteExactOrNull(I)Ljava/lang/Byte;
-    .locals 3
+    .locals 1
 
-    .line 987
-    new-instance v0, Lkotlin/ranges/IntRange;
+    const/16 v0, -0x80
 
-    const/16 v1, -0x80
+    if-gt v0, p0, :cond_0
 
-    const/16 v2, 0x7f
+    const/16 v0, 0x80
 
-    invoke-direct {v0, v1, v2}, Lkotlin/ranges/IntRange;-><init>(II)V
-
-    invoke-virtual {v0, p0}, Lkotlin/ranges/IntRange;->contains(I)Z
-
-    move-result v0
-
-    if-eqz v0, :cond_0
+    if-ge p0, v0, :cond_0
 
     int-to-byte p0, p0
 
+    .line 988
     invoke-static {p0}, Ljava/lang/Byte;->valueOf(B)Ljava/lang/Byte;
 
     move-result-object p0
@@ -4417,27 +4411,25 @@
 .end method
 
 .method public static final toByteExactOrNull(J)Ljava/lang/Byte;
-    .locals 5
+    .locals 2
 
-    .line 991
-    new-instance v0, Lkotlin/ranges/LongRange;
+    const-wide/16 v0, -0x80
 
-    const-wide/16 v1, -0x80
+    cmp-long v0, v0, p0
 
-    const-wide/16 v3, 0x7f
+    if-gtz v0, :cond_0
 
-    invoke-direct {v0, v1, v2, v3, v4}, Lkotlin/ranges/LongRange;-><init>(JJ)V
+    const-wide/16 v0, 0x80
 
-    invoke-virtual {v0, p0, p1}, Lkotlin/ranges/LongRange;->contains(J)Z
+    cmp-long v0, p0, v0
 
-    move-result v0
-
-    if-eqz v0, :cond_0
+    if-gez v0, :cond_0
 
     long-to-int p0, p0
 
     int-to-byte p0, p0
 
+    .line 992
     invoke-static {p0}, Ljava/lang/Byte;->valueOf(B)Ljava/lang/Byte;
 
     move-result-object p0
@@ -4452,27 +4444,19 @@
 .end method
 
 .method public static final toByteExactOrNull(S)Ljava/lang/Byte;
-    .locals 3
+    .locals 1
 
-    .line 995
-    new-instance v0, Lkotlin/ranges/IntRange;
+    const/16 v0, -0x80
 
-    const/16 v1, -0x80
+    if-gt v0, p0, :cond_0
 
-    const/16 v2, 0x7f
+    const/16 v0, 0x80
 
-    invoke-direct {v0, v1, v2}, Lkotlin/ranges/IntRange;-><init>(II)V
-
-    check-cast v0, Lkotlin/ranges/ClosedRange;
-
-    invoke-static {v0, p0}, Lkotlin/ranges/RangesKt;->intRangeContains(Lkotlin/ranges/ClosedRange;S)Z
-
-    move-result v0
-
-    if-eqz v0, :cond_0
+    if-ge p0, v0, :cond_0
 
     int-to-byte p0, p0
 
+    .line 996
     invoke-static {p0}, Ljava/lang/Byte;->valueOf(B)Ljava/lang/Byte;
 
     move-result-object p0
@@ -4503,7 +4487,7 @@
 
     double-to-int p0, p0
 
-    .line 1011
+    .line 1012
     invoke-static {p0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object p0
@@ -4534,7 +4518,7 @@
 
     float-to-int p0, p0
 
-    .line 1015
+    .line 1016
     invoke-static {p0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object p0
@@ -4549,25 +4533,23 @@
 .end method
 
 .method public static final toIntExactOrNull(J)Ljava/lang/Integer;
-    .locals 5
+    .locals 2
 
-    .line 1007
-    new-instance v0, Lkotlin/ranges/LongRange;
+    const-wide/32 v0, -0x80000000
 
-    const-wide/32 v1, -0x80000000
+    cmp-long v0, v0, p0
 
-    const-wide/32 v3, 0x7fffffff
+    if-gtz v0, :cond_0
 
-    invoke-direct {v0, v1, v2, v3, v4}, Lkotlin/ranges/LongRange;-><init>(JJ)V
+    const-wide v0, 0x80000000L
 
-    invoke-virtual {v0, p0, p1}, Lkotlin/ranges/LongRange;->contains(J)Z
+    cmp-long v0, p0, v0
 
-    move-result v0
-
-    if-eqz v0, :cond_0
+    if-gez v0, :cond_0
 
     long-to-int p0, p0
 
+    .line 1008
     invoke-static {p0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object p0
@@ -4598,7 +4580,7 @@
 
     double-to-long p0, p0
 
-    .line 1019
+    .line 1020
     invoke-static {p0, p1}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
 
     move-result-object p0
@@ -4629,7 +4611,7 @@
 
     float-to-long v0, p0
 
-    .line 1023
+    .line 1024
     invoke-static {v0, v1}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
 
     move-result-object p0
@@ -4662,7 +4644,7 @@
 
     int-to-short p0, p0
 
-    .line 1035
+    .line 1036
     invoke-static {p0}, Ljava/lang/Short;->valueOf(S)Ljava/lang/Short;
 
     move-result-object p0
@@ -4695,7 +4677,7 @@
 
     int-to-short p0, p0
 
-    .line 1039
+    .line 1040
     invoke-static {p0}, Ljava/lang/Short;->valueOf(S)Ljava/lang/Short;
 
     move-result-object p0
@@ -4710,25 +4692,19 @@
 .end method
 
 .method public static final toShortExactOrNull(I)Ljava/lang/Short;
-    .locals 3
+    .locals 1
 
-    .line 1027
-    new-instance v0, Lkotlin/ranges/IntRange;
+    const/16 v0, -0x8000
 
-    const/16 v1, -0x8000
+    if-gt v0, p0, :cond_0
 
-    const/16 v2, 0x7fff
+    const v0, 0x8000
 
-    invoke-direct {v0, v1, v2}, Lkotlin/ranges/IntRange;-><init>(II)V
-
-    invoke-virtual {v0, p0}, Lkotlin/ranges/IntRange;->contains(I)Z
-
-    move-result v0
-
-    if-eqz v0, :cond_0
+    if-ge p0, v0, :cond_0
 
     int-to-short p0, p0
 
+    .line 1028
     invoke-static {p0}, Ljava/lang/Short;->valueOf(S)Ljava/lang/Short;
 
     move-result-object p0
@@ -4743,27 +4719,25 @@
 .end method
 
 .method public static final toShortExactOrNull(J)Ljava/lang/Short;
-    .locals 5
+    .locals 2
 
-    .line 1031
-    new-instance v0, Lkotlin/ranges/LongRange;
+    const-wide/16 v0, -0x8000
 
-    const-wide/16 v1, -0x8000
+    cmp-long v0, v0, p0
 
-    const-wide/16 v3, 0x7fff
+    if-gtz v0, :cond_0
 
-    invoke-direct {v0, v1, v2, v3, v4}, Lkotlin/ranges/LongRange;-><init>(JJ)V
+    const-wide/32 v0, 0x8000
 
-    invoke-virtual {v0, p0, p1}, Lkotlin/ranges/LongRange;->contains(J)Z
+    cmp-long v0, p0, v0
 
-    move-result v0
-
-    if-eqz v0, :cond_0
+    if-gez v0, :cond_0
 
     long-to-int p0, p0
 
     int-to-short p0, p0
 
+    .line 1032
     invoke-static {p0}, Ljava/lang/Short;->valueOf(S)Ljava/lang/Short;
 
     move-result-object p0
@@ -4782,7 +4756,7 @@
 
     const/4 v0, 0x0
 
-    .line 1084
+    .line 1085
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->compare(II)I
 
     move-result v0
@@ -4797,7 +4771,7 @@
 
     return-object p0
 
-    .line 1085
+    .line 1086
     :cond_0
     new-instance v0, Lkotlin/ranges/CharRange;
 
@@ -4813,7 +4787,7 @@
 .method public static final until(BB)Lkotlin/ranges/IntRange;
     .locals 1
 
-    .line 1066
+    .line 1067
     new-instance v0, Lkotlin/ranges/IntRange;
 
     add-int/lit8 p1, p1, -0x1
@@ -4830,7 +4804,7 @@
 
     if-gt p1, v0, :cond_0
 
-    .line 1113
+    .line 1114
     sget-object p0, Lkotlin/ranges/IntRange;->Companion:Lkotlin/ranges/IntRange$Companion;
 
     invoke-virtual {p0}, Lkotlin/ranges/IntRange$Companion;->getEMPTY()Lkotlin/ranges/IntRange;
@@ -4839,7 +4813,7 @@
 
     return-object p0
 
-    .line 1114
+    .line 1115
     :cond_0
     new-instance v0, Lkotlin/ranges/IntRange;
 
@@ -4853,7 +4827,7 @@
 .method public static final until(BS)Lkotlin/ranges/IntRange;
     .locals 1
 
-    .line 1191
+    .line 1192
     new-instance v0, Lkotlin/ranges/IntRange;
 
     add-int/lit8 p1, p1, -0x1
@@ -4866,7 +4840,7 @@
 .method public static final until(IB)Lkotlin/ranges/IntRange;
     .locals 1
 
-    .line 1048
+    .line 1049
     new-instance v0, Lkotlin/ranges/IntRange;
 
     add-int/lit8 p1, p1, -0x1
@@ -4883,7 +4857,7 @@
 
     if-gt p1, v0, :cond_0
 
-    .line 1094
+    .line 1095
     sget-object p0, Lkotlin/ranges/IntRange;->Companion:Lkotlin/ranges/IntRange$Companion;
 
     invoke-virtual {p0}, Lkotlin/ranges/IntRange$Companion;->getEMPTY()Lkotlin/ranges/IntRange;
@@ -4892,7 +4866,7 @@
 
     return-object p0
 
-    .line 1095
+    .line 1096
     :cond_0
     new-instance v0, Lkotlin/ranges/IntRange;
 
@@ -4906,7 +4880,7 @@
 .method public static final until(IS)Lkotlin/ranges/IntRange;
     .locals 1
 
-    .line 1173
+    .line 1174
     new-instance v0, Lkotlin/ranges/IntRange;
 
     add-int/lit8 p1, p1, -0x1
@@ -4919,7 +4893,7 @@
 .method public static final until(SB)Lkotlin/ranges/IntRange;
     .locals 1
 
-    .line 1075
+    .line 1076
     new-instance v0, Lkotlin/ranges/IntRange;
 
     add-int/lit8 p1, p1, -0x1
@@ -4936,7 +4910,7 @@
 
     if-gt p1, v0, :cond_0
 
-    .line 1123
+    .line 1124
     sget-object p0, Lkotlin/ranges/IntRange;->Companion:Lkotlin/ranges/IntRange$Companion;
 
     invoke-virtual {p0}, Lkotlin/ranges/IntRange$Companion;->getEMPTY()Lkotlin/ranges/IntRange;
@@ -4945,7 +4919,7 @@
 
     return-object p0
 
-    .line 1124
+    .line 1125
     :cond_0
     new-instance v0, Lkotlin/ranges/IntRange;
 
@@ -4959,7 +4933,7 @@
 .method public static final until(SS)Lkotlin/ranges/IntRange;
     .locals 1
 
-    .line 1200
+    .line 1201
     new-instance v0, Lkotlin/ranges/IntRange;
 
     add-int/lit8 p1, p1, -0x1
@@ -4978,7 +4952,7 @@
 
     if-gtz v0, :cond_0
 
-    .line 1153
+    .line 1154
     sget-object p0, Lkotlin/ranges/LongRange;->Companion:Lkotlin/ranges/LongRange$Companion;
 
     invoke-virtual {p0}, Lkotlin/ranges/LongRange$Companion;->getEMPTY()Lkotlin/ranges/LongRange;
@@ -4987,7 +4961,7 @@
 
     return-object p0
 
-    .line 1154
+    .line 1155
     :cond_0
     new-instance v0, Lkotlin/ranges/LongRange;
 
@@ -5011,7 +4985,7 @@
 
     if-gtz v0, :cond_0
 
-    .line 1133
+    .line 1134
     sget-object p0, Lkotlin/ranges/LongRange;->Companion:Lkotlin/ranges/LongRange$Companion;
 
     invoke-virtual {p0}, Lkotlin/ranges/LongRange$Companion;->getEMPTY()Lkotlin/ranges/LongRange;
@@ -5020,7 +4994,7 @@
 
     return-object p0
 
-    .line 1134
+    .line 1135
     :cond_0
     new-instance v0, Lkotlin/ranges/LongRange;
 
@@ -5038,7 +5012,7 @@
 .method public static final until(JB)Lkotlin/ranges/LongRange;
     .locals 5
 
-    .line 1057
+    .line 1058
     new-instance v0, Lkotlin/ranges/LongRange;
 
     int-to-long v1, p2
@@ -5055,7 +5029,7 @@
 .method public static final until(JI)Lkotlin/ranges/LongRange;
     .locals 5
 
-    .line 1104
+    .line 1105
     new-instance v0, Lkotlin/ranges/LongRange;
 
     int-to-long v1, p2
@@ -5078,7 +5052,7 @@
 
     if-gtz v0, :cond_0
 
-    .line 1143
+    .line 1144
     sget-object p0, Lkotlin/ranges/LongRange;->Companion:Lkotlin/ranges/LongRange$Companion;
 
     invoke-virtual {p0}, Lkotlin/ranges/LongRange$Companion;->getEMPTY()Lkotlin/ranges/LongRange;
@@ -5087,7 +5061,7 @@
 
     return-object p0
 
-    .line 1144
+    .line 1145
     :cond_0
     new-instance v0, Lkotlin/ranges/LongRange;
 
@@ -5103,7 +5077,7 @@
 .method public static final until(JS)Lkotlin/ranges/LongRange;
     .locals 5
 
-    .line 1182
+    .line 1183
     new-instance v0, Lkotlin/ranges/LongRange;
 
     int-to-long v1, p2
@@ -5126,7 +5100,7 @@
 
     if-gtz v0, :cond_0
 
-    .line 1163
+    .line 1164
     sget-object p0, Lkotlin/ranges/LongRange;->Companion:Lkotlin/ranges/LongRange$Companion;
 
     invoke-virtual {p0}, Lkotlin/ranges/LongRange$Companion;->getEMPTY()Lkotlin/ranges/LongRange;
@@ -5135,7 +5109,7 @@
 
     return-object p0
 
-    .line 1164
+    .line 1165
     :cond_0
     new-instance v0, Lkotlin/ranges/LongRange;
 

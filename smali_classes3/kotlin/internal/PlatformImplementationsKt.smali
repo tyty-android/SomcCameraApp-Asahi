@@ -171,6 +171,7 @@
 
     const/4 v2, 0x4
 
+    .line 59
     invoke-static {v2, v0}, Lkotlin/jvm/internal/Intrinsics;->reifiedOperationMarker(ILjava/lang/String;)V
 
     const-class v0, Ljava/lang/Object;
@@ -179,7 +180,6 @@
 
     check-cast v2, Ljava/lang/Class;
 
-    .line 59
     invoke-virtual {v0}, Ljava/lang/Class;->getClassLoader()Ljava/lang/ClassLoader;
 
     move-result-object v0

@@ -34,25 +34,25 @@
 .method public constructor <init>(Landroid/content/Context;Ljava/lang/String;)V
     .locals 1
 
-    .line 97
+    .line 94
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 85
+    .line 82
     sget-object v0, Lcom/google/api/client/util/Sleeper;->DEFAULT:Lcom/google/api/client/util/Sleeper;
 
     iput-object v0, p0, Lcom/google/api/client/googleapis/extensions/android/gms/auth/GoogleAccountCredential;->sleeper:Lcom/google/api/client/util/Sleeper;
 
-    .line 98
+    .line 95
     new-instance v0, Lcom/google/api/client/googleapis/extensions/android/accounts/GoogleAccountManager;
 
     invoke-direct {v0, p1}, Lcom/google/api/client/googleapis/extensions/android/accounts/GoogleAccountManager;-><init>(Landroid/content/Context;)V
 
     iput-object v0, p0, Lcom/google/api/client/googleapis/extensions/android/gms/auth/GoogleAccountCredential;->accountManager:Lcom/google/api/client/googleapis/extensions/android/accounts/GoogleAccountManager;
 
-    .line 99
+    .line 96
     iput-object p1, p0, Lcom/google/api/client/googleapis/extensions/android/gms/auth/GoogleAccountCredential;->context:Landroid/content/Context;
 
-    .line 100
+    .line 97
     iput-object p2, p0, Lcom/google/api/client/googleapis/extensions/android/gms/auth/GoogleAccountCredential;->scope:Ljava/lang/String;
 
     return-void
@@ -61,7 +61,7 @@
 .method public static usingAudience(Landroid/content/Context;Ljava/lang/String;)Lcom/google/api/client/googleapis/extensions/android/gms/auth/GoogleAccountCredential;
     .locals 3
 
-    .line 126
+    .line 122
     invoke-virtual {p1}, Ljava/lang/String;->length()I
 
     move-result v0
@@ -78,7 +78,7 @@
     :goto_0
     invoke-static {v0}, Lcom/google/api/client/util/Preconditions;->checkArgument(Z)V
 
-    .line 127
+    .line 123
     new-instance v0, Lcom/google/api/client/googleapis/extensions/android/gms/auth/GoogleAccountCredential;
 
     new-instance v1, Ljava/lang/StringBuilder;
@@ -115,7 +115,7 @@
 
     if-eqz p1, :cond_0
 
-    .line 113
+    .line 109
     invoke-interface {p1}, Ljava/util/Collection;->iterator()Ljava/util/Iterator;
 
     move-result-object v0
@@ -136,7 +136,7 @@
     :goto_0
     invoke-static {v0}, Lcom/google/api/client/util/Preconditions;->checkArgument(Z)V
 
-    .line 114
+    .line 110
     new-instance v0, Ljava/lang/StringBuilder;
 
     const-string v1, "oauth2: "
@@ -161,7 +161,7 @@
 
     move-result-object p1
 
-    .line 115
+    .line 111
     new-instance v0, Lcom/google/api/client/googleapis/extensions/android/gms/auth/GoogleAccountCredential;
 
     invoke-direct {v0, p0, p1}, Lcom/google/api/client/googleapis/extensions/android/gms/auth/GoogleAccountCredential;-><init>(Landroid/content/Context;Ljava/lang/String;)V
@@ -174,7 +174,7 @@
 .method public final getAllAccounts()[Landroid/accounts/Account;
     .locals 0
 
-    .line 178
+    .line 172
     iget-object p0, p0, Lcom/google/api/client/googleapis/extensions/android/gms/auth/GoogleAccountCredential;->accountManager:Lcom/google/api/client/googleapis/extensions/android/accounts/GoogleAccountManager;
 
     invoke-virtual {p0}, Lcom/google/api/client/googleapis/extensions/android/accounts/GoogleAccountManager;->getAccounts()[Landroid/accounts/Account;
@@ -187,7 +187,7 @@
 .method public getBackOff()Lcom/google/api/client/util/BackOff;
     .locals 0
 
-    .line 193
+    .line 187
     iget-object p0, p0, Lcom/google/api/client/googleapis/extensions/android/gms/auth/GoogleAccountCredential;->backOff:Lcom/google/api/client/util/BackOff;
 
     return-object p0
@@ -196,7 +196,7 @@
 .method public final getContext()Landroid/content/Context;
     .locals 0
 
-    .line 163
+    .line 157
     iget-object p0, p0, Lcom/google/api/client/googleapis/extensions/android/gms/auth/GoogleAccountCredential;->context:Landroid/content/Context;
 
     return-object p0
@@ -205,7 +205,7 @@
 .method public final getGoogleAccountManager()Lcom/google/api/client/googleapis/extensions/android/accounts/GoogleAccountManager;
     .locals 0
 
-    .line 173
+    .line 167
     iget-object p0, p0, Lcom/google/api/client/googleapis/extensions/android/gms/auth/GoogleAccountCredential;->accountManager:Lcom/google/api/client/googleapis/extensions/android/accounts/GoogleAccountManager;
 
     return-object p0
@@ -214,7 +214,7 @@
 .method public final getScope()Ljava/lang/String;
     .locals 0
 
-    .line 168
+    .line 162
     iget-object p0, p0, Lcom/google/api/client/googleapis/extensions/android/gms/auth/GoogleAccountCredential;->scope:Ljava/lang/String;
 
     return-object p0
@@ -223,7 +223,7 @@
 .method public final getSelectedAccount()Landroid/accounts/Account;
     .locals 0
 
-    .line 183
+    .line 177
     iget-object p0, p0, Lcom/google/api/client/googleapis/extensions/android/gms/auth/GoogleAccountCredential;->selectedAccount:Landroid/accounts/Account;
 
     return-object p0
@@ -232,7 +232,7 @@
 .method public final getSelectedAccountName()Ljava/lang/String;
     .locals 0
 
-    .line 231
+    .line 225
     iget-object p0, p0, Lcom/google/api/client/googleapis/extensions/android/gms/auth/GoogleAccountCredential;->accountName:Ljava/lang/String;
 
     return-object p0
@@ -241,7 +241,7 @@
 .method public final getSleeper()Lcom/google/api/client/util/Sleeper;
     .locals 0
 
-    .line 213
+    .line 207
     iget-object p0, p0, Lcom/google/api/client/googleapis/extensions/android/gms/auth/GoogleAccountCredential;->sleeper:Lcom/google/api/client/util/Sleeper;
 
     return-object p0
@@ -256,15 +256,15 @@
         }
     .end annotation
 
-    .line 261
+    .line 252
     iget-object v0, p0, Lcom/google/api/client/googleapis/extensions/android/gms/auth/GoogleAccountCredential;->backOff:Lcom/google/api/client/util/BackOff;
 
     if-eqz v0, :cond_0
 
-    .line 262
+    .line 253
     invoke-interface {v0}, Lcom/google/api/client/util/BackOff;->reset()V
 
-    .line 267
+    .line 258
     :catch_0
     :cond_0
     :goto_0
@@ -286,7 +286,7 @@
     :catch_1
     move-exception v0
 
-    .line 271
+    .line 262
     :try_start_1
     iget-object v1, p0, Lcom/google/api/client/googleapis/extensions/android/gms/auth/GoogleAccountCredential;->backOff:Lcom/google/api/client/util/BackOff;
 
@@ -302,7 +302,7 @@
 
     goto :goto_0
 
-    .line 272
+    .line 263
     :cond_1
     throw v0
     :try_end_1
@@ -312,15 +312,15 @@
 .method public initialize(Lcom/google/api/client/http/HttpRequest;)V
     .locals 1
 
-    .line 156
+    .line 150
     new-instance v0, Lcom/google/api/client/googleapis/extensions/android/gms/auth/GoogleAccountCredential$RequestHandler;
 
     invoke-direct {v0, p0}, Lcom/google/api/client/googleapis/extensions/android/gms/auth/GoogleAccountCredential$RequestHandler;-><init>(Lcom/google/api/client/googleapis/extensions/android/gms/auth/GoogleAccountCredential;)V
 
-    .line 157
+    .line 151
     invoke-virtual {p1, v0}, Lcom/google/api/client/http/HttpRequest;->setInterceptor(Lcom/google/api/client/http/HttpExecuteInterceptor;)Lcom/google/api/client/http/HttpRequest;
 
-    .line 158
+    .line 152
     invoke-virtual {p1, v0}, Lcom/google/api/client/http/HttpRequest;->setUnsuccessfulResponseHandler(Lcom/google/api/client/http/HttpUnsuccessfulResponseHandler;)Lcom/google/api/client/http/HttpRequest;
 
     return-void
@@ -329,14 +329,18 @@
 .method public final newChooseAccountIntent()Landroid/content/Intent;
     .locals 8
 
-    .line 243
+    .line 235
     iget-object v0, p0, Lcom/google/api/client/googleapis/extensions/android/gms/auth/GoogleAccountCredential;->selectedAccount:Landroid/accounts/Account;
 
-    const-string p0, "com.google"
+    const/4 p0, 0x1
 
-    filled-new-array {p0}, [Ljava/lang/String;
+    new-array v2, p0, [Ljava/lang/String;
 
-    move-result-object v2
+    const/4 p0, 0x0
+
+    const-string v1, "com.google"
+
+    aput-object v1, v2, p0
 
     const/4 v6, 0x0
 
@@ -360,7 +364,7 @@
 .method public setBackOff(Lcom/google/api/client/util/BackOff;)Lcom/google/api/client/googleapis/extensions/android/gms/auth/GoogleAccountCredential;
     .locals 0
 
-    .line 203
+    .line 197
     iput-object p1, p0, Lcom/google/api/client/googleapis/extensions/android/gms/auth/GoogleAccountCredential;->backOff:Lcom/google/api/client/util/BackOff;
 
     return-object p0
@@ -369,7 +373,7 @@
 .method public final setSelectedAccount(Landroid/accounts/Account;)Lcom/google/api/client/googleapis/extensions/android/gms/auth/GoogleAccountCredential;
     .locals 0
 
-    .line 149
+    .line 143
     iput-object p1, p0, Lcom/google/api/client/googleapis/extensions/android/gms/auth/GoogleAccountCredential;->selectedAccount:Landroid/accounts/Account;
 
     if-nez p1, :cond_0
@@ -378,7 +382,7 @@
 
     goto :goto_0
 
-    .line 150
+    .line 144
     :cond_0
     iget-object p1, p1, Landroid/accounts/Account;->name:Ljava/lang/String;
 
@@ -391,7 +395,7 @@
 .method public final setSelectedAccountName(Ljava/lang/String;)Lcom/google/api/client/googleapis/extensions/android/gms/auth/GoogleAccountCredential;
     .locals 1
 
-    .line 135
+    .line 131
     iget-object v0, p0, Lcom/google/api/client/googleapis/extensions/android/gms/auth/GoogleAccountCredential;->accountManager:Lcom/google/api/client/googleapis/extensions/android/accounts/GoogleAccountManager;
 
     invoke-virtual {v0, p1}, Lcom/google/api/client/googleapis/extensions/android/accounts/GoogleAccountManager;->getAccountByName(Ljava/lang/String;)Landroid/accounts/Account;
@@ -404,7 +408,7 @@
 
     const/4 p1, 0x0
 
-    .line 137
+    .line 133
     :cond_0
     iput-object p1, p0, Lcom/google/api/client/googleapis/extensions/android/gms/auth/GoogleAccountCredential;->accountName:Ljava/lang/String;
 
@@ -414,7 +418,7 @@
 .method public final setSleeper(Lcom/google/api/client/util/Sleeper;)Lcom/google/api/client/googleapis/extensions/android/gms/auth/GoogleAccountCredential;
     .locals 0
 
-    .line 222
+    .line 216
     invoke-static {p1}, Lcom/google/api/client/util/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p1

@@ -84,7 +84,7 @@
 .method public bridge synthetic invoke()Ljava/lang/Object;
     .locals 0
 
-    .line 159
+    .line 164
     invoke-virtual {p0}, Landroidx/compose/foundation/text/selection/SelectionRegistrarKt$LocalSelectionRegistrar$1;->invoke()Landroidx/compose/foundation/text/selection/SelectionRegistrar;
 
     move-result-object p0

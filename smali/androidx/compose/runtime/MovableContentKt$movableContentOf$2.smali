@@ -134,15 +134,10 @@
     const/4 v0, 0x2
 
     :goto_0
-    or-int/2addr v0, p3
-
-    goto :goto_1
+    or-int/2addr p3, v0
 
     :cond_1
-    move v0, p3
-
-    :goto_1
-    and-int/lit8 v0, v0, 0x5b
+    and-int/lit8 v0, p3, 0x5b
 
     const/16 v1, 0x12
 
@@ -155,15 +150,15 @@
 
     if-nez v0, :cond_2
 
-    goto :goto_2
+    goto :goto_1
 
     :cond_2
     invoke-interface {p2}, Landroidx/compose/runtime/Composer;->skipToGroupEnd()V
 
-    goto :goto_3
+    goto :goto_2
 
     :cond_3
-    :goto_2
+    :goto_1
     invoke-static {}, Landroidx/compose/runtime/ComposerKt;->isTraceInProgress()Z
 
     move-result v0
@@ -172,7 +167,7 @@
 
     const/4 v0, -0x1
 
-    const-string v1, "androidx.compose.runtime.movableContentOf.<anonymous> (MovableContent.kt:63)"
+    const-string v1, "androidx.compose.runtime.movableContentOf.<anonymous> (MovableContent.kt:64)"
 
     const v2, -0x19e91a55
 
@@ -192,6 +187,6 @@
     invoke-static {}, Landroidx/compose/runtime/ComposerKt;->traceEventEnd()V
 
     :cond_5
-    :goto_3
+    :goto_2
     return-void
 .end method

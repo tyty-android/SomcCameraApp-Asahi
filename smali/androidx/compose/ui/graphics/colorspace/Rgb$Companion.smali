@@ -73,7 +73,7 @@
 .method private constructor <init>()V
     .locals 0
 
-    .line 993
+    .line 982
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -90,7 +90,7 @@
 .method public static final synthetic access$computeWhitePoint(Landroidx/compose/ui/graphics/colorspace/Rgb$Companion;[F)Landroidx/compose/ui/graphics/colorspace/WhitePoint;
     .locals 0
 
-    .line 993
+    .line 982
     invoke-direct {p0, p1}, Landroidx/compose/ui/graphics/colorspace/Rgb$Companion;->computeWhitePoint([F)Landroidx/compose/ui/graphics/colorspace/WhitePoint;
 
     move-result-object p0
@@ -101,7 +101,7 @@
 .method public static final synthetic access$computeXYZMatrix(Landroidx/compose/ui/graphics/colorspace/Rgb$Companion;[FLandroidx/compose/ui/graphics/colorspace/WhitePoint;)[F
     .locals 0
 
-    .line 993
+    .line 982
     invoke-direct {p0, p1, p2}, Landroidx/compose/ui/graphics/colorspace/Rgb$Companion;->computeXYZMatrix([FLandroidx/compose/ui/graphics/colorspace/WhitePoint;)[F
 
     move-result-object p0
@@ -112,7 +112,7 @@
 .method public static final synthetic access$isSrgb(Landroidx/compose/ui/graphics/colorspace/Rgb$Companion;[FLandroidx/compose/ui/graphics/colorspace/WhitePoint;Landroidx/compose/ui/graphics/colorspace/DoubleFunction;Landroidx/compose/ui/graphics/colorspace/DoubleFunction;FFI)Z
     .locals 0
 
-    .line 993
+    .line 982
     invoke-direct/range {p0 .. p7}, Landroidx/compose/ui/graphics/colorspace/Rgb$Companion;->isSrgb([FLandroidx/compose/ui/graphics/colorspace/WhitePoint;Landroidx/compose/ui/graphics/colorspace/DoubleFunction;Landroidx/compose/ui/graphics/colorspace/DoubleFunction;FFI)Z
 
     move-result p0
@@ -123,7 +123,7 @@
 .method public static final synthetic access$isWideGamut(Landroidx/compose/ui/graphics/colorspace/Rgb$Companion;[FFF)Z
     .locals 0
 
-    .line 993
+    .line 982
     invoke-direct {p0, p1, p2, p3}, Landroidx/compose/ui/graphics/colorspace/Rgb$Companion;->isWideGamut([FFF)Z
 
     move-result p0
@@ -134,7 +134,7 @@
 .method public static final synthetic access$xyPrimaries(Landroidx/compose/ui/graphics/colorspace/Rgb$Companion;[F)[F
     .locals 0
 
-    .line 993
+    .line 982
     invoke-direct {p0, p1}, Landroidx/compose/ui/graphics/colorspace/Rgb$Companion;->xyPrimaries([F)[F
 
     move-result-object p0
@@ -147,32 +147,32 @@
 
     const/4 p0, 0x0
 
-    .line 1109
+    .line 1098
     aget p0, p1, p0
 
     const/4 v0, 0x1
 
-    .line 1110
+    .line 1099
     aget v0, p1, v0
 
     const/4 v1, 0x2
 
-    .line 1111
+    .line 1100
     aget v1, p1, v1
 
     const/4 v2, 0x3
 
-    .line 1112
+    .line 1101
     aget v2, p1, v2
 
     const/4 v3, 0x4
 
-    .line 1113
+    .line 1102
     aget v3, p1, v3
 
     const/4 v4, 0x5
 
-    .line 1114
+    .line 1103
     aget p1, p1, v4
 
     mul-float v4, p0, v2
@@ -216,19 +216,19 @@
 .method private final compare(DLandroidx/compose/ui/graphics/colorspace/DoubleFunction;Landroidx/compose/ui/graphics/colorspace/DoubleFunction;)Z
     .locals 2
 
-    .line 1060
+    .line 1049
     invoke-interface {p3, p1, p2}, Landroidx/compose/ui/graphics/colorspace/DoubleFunction;->invoke(D)D
 
     move-result-wide v0
 
-    .line 1061
+    .line 1050
     invoke-interface {p4, p1, p2}, Landroidx/compose/ui/graphics/colorspace/DoubleFunction;->invoke(D)D
 
     move-result-wide p0
 
     sub-double/2addr v0, p0
 
-    .line 1062
+    .line 1051
     invoke-static {v0, v1}, Ljava/lang/Math;->abs(D)D
 
     move-result-wide p0
@@ -255,19 +255,19 @@
 
     const/4 p0, 0x3
 
-    .line 1300
+    .line 1289
     new-array p0, p0, [F
 
     fill-array-data p0, :array_0
 
-    .line 1298
+    .line 1287
     invoke-static {p1, p0}, Landroidx/compose/ui/graphics/colorspace/ColorSpaceKt;->mul3x3Float3([F[F)[F
 
     move-result-object p0
 
     const/4 p1, 0x0
 
-    .line 1302
+    .line 1291
     aget v0, p0, p1
 
     const/4 v1, 0x1
@@ -282,7 +282,7 @@
 
     add-float/2addr v0, v2
 
-    .line 1303
+    .line 1292
     new-instance v2, Landroidx/compose/ui/graphics/colorspace/WhitePoint;
 
     aget p1, p0, p1
@@ -312,40 +312,40 @@
 
     const/4 v0, 0x0
 
-    .line 1350
+    .line 1339
     aget v1, p1, v0
 
     const/4 v2, 0x1
 
-    .line 1351
+    .line 1340
     aget v3, p1, v2
 
     const/4 v4, 0x2
 
-    .line 1352
+    .line 1341
     aget v5, p1, v4
 
     const/4 v6, 0x3
 
-    .line 1353
+    .line 1342
     aget v7, p1, v6
 
     const/4 v8, 0x4
 
-    .line 1354
+    .line 1343
     aget v9, p1, v8
 
     const/4 v10, 0x5
 
-    .line 1355
+    .line 1344
     aget v11, p1, v10
 
-    .line 1356
+    .line 1345
     invoke-virtual/range {p2 .. p2}, Landroidx/compose/ui/graphics/colorspace/WhitePoint;->getX()F
 
     move-result v12
 
-    .line 1357
+    .line 1346
     invoke-virtual/range {p2 .. p2}, Landroidx/compose/ui/graphics/colorspace/WhitePoint;->getY()F
 
     move-result v13
@@ -446,7 +446,7 @@
 
     const/16 v5, 0x9
 
-    .line 1384
+    .line 1373
     new-array v5, v5, [F
 
     aput v19, v5, v0
@@ -483,7 +483,7 @@
 
     const/4 v1, 0x0
 
-    .line 1197
+    .line 1186
     aget v2, p1, v1
 
     aget v3, p2, v1
@@ -500,7 +500,7 @@
 
     const/4 v7, 0x2
 
-    .line 1198
+    .line 1187
     aget v8, p1, v7
 
     aget v9, p2, v7
@@ -517,7 +517,7 @@
 
     const/4 v11, 0x4
 
-    .line 1199
+    .line 1188
     aget v12, p1, v11
 
     aget v13, p2, v11
@@ -550,17 +550,17 @@
 
     aput v15, v14, v2
 
-    .line 1204
+    .line 1193
     aget v2, v14, v1
 
-    .line 1205
+    .line 1194
     aget v5, v14, v4
 
     sub-float/2addr v3, v13
 
     sub-float v6, v6, v16
 
-    .line 1203
+    .line 1192
     invoke-direct {v0, v2, v5, v3, v6}, Landroidx/compose/ui/graphics/colorspace/Rgb$Companion;->cross(FFFF)F
 
     move-result v2
@@ -571,27 +571,27 @@
 
     if-ltz v2, :cond_2
 
-    .line 1210
+    .line 1199
     aget v2, p2, v1
 
     aget v5, p2, v7
 
     sub-float/2addr v2, v5
 
-    .line 1211
+    .line 1200
     aget v5, p2, v4
 
     aget v6, p2, v9
 
     sub-float/2addr v5, v6
 
-    .line 1212
+    .line 1201
     aget v6, v14, v1
 
-    .line 1213
+    .line 1202
     aget v8, v14, v4
 
-    .line 1209
+    .line 1198
     invoke-direct {v0, v2, v5, v6, v8}, Landroidx/compose/ui/graphics/colorspace/Rgb$Companion;->cross(FFFF)F
 
     move-result v2
@@ -602,28 +602,28 @@
 
     goto :goto_0
 
-    .line 1222
+    .line 1211
     :cond_0
     aget v2, v14, v7
 
-    .line 1223
+    .line 1212
     aget v5, v14, v9
 
-    .line 1224
+    .line 1213
     aget v6, p2, v7
 
     aget v8, p2, v1
 
     sub-float/2addr v6, v8
 
-    .line 1225
+    .line 1214
     aget v8, p2, v9
 
     aget v10, p2, v4
 
     sub-float/2addr v8, v10
 
-    .line 1221
+    .line 1210
     invoke-direct {v0, v2, v5, v6, v8}, Landroidx/compose/ui/graphics/colorspace/Rgb$Companion;->cross(FFFF)F
 
     move-result v2
@@ -632,14 +632,14 @@
 
     if-ltz v2, :cond_2
 
-    .line 1228
+    .line 1217
     aget v2, p2, v7
 
     aget v5, p2, v11
 
     sub-float/2addr v2, v5
 
-    .line 1229
+    .line 1218
     aget v5, p2, v9
 
     const/4 v6, 0x5
@@ -648,13 +648,13 @@
 
     sub-float/2addr v5, v8
 
-    .line 1230
+    .line 1219
     aget v8, v14, v7
 
-    .line 1231
+    .line 1220
     aget v10, v14, v9
 
-    .line 1227
+    .line 1216
     invoke-direct {v0, v2, v5, v8, v10}, Landroidx/compose/ui/graphics/colorspace/Rgb$Companion;->cross(FFFF)F
 
     move-result v2
@@ -665,28 +665,28 @@
 
     goto :goto_0
 
-    .line 1240
+    .line 1229
     :cond_1
     aget v2, v14, v11
 
-    .line 1241
+    .line 1230
     aget v5, v14, v6
 
-    .line 1242
+    .line 1231
     aget v8, p2, v11
 
     aget v7, p2, v7
 
     sub-float/2addr v8, v7
 
-    .line 1243
+    .line 1232
     aget v7, p2, v6
 
     aget v9, p2, v9
 
     sub-float/2addr v7, v9
 
-    .line 1239
+    .line 1228
     invoke-direct {v0, v2, v5, v8, v7}, Landroidx/compose/ui/graphics/colorspace/Rgb$Companion;->cross(FFFF)F
 
     move-result v2
@@ -695,27 +695,27 @@
 
     if-ltz v2, :cond_2
 
-    .line 1246
+    .line 1235
     aget v2, p2, v11
 
     aget v5, p2, v1
 
     sub-float/2addr v2, v5
 
-    .line 1247
+    .line 1236
     aget v5, p2, v6
 
     aget v7, p2, v4
 
     sub-float/2addr v5, v7
 
-    .line 1248
+    .line 1237
     aget v7, v14, v11
 
-    .line 1249
+    .line 1238
     aget v6, v14, v6
 
-    .line 1245
+    .line 1234
     invoke-direct {v0, v2, v5, v7, v6}, Landroidx/compose/ui/graphics/colorspace/Rgb$Companion;->cross(FFFF)F
 
     move-result v0
@@ -752,7 +752,7 @@
 
     return v0
 
-    .line 1021
+    .line 1010
     :cond_0
     sget-object p7, Landroidx/compose/ui/graphics/colorspace/ColorSpaces;->INSTANCE:Landroidx/compose/ui/graphics/colorspace/ColorSpaces;
 
@@ -770,7 +770,7 @@
 
     return p7
 
-    .line 1024
+    .line 1013
     :cond_1
     sget-object p1, Landroidx/compose/ui/graphics/colorspace/Illuminant;->INSTANCE:Landroidx/compose/ui/graphics/colorspace/Illuminant;
 
@@ -799,7 +799,7 @@
 
     if-nez p1, :cond_6
 
-    .line 1033
+    .line 1022
     sget-object p1, Landroidx/compose/ui/graphics/colorspace/ColorSpaces;->INSTANCE:Landroidx/compose/ui/graphics/colorspace/ColorSpaces;
 
     invoke-virtual {p1}, Landroidx/compose/ui/graphics/colorspace/ColorSpaces;->getSrgb()Landroidx/compose/ui/graphics/colorspace/Rgb;
@@ -815,12 +815,12 @@
 
     if-gtz p2, :cond_5
 
-    .line 1040
+    .line 1029
     invoke-virtual {p1}, Landroidx/compose/ui/graphics/colorspace/Rgb;->getOetfOrig$ui_graphics_release()Landroidx/compose/ui/graphics/colorspace/DoubleFunction;
 
     move-result-object p2
 
-    .line 1037
+    .line 1026
     invoke-direct {p0, p5, p6, p3, p2}, Landroidx/compose/ui/graphics/colorspace/Rgb$Companion;->compare(DLandroidx/compose/ui/graphics/colorspace/DoubleFunction;Landroidx/compose/ui/graphics/colorspace/DoubleFunction;)Z
 
     move-result p2
@@ -829,13 +829,13 @@
 
     return p7
 
-    .line 1046
+    .line 1035
     :cond_3
     invoke-virtual {p1}, Landroidx/compose/ui/graphics/colorspace/Rgb;->getEotfOrig$ui_graphics_release()Landroidx/compose/ui/graphics/colorspace/DoubleFunction;
 
     move-result-object p2
 
-    .line 1043
+    .line 1032
     invoke-direct {p0, p5, p6, p4, p2}, Landroidx/compose/ui/graphics/colorspace/Rgb$Companion;->compare(DLandroidx/compose/ui/graphics/colorspace/DoubleFunction;Landroidx/compose/ui/graphics/colorspace/DoubleFunction;)Z
 
     move-result p2
@@ -861,19 +861,19 @@
 .method private final isWideGamut([FFF)Z
     .locals 2
 
-    .line 1088
+    .line 1077
     invoke-direct {p0, p1}, Landroidx/compose/ui/graphics/colorspace/Rgb$Companion;->area([F)F
 
     move-result v0
 
-    .line 1089
+    .line 1078
     sget-object v1, Landroidx/compose/ui/graphics/colorspace/ColorSpaces;->INSTANCE:Landroidx/compose/ui/graphics/colorspace/ColorSpaces;
 
     invoke-virtual {v1}, Landroidx/compose/ui/graphics/colorspace/ColorSpaces;->getNtsc1953Primaries$ui_graphics_release()[F
 
     move-result-object v1
 
-    .line 1088
+    .line 1077
     invoke-direct {p0, v1}, Landroidx/compose/ui/graphics/colorspace/Rgb$Companion;->area([F)F
 
     move-result v1
@@ -886,14 +886,14 @@
 
     if-lez v0, :cond_0
 
-    .line 1092
+    .line 1081
     sget-object v0, Landroidx/compose/ui/graphics/colorspace/ColorSpaces;->INSTANCE:Landroidx/compose/ui/graphics/colorspace/ColorSpaces;
 
     invoke-virtual {v0}, Landroidx/compose/ui/graphics/colorspace/ColorSpaces;->getSrgbPrimaries$ui_graphics_release()[F
 
     move-result-object v0
 
-    .line 1090
+    .line 1079
     invoke-direct {p0, p1, v0}, Landroidx/compose/ui/graphics/colorspace/Rgb$Companion;->contains([F[F)Z
 
     move-result p0
@@ -930,10 +930,10 @@
 
     const/4 p0, 0x6
 
-    .line 1315
+    .line 1304
     new-array v7, p0, [F
 
-    .line 1318
+    .line 1307
     array-length v0, p1
 
     const/16 v1, 0x9
@@ -942,7 +942,7 @@
 
     const/4 v0, 0x0
 
-    .line 1319
+    .line 1308
     aget v1, p1, v0
 
     const/4 v2, 0x1
@@ -959,17 +959,17 @@
 
     div-float/2addr v1, v4
 
-    .line 1320
+    .line 1309
     aput v1, v7, v0
 
     div-float/2addr v3, v4
 
-    .line 1321
+    .line 1310
     aput v3, v7, v2
 
     const/4 v0, 0x3
 
-    .line 1323
+    .line 1312
     aget v1, p1, v0
 
     const/4 v2, 0x4
@@ -986,15 +986,15 @@
 
     div-float/2addr v1, v4
 
-    .line 1324
+    .line 1313
     aput v1, v7, v5
 
     div-float/2addr v3, v4
 
-    .line 1325
+    .line 1314
     aput v3, v7, v0
 
-    .line 1327
+    .line 1316
     aget p0, p1, p0
 
     const/4 v0, 0x7
@@ -1011,12 +1011,12 @@
 
     div-float/2addr p0, v1
 
-    .line 1328
+    .line 1317
     aput p0, v7, v2
 
     div-float/2addr v0, v1
 
-    .line 1329
+    .line 1318
     aput v0, v7, v6
 
     goto :goto_0
@@ -1036,7 +1036,7 @@
 
     move-object v1, v7
 
-    .line 1331
+    .line 1320
     invoke-static/range {v0 .. v6}, Lkotlin/collections/ArraysKt;->copyInto$default([F[FIIIILjava/lang/Object;)[F
 
     :goto_0
@@ -1048,45 +1048,41 @@
 .method public final computePrimaries$ui_graphics_release([F)[F
     .locals 12
 
-    const-string/jumbo p0, "toXYZ"
-
-    invoke-static {p1, p0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
     const/4 p0, 0x3
 
-    .line 1266
+    .line 1255
     new-array v0, p0, [F
 
     fill-array-data v0, :array_0
 
-    .line 1264
+    .line 1253
     invoke-static {p1, v0}, Landroidx/compose/ui/graphics/colorspace/ColorSpaceKt;->mul3x3Float3([F[F)[F
 
     move-result-object v0
 
-    .line 1270
+    .line 1259
     new-array v1, p0, [F
 
     fill-array-data v1, :array_1
 
-    .line 1268
+    .line 1257
     invoke-static {p1, v1}, Landroidx/compose/ui/graphics/colorspace/ColorSpaceKt;->mul3x3Float3([F[F)[F
 
     move-result-object v1
 
-    .line 1274
+    .line 1263
     new-array v2, p0, [F
 
     fill-array-data v2, :array_2
 
-    .line 1272
+    .line 1261
     invoke-static {p1, v2}, Landroidx/compose/ui/graphics/colorspace/ColorSpaceKt;->mul3x3Float3([F[F)[F
 
     move-result-object p1
 
     const/4 v2, 0x0
 
-    .line 1277
+    .line 1266
     aget v3, v0, v2
 
     const/4 v4, 0x1
@@ -1101,7 +1097,7 @@
 
     add-float/2addr v6, v0
 
-    .line 1278
+    .line 1267
     aget v0, v1, v2
 
     aget v8, v1, v4
@@ -1112,7 +1108,7 @@
 
     add-float/2addr v9, v1
 
-    .line 1279
+    .line 1268
     aget v1, p1, v2
 
     aget v10, p1, v4
@@ -1137,7 +1133,7 @@
 
     const/4 p1, 0x6
 
-    .line 1284
+    .line 1273
     new-array p1, p1, [F
 
     aput v3, p1, v2

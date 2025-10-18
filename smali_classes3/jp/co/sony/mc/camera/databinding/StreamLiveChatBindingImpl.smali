@@ -13,7 +13,7 @@
 
 
 # instance fields
-.field private final mCallback28:Landroid/view/View$OnClickListener;
+.field private final mCallback43:Landroid/view/View$OnClickListener;
 
 .field private mDirtyFlags:J
 
@@ -29,7 +29,7 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/databinding/StreamLiveChatBindingImpl;->sViewsWithIds:Landroid/util/SparseIntArray;
 
-    const v1, 0x7f090107
+    const v1, 0x7f090103
 
     const/4 v2, 0x5
 
@@ -160,7 +160,7 @@
 
     invoke-direct {p1, p0, v0}, Ljp/co/sony/mc/camera/generated/callback/OnClickListener;-><init>(Ljp/co/sony/mc/camera/generated/callback/OnClickListener$Listener;I)V
 
-    iput-object p1, p0, Ljp/co/sony/mc/camera/databinding/StreamLiveChatBindingImpl;->mCallback28:Landroid/view/View$OnClickListener;
+    iput-object p1, p0, Ljp/co/sony/mc/camera/databinding/StreamLiveChatBindingImpl;->mCallback43:Landroid/view/View$OnClickListener;
 
     .line 47
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/databinding/StreamLiveChatBindingImpl;->invalidateAll()V
@@ -932,7 +932,7 @@
     .line 373
     iget-object v0, v1, Ljp/co/sony/mc/camera/databinding/StreamLiveChatBindingImpl;->sizeChangeButton:Landroid/widget/ImageButton;
 
-    iget-object v1, v1, Ljp/co/sony/mc/camera/databinding/StreamLiveChatBindingImpl;->mCallback28:Landroid/view/View$OnClickListener;
+    iget-object v1, v1, Ljp/co/sony/mc/camera/databinding/StreamLiveChatBindingImpl;->mCallback43:Landroid/view/View$OnClickListener;
 
     invoke-virtual {v0, v1}, Landroid/widget/ImageButton;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
@@ -1135,7 +1135,7 @@
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    const/16 p1, 0x13
+    const/16 p1, 0x16
 
     .line 91
     invoke-virtual {p0, p1}, Ljp/co/sony/mc/camera/databinding/StreamLiveChatBindingImpl;->notifyPropertyChanged(I)V
@@ -1160,7 +1160,7 @@
 .method public setVariable(ILjava/lang/Object;)Z
     .locals 1
 
-    const/16 v0, 0x13
+    const/16 v0, 0x16
 
     if-ne v0, p1, :cond_0
 
@@ -1172,7 +1172,7 @@
     goto :goto_0
 
     :cond_0
-    const/16 v0, 0x23
+    const/16 v0, 0x26
 
     if-ne v0, p1, :cond_1
 
@@ -1184,7 +1184,7 @@
     goto :goto_0
 
     :cond_1
-    const/16 v0, 0x11
+    const/16 v0, 0x13
 
     if-ne v0, p1, :cond_2
 
@@ -1229,7 +1229,7 @@
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    const/16 p1, 0x23
+    const/16 p1, 0x26
 
     .line 99
     invoke-virtual {p0, p1}, Ljp/co/sony/mc/camera/databinding/StreamLiveChatBindingImpl;->notifyPropertyChanged(I)V

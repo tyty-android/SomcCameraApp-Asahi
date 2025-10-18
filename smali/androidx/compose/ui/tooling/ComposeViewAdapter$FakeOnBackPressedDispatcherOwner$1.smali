@@ -1,6 +1,6 @@
 .class public final Landroidx/compose/ui/tooling/ComposeViewAdapter$FakeOnBackPressedDispatcherOwner$1;
 .super Ljava/lang/Object;
-.source "ComposeViewAdapter.kt"
+.source "ComposeViewAdapter.android.kt"
 
 # interfaces
 .implements Landroidx/activity/OnBackPressedDispatcherOwner;
@@ -55,10 +55,10 @@
 
     iput-object p1, p0, Landroidx/compose/ui/tooling/ComposeViewAdapter$FakeOnBackPressedDispatcherOwner$1;->this$0:Landroidx/compose/ui/tooling/ComposeViewAdapter;
 
-    .line 655
+    .line 648
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 656
+    .line 649
     new-instance p1, Landroidx/activity/OnBackPressedDispatcher;
 
     const/4 v0, 0x0
@@ -77,7 +77,7 @@
 .method public bridge synthetic getLifecycle()Landroidx/lifecycle/Lifecycle;
     .locals 0
 
-    .line 655
+    .line 648
     invoke-virtual {p0}, Landroidx/compose/ui/tooling/ComposeViewAdapter$FakeOnBackPressedDispatcherOwner$1;->getLifecycle()Landroidx/lifecycle/LifecycleRegistry;
 
     move-result-object p0
@@ -90,7 +90,7 @@
 .method public getLifecycle()Landroidx/lifecycle/LifecycleRegistry;
     .locals 0
 
-    .line 659
+    .line 652
     iget-object p0, p0, Landroidx/compose/ui/tooling/ComposeViewAdapter$FakeOnBackPressedDispatcherOwner$1;->this$0:Landroidx/compose/ui/tooling/ComposeViewAdapter;
 
     invoke-static {p0}, Landroidx/compose/ui/tooling/ComposeViewAdapter;->access$getFakeSavedStateRegistryOwner$p(Landroidx/compose/ui/tooling/ComposeViewAdapter;)Landroidx/compose/ui/tooling/ComposeViewAdapter$FakeSavedStateRegistryOwner$1;
@@ -107,7 +107,7 @@
 .method public getOnBackPressedDispatcher()Landroidx/activity/OnBackPressedDispatcher;
     .locals 0
 
-    .line 656
+    .line 649
     iget-object p0, p0, Landroidx/compose/ui/tooling/ComposeViewAdapter$FakeOnBackPressedDispatcherOwner$1;->onBackPressedDispatcher:Landroidx/activity/OnBackPressedDispatcher;
 
     return-object p0

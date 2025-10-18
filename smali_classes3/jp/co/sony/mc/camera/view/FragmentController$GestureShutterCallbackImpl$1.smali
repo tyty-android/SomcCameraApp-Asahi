@@ -25,7 +25,7 @@
 .method constructor <init>(Ljp/co/sony/mc/camera/view/FragmentController$GestureShutterCallbackImpl;)V
     .locals 0
 
-    .line 5703
+    .line 5885
     iput-object p1, p0, Ljp/co/sony/mc/camera/view/FragmentController$GestureShutterCallbackImpl$1;->this$1:Ljp/co/sony/mc/camera/view/FragmentController$GestureShutterCallbackImpl;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -38,7 +38,7 @@
 .method public getCountDownIconId()I
     .locals 0
 
-    const p0, 0x7f08020a
+    const p0, 0x7f080218
 
     return p0
 .end method

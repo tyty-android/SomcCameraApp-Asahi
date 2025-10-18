@@ -70,11 +70,11 @@
 
 .field public static final design_snackbar_out:I = 0x7f01001c
 
-.field public static final mtrl_bottom_sheet_slide_in:I = 0x7f010030
+.field public static final mtrl_bottom_sheet_slide_in:I = 0x7f010032
 
-.field public static final mtrl_bottom_sheet_slide_out:I = 0x7f010031
+.field public static final mtrl_bottom_sheet_slide_out:I = 0x7f010033
 
-.field public static final mtrl_card_lowers_interpolator:I = 0x7f010032
+.field public static final mtrl_card_lowers_interpolator:I = 0x7f010034
 
 
 # direct methods

@@ -40,7 +40,7 @@
 .method private constructor <init>()V
     .locals 0
 
-    .line 78
+    .line 88
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -59,7 +59,7 @@
 .method public final getUnset()Ljava/lang/Object;
     .locals 0
 
-    .line 79
+    .line 89
     invoke-static {}, Landroidx/compose/runtime/DerivedSnapshotState$ResultRecord;->access$getUnset$cp()Ljava/lang/Object;
 
     move-result-object p0

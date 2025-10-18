@@ -26,7 +26,7 @@
 
 .annotation runtime Lkotlin/Metadata;
     d1 = {
-        "\u0000:\n\u0002\u0018\u0002\n\u0002\u0010\u001c\n\u0002\u0018\u0002\n\u0002\u0008\u0003\n\u0002\u0010\t\n\u0002\u0008\t\n\u0002\u0010\u000b\n\u0000\n\u0002\u0010\u0000\n\u0000\n\u0002\u0010\u0008\n\u0002\u0008\u0002\n\u0002\u0010(\n\u0000\n\u0002\u0010\u000e\n\u0002\u0008\u0002\u0008\u0017\u0018\u0000 \u001a2\u0008\u0012\u0004\u0012\u00020\u00020\u0001:\u0001\u001aB\"\u0008\u0000\u0012\u0006\u0010\u0003\u001a\u00020\u0002\u0012\u0006\u0010\u0004\u001a\u00020\u0002\u0012\u0006\u0010\u0005\u001a\u00020\u0006\u00f8\u0001\u0000\u00a2\u0006\u0002\u0010\u0007J\u0013\u0010\u000f\u001a\u00020\u00102\u0008\u0010\u0011\u001a\u0004\u0018\u00010\u0012H\u0096\u0002J\u0008\u0010\u0013\u001a\u00020\u0014H\u0016J\u0008\u0010\u0015\u001a\u00020\u0010H\u0016J\u0012\u0010\u0016\u001a\u0008\u0012\u0004\u0012\u00020\u00020\u0017H\u0086\u0002\u00f8\u0001\u0000J\u0008\u0010\u0018\u001a\u00020\u0019H\u0016R\u0019\u0010\u0008\u001a\u00020\u0002\u00f8\u0001\u0000\u00f8\u0001\u0001\u00a2\u0006\n\n\u0002\u0010\u000b\u001a\u0004\u0008\t\u0010\nR\u0019\u0010\u000c\u001a\u00020\u0002\u00f8\u0001\u0000\u00f8\u0001\u0001\u00a2\u0006\n\n\u0002\u0010\u000b\u001a\u0004\u0008\r\u0010\nR\u0011\u0010\u0005\u001a\u00020\u0006\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\u000e\u0010\n\u00f8\u0001\u0000\u0082\u0002\u0008\n\u0002\u0008\u0019\n\u0002\u0008!\u00a8\u0006\u001b"
+        "\u0000:\n\u0002\u0018\u0002\n\u0002\u0010\u001c\n\u0002\u0018\u0002\n\u0002\u0008\u0003\n\u0002\u0010\t\n\u0002\u0008\t\n\u0002\u0010\u000b\n\u0000\n\u0002\u0010\u0000\n\u0000\n\u0002\u0010\u0008\n\u0002\u0008\u0002\n\u0002\u0010(\n\u0000\n\u0002\u0010\u000e\n\u0002\u0008\u0002\u0008\u0017\u0018\u0000 \u001a2\u0008\u0012\u0004\u0012\u00020\u00020\u0001:\u0001\u001aB\u001f\u0008\u0000\u0012\u0006\u0010\u0003\u001a\u00020\u0002\u0012\u0006\u0010\u0004\u001a\u00020\u0002\u0012\u0006\u0010\u0005\u001a\u00020\u0006\u00a2\u0006\u0002\u0010\u0007J\u0013\u0010\u000f\u001a\u00020\u00102\u0008\u0010\u0011\u001a\u0004\u0018\u00010\u0012H\u0096\u0002J\u0008\u0010\u0013\u001a\u00020\u0014H\u0016J\u0008\u0010\u0015\u001a\u00020\u0010H\u0016J\u000f\u0010\u0016\u001a\u0008\u0012\u0004\u0012\u00020\u00020\u0017H\u0086\u0002J\u0008\u0010\u0018\u001a\u00020\u0019H\u0016R\u0016\u0010\u0008\u001a\u00020\u0002\u00f8\u0001\u0000\u00a2\u0006\n\n\u0002\u0010\u000b\u001a\u0004\u0008\t\u0010\nR\u0016\u0010\u000c\u001a\u00020\u0002\u00f8\u0001\u0000\u00a2\u0006\n\n\u0002\u0010\u000b\u001a\u0004\u0008\r\u0010\nR\u0011\u0010\u0005\u001a\u00020\u0006\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\u000e\u0010\n\u0082\u0002\u0004\n\u0002\u0008!\u00a8\u0006\u001b"
     }
     d2 = {
         "Lkotlin/ranges/ULongProgression;",
@@ -98,7 +98,7 @@
 .method private constructor <init>(JJJ)V
     .locals 2
 
-    .line 58
+    .line 59
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     const-wide/16 v0, 0x0
@@ -113,22 +113,22 @@
 
     if-eqz v0, :cond_0
 
-    .line 74
+    .line 75
     iput-wide p1, p0, Lkotlin/ranges/ULongProgression;->first:J
 
-    .line 79
+    .line 80
     invoke-static/range {p1 .. p6}, Lkotlin/internal/UProgressionUtilKt;->getProgressionLastElement-7ftBX0g(JJJ)J
 
     move-result-wide p1
 
     iput-wide p1, p0, Lkotlin/ranges/ULongProgression;->last:J
 
-    .line 84
+    .line 85
     iput-wide p5, p0, Lkotlin/ranges/ULongProgression;->step:J
 
     return-void
 
-    .line 68
+    .line 69
     :cond_0
     new-instance p0, Ljava/lang/IllegalArgumentException;
 
@@ -138,7 +138,7 @@
 
     throw p0
 
-    .line 67
+    .line 68
     :cond_1
     new-instance p0, Ljava/lang/IllegalArgumentException;
 
@@ -162,7 +162,7 @@
 .method public equals(Ljava/lang/Object;)Z
     .locals 4
 
-    .line 97
+    .line 98
     instance-of v0, p1, Lkotlin/ranges/ULongProgression;
 
     if-eqz v0, :cond_2
@@ -183,7 +183,7 @@
 
     if-nez v0, :cond_1
 
-    .line 98
+    .line 99
     :cond_0
     iget-wide v0, p0, Lkotlin/ranges/ULongProgression;->first:J
 
@@ -226,7 +226,7 @@
 .method public final getFirst-s-VKNKU()J
     .locals 2
 
-    .line 74
+    .line 75
     iget-wide v0, p0, Lkotlin/ranges/ULongProgression;->first:J
 
     return-wide v0
@@ -235,7 +235,7 @@
 .method public final getLast-s-VKNKU()J
     .locals 2
 
-    .line 79
+    .line 80
     iget-wide v0, p0, Lkotlin/ranges/ULongProgression;->last:J
 
     return-wide v0
@@ -244,7 +244,7 @@
 .method public final getStep()J
     .locals 2
 
-    .line 84
+    .line 85
     iget-wide v0, p0, Lkotlin/ranges/ULongProgression;->step:J
 
     return-wide v0
@@ -253,7 +253,7 @@
 .method public hashCode()I
     .locals 7
 
-    .line 101
+    .line 102
     invoke-virtual {p0}, Lkotlin/ranges/ULongProgression;->isEmpty()Z
 
     move-result v0
@@ -322,7 +322,7 @@
 .method public isEmpty()Z
     .locals 7
 
-    .line 94
+    .line 95
     iget-wide v0, p0, Lkotlin/ranges/ULongProgression;->step:J
 
     const-wide/16 v2, 0x0
@@ -370,7 +370,7 @@
         }
     .end annotation
 
-    .line 86
+    .line 87
     new-instance v8, Lkotlin/ranges/ULongProgressionIterator;
 
     iget-wide v1, p0, Lkotlin/ranges/ULongProgression;->first:J
@@ -393,7 +393,7 @@
 .method public toString()Ljava/lang/String;
     .locals 4
 
-    .line 103
+    .line 104
     iget-wide v0, p0, Lkotlin/ranges/ULongProgression;->step:J
 
     const-wide/16 v2, 0x0

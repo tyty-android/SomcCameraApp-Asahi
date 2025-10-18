@@ -19,5 +19,4 @@ Lütfen AYARLAR'dan WLAN özelliğini açın."</string>
     <string name="camera_strings_runtime_permission_rationale_network_cta_txt">"Bu uygulama, kullanıcı verilerini (kaydedilen resimler/videolar, ses verileri, kullanımdaki hizmetlerin hesap bilgileri vb. gibi) İnternet'e göndermek için WLAN ve mobil veri kullanır.
 Şebeke operatörünüze veya internet servis sağlayıcı tarifelerinize bağlı olarak veriler için ücret ödeyebileceğinizi aklınızda bulundurun."</string>
     <string name="camera_strings_streaming_error_wifi_disconnected_txt">Kablosuz bağlantı yok</string>
-    <string name="mv_wireless_network_txt">WLAN ve mobil veri kullan</string>
 </resources>

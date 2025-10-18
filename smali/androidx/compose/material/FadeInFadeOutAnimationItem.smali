@@ -92,7 +92,7 @@
 
 # direct methods
 .method public constructor <init>(Ljava/lang/Object;Lkotlin/jvm/functions/Function3;)V
-    .locals 1
+    .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TT;",
@@ -113,17 +113,13 @@
         }
     .end annotation
 
-    const-string/jumbo v0, "transition"
-
-    invoke-static {p2, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 335
+    .line 342
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 336
+    .line 343
     iput-object p1, p0, Landroidx/compose/material/FadeInFadeOutAnimationItem;->key:Ljava/lang/Object;
 
-    .line 337
+    .line 344
     iput-object p2, p0, Landroidx/compose/material/FadeInFadeOutAnimationItem;->transition:Lkotlin/jvm/functions/Function3;
 
     return-void
@@ -217,10 +213,6 @@
         }
     .end annotation
 
-    const-string/jumbo p0, "transition"
-
-    invoke-static {p2, p0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
     new-instance p0, Landroidx/compose/material/FadeInFadeOutAnimationItem;
 
     invoke-direct {p0, p1, p2}, Landroidx/compose/material/FadeInFadeOutAnimationItem;-><init>(Ljava/lang/Object;Lkotlin/jvm/functions/Function3;)V
@@ -286,7 +278,7 @@
         }
     .end annotation
 
-    .line 336
+    .line 343
     iget-object p0, p0, Landroidx/compose/material/FadeInFadeOutAnimationItem;->key:Ljava/lang/Object;
 
     return-object p0
@@ -312,7 +304,7 @@
         }
     .end annotation
 
-    .line 337
+    .line 344
     iget-object p0, p0, Landroidx/compose/material/FadeInFadeOutAnimationItem;->transition:Lkotlin/jvm/functions/Function3;
 
     return-object p0

@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <ListView android:id="@id/setting_list" android:layout_width="fill_parent" android:layout_height="wrap_content" android:groupIndicator="@null" android:divider="@null" android:dividerHeight="0.0dip" android:paddingStart="@dimen/auto_mode_settings_list_sub_category_title_padding" android:paddingEnd="@dimen/auto_mode_settings_list_sub_category_title_padding" />
-</RelativeLayout>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include android:id="@id/title_bar_layout" android:layout_width="fill_parent" android:layout_height="?actionBarSize" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" layout="@layout/setting_title_bar" />
+    <ListView android:id="@id/setting_list" android:layout_width="fill_parent" android:layout_height="wrap_content" android:groupIndicator="@null" android:divider="@null" android:dividerHeight="0.0dip" android:paddingStart="@dimen/auto_mode_settings_list_sub_category_title_padding" android:paddingEnd="@dimen/auto_mode_settings_list_sub_category_title_padding" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/title_bar_layout" />
+</androidx.constraintlayout.widget.ConstraintLayout>

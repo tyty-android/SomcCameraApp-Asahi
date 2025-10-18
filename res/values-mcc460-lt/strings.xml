@@ -19,5 +19,4 @@ Pakeiskite šiuos nustatymus spustelėję NUSTATYMAI."</string>
     <string name="camera_strings_runtime_permission_rationale_network_cta_txt">"Ši programa naudoja WLAN ir mobiliojo ryšio duomenis vartotojo duomenims (t. y. įrašytoms nuotraukoms ir (arba) vaizdo įrašams, balso duomenims, naudojamų paslaugų paskyros informacijai ir kt.) siųsti į internetą.
 Atminkite, kad jums gali taikomi mokesčiai už duomenis, priklausomai nuo jūsų tinklo operatoriaus ar interneto paslaugų teikėjo sutarčių."</string>
     <string name="camera_strings_streaming_error_wifi_disconnected_txt">Nėra „WLAN“ ryšio</string>
-    <string name="mv_wireless_network_txt">Naudoti „WLAN“, mob. duom.</string>
 </resources>

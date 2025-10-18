@@ -79,6 +79,8 @@
 
     move-result p0
 
+    const/4 p2, 0x0
+
     if-eqz p0, :cond_1
 
     invoke-virtual {p1}, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->isVideo()Z
@@ -89,32 +91,40 @@
 
     goto :goto_0
 
-    .line 226
     :cond_0
-    sget-object p0, Ljp/co/sony/mc/camera/configuration/parameters/DisplayFlash;->DISPLAY_AUTO:Ljp/co/sony/mc/camera/configuration/parameters/DisplayFlash;
+    const/4 p0, 0x3
 
-    sget-object p1, Ljp/co/sony/mc/camera/configuration/parameters/DisplayFlash;->DISPLAY_ON:Ljp/co/sony/mc/camera/configuration/parameters/DisplayFlash;
+    .line 226
+    new-array p0, p0, [Ljp/co/sony/mc/camera/configuration/parameters/DisplayFlash;
+
+    sget-object p1, Ljp/co/sony/mc/camera/configuration/parameters/DisplayFlash;->DISPLAY_AUTO:Ljp/co/sony/mc/camera/configuration/parameters/DisplayFlash;
+
+    aput-object p1, p0, p2
+
+    const/4 p1, 0x1
+
+    sget-object p2, Ljp/co/sony/mc/camera/configuration/parameters/DisplayFlash;->DISPLAY_ON:Ljp/co/sony/mc/camera/configuration/parameters/DisplayFlash;
+
+    aput-object p2, p0, p1
+
+    const/4 p1, 0x2
 
     sget-object p2, Ljp/co/sony/mc/camera/configuration/parameters/DisplayFlash;->DISPLAY_OFF:Ljp/co/sony/mc/camera/configuration/parameters/DisplayFlash;
 
-    filled-new-array {p0, p1, p2}, [Ljp/co/sony/mc/camera/configuration/parameters/DisplayFlash;
-
-    move-result-object p0
+    aput-object p2, p0, p1
 
     return-object p0
 
+    .line 224
     :cond_1
     :goto_0
-    const/4 p0, 0x0
-
-    .line 224
-    new-array p0, p0, [Ljp/co/sony/mc/camera/configuration/parameters/DisplayFlash;
+    new-array p0, p2, [Ljp/co/sony/mc/camera/configuration/parameters/DisplayFlash;
 
     return-object p0
 .end method
 
 .method public getFlashOptions(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Ljava/util/List;)[Ljp/co/sony/mc/camera/configuration/parameters/Flash;
-    .locals 1
+    .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -131,28 +141,42 @@
 
     move-result p0
 
+    const/4 p1, 0x0
+
     if-eqz p0, :cond_0
 
-    const/4 p0, 0x0
-
     .line 210
-    new-array p0, p0, [Ljp/co/sony/mc/camera/configuration/parameters/Flash;
+    new-array p0, p1, [Ljp/co/sony/mc/camera/configuration/parameters/Flash;
 
     return-object p0
 
-    .line 212
     :cond_0
-    sget-object p0, Ljp/co/sony/mc/camera/configuration/parameters/Flash;->AUTO:Ljp/co/sony/mc/camera/configuration/parameters/Flash;
+    const/4 p0, 0x4
 
-    sget-object p1, Ljp/co/sony/mc/camera/configuration/parameters/Flash;->ON:Ljp/co/sony/mc/camera/configuration/parameters/Flash;
+    .line 212
+    new-array p0, p0, [Ljp/co/sony/mc/camera/configuration/parameters/Flash;
+
+    sget-object p2, Ljp/co/sony/mc/camera/configuration/parameters/Flash;->AUTO:Ljp/co/sony/mc/camera/configuration/parameters/Flash;
+
+    aput-object p2, p0, p1
+
+    const/4 p1, 0x1
+
+    sget-object p2, Ljp/co/sony/mc/camera/configuration/parameters/Flash;->ON:Ljp/co/sony/mc/camera/configuration/parameters/Flash;
+
+    aput-object p2, p0, p1
+
+    const/4 p1, 0x2
 
     sget-object p2, Ljp/co/sony/mc/camera/configuration/parameters/Flash;->OFF:Ljp/co/sony/mc/camera/configuration/parameters/Flash;
 
-    sget-object v0, Ljp/co/sony/mc/camera/configuration/parameters/Flash;->LED_ON:Ljp/co/sony/mc/camera/configuration/parameters/Flash;
+    aput-object p2, p0, p1
 
-    filled-new-array {p0, p1, p2, v0}, [Ljp/co/sony/mc/camera/configuration/parameters/Flash;
+    const/4 p1, 0x3
 
-    move-result-object p0
+    sget-object p2, Ljp/co/sony/mc/camera/configuration/parameters/Flash;->LED_ON:Ljp/co/sony/mc/camera/configuration/parameters/Flash;
+
+    aput-object p2, p0, p1
 
     return-object p0
 .end method
@@ -160,7 +184,7 @@
 .method public getParameterKeyTextId()I
     .locals 0
 
-    const p0, 0x7f11023e
+    const p0, 0x7f110242
 
     return p0
 .end method
@@ -168,7 +192,7 @@
 .method public getParameterKeyTitleTextId()I
     .locals 0
 
-    const p0, 0x7f11023e
+    const p0, 0x7f110242
 
     return p0
 .end method

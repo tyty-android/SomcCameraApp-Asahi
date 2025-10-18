@@ -38,7 +38,7 @@
 .method static constructor <clinit>()V
     .locals 6
 
-    .line 46
+    .line 58
     new-instance v0, Lcom/google/gson/ReflectionAccessFilter$FilterResult;
 
     const-string v1, "ALLOW"
@@ -49,7 +49,7 @@
 
     sput-object v0, Lcom/google/gson/ReflectionAccessFilter$FilterResult;->ALLOW:Lcom/google/gson/ReflectionAccessFilter$FilterResult;
 
-    .line 52
+    .line 64
     new-instance v1, Lcom/google/gson/ReflectionAccessFilter$FilterResult;
 
     const-string v2, "INDECISIVE"
@@ -60,7 +60,7 @@
 
     sput-object v1, Lcom/google/gson/ReflectionAccessFilter$FilterResult;->INDECISIVE:Lcom/google/gson/ReflectionAccessFilter$FilterResult;
 
-    .line 74
+    .line 84
     new-instance v2, Lcom/google/gson/ReflectionAccessFilter$FilterResult;
 
     const-string v3, "BLOCK_INACCESSIBLE"
@@ -71,7 +71,7 @@
 
     sput-object v2, Lcom/google/gson/ReflectionAccessFilter$FilterResult;->BLOCK_INACCESSIBLE:Lcom/google/gson/ReflectionAccessFilter$FilterResult;
 
-    .line 80
+    .line 89
     new-instance v3, Lcom/google/gson/ReflectionAccessFilter$FilterResult;
 
     const-string v4, "BLOCK_ALL"
@@ -82,7 +82,7 @@
 
     sput-object v3, Lcom/google/gson/ReflectionAccessFilter$FilterResult;->BLOCK_ALL:Lcom/google/gson/ReflectionAccessFilter$FilterResult;
 
-    .line 38
+    .line 51
     filled-new-array {v0, v1, v2, v3}, [Lcom/google/gson/ReflectionAccessFilter$FilterResult;
 
     move-result-object v0
@@ -100,7 +100,7 @@
         }
     .end annotation
 
-    .line 38
+    .line 51
     invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
     return-void
@@ -109,7 +109,7 @@
 .method public static valueOf(Ljava/lang/String;)Lcom/google/gson/ReflectionAccessFilter$FilterResult;
     .locals 1
 
-    .line 38
+    .line 51
     const-class v0, Lcom/google/gson/ReflectionAccessFilter$FilterResult;
 
     invoke-static {v0, p0}, Ljava/lang/Enum;->valueOf(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
@@ -124,7 +124,7 @@
 .method public static values()[Lcom/google/gson/ReflectionAccessFilter$FilterResult;
     .locals 1
 
-    .line 38
+    .line 51
     sget-object v0, Lcom/google/gson/ReflectionAccessFilter$FilterResult;->$VALUES:[Lcom/google/gson/ReflectionAccessFilter$FilterResult;
 
     invoke-virtual {v0}, [Lcom/google/gson/ReflectionAccessFilter$FilterResult;->clone()Ljava/lang/Object;

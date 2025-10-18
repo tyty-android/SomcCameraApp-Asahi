@@ -21,7 +21,7 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/SourceDebugExtension;
-    value = "SMAP\nCollections.kt\nKotlin\n*S Kotlin\n*F\n+ 1 Collections.kt\nkotlin/collections/ArrayAsCollection\n+ 2 _Collections.kt\nkotlin/collections/CollectionsKt___CollectionsKt\n*L\n1#1,481:1\n1726#2,3:482\n*S KotlinDebug\n*F\n+ 1 Collections.kt\nkotlin/collections/ArrayAsCollection\n*L\n61#1:482,3\n*E\n"
+    value = "SMAP\nCollections.kt\nKotlin\n*S Kotlin\n*F\n+ 1 Collections.kt\nkotlin/collections/ArrayAsCollection\n+ 2 _Collections.kt\nkotlin/collections/CollectionsKt___CollectionsKt\n*L\n1#1,526:1\n1734#2,3:527\n*S KotlinDebug\n*F\n+ 1 Collections.kt\nkotlin/collections/ArrayAsCollection\n*L\n62#1:527,3\n*E\n"
 .end annotation
 
 .annotation runtime Lkotlin/Metadata;
@@ -92,7 +92,7 @@
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 57
+    .line 58
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     iput-object p1, p0, Lkotlin/collections/ArrayAsCollection;->values:[Ljava/lang/Object;
@@ -155,7 +155,7 @@
 .method public contains(Ljava/lang/Object;)Z
     .locals 0
 
-    .line 60
+    .line 61
     iget-object p0, p0, Lkotlin/collections/ArrayAsCollection;->values:[Ljava/lang/Object;
 
     invoke-static {p0, p1}, Lkotlin/collections/ArraysKt;->contains([Ljava/lang/Object;Ljava/lang/Object;)Z
@@ -181,10 +181,10 @@
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 61
+    .line 62
     check-cast p1, Ljava/lang/Iterable;
 
-    .line 482
+    .line 527
     move-object v0, p1
 
     check-cast v0, Ljava/util/Collection;
@@ -199,7 +199,7 @@
 
     goto :goto_0
 
-    .line 483
+    .line 528
     :cond_0
     invoke-interface {p1}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
 
@@ -216,7 +216,7 @@
 
     move-result-object v0
 
-    .line 61
+    .line 62
     invoke-virtual {p0, v0}, Lkotlin/collections/ArrayAsCollection;->contains(Ljava/lang/Object;)Z
 
     move-result v0
@@ -233,7 +233,7 @@
 .method public getSize()I
     .locals 0
 
-    .line 58
+    .line 59
     iget-object p0, p0, Lkotlin/collections/ArrayAsCollection;->values:[Ljava/lang/Object;
 
     array-length p0, p0
@@ -249,7 +249,7 @@
         }
     .end annotation
 
-    .line 57
+    .line 58
     iget-object p0, p0, Lkotlin/collections/ArrayAsCollection;->values:[Ljava/lang/Object;
 
     return-object p0
@@ -258,7 +258,7 @@
 .method public isEmpty()Z
     .locals 0
 
-    .line 59
+    .line 60
     iget-object p0, p0, Lkotlin/collections/ArrayAsCollection;->values:[Ljava/lang/Object;
 
     array-length p0, p0
@@ -279,7 +279,7 @@
 .method public final isVarargs()Z
     .locals 0
 
-    .line 57
+    .line 58
     iget-boolean p0, p0, Lkotlin/collections/ArrayAsCollection;->isVarargs:Z
 
     return p0
@@ -295,7 +295,7 @@
         }
     .end annotation
 
-    .line 62
+    .line 63
     iget-object p0, p0, Lkotlin/collections/ArrayAsCollection;->values:[Ljava/lang/Object;
 
     invoke-static {p0}, Lkotlin/jvm/internal/ArrayIteratorKt;->iterator([Ljava/lang/Object;)Ljava/util/Iterator;
@@ -362,7 +362,7 @@
 .method public final bridge size()I
     .locals 0
 
-    .line 57
+    .line 58
     invoke-virtual {p0}, Lkotlin/collections/ArrayAsCollection;->getSize()I
 
     move-result p0
@@ -373,7 +373,7 @@
 .method public final toArray()[Ljava/lang/Object;
     .locals 1
 
-    .line 64
+    .line 65
     iget-object v0, p0, Lkotlin/collections/ArrayAsCollection;->values:[Ljava/lang/Object;
 
     iget-boolean p0, p0, Lkotlin/collections/ArrayAsCollection;->isVarargs:Z

@@ -66,7 +66,7 @@
 .method public final invoke()Landroidx/compose/foundation/ScrollState;
     .locals 1
 
-    .line 75
+    .line 76
     new-instance v0, Landroidx/compose/foundation/ScrollState;
 
     iget p0, p0, Landroidx/compose/foundation/ScrollKt$rememberScrollState$1$1;->$initial:I
@@ -79,7 +79,7 @@
 .method public bridge synthetic invoke()Ljava/lang/Object;
     .locals 0
 
-    .line 74
+    .line 75
     invoke-virtual {p0}, Landroidx/compose/foundation/ScrollKt$rememberScrollState$1$1;->invoke()Landroidx/compose/foundation/ScrollState;
 
     move-result-object p0

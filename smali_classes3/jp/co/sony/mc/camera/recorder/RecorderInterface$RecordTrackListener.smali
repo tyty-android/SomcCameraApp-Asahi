@@ -18,6 +18,9 @@
 .method public abstract onCompleted()V
 .end method
 
+.method public abstract onFrameEnd()V
+.end method
+
 .method public abstract onProgress(J)V
 .end method
 

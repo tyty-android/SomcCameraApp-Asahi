@@ -86,7 +86,7 @@
 .method public bridge synthetic invoke(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 2
 
-    .line 844
+    .line 832
     check-cast p1, Landroidx/compose/ui/geometry/Offset;
 
     invoke-virtual {p1}, Landroidx/compose/ui/geometry/Offset;->unbox-impl()J
@@ -103,7 +103,7 @@
 .method public final invoke-k-4lQ0M(J)V
     .locals 0
 
-    .line 844
+    .line 832
     iget-object p0, p0, Landroidx/compose/material/DrawerKt$Scrim$dismissDrawer$1$1$1;->$onClose:Lkotlin/jvm/functions/Function0;
 
     invoke-interface {p0}, Lkotlin/jvm/functions/Function0;->invoke()Ljava/lang/Object;

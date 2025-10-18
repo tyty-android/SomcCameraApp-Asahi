@@ -42,7 +42,7 @@
 .method private constructor <init>()V
     .locals 0
 
-    .line 1196
+    .line 1547
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -67,7 +67,7 @@
 .method public final getDefault()Landroidx/compose/ui/text/TextStyle;
     .locals 0
 
-    .line 1201
+    .line 1552
     invoke-static {}, Landroidx/compose/ui/text/TextStyle;->access$getDefault$cp()Landroidx/compose/ui/text/TextStyle;
 
     move-result-object p0

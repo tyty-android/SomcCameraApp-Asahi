@@ -1,6 +1,6 @@
 .class final Landroidx/lifecycle/LifecycleCoroutineScope$launchWhenStarted$1;
 .super Lkotlin/coroutines/jvm/internal/SuspendLambda;
-.source "Lifecycle.kt"
+.source "Lifecycle.jvm.kt"
 
 # interfaces
 .implements Lkotlin/jvm/functions/Function2;
@@ -50,10 +50,10 @@
 
 .annotation runtime Lkotlin/coroutines/jvm/internal/DebugMetadata;
     c = "androidx.lifecycle.LifecycleCoroutineScope$launchWhenStarted$1"
-    f = "Lifecycle.kt"
+    f = "Lifecycle.jvm.kt"
     i = {}
     l = {
-        0x164
+        0x4a
     }
     m = "invokeSuspend"
     n = {}
@@ -196,7 +196,7 @@
 
     move-result-object v0
 
-    .line 355
+    .line 73
     iget v1, p0, Landroidx/lifecycle/LifecycleCoroutineScope$launchWhenStarted$1;->label:I
 
     const/4 v2, 0x1
@@ -221,7 +221,7 @@
     :cond_1
     invoke-static {p1}, Lkotlin/ResultKt;->throwOnFailure(Ljava/lang/Object;)V
 
-    .line 356
+    .line 74
     iget-object p1, p0, Landroidx/lifecycle/LifecycleCoroutineScope$launchWhenStarted$1;->this$0:Landroidx/lifecycle/LifecycleCoroutineScope;
 
     invoke-virtual {p1}, Landroidx/lifecycle/LifecycleCoroutineScope;->getLifecycle$lifecycle_common()Landroidx/lifecycle/Lifecycle;
@@ -244,7 +244,7 @@
 
     return-object v0
 
-    .line 357
+    .line 75
     :cond_2
     :goto_0
     sget-object p0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;

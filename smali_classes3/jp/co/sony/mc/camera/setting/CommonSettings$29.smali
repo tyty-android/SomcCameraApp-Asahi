@@ -21,7 +21,7 @@
 .method constructor <init>()V
     .locals 0
 
-    .line 541
+    .line 544
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -42,10 +42,10 @@
         }
     .end annotation
 
-    .line 545
+    .line 548
     check-cast p1, Ljp/co/sony/mc/camera/setting/CommonSettings;
 
-    .line 546
+    .line 549
     invoke-static {p1}, Ljp/co/sony/mc/camera/setting/CommonSettings;->-$$Nest$mgetRemoteButtonCustom(Ljp/co/sony/mc/camera/setting/CommonSettings;)Ljp/co/sony/mc/camera/configuration/parameters/RemoteButtonCustom;
 
     move-result-object p0

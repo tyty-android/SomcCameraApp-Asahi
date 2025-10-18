@@ -53,7 +53,7 @@
     f = "Slider.kt"
     i = {}
     l = {
-        0x49f
+        0x4a3
     }
     m = "invokeSuspend"
     n = {}
@@ -203,7 +203,7 @@
 
     move-result-object v0
 
-    .line 1181
+    .line 1185
     iget v1, p0, Landroidx/compose/material/SliderDraggableState$drag$2;->label:I
 
     const/4 v2, 0x1
@@ -228,12 +228,12 @@
     :cond_1
     invoke-static {p1}, Lkotlin/ResultKt;->throwOnFailure(Ljava/lang/Object;)V
 
-    .line 1182
+    .line 1186
     iget-object p1, p0, Landroidx/compose/material/SliderDraggableState$drag$2;->this$0:Landroidx/compose/material/SliderDraggableState;
 
     invoke-static {p1, v2}, Landroidx/compose/material/SliderDraggableState;->access$setDragging(Landroidx/compose/material/SliderDraggableState;Z)V
 
-    .line 1183
+    .line 1187
     iget-object p1, p0, Landroidx/compose/material/SliderDraggableState$drag$2;->this$0:Landroidx/compose/material/SliderDraggableState;
 
     invoke-static {p1}, Landroidx/compose/material/SliderDraggableState;->access$getScrollMutex$p(Landroidx/compose/material/SliderDraggableState;)Landroidx/compose/foundation/MutatorMutex;
@@ -264,7 +264,7 @@
 
     return-object v0
 
-    .line 1184
+    .line 1188
     :cond_2
     :goto_0
     iget-object p0, p0, Landroidx/compose/material/SliderDraggableState$drag$2;->this$0:Landroidx/compose/material/SliderDraggableState;
@@ -273,7 +273,7 @@
 
     invoke-static {p0, p1}, Landroidx/compose/material/SliderDraggableState;->access$setDragging(Landroidx/compose/material/SliderDraggableState;Z)V
 
-    .line 1185
+    .line 1189
     sget-object p0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
 
     return-object p0

@@ -25,7 +25,7 @@
 .method constructor <init>(Lcom/google/android/material/bottomnavigation/BottomNavigationView;)V
     .locals 0
 
-    .line 140
+    .line 145
     iput-object p1, p0, Lcom/google/android/material/bottomnavigation/BottomNavigationView$1;->this$0:Lcom/google/android/material/bottomnavigation/BottomNavigationView;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -38,7 +38,7 @@
 .method public onApplyWindowInsets(Landroid/view/View;Landroidx/core/view/WindowInsetsCompat;Lcom/google/android/material/internal/ViewUtils$RelativePadding;)Landroidx/core/view/WindowInsetsCompat;
     .locals 4
 
-    .line 149
+    .line 154
     iget p0, p3, Lcom/google/android/material/internal/ViewUtils$RelativePadding;->bottom:I
 
     invoke-virtual {p2}, Landroidx/core/view/WindowInsetsCompat;->getSystemWindowInsetBottom()I
@@ -49,7 +49,7 @@
 
     iput p0, p3, Lcom/google/android/material/internal/ViewUtils$RelativePadding;->bottom:I
 
-    .line 151
+    .line 156
     invoke-static {p1}, Landroidx/core/view/ViewCompat;->getLayoutDirection(Landroid/view/View;)I
 
     move-result p0
@@ -63,18 +63,18 @@
     :cond_0
     const/4 v0, 0x0
 
-    .line 152
+    .line 157
     :goto_0
     invoke-virtual {p2}, Landroidx/core/view/WindowInsetsCompat;->getSystemWindowInsetLeft()I
 
     move-result p0
 
-    .line 153
+    .line 158
     invoke-virtual {p2}, Landroidx/core/view/WindowInsetsCompat;->getSystemWindowInsetRight()I
 
     move-result v1
 
-    .line 154
+    .line 159
     iget v2, p3, Lcom/google/android/material/internal/ViewUtils$RelativePadding;->start:I
 
     if-eqz v0, :cond_1
@@ -91,7 +91,7 @@
 
     iput v2, p3, Lcom/google/android/material/internal/ViewUtils$RelativePadding;->start:I
 
-    .line 155
+    .line 160
     iget v2, p3, Lcom/google/android/material/internal/ViewUtils$RelativePadding;->end:I
 
     if-eqz v0, :cond_2
@@ -106,7 +106,7 @@
 
     iput v2, p3, Lcom/google/android/material/internal/ViewUtils$RelativePadding;->end:I
 
-    .line 156
+    .line 161
     invoke-virtual {p3, p1}, Lcom/google/android/material/internal/ViewUtils$RelativePadding;->applyToView(Landroid/view/View;)V
 
     return-object p2

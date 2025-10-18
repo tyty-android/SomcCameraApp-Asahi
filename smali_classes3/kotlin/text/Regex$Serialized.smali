@@ -88,7 +88,7 @@
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 307
+    .line 308
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     iput-object p1, p0, Lkotlin/text/Regex$Serialized;->pattern:Ljava/lang/String;
@@ -101,7 +101,7 @@
 .method private final readResolve()Ljava/lang/Object;
     .locals 2
 
-    .line 312
+    .line 313
     new-instance v0, Lkotlin/text/Regex;
 
     iget-object v1, p0, Lkotlin/text/Regex$Serialized;->pattern:Ljava/lang/String;
@@ -112,7 +112,7 @@
 
     move-result-object p0
 
-    const-string v1, "compile(pattern, flags)"
+    const-string v1, "compile(...)"
 
     invoke-static {p0, v1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
 
@@ -126,7 +126,7 @@
 .method public final getFlags()I
     .locals 0
 
-    .line 307
+    .line 308
     iget p0, p0, Lkotlin/text/Regex$Serialized;->flags:I
 
     return p0
@@ -135,7 +135,7 @@
 .method public final getPattern()Ljava/lang/String;
     .locals 0
 
-    .line 307
+    .line 308
     iget-object p0, p0, Lkotlin/text/Regex$Serialized;->pattern:Ljava/lang/String;
 
     return-object p0

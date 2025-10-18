@@ -53,7 +53,7 @@
     f = "SelectionMagnifier.kt"
     i = {}
     l = {
-        0x57
+        0x56
     }
     m = "invokeSuspend"
     n = {}
@@ -200,7 +200,7 @@
 
     move-result-object v0
 
-    .line 65535
+    .line 83
     iget v1, p0, Landroidx/compose/foundation/text/selection/SelectionMagnifierKt$rememberAnimatedMagnifierPosition$1;->label:I
 
     const/4 v2, 0x1
@@ -229,7 +229,7 @@
 
     check-cast p1, Lkotlinx/coroutines/CoroutineScope;
 
-    .line 86
+    .line 85
     new-instance v1, Landroidx/compose/foundation/text/selection/SelectionMagnifierKt$rememberAnimatedMagnifierPosition$1$1;
 
     iget-object v3, p0, Landroidx/compose/foundation/text/selection/SelectionMagnifierKt$rememberAnimatedMagnifierPosition$1;->$targetValue$delegate:Landroidx/compose/runtime/State;
@@ -242,7 +242,7 @@
 
     move-result-object v1
 
-    .line 87
+    .line 86
     new-instance v3, Landroidx/compose/foundation/text/selection/SelectionMagnifierKt$rememberAnimatedMagnifierPosition$1$2;
 
     iget-object v4, p0, Landroidx/compose/foundation/text/selection/SelectionMagnifierKt$rememberAnimatedMagnifierPosition$1;->$animatable:Landroidx/compose/animation/core/Animatable;
@@ -265,7 +265,7 @@
 
     return-object v0
 
-    .line 107
+    .line 106
     :cond_2
     :goto_0
     sget-object p0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;

@@ -91,10 +91,6 @@
 .method public final invoke(Landroidx/compose/foundation/text/selection/TextFieldPreparedSelection;)V
     .locals 0
 
-    const-string p0, "$this$collapseLeftOr"
-
-    invoke-static {p1, p0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
     .line 112
     invoke-virtual {p1}, Landroidx/compose/foundation/text/selection/TextFieldPreparedSelection;->moveCursorLeft()Landroidx/compose/foundation/text/selection/BaseTextPreparedSelection;
 

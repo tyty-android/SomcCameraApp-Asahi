@@ -531,7 +531,7 @@
     .line 133
     const-string v7, "Not a valid protocol version: "
 
-    if-gt v6, v3, :cond_6
+    if-gt v6, v3, :cond_7
 
     const/4 v6, 0x0
 
@@ -572,7 +572,7 @@
     goto :goto_0
 
     :cond_1
-    if-eqz v9, :cond_2
+    if-eqz v9, :cond_3
 
     .line 145
     invoke-virtual {p1, v5}, Lorg/apache/http/util/CharArrayBuffer;->charAt(I)C
@@ -581,14 +581,16 @@
 
     const/16 v5, 0x2f
 
-    if-ne v0, v5, :cond_5
+    if-ne v0, v5, :cond_2
 
-    goto :goto_2
+    move v6, v8
 
     :cond_2
-    if-eqz v9, :cond_5
+    move v9, v6
 
-    :goto_2
+    :cond_3
+    if-eqz v9, :cond_6
+
     add-int/2addr v1, v8
 
     add-int/2addr v4, v1
@@ -602,7 +604,7 @@
 
     const/4 v1, -0x1
 
-    if-eq v0, v1, :cond_4
+    if-eq v0, v1, :cond_5
 
     .line 163
     :try_start_0
@@ -625,12 +627,12 @@
 
     move-result v5
 
-    if-ne v5, v1, :cond_3
+    if-ne v5, v1, :cond_4
 
     move v5, v3
 
     .line 177
-    :cond_3
+    :cond_4
     :try_start_1
     invoke-virtual {p1, v0, v5}, Lorg/apache/http/util/CharArrayBuffer;->substringTrimmed(II)Ljava/lang/String;
 
@@ -705,7 +707,7 @@
     throw p0
 
     .line 157
-    :cond_4
+    :cond_5
     new-instance p0, Lorg/apache/http/ParseException;
 
     new-instance p2, Ljava/lang/StringBuilder;
@@ -731,7 +733,7 @@
     throw p0
 
     .line 148
-    :cond_5
+    :cond_6
     new-instance p0, Lorg/apache/http/ParseException;
 
     new-instance p2, Ljava/lang/StringBuilder;
@@ -755,7 +757,7 @@
     throw p0
 
     .line 134
-    :cond_6
+    :cond_7
     new-instance p0, Lorg/apache/http/ParseException;
 
     new-instance p2, Ljava/lang/StringBuilder;

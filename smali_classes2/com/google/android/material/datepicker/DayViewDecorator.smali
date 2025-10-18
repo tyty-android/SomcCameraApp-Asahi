@@ -64,6 +64,14 @@
     return-object p7
 .end method
 
+.method public getTextColor(Landroid/content/Context;IIIZZ)Landroid/content/res/ColorStateList;
+    .locals 0
+
+    const/4 p0, 0x0
+
+    return-object p0
+.end method
+
 .method public initialize(Landroid/content/Context;)V
     .locals 0
 

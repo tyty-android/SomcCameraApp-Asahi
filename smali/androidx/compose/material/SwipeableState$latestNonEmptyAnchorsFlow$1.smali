@@ -83,7 +83,7 @@
 .method public bridge synthetic invoke()Ljava/lang/Object;
     .locals 0
 
-    .line 127
+    .line 132
     invoke-virtual {p0}, Landroidx/compose/material/SwipeableState$latestNonEmptyAnchorsFlow$1;->invoke()Ljava/util/Map;
 
     move-result-object p0
@@ -102,7 +102,7 @@
         }
     .end annotation
 
-    .line 127
+    .line 132
     iget-object p0, p0, Landroidx/compose/material/SwipeableState$latestNonEmptyAnchorsFlow$1;->this$0:Landroidx/compose/material/SwipeableState;
 
     invoke-virtual {p0}, Landroidx/compose/material/SwipeableState;->getAnchors$material_release()Ljava/util/Map;

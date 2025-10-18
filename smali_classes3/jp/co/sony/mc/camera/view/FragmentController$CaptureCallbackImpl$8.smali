@@ -34,7 +34,7 @@
         }
     .end annotation
 
-    .line 7315
+    .line 7561
     iput-object p1, p0, Ljp/co/sony/mc/camera/view/FragmentController$CaptureCallbackImpl$8;->this$0:Ljp/co/sony/mc/camera/view/FragmentController$CaptureCallbackImpl;
 
     iput-object p2, p0, Ljp/co/sony/mc/camera/view/FragmentController$CaptureCallbackImpl$8;->val$result:Ljp/co/sony/mc/camera/mediasaving/StoreDataResult;
@@ -51,7 +51,7 @@
 .method public run()V
     .locals 2
 
-    .line 7318
+    .line 7564
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/FragmentController$CaptureCallbackImpl$8;->val$result:Ljp/co/sony/mc/camera/mediasaving/StoreDataResult;
 
     invoke-virtual {v0}, Ljp/co/sony/mc/camera/mediasaving/StoreDataResult;->isFinalInSavingGroup()Z
@@ -60,7 +60,7 @@
 
     if-eqz v0, :cond_0
 
-    .line 7319
+    .line 7565
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/FragmentController$CaptureCallbackImpl$8;->this$0:Ljp/co/sony/mc/camera/view/FragmentController$CaptureCallbackImpl;
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/view/FragmentController$CaptureCallbackImpl;->-$$Nest$fgetmController(Ljp/co/sony/mc/camera/view/FragmentController$CaptureCallbackImpl;)Ljp/co/sony/mc/camera/view/FragmentController;
@@ -71,7 +71,7 @@
 
     invoke-static {v0, v1}, Ljp/co/sony/mc/camera/view/FragmentController;->-$$Nest$mhandleStoreFinished(Ljp/co/sony/mc/camera/view/FragmentController;I)V
 
-    .line 7321
+    .line 7567
     :cond_0
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/FragmentController$CaptureCallbackImpl$8;->this$0:Ljp/co/sony/mc/camera/view/FragmentController$CaptureCallbackImpl;
 

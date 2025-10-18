@@ -88,7 +88,7 @@
 
     move-result-object v1
 
-    .line 179
+    .line 176
     iget v2, v0, Landroidx/activity/FullyDrawnReporterKt$reportWhenComplete$1;->label:I
 
     const/4 v3, 0x1
@@ -120,22 +120,22 @@
     :cond_2
     invoke-static {p2}, Lkotlin/ResultKt;->throwOnFailure(Ljava/lang/Object;)V
 
-    .line 183
+    .line 180
     invoke-virtual {p0}, Landroidx/activity/FullyDrawnReporter;->addReporter()V
 
-    .line 184
+    .line 181
     invoke-virtual {p0}, Landroidx/activity/FullyDrawnReporter;->isFullyDrawnReported()Z
 
     move-result p2
 
     if-eqz p2, :cond_3
 
-    .line 185
+    .line 182
     sget-object p0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
 
     return-object p0
 
-    .line 188
+    .line 185
     :cond_3
     :try_start_1
     iput-object p0, v0, Landroidx/activity/FullyDrawnReporterKt$reportWhenComplete$1;->L$0:Ljava/lang/Object;
@@ -156,12 +156,12 @@
     :goto_1
     invoke-static {v3}, Lkotlin/jvm/internal/InlineMarker;->finallyStart(I)V
 
-    .line 190
+    .line 187
     invoke-virtual {p0}, Landroidx/activity/FullyDrawnReporter;->removeReporter()V
 
     invoke-static {v3}, Lkotlin/jvm/internal/InlineMarker;->finallyEnd(I)V
 
-    .line 192
+    .line 189
     sget-object p0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
 
     return-object p0
@@ -169,7 +169,7 @@
     :catchall_0
     move-exception p1
 
-    .line 190
+    .line 187
     invoke-static {v3}, Lkotlin/jvm/internal/InlineMarker;->finallyStart(I)V
 
     invoke-virtual {p0}, Landroidx/activity/FullyDrawnReporter;->removeReporter()V
@@ -201,17 +201,17 @@
         }
     .end annotation
 
-    .line 183
+    .line 180
     invoke-virtual {p0}, Landroidx/activity/FullyDrawnReporter;->addReporter()V
 
-    .line 184
+    .line 181
     invoke-virtual {p0}, Landroidx/activity/FullyDrawnReporter;->isFullyDrawnReported()Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
-    .line 185
+    .line 182
     sget-object p0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
 
     return-object p0
@@ -219,7 +219,7 @@
     :cond_0
     const/4 v0, 0x1
 
-    .line 188
+    .line 185
     :try_start_0
     invoke-interface {p1, p2}, Lkotlin/jvm/functions/Function1;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
     :try_end_0
@@ -227,12 +227,12 @@
 
     invoke-static {v0}, Lkotlin/jvm/internal/InlineMarker;->finallyStart(I)V
 
-    .line 190
+    .line 187
     invoke-virtual {p0}, Landroidx/activity/FullyDrawnReporter;->removeReporter()V
 
     invoke-static {v0}, Lkotlin/jvm/internal/InlineMarker;->finallyEnd(I)V
 
-    .line 192
+    .line 189
     sget-object p0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
 
     return-object p0
@@ -240,7 +240,7 @@
     :catchall_0
     move-exception p1
 
-    .line 190
+    .line 187
     invoke-static {v0}, Lkotlin/jvm/internal/InlineMarker;->finallyStart(I)V
 
     invoke-virtual {p0}, Landroidx/activity/FullyDrawnReporter;->removeReporter()V

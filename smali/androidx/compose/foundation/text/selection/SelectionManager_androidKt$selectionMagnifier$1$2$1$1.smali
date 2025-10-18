@@ -85,7 +85,7 @@
 .method public bridge synthetic invoke(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
 
-    .line 55
+    .line 54
     check-cast p1, Landroidx/compose/ui/unit/Density;
 
     invoke-virtual {p0, p1}, Landroidx/compose/foundation/text/selection/SelectionManager_androidKt$selectionMagnifier$1$2$1$1;->invoke-tuRUvjQ(Landroidx/compose/ui/unit/Density;)J
@@ -100,13 +100,9 @@
 .end method
 
 .method public final invoke-tuRUvjQ(Landroidx/compose/ui/unit/Density;)J
-    .locals 1
+    .locals 0
 
-    const-string v0, "$this$magnifier"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 56
+    .line 55
     iget-object p0, p0, Landroidx/compose/foundation/text/selection/SelectionManager_androidKt$selectionMagnifier$1$2$1$1;->$center:Lkotlin/jvm/functions/Function0;
 
     invoke-interface {p0}, Lkotlin/jvm/functions/Function0;->invoke()Ljava/lang/Object;

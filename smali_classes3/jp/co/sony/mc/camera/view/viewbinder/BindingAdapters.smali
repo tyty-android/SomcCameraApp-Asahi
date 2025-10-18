@@ -5,85 +5,90 @@
 
 # annotations
 .annotation system Ldalvik/annotation/SourceDebugExtension;
-    value = "SMAP\nBindingAdapters.kt\nKotlin\n*S Kotlin\n*F\n+ 1 BindingAdapters.kt\njp/co/sony/mc/camera/view/viewbinder/BindingAdapters\n+ 2 Animator.kt\nandroidx/core/animation/AnimatorKt\n*L\n1#1,232:1\n30#2:233\n91#2,14:234\n41#2:248\n91#2,14:249\n30#2:263\n91#2,14:264\n41#2:278\n91#2,14:279\n*S KotlinDebug\n*F\n+ 1 BindingAdapters.kt\njp/co/sony/mc/camera/view/viewbinder/BindingAdapters\n*L\n149#1:233\n149#1:234,14\n151#1:248\n151#1:249,14\n170#1:263\n170#1:264,14\n172#1:278\n172#1:279,14\n*E\n"
+    value = "SMAP\nBindingAdapters.kt\nKotlin\n*S Kotlin\n*F\n+ 1 BindingAdapters.kt\njp/co/sony/mc/camera/view/viewbinder/BindingAdapters\n+ 2 Animator.kt\nandroidx/core/animation/AnimatorKt\n*L\n1#1,258:1\n30#2:259\n91#2,14:260\n41#2:274\n91#2,14:275\n30#2:289\n91#2,14:290\n41#2:304\n91#2,14:305\n*S KotlinDebug\n*F\n+ 1 BindingAdapters.kt\njp/co/sony/mc/camera/view/viewbinder/BindingAdapters\n*L\n150#1:259\n150#1:260,14\n152#1:274\n152#1:275,14\n171#1:289\n171#1:290,14\n173#1:304\n173#1:305,14\n*E\n"
 .end annotation
 
 .annotation runtime Lkotlin/Metadata;
     d1 = {
-        "\u0000\u0080\u0001\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\u0008\u0002\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000b\n\u0002\u0008\u0002\n\u0002\u0010\u0007\n\u0002\u0008\u0004\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0010\u0008\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\t\n\u0002\u0018\u0002\n\u0002\u0008\u0004\n\u0002\u0018\u0002\n\u0002\u0008\u0006\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0003\n\u0002\u0018\u0002\n\u0002\u0008\u0003\n\u0002\u0018\u0002\n\u0002\u0008\u0005\u0008\u00c7\u0002\u0018\u00002\u00020\u0001B\u0007\u0008\u0002\u00a2\u0006\u0002\u0010\u0002J\u0018\u0010\u0003\u001a\u00020\u00042\u0006\u0010\u0005\u001a\u00020\u00062\u0006\u0010\u0007\u001a\u00020\u0008H\u0007J\u0018\u0010\t\u001a\u00020\u00042\u0006\u0010\u0005\u001a\u00020\u00062\u0006\u0010\n\u001a\u00020\u000bH\u0007J\u0018\u0010\u000c\u001a\u00020\u00042\u0006\u0010\u0005\u001a\u00020\u00062\u0006\u0010\n\u001a\u00020\u000bH\u0007J\u0018\u0010\r\u001a\u00020\u00042\u0006\u0010\u0005\u001a\u00020\u00062\u0006\u0010\u000e\u001a\u00020\u0008H\u0007J\u0018\u0010\u000f\u001a\u00020\u00042\u0006\u0010\u0005\u001a\u00020\u00102\u0006\u0010\u0011\u001a\u00020\u0012H\u0007J\u001a\u0010\u0013\u001a\u00020\u00042\u0006\u0010\u0005\u001a\u00020\u00062\u0008\u0008\u0001\u0010\u0014\u001a\u00020\u0015H\u0007J\u0018\u0010\u0016\u001a\u00020\u00042\u0006\u0010\u0005\u001a\u00020\u00172\u0006\u0010\u0018\u001a\u00020\u0015H\u0007J\u0018\u0010\u0019\u001a\u00020\u00042\u0006\u0010\u0005\u001a\u00020\u00062\u0006\u0010\u001a\u001a\u00020\u0008H\u0007J\u0018\u0010\u001b\u001a\u00020\u00042\u0006\u0010\u0005\u001a\u00020\u00062\u0006\u0010\u001a\u001a\u00020\u0008H\u0007J\u0018\u0010\u001c\u001a\u00020\u00042\u0006\u0010\u0005\u001a\u00020\u00062\u0006\u0010\u001d\u001a\u00020\u0008H\u0007J\u001a\u0010\u001e\u001a\u00020\u00042\u0006\u0010\u0005\u001a\u00020\u00102\u0008\u0008\u0001\u0010\u001f\u001a\u00020\u0015H\u0007J\u001a\u0010 \u001a\u00020\u00042\u0006\u0010\u0005\u001a\u00020!2\u0008\u0008\u0001\u0010\"\u001a\u00020\u0015H\u0007J\u0018\u0010#\u001a\u00020\u00042\u0006\u0010\u0005\u001a\u00020\u00062\u0006\u0010$\u001a\u00020\u0008H\u0007J\u0018\u0010%\u001a\u00020\u00042\u0006\u0010\u0005\u001a\u00020&2\u0006\u0010\u0018\u001a\u00020\u0015H\u0007J\u0018\u0010\'\u001a\u00020\u00042\u0006\u0010(\u001a\u00020\u00062\u0006\u0010)\u001a\u00020\u000bH\u0007J\u0018\u0010*\u001a\u00020\u00042\u0006\u0010(\u001a\u00020\u00062\u0006\u0010+\u001a\u00020\u000bH\u0007J\u0018\u0010,\u001a\u00020\u00042\u0006\u0010\u0005\u001a\u00020-2\u0006\u0010.\u001a\u00020/H\u0007J\u0018\u00100\u001a\u00020\u00042\u0006\u0010\u0005\u001a\u00020-2\u0006\u0010.\u001a\u000201H\u0007J\u0018\u00102\u001a\u00020\u00042\u0006\u0010\u0005\u001a\u00020\u00062\u0006\u00103\u001a\u000204H\u0007J\u0018\u00105\u001a\u00020\u00042\u0006\u0010\u0005\u001a\u00020\u00062\u0006\u00106\u001a\u00020\u0008H\u0007J\u001a\u00107\u001a\u00020\u00042\u0006\u0010\u0005\u001a\u0002082\u0008\u0008\u0001\u00109\u001a\u00020\u0015H\u0007J\u0018\u0010:\u001a\u00020\u00042\u0006\u0010\u0005\u001a\u0002082\u0006\u0010;\u001a\u00020<H\u0007J\u0018\u0010=\u001a\u00020\u00042\u0006\u0010\u0005\u001a\u00020\u00062\u0006\u0010>\u001a\u00020\u0008H\u0007J\u0014\u0010?\u001a\u00020\u0004*\u0002082\u0006\u0010@\u001a\u00020\u0008H\u0007\u00a8\u0006A"
+        "\u0000z\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\u0008\u0003\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0007\n\u0002\u0008\u0005\n\u0002\u0010\u000b\n\u0002\u0008\n\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0008\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0003\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\n\n\u0002\u0018\u0002\n\u0002\u0008\u0004\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0007\u0008\u00c7\u0002\u0018\u00002\u00020\u0001B\t\u0008\u0003\u00a2\u0006\u0004\u0008\u0002\u0010\u0003J\u0018\u0010\u0004\u001a\u00020\u00052\u0006\u0010\u0006\u001a\u00020\u00072\u0006\u0010\u0008\u001a\u00020\tH\u0007J\u0018\u0010\n\u001a\u00020\u00052\u0006\u0010\u0006\u001a\u00020\u00072\u0006\u0010\u000b\u001a\u00020\tH\u0007J\u0018\u0010\u000c\u001a\u00020\u00052\u0006\u0010\r\u001a\u00020\u00072\u0006\u0010\u000e\u001a\u00020\u000fH\u0007J\u0018\u0010\u0010\u001a\u00020\u00052\u0006\u0010\r\u001a\u00020\u00072\u0006\u0010\u0011\u001a\u00020\u000fH\u0007J\u0018\u0010\u0012\u001a\u00020\u00052\u0006\u0010\r\u001a\u00020\u00072\u0006\u0010\u0013\u001a\u00020\u000fH\u0007J\u0018\u0010\u0014\u001a\u00020\u00052\u0006\u0010\r\u001a\u00020\u00072\u0006\u0010\u0015\u001a\u00020\u000fH\u0007J\u0018\u0010\u0016\u001a\u00020\u00052\u0006\u0010\r\u001a\u00020\u00072\u0006\u0010\u0017\u001a\u00020\u000fH\u0007J\u0018\u0010\u0018\u001a\u00020\u00052\u0006\u0010\r\u001a\u00020\u00072\u0006\u0010\u0019\u001a\u00020\u001aH\u0007J\u0018\u0010\u001b\u001a\u00020\u00052\u0006\u0010\r\u001a\u00020\u001c2\u0006\u0010\u001d\u001a\u00020\u001eH\u0007J\u0018\u0010\u001f\u001a\u00020\u00052\u0006\u0010\r\u001a\u00020\u001c2\u0006\u0010\u001d\u001a\u00020 H\u0007J\u001a\u0010!\u001a\u00020\u00052\u0006\u0010\r\u001a\u00020\"2\u0008\u0008\u0001\u0010#\u001a\u00020$H\u0007J\u001a\u0010%\u001a\u00020\u00052\u0006\u0010\r\u001a\u00020&2\u0008\u0008\u0001\u0010\'\u001a\u00020$H\u0007J\u0018\u0010(\u001a\u00020\u00052\u0006\u0010\r\u001a\u00020\"2\u0006\u0010)\u001a\u00020*H\u0007J\u0018\u0010+\u001a\u00020\u00052\u0006\u0010\r\u001a\u00020,2\u0006\u0010-\u001a\u00020$H\u0007J\u0018\u0010.\u001a\u00020\u00052\u0006\u0010\r\u001a\u00020\u00072\u0006\u0010/\u001a\u00020\tH\u0007J\u0018\u00100\u001a\u00020\u00052\u0006\u0010\r\u001a\u00020\u00072\u0006\u0010/\u001a\u00020\tH\u0007J\u0018\u00101\u001a\u00020\u00052\u0006\u0010\r\u001a\u00020\u00072\u0006\u00102\u001a\u00020\u000fH\u0007J\u0018\u00103\u001a\u00020\u00052\u0006\u0010\r\u001a\u00020\u00072\u0006\u00104\u001a\u00020\u000fH\u0007J\u0018\u00105\u001a\u00020\u00052\u0006\u0010\r\u001a\u00020\u00072\u0006\u00104\u001a\u00020\u000fH\u0007J\u001a\u00106\u001a\u00020\u00052\u0006\u0010\r\u001a\u0002072\u0008\u0008\u0001\u00108\u001a\u00020$H\u0007J\u001a\u00109\u001a\u00020\u00052\u0006\u0010\r\u001a\u00020\u00072\u0008\u0008\u0001\u0010:\u001a\u00020$H\u0007J\u0018\u0010;\u001a\u00020\u00052\u0006\u0010\r\u001a\u00020<2\u0006\u0010-\u001a\u00020$H\u0007J\u0018\u0010=\u001a\u00020\u00052\u0006\u0010\r\u001a\u00020&2\u0006\u0010>\u001a\u00020?H\u0007J\u0014\u0010@\u001a\u00020\u0005*\u00020&2\u0006\u0010A\u001a\u00020\u000fH\u0007J\u0018\u0010B\u001a\u00020\u00052\u0006\u0010\r\u001a\u00020\u00072\u0006\u0010C\u001a\u00020\u000fH\u0007J\u0018\u0010D\u001a\u00020\u00052\u0006\u0010\r\u001a\u00020\u00072\u0006\u0010E\u001a\u00020\u000fH\u0007\u00a8\u0006F"
     }
     d2 = {
         "Ljp/co/sony/mc/camera/view/viewbinder/BindingAdapters;",
         "",
+        "<init>",
         "()V",
-        "setActivated",
-        "",
-        "v",
-        "Landroid/view/View;",
-        "activated",
-        "",
-        "setAlpha",
-        "alpha",
-        "",
-        "setAnimatedAlpha",
-        "setAnimatedVisibility",
-        "isVisible",
-        "setAppearance",
-        "Ljp/co/sony/mc/camera/view/widget/FnButton;",
-        "appearance",
-        "Ljp/co/sony/mc/camera/setting/SettingAppearance;",
-        "setContentDescription",
-        "stringId",
-        "",
-        "setCount",
-        "Ljp/co/sony/mc/camera/view/widget/DialPicker;",
-        "count",
-        "setEnabled",
-        "enable",
-        "setEnabledWithAlpha",
-        "setGone",
-        "gone",
-        "setIcon",
-        "icon",
-        "setImageResource",
-        "Landroid/widget/ImageView;",
-        "srcId",
-        "setInvisible",
-        "invisible",
-        "setItemCount",
-        "Ljp/co/sony/mc/camera/view/memoryrecall/widget/MemoryRecallPicker;",
         "setMarginBottom",
+        "",
         "view",
+        "Landroid/view/View;",
         "marginEnd",
+        "",
         "setMarginTop",
         "marginTop",
+        "setVisible",
+        "v",
+        "visible",
+        "",
+        "setGone",
+        "gone",
+        "setInvisible",
+        "invisible",
+        "setActivated",
+        "activated",
+        "setSelected",
+        "selected",
+        "setOrientation",
+        "orientation",
+        "Ljp/co/sony/mc/camera/view/orientation/LayoutOrientation;",
         "setOnPressListener",
         "Ljp/co/sony/mc/camera/view/widget/PushImageButton;",
         "listener",
         "Ljp/co/sony/mc/camera/view/widget/PushImageButton$OnPressListener;",
         "setOnReleaseListener",
         "Ljp/co/sony/mc/camera/view/widget/PushImageButton$OnReleaseListener;",
-        "setOrientation",
-        "orientation",
-        "Ljp/co/sony/mc/camera/view/orientation/LayoutOrientation;",
-        "setSelected",
-        "selected",
+        "setIcon",
+        "Ljp/co/sony/mc/camera/view/widget/FnButton;",
+        "icon",
+        "",
         "setText",
         "Landroid/widget/TextView;",
         "text",
+        "setAppearance",
+        "appearance",
+        "Ljp/co/sony/mc/camera/setting/SettingAppearance;",
+        "setCount",
+        "Ljp/co/sony/mc/camera/view/widget/DialPicker;",
+        "count",
+        "setAlpha",
+        "alpha",
+        "setAnimatedAlpha",
+        "setAnimatedVisibility",
+        "isVisible",
+        "setEnabled",
+        "enable",
+        "setEnabledWithAlpha",
+        "setImageResource",
+        "Landroid/widget/ImageView;",
+        "srcId",
+        "setContentDescription",
+        "stringId",
+        "setItemCount",
+        "Ljp/co/sony/mc/camera/view/memoryrecall/widget/MemoryRecallPicker;",
         "setUiText",
         "uiText",
         "Ljp/co/sony/mc/camera/view/util/UiText;",
-        "setVisible",
-        "visible",
         "setTextBold",
         "isBold",
+        "setAccessibilityClickable",
+        "clickable",
+        "setTouchable",
+        "touchable",
         "SomcCamera_release"
     }
     k = 0x1
     mv = {
-        0x1,
-        0x9,
+        0x2,
+        0x0,
         0x0
     }
     xi = 0x30
@@ -97,6 +102,16 @@
 
 
 # direct methods
+.method public static synthetic $r8$lambda$_VYJbejHa-N1qiX_0MI-Z1_86E4(ZLandroid/view/View;Landroid/view/MotionEvent;)Z
+    .locals 0
+
+    invoke-static {p0, p1, p2}, Ljp/co/sony/mc/camera/view/viewbinder/BindingAdapters;->setTouchable$lambda$8(ZLandroid/view/View;Landroid/view/MotionEvent;)Z
+
+    move-result p0
+
+    return p0
+.end method
+
 .method static constructor <clinit>()V
     .locals 1
 
@@ -112,8 +127,35 @@
 .method private constructor <init>()V
     .locals 0
 
-    .line 38
+    .line 39
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+.method public static final setAccessibilityClickable(Landroid/view/View;Z)V
+    .locals 1
+    .annotation runtime Landroidx/databinding/BindingAdapter;
+        value = {
+            "binding:accessibilityClickable"
+        }
+    .end annotation
+
+    .annotation runtime Lkotlin/jvm/JvmStatic;
+    .end annotation
+
+    const-string/jumbo v0, "v"
+
+    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 236
+    new-instance v0, Ljp/co/sony/mc/camera/view/viewbinder/BindingAdapters$setAccessibilityClickable$1;
+
+    invoke-direct {v0, p1}, Ljp/co/sony/mc/camera/view/viewbinder/BindingAdapters$setAccessibilityClickable$1;-><init>(Z)V
+
+    check-cast v0, Landroid/view/View$AccessibilityDelegate;
+
+    invoke-virtual {p0, v0}, Landroid/view/View;->setAccessibilityDelegate(Landroid/view/View$AccessibilityDelegate;)V
 
     return-void
 .end method
@@ -133,7 +175,7 @@
 
     invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 79
+    .line 80
     invoke-virtual {p0, p1}, Landroid/view/View;->setActivated(Z)V
 
     return-void
@@ -154,7 +196,7 @@
 
     invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 137
+    .line 138
     invoke-virtual {p0, p1}, Landroid/view/View;->setAlpha(F)V
 
     return-void
@@ -175,9 +217,9 @@
 
     invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    const v0, 0x7f09005a
+    const v0, 0x7f090056
 
-    .line 143
+    .line 144
     invoke-virtual {p0, v0}, Landroid/view/View;->getTag(I)Ljava/lang/Object;
 
     move-result-object v1
@@ -196,16 +238,16 @@
     :goto_0
     if-eqz v1, :cond_1
 
-    .line 144
+    .line 145
     invoke-virtual {v1}, Landroid/animation/Animator;->removeAllListeners()V
 
     :cond_1
     if-eqz v1, :cond_2
 
-    .line 145
+    .line 146
     invoke-virtual {v1}, Landroid/animation/Animator;->cancel()V
 
-    .line 147
+    .line 148
     :cond_2
     sget-object v1, Landroid/view/View;->ALPHA:Landroid/util/Property;
 
@@ -227,26 +269,26 @@
 
     if-nez p1, :cond_3
 
-    .line 149
+    .line 150
     invoke-static {v1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;)V
 
     move-object p1, v1
 
     check-cast p1, Landroid/animation/Animator;
 
-    .line 240
+    .line 266
     new-instance v2, Ljp/co/sony/mc/camera/view/viewbinder/BindingAdapters$setAnimatedAlpha$lambda$4$$inlined$doOnEnd$1;
 
     invoke-direct {v2, p0}, Ljp/co/sony/mc/camera/view/viewbinder/BindingAdapters$setAnimatedAlpha$lambda$4$$inlined$doOnEnd$1;-><init>(Landroid/view/View;)V
 
-    .line 246
+    .line 272
     check-cast v2, Landroid/animation/Animator$AnimatorListener;
 
     invoke-virtual {p1, v2}, Landroid/animation/Animator;->addListener(Landroid/animation/Animator$AnimatorListener;)V
 
     goto :goto_1
 
-    .line 151
+    .line 152
     :cond_3
     invoke-static {v1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;)V
 
@@ -254,12 +296,12 @@
 
     check-cast p1, Landroid/animation/Animator;
 
-    .line 255
+    .line 281
     new-instance v2, Ljp/co/sony/mc/camera/view/viewbinder/BindingAdapters$setAnimatedAlpha$lambda$4$$inlined$doOnStart$1;
 
     invoke-direct {v2, p0}, Ljp/co/sony/mc/camera/view/viewbinder/BindingAdapters$setAnimatedAlpha$lambda$4$$inlined$doOnStart$1;-><init>(Landroid/view/View;)V
 
-    .line 261
+    .line 287
     check-cast v2, Landroid/animation/Animator$AnimatorListener;
 
     invoke-virtual {p1, v2}, Landroid/animation/Animator;->addListener(Landroid/animation/Animator$AnimatorListener;)V
@@ -267,10 +309,10 @@
     :goto_1
     const-wide/16 v2, 0x96
 
-    .line 153
+    .line 154
     invoke-virtual {v1, v2, v3}, Landroid/animation/ObjectAnimator;->setDuration(J)Landroid/animation/ObjectAnimator;
 
-    .line 154
+    .line 155
     sget-object p1, Ljp/co/sony/mc/camera/util/AnimationSpec;->INSTANCE:Ljp/co/sony/mc/camera/util/AnimationSpec;
 
     invoke-virtual {p1}, Ljp/co/sony/mc/camera/util/AnimationSpec;->getDefaultInterpolator()Landroid/view/animation/DecelerateInterpolator;
@@ -281,10 +323,10 @@
 
     invoke-virtual {v1, p1}, Landroid/animation/ObjectAnimator;->setInterpolator(Landroid/animation/TimeInterpolator;)V
 
-    .line 155
+    .line 156
     invoke-virtual {v1}, Landroid/animation/ObjectAnimator;->start()V
 
-    .line 157
+    .line 158
     invoke-virtual {p0, v0, v1}, Landroid/view/View;->setTag(ILjava/lang/Object;)V
 
     return-void
@@ -305,9 +347,9 @@
 
     invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    const v0, 0x7f090511
+    const v0, 0x7f0904f8
 
-    .line 163
+    .line 164
     invoke-virtual {p0, v0}, Landroid/view/View;->getTag(I)Ljava/lang/Object;
 
     move-result-object v1
@@ -326,13 +368,13 @@
     :goto_0
     if-eqz v1, :cond_1
 
-    .line 164
+    .line 165
     invoke-virtual {v1}, Landroid/animation/Animator;->removeAllListeners()V
 
     :cond_1
     if-eqz v1, :cond_2
 
-    .line 165
+    .line 166
     invoke-virtual {v1}, Landroid/animation/Animator;->cancel()V
 
     :cond_2
@@ -347,7 +389,7 @@
     :cond_3
     move p1, v1
 
-    .line 168
+    .line 169
     :goto_1
     sget-object v2, Landroid/view/View;->ALPHA:Landroid/util/Property;
 
@@ -367,26 +409,26 @@
 
     if-nez p1, :cond_4
 
-    .line 170
+    .line 171
     invoke-static {v2}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;)V
 
     move-object p1, v2
 
     check-cast p1, Landroid/animation/Animator;
 
-    .line 270
+    .line 296
     new-instance v1, Ljp/co/sony/mc/camera/view/viewbinder/BindingAdapters$setAnimatedVisibility$lambda$7$$inlined$doOnEnd$1;
 
     invoke-direct {v1, p0}, Ljp/co/sony/mc/camera/view/viewbinder/BindingAdapters$setAnimatedVisibility$lambda$7$$inlined$doOnEnd$1;-><init>(Landroid/view/View;)V
 
-    .line 276
+    .line 302
     check-cast v1, Landroid/animation/Animator$AnimatorListener;
 
     invoke-virtual {p1, v1}, Landroid/animation/Animator;->addListener(Landroid/animation/Animator$AnimatorListener;)V
 
     goto :goto_2
 
-    .line 172
+    .line 173
     :cond_4
     invoke-static {v2}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;)V
 
@@ -394,12 +436,12 @@
 
     check-cast p1, Landroid/animation/Animator;
 
-    .line 285
+    .line 311
     new-instance v1, Ljp/co/sony/mc/camera/view/viewbinder/BindingAdapters$setAnimatedVisibility$lambda$7$$inlined$doOnStart$1;
 
     invoke-direct {v1, p0}, Ljp/co/sony/mc/camera/view/viewbinder/BindingAdapters$setAnimatedVisibility$lambda$7$$inlined$doOnStart$1;-><init>(Landroid/view/View;)V
 
-    .line 291
+    .line 317
     check-cast v1, Landroid/animation/Animator$AnimatorListener;
 
     invoke-virtual {p1, v1}, Landroid/animation/Animator;->addListener(Landroid/animation/Animator$AnimatorListener;)V
@@ -407,10 +449,10 @@
     :goto_2
     const-wide/16 v3, 0x96
 
-    .line 174
+    .line 175
     invoke-virtual {v2, v3, v4}, Landroid/animation/ObjectAnimator;->setDuration(J)Landroid/animation/ObjectAnimator;
 
-    .line 175
+    .line 176
     sget-object p1, Ljp/co/sony/mc/camera/util/AnimationSpec;->INSTANCE:Ljp/co/sony/mc/camera/util/AnimationSpec;
 
     invoke-virtual {p1}, Ljp/co/sony/mc/camera/util/AnimationSpec;->getDefaultInterpolator()Landroid/view/animation/DecelerateInterpolator;
@@ -421,10 +463,10 @@
 
     invoke-virtual {v2, p1}, Landroid/animation/ObjectAnimator;->setInterpolator(Landroid/animation/TimeInterpolator;)V
 
-    .line 176
+    .line 177
     invoke-virtual {v2}, Landroid/animation/ObjectAnimator;->start()V
 
-    .line 178
+    .line 179
     invoke-virtual {p0, v0, v2}, Landroid/view/View;->setTag(ILjava/lang/Object;)V
 
     return-void
@@ -449,7 +491,7 @@
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 125
+    .line 126
     invoke-virtual {p0, p1}, Ljp/co/sony/mc/camera/view/widget/FnButton;->setAppearance(Ljp/co/sony/mc/camera/setting/SettingAppearance;)V
 
     return-void
@@ -476,7 +518,7 @@
 
     if-eq p1, v0, :cond_0
 
-    .line 210
+    .line 211
     invoke-virtual {p0}, Landroid/view/View;->getResources()Landroid/content/res/Resources;
 
     move-result-object v0
@@ -508,7 +550,7 @@
 
     invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 131
+    .line 132
     invoke-virtual {p0, p1}, Ljp/co/sony/mc/camera/view/widget/DialPicker;->setDispColumnCount(I)V
 
     return-void
@@ -529,7 +571,7 @@
 
     invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 184
+    .line 185
     invoke-virtual {p0, p1}, Landroid/view/View;->setEnabled(Z)V
 
     return-void
@@ -550,14 +592,14 @@
 
     invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 190
+    .line 191
     invoke-virtual {p0, p1}, Landroid/view/View;->setEnabled(Z)V
 
     if-eqz p1, :cond_0
 
     const/high16 p1, 0x3f800000    # 1.0f
 
-    .line 192
+    .line 193
     invoke-virtual {p0, p1}, Landroid/view/View;->setAlpha(F)V
 
     goto :goto_0
@@ -565,7 +607,7 @@
     :cond_0
     const p1, 0x3ecccccd    # 0.4f
 
-    .line 194
+    .line 195
     invoke-virtual {p0, p1}, Landroid/view/View;->setAlpha(F)V
 
     :goto_0
@@ -596,7 +638,7 @@
     :cond_0
     const/4 p1, 0x0
 
-    .line 67
+    .line 68
     :goto_0
     invoke-virtual {p0, p1}, Landroid/view/View;->setVisibility(I)V
 
@@ -624,7 +666,7 @@
 
     if-eq p1, v0, :cond_0
 
-    .line 110
+    .line 111
     invoke-virtual {p0, p1}, Ljp/co/sony/mc/camera/view/widget/FnButton;->setIcon(I)V
 
     :cond_0
@@ -652,7 +694,7 @@
 
     if-eq p1, v0, :cond_0
 
-    .line 202
+    .line 203
     invoke-virtual {p0, p1}, Landroid/widget/ImageView;->setImageResource(I)V
 
     :cond_0
@@ -683,7 +725,7 @@
     :cond_0
     const/4 p1, 0x0
 
-    .line 73
+    .line 74
     :goto_0
     invoke-virtual {p0, p1}, Landroid/view/View;->setVisibility(I)V
 
@@ -705,7 +747,7 @@
 
     invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 217
+    .line 218
     invoke-virtual {p0, p1}, Ljp/co/sony/mc/camera/view/memoryrecall/widget/MemoryRecallPicker;->setItemCount(I)V
 
     return-void
@@ -726,12 +768,12 @@
 
     invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 43
+    .line 44
     invoke-virtual {p0}, Landroid/view/View;->getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
 
     move-result-object v0
 
-    .line 44
+    .line 45
     const-string v1, "null cannot be cast to non-null type android.view.ViewGroup.MarginLayoutParams"
 
     invoke-static {v0, v1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;Ljava/lang/String;)V
@@ -740,14 +782,14 @@
 
     check-cast v1, Landroid/view/ViewGroup$MarginLayoutParams;
 
-    .line 45
+    .line 46
     invoke-static {p1}, Lkotlin/math/MathKt;->roundToInt(F)I
 
     move-result p1
 
     invoke-virtual {v1, p1}, Landroid/view/ViewGroup$MarginLayoutParams;->setMarginEnd(I)V
 
-    .line 43
+    .line 44
     invoke-virtual {p0, v0}, Landroid/view/View;->setLayoutParams(Landroid/view/ViewGroup$LayoutParams;)V
 
     return-void
@@ -768,12 +810,12 @@
 
     invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 52
+    .line 53
     invoke-virtual {p0}, Landroid/view/View;->getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
 
     move-result-object v0
 
-    .line 53
+    .line 54
     const-string v1, "null cannot be cast to non-null type android.view.ViewGroup.MarginLayoutParams"
 
     invoke-static {v0, v1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;Ljava/lang/String;)V
@@ -782,14 +824,14 @@
 
     check-cast v1, Landroid/view/ViewGroup$MarginLayoutParams;
 
-    .line 54
+    .line 55
     invoke-static {p1}, Lkotlin/math/MathKt;->roundToInt(F)I
 
     move-result p1
 
     iput p1, v1, Landroid/view/ViewGroup$MarginLayoutParams;->topMargin:I
 
-    .line 52
+    .line 53
     invoke-virtual {p0, v0}, Landroid/view/View;->setLayoutParams(Landroid/view/ViewGroup$LayoutParams;)V
 
     return-void
@@ -814,7 +856,7 @@
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 97
+    .line 98
     invoke-virtual {p0, p1}, Ljp/co/sony/mc/camera/view/widget/PushImageButton;->setOnPressListener(Ljp/co/sony/mc/camera/view/widget/PushImageButton$OnPressListener;)V
 
     return-void
@@ -839,7 +881,7 @@
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 103
+    .line 104
     invoke-virtual {p0, p1}, Ljp/co/sony/mc/camera/view/widget/PushImageButton;->setOnReleaseListener(Ljp/co/sony/mc/camera/view/widget/PushImageButton$OnReleaseListener;)V
 
     return-void
@@ -864,7 +906,7 @@
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 91
+    .line 92
     invoke-static {p1}, Ljp/co/sony/mc/camera/view/orientation/LayoutOrientationKt;->toRotation(Ljp/co/sony/mc/camera/view/orientation/LayoutOrientation;)F
 
     move-result p1
@@ -889,7 +931,7 @@
 
     invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 85
+    .line 86
     invoke-virtual {p0, p1}, Landroid/view/View;->setSelected(Z)V
 
     return-void
@@ -916,7 +958,7 @@
 
     if-eq p1, v0, :cond_0
 
-    .line 118
+    .line 119
     invoke-virtual {p0, p1}, Landroid/widget/TextView;->setText(I)V
 
     :cond_0
@@ -940,7 +982,7 @@
 
     if-eqz p1, :cond_0
 
-    .line 229
+    .line 230
     sget-object p1, Landroid/graphics/Typeface;->DEFAULT_BOLD:Landroid/graphics/Typeface;
 
     goto :goto_0
@@ -952,6 +994,39 @@
     invoke-virtual {p0, p1}, Landroid/widget/TextView;->setTypeface(Landroid/graphics/Typeface;)V
 
     return-void
+.end method
+
+.method public static final setTouchable(Landroid/view/View;Z)V
+    .locals 1
+    .annotation runtime Landroidx/databinding/BindingAdapter;
+        value = {
+            "binding:touchable"
+        }
+    .end annotation
+
+    .annotation runtime Lkotlin/jvm/JvmStatic;
+    .end annotation
+
+    const-string/jumbo v0, "v"
+
+    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 255
+    new-instance v0, Ljp/co/sony/mc/camera/view/viewbinder/BindingAdapters$$ExternalSyntheticLambda0;
+
+    invoke-direct {v0, p1}, Ljp/co/sony/mc/camera/view/viewbinder/BindingAdapters$$ExternalSyntheticLambda0;-><init>(Z)V
+
+    invoke-virtual {p0, v0}, Landroid/view/View;->setOnTouchListener(Landroid/view/View$OnTouchListener;)V
+
+    return-void
+.end method
+
+.method private static final setTouchable$lambda$8(ZLandroid/view/View;Landroid/view/MotionEvent;)Z
+    .locals 0
+
+    xor-int/lit8 p0, p0, 0x1
+
+    return p0
 .end method
 
 .method public static final setUiText(Landroid/widget/TextView;Ljp/co/sony/mc/camera/view/util/UiText;)V
@@ -973,7 +1048,7 @@
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 223
+    .line 224
     invoke-virtual {p0}, Landroid/widget/TextView;->getContext()Landroid/content/Context;
 
     move-result-object v0
@@ -1017,7 +1092,7 @@
     :cond_0
     const/16 p1, 0x8
 
-    .line 61
+    .line 62
     :goto_0
     invoke-virtual {p0, p1}, Landroid/view/View;->setVisibility(I)V
 

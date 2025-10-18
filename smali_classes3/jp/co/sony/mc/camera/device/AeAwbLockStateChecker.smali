@@ -4,9 +4,9 @@
 
 
 # instance fields
-.field private mAeLocked:Z
+.field private mAeLocked:Ljava/lang/Boolean;
 
-.field private mAwbLocked:Z
+.field private mAwbLocked:Ljava/lang/Boolean;
 
 .field private mCallback:Ljp/co/sony/mc/camera/device/CaptureResultNotifier$AeAwbLockStateCallback;
 
@@ -25,14 +25,6 @@
 
     .line 22
     invoke-direct {p0, p1}, Ljp/co/sony/mc/camera/device/CaptureResultCheckerBase;-><init>(Landroid/os/Handler;)V
-
-    const/4 p1, 0x0
-
-    .line 17
-    iput-boolean p1, p0, Ljp/co/sony/mc/camera/device/AeAwbLockStateChecker;->mAeLocked:Z
-
-    .line 18
-    iput-boolean p1, p0, Ljp/co/sony/mc/camera/device/AeAwbLockStateChecker;->mAwbLocked:Z
 
     .line 23
     iput-object p2, p0, Ljp/co/sony/mc/camera/device/AeAwbLockStateChecker;->mCallback:Ljp/co/sony/mc/camera/device/CaptureResultNotifier$AeAwbLockStateCallback;
@@ -108,22 +100,43 @@
 
     .line 40
     :goto_1
-    iget-boolean p2, p0, Ljp/co/sony/mc/camera/device/AeAwbLockStateChecker;->mAeLocked:Z
+    iget-object p2, p0, Ljp/co/sony/mc/camera/device/AeAwbLockStateChecker;->mAeLocked:Ljava/lang/Boolean;
+
+    if-eqz p2, :cond_4
+
+    invoke-virtual {p2}, Ljava/lang/Boolean;->booleanValue()Z
+
+    move-result p2
 
     if-ne p2, p1, :cond_4
 
-    iget-boolean p2, p0, Ljp/co/sony/mc/camera/device/AeAwbLockStateChecker;->mAwbLocked:Z
+    iget-object p2, p0, Ljp/co/sony/mc/camera/device/AeAwbLockStateChecker;->mAwbLocked:Ljava/lang/Boolean;
+
+    if-eqz p2, :cond_4
+
+    .line 41
+    invoke-virtual {p2}, Ljava/lang/Boolean;->booleanValue()Z
+
+    move-result p2
 
     if-eq p2, v0, :cond_5
 
-    .line 41
-    :cond_4
-    iput-boolean p1, p0, Ljp/co/sony/mc/camera/device/AeAwbLockStateChecker;->mAeLocked:Z
-
     .line 42
-    iput-boolean v0, p0, Ljp/co/sony/mc/camera/device/AeAwbLockStateChecker;->mAwbLocked:Z
+    :cond_4
+    invoke-static {p1}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
+
+    move-result-object p2
+
+    iput-object p2, p0, Ljp/co/sony/mc/camera/device/AeAwbLockStateChecker;->mAeLocked:Ljava/lang/Boolean;
 
     .line 43
+    invoke-static {v0}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
+
+    move-result-object p2
+
+    iput-object p2, p0, Ljp/co/sony/mc/camera/device/AeAwbLockStateChecker;->mAwbLocked:Ljava/lang/Boolean;
+
+    .line 44
     iget-object p2, p0, Ljp/co/sony/mc/camera/device/AeAwbLockStateChecker;->mHandler:Landroid/os/Handler;
 
     new-instance v1, Ljp/co/sony/mc/camera/device/AeAwbLockStateChecker$1;

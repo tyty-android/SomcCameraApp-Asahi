@@ -98,11 +98,7 @@
 .end method
 
 .method public final invoke(Landroidx/compose/ui/graphics/drawscope/ContentDrawScope;)V
-    .locals 1
-
-    const-string v0, "$this$onDrawWithContent"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+    .locals 0
 
     .line 251
     iget-object p0, p0, Landroidx/compose/ui/draw/CacheDrawScope$onDrawBehind$1;->$block:Lkotlin/jvm/functions/Function1;

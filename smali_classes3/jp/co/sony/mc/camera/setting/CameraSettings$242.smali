@@ -21,7 +21,7 @@
 .method constructor <init>()V
     .locals 0
 
-    .line 2603
+    .line 2625
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -42,8 +42,10 @@
         }
     .end annotation
 
-    .line 2607
-    sget-object p0, Ljp/co/sony/mc/camera/configuration/parameters/AutoExposureLock;->OFF:Ljp/co/sony/mc/camera/configuration/parameters/AutoExposureLock;
+    .line 2629
+    invoke-static {}, Ljp/co/sony/mc/camera/configuration/parameters/FocusFrameColor;->getDefaultValue()Ljp/co/sony/mc/camera/configuration/parameters/FocusFrameColor;
+
+    move-result-object p0
 
     return-object p0
 .end method

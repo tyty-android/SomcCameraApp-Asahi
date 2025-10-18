@@ -21,7 +21,7 @@
 .method constructor <init>()V
     .locals 0
 
-    .line 1698
+    .line 1704
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -42,8 +42,8 @@
         }
     .end annotation
 
-    .line 1702
-    invoke-static {}, Ljp/co/sony/mc/camera/configuration/parameters/EnduranceMode;->getDefaultValue()Ljp/co/sony/mc/camera/configuration/parameters/EnduranceMode;
+    .line 1708
+    invoke-static {}, Ljp/co/sony/mc/camera/configuration/parameters/RemoteButtonCustom;->getDefaultValue()Ljp/co/sony/mc/camera/configuration/parameters/RemoteButtonCustom;
 
     move-result-object p0
 

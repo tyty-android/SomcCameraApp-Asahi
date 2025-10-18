@@ -78,7 +78,7 @@
     .line 35
     invoke-super {p0}, Landroidx/constraintlayout/widget/ConstraintLayout;->onFinishInflate()V
 
-    const v0, 0x7f090419
+    const v0, 0x7f09040a
 
     .line 36
     invoke-virtual {p0, v0}, Ljp/co/sony/mc/camera/view/SelfTimerCountDownView;->findViewById(I)Landroid/view/View;
@@ -89,7 +89,7 @@
 
     iput-object v0, p0, Ljp/co/sony/mc/camera/view/SelfTimerCountDownView;->mSelfTimerCountDownCircleView:Ljp/co/sony/mc/camera/view/SelfTimerCountDownCircleView;
 
-    const v0, 0x7f09028c
+    const v0, 0x7f090287
 
     .line 38
     invoke-virtual {p0, v0}, Ljp/co/sony/mc/camera/view/SelfTimerCountDownView;->findViewById(I)Landroid/view/View;

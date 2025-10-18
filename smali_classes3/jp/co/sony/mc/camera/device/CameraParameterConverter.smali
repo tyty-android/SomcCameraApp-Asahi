@@ -6,6 +6,9 @@
 # annotations
 .annotation system Ldalvik/annotation/MemberClasses;
     value = {
+        Ljp/co/sony/mc/camera/device/CameraParameterConverter$FramingAssistPositionMode;,
+        Ljp/co/sony/mc/camera/device/CameraParameterConverter$AutoFramingOrientation;,
+        Ljp/co/sony/mc/camera/device/CameraParameterConverter$AutoFramingMode;,
         Ljp/co/sony/mc/camera/device/CameraParameterConverter$SensitivitySmoothingMode;,
         Ljp/co/sony/mc/camera/device/CameraParameterConverter$CloseUpMode;,
         Ljp/co/sony/mc/camera/device/CameraParameterConverter$FallbackMode;,
@@ -25,6 +28,7 @@
         Ljp/co/sony/mc/camera/device/CameraParameterConverter$BokehMode;,
         Ljp/co/sony/mc/camera/device/CameraParameterConverter$VagueControlMode;,
         Ljp/co/sony/mc/camera/device/CameraParameterConverter$Usecase;,
+        Ljp/co/sony/mc/camera/device/CameraParameterConverter$VolumeDistortionCorrection;,
         Ljp/co/sony/mc/camera/device/CameraParameterConverter$SonyDistortionCorrection;,
         Ljp/co/sony/mc/camera/device/CameraParameterConverter$AndroidDistortionCorrection;,
         Ljp/co/sony/mc/camera/device/CameraParameterConverter$VideoMfHdr;,

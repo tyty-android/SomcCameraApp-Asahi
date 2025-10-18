@@ -28,6 +28,14 @@
     return-void
 .end method
 
+.method public static synthetic $r8$lambda$hhvGHHR3ULDGFMhihTkPimM7yO8(Ljp/co/sony/mc/camera/view/setting/fragment/RemoconCustomFragment;Landroid/view/View;)V
+    .locals 0
+
+    invoke-direct {p0, p1}, Ljp/co/sony/mc/camera/view/setting/fragment/RemoconCustomFragment;->lambda$onCreateView$0(Landroid/view/View;)V
+
+    return-void
+.end method
+
 .method static bridge synthetic -$$Nest$fgetmRemoconMenuActivity(Ljp/co/sony/mc/camera/view/setting/fragment/RemoconCustomFragment;)Ljp/co/sony/mc/camera/RemoconMenuActivity;
     .locals 0
 
@@ -39,22 +47,22 @@
 .method public constructor <init>()V
     .locals 1
 
-    .line 43
+    .line 44
     invoke-direct {p0}, Landroidx/fragment/app/Fragment;-><init>()V
 
     const/4 v0, 0x0
 
-    .line 48
+    .line 49
     iput-object v0, p0, Ljp/co/sony/mc/camera/view/setting/fragment/RemoconCustomFragment;->mCameraSettingItemBuilder:Ljp/co/sony/mc/camera/view/setting/settingitem/CameraSettingItemBuilder;
 
-    .line 50
+    .line 51
     new-instance v0, Ljp/co/sony/mc/camera/view/setting/fragment/RemoconCustomFragment$$ExternalSyntheticLambda0;
 
     invoke-direct {v0, p0}, Ljp/co/sony/mc/camera/view/setting/fragment/RemoconCustomFragment$$ExternalSyntheticLambda0;-><init>(Ljp/co/sony/mc/camera/view/setting/fragment/RemoconCustomFragment;)V
 
     iput-object v0, p0, Ljp/co/sony/mc/camera/view/setting/fragment/RemoconCustomFragment;->mDetailChangedListener:Ljp/co/sony/mc/camera/RemoconMenuActivity$DetailChangedListener;
 
-    .line 92
+    .line 94
     new-instance v0, Ljp/co/sony/mc/camera/view/setting/fragment/RemoconCustomFragment$1;
 
     invoke-direct {v0, p0}, Ljp/co/sony/mc/camera/view/setting/fragment/RemoconCustomFragment$1;-><init>(Ljp/co/sony/mc/camera/view/setting/fragment/RemoconCustomFragment;)V
@@ -67,7 +75,7 @@
 .method private getImageDetailFragment(Ljp/co/sony/mc/camera/view/setting/settingitem/CameraSettingItem;)Ljp/co/sony/mc/camera/view/setting/fragment/CameraSettingsDetailFragment;
     .locals 0
 
-    .line 117
+    .line 119
     sget-object p0, Ljp/co/sony/mc/camera/view/setting/fragment/BasicModeCameraSettingsImageDetailFragment;->Companion:Ljp/co/sony/mc/camera/view/setting/fragment/BasicModeCameraSettingsImageDetailFragment$Companion;
 
     invoke-virtual {p0, p1}, Ljp/co/sony/mc/camera/view/setting/fragment/BasicModeCameraSettingsImageDetailFragment$Companion;->newInstance(Ljp/co/sony/mc/camera/view/setting/settingitem/CameraSettingItem;)Ljp/co/sony/mc/camera/view/setting/fragment/BasicModeCameraSettingsImageDetailFragment;
@@ -80,7 +88,7 @@
 .method private getRemoconCustomSettingItem()Ljp/co/sony/mc/camera/view/setting/settingitem/CameraSettingItem;
     .locals 3
 
-    .line 130
+    .line 132
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/setting/fragment/RemoconCustomFragment;->mCameraSettingItemBuilder:Ljp/co/sony/mc/camera/view/setting/settingitem/CameraSettingItemBuilder;
 
     sget-object v1, Ljp/co/sony/mc/camera/setting/CommonSettings;->REMOTE_BUTTON_CUSTOM:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
@@ -96,8 +104,29 @@
     return-object p0
 .end method
 
+.method private synthetic lambda$onCreateView$0(Landroid/view/View;)V
+    .locals 0
+
+    .line 69
+    invoke-virtual {p0}, Ljp/co/sony/mc/camera/view/setting/fragment/RemoconCustomFragment;->getActivity()Landroidx/fragment/app/FragmentActivity;
+
+    move-result-object p1
+
+    if-eqz p1, :cond_0
+
+    .line 70
+    invoke-virtual {p0}, Ljp/co/sony/mc/camera/view/setting/fragment/RemoconCustomFragment;->getActivity()Landroidx/fragment/app/FragmentActivity;
+
+    move-result-object p0
+
+    invoke-virtual {p0}, Landroidx/fragment/app/FragmentActivity;->onBackPressed()V
+
+    :cond_0
+    return-void
+.end method
+
 .method private onSettingValueChanged(Ljp/co/sony/mc/camera/setting/SettingKey$Key;Ljava/lang/Object;Ljp/co/sony/mc/camera/setting/SettingAppearance;)V
-    .locals 2
+    .locals 3
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<T:",
@@ -110,38 +139,42 @@
         }
     .end annotation
 
-    .line 136
+    .line 138
     sget-boolean v0, Ljp/co/sony/mc/camera/util/CamLog;->DEBUG:Z
 
     if-eqz v0, :cond_0
 
-    new-instance v0, Ljava/lang/StringBuilder;
+    const/4 v0, 0x1
 
-    const-string v1, "onSettingValueChanged: key: "
+    new-array v0, v0, [Ljava/lang/String;
 
-    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+    new-instance v1, Ljava/lang/StringBuilder;
 
-    invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+    const-string v2, "onSettingValueChanged: key: "
 
-    move-result-object v0
+    invoke-direct {v1, v2}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
-    const-string v1, ", value: "
+    invoke-virtual {v1, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    move-result-object v1
 
-    move-result-object v0
+    const-string v2, ", value: "
 
-    invoke-virtual {v0, p2}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    move-result-object v0
+    move-result-object v1
 
-    const-string v1, ", appearance: "
+    invoke-virtual {v1, p2}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    move-result-object v1
 
-    move-result-object v0
+    const-string v2, ", appearance: "
 
-    invoke-virtual {v0, p3}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v1
+
+    invoke-virtual {v1, p3}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
     move-result-object p3
 
@@ -149,13 +182,13 @@
 
     move-result-object p3
 
-    filled-new-array {p3}, [Ljava/lang/String;
+    const/4 v1, 0x0
 
-    move-result-object p3
+    aput-object p3, v0, v1
 
-    invoke-static {p3}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
+    invoke-static {v0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
-    .line 140
+    .line 142
     :cond_0
     invoke-static {}, Ljp/co/sony/mc/camera/setting/CameraProSetting;->getInstance()Ljp/co/sony/mc/camera/setting/CameraProSetting;
 
@@ -169,7 +202,7 @@
 
     return-void
 
-    .line 148
+    .line 150
     :cond_1
     invoke-static {}, Ljp/co/sony/mc/camera/setting/CameraProSetting;->getInstance()Ljp/co/sony/mc/camera/setting/CameraProSetting;
 
@@ -177,7 +210,7 @@
 
     invoke-virtual {p3, p1, p2}, Ljp/co/sony/mc/camera/setting/CameraProSetting;->set(Ljp/co/sony/mc/camera/setting/SettingKey$Key;Ljava/lang/Object;)V
 
-    .line 149
+    .line 151
     invoke-direct {p0}, Ljp/co/sony/mc/camera/view/setting/fragment/RemoconCustomFragment;->updateSetting()V
 
     return-void
@@ -186,12 +219,12 @@
 .method private setUpSettingsItemBuilder()V
     .locals 9
 
-    .line 121
+    .line 123
     invoke-static {}, Ljp/co/sony/mc/camera/setting/CameraProSetting;->getInstance()Ljp/co/sony/mc/camera/setting/CameraProSetting;
 
     move-result-object v4
 
-    .line 122
+    .line 124
     sget-object v0, Ljp/co/sony/mc/camera/setting/CommonSettings;->CAPTURING_MODE:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
 
     invoke-virtual {v4, v0}, Ljp/co/sony/mc/camera/setting/CameraProSetting;->get(Ljp/co/sony/mc/camera/setting/SettingKey$Key;)Ljava/lang/Object;
@@ -202,7 +235,7 @@
 
     check-cast v2, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
-    .line 123
+    .line 125
     sget-object v0, Ljp/co/sony/mc/camera/setting/CommonSettings;->CAMERA_ID:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
 
     invoke-virtual {v4, v0}, Ljp/co/sony/mc/camera/setting/CameraProSetting;->get(Ljp/co/sony/mc/camera/setting/SettingKey$Key;)Ljava/lang/Object;
@@ -213,7 +246,7 @@
 
     check-cast v3, Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;
 
-    .line 124
+    .line 126
     new-instance v8, Ljp/co/sony/mc/camera/view/setting/settingitem/CameraSettingItemBuilder;
 
     iget-object v1, p0, Ljp/co/sony/mc/camera/view/setting/fragment/RemoconCustomFragment;->mRemoconMenuActivity:Ljp/co/sony/mc/camera/RemoconMenuActivity;
@@ -226,7 +259,7 @@
 
     invoke-direct {v0, v6}, Ljp/co/sony/mc/camera/view/setting/ContextualSettingList;-><init>(Z)V
 
-    .line 126
+    .line 128
     invoke-virtual {v0, v2, v3}, Ljp/co/sony/mc/camera/view/setting/ContextualSettingList;->get(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;)Ljp/co/sony/mc/camera/view/setting/ContextualSettingList$Group;
 
     move-result-object v7
@@ -243,27 +276,27 @@
 .method private showFragment()V
     .locals 4
 
-    .line 106
+    .line 108
     invoke-direct {p0}, Ljp/co/sony/mc/camera/view/setting/fragment/RemoconCustomFragment;->getRemoconCustomSettingItem()Ljp/co/sony/mc/camera/view/setting/settingitem/CameraSettingItem;
 
     move-result-object v0
 
-    .line 107
+    .line 109
     invoke-direct {p0, v0}, Ljp/co/sony/mc/camera/view/setting/fragment/RemoconCustomFragment;->getImageDetailFragment(Ljp/co/sony/mc/camera/view/setting/settingitem/CameraSettingItem;)Ljp/co/sony/mc/camera/view/setting/fragment/CameraSettingsDetailFragment;
 
     move-result-object v0
 
-    .line 108
+    .line 110
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/view/setting/fragment/RemoconCustomFragment;->getChildFragmentManager()Landroidx/fragment/app/FragmentManager;
 
     move-result-object p0
 
-    .line 109
+    .line 111
     invoke-virtual {p0}, Landroidx/fragment/app/FragmentManager;->beginTransaction()Landroidx/fragment/app/FragmentTransaction;
 
     move-result-object v1
 
-    .line 110
+    .line 112
     invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     move-result-object v2
@@ -274,7 +307,7 @@
 
     invoke-virtual {v1, v2}, Landroidx/fragment/app/FragmentTransaction;->addToBackStack(Ljava/lang/String;)Landroidx/fragment/app/FragmentTransaction;
 
-    .line 111
+    .line 113
     invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     move-result-object v2
@@ -287,10 +320,10 @@
 
     invoke-virtual {v1, v3, v0, v2}, Landroidx/fragment/app/FragmentTransaction;->replace(ILandroidx/fragment/app/Fragment;Ljava/lang/String;)Landroidx/fragment/app/FragmentTransaction;
 
-    .line 112
+    .line 114
     invoke-virtual {v1}, Landroidx/fragment/app/FragmentTransaction;->commitAllowingStateLoss()I
 
-    .line 113
+    .line 115
     invoke-virtual {p0}, Landroidx/fragment/app/FragmentManager;->executePendingTransactions()Z
 
     return-void
@@ -299,17 +332,17 @@
 .method private updateSetting()V
     .locals 2
 
-    .line 154
+    .line 156
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/view/setting/fragment/RemoconCustomFragment;->getChildFragmentManager()Landroidx/fragment/app/FragmentManager;
 
     move-result-object v0
 
     const-class v1, Ljp/co/sony/mc/camera/view/setting/fragment/BasicModeCameraSettingsImageDetailFragment;
 
-    .line 156
+    .line 158
     const-string v1, "BasicModeCameraSettingsImageDetailFragment"
 
-    .line 155
+    .line 157
     invoke-virtual {v0, v1}, Landroidx/fragment/app/FragmentManager;->findFragmentByTag(Ljava/lang/String;)Landroidx/fragment/app/Fragment;
 
     move-result-object v0
@@ -318,7 +351,7 @@
 
     if-eqz v0, :cond_0
 
-    .line 158
+    .line 160
     invoke-direct {p0}, Ljp/co/sony/mc/camera/view/setting/fragment/RemoconCustomFragment;->getRemoconCustomSettingItem()Ljp/co/sony/mc/camera/view/setting/settingitem/CameraSettingItem;
 
     move-result-object p0
@@ -334,7 +367,7 @@
 .method public onCreateView(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;
     .locals 1
 
-    .line 57
+    .line 58
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/view/setting/fragment/RemoconCustomFragment;->getActivity()Landroidx/fragment/app/FragmentActivity;
 
     move-result-object p3
@@ -343,47 +376,34 @@
 
     iput-object p3, p0, Ljp/co/sony/mc/camera/view/setting/fragment/RemoconCustomFragment;->mRemoconMenuActivity:Ljp/co/sony/mc/camera/RemoconMenuActivity;
 
-    .line 59
-    invoke-virtual {p3}, Ljp/co/sony/mc/camera/RemoconMenuActivity;->getSupportActionBar()Landroidx/appcompat/app/ActionBar;
-
-    move-result-object p3
-
-    const v0, 0x7f110030
-
-    invoke-virtual {p3, v0}, Landroidx/appcompat/app/ActionBar;->setTitle(I)V
-
-    .line 61
-    iget-object p3, p0, Ljp/co/sony/mc/camera/view/setting/fragment/RemoconCustomFragment;->mRemoconMenuActivity:Ljp/co/sony/mc/camera/RemoconMenuActivity;
-
-    invoke-virtual {p3}, Ljp/co/sony/mc/camera/RemoconMenuActivity;->getSupportActionBar()Landroidx/appcompat/app/ActionBar;
-
-    move-result-object p3
-
-    const/4 v0, 0x1
-
-    invoke-virtual {p3, v0}, Landroidx/appcompat/app/ActionBar;->setDisplayHomeAsUpEnabled(Z)V
-
-    .line 62
-    iget-object p3, p0, Ljp/co/sony/mc/camera/view/setting/fragment/RemoconCustomFragment;->mRemoconMenuActivity:Ljp/co/sony/mc/camera/RemoconMenuActivity;
-
-    invoke-virtual {p3}, Ljp/co/sony/mc/camera/RemoconMenuActivity;->getSupportActionBar()Landroidx/appcompat/app/ActionBar;
-
-    move-result-object p3
-
-    const v0, 0x7f080104
-
-    invoke-virtual {p3, v0}, Landroidx/appcompat/app/ActionBar;->setHomeAsUpIndicator(I)V
-
     const p3, 0x7f0c00b3
 
     const/4 v0, 0x0
 
-    .line 65
+    .line 60
     invoke-virtual {p1, p3, p2, v0}, Landroid/view/LayoutInflater;->inflate(ILandroid/view/ViewGroup;Z)Landroid/view/View;
 
     move-result-object p1
 
-    .line 67
+    const p2, 0x7f0904a9
+
+    .line 61
+    invoke-virtual {p1, p2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
+
+    move-result-object p2
+
+    check-cast p2, Landroid/widget/TextView;
+
+    const p3, 0x7f110025
+
+    .line 62
+    invoke-virtual {p0, p3}, Ljp/co/sony/mc/camera/view/setting/fragment/RemoconCustomFragment;->getString(I)Ljava/lang/String;
+
+    move-result-object p3
+
+    invoke-virtual {p2, p3}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
+
+    .line 64
     iget-object p2, p0, Ljp/co/sony/mc/camera/view/setting/fragment/RemoconCustomFragment;->mRemoconMenuActivity:Ljp/co/sony/mc/camera/RemoconMenuActivity;
 
     invoke-virtual {p2}, Ljp/co/sony/mc/camera/RemoconMenuActivity;->getApplication()Landroid/app/Application;
@@ -398,11 +418,24 @@
 
     iput-object p2, p0, Ljp/co/sony/mc/camera/view/setting/fragment/RemoconCustomFragment;->mStorage:Ljp/co/sony/mc/camera/storage/Storage;
 
-    .line 68
+    .line 65
     invoke-direct {p0}, Ljp/co/sony/mc/camera/view/setting/fragment/RemoconCustomFragment;->setUpSettingsItemBuilder()V
 
-    .line 69
+    .line 66
     invoke-direct {p0}, Ljp/co/sony/mc/camera/view/setting/fragment/RemoconCustomFragment;->showFragment()V
+
+    const p2, 0x7f0900a3
+
+    .line 68
+    invoke-virtual {p1, p2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
+
+    move-result-object p2
+
+    new-instance p3, Ljp/co/sony/mc/camera/view/setting/fragment/RemoconCustomFragment$$ExternalSyntheticLambda1;
+
+    invoke-direct {p3, p0}, Ljp/co/sony/mc/camera/view/setting/fragment/RemoconCustomFragment$$ExternalSyntheticLambda1;-><init>(Ljp/co/sony/mc/camera/view/setting/fragment/RemoconCustomFragment;)V
+
+    invoke-virtual {p2, p3}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     return-object p1
 .end method
@@ -410,17 +443,17 @@
 .method public onPause()V
     .locals 2
 
-    .line 87
+    .line 89
     invoke-super {p0}, Landroidx/fragment/app/Fragment;->onPause()V
 
-    .line 88
+    .line 90
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/setting/fragment/RemoconCustomFragment;->mRemoconMenuActivity:Ljp/co/sony/mc/camera/RemoconMenuActivity;
 
     iget-object v1, p0, Ljp/co/sony/mc/camera/view/setting/fragment/RemoconCustomFragment;->mDetailChangedListener:Ljp/co/sony/mc/camera/RemoconMenuActivity$DetailChangedListener;
 
     invoke-virtual {v0, v1}, Ljp/co/sony/mc/camera/RemoconMenuActivity;->unregisterDetailChangedListener(Ljp/co/sony/mc/camera/RemoconMenuActivity$DetailChangedListener;)V
 
-    .line 89
+    .line 91
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/setting/fragment/RemoconCustomFragment;->mRemoconMenuActivity:Ljp/co/sony/mc/camera/RemoconMenuActivity;
 
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/setting/fragment/RemoconCustomFragment;->mBluetoothStateChangedReceiver:Landroid/content/BroadcastReceiver;
@@ -433,10 +466,10 @@
 .method public onResume()V
     .locals 4
 
-    .line 76
+    .line 78
     invoke-super {p0}, Landroidx/fragment/app/Fragment;->onResume()V
 
-    .line 78
+    .line 80
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/setting/fragment/RemoconCustomFragment;->mRemoconMenuActivity:Ljp/co/sony/mc/camera/RemoconMenuActivity;
 
     iget-object v1, p0, Ljp/co/sony/mc/camera/view/setting/fragment/RemoconCustomFragment;->mBluetoothStateChangedReceiver:Landroid/content/BroadcastReceiver;
@@ -449,14 +482,14 @@
 
     invoke-virtual {v0, v1, v2}, Ljp/co/sony/mc/camera/RemoconMenuActivity;->registerReceiver(Landroid/content/BroadcastReceiver;Landroid/content/IntentFilter;)Landroid/content/Intent;
 
-    .line 80
+    .line 82
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/setting/fragment/RemoconCustomFragment;->mRemoconMenuActivity:Ljp/co/sony/mc/camera/RemoconMenuActivity;
 
     iget-object v1, p0, Ljp/co/sony/mc/camera/view/setting/fragment/RemoconCustomFragment;->mDetailChangedListener:Ljp/co/sony/mc/camera/RemoconMenuActivity$DetailChangedListener;
 
     invoke-virtual {v0, v1}, Ljp/co/sony/mc/camera/RemoconMenuActivity;->registerDetailChangedListener(Ljp/co/sony/mc/camera/RemoconMenuActivity$DetailChangedListener;)V
 
-    .line 82
+    .line 84
     invoke-direct {p0}, Ljp/co/sony/mc/camera/view/setting/fragment/RemoconCustomFragment;->updateSetting()V
 
     return-void

@@ -43,14 +43,12 @@
         }
     .end annotation
 
-    const-string v0, "onAny"
-
-    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
     .line 108
-    new-instance v0, Landroidx/compose/foundation/text/KeyboardActions;
+    new-instance v7, Landroidx/compose/foundation/text/KeyboardActions;
 
-    move-object v1, v0
+    move-object v0, v7
+
+    move-object v1, p0
 
     move-object v2, p0
 
@@ -62,9 +60,7 @@
 
     move-object v6, p0
 
-    move-object v7, p0
+    invoke-direct/range {v0 .. v6}, Landroidx/compose/foundation/text/KeyboardActions;-><init>(Lkotlin/jvm/functions/Function1;Lkotlin/jvm/functions/Function1;Lkotlin/jvm/functions/Function1;Lkotlin/jvm/functions/Function1;Lkotlin/jvm/functions/Function1;Lkotlin/jvm/functions/Function1;)V
 
-    invoke-direct/range {v1 .. v7}, Landroidx/compose/foundation/text/KeyboardActions;-><init>(Lkotlin/jvm/functions/Function1;Lkotlin/jvm/functions/Function1;Lkotlin/jvm/functions/Function1;Lkotlin/jvm/functions/Function1;Lkotlin/jvm/functions/Function1;Lkotlin/jvm/functions/Function1;)V
-
-    return-object v0
+    return-object v7
 .end method

@@ -905,10 +905,15 @@
 
     move-result v0
 
+    goto :goto_0
+
+    :cond_0
+    const/4 v0, 0x0
+
+    :goto_0
     if-nez v0, :cond_1
 
     .line 465
-    :cond_0
     invoke-virtual {p0}, Landroidx/preference/PreferenceFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v0

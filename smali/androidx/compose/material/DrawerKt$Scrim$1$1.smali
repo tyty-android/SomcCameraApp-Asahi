@@ -88,7 +88,7 @@
 .method public bridge synthetic invoke(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
 
-    .line 857
+    .line 845
     check-cast p1, Landroidx/compose/ui/graphics/drawscope/DrawScope;
 
     invoke-virtual {p0, p1}, Landroidx/compose/material/DrawerKt$Scrim$1$1;->invoke(Landroidx/compose/ui/graphics/drawscope/DrawScope;)V
@@ -99,14 +99,10 @@
 .end method
 
 .method public final invoke(Landroidx/compose/ui/graphics/drawscope/DrawScope;)V
-    .locals 14
+    .locals 13
 
-    const-string v0, "$this$Canvas"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 858
-    iget-wide v2, p0, Landroidx/compose/material/DrawerKt$Scrim$1$1;->$color:J
+    .line 846
+    iget-wide v1, p0, Landroidx/compose/material/DrawerKt$Scrim$1$1;->$color:J
 
     iget-object p0, p0, Landroidx/compose/material/DrawerKt$Scrim$1$1;->$fraction:Lkotlin/jvm/functions/Function0;
 
@@ -118,25 +114,25 @@
 
     invoke-virtual {p0}, Ljava/lang/Number;->floatValue()F
 
-    move-result v8
+    move-result v7
 
-    const/16 v12, 0x76
+    const/16 v11, 0x76
 
-    const/4 v13, 0x0
+    const/4 v12, 0x0
 
-    const-wide/16 v4, 0x0
+    const-wide/16 v3, 0x0
 
-    const-wide/16 v6, 0x0
+    const-wide/16 v5, 0x0
+
+    const/4 v8, 0x0
 
     const/4 v9, 0x0
 
     const/4 v10, 0x0
 
-    const/4 v11, 0x0
+    move-object v0, p1
 
-    move-object v1, p1
-
-    invoke-static/range {v1 .. v13}, Landroidx/compose/ui/graphics/drawscope/DrawScope;->drawRect-n-J9OG0$default(Landroidx/compose/ui/graphics/drawscope/DrawScope;JJJFLandroidx/compose/ui/graphics/drawscope/DrawStyle;Landroidx/compose/ui/graphics/ColorFilter;IILjava/lang/Object;)V
+    invoke-static/range {v0 .. v12}, Landroidx/compose/ui/graphics/drawscope/DrawScope;->drawRect-n-J9OG0$default(Landroidx/compose/ui/graphics/drawscope/DrawScope;JJJFLandroidx/compose/ui/graphics/drawscope/DrawStyle;Landroidx/compose/ui/graphics/ColorFilter;IILjava/lang/Object;)V
 
     return-void
 .end method

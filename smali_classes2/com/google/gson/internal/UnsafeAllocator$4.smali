@@ -18,7 +18,7 @@
 .method constructor <init>()V
     .locals 0
 
-    .line 114
+    .line 118
     invoke-direct {p0}, Lcom/google/gson/internal/UnsafeAllocator;-><init>()V
 
     return-void
@@ -38,7 +38,7 @@
         }
     .end annotation
 
-    .line 117
+    .line 121
     new-instance p0, Ljava/lang/UnsupportedOperationException;
 
     new-instance v0, Ljava/lang/StringBuilder;

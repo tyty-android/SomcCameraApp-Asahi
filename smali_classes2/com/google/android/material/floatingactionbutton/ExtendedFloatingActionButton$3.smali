@@ -27,7 +27,7 @@
 .method constructor <init>(Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton;Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton$Size;)V
     .locals 0
 
-    .line 315
+    .line 320
     iput-object p1, p0, Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton$3;->this$0:Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton;
 
     iput-object p2, p0, Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton$3;->val$wrapContentSize:Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton$Size;
@@ -42,7 +42,7 @@
 .method public getHeight()I
     .locals 3
 
-    .line 345
+    .line 350
     iget-object v0, p0, Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton$3;->this$0:Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton;
 
     invoke-static {v0}, Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton;->access$200(Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton;)I
@@ -55,7 +55,7 @@
 
     if-ne v0, v1, :cond_3
 
-    .line 346
+    .line 351
     iget-object v0, p0, Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton$3;->this$0:Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton;
 
     invoke-virtual {v0}, Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton;->getParent()Landroid/view/ViewParent;
@@ -66,7 +66,7 @@
 
     if-nez v0, :cond_0
 
-    .line 347
+    .line 352
     iget-object p0, p0, Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton$3;->val$wrapContentSize:Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton$Size;
 
     invoke-interface {p0}, Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton$Size;->getHeight()I
@@ -75,7 +75,7 @@
 
     return p0
 
-    .line 351
+    .line 356
     :cond_0
     iget-object v0, p0, Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton$3;->this$0:Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton;
 
@@ -85,19 +85,19 @@
 
     check-cast v0, Landroid/view/View;
 
-    .line 354
+    .line 359
     invoke-virtual {v0}, Landroid/view/View;->getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
 
     move-result-object v1
 
     if-eqz v1, :cond_1
 
-    .line 355
+    .line 360
     iget v1, v1, Landroid/view/ViewGroup$LayoutParams;->height:I
 
     if-ne v1, v2, :cond_1
 
-    .line 356
+    .line 361
     iget-object p0, p0, Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton$3;->val$wrapContentSize:Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton$Size;
 
     invoke-interface {p0}, Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton$Size;->getHeight()I
@@ -106,7 +106,7 @@
 
     return p0
 
-    .line 358
+    .line 363
     :cond_1
     invoke-virtual {v0}, Landroid/view/View;->getPaddingTop()I
 
@@ -118,7 +118,7 @@
 
     add-int/2addr v1, v2
 
-    .line 359
+    .line 364
     iget-object v2, p0, Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton$3;->this$0:Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton;
 
     invoke-virtual {v2}, Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton;->getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
@@ -129,10 +129,10 @@
 
     if-eqz v2, :cond_2
 
-    .line 361
+    .line 366
     iget-object p0, p0, Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton$3;->this$0:Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton;
 
-    .line 362
+    .line 367
     invoke-virtual {p0}, Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton;->getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
 
     move-result-object p0
@@ -141,7 +141,7 @@
 
     if-eqz p0, :cond_2
 
-    .line 364
+    .line 369
     iget v2, p0, Landroid/view/ViewGroup$MarginLayoutParams;->topMargin:I
 
     iget p0, p0, Landroid/view/ViewGroup$MarginLayoutParams;->bottomMargin:I
@@ -153,7 +153,7 @@
     :cond_2
     const/4 v2, 0x0
 
-    .line 367
+    .line 372
     :goto_0
     invoke-virtual {v0}, Landroid/view/View;->getHeight()I
 
@@ -165,7 +165,7 @@
 
     return p0
 
-    .line 368
+    .line 373
     :cond_3
     iget-object v0, p0, Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton$3;->this$0:Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton;
 
@@ -185,7 +185,7 @@
 
     goto :goto_1
 
-    .line 371
+    .line 376
     :cond_4
     iget-object p0, p0, Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton$3;->this$0:Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton;
 
@@ -195,7 +195,7 @@
 
     return p0
 
-    .line 369
+    .line 374
     :cond_5
     :goto_1
     iget-object p0, p0, Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton$3;->val$wrapContentSize:Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton$Size;
@@ -210,10 +210,10 @@
 .method public getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
     .locals 2
 
-    .line 386
+    .line 391
     new-instance v0, Landroid/view/ViewGroup$LayoutParams;
 
-    .line 387
+    .line 392
     iget-object v1, p0, Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton$3;->this$0:Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton;
 
     invoke-static {v1}, Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton;->access$200(Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton;)I
@@ -244,7 +244,7 @@
 .method public getPaddingEnd()I
     .locals 0
 
-    .line 381
+    .line 386
     iget-object p0, p0, Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton$3;->this$0:Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton;
 
     invoke-static {p0}, Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton;->access$100(Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton;)I
@@ -257,7 +257,7 @@
 .method public getPaddingStart()I
     .locals 0
 
-    .line 376
+    .line 381
     iget-object p0, p0, Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton$3;->this$0:Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton;
 
     invoke-static {p0}, Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton;->access$000(Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton;)I
@@ -270,7 +270,7 @@
 .method public getWidth()I
     .locals 3
 
-    .line 320
+    .line 325
     iget-object v0, p0, Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton$3;->this$0:Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton;
 
     invoke-virtual {v0}, Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton;->getParent()Landroid/view/ViewParent;
@@ -281,7 +281,7 @@
 
     if-nez v0, :cond_0
 
-    .line 321
+    .line 326
     iget-object p0, p0, Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton$3;->val$wrapContentSize:Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton$Size;
 
     invoke-interface {p0}, Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton$Size;->getWidth()I
@@ -290,7 +290,7 @@
 
     return p0
 
-    .line 323
+    .line 328
     :cond_0
     iget-object v0, p0, Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton$3;->this$0:Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton;
 
@@ -300,21 +300,21 @@
 
     check-cast v0, Landroid/view/View;
 
-    .line 326
+    .line 331
     invoke-virtual {v0}, Landroid/view/View;->getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
 
     move-result-object v1
 
     if-eqz v1, :cond_1
 
-    .line 327
+    .line 332
     iget v1, v1, Landroid/view/ViewGroup$LayoutParams;->width:I
 
     const/4 v2, -0x2
 
     if-ne v1, v2, :cond_1
 
-    .line 328
+    .line 333
     iget-object p0, p0, Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton$3;->val$wrapContentSize:Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton$Size;
 
     invoke-interface {p0}, Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton$Size;->getWidth()I
@@ -323,7 +323,7 @@
 
     return p0
 
-    .line 330
+    .line 335
     :cond_1
     invoke-virtual {v0}, Landroid/view/View;->getPaddingLeft()I
 
@@ -335,7 +335,7 @@
 
     add-int/2addr v1, v2
 
-    .line 331
+    .line 336
     iget-object v2, p0, Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton$3;->this$0:Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton;
 
     invoke-virtual {v2}, Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton;->getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
@@ -346,10 +346,10 @@
 
     if-eqz v2, :cond_2
 
-    .line 332
+    .line 337
     iget-object p0, p0, Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton$3;->this$0:Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton;
 
-    .line 333
+    .line 338
     invoke-virtual {p0}, Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton;->getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
 
     move-result-object p0
@@ -358,7 +358,7 @@
 
     if-eqz p0, :cond_2
 
-    .line 335
+    .line 340
     iget v2, p0, Landroid/view/ViewGroup$MarginLayoutParams;->leftMargin:I
 
     iget p0, p0, Landroid/view/ViewGroup$MarginLayoutParams;->rightMargin:I
@@ -370,7 +370,7 @@
     :cond_2
     const/4 v2, 0x0
 
-    .line 338
+    .line 343
     :goto_0
     invoke-virtual {v0}, Landroid/view/View;->getWidth()I
 

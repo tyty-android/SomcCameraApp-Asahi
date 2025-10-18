@@ -48,8 +48,6 @@
 
 
 # instance fields
-.field final synthetic $$dirty:I
-
 .field final synthetic $title:Lkotlin/jvm/functions/Function2;
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -64,7 +62,7 @@
 
 
 # direct methods
-.method constructor <init>(Lkotlin/jvm/functions/Function2;I)V
+.method constructor <init>(Lkotlin/jvm/functions/Function2;)V
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -75,13 +73,11 @@
             "-",
             "Ljava/lang/Integer;",
             "Lkotlin/Unit;",
-            ">;I)V"
+            ">;)V"
         }
     .end annotation
 
     iput-object p1, p0, Landroidx/compose/material/AlertDialogKt$AlertDialogContent$1$1$1$1$1;->$title:Lkotlin/jvm/functions/Function2;
-
-    iput p2, p0, Landroidx/compose/material/AlertDialogKt$AlertDialogContent$1$1$1$1$1;->$$dirty:I
 
     const/4 p1, 0x2
 
@@ -95,7 +91,7 @@
 .method public bridge synthetic invoke(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
 
-    .line 63
+    .line 65
     check-cast p1, Landroidx/compose/runtime/Composer;
 
     check-cast p2, Ljava/lang/Number;
@@ -114,7 +110,7 @@
 .method public final invoke(Landroidx/compose/runtime/Composer;I)V
     .locals 3
 
-    const-string v0, "C63@2458L10,64@2507L34:AlertDialog.kt#jmzs0o"
+    const-string v0, "C65@2550L10,66@2599L34:AlertDialog.kt#jmzs0o"
 
     invoke-static {p1, v0}, Landroidx/compose/runtime/ComposerKt;->sourceInformation(Landroidx/compose/runtime/Composer;Ljava/lang/String;)V
 
@@ -124,7 +120,7 @@
 
     if-ne v0, v1, :cond_1
 
-    .line 64
+    .line 66
     invoke-interface {p1}, Landroidx/compose/runtime/Composer;->getSkipping()Z
 
     move-result v0
@@ -133,13 +129,13 @@
 
     goto :goto_0
 
-    .line 65
+    .line 67
     :cond_0
     invoke-interface {p1}, Landroidx/compose/runtime/Composer;->skipToGroupEnd()V
 
     goto :goto_1
 
-    .line 64
+    .line 66
     :cond_1
     :goto_0
     invoke-static {}, Landroidx/compose/runtime/ComposerKt;->isTraceInProgress()Z
@@ -150,7 +146,7 @@
 
     const/4 v0, -0x1
 
-    const-string v1, "androidx.compose.material.AlertDialogContent.<anonymous>.<anonymous>.<anonymous>.<anonymous>.<anonymous> (AlertDialog.kt:62)"
+    const-string v1, "androidx.compose.material.AlertDialogContent.<anonymous>.<anonymous>.<anonymous>.<anonymous>.<anonymous> (AlertDialog.kt:65)"
 
     const v2, 0x2de7cea0
 
@@ -169,16 +165,12 @@
 
     move-result-object p2
 
-    .line 65
-    iget-object v0, p0, Landroidx/compose/material/AlertDialogKt$AlertDialogContent$1$1$1$1$1;->$title:Lkotlin/jvm/functions/Function2;
+    .line 67
+    iget-object p0, p0, Landroidx/compose/material/AlertDialogKt$AlertDialogContent$1$1$1$1$1;->$title:Lkotlin/jvm/functions/Function2;
 
-    iget p0, p0, Landroidx/compose/material/AlertDialogKt$AlertDialogContent$1$1$1$1$1;->$$dirty:I
+    const/4 v0, 0x0
 
-    shr-int/lit8 p0, p0, 0x3
-
-    and-int/lit8 p0, p0, 0x70
-
-    invoke-static {p2, v0, p1, p0}, Landroidx/compose/material/TextKt;->ProvideTextStyle(Landroidx/compose/ui/text/TextStyle;Lkotlin/jvm/functions/Function2;Landroidx/compose/runtime/Composer;I)V
+    invoke-static {p2, p0, p1, v0}, Landroidx/compose/material/TextKt;->ProvideTextStyle(Landroidx/compose/ui/text/TextStyle;Lkotlin/jvm/functions/Function2;Landroidx/compose/runtime/Composer;I)V
 
     invoke-static {}, Landroidx/compose/runtime/ComposerKt;->isTraceInProgress()Z
 

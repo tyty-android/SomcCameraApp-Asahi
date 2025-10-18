@@ -70,7 +70,7 @@
 .method public bridge synthetic invoke(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
 
-    .line 202
+    .line 237
     check-cast p1, Landroidx/compose/ui/input/key/KeyEvent;
 
     invoke-virtual {p1}, Landroidx/compose/ui/input/key/KeyEvent;->unbox-impl()Landroid/view/KeyEvent;
@@ -87,11 +87,7 @@
 .method public final invoke-ZmokQxo(Landroid/view/KeyEvent;)Ljava/lang/Boolean;
     .locals 2
 
-    const-string v0, "it"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 203
+    .line 238
     iget-object v0, p0, Landroidx/compose/ui/platform/AndroidComposeView$keyInputModifier$1;->this$0:Landroidx/compose/ui/platform/AndroidComposeView;
 
     invoke-virtual {v0, p1}, Landroidx/compose/ui/platform/AndroidComposeView;->getFocusDirection-P8AzH3I(Landroid/view/KeyEvent;)Landroidx/compose/ui/focus/FocusDirection;
@@ -100,7 +96,7 @@
 
     if-eqz v0, :cond_1
 
-    .line 204
+    .line 239
     invoke-static {p1}, Landroidx/compose/ui/input/key/KeyEvent_androidKt;->getType-ZmokQxo(Landroid/view/KeyEvent;)I
 
     move-result p1
@@ -119,7 +115,7 @@
 
     goto :goto_0
 
-    .line 207
+    .line 242
     :cond_0
     iget-object p0, p0, Landroidx/compose/ui/platform/AndroidComposeView$keyInputModifier$1;->this$0:Landroidx/compose/ui/platform/AndroidComposeView;
 
@@ -145,7 +141,7 @@
     :goto_0
     const/4 p0, 0x0
 
-    .line 204
+    .line 239
     invoke-static {p0}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
     move-result-object p0

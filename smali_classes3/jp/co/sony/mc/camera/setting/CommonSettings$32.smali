@@ -21,7 +21,7 @@
 .method constructor <init>()V
     .locals 0
 
-    .line 564
+    .line 567
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -42,10 +42,10 @@
         }
     .end annotation
 
-    .line 568
+    .line 571
     check-cast p1, Ljp/co/sony/mc/camera/setting/CommonSettings;
 
-    .line 569
+    .line 572
     invoke-virtual {p1}, Ljp/co/sony/mc/camera/setting/CommonSettings;->getDispFlip()Ljp/co/sony/mc/camera/configuration/parameters/DisplayFlip;
 
     move-result-object p0

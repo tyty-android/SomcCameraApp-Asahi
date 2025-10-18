@@ -60,52 +60,46 @@
 .method public final valueOf(I)Lkotlin/text/CharCategory;
     .locals 2
 
+    if-ltz p1, :cond_0
+
+    const/16 p0, 0x11
+
+    if-ge p1, p0, :cond_0
+
     .line 172
-    new-instance p0, Lkotlin/ranges/IntRange;
-
-    const/4 v0, 0x0
-
-    const/16 v1, 0x10
-
-    invoke-direct {p0, v0, v1}, Lkotlin/ranges/IntRange;-><init>(II)V
-
-    invoke-virtual {p0, p1}, Lkotlin/ranges/IntRange;->contains(I)Z
-
-    move-result p0
-
-    if-eqz p0, :cond_0
-
-    invoke-static {}, Lkotlin/text/CharCategory;->values()[Lkotlin/text/CharCategory;
+    invoke-static {}, Lkotlin/text/CharCategory;->getEntries()Lkotlin/enums/EnumEntries;
 
     move-result-object p0
 
-    aget-object p0, p0, p1
+    invoke-interface {p0, p1}, Lkotlin/enums/EnumEntries;->get(I)Ljava/lang/Object;
+
+    move-result-object p0
+
+    check-cast p0, Lkotlin/text/CharCategory;
 
     goto :goto_0
 
-    .line 173
     :cond_0
-    new-instance p0, Lkotlin/ranges/IntRange;
+    const/16 p0, 0x12
 
-    const/16 v0, 0x12
+    if-gt p0, p1, :cond_1
 
-    const/16 v1, 0x1e
+    const/16 p0, 0x1f
 
-    invoke-direct {p0, v0, v1}, Lkotlin/ranges/IntRange;-><init>(II)V
+    if-ge p1, p0, :cond_1
 
-    invoke-virtual {p0, p1}, Lkotlin/ranges/IntRange;->contains(I)Z
-
-    move-result p0
-
-    if-eqz p0, :cond_1
-
-    invoke-static {}, Lkotlin/text/CharCategory;->values()[Lkotlin/text/CharCategory;
+    .line 173
+    invoke-static {}, Lkotlin/text/CharCategory;->getEntries()Lkotlin/enums/EnumEntries;
 
     move-result-object p0
 
     add-int/lit8 p1, p1, -0x1
 
-    aget-object p0, p0, p1
+    invoke-interface {p0, p1}, Lkotlin/enums/EnumEntries;->get(I)Ljava/lang/Object;
+
+    move-result-object p0
+
+    check-cast p0, Lkotlin/text/CharCategory;
 
     :goto_0
     return-object p0

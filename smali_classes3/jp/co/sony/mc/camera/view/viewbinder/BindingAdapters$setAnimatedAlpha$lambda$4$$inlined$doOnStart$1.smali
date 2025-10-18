@@ -17,7 +17,7 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/SourceDebugExtension;
-    value = "SMAP\nAnimator.kt\nKotlin\n*S Kotlin\n*F\n+ 1 Animator.kt\nandroidx/core/animation/AnimatorKt$addListener$listener$1\n+ 2 Animator.kt\nandroidx/core/animation/AnimatorKt$addListener$4\n+ 3 Animator.kt\nandroidx/core/animation/AnimatorKt$addListener$1\n+ 4 Animator.kt\nandroidx/core/animation/AnimatorKt$addListener$3\n+ 5 BindingAdapters.kt\njp/co/sony/mc/camera/view/viewbinder/BindingAdapters\n+ 6 View.kt\nandroidx/core/view/ViewKt\n*L\n1#1,123:1\n95#2:124\n92#3:125\n94#4:126\n151#5:127\n256#6,2:128\n*S KotlinDebug\n*F\n+ 1 BindingAdapters.kt\njp/co/sony/mc/camera/view/viewbinder/BindingAdapters\n*L\n151#1:128,2\n*E\n"
+    value = "SMAP\nAnimator.kt\nKotlin\n*S Kotlin\n*F\n+ 1 Animator.kt\nandroidx/core/animation/AnimatorKt$addListener$listener$1\n+ 2 Animator.kt\nandroidx/core/animation/AnimatorKt$addListener$4\n+ 3 Animator.kt\nandroidx/core/animation/AnimatorKt$addListener$1\n+ 4 Animator.kt\nandroidx/core/animation/AnimatorKt$addListener$3\n+ 5 BindingAdapters.kt\njp/co/sony/mc/camera/view/viewbinder/BindingAdapters\n+ 6 View.kt\nandroidx/core/view/ViewKt\n*L\n1#1,123:1\n95#2:124\n92#3:125\n94#4:126\n152#5:127\n256#6,2:128\n*S KotlinDebug\n*F\n+ 1 BindingAdapters.kt\njp/co/sony/mc/camera/view/viewbinder/BindingAdapters\n*L\n152#1:128,2\n*E\n"
 .end annotation
 
 .annotation runtime Lkotlin/Metadata;
@@ -39,8 +39,8 @@
     }
     k = 0x1
     mv = {
-        0x1,
-        0x9,
+        0x2,
+        0x0,
         0x0
     }
     xi = 0x30

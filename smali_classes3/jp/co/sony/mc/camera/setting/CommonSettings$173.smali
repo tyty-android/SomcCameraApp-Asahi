@@ -21,7 +21,7 @@
 .method constructor <init>()V
     .locals 0
 
-    .line 1640
+    .line 1646
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -42,8 +42,8 @@
         }
     .end annotation
 
-    .line 1644
-    sget-object p0, Ljp/co/sony/mc/camera/configuration/parameters/MemoryRecall;->DUMMY_OFF:Ljp/co/sony/mc/camera/configuration/parameters/MemoryRecall;
+    .line 1650
+    sget-object p0, Ljp/co/sony/mc/camera/configuration/parameters/ResetSettings;->DUMMY_OFF:Ljp/co/sony/mc/camera/configuration/parameters/ResetSettings;
 
     return-object p0
 .end method

@@ -49,10 +49,10 @@
 .method public constructor <init>(D)V
     .locals 0
 
-    .line 178
+    .line 179
     invoke-direct {p0}, Landroidx/compose/runtime/snapshots/StateRecord;-><init>()V
 
-    .line 177
+    .line 178
     iput-wide p1, p0, Landroidx/compose/runtime/SnapshotMutableDoubleStateImpl$DoubleStateStateRecord;->value:D
 
     return-void
@@ -63,11 +63,11 @@
 .method public assign(Landroidx/compose/runtime/snapshots/StateRecord;)V
     .locals 2
 
-    const-string/jumbo v0, "value"
+    .line 181
+    const-string v0, "null cannot be cast to non-null type androidx.compose.runtime.SnapshotMutableDoubleStateImpl.DoubleStateStateRecord"
 
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 180
     check-cast p1, Landroidx/compose/runtime/SnapshotMutableDoubleStateImpl$DoubleStateStateRecord;
 
     iget-wide v0, p1, Landroidx/compose/runtime/SnapshotMutableDoubleStateImpl$DoubleStateStateRecord;->value:D
@@ -80,7 +80,7 @@
 .method public create()Landroidx/compose/runtime/snapshots/StateRecord;
     .locals 3
 
-    .line 183
+    .line 184
     new-instance v0, Landroidx/compose/runtime/SnapshotMutableDoubleStateImpl$DoubleStateStateRecord;
 
     iget-wide v1, p0, Landroidx/compose/runtime/SnapshotMutableDoubleStateImpl$DoubleStateStateRecord;->value:D
@@ -95,7 +95,7 @@
 .method public final getValue()D
     .locals 2
 
-    .line 177
+    .line 178
     iget-wide v0, p0, Landroidx/compose/runtime/SnapshotMutableDoubleStateImpl$DoubleStateStateRecord;->value:D
 
     return-wide v0
@@ -104,7 +104,7 @@
 .method public final setValue(D)V
     .locals 0
 
-    .line 177
+    .line 178
     iput-wide p1, p0, Landroidx/compose/runtime/SnapshotMutableDoubleStateImpl$DoubleStateStateRecord;->value:D
 
     return-void

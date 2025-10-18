@@ -53,7 +53,7 @@
     f = "Ripple.kt"
     i = {}
     l = {
-        0x122
+        0x12b
     }
     m = "invokeSuspend"
     n = {}
@@ -191,7 +191,7 @@
 
     move-result-object v0
 
-    .line 289
+    .line 298
     iget v1, p0, Landroidx/compose/material/ripple/StateLayer$handleInteraction$1;->label:I
 
     const/4 v2, 0x1
@@ -216,7 +216,7 @@
     :cond_1
     invoke-static {p1}, Lkotlin/ResultKt;->throwOnFailure(Ljava/lang/Object;)V
 
-    .line 290
+    .line 299
     iget-object p1, p0, Landroidx/compose/material/ripple/StateLayer$handleInteraction$1;->this$0:Landroidx/compose/material/ripple/StateLayer;
 
     invoke-static {p1}, Landroidx/compose/material/ripple/StateLayer;->access$getAnimatedAlpha$p(Landroidx/compose/material/ripple/StateLayer;)Landroidx/compose/animation/core/Animatable;
@@ -253,7 +253,7 @@
 
     return-object v0
 
-    .line 291
+    .line 300
     :cond_2
     :goto_0
     sget-object p0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;

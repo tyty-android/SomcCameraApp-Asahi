@@ -15,7 +15,7 @@
 
 .annotation runtime Lkotlin/Metadata;
     d1 = {
-        "\u0000&\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0008\n\u0002\u0008\u000c\n\u0002\u0010\u000b\n\u0002\u0008\u0003\n\u0002\u0010\u000e\n\u0000\u0008\u0087\u0008\u0018\u00002\u00020\u0001B\u001d\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\u0006\u0010\u0004\u001a\u00020\u0005\u0012\u0006\u0010\u0006\u001a\u00020\u0005\u00a2\u0006\u0002\u0010\u0007J\t\u0010\r\u001a\u00020\u0003H\u00c6\u0003J\t\u0010\u000e\u001a\u00020\u0005H\u00c6\u0003J\t\u0010\u000f\u001a\u00020\u0005H\u00c6\u0003J\'\u0010\u0010\u001a\u00020\u00002\u0008\u0008\u0002\u0010\u0002\u001a\u00020\u00032\u0008\u0008\u0002\u0010\u0004\u001a\u00020\u00052\u0008\u0008\u0002\u0010\u0006\u001a\u00020\u0005H\u00c6\u0001J\u0013\u0010\u0011\u001a\u00020\u00122\u0008\u0010\u0013\u001a\u0004\u0018\u00010\u0001H\u00d6\u0003J\t\u0010\u0014\u001a\u00020\u0005H\u00d6\u0001J\t\u0010\u0015\u001a\u00020\u0016H\u00d6\u0001R\u0011\u0010\u0006\u001a\u00020\u0005\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\u0008\u0010\tR\u0011\u0010\u0004\u001a\u00020\u0005\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\n\u0010\tR\u0011\u0010\u0002\u001a\u00020\u0003\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\u000b\u0010\u000c\u00a8\u0006\u0017"
+        "\u0000&\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0008\n\u0002\u0008\r\n\u0002\u0010\u000b\n\u0002\u0008\u0003\n\u0002\u0010\u000e\n\u0000\u0008\u0087\u0008\u0018\u00002\u00020\u0001B\u001f\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\u0006\u0010\u0004\u001a\u00020\u0005\u0012\u0006\u0010\u0006\u001a\u00020\u0005\u00a2\u0006\u0004\u0008\u0007\u0010\u0008J\t\u0010\u000e\u001a\u00020\u0003H\u00c6\u0003J\t\u0010\u000f\u001a\u00020\u0005H\u00c6\u0003J\t\u0010\u0010\u001a\u00020\u0005H\u00c6\u0003J\'\u0010\u0011\u001a\u00020\u00002\u0008\u0008\u0002\u0010\u0002\u001a\u00020\u00032\u0008\u0008\u0002\u0010\u0004\u001a\u00020\u00052\u0008\u0008\u0002\u0010\u0006\u001a\u00020\u0005H\u00c7\u0001J\u0013\u0010\u0012\u001a\u00020\u00132\u0008\u0010\u0014\u001a\u0004\u0018\u00010\u0001H\u00d7\u0003J\t\u0010\u0015\u001a\u00020\u0005H\u00d7\u0001J\t\u0010\u0016\u001a\u00020\u0017H\u00d7\u0001R\u0011\u0010\u0002\u001a\u00020\u0003\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\t\u0010\nR\u0011\u0010\u0004\u001a\u00020\u0005\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\u000b\u0010\u000cR\u0011\u0010\u0006\u001a\u00020\u0005\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\r\u0010\u000c\u00a8\u0006\u0018"
     }
     d2 = {
         "Ljp/co/sony/mc/camera/CameraStatusNotifier$HandDetectionResult;",
@@ -25,12 +25,13 @@
         "detectionWidth",
         "",
         "detectionHeight",
+        "<init>",
         "(Landroid/graphics/Rect;II)V",
-        "getDetectionHeight",
-        "()I",
-        "getDetectionWidth",
         "getPosition",
         "()Landroid/graphics/Rect;",
+        "getDetectionWidth",
+        "()I",
+        "getDetectionHeight",
         "component1",
         "component2",
         "component3",
@@ -45,8 +46,8 @@
     }
     k = 0x1
     mv = {
-        0x1,
-        0x9,
+        0x2,
+        0x0,
         0x0
     }
     xi = 0x30
@@ -79,16 +80,16 @@
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 77
+    .line 78
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 78
+    .line 79
     iput-object p1, p0, Ljp/co/sony/mc/camera/CameraStatusNotifier$HandDetectionResult;->position:Landroid/graphics/Rect;
 
-    .line 79
+    .line 80
     iput p2, p0, Ljp/co/sony/mc/camera/CameraStatusNotifier$HandDetectionResult;->detectionWidth:I
 
-    .line 80
+    .line 81
     iput p3, p0, Ljp/co/sony/mc/camera/CameraStatusNotifier$HandDetectionResult;->detectionHeight:I
 
     return-void
@@ -223,7 +224,7 @@
 .method public final getDetectionHeight()I
     .locals 0
 
-    .line 80
+    .line 81
     iget p0, p0, Ljp/co/sony/mc/camera/CameraStatusNotifier$HandDetectionResult;->detectionHeight:I
 
     return p0
@@ -232,7 +233,7 @@
 .method public final getDetectionWidth()I
     .locals 0
 
-    .line 79
+    .line 80
     iget p0, p0, Ljp/co/sony/mc/camera/CameraStatusNotifier$HandDetectionResult;->detectionWidth:I
 
     return p0
@@ -241,7 +242,7 @@
 .method public final getPosition()Landroid/graphics/Rect;
     .locals 0
 
-    .line 78
+    .line 79
     iget-object p0, p0, Ljp/co/sony/mc/camera/CameraStatusNotifier$HandDetectionResult;->position:Landroid/graphics/Rect;
 
     return-object p0

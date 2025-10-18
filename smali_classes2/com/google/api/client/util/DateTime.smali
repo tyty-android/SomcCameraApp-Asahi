@@ -221,7 +221,7 @@
 
     const/16 v0, 0x2d
 
-    .line 429
+    .line 433
     invoke-virtual {p0, v0}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
 
     neg-int p1, p1
@@ -232,7 +232,7 @@
     :goto_0
     if-lez v0, :cond_1
 
-    .line 434
+    .line 438
     div-int/lit8 v0, v0, 0xa
 
     add-int/lit8 p2, p2, -0x1
@@ -247,7 +247,7 @@
 
     const/16 v1, 0x30
 
-    .line 438
+    .line 442
     invoke-virtual {p0, v1}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
 
     add-int/lit8 v0, v0, 0x1
@@ -257,7 +257,7 @@
     :cond_2
     if-eqz p1, :cond_3
 
-    .line 441
+    .line 445
     invoke-virtual {p0, p1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
     :cond_3
@@ -305,14 +305,14 @@
 
     move-object/from16 v0, p0
 
-    .line 369
+    .line 373
     sget-object v1, Lcom/google/api/client/util/DateTime;->RFC3339_PATTERN:Ljava/util/regex/Pattern;
 
     invoke-virtual {v1, v0}, Ljava/util/regex/Pattern;->matcher(Ljava/lang/CharSequence;)Ljava/util/regex/Matcher;
 
     move-result-object v1
 
-    .line 370
+    .line 374
     invoke-virtual {v1}, Ljava/util/regex/Matcher;->matches()Z
 
     move-result v2
@@ -321,7 +321,7 @@
 
     const/4 v2, 0x1
 
-    .line 374
+    .line 378
     invoke-virtual {v1, v2}, Ljava/util/regex/Matcher;->group(I)Ljava/lang/String;
 
     move-result-object v3
@@ -332,7 +332,7 @@
 
     const/4 v3, 0x2
 
-    .line 375
+    .line 379
     invoke-virtual {v1, v3}, Ljava/util/regex/Matcher;->group(I)Ljava/lang/String;
 
     move-result-object v3
@@ -345,7 +345,7 @@
 
     const/4 v3, 0x3
 
-    .line 376
+    .line 380
     invoke-virtual {v1, v3}, Ljava/util/regex/Matcher;->group(I)Ljava/lang/String;
 
     move-result-object v3
@@ -356,7 +356,7 @@
 
     const/4 v3, 0x4
 
-    .line 377
+    .line 381
     invoke-virtual {v1, v3}, Ljava/util/regex/Matcher;->group(I)Ljava/lang/String;
 
     move-result-object v3
@@ -375,7 +375,7 @@
     :goto_0
     const/16 v3, 0x9
 
-    .line 378
+    .line 382
     invoke-virtual {v1, v3}, Ljava/util/regex/Matcher;->group(I)Ljava/lang/String;
 
     move-result-object v12
@@ -396,7 +396,7 @@
 
     goto :goto_2
 
-    .line 387
+    .line 391
     :cond_2
     new-instance v1, Ljava/lang/NumberFormatException;
 
@@ -424,7 +424,7 @@
 
     const/4 v0, 0x5
 
-    .line 394
+    .line 398
     invoke-virtual {v1, v0}, Ljava/util/regex/Matcher;->group(I)Ljava/lang/String;
 
     move-result-object v0
@@ -435,7 +435,7 @@
 
     const/4 v4, 0x6
 
-    .line 395
+    .line 399
     invoke-virtual {v1, v4}, Ljava/util/regex/Matcher;->group(I)Ljava/lang/String;
 
     move-result-object v4
@@ -446,7 +446,7 @@
 
     const/4 v8, 0x7
 
-    .line 396
+    .line 400
     invoke-virtual {v1, v8}, Ljava/util/regex/Matcher;->group(I)Ljava/lang/String;
 
     move-result-object v8
@@ -457,14 +457,14 @@
 
     const/16 v9, 0x8
 
-    .line 397
+    .line 401
     invoke-virtual {v1, v9}, Ljava/util/regex/Matcher;->group(I)Ljava/lang/String;
 
     move-result-object v10
 
     if-eqz v10, :cond_4
 
-    .line 398
+    .line 402
     invoke-virtual {v1, v9}, Ljava/util/regex/Matcher;->group(I)Ljava/lang/String;
 
     move-result-object v9
@@ -479,7 +479,7 @@
 
     move-result-object v2
 
-    .line 399
+    .line 403
     invoke-static {v2}, Ljava/lang/Integer;->parseInt(Ljava/lang/String;)I
 
     move-result v2
@@ -513,7 +513,7 @@
 
     move v15, v10
 
-    .line 402
+    .line 406
     :goto_4
     new-instance v0, Ljava/util/GregorianCalendar;
 
@@ -521,15 +521,15 @@
 
     invoke-direct {v0, v2}, Ljava/util/GregorianCalendar;-><init>(Ljava/util/TimeZone;)V
 
-    .line 403
+    .line 407
     invoke-virtual {v0}, Ljava/util/Calendar;->clear()V
 
     move-object v4, v0
 
-    .line 404
+    .line 408
     invoke-virtual/range {v4 .. v10}, Ljava/util/Calendar;->set(IIIIII)V
 
-    .line 405
+    .line 409
     invoke-virtual {v0}, Ljava/util/Calendar;->getTimeInMillis()J
 
     move-result-wide v2
@@ -538,7 +538,7 @@
 
     if-eqz v13, :cond_8
 
-    .line 408
+    .line 412
     invoke-virtual {v12, v11}, Ljava/lang/String;->charAt(I)C
 
     move-result v0
@@ -553,7 +553,7 @@
 
     const/16 v0, 0xb
 
-    .line 410
+    .line 414
     invoke-virtual {v1, v0}, Ljava/util/regex/Matcher;->group(I)Ljava/lang/String;
 
     move-result-object v0
@@ -566,7 +566,7 @@
 
     const/16 v4, 0xc
 
-    .line 411
+    .line 415
     invoke-virtual {v1, v4}, Ljava/util/regex/Matcher;->group(I)Ljava/lang/String;
 
     move-result-object v4
@@ -579,7 +579,7 @@
 
     const/16 v4, 0xa
 
-    .line 412
+    .line 416
     invoke-virtual {v1, v4}, Ljava/util/regex/Matcher;->group(I)Ljava/lang/String;
 
     move-result-object v1
@@ -603,14 +603,14 @@
 
     sub-long/2addr v2, v4
 
-    .line 416
+    .line 420
     invoke-static {v0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object v0
 
     goto :goto_5
 
-    .line 418
+    .line 422
     :cond_7
     invoke-static {v11}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -626,10 +626,10 @@
 
     const-wide/16 v0, 0x3e8
 
-    .line 422
+    .line 426
     div-long v13, v2, v0
 
-    .line 423
+    .line 427
     new-instance v0, Lcom/google/api/client/util/DateTime$Rfc3339ParseResult;
 
     const/16 v18, 0x0
@@ -640,7 +640,7 @@
 
     return-object v0
 
-    .line 371
+    .line 375
     :cond_9
     new-instance v1, Ljava/lang/NumberFormatException;
 
@@ -737,44 +737,44 @@
 .end method
 
 .method public hashCode()I
-    .locals 4
-
-    const/4 v0, 0x3
+    .locals 7
 
     .line 253
-    new-array v0, v0, [J
+    iget-wide v0, p0, Lcom/google/api/client/util/DateTime;->value:J
 
-    const/4 v1, 0x0
+    iget-boolean v2, p0, Lcom/google/api/client/util/DateTime;->dateOnly:Z
 
-    iget-wide v2, p0, Lcom/google/api/client/util/DateTime;->value:J
+    if-eqz v2, :cond_0
 
-    aput-wide v2, v0, v1
-
-    iget-boolean v1, p0, Lcom/google/api/client/util/DateTime;->dateOnly:Z
-
-    if-eqz v1, :cond_0
-
-    const-wide/16 v1, 0x1
+    const-wide/16 v2, 0x1
 
     goto :goto_0
 
     :cond_0
-    const-wide/16 v1, 0x0
+    const-wide/16 v2, 0x0
 
     :goto_0
-    const/4 v3, 0x1
-
-    aput-wide v1, v0, v3
-
     iget p0, p0, Lcom/google/api/client/util/DateTime;->tzShift:I
 
-    int-to-long v1, p0
+    int-to-long v4, p0
 
-    const/4 p0, 0x2
+    const/4 p0, 0x3
 
-    aput-wide v1, v0, p0
+    new-array p0, p0, [J
 
-    invoke-static {v0}, Ljava/util/Arrays;->hashCode([J)I
+    const/4 v6, 0x0
+
+    aput-wide v0, p0, v6
+
+    const/4 v0, 0x1
+
+    aput-wide v2, p0, v0
+
+    const/4 v0, 0x2
+
+    aput-wide v4, p0, v0
+
+    invoke-static {p0}, Ljava/util/Arrays;->hashCode([J)I
 
     move-result p0
 

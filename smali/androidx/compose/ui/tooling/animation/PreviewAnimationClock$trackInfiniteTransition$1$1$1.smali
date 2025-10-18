@@ -1,6 +1,6 @@
 .class final Landroidx/compose/ui/tooling/animation/PreviewAnimationClock$trackInfiniteTransition$1$1$1;
 .super Lkotlin/jvm/internal/Lambda;
-.source "PreviewAnimationClock.kt"
+.source "PreviewAnimationClock.android.kt"
 
 # interfaces
 .implements Lkotlin/jvm/functions/Function0;
@@ -26,7 +26,7 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/SourceDebugExtension;
-    value = "SMAP\nPreviewAnimationClock.kt\nKotlin\n*S Kotlin\n*F\n+ 1 PreviewAnimationClock.kt\nandroidx/compose/ui/tooling/animation/PreviewAnimationClock$trackInfiniteTransition$1$1$1\n+ 2 fake.kt\nkotlin/jvm/internal/FakeKt\n*L\n1#1,338:1\n1#2:339\n*E\n"
+    value = "SMAP\nPreviewAnimationClock.android.kt\nKotlin\n*S Kotlin\n*F\n+ 1 PreviewAnimationClock.android.kt\nandroidx/compose/ui/tooling/animation/PreviewAnimationClock$trackInfiniteTransition$1$1$1\n+ 2 fake.kt\nkotlin/jvm/internal/FakeKt\n*L\n1#1,353:1\n1#2:354\n*E\n"
 .end annotation
 
 .annotation runtime Lkotlin/Metadata;
@@ -71,7 +71,7 @@
 .method public final invoke()Ljava/lang/Long;
     .locals 7
 
-    .line 172
+    .line 183
     iget-object v0, p0, Landroidx/compose/ui/tooling/animation/PreviewAnimationClock$trackInfiniteTransition$1$1$1;->this$0:Landroidx/compose/ui/tooling/animation/PreviewAnimationClock;
 
     invoke-static {v0}, Landroidx/compose/ui/tooling/animation/PreviewAnimationClock;->access$getAllClocksExceptInfinite(Landroidx/compose/ui/tooling/animation/PreviewAnimationClock;)Ljava/util/List;
@@ -164,7 +164,7 @@
     :cond_3
     move-wide v0, v3
 
-    .line 174
+    .line 185
     :goto_2
     iget-object p0, p0, Landroidx/compose/ui/tooling/animation/PreviewAnimationClock$trackInfiniteTransition$1$1$1;->this$0:Landroidx/compose/ui/tooling/animation/PreviewAnimationClock;
 
@@ -197,7 +197,7 @@
 
     check-cast v2, Landroidx/compose/ui/tooling/animation/clock/InfiniteTransitionClock;
 
-    .line 175
+    .line 186
     invoke-virtual {v2}, Landroidx/compose/ui/tooling/animation/clock/InfiniteTransitionClock;->getMaxDurationPerIteration()J
 
     move-result-wide v5
@@ -206,7 +206,7 @@
 
     move-result-object v2
 
-    .line 174
+    .line 185
     check-cast v2, Ljava/lang/Comparable;
 
     :cond_5
@@ -223,7 +223,7 @@
 
     check-cast v5, Landroidx/compose/ui/tooling/animation/clock/InfiniteTransitionClock;
 
-    .line 175
+    .line 186
     invoke-virtual {v5}, Landroidx/compose/ui/tooling/animation/clock/InfiniteTransitionClock;->getMaxDurationPerIteration()J
 
     move-result-wide v5
@@ -232,7 +232,7 @@
 
     move-result-object v5
 
-    .line 174
+    .line 185
     check-cast v5, Ljava/lang/Comparable;
 
     invoke-interface {v2, v5}, Ljava/lang/Comparable;->compareTo(Ljava/lang/Object;)I
@@ -255,7 +255,7 @@
 
     move-result-wide v3
 
-    .line 177
+    .line 188
     :cond_7
     invoke-static {v0, v1, v3, v4}, Ljava/lang/Math;->max(JJ)J
 
@@ -271,7 +271,7 @@
 .method public bridge synthetic invoke()Ljava/lang/Object;
     .locals 0
 
-    .line 169
+    .line 180
     invoke-virtual {p0}, Landroidx/compose/ui/tooling/animation/PreviewAnimationClock$trackInfiniteTransition$1$1$1;->invoke()Ljava/lang/Long;
 
     move-result-object p0

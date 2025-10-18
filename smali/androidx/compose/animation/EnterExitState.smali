@@ -65,7 +65,7 @@
 .method static constructor <clinit>()V
     .locals 3
 
-    .line 297
+    .line 303
     new-instance v0, Landroidx/compose/animation/EnterExitState;
 
     const-string v1, "PreEnter"
@@ -76,7 +76,7 @@
 
     sput-object v0, Landroidx/compose/animation/EnterExitState;->PreEnter:Landroidx/compose/animation/EnterExitState;
 
-    .line 303
+    .line 309
     new-instance v0, Landroidx/compose/animation/EnterExitState;
 
     const-string v1, "Visible"
@@ -87,7 +87,7 @@
 
     sput-object v0, Landroidx/compose/animation/EnterExitState;->Visible:Landroidx/compose/animation/EnterExitState;
 
-    .line 308
+    .line 314
     new-instance v0, Landroidx/compose/animation/EnterExitState;
 
     const-string v1, "PostExit"
@@ -115,7 +115,7 @@
         }
     .end annotation
 
-    .line 292
+    .line 298
     invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
     return-void

@@ -1,6 +1,6 @@
 .class public final Landroidx/lifecycle/PausingDispatcher;
 .super Lkotlinx/coroutines/CoroutineDispatcher;
-.source "PausingDispatcher.kt"
+.source "PausingDispatcher.jvm.kt"
 
 
 # annotations
@@ -43,10 +43,10 @@
 .method public constructor <init>()V
     .locals 1
 
-    .line 215
+    .line 217
     invoke-direct {p0}, Lkotlinx/coroutines/CoroutineDispatcher;-><init>()V
 
-    .line 220
+    .line 222
     new-instance v0, Landroidx/lifecycle/DispatchQueue;
 
     invoke-direct {v0}, Landroidx/lifecycle/DispatchQueue;-><init>()V
@@ -69,7 +69,7 @@
 
     invoke-static {p2, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 234
+    .line 236
     iget-object p0, p0, Landroidx/lifecycle/PausingDispatcher;->dispatchQueue:Landroidx/lifecycle/DispatchQueue;
 
     invoke-virtual {p0, p1, p2}, Landroidx/lifecycle/DispatchQueue;->dispatchAndEnqueue(Lkotlin/coroutines/CoroutineContext;Ljava/lang/Runnable;)V
@@ -84,7 +84,7 @@
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 223
+    .line 225
     invoke-static {}, Lkotlinx/coroutines/Dispatchers;->getMain()Lkotlinx/coroutines/MainCoroutineDispatcher;
 
     move-result-object v0
@@ -103,7 +103,7 @@
 
     return v0
 
-    .line 230
+    .line 232
     :cond_0
     iget-object p0, p0, Landroidx/lifecycle/PausingDispatcher;->dispatchQueue:Landroidx/lifecycle/DispatchQueue;
 

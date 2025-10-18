@@ -226,10 +226,6 @@
 .method public writeToParcel(Landroid/os/Parcel;I)V
     .locals 0
 
-    const-string p2, "parcel"
-
-    invoke-static {p1, p2}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
     .line 30
     iget p0, p0, Landroidx/compose/foundation/lazy/layout/DefaultLazyKey;->index:I
 

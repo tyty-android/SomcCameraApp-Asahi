@@ -55,7 +55,7 @@
     f = "FlowLiveData.kt"
     i = {}
     l = {
-        0x50
+        0x4e
     }
     m = "invokeSuspend"
     n = {}
@@ -182,7 +182,7 @@
 
     move-result-object v0
 
-    .line 79
+    .line 77
     iget v1, p0, Landroidx/lifecycle/FlowLiveDataConversions$asLiveData$1;->label:I
 
     const/4 v2, 0x1
@@ -211,7 +211,7 @@
 
     check-cast p1, Landroidx/lifecycle/LiveDataScope;
 
-    .line 80
+    .line 78
     iget-object v1, p0, Landroidx/lifecycle/FlowLiveDataConversions$asLiveData$1;->$this_asLiveData:Lkotlinx/coroutines/flow/Flow;
 
     new-instance v3, Landroidx/lifecycle/FlowLiveDataConversions$asLiveData$1$1;
@@ -234,7 +234,7 @@
 
     return-object v0
 
-    .line 83
+    .line 81
     :cond_2
     :goto_0
     sget-object p0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;

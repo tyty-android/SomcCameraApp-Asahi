@@ -21,7 +21,7 @@
 .method constructor <init>()V
     .locals 0
 
-    .line 518
+    .line 521
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -42,10 +42,10 @@
         }
     .end annotation
 
-    .line 521
+    .line 524
     check-cast p1, Ljp/co/sony/mc/camera/setting/CommonSettings;
 
-    .line 522
+    .line 525
     invoke-static {p1}, Ljp/co/sony/mc/camera/setting/CommonSettings;->-$$Nest$mgetProVideoDispCustomExtensionData(Ljp/co/sony/mc/camera/setting/CommonSettings;)Ljp/co/sony/mc/camera/configuration/parameters/DispCustomExtensionData;
 
     move-result-object p0

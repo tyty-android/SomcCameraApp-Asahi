@@ -35,30 +35,34 @@
 .end method
 
 .method public static getNormalizedRotation(I)I
-    .locals 2
+    .locals 5
 
     .line 42
     sget-boolean v0, Ljp/co/sony/mc/camera/util/CamLog;->VERBOSE:Z
 
+    const/4 v1, 0x1
+
+    const/4 v2, 0x0
+
     if-eqz v0, :cond_0
 
-    new-instance v0, Ljava/lang/StringBuilder;
+    new-array v0, v1, [Ljava/lang/String;
 
-    const-string v1, "ORIENTATION: sensor value "
+    new-instance v3, Ljava/lang/StringBuilder;
 
-    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+    const-string v4, "ORIENTATION: sensor value "
 
-    invoke-virtual {v0, p0}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+    invoke-direct {v3, v4}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
-    move-result-object v0
+    invoke-virtual {v3, p0}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    move-result-object v3
 
-    move-result-object v0
+    invoke-virtual {v3}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    filled-new-array {v0}, [Ljava/lang/String;
+    move-result-object v3
 
-    move-result-object v0
+    aput-object v3, v0, v2
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
@@ -68,11 +72,11 @@
 
     const/16 v0, 0x2d
 
-    const/16 v1, 0x87
+    const/16 v3, 0x87
 
     if-ge v0, p0, :cond_1
 
-    if-gt p0, v1, :cond_1
+    if-gt p0, v3, :cond_1
 
     const/16 p0, 0x5a
 
@@ -81,7 +85,7 @@
     :cond_1
     const/16 v0, 0xe1
 
-    if-gt v1, p0, :cond_2
+    if-gt v3, p0, :cond_2
 
     if-gt p0, v0, :cond_2
 
@@ -101,7 +105,7 @@
     goto :goto_0
 
     :cond_3
-    const/4 p0, 0x0
+    move p0, v2
 
     .line 55
     :goto_0
@@ -109,25 +113,29 @@
 
     if-eqz v0, :cond_4
 
-    new-instance v0, Ljava/lang/StringBuilder;
+    const/4 v0, 0x2
 
-    const-string v1, "ORIENTATION: normalized value is "
+    new-array v0, v0, [Ljava/lang/String;
 
-    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+    const-string v3, "RotationUtil"
 
-    invoke-virtual {v0, p0}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+    aput-object v3, v0, v2
 
-    move-result-object v0
+    new-instance v2, Ljava/lang/StringBuilder;
 
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    const-string v3, "ORIENTATION: normalized value is "
 
-    move-result-object v0
+    invoke-direct {v2, v3}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
-    const-string v1, "RotationUtil"
+    invoke-virtual {v2, p0}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
-    filled-new-array {v1, v0}, [Ljava/lang/String;
+    move-result-object v2
 
-    move-result-object v0
+    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v2
+
+    aput-object v2, v0, v1
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 

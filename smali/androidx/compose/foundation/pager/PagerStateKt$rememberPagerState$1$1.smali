@@ -90,19 +90,19 @@
 .method public final invoke()Landroidx/compose/foundation/pager/PagerStateImpl;
     .locals 3
 
-    .line 80
+    .line 82
     new-instance v0, Landroidx/compose/foundation/pager/PagerStateImpl;
 
-    .line 81
+    .line 83
     iget v1, p0, Landroidx/compose/foundation/pager/PagerStateKt$rememberPagerState$1$1;->$initialPage:I
 
-    .line 82
+    .line 84
     iget v2, p0, Landroidx/compose/foundation/pager/PagerStateKt$rememberPagerState$1$1;->$initialPageOffsetFraction:F
 
-    .line 83
+    .line 85
     iget-object p0, p0, Landroidx/compose/foundation/pager/PagerStateKt$rememberPagerState$1$1;->$pageCount:Lkotlin/jvm/functions/Function0;
 
-    .line 80
+    .line 82
     invoke-direct {v0, v1, v2, p0}, Landroidx/compose/foundation/pager/PagerStateImpl;-><init>(IFLkotlin/jvm/functions/Function0;)V
 
     return-object v0
@@ -111,7 +111,7 @@
 .method public bridge synthetic invoke()Ljava/lang/Object;
     .locals 0
 
-    .line 79
+    .line 81
     invoke-virtual {p0}, Landroidx/compose/foundation/pager/PagerStateKt$rememberPagerState$1$1;->invoke()Landroidx/compose/foundation/pager/PagerStateImpl;
 
     move-result-object p0

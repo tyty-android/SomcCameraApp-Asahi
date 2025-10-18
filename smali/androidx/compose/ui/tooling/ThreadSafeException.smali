@@ -1,6 +1,6 @@
 .class public final Landroidx/compose/ui/tooling/ThreadSafeException;
 .super Ljava/lang/Object;
-.source "PreviewUtils.kt"
+.source "PreviewUtils.android.kt"
 
 
 # annotations
@@ -31,6 +31,10 @@
 .end annotation
 
 
+# static fields
+.field public static final $stable:I = 0x8
+
+
 # instance fields
 .field private exception:Ljava/lang/Throwable;
 
@@ -38,13 +42,19 @@
 
 
 # direct methods
+.method static constructor <clinit>()V
+    .locals 0
+
+    return-void
+.end method
+
 .method public constructor <init>()V
     .locals 1
 
-    .line 122
+    .line 146
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 128
+    .line 152
     new-instance v0, Ljava/lang/Object;
 
     invoke-direct {v0}, Ljava/lang/Object;-><init>()V
@@ -59,25 +69,21 @@
 .method public final set(Ljava/lang/Throwable;)V
     .locals 1
 
-    const-string/jumbo v0, "throwable"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 131
+    .line 155
     iget-object v0, p0, Landroidx/compose/ui/tooling/ThreadSafeException;->lock:Ljava/lang/Object;
 
     monitor-enter v0
 
-    .line 132
+    .line 156
     :try_start_0
     iput-object p1, p0, Landroidx/compose/ui/tooling/ThreadSafeException;->exception:Ljava/lang/Throwable;
 
-    .line 133
+    .line 157
     sget-object p0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 131
+    .line 155
     monitor-exit v0
 
     return-void
@@ -93,12 +99,12 @@
 .method public final throwIfPresent()V
     .locals 3
 
-    .line 137
+    .line 161
     iget-object v0, p0, Landroidx/compose/ui/tooling/ThreadSafeException;->lock:Ljava/lang/Object;
 
     monitor-enter v0
 
-    .line 138
+    .line 162
     :try_start_0
     iget-object v1, p0, Landroidx/compose/ui/tooling/ThreadSafeException;->exception:Ljava/lang/Throwable;
     :try_end_0
@@ -106,7 +112,7 @@
 
     if-nez v1, :cond_0
 
-    .line 137
+    .line 161
     monitor-exit v0
 
     return-void
@@ -114,11 +120,11 @@
     :cond_0
     const/4 v2, 0x0
 
-    .line 139
+    .line 163
     :try_start_1
     iput-object v2, p0, Landroidx/compose/ui/tooling/ThreadSafeException;->exception:Ljava/lang/Throwable;
 
-    .line 140
+    .line 164
     throw v1
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
@@ -126,7 +132,7 @@
     :catchall_0
     move-exception p0
 
-    .line 137
+    .line 161
     monitor-exit v0
 
     throw p0

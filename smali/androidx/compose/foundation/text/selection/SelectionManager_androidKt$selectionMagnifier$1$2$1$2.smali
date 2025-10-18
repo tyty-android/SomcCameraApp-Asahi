@@ -91,7 +91,7 @@
 .method public bridge synthetic invoke(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 2
 
-    .line 55
+    .line 54
     check-cast p1, Landroidx/compose/ui/unit/DpSize;
 
     invoke-virtual {p1}, Landroidx/compose/ui/unit/DpSize;->unbox-impl()J
@@ -108,12 +108,12 @@
 .method public final invoke-EaSLcWc(J)V
     .locals 2
 
-    .line 58
+    .line 57
     iget-object v0, p0, Landroidx/compose/foundation/text/selection/SelectionManager_androidKt$selectionMagnifier$1$2$1$2;->$magnifierSize$delegate:Landroidx/compose/runtime/MutableState;
 
     iget-object p0, p0, Landroidx/compose/foundation/text/selection/SelectionManager_androidKt$selectionMagnifier$1$2$1$2;->$density:Landroidx/compose/ui/unit/Density;
 
-    .line 59
+    .line 58
     invoke-static {p1, p2}, Landroidx/compose/ui/unit/DpSize;->getWidth-D9Ej5fM(J)F
 
     move-result v1
@@ -134,7 +134,7 @@
 
     move-result-wide p0
 
-    .line 58
+    .line 57
     invoke-static {v0, p0, p1}, Landroidx/compose/foundation/text/selection/SelectionManager_androidKt$selectionMagnifier$1;->access$invoke$lambda$2(Landroidx/compose/runtime/MutableState;J)V
 
     return-void

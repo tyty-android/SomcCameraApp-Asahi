@@ -40,7 +40,7 @@
 .method private constructor <init>(Ljp/co/sony/mc/camera/controller/StateMachine;ZZ)V
     .locals 2
 
-    .line 5464
+    .line 5498
     iput-object p1, p0, Ljp/co/sony/mc/camera/controller/StateMachine$StateFatal;->this$0:Ljp/co/sony/mc/camera/controller/StateMachine;
 
     const/4 v0, 0x0
@@ -49,51 +49,51 @@
 
     const/4 v1, 0x0
 
-    .line 5444
+    .line 5478
     iput-boolean v1, p0, Ljp/co/sony/mc/camera/controller/StateMachine$StateFatal;->mIsSaving:Z
 
-    .line 5446
+    .line 5480
     iput-boolean v1, p0, Ljp/co/sony/mc/camera/controller/StateMachine$StateFatal;->mLazyAbort:Z
 
-    .line 5454
+    .line 5488
     iput-object v0, p0, Ljp/co/sony/mc/camera/controller/StateMachine$StateFatal;->mStoreDataResult:Ljp/co/sony/mc/camera/mediasaving/StoreDataResult;
 
-    .line 5456
+    .line 5490
     iput-object v0, p0, Ljp/co/sony/mc/camera/controller/StateMachine$StateFatal;->mLazyAbortTask:Ljp/co/sony/mc/camera/controller/StateMachine$StateFatal$LazyAbortTask;
 
-    .line 5465
+    .line 5499
     sget-object v0, Ljp/co/sony/mc/camera/controller/StateMachine$CaptureState;->STATE_FATAL:Ljp/co/sony/mc/camera/controller/StateMachine$CaptureState;
 
     iput-object v0, p0, Ljp/co/sony/mc/camera/controller/StateMachine$StateFatal;->mCaptureState:Ljp/co/sony/mc/camera/controller/StateMachine$CaptureState;
 
-    .line 5466
+    .line 5500
     iput-boolean p2, p0, Ljp/co/sony/mc/camera/controller/StateMachine$StateFatal;->mIsSaving:Z
 
-    .line 5467
+    .line 5501
     iput-boolean p3, p0, Ljp/co/sony/mc/camera/controller/StateMachine$StateFatal;->mLazyAbort:Z
 
-    .line 5470
+    .line 5504
     invoke-static {p1}, Ljp/co/sony/mc/camera/controller/StateMachine;->-$$Nest$fgetmCameraDeviceHandler(Ljp/co/sony/mc/camera/controller/StateMachine;)Ljp/co/sony/mc/camera/device/CameraDeviceHandler;
 
     move-result-object p2
 
     invoke-virtual {p2}, Ljp/co/sony/mc/camera/device/CameraDeviceHandler;->stopFaceDetection()V
 
-    .line 5471
+    .line 5505
     invoke-static {p1}, Ljp/co/sony/mc/camera/controller/StateMachine;->-$$Nest$fgetmCameraDeviceHandler(Ljp/co/sony/mc/camera/controller/StateMachine;)Ljp/co/sony/mc/camera/device/CameraDeviceHandler;
 
     move-result-object p2
 
     invoke-virtual {p2}, Ljp/co/sony/mc/camera/device/CameraDeviceHandler;->stopSceneRecognition()V
 
-    .line 5472
+    .line 5506
     invoke-static {p1}, Ljp/co/sony/mc/camera/controller/StateMachine;->-$$Nest$fgetmCameraDeviceHandler(Ljp/co/sony/mc/camera/controller/StateMachine;)Ljp/co/sony/mc/camera/device/CameraDeviceHandler;
 
     move-result-object p2
 
     invoke-virtual {p2}, Ljp/co/sony/mc/camera/device/CameraDeviceHandler;->stopAutoFlashMonitoring()V
 
-    .line 5474
+    .line 5508
     invoke-static {p1}, Ljp/co/sony/mc/camera/controller/StateMachine;->-$$Nest$fgetmPendingTaskListForStandby(Ljp/co/sony/mc/camera/controller/StateMachine;)Ljava/util/List;
 
     move-result-object p2
@@ -104,14 +104,14 @@
 
     if-nez p2, :cond_0
 
-    .line 5475
+    .line 5509
     invoke-static {p1}, Ljp/co/sony/mc/camera/controller/StateMachine;->-$$Nest$fgetmPendingTaskListForStandby(Ljp/co/sony/mc/camera/controller/StateMachine;)Ljava/util/List;
 
     move-result-object p2
 
     invoke-interface {p2}, Ljava/util/List;->clear()V
 
-    .line 5478
+    .line 5512
     :cond_0
     invoke-static {p1}, Ljp/co/sony/mc/camera/controller/StateMachine;->-$$Nest$fgetmHandShutterController(Ljp/co/sony/mc/camera/controller/StateMachine;)Ljp/co/sony/mc/camera/controller/StateMachine$HandShutterController;
 
@@ -119,22 +119,22 @@
 
     invoke-virtual {p2}, Ljp/co/sony/mc/camera/controller/StateMachine$HandShutterController;->stopPreview()V
 
-    .line 5481
+    .line 5515
     invoke-static {p1}, Ljp/co/sony/mc/camera/controller/StateMachine;->-$$Nest$fgetmCameraDeviceHandler(Ljp/co/sony/mc/camera/controller/StateMachine;)Ljp/co/sony/mc/camera/device/CameraDeviceHandler;
 
     move-result-object p2
 
     invoke-virtual {p2}, Ljp/co/sony/mc/camera/device/CameraDeviceHandler;->stopPreview()V
 
-    .line 5484
+    .line 5518
     invoke-static {p1}, Ljp/co/sony/mc/camera/controller/StateMachine;->-$$Nest$mremoveStartRecordingTask(Ljp/co/sony/mc/camera/controller/StateMachine;)V
 
-    .line 5486
+    .line 5520
     iget-boolean p1, p0, Ljp/co/sony/mc/camera/controller/StateMachine$StateFatal;->mLazyAbort:Z
 
     if-eqz p1, :cond_1
 
-    .line 5487
+    .line 5521
     invoke-direct {p0}, Ljp/co/sony/mc/camera/controller/StateMachine$StateFatal;->doLazyAbort()V
 
     :cond_1
@@ -152,12 +152,12 @@
 .method private doLazyAbort()V
     .locals 3
 
-    .line 5532
+    .line 5566
     iget-object v0, p0, Ljp/co/sony/mc/camera/controller/StateMachine$StateFatal;->mLazyAbortTask:Ljp/co/sony/mc/camera/controller/StateMachine$StateFatal$LazyAbortTask;
 
     if-eqz v0, :cond_0
 
-    .line 5533
+    .line 5567
     iget-object v0, p0, Ljp/co/sony/mc/camera/controller/StateMachine$StateFatal;->this$0:Ljp/co/sony/mc/camera/controller/StateMachine;
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/controller/StateMachine;->-$$Nest$fgetmHandler(Ljp/co/sony/mc/camera/controller/StateMachine;)Landroid/os/Handler;
@@ -168,7 +168,7 @@
 
     invoke-virtual {v0, v1}, Landroid/os/Handler;->removeCallbacks(Ljava/lang/Runnable;)V
 
-    .line 5535
+    .line 5569
     :cond_0
     new-instance v0, Ljp/co/sony/mc/camera/controller/StateMachine$StateFatal$LazyAbortTask;
 
@@ -178,7 +178,7 @@
 
     iput-object v0, p0, Ljp/co/sony/mc/camera/controller/StateMachine$StateFatal;->mLazyAbortTask:Ljp/co/sony/mc/camera/controller/StateMachine$StateFatal$LazyAbortTask;
 
-    .line 5536
+    .line 5570
     iget-object v0, p0, Ljp/co/sony/mc/camera/controller/StateMachine$StateFatal;->this$0:Ljp/co/sony/mc/camera/controller/StateMachine;
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/controller/StateMachine;->-$$Nest$fgetmHandler(Ljp/co/sony/mc/camera/controller/StateMachine;)Landroid/os/Handler;
@@ -199,12 +199,12 @@
 .method public exit()V
     .locals 2
 
-    .line 5525
+    .line 5559
     iget-object v0, p0, Ljp/co/sony/mc/camera/controller/StateMachine$StateFatal;->mLazyAbortTask:Ljp/co/sony/mc/camera/controller/StateMachine$StateFatal$LazyAbortTask;
 
     if-eqz v0, :cond_0
 
-    .line 5526
+    .line 5560
     iget-object v0, p0, Ljp/co/sony/mc/camera/controller/StateMachine$StateFatal;->this$0:Ljp/co/sony/mc/camera/controller/StateMachine;
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/controller/StateMachine;->-$$Nest$fgetmHandler(Ljp/co/sony/mc/camera/controller/StateMachine;)Landroid/os/Handler;
@@ -217,7 +217,7 @@
 
     const/4 v0, 0x0
 
-    .line 5527
+    .line 5561
     iput-object v0, p0, Ljp/co/sony/mc/camera/controller/StateMachine$StateFatal;->mLazyAbortTask:Ljp/co/sony/mc/camera/controller/StateMachine$StateFatal$LazyAbortTask;
 
     :cond_0
@@ -227,7 +227,7 @@
 .method public varargs handleFinalize([Ljava/lang/Object;)V
     .locals 3
 
-    .line 5509
+    .line 5543
     iget-object v0, p0, Ljp/co/sony/mc/camera/controller/StateMachine$StateFatal;->this$0:Ljp/co/sony/mc/camera/controller/StateMachine;
 
     new-instance v1, Ljp/co/sony/mc/camera/controller/StateMachine$StateFinalize;
@@ -246,20 +246,20 @@
 .method public varargs handleOnStoreCompleted([Ljava/lang/Object;)V
     .locals 1
 
-    .line 5493
+    .line 5527
     invoke-super {p0, p1}, Ljp/co/sony/mc/camera/controller/StateMachine$State;->handleOnStoreCompleted([Ljava/lang/Object;)V
 
     const/4 v0, 0x0
 
-    .line 5495
+    .line 5529
     aget-object p1, p1, v0
 
     check-cast p1, Ljp/co/sony/mc/camera/mediasaving/StoreDataResult;
 
-    .line 5496
+    .line 5530
     iput-object p1, p0, Ljp/co/sony/mc/camera/controller/StateMachine$StateFatal;->mStoreDataResult:Ljp/co/sony/mc/camera/mediasaving/StoreDataResult;
 
-    .line 5498
+    .line 5532
     iget-object p1, p0, Ljp/co/sony/mc/camera/controller/StateMachine$StateFatal;->this$0:Ljp/co/sony/mc/camera/controller/StateMachine;
 
     invoke-static {p1}, Ljp/co/sony/mc/camera/controller/StateMachine;->-$$Nest$fgetmActivity(Ljp/co/sony/mc/camera/controller/StateMachine;)Ljp/co/sony/mc/camera/CameraActivity;
@@ -272,7 +272,7 @@
 
     if-nez p1, :cond_1
 
-    .line 5499
+    .line 5533
     iget-object p1, p0, Ljp/co/sony/mc/camera/controller/StateMachine$StateFatal;->this$0:Ljp/co/sony/mc/camera/controller/StateMachine;
 
     invoke-static {p1}, Ljp/co/sony/mc/camera/controller/StateMachine;->-$$Nest$fgetmLaunchCondition(Ljp/co/sony/mc/camera/controller/StateMachine;)Ljp/co/sony/mc/camera/LaunchCondition;
@@ -285,7 +285,7 @@
 
     if-eqz p1, :cond_0
 
-    .line 5500
+    .line 5534
     iget-object p1, p0, Ljp/co/sony/mc/camera/controller/StateMachine$StateFatal;->this$0:Ljp/co/sony/mc/camera/controller/StateMachine;
 
     iget-object p0, p0, Ljp/co/sony/mc/camera/controller/StateMachine$StateFatal;->mStoreDataResult:Ljp/co/sony/mc/camera/mediasaving/StoreDataResult;
@@ -294,7 +294,7 @@
 
     goto :goto_0
 
-    .line 5502
+    .line 5536
     :cond_0
     iget-object p0, p0, Ljp/co/sony/mc/camera/controller/StateMachine$StateFatal;->this$0:Ljp/co/sony/mc/camera/controller/StateMachine;
 
@@ -312,7 +312,7 @@
 .method public varargs handlePause([Ljava/lang/Object;)V
     .locals 4
 
-    .line 5515
+    .line 5549
     iget-object v0, p0, Ljp/co/sony/mc/camera/controller/StateMachine$StateFatal;->this$0:Ljp/co/sony/mc/camera/controller/StateMachine;
 
     new-instance v1, Ljp/co/sony/mc/camera/controller/StateMachine$StatePause;
@@ -325,7 +325,7 @@
 
     invoke-static {v0, v1, p1}, Ljp/co/sony/mc/camera/controller/StateMachine;->-$$Nest$mchangeTo(Ljp/co/sony/mc/camera/controller/StateMachine;Ljp/co/sony/mc/camera/controller/StateMachine$State;[Ljava/lang/Object;)V
 
-    .line 5517
+    .line 5551
     iget-object p1, p0, Ljp/co/sony/mc/camera/controller/StateMachine$StateFatal;->this$0:Ljp/co/sony/mc/camera/controller/StateMachine;
 
     invoke-static {p1}, Ljp/co/sony/mc/camera/controller/StateMachine;->-$$Nest$fgetmActivity(Ljp/co/sony/mc/camera/controller/StateMachine;)Ljp/co/sony/mc/camera/CameraActivity;
@@ -338,7 +338,7 @@
 
     if-eqz p1, :cond_0
 
-    .line 5518
+    .line 5552
     iget-object p1, p0, Ljp/co/sony/mc/camera/controller/StateMachine$StateFatal;->this$0:Ljp/co/sony/mc/camera/controller/StateMachine;
 
     invoke-static {p1}, Ljp/co/sony/mc/camera/controller/StateMachine;->-$$Nest$fgetmActivity(Ljp/co/sony/mc/camera/controller/StateMachine;)Ljp/co/sony/mc/camera/CameraActivity;
@@ -347,7 +347,7 @@
 
     invoke-virtual {p1}, Ljp/co/sony/mc/camera/CameraActivity;->stopLockTask()V
 
-    .line 5520
+    .line 5554
     :cond_0
     iget-object p0, p0, Ljp/co/sony/mc/camera/controller/StateMachine$StateFatal;->this$0:Ljp/co/sony/mc/camera/controller/StateMachine;
 

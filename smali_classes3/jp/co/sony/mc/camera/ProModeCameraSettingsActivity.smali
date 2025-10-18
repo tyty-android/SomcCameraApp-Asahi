@@ -9,46 +9,47 @@
 # annotations
 .annotation runtime Lkotlin/Metadata;
     d1 = {
-        "\u0000V\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0010\u000b\n\u0002\u0008\u0003\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0010 \n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0002\n\u0002\u0008\u0003\n\u0002\u0018\u0002\n\u0002\u0008\u0003\u0008\u0007\u0018\u00002\u00020\u00012\u00020\u0002B\u0005\u00a2\u0006\u0002\u0010\u0003J&\u0010\u0006\u001a\u0004\u0018\u00010\u00072\u0012\u0010\u0008\u001a\u000e\u0012\u0008\u0008\u0001\u0012\u0004\u0018\u00010\n\u0018\u00010\t2\u0006\u0010\u000b\u001a\u00020\u000cH\u0014J\u001e\u0010\r\u001a\u00020\u00072\u000c\u0010\u000e\u001a\u0008\u0012\u0002\u0008\u0003\u0018\u00010\t2\u0006\u0010\u000b\u001a\u00020\u000cH\u0014J\u0010\u0010\u000f\u001a\u00020\u00102\u0006\u0010\u0011\u001a\u00020\u0012H\u0014J\u0012\u0010\u0013\u001a\u0004\u0018\u00010\u00102\u0006\u0010\u0011\u001a\u00020\u0012H\u0014J\u0012\u0010\u0014\u001a\u000c\u0012\u0006\u0012\u0004\u0018\u00010\u0016\u0018\u00010\u0015H\u0016J\u0008\u0010\u0017\u001a\u00020\u0018H\u0016J\u0012\u0010\u0019\u001a\u00020\u00182\u0008\u0010\u0011\u001a\u0004\u0018\u00010\u0012H\u0016J\u0012\u0010\u001a\u001a\u00020\u00182\u0008\u0010\u001b\u001a\u0004\u0018\u00010\u001cH\u0014J\u0008\u0010\u001d\u001a\u00020\u0018H\u0014J\u0008\u0010\u001e\u001a\u00020\u0018H\u0014R\u0010\u0010\u0004\u001a\u0004\u0018\u00010\u0005X\u0082\u000e\u00a2\u0006\u0002\n\u0000\u00a8\u0006\u001f"
+        "\u0000X\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0003\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000b\n\u0002\u0008\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0004\n\u0002\u0010 \n\u0002\u0018\u0002\n\u0002\u0008\u0002\u0008\u0007\u0018\u00002\u00020\u00012\u00020\u0002B\t\u0008\u0007\u00a2\u0006\u0004\u0008\u0003\u0010\u0004J\u001e\u0010\u0007\u001a\u00020\u00082\u000c\u0010\t\u001a\u0008\u0012\u0002\u0008\u0003\u0018\u00010\n2\u0006\u0010\u000b\u001a\u00020\u000cH\u0014J&\u0010\r\u001a\u0004\u0018\u00010\u00082\u0012\u0010\u000e\u001a\u000e\u0012\u0008\u0008\u0001\u0012\u0004\u0018\u00010\u000f\u0018\u00010\n2\u0006\u0010\u000b\u001a\u00020\u000cH\u0014J\u0010\u0010\u0010\u001a\u00020\u00112\u0006\u0010\u0012\u001a\u00020\u0013H\u0014J\u0012\u0010\u0014\u001a\u0004\u0018\u00010\u00112\u0006\u0010\u0012\u001a\u00020\u0013H\u0014J\u0012\u0010\u0015\u001a\u00020\u00162\u0008\u0010\u0017\u001a\u0004\u0018\u00010\u0018H\u0014J\u0008\u0010\u0019\u001a\u00020\u0016H\u0014J\u0008\u0010\u001a\u001a\u00020\u0016H\u0014J\u0012\u0010\u001b\u001a\u00020\u00162\u0008\u0010\u0012\u001a\u0004\u0018\u00010\u0013H\u0016J\u0012\u0010\u001c\u001a\u000c\u0012\u0006\u0012\u0004\u0018\u00010\u001e\u0018\u00010\u001dH\u0016J\u0008\u0010\u001f\u001a\u00020\u0016H\u0016R\u0010\u0010\u0005\u001a\u0004\u0018\u00010\u0006X\u0082\u000e\u00a2\u0006\u0002\n\u0000\u00a8\u0006 "
     }
     d2 = {
         "Ljp/co/sony/mc/camera/ProModeCameraSettingsActivity;",
         "Ljp/co/sony/mc/camera/CameraSettingsActivity;",
         "Ljp/co/sony/mc/camera/view/setting/fragment/CameraSettingsFragment$OnListItemClickListener;",
+        "<init>",
         "()V",
         "mCameraSettingItemBuilder",
         "Ljp/co/sony/mc/camera/view/setting/settingitem/CameraSettingItemBuilder;",
-        "createCameraSecondarySettingsFragment",
+        "createCameraSettingsFragment",
         "Landroidx/fragment/app/Fragment;",
-        "key",
+        "initialPosition",
         "Ljp/co/sony/mc/camera/setting/SettingKey$Key;",
-        "",
         "isShowValueSettingDialog",
         "",
-        "createCameraSettingsFragment",
-        "initialPosition",
+        "createCameraSecondarySettingsFragment",
+        "key",
+        "",
         "createDetailFragment",
         "Ljp/co/sony/mc/camera/view/setting/fragment/CameraSettingsDetailFragment;",
         "item",
         "Ljp/co/sony/mc/camera/view/setting/settingitem/CameraSettingItem;",
         "createImageDetailFragment",
+        "onCreate",
+        "",
+        "savedInstanceState",
+        "Landroid/os/Bundle;",
+        "updateSetting",
+        "setUpSettingsItemBuilder",
+        "onClick",
         "getLatestItemList",
         "",
         "Ljp/co/sony/mc/camera/view/setting/settingitem/CameraSettingCategoryItem;",
         "onBackPressed",
-        "",
-        "onClick",
-        "onCreate",
-        "savedInstanceState",
-        "Landroid/os/Bundle;",
-        "setUpSettingsItemBuilder",
-        "updateSetting",
         "SomcCamera_release"
     }
     k = 0x1
     mv = {
-        0x1,
-        0x9,
+        0x2,
+        0x0,
         0x0
     }
     xi = 0x30
@@ -208,7 +209,7 @@
     .locals 1
 
     .line 112
-    iget-object v0, p0, Ljp/co/sony/mc/camera/ProModeCameraSettingsActivity;->mLastClickedCameraSettingItem:Ljp/co/sony/mc/camera/view/setting/settingitem/CameraSettingItem;
+    iget-object v0, p0, Ljp/co/sony/mc/camera/CameraSettingsActivity;->mLastClickedCameraSettingItem:Ljp/co/sony/mc/camera/view/setting/settingitem/CameraSettingItem;
 
     if-eqz v0, :cond_0
 
@@ -298,17 +299,17 @@
 
     check-cast v2, Landroid/content/Context;
 
-    iget-object v3, p0, Ljp/co/sony/mc/camera/ProModeCameraSettingsActivity;->mCapturingMode:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
+    iget-object v3, p0, Ljp/co/sony/mc/camera/CameraSettingsActivity;->mCapturingMode:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
     .line 98
     invoke-static {}, Ljp/co/sony/mc/camera/setting/CameraProSetting;->getInstance()Ljp/co/sony/mc/camera/setting/CameraProSetting;
 
     move-result-object v5
 
-    iget-object v6, p0, Ljp/co/sony/mc/camera/ProModeCameraSettingsActivity;->mStorage:Ljp/co/sony/mc/camera/storage/Storage;
+    iget-object v6, p0, Ljp/co/sony/mc/camera/CameraSettingsActivity;->mStorage:Ljp/co/sony/mc/camera/storage/Storage;
 
     .line 99
-    iget-object v1, p0, Ljp/co/sony/mc/camera/ProModeCameraSettingsActivity;->mCapturingMode:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
+    iget-object v1, p0, Ljp/co/sony/mc/camera/CameraSettingsActivity;->mCapturingMode:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
     invoke-virtual {v0, v1, v4}, Ljp/co/sony/mc/camera/view/setting/ContextualSettingList;->get(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;)Ljp/co/sony/mc/camera/view/setting/ContextualSettingList$Group;
 
@@ -341,9 +342,9 @@
 
     move-result-object v1
 
+    .line 67
     const-class v2, Ljp/co/sony/mc/camera/view/setting/fragment/CameraSettingsFragment;
 
-    .line 67
     const-string v2, "CameraSettingsFragment"
 
     invoke-virtual {v1, v2}, Landroidx/fragment/app/FragmentManager;->findFragmentByTag(Ljava/lang/String;)Landroidx/fragment/app/Fragment;
@@ -362,7 +363,7 @@
 
     .line 71
     :cond_0
-    iget-object v1, p0, Ljp/co/sony/mc/camera/ProModeCameraSettingsActivity;->mLastClickedCameraSettingItem:Ljp/co/sony/mc/camera/view/setting/settingitem/CameraSettingItem;
+    iget-object v1, p0, Ljp/co/sony/mc/camera/CameraSettingsActivity;->mLastClickedCameraSettingItem:Ljp/co/sony/mc/camera/view/setting/settingitem/CameraSettingItem;
 
     if-nez v1, :cond_1
 
@@ -374,9 +375,9 @@
 
     move-result-object v1
 
+    .line 75
     const-class v2, Ljp/co/sony/mc/camera/view/setting/fragment/ProModeCameraSettingsDetailFragment;
 
-    .line 75
     const-string v2, "ProModeCameraSettingsDetailFragment"
 
     invoke-virtual {v1, v2}, Landroidx/fragment/app/FragmentManager;->findFragmentByTag(Ljava/lang/String;)Landroidx/fragment/app/Fragment;
@@ -388,9 +389,9 @@
 
     move-result-object v2
 
+    .line 78
     const-class v3, Ljp/co/sony/mc/camera/view/setting/fragment/ProModeCameraSettingsImageDetailFragment;
 
-    .line 78
     const-string v3, "ProModeCameraSettingsImageDetailFragment"
 
     .line 77
@@ -444,7 +445,7 @@
 
     move-result-object v5
 
-    iget-object v6, p0, Ljp/co/sony/mc/camera/ProModeCameraSettingsActivity;->mLastClickedCameraSettingItem:Ljp/co/sony/mc/camera/view/setting/settingitem/CameraSettingItem;
+    iget-object v6, p0, Ljp/co/sony/mc/camera/CameraSettingsActivity;->mLastClickedCameraSettingItem:Ljp/co/sony/mc/camera/view/setting/settingitem/CameraSettingItem;
 
     invoke-virtual {v6}, Ljp/co/sony/mc/camera/view/setting/settingitem/CameraSettingItem;->getKey()Ljp/co/sony/mc/camera/setting/SettingKey$Key;
 

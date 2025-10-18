@@ -5,7 +5,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/SourceDebugExtension;
-    value = "SMAP\nSemanticsModifierNode.kt\nKotlin\n*S Kotlin\n*F\n+ 1 SemanticsModifierNode.kt\nandroidx/compose/ui/node/SemanticsModifierNodeKt\n+ 2 NodeKind.kt\nandroidx/compose/ui/node/Nodes\n*L\n1#1,106:1\n76#2:107\n76#2:108\n*S KotlinDebug\n*F\n+ 1 SemanticsModifierNode.kt\nandroidx/compose/ui/node/SemanticsModifierNodeKt\n*L\n102#1:107\n105#1:108\n*E\n"
+    value = "SMAP\nSemanticsModifierNode.kt\nKotlin\n*S Kotlin\n*F\n+ 1 SemanticsModifierNode.kt\nandroidx/compose/ui/node/SemanticsModifierNodeKt\n+ 2 NodeKind.kt\nandroidx/compose/ui/node/Nodes\n*L\n1#1,107:1\n76#2:108\n76#2:109\n*S KotlinDebug\n*F\n+ 1 SemanticsModifierNode.kt\nandroidx/compose/ui/node/SemanticsModifierNodeKt\n*L\n102#1:108\n105#1:109\n*E\n"
 .end annotation
 
 .annotation runtime Lkotlin/Metadata;
@@ -40,10 +40,6 @@
 .method public static final getUseMinimumTouchTarget(Landroidx/compose/ui/semantics/SemanticsConfiguration;)Z
     .locals 1
 
-    const-string v0, "<this>"
-
-    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
     .line 95
     sget-object v0, Landroidx/compose/ui/semantics/SemanticsActions;->INSTANCE:Landroidx/compose/ui/semantics/SemanticsActions;
 
@@ -69,11 +65,7 @@
 .end method
 
 .method public static final invalidateSemantics(Landroidx/compose/ui/node/SemanticsModifierNode;)V
-    .locals 1
-
-    const-string v0, "<this>"
-
-    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+    .locals 0
 
     .line 92
     check-cast p0, Landroidx/compose/ui/node/DelegatableNode;
@@ -89,10 +81,6 @@
 
 .method public static final touchBoundsInRoot(Landroidx/compose/ui/Modifier$Node;Z)Landroidx/compose/ui/geometry/Rect;
     .locals 1
-
-    const-string v0, "<this>"
-
-    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 98
     invoke-virtual {p0}, Landroidx/compose/ui/Modifier$Node;->getNode()Landroidx/compose/ui/Modifier$Node;
@@ -122,7 +110,7 @@
     .line 102
     check-cast p0, Landroidx/compose/ui/node/DelegatableNode;
 
-    .line 107
+    .line 108
     invoke-static {v0}, Landroidx/compose/ui/node/NodeKind;->constructor-impl(I)I
 
     move-result p1
@@ -144,7 +132,7 @@
     :cond_1
     check-cast p0, Landroidx/compose/ui/node/DelegatableNode;
 
-    .line 108
+    .line 109
     invoke-static {v0}, Landroidx/compose/ui/node/NodeKind;->constructor-impl(I)I
 
     move-result p1

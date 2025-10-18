@@ -5,20 +5,4 @@
         <item quantity="one">%d notificare nouă</item>
         <item quantity="few">%d notificări noi</item>
     </plurals>
-    <plurals name="mv_minute_remaining_txt">
-        <item quantity="other">%1$d min. rămase</item>
-        <item quantity="one">1 min. rămas</item>
-    </plurals>
-    <plurals name="mv_minute_txt">
-        <item quantity="other">%1$d minute</item>
-        <item quantity="one">1 minut</item>
-    </plurals>
-    <plurals name="mv_second_remaining_txt">
-        <item quantity="other">%1$d sec. rămase</item>
-        <item quantity="one">1 sec. rămasă</item>
-    </plurals>
-    <plurals name="mv_second_txt">
-        <item quantity="other">%1$d secunde</item>
-        <item quantity="one">1 secundă</item>
-    </plurals>
 </resources>

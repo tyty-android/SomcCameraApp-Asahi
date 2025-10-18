@@ -53,16 +53,12 @@
 
 # direct methods
 .method public constructor <init>(Landroidx/compose/animation/core/FloatDecayAnimationSpec;)V
-    .locals 1
-
-    const-string v0, "floatDecaySpec"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 123
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    .locals 0
 
     .line 124
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 125
     iput-object p1, p0, Landroidx/compose/animation/core/DecayAnimationSpecImpl;->floatDecaySpec:Landroidx/compose/animation/core/FloatDecayAnimationSpec;
 
     return-void
@@ -71,7 +67,7 @@
 
 # virtual methods
 .method public vectorize(Landroidx/compose/animation/core/TwoWayConverter;)Landroidx/compose/animation/core/VectorizedDecayAnimationSpec;
-    .locals 1
+    .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<V:",
@@ -84,11 +80,7 @@
         }
     .end annotation
 
-    const-string/jumbo v0, "typeConverter"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 128
+    .line 129
     new-instance p1, Landroidx/compose/animation/core/VectorizedFloatDecaySpec;
 
     iget-object p0, p0, Landroidx/compose/animation/core/DecayAnimationSpecImpl;->floatDecaySpec:Landroidx/compose/animation/core/FloatDecayAnimationSpec;

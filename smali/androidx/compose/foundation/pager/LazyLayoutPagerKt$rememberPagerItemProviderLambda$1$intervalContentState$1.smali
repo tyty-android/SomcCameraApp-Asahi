@@ -45,17 +45,6 @@
 
 
 # instance fields
-.field final synthetic $key:Lkotlin/jvm/functions/Function1;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Lkotlin/jvm/functions/Function1<",
-            "Ljava/lang/Integer;",
-            "Ljava/lang/Object;",
-            ">;"
-        }
-    .end annotation
-.end field
-
 .field final synthetic $latestContent:Landroidx/compose/runtime/State;
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -66,6 +55,18 @@
             "Landroidx/compose/runtime/Composer;",
             "Ljava/lang/Integer;",
             "Lkotlin/Unit;",
+            ">;>;"
+        }
+    .end annotation
+.end field
+
+.field final synthetic $latestKey:Landroidx/compose/runtime/State;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Landroidx/compose/runtime/State<",
+            "Lkotlin/jvm/functions/Function1<",
+            "Ljava/lang/Integer;",
+            "Ljava/lang/Object;",
             ">;>;"
         }
     .end annotation
@@ -83,7 +84,7 @@
 
 
 # direct methods
-.method constructor <init>(Landroidx/compose/runtime/State;Lkotlin/jvm/functions/Function1;Lkotlin/jvm/functions/Function0;)V
+.method constructor <init>(Landroidx/compose/runtime/State;Landroidx/compose/runtime/State;Lkotlin/jvm/functions/Function0;)V
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -101,12 +102,14 @@
             "Ljava/lang/Integer;",
             "Lkotlin/Unit;",
             ">;>;",
+            "Landroidx/compose/runtime/State<",
+            "+",
             "Lkotlin/jvm/functions/Function1<",
             "-",
             "Ljava/lang/Integer;",
             "+",
             "Ljava/lang/Object;",
-            ">;",
+            ">;>;",
             "Lkotlin/jvm/functions/Function0<",
             "Ljava/lang/Integer;",
             ">;)V"
@@ -115,7 +118,7 @@
 
     iput-object p1, p0, Landroidx/compose/foundation/pager/LazyLayoutPagerKt$rememberPagerItemProviderLambda$1$intervalContentState$1;->$latestContent:Landroidx/compose/runtime/State;
 
-    iput-object p2, p0, Landroidx/compose/foundation/pager/LazyLayoutPagerKt$rememberPagerItemProviderLambda$1$intervalContentState$1;->$key:Lkotlin/jvm/functions/Function1;
+    iput-object p2, p0, Landroidx/compose/foundation/pager/LazyLayoutPagerKt$rememberPagerItemProviderLambda$1$intervalContentState$1;->$latestKey:Landroidx/compose/runtime/State;
 
     iput-object p3, p0, Landroidx/compose/foundation/pager/LazyLayoutPagerKt$rememberPagerItemProviderLambda$1$intervalContentState$1;->$pageCount:Lkotlin/jvm/functions/Function0;
 
@@ -131,7 +134,7 @@
 .method public final invoke()Landroidx/compose/foundation/pager/PagerLayoutIntervalContent;
     .locals 3
 
-    .line 244
+    .line 253
     new-instance v0, Landroidx/compose/foundation/pager/PagerLayoutIntervalContent;
 
     iget-object v1, p0, Landroidx/compose/foundation/pager/LazyLayoutPagerKt$rememberPagerItemProviderLambda$1$intervalContentState$1;->$latestContent:Landroidx/compose/runtime/State;
@@ -142,7 +145,13 @@
 
     check-cast v1, Lkotlin/jvm/functions/Function4;
 
-    iget-object v2, p0, Landroidx/compose/foundation/pager/LazyLayoutPagerKt$rememberPagerItemProviderLambda$1$intervalContentState$1;->$key:Lkotlin/jvm/functions/Function1;
+    iget-object v2, p0, Landroidx/compose/foundation/pager/LazyLayoutPagerKt$rememberPagerItemProviderLambda$1$intervalContentState$1;->$latestKey:Landroidx/compose/runtime/State;
+
+    invoke-interface {v2}, Landroidx/compose/runtime/State;->getValue()Ljava/lang/Object;
+
+    move-result-object v2
+
+    check-cast v2, Lkotlin/jvm/functions/Function1;
 
     iget-object p0, p0, Landroidx/compose/foundation/pager/LazyLayoutPagerKt$rememberPagerItemProviderLambda$1$intervalContentState$1;->$pageCount:Lkotlin/jvm/functions/Function0;
 
@@ -164,7 +173,7 @@
 .method public bridge synthetic invoke()Ljava/lang/Object;
     .locals 0
 
-    .line 243
+    .line 252
     invoke-virtual {p0}, Landroidx/compose/foundation/pager/LazyLayoutPagerKt$rememberPagerItemProviderLambda$1$intervalContentState$1;->invoke()Landroidx/compose/foundation/pager/PagerLayoutIntervalContent;
 
     move-result-object p0

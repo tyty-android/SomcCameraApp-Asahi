@@ -21,7 +21,7 @@
 
 .annotation runtime Lkotlin/Metadata;
     d1 = {
-        "\u0000(\n\u0002\u0018\u0002\n\u0002\u0010\u0010\n\u0002\u0008\u0002\n\u0002\u0010\u0008\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0003\n\u0002\u0010\u000b\n\u0002\u0008\u0007\u0008\u0080\u0001\u0018\u00002\u0008\u0012\u0004\u0012\u00020\u00000\u0001B\u0007\u0008\u0002\u00a2\u0006\u0002\u0010\u0002J%\u0010\u0003\u001a\u00020\u00042\u0006\u0010\u0005\u001a\u00020\u00062\u0006\u0010\u0007\u001a\u00020\u0008H \u00f8\u0001\u0000\u00f8\u0001\u0001\u00a2\u0006\u0004\u0008\t\u0010\nJ-\u0010\u000b\u001a\u00020\u000c2\u0006\u0010\u0007\u001a\u00020\u00082\u0006\u0010\r\u001a\u00020\u00062\u0006\u0010\u000e\u001a\u00020\u0006H\u0000\u00f8\u0001\u0000\u00f8\u0001\u0001\u00a2\u0006\u0004\u0008\u000f\u0010\u0010j\u0002\u0008\u0011j\u0002\u0008\u0012\u0082\u0002\u000b\n\u0005\u0008\u00a1\u001e0\u0001\n\u0002\u0008\u0019\u00a8\u0006\u0013"
+        "\u0000(\n\u0002\u0018\u0002\n\u0002\u0010\u0010\n\u0002\u0008\u0002\n\u0002\u0010\u0008\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0003\n\u0002\u0010\u000b\n\u0002\u0008\u000b\u0008\u0080\u0001\u0018\u00002\u0008\u0012\u0004\u0012\u00020\u00000\u0001B\u0007\u0008\u0002\u00a2\u0006\u0002\u0010\u0002J\"\u0010\u0003\u001a\u00020\u00042\u0006\u0010\u0005\u001a\u00020\u00062\u0006\u0010\u0007\u001a\u00020\u0008H \u00f8\u0001\u0000\u00a2\u0006\u0004\u0008\t\u0010\nJ*\u0010\u000b\u001a\u00020\u000c2\u0006\u0010\u0007\u001a\u00020\u00082\u0006\u0010\r\u001a\u00020\u00062\u0006\u0010\u000e\u001a\u00020\u0006H\u0000\u00f8\u0001\u0000\u00a2\u0006\u0004\u0008\u000f\u0010\u0010J\u001e\u0010\u0011\u001a\u00020\u000c*\u00020\u00082\u0006\u0010\u0012\u001a\u00020\u0006H\u0002\u00f8\u0001\u0000\u00a2\u0006\u0004\u0008\u0013\u0010\u0014j\u0002\u0008\u0015j\u0002\u0008\u0016\u0082\u0002\u0007\n\u0005\u0008\u00a1\u001e0\u0001\u00a8\u0006\u0017"
     }
     d2 = {
         "Landroidx/compose/foundation/text/selection/SelectionMode;",
@@ -41,6 +41,10 @@
         "end",
         "isSelected-2x9bVx0$foundation_release",
         "(Landroidx/compose/ui/geometry/Rect;JJ)Z",
+        "containsInclusive",
+        "offset",
+        "containsInclusive-Uv8p0NA",
+        "(Landroidx/compose/ui/geometry/Rect;J)Z",
         "Vertical",
         "Horizontal",
         "foundation_release"
@@ -134,6 +138,61 @@
     return-void
 .end method
 
+.method private final containsInclusive-Uv8p0NA(Landroidx/compose/ui/geometry/Rect;J)Z
+    .locals 2
+
+    .line 115
+    invoke-virtual {p1}, Landroidx/compose/ui/geometry/Rect;->getLeft()F
+
+    move-result p0
+
+    invoke-virtual {p1}, Landroidx/compose/ui/geometry/Rect;->getRight()F
+
+    move-result v0
+
+    invoke-static {p2, p3}, Landroidx/compose/ui/geometry/Offset;->getX-impl(J)F
+
+    move-result v1
+
+    cmpg-float p0, p0, v1
+
+    if-gtz p0, :cond_0
+
+    cmpg-float p0, v1, v0
+
+    if-gtz p0, :cond_0
+
+    invoke-virtual {p1}, Landroidx/compose/ui/geometry/Rect;->getTop()F
+
+    move-result p0
+
+    invoke-virtual {p1}, Landroidx/compose/ui/geometry/Rect;->getBottom()F
+
+    move-result p1
+
+    invoke-static {p2, p3}, Landroidx/compose/ui/geometry/Offset;->getY-impl(J)F
+
+    move-result p2
+
+    cmpg-float p0, p0, p2
+
+    if-gtz p0, :cond_0
+
+    cmpg-float p0, p2, p1
+
+    if-gtz p0, :cond_0
+
+    const/4 p0, 0x1
+
+    goto :goto_0
+
+    :cond_0
+    const/4 p0, 0x0
+
+    :goto_0
+    return p0
+.end method
+
 .method public static valueOf(Ljava/lang/String;)Landroidx/compose/foundation/text/selection/SelectionMode;
     .locals 1
 
@@ -170,12 +229,8 @@
 .method public final isSelected-2x9bVx0$foundation_release(Landroidx/compose/ui/geometry/Rect;JJ)Z
     .locals 2
 
-    const-string v0, "bounds"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
     .line 98
-    invoke-virtual {p1, p2, p3}, Landroidx/compose/ui/geometry/Rect;->contains-k-4lQ0M(J)Z
+    invoke-direct {p0, p1, p2, p3}, Landroidx/compose/foundation/text/selection/SelectionMode;->containsInclusive-Uv8p0NA(Landroidx/compose/ui/geometry/Rect;J)Z
 
     move-result v0
 
@@ -183,7 +238,7 @@
 
     if-nez v0, :cond_3
 
-    invoke-virtual {p1, p4, p5}, Landroidx/compose/ui/geometry/Rect;->contains-k-4lQ0M(J)Z
+    invoke-direct {p0, p1, p4, p5}, Landroidx/compose/foundation/text/selection/SelectionMode;->containsInclusive-Uv8p0NA(Landroidx/compose/ui/geometry/Rect;J)Z
 
     move-result v0
 

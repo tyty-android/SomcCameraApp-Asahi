@@ -187,7 +187,7 @@
 
     iput-object v7, v6, Ljp/co/sony/mc/camera/view/contentsview/ContentsViewController;->mContentLoader:Ljp/co/sony/mc/camera/view/contentsview/ContentLoader;
 
-    const v0, 0x7f09013e
+    const v0, 0x7f090140
 
     move-object v1, p1
 
@@ -403,107 +403,111 @@
 .end method
 
 .method private searchPallet(I)Ljp/co/sony/mc/camera/view/contentsview/ContentPallet;
-    .locals 3
+    .locals 5
 
     .line 407
     sget-boolean v0, Ljp/co/sony/mc/camera/util/CamLog;->VERBOSE:Z
 
+    const/4 v1, 0x1
+
+    const/4 v2, 0x0
+
     if-eqz v0, :cond_0
 
-    new-instance v0, Ljava/lang/StringBuilder;
+    new-array v0, v1, [Ljava/lang/String;
 
-    const-string v1, "searchPallet() has been called. requestId = "
+    new-instance v3, Ljava/lang/StringBuilder;
 
-    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+    const-string v4, "searchPallet() has been called. requestId = "
 
-    invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+    invoke-direct {v3, v4}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
-    move-result-object v0
+    invoke-virtual {v3, p1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
-    const-string v1, ", child = "
+    move-result-object v3
 
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    const-string v4, ", child = "
 
-    move-result-object v0
+    invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-object v1, p0, Ljp/co/sony/mc/camera/view/contentsview/ContentsViewController;->mContentContainer:Ljp/co/sony/mc/camera/view/contentsview/ContentsContainer;
+    move-result-object v3
+
+    iget-object v4, p0, Ljp/co/sony/mc/camera/view/contentsview/ContentsViewController;->mContentContainer:Ljp/co/sony/mc/camera/view/contentsview/ContentsContainer;
 
     .line 408
-    invoke-virtual {v1}, Ljp/co/sony/mc/camera/view/contentsview/ContentsContainer;->getChildCount()I
+    invoke-virtual {v4}, Ljp/co/sony/mc/camera/view/contentsview/ContentsContainer;->getChildCount()I
 
-    move-result v1
+    move-result v4
 
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+    invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
-    move-result-object v0
+    move-result-object v3
 
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-virtual {v3}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    move-result-object v0
+    move-result-object v3
 
-    filled-new-array {v0}, [Ljava/lang/String;
-
-    move-result-object v0
+    aput-object v3, v0, v2
 
     .line 407
     invoke-static {v0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
     :cond_0
-    const/4 v0, 0x0
+    move v0, v2
 
     .line 409
     :goto_0
-    iget-object v1, p0, Ljp/co/sony/mc/camera/view/contentsview/ContentsViewController;->mContentContainer:Ljp/co/sony/mc/camera/view/contentsview/ContentsContainer;
+    iget-object v3, p0, Ljp/co/sony/mc/camera/view/contentsview/ContentsViewController;->mContentContainer:Ljp/co/sony/mc/camera/view/contentsview/ContentsContainer;
 
-    invoke-virtual {v1}, Ljp/co/sony/mc/camera/view/contentsview/ContentsContainer;->getChildCount()I
+    invoke-virtual {v3}, Ljp/co/sony/mc/camera/view/contentsview/ContentsContainer;->getChildCount()I
 
-    move-result v1
+    move-result v3
 
-    if-ge v0, v1, :cond_3
+    if-ge v0, v3, :cond_3
 
     .line 410
-    iget-object v1, p0, Ljp/co/sony/mc/camera/view/contentsview/ContentsViewController;->mContentContainer:Ljp/co/sony/mc/camera/view/contentsview/ContentsContainer;
+    iget-object v3, p0, Ljp/co/sony/mc/camera/view/contentsview/ContentsViewController;->mContentContainer:Ljp/co/sony/mc/camera/view/contentsview/ContentsContainer;
 
-    invoke-virtual {v1, v0}, Ljp/co/sony/mc/camera/view/contentsview/ContentsContainer;->getChildAt(I)Landroid/view/View;
+    invoke-virtual {v3, v0}, Ljp/co/sony/mc/camera/view/contentsview/ContentsContainer;->getChildAt(I)Landroid/view/View;
 
-    move-result-object v1
+    move-result-object v3
 
-    check-cast v1, Ljp/co/sony/mc/camera/view/contentsview/ContentPallet;
+    check-cast v3, Ljp/co/sony/mc/camera/view/contentsview/ContentPallet;
 
     .line 411
-    invoke-virtual {v1}, Ljp/co/sony/mc/camera/view/contentsview/ContentPallet;->getRequestId()I
+    invoke-virtual {v3}, Ljp/co/sony/mc/camera/view/contentsview/ContentPallet;->getRequestId()I
 
-    move-result v2
+    move-result v4
 
-    if-ne p1, v2, :cond_2
+    if-ne p1, v4, :cond_2
 
     .line 412
     sget-boolean p0, Ljp/co/sony/mc/camera/util/CamLog;->VERBOSE:Z
 
     if-eqz p0, :cond_1
 
-    new-instance p0, Ljava/lang/StringBuilder;
+    new-array p0, v1, [Ljava/lang/String;
 
-    const-string p1, "searchPallet() pallet find. index = "
+    new-instance p1, Ljava/lang/StringBuilder;
 
-    invoke-direct {p0, p1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+    const-string v1, "searchPallet() pallet find. index = "
 
-    invoke-virtual {p0, v0}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+    invoke-direct {p1, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
-    move-result-object p0
+    invoke-virtual {p1, v0}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
-    invoke-virtual {p0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    move-result-object p1
 
-    move-result-object p0
+    invoke-virtual {p1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    filled-new-array {p0}, [Ljava/lang/String;
+    move-result-object p1
 
-    move-result-object p0
+    aput-object p1, p0, v2
 
     invoke-static {p0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
     :cond_1
-    return-object v1
+    return-object v3
 
     :cond_2
     add-int/lit8 v0, v0, 0x1
@@ -519,40 +523,44 @@
 
 # virtual methods
 .method public addContent(ILandroid/net/Uri;)V
-    .locals 2
+    .locals 3
 
     .line 270
     sget-boolean v0, Ljp/co/sony/mc/camera/util/CamLog;->VERBOSE:Z
 
     if-eqz v0, :cond_0
 
-    new-instance v0, Ljava/lang/StringBuilder;
+    const/4 v0, 0x1
 
-    const-string v1, "addContent() has been called. requestId = "
+    new-array v0, v0, [Ljava/lang/String;
 
-    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+    new-instance v1, Ljava/lang/StringBuilder;
 
-    invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+    const-string v2, "addContent() has been called. requestId = "
 
-    move-result-object v0
+    invoke-direct {v1, v2}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
-    const-string v1, ", uri = "
+    invoke-virtual {v1, p1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    move-result-object v1
 
-    move-result-object v0
+    const-string v2, ", uri = "
 
-    invoke-virtual {v0, p2}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    move-result-object v0
+    move-result-object v1
 
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-virtual {v1, p2}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
-    move-result-object v0
+    move-result-object v1
 
-    filled-new-array {v0}, [Ljava/lang/String;
+    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    move-result-object v0
+    move-result-object v1
+
+    const/4 v2, 0x0
+
+    aput-object v1, v0, v2
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
@@ -641,18 +649,22 @@
 .end method
 
 .method public createContentFrame(I)V
-    .locals 1
+    .locals 3
 
     .line 178
     sget-boolean v0, Ljp/co/sony/mc/camera/util/CamLog;->VERBOSE:Z
 
     if-eqz v0, :cond_0
 
-    const-string v0, "createContentFrame() has been called."
+    const/4 v0, 0x1
 
-    filled-new-array {v0}, [Ljava/lang/String;
+    new-array v0, v0, [Ljava/lang/String;
 
-    move-result-object v0
+    const/4 v1, 0x0
+
+    const-string v2, "createContentFrame() has been called."
+
+    aput-object v2, v0, v1
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
@@ -672,18 +684,22 @@
 .end method
 
 .method public createEmptyContentFrame(I)Ljp/co/sony/mc/camera/view/contentsview/ContentPallet;
-    .locals 4
+    .locals 6
 
     .line 190
     sget-boolean v0, Ljp/co/sony/mc/camera/util/CamLog;->VERBOSE:Z
 
+    const/4 v1, 0x0
+
+    const/4 v2, 0x1
+
     if-eqz v0, :cond_0
 
-    const-string v0, "createEmptyContentFrame() has been called."
+    new-array v0, v2, [Ljava/lang/String;
 
-    filled-new-array {v0}, [Ljava/lang/String;
+    const-string v3, "createEmptyContentFrame() has been called."
 
-    move-result-object v0
+    aput-object v3, v0, v1
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
@@ -691,57 +707,57 @@
     :cond_0
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/contentsview/ContentsViewController;->mLayoutInflater:Landroid/view/LayoutInflater;
 
-    const/4 v1, 0x0
+    const/4 v3, 0x0
 
     if-nez v0, :cond_1
 
     .line 195
-    const-string p0, "could not get inflater."
+    new-array p0, v2, [Ljava/lang/String;
 
-    filled-new-array {p0}, [Ljava/lang/String;
+    const-string p1, "could not get inflater."
 
-    move-result-object p0
+    aput-object p1, p0, v1
 
     invoke-static {p0}, Ljp/co/sony/mc/camera/util/CamLog;->w([Ljava/lang/String;)V
 
-    return-object v1
+    return-object v3
 
     .line 199
     :cond_1
-    sget-boolean v2, Ljp/co/sony/mc/camera/util/CamLog;->VERBOSE:Z
+    sget-boolean v4, Ljp/co/sony/mc/camera/util/CamLog;->VERBOSE:Z
 
-    if-eqz v2, :cond_2
+    if-eqz v4, :cond_2
 
-    new-instance v2, Ljava/lang/StringBuilder;
+    new-array v2, v2, [Ljava/lang/String;
 
-    const-string v3, "createEmptyContentFrame : create pallet. id = "
+    new-instance v4, Ljava/lang/StringBuilder;
 
-    invoke-direct {v2, v3}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+    const-string v5, "createEmptyContentFrame : create pallet. id = "
 
-    invoke-virtual {v2, p1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+    invoke-direct {v4, v5}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
-    move-result-object v2
+    invoke-virtual {v4, p1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    move-result-object v4
 
-    move-result-object v2
+    invoke-virtual {v4}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    filled-new-array {v2}, [Ljava/lang/String;
+    move-result-object v4
 
-    move-result-object v2
+    aput-object v4, v2, v1
 
     invoke-static {v2}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
     .line 202
     :cond_2
-    iget-boolean v2, p0, Ljp/co/sony/mc/camera/view/contentsview/ContentsViewController;->mIsForExtDisplay:Z
+    iget-boolean v1, p0, Ljp/co/sony/mc/camera/view/contentsview/ContentsViewController;->mIsForExtDisplay:Z
 
-    if-eqz v2, :cond_3
+    if-eqz v1, :cond_3
 
-    const v2, 0x7f0c0034
+    const v1, 0x7f0c0034
 
     .line 203
-    invoke-virtual {v0, v2, v1}, Landroid/view/LayoutInflater;->inflate(ILandroid/view/ViewGroup;)Landroid/view/View;
+    invoke-virtual {v0, v1, v3}, Landroid/view/LayoutInflater;->inflate(ILandroid/view/ViewGroup;)Landroid/view/View;
 
     move-result-object v0
 
@@ -751,14 +767,14 @@
 
     .line 205
     :cond_3
-    iget-boolean v2, p0, Ljp/co/sony/mc/camera/view/contentsview/ContentsViewController;->mIsCoreCamera:Z
+    iget-boolean v1, p0, Ljp/co/sony/mc/camera/view/contentsview/ContentsViewController;->mIsCoreCamera:Z
 
-    if-eqz v2, :cond_4
+    if-eqz v1, :cond_4
 
-    const v2, 0x7f0c0033
+    const v1, 0x7f0c0033
 
     .line 206
-    invoke-virtual {v0, v2, v1}, Landroid/view/LayoutInflater;->inflate(ILandroid/view/ViewGroup;)Landroid/view/View;
+    invoke-virtual {v0, v1, v3}, Landroid/view/LayoutInflater;->inflate(ILandroid/view/ViewGroup;)Landroid/view/View;
 
     move-result-object v0
 
@@ -767,10 +783,10 @@
     goto :goto_0
 
     :cond_4
-    const v2, 0x7f0c0032
+    const v1, 0x7f0c0032
 
     .line 209
-    invoke-virtual {v0, v2, v1}, Landroid/view/LayoutInflater;->inflate(ILandroid/view/ViewGroup;)Landroid/view/View;
+    invoke-virtual {v0, v1, v3}, Landroid/view/LayoutInflater;->inflate(ILandroid/view/ViewGroup;)Landroid/view/View;
 
     move-result-object v0
 
@@ -830,18 +846,22 @@
 .end method
 
 .method public disableClick()V
-    .locals 2
+    .locals 3
 
     .line 543
     sget-boolean v0, Ljp/co/sony/mc/camera/util/CamLog;->VERBOSE:Z
 
+    const/4 v1, 0x0
+
     if-eqz v0, :cond_0
 
-    const-string v0, "disableClick() has been called."
+    const/4 v0, 0x1
 
-    filled-new-array {v0}, [Ljava/lang/String;
+    new-array v0, v0, [Ljava/lang/String;
 
-    move-result-object v0
+    const-string v2, "disableClick() has been called."
+
+    aput-object v2, v0, v1
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
@@ -849,36 +869,38 @@
     :cond_0
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/contentsview/ContentsViewController;->mContentContainer:Ljp/co/sony/mc/camera/view/contentsview/ContentsContainer;
 
-    const v1, 0x3ecccccd    # 0.4f
+    const v2, 0x3ecccccd    # 0.4f
 
-    invoke-virtual {v0, v1}, Ljp/co/sony/mc/camera/view/contentsview/ContentsContainer;->setAlpha(F)V
+    invoke-virtual {v0, v2}, Ljp/co/sony/mc/camera/view/contentsview/ContentsContainer;->setAlpha(F)V
 
     .line 545
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/contentsview/ContentsViewController;->mContentContainer:Ljp/co/sony/mc/camera/view/contentsview/ContentsContainer;
 
     invoke-virtual {v0}, Ljp/co/sony/mc/camera/view/contentsview/ContentsContainer;->disableClick()V
 
-    const/4 v0, 0x0
-
     .line 546
-    iput-boolean v0, p0, Ljp/co/sony/mc/camera/view/contentsview/ContentsViewController;->mClickable:Z
+    iput-boolean v1, p0, Ljp/co/sony/mc/camera/view/contentsview/ContentsViewController;->mClickable:Z
 
     return-void
 .end method
 
 .method public enableClick()V
-    .locals 2
+    .locals 4
 
     .line 536
     sget-boolean v0, Ljp/co/sony/mc/camera/util/CamLog;->VERBOSE:Z
 
+    const/4 v1, 0x1
+
     if-eqz v0, :cond_0
 
-    const-string v0, "enableClick() has been called."
+    new-array v0, v1, [Ljava/lang/String;
 
-    filled-new-array {v0}, [Ljava/lang/String;
+    const/4 v2, 0x0
 
-    move-result-object v0
+    const-string v3, "enableClick() has been called."
+
+    aput-object v3, v0, v2
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
@@ -886,36 +908,38 @@
     :cond_0
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/contentsview/ContentsViewController;->mContentContainer:Ljp/co/sony/mc/camera/view/contentsview/ContentsContainer;
 
-    const/high16 v1, 0x3f800000    # 1.0f
+    const/high16 v2, 0x3f800000    # 1.0f
 
-    invoke-virtual {v0, v1}, Ljp/co/sony/mc/camera/view/contentsview/ContentsContainer;->setAlpha(F)V
+    invoke-virtual {v0, v2}, Ljp/co/sony/mc/camera/view/contentsview/ContentsContainer;->setAlpha(F)V
 
     .line 538
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/contentsview/ContentsViewController;->mContentContainer:Ljp/co/sony/mc/camera/view/contentsview/ContentsContainer;
 
     invoke-virtual {v0}, Ljp/co/sony/mc/camera/view/contentsview/ContentsContainer;->enableClick()V
 
-    const/4 v0, 0x1
-
     .line 539
-    iput-boolean v0, p0, Ljp/co/sony/mc/camera/view/contentsview/ContentsViewController;->mClickable:Z
+    iput-boolean v1, p0, Ljp/co/sony/mc/camera/view/contentsview/ContentsViewController;->mClickable:Z
 
     return-void
 .end method
 
 .method public hide()V
-    .locals 2
+    .locals 3
 
     .line 348
     sget-boolean v0, Ljp/co/sony/mc/camera/util/CamLog;->VERBOSE:Z
 
     if-eqz v0, :cond_0
 
-    const-string v0, "hide()"
+    const/4 v0, 0x1
 
-    filled-new-array {v0}, [Ljava/lang/String;
+    new-array v0, v0, [Ljava/lang/String;
 
-    move-result-object v0
+    const/4 v1, 0x0
+
+    const-string v2, "hide()"
+
+    aput-object v2, v0, v1
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
@@ -934,27 +958,88 @@
 .end method
 
 .method public isLoading()Z
-    .locals 3
+    .locals 5
 
     .line 426
     sget-boolean v0, Ljp/co/sony/mc/camera/util/CamLog;->VERBOSE:Z
 
+    const/4 v1, 0x1
+
+    const/4 v2, 0x0
+
     if-eqz v0, :cond_0
 
-    new-instance v0, Ljava/lang/StringBuilder;
+    new-array v0, v1, [Ljava/lang/String;
 
-    const-string v1, "hasLoadingContent() has been called. child = "
+    new-instance v3, Ljava/lang/StringBuilder;
 
-    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+    const-string v4, "hasLoadingContent() has been called. child = "
 
-    iget-object v1, p0, Ljp/co/sony/mc/camera/view/contentsview/ContentsViewController;->mContentContainer:Ljp/co/sony/mc/camera/view/contentsview/ContentsContainer;
+    invoke-direct {v3, v4}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+
+    iget-object v4, p0, Ljp/co/sony/mc/camera/view/contentsview/ContentsViewController;->mContentContainer:Ljp/co/sony/mc/camera/view/contentsview/ContentsContainer;
 
     .line 428
-    invoke-virtual {v1}, Ljp/co/sony/mc/camera/view/contentsview/ContentsContainer;->getChildCount()I
+    invoke-virtual {v4}, Ljp/co/sony/mc/camera/view/contentsview/ContentsContainer;->getChildCount()I
 
-    move-result v1
+    move-result v4
 
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+    invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    move-result-object v3
+
+    invoke-virtual {v3}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v3
+
+    aput-object v3, v0, v2
+
+    .line 426
+    invoke-static {v0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
+
+    :cond_0
+    move v0, v2
+
+    .line 429
+    :goto_0
+    iget-object v3, p0, Ljp/co/sony/mc/camera/view/contentsview/ContentsViewController;->mContentContainer:Ljp/co/sony/mc/camera/view/contentsview/ContentsContainer;
+
+    invoke-virtual {v3}, Ljp/co/sony/mc/camera/view/contentsview/ContentsContainer;->getChildCount()I
+
+    move-result v3
+
+    if-ge v0, v3, :cond_3
+
+    .line 430
+    iget-object v3, p0, Ljp/co/sony/mc/camera/view/contentsview/ContentsViewController;->mContentContainer:Ljp/co/sony/mc/camera/view/contentsview/ContentsContainer;
+
+    invoke-virtual {v3, v0}, Ljp/co/sony/mc/camera/view/contentsview/ContentsContainer;->getChildAt(I)Landroid/view/View;
+
+    move-result-object v3
+
+    check-cast v3, Ljp/co/sony/mc/camera/view/contentsview/ContentPallet;
+
+    .line 431
+    invoke-virtual {v3}, Ljp/co/sony/mc/camera/view/contentsview/ContentPallet;->hasContent()Z
+
+    move-result v3
+
+    if-nez v3, :cond_2
+
+    .line 433
+    sget-boolean p0, Ljp/co/sony/mc/camera/util/CamLog;->VERBOSE:Z
+
+    if-eqz p0, :cond_1
+
+    new-array p0, v1, [Ljava/lang/String;
+
+    new-instance v3, Ljava/lang/StringBuilder;
+
+    const-string v4, "isLoading() pallet is loading. index = "
+
+    invoke-direct {v3, v4}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+
+    invoke-virtual {v3, v0}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
     move-result-object v0
 
@@ -962,81 +1047,20 @@
 
     move-result-object v0
 
-    filled-new-array {v0}, [Ljava/lang/String;
-
-    move-result-object v0
-
-    .line 426
-    invoke-static {v0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
-
-    :cond_0
-    const/4 v0, 0x0
-
-    move v1, v0
-
-    .line 429
-    :goto_0
-    iget-object v2, p0, Ljp/co/sony/mc/camera/view/contentsview/ContentsViewController;->mContentContainer:Ljp/co/sony/mc/camera/view/contentsview/ContentsContainer;
-
-    invoke-virtual {v2}, Ljp/co/sony/mc/camera/view/contentsview/ContentsContainer;->getChildCount()I
-
-    move-result v2
-
-    if-ge v1, v2, :cond_3
-
-    .line 430
-    iget-object v2, p0, Ljp/co/sony/mc/camera/view/contentsview/ContentsViewController;->mContentContainer:Ljp/co/sony/mc/camera/view/contentsview/ContentsContainer;
-
-    invoke-virtual {v2, v1}, Ljp/co/sony/mc/camera/view/contentsview/ContentsContainer;->getChildAt(I)Landroid/view/View;
-
-    move-result-object v2
-
-    check-cast v2, Ljp/co/sony/mc/camera/view/contentsview/ContentPallet;
-
-    .line 431
-    invoke-virtual {v2}, Ljp/co/sony/mc/camera/view/contentsview/ContentPallet;->hasContent()Z
-
-    move-result v2
-
-    if-nez v2, :cond_2
-
-    .line 433
-    sget-boolean p0, Ljp/co/sony/mc/camera/util/CamLog;->VERBOSE:Z
-
-    if-eqz p0, :cond_1
-
-    new-instance p0, Ljava/lang/StringBuilder;
-
-    const-string v0, "isLoading() pallet is loading. index = "
-
-    invoke-direct {p0, v0}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
-
-    invoke-virtual {p0, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
-
-    move-result-object p0
-
-    invoke-virtual {p0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object p0
-
-    filled-new-array {p0}, [Ljava/lang/String;
-
-    move-result-object p0
+    aput-object v0, p0, v2
 
     invoke-static {p0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
     :cond_1
-    const/4 p0, 0x1
-
-    return p0
+    return v1
 
     :cond_2
-    add-int/lit8 v1, v1, 0x1
+    add-int/lit8 v0, v0, 0x1
 
     goto :goto_0
 
     :cond_3
-    return v0
+    return v2
 .end method
 
 .method public isLoadingInProvisionalContent()Z
@@ -1114,36 +1138,40 @@
 .end method
 
 .method public onContentCreated(ILjp/co/sony/mc/camera/view/contentsview/contents/Content;Landroid/graphics/Bitmap;)V
-    .locals 2
+    .locals 3
 
     .line 461
     sget-boolean v0, Ljp/co/sony/mc/camera/util/CamLog;->VERBOSE:Z
 
     if-eqz v0, :cond_0
 
-    new-instance v0, Ljava/lang/StringBuilder;
+    const/4 v0, 0x1
 
-    const-string v1, "onContentCreated( "
+    new-array v0, v0, [Ljava/lang/String;
 
-    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+    new-instance v1, Ljava/lang/StringBuilder;
 
-    invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+    const-string v2, "onContentCreated( "
 
-    move-result-object v0
+    invoke-direct {v1, v2}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
-    const-string v1, " )"
+    invoke-virtual {v1, p1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    move-result-object v1
 
-    move-result-object v0
+    const-string v2, " )"
 
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    move-result-object v0
+    move-result-object v1
 
-    filled-new-array {v0}, [Ljava/lang/String;
+    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    move-result-object v0
+    move-result-object v1
+
+    const/4 v2, 0x0
+
+    aput-object v1, v0, v2
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
@@ -1222,18 +1250,22 @@
 .end method
 
 .method public onStorageStateChanged(Ljp/co/sony/mc/camera/storage/Storage$StorageType;Ljp/co/sony/mc/camera/storage/Storage$StorageState;Ljp/co/sony/mc/camera/storage/Storage$StorageReadyState;)V
-    .locals 0
+    .locals 2
 
     .line 501
     sget-boolean p3, Ljp/co/sony/mc/camera/util/CamLog;->VERBOSE:Z
 
     if-eqz p3, :cond_0
 
-    const-string p3, "onStorageStateChanged"
+    const/4 p3, 0x1
 
-    filled-new-array {p3}, [Ljava/lang/String;
+    new-array p3, p3, [Ljava/lang/String;
 
-    move-result-object p3
+    const/4 v0, 0x0
+
+    const-string v1, "onStorageStateChanged"
+
+    aput-object v1, p3, v0
 
     invoke-static {p3}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
@@ -1268,18 +1300,22 @@
 .end method
 
 .method public pause(Z)V
-    .locals 1
+    .locals 3
 
     .line 148
     sget-boolean v0, Ljp/co/sony/mc/camera/util/CamLog;->VERBOSE:Z
 
     if-eqz v0, :cond_0
 
-    const-string v0, "pause() has been called."
+    const/4 v0, 0x1
 
-    filled-new-array {v0}, [Ljava/lang/String;
+    new-array v0, v0, [Ljava/lang/String;
 
-    move-result-object v0
+    const/4 v1, 0x0
+
+    const-string v2, "pause() has been called."
+
+    aput-object v2, v0, v1
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
@@ -1310,11 +1346,15 @@
 
     if-eqz v0, :cond_0
 
-    const-string v0, "release() has been called."
+    const/4 v0, 0x1
 
-    filled-new-array {v0}, [Ljava/lang/String;
+    new-array v0, v0, [Ljava/lang/String;
 
-    move-result-object v0
+    const/4 v1, 0x0
+
+    const-string v2, "release() has been called."
+
+    aput-object v2, v0, v1
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
@@ -1371,18 +1411,22 @@
 .end method
 
 .method public reload()V
-    .locals 3
+    .locals 4
 
     .line 300
     sget-boolean v0, Ljp/co/sony/mc/camera/util/CamLog;->VERBOSE:Z
 
+    const/4 v1, 0x1
+
     if-eqz v0, :cond_0
 
-    const-string v0, "reload() has been called."
+    new-array v0, v1, [Ljava/lang/String;
 
-    filled-new-array {v0}, [Ljava/lang/String;
+    const/4 v2, 0x0
 
-    move-result-object v0
+    const-string v3, "reload() has been called."
+
+    aput-object v3, v0, v2
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
@@ -1395,14 +1439,12 @@
     .line 303
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/contentsview/ContentsViewController;->mSecurityLevel:Ljp/co/sony/mc/camera/view/contentsview/ContentLoader$SecurityLevel;
 
-    sget-object v1, Ljp/co/sony/mc/camera/view/contentsview/ContentLoader$SecurityLevel;->NORMAL:Ljp/co/sony/mc/camera/view/contentsview/ContentLoader$SecurityLevel;
+    sget-object v2, Ljp/co/sony/mc/camera/view/contentsview/ContentLoader$SecurityLevel;->NORMAL:Ljp/co/sony/mc/camera/view/contentsview/ContentLoader$SecurityLevel;
 
-    if-ne v0, v1, :cond_1
+    if-ne v0, v2, :cond_1
 
     .line 304
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/contentsview/ContentsViewController;->mContentLoader:Ljp/co/sony/mc/camera/view/contentsview/ContentLoader;
-
-    const/4 v1, 0x1
 
     invoke-virtual {v0, v1}, Ljp/co/sony/mc/camera/view/contentsview/ContentLoader;->reload(I)V
 
@@ -1472,18 +1514,22 @@
 .end method
 
 .method public setClickThumbnailProgressListener(Ljp/co/sony/mc/camera/view/contentsview/ContentsViewController$OnClickThumbnailProgressListener;)V
-    .locals 1
+    .locals 3
 
     .line 550
     sget-boolean v0, Ljp/co/sony/mc/camera/util/CamLog;->VERBOSE:Z
 
     if-eqz v0, :cond_0
 
-    const-string/jumbo v0, "setClickThumbnailProgressListener"
+    const/4 v0, 0x1
 
-    filled-new-array {v0}, [Ljava/lang/String;
+    new-array v0, v0, [Ljava/lang/String;
 
-    move-result-object v0
+    const/4 v1, 0x0
+
+    const-string v2, "setClickThumbnailProgressListener"
+
+    aput-object v2, v0, v1
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
@@ -1532,7 +1578,7 @@
 .method public setup(Landroid/view/View;Landroid/view/LayoutInflater;)V
     .locals 1
 
-    const v0, 0x7f09013e
+    const v0, 0x7f090140
 
     .line 139
     invoke-virtual {p1, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
@@ -1550,31 +1596,33 @@
 .end method
 
 .method public show()V
-    .locals 2
+    .locals 3
 
     .line 338
     sget-boolean v0, Ljp/co/sony/mc/camera/util/CamLog;->VERBOSE:Z
 
+    const/4 v1, 0x0
+
     if-eqz v0, :cond_0
 
-    const-string/jumbo v0, "show()"
+    const/4 v0, 0x1
 
-    filled-new-array {v0}, [Ljava/lang/String;
+    new-array v0, v0, [Ljava/lang/String;
 
-    move-result-object v0
+    const-string/jumbo v2, "show()"
+
+    aput-object v2, v0, v1
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
-    :cond_0
-    const/4 v0, 0x0
-
     .line 339
-    invoke-virtual {p0, v0}, Ljp/co/sony/mc/camera/view/contentsview/ContentsViewController;->stopAnimation(Z)V
+    :cond_0
+    invoke-virtual {p0, v1}, Ljp/co/sony/mc/camera/view/contentsview/ContentsViewController;->stopAnimation(Z)V
 
     .line 340
-    iget-object v1, p0, Ljp/co/sony/mc/camera/view/contentsview/ContentsViewController;->mContentContainer:Ljp/co/sony/mc/camera/view/contentsview/ContentsContainer;
+    iget-object v0, p0, Ljp/co/sony/mc/camera/view/contentsview/ContentsViewController;->mContentContainer:Ljp/co/sony/mc/camera/view/contentsview/ContentsContainer;
 
-    invoke-virtual {v1, v0}, Ljp/co/sony/mc/camera/view/contentsview/ContentsContainer;->setVisibility(I)V
+    invoke-virtual {v0, v1}, Ljp/co/sony/mc/camera/view/contentsview/ContentsContainer;->setVisibility(I)V
 
     .line 341
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/contentsview/ContentsViewController;->mContentContainer:Ljp/co/sony/mc/camera/view/contentsview/ContentsContainer;
@@ -1585,18 +1633,22 @@
 .end method
 
 .method public showProgress(I)V
-    .locals 3
+    .locals 4
 
     .line 519
     sget-boolean v0, Ljp/co/sony/mc/camera/util/CamLog;->VERBOSE:Z
 
+    const/4 v1, 0x1
+
+    const/4 v2, 0x0
+
     if-eqz v0, :cond_0
 
-    const-string/jumbo v0, "showProgress() has been called."
+    new-array v0, v1, [Ljava/lang/String;
 
-    filled-new-array {v0}, [Ljava/lang/String;
+    const-string/jumbo v3, "showProgress() has been called."
 
-    move-result-object v0
+    aput-object v3, v0, v2
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
@@ -1608,24 +1660,22 @@
 
     if-eqz p1, :cond_2
 
-    const v0, 0x7f090139
+    const v0, 0x7f09013b
 
     .line 522
     invoke-virtual {p1, v0}, Ljp/co/sony/mc/camera/view/contentsview/ContentPallet;->findViewById(I)Landroid/view/View;
 
-    move-result-object v1
+    move-result-object v3
 
-    if-eqz v1, :cond_1
-
-    const/4 v2, 0x0
+    if-eqz v3, :cond_1
 
     .line 525
-    invoke-virtual {v1, v2}, Landroid/view/View;->setVisibility(I)V
+    invoke-virtual {v3, v2}, Landroid/view/View;->setVisibility(I)V
 
     .line 526
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/contentsview/ContentsViewController;->mClickListener:Ljp/co/sony/mc/camera/view/contentsview/ContentsViewController$ClickListener;
 
-    invoke-virtual {v1, p0}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
+    invoke-virtual {v3, p0}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     .line 528
     :cond_1
@@ -1633,31 +1683,35 @@
 
     if-eqz p0, :cond_2
 
+    const/4 p0, 0x2
+
     .line 529
-    new-instance p0, Ljava/lang/StringBuilder;
+    new-array p0, p0, [Ljava/lang/String;
 
-    const-string v1, "progress = "
+    const-string v3, "ContentsViewController"
 
-    invoke-direct {p0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+    aput-object v3, p0, v2
+
+    new-instance v2, Ljava/lang/StringBuilder;
+
+    const-string v3, "progress = "
+
+    invoke-direct {v2, v3}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
     .line 530
     invoke-virtual {p1, v0}, Ljp/co/sony/mc/camera/view/contentsview/ContentPallet;->findViewById(I)Landroid/view/View;
 
     move-result-object p1
 
-    invoke-virtual {p0, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+    invoke-virtual {v2, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
-    move-result-object p0
+    move-result-object p1
 
-    invoke-virtual {p0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-virtual {p1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    move-result-object p0
+    move-result-object p1
 
-    const-string p1, "ContentsViewController"
-
-    filled-new-array {p1, p0}, [Ljava/lang/String;
-
-    move-result-object p0
+    aput-object p1, p0, v1
 
     .line 529
     invoke-static {p0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
@@ -1667,7 +1721,7 @@
 .end method
 
 .method public startHideAnimation()V
-    .locals 2
+    .locals 3
 
     const/4 v0, 0x0
 
@@ -1675,41 +1729,43 @@
     invoke-virtual {p0, v0}, Ljp/co/sony/mc/camera/view/contentsview/ContentsViewController;->stopAnimation(Z)V
 
     .line 359
-    iget-object v0, p0, Ljp/co/sony/mc/camera/view/contentsview/ContentsViewController;->mContentContainer:Ljp/co/sony/mc/camera/view/contentsview/ContentsContainer;
+    iget-object v1, p0, Ljp/co/sony/mc/camera/view/contentsview/ContentsViewController;->mContentContainer:Ljp/co/sony/mc/camera/view/contentsview/ContentsContainer;
 
-    invoke-virtual {v0}, Ljp/co/sony/mc/camera/view/contentsview/ContentsContainer;->cancelRequestHide()V
+    invoke-virtual {v1}, Ljp/co/sony/mc/camera/view/contentsview/ContentsContainer;->cancelRequestHide()V
 
     .line 360
-    iget-object v0, p0, Ljp/co/sony/mc/camera/view/contentsview/ContentsViewController;->mContext:Landroid/content/Context;
+    iget-object v1, p0, Ljp/co/sony/mc/camera/view/contentsview/ContentsViewController;->mContext:Landroid/content/Context;
 
-    const v1, 0x7f010043
+    const v2, 0x7f010043
 
-    invoke-static {v0, v1}, Landroid/view/animation/AnimationUtils;->loadAnimation(Landroid/content/Context;I)Landroid/view/animation/Animation;
+    invoke-static {v1, v2}, Landroid/view/animation/AnimationUtils;->loadAnimation(Landroid/content/Context;I)Landroid/view/animation/Animation;
 
-    move-result-object v0
+    move-result-object v1
 
     .line 361
-    new-instance v1, Ljp/co/sony/mc/camera/view/contentsview/ContentsViewController$1;
+    new-instance v2, Ljp/co/sony/mc/camera/view/contentsview/ContentsViewController$1;
 
-    invoke-direct {v1, p0}, Ljp/co/sony/mc/camera/view/contentsview/ContentsViewController$1;-><init>(Ljp/co/sony/mc/camera/view/contentsview/ContentsViewController;)V
+    invoke-direct {v2, p0}, Ljp/co/sony/mc/camera/view/contentsview/ContentsViewController$1;-><init>(Ljp/co/sony/mc/camera/view/contentsview/ContentsViewController;)V
 
-    invoke-virtual {v0, v1}, Landroid/view/animation/Animation;->setAnimationListener(Landroid/view/animation/Animation$AnimationListener;)V
+    invoke-virtual {v1, v2}, Landroid/view/animation/Animation;->setAnimationListener(Landroid/view/animation/Animation$AnimationListener;)V
 
     .line 376
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/contentsview/ContentsViewController;->mContentContainer:Ljp/co/sony/mc/camera/view/contentsview/ContentsContainer;
 
-    invoke-virtual {p0, v0}, Ljp/co/sony/mc/camera/view/contentsview/ContentsContainer;->startAnimation(Landroid/view/animation/Animation;)V
+    invoke-virtual {p0, v1}, Ljp/co/sony/mc/camera/view/contentsview/ContentsContainer;->startAnimation(Landroid/view/animation/Animation;)V
 
     .line 377
     sget-boolean p0, Ljp/co/sony/mc/camera/util/CamLog;->VERBOSE:Z
 
     if-eqz p0, :cond_0
 
-    const-string p0, "Animation started."
+    const/4 p0, 0x1
 
-    filled-new-array {p0}, [Ljava/lang/String;
+    new-array p0, p0, [Ljava/lang/String;
 
-    move-result-object p0
+    const-string v1, "Animation started."
+
+    aput-object v1, p0, v0
 
     invoke-static {p0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
@@ -1718,7 +1774,7 @@
 .end method
 
 .method public stopAnimation(Z)V
-    .locals 2
+    .locals 3
 
     .line 388
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/contentsview/ContentsViewController;->mContentContainer:Ljp/co/sony/mc/camera/view/contentsview/ContentsContainer;
@@ -1745,11 +1801,15 @@
 
     if-eqz p1, :cond_1
 
-    const-string p1, "Animation canceled."
+    const/4 p1, 0x1
 
-    filled-new-array {p1}, [Ljava/lang/String;
+    new-array p1, p1, [Ljava/lang/String;
 
-    move-result-object p1
+    const/4 v0, 0x0
+
+    const-string v2, "Animation canceled."
+
+    aput-object v2, p1, v0
 
     invoke-static {p1}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 

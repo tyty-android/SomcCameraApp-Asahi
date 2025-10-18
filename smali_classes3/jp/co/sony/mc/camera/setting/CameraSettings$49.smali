@@ -21,7 +21,7 @@
 .method constructor <init>()V
     .locals 0
 
-    .line 947
+    .line 1001
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -42,11 +42,11 @@
         }
     .end annotation
 
-    .line 951
+    .line 1005
     check-cast p1, Ljp/co/sony/mc/camera/setting/CameraSettings;
 
-    .line 952
-    invoke-static {p1}, Ljp/co/sony/mc/camera/setting/CameraSettings;->-$$Nest$mgetPhotoFormat(Ljp/co/sony/mc/camera/setting/CameraSettings;)Ljp/co/sony/mc/camera/configuration/parameters/PhotoFormat;
+    .line 1006
+    invoke-virtual {p1}, Ljp/co/sony/mc/camera/setting/CameraSettings;->getGreenMagenta()Ljava/lang/Float;
 
     move-result-object p0
 

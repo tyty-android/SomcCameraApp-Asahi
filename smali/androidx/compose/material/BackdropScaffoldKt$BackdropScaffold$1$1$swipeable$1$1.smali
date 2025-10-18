@@ -71,7 +71,7 @@
 .method public final invoke()Ljava/lang/Boolean;
     .locals 7
 
-    .line 329
+    .line 331
     iget-object v0, p0, Landroidx/compose/material/BackdropScaffoldKt$BackdropScaffold$1$1$swipeable$1$1;->$scaffoldState:Landroidx/compose/material/BackdropScaffoldState;
 
     invoke-virtual {v0}, Landroidx/compose/material/BackdropScaffoldState;->getConfirmStateChange$material_release()Lkotlin/jvm/functions/Function1;
@@ -92,7 +92,7 @@
 
     if-eqz v0, :cond_0
 
-    .line 330
+    .line 332
     iget-object v1, p0, Landroidx/compose/material/BackdropScaffoldKt$BackdropScaffold$1$1$swipeable$1$1;->$scope:Lkotlinx/coroutines/CoroutineScope;
 
     new-instance v0, Landroidx/compose/material/BackdropScaffoldKt$BackdropScaffold$1$1$swipeable$1$1$1;
@@ -118,7 +118,7 @@
     :cond_0
     const/4 p0, 0x1
 
-    .line 331
+    .line 333
     invoke-static {p0}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
     move-result-object p0
@@ -129,7 +129,7 @@
 .method public bridge synthetic invoke()Ljava/lang/Object;
     .locals 0
 
-    .line 328
+    .line 330
     invoke-virtual {p0}, Landroidx/compose/material/BackdropScaffoldKt$BackdropScaffold$1$1$swipeable$1$1;->invoke()Ljava/lang/Boolean;
 
     move-result-object p0

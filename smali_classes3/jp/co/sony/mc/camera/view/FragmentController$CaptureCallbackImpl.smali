@@ -43,10 +43,10 @@
 .method constructor <init>(Ljp/co/sony/mc/camera/view/FragmentController;)V
     .locals 0
 
-    .line 7221
+    .line 7467
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 7222
+    .line 7468
     iput-object p1, p0, Ljp/co/sony/mc/camera/view/FragmentController$CaptureCallbackImpl;->mController:Ljp/co/sony/mc/camera/view/FragmentController;
 
     return-void
@@ -55,22 +55,26 @@
 
 # virtual methods
 .method public onBurstCaptureDone(I)V
-    .locals 2
+    .locals 3
 
-    .line 7289
+    .line 7535
     sget-boolean v0, Ljp/co/sony/mc/camera/util/CamLog;->DEBUG:Z
 
     if-eqz v0, :cond_0
 
-    const-string v0, "invoke"
+    const/4 v0, 0x1
 
-    filled-new-array {v0}, [Ljava/lang/String;
+    new-array v0, v0, [Ljava/lang/String;
 
-    move-result-object v0
+    const/4 v1, 0x0
+
+    const-string v2, "invoke"
+
+    aput-object v2, v0, v1
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
-    .line 7290
+    .line 7536
     :cond_0
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/FragmentController$CaptureCallbackImpl;->mController:Ljp/co/sony/mc/camera/view/FragmentController;
 
@@ -88,22 +92,26 @@
 .end method
 
 .method public onBurstCaptureRejected(II)V
-    .locals 1
+    .locals 2
 
-    .line 7301
+    .line 7547
     sget-boolean p2, Ljp/co/sony/mc/camera/util/CamLog;->DEBUG:Z
 
     if-eqz p2, :cond_0
 
-    const-string p2, "invoke"
+    const/4 p2, 0x1
 
-    filled-new-array {p2}, [Ljava/lang/String;
+    new-array p2, p2, [Ljava/lang/String;
 
-    move-result-object p2
+    const/4 v0, 0x0
+
+    const-string v1, "invoke"
+
+    aput-object v1, p2, v0
 
     invoke-static {p2}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
-    .line 7302
+    .line 7548
     :cond_0
     iget-object p2, p0, Ljp/co/sony/mc/camera/view/FragmentController$CaptureCallbackImpl;->mController:Ljp/co/sony/mc/camera/view/FragmentController;
 
@@ -121,30 +129,34 @@
 .end method
 
 .method public onBurstShutterAction(I)V
-    .locals 2
+    .locals 4
 
-    .line 7267
+    .line 7513
     sget-boolean v0, Ljp/co/sony/mc/camera/util/CamLog;->DEBUG:Z
+
+    const/4 v1, 0x1
 
     if-eqz v0, :cond_0
 
-    const-string v0, "invoke"
+    new-array v0, v1, [Ljava/lang/String;
 
-    filled-new-array {v0}, [Ljava/lang/String;
+    const/4 v2, 0x0
 
-    move-result-object v0
+    const-string v3, "invoke"
+
+    aput-object v3, v0, v2
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
-    .line 7268
+    .line 7514
     :cond_0
     iget v0, p0, Ljp/co/sony/mc/camera/view/FragmentController$CaptureCallbackImpl;->mBurstCount:I
 
-    add-int/lit8 v0, v0, 0x1
+    add-int/2addr v0, v1
 
     iput v0, p0, Ljp/co/sony/mc/camera/view/FragmentController$CaptureCallbackImpl;->mBurstCount:I
 
-    .line 7269
+    .line 7515
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/FragmentController$CaptureCallbackImpl;->mController:Ljp/co/sony/mc/camera/view/FragmentController;
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/view/FragmentController;->-$$Nest$fgetmActivity(Ljp/co/sony/mc/camera/view/FragmentController;)Ljp/co/sony/mc/camera/CameraActivity;
@@ -163,7 +175,7 @@
 .method public onBurstShutterDone(I)V
     .locals 2
 
-    .line 7279
+    .line 7525
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/FragmentController$CaptureCallbackImpl;->mController:Ljp/co/sony/mc/camera/view/FragmentController;
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/view/FragmentController;->-$$Nest$fgetmActivity(Ljp/co/sony/mc/camera/view/FragmentController;)Ljp/co/sony/mc/camera/CameraActivity;
@@ -180,22 +192,26 @@
 .end method
 
 .method public onCapturingFinished(I)V
-    .locals 1
+    .locals 2
 
-    .line 7388
+    .line 7634
     sget-boolean p1, Ljp/co/sony/mc/camera/util/CamLog;->DEBUG:Z
+
+    const/4 v0, 0x0
 
     if-eqz p1, :cond_0
 
-    const-string p1, "invoke"
+    const/4 p1, 0x1
 
-    filled-new-array {p1}, [Ljava/lang/String;
+    new-array p1, p1, [Ljava/lang/String;
 
-    move-result-object p1
+    const-string v1, "invoke"
+
+    aput-object v1, p1, v0
 
     invoke-static {p1}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
-    .line 7389
+    .line 7635
     :cond_0
     iget-object p1, p0, Ljp/co/sony/mc/camera/view/FragmentController$CaptureCallbackImpl;->mController:Ljp/co/sony/mc/camera/view/FragmentController;
 
@@ -203,11 +219,9 @@
 
     move-result-object p1
 
-    const/4 v0, 0x0
-
     invoke-virtual {p1, v0}, Ljp/co/sony/mc/camera/view/DisplayFlashController;->enable(Z)V
 
-    .line 7390
+    .line 7636
     iget-object p1, p0, Ljp/co/sony/mc/camera/view/FragmentController$CaptureCallbackImpl;->mController:Ljp/co/sony/mc/camera/view/FragmentController;
 
     invoke-static {p1}, Ljp/co/sony/mc/camera/view/FragmentController;->-$$Nest$fgetmDisplayFlashController(Ljp/co/sony/mc/camera/view/FragmentController;)Ljp/co/sony/mc/camera/view/DisplayFlashController;
@@ -216,7 +230,7 @@
 
     invoke-virtual {p1}, Ljp/co/sony/mc/camera/view/DisplayFlashController;->hide()V
 
-    .line 7391
+    .line 7637
     iget-object p1, p0, Ljp/co/sony/mc/camera/view/FragmentController$CaptureCallbackImpl;->mController:Ljp/co/sony/mc/camera/view/FragmentController;
 
     invoke-static {p1}, Ljp/co/sony/mc/camera/view/FragmentController;->-$$Nest$fgetmIsRemoconConnected(Ljp/co/sony/mc/camera/view/FragmentController;)Z
@@ -225,7 +239,7 @@
 
     if-eqz p1, :cond_1
 
-    .line 7392
+    .line 7638
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/FragmentController$CaptureCallbackImpl;->mController:Ljp/co/sony/mc/camera/view/FragmentController;
 
     invoke-static {p0}, Ljp/co/sony/mc/camera/view/FragmentController;->-$$Nest$fgetmRemoconManager(Ljp/co/sony/mc/camera/view/FragmentController;)Lcom/sonymobile/camera/bleremotecontrol/RemoconManager;
@@ -239,22 +253,26 @@
 .end method
 
 .method public onChangeToReady()V
-    .locals 2
+    .locals 3
 
-    .line 7369
+    .line 7615
     sget-boolean v0, Ljp/co/sony/mc/camera/util/CamLog;->DEBUG:Z
 
     if-eqz v0, :cond_0
 
-    const-string v0, "invoke"
+    const/4 v0, 0x1
 
-    filled-new-array {v0}, [Ljava/lang/String;
+    new-array v0, v0, [Ljava/lang/String;
 
-    move-result-object v0
+    const/4 v1, 0x0
+
+    const-string v2, "invoke"
+
+    aput-object v2, v0, v1
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
-    .line 7370
+    .line 7616
     :cond_0
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/FragmentController$CaptureCallbackImpl;->mController:Ljp/co/sony/mc/camera/view/FragmentController;
 
@@ -272,18 +290,22 @@
 .end method
 
 .method public onDiscardedSnapshotRequest(I)V
-    .locals 0
+    .locals 1
 
-    .line 7250
+    .line 7496
     sget-boolean p0, Ljp/co/sony/mc/camera/util/CamLog;->DEBUG:Z
 
     if-eqz p0, :cond_0
 
-    const-string p0, "invoke"
+    const/4 p0, 0x1
 
-    filled-new-array {p0}, [Ljava/lang/String;
+    new-array p0, p0, [Ljava/lang/String;
 
-    move-result-object p0
+    const/4 p1, 0x0
+
+    const-string v0, "invoke"
+
+    aput-object v0, p0, p1
 
     invoke-static {p0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
@@ -292,22 +314,26 @@
 .end method
 
 .method public onExposureDone(I)V
-    .locals 2
+    .locals 3
 
-    .line 7357
+    .line 7603
     sget-boolean v0, Ljp/co/sony/mc/camera/util/CamLog;->DEBUG:Z
 
     if-eqz v0, :cond_0
 
-    const-string v0, "invoke"
+    const/4 v0, 0x1
 
-    filled-new-array {v0}, [Ljava/lang/String;
+    new-array v0, v0, [Ljava/lang/String;
 
-    move-result-object v0
+    const/4 v1, 0x0
+
+    const-string v2, "invoke"
+
+    aput-object v2, v0, v1
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
-    .line 7358
+    .line 7604
     :cond_0
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/FragmentController$CaptureCallbackImpl;->mController:Ljp/co/sony/mc/camera/view/FragmentController;
 
@@ -327,32 +353,36 @@
 .method public onExposureStarted(IIZZ)V
     .locals 8
 
-    .line 7345
+    .line 7591
     sget-boolean v0, Ljp/co/sony/mc/camera/util/CamLog;->DEBUG:Z
 
     if-eqz v0, :cond_0
 
-    new-instance v0, Ljava/lang/StringBuilder;
+    const/4 v0, 0x1
 
-    const-string v1, "invoke shutter duration = "
+    new-array v0, v0, [Ljava/lang/String;
 
-    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+    new-instance v1, Ljava/lang/StringBuilder;
 
-    invoke-virtual {v0, p2}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+    const-string v2, "invoke shutter duration = "
 
-    move-result-object v0
+    invoke-direct {v1, v2}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-virtual {v1, p2}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
-    move-result-object v0
+    move-result-object v1
 
-    filled-new-array {v0}, [Ljava/lang/String;
+    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    move-result-object v0
+    move-result-object v1
+
+    const/4 v2, 0x0
+
+    aput-object v1, v0, v2
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
-    .line 7346
+    .line 7592
     :cond_0
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/FragmentController$CaptureCallbackImpl;->mController:Ljp/co/sony/mc/camera/view/FragmentController;
 
@@ -382,22 +412,26 @@
 .end method
 
 .method public onPreCaptureRequested(I)V
-    .locals 0
+    .locals 2
 
-    .line 7381
+    .line 7627
     sget-boolean p1, Ljp/co/sony/mc/camera/util/CamLog;->DEBUG:Z
 
     if-eqz p1, :cond_0
 
-    const-string p1, "invoke"
+    const/4 p1, 0x1
 
-    filled-new-array {p1}, [Ljava/lang/String;
+    new-array p1, p1, [Ljava/lang/String;
 
-    move-result-object p1
+    const/4 v0, 0x0
+
+    const-string v1, "invoke"
+
+    aput-object v1, p1, v0
 
     invoke-static {p1}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
-    .line 7382
+    .line 7628
     :cond_0
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/FragmentController$CaptureCallbackImpl;->mController:Ljp/co/sony/mc/camera/view/FragmentController;
 
@@ -405,7 +439,7 @@
 
     move-result-object p0
 
-    .line 7383
+    .line 7629
     invoke-static {}, Ljp/co/sony/mc/camera/setting/CameraProSetting;->getInstance()Ljp/co/sony/mc/camera/setting/CameraProSetting;
 
     move-result-object p1
@@ -414,35 +448,37 @@
 
     move-result-object p1
 
-    .line 7382
+    .line 7628
     invoke-virtual {p0, p1}, Ljp/co/sony/mc/camera/view/DisplayFlashController;->show(Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;)V
 
     return-void
 .end method
 
 .method public onPrepareBurstDone(I)V
-    .locals 2
+    .locals 3
 
-    .line 7255
+    .line 7501
     sget-boolean v0, Ljp/co/sony/mc/camera/util/CamLog;->DEBUG:Z
+
+    const/4 v1, 0x0
 
     if-eqz v0, :cond_0
 
-    const-string v0, "invoke"
+    const/4 v0, 0x1
 
-    filled-new-array {v0}, [Ljava/lang/String;
+    new-array v0, v0, [Ljava/lang/String;
 
-    move-result-object v0
+    const-string v2, "invoke"
+
+    aput-object v2, v0, v1
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
+    .line 7502
     :cond_0
-    const/4 v0, 0x0
+    iput v1, p0, Ljp/co/sony/mc/camera/view/FragmentController$CaptureCallbackImpl;->mBurstCount:I
 
-    .line 7256
-    iput v0, p0, Ljp/co/sony/mc/camera/view/FragmentController$CaptureCallbackImpl;->mBurstCount:I
-
-    .line 7257
+    .line 7503
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/FragmentController$CaptureCallbackImpl;->mController:Ljp/co/sony/mc/camera/view/FragmentController;
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/view/FragmentController;->-$$Nest$fgetmActivity(Ljp/co/sony/mc/camera/view/FragmentController;)Ljp/co/sony/mc/camera/CameraActivity;
@@ -459,22 +495,26 @@
 .end method
 
 .method public onShutterAction(I)V
-    .locals 2
+    .locals 3
 
-    .line 7239
+    .line 7485
     sget-boolean v0, Ljp/co/sony/mc/camera/util/CamLog;->DEBUG:Z
 
     if-eqz v0, :cond_0
 
-    const-string v0, "invoke"
+    const/4 v0, 0x1
 
-    filled-new-array {v0}, [Ljava/lang/String;
+    new-array v0, v0, [Ljava/lang/String;
 
-    move-result-object v0
+    const/4 v1, 0x0
+
+    const-string v2, "invoke"
+
+    aput-object v2, v0, v1
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
-    .line 7240
+    .line 7486
     :cond_0
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/FragmentController$CaptureCallbackImpl;->mController:Ljp/co/sony/mc/camera/view/FragmentController;
 
@@ -492,34 +532,38 @@
 .end method
 
 .method public onSnapshotRequestDone(ILandroid/graphics/Bitmap;)V
-    .locals 2
+    .locals 3
 
-    .line 7227
+    .line 7473
     sget-boolean v0, Ljp/co/sony/mc/camera/util/CamLog;->DEBUG:Z
 
     if-eqz v0, :cond_0
 
-    new-instance v0, Ljava/lang/StringBuilder;
+    const/4 v0, 0x1
 
-    const-string v1, "invoke: requestId = "
+    new-array v0, v0, [Ljava/lang/String;
 
-    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+    new-instance v1, Ljava/lang/StringBuilder;
 
-    invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+    const-string v2, "invoke: requestId = "
 
-    move-result-object v0
+    invoke-direct {v1, v2}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-virtual {v1, p1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
-    move-result-object v0
+    move-result-object v1
 
-    filled-new-array {v0}, [Ljava/lang/String;
+    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    move-result-object v0
+    move-result-object v1
+
+    const/4 v2, 0x0
+
+    aput-object v1, v0, v2
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
-    .line 7228
+    .line 7474
     :cond_0
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/FragmentController$CaptureCallbackImpl;->mController:Ljp/co/sony/mc/camera/view/FragmentController;
 
@@ -537,22 +581,26 @@
 .end method
 
 .method public onStoreError(ILjp/co/sony/mc/camera/mediasaving/StoreDataResult;)V
-    .locals 2
+    .locals 3
 
-    .line 7328
+    .line 7574
     sget-boolean v0, Ljp/co/sony/mc/camera/util/CamLog;->DEBUG:Z
+
+    const/4 v1, 0x0
 
     if-eqz v0, :cond_0
 
-    const-string v0, "invoke"
+    const/4 v0, 0x1
 
-    filled-new-array {v0}, [Ljava/lang/String;
+    new-array v0, v0, [Ljava/lang/String;
 
-    move-result-object v0
+    const-string v2, "invoke"
+
+    aput-object v2, v0, v1
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
-    .line 7329
+    .line 7575
     :cond_0
     invoke-virtual {p2}, Ljp/co/sony/mc/camera/mediasaving/StoreDataResult;->getMediaSavingResult()Ljp/co/sony/mc/camera/mediasaving/MediaSavingResult;
 
@@ -562,18 +610,16 @@
 
     if-eq p2, v0, :cond_1
 
-    .line 7330
+    .line 7576
     iget-object p2, p0, Ljp/co/sony/mc/camera/view/FragmentController$CaptureCallbackImpl;->mController:Ljp/co/sony/mc/camera/view/FragmentController;
 
     sget-object v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->COULD_NOT_SAVE_PHOTO:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
-
-    const/4 v1, 0x0
 
     new-array v1, v1, [Ljava/lang/Object;
 
     invoke-static {p2, v0, v1}, Ljp/co/sony/mc/camera/view/FragmentController;->-$$Nest$mshowMessageDialog(Ljp/co/sony/mc/camera/view/FragmentController;Ljp/co/sony/mc/camera/view/messagedialog/DialogId;[Ljava/lang/Object;)V
 
-    .line 7333
+    .line 7579
     :cond_1
     iget-object p2, p0, Ljp/co/sony/mc/camera/view/FragmentController$CaptureCallbackImpl;->mController:Ljp/co/sony/mc/camera/view/FragmentController;
 
@@ -591,66 +637,70 @@
 .end method
 
 .method public onStoreFinished(ILjp/co/sony/mc/camera/mediasaving/StoreDataResult;)V
-    .locals 3
+    .locals 5
 
-    .line 7312
+    .line 7558
     sget-boolean v0, Ljp/co/sony/mc/camera/util/CamLog;->DEBUG:Z
+
+    const/4 v1, 0x0
+
+    const/4 v2, 0x1
 
     if-eqz v0, :cond_0
 
-    new-instance v0, Ljava/lang/StringBuilder;
+    new-array v0, v2, [Ljava/lang/String;
 
-    const-string v1, "invoke requestId = "
+    new-instance v3, Ljava/lang/StringBuilder;
 
-    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+    const-string v4, "invoke requestId = "
+
+    invoke-direct {v3, v4}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
     invoke-virtual {p2}, Ljp/co/sony/mc/camera/mediasaving/StoreDataResult;->getRequestedId()I
 
-    move-result v1
+    move-result v4
 
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+    invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
-    move-result-object v0
+    move-result-object v3
 
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-virtual {v3}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    move-result-object v0
+    move-result-object v3
 
-    filled-new-array {v0}, [Ljava/lang/String;
-
-    move-result-object v0
+    aput-object v3, v0, v1
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
-    .line 7313
+    .line 7559
     :cond_0
-    new-instance v0, Ljava/lang/StringBuilder;
+    new-array v0, v2, [Ljava/lang/String;
 
-    const-string v1, "KeyTimestamp STORE_COMPLETE currentElapsedRealtimeNanos = "
+    new-instance v2, Ljava/lang/StringBuilder;
 
-    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+    const-string v3, "KeyTimestamp STORE_COMPLETE currentElapsedRealtimeNanos = "
 
-    .line 7314
+    invoke-direct {v2, v3}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+
+    .line 7560
     invoke-static {}, Landroid/os/SystemClock;->elapsedRealtimeNanos()J
 
-    move-result-wide v1
+    move-result-wide v3
 
-    invoke-virtual {v0, v1, v2}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
+    invoke-virtual {v2, v3, v4}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
 
-    move-result-object v0
+    move-result-object v2
 
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    move-result-object v0
+    move-result-object v2
 
-    filled-new-array {v0}, [Ljava/lang/String;
+    aput-object v2, v0, v1
 
-    move-result-object v0
-
-    .line 7313
+    .line 7559
     invoke-static {v0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
-    .line 7315
+    .line 7561
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/FragmentController$CaptureCallbackImpl;->mController:Ljp/co/sony/mc/camera/view/FragmentController;
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/view/FragmentController;->-$$Nest$fgetmActivity(Ljp/co/sony/mc/camera/view/FragmentController;)Ljp/co/sony/mc/camera/CameraActivity;

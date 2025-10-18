@@ -77,14 +77,14 @@
 
 # virtual methods
 .method public final invoke(Ljava/lang/Object;)Landroidx/compose/ui/text/font/FontWeight;
-    .locals 0
+    .locals 1
 
-    const-string p0, "it"
-
-    invoke-static {p1, p0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 306
+    .line 327
     new-instance p0, Landroidx/compose/ui/text/font/FontWeight;
+
+    const-string v0, "null cannot be cast to non-null type kotlin.Int"
+
+    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;Ljava/lang/String;)V
 
     check-cast p1, Ljava/lang/Integer;
 
@@ -100,7 +100,7 @@
 .method public bridge synthetic invoke(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
 
-    .line 304
+    .line 325
     invoke-virtual {p0, p1}, Landroidx/compose/ui/text/SaversKt$FontWeightSaver$2;->invoke(Ljava/lang/Object;)Landroidx/compose/ui/text/font/FontWeight;
 
     move-result-object p0

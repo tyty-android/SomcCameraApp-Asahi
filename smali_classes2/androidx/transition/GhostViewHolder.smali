@@ -3,6 +3,14 @@
 .source "GhostViewHolder.java"
 
 
+# annotations
+.annotation system Ldalvik/annotation/MemberClasses;
+    value = {
+        Landroidx/transition/GhostViewHolder$Api21Impl;
+    }
+.end annotation
+
+
 # instance fields
 .field private mAttached:Z
 
@@ -13,7 +21,7 @@
 .method constructor <init>(Landroid/view/ViewGroup;)V
     .locals 1
 
-    .line 38
+    .line 40
     invoke-virtual {p1}, Landroid/view/ViewGroup;->getContext()Landroid/content/Context;
 
     move-result-object v0
@@ -22,29 +30,29 @@
 
     const/4 v0, 0x0
 
-    .line 39
+    .line 41
     invoke-virtual {p0, v0}, Landroidx/transition/GhostViewHolder;->setClipChildren(Z)V
 
-    .line 40
+    .line 42
     iput-object p1, p0, Landroidx/transition/GhostViewHolder;->mParent:Landroid/view/ViewGroup;
 
-    .line 41
+    .line 43
     sget v0, Landroidx/transition/R$id;->ghost_view_holder:I
 
     invoke-virtual {p1, v0, p0}, Landroid/view/ViewGroup;->setTag(ILjava/lang/Object;)V
 
-    .line 42
+    .line 44
     iget-object p1, p0, Landroidx/transition/GhostViewHolder;->mParent:Landroid/view/ViewGroup;
 
-    invoke-static {p1}, Landroidx/transition/ViewGroupUtils;->getOverlay(Landroid/view/ViewGroup;)Landroidx/transition/ViewGroupOverlayImpl;
+    invoke-virtual {p1}, Landroid/view/ViewGroup;->getOverlay()Landroid/view/ViewGroupOverlay;
 
     move-result-object p1
 
-    invoke-interface {p1, p0}, Landroidx/transition/ViewGroupOverlayImpl;->add(Landroid/view/View;)V
+    invoke-virtual {p1, p0}, Landroid/view/ViewGroupOverlay;->add(Landroid/view/View;)V
 
     const/4 p1, 0x1
 
-    .line 43
+    .line 45
     iput-boolean p1, p0, Landroidx/transition/GhostViewHolder;->mAttached:Z
 
     return-void
@@ -53,7 +61,7 @@
 .method static getHolder(Landroid/view/ViewGroup;)Landroidx/transition/GhostViewHolder;
     .locals 1
 
-    .line 69
+    .line 71
     sget v0, Landroidx/transition/R$id;->ghost_view_holder:I
 
     invoke-virtual {p0, v0}, Landroid/view/ViewGroup;->getTag(I)Ljava/lang/Object;
@@ -76,12 +84,12 @@
         }
     .end annotation
 
-    .line 105
+    .line 107
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
-    .line 107
+    .line 109
     invoke-virtual {p0}, Landroidx/transition/GhostViewHolder;->getChildCount()I
 
     move-result v1
@@ -95,22 +103,22 @@
 
     add-int v3, v2, v1
 
-    .line 110
+    .line 112
     div-int/lit8 v3, v3, 0x2
 
-    .line 111
+    .line 113
     invoke-virtual {p0, v3}, Landroidx/transition/GhostViewHolder;->getChildAt(I)Landroid/view/View;
 
     move-result-object v4
 
     check-cast v4, Landroidx/transition/GhostViewPort;
 
-    .line 112
+    .line 114
     iget-object v4, v4, Landroidx/transition/GhostViewPort;->mView:Landroid/view/View;
 
     invoke-static {v4, v0}, Landroidx/transition/GhostViewHolder;->getParents(Landroid/view/View;Ljava/util/ArrayList;)V
 
-    .line 113
+    .line 115
     invoke-static {p1, v0}, Landroidx/transition/GhostViewHolder;->isOnTop(Ljava/util/ArrayList;Ljava/util/ArrayList;)Z
 
     move-result v4
@@ -128,7 +136,7 @@
 
     move v1, v3
 
-    .line 118
+    .line 120
     :goto_1
     invoke-virtual {v0}, Ljava/util/ArrayList;->clear()V
 
@@ -150,22 +158,22 @@
         }
     .end annotation
 
-    .line 156
+    .line 158
     invoke-virtual {p0}, Landroid/view/View;->getParent()Landroid/view/ViewParent;
 
     move-result-object v0
 
-    .line 157
+    .line 159
     instance-of v1, v0, Landroid/view/ViewGroup;
 
     if-eqz v1, :cond_0
 
-    .line 158
+    .line 160
     check-cast v0, Landroid/view/View;
 
     invoke-static {v0, p1}, Landroidx/transition/GhostViewHolder;->getParents(Landroid/view/View;Ljava/util/ArrayList;)V
 
-    .line 160
+    .line 162
     :cond_0
     invoke-virtual {p1, p0}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
@@ -175,24 +183,24 @@
 .method private static isOnTop(Landroid/view/View;Landroid/view/View;)Z
     .locals 6
 
-    .line 169
+    .line 171
     invoke-virtual {p0}, Landroid/view/View;->getParent()Landroid/view/ViewParent;
 
     move-result-object v0
 
     check-cast v0, Landroid/view/ViewGroup;
 
-    .line 171
+    .line 173
     invoke-virtual {v0}, Landroid/view/ViewGroup;->getChildCount()I
 
     move-result v1
 
-    .line 176
-    invoke-virtual {p0}, Landroid/view/View;->getZ()F
+    .line 178
+    invoke-static {p0}, Landroidx/transition/GhostViewHolder$Api21Impl;->getZ(Landroid/view/View;)F
 
     move-result v2
 
-    invoke-virtual {p1}, Landroid/view/View;->getZ()F
+    invoke-static {p1}, Landroidx/transition/GhostViewHolder$Api21Impl;->getZ(Landroid/view/View;)F
 
     move-result v3
 
@@ -204,12 +212,12 @@
 
     if-eqz v2, :cond_1
 
-    .line 177
-    invoke-virtual {p0}, Landroid/view/View;->getZ()F
+    .line 179
+    invoke-static {p0}, Landroidx/transition/GhostViewHolder$Api21Impl;->getZ(Landroid/view/View;)F
 
     move-result p0
 
-    invoke-virtual {p1}, Landroid/view/View;->getZ()F
+    invoke-static {p1}, Landroidx/transition/GhostViewHolder$Api21Impl;->getZ(Landroid/view/View;)F
 
     move-result p1
 
@@ -228,12 +236,12 @@
     :goto_0
     if-ge v2, v1, :cond_4
 
-    .line 186
+    .line 188
     invoke-static {v0, v2}, Landroidx/transition/ViewGroupUtils;->getChildDrawingOrder(Landroid/view/ViewGroup;I)I
 
     move-result v5
 
-    .line 187
+    .line 189
     invoke-virtual {v0, v5}, Landroid/view/ViewGroup;->getChildAt(I)Landroid/view/View;
 
     move-result-object v5
@@ -274,7 +282,7 @@
         }
     .end annotation
 
-    .line 132
+    .line 134
     invoke-virtual {p0}, Ljava/util/ArrayList;->isEmpty()Z
 
     move-result v0
@@ -291,7 +299,7 @@
 
     const/4 v0, 0x0
 
-    .line 133
+    .line 135
     invoke-virtual {p0, v0}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
 
     move-result-object v2
@@ -304,7 +312,7 @@
 
     goto :goto_1
 
-    .line 137
+    .line 139
     :cond_0
     invoke-virtual {p0}, Ljava/util/ArrayList;->size()I
 
@@ -323,14 +331,14 @@
     :goto_0
     if-ge v3, v2, :cond_2
 
-    .line 139
+    .line 141
     invoke-virtual {p0, v3}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
 
     move-result-object v4
 
     check-cast v4, Landroid/view/View;
 
-    .line 140
+    .line 142
     invoke-virtual {p1, v3}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
 
     move-result-object v5
@@ -339,7 +347,7 @@
 
     if-eq v4, v5, :cond_1
 
-    .line 144
+    .line 146
     invoke-static {v4, v5}, Landroidx/transition/GhostViewHolder;->isOnTop(Landroid/view/View;Landroid/view/View;)Z
 
     move-result p0
@@ -351,7 +359,7 @@
 
     goto :goto_0
 
-    .line 149
+    .line 151
     :cond_2
     invoke-virtual {p1}, Ljava/util/ArrayList;->size()I
 
@@ -374,24 +382,24 @@
 .method addGhostView(Landroidx/transition/GhostViewPort;)V
     .locals 2
 
-    .line 88
+    .line 90
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
-    .line 89
+    .line 91
     iget-object v1, p1, Landroidx/transition/GhostViewPort;->mView:Landroid/view/View;
 
     invoke-static {v1, v0}, Landroidx/transition/GhostViewHolder;->getParents(Landroid/view/View;Ljava/util/ArrayList;)V
 
-    .line 91
+    .line 93
     invoke-direct {p0, v0}, Landroidx/transition/GhostViewHolder;->getInsertIndex(Ljava/util/ArrayList;)I
 
     move-result v0
 
     if-ltz v0, :cond_1
 
-    .line 92
+    .line 94
     invoke-virtual {p0}, Landroidx/transition/GhostViewHolder;->getChildCount()I
 
     move-result v1
@@ -400,13 +408,13 @@
 
     goto :goto_0
 
-    .line 95
+    .line 97
     :cond_0
     invoke-virtual {p0, p1, v0}, Landroidx/transition/GhostViewHolder;->addView(Landroid/view/View;I)V
 
     goto :goto_1
 
-    .line 93
+    .line 95
     :cond_1
     :goto_0
     invoke-virtual {p0, p1}, Landroidx/transition/GhostViewHolder;->addView(Landroid/view/View;)V
@@ -418,17 +426,17 @@
 .method public onViewAdded(Landroid/view/View;)V
     .locals 1
 
-    .line 48
+    .line 50
     iget-boolean v0, p0, Landroidx/transition/GhostViewHolder;->mAttached:Z
 
     if-eqz v0, :cond_0
 
-    .line 51
+    .line 53
     invoke-super {p0, p1}, Landroid/widget/FrameLayout;->onViewAdded(Landroid/view/View;)V
 
     return-void
 
-    .line 49
+    .line 51
     :cond_0
     new-instance p0, Ljava/lang/IllegalStateException;
 
@@ -442,10 +450,10 @@
 .method public onViewRemoved(Landroid/view/View;)V
     .locals 3
 
-    .line 56
+    .line 58
     invoke-super {p0, p1}, Landroid/widget/FrameLayout;->onViewRemoved(Landroid/view/View;)V
 
-    .line 60
+    .line 62
     invoke-virtual {p0}, Landroidx/transition/GhostViewHolder;->getChildCount()I
 
     move-result v0
@@ -462,7 +470,7 @@
 
     if-eq v0, p1, :cond_1
 
-    .line 61
+    .line 63
     :cond_0
     invoke-virtual {p0}, Landroidx/transition/GhostViewHolder;->getChildCount()I
 
@@ -470,7 +478,7 @@
 
     if-nez p1, :cond_2
 
-    .line 62
+    .line 64
     :cond_1
     iget-object p1, p0, Landroidx/transition/GhostViewHolder;->mParent:Landroid/view/ViewGroup;
 
@@ -480,16 +488,16 @@
 
     invoke-virtual {p1, v0, v1}, Landroid/view/ViewGroup;->setTag(ILjava/lang/Object;)V
 
-    .line 63
+    .line 65
     iget-object p1, p0, Landroidx/transition/GhostViewHolder;->mParent:Landroid/view/ViewGroup;
 
-    invoke-static {p1}, Landroidx/transition/ViewGroupUtils;->getOverlay(Landroid/view/ViewGroup;)Landroidx/transition/ViewGroupOverlayImpl;
+    invoke-virtual {p1}, Landroid/view/ViewGroup;->getOverlay()Landroid/view/ViewGroupOverlay;
 
     move-result-object p1
 
-    invoke-interface {p1, p0}, Landroidx/transition/ViewGroupOverlayImpl;->remove(Landroid/view/View;)V
+    invoke-virtual {p1, p0}, Landroid/view/ViewGroupOverlay;->remove(Landroid/view/View;)V
 
-    .line 64
+    .line 66
     iput-boolean v2, p0, Landroidx/transition/GhostViewHolder;->mAttached:Z
 
     :cond_2
@@ -499,32 +507,32 @@
 .method popToOverlayTop()V
     .locals 1
 
-    .line 73
+    .line 75
     iget-boolean v0, p0, Landroidx/transition/GhostViewHolder;->mAttached:Z
 
     if-eqz v0, :cond_0
 
-    .line 78
+    .line 80
     iget-object v0, p0, Landroidx/transition/GhostViewHolder;->mParent:Landroid/view/ViewGroup;
 
-    invoke-static {v0}, Landroidx/transition/ViewGroupUtils;->getOverlay(Landroid/view/ViewGroup;)Landroidx/transition/ViewGroupOverlayImpl;
+    invoke-virtual {v0}, Landroid/view/ViewGroup;->getOverlay()Landroid/view/ViewGroupOverlay;
 
     move-result-object v0
 
-    invoke-interface {v0, p0}, Landroidx/transition/ViewGroupOverlayImpl;->remove(Landroid/view/View;)V
+    invoke-virtual {v0, p0}, Landroid/view/ViewGroupOverlay;->remove(Landroid/view/View;)V
 
-    .line 79
+    .line 81
     iget-object v0, p0, Landroidx/transition/GhostViewHolder;->mParent:Landroid/view/ViewGroup;
 
-    invoke-static {v0}, Landroidx/transition/ViewGroupUtils;->getOverlay(Landroid/view/ViewGroup;)Landroidx/transition/ViewGroupOverlayImpl;
+    invoke-virtual {v0}, Landroid/view/ViewGroup;->getOverlay()Landroid/view/ViewGroupOverlay;
 
     move-result-object v0
 
-    invoke-interface {v0, p0}, Landroidx/transition/ViewGroupOverlayImpl;->add(Landroid/view/View;)V
+    invoke-virtual {v0, p0}, Landroid/view/ViewGroupOverlay;->add(Landroid/view/View;)V
 
     return-void
 
-    .line 74
+    .line 76
     :cond_0
     new-instance p0, Ljava/lang/IllegalStateException;
 

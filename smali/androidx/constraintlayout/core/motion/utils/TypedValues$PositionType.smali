@@ -56,26 +56,54 @@
 
 # direct methods
 .method static constructor <clinit>()V
-    .locals 7
+    .locals 3
+
+    const/4 v0, 0x7
 
     .line 474
-    const-string v5, "percentX"
+    new-array v0, v0, [Ljava/lang/String;
 
-    const-string v6, "percentY"
+    const/4 v1, 0x0
 
-    const-string/jumbo v0, "transitionEasing"
+    const-string/jumbo v2, "transitionEasing"
 
-    const-string v1, "drawPath"
+    aput-object v2, v0, v1
+
+    const/4 v1, 0x1
+
+    const-string v2, "drawPath"
+
+    aput-object v2, v0, v1
+
+    const/4 v1, 0x2
 
     const-string v2, "percentWidth"
 
-    const-string v3, "percentHeight"
+    aput-object v2, v0, v1
 
-    const-string/jumbo v4, "sizePercent"
+    const/4 v1, 0x3
 
-    filled-new-array/range {v0 .. v6}, [Ljava/lang/String;
+    const-string v2, "percentHeight"
 
-    move-result-object v0
+    aput-object v2, v0, v1
+
+    const/4 v1, 0x4
+
+    const-string/jumbo v2, "sizePercent"
+
+    aput-object v2, v0, v1
+
+    const/4 v1, 0x5
+
+    const-string v2, "percentX"
+
+    aput-object v2, v0, v1
+
+    const/4 v1, 0x6
+
+    const-string v2, "percentY"
+
+    aput-object v2, v0, v1
 
     sput-object v0, Landroidx/constraintlayout/core/motion/utils/TypedValues$PositionType;->KEY_WORDS:[Ljava/lang/String;
 

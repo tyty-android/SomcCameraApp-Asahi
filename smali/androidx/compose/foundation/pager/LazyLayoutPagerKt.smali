@@ -5,12 +5,12 @@
 
 # annotations
 .annotation system Ldalvik/annotation/SourceDebugExtension;
-    value = "SMAP\nLazyLayoutPager.kt\nKotlin\n*S Kotlin\n*F\n+ 1 LazyLayoutPager.kt\nandroidx/compose/foundation/pager/LazyLayoutPagerKt\n+ 2 Dp.kt\nandroidx/compose/ui/unit/DpKt\n+ 3 Composables.kt\nandroidx/compose/runtime/ComposablesKt\n+ 4 Composer.kt\nandroidx/compose/runtime/ComposerKt\n+ 5 CompositionLocal.kt\nandroidx/compose/runtime/CompositionLocal\n*L\n1#1,282:1\n154#2:283\n36#3:284\n36#3:291\n50#3:298\n49#3:299\n83#3,3:307\n1097#4,6:285\n1097#4,6:292\n1097#4,6:300\n1097#4,6:310\n76#5:306\n*S KotlinDebug\n*F\n+ 1 LazyLayoutPager.kt\nandroidx/compose/foundation/pager/LazyLayoutPagerKt\n*L\n77#1:283\n102#1:284\n115#1:291\n118#1:298\n118#1:299\n242#1:307,3\n102#1:285,6\n115#1:292,6\n118#1:300,6\n242#1:310,6\n157#1:306\n*E\n"
+    value = "SMAP\nLazyLayoutPager.kt\nKotlin\n*S Kotlin\n*F\n+ 1 LazyLayoutPager.kt\nandroidx/compose/foundation/pager/LazyLayoutPagerKt\n+ 2 Dp.kt\nandroidx/compose/ui/unit/DpKt\n+ 3 Composer.kt\nandroidx/compose/runtime/ComposerKt\n+ 4 Composables.kt\nandroidx/compose/runtime/ComposablesKt\n+ 5 CompositionLocal.kt\nandroidx/compose/runtime/CompositionLocal\n*L\n1#1,328:1\n154#2:329\n1116#3,6:330\n1116#3,6:336\n1116#3,6:344\n1116#3,6:351\n1116#3,6:362\n50#4:342\n49#4:343\n36#4:350\n83#4,3:359\n74#5:357\n74#5:358\n*S KotlinDebug\n*F\n+ 1 LazyLayoutPager.kt\nandroidx/compose/foundation/pager/LazyLayoutPagerKt\n*L\n83#1:329\n108#1:330,6\n122#1:336,6\n125#1:344,6\n135#1:351,6\n251#1:362,6\n125#1:342\n125#1:343\n135#1:350\n251#1:359,3\n156#1:357\n164#1:358\n*E\n"
 .end annotation
 
 .annotation runtime Lkotlin/Metadata;
     d1 = {
-        "\u0000\u0086\u0001\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000b\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0010\u0008\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0003\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0004\u001a\u00d9\u0001\u0010\u0000\u001a\u00020\u00012\u0006\u0010\u0002\u001a\u00020\u00032\u0006\u0010\u0004\u001a\u00020\u00052\u0006\u0010\u0006\u001a\u00020\u00072\u0006\u0010\u0008\u001a\u00020\t2\u0006\u0010\n\u001a\u00020\u000b2\u0006\u0010\u000c\u001a\u00020\r2\u0006\u0010\u000e\u001a\u00020\t2\u0008\u0008\u0002\u0010\u000f\u001a\u00020\u00102\u0008\u0008\u0002\u0010\u0011\u001a\u00020\u00122\u0006\u0010\u0013\u001a\u00020\u00142\u0006\u0010\u0015\u001a\u00020\u00162#\u0010\u0017\u001a\u001f\u0012\u0013\u0012\u00110\u0010\u00a2\u0006\u000c\u0008\u0019\u0012\u0008\u0008\u001a\u0012\u0004\u0008\u0008(\u001b\u0012\u0004\u0012\u00020\u001c\u0018\u00010\u00182\u0006\u0010\u001d\u001a\u00020\u001e2\u0006\u0010\u001f\u001a\u00020 21\u0010!\u001a-\u0012\u0004\u0012\u00020#\u0012\u0013\u0012\u00110\u0010\u00a2\u0006\u000c\u0008\u0019\u0012\u0008\u0008\u001a\u0012\u0004\u0008\u0008($\u0012\u0004\u0012\u00020\u00010\"\u00a2\u0006\u0002\u0008%\u00a2\u0006\u0002\u0008&H\u0001\u00f8\u0001\u0000\u00f8\u0001\u0001\u00a2\u0006\u0004\u0008\'\u0010(\u001a\u0081\u0001\u0010)\u001a\u0008\u0012\u0004\u0012\u00020+0*2\u0006\u0010\u0004\u001a\u00020\u000521\u0010!\u001a-\u0012\u0004\u0012\u00020#\u0012\u0013\u0012\u00110\u0010\u00a2\u0006\u000c\u0008\u0019\u0012\u0008\u0008\u001a\u0012\u0004\u0008\u0008($\u0012\u0004\u0012\u00020\u00010\"\u00a2\u0006\u0002\u0008%\u00a2\u0006\u0002\u0008&2#\u0010\u0017\u001a\u001f\u0012\u0013\u0012\u00110\u0010\u00a2\u0006\u000c\u0008\u0019\u0012\u0008\u0008\u001a\u0012\u0004\u0008\u0008(\u001b\u0012\u0004\u0012\u00020\u001c\u0018\u00010\u00182\u000c\u0010,\u001a\u0008\u0012\u0004\u0012\u00020\u00100*H\u0003\u00a2\u0006\u0002\u0010-\u001a\u0014\u0010.\u001a\u00020\u0003*\u00020\u00032\u0006\u0010\u0004\u001a\u00020\u0005H\u0002\u0082\u0002\u000b\n\u0005\u0008\u00a1\u001e0\u0001\n\u0002\u0008\u0019\u00a8\u0006/"
+        "\u0000\u0086\u0001\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000b\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0010\u0008\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0003\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0004\u001a\u00d6\u0001\u0010\u0000\u001a\u00020\u00012\u0006\u0010\u0002\u001a\u00020\u00032\u0006\u0010\u0004\u001a\u00020\u00052\u0006\u0010\u0006\u001a\u00020\u00072\u0006\u0010\u0008\u001a\u00020\t2\u0006\u0010\n\u001a\u00020\u000b2\u0006\u0010\u000c\u001a\u00020\r2\u0006\u0010\u000e\u001a\u00020\t2\u0008\u0008\u0002\u0010\u000f\u001a\u00020\u00102\u0008\u0008\u0002\u0010\u0011\u001a\u00020\u00122\u0006\u0010\u0013\u001a\u00020\u00142\u0006\u0010\u0015\u001a\u00020\u00162#\u0010\u0017\u001a\u001f\u0012\u0013\u0012\u00110\u0010\u00a2\u0006\u000c\u0008\u0019\u0012\u0008\u0008\u001a\u0012\u0004\u0008\u0008(\u001b\u0012\u0004\u0012\u00020\u001c\u0018\u00010\u00182\u0006\u0010\u001d\u001a\u00020\u001e2\u0006\u0010\u001f\u001a\u00020 21\u0010!\u001a-\u0012\u0004\u0012\u00020#\u0012\u0013\u0012\u00110\u0010\u00a2\u0006\u000c\u0008\u0019\u0012\u0008\u0008\u001a\u0012\u0004\u0008\u0008($\u0012\u0004\u0012\u00020\u00010\"\u00a2\u0006\u0002\u0008%\u00a2\u0006\u0002\u0008&H\u0001\u00f8\u0001\u0000\u00a2\u0006\u0004\u0008\'\u0010(\u001a\u0081\u0001\u0010)\u001a\u0008\u0012\u0004\u0012\u00020+0*2\u0006\u0010\u0004\u001a\u00020\u000521\u0010!\u001a-\u0012\u0004\u0012\u00020#\u0012\u0013\u0012\u00110\u0010\u00a2\u0006\u000c\u0008\u0019\u0012\u0008\u0008\u001a\u0012\u0004\u0008\u0008($\u0012\u0004\u0012\u00020\u00010\"\u00a2\u0006\u0002\u0008%\u00a2\u0006\u0002\u0008&2#\u0010\u0017\u001a\u001f\u0012\u0013\u0012\u00110\u0010\u00a2\u0006\u000c\u0008\u0019\u0012\u0008\u0008\u001a\u0012\u0004\u0008\u0008(\u001b\u0012\u0004\u0012\u00020\u001c\u0018\u00010\u00182\u000c\u0010,\u001a\u0008\u0012\u0004\u0012\u00020\u00100*H\u0003\u00a2\u0006\u0002\u0010-\u001a\u0014\u0010.\u001a\u00020\u0003*\u00020\u00032\u0006\u0010\u0004\u001a\u00020\u0005H\u0002\u0082\u0002\u0007\n\u0005\u0008\u00a1\u001e0\u0001\u00a8\u0006/"
     }
     d2 = {
         "Pager",
@@ -74,7 +74,7 @@
 
 # direct methods
 .method public static final Pager-fs30GE4(Landroidx/compose/ui/Modifier;Landroidx/compose/foundation/pager/PagerState;Landroidx/compose/foundation/layout/PaddingValues;ZLandroidx/compose/foundation/gestures/Orientation;Landroidx/compose/foundation/gestures/snapping/SnapFlingBehavior;ZIFLandroidx/compose/foundation/pager/PageSize;Landroidx/compose/ui/input/nestedscroll/NestedScrollConnection;Lkotlin/jvm/functions/Function1;Landroidx/compose/ui/Alignment$Horizontal;Landroidx/compose/ui/Alignment$Vertical;Lkotlin/jvm/functions/Function4;Landroidx/compose/runtime/Composer;III)V
-    .locals 31
+    .locals 34
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -111,17 +111,13 @@
         }
     .end annotation
 
-    move-object/from16 v1, p0
+    move-object/from16 v15, p1
 
-    move-object/from16 v0, p1
+    move/from16 v14, p3
 
-    move/from16 v15, p3
+    move-object/from16 v13, p4
 
-    move-object/from16 v14, p4
-
-    move-object/from16 v13, p5
-
-    move-object/from16 v12, p10
+    move-object/from16 v12, p5
 
     move/from16 v11, p16
 
@@ -129,706 +125,684 @@
 
     move/from16 v9, p18
 
-    const-string v2, "modifier"
+    const v0, -0x11fabc8f
 
-    invoke-static {v1, v2}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+    move-object/from16 v1, p15
 
-    const-string/jumbo v2, "state"
+    .line 96
+    invoke-interface {v1, v0}, Landroidx/compose/runtime/Composer;->startRestartGroup(I)Landroidx/compose/runtime/Composer;
 
-    invoke-static {v0, v2}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+    move-result-object v8
 
-    const-string v2, "contentPadding"
+    const-string v1, "C(Pager)P(5,12,1,11,6,2,13!1,10:c#ui.unit.Dp,9,8,4!1,14)101@4846L18,103@4894L134,109@5054L534,124@5619L94,128@5739L115,134@5889L49,140@6089L276,149@6485L150,155@6798L7,148@6429L478,163@7131L7,136@5944L1832:LazyLayoutPager.kt#g6yjnt"
 
-    move-object/from16 v8, p2
+    invoke-static {v8, v1}, Landroidx/compose/runtime/ComposerKt;->sourceInformation(Landroidx/compose/runtime/Composer;Ljava/lang/String;)V
 
-    invoke-static {v8, v2}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+    and-int/lit16 v1, v9, 0x80
 
-    const-string v2, "orientation"
+    const/4 v7, 0x0
 
-    invoke-static {v14, v2}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+    if-eqz v1, :cond_0
 
-    const-string v2, "flingBehavior"
-
-    invoke-static {v13, v2}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string v2, "pageSize"
-
-    move-object/from16 v7, p9
-
-    invoke-static {v7, v2}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string v2, "pageNestedScrollConnection"
-
-    invoke-static {v12, v2}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string v2, "horizontalAlignment"
-
-    move-object/from16 v6, p12
-
-    invoke-static {v6, v2}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string/jumbo v2, "verticalAlignment"
-
-    move-object/from16 v5, p13
-
-    invoke-static {v5, v2}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string v2, "pageContent"
-
-    move-object/from16 v4, p14
-
-    invoke-static {v4, v2}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const v2, -0x11fabc8f
-
-    move-object/from16 v3, p15
-
-    .line 90
-    invoke-interface {v3, v2}, Landroidx/compose/runtime/Composer;->startRestartGroup(I)Landroidx/compose/runtime/Composer;
-
-    move-result-object v3
-
-    const-string v2, "C(Pager)P(5,12,1,11,6,2,13!1,10:c#ui.unit.Dp,9,8,4!1,14)95@4489L18,101@4652L19,97@4537L134,114@5148L19,103@4697L477,117@5205L94,127@5488L115,138@5788L276,146@6128L161,156@6513L7,133@5609L1489:LazyLayoutPager.kt#g6yjnt"
-
-    invoke-static {v3, v2}, Landroidx/compose/runtime/ComposerKt;->sourceInformation(Landroidx/compose/runtime/Composer;Ljava/lang/String;)V
-
-    and-int/lit16 v2, v9, 0x80
-
-    const/4 v15, 0x0
-
-    if-eqz v2, :cond_0
-
-    move v2, v15
+    move v6, v7
 
     goto :goto_0
 
     :cond_0
-    move/from16 v2, p7
+    move/from16 v6, p7
 
     :goto_0
-    and-int/lit16 v4, v9, 0x100
+    and-int/lit16 v1, v9, 0x100
 
-    if-eqz v4, :cond_1
+    if-eqz v1, :cond_1
 
-    int-to-float v4, v15
+    int-to-float v1, v7
 
-    .line 283
-    invoke-static {v4}, Landroidx/compose/ui/unit/Dp;->constructor-impl(F)F
+    .line 329
+    invoke-static {v1}, Landroidx/compose/ui/unit/Dp;->constructor-impl(F)F
 
-    move-result v4
+    move-result v1
 
-    move/from16 v17, v4
+    move/from16 v16, v1
 
     goto :goto_1
 
     :cond_1
-    move/from16 v17, p8
+    move/from16 v16, p8
 
     :goto_1
     invoke-static {}, Landroidx/compose/runtime/ComposerKt;->isTraceInProgress()Z
 
-    move-result v4
+    move-result v1
 
-    if-eqz v4, :cond_2
+    if-eqz v1, :cond_2
 
-    const-string v4, "androidx.compose.foundation.pager.Pager (LazyLayoutPager.kt:58)"
-
-    const v15, -0x11fabc8f
-
-    .line 90
-    invoke-static {v15, v11, v10, v4}, Landroidx/compose/runtime/ComposerKt;->traceEventStart(IIILjava/lang/String;)V
-
-    :cond_2
-    if-ltz v2, :cond_e
+    const-string v1, "androidx.compose.foundation.pager.Pager (LazyLayoutPager.kt:95)"
 
     .line 96
-    sget-object v4, Landroidx/compose/foundation/gestures/ScrollableDefaults;->INSTANCE:Landroidx/compose/foundation/gestures/ScrollableDefaults;
+    invoke-static {v0, v11, v10, v1}, Landroidx/compose/runtime/ComposerKt;->traceEventStart(IIILjava/lang/String;)V
 
-    const/4 v15, 0x6
-
-    invoke-virtual {v4, v3, v15}, Landroidx/compose/foundation/gestures/ScrollableDefaults;->overscrollEffect(Landroidx/compose/runtime/Composer;I)Landroidx/compose/foundation/OverscrollEffect;
-
-    move-result-object v15
-
-    shr-int/lit8 v4, v11, 0x3
-
-    and-int/lit8 v16, v4, 0xe
-
-    const v8, 0x44faf204
+    :cond_2
+    if-ltz v6, :cond_e
 
     .line 102
-    invoke-interface {v3, v8}, Landroidx/compose/runtime/Composer;->startReplaceableGroup(I)V
+    sget-object v0, Landroidx/compose/foundation/gestures/ScrollableDefaults;->INSTANCE:Landroidx/compose/foundation/gestures/ScrollableDefaults;
 
-    const-string v8, "CC(remember)P(1):Composables.kt#9igjgp"
+    const/4 v5, 0x6
 
-    invoke-static {v3, v8}, Landroidx/compose/runtime/ComposerKt;->sourceInformation(Landroidx/compose/runtime/Composer;Ljava/lang/String;)V
-
-    .line 284
-    invoke-interface {v3, v0}, Landroidx/compose/runtime/Composer;->changed(Ljava/lang/Object;)Z
-
-    move-result v18
-
-    move/from16 v19, v2
-
-    .line 285
-    invoke-interface {v3}, Landroidx/compose/runtime/Composer;->rememberedValue()Ljava/lang/Object;
-
-    move-result-object v2
-
-    if-nez v18, :cond_3
-
-    .line 286
-    sget-object v18, Landroidx/compose/runtime/Composer;->Companion:Landroidx/compose/runtime/Composer$Companion;
-
-    move/from16 p8, v4
-
-    invoke-virtual/range {v18 .. v18}, Landroidx/compose/runtime/Composer$Companion;->getEmpty()Ljava/lang/Object;
+    invoke-virtual {v0, v8, v5}, Landroidx/compose/foundation/gestures/ScrollableDefaults;->overscrollEffect(Landroidx/compose/runtime/Composer;I)Landroidx/compose/foundation/OverscrollEffect;
 
     move-result-object v4
 
-    if-ne v2, v4, :cond_4
+    const v0, -0x2bd0a5d8
 
-    goto :goto_2
+    .line 107
+    invoke-interface {v8, v0}, Landroidx/compose/runtime/Composer;->startReplaceableGroup(I)V
 
+    invoke-interface {v8, v15}, Landroidx/compose/runtime/Composer;->changed(Ljava/lang/Object;)Z
+
+    move-result v0
+
+    .line 330
+    invoke-interface {v8}, Landroidx/compose/runtime/Composer;->rememberedValue()Ljava/lang/Object;
+
+    move-result-object v1
+
+    if-nez v0, :cond_3
+
+    .line 331
+    sget-object v0, Landroidx/compose/runtime/Composer;->Companion:Landroidx/compose/runtime/Composer$Companion;
+
+    invoke-virtual {v0}, Landroidx/compose/runtime/Composer$Companion;->getEmpty()Ljava/lang/Object;
+
+    move-result-object v0
+
+    if-ne v1, v0, :cond_4
+
+    .line 108
     :cond_3
-    move/from16 p8, v4
+    new-instance v0, Landroidx/compose/foundation/pager/LazyLayoutPagerKt$Pager$pagerItemProvider$1$1;
 
-    .line 102
-    :goto_2
-    new-instance v2, Landroidx/compose/foundation/pager/LazyLayoutPagerKt$Pager$pagerItemProvider$1$1;
+    invoke-direct {v0, v15}, Landroidx/compose/foundation/pager/LazyLayoutPagerKt$Pager$pagerItemProvider$1$1;-><init>(Landroidx/compose/foundation/pager/PagerState;)V
 
-    invoke-direct {v2, v0}, Landroidx/compose/foundation/pager/LazyLayoutPagerKt$Pager$pagerItemProvider$1$1;-><init>(Landroidx/compose/foundation/pager/PagerState;)V
+    move-object v1, v0
 
-    check-cast v2, Lkotlin/jvm/functions/Function0;
+    check-cast v1, Lkotlin/jvm/functions/Function0;
 
-    .line 288
-    invoke-interface {v3, v2}, Landroidx/compose/runtime/Composer;->updateRememberedValue(Ljava/lang/Object;)V
+    .line 333
+    invoke-interface {v8, v1}, Landroidx/compose/runtime/Composer;->updateRememberedValue(Ljava/lang/Object;)V
 
-    .line 284
+    .line 108
     :cond_4
-    invoke-interface {v3}, Landroidx/compose/runtime/Composer;->endReplaceableGroup()V
-
-    move-object/from16 v18, v2
-
-    check-cast v18, Lkotlin/jvm/functions/Function0;
-
-    shr-int/lit8 v2, v10, 0x9
-
-    and-int/lit8 v2, v2, 0x70
-
-    or-int v2, v16, v2
-
-    shl-int/lit8 v4, v10, 0x3
-
-    and-int/lit16 v4, v4, 0x380
-
-    or-int v20, v2, v4
-
-    move/from16 v4, v19
-
-    move-object/from16 v2, p1
-
-    move-object/from16 v19, v3
-
-    move-object/from16 v3, p14
-
-    move/from16 v21, p8
-
-    move/from16 p8, v4
-
-    move-object/from16 v4, p11
-
-    move-object/from16 v5, v18
-
-    move-object/from16 v6, v19
-
-    move/from16 v7, v20
-
-    .line 98
-    invoke-static/range {v2 .. v7}, Landroidx/compose/foundation/pager/LazyLayoutPagerKt;->rememberPagerItemProviderLambda(Landroidx/compose/foundation/pager/PagerState;Lkotlin/jvm/functions/Function4;Lkotlin/jvm/functions/Function1;Lkotlin/jvm/functions/Function0;Landroidx/compose/runtime/Composer;I)Lkotlin/jvm/functions/Function0;
-
-    move-result-object v18
-
-    move-object/from16 v7, v19
-
-    const v2, 0x44faf204
-
-    .line 115
-    invoke-interface {v7, v2}, Landroidx/compose/runtime/Composer;->startReplaceableGroup(I)V
-
-    invoke-static {v7, v8}, Landroidx/compose/runtime/ComposerKt;->sourceInformation(Landroidx/compose/runtime/Composer;Ljava/lang/String;)V
-
-    .line 291
-    invoke-interface {v7, v0}, Landroidx/compose/runtime/Composer;->changed(Ljava/lang/Object;)Z
-
-    move-result v2
-
-    .line 292
-    invoke-interface {v7}, Landroidx/compose/runtime/Composer;->rememberedValue()Ljava/lang/Object;
-
-    move-result-object v3
-
-    if-nez v2, :cond_5
-
-    .line 293
-    sget-object v2, Landroidx/compose/runtime/Composer;->Companion:Landroidx/compose/runtime/Composer$Companion;
-
-    invoke-virtual {v2}, Landroidx/compose/runtime/Composer$Companion;->getEmpty()Ljava/lang/Object;
-
-    move-result-object v2
-
-    if-ne v3, v2, :cond_6
-
-    .line 115
-    :cond_5
-    new-instance v2, Landroidx/compose/foundation/pager/LazyLayoutPagerKt$Pager$measurePolicy$1$1;
-
-    invoke-direct {v2, v0}, Landroidx/compose/foundation/pager/LazyLayoutPagerKt$Pager$measurePolicy$1$1;-><init>(Landroidx/compose/foundation/pager/PagerState;)V
-
-    move-object v3, v2
+    move-object v3, v1
 
     check-cast v3, Lkotlin/jvm/functions/Function0;
 
-    .line 295
-    invoke-interface {v7, v3}, Landroidx/compose/runtime/Composer;->updateRememberedValue(Ljava/lang/Object;)V
+    invoke-interface {v8}, Landroidx/compose/runtime/Composer;->endReplaceableGroup()V
 
-    .line 291
-    :cond_6
-    invoke-interface {v7}, Landroidx/compose/runtime/Composer;->endReplaceableGroup()V
+    shr-int/lit8 v2, v11, 0x3
 
-    move-object/from16 v19, v3
+    and-int/lit8 v17, v2, 0xe
 
-    check-cast v19, Lkotlin/jvm/functions/Function0;
+    shr-int/lit8 v0, v10, 0x9
 
-    and-int/lit8 v20, v11, 0x70
+    and-int/lit8 v0, v0, 0x70
 
-    and-int/lit16 v2, v11, 0x380
+    or-int v0, v17, v0
 
-    or-int v2, v20, v2
+    shl-int/lit8 v1, v10, 0x3
 
-    and-int/lit16 v8, v11, 0x1c00
+    and-int/lit16 v1, v1, 0x380
 
-    or-int/2addr v2, v8
+    or-int v18, v0, v1
 
-    const v22, 0xe000
+    move-object/from16 v0, p1
 
-    and-int v23, v11, v22
+    move-object/from16 v1, p14
 
-    or-int v2, v2, v23
+    move/from16 v19, v2
 
-    shr-int/lit8 v24, v11, 0x6
+    move-object/from16 v2, p11
 
-    const/high16 v25, 0x70000
+    move-object/from16 v20, v4
 
-    and-int v3, v24, v25
+    move-object v4, v8
 
-    or-int/2addr v2, v3
+    move/from16 v21, v5
 
-    const/high16 v3, 0x380000
-
-    and-int v3, v24, v3
-
-    or-int/2addr v2, v3
-
-    const/high16 v3, 0x1c00000
-
-    and-int v3, v24, v3
-
-    or-int/2addr v2, v3
-
-    shl-int/lit8 v3, v10, 0x12
-
-    const/high16 v4, 0xe000000
-
-    and-int/2addr v4, v3
-
-    or-int/2addr v2, v4
-
-    const/high16 v4, 0x70000000
-
-    and-int/2addr v3, v4
-
-    or-int v26, v2, v3
-
-    const/16 v27, 0x0
-
-    move-object/from16 v2, v18
-
-    move-object/from16 v3, p1
-
-    move-object/from16 v4, p2
-
-    move/from16 v5, p3
-
-    move-object/from16 v6, p4
-
-    move-object/from16 p7, v7
-
-    move/from16 v7, p8
-
-    move/from16 v28, v8
-
-    move/from16 v8, v17
-
-    move-object/from16 v9, p9
-
-    move-object/from16 v10, p12
-
-    move-object/from16 v11, p13
-
-    move-object/from16 v12, v19
-
-    move-object/from16 v13, p7
-
-    move-object v1, v14
-
-    move/from16 v14, v26
-
-    move-object/from16 v29, v15
-
-    const/16 v19, 0x0
-
-    move/from16 v15, v27
+    move/from16 v5, v18
 
     .line 104
-    invoke-static/range {v2 .. v15}, Landroidx/compose/foundation/pager/PagerMeasurePolicyKt;->rememberPagerMeasurePolicy-BxUkNYg(Lkotlin/jvm/functions/Function0;Landroidx/compose/foundation/pager/PagerState;Landroidx/compose/foundation/layout/PaddingValues;ZLandroidx/compose/foundation/gestures/Orientation;IFLandroidx/compose/foundation/pager/PageSize;Landroidx/compose/ui/Alignment$Horizontal;Landroidx/compose/ui/Alignment$Vertical;Lkotlin/jvm/functions/Function0;Landroidx/compose/runtime/Composer;II)Lkotlin/jvm/functions/Function2;
+    invoke-static/range {v0 .. v5}, Landroidx/compose/foundation/pager/LazyLayoutPagerKt;->rememberPagerItemProviderLambda(Landroidx/compose/foundation/pager/PagerState;Lkotlin/jvm/functions/Function4;Lkotlin/jvm/functions/Function1;Lkotlin/jvm/functions/Function0;Landroidx/compose/runtime/Composer;I)Lkotlin/jvm/functions/Function0;
 
-    move-result-object v10
+    move-result-object v18
 
-    shr-int/lit8 v11, p16, 0xf
+    .line 121
+    invoke-static {}, Landroidx/compose/foundation/pager/PagerStateKt;->getSnapAlignmentStartToStart()Landroidx/compose/foundation/gestures/snapping/SnapPositionInLayout;
 
-    const v2, 0x1e7b2b64
+    move-result-object v22
 
-    move-object/from16 v12, p7
+    const v0, -0x2bd0a3ae
 
-    .line 118
-    invoke-interface {v12, v2}, Landroidx/compose/runtime/Composer;->startReplaceableGroup(I)V
+    invoke-interface {v8, v0}, Landroidx/compose/runtime/Composer;->startReplaceableGroup(I)V
 
-    const-string v2, "CC(remember)P(1,2):Composables.kt#9igjgp"
+    invoke-interface {v8, v15}, Landroidx/compose/runtime/Composer;->changed(Ljava/lang/Object;)Z
 
-    invoke-static {v12, v2}, Landroidx/compose/runtime/ComposerKt;->sourceInformation(Landroidx/compose/runtime/Composer;Ljava/lang/String;)V
+    move-result v0
 
-    move-object/from16 v13, p5
+    .line 336
+    invoke-interface {v8}, Landroidx/compose/runtime/Composer;->rememberedValue()Ljava/lang/Object;
 
-    .line 298
-    invoke-interface {v12, v13}, Landroidx/compose/runtime/Composer;->changed(Ljava/lang/Object;)Z
+    move-result-object v1
 
-    move-result v2
+    if-nez v0, :cond_5
 
-    invoke-interface {v12, v0}, Landroidx/compose/runtime/Composer;->changed(Ljava/lang/Object;)Z
+    .line 337
+    sget-object v0, Landroidx/compose/runtime/Composer;->Companion:Landroidx/compose/runtime/Composer$Companion;
 
-    move-result v3
+    invoke-virtual {v0}, Landroidx/compose/runtime/Composer$Companion;->getEmpty()Ljava/lang/Object;
 
-    or-int/2addr v2, v3
+    move-result-object v0
 
-    .line 300
-    invoke-interface {v12}, Landroidx/compose/runtime/Composer;->rememberedValue()Ljava/lang/Object;
-
-    move-result-object v3
-
-    if-nez v2, :cond_7
-
-    .line 301
-    sget-object v2, Landroidx/compose/runtime/Composer;->Companion:Landroidx/compose/runtime/Composer$Companion;
-
-    invoke-virtual {v2}, Landroidx/compose/runtime/Composer$Companion;->getEmpty()Ljava/lang/Object;
-
-    move-result-object v2
-
-    if-ne v3, v2, :cond_8
-
-    .line 119
-    :cond_7
-    new-instance v3, Landroidx/compose/foundation/pager/PagerWrapperFlingBehavior;
-
-    invoke-direct {v3, v13, v0}, Landroidx/compose/foundation/pager/PagerWrapperFlingBehavior;-><init>(Landroidx/compose/foundation/gestures/snapping/SnapFlingBehavior;Landroidx/compose/foundation/pager/PagerState;)V
-
-    .line 303
-    invoke-interface {v12, v3}, Landroidx/compose/runtime/Composer;->updateRememberedValue(Ljava/lang/Object;)V
-
-    .line 299
-    :cond_8
-    invoke-interface {v12}, Landroidx/compose/runtime/Composer;->endReplaceableGroup()V
-
-    .line 118
-    move-object v14, v3
-
-    check-cast v14, Landroidx/compose/foundation/pager/PagerWrapperFlingBehavior;
-
-    const v2, 0x5629e510
-
-    invoke-interface {v12, v2}, Landroidx/compose/runtime/Composer;->startReplaceableGroup(I)V
-
-    const-string v2, "122@5368L58"
-
-    invoke-static {v12, v2}, Landroidx/compose/runtime/ComposerKt;->sourceInformation(Landroidx/compose/runtime/Composer;Ljava/lang/String;)V
-
-    const/4 v15, 0x1
-
-    if-eqz p6, :cond_a
-
-    .line 123
-    sget-object v2, Landroidx/compose/ui/Modifier;->Companion:Landroidx/compose/ui/Modifier$Companion;
-
-    check-cast v2, Landroidx/compose/ui/Modifier;
-
-    sget-object v3, Landroidx/compose/foundation/gestures/Orientation;->Vertical:Landroidx/compose/foundation/gestures/Orientation;
-
-    if-ne v1, v3, :cond_9
-
-    move v3, v15
-
-    goto :goto_3
-
-    :cond_9
-    move/from16 v3, v19
-
-    :goto_3
-    or-int/lit8 v4, v20, 0x6
-
-    invoke-static {v2, v0, v3, v12, v4}, Landroidx/compose/foundation/pager/PagerKt;->pagerSemantics(Landroidx/compose/ui/Modifier;Landroidx/compose/foundation/pager/PagerState;ZLandroidx/compose/runtime/Composer;I)Landroidx/compose/ui/Modifier;
-
-    move-result-object v2
-
-    goto :goto_4
-
-    .line 125
-    :cond_a
-    sget-object v2, Landroidx/compose/ui/Modifier;->Companion:Landroidx/compose/ui/Modifier$Companion;
-
-    check-cast v2, Landroidx/compose/ui/Modifier;
+    if-ne v1, v0, :cond_6
 
     .line 122
-    :goto_4
-    invoke-interface {v12}, Landroidx/compose/runtime/Composer;->endReplaceableGroup()V
+    :cond_5
+    new-instance v0, Landroidx/compose/foundation/pager/LazyLayoutPagerKt$Pager$measurePolicy$1$1;
 
-    .line 131
-    sget-object v3, Landroidx/compose/foundation/gestures/Orientation;->Vertical:Landroidx/compose/foundation/gestures/Orientation;
+    invoke-direct {v0, v15}, Landroidx/compose/foundation/pager/LazyLayoutPagerKt$Pager$measurePolicy$1$1;-><init>(Landroidx/compose/foundation/pager/PagerState;)V
 
-    if-ne v1, v3, :cond_b
+    move-object v1, v0
 
-    goto :goto_5
+    check-cast v1, Lkotlin/jvm/functions/Function0;
 
-    :cond_b
-    move/from16 v15, v19
+    .line 339
+    invoke-interface {v8, v1}, Landroidx/compose/runtime/Composer;->updateRememberedValue(Ljava/lang/Object;)V
 
-    :goto_5
-    and-int/lit8 v3, v24, 0x70
+    .line 122
+    :cond_6
+    move-object/from16 v23, v1
 
-    or-int v3, v16, v3
+    check-cast v23, Lkotlin/jvm/functions/Function0;
 
-    move/from16 v9, p3
+    invoke-interface {v8}, Landroidx/compose/runtime/Composer;->endReplaceableGroup()V
 
-    .line 128
-    invoke-static {v0, v9, v15, v12, v3}, Landroidx/compose/foundation/pager/PagerSemanticsKt;->rememberPagerSemanticState(Landroidx/compose/foundation/pager/PagerState;ZZLandroidx/compose/runtime/Composer;I)Landroidx/compose/foundation/lazy/layout/LazyLayoutSemanticState;
+    and-int/lit8 v0, v11, 0x70
 
-    move-result-object v4
+    and-int/lit16 v1, v11, 0x380
 
-    .line 136
-    invoke-virtual/range {p1 .. p1}, Landroidx/compose/foundation/pager/PagerState;->getRemeasurementModifier$foundation_release()Landroidx/compose/ui/layout/RemeasurementModifier;
+    or-int/2addr v0, v1
 
-    move-result-object v3
+    and-int/lit16 v5, v11, 0x1c00
 
-    check-cast v3, Landroidx/compose/ui/Modifier;
+    or-int/2addr v0, v5
 
-    move-object v15, v1
+    const v24, 0xe000
 
-    move-object/from16 v1, p0
+    and-int v1, v11, v24
 
-    invoke-interface {v1, v3}, Landroidx/compose/ui/Modifier;->then(Landroidx/compose/ui/Modifier;)Landroidx/compose/ui/Modifier;
+    or-int/2addr v0, v1
 
-    move-result-object v3
+    shr-int/lit8 v25, v11, 0x6
 
-    .line 137
-    invoke-virtual/range {p1 .. p1}, Landroidx/compose/foundation/pager/PagerState;->getAwaitLayoutModifier$foundation_release()Landroidx/compose/foundation/lazy/layout/AwaitFirstLayoutModifier;
+    const/high16 v26, 0x70000
 
-    move-result-object v5
+    and-int v1, v25, v26
 
-    check-cast v5, Landroidx/compose/ui/Modifier;
+    or-int/2addr v0, v1
 
-    invoke-interface {v3, v5}, Landroidx/compose/ui/Modifier;->then(Landroidx/compose/ui/Modifier;)Landroidx/compose/ui/Modifier;
+    const/high16 v27, 0x380000
 
-    move-result-object v3
+    and-int v1, v25, v27
 
-    .line 138
-    invoke-interface {v3, v2}, Landroidx/compose/ui/Modifier;->then(Landroidx/compose/ui/Modifier;)Landroidx/compose/ui/Modifier;
+    or-int/2addr v0, v1
 
-    move-result-object v2
+    const/high16 v1, 0x1c00000
 
-    move/from16 v3, v21
+    and-int v1, v25, v1
 
-    and-int/lit16 v3, v3, 0x1c00
+    or-int/2addr v0, v1
 
-    and-int v5, v24, v22
+    shl-int/lit8 v1, v10, 0x12
 
-    or-int/2addr v3, v5
+    const/high16 v2, 0xe000000
 
-    shl-int/lit8 v5, p16, 0x6
+    and-int/2addr v2, v1
 
-    and-int v5, v5, v25
+    or-int/2addr v0, v2
 
-    or-int v16, v3, v5
+    const/high16 v2, 0x70000000
 
-    move-object/from16 v3, v18
+    and-int/2addr v1, v2
 
-    move-object/from16 v5, p4
+    or-int v28, v0, v1
 
-    move/from16 v6, p6
+    const/16 v29, 0x0
 
-    move/from16 v7, p3
+    move-object/from16 v0, v18
 
-    move-object v8, v12
+    move-object/from16 v1, p1
 
-    move v13, v9
+    move-object/from16 v2, p2
 
-    move/from16 v9, v16
-
-    .line 139
-    invoke-static/range {v2 .. v9}, Landroidx/compose/foundation/lazy/layout/LazyLayoutSemanticsKt;->lazyLayoutSemantics(Landroidx/compose/ui/Modifier;Lkotlin/jvm/functions/Function0;Landroidx/compose/foundation/lazy/layout/LazyLayoutSemanticState;Landroidx/compose/foundation/gestures/Orientation;ZZLandroidx/compose/runtime/Composer;I)Landroidx/compose/ui/Modifier;
-
-    move-result-object v2
-
-    .line 146
-    invoke-static {v2, v15}, Landroidx/compose/foundation/ClipScrollableContainerKt;->clipScrollableContainer(Landroidx/compose/ui/Modifier;Landroidx/compose/foundation/gestures/Orientation;)Landroidx/compose/ui/Modifier;
-
-    move-result-object v2
-
-    and-int/lit16 v3, v11, 0x380
-
-    or-int v3, v20, v3
-
-    or-int v3, v3, v28
-
-    or-int v8, v3, v23
-
-    move-object/from16 v3, p1
-
-    move/from16 v4, p8
-
-    move/from16 v5, p3
-
-    move-object/from16 v6, p4
-
-    move-object v7, v12
-
-    .line 147
-    invoke-static/range {v2 .. v8}, Landroidx/compose/foundation/pager/PagerBeyondBoundsModifierKt;->pagerBeyondBoundsModifier(Landroidx/compose/ui/Modifier;Landroidx/compose/foundation/pager/PagerState;IZLandroidx/compose/foundation/gestures/Orientation;Landroidx/compose/runtime/Composer;I)Landroidx/compose/ui/Modifier;
-
-    move-result-object v2
-
-    move-object/from16 v5, v29
-
-    .line 153
-    invoke-static {v2, v5}, Landroidx/compose/foundation/OverscrollKt;->overscroll(Landroidx/compose/ui/Modifier;Landroidx/compose/foundation/OverscrollEffect;)Landroidx/compose/ui/Modifier;
-
-    move-result-object v2
-
-    .line 156
-    sget-object v3, Landroidx/compose/foundation/gestures/ScrollableDefaults;->INSTANCE:Landroidx/compose/foundation/gestures/ScrollableDefaults;
-
-    .line 157
-    invoke-static {}, Landroidx/compose/ui/platform/CompositionLocalsKt;->getLocalLayoutDirection()Landroidx/compose/runtime/ProvidableCompositionLocal;
-
-    move-result-object v4
-
-    check-cast v4, Landroidx/compose/runtime/CompositionLocal;
-
-    const v6, 0x789c5f52
-
-    const-string v7, "CC:CompositionLocal.kt#9igjgp"
-
-    .line 306
-    invoke-static {v12, v6, v7}, Landroidx/compose/runtime/ComposerKt;->sourceInformationMarkerStart(Landroidx/compose/runtime/Composer;ILjava/lang/String;)V
-
-    invoke-interface {v12, v4}, Landroidx/compose/runtime/Composer;->consume(Landroidx/compose/runtime/CompositionLocal;)Ljava/lang/Object;
-
-    move-result-object v4
-
-    invoke-static {v12}, Landroidx/compose/runtime/ComposerKt;->sourceInformationMarkerEnd(Landroidx/compose/runtime/Composer;)V
-
-    check-cast v4, Landroidx/compose/ui/unit/LayoutDirection;
-
-    .line 156
-    invoke-virtual {v3, v4, v15, v13}, Landroidx/compose/foundation/gestures/ScrollableDefaults;->reverseDirection(Landroidx/compose/ui/unit/LayoutDirection;Landroidx/compose/foundation/gestures/Orientation;Z)Z
-
-    move-result v7
-
-    .line 161
-    invoke-virtual/range {p1 .. p1}, Landroidx/compose/foundation/pager/PagerState;->getInternalInteractionSource$foundation_release()Landroidx/compose/foundation/interaction/MutableInteractionSource;
-
-    move-result-object v9
-
-    .line 163
-    move-object v3, v0
-
-    check-cast v3, Landroidx/compose/foundation/gestures/ScrollableState;
-
-    .line 162
-    move-object v8, v14
-
-    check-cast v8, Landroidx/compose/foundation/gestures/FlingBehavior;
+    move/from16 v3, p3
 
     move-object/from16 v4, p4
 
-    move/from16 v6, p6
+    move/from16 v30, v5
 
-    .line 154
-    invoke-static/range {v2 .. v9}, Landroidx/compose/foundation/gestures/ScrollableKt;->scrollable(Landroidx/compose/ui/Modifier;Landroidx/compose/foundation/gestures/ScrollableState;Landroidx/compose/foundation/gestures/Orientation;Landroidx/compose/foundation/OverscrollEffect;ZZLandroidx/compose/foundation/gestures/FlingBehavior;Landroidx/compose/foundation/interaction/MutableInteractionSource;)Landroidx/compose/ui/Modifier;
+    move v5, v6
+
+    move/from16 v31, v6
+
+    move/from16 v6, v16
+
+    move/from16 v32, v7
+
+    move-object/from16 v7, p9
+
+    move-object/from16 p7, v8
+
+    move-object/from16 v8, p12
+
+    move-object/from16 v9, p13
+
+    move-object/from16 v10, v22
+
+    move-object/from16 v11, v23
+
+    move-object/from16 v12, p7
+
+    move/from16 v13, v28
+
+    move/from16 v14, v29
+
+    .line 110
+    invoke-static/range {v0 .. v14}, Landroidx/compose/foundation/pager/PagerMeasurePolicyKt;->rememberPagerMeasurePolicy-121YqSk(Lkotlin/jvm/functions/Function0;Landroidx/compose/foundation/pager/PagerState;Landroidx/compose/foundation/layout/PaddingValues;ZLandroidx/compose/foundation/gestures/Orientation;IFLandroidx/compose/foundation/pager/PageSize;Landroidx/compose/ui/Alignment$Horizontal;Landroidx/compose/ui/Alignment$Vertical;Landroidx/compose/foundation/gestures/snapping/SnapPositionInLayout;Lkotlin/jvm/functions/Function0;Landroidx/compose/runtime/Composer;II)Lkotlin/jvm/functions/Function2;
+
+    move-result-object v9
+
+    const v0, 0x1e7b2b64
+
+    move-object/from16 v10, p7
+
+    .line 125
+    invoke-interface {v10, v0}, Landroidx/compose/runtime/Composer;->startReplaceableGroup(I)V
+
+    const-string v0, "CC(remember)P(1,2):Composables.kt#9igjgp"
+
+    invoke-static {v10, v0}, Landroidx/compose/runtime/ComposerKt;->sourceInformation(Landroidx/compose/runtime/Composer;Ljava/lang/String;)V
+
+    move-object/from16 v11, p5
+
+    .line 342
+    invoke-interface {v10, v11}, Landroidx/compose/runtime/Composer;->changed(Ljava/lang/Object;)Z
+
+    move-result v0
+
+    invoke-interface {v10, v15}, Landroidx/compose/runtime/Composer;->changed(Ljava/lang/Object;)Z
+
+    move-result v1
+
+    or-int/2addr v0, v1
+
+    .line 344
+    invoke-interface {v10}, Landroidx/compose/runtime/Composer;->rememberedValue()Ljava/lang/Object;
+
+    move-result-object v1
+
+    if-nez v0, :cond_7
+
+    .line 345
+    sget-object v0, Landroidx/compose/runtime/Composer;->Companion:Landroidx/compose/runtime/Composer$Companion;
+
+    invoke-virtual {v0}, Landroidx/compose/runtime/Composer$Companion;->getEmpty()Ljava/lang/Object;
+
+    move-result-object v0
+
+    if-ne v1, v0, :cond_8
+
+    .line 126
+    :cond_7
+    new-instance v1, Landroidx/compose/foundation/pager/PagerWrapperFlingBehavior;
+
+    invoke-direct {v1, v11, v15}, Landroidx/compose/foundation/pager/PagerWrapperFlingBehavior;-><init>(Landroidx/compose/foundation/gestures/snapping/SnapFlingBehavior;Landroidx/compose/foundation/pager/PagerState;)V
+
+    .line 347
+    invoke-interface {v10, v1}, Landroidx/compose/runtime/Composer;->updateRememberedValue(Ljava/lang/Object;)V
+
+    .line 343
+    :cond_8
+    invoke-interface {v10}, Landroidx/compose/runtime/Composer;->endReplaceableGroup()V
+
+    .line 125
+    move-object v12, v1
+
+    check-cast v12, Landroidx/compose/foundation/pager/PagerWrapperFlingBehavior;
+
+    .line 132
+    sget-object v0, Landroidx/compose/foundation/gestures/Orientation;->Vertical:Landroidx/compose/foundation/gestures/Orientation;
+
+    move-object/from16 v13, p4
+
+    if-ne v13, v0, :cond_9
+
+    const/4 v7, 0x1
+
+    goto :goto_2
+
+    :cond_9
+    move/from16 v7, v32
+
+    :goto_2
+    and-int/lit8 v0, v25, 0x70
+
+    or-int v0, v17, v0
+
+    move/from16 v14, p3
+
+    .line 129
+    invoke-static {v15, v14, v7, v10, v0}, Landroidx/compose/foundation/pager/PagerSemanticsKt;->rememberPagerSemanticState(Landroidx/compose/foundation/pager/PagerState;ZZLandroidx/compose/runtime/Composer;I)Landroidx/compose/foundation/lazy/layout/LazyLayoutSemanticState;
 
     move-result-object v2
 
-    .line 167
-    invoke-static {v2, v0}, Landroidx/compose/foundation/pager/LazyLayoutPagerKt;->dragDirectionDetector(Landroidx/compose/ui/Modifier;Landroidx/compose/foundation/pager/PagerState;)Landroidx/compose/ui/Modifier;
+    const v0, 0x44faf204
 
-    move-result-object v2
+    .line 135
+    invoke-interface {v10, v0}, Landroidx/compose/runtime/Composer;->startReplaceableGroup(I)V
 
-    const/4 v3, 0x2
+    const-string v0, "CC(remember)P(1):Composables.kt#9igjgp"
 
-    const/4 v4, 0x0
+    invoke-static {v10, v0}, Landroidx/compose/runtime/ComposerKt;->sourceInformation(Landroidx/compose/runtime/Composer;Ljava/lang/String;)V
 
-    move-object/from16 v11, p10
+    .line 350
+    invoke-interface {v10, v15}, Landroidx/compose/runtime/Composer;->changed(Ljava/lang/Object;)Z
 
-    .line 168
-    invoke-static {v2, v11, v4, v3, v4}, Landroidx/compose/ui/input/nestedscroll/NestedScrollModifierKt;->nestedScroll$default(Landroidx/compose/ui/Modifier;Landroidx/compose/ui/input/nestedscroll/NestedScrollConnection;Landroidx/compose/ui/input/nestedscroll/NestedScrollDispatcher;ILjava/lang/Object;)Landroidx/compose/ui/Modifier;
+    move-result v0
 
-    move-result-object v4
+    .line 351
+    invoke-interface {v10}, Landroidx/compose/runtime/Composer;->rememberedValue()Ljava/lang/Object;
 
-    .line 170
-    invoke-virtual/range {p1 .. p1}, Landroidx/compose/foundation/pager/PagerState;->getPrefetchState$foundation_release()Landroidx/compose/foundation/lazy/layout/LazyLayoutPrefetchState;
+    move-result-object v1
 
-    move-result-object v5
+    if-nez v0, :cond_a
 
-    const/4 v8, 0x0
+    .line 352
+    sget-object v0, Landroidx/compose/runtime/Composer;->Companion:Landroidx/compose/runtime/Composer$Companion;
 
-    const/4 v9, 0x0
+    invoke-virtual {v0}, Landroidx/compose/runtime/Composer$Companion;->getEmpty()Ljava/lang/Object;
 
-    move-object/from16 v3, v18
+    move-result-object v0
+
+    if-ne v1, v0, :cond_b
+
+    .line 135
+    :cond_a
+    new-instance v1, Landroidx/compose/foundation/pager/PagerBringIntoViewSpec;
+
+    invoke-direct {v1, v15}, Landroidx/compose/foundation/pager/PagerBringIntoViewSpec;-><init>(Landroidx/compose/foundation/pager/PagerState;)V
+
+    .line 354
+    invoke-interface {v10, v1}, Landroidx/compose/runtime/Composer;->updateRememberedValue(Ljava/lang/Object;)V
+
+    .line 350
+    :cond_b
+    invoke-interface {v10}, Landroidx/compose/runtime/Composer;->endReplaceableGroup()V
+
+    .line 135
+    move-object/from16 v22, v1
+
+    check-cast v22, Landroidx/compose/foundation/pager/PagerBringIntoViewSpec;
+
+    .line 139
+    invoke-virtual/range {p1 .. p1}, Landroidx/compose/foundation/pager/PagerState;->getRemeasurementModifier$foundation_release()Landroidx/compose/ui/layout/RemeasurementModifier;
+
+    move-result-object v0
+
+    check-cast v0, Landroidx/compose/ui/Modifier;
+
+    move-object/from16 v8, p0
+
+    invoke-interface {v8, v0}, Landroidx/compose/ui/Modifier;->then(Landroidx/compose/ui/Modifier;)Landroidx/compose/ui/Modifier;
+
+    move-result-object v0
+
+    .line 140
+    invoke-virtual/range {p1 .. p1}, Landroidx/compose/foundation/pager/PagerState;->getAwaitLayoutModifier$foundation_release()Landroidx/compose/foundation/lazy/layout/AwaitFirstLayoutModifier;
+
+    move-result-object v1
+
+    check-cast v1, Landroidx/compose/ui/Modifier;
+
+    invoke-interface {v0, v1}, Landroidx/compose/ui/Modifier;->then(Landroidx/compose/ui/Modifier;)Landroidx/compose/ui/Modifier;
+
+    move-result-object v0
+
+    move/from16 v1, v19
+
+    and-int/lit16 v1, v1, 0x1c00
+
+    and-int v3, v25, v24
+
+    or-int/2addr v1, v3
+
+    shl-int/lit8 v3, p16, 0x6
+
+    and-int v3, v3, v26
+
+    or-int v7, v1, v3
+
+    move-object/from16 v1, v18
+
+    move-object/from16 v3, p4
+
+    move/from16 v4, p6
+
+    move/from16 v5, p3
 
     move-object v6, v10
 
-    move-object v7, v12
+    .line 141
+    invoke-static/range {v0 .. v7}, Landroidx/compose/foundation/lazy/layout/LazyLayoutSemanticsKt;->lazyLayoutSemantics(Landroidx/compose/ui/Modifier;Lkotlin/jvm/functions/Function0;Landroidx/compose/foundation/lazy/layout/LazyLayoutSemanticState;Landroidx/compose/foundation/gestures/Orientation;ZZLandroidx/compose/runtime/Composer;I)Landroidx/compose/ui/Modifier;
 
-    .line 134
-    invoke-static/range {v3 .. v9}, Landroidx/compose/foundation/lazy/layout/LazyLayoutKt;->LazyLayout(Lkotlin/jvm/functions/Function0;Landroidx/compose/ui/Modifier;Landroidx/compose/foundation/lazy/layout/LazyLayoutPrefetchState;Lkotlin/jvm/functions/Function2;Landroidx/compose/runtime/Composer;II)V
+    move-result-object v0
+
+    .line 148
+    invoke-static {v0, v13}, Landroidx/compose/foundation/ClipScrollableContainerKt;->clipScrollableContainer(Landroidx/compose/ui/Modifier;Landroidx/compose/foundation/gestures/Orientation;)Landroidx/compose/ui/Modifier;
+
+    move-result-object v0
+
+    shr-int/lit8 v1, p16, 0x12
+
+    and-int/lit8 v1, v1, 0x70
+
+    or-int v1, v17, v1
+
+    move/from16 v7, v31
+
+    .line 150
+    invoke-static {v15, v7, v10, v1}, Landroidx/compose/foundation/pager/PagerBeyondBoundsModifierKt;->rememberPagerBeyondBoundsState(Landroidx/compose/foundation/pager/PagerState;ILandroidx/compose/runtime/Composer;I)Landroidx/compose/foundation/lazy/layout/LazyLayoutBeyondBoundsState;
+
+    move-result-object v1
+
+    .line 154
+    invoke-virtual/range {p1 .. p1}, Landroidx/compose/foundation/pager/PagerState;->getBeyondBoundsInfo$foundation_release()Landroidx/compose/foundation/lazy/layout/LazyLayoutBeyondBoundsInfo;
+
+    move-result-object v2
+
+    .line 156
+    invoke-static {}, Landroidx/compose/ui/platform/CompositionLocalsKt;->getLocalLayoutDirection()Landroidx/compose/runtime/ProvidableCompositionLocal;
+
+    move-result-object v3
+
+    check-cast v3, Landroidx/compose/runtime/CompositionLocal;
+
+    const v6, 0x789c5f52
+
+    .line 357
+    const-string v5, "CC:CompositionLocal.kt#9igjgp"
+
+    invoke-static {v10, v6, v5}, Landroidx/compose/runtime/ComposerKt;->sourceInformationMarkerStart(Landroidx/compose/runtime/Composer;ILjava/lang/String;)V
+
+    invoke-interface {v10, v3}, Landroidx/compose/runtime/Composer;->consume(Landroidx/compose/runtime/CompositionLocal;)Ljava/lang/Object;
+
+    move-result-object v3
+
+    invoke-static {v10}, Landroidx/compose/runtime/ComposerKt;->sourceInformationMarkerEnd(Landroidx/compose/runtime/Composer;)V
+
+    move-object v4, v3
+
+    check-cast v4, Landroidx/compose/ui/unit/LayoutDirection;
+
+    .line 158
+    sget v3, Landroidx/compose/runtime/collection/MutableVector;->$stable:I
+
+    shl-int/lit8 v3, v3, 0x6
+
+    or-int v3, v3, v30
+
+    shl-int/lit8 v17, p16, 0x3
+
+    and-int v17, v17, v26
+
+    or-int v3, v3, v17
+
+    and-int v17, p16, v27
+
+    or-int v17, v3, v17
+
+    move/from16 v3, p3
+
+    move-object v11, v5
+
+    move-object/from16 v5, p4
+
+    move-object/from16 p7, v9
+
+    move v9, v6
+
+    move/from16 v6, p6
+
+    move-object v7, v10
+
+    move/from16 v8, v17
+
+    .line 149
+    invoke-static/range {v0 .. v8}, Landroidx/compose/foundation/lazy/layout/LazyLayoutBeyondBoundsModifierLocalKt;->lazyLayoutBeyondBoundsModifier(Landroidx/compose/ui/Modifier;Landroidx/compose/foundation/lazy/layout/LazyLayoutBeyondBoundsState;Landroidx/compose/foundation/lazy/layout/LazyLayoutBeyondBoundsInfo;ZLandroidx/compose/ui/unit/LayoutDirection;Landroidx/compose/foundation/gestures/Orientation;ZLandroidx/compose/runtime/Composer;I)Landroidx/compose/ui/Modifier;
+
+    move-result-object v0
+
+    move-object/from16 v3, v20
+
+    .line 160
+    invoke-static {v0, v3}, Landroidx/compose/foundation/OverscrollKt;->overscroll(Landroidx/compose/ui/Modifier;Landroidx/compose/foundation/OverscrollEffect;)Landroidx/compose/ui/Modifier;
+
+    move-result-object v0
+
+    .line 163
+    sget-object v1, Landroidx/compose/foundation/gestures/ScrollableDefaults;->INSTANCE:Landroidx/compose/foundation/gestures/ScrollableDefaults;
+
+    .line 164
+    invoke-static {}, Landroidx/compose/ui/platform/CompositionLocalsKt;->getLocalLayoutDirection()Landroidx/compose/runtime/ProvidableCompositionLocal;
+
+    move-result-object v2
+
+    check-cast v2, Landroidx/compose/runtime/CompositionLocal;
+
+    .line 358
+    invoke-static {v10, v9, v11}, Landroidx/compose/runtime/ComposerKt;->sourceInformationMarkerStart(Landroidx/compose/runtime/Composer;ILjava/lang/String;)V
+
+    invoke-interface {v10, v2}, Landroidx/compose/runtime/Composer;->consume(Landroidx/compose/runtime/CompositionLocal;)Ljava/lang/Object;
+
+    move-result-object v2
+
+    invoke-static {v10}, Landroidx/compose/runtime/ComposerKt;->sourceInformationMarkerEnd(Landroidx/compose/runtime/Composer;)V
+
+    check-cast v2, Landroidx/compose/ui/unit/LayoutDirection;
+
+    .line 163
+    invoke-virtual {v1, v2, v13, v14}, Landroidx/compose/foundation/gestures/ScrollableDefaults;->reverseDirection(Landroidx/compose/ui/unit/LayoutDirection;Landroidx/compose/foundation/gestures/Orientation;Z)Z
+
+    move-result v5
+
+    .line 168
+    invoke-virtual/range {p1 .. p1}, Landroidx/compose/foundation/pager/PagerState;->getInternalInteractionSource$foundation_release()Landroidx/compose/foundation/interaction/MutableInteractionSource;
+
+    move-result-object v7
+
+    .line 170
+    move-object v1, v15
+
+    check-cast v1, Landroidx/compose/foundation/gestures/ScrollableState;
+
+    .line 169
+    move-object v6, v12
+
+    check-cast v6, Landroidx/compose/foundation/gestures/FlingBehavior;
+
+    .line 173
+    move-object/from16 v8, v22
+
+    check-cast v8, Landroidx/compose/foundation/gestures/BringIntoViewSpec;
+
+    move-object/from16 v2, p4
+
+    move/from16 v4, p6
+
+    .line 161
+    invoke-static/range {v0 .. v8}, Landroidx/compose/foundation/gestures/ScrollableKt;->scrollable(Landroidx/compose/ui/Modifier;Landroidx/compose/foundation/gestures/ScrollableState;Landroidx/compose/foundation/gestures/Orientation;Landroidx/compose/foundation/OverscrollEffect;ZZLandroidx/compose/foundation/gestures/FlingBehavior;Landroidx/compose/foundation/interaction/MutableInteractionSource;Landroidx/compose/foundation/gestures/BringIntoViewSpec;)Landroidx/compose/ui/Modifier;
+
+    move-result-object v0
+
+    .line 175
+    invoke-static {v0, v15}, Landroidx/compose/foundation/pager/LazyLayoutPagerKt;->dragDirectionDetector(Landroidx/compose/ui/Modifier;Landroidx/compose/foundation/pager/PagerState;)Landroidx/compose/ui/Modifier;
+
+    move-result-object v0
+
+    const/4 v1, 0x2
+
+    const/4 v2, 0x0
+
+    move-object/from16 v11, p10
+
+    .line 176
+    invoke-static {v0, v11, v2, v1, v2}, Landroidx/compose/ui/input/nestedscroll/NestedScrollModifierKt;->nestedScroll$default(Landroidx/compose/ui/Modifier;Landroidx/compose/ui/input/nestedscroll/NestedScrollConnection;Landroidx/compose/ui/input/nestedscroll/NestedScrollDispatcher;ILjava/lang/Object;)Landroidx/compose/ui/Modifier;
+
+    move-result-object v2
+
+    .line 178
+    invoke-virtual/range {p1 .. p1}, Landroidx/compose/foundation/pager/PagerState;->getPrefetchState$foundation_release()Landroidx/compose/foundation/lazy/layout/LazyLayoutPrefetchState;
+
+    move-result-object v3
+
+    const/4 v6, 0x0
+
+    const/4 v7, 0x0
+
+    move-object/from16 v1, v18
+
+    move-object/from16 v4, p7
+
+    move-object v5, v10
+
+    .line 137
+    invoke-static/range {v1 .. v7}, Landroidx/compose/foundation/lazy/layout/LazyLayoutKt;->LazyLayout(Lkotlin/jvm/functions/Function0;Landroidx/compose/ui/Modifier;Landroidx/compose/foundation/lazy/layout/LazyLayoutPrefetchState;Lkotlin/jvm/functions/Function2;Landroidx/compose/runtime/Composer;II)V
 
     invoke-static {}, Landroidx/compose/runtime/ComposerKt;->isTraceInProgress()Z
 
-    move-result v2
+    move-result v0
 
-    if-eqz v2, :cond_c
+    if-eqz v0, :cond_c
 
     invoke-static {}, Landroidx/compose/runtime/ComposerKt;->traceEventEnd()V
 
     :cond_c
-    invoke-interface {v12}, Landroidx/compose/runtime/Composer;->endRestartGroup()Landroidx/compose/runtime/ScopeUpdateScope;
+    invoke-interface {v10}, Landroidx/compose/runtime/Composer;->endRestartGroup()Landroidx/compose/runtime/ScopeUpdateScope;
 
-    move-result-object v14
+    move-result-object v12
 
-    if-nez v14, :cond_d
+    if-eqz v12, :cond_d
 
-    goto :goto_6
-
-    :cond_d
     new-instance v19, Landroidx/compose/foundation/pager/LazyLayoutPagerKt$Pager$2;
 
     move-object/from16 v0, v19
@@ -847,23 +821,23 @@
 
     move/from16 v7, p6
 
-    move/from16 v8, p8
+    move/from16 v8, v31
 
-    move/from16 v9, v17
+    move/from16 v9, v16
 
     move-object/from16 v10, p9
 
     move-object/from16 v11, p10
 
+    move-object v15, v12
+
     move-object/from16 v12, p11
 
     move-object/from16 v13, p12
 
-    move-object v15, v14
-
     move-object/from16 v14, p13
 
-    move-object/from16 v30, v15
+    move-object/from16 v33, v15
 
     move-object/from16 v15, p14
 
@@ -879,26 +853,26 @@
 
     check-cast v0, Lkotlin/jvm/functions/Function2;
 
-    move-object/from16 v1, v30
+    move-object/from16 v1, v33
 
     invoke-interface {v1, v0}, Landroidx/compose/runtime/ScopeUpdateScope;->updateScope(Lkotlin/jvm/functions/Function2;)V
 
-    :goto_6
+    :cond_d
     return-void
 
     :cond_e
-    move/from16 p8, v2
+    move/from16 v31, v6
 
-    .line 92
+    .line 98
     new-instance v0, Ljava/lang/StringBuilder;
 
     const-string v1, "beyondBoundsPageCount should be greater than or equal to 0, you selected "
 
     invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
-    move/from16 v15, p8
+    move/from16 v7, v31
 
-    invoke-virtual {v0, v15}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+    invoke-virtual {v0, v7}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
     move-result-object v0
 
@@ -906,7 +880,7 @@
 
     move-result-object v0
 
-    .line 91
+    .line 97
     new-instance v1, Ljava/lang/IllegalArgumentException;
 
     invoke-virtual {v0}, Ljava/lang/Object;->toString()Ljava/lang/String;
@@ -921,7 +895,7 @@
 .method private static final dragDirectionDetector(Landroidx/compose/ui/Modifier;Landroidx/compose/foundation/pager/PagerState;)Landroidx/compose/ui/Modifier;
     .locals 3
 
-    .line 264
+    .line 273
     sget-object v0, Landroidx/compose/ui/Modifier;->Companion:Landroidx/compose/ui/Modifier$Companion;
 
     check-cast v0, Landroidx/compose/ui/Modifier;
@@ -983,7 +957,7 @@
 
     invoke-interface {p4, v0}, Landroidx/compose/runtime/Composer;->startReplaceableGroup(I)V
 
-    const-string v1, "C(rememberPagerItemProviderLambda)P(3,1)240@9459L33,241@9504L659:LazyLayoutPager.kt#g6yjnt"
+    const-string v1, "C(rememberPagerItemProviderLambda)P(3,1)248@10137L33,249@10191L25,250@10228L677:LazyLayoutPager.kt#g6yjnt"
 
     invoke-static {p4, v1}, Landroidx/compose/runtime/ComposerKt;->sourceInformation(Landroidx/compose/runtime/Composer;Ljava/lang/String;)V
 
@@ -995,22 +969,31 @@
 
     const/4 v1, -0x1
 
-    const-string v2, "androidx.compose.foundation.pager.rememberPagerItemProviderLambda (LazyLayoutPager.kt:234)"
+    const-string v2, "androidx.compose.foundation.pager.rememberPagerItemProviderLambda (LazyLayoutPager.kt:247)"
 
-    .line 240
+    .line 248
     invoke-static {v0, p5, v1, v2}, Landroidx/compose/runtime/ComposerKt;->traceEventStart(IIILjava/lang/String;)V
 
     :cond_0
-    shr-int/lit8 p5, p5, 0x3
+    shr-int/lit8 v0, p5, 0x3
 
-    and-int/lit8 p5, p5, 0xe
+    and-int/lit8 v0, v0, 0xe
 
-    .line 241
-    invoke-static {p1, p4, p5}, Landroidx/compose/runtime/SnapshotStateKt;->rememberUpdatedState(Ljava/lang/Object;Landroidx/compose/runtime/Composer;I)Landroidx/compose/runtime/State;
+    .line 249
+    invoke-static {p1, p4, v0}, Landroidx/compose/runtime/SnapshotStateKt;->rememberUpdatedState(Ljava/lang/Object;Landroidx/compose/runtime/Composer;I)Landroidx/compose/runtime/State;
 
     move-result-object p1
 
-    .line 242
+    shr-int/lit8 p5, p5, 0x6
+
+    and-int/lit8 p5, p5, 0xe
+
+    .line 250
+    invoke-static {p2, p4, p5}, Landroidx/compose/runtime/SnapshotStateKt;->rememberUpdatedState(Ljava/lang/Object;Landroidx/compose/runtime/Composer;I)Landroidx/compose/runtime/State;
+
+    move-result-object p2
+
+    .line 251
     filled-new-array {p0, p1, p2, p3}, [Ljava/lang/Object;
 
     move-result-object p5
@@ -1032,7 +1015,7 @@
 
     if-ge v0, v2, :cond_1
 
-    .line 308
+    .line 360
     aget-object v2, p5, v0
 
     invoke-interface {p4, v2}, Landroidx/compose/runtime/Composer;->changed(Ljava/lang/Object;)Z
@@ -1045,7 +1028,7 @@
 
     goto :goto_0
 
-    .line 310
+    .line 362
     :cond_1
     invoke-interface {p4}, Landroidx/compose/runtime/Composer;->rememberedValue()Ljava/lang/Object;
 
@@ -1053,7 +1036,7 @@
 
     if-nez v1, :cond_2
 
-    .line 311
+    .line 363
     sget-object v0, Landroidx/compose/runtime/Composer;->Companion:Landroidx/compose/runtime/Composer$Companion;
 
     invoke-virtual {v0}, Landroidx/compose/runtime/Composer$Companion;->getEmpty()Ljava/lang/Object;
@@ -1062,7 +1045,7 @@
 
     if-ne p5, v0, :cond_3
 
-    .line 243
+    .line 252
     :cond_2
     invoke-static {}, Landroidx/compose/runtime/SnapshotStateKt;->referentialEqualityPolicy()Landroidx/compose/runtime/SnapshotMutationPolicy;
 
@@ -1070,7 +1053,7 @@
 
     new-instance v0, Landroidx/compose/foundation/pager/LazyLayoutPagerKt$rememberPagerItemProviderLambda$1$intervalContentState$1;
 
-    invoke-direct {v0, p1, p2, p3}, Landroidx/compose/foundation/pager/LazyLayoutPagerKt$rememberPagerItemProviderLambda$1$intervalContentState$1;-><init>(Landroidx/compose/runtime/State;Lkotlin/jvm/functions/Function1;Lkotlin/jvm/functions/Function0;)V
+    invoke-direct {v0, p1, p2, p3}, Landroidx/compose/foundation/pager/LazyLayoutPagerKt$rememberPagerItemProviderLambda$1$intervalContentState$1;-><init>(Landroidx/compose/runtime/State;Landroidx/compose/runtime/State;Lkotlin/jvm/functions/Function0;)V
 
     check-cast v0, Lkotlin/jvm/functions/Function0;
 
@@ -1078,7 +1061,7 @@
 
     move-result-object p1
 
-    .line 246
+    .line 255
     invoke-static {}, Landroidx/compose/runtime/SnapshotStateKt;->referentialEqualityPolicy()Landroidx/compose/runtime/SnapshotMutationPolicy;
 
     move-result-object p2
@@ -1093,7 +1076,7 @@
 
     move-result-object p0
 
-    .line 255
+    .line 264
     new-instance p1, Landroidx/compose/foundation/pager/LazyLayoutPagerKt$rememberPagerItemProviderLambda$1$1;
 
     invoke-direct {p1, p0}, Landroidx/compose/foundation/pager/LazyLayoutPagerKt$rememberPagerItemProviderLambda$1$1;-><init>(Ljava/lang/Object;)V
@@ -1102,14 +1085,14 @@
 
     check-cast p5, Lkotlin/reflect/KProperty0;
 
-    .line 313
+    .line 365
     invoke-interface {p4, p5}, Landroidx/compose/runtime/Composer;->updateRememberedValue(Ljava/lang/Object;)V
 
-    .line 309
+    .line 361
     :cond_3
     invoke-interface {p4}, Landroidx/compose/runtime/Composer;->endReplaceableGroup()V
 
-    .line 242
+    .line 251
     check-cast p5, Lkotlin/reflect/KProperty0;
 
     invoke-static {}, Landroidx/compose/runtime/ComposerKt;->isTraceInProgress()Z

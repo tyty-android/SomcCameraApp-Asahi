@@ -1,6 +1,6 @@
 .class final Landroidx/compose/ui/tooling/animation/clock/InfiniteTransitionClock$1;
 .super Lkotlin/jvm/internal/Lambda;
-.source "InfiniteTransitionClock.kt"
+.source "InfiniteTransitionClock.android.kt"
 
 # interfaces
 .implements Lkotlin/jvm/functions/Function0;

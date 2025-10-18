@@ -58,7 +58,7 @@
 .method private static synthetic $values()[Ljp/co/sony/mc/camera/view/FragmentController$CameraState;
     .locals 14
 
-    .line 457
+    .line 469
     sget-object v0, Ljp/co/sony/mc/camera/view/FragmentController$CameraState;->INIT:Ljp/co/sony/mc/camera/view/FragmentController$CameraState;
 
     sget-object v1, Ljp/co/sony/mc/camera/view/FragmentController$CameraState;->OPENING:Ljp/co/sony/mc/camera/view/FragmentController$CameraState;
@@ -97,7 +97,7 @@
 .method static constructor <clinit>()V
     .locals 3
 
-    .line 458
+    .line 470
     new-instance v0, Ljp/co/sony/mc/camera/view/FragmentController$CameraState;
 
     const-string v1, "INIT"
@@ -108,7 +108,7 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/view/FragmentController$CameraState;->INIT:Ljp/co/sony/mc/camera/view/FragmentController$CameraState;
 
-    .line 459
+    .line 471
     new-instance v0, Ljp/co/sony/mc/camera/view/FragmentController$CameraState;
 
     const-string v1, "OPENING"
@@ -119,7 +119,7 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/view/FragmentController$CameraState;->OPENING:Ljp/co/sony/mc/camera/view/FragmentController$CameraState;
 
-    .line 460
+    .line 472
     new-instance v0, Ljp/co/sony/mc/camera/view/FragmentController$CameraState;
 
     const-string v1, "PREVIEWING"
@@ -130,7 +130,7 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/view/FragmentController$CameraState;->PREVIEWING:Ljp/co/sony/mc/camera/view/FragmentController$CameraState;
 
-    .line 461
+    .line 473
     new-instance v0, Ljp/co/sony/mc/camera/view/FragmentController$CameraState;
 
     const-string v1, "WAITING_PREPARE_CAPTURE"
@@ -141,7 +141,7 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/view/FragmentController$CameraState;->WAITING_PREPARE_CAPTURE:Ljp/co/sony/mc/camera/view/FragmentController$CameraState;
 
-    .line 462
+    .line 474
     new-instance v0, Ljp/co/sony/mc/camera/view/FragmentController$CameraState;
 
     const-string v1, "WAITING_CANCEL_PREPARE_CAPTURE"
@@ -152,7 +152,7 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/view/FragmentController$CameraState;->WAITING_CANCEL_PREPARE_CAPTURE:Ljp/co/sony/mc/camera/view/FragmentController$CameraState;
 
-    .line 463
+    .line 475
     new-instance v0, Ljp/co/sony/mc/camera/view/FragmentController$CameraState;
 
     const-string v1, "WAITING_AF_OM"
@@ -163,7 +163,7 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/view/FragmentController$CameraState;->WAITING_AF_OM:Ljp/co/sony/mc/camera/view/FragmentController$CameraState;
 
-    .line 464
+    .line 476
     new-instance v0, Ljp/co/sony/mc/camera/view/FragmentController$CameraState;
 
     const-string v1, "PREVIEWING_WITH_AF_ON"
@@ -174,7 +174,7 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/view/FragmentController$CameraState;->PREVIEWING_WITH_AF_ON:Ljp/co/sony/mc/camera/view/FragmentController$CameraState;
 
-    .line 465
+    .line 477
     new-instance v0, Ljp/co/sony/mc/camera/view/FragmentController$CameraState;
 
     const-string v1, "WAITING_CANCEL_AF_ON"
@@ -185,7 +185,7 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/view/FragmentController$CameraState;->WAITING_CANCEL_AF_ON:Ljp/co/sony/mc/camera/view/FragmentController$CameraState;
 
-    .line 466
+    .line 478
     new-instance v0, Ljp/co/sony/mc/camera/view/FragmentController$CameraState;
 
     const-string v1, "SNAPSHOT_CAPTURING"
@@ -196,7 +196,7 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/view/FragmentController$CameraState;->SNAPSHOT_CAPTURING:Ljp/co/sony/mc/camera/view/FragmentController$CameraState;
 
-    .line 467
+    .line 479
     new-instance v0, Ljp/co/sony/mc/camera/view/FragmentController$CameraState;
 
     const-string v1, "BURST_CAPTURING"
@@ -207,7 +207,7 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/view/FragmentController$CameraState;->BURST_CAPTURING:Ljp/co/sony/mc/camera/view/FragmentController$CameraState;
 
-    .line 468
+    .line 480
     new-instance v0, Ljp/co/sony/mc/camera/view/FragmentController$CameraState;
 
     const-string v1, "COUNTING_SELF_TIMER"
@@ -218,7 +218,7 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/view/FragmentController$CameraState;->COUNTING_SELF_TIMER:Ljp/co/sony/mc/camera/view/FragmentController$CameraState;
 
-    .line 469
+    .line 481
     new-instance v0, Ljp/co/sony/mc/camera/view/FragmentController$CameraState;
 
     const-string v1, "RECORDING"
@@ -229,7 +229,7 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/view/FragmentController$CameraState;->RECORDING:Ljp/co/sony/mc/camera/view/FragmentController$CameraState;
 
-    .line 470
+    .line 482
     new-instance v0, Ljp/co/sony/mc/camera/view/FragmentController$CameraState;
 
     const-string v1, "PAUSE_RECORDING"
@@ -240,7 +240,7 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/view/FragmentController$CameraState;->PAUSE_RECORDING:Ljp/co/sony/mc/camera/view/FragmentController$CameraState;
 
-    .line 471
+    .line 483
     new-instance v0, Ljp/co/sony/mc/camera/view/FragmentController$CameraState;
 
     const-string v1, "WAITING_STOP_RECORD"
@@ -251,7 +251,7 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/view/FragmentController$CameraState;->WAITING_STOP_RECORD:Ljp/co/sony/mc/camera/view/FragmentController$CameraState;
 
-    .line 457
+    .line 469
     invoke-static {}, Ljp/co/sony/mc/camera/view/FragmentController$CameraState;->$values()[Ljp/co/sony/mc/camera/view/FragmentController$CameraState;
 
     move-result-object v0
@@ -269,7 +269,7 @@
         }
     .end annotation
 
-    .line 457
+    .line 469
     invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
     return-void
@@ -278,7 +278,7 @@
 .method public static valueOf(Ljava/lang/String;)Ljp/co/sony/mc/camera/view/FragmentController$CameraState;
     .locals 1
 
-    .line 457
+    .line 469
     const-class v0, Ljp/co/sony/mc/camera/view/FragmentController$CameraState;
 
     invoke-static {v0, p0}, Ljava/lang/Enum;->valueOf(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
@@ -293,7 +293,7 @@
 .method public static values()[Ljp/co/sony/mc/camera/view/FragmentController$CameraState;
     .locals 1
 
-    .line 457
+    .line 469
     sget-object v0, Ljp/co/sony/mc/camera/view/FragmentController$CameraState;->$VALUES:[Ljp/co/sony/mc/camera/view/FragmentController$CameraState;
 
     invoke-virtual {v0}, [Ljp/co/sony/mc/camera/view/FragmentController$CameraState;->clone()Ljava/lang/Object;

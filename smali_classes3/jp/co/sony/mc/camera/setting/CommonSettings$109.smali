@@ -21,7 +21,7 @@
 .method constructor <init>()V
     .locals 0
 
-    .line 1181
+    .line 1187
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -42,8 +42,8 @@
         }
     .end annotation
 
-    .line 1185
-    invoke-static {}, Ljp/co/sony/mc/camera/configuration/parameters/Geotag;->values()[Ljp/co/sony/mc/camera/configuration/parameters/Geotag;
+    .line 1191
+    invoke-static {}, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->values()[Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
     move-result-object p0
 

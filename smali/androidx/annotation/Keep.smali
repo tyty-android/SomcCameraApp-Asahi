@@ -1,6 +1,6 @@
 .class public interface abstract annotation Landroidx/annotation/Keep;
 .super Ljava/lang/Object;
-.source "Keep.kt"
+.source "Keep.jvm.kt"
 
 # interfaces
 .implements Ljava/lang/annotation/Annotation;
@@ -34,7 +34,7 @@
     k = 0x1
     mv = {
         0x1,
-        0x8,
+        0x7,
         0x0
     }
     xi = 0x30

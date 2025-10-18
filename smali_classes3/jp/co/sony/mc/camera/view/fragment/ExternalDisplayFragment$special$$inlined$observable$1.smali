@@ -22,7 +22,7 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/SourceDebugExtension;
-    value = "SMAP\nDelegates.kt\nKotlin\n*S Kotlin\n*F\n+ 1 Delegates.kt\nkotlin/properties/Delegates$observable$1\n+ 2 ExternalDisplayFragment.kt\njp/co/sony/mc/camera/view/fragment/ExternalDisplayFragment\n*L\n1#1,73:1\n145#2,2:74\n*E\n"
+    value = "SMAP\nDelegates.kt\nKotlin\n*S Kotlin\n*F\n+ 1 Delegates.kt\nkotlin/properties/Delegates$observable$1\n+ 2 ExternalDisplayFragment.kt\njp/co/sony/mc/camera/view/fragment/ExternalDisplayFragment\n*L\n1#1,34:1\n145#2,2:35\n*E\n"
 .end annotation
 
 .annotation runtime Lkotlin/Metadata;
@@ -43,8 +43,8 @@
     }
     k = 0x1
     mv = {
-        0x1,
-        0x9,
+        0x2,
+        0x0,
         0x0
     }
     xi = 0x30
@@ -97,7 +97,7 @@
 
     invoke-virtual {p2}, Ljava/lang/Number;->intValue()I
 
-    .line 74
+    .line 35
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/fragment/ExternalDisplayFragment$special$$inlined$observable$1;->this$0:Ljp/co/sony/mc/camera/view/fragment/ExternalDisplayFragment;
 
     invoke-static {p0, p1}, Ljp/co/sony/mc/camera/view/fragment/ExternalDisplayFragment;->access$updateRecordingIndicator(Ljp/co/sony/mc/camera/view/fragment/ExternalDisplayFragment;I)V

@@ -105,7 +105,7 @@
 
     sput-object v0, Landroidx/compose/foundation/text/ComposableSingletons$BasicTextFieldKt;->INSTANCE:Landroidx/compose/foundation/text/ComposableSingletons$BasicTextFieldKt;
 
-    .line 140
+    .line 145
     sget-object v0, Landroidx/compose/foundation/text/ComposableSingletons$BasicTextFieldKt$lambda-1$1;->INSTANCE:Landroidx/compose/foundation/text/ComposableSingletons$BasicTextFieldKt$lambda-1$1;
 
     const v1, 0x3b79c49c
@@ -122,7 +122,7 @@
 
     const v0, 0x7d8127ef
 
-    .line 286
+    .line 295
     sget-object v1, Landroidx/compose/foundation/text/ComposableSingletons$BasicTextFieldKt$lambda-2$1;->INSTANCE:Landroidx/compose/foundation/text/ComposableSingletons$BasicTextFieldKt$lambda-2$1;
 
     invoke-static {v0, v2, v1}, Landroidx/compose/runtime/internal/ComposableLambdaKt;->composableLambdaInstance(IZLjava/lang/Object;)Landroidx/compose/runtime/internal/ComposableLambda;
@@ -135,7 +135,7 @@
 
     const v0, 0x19e074df
 
-    .line 330
+    .line 339
     sget-object v1, Landroidx/compose/foundation/text/ComposableSingletons$BasicTextFieldKt$lambda-3$1;->INSTANCE:Landroidx/compose/foundation/text/ComposableSingletons$BasicTextFieldKt$lambda-3$1;
 
     invoke-static {v0, v2, v1}, Landroidx/compose/runtime/internal/ComposableLambdaKt;->composableLambdaInstance(IZLjava/lang/Object;)Landroidx/compose/runtime/internal/ComposableLambda;
@@ -148,7 +148,7 @@
 
     const v0, -0x213864e
 
-    .line 370
+    .line 379
     sget-object v1, Landroidx/compose/foundation/text/ComposableSingletons$BasicTextFieldKt$lambda-4$1;->INSTANCE:Landroidx/compose/foundation/text/ComposableSingletons$BasicTextFieldKt$lambda-4$1;
 
     invoke-static {v0, v2, v1}, Landroidx/compose/runtime/internal/ComposableLambdaKt;->composableLambdaInstance(IZLjava/lang/Object;)Landroidx/compose/runtime/internal/ComposableLambda;

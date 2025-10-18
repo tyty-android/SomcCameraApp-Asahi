@@ -1,11 +1,11 @@
 .class public final Landroidx/compose/ui/text/platform/URLSpanCache;
 .super Ljava/lang/Object;
-.source "URLSpanCache.kt"
+.source "URLSpanCache.android.kt"
 
 
 # annotations
 .annotation system Ldalvik/annotation/SourceDebugExtension;
-    value = "SMAP\nURLSpanCache.kt\nKotlin\n*S Kotlin\n*F\n+ 1 URLSpanCache.kt\nandroidx/compose/ui/text/platform/URLSpanCache\n+ 2 Maps.kt\nkotlin/collections/MapsKt__MapsKt\n*L\n1#1,46:1\n361#2,7:47\n*S KotlinDebug\n*F\n+ 1 URLSpanCache.kt\nandroidx/compose/ui/text/platform/URLSpanCache\n*L\n45#1:47,7\n*E\n"
+    value = "SMAP\nURLSpanCache.android.kt\nKotlin\n*S Kotlin\n*F\n+ 1 URLSpanCache.android.kt\nandroidx/compose/ui/text/platform/URLSpanCache\n+ 2 Maps.kt\nkotlin/collections/MapsKt__MapsKt\n*L\n1#1,47:1\n361#2,7:48\n*S KotlinDebug\n*F\n+ 1 URLSpanCache.android.kt\nandroidx/compose/ui/text/platform/URLSpanCache\n*L\n45#1:48,7\n*E\n"
 .end annotation
 
 .annotation runtime Lkotlin/Metadata;
@@ -79,16 +79,12 @@
 .method public final toURLSpan(Landroidx/compose/ui/text/UrlAnnotation;)Landroid/text/style/URLSpan;
     .locals 2
 
-    const-string/jumbo v0, "urlAnnotation"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
     .line 45
     iget-object p0, p0, Landroidx/compose/ui/text/platform/URLSpanCache;->spansByAnnotation:Ljava/util/WeakHashMap;
 
     check-cast p0, Ljava/util/Map;
 
-    .line 47
+    .line 48
     invoke-interface {p0, p1}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v0
@@ -104,10 +100,10 @@
 
     invoke-direct {v0, v1}, Landroid/text/style/URLSpan;-><init>(Ljava/lang/String;)V
 
-    .line 50
+    .line 51
     invoke-interface {p0, p1, v0}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 45
+    .line 49
     :cond_0
     check-cast v0, Landroid/text/style/URLSpan;
 

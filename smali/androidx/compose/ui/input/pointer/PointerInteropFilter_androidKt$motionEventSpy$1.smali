@@ -53,7 +53,7 @@
     f = "PointerInteropFilter.android.kt"
     i = {}
     l = {
-        0x156
+        0x159
     }
     m = "invokeSuspend"
     n = {}
@@ -184,7 +184,7 @@
 
     move-result-object v0
 
-    .line 340
+    .line 343
     iget v1, p0, Landroidx/compose/ui/input/pointer/PointerInteropFilter_androidKt$motionEventSpy$1;->label:I
 
     const/4 v2, 0x1
@@ -213,10 +213,10 @@
 
     check-cast p1, Landroidx/compose/ui/input/pointer/PointerInputScope;
 
-    .line 341
+    .line 344
     invoke-interface {p1, v2}, Landroidx/compose/ui/input/pointer/PointerInputScope;->setInterceptOutOfBoundsChildEvents(Z)V
 
-    .line 342
+    .line 345
     new-instance v1, Landroidx/compose/ui/input/pointer/PointerInteropFilter_androidKt$motionEventSpy$1$1;
 
     iget-object v3, p0, Landroidx/compose/ui/input/pointer/PointerInteropFilter_androidKt$motionEventSpy$1;->$watcher:Lkotlin/jvm/functions/Function1;
@@ -241,7 +241,7 @@
 
     return-object v0
 
-    .line 348
+    .line 351
     :cond_2
     :goto_0
     sget-object p0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;

@@ -108,7 +108,7 @@
 
     move-result-object v1
 
-    const-string/jumbo v2, "wrap(bytes)"
+    const-string/jumbo v2, "wrap(...)"
 
     invoke-static {v1, v2}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
 
@@ -119,9 +119,7 @@
 
     move-result-object v0
 
-    const-string/jumbo v1, "wrap(chars)"
-
-    invoke-static {v0, v1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v0, v2}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
 
     sput-object v0, Lkotlin/io/LineReader;->charBuf:Ljava/nio/CharBuffer;
 
@@ -189,7 +187,7 @@
 
     move-result-object v0
 
-    const-string v1, "decoder.decode(byteBuf, charBuf, endOfInput)"
+    const-string v1, "decode(...)"
 
     invoke-static {v0, v1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
 
@@ -347,7 +345,7 @@
 
     move-result-object p1
 
-    const-string v0, "charset.newDecoder()"
+    const-string v0, "newDecoder(...)"
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
 
@@ -640,7 +638,7 @@
 
     move-result-object p1
 
-    const-string v1, "sb.toString()"
+    const-string/jumbo v1, "toString(...)"
 
     invoke-static {p1, v1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
 

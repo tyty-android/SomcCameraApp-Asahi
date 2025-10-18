@@ -29,16 +29,16 @@
 .method public constructor <init>(Ljp/co/sony/mc/camera/view/FragmentController;Ljp/co/sony/mc/camera/CameraAccessor;Landroidx/fragment/app/FragmentManager;)V
     .locals 0
 
-    .line 5779
+    .line 5961
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 5780
+    .line 5962
     iput-object p1, p0, Ljp/co/sony/mc/camera/view/FragmentController$CameraOperatorImpl;->mController:Ljp/co/sony/mc/camera/view/FragmentController;
 
-    .line 5781
+    .line 5963
     iput-object p2, p0, Ljp/co/sony/mc/camera/view/FragmentController$CameraOperatorImpl;->mCameraAccessor:Ljp/co/sony/mc/camera/CameraAccessor;
 
-    .line 5782
+    .line 5964
     iput-object p3, p0, Ljp/co/sony/mc/camera/view/FragmentController$CameraOperatorImpl;->mFragmentManager:Landroidx/fragment/app/FragmentManager;
 
     return-void
@@ -56,12 +56,12 @@
         }
     .end annotation
 
-    .line 5996
+    .line 6187
     invoke-static {}, Ljp/co/sony/mc/camera/setting/CameraProSetting;->getInstance()Ljp/co/sony/mc/camera/setting/CameraProSetting;
 
     move-result-object p0
 
-    .line 5997
+    .line 6188
     sget-object v0, Ljp/co/sony/mc/camera/setting/CommonSettings;->CAMERA_ID:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
 
     invoke-virtual {p0, v0}, Ljp/co/sony/mc/camera/setting/CameraProSetting;->get(Ljp/co/sony/mc/camera/setting/SettingKey$Key;)Ljava/lang/Object;
@@ -70,7 +70,7 @@
 
     check-cast v0, Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;
 
-    .line 5998
+    .line 6189
     sget-object v1, Ljp/co/sony/mc/camera/setting/CommonSettings;->CAPTURING_MODE:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
 
     invoke-virtual {p0, v1}, Ljp/co/sony/mc/camera/setting/CameraProSetting;->get(Ljp/co/sony/mc/camera/setting/SettingKey$Key;)Ljava/lang/Object;
@@ -79,12 +79,12 @@
 
     check-cast v1, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
-    .line 5999
+    .line 6190
     sget-object v2, Ljp/co/sony/mc/camera/setting/CameraSettings;->VIDEO_SIZE:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
 
     if-ne p1, v2, :cond_0
 
-    .line 6000
+    .line 6191
     move-object v2, p2
 
     check-cast v2, Ljp/co/sony/mc/camera/configuration/parameters/VideoSize;
@@ -100,13 +100,13 @@
 
     check-cast v2, Ljp/co/sony/mc/camera/configuration/parameters/VideoSize;
 
-    .line 6001
+    .line 6192
     :goto_0
     sget-object v3, Ljp/co/sony/mc/camera/setting/CameraSettings;->VIDEO_HDR:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
 
     if-ne p1, v3, :cond_1
 
-    .line 6002
+    .line 6193
     move-object v3, p2
 
     check-cast v3, Ljp/co/sony/mc/camera/configuration/parameters/VideoHdr;
@@ -122,13 +122,13 @@
 
     check-cast v3, Ljp/co/sony/mc/camera/configuration/parameters/VideoHdr;
 
-    .line 6003
+    .line 6194
     :goto_1
     sget-object v4, Ljp/co/sony/mc/camera/setting/CameraSettings;->FOCUS_MAGNIFICATION:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
 
     if-ne p1, v4, :cond_2
 
-    .line 6004
+    .line 6195
     move-object v4, p2
 
     check-cast v4, Ljp/co/sony/mc/camera/configuration/parameters/FocusMagnification;
@@ -144,24 +144,24 @@
 
     check-cast v4, Ljp/co/sony/mc/camera/configuration/parameters/FocusMagnification;
 
-    .line 6006
+    .line 6197
     :goto_2
     sget-object v5, Ljp/co/sony/mc/camera/setting/CameraSettings;->RESOLUTION:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
 
     if-ne p1, v5, :cond_3
 
-    .line 6007
+    .line 6198
     check-cast p2, Ljp/co/sony/mc/camera/configuration/parameters/Resolution;
 
     goto :goto_3
 
-    .line 6008
+    .line 6199
     :cond_3
     sget-object v5, Ljp/co/sony/mc/camera/setting/CameraSettings;->ASPECT_RATIO:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
 
     if-ne p1, v5, :cond_4
 
-    .line 6009
+    .line 6200
     check-cast p2, Ljp/co/sony/mc/camera/configuration/parameters/AspectRatio;
 
     invoke-static {v1, v0, p2}, Ljp/co/sony/mc/camera/configuration/parameters/Resolution;->getValueFromAspectRatio(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;Ljp/co/sony/mc/camera/configuration/parameters/AspectRatio;)Ljp/co/sony/mc/camera/configuration/parameters/Resolution;
@@ -170,7 +170,7 @@
 
     goto :goto_3
 
-    .line 6014
+    .line 6205
     :cond_4
     sget-object p1, Ljp/co/sony/mc/camera/setting/CameraSettings;->RESOLUTION:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
 
@@ -182,7 +182,7 @@
 
     check-cast p2, Ljp/co/sony/mc/camera/configuration/parameters/Resolution;
 
-    .line 6016
+    .line 6207
     :goto_3
     sget-object p1, Ljp/co/sony/mc/camera/setting/CameraSettings;->PREVIEW_SIZE:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
 
@@ -192,14 +192,14 @@
 
     check-cast p0, Landroid/graphics/Rect;
 
-    .line 6019
+    .line 6210
     invoke-virtual {v1}, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->isVideo()Z
 
     move-result p1
 
     if-eqz p1, :cond_5
 
-    .line 6020
+    .line 6211
     invoke-virtual {v2}, Ljp/co/sony/mc/camera/configuration/parameters/VideoSize;->getVideoRect()Landroid/graphics/Rect;
 
     move-result-object p1
@@ -211,23 +211,23 @@
 
     move-result-object p1
 
-    .line 6021
+    .line 6212
     :goto_4
     invoke-virtual {v1}, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->isVideo()Z
 
     move-result p2
 
-    .line 6023
+    .line 6214
     invoke-virtual {v4}, Ljp/co/sony/mc/camera/configuration/parameters/FocusMagnification;->getBooleanValue()Z
 
     move-result v1
 
-    .line 6017
+    .line 6208
     invoke-static {v0, p1, p2, v3, v1}, Ljp/co/sony/mc/camera/device/PlatformDependencyResolver;->getOptimalPreviewSize(Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;Landroid/graphics/Rect;ZLjp/co/sony/mc/camera/configuration/parameters/VideoHdr;Z)Landroid/graphics/Rect;
 
     move-result-object p1
 
-    .line 6025
+    .line 6216
     invoke-static {p0, p1}, Ljava/util/Objects;->equals(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result p0
@@ -239,10 +239,23 @@
 
 
 # virtual methods
+.method public canObjectTracking()Z
+    .locals 0
+
+    .line 6501
+    iget-object p0, p0, Ljp/co/sony/mc/camera/view/FragmentController$CameraOperatorImpl;->mController:Ljp/co/sony/mc/camera/view/FragmentController;
+
+    invoke-static {p0}, Ljp/co/sony/mc/camera/view/FragmentController;->-$$Nest$mcanObjectTracking(Ljp/co/sony/mc/camera/view/FragmentController;)Z
+
+    move-result p0
+
+    return p0
+.end method
+
 .method public canSetLens()Z
     .locals 2
 
-    .line 5797
+    .line 5979
     invoke-static {}, Ljp/co/sony/mc/camera/setting/CameraProSetting;->getInstance()Ljp/co/sony/mc/camera/setting/CameraProSetting;
 
     move-result-object v0
@@ -259,7 +272,7 @@
 
     if-eqz v0, :cond_0
 
-    .line 5799
+    .line 5981
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/FragmentController$CameraOperatorImpl;->mController:Ljp/co/sony/mc/camera/view/FragmentController;
 
     invoke-virtual {v0}, Ljp/co/sony/mc/camera/view/FragmentController;->isPreview()Z
@@ -278,7 +291,7 @@
 
     return v1
 
-    .line 5804
+    .line 5986
     :cond_0
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/FragmentController$CameraOperatorImpl;->mController:Ljp/co/sony/mc/camera/view/FragmentController;
 
@@ -299,7 +312,7 @@
 .method public cancelSelfTimer()V
     .locals 0
 
-    .line 6241
+    .line 6459
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/FragmentController$CameraOperatorImpl;->mController:Ljp/co/sony/mc/camera/view/FragmentController;
 
     invoke-static {p0}, Ljp/co/sony/mc/camera/view/FragmentController;->-$$Nest$mcancelSelfTimer(Ljp/co/sony/mc/camera/view/FragmentController;)V
@@ -310,12 +323,12 @@
 .method public changeAbGm(FF)V
     .locals 2
 
-    .line 6197
+    .line 6415
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
-    .line 6199
+    .line 6417
     sget-object v1, Ljp/co/sony/mc/camera/setting/CameraSettings;->AMBER_BLUE:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
 
     invoke-static {p1}, Ljava/lang/Float;->valueOf(F)Ljava/lang/Float;
@@ -328,7 +341,7 @@
 
     invoke-virtual {v0, p1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
-    .line 6200
+    .line 6418
     sget-object p1, Ljp/co/sony/mc/camera/setting/CameraSettings;->GREEN_MAGENTA:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
 
     invoke-static {p2}, Ljava/lang/Float;->valueOf(F)Ljava/lang/Float;
@@ -341,7 +354,7 @@
 
     invoke-virtual {v0, p1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
-    .line 6202
+    .line 6420
     invoke-static {}, Ljp/co/sony/mc/camera/setting/CameraProSetting;->getInstance()Ljp/co/sony/mc/camera/setting/CameraProSetting;
 
     move-result-object p1
@@ -350,12 +363,12 @@
 
     move-result-object p1
 
-    .line 6204
+    .line 6422
     new-instance p2, Ljava/util/ArrayList;
 
     invoke-direct {p2}, Ljava/util/ArrayList;-><init>()V
 
-    .line 6205
+    .line 6423
     sget-object v0, Ljp/co/sony/mc/camera/setting/CameraSettings;->AMBER_BLUE:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
 
     invoke-virtual {v0}, Ljp/co/sony/mc/camera/setting/CameraSettings$Key;->getName()Ljava/lang/String;
@@ -364,7 +377,7 @@
 
     invoke-virtual {p2, v0}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
-    .line 6206
+    .line 6424
     sget-object v0, Ljp/co/sony/mc/camera/setting/CameraSettings;->GREEN_MAGENTA:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
 
     invoke-virtual {v0}, Ljp/co/sony/mc/camera/setting/CameraSettings$Key;->getName()Ljava/lang/String;
@@ -373,7 +386,7 @@
 
     invoke-virtual {p2, v0}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
-    .line 6207
+    .line 6425
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/FragmentController$CameraOperatorImpl;->mCameraAccessor:Ljp/co/sony/mc/camera/CameraAccessor;
 
     const/4 v0, 0x0
@@ -386,7 +399,7 @@
 .method public changeAeLock(Ljp/co/sony/mc/camera/configuration/parameters/AutoExposureLock;)V
     .locals 0
 
-    .line 6246
+    .line 6464
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/FragmentController$CameraOperatorImpl;->mController:Ljp/co/sony/mc/camera/view/FragmentController;
 
     invoke-static {p0, p1}, Ljp/co/sony/mc/camera/view/FragmentController;->-$$Nest$mchangeAeLockState(Ljp/co/sony/mc/camera/view/FragmentController;Ljp/co/sony/mc/camera/configuration/parameters/AutoExposureLock;)V
@@ -397,7 +410,7 @@
 .method public changeAfLock(Ljp/co/sony/mc/camera/configuration/parameters/AutoFocusLock;)V
     .locals 1
 
-    .line 6231
+    .line 6449
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/FragmentController$CameraOperatorImpl;->mController:Ljp/co/sony/mc/camera/view/FragmentController;
 
     const/4 v0, 0x1
@@ -410,7 +423,7 @@
 .method public changeFocusDistance(F)V
     .locals 0
 
-    .line 6236
+    .line 6454
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/FragmentController$CameraOperatorImpl;->mController:Ljp/co/sony/mc/camera/view/FragmentController;
 
     invoke-virtual {p0, p1}, Ljp/co/sony/mc/camera/view/FragmentController;->setFocusDistance(F)V
@@ -421,12 +434,12 @@
 .method public changeLowLightMode(Ljp/co/sony/mc/camera/configuration/parameters/LowLightMode;)V
     .locals 3
 
-    .line 6152
+    .line 6370
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
-    .line 6153
+    .line 6371
     sget-object v1, Ljp/co/sony/mc/camera/setting/CameraSettings;->LOW_LIGHT_MODE:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
 
     invoke-static {v1, p1}, Landroid/util/Pair;->create(Ljava/lang/Object;Ljava/lang/Object;)Landroid/util/Pair;
@@ -435,7 +448,7 @@
 
     invoke-virtual {v0, p1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
-    .line 6155
+    .line 6373
     invoke-static {}, Ljp/co/sony/mc/camera/setting/CameraProSetting;->getInstance()Ljp/co/sony/mc/camera/setting/CameraProSetting;
 
     move-result-object p1
@@ -444,12 +457,12 @@
 
     move-result-object p1
 
-    .line 6157
+    .line 6375
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
-    .line 6158
+    .line 6376
     sget-object v1, Ljp/co/sony/mc/camera/setting/CameraSettings;->LOW_LIGHT_MODE:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
 
     invoke-virtual {v1}, Ljp/co/sony/mc/camera/setting/CameraSettings$Key;->getName()Ljava/lang/String;
@@ -458,14 +471,14 @@
 
     invoke-virtual {v0, v1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
-    .line 6160
+    .line 6378
     iget-object v1, p0, Ljp/co/sony/mc/camera/view/FragmentController$CameraOperatorImpl;->mCameraAccessor:Ljp/co/sony/mc/camera/CameraAccessor;
 
     const/4 v2, 0x0
 
     invoke-interface {v1, v0, p1, v2}, Ljp/co/sony/mc/camera/CameraAccessor;->applyChangedSetting(Ljava/util/List;Ljp/co/sony/mc/camera/setting/CameraSettingsHolder;Ljp/co/sony/mc/camera/CameraAccessor$PreviewCallback;)V
 
-    .line 6161
+    .line 6379
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/FragmentController$CameraOperatorImpl;->mController:Ljp/co/sony/mc/camera/view/FragmentController;
 
     invoke-static {p0}, Ljp/co/sony/mc/camera/view/FragmentController;->-$$Nest$fgetmCameraEventNotifier(Ljp/co/sony/mc/camera/view/FragmentController;)Ljp/co/sony/mc/camera/view/CameraEventListener;
@@ -474,7 +487,7 @@
 
     sget-object v0, Ljp/co/sony/mc/camera/setting/CameraSettings;->LOW_LIGHT_MODE:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
 
-    .line 6162
+    .line 6380
     invoke-virtual {v0}, Ljp/co/sony/mc/camera/setting/CameraSettings$Key;->getName()Ljava/lang/String;
 
     move-result-object v0
@@ -483,7 +496,7 @@
 
     move-result-object v0
 
-    .line 6161
+    .line 6379
     invoke-interface {p0, p1, v0}, Ljp/co/sony/mc/camera/view/CameraEventListener;->onCameraSettingsChanged(Ljp/co/sony/mc/camera/setting/CameraSettingsHolder;Ljava/util/List;)V
 
     return-void
@@ -492,12 +505,12 @@
 .method public changeWhiteBalance(Ljp/co/sony/mc/camera/configuration/parameters/WhiteBalance;)V
     .locals 2
 
-    .line 6139
+    .line 6357
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
-    .line 6140
+    .line 6358
     sget-object v1, Ljp/co/sony/mc/camera/setting/CameraSettings;->WHITE_BALANCE:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
 
     invoke-static {v1, p1}, Landroid/util/Pair;->create(Ljava/lang/Object;Ljava/lang/Object;)Landroid/util/Pair;
@@ -506,7 +519,7 @@
 
     invoke-virtual {v0, p1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
-    .line 6142
+    .line 6360
     invoke-static {}, Ljp/co/sony/mc/camera/setting/CameraProSetting;->getInstance()Ljp/co/sony/mc/camera/setting/CameraProSetting;
 
     move-result-object p1
@@ -515,12 +528,12 @@
 
     move-result-object p1
 
-    .line 6144
+    .line 6362
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
-    .line 6145
+    .line 6363
     sget-object v1, Ljp/co/sony/mc/camera/setting/CameraSettings;->WHITE_BALANCE:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
 
     invoke-virtual {v1}, Ljp/co/sony/mc/camera/setting/CameraSettings$Key;->getName()Ljava/lang/String;
@@ -529,7 +542,7 @@
 
     invoke-virtual {v0, v1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
-    .line 6147
+    .line 6365
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/FragmentController$CameraOperatorImpl;->mCameraAccessor:Ljp/co/sony/mc/camera/CameraAccessor;
 
     const/4 v1, 0x0
@@ -542,7 +555,7 @@
 .method public changeZoomStep(I)V
     .locals 0
 
-    .line 6187
+    .line 6405
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/FragmentController$CameraOperatorImpl;->mController:Ljp/co/sony/mc/camera/view/FragmentController;
 
     invoke-virtual {p0, p1}, Ljp/co/sony/mc/camera/view/FragmentController;->setZoomStep(I)V
@@ -553,7 +566,7 @@
 .method public clearMessageDialog()V
     .locals 0
 
-    .line 6573
+    .line 6796
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/FragmentController$CameraOperatorImpl;->mController:Ljp/co/sony/mc/camera/view/FragmentController;
 
     invoke-static {p0}, Ljp/co/sony/mc/camera/view/FragmentController;->-$$Nest$mclearMessageDialog(Ljp/co/sony/mc/camera/view/FragmentController;)V
@@ -564,7 +577,7 @@
 .method public clearTouchFocus()V
     .locals 0
 
-    .line 6293
+    .line 6516
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/FragmentController$CameraOperatorImpl;->mController:Ljp/co/sony/mc/camera/view/FragmentController;
 
     invoke-static {p0}, Ljp/co/sony/mc/camera/view/FragmentController;->-$$Nest$mclearTouchFocus(Ljp/co/sony/mc/camera/view/FragmentController;)V
@@ -575,7 +588,7 @@
 .method public closeCamera(Ljava/lang/Runnable;)V
     .locals 2
 
-    .line 6433
+    .line 6656
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/FragmentController$CameraOperatorImpl;->mCameraAccessor:Ljp/co/sony/mc/camera/CameraAccessor;
 
     new-instance v1, Ljp/co/sony/mc/camera/view/FragmentController$CameraOperatorImpl$1;
@@ -590,7 +603,7 @@
 .method public confirmStopStreaming()V
     .locals 0
 
-    .line 6553
+    .line 6776
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/FragmentController$CameraOperatorImpl;->mController:Ljp/co/sony/mc/camera/view/FragmentController;
 
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/view/FragmentController;->confirmStopStreaming()V
@@ -601,7 +614,7 @@
 .method public fetchCustomWb()V
     .locals 2
 
-    .line 6226
+    .line 6444
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/FragmentController$CameraOperatorImpl;->mCameraAccessor:Ljp/co/sony/mc/camera/CameraAccessor;
 
     new-instance v1, Ljp/co/sony/mc/camera/view/FragmentController$WbCustomStateChangedCallbackImpl;
@@ -618,12 +631,12 @@
 .method public finishCustomWb()V
     .locals 12
 
-    .line 6251
+    .line 6469
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/FragmentController$CameraOperatorImpl;->mCameraAccessor:Ljp/co/sony/mc/camera/CameraAccessor;
 
     invoke-interface {v0}, Ljp/co/sony/mc/camera/CameraAccessor;->stopWbCustom()V
 
-    .line 6253
+    .line 6471
     invoke-static {}, Ljp/co/sony/mc/camera/setting/CameraProSetting;->getInstance()Ljp/co/sony/mc/camera/setting/CameraProSetting;
 
     move-result-object v0
@@ -632,12 +645,12 @@
 
     move-result-object v0
 
-    .line 6255
+    .line 6473
     new-instance v1, Ljava/util/ArrayList;
 
     invoke-direct {v1}, Ljava/util/ArrayList;-><init>()V
 
-    .line 6256
+    .line 6474
     invoke-static {}, Ljp/co/sony/mc/camera/view/FragmentController;->-$$Nest$sfgetSTATIC_SETTINGS_ON_CUSTOM_WB()Ljava/util/List;
 
     move-result-object v2
@@ -659,7 +672,7 @@
 
     check-cast v3, Landroid/util/Pair;
 
-    .line 6258
+    .line 6476
     invoke-virtual {v0}, Ljp/co/sony/mc/camera/setting/CameraSettingsHolder;->getTouchIntention()Ljp/co/sony/mc/camera/configuration/parameters/TouchIntention;
 
     move-result-object v4
@@ -675,7 +688,7 @@
     :cond_0
     const/4 v4, 0x0
 
-    .line 6259
+    .line 6477
     :goto_1
     iget-object v5, v3, Landroid/util/Pair;->first:Ljava/lang/Object;
 
@@ -693,7 +706,7 @@
 
     if-eqz v4, :cond_1
 
-    .line 6261
+    .line 6479
     iget-object v5, p0, Ljp/co/sony/mc/camera/view/FragmentController$CameraOperatorImpl;->mCameraAccessor:Ljp/co/sony/mc/camera/CameraAccessor;
 
     iget-object v3, p0, Ljp/co/sony/mc/camera/view/FragmentController$CameraOperatorImpl;->mController:Ljp/co/sony/mc/camera/view/FragmentController;
@@ -702,7 +715,7 @@
 
     move-result-object v6
 
-    .line 6265
+    .line 6483
     invoke-virtual {v0}, Ljp/co/sony/mc/camera/setting/CameraSettingsHolder;->getMetering()Ljp/co/sony/mc/camera/configuration/parameters/Metering;
 
     move-result-object v9
@@ -715,12 +728,12 @@
 
     const/4 v8, 0x1
 
-    .line 6261
+    .line 6479
     invoke-interface/range {v5 .. v11}, Ljp/co/sony/mc/camera/CameraAccessor;->setFocusPosition(Landroid/graphics/Rect;ZZLjp/co/sony/mc/camera/configuration/parameters/Metering;Ljp/co/sony/mc/camera/configuration/parameters/FocusArea;Ljp/co/sony/mc/camera/CameraAccessor$AutoFocusCallback;)V
 
     goto :goto_0
 
-    .line 6270
+    .line 6488
     :cond_1
     iget-object v3, v3, Landroid/util/Pair;->first:Ljava/lang/Object;
 
@@ -734,7 +747,7 @@
 
     goto :goto_0
 
-    .line 6272
+    .line 6490
     :cond_2
     iget-object v2, p0, Ljp/co/sony/mc/camera/view/FragmentController$CameraOperatorImpl;->mCameraAccessor:Ljp/co/sony/mc/camera/CameraAccessor;
 
@@ -742,7 +755,7 @@
 
     invoke-interface {v2, v1, v0, v3}, Ljp/co/sony/mc/camera/CameraAccessor;->applyChangedSetting(Ljava/util/List;Ljp/co/sony/mc/camera/setting/CameraSettingsHolder;Ljp/co/sony/mc/camera/CameraAccessor$PreviewCallback;)V
 
-    .line 6273
+    .line 6491
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/FragmentController$CameraOperatorImpl;->mController:Ljp/co/sony/mc/camera/view/FragmentController;
 
     invoke-static {p0}, Ljp/co/sony/mc/camera/view/FragmentController;->-$$Nest$fgetmCameraEventNotifier(Ljp/co/sony/mc/camera/view/FragmentController;)Ljp/co/sony/mc/camera/view/CameraEventListener;
@@ -765,7 +778,7 @@
 .method public forceFallbackOn()V
     .locals 0
 
-    .line 6568
+    .line 6791
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/FragmentController$CameraOperatorImpl;->mCameraAccessor:Ljp/co/sony/mc/camera/CameraAccessor;
 
     invoke-interface {p0}, Ljp/co/sony/mc/camera/CameraAccessor;->forceFallbackOn()V
@@ -776,7 +789,7 @@
 .method public isFocusMagnifying()Z
     .locals 0
 
-    .line 6497
+    .line 6720
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/FragmentController$CameraOperatorImpl;->mController:Ljp/co/sony/mc/camera/view/FragmentController;
 
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/view/FragmentController;->isFocusMagnifying()Z
@@ -789,7 +802,7 @@
 .method public isZoomSupported()Z
     .locals 0
 
-    .line 6167
+    .line 6385
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/FragmentController$CameraOperatorImpl;->mController:Ljp/co/sony/mc/camera/view/FragmentController;
 
     invoke-static {p0}, Ljp/co/sony/mc/camera/view/FragmentController;->-$$Nest$misZoomSupported(Ljp/co/sony/mc/camera/view/FragmentController;)Z
@@ -802,7 +815,7 @@
 .method public jumpZoomStep(II)V
     .locals 0
 
-    .line 6192
+    .line 6410
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/FragmentController$CameraOperatorImpl;->mController:Ljp/co/sony/mc/camera/view/FragmentController;
 
     invoke-static {p0}, Ljp/co/sony/mc/camera/view/FragmentController;->-$$Nest$fgetmEventProcedure(Ljp/co/sony/mc/camera/view/FragmentController;)Ljp/co/sony/mc/camera/view/EventProcedure;
@@ -821,7 +834,7 @@
 .method public notifyZoomRejected()V
     .locals 0
 
-    .line 6172
+    .line 6390
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/FragmentController$CameraOperatorImpl;->mController:Ljp/co/sony/mc/camera/view/FragmentController;
 
     invoke-static {p0}, Ljp/co/sony/mc/camera/view/FragmentController;->-$$Nest$mnotifyZoomRejected(Ljp/co/sony/mc/camera/view/FragmentController;)V
@@ -832,7 +845,7 @@
 .method public notifyZoomStart()V
     .locals 0
 
-    .line 6177
+    .line 6395
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/FragmentController$CameraOperatorImpl;->mController:Ljp/co/sony/mc/camera/view/FragmentController;
 
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/view/FragmentController;->prepareZoom()Z
@@ -843,7 +856,7 @@
 .method public notifyZoomStop()V
     .locals 0
 
-    .line 6182
+    .line 6400
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/FragmentController$CameraOperatorImpl;->mController:Ljp/co/sony/mc/camera/view/FragmentController;
 
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/view/FragmentController;->finishZoom()V
@@ -854,7 +867,7 @@
 .method public onFocusMagnificationPositionSwiped(Landroid/graphics/Point;Landroid/graphics/Point;Landroid/graphics/Point;)V
     .locals 0
 
-    .line 6528
+    .line 6751
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/FragmentController$CameraOperatorImpl;->mController:Ljp/co/sony/mc/camera/view/FragmentController;
 
     invoke-static {p0, p1, p2, p3}, Ljp/co/sony/mc/camera/view/FragmentController;->-$$Nest$monFocusMagnificationPositionSwiped(Ljp/co/sony/mc/camera/view/FragmentController;Landroid/graphics/Point;Landroid/graphics/Point;Landroid/graphics/Point;)V
@@ -865,7 +878,7 @@
 .method public pauseRecording()V
     .locals 2
 
-    .line 6397
+    .line 6620
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/FragmentController$CameraOperatorImpl;->mController:Ljp/co/sony/mc/camera/view/FragmentController;
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/view/FragmentController;->-$$Nest$fgetmCameraState(Ljp/co/sony/mc/camera/view/FragmentController;)Ljp/co/sony/mc/camera/view/FragmentController$CameraState;
@@ -876,12 +889,12 @@
 
     if-ne v0, v1, :cond_0
 
-    .line 6398
+    .line 6621
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/FragmentController$CameraOperatorImpl;->mCameraAccessor:Ljp/co/sony/mc/camera/CameraAccessor;
 
     invoke-interface {v0}, Ljp/co/sony/mc/camera/CameraAccessor;->pauseRecording()V
 
-    .line 6399
+    .line 6622
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/FragmentController$CameraOperatorImpl;->mController:Ljp/co/sony/mc/camera/view/FragmentController;
 
     sget-object v0, Ljp/co/sony/mc/camera/view/FragmentController$CameraState;->PAUSE_RECORDING:Ljp/co/sony/mc/camera/view/FragmentController$CameraState;
@@ -895,7 +908,7 @@
 .method public prepareFetchCustomWb()V
     .locals 4
 
-    .line 6213
+    .line 6431
     invoke-static {}, Ljp/co/sony/mc/camera/setting/CameraProSetting;->getInstance()Ljp/co/sony/mc/camera/setting/CameraProSetting;
 
     move-result-object v0
@@ -904,17 +917,17 @@
 
     move-result-object v1
 
-    .line 6214
+    .line 6432
     invoke-virtual {v0, v1}, Ljp/co/sony/mc/camera/setting/CameraProSetting;->createCameraSettingsHolder(Ljava/util/List;)Ljp/co/sony/mc/camera/setting/CameraSettingsHolder;
 
     move-result-object v0
 
-    .line 6216
+    .line 6434
     new-instance v1, Ljava/util/ArrayList;
 
     invoke-direct {v1}, Ljava/util/ArrayList;-><init>()V
 
-    .line 6217
+    .line 6435
     invoke-static {}, Ljp/co/sony/mc/camera/view/FragmentController;->-$$Nest$sfgetSTATIC_SETTINGS_ON_CUSTOM_WB()Ljava/util/List;
 
     move-result-object v2
@@ -936,7 +949,7 @@
 
     check-cast v3, Landroid/util/Pair;
 
-    .line 6218
+    .line 6436
     iget-object v3, v3, Landroid/util/Pair;->first:Ljava/lang/Object;
 
     check-cast v3, Ljp/co/sony/mc/camera/setting/SettingKey$Key;
@@ -949,7 +962,7 @@
 
     goto :goto_0
 
-    .line 6220
+    .line 6438
     :cond_0
     iget-object v2, p0, Ljp/co/sony/mc/camera/view/FragmentController$CameraOperatorImpl;->mCameraAccessor:Ljp/co/sony/mc/camera/CameraAccessor;
 
@@ -957,7 +970,7 @@
 
     invoke-interface {v2, v1, v0, v3}, Ljp/co/sony/mc/camera/CameraAccessor;->applyChangedSetting(Ljava/util/List;Ljp/co/sony/mc/camera/setting/CameraSettingsHolder;Ljp/co/sony/mc/camera/CameraAccessor$PreviewCallback;)V
 
-    .line 6221
+    .line 6439
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/FragmentController$CameraOperatorImpl;->mController:Ljp/co/sony/mc/camera/view/FragmentController;
 
     invoke-static {p0}, Ljp/co/sony/mc/camera/view/FragmentController;->-$$Nest$fgetmCameraEventNotifier(Ljp/co/sony/mc/camera/view/FragmentController;)Ljp/co/sony/mc/camera/view/CameraEventListener;
@@ -972,7 +985,7 @@
 .method public prepareRecording()V
     .locals 0
 
-    .line 6374
+    .line 6597
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/FragmentController$CameraOperatorImpl;->mController:Ljp/co/sony/mc/camera/view/FragmentController;
 
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/view/FragmentController;->prepareRecording()V
@@ -983,7 +996,7 @@
 .method public prepareStartFocusMagnification()V
     .locals 0
 
-    .line 6492
+    .line 6715
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/FragmentController$CameraOperatorImpl;->mController:Ljp/co/sony/mc/camera/view/FragmentController;
 
     invoke-static {p0}, Ljp/co/sony/mc/camera/view/FragmentController;->-$$Nest$mprepareStartFocusMagnification(Ljp/co/sony/mc/camera/view/FragmentController;)V
@@ -994,7 +1007,7 @@
 .method public prepareStreaming()V
     .locals 0
 
-    .line 6359
+    .line 6582
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/FragmentController$CameraOperatorImpl;->mController:Ljp/co/sony/mc/camera/view/FragmentController;
 
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/view/FragmentController;->prepareStreaming()V
@@ -1005,7 +1018,7 @@
 .method public requestBurstCapture()V
     .locals 2
 
-    .line 6314
+    .line 6537
     invoke-static {}, Ljp/co/sony/mc/camera/setting/CameraProSetting;->getInstance()Ljp/co/sony/mc/camera/setting/CameraProSetting;
 
     move-result-object v0
@@ -1018,29 +1031,31 @@
 
     check-cast v0, Ljp/co/sony/mc/camera/configuration/parameters/DriveMode;
 
-    .line 6315
+    .line 6538
     invoke-virtual {v0}, Ljp/co/sony/mc/camera/configuration/parameters/DriveMode;->isBurstMode()Z
 
     move-result v0
 
+    const/4 v1, 0x1
+
     if-nez v0, :cond_0
 
-    .line 6316
-    const-string p0, "Ignored: Drive mode isn\'t burst mode."
+    .line 6539
+    new-array p0, v1, [Ljava/lang/String;
 
-    filled-new-array {p0}, [Ljava/lang/String;
+    const/4 v0, 0x0
 
-    move-result-object p0
+    const-string v1, "Ignored: Drive mode isn\'t burst mode."
+
+    aput-object v1, p0, v0
 
     invoke-static {p0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
     return-void
 
-    .line 6320
+    .line 6543
     :cond_0
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/FragmentController$CameraOperatorImpl;->mController:Ljp/co/sony/mc/camera/view/FragmentController;
-
-    const/4 v1, 0x1
 
     invoke-virtual {v0, v1}, Ljp/co/sony/mc/camera/view/FragmentController;->requestCaptureReady(Z)Z
 
@@ -1050,7 +1065,7 @@
 
     return-void
 
-    .line 6323
+    .line 6546
     :cond_1
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/FragmentController$CameraOperatorImpl;->mController:Ljp/co/sony/mc/camera/view/FragmentController;
 
@@ -1062,7 +1077,7 @@
 .method public requestCaptureCancel()V
     .locals 0
 
-    .line 6328
+    .line 6551
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/FragmentController$CameraOperatorImpl;->mController:Ljp/co/sony/mc/camera/view/FragmentController;
 
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/view/FragmentController;->requestCaptureCancel()V
@@ -1073,7 +1088,7 @@
 .method public requestCaptureReady()V
     .locals 1
 
-    .line 6298
+    .line 6521
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/FragmentController$CameraOperatorImpl;->mController:Ljp/co/sony/mc/camera/view/FragmentController;
 
     const/4 v0, 0x0
@@ -1086,7 +1101,7 @@
 .method public requestObjectTracking(Landroid/graphics/Point;)V
     .locals 0
 
-    .line 6283
+    .line 6506
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/FragmentController$CameraOperatorImpl;->mController:Ljp/co/sony/mc/camera/view/FragmentController;
 
     invoke-static {p0, p1}, Ljp/co/sony/mc/camera/view/FragmentController;->-$$Nest$mrequestObjectTracking(Ljp/co/sony/mc/camera/view/FragmentController;Landroid/graphics/Point;)V
@@ -1097,7 +1112,7 @@
 .method public requestStartHistogramMonitoring()V
     .locals 0
 
-    .line 6482
+    .line 6705
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/FragmentController$CameraOperatorImpl;->mCameraAccessor:Ljp/co/sony/mc/camera/CameraAccessor;
 
     invoke-interface {p0}, Ljp/co/sony/mc/camera/CameraAccessor;->requestStartHistogramMonitoring()V
@@ -1108,7 +1123,7 @@
 .method public requestStopHistogramMonitoring()V
     .locals 0
 
-    .line 6487
+    .line 6710
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/FragmentController$CameraOperatorImpl;->mCameraAccessor:Ljp/co/sony/mc/camera/CameraAccessor;
 
     invoke-interface {p0}, Ljp/co/sony/mc/camera/CameraAccessor;->requestStopHistogramMonitoring()V
@@ -1119,7 +1134,7 @@
 .method public requestTouchFocus(Landroid/graphics/Point;)V
     .locals 0
 
-    .line 6278
+    .line 6496
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/FragmentController$CameraOperatorImpl;->mController:Ljp/co/sony/mc/camera/view/FragmentController;
 
     invoke-static {p0, p1}, Ljp/co/sony/mc/camera/view/FragmentController;->-$$Nest$mrequestTouchFocus(Ljp/co/sony/mc/camera/view/FragmentController;Landroid/graphics/Point;)V
@@ -1127,10 +1142,21 @@
     return-void
 .end method
 
+.method public requestUpdateAudioDevice()V
+    .locals 0
+
+    .line 6821
+    iget-object p0, p0, Ljp/co/sony/mc/camera/view/FragmentController$CameraOperatorImpl;->mCameraAccessor:Ljp/co/sony/mc/camera/CameraAccessor;
+
+    invoke-interface {p0}, Ljp/co/sony/mc/camera/CameraAccessor;->requestUpdateAudioDevice()V
+
+    return-void
+.end method
+
 .method public resumeRecording()V
     .locals 2
 
-    .line 6389
+    .line 6612
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/FragmentController$CameraOperatorImpl;->mController:Ljp/co/sony/mc/camera/view/FragmentController;
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/view/FragmentController;->-$$Nest$fgetmCameraState(Ljp/co/sony/mc/camera/view/FragmentController;)Ljp/co/sony/mc/camera/view/FragmentController$CameraState;
@@ -1141,12 +1167,12 @@
 
     if-ne v0, v1, :cond_0
 
-    .line 6390
+    .line 6613
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/FragmentController$CameraOperatorImpl;->mCameraAccessor:Ljp/co/sony/mc/camera/CameraAccessor;
 
     invoke-interface {v0}, Ljp/co/sony/mc/camera/CameraAccessor;->resumeRecording()V
 
-    .line 6391
+    .line 6614
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/FragmentController$CameraOperatorImpl;->mController:Ljp/co/sony/mc/camera/view/FragmentController;
 
     sget-object v0, Ljp/co/sony/mc/camera/view/FragmentController$CameraState;->RECORDING:Ljp/co/sony/mc/camera/view/FragmentController$CameraState;
@@ -1162,7 +1188,7 @@
 
     if-eqz p1, :cond_0
 
-    .line 5788
+    .line 5970
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/FragmentController$CameraOperatorImpl;->mController:Ljp/co/sony/mc/camera/view/FragmentController;
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/view/FragmentController;->-$$Nest$fgetmUserEventAcceptChecker(Ljp/co/sony/mc/camera/view/FragmentController;)Ljp/co/sony/mc/camera/view/UserEventAcceptableChecker;
@@ -1175,7 +1201,7 @@
 
     goto :goto_0
 
-    .line 5790
+    .line 5972
     :cond_0
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/FragmentController$CameraOperatorImpl;->mController:Ljp/co/sony/mc/camera/view/FragmentController;
 
@@ -1187,7 +1213,7 @@
 
     invoke-virtual {v0, v1}, Ljp/co/sony/mc/camera/view/UserEventAcceptableChecker;->occurEvent(Ljp/co/sony/mc/camera/view/UserEventKind;)V
 
-    .line 5792
+    .line 5974
     :goto_0
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/FragmentController$CameraOperatorImpl;->mController:Ljp/co/sony/mc/camera/view/FragmentController;
 
@@ -1203,59 +1229,12 @@
 .method public setCapturingMode(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;)V
     .locals 10
 
-    .line 6030
-    sget-boolean v0, Ljp/co/sony/mc/camera/util/CamLog;->DEBUG:Z
-
-    if-eqz v0, :cond_0
-
-    .line 6031
-    new-instance v0, Ljava/lang/StringBuilder;
-
-    const-string v1, "nextCapturingMode:"
-
-    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
-
-    invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
-
-    move-result-object v0
-
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v0
-
-    filled-new-array {v0}, [Ljava/lang/String;
-
-    move-result-object v0
-
-    invoke-static {v0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
-
-    .line 6033
-    :cond_0
-    invoke-virtual {p1}, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->isQuickRecord()Z
-
-    move-result v0
-
-    if-nez v0, :cond_1
-
-    iget-object v0, p0, Ljp/co/sony/mc/camera/view/FragmentController$CameraOperatorImpl;->mController:Ljp/co/sony/mc/camera/view/FragmentController;
-
-    invoke-static {v0}, Ljp/co/sony/mc/camera/view/FragmentController;->-$$Nest$fgetmCameraState(Ljp/co/sony/mc/camera/view/FragmentController;)Ljp/co/sony/mc/camera/view/FragmentController$CameraState;
-
-    move-result-object v0
-
-    sget-object v1, Ljp/co/sony/mc/camera/view/FragmentController$CameraState;->PREVIEWING:Ljp/co/sony/mc/camera/view/FragmentController$CameraState;
-
-    if-eq v0, v1, :cond_1
-
-    return-void
-
-    .line 6038
-    :cond_1
+    .line 6221
     invoke-static {}, Ljp/co/sony/mc/camera/setting/CameraProSetting;->getInstance()Ljp/co/sony/mc/camera/setting/CameraProSetting;
 
     move-result-object v0
 
-    .line 6039
+    .line 6222
     sget-object v1, Ljp/co/sony/mc/camera/setting/CommonSettings;->CAPTURING_MODE:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
 
     invoke-virtual {v0, v1}, Ljp/co/sony/mc/camera/setting/CameraProSetting;->get(Ljp/co/sony/mc/camera/setting/SettingKey$Key;)Ljava/lang/Object;
@@ -1264,246 +1243,385 @@
 
     check-cast v1, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
-    .line 6040
-    invoke-virtual {p1}, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->isStreaming()Z
+    const/4 v2, 0x1
 
-    move-result v2
+    .line 6223
+    new-array v3, v2, [Ljava/lang/String;
 
-    if-eqz v2, :cond_2
+    new-instance v4, Ljava/lang/StringBuilder;
 
-    .line 6041
-    invoke-static {}, Ljp/co/sony/mc/camera/rtmp/NetworkManager;->getInstance()Ljp/co/sony/mc/camera/rtmp/NetworkManager;
+    const-string v5, "from:"
 
-    move-result-object v2
+    invoke-direct {v4, v5}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
-    invoke-virtual {v2}, Ljp/co/sony/mc/camera/rtmp/NetworkManager;->registerNetworkCallback()V
-
-    .line 6042
-    sget-object v2, Ljp/co/sony/mc/camera/setting/CommonSettings;->STREAMING_CONNECT_MODE:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
-
-    invoke-virtual {v0, v2}, Ljp/co/sony/mc/camera/setting/CameraProSetting;->get(Ljp/co/sony/mc/camera/setting/SettingKey$Key;)Ljava/lang/Object;
-
-    move-result-object v2
-
-    sget-object v3, Ljp/co/sony/mc/camera/configuration/parameters/StreamingConnectMode;->FACEBOOK:Ljp/co/sony/mc/camera/configuration/parameters/StreamingConnectMode;
-
-    if-ne v2, v3, :cond_3
-
-    .line 6044
-    sget-object v2, Ljp/co/sony/mc/camera/rtmp/FacebookApi;->INSTANCE:Ljp/co/sony/mc/camera/rtmp/FacebookApi;
-
-    iget-object v3, p0, Ljp/co/sony/mc/camera/view/FragmentController$CameraOperatorImpl;->mController:Ljp/co/sony/mc/camera/view/FragmentController;
-
-    invoke-static {v3}, Ljp/co/sony/mc/camera/view/FragmentController;->-$$Nest$fgetmActivity(Ljp/co/sony/mc/camera/view/FragmentController;)Ljp/co/sony/mc/camera/CameraActivity;
-
-    move-result-object v3
-
-    invoke-virtual {v2, v3}, Ljp/co/sony/mc/camera/rtmp/FacebookApi;->initialize(Ljp/co/sony/mc/camera/CameraActivity;)V
-
-    goto :goto_0
-
-    .line 6046
-    :cond_2
-    invoke-virtual {v1}, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->isStreaming()Z
-
-    move-result v2
-
-    if-eqz v2, :cond_3
-
-    .line 6047
-    invoke-static {}, Ljp/co/sony/mc/camera/rtmp/NetworkManager;->getInstance()Ljp/co/sony/mc/camera/rtmp/NetworkManager;
-
-    move-result-object v2
-
-    invoke-virtual {v2}, Ljp/co/sony/mc/camera/rtmp/NetworkManager;->unregisterNetworkCallback()V
-
-    .line 6048
-    sget-object v2, Ljp/co/sony/mc/camera/rtmp/FacebookApi;->INSTANCE:Ljp/co/sony/mc/camera/rtmp/FacebookApi;
-
-    invoke-virtual {v2}, Ljp/co/sony/mc/camera/rtmp/FacebookApi;->destroy()V
-
-    .line 6050
-    :cond_3
-    :goto_0
-    sget-object v2, Ljp/co/sony/mc/camera/setting/CommonSettings;->CAMERA_ID:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
-
-    invoke-virtual {v0, v2}, Ljp/co/sony/mc/camera/setting/CameraProSetting;->get(Ljp/co/sony/mc/camera/setting/SettingKey$Key;)Ljava/lang/Object;
-
-    move-result-object v2
-
-    check-cast v2, Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;
-
-    .line 6051
-    invoke-virtual {v0}, Ljp/co/sony/mc/camera/setting/CameraProSetting;->getCurrentCameraId()Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;
-
-    move-result-object v3
-
-    .line 6053
-    invoke-virtual {v1}, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->isQuickRecord()Z
-
-    move-result v4
-
-    const/4 v5, 0x0
-
-    if-nez v4, :cond_4
-
-    invoke-virtual {p1}, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->isQuickRecord()Z
-
-    move-result v4
-
-    if-eqz v4, :cond_4
-
-    .line 6054
-    sget-object v4, Ljp/co/sony/mc/camera/setting/CommonSettings;->LAST_CAPTURING_MODE:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
-
-    invoke-virtual {v0, v4, v1, v5}, Ljp/co/sony/mc/camera/setting/CameraProSetting;->set(Ljp/co/sony/mc/camera/setting/SettingKey$Key;Ljava/lang/Object;Z)V
-
-    .line 6057
-    :cond_4
-    iget-object v4, p0, Ljp/co/sony/mc/camera/view/FragmentController$CameraOperatorImpl;->mController:Ljp/co/sony/mc/camera/view/FragmentController;
-
-    iget-object v6, p0, Ljp/co/sony/mc/camera/view/FragmentController$CameraOperatorImpl;->mFragmentManager:Landroidx/fragment/app/FragmentManager;
-
-    .line 6058
-    invoke-static {v4, v6}, Ljp/co/sony/mc/camera/view/FragmentController;->-$$Nest$mgetViewFinderFragment(Ljp/co/sony/mc/camera/view/FragmentController;Landroidx/fragment/app/FragmentManager;)Ljp/co/sony/mc/camera/view/fragment/ViewFinderFragment;
+    invoke-virtual {v4, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
     move-result-object v4
 
-    .line 6059
-    sget-object v6, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->PHOTO_PRO_MR:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
+    const-string v5, " to:"
 
-    if-ne v1, v6, :cond_5
+    invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 6060
-    invoke-virtual {v4}, Ljp/co/sony/mc/camera/view/fragment/ViewFinderFragment;->clearTouchFocus()V
+    move-result-object v4
 
-    .line 6061
-    iget-object v6, p0, Ljp/co/sony/mc/camera/view/FragmentController$CameraOperatorImpl;->mCameraAccessor:Ljp/co/sony/mc/camera/CameraAccessor;
+    invoke-virtual {v4, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
-    invoke-interface {v6}, Ljp/co/sony/mc/camera/CameraAccessor;->clearFocus()V
+    move-result-object v4
 
-    .line 6063
-    :cond_5
+    invoke-virtual {v4}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v4
+
+    const/4 v5, 0x0
+
+    aput-object v4, v3, v5
+
+    invoke-static {v3}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
+
+    .line 6225
+    invoke-virtual {p1}, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->isQuickRecord()Z
+
+    move-result v3
+
+    if-nez v3, :cond_0
+
+    iget-object v3, p0, Ljp/co/sony/mc/camera/view/FragmentController$CameraOperatorImpl;->mController:Ljp/co/sony/mc/camera/view/FragmentController;
+
+    invoke-static {v3}, Ljp/co/sony/mc/camera/view/FragmentController;->-$$Nest$fgetmCameraState(Ljp/co/sony/mc/camera/view/FragmentController;)Ljp/co/sony/mc/camera/view/FragmentController$CameraState;
+
+    move-result-object v3
+
+    sget-object v4, Ljp/co/sony/mc/camera/view/FragmentController$CameraState;->PREVIEWING:Ljp/co/sony/mc/camera/view/FragmentController$CameraState;
+
+    if-eq v3, v4, :cond_0
+
+    return-void
+
+    .line 6230
+    :cond_0
+    invoke-virtual {v1}, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->getCapturingUiMode()Ljp/co/sony/mc/camera/view/viewmodel/CapturingUiMode;
+
+    move-result-object v3
+
+    .line 6231
+    invoke-virtual {p1}, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->getCapturingUiMode()Ljp/co/sony/mc/camera/view/viewmodel/CapturingUiMode;
+
+    move-result-object v4
+
+    if-eq v3, v4, :cond_1
+
+    .line 6233
+    const-class v6, Ljp/co/sony/mc/camera/view/viewmodel/CapturingUiMode;
+
+    .line 6234
+    new-array v6, v2, [Ljava/lang/String;
+
+    new-instance v7, Ljava/lang/StringBuilder;
+
+    const-string v8, "KeyTimestamp CHANGE_CAPTURING_MODE from:CapturingUiMode."
+
+    invoke-direct {v7, v8}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+
+    .line 6235
+    invoke-virtual {v3}, Ljp/co/sony/mc/camera/view/viewmodel/CapturingUiMode;->name()Ljava/lang/String;
+
+    move-result-object v3
+
+    invoke-virtual {v7, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v3
+
+    const-string v7, " to:CapturingUiMode."
+
+    invoke-virtual {v3, v7}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v3
+
+    .line 6236
+    invoke-virtual {v4}, Ljp/co/sony/mc/camera/view/viewmodel/CapturingUiMode;->name()Ljava/lang/String;
+
+    move-result-object v4
+
+    invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v3
+
+    const-string v4, " currentElapsedRealtimeNanos = "
+
+    invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v3
+
+    .line 6237
+    invoke-static {}, Landroid/os/SystemClock;->elapsedRealtimeNanos()J
+
+    move-result-wide v7
+
+    invoke-virtual {v3, v7, v8}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
+
+    move-result-object v3
+
+    invoke-virtual {v3}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v3
+
+    aput-object v3, v6, v5
+
+    .line 6234
+    invoke-static {v6}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
+
+    .line 6240
+    :cond_1
+    invoke-virtual {p1}, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->isStreaming()Z
+
+    move-result v3
+
+    if-eqz v3, :cond_2
+
+    .line 6241
+    invoke-static {}, Ljp/co/sony/mc/camera/rtmp/NetworkManager;->getInstance()Ljp/co/sony/mc/camera/rtmp/NetworkManager;
+
+    move-result-object v3
+
+    invoke-virtual {v3}, Ljp/co/sony/mc/camera/rtmp/NetworkManager;->registerNetworkCallback()V
+
+    .line 6242
+    sget-object v3, Ljp/co/sony/mc/camera/setting/CommonSettings;->STREAMING_CONNECT_MODE:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
+
+    invoke-virtual {v0, v3}, Ljp/co/sony/mc/camera/setting/CameraProSetting;->get(Ljp/co/sony/mc/camera/setting/SettingKey$Key;)Ljava/lang/Object;
+
+    move-result-object v3
+
+    sget-object v4, Ljp/co/sony/mc/camera/configuration/parameters/StreamingConnectMode;->FACEBOOK:Ljp/co/sony/mc/camera/configuration/parameters/StreamingConnectMode;
+
+    if-ne v3, v4, :cond_3
+
+    .line 6244
+    sget-object v3, Ljp/co/sony/mc/camera/rtmp/FacebookApi;->INSTANCE:Ljp/co/sony/mc/camera/rtmp/FacebookApi;
+
+    iget-object v4, p0, Ljp/co/sony/mc/camera/view/FragmentController$CameraOperatorImpl;->mController:Ljp/co/sony/mc/camera/view/FragmentController;
+
+    invoke-static {v4}, Ljp/co/sony/mc/camera/view/FragmentController;->-$$Nest$fgetmActivity(Ljp/co/sony/mc/camera/view/FragmentController;)Ljp/co/sony/mc/camera/CameraActivity;
+
+    move-result-object v4
+
+    invoke-virtual {v3, v4}, Ljp/co/sony/mc/camera/rtmp/FacebookApi;->initialize(Ljp/co/sony/mc/camera/CameraActivity;)V
+
+    goto :goto_0
+
+    .line 6246
+    :cond_2
+    invoke-virtual {v1}, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->isStreaming()Z
+
+    move-result v3
+
+    if-eqz v3, :cond_3
+
+    .line 6247
+    invoke-static {}, Ljp/co/sony/mc/camera/rtmp/NetworkManager;->getInstance()Ljp/co/sony/mc/camera/rtmp/NetworkManager;
+
+    move-result-object v3
+
+    invoke-virtual {v3}, Ljp/co/sony/mc/camera/rtmp/NetworkManager;->unregisterNetworkCallback()V
+
+    .line 6248
+    sget-object v3, Ljp/co/sony/mc/camera/rtmp/FacebookApi;->INSTANCE:Ljp/co/sony/mc/camera/rtmp/FacebookApi;
+
+    invoke-virtual {v3}, Ljp/co/sony/mc/camera/rtmp/FacebookApi;->destroy()V
+
+    .line 6250
+    :cond_3
+    :goto_0
+    sget-object v3, Ljp/co/sony/mc/camera/setting/CommonSettings;->CAMERA_ID:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
+
+    invoke-virtual {v0, v3}, Ljp/co/sony/mc/camera/setting/CameraProSetting;->get(Ljp/co/sony/mc/camera/setting/SettingKey$Key;)Ljava/lang/Object;
+
+    move-result-object v3
+
+    check-cast v3, Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;
+
+    .line 6251
+    invoke-virtual {v0}, Ljp/co/sony/mc/camera/setting/CameraProSetting;->getCurrentCameraId()Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;
+
+    move-result-object v4
+
+    .line 6253
+    invoke-virtual {v1}, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->isQuickRecord()Z
+
+    move-result v6
+
+    if-nez v6, :cond_4
+
+    invoke-virtual {p1}, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->isQuickRecord()Z
+
+    move-result v6
+
+    if-eqz v6, :cond_4
+
+    .line 6254
+    sget-object v6, Ljp/co/sony/mc/camera/setting/CommonSettings;->LAST_CAPTURING_MODE:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
+
+    invoke-virtual {v0, v6, v1, v5}, Ljp/co/sony/mc/camera/setting/CameraProSetting;->set(Ljp/co/sony/mc/camera/setting/SettingKey$Key;Ljava/lang/Object;Z)V
+
+    .line 6257
+    :cond_4
     iget-object v6, p0, Ljp/co/sony/mc/camera/view/FragmentController$CameraOperatorImpl;->mController:Ljp/co/sony/mc/camera/view/FragmentController;
 
-    invoke-static {v6}, Ljp/co/sony/mc/camera/view/FragmentController;->-$$Nest$mstopObjectTracking(Ljp/co/sony/mc/camera/view/FragmentController;)V
+    iget-object v7, p0, Ljp/co/sony/mc/camera/view/FragmentController$CameraOperatorImpl;->mFragmentManager:Landroidx/fragment/app/FragmentManager;
 
-    .line 6064
-    iget-object v6, p0, Ljp/co/sony/mc/camera/view/FragmentController$CameraOperatorImpl;->mController:Ljp/co/sony/mc/camera/view/FragmentController;
-
-    invoke-static {v6}, Ljp/co/sony/mc/camera/view/FragmentController;->-$$Nest$fgetmCameraOperator(Ljp/co/sony/mc/camera/view/FragmentController;)Ljp/co/sony/mc/camera/view/FragmentController$CameraOperatorImpl;
+    .line 6258
+    invoke-static {v6, v7}, Ljp/co/sony/mc/camera/view/FragmentController;->-$$Nest$mgetViewFinderFragment(Ljp/co/sony/mc/camera/view/FragmentController;Landroidx/fragment/app/FragmentManager;)Ljp/co/sony/mc/camera/view/fragment/ViewFinderFragment;
 
     move-result-object v6
 
-    invoke-virtual {v6, v5}, Ljp/co/sony/mc/camera/view/FragmentController$CameraOperatorImpl;->setFocusDistanceListenerEnabled(Z)V
+    .line 6259
+    sget-object v7, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->PHOTO_PRO_MR:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
-    .line 6066
-    iget-object v6, p0, Ljp/co/sony/mc/camera/view/FragmentController$CameraOperatorImpl;->mController:Ljp/co/sony/mc/camera/view/FragmentController;
+    if-ne v1, v7, :cond_5
 
-    invoke-virtual {v6, v3, v1, p1}, Ljp/co/sony/mc/camera/view/FragmentController;->isResetDefaultLens(Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;)Z
+    .line 6260
+    invoke-virtual {v6}, Ljp/co/sony/mc/camera/view/fragment/ViewFinderFragment;->clearTouchFocus()V
+
+    .line 6261
+    iget-object v7, p0, Ljp/co/sony/mc/camera/view/FragmentController$CameraOperatorImpl;->mCameraAccessor:Ljp/co/sony/mc/camera/CameraAccessor;
+
+    invoke-interface {v7}, Ljp/co/sony/mc/camera/CameraAccessor;->clearFocus()V
+
+    .line 6273
+    :cond_5
+    invoke-virtual {v1}, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->isGimbal()Z
+
+    move-result v7
+
+    if-eqz v7, :cond_6
+
+    .line 6274
+    sget-object v7, Ljp/co/sony/mc/camera/setting/CameraSettings;->AUTO_FRAMING_MODE:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
+
+    sget-object v8, Ljp/co/sony/mc/camera/configuration/parameters/AutoFramingMode;->OFF_KEEP_FRAMING_ASSIST:Ljp/co/sony/mc/camera/configuration/parameters/AutoFramingMode;
+
+    invoke-virtual {v0, v7, v8, v5}, Ljp/co/sony/mc/camera/setting/CameraProSetting;->set(Ljp/co/sony/mc/camera/setting/SettingKey$Key;Ljava/lang/Object;Z)V
+
+    .line 6278
+    :cond_6
+    iget-object v7, p0, Ljp/co/sony/mc/camera/view/FragmentController$CameraOperatorImpl;->mController:Ljp/co/sony/mc/camera/view/FragmentController;
+
+    invoke-static {v7}, Ljp/co/sony/mc/camera/view/FragmentController;->-$$Nest$mstopObjectTracking(Ljp/co/sony/mc/camera/view/FragmentController;)V
+
+    .line 6279
+    iget-object v7, p0, Ljp/co/sony/mc/camera/view/FragmentController$CameraOperatorImpl;->mController:Ljp/co/sony/mc/camera/view/FragmentController;
+
+    invoke-static {v7}, Ljp/co/sony/mc/camera/view/FragmentController;->-$$Nest$fgetmCameraOperator(Ljp/co/sony/mc/camera/view/FragmentController;)Ljp/co/sony/mc/camera/view/FragmentController$CameraOperatorImpl;
+
+    move-result-object v7
+
+    invoke-virtual {v7, v5}, Ljp/co/sony/mc/camera/view/FragmentController$CameraOperatorImpl;->setFocusDistanceListenerEnabled(Z)V
+
+    .line 6281
+    iget-object v7, p0, Ljp/co/sony/mc/camera/view/FragmentController$CameraOperatorImpl;->mController:Ljp/co/sony/mc/camera/view/FragmentController;
+
+    invoke-virtual {v7, v4, v1, p1}, Ljp/co/sony/mc/camera/view/FragmentController;->isResetDefaultLens(Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;)Z
+
+    move-result v4
+
+    if-eqz v4, :cond_8
+
+    .line 6283
+    invoke-virtual {v1}, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->isQuickRecord()Z
 
     move-result v3
 
     if-eqz v3, :cond_7
 
-    .line 6068
-    invoke-virtual {v1}, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->isQuickRecord()Z
-
-    move-result v2
-
-    if-eqz v2, :cond_6
-
     invoke-virtual {p1}, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->isPro()Z
-
-    move-result v2
-
-    if-eqz v2, :cond_6
-
-    .line 6069
-    iget-object v2, p0, Ljp/co/sony/mc/camera/view/FragmentController$CameraOperatorImpl;->mController:Ljp/co/sony/mc/camera/view/FragmentController;
-
-    sget-object v3, Ljp/co/sony/mc/camera/setting/CameraSettings;->ZOOM_RATIO:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
-
-    .line 6070
-    invoke-virtual {v0, v3}, Ljp/co/sony/mc/camera/setting/CameraProSetting;->get(Ljp/co/sony/mc/camera/setting/SettingKey$Key;)Ljava/lang/Object;
-
-    move-result-object v3
-
-    check-cast v3, Ljava/lang/Float;
-
-    invoke-virtual {v3}, Ljava/lang/Float;->floatValue()F
 
     move-result v3
 
-    .line 6069
-    invoke-virtual {v2, v3}, Ljp/co/sony/mc/camera/view/FragmentController;->getProCameraIdFromZoomRatio(F)Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;
+    if-eqz v3, :cond_7
 
-    move-result-object v2
+    .line 6284
+    iget-object v3, p0, Ljp/co/sony/mc/camera/view/FragmentController$CameraOperatorImpl;->mController:Ljp/co/sony/mc/camera/view/FragmentController;
+
+    sget-object v4, Ljp/co/sony/mc/camera/setting/CameraSettings;->ZOOM_RATIO:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
+
+    .line 6285
+    invoke-virtual {v0, v4}, Ljp/co/sony/mc/camera/setting/CameraProSetting;->get(Ljp/co/sony/mc/camera/setting/SettingKey$Key;)Ljava/lang/Object;
+
+    move-result-object v4
+
+    check-cast v4, Ljava/lang/Float;
+
+    invoke-virtual {v4}, Ljava/lang/Float;->floatValue()F
+
+    move-result v4
+
+    .line 6284
+    invoke-virtual {v3, v4}, Ljp/co/sony/mc/camera/view/FragmentController;->getProCameraIdFromZoomRatio(F)Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;
+
+    move-result-object v3
 
     goto :goto_1
 
-    .line 6072
-    :cond_6
-    invoke-virtual {p1}, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->getDefaultCameraId()Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;
-
-    move-result-object v2
-
-    .line 6090
+    .line 6287
     :cond_7
-    :goto_1
-    invoke-virtual {v0, p1, v2}, Ljp/co/sony/mc/camera/setting/CameraProSetting;->changeCameraSetting(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;)V
-
-    .line 6092
-    new-instance v2, Ljava/util/ArrayList;
-
-    invoke-direct {v2}, Ljava/util/ArrayList;-><init>()V
-
-    .line 6096
-    sget-object v3, Ljp/co/sony/mc/camera/setting/CameraSettings;->UI_ORIENTATION:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
-
-    iget-object v6, p0, Ljp/co/sony/mc/camera/view/FragmentController$CameraOperatorImpl;->mController:Ljp/co/sony/mc/camera/view/FragmentController;
-
-    .line 6097
-    invoke-static {v6}, Ljp/co/sony/mc/camera/view/FragmentController;->-$$Nest$mgetUiOrientation(Ljp/co/sony/mc/camera/view/FragmentController;)I
-
-    move-result v6
-
-    invoke-static {v6}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
-
-    move-result-object v6
-
-    .line 6096
-    invoke-static {v3, v6}, Landroid/util/Pair;->create(Ljava/lang/Object;Ljava/lang/Object;)Landroid/util/Pair;
+    invoke-virtual {p1}, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->getDefaultCameraId()Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;
 
     move-result-object v3
 
-    invoke-interface {v2, v3}, Ljava/util/List;->add(Ljava/lang/Object;)Z
+    .line 6305
+    :cond_8
+    :goto_1
+    invoke-virtual {v0, p1, v3}, Ljp/co/sony/mc/camera/setting/CameraProSetting;->changeCameraSetting(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;)V
 
-    .line 6098
+    .line 6307
+    new-instance v3, Ljava/util/ArrayList;
+
+    invoke-direct {v3}, Ljava/util/ArrayList;-><init>()V
+
+    .line 6311
+    sget-object v4, Ljp/co/sony/mc/camera/setting/CameraSettings;->UI_ORIENTATION:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
+
+    iget-object v7, p0, Ljp/co/sony/mc/camera/view/FragmentController$CameraOperatorImpl;->mController:Ljp/co/sony/mc/camera/view/FragmentController;
+
+    .line 6312
+    invoke-static {v7}, Ljp/co/sony/mc/camera/view/FragmentController;->-$$Nest$mgetUiOrientation(Ljp/co/sony/mc/camera/view/FragmentController;)I
+
+    move-result v7
+
+    invoke-static {v7}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v7
+
+    .line 6311
+    invoke-static {v4, v7}, Landroid/util/Pair;->create(Ljava/lang/Object;Ljava/lang/Object;)Landroid/util/Pair;
+
+    move-result-object v4
+
+    invoke-interface {v3, v4}, Ljava/util/List;->add(Ljava/lang/Object;)Z
+
+    .line 6313
     invoke-virtual {v1}, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->isQuickRecord()Z
 
-    move-result v3
+    move-result v4
 
-    const/4 v6, 0x1
-
-    if-nez v3, :cond_8
+    if-nez v4, :cond_9
 
     invoke-virtual {p1}, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->isQuickRecord()Z
 
-    move-result v3
+    move-result v4
 
-    if-nez v3, :cond_8
+    if-nez v4, :cond_9
 
-    .line 6099
-    sget-object v3, Ljp/co/sony/mc/camera/setting/CameraSettings;->WHITE_BALANCE:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
+    .line 6314
+    sget-object v4, Ljp/co/sony/mc/camera/setting/CameraSettings;->WHITE_BALANCE:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
 
-    invoke-virtual {v0, v3}, Ljp/co/sony/mc/camera/setting/CameraProSetting;->get(Ljp/co/sony/mc/camera/setting/SettingKey$Key;)Ljava/lang/Object;
+    invoke-virtual {v0, v4}, Ljp/co/sony/mc/camera/setting/CameraProSetting;->get(Ljp/co/sony/mc/camera/setting/SettingKey$Key;)Ljava/lang/Object;
 
-    move-result-object v3
+    move-result-object v4
 
-    check-cast v3, Ljp/co/sony/mc/camera/configuration/parameters/WhiteBalance;
+    check-cast v4, Ljp/co/sony/mc/camera/configuration/parameters/WhiteBalance;
 
-    .line 6100
+    .line 6315
     sget-object v7, Ljp/co/sony/mc/camera/setting/CameraSettings;->WB_EXTENSION_DATA:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
 
     invoke-virtual {v0, v7}, Ljp/co/sony/mc/camera/setting/CameraProSetting;->get(Ljp/co/sony/mc/camera/setting/SettingKey$Key;)Ljava/lang/Object;
@@ -1512,15 +1630,15 @@
 
     check-cast v7, Ljp/co/sony/mc/camera/configuration/parameters/WbExtensionData;
 
-    .line 6101
+    .line 6316
     sget-object v8, Ljp/co/sony/mc/camera/setting/CameraSettings;->AMBER_BLUE:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
 
-    .line 6102
-    invoke-virtual {v3}, Ljp/co/sony/mc/camera/configuration/parameters/WhiteBalance;->getValue()Ljava/lang/String;
+    .line 6317
+    invoke-virtual {v4}, Ljp/co/sony/mc/camera/configuration/parameters/WhiteBalance;->getValue()Ljava/lang/String;
 
     move-result-object v9
 
-    .line 6101
+    .line 6316
     invoke-virtual {v7, v9}, Ljp/co/sony/mc/camera/configuration/parameters/WbExtensionData;->getAbGmValue(Ljava/lang/String;)[F
 
     move-result-object v9
@@ -1535,59 +1653,59 @@
 
     move-result-object v8
 
-    invoke-interface {v2, v8}, Ljava/util/List;->add(Ljava/lang/Object;)Z
+    invoke-interface {v3, v8}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    .line 6103
+    .line 6318
     sget-object v8, Ljp/co/sony/mc/camera/setting/CameraSettings;->GREEN_MAGENTA:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
 
-    .line 6104
-    invoke-virtual {v3}, Ljp/co/sony/mc/camera/configuration/parameters/WhiteBalance;->getValue()Ljava/lang/String;
+    .line 6319
+    invoke-virtual {v4}, Ljp/co/sony/mc/camera/configuration/parameters/WhiteBalance;->getValue()Ljava/lang/String;
 
-    move-result-object v3
+    move-result-object v4
 
-    .line 6103
-    invoke-virtual {v7, v3}, Ljp/co/sony/mc/camera/configuration/parameters/WbExtensionData;->getAbGmValue(Ljava/lang/String;)[F
+    .line 6318
+    invoke-virtual {v7, v4}, Ljp/co/sony/mc/camera/configuration/parameters/WbExtensionData;->getAbGmValue(Ljava/lang/String;)[F
 
-    move-result-object v3
+    move-result-object v4
 
-    aget v3, v3, v6
+    aget v4, v4, v2
 
-    invoke-static {v3}, Ljava/lang/Float;->valueOf(F)Ljava/lang/Float;
+    invoke-static {v4}, Ljava/lang/Float;->valueOf(F)Ljava/lang/Float;
 
-    move-result-object v3
+    move-result-object v4
 
-    invoke-static {v8, v3}, Landroid/util/Pair;->create(Ljava/lang/Object;Ljava/lang/Object;)Landroid/util/Pair;
+    invoke-static {v8, v4}, Landroid/util/Pair;->create(Ljava/lang/Object;Ljava/lang/Object;)Landroid/util/Pair;
 
-    move-result-object v3
+    move-result-object v4
 
-    invoke-interface {v2, v3}, Ljava/util/List;->add(Ljava/lang/Object;)Z
+    invoke-interface {v3, v4}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    .line 6106
-    :cond_8
-    invoke-virtual {v0, v2}, Ljp/co/sony/mc/camera/setting/CameraProSetting;->createCameraSettingsHolder(Ljava/util/List;)Ljp/co/sony/mc/camera/setting/CameraSettingsHolder;
+    .line 6321
+    :cond_9
+    invoke-virtual {v0, v3}, Ljp/co/sony/mc/camera/setting/CameraProSetting;->createCameraSettingsHolder(Ljava/util/List;)Ljp/co/sony/mc/camera/setting/CameraSettingsHolder;
 
     move-result-object v0
 
-    .line 6108
-    iget-object v2, p0, Ljp/co/sony/mc/camera/view/FragmentController$CameraOperatorImpl;->mController:Ljp/co/sony/mc/camera/view/FragmentController;
+    .line 6323
+    iget-object v3, p0, Ljp/co/sony/mc/camera/view/FragmentController$CameraOperatorImpl;->mController:Ljp/co/sony/mc/camera/view/FragmentController;
 
-    sget-object v3, Ljp/co/sony/mc/camera/view/FragmentController$CallbackType;->MODE_CHANGE:Ljp/co/sony/mc/camera/view/FragmentController$CallbackType;
+    sget-object v4, Ljp/co/sony/mc/camera/view/FragmentController$CallbackType;->MODE_CHANGE:Ljp/co/sony/mc/camera/view/FragmentController$CallbackType;
 
     const/4 v7, 0x0
 
-    invoke-static {v2, v0, v3, v7}, Ljp/co/sony/mc/camera/view/FragmentController;->-$$Nest$mswitchModeAndCamera(Ljp/co/sony/mc/camera/view/FragmentController;Ljp/co/sony/mc/camera/setting/CameraSettingsHolder;Ljp/co/sony/mc/camera/view/FragmentController$CallbackType;Ljp/co/sony/mc/camera/view/FragmentController$StartupAction;)V
+    invoke-static {v3, v0, v4, v7}, Ljp/co/sony/mc/camera/view/FragmentController;->-$$Nest$mswitchModeAndCamera(Ljp/co/sony/mc/camera/view/FragmentController;Ljp/co/sony/mc/camera/setting/CameraSettingsHolder;Ljp/co/sony/mc/camera/view/FragmentController$CallbackType;Ljp/co/sony/mc/camera/view/FragmentController$StartupAction;)V
 
-    .line 6109
+    .line 6324
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/FragmentController$CameraOperatorImpl;->mController:Ljp/co/sony/mc/camera/view/FragmentController;
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/view/FragmentController;->-$$Nest$mswitchFaceDetection(Ljp/co/sony/mc/camera/view/FragmentController;)V
 
-    .line 6110
+    .line 6325
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/FragmentController$CameraOperatorImpl;->mCameraAccessor:Ljp/co/sony/mc/camera/CameraAccessor;
 
     invoke-interface {v0}, Ljp/co/sony/mc/camera/CameraAccessor;->enableYuvFrameDrawMode()V
 
-    .line 6111
+    .line 6326
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/FragmentController$CameraOperatorImpl;->mController:Ljp/co/sony/mc/camera/view/FragmentController;
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/view/FragmentController;->-$$Nest$fgetmExternalDisplayFragment(Ljp/co/sony/mc/camera/view/FragmentController;)Ljp/co/sony/mc/camera/view/fragment/ExternalDisplayFragment;
@@ -1596,56 +1714,45 @@
 
     invoke-virtual {v0, p1}, Ljp/co/sony/mc/camera/view/fragment/ExternalDisplayFragment;->notifyCapturingModeChanged(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;)V
 
-    .line 6112
-    iget-object v0, p0, Ljp/co/sony/mc/camera/view/FragmentController$CameraOperatorImpl;->mCameraAccessor:Ljp/co/sony/mc/camera/CameraAccessor;
-
-    invoke-virtual {p1}, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->isBasicLayoutMode()Z
-
-    move-result v2
-
-    xor-int/2addr v2, v6
-
-    invoke-interface {v0, v2}, Ljp/co/sony/mc/camera/CameraAccessor;->requestHighPerformanceMode(Z)V
-
-    .line 6113
+    .line 6327
     invoke-virtual {v1}, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->isPro()Z
 
     move-result v0
 
-    if-eqz v0, :cond_9
+    if-eqz v0, :cond_a
 
     invoke-virtual {p1}, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->isBasicLayoutMode()Z
 
     move-result v0
 
-    if-nez v0, :cond_a
+    if-nez v0, :cond_b
 
-    .line 6114
-    :cond_9
+    .line 6328
+    :cond_a
     invoke-virtual {v1}, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->isBasicLayoutMode()Z
 
     move-result v0
 
-    if-eqz v0, :cond_b
+    if-eqz v0, :cond_c
 
     invoke-virtual {p1}, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->isPro()Z
 
     move-result v0
 
-    if-eqz v0, :cond_b
+    if-eqz v0, :cond_c
 
-    .line 6115
-    :cond_a
-    invoke-virtual {v4, v5}, Ljp/co/sony/mc/camera/view/fragment/ViewFinderFragment;->setRectanglesVisibility(I)V
+    .line 6329
+    :cond_b
+    invoke-virtual {v6, v5}, Ljp/co/sony/mc/camera/view/fragment/ViewFinderFragment;->setRectanglesVisibility(I)V
 
-    .line 6116
+    .line 6330
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/FragmentController$CameraOperatorImpl;->mController:Ljp/co/sony/mc/camera/view/FragmentController;
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/view/FragmentController;->-$$Nest$fgetmActivity(Ljp/co/sony/mc/camera/view/FragmentController;)Ljp/co/sony/mc/camera/CameraActivity;
 
     move-result-object v0
 
-    .line 6117
+    .line 6331
     invoke-virtual {v0}, Ljp/co/sony/mc/camera/CameraActivity;->getWindow()Landroid/view/Window;
 
     move-result-object v0
@@ -1654,53 +1761,82 @@
 
     move-result-object v0
 
-    .line 6116
+    .line 6330
     invoke-static {v0}, Ljp/co/sony/mc/camera/view/LayoutDependencyResolver;->requestToRemoveSystemUi(Landroid/view/View;)V
 
-    .line 6118
+    .line 6332
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/FragmentController$CameraOperatorImpl;->mController:Ljp/co/sony/mc/camera/view/FragmentController;
 
-    sget-object v2, Ljp/co/sony/mc/camera/view/FragmentController$CameraState;->OPENING:Ljp/co/sony/mc/camera/view/FragmentController$CameraState;
+    sget-object v3, Ljp/co/sony/mc/camera/view/FragmentController$CameraState;->OPENING:Ljp/co/sony/mc/camera/view/FragmentController$CameraState;
 
-    invoke-static {v0, v2}, Ljp/co/sony/mc/camera/view/FragmentController;->-$$Nest$mchangeCameraStateTo(Ljp/co/sony/mc/camera/view/FragmentController;Ljp/co/sony/mc/camera/view/FragmentController$CameraState;)V
+    invoke-static {v0, v3}, Ljp/co/sony/mc/camera/view/FragmentController;->-$$Nest$mchangeCameraStateTo(Ljp/co/sony/mc/camera/view/FragmentController;Ljp/co/sony/mc/camera/view/FragmentController$CameraState;)V
 
     goto :goto_2
 
-    .line 6119
-    :cond_b
+    .line 6333
+    :cond_c
     invoke-virtual {v1}, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->isBokeh()Z
 
     move-result v0
 
     invoke-virtual {p1}, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->isBokeh()Z
 
-    move-result v2
+    move-result v3
 
-    if-eq v0, v2, :cond_c
+    if-eq v0, v3, :cond_d
 
-    .line 6120
+    .line 6334
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/FragmentController$CameraOperatorImpl;->mController:Ljp/co/sony/mc/camera/view/FragmentController;
 
-    sget-object v2, Ljp/co/sony/mc/camera/view/FragmentController$CameraState;->OPENING:Ljp/co/sony/mc/camera/view/FragmentController$CameraState;
+    sget-object v3, Ljp/co/sony/mc/camera/view/FragmentController$CameraState;->OPENING:Ljp/co/sony/mc/camera/view/FragmentController$CameraState;
 
-    invoke-static {v0, v2}, Ljp/co/sony/mc/camera/view/FragmentController;->-$$Nest$mchangeCameraStateTo(Ljp/co/sony/mc/camera/view/FragmentController;Ljp/co/sony/mc/camera/view/FragmentController$CameraState;)V
+    invoke-static {v0, v3}, Ljp/co/sony/mc/camera/view/FragmentController;->-$$Nest$mchangeCameraStateTo(Ljp/co/sony/mc/camera/view/FragmentController;Ljp/co/sony/mc/camera/view/FragmentController$CameraState;)V
 
-    .line 6123
-    :cond_c
+    .line 6337
+    :cond_d
     :goto_2
     invoke-virtual {v1}, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->isProPhoto()Z
 
     move-result v0
 
-    if-eqz v0, :cond_d
+    if-eqz v0, :cond_e
 
     invoke-virtual {p1}, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->isProPhoto()Z
 
     move-result v0
 
-    if-nez v0, :cond_d
+    if-eqz v0, :cond_10
 
-    .line 6124
+    .line 6338
+    :cond_e
+    invoke-virtual {v1}, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->isAutoFraming()Z
+
+    move-result v0
+
+    if-eqz v0, :cond_f
+
+    invoke-virtual {p1}, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->isAutoFraming()Z
+
+    move-result v0
+
+    if-eqz v0, :cond_10
+
+    .line 6339
+    :cond_f
+    invoke-virtual {v1}, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->isGimbal()Z
+
+    move-result v0
+
+    if-eqz v0, :cond_12
+
+    invoke-virtual {p1}, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->isGimbal()Z
+
+    move-result v0
+
+    if-nez v0, :cond_12
+
+    .line 6340
+    :cond_10
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/FragmentController$CameraOperatorImpl;->mController:Ljp/co/sony/mc/camera/view/FragmentController;
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/view/FragmentController;->-$$Nest$fgetmActivity(Ljp/co/sony/mc/camera/view/FragmentController;)Ljp/co/sony/mc/camera/CameraActivity;
@@ -1711,9 +1847,9 @@
 
     move-result v0
 
-    if-nez v0, :cond_d
+    if-nez v0, :cond_12
 
-    .line 6125
+    .line 6341
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/FragmentController$CameraOperatorImpl;->mController:Ljp/co/sony/mc/camera/view/FragmentController;
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/view/FragmentController;->-$$Nest$fgetmActivity(Ljp/co/sony/mc/camera/view/FragmentController;)Ljp/co/sony/mc/camera/CameraActivity;
@@ -1724,24 +1860,47 @@
 
     move-result v0
 
-    if-eqz v0, :cond_d
+    if-nez v0, :cond_11
 
-    .line 6126
+    iget-object v0, p0, Ljp/co/sony/mc/camera/view/FragmentController$CameraOperatorImpl;->mController:Ljp/co/sony/mc/camera/view/FragmentController;
+
+    invoke-static {v0}, Ljp/co/sony/mc/camera/view/FragmentController;->-$$Nest$fgetmActivity(Ljp/co/sony/mc/camera/view/FragmentController;)Ljp/co/sony/mc/camera/CameraActivity;
+
+    move-result-object v0
+
+    .line 6342
+    invoke-virtual {v0}, Ljp/co/sony/mc/camera/CameraActivity;->isThermalWarningExtraState()Z
+
+    move-result v0
+
+    if-eqz v0, :cond_12
+
+    .line 6343
+    :cond_11
+    iget-object v0, p0, Ljp/co/sony/mc/camera/view/FragmentController$CameraOperatorImpl;->mController:Ljp/co/sony/mc/camera/view/FragmentController;
+
+    invoke-static {v0}, Ljp/co/sony/mc/camera/view/FragmentController;->-$$Nest$fgetmActivity(Ljp/co/sony/mc/camera/view/FragmentController;)Ljp/co/sony/mc/camera/CameraActivity;
+
+    move-result-object v0
+
+    invoke-virtual {v0, v2}, Ljp/co/sony/mc/camera/CameraActivity;->setUltraLowPowerMode(Z)V
+
+    .line 6344
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/FragmentController$CameraOperatorImpl;->mController:Ljp/co/sony/mc/camera/view/FragmentController;
 
-    invoke-static {p0}, Ljp/co/sony/mc/camera/view/FragmentController;->-$$Nest$fgetmActivity(Ljp/co/sony/mc/camera/view/FragmentController;)Ljp/co/sony/mc/camera/CameraActivity;
+    invoke-static {p0}, Ljp/co/sony/mc/camera/view/FragmentController;->-$$Nest$fgetmCameraEventNotifier(Ljp/co/sony/mc/camera/view/FragmentController;)Ljp/co/sony/mc/camera/view/CameraEventListener;
 
     move-result-object p0
 
-    invoke-virtual {p0, v6}, Ljp/co/sony/mc/camera/CameraActivity;->setUltraLowPowerMode(Z)V
+    invoke-interface {p0}, Ljp/co/sony/mc/camera/view/CameraEventListener;->onChangeToCoolMode()V
 
-    .line 6131
-    :cond_d
+    .line 6349
+    :cond_12
     sget-object p0, Ljp/co/sony/mc/camera/idd/event/IddContext;->INSTANCE:Ljp/co/sony/mc/camera/idd/event/IddContext;
 
     invoke-virtual {p0, p1}, Ljp/co/sony/mc/camera/idd/event/IddContext;->mode(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;)Ljp/co/sony/mc/camera/idd/event/IddContext;
 
-    .line 6132
+    .line 6350
     new-instance p0, Ljp/co/sony/mc/camera/idd/event/IddSettingEvent;
 
     invoke-direct {p0}, Ljp/co/sony/mc/camera/idd/event/IddSettingEvent;-><init>()V
@@ -1754,12 +1913,12 @@
 
     sget-object p1, Ljp/co/sony/mc/camera/setting/CommonSettings;->CAPTURING_MODE:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
 
-    .line 6133
+    .line 6351
     invoke-virtual {p0, p1}, Ljp/co/sony/mc/camera/idd/event/IddSettingEvent;->setting(Ljp/co/sony/mc/camera/setting/SettingKey$Key;)Ljp/co/sony/mc/camera/idd/event/IddSettingEvent;
 
     move-result-object p0
 
-    .line 6134
+    .line 6352
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/idd/event/IddSettingEvent;->send()V
 
     return-void
@@ -1768,7 +1927,7 @@
 .method public setFacebookAccount()V
     .locals 0
 
-    .line 6349
+    .line 6572
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/FragmentController$CameraOperatorImpl;->mController:Ljp/co/sony/mc/camera/view/FragmentController;
 
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/view/FragmentController;->setFacebookAccount()V
@@ -1779,7 +1938,7 @@
 .method public setFacebookLive()V
     .locals 0
 
-    .line 6354
+    .line 6577
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/FragmentController$CameraOperatorImpl;->mController:Ljp/co/sony/mc/camera/view/FragmentController;
 
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/view/FragmentController;->setFacebookLive()V
@@ -1794,7 +1953,7 @@
 
     if-eqz p1, :cond_1
 
-    .line 6446
+    .line 6669
     iget-object p1, p0, Ljp/co/sony/mc/camera/view/FragmentController$CameraOperatorImpl;->mController:Ljp/co/sony/mc/camera/view/FragmentController;
 
     invoke-static {p1}, Ljp/co/sony/mc/camera/view/FragmentController;->-$$Nest$fgetmFocusDistanceListener(Ljp/co/sony/mc/camera/view/FragmentController;)Ljp/co/sony/mc/camera/CameraStatusNotifier$FocusDistanceListener;
@@ -1803,7 +1962,7 @@
 
     if-nez p1, :cond_0
 
-    .line 6447
+    .line 6670
     iget-object p1, p0, Ljp/co/sony/mc/camera/view/FragmentController$CameraOperatorImpl;->mController:Ljp/co/sony/mc/camera/view/FragmentController;
 
     new-instance v1, Ljp/co/sony/mc/camera/view/FragmentController$FocusDistanceListenerImpl;
@@ -1812,7 +1971,7 @@
 
     invoke-static {p1, v1}, Ljp/co/sony/mc/camera/view/FragmentController;->-$$Nest$fputmFocusDistanceListener(Ljp/co/sony/mc/camera/view/FragmentController;Ljp/co/sony/mc/camera/CameraStatusNotifier$FocusDistanceListener;)V
 
-    .line 6449
+    .line 6672
     :cond_0
     iget-object p1, p0, Ljp/co/sony/mc/camera/view/FragmentController$CameraOperatorImpl;->mCameraAccessor:Ljp/co/sony/mc/camera/CameraAccessor;
 
@@ -1826,7 +1985,7 @@
 
     goto :goto_0
 
-    .line 6451
+    .line 6674
     :cond_1
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/FragmentController$CameraOperatorImpl;->mCameraAccessor:Ljp/co/sony/mc/camera/CameraAccessor;
 
@@ -1839,7 +1998,7 @@
 .method public setFocusMagnificationPosition(Landroid/graphics/Point;)V
     .locals 0
 
-    .line 6522
+    .line 6745
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/FragmentController$CameraOperatorImpl;->mController:Ljp/co/sony/mc/camera/view/FragmentController;
 
     invoke-static {p0, p1}, Ljp/co/sony/mc/camera/view/FragmentController;->-$$Nest$msetFocusMagnificationPosition(Ljp/co/sony/mc/camera/view/FragmentController;Landroid/graphics/Point;)V
@@ -1861,7 +2020,7 @@
         }
     .end annotation
 
-    .line 5813
+    .line 5995
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/view/FragmentController$CameraOperatorImpl;->canSetLens()Z
 
     move-result v0
@@ -1872,13 +2031,13 @@
 
     return v1
 
-    .line 5816
+    .line 5998
     :cond_0
     invoke-static {}, Ljp/co/sony/mc/camera/setting/CameraProSetting;->getInstance()Ljp/co/sony/mc/camera/setting/CameraProSetting;
 
     move-result-object v0
 
-    .line 5817
+    .line 5999
     sget-object v2, Ljp/co/sony/mc/camera/setting/CommonSettings;->CAPTURING_MODE:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
 
     invoke-virtual {v0, v2}, Ljp/co/sony/mc/camera/setting/CameraProSetting;->get(Ljp/co/sony/mc/camera/setting/SettingKey$Key;)Ljava/lang/Object;
@@ -1887,7 +2046,7 @@
 
     check-cast v2, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
-    .line 5818
+    .line 6000
     sget-object v3, Ljp/co/sony/mc/camera/setting/CameraSettings;->HYBRID_ZOOM:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
 
     invoke-virtual {v0, v3}, Ljp/co/sony/mc/camera/setting/CameraProSetting;->get(Ljp/co/sony/mc/camera/setting/SettingKey$Key;)Ljava/lang/Object;
@@ -1896,19 +2055,19 @@
 
     check-cast v3, Ljp/co/sony/mc/camera/configuration/parameters/HybridZoom;
 
-    .line 5819
+    .line 6001
     iget-object v4, p0, Ljp/co/sony/mc/camera/view/FragmentController$CameraOperatorImpl;->mController:Ljp/co/sony/mc/camera/view/FragmentController;
 
     invoke-static {v4}, Ljp/co/sony/mc/camera/view/FragmentController;->-$$Nest$mstopObjectTracking(Ljp/co/sony/mc/camera/view/FragmentController;)V
 
-    .line 5833
+    .line 6015
     iget-object v4, p1, Landroid/util/Pair;->first:Ljava/lang/Object;
 
     check-cast v4, Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;
 
     invoke-virtual {v0, v2, v4}, Ljp/co/sony/mc/camera/setting/CameraProSetting;->changeCameraSetting(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;)V
 
-    .line 5834
+    .line 6016
     sget-object v4, Ljp/co/sony/mc/camera/setting/CameraSettings;->BASE_ZOOM_RATIO:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
 
     iget-object v5, p1, Landroid/util/Pair;->second:Ljava/lang/Object;
@@ -1917,7 +2076,7 @@
 
     invoke-virtual {v0, v4, v5, v1}, Ljp/co/sony/mc/camera/setting/CameraProSetting;->set(Ljp/co/sony/mc/camera/setting/SettingKey$Key;Ljava/lang/Object;Z)V
 
-    .line 5835
+    .line 6017
     sget-object v4, Ljp/co/sony/mc/camera/setting/CameraSettings;->CAPTURE_FPS:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
 
     invoke-virtual {v0, v4}, Ljp/co/sony/mc/camera/setting/CameraProSetting;->get(Ljp/co/sony/mc/camera/setting/SettingKey$Key;)Ljava/lang/Object;
@@ -1930,7 +2089,7 @@
 
     move-result v4
 
-    .line 5836
+    .line 6018
     sget-object v5, Ljp/co/sony/mc/camera/setting/CameraSettings;->VIDEO_MF_HDR:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
 
     invoke-virtual {v0, v5}, Ljp/co/sony/mc/camera/setting/CameraProSetting;->get(Ljp/co/sony/mc/camera/setting/SettingKey$Key;)Ljava/lang/Object;
@@ -1939,7 +2098,7 @@
 
     check-cast v5, Ljp/co/sony/mc/camera/configuration/parameters/VideoMfHdr;
 
-    .line 5837
+    .line 6019
     iget-object v6, p1, Landroid/util/Pair;->first:Ljava/lang/Object;
 
     check-cast v6, Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;
@@ -1958,7 +2117,7 @@
 
     if-eqz v6, :cond_1
 
-    .line 5838
+    .line 6020
     invoke-virtual {v5}, Ljp/co/sony/mc/camera/configuration/parameters/VideoMfHdr;->getBooleanValue()Z
 
     move-result v5
@@ -1967,7 +2126,7 @@
 
     if-nez v4, :cond_1
 
-    .line 5839
+    .line 6021
     sget-object v4, Ljp/co/sony/mc/camera/setting/CameraSettings;->HYBRID_ZOOM:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
 
     sget-object v5, Ljp/co/sony/mc/camera/configuration/parameters/HybridZoom;->AUTO:Ljp/co/sony/mc/camera/configuration/parameters/HybridZoom;
@@ -1976,7 +2135,7 @@
 
     goto :goto_0
 
-    .line 5841
+    .line 6023
     :cond_1
     sget-object v4, Ljp/co/sony/mc/camera/setting/CameraSettings;->HYBRID_ZOOM:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
 
@@ -1984,7 +2143,7 @@
 
     invoke-virtual {v0, v4, v5, v1}, Ljp/co/sony/mc/camera/setting/CameraProSetting;->set(Ljp/co/sony/mc/camera/setting/SettingKey$Key;Ljava/lang/Object;Z)V
 
-    .line 5848
+    .line 6030
     :goto_0
     sget-object v4, Ljp/co/sony/mc/camera/setting/CameraSettings;->HYBRID_ZOOM:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
 
@@ -1996,7 +2155,7 @@
 
     if-eq v4, v3, :cond_2
 
-    .line 5850
+    .line 6032
     sget-object v3, Ljp/co/sony/mc/camera/setting/CameraSettings;->ISO:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
 
     sget-object v4, Ljp/co/sony/mc/camera/setting/CameraSettings;->ISO:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
@@ -2009,18 +2168,18 @@
 
     invoke-virtual {v0, v3, v4, v1}, Ljp/co/sony/mc/camera/setting/CameraProSetting;->set(Ljp/co/sony/mc/camera/setting/SettingKey$Key;Ljava/lang/Object;Z)V
 
-    .line 5852
+    .line 6034
     :cond_2
     sget-object v3, Ljp/co/sony/mc/camera/setting/CameraSettings;->ZOOM_RATIO:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
 
     invoke-virtual {v0, v3, p2, v1}, Ljp/co/sony/mc/camera/setting/CameraProSetting;->set(Ljp/co/sony/mc/camera/setting/SettingKey$Key;Ljava/lang/Object;Z)V
 
-    .line 5853
+    .line 6035
     invoke-virtual {v0}, Ljp/co/sony/mc/camera/setting/CameraProSetting;->createCameraSettingsHolder()Ljp/co/sony/mc/camera/setting/CameraSettingsHolder;
 
     move-result-object p2
 
-    .line 5855
+    .line 6037
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/FragmentController$CameraOperatorImpl;->mController:Ljp/co/sony/mc/camera/view/FragmentController;
 
     invoke-virtual {v0}, Ljp/co/sony/mc/camera/view/FragmentController;->isRecording()Z
@@ -2031,7 +2190,7 @@
 
     const/4 v4, 0x0
 
-    if-eqz v0, :cond_5
+    if-eqz v0, :cond_4
 
     invoke-virtual {v2}, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->isStreaming()Z
 
@@ -2039,35 +2198,47 @@
 
     if-nez v0, :cond_3
 
-    goto :goto_2
+    goto :goto_1
 
-    .line 5864
+    .line 6045
     :cond_3
-    invoke-virtual {v2}, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->isVideo()Z
-
-    move-result v0
-
-    if-eqz v0, :cond_4
-
-    .line 5865
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/FragmentController$CameraOperatorImpl;->mController:Ljp/co/sony/mc/camera/view/FragmentController;
 
-    invoke-static {v0, p2}, Ljp/co/sony/mc/camera/view/FragmentController;->-$$Nest$mcreateRecordingProfile(Ljp/co/sony/mc/camera/view/FragmentController;Ljp/co/sony/mc/camera/setting/CameraSettingsHolder;)Ljp/co/sony/mc/camera/recorder/RecordingProfile;
+    invoke-static {v0}, Ljp/co/sony/mc/camera/view/FragmentController;->-$$Nest$fgetmLastRecordingProfiles(Ljp/co/sony/mc/camera/view/FragmentController;)Ljava/util/LinkedList;
 
     move-result-object v0
 
-    goto :goto_1
+    invoke-virtual {v0}, Ljava/util/LinkedList;->clear()V
 
-    :cond_4
-    move-object v0, v4
+    .line 6046
+    iget-object v0, p0, Ljp/co/sony/mc/camera/view/FragmentController$CameraOperatorImpl;->mController:Ljp/co/sony/mc/camera/view/FragmentController;
 
-    .line 5867
-    :goto_1
-    iget-object v1, p0, Ljp/co/sony/mc/camera/view/FragmentController$CameraOperatorImpl;->mCameraAccessor:Ljp/co/sony/mc/camera/CameraAccessor;
+    invoke-static {v0}, Ljp/co/sony/mc/camera/view/FragmentController;->-$$Nest$fgetmLastRecordingProfiles(Ljp/co/sony/mc/camera/view/FragmentController;)Ljava/util/LinkedList;
 
-    invoke-interface {v1, v0}, Ljp/co/sony/mc/camera/CameraAccessor;->setRecordingProfile(Ljp/co/sony/mc/camera/recorder/RecordingProfile;)V
+    move-result-object v0
 
-    .line 5868
+    iget-object v1, p0, Ljp/co/sony/mc/camera/view/FragmentController$CameraOperatorImpl;->mController:Ljp/co/sony/mc/camera/view/FragmentController;
+
+    .line 6047
+    invoke-static {v1, p2}, Ljp/co/sony/mc/camera/view/FragmentController;->-$$Nest$mcreateRecordingProfile(Ljp/co/sony/mc/camera/view/FragmentController;Ljp/co/sony/mc/camera/setting/CameraSettingsHolder;)Ljava/util/LinkedList;
+
+    move-result-object v1
+
+    .line 6046
+    invoke-virtual {v0, v1}, Ljava/util/LinkedList;->addAll(Ljava/util/Collection;)Z
+
+    .line 6049
+    iget-object v0, p0, Ljp/co/sony/mc/camera/view/FragmentController$CameraOperatorImpl;->mCameraAccessor:Ljp/co/sony/mc/camera/CameraAccessor;
+
+    iget-object v1, p0, Ljp/co/sony/mc/camera/view/FragmentController$CameraOperatorImpl;->mController:Ljp/co/sony/mc/camera/view/FragmentController;
+
+    invoke-static {v1}, Ljp/co/sony/mc/camera/view/FragmentController;->-$$Nest$fgetmLastRecordingProfiles(Ljp/co/sony/mc/camera/view/FragmentController;)Ljava/util/LinkedList;
+
+    move-result-object v1
+
+    invoke-interface {v0, v1}, Ljp/co/sony/mc/camera/CameraAccessor;->setRecordingProfiles(Ljava/util/List;)V
+
+    .line 6050
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/FragmentController$CameraOperatorImpl;->mCameraAccessor:Ljp/co/sony/mc/camera/CameraAccessor;
 
     new-instance v1, Ljp/co/sony/mc/camera/view/FragmentController$ModeAndCameraSwitchCallbackImpl;
@@ -2084,7 +2255,7 @@
 
     invoke-interface {v0, p2, v1, p1}, Ljp/co/sony/mc/camera/CameraAccessor;->switchLensDuringStreaming(Ljp/co/sony/mc/camera/setting/CameraSettingsHolder;Ljp/co/sony/mc/camera/CameraAccessor$ModeAndCameraSwitchCallback;Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;)V
 
-    .line 5871
+    .line 6053
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/FragmentController$CameraOperatorImpl;->mController:Ljp/co/sony/mc/camera/view/FragmentController;
 
     invoke-static {p0}, Ljp/co/sony/mc/camera/view/FragmentController;->-$$Nest$fgetmCameraEventNotifier(Ljp/co/sony/mc/camera/view/FragmentController;)Ljp/co/sony/mc/camera/view/CameraEventListener;
@@ -2093,11 +2264,11 @@
 
     invoke-interface {p0, v3}, Ljp/co/sony/mc/camera/view/CameraEventListener;->onLensChange(Z)V
 
-    goto :goto_3
+    goto :goto_2
 
-    .line 5857
-    :cond_5
-    :goto_2
+    .line 6039
+    :cond_4
+    :goto_1
     iget-object p1, p0, Ljp/co/sony/mc/camera/view/FragmentController$CameraOperatorImpl;->mController:Ljp/co/sony/mc/camera/view/FragmentController;
 
     invoke-static {p1}, Ljp/co/sony/mc/camera/view/FragmentController;->-$$Nest$fgetmCameraOperator(Ljp/co/sony/mc/camera/view/FragmentController;)Ljp/co/sony/mc/camera/view/FragmentController$CameraOperatorImpl;
@@ -2106,28 +2277,28 @@
 
     invoke-virtual {p1, v1}, Ljp/co/sony/mc/camera/view/FragmentController$CameraOperatorImpl;->setFocusDistanceListenerEnabled(Z)V
 
-    .line 5858
+    .line 6040
     iget-object p1, p0, Ljp/co/sony/mc/camera/view/FragmentController$CameraOperatorImpl;->mController:Ljp/co/sony/mc/camera/view/FragmentController;
 
     sget-object v0, Ljp/co/sony/mc/camera/view/FragmentController$CameraState;->OPENING:Ljp/co/sony/mc/camera/view/FragmentController$CameraState;
 
     invoke-static {p1, v0}, Ljp/co/sony/mc/camera/view/FragmentController;->-$$Nest$mchangeCameraStateTo(Ljp/co/sony/mc/camera/view/FragmentController;Ljp/co/sony/mc/camera/view/FragmentController$CameraState;)V
 
-    .line 5859
+    .line 6041
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/FragmentController$CameraOperatorImpl;->mController:Ljp/co/sony/mc/camera/view/FragmentController;
 
     sget-object p1, Ljp/co/sony/mc/camera/view/FragmentController$CallbackType;->LENS_CHANGE:Ljp/co/sony/mc/camera/view/FragmentController$CallbackType;
 
     invoke-static {p0, p2, p1, v4}, Ljp/co/sony/mc/camera/view/FragmentController;->-$$Nest$mswitchModeAndCamera(Ljp/co/sony/mc/camera/view/FragmentController;Ljp/co/sony/mc/camera/setting/CameraSettingsHolder;Ljp/co/sony/mc/camera/view/FragmentController$CallbackType;Ljp/co/sony/mc/camera/view/FragmentController$StartupAction;)V
 
-    :goto_3
+    :goto_2
     return v3
 .end method
 
 .method public setPoseRotationListener(Ljp/co/sony/mc/camera/CameraStatusNotifier$PoseRotationResultListener;)V
     .locals 0
 
-    .line 6467
+    .line 6690
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/FragmentController$CameraOperatorImpl;->mCameraAccessor:Ljp/co/sony/mc/camera/CameraAccessor;
 
     invoke-interface {p0, p1}, Ljp/co/sony/mc/camera/CameraAccessor;->setPoseRotationListener(Ljp/co/sony/mc/camera/CameraStatusNotifier$PoseRotationResultListener;)V
@@ -2140,7 +2311,7 @@
 
     if-eqz p1, :cond_0
 
-    .line 6424
+    .line 6647
     iget-object p1, p0, Ljp/co/sony/mc/camera/view/FragmentController$CameraOperatorImpl;->mController:Ljp/co/sony/mc/camera/view/FragmentController;
 
     invoke-static {p1}, Ljp/co/sony/mc/camera/view/FragmentController;->-$$Nest$fgetmGestureShutter(Ljp/co/sony/mc/camera/view/FragmentController;)Ljp/co/sony/mc/camera/view/GestureShutter;
@@ -2149,14 +2320,14 @@
 
     invoke-virtual {p1}, Ljp/co/sony/mc/camera/view/GestureShutter;->stopGestureShutter()V
 
-    .line 6425
+    .line 6648
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/FragmentController$CameraOperatorImpl;->mCameraAccessor:Ljp/co/sony/mc/camera/CameraAccessor;
 
     invoke-interface {p0}, Ljp/co/sony/mc/camera/CameraAccessor;->setUltraLowPowerMode()V
 
     goto :goto_0
 
-    .line 6427
+    .line 6650
     :cond_0
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/FragmentController$CameraOperatorImpl;->mCameraAccessor:Ljp/co/sony/mc/camera/CameraAccessor;
 
@@ -2169,7 +2340,7 @@
 .method public setRtmpStreamKey()V
     .locals 0
 
-    .line 6369
+    .line 6592
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/FragmentController$CameraOperatorImpl;->mController:Ljp/co/sony/mc/camera/view/FragmentController;
 
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/view/FragmentController;->setRtmpStreamKey()V
@@ -2180,7 +2351,7 @@
 .method public setRtmpStreamUrl()V
     .locals 0
 
-    .line 6364
+    .line 6587
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/FragmentController$CameraOperatorImpl;->mController:Ljp/co/sony/mc/camera/view/FragmentController;
 
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/view/FragmentController;->setRtmpStreamUrl()V
@@ -2200,14 +2371,14 @@
         }
     .end annotation
 
-    .line 5878
+    .line 6060
     invoke-static {}, Ljp/co/sony/mc/camera/setting/CameraProSetting;->getInstance()Ljp/co/sony/mc/camera/setting/CameraProSetting;
 
     move-result-object v0
 
-    if-eqz p2, :cond_20
+    if-eqz p2, :cond_22
 
-    .line 5879
+    .line 6061
     invoke-virtual {v0, p1}, Ljp/co/sony/mc/camera/setting/CameraProSetting;->get(Ljp/co/sony/mc/camera/setting/SettingKey$Key;)Ljava/lang/Object;
 
     move-result-object v1
@@ -2220,7 +2391,7 @@
 
     goto/16 :goto_5
 
-    .line 5883
+    .line 6065
     :cond_0
     invoke-static {}, Ljp/co/sony/mc/camera/setting/CameraProSetting;->getInstance()Ljp/co/sony/mc/camera/setting/CameraProSetting;
 
@@ -2230,12 +2401,12 @@
 
     move-result-object v1
 
-    .line 5885
+    .line 6067
     sget-object v2, Ljp/co/sony/mc/camera/setting/CameraSettings;->VIDEO_FPS:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
 
     if-ne p1, v2, :cond_1
 
-    .line 5886
+    .line 6068
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/FragmentController$CameraOperatorImpl;->mController:Ljp/co/sony/mc/camera/view/FragmentController;
 
     check-cast p2, Ljp/co/sony/mc/camera/configuration/parameters/VideoFps;
@@ -2244,7 +2415,7 @@
 
     return-void
 
-    .line 5890
+    .line 6072
     :cond_1
     sget-object v2, Ljp/co/sony/mc/camera/setting/CameraSettings;->ISO:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
 
@@ -2254,7 +2425,7 @@
 
     if-ne p1, v2, :cond_4
 
-    .line 5891
+    .line 6073
     check-cast v1, Ljp/co/sony/mc/camera/configuration/parameters/Iso;
 
     sget-object v2, Ljp/co/sony/mc/camera/configuration/parameters/Iso;->ISO_AUTO:Ljp/co/sony/mc/camera/configuration/parameters/Iso;
@@ -2281,9 +2452,9 @@
     move v2, v3
 
     :goto_1
-    if-eq v1, v2, :cond_17
+    if-eq v1, v2, :cond_19
 
-    .line 5892
+    .line 6074
     iget-object v1, p0, Ljp/co/sony/mc/camera/view/FragmentController$CameraOperatorImpl;->mController:Ljp/co/sony/mc/camera/view/FragmentController;
 
     sget-object v2, Ljp/co/sony/mc/camera/configuration/parameters/AutoExposureLock;->OFF:Ljp/co/sony/mc/camera/configuration/parameters/AutoExposureLock;
@@ -2292,13 +2463,13 @@
 
     goto/16 :goto_4
 
-    .line 5894
+    .line 6076
     :cond_4
     sget-object v2, Ljp/co/sony/mc/camera/setting/CameraSettings;->PHOTO_FORMAT:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
 
     if-ne p1, v2, :cond_8
 
-    .line 5895
+    .line 6077
     check-cast v1, Ljp/co/sony/mc/camera/configuration/parameters/PhotoFormat;
 
     sget-object v2, Ljp/co/sony/mc/camera/configuration/parameters/PhotoFormat;->JPEG:Ljp/co/sony/mc/camera/configuration/parameters/PhotoFormat;
@@ -2331,36 +2502,36 @@
     :goto_3
     if-eq v1, v2, :cond_7
 
-    .line 5897
+    .line 6079
     iget-object v1, p0, Ljp/co/sony/mc/camera/view/FragmentController$CameraOperatorImpl;->mController:Ljp/co/sony/mc/camera/view/FragmentController;
 
     invoke-static {v1}, Ljp/co/sony/mc/camera/view/FragmentController;->-$$Nest$mclearTouchFocus(Ljp/co/sony/mc/camera/view/FragmentController;)V
 
-    .line 5898
+    .line 6080
     iget-object v1, p0, Ljp/co/sony/mc/camera/view/FragmentController$CameraOperatorImpl;->mController:Ljp/co/sony/mc/camera/view/FragmentController;
 
     invoke-static {v1}, Ljp/co/sony/mc/camera/view/FragmentController;->-$$Nest$mstopObjectTracking(Ljp/co/sony/mc/camera/view/FragmentController;)V
 
-    .line 5900
+    .line 6082
     :cond_7
     sget-object v1, Ljp/co/sony/mc/camera/configuration/parameters/PhotoFormat;->JPEG:Ljp/co/sony/mc/camera/configuration/parameters/PhotoFormat;
 
-    if-eq p2, v1, :cond_17
+    if-eq p2, v1, :cond_19
 
-    .line 5901
+    .line 6083
     iget-object v1, p0, Ljp/co/sony/mc/camera/view/FragmentController$CameraOperatorImpl;->mController:Ljp/co/sony/mc/camera/view/FragmentController;
 
     invoke-static {v1}, Ljp/co/sony/mc/camera/view/FragmentController;->-$$Nest$mresetZoomRatio(Ljp/co/sony/mc/camera/view/FragmentController;)V
 
     goto/16 :goto_4
 
-    .line 5903
+    .line 6085
     :cond_8
     sget-object v2, Ljp/co/sony/mc/camera/setting/CameraSettings;->FOCUS_MODE:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
 
     if-ne p1, v2, :cond_a
 
-    .line 5904
+    .line 6086
     iget-object v1, p0, Ljp/co/sony/mc/camera/view/FragmentController$CameraOperatorImpl;->mController:Ljp/co/sony/mc/camera/view/FragmentController;
 
     iget-object v2, p0, Ljp/co/sony/mc/camera/view/FragmentController$CameraOperatorImpl;->mFragmentManager:Landroidx/fragment/app/FragmentManager;
@@ -2371,7 +2542,7 @@
 
     invoke-virtual {v1}, Ljp/co/sony/mc/camera/view/fragment/ViewFinderFragment;->clearTouchFocus()V
 
-    .line 5905
+    .line 6087
     sget-object v1, Ljp/co/sony/mc/camera/setting/CameraSettings;->AUTO_FOCUS_LOCK:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
 
     invoke-virtual {v0, v1}, Ljp/co/sony/mc/camera/setting/CameraProSetting;->get(Ljp/co/sony/mc/camera/setting/SettingKey$Key;)Ljava/lang/Object;
@@ -2382,33 +2553,33 @@
 
     if-ne v1, v2, :cond_9
 
-    .line 5906
+    .line 6088
     iget-object v1, p0, Ljp/co/sony/mc/camera/view/FragmentController$CameraOperatorImpl;->mController:Ljp/co/sony/mc/camera/view/FragmentController;
 
     sget-object v2, Ljp/co/sony/mc/camera/configuration/parameters/AutoFocusLock;->OFF:Ljp/co/sony/mc/camera/configuration/parameters/AutoFocusLock;
 
     invoke-static {v1, v2, v4}, Ljp/co/sony/mc/camera/view/FragmentController;->-$$Nest$mchangeAfLockState(Ljp/co/sony/mc/camera/view/FragmentController;Ljp/co/sony/mc/camera/configuration/parameters/AutoFocusLock;Z)V
 
-    .line 5908
+    .line 6090
     :cond_9
     sget-object v1, Ljp/co/sony/mc/camera/configuration/parameters/FocusMode;->MF:Ljp/co/sony/mc/camera/configuration/parameters/FocusMode;
 
-    if-ne p2, v1, :cond_17
+    if-ne p2, v1, :cond_19
 
-    .line 5909
+    .line 6091
     iget-object v1, p0, Ljp/co/sony/mc/camera/view/FragmentController$CameraOperatorImpl;->mController:Ljp/co/sony/mc/camera/view/FragmentController;
 
     invoke-static {v1}, Ljp/co/sony/mc/camera/view/FragmentController;->-$$Nest$mstopObjectTracking(Ljp/co/sony/mc/camera/view/FragmentController;)V
 
     goto/16 :goto_4
 
-    .line 5911
+    .line 6093
     :cond_a
     sget-object v2, Ljp/co/sony/mc/camera/setting/CameraSettings;->METERING:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
 
     if-ne p1, v2, :cond_b
 
-    .line 5912
+    .line 6094
     iget-object v1, p0, Ljp/co/sony/mc/camera/view/FragmentController$CameraOperatorImpl;->mController:Ljp/co/sony/mc/camera/view/FragmentController;
 
     sget-object v2, Ljp/co/sony/mc/camera/configuration/parameters/AutoExposureLock;->OFF:Ljp/co/sony/mc/camera/configuration/parameters/AutoExposureLock;
@@ -2417,18 +2588,18 @@
 
     goto/16 :goto_4
 
-    .line 5913
+    .line 6095
     :cond_b
     sget-object v2, Ljp/co/sony/mc/camera/setting/CameraSettings;->ASPECT_RATIO:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
 
     if-ne p1, v2, :cond_c
 
-    .line 5914
+    .line 6096
     iget-object v1, p0, Ljp/co/sony/mc/camera/view/FragmentController$CameraOperatorImpl;->mController:Ljp/co/sony/mc/camera/view/FragmentController;
 
     invoke-static {v1}, Ljp/co/sony/mc/camera/view/FragmentController;->-$$Nest$mstopObjectTracking(Ljp/co/sony/mc/camera/view/FragmentController;)V
 
-    .line 5915
+    .line 6097
     iget-object v1, p0, Ljp/co/sony/mc/camera/view/FragmentController$CameraOperatorImpl;->mController:Ljp/co/sony/mc/camera/view/FragmentController;
 
     invoke-static {v1}, Ljp/co/sony/mc/camera/view/FragmentController;->-$$Nest$fgetmGestureShutter(Ljp/co/sony/mc/camera/view/FragmentController;)Ljp/co/sony/mc/camera/view/GestureShutter;
@@ -2439,139 +2610,178 @@
 
     goto/16 :goto_4
 
-    .line 5916
+    .line 6098
     :cond_c
     sget-object v2, Ljp/co/sony/mc/camera/setting/CameraSettings;->TOUCH_INTENTION:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
 
     if-ne p1, v2, :cond_d
 
-    .line 5917
+    .line 6099
     iget-object v1, p0, Ljp/co/sony/mc/camera/view/FragmentController$CameraOperatorImpl;->mController:Ljp/co/sony/mc/camera/view/FragmentController;
 
     invoke-static {v1}, Ljp/co/sony/mc/camera/view/FragmentController;->-$$Nest$mstopObjectTracking(Ljp/co/sony/mc/camera/view/FragmentController;)V
 
-    .line 5918
+    .line 6100
     iget-object v1, p0, Ljp/co/sony/mc/camera/view/FragmentController$CameraOperatorImpl;->mController:Ljp/co/sony/mc/camera/view/FragmentController;
 
     invoke-static {v1}, Ljp/co/sony/mc/camera/view/FragmentController;->-$$Nest$mclearTouchFocus(Ljp/co/sony/mc/camera/view/FragmentController;)V
 
     goto/16 :goto_4
 
-    .line 5919
+    .line 6101
     :cond_d
     sget-object v2, Ljp/co/sony/mc/camera/setting/CameraSettings;->VIDEO_HDR:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
 
     if-ne p1, v2, :cond_e
 
-    .line 5920
+    .line 6102
     iget-object v1, p0, Ljp/co/sony/mc/camera/view/FragmentController$CameraOperatorImpl;->mController:Ljp/co/sony/mc/camera/view/FragmentController;
 
     invoke-static {v1}, Ljp/co/sony/mc/camera/view/FragmentController;->-$$Nest$mstopObjectTracking(Ljp/co/sony/mc/camera/view/FragmentController;)V
 
     goto/16 :goto_4
 
-    .line 5921
+    .line 6103
     :cond_e
     sget-object v2, Ljp/co/sony/mc/camera/setting/CameraSettings;->PRODUCT_SHOWCASE:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
 
     if-ne p1, v2, :cond_f
 
-    .line 5922
+    .line 6104
     iget-object v1, p0, Ljp/co/sony/mc/camera/view/FragmentController$CameraOperatorImpl;->mController:Ljp/co/sony/mc/camera/view/FragmentController;
 
     invoke-static {v1}, Ljp/co/sony/mc/camera/view/FragmentController;->-$$Nest$mstopObjectTracking(Ljp/co/sony/mc/camera/view/FragmentController;)V
 
     goto/16 :goto_4
 
-    .line 5923
+    .line 6105
     :cond_f
     sget-object v2, Ljp/co/sony/mc/camera/setting/CameraSettings;->VIDEO_SIZE:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
 
     if-ne p1, v2, :cond_10
 
-    .line 5924
+    .line 6106
     iget-object v1, p0, Ljp/co/sony/mc/camera/view/FragmentController$CameraOperatorImpl;->mController:Ljp/co/sony/mc/camera/view/FragmentController;
 
     invoke-static {v1}, Ljp/co/sony/mc/camera/view/FragmentController;->-$$Nest$mclearTouchFocus(Ljp/co/sony/mc/camera/view/FragmentController;)V
 
-    .line 5925
+    .line 6107
     iget-object v1, p0, Ljp/co/sony/mc/camera/view/FragmentController$CameraOperatorImpl;->mController:Ljp/co/sony/mc/camera/view/FragmentController;
 
     invoke-static {v1}, Ljp/co/sony/mc/camera/view/FragmentController;->-$$Nest$mstopObjectTracking(Ljp/co/sony/mc/camera/view/FragmentController;)V
 
     goto/16 :goto_4
 
-    .line 5926
+    .line 6108
     :cond_10
     sget-object v2, Ljp/co/sony/mc/camera/setting/CameraSettings;->VIDEO_MF_HDR:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
 
     if-ne p1, v2, :cond_11
 
-    .line 5927
+    .line 6109
     iget-object v1, p0, Ljp/co/sony/mc/camera/view/FragmentController$CameraOperatorImpl;->mController:Ljp/co/sony/mc/camera/view/FragmentController;
 
     invoke-static {v1}, Ljp/co/sony/mc/camera/view/FragmentController;->-$$Nest$mclearTouchFocus(Ljp/co/sony/mc/camera/view/FragmentController;)V
 
-    .line 5928
+    .line 6110
     iget-object v1, p0, Ljp/co/sony/mc/camera/view/FragmentController$CameraOperatorImpl;->mController:Ljp/co/sony/mc/camera/view/FragmentController;
 
     invoke-static {v1}, Ljp/co/sony/mc/camera/view/FragmentController;->-$$Nest$mstopObjectTracking(Ljp/co/sony/mc/camera/view/FragmentController;)V
 
-    goto :goto_4
+    goto/16 :goto_4
 
-    .line 5929
+    .line 6111
     :cond_11
     sget-object v2, Ljp/co/sony/mc/camera/setting/CameraSettings;->COLOR_TONE_PROFILE:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
 
-    if-ne p1, v2, :cond_13
+    if-ne p1, v2, :cond_14
 
-    .line 5930
+    .line 6112
     sget-object v2, Ljp/co/sony/mc/camera/configuration/parameters/ColorToneProfile;->S_CINETONE:Ljp/co/sony/mc/camera/configuration/parameters/ColorToneProfile;
 
     if-eq v1, v2, :cond_12
 
     sget-object v1, Ljp/co/sony/mc/camera/configuration/parameters/ColorToneProfile;->S_CINETONE:Ljp/co/sony/mc/camera/configuration/parameters/ColorToneProfile;
 
-    if-ne p2, v1, :cond_17
+    if-ne p2, v1, :cond_19
 
-    .line 5932
+    .line 6114
     :cond_12
     iget-object v1, p0, Ljp/co/sony/mc/camera/view/FragmentController$CameraOperatorImpl;->mController:Ljp/co/sony/mc/camera/view/FragmentController;
 
-    invoke-static {v1}, Ljp/co/sony/mc/camera/view/FragmentController;->-$$Nest$mclearTouchFocus(Ljp/co/sony/mc/camera/view/FragmentController;)V
+    const-class v2, Ljp/co/sony/mc/camera/view/viewmodel/CameraViewModel;
 
-    .line 5933
+    invoke-static {v1, v2}, Ljp/co/sony/mc/camera/view/FragmentController;->-$$Nest$mrequireViewModel(Ljp/co/sony/mc/camera/view/FragmentController;Ljava/lang/Class;)Landroidx/lifecycle/ViewModel;
+
+    move-result-object v1
+
+    check-cast v1, Ljp/co/sony/mc/camera/view/viewmodel/CameraViewModel;
+
+    invoke-virtual {v1}, Ljp/co/sony/mc/camera/view/viewmodel/CameraViewModel;->getCameraStatusModel()Ljp/co/sony/mc/camera/view/viewmodel/CameraStatusModel;
+
+    move-result-object v1
+
+    .line 6115
+    invoke-virtual {v1}, Ljp/co/sony/mc/camera/view/viewmodel/CameraStatusModel;->isObjectTracking()Landroidx/lifecycle/LiveData;
+
+    move-result-object v1
+
+    invoke-virtual {v1}, Landroidx/lifecycle/LiveData;->getValue()Ljava/lang/Object;
+
+    move-result-object v1
+
+    check-cast v1, Ljava/lang/Boolean;
+
+    .line 6114
+    invoke-virtual {v1}, Ljava/lang/Boolean;->booleanValue()Z
+
+    move-result v1
+
+    if-eqz v1, :cond_13
+
+    .line 6116
     iget-object v1, p0, Ljp/co/sony/mc/camera/view/FragmentController$CameraOperatorImpl;->mController:Ljp/co/sony/mc/camera/view/FragmentController;
 
-    invoke-static {v1}, Ljp/co/sony/mc/camera/view/FragmentController;->-$$Nest$mstopObjectTracking(Ljp/co/sony/mc/camera/view/FragmentController;)V
+    invoke-static {v1}, Ljp/co/sony/mc/camera/view/FragmentController;->-$$Nest$mrequestChangeToActionMode(Ljp/co/sony/mc/camera/view/FragmentController;)V
 
-    goto :goto_4
-
-    .line 5935
+    .line 6118
     :cond_13
-    sget-object v2, Ljp/co/sony/mc/camera/setting/CameraSettings;->COMPUTATIONAL_MODE:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
-
-    if-ne p1, v2, :cond_14
-
-    .line 5936
     iget-object v1, p0, Ljp/co/sony/mc/camera/view/FragmentController$CameraOperatorImpl;->mController:Ljp/co/sony/mc/camera/view/FragmentController;
 
     invoke-static {v1}, Ljp/co/sony/mc/camera/view/FragmentController;->-$$Nest$mclearTouchFocus(Ljp/co/sony/mc/camera/view/FragmentController;)V
 
-    .line 5937
+    .line 6119
     iget-object v1, p0, Ljp/co/sony/mc/camera/view/FragmentController$CameraOperatorImpl;->mController:Ljp/co/sony/mc/camera/view/FragmentController;
 
     invoke-static {v1}, Ljp/co/sony/mc/camera/view/FragmentController;->-$$Nest$mstopObjectTracking(Ljp/co/sony/mc/camera/view/FragmentController;)V
 
     goto :goto_4
 
-    .line 5938
+    .line 6121
     :cond_14
-    sget-object v2, Ljp/co/sony/mc/camera/setting/CameraSettings;->DRIVE_MODE:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
+    sget-object v2, Ljp/co/sony/mc/camera/setting/CameraSettings;->COMPUTATIONAL_MODE:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
 
     if-ne p1, v2, :cond_15
 
-    .line 5939
+    .line 6122
+    iget-object v1, p0, Ljp/co/sony/mc/camera/view/FragmentController$CameraOperatorImpl;->mController:Ljp/co/sony/mc/camera/view/FragmentController;
+
+    invoke-static {v1}, Ljp/co/sony/mc/camera/view/FragmentController;->-$$Nest$mclearTouchFocus(Ljp/co/sony/mc/camera/view/FragmentController;)V
+
+    .line 6123
+    iget-object v1, p0, Ljp/co/sony/mc/camera/view/FragmentController$CameraOperatorImpl;->mController:Ljp/co/sony/mc/camera/view/FragmentController;
+
+    invoke-static {v1}, Ljp/co/sony/mc/camera/view/FragmentController;->-$$Nest$mstopObjectTracking(Ljp/co/sony/mc/camera/view/FragmentController;)V
+
+    goto :goto_4
+
+    .line 6124
+    :cond_15
+    sget-object v2, Ljp/co/sony/mc/camera/setting/CameraSettings;->DRIVE_MODE:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
+
+    if-ne p1, v2, :cond_16
+
+    .line 6125
     check-cast v1, Ljp/co/sony/mc/camera/configuration/parameters/DriveMode;
 
     invoke-virtual {v1}, Ljp/co/sony/mc/camera/configuration/parameters/DriveMode;->isBurstMode()Z
@@ -2586,45 +2796,45 @@
 
     move-result v2
 
-    if-eq v1, v2, :cond_17
+    if-eq v1, v2, :cond_19
 
-    .line 5940
+    .line 6126
     iget-object v1, p0, Ljp/co/sony/mc/camera/view/FragmentController$CameraOperatorImpl;->mController:Ljp/co/sony/mc/camera/view/FragmentController;
 
     invoke-static {v1}, Ljp/co/sony/mc/camera/view/FragmentController;->-$$Nest$mclearTouchFocus(Ljp/co/sony/mc/camera/view/FragmentController;)V
 
-    .line 5941
+    .line 6127
     iget-object v1, p0, Ljp/co/sony/mc/camera/view/FragmentController$CameraOperatorImpl;->mController:Ljp/co/sony/mc/camera/view/FragmentController;
 
     invoke-static {v1}, Ljp/co/sony/mc/camera/view/FragmentController;->-$$Nest$mstopObjectTracking(Ljp/co/sony/mc/camera/view/FragmentController;)V
 
     goto :goto_4
 
-    .line 5943
-    :cond_15
-    sget-object v1, Ljp/co/sony/mc/camera/setting/CameraSettings;->VIDEO_STABILIZER:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
-
-    if-ne p1, v1, :cond_16
-
-    .line 5944
-    iget-object v1, p0, Ljp/co/sony/mc/camera/view/FragmentController$CameraOperatorImpl;->mController:Ljp/co/sony/mc/camera/view/FragmentController;
-
-    invoke-static {v1}, Ljp/co/sony/mc/camera/view/FragmentController;->-$$Nest$mclearTouchFocus(Ljp/co/sony/mc/camera/view/FragmentController;)V
-
-    .line 5945
-    iget-object v1, p0, Ljp/co/sony/mc/camera/view/FragmentController$CameraOperatorImpl;->mController:Ljp/co/sony/mc/camera/view/FragmentController;
-
-    invoke-static {v1}, Ljp/co/sony/mc/camera/view/FragmentController;->-$$Nest$mstopObjectTracking(Ljp/co/sony/mc/camera/view/FragmentController;)V
-
-    goto :goto_4
-
-    .line 5946
+    .line 6129
     :cond_16
-    sget-object v1, Ljp/co/sony/mc/camera/setting/CameraSettings;->FALLBACK_MODE:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
+    sget-object v1, Ljp/co/sony/mc/camera/setting/CameraSettings;->VIDEO_STABILIZER:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
 
     if-ne p1, v1, :cond_17
 
-    .line 5947
+    .line 6130
+    iget-object v1, p0, Ljp/co/sony/mc/camera/view/FragmentController$CameraOperatorImpl;->mController:Ljp/co/sony/mc/camera/view/FragmentController;
+
+    invoke-static {v1}, Ljp/co/sony/mc/camera/view/FragmentController;->-$$Nest$mclearTouchFocus(Ljp/co/sony/mc/camera/view/FragmentController;)V
+
+    .line 6131
+    iget-object v1, p0, Ljp/co/sony/mc/camera/view/FragmentController$CameraOperatorImpl;->mController:Ljp/co/sony/mc/camera/view/FragmentController;
+
+    invoke-static {v1}, Ljp/co/sony/mc/camera/view/FragmentController;->-$$Nest$mstopObjectTracking(Ljp/co/sony/mc/camera/view/FragmentController;)V
+
+    goto :goto_4
+
+    .line 6132
+    :cond_17
+    sget-object v1, Ljp/co/sony/mc/camera/setting/CameraSettings;->FALLBACK_MODE:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
+
+    if-ne p1, v1, :cond_18
+
+    .line 6133
     iget-object v1, p0, Ljp/co/sony/mc/camera/view/FragmentController$CameraOperatorImpl;->mController:Ljp/co/sony/mc/camera/view/FragmentController;
 
     invoke-static {v1}, Ljp/co/sony/mc/camera/view/FragmentController;->-$$Nest$fgetmCameraEventNotifier(Ljp/co/sony/mc/camera/view/FragmentController;)Ljp/co/sony/mc/camera/view/CameraEventListener;
@@ -2633,62 +2843,95 @@
 
     invoke-interface {v1, v4}, Ljp/co/sony/mc/camera/view/CameraEventListener;->onFallbackModeChanging(Z)V
 
-    .line 5950
-    :cond_17
-    :goto_4
-    sget-object v1, Ljp/co/sony/mc/camera/setting/CameraSettings;->FOCUS_MAGNIFICATION:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
+    goto :goto_4
 
-    .line 5951
-    invoke-virtual {v1}, Ljp/co/sony/mc/camera/setting/CameraSettings$Key;->getName()Ljava/lang/String;
+    .line 6134
+    :cond_18
+    sget-object v1, Ljp/co/sony/mc/camera/setting/CameraSettings;->FRAMING_ASSIST_POSITION_MODE:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
 
-    move-result-object v1
+    if-ne p1, v1, :cond_19
 
-    invoke-virtual {p1}, Ljp/co/sony/mc/camera/setting/SettingKey$Key;->getName()Ljava/lang/String;
+    .line 6135
+    sget-object v1, Ljp/co/sony/mc/camera/configuration/parameters/FramingAssistPositionMode;->LOCKING:Ljp/co/sony/mc/camera/configuration/parameters/FramingAssistPositionMode;
 
-    move-result-object v2
+    if-ne p2, v1, :cond_19
 
-    invoke-virtual {v1, v2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+    sget-object v1, Ljp/co/sony/mc/camera/setting/CameraSettings;->FRAMING_ASSIST_SWITCH:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
 
-    move-result v1
-
-    if-nez v1, :cond_18
-
-    sget-object v1, Ljp/co/sony/mc/camera/setting/CameraSettings;->VIDEO_SIZE:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
-
-    .line 5952
-    invoke-virtual {v1}, Ljp/co/sony/mc/camera/setting/CameraSettings$Key;->getName()Ljava/lang/String;
+    invoke-virtual {v0, v1}, Ljp/co/sony/mc/camera/setting/CameraProSetting;->get(Ljp/co/sony/mc/camera/setting/SettingKey$Key;)Ljava/lang/Object;
 
     move-result-object v1
 
-    invoke-virtual {p1}, Ljp/co/sony/mc/camera/setting/SettingKey$Key;->getName()Ljava/lang/String;
+    check-cast v1, Ljp/co/sony/mc/camera/configuration/parameters/FramingAssistSwitch;
 
-    move-result-object v2
-
-    invoke-virtual {v1, v2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    move-result v1
-
-    if-nez v1, :cond_18
-
-    .line 5953
-    invoke-direct {p0, p1, p2}, Ljp/co/sony/mc/camera/view/FragmentController$CameraOperatorImpl;->isPreviewSizeChangedBySetting(Ljp/co/sony/mc/camera/setting/SettingKey$Key;Ljava/lang/Object;)Z
+    .line 6136
+    invoke-virtual {v1}, Ljp/co/sony/mc/camera/configuration/parameters/FramingAssistSwitch;->getBooleanValue()Z
 
     move-result v1
 
     if-eqz v1, :cond_19
 
-    :cond_18
+    .line 6137
+    iget-object v1, p0, Ljp/co/sony/mc/camera/view/FragmentController$CameraOperatorImpl;->mController:Ljp/co/sony/mc/camera/view/FragmentController;
+
+    invoke-static {v1}, Ljp/co/sony/mc/camera/view/FragmentController;->-$$Nest$mstopObjectTracking(Ljp/co/sony/mc/camera/view/FragmentController;)V
+
+    .line 6141
+    :cond_19
+    :goto_4
+    sget-object v1, Ljp/co/sony/mc/camera/setting/CameraSettings;->FOCUS_MAGNIFICATION:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
+
+    .line 6142
+    invoke-virtual {v1}, Ljp/co/sony/mc/camera/setting/CameraSettings$Key;->getName()Ljava/lang/String;
+
+    move-result-object v1
+
+    invoke-virtual {p1}, Ljp/co/sony/mc/camera/setting/SettingKey$Key;->getName()Ljava/lang/String;
+
+    move-result-object v2
+
+    invoke-virtual {v1, v2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v1
+
+    if-nez v1, :cond_1a
+
+    sget-object v1, Ljp/co/sony/mc/camera/setting/CameraSettings;->VIDEO_SIZE:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
+
+    .line 6143
+    invoke-virtual {v1}, Ljp/co/sony/mc/camera/setting/CameraSettings$Key;->getName()Ljava/lang/String;
+
+    move-result-object v1
+
+    invoke-virtual {p1}, Ljp/co/sony/mc/camera/setting/SettingKey$Key;->getName()Ljava/lang/String;
+
+    move-result-object v2
+
+    invoke-virtual {v1, v2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v1
+
+    if-nez v1, :cond_1a
+
+    .line 6144
+    invoke-direct {p0, p1, p2}, Ljp/co/sony/mc/camera/view/FragmentController$CameraOperatorImpl;->isPreviewSizeChangedBySetting(Ljp/co/sony/mc/camera/setting/SettingKey$Key;Ljava/lang/Object;)Z
+
+    move-result v1
+
+    if-eqz v1, :cond_1b
+
+    :cond_1a
     move v3, v4
 
-    .line 5955
-    :cond_19
+    .line 6146
+    :cond_1b
     iget-object v1, p0, Ljp/co/sony/mc/camera/view/FragmentController$CameraOperatorImpl;->mController:Ljp/co/sony/mc/camera/view/FragmentController;
 
     invoke-virtual {v1}, Ljp/co/sony/mc/camera/view/FragmentController;->isInSingleCapture()Z
 
     move-result v1
 
-    if-nez v1, :cond_20
+    if-nez v1, :cond_22
 
     iget-object v1, p0, Ljp/co/sony/mc/camera/view/FragmentController$CameraOperatorImpl;->mController:Ljp/co/sony/mc/camera/view/FragmentController;
 
@@ -2696,26 +2939,26 @@
 
     move-result v1
 
-    if-eqz v1, :cond_1a
+    if-eqz v1, :cond_1c
 
     goto/16 :goto_5
 
-    .line 5958
-    :cond_1a
+    .line 6149
+    :cond_1c
     iget-object v1, p0, Ljp/co/sony/mc/camera/view/FragmentController$CameraOperatorImpl;->mController:Ljp/co/sony/mc/camera/view/FragmentController;
 
     invoke-virtual {v1}, Ljp/co/sony/mc/camera/view/FragmentController;->isCaptureReadyWorking()Z
 
     move-result v1
 
-    if-eqz v1, :cond_1b
+    if-eqz v1, :cond_1d
 
-    if-eqz v3, :cond_1b
+    if-eqz v3, :cond_1d
 
     return-void
 
-    .line 5965
-    :cond_1b
+    .line 6156
+    :cond_1d
     iget-object v1, p0, Ljp/co/sony/mc/camera/view/FragmentController$CameraOperatorImpl;->mController:Ljp/co/sony/mc/camera/view/FragmentController;
 
     invoke-static {v1}, Ljp/co/sony/mc/camera/view/FragmentController;->-$$Nest$fgetmUserEventAcceptChecker(Ljp/co/sony/mc/camera/view/FragmentController;)Ljp/co/sony/mc/camera/view/UserEventAcceptableChecker;
@@ -2726,20 +2969,20 @@
 
     invoke-virtual {v1, v2}, Ljp/co/sony/mc/camera/view/UserEventAcceptableChecker;->occurEvent(Ljp/co/sony/mc/camera/view/UserEventKind;)V
 
-    if-eqz v3, :cond_1c
+    if-eqz v3, :cond_1e
 
-    .line 5968
+    .line 6159
     iget-object v1, p0, Ljp/co/sony/mc/camera/view/FragmentController$CameraOperatorImpl;->mController:Ljp/co/sony/mc/camera/view/FragmentController;
 
     sget-object v2, Ljp/co/sony/mc/camera/view/FragmentController$CameraState;->OPENING:Ljp/co/sony/mc/camera/view/FragmentController$CameraState;
 
     invoke-static {v1, v2}, Ljp/co/sony/mc/camera/view/FragmentController;->-$$Nest$mchangeCameraStateTo(Ljp/co/sony/mc/camera/view/FragmentController;Ljp/co/sony/mc/camera/view/FragmentController$CameraState;)V
 
-    .line 5971
-    :cond_1c
+    .line 6162
+    :cond_1e
     invoke-virtual {v0, p1, p2}, Ljp/co/sony/mc/camera/setting/CameraProSetting;->set(Ljp/co/sony/mc/camera/setting/SettingKey$Key;Ljava/lang/Object;)V
 
-    .line 5973
+    .line 6164
     sget-object p2, Ljp/co/sony/mc/camera/setting/CameraSettings;->FOCUS_AREA:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
 
     invoke-virtual {p2}, Ljp/co/sony/mc/camera/setting/CameraSettings$Key;->getName()Ljava/lang/String;
@@ -2754,14 +2997,14 @@
 
     move-result p2
 
-    if-eqz p2, :cond_1d
+    if-eqz p2, :cond_1f
 
-    .line 5974
+    .line 6165
     iget-object p2, p0, Ljp/co/sony/mc/camera/view/FragmentController$CameraOperatorImpl;->mController:Ljp/co/sony/mc/camera/view/FragmentController;
 
     invoke-static {p2}, Ljp/co/sony/mc/camera/view/FragmentController;->-$$Nest$mswitchFaceDetection(Ljp/co/sony/mc/camera/view/FragmentController;)V
 
-    .line 5975
+    .line 6166
     iget-object p2, p0, Ljp/co/sony/mc/camera/view/FragmentController$CameraOperatorImpl;->mController:Ljp/co/sony/mc/camera/view/FragmentController;
 
     iget-object v1, p0, Ljp/co/sony/mc/camera/view/FragmentController$CameraOperatorImpl;->mFragmentManager:Landroidx/fragment/app/FragmentManager;
@@ -2770,19 +3013,19 @@
 
     move-result-object p2
 
-    .line 5976
+    .line 6167
     invoke-virtual {p2}, Ljp/co/sony/mc/camera/view/fragment/ViewFinderFragment;->onFocusAreaChanged()V
 
-    .line 5977
+    .line 6168
     invoke-virtual {p2}, Ljp/co/sony/mc/camera/view/fragment/ViewFinderFragment;->clearTouchFocus()V
 
-    .line 5978
+    .line 6169
     iget-object p2, p0, Ljp/co/sony/mc/camera/view/FragmentController$CameraOperatorImpl;->mController:Ljp/co/sony/mc/camera/view/FragmentController;
 
     invoke-static {p2}, Ljp/co/sony/mc/camera/view/FragmentController;->-$$Nest$mstopObjectTracking(Ljp/co/sony/mc/camera/view/FragmentController;)V
 
-    .line 5981
-    :cond_1d
+    .line 6172
+    :cond_1f
     sget-object p2, Ljp/co/sony/mc/camera/setting/CameraSettings;->FACE_DETECTION:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
 
     invoke-virtual {p2}, Ljp/co/sony/mc/camera/setting/CameraSettings$Key;->getName()Ljava/lang/String;
@@ -2797,11 +3040,11 @@
 
     move-result p2
 
-    if-nez p2, :cond_1e
+    if-nez p2, :cond_20
 
     sget-object p2, Ljp/co/sony/mc/camera/setting/CameraSettings;->PRODUCT_SHOWCASE:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
 
-    .line 5982
+    .line 6173
     invoke-virtual {p2}, Ljp/co/sony/mc/camera/setting/CameraSettings$Key;->getName()Ljava/lang/String;
 
     move-result-object p2
@@ -2814,15 +3057,15 @@
 
     move-result p2
 
-    if-eqz p2, :cond_1f
+    if-eqz p2, :cond_21
 
-    .line 5983
-    :cond_1e
+    .line 6174
+    :cond_20
     iget-object p2, p0, Ljp/co/sony/mc/camera/view/FragmentController$CameraOperatorImpl;->mController:Ljp/co/sony/mc/camera/view/FragmentController;
 
     invoke-static {p2}, Ljp/co/sony/mc/camera/view/FragmentController;->-$$Nest$mswitchFaceDetection(Ljp/co/sony/mc/camera/view/FragmentController;)V
 
-    .line 5984
+    .line 6175
     iget-object p2, p0, Ljp/co/sony/mc/camera/view/FragmentController$CameraOperatorImpl;->mController:Ljp/co/sony/mc/camera/view/FragmentController;
 
     iget-object v1, p0, Ljp/co/sony/mc/camera/view/FragmentController$CameraOperatorImpl;->mFragmentManager:Landroidx/fragment/app/FragmentManager;
@@ -2831,7 +3074,7 @@
 
     move-result-object p2
 
-    .line 5985
+    .line 6176
     sget-object v1, Ljp/co/sony/mc/camera/setting/CameraSettings;->FOCUS_AREA:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
 
     invoke-virtual {v0, v1}, Ljp/co/sony/mc/camera/setting/CameraProSetting;->get(Ljp/co/sony/mc/camera/setting/SettingKey$Key;)Ljava/lang/Object;
@@ -2840,13 +3083,13 @@
 
     sget-object v1, Ljp/co/sony/mc/camera/configuration/parameters/FocusArea;->OBJECT_TRACKING:Ljp/co/sony/mc/camera/configuration/parameters/FocusArea;
 
-    if-eq v0, v1, :cond_1f
+    if-eq v0, v1, :cond_21
 
-    .line 5986
+    .line 6177
     invoke-virtual {p2}, Ljp/co/sony/mc/camera/view/fragment/ViewFinderFragment;->clearTouchFocus()V
 
-    .line 5990
-    :cond_1f
+    .line 6181
+    :cond_21
     sget-object p2, Ljp/co/sony/mc/camera/setting/CameraSettings;->VIDEO_SIZE:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
 
     invoke-virtual {p2}, Ljp/co/sony/mc/camera/setting/CameraSettings$Key;->getName()Ljava/lang/String;
@@ -2861,14 +3104,14 @@
 
     move-result p1
 
-    if-eqz p1, :cond_20
+    if-eqz p1, :cond_22
 
-    .line 5991
+    .line 6182
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/FragmentController$CameraOperatorImpl;->mController:Ljp/co/sony/mc/camera/view/FragmentController;
 
     invoke-static {p0}, Ljp/co/sony/mc/camera/view/FragmentController;->-$$Nest$mswitchFaceDetection(Ljp/co/sony/mc/camera/view/FragmentController;)V
 
-    :cond_20
+    :cond_22
     :goto_5
     return-void
 .end method
@@ -2876,14 +3119,14 @@
 .method public setYoutubeLiveEvent()V
     .locals 2
 
-    .line 6338
+    .line 6561
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/FragmentController$CameraOperatorImpl;->mController:Ljp/co/sony/mc/camera/view/FragmentController;
 
     const/4 v1, 0x0
 
     invoke-static {v0, v1}, Ljp/co/sony/mc/camera/view/FragmentController;->-$$Nest$fputmIsRestartYoutubeStreaming(Ljp/co/sony/mc/camera/view/FragmentController;Z)V
 
-    .line 6339
+    .line 6562
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/FragmentController$CameraOperatorImpl;->mController:Ljp/co/sony/mc/camera/view/FragmentController;
 
     invoke-virtual {p0, v1}, Ljp/co/sony/mc/camera/view/FragmentController;->setYoutubeLiveEvent(Z)V
@@ -2894,7 +3137,7 @@
 .method public setYoutubeLogin()V
     .locals 0
 
-    .line 6333
+    .line 6556
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/FragmentController$CameraOperatorImpl;->mController:Ljp/co/sony/mc/camera/view/FragmentController;
 
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/view/FragmentController;->setYoutubeLogin()V
@@ -2905,7 +3148,7 @@
 .method public shareYoutubeLiveEvent()V
     .locals 0
 
-    .line 6344
+    .line 6567
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/FragmentController$CameraOperatorImpl;->mController:Ljp/co/sony/mc/camera/view/FragmentController;
 
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/view/FragmentController;->shareYoutubeLiveEvent()V
@@ -2916,7 +3159,7 @@
 .method public startAeAwbLockStateDetection()V
     .locals 0
 
-    .line 6533
+    .line 6756
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/FragmentController$CameraOperatorImpl;->mCameraAccessor:Ljp/co/sony/mc/camera/CameraAccessor;
 
     invoke-interface {p0}, Ljp/co/sony/mc/camera/CameraAccessor;->startAeAwbLockStateDetection()V
@@ -2927,7 +3170,7 @@
 .method public startFocusMagnification()V
     .locals 0
 
-    .line 6502
+    .line 6725
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/FragmentController$CameraOperatorImpl;->mController:Ljp/co/sony/mc/camera/view/FragmentController;
 
     invoke-static {p0}, Ljp/co/sony/mc/camera/view/FragmentController;->-$$Nest$mstartFocusMagnification(Ljp/co/sony/mc/camera/view/FragmentController;)V
@@ -2938,7 +3181,7 @@
 .method public startFocusMagnificationResultMonitoring()V
     .locals 0
 
-    .line 6512
+    .line 6735
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/FragmentController$CameraOperatorImpl;->mCameraAccessor:Ljp/co/sony/mc/camera/CameraAccessor;
 
     invoke-interface {p0}, Ljp/co/sony/mc/camera/CameraAccessor;->startFocusMagnificationResultMonitoring()V
@@ -2949,7 +3192,7 @@
 .method public startHandDetection()V
     .locals 0
 
-    .line 6457
+    .line 6680
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/FragmentController$CameraOperatorImpl;->mCameraAccessor:Ljp/co/sony/mc/camera/CameraAccessor;
 
     invoke-interface {p0}, Ljp/co/sony/mc/camera/CameraAccessor;->startHandDetection()V
@@ -2957,10 +3200,21 @@
     return-void
 .end method
 
+.method public startMonitorAutoFramingState()V
+    .locals 0
+
+    .line 6801
+    iget-object p0, p0, Ljp/co/sony/mc/camera/view/FragmentController$CameraOperatorImpl;->mCameraAccessor:Ljp/co/sony/mc/camera/CameraAccessor;
+
+    invoke-interface {p0}, Ljp/co/sony/mc/camera/CameraAccessor;->startMonitorAutoFramingState()V
+
+    return-void
+.end method
+
 .method public startMonitorFallbackState()V
     .locals 0
 
-    .line 6558
+    .line 6781
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/FragmentController$CameraOperatorImpl;->mCameraAccessor:Ljp/co/sony/mc/camera/CameraAccessor;
 
     invoke-interface {p0}, Ljp/co/sony/mc/camera/CameraAccessor;->startMonitorFallbackState()V
@@ -2968,10 +3222,21 @@
     return-void
 .end method
 
+.method public startMonitorFramingAssistCroppedPosition()V
+    .locals 0
+
+    .line 6811
+    iget-object p0, p0, Ljp/co/sony/mc/camera/view/FragmentController$CameraOperatorImpl;->mCameraAccessor:Ljp/co/sony/mc/camera/CameraAccessor;
+
+    invoke-interface {p0}, Ljp/co/sony/mc/camera/CameraAccessor;->startMonitorFramingAssistCroppedPosition()V
+
+    return-void
+.end method
+
 .method public startMonitorLowLightState()V
     .locals 0
 
-    .line 6543
+    .line 6766
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/FragmentController$CameraOperatorImpl;->mCameraAccessor:Ljp/co/sony/mc/camera/CameraAccessor;
 
     invoke-interface {p0}, Ljp/co/sony/mc/camera/CameraAccessor;->startMonitorLowLightState()V
@@ -2982,7 +3247,7 @@
 .method public startMonitorPoseRotation()V
     .locals 0
 
-    .line 6472
+    .line 6695
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/FragmentController$CameraOperatorImpl;->mCameraAccessor:Ljp/co/sony/mc/camera/CameraAccessor;
 
     invoke-interface {p0}, Ljp/co/sony/mc/camera/CameraAccessor;->startMonitorPoseRotation()V
@@ -2993,7 +3258,7 @@
 .method public startRecording()V
     .locals 0
 
-    .line 6379
+    .line 6602
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/FragmentController$CameraOperatorImpl;->mController:Ljp/co/sony/mc/camera/view/FragmentController;
 
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/view/FragmentController;->startRecording()V
@@ -3004,7 +3269,7 @@
 .method public stopAeAwbLockStateDetection()V
     .locals 0
 
-    .line 6538
+    .line 6761
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/FragmentController$CameraOperatorImpl;->mCameraAccessor:Ljp/co/sony/mc/camera/CameraAccessor;
 
     invoke-interface {p0}, Ljp/co/sony/mc/camera/CameraAccessor;->stopAeAwbLockStateDetection()V
@@ -3015,7 +3280,7 @@
 .method public stopFocusMagnification()V
     .locals 0
 
-    .line 6507
+    .line 6730
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/FragmentController$CameraOperatorImpl;->mController:Ljp/co/sony/mc/camera/view/FragmentController;
 
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/view/FragmentController;->stopFocusMagnification()V
@@ -3026,7 +3291,7 @@
 .method public stopFocusMagnificationResultMonitoring()V
     .locals 0
 
-    .line 6517
+    .line 6740
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/FragmentController$CameraOperatorImpl;->mCameraAccessor:Ljp/co/sony/mc/camera/CameraAccessor;
 
     invoke-interface {p0}, Ljp/co/sony/mc/camera/CameraAccessor;->stopFocusMagnificationResultMonitoring()V
@@ -3037,7 +3302,7 @@
 .method public stopHandDetection()V
     .locals 0
 
-    .line 6462
+    .line 6685
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/FragmentController$CameraOperatorImpl;->mCameraAccessor:Ljp/co/sony/mc/camera/CameraAccessor;
 
     invoke-interface {p0}, Ljp/co/sony/mc/camera/CameraAccessor;->stopHandDetection()V
@@ -3045,10 +3310,21 @@
     return-void
 .end method
 
+.method public stopMonitorAutoFramingState()V
+    .locals 0
+
+    .line 6806
+    iget-object p0, p0, Ljp/co/sony/mc/camera/view/FragmentController$CameraOperatorImpl;->mCameraAccessor:Ljp/co/sony/mc/camera/CameraAccessor;
+
+    invoke-interface {p0}, Ljp/co/sony/mc/camera/CameraAccessor;->stopMonitorAutoFramingState()V
+
+    return-void
+.end method
+
 .method public stopMonitorFallbackState()V
     .locals 0
 
-    .line 6563
+    .line 6786
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/FragmentController$CameraOperatorImpl;->mCameraAccessor:Ljp/co/sony/mc/camera/CameraAccessor;
 
     invoke-interface {p0}, Ljp/co/sony/mc/camera/CameraAccessor;->stopMonitorFallbackState()V
@@ -3056,10 +3332,21 @@
     return-void
 .end method
 
+.method public stopMonitorFramingAssistCroppedPosition()V
+    .locals 0
+
+    .line 6816
+    iget-object p0, p0, Ljp/co/sony/mc/camera/view/FragmentController$CameraOperatorImpl;->mCameraAccessor:Ljp/co/sony/mc/camera/CameraAccessor;
+
+    invoke-interface {p0}, Ljp/co/sony/mc/camera/CameraAccessor;->stopMonitorFramingAssistCroppedPosition()V
+
+    return-void
+.end method
+
 .method public stopMonitorLowLightState()V
     .locals 0
 
-    .line 6548
+    .line 6771
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/FragmentController$CameraOperatorImpl;->mCameraAccessor:Ljp/co/sony/mc/camera/CameraAccessor;
 
     invoke-interface {p0}, Ljp/co/sony/mc/camera/CameraAccessor;->stopMonitorLowLightState()V
@@ -3070,7 +3357,7 @@
 .method public stopMonitorPoseRotation()V
     .locals 0
 
-    .line 6477
+    .line 6700
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/FragmentController$CameraOperatorImpl;->mCameraAccessor:Ljp/co/sony/mc/camera/CameraAccessor;
 
     invoke-interface {p0}, Ljp/co/sony/mc/camera/CameraAccessor;->stopMonitorPoseRotation()V
@@ -3081,7 +3368,7 @@
 .method public stopObjectTracking()V
     .locals 0
 
-    .line 6288
+    .line 6511
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/FragmentController$CameraOperatorImpl;->mController:Ljp/co/sony/mc/camera/view/FragmentController;
 
     invoke-static {p0}, Ljp/co/sony/mc/camera/view/FragmentController;->-$$Nest$mstopObjectTracking(Ljp/co/sony/mc/camera/view/FragmentController;)V
@@ -3092,7 +3379,7 @@
 .method public stopRecording()V
     .locals 0
 
-    .line 6384
+    .line 6607
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/FragmentController$CameraOperatorImpl;->mController:Ljp/co/sony/mc/camera/view/FragmentController;
 
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/view/FragmentController;->stopRecording()V
@@ -3103,7 +3390,7 @@
 .method public takeSnapshot()V
     .locals 6
 
-    .line 6405
+    .line 6628
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/FragmentController$CameraOperatorImpl;->mController:Ljp/co/sony/mc/camera/view/FragmentController;
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/view/FragmentController;->-$$Nest$fgetmCameraState(Ljp/co/sony/mc/camera/view/FragmentController;)Ljp/co/sony/mc/camera/view/FragmentController$CameraState;
@@ -3128,7 +3415,7 @@
 
     goto :goto_0
 
-    .line 6411
+    .line 6634
     :cond_0
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/FragmentController$CameraOperatorImpl;->mController:Ljp/co/sony/mc/camera/view/FragmentController;
 
@@ -3138,7 +3425,7 @@
 
     if-eqz v0, :cond_3
 
-    .line 6412
+    .line 6635
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/FragmentController$CameraOperatorImpl;->mController:Ljp/co/sony/mc/camera/view/FragmentController;
 
     invoke-virtual {v0}, Ljp/co/sony/mc/camera/view/FragmentController;->isPreview()Z
@@ -3157,14 +3444,14 @@
 
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/FragmentController$CameraOperatorImpl;->mController:Ljp/co/sony/mc/camera/view/FragmentController;
 
-    .line 6413
+    .line 6636
     invoke-virtual {v0}, Ljp/co/sony/mc/camera/view/FragmentController;->isInFocusSearch()Z
 
     move-result v0
 
     if-eqz v0, :cond_3
 
-    .line 6414
+    .line 6637
     :cond_1
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/FragmentController$CameraOperatorImpl;->mController:Ljp/co/sony/mc/camera/view/FragmentController;
 
@@ -3174,14 +3461,14 @@
 
     if-eqz v0, :cond_3
 
-    .line 6415
+    .line 6638
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/FragmentController$CameraOperatorImpl;->mController:Ljp/co/sony/mc/camera/view/FragmentController;
 
     invoke-virtual {p0, v2}, Ljp/co/sony/mc/camera/view/FragmentController;->requestCapture(Z)V
 
     goto :goto_1
 
-    .line 6407
+    .line 6630
     :cond_2
     :goto_0
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/FragmentController$CameraOperatorImpl;->mController:Ljp/co/sony/mc/camera/view/FragmentController;
@@ -3194,7 +3481,7 @@
 
     move-result v0
 
-    .line 6408
+    .line 6631
     iget-object v1, p0, Ljp/co/sony/mc/camera/view/FragmentController$CameraOperatorImpl;->mCameraAccessor:Ljp/co/sony/mc/camera/CameraAccessor;
 
     new-instance v3, Ljp/co/sony/mc/camera/CameraAccessor$RequestCaptureParam;
@@ -3209,7 +3496,7 @@
 
     invoke-interface {v1, v3, v4, v2}, Ljp/co/sony/mc/camera/CameraAccessor;->startCapture(Ljp/co/sony/mc/camera/CameraAccessor$RequestCaptureParam;Ljp/co/sony/mc/camera/CameraAccessor$CaptureCallback;Z)V
 
-    .line 6410
+    .line 6633
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/FragmentController$CameraOperatorImpl;->mController:Ljp/co/sony/mc/camera/view/FragmentController;
 
     invoke-static {p0}, Ljp/co/sony/mc/camera/view/FragmentController;->-$$Nest$fgetmCameraEventNotifier(Ljp/co/sony/mc/camera/view/FragmentController;)Ljp/co/sony/mc/camera/view/CameraEventListener;
@@ -3226,7 +3513,7 @@
 .method public toggleSelfTimer()V
     .locals 2
 
-    .line 6303
+    .line 6526
     invoke-static {}, Ljp/co/sony/mc/camera/setting/CameraProSetting;->getInstance()Ljp/co/sony/mc/camera/setting/CameraProSetting;
 
     move-result-object v0
@@ -3239,7 +3526,7 @@
 
     check-cast v0, Ljp/co/sony/mc/camera/configuration/parameters/FocusMode;
 
-    .line 6304
+    .line 6527
     sget-object v1, Ljp/co/sony/mc/camera/configuration/parameters/FocusMode;->AF_S:Ljp/co/sony/mc/camera/configuration/parameters/FocusMode;
 
     if-eq v0, v1, :cond_0
@@ -3248,7 +3535,7 @@
 
     if-ne v0, v1, :cond_1
 
-    .line 6305
+    .line 6528
     :cond_0
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/FragmentController$CameraOperatorImpl;->mController:Ljp/co/sony/mc/camera/view/FragmentController;
 
@@ -3256,7 +3543,7 @@
 
     invoke-virtual {v0, v1}, Ljp/co/sony/mc/camera/view/FragmentController;->requestCaptureReady(Z)Z
 
-    .line 6308
+    .line 6531
     :cond_1
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/FragmentController$CameraOperatorImpl;->mController:Ljp/co/sony/mc/camera/view/FragmentController;
 

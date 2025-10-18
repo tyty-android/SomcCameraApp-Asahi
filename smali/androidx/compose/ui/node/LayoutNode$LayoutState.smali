@@ -84,7 +84,7 @@
 .method static constructor <clinit>()V
     .locals 3
 
-    .line 1412
+    .line 1427
     new-instance v0, Landroidx/compose/ui/node/LayoutNode$LayoutState;
 
     const-string v1, "Measuring"
@@ -95,7 +95,7 @@
 
     sput-object v0, Landroidx/compose/ui/node/LayoutNode$LayoutState;->Measuring:Landroidx/compose/ui/node/LayoutNode$LayoutState;
 
-    .line 1417
+    .line 1432
     new-instance v0, Landroidx/compose/ui/node/LayoutNode$LayoutState;
 
     const-string v1, "LookaheadMeasuring"
@@ -106,7 +106,7 @@
 
     sput-object v0, Landroidx/compose/ui/node/LayoutNode$LayoutState;->LookaheadMeasuring:Landroidx/compose/ui/node/LayoutNode$LayoutState;
 
-    .line 1422
+    .line 1437
     new-instance v0, Landroidx/compose/ui/node/LayoutNode$LayoutState;
 
     const-string v1, "LayingOut"
@@ -117,7 +117,7 @@
 
     sput-object v0, Landroidx/compose/ui/node/LayoutNode$LayoutState;->LayingOut:Landroidx/compose/ui/node/LayoutNode$LayoutState;
 
-    .line 1427
+    .line 1442
     new-instance v0, Landroidx/compose/ui/node/LayoutNode$LayoutState;
 
     const-string v1, "LookaheadLayingOut"
@@ -128,7 +128,7 @@
 
     sput-object v0, Landroidx/compose/ui/node/LayoutNode$LayoutState;->LookaheadLayingOut:Landroidx/compose/ui/node/LayoutNode$LayoutState;
 
-    .line 1433
+    .line 1448
     new-instance v0, Landroidx/compose/ui/node/LayoutNode$LayoutState;
 
     const-string v1, "Idle"
@@ -156,7 +156,7 @@
         }
     .end annotation
 
-    .line 1408
+    .line 1423
     invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
     return-void

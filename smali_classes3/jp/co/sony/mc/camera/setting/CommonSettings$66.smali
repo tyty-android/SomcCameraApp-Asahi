@@ -21,7 +21,7 @@
 .method constructor <init>()V
     .locals 0
 
-    .line 839
+    .line 842
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -46,13 +46,13 @@
         }
     .end annotation
 
-    .line 843
+    .line 846
     check-cast p1, Ljp/co/sony/mc/camera/setting/CommonSettings;
 
-    .line 844
-    check-cast p3, Ljp/co/sony/mc/camera/configuration/parameters/VolumeKey;
+    .line 847
+    check-cast p3, Ljp/co/sony/mc/camera/configuration/parameters/ShutterSound;
 
-    invoke-static {p1, p3}, Ljp/co/sony/mc/camera/setting/CommonSettings;->-$$Nest$msetVolumeKey(Ljp/co/sony/mc/camera/setting/CommonSettings;Ljp/co/sony/mc/camera/configuration/parameters/VolumeKey;)Z
+    invoke-static {p1, p3}, Ljp/co/sony/mc/camera/setting/CommonSettings;->-$$Nest$msetShutterSound(Ljp/co/sony/mc/camera/setting/CommonSettings;Ljp/co/sony/mc/camera/configuration/parameters/ShutterSound;)Z
 
     move-result p0
 

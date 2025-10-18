@@ -5,12 +5,12 @@
 
 # annotations
 .annotation system Ldalvik/annotation/SourceDebugExtension;
-    value = "SMAP\nTabRow.kt\nKotlin\n*S Kotlin\n*F\n+ 1 TabRow.kt\nandroidx/compose/material/TabRowDefaults\n+ 2 CompositionLocal.kt\nandroidx/compose/runtime/CompositionLocal\n+ 3 InspectableValue.kt\nandroidx/compose/ui/platform/InspectableValueKt\n+ 4 Dp.kt\nandroidx/compose/ui/unit/DpKt\n*L\n1#1,517:1\n76#2:518\n76#2:519\n135#3:520\n154#4:521\n154#4:522\n154#4:523\n*S KotlinDebug\n*F\n+ 1 TabRow.kt\nandroidx/compose/material/TabRowDefaults\n*L\n367#1:518\n384#1:519\n404#1:520\n431#1:521\n436#1:522\n441#1:523\n*E\n"
+    value = "SMAP\nTabRow.kt\nKotlin\n*S Kotlin\n*F\n+ 1 TabRow.kt\nandroidx/compose/material/TabRowDefaults\n+ 2 CompositionLocal.kt\nandroidx/compose/runtime/CompositionLocal\n+ 3 InspectableValue.kt\nandroidx/compose/ui/platform/InspectableValueKt\n+ 4 Dp.kt\nandroidx/compose/ui/unit/DpKt\n*L\n1#1,521:1\n74#2:522\n74#2:523\n135#3:524\n154#4:525\n154#4:526\n154#4:527\n*S KotlinDebug\n*F\n+ 1 TabRow.kt\nandroidx/compose/material/TabRowDefaults\n*L\n371#1:522\n388#1:523\n408#1:524\n435#1:525\n440#1:526\n445#1:527\n*E\n"
 .end annotation
 
 .annotation runtime Lkotlin/Metadata;
     d1 = {
-        "\u00008\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\u0008\u0002\n\u0002\u0010\u0007\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0008\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0007\n\u0002\u0018\u0002\n\u0002\u0008\u0003\u0008\u00c7\u0002\u0018\u00002\u00020\u0001B\u0007\u0008\u0002\u00a2\u0006\u0002\u0010\u0002J3\u0010\u000e\u001a\u00020\u000f2\u0008\u0008\u0002\u0010\u0010\u001a\u00020\u00112\u0008\u0008\u0002\u0010\u0012\u001a\u00020\u00062\u0008\u0008\u0002\u0010\u0013\u001a\u00020\u0014H\u0007\u00f8\u0001\u0001\u00f8\u0001\u0000\u00a2\u0006\u0004\u0008\u0015\u0010\u0016J3\u0010\u0017\u001a\u00020\u000f2\u0008\u0008\u0002\u0010\u0010\u001a\u00020\u00112\u0008\u0008\u0002\u0010\u0018\u001a\u00020\u00062\u0008\u0008\u0002\u0010\u0013\u001a\u00020\u0014H\u0007\u00f8\u0001\u0001\u00f8\u0001\u0000\u00a2\u0006\u0004\u0008\u0019\u0010\u0016J\u0012\u0010\u001a\u001a\u00020\u0011*\u00020\u00112\u0006\u0010\u001b\u001a\u00020\u001cR\u000e\u0010\u0003\u001a\u00020\u0004X\u0086T\u00a2\u0006\u0002\n\u0000R\u001c\u0010\u0005\u001a\u00020\u0006\u00f8\u0001\u0000\u00f8\u0001\u0001\u00f8\u0001\u0002\u00a2\u0006\n\n\u0002\u0010\t\u001a\u0004\u0008\u0007\u0010\u0008R\u001c\u0010\n\u001a\u00020\u0006\u00f8\u0001\u0000\u00f8\u0001\u0001\u00f8\u0001\u0002\u00a2\u0006\n\n\u0002\u0010\t\u001a\u0004\u0008\u000b\u0010\u0008R\u001c\u0010\u000c\u001a\u00020\u0006\u00f8\u0001\u0000\u00f8\u0001\u0001\u00f8\u0001\u0002\u00a2\u0006\n\n\u0002\u0010\t\u001a\u0004\u0008\r\u0010\u0008\u0082\u0002\u000f\n\u0002\u0008\u0019\n\u0005\u0008\u00a1\u001e0\u0001\n\u0002\u0008!\u00a8\u0006\u001d\u00b2\u0006\n\u0010\u001e\u001a\u00020\u0006X\u008a\u0084\u0002\u00b2\u0006\n\u0010\u001f\u001a\u00020\u0006X\u008a\u0084\u0002"
+        "\u00008\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\u0008\u0002\n\u0002\u0010\u0007\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0008\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0007\n\u0002\u0018\u0002\n\u0002\u0008\u0003\u0008\u00c7\u0002\u0018\u00002\u00020\u0001B\u0007\u0008\u0002\u00a2\u0006\u0002\u0010\u0002J0\u0010\u000e\u001a\u00020\u000f2\u0008\u0008\u0002\u0010\u0010\u001a\u00020\u00112\u0008\u0008\u0002\u0010\u0012\u001a\u00020\u00062\u0008\u0008\u0002\u0010\u0013\u001a\u00020\u0014H\u0007\u00f8\u0001\u0000\u00a2\u0006\u0004\u0008\u0015\u0010\u0016J0\u0010\u0017\u001a\u00020\u000f2\u0008\u0008\u0002\u0010\u0010\u001a\u00020\u00112\u0008\u0008\u0002\u0010\u0018\u001a\u00020\u00062\u0008\u0008\u0002\u0010\u0013\u001a\u00020\u0014H\u0007\u00f8\u0001\u0000\u00a2\u0006\u0004\u0008\u0019\u0010\u0016J\u0012\u0010\u001a\u001a\u00020\u0011*\u00020\u00112\u0006\u0010\u001b\u001a\u00020\u001cR\u000e\u0010\u0003\u001a\u00020\u0004X\u0086T\u00a2\u0006\u0002\n\u0000R\u0019\u0010\u0005\u001a\u00020\u0006\u00f8\u0001\u0000\u00f8\u0001\u0001\u00a2\u0006\n\n\u0002\u0010\t\u001a\u0004\u0008\u0007\u0010\u0008R\u0019\u0010\n\u001a\u00020\u0006\u00f8\u0001\u0000\u00f8\u0001\u0001\u00a2\u0006\n\n\u0002\u0010\t\u001a\u0004\u0008\u000b\u0010\u0008R\u0019\u0010\u000c\u001a\u00020\u0006\u00f8\u0001\u0000\u00f8\u0001\u0001\u00a2\u0006\n\n\u0002\u0010\t\u001a\u0004\u0008\r\u0010\u0008\u0082\u0002\u000b\n\u0005\u0008\u00a1\u001e0\u0001\n\u0002\u0008!\u00a8\u0006\u001d\u00b2\u0006\n\u0010\u001e\u001a\u00020\u0006X\u008a\u0084\u0002\u00b2\u0006\n\u0010\u001f\u001a\u00020\u0006X\u008a\u0084\u0002"
     }
     d2 = {
         "Landroidx/compose/material/TabRowDefaults;",
@@ -84,36 +84,36 @@
 
     int-to-float v0, v0
 
-    .line 521
+    .line 525
     invoke-static {v0}, Landroidx/compose/ui/unit/Dp;->constructor-impl(F)F
 
     move-result v0
 
-    .line 431
+    .line 435
     sput v0, Landroidx/compose/material/TabRowDefaults;->DividerThickness:F
 
     const/4 v0, 0x2
 
     int-to-float v0, v0
 
-    .line 522
+    .line 526
     invoke-static {v0}, Landroidx/compose/ui/unit/Dp;->constructor-impl(F)F
 
     move-result v0
 
-    .line 436
+    .line 440
     sput v0, Landroidx/compose/material/TabRowDefaults;->IndicatorHeight:F
 
     const/16 v0, 0x34
 
     int-to-float v0, v0
 
-    .line 523
+    .line 527
     invoke-static {v0}, Landroidx/compose/ui/unit/Dp;->constructor-impl(F)F
 
     move-result v0
 
-    .line 441
+    .line 445
     sput v0, Landroidx/compose/material/TabRowDefaults;->ScrollableTabRowPadding:F
 
     return-void
@@ -122,7 +122,7 @@
 .method private constructor <init>()V
     .locals 0
 
-    .line 354
+    .line 358
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -139,12 +139,12 @@
 
     move-object/from16 v1, p5
 
-    .line 368
+    .line 372
     invoke-interface {v1, v0}, Landroidx/compose/runtime/Composer;->startRestartGroup(I)Landroidx/compose/runtime/Composer;
 
     move-result-object v1
 
-    const-string v2, "C(Divider)P(1,2:c#ui.unit.Dp,0:c#ui.graphics.Color)366@16242L7,368@16321L66:TabRow.kt#jmzs0o"
+    const-string v2, "C(Divider)P(1,2:c#ui.unit.Dp,0:c#ui.graphics.Color)370@16453L7,372@16532L66:TabRow.kt#jmzs0o"
 
     invoke-static {v1, v2}, Landroidx/compose/runtime/ComposerKt;->sourceInformation(Landroidx/compose/runtime/Composer;Ljava/lang/String;)V
 
@@ -310,7 +310,7 @@
 
     goto :goto_8
 
-    .line 370
+    .line 374
     :cond_c
     invoke-interface {v1}, Landroidx/compose/runtime/Composer;->skipToGroupEnd()V
 
@@ -322,7 +322,7 @@
 
     goto/16 :goto_d
 
-    .line 368
+    .line 372
     :cond_d
     :goto_8
     invoke-interface {v1}, Landroidx/compose/runtime/Composer;->startDefaults()V
@@ -339,7 +339,7 @@
 
     goto :goto_9
 
-    .line 367
+    .line 371
     :cond_e
     invoke-interface {v1}, Landroidx/compose/runtime/Composer;->skipToGroupEnd()V
 
@@ -367,7 +367,7 @@
     :goto_9
     if-eqz v2, :cond_12
 
-    .line 365
+    .line 369
     sget-object v2, Landroidx/compose/ui/Modifier;->Companion:Landroidx/compose/ui/Modifier$Companion;
 
     check-cast v2, Landroidx/compose/ui/Modifier;
@@ -382,7 +382,7 @@
 
     if-eqz v3, :cond_13
 
-    .line 366
+    .line 370
     sget v3, Landroidx/compose/material/TabRowDefaults;->DividerThickness:F
 
     and-int/lit8 v4, v4, -0x71
@@ -397,7 +397,7 @@
 
     if-eqz v5, :cond_14
 
-    .line 367
+    .line 371
     invoke-static {}, Landroidx/compose/material/ContentColorKt;->getLocalContentColor()Landroidx/compose/runtime/ProvidableCompositionLocal;
 
     move-result-object v5
@@ -408,7 +408,7 @@
 
     const-string v8, "CC:CompositionLocal.kt#9igjgp"
 
-    .line 518
+    .line 522
     invoke-static {v1, v7, v8}, Landroidx/compose/runtime/ComposerKt;->sourceInformationMarkerStart(Landroidx/compose/runtime/Composer;ILjava/lang/String;)V
 
     invoke-interface {v1, v5}, Landroidx/compose/runtime/Composer;->consume(Landroidx/compose/runtime/CompositionLocal;)Ljava/lang/Object;
@@ -435,7 +435,7 @@
 
     const/4 v12, 0x0
 
-    .line 367
+    .line 371
     invoke-static/range {v7 .. v14}, Landroidx/compose/ui/graphics/Color;->copy-wmQWz5c$default(JFFFFILjava/lang/Object;)J
 
     move-result-wide v7
@@ -460,9 +460,9 @@
 
     const/4 v8, -0x1
 
-    const-string v9, "androidx.compose.material.TabRowDefaults.Divider (TabRow.kt:363)"
+    const-string v9, "androidx.compose.material.TabRowDefaults.Divider (TabRow.kt:371)"
 
-    .line 368
+    .line 372
     invoke-static {v0, v7, v8, v9}, Landroidx/compose/runtime/ComposerKt;->traceEventStart(IIILjava/lang/String;)V
 
     :cond_15
@@ -492,7 +492,7 @@
 
     move-object v12, v1
 
-    .line 369
+    .line 373
     invoke-static/range {v7 .. v14}, Landroidx/compose/material/DividerKt;->Divider-oMI9zvI(Landroidx/compose/ui/Modifier;JFFLandroidx/compose/runtime/Composer;II)V
 
     invoke-static {}, Landroidx/compose/runtime/ComposerKt;->isTraceInProgress()Z
@@ -503,18 +503,15 @@
 
     invoke-static {}, Landroidx/compose/runtime/ComposerKt;->traceEventEnd()V
 
-    .line 370
+    .line 374
     :cond_16
     :goto_d
     invoke-interface {v1}, Landroidx/compose/runtime/Composer;->endRestartGroup()Landroidx/compose/runtime/ScopeUpdateScope;
 
     move-result-object v8
 
-    if-nez v8, :cond_17
+    if-eqz v8, :cond_17
 
-    goto :goto_e
-
-    :cond_17
     new-instance v9, Landroidx/compose/material/TabRowDefaults$Divider$1;
 
     move-object v0, v9
@@ -531,7 +528,7 @@
 
     invoke-interface {v8, v9}, Landroidx/compose/runtime/ScopeUpdateScope;->updateScope(Lkotlin/jvm/functions/Function2;)V
 
-    :goto_e
+    :cond_17
     return-void
 .end method
 
@@ -544,12 +541,12 @@
 
     move-object/from16 v1, p5
 
-    .line 385
+    .line 389
     invoke-interface {v1, v0}, Landroidx/compose/runtime/Composer;->startRestartGroup(I)Landroidx/compose/runtime/Composer;
 
     move-result-object v1
 
-    const-string v2, "C(Indicator)P(2,1:c#ui.unit.Dp,0:c#ui.graphics.Color)383@16830L7,385@16854L142:TabRow.kt#jmzs0o"
+    const-string v2, "C(Indicator)P(2,1:c#ui.unit.Dp,0:c#ui.graphics.Color)387@17041L7,389@17065L142:TabRow.kt#jmzs0o"
 
     invoke-static {v1, v2}, Landroidx/compose/runtime/ComposerKt;->sourceInformation(Landroidx/compose/runtime/Composer;Ljava/lang/String;)V
 
@@ -704,21 +701,21 @@
     move-object/from16 v9, p0
 
     :goto_8
-    and-int/lit16 v4, v4, 0x16db
+    and-int/lit16 v10, v4, 0x16db
 
-    const/16 v10, 0x492
+    const/16 v11, 0x492
 
-    if-ne v4, v10, :cond_e
+    if-ne v10, v11, :cond_e
 
     invoke-interface {v1}, Landroidx/compose/runtime/Composer;->getSkipping()Z
 
-    move-result v4
+    move-result v10
 
-    if-nez v4, :cond_c
+    if-nez v10, :cond_c
 
     goto :goto_a
 
-    .line 392
+    .line 396
     :cond_c
     invoke-interface {v1}, Landroidx/compose/runtime/Composer;->skipToGroupEnd()V
 
@@ -732,123 +729,139 @@
 
     goto/16 :goto_f
 
-    .line 385
+    .line 389
     :cond_e
     :goto_a
     invoke-interface {v1}, Landroidx/compose/runtime/Composer;->startDefaults()V
 
-    and-int/lit8 v4, v6, 0x1
+    and-int/lit8 v10, v6, 0x1
 
-    if-eqz v4, :cond_10
+    if-eqz v10, :cond_12
 
     invoke-interface {v1}, Landroidx/compose/runtime/Composer;->getDefaultsInvalid()Z
 
-    move-result v4
+    move-result v10
 
-    if-eqz v4, :cond_f
+    if-eqz v10, :cond_f
 
     goto :goto_b
 
-    .line 519
+    .line 523
     :cond_f
     invoke-interface {v1}, Landroidx/compose/runtime/Composer;->skipToGroupEnd()V
 
+    and-int/lit8 v2, p7, 0x2
+
+    if-eqz v2, :cond_10
+
+    and-int/lit8 v4, v4, -0x71
+
+    :cond_10
+    and-int/lit8 v2, p7, 0x4
+
+    if-eqz v2, :cond_11
+
+    and-int/lit16 v4, v4, -0x381
+
+    :cond_11
     move-object v2, v3
 
     move v3, v5
 
     goto :goto_e
 
-    :cond_10
+    :cond_12
     :goto_b
-    if-eqz v2, :cond_11
+    if-eqz v2, :cond_13
 
-    .line 382
+    .line 386
     sget-object v2, Landroidx/compose/ui/Modifier;->Companion:Landroidx/compose/ui/Modifier$Companion;
 
     check-cast v2, Landroidx/compose/ui/Modifier;
 
     goto :goto_c
 
-    :cond_11
+    :cond_13
     move-object v2, v3
 
     :goto_c
     and-int/lit8 v3, p7, 0x2
 
-    if-eqz v3, :cond_12
+    if-eqz v3, :cond_14
 
-    .line 383
+    .line 387
     sget v3, Landroidx/compose/material/TabRowDefaults;->IndicatorHeight:F
+
+    and-int/lit8 v4, v4, -0x71
 
     goto :goto_d
 
-    :cond_12
+    :cond_14
     move v3, v5
 
     :goto_d
-    and-int/lit8 v4, p7, 0x4
+    and-int/lit8 v5, p7, 0x4
 
-    if-eqz v4, :cond_13
+    if-eqz v5, :cond_15
 
-    .line 384
+    .line 388
     invoke-static {}, Landroidx/compose/material/ContentColorKt;->getLocalContentColor()Landroidx/compose/runtime/ProvidableCompositionLocal;
 
-    move-result-object v4
+    move-result-object v5
 
-    check-cast v4, Landroidx/compose/runtime/CompositionLocal;
+    check-cast v5, Landroidx/compose/runtime/CompositionLocal;
 
-    const v5, 0x789c5f52
+    const v7, 0x789c5f52
 
-    const-string v7, "CC:CompositionLocal.kt#9igjgp"
+    const-string v8, "CC:CompositionLocal.kt#9igjgp"
 
-    .line 519
-    invoke-static {v1, v5, v7}, Landroidx/compose/runtime/ComposerKt;->sourceInformationMarkerStart(Landroidx/compose/runtime/Composer;ILjava/lang/String;)V
+    .line 523
+    invoke-static {v1, v7, v8}, Landroidx/compose/runtime/ComposerKt;->sourceInformationMarkerStart(Landroidx/compose/runtime/Composer;ILjava/lang/String;)V
 
-    invoke-interface {v1, v4}, Landroidx/compose/runtime/Composer;->consume(Landroidx/compose/runtime/CompositionLocal;)Ljava/lang/Object;
+    invoke-interface {v1, v5}, Landroidx/compose/runtime/Composer;->consume(Landroidx/compose/runtime/CompositionLocal;)Ljava/lang/Object;
 
-    move-result-object v4
+    move-result-object v5
 
     invoke-static {v1}, Landroidx/compose/runtime/ComposerKt;->sourceInformationMarkerEnd(Landroidx/compose/runtime/Composer;)V
 
-    check-cast v4, Landroidx/compose/ui/graphics/Color;
+    check-cast v5, Landroidx/compose/ui/graphics/Color;
 
-    invoke-virtual {v4}, Landroidx/compose/ui/graphics/Color;->unbox-impl()J
+    invoke-virtual {v5}, Landroidx/compose/ui/graphics/Color;->unbox-impl()J
 
-    move-result-wide v4
+    move-result-wide v7
 
-    move-wide v7, v4
+    and-int/lit16 v4, v4, -0x381
 
-    :cond_13
+    :cond_15
     :goto_e
     invoke-interface {v1}, Landroidx/compose/runtime/Composer;->endDefaults()V
 
     invoke-static {}, Landroidx/compose/runtime/ComposerKt;->isTraceInProgress()Z
 
-    move-result v4
+    move-result v5
 
-    if-eqz v4, :cond_14
+    if-eqz v5, :cond_16
 
-    const/4 v4, -0x1
+    const/4 v5, -0x1
 
-    const-string v5, "androidx.compose.material.TabRowDefaults.Indicator (TabRow.kt:380)"
+    const-string v10, "androidx.compose.material.TabRowDefaults.Indicator (TabRow.kt:388)"
 
-    .line 385
-    invoke-static {v0, v6, v4, v5}, Landroidx/compose/runtime/ComposerKt;->traceEventStart(IIILjava/lang/String;)V
+    .line 389
+    invoke-static {v0, v4, v5, v10}, Landroidx/compose/runtime/ComposerKt;->traceEventStart(IIILjava/lang/String;)V
 
-    :cond_14
+    :cond_16
     const/4 v0, 0x0
 
     const/4 v4, 0x0
 
     const/4 v5, 0x1
 
-    .line 388
+    .line 392
     invoke-static {v2, v0, v5, v4}, Landroidx/compose/foundation/layout/SizeKt;->fillMaxWidth$default(Landroidx/compose/ui/Modifier;FILjava/lang/Object;)Landroidx/compose/ui/Modifier;
 
     move-result-object v0
 
-    .line 389
+    .line 393
     invoke-static {v0, v3}, Landroidx/compose/foundation/layout/SizeKt;->height-3ABfNKs(Landroidx/compose/ui/Modifier;F)Landroidx/compose/ui/Modifier;
 
     move-result-object v10
@@ -861,14 +874,14 @@
 
     move-wide v11, v7
 
-    .line 390
+    .line 394
     invoke-static/range {v10 .. v15}, Landroidx/compose/foundation/BackgroundKt;->background-bw27NRU$default(Landroidx/compose/ui/Modifier;JLandroidx/compose/ui/graphics/Shape;ILjava/lang/Object;)Landroidx/compose/ui/Modifier;
 
     move-result-object v0
 
     const/4 v4, 0x0
 
-    .line 386
+    .line 390
     invoke-static {v0, v1, v4}, Landroidx/compose/foundation/layout/BoxKt;->Box(Landroidx/compose/ui/Modifier;Landroidx/compose/runtime/Composer;I)V
 
     invoke-static {}, Landroidx/compose/runtime/ComposerKt;->isTraceInProgress()Z
@@ -879,19 +892,16 @@
 
     invoke-static {}, Landroidx/compose/runtime/ComposerKt;->traceEventEnd()V
 
-    goto :goto_9
+    goto/16 :goto_9
 
-    .line 392
+    .line 396
     :goto_f
     invoke-interface {v1}, Landroidx/compose/runtime/Composer;->endRestartGroup()Landroidx/compose/runtime/ScopeUpdateScope;
 
     move-result-object v8
 
-    if-nez v8, :cond_15
+    if-eqz v8, :cond_17
 
-    goto :goto_10
-
-    :cond_15
     new-instance v10, Landroidx/compose/material/TabRowDefaults$Indicator$1;
 
     move-object v0, v10
@@ -908,14 +918,14 @@
 
     invoke-interface {v8, v10}, Landroidx/compose/runtime/ScopeUpdateScope;->updateScope(Lkotlin/jvm/functions/Function2;)V
 
-    :goto_10
+    :cond_17
     return-void
 .end method
 
 .method public final getDividerThickness-D9Ej5fM()F
     .locals 0
 
-    .line 431
+    .line 435
     sget p0, Landroidx/compose/material/TabRowDefaults;->DividerThickness:F
 
     return p0
@@ -924,7 +934,7 @@
 .method public final getIndicatorHeight-D9Ej5fM()F
     .locals 0
 
-    .line 436
+    .line 440
     sget p0, Landroidx/compose/material/TabRowDefaults;->IndicatorHeight:F
 
     return p0
@@ -933,7 +943,7 @@
 .method public final getScrollableTabRowPadding-D9Ej5fM()F
     .locals 0
 
-    .line 441
+    .line 445
     sget p0, Landroidx/compose/material/TabRowDefaults;->ScrollableTabRowPadding:F
 
     return p0
@@ -942,15 +952,7 @@
 .method public final tabIndicatorOffset(Landroidx/compose/ui/Modifier;Landroidx/compose/material/TabPosition;)Landroidx/compose/ui/Modifier;
     .locals 1
 
-    const-string p0, "<this>"
-
-    invoke-static {p1, p0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string p0, "currentTabPosition"
-
-    invoke-static {p2, p0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 520
+    .line 524
     invoke-static {}, Landroidx/compose/ui/platform/InspectableValueKt;->isDebugInspectorInfoEnabled()Z
 
     move-result p0
@@ -970,7 +972,7 @@
 
     move-result-object p0
 
-    .line 403
+    .line 407
     :goto_0
     new-instance v0, Landroidx/compose/material/TabRowDefaults$tabIndicatorOffset$2;
 

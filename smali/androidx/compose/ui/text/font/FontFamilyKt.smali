@@ -34,10 +34,6 @@
 .method public static final FontFamily(Landroidx/compose/ui/text/font/Typeface;)Landroidx/compose/ui/text/font/FontFamily;
     .locals 1
 
-    const-string/jumbo v0, "typeface"
-
-    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
     .line 269
     new-instance v0, Landroidx/compose/ui/text/font/LoadedFontFamily;
 
@@ -61,10 +57,6 @@
         }
     .end annotation
 
-    const-string v0, "fonts"
-
-    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
     .line 253
     new-instance v0, Landroidx/compose/ui/text/font/FontListFontFamily;
 
@@ -77,10 +69,6 @@
 
 .method public static final varargs FontFamily([Landroidx/compose/ui/text/font/Font;)Landroidx/compose/ui/text/font/FontFamily;
     .locals 1
-
-    const-string v0, "fonts"
-
-    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 261
     new-instance v0, Landroidx/compose/ui/text/font/FontListFontFamily;

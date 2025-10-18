@@ -25,10 +25,10 @@
 .method constructor <init>(Ljp/co/sony/mc/camera/view/FragmentController;)V
     .locals 0
 
-    .line 7625
+    .line 7877
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 7626
+    .line 7878
     iput-object p1, p0, Ljp/co/sony/mc/camera/view/FragmentController$ApertureDetectListenerImpl;->mController:Ljp/co/sony/mc/camera/view/FragmentController;
 
     return-void
@@ -39,7 +39,7 @@
 .method public onApertureDetected(F)V
     .locals 0
 
-    .line 7631
+    .line 7883
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/FragmentController$ApertureDetectListenerImpl;->mController:Ljp/co/sony/mc/camera/view/FragmentController;
 
     invoke-static {p0}, Ljp/co/sony/mc/camera/view/FragmentController;->-$$Nest$fgetmCameraEventNotifier(Ljp/co/sony/mc/camera/view/FragmentController;)Ljp/co/sony/mc/camera/view/CameraEventListener;

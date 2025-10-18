@@ -1,6 +1,6 @@
 .class public final Landroidx/compose/ui/tooling/ComposeViewAdapter$FakeViewModelStoreOwner$1;
 .super Ljava/lang/Object;
-.source "ComposeViewAdapter.kt"
+.source "ComposeViewAdapter.android.kt"
 
 # interfaces
 .implements Landroidx/lifecycle/ViewModelStoreOwner;
@@ -50,17 +50,17 @@
 .method constructor <init>()V
     .locals 1
 
-    .line 649
+    .line 642
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 650
+    .line 643
     new-instance v0, Landroidx/lifecycle/ViewModelStore;
 
     invoke-direct {v0}, Landroidx/lifecycle/ViewModelStore;-><init>()V
 
     iput-object v0, p0, Landroidx/compose/ui/tooling/ComposeViewAdapter$FakeViewModelStoreOwner$1;->vmStore:Landroidx/lifecycle/ViewModelStore;
 
-    .line 652
+    .line 645
     iput-object v0, p0, Landroidx/compose/ui/tooling/ComposeViewAdapter$FakeViewModelStoreOwner$1;->viewModelStore:Landroidx/lifecycle/ViewModelStore;
 
     return-void
@@ -71,7 +71,7 @@
 .method public getViewModelStore()Landroidx/lifecycle/ViewModelStore;
     .locals 0
 
-    .line 652
+    .line 645
     iget-object p0, p0, Landroidx/compose/ui/tooling/ComposeViewAdapter$FakeViewModelStoreOwner$1;->viewModelStore:Landroidx/lifecycle/ViewModelStore;
 
     return-object p0

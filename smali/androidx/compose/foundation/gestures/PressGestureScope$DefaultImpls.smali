@@ -130,13 +130,9 @@
 .end method
 
 .method public static toRect(Landroidx/compose/foundation/gestures/PressGestureScope;Landroidx/compose/ui/unit/DpRect;)Landroidx/compose/ui/geometry/Rect;
-    .locals 1
+    .locals 0
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
-
-    const-string v0, "$receiver"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 45
     invoke-static {p0, p1}, Landroidx/compose/foundation/gestures/PressGestureScope;->access$toRect$jd(Landroidx/compose/foundation/gestures/PressGestureScope;Landroidx/compose/ui/unit/DpRect;)Landroidx/compose/ui/geometry/Rect;

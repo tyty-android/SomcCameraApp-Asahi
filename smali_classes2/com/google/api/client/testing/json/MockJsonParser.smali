@@ -10,7 +10,7 @@
 
 
 # direct methods
-.method constructor <init>(Lcom/google/api/client/json/JsonFactory;)V
+.method public constructor <init>(Lcom/google/api/client/json/JsonFactory;)V
     .locals 0
 
     .line 41

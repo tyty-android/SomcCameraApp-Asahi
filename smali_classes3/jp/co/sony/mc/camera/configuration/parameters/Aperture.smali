@@ -77,7 +77,7 @@
     .line 26
     new-instance v6, Ljp/co/sony/mc/camera/configuration/parameters/Aperture;
 
-    const v4, 0x7f1101f8
+    const v4, 0x7f1101fb
 
     const v5, 0x3fd9999a    # 1.7f
 
@@ -96,7 +96,7 @@
     .line 30
     new-instance v0, Ljp/co/sony/mc/camera/configuration/parameters/Aperture;
 
-    const v11, 0x7f1101f9
+    const v11, 0x7f1101fc
 
     const/high16 v12, 0x40000000    # 2.0f
 
@@ -115,7 +115,7 @@
     .line 34
     new-instance v0, Ljp/co/sony/mc/camera/configuration/parameters/Aperture;
 
-    const v5, 0x7f1101fa
+    const v5, 0x7f1101fd
 
     const v6, 0x400ccccd    # 2.2f
 
@@ -134,7 +134,7 @@
     .line 38
     new-instance v0, Ljp/co/sony/mc/camera/configuration/parameters/Aperture;
 
-    const v11, 0x7f1101fb
+    const v11, 0x7f1101fe
 
     const v12, 0x40133333    # 2.3f
 
@@ -151,7 +151,7 @@
     .line 42
     new-instance v0, Ljp/co/sony/mc/camera/configuration/parameters/Aperture;
 
-    const v5, 0x7f1101fc
+    const v5, 0x7f1101ff
 
     const v6, 0x4019999a    # 2.4f
 
@@ -168,7 +168,7 @@
     .line 46
     new-instance v0, Ljp/co/sony/mc/camera/configuration/parameters/Aperture;
 
-    const v11, 0x7f1101fd
+    const v11, 0x7f110200
 
     const v12, 0x40333333    # 2.8f
 
@@ -185,7 +185,7 @@
     .line 50
     new-instance v0, Ljp/co/sony/mc/camera/configuration/parameters/Aperture;
 
-    const v5, 0x7f1101fe
+    const v5, 0x7f110201
 
     const/high16 v6, 0x40800000    # 4.0f
 
@@ -235,7 +235,7 @@
 .method public static getApertureFromValue(F)Ljp/co/sony/mc/camera/configuration/parameters/Aperture;
     .locals 6
 
-    .line 176
+    .line 186
     invoke-static {}, Ljp/co/sony/mc/camera/configuration/parameters/Aperture;->values()[Ljp/co/sony/mc/camera/configuration/parameters/Aperture;
 
     move-result-object v0
@@ -249,7 +249,7 @@
 
     aget-object v3, v0, v2
 
-    .line 177
+    .line 187
     iget v4, v3, Ljp/co/sony/mc/camera/configuration/parameters/Aperture;->mConfigApertureValue:F
 
     sub-float/2addr v4, p0
@@ -271,47 +271,47 @@
 
     goto :goto_0
 
-    .line 181
+    .line 191
     :cond_1
     sget-object p0, Ljp/co/sony/mc/camera/configuration/parameters/Aperture;->F2_0:Ljp/co/sony/mc/camera/configuration/parameters/Aperture;
 
     return-object p0
 .end method
 
-.method public static getDefaultValue(Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;FLjp/co/sony/mc/camera/configuration/parameters/VideoMfHdr;Z)Ljp/co/sony/mc/camera/configuration/parameters/Aperture;
+.method public static getDefaultValue(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;FLjp/co/sony/mc/camera/configuration/parameters/VideoMfHdr;Z)Ljp/co/sony/mc/camera/configuration/parameters/Aperture;
     .locals 0
 
-    .line 165
-    invoke-static {p0, p1, p2, p3}, Ljp/co/sony/mc/camera/configuration/parameters/Aperture;->getOptions(Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;FLjp/co/sony/mc/camera/configuration/parameters/VideoMfHdr;Z)[Ljp/co/sony/mc/camera/configuration/parameters/Aperture;
+    .line 175
+    invoke-static {p0, p1, p2, p3, p4}, Ljp/co/sony/mc/camera/configuration/parameters/Aperture;->getOptions(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;FLjp/co/sony/mc/camera/configuration/parameters/VideoMfHdr;Z)[Ljp/co/sony/mc/camera/configuration/parameters/Aperture;
 
-    move-result-object p1
+    move-result-object p0
 
-    .line 166
-    array-length p2, p1
+    .line 176
+    array-length p2, p0
 
     const/4 p3, 0x0
 
     if-lez p2, :cond_0
 
-    .line 167
-    aget-object p0, p1, p3
+    .line 177
+    aget-object p0, p0, p3
 
     return-object p0
 
-    .line 168
+    .line 178
     :cond_0
-    invoke-static {p0}, Ljp/co/sony/mc/camera/util/capability/PlatformCapability;->getSupportedApertures(Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;)Ljava/util/List;
+    invoke-static {p1}, Ljp/co/sony/mc/camera/util/capability/PlatformCapability;->getSupportedApertures(Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;)Ljava/util/List;
 
-    move-result-object p1
+    move-result-object p0
 
-    invoke-interface {p1}, Ljava/util/List;->size()I
+    invoke-interface {p0}, Ljava/util/List;->size()I
 
-    move-result p1
+    move-result p0
 
-    if-lez p1, :cond_1
+    if-lez p0, :cond_1
 
-    .line 169
-    invoke-static {p0}, Ljp/co/sony/mc/camera/util/capability/PlatformCapability;->getSupportedApertures(Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;)Ljava/util/List;
+    .line 179
+    invoke-static {p1}, Ljp/co/sony/mc/camera/util/capability/PlatformCapability;->getSupportedApertures(Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;)Ljava/util/List;
 
     move-result-object p0
 
@@ -331,34 +331,34 @@
 
     return-object p0
 
-    .line 171
+    .line 181
     :cond_1
     sget-object p0, Ljp/co/sony/mc/camera/configuration/parameters/Aperture;->F2_0:Ljp/co/sony/mc/camera/configuration/parameters/Aperture;
 
     return-object p0
 .end method
 
-.method public static getNextAperture(Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;FLjp/co/sony/mc/camera/configuration/parameters/Aperture;Ljp/co/sony/mc/camera/configuration/parameters/VideoMfHdr;Z)Ljp/co/sony/mc/camera/configuration/parameters/Aperture;
+.method public static getNextAperture(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;FLjp/co/sony/mc/camera/configuration/parameters/Aperture;Ljp/co/sony/mc/camera/configuration/parameters/VideoMfHdr;Z)Ljp/co/sony/mc/camera/configuration/parameters/Aperture;
     .locals 0
 
-    .line 187
-    invoke-static {p0, p1, p3, p4}, Ljp/co/sony/mc/camera/configuration/parameters/Aperture;->getOptions(Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;FLjp/co/sony/mc/camera/configuration/parameters/VideoMfHdr;Z)[Ljp/co/sony/mc/camera/configuration/parameters/Aperture;
+    .line 197
+    invoke-static {p0, p1, p2, p4, p5}, Ljp/co/sony/mc/camera/configuration/parameters/Aperture;->getOptions(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;FLjp/co/sony/mc/camera/configuration/parameters/VideoMfHdr;Z)[Ljp/co/sony/mc/camera/configuration/parameters/Aperture;
 
     move-result-object p0
 
-    .line 186
+    .line 196
     invoke-static {p0}, Ljava/util/Arrays;->asList([Ljava/lang/Object;)Ljava/util/List;
 
     move-result-object p0
 
-    .line 188
-    invoke-interface {p0, p2}, Ljava/util/List;->indexOf(Ljava/lang/Object;)I
+    .line 198
+    invoke-interface {p0, p3}, Ljava/util/List;->indexOf(Ljava/lang/Object;)I
 
     move-result p1
 
     add-int/lit8 p1, p1, 0x1
 
-    .line 190
+    .line 200
     invoke-interface {p0}, Ljava/util/List;->size()I
 
     move-result p2
@@ -367,7 +367,7 @@
 
     const/4 p1, 0x0
 
-    .line 193
+    .line 203
     :cond_0
     invoke-interface {p0, p1}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
@@ -378,16 +378,16 @@
     return-object p0
 .end method
 
-.method public static getOptions(Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;FLjp/co/sony/mc/camera/configuration/parameters/VideoMfHdr;Z)[Ljp/co/sony/mc/camera/configuration/parameters/Aperture;
-    .locals 6
+.method public static getOptions(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;FLjp/co/sony/mc/camera/configuration/parameters/VideoMfHdr;Z)[Ljp/co/sony/mc/camera/configuration/parameters/Aperture;
+    .locals 5
 
-    .line 146
+    .line 156
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
-    .line 147
-    invoke-static {p0, p1, p2, p3}, Ljp/co/sony/mc/camera/util/capability/CameraSensorInfo;->getFValueList(Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;FLjp/co/sony/mc/camera/configuration/parameters/VideoMfHdr;Z)Ljava/util/List;
+    .line 157
+    invoke-static {p0, p1, p2, p3, p4}, Ljp/co/sony/mc/camera/util/capability/CameraSensorInfo;->getFValueList(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;FLjp/co/sony/mc/camera/configuration/parameters/VideoMfHdr;Z)Ljava/util/List;
 
     move-result-object p0
 
@@ -395,12 +395,12 @@
 
     if-nez p0, :cond_0
 
-    .line 150
+    .line 160
     new-array p0, p1, [Ljp/co/sony/mc/camera/configuration/parameters/Aperture;
 
     return-object p0
 
-    .line 153
+    .line 163
     :cond_0
     invoke-static {}, Ljp/co/sony/mc/camera/configuration/parameters/Aperture;->values()[Ljp/co/sony/mc/camera/configuration/parameters/Aperture;
 
@@ -408,56 +408,56 @@
 
     array-length p3, p2
 
-    move v1, p1
+    move p4, p1
 
     :goto_0
-    if-ge v1, p3, :cond_3
+    if-ge p4, p3, :cond_3
 
-    aget-object v2, p2, v1
+    aget-object v1, p2, p4
 
-    .line 154
+    .line 164
     invoke-interface {p0}, Ljava/util/List;->iterator()Ljava/util/Iterator;
 
-    move-result-object v3
+    move-result-object v2
 
     :cond_1
     :goto_1
-    invoke-interface {v3}, Ljava/util/Iterator;->hasNext()Z
+    invoke-interface {v2}, Ljava/util/Iterator;->hasNext()Z
 
-    move-result v4
+    move-result v3
 
-    if-eqz v4, :cond_2
+    if-eqz v3, :cond_2
 
-    invoke-interface {v3}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+    invoke-interface {v2}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
-    move-result-object v4
+    move-result-object v3
 
-    check-cast v4, Ljava/lang/Float;
+    check-cast v3, Ljava/lang/Float;
 
-    .line 155
-    iget v5, v2, Ljp/co/sony/mc/camera/configuration/parameters/Aperture;->mConfigApertureValue:F
+    .line 165
+    iget v4, v1, Ljp/co/sony/mc/camera/configuration/parameters/Aperture;->mConfigApertureValue:F
 
-    invoke-virtual {v4}, Ljava/lang/Float;->floatValue()F
+    invoke-virtual {v3}, Ljava/lang/Float;->floatValue()F
 
-    move-result v4
+    move-result v3
 
-    invoke-static {v5, v4}, Ljava/lang/Float;->compare(FF)I
+    invoke-static {v4, v3}, Ljava/lang/Float;->compare(FF)I
 
-    move-result v4
+    move-result v3
 
-    if-nez v4, :cond_1
+    if-nez v3, :cond_1
 
-    .line 156
-    invoke-virtual {v0, v2}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+    .line 166
+    invoke-virtual {v0, v1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
     goto :goto_1
 
     :cond_2
-    add-int/lit8 v1, v1, 0x1
+    add-int/lit8 p4, p4, 0x1
 
     goto :goto_0
 
-    .line 160
+    .line 170
     :cond_3
     new-array p0, p1, [Ljp/co/sony/mc/camera/configuration/parameters/Aperture;
 

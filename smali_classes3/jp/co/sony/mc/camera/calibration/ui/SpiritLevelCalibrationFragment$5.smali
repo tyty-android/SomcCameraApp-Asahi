@@ -43,7 +43,7 @@
 
     move-result v0
 
-    const v1, 0x7f0900db
+    const v1, 0x7f0900d9
 
     const/4 v2, 0x0
 
@@ -149,7 +149,7 @@
     :goto_0
     iget-object p0, p0, Ljp/co/sony/mc/camera/calibration/ui/SpiritLevelCalibrationFragment$5;->this$0:Ljp/co/sony/mc/camera/calibration/ui/SpiritLevelCalibrationFragment;
 
-    const p1, 0x7f1102d0
+    const p1, 0x7f1102f5
 
     invoke-virtual {p0, p1}, Ljp/co/sony/mc/camera/calibration/ui/SpiritLevelCalibrationFragment;->getString(I)Ljava/lang/String;
 
@@ -165,7 +165,7 @@
 
     move-result v0
 
-    const v1, 0x7f0903c4
+    const v1, 0x7f0903c3
 
     const/4 v3, 0x0
 
@@ -177,7 +177,7 @@
     .line 384
     iget-object p0, p0, Ljp/co/sony/mc/camera/calibration/ui/SpiritLevelCalibrationFragment$5;->this$0:Ljp/co/sony/mc/camera/calibration/ui/SpiritLevelCalibrationFragment;
 
-    const p1, 0x7f1102d1
+    const p1, 0x7f1102f6
 
     invoke-virtual {p0, p1}, Ljp/co/sony/mc/camera/calibration/ui/SpiritLevelCalibrationFragment;->getString(I)Ljava/lang/String;
 
@@ -193,7 +193,7 @@
 
     move-result p1
 
-    const v0, 0x7f0900a2
+    const v0, 0x7f0900a3
 
     if-ne p1, v0, :cond_7
 

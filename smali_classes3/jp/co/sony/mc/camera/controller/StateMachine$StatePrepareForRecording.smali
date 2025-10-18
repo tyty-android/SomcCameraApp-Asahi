@@ -21,43 +21,38 @@
 
 .field private mIsPrepareStopping:Z
 
-.field private mRecordingParam:Ljp/co/sony/mc/camera/CameraAccessor$RequestRecordingParam;
-
 .field final synthetic this$0:Ljp/co/sony/mc/camera/controller/StateMachine;
 
 
 # direct methods
-.method private constructor <init>(Ljp/co/sony/mc/camera/controller/StateMachine;Ljp/co/sony/mc/camera/CameraAccessor$RequestRecordingParam;Z)V
+.method private constructor <init>(Ljp/co/sony/mc/camera/controller/StateMachine;Z)V
     .locals 1
 
-    .line 3517
+    .line 3545
     iput-object p1, p0, Ljp/co/sony/mc/camera/controller/StateMachine$StatePrepareForRecording;->this$0:Ljp/co/sony/mc/camera/controller/StateMachine;
 
     const/4 v0, 0x0
 
     invoke-direct {p0, p1, v0}, Ljp/co/sony/mc/camera/controller/StateMachine$StateNone;-><init>(Ljp/co/sony/mc/camera/controller/StateMachine;Ljp/co/sony/mc/camera/controller/StateMachine$StateNone-IA;)V
 
-    .line 3514
+    .line 3543
     iput-object v0, p0, Ljp/co/sony/mc/camera/controller/StateMachine$StatePrepareForRecording;->mCaptureParams:[Ljava/lang/Object;
 
-    .line 3518
+    .line 3546
     sget-object p1, Ljp/co/sony/mc/camera/controller/StateMachine$CaptureState;->STATE_PREPARE_FOR_RECORDING:Ljp/co/sony/mc/camera/controller/StateMachine$CaptureState;
 
     iput-object p1, p0, Ljp/co/sony/mc/camera/controller/StateMachine$StatePrepareForRecording;->mCaptureState:Ljp/co/sony/mc/camera/controller/StateMachine$CaptureState;
 
-    .line 3519
-    iput-object p2, p0, Ljp/co/sony/mc/camera/controller/StateMachine$StatePrepareForRecording;->mRecordingParam:Ljp/co/sony/mc/camera/CameraAccessor$RequestRecordingParam;
-
-    .line 3520
-    iput-boolean p3, p0, Ljp/co/sony/mc/camera/controller/StateMachine$StatePrepareForRecording;->mIsPrepareStopping:Z
+    .line 3547
+    iput-boolean p2, p0, Ljp/co/sony/mc/camera/controller/StateMachine$StatePrepareForRecording;->mIsPrepareStopping:Z
 
     return-void
 .end method
 
-.method synthetic constructor <init>(Ljp/co/sony/mc/camera/controller/StateMachine;Ljp/co/sony/mc/camera/CameraAccessor$RequestRecordingParam;ZLjp/co/sony/mc/camera/controller/StateMachine$StatePrepareForRecording-IA;)V
+.method synthetic constructor <init>(Ljp/co/sony/mc/camera/controller/StateMachine;ZLjp/co/sony/mc/camera/controller/StateMachine$StatePrepareForRecording-IA;)V
     .locals 0
 
-    invoke-direct {p0, p1, p2, p3}, Ljp/co/sony/mc/camera/controller/StateMachine$StatePrepareForRecording;-><init>(Ljp/co/sony/mc/camera/controller/StateMachine;Ljp/co/sony/mc/camera/CameraAccessor$RequestRecordingParam;Z)V
+    invoke-direct {p0, p1, p2}, Ljp/co/sony/mc/camera/controller/StateMachine$StatePrepareForRecording;-><init>(Ljp/co/sony/mc/camera/controller/StateMachine;Z)V
 
     return-void
 .end method
@@ -67,7 +62,7 @@
 .method public varargs handleCapture([Ljava/lang/Object;)V
     .locals 0
 
-    .line 3548
+    .line 3576
     iput-object p1, p0, Ljp/co/sony/mc/camera/controller/StateMachine$StatePrepareForRecording;->mCaptureParams:[Ljava/lang/Object;
 
     return-void
@@ -76,7 +71,7 @@
 .method public varargs handleOnRecordingError([Ljava/lang/Object;)V
     .locals 0
 
-    .line 3531
+    .line 3558
     iget-object p1, p0, Ljp/co/sony/mc/camera/controller/StateMachine$StatePrepareForRecording;->this$0:Ljp/co/sony/mc/camera/controller/StateMachine;
 
     invoke-static {p1}, Ljp/co/sony/mc/camera/controller/StateMachine;->-$$Nest$fgetmRecordingCallback(Ljp/co/sony/mc/camera/controller/StateMachine;)Ljp/co/sony/mc/camera/CameraAccessor$RecordingCallback;
@@ -85,7 +80,7 @@
 
     if-eqz p1, :cond_0
 
-    .line 3532
+    .line 3559
     iget-object p0, p0, Ljp/co/sony/mc/camera/controller/StateMachine$StatePrepareForRecording;->this$0:Ljp/co/sony/mc/camera/controller/StateMachine;
 
     invoke-static {p0}, Ljp/co/sony/mc/camera/controller/StateMachine;->-$$Nest$fgetmRecordingCallback(Ljp/co/sony/mc/camera/controller/StateMachine;)Ljp/co/sony/mc/camera/CameraAccessor$RecordingCallback;
@@ -103,7 +98,7 @@
 .method public varargs handleOnRecordingStarted([Ljava/lang/Object;)V
     .locals 3
 
-    .line 3557
+    .line 3585
     iget-object p1, p0, Ljp/co/sony/mc/camera/controller/StateMachine$StatePrepareForRecording;->this$0:Ljp/co/sony/mc/camera/controller/StateMachine;
 
     invoke-static {p1}, Ljp/co/sony/mc/camera/controller/StateMachine;->-$$Nest$fgetmCurrentState(Ljp/co/sony/mc/camera/controller/StateMachine;)Ljp/co/sony/mc/camera/controller/StateMachine$State;
@@ -120,7 +115,7 @@
 
     return-void
 
-    .line 3560
+    .line 3588
     :cond_0
     iget-object p1, p0, Ljp/co/sony/mc/camera/controller/StateMachine$StatePrepareForRecording;->this$0:Ljp/co/sony/mc/camera/controller/StateMachine;
 
@@ -136,7 +131,7 @@
 
     invoke-static {p1, v0, v1}, Ljp/co/sony/mc/camera/controller/StateMachine;->-$$Nest$mchangeTo(Ljp/co/sony/mc/camera/controller/StateMachine;Ljp/co/sony/mc/camera/controller/StateMachine$State;[Ljava/lang/Object;)V
 
-    .line 3561
+    .line 3589
     iget-object p1, p0, Ljp/co/sony/mc/camera/controller/StateMachine$StatePrepareForRecording;->this$0:Ljp/co/sony/mc/camera/controller/StateMachine;
 
     invoke-static {p1}, Ljp/co/sony/mc/camera/controller/StateMachine;->-$$Nest$fgetmRecordingCallback(Ljp/co/sony/mc/camera/controller/StateMachine;)Ljp/co/sony/mc/camera/CameraAccessor$RecordingCallback;
@@ -145,7 +140,7 @@
 
     if-eqz p1, :cond_1
 
-    .line 3562
+    .line 3590
     iget-object p1, p0, Ljp/co/sony/mc/camera/controller/StateMachine$StatePrepareForRecording;->this$0:Ljp/co/sony/mc/camera/controller/StateMachine;
 
     invoke-static {p1}, Ljp/co/sony/mc/camera/controller/StateMachine;->-$$Nest$fgetmRecordingCallback(Ljp/co/sony/mc/camera/controller/StateMachine;)Ljp/co/sony/mc/camera/CameraAccessor$RecordingCallback;
@@ -156,13 +151,13 @@
 
     invoke-interface {p1, v0}, Ljp/co/sony/mc/camera/CameraAccessor$RecordingCallback;->onRecordingStarted(Z)V
 
-    .line 3564
+    .line 3592
     :cond_1
     iget-boolean p1, p0, Ljp/co/sony/mc/camera/controller/StateMachine$StatePrepareForRecording;->mIsPrepareStopping:Z
 
     if-eqz p1, :cond_2
 
-    .line 3565
+    .line 3593
     iget-object p1, p0, Ljp/co/sony/mc/camera/controller/StateMachine$StatePrepareForRecording;->this$0:Ljp/co/sony/mc/camera/controller/StateMachine;
 
     sget-object v0, Ljp/co/sony/mc/camera/controller/StateMachine$TransitterEvent;->EVENT_STOP_RECORDING:Ljp/co/sony/mc/camera/controller/StateMachine$TransitterEvent;
@@ -171,18 +166,18 @@
 
     invoke-virtual {p1, v0, v1}, Ljp/co/sony/mc/camera/controller/StateMachine;->sendEvent(Ljp/co/sony/mc/camera/controller/StateMachine$TransitterEvent;[Ljava/lang/Object;)V
 
-    .line 3566
+    .line 3594
     iput-boolean v2, p0, Ljp/co/sony/mc/camera/controller/StateMachine$StatePrepareForRecording;->mIsPrepareStopping:Z
 
     goto :goto_0
 
-    .line 3568
+    .line 3596
     :cond_2
     iget-object p1, p0, Ljp/co/sony/mc/camera/controller/StateMachine$StatePrepareForRecording;->mCaptureParams:[Ljava/lang/Object;
 
     if-eqz p1, :cond_3
 
-    .line 3569
+    .line 3597
     iget-object p1, p0, Ljp/co/sony/mc/camera/controller/StateMachine$StatePrepareForRecording;->this$0:Ljp/co/sony/mc/camera/controller/StateMachine;
 
     sget-object v0, Ljp/co/sony/mc/camera/controller/StateMachine$TransitterEvent;->EVENT_CAPTURE:Ljp/co/sony/mc/camera/controller/StateMachine$TransitterEvent;
@@ -191,13 +186,13 @@
 
     invoke-virtual {p1, v0, v1}, Ljp/co/sony/mc/camera/controller/StateMachine;->sendEvent(Ljp/co/sony/mc/camera/controller/StateMachine$TransitterEvent;[Ljava/lang/Object;)V
 
-    .line 3571
+    .line 3599
     :cond_3
     iget-boolean p1, p0, Ljp/co/sony/mc/camera/controller/StateMachine$StatePrepareForRecording;->mIsPauseRequested:Z
 
     if-eqz p1, :cond_4
 
-    .line 3572
+    .line 3600
     iget-object p1, p0, Ljp/co/sony/mc/camera/controller/StateMachine$StatePrepareForRecording;->this$0:Ljp/co/sony/mc/camera/controller/StateMachine;
 
     sget-object v0, Ljp/co/sony/mc/camera/controller/StateMachine$TransitterEvent;->EVENT_PAUSE_RECORDING:Ljp/co/sony/mc/camera/controller/StateMachine$TransitterEvent;
@@ -210,10 +205,10 @@
     :goto_0
     const/4 p1, 0x0
 
-    .line 3575
+    .line 3603
     iput-object p1, p0, Ljp/co/sony/mc/camera/controller/StateMachine$StatePrepareForRecording;->mCaptureParams:[Ljava/lang/Object;
 
-    .line 3576
+    .line 3604
     iput-boolean v2, p0, Ljp/co/sony/mc/camera/controller/StateMachine$StatePrepareForRecording;->mIsPauseRequested:Z
 
     return-void
@@ -222,12 +217,12 @@
 .method public varargs handleOnSurfacePrepared([Ljava/lang/Object;)V
     .locals 2
 
-    .line 3525
+    .line 3552
     iget-object v0, p0, Ljp/co/sony/mc/camera/controller/StateMachine$StatePrepareForRecording;->this$0:Ljp/co/sony/mc/camera/controller/StateMachine;
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/controller/StateMachine;->-$$Nest$mswitchSceneRecognition(Ljp/co/sony/mc/camera/controller/StateMachine;)V
 
-    .line 3526
+    .line 3553
     iget-object p0, p0, Ljp/co/sony/mc/camera/controller/StateMachine$StatePrepareForRecording;->this$0:Ljp/co/sony/mc/camera/controller/StateMachine;
 
     const/4 v0, 0x0
@@ -250,7 +245,14 @@
 .method public varargs handlePause([Ljava/lang/Object;)V
     .locals 4
 
-    .line 3543
+    .line 3570
+    iget-object v0, p0, Ljp/co/sony/mc/camera/controller/StateMachine$StatePrepareForRecording;->this$0:Ljp/co/sony/mc/camera/controller/StateMachine;
+
+    const/4 v1, 0x1
+
+    invoke-static {v0, v1}, Ljp/co/sony/mc/camera/controller/StateMachine;->-$$Nest$mdoStopRecording(Ljp/co/sony/mc/camera/controller/StateMachine;Z)V
+
+    .line 3571
     iget-object v0, p0, Ljp/co/sony/mc/camera/controller/StateMachine$StatePrepareForRecording;->this$0:Ljp/co/sony/mc/camera/controller/StateMachine;
 
     new-instance v1, Ljp/co/sony/mc/camera/controller/StateMachine$StatePause;
@@ -273,7 +275,7 @@
 
     const/4 p1, 0x1
 
-    .line 3581
+    .line 3609
     iput-boolean p1, p0, Ljp/co/sony/mc/camera/controller/StateMachine$StatePrepareForRecording;->mIsPauseRequested:Z
 
     return-void
@@ -284,7 +286,7 @@
 
     const/4 p1, 0x1
 
-    .line 3538
+    .line 3565
     iput-boolean p1, p0, Ljp/co/sony/mc/camera/controller/StateMachine$StatePrepareForRecording;->mIsPrepareStopping:Z
 
     return-void

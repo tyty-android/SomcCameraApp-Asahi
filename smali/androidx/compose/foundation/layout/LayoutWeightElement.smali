@@ -52,6 +52,10 @@
 .end annotation
 
 
+# static fields
+.field public static final $stable:I
+
+
 # instance fields
 .field private final fill:Z
 
@@ -59,16 +63,22 @@
 
 
 # direct methods
+.method static constructor <clinit>()V
+    .locals 0
+
+    return-void
+.end method
+
 .method public constructor <init>(FZ)V
     .locals 0
 
-    .line 635
+    .line 638
     invoke-direct {p0}, Landroidx/compose/ui/node/ModifierNodeElement;-><init>()V
 
-    .line 633
+    .line 636
     iput p1, p0, Landroidx/compose/foundation/layout/LayoutWeightElement;->weight:F
 
-    .line 634
+    .line 637
     iput-boolean p2, p0, Landroidx/compose/foundation/layout/LayoutWeightElement;->fill:Z
 
     return-void
@@ -79,7 +89,7 @@
 .method public create()Landroidx/compose/foundation/layout/LayoutWeightNode;
     .locals 2
 
-    .line 637
+    .line 640
     new-instance v0, Landroidx/compose/foundation/layout/LayoutWeightNode;
 
     iget v1, p0, Landroidx/compose/foundation/layout/LayoutWeightElement;->weight:F
@@ -94,7 +104,7 @@
 .method public bridge synthetic create()Landroidx/compose/ui/Modifier$Node;
     .locals 0
 
-    .line 632
+    .line 635
     invoke-virtual {p0}, Landroidx/compose/foundation/layout/LayoutWeightElement;->create()Landroidx/compose/foundation/layout/LayoutWeightNode;
 
     move-result-object p0
@@ -113,7 +123,7 @@
 
     return v0
 
-    .line 660
+    .line 663
     :cond_0
     instance-of v1, p1, Landroidx/compose/foundation/layout/LayoutWeightElement;
 
@@ -133,7 +143,7 @@
 
     return v1
 
-    .line 661
+    .line 664
     :cond_2
     iget v2, p0, Landroidx/compose/foundation/layout/LayoutWeightElement;->weight:F
 
@@ -143,7 +153,7 @@
 
     if-nez v2, :cond_3
 
-    .line 662
+    .line 665
     iget-boolean p0, p0, Landroidx/compose/foundation/layout/LayoutWeightElement;->fill:Z
 
     iget-boolean p1, p1, Landroidx/compose/foundation/layout/LayoutWeightElement;->fill:Z
@@ -162,7 +172,7 @@
 .method public final getFill()Z
     .locals 0
 
-    .line 634
+    .line 637
     iget-boolean p0, p0, Landroidx/compose/foundation/layout/LayoutWeightElement;->fill:Z
 
     return p0
@@ -171,7 +181,7 @@
 .method public final getWeight()F
     .locals 0
 
-    .line 633
+    .line 636
     iget p0, p0, Landroidx/compose/foundation/layout/LayoutWeightElement;->weight:F
 
     return p0
@@ -180,7 +190,7 @@
 .method public hashCode()I
     .locals 1
 
-    .line 653
+    .line 656
     iget v0, p0, Landroidx/compose/foundation/layout/LayoutWeightElement;->weight:F
 
     invoke-static {v0}, Ljava/lang/Float;->hashCode(F)I
@@ -189,7 +199,7 @@
 
     mul-int/lit8 v0, v0, 0x1f
 
-    .line 654
+    .line 657
     iget-boolean p0, p0, Landroidx/compose/foundation/layout/LayoutWeightElement;->fill:Z
 
     invoke-static {p0}, Ljava/lang/Boolean;->hashCode(Z)I
@@ -204,16 +214,12 @@
 .method public inspectableProperties(Landroidx/compose/ui/platform/InspectorInfo;)V
     .locals 3
 
-    const-string v0, "<this>"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 646
+    .line 649
     const-string/jumbo v0, "weight"
 
     invoke-virtual {p1, v0}, Landroidx/compose/ui/platform/InspectorInfo;->setName(Ljava/lang/String;)V
 
-    .line 647
+    .line 650
     iget v1, p0, Landroidx/compose/foundation/layout/LayoutWeightElement;->weight:F
 
     invoke-static {v1}, Ljava/lang/Float;->valueOf(F)Ljava/lang/Float;
@@ -222,7 +228,7 @@
 
     invoke-virtual {p1, v1}, Landroidx/compose/ui/platform/InspectorInfo;->setValue(Ljava/lang/Object;)V
 
-    .line 648
+    .line 651
     invoke-virtual {p1}, Landroidx/compose/ui/platform/InspectorInfo;->getProperties()Landroidx/compose/ui/platform/ValueElementSequence;
 
     move-result-object v1
@@ -235,7 +241,7 @@
 
     invoke-virtual {v1, v0, v2}, Landroidx/compose/ui/platform/ValueElementSequence;->set(Ljava/lang/String;Ljava/lang/Object;)V
 
-    .line 649
+    .line 652
     invoke-virtual {p1}, Landroidx/compose/ui/platform/InspectorInfo;->getProperties()Landroidx/compose/ui/platform/ValueElementSequence;
 
     move-result-object p1
@@ -256,16 +262,12 @@
 .method public update(Landroidx/compose/foundation/layout/LayoutWeightNode;)V
     .locals 1
 
-    const-string v0, "node"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 641
+    .line 644
     iget v0, p0, Landroidx/compose/foundation/layout/LayoutWeightElement;->weight:F
 
     invoke-virtual {p1, v0}, Landroidx/compose/foundation/layout/LayoutWeightNode;->setWeight(F)V
 
-    .line 642
+    .line 645
     iget-boolean p0, p0, Landroidx/compose/foundation/layout/LayoutWeightElement;->fill:Z
 
     invoke-virtual {p1, p0}, Landroidx/compose/foundation/layout/LayoutWeightNode;->setFill(Z)V
@@ -276,7 +278,7 @@
 .method public bridge synthetic update(Landroidx/compose/ui/Modifier$Node;)V
     .locals 0
 
-    .line 632
+    .line 635
     check-cast p1, Landroidx/compose/foundation/layout/LayoutWeightNode;
 
     invoke-virtual {p0, p1}, Landroidx/compose/foundation/layout/LayoutWeightElement;->update(Landroidx/compose/foundation/layout/LayoutWeightNode;)V

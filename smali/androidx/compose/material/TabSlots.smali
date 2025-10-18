@@ -65,7 +65,7 @@
 .method static constructor <clinit>()V
     .locals 3
 
-    .line 445
+    .line 449
     new-instance v0, Landroidx/compose/material/TabSlots;
 
     const-string v1, "Tabs"
@@ -76,7 +76,7 @@
 
     sput-object v0, Landroidx/compose/material/TabSlots;->Tabs:Landroidx/compose/material/TabSlots;
 
-    .line 446
+    .line 450
     new-instance v0, Landroidx/compose/material/TabSlots;
 
     const-string v1, "Divider"
@@ -87,7 +87,7 @@
 
     sput-object v0, Landroidx/compose/material/TabSlots;->Divider:Landroidx/compose/material/TabSlots;
 
-    .line 447
+    .line 451
     new-instance v0, Landroidx/compose/material/TabSlots;
 
     const-string v1, "Indicator"
@@ -115,7 +115,7 @@
         }
     .end annotation
 
-    .line 444
+    .line 448
     invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
     return-void

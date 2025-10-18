@@ -21,7 +21,7 @@
 .method constructor <init>()V
     .locals 0
 
-    .line 3282
+    .line 3380
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -42,15 +42,15 @@
         }
     .end annotation
 
-    .line 3286
+    .line 3384
     check-cast p1, Ljp/co/sony/mc/camera/setting/CameraSettings;
 
-    .line 3287
-    invoke-static {p1}, Ljp/co/sony/mc/camera/setting/CameraSettings;->-$$Nest$mgetQrCodeDetection(Ljp/co/sony/mc/camera/setting/CameraSettings;)Ljp/co/sony/mc/camera/configuration/parameters/QrCodeDetection;
+    .line 3385
+    invoke-static {p1}, Ljp/co/sony/mc/camera/setting/CameraSettings;->-$$Nest$mgetFocusDistance(Ljp/co/sony/mc/camera/setting/CameraSettings;)Ljava/lang/Float;
 
     move-result-object p0
 
-    invoke-static {p1}, Ljp/co/sony/mc/camera/setting/CameraSettings;->-$$Nest$fgetmQrCodeDetection(Ljp/co/sony/mc/camera/setting/CameraSettings;)Ljp/co/sony/mc/camera/configuration/parameters/QrCodeDetection;
+    invoke-static {p1}, Ljp/co/sony/mc/camera/setting/CameraSettings;->-$$Nest$fgetmFocusDistance(Ljp/co/sony/mc/camera/setting/CameraSettings;)Ljava/lang/Float;
 
     move-result-object p1
 

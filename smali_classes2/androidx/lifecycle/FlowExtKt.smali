@@ -16,7 +16,7 @@
         "Landroidx/lifecycle/Lifecycle;",
         "minActiveState",
         "Landroidx/lifecycle/Lifecycle$State;",
-        "lifecycle-runtime-ktx_release"
+        "lifecycle-runtime_release"
     }
     k = 0x2
     mv = {

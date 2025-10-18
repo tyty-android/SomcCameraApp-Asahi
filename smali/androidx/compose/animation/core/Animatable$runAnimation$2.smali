@@ -57,7 +57,7 @@
         0x0
     }
     l = {
-        0x131
+        0x138
     }
     m = "invokeSuspend"
     n = {
@@ -246,7 +246,7 @@
 
     move-result-object v0
 
-    .line 295
+    .line 302
     iget v2, v1, Landroidx/compose/animation/core/Animatable$runAnimation$2;->label:I
 
     const/4 v3, 0x1
@@ -282,7 +282,7 @@
     :cond_1
     invoke-static/range {p1 .. p1}, Lkotlin/ResultKt;->throwOnFailure(Ljava/lang/Object;)V
 
-    .line 297
+    .line 304
     :try_start_1
     iget-object v2, v1, Landroidx/compose/animation/core/Animatable$runAnimation$2;->this$0:Landroidx/compose/animation/core/Animatable;
 
@@ -310,7 +310,7 @@
 
     invoke-virtual {v2, v4}, Landroidx/compose/animation/core/AnimationState;->setVelocityVector$animation_core_release(Landroidx/compose/animation/core/AnimationVector;)V
 
-    .line 298
+    .line 305
     iget-object v2, v1, Landroidx/compose/animation/core/Animatable$runAnimation$2;->this$0:Landroidx/compose/animation/core/Animatable;
 
     iget-object v4, v1, Landroidx/compose/animation/core/Animatable$runAnimation$2;->$animation:Landroidx/compose/animation/core/Animation;
@@ -321,12 +321,12 @@
 
     invoke-static {v2, v4}, Landroidx/compose/animation/core/Animatable;->access$setTargetValue(Landroidx/compose/animation/core/Animatable;Ljava/lang/Object;)V
 
-    .line 299
+    .line 306
     iget-object v2, v1, Landroidx/compose/animation/core/Animatable$runAnimation$2;->this$0:Landroidx/compose/animation/core/Animatable;
 
     invoke-static {v2, v3}, Landroidx/compose/animation/core/Animatable;->access$setRunning(Landroidx/compose/animation/core/Animatable;Z)V
 
-    .line 301
+    .line 308
     iget-object v2, v1, Landroidx/compose/animation/core/Animatable$runAnimation$2;->this$0:Landroidx/compose/animation/core/Animatable;
 
     invoke-virtual {v2}, Landroidx/compose/animation/core/Animatable;->getInternalState$animation_core_release()Landroidx/compose/animation/core/AnimationState;
@@ -351,18 +351,18 @@
 
     move-result-object v2
 
-    .line 304
+    .line 311
     new-instance v4, Lkotlin/jvm/internal/Ref$BooleanRef;
 
     invoke-direct {v4}, Lkotlin/jvm/internal/Ref$BooleanRef;-><init>()V
 
-    .line 306
+    .line 313
     iget-object v15, v1, Landroidx/compose/animation/core/Animatable$runAnimation$2;->$animation:Landroidx/compose/animation/core/Animation;
 
-    .line 307
+    .line 314
     iget-wide v5, v1, Landroidx/compose/animation/core/Animatable$runAnimation$2;->$startTime:J
 
-    .line 305
+    .line 312
     new-instance v7, Landroidx/compose/animation/core/Animatable$runAnimation$2$1;
 
     iget-object v8, v1, Landroidx/compose/animation/core/Animatable$runAnimation$2;->this$0:Landroidx/compose/animation/core/Animatable;
@@ -400,7 +400,7 @@
     :cond_2
     move-object v0, v4
 
-    .line 321
+    .line 328
     :goto_0
     iget-boolean v0, v0, Lkotlin/jvm/internal/Ref$BooleanRef;->element:Z
 
@@ -413,13 +413,13 @@
     :cond_3
     sget-object v0, Landroidx/compose/animation/core/AnimationEndReason;->Finished:Landroidx/compose/animation/core/AnimationEndReason;
 
-    .line 322
+    .line 329
     :goto_1
     iget-object v3, v1, Landroidx/compose/animation/core/Animatable$runAnimation$2;->this$0:Landroidx/compose/animation/core/Animatable;
 
     invoke-static {v3}, Landroidx/compose/animation/core/Animatable;->access$endAnimation(Landroidx/compose/animation/core/Animatable;)V
 
-    .line 323
+    .line 330
     new-instance v3, Landroidx/compose/animation/core/AnimationResult;
 
     invoke-direct {v3, v2, v0}, Landroidx/compose/animation/core/AnimationResult;-><init>(Landroidx/compose/animation/core/AnimationState;Landroidx/compose/animation/core/AnimationEndReason;)V
@@ -431,11 +431,11 @@
     :catch_0
     move-exception v0
 
-    .line 326
+    .line 333
     iget-object v1, v1, Landroidx/compose/animation/core/Animatable$runAnimation$2;->this$0:Landroidx/compose/animation/core/Animatable;
 
     invoke-static {v1}, Landroidx/compose/animation/core/Animatable;->access$endAnimation(Landroidx/compose/animation/core/Animatable;)V
 
-    .line 327
+    .line 334
     throw v0
 .end method

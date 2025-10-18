@@ -196,7 +196,7 @@
 
 # virtual methods
 .method public handlePreviewStarted(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Z)V
-    .locals 1
+    .locals 2
 
     .line 75
     iget-object v0, p0, Ljp/co/sony/mc/camera/controller/qrdetection/QrDetectionController;->mPreviewFrameProvider:Ljp/co/sony/mc/camera/device/PreviewFrameProvider;
@@ -219,16 +219,18 @@
 
     if-eqz p1, :cond_2
 
-    .line 81
-    const-string p1, "QR Code Detection Start"
-
-    filled-new-array {p1}, [Ljava/lang/String;
-
-    move-result-object p1
-
-    invoke-static {p1}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
-
     const/4 p1, 0x1
+
+    .line 81
+    new-array p2, p1, [Ljava/lang/String;
+
+    const/4 v0, 0x0
+
+    const-string v1, "QR Code Detection Start"
+
+    aput-object v1, p2, v0
+
+    invoke-static {p2}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
     .line 82
     iput-boolean p1, p0, Ljp/co/sony/mc/camera/controller/qrdetection/QrDetectionController;->mIsPreviewing:Z

@@ -14,9 +14,9 @@
 
 
 # static fields
-.field public static final preferences_detail_pane_weight:I = 0x7f0a0049
+.field public static final preferences_detail_pane_weight:I = 0x7f0a004e
 
-.field public static final preferences_header_pane_weight:I = 0x7f0a004a
+.field public static final preferences_header_pane_weight:I = 0x7f0a004f
 
 
 # direct methods

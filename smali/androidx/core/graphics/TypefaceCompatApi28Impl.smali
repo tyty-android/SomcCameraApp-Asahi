@@ -36,42 +36,30 @@
 
     move-result-object v0
 
-    const/4 v2, 0x0
+    const/4 v1, 0x0
 
     .line 51
-    invoke-static {v0, v2, p1}, Ljava/lang/reflect/Array;->set(Ljava/lang/Object;ILjava/lang/Object;)V
+    invoke-static {v0, v1, p1}, Ljava/lang/reflect/Array;->set(Ljava/lang/Object;ILjava/lang/Object;)V
 
     .line 52
     iget-object p0, p0, Landroidx/core/graphics/TypefaceCompatApi28Impl;->mCreateFromFamiliesWithDefault:Ljava/lang/reflect/Method;
 
-    const/4 p1, 0x4
+    const-string p1, "sans-serif"
 
-    new-array p1, p1, [Ljava/lang/Object;
-
-    aput-object v0, p1, v2
-
-    const-string v0, "sans-serif"
-
-    aput-object v0, p1, v1
-
-    const/4 v0, -0x1
+    const/4 v1, -0x1
 
     .line 53
-    invoke-static {v0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+    invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v2
+
+    invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object v1
 
-    const/4 v2, 0x2
+    filled-new-array {v0, p1, v2, v1}, [Ljava/lang/Object;
 
-    aput-object v1, p1, v2
-
-    invoke-static {v0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
-
-    move-result-object v0
-
-    const/4 v1, 0x3
-
-    aput-object v0, p1, v1
+    move-result-object p1
 
     const/4 v0, 0x0
 
@@ -136,16 +124,16 @@
     .line 63
     const-class v0, Landroid/graphics/Typeface;
 
-    .line 64
-    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
-
-    move-result-object p1
-
     const/4 v1, 0x4
 
     new-array v1, v1, [Ljava/lang/Class;
 
     const/4 v2, 0x0
+
+    .line 64
+    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    move-result-object p1
 
     aput-object p1, v1, v2
 
@@ -153,15 +141,17 @@
 
     aput-object p1, v1, p0
 
-    sget-object p1, Ljava/lang/Integer;->TYPE:Ljava/lang/Class;
+    const/4 p1, 0x2
 
-    const/4 v2, 0x2
+    sget-object v2, Ljava/lang/Integer;->TYPE:Ljava/lang/Class;
 
-    aput-object p1, v1, v2
+    aput-object v2, v1, p1
 
-    const/4 v2, 0x3
+    const/4 p1, 0x3
 
-    aput-object p1, v1, v2
+    sget-object v2, Ljava/lang/Integer;->TYPE:Ljava/lang/Class;
+
+    aput-object v2, v1, p1
 
     .line 63
     const-string p1, "createFromFamiliesWithDefault"

@@ -80,10 +80,6 @@
 .method public final invoke(Landroidx/compose/ui/Modifier$Element;)Ljava/lang/Boolean;
     .locals 0
 
-    const-string p0, "it"
-
-    invoke-static {p1, p0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
     .line 253
     instance-of p0, p1, Landroidx/compose/ui/ComposedModifier;
 

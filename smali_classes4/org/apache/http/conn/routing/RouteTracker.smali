@@ -89,7 +89,7 @@
     return-object p0
 .end method
 
-.method public final connectProxy(Lorg/apache/http/HttpHost;Z)V
+.method public connectProxy(Lorg/apache/http/HttpHost;Z)V
     .locals 3
 
     .line 129
@@ -126,7 +126,7 @@
     return-void
 .end method
 
-.method public final connectTarget(Z)V
+.method public connectTarget(Z)V
     .locals 3
 
     .line 116
@@ -149,7 +149,7 @@
     return-void
 .end method
 
-.method public final equals(Ljava/lang/Object;)Z
+.method public equals(Ljava/lang/Object;)Z
     .locals 4
 
     const/4 v0, 0x1
@@ -236,7 +236,7 @@
     return v0
 .end method
 
-.method public final getHopCount()I
+.method public getHopCount()I
     .locals 1
 
     .line 199
@@ -268,7 +268,7 @@
     return v0
 .end method
 
-.method public final getHopTarget(I)Lorg/apache/http/HttpHost;
+.method public getHopTarget(I)Lorg/apache/http/HttpHost;
     .locals 4
 
     .line 211
@@ -317,7 +317,7 @@
     return-object p0
 .end method
 
-.method public final getLayerType()Lorg/apache/http/conn/routing/RouteInfo$LayerType;
+.method public getLayerType()Lorg/apache/http/conn/routing/RouteInfo$LayerType;
     .locals 0
 
     .line 245
@@ -326,7 +326,7 @@
     return-object p0
 .end method
 
-.method public final getLocalAddress()Ljava/net/InetAddress;
+.method public getLocalAddress()Ljava/net/InetAddress;
     .locals 0
 
     .line 193
@@ -335,7 +335,7 @@
     return-object p0
 .end method
 
-.method public final getProxyHost()Lorg/apache/http/HttpHost;
+.method public getProxyHost()Lorg/apache/http/HttpHost;
     .locals 1
 
     .line 226
@@ -356,7 +356,7 @@
     return-object p0
 .end method
 
-.method public final getTargetHost()Lorg/apache/http/HttpHost;
+.method public getTargetHost()Lorg/apache/http/HttpHost;
     .locals 0
 
     .line 188
@@ -365,7 +365,7 @@
     return-object p0
 .end method
 
-.method public final getTunnelType()Lorg/apache/http/conn/routing/RouteInfo$TunnelType;
+.method public getTunnelType()Lorg/apache/http/conn/routing/RouteInfo$TunnelType;
     .locals 0
 
     .line 235
@@ -374,7 +374,7 @@
     return-object p0
 .end method
 
-.method public final hashCode()I
+.method public hashCode()I
     .locals 5
 
     const/16 v0, 0x11
@@ -449,7 +449,7 @@
     return p0
 .end method
 
-.method public final isConnected()Z
+.method public isConnected()Z
     .locals 0
 
     .line 230
@@ -458,7 +458,7 @@
     return p0
 .end method
 
-.method public final isLayered()Z
+.method public isLayered()Z
     .locals 1
 
     .line 250
@@ -479,7 +479,7 @@
     return p0
 .end method
 
-.method public final isSecure()Z
+.method public isSecure()Z
     .locals 0
 
     .line 255
@@ -488,7 +488,7 @@
     return p0
 .end method
 
-.method public final isTunnelled()Z
+.method public isTunnelled()Z
     .locals 1
 
     .line 240
@@ -509,7 +509,7 @@
     return p0
 .end method
 
-.method public final layerProtocol(Z)V
+.method public layerProtocol(Z)V
     .locals 2
 
     .line 181
@@ -559,7 +559,7 @@
     return-void
 .end method
 
-.method public final toRoute()Lorg/apache/http/conn/routing/HttpRoute;
+.method public toRoute()Lorg/apache/http/conn/routing/HttpRoute;
     .locals 8
 
     .line 267
@@ -596,7 +596,7 @@
     return-object p0
 .end method
 
-.method public final toString()Ljava/lang/String;
+.method public toString()Ljava/lang/String;
     .locals 6
 
     .line 334
@@ -733,7 +733,7 @@
     return-object p0
 .end method
 
-.method public final tunnelProxy(Lorg/apache/http/HttpHost;Z)V
+.method public tunnelProxy(Lorg/apache/http/HttpHost;Z)V
     .locals 5
 
     .line 159
@@ -783,7 +783,7 @@
     return-void
 .end method
 
-.method public final tunnelTarget(Z)V
+.method public tunnelTarget(Z)V
     .locals 2
 
     .line 143

@@ -5,25 +5,22 @@
 
 # annotations
 .annotation system Ldalvik/annotation/SourceDebugExtension;
-    value = "SMAP\nRowColumnMeasurementHelper.kt\nKotlin\n*S Kotlin\n*F\n+ 1 RowColumnMeasurementHelper.kt\nandroidx/compose/foundation/layout/RowColumnMeasurementHelper\n+ 2 RowColumnImpl.kt\nandroidx/compose/foundation/layout/OrientationIndependentConstraints\n+ 3 fake.kt\nkotlin/jvm/internal/FakeKt\n*L\n1#1,325:1\n321#2:326\n321#2:327\n321#2:328\n320#2:329\n323#2:331\n321#2:332\n320#2:333\n323#2:334\n323#2:335\n322#2:336\n1#3:330\n*S KotlinDebug\n*F\n+ 1 RowColumnMeasurementHelper.kt\nandroidx/compose/foundation/layout/RowColumnMeasurementHelper\n*L\n111#1:326\n142#1:327\n143#1:328\n145#1:329\n179#1:331\n189#1:332\n225#1:333\n226#1:334\n229#1:335\n234#1:336\n*E\n"
+    value = "SMAP\nRowColumnMeasurementHelper.kt\nKotlin\n*S Kotlin\n*F\n+ 1 RowColumnMeasurementHelper.kt\nandroidx/compose/foundation/layout/RowColumnMeasurementHelper\n+ 2 RowColumnImpl.kt\nandroidx/compose/foundation/layout/OrientationIndependentConstraints\n+ 3 fake.kt\nkotlin/jvm/internal/FakeKt\n*L\n1#1,395:1\n322#2:396\n322#2:397\n322#2:398\n321#2:399\n322#2:400\n321#2:401\n324#2:403\n322#2:404\n321#2:405\n322#2:406\n321#2:407\n324#2:408\n324#2:409\n323#2:410\n1#3:402\n*S KotlinDebug\n*F\n+ 1 RowColumnMeasurementHelper.kt\nandroidx/compose/foundation/layout/RowColumnMeasurementHelper\n*L\n111#1:396\n143#1:397\n144#1:398\n146#1:399\n166#1:400\n167#1:401\n210#1:403\n219#1:404\n220#1:405\n243#1:406\n282#1:407\n284#1:408\n287#1:409\n292#1:410\n*E\n"
 .end annotation
 
 .annotation runtime Lkotlin/Metadata;
     d1 = {
-        "\u0000v\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0010\u0008\n\u0002\u0010\u0015\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010 \n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0011\n\u0002\u0018\u0002\n\u0002\u0008\u0012\n\u0002\u0018\u0002\n\u0002\u0008\u000b\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0006\n\u0002\u0018\u0002\n\u0002\u0008\u0004\u0008\u0000\u0018\u00002\u00020\u0001Br\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012*\u0010\u0004\u001a&\u0012\u0004\u0012\u00020\u0006\u0012\u0004\u0012\u00020\u0007\u0012\u0004\u0012\u00020\u0008\u0012\u0004\u0012\u00020\t\u0012\u0004\u0012\u00020\u0007\u0012\u0004\u0012\u00020\n0\u0005\u0012\u0006\u0010\u000b\u001a\u00020\u000c\u0012\u0006\u0010\r\u001a\u00020\u000e\u0012\u0006\u0010\u000f\u001a\u00020\u0010\u0012\u000c\u0010\u0011\u001a\u0008\u0012\u0004\u0012\u00020\u00130\u0012\u0012\u000e\u0010\u0014\u001a\n\u0012\u0006\u0012\u0004\u0018\u00010\u00160\u0015\u00f8\u0001\u0000\u00a2\u0006\u0002\u0010\u0017J2\u0010+\u001a\u00020\u00062\u0006\u0010,\u001a\u00020\u00162\u0008\u0010-\u001a\u0004\u0018\u00010)2\u0006\u0010.\u001a\u00020\u00062\u0006\u0010/\u001a\u00020\u00082\u0006\u00100\u001a\u00020\u0006H\u0002J(\u00101\u001a\u00020\u00072\u0006\u00102\u001a\u00020\u00062\u0006\u00103\u001a\u00020\u00072\u0006\u00101\u001a\u00020\u00072\u0006\u00104\u001a\u000205H\u0002J3\u00106\u001a\u0002072\u0006\u00104\u001a\u0002052\u0006\u00108\u001a\u0002092\u0006\u0010:\u001a\u00020\u00062\u0006\u0010;\u001a\u00020\u0006\u00f8\u0001\u0001\u00f8\u0001\u0000\u00a2\u0006\u0004\u0008<\u0010=J&\u0010>\u001a\u00020\n2\u0006\u0010?\u001a\u00020@2\u0006\u0010A\u001a\u0002072\u0006\u0010B\u001a\u00020\u00062\u0006\u0010/\u001a\u00020\u0008J\n\u0010\r\u001a\u00020\u0006*\u00020\u0016J\n\u0010C\u001a\u00020\u0006*\u00020\u0016R5\u0010\u0004\u001a&\u0012\u0004\u0012\u00020\u0006\u0012\u0004\u0012\u00020\u0007\u0012\u0004\u0012\u00020\u0008\u0012\u0004\u0012\u00020\t\u0012\u0004\u0012\u00020\u0007\u0012\u0004\u0012\u00020\n0\u0005\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\u0018\u0010\u0019R\u001c\u0010\u000b\u001a\u00020\u000c\u00f8\u0001\u0000\u00f8\u0001\u0001\u00f8\u0001\u0002\u00a2\u0006\n\n\u0002\u0010\u001c\u001a\u0004\u0008\u001a\u0010\u001bR\u0011\u0010\u000f\u001a\u00020\u0010\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\u001d\u0010\u001eR\u0011\u0010\r\u001a\u00020\u000e\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\u001f\u0010 R\u0017\u0010\u0011\u001a\u0008\u0012\u0004\u0012\u00020\u00130\u0012\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008!\u0010\"R\u0011\u0010\u0002\u001a\u00020\u0003\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008#\u0010$R\u001b\u0010\u0014\u001a\n\u0012\u0006\u0012\u0004\u0018\u00010\u00160\u0015\u00a2\u0006\n\n\u0002\u0010\'\u001a\u0004\u0008%\u0010&R\u0018\u0010(\u001a\n\u0012\u0006\u0012\u0004\u0018\u00010)0\u0015X\u0082\u0004\u00a2\u0006\u0004\n\u0002\u0010*\u0082\u0002\u000f\n\u0002\u0008\u0019\n\u0005\u0008\u00a1\u001e0\u0001\n\u0002\u0008!\u00a8\u0006D"
+        "\u0000\u0086\u0001\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010 \n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0011\n\u0002\u0018\u0002\n\u0002\u0008\u0012\n\u0002\u0018\u0002\n\u0002\u0008\u0004\n\u0002\u0010\u0008\n\u0002\u0008\u0004\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0010\u0015\n\u0002\u0008\u0003\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0005\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0004\u0008\u0000\u0018\u00002\u00020\u0001BW\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\u0008\u0010\u0004\u001a\u0004\u0018\u00010\u0005\u0012\u0008\u0010\u0006\u001a\u0004\u0018\u00010\u0007\u0012\u0006\u0010\u0008\u001a\u00020\t\u0012\u0006\u0010\n\u001a\u00020\u000b\u0012\u0006\u0010\u000c\u001a\u00020\r\u0012\u000c\u0010\u000e\u001a\u0008\u0012\u0004\u0012\u00020\u00100\u000f\u0012\u000e\u0010\u0011\u001a\n\u0012\u0006\u0012\u0004\u0018\u00010\u00130\u0012\u00a2\u0006\u0002\u0010\u0014J2\u0010*\u001a\u00020+2\u0006\u0010,\u001a\u00020\u00132\u0008\u0010-\u001a\u0004\u0018\u00010&2\u0006\u0010.\u001a\u00020+2\u0006\u0010/\u001a\u0002002\u0006\u00101\u001a\u00020+H\u0002J(\u00102\u001a\u0002032\u0006\u00104\u001a\u00020+2\u0006\u00105\u001a\u0002032\u0006\u00102\u001a\u0002032\u0006\u00106\u001a\u000207H\u0002J0\u00108\u001a\u0002092\u0006\u00106\u001a\u0002072\u0006\u0010:\u001a\u00020;2\u0006\u0010<\u001a\u00020+2\u0006\u0010=\u001a\u00020+\u00f8\u0001\u0000\u00a2\u0006\u0004\u0008>\u0010?J&\u0010@\u001a\u00020A2\u0006\u0010B\u001a\u00020C2\u0006\u0010D\u001a\u0002092\u0006\u0010E\u001a\u00020+2\u0006\u0010/\u001a\u000200J\n\u0010\n\u001a\u00020+*\u00020\u0013J\n\u0010F\u001a\u00020+*\u00020\u0013R\u0019\u0010\u0008\u001a\u00020\t\u00f8\u0001\u0000\u00f8\u0001\u0001\u00a2\u0006\n\n\u0002\u0010\u0017\u001a\u0004\u0008\u0015\u0010\u0016R\u0011\u0010\u000c\u001a\u00020\r\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\u0018\u0010\u0019R\u0011\u0010\n\u001a\u00020\u000b\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\u001a\u0010\u001bR\u0013\u0010\u0004\u001a\u0004\u0018\u00010\u0005\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\u001c\u0010\u001dR\u0017\u0010\u000e\u001a\u0008\u0012\u0004\u0012\u00020\u00100\u000f\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\u001e\u0010\u001fR\u0011\u0010\u0002\u001a\u00020\u0003\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008 \u0010!R\u001b\u0010\u0011\u001a\n\u0012\u0006\u0012\u0004\u0018\u00010\u00130\u0012\u00a2\u0006\n\n\u0002\u0010$\u001a\u0004\u0008\"\u0010#R\u0018\u0010%\u001a\n\u0012\u0006\u0012\u0004\u0018\u00010&0\u0012X\u0082\u0004\u00a2\u0006\u0004\n\u0002\u0010\'R\u0013\u0010\u0006\u001a\u0004\u0018\u00010\u0007\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008(\u0010)\u0082\u0002\u000b\n\u0005\u0008\u00a1\u001e0\u0001\n\u0002\u0008!\u00a8\u0006G"
     }
     d2 = {
         "Landroidx/compose/foundation/layout/RowColumnMeasurementHelper;",
         "",
         "orientation",
         "Landroidx/compose/foundation/layout/LayoutOrientation;",
-        "arrangement",
-        "Lkotlin/Function5;",
-        "",
-        "",
-        "Landroidx/compose/ui/unit/LayoutDirection;",
-        "Landroidx/compose/ui/unit/Density;",
-        "",
+        "horizontalArrangement",
+        "Landroidx/compose/foundation/layout/Arrangement$Horizontal;",
+        "verticalArrangement",
+        "Landroidx/compose/foundation/layout/Arrangement$Vertical;",
         "arrangementSpacing",
         "Landroidx/compose/ui/unit/Dp;",
         "crossAxisSize",
@@ -36,9 +33,7 @@
         "placeables",
         "",
         "Landroidx/compose/ui/layout/Placeable;",
-        "(Landroidx/compose/foundation/layout/LayoutOrientation;Lkotlin/jvm/functions/Function5;FLandroidx/compose/foundation/layout/SizeMode;Landroidx/compose/foundation/layout/CrossAxisAlignment;Ljava/util/List;[Landroidx/compose/ui/layout/Placeable;Lkotlin/jvm/internal/DefaultConstructorMarker;)V",
-        "getArrangement",
-        "()Lkotlin/jvm/functions/Function5;",
+        "(Landroidx/compose/foundation/layout/LayoutOrientation;Landroidx/compose/foundation/layout/Arrangement$Horizontal;Landroidx/compose/foundation/layout/Arrangement$Vertical;FLandroidx/compose/foundation/layout/SizeMode;Landroidx/compose/foundation/layout/CrossAxisAlignment;Ljava/util/List;[Landroidx/compose/ui/layout/Placeable;Lkotlin/jvm/internal/DefaultConstructorMarker;)V",
         "getArrangementSpacing-D9Ej5fM",
         "()F",
         "F",
@@ -46,6 +41,8 @@
         "()Landroidx/compose/foundation/layout/CrossAxisAlignment;",
         "getCrossAxisSize",
         "()Landroidx/compose/foundation/layout/SizeMode;",
+        "getHorizontalArrangement",
+        "()Landroidx/compose/foundation/layout/Arrangement$Horizontal;",
         "getMeasurables",
         "()Ljava/util/List;",
         "getOrientation",
@@ -56,13 +53,18 @@
         "rowColumnParentData",
         "Landroidx/compose/foundation/layout/RowColumnParentData;",
         "[Landroidx/compose/foundation/layout/RowColumnParentData;",
+        "getVerticalArrangement",
+        "()Landroidx/compose/foundation/layout/Arrangement$Vertical;",
         "getCrossAxisPosition",
+        "",
         "placeable",
         "parentData",
         "crossAxisLayoutSize",
         "layoutDirection",
+        "Landroidx/compose/ui/unit/LayoutDirection;",
         "beforeCrossAxisAlignmentLine",
         "mainAxisPositions",
+        "",
         "mainAxisLayoutSize",
         "childrenMainAxisSize",
         "measureScope",
@@ -76,6 +78,7 @@
         "measureWithoutPlacing-_EkL_-Y",
         "(Landroidx/compose/ui/layout/MeasureScope;JII)Landroidx/compose/foundation/layout/RowColumnMeasureHelperResult;",
         "placeHelper",
+        "",
         "placeableScope",
         "Landroidx/compose/ui/layout/Placeable$PlacementScope;",
         "measureResult",
@@ -93,27 +96,18 @@
 .end annotation
 
 
-# instance fields
-.field private final arrangement:Lkotlin/jvm/functions/Function5;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Lkotlin/jvm/functions/Function5<",
-            "Ljava/lang/Integer;",
-            "[I",
-            "Landroidx/compose/ui/unit/LayoutDirection;",
-            "Landroidx/compose/ui/unit/Density;",
-            "[I",
-            "Lkotlin/Unit;",
-            ">;"
-        }
-    .end annotation
-.end field
+# static fields
+.field public static final $stable:I = 0x8
 
+
+# instance fields
 .field private final arrangementSpacing:F
 
 .field private final crossAxisAlignment:Landroidx/compose/foundation/layout/CrossAxisAlignment;
 
 .field private final crossAxisSize:Landroidx/compose/foundation/layout/SizeMode;
+
+.field private final horizontalArrangement:Landroidx/compose/foundation/layout/Arrangement$Horizontal;
 
 .field private final measurables:Ljava/util/List;
     .annotation system Ldalvik/annotation/Signature;
@@ -131,24 +125,25 @@
 
 .field private final rowColumnParentData:[Landroidx/compose/foundation/layout/RowColumnParentData;
 
+.field private final verticalArrangement:Landroidx/compose/foundation/layout/Arrangement$Vertical;
+
 
 # direct methods
-.method private constructor <init>(Landroidx/compose/foundation/layout/LayoutOrientation;Lkotlin/jvm/functions/Function5;FLandroidx/compose/foundation/layout/SizeMode;Landroidx/compose/foundation/layout/CrossAxisAlignment;Ljava/util/List;[Landroidx/compose/ui/layout/Placeable;)V
-    .locals 1
+.method static constructor <clinit>()V
+    .locals 0
+
+    return-void
+.end method
+
+.method private constructor <init>(Landroidx/compose/foundation/layout/LayoutOrientation;Landroidx/compose/foundation/layout/Arrangement$Horizontal;Landroidx/compose/foundation/layout/Arrangement$Vertical;FLandroidx/compose/foundation/layout/SizeMode;Landroidx/compose/foundation/layout/CrossAxisAlignment;Ljava/util/List;[Landroidx/compose/ui/layout/Placeable;)V
+    .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
             "Landroidx/compose/foundation/layout/LayoutOrientation;",
-            "Lkotlin/jvm/functions/Function5<",
-            "-",
-            "Ljava/lang/Integer;",
-            "-[I-",
-            "Landroidx/compose/ui/unit/LayoutDirection;",
-            "-",
-            "Landroidx/compose/ui/unit/Density;",
-            "-[I",
-            "Lkotlin/Unit;",
-            ">;F",
+            "Landroidx/compose/foundation/layout/Arrangement$Horizontal;",
+            "Landroidx/compose/foundation/layout/Arrangement$Vertical;",
+            "F",
             "Landroidx/compose/foundation/layout/SizeMode;",
             "Landroidx/compose/foundation/layout/CrossAxisAlignment;",
             "Ljava/util/List<",
@@ -160,56 +155,35 @@
         }
     .end annotation
 
-    const-string v0, "orientation"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string v0, "arrangement"
-
-    invoke-static {p2, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string v0, "crossAxisSize"
-
-    invoke-static {p4, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string v0, "crossAxisAlignment"
-
-    invoke-static {p5, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string v0, "measurables"
-
-    invoke-static {p6, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string v0, "placeables"
-
-    invoke-static {p7, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 49
+    .line 48
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 50
+    .line 49
     iput-object p1, p0, Landroidx/compose/foundation/layout/RowColumnMeasurementHelper;->orientation:Landroidx/compose/foundation/layout/LayoutOrientation;
 
+    .line 50
+    iput-object p2, p0, Landroidx/compose/foundation/layout/RowColumnMeasurementHelper;->horizontalArrangement:Landroidx/compose/foundation/layout/Arrangement$Horizontal;
+
     .line 51
-    iput-object p2, p0, Landroidx/compose/foundation/layout/RowColumnMeasurementHelper;->arrangement:Lkotlin/jvm/functions/Function5;
+    iput-object p3, p0, Landroidx/compose/foundation/layout/RowColumnMeasurementHelper;->verticalArrangement:Landroidx/compose/foundation/layout/Arrangement$Vertical;
 
     .line 52
-    iput p3, p0, Landroidx/compose/foundation/layout/RowColumnMeasurementHelper;->arrangementSpacing:F
+    iput p4, p0, Landroidx/compose/foundation/layout/RowColumnMeasurementHelper;->arrangementSpacing:F
 
     .line 53
-    iput-object p4, p0, Landroidx/compose/foundation/layout/RowColumnMeasurementHelper;->crossAxisSize:Landroidx/compose/foundation/layout/SizeMode;
+    iput-object p5, p0, Landroidx/compose/foundation/layout/RowColumnMeasurementHelper;->crossAxisSize:Landroidx/compose/foundation/layout/SizeMode;
 
     .line 54
-    iput-object p5, p0, Landroidx/compose/foundation/layout/RowColumnMeasurementHelper;->crossAxisAlignment:Landroidx/compose/foundation/layout/CrossAxisAlignment;
+    iput-object p6, p0, Landroidx/compose/foundation/layout/RowColumnMeasurementHelper;->crossAxisAlignment:Landroidx/compose/foundation/layout/CrossAxisAlignment;
 
     .line 55
-    iput-object p6, p0, Landroidx/compose/foundation/layout/RowColumnMeasurementHelper;->measurables:Ljava/util/List;
+    iput-object p7, p0, Landroidx/compose/foundation/layout/RowColumnMeasurementHelper;->measurables:Ljava/util/List;
 
     .line 56
-    iput-object p7, p0, Landroidx/compose/foundation/layout/RowColumnMeasurementHelper;->placeables:[Landroidx/compose/ui/layout/Placeable;
+    iput-object p8, p0, Landroidx/compose/foundation/layout/RowColumnMeasurementHelper;->placeables:[Landroidx/compose/ui/layout/Placeable;
 
     .line 59
-    invoke-interface {p6}, Ljava/util/List;->size()I
+    invoke-interface {p7}, Ljava/util/List;->size()I
 
     move-result p1
 
@@ -246,10 +220,10 @@
     return-void
 .end method
 
-.method public synthetic constructor <init>(Landroidx/compose/foundation/layout/LayoutOrientation;Lkotlin/jvm/functions/Function5;FLandroidx/compose/foundation/layout/SizeMode;Landroidx/compose/foundation/layout/CrossAxisAlignment;Ljava/util/List;[Landroidx/compose/ui/layout/Placeable;Lkotlin/jvm/internal/DefaultConstructorMarker;)V
+.method public synthetic constructor <init>(Landroidx/compose/foundation/layout/LayoutOrientation;Landroidx/compose/foundation/layout/Arrangement$Horizontal;Landroidx/compose/foundation/layout/Arrangement$Vertical;FLandroidx/compose/foundation/layout/SizeMode;Landroidx/compose/foundation/layout/CrossAxisAlignment;Ljava/util/List;[Landroidx/compose/ui/layout/Placeable;Lkotlin/jvm/internal/DefaultConstructorMarker;)V
     .locals 0
 
-    invoke-direct/range {p0 .. p7}, Landroidx/compose/foundation/layout/RowColumnMeasurementHelper;-><init>(Landroidx/compose/foundation/layout/LayoutOrientation;Lkotlin/jvm/functions/Function5;FLandroidx/compose/foundation/layout/SizeMode;Landroidx/compose/foundation/layout/CrossAxisAlignment;Ljava/util/List;[Landroidx/compose/ui/layout/Placeable;)V
+    invoke-direct/range {p0 .. p8}, Landroidx/compose/foundation/layout/RowColumnMeasurementHelper;-><init>(Landroidx/compose/foundation/layout/LayoutOrientation;Landroidx/compose/foundation/layout/Arrangement$Horizontal;Landroidx/compose/foundation/layout/Arrangement$Vertical;FLandroidx/compose/foundation/layout/SizeMode;Landroidx/compose/foundation/layout/CrossAxisAlignment;Ljava/util/List;[Landroidx/compose/ui/layout/Placeable;)V
 
     return-void
 .end method
@@ -259,7 +233,7 @@
 
     if-eqz p2, :cond_0
 
-    .line 281
+    .line 350
     invoke-virtual {p2}, Landroidx/compose/foundation/layout/RowColumnParentData;->getCrossAxisAlignment()Landroidx/compose/foundation/layout/CrossAxisAlignment;
 
     move-result-object p2
@@ -269,7 +243,7 @@
     :cond_0
     iget-object p2, p0, Landroidx/compose/foundation/layout/RowColumnMeasurementHelper;->crossAxisAlignment:Landroidx/compose/foundation/layout/CrossAxisAlignment;
 
-    .line 283
+    .line 352
     :cond_1
     invoke-virtual {p0, p1}, Landroidx/compose/foundation/layout/RowColumnMeasurementHelper;->crossAxisSize(Landroidx/compose/ui/layout/Placeable;)I
 
@@ -277,17 +251,17 @@
 
     sub-int/2addr p3, v0
 
-    .line 284
+    .line 353
     iget-object p0, p0, Landroidx/compose/foundation/layout/RowColumnMeasurementHelper;->orientation:Landroidx/compose/foundation/layout/LayoutOrientation;
 
     sget-object v0, Landroidx/compose/foundation/layout/LayoutOrientation;->Horizontal:Landroidx/compose/foundation/layout/LayoutOrientation;
 
     if-ne p0, v0, :cond_2
 
-    .line 285
+    .line 354
     sget-object p4, Landroidx/compose/ui/unit/LayoutDirection;->Ltr:Landroidx/compose/ui/unit/LayoutDirection;
 
-    .line 282
+    .line 351
     :cond_2
     invoke-virtual {p2, p3, p4, p1, p5}, Landroidx/compose/foundation/layout/CrossAxisAlignment;->align$foundation_layout_release(ILandroidx/compose/ui/unit/LayoutDirection;Landroidx/compose/ui/layout/Placeable;I)I
 
@@ -299,39 +273,86 @@
 .method private final mainAxisPositions(I[I[ILandroidx/compose/ui/layout/MeasureScope;)[I
     .locals 6
 
-    .line 264
-    iget-object v0, p0, Landroidx/compose/foundation/layout/RowColumnMeasurementHelper;->arrangement:Lkotlin/jvm/functions/Function5;
+    .line 322
+    iget-object v0, p0, Landroidx/compose/foundation/layout/RowColumnMeasurementHelper;->orientation:Landroidx/compose/foundation/layout/LayoutOrientation;
 
-    .line 265
-    invoke-static {p1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+    sget-object v1, Landroidx/compose/foundation/layout/LayoutOrientation;->Vertical:Landroidx/compose/foundation/layout/LayoutOrientation;
 
-    move-result-object v1
+    if-ne v0, v1, :cond_1
 
-    .line 267
+    .line 323
+    iget-object p0, p0, Landroidx/compose/foundation/layout/RowColumnMeasurementHelper;->verticalArrangement:Landroidx/compose/foundation/layout/Arrangement$Vertical;
+
+    if-eqz p0, :cond_0
+
+    .line 324
+    check-cast p4, Landroidx/compose/ui/unit/Density;
+
+    invoke-interface {p0, p4, p1, p2, p3}, Landroidx/compose/foundation/layout/Arrangement$Vertical;->arrange(Landroidx/compose/ui/unit/Density;I[I[I)V
+
+    goto :goto_0
+
+    .line 323
+    :cond_0
+    new-instance p0, Ljava/lang/IllegalArgumentException;
+
+    const-string p1, "null verticalArrangement in Column"
+
+    invoke-virtual {p1}, Ljava/lang/Object;->toString()Ljava/lang/String;
+
+    move-result-object p1
+
+    invoke-direct {p0, p1}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
+
+    throw p0
+
+    .line 331
+    :cond_1
+    iget-object v0, p0, Landroidx/compose/foundation/layout/RowColumnMeasurementHelper;->horizontalArrangement:Landroidx/compose/foundation/layout/Arrangement$Horizontal;
+
+    if-eqz v0, :cond_2
+
+    .line 332
+    move-object v1, p4
+
+    check-cast v1, Landroidx/compose/ui/unit/Density;
+
+    .line 335
     invoke-interface {p4}, Landroidx/compose/ui/layout/MeasureScope;->getLayoutDirection()Landroidx/compose/ui/unit/LayoutDirection;
 
-    move-result-object v3
+    move-result-object v4
 
-    move-object v2, p2
+    move v2, p1
 
-    move-object v4, p4
+    move-object v3, p2
 
     move-object v5, p3
 
-    .line 264
-    invoke-interface/range {v0 .. v5}, Lkotlin/jvm/functions/Function5;->invoke(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    .line 332
+    invoke-interface/range {v0 .. v5}, Landroidx/compose/foundation/layout/Arrangement$Horizontal;->arrange(Landroidx/compose/ui/unit/Density;I[ILandroidx/compose/ui/unit/LayoutDirection;[I)V
 
+    :goto_0
     return-object p3
+
+    .line 331
+    :cond_2
+    new-instance p0, Ljava/lang/IllegalArgumentException;
+
+    const-string p1, "null horizontalArrangement in Row"
+
+    invoke-virtual {p1}, Ljava/lang/Object;->toString()Ljava/lang/String;
+
+    move-result-object p1
+
+    invoke-direct {p0, p1}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
+
+    throw p0
 .end method
 
 
 # virtual methods
 .method public final crossAxisSize(Landroidx/compose/ui/layout/Placeable;)I
     .locals 1
-
-    const-string v0, "<this>"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 67
     iget-object p0, p0, Landroidx/compose/foundation/layout/RowColumnMeasurementHelper;->orientation:Landroidx/compose/foundation/layout/LayoutOrientation;
@@ -353,28 +374,6 @@
 
     :goto_0
     return p0
-.end method
-
-.method public final getArrangement()Lkotlin/jvm/functions/Function5;
-    .locals 0
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "()",
-            "Lkotlin/jvm/functions/Function5<",
-            "Ljava/lang/Integer;",
-            "[I",
-            "Landroidx/compose/ui/unit/LayoutDirection;",
-            "Landroidx/compose/ui/unit/Density;",
-            "[I",
-            "Lkotlin/Unit;",
-            ">;"
-        }
-    .end annotation
-
-    .line 51
-    iget-object p0, p0, Landroidx/compose/foundation/layout/RowColumnMeasurementHelper;->arrangement:Lkotlin/jvm/functions/Function5;
-
-    return-object p0
 .end method
 
 .method public final getArrangementSpacing-D9Ej5fM()F
@@ -404,6 +403,15 @@
     return-object p0
 .end method
 
+.method public final getHorizontalArrangement()Landroidx/compose/foundation/layout/Arrangement$Horizontal;
+    .locals 0
+
+    .line 50
+    iget-object p0, p0, Landroidx/compose/foundation/layout/RowColumnMeasurementHelper;->horizontalArrangement:Landroidx/compose/foundation/layout/Arrangement$Horizontal;
+
+    return-object p0
+.end method
+
 .method public final getMeasurables()Ljava/util/List;
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
@@ -424,7 +432,7 @@
 .method public final getOrientation()Landroidx/compose/foundation/layout/LayoutOrientation;
     .locals 0
 
-    .line 50
+    .line 49
     iget-object p0, p0, Landroidx/compose/foundation/layout/RowColumnMeasurementHelper;->orientation:Landroidx/compose/foundation/layout/LayoutOrientation;
 
     return-object p0
@@ -439,12 +447,17 @@
     return-object p0
 .end method
 
+.method public final getVerticalArrangement()Landroidx/compose/foundation/layout/Arrangement$Vertical;
+    .locals 0
+
+    .line 51
+    iget-object p0, p0, Landroidx/compose/foundation/layout/RowColumnMeasurementHelper;->verticalArrangement:Landroidx/compose/foundation/layout/Arrangement$Vertical;
+
+    return-object p0
+.end method
+
 .method public final mainAxisSize(Landroidx/compose/ui/layout/Placeable;)I
     .locals 1
-
-    const-string v0, "<this>"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 64
     iget-object p0, p0, Landroidx/compose/foundation/layout/RowColumnMeasurementHelper;->orientation:Landroidx/compose/foundation/layout/LayoutOrientation;
@@ -469,17 +482,13 @@
 .end method
 
 .method public final measureWithoutPlacing-_EkL_-Y(Landroidx/compose/ui/layout/MeasureScope;JII)Landroidx/compose/foundation/layout/RowColumnMeasureHelperResult;
-    .locals 29
+    .locals 44
 
     move-object/from16 v0, p0
 
     move-object/from16 v1, p1
 
     move/from16 v4, p5
-
-    const-string v2, "measureScope"
-
-    invoke-static {v1, v2}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 87
     iget-object v2, v0, Landroidx/compose/foundation/layout/RowColumnMeasurementHelper;->orientation:Landroidx/compose/foundation/layout/LayoutOrientation;
@@ -495,126 +504,155 @@
 
     invoke-interface {v1, v5}, Landroidx/compose/ui/layout/MeasureScope;->roundToPx-0680j_4(F)I
 
-    move-result v13
+    move-result v5
 
-    sub-int v14, v4, p4
+    int-to-long v13, v5
 
-    const/4 v15, 0x0
+    sub-int v15, v4, p4
 
-    const/4 v12, 0x0
+    const/16 v16, 0x0
 
-    move/from16 v11, p4
+    move/from16 v9, p4
 
-    move v5, v12
+    move/from16 v7, v16
 
-    move v10, v5
+    const-wide/16 v5, 0x0
 
-    move/from16 v16, v10
+    const/4 v8, 0x0
 
-    move/from16 v18, v16
+    const/4 v10, 0x0
 
-    move/from16 v19, v18
+    const/16 v17, 0x0
 
-    move/from16 v17, v15
+    const/16 v18, 0x0
 
     :goto_0
-    const v6, 0x7fffffff
+    const/16 v21, 0x1
 
-    const/16 v20, 0x1
-
-    if-ge v11, v4, :cond_5
+    if-ge v9, v4, :cond_5
 
     .line 103
-    iget-object v7, v0, Landroidx/compose/foundation/layout/RowColumnMeasurementHelper;->measurables:Ljava/util/List;
+    iget-object v12, v0, Landroidx/compose/foundation/layout/RowColumnMeasurementHelper;->measurables:Ljava/util/List;
 
-    invoke-interface {v7, v11}, Ljava/util/List;->get(I)Ljava/lang/Object;
+    invoke-interface {v12, v9}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
-    move-result-object v7
+    move-result-object v12
 
-    move-object v9, v7
-
-    check-cast v9, Landroidx/compose/ui/layout/Measurable;
+    check-cast v12, Landroidx/compose/ui/layout/Measurable;
 
     .line 104
-    iget-object v7, v0, Landroidx/compose/foundation/layout/RowColumnMeasurementHelper;->rowColumnParentData:[Landroidx/compose/foundation/layout/RowColumnParentData;
+    iget-object v11, v0, Landroidx/compose/foundation/layout/RowColumnMeasurementHelper;->rowColumnParentData:[Landroidx/compose/foundation/layout/RowColumnParentData;
 
-    aget-object v21, v7, v11
+    aget-object v22, v11, v9
 
     .line 105
-    invoke-static/range {v21 .. v21}, Landroidx/compose/foundation/layout/RowColumnImplKt;->getWeight(Landroidx/compose/foundation/layout/RowColumnParentData;)F
+    invoke-static/range {v22 .. v22}, Landroidx/compose/foundation/layout/RowColumnImplKt;->getWeight(Landroidx/compose/foundation/layout/RowColumnParentData;)F
 
-    move-result v7
+    move-result v11
 
-    cmpl-float v8, v7, v15
+    cmpl-float v23, v11, v16
 
-    if-lez v8, :cond_0
+    if-lez v23, :cond_0
 
-    add-float v17, v17, v7
+    add-float/2addr v7, v11
 
-    add-int/lit8 v16, v16, 0x1
+    add-int/lit8 v8, v8, 0x1
 
-    move/from16 v22, v11
+    move/from16 v30, v7
 
-    move v1, v12
+    move/from16 v31, v8
 
-    goto/16 :goto_5
+    move/from16 v23, v9
 
-    .line 326
+    const-wide/16 v7, 0x0
+
+    goto/16 :goto_4
+
+    .line 396
     :cond_0
     invoke-static {v2, v3}, Landroidx/compose/ui/unit/Constraints;->getMaxWidth-impl(J)I
 
-    move-result v8
+    move-result v11
 
     .line 112
-    iget-object v5, v0, Landroidx/compose/foundation/layout/RowColumnMeasurementHelper;->placeables:[Landroidx/compose/ui/layout/Placeable;
+    iget-object v10, v0, Landroidx/compose/foundation/layout/RowColumnMeasurementHelper;->placeables:[Landroidx/compose/ui/layout/Placeable;
 
-    aget-object v5, v5, v11
+    aget-object v10, v10, v9
 
-    if-nez v5, :cond_2
+    if-nez v10, :cond_2
 
-    if-ne v8, v6, :cond_1
+    move/from16 v23, v7
 
-    move/from16 v22, v6
+    const v7, 0x7fffffff
+
+    if-ne v11, v7, :cond_1
+
+    move/from16 v24, v8
+
+    move/from16 v25, v11
+
+    const v8, 0x7fffffff
+
+    const-wide/16 v10, 0x0
 
     goto :goto_1
 
     :cond_1
-    sub-int v5, v8, v18
+    move/from16 v24, v8
 
-    move/from16 v22, v5
+    int-to-long v7, v11
+
+    sub-long/2addr v7, v5
+
+    move/from16 v25, v11
+
+    const-wide/16 v10, 0x0
+
+    .line 119
+    invoke-static {v7, v8, v10, v11}, Lkotlin/ranges/RangesKt;->coerceAtLeast(JJ)J
+
+    move-result-wide v7
+
+    long-to-int v7, v7
+
+    move v8, v7
 
     :goto_1
-    const/16 v23, 0x8
+    const/16 v19, 0x8
 
-    const/16 v24, 0x0
+    const/16 v20, 0x0
 
     const/4 v7, 0x0
 
-    const/16 v25, 0x0
-
     const/16 v26, 0x0
+
+    const/16 v27, 0x0
+
+    move-wide/from16 v28, v5
 
     move-wide v5, v2
 
-    move/from16 v27, v8
+    move/from16 v30, v23
 
-    move/from16 v8, v22
+    move/from16 v31, v24
 
-    move-object v15, v9
+    move/from16 v23, v9
 
-    move/from16 v9, v25
+    move/from16 v9, v26
 
-    move/from16 v28, v10
+    move-wide/from16 v32, v10
 
-    move/from16 v10, v26
+    const/4 v11, 0x0
 
-    move/from16 v22, v11
+    move/from16 v10, v27
 
-    move/from16 v11, v23
+    move/from16 v34, v25
 
-    move v1, v12
+    move/from16 v11, v19
 
-    move-object/from16 v12, v24
+    move-object v1, v12
+
+    move-object/from16 v12, v20
 
     .line 114
     invoke-static/range {v5 .. v12}, Landroidx/compose/foundation/layout/OrientationIndependentConstraints;->copy-yUG9Ft0$default(JIIIIILjava/lang/Object;)J
@@ -629,364 +667,886 @@
     move-result-wide v5
 
     .line 112
-    invoke-interface {v15, v5, v6}, Landroidx/compose/ui/layout/Measurable;->measure-BRTryo0(J)Landroidx/compose/ui/layout/Placeable;
+    invoke-interface {v1, v5, v6}, Landroidx/compose/ui/layout/Measurable;->measure-BRTryo0(J)Landroidx/compose/ui/layout/Placeable;
 
-    move-result-object v5
+    move-result-object v10
 
     goto :goto_2
 
     :cond_2
-    move/from16 v27, v8
+    move-wide/from16 v28, v5
 
-    move/from16 v28, v10
+    move/from16 v30, v7
 
-    move/from16 v22, v11
+    move/from16 v31, v8
 
-    move v1, v12
+    move/from16 v23, v9
+
+    move/from16 v34, v11
 
     :goto_2
-    sub-int v8, v27, v18
+    long-to-int v1, v13
+
+    move/from16 v5, v34
+
+    int-to-long v5, v5
+
+    move-wide/from16 v11, v28
+
+    sub-long/2addr v5, v11
 
     .line 126
-    invoke-virtual {v0, v5}, Landroidx/compose/foundation/layout/RowColumnMeasurementHelper;->mainAxisSize(Landroidx/compose/ui/layout/Placeable;)I
-
-    move-result v6
-
-    sub-int/2addr v8, v6
-
-    invoke-static {v13, v8}, Ljava/lang/Math;->min(II)I
-
-    move-result v6
-
-    .line 128
-    invoke-virtual {v0, v5}, Landroidx/compose/foundation/layout/RowColumnMeasurementHelper;->mainAxisSize(Landroidx/compose/ui/layout/Placeable;)I
+    invoke-virtual {v0, v10}, Landroidx/compose/foundation/layout/RowColumnMeasurementHelper;->mainAxisSize(Landroidx/compose/ui/layout/Placeable;)I
 
     move-result v7
 
-    add-int/2addr v7, v6
+    int-to-long v7, v7
 
-    add-int v18, v18, v7
+    sub-long/2addr v5, v7
+
+    const-wide/16 v7, 0x0
+
+    .line 127
+    invoke-static {v5, v6, v7, v8}, Lkotlin/ranges/RangesKt;->coerceAtLeast(JJ)J
+
+    move-result-wide v5
+
+    long-to-int v5, v5
+
+    invoke-static {v1, v5}, Ljava/lang/Math;->min(II)I
+
+    move-result v1
 
     .line 129
-    invoke-virtual {v0, v5}, Landroidx/compose/foundation/layout/RowColumnMeasurementHelper;->crossAxisSize(Landroidx/compose/ui/layout/Placeable;)I
+    invoke-virtual {v0, v10}, Landroidx/compose/foundation/layout/RowColumnMeasurementHelper;->mainAxisSize(Landroidx/compose/ui/layout/Placeable;)I
 
-    move-result v7
+    move-result v5
 
-    move/from16 v12, v28
+    add-int/2addr v5, v1
 
-    invoke-static {v12, v7}, Ljava/lang/Math;->max(II)I
+    int-to-long v5, v5
 
-    move-result v7
-
-    if-nez v19, :cond_4
+    add-long/2addr v5, v11
 
     .line 130
-    invoke-static/range {v21 .. v21}, Landroidx/compose/foundation/layout/RowColumnImplKt;->isRelative(Landroidx/compose/foundation/layout/RowColumnParentData;)Z
+    invoke-virtual {v0, v10}, Landroidx/compose/foundation/layout/RowColumnMeasurementHelper;->crossAxisSize(Landroidx/compose/ui/layout/Placeable;)I
 
-    move-result v8
+    move-result v9
 
-    if-eqz v8, :cond_3
+    move/from16 v11, v17
+
+    invoke-static {v11, v9}, Ljava/lang/Math;->max(II)I
+
+    move-result v9
+
+    if-nez v18, :cond_4
+
+    .line 131
+    invoke-static/range {v22 .. v22}, Landroidx/compose/foundation/layout/RowColumnImplKt;->isRelative(Landroidx/compose/foundation/layout/RowColumnParentData;)Z
+
+    move-result v11
+
+    if-eqz v11, :cond_3
 
     goto :goto_3
 
     :cond_3
-    move v12, v1
+    const/16 v21, 0x0
 
-    goto :goto_4
-
+    .line 132
     :cond_4
     :goto_3
-    move/from16 v12, v20
+    iget-object v11, v0, Landroidx/compose/foundation/layout/RowColumnMeasurementHelper;->placeables:[Landroidx/compose/ui/layout/Placeable;
 
-    .line 131
+    aput-object v10, v11, v23
+
+    move v10, v1
+
+    move/from16 v17, v9
+
+    move/from16 v18, v21
+
     :goto_4
-    iget-object v8, v0, Landroidx/compose/foundation/layout/RowColumnMeasurementHelper;->placeables:[Landroidx/compose/ui/layout/Placeable;
-
-    aput-object v5, v8, v22
-
-    move v5, v6
-
-    move v10, v7
-
-    move/from16 v19, v12
-
-    :goto_5
-    add-int/lit8 v11, v22, 0x1
-
-    move v12, v1
-
-    const/4 v15, 0x0
+    add-int/lit8 v9, v23, 0x1
 
     move-object/from16 v1, p1
+
+    move/from16 v7, v30
+
+    move/from16 v8, v31
 
     goto/16 :goto_0
 
     :cond_5
-    move v1, v12
+    move-wide v11, v5
 
-    move v12, v10
+    move/from16 v30, v7
 
-    if-nez v16, :cond_6
+    move v1, v8
 
-    sub-int v18, v18, v5
+    const-wide/16 v7, 0x0
 
-    move v10, v12
+    if-nez v1, :cond_6
 
-    move v12, v1
+    int-to-long v5, v10
 
-    goto/16 :goto_e
+    sub-long v5, v11, v5
+
+    move/from16 p2, v15
+
+    move/from16 v12, v17
+
+    const/4 v10, 0x0
+
+    goto/16 :goto_f
 
     :cond_6
-    const/4 v5, 0x0
+    move/from16 v5, v30
 
-    cmpl-float v7, v17, v5
+    cmpl-float v6, v5, v16
 
-    if-lez v7, :cond_7
+    if-lez v6, :cond_7
 
-    .line 327
+    .line 397
     invoke-static {v2, v3}, Landroidx/compose/ui/unit/Constraints;->getMaxWidth-impl(J)I
 
-    move-result v5
+    move-result v9
 
-    if-eq v5, v6, :cond_7
+    const v10, 0x7fffffff
 
-    .line 328
+    if-eq v9, v10, :cond_7
+
+    .line 398
     invoke-static {v2, v3}, Landroidx/compose/ui/unit/Constraints;->getMaxWidth-impl(J)I
 
-    move-result v5
+    move-result v9
 
-    goto :goto_6
+    goto :goto_5
 
-    .line 329
+    .line 399
     :cond_7
     invoke-static {v2, v3}, Landroidx/compose/ui/unit/Constraints;->getMinWidth-impl(J)I
 
-    move-result v5
+    move-result v9
+
+    :goto_5
+    add-int/lit8 v10, v1, -0x1
+
+    int-to-long v7, v10
+
+    mul-long/2addr v7, v13
+
+    move-wide/from16 v19, v13
+
+    int-to-long v13, v9
+
+    sub-long/2addr v13, v11
+
+    sub-long/2addr v13, v7
+
+    move-wide/from16 v22, v7
+
+    const-wide/16 v7, 0x0
+
+    .line 150
+    invoke-static {v13, v14, v7, v8}, Lkotlin/ranges/RangesKt;->coerceAtLeast(JJ)J
+
+    move-result-wide v13
+
+    if-lez v6, :cond_8
+
+    long-to-float v6, v13
+
+    div-float/2addr v6, v5
+
+    goto :goto_6
+
+    :cond_8
+    move/from16 v6, v16
 
     :goto_6
-    sub-int v5, v5, v18
+    move/from16 v7, p4
 
-    add-int/lit8 v16, v16, -0x1
+    move-wide/from16 v24, v13
 
-    mul-int v13, v13, v16
+    .line 154
+    :goto_7
+    const-string/jumbo v8, "weightedSize "
 
-    sub-int/2addr v5, v13
+    const-string/jumbo v10, "weightUnitSpace "
 
-    if-lez v7, :cond_8
+    move/from16 p2, v15
 
-    int-to-float v7, v5
+    const-string/jumbo v15, "totalWeight "
 
-    div-float v7, v7, v17
+    move-object/from16 v26, v8
+
+    const-string v8, "remainingToTarget "
+
+    move-object/from16 v27, v10
+
+    const-string v10, "arrangementSpacingTotal "
+
+    move/from16 v30, v5
+
+    const-string v5, "fixedSpace "
+
+    move-object/from16 v28, v15
+
+    const-string/jumbo v15, "weightChildrenCount "
+
+    move-wide/from16 v31, v13
+
+    const-string v13, "arrangementSpacingPx "
+
+    const-string/jumbo v14, "targetSpace "
+
+    move-object/from16 v29, v8
+
+    const-string v8, "mainAxisMin "
+
+    if-ge v7, v4, :cond_9
+
+    .line 155
+    iget-object v4, v0, Landroidx/compose/foundation/layout/RowColumnMeasurementHelper;->rowColumnParentData:[Landroidx/compose/foundation/layout/RowColumnParentData;
+
+    aget-object v4, v4, v7
+
+    invoke-static {v4}, Landroidx/compose/foundation/layout/RowColumnImplKt;->getWeight(Landroidx/compose/foundation/layout/RowColumnParentData;)F
+
+    move-result v4
+
+    move-object/from16 v33, v10
+
+    mul-float v10, v6, v4
+
+    .line 158
+    :try_start_0
+    invoke-static {v10}, Lkotlin/math/MathKt;->roundToInt(F)I
+
+    move-result v4
+    :try_end_0
+    .catch Ljava/lang/IllegalArgumentException; {:try_start_0 .. :try_end_0} :catch_0
+
+    int-to-long v4, v4
+
+    sub-long v24, v24, v4
+
+    add-int/lit8 v7, v7, 0x1
+
+    move/from16 v15, p2
+
+    move/from16 v4, p5
+
+    move/from16 v5, v30
+
+    move-wide/from16 v13, v31
 
     goto :goto_7
 
-    :cond_8
-    const/4 v7, 0x0
+    :catch_0
+    move-exception v0
 
-    .line 151
-    :goto_7
-    invoke-static/range {p4 .. p5}, Lkotlin/ranges/RangesKt;->until(II)Lkotlin/ranges/IntRange;
+    move-object v7, v0
 
-    move-result-object v8
+    .line 160
+    new-instance v0, Ljava/lang/IllegalArgumentException;
 
-    check-cast v8, Ljava/lang/Iterable;
+    move-object/from16 p0, v7
 
-    invoke-interface {v8}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
+    .line 161
+    new-instance v7, Ljava/lang/StringBuilder;
 
-    move-result-object v8
+    move-object/from16 p1, v0
 
-    move v9, v1
+    const-string v0, "This log indicates a hard-to-reproduce Compose issue, modified with additional debugging details. Please help us by adding your experiences to the bug link provided. Thank you for helping us improve Compose. https://issuetracker.google.com/issues/297974033 mainAxisMax "
 
-    :goto_8
-    invoke-interface {v8}, Ljava/util/Iterator;->hasNext()Z
+    invoke-direct {v7, v0}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
-    move-result v10
+    .line 400
+    invoke-static {v2, v3}, Landroidx/compose/ui/unit/Constraints;->getMaxWidth-impl(J)I
 
-    if-eqz v10, :cond_9
+    move-result v0
 
-    move-object v10, v8
+    .line 161
+    invoke-virtual {v7, v0}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
-    check-cast v10, Lkotlin/collections/IntIterator;
+    move-result-object v0
 
-    invoke-virtual {v10}, Lkotlin/collections/IntIterator;->nextInt()I
+    invoke-virtual {v0, v8}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    move-result v10
+    move-result-object v0
 
-    .line 152
-    iget-object v11, v0, Landroidx/compose/foundation/layout/RowColumnMeasurementHelper;->rowColumnParentData:[Landroidx/compose/foundation/layout/RowColumnParentData;
+    .line 401
+    invoke-static {v2, v3}, Landroidx/compose/ui/unit/Constraints;->getMinWidth-impl(J)I
 
-    aget-object v10, v11, v10
+    move-result v2
 
-    invoke-static {v10}, Landroidx/compose/foundation/layout/RowColumnImplKt;->getWeight(Landroidx/compose/foundation/layout/RowColumnParentData;)F
+    .line 161
+    invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
-    move-result v10
+    move-result-object v0
 
-    mul-float/2addr v10, v7
+    invoke-virtual {v0, v14}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-static {v10}, Lkotlin/math/MathKt;->roundToInt(F)I
+    move-result-object v0
 
-    move-result v10
+    invoke-virtual {v0, v9}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
-    add-int/2addr v9, v10
+    move-result-object v0
 
-    goto :goto_8
+    invoke-virtual {v0, v13}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
+
+    move-wide/from16 v2, v19
+
+    invoke-virtual {v0, v2, v3}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
+
+    move-result-object v0
+
+    invoke-virtual {v0, v15}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    move-result-object v0
+
+    invoke-virtual {v0, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
+
+    invoke-virtual {v0, v11, v12}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
+
+    move-result-object v0
+
+    move-object/from16 v1, v33
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
+
+    move-wide/from16 v1, v22
+
+    invoke-virtual {v0, v1, v2}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
+
+    move-result-object v0
+
+    move-object/from16 v1, v29
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
+
+    move-wide/from16 v1, v31
+
+    invoke-virtual {v0, v1, v2}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
+
+    move-result-object v0
+
+    move-object/from16 v1, v28
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
+
+    move/from16 v1, v30
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(F)Ljava/lang/StringBuilder;
+
+    move-result-object v0
+
+    move-object/from16 v1, v27
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
+
+    invoke-virtual {v0, v6}, Ljava/lang/StringBuilder;->append(F)Ljava/lang/StringBuilder;
+
+    move-result-object v0
+
+    .line 176
+    const-string v1, "itemWeight "
+
+    .line 161
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
+
+    invoke-virtual {v0, v4}, Ljava/lang/StringBuilder;->append(F)Ljava/lang/StringBuilder;
+
+    move-result-object v0
+
+    move-object/from16 v4, v26
+
+    invoke-virtual {v0, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v7, v10}, Ljava/lang/StringBuilder;->append(F)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v7}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v0
+
+    move-object/from16 v1, p1
+
+    .line 160
+    invoke-direct {v1, v0}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
+
+    .line 178
+    move-object/from16 v0, p0
+
+    check-cast v0, Ljava/lang/Throwable;
+
+    invoke-virtual {v1, v0}, Ljava/lang/IllegalArgumentException;->initCause(Ljava/lang/Throwable;)Ljava/lang/Throwable;
+
+    move-result-object v0
+
+    throw v0
 
     :cond_9
-    sub-int/2addr v5, v9
+    move-object v7, v10
 
-    move/from16 v8, p4
+    move-wide/from16 v35, v22
 
-    move v10, v12
+    move-object/from16 v4, v28
 
-    move v12, v1
+    move-wide/from16 v37, v31
 
+    move-wide/from16 v42, v11
+
+    move-object/from16 v12, v29
+
+    move-wide/from16 v28, v42
+
+    move-wide/from16 v10, v19
+
+    move-object/from16 v19, v4
+
+    move-object/from16 v20, v5
+
+    move-object/from16 v33, v7
+
+    const/4 v4, 0x0
+
+    move/from16 v5, p4
+
+    move/from16 v7, p5
+
+    move/from16 v42, v17
+
+    move-object/from16 v17, v12
+
+    move/from16 v12, v42
+
+    :goto_8
+    if-ge v5, v7, :cond_f
+
+    .line 183
+    iget-object v7, v0, Landroidx/compose/foundation/layout/RowColumnMeasurementHelper;->placeables:[Landroidx/compose/ui/layout/Placeable;
+
+    aget-object v7, v7, v5
+
+    if-nez v7, :cond_e
+
+    .line 184
+    iget-object v7, v0, Landroidx/compose/foundation/layout/RowColumnMeasurementHelper;->measurables:Ljava/util/List;
+
+    invoke-interface {v7, v5}, Ljava/util/List;->get(I)Ljava/lang/Object;
+
+    move-result-object v7
+
+    check-cast v7, Landroidx/compose/ui/layout/Measurable;
+
+    move/from16 v31, v1
+
+    .line 185
+    iget-object v1, v0, Landroidx/compose/foundation/layout/RowColumnMeasurementHelper;->rowColumnParentData:[Landroidx/compose/foundation/layout/RowColumnParentData;
+
+    aget-object v1, v1, v5
+
+    move-object/from16 v22, v15
+
+    .line 186
+    invoke-static {v1}, Landroidx/compose/foundation/layout/RowColumnImplKt;->getWeight(Landroidx/compose/foundation/layout/RowColumnParentData;)F
+
+    move-result v15
+
+    cmpl-float v23, v15, v16
+
+    if-lez v23, :cond_d
+
+    move-wide/from16 v39, v10
+
+    .line 191
+    invoke-static/range {v24 .. v25}, Lkotlin/math/MathKt;->getSign(J)I
+
+    move-result v10
+
+    move-object/from16 v23, v13
+
+    move-object v11, v14
+
+    int-to-long v13, v10
+
+    sub-long v24, v24, v13
+
+    mul-float v13, v6, v15
+
+    .line 197
+    invoke-static {v13}, Lkotlin/math/MathKt;->roundToInt(F)I
+
+    move-result v14
+
+    add-int/2addr v14, v10
+
+    move-object/from16 v32, v11
+
+    const/4 v11, 0x0
+
+    invoke-static {v11, v14}, Ljava/lang/Math;->max(II)I
+
+    move-result v14
+
+    .line 203
+    :try_start_1
+    invoke-static {v1}, Landroidx/compose/foundation/layout/RowColumnImplKt;->getFill(Landroidx/compose/foundation/layout/RowColumnParentData;)Z
+
+    move-result v34
+    :try_end_1
+    .catch Ljava/lang/IllegalArgumentException; {:try_start_1 .. :try_end_1} :catch_3
+
+    if-eqz v34, :cond_a
+
+    const v11, 0x7fffffff
+
+    if-eq v14, v11, :cond_a
+
+    move/from16 v34, v10
+
+    move v11, v14
+
+    goto :goto_9
+
+    :cond_a
+    move/from16 v34, v10
+
+    const/4 v11, 0x0
+
+    .line 403
     :goto_9
-    if-ge v8, v4, :cond_f
+    :try_start_2
+    invoke-static {v2, v3}, Landroidx/compose/ui/unit/Constraints;->getMaxHeight-impl(J)I
 
-    .line 156
-    iget-object v9, v0, Landroidx/compose/foundation/layout/RowColumnMeasurementHelper;->placeables:[Landroidx/compose/ui/layout/Placeable;
+    move-result v10
+    :try_end_2
+    .catch Ljava/lang/IllegalArgumentException; {:try_start_2 .. :try_end_2} :catch_2
 
-    aget-object v9, v9, v8
+    move/from16 v41, v13
 
-    if-nez v9, :cond_e
+    const/4 v13, 0x0
 
-    .line 157
-    iget-object v9, v0, Landroidx/compose/foundation/layout/RowColumnMeasurementHelper;->measurables:Ljava/util/List;
+    .line 202
+    :try_start_3
+    invoke-static {v11, v14, v13, v10}, Landroidx/compose/foundation/layout/OrientationIndependentConstraints;->constructor-impl(IIII)J
 
-    invoke-interface {v9, v8}, Ljava/util/List;->get(I)Ljava/lang/Object;
+    move-result-wide v10
 
-    move-result-object v9
+    .line 211
+    iget-object v13, v0, Landroidx/compose/foundation/layout/RowColumnMeasurementHelper;->orientation:Landroidx/compose/foundation/layout/LayoutOrientation;
 
-    check-cast v9, Landroidx/compose/ui/layout/Measurable;
+    invoke-static {v10, v11, v13}, Landroidx/compose/foundation/layout/OrientationIndependentConstraints;->toBoxConstraints-OenEA2s(JLandroidx/compose/foundation/layout/LayoutOrientation;)J
 
-    .line 158
-    iget-object v11, v0, Landroidx/compose/foundation/layout/RowColumnMeasurementHelper;->rowColumnParentData:[Landroidx/compose/foundation/layout/RowColumnParentData;
+    move-result-wide v10
+    :try_end_3
+    .catch Ljava/lang/IllegalArgumentException; {:try_start_3 .. :try_end_3} :catch_1
 
-    aget-object v11, v11, v8
+    .line 235
+    invoke-interface {v7, v10, v11}, Landroidx/compose/ui/layout/Measurable;->measure-BRTryo0(J)Landroidx/compose/ui/layout/Placeable;
 
-    .line 159
-    invoke-static {v11}, Landroidx/compose/foundation/layout/RowColumnImplKt;->getWeight(Landroidx/compose/foundation/layout/RowColumnParentData;)F
+    move-result-object v7
 
-    move-result v15
+    .line 236
+    invoke-virtual {v0, v7}, Landroidx/compose/foundation/layout/RowColumnMeasurementHelper;->mainAxisSize(Landroidx/compose/ui/layout/Placeable;)I
 
-    const/16 v16, 0x0
+    move-result v10
 
-    cmpl-float v17, v15, v16
+    add-int/2addr v4, v10
 
-    if-lez v17, :cond_d
+    .line 237
+    invoke-virtual {v0, v7}, Landroidx/compose/foundation/layout/RowColumnMeasurementHelper;->crossAxisSize(Landroidx/compose/ui/layout/Placeable;)I
 
-    .line 164
-    invoke-static {v5}, Lkotlin/math/MathKt;->getSign(I)I
+    move-result v10
 
-    move-result v17
+    invoke-static {v12, v10}, Ljava/lang/Math;->max(II)I
 
-    sub-int v5, v5, v17
+    move-result v12
 
-    mul-float/2addr v15, v7
+    if-nez v18, :cond_c
 
-    .line 168
-    invoke-static {v15}, Lkotlin/math/MathKt;->roundToInt(F)I
+    .line 238
+    invoke-static {v1}, Landroidx/compose/foundation/layout/RowColumnImplKt;->isRelative(Landroidx/compose/foundation/layout/RowColumnParentData;)Z
 
-    move-result v15
+    move-result v1
 
-    add-int v15, v15, v17
-
-    invoke-static {v1, v15}, Ljava/lang/Math;->max(II)I
-
-    move-result v15
-
-    .line 172
-    invoke-static {v11}, Landroidx/compose/foundation/layout/RowColumnImplKt;->getFill(Landroidx/compose/foundation/layout/RowColumnParentData;)Z
-
-    move-result v17
-
-    if-eqz v17, :cond_a
-
-    if-eq v15, v6, :cond_a
-
-    move/from16 p3, v5
-
-    move v6, v15
+    if-eqz v1, :cond_b
 
     goto :goto_a
 
-    :cond_a
-    move v6, v1
-
-    move/from16 p3, v5
-
-    .line 331
-    :goto_a
-    invoke-static {v2, v3}, Landroidx/compose/ui/unit/Constraints;->getMaxHeight-impl(J)I
-
-    move-result v5
-
-    .line 171
-    invoke-static {v6, v15, v1, v5}, Landroidx/compose/foundation/layout/OrientationIndependentConstraints;->constructor-impl(IIII)J
-
-    move-result-wide v5
-
-    .line 180
-    iget-object v15, v0, Landroidx/compose/foundation/layout/RowColumnMeasurementHelper;->orientation:Landroidx/compose/foundation/layout/LayoutOrientation;
-
-    invoke-static {v5, v6, v15}, Landroidx/compose/foundation/layout/OrientationIndependentConstraints;->toBoxConstraints-OenEA2s(JLandroidx/compose/foundation/layout/LayoutOrientation;)J
-
-    move-result-wide v5
-
-    .line 170
-    invoke-interface {v9, v5, v6}, Landroidx/compose/ui/layout/Measurable;->measure-BRTryo0(J)Landroidx/compose/ui/layout/Placeable;
-
-    move-result-object v5
-
-    .line 182
-    invoke-virtual {v0, v5}, Landroidx/compose/foundation/layout/RowColumnMeasurementHelper;->mainAxisSize(Landroidx/compose/ui/layout/Placeable;)I
-
-    move-result v6
-
-    add-int/2addr v12, v6
-
-    .line 183
-    invoke-virtual {v0, v5}, Landroidx/compose/foundation/layout/RowColumnMeasurementHelper;->crossAxisSize(Landroidx/compose/ui/layout/Placeable;)I
-
-    move-result v6
-
-    invoke-static {v10, v6}, Ljava/lang/Math;->max(II)I
-
-    move-result v10
-
-    if-nez v19, :cond_c
-
-    .line 184
-    invoke-static {v11}, Landroidx/compose/foundation/layout/RowColumnImplKt;->isRelative(Landroidx/compose/foundation/layout/RowColumnParentData;)Z
-
-    move-result v6
-
-    if-eqz v6, :cond_b
+    :cond_b
+    const/4 v10, 0x0
 
     goto :goto_b
 
-    :cond_b
-    move v6, v1
-
-    goto :goto_c
-
     :cond_c
+    :goto_a
+    move/from16 v10, v21
+
+    .line 239
     :goto_b
-    move/from16 v6, v20
+    iget-object v1, v0, Landroidx/compose/foundation/layout/RowColumnMeasurementHelper;->placeables:[Landroidx/compose/ui/layout/Placeable;
 
-    .line 185
-    :goto_c
-    iget-object v9, v0, Landroidx/compose/foundation/layout/RowColumnMeasurementHelper;->placeables:[Landroidx/compose/ui/layout/Placeable;
+    aput-object v7, v1, v5
 
-    aput-object v5, v9, v8
+    move/from16 v18, v10
 
-    move/from16 v5, p3
+    move-object/from16 v14, v19
 
-    move/from16 v19, v6
+    move-object/from16 v11, v22
+
+    move-object/from16 v10, v23
+
+    move-object/from16 v15, v26
+
+    move-object/from16 v1, v27
+
+    move-wide/from16 v22, v28
+
+    move/from16 v13, v31
+
+    move-object/from16 v7, v32
+
+    move-object/from16 v31, v33
+
+    move-wide/from16 v26, v35
+
+    move-wide/from16 v28, v37
+
+    move-object/from16 v32, v20
+
+    move-wide/from16 v19, v39
+
+    goto/16 :goto_e
+
+    :catch_1
+    move-exception v0
 
     goto :goto_d
 
-    .line 160
+    :catch_2
+    move-exception v0
+
+    goto :goto_c
+
+    :catch_3
+    move-exception v0
+
+    move/from16 v34, v10
+
+    :goto_c
+    move/from16 v41, v13
+
+    .line 213
+    :goto_d
+    new-instance v1, Ljava/lang/IllegalArgumentException;
+
+    .line 214
+    new-instance v4, Ljava/lang/StringBuilder;
+
+    const-string v5, "This log indicates a hard-to-reproduce Compose issue, modified with additional debugging details. Please help us by adding your experiences to the bug link provided. Thank you for helping us improve Compose. https://issuetracker.google.com/issues/300280216 mainAxisMax "
+
+    invoke-direct {v4, v5}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+
+    .line 404
+    invoke-static {v2, v3}, Landroidx/compose/ui/unit/Constraints;->getMaxWidth-impl(J)I
+
+    move-result v5
+
+    .line 214
+    invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    move-result-object v5
+
+    invoke-virtual {v5, v8}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v5
+
+    .line 405
+    invoke-static {v2, v3}, Landroidx/compose/ui/unit/Constraints;->getMinWidth-impl(J)I
+
+    move-result v2
+
+    .line 214
+    invoke-virtual {v5, v2}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    move-result-object v2
+
+    move-object/from16 v7, v32
+
+    invoke-virtual {v2, v7}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v2
+
+    invoke-virtual {v2, v9}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    move-result-object v2
+
+    move-object/from16 v10, v23
+
+    invoke-virtual {v2, v10}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v2
+
+    move-wide/from16 v7, v39
+
+    invoke-virtual {v2, v7, v8}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
+
+    move-result-object v2
+
+    move-object/from16 v11, v22
+
+    invoke-virtual {v2, v11}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v2
+
+    move/from16 v13, v31
+
+    invoke-virtual {v2, v13}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    move-result-object v2
+
+    move-object/from16 v3, v20
+
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v2
+
+    move-wide/from16 v7, v28
+
+    invoke-virtual {v2, v7, v8}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
+
+    move-result-object v2
+
+    move-object/from16 v3, v33
+
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v2
+
+    move-wide/from16 v7, v35
+
+    invoke-virtual {v2, v7, v8}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
+
+    move-result-object v2
+
+    move-object/from16 v3, v17
+
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v2
+
+    move-wide/from16 v7, v37
+
+    invoke-virtual {v2, v7, v8}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
+
+    move-result-object v2
+
+    move-object/from16 v3, v19
+
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v2
+
+    move/from16 v3, v30
+
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(F)Ljava/lang/StringBuilder;
+
+    move-result-object v2
+
+    move-object/from16 v3, v27
+
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v2
+
+    invoke-virtual {v2, v6}, Ljava/lang/StringBuilder;->append(F)Ljava/lang/StringBuilder;
+
+    move-result-object v2
+
+    .line 229
+    const-string/jumbo v3, "weight "
+
+    .line 214
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v2
+
+    invoke-virtual {v2, v15}, Ljava/lang/StringBuilder;->append(F)Ljava/lang/StringBuilder;
+
+    move-result-object v2
+
+    move-object/from16 v15, v26
+
+    invoke-virtual {v2, v15}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move/from16 v6, v41
+
+    invoke-virtual {v4, v6}, Ljava/lang/StringBuilder;->append(F)Ljava/lang/StringBuilder;
+
+    move-result-object v2
+
+    .line 231
+    const-string v3, "remainderUnit "
+
+    .line 214
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v2
+
+    move/from16 v3, v34
+
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    move-result-object v2
+
+    .line 232
+    const-string v3, "childMainAxisSize "
+
+    .line 214
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v2
+
+    invoke-virtual {v2, v14}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v4}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v2
+
+    .line 213
+    invoke-direct {v1, v2}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
+
+    .line 233
+    check-cast v0, Ljava/lang/Throwable;
+
+    invoke-virtual {v1, v0}, Ljava/lang/IllegalArgumentException;->initCause(Ljava/lang/Throwable;)Ljava/lang/Throwable;
+
+    move-result-object v0
+
+    throw v0
+
+    .line 187
     :cond_d
     new-instance v0, Ljava/lang/IllegalStateException;
 
@@ -1001,273 +1561,351 @@
     throw v0
 
     :cond_e
-    const/16 v16, 0x0
+    move-object v7, v14
 
-    :goto_d
-    add-int/lit8 v8, v8, 0x1
+    move-object/from16 v14, v19
 
-    const v6, 0x7fffffff
+    move-object/from16 v32, v20
 
-    goto/16 :goto_9
+    move-wide/from16 v22, v28
 
-    :cond_f
-    add-int/2addr v12, v13
+    move-object/from16 v31, v33
 
-    .line 332
-    invoke-static {v2, v3}, Landroidx/compose/ui/unit/Constraints;->getMaxWidth-impl(J)I
+    move-wide/from16 v28, v37
 
-    move-result v5
+    move-wide/from16 v19, v10
 
-    sub-int v5, v5, v18
+    move-object v10, v13
 
-    .line 189
-    invoke-static {v12, v5}, Lkotlin/ranges/RangesKt;->coerceAtMost(II)I
+    move-object v11, v15
 
-    move-result v12
+    move-object/from16 v15, v26
+
+    move v13, v1
+
+    move-object/from16 v1, v27
+
+    move-wide/from16 v26, v35
 
     :goto_e
-    if-eqz v19, :cond_14
+    add-int/lit8 v5, v5, 0x1
 
-    move/from16 v7, p4
+    move-wide/from16 v35, v26
 
-    move v5, v1
+    move-wide/from16 v37, v28
 
-    move v6, v5
+    move-object/from16 v33, v31
 
-    :goto_f
-    if-ge v7, v4, :cond_15
+    move-object/from16 v27, v1
 
-    .line 196
-    iget-object v8, v0, Landroidx/compose/foundation/layout/RowColumnMeasurementHelper;->placeables:[Landroidx/compose/ui/layout/Placeable;
+    move v1, v13
 
-    aget-object v8, v8, v7
+    move-object/from16 v26, v15
 
-    invoke-static {v8}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;)V
+    move-wide/from16 v28, v22
 
-    .line 197
-    iget-object v9, v0, Landroidx/compose/foundation/layout/RowColumnMeasurementHelper;->rowColumnParentData:[Landroidx/compose/foundation/layout/RowColumnParentData;
+    move-object v13, v10
 
-    aget-object v9, v9, v7
+    move-object v15, v11
 
-    .line 198
-    invoke-static {v9}, Landroidx/compose/foundation/layout/RowColumnImplKt;->getCrossAxisAlignment(Landroidx/compose/foundation/layout/RowColumnParentData;)Landroidx/compose/foundation/layout/CrossAxisAlignment;
+    move-wide/from16 v10, v19
 
-    move-result-object v9
+    move-object/from16 v20, v32
 
-    if-eqz v9, :cond_10
+    move-object/from16 v19, v14
 
-    .line 199
-    invoke-virtual {v9, v8}, Landroidx/compose/foundation/layout/CrossAxisAlignment;->calculateAlignmentLinePosition$foundation_layout_release(Landroidx/compose/ui/layout/Placeable;)Ljava/lang/Integer;
+    move-object v14, v7
 
-    move-result-object v9
+    move/from16 v7, p5
 
-    goto :goto_10
+    goto/16 :goto_8
 
-    :cond_10
-    const/4 v9, 0x0
+    :cond_f
+    move-wide/from16 v22, v28
 
-    :goto_10
-    if-eqz v9, :cond_13
+    move-wide/from16 v26, v35
 
-    .line 203
-    check-cast v9, Ljava/lang/Number;
+    int-to-long v4, v4
 
-    invoke-virtual {v9}, Ljava/lang/Number;->intValue()I
+    add-long v6, v4, v26
 
-    move-result v11
-
-    const/high16 v13, -0x80000000
-
-    if-eq v11, v13, :cond_11
-
-    goto :goto_11
-
-    :cond_11
-    move v11, v1
-
-    .line 201
-    :goto_11
-    invoke-static {v5, v11}, Ljava/lang/Math;->max(II)I
-
-    move-result v5
-
-    .line 209
-    invoke-virtual {v0, v8}, Landroidx/compose/foundation/layout/RowColumnMeasurementHelper;->crossAxisSize(Landroidx/compose/ui/layout/Placeable;)I
-
-    move-result v11
-
-    .line 211
-    invoke-virtual {v9}, Ljava/lang/Number;->intValue()I
-
-    move-result v9
-
-    if-eq v9, v13, :cond_12
-
-    goto :goto_12
-
-    .line 215
-    :cond_12
-    invoke-virtual {v0, v8}, Landroidx/compose/foundation/layout/RowColumnMeasurementHelper;->crossAxisSize(Landroidx/compose/ui/layout/Placeable;)I
-
-    move-result v9
-
-    :goto_12
-    sub-int/2addr v11, v9
-
-    .line 207
-    invoke-static {v6, v11}, Ljava/lang/Math;->max(II)I
-
-    move-result v6
-
-    :cond_13
-    add-int/lit8 v7, v7, 0x1
-
-    goto :goto_f
-
-    :cond_14
-    move v5, v1
-
-    move v6, v5
-
-    :cond_15
-    add-int v7, v18, v12
-
-    .line 333
-    invoke-static {v2, v3}, Landroidx/compose/ui/unit/Constraints;->getMinWidth-impl(J)I
-
-    move-result v8
-
-    .line 225
-    invoke-static {v7, v8}, Ljava/lang/Math;->max(II)I
-
-    move-result v7
-
-    .line 334
-    invoke-static {v2, v3}, Landroidx/compose/ui/unit/Constraints;->getMaxHeight-impl(J)I
-
-    move-result v8
-
-    const v9, 0x7fffffff
-
-    if-eq v8, v9, :cond_16
-
-    .line 227
-    iget-object v8, v0, Landroidx/compose/foundation/layout/RowColumnMeasurementHelper;->crossAxisSize:Landroidx/compose/foundation/layout/SizeMode;
-
-    sget-object v9, Landroidx/compose/foundation/layout/SizeMode;->Expand:Landroidx/compose/foundation/layout/SizeMode;
-
-    if-ne v8, v9, :cond_16
-
-    .line 335
-    invoke-static {v2, v3}, Landroidx/compose/ui/unit/Constraints;->getMaxHeight-impl(J)I
-
-    move-result v2
-
-    goto :goto_13
-
-    .line 336
-    :cond_16
-    invoke-static {v2, v3}, Landroidx/compose/ui/unit/Constraints;->getMinHeight-impl(J)I
-
-    move-result v2
-
-    add-int/2addr v6, v5
-
-    .line 233
-    invoke-static {v2, v6}, Ljava/lang/Math;->max(II)I
-
-    move-result v2
-
-    .line 231
-    invoke-static {v10, v2}, Ljava/lang/Math;->max(II)I
-
-    move-result v2
-
-    .line 239
-    :goto_13
-    new-array v3, v14, [I
-
-    move v12, v1
-
-    :goto_14
-    if-ge v12, v14, :cond_17
-
-    aput v1, v3, v12
-
-    add-int/lit8 v12, v12, 0x1
-
-    goto :goto_14
-
-    .line 240
-    :cond_17
-    new-array v6, v14, [I
-
-    move v12, v1
-
-    :goto_15
-    if-ge v12, v14, :cond_18
-
-    .line 241
-    iget-object v1, v0, Landroidx/compose/foundation/layout/RowColumnMeasurementHelper;->placeables:[Landroidx/compose/ui/layout/Placeable;
-
-    add-int v8, v12, p4
-
-    aget-object v1, v1, v8
-
-    invoke-static {v1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;)V
-
-    invoke-virtual {v0, v1}, Landroidx/compose/foundation/layout/RowColumnMeasurementHelper;->mainAxisSize(Landroidx/compose/ui/layout/Placeable;)I
+    .line 406
+    invoke-static {v2, v3}, Landroidx/compose/ui/unit/Constraints;->getMaxWidth-impl(J)I
 
     move-result v1
 
-    aput v1, v6, v12
+    int-to-long v4, v1
 
-    add-int/lit8 v12, v12, 0x1
+    sub-long v10, v4, v22
+
+    const-wide/16 v8, 0x0
+
+    .line 243
+    invoke-static/range {v6 .. v11}, Lkotlin/ranges/RangesKt;->coerceIn(JJJ)J
+
+    move-result-wide v4
+
+    long-to-int v10, v4
+
+    move-wide/from16 v5, v22
+
+    :goto_f
+    if-eqz v18, :cond_15
+
+    move/from16 v8, p4
+
+    move/from16 v7, p5
+
+    const/4 v1, 0x0
+
+    const/4 v4, 0x0
+
+    :goto_10
+    if-ge v8, v7, :cond_14
+
+    .line 251
+    iget-object v9, v0, Landroidx/compose/foundation/layout/RowColumnMeasurementHelper;->placeables:[Landroidx/compose/ui/layout/Placeable;
+
+    aget-object v9, v9, v8
+
+    invoke-static {v9}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;)V
+
+    .line 252
+    iget-object v11, v0, Landroidx/compose/foundation/layout/RowColumnMeasurementHelper;->rowColumnParentData:[Landroidx/compose/foundation/layout/RowColumnParentData;
+
+    aget-object v11, v11, v8
+
+    .line 253
+    invoke-static {v11}, Landroidx/compose/foundation/layout/RowColumnImplKt;->getCrossAxisAlignment(Landroidx/compose/foundation/layout/RowColumnParentData;)Landroidx/compose/foundation/layout/CrossAxisAlignment;
+
+    move-result-object v11
+
+    if-eqz v11, :cond_10
+
+    .line 254
+    invoke-virtual {v11, v9}, Landroidx/compose/foundation/layout/CrossAxisAlignment;->calculateAlignmentLinePosition$foundation_layout_release(Landroidx/compose/ui/layout/Placeable;)Ljava/lang/Integer;
+
+    move-result-object v11
+
+    goto :goto_11
+
+    :cond_10
+    const/4 v11, 0x0
+
+    :goto_11
+    if-eqz v11, :cond_13
+
+    .line 258
+    check-cast v11, Ljava/lang/Number;
+
+    invoke-virtual {v11}, Ljava/lang/Number;->intValue()I
+
+    move-result v13
+
+    const/high16 v14, -0x80000000
+
+    if-eq v13, v14, :cond_11
+
+    goto :goto_12
+
+    :cond_11
+    const/4 v13, 0x0
+
+    .line 256
+    :goto_12
+    invoke-static {v1, v13}, Ljava/lang/Math;->max(II)I
+
+    move-result v1
+
+    .line 264
+    invoke-virtual {v0, v9}, Landroidx/compose/foundation/layout/RowColumnMeasurementHelper;->crossAxisSize(Landroidx/compose/ui/layout/Placeable;)I
+
+    move-result v13
+
+    .line 266
+    invoke-virtual {v11}, Ljava/lang/Number;->intValue()I
+
+    move-result v11
+
+    if-eq v11, v14, :cond_12
+
+    goto :goto_13
+
+    .line 270
+    :cond_12
+    invoke-virtual {v0, v9}, Landroidx/compose/foundation/layout/RowColumnMeasurementHelper;->crossAxisSize(Landroidx/compose/ui/layout/Placeable;)I
+
+    move-result v11
+
+    :goto_13
+    sub-int/2addr v13, v11
+
+    .line 262
+    invoke-static {v4, v13}, Ljava/lang/Math;->max(II)I
+
+    move-result v4
+
+    :cond_13
+    add-int/lit8 v8, v8, 0x1
+
+    goto :goto_10
+
+    :cond_14
+    move v8, v1
+
+    goto :goto_14
+
+    :cond_15
+    move/from16 v7, p5
+
+    const/4 v4, 0x0
+
+    const/4 v8, 0x0
+
+    :goto_14
+    int-to-long v9, v10
+
+    add-long/2addr v5, v9
+
+    const-wide/16 v9, 0x0
+
+    .line 281
+    invoke-static {v5, v6, v9, v10}, Lkotlin/ranges/RangesKt;->coerceAtLeast(JJ)J
+
+    move-result-wide v5
+
+    long-to-int v1, v5
+
+    .line 407
+    invoke-static {v2, v3}, Landroidx/compose/ui/unit/Constraints;->getMinWidth-impl(J)I
+
+    move-result v5
+
+    .line 280
+    invoke-static {v1, v5}, Ljava/lang/Math;->max(II)I
+
+    move-result v5
+
+    .line 408
+    invoke-static {v2, v3}, Landroidx/compose/ui/unit/Constraints;->getMaxHeight-impl(J)I
+
+    move-result v1
+
+    const v6, 0x7fffffff
+
+    if-eq v1, v6, :cond_16
+
+    .line 285
+    iget-object v1, v0, Landroidx/compose/foundation/layout/RowColumnMeasurementHelper;->crossAxisSize:Landroidx/compose/foundation/layout/SizeMode;
+
+    sget-object v6, Landroidx/compose/foundation/layout/SizeMode;->Expand:Landroidx/compose/foundation/layout/SizeMode;
+
+    if-ne v1, v6, :cond_16
+
+    .line 409
+    invoke-static {v2, v3}, Landroidx/compose/ui/unit/Constraints;->getMaxHeight-impl(J)I
+
+    move-result v1
 
     goto :goto_15
 
-    :cond_18
-    move-object/from16 v1, p1
+    .line 410
+    :cond_16
+    invoke-static {v2, v3}, Landroidx/compose/ui/unit/Constraints;->getMinHeight-impl(J)I
 
-    .line 250
-    invoke-direct {v0, v7, v6, v3, v1}, Landroidx/compose/foundation/layout/RowColumnMeasurementHelper;->mainAxisPositions(I[I[ILandroidx/compose/ui/layout/MeasureScope;)[I
+    move-result v1
+
+    add-int/2addr v4, v8
+
+    .line 291
+    invoke-static {v1, v4}, Ljava/lang/Math;->max(II)I
+
+    move-result v1
+
+    .line 289
+    invoke-static {v12, v1}, Ljava/lang/Math;->max(II)I
+
+    move-result v1
+
+    :goto_15
+    move/from16 v2, p2
+
+    .line 297
+    new-array v3, v2, [I
+
+    const/4 v10, 0x0
+
+    :goto_16
+    if-ge v10, v2, :cond_17
+
+    const/4 v4, 0x0
+
+    aput v4, v3, v10
+
+    add-int/lit8 v10, v10, 0x1
+
+    goto :goto_16
+
+    :cond_17
+    const/4 v4, 0x0
+
+    .line 298
+    new-array v6, v2, [I
+
+    move v10, v4
+
+    :goto_17
+    if-ge v10, v2, :cond_18
+
+    .line 299
+    iget-object v4, v0, Landroidx/compose/foundation/layout/RowColumnMeasurementHelper;->placeables:[Landroidx/compose/ui/layout/Placeable;
+
+    add-int v9, v10, p4
+
+    aget-object v4, v4, v9
+
+    invoke-static {v4}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;)V
+
+    invoke-virtual {v0, v4}, Landroidx/compose/foundation/layout/RowColumnMeasurementHelper;->mainAxisSize(Landroidx/compose/ui/layout/Placeable;)I
+
+    move-result v4
+
+    aput v4, v6, v10
+
+    add-int/lit8 v10, v10, 0x1
+
+    goto :goto_17
+
+    :cond_18
+    move-object/from16 v4, p1
+
+    .line 308
+    invoke-direct {v0, v5, v6, v3, v4}, Landroidx/compose/foundation/layout/RowColumnMeasurementHelper;->mainAxisPositions(I[I[ILandroidx/compose/ui/layout/MeasureScope;)[I
 
     move-result-object v6
 
-    .line 244
-    new-instance v8, Landroidx/compose/foundation/layout/RowColumnMeasureHelperResult;
+    .line 302
+    new-instance v9, Landroidx/compose/foundation/layout/RowColumnMeasureHelperResult;
 
-    move-object v0, v8
+    move-object v0, v9
 
-    move v1, v2
-
-    move v2, v7
+    move v2, v5
 
     move/from16 v3, p4
 
     move/from16 v4, p5
 
+    move v5, v8
+
     invoke-direct/range {v0 .. v6}, Landroidx/compose/foundation/layout/RowColumnMeasureHelperResult;-><init>(IIIII[I)V
 
-    return-object v8
+    return-object v9
 .end method
 
 .method public final placeHelper(Landroidx/compose/ui/layout/Placeable$PlacementScope;Landroidx/compose/foundation/layout/RowColumnMeasureHelperResult;ILandroidx/compose/ui/unit/LayoutDirection;)V
     .locals 11
 
-    const-string v0, "placeableScope"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string v0, "measureResult"
-
-    invoke-static {p2, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string v0, "layoutDirection"
-
-    invoke-static {p4, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 300
+    .line 369
     invoke-virtual {p2}, Landroidx/compose/foundation/layout/RowColumnMeasureHelperResult;->getStartIndex()I
 
     move-result v0
@@ -1279,20 +1917,20 @@
     :goto_0
     if-ge v0, v1, :cond_2
 
-    .line 301
+    .line 370
     iget-object v2, p0, Landroidx/compose/foundation/layout/RowColumnMeasurementHelper;->placeables:[Landroidx/compose/ui/layout/Placeable;
 
     aget-object v2, v2, v0
 
-    .line 302
+    .line 371
     invoke-static {v2}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;)V
 
-    .line 303
+    .line 372
     invoke-virtual {p2}, Landroidx/compose/foundation/layout/RowColumnMeasureHelperResult;->getMainAxisPositions()[I
 
     move-result-object v9
 
-    .line 306
+    .line 375
     iget-object v3, p0, Landroidx/compose/foundation/layout/RowColumnMeasurementHelper;->measurables:Ljava/util/List;
 
     invoke-interface {v3, v0}, Ljava/util/List;->get(I)Ljava/lang/Object;
@@ -1319,12 +1957,12 @@
     :goto_1
     move-object v5, v3
 
-    .line 307
+    .line 376
     invoke-virtual {p2}, Landroidx/compose/foundation/layout/RowColumnMeasureHelperResult;->getCrossAxisSize()I
 
     move-result v6
 
-    .line 309
+    .line 378
     invoke-virtual {p2}, Landroidx/compose/foundation/layout/RowColumnMeasureHelperResult;->getBeforeCrossAxisAlignmentLine()I
 
     move-result v8
@@ -1335,21 +1973,21 @@
 
     move-object v7, p4
 
-    .line 304
+    .line 373
     invoke-direct/range {v3 .. v8}, Landroidx/compose/foundation/layout/RowColumnMeasurementHelper;->getCrossAxisPosition(Landroidx/compose/ui/layout/Placeable;Landroidx/compose/foundation/layout/RowColumnParentData;ILandroidx/compose/ui/unit/LayoutDirection;I)I
 
     move-result v3
 
     add-int v6, v3, p3
 
-    .line 311
+    .line 380
     iget-object v3, p0, Landroidx/compose/foundation/layout/RowColumnMeasurementHelper;->orientation:Landroidx/compose/foundation/layout/LayoutOrientation;
 
     sget-object v4, Landroidx/compose/foundation/layout/LayoutOrientation;->Horizontal:Landroidx/compose/foundation/layout/LayoutOrientation;
 
     if-ne v3, v4, :cond_1
 
-    .line 313
+    .line 382
     invoke-virtual {p2}, Landroidx/compose/foundation/layout/RowColumnMeasureHelperResult;->getStartIndex()I
 
     move-result v3
@@ -1368,12 +2006,12 @@
 
     move-object v4, v2
 
-    .line 312
+    .line 381
     invoke-static/range {v3 .. v9}, Landroidx/compose/ui/layout/Placeable$PlacementScope;->place$default(Landroidx/compose/ui/layout/Placeable$PlacementScope;Landroidx/compose/ui/layout/Placeable;IIFILjava/lang/Object;)V
 
     goto :goto_2
 
-    .line 319
+    .line 388
     :cond_1
     invoke-virtual {p2}, Landroidx/compose/foundation/layout/RowColumnMeasureHelperResult;->getStartIndex()I
 
@@ -1399,7 +2037,7 @@
 
     move v7, v10
 
-    .line 317
+    .line 386
     invoke-static/range {v3 .. v9}, Landroidx/compose/ui/layout/Placeable$PlacementScope;->place$default(Landroidx/compose/ui/layout/Placeable$PlacementScope;Landroidx/compose/ui/layout/Placeable;IIFILjava/lang/Object;)V
 
     :goto_2

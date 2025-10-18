@@ -50,7 +50,7 @@
 .method private constructor <init>()V
     .locals 0
 
-    .line 2044
+    .line 2235
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -61,11 +61,7 @@
 .method public final isValidMotionEvent(Landroid/view/MotionEvent;I)Z
     .locals 1
 
-    const-string p0, "event"
-
-    invoke-static {p1, p0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 2048
+    .line 2239
     invoke-virtual {p1, p2}, Landroid/view/MotionEvent;->getRawX(I)F
 
     move-result p0

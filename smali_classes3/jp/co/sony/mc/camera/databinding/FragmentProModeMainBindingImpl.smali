@@ -15,7 +15,7 @@
 
 # direct methods
 .method static constructor <clinit>()V
-    .locals 20
+    .locals 11
 
     .line 15
     new-instance v0, Landroidx/databinding/ViewDataBinding$IncludedLayouts;
@@ -26,96 +26,160 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/databinding/FragmentProModeMainBindingImpl;->sIncludes:Landroidx/databinding/ViewDataBinding$IncludedLayouts;
 
+    const/16 v1, 0x12
+
     .line 16
-    const-string v18, "fragment_pro_mode_capturing_mode_info_list"
+    new-array v2, v1, [Ljava/lang/String;
 
-    const-string v19, "pro_mode_first_in_dialog"
+    const-string v3, "fragment_pro_mode_top_pane"
 
-    const-string v2, "fragment_pro_mode_top_pane"
+    const/4 v4, 0x0
+
+    aput-object v3, v2, v4
 
     const-string v3, "pro_mode_mf_slider"
 
-    const-string v4, "focus_control_button_container"
+    const/4 v5, 0x1
 
-    const-string v5, "pro_mode_zoom_icon"
+    aput-object v3, v2, v5
 
-    const-string/jumbo v6, "zoom_hint_text"
+    const-string v3, "focus_control_button_container"
 
-    const-string v7, "pro_mode_focus_zoom_container"
+    const/4 v6, 0x2
+
+    aput-object v3, v2, v6
+
+    const-string v3, "pro_mode_zoom_icon"
+
+    const/4 v7, 0x3
+
+    aput-object v3, v2, v7
+
+    const/4 v3, 0x4
+
+    const-string/jumbo v8, "zoom_hint_text"
+
+    aput-object v8, v2, v3
+
+    const/4 v3, 0x5
+
+    const-string v8, "pro_mode_focus_zoom_container"
+
+    aput-object v8, v2, v3
+
+    const/4 v3, 0x6
 
     const-string v8, "fragment_pro_mode_control_ss_iso_ev"
 
-    const-string v9, "fragment_pro_mode_control_ss_iso_ev"
+    aput-object v8, v2, v3
 
-    const-string v10, "fragment_basic_mode_indicator"
+    const/4 v3, 0x7
 
-    const-string v11, "fragment_basic_mode_finder_items"
+    aput-object v8, v2, v3
 
-    const-string v12, "fragment_basic_mode_seamless"
+    const/16 v3, 0x8
 
-    const-string v13, "fragment_pro_mode_bottom_area"
+    const-string v8, "fragment_basic_mode_indicator"
 
-    const-string v14, "fragment_pro_mode_fn_area"
+    aput-object v8, v2, v3
 
-    const-string v15, "fragment_pro_mode_options_dial"
+    const-string v3, "fragment_basic_mode_finder_items"
 
-    const-string v16, "fragment_pro_mode_fn_submenu_wb"
+    const/16 v8, 0x9
 
-    const-string v17, "fragment_pro_mode_capturing_mode_list"
+    aput-object v3, v2, v8
 
-    filled-new-array/range {v2 .. v19}, [Ljava/lang/String;
+    const-string v3, "fragment_basic_mode_seamless"
 
-    move-result-object v1
+    const/16 v9, 0xa
 
-    const/16 v2, 0x12
+    aput-object v3, v2, v9
 
-    new-array v3, v2, [I
+    const/16 v3, 0xb
+
+    const-string v10, "fragment_pro_mode_bottom_area"
+
+    aput-object v10, v2, v3
+
+    const/16 v3, 0xc
+
+    const-string v10, "fragment_pro_mode_fn_area"
+
+    aput-object v10, v2, v3
+
+    const/16 v3, 0xd
+
+    const-string v10, "fragment_pro_mode_options_dial"
+
+    aput-object v10, v2, v3
+
+    const/16 v3, 0xe
+
+    const-string v10, "fragment_pro_mode_fn_submenu_wb"
+
+    aput-object v10, v2, v3
+
+    const/16 v3, 0xf
+
+    const-string v10, "fragment_pro_mode_capturing_mode_list"
+
+    aput-object v10, v2, v3
+
+    const/16 v3, 0x10
+
+    const-string v10, "fragment_pro_mode_capturing_mode_info_list"
+
+    aput-object v10, v2, v3
+
+    const/16 v3, 0x11
+
+    const-string/jumbo v10, "tutorial_dialog"
+
+    aput-object v10, v2, v3
+
+    new-array v3, v1, [I
 
     fill-array-data v3, :array_0
 
-    new-array v4, v2, [I
+    new-array v10, v1, [I
 
-    fill-array-data v4, :array_1
+    fill-array-data v10, :array_1
 
-    const/4 v5, 0x0
-
-    invoke-virtual {v0, v5, v1, v3, v4}, Landroidx/databinding/ViewDataBinding$IncludedLayouts;->setIncludes(I[Ljava/lang/String;[I[I)V
+    invoke-virtual {v0, v4, v2, v3, v10}, Landroidx/databinding/ViewDataBinding$IncludedLayouts;->setIncludes(I[Ljava/lang/String;[I[I)V
 
     .line 37
-    const-string/jumbo v1, "view_lens"
+    new-array v2, v6, [Ljava/lang/String;
 
-    filled-new-array {v1, v1}, [Ljava/lang/String;
+    const-string/jumbo v3, "view_lens"
 
-    move-result-object v1
+    aput-object v3, v2, v4
 
-    const/16 v3, 0x9
+    aput-object v3, v2, v5
 
-    const/16 v4, 0xa
-
-    filled-new-array {v3, v4}, [I
+    filled-new-array {v8, v9}, [I
 
     move-result-object v3
 
-    const v4, 0x7f0c015b
+    const v6, 0x7f0c014c
 
-    filled-new-array {v4, v4}, [I
+    const v8, 0x7f0c014c
 
-    move-result-object v4
+    filled-new-array {v6, v8}, [I
 
-    const/4 v5, 0x1
+    move-result-object v6
 
-    invoke-virtual {v0, v5, v1, v3, v4}, Landroidx/databinding/ViewDataBinding$IncludedLayouts;->setIncludes(I[Ljava/lang/String;[I[I)V
+    invoke-virtual {v0, v5, v2, v3, v6}, Landroidx/databinding/ViewDataBinding$IncludedLayouts;->setIncludes(I[Ljava/lang/String;[I[I)V
 
     .line 42
-    const-string v1, "fragment_menu_focus_magnification"
+    new-array v2, v5, [Ljava/lang/String;
 
-    filled-new-array {v1}, [Ljava/lang/String;
+    const-string v3, "fragment_menu_focus_magnification"
+
+    aput-object v3, v2, v4
+
+    filled-new-array {v1}, [I
 
     move-result-object v1
-
-    filled-new-array {v2}, [I
-
-    move-result-object v2
 
     const v3, 0x7f0c0097
 
@@ -123,9 +187,7 @@
 
     move-result-object v3
 
-    const/4 v4, 0x3
-
-    invoke-virtual {v0, v4, v1, v2, v3}, Landroidx/databinding/ViewDataBinding$IncludedLayouts;->setIncludes(I[Ljava/lang/String;[I[I)V
+    invoke-virtual {v0, v7, v2, v1, v3}, Landroidx/databinding/ViewDataBinding$IncludedLayouts;->setIncludes(I[Ljava/lang/String;[I[I)V
 
     .line 46
     new-instance v0, Landroid/util/SparseIntArray;
@@ -134,35 +196,35 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/databinding/FragmentProModeMainBindingImpl;->sViewsWithIds:Landroid/util/SparseIntArray;
 
-    const v1, 0x7f09044b
+    const v1, 0x7f09043b
 
     const/16 v2, 0x19
 
     .line 47
     invoke-virtual {v0, v1, v2}, Landroid/util/SparseIntArray;->put(II)V
 
-    const v1, 0x7f0901d4
+    const v1, 0x7f0901d1
 
     const/16 v2, 0x1a
 
     .line 48
     invoke-virtual {v0, v1, v2}, Landroid/util/SparseIntArray;->put(II)V
 
-    const v1, 0x7f0901d5
+    const v1, 0x7f0901d2
 
     const/16 v2, 0x1b
 
     .line 49
     invoke-virtual {v0, v1, v2}, Landroid/util/SparseIntArray;->put(II)V
 
-    const v1, 0x7f0901d6
+    const v1, 0x7f0901d3
 
     const/16 v2, 0x1c
 
     .line 50
     invoke-virtual {v0, v1, v2}, Landroid/util/SparseIntArray;->put(II)V
 
-    const v1, 0x7f090399
+    const v1, 0x7f090398
 
     const/16 v2, 0x1d
 
@@ -170,8 +232,6 @@
     invoke-virtual {v0, v1, v2}, Landroid/util/SparseIntArray;->put(II)V
 
     return-void
-
-    nop
 
     :array_0
     .array-data 4
@@ -198,11 +258,11 @@
     :array_1
     .array-data 4
         0x7f0c00af
-        0x7f0c013c
+        0x7f0c012b
         0x7f0c005f
-        0x7f0c013e
-        0x7f0c0160
-        0x7f0c013b
+        0x7f0c012d
+        0x7f0c0151
+        0x7f0c012a
         0x7f0c009f
         0x7f0c009f
         0x7f0c0065
@@ -214,7 +274,7 @@
         0x7f0c00a5
         0x7f0c009e
         0x7f0c009d
-        0x7f0c0139
+        0x7f0c0143
     .end array-data
 .end method
 
@@ -327,89 +387,89 @@
 
     check-cast v16, Ljp/co/sony/mc/camera/databinding/FragmentProModeCapturingModeInfoListBinding;
 
-    const/16 v17, 0x18
+    const/16 v17, 0xb
 
     aget-object v17, p3, v17
 
-    check-cast v17, Ljp/co/sony/mc/camera/databinding/ProModeFirstInDialogBinding;
+    check-cast v17, Ljp/co/sony/mc/camera/databinding/ProModeFocusZoomContainerBinding;
 
-    const/16 v18, 0xb
+    const/16 v18, 0x1d
 
     aget-object v18, p3, v18
 
-    check-cast v18, Ljp/co/sony/mc/camera/databinding/ProModeFocusZoomContainerBinding;
+    check-cast v18, Landroid/widget/Space;
 
-    const/16 v19, 0x1d
+    const/16 v19, 0x1
 
     aget-object v19, p3, v19
 
-    check-cast v19, Landroid/widget/Space;
+    check-cast v19, Ljp/co/sony/mc/camera/view/widget/CustomConstraintLayout;
 
-    const/16 v20, 0x1
+    const/16 v20, 0x5
 
     aget-object v20, p3, v20
 
-    check-cast v20, Ljp/co/sony/mc/camera/view/widget/CustomConstraintLayout;
+    check-cast v20, Ljp/co/sony/mc/camera/databinding/ProModeMfSliderBinding;
 
-    const/16 v21, 0x5
+    const/16 v21, 0x8
 
     aget-object v21, p3, v21
 
-    check-cast v21, Ljp/co/sony/mc/camera/databinding/ProModeMfSliderBinding;
+    check-cast v21, Ljp/co/sony/mc/camera/databinding/ZoomHintTextBinding;
 
-    const/16 v22, 0x8
+    const/16 v22, 0x7
 
     aget-object v22, p3, v22
 
-    check-cast v22, Ljp/co/sony/mc/camera/databinding/ZoomHintTextBinding;
+    check-cast v22, Ljp/co/sony/mc/camera/databinding/ProModeZoomIconBinding;
 
-    const/16 v23, 0x7
+    const/16 v23, 0x9
 
     aget-object v23, p3, v23
 
-    check-cast v23, Ljp/co/sony/mc/camera/databinding/ProModeZoomIconBinding;
+    check-cast v23, Ljp/co/sony/mc/camera/databinding/ViewLensBinding;
 
-    const/16 v24, 0x9
+    const/16 v24, 0xa
 
     aget-object v24, p3, v24
 
     check-cast v24, Ljp/co/sony/mc/camera/databinding/ViewLensBinding;
 
-    const/16 v25, 0xa
+    const/16 v25, 0xf
 
     aget-object v25, p3, v25
 
-    check-cast v25, Ljp/co/sony/mc/camera/databinding/ViewLensBinding;
+    check-cast v25, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeFinderItemsBinding;
 
-    const/16 v26, 0xf
+    const/16 v26, 0xe
 
     aget-object v26, p3, v26
 
-    check-cast v26, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeFinderItemsBinding;
+    check-cast v26, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeIndicatorBinding;
 
-    const/16 v27, 0xe
+    const/16 v27, 0x10
 
     aget-object v27, p3, v27
 
-    check-cast v27, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeIndicatorBinding;
+    check-cast v27, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeSeamlessBinding;
 
-    const/16 v28, 0x10
+    const/16 v28, 0x19
 
     aget-object v28, p3, v28
 
-    check-cast v28, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeSeamlessBinding;
+    check-cast v28, Landroid/widget/Space;
 
-    const/16 v29, 0x19
+    const/16 v29, 0x4
 
     aget-object v29, p3, v29
 
-    check-cast v29, Landroid/widget/Space;
+    check-cast v29, Ljp/co/sony/mc/camera/databinding/FragmentProModeTopPaneBinding;
 
-    const/16 v30, 0x4
+    const/16 v30, 0x18
 
     aget-object v30, p3, v30
 
-    check-cast v30, Ljp/co/sony/mc/camera/databinding/FragmentProModeTopPaneBinding;
+    check-cast v30, Ljp/co/sony/mc/camera/databinding/TutorialDialogBinding;
 
     const/16 v31, 0xd
 
@@ -433,7 +493,7 @@
 
     move/from16 v3, v34
 
-    invoke-direct/range {v0 .. v33}, Ljp/co/sony/mc/camera/databinding/FragmentProModeMainBinding;-><init>(Ljava/lang/Object;Landroid/view/View;ILjp/co/sony/mc/camera/databinding/FragmentProModeBottomAreaBinding;Landroid/widget/Space;Landroid/widget/Space;Landroid/widget/Space;Ljp/co/sony/mc/camera/view/widget/FitDisplayOrientationFrameLayout;Ljp/co/sony/mc/camera/databinding/FragmentProModeFnAreaBinding;Ljp/co/sony/mc/camera/databinding/FocusControlButtonContainerBinding;Ljp/co/sony/mc/camera/databinding/FragmentMenuFocusMagnificationBinding;Ljp/co/sony/mc/camera/view/widget/CustomConstraintLayout;Ljp/co/sony/mc/camera/databinding/FragmentProModeControlSsIsoEvBinding;Ljp/co/sony/mc/camera/databinding/FragmentProModeOptionsDialBinding;Ljp/co/sony/mc/camera/databinding/FragmentProModeCapturingModeListBinding;Ljp/co/sony/mc/camera/databinding/FragmentProModeCapturingModeInfoListBinding;Ljp/co/sony/mc/camera/databinding/ProModeFirstInDialogBinding;Ljp/co/sony/mc/camera/databinding/ProModeFocusZoomContainerBinding;Landroid/widget/Space;Ljp/co/sony/mc/camera/view/widget/CustomConstraintLayout;Ljp/co/sony/mc/camera/databinding/ProModeMfSliderBinding;Ljp/co/sony/mc/camera/databinding/ZoomHintTextBinding;Ljp/co/sony/mc/camera/databinding/ProModeZoomIconBinding;Ljp/co/sony/mc/camera/databinding/ViewLensBinding;Ljp/co/sony/mc/camera/databinding/ViewLensBinding;Ljp/co/sony/mc/camera/databinding/FragmentBasicModeFinderItemsBinding;Ljp/co/sony/mc/camera/databinding/FragmentBasicModeIndicatorBinding;Ljp/co/sony/mc/camera/databinding/FragmentBasicModeSeamlessBinding;Landroid/widget/Space;Ljp/co/sony/mc/camera/databinding/FragmentProModeTopPaneBinding;Ljp/co/sony/mc/camera/databinding/FragmentProModeControlSsIsoEvBinding;Landroid/widget/ImageButton;Ljp/co/sony/mc/camera/databinding/FragmentProModeFnSubmenuWbBinding;)V
+    invoke-direct/range {v0 .. v33}, Ljp/co/sony/mc/camera/databinding/FragmentProModeMainBinding;-><init>(Ljava/lang/Object;Landroid/view/View;ILjp/co/sony/mc/camera/databinding/FragmentProModeBottomAreaBinding;Landroid/widget/Space;Landroid/widget/Space;Landroid/widget/Space;Ljp/co/sony/mc/camera/view/widget/FitDisplayOrientationFrameLayout;Ljp/co/sony/mc/camera/databinding/FragmentProModeFnAreaBinding;Ljp/co/sony/mc/camera/databinding/FocusControlButtonContainerBinding;Ljp/co/sony/mc/camera/databinding/FragmentMenuFocusMagnificationBinding;Ljp/co/sony/mc/camera/view/widget/CustomConstraintLayout;Ljp/co/sony/mc/camera/databinding/FragmentProModeControlSsIsoEvBinding;Ljp/co/sony/mc/camera/databinding/FragmentProModeOptionsDialBinding;Ljp/co/sony/mc/camera/databinding/FragmentProModeCapturingModeListBinding;Ljp/co/sony/mc/camera/databinding/FragmentProModeCapturingModeInfoListBinding;Ljp/co/sony/mc/camera/databinding/ProModeFocusZoomContainerBinding;Landroid/widget/Space;Ljp/co/sony/mc/camera/view/widget/CustomConstraintLayout;Ljp/co/sony/mc/camera/databinding/ProModeMfSliderBinding;Ljp/co/sony/mc/camera/databinding/ZoomHintTextBinding;Ljp/co/sony/mc/camera/databinding/ProModeZoomIconBinding;Ljp/co/sony/mc/camera/databinding/ViewLensBinding;Ljp/co/sony/mc/camera/databinding/ViewLensBinding;Ljp/co/sony/mc/camera/databinding/FragmentBasicModeFinderItemsBinding;Ljp/co/sony/mc/camera/databinding/FragmentBasicModeIndicatorBinding;Ljp/co/sony/mc/camera/databinding/FragmentBasicModeSeamlessBinding;Landroid/widget/Space;Ljp/co/sony/mc/camera/databinding/FragmentProModeTopPaneBinding;Ljp/co/sony/mc/camera/databinding/TutorialDialogBinding;Ljp/co/sony/mc/camera/databinding/FragmentProModeControlSsIsoEvBinding;Landroid/widget/ImageButton;Ljp/co/sony/mc/camera/databinding/FragmentProModeFnSubmenuWbBinding;)V
 
     const-wide/16 v0, -0x1
 
@@ -495,62 +555,62 @@
     invoke-virtual {v2, v0}, Ljp/co/sony/mc/camera/databinding/FragmentProModeMainBindingImpl;->setContainedBinding(Landroidx/databinding/ViewDataBinding;)V
 
     .line 105
-    iget-object v0, v2, Ljp/co/sony/mc/camera/databinding/FragmentProModeMainBindingImpl;->proModeFirstInDialog:Ljp/co/sony/mc/camera/databinding/ProModeFirstInDialogBinding;
-
-    invoke-virtual {v2, v0}, Ljp/co/sony/mc/camera/databinding/FragmentProModeMainBindingImpl;->setContainedBinding(Landroidx/databinding/ViewDataBinding;)V
-
-    .line 106
     iget-object v0, v2, Ljp/co/sony/mc/camera/databinding/FragmentProModeMainBindingImpl;->proModeFocusZoomContainer:Ljp/co/sony/mc/camera/databinding/ProModeFocusZoomContainerBinding;
 
     invoke-virtual {v2, v0}, Ljp/co/sony/mc/camera/databinding/FragmentProModeMainBindingImpl;->setContainedBinding(Landroidx/databinding/ViewDataBinding;)V
 
-    .line 107
+    .line 106
     iget-object v0, v2, Ljp/co/sony/mc/camera/databinding/FragmentProModeMainBindingImpl;->proModeLens:Ljp/co/sony/mc/camera/view/widget/CustomConstraintLayout;
 
     invoke-virtual {v0, v1}, Ljp/co/sony/mc/camera/view/widget/CustomConstraintLayout;->setTag(Ljava/lang/Object;)V
 
-    .line 108
+    .line 107
     iget-object v0, v2, Ljp/co/sony/mc/camera/databinding/FragmentProModeMainBindingImpl;->proModeMfSlider:Ljp/co/sony/mc/camera/databinding/ProModeMfSliderBinding;
 
     invoke-virtual {v2, v0}, Ljp/co/sony/mc/camera/databinding/FragmentProModeMainBindingImpl;->setContainedBinding(Landroidx/databinding/ViewDataBinding;)V
 
-    .line 109
+    .line 108
     iget-object v0, v2, Ljp/co/sony/mc/camera/databinding/FragmentProModeMainBindingImpl;->proModeZoomHintText:Ljp/co/sony/mc/camera/databinding/ZoomHintTextBinding;
 
     invoke-virtual {v2, v0}, Ljp/co/sony/mc/camera/databinding/FragmentProModeMainBindingImpl;->setContainedBinding(Landroidx/databinding/ViewDataBinding;)V
 
-    .line 110
+    .line 109
     iget-object v0, v2, Ljp/co/sony/mc/camera/databinding/FragmentProModeMainBindingImpl;->proModeZoomIcon:Ljp/co/sony/mc/camera/databinding/ProModeZoomIconBinding;
 
     invoke-virtual {v2, v0}, Ljp/co/sony/mc/camera/databinding/FragmentProModeMainBindingImpl;->setContainedBinding(Landroidx/databinding/ViewDataBinding;)V
 
-    .line 111
+    .line 110
     iget-object v0, v2, Ljp/co/sony/mc/camera/databinding/FragmentProModeMainBindingImpl;->proPhotoModeLens:Ljp/co/sony/mc/camera/databinding/ViewLensBinding;
 
     invoke-virtual {v2, v0}, Ljp/co/sony/mc/camera/databinding/FragmentProModeMainBindingImpl;->setContainedBinding(Landroidx/databinding/ViewDataBinding;)V
 
-    .line 112
+    .line 111
     iget-object v0, v2, Ljp/co/sony/mc/camera/databinding/FragmentProModeMainBindingImpl;->proVideoModeLens:Ljp/co/sony/mc/camera/databinding/ViewLensBinding;
 
     invoke-virtual {v2, v0}, Ljp/co/sony/mc/camera/databinding/FragmentProModeMainBindingImpl;->setContainedBinding(Landroidx/databinding/ViewDataBinding;)V
 
-    .line 113
+    .line 112
     iget-object v0, v2, Ljp/co/sony/mc/camera/databinding/FragmentProModeMainBindingImpl;->quickRecordFinderOverlay:Ljp/co/sony/mc/camera/databinding/FragmentBasicModeFinderItemsBinding;
 
     invoke-virtual {v2, v0}, Ljp/co/sony/mc/camera/databinding/FragmentProModeMainBindingImpl;->setContainedBinding(Landroidx/databinding/ViewDataBinding;)V
 
-    .line 114
+    .line 113
     iget-object v0, v2, Ljp/co/sony/mc/camera/databinding/FragmentProModeMainBindingImpl;->quickRecordIndicator:Ljp/co/sony/mc/camera/databinding/FragmentBasicModeIndicatorBinding;
 
     invoke-virtual {v2, v0}, Ljp/co/sony/mc/camera/databinding/FragmentProModeMainBindingImpl;->setContainedBinding(Landroidx/databinding/ViewDataBinding;)V
 
-    .line 115
+    .line 114
     iget-object v0, v2, Ljp/co/sony/mc/camera/databinding/FragmentProModeMainBindingImpl;->quickRecordSeamlessLens:Ljp/co/sony/mc/camera/databinding/FragmentBasicModeSeamlessBinding;
 
     invoke-virtual {v2, v0}, Ljp/co/sony/mc/camera/databinding/FragmentProModeMainBindingImpl;->setContainedBinding(Landroidx/databinding/ViewDataBinding;)V
 
-    .line 116
+    .line 115
     iget-object v0, v2, Ljp/co/sony/mc/camera/databinding/FragmentProModeMainBindingImpl;->topPane:Ljp/co/sony/mc/camera/databinding/FragmentProModeTopPaneBinding;
+
+    invoke-virtual {v2, v0}, Ljp/co/sony/mc/camera/databinding/FragmentProModeMainBindingImpl;->setContainedBinding(Landroidx/databinding/ViewDataBinding;)V
+
+    .line 116
+    iget-object v0, v2, Ljp/co/sony/mc/camera/databinding/FragmentProModeMainBindingImpl;->tutorialDialog:Ljp/co/sony/mc/camera/databinding/TutorialDialogBinding;
 
     invoke-virtual {v2, v0}, Ljp/co/sony/mc/camera/databinding/FragmentProModeMainBindingImpl;->setContainedBinding(Landroidx/databinding/ViewDataBinding;)V
 
@@ -665,20 +725,20 @@
 
     if-nez p2, :cond_0
 
-    .line 486
+    .line 495
     monitor-enter p0
 
-    .line 487
+    .line 496
     :try_start_0
     iget-wide p1, p0, Ljp/co/sony/mc/camera/databinding/FragmentProModeMainBindingImpl;->mDirtyFlags:J
 
-    const-wide/32 v0, 0x8000
+    const-wide/32 v0, 0x10000
 
     or-long/2addr p1, v0
 
     iput-wide p1, p0, Ljp/co/sony/mc/camera/databinding/FragmentProModeMainBindingImpl;->mDirtyFlags:J
 
-    .line 488
+    .line 497
     monitor-exit p0
 
     const/4 p0, 0x1
@@ -705,20 +765,20 @@
 
     if-nez p2, :cond_0
 
-    .line 495
+    .line 504
     monitor-enter p0
 
-    .line 496
+    .line 505
     :try_start_0
     iget-wide p1, p0, Ljp/co/sony/mc/camera/databinding/FragmentProModeMainBindingImpl;->mDirtyFlags:J
 
-    const-wide/32 v0, 0x10000
+    const-wide/32 v0, 0x20000
 
     or-long/2addr p1, v0
 
     iput-wide p1, p0, Ljp/co/sony/mc/camera/databinding/FragmentProModeMainBindingImpl;->mDirtyFlags:J
 
-    .line 497
+    .line 506
     monitor-exit p0
 
     const/4 p0, 0x1
@@ -785,20 +845,20 @@
 
     if-nez p2, :cond_0
 
-    .line 468
+    .line 477
     monitor-enter p0
 
-    .line 469
+    .line 478
     :try_start_0
     iget-wide p1, p0, Ljp/co/sony/mc/camera/databinding/FragmentProModeMainBindingImpl;->mDirtyFlags:J
 
-    const-wide/16 v0, 0x2000
+    const-wide/16 v0, 0x4000
 
     or-long/2addr p1, v0
 
     iput-wide p1, p0, Ljp/co/sony/mc/camera/databinding/FragmentProModeMainBindingImpl;->mDirtyFlags:J
 
-    .line 470
+    .line 479
     monitor-exit p0
 
     const/4 p0, 0x1
@@ -921,20 +981,20 @@
 
     if-nez p2, :cond_0
 
-    .line 558
+    .line 567
     monitor-enter p0
 
-    .line 559
+    .line 568
     :try_start_0
     iget-wide p1, p0, Ljp/co/sony/mc/camera/databinding/FragmentProModeMainBindingImpl;->mDirtyFlags:J
 
-    const-wide/32 v0, 0x800000
+    const-wide/32 v0, 0x1000000
 
     or-long/2addr p1, v0
 
     iput-wide p1, p0, Ljp/co/sony/mc/camera/databinding/FragmentProModeMainBindingImpl;->mDirtyFlags:J
 
-    .line 560
+    .line 569
     monitor-exit p0
 
     const/4 p0, 0x1
@@ -1009,20 +1069,20 @@
 
     if-nez p2, :cond_0
 
-    .line 522
+    .line 531
     monitor-enter p0
 
-    .line 523
+    .line 532
     :try_start_0
     iget-wide p1, p0, Ljp/co/sony/mc/camera/databinding/FragmentProModeMainBindingImpl;->mDirtyFlags:J
 
-    const-wide/32 v0, 0x80000
+    const-wide/32 v0, 0x100000
 
     or-long/2addr p1, v0
 
     iput-wide p1, p0, Ljp/co/sony/mc/camera/databinding/FragmentProModeMainBindingImpl;->mDirtyFlags:J
 
-    .line 524
+    .line 533
     monitor-exit p0
 
     const/4 p0, 0x1
@@ -1057,20 +1117,20 @@
 
     if-nez p2, :cond_0
 
-    .line 549
+    .line 558
     monitor-enter p0
 
-    .line 550
+    .line 559
     :try_start_0
     iget-wide p1, p0, Ljp/co/sony/mc/camera/databinding/FragmentProModeMainBindingImpl;->mDirtyFlags:J
 
-    const-wide/32 v0, 0x400000
+    const-wide/32 v0, 0x800000
 
     or-long/2addr p1, v0
 
     iput-wide p1, p0, Ljp/co/sony/mc/camera/databinding/FragmentProModeMainBindingImpl;->mDirtyFlags:J
 
-    .line 551
+    .line 560
     monitor-exit p0
 
     const/4 p0, 0x1
@@ -1284,65 +1344,25 @@
     return p0
 .end method
 
-.method private onChangeProModeFirstInDialog(Ljp/co/sony/mc/camera/databinding/ProModeFirstInDialogBinding;I)Z
-    .locals 2
-
-    if-nez p2, :cond_0
-
-    .line 567
-    monitor-enter p0
-
-    .line 568
-    :try_start_0
-    iget-wide p1, p0, Ljp/co/sony/mc/camera/databinding/FragmentProModeMainBindingImpl;->mDirtyFlags:J
-
-    const-wide/32 v0, 0x1000000
-
-    or-long/2addr p1, v0
-
-    iput-wide p1, p0, Ljp/co/sony/mc/camera/databinding/FragmentProModeMainBindingImpl;->mDirtyFlags:J
-
-    .line 569
-    monitor-exit p0
-
-    const/4 p0, 0x1
-
-    return p0
-
-    :catchall_0
-    move-exception p1
-
-    monitor-exit p0
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
-
-    throw p1
-
-    :cond_0
-    const/4 p0, 0x0
-
-    return p0
-.end method
-
 .method private onChangeProModeFocusZoomContainer(Ljp/co/sony/mc/camera/databinding/ProModeFocusZoomContainerBinding;I)Z
     .locals 2
 
     if-nez p2, :cond_0
 
-    .line 531
+    .line 540
     monitor-enter p0
 
-    .line 532
+    .line 541
     :try_start_0
     iget-wide p1, p0, Ljp/co/sony/mc/camera/databinding/FragmentProModeMainBindingImpl;->mDirtyFlags:J
 
-    const-wide/32 v0, 0x100000
+    const-wide/32 v0, 0x200000
 
     or-long/2addr p1, v0
 
     iput-wide p1, p0, Ljp/co/sony/mc/camera/databinding/FragmentProModeMainBindingImpl;->mDirtyFlags:J
 
-    .line 533
+    .line 542
     monitor-exit p0
 
     const/4 p0, 0x1
@@ -1409,20 +1429,20 @@
 
     if-nez p2, :cond_0
 
-    .line 513
+    .line 522
     monitor-enter p0
 
-    .line 514
+    .line 523
     :try_start_0
     iget-wide p1, p0, Ljp/co/sony/mc/camera/databinding/FragmentProModeMainBindingImpl;->mDirtyFlags:J
 
-    const-wide/32 v0, 0x40000
+    const-wide/32 v0, 0x80000
 
     or-long/2addr p1, v0
 
     iput-wide p1, p0, Ljp/co/sony/mc/camera/databinding/FragmentProModeMainBindingImpl;->mDirtyFlags:J
 
-    .line 515
+    .line 524
     monitor-exit p0
 
     const/4 p0, 0x1
@@ -1449,20 +1469,20 @@
 
     if-nez p2, :cond_0
 
-    .line 477
+    .line 486
     monitor-enter p0
 
-    .line 478
+    .line 487
     :try_start_0
     iget-wide p1, p0, Ljp/co/sony/mc/camera/databinding/FragmentProModeMainBindingImpl;->mDirtyFlags:J
 
-    const-wide/16 v0, 0x4000
+    const-wide/32 v0, 0x8000
 
     or-long/2addr p1, v0
 
     iput-wide p1, p0, Ljp/co/sony/mc/camera/databinding/FragmentProModeMainBindingImpl;->mDirtyFlags:J
 
-    .line 479
+    .line 488
     monitor-exit p0
 
     const/4 p0, 0x1
@@ -1529,20 +1549,20 @@
 
     if-nez p2, :cond_0
 
-    .line 504
+    .line 513
     monitor-enter p0
 
-    .line 505
+    .line 514
     :try_start_0
     iget-wide p1, p0, Ljp/co/sony/mc/camera/databinding/FragmentProModeMainBindingImpl;->mDirtyFlags:J
 
-    const-wide/32 v0, 0x20000
+    const-wide/32 v0, 0x40000
 
     or-long/2addr p1, v0
 
     iput-wide p1, p0, Ljp/co/sony/mc/camera/databinding/FragmentProModeMainBindingImpl;->mDirtyFlags:J
 
-    .line 506
+    .line 515
     monitor-exit p0
 
     const/4 p0, 0x1
@@ -1649,20 +1669,20 @@
 
     if-nez p2, :cond_0
 
-    .line 540
+    .line 549
     monitor-enter p0
 
-    .line 541
+    .line 550
     :try_start_0
     iget-wide p1, p0, Ljp/co/sony/mc/camera/databinding/FragmentProModeMainBindingImpl;->mDirtyFlags:J
 
-    const-wide/32 v0, 0x200000
+    const-wide/32 v0, 0x400000
 
     or-long/2addr p1, v0
 
     iput-wide p1, p0, Ljp/co/sony/mc/camera/databinding/FragmentProModeMainBindingImpl;->mDirtyFlags:J
 
-    .line 542
+    .line 551
     monitor-exit p0
 
     const/4 p0, 0x1
@@ -1703,6 +1723,46 @@
     iput-wide p1, p0, Ljp/co/sony/mc/camera/databinding/FragmentProModeMainBindingImpl;->mDirtyFlags:J
 
     .line 380
+    monitor-exit p0
+
+    const/4 p0, 0x1
+
+    return p0
+
+    :catchall_0
+    move-exception p1
+
+    monitor-exit p0
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    throw p1
+
+    :cond_0
+    const/4 p0, 0x0
+
+    return p0
+.end method
+
+.method private onChangeTutorialDialog(Ljp/co/sony/mc/camera/databinding/TutorialDialogBinding;I)Z
+    .locals 2
+
+    if-nez p2, :cond_0
+
+    .line 468
+    monitor-enter p0
+
+    .line 469
+    :try_start_0
+    iget-wide p1, p0, Ljp/co/sony/mc/camera/databinding/FragmentProModeMainBindingImpl;->mDirtyFlags:J
+
+    const-wide/16 v0, 0x2000
+
+    or-long/2addr p1, v0
+
+    iput-wide p1, p0, Ljp/co/sony/mc/camera/databinding/FragmentProModeMainBindingImpl;->mDirtyFlags:J
+
+    .line 470
     monitor-exit p0
 
     const/4 p0, 0x1
@@ -1953,7 +2013,7 @@
     const/4 v7, 0x0
 
     :goto_5
-    const-wide v14, 0xc2480130L
+    const-wide v14, 0xc2900130L
 
     and-long/2addr v14, v2
 
@@ -1963,13 +2023,13 @@
 
     const-wide v17, 0xc0000100L
 
-    const-wide v19, 0xc0400000L
+    const-wide v19, 0xc0800000L
 
     const-wide v21, 0xc0000020L
 
     const-wide v23, 0xc0000010L
 
-    const-wide v25, 0xc0080000L
+    const-wide v25, 0xc0100000L
 
     if-eqz v14, :cond_19
 
@@ -2142,7 +2202,7 @@
     const/4 v11, 0x0
 
     :goto_f
-    const/16 v14, 0x13
+    const/16 v14, 0x14
 
     .line 748
     invoke-virtual {v1, v14, v11}, Ljp/co/sony/mc/camera/databinding/FragmentProModeMainBindingImpl;->updateLiveDataRegistration(ILandroidx/lifecycle/LiveData;)Z
@@ -2192,7 +2252,7 @@
     const/4 v14, 0x0
 
     :goto_12
-    const/16 v8, 0x16
+    const/16 v8, 0x17
 
     .line 766
     invoke-virtual {v1, v8, v14}, Ljp/co/sony/mc/camera/databinding/FragmentProModeMainBindingImpl;->updateLiveDataRegistration(ILandroidx/lifecycle/LiveData;)Z
@@ -2531,7 +2591,7 @@
     invoke-static {v0}, Ljp/co/sony/mc/camera/databinding/FragmentProModeMainBindingImpl;->executeBindingsOn(Landroidx/databinding/ViewDataBinding;)V
 
     .line 859
-    iget-object v0, v1, Ljp/co/sony/mc/camera/databinding/FragmentProModeMainBindingImpl;->proModeFirstInDialog:Ljp/co/sony/mc/camera/databinding/ProModeFirstInDialogBinding;
+    iget-object v0, v1, Ljp/co/sony/mc/camera/databinding/FragmentProModeMainBindingImpl;->tutorialDialog:Ljp/co/sony/mc/camera/databinding/TutorialDialogBinding;
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/databinding/FragmentProModeMainBindingImpl;->executeBindingsOn(Landroidx/databinding/ViewDataBinding;)V
 
@@ -2819,9 +2879,9 @@
 
     .line 221
     :cond_14
-    iget-object p0, p0, Ljp/co/sony/mc/camera/databinding/FragmentProModeMainBindingImpl;->proModeFirstInDialog:Ljp/co/sony/mc/camera/databinding/ProModeFirstInDialogBinding;
+    iget-object p0, p0, Ljp/co/sony/mc/camera/databinding/FragmentProModeMainBindingImpl;->tutorialDialog:Ljp/co/sony/mc/camera/databinding/TutorialDialogBinding;
 
-    invoke-virtual {p0}, Ljp/co/sony/mc/camera/databinding/ProModeFirstInDialogBinding;->hasPendingBindings()Z
+    invoke-virtual {p0}, Ljp/co/sony/mc/camera/databinding/TutorialDialogBinding;->hasPendingBindings()Z
 
     move-result p0
 
@@ -2964,9 +3024,9 @@
     invoke-virtual {v0}, Ljp/co/sony/mc/camera/databinding/FragmentProModeCapturingModeInfoListBinding;->invalidateAll()V
 
     .line 150
-    iget-object v0, p0, Ljp/co/sony/mc/camera/databinding/FragmentProModeMainBindingImpl;->proModeFirstInDialog:Ljp/co/sony/mc/camera/databinding/ProModeFirstInDialogBinding;
+    iget-object v0, p0, Ljp/co/sony/mc/camera/databinding/FragmentProModeMainBindingImpl;->tutorialDialog:Ljp/co/sony/mc/camera/databinding/TutorialDialogBinding;
 
-    invoke-virtual {v0}, Ljp/co/sony/mc/camera/databinding/ProModeFirstInDialogBinding;->invalidateAll()V
+    invoke-virtual {v0}, Ljp/co/sony/mc/camera/databinding/TutorialDialogBinding;->invalidateAll()V
 
     .line 151
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/databinding/FragmentProModeMainBindingImpl;->requestRebind()V
@@ -3036,16 +3096,6 @@
 
     .line 337
     :pswitch_4
-    check-cast p2, Ljp/co/sony/mc/camera/databinding/ProModeFirstInDialogBinding;
-
-    invoke-direct {p0, p2, p3}, Ljp/co/sony/mc/camera/databinding/FragmentProModeMainBindingImpl;->onChangeProModeFirstInDialog(Ljp/co/sony/mc/camera/databinding/ProModeFirstInDialogBinding;I)Z
-
-    move-result p0
-
-    return p0
-
-    .line 335
-    :pswitch_5
     check-cast p2, Ljp/co/sony/mc/camera/databinding/FragmentProModeCapturingModeListBinding;
 
     invoke-direct {p0, p2, p3}, Ljp/co/sony/mc/camera/databinding/FragmentProModeMainBindingImpl;->onChangeProModeCapturingModeMenu(Ljp/co/sony/mc/camera/databinding/FragmentProModeCapturingModeListBinding;I)Z
@@ -3054,8 +3104,8 @@
 
     return p0
 
-    .line 333
-    :pswitch_6
+    .line 335
+    :pswitch_5
     check-cast p2, Landroidx/lifecycle/LiveData;
 
     invoke-direct {p0, p2, p3}, Ljp/co/sony/mc/camera/databinding/FragmentProModeMainBindingImpl;->onChangeProModeCommonUiStateFnAreaVisible(Landroidx/lifecycle/LiveData;I)Z
@@ -3064,8 +3114,8 @@
 
     return p0
 
-    .line 331
-    :pswitch_7
+    .line 333
+    :pswitch_6
     check-cast p2, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeSeamlessBinding;
 
     invoke-direct {p0, p2, p3}, Ljp/co/sony/mc/camera/databinding/FragmentProModeMainBindingImpl;->onChangeQuickRecordSeamlessLens(Ljp/co/sony/mc/camera/databinding/FragmentBasicModeSeamlessBinding;I)Z
@@ -3074,8 +3124,8 @@
 
     return p0
 
-    .line 329
-    :pswitch_8
+    .line 331
+    :pswitch_7
     check-cast p2, Ljp/co/sony/mc/camera/databinding/ProModeFocusZoomContainerBinding;
 
     invoke-direct {p0, p2, p3}, Ljp/co/sony/mc/camera/databinding/FragmentProModeMainBindingImpl;->onChangeProModeFocusZoomContainer(Ljp/co/sony/mc/camera/databinding/ProModeFocusZoomContainerBinding;I)Z
@@ -3084,8 +3134,8 @@
 
     return p0
 
-    .line 327
-    :pswitch_9
+    .line 329
+    :pswitch_8
     check-cast p2, Landroidx/lifecycle/LiveData;
 
     invoke-direct {p0, p2, p3}, Ljp/co/sony/mc/camera/databinding/FragmentProModeMainBindingImpl;->onChangeProModeCommonUiStateBottomAreaVisible(Landroidx/lifecycle/LiveData;I)Z
@@ -3094,8 +3144,8 @@
 
     return p0
 
-    .line 325
-    :pswitch_a
+    .line 327
+    :pswitch_9
     check-cast p2, Ljp/co/sony/mc/camera/databinding/ZoomHintTextBinding;
 
     invoke-direct {p0, p2, p3}, Ljp/co/sony/mc/camera/databinding/FragmentProModeMainBindingImpl;->onChangeProModeZoomHintText(Ljp/co/sony/mc/camera/databinding/ZoomHintTextBinding;I)Z
@@ -3104,8 +3154,8 @@
 
     return p0
 
-    .line 323
-    :pswitch_b
+    .line 325
+    :pswitch_a
     check-cast p2, Ljp/co/sony/mc/camera/databinding/ViewLensBinding;
 
     invoke-direct {p0, p2, p3}, Ljp/co/sony/mc/camera/databinding/FragmentProModeMainBindingImpl;->onChangeProVideoModeLens(Ljp/co/sony/mc/camera/databinding/ViewLensBinding;I)Z
@@ -3114,8 +3164,8 @@
 
     return p0
 
-    .line 321
-    :pswitch_c
+    .line 323
+    :pswitch_b
     check-cast p2, Ljp/co/sony/mc/camera/databinding/FragmentMenuFocusMagnificationBinding;
 
     invoke-direct {p0, p2, p3}, Ljp/co/sony/mc/camera/databinding/FragmentProModeMainBindingImpl;->onChangeFocusMagMenu(Ljp/co/sony/mc/camera/databinding/FragmentMenuFocusMagnificationBinding;I)Z
@@ -3124,8 +3174,8 @@
 
     return p0
 
-    .line 319
-    :pswitch_d
+    .line 321
+    :pswitch_c
     check-cast p2, Ljp/co/sony/mc/camera/databinding/FocusControlButtonContainerBinding;
 
     invoke-direct {p0, p2, p3}, Ljp/co/sony/mc/camera/databinding/FragmentProModeMainBindingImpl;->onChangeFocusControlButtonContainer(Ljp/co/sony/mc/camera/databinding/FocusControlButtonContainerBinding;I)Z
@@ -3134,8 +3184,8 @@
 
     return p0
 
-    .line 317
-    :pswitch_e
+    .line 319
+    :pswitch_d
     check-cast p2, Ljp/co/sony/mc/camera/databinding/ProModeZoomIconBinding;
 
     invoke-direct {p0, p2, p3}, Ljp/co/sony/mc/camera/databinding/FragmentProModeMainBindingImpl;->onChangeProModeZoomIcon(Ljp/co/sony/mc/camera/databinding/ProModeZoomIconBinding;I)Z
@@ -3144,11 +3194,21 @@
 
     return p0
 
-    .line 315
-    :pswitch_f
+    .line 317
+    :pswitch_e
     check-cast p2, Ljp/co/sony/mc/camera/databinding/FragmentProModeOptionsDialBinding;
 
     invoke-direct {p0, p2, p3}, Ljp/co/sony/mc/camera/databinding/FragmentProModeMainBindingImpl;->onChangePopUpSubmenu(Ljp/co/sony/mc/camera/databinding/FragmentProModeOptionsDialBinding;I)Z
+
+    move-result p0
+
+    return p0
+
+    .line 315
+    :pswitch_f
+    check-cast p2, Ljp/co/sony/mc/camera/databinding/TutorialDialogBinding;
+
+    invoke-direct {p0, p2, p3}, Ljp/co/sony/mc/camera/databinding/FragmentProModeMainBindingImpl;->onChangeTutorialDialog(Ljp/co/sony/mc/camera/databinding/TutorialDialogBinding;I)Z
 
     move-result p0
 
@@ -3425,9 +3485,9 @@
     invoke-virtual {v0, p1}, Ljp/co/sony/mc/camera/databinding/FragmentProModeCapturingModeInfoListBinding;->setLifecycleOwner(Landroidx/lifecycle/LifecycleOwner;)V
 
     .line 282
-    iget-object p0, p0, Ljp/co/sony/mc/camera/databinding/FragmentProModeMainBindingImpl;->proModeFirstInDialog:Ljp/co/sony/mc/camera/databinding/ProModeFirstInDialogBinding;
+    iget-object p0, p0, Ljp/co/sony/mc/camera/databinding/FragmentProModeMainBindingImpl;->tutorialDialog:Ljp/co/sony/mc/camera/databinding/TutorialDialogBinding;
 
-    invoke-virtual {p0, p1}, Ljp/co/sony/mc/camera/databinding/ProModeFirstInDialogBinding;->setLifecycleOwner(Landroidx/lifecycle/LifecycleOwner;)V
+    invoke-virtual {p0, p1}, Ljp/co/sony/mc/camera/databinding/TutorialDialogBinding;->setLifecycleOwner(Landroidx/lifecycle/LifecycleOwner;)V
 
     return-void
 .end method
@@ -3456,7 +3516,7 @@
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    const/16 p1, 0x14
+    const/16 p1, 0x17
 
     .line 247
     invoke-virtual {p0, p1}, Ljp/co/sony/mc/camera/databinding/FragmentProModeMainBindingImpl;->notifyPropertyChanged(I)V
@@ -3502,7 +3562,7 @@
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    const/16 p1, 0x15
+    const/16 p1, 0x18
 
     .line 255
     invoke-virtual {p0, p1}, Ljp/co/sony/mc/camera/databinding/FragmentProModeMainBindingImpl;->notifyPropertyChanged(I)V
@@ -3527,7 +3587,7 @@
 .method public setVariable(ILjava/lang/Object;)Z
     .locals 1
 
-    const/16 v0, 0x14
+    const/16 v0, 0x17
 
     if-ne v0, p1, :cond_0
 
@@ -3539,7 +3599,7 @@
     goto :goto_0
 
     :cond_0
-    const/16 v0, 0x15
+    const/16 v0, 0x18
 
     if-ne v0, p1, :cond_1
 

@@ -26,6 +26,11 @@
     .end annotation
 .end field
 
+.field protected mViewFinderUiState:Ljp/co/sony/mc/camera/view/uistate/ViewFinderUiState;
+    .annotation runtime Landroidx/databinding/Bindable;
+    .end annotation
+.end field
+
 .field public final modeList:Landroidx/recyclerview/widget/RecyclerView;
 
 .field public final title:Landroid/widget/TextView;
@@ -35,16 +40,16 @@
 .method protected constructor <init>(Ljava/lang/Object;Landroid/view/View;ILandroid/widget/ImageButton;Landroidx/recyclerview/widget/RecyclerView;Landroid/widget/TextView;)V
     .locals 0
 
-    .line 47
+    .line 51
     invoke-direct {p0, p1, p2, p3}, Landroidx/databinding/ViewDataBinding;-><init>(Ljava/lang/Object;Landroid/view/View;I)V
 
-    .line 48
+    .line 52
     iput-object p4, p0, Ljp/co/sony/mc/camera/databinding/FragmentProModeCapturingModeListBinding;->infoIcon:Landroid/widget/ImageButton;
 
-    .line 49
+    .line 53
     iput-object p5, p0, Ljp/co/sony/mc/camera/databinding/FragmentProModeCapturingModeListBinding;->modeList:Landroidx/recyclerview/widget/RecyclerView;
 
-    .line 50
+    .line 54
     iput-object p6, p0, Ljp/co/sony/mc/camera/databinding/FragmentProModeCapturingModeListBinding;->title:Landroid/widget/TextView;
 
     return-void
@@ -53,7 +58,7 @@
 .method public static bind(Landroid/view/View;)Ljp/co/sony/mc/camera/databinding/FragmentProModeCapturingModeListBinding;
     .locals 1
 
-    .line 122
+    .line 133
     invoke-static {}, Landroidx/databinding/DataBindingUtil;->getDefaultComponent()Landroidx/databinding/DataBindingComponent;
 
     move-result-object v0
@@ -72,7 +77,7 @@
 
     const v0, 0x7f0c009e
 
-    .line 135
+    .line 146
     invoke-static {p1, p0, v0}, Ljp/co/sony/mc/camera/databinding/FragmentProModeCapturingModeListBinding;->bind(Ljava/lang/Object;Landroid/view/View;I)Landroidx/databinding/ViewDataBinding;
 
     move-result-object p0
@@ -85,7 +90,7 @@
 .method public static inflate(Landroid/view/LayoutInflater;)Ljp/co/sony/mc/camera/databinding/FragmentProModeCapturingModeListBinding;
     .locals 1
 
-    .line 104
+    .line 115
     invoke-static {}, Landroidx/databinding/DataBindingUtil;->getDefaultComponent()Landroidx/databinding/DataBindingComponent;
 
     move-result-object v0
@@ -100,7 +105,7 @@
 .method public static inflate(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Z)Ljp/co/sony/mc/camera/databinding/FragmentProModeCapturingModeListBinding;
     .locals 1
 
-    .line 85
+    .line 96
     invoke-static {}, Landroidx/databinding/DataBindingUtil;->getDefaultComponent()Landroidx/databinding/DataBindingComponent;
 
     move-result-object v0
@@ -119,7 +124,7 @@
 
     const v0, 0x7f0c009e
 
-    .line 99
+    .line 110
     invoke-static {p0, v0, p1, p2, p3}, Landroidx/databinding/ViewDataBinding;->inflateInternal(Landroid/view/LayoutInflater;ILandroid/view/ViewGroup;ZLjava/lang/Object;)Landroidx/databinding/ViewDataBinding;
 
     move-result-object p0
@@ -140,7 +145,7 @@
 
     const v2, 0x7f0c009e
 
-    .line 118
+    .line 129
     invoke-static {p0, v2, v0, v1, p1}, Landroidx/databinding/ViewDataBinding;->inflateInternal(Landroid/view/LayoutInflater;ILandroid/view/ViewGroup;ZLjava/lang/Object;)Landroidx/databinding/ViewDataBinding;
 
     move-result-object p0
@@ -155,7 +160,7 @@
 .method public getCameraSettingsModel()Ljp/co/sony/mc/camera/view/viewmodel/CameraSettingsModel;
     .locals 0
 
-    .line 64
+    .line 68
     iget-object p0, p0, Ljp/co/sony/mc/camera/databinding/FragmentProModeCapturingModeListBinding;->mCameraSettingsModel:Ljp/co/sony/mc/camera/view/viewmodel/CameraSettingsModel;
 
     return-object p0
@@ -164,7 +169,7 @@
 .method public getModeDialUiState()Ljp/co/sony/mc/camera/view/uistate/ModeDialUiState;
     .locals 0
 
-    .line 57
+    .line 61
     iget-object p0, p0, Ljp/co/sony/mc/camera/databinding/FragmentProModeCapturingModeListBinding;->mModeDialUiState:Ljp/co/sony/mc/camera/view/uistate/ModeDialUiState;
 
     return-object p0
@@ -173,7 +178,7 @@
 .method public getOrientationViewModel()Ljp/co/sony/mc/camera/view/viewmodel/OrientationViewModel;
     .locals 0
 
-    .line 71
+    .line 75
     iget-object p0, p0, Ljp/co/sony/mc/camera/databinding/FragmentProModeCapturingModeListBinding;->mOrientationViewModel:Ljp/co/sony/mc/camera/view/viewmodel/OrientationViewModel;
 
     return-object p0
@@ -182,8 +187,17 @@
 .method public getProModeTopPaneUiState()Ljp/co/sony/mc/camera/view/uistate/ProModeTopPaneUiState;
     .locals 0
 
-    .line 79
+    .line 83
     iget-object p0, p0, Ljp/co/sony/mc/camera/databinding/FragmentProModeCapturingModeListBinding;->mProModeTopPaneUiState:Ljp/co/sony/mc/camera/view/uistate/ProModeTopPaneUiState;
+
+    return-object p0
+.end method
+
+.method public getViewFinderUiState()Ljp/co/sony/mc/camera/view/uistate/ViewFinderUiState;
+    .locals 0
+
+    .line 90
+    iget-object p0, p0, Ljp/co/sony/mc/camera/databinding/FragmentProModeCapturingModeListBinding;->mViewFinderUiState:Ljp/co/sony/mc/camera/view/uistate/ViewFinderUiState;
 
     return-object p0
 .end method
@@ -198,4 +212,7 @@
 .end method
 
 .method public abstract setProModeTopPaneUiState(Ljp/co/sony/mc/camera/view/uistate/ProModeTopPaneUiState;)V
+.end method
+
+.method public abstract setViewFinderUiState(Ljp/co/sony/mc/camera/view/uistate/ViewFinderUiState;)V
 .end method

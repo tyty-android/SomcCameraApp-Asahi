@@ -69,7 +69,7 @@
 .method public final invoke(F)Ljava/lang/Float;
     .locals 5
 
-    .line 136
+    .line 141
     iget-object v0, p0, Landroidx/compose/foundation/ScrollState$scrollableState$1;->this$0:Landroidx/compose/foundation/ScrollState;
 
     invoke-virtual {v0}, Landroidx/compose/foundation/ScrollState;->getValue()I
@@ -88,7 +88,7 @@
 
     add-float/2addr v0, v1
 
-    .line 137
+    .line 142
     iget-object v1, p0, Landroidx/compose/foundation/ScrollState$scrollableState$1;->this$0:Landroidx/compose/foundation/ScrollState;
 
     invoke-virtual {v1}, Landroidx/compose/foundation/ScrollState;->getMaxValue()I
@@ -119,7 +119,7 @@
     :goto_0
     xor-int/2addr v0, v2
 
-    .line 139
+    .line 144
     iget-object v2, p0, Landroidx/compose/foundation/ScrollState$scrollableState$1;->this$0:Landroidx/compose/foundation/ScrollState;
 
     invoke-virtual {v2}, Landroidx/compose/foundation/ScrollState;->getValue()I
@@ -130,12 +130,12 @@
 
     sub-float/2addr v1, v2
 
-    .line 140
+    .line 145
     invoke-static {v1}, Lkotlin/math/MathKt;->roundToInt(F)I
 
     move-result v2
 
-    .line 141
+    .line 146
     iget-object v3, p0, Landroidx/compose/foundation/ScrollState$scrollableState$1;->this$0:Landroidx/compose/foundation/ScrollState;
 
     invoke-virtual {v3}, Landroidx/compose/foundation/ScrollState;->getValue()I
@@ -146,7 +146,7 @@
 
     invoke-static {v3, v4}, Landroidx/compose/foundation/ScrollState;->access$setValue(Landroidx/compose/foundation/ScrollState;I)V
 
-    .line 142
+    .line 147
     iget-object p0, p0, Landroidx/compose/foundation/ScrollState$scrollableState$1;->this$0:Landroidx/compose/foundation/ScrollState;
 
     int-to-float v2, v2
@@ -159,7 +159,7 @@
 
     move p1, v1
 
-    .line 145
+    .line 150
     :cond_1
     invoke-static {p1}, Ljava/lang/Float;->valueOf(F)Ljava/lang/Float;
 
@@ -171,7 +171,7 @@
 .method public bridge synthetic invoke(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
 
-    .line 135
+    .line 140
     check-cast p1, Ljava/lang/Number;
 
     invoke-virtual {p1}, Ljava/lang/Number;->floatValue()F

@@ -205,33 +205,19 @@
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 222
-    new-instance v0, Lkotlin/ranges/IntRange;
+    const-string v0, "fromIndex ("
+
+    if-ltz p2, :cond_3
 
     array-length v1, p1
 
-    const/4 v2, 0x0
+    if-gt p2, v1, :cond_3
 
-    invoke-direct {v0, v2, v1}, Lkotlin/ranges/IntRange;-><init>(II)V
+    if-ltz p3, :cond_3
 
-    invoke-virtual {v0, p2}, Lkotlin/ranges/IntRange;->contains(I)Z
+    array-length v1, p1
 
-    move-result v0
-
-    const-string v1, "fromIndex ("
-
-    if-eqz v0, :cond_3
-
-    new-instance v0, Lkotlin/ranges/IntRange;
-
-    array-length v3, p1
-
-    invoke-direct {v0, v2, v3}, Lkotlin/ranges/IntRange;-><init>(II)V
-
-    invoke-virtual {v0, p3}, Lkotlin/ranges/IntRange;->contains(I)Z
-
-    move-result v0
-
-    if-eqz v0, :cond_3
+    if-gt p3, v1, :cond_3
 
     if-gt p2, p3, :cond_2
 
@@ -240,10 +226,12 @@
     .line 225
     div-int/lit8 v0, v0, 0x4
 
-    move v1, v2
+    const/4 v1, 0x0
+
+    move v2, v1
 
     :goto_0
-    if-ge v1, v0, :cond_0
+    if-ge v2, v0, :cond_0
 
     .line 229
     invoke-virtual {p0}, Lkotlin/random/Random;->nextInt()I
@@ -284,7 +272,7 @@
 
     add-int/lit8 p2, p2, 0x4
 
-    add-int/lit8 v1, v1, 0x1
+    add-int/lit8 v2, v2, 0x1
 
     goto :goto_0
 
@@ -299,20 +287,20 @@
     move-result p0
 
     :goto_1
-    if-ge v2, p3, :cond_1
+    if-ge v1, p3, :cond_1
 
-    add-int v0, p2, v2
+    add-int v0, p2, v1
 
-    mul-int/lit8 v1, v2, 0x8
+    mul-int/lit8 v2, v1, 0x8
 
-    ushr-int v1, p0, v1
+    ushr-int v2, p0, v2
 
-    int-to-byte v1, v1
+    int-to-byte v2, v2
 
     .line 240
-    aput-byte v1, p1, v0
+    aput-byte v2, p1, v0
 
-    add-int/lit8 v2, v2, 0x1
+    add-int/lit8 v1, v1, 0x1
 
     goto :goto_1
 
@@ -323,7 +311,7 @@
     :cond_2
     new-instance p0, Ljava/lang/StringBuilder;
 
-    invoke-direct {p0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+    invoke-direct {p0, v0}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
     invoke-virtual {p0, p2}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
@@ -363,7 +351,7 @@
     :cond_3
     new-instance p0, Ljava/lang/StringBuilder;
 
-    invoke-direct {p0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+    invoke-direct {p0, v0}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
     invoke-virtual {p0, p2}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 

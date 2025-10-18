@@ -63,19 +63,15 @@
 
 # direct methods
 .method public constructor <init>(Landroidx/compose/runtime/CompositionImpl;)V
-    .locals 1
+    .locals 0
 
-    const-string v0, "composition"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 386
+    .line 396
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 387
+    .line 397
     iput-object p1, p0, Landroidx/compose/runtime/Recomposer$HotReloadable;->composition:Landroidx/compose/runtime/CompositionImpl;
 
-    .line 389
+    .line 399
     invoke-virtual {p1}, Landroidx/compose/runtime/CompositionImpl;->getComposable()Lkotlin/jvm/functions/Function2;
 
     move-result-object p1
@@ -90,7 +86,7 @@
 .method public final clearContent()V
     .locals 1
 
-    .line 391
+    .line 401
     iget-object v0, p0, Landroidx/compose/runtime/Recomposer$HotReloadable;->composition:Landroidx/compose/runtime/CompositionImpl;
 
     invoke-virtual {v0}, Landroidx/compose/runtime/CompositionImpl;->isRoot()Z
@@ -99,7 +95,7 @@
 
     if-eqz v0, :cond_0
 
-    .line 392
+    .line 402
     iget-object p0, p0, Landroidx/compose/runtime/Recomposer$HotReloadable;->composition:Landroidx/compose/runtime/CompositionImpl;
 
     sget-object v0, Landroidx/compose/runtime/ComposableSingletons$RecomposerKt;->INSTANCE:Landroidx/compose/runtime/ComposableSingletons$RecomposerKt;
@@ -117,7 +113,7 @@
 .method public final recompose()V
     .locals 1
 
-    .line 401
+    .line 411
     iget-object v0, p0, Landroidx/compose/runtime/Recomposer$HotReloadable;->composition:Landroidx/compose/runtime/CompositionImpl;
 
     invoke-virtual {v0}, Landroidx/compose/runtime/CompositionImpl;->isRoot()Z
@@ -126,7 +122,7 @@
 
     if-eqz v0, :cond_0
 
-    .line 402
+    .line 412
     iget-object v0, p0, Landroidx/compose/runtime/Recomposer$HotReloadable;->composition:Landroidx/compose/runtime/CompositionImpl;
 
     iget-object p0, p0, Landroidx/compose/runtime/Recomposer$HotReloadable;->composable:Lkotlin/jvm/functions/Function2;
@@ -140,7 +136,7 @@
 .method public final resetContent()V
     .locals 1
 
-    .line 397
+    .line 407
     iget-object v0, p0, Landroidx/compose/runtime/Recomposer$HotReloadable;->composition:Landroidx/compose/runtime/CompositionImpl;
 
     iget-object p0, p0, Landroidx/compose/runtime/Recomposer$HotReloadable;->composable:Lkotlin/jvm/functions/Function2;

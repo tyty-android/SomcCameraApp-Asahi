@@ -25,7 +25,7 @@
 .method constructor <init>(Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CameraStateCallback;)V
     .locals 0
 
-    .line 2686
+    .line 2762
     iput-object p1, p0, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CameraStateCallback$1;->this$1:Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CameraStateCallback;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -38,7 +38,7 @@
 .method public run()V
     .locals 5
 
-    .line 2690
+    .line 2766
     iget-object v0, p0, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CameraStateCallback$1;->this$1:Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CameraStateCallback;
 
     iget-object v0, v0, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CameraStateCallback;->this$0:Ljp/co/sony/mc/camera/device/state/DeviceStateContext;
@@ -55,7 +55,7 @@
 
     if-nez v0, :cond_1
 
-    .line 2696
+    .line 2772
     iget-object v0, p0, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CameraStateCallback$1;->this$1:Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CameraStateCallback;
 
     iget-object v0, v0, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CameraStateCallback;->this$0:Ljp/co/sony/mc/camera/device/state/DeviceStateContext;
@@ -87,7 +87,7 @@
     :cond_0
     if-eqz v1, :cond_1
 
-    .line 2700
+    .line 2776
     new-instance v0, Ljava/lang/StringBuilder;
 
     const-string v2, "onDisconnected is called. Error:5 (CameraStateCallback.ERROR_CAMERA_SERVICE). SessionID = "
@@ -102,7 +102,7 @@
 
     move-result-object v2
 
-    .line 2702
+    .line 2778
     invoke-virtual {v2}, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CameraDeviceInfo;->getSessionId()Ljp/co/sony/mc/camera/device/CameraDeviceHandler$CameraSessionId;
 
     move-result-object v2
@@ -115,7 +115,7 @@
 
     move-result-object v0
 
-    .line 2703
+    .line 2779
     iget-object v2, p0, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CameraStateCallback$1;->this$1:Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CameraStateCallback;
 
     iget-object v2, v2, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CameraStateCallback;->this$0:Ljp/co/sony/mc/camera/device/state/DeviceStateContext;
@@ -128,7 +128,7 @@
 
     const/4 v4, 0x5
 
-    .line 2704
+    .line 2780
     invoke-static {v4}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object v4
@@ -137,10 +137,10 @@
 
     move-result-object v0
 
-    .line 2703
+    .line 2779
     invoke-virtual {v2, v3, v0}, Ljp/co/sony/mc/camera/device/DeviceStateMachine;->sendEvent(Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;[Ljava/lang/Object;)V
 
-    .line 2708
+    .line 2784
     :cond_1
     iget-object v0, p0, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CameraStateCallback$1;->this$1:Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CameraStateCallback;
 
@@ -158,12 +158,12 @@
 
     move-result-object p0
 
-    .line 2709
+    .line 2785
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CameraDeviceInfo;->getSessionId()Ljp/co/sony/mc/camera/device/CameraDeviceHandler$CameraSessionId;
 
     move-result-object p0
 
-    .line 2708
+    .line 2784
     invoke-interface {v0, p0, v1}, Ljp/co/sony/mc/camera/device/state/IDeviceStateMachineCallback;->onDisconnected(Ljp/co/sony/mc/camera/device/CameraDeviceHandler$CameraSessionId;Z)V
 
     return-void

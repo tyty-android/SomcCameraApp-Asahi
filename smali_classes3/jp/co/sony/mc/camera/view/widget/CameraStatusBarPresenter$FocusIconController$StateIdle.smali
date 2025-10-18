@@ -22,7 +22,7 @@
 .method private constructor <init>(Ljp/co/sony/mc/camera/view/widget/CameraStatusBarPresenter$FocusIconController;)V
     .locals 1
 
-    .line 461
+    .line 449
     iput-object p1, p0, Ljp/co/sony/mc/camera/view/widget/CameraStatusBarPresenter$FocusIconController$StateIdle;->this$1:Ljp/co/sony/mc/camera/view/widget/CameraStatusBarPresenter$FocusIconController;
 
     const/4 v0, 0x0
@@ -43,9 +43,9 @@
 
 # virtual methods
 .method handleEventFocusStarted(Ljp/co/sony/mc/camera/configuration/parameters/FocusMode;)V
-    .locals 2
+    .locals 3
 
-    .line 474
+    .line 462
     sget-object v0, Ljp/co/sony/mc/camera/view/widget/CameraStatusBarPresenter$1;->$SwitchMap$jp$co$sony$mc$camera$configuration$parameters$FocusMode:[I
 
     invoke-virtual {p1}, Ljp/co/sony/mc/camera/configuration/parameters/FocusMode;->ordinal()I
@@ -60,26 +60,28 @@
 
     if-eq p1, v0, :cond_2
 
-    const/4 v0, 0x2
+    const/4 v2, 0x2
 
-    if-eq p1, v0, :cond_1
+    if-eq p1, v2, :cond_1
 
-    const/4 v0, 0x3
+    const/4 v2, 0x3
 
-    if-eq p1, v0, :cond_0
+    if-eq p1, v2, :cond_0
 
-    .line 485
-    const-string p0, "Unexpected Focus mode; Event is ignored."
+    .line 473
+    new-array p0, v0, [Ljava/lang/String;
 
-    filled-new-array {p0}, [Ljava/lang/String;
+    const/4 p1, 0x0
 
-    move-result-object p0
+    const-string v0, "Unexpected Focus mode; Event is ignored."
+
+    aput-object v0, p0, p1
 
     invoke-static {p0}, Ljp/co/sony/mc/camera/util/CamLog;->e([Ljava/lang/String;)V
 
     goto :goto_0
 
-    .line 482
+    .line 470
     :cond_0
     iget-object p1, p0, Ljp/co/sony/mc/camera/view/widget/CameraStatusBarPresenter$FocusIconController$StateIdle;->this$1:Ljp/co/sony/mc/camera/view/widget/CameraStatusBarPresenter$FocusIconController;
 
@@ -93,7 +95,7 @@
 
     goto :goto_0
 
-    .line 479
+    .line 467
     :cond_1
     iget-object p1, p0, Ljp/co/sony/mc/camera/view/widget/CameraStatusBarPresenter$FocusIconController$StateIdle;->this$1:Ljp/co/sony/mc/camera/view/widget/CameraStatusBarPresenter$FocusIconController;
 
@@ -107,7 +109,7 @@
 
     goto :goto_0
 
-    .line 476
+    .line 464
     :cond_2
     iget-object p1, p0, Ljp/co/sony/mc/camera/view/widget/CameraStatusBarPresenter$FocusIconController$StateIdle;->this$1:Ljp/co/sony/mc/camera/view/widget/CameraStatusBarPresenter$FocusIconController;
 
@@ -132,7 +134,7 @@
 .method updateIcon()V
     .locals 1
 
-    .line 464
+    .line 452
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/widget/CameraStatusBarPresenter$FocusIconController$StateIdle;->this$1:Ljp/co/sony/mc/camera/view/widget/CameraStatusBarPresenter$FocusIconController;
 
     const/4 v0, -0x1

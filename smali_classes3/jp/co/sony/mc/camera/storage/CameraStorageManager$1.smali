@@ -26,7 +26,7 @@
 .method static constructor <clinit>()V
     .locals 7
 
-    .line 796
+    .line 763
     invoke-static {}, Ljp/co/sony/mc/camera/storage/Storage$StorageReadyState;->values()[Ljp/co/sony/mc/camera/storage/Storage$StorageReadyState;
 
     move-result-object v0
@@ -114,7 +114,7 @@
     :try_end_4
     .catch Ljava/lang/NoSuchFieldError; {:try_start_4 .. :try_end_4} :catch_4
 
-    .line 685
+    .line 680
     :catch_4
     invoke-static {}, Ljp/co/sony/mc/camera/storage/CameraStorageManager$DetailStorageState;->values()[Ljp/co/sony/mc/camera/storage/CameraStorageManager$DetailStorageState;
 
@@ -179,7 +179,7 @@
     :try_end_8
     .catch Ljava/lang/NoSuchFieldError; {:try_start_8 .. :try_end_8} :catch_8
 
-    .line 355
+    .line 350
     :catch_8
     invoke-static {}, Ljp/co/sony/mc/camera/storage/CameraStorageManager$UpdateRequestReason;->values()[Ljp/co/sony/mc/camera/storage/CameraStorageManager$UpdateRequestReason;
 

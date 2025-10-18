@@ -6,6 +6,9 @@
 # annotations
 .annotation system Ldalvik/annotation/MemberClasses;
     value = {
+        Ljp/co/sony/mc/camera/device/CaptureResultNotifier$FramingAssistCroppedPosition;,
+        Ljp/co/sony/mc/camera/device/CaptureResultNotifier$FramingAssistCroppedPositionCallback;,
+        Ljp/co/sony/mc/camera/device/CaptureResultNotifier$AutoFramingObjectTrackingCallback;,
         Ljp/co/sony/mc/camera/device/CaptureResultNotifier$WbCustomStatus;,
         Ljp/co/sony/mc/camera/device/CaptureResultNotifier$WbCustomStatusResult;,
         Ljp/co/sony/mc/camera/device/CaptureResultNotifier$BokehResult;,

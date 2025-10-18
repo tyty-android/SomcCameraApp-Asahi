@@ -72,7 +72,7 @@
 .method public bridge synthetic invoke(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
 
-    .line 326
+    .line 328
     check-cast p1, Landroidx/compose/ui/semantics/SemanticsPropertyReceiver;
 
     invoke-virtual {p0, p1}, Landroidx/compose/material/BackdropScaffoldKt$BackdropScaffold$1$1$swipeable$1;->invoke(Landroidx/compose/ui/semantics/SemanticsPropertyReceiver;)V
@@ -85,11 +85,7 @@
 .method public final invoke(Landroidx/compose/ui/semantics/SemanticsPropertyReceiver;)V
     .locals 4
 
-    const-string v0, "$this$semantics"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 327
+    .line 329
     iget-object v0, p0, Landroidx/compose/material/BackdropScaffoldKt$BackdropScaffold$1$1$swipeable$1;->$scaffoldState:Landroidx/compose/material/BackdropScaffoldState;
 
     invoke-virtual {v0}, Landroidx/compose/material/BackdropScaffoldState;->isConcealed()Z
@@ -102,7 +98,7 @@
 
     if-eqz v0, :cond_0
 
-    .line 328
+    .line 330
     new-instance v0, Landroidx/compose/material/BackdropScaffoldKt$BackdropScaffold$1$1$swipeable$1$1;
 
     iget-object v3, p0, Landroidx/compose/material/BackdropScaffoldKt$BackdropScaffold$1$1$swipeable$1;->$scaffoldState:Landroidx/compose/material/BackdropScaffoldState;
@@ -117,7 +113,7 @@
 
     goto :goto_0
 
-    .line 334
+    .line 336
     :cond_0
     new-instance v0, Landroidx/compose/material/BackdropScaffoldKt$BackdropScaffold$1$1$swipeable$1$2;
 

@@ -25,7 +25,7 @@
 .method private constructor <init>(Ljp/co/sony/mc/camera/controller/StateMachine$StateFatal;)V
     .locals 0
 
-    .line 5539
+    .line 5573
     iput-object p1, p0, Ljp/co/sony/mc/camera/controller/StateMachine$StateFatal$LazyAbortTask;->this$1:Ljp/co/sony/mc/camera/controller/StateMachine$StateFatal;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -44,22 +44,26 @@
 
 # virtual methods
 .method public run()V
-    .locals 1
+    .locals 3
 
-    .line 5542
+    .line 5576
     sget-boolean v0, Ljp/co/sony/mc/camera/util/CamLog;->DEBUG:Z
 
     if-eqz v0, :cond_0
 
-    const-string v0, "invoke LazyAbortTask"
+    const/4 v0, 0x1
 
-    filled-new-array {v0}, [Ljava/lang/String;
+    new-array v0, v0, [Ljava/lang/String;
 
-    move-result-object v0
+    const/4 v1, 0x0
+
+    const-string v2, "invoke LazyAbortTask"
+
+    aput-object v2, v0, v1
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
-    .line 5543
+    .line 5577
     :cond_0
     iget-object p0, p0, Ljp/co/sony/mc/camera/controller/StateMachine$StateFatal$LazyAbortTask;->this$1:Ljp/co/sony/mc/camera/controller/StateMachine$StateFatal;
 

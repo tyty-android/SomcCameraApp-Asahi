@@ -15,13 +15,14 @@
 
 .annotation runtime Lkotlin/Metadata;
     d1 = {
-        "\u0000\u0018\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0004\n\u0002\u0010\u000e\n\u0000\u0008\u0007\u0018\u00002\u00020\u0001B\r\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u00a2\u0006\u0002\u0010\u0004J\u0008\u0010\u0007\u001a\u00020\u0008H\u0016R\u0011\u0010\u0002\u001a\u00020\u0003\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\u0005\u0010\u0006\u00a8\u0006\t"
+        "\u0000\u0018\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0005\n\u0002\u0010\u000e\n\u0000\u0008\u0007\u0018\u00002\u00020\u0001B\u000f\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u00a2\u0006\u0004\u0008\u0004\u0010\u0005J\u0008\u0010\u0008\u001a\u00020\tH\u0016R\u0011\u0010\u0002\u001a\u00020\u0003\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\u0006\u0010\u0007\u00a8\u0006\n"
     }
     d2 = {
         "Ljp/co/sony/mc/camera/idd/value/IddFlash;",
         "Ljp/co/sony/mc/camera/idd/value/IddSettingValue;",
         "value",
         "Ljp/co/sony/mc/camera/configuration/parameters/Flash;",
+        "<init>",
         "(Ljp/co/sony/mc/camera/configuration/parameters/Flash;)V",
         "getValue",
         "()Ljp/co/sony/mc/camera/configuration/parameters/Flash;",
@@ -31,8 +32,8 @@
     }
     k = 0x1
     mv = {
-        0x1,
-        0x9,
+        0x2,
+        0x0,
         0x0
     }
     xi = 0x30
@@ -61,7 +62,7 @@
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 169
+    .line 201
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     iput-object p1, p0, Ljp/co/sony/mc/camera/idd/value/IddFlash;->value:Ljp/co/sony/mc/camera/configuration/parameters/Flash;
@@ -74,7 +75,7 @@
 .method public final getValue()Ljp/co/sony/mc/camera/configuration/parameters/Flash;
     .locals 0
 
-    .line 169
+    .line 201
     iget-object p0, p0, Ljp/co/sony/mc/camera/idd/value/IddFlash;->value:Ljp/co/sony/mc/camera/configuration/parameters/Flash;
 
     return-object p0
@@ -83,7 +84,7 @@
 .method public toString()Ljava/lang/String;
     .locals 1
 
-    .line 170
+    .line 202
     iget-object p0, p0, Ljp/co/sony/mc/camera/idd/value/IddFlash;->value:Ljp/co/sony/mc/camera/configuration/parameters/Flash;
 
     sget-object v0, Ljp/co/sony/mc/camera/idd/value/IddFlash$WhenMappings;->$EnumSwitchMapping$0:[I
@@ -96,31 +97,31 @@
 
     packed-switch p0, :pswitch_data_0
 
-    .line 174
     new-instance p0, Lkotlin/NoWhenBranchMatchedException;
 
     invoke-direct {p0}, Lkotlin/NoWhenBranchMatchedException;-><init>()V
 
     throw p0
 
+    .line 206
     :pswitch_0
     const-string p0, "FLASHLIGHT"
 
     goto :goto_0
 
-    .line 173
+    .line 205
     :pswitch_1
     const-string p0, "OFF"
 
     goto :goto_0
 
-    .line 172
+    .line 204
     :pswitch_2
     const-string p0, "FILL_FLASH"
 
     goto :goto_0
 
-    .line 171
+    .line 203
     :pswitch_3
     const-string p0, "AUTO"
 

@@ -27,7 +27,7 @@
 
 # direct methods
 .method static constructor <clinit>()V
-    .locals 5
+    .locals 8
 
     .line 15
     new-instance v0, Landroidx/databinding/ViewDataBinding$IncludedLayouts;
@@ -38,133 +38,135 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/databinding/FragmentProModeFnSubmenuWbBindingImpl;->sIncludes:Landroidx/databinding/ViewDataBinding$IncludedLayouts;
 
+    const/4 v1, 0x1
+
     .line 16
-    const-string v1, "fragment_pro_mode_fn_submenu_wb_state_bar"
+    new-array v2, v1, [Ljava/lang/String;
 
-    filled-new-array {v1}, [Ljava/lang/String;
-
-    move-result-object v1
-
-    const/4 v2, 0x6
-
-    filled-new-array {v2}, [I
-
-    move-result-object v2
-
-    const v3, 0x7f0c00aa
-
-    filled-new-array {v3}, [I
-
-    move-result-object v3
+    const-string v3, "fragment_pro_mode_fn_submenu_wb_state_bar"
 
     const/4 v4, 0x0
 
-    invoke-virtual {v0, v4, v1, v2, v3}, Landroidx/databinding/ViewDataBinding$IncludedLayouts;->setIncludes(I[Ljava/lang/String;[I[I)V
+    aput-object v3, v2, v4
+
+    const/4 v3, 0x6
+
+    filled-new-array {v3}, [I
+
+    move-result-object v3
+
+    const v5, 0x7f0c00aa
+
+    filled-new-array {v5}, [I
+
+    move-result-object v5
+
+    invoke-virtual {v0, v4, v2, v3, v5}, Landroidx/databinding/ViewDataBinding$IncludedLayouts;->setIncludes(I[Ljava/lang/String;[I[I)V
+
+    const/4 v2, 0x2
 
     .line 20
-    const-string v1, "fragment_pro_mode_options_dial"
+    new-array v3, v2, [Ljava/lang/String;
 
-    const-string v2, "fragment_pro_mode_fn_submenu_wb_temp"
+    const-string v5, "fragment_pro_mode_options_dial"
 
-    filled-new-array {v1, v2}, [Ljava/lang/String;
+    aput-object v5, v3, v4
 
-    move-result-object v1
+    const-string v5, "fragment_pro_mode_fn_submenu_wb_temp"
 
-    const/4 v2, 0x7
+    aput-object v5, v3, v1
 
-    const/16 v3, 0xc
+    const/4 v5, 0x7
 
-    filled-new-array {v2, v3}, [I
+    const/16 v6, 0xc
 
-    move-result-object v2
+    filled-new-array {v5, v6}, [I
 
-    const v3, 0x7f0c00ad
+    move-result-object v5
 
-    const v4, 0x7f0c00ab
+    const v6, 0x7f0c00ad
 
-    filled-new-array {v3, v4}, [I
+    const v7, 0x7f0c00ab
 
-    move-result-object v3
+    filled-new-array {v6, v7}, [I
 
-    const/4 v4, 0x1
+    move-result-object v6
 
-    invoke-virtual {v0, v4, v1, v2, v3}, Landroidx/databinding/ViewDataBinding$IncludedLayouts;->setIncludes(I[Ljava/lang/String;[I[I)V
+    invoke-virtual {v0, v1, v3, v5, v6}, Landroidx/databinding/ViewDataBinding$IncludedLayouts;->setIncludes(I[Ljava/lang/String;[I[I)V
 
     .line 25
-    const-string v1, "fragment_pro_mode_fn_submenu_wb_palette"
+    new-array v3, v1, [Ljava/lang/String;
 
-    filled-new-array {v1}, [Ljava/lang/String;
+    const-string v5, "fragment_pro_mode_fn_submenu_wb_palette"
 
-    move-result-object v1
+    aput-object v5, v3, v4
 
-    const/16 v2, 0x8
+    const/16 v5, 0x8
 
-    filled-new-array {v2}, [I
+    filled-new-array {v5}, [I
 
-    move-result-object v2
+    move-result-object v5
 
-    const v3, 0x7f0c00a9
+    const v6, 0x7f0c00a9
 
-    filled-new-array {v3}, [I
+    filled-new-array {v6}, [I
 
-    move-result-object v3
+    move-result-object v6
 
-    const/4 v4, 0x2
-
-    invoke-virtual {v0, v4, v1, v2, v3}, Landroidx/databinding/ViewDataBinding$IncludedLayouts;->setIncludes(I[Ljava/lang/String;[I[I)V
+    invoke-virtual {v0, v2, v3, v5, v6}, Landroidx/databinding/ViewDataBinding$IncludedLayouts;->setIncludes(I[Ljava/lang/String;[I[I)V
 
     .line 29
-    const-string v1, "fragment_pro_mode_fn_submenu_wb_fetch"
+    new-array v2, v1, [Ljava/lang/String;
 
-    filled-new-array {v1}, [Ljava/lang/String;
+    const-string v3, "fragment_pro_mode_fn_submenu_wb_fetch"
 
-    move-result-object v1
+    aput-object v3, v2, v4
 
-    const/16 v2, 0x9
-
-    filled-new-array {v2}, [I
-
-    move-result-object v2
-
-    const v3, 0x7f0c00a8
+    const/16 v3, 0x9
 
     filled-new-array {v3}, [I
 
     move-result-object v3
 
-    const/4 v4, 0x3
+    const v5, 0x7f0c00a8
 
-    invoke-virtual {v0, v4, v1, v2, v3}, Landroidx/databinding/ViewDataBinding$IncludedLayouts;->setIncludes(I[Ljava/lang/String;[I[I)V
+    filled-new-array {v5}, [I
+
+    move-result-object v5
+
+    const/4 v6, 0x3
+
+    invoke-virtual {v0, v6, v2, v3, v5}, Landroidx/databinding/ViewDataBinding$IncludedLayouts;->setIncludes(I[Ljava/lang/String;[I[I)V
 
     .line 33
-    const-string v1, "fragment_pro_mode_fn_submenu_wb_confirm"
+    new-array v2, v1, [Ljava/lang/String;
 
-    filled-new-array {v1}, [Ljava/lang/String;
+    const-string v3, "fragment_pro_mode_fn_submenu_wb_confirm"
 
-    move-result-object v1
+    aput-object v3, v2, v4
 
-    const/16 v2, 0xa
-
-    filled-new-array {v2}, [I
-
-    move-result-object v2
-
-    const v3, 0x7f0c00a6
+    const/16 v3, 0xa
 
     filled-new-array {v3}, [I
 
     move-result-object v3
 
-    const/4 v4, 0x4
+    const v5, 0x7f0c00a6
 
-    invoke-virtual {v0, v4, v1, v2, v3}, Landroidx/databinding/ViewDataBinding$IncludedLayouts;->setIncludes(I[Ljava/lang/String;[I[I)V
+    filled-new-array {v5}, [I
+
+    move-result-object v5
+
+    const/4 v6, 0x4
+
+    invoke-virtual {v0, v6, v2, v3, v5}, Landroidx/databinding/ViewDataBinding$IncludedLayouts;->setIncludes(I[Ljava/lang/String;[I[I)V
 
     .line 37
-    const-string v1, "fragment_pro_mode_fn_submenu_wb_fail"
+    new-array v1, v1, [Ljava/lang/String;
 
-    filled-new-array {v1}, [Ljava/lang/String;
+    const-string v2, "fragment_pro_mode_fn_submenu_wb_fail"
 
-    move-result-object v1
+    aput-object v2, v1, v4
 
     const/16 v2, 0xb
 
@@ -2045,7 +2047,7 @@
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    const/16 p1, 0x15
+    const/16 p1, 0x18
 
     .line 164
     invoke-virtual {p0, p1}, Ljp/co/sony/mc/camera/databinding/FragmentProModeFnSubmenuWbBindingImpl;->notifyPropertyChanged(I)V
@@ -2070,7 +2072,7 @@
 .method public setVariable(ILjava/lang/Object;)Z
     .locals 1
 
-    const/16 v0, 0x15
+    const/16 v0, 0x18
 
     if-ne v0, p1, :cond_0
 
@@ -2082,7 +2084,7 @@
     goto :goto_0
 
     :cond_0
-    const/16 v0, 0x8
+    const/16 v0, 0x9
 
     if-ne v0, p1, :cond_1
 

@@ -36,12 +36,12 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/SourceDebugExtension;
-    value = "SMAP\nMapBuilder.kt\nKotlin\n*S Kotlin\n*F\n+ 1 MapBuilder.kt\nkotlin/collections/builders/MapBuilder\n+ 2 fake.kt\nkotlin/jvm/internal/FakeKt\n*L\n1#1,697:1\n1#2:698\n*E\n"
+    value = "SMAP\nMapBuilder.kt\nKotlin\n*S Kotlin\n*F\n+ 1 MapBuilder.kt\nkotlin/collections/builders/MapBuilder\n+ 2 fake.kt\nkotlin/jvm/internal/FakeKt\n*L\n1#1,728:1\n1#2:729\n*E\n"
 .end annotation
 
 .annotation runtime Lkotlin/Metadata;
     d1 = {
-        "\u0000\u00a8\u0001\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0010%\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0010\u0008\n\u0002\u0008\u0002\n\u0002\u0010\u0011\n\u0002\u0008\u0002\n\u0002\u0010\u0015\n\u0002\u0008\u0008\n\u0002\u0010#\n\u0002\u0010\'\n\u0002\u0008\u0003\n\u0002\u0018\u0002\n\u0002\u0008\u0004\n\u0002\u0010\u000b\n\u0002\u0008\u0007\n\u0002\u0018\u0002\n\u0002\u0008\u0003\n\u0002\u0010\u001f\n\u0002\u0008\u0003\n\u0002\u0018\u0002\n\u0002\u0008\u0007\n\u0002\u0010$\n\u0000\n\u0002\u0010\u0002\n\u0002\u0008\u0005\n\u0002\u0010\u001e\n\u0002\u0008\u0003\n\u0002\u0010&\n\u0002\u0008\u000b\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0010\u0000\n\u0002\u0008\u0008\n\u0002\u0018\u0002\n\u0002\u0008\u001a\n\u0002\u0010\u000e\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\t\u0008\u0000\u0018\u0000 }*\u0004\u0008\u0000\u0010\u0001*\u0004\u0008\u0001\u0010\u00022\u000e\u0012\u0004\u0012\u0002H\u0001\u0012\u0004\u0012\u0002H\u00020\u00032\u00060\u0004j\u0002`\u0005:\t}~\u007f\u0080\u0001\u0081\u0001\u0082\u0001B\u0007\u0008\u0016\u00a2\u0006\u0002\u0010\u0006B\u000f\u0008\u0016\u0012\u0006\u0010\u0007\u001a\u00020\u0008\u00a2\u0006\u0002\u0010\tBE\u0008\u0002\u0012\u000c\u0010\n\u001a\u0008\u0012\u0004\u0012\u00028\u00000\u000b\u0012\u000e\u0010\u000c\u001a\n\u0012\u0004\u0012\u00028\u0001\u0018\u00010\u000b\u0012\u0006\u0010\r\u001a\u00020\u000e\u0012\u0006\u0010\u000f\u001a\u00020\u000e\u0012\u0006\u0010\u0010\u001a\u00020\u0008\u0012\u0006\u0010\u0011\u001a\u00020\u0008\u00a2\u0006\u0002\u0010\u0012J\u0017\u00102\u001a\u00020\u00082\u0006\u00103\u001a\u00028\u0000H\u0000\u00a2\u0006\u0004\u00084\u00105J\u0013\u00106\u001a\u0008\u0012\u0004\u0012\u00028\u00010\u000bH\u0002\u00a2\u0006\u0002\u00107J\u0012\u00108\u001a\u000e\u0012\u0004\u0012\u00028\u0000\u0012\u0004\u0012\u00028\u000109J\r\u0010:\u001a\u00020;H\u0000\u00a2\u0006\u0002\u0008<J\u0008\u0010=\u001a\u00020;H\u0016J\u0008\u0010>\u001a\u00020;H\u0002J\u0019\u0010?\u001a\u00020!2\n\u0010@\u001a\u0006\u0012\u0002\u0008\u00030AH\u0000\u00a2\u0006\u0002\u0008BJ!\u0010C\u001a\u00020!2\u0012\u0010D\u001a\u000e\u0012\u0004\u0012\u00028\u0000\u0012\u0004\u0012\u00028\u00010EH\u0000\u00a2\u0006\u0002\u0008FJ\u0015\u0010G\u001a\u00020!2\u0006\u00103\u001a\u00028\u0000H\u0016\u00a2\u0006\u0002\u0010HJ\u0015\u0010I\u001a\u00020!2\u0006\u0010J\u001a\u00028\u0001H\u0016\u00a2\u0006\u0002\u0010HJ\u0018\u0010K\u001a\u00020!2\u000e\u0010L\u001a\n\u0012\u0002\u0008\u0003\u0012\u0002\u0008\u000309H\u0002J\u0010\u0010M\u001a\u00020;2\u0006\u0010\u0013\u001a\u00020\u0008H\u0002J\u0010\u0010N\u001a\u00020;2\u0006\u0010O\u001a\u00020\u0008H\u0002J\u0019\u0010P\u001a\u000e\u0012\u0004\u0012\u00028\u0000\u0012\u0004\u0012\u00028\u00010QH\u0000\u00a2\u0006\u0002\u0008RJ\u0013\u0010S\u001a\u00020!2\u0008\u0010L\u001a\u0004\u0018\u00010TH\u0096\u0002J\u0015\u0010U\u001a\u00020\u00082\u0006\u00103\u001a\u00028\u0000H\u0002\u00a2\u0006\u0002\u00105J\u0015\u0010V\u001a\u00020\u00082\u0006\u0010J\u001a\u00028\u0001H\u0002\u00a2\u0006\u0002\u00105J\u0018\u0010W\u001a\u0004\u0018\u00018\u00012\u0006\u00103\u001a\u00028\u0000H\u0096\u0002\u00a2\u0006\u0002\u0010XJ\u0015\u0010Y\u001a\u00020\u00082\u0006\u00103\u001a\u00028\u0000H\u0002\u00a2\u0006\u0002\u00105J\u0008\u0010Z\u001a\u00020\u0008H\u0016J\u0008\u0010[\u001a\u00020!H\u0016J\u0019\u0010\\\u001a\u000e\u0012\u0004\u0012\u00028\u0000\u0012\u0004\u0012\u00028\u00010]H\u0000\u00a2\u0006\u0002\u0008^J\u001f\u0010_\u001a\u0004\u0018\u00018\u00012\u0006\u00103\u001a\u00028\u00002\u0006\u0010J\u001a\u00028\u0001H\u0016\u00a2\u0006\u0002\u0010`J\u001e\u0010a\u001a\u00020;2\u0014\u0010b\u001a\u0010\u0012\u0006\u0008\u0001\u0012\u00028\u0000\u0012\u0004\u0012\u00028\u000109H\u0016J\"\u0010c\u001a\u00020!2\u0018\u0010b\u001a\u0014\u0012\u0010\u0012\u000e\u0012\u0004\u0012\u00028\u0000\u0012\u0004\u0012\u00028\u00010E0AH\u0002J\u001c\u0010d\u001a\u00020!2\u0012\u0010D\u001a\u000e\u0012\u0004\u0012\u00028\u0000\u0012\u0004\u0012\u00028\u00010EH\u0002J\u0010\u0010e\u001a\u00020!2\u0006\u0010f\u001a\u00020\u0008H\u0002J\u0010\u0010g\u001a\u00020;2\u0006\u0010h\u001a\u00020\u0008H\u0002J\u0017\u0010i\u001a\u0004\u0018\u00018\u00012\u0006\u00103\u001a\u00028\u0000H\u0016\u00a2\u0006\u0002\u0010XJ!\u0010j\u001a\u00020!2\u0012\u0010D\u001a\u000e\u0012\u0004\u0012\u00028\u0000\u0012\u0004\u0012\u00028\u00010EH\u0000\u00a2\u0006\u0002\u0008kJ\u0010\u0010l\u001a\u00020;2\u0006\u0010m\u001a\u00020\u0008H\u0002J\u0017\u0010n\u001a\u00020\u00082\u0006\u00103\u001a\u00028\u0000H\u0000\u00a2\u0006\u0004\u0008o\u00105J\u0010\u0010p\u001a\u00020;2\u0006\u0010q\u001a\u00020\u0008H\u0002J\u0017\u0010r\u001a\u00020!2\u0006\u0010s\u001a\u00028\u0001H\u0000\u00a2\u0006\u0004\u0008t\u0010HJ\u0010\u0010u\u001a\u00020!2\u0006\u0010v\u001a\u00020\u0008H\u0002J\u0008\u0010w\u001a\u00020xH\u0016J\u0019\u0010y\u001a\u000e\u0012\u0004\u0012\u00028\u0000\u0012\u0004\u0012\u00028\u00010zH\u0000\u00a2\u0006\u0002\u0008{J\u0008\u0010|\u001a\u00020TH\u0002R\u0014\u0010\u0013\u001a\u00020\u00088@X\u0080\u0004\u00a2\u0006\u0006\u001a\u0004\u0008\u0014\u0010\u0015R&\u0010\u0016\u001a\u0014\u0012\u0010\u0012\u000e\u0012\u0004\u0012\u00028\u0000\u0012\u0004\u0012\u00028\u00010\u00180\u00178VX\u0096\u0004\u00a2\u0006\u0006\u001a\u0004\u0008\u0019\u0010\u001aR\u001c\u0010\u001b\u001a\u0010\u0012\u0004\u0012\u00028\u0000\u0012\u0004\u0012\u00028\u0001\u0018\u00010\u001cX\u0082\u000e\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u000f\u001a\u00020\u000eX\u0082\u000e\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u001d\u001a\u00020\u0008X\u0082\u000e\u00a2\u0006\u0002\n\u0000R\u0014\u0010\u001e\u001a\u00020\u00088BX\u0082\u0004\u00a2\u0006\u0006\u001a\u0004\u0008\u001f\u0010\u0015R\u001e\u0010\"\u001a\u00020!2\u0006\u0010 \u001a\u00020!@BX\u0080\u000e\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008#\u0010$R\u001a\u0010%\u001a\u0008\u0012\u0004\u0012\u00028\u00000\u00178VX\u0096\u0004\u00a2\u0006\u0006\u001a\u0004\u0008&\u0010\u001aR\u0016\u0010\n\u001a\u0008\u0012\u0004\u0012\u00028\u00000\u000bX\u0082\u000e\u00a2\u0006\u0004\n\u0002\u0010\'R\u0016\u0010(\u001a\n\u0012\u0004\u0012\u00028\u0000\u0018\u00010)X\u0082\u000e\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u0011\u001a\u00020\u0008X\u0082\u000e\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u0010\u001a\u00020\u0008X\u0082\u000e\u00a2\u0006\u0002\n\u0000R\u000e\u0010\r\u001a\u00020\u000eX\u0082\u000e\u00a2\u0006\u0002\n\u0000R\u001e\u0010*\u001a\u00020\u00082\u0006\u0010 \u001a\u00020\u0008@RX\u0096\u000e\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008+\u0010\u0015R\u001a\u0010,\u001a\u0008\u0012\u0004\u0012\u00028\u00010-8VX\u0096\u0004\u00a2\u0006\u0006\u001a\u0004\u0008.\u0010/R\u0018\u0010\u000c\u001a\n\u0012\u0004\u0012\u00028\u0001\u0018\u00010\u000bX\u0082\u000e\u00a2\u0006\u0004\n\u0002\u0010\'R\u0016\u00100\u001a\n\u0012\u0004\u0012\u00028\u0001\u0018\u000101X\u0082\u000e\u00a2\u0006\u0002\n\u0000\u00a8\u0006\u0083\u0001"
+        "\u0000\u00a8\u0001\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0010%\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0010\u0008\n\u0002\u0008\u0002\n\u0002\u0010\u0011\n\u0002\u0008\u0002\n\u0002\u0010\u0015\n\u0002\u0008\u0008\n\u0002\u0010#\n\u0002\u0010\'\n\u0002\u0008\u0003\n\u0002\u0018\u0002\n\u0002\u0008\u0004\n\u0002\u0010\u000b\n\u0002\u0008\u0007\n\u0002\u0018\u0002\n\u0002\u0008\u0004\n\u0002\u0010\u001f\n\u0002\u0008\u0003\n\u0002\u0018\u0002\n\u0002\u0008\u0007\n\u0002\u0010$\n\u0000\n\u0002\u0010\u0002\n\u0002\u0008\u0005\n\u0002\u0010\u001e\n\u0002\u0008\u0003\n\u0002\u0010&\n\u0002\u0008\u000c\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0010\u0000\n\u0002\u0008\u0008\n\u0002\u0018\u0002\n\u0002\u0008\u001b\n\u0002\u0010\u000e\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\t\u0008\u0000\u0018\u0000 \u0080\u0001*\u0004\u0008\u0000\u0010\u0001*\u0004\u0008\u0001\u0010\u00022\u000e\u0012\u0004\u0012\u0002H\u0001\u0012\u0004\u0012\u0002H\u00020\u00032\u00060\u0004j\u0002`\u0005:\u000c\u0080\u0001\u0081\u0001\u0082\u0001\u0083\u0001\u0084\u0001\u0085\u0001B\u0007\u0008\u0016\u00a2\u0006\u0002\u0010\u0006B\u000f\u0008\u0016\u0012\u0006\u0010\u0007\u001a\u00020\u0008\u00a2\u0006\u0002\u0010\tBE\u0008\u0002\u0012\u000c\u0010\n\u001a\u0008\u0012\u0004\u0012\u00028\u00000\u000b\u0012\u000e\u0010\u000c\u001a\n\u0012\u0004\u0012\u00028\u0001\u0018\u00010\u000b\u0012\u0006\u0010\r\u001a\u00020\u000e\u0012\u0006\u0010\u000f\u001a\u00020\u000e\u0012\u0006\u0010\u0010\u001a\u00020\u0008\u0012\u0006\u0010\u0011\u001a\u00020\u0008\u00a2\u0006\u0002\u0010\u0012J\u0017\u00103\u001a\u00020\u00082\u0006\u00104\u001a\u00028\u0000H\u0000\u00a2\u0006\u0004\u00085\u00106J\u0013\u00107\u001a\u0008\u0012\u0004\u0012\u00028\u00010\u000bH\u0002\u00a2\u0006\u0002\u00108J\u0012\u00109\u001a\u000e\u0012\u0004\u0012\u00028\u0000\u0012\u0004\u0012\u00028\u00010:J\r\u0010;\u001a\u00020<H\u0000\u00a2\u0006\u0002\u0008=J\u0008\u0010>\u001a\u00020<H\u0016J\u0008\u0010?\u001a\u00020<H\u0002J\u0019\u0010@\u001a\u00020!2\n\u0010A\u001a\u0006\u0012\u0002\u0008\u00030BH\u0000\u00a2\u0006\u0002\u0008CJ!\u0010D\u001a\u00020!2\u0012\u0010E\u001a\u000e\u0012\u0004\u0012\u00028\u0000\u0012\u0004\u0012\u00028\u00010FH\u0000\u00a2\u0006\u0002\u0008GJ\u0015\u0010H\u001a\u00020!2\u0006\u00104\u001a\u00028\u0000H\u0016\u00a2\u0006\u0002\u0010IJ\u0015\u0010J\u001a\u00020!2\u0006\u0010K\u001a\u00028\u0001H\u0016\u00a2\u0006\u0002\u0010IJ\u0018\u0010L\u001a\u00020!2\u000e\u0010M\u001a\n\u0012\u0002\u0008\u0003\u0012\u0002\u0008\u00030:H\u0002J\u0010\u0010N\u001a\u00020<2\u0006\u0010O\u001a\u00020\u0008H\u0002J\u0010\u0010P\u001a\u00020<2\u0006\u0010Q\u001a\u00020\u0008H\u0002J\u0019\u0010R\u001a\u000e\u0012\u0004\u0012\u00028\u0000\u0012\u0004\u0012\u00028\u00010SH\u0000\u00a2\u0006\u0002\u0008TJ\u0013\u0010U\u001a\u00020!2\u0008\u0010M\u001a\u0004\u0018\u00010VH\u0096\u0002J\u0015\u0010W\u001a\u00020\u00082\u0006\u00104\u001a\u00028\u0000H\u0002\u00a2\u0006\u0002\u00106J\u0015\u0010X\u001a\u00020\u00082\u0006\u0010K\u001a\u00028\u0001H\u0002\u00a2\u0006\u0002\u00106J\u0018\u0010Y\u001a\u0004\u0018\u00018\u00012\u0006\u00104\u001a\u00028\u0000H\u0096\u0002\u00a2\u0006\u0002\u0010ZJ\u0015\u0010[\u001a\u00020\u00082\u0006\u00104\u001a\u00028\u0000H\u0002\u00a2\u0006\u0002\u00106J\u0008\u0010\\\u001a\u00020\u0008H\u0016J\u0008\u0010]\u001a\u00020!H\u0016J\u0019\u0010^\u001a\u000e\u0012\u0004\u0012\u00028\u0000\u0012\u0004\u0012\u00028\u00010_H\u0000\u00a2\u0006\u0002\u0008`J\u001f\u0010a\u001a\u0004\u0018\u00018\u00012\u0006\u00104\u001a\u00028\u00002\u0006\u0010K\u001a\u00028\u0001H\u0016\u00a2\u0006\u0002\u0010bJ\u001e\u0010c\u001a\u00020<2\u0014\u0010d\u001a\u0010\u0012\u0006\u0008\u0001\u0012\u00028\u0000\u0012\u0004\u0012\u00028\u00010:H\u0016J\"\u0010e\u001a\u00020!2\u0018\u0010d\u001a\u0014\u0012\u0010\u0012\u000e\u0012\u0004\u0012\u00028\u0000\u0012\u0004\u0012\u00028\u00010F0BH\u0002J\u001c\u0010f\u001a\u00020!2\u0012\u0010E\u001a\u000e\u0012\u0004\u0012\u00028\u0000\u0012\u0004\u0012\u00028\u00010FH\u0002J\u0010\u0010g\u001a\u00020!2\u0006\u0010h\u001a\u00020\u0008H\u0002J\u0008\u0010i\u001a\u00020<H\u0002J\u0010\u0010j\u001a\u00020<2\u0006\u0010k\u001a\u00020\u0008H\u0002J\u0017\u0010l\u001a\u0004\u0018\u00018\u00012\u0006\u00104\u001a\u00028\u0000H\u0016\u00a2\u0006\u0002\u0010ZJ!\u0010m\u001a\u00020!2\u0012\u0010E\u001a\u000e\u0012\u0004\u0012\u00028\u0000\u0012\u0004\u0012\u00028\u00010FH\u0000\u00a2\u0006\u0002\u0008nJ\u0010\u0010o\u001a\u00020<2\u0006\u0010p\u001a\u00020\u0008H\u0002J\u0010\u0010q\u001a\u00020<2\u0006\u0010r\u001a\u00020\u0008H\u0002J\u0017\u0010s\u001a\u00020!2\u0006\u00104\u001a\u00028\u0000H\u0000\u00a2\u0006\u0004\u0008t\u0010IJ\u0017\u0010u\u001a\u00020!2\u0006\u0010v\u001a\u00028\u0001H\u0000\u00a2\u0006\u0004\u0008w\u0010IJ\u0010\u0010x\u001a\u00020!2\u0006\u0010y\u001a\u00020\u0008H\u0002J\u0008\u0010z\u001a\u00020{H\u0016J\u0019\u0010|\u001a\u000e\u0012\u0004\u0012\u00028\u0000\u0012\u0004\u0012\u00028\u00010}H\u0000\u00a2\u0006\u0002\u0008~J\u0008\u0010\u007f\u001a\u00020VH\u0002R\u0014\u0010\u0013\u001a\u00020\u00088@X\u0080\u0004\u00a2\u0006\u0006\u001a\u0004\u0008\u0014\u0010\u0015R&\u0010\u0016\u001a\u0014\u0012\u0010\u0012\u000e\u0012\u0004\u0012\u00028\u0000\u0012\u0004\u0012\u00028\u00010\u00180\u00178VX\u0096\u0004\u00a2\u0006\u0006\u001a\u0004\u0008\u0019\u0010\u001aR\u001c\u0010\u001b\u001a\u0010\u0012\u0004\u0012\u00028\u0000\u0012\u0004\u0012\u00028\u0001\u0018\u00010\u001cX\u0082\u000e\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u000f\u001a\u00020\u000eX\u0082\u000e\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u001d\u001a\u00020\u0008X\u0082\u000e\u00a2\u0006\u0002\n\u0000R\u0014\u0010\u001e\u001a\u00020\u00088BX\u0082\u0004\u00a2\u0006\u0006\u001a\u0004\u0008\u001f\u0010\u0015R\u001e\u0010\"\u001a\u00020!2\u0006\u0010 \u001a\u00020!@BX\u0080\u000e\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008#\u0010$R\u001a\u0010%\u001a\u0008\u0012\u0004\u0012\u00028\u00000\u00178VX\u0096\u0004\u00a2\u0006\u0006\u001a\u0004\u0008&\u0010\u001aR\u0016\u0010\n\u001a\u0008\u0012\u0004\u0012\u00028\u00000\u000bX\u0082\u000e\u00a2\u0006\u0004\n\u0002\u0010\'R\u0016\u0010(\u001a\n\u0012\u0004\u0012\u00028\u0000\u0018\u00010)X\u0082\u000e\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u0011\u001a\u00020\u0008X\u0082\u000e\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u0010\u001a\u00020\u0008X\u0082\u000e\u00a2\u0006\u0002\n\u0000R\u000e\u0010*\u001a\u00020\u0008X\u0082\u000e\u00a2\u0006\u0002\n\u0000R\u000e\u0010\r\u001a\u00020\u000eX\u0082\u000e\u00a2\u0006\u0002\n\u0000R\u001e\u0010+\u001a\u00020\u00082\u0006\u0010 \u001a\u00020\u0008@RX\u0096\u000e\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008,\u0010\u0015R\u001a\u0010-\u001a\u0008\u0012\u0004\u0012\u00028\u00010.8VX\u0096\u0004\u00a2\u0006\u0006\u001a\u0004\u0008/\u00100R\u0018\u0010\u000c\u001a\n\u0012\u0004\u0012\u00028\u0001\u0018\u00010\u000bX\u0082\u000e\u00a2\u0006\u0004\n\u0002\u0010\'R\u0016\u00101\u001a\n\u0012\u0004\u0012\u00028\u0001\u0018\u000102X\u0082\u000e\u00a2\u0006\u0002\n\u0000\u00a8\u0006\u0086\u0001"
     }
     d2 = {
         "Lkotlin/collections/builders/MapBuilder;",
@@ -86,6 +86,7 @@
         "[Ljava/lang/Object;",
         "keysView",
         "Lkotlin/collections/builders/MapBuilderKeys;",
+        "modCount",
         "size",
         "getSize",
         "values",
@@ -122,6 +123,7 @@
         "contentEquals",
         "other",
         "ensureCapacity",
+        "minCapacity",
         "ensureExtraCapacity",
         "n",
         "entriesIterator",
@@ -147,17 +149,18 @@
         "putEntry",
         "putRehash",
         "i",
+        "registerModification",
         "rehash",
         "newHashSize",
         "remove",
         "removeEntry",
         "removeEntry$kotlin_stdlib",
+        "removeEntryAt",
+        "index",
         "removeHashAt",
         "removedHash",
         "removeKey",
         "removeKey$kotlin_stdlib",
-        "removeKeyAt",
-        "index",
         "removeValue",
         "element",
         "removeValue$kotlin_stdlib",
@@ -238,6 +241,8 @@
 
 .field private maxProbeDistance:I
 
+.field private modCount:I
+
 .field private presenceArray:[I
 
 .field private size:I
@@ -272,7 +277,7 @@
 
     sput-object v0, Lkotlin/collections/builders/MapBuilder;->Companion:Lkotlin/collections/builders/MapBuilder$Companion;
 
-    .line 469
+    .line 489
     new-instance v0, Lkotlin/collections/builders/MapBuilder;
 
     const/4 v1, 0x0
@@ -293,7 +298,7 @@
 
     const/16 v0, 0x8
 
-    .line 40
+    .line 52
     invoke-direct {p0, v0}, Lkotlin/collections/builders/MapBuilder;-><init>(I)V
 
     return-void
@@ -302,15 +307,15 @@
 .method public constructor <init>(I)V
     .locals 7
 
-    .line 43
+    .line 55
     invoke-static {p1}, Lkotlin/collections/builders/ListBuilderKt;->arrayOfUninitializedElements(I)[Ljava/lang/Object;
 
     move-result-object v1
 
-    .line 45
+    .line 57
     new-array v3, p1, [I
 
-    .line 46
+    .line 58
     sget-object v0, Lkotlin/collections/builders/MapBuilder;->Companion:Lkotlin/collections/builders/MapBuilder$Companion;
 
     invoke-static {v0, p1}, Lkotlin/collections/builders/MapBuilder$Companion;->access$computeHashSize(Lkotlin/collections/builders/MapBuilder$Companion;I)I
@@ -327,7 +332,7 @@
 
     move-object v0, p0
 
-    .line 42
+    .line 54
     invoke-direct/range {v0 .. v6}, Lkotlin/collections/builders/MapBuilder;-><init>([Ljava/lang/Object;[Ljava/lang/Object;[I[III)V
 
     return-void
@@ -416,6 +421,15 @@
     return p0
 .end method
 
+.method public static final synthetic access$getModCount$p(Lkotlin/collections/builders/MapBuilder;)I
+    .locals 0
+
+    .line 12
+    iget p0, p0, Lkotlin/collections/builders/MapBuilder;->modCount:I
+
+    return p0
+.end method
+
 .method public static final synthetic access$getPresenceArray$p(Lkotlin/collections/builders/MapBuilder;)[I
     .locals 0
 
@@ -434,11 +448,11 @@
     return-object p0
 .end method
 
-.method public static final synthetic access$removeKeyAt(Lkotlin/collections/builders/MapBuilder;I)V
+.method public static final synthetic access$removeEntryAt(Lkotlin/collections/builders/MapBuilder;I)V
     .locals 0
 
     .line 12
-    invoke-direct {p0, p1}, Lkotlin/collections/builders/MapBuilder;->removeKeyAt(I)V
+    invoke-direct {p0, p1}, Lkotlin/collections/builders/MapBuilder;->removeEntryAt(I)V
 
     return-void
 .end method
@@ -451,14 +465,14 @@
         }
     .end annotation
 
-    .line 213
+    .line 229
     iget-object v0, p0, Lkotlin/collections/builders/MapBuilder;->valuesArray:[Ljava/lang/Object;
 
     if-eqz v0, :cond_0
 
     return-object v0
 
-    .line 215
+    .line 231
     :cond_0
     invoke-virtual {p0}, Lkotlin/collections/builders/MapBuilder;->getCapacity$kotlin_stdlib()I
 
@@ -468,7 +482,7 @@
 
     move-result-object v0
 
-    .line 216
+    .line 232
     iput-object v0, p0, Lkotlin/collections/builders/MapBuilder;->valuesArray:[Ljava/lang/Object;
 
     return-object v0
@@ -477,27 +491,27 @@
 .method private final compact()V
     .locals 5
 
-    .line 225
+    .line 241
     iget-object v0, p0, Lkotlin/collections/builders/MapBuilder;->valuesArray:[Ljava/lang/Object;
 
     const/4 v1, 0x0
 
     move v2, v1
 
-    .line 226
+    .line 242
     :goto_0
     iget v3, p0, Lkotlin/collections/builders/MapBuilder;->length:I
 
     if-ge v1, v3, :cond_2
 
-    .line 227
+    .line 243
     iget-object v3, p0, Lkotlin/collections/builders/MapBuilder;->presenceArray:[I
 
     aget v3, v3, v1
 
     if-ltz v3, :cond_1
 
-    .line 228
+    .line 244
     iget-object v3, p0, Lkotlin/collections/builders/MapBuilder;->keysArray:[Ljava/lang/Object;
 
     aget-object v4, v3, v1
@@ -506,7 +520,7 @@
 
     if-eqz v0, :cond_0
 
-    .line 229
+    .line 245
     aget-object v3, v0, v1
 
     aput-object v3, v0, v2
@@ -519,7 +533,7 @@
 
     goto :goto_0
 
-    .line 234
+    .line 250
     :cond_2
     iget-object v1, p0, Lkotlin/collections/builders/MapBuilder;->keysArray:[Ljava/lang/Object;
 
@@ -527,12 +541,12 @@
 
     if-eqz v0, :cond_3
 
-    .line 235
+    .line 251
     iget v1, p0, Lkotlin/collections/builders/MapBuilder;->length:I
 
     invoke-static {v0, v2, v1}, Lkotlin/collections/builders/ListBuilderKt;->resetRange([Ljava/lang/Object;II)V
 
-    .line 236
+    .line 252
     :cond_3
     iput v2, p0, Lkotlin/collections/builders/MapBuilder;->length:I
 
@@ -549,7 +563,7 @@
         }
     .end annotation
 
-    .line 398
+    .line 418
     invoke-virtual {p0}, Lkotlin/collections/builders/MapBuilder;->size()I
 
     move-result v0
@@ -586,33 +600,27 @@
 .method private final ensureCapacity(I)V
     .locals 2
 
-    if-ltz p1, :cond_3
+    if-ltz p1, :cond_2
 
-    .line 201
+    .line 218
     invoke-virtual {p0}, Lkotlin/collections/builders/MapBuilder;->getCapacity$kotlin_stdlib()I
 
     move-result v0
 
-    if-le p1, v0, :cond_2
+    if-le p1, v0, :cond_1
 
-    .line 202
+    .line 219
+    sget-object v0, Lkotlin/collections/AbstractList;->Companion:Lkotlin/collections/AbstractList$Companion;
+
     invoke-virtual {p0}, Lkotlin/collections/builders/MapBuilder;->getCapacity$kotlin_stdlib()I
 
-    move-result v0
+    move-result v1
 
-    mul-int/lit8 v0, v0, 0x3
+    invoke-virtual {v0, v1, p1}, Lkotlin/collections/AbstractList$Companion;->newCapacity$kotlin_stdlib(II)I
 
-    div-int/lit8 v0, v0, 0x2
+    move-result p1
 
-    if-le p1, v0, :cond_0
-
-    goto :goto_0
-
-    :cond_0
-    move p1, v0
-
-    .line 204
-    :goto_0
+    .line 220
     iget-object v0, p0, Lkotlin/collections/builders/MapBuilder;->keysArray:[Ljava/lang/Object;
 
     invoke-static {v0, p1}, Lkotlin/collections/builders/ListBuilderKt;->copyOfUninitializedElements([Ljava/lang/Object;I)[Ljava/lang/Object;
@@ -621,57 +629,57 @@
 
     iput-object v0, p0, Lkotlin/collections/builders/MapBuilder;->keysArray:[Ljava/lang/Object;
 
-    .line 205
+    .line 221
     iget-object v0, p0, Lkotlin/collections/builders/MapBuilder;->valuesArray:[Ljava/lang/Object;
 
-    if-eqz v0, :cond_1
+    if-eqz v0, :cond_0
 
     invoke-static {v0, p1}, Lkotlin/collections/builders/ListBuilderKt;->copyOfUninitializedElements([Ljava/lang/Object;I)[Ljava/lang/Object;
 
     move-result-object v0
 
-    goto :goto_1
+    goto :goto_0
 
-    :cond_1
+    :cond_0
     const/4 v0, 0x0
 
-    :goto_1
+    :goto_0
     iput-object v0, p0, Lkotlin/collections/builders/MapBuilder;->valuesArray:[Ljava/lang/Object;
 
-    .line 206
+    .line 222
     iget-object v0, p0, Lkotlin/collections/builders/MapBuilder;->presenceArray:[I
 
     invoke-static {v0, p1}, Ljava/util/Arrays;->copyOf([II)[I
 
     move-result-object v0
 
-    const-string v1, "copyOf(this, newSize)"
+    const-string v1, "copyOf(...)"
 
     invoke-static {v0, v1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
 
     iput-object v0, p0, Lkotlin/collections/builders/MapBuilder;->presenceArray:[I
 
-    .line 207
+    .line 223
     sget-object v0, Lkotlin/collections/builders/MapBuilder;->Companion:Lkotlin/collections/builders/MapBuilder$Companion;
 
     invoke-static {v0, p1}, Lkotlin/collections/builders/MapBuilder$Companion;->access$computeHashSize(Lkotlin/collections/builders/MapBuilder$Companion;I)I
 
     move-result p1
 
-    .line 208
+    .line 224
     invoke-direct {p0}, Lkotlin/collections/builders/MapBuilder;->getHashSize()I
 
     move-result v0
 
-    if-le p1, v0, :cond_2
+    if-le p1, v0, :cond_1
 
     invoke-direct {p0, p1}, Lkotlin/collections/builders/MapBuilder;->rehash(I)V
 
-    :cond_2
+    :cond_1
     return-void
 
-    .line 200
-    :cond_3
+    .line 217
+    :cond_2
     new-instance p0, Ljava/lang/OutOfMemoryError;
 
     invoke-direct {p0}, Ljava/lang/OutOfMemoryError;-><init>()V
@@ -682,14 +690,14 @@
 .method private final ensureExtraCapacity(I)V
     .locals 1
 
-    .line 184
+    .line 201
     invoke-direct {p0, p1}, Lkotlin/collections/builders/MapBuilder;->shouldCompact(I)Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
-    .line 185
+    .line 202
     invoke-direct {p0}, Lkotlin/collections/builders/MapBuilder;->getHashSize()I
 
     move-result p1
@@ -698,7 +706,7 @@
 
     goto :goto_0
 
-    .line 187
+    .line 204
     :cond_0
     iget v0, p0, Lkotlin/collections/builders/MapBuilder;->length:I
 
@@ -718,15 +726,15 @@
         }
     .end annotation
 
-    .line 273
+    .line 290
     invoke-direct {p0, p1}, Lkotlin/collections/builders/MapBuilder;->hash(Ljava/lang/Object;)I
 
     move-result v0
 
-    .line 274
+    .line 291
     iget v1, p0, Lkotlin/collections/builders/MapBuilder;->maxProbeDistance:I
 
-    .line 276
+    .line 293
     :goto_0
     iget-object v2, p0, Lkotlin/collections/builders/MapBuilder;->hashArray:[I
 
@@ -741,7 +749,7 @@
     :cond_0
     if-lez v2, :cond_1
 
-    .line 278
+    .line 295
     iget-object v4, p0, Lkotlin/collections/builders/MapBuilder;->keysArray:[Ljava/lang/Object;
 
     add-int/lit8 v2, v2, -0x1
@@ -768,7 +776,7 @@
 
     if-nez v0, :cond_3
 
-    .line 280
+    .line 297
     invoke-direct {p0}, Lkotlin/collections/builders/MapBuilder;->getHashSize()I
 
     move-result v0
@@ -791,7 +799,7 @@
         }
     .end annotation
 
-    .line 285
+    .line 302
     iget v0, p0, Lkotlin/collections/builders/MapBuilder;->length:I
 
     :cond_0
@@ -801,7 +809,7 @@
 
     if-ltz v0, :cond_1
 
-    .line 287
+    .line 304
     iget-object v1, p0, Lkotlin/collections/builders/MapBuilder;->presenceArray:[I
 
     aget v1, v1, v0
@@ -829,7 +837,7 @@
 .method private final getHashSize()I
     .locals 0
 
-    .line 177
+    .line 190
     iget-object p0, p0, Lkotlin/collections/builders/MapBuilder;->hashArray:[I
 
     array-length p0, p0
@@ -847,7 +855,7 @@
 
     if-eqz p1, :cond_0
 
-    .line 220
+    .line 236
     invoke-virtual {p1}, Ljava/lang/Object;->hashCode()I
 
     move-result p1
@@ -881,7 +889,7 @@
         }
     .end annotation
 
-    .line 431
+    .line 451
     invoke-interface {p1}, Ljava/util/Collection;->isEmpty()Z
 
     move-result v0
@@ -892,7 +900,7 @@
 
     return v1
 
-    .line 432
+    .line 452
     :cond_0
     invoke-interface {p1}, Ljava/util/Collection;->size()I
 
@@ -900,12 +908,12 @@
 
     invoke-direct {p0, v0}, Lkotlin/collections/builders/MapBuilder;->ensureExtraCapacity(I)V
 
-    .line 433
+    .line 453
     invoke-interface {p1}, Ljava/util/Collection;->iterator()Ljava/util/Iterator;
 
     move-result-object p1
 
-    .line 435
+    .line 455
     :cond_1
     :goto_0
     invoke-interface {p1}, Ljava/util/Iterator;->hasNext()Z
@@ -914,7 +922,7 @@
 
     if-eqz v0, :cond_2
 
-    .line 436
+    .line 456
     invoke-interface {p1}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
     move-result-object v0
@@ -945,7 +953,7 @@
         }
     .end annotation
 
-    .line 416
+    .line 436
     invoke-interface {p1}, Ljava/util/Map$Entry;->getKey()Ljava/lang/Object;
 
     move-result-object v0
@@ -954,7 +962,7 @@
 
     move-result v0
 
-    .line 417
+    .line 437
     invoke-direct {p0}, Lkotlin/collections/builders/MapBuilder;->allocateValuesArray()[Ljava/lang/Object;
 
     move-result-object p0
@@ -963,7 +971,7 @@
 
     if-ltz v0, :cond_0
 
-    .line 419
+    .line 439
     invoke-interface {p1}, Ljava/util/Map$Entry;->getValue()Ljava/lang/Object;
 
     move-result-object p1
@@ -977,10 +985,10 @@
 
     sub-int/2addr v0, v1
 
-    .line 422
+    .line 442
     aget-object v2, p0, v0
 
-    .line 423
+    .line 443
     invoke-interface {p1}, Ljava/util/Map$Entry;->getValue()Ljava/lang/Object;
 
     move-result-object v3
@@ -991,7 +999,7 @@
 
     if-nez v2, :cond_1
 
-    .line 424
+    .line 444
     invoke-interface {p1}, Ljava/util/Map$Entry;->getValue()Ljava/lang/Object;
 
     move-result-object p1
@@ -1009,7 +1017,7 @@
 .method private final putRehash(I)Z
     .locals 5
 
-    .line 258
+    .line 275
     iget-object v0, p0, Lkotlin/collections/builders/MapBuilder;->keysArray:[Ljava/lang/Object;
 
     aget-object v0, v0, p1
@@ -1018,10 +1026,10 @@
 
     move-result v0
 
-    .line 259
+    .line 276
     iget v1, p0, Lkotlin/collections/builders/MapBuilder;->maxProbeDistance:I
 
-    .line 261
+    .line 278
     :goto_0
     iget-object v2, p0, Lkotlin/collections/builders/MapBuilder;->hashArray:[I
 
@@ -1033,10 +1041,10 @@
 
     add-int/lit8 v1, p1, 0x1
 
-    .line 263
+    .line 280
     aput v1, v2, v0
 
-    .line 264
+    .line 281
     iget-object p0, p0, Lkotlin/collections/builders/MapBuilder;->presenceArray:[I
 
     aput v0, p0, p1
@@ -1057,7 +1065,7 @@
 
     if-nez v0, :cond_2
 
-    .line 268
+    .line 285
     invoke-direct {p0}, Lkotlin/collections/builders/MapBuilder;->getHashSize()I
 
     move-result v0
@@ -1072,10 +1080,26 @@
     goto :goto_0
 .end method
 
+.method private final registerModification()V
+    .locals 1
+
+    .line 193
+    iget v0, p0, Lkotlin/collections/builders/MapBuilder;->modCount:I
+
+    add-int/lit8 v0, v0, 0x1
+
+    iput v0, p0, Lkotlin/collections/builders/MapBuilder;->modCount:I
+
+    return-void
+.end method
+
 .method private final rehash(I)V
     .locals 2
 
-    .line 241
+    .line 257
+    invoke-direct {p0}, Lkotlin/collections/builders/MapBuilder;->registerModification()V
+
+    .line 258
     iget v0, p0, Lkotlin/collections/builders/MapBuilder;->length:I
 
     invoke-virtual {p0}, Lkotlin/collections/builders/MapBuilder;->size()I
@@ -1086,7 +1110,7 @@
 
     invoke-direct {p0}, Lkotlin/collections/builders/MapBuilder;->compact()V
 
-    .line 242
+    .line 259
     :cond_0
     invoke-direct {p0}, Lkotlin/collections/builders/MapBuilder;->getHashSize()I
 
@@ -1096,12 +1120,12 @@
 
     if-eq p1, v0, :cond_1
 
-    .line 243
+    .line 260
     new-array v0, p1, [I
 
     iput-object v0, p0, Lkotlin/collections/builders/MapBuilder;->hashArray:[I
 
-    .line 244
+    .line 261
     sget-object v0, Lkotlin/collections/builders/MapBuilder;->Companion:Lkotlin/collections/builders/MapBuilder$Companion;
 
     invoke-static {v0, p1}, Lkotlin/collections/builders/MapBuilder$Companion;->access$computeShift(Lkotlin/collections/builders/MapBuilder$Companion;I)I
@@ -1112,7 +1136,7 @@
 
     goto :goto_0
 
-    .line 246
+    .line 263
     :cond_1
     iget-object p1, p0, Lkotlin/collections/builders/MapBuilder;->hashArray:[I
 
@@ -1122,7 +1146,7 @@
 
     invoke-static {p1, v1, v1, v0}, Lkotlin/collections/ArraysKt;->fill([IIII)V
 
-    .line 249
+    .line 266
     :goto_0
     iget p1, p0, Lkotlin/collections/builders/MapBuilder;->length:I
 
@@ -1130,7 +1154,7 @@
 
     add-int/lit8 p1, v1, 0x1
 
-    .line 250
+    .line 267
     invoke-direct {p0, v1}, Lkotlin/collections/builders/MapBuilder;->putRehash(I)Z
 
     move-result v0
@@ -1141,7 +1165,7 @@
 
     goto :goto_0
 
-    .line 251
+    .line 268
     :cond_2
     new-instance p0, Ljava/lang/IllegalStateException;
 
@@ -1155,10 +1179,55 @@
     return-void
 .end method
 
+.method private final removeEntryAt(I)V
+    .locals 2
+
+    .line 354
+    iget-object v0, p0, Lkotlin/collections/builders/MapBuilder;->keysArray:[Ljava/lang/Object;
+
+    invoke-static {v0, p1}, Lkotlin/collections/builders/ListBuilderKt;->resetAt([Ljava/lang/Object;I)V
+
+    .line 355
+    iget-object v0, p0, Lkotlin/collections/builders/MapBuilder;->valuesArray:[Ljava/lang/Object;
+
+    if-eqz v0, :cond_0
+
+    invoke-static {v0, p1}, Lkotlin/collections/builders/ListBuilderKt;->resetAt([Ljava/lang/Object;I)V
+
+    .line 356
+    :cond_0
+    iget-object v0, p0, Lkotlin/collections/builders/MapBuilder;->presenceArray:[I
+
+    aget v0, v0, p1
+
+    invoke-direct {p0, v0}, Lkotlin/collections/builders/MapBuilder;->removeHashAt(I)V
+
+    .line 357
+    iget-object v0, p0, Lkotlin/collections/builders/MapBuilder;->presenceArray:[I
+
+    const/4 v1, -0x1
+
+    aput v1, v0, p1
+
+    .line 358
+    invoke-virtual {p0}, Lkotlin/collections/builders/MapBuilder;->size()I
+
+    move-result p1
+
+    add-int/2addr p1, v1
+
+    iput p1, p0, Lkotlin/collections/builders/MapBuilder;->size:I
+
+    .line 359
+    invoke-direct {p0}, Lkotlin/collections/builders/MapBuilder;->registerModification()V
+
+    return-void
+.end method
+
 .method private final removeHashAt(I)V
     .locals 9
 
-    .line 346
+    .line 366
     iget v0, p0, Lkotlin/collections/builders/MapBuilder;->maxProbeDistance:I
 
     mul-int/lit8 v0, v0, 0x2
@@ -1186,7 +1255,7 @@
 
     if-nez p1, :cond_1
 
-    .line 348
+    .line 368
     invoke-direct {p0}, Lkotlin/collections/builders/MapBuilder;->getHashSize()I
 
     move-result p1
@@ -1201,19 +1270,19 @@
     :goto_0
     add-int/lit8 v3, v3, 0x1
 
-    .line 349
+    .line 369
     iget v4, p0, Lkotlin/collections/builders/MapBuilder;->maxProbeDistance:I
 
     if-le v3, v4, :cond_2
 
-    .line 351
+    .line 371
     iget-object p0, p0, Lkotlin/collections/builders/MapBuilder;->hashArray:[I
 
     aput v1, p0, v0
 
     return-void
 
-    .line 354
+    .line 374
     :cond_2
     iget-object v4, p0, Lkotlin/collections/builders/MapBuilder;->hashArray:[I
 
@@ -1221,7 +1290,7 @@
 
     if-nez v5, :cond_3
 
-    .line 357
+    .line 377
     aput v1, v4, v0
 
     return-void
@@ -1231,7 +1300,7 @@
 
     if-gez v5, :cond_4
 
-    .line 366
+    .line 386
     aput v6, v4, v0
 
     :goto_1
@@ -1241,7 +1310,7 @@
 
     goto :goto_2
 
-    .line 370
+    .line 390
     :cond_4
     iget-object v4, p0, Lkotlin/collections/builders/MapBuilder;->keysArray:[Ljava/lang/Object;
 
@@ -1255,7 +1324,7 @@
 
     sub-int/2addr v4, p1
 
-    .line 375
+    .line 395
     invoke-direct {p0}, Lkotlin/collections/builders/MapBuilder;->getHashSize()I
 
     move-result v8
@@ -1266,12 +1335,12 @@
 
     if-lt v4, v3, :cond_5
 
-    .line 377
+    .line 397
     iget-object v3, p0, Lkotlin/collections/builders/MapBuilder;->hashArray:[I
 
     aput v5, v3, v0
 
-    .line 378
+    .line 398
     iget-object v3, p0, Lkotlin/collections/builders/MapBuilder;->presenceArray:[I
 
     aput v0, v3, v7
@@ -1284,7 +1353,7 @@
 
     if-gez v2, :cond_0
 
-    .line 386
+    .line 406
     iget-object p0, p0, Lkotlin/collections/builders/MapBuilder;->hashArray:[I
 
     aput v6, p0, v0
@@ -1292,44 +1361,10 @@
     return-void
 .end method
 
-.method private final removeKeyAt(I)V
-    .locals 2
-
-    .line 336
-    iget-object v0, p0, Lkotlin/collections/builders/MapBuilder;->keysArray:[Ljava/lang/Object;
-
-    invoke-static {v0, p1}, Lkotlin/collections/builders/ListBuilderKt;->resetAt([Ljava/lang/Object;I)V
-
-    .line 337
-    iget-object v0, p0, Lkotlin/collections/builders/MapBuilder;->presenceArray:[I
-
-    aget v0, v0, p1
-
-    invoke-direct {p0, v0}, Lkotlin/collections/builders/MapBuilder;->removeHashAt(I)V
-
-    .line 338
-    iget-object v0, p0, Lkotlin/collections/builders/MapBuilder;->presenceArray:[I
-
-    const/4 v1, -0x1
-
-    aput v1, v0, p1
-
-    .line 339
-    invoke-virtual {p0}, Lkotlin/collections/builders/MapBuilder;->size()I
-
-    move-result p1
-
-    add-int/2addr p1, v1
-
-    iput p1, p0, Lkotlin/collections/builders/MapBuilder;->size:I
-
-    return-void
-.end method
-
 .method private final shouldCompact(I)Z
     .locals 3
 
-    .line 192
+    .line 209
     invoke-virtual {p0}, Lkotlin/collections/builders/MapBuilder;->getCapacity$kotlin_stdlib()I
 
     move-result v0
@@ -1338,7 +1373,7 @@
 
     sub-int/2addr v0, v1
 
-    .line 193
+    .line 210
     invoke-virtual {p0}, Lkotlin/collections/builders/MapBuilder;->size()I
 
     move-result v2
@@ -1351,7 +1386,7 @@
 
     if-lt v0, p1, :cond_0
 
-    .line 196
+    .line 213
     invoke-virtual {p0}, Lkotlin/collections/builders/MapBuilder;->getCapacity$kotlin_stdlib()I
 
     move-result p0
@@ -1374,12 +1409,12 @@
 .method private final writeReplace()Ljava/lang/Object;
     .locals 1
 
-    .line 58
+    .line 70
     iget-boolean v0, p0, Lkotlin/collections/builders/MapBuilder;->isReadOnly:Z
 
     if-eqz v0, :cond_0
 
-    .line 59
+    .line 71
     new-instance v0, Lkotlin/collections/builders/SerializedMap;
 
     check-cast p0, Ljava/util/Map;
@@ -1388,7 +1423,7 @@
 
     return-object v0
 
-    .line 61
+    .line 73
     :cond_0
     new-instance p0, Ljava/io/NotSerializableException;
 
@@ -1409,16 +1444,16 @@
         }
     .end annotation
 
-    .line 294
+    .line 311
     invoke-virtual {p0}, Lkotlin/collections/builders/MapBuilder;->checkIsMutable$kotlin_stdlib()V
 
-    .line 296
+    .line 313
     :goto_0
     invoke-direct {p0, p1}, Lkotlin/collections/builders/MapBuilder;->hash(Ljava/lang/Object;)I
 
     move-result v0
 
-    .line 298
+    .line 315
     iget v1, p0, Lkotlin/collections/builders/MapBuilder;->maxProbeDistance:I
 
     mul-int/lit8 v1, v1, 0x2
@@ -1435,7 +1470,7 @@
 
     const/4 v2, 0x0
 
-    .line 301
+    .line 318
     :goto_1
     iget-object v3, p0, Lkotlin/collections/builders/MapBuilder;->hashArray:[I
 
@@ -1445,7 +1480,7 @@
 
     if-gtz v3, :cond_2
 
-    .line 303
+    .line 320
     iget v1, p0, Lkotlin/collections/builders/MapBuilder;->length:I
 
     invoke-virtual {p0}, Lkotlin/collections/builders/MapBuilder;->getCapacity$kotlin_stdlib()I
@@ -1454,12 +1489,12 @@
 
     if-lt v1, v3, :cond_0
 
-    .line 304
+    .line 321
     invoke-direct {p0, v4}, Lkotlin/collections/builders/MapBuilder;->ensureExtraCapacity(I)V
 
     goto :goto_0
 
-    .line 307
+    .line 324
     :cond_0
     iget v1, p0, Lkotlin/collections/builders/MapBuilder;->length:I
 
@@ -1467,22 +1502,22 @@
 
     iput v3, p0, Lkotlin/collections/builders/MapBuilder;->length:I
 
-    .line 308
+    .line 325
     iget-object v5, p0, Lkotlin/collections/builders/MapBuilder;->keysArray:[Ljava/lang/Object;
 
     aput-object p1, v5, v1
 
-    .line 309
+    .line 326
     iget-object p1, p0, Lkotlin/collections/builders/MapBuilder;->presenceArray:[I
 
     aput v0, p1, v1
 
-    .line 310
+    .line 327
     iget-object p1, p0, Lkotlin/collections/builders/MapBuilder;->hashArray:[I
 
     aput v3, p1, v0
 
-    .line 311
+    .line 328
     invoke-virtual {p0}, Lkotlin/collections/builders/MapBuilder;->size()I
 
     move-result p1
@@ -1491,7 +1526,10 @@
 
     iput p1, p0, Lkotlin/collections/builders/MapBuilder;->size:I
 
-    .line 312
+    .line 329
+    invoke-direct {p0}, Lkotlin/collections/builders/MapBuilder;->registerModification()V
+
+    .line 330
     iget p1, p0, Lkotlin/collections/builders/MapBuilder;->maxProbeDistance:I
 
     if-le v2, p1, :cond_1
@@ -1501,7 +1539,7 @@
     :cond_1
     return v1
 
-    .line 315
+    .line 333
     :cond_2
     iget-object v5, p0, Lkotlin/collections/builders/MapBuilder;->keysArray:[Ljava/lang/Object;
 
@@ -1524,7 +1562,7 @@
 
     if-le v2, v1, :cond_4
 
-    .line 319
+    .line 337
     invoke-direct {p0}, Lkotlin/collections/builders/MapBuilder;->getHashSize()I
 
     move-result v0
@@ -1540,7 +1578,7 @@
 
     if-nez v0, :cond_5
 
-    .line 322
+    .line 340
     invoke-direct {p0}, Lkotlin/collections/builders/MapBuilder;->getHashSize()I
 
     move-result v0
@@ -1565,15 +1603,15 @@
         }
     .end annotation
 
-    .line 51
+    .line 63
     invoke-virtual {p0}, Lkotlin/collections/builders/MapBuilder;->checkIsMutable$kotlin_stdlib()V
 
     const/4 v0, 0x1
 
-    .line 52
+    .line 64
     iput-boolean v0, p0, Lkotlin/collections/builders/MapBuilder;->isReadOnly:Z
 
-    .line 54
+    .line 66
     invoke-virtual {p0}, Lkotlin/collections/builders/MapBuilder;->size()I
 
     move-result v0
@@ -1598,7 +1636,7 @@
 .method public final checkIsMutable$kotlin_stdlib()V
     .locals 0
 
-    .line 180
+    .line 197
     iget-boolean p0, p0, Lkotlin/collections/builders/MapBuilder;->isReadOnly:Z
 
     if-nez p0, :cond_0
@@ -1616,78 +1654,71 @@
 .method public clear()V
     .locals 6
 
-    .line 102
+    .line 114
     invoke-virtual {p0}, Lkotlin/collections/builders/MapBuilder;->checkIsMutable$kotlin_stdlib()V
 
-    .line 104
-    new-instance v0, Lkotlin/ranges/IntRange;
+    .line 116
+    iget v0, p0, Lkotlin/collections/builders/MapBuilder;->length:I
 
-    iget v1, p0, Lkotlin/collections/builders/MapBuilder;->length:I
+    add-int/lit8 v0, v0, -0x1
 
-    add-int/lit8 v1, v1, -0x1
+    const/4 v1, 0x0
 
-    const/4 v2, 0x0
+    if-ltz v0, :cond_1
 
-    invoke-direct {v0, v2, v1}, Lkotlin/ranges/IntRange;-><init>(II)V
+    move v2, v1
 
-    invoke-virtual {v0}, Lkotlin/ranges/IntRange;->iterator()Lkotlin/collections/IntIterator;
-
-    move-result-object v0
-
-    :cond_0
+    .line 117
     :goto_0
-    invoke-virtual {v0}, Lkotlin/collections/IntIterator;->hasNext()Z
-
-    move-result v1
-
-    if-eqz v1, :cond_1
-
-    invoke-virtual {v0}, Lkotlin/collections/IntIterator;->nextInt()I
-
-    move-result v1
-
-    .line 105
     iget-object v3, p0, Lkotlin/collections/builders/MapBuilder;->presenceArray:[I
 
-    aget v4, v3, v1
+    aget v4, v3, v2
 
     if-ltz v4, :cond_0
 
-    .line 107
+    .line 119
     iget-object v5, p0, Lkotlin/collections/builders/MapBuilder;->hashArray:[I
 
-    aput v2, v5, v4
+    aput v1, v5, v4
 
     const/4 v4, -0x1
 
-    .line 108
-    aput v4, v3, v1
+    .line 120
+    aput v4, v3, v2
+
+    :cond_0
+    if-eq v2, v0, :cond_1
+
+    add-int/lit8 v2, v2, 0x1
 
     goto :goto_0
 
-    .line 111
+    .line 123
     :cond_1
     iget-object v0, p0, Lkotlin/collections/builders/MapBuilder;->keysArray:[Ljava/lang/Object;
 
-    iget v1, p0, Lkotlin/collections/builders/MapBuilder;->length:I
+    iget v2, p0, Lkotlin/collections/builders/MapBuilder;->length:I
 
-    invoke-static {v0, v2, v1}, Lkotlin/collections/builders/ListBuilderKt;->resetRange([Ljava/lang/Object;II)V
+    invoke-static {v0, v1, v2}, Lkotlin/collections/builders/ListBuilderKt;->resetRange([Ljava/lang/Object;II)V
 
-    .line 112
+    .line 124
     iget-object v0, p0, Lkotlin/collections/builders/MapBuilder;->valuesArray:[Ljava/lang/Object;
 
     if-eqz v0, :cond_2
 
-    iget v1, p0, Lkotlin/collections/builders/MapBuilder;->length:I
+    iget v2, p0, Lkotlin/collections/builders/MapBuilder;->length:I
 
-    invoke-static {v0, v2, v1}, Lkotlin/collections/builders/ListBuilderKt;->resetRange([Ljava/lang/Object;II)V
+    invoke-static {v0, v1, v2}, Lkotlin/collections/builders/ListBuilderKt;->resetRange([Ljava/lang/Object;II)V
 
-    .line 113
+    .line 125
     :cond_2
-    iput v2, p0, Lkotlin/collections/builders/MapBuilder;->size:I
+    iput v1, p0, Lkotlin/collections/builders/MapBuilder;->size:I
 
-    .line 114
-    iput v2, p0, Lkotlin/collections/builders/MapBuilder;->length:I
+    .line 126
+    iput v1, p0, Lkotlin/collections/builders/MapBuilder;->length:I
+
+    .line 127
+    invoke-direct {p0}, Lkotlin/collections/builders/MapBuilder;->registerModification()V
 
     return-void
 .end method
@@ -1706,12 +1737,12 @@
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 401
+    .line 421
     invoke-interface {p1}, Ljava/util/Collection;->iterator()Ljava/util/Iterator;
 
     move-result-object p1
 
-    .line 402
+    .line 422
     :cond_0
     invoke-interface {p1}, Ljava/util/Iterator;->hasNext()Z
 
@@ -1719,7 +1750,7 @@
 
     if-eqz v0, :cond_2
 
-    .line 403
+    .line 423
     invoke-interface {p1}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
     move-result-object v0
@@ -1728,7 +1759,7 @@
 
     if-eqz v0, :cond_1
 
-    .line 406
+    .line 426
     :try_start_0
     check-cast v0, Ljava/util/Map$Entry;
 
@@ -1766,7 +1797,7 @@
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 393
+    .line 413
     invoke-interface {p1}, Ljava/util/Map$Entry;->getKey()Ljava/lang/Object;
 
     move-result-object v0
@@ -1781,7 +1812,7 @@
 
     return p0
 
-    .line 395
+    .line 415
     :cond_0
     iget-object p0, p0, Lkotlin/collections/builders/MapBuilder;->valuesArray:[Ljava/lang/Object;
 
@@ -1803,7 +1834,7 @@
 .method public containsKey(Ljava/lang/Object;)Z
     .locals 0
 
-    .line 64
+    .line 76
     invoke-direct {p0, p1}, Lkotlin/collections/builders/MapBuilder;->findKey(Ljava/lang/Object;)I
 
     move-result p0
@@ -1824,7 +1855,7 @@
 .method public containsValue(Ljava/lang/Object;)Z
     .locals 0
 
-    .line 65
+    .line 77
     invoke-direct {p0, p1}, Lkotlin/collections/builders/MapBuilder;->findValue(Ljava/lang/Object;)I
 
     move-result p0
@@ -1852,7 +1883,7 @@
         }
     .end annotation
 
-    .line 461
+    .line 481
     new-instance v0, Lkotlin/collections/builders/MapBuilder$EntriesItr;
 
     invoke-direct {v0, p0}, Lkotlin/collections/builders/MapBuilder$EntriesItr;-><init>(Lkotlin/collections/builders/MapBuilder;)V
@@ -1884,12 +1915,12 @@
 
     if-eq p1, p0, :cond_1
 
-    .line 146
+    .line 159
     instance-of v0, p1, Ljava/util/Map;
 
     if-eqz v0, :cond_0
 
-    .line 147
+    .line 160
     check-cast p1, Ljava/util/Map;
 
     invoke-direct {p0, p1}, Lkotlin/collections/builders/MapBuilder;->contentEquals(Ljava/util/Map;)Z
@@ -1923,7 +1954,7 @@
         }
     .end annotation
 
-    .line 68
+    .line 80
     invoke-direct {p0, p1}, Lkotlin/collections/builders/MapBuilder;->findKey(Ljava/lang/Object;)I
 
     move-result p1
@@ -1934,7 +1965,7 @@
 
     return-object p0
 
-    .line 70
+    .line 82
     :cond_0
     iget-object p0, p0, Lkotlin/collections/builders/MapBuilder;->valuesArray:[Ljava/lang/Object;
 
@@ -1948,7 +1979,7 @@
 .method public final getCapacity$kotlin_stdlib()I
     .locals 0
 
-    .line 176
+    .line 189
     iget-object p0, p0, Lkotlin/collections/builders/MapBuilder;->keysArray:[Ljava/lang/Object;
 
     array-length p0, p0
@@ -1967,25 +1998,25 @@
         }
     .end annotation
 
-    .line 136
+    .line 149
     iget-object v0, p0, Lkotlin/collections/builders/MapBuilder;->entriesView:Lkotlin/collections/builders/MapBuilderEntries;
 
     if-nez v0, :cond_0
 
-    .line 138
+    .line 151
     new-instance v0, Lkotlin/collections/builders/MapBuilderEntries;
 
     invoke-direct {v0, p0}, Lkotlin/collections/builders/MapBuilderEntries;-><init>(Lkotlin/collections/builders/MapBuilder;)V
 
-    .line 139
+    .line 152
     iput-object v0, p0, Lkotlin/collections/builders/MapBuilder;->entriesView:Lkotlin/collections/builders/MapBuilderEntries;
 
-    .line 140
+    .line 153
     check-cast v0, Ljava/util/Set;
 
     return-object v0
 
-    .line 141
+    .line 154
     :cond_0
     check-cast v0, Ljava/util/Set;
 
@@ -2002,25 +2033,25 @@
         }
     .end annotation
 
-    .line 118
+    .line 131
     iget-object v0, p0, Lkotlin/collections/builders/MapBuilder;->keysView:Lkotlin/collections/builders/MapBuilderKeys;
 
     if-nez v0, :cond_0
 
-    .line 120
+    .line 133
     new-instance v0, Lkotlin/collections/builders/MapBuilderKeys;
 
     invoke-direct {v0, p0}, Lkotlin/collections/builders/MapBuilderKeys;-><init>(Lkotlin/collections/builders/MapBuilder;)V
 
-    .line 121
+    .line 134
     iput-object v0, p0, Lkotlin/collections/builders/MapBuilder;->keysView:Lkotlin/collections/builders/MapBuilderKeys;
 
-    .line 122
+    .line 135
     check-cast v0, Ljava/util/Set;
 
     goto :goto_0
 
-    .line 123
+    .line 136
     :cond_0
     check-cast v0, Ljava/util/Set;
 
@@ -2031,7 +2062,7 @@
 .method public getSize()I
     .locals 0
 
-    .line 28
+    .line 40
     iget p0, p0, Lkotlin/collections/builders/MapBuilder;->size:I
 
     return p0
@@ -2047,25 +2078,25 @@
         }
     .end annotation
 
-    .line 127
+    .line 140
     iget-object v0, p0, Lkotlin/collections/builders/MapBuilder;->valuesView:Lkotlin/collections/builders/MapBuilderValues;
 
     if-nez v0, :cond_0
 
-    .line 129
+    .line 142
     new-instance v0, Lkotlin/collections/builders/MapBuilderValues;
 
     invoke-direct {v0, p0}, Lkotlin/collections/builders/MapBuilderValues;-><init>(Lkotlin/collections/builders/MapBuilder;)V
 
-    .line 130
+    .line 143
     iput-object v0, p0, Lkotlin/collections/builders/MapBuilder;->valuesView:Lkotlin/collections/builders/MapBuilderValues;
 
-    .line 131
+    .line 144
     check-cast v0, Ljava/util/Collection;
 
     goto :goto_0
 
-    .line 132
+    .line 145
     :cond_0
     check-cast v0, Ljava/util/Collection;
 
@@ -2076,14 +2107,14 @@
 .method public hashCode()I
     .locals 2
 
-    .line 152
+    .line 165
     invoke-virtual {p0}, Lkotlin/collections/builders/MapBuilder;->entriesIterator$kotlin_stdlib()Lkotlin/collections/builders/MapBuilder$EntriesItr;
 
     move-result-object p0
 
     const/4 v0, 0x0
 
-    .line 153
+    .line 166
     :goto_0
     invoke-virtual {p0}, Lkotlin/collections/builders/MapBuilder$EntriesItr;->hasNext()Z
 
@@ -2091,7 +2122,7 @@
 
     if-eqz v1, :cond_0
 
-    .line 154
+    .line 167
     invoke-virtual {p0}, Lkotlin/collections/builders/MapBuilder$EntriesItr;->nextHashCode$kotlin_stdlib()I
 
     move-result v1
@@ -2107,7 +2138,7 @@
 .method public isEmpty()Z
     .locals 0
 
-    .line 63
+    .line 75
     invoke-virtual {p0}, Lkotlin/collections/builders/MapBuilder;->size()I
 
     move-result p0
@@ -2128,7 +2159,7 @@
 .method public final isReadOnly$kotlin_stdlib()Z
     .locals 0
 
-    .line 35
+    .line 47
     iget-boolean p0, p0, Lkotlin/collections/builders/MapBuilder;->isReadOnly:Z
 
     return p0
@@ -2162,7 +2193,7 @@
         }
     .end annotation
 
-    .line 459
+    .line 479
     new-instance v0, Lkotlin/collections/builders/MapBuilder$KeysItr;
 
     invoke-direct {v0, p0}, Lkotlin/collections/builders/MapBuilder$KeysItr;-><init>(Lkotlin/collections/builders/MapBuilder;)V
@@ -2178,15 +2209,15 @@
         }
     .end annotation
 
-    .line 74
+    .line 86
     invoke-virtual {p0}, Lkotlin/collections/builders/MapBuilder;->checkIsMutable$kotlin_stdlib()V
 
-    .line 75
+    .line 87
     invoke-virtual {p0, p1}, Lkotlin/collections/builders/MapBuilder;->addKey$kotlin_stdlib(Ljava/lang/Object;)I
 
     move-result p1
 
-    .line 76
+    .line 88
     invoke-direct {p0}, Lkotlin/collections/builders/MapBuilder;->allocateValuesArray()[Ljava/lang/Object;
 
     move-result-object p0
@@ -2197,15 +2228,15 @@
 
     add-int/lit8 p1, p1, -0x1
 
-    .line 78
+    .line 90
     aget-object v0, p0, p1
 
-    .line 79
+    .line 91
     aput-object p2, p0, p1
 
     return-object v0
 
-    .line 82
+    .line 94
     :cond_0
     aput-object p2, p0, p1
 
@@ -2228,10 +2259,10 @@
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 88
+    .line 100
     invoke-virtual {p0}, Lkotlin/collections/builders/MapBuilder;->checkIsMutable$kotlin_stdlib()V
 
-    .line 89
+    .line 101
     invoke-interface {p1}, Ljava/util/Map;->entrySet()Ljava/util/Set;
 
     move-result-object p1
@@ -2253,8 +2284,11 @@
         }
     .end annotation
 
-    .line 93
-    invoke-virtual {p0, p1}, Lkotlin/collections/builders/MapBuilder;->removeKey$kotlin_stdlib(Ljava/lang/Object;)I
+    .line 105
+    invoke-virtual {p0}, Lkotlin/collections/builders/MapBuilder;->checkIsMutable$kotlin_stdlib()V
+
+    .line 106
+    invoke-direct {p0, p1}, Lkotlin/collections/builders/MapBuilder;->findKey(Ljava/lang/Object;)I
 
     move-result p1
 
@@ -2264,17 +2298,16 @@
 
     return-object p0
 
-    .line 95
+    .line 108
     :cond_0
-    iget-object p0, p0, Lkotlin/collections/builders/MapBuilder;->valuesArray:[Ljava/lang/Object;
+    iget-object v0, p0, Lkotlin/collections/builders/MapBuilder;->valuesArray:[Ljava/lang/Object;
 
-    invoke-static {p0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;)V
+    invoke-static {v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;)V
 
-    .line 96
-    aget-object v0, p0, p1
+    aget-object v0, v0, p1
 
-    .line 97
-    invoke-static {p0, p1}, Lkotlin/collections/builders/ListBuilderKt;->resetAt([Ljava/lang/Object;I)V
+    .line 109
+    invoke-direct {p0, p1}, Lkotlin/collections/builders/MapBuilder;->removeEntryAt(I)V
 
     return-object v0
 .end method
@@ -2293,10 +2326,10 @@
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 443
+    .line 463
     invoke-virtual {p0}, Lkotlin/collections/builders/MapBuilder;->checkIsMutable$kotlin_stdlib()V
 
-    .line 444
+    .line 464
     invoke-interface {p1}, Ljava/util/Map$Entry;->getKey()Ljava/lang/Object;
 
     move-result-object v0
@@ -2311,7 +2344,7 @@
 
     return v1
 
-    .line 446
+    .line 466
     :cond_0
     iget-object v2, p0, Lkotlin/collections/builders/MapBuilder;->valuesArray:[Ljava/lang/Object;
 
@@ -2331,42 +2364,44 @@
 
     return v1
 
-    .line 447
+    .line 467
     :cond_1
-    invoke-direct {p0, v0}, Lkotlin/collections/builders/MapBuilder;->removeKeyAt(I)V
+    invoke-direct {p0, v0}, Lkotlin/collections/builders/MapBuilder;->removeEntryAt(I)V
 
     const/4 p0, 0x1
 
     return p0
 .end method
 
-.method public final removeKey$kotlin_stdlib(Ljava/lang/Object;)I
+.method public final removeKey$kotlin_stdlib(Ljava/lang/Object;)Z
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "(TK;)I"
+            "(TK;)Z"
         }
     .end annotation
 
-    .line 328
+    .line 346
     invoke-virtual {p0}, Lkotlin/collections/builders/MapBuilder;->checkIsMutable$kotlin_stdlib()V
 
-    .line 329
+    .line 347
     invoke-direct {p0, p1}, Lkotlin/collections/builders/MapBuilder;->findKey(Ljava/lang/Object;)I
 
     move-result p1
 
     if-gez p1, :cond_0
 
-    const/4 p0, -0x1
+    const/4 p0, 0x0
 
     return p0
 
-    .line 331
+    .line 349
     :cond_0
-    invoke-direct {p0, p1}, Lkotlin/collections/builders/MapBuilder;->removeKeyAt(I)V
+    invoke-direct {p0, p1}, Lkotlin/collections/builders/MapBuilder;->removeEntryAt(I)V
 
-    return p1
+    const/4 p0, 0x1
+
+    return p0
 .end method
 
 .method public final removeValue$kotlin_stdlib(Ljava/lang/Object;)Z
@@ -2377,10 +2412,10 @@
         }
     .end annotation
 
-    .line 452
+    .line 472
     invoke-virtual {p0}, Lkotlin/collections/builders/MapBuilder;->checkIsMutable$kotlin_stdlib()V
 
-    .line 453
+    .line 473
     invoke-direct {p0, p1}, Lkotlin/collections/builders/MapBuilder;->findValue(Ljava/lang/Object;)I
 
     move-result p1
@@ -2391,9 +2426,9 @@
 
     return p0
 
-    .line 455
+    .line 475
     :cond_0
-    invoke-direct {p0, p1}, Lkotlin/collections/builders/MapBuilder;->removeKeyAt(I)V
+    invoke-direct {p0, p1}, Lkotlin/collections/builders/MapBuilder;->removeEntryAt(I)V
 
     const/4 p0, 0x1
 
@@ -2414,7 +2449,7 @@
 .method public toString()Ljava/lang/String;
     .locals 3
 
-    .line 160
+    .line 173
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-virtual {p0}, Lkotlin/collections/builders/MapBuilder;->size()I
@@ -2427,19 +2462,19 @@
 
     invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(I)V
 
-    .line 161
+    .line 174
     const-string/jumbo v1, "{"
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 163
+    .line 176
     invoke-virtual {p0}, Lkotlin/collections/builders/MapBuilder;->entriesIterator$kotlin_stdlib()Lkotlin/collections/builders/MapBuilder$EntriesItr;
 
     move-result-object p0
 
     const/4 v1, 0x0
 
-    .line 164
+    .line 177
     :goto_0
     invoke-virtual {p0}, Lkotlin/collections/builders/MapBuilder$EntriesItr;->hasNext()Z
 
@@ -2449,12 +2484,12 @@
 
     if-lez v1, :cond_0
 
-    .line 165
+    .line 178
     const-string v2, ", "
 
     invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 166
+    .line 179
     :cond_0
     invoke-virtual {p0, v0}, Lkotlin/collections/builders/MapBuilder$EntriesItr;->nextAppendString(Ljava/lang/StringBuilder;)V
 
@@ -2462,18 +2497,18 @@
 
     goto :goto_0
 
-    .line 169
+    .line 182
     :cond_1
     const-string/jumbo p0, "}"
 
     invoke-virtual {v0, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 170
+    .line 183
     invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object p0
 
-    const-string v0, "sb.toString()"
+    const-string/jumbo v0, "toString(...)"
 
     invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
 
@@ -2508,7 +2543,7 @@
         }
     .end annotation
 
-    .line 460
+    .line 480
     new-instance v0, Lkotlin/collections/builders/MapBuilder$ValuesItr;
 
     invoke-direct {v0, p0}, Lkotlin/collections/builders/MapBuilder$ValuesItr;-><init>(Lkotlin/collections/builders/MapBuilder;)V

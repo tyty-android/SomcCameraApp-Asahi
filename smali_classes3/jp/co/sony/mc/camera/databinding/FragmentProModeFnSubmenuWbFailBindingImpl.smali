@@ -26,7 +26,7 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/databinding/FragmentProModeFnSubmenuWbFailBindingImpl;->sViewsWithIds:Landroid/util/SparseIntArray;
 
-    const v1, 0x7f0901b3
+    const v1, 0x7f0901b2
 
     const/4 v2, 0x1
 
@@ -47,7 +47,7 @@
     .line 19
     invoke-virtual {v0, v1, v2}, Landroid/util/SparseIntArray;->put(II)V
 
-    const v1, 0x7f090187
+    const v1, 0x7f090183
 
     const/4 v2, 0x4
 

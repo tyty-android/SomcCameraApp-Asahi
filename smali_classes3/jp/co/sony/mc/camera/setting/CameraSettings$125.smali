@@ -21,7 +21,7 @@
 .method constructor <init>()V
     .locals 0
 
-    .line 1562
+    .line 1619
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -46,13 +46,13 @@
         }
     .end annotation
 
-    .line 1566
+    .line 1623
     check-cast p1, Ljp/co/sony/mc/camera/setting/CameraSettings;
 
-    .line 1567
-    check-cast p3, Ljava/lang/Integer;
+    .line 1624
+    check-cast p3, Ljp/co/sony/mc/camera/configuration/parameters/AwbPriority;
 
-    invoke-static {p1, p3}, Ljp/co/sony/mc/camera/setting/CameraSettings;->-$$Nest$msetUiOrientation(Ljp/co/sony/mc/camera/setting/CameraSettings;Ljava/lang/Integer;)Z
+    invoke-static {p1, p3}, Ljp/co/sony/mc/camera/setting/CameraSettings;->-$$Nest$msetAwbPriority(Ljp/co/sony/mc/camera/setting/CameraSettings;Ljp/co/sony/mc/camera/configuration/parameters/AwbPriority;)Z
 
     move-result p0
 

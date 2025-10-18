@@ -53,7 +53,7 @@
 .method private constructor <init>()V
     .locals 0
 
-    .line 216
+    .line 256
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -72,14 +72,14 @@
 
     invoke-static {p2, p0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 219
+    .line 259
     sget-object p0, Lkotlin/io/path/LinkFollowing;->INSTANCE:Lkotlin/io/path/LinkFollowing;
 
     invoke-virtual {p0, p3}, Lkotlin/io/path/LinkFollowing;->toLinkOptions(Z)[Ljava/nio/file/LinkOption;
 
     move-result-object p0
 
-    .line 220
+    .line 260
     array-length p3, p0
 
     invoke-static {p0, p3}, Ljava/util/Arrays;->copyOf([Ljava/lang/Object;I)[Ljava/lang/Object;
@@ -106,11 +106,11 @@
 
     new-array v0, p3, [Ljava/nio/file/LinkOption;
 
-    sget-object v1, Ljava/nio/file/LinkOption;->NOFOLLOW_LINKS:Ljava/nio/file/LinkOption;
+    const/4 v1, 0x0
 
-    const/4 v2, 0x0
+    sget-object v2, Ljava/nio/file/LinkOption;->NOFOLLOW_LINKS:Ljava/nio/file/LinkOption;
 
-    aput-object v1, v0, v2
+    aput-object v2, v0, v1
 
     invoke-static {v0, p3}, Ljava/util/Arrays;->copyOf([Ljava/lang/Object;I)[Ljava/lang/Object;
 
@@ -124,7 +124,7 @@
 
     if-nez p3, :cond_1
 
-    .line 223
+    .line 263
     :cond_0
     array-length p3, p0
 
@@ -146,11 +146,11 @@
 
     move-result-object p0
 
-    const-string p1, "copy(this, target, *options)"
+    const-string p1, "copy(...)"
 
     invoke-static {p0, p1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 226
+    .line 266
     :cond_1
     sget-object p0, Lkotlin/io/path/CopyActionResult;->CONTINUE:Lkotlin/io/path/CopyActionResult;
 

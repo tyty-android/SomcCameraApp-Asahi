@@ -1,6 +1,6 @@
 .class final Landroidx/compose/ui/tooling/preview/datasource/LoremIpsum$generateLoremIpsum$1;
 .super Lkotlin/jvm/internal/Lambda;
-.source "LoremIpsum.kt"
+.source "LoremIpsum.android.kt"
 
 # interfaces
 .implements Lkotlin/jvm/functions/Function0;
@@ -82,7 +82,7 @@
     .locals 4
 
     .line 61
-    invoke-static {}, Landroidx/compose/ui/tooling/preview/datasource/LoremIpsumKt;->access$getLOREM_IPSUM_SOURCE$p()Ljava/util/List;
+    invoke-static {}, Landroidx/compose/ui/tooling/preview/datasource/LoremIpsum_androidKt;->access$getLOREM_IPSUM_SOURCE$p()Ljava/util/List;
 
     move-result-object v0
 

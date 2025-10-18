@@ -57,7 +57,7 @@
 .method constructor <init>()V
     .locals 0
 
-    .line 137
+    .line 138
     invoke-direct {p0}, Landroidx/compose/ui/node/ModifierNodeElement;-><init>()V
 
     return-void
@@ -68,7 +68,7 @@
 .method public create()Landroidx/compose/foundation/FocusableInNonTouchMode;
     .locals 0
 
-    .line 138
+    .line 139
     new-instance p0, Landroidx/compose/foundation/FocusableInNonTouchMode;
 
     invoke-direct {p0}, Landroidx/compose/foundation/FocusableInNonTouchMode;-><init>()V
@@ -79,7 +79,7 @@
 .method public bridge synthetic create()Landroidx/compose/ui/Modifier$Node;
     .locals 0
 
-    .line 137
+    .line 138
     invoke-virtual {p0}, Landroidx/compose/foundation/FocusableKt$FocusableInNonTouchModeElement$1;->create()Landroidx/compose/foundation/FocusableInNonTouchMode;
 
     move-result-object p0
@@ -108,7 +108,7 @@
 .method public hashCode()I
     .locals 0
 
-    .line 142
+    .line 143
     invoke-static {p0}, Ljava/lang/System;->identityHashCode(Ljava/lang/Object;)I
 
     move-result p0
@@ -119,11 +119,7 @@
 .method public inspectableProperties(Landroidx/compose/ui/platform/InspectorInfo;)V
     .locals 0
 
-    const-string p0, "<this>"
-
-    invoke-static {p1, p0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 147
+    .line 148
     const-string p0, "focusableInNonTouchMode"
 
     invoke-virtual {p1, p0}, Landroidx/compose/ui/platform/InspectorInfo;->setName(Ljava/lang/String;)V
@@ -134,17 +130,13 @@
 .method public update(Landroidx/compose/foundation/FocusableInNonTouchMode;)V
     .locals 0
 
-    const-string p0, "node"
-
-    invoke-static {p1, p0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
     return-void
 .end method
 
 .method public bridge synthetic update(Landroidx/compose/ui/Modifier$Node;)V
     .locals 0
 
-    .line 137
+    .line 138
     check-cast p1, Landroidx/compose/foundation/FocusableInNonTouchMode;
 
     invoke-virtual {p0, p1}, Landroidx/compose/foundation/FocusableKt$FocusableInNonTouchModeElement$1;->update(Landroidx/compose/foundation/FocusableInNonTouchMode;)V

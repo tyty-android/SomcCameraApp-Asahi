@@ -21,7 +21,7 @@
 .method constructor <init>()V
     .locals 0
 
-    .line 572
+    .line 575
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -42,10 +42,10 @@
         }
     .end annotation
 
-    .line 576
+    .line 579
     check-cast p1, Ljp/co/sony/mc/camera/setting/CommonSettings;
 
-    .line 577
+    .line 580
     invoke-virtual {p1}, Ljp/co/sony/mc/camera/setting/CommonSettings;->getLastBackVideoFps()Ljp/co/sony/mc/camera/configuration/parameters/LastBackVideoFps;
 
     move-result-object p0

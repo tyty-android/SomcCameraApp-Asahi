@@ -201,19 +201,23 @@
 .end method
 
 .method public onBackPressed()V
-    .locals 2
+    .locals 4
 
     .line 104
     sget-boolean v0, Ljp/co/sony/mc/camera/util/CamLog;->VERBOSE:Z
 
+    const/4 v1, 0x1
+
     if-eqz v0, :cond_0
 
     .line 105
-    const-string v0, "invoked"
+    new-array v0, v1, [Ljava/lang/String;
 
-    filled-new-array {v0}, [Ljava/lang/String;
+    const/4 v2, 0x0
 
-    move-result-object v0
+    const-string v3, "invoked"
+
+    aput-object v3, v0, v2
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
@@ -226,8 +230,6 @@
     invoke-virtual {v0}, Landroidx/fragment/app/FragmentManager;->getBackStackEntryCount()I
 
     move-result v0
-
-    const/4 v1, 0x1
 
     if-le v0, v1, :cond_1
 

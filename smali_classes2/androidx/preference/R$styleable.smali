@@ -301,7 +301,7 @@
 
     const v0, 0x101030e
 
-    const v1, 0x7f0403f1
+    const v1, 0x7f040400
 
     filled-new-array {v0, v1}, [I
 
@@ -325,7 +325,7 @@
 
     sput-object v0, Landroidx/preference/R$styleable;->DialogPreference:[I
 
-    const v0, 0x7f04051a
+    const v0, 0x7f04052d
 
     filled-new-array {v0}, [I
 
@@ -337,9 +337,9 @@
 
     const v2, 0x10101f8
 
-    const v3, 0x7f0401ca
+    const v3, 0x7f0401d3
 
-    const v4, 0x7f0401cb
+    const v4, 0x7f0401d4
 
     filled-new-array {v1, v2, v3, v4, v0}, [I
 
@@ -367,7 +367,7 @@
 
     const v2, 0x101012a
 
-    const v3, 0x7f040032
+    const v3, 0x7f040033
 
     filled-new-array {v0, v1, v2, v3}, [I
 
@@ -381,9 +381,9 @@
 
     sput-object v0, Landroidx/preference/R$styleable;->PreferenceFragmentCompat:[I
 
-    const v0, 0x7f040264
+    const v0, 0x7f04026e
 
-    const v1, 0x7f04038a
+    const v1, 0x7f040399
 
     const v2, 0x10101e7
 
@@ -393,9 +393,9 @@
 
     sput-object v0, Landroidx/preference/R$styleable;->PreferenceGroup:[I
 
-    const v0, 0x7f040330
+    const v0, 0x7f04033e
 
-    const v1, 0x7f040334
+    const v1, 0x7f040343
 
     const v2, 0x101011f
 
@@ -444,9 +444,9 @@
         0x10101ef
         0x10101f0
         0x10101f1
-        0x7f040194
-        0x7f040455
-        0x7f040456
+        0x7f04019c
+        0x7f040464
+        0x7f040465
     .end array-data
 
     :array_1
@@ -457,12 +457,12 @@
         0x10101f5
         0x10101f6
         0x10101f7
-        0x7f04018d
-        0x7f04018e
-        0x7f04018f
-        0x7f040193
-        0x7f04037b
-        0x7f0403b3
+        0x7f040195
+        0x7f040196
+        0x7f040197
+        0x7f04019b
+        0x7f04038a
+        0x7f0403c3
     .end array-data
 
     :array_2
@@ -483,58 +483,58 @@
         0x10102e3
         0x101055c
         0x1010561
-        0x7f040031
-        0x7f040033
-        0x7f040187
-        0x7f04018a
-        0x7f0401bc
-        0x7f0401be
-        0x7f04022c
-        0x7f040248
-        0x7f04024d
-        0x7f04026b
-        0x7f040289
-        0x7f040293
-        0x7f040389
-        0x7f0403a7
-        0x7f0403f0
-        0x7f040404
-        0x7f040418
-        0x7f040454
-        0x7f0404e0
-        0x7f04052c
+        0x7f040032
+        0x7f040034
+        0x7f04018f
+        0x7f040192
+        0x7f0401c5
+        0x7f0401c7
+        0x7f040235
+        0x7f040251
+        0x7f040256
+        0x7f040275
+        0x7f040294
+        0x7f04029f
+        0x7f040398
+        0x7f0403b7
+        0x7f0403ff
+        0x7f040412
+        0x7f040427
+        0x7f040463
+        0x7f0404f3
+        0x7f04053f
     .end array-data
 
     :array_3
     .array-data 4
-        0x7f0400c0
-        0x7f040190
-        0x7f0401b0
-        0x7f0401b5
-        0x7f0403b4
-        0x7f0403b5
-        0x7f0403b6
-        0x7f0403b8
-        0x7f0403b9
-        0x7f0403ba
-        0x7f0403bb
-        0x7f0403bc
-        0x7f0403bd
-        0x7f0403be
-        0x7f0403ee
-        0x7f040459
-        0x7f04045a
+        0x7f0400c6
+        0x7f040198
+        0x7f0401b9
+        0x7f0401be
+        0x7f0403c4
+        0x7f0403c5
+        0x7f0403c6
+        0x7f0403c7
+        0x7f0403c8
+        0x7f0403c9
+        0x7f0403ca
+        0x7f0403cb
+        0x7f0403cc
+        0x7f0403cd
+        0x7f0403fd
+        0x7f040468
+        0x7f040469
     .end array-data
 
     :array_4
     .array-data 4
         0x10100f2
         0x1010136
-        0x7f04002c
-        0x7f04033a
-        0x7f0403ed
-        0x7f04040c
-        0x7f040516
+        0x7f04002d
+        0x7f040349
+        0x7f0403fc
+        0x7f04041b
+        0x7f040529
     .end array-data
 
     :array_5
@@ -544,11 +544,11 @@
         0x10101f1
         0x101036b
         0x101036c
-        0x7f040194
-        0x7f040455
-        0x7f040456
-        0x7f04045d
-        0x7f04045e
+        0x7f04019c
+        0x7f040464
+        0x7f040465
+        0x7f04046c
+        0x7f04046d
     .end array-data
 
     :array_6
@@ -558,11 +558,11 @@
         0x10101f1
         0x101036b
         0x101036c
-        0x7f040194
-        0x7f040455
-        0x7f040456
-        0x7f04045d
-        0x7f04045e
+        0x7f04019c
+        0x7f040464
+        0x7f040465
+        0x7f04046c
+        0x7f04046d
     .end array-data
 .end method
 

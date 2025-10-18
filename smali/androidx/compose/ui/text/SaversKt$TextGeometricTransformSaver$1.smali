@@ -81,22 +81,22 @@
 .method public final invoke(Landroidx/compose/runtime/saveable/SaverScope;Landroidx/compose/ui/text/style/TextGeometricTransform;)Ljava/lang/Object;
     .locals 1
 
-    const-string p0, "$this$Saver"
+    const/4 p0, 0x2
 
-    invoke-static {p1, p0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+    .line 294
+    new-array p0, p0, [Ljava/lang/Float;
 
-    const-string p0, "it"
-
-    invoke-static {p2, p0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 273
     invoke-virtual {p2}, Landroidx/compose/ui/text/style/TextGeometricTransform;->getScaleX()F
 
-    move-result p0
+    move-result p1
 
-    invoke-static {p0}, Ljava/lang/Float;->valueOf(F)Ljava/lang/Float;
+    invoke-static {p1}, Ljava/lang/Float;->valueOf(F)Ljava/lang/Float;
 
-    move-result-object p0
+    move-result-object p1
+
+    const/4 v0, 0x0
+
+    aput-object p1, p0, v0
 
     invoke-virtual {p2}, Landroidx/compose/ui/text/style/TextGeometricTransform;->getSkewX()F
 
@@ -106,19 +106,11 @@
 
     move-result-object p1
 
-    const/4 p2, 0x2
+    const/4 p2, 0x1
 
-    new-array p2, p2, [Ljava/lang/Float;
+    aput-object p1, p0, p2
 
-    const/4 v0, 0x0
-
-    aput-object p0, p2, v0
-
-    const/4 p0, 0x1
-
-    aput-object p1, p2, p0
-
-    invoke-static {p2}, Lkotlin/collections/CollectionsKt;->arrayListOf([Ljava/lang/Object;)Ljava/util/ArrayList;
+    invoke-static {p0}, Lkotlin/collections/CollectionsKt;->arrayListOf([Ljava/lang/Object;)Ljava/util/ArrayList;
 
     move-result-object p0
 
@@ -128,7 +120,7 @@
 .method public bridge synthetic invoke(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
 
-    .line 272
+    .line 293
     check-cast p1, Landroidx/compose/runtime/saveable/SaverScope;
 
     check-cast p2, Landroidx/compose/ui/text/style/TextGeometricTransform;

@@ -22,7 +22,7 @@
 .method constructor <init>(Lcom/google/android/material/sidesheet/SideSheetBehavior;)V
     .locals 0
 
-    .line 694
+    .line 794
     iput-object p1, p0, Lcom/google/android/material/sidesheet/SideSheetBehavior$1;->this$0:Lcom/google/android/material/sidesheet/SideSheetBehavior;
 
     invoke-direct {p0}, Landroidx/customview/widget/ViewDragHelper$Callback;-><init>()V
@@ -35,19 +35,30 @@
 .method public clampViewPositionHorizontal(Landroid/view/View;II)I
     .locals 0
 
-    .line 743
+    .line 842
     iget-object p1, p0, Lcom/google/android/material/sidesheet/SideSheetBehavior$1;->this$0:Lcom/google/android/material/sidesheet/SideSheetBehavior;
 
-    invoke-virtual {p1}, Lcom/google/android/material/sidesheet/SideSheetBehavior;->getExpandedOffset()I
+    .line 844
+    invoke-static {p1}, Lcom/google/android/material/sidesheet/SideSheetBehavior;->access$200(Lcom/google/android/material/sidesheet/SideSheetBehavior;)Lcom/google/android/material/sidesheet/SheetDelegate;
+
+    move-result-object p1
+
+    invoke-virtual {p1}, Lcom/google/android/material/sidesheet/SheetDelegate;->getMinViewPositionHorizontal()I
 
     move-result p1
 
     iget-object p0, p0, Lcom/google/android/material/sidesheet/SideSheetBehavior$1;->this$0:Lcom/google/android/material/sidesheet/SideSheetBehavior;
 
-    invoke-static {p0}, Lcom/google/android/material/sidesheet/SideSheetBehavior;->access$600(Lcom/google/android/material/sidesheet/SideSheetBehavior;)I
+    .line 845
+    invoke-static {p0}, Lcom/google/android/material/sidesheet/SideSheetBehavior;->access$200(Lcom/google/android/material/sidesheet/SideSheetBehavior;)Lcom/google/android/material/sidesheet/SheetDelegate;
+
+    move-result-object p0
+
+    invoke-virtual {p0}, Lcom/google/android/material/sidesheet/SheetDelegate;->getMaxViewPositionHorizontal()I
 
     move-result p0
 
+    .line 842
     invoke-static {p2, p1, p0}, Landroidx/core/math/MathUtils;->clamp(III)I
 
     move-result p0
@@ -58,7 +69,7 @@
 .method public clampViewPositionVertical(Landroid/view/View;II)I
     .locals 0
 
-    .line 738
+    .line 837
     invoke-virtual {p1}, Landroid/view/View;->getTop()I
 
     move-result p0
@@ -69,14 +80,22 @@
 .method public getViewHorizontalDragRange(Landroid/view/View;)I
     .locals 0
 
-    .line 748
+    .line 850
+    iget-object p1, p0, Lcom/google/android/material/sidesheet/SideSheetBehavior$1;->this$0:Lcom/google/android/material/sidesheet/SideSheetBehavior;
+
+    invoke-static {p1}, Lcom/google/android/material/sidesheet/SideSheetBehavior;->access$700(Lcom/google/android/material/sidesheet/SideSheetBehavior;)I
+
+    move-result p1
+
     iget-object p0, p0, Lcom/google/android/material/sidesheet/SideSheetBehavior$1;->this$0:Lcom/google/android/material/sidesheet/SideSheetBehavior;
 
-    invoke-static {p0}, Lcom/google/android/material/sidesheet/SideSheetBehavior;->access$600(Lcom/google/android/material/sidesheet/SideSheetBehavior;)I
+    invoke-virtual {p0}, Lcom/google/android/material/sidesheet/SideSheetBehavior;->getInnerMargin()I
 
     move-result p0
 
-    return p0
+    add-int/2addr p1, p0
+
+    return p1
 .end method
 
 .method public onViewDragStateChanged(I)V
@@ -86,7 +105,7 @@
 
     if-ne p1, v0, :cond_0
 
-    .line 723
+    .line 823
     iget-object p1, p0, Lcom/google/android/material/sidesheet/SideSheetBehavior$1;->this$0:Lcom/google/android/material/sidesheet/SideSheetBehavior;
 
     invoke-static {p1}, Lcom/google/android/material/sidesheet/SideSheetBehavior;->access$400(Lcom/google/android/material/sidesheet/SideSheetBehavior;)Z
@@ -95,7 +114,7 @@
 
     if-eqz p1, :cond_0
 
-    .line 724
+    .line 824
     iget-object p0, p0, Lcom/google/android/material/sidesheet/SideSheetBehavior$1;->this$0:Lcom/google/android/material/sidesheet/SideSheetBehavior;
 
     invoke-virtual {p0, v0}, Lcom/google/android/material/sidesheet/SideSheetBehavior;->setStateInternal(I)V
@@ -107,7 +126,7 @@
 .method public onViewPositionChanged(Landroid/view/View;IIII)V
     .locals 2
 
-    .line 707
+    .line 807
     iget-object p3, p0, Lcom/google/android/material/sidesheet/SideSheetBehavior$1;->this$0:Lcom/google/android/material/sidesheet/SideSheetBehavior;
 
     invoke-virtual {p3}, Lcom/google/android/material/sidesheet/SideSheetBehavior;->getCoplanarSiblingView()Landroid/view/View;
@@ -116,7 +135,7 @@
 
     if-eqz p3, :cond_0
 
-    .line 710
+    .line 810
     invoke-virtual {p3}, Landroid/view/View;->getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
 
     move-result-object p4
@@ -125,14 +144,14 @@
 
     if-eqz p4, :cond_0
 
-    .line 712
+    .line 812
     iget-object p5, p0, Lcom/google/android/material/sidesheet/SideSheetBehavior$1;->this$0:Lcom/google/android/material/sidesheet/SideSheetBehavior;
 
     invoke-static {p5}, Lcom/google/android/material/sidesheet/SideSheetBehavior;->access$200(Lcom/google/android/material/sidesheet/SideSheetBehavior;)Lcom/google/android/material/sidesheet/SheetDelegate;
 
     move-result-object p5
 
-    .line 713
+    .line 813
     invoke-virtual {p1}, Landroid/view/View;->getLeft()I
 
     move-result v0
@@ -141,13 +160,13 @@
 
     move-result v1
 
-    .line 712
+    .line 812
     invoke-virtual {p5, p4, v0, v1}, Lcom/google/android/material/sidesheet/SheetDelegate;->updateCoplanarSiblingLayoutParams(Landroid/view/ViewGroup$MarginLayoutParams;II)V
 
-    .line 714
+    .line 814
     invoke-virtual {p3, p4}, Landroid/view/View;->setLayoutParams(Landroid/view/ViewGroup$LayoutParams;)V
 
-    .line 718
+    .line 818
     :cond_0
     iget-object p0, p0, Lcom/google/android/material/sidesheet/SideSheetBehavior$1;->this$0:Lcom/google/android/material/sidesheet/SideSheetBehavior;
 
@@ -159,26 +178,21 @@
 .method public onViewReleased(Landroid/view/View;FF)V
     .locals 1
 
-    .line 731
+    .line 831
     iget-object v0, p0, Lcom/google/android/material/sidesheet/SideSheetBehavior$1;->this$0:Lcom/google/android/material/sidesheet/SideSheetBehavior;
 
-    .line 732
-    invoke-static {v0}, Lcom/google/android/material/sidesheet/SideSheetBehavior;->access$200(Lcom/google/android/material/sidesheet/SideSheetBehavior;)Lcom/google/android/material/sidesheet/SheetDelegate;
-
-    move-result-object v0
-
-    invoke-virtual {v0, p1, p2, p3}, Lcom/google/android/material/sidesheet/SheetDelegate;->calculateTargetStateOnViewReleased(Landroid/view/View;FF)I
+    invoke-static {v0, p1, p2, p3}, Lcom/google/android/material/sidesheet/SideSheetBehavior;->access$500(Lcom/google/android/material/sidesheet/SideSheetBehavior;Landroid/view/View;FF)I
 
     move-result p2
 
-    .line 733
+    .line 832
     iget-object p0, p0, Lcom/google/android/material/sidesheet/SideSheetBehavior$1;->this$0:Lcom/google/android/material/sidesheet/SideSheetBehavior;
 
     invoke-virtual {p0}, Lcom/google/android/material/sidesheet/SideSheetBehavior;->shouldSkipSmoothAnimation()Z
 
     move-result p3
 
-    invoke-static {p0, p1, p2, p3}, Lcom/google/android/material/sidesheet/SideSheetBehavior;->access$500(Lcom/google/android/material/sidesheet/SideSheetBehavior;Landroid/view/View;IZ)V
+    invoke-static {p0, p1, p2, p3}, Lcom/google/android/material/sidesheet/SideSheetBehavior;->access$600(Lcom/google/android/material/sidesheet/SideSheetBehavior;Landroid/view/View;IZ)V
 
     return-void
 .end method
@@ -186,7 +200,7 @@
 .method public tryCaptureView(Landroid/view/View;I)Z
     .locals 2
 
-    .line 698
+    .line 798
     iget-object p2, p0, Lcom/google/android/material/sidesheet/SideSheetBehavior$1;->this$0:Lcom/google/android/material/sidesheet/SideSheetBehavior;
 
     invoke-static {p2}, Lcom/google/android/material/sidesheet/SideSheetBehavior;->access$000(Lcom/google/android/material/sidesheet/SideSheetBehavior;)I
@@ -201,7 +215,7 @@
 
     return v0
 
-    .line 701
+    .line 801
     :cond_0
     iget-object p2, p0, Lcom/google/android/material/sidesheet/SideSheetBehavior$1;->this$0:Lcom/google/android/material/sidesheet/SideSheetBehavior;
 

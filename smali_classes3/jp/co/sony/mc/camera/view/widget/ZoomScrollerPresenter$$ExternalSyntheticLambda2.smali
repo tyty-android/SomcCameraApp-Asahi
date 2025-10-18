@@ -3,48 +3,34 @@
 .source "D8$$SyntheticClass"
 
 # interfaces
-.implements Landroid/view/View$OnTouchListener;
-
-
-# instance fields
-.field public final synthetic f$0:Lkotlin/jvm/internal/Ref$FloatRef;
-
-.field public final synthetic f$1:Ljp/co/sony/mc/camera/view/widget/ZoomScrollerPresenter;
-
-.field public final synthetic f$2:I
+.implements Lkotlin/jvm/functions/Function3;
 
 
 # direct methods
-.method public synthetic constructor <init>(Lkotlin/jvm/internal/Ref$FloatRef;Ljp/co/sony/mc/camera/view/widget/ZoomScrollerPresenter;I)V
+.method public synthetic constructor <init>()V
     .locals 0
 
     .line 0
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    iput-object p1, p0, Ljp/co/sony/mc/camera/view/widget/ZoomScrollerPresenter$$ExternalSyntheticLambda2;->f$0:Lkotlin/jvm/internal/Ref$FloatRef;
-
-    iput-object p2, p0, Ljp/co/sony/mc/camera/view/widget/ZoomScrollerPresenter$$ExternalSyntheticLambda2;->f$1:Ljp/co/sony/mc/camera/view/widget/ZoomScrollerPresenter;
-
-    iput p3, p0, Ljp/co/sony/mc/camera/view/widget/ZoomScrollerPresenter$$ExternalSyntheticLambda2;->f$2:I
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final onTouch(Landroid/view/View;Landroid/view/MotionEvent;)Z
-    .locals 2
+.method public final invoke(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 0
 
     .line 0
-    iget-object v0, p0, Ljp/co/sony/mc/camera/view/widget/ZoomScrollerPresenter$$ExternalSyntheticLambda2;->f$0:Lkotlin/jvm/internal/Ref$FloatRef;
+    check-cast p1, Ljp/co/sony/mc/camera/configuration/parameters/MacroMode;
 
-    iget-object v1, p0, Ljp/co/sony/mc/camera/view/widget/ZoomScrollerPresenter$$ExternalSyntheticLambda2;->f$1:Ljp/co/sony/mc/camera/view/widget/ZoomScrollerPresenter;
+    check-cast p2, Ljava/lang/Boolean;
 
-    iget p0, p0, Ljp/co/sony/mc/camera/view/widget/ZoomScrollerPresenter$$ExternalSyntheticLambda2;->f$2:I
+    check-cast p3, Ljava/lang/Float;
 
-    invoke-static {v0, v1, p0, p1, p2}, Ljp/co/sony/mc/camera/view/widget/ZoomScrollerPresenter;->$r8$lambda$QHFdZQivHQZgSWUYVK2dXU27UU4(Lkotlin/jvm/internal/Ref$FloatRef;Ljp/co/sony/mc/camera/view/widget/ZoomScrollerPresenter;ILandroid/view/View;Landroid/view/MotionEvent;)Z
+    invoke-static {p1, p2, p3}, Ljp/co/sony/mc/camera/view/widget/ZoomScrollerPresenter;->$r8$lambda$0hiZOBq_OlRHg_p8R5_iAITeGYo(Ljp/co/sony/mc/camera/configuration/parameters/MacroMode;Ljava/lang/Boolean;Ljava/lang/Float;)Lkotlin/Triple;
 
-    move-result p0
+    move-result-object p0
 
-    return p0
+    return-object p0
 .end method

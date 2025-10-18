@@ -19,5 +19,4 @@
     <string name="camera_strings_runtime_permission_rationale_network_cta_txt">"此应用程序使用无线局域网和移动数据将用户数据（即，录制的图片/视频、语音数据、所用服务的帐户信息等）发送至互联网。
 请注意，可能会产生数据使用费用，具体取决于您的网络运营商或互联网服务提供商合同。"</string>
     <string name="camera_strings_streaming_error_wifi_disconnected_txt">无 WLAN 连接</string>
-    <string name="mv_wireless_network_txt">使用WLAN和移动数据</string>
 </resources>

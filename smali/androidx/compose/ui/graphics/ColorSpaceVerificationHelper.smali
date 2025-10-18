@@ -101,10 +101,6 @@
 
     move-object/from16 v0, p0
 
-    const-string v1, "<this>"
-
-    invoke-static {v0, v1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
     .line 55
     sget-object v1, Landroidx/compose/ui/graphics/colorspace/ColorSpaces;->INSTANCE:Landroidx/compose/ui/graphics/colorspace/ColorSpaces;
 
@@ -124,11 +120,7 @@
 
     move-result-object v0
 
-    const-string v1, "get(android.graphics.ColorSpace.Named.SRGB)"
-
-    invoke-static {v0, v1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
-
-    goto/16 :goto_3
+    goto/16 :goto_2
 
     .line 56
     :cond_0
@@ -150,11 +142,7 @@
 
     move-result-object v0
 
-    const-string v1, "get(android.graphics.ColorSpace.Named.ACES)"
-
-    invoke-static {v0, v1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
-
-    goto/16 :goto_3
+    goto/16 :goto_2
 
     .line 57
     :cond_1
@@ -176,11 +164,7 @@
 
     move-result-object v0
 
-    const-string v1, "get(android.graphics.ColorSpace.Named.ACESCG)"
-
-    invoke-static {v0, v1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
-
-    goto/16 :goto_3
+    goto/16 :goto_2
 
     .line 58
     :cond_2
@@ -202,11 +186,7 @@
 
     move-result-object v0
 
-    const-string v1, "get(android.graphics.ColorSpace.Named.ADOBE_RGB)"
-
-    invoke-static {v0, v1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
-
-    goto/16 :goto_3
+    goto/16 :goto_2
 
     .line 59
     :cond_3
@@ -228,11 +208,7 @@
 
     move-result-object v0
 
-    const-string v1, "get(android.graphics.ColorSpace.Named.BT2020)"
-
-    invoke-static {v0, v1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
-
-    goto/16 :goto_3
+    goto/16 :goto_2
 
     .line 60
     :cond_4
@@ -254,11 +230,7 @@
 
     move-result-object v0
 
-    const-string v1, "get(android.graphics.ColorSpace.Named.BT709)"
-
-    invoke-static {v0, v1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
-
-    goto/16 :goto_3
+    goto/16 :goto_2
 
     .line 61
     :cond_5
@@ -280,11 +252,7 @@
 
     move-result-object v0
 
-    const-string v1, "get(android.graphics.ColorSpace.Named.CIE_LAB)"
-
-    invoke-static {v0, v1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
-
-    goto/16 :goto_3
+    goto/16 :goto_2
 
     .line 62
     :cond_6
@@ -306,11 +274,7 @@
 
     move-result-object v0
 
-    const-string v1, "get(android.graphics.ColorSpace.Named.CIE_XYZ)"
-
-    invoke-static {v0, v1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
-
-    goto/16 :goto_3
+    goto/16 :goto_2
 
     .line 63
     :cond_7
@@ -332,11 +296,7 @@
 
     move-result-object v0
 
-    const-string v1, "get(android.graphics.ColorSpace.Named.DCI_P3)"
-
-    invoke-static {v0, v1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
-
-    goto/16 :goto_3
+    goto/16 :goto_2
 
     .line 64
     :cond_8
@@ -358,11 +318,7 @@
 
     move-result-object v0
 
-    const-string v1, "get(android.graphics.ColorSpace.Named.DISPLAY_P3)"
-
-    invoke-static {v0, v1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
-
-    goto/16 :goto_3
+    goto/16 :goto_2
 
     .line 65
     :cond_9
@@ -384,11 +340,7 @@
 
     move-result-object v0
 
-    const-string v1, "get(android.graphics.Col\u2026pace.Named.EXTENDED_SRGB)"
-
-    invoke-static {v0, v1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
-
-    goto/16 :goto_3
+    goto/16 :goto_2
 
     .line 66
     :cond_a
@@ -411,11 +363,7 @@
 
     move-result-object v0
 
-    const-string v1, "get(android.graphics.Col\u2026med.LINEAR_EXTENDED_SRGB)"
-
-    invoke-static {v0, v1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
-
-    goto/16 :goto_3
+    goto/16 :goto_2
 
     .line 68
     :cond_b
@@ -437,11 +385,7 @@
 
     move-result-object v0
 
-    const-string v1, "get(android.graphics.ColorSpace.Named.LINEAR_SRGB)"
-
-    invoke-static {v0, v1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
-
-    goto/16 :goto_3
+    goto/16 :goto_2
 
     .line 69
     :cond_c
@@ -463,11 +407,7 @@
 
     move-result-object v0
 
-    const-string v1, "get(android.graphics.ColorSpace.Named.NTSC_1953)"
-
-    invoke-static {v0, v1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
-
-    goto/16 :goto_3
+    goto/16 :goto_2
 
     .line 70
     :cond_d
@@ -489,11 +429,7 @@
 
     move-result-object v0
 
-    const-string v1, "get(android.graphics.Col\u2026pace.Named.PRO_PHOTO_RGB)"
-
-    invoke-static {v0, v1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
-
-    goto/16 :goto_3
+    goto/16 :goto_2
 
     .line 71
     :cond_e
@@ -515,11 +451,7 @@
 
     move-result-object v0
 
-    const-string v1, "get(android.graphics.ColorSpace.Named.SMPTE_C)"
-
-    invoke-static {v0, v1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
-
-    goto/16 :goto_3
+    goto/16 :goto_2
 
     .line 73
     :cond_f
@@ -666,9 +598,9 @@
     invoke-direct/range {v3 .. v10}, Landroid/graphics/ColorSpace$Rgb;-><init>(Ljava/lang/String;[F[FLjava/util/function/DoubleUnaryOperator;Ljava/util/function/DoubleUnaryOperator;FF)V
 
     :goto_1
-    check-cast v2, Landroid/graphics/ColorSpace;
-
     move-object v0, v2
+
+    check-cast v0, Landroid/graphics/ColorSpace;
 
     goto :goto_2
 
@@ -680,22 +612,12 @@
 
     move-result-object v0
 
-    .line 102
     :goto_2
-    const-string/jumbo v1, "{\n                if (th\u2026          }\n            }"
-
-    invoke-static {v0, v1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
-
-    :goto_3
     return-object v0
 .end method
 
 .method private static final androidColorSpace$lambda$0(Lkotlin/jvm/functions/Function1;D)D
-    .locals 1
-
-    const-string v0, "$tmp0"
-
-    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+    .locals 0
 
     .line 101
     invoke-static {p1, p2}, Ljava/lang/Double;->valueOf(D)Ljava/lang/Double;
@@ -716,11 +638,7 @@
 .end method
 
 .method private static final androidColorSpace$lambda$1(Lkotlin/jvm/functions/Function1;D)D
-    .locals 1
-
-    const-string v0, "$tmp0"
-
-    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+    .locals 0
 
     .line 102
     invoke-static {p1, p2}, Ljava/lang/Double;->valueOf(D)Ljava/lang/Double;
@@ -746,10 +664,6 @@
     .end annotation
 
     move-object/from16 v0, p0
-
-    const-string v1, "<this>"
-
-    invoke-static {v0, v1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 118
     invoke-virtual/range {p0 .. p0}, Landroid/graphics/ColorSpace;->getId()I
@@ -1228,18 +1142,10 @@
 
     move-result-object v8
 
-    const-string/jumbo v3, "this.name"
-
-    invoke-static {v8, v3}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
-
     .line 175
     invoke-virtual {v1}, Landroid/graphics/ColorSpace$Rgb;->getPrimaries()[F
 
     move-result-object v9
-
-    const-string/jumbo v3, "this.primaries"
-
-    invoke-static {v9, v3}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 177
     invoke-virtual {v1}, Landroid/graphics/ColorSpace$Rgb;->getTransform()[F
@@ -1300,11 +1206,7 @@
 .end method
 
 .method private static final composeColorSpace$lambda$2(Landroid/graphics/ColorSpace;D)D
-    .locals 1
-
-    const-string v0, "$this_composeColorSpace"
-
-    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+    .locals 0
 
     .line 178
     check-cast p0, Landroid/graphics/ColorSpace$Rgb;
@@ -1321,11 +1223,7 @@
 .end method
 
 .method private static final composeColorSpace$lambda$3(Landroid/graphics/ColorSpace;D)D
-    .locals 1
-
-    const-string v0, "$this_composeColorSpace"
-
-    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+    .locals 0
 
     .line 179
     check-cast p0, Landroid/graphics/ColorSpace$Rgb;

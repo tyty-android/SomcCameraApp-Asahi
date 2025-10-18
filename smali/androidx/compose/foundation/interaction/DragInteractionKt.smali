@@ -5,7 +5,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/SourceDebugExtension;
-    value = "SMAP\nDragInteraction.kt\nKotlin\n*S Kotlin\n*F\n+ 1 DragInteraction.kt\nandroidx/compose/foundation/interaction/DragInteractionKt\n+ 2 Composables.kt\nandroidx/compose/runtime/ComposablesKt\n+ 3 Composer.kt\nandroidx/compose/runtime/ComposerKt\n*L\n1#1,95:1\n25#2:96\n50#2:103\n49#2:104\n1097#3,6:97\n1097#3,6:105\n*S KotlinDebug\n*F\n+ 1 DragInteraction.kt\nandroidx/compose/foundation/interaction/DragInteractionKt\n*L\n81#1:96\n82#1:103\n82#1:104\n81#1:97,6\n82#1:105,6\n*E\n"
+    value = "SMAP\nDragInteraction.kt\nKotlin\n*S Kotlin\n*F\n+ 1 DragInteraction.kt\nandroidx/compose/foundation/interaction/DragInteractionKt\n+ 2 Composables.kt\nandroidx/compose/runtime/ComposablesKt\n+ 3 Composer.kt\nandroidx/compose/runtime/ComposerKt\n*L\n1#1,95:1\n25#2:96\n1116#3,6:97\n1116#3,6:103\n*S KotlinDebug\n*F\n+ 1 DragInteraction.kt\nandroidx/compose/foundation/interaction/DragInteractionKt\n*L\n81#1:96\n81#1:97,6\n82#1:103,6\n*E\n"
 .end annotation
 
 .annotation runtime Lkotlin/Metadata;
@@ -45,15 +45,11 @@
         }
     .end annotation
 
-    const-string v0, "<this>"
-
-    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
     const v0, 0x6095ca1
 
     invoke-interface {p1, v0}, Landroidx/compose/runtime/Composer;->startReplaceableGroup(I)V
 
-    const-string v1, "C(collectIsDraggedAsState)80@2766L34,81@2826L492,81@2805L513:DragInteraction.kt#ywyzhk"
+    const-string v1, "C(collectIsDraggedAsState)80@2766L34,81@2805L513:DragInteraction.kt#ywyzhk"
 
     invoke-static {p1, v1}, Landroidx/compose/runtime/ComposerKt;->sourceInformation(Landroidx/compose/runtime/Composer;Ljava/lang/String;)V
 
@@ -119,18 +115,11 @@
     .line 81
     check-cast v0, Landroidx/compose/runtime/MutableState;
 
-    and-int/lit8 p2, p2, 0xe
-
-    const v1, 0x1e7b2b64
+    const v1, 0x7b113dc9
 
     .line 82
     invoke-interface {p1, v1}, Landroidx/compose/runtime/Composer;->startReplaceableGroup(I)V
 
-    const-string v1, "CC(remember)P(1,2):Composables.kt#9igjgp"
-
-    invoke-static {p1, v1}, Landroidx/compose/runtime/ComposerKt;->sourceInformation(Landroidx/compose/runtime/Composer;Ljava/lang/String;)V
-
-    .line 103
     invoke-interface {p1, p0}, Landroidx/compose/runtime/Composer;->changed(Ljava/lang/Object;)Z
 
     move-result v1
@@ -141,14 +130,14 @@
 
     or-int/2addr v1, v3
 
-    .line 105
+    .line 103
     invoke-interface {p1}, Landroidx/compose/runtime/Composer;->rememberedValue()Ljava/lang/Object;
 
     move-result-object v3
 
     if-nez v1, :cond_2
 
-    .line 106
+    .line 104
     sget-object v1, Landroidx/compose/runtime/Composer;->Companion:Landroidx/compose/runtime/Composer$Companion;
 
     invoke-virtual {v1}, Landroidx/compose/runtime/Composer$Companion;->getEmpty()Ljava/lang/Object;
@@ -167,18 +156,19 @@
 
     check-cast v3, Lkotlin/jvm/functions/Function2;
 
-    .line 108
+    .line 106
     invoke-interface {p1, v3}, Landroidx/compose/runtime/Composer;->updateRememberedValue(Ljava/lang/Object;)V
 
-    .line 104
+    .line 82
     :cond_3
+    check-cast v3, Lkotlin/jvm/functions/Function2;
+
     invoke-interface {p1}, Landroidx/compose/runtime/Composer;->endReplaceableGroup()V
 
-    check-cast v3, Lkotlin/jvm/functions/Function2;
+    and-int/lit8 p2, p2, 0xe
 
     or-int/lit8 p2, p2, 0x40
 
-    .line 82
     invoke-static {p0, v3, p1, p2}, Landroidx/compose/runtime/EffectsKt;->LaunchedEffect(Ljava/lang/Object;Lkotlin/jvm/functions/Function2;Landroidx/compose/runtime/Composer;I)V
 
     invoke-static {}, Landroidx/compose/runtime/ComposerKt;->isTraceInProgress()Z

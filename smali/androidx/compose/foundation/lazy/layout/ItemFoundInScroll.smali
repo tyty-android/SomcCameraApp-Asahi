@@ -52,7 +52,7 @@
 
 # direct methods
 .method public constructor <init>(ILandroidx/compose/animation/core/AnimationState;)V
-    .locals 1
+    .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(I",
@@ -63,17 +63,13 @@
         }
     .end annotation
 
-    const-string v0, "previousAnimation"
-
-    invoke-static {p2, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 32
+    .line 33
     invoke-direct {p0}, Ljava/util/concurrent/CancellationException;-><init>()V
 
-    .line 30
+    .line 31
     iput p1, p0, Landroidx/compose/foundation/lazy/layout/ItemFoundInScroll;->itemOffset:I
 
-    .line 31
+    .line 32
     iput-object p2, p0, Landroidx/compose/foundation/lazy/layout/ItemFoundInScroll;->previousAnimation:Landroidx/compose/animation/core/AnimationState;
 
     return-void
@@ -84,7 +80,7 @@
 .method public final getItemOffset()I
     .locals 0
 
-    .line 30
+    .line 31
     iget p0, p0, Landroidx/compose/foundation/lazy/layout/ItemFoundInScroll;->itemOffset:I
 
     return p0
@@ -102,7 +98,7 @@
         }
     .end annotation
 
-    .line 31
+    .line 32
     iget-object p0, p0, Landroidx/compose/foundation/lazy/layout/ItemFoundInScroll;->previousAnimation:Landroidx/compose/animation/core/AnimationState;
 
     return-object p0

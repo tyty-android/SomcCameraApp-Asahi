@@ -149,7 +149,7 @@
 
     move-result-object p0
 
-    const-string p1, "exception.suppressed"
+    const-string p1, "getSuppressed(...)"
 
     invoke-static {p0, p1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
 

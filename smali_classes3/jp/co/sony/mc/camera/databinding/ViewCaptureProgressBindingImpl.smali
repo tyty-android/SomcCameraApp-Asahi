@@ -26,28 +26,28 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/databinding/ViewCaptureProgressBindingImpl;->sViewsWithIds:Landroid/util/SparseIntArray;
 
-    const v1, 0x7f0900ee
+    const v1, 0x7f0900eb
 
     const/4 v2, 0x1
 
     .line 17
     invoke-virtual {v0, v1, v2}, Landroid/util/SparseIntArray;->put(II)V
 
-    const v1, 0x7f0900f5
+    const v1, 0x7f0900f2
 
     const/4 v2, 0x2
 
     .line 18
     invoke-virtual {v0, v1, v2}, Landroid/util/SparseIntArray;->put(II)V
 
-    const v1, 0x7f0900ec
+    const v1, 0x7f0900e9
 
     const/4 v2, 0x3
 
     .line 19
     invoke-virtual {v0, v1, v2}, Landroid/util/SparseIntArray;->put(II)V
 
-    const v1, 0x7f0900f1
+    const v1, 0x7f0900ee
 
     const/4 v2, 0x4
 
@@ -292,7 +292,7 @@
 .method public setVariable(ILjava/lang/Object;)Z
     .locals 1
 
-    const/16 v0, 0x13
+    const/16 v0, 0x16
 
     if-ne v0, p1, :cond_0
 
@@ -304,7 +304,7 @@
     goto :goto_0
 
     :cond_0
-    const/16 v0, 0x22
+    const/16 v0, 0x25
 
     if-ne v0, p1, :cond_1
 
@@ -316,7 +316,7 @@
     goto :goto_0
 
     :cond_1
-    const/16 v0, 0x9
+    const/16 v0, 0xa
 
     if-ne v0, p1, :cond_2
 
@@ -328,7 +328,7 @@
     goto :goto_0
 
     :cond_2
-    const/16 v0, 0x8
+    const/16 v0, 0x9
 
     if-ne v0, p1, :cond_3
 

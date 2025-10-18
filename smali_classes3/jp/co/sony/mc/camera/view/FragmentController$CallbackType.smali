@@ -40,7 +40,7 @@
 .method private static synthetic $values()[Ljp/co/sony/mc/camera/view/FragmentController$CallbackType;
     .locals 5
 
-    .line 477
+    .line 489
     sget-object v0, Ljp/co/sony/mc/camera/view/FragmentController$CallbackType;->RESUME_PROCESS:Ljp/co/sony/mc/camera/view/FragmentController$CallbackType;
 
     sget-object v1, Ljp/co/sony/mc/camera/view/FragmentController$CallbackType;->MODE_CHANGE:Ljp/co/sony/mc/camera/view/FragmentController$CallbackType;
@@ -61,7 +61,7 @@
 .method static constructor <clinit>()V
     .locals 3
 
-    .line 478
+    .line 490
     new-instance v0, Ljp/co/sony/mc/camera/view/FragmentController$CallbackType;
 
     const-string v1, "RESUME_PROCESS"
@@ -72,7 +72,7 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/view/FragmentController$CallbackType;->RESUME_PROCESS:Ljp/co/sony/mc/camera/view/FragmentController$CallbackType;
 
-    .line 479
+    .line 491
     new-instance v0, Ljp/co/sony/mc/camera/view/FragmentController$CallbackType;
 
     const-string v1, "MODE_CHANGE"
@@ -83,7 +83,7 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/view/FragmentController$CallbackType;->MODE_CHANGE:Ljp/co/sony/mc/camera/view/FragmentController$CallbackType;
 
-    .line 480
+    .line 492
     new-instance v0, Ljp/co/sony/mc/camera/view/FragmentController$CallbackType;
 
     const-string v1, "LENS_CHANGE"
@@ -94,7 +94,7 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/view/FragmentController$CallbackType;->LENS_CHANGE:Ljp/co/sony/mc/camera/view/FragmentController$CallbackType;
 
-    .line 481
+    .line 493
     new-instance v0, Ljp/co/sony/mc/camera/view/FragmentController$CallbackType;
 
     const-string v1, "VIDEO_FPS_CHANGE"
@@ -105,7 +105,7 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/view/FragmentController$CallbackType;->VIDEO_FPS_CHANGE:Ljp/co/sony/mc/camera/view/FragmentController$CallbackType;
 
-    .line 482
+    .line 494
     new-instance v0, Ljp/co/sony/mc/camera/view/FragmentController$CallbackType;
 
     const-string v1, "VIDEO_MF_HDR_CHANGE"
@@ -116,7 +116,7 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/view/FragmentController$CallbackType;->VIDEO_MF_HDR_CHANGE:Ljp/co/sony/mc/camera/view/FragmentController$CallbackType;
 
-    .line 477
+    .line 489
     invoke-static {}, Ljp/co/sony/mc/camera/view/FragmentController$CallbackType;->$values()[Ljp/co/sony/mc/camera/view/FragmentController$CallbackType;
 
     move-result-object v0
@@ -134,7 +134,7 @@
         }
     .end annotation
 
-    .line 477
+    .line 489
     invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
     return-void
@@ -143,7 +143,7 @@
 .method public static valueOf(Ljava/lang/String;)Ljp/co/sony/mc/camera/view/FragmentController$CallbackType;
     .locals 1
 
-    .line 477
+    .line 489
     const-class v0, Ljp/co/sony/mc/camera/view/FragmentController$CallbackType;
 
     invoke-static {v0, p0}, Ljava/lang/Enum;->valueOf(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
@@ -158,7 +158,7 @@
 .method public static values()[Ljp/co/sony/mc/camera/view/FragmentController$CallbackType;
     .locals 1
 
-    .line 477
+    .line 489
     sget-object v0, Ljp/co/sony/mc/camera/view/FragmentController$CallbackType;->$VALUES:[Ljp/co/sony/mc/camera/view/FragmentController$CallbackType;
 
     invoke-virtual {v0}, [Ljp/co/sony/mc/camera/view/FragmentController$CallbackType;->clone()Ljava/lang/Object;

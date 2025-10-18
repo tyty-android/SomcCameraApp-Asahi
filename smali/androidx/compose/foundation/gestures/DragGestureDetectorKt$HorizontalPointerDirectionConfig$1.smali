@@ -18,24 +18,22 @@
 
 .annotation runtime Lkotlin/Metadata;
     d1 = {
-        "\u0000\u0019\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0007\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\n*\u0001\u0000\u0008\n\u0018\u00002\u00020\u0001J\u001d\u0010\u0002\u001a\u00020\u00032\u0006\u0010\u0004\u001a\u00020\u0005H\u0016\u00f8\u0001\u0000\u00f8\u0001\u0001\u00a2\u0006\u0004\u0008\u0006\u0010\u0007J\u001d\u0010\u0008\u001a\u00020\u00032\u0006\u0010\u0004\u001a\u00020\u0005H\u0016\u00f8\u0001\u0000\u00f8\u0001\u0001\u00a2\u0006\u0004\u0008\t\u0010\u0007J(\u0010\n\u001a\u00020\u00052\u0006\u0010\u000b\u001a\u00020\u00032\u0006\u0010\u000c\u001a\u00020\u0003H\u0016\u00f8\u0001\u0002\u00f8\u0001\u0000\u00f8\u0001\u0001\u00a2\u0006\u0004\u0008\r\u0010\u000e\u0082\u0002\u000f\n\u0005\u0008\u00a1\u001e0\u0001\n\u0002\u0008\u0019\n\u0002\u0008!\u00a8\u0006\u000f"
+        "\u0000\u0019\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0007\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0008*\u0001\u0000\u0008\n\u0018\u00002\u00020\u0001J\u001a\u0010\u0002\u001a\u00020\u00032\u0006\u0010\u0004\u001a\u00020\u0005H\u0016\u00f8\u0001\u0000\u00a2\u0006\u0004\u0008\u0006\u0010\u0007J\"\u0010\u0008\u001a\u00020\u00052\u0006\u0010\t\u001a\u00020\u00052\u0006\u0010\n\u001a\u00020\u0003H\u0016\u00f8\u0001\u0000\u00a2\u0006\u0004\u0008\u000b\u0010\u000c\u0082\u0002\u0007\n\u0005\u0008\u00a1\u001e0\u0001\u00a8\u0006\r"
     }
     d2 = {
         "androidx/compose/foundation/gestures/DragGestureDetectorKt$HorizontalPointerDirectionConfig$1",
         "Landroidx/compose/foundation/gestures/PointerDirectionConfig;",
-        "crossAxisDelta",
+        "calculateDeltaChange",
         "",
         "offset",
         "Landroidx/compose/ui/geometry/Offset;",
-        "crossAxisDelta-k-4lQ0M",
+        "calculateDeltaChange-k-4lQ0M",
         "(J)F",
-        "mainAxisDelta",
-        "mainAxisDelta-k-4lQ0M",
-        "offsetFromChanges",
-        "mainChange",
-        "crossChange",
-        "offsetFromChanges-dBAh8RU",
-        "(FF)J",
+        "calculatePostSlopOffset",
+        "totalPositionChange",
+        "touchSlop",
+        "calculatePostSlopOffset-8S9VItk",
+        "(JF)J",
         "foundation_release"
     }
     k = 0x1
@@ -52,7 +50,7 @@
 .method constructor <init>()V
     .locals 0
 
-    .line 757
+    .line 732
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -60,33 +58,48 @@
 
 
 # virtual methods
-.method public crossAxisDelta-k-4lQ0M(J)F
+.method public calculateDeltaChange-k-4lQ0M(J)F
     .locals 0
 
-    .line 759
-    invoke-static {p1, p2}, Landroidx/compose/ui/geometry/Offset;->getY-impl(J)F
-
-    move-result p0
-
-    return p0
-.end method
-
-.method public mainAxisDelta-k-4lQ0M(J)F
-    .locals 0
-
-    .line 758
+    .line 733
     invoke-static {p1, p2}, Landroidx/compose/ui/geometry/Offset;->getX-impl(J)F
 
     move-result p0
 
+    invoke-static {p0}, Ljava/lang/Math;->abs(F)F
+
+    move-result p0
+
     return p0
 .end method
 
-.method public offsetFromChanges-dBAh8RU(FF)J
-    .locals 0
+.method public calculatePostSlopOffset-8S9VItk(JF)J
+    .locals 1
 
-    .line 761
-    invoke-static {p1, p2}, Landroidx/compose/ui/geometry/OffsetKt;->Offset(FF)J
+    .line 739
+    invoke-static {p1, p2}, Landroidx/compose/ui/geometry/Offset;->getX-impl(J)F
+
+    move-result p0
+
+    .line 740
+    invoke-static {p1, p2}, Landroidx/compose/ui/geometry/Offset;->getX-impl(J)F
+
+    move-result v0
+
+    invoke-static {v0}, Ljava/lang/Math;->signum(F)F
+
+    move-result v0
+
+    mul-float/2addr v0, p3
+
+    sub-float/2addr p0, v0
+
+    .line 741
+    invoke-static {p1, p2}, Landroidx/compose/ui/geometry/Offset;->getY-impl(J)F
+
+    move-result p1
+
+    invoke-static {p0, p1}, Landroidx/compose/ui/geometry/OffsetKt;->Offset(FF)J
 
     move-result-wide p0
 

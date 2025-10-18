@@ -1695,9 +1695,9 @@
     :goto_1
     iget-boolean v1, p0, Landroidx/appcompat/widget/ActionMenuPresenter;->mReserveOverflow:Z
 
-    if-eqz v1, :cond_6
+    if-eqz v1, :cond_4
 
-    if-eqz p1, :cond_6
+    if-eqz p1, :cond_4
 
     .line 246
     invoke-virtual {p1}, Ljava/util/ArrayList;->size()I
@@ -1719,20 +1719,23 @@
 
     move-result p1
 
-    xor-int/2addr p1, v2
-
-    if-eqz p1, :cond_6
+    xor-int/lit8 v0, p1, 0x1
 
     goto :goto_2
 
     :cond_3
-    if-lez v1, :cond_6
+    if-lez v1, :cond_4
+
+    move v0, v2
+
+    :cond_4
+    :goto_2
+    if-eqz v0, :cond_7
 
     .line 255
-    :goto_2
     iget-object p1, p0, Landroidx/appcompat/widget/ActionMenuPresenter;->mOverflowButton:Landroidx/appcompat/widget/ActionMenuPresenter$OverflowMenuButton;
 
-    if-nez p1, :cond_4
+    if-nez p1, :cond_5
 
     .line 256
     new-instance p1, Landroidx/appcompat/widget/ActionMenuPresenter$OverflowMenuButton;
@@ -1744,7 +1747,7 @@
     iput-object p1, p0, Landroidx/appcompat/widget/ActionMenuPresenter;->mOverflowButton:Landroidx/appcompat/widget/ActionMenuPresenter$OverflowMenuButton;
 
     .line 258
-    :cond_4
+    :cond_5
     iget-object p1, p0, Landroidx/appcompat/widget/ActionMenuPresenter;->mOverflowButton:Landroidx/appcompat/widget/ActionMenuPresenter$OverflowMenuButton;
 
     invoke-virtual {p1}, Landroidx/appcompat/widget/ActionMenuPresenter$OverflowMenuButton;->getParent()Landroid/view/ViewParent;
@@ -1756,9 +1759,9 @@
     .line 259
     iget-object v0, p0, Landroidx/appcompat/widget/ActionMenuPresenter;->mMenuView:Landroidx/appcompat/view/menu/MenuView;
 
-    if-eq p1, v0, :cond_7
+    if-eq p1, v0, :cond_8
 
-    if-eqz p1, :cond_5
+    if-eqz p1, :cond_6
 
     .line 261
     iget-object v0, p0, Landroidx/appcompat/widget/ActionMenuPresenter;->mOverflowButton:Landroidx/appcompat/widget/ActionMenuPresenter$OverflowMenuButton;
@@ -1766,7 +1769,7 @@
     invoke-virtual {p1, v0}, Landroid/view/ViewGroup;->removeView(Landroid/view/View;)V
 
     .line 263
-    :cond_5
+    :cond_6
     iget-object p1, p0, Landroidx/appcompat/widget/ActionMenuPresenter;->mMenuView:Landroidx/appcompat/view/menu/MenuView;
 
     check-cast p1, Landroidx/appcompat/widget/ActionMenuView;
@@ -1783,10 +1786,10 @@
     goto :goto_3
 
     .line 266
-    :cond_6
+    :cond_7
     iget-object p1, p0, Landroidx/appcompat/widget/ActionMenuPresenter;->mOverflowButton:Landroidx/appcompat/widget/ActionMenuPresenter$OverflowMenuButton;
 
-    if-eqz p1, :cond_7
+    if-eqz p1, :cond_8
 
     invoke-virtual {p1}, Landroidx/appcompat/widget/ActionMenuPresenter$OverflowMenuButton;->getParent()Landroid/view/ViewParent;
 
@@ -1794,7 +1797,7 @@
 
     iget-object v0, p0, Landroidx/appcompat/widget/ActionMenuPresenter;->mMenuView:Landroidx/appcompat/view/menu/MenuView;
 
-    if-ne p1, v0, :cond_7
+    if-ne p1, v0, :cond_8
 
     .line 267
     iget-object p1, p0, Landroidx/appcompat/widget/ActionMenuPresenter;->mMenuView:Landroidx/appcompat/view/menu/MenuView;
@@ -1806,7 +1809,7 @@
     invoke-virtual {p1, v0}, Landroid/view/ViewGroup;->removeView(Landroid/view/View;)V
 
     .line 270
-    :cond_7
+    :cond_8
     :goto_3
     iget-object p1, p0, Landroidx/appcompat/widget/ActionMenuPresenter;->mMenuView:Landroidx/appcompat/view/menu/MenuView;
 

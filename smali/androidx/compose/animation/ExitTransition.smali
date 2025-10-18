@@ -50,12 +50,14 @@
 
 .field public static final Companion:Landroidx/compose/animation/ExitTransition$Companion;
 
+.field private static final KeepUntilTransitionsFinished:Landroidx/compose/animation/ExitTransition;
+
 .field private static final None:Landroidx/compose/animation/ExitTransition;
 
 
 # direct methods
 .method static constructor <clinit>()V
-    .locals 9
+    .locals 11
 
     new-instance v0, Landroidx/compose/animation/ExitTransition$Companion;
 
@@ -68,11 +70,11 @@
     .line 235
     new-instance v0, Landroidx/compose/animation/ExitTransitionImpl;
 
-    new-instance v8, Landroidx/compose/animation/TransitionData;
+    new-instance v10, Landroidx/compose/animation/TransitionData;
 
-    const/16 v6, 0xf
+    const/16 v8, 0x3f
 
-    const/4 v7, 0x0
+    const/4 v9, 0x0
 
     const/4 v2, 0x0
 
@@ -82,15 +84,38 @@
 
     const/4 v5, 0x0
 
-    move-object v1, v8
+    const/4 v6, 0x0
 
-    invoke-direct/range {v1 .. v7}, Landroidx/compose/animation/TransitionData;-><init>(Landroidx/compose/animation/Fade;Landroidx/compose/animation/Slide;Landroidx/compose/animation/ChangeSize;Landroidx/compose/animation/Scale;ILkotlin/jvm/internal/DefaultConstructorMarker;)V
+    const/4 v7, 0x0
 
-    invoke-direct {v0, v8}, Landroidx/compose/animation/ExitTransitionImpl;-><init>(Landroidx/compose/animation/TransitionData;)V
+    move-object v1, v10
+
+    invoke-direct/range {v1 .. v9}, Landroidx/compose/animation/TransitionData;-><init>(Landroidx/compose/animation/Fade;Landroidx/compose/animation/Slide;Landroidx/compose/animation/ChangeSize;Landroidx/compose/animation/Scale;ZLjava/util/Map;ILkotlin/jvm/internal/DefaultConstructorMarker;)V
+
+    invoke-direct {v0, v10}, Landroidx/compose/animation/ExitTransitionImpl;-><init>(Landroidx/compose/animation/TransitionData;)V
 
     check-cast v0, Landroidx/compose/animation/ExitTransition;
 
     sput-object v0, Landroidx/compose/animation/ExitTransition;->None:Landroidx/compose/animation/ExitTransition;
+
+    .line 244
+    new-instance v0, Landroidx/compose/animation/ExitTransitionImpl;
+
+    new-instance v10, Landroidx/compose/animation/TransitionData;
+
+    const/16 v8, 0x2f
+
+    const/4 v6, 0x1
+
+    move-object v1, v10
+
+    invoke-direct/range {v1 .. v9}, Landroidx/compose/animation/TransitionData;-><init>(Landroidx/compose/animation/Fade;Landroidx/compose/animation/Slide;Landroidx/compose/animation/ChangeSize;Landroidx/compose/animation/Scale;ZLjava/util/Map;ILkotlin/jvm/internal/DefaultConstructorMarker;)V
+
+    invoke-direct {v0, v10}, Landroidx/compose/animation/ExitTransitionImpl;-><init>(Landroidx/compose/animation/TransitionData;)V
+
+    check-cast v0, Landroidx/compose/animation/ExitTransition;
+
+    sput-object v0, Landroidx/compose/animation/ExitTransition;->KeepUntilTransitionsFinished:Landroidx/compose/animation/ExitTransition;
 
     return-void
 .end method
@@ -98,7 +123,7 @@
 .method private constructor <init>()V
     .locals 0
 
-    .line 180
+    .line 177
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -112,10 +137,19 @@
     return-void
 .end method
 
+.method public static final synthetic access$getKeepUntilTransitionsFinished$cp()Landroidx/compose/animation/ExitTransition;
+    .locals 1
+
+    .line 177
+    sget-object v0, Landroidx/compose/animation/ExitTransition;->KeepUntilTransitionsFinished:Landroidx/compose/animation/ExitTransition;
+
+    return-object v0
+.end method
+
 .method public static final synthetic access$getNone$cp()Landroidx/compose/animation/ExitTransition;
     .locals 1
 
-    .line 180
+    .line 177
     sget-object v0, Landroidx/compose/animation/ExitTransition;->None:Landroidx/compose/animation/ExitTransition;
 
     return-object v0
@@ -126,7 +160,7 @@
 .method public equals(Ljava/lang/Object;)Z
     .locals 1
 
-    .line 207
+    .line 206
     instance-of v0, p1, Landroidx/compose/animation/ExitTransition;
 
     if-eqz v0, :cond_0
@@ -177,103 +211,165 @@
 .end method
 
 .method public final plus(Landroidx/compose/animation/ExitTransition;)Landroidx/compose/animation/ExitTransition;
-    .locals 5
+    .locals 9
 
-    const-string v0, "exit"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 196
+    .line 193
     new-instance v0, Landroidx/compose/animation/ExitTransitionImpl;
 
+    .line 194
+    new-instance v8, Landroidx/compose/animation/TransitionData;
+
+    .line 195
+    invoke-virtual {p0}, Landroidx/compose/animation/ExitTransition;->getData$animation_release()Landroidx/compose/animation/TransitionData;
+
+    move-result-object v1
+
+    invoke-virtual {v1}, Landroidx/compose/animation/TransitionData;->getFade()Landroidx/compose/animation/Fade;
+
+    move-result-object v1
+
+    if-nez v1, :cond_0
+
+    invoke-virtual {p1}, Landroidx/compose/animation/ExitTransition;->getData$animation_release()Landroidx/compose/animation/TransitionData;
+
+    move-result-object v1
+
+    invoke-virtual {v1}, Landroidx/compose/animation/TransitionData;->getFade()Landroidx/compose/animation/Fade;
+
+    move-result-object v1
+
+    :cond_0
+    move-object v2, v1
+
+    .line 196
+    invoke-virtual {p0}, Landroidx/compose/animation/ExitTransition;->getData$animation_release()Landroidx/compose/animation/TransitionData;
+
+    move-result-object v1
+
+    invoke-virtual {v1}, Landroidx/compose/animation/TransitionData;->getSlide()Landroidx/compose/animation/Slide;
+
+    move-result-object v1
+
+    if-nez v1, :cond_1
+
+    invoke-virtual {p1}, Landroidx/compose/animation/ExitTransition;->getData$animation_release()Landroidx/compose/animation/TransitionData;
+
+    move-result-object v1
+
+    invoke-virtual {v1}, Landroidx/compose/animation/TransitionData;->getSlide()Landroidx/compose/animation/Slide;
+
+    move-result-object v1
+
+    :cond_1
+    move-object v3, v1
+
     .line 197
-    new-instance v1, Landroidx/compose/animation/TransitionData;
+    invoke-virtual {p0}, Landroidx/compose/animation/ExitTransition;->getData$animation_release()Landroidx/compose/animation/TransitionData;
+
+    move-result-object v1
+
+    invoke-virtual {v1}, Landroidx/compose/animation/TransitionData;->getChangeSize()Landroidx/compose/animation/ChangeSize;
+
+    move-result-object v1
+
+    if-nez v1, :cond_2
+
+    invoke-virtual {p1}, Landroidx/compose/animation/ExitTransition;->getData$animation_release()Landroidx/compose/animation/TransitionData;
+
+    move-result-object v1
+
+    invoke-virtual {v1}, Landroidx/compose/animation/TransitionData;->getChangeSize()Landroidx/compose/animation/ChangeSize;
+
+    move-result-object v1
+
+    :cond_2
+    move-object v4, v1
 
     .line 198
     invoke-virtual {p0}, Landroidx/compose/animation/ExitTransition;->getData$animation_release()Landroidx/compose/animation/TransitionData;
 
-    move-result-object v2
+    move-result-object v1
 
-    invoke-virtual {v2}, Landroidx/compose/animation/TransitionData;->getFade()Landroidx/compose/animation/Fade;
+    invoke-virtual {v1}, Landroidx/compose/animation/TransitionData;->getScale()Landroidx/compose/animation/Scale;
 
-    move-result-object v2
+    move-result-object v1
 
-    if-nez v2, :cond_0
+    if-nez v1, :cond_3
 
     invoke-virtual {p1}, Landroidx/compose/animation/ExitTransition;->getData$animation_release()Landroidx/compose/animation/TransitionData;
 
-    move-result-object v2
+    move-result-object v1
 
-    invoke-virtual {v2}, Landroidx/compose/animation/TransitionData;->getFade()Landroidx/compose/animation/Fade;
+    invoke-virtual {v1}, Landroidx/compose/animation/TransitionData;->getScale()Landroidx/compose/animation/Scale;
 
-    move-result-object v2
+    move-result-object v1
+
+    :cond_3
+    move-object v5, v1
 
     .line 199
-    :cond_0
     invoke-virtual {p0}, Landroidx/compose/animation/ExitTransition;->getData$animation_release()Landroidx/compose/animation/TransitionData;
 
-    move-result-object v3
+    move-result-object v1
 
-    invoke-virtual {v3}, Landroidx/compose/animation/TransitionData;->getSlide()Landroidx/compose/animation/Slide;
+    invoke-virtual {v1}, Landroidx/compose/animation/TransitionData;->getHold()Z
 
-    move-result-object v3
+    move-result v1
 
-    if-nez v3, :cond_1
+    if-nez v1, :cond_5
 
     invoke-virtual {p1}, Landroidx/compose/animation/ExitTransition;->getData$animation_release()Landroidx/compose/animation/TransitionData;
 
-    move-result-object v3
+    move-result-object v1
 
-    invoke-virtual {v3}, Landroidx/compose/animation/TransitionData;->getSlide()Landroidx/compose/animation/Slide;
+    invoke-virtual {v1}, Landroidx/compose/animation/TransitionData;->getHold()Z
 
-    move-result-object v3
+    move-result v1
+
+    if-eqz v1, :cond_4
+
+    goto :goto_0
+
+    :cond_4
+    const/4 v1, 0x0
+
+    goto :goto_1
+
+    :cond_5
+    :goto_0
+    const/4 v1, 0x1
+
+    :goto_1
+    move v6, v1
 
     .line 200
-    :cond_1
-    invoke-virtual {p0}, Landroidx/compose/animation/ExitTransition;->getData$animation_release()Landroidx/compose/animation/TransitionData;
-
-    move-result-object v4
-
-    invoke-virtual {v4}, Landroidx/compose/animation/TransitionData;->getChangeSize()Landroidx/compose/animation/ChangeSize;
-
-    move-result-object v4
-
-    if-nez v4, :cond_2
-
-    invoke-virtual {p1}, Landroidx/compose/animation/ExitTransition;->getData$animation_release()Landroidx/compose/animation/TransitionData;
-
-    move-result-object v4
-
-    invoke-virtual {v4}, Landroidx/compose/animation/TransitionData;->getChangeSize()Landroidx/compose/animation/ChangeSize;
-
-    move-result-object v4
-
-    .line 201
-    :cond_2
     invoke-virtual {p0}, Landroidx/compose/animation/ExitTransition;->getData$animation_release()Landroidx/compose/animation/TransitionData;
 
     move-result-object p0
 
-    invoke-virtual {p0}, Landroidx/compose/animation/TransitionData;->getScale()Landroidx/compose/animation/Scale;
+    invoke-virtual {p0}, Landroidx/compose/animation/TransitionData;->getEffectsMap()Ljava/util/Map;
 
     move-result-object p0
-
-    if-nez p0, :cond_3
 
     invoke-virtual {p1}, Landroidx/compose/animation/ExitTransition;->getData$animation_release()Landroidx/compose/animation/TransitionData;
 
-    move-result-object p0
+    move-result-object p1
 
-    invoke-virtual {p0}, Landroidx/compose/animation/TransitionData;->getScale()Landroidx/compose/animation/Scale;
+    invoke-virtual {p1}, Landroidx/compose/animation/TransitionData;->getEffectsMap()Ljava/util/Map;
 
-    move-result-object p0
+    move-result-object p1
 
-    .line 197
-    :cond_3
-    invoke-direct {v1, v2, v3, v4, p0}, Landroidx/compose/animation/TransitionData;-><init>(Landroidx/compose/animation/Fade;Landroidx/compose/animation/Slide;Landroidx/compose/animation/ChangeSize;Landroidx/compose/animation/Scale;)V
+    invoke-static {p0, p1}, Lkotlin/collections/MapsKt;->plus(Ljava/util/Map;Ljava/util/Map;)Ljava/util/Map;
 
-    .line 196
-    invoke-direct {v0, v1}, Landroidx/compose/animation/ExitTransitionImpl;-><init>(Landroidx/compose/animation/TransitionData;)V
+    move-result-object v7
+
+    move-object v1, v8
+
+    .line 194
+    invoke-direct/range {v1 .. v7}, Landroidx/compose/animation/TransitionData;-><init>(Landroidx/compose/animation/Fade;Landroidx/compose/animation/Slide;Landroidx/compose/animation/ChangeSize;Landroidx/compose/animation/Scale;ZLjava/util/Map;)V
+
+    .line 193
+    invoke-direct {v0, v8}, Landroidx/compose/animation/ExitTransitionImpl;-><init>(Landroidx/compose/animation/TransitionData;)V
 
     check-cast v0, Landroidx/compose/animation/ExitTransition;
 
@@ -292,18 +388,31 @@
 
     if-eqz v0, :cond_0
 
-    .line 212
     const-string p0, "ExitTransition.None"
 
-    goto :goto_3
+    goto/16 :goto_3
 
-    .line 214
+    .line 212
     :cond_0
+    sget-object v0, Landroidx/compose/animation/ExitTransition;->KeepUntilTransitionsFinished:Landroidx/compose/animation/ExitTransition;
+
+    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->areEqual(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_1
+
+    const-string p0, "ExitTransition.KeepUntilTransitionsFinished"
+
+    goto/16 :goto_3
+
+    .line 213
+    :cond_1
     invoke-virtual {p0}, Landroidx/compose/animation/ExitTransition;->getData$animation_release()Landroidx/compose/animation/TransitionData;
 
     move-result-object p0
 
-    .line 215
+    .line 214
     new-instance v0, Ljava/lang/StringBuilder;
 
     const-string v1, "ExitTransition: \nFade - "
@@ -316,7 +425,7 @@
 
     const/4 v2, 0x0
 
-    if-eqz v1, :cond_1
+    if-eqz v1, :cond_2
 
     invoke-virtual {v1}, Landroidx/compose/animation/Fade;->toString()Ljava/lang/String;
 
@@ -324,7 +433,7 @@
 
     goto :goto_0
 
-    :cond_1
+    :cond_2
     move-object v1, v2
 
     :goto_0
@@ -338,12 +447,12 @@
 
     move-result-object v0
 
-    .line 216
+    .line 215
     invoke-virtual {p0}, Landroidx/compose/animation/TransitionData;->getSlide()Landroidx/compose/animation/Slide;
 
     move-result-object v1
 
-    if-eqz v1, :cond_2
+    if-eqz v1, :cond_3
 
     invoke-virtual {v1}, Landroidx/compose/animation/Slide;->toString()Ljava/lang/String;
 
@@ -351,29 +460,29 @@
 
     goto :goto_1
 
-    :cond_2
+    :cond_3
     move-object v1, v2
 
-    .line 215
+    .line 214
     :goto_1
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v0
 
-    .line 216
+    .line 215
     const-string v1, ",\nShrink - "
 
-    .line 215
+    .line 214
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v0
 
-    .line 216
+    .line 215
     invoke-virtual {p0}, Landroidx/compose/animation/TransitionData;->getChangeSize()Landroidx/compose/animation/ChangeSize;
 
     move-result-object v1
 
-    if-eqz v1, :cond_3
+    if-eqz v1, :cond_4
 
     invoke-virtual {v1}, Landroidx/compose/animation/ChangeSize;->toString()Ljava/lang/String;
 
@@ -381,37 +490,55 @@
 
     goto :goto_2
 
-    :cond_3
+    :cond_4
     move-object v1, v2
 
-    .line 215
+    .line 214
     :goto_2
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v0
 
-    .line 217
+    .line 216
     const-string v1, ",\nScale - "
 
-    .line 215
+    .line 214
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
+
+    .line 216
+    invoke-virtual {p0}, Landroidx/compose/animation/TransitionData;->getScale()Landroidx/compose/animation/Scale;
+
+    move-result-object v1
+
+    if-eqz v1, :cond_5
+
+    invoke-virtual {v1}, Landroidx/compose/animation/Scale;->toString()Ljava/lang/String;
+
+    move-result-object v2
+
+    .line 214
+    :cond_5
+    invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
+
+    .line 217
+    const-string v1, ",\nKeepUntilTransitionsFinished - "
+
+    .line 214
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v0
 
     .line 217
-    invoke-virtual {p0}, Landroidx/compose/animation/TransitionData;->getScale()Landroidx/compose/animation/Scale;
+    invoke-virtual {p0}, Landroidx/compose/animation/TransitionData;->getHold()Z
 
-    move-result-object p0
+    move-result p0
 
-    if-eqz p0, :cond_4
-
-    invoke-virtual {p0}, Landroidx/compose/animation/Scale;->toString()Ljava/lang/String;
-
-    move-result-object v2
-
-    .line 215
-    :cond_4
-    invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    .line 214
+    invoke-virtual {v0, p0}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
 
     move-result-object p0
 

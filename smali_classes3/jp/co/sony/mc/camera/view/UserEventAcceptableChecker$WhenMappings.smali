@@ -16,8 +16,8 @@
 .annotation runtime Lkotlin/Metadata;
     k = 0x3
     mv = {
-        0x1,
-        0x9,
+        0x2,
+        0x0,
         0x0
     }
     xi = 0x30
@@ -69,7 +69,7 @@
 
     :catch_1
     :try_start_2
-    sget-object v1, Ljp/co/sony/mc/camera/view/UserEventKind;->DIALOG_OPENED:Ljp/co/sony/mc/camera/view/UserEventKind;
+    sget-object v1, Ljp/co/sony/mc/camera/view/UserEventKind;->MESSAGE_DIALOG_OPENED:Ljp/co/sony/mc/camera/view/UserEventKind;
 
     invoke-virtual {v1}, Ljp/co/sony/mc/camera/view/UserEventKind;->ordinal()I
 
@@ -83,7 +83,7 @@
 
     :catch_2
     :try_start_3
-    sget-object v1, Ljp/co/sony/mc/camera/view/UserEventKind;->DIALOG_CLOSED:Ljp/co/sony/mc/camera/view/UserEventKind;
+    sget-object v1, Ljp/co/sony/mc/camera/view/UserEventKind;->MESSAGE_DIALOG_CLOSED:Ljp/co/sony/mc/camera/view/UserEventKind;
 
     invoke-virtual {v1}, Ljp/co/sony/mc/camera/view/UserEventKind;->ordinal()I
 
@@ -97,7 +97,7 @@
 
     :catch_3
     :try_start_4
-    sget-object v1, Ljp/co/sony/mc/camera/view/UserEventKind;->WARNING_HINT_TEXT_OPENED:Ljp/co/sony/mc/camera/view/UserEventKind;
+    sget-object v1, Ljp/co/sony/mc/camera/view/UserEventKind;->RESTRICT_DIALOG_OPENED:Ljp/co/sony/mc/camera/view/UserEventKind;
 
     invoke-virtual {v1}, Ljp/co/sony/mc/camera/view/UserEventKind;->ordinal()I
 
@@ -111,7 +111,7 @@
 
     :catch_4
     :try_start_5
-    sget-object v1, Ljp/co/sony/mc/camera/view/UserEventKind;->WARNING_HINT_TEXT_CLOSED:Ljp/co/sony/mc/camera/view/UserEventKind;
+    sget-object v1, Ljp/co/sony/mc/camera/view/UserEventKind;->RESTRICT_DIALOG_CLOSED:Ljp/co/sony/mc/camera/view/UserEventKind;
 
     invoke-virtual {v1}, Ljp/co/sony/mc/camera/view/UserEventKind;->ordinal()I
 
@@ -125,7 +125,7 @@
 
     :catch_5
     :try_start_6
-    sget-object v1, Ljp/co/sony/mc/camera/view/UserEventKind;->CHANGE_CAMERA_SETTING:Ljp/co/sony/mc/camera/view/UserEventKind;
+    sget-object v1, Ljp/co/sony/mc/camera/view/UserEventKind;->WARNING_HINT_TEXT_OPENED:Ljp/co/sony/mc/camera/view/UserEventKind;
 
     invoke-virtual {v1}, Ljp/co/sony/mc/camera/view/UserEventKind;->ordinal()I
 
@@ -139,7 +139,7 @@
 
     :catch_6
     :try_start_7
-    sget-object v1, Ljp/co/sony/mc/camera/view/UserEventKind;->CAMERA_SETTING_CHANGED:Ljp/co/sony/mc/camera/view/UserEventKind;
+    sget-object v1, Ljp/co/sony/mc/camera/view/UserEventKind;->WARNING_HINT_TEXT_CLOSED:Ljp/co/sony/mc/camera/view/UserEventKind;
 
     invoke-virtual {v1}, Ljp/co/sony/mc/camera/view/UserEventKind;->ordinal()I
 
@@ -153,7 +153,7 @@
 
     :catch_7
     :try_start_8
-    sget-object v1, Ljp/co/sony/mc/camera/view/UserEventKind;->DISABLE_CAMERA_KEY:Ljp/co/sony/mc/camera/view/UserEventKind;
+    sget-object v1, Ljp/co/sony/mc/camera/view/UserEventKind;->CHANGE_CAMERA_SETTING:Ljp/co/sony/mc/camera/view/UserEventKind;
 
     invoke-virtual {v1}, Ljp/co/sony/mc/camera/view/UserEventKind;->ordinal()I
 
@@ -167,7 +167,7 @@
 
     :catch_8
     :try_start_9
-    sget-object v1, Ljp/co/sony/mc/camera/view/UserEventKind;->ENABLE_CAMERA_KEY:Ljp/co/sony/mc/camera/view/UserEventKind;
+    sget-object v1, Ljp/co/sony/mc/camera/view/UserEventKind;->CAMERA_SETTING_CHANGED:Ljp/co/sony/mc/camera/view/UserEventKind;
 
     invoke-virtual {v1}, Ljp/co/sony/mc/camera/view/UserEventKind;->ordinal()I
 
@@ -180,6 +180,34 @@
     .catch Ljava/lang/NoSuchFieldError; {:try_start_9 .. :try_end_9} :catch_9
 
     :catch_9
+    :try_start_a
+    sget-object v1, Ljp/co/sony/mc/camera/view/UserEventKind;->DISABLE_CAMERA_KEY:Ljp/co/sony/mc/camera/view/UserEventKind;
+
+    invoke-virtual {v1}, Ljp/co/sony/mc/camera/view/UserEventKind;->ordinal()I
+
+    move-result v1
+
+    const/16 v2, 0xb
+
+    aput v2, v0, v1
+    :try_end_a
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_a .. :try_end_a} :catch_a
+
+    :catch_a
+    :try_start_b
+    sget-object v1, Ljp/co/sony/mc/camera/view/UserEventKind;->ENABLE_CAMERA_KEY:Ljp/co/sony/mc/camera/view/UserEventKind;
+
+    invoke-virtual {v1}, Ljp/co/sony/mc/camera/view/UserEventKind;->ordinal()I
+
+    move-result v1
+
+    const/16 v2, 0xc
+
+    aput v2, v0, v1
+    :try_end_b
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_b .. :try_end_b} :catch_b
+
+    :catch_b
     sput-object v0, Ljp/co/sony/mc/camera/view/UserEventAcceptableChecker$WhenMappings;->$EnumSwitchMapping$0:[I
 
     return-void

@@ -5,12 +5,12 @@
 
 # annotations
 .annotation system Ldalvik/annotation/SourceDebugExtension;
-    value = "SMAP\nTabRow.kt\nKotlin\n*S Kotlin\n*F\n+ 1 TabRow.kt\nandroidx/compose/material/TabPosition\n+ 2 Dp.kt\nandroidx/compose/ui/unit/Dp\n*L\n1#1,517:1\n51#2:518\n*S KotlinDebug\n*F\n+ 1 TabRow.kt\nandroidx/compose/material/TabPosition\n*L\n328#1:518\n*E\n"
+    value = "SMAP\nTabRow.kt\nKotlin\n*S Kotlin\n*F\n+ 1 TabRow.kt\nandroidx/compose/material/TabPosition\n+ 2 Dp.kt\nandroidx/compose/ui/unit/Dp\n*L\n1#1,521:1\n51#2:522\n*S KotlinDebug\n*F\n+ 1 TabRow.kt\nandroidx/compose/material/TabPosition\n*L\n332#1:522\n*E\n"
 .end annotation
 
 .annotation runtime Lkotlin/Metadata;
     d1 = {
-        "\u0000&\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\t\n\u0002\u0010\u000b\n\u0002\u0008\u0002\n\u0002\u0010\u0008\n\u0000\n\u0002\u0010\u000e\n\u0000\u0008\u0007\u0018\u00002\u00020\u0001B\u001a\u0008\u0000\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\u0006\u0010\u0004\u001a\u00020\u0003\u00f8\u0001\u0000\u00a2\u0006\u0002\u0010\u0005J\u0013\u0010\u000c\u001a\u00020\r2\u0008\u0010\u000e\u001a\u0004\u0018\u00010\u0001H\u0096\u0002J\u0008\u0010\u000f\u001a\u00020\u0010H\u0016J\u0008\u0010\u0011\u001a\u00020\u0012H\u0016R\u001c\u0010\u0002\u001a\u00020\u0003\u00f8\u0001\u0000\u00f8\u0001\u0001\u00f8\u0001\u0002\u00a2\u0006\n\n\u0002\u0010\u0008\u001a\u0004\u0008\u0006\u0010\u0007R\u001a\u0010\t\u001a\u00020\u00038F\u00f8\u0001\u0000\u00f8\u0001\u0001\u00f8\u0001\u0002\u00a2\u0006\u0006\u001a\u0004\u0008\n\u0010\u0007R\u001c\u0010\u0004\u001a\u00020\u0003\u00f8\u0001\u0000\u00f8\u0001\u0001\u00f8\u0001\u0002\u00a2\u0006\n\n\u0002\u0010\u0008\u001a\u0004\u0008\u000b\u0010\u0007\u0082\u0002\u000f\n\u0002\u0008\u0019\n\u0005\u0008\u00a1\u001e0\u0001\n\u0002\u0008!\u00a8\u0006\u0013"
+        "\u0000&\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\t\n\u0002\u0010\u000b\n\u0002\u0008\u0002\n\u0002\u0010\u0008\n\u0000\n\u0002\u0010\u000e\n\u0000\u0008\u0007\u0018\u00002\u00020\u0001B\u0017\u0008\u0000\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\u0006\u0010\u0004\u001a\u00020\u0003\u00a2\u0006\u0002\u0010\u0005J\u0013\u0010\u000c\u001a\u00020\r2\u0008\u0010\u000e\u001a\u0004\u0018\u00010\u0001H\u0096\u0002J\u0008\u0010\u000f\u001a\u00020\u0010H\u0016J\u0008\u0010\u0011\u001a\u00020\u0012H\u0016R\u0019\u0010\u0002\u001a\u00020\u0003\u00f8\u0001\u0000\u00f8\u0001\u0001\u00a2\u0006\n\n\u0002\u0010\u0008\u001a\u0004\u0008\u0006\u0010\u0007R\u0017\u0010\t\u001a\u00020\u00038F\u00f8\u0001\u0000\u00f8\u0001\u0001\u00a2\u0006\u0006\u001a\u0004\u0008\n\u0010\u0007R\u0019\u0010\u0004\u001a\u00020\u0003\u00f8\u0001\u0000\u00f8\u0001\u0001\u00a2\u0006\n\n\u0002\u0010\u0008\u001a\u0004\u0008\u000b\u0010\u0007\u0082\u0002\u000b\n\u0005\u0008\u00a1\u001e0\u0001\n\u0002\u0008!\u00a8\u0006\u0013"
     }
     d2 = {
         "Landroidx/compose/material/TabPosition;",
@@ -64,10 +64,10 @@
 .method private constructor <init>(FF)V
     .locals 0
 
-    .line 326
+    .line 330
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 327
+    .line 331
     iput p1, p0, Landroidx/compose/material/TabPosition;->left:F
 
     iput p2, p0, Landroidx/compose/material/TabPosition;->width:F
@@ -94,7 +94,7 @@
 
     return v0
 
-    .line 332
+    .line 336
     :cond_0
     instance-of v1, p1, Landroidx/compose/material/TabPosition;
 
@@ -104,7 +104,7 @@
 
     return v2
 
-    .line 334
+    .line 338
     :cond_1
     iget v1, p0, Landroidx/compose/material/TabPosition;->left:F
 
@@ -120,7 +120,7 @@
 
     return v2
 
-    .line 335
+    .line 339
     :cond_2
     iget p0, p0, Landroidx/compose/material/TabPosition;->width:F
 
@@ -141,7 +141,7 @@
 .method public final getLeft-D9Ej5fM()F
     .locals 0
 
-    .line 327
+    .line 331
     iget p0, p0, Landroidx/compose/material/TabPosition;->left:F
 
     return p0
@@ -150,14 +150,14 @@
 .method public final getRight-D9Ej5fM()F
     .locals 1
 
-    .line 328
+    .line 332
     iget v0, p0, Landroidx/compose/material/TabPosition;->left:F
 
     iget p0, p0, Landroidx/compose/material/TabPosition;->width:F
 
     add-float/2addr v0, p0
 
-    .line 518
+    .line 522
     invoke-static {v0}, Landroidx/compose/ui/unit/Dp;->constructor-impl(F)F
 
     move-result p0
@@ -168,7 +168,7 @@
 .method public final getWidth-D9Ej5fM()F
     .locals 0
 
-    .line 327
+    .line 331
     iget p0, p0, Landroidx/compose/material/TabPosition;->width:F
 
     return p0
@@ -177,7 +177,7 @@
 .method public hashCode()I
     .locals 1
 
-    .line 341
+    .line 345
     iget v0, p0, Landroidx/compose/material/TabPosition;->left:F
 
     invoke-static {v0}, Landroidx/compose/ui/unit/Dp;->hashCode-impl(F)I
@@ -186,7 +186,7 @@
 
     mul-int/lit8 v0, v0, 0x1f
 
-    .line 342
+    .line 346
     iget p0, p0, Landroidx/compose/material/TabPosition;->width:F
 
     invoke-static {p0}, Landroidx/compose/ui/unit/Dp;->hashCode-impl(F)I
@@ -201,7 +201,7 @@
 .method public toString()Ljava/lang/String;
     .locals 2
 
-    .line 347
+    .line 351
     new-instance v0, Ljava/lang/StringBuilder;
 
     const-string v1, "TabPosition(left="

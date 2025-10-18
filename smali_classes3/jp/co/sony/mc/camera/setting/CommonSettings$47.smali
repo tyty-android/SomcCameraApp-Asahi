@@ -21,7 +21,7 @@
 .method constructor <init>()V
     .locals 0
 
-    .line 684
+    .line 687
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -42,10 +42,10 @@
         }
     .end annotation
 
-    .line 688
+    .line 691
     check-cast p1, Ljp/co/sony/mc/camera/setting/CommonSettings;
 
-    .line 689
+    .line 692
     invoke-static {p1}, Ljp/co/sony/mc/camera/setting/CommonSettings;->-$$Nest$mgetFacebookLiveSelect(Ljp/co/sony/mc/camera/setting/CommonSettings;)Ljava/lang/String;
 
     move-result-object p0

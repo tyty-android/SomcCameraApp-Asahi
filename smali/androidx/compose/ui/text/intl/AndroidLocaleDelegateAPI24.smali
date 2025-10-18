@@ -40,6 +40,10 @@
 .end annotation
 
 
+# static fields
+.field public static final $stable:I = 0x8
+
+
 # instance fields
 .field private lastLocaleList:Landroidx/compose/ui/text/intl/LocaleList;
 
@@ -49,6 +53,12 @@
 
 
 # direct methods
+.method static constructor <clinit>()V
+    .locals 0
+
+    return-void
+.end method
+
 .method public constructor <init>()V
     .locals 1
 
@@ -68,16 +78,12 @@
 
 # virtual methods
 .method public getCurrent()Landroidx/compose/ui/text/intl/LocaleList;
-    .locals 9
+    .locals 8
 
     .line 63
     invoke-static {}, Landroid/os/LocaleList;->getDefault()Landroid/os/LocaleList;
 
     move-result-object v0
-
-    const-string v1, "getDefault()"
-
-    invoke-static {v0, v1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 64
     iget-object v1, p0, Landroidx/compose/ui/text/intl/AndroidLocaleDelegateAPI24;->lock:Landroidx/compose/ui/text/platform/SynchronizedObject;
@@ -126,10 +132,6 @@
 
     move-result-object v7
 
-    const-string v8, "platformLocaleList[position]"
-
-    invoke-static {v7, v8}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
-
     invoke-direct {v6, v7}, Landroidx/compose/ui/text/intl/AndroidLocale;-><init>(Ljava/util/Locale;)V
 
     check-cast v6, Landroidx/compose/ui/text/intl/PlatformLocale;
@@ -173,11 +175,7 @@
 .end method
 
 .method public parseLanguageTag(Ljava/lang/String;)Landroidx/compose/ui/text/intl/PlatformLocale;
-    .locals 1
-
-    const-string p0, "languageTag"
-
-    invoke-static {p1, p0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+    .locals 0
 
     .line 83
     new-instance p0, Landroidx/compose/ui/text/intl/AndroidLocale;
@@ -185,10 +183,6 @@
     invoke-static {p1}, Ljava/util/Locale;->forLanguageTag(Ljava/lang/String;)Ljava/util/Locale;
 
     move-result-object p1
-
-    const-string v0, "forLanguageTag(languageTag)"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
 
     invoke-direct {p0, p1}, Landroidx/compose/ui/text/intl/AndroidLocale;-><init>(Ljava/util/Locale;)V
 

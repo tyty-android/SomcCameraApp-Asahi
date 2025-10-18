@@ -53,7 +53,7 @@
     f = "ClickableText.kt"
     i = {}
     l = {
-        0xae
+        0xb1
     }
     m = "invokeSuspend"
     n = {}
@@ -232,7 +232,7 @@
 
     move-result-object v0
 
-    .line 65535
+    .line 165
     iget v1, p0, Landroidx/compose/foundation/text/ClickableTextKt$ClickableText$pointerInputModifier$1;->label:I
 
     const/4 v2, 0x1
@@ -263,7 +263,7 @@
 
     check-cast v3, Landroidx/compose/ui/input/pointer/PointerInputScope;
 
-    .line 163
+    .line 166
     iget-object v4, p0, Landroidx/compose/foundation/text/ClickableTextKt$ClickableText$pointerInputModifier$1;->$coroutineScope:Lkotlinx/coroutines/CoroutineScope;
 
     new-instance p1, Landroidx/compose/foundation/text/ClickableTextKt$ClickableText$pointerInputModifier$1$1;
@@ -288,7 +288,7 @@
 
     invoke-static/range {v4 .. v9}, Lkotlinx/coroutines/BuildersKt;->launch$default(Lkotlinx/coroutines/CoroutineScope;Lkotlin/coroutines/CoroutineContext;Lkotlinx/coroutines/CoroutineStart;Lkotlin/jvm/functions/Function2;ILjava/lang/Object;)Lkotlinx/coroutines/Job;
 
-    .line 174
+    .line 177
     new-instance p1, Landroidx/compose/foundation/text/ClickableTextKt$ClickableText$pointerInputModifier$1$2;
 
     iget-object v1, p0, Landroidx/compose/foundation/text/ClickableTextKt$ClickableText$pointerInputModifier$1;->$onClick:Lkotlin/jvm/functions/Function1;
@@ -321,7 +321,7 @@
 
     return-object v0
 
-    .line 175
+    .line 178
     :cond_2
     :goto_0
     sget-object p0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;

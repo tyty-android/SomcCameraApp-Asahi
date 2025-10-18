@@ -76,7 +76,7 @@
 .method public final invoke()Landroidx/compose/ui/text/font/FontFamily$Resolver;
     .locals 0
 
-    .line 110
+    .line 109
     const-string p0, "LocalFontFamilyResolver"
 
     invoke-static {p0}, Landroidx/compose/ui/platform/CompositionLocalsKt;->access$noLocalProvidedFor(Ljava/lang/String;)Ljava/lang/Void;
@@ -91,7 +91,7 @@
 .method public bridge synthetic invoke()Ljava/lang/Object;
     .locals 0
 
-    .line 109
+    .line 108
     invoke-virtual {p0}, Landroidx/compose/ui/platform/CompositionLocalsKt$LocalFontFamilyResolver$1;->invoke()Landroidx/compose/ui/text/font/FontFamily$Resolver;
 
     move-result-object p0

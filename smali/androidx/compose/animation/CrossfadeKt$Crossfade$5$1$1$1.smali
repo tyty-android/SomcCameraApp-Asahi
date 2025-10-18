@@ -96,11 +96,7 @@
 .end method
 
 .method public final invoke(Landroidx/compose/ui/graphics/GraphicsLayerScope;)V
-    .locals 1
-
-    const-string v0, "$this$graphicsLayer"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+    .locals 0
 
     .line 132
     iget-object p0, p0, Landroidx/compose/animation/CrossfadeKt$Crossfade$5$1$1$1;->$alpha$delegate:Landroidx/compose/runtime/State;

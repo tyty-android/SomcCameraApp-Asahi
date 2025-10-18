@@ -97,10 +97,6 @@
 .method public final logError$ui_tooling_release(Ljava/lang/String;Ljava/lang/Throwable;)V
     .locals 0
 
-    const-string p0, "message"
-
-    invoke-static {p1, p0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
     .line 31
     const-string p0, "PreviewLogger"
 
@@ -111,10 +107,6 @@
 
 .method public final logWarning$ui_tooling_release(Ljava/lang/String;Ljava/lang/Throwable;)V
     .locals 0
-
-    const-string p0, "message"
-
-    invoke-static {p1, p0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 27
     const-string p0, "PreviewLogger"

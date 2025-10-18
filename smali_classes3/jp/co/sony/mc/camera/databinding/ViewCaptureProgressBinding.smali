@@ -75,7 +75,7 @@
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
-    const v0, 0x7f0c0159
+    const v0, 0x7f0c014a
 
     .line 140
     invoke-static {p1, p0, v0}, Ljp/co/sony/mc/camera/databinding/ViewCaptureProgressBinding;->bind(Ljava/lang/Object;Landroid/view/View;I)Landroidx/databinding/ViewDataBinding;
@@ -122,7 +122,7 @@
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
-    const v0, 0x7f0c0159
+    const v0, 0x7f0c014a
 
     .line 105
     invoke-static {p0, v0, p1, p2, p3}, Landroidx/databinding/ViewDataBinding;->inflateInternal(Landroid/view/LayoutInflater;ILandroid/view/ViewGroup;ZLjava/lang/Object;)Landroidx/databinding/ViewDataBinding;
@@ -143,7 +143,7 @@
 
     const/4 v1, 0x0
 
-    const v2, 0x7f0c0159
+    const v2, 0x7f0c014a
 
     .line 124
     invoke-static {p0, v2, v0, v1, p1}, Landroidx/databinding/ViewDataBinding;->inflateInternal(Landroid/view/LayoutInflater;ILandroid/view/ViewGroup;ZLjava/lang/Object;)Landroidx/databinding/ViewDataBinding;

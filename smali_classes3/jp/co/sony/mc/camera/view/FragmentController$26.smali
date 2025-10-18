@@ -42,7 +42,7 @@
 .method static constructor <clinit>()V
     .locals 17
 
-    .line 9087
+    .line 9372
     invoke-static {}, Ljp/co/sony/mc/camera/rtmp/ValidationCheckResultCode;->values()[Ljp/co/sony/mc/camera/rtmp/ValidationCheckResultCode;
 
     move-result-object v0
@@ -98,7 +98,7 @@
     :try_end_2
     .catch Ljava/lang/NoSuchFieldError; {:try_start_2 .. :try_end_2} :catch_2
 
-    .line 8749
+    .line 9033
     :catch_2
     invoke-static {}, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->values()[Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
@@ -197,7 +197,7 @@
     :try_end_8
     .catch Ljava/lang/NoSuchFieldError; {:try_start_8 .. :try_end_8} :catch_8
 
-    .line 9056
+    .line 9341
     :catch_8
     invoke-static {}, Lcom/sonymobile/camera/bleremotecontrol/RemoconManager$BleRemoteKeyEvents;->values()[Lcom/sonymobile/camera/bleremotecontrol/RemoconManager$BleRemoteKeyEvents;
 
@@ -338,7 +338,7 @@
     :try_end_11
     .catch Ljava/lang/NoSuchFieldError; {:try_start_11 .. :try_end_11} :catch_11
 
-    .line 8355
+    .line 8632
     :catch_11
     invoke-static {}, Ljp/co/sony/mc/camera/configuration/parameters/DisplayFlip;->values()[Ljp/co/sony/mc/camera/configuration/parameters/DisplayFlip;
 
@@ -403,7 +403,7 @@
     :try_end_15
     .catch Ljava/lang/NoSuchFieldError; {:try_start_15 .. :try_end_15} :catch_15
 
-    .line 8148
+    .line 8424
     :catch_15
     invoke-static {}, Ljp/co/sony/mc/camera/device/CaptureResultNotifier$WbCustomStatus;->values()[Ljp/co/sony/mc/camera/device/CaptureResultNotifier$WbCustomStatus;
 
@@ -468,7 +468,7 @@
     :try_end_19
     .catch Ljava/lang/NoSuchFieldError; {:try_start_19 .. :try_end_19} :catch_19
 
-    .line 7828
+    .line 8104
     :catch_19
     invoke-static {}, Ljp/co/sony/mc/camera/storage/Storage$StorageState;->values()[Ljp/co/sony/mc/camera/storage/Storage$StorageState;
 
@@ -561,7 +561,7 @@
     :try_end_1f
     .catch Ljava/lang/NoSuchFieldError; {:try_start_1f .. :try_end_1f} :catch_1f
 
-    .line 4484
+    .line 4652
     :catch_1f
     invoke-static {}, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->values()[Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
 
@@ -1096,7 +1096,7 @@
     :try_end_41
     .catch Ljava/lang/NoSuchFieldError; {:try_start_41 .. :try_end_41} :catch_41
 
-    .line 3691
+    .line 3862
     :catch_41
     invoke-static {}, Ljp/co/sony/mc/camera/view/FragmentController$CameraState;->values()[Ljp/co/sony/mc/camera/view/FragmentController$CameraState;
 
@@ -1301,7 +1301,7 @@
     :try_end_4f
     .catch Ljava/lang/NoSuchFieldError; {:try_start_4f .. :try_end_4f} :catch_4f
 
-    .line 2629
+    .line 2763
     :catch_4f
     invoke-static {}, Ljp/co/sony/mc/camera/storage/Storage$StorageType;->values()[Ljp/co/sony/mc/camera/storage/Storage$StorageType;
 
@@ -1338,7 +1338,7 @@
     :try_end_51
     .catch Ljava/lang/NoSuchFieldError; {:try_start_51 .. :try_end_51} :catch_51
 
-    .line 1978
+    .line 2096
     :catch_51
     invoke-static {}, Ljp/co/sony/mc/camera/SystemEventNotifier$BatteryStatus;->values()[Ljp/co/sony/mc/camera/SystemEventNotifier$BatteryStatus;
 
@@ -1375,7 +1375,7 @@
     :try_end_53
     .catch Ljava/lang/NoSuchFieldError; {:try_start_53 .. :try_end_53} :catch_53
 
-    .line 1370
+    .line 1411
     :catch_53
     invoke-static {}, Ljp/co/sony/mc/camera/view/orientation/LayoutOrientation;->values()[Ljp/co/sony/mc/camera/view/orientation/LayoutOrientation;
 

@@ -48,15 +48,7 @@
 .method public static final bringIntoViewResponder(Landroidx/compose/ui/Modifier;Landroidx/compose/foundation/relocation/BringIntoViewResponder;)Landroidx/compose/ui/Modifier;
     .locals 1
 
-    const-string v0, "<this>"
-
-    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string v0, "responder"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 102
+    .line 108
     new-instance v0, Landroidx/compose/foundation/relocation/BringIntoViewResponderElement;
 
     invoke-direct {v0, p1}, Landroidx/compose/foundation/relocation/BringIntoViewResponderElement;-><init>(Landroidx/compose/foundation/relocation/BringIntoViewResponder;)V
@@ -73,7 +65,7 @@
 .method private static final completelyOverlaps(Landroidx/compose/ui/geometry/Rect;Landroidx/compose/ui/geometry/Rect;)Z
     .locals 2
 
-    .line 203
+    .line 209
     invoke-virtual {p0}, Landroidx/compose/ui/geometry/Rect;->getLeft()F
 
     move-result v0
@@ -86,7 +78,7 @@
 
     if-gtz v0, :cond_0
 
-    .line 204
+    .line 210
     invoke-virtual {p0}, Landroidx/compose/ui/geometry/Rect;->getTop()F
 
     move-result v0
@@ -99,7 +91,7 @@
 
     if-gtz v0, :cond_0
 
-    .line 205
+    .line 211
     invoke-virtual {p0}, Landroidx/compose/ui/geometry/Rect;->getRight()F
 
     move-result v0
@@ -112,7 +104,7 @@
 
     if-ltz v0, :cond_0
 
-    .line 206
+    .line 212
     invoke-virtual {p0}, Landroidx/compose/ui/geometry/Rect;->getBottom()F
 
     move-result p0
@@ -141,12 +133,12 @@
 
     const/4 v0, 0x0
 
-    .line 193
+    .line 199
     invoke-interface {p0, p1, v0}, Landroidx/compose/ui/layout/LayoutCoordinates;->localBoundingBoxOf(Landroidx/compose/ui/layout/LayoutCoordinates;Z)Landroidx/compose/ui/geometry/Rect;
 
     move-result-object p0
 
-    .line 196
+    .line 202
     invoke-virtual {p0}, Landroidx/compose/ui/geometry/Rect;->getTopLeft-F1C5BW0()J
 
     move-result-wide p0

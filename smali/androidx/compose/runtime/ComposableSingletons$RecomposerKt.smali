@@ -43,7 +43,7 @@
 
     const/4 v0, 0x0
 
-    .line 392
+    .line 402
     sget-object v1, Landroidx/compose/runtime/ComposableSingletons$RecomposerKt$lambda-1$1;->INSTANCE:Landroidx/compose/runtime/ComposableSingletons$RecomposerKt$lambda-1$1;
 
     const v2, -0x41164c8a

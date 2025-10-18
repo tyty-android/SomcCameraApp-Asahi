@@ -182,7 +182,7 @@
 
     invoke-static {}, Lkotlin/coroutines/intrinsics/IntrinsicsKt;->getCOROUTINE_SUSPENDED()Ljava/lang/Object;
 
-    .line 212
+    .line 217
     iget v0, p0, Landroidx/compose/material/SwipeableState$snapInternalToOffset$2;->label:I
 
     if-nez v0, :cond_0
@@ -193,7 +193,7 @@
 
     check-cast p1, Landroidx/compose/foundation/gestures/DragScope;
 
-    .line 213
+    .line 218
     iget v0, p0, Landroidx/compose/material/SwipeableState$snapInternalToOffset$2;->$target:F
 
     iget-object p0, p0, Landroidx/compose/material/SwipeableState$snapInternalToOffset$2;->this$0:Landroidx/compose/material/SwipeableState;
@@ -210,12 +210,12 @@
 
     invoke-interface {p1, v0}, Landroidx/compose/foundation/gestures/DragScope;->dragBy(F)V
 
-    .line 214
+    .line 219
     sget-object p0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
 
     return-object p0
 
-    .line 212
+    .line 217
     :cond_0
     new-instance p0, Ljava/lang/IllegalStateException;
 

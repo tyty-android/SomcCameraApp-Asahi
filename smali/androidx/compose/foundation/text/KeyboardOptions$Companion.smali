@@ -42,7 +42,7 @@
 .method private constructor <init>()V
     .locals 0
 
-    .line 53
+    .line 56
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -67,7 +67,7 @@
 .method public final getDefault()Landroidx/compose/foundation/text/KeyboardOptions;
     .locals 0
 
-    .line 58
+    .line 61
     invoke-static {}, Landroidx/compose/foundation/text/KeyboardOptions;->access$getDefault$cp()Landroidx/compose/foundation/text/KeyboardOptions;
 
     move-result-object p0

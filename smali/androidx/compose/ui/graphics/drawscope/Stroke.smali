@@ -12,7 +12,7 @@
 
 .annotation runtime Lkotlin/Metadata;
     d1 = {
-        "\u0000@\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0007\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u000b\n\u0002\u0010\u000b\n\u0000\n\u0002\u0010\u0000\n\u0000\n\u0002\u0010\u0008\n\u0000\n\u0002\u0010\u000e\n\u0002\u0008\u0002\u0018\u0000 \u001d2\u00020\u0001:\u0001\u001dB<\u0012\u0008\u0008\u0002\u0010\u0002\u001a\u00020\u0003\u0012\u0008\u0008\u0002\u0010\u0004\u001a\u00020\u0003\u0012\u0008\u0008\u0002\u0010\u0005\u001a\u00020\u0006\u0012\u0008\u0008\u0002\u0010\u0007\u001a\u00020\u0008\u0012\n\u0008\u0002\u0010\t\u001a\u0004\u0018\u00010\n\u00f8\u0001\u0000\u00a2\u0006\u0002\u0010\u000bJ\u0013\u0010\u0015\u001a\u00020\u00162\u0008\u0010\u0017\u001a\u0004\u0018\u00010\u0018H\u0096\u0002J\u0008\u0010\u0019\u001a\u00020\u001aH\u0016J\u0008\u0010\u001b\u001a\u00020\u001cH\u0016R\u001c\u0010\u0005\u001a\u00020\u0006\u00f8\u0001\u0000\u00f8\u0001\u0001\u00f8\u0001\u0002\u00a2\u0006\n\n\u0002\u0010\u000e\u001a\u0004\u0008\u000c\u0010\rR\u001c\u0010\u0007\u001a\u00020\u0008\u00f8\u0001\u0000\u00f8\u0001\u0001\u00f8\u0001\u0002\u00a2\u0006\n\n\u0002\u0010\u000e\u001a\u0004\u0008\u000f\u0010\rR\u0011\u0010\u0004\u001a\u00020\u0003\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\u0010\u0010\u0011R\u0013\u0010\t\u001a\u0004\u0018\u00010\n\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\u0012\u0010\u0013R\u0011\u0010\u0002\u001a\u00020\u0003\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\u0014\u0010\u0011\u0082\u0002\u000f\n\u0002\u0008\u0019\n\u0005\u0008\u00a1\u001e0\u0001\n\u0002\u0008!\u00a8\u0006\u001e"
+        "\u0000@\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0007\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u000b\n\u0002\u0010\u000b\n\u0000\n\u0002\u0010\u0000\n\u0000\n\u0002\u0010\u0008\n\u0000\n\u0002\u0010\u000e\n\u0002\u0008\u0002\u0018\u0000 \u001d2\u00020\u0001:\u0001\u001dB9\u0012\u0008\u0008\u0002\u0010\u0002\u001a\u00020\u0003\u0012\u0008\u0008\u0002\u0010\u0004\u001a\u00020\u0003\u0012\u0008\u0008\u0002\u0010\u0005\u001a\u00020\u0006\u0012\u0008\u0008\u0002\u0010\u0007\u001a\u00020\u0008\u0012\n\u0008\u0002\u0010\t\u001a\u0004\u0018\u00010\n\u00a2\u0006\u0002\u0010\u000bJ\u0013\u0010\u0015\u001a\u00020\u00162\u0008\u0010\u0017\u001a\u0004\u0018\u00010\u0018H\u0096\u0002J\u0008\u0010\u0019\u001a\u00020\u001aH\u0016J\u0008\u0010\u001b\u001a\u00020\u001cH\u0016R\u0019\u0010\u0005\u001a\u00020\u0006\u00f8\u0001\u0000\u00f8\u0001\u0001\u00a2\u0006\n\n\u0002\u0010\u000e\u001a\u0004\u0008\u000c\u0010\rR\u0019\u0010\u0007\u001a\u00020\u0008\u00f8\u0001\u0000\u00f8\u0001\u0001\u00a2\u0006\n\n\u0002\u0010\u000e\u001a\u0004\u0008\u000f\u0010\rR\u0011\u0010\u0004\u001a\u00020\u0003\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\u0010\u0010\u0011R\u0013\u0010\t\u001a\u0004\u0018\u00010\n\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\u0012\u0010\u0013R\u0011\u0010\u0002\u001a\u00020\u0003\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\u0014\u0010\u0011\u0082\u0002\u000b\n\u0005\u0008\u00a1\u001e0\u0001\n\u0002\u0008!\u00a8\u0006\u001e"
     }
     d2 = {
         "Landroidx/compose/ui/graphics/drawscope/Stroke;",
@@ -93,7 +93,7 @@
 
     sput-object v0, Landroidx/compose/ui/graphics/drawscope/Stroke;->Companion:Landroidx/compose/ui/graphics/drawscope/Stroke$Companion;
 
-    .line 938
+    .line 966
     sget-object v0, Landroidx/compose/ui/graphics/StrokeCap;->Companion:Landroidx/compose/ui/graphics/StrokeCap$Companion;
 
     invoke-virtual {v0}, Landroidx/compose/ui/graphics/StrokeCap$Companion;->getButt-KaPHkGw()I
@@ -102,7 +102,7 @@
 
     sput v0, Landroidx/compose/ui/graphics/drawscope/Stroke;->DefaultCap:I
 
-    .line 943
+    .line 971
     sget-object v0, Landroidx/compose/ui/graphics/StrokeJoin;->Companion:Landroidx/compose/ui/graphics/StrokeJoin$Companion;
 
     invoke-virtual {v0}, Landroidx/compose/ui/graphics/StrokeJoin$Companion;->getMiter-LxFBmk8()I
@@ -119,22 +119,22 @@
 
     const/4 v0, 0x0
 
-    .line 922
+    .line 950
     invoke-direct {p0, v0}, Landroidx/compose/ui/graphics/drawscope/DrawStyle;-><init>(Lkotlin/jvm/internal/DefaultConstructorMarker;)V
 
-    .line 917
+    .line 945
     iput p1, p0, Landroidx/compose/ui/graphics/drawscope/Stroke;->width:F
 
-    .line 918
+    .line 946
     iput p2, p0, Landroidx/compose/ui/graphics/drawscope/Stroke;->miter:F
 
-    .line 919
+    .line 947
     iput p3, p0, Landroidx/compose/ui/graphics/drawscope/Stroke;->cap:I
 
-    .line 920
+    .line 948
     iput p4, p0, Landroidx/compose/ui/graphics/drawscope/Stroke;->join:I
 
-    .line 921
+    .line 949
     iput-object p5, p0, Landroidx/compose/ui/graphics/drawscope/Stroke;->pathEffect:Landroidx/compose/ui/graphics/PathEffect;
 
     return-void
@@ -165,7 +165,7 @@
 
     if-eqz p1, :cond_2
 
-    .line 919
+    .line 947
     sget p3, Landroidx/compose/ui/graphics/drawscope/Stroke;->DefaultCap:I
 
     :cond_2
@@ -175,7 +175,7 @@
 
     if-eqz p1, :cond_3
 
-    .line 920
+    .line 948
     sget p4, Landroidx/compose/ui/graphics/drawscope/Stroke;->DefaultJoin:I
 
     :cond_3
@@ -194,7 +194,7 @@
 
     move-object v0, p0
 
-    .line 916
+    .line 944
     invoke-direct/range {v0 .. v6}, Landroidx/compose/ui/graphics/drawscope/Stroke;-><init>(FFIILandroidx/compose/ui/graphics/PathEffect;Lkotlin/jvm/internal/DefaultConstructorMarker;)V
 
     return-void
@@ -211,7 +211,7 @@
 .method public static final synthetic access$getDefaultCap$cp()I
     .locals 1
 
-    .line 916
+    .line 944
     sget v0, Landroidx/compose/ui/graphics/drawscope/Stroke;->DefaultCap:I
 
     return v0
@@ -220,7 +220,7 @@
 .method public static final synthetic access$getDefaultJoin$cp()I
     .locals 1
 
-    .line 916
+    .line 944
     sget v0, Landroidx/compose/ui/graphics/drawscope/Stroke;->DefaultJoin:I
 
     return v0
@@ -237,7 +237,7 @@
 
     return v0
 
-    .line 948
+    .line 976
     :cond_0
     instance-of v1, p1, Landroidx/compose/ui/graphics/drawscope/Stroke;
 
@@ -247,7 +247,7 @@
 
     return v2
 
-    .line 950
+    .line 978
     :cond_1
     iget v1, p0, Landroidx/compose/ui/graphics/drawscope/Stroke;->width:F
 
@@ -259,7 +259,7 @@
 
     if-nez v1, :cond_5
 
-    .line 951
+    .line 979
     iget v1, p0, Landroidx/compose/ui/graphics/drawscope/Stroke;->miter:F
 
     iget v3, p1, Landroidx/compose/ui/graphics/drawscope/Stroke;->miter:F
@@ -268,7 +268,7 @@
 
     if-nez v1, :cond_5
 
-    .line 952
+    .line 980
     iget v1, p0, Landroidx/compose/ui/graphics/drawscope/Stroke;->cap:I
 
     iget v3, p1, Landroidx/compose/ui/graphics/drawscope/Stroke;->cap:I
@@ -281,7 +281,7 @@
 
     return v2
 
-    .line 953
+    .line 981
     :cond_2
     iget v1, p0, Landroidx/compose/ui/graphics/drawscope/Stroke;->join:I
 
@@ -295,7 +295,7 @@
 
     return v2
 
-    .line 954
+    .line 982
     :cond_3
     iget-object p0, p0, Landroidx/compose/ui/graphics/drawscope/Stroke;->pathEffect:Landroidx/compose/ui/graphics/PathEffect;
 
@@ -319,7 +319,7 @@
 .method public final getCap-KaPHkGw()I
     .locals 0
 
-    .line 919
+    .line 947
     iget p0, p0, Landroidx/compose/ui/graphics/drawscope/Stroke;->cap:I
 
     return p0
@@ -328,7 +328,7 @@
 .method public final getJoin-LxFBmk8()I
     .locals 0
 
-    .line 920
+    .line 948
     iget p0, p0, Landroidx/compose/ui/graphics/drawscope/Stroke;->join:I
 
     return p0
@@ -337,7 +337,7 @@
 .method public final getMiter()F
     .locals 0
 
-    .line 918
+    .line 946
     iget p0, p0, Landroidx/compose/ui/graphics/drawscope/Stroke;->miter:F
 
     return p0
@@ -346,7 +346,7 @@
 .method public final getPathEffect()Landroidx/compose/ui/graphics/PathEffect;
     .locals 0
 
-    .line 921
+    .line 949
     iget-object p0, p0, Landroidx/compose/ui/graphics/drawscope/Stroke;->pathEffect:Landroidx/compose/ui/graphics/PathEffect;
 
     return-object p0
@@ -355,7 +355,7 @@
 .method public final getWidth()F
     .locals 0
 
-    .line 917
+    .line 945
     iget p0, p0, Landroidx/compose/ui/graphics/drawscope/Stroke;->width:F
 
     return p0
@@ -364,7 +364,7 @@
 .method public hashCode()I
     .locals 2
 
-    .line 960
+    .line 988
     iget v0, p0, Landroidx/compose/ui/graphics/drawscope/Stroke;->width:F
 
     invoke-static {v0}, Ljava/lang/Float;->hashCode(F)I
@@ -373,7 +373,7 @@
 
     mul-int/lit8 v0, v0, 0x1f
 
-    .line 961
+    .line 989
     iget v1, p0, Landroidx/compose/ui/graphics/drawscope/Stroke;->miter:F
 
     invoke-static {v1}, Ljava/lang/Float;->hashCode(F)I
@@ -384,7 +384,7 @@
 
     mul-int/lit8 v0, v0, 0x1f
 
-    .line 962
+    .line 990
     iget v1, p0, Landroidx/compose/ui/graphics/drawscope/Stroke;->cap:I
 
     invoke-static {v1}, Landroidx/compose/ui/graphics/StrokeCap;->hashCode-impl(I)I
@@ -395,7 +395,7 @@
 
     mul-int/lit8 v0, v0, 0x1f
 
-    .line 963
+    .line 991
     iget v1, p0, Landroidx/compose/ui/graphics/drawscope/Stroke;->join:I
 
     invoke-static {v1}, Landroidx/compose/ui/graphics/StrokeJoin;->hashCode-impl(I)I
@@ -406,7 +406,7 @@
 
     mul-int/lit8 v0, v0, 0x1f
 
-    .line 964
+    .line 992
     iget-object p0, p0, Landroidx/compose/ui/graphics/drawscope/Stroke;->pathEffect:Landroidx/compose/ui/graphics/PathEffect;
 
     if-eqz p0, :cond_0
@@ -429,7 +429,7 @@
 .method public toString()Ljava/lang/String;
     .locals 2
 
-    .line 969
+    .line 997
     new-instance v0, Ljava/lang/StringBuilder;
 
     const-string v1, "Stroke(width="

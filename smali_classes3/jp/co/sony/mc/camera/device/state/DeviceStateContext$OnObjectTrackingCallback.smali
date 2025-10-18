@@ -25,7 +25,7 @@
 .method private constructor <init>(Ljp/co/sony/mc/camera/device/state/DeviceStateContext;)V
     .locals 0
 
-    .line 3139
+    .line 3215
     iput-object p1, p0, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$OnObjectTrackingCallback;->this$0:Ljp/co/sony/mc/camera/device/state/DeviceStateContext;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -46,7 +46,7 @@
 .method public onObjectTracked(Ljp/co/sony/mc/camera/device/CaptureResultNotifier$ObjectTrackingResult;Z)V
     .locals 2
 
-    .line 3144
+    .line 3220
     iget-object v0, p0, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$OnObjectTrackingCallback;->this$0:Ljp/co/sony/mc/camera/device/state/DeviceStateContext;
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/device/state/DeviceStateContext;->-$$Nest$fgetmCaptureResultCheckerLock(Ljp/co/sony/mc/camera/device/state/DeviceStateContext;)Ljava/lang/Object;
@@ -55,7 +55,7 @@
 
     monitor-enter v0
 
-    .line 3145
+    .line 3221
     :try_start_0
     iget-object v1, p0, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$OnObjectTrackingCallback;->this$0:Ljp/co/sony/mc/camera/device/state/DeviceStateContext;
 
@@ -65,7 +65,7 @@
 
     if-nez v1, :cond_1
 
-    .line 3146
+    .line 3222
     sget-boolean p0, Ljp/co/sony/mc/camera/util/CamLog;->DEBUG:Z
 
     if-eqz p0, :cond_0
@@ -82,19 +82,19 @@
 
     invoke-static {p0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
-    .line 3147
+    .line 3223
     :cond_0
     monitor-exit v0
 
     return-void
 
-    .line 3149
+    .line 3225
     :cond_1
     monitor-exit v0
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 3150
+    .line 3226
     iget-object p0, p0, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$OnObjectTrackingCallback;->this$0:Ljp/co/sony/mc/camera/device/state/DeviceStateContext;
 
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/device/state/DeviceStateContext;->getCameraDeviceHandlerCallback()Ljp/co/sony/mc/camera/device/state/IDeviceStateMachineCallback;
@@ -108,7 +108,7 @@
     :catchall_0
     move-exception p0
 
-    .line 3149
+    .line 3225
     :try_start_1
     monitor-exit v0
     :try_end_1

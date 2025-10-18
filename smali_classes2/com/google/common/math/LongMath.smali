@@ -1286,54 +1286,58 @@
 
     or-int/2addr p1, p2
 
-    if-eqz p1, :cond_6
-
-    goto :goto_3
+    goto :goto_4
 
     :cond_4
     if-lez p2, :cond_6
 
-    goto :goto_3
+    goto :goto_4
 
     :pswitch_1
     if-lez p0, :cond_6
 
-    goto :goto_3
+    goto :goto_4
 
     :pswitch_2
     if-gez p0, :cond_6
 
-    :goto_3
+    goto :goto_4
+
     :pswitch_3
-    int-to-long p0, p0
-
-    add-long/2addr v0, p0
-
-    goto :goto_5
-
-    :pswitch_4
     if-nez v6, :cond_5
 
-    goto :goto_4
+    goto :goto_3
 
     :cond_5
     move p1, v8
 
     .line 405
-    :goto_4
+    :goto_3
     invoke-static {p1}, Lcom/google/common/math/MathPreconditions;->checkRoundingUnnecessary(Z)V
 
     :cond_6
-    :goto_5
+    :pswitch_4
+    move p1, v8
+
+    :goto_4
     :pswitch_5
+    if-eqz p1, :cond_7
+
+    int-to-long p0, p0
+
+    add-long/2addr v0, p0
+
+    :cond_7
     return-wide v0
+
+    nop
 
     :pswitch_data_0
     .packed-switch 0x1
-        :pswitch_4
-        :pswitch_5
-        :pswitch_2
         :pswitch_3
+        :pswitch_4
+        :pswitch_2
+        :pswitch_5
         :pswitch_1
         :pswitch_0
         :pswitch_0

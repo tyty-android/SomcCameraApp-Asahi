@@ -42,7 +42,7 @@
 .method private static synthetic $values()[Lcom/sonymobile/android/media/internal/Track$States;
     .locals 6
 
-    .line 120
+    .line 118
     sget-object v0, Lcom/sonymobile/android/media/internal/Track$States;->PREPARING:Lcom/sonymobile/android/media/internal/Track$States;
 
     sget-object v1, Lcom/sonymobile/android/media/internal/Track$States;->STARTED:Lcom/sonymobile/android/media/internal/Track$States;
@@ -65,7 +65,7 @@
 .method static constructor <clinit>()V
     .locals 3
 
-    .line 121
+    .line 119
     new-instance v0, Lcom/sonymobile/android/media/internal/Track$States;
 
     const-string v1, "PREPARING"
@@ -76,7 +76,7 @@
 
     sput-object v0, Lcom/sonymobile/android/media/internal/Track$States;->PREPARING:Lcom/sonymobile/android/media/internal/Track$States;
 
-    .line 122
+    .line 120
     new-instance v0, Lcom/sonymobile/android/media/internal/Track$States;
 
     const-string v1, "STARTED"
@@ -87,7 +87,7 @@
 
     sput-object v0, Lcom/sonymobile/android/media/internal/Track$States;->STARTED:Lcom/sonymobile/android/media/internal/Track$States;
 
-    .line 123
+    .line 121
     new-instance v0, Lcom/sonymobile/android/media/internal/Track$States;
 
     const-string v1, "STOPPED"
@@ -98,7 +98,7 @@
 
     sput-object v0, Lcom/sonymobile/android/media/internal/Track$States;->STOPPED:Lcom/sonymobile/android/media/internal/Track$States;
 
-    .line 124
+    .line 122
     new-instance v0, Lcom/sonymobile/android/media/internal/Track$States;
 
     const-string v1, "STOPPING"
@@ -109,7 +109,7 @@
 
     sput-object v0, Lcom/sonymobile/android/media/internal/Track$States;->STOPPING:Lcom/sonymobile/android/media/internal/Track$States;
 
-    .line 125
+    .line 123
     new-instance v0, Lcom/sonymobile/android/media/internal/Track$States;
 
     const-string v1, "PAUSED"
@@ -120,7 +120,7 @@
 
     sput-object v0, Lcom/sonymobile/android/media/internal/Track$States;->PAUSED:Lcom/sonymobile/android/media/internal/Track$States;
 
-    .line 126
+    .line 124
     new-instance v0, Lcom/sonymobile/android/media/internal/Track$States;
 
     const-string v1, "RESTARTING"
@@ -131,7 +131,7 @@
 
     sput-object v0, Lcom/sonymobile/android/media/internal/Track$States;->RESTARTING:Lcom/sonymobile/android/media/internal/Track$States;
 
-    .line 120
+    .line 118
     invoke-static {}, Lcom/sonymobile/android/media/internal/Track$States;->$values()[Lcom/sonymobile/android/media/internal/Track$States;
 
     move-result-object v0
@@ -149,7 +149,7 @@
         }
     .end annotation
 
-    .line 120
+    .line 118
     invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
     return-void
@@ -158,7 +158,7 @@
 .method public static valueOf(Ljava/lang/String;)Lcom/sonymobile/android/media/internal/Track$States;
     .locals 1
 
-    .line 120
+    .line 118
     const-class v0, Lcom/sonymobile/android/media/internal/Track$States;
 
     invoke-static {v0, p0}, Ljava/lang/Enum;->valueOf(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
@@ -173,7 +173,7 @@
 .method public static values()[Lcom/sonymobile/android/media/internal/Track$States;
     .locals 1
 
-    .line 120
+    .line 118
     sget-object v0, Lcom/sonymobile/android/media/internal/Track$States;->$VALUES:[Lcom/sonymobile/android/media/internal/Track$States;
 
     invoke-virtual {v0}, [Lcom/sonymobile/android/media/internal/Track$States;->clone()Ljava/lang/Object;

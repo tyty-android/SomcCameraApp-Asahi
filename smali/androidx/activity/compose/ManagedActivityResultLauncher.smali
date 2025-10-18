@@ -84,7 +84,7 @@
 .end method
 
 .method public constructor <init>(Landroidx/activity/compose/ActivityResultLauncherHolder;Landroidx/compose/runtime/State;)V
-    .locals 1
+    .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -96,14 +96,6 @@
             "TI;TO;>;>;)V"
         }
     .end annotation
-
-    const-string v0, "launcher"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string v0, "contract"
-
-    invoke-static {p2, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 127
     invoke-direct {p0}, Landroidx/activity/result/ActivityResultLauncher;-><init>()V

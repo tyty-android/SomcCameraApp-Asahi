@@ -51,7 +51,7 @@
 .method private constructor <init>()V
     .locals 0
 
-    .line 1875
+    .line 2044
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -62,14 +62,10 @@
 .method public final focusable(Landroid/view/View;IZ)V
     .locals 0
 
-    const-string/jumbo p0, "view"
-
-    invoke-static {p1, p0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 1880
+    .line 2049
     invoke-virtual {p1, p2}, Landroid/view/View;->setFocusable(I)V
 
-    .line 1882
+    .line 2051
     invoke-virtual {p1, p3}, Landroid/view/View;->setDefaultFocusHighlightEnabled(Z)V
 
     return-void

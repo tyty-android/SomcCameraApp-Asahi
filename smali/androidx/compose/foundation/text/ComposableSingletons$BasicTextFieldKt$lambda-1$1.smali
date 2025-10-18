@@ -90,7 +90,7 @@
 .method public bridge synthetic invoke(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
 
-    .line 140
+    .line 145
     check-cast p1, Lkotlin/jvm/functions/Function2;
 
     check-cast p2, Landroidx/compose/runtime/Composer;
@@ -125,11 +125,7 @@
         }
     .end annotation
 
-    const-string p0, "innerTextField"
-
-    invoke-static {p1, p0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string p0, "C139@8145L16:BasicTextField.kt#423gt5"
+    const-string p0, "C144@8630L16:BasicTextField.kt#423gt5"
 
     invoke-static {p2, p0}, Landroidx/compose/runtime/ComposerKt;->sourceInformation(Landroidx/compose/runtime/Composer;Ljava/lang/String;)V
 
@@ -160,7 +156,7 @@
 
     if-ne p0, v0, :cond_3
 
-    .line 140
+    .line 145
     invoke-interface {p2}, Landroidx/compose/runtime/Composer;->getSkipping()Z
 
     move-result p0
@@ -184,7 +180,7 @@
 
     const/4 p0, -0x1
 
-    const-string v0, "androidx.compose.foundation.text.ComposableSingletons$BasicTextFieldKt.lambda-1.<anonymous> (BasicTextField.kt:139)"
+    const-string v0, "androidx.compose.foundation.text.ComposableSingletons$BasicTextFieldKt.lambda-1.<anonymous> (BasicTextField.kt:144)"
 
     const v1, 0x3b79c49c
 

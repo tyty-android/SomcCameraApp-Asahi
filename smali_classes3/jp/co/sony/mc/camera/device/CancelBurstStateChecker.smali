@@ -69,7 +69,7 @@
 .end method
 
 .method private changeTo(Ljp/co/sony/mc/camera/device/CancelBurstStateChecker$State;)V
-    .locals 2
+    .locals 3
 
     .line 103
     iget-object v0, p0, Ljp/co/sony/mc/camera/device/CancelBurstStateChecker;->mState:Ljp/co/sony/mc/camera/device/CancelBurstStateChecker$State;
@@ -81,43 +81,47 @@
 
     if-eqz v0, :cond_0
 
-    new-instance v0, Ljava/lang/StringBuilder;
+    const/4 v0, 0x1
 
-    const-string v1, "invoke current:"
+    new-array v0, v0, [Ljava/lang/String;
 
-    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+    new-instance v1, Ljava/lang/StringBuilder;
 
-    iget-object v1, p0, Ljp/co/sony/mc/camera/device/CancelBurstStateChecker;->mState:Ljp/co/sony/mc/camera/device/CancelBurstStateChecker$State;
+    const-string v2, "invoke current:"
 
-    invoke-virtual {v1}, Ljp/co/sony/mc/camera/device/CancelBurstStateChecker$State;->name()Ljava/lang/String;
+    invoke-direct {v1, v2}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+
+    iget-object v2, p0, Ljp/co/sony/mc/camera/device/CancelBurstStateChecker;->mState:Ljp/co/sony/mc/camera/device/CancelBurstStateChecker$State;
+
+    invoke-virtual {v2}, Ljp/co/sony/mc/camera/device/CancelBurstStateChecker$State;->name()Ljava/lang/String;
+
+    move-result-object v2
+
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v1
 
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    const-string v2, ", to:"
 
-    move-result-object v0
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    const-string v1, ", to:"
-
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v0
+    move-result-object v1
 
     invoke-virtual {p1}, Ljp/co/sony/mc/camera/device/CancelBurstStateChecker$State;->name()Ljava/lang/String;
 
+    move-result-object v2
+
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
     move-result-object v1
 
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    move-result-object v0
+    move-result-object v1
 
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    const/4 v2, 0x0
 
-    move-result-object v0
-
-    filled-new-array {v0}, [Ljava/lang/String;
-
-    move-result-object v0
+    aput-object v1, v0, v2
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
@@ -130,7 +134,7 @@
 .end method
 
 .method private check(Landroid/hardware/camera2/CaptureRequest;Landroid/hardware/camera2/CaptureResult;)V
-    .locals 4
+    .locals 5
 
     .line 54
     sget-object v0, Ljp/co/sony/mc/camera/device/CancelBurstStateChecker$2;->$SwitchMap$jp$co$sony$mc$camera$device$CancelBurstStateChecker$State:[I
@@ -143,13 +147,13 @@
 
     aget v0, v0, v1
 
-    const/4 v1, 0x1
+    const/4 v1, 0x2
 
-    const/4 v2, 0x2
+    const/4 v2, 0x1
 
-    if-eq v0, v1, :cond_5
+    if-eq v0, v2, :cond_5
 
-    if-eq v0, v2, :cond_0
+    if-eq v0, v1, :cond_0
 
     goto :goto_0
 
@@ -159,9 +163,9 @@
 
     invoke-virtual {p2}, Landroid/hardware/camera2/CaptureResult;->getFrameNumber()J
 
-    move-result-wide v2
+    move-result-wide v3
 
-    cmp-long p1, v0, v2
+    cmp-long p1, v0, v3
 
     if-lez p1, :cond_1
 
@@ -209,19 +213,21 @@
 
     if-eqz p2, :cond_4
 
-    new-instance p2, Ljava/lang/StringBuilder;
+    new-array p2, v2, [Ljava/lang/String;
 
-    const-string v0, "prepareBurstState["
+    new-instance v0, Ljava/lang/StringBuilder;
 
-    invoke-direct {p2, v0}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+    const-string v1, "prepareBurstState["
 
-    invoke-virtual {p2, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+
+    invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
     move-result-object p1
 
-    const-string p2, " ]"
+    const-string v0, " ]"
 
-    invoke-virtual {p1, p2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {p1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object p1
 
@@ -229,11 +235,11 @@
 
     move-result-object p1
 
-    filled-new-array {p1}, [Ljava/lang/String;
+    const/4 v0, 0x0
 
-    move-result-object p1
+    aput-object p1, p2, v0
 
-    invoke-static {p1}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
+    invoke-static {p2}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
     .line 81
     :cond_4
@@ -264,7 +270,7 @@
 
     move-result v0
 
-    if-ne v2, v0, :cond_6
+    if-ne v1, v0, :cond_6
 
     .line 61
     sget-object v0, Ljp/co/sony/mc/camera/device/CancelBurstStateChecker$State;->CANCELLING:Ljp/co/sony/mc/camera/device/CancelBurstStateChecker$State;

@@ -5,7 +5,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/SourceDebugExtension;
-    value = "SMAP\nSemanticsModifier.kt\nKotlin\n*S Kotlin\n*F\n+ 1 SemanticsModifier.kt\nandroidx/compose/ui/semantics/SemanticsModifierKt\n+ 2 _Collections.kt\nkotlin/collections/CollectionsKt___CollectionsKt\n*L\n1#1,208:1\n1179#2,2:209\n1253#2,4:211\n*S KotlinDebug\n*F\n+ 1 SemanticsModifier.kt\nandroidx/compose/ui/semantics/SemanticsModifierKt\n*L\n205#1:209,2\n205#1:211,4\n*E\n"
+    value = "SMAP\nSemanticsModifier.kt\nKotlin\n*S Kotlin\n*F\n+ 1 SemanticsModifier.kt\nandroidx/compose/ui/semantics/SemanticsModifierKt\n+ 2 _Collections.kt\nkotlin/collections/CollectionsKt___CollectionsKt\n*L\n1#1,209:1\n1179#2,2:210\n1253#2,4:212\n*S KotlinDebug\n*F\n+ 1 SemanticsModifier.kt\nandroidx/compose/ui/semantics/SemanticsModifierKt\n*L\n205#1:210,2\n205#1:212,4\n*E\n"
 .end annotation
 
 .annotation runtime Lkotlin/Metadata;
@@ -85,7 +85,7 @@
 
     const/16 v0, 0xa
 
-    .line 209
+    .line 210
     invoke-static {p1, v0}, Lkotlin/collections/CollectionsKt;->collectionSizeOrDefault(Ljava/lang/Iterable;I)I
 
     move-result v0
@@ -100,14 +100,14 @@
 
     move-result v0
 
-    .line 210
+    .line 211
     new-instance v1, Ljava/util/LinkedHashMap;
 
     invoke-direct {v1, v0}, Ljava/util/LinkedHashMap;-><init>(I)V
 
     check-cast v1, Ljava/util/Map;
 
-    .line 211
+    .line 212
     invoke-interface {p1}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
 
     move-result-object p1
@@ -123,7 +123,7 @@
 
     move-result-object v0
 
-    .line 212
+    .line 213
     check-cast v0, Ljava/util/Map$Entry;
 
     .line 205
@@ -146,7 +146,7 @@
 
     move-result-object v0
 
-    .line 212
+    .line 213
     invoke-virtual {v0}, Lkotlin/Pair;->getFirst()Ljava/lang/Object;
 
     move-result-object v2
@@ -182,14 +182,6 @@
             "Landroidx/compose/ui/Modifier;"
         }
     .end annotation
-
-    const-string v0, "<this>"
-
-    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string v0, "properties"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 169
     new-instance v0, Landroidx/compose/ui/semantics/ClearAndSetSemanticsElement;
@@ -235,14 +227,6 @@
             "Landroidx/compose/ui/Modifier;"
         }
     .end annotation
-
-    const-string v0, "<this>"
-
-    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string v0, "properties"
-
-    invoke-static {p2, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 114
     new-instance v0, Landroidx/compose/ui/semantics/AppendedSemanticsElement;

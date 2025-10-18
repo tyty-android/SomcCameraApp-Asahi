@@ -236,7 +236,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f0a0055
+    const v1, 0x7f0a005a
 
     invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getInteger(I)I
 
@@ -251,7 +251,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f0707b3
+    const v1, 0x7f070814
 
     invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
@@ -271,7 +271,7 @@
 
     move-result-object p1
 
-    const v0, 0x7f070329
+    const v0, 0x7f07035a
 
     invoke-virtual {p1, v0}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
@@ -781,12 +781,16 @@
 .end method
 
 .method private trace(Ljava/lang/String;)V
-    .locals 0
+    .locals 1
+
+    const/4 p0, 0x1
 
     .line 32
-    filled-new-array {p1}, [Ljava/lang/String;
+    new-array p0, p0, [Ljava/lang/String;
 
-    move-result-object p0
+    const/4 v0, 0x0
+
+    aput-object p1, p0, v0
 
     invoke-static {p0}, Ljp/co/sony/mc/camera/util/CamLog;->e([Ljava/lang/String;)V
 

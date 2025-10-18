@@ -58,7 +58,7 @@
 .method private static final createsCycle(Lkotlin/io/path/PathNode;)Z
     .locals 4
 
-    .line 120
+    .line 124
     invoke-virtual {p0}, Lkotlin/io/path/PathNode;->getParent()Lkotlin/io/path/PathNode;
 
     move-result-object v0
@@ -66,7 +66,7 @@
     :goto_0
     if-eqz v0, :cond_2
 
-    .line 122
+    .line 126
     invoke-virtual {v0}, Lkotlin/io/path/PathNode;->getKey()Ljava/lang/Object;
 
     move-result-object v1
@@ -81,7 +81,7 @@
 
     if-eqz v1, :cond_0
 
-    .line 123
+    .line 127
     invoke-virtual {v0}, Lkotlin/io/path/PathNode;->getKey()Ljava/lang/Object;
 
     move-result-object v1
@@ -98,7 +98,7 @@
 
     return v2
 
-    .line 127
+    .line 131
     :cond_0
     :try_start_0
     invoke-virtual {v0}, Lkotlin/io/path/PathNode;->getPath()Ljava/nio/file/Path;
@@ -120,7 +120,7 @@
 
     return v2
 
-    .line 133
+    .line 137
     :catch_0
     :cond_1
     invoke-virtual {v0}, Lkotlin/io/path/PathNode;->getParent()Lkotlin/io/path/PathNode;
@@ -138,7 +138,7 @@
 .method private static final keyOf(Ljava/nio/file/Path;[Ljava/nio/file/LinkOption;)Ljava/lang/Object;
     .locals 2
 
-    .line 108
+    .line 112
     :try_start_0
     array-length v0, p1
 
@@ -162,7 +162,7 @@
 
     move-result-object p0
 
-    const-string p1, "readAttributes(this, A::class.java, *options)"
+    const-string p1, "readAttributes(...)"
 
     invoke-static {p0, p1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
 

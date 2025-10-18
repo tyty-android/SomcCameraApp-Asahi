@@ -21,7 +21,7 @@
 .method constructor <init>()V
     .locals 0
 
-    .line 1522
+    .line 1579
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -46,13 +46,13 @@
         }
     .end annotation
 
-    .line 1526
+    .line 1583
     check-cast p1, Ljp/co/sony/mc/camera/setting/CameraSettings;
 
-    .line 1527
+    .line 1584
     check-cast p3, Ljava/lang/Float;
 
-    invoke-virtual {p1, p3}, Ljp/co/sony/mc/camera/setting/CameraSettings;->setGreenMagenta(Ljava/lang/Float;)Z
+    invoke-static {p1, p3}, Ljp/co/sony/mc/camera/setting/CameraSettings;->-$$Nest$msetBaseZoomRatio(Ljp/co/sony/mc/camera/setting/CameraSettings;Ljava/lang/Float;)Z
 
     move-result p0
 

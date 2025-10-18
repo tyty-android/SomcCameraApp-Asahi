@@ -98,11 +98,7 @@
         }
     .end annotation
 
-    const-string p0, "measurables"
-
-    invoke-static {p1, p0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 498
+    .line 499
     sget-object p0, Landroidx/compose/foundation/layout/IntrinsicMeasureBlocks$VerticalMaxWidth$1$1;->INSTANCE:Landroidx/compose/foundation/layout/IntrinsicMeasureBlocks$VerticalMaxWidth$1$1;
 
     move-object v1, p0
@@ -115,10 +111,10 @@
 
     check-cast v2, Lkotlin/jvm/functions/Function2;
 
-    .line 504
+    .line 505
     sget-object v5, Landroidx/compose/foundation/layout/LayoutOrientation;->Vertical:Landroidx/compose/foundation/layout/LayoutOrientation;
 
-    .line 505
+    .line 506
     sget-object v6, Landroidx/compose/foundation/layout/LayoutOrientation;->Horizontal:Landroidx/compose/foundation/layout/LayoutOrientation;
 
     move-object v0, p1
@@ -127,7 +123,7 @@
 
     move v4, p3
 
-    .line 498
+    .line 499
     invoke-static/range {v0 .. v6}, Landroidx/compose/foundation/layout/RowColumnImplKt;->access$intrinsicSize(Ljava/util/List;Lkotlin/jvm/functions/Function2;Lkotlin/jvm/functions/Function2;IILandroidx/compose/foundation/layout/LayoutOrientation;Landroidx/compose/foundation/layout/LayoutOrientation;)I
 
     move-result p0
@@ -142,7 +138,7 @@
 .method public bridge synthetic invoke(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
 
-    .line 497
+    .line 498
     check-cast p1, Ljava/util/List;
 
     check-cast p2, Ljava/lang/Number;

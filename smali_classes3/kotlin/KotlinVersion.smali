@@ -138,42 +138,21 @@
 .end method
 
 .method private final versionOf(III)I
-    .locals 2
+    .locals 1
 
-    .line 26
-    new-instance p0, Lkotlin/ranges/IntRange;
+    if-ltz p1, :cond_0
 
-    const/4 v0, 0x0
+    const/16 p0, 0x100
 
-    const/16 v1, 0xff
+    if-ge p1, p0, :cond_0
 
-    invoke-direct {p0, v0, v1}, Lkotlin/ranges/IntRange;-><init>(II)V
+    if-ltz p2, :cond_0
 
-    invoke-virtual {p0, p1}, Lkotlin/ranges/IntRange;->contains(I)Z
+    if-ge p2, p0, :cond_0
 
-    move-result p0
+    if-ltz p3, :cond_0
 
-    if-eqz p0, :cond_0
-
-    new-instance p0, Lkotlin/ranges/IntRange;
-
-    invoke-direct {p0, v0, v1}, Lkotlin/ranges/IntRange;-><init>(II)V
-
-    invoke-virtual {p0, p2}, Lkotlin/ranges/IntRange;->contains(I)Z
-
-    move-result p0
-
-    if-eqz p0, :cond_0
-
-    new-instance p0, Lkotlin/ranges/IntRange;
-
-    invoke-direct {p0, v0, v1}, Lkotlin/ranges/IntRange;-><init>(II)V
-
-    invoke-virtual {p0, p3}, Lkotlin/ranges/IntRange;->contains(I)Z
-
-    move-result p0
-
-    if-eqz p0, :cond_0
+    if-ge p3, p0, :cond_0
 
     shl-int/lit8 p0, p1, 0x10
 

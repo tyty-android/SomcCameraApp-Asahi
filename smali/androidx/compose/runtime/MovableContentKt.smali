@@ -70,10 +70,6 @@
         }
     .end annotation
 
-    const-string v0, "content"
-
-    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
     .line 38
     new-instance v0, Landroidx/compose/runtime/MovableContent;
 
@@ -132,10 +128,6 @@
         }
     .end annotation
 
-    const-string v0, "content"
-
-    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
     .line 63
     new-instance v0, Landroidx/compose/runtime/MovableContent;
 
@@ -183,10 +175,6 @@
             ">;"
         }
     .end annotation
-
-    const-string v0, "content"
-
-    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 88
     new-instance v0, Landroidx/compose/runtime/MovableContent;
@@ -249,10 +237,6 @@
             ">;"
         }
     .end annotation
-
-    const-string v0, "content"
-
-    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 115
     new-instance v0, Landroidx/compose/runtime/MovableContent;
@@ -318,10 +302,6 @@
         }
     .end annotation
 
-    const-string v0, "content"
-
-    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
     .line 144
     new-instance v0, Landroidx/compose/runtime/MovableContent;
 
@@ -379,10 +359,6 @@
             ">;"
         }
     .end annotation
-
-    const-string v0, "content"
-
-    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 171
     new-instance v0, Landroidx/compose/runtime/MovableContent;
@@ -443,10 +419,6 @@
             ">;"
         }
     .end annotation
-
-    const-string v0, "content"
-
-    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 198
     new-instance v0, Landroidx/compose/runtime/MovableContent;
@@ -509,10 +481,6 @@
             ">;"
         }
     .end annotation
-
-    const-string v0, "content"
-
-    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 225
     new-instance v0, Landroidx/compose/runtime/MovableContent;
@@ -577,10 +545,6 @@
             ">;"
         }
     .end annotation
-
-    const-string v0, "content"
-
-    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 254
     new-instance v0, Landroidx/compose/runtime/MovableContent;

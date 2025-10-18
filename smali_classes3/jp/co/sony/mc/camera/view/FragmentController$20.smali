@@ -22,7 +22,7 @@
 .method constructor <init>(Ljp/co/sony/mc/camera/view/FragmentController;)V
     .locals 0
 
-    .line 4880
+    .line 5056
     iput-object p1, p0, Ljp/co/sony/mc/camera/view/FragmentController$20;->this$0:Ljp/co/sony/mc/camera/view/FragmentController;
 
     invoke-direct {p0}, Landroid/app/KeyguardManager$KeyguardDismissCallback;-><init>()V

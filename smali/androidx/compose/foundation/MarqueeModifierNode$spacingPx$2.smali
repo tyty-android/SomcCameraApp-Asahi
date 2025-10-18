@@ -71,12 +71,12 @@
 .method public final invoke()Ljava/lang/Integer;
     .locals 3
 
-    .line 218
+    .line 224
     iget-object v0, p0, Landroidx/compose/foundation/MarqueeModifierNode$spacingPx$2;->$spacing:Landroidx/compose/foundation/MarqueeSpacing;
 
     iget-object p0, p0, Landroidx/compose/foundation/MarqueeModifierNode$spacingPx$2;->this$0:Landroidx/compose/foundation/MarqueeModifierNode;
 
-    .line 219
+    .line 225
     move-object v1, p0
 
     check-cast v1, Landroidx/compose/ui/node/DelegatableNode;
@@ -107,7 +107,7 @@
 .method public bridge synthetic invoke()Ljava/lang/Object;
     .locals 0
 
-    .line 217
+    .line 223
     invoke-virtual {p0}, Landroidx/compose/foundation/MarqueeModifierNode$spacingPx$2;->invoke()Ljava/lang/Integer;
 
     move-result-object p0

@@ -14,33 +14,34 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/SourceDebugExtension;
-    value = "SMAP\nCameraStatusNotifier.kt\nKotlin\n*S Kotlin\n*F\n+ 1 CameraStatusNotifier.kt\njp/co/sony/mc/camera/CameraStatusNotifier$DetectedFace\n+ 2 _Collections.kt\nkotlin/collections/CollectionsKt___CollectionsKt\n*L\n1#1,341:1\n1549#2:342\n1620#2,3:343\n1549#2:346\n1620#2,3:347\n*S KotlinDebug\n*F\n+ 1 CameraStatusNotifier.kt\njp/co/sony/mc/camera/CameraStatusNotifier$DetectedFace\n*L\n49#1:342\n49#1:343,3\n67#1:346\n67#1:347,3\n*E\n"
+    value = "SMAP\nCameraStatusNotifier.kt\nKotlin\n*S Kotlin\n*F\n+ 1 CameraStatusNotifier.kt\njp/co/sony/mc/camera/CameraStatusNotifier$DetectedFace\n+ 2 _Collections.kt\nkotlin/collections/CollectionsKt___CollectionsKt\n*L\n1#1,368:1\n1557#2:369\n1628#2,3:370\n1557#2:373\n1628#2,3:374\n*S KotlinDebug\n*F\n+ 1 CameraStatusNotifier.kt\njp/co/sony/mc/camera/CameraStatusNotifier$DetectedFace\n*L\n50#1:369\n50#1:370,3\n68#1:373\n68#1:374,3\n*E\n"
 .end annotation
 
 .annotation runtime Lkotlin/Metadata;
     d1 = {
-        "\u00004\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0010\u0008\n\u0002\u0008\u0003\n\u0002\u0010 \n\u0002\u0018\u0002\n\u0002\u0008\u0008\n\u0002\u0010\u000b\n\u0002\u0008\u0003\n\u0002\u0010\u000e\n\u0000\u0008\u0007\u0018\u00002\u00020\u0001B\r\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u00a2\u0006\u0002\u0010\u0004J\u0013\u0010\u0013\u001a\u00020\u00142\u0008\u0010\u0015\u001a\u0004\u0018\u00010\u0001H\u0096\u0002J\u0008\u0010\u0016\u001a\u00020\u0006H\u0016J\u0008\u0010\u0017\u001a\u00020\u0018H\u0016R\u0011\u0010\u0005\u001a\u00020\u00068F\u00a2\u0006\u0006\u001a\u0004\u0008\u0007\u0010\u0008R\u0017\u0010\t\u001a\u0008\u0012\u0004\u0012\u00020\u000b0\n\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\u000c\u0010\rR\u0013\u0010\u000e\u001a\u0004\u0018\u00010\u000b8F\u00a2\u0006\u0006\u001a\u0004\u0008\u000f\u0010\u0010R\u0011\u0010\u0011\u001a\u00020\u0006\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\u0012\u0010\u0008\u00a8\u0006\u0019"
+        "\u00004\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0003\n\u0002\u0010 \n\u0002\u0018\u0002\n\u0002\u0008\u0003\n\u0002\u0010\u0008\n\u0002\u0008\u0008\n\u0002\u0010\u000b\n\u0002\u0008\u0003\n\u0002\u0010\u000e\n\u0000\u0008\u0007\u0018\u00002\u00020\u0001B\u000f\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u00a2\u0006\u0004\u0008\u0004\u0010\u0005J\u0013\u0010\u0014\u001a\u00020\u00152\u0008\u0010\u0016\u001a\u0004\u0018\u00010\u0001H\u0096\u0002J\u0008\u0010\u0017\u001a\u00020\u000cH\u0016J\u0008\u0010\u0018\u001a\u00020\u0019H\u0016R\u0017\u0010\u0006\u001a\u0008\u0012\u0004\u0012\u00020\u00080\u0007\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\t\u0010\nR\u0011\u0010\u000b\u001a\u00020\u000c\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\r\u0010\u000eR\u0013\u0010\u000f\u001a\u0004\u0018\u00010\u00088F\u00a2\u0006\u0006\u001a\u0004\u0008\u0010\u0010\u0011R\u0011\u0010\u0012\u001a\u00020\u000c8F\u00a2\u0006\u0006\u001a\u0004\u0008\u0013\u0010\u000e\u00a8\u0006\u001a"
     }
     d2 = {
         "Ljp/co/sony/mc/camera/CameraStatusNotifier$DetectedFace;",
         "",
         "faceDetectionResult",
         "Ljp/co/sony/mc/camera/device/CaptureResultNotifier$FaceDetectionResult;",
+        "<init>",
         "(Ljp/co/sony/mc/camera/device/CaptureResultNotifier$FaceDetectionResult;)V",
-        "faceCount",
-        "",
-        "getFaceCount",
-        "()I",
         "faceList",
         "",
         "Ljp/co/sony/mc/camera/CameraStatusNotifier$ExtFace;",
         "getFaceList",
         "()Ljava/util/List;",
+        "selectedFaceIndex",
+        "",
+        "getSelectedFaceIndex",
+        "()I",
         "selectedFace",
         "getSelectedFace",
         "()Ljp/co/sony/mc/camera/CameraStatusNotifier$ExtFace;",
-        "selectedFaceIndex",
-        "getSelectedFaceIndex",
+        "faceCount",
+        "getFaceCount",
         "equals",
         "",
         "other",
@@ -51,8 +52,8 @@
     }
     k = 0x1
     mv = {
-        0x1,
-        0x9,
+        0x2,
+        0x0,
         0x0
     }
     xi = 0x30
@@ -91,15 +92,15 @@
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 38
+    .line 39
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 42
+    .line 43
     iget v0, p1, Ljp/co/sony/mc/camera/device/CaptureResultNotifier$FaceDetectionResult;->indexOfSelectedFace:I
 
     iput v0, p0, Ljp/co/sony/mc/camera/CameraStatusNotifier$DetectedFace;->selectedFaceIndex:I
 
-    .line 49
+    .line 50
     iget-object p1, p1, Ljp/co/sony/mc/camera/device/CaptureResultNotifier$FaceDetectionResult;->extFaceList:Ljava/util/List;
 
     const-string v0, "extFaceList"
@@ -108,7 +109,7 @@
 
     check-cast p1, Ljava/lang/Iterable;
 
-    .line 342
+    .line 369
     new-instance v0, Ljava/util/ArrayList;
 
     const/16 v1, 0xa
@@ -121,7 +122,7 @@
 
     check-cast v0, Ljava/util/Collection;
 
-    .line 343
+    .line 370
     invoke-interface {p1}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
 
     move-result-object p1
@@ -137,25 +138,25 @@
 
     move-result-object v1
 
-    .line 344
+    .line 371
     check-cast v1, Ljp/co/sony/mc/camera/device/CaptureResultNotifier$ExtFace;
 
-    .line 50
+    .line 51
     new-instance v8, Ljp/co/sony/mc/camera/CameraStatusNotifier$ExtFace;
 
-    .line 51
+    .line 52
     iget-object v3, v1, Ljp/co/sony/mc/camera/device/CaptureResultNotifier$ExtFace;->rect:Landroid/graphics/Rect;
 
-    .line 52
+    .line 53
     iget-object v4, v1, Ljp/co/sony/mc/camera/device/CaptureResultNotifier$ExtFace;->eyePosition:Landroid/graphics/Point;
 
-    .line 53
+    .line 54
     iget v5, v1, Ljp/co/sony/mc/camera/device/CaptureResultNotifier$ExtFace;->id:I
 
-    .line 54
+    .line 55
     iget v6, v1, Ljp/co/sony/mc/camera/device/CaptureResultNotifier$ExtFace;->trackingId:I
 
-    .line 55
+    .line 56
     iget-object v7, v1, Ljp/co/sony/mc/camera/device/CaptureResultNotifier$ExtFace;->faceRectType:Ljp/co/sony/mc/camera/device/CaptureResultNotifier$FaceRectType;
 
     const-string v1, "faceRectType"
@@ -164,19 +165,19 @@
 
     move-object v2, v8
 
-    .line 50
+    .line 51
     invoke-direct/range {v2 .. v7}, Ljp/co/sony/mc/camera/CameraStatusNotifier$ExtFace;-><init>(Landroid/graphics/Rect;Landroid/graphics/Point;IILjp/co/sony/mc/camera/device/CaptureResultNotifier$FaceRectType;)V
 
-    .line 344
+    .line 371
     invoke-interface {v0, v8}, Ljava/util/Collection;->add(Ljava/lang/Object;)Z
 
     goto :goto_0
 
-    .line 345
+    .line 372
     :cond_0
     check-cast v0, Ljava/util/List;
 
-    .line 49
+    .line 50
     iput-object v0, p0, Ljp/co/sony/mc/camera/CameraStatusNotifier$DetectedFace;->faceList:Ljava/util/List;
 
     return-void
@@ -187,12 +188,12 @@
 .method public equals(Ljava/lang/Object;)Z
     .locals 2
 
-    .line 60
+    .line 61
     instance-of v0, p1, Ljp/co/sony/mc/camera/CameraStatusNotifier$DetectedFace;
 
     if-eqz v0, :cond_0
 
-    .line 61
+    .line 62
     iget-object v0, p0, Ljp/co/sony/mc/camera/CameraStatusNotifier$DetectedFace;->faceList:Ljava/util/List;
 
     check-cast p1, Ljp/co/sony/mc/camera/CameraStatusNotifier$DetectedFace;
@@ -205,7 +206,7 @@
 
     if-eqz v0, :cond_0
 
-    .line 62
+    .line 63
     iget p0, p0, Ljp/co/sony/mc/camera/CameraStatusNotifier$DetectedFace;->selectedFaceIndex:I
 
     iget p1, p1, Ljp/co/sony/mc/camera/CameraStatusNotifier$DetectedFace;->selectedFaceIndex:I
@@ -226,7 +227,7 @@
 .method public final getFaceCount()I
     .locals 0
 
-    .line 46
+    .line 47
     iget-object p0, p0, Ljp/co/sony/mc/camera/CameraStatusNotifier$DetectedFace;->faceList:Ljava/util/List;
 
     check-cast p0, Ljava/util/Collection;
@@ -249,7 +250,7 @@
         }
     .end annotation
 
-    .line 41
+    .line 42
     iget-object p0, p0, Ljp/co/sony/mc/camera/CameraStatusNotifier$DetectedFace;->faceList:Ljava/util/List;
 
     return-object p0
@@ -258,7 +259,7 @@
 .method public final getSelectedFace()Ljp/co/sony/mc/camera/CameraStatusNotifier$ExtFace;
     .locals 1
 
-    .line 44
+    .line 45
     iget-object v0, p0, Ljp/co/sony/mc/camera/CameraStatusNotifier$DetectedFace;->faceList:Ljava/util/List;
 
     iget p0, p0, Ljp/co/sony/mc/camera/CameraStatusNotifier$DetectedFace;->selectedFaceIndex:I
@@ -275,7 +276,7 @@
 .method public final getSelectedFaceIndex()I
     .locals 0
 
-    .line 42
+    .line 43
     iget p0, p0, Ljp/co/sony/mc/camera/CameraStatusNotifier$DetectedFace;->selectedFaceIndex:I
 
     return p0
@@ -284,7 +285,7 @@
 .method public hashCode()I
     .locals 1
 
-    .line 64
+    .line 65
     iget-object v0, p0, Ljp/co/sony/mc/camera/CameraStatusNotifier$DetectedFace;->faceList:Ljava/util/List;
 
     invoke-virtual {v0}, Ljava/lang/Object;->hashCode()I
@@ -307,12 +308,12 @@
 .method public toString()Ljava/lang/String;
     .locals 5
 
-    .line 67
+    .line 68
     iget-object v0, p0, Ljp/co/sony/mc/camera/CameraStatusNotifier$DetectedFace;->faceList:Ljava/util/List;
 
     check-cast v0, Ljava/lang/Iterable;
 
-    .line 346
+    .line 373
     new-instance v1, Ljava/util/ArrayList;
 
     const/16 v2, 0xa
@@ -325,7 +326,7 @@
 
     check-cast v1, Ljava/util/Collection;
 
-    .line 347
+    .line 374
     invoke-interface {v0}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
 
     move-result-object v0
@@ -341,10 +342,10 @@
 
     move-result-object v2
 
-    .line 348
+    .line 375
     check-cast v2, Ljp/co/sony/mc/camera/CameraStatusNotifier$ExtFace;
 
-    .line 67
+    .line 68
     new-instance v3, Ljava/lang/StringBuilder;
 
     const-string v4, "\t"
@@ -365,16 +366,16 @@
 
     move-result-object v2
 
-    .line 348
+    .line 375
     invoke-interface {v1, v2}, Ljava/util/Collection;->add(Ljava/lang/Object;)Z
 
     goto :goto_0
 
-    .line 349
+    .line 376
     :cond_0
     check-cast v1, Ljava/util/List;
 
-    .line 68
+    .line 69
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/CameraStatusNotifier$DetectedFace;->getSelectedFace()Ljp/co/sony/mc/camera/CameraStatusNotifier$ExtFace;
 
     move-result-object p0

@@ -19,7 +19,7 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/SourceDebugExtension;
-    value = "SMAP\nSlidingWindow.kt\nKotlin\n*S Kotlin\n*F\n+ 1 SlidingWindow.kt\nkotlin/collections/RingBuffer\n+ 2 fake.kt\nkotlin/jvm/internal/FakeKt\n*L\n1#1,207:1\n205#1:209\n205#1:210\n205#1:211\n1#2:208\n*S KotlinDebug\n*F\n+ 1 SlidingWindow.kt\nkotlin/collections/RingBuffer\n*L\n106#1:209\n176#1:210\n189#1:211\n*E\n"
+    value = "SMAP\nSlidingWindow.kt\nKotlin\n*S Kotlin\n*F\n+ 1 SlidingWindow.kt\nkotlin/collections/RingBuffer\n+ 2 fake.kt\nkotlin/jvm/internal/FakeKt\n*L\n1#1,206:1\n204#1:208\n204#1:209\n204#1:210\n1#2:207\n*S KotlinDebug\n*F\n+ 1 SlidingWindow.kt\nkotlin/collections/RingBuffer\n*L\n106#1:208\n175#1:209\n188#1:210\n*E\n"
 .end annotation
 
 .annotation runtime Lkotlin/Metadata;
@@ -228,7 +228,7 @@
 
     add-int/2addr p1, p2
 
-    .line 205
+    .line 204
     invoke-static {p0}, Lkotlin/collections/RingBuffer;->access$getCapacity$p(Lkotlin/collections/RingBuffer;)I
 
     move-result p0
@@ -248,14 +248,14 @@
         }
     .end annotation
 
-    .line 172
+    .line 171
     invoke-virtual {p0}, Lkotlin/collections/RingBuffer;->isFull()Z
 
     move-result v0
 
     if-nez v0, :cond_0
 
-    .line 176
+    .line 175
     iget-object v0, p0, Lkotlin/collections/RingBuffer;->buffer:[Ljava/lang/Object;
 
     iget v1, p0, Lkotlin/collections/RingBuffer;->startIndex:I
@@ -266,17 +266,17 @@
 
     add-int/2addr v1, v2
 
-    .line 210
+    .line 209
     invoke-static {p0}, Lkotlin/collections/RingBuffer;->access$getCapacity$p(Lkotlin/collections/RingBuffer;)I
 
     move-result v2
 
     rem-int/2addr v1, v2
 
-    .line 176
+    .line 175
     aput-object p1, v0, v1
 
-    .line 177
+    .line 176
     invoke-virtual {p0}, Lkotlin/collections/RingBuffer;->size()I
 
     move-result p1
@@ -287,7 +287,7 @@
 
     return-void
 
-    .line 173
+    .line 172
     :cond_0
     new-instance p0, Ljava/lang/IllegalStateException;
 
@@ -308,7 +308,7 @@
         }
     .end annotation
 
-    .line 163
+    .line 162
     iget v0, p0, Lkotlin/collections/RingBuffer;->capacity:I
 
     shr-int/lit8 v1, v0, 0x1
@@ -321,7 +321,7 @@
 
     move-result p1
 
-    .line 164
+    .line 163
     iget v0, p0, Lkotlin/collections/RingBuffer;->startIndex:I
 
     if-nez v0, :cond_0
@@ -332,7 +332,7 @@
 
     move-result-object p1
 
-    const-string v0, "copyOf(this, newSize)"
+    const-string v0, "copyOf(...)"
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
 
@@ -345,7 +345,7 @@
 
     move-result-object p1
 
-    .line 165
+    .line 164
     :goto_0
     new-instance v0, Lkotlin/collections/RingBuffer;
 
@@ -382,7 +382,7 @@
 
     add-int/2addr v1, p1
 
-    .line 209
+    .line 208
     invoke-static {p0}, Lkotlin/collections/RingBuffer;->access$getCapacity$p(Lkotlin/collections/RingBuffer;)I
 
     move-result p0
@@ -451,7 +451,7 @@
 
     if-ltz p1, :cond_3
 
-    .line 185
+    .line 184
     invoke-virtual {p0}, Lkotlin/collections/RingBuffer;->size()I
 
     move-result v0
@@ -460,12 +460,12 @@
 
     if-lez p1, :cond_1
 
-    .line 188
+    .line 187
     iget v0, p0, Lkotlin/collections/RingBuffer;->startIndex:I
 
     add-int v1, v0, p1
 
-    .line 211
+    .line 210
     invoke-static {p0}, Lkotlin/collections/RingBuffer;->access$getCapacity$p(Lkotlin/collections/RingBuffer;)I
 
     move-result v2
@@ -476,14 +476,14 @@
 
     if-le v0, v1, :cond_0
 
-    .line 192
+    .line 191
     iget-object v3, p0, Lkotlin/collections/RingBuffer;->buffer:[Ljava/lang/Object;
 
     iget v4, p0, Lkotlin/collections/RingBuffer;->capacity:I
 
     invoke-static {v3, v2, v0, v4}, Lkotlin/collections/ArraysKt;->fill([Ljava/lang/Object;Ljava/lang/Object;II)V
 
-    .line 193
+    .line 192
     iget-object v0, p0, Lkotlin/collections/RingBuffer;->buffer:[Ljava/lang/Object;
 
     const/4 v3, 0x0
@@ -492,17 +492,17 @@
 
     goto :goto_0
 
-    .line 195
+    .line 194
     :cond_0
     iget-object v3, p0, Lkotlin/collections/RingBuffer;->buffer:[Ljava/lang/Object;
 
     invoke-static {v3, v2, v0, v1}, Lkotlin/collections/ArraysKt;->fill([Ljava/lang/Object;Ljava/lang/Object;II)V
 
-    .line 198
+    .line 197
     :goto_0
     iput v1, p0, Lkotlin/collections/RingBuffer;->startIndex:I
 
-    .line 199
+    .line 198
     invoke-virtual {p0}, Lkotlin/collections/RingBuffer;->size()I
 
     move-result v0
@@ -514,7 +514,7 @@
     :cond_1
     return-void
 
-    .line 185
+    .line 184
     :cond_2
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -554,7 +554,7 @@
 
     throw p1
 
-    .line 184
+    .line 183
     :cond_3
     new-instance p0, Ljava/lang/StringBuilder;
 
@@ -584,7 +584,7 @@
 .method public toArray()[Ljava/lang/Object;
     .locals 1
 
-    .line 155
+    .line 154
     invoke-virtual {p0}, Lkotlin/collections/RingBuffer;->size()I
 
     move-result v0
@@ -629,7 +629,7 @@
 
     move-result-object p1
 
-    const-string v0, "copyOf(this, newSize)"
+    const-string v0, "copyOf(...)"
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
 
@@ -684,24 +684,11 @@
 
     goto :goto_1
 
-    .line 149
+    .line 150
     :cond_2
-    array-length v0, p1
+    invoke-static {v0, p1}, Lkotlin/collections/CollectionsKt;->terminateCollectionToArray(I[Ljava/lang/Object;)[Ljava/lang/Object;
 
-    invoke-virtual {p0}, Lkotlin/collections/RingBuffer;->size()I
+    move-result-object p0
 
-    move-result v1
-
-    if-le v0, v1, :cond_3
-
-    invoke-virtual {p0}, Lkotlin/collections/RingBuffer;->size()I
-
-    move-result p0
-
-    const/4 v0, 0x0
-
-    aput-object v0, p1, p0
-
-    :cond_3
-    return-object p1
+    return-object p0
 .end method

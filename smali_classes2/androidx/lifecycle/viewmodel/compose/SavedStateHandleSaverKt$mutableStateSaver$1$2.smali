@@ -1,6 +1,6 @@
 .class final Landroidx/lifecycle/viewmodel/compose/SavedStateHandleSaverKt$mutableStateSaver$1$2;
 .super Lkotlin/jvm/internal/Lambda;
-.source "SavedStateHandleSaver.kt"
+.source "SavedStateHandleSaver.android.kt"
 
 # interfaces
 .implements Lkotlin/jvm/functions/Function1;
@@ -104,12 +104,12 @@
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 188
+    .line 191
     instance-of v0, p1, Landroidx/compose/runtime/snapshots/SnapshotMutableState;
 
     if-eqz v0, :cond_1
 
-    .line 190
+    .line 193
     invoke-interface {p1}, Landroidx/compose/runtime/MutableState;->getValue()Ljava/lang/Object;
 
     move-result-object v0
@@ -133,7 +133,7 @@
     :cond_0
     const/4 p0, 0x0
 
-    .line 191
+    .line 194
     :goto_0
     check-cast p1, Landroidx/compose/runtime/snapshots/SnapshotMutableState;
 
@@ -141,23 +141,23 @@
 
     move-result-object p1
 
-    const-string v0, "null cannot be cast to non-null type androidx.compose.runtime.SnapshotMutationPolicy<T of androidx.lifecycle.viewmodel.compose.SavedStateHandleSaverKt.mutableStateSaver$lambda$0?>"
+    const-string v0, "null cannot be cast to non-null type androidx.compose.runtime.SnapshotMutationPolicy<T of androidx.lifecycle.viewmodel.compose.SavedStateHandleSaverKt.mutableStateSaver$lambda$5?>"
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 189
+    .line 192
     invoke-static {p0, p1}, Landroidx/compose/runtime/SnapshotStateKt;->mutableStateOf(Ljava/lang/Object;Landroidx/compose/runtime/SnapshotMutationPolicy;)Landroidx/compose/runtime/MutableState;
 
     move-result-object p0
 
-    .line 191
-    const-string p1, "null cannot be cast to non-null type androidx.compose.runtime.MutableState<T of androidx.lifecycle.viewmodel.compose.SavedStateHandleSaverKt.mutableStateSaver$lambda$0>"
+    .line 194
+    const-string p1, "null cannot be cast to non-null type androidx.compose.runtime.MutableState<T of androidx.lifecycle.viewmodel.compose.SavedStateHandleSaverKt.mutableStateSaver$lambda$5>"
 
     invoke-static {p0, p1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;Ljava/lang/String;)V
 
     return-object p0
 
-    .line 188
+    .line 191
     :cond_1
     new-instance p0, Ljava/lang/IllegalArgumentException;
 
@@ -175,7 +175,7 @@
 .method public bridge synthetic invoke(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
 
-    .line 179
+    .line 182
     check-cast p1, Landroidx/compose/runtime/MutableState;
 
     invoke-virtual {p0, p1}, Landroidx/lifecycle/viewmodel/compose/SavedStateHandleSaverKt$mutableStateSaver$1$2;->invoke(Landroidx/compose/runtime/MutableState;)Landroidx/compose/runtime/MutableState;

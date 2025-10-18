@@ -116,10 +116,6 @@
 .method public final invoke(Landroidx/compose/ui/text/TextLayoutResult;)V
     .locals 1
 
-    const-string v0, "it"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
     .line 97
     iget-object v0, p0, Landroidx/compose/foundation/text/ClickableTextKt$ClickableText$2$1;->$layoutResult:Landroidx/compose/runtime/MutableState;
 

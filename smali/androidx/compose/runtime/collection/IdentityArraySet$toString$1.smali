@@ -87,11 +87,7 @@
         }
     .end annotation
 
-    const-string p0, "it"
-
-    invoke-static {p1, p0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 379
+    .line 391
     invoke-virtual {p1}, Ljava/lang/Object;->toString()Ljava/lang/String;
 
     move-result-object p0
@@ -104,7 +100,7 @@
 .method public bridge synthetic invoke(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
 
-    .line 379
+    .line 391
     invoke-virtual {p0, p1}, Landroidx/compose/runtime/collection/IdentityArraySet$toString$1;->invoke(Ljava/lang/Object;)Ljava/lang/CharSequence;
 
     move-result-object p0

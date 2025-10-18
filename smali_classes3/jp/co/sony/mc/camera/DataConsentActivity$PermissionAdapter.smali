@@ -18,7 +18,7 @@
 .method private constructor <init>()V
     .locals 0
 
-    .line 420
+    .line 417
     invoke-direct {p0}, Landroid/widget/BaseAdapter;-><init>()V
 
     return-void
@@ -37,7 +37,7 @@
 .method public getCount()I
     .locals 0
 
-    .line 424
+    .line 421
     invoke-static {}, Ljp/co/sony/mc/camera/DataConsentActivity$PermissionGroup;->values()[Ljp/co/sony/mc/camera/DataConsentActivity$PermissionGroup;
 
     move-result-object p0
@@ -50,7 +50,7 @@
 .method public getItem(I)Ljava/lang/Object;
     .locals 0
 
-    .line 429
+    .line 426
     invoke-static {}, Ljp/co/sony/mc/camera/DataConsentActivity$PermissionGroup;->values()[Ljp/co/sony/mc/camera/DataConsentActivity$PermissionGroup;
 
     move-result-object p0
@@ -73,7 +73,7 @@
 
     if-nez p2, :cond_0
 
-    .line 441
+    .line 438
     invoke-virtual {p3}, Landroid/view/ViewGroup;->getContext()Landroid/content/Context;
 
     move-result-object p2
@@ -86,12 +86,12 @@
 
     const/4 v1, 0x0
 
-    .line 442
+    .line 439
     invoke-virtual {p2, v0, v1}, Landroid/view/LayoutInflater;->inflate(ILandroid/view/ViewGroup;)Landroid/view/View;
 
     move-result-object p2
 
-    .line 445
+    .line 442
     :cond_0
     invoke-virtual {p0, p1}, Ljp/co/sony/mc/camera/DataConsentActivity$PermissionAdapter;->getItem(I)Ljava/lang/Object;
 
@@ -99,25 +99,25 @@
 
     check-cast p0, Ljp/co/sony/mc/camera/DataConsentActivity$PermissionGroup;
 
-    const p1, 0x7f09032d
+    const p1, 0x7f09032c
 
-    .line 446
+    .line 443
     invoke-virtual {p2, p1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
     move-result-object p1
 
     check-cast p1, Landroid/widget/TextView;
 
-    const v0, 0x7f090162
+    const v0, 0x7f090161
 
-    .line 447
+    .line 444
     invoke-virtual {p2, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
     move-result-object v0
 
     check-cast v0, Landroid/widget/TextView;
 
-    .line 448
+    .line 445
     invoke-virtual {p3}, Landroid/view/ViewGroup;->getContext()Landroid/content/Context;
 
     move-result-object p3
@@ -128,7 +128,7 @@
 
     invoke-virtual {p1, p3}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
-    .line 449
+    .line 446
     iget p0, p0, Ljp/co/sony/mc/camera/DataConsentActivity$PermissionGroup;->mPermissionDescriptionId:I
 
     invoke-virtual {v0, p0}, Landroid/widget/TextView;->setText(I)V

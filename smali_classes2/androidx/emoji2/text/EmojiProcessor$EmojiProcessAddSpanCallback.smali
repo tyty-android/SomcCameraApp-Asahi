@@ -36,13 +36,13 @@
 .method constructor <init>(Landroidx/emoji2/text/UnprecomputeTextOnModificationSpannable;Landroidx/emoji2/text/EmojiCompat$SpanFactory;)V
     .locals 0
 
-    .line 913
+    .line 914
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 914
+    .line 915
     iput-object p1, p0, Landroidx/emoji2/text/EmojiProcessor$EmojiProcessAddSpanCallback;->spannable:Landroidx/emoji2/text/UnprecomputeTextOnModificationSpannable;
 
-    .line 915
+    .line 916
     iput-object p2, p0, Landroidx/emoji2/text/EmojiProcessor$EmojiProcessAddSpanCallback;->mSpanFactory:Landroidx/emoji2/text/EmojiCompat$SpanFactory;
 
     return-void
@@ -53,7 +53,7 @@
 .method public getResult()Landroidx/emoji2/text/UnprecomputeTextOnModificationSpannable;
     .locals 0
 
-    .line 937
+    .line 938
     iget-object p0, p0, Landroidx/emoji2/text/EmojiProcessor$EmojiProcessAddSpanCallback;->spannable:Landroidx/emoji2/text/UnprecomputeTextOnModificationSpannable;
 
     return-object p0
@@ -62,7 +62,7 @@
 .method public bridge synthetic getResult()Ljava/lang/Object;
     .locals 0
 
-    .line 906
+    .line 907
     invoke-virtual {p0}, Landroidx/emoji2/text/EmojiProcessor$EmojiProcessAddSpanCallback;->getResult()Landroidx/emoji2/text/UnprecomputeTextOnModificationSpannable;
 
     move-result-object p0
@@ -73,7 +73,7 @@
 .method public handleEmoji(Ljava/lang/CharSequence;IILandroidx/emoji2/text/TypefaceEmojiRasterizer;)Z
     .locals 3
 
-    .line 921
+    .line 922
     invoke-virtual {p4}, Landroidx/emoji2/text/TypefaceEmojiRasterizer;->isPreferredSystemRender()Z
 
     move-result v0
@@ -84,26 +84,26 @@
 
     return v1
 
-    .line 924
+    .line 925
     :cond_0
     iget-object v0, p0, Landroidx/emoji2/text/EmojiProcessor$EmojiProcessAddSpanCallback;->spannable:Landroidx/emoji2/text/UnprecomputeTextOnModificationSpannable;
 
     if-nez v0, :cond_2
 
-    .line 925
+    .line 926
     new-instance v0, Landroidx/emoji2/text/UnprecomputeTextOnModificationSpannable;
 
-    .line 926
+    .line 927
     instance-of v2, p1, Landroid/text/Spannable;
 
     if-eqz v2, :cond_1
 
-    .line 927
+    .line 928
     check-cast p1, Landroid/text/Spannable;
 
     goto :goto_0
 
-    .line 928
+    .line 929
     :cond_1
     new-instance v2, Landroid/text/SpannableString;
 
@@ -116,7 +116,7 @@
 
     iput-object v0, p0, Landroidx/emoji2/text/EmojiProcessor$EmojiProcessAddSpanCallback;->spannable:Landroidx/emoji2/text/UnprecomputeTextOnModificationSpannable;
 
-    .line 930
+    .line 931
     :cond_2
     iget-object p1, p0, Landroidx/emoji2/text/EmojiProcessor$EmojiProcessAddSpanCallback;->mSpanFactory:Landroidx/emoji2/text/EmojiCompat$SpanFactory;
 
@@ -124,7 +124,7 @@
 
     move-result-object p1
 
-    .line 931
+    .line 932
     iget-object p0, p0, Landroidx/emoji2/text/EmojiProcessor$EmojiProcessAddSpanCallback;->spannable:Landroidx/emoji2/text/UnprecomputeTextOnModificationSpannable;
 
     const/16 p4, 0x21

@@ -5,7 +5,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/SourceDebugExtension;
-    value = "SMAP\nLayoutNodeDrawScope.kt\nKotlin\n*S Kotlin\n*F\n+ 1 LayoutNodeDrawScope.kt\nandroidx/compose/ui/node/LayoutNodeDrawScopeKt\n+ 2 NodeKind.kt\nandroidx/compose/ui/node/Nodes\n*L\n1#1,127:1\n74#2:128\n72#2:129\n*S KotlinDebug\n*F\n+ 1 LayoutNodeDrawScope.kt\nandroidx/compose/ui/node/LayoutNodeDrawScopeKt\n*L\n114#1:128\n115#1:129\n*E\n"
+    value = "SMAP\nLayoutNodeDrawScope.kt\nKotlin\n*S Kotlin\n*F\n+ 1 LayoutNodeDrawScope.kt\nandroidx/compose/ui/node/LayoutNodeDrawScopeKt\n+ 2 NodeKind.kt\nandroidx/compose/ui/node/Nodes\n*L\n1#1,128:1\n74#2:129\n72#2:130\n*S KotlinDebug\n*F\n+ 1 LayoutNodeDrawScope.kt\nandroidx/compose/ui/node/LayoutNodeDrawScopeKt\n*L\n114#1:129\n115#1:130\n*E\n"
 .end annotation
 
 .annotation runtime Lkotlin/Metadata;
@@ -45,14 +45,14 @@
 
     const/4 v0, 0x4
 
-    .line 128
+    .line 129
     invoke-static {v0}, Landroidx/compose/ui/node/NodeKind;->constructor-impl(I)I
 
     move-result v0
 
     const/4 v1, 0x2
 
-    .line 129
+    .line 130
     invoke-static {v1}, Landroidx/compose/ui/node/NodeKind;->constructor-impl(I)I
 
     move-result v1

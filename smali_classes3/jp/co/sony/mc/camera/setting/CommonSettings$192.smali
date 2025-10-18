@@ -21,7 +21,7 @@
 .method constructor <init>()V
     .locals 0
 
-    .line 1775
+    .line 1781
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -42,8 +42,8 @@
         }
     .end annotation
 
-    .line 1779
-    invoke-static {}, Ljp/co/sony/mc/camera/configuration/parameters/YoutubeAccount;->getDefaultValue()Ljava/lang/String;
+    .line 1785
+    invoke-static {}, Ljp/co/sony/mc/camera/configuration/parameters/YouTubeLiveChatIdKey;->getDefaultValue()Ljava/lang/String;
 
     move-result-object p0
 

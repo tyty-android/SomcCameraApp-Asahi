@@ -1,6 +1,6 @@
 .class public final Landroidx/compose/ui/tooling/CompositionDataRecord$Companion;
 .super Ljava/lang/Object;
-.source "Inspectable.kt"
+.source "Inspectable.android.kt"
 
 
 # annotations
@@ -55,7 +55,7 @@
 .method private constructor <init>()V
     .locals 0
 
-    .line 34
+    .line 36
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -66,7 +66,7 @@
 .method public final create()Landroidx/compose/ui/tooling/CompositionDataRecord;
     .locals 0
 
-    .line 35
+    .line 37
     new-instance p0, Landroidx/compose/ui/tooling/CompositionDataRecordImpl;
 
     invoke-direct {p0}, Landroidx/compose/ui/tooling/CompositionDataRecordImpl;-><init>()V

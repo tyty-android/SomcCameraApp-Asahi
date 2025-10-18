@@ -21,7 +21,7 @@
 .method constructor <init>()V
     .locals 0
 
-    .line 3226
+    .line 3319
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -42,15 +42,15 @@
         }
     .end annotation
 
-    .line 3230
+    .line 3323
     check-cast p1, Ljp/co/sony/mc/camera/setting/CameraSettings;
 
-    .line 3231
-    invoke-virtual {p1}, Ljp/co/sony/mc/camera/setting/CameraSettings;->getSemiAutoMode()Ljp/co/sony/mc/camera/configuration/parameters/SemiAutoMode;
+    .line 3324
+    invoke-static {p1}, Ljp/co/sony/mc/camera/setting/CameraSettings;->-$$Nest$mgetFlash(Ljp/co/sony/mc/camera/setting/CameraSettings;)Ljp/co/sony/mc/camera/configuration/parameters/Flash;
 
     move-result-object p0
 
-    invoke-static {p1}, Ljp/co/sony/mc/camera/setting/CameraSettings;->-$$Nest$fgetmSemiAutoMode(Ljp/co/sony/mc/camera/setting/CameraSettings;)Ljp/co/sony/mc/camera/configuration/parameters/SemiAutoMode;
+    invoke-static {p1}, Ljp/co/sony/mc/camera/setting/CameraSettings;->-$$Nest$fgetmFlash(Ljp/co/sony/mc/camera/setting/CameraSettings;)Ljp/co/sony/mc/camera/configuration/parameters/Flash;
 
     move-result-object p1
 

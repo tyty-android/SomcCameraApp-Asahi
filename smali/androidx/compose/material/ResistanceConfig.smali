@@ -4,6 +4,10 @@
 
 
 # annotations
+.annotation runtime Lkotlin/Deprecated;
+    message = "Material\'s Swipeable has been replaced by Foundation\'s AnchoredDraggable APIs. Please see developer.android.com for an overview of the changes and a migration guide."
+.end annotation
+
 .annotation runtime Lkotlin/Metadata;
     d1 = {
         "\u0000&\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0010\u0007\n\u0002\u0008\n\n\u0002\u0010\u000b\n\u0002\u0008\u0002\n\u0002\u0010\u0008\n\u0000\n\u0002\u0010\u000e\n\u0000\u0008\u0007\u0018\u00002\u00020\u0001B!\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\u0008\u0008\u0002\u0010\u0004\u001a\u00020\u0003\u0012\u0008\u0008\u0002\u0010\u0005\u001a\u00020\u0003\u00a2\u0006\u0002\u0010\u0006J\u000e\u0010\u000b\u001a\u00020\u00032\u0006\u0010\u000c\u001a\u00020\u0003J\u0013\u0010\r\u001a\u00020\u000e2\u0008\u0010\u000f\u001a\u0004\u0018\u00010\u0001H\u0096\u0002J\u0008\u0010\u0010\u001a\u00020\u0011H\u0016J\u0008\u0010\u0012\u001a\u00020\u0013H\u0016R\u0011\u0010\u0002\u001a\u00020\u0003\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\u0007\u0010\u0008R\u0011\u0010\u0005\u001a\u00020\u0003\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\t\u0010\u0008R\u0011\u0010\u0004\u001a\u00020\u0003\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\n\u0010\u0008\u00a8\u0006\u0014"
@@ -63,16 +67,16 @@
 .method public constructor <init>(FFF)V
     .locals 0
 
-    .line 686
+    .line 698
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 689
+    .line 702
     iput p1, p0, Landroidx/compose/material/ResistanceConfig;->basis:F
 
-    .line 691
+    .line 704
     iput p2, p0, Landroidx/compose/material/ResistanceConfig;->factorAtMin:F
 
-    .line 693
+    .line 706
     iput p3, p0, Landroidx/compose/material/ResistanceConfig;->factorAtMax:F
 
     return-void
@@ -96,7 +100,7 @@
 
     move p3, v0
 
-    .line 687
+    .line 700
     :cond_1
     invoke-direct {p0, p1, p2, p3}, Landroidx/compose/material/ResistanceConfig;-><init>(FFF)V
 
@@ -114,7 +118,7 @@
 
     if-gez v1, :cond_0
 
-    .line 696
+    .line 709
     iget v1, p0, Landroidx/compose/material/ResistanceConfig;->factorAtMin:F
 
     goto :goto_0
@@ -129,7 +133,7 @@
 
     return v0
 
-    .line 698
+    .line 711
     :cond_1
     iget v0, p0, Landroidx/compose/material/ResistanceConfig;->basis:F
 
@@ -143,7 +147,7 @@
 
     move-result p1
 
-    .line 699
+    .line 712
     iget p0, p0, Landroidx/compose/material/ResistanceConfig;->basis:F
 
     div-float/2addr p0, v1
@@ -180,7 +184,7 @@
 
     return v0
 
-    .line 704
+    .line 717
     :cond_0
     instance-of v1, p1, Landroidx/compose/material/ResistanceConfig;
 
@@ -190,7 +194,7 @@
 
     return v2
 
-    .line 706
+    .line 719
     :cond_1
     iget v1, p0, Landroidx/compose/material/ResistanceConfig;->basis:F
 
@@ -202,7 +206,7 @@
 
     if-nez v1, :cond_2
 
-    .line 707
+    .line 720
     iget v1, p0, Landroidx/compose/material/ResistanceConfig;->factorAtMin:F
 
     iget v3, p1, Landroidx/compose/material/ResistanceConfig;->factorAtMin:F
@@ -211,7 +215,7 @@
 
     if-nez v1, :cond_2
 
-    .line 708
+    .line 721
     iget p0, p0, Landroidx/compose/material/ResistanceConfig;->factorAtMax:F
 
     iget p1, p1, Landroidx/compose/material/ResistanceConfig;->factorAtMax:F
@@ -229,7 +233,7 @@
 .method public final getBasis()F
     .locals 0
 
-    .line 689
+    .line 702
     iget p0, p0, Landroidx/compose/material/ResistanceConfig;->basis:F
 
     return p0
@@ -238,7 +242,7 @@
 .method public final getFactorAtMax()F
     .locals 0
 
-    .line 693
+    .line 706
     iget p0, p0, Landroidx/compose/material/ResistanceConfig;->factorAtMax:F
 
     return p0
@@ -247,7 +251,7 @@
 .method public final getFactorAtMin()F
     .locals 0
 
-    .line 691
+    .line 704
     iget p0, p0, Landroidx/compose/material/ResistanceConfig;->factorAtMin:F
 
     return p0
@@ -256,7 +260,7 @@
 .method public hashCode()I
     .locals 2
 
-    .line 714
+    .line 727
     iget v0, p0, Landroidx/compose/material/ResistanceConfig;->basis:F
 
     invoke-static {v0}, Ljava/lang/Float;->hashCode(F)I
@@ -265,7 +269,7 @@
 
     mul-int/lit8 v0, v0, 0x1f
 
-    .line 715
+    .line 728
     iget v1, p0, Landroidx/compose/material/ResistanceConfig;->factorAtMin:F
 
     invoke-static {v1}, Ljava/lang/Float;->hashCode(F)I
@@ -276,7 +280,7 @@
 
     mul-int/lit8 v0, v0, 0x1f
 
-    .line 716
+    .line 729
     iget p0, p0, Landroidx/compose/material/ResistanceConfig;->factorAtMax:F
 
     invoke-static {p0}, Ljava/lang/Float;->hashCode(F)I
@@ -291,7 +295,7 @@
 .method public toString()Ljava/lang/String;
     .locals 2
 
-    .line 721
+    .line 734
     new-instance v0, Ljava/lang/StringBuilder;
 
     const-string v1, "ResistanceConfig(basis="

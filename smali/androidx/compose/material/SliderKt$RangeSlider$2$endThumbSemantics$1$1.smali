@@ -99,7 +99,7 @@
 .method public bridge synthetic invoke(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
 
-    .line 425
+    .line 428
     check-cast p1, Ljava/lang/Number;
 
     invoke-virtual {p1}, Ljava/lang/Number;->floatValue()F
@@ -116,7 +116,7 @@
 .method public final invoke(F)V
     .locals 1
 
-    .line 425
+    .line 428
     iget-object v0, p0, Landroidx/compose/material/SliderKt$RangeSlider$2$endThumbSemantics$1$1;->$onValueChangeState:Landroidx/compose/runtime/State;
 
     invoke-interface {v0}, Landroidx/compose/runtime/State;->getValue()Ljava/lang/Object;

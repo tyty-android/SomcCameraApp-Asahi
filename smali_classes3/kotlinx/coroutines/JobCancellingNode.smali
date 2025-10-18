@@ -17,7 +17,7 @@
     k = 0x1
     mv = {
         0x1,
-        0x6,
+        0x8,
         0x0
     }
     xi = 0x30
@@ -28,7 +28,7 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 1450
+    .line 1423
     invoke-direct {p0}, Lkotlinx/coroutines/JobNode;-><init>()V
 
     return-void

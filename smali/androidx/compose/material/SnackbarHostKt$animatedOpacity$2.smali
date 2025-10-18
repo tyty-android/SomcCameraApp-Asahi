@@ -53,7 +53,7 @@
     f = "SnackbarHost.kt"
     i = {}
     l = {
-        0x15e
+        0x165
     }
     m = "invokeSuspend"
     n = {}
@@ -223,7 +223,7 @@
 
     move-result-object v0
 
-    .line 65535
+    .line 356
     iget v1, p0, Landroidx/compose/material/SnackbarHostKt$animatedOpacity$2;->label:I
 
     const/4 v2, 0x1
@@ -248,10 +248,10 @@
     :cond_1
     invoke-static {p1}, Lkotlin/ResultKt;->throwOnFailure(Ljava/lang/Object;)V
 
-    .line 350
+    .line 357
     iget-object v1, p0, Landroidx/compose/material/SnackbarHostKt$animatedOpacity$2;->$alpha:Landroidx/compose/animation/core/Animatable;
 
-    .line 351
+    .line 358
     iget-boolean p1, p0, Landroidx/compose/material/SnackbarHostKt$animatedOpacity$2;->$visible:Z
 
     if-eqz p1, :cond_2
@@ -268,10 +268,10 @@
 
     move-result-object p1
 
-    .line 352
+    .line 359
     iget-object v3, p0, Landroidx/compose/material/SnackbarHostKt$animatedOpacity$2;->$animation:Landroidx/compose/animation/core/AnimationSpec;
 
-    .line 350
+    .line 357
     move-object v6, p0
 
     check-cast v6, Lkotlin/coroutines/Continuation;
@@ -296,14 +296,14 @@
 
     return-object v0
 
-    .line 354
+    .line 361
     :cond_3
     :goto_1
     iget-object p0, p0, Landroidx/compose/material/SnackbarHostKt$animatedOpacity$2;->$onAnimationFinish:Lkotlin/jvm/functions/Function0;
 
     invoke-interface {p0}, Lkotlin/jvm/functions/Function0;->invoke()Ljava/lang/Object;
 
-    .line 355
+    .line 362
     sget-object p0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
 
     return-object p0

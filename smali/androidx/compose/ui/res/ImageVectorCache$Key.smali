@@ -69,11 +69,7 @@
 .end method
 
 .method public constructor <init>(Landroid/content/res/Resources$Theme;I)V
-    .locals 1
-
-    const-string/jumbo v0, "theme"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+    .locals 0
 
     .line 114
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -131,10 +127,6 @@
 
 .method public final copy(Landroid/content/res/Resources$Theme;I)Landroidx/compose/ui/res/ImageVectorCache$Key;
     .locals 0
-
-    const-string/jumbo p0, "theme"
-
-    invoke-static {p1, p0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
     new-instance p0, Landroidx/compose/ui/res/ImageVectorCache$Key;
 

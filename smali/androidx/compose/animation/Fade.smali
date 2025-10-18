@@ -42,6 +42,10 @@
 .end annotation
 
 
+# static fields
+.field public static final $stable:I
+
+
 # instance fields
 .field private final alpha:F
 
@@ -57,8 +61,14 @@
 
 
 # direct methods
+.method static constructor <clinit>()V
+    .locals 0
+
+    return-void
+.end method
+
 .method public constructor <init>(FLandroidx/compose/animation/core/FiniteAnimationSpec;)V
-    .locals 1
+    .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(F",
@@ -68,14 +78,10 @@
         }
     .end annotation
 
-    const-string v0, "animationSpec"
-
-    invoke-static {p2, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 766
+    .line 775
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 767
+    .line 776
     iput p1, p0, Landroidx/compose/animation/Fade;->alpha:F
 
     iput-object p2, p0, Landroidx/compose/animation/Fade;->animationSpec:Landroidx/compose/animation/core/FiniteAnimationSpec;
@@ -145,10 +151,6 @@
         }
     .end annotation
 
-    const-string p0, "animationSpec"
-
-    invoke-static {p2, p0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
     new-instance p0, Landroidx/compose/animation/Fade;
 
     invoke-direct {p0, p1, p2}, Landroidx/compose/animation/Fade;-><init>(FLandroidx/compose/animation/core/FiniteAnimationSpec;)V
@@ -209,7 +211,7 @@
 .method public final getAlpha()F
     .locals 0
 
-    .line 767
+    .line 776
     iget p0, p0, Landroidx/compose/animation/Fade;->alpha:F
 
     return p0
@@ -226,7 +228,7 @@
         }
     .end annotation
 
-    .line 767
+    .line 776
     iget-object p0, p0, Landroidx/compose/animation/Fade;->animationSpec:Landroidx/compose/animation/core/FiniteAnimationSpec;
 
     return-object p0

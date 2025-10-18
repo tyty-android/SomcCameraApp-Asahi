@@ -339,7 +339,7 @@
 .method setEnabledUnsafe(Z)V
     .locals 0
 
-    .line 490
+    .line 491
     iput-boolean p1, p0, Landroidx/emoji2/viewsintegration/EmojiTextViewHelper$HelperInternal19;->mEnabled:Z
 
     return-void

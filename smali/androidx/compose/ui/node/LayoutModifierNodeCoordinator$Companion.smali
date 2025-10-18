@@ -41,7 +41,7 @@
 .method private constructor <init>()V
     .locals 0
 
-    .line 188
+    .line 182
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -60,7 +60,7 @@
 .method public final getModifierBoundsPaint()Landroidx/compose/ui/graphics/Paint;
     .locals 0
 
-    .line 189
+    .line 183
     invoke-static {}, Landroidx/compose/ui/node/LayoutModifierNodeCoordinator;->access$getModifierBoundsPaint$cp()Landroidx/compose/ui/graphics/Paint;
 
     move-result-object p0

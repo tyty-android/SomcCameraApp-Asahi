@@ -34,7 +34,7 @@
         }
     .end annotation
 
-    .line 190
+    .line 196
     iput-object p1, p0, Ljp/co/sony/mc/camera/device/DeviceStateMachine$1;->this$0:Ljp/co/sony/mc/camera/device/DeviceStateMachine;
 
     iput-object p2, p0, Ljp/co/sony/mc/camera/device/DeviceStateMachine$1;->val$event:Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
@@ -49,80 +49,86 @@
 
 # virtual methods
 .method public run()V
-    .locals 3
+    .locals 4
 
-    .line 193
-    new-instance v0, Ljava/lang/StringBuilder;
+    const/4 v0, 0x1
 
-    const-string v1, "invoke EVENT:"
+    .line 199
+    new-array v1, v0, [Ljava/lang/String;
 
-    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+    new-instance v2, Ljava/lang/StringBuilder;
 
-    iget-object v1, p0, Ljp/co/sony/mc/camera/device/DeviceStateMachine$1;->val$event:Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
+    const-string v3, "invoke EVENT:"
 
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+    invoke-direct {v2, v3}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
-    move-result-object v0
+    iget-object v3, p0, Ljp/co/sony/mc/camera/device/DeviceStateMachine$1;->val$event:Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
 
-    const-string v1, ", state:"
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    move-result-object v2
 
-    move-result-object v0
+    const-string v3, ", state:"
 
-    iget-object v1, p0, Ljp/co/sony/mc/camera/device/DeviceStateMachine$1;->this$0:Ljp/co/sony/mc/camera/device/DeviceStateMachine;
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-static {v1}, Ljp/co/sony/mc/camera/device/DeviceStateMachine;->-$$Nest$fgetmCurrentState(Ljp/co/sony/mc/camera/device/DeviceStateMachine;)Ljp/co/sony/mc/camera/device/state/DeviceState;
+    move-result-object v2
 
-    move-result-object v1
+    iget-object v3, p0, Ljp/co/sony/mc/camera/device/DeviceStateMachine$1;->this$0:Ljp/co/sony/mc/camera/device/DeviceStateMachine;
 
-    invoke-virtual {v1}, Ljp/co/sony/mc/camera/device/state/DeviceState;->getName()Ljava/lang/String;
+    invoke-static {v3}, Ljp/co/sony/mc/camera/device/DeviceStateMachine;->-$$Nest$fgetmCurrentState(Ljp/co/sony/mc/camera/device/DeviceStateMachine;)Ljp/co/sony/mc/camera/device/state/DeviceState;
 
-    move-result-object v1
+    move-result-object v3
 
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v3}, Ljp/co/sony/mc/camera/device/state/DeviceState;->getName()Ljava/lang/String;
 
-    move-result-object v0
+    move-result-object v3
 
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    move-result-object v0
+    move-result-object v2
 
-    filled-new-array {v0}, [Ljava/lang/String;
+    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    move-result-object v0
+    move-result-object v2
 
-    invoke-static {v0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
+    const/4 v3, 0x0
 
-    .line 195
-    sget-object v0, Ljp/co/sony/mc/camera/device/DeviceStateMachine$2;->$SwitchMap$jp$co$sony$mc$camera$device$DeviceStateMachine$DeviceTransitterEvent:[I
+    aput-object v2, v1, v3
 
-    iget-object v1, p0, Ljp/co/sony/mc/camera/device/DeviceStateMachine$1;->val$event:Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
+    invoke-static {v1}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
-    invoke-virtual {v1}, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->ordinal()I
+    .line 201
+    sget-object v1, Ljp/co/sony/mc/camera/device/DeviceStateMachine$2;->$SwitchMap$jp$co$sony$mc$camera$device$DeviceStateMachine$DeviceTransitterEvent:[I
 
-    move-result v1
+    iget-object v2, p0, Ljp/co/sony/mc/camera/device/DeviceStateMachine$1;->val$event:Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
 
-    aget v0, v0, v1
+    invoke-virtual {v2}, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->ordinal()I
 
-    packed-switch v0, :pswitch_data_0
+    move-result v2
 
-    .line 472
-    new-instance v0, Ljava/lang/StringBuilder;
+    aget v1, v1, v2
 
-    const-string/jumbo v1, "unknown event. ["
+    packed-switch v1, :pswitch_data_0
 
-    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+    .line 498
+    new-array v0, v0, [Ljava/lang/String;
+
+    new-instance v1, Ljava/lang/StringBuilder;
+
+    const-string/jumbo v2, "unknown event. ["
+
+    invoke-direct {v1, v2}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
     iget-object p0, p0, Ljp/co/sony/mc/camera/device/DeviceStateMachine$1;->val$event:Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
 
-    invoke-virtual {v0, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+    invoke-virtual {v1, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
     move-result-object p0
 
-    const-string v0, "]"
+    const-string v1, "]"
 
-    invoke-virtual {p0, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {p0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object p0
 
@@ -130,16 +136,94 @@
 
     move-result-object p0
 
-    filled-new-array {p0}, [Ljava/lang/String;
+    aput-object p0, v0, v3
 
-    move-result-object p0
-
-    invoke-static {p0}, Ljp/co/sony/mc/camera/util/CamLog;->e([Ljava/lang/String;)V
+    invoke-static {v0}, Ljp/co/sony/mc/camera/util/CamLog;->e([Ljava/lang/String;)V
 
     return-void
 
-    .line 469
+    .line 494
     :pswitch_0
+    iget-object v0, p0, Ljp/co/sony/mc/camera/device/DeviceStateMachine$1;->this$0:Ljp/co/sony/mc/camera/device/DeviceStateMachine;
+
+    invoke-static {v0}, Ljp/co/sony/mc/camera/device/DeviceStateMachine;->-$$Nest$fgetmCurrentState(Ljp/co/sony/mc/camera/device/DeviceStateMachine;)Ljp/co/sony/mc/camera/device/state/DeviceState;
+
+    move-result-object v0
+
+    iget-object v1, p0, Ljp/co/sony/mc/camera/device/DeviceStateMachine$1;->this$0:Ljp/co/sony/mc/camera/device/DeviceStateMachine;
+
+    invoke-static {v1}, Ljp/co/sony/mc/camera/device/DeviceStateMachine;->-$$Nest$fgetmDeviceStateContext(Ljp/co/sony/mc/camera/device/DeviceStateMachine;)Ljp/co/sony/mc/camera/device/state/DeviceStateContext;
+
+    move-result-object v1
+
+    iget-object v2, p0, Ljp/co/sony/mc/camera/device/DeviceStateMachine$1;->val$params:[Ljava/lang/Object;
+
+    invoke-virtual {v0, v1, v2}, Ljp/co/sony/mc/camera/device/state/DeviceState;->handleStopFramingAssistMonitoring(Ljp/co/sony/mc/camera/device/state/DeviceStateContext;[Ljava/lang/Object;)V
+
+    goto/16 :goto_0
+
+    .line 490
+    :pswitch_1
+    iget-object v0, p0, Ljp/co/sony/mc/camera/device/DeviceStateMachine$1;->this$0:Ljp/co/sony/mc/camera/device/DeviceStateMachine;
+
+    invoke-static {v0}, Ljp/co/sony/mc/camera/device/DeviceStateMachine;->-$$Nest$fgetmCurrentState(Ljp/co/sony/mc/camera/device/DeviceStateMachine;)Ljp/co/sony/mc/camera/device/state/DeviceState;
+
+    move-result-object v0
+
+    iget-object v1, p0, Ljp/co/sony/mc/camera/device/DeviceStateMachine$1;->this$0:Ljp/co/sony/mc/camera/device/DeviceStateMachine;
+
+    invoke-static {v1}, Ljp/co/sony/mc/camera/device/DeviceStateMachine;->-$$Nest$fgetmDeviceStateContext(Ljp/co/sony/mc/camera/device/DeviceStateMachine;)Ljp/co/sony/mc/camera/device/state/DeviceStateContext;
+
+    move-result-object v1
+
+    iget-object v2, p0, Ljp/co/sony/mc/camera/device/DeviceStateMachine$1;->val$params:[Ljava/lang/Object;
+
+    invoke-virtual {v0, v1, v2}, Ljp/co/sony/mc/camera/device/state/DeviceState;->handleStartFramingAssistMonitoring(Ljp/co/sony/mc/camera/device/state/DeviceStateContext;[Ljava/lang/Object;)V
+
+    goto/16 :goto_0
+
+    .line 487
+    :pswitch_2
+    iget-object v0, p0, Ljp/co/sony/mc/camera/device/DeviceStateMachine$1;->this$0:Ljp/co/sony/mc/camera/device/DeviceStateMachine;
+
+    invoke-static {v0}, Ljp/co/sony/mc/camera/device/DeviceStateMachine;->-$$Nest$fgetmCurrentState(Ljp/co/sony/mc/camera/device/DeviceStateMachine;)Ljp/co/sony/mc/camera/device/state/DeviceState;
+
+    move-result-object v0
+
+    iget-object v1, p0, Ljp/co/sony/mc/camera/device/DeviceStateMachine$1;->this$0:Ljp/co/sony/mc/camera/device/DeviceStateMachine;
+
+    invoke-static {v1}, Ljp/co/sony/mc/camera/device/DeviceStateMachine;->-$$Nest$fgetmDeviceStateContext(Ljp/co/sony/mc/camera/device/DeviceStateMachine;)Ljp/co/sony/mc/camera/device/state/DeviceStateContext;
+
+    move-result-object v1
+
+    iget-object v2, p0, Ljp/co/sony/mc/camera/device/DeviceStateMachine$1;->val$params:[Ljava/lang/Object;
+
+    invoke-virtual {v0, v1, v2}, Ljp/co/sony/mc/camera/device/state/DeviceState;->handleStopAutoFramingMonitoring(Ljp/co/sony/mc/camera/device/state/DeviceStateContext;[Ljava/lang/Object;)V
+
+    goto/16 :goto_0
+
+    .line 484
+    :pswitch_3
+    iget-object v0, p0, Ljp/co/sony/mc/camera/device/DeviceStateMachine$1;->this$0:Ljp/co/sony/mc/camera/device/DeviceStateMachine;
+
+    invoke-static {v0}, Ljp/co/sony/mc/camera/device/DeviceStateMachine;->-$$Nest$fgetmCurrentState(Ljp/co/sony/mc/camera/device/DeviceStateMachine;)Ljp/co/sony/mc/camera/device/state/DeviceState;
+
+    move-result-object v0
+
+    iget-object v1, p0, Ljp/co/sony/mc/camera/device/DeviceStateMachine$1;->this$0:Ljp/co/sony/mc/camera/device/DeviceStateMachine;
+
+    invoke-static {v1}, Ljp/co/sony/mc/camera/device/DeviceStateMachine;->-$$Nest$fgetmDeviceStateContext(Ljp/co/sony/mc/camera/device/DeviceStateMachine;)Ljp/co/sony/mc/camera/device/state/DeviceStateContext;
+
+    move-result-object v1
+
+    iget-object v2, p0, Ljp/co/sony/mc/camera/device/DeviceStateMachine$1;->val$params:[Ljava/lang/Object;
+
+    invoke-virtual {v0, v1, v2}, Ljp/co/sony/mc/camera/device/state/DeviceState;->handleStartAutoFramingMonitoring(Ljp/co/sony/mc/camera/device/state/DeviceStateContext;[Ljava/lang/Object;)V
+
+    goto/16 :goto_0
+
+    .line 481
+    :pswitch_4
     iget-object v0, p0, Ljp/co/sony/mc/camera/device/DeviceStateMachine$1;->this$0:Ljp/co/sony/mc/camera/device/DeviceStateMachine;
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/device/DeviceStateMachine;->-$$Nest$fgetmCurrentState(Ljp/co/sony/mc/camera/device/DeviceStateMachine;)Ljp/co/sony/mc/camera/device/state/DeviceState;
@@ -158,8 +242,8 @@
 
     goto/16 :goto_0
 
-    .line 466
-    :pswitch_1
+    .line 478
+    :pswitch_5
     iget-object v0, p0, Ljp/co/sony/mc/camera/device/DeviceStateMachine$1;->this$0:Ljp/co/sony/mc/camera/device/DeviceStateMachine;
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/device/DeviceStateMachine;->-$$Nest$fgetmCurrentState(Ljp/co/sony/mc/camera/device/DeviceStateMachine;)Ljp/co/sony/mc/camera/device/state/DeviceState;
@@ -178,8 +262,8 @@
 
     goto/16 :goto_0
 
-    .line 463
-    :pswitch_2
+    .line 475
+    :pswitch_6
     iget-object v0, p0, Ljp/co/sony/mc/camera/device/DeviceStateMachine$1;->this$0:Ljp/co/sony/mc/camera/device/DeviceStateMachine;
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/device/DeviceStateMachine;->-$$Nest$fgetmCurrentState(Ljp/co/sony/mc/camera/device/DeviceStateMachine;)Ljp/co/sony/mc/camera/device/state/DeviceState;
@@ -198,8 +282,28 @@
 
     goto/16 :goto_0
 
-    .line 460
-    :pswitch_3
+    .line 472
+    :pswitch_7
+    iget-object v0, p0, Ljp/co/sony/mc/camera/device/DeviceStateMachine$1;->this$0:Ljp/co/sony/mc/camera/device/DeviceStateMachine;
+
+    invoke-static {v0}, Ljp/co/sony/mc/camera/device/DeviceStateMachine;->-$$Nest$fgetmCurrentState(Ljp/co/sony/mc/camera/device/DeviceStateMachine;)Ljp/co/sony/mc/camera/device/state/DeviceState;
+
+    move-result-object v0
+
+    iget-object v1, p0, Ljp/co/sony/mc/camera/device/DeviceStateMachine$1;->this$0:Ljp/co/sony/mc/camera/device/DeviceStateMachine;
+
+    invoke-static {v1}, Ljp/co/sony/mc/camera/device/DeviceStateMachine;->-$$Nest$fgetmDeviceStateContext(Ljp/co/sony/mc/camera/device/DeviceStateMachine;)Ljp/co/sony/mc/camera/device/state/DeviceStateContext;
+
+    move-result-object v1
+
+    iget-object v2, p0, Ljp/co/sony/mc/camera/device/DeviceStateMachine$1;->val$params:[Ljava/lang/Object;
+
+    invoke-virtual {v0, v1, v2}, Ljp/co/sony/mc/camera/device/state/DeviceState;->handleRequestUpdateAudioDevice(Ljp/co/sony/mc/camera/device/state/DeviceStateContext;[Ljava/lang/Object;)V
+
+    goto/16 :goto_0
+
+    .line 469
+    :pswitch_8
     iget-object v0, p0, Ljp/co/sony/mc/camera/device/DeviceStateMachine$1;->this$0:Ljp/co/sony/mc/camera/device/DeviceStateMachine;
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/device/DeviceStateMachine;->-$$Nest$fgetmCurrentState(Ljp/co/sony/mc/camera/device/DeviceStateMachine;)Ljp/co/sony/mc/camera/device/state/DeviceState;
@@ -216,8 +320,8 @@
 
     goto/16 :goto_0
 
-    .line 457
-    :pswitch_4
+    .line 466
+    :pswitch_9
     iget-object v0, p0, Ljp/co/sony/mc/camera/device/DeviceStateMachine$1;->this$0:Ljp/co/sony/mc/camera/device/DeviceStateMachine;
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/device/DeviceStateMachine;->-$$Nest$fgetmCurrentState(Ljp/co/sony/mc/camera/device/DeviceStateMachine;)Ljp/co/sony/mc/camera/device/state/DeviceState;
@@ -236,11 +340,31 @@
 
     goto/16 :goto_0
 
-    :pswitch_5
+    :pswitch_a
     return-void
 
-    .line 445
-    :pswitch_6
+    .line 454
+    :pswitch_b
+    iget-object v0, p0, Ljp/co/sony/mc/camera/device/DeviceStateMachine$1;->this$0:Ljp/co/sony/mc/camera/device/DeviceStateMachine;
+
+    invoke-static {v0}, Ljp/co/sony/mc/camera/device/DeviceStateMachine;->-$$Nest$fgetmCurrentState(Ljp/co/sony/mc/camera/device/DeviceStateMachine;)Ljp/co/sony/mc/camera/device/state/DeviceState;
+
+    move-result-object v0
+
+    iget-object v1, p0, Ljp/co/sony/mc/camera/device/DeviceStateMachine$1;->this$0:Ljp/co/sony/mc/camera/device/DeviceStateMachine;
+
+    invoke-static {v1}, Ljp/co/sony/mc/camera/device/DeviceStateMachine;->-$$Nest$fgetmDeviceStateContext(Ljp/co/sony/mc/camera/device/DeviceStateMachine;)Ljp/co/sony/mc/camera/device/state/DeviceStateContext;
+
+    move-result-object v1
+
+    iget-object v2, p0, Ljp/co/sony/mc/camera/device/DeviceStateMachine$1;->val$params:[Ljava/lang/Object;
+
+    invoke-virtual {v0, v1, v2}, Ljp/co/sony/mc/camera/device/state/DeviceState;->handleSetStopRecordingVibration(Ljp/co/sony/mc/camera/device/state/DeviceStateContext;[Ljava/lang/Object;)V
+
+    goto/16 :goto_0
+
+    .line 451
+    :pswitch_c
     iget-object v0, p0, Ljp/co/sony/mc/camera/device/DeviceStateMachine$1;->this$0:Ljp/co/sony/mc/camera/device/DeviceStateMachine;
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/device/DeviceStateMachine;->-$$Nest$fgetmCurrentState(Ljp/co/sony/mc/camera/device/DeviceStateMachine;)Ljp/co/sony/mc/camera/device/state/DeviceState;
@@ -259,8 +383,8 @@
 
     goto/16 :goto_0
 
-    .line 442
-    :pswitch_7
+    .line 448
+    :pswitch_d
     iget-object v0, p0, Ljp/co/sony/mc/camera/device/DeviceStateMachine$1;->this$0:Ljp/co/sony/mc/camera/device/DeviceStateMachine;
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/device/DeviceStateMachine;->-$$Nest$fgetmCurrentState(Ljp/co/sony/mc/camera/device/DeviceStateMachine;)Ljp/co/sony/mc/camera/device/state/DeviceState;
@@ -279,8 +403,8 @@
 
     goto/16 :goto_0
 
-    .line 438
-    :pswitch_8
+    .line 444
+    :pswitch_e
     iget-object v0, p0, Ljp/co/sony/mc/camera/device/DeviceStateMachine$1;->this$0:Ljp/co/sony/mc/camera/device/DeviceStateMachine;
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/device/DeviceStateMachine;->-$$Nest$fgetmCurrentState(Ljp/co/sony/mc/camera/device/DeviceStateMachine;)Ljp/co/sony/mc/camera/device/state/DeviceState;
@@ -299,8 +423,8 @@
 
     goto/16 :goto_0
 
-    .line 434
-    :pswitch_9
+    .line 440
+    :pswitch_f
     iget-object v0, p0, Ljp/co/sony/mc/camera/device/DeviceStateMachine$1;->this$0:Ljp/co/sony/mc/camera/device/DeviceStateMachine;
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/device/DeviceStateMachine;->-$$Nest$fgetmCurrentState(Ljp/co/sony/mc/camera/device/DeviceStateMachine;)Ljp/co/sony/mc/camera/device/state/DeviceState;
@@ -319,8 +443,8 @@
 
     goto/16 :goto_0
 
-    .line 431
-    :pswitch_a
+    .line 437
+    :pswitch_10
     iget-object v0, p0, Ljp/co/sony/mc/camera/device/DeviceStateMachine$1;->this$0:Ljp/co/sony/mc/camera/device/DeviceStateMachine;
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/device/DeviceStateMachine;->-$$Nest$fgetmCurrentState(Ljp/co/sony/mc/camera/device/DeviceStateMachine;)Ljp/co/sony/mc/camera/device/state/DeviceState;
@@ -339,8 +463,8 @@
 
     goto/16 :goto_0
 
-    .line 428
-    :pswitch_b
+    .line 434
+    :pswitch_11
     iget-object v0, p0, Ljp/co/sony/mc/camera/device/DeviceStateMachine$1;->this$0:Ljp/co/sony/mc/camera/device/DeviceStateMachine;
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/device/DeviceStateMachine;->-$$Nest$fgetmCurrentState(Ljp/co/sony/mc/camera/device/DeviceStateMachine;)Ljp/co/sony/mc/camera/device/state/DeviceState;
@@ -359,8 +483,8 @@
 
     goto/16 :goto_0
 
-    .line 425
-    :pswitch_c
+    .line 431
+    :pswitch_12
     iget-object v0, p0, Ljp/co/sony/mc/camera/device/DeviceStateMachine$1;->this$0:Ljp/co/sony/mc/camera/device/DeviceStateMachine;
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/device/DeviceStateMachine;->-$$Nest$fgetmCurrentState(Ljp/co/sony/mc/camera/device/DeviceStateMachine;)Ljp/co/sony/mc/camera/device/state/DeviceState;
@@ -379,8 +503,8 @@
 
     goto/16 :goto_0
 
-    .line 422
-    :pswitch_d
+    .line 428
+    :pswitch_13
     iget-object v0, p0, Ljp/co/sony/mc/camera/device/DeviceStateMachine$1;->this$0:Ljp/co/sony/mc/camera/device/DeviceStateMachine;
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/device/DeviceStateMachine;->-$$Nest$fgetmCurrentState(Ljp/co/sony/mc/camera/device/DeviceStateMachine;)Ljp/co/sony/mc/camera/device/state/DeviceState;
@@ -399,8 +523,8 @@
 
     goto/16 :goto_0
 
-    .line 419
-    :pswitch_e
+    .line 425
+    :pswitch_14
     iget-object v0, p0, Ljp/co/sony/mc/camera/device/DeviceStateMachine$1;->this$0:Ljp/co/sony/mc/camera/device/DeviceStateMachine;
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/device/DeviceStateMachine;->-$$Nest$fgetmCurrentState(Ljp/co/sony/mc/camera/device/DeviceStateMachine;)Ljp/co/sony/mc/camera/device/state/DeviceState;
@@ -419,8 +543,8 @@
 
     goto/16 :goto_0
 
-    .line 416
-    :pswitch_f
+    .line 422
+    :pswitch_15
     iget-object v0, p0, Ljp/co/sony/mc/camera/device/DeviceStateMachine$1;->this$0:Ljp/co/sony/mc/camera/device/DeviceStateMachine;
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/device/DeviceStateMachine;->-$$Nest$fgetmCurrentState(Ljp/co/sony/mc/camera/device/DeviceStateMachine;)Ljp/co/sony/mc/camera/device/state/DeviceState;
@@ -439,8 +563,8 @@
 
     goto/16 :goto_0
 
-    .line 413
-    :pswitch_10
+    .line 419
+    :pswitch_16
     iget-object v0, p0, Ljp/co/sony/mc/camera/device/DeviceStateMachine$1;->this$0:Ljp/co/sony/mc/camera/device/DeviceStateMachine;
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/device/DeviceStateMachine;->-$$Nest$fgetmCurrentState(Ljp/co/sony/mc/camera/device/DeviceStateMachine;)Ljp/co/sony/mc/camera/device/state/DeviceState;
@@ -459,8 +583,8 @@
 
     goto/16 :goto_0
 
-    .line 410
-    :pswitch_11
+    .line 416
+    :pswitch_17
     iget-object v0, p0, Ljp/co/sony/mc/camera/device/DeviceStateMachine$1;->this$0:Ljp/co/sony/mc/camera/device/DeviceStateMachine;
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/device/DeviceStateMachine;->-$$Nest$fgetmCurrentState(Ljp/co/sony/mc/camera/device/DeviceStateMachine;)Ljp/co/sony/mc/camera/device/state/DeviceState;
@@ -479,8 +603,8 @@
 
     goto/16 :goto_0
 
-    .line 407
-    :pswitch_12
+    .line 413
+    :pswitch_18
     iget-object v0, p0, Ljp/co/sony/mc/camera/device/DeviceStateMachine$1;->this$0:Ljp/co/sony/mc/camera/device/DeviceStateMachine;
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/device/DeviceStateMachine;->-$$Nest$fgetmCurrentState(Ljp/co/sony/mc/camera/device/DeviceStateMachine;)Ljp/co/sony/mc/camera/device/state/DeviceState;
@@ -499,8 +623,8 @@
 
     goto/16 :goto_0
 
-    .line 404
-    :pswitch_13
+    .line 410
+    :pswitch_19
     iget-object v0, p0, Ljp/co/sony/mc/camera/device/DeviceStateMachine$1;->this$0:Ljp/co/sony/mc/camera/device/DeviceStateMachine;
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/device/DeviceStateMachine;->-$$Nest$fgetmCurrentState(Ljp/co/sony/mc/camera/device/DeviceStateMachine;)Ljp/co/sony/mc/camera/device/state/DeviceState;
@@ -519,11 +643,11 @@
 
     goto/16 :goto_0
 
-    :pswitch_14
+    :pswitch_1a
     return-void
 
-    .line 396
-    :pswitch_15
+    .line 402
+    :pswitch_1b
     iget-object v0, p0, Ljp/co/sony/mc/camera/device/DeviceStateMachine$1;->this$0:Ljp/co/sony/mc/camera/device/DeviceStateMachine;
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/device/DeviceStateMachine;->-$$Nest$fgetmCurrentState(Ljp/co/sony/mc/camera/device/DeviceStateMachine;)Ljp/co/sony/mc/camera/device/state/DeviceState;
@@ -542,8 +666,8 @@
 
     goto/16 :goto_0
 
-    .line 393
-    :pswitch_16
+    .line 399
+    :pswitch_1c
     iget-object v0, p0, Ljp/co/sony/mc/camera/device/DeviceStateMachine$1;->this$0:Ljp/co/sony/mc/camera/device/DeviceStateMachine;
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/device/DeviceStateMachine;->-$$Nest$fgetmCurrentState(Ljp/co/sony/mc/camera/device/DeviceStateMachine;)Ljp/co/sony/mc/camera/device/state/DeviceState;
@@ -562,8 +686,8 @@
 
     goto/16 :goto_0
 
-    .line 389
-    :pswitch_17
+    .line 395
+    :pswitch_1d
     iget-object v0, p0, Ljp/co/sony/mc/camera/device/DeviceStateMachine$1;->this$0:Ljp/co/sony/mc/camera/device/DeviceStateMachine;
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/device/DeviceStateMachine;->-$$Nest$fgetmCurrentState(Ljp/co/sony/mc/camera/device/DeviceStateMachine;)Ljp/co/sony/mc/camera/device/state/DeviceState;
@@ -582,8 +706,8 @@
 
     goto/16 :goto_0
 
-    .line 386
-    :pswitch_18
+    .line 392
+    :pswitch_1e
     iget-object v0, p0, Ljp/co/sony/mc/camera/device/DeviceStateMachine$1;->this$0:Ljp/co/sony/mc/camera/device/DeviceStateMachine;
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/device/DeviceStateMachine;->-$$Nest$fgetmCurrentState(Ljp/co/sony/mc/camera/device/DeviceStateMachine;)Ljp/co/sony/mc/camera/device/state/DeviceState;
@@ -602,8 +726,8 @@
 
     goto/16 :goto_0
 
-    .line 383
-    :pswitch_19
+    .line 389
+    :pswitch_1f
     iget-object v0, p0, Ljp/co/sony/mc/camera/device/DeviceStateMachine$1;->this$0:Ljp/co/sony/mc/camera/device/DeviceStateMachine;
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/device/DeviceStateMachine;->-$$Nest$fgetmCurrentState(Ljp/co/sony/mc/camera/device/DeviceStateMachine;)Ljp/co/sony/mc/camera/device/state/DeviceState;
@@ -622,8 +746,8 @@
 
     goto/16 :goto_0
 
-    .line 379
-    :pswitch_1a
+    .line 385
+    :pswitch_20
     iget-object v0, p0, Ljp/co/sony/mc/camera/device/DeviceStateMachine$1;->this$0:Ljp/co/sony/mc/camera/device/DeviceStateMachine;
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/device/DeviceStateMachine;->-$$Nest$fgetmCurrentState(Ljp/co/sony/mc/camera/device/DeviceStateMachine;)Ljp/co/sony/mc/camera/device/state/DeviceState;
@@ -642,8 +766,8 @@
 
     goto/16 :goto_0
 
-    .line 376
-    :pswitch_1b
+    .line 382
+    :pswitch_21
     iget-object v0, p0, Ljp/co/sony/mc/camera/device/DeviceStateMachine$1;->this$0:Ljp/co/sony/mc/camera/device/DeviceStateMachine;
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/device/DeviceStateMachine;->-$$Nest$fgetmCurrentState(Ljp/co/sony/mc/camera/device/DeviceStateMachine;)Ljp/co/sony/mc/camera/device/state/DeviceState;
@@ -662,8 +786,8 @@
 
     goto/16 :goto_0
 
-    .line 373
-    :pswitch_1c
+    .line 379
+    :pswitch_22
     iget-object v0, p0, Ljp/co/sony/mc/camera/device/DeviceStateMachine$1;->this$0:Ljp/co/sony/mc/camera/device/DeviceStateMachine;
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/device/DeviceStateMachine;->-$$Nest$fgetmCurrentState(Ljp/co/sony/mc/camera/device/DeviceStateMachine;)Ljp/co/sony/mc/camera/device/state/DeviceState;
@@ -682,8 +806,8 @@
 
     goto/16 :goto_0
 
-    .line 369
-    :pswitch_1d
+    .line 375
+    :pswitch_23
     iget-object v0, p0, Ljp/co/sony/mc/camera/device/DeviceStateMachine$1;->this$0:Ljp/co/sony/mc/camera/device/DeviceStateMachine;
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/device/DeviceStateMachine;->-$$Nest$fgetmCurrentState(Ljp/co/sony/mc/camera/device/DeviceStateMachine;)Ljp/co/sony/mc/camera/device/state/DeviceState;
@@ -702,8 +826,8 @@
 
     goto/16 :goto_0
 
-    .line 365
-    :pswitch_1e
+    .line 371
+    :pswitch_24
     iget-object v0, p0, Ljp/co/sony/mc/camera/device/DeviceStateMachine$1;->this$0:Ljp/co/sony/mc/camera/device/DeviceStateMachine;
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/device/DeviceStateMachine;->-$$Nest$fgetmCurrentState(Ljp/co/sony/mc/camera/device/DeviceStateMachine;)Ljp/co/sony/mc/camera/device/state/DeviceState;
@@ -722,8 +846,8 @@
 
     goto/16 :goto_0
 
-    .line 361
-    :pswitch_1f
+    .line 367
+    :pswitch_25
     iget-object v0, p0, Ljp/co/sony/mc/camera/device/DeviceStateMachine$1;->this$0:Ljp/co/sony/mc/camera/device/DeviceStateMachine;
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/device/DeviceStateMachine;->-$$Nest$fgetmCurrentState(Ljp/co/sony/mc/camera/device/DeviceStateMachine;)Ljp/co/sony/mc/camera/device/state/DeviceState;
@@ -742,8 +866,8 @@
 
     goto/16 :goto_0
 
-    .line 357
-    :pswitch_20
+    .line 363
+    :pswitch_26
     iget-object v0, p0, Ljp/co/sony/mc/camera/device/DeviceStateMachine$1;->this$0:Ljp/co/sony/mc/camera/device/DeviceStateMachine;
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/device/DeviceStateMachine;->-$$Nest$fgetmCurrentState(Ljp/co/sony/mc/camera/device/DeviceStateMachine;)Ljp/co/sony/mc/camera/device/state/DeviceState;
@@ -762,8 +886,8 @@
 
     goto/16 :goto_0
 
-    .line 354
-    :pswitch_21
+    .line 360
+    :pswitch_27
     iget-object v0, p0, Ljp/co/sony/mc/camera/device/DeviceStateMachine$1;->this$0:Ljp/co/sony/mc/camera/device/DeviceStateMachine;
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/device/DeviceStateMachine;->-$$Nest$fgetmCurrentState(Ljp/co/sony/mc/camera/device/DeviceStateMachine;)Ljp/co/sony/mc/camera/device/state/DeviceState;
@@ -782,8 +906,8 @@
 
     goto/16 :goto_0
 
-    .line 351
-    :pswitch_22
+    .line 357
+    :pswitch_28
     iget-object v0, p0, Ljp/co/sony/mc/camera/device/DeviceStateMachine$1;->this$0:Ljp/co/sony/mc/camera/device/DeviceStateMachine;
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/device/DeviceStateMachine;->-$$Nest$fgetmCurrentState(Ljp/co/sony/mc/camera/device/DeviceStateMachine;)Ljp/co/sony/mc/camera/device/state/DeviceState;
@@ -802,8 +926,8 @@
 
     goto/16 :goto_0
 
-    .line 348
-    :pswitch_23
+    .line 354
+    :pswitch_29
     iget-object v0, p0, Ljp/co/sony/mc/camera/device/DeviceStateMachine$1;->this$0:Ljp/co/sony/mc/camera/device/DeviceStateMachine;
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/device/DeviceStateMachine;->-$$Nest$fgetmCurrentState(Ljp/co/sony/mc/camera/device/DeviceStateMachine;)Ljp/co/sony/mc/camera/device/state/DeviceState;
@@ -822,8 +946,8 @@
 
     goto/16 :goto_0
 
-    .line 345
-    :pswitch_24
+    .line 351
+    :pswitch_2a
     iget-object v0, p0, Ljp/co/sony/mc/camera/device/DeviceStateMachine$1;->this$0:Ljp/co/sony/mc/camera/device/DeviceStateMachine;
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/device/DeviceStateMachine;->-$$Nest$fgetmCurrentState(Ljp/co/sony/mc/camera/device/DeviceStateMachine;)Ljp/co/sony/mc/camera/device/state/DeviceState;
@@ -842,8 +966,8 @@
 
     goto/16 :goto_0
 
-    .line 342
-    :pswitch_25
+    .line 348
+    :pswitch_2b
     iget-object v0, p0, Ljp/co/sony/mc/camera/device/DeviceStateMachine$1;->this$0:Ljp/co/sony/mc/camera/device/DeviceStateMachine;
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/device/DeviceStateMachine;->-$$Nest$fgetmCurrentState(Ljp/co/sony/mc/camera/device/DeviceStateMachine;)Ljp/co/sony/mc/camera/device/state/DeviceState;
@@ -862,8 +986,8 @@
 
     goto/16 :goto_0
 
-    .line 339
-    :pswitch_26
+    .line 345
+    :pswitch_2c
     iget-object v0, p0, Ljp/co/sony/mc/camera/device/DeviceStateMachine$1;->this$0:Ljp/co/sony/mc/camera/device/DeviceStateMachine;
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/device/DeviceStateMachine;->-$$Nest$fgetmCurrentState(Ljp/co/sony/mc/camera/device/DeviceStateMachine;)Ljp/co/sony/mc/camera/device/state/DeviceState;
@@ -882,8 +1006,8 @@
 
     goto/16 :goto_0
 
-    .line 336
-    :pswitch_27
+    .line 342
+    :pswitch_2d
     iget-object v0, p0, Ljp/co/sony/mc/camera/device/DeviceStateMachine$1;->this$0:Ljp/co/sony/mc/camera/device/DeviceStateMachine;
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/device/DeviceStateMachine;->-$$Nest$fgetmCurrentState(Ljp/co/sony/mc/camera/device/DeviceStateMachine;)Ljp/co/sony/mc/camera/device/state/DeviceState;
@@ -902,8 +1026,8 @@
 
     goto/16 :goto_0
 
-    .line 333
-    :pswitch_28
+    .line 339
+    :pswitch_2e
     iget-object v0, p0, Ljp/co/sony/mc/camera/device/DeviceStateMachine$1;->this$0:Ljp/co/sony/mc/camera/device/DeviceStateMachine;
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/device/DeviceStateMachine;->-$$Nest$fgetmCurrentState(Ljp/co/sony/mc/camera/device/DeviceStateMachine;)Ljp/co/sony/mc/camera/device/state/DeviceState;
@@ -922,8 +1046,8 @@
 
     goto/16 :goto_0
 
-    .line 330
-    :pswitch_29
+    .line 336
+    :pswitch_2f
     iget-object v0, p0, Ljp/co/sony/mc/camera/device/DeviceStateMachine$1;->this$0:Ljp/co/sony/mc/camera/device/DeviceStateMachine;
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/device/DeviceStateMachine;->-$$Nest$fgetmCurrentState(Ljp/co/sony/mc/camera/device/DeviceStateMachine;)Ljp/co/sony/mc/camera/device/state/DeviceState;
@@ -942,8 +1066,8 @@
 
     goto/16 :goto_0
 
-    .line 327
-    :pswitch_2a
+    .line 333
+    :pswitch_30
     iget-object v0, p0, Ljp/co/sony/mc/camera/device/DeviceStateMachine$1;->this$0:Ljp/co/sony/mc/camera/device/DeviceStateMachine;
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/device/DeviceStateMachine;->-$$Nest$fgetmCurrentState(Ljp/co/sony/mc/camera/device/DeviceStateMachine;)Ljp/co/sony/mc/camera/device/state/DeviceState;
@@ -962,8 +1086,8 @@
 
     goto/16 :goto_0
 
-    .line 324
-    :pswitch_2b
+    .line 330
+    :pswitch_31
     iget-object v0, p0, Ljp/co/sony/mc/camera/device/DeviceStateMachine$1;->this$0:Ljp/co/sony/mc/camera/device/DeviceStateMachine;
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/device/DeviceStateMachine;->-$$Nest$fgetmCurrentState(Ljp/co/sony/mc/camera/device/DeviceStateMachine;)Ljp/co/sony/mc/camera/device/state/DeviceState;
@@ -982,8 +1106,8 @@
 
     goto/16 :goto_0
 
-    .line 321
-    :pswitch_2c
+    .line 327
+    :pswitch_32
     iget-object v0, p0, Ljp/co/sony/mc/camera/device/DeviceStateMachine$1;->this$0:Ljp/co/sony/mc/camera/device/DeviceStateMachine;
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/device/DeviceStateMachine;->-$$Nest$fgetmCurrentState(Ljp/co/sony/mc/camera/device/DeviceStateMachine;)Ljp/co/sony/mc/camera/device/state/DeviceState;
@@ -1002,8 +1126,8 @@
 
     goto/16 :goto_0
 
-    .line 318
-    :pswitch_2d
+    .line 324
+    :pswitch_33
     iget-object v0, p0, Ljp/co/sony/mc/camera/device/DeviceStateMachine$1;->this$0:Ljp/co/sony/mc/camera/device/DeviceStateMachine;
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/device/DeviceStateMachine;->-$$Nest$fgetmCurrentState(Ljp/co/sony/mc/camera/device/DeviceStateMachine;)Ljp/co/sony/mc/camera/device/state/DeviceState;
@@ -1022,8 +1146,8 @@
 
     goto/16 :goto_0
 
-    .line 315
-    :pswitch_2e
+    .line 321
+    :pswitch_34
     iget-object v0, p0, Ljp/co/sony/mc/camera/device/DeviceStateMachine$1;->this$0:Ljp/co/sony/mc/camera/device/DeviceStateMachine;
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/device/DeviceStateMachine;->-$$Nest$fgetmCurrentState(Ljp/co/sony/mc/camera/device/DeviceStateMachine;)Ljp/co/sony/mc/camera/device/state/DeviceState;
@@ -1042,8 +1166,8 @@
 
     goto/16 :goto_0
 
-    .line 312
-    :pswitch_2f
+    .line 318
+    :pswitch_35
     iget-object v0, p0, Ljp/co/sony/mc/camera/device/DeviceStateMachine$1;->this$0:Ljp/co/sony/mc/camera/device/DeviceStateMachine;
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/device/DeviceStateMachine;->-$$Nest$fgetmCurrentState(Ljp/co/sony/mc/camera/device/DeviceStateMachine;)Ljp/co/sony/mc/camera/device/state/DeviceState;
@@ -1062,8 +1186,8 @@
 
     goto/16 :goto_0
 
-    .line 309
-    :pswitch_30
+    .line 315
+    :pswitch_36
     iget-object v0, p0, Ljp/co/sony/mc/camera/device/DeviceStateMachine$1;->this$0:Ljp/co/sony/mc/camera/device/DeviceStateMachine;
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/device/DeviceStateMachine;->-$$Nest$fgetmCurrentState(Ljp/co/sony/mc/camera/device/DeviceStateMachine;)Ljp/co/sony/mc/camera/device/state/DeviceState;
@@ -1082,8 +1206,8 @@
 
     goto/16 :goto_0
 
-    .line 306
-    :pswitch_31
+    .line 312
+    :pswitch_37
     iget-object v0, p0, Ljp/co/sony/mc/camera/device/DeviceStateMachine$1;->this$0:Ljp/co/sony/mc/camera/device/DeviceStateMachine;
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/device/DeviceStateMachine;->-$$Nest$fgetmCurrentState(Ljp/co/sony/mc/camera/device/DeviceStateMachine;)Ljp/co/sony/mc/camera/device/state/DeviceState;
@@ -1102,8 +1226,8 @@
 
     goto/16 :goto_0
 
-    .line 303
-    :pswitch_32
+    .line 309
+    :pswitch_38
     iget-object v0, p0, Ljp/co/sony/mc/camera/device/DeviceStateMachine$1;->this$0:Ljp/co/sony/mc/camera/device/DeviceStateMachine;
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/device/DeviceStateMachine;->-$$Nest$fgetmCurrentState(Ljp/co/sony/mc/camera/device/DeviceStateMachine;)Ljp/co/sony/mc/camera/device/state/DeviceState;
@@ -1122,8 +1246,8 @@
 
     goto/16 :goto_0
 
-    .line 300
-    :pswitch_33
+    .line 306
+    :pswitch_39
     iget-object v0, p0, Ljp/co/sony/mc/camera/device/DeviceStateMachine$1;->this$0:Ljp/co/sony/mc/camera/device/DeviceStateMachine;
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/device/DeviceStateMachine;->-$$Nest$fgetmCurrentState(Ljp/co/sony/mc/camera/device/DeviceStateMachine;)Ljp/co/sony/mc/camera/device/state/DeviceState;
@@ -1142,8 +1266,8 @@
 
     goto/16 :goto_0
 
-    .line 297
-    :pswitch_34
+    .line 303
+    :pswitch_3a
     iget-object v0, p0, Ljp/co/sony/mc/camera/device/DeviceStateMachine$1;->this$0:Ljp/co/sony/mc/camera/device/DeviceStateMachine;
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/device/DeviceStateMachine;->-$$Nest$fgetmCurrentState(Ljp/co/sony/mc/camera/device/DeviceStateMachine;)Ljp/co/sony/mc/camera/device/state/DeviceState;
@@ -1162,8 +1286,8 @@
 
     goto/16 :goto_0
 
-    .line 294
-    :pswitch_35
+    .line 300
+    :pswitch_3b
     iget-object v0, p0, Ljp/co/sony/mc/camera/device/DeviceStateMachine$1;->this$0:Ljp/co/sony/mc/camera/device/DeviceStateMachine;
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/device/DeviceStateMachine;->-$$Nest$fgetmCurrentState(Ljp/co/sony/mc/camera/device/DeviceStateMachine;)Ljp/co/sony/mc/camera/device/state/DeviceState;
@@ -1182,8 +1306,8 @@
 
     goto/16 :goto_0
 
-    .line 291
-    :pswitch_36
+    .line 297
+    :pswitch_3c
     iget-object v0, p0, Ljp/co/sony/mc/camera/device/DeviceStateMachine$1;->this$0:Ljp/co/sony/mc/camera/device/DeviceStateMachine;
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/device/DeviceStateMachine;->-$$Nest$fgetmCurrentState(Ljp/co/sony/mc/camera/device/DeviceStateMachine;)Ljp/co/sony/mc/camera/device/state/DeviceState;
@@ -1202,8 +1326,8 @@
 
     goto/16 :goto_0
 
-    .line 288
-    :pswitch_37
+    .line 294
+    :pswitch_3d
     iget-object v0, p0, Ljp/co/sony/mc/camera/device/DeviceStateMachine$1;->this$0:Ljp/co/sony/mc/camera/device/DeviceStateMachine;
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/device/DeviceStateMachine;->-$$Nest$fgetmCurrentState(Ljp/co/sony/mc/camera/device/DeviceStateMachine;)Ljp/co/sony/mc/camera/device/state/DeviceState;
@@ -1222,8 +1346,8 @@
 
     goto/16 :goto_0
 
-    .line 285
-    :pswitch_38
+    .line 291
+    :pswitch_3e
     iget-object v0, p0, Ljp/co/sony/mc/camera/device/DeviceStateMachine$1;->this$0:Ljp/co/sony/mc/camera/device/DeviceStateMachine;
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/device/DeviceStateMachine;->-$$Nest$fgetmCurrentState(Ljp/co/sony/mc/camera/device/DeviceStateMachine;)Ljp/co/sony/mc/camera/device/state/DeviceState;
@@ -1242,8 +1366,8 @@
 
     goto/16 :goto_0
 
-    .line 282
-    :pswitch_39
+    .line 288
+    :pswitch_3f
     iget-object v0, p0, Ljp/co/sony/mc/camera/device/DeviceStateMachine$1;->this$0:Ljp/co/sony/mc/camera/device/DeviceStateMachine;
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/device/DeviceStateMachine;->-$$Nest$fgetmCurrentState(Ljp/co/sony/mc/camera/device/DeviceStateMachine;)Ljp/co/sony/mc/camera/device/state/DeviceState;
@@ -1262,8 +1386,8 @@
 
     goto/16 :goto_0
 
-    .line 279
-    :pswitch_3a
+    .line 285
+    :pswitch_40
     iget-object v0, p0, Ljp/co/sony/mc/camera/device/DeviceStateMachine$1;->this$0:Ljp/co/sony/mc/camera/device/DeviceStateMachine;
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/device/DeviceStateMachine;->-$$Nest$fgetmCurrentState(Ljp/co/sony/mc/camera/device/DeviceStateMachine;)Ljp/co/sony/mc/camera/device/state/DeviceState;
@@ -1282,8 +1406,8 @@
 
     goto/16 :goto_0
 
-    .line 276
-    :pswitch_3b
+    .line 282
+    :pswitch_41
     iget-object v0, p0, Ljp/co/sony/mc/camera/device/DeviceStateMachine$1;->this$0:Ljp/co/sony/mc/camera/device/DeviceStateMachine;
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/device/DeviceStateMachine;->-$$Nest$fgetmCurrentState(Ljp/co/sony/mc/camera/device/DeviceStateMachine;)Ljp/co/sony/mc/camera/device/state/DeviceState;
@@ -1302,8 +1426,8 @@
 
     goto/16 :goto_0
 
-    .line 273
-    :pswitch_3c
+    .line 279
+    :pswitch_42
     iget-object v0, p0, Ljp/co/sony/mc/camera/device/DeviceStateMachine$1;->this$0:Ljp/co/sony/mc/camera/device/DeviceStateMachine;
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/device/DeviceStateMachine;->-$$Nest$fgetmCurrentState(Ljp/co/sony/mc/camera/device/DeviceStateMachine;)Ljp/co/sony/mc/camera/device/state/DeviceState;
@@ -1322,8 +1446,8 @@
 
     goto/16 :goto_0
 
-    .line 269
-    :pswitch_3d
+    .line 275
+    :pswitch_43
     iget-object v0, p0, Ljp/co/sony/mc/camera/device/DeviceStateMachine$1;->this$0:Ljp/co/sony/mc/camera/device/DeviceStateMachine;
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/device/DeviceStateMachine;->-$$Nest$fgetmCurrentState(Ljp/co/sony/mc/camera/device/DeviceStateMachine;)Ljp/co/sony/mc/camera/device/state/DeviceState;
@@ -1342,8 +1466,8 @@
 
     goto/16 :goto_0
 
-    .line 266
-    :pswitch_3e
+    .line 272
+    :pswitch_44
     iget-object v0, p0, Ljp/co/sony/mc/camera/device/DeviceStateMachine$1;->this$0:Ljp/co/sony/mc/camera/device/DeviceStateMachine;
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/device/DeviceStateMachine;->-$$Nest$fgetmCurrentState(Ljp/co/sony/mc/camera/device/DeviceStateMachine;)Ljp/co/sony/mc/camera/device/state/DeviceState;
@@ -1362,8 +1486,8 @@
 
     goto/16 :goto_0
 
-    .line 263
-    :pswitch_3f
+    .line 269
+    :pswitch_45
     iget-object v0, p0, Ljp/co/sony/mc/camera/device/DeviceStateMachine$1;->this$0:Ljp/co/sony/mc/camera/device/DeviceStateMachine;
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/device/DeviceStateMachine;->-$$Nest$fgetmCurrentState(Ljp/co/sony/mc/camera/device/DeviceStateMachine;)Ljp/co/sony/mc/camera/device/state/DeviceState;
@@ -1382,8 +1506,8 @@
 
     goto/16 :goto_0
 
-    .line 260
-    :pswitch_40
+    .line 266
+    :pswitch_46
     iget-object v0, p0, Ljp/co/sony/mc/camera/device/DeviceStateMachine$1;->this$0:Ljp/co/sony/mc/camera/device/DeviceStateMachine;
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/device/DeviceStateMachine;->-$$Nest$fgetmCurrentState(Ljp/co/sony/mc/camera/device/DeviceStateMachine;)Ljp/co/sony/mc/camera/device/state/DeviceState;
@@ -1402,8 +1526,8 @@
 
     goto/16 :goto_0
 
-    .line 257
-    :pswitch_41
+    .line 263
+    :pswitch_47
     iget-object v0, p0, Ljp/co/sony/mc/camera/device/DeviceStateMachine$1;->this$0:Ljp/co/sony/mc/camera/device/DeviceStateMachine;
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/device/DeviceStateMachine;->-$$Nest$fgetmCurrentState(Ljp/co/sony/mc/camera/device/DeviceStateMachine;)Ljp/co/sony/mc/camera/device/state/DeviceState;
@@ -1422,8 +1546,8 @@
 
     goto/16 :goto_0
 
-    .line 254
-    :pswitch_42
+    .line 260
+    :pswitch_48
     iget-object v0, p0, Ljp/co/sony/mc/camera/device/DeviceStateMachine$1;->this$0:Ljp/co/sony/mc/camera/device/DeviceStateMachine;
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/device/DeviceStateMachine;->-$$Nest$fgetmCurrentState(Ljp/co/sony/mc/camera/device/DeviceStateMachine;)Ljp/co/sony/mc/camera/device/state/DeviceState;
@@ -1442,8 +1566,8 @@
 
     goto/16 :goto_0
 
-    .line 251
-    :pswitch_43
+    .line 257
+    :pswitch_49
     iget-object v0, p0, Ljp/co/sony/mc/camera/device/DeviceStateMachine$1;->this$0:Ljp/co/sony/mc/camera/device/DeviceStateMachine;
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/device/DeviceStateMachine;->-$$Nest$fgetmCurrentState(Ljp/co/sony/mc/camera/device/DeviceStateMachine;)Ljp/co/sony/mc/camera/device/state/DeviceState;
@@ -1462,8 +1586,8 @@
 
     goto/16 :goto_0
 
-    .line 248
-    :pswitch_44
+    .line 254
+    :pswitch_4a
     iget-object v0, p0, Ljp/co/sony/mc/camera/device/DeviceStateMachine$1;->this$0:Ljp/co/sony/mc/camera/device/DeviceStateMachine;
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/device/DeviceStateMachine;->-$$Nest$fgetmCurrentState(Ljp/co/sony/mc/camera/device/DeviceStateMachine;)Ljp/co/sony/mc/camera/device/state/DeviceState;
@@ -1482,8 +1606,8 @@
 
     goto/16 :goto_0
 
-    .line 245
-    :pswitch_45
+    .line 251
+    :pswitch_4b
     iget-object v0, p0, Ljp/co/sony/mc/camera/device/DeviceStateMachine$1;->this$0:Ljp/co/sony/mc/camera/device/DeviceStateMachine;
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/device/DeviceStateMachine;->-$$Nest$fgetmCurrentState(Ljp/co/sony/mc/camera/device/DeviceStateMachine;)Ljp/co/sony/mc/camera/device/state/DeviceState;
@@ -1502,8 +1626,8 @@
 
     goto/16 :goto_0
 
-    .line 242
-    :pswitch_46
+    .line 248
+    :pswitch_4c
     iget-object v0, p0, Ljp/co/sony/mc/camera/device/DeviceStateMachine$1;->this$0:Ljp/co/sony/mc/camera/device/DeviceStateMachine;
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/device/DeviceStateMachine;->-$$Nest$fgetmCurrentState(Ljp/co/sony/mc/camera/device/DeviceStateMachine;)Ljp/co/sony/mc/camera/device/state/DeviceState;
@@ -1522,8 +1646,8 @@
 
     goto/16 :goto_0
 
-    .line 239
-    :pswitch_47
+    .line 245
+    :pswitch_4d
     iget-object v0, p0, Ljp/co/sony/mc/camera/device/DeviceStateMachine$1;->this$0:Ljp/co/sony/mc/camera/device/DeviceStateMachine;
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/device/DeviceStateMachine;->-$$Nest$fgetmCurrentState(Ljp/co/sony/mc/camera/device/DeviceStateMachine;)Ljp/co/sony/mc/camera/device/state/DeviceState;
@@ -1542,8 +1666,8 @@
 
     goto/16 :goto_0
 
-    .line 236
-    :pswitch_48
+    .line 242
+    :pswitch_4e
     iget-object v0, p0, Ljp/co/sony/mc/camera/device/DeviceStateMachine$1;->this$0:Ljp/co/sony/mc/camera/device/DeviceStateMachine;
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/device/DeviceStateMachine;->-$$Nest$fgetmCurrentState(Ljp/co/sony/mc/camera/device/DeviceStateMachine;)Ljp/co/sony/mc/camera/device/state/DeviceState;
@@ -1562,8 +1686,8 @@
 
     goto/16 :goto_0
 
-    .line 233
-    :pswitch_49
+    .line 239
+    :pswitch_4f
     iget-object v0, p0, Ljp/co/sony/mc/camera/device/DeviceStateMachine$1;->this$0:Ljp/co/sony/mc/camera/device/DeviceStateMachine;
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/device/DeviceStateMachine;->-$$Nest$fgetmCurrentState(Ljp/co/sony/mc/camera/device/DeviceStateMachine;)Ljp/co/sony/mc/camera/device/state/DeviceState;
@@ -1582,8 +1706,8 @@
 
     goto/16 :goto_0
 
-    .line 230
-    :pswitch_4a
+    .line 236
+    :pswitch_50
     iget-object v0, p0, Ljp/co/sony/mc/camera/device/DeviceStateMachine$1;->this$0:Ljp/co/sony/mc/camera/device/DeviceStateMachine;
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/device/DeviceStateMachine;->-$$Nest$fgetmCurrentState(Ljp/co/sony/mc/camera/device/DeviceStateMachine;)Ljp/co/sony/mc/camera/device/state/DeviceState;
@@ -1602,8 +1726,8 @@
 
     goto/16 :goto_0
 
-    .line 227
-    :pswitch_4b
+    .line 233
+    :pswitch_51
     iget-object v0, p0, Ljp/co/sony/mc/camera/device/DeviceStateMachine$1;->this$0:Ljp/co/sony/mc/camera/device/DeviceStateMachine;
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/device/DeviceStateMachine;->-$$Nest$fgetmCurrentState(Ljp/co/sony/mc/camera/device/DeviceStateMachine;)Ljp/co/sony/mc/camera/device/state/DeviceState;
@@ -1622,8 +1746,8 @@
 
     goto/16 :goto_0
 
-    .line 224
-    :pswitch_4c
+    .line 230
+    :pswitch_52
     iget-object v0, p0, Ljp/co/sony/mc/camera/device/DeviceStateMachine$1;->this$0:Ljp/co/sony/mc/camera/device/DeviceStateMachine;
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/device/DeviceStateMachine;->-$$Nest$fgetmCurrentState(Ljp/co/sony/mc/camera/device/DeviceStateMachine;)Ljp/co/sony/mc/camera/device/state/DeviceState;
@@ -1642,8 +1766,8 @@
 
     goto/16 :goto_0
 
-    .line 221
-    :pswitch_4d
+    .line 227
+    :pswitch_53
     iget-object v0, p0, Ljp/co/sony/mc/camera/device/DeviceStateMachine$1;->this$0:Ljp/co/sony/mc/camera/device/DeviceStateMachine;
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/device/DeviceStateMachine;->-$$Nest$fgetmCurrentState(Ljp/co/sony/mc/camera/device/DeviceStateMachine;)Ljp/co/sony/mc/camera/device/state/DeviceState;
@@ -1662,8 +1786,8 @@
 
     goto/16 :goto_0
 
-    .line 218
-    :pswitch_4e
+    .line 224
+    :pswitch_54
     iget-object v0, p0, Ljp/co/sony/mc/camera/device/DeviceStateMachine$1;->this$0:Ljp/co/sony/mc/camera/device/DeviceStateMachine;
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/device/DeviceStateMachine;->-$$Nest$fgetmCurrentState(Ljp/co/sony/mc/camera/device/DeviceStateMachine;)Ljp/co/sony/mc/camera/device/state/DeviceState;
@@ -1682,8 +1806,8 @@
 
     goto/16 :goto_0
 
-    .line 215
-    :pswitch_4f
+    .line 221
+    :pswitch_55
     iget-object v0, p0, Ljp/co/sony/mc/camera/device/DeviceStateMachine$1;->this$0:Ljp/co/sony/mc/camera/device/DeviceStateMachine;
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/device/DeviceStateMachine;->-$$Nest$fgetmCurrentState(Ljp/co/sony/mc/camera/device/DeviceStateMachine;)Ljp/co/sony/mc/camera/device/state/DeviceState;
@@ -1702,8 +1826,8 @@
 
     goto :goto_0
 
-    .line 212
-    :pswitch_50
+    .line 218
+    :pswitch_56
     iget-object v0, p0, Ljp/co/sony/mc/camera/device/DeviceStateMachine$1;->this$0:Ljp/co/sony/mc/camera/device/DeviceStateMachine;
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/device/DeviceStateMachine;->-$$Nest$fgetmCurrentState(Ljp/co/sony/mc/camera/device/DeviceStateMachine;)Ljp/co/sony/mc/camera/device/state/DeviceState;
@@ -1722,8 +1846,8 @@
 
     goto :goto_0
 
-    .line 209
-    :pswitch_51
+    .line 215
+    :pswitch_57
     iget-object v0, p0, Ljp/co/sony/mc/camera/device/DeviceStateMachine$1;->this$0:Ljp/co/sony/mc/camera/device/DeviceStateMachine;
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/device/DeviceStateMachine;->-$$Nest$fgetmCurrentState(Ljp/co/sony/mc/camera/device/DeviceStateMachine;)Ljp/co/sony/mc/camera/device/state/DeviceState;
@@ -1742,8 +1866,8 @@
 
     goto :goto_0
 
-    .line 206
-    :pswitch_52
+    .line 212
+    :pswitch_58
     iget-object v0, p0, Ljp/co/sony/mc/camera/device/DeviceStateMachine$1;->this$0:Ljp/co/sony/mc/camera/device/DeviceStateMachine;
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/device/DeviceStateMachine;->-$$Nest$fgetmCurrentState(Ljp/co/sony/mc/camera/device/DeviceStateMachine;)Ljp/co/sony/mc/camera/device/state/DeviceState;
@@ -1762,8 +1886,8 @@
 
     goto :goto_0
 
-    .line 203
-    :pswitch_53
+    .line 209
+    :pswitch_59
     iget-object v0, p0, Ljp/co/sony/mc/camera/device/DeviceStateMachine$1;->this$0:Ljp/co/sony/mc/camera/device/DeviceStateMachine;
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/device/DeviceStateMachine;->-$$Nest$fgetmCurrentState(Ljp/co/sony/mc/camera/device/DeviceStateMachine;)Ljp/co/sony/mc/camera/device/state/DeviceState;
@@ -1782,8 +1906,8 @@
 
     goto :goto_0
 
-    .line 200
-    :pswitch_54
+    .line 206
+    :pswitch_5a
     iget-object v0, p0, Ljp/co/sony/mc/camera/device/DeviceStateMachine$1;->this$0:Ljp/co/sony/mc/camera/device/DeviceStateMachine;
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/device/DeviceStateMachine;->-$$Nest$fgetmCurrentState(Ljp/co/sony/mc/camera/device/DeviceStateMachine;)Ljp/co/sony/mc/camera/device/state/DeviceState;
@@ -1802,8 +1926,8 @@
 
     goto :goto_0
 
-    .line 197
-    :pswitch_55
+    .line 203
+    :pswitch_5b
     iget-object v0, p0, Ljp/co/sony/mc/camera/device/DeviceStateMachine$1;->this$0:Ljp/co/sony/mc/camera/device/DeviceStateMachine;
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/device/DeviceStateMachine;->-$$Nest$fgetmCurrentState(Ljp/co/sony/mc/camera/device/DeviceStateMachine;)Ljp/co/sony/mc/camera/device/state/DeviceState;
@@ -1820,7 +1944,7 @@
 
     invoke-virtual {v0, v1, v2}, Ljp/co/sony/mc/camera/device/state/DeviceState;->handleInitialize(Ljp/co/sony/mc/camera/device/state/DeviceStateContext;[Ljava/lang/Object;)V
 
-    .line 477
+    .line 503
     :goto_0
     iget-object p0, p0, Ljp/co/sony/mc/camera/device/DeviceStateMachine$1;->this$0:Ljp/co/sony/mc/camera/device/DeviceStateMachine;
 
@@ -1840,6 +1964,12 @@
 
     :pswitch_data_0
     .packed-switch 0x1
+        :pswitch_5b
+        :pswitch_5a
+        :pswitch_59
+        :pswitch_58
+        :pswitch_57
+        :pswitch_56
         :pswitch_55
         :pswitch_54
         :pswitch_53
@@ -1900,12 +2030,12 @@
         :pswitch_1c
         :pswitch_1b
         :pswitch_1a
+        :pswitch_1a
         :pswitch_19
         :pswitch_18
         :pswitch_17
         :pswitch_16
         :pswitch_15
-        :pswitch_14
         :pswitch_14
         :pswitch_13
         :pswitch_12
@@ -1917,16 +2047,16 @@
         :pswitch_c
         :pswitch_b
         :pswitch_a
+        :pswitch_a
+        :pswitch_a
+        :pswitch_a
+        :pswitch_a
+        :pswitch_a
+        :pswitch_a
         :pswitch_9
         :pswitch_8
         :pswitch_7
         :pswitch_6
-        :pswitch_5
-        :pswitch_5
-        :pswitch_5
-        :pswitch_5
-        :pswitch_5
-        :pswitch_5
         :pswitch_5
         :pswitch_4
         :pswitch_3

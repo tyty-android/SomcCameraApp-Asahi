@@ -15,42 +15,32 @@
 
 
 # instance fields
-.field final deserialized:Z
-
 .field final field:Ljava/lang/reflect/Field;
 
 .field final fieldName:Ljava/lang/String;
 
-.field final name:Ljava/lang/String;
-
-.field final serialized:Z
+.field final serializedName:Ljava/lang/String;
 
 
 # direct methods
-.method protected constructor <init>(Ljava/lang/String;Ljava/lang/reflect/Field;ZZ)V
+.method protected constructor <init>(Ljava/lang/String;Ljava/lang/reflect/Field;)V
     .locals 0
 
-    .line 319
+    .line 436
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 320
-    iput-object p1, p0, Lcom/google/gson/internal/bind/ReflectiveTypeAdapterFactory$BoundField;->name:Ljava/lang/String;
+    .line 437
+    iput-object p1, p0, Lcom/google/gson/internal/bind/ReflectiveTypeAdapterFactory$BoundField;->serializedName:Ljava/lang/String;
 
-    .line 321
+    .line 438
     iput-object p2, p0, Lcom/google/gson/internal/bind/ReflectiveTypeAdapterFactory$BoundField;->field:Ljava/lang/reflect/Field;
 
-    .line 322
+    .line 439
     invoke-virtual {p2}, Ljava/lang/reflect/Field;->getName()Ljava/lang/String;
 
     move-result-object p1
 
     iput-object p1, p0, Lcom/google/gson/internal/bind/ReflectiveTypeAdapterFactory$BoundField;->fieldName:Ljava/lang/String;
-
-    .line 323
-    iput-boolean p3, p0, Lcom/google/gson/internal/bind/ReflectiveTypeAdapterFactory$BoundField;->serialized:Z
-
-    .line 324
-    iput-boolean p4, p0, Lcom/google/gson/internal/bind/ReflectiveTypeAdapterFactory$BoundField;->deserialized:Z
 
     return-void
 .end method

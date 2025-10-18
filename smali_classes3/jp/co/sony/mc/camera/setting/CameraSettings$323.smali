@@ -21,7 +21,7 @@
 .method constructor <init>()V
     .locals 0
 
-    .line 3274
+    .line 3372
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -42,15 +42,15 @@
         }
     .end annotation
 
-    .line 3278
+    .line 3376
     check-cast p1, Ljp/co/sony/mc/camera/setting/CameraSettings;
 
-    .line 3279
-    invoke-static {p1}, Ljp/co/sony/mc/camera/setting/CameraSettings;->-$$Nest$mgetPreviewRect(Ljp/co/sony/mc/camera/setting/CameraSettings;)Landroid/graphics/Rect;
+    .line 3377
+    invoke-static {p1}, Ljp/co/sony/mc/camera/setting/CameraSettings;->-$$Nest$mgetFocusFrameColor(Ljp/co/sony/mc/camera/setting/CameraSettings;)Ljp/co/sony/mc/camera/configuration/parameters/FocusFrameColor;
 
     move-result-object p0
 
-    invoke-static {p1}, Ljp/co/sony/mc/camera/setting/CameraSettings;->-$$Nest$fgetmPreviewRect(Ljp/co/sony/mc/camera/setting/CameraSettings;)Landroid/graphics/Rect;
+    invoke-static {p1}, Ljp/co/sony/mc/camera/setting/CameraSettings;->-$$Nest$fgetmFocusFrameColor(Ljp/co/sony/mc/camera/setting/CameraSettings;)Ljp/co/sony/mc/camera/configuration/parameters/FocusFrameColor;
 
     move-result-object p1
 

@@ -97,10 +97,6 @@
 .method public final invoke(Landroidx/compose/ui/graphics/GraphicsLayerScope;)V
     .locals 2
 
-    const-string v0, "$this$graphicsLayer"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
     .line 113
     iget v0, p0, Landroidx/compose/ui/draw/ShadowKt$shadow$2$1;->$elevation:F
 

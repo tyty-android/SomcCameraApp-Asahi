@@ -14,11 +14,11 @@
 
 
 # static fields
-.field public static final DialogWindowTheme:I = 0x7f120126
+.field public static final DialogWindowTheme:I = 0x7f12012a
 
-.field public static final FloatingDialogTheme:I = 0x7f120127
+.field public static final FloatingDialogTheme:I = 0x7f12012b
 
-.field public static final FloatingDialogWindowTheme:I = 0x7f120128
+.field public static final FloatingDialogWindowTheme:I = 0x7f12012c
 
 
 # direct methods

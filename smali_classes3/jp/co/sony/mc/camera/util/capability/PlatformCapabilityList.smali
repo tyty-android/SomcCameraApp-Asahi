@@ -93,11 +93,15 @@
 
     if-eqz p1, :cond_0
 
-    const-string p1, "loadPlatformCapabilityFromDevice"
+    const/4 p1, 0x1
 
-    filled-new-array {p1}, [Ljava/lang/String;
+    new-array p1, p1, [Ljava/lang/String;
 
-    move-result-object p1
+    const/4 v0, 0x0
+
+    const-string v1, "loadPlatformCapabilityFromDevice"
+
+    aput-object v1, p1, v0
 
     invoke-static {p1}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
@@ -178,7 +182,7 @@
 .end method
 
 .method public constructor <init>(Landroid/content/Context;Landroid/content/SharedPreferences;)V
-    .locals 1
+    .locals 2
 
     .line 67
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -188,11 +192,15 @@
 
     if-eqz p1, :cond_0
 
-    const-string p1, "loadPlatformCapabilityFromSharedPreferences"
+    const/4 p1, 0x1
 
-    filled-new-array {p1}, [Ljava/lang/String;
+    new-array p1, p1, [Ljava/lang/String;
 
-    move-result-object p1
+    const/4 v0, 0x0
+
+    const-string v1, "loadPlatformCapabilityFromSharedPreferences"
+
+    aput-object v1, p1, v0
 
     invoke-static {p1}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 

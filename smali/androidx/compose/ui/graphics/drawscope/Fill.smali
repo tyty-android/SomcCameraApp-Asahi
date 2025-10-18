@@ -46,7 +46,7 @@
 
     const/4 v0, 0x0
 
-    .line 901
+    .line 929
     invoke-direct {p0, v0}, Landroidx/compose/ui/graphics/drawscope/DrawStyle;-><init>(Lkotlin/jvm/internal/DefaultConstructorMarker;)V
 
     return-void

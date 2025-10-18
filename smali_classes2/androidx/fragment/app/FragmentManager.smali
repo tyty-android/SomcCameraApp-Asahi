@@ -578,6 +578,8 @@
 
     instance-of v0, v0, Landroid/app/Activity;
 
+    const/4 v1, 0x1
+
     if-eqz v0, :cond_1
 
     .line 1243
@@ -594,13 +596,17 @@
 
     move-result v0
 
-    xor-int/lit8 v0, v0, 0x1
+    xor-int/2addr v0, v1
+
+    goto :goto_0
+
+    :cond_1
+    move v0, v1
 
     :goto_0
     if-eqz v0, :cond_3
 
     .line 1249
-    :cond_1
     iget-object v0, p0, Landroidx/fragment/app/FragmentManager;->mBackStackStates:Ljava/util/Map;
 
     invoke-interface {v0}, Ljava/util/Map;->values()Ljava/util/Collection;

@@ -109,7 +109,7 @@
 .end method
 
 .method protected constructor <init>()V
-    .locals 2
+    .locals 3
 
     .line 198
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -119,11 +119,15 @@
 
     if-eqz v0, :cond_0
 
-    const-string v0, "MeasurePerformance() is called."
+    const/4 v0, 0x1
 
-    filled-new-array {v0}, [Ljava/lang/String;
+    new-array v0, v0, [Ljava/lang/String;
 
-    move-result-object v0
+    const/4 v1, 0x0
+
+    const-string v2, "MeasurePerformance() is called."
+
+    aput-object v2, v0, v1
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
@@ -1162,7 +1166,7 @@
 .end method
 
 .method private static writeFile(Ljava/lang/String;)V
-    .locals 7
+    .locals 9
 
     .line 494
     const-string v0, "[MeasurePerformance::writeFile]:Error = "
@@ -1204,6 +1208,10 @@
 
     move-result v2
 
+    const/4 v5, 0x0
+
+    const/4 v6, 0x1
+
     if-nez v2, :cond_0
 
     .line 501
@@ -1216,11 +1224,11 @@
 
     .line 503
     :catch_0
-    const-string p0, "Create output file failed"
+    new-array p0, v6, [Ljava/lang/String;
 
-    filled-new-array {p0}, [Ljava/lang/String;
+    const-string v0, "Create output file failed"
 
-    move-result-object p0
+    aput-object v0, p0, v5
 
     invoke-static {p0}, Ljp/co/sony/mc/camera/util/CamLog;->e([Ljava/lang/String;)V
 
@@ -1234,20 +1242,20 @@
 
     new-instance v2, Ljava/io/FileOutputStream;
 
-    new-instance v5, Ljava/lang/StringBuilder;
+    new-instance v7, Ljava/lang/StringBuilder;
 
-    invoke-direct {v5}, Ljava/lang/StringBuilder;-><init>()V
+    invoke-direct {v7}, Ljava/lang/StringBuilder;-><init>()V
 
     .line 514
     invoke-static {}, Ljp/co/sony/mc/camera/CameraApplication;->getContext()Landroid/content/Context;
 
-    move-result-object v6
+    move-result-object v8
 
-    invoke-virtual {v6, v4}, Landroid/content/Context;->getExternalFilesDir(Ljava/lang/String;)Ljava/io/File;
+    invoke-virtual {v8, v4}, Landroid/content/Context;->getExternalFilesDir(Ljava/lang/String;)Ljava/io/File;
 
     move-result-object v4
 
-    invoke-virtual {v5, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+    invoke-virtual {v7, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
     move-result-object v4
 
@@ -1308,11 +1316,13 @@
     move-exception p0
 
     .line 519
-    new-instance v1, Ljava/lang/StringBuilder;
+    new-array v1, v6, [Ljava/lang/String;
 
-    invoke-direct {v1, v0}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+    new-instance v2, Ljava/lang/StringBuilder;
 
-    invoke-virtual {v1, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+    invoke-direct {v2, v0}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+
+    invoke-virtual {v2, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
     move-result-object p0
 
@@ -1320,11 +1330,9 @@
 
     move-result-object p0
 
-    filled-new-array {p0}, [Ljava/lang/String;
+    aput-object p0, v1, v5
 
-    move-result-object p0
-
-    invoke-static {p0}, Ljp/co/sony/mc/camera/util/CamLog;->e([Ljava/lang/String;)V
+    invoke-static {v1}, Ljp/co/sony/mc/camera/util/CamLog;->e([Ljava/lang/String;)V
 
     goto :goto_2
 
@@ -1332,11 +1340,13 @@
     move-exception p0
 
     .line 517
-    new-instance v1, Ljava/lang/StringBuilder;
+    new-array v1, v6, [Ljava/lang/String;
 
-    invoke-direct {v1, v0}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+    new-instance v2, Ljava/lang/StringBuilder;
 
-    invoke-virtual {v1, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+    invoke-direct {v2, v0}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+
+    invoke-virtual {v2, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
     move-result-object p0
 
@@ -1344,11 +1354,9 @@
 
     move-result-object p0
 
-    filled-new-array {p0}, [Ljava/lang/String;
+    aput-object p0, v1, v5
 
-    move-result-object p0
-
-    invoke-static {p0}, Ljp/co/sony/mc/camera/util/CamLog;->e([Ljava/lang/String;)V
+    invoke-static {v1}, Ljp/co/sony/mc/camera/util/CamLog;->e([Ljava/lang/String;)V
 
     :goto_2
     return-void

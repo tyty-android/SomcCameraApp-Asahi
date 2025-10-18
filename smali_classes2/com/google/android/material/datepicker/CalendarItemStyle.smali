@@ -206,7 +206,7 @@
 .method getBottomInset()I
     .locals 0
 
-    .line 179
+    .line 182
     iget-object p0, p0, Lcom/google/android/material/datepicker/CalendarItemStyle;->insets:Landroid/graphics/Rect;
 
     iget p0, p0, Landroid/graphics/Rect;->bottom:I
@@ -217,7 +217,7 @@
 .method getLeftInset()I
     .locals 0
 
-    .line 167
+    .line 170
     iget-object p0, p0, Lcom/google/android/material/datepicker/CalendarItemStyle;->insets:Landroid/graphics/Rect;
 
     iget p0, p0, Landroid/graphics/Rect;->left:I
@@ -228,7 +228,7 @@
 .method getRightInset()I
     .locals 0
 
-    .line 171
+    .line 174
     iget-object p0, p0, Lcom/google/android/material/datepicker/CalendarItemStyle;->insets:Landroid/graphics/Rect;
 
     iget p0, p0, Landroid/graphics/Rect;->right:I
@@ -239,7 +239,7 @@
 .method getTopInset()I
     .locals 0
 
-    .line 175
+    .line 178
     iget-object p0, p0, Lcom/google/android/material/datepicker/CalendarItemStyle;->insets:Landroid/graphics/Rect;
 
     iget p0, p0, Landroid/graphics/Rect;->top:I
@@ -253,30 +253,30 @@
     const/4 v0, 0x0
 
     .line 140
-    invoke-virtual {p0, p1, v0}, Lcom/google/android/material/datepicker/CalendarItemStyle;->styleItem(Landroid/widget/TextView;Landroid/content/res/ColorStateList;)V
+    invoke-virtual {p0, p1, v0, v0}, Lcom/google/android/material/datepicker/CalendarItemStyle;->styleItem(Landroid/widget/TextView;Landroid/content/res/ColorStateList;Landroid/content/res/ColorStateList;)V
 
     return-void
 .end method
 
-.method styleItem(Landroid/widget/TextView;Landroid/content/res/ColorStateList;)V
+.method styleItem(Landroid/widget/TextView;Landroid/content/res/ColorStateList;Landroid/content/res/ColorStateList;)V
     .locals 8
 
-    .line 148
+    .line 151
     new-instance v0, Lcom/google/android/material/shape/MaterialShapeDrawable;
 
     invoke-direct {v0}, Lcom/google/android/material/shape/MaterialShapeDrawable;-><init>()V
 
-    .line 149
+    .line 152
     new-instance v1, Lcom/google/android/material/shape/MaterialShapeDrawable;
 
     invoke-direct {v1}, Lcom/google/android/material/shape/MaterialShapeDrawable;-><init>()V
 
-    .line 150
+    .line 153
     iget-object v2, p0, Lcom/google/android/material/datepicker/CalendarItemStyle;->itemShape:Lcom/google/android/material/shape/ShapeAppearanceModel;
 
     invoke-virtual {v0, v2}, Lcom/google/android/material/shape/MaterialShapeDrawable;->setShapeAppearanceModel(Lcom/google/android/material/shape/ShapeAppearanceModel;)V
 
-    .line 151
+    .line 154
     iget-object v2, p0, Lcom/google/android/material/datepicker/CalendarItemStyle;->itemShape:Lcom/google/android/material/shape/ShapeAppearanceModel;
 
     invoke-virtual {v1, v2}, Lcom/google/android/material/shape/MaterialShapeDrawable;->setShapeAppearanceModel(Lcom/google/android/material/shape/ShapeAppearanceModel;)V
@@ -285,15 +285,15 @@
 
     goto :goto_0
 
-    .line 153
+    .line 156
     :cond_0
     iget-object p2, p0, Lcom/google/android/material/datepicker/CalendarItemStyle;->backgroundColor:Landroid/content/res/ColorStateList;
 
-    .line 152
+    .line 155
     :goto_0
     invoke-virtual {v0, p2}, Lcom/google/android/material/shape/MaterialShapeDrawable;->setFillColor(Landroid/content/res/ColorStateList;)V
 
-    .line 154
+    .line 157
     iget p2, p0, Lcom/google/android/material/datepicker/CalendarItemStyle;->strokeWidth:I
 
     int-to-float p2, p2
@@ -302,38 +302,44 @@
 
     invoke-virtual {v0, p2, v2}, Lcom/google/android/material/shape/MaterialShapeDrawable;->setStroke(FLandroid/content/res/ColorStateList;)V
 
-    .line 155
-    iget-object p2, p0, Lcom/google/android/material/datepicker/CalendarItemStyle;->textColor:Landroid/content/res/ColorStateList;
+    if-eqz p3, :cond_1
 
-    invoke-virtual {p1, p2}, Landroid/widget/TextView;->setTextColor(Landroid/content/res/ColorStateList;)V
+    goto :goto_1
 
     .line 158
+    :cond_1
+    iget-object p3, p0, Lcom/google/android/material/datepicker/CalendarItemStyle;->textColor:Landroid/content/res/ColorStateList;
+
+    :goto_1
+    invoke-virtual {p1, p3}, Landroid/widget/TextView;->setTextColor(Landroid/content/res/ColorStateList;)V
+
+    .line 161
     new-instance v3, Landroid/graphics/drawable/RippleDrawable;
 
     iget-object p2, p0, Lcom/google/android/material/datepicker/CalendarItemStyle;->textColor:Landroid/content/res/ColorStateList;
 
-    const/16 v2, 0x1e
+    const/16 p3, 0x1e
 
-    invoke-virtual {p2, v2}, Landroid/content/res/ColorStateList;->withAlpha(I)Landroid/content/res/ColorStateList;
+    invoke-virtual {p2, p3}, Landroid/content/res/ColorStateList;->withAlpha(I)Landroid/content/res/ColorStateList;
 
     move-result-object p2
 
     invoke-direct {v3, p2, v0, v1}, Landroid/graphics/drawable/RippleDrawable;-><init>(Landroid/content/res/ColorStateList;Landroid/graphics/drawable/Drawable;Landroid/graphics/drawable/Drawable;)V
 
-    .line 162
+    .line 165
     new-instance p2, Landroid/graphics/drawable/InsetDrawable;
 
-    iget-object v0, p0, Lcom/google/android/material/datepicker/CalendarItemStyle;->insets:Landroid/graphics/Rect;
+    iget-object p3, p0, Lcom/google/android/material/datepicker/CalendarItemStyle;->insets:Landroid/graphics/Rect;
 
-    iget v4, v0, Landroid/graphics/Rect;->left:I
+    iget v4, p3, Landroid/graphics/Rect;->left:I
 
-    iget-object v0, p0, Lcom/google/android/material/datepicker/CalendarItemStyle;->insets:Landroid/graphics/Rect;
+    iget-object p3, p0, Lcom/google/android/material/datepicker/CalendarItemStyle;->insets:Landroid/graphics/Rect;
 
-    iget v5, v0, Landroid/graphics/Rect;->top:I
+    iget v5, p3, Landroid/graphics/Rect;->top:I
 
-    iget-object v0, p0, Lcom/google/android/material/datepicker/CalendarItemStyle;->insets:Landroid/graphics/Rect;
+    iget-object p3, p0, Lcom/google/android/material/datepicker/CalendarItemStyle;->insets:Landroid/graphics/Rect;
 
-    iget v6, v0, Landroid/graphics/Rect;->right:I
+    iget v6, p3, Landroid/graphics/Rect;->right:I
 
     iget-object p0, p0, Lcom/google/android/material/datepicker/CalendarItemStyle;->insets:Landroid/graphics/Rect;
 

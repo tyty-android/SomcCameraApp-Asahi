@@ -11,12 +11,12 @@
 .method public constructor <init>()V
     .locals 1
 
-    .line 33
+    .line 36
     invoke-direct {p0}, Landroidx/transition/VisibilityPropagation;-><init>()V
 
     const/high16 v0, 0x40400000    # 3.0f
 
-    .line 35
+    .line 38
     iput v0, p0, Landroidx/transition/CircularPropagation;->mPropagationSpeed:F
 
     return-void
@@ -37,7 +37,7 @@
 
     float-to-double p0, p2
 
-    .line 103
+    .line 106
     invoke-static {p0, p1}, Ljava/lang/Math;->sqrt(D)D
 
     move-result-wide p0
@@ -65,7 +65,7 @@
 
     if-eqz p4, :cond_2
 
-    .line 64
+    .line 67
     invoke-virtual {p0, p3}, Landroidx/transition/CircularPropagation;->getViewVisibility(Landroidx/transition/TransitionValues;)I
 
     move-result v3
@@ -85,30 +85,30 @@
     :goto_0
     const/4 p4, -0x1
 
-    .line 71
+    .line 74
     :goto_1
     invoke-virtual {p0, p3}, Landroidx/transition/CircularPropagation;->getViewX(Landroidx/transition/TransitionValues;)I
 
     move-result v3
 
-    .line 72
+    .line 75
     invoke-virtual {p0, p3}, Landroidx/transition/CircularPropagation;->getViewY(Landroidx/transition/TransitionValues;)I
 
     move-result p3
 
-    .line 74
+    .line 77
     invoke-virtual {p2}, Landroidx/transition/Transition;->getEpicenter()Landroid/graphics/Rect;
 
     move-result-object v4
 
     if-eqz v4, :cond_3
 
-    .line 78
+    .line 81
     invoke-virtual {v4}, Landroid/graphics/Rect;->centerX()I
 
     move-result v2
 
-    .line 79
+    .line 82
     invoke-virtual {v4}, Landroid/graphics/Rect;->centerY()I
 
     move-result v4
@@ -118,15 +118,15 @@
     :cond_3
     const/4 v4, 0x2
 
-    .line 81
+    .line 84
     new-array v5, v4, [I
 
-    .line 82
+    .line 85
     invoke-virtual {p1, v5}, Landroid/view/ViewGroup;->getLocationOnScreen([I)V
 
     const/4 v6, 0x0
 
-    .line 83
+    .line 86
     aget v6, v5, v6
 
     invoke-virtual {p1}, Landroid/view/ViewGroup;->getWidth()I
@@ -139,19 +139,19 @@
 
     int-to-float v6, v6
 
-    .line 84
+    .line 87
     invoke-virtual {p1}, Landroid/view/ViewGroup;->getTranslationX()F
 
     move-result v7
 
     add-float/2addr v6, v7
 
-    .line 83
+    .line 86
     invoke-static {v6}, Ljava/lang/Math;->round(F)I
 
     move-result v6
 
-    .line 85
+    .line 88
     aget v2, v5, v2
 
     invoke-virtual {p1}, Landroid/view/ViewGroup;->getHeight()I
@@ -164,14 +164,14 @@
 
     int-to-float v2, v2
 
-    .line 86
+    .line 89
     invoke-virtual {p1}, Landroid/view/ViewGroup;->getTranslationY()F
 
     move-result v4
 
     add-float/2addr v2, v4
 
-    .line 85
+    .line 88
     invoke-static {v2}, Ljava/lang/Math;->round(F)I
 
     move-result v4
@@ -187,12 +187,12 @@
 
     int-to-float v4, v4
 
-    .line 88
+    .line 91
     invoke-static {v3, p3, v2, v4}, Landroidx/transition/CircularPropagation;->distance(FFFF)F
 
     move-result p3
 
-    .line 89
+    .line 92
     invoke-virtual {p1}, Landroid/view/ViewGroup;->getWidth()I
 
     move-result v2
@@ -213,7 +213,7 @@
 
     div-float/2addr p3, p1
 
-    .line 92
+    .line 95
     invoke-virtual {p2}, Landroidx/transition/Transition;->getDuration()J
 
     move-result-wide p1
@@ -231,7 +231,7 @@
 
     long-to-float p1, p1
 
-    .line 97
+    .line 100
     iget p0, p0, Landroidx/transition/CircularPropagation;->mPropagationSpeed:F
 
     div-float/2addr p1, p0
@@ -256,12 +256,12 @@
 
     if-eqz v0, :cond_0
 
-    .line 53
+    .line 56
     iput p1, p0, Landroidx/transition/CircularPropagation;->mPropagationSpeed:F
 
     return-void
 
-    .line 51
+    .line 54
     :cond_0
     new-instance p0, Ljava/lang/IllegalArgumentException;
 

@@ -18,7 +18,7 @@
 .method private constructor <init>()V
     .locals 0
 
-    .line 1135
+    .line 1160
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -27,7 +27,7 @@
 .method static getOnBackInvokedDispatcher(Landroid/app/Activity;)Landroid/window/OnBackInvokedDispatcher;
     .locals 0
 
-    .line 1138
+    .line 1163
     invoke-virtual {p0}, Landroid/app/Activity;->getOnBackInvokedDispatcher()Landroid/window/OnBackInvokedDispatcher;
 
     move-result-object p0

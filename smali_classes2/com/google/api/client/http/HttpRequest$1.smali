@@ -34,7 +34,7 @@
 .method constructor <init>(Lcom/google/api/client/http/HttpRequest;)V
     .locals 0
 
-    .line 1136
+    .line 1138
     iput-object p1, p0, Lcom/google/api/client/http/HttpRequest$1;->this$0:Lcom/google/api/client/http/HttpRequest;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -52,7 +52,7 @@
         }
     .end annotation
 
-    .line 1139
+    .line 1141
     iget-object p0, p0, Lcom/google/api/client/http/HttpRequest$1;->this$0:Lcom/google/api/client/http/HttpRequest;
 
     invoke-virtual {p0}, Lcom/google/api/client/http/HttpRequest;->execute()Lcom/google/api/client/http/HttpResponse;
@@ -70,7 +70,7 @@
         }
     .end annotation
 
-    .line 1136
+    .line 1138
     invoke-virtual {p0}, Lcom/google/api/client/http/HttpRequest$1;->call()Lcom/google/api/client/http/HttpResponse;
 
     move-result-object p0

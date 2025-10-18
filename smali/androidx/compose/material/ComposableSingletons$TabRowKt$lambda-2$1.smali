@@ -79,7 +79,7 @@
 .method public bridge synthetic invoke(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
 
-    .line 236
+    .line 240
     check-cast p1, Landroidx/compose/runtime/Composer;
 
     check-cast p2, Ljava/lang/Number;
@@ -98,7 +98,7 @@
 .method public final invoke(Landroidx/compose/runtime/Composer;I)V
     .locals 10
 
-    const-string p0, "C236@11610L9:TabRow.kt#jmzs0o"
+    const-string p0, "C240@11801L9:TabRow.kt#jmzs0o"
 
     invoke-static {p1, p0}, Landroidx/compose/runtime/ComposerKt;->sourceInformation(Landroidx/compose/runtime/Composer;Ljava/lang/String;)V
 
@@ -108,7 +108,7 @@
 
     if-ne p0, v0, :cond_1
 
-    .line 237
+    .line 241
     invoke-interface {p1}, Landroidx/compose/runtime/Composer;->getSkipping()Z
 
     move-result p0
@@ -132,7 +132,7 @@
 
     const/4 p0, -0x1
 
-    const-string v0, "androidx.compose.material.ComposableSingletons$TabRowKt.lambda-2.<anonymous> (TabRow.kt:235)"
+    const-string v0, "androidx.compose.material.ComposableSingletons$TabRowKt.lambda-2.<anonymous> (TabRow.kt:240)"
 
     const v1, -0x583ddd55
 

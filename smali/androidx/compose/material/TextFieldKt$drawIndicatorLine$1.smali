@@ -72,7 +72,7 @@
 .method public bridge synthetic invoke(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
 
-    .line 907
+    .line 917
     check-cast p1, Landroidx/compose/ui/graphics/drawscope/ContentDrawScope;
 
     invoke-virtual {p0, p1}, Landroidx/compose/material/TextFieldKt$drawIndicatorLine$1;->invoke(Landroidx/compose/ui/graphics/drawscope/ContentDrawScope;)V
@@ -83,98 +83,94 @@
 .end method
 
 .method public final invoke(Landroidx/compose/ui/graphics/drawscope/ContentDrawScope;)V
-    .locals 18
+    .locals 17
 
     move-object/from16 v0, p0
 
-    move-object/from16 v1, p1
-
-    const-string v2, "$this$drawWithContent"
-
-    invoke-static {v1, v2}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 908
+    .line 918
     invoke-interface/range {p1 .. p1}, Landroidx/compose/ui/graphics/drawscope/ContentDrawScope;->drawContent()V
 
-    .line 909
-    iget v2, v0, Landroidx/compose/material/TextFieldKt$drawIndicatorLine$1;->$strokeWidthDp:F
+    .line 919
+    iget v1, v0, Landroidx/compose/material/TextFieldKt$drawIndicatorLine$1;->$strokeWidthDp:F
 
-    sget-object v3, Landroidx/compose/ui/unit/Dp;->Companion:Landroidx/compose/ui/unit/Dp$Companion;
+    sget-object v2, Landroidx/compose/ui/unit/Dp;->Companion:Landroidx/compose/ui/unit/Dp$Companion;
 
-    invoke-virtual {v3}, Landroidx/compose/ui/unit/Dp$Companion;->getHairline-D9Ej5fM()F
-
-    move-result v3
-
-    invoke-static {v2, v3}, Landroidx/compose/ui/unit/Dp;->equals-impl0(FF)Z
+    invoke-virtual {v2}, Landroidx/compose/ui/unit/Dp$Companion;->getHairline-D9Ej5fM()F
 
     move-result v2
 
-    if-eqz v2, :cond_0
+    invoke-static {v1, v2}, Landroidx/compose/ui/unit/Dp;->equals-impl0(FF)Z
+
+    move-result v1
+
+    if-eqz v1, :cond_0
 
     return-void
 
-    .line 910
+    .line 920
     :cond_0
-    iget v2, v0, Landroidx/compose/material/TextFieldKt$drawIndicatorLine$1;->$strokeWidthDp:F
+    iget v1, v0, Landroidx/compose/material/TextFieldKt$drawIndicatorLine$1;->$strokeWidthDp:F
 
     invoke-interface/range {p1 .. p1}, Landroidx/compose/ui/graphics/drawscope/ContentDrawScope;->getDensity()F
 
-    move-result v3
-
-    mul-float v10, v2, v3
-
-    .line 911
-    invoke-interface/range {p1 .. p1}, Landroidx/compose/ui/graphics/drawscope/ContentDrawScope;->getSize-NH-jbRc()J
-
-    move-result-wide v2
-
-    invoke-static {v2, v3}, Landroidx/compose/ui/geometry/Size;->getHeight-impl(J)F
-
     move-result v2
 
-    const/4 v3, 0x2
+    mul-float v9, v1, v2
 
-    int-to-float v3, v3
+    .line 921
+    invoke-interface/range {p1 .. p1}, Landroidx/compose/ui/graphics/drawscope/ContentDrawScope;->getSize-NH-jbRc()J
 
-    div-float v3, v10, v3
+    move-result-wide v1
 
-    sub-float/2addr v2, v3
+    invoke-static {v1, v2}, Landroidx/compose/ui/geometry/Size;->getHeight-impl(J)F
 
-    .line 912
-    move-object v4, v1
+    move-result v1
 
-    check-cast v4, Landroidx/compose/ui/graphics/drawscope/DrawScope;
+    const/4 v2, 0x2
 
-    .line 913
+    int-to-float v2, v2
+
+    div-float v2, v9, v2
+
+    sub-float/2addr v1, v2
+
+    .line 922
+    move-object/from16 v3, p1
+
+    check-cast v3, Landroidx/compose/ui/graphics/drawscope/DrawScope;
+
+    .line 923
     iget-object v0, v0, Landroidx/compose/material/TextFieldKt$drawIndicatorLine$1;->$indicatorBorder:Landroidx/compose/foundation/BorderStroke;
 
     invoke-virtual {v0}, Landroidx/compose/foundation/BorderStroke;->getBrush()Landroidx/compose/ui/graphics/Brush;
 
-    move-result-object v5
+    move-result-object v4
 
     const/4 v0, 0x0
 
-    .line 914
-    invoke-static {v0, v2}, Landroidx/compose/ui/geometry/OffsetKt;->Offset(FF)J
+    .line 924
+    invoke-static {v0, v1}, Landroidx/compose/ui/geometry/OffsetKt;->Offset(FF)J
 
-    move-result-wide v6
+    move-result-wide v5
 
-    .line 915
+    .line 925
     invoke-interface/range {p1 .. p1}, Landroidx/compose/ui/graphics/drawscope/ContentDrawScope;->getSize-NH-jbRc()J
 
-    move-result-wide v0
+    move-result-wide v7
 
-    invoke-static {v0, v1}, Landroidx/compose/ui/geometry/Size;->getWidth-impl(J)F
+    invoke-static {v7, v8}, Landroidx/compose/ui/geometry/Size;->getWidth-impl(J)F
 
     move-result v0
 
-    invoke-static {v0, v2}, Landroidx/compose/ui/geometry/OffsetKt;->Offset(FF)J
+    invoke-static {v0, v1}, Landroidx/compose/ui/geometry/OffsetKt;->Offset(FF)J
 
-    move-result-wide v8
+    move-result-wide v7
 
-    const/16 v16, 0x1f0
+    const/16 v15, 0x1f0
 
-    const/16 v17, 0x0
+    const/16 v16, 0x0
+
+    const/4 v10, 0x0
 
     const/4 v11, 0x0
 
@@ -184,10 +180,8 @@
 
     const/4 v14, 0x0
 
-    const/4 v15, 0x0
-
-    .line 912
-    invoke-static/range {v4 .. v17}, Landroidx/compose/ui/graphics/drawscope/DrawScope;->drawLine-1RTmtNc$default(Landroidx/compose/ui/graphics/drawscope/DrawScope;Landroidx/compose/ui/graphics/Brush;JJFILandroidx/compose/ui/graphics/PathEffect;FLandroidx/compose/ui/graphics/ColorFilter;IILjava/lang/Object;)V
+    .line 922
+    invoke-static/range {v3 .. v16}, Landroidx/compose/ui/graphics/drawscope/DrawScope;->drawLine-1RTmtNc$default(Landroidx/compose/ui/graphics/drawscope/DrawScope;Landroidx/compose/ui/graphics/Brush;JJFILandroidx/compose/ui/graphics/PathEffect;FLandroidx/compose/ui/graphics/ColorFilter;IILjava/lang/Object;)V
 
     return-void
 .end method

@@ -32,7 +32,7 @@
         }
     .end annotation
 
-    .line 112
+    .line 114
     iput-object p1, p0, Ljp/co/sony/mc/camera/view/addon/AddonAdapter$2;->this$0:Ljp/co/sony/mc/camera/view/addon/AddonAdapter;
 
     iput-object p2, p0, Ljp/co/sony/mc/camera/view/addon/AddonAdapter$2;->val$holder:Ljp/co/sony/mc/camera/view/addon/AddonAdapter$AddonViewHolder;
@@ -47,7 +47,7 @@
 .method public onGlobalLayout()V
     .locals 1
 
-    .line 115
+    .line 117
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/addon/AddonAdapter$2;->val$holder:Ljp/co/sony/mc/camera/view/addon/AddonAdapter$AddonViewHolder;
 
     iget-object v0, v0, Ljp/co/sony/mc/camera/view/addon/AddonAdapter$AddonViewHolder;->itemView:Landroid/view/View;
@@ -58,14 +58,14 @@
 
     invoke-virtual {v0, p0}, Landroid/view/ViewTreeObserver;->removeOnGlobalLayoutListener(Landroid/view/ViewTreeObserver$OnGlobalLayoutListener;)V
 
-    .line 117
+    .line 119
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/addon/AddonAdapter$2;->val$holder:Ljp/co/sony/mc/camera/view/addon/AddonAdapter$AddonViewHolder;
 
     iget-object v0, v0, Ljp/co/sony/mc/camera/view/addon/AddonAdapter$AddonViewHolder;->itemView:Landroid/view/View;
 
     invoke-virtual {v0}, Landroid/view/View;->requestFocus()Z
 
-    .line 118
+    .line 120
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/addon/AddonAdapter$2;->val$holder:Ljp/co/sony/mc/camera/view/addon/AddonAdapter$AddonViewHolder;
 
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/addon/AddonAdapter$AddonViewHolder;->itemView:Landroid/view/View;

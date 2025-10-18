@@ -21,7 +21,7 @@
 .method constructor <init>()V
     .locals 0
 
-    .line 1612
+    .line 1618
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -42,10 +42,8 @@
         }
     .end annotation
 
-    .line 1616
-    invoke-static {}, Ljp/co/sony/mc/camera/configuration/parameters/PrivacyPolicy;->getDefaultValue()Ljp/co/sony/mc/camera/configuration/parameters/PrivacyPolicy;
-
-    move-result-object p0
+    .line 1622
+    sget-object p0, Ljp/co/sony/mc/camera/configuration/parameters/SoftwareLicense;->DUMMY_OFF:Ljp/co/sony/mc/camera/configuration/parameters/SoftwareLicense;
 
     return-object p0
 .end method

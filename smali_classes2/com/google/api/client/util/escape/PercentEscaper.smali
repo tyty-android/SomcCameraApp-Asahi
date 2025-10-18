@@ -12,7 +12,7 @@
 
 .field public static final SAFEUSERINFOCHARS_URLENCODER:Ljava/lang/String; = "-_.!~*\'():$&,;="
 
-.field public static final SAFE_PLUS_RESERVED_CHARS_URLENCODER:Ljava/lang/String; = "-_.!~*\'()@:$&,;=+/?"
+.field public static final SAFE_PLUS_RESERVED_CHARS_URLENCODER:Ljava/lang/String; = "-_.!~*\'()@:$&,;=+/?#[]"
 
 .field private static final UPPER_HEX_DIGITS:[C
 
@@ -31,7 +31,7 @@
 
     const/4 v0, 0x1
 
-    .line 89
+    .line 94
     new-array v0, v0, [C
 
     const/16 v1, 0x2b
@@ -42,7 +42,7 @@
 
     sput-object v0, Lcom/google/api/client/util/escape/PercentEscaper;->URI_ESCAPED_SPACE:[C
 
-    .line 91
+    .line 96
     const-string v0, "0123456789ABCDEF"
 
     invoke-virtual {v0}, Ljava/lang/String;->toCharArray()[C
@@ -59,7 +59,7 @@
 
     const/4 v0, 0x0
 
-    .line 112
+    .line 117
     invoke-direct {p0, p1, v0}, Lcom/google/api/client/util/escape/PercentEscaper;-><init>(Ljava/lang/String;Z)V
 
     return-void
@@ -70,10 +70,10 @@
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
-    .line 130
+    .line 135
     invoke-direct {p0}, Lcom/google/api/client/util/escape/UnicodeEscaper;-><init>()V
 
-    .line 132
+    .line 137
     const-string v0, ".*[0-9A-Za-z].*"
 
     invoke-virtual {p1, v0}, Ljava/lang/String;->matches(Ljava/lang/String;)Z
@@ -84,7 +84,7 @@
 
     if-eqz p2, :cond_1
 
-    .line 138
+    .line 143
     const-string v0, " "
 
     invoke-virtual {p1, v0}, Ljava/lang/String;->contains(Ljava/lang/CharSequence;)Z
@@ -95,7 +95,7 @@
 
     goto :goto_0
 
-    .line 139
+    .line 144
     :cond_0
     new-instance p0, Ljava/lang/IllegalArgumentException;
 
@@ -105,7 +105,7 @@
 
     throw p0
 
-    .line 142
+    .line 147
     :cond_1
     :goto_0
     const-string v0, "%"
@@ -116,10 +116,10 @@
 
     if-nez v0, :cond_2
 
-    .line 145
+    .line 150
     iput-boolean p2, p0, Lcom/google/api/client/util/escape/PercentEscaper;->plusForSpace:Z
 
-    .line 146
+    .line 151
     invoke-static {p1}, Lcom/google/api/client/util/escape/PercentEscaper;->createSafeOctets(Ljava/lang/String;)[Z
 
     move-result-object p1
@@ -128,7 +128,7 @@
 
     return-void
 
-    .line 143
+    .line 148
     :cond_2
     new-instance p0, Ljava/lang/IllegalArgumentException;
 
@@ -138,7 +138,7 @@
 
     throw p0
 
-    .line 133
+    .line 138
     :cond_3
     new-instance p0, Ljava/lang/IllegalArgumentException;
 
@@ -152,12 +152,12 @@
 .method private static createSafeOctets(Ljava/lang/String;)[Z
     .locals 6
 
-    .line 156
+    .line 161
     invoke-virtual {p0}, Ljava/lang/String;->toCharArray()[C
 
     move-result-object p0
 
-    .line 157
+    .line 162
     array-length v0, p0
 
     const/16 v1, 0x7a
@@ -173,7 +173,7 @@
 
     aget-char v5, p0, v3
 
-    .line 158
+    .line 163
     invoke-static {v5, v4}, Ljava/lang/Math;->max(II)I
 
     move-result v4
@@ -187,7 +187,7 @@
 
     add-int/2addr v4, v0
 
-    .line 160
+    .line 165
     new-array v3, v4, [Z
 
     const/16 v4, 0x30
@@ -197,7 +197,7 @@
 
     if-gt v4, v5, :cond_1
 
-    .line 162
+    .line 167
     aput-boolean v0, v3, v4
 
     add-int/lit8 v4, v4, 0x1
@@ -212,7 +212,7 @@
 
     if-gt v4, v5, :cond_2
 
-    .line 165
+    .line 170
     aput-boolean v0, v3, v4
 
     add-int/lit8 v4, v4, 0x1
@@ -225,14 +225,14 @@
     :goto_3
     if-gt v4, v1, :cond_3
 
-    .line 168
+    .line 173
     aput-boolean v0, v3, v4
 
     add-int/lit8 v4, v4, 0x1
 
     goto :goto_3
 
-    .line 170
+    .line 175
     :cond_3
     array-length v1, p0
 
@@ -241,7 +241,7 @@
 
     aget-char v4, p0, v2
 
-    .line 171
+    .line 176
     aput-boolean v0, v3, v4
 
     add-int/lit8 v2, v2, 0x1
@@ -257,7 +257,7 @@
 .method public escape(Ljava/lang/String;)Ljava/lang/String;
     .locals 5
 
-    .line 197
+    .line 202
     invoke-virtual {p1}, Ljava/lang/String;->length()I
 
     move-result v0
@@ -267,12 +267,12 @@
     :goto_0
     if-ge v1, v0, :cond_2
 
-    .line 199
+    .line 204
     invoke-virtual {p1, v1}, Ljava/lang/String;->charAt(I)C
 
     move-result v2
 
-    .line 200
+    .line 205
     iget-object v3, p0, Lcom/google/api/client/util/escape/PercentEscaper;->safeOctets:[Z
 
     array-length v4, v3
@@ -290,7 +290,7 @@
 
     goto :goto_0
 
-    .line 201
+    .line 206
     :cond_1
     :goto_1
     invoke-virtual {p0, p1, v1}, Lcom/google/api/client/util/escape/PercentEscaper;->escapeSlow(Ljava/lang/String;I)Ljava/lang/String;
@@ -304,325 +304,337 @@
 .end method
 
 .method protected escape(I)[C
-    .locals 21
+    .locals 13
 
-    move-object/from16 v0, p0
+    .line 217
+    iget-object v0, p0, Lcom/google/api/client/util/escape/PercentEscaper;->safeOctets:[Z
 
-    move/from16 v1, p1
+    array-length v1, v0
 
-    .line 212
-    iget-object v2, v0, Lcom/google/api/client/util/escape/PercentEscaper;->safeOctets:[Z
+    if-ge p1, v1, :cond_0
 
-    array-length v3, v2
+    aget-boolean v0, v0, p1
 
-    if-ge v1, v3, :cond_0
+    if-eqz v0, :cond_0
 
-    aget-boolean v2, v2, v1
+    const/4 p0, 0x0
 
-    if-eqz v2, :cond_0
-
-    const/4 v0, 0x0
-
-    return-object v0
+    return-object p0
 
     :cond_0
-    const/16 v2, 0x20
+    const/16 v0, 0x20
 
-    if-ne v1, v2, :cond_1
+    if-ne p1, v0, :cond_1
 
-    .line 214
-    iget-boolean v0, v0, Lcom/google/api/client/util/escape/PercentEscaper;->plusForSpace:Z
+    .line 219
+    iget-boolean p0, p0, Lcom/google/api/client/util/escape/PercentEscaper;->plusForSpace:Z
 
-    if-eqz v0, :cond_1
+    if-eqz p0, :cond_1
 
-    .line 215
-    sget-object v0, Lcom/google/api/client/util/escape/PercentEscaper;->URI_ESCAPED_SPACE:[C
+    .line 220
+    sget-object p0, Lcom/google/api/client/util/escape/PercentEscaper;->URI_ESCAPED_SPACE:[C
 
-    return-object v0
+    return-object p0
 
     :cond_1
-    const/16 v0, 0x7f
+    const/16 p0, 0x7f
 
-    const/4 v2, 0x2
+    const/4 v0, 0x1
 
-    const/4 v3, 0x1
+    const/4 v1, 0x2
 
-    const/4 v4, 0x0
+    const/4 v2, 0x0
 
-    const/4 v5, 0x4
+    const/4 v3, 0x4
 
-    const/16 v6, 0x25
+    const/16 v4, 0x25
 
-    const/4 v7, 0x3
+    const/4 v5, 0x3
 
-    if-gt v1, v0, :cond_2
+    if-gt p1, p0, :cond_2
 
-    .line 221
-    sget-object v0, Lcom/google/api/client/util/escape/PercentEscaper;->UPPER_HEX_DIGITS:[C
+    .line 224
+    new-array p0, v5, [C
 
-    and-int/lit8 v8, v1, 0xf
+    .line 225
+    aput-char v4, p0, v2
 
-    aget-char v8, v0, v8
+    .line 226
+    sget-object v2, Lcom/google/api/client/util/escape/PercentEscaper;->UPPER_HEX_DIGITS:[C
 
-    ushr-int/2addr v1, v5
+    and-int/lit8 v4, p1, 0xf
 
-    .line 222
-    aget-char v0, v0, v1
+    aget-char v4, v2, v4
 
-    new-array v1, v7, [C
+    aput-char v4, p0, v1
 
-    aput-char v6, v1, v4
+    ushr-int/2addr p1, v3
 
-    aput-char v0, v1, v3
+    .line 227
+    aget-char p1, v2, p1
 
-    aput-char v8, v1, v2
+    aput-char p1, p0, v0
 
-    return-object v1
+    return-object p0
 
     :cond_2
-    const/16 v0, 0x7ff
+    const/16 p0, 0x7ff
 
-    const/4 v8, 0x5
+    const/4 v6, 0x5
 
-    const/16 v9, 0xc
+    const/16 v7, 0xc
 
-    const/16 v10, 0xa
+    const/16 v8, 0xa
 
-    const/4 v11, 0x6
+    const/4 v9, 0x6
 
-    const/16 v12, 0x8
+    const/16 v10, 0x8
 
-    if-gt v1, v0, :cond_3
-
-    .line 230
-    sget-object v0, Lcom/google/api/client/util/escape/PercentEscaper;->UPPER_HEX_DIGITS:[C
-
-    and-int/lit8 v13, v1, 0xf
-
-    aget-char v13, v0, v13
-
-    ushr-int/lit8 v14, v1, 0x4
-
-    and-int/2addr v14, v7
-
-    or-int/2addr v12, v14
+    if-gt p1, p0, :cond_3
 
     .line 232
-    aget-char v12, v0, v12
+    new-array p0, v9, [C
 
-    ushr-int/lit8 v14, v1, 0x6
-
-    and-int/lit8 v14, v14, 0xf
+    .line 233
+    aput-char v4, p0, v2
 
     .line 234
-    aget-char v14, v0, v14
+    aput-char v4, p0, v5
 
-    ushr-int/2addr v1, v10
+    .line 235
+    sget-object v2, Lcom/google/api/client/util/escape/PercentEscaper;->UPPER_HEX_DIGITS:[C
 
-    or-int/2addr v1, v9
+    and-int/lit8 v4, p1, 0xf
 
-    .line 236
-    aget-char v0, v0, v1
+    aget-char v4, v2, v4
 
-    new-array v1, v11, [C
+    aput-char v4, p0, v6
 
-    aput-char v6, v1, v4
+    ushr-int/lit8 v4, p1, 0x4
 
-    aput-char v0, v1, v3
+    and-int/2addr v4, v5
 
-    aput-char v14, v1, v2
+    or-int/2addr v4, v10
 
-    aput-char v6, v1, v7
+    .line 237
+    aget-char v4, v2, v4
 
-    aput-char v12, v1, v5
+    aput-char v4, p0, v3
 
-    aput-char v13, v1, v8
+    ushr-int/lit8 v3, p1, 0x6
 
-    return-object v1
+    and-int/lit8 v3, v3, 0xf
+
+    .line 239
+    aget-char v3, v2, v3
+
+    aput-char v3, p0, v1
+
+    ushr-int/2addr p1, v8
+
+    or-int/2addr p1, v7
+
+    .line 241
+    aget-char p1, v2, p1
+
+    aput-char p1, p0, v0
+
+    return-object p0
 
     :cond_3
-    const v0, 0xffff
+    const p0, 0xffff
 
-    const/16 v13, 0x9
+    const/16 v11, 0x9
 
-    const/4 v14, 0x7
+    const/4 v12, 0x7
 
-    if-gt v1, v0, :cond_4
+    if-gt p1, p0, :cond_4
 
     .line 246
-    sget-object v0, Lcom/google/api/client/util/escape/PercentEscaper;->UPPER_HEX_DIGITS:[C
+    new-array p0, v11, [C
 
-    and-int/lit8 v10, v1, 0xf
+    .line 247
+    aput-char v4, p0, v2
 
-    aget-char v10, v0, v10
-
-    ushr-int/lit8 v15, v1, 0x4
-
-    and-int/2addr v15, v7
-
-    or-int/2addr v15, v12
+    const/16 v2, 0x45
 
     .line 248
-    aget-char v15, v0, v15
+    aput-char v2, p0, v0
 
-    ushr-int/lit8 v16, v1, 0x6
-
-    and-int/lit8 v16, v16, 0xf
+    .line 249
+    aput-char v4, p0, v5
 
     .line 250
-    aget-char v16, v0, v16
+    aput-char v4, p0, v9
 
-    ushr-int/lit8 v17, v1, 0xa
-
-    and-int/lit8 v17, v17, 0x3
-
-    or-int/lit8 v17, v17, 0x8
-
-    .line 252
-    aget-char v17, v0, v17
-
-    ushr-int/2addr v1, v9
-
-    .line 254
-    aget-char v0, v0, v1
-
-    new-array v1, v13, [C
-
-    aput-char v6, v1, v4
-
-    const/16 v4, 0x45
-
-    aput-char v4, v1, v3
-
-    aput-char v0, v1, v2
-
-    aput-char v6, v1, v7
-
-    aput-char v17, v1, v5
-
-    aput-char v16, v1, v8
-
-    aput-char v6, v1, v11
-
-    aput-char v15, v1, v14
-
-    aput-char v10, v1, v12
-
-    return-object v1
-
-    :cond_4
-    const v0, 0x10ffff
-
-    if-gt v1, v0, :cond_5
-
-    .line 265
+    .line 251
     sget-object v0, Lcom/google/api/client/util/escape/PercentEscaper;->UPPER_HEX_DIGITS:[C
 
-    and-int/lit8 v15, v1, 0xf
+    and-int/lit8 v2, p1, 0xf
 
-    aget-char v15, v0, v15
+    aget-char v2, v0, v2
 
-    ushr-int/lit8 v16, v1, 0x4
+    aput-char v2, p0, v10
 
-    and-int/lit8 v16, v16, 0x3
+    ushr-int/lit8 v2, p1, 0x4
 
-    or-int/lit8 v16, v16, 0x8
+    and-int/2addr v2, v5
+
+    or-int/2addr v2, v10
+
+    .line 253
+    aget-char v2, v0, v2
+
+    aput-char v2, p0, v12
+
+    ushr-int/lit8 v2, p1, 0x6
+
+    and-int/lit8 v2, v2, 0xf
+
+    .line 255
+    aget-char v2, v0, v2
+
+    aput-char v2, p0, v6
+
+    ushr-int/lit8 v2, p1, 0xa
+
+    and-int/2addr v2, v5
+
+    or-int/2addr v2, v10
+
+    .line 257
+    aget-char v2, v0, v2
+
+    aput-char v2, p0, v3
+
+    ushr-int/2addr p1, v7
+
+    .line 259
+    aget-char p1, v0, p1
+
+    aput-char p1, p0, v1
+
+    return-object p0
+
+    :cond_4
+    const p0, 0x10ffff
+
+    if-gt p1, p0, :cond_5
+
+    .line 262
+    new-array p0, v7, [C
+
+    .line 265
+    aput-char v4, p0, v2
+
+    const/16 v2, 0x46
+
+    .line 266
+    aput-char v2, p0, v0
 
     .line 267
-    aget-char v16, v0, v16
+    aput-char v4, p0, v5
 
-    ushr-int/lit8 v17, v1, 0x6
-
-    and-int/lit8 v17, v17, 0xf
+    .line 268
+    aput-char v4, p0, v9
 
     .line 269
-    aget-char v17, v0, v17
+    aput-char v4, p0, v11
 
-    ushr-int/lit8 v18, v1, 0xa
+    .line 270
+    sget-object v0, Lcom/google/api/client/util/escape/PercentEscaper;->UPPER_HEX_DIGITS:[C
 
-    and-int/lit8 v18, v18, 0x3
+    and-int/lit8 v2, p1, 0xf
 
-    or-int/lit8 v18, v18, 0x8
+    aget-char v2, v0, v2
 
-    .line 271
-    aget-char v18, v0, v18
+    const/16 v4, 0xb
 
-    ushr-int/lit8 v19, v1, 0xc
+    aput-char v2, p0, v4
 
-    and-int/lit8 v19, v19, 0xf
+    ushr-int/lit8 v2, p1, 0x4
 
-    .line 273
-    aget-char v19, v0, v19
+    and-int/2addr v2, v5
 
-    ushr-int/lit8 v20, v1, 0x10
+    or-int/2addr v2, v10
 
-    and-int/lit8 v20, v20, 0x3
+    .line 272
+    aget-char v2, v0, v2
 
-    or-int/lit8 v20, v20, 0x8
+    aput-char v2, p0, v8
 
-    .line 275
-    aget-char v20, v0, v20
+    ushr-int/lit8 v2, p1, 0x6
 
-    ushr-int/lit8 v1, v1, 0x12
+    and-int/lit8 v2, v2, 0xf
 
-    and-int/2addr v1, v14
+    .line 274
+    aget-char v2, v0, v2
 
-    .line 277
-    aget-char v0, v0, v1
+    aput-char v2, p0, v10
 
-    new-array v1, v9, [C
+    ushr-int/lit8 v2, p1, 0xa
 
-    aput-char v6, v1, v4
+    and-int/2addr v2, v5
 
-    const/16 v4, 0x46
+    or-int/2addr v2, v10
 
-    aput-char v4, v1, v3
+    .line 276
+    aget-char v2, v0, v2
 
-    aput-char v0, v1, v2
+    aput-char v2, p0, v12
 
-    aput-char v6, v1, v7
+    ushr-int/lit8 v2, p1, 0xc
 
-    aput-char v20, v1, v5
+    and-int/lit8 v2, v2, 0xf
 
-    aput-char v19, v1, v8
+    .line 278
+    aget-char v2, v0, v2
 
-    aput-char v6, v1, v11
+    aput-char v2, p0, v6
 
-    aput-char v18, v1, v14
+    ushr-int/lit8 v2, p1, 0x10
 
-    aput-char v17, v1, v12
+    and-int/2addr v2, v5
 
-    aput-char v6, v1, v13
+    or-int/2addr v2, v10
 
-    aput-char v16, v1, v10
+    .line 280
+    aget-char v2, v0, v2
 
-    const/16 v0, 0xb
+    aput-char v2, p0, v3
 
-    aput-char v15, v1, v0
+    ushr-int/lit8 p1, p1, 0x12
 
-    return-object v1
+    and-int/2addr p1, v12
 
-    .line 281
+    .line 282
+    aget-char p1, v0, p1
+
+    aput-char p1, p0, v1
+
+    return-object p0
+
+    .line 286
     :cond_5
-    new-instance v0, Ljava/lang/IllegalArgumentException;
+    new-instance p0, Ljava/lang/IllegalArgumentException;
 
-    new-instance v2, Ljava/lang/StringBuilder;
+    new-instance v0, Ljava/lang/StringBuilder;
 
-    const-string v3, "Invalid unicode character value "
+    const-string v1, "Invalid unicode character value "
 
-    invoke-direct {v2, v3}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
-    invoke-virtual {v2, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+    invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
-    move-result-object v1
+    move-result-object p1
 
-    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-virtual {p1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    move-result-object v1
+    move-result-object p1
 
-    invoke-direct {v0, v1}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
+    invoke-direct {p0, p1}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
 
-    throw v0
+    throw p0
 .end method
 
 .method protected nextEscapeIndex(Ljava/lang/CharSequence;II)I
@@ -631,12 +643,12 @@
     :goto_0
     if-ge p2, p3, :cond_1
 
-    .line 183
+    .line 188
     invoke-interface {p1, p2}, Ljava/lang/CharSequence;->charAt(I)C
 
     move-result v0
 
-    .line 184
+    .line 189
     iget-object v1, p0, Lcom/google/api/client/util/escape/PercentEscaper;->safeOctets:[Z
 
     array-length v2, v1

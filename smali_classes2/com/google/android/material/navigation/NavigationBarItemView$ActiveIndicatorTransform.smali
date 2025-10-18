@@ -26,7 +26,7 @@
 .method private constructor <init>()V
     .locals 0
 
-    .line 1027
+    .line 1039
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -35,7 +35,7 @@
 .method synthetic constructor <init>(Lcom/google/android/material/navigation/NavigationBarItemView$1;)V
     .locals 0
 
-    .line 1027
+    .line 1039
     invoke-direct {p0}, Lcom/google/android/material/navigation/NavigationBarItemView$ActiveIndicatorTransform;-><init>()V
 
     return-void
@@ -71,7 +71,7 @@
     :cond_1
     const p2, 0x3e4ccccd    # 0.2f
 
-    .line 1046
+    .line 1058
     :goto_1
     invoke-static {p0, v1, v0, p2, p1}, Lcom/google/android/material/animation/AnimationUtils;->lerp(FFFFF)F
 
@@ -87,7 +87,7 @@
 
     const/high16 p2, 0x3f800000    # 1.0f
 
-    .line 1052
+    .line 1064
     invoke-static {p0, p2, p1}, Lcom/google/android/material/animation/AnimationUtils;->lerp(FFF)F
 
     move-result p0
@@ -106,21 +106,21 @@
 .method public updateForProgress(FFLandroid/view/View;)V
     .locals 1
 
-    .line 1076
+    .line 1088
     invoke-virtual {p0, p1, p2}, Lcom/google/android/material/navigation/NavigationBarItemView$ActiveIndicatorTransform;->calculateScaleX(FF)F
 
     move-result v0
 
     invoke-virtual {p3, v0}, Landroid/view/View;->setScaleX(F)V
 
-    .line 1077
+    .line 1089
     invoke-virtual {p0, p1, p2}, Lcom/google/android/material/navigation/NavigationBarItemView$ActiveIndicatorTransform;->calculateScaleY(FF)F
 
     move-result v0
 
     invoke-virtual {p3, v0}, Landroid/view/View;->setScaleY(F)V
 
-    .line 1078
+    .line 1090
     invoke-virtual {p0, p1, p2}, Lcom/google/android/material/navigation/NavigationBarItemView$ActiveIndicatorTransform;->calculateAlpha(FF)F
 
     move-result p0

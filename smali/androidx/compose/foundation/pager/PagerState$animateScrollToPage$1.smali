@@ -30,43 +30,24 @@
         0x0,
         0x0,
         0x0,
-        0x0,
-        0x1,
-        0x1,
-        0x1,
-        0x1,
-        0x1,
-        0x2
+        0x0
     }
     l = {
-        0x1c5,
-        0x1de,
-        0x1ea
+        0x1fc,
+        0x205
     }
     m = "animateScrollToPage"
     n = {
         "this",
         "animationSpec",
         "page",
-        "pageOffsetFraction",
-        "this",
-        "animationSpec",
-        "pageOffsetFraction",
-        "targetPage",
-        "preJumpPosition",
-        "this"
+        "pageOffsetFraction"
     }
     s = {
         "L$0",
         "L$1",
         "I$0",
-        "F$0",
-        "L$0",
-        "L$1",
-        "F$0",
-        "I$0",
-        "I$1",
-        "L$0"
+        "F$0"
     }
 .end annotation
 
@@ -75,8 +56,6 @@
 .field F$0:F
 
 .field I$0:I
-
-.field I$1:I
 
 .field L$0:Ljava/lang/Object;
 

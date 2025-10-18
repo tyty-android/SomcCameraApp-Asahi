@@ -21,7 +21,7 @@
 .method constructor <init>()V
     .locals 0
 
-    .line 1719
+    .line 1725
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -42,8 +42,8 @@
         }
     .end annotation
 
-    .line 1723
-    invoke-static {}, Ljp/co/sony/mc/camera/configuration/parameters/StreamingConnectMode;->getDefaultValue()Ljp/co/sony/mc/camera/configuration/parameters/StreamingConnectMode;
+    .line 1729
+    invoke-static {}, Ljp/co/sony/mc/camera/configuration/parameters/DisplayFlip;->getDefaultValue()Ljp/co/sony/mc/camera/configuration/parameters/DisplayFlip;
 
     move-result-object p0
 

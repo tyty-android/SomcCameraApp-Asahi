@@ -26,28 +26,28 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeViewDialValueBindingImpl;->sViewsWithIds:Landroid/util/SparseIntArray;
 
-    const v1, 0x7f090069
+    const v1, 0x7f090065
 
     const/4 v2, 0x2
 
     .line 17
     invoke-virtual {v0, v1, v2}, Landroid/util/SparseIntArray;->put(II)V
 
-    const v1, 0x7f09006a
+    const v1, 0x7f090066
 
     const/4 v2, 0x3
 
     .line 18
     invoke-virtual {v0, v1, v2}, Landroid/util/SparseIntArray;->put(II)V
 
-    const v1, 0x7f09006b
+    const v1, 0x7f090067
 
     const/4 v2, 0x4
 
     .line 19
     invoke-virtual {v0, v1, v2}, Landroid/util/SparseIntArray;->put(II)V
 
-    const v1, 0x7f09006c
+    const v1, 0x7f090068
 
     const/4 v2, 0x5
 

@@ -47,10 +47,10 @@
 .method public constructor <init>(Landroidx/compose/foundation/interaction/MutableInteractionSource;)V
     .locals 0
 
-    .line 261
+    .line 262
     invoke-direct {p0}, Landroidx/compose/ui/Modifier$Node;-><init>()V
 
-    .line 260
+    .line 261
     iput-object p1, p0, Landroidx/compose/foundation/FocusableInteractionNode;->interactionSource:Landroidx/compose/foundation/interaction/MutableInteractionSource;
 
     return-void
@@ -59,22 +59,22 @@
 .method private final disposeInteractionSource()V
     .locals 3
 
-    .line 298
+    .line 299
     iget-object v0, p0, Landroidx/compose/foundation/FocusableInteractionNode;->interactionSource:Landroidx/compose/foundation/interaction/MutableInteractionSource;
 
     if-eqz v0, :cond_0
 
-    .line 299
+    .line 300
     iget-object v1, p0, Landroidx/compose/foundation/FocusableInteractionNode;->focusedInteraction:Landroidx/compose/foundation/interaction/FocusInteraction$Focus;
 
     if-eqz v1, :cond_0
 
-    .line 300
+    .line 301
     new-instance v2, Landroidx/compose/foundation/interaction/FocusInteraction$Unfocus;
 
     invoke-direct {v2, v1}, Landroidx/compose/foundation/interaction/FocusInteraction$Unfocus;-><init>(Landroidx/compose/foundation/interaction/FocusInteraction$Focus;)V
 
-    .line 301
+    .line 302
     check-cast v2, Landroidx/compose/foundation/interaction/Interaction;
 
     invoke-interface {v0, v2}, Landroidx/compose/foundation/interaction/MutableInteractionSource;->tryEmit(Landroidx/compose/foundation/interaction/Interaction;)Z
@@ -82,7 +82,7 @@
     :cond_0
     const/4 v0, 0x0
 
-    .line 304
+    .line 305
     iput-object v0, p0, Landroidx/compose/foundation/FocusableInteractionNode;->focusedInteraction:Landroidx/compose/foundation/interaction/FocusInteraction$Focus;
 
     return-void
@@ -91,14 +91,14 @@
 .method private final emitWithFallback(Landroidx/compose/foundation/interaction/MutableInteractionSource;Landroidx/compose/foundation/interaction/Interaction;)V
     .locals 7
 
-    .line 308
+    .line 309
     invoke-virtual {p0}, Landroidx/compose/foundation/FocusableInteractionNode;->isAttached()Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
-    .line 309
+    .line 310
     invoke-virtual {p0}, Landroidx/compose/foundation/FocusableInteractionNode;->getCoroutineScope()Lkotlinx/coroutines/CoroutineScope;
 
     move-result-object v1
@@ -125,7 +125,7 @@
 
     goto :goto_0
 
-    .line 313
+    .line 314
     :cond_0
     invoke-interface {p1, p2}, Landroidx/compose/foundation/interaction/MutableInteractionSource;->tryEmit(Landroidx/compose/foundation/interaction/Interaction;)Z
 
@@ -138,7 +138,7 @@
 .method public final setFocus(Z)V
     .locals 3
 
-    .line 270
+    .line 271
     iget-object v0, p0, Landroidx/compose/foundation/FocusableInteractionNode;->interactionSource:Landroidx/compose/foundation/interaction/MutableInteractionSource;
 
     if-eqz v0, :cond_2
@@ -147,59 +147,59 @@
 
     if-eqz p1, :cond_1
 
-    .line 272
+    .line 273
     iget-object p1, p0, Landroidx/compose/foundation/FocusableInteractionNode;->focusedInteraction:Landroidx/compose/foundation/interaction/FocusInteraction$Focus;
 
     if-eqz p1, :cond_0
 
-    .line 273
+    .line 274
     new-instance v2, Landroidx/compose/foundation/interaction/FocusInteraction$Unfocus;
 
     invoke-direct {v2, p1}, Landroidx/compose/foundation/interaction/FocusInteraction$Unfocus;-><init>(Landroidx/compose/foundation/interaction/FocusInteraction$Focus;)V
 
-    .line 274
+    .line 275
     check-cast v2, Landroidx/compose/foundation/interaction/Interaction;
 
     invoke-direct {p0, v0, v2}, Landroidx/compose/foundation/FocusableInteractionNode;->emitWithFallback(Landroidx/compose/foundation/interaction/MutableInteractionSource;Landroidx/compose/foundation/interaction/Interaction;)V
 
-    .line 275
+    .line 276
     iput-object v1, p0, Landroidx/compose/foundation/FocusableInteractionNode;->focusedInteraction:Landroidx/compose/foundation/interaction/FocusInteraction$Focus;
 
-    .line 277
+    .line 278
     :cond_0
     new-instance p1, Landroidx/compose/foundation/interaction/FocusInteraction$Focus;
 
     invoke-direct {p1}, Landroidx/compose/foundation/interaction/FocusInteraction$Focus;-><init>()V
 
-    .line 278
+    .line 279
     move-object v1, p1
 
     check-cast v1, Landroidx/compose/foundation/interaction/Interaction;
 
     invoke-direct {p0, v0, v1}, Landroidx/compose/foundation/FocusableInteractionNode;->emitWithFallback(Landroidx/compose/foundation/interaction/MutableInteractionSource;Landroidx/compose/foundation/interaction/Interaction;)V
 
-    .line 279
+    .line 280
     iput-object p1, p0, Landroidx/compose/foundation/FocusableInteractionNode;->focusedInteraction:Landroidx/compose/foundation/interaction/FocusInteraction$Focus;
 
     goto :goto_0
 
-    .line 281
+    .line 282
     :cond_1
     iget-object p1, p0, Landroidx/compose/foundation/FocusableInteractionNode;->focusedInteraction:Landroidx/compose/foundation/interaction/FocusInteraction$Focus;
 
     if-eqz p1, :cond_2
 
-    .line 282
+    .line 283
     new-instance v2, Landroidx/compose/foundation/interaction/FocusInteraction$Unfocus;
 
     invoke-direct {v2, p1}, Landroidx/compose/foundation/interaction/FocusInteraction$Unfocus;-><init>(Landroidx/compose/foundation/interaction/FocusInteraction$Focus;)V
 
-    .line 283
+    .line 284
     check-cast v2, Landroidx/compose/foundation/interaction/Interaction;
 
     invoke-direct {p0, v0, v2}, Landroidx/compose/foundation/FocusableInteractionNode;->emitWithFallback(Landroidx/compose/foundation/interaction/MutableInteractionSource;Landroidx/compose/foundation/interaction/Interaction;)V
 
-    .line 284
+    .line 285
     iput-object v1, p0, Landroidx/compose/foundation/FocusableInteractionNode;->focusedInteraction:Landroidx/compose/foundation/interaction/FocusInteraction$Focus;
 
     :cond_2
@@ -210,7 +210,7 @@
 .method public final update(Landroidx/compose/foundation/interaction/MutableInteractionSource;)V
     .locals 1
 
-    .line 291
+    .line 292
     iget-object v0, p0, Landroidx/compose/foundation/FocusableInteractionNode;->interactionSource:Landroidx/compose/foundation/interaction/MutableInteractionSource;
 
     invoke-static {v0, p1}, Lkotlin/jvm/internal/Intrinsics;->areEqual(Ljava/lang/Object;Ljava/lang/Object;)Z
@@ -219,10 +219,10 @@
 
     if-nez v0, :cond_0
 
-    .line 292
+    .line 293
     invoke-direct {p0}, Landroidx/compose/foundation/FocusableInteractionNode;->disposeInteractionSource()V
 
-    .line 293
+    .line 294
     iput-object p1, p0, Landroidx/compose/foundation/FocusableInteractionNode;->interactionSource:Landroidx/compose/foundation/interaction/MutableInteractionSource;
 
     :cond_0

@@ -38,7 +38,7 @@
 .method private static synthetic $values()[Ljp/co/sony/mc/camera/view/widget/CameraStatusBarPresenter$FocusEvent;
     .locals 4
 
-    .line 424
+    .line 412
     sget-object v0, Ljp/co/sony/mc/camera/view/widget/CameraStatusBarPresenter$FocusEvent;->EVENT_FOCUS_STARTED:Ljp/co/sony/mc/camera/view/widget/CameraStatusBarPresenter$FocusEvent;
 
     sget-object v1, Ljp/co/sony/mc/camera/view/widget/CameraStatusBarPresenter$FocusEvent;->EVENT_FOCUS_LOCKED:Ljp/co/sony/mc/camera/view/widget/CameraStatusBarPresenter$FocusEvent;
@@ -57,7 +57,7 @@
 .method static constructor <clinit>()V
     .locals 3
 
-    .line 425
+    .line 413
     new-instance v0, Ljp/co/sony/mc/camera/view/widget/CameraStatusBarPresenter$FocusEvent;
 
     const-string v1, "EVENT_FOCUS_STARTED"
@@ -68,7 +68,7 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/view/widget/CameraStatusBarPresenter$FocusEvent;->EVENT_FOCUS_STARTED:Ljp/co/sony/mc/camera/view/widget/CameraStatusBarPresenter$FocusEvent;
 
-    .line 426
+    .line 414
     new-instance v0, Ljp/co/sony/mc/camera/view/widget/CameraStatusBarPresenter$FocusEvent;
 
     const-string v1, "EVENT_FOCUS_LOCKED"
@@ -79,7 +79,7 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/view/widget/CameraStatusBarPresenter$FocusEvent;->EVENT_FOCUS_LOCKED:Ljp/co/sony/mc/camera/view/widget/CameraStatusBarPresenter$FocusEvent;
 
-    .line 427
+    .line 415
     new-instance v0, Ljp/co/sony/mc/camera/view/widget/CameraStatusBarPresenter$FocusEvent;
 
     const-string v1, "EVENT_FOCUS_AREA_UPDATE"
@@ -90,7 +90,7 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/view/widget/CameraStatusBarPresenter$FocusEvent;->EVENT_FOCUS_AREA_UPDATE:Ljp/co/sony/mc/camera/view/widget/CameraStatusBarPresenter$FocusEvent;
 
-    .line 428
+    .line 416
     new-instance v0, Ljp/co/sony/mc/camera/view/widget/CameraStatusBarPresenter$FocusEvent;
 
     const-string v1, "EVENT_RESET"
@@ -101,7 +101,7 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/view/widget/CameraStatusBarPresenter$FocusEvent;->EVENT_RESET:Ljp/co/sony/mc/camera/view/widget/CameraStatusBarPresenter$FocusEvent;
 
-    .line 424
+    .line 412
     invoke-static {}, Ljp/co/sony/mc/camera/view/widget/CameraStatusBarPresenter$FocusEvent;->$values()[Ljp/co/sony/mc/camera/view/widget/CameraStatusBarPresenter$FocusEvent;
 
     move-result-object v0
@@ -119,7 +119,7 @@
         }
     .end annotation
 
-    .line 424
+    .line 412
     invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
     return-void
@@ -128,7 +128,7 @@
 .method public static valueOf(Ljava/lang/String;)Ljp/co/sony/mc/camera/view/widget/CameraStatusBarPresenter$FocusEvent;
     .locals 1
 
-    .line 424
+    .line 412
     const-class v0, Ljp/co/sony/mc/camera/view/widget/CameraStatusBarPresenter$FocusEvent;
 
     invoke-static {v0, p0}, Ljava/lang/Enum;->valueOf(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
@@ -143,7 +143,7 @@
 .method public static values()[Ljp/co/sony/mc/camera/view/widget/CameraStatusBarPresenter$FocusEvent;
     .locals 1
 
-    .line 424
+    .line 412
     sget-object v0, Ljp/co/sony/mc/camera/view/widget/CameraStatusBarPresenter$FocusEvent;->$VALUES:[Ljp/co/sony/mc/camera/view/widget/CameraStatusBarPresenter$FocusEvent;
 
     invoke-virtual {v0}, [Ljp/co/sony/mc/camera/view/widget/CameraStatusBarPresenter$FocusEvent;->clone()Ljava/lang/Object;

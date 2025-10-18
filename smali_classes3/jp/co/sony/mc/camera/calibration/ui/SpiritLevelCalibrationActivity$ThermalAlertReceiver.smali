@@ -59,7 +59,7 @@
     .line 177
     iget-object p1, p0, Ljp/co/sony/mc/camera/calibration/ui/SpiritLevelCalibrationActivity$ThermalAlertReceiver;->this$0:Ljp/co/sony/mc/camera/calibration/ui/SpiritLevelCalibrationActivity;
 
-    const p2, 0x7f11019d
+    const p2, 0x7f1101a0
 
     .line 178
     invoke-virtual {p1, p2}, Ljp/co/sony/mc/camera/calibration/ui/SpiritLevelCalibrationActivity;->getString(I)Ljava/lang/String;
@@ -68,7 +68,7 @@
 
     iget-object p2, p0, Ljp/co/sony/mc/camera/calibration/ui/SpiritLevelCalibrationActivity$ThermalAlertReceiver;->this$0:Ljp/co/sony/mc/camera/calibration/ui/SpiritLevelCalibrationActivity;
 
-    const v0, 0x7f1101e3
+    const v0, 0x7f1101e6
 
     .line 179
     invoke-virtual {p2, v0}, Ljp/co/sony/mc/camera/calibration/ui/SpiritLevelCalibrationActivity;->getString(I)Ljava/lang/String;

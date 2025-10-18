@@ -14,7 +14,7 @@
 .end method
 
 .method private _call()V
-    .locals 9
+    .locals 11
 
     .line 46
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/storage/updater/StateUpdateTask;->getType()Ljp/co/sony/mc/camera/storage/Storage$StorageType;
@@ -41,6 +41,10 @@
     const-string v5, "Semaphore could not be released."
 
     const-string v6, "StateUpdateTask["
+
+    const/4 v7, 0x0
+
+    const/4 v8, 0x1
 
     if-ne v3, v4, :cond_1
 
@@ -108,17 +112,19 @@
 
     .line 70
     :cond_0
-    new-instance v1, Ljava/lang/StringBuilder;
+    new-array v1, v8, [Ljava/lang/String;
 
-    invoke-direct {v1, v6}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+    new-instance v2, Ljava/lang/StringBuilder;
 
-    invoke-virtual {v1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+    invoke-direct {v2, v6}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+
+    invoke-virtual {v2, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
     move-result-object v0
 
-    const-string v1, "]: One time update failed."
+    const-string v2, "]: One time update failed."
 
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v0
 
@@ -126,18 +132,16 @@
 
     move-result-object v0
 
-    filled-new-array {v0}, [Ljava/lang/String;
+    aput-object v0, v1, v7
 
-    move-result-object v0
-
-    invoke-static {v0}, Ljp/co/sony/mc/camera/util/CamLog;->e([Ljava/lang/String;)V
+    invoke-static {v1}, Ljp/co/sony/mc/camera/util/CamLog;->e([Ljava/lang/String;)V
 
     goto :goto_1
 
     :cond_1
-    const-wide/16 v7, 0x0
+    const-wide/16 v9, 0x0
 
-    cmp-long v4, v1, v7
+    cmp-long v4, v1, v9
 
     if-nez v4, :cond_2
 
@@ -195,27 +199,27 @@
 
     if-eqz v1, :cond_3
 
-    new-instance v1, Ljava/lang/StringBuilder;
+    new-array v1, v8, [Ljava/lang/String;
 
-    invoke-direct {v1, v6}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+    new-instance v2, Ljava/lang/StringBuilder;
 
-    invoke-virtual {v1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+    invoke-direct {v2, v6}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
-    move-result-object v1
+    invoke-virtual {v2, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
-    const-string v2, "]: SKIP"
+    move-result-object v2
 
-    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    const-string v3, "]: SKIP"
 
-    move-result-object v1
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    move-result-object v2
 
-    move-result-object v1
+    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    filled-new-array {v1}, [Ljava/lang/String;
+    move-result-object v2
 
-    move-result-object v1
+    aput-object v2, v1, v7
 
     invoke-static {v1}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 

@@ -19,5 +19,4 @@ Uključite WLAN u odjeljku POSTAVKE."</string>
     <string name="camera_strings_runtime_permission_rationale_network_cta_txt">"Ova aplikacija upotrebljava WLAN i mobilne podatke za slanje korisničkih podataka (tj. snimljene slike/videozapise, glasovne podatke, informacije o računima korištenih usluga itd.) na internet.
 Može vam se naplatiti potrošnja podataka, ovisno o ugovorima s mrežnim operaterom i davateljem usluge interneta."</string>
     <string name="camera_strings_streaming_error_wifi_disconnected_txt">Nema WLAN veze</string>
-    <string name="mv_wireless_network_txt">koristiti WLAN i mob. pod.</string>
 </resources>

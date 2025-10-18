@@ -46,7 +46,7 @@
 .method static constructor <clinit>()V
     .locals 3
 
-    .line 159
+    .line 164
     sget-object v0, Landroidx/compose/foundation/text/selection/SelectionRegistrarKt$LocalSelectionRegistrar$1;->INSTANCE:Landroidx/compose/foundation/text/selection/SelectionRegistrarKt$LocalSelectionRegistrar$1;
 
     check-cast v0, Lkotlin/jvm/functions/Function0;
@@ -75,7 +75,7 @@
         }
     .end annotation
 
-    .line 159
+    .line 164
     sget-object v0, Landroidx/compose/foundation/text/selection/SelectionRegistrarKt;->LocalSelectionRegistrar:Landroidx/compose/runtime/ProvidableCompositionLocal;
 
     return-object v0
@@ -86,7 +86,7 @@
 
     if-eqz p0, :cond_0
 
-    .line 151
+    .line 156
     invoke-interface {p0}, Landroidx/compose/foundation/text/selection/SelectionRegistrar;->getSubselections()Ljava/util/Map;
 
     move-result-object p0

@@ -21,7 +21,7 @@
 .method constructor <init>()V
     .locals 0
 
-    .line 640
+    .line 694
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -42,11 +42,11 @@
         }
     .end annotation
 
-    .line 644
+    .line 698
     check-cast p1, Ljp/co/sony/mc/camera/setting/CameraSettings;
 
-    .line 645
-    invoke-static {p1}, Ljp/co/sony/mc/camera/setting/CameraSettings;->-$$Nest$mgetFocusMagnificationPosition(Ljp/co/sony/mc/camera/setting/CameraSettings;)Landroid/graphics/Point;
+    .line 699
+    invoke-static {p1}, Ljp/co/sony/mc/camera/setting/CameraSettings;->-$$Nest$mgetFocusMagnificationRatio(Ljp/co/sony/mc/camera/setting/CameraSettings;)Ljava/lang/Float;
 
     move-result-object p0
 

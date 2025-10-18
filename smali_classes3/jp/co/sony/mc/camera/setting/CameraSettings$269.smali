@@ -21,7 +21,7 @@
 .method constructor <init>()V
     .locals 0
 
-    .line 2828
+    .line 2919
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -42,22 +42,8 @@
         }
     .end annotation
 
-    .line 2832
-    check-cast p1, Ljp/co/sony/mc/camera/setting/CameraSettings;
-
-    .line 2833
-    invoke-static {p1}, Ljp/co/sony/mc/camera/setting/CameraSettings;->-$$Nest$fgetmCapturingMode(Ljp/co/sony/mc/camera/setting/CameraSettings;)Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
-
-    move-result-object p0
-
-    invoke-virtual {p0}, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->getLayoutMode()Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
-
-    move-result-object p0
-
-    .line 2834
-    invoke-static {p0}, Ljp/co/sony/mc/camera/configuration/parameters/ComputationalMode;->getDefaultValue(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;)Ljp/co/sony/mc/camera/configuration/parameters/ComputationalMode;
-
-    move-result-object p0
+    .line 2923
+    sget-object p0, Ljp/co/sony/mc/camera/configuration/parameters/AutoExposureLock;->OFF:Ljp/co/sony/mc/camera/configuration/parameters/AutoExposureLock;
 
     return-object p0
 .end method

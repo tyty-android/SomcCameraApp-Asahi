@@ -1,6 +1,6 @@
 .class final Landroidx/compose/foundation/AndroidEdgeEffectOverscrollEffect$effectModifier$1;
 .super Lkotlin/coroutines/jvm/internal/SuspendLambda;
-.source "AndroidOverscroll.kt"
+.source "AndroidOverscroll.android.kt"
 
 # interfaces
 .implements Lkotlin/jvm/functions/Function2;
@@ -50,10 +50,10 @@
 
 .annotation runtime Lkotlin/coroutines/jvm/internal/DebugMetadata;
     c = "androidx.compose.foundation.AndroidEdgeEffectOverscrollEffect$effectModifier$1"
-    f = "AndroidOverscroll.kt"
+    f = "AndroidOverscroll.android.kt"
     i = {}
     l = {
-        0x13c
+        0x140
     }
     m = "invokeSuspend"
     n = {}
@@ -171,7 +171,7 @@
 
     move-result-object v0
 
-    .line 315
+    .line 319
     iget v1, p0, Landroidx/compose/foundation/AndroidEdgeEffectOverscrollEffect$effectModifier$1;->label:I
 
     const/4 v2, 0x1
@@ -200,7 +200,7 @@
 
     check-cast p1, Landroidx/compose/ui/input/pointer/PointerInputScope;
 
-    .line 316
+    .line 320
     new-instance v1, Landroidx/compose/foundation/AndroidEdgeEffectOverscrollEffect$effectModifier$1$1;
 
     iget-object v3, p0, Landroidx/compose/foundation/AndroidEdgeEffectOverscrollEffect$effectModifier$1;->this$0:Landroidx/compose/foundation/AndroidEdgeEffectOverscrollEffect;
@@ -225,7 +225,7 @@
 
     return-object v0
 
-    .line 336
+    .line 340
     :cond_2
     :goto_0
     sget-object p0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;

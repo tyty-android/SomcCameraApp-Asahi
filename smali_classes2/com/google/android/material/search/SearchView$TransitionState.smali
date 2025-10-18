@@ -38,7 +38,7 @@
 .method static constructor <clinit>()V
     .locals 6
 
-    .line 917
+    .line 1037
     new-instance v0, Lcom/google/android/material/search/SearchView$TransitionState;
 
     const-string v1, "HIDING"
@@ -49,7 +49,7 @@
 
     sput-object v0, Lcom/google/android/material/search/SearchView$TransitionState;->HIDING:Lcom/google/android/material/search/SearchView$TransitionState;
 
-    .line 918
+    .line 1038
     new-instance v1, Lcom/google/android/material/search/SearchView$TransitionState;
 
     const-string v2, "HIDDEN"
@@ -60,7 +60,7 @@
 
     sput-object v1, Lcom/google/android/material/search/SearchView$TransitionState;->HIDDEN:Lcom/google/android/material/search/SearchView$TransitionState;
 
-    .line 919
+    .line 1039
     new-instance v2, Lcom/google/android/material/search/SearchView$TransitionState;
 
     const-string v3, "SHOWING"
@@ -71,7 +71,7 @@
 
     sput-object v2, Lcom/google/android/material/search/SearchView$TransitionState;->SHOWING:Lcom/google/android/material/search/SearchView$TransitionState;
 
-    .line 920
+    .line 1040
     new-instance v3, Lcom/google/android/material/search/SearchView$TransitionState;
 
     const-string v4, "SHOWN"
@@ -82,7 +82,7 @@
 
     sput-object v3, Lcom/google/android/material/search/SearchView$TransitionState;->SHOWN:Lcom/google/android/material/search/SearchView$TransitionState;
 
-    .line 916
+    .line 1036
     filled-new-array {v0, v1, v2, v3}, [Lcom/google/android/material/search/SearchView$TransitionState;
 
     move-result-object v0
@@ -100,7 +100,7 @@
         }
     .end annotation
 
-    .line 916
+    .line 1036
     invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
     return-void
@@ -109,7 +109,7 @@
 .method public static valueOf(Ljava/lang/String;)Lcom/google/android/material/search/SearchView$TransitionState;
     .locals 1
 
-    .line 916
+    .line 1036
     const-class v0, Lcom/google/android/material/search/SearchView$TransitionState;
 
     invoke-static {v0, p0}, Ljava/lang/Enum;->valueOf(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
@@ -124,7 +124,7 @@
 .method public static values()[Lcom/google/android/material/search/SearchView$TransitionState;
     .locals 1
 
-    .line 916
+    .line 1036
     sget-object v0, Lcom/google/android/material/search/SearchView$TransitionState;->$VALUES:[Lcom/google/android/material/search/SearchView$TransitionState;
 
     invoke-virtual {v0}, [Lcom/google/android/material/search/SearchView$TransitionState;->clone()Ljava/lang/Object;

@@ -79,7 +79,7 @@
 .method public bridge synthetic invoke(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
 
-    .line 1027
+    .line 1103
     check-cast p1, Landroidx/compose/ui/node/AlignmentLinesOwner;
 
     invoke-virtual {p0, p1}, Landroidx/compose/ui/node/LayoutNodeLayoutDelegate$LookaheadPassDelegate$layoutChildren$1$1;->invoke(Landroidx/compose/ui/node/AlignmentLinesOwner;)V
@@ -92,11 +92,7 @@
 .method public final invoke(Landroidx/compose/ui/node/AlignmentLinesOwner;)V
     .locals 0
 
-    const-string p0, "child"
-
-    invoke-static {p1, p0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 1028
+    .line 1104
     invoke-interface {p1}, Landroidx/compose/ui/node/AlignmentLinesOwner;->getAlignmentLines()Landroidx/compose/ui/node/AlignmentLines;
 
     move-result-object p0

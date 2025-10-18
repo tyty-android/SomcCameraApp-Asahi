@@ -53,7 +53,7 @@
     f = "Wrapper.android.kt"
     i = {}
     l = {
-        0x9b
+        0x88
     }
     m = "invokeSuspend"
     n = {}
@@ -167,7 +167,7 @@
 
     move-result-object v0
 
-    .line 65535
+    .line 136
     iget v1, p0, Landroidx/compose/ui/platform/WrappedComposition$setContent$1$1$1;->label:I
 
     const/4 v2, 0x1
@@ -192,7 +192,6 @@
     :cond_1
     invoke-static {p1}, Lkotlin/ResultKt;->throwOnFailure(Ljava/lang/Object;)V
 
-    .line 155
     iget-object p1, p0, Landroidx/compose/ui/platform/WrappedComposition$setContent$1$1$1;->this$0:Landroidx/compose/ui/platform/WrappedComposition;
 
     invoke-virtual {p1}, Landroidx/compose/ui/platform/WrappedComposition;->getOwner()Landroidx/compose/ui/platform/AndroidComposeView;

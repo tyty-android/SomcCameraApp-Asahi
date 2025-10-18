@@ -13,85 +13,85 @@
 
 .annotation runtime Lkotlin/Metadata;
     d1 = {
-        "\u0000x\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0010\u000b\n\u0002\u0008\u0005\n\u0002\u0010%\n\u0002\u0010\u000e\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0005\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0005\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0006\n\u0002\u0010\u0008\n\u0002\u0008\u0005\n\u0002\u0018\u0002\n\u0002\u0008\u0005\n\u0002\u0010\u0002\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\r\u0008\u0007\u0018\u0000 D2\u00020\u0001:\u0002DEB\u000f\u0008\u0002\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u00a2\u0006\u0002\u0010\u0004J\u0006\u00103\u001a\u000204J!\u00105\u001a\u0002042\u0006\u00106\u001a\u0002072\u0006\u00108\u001a\u000209H\u0082@\u00f8\u0001\u0000\u00a2\u0006\u0002\u0010:J\u0006\u0010;\u001a\u000204J\u000e\u0010<\u001a\u0002042\u0006\u0010=\u001a\u00020!J\u0016\u0010>\u001a\u0002042\u0006\u00106\u001a\u0002072\u0006\u00108\u001a\u000209J\u0006\u0010?\u001a\u000204J\u000e\u0010@\u001a\u0002042\u0006\u0010=\u001a\u00020!J\u000e\u0010A\u001a\u0002042\u0006\u0010B\u001a\u00020\u0006J\u0006\u0010C\u001a\u000204R\u001a\u0010\u0005\u001a\u00020\u0006X\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\u0008\u0007\u0010\u0008\"\u0004\u0008\t\u0010\nR\u001a\u0010\u000b\u001a\u000e\u0012\u0004\u0012\u00020\r\u0012\u0004\u0012\u00020\u000e0\u000cX\u0082\u0004\u00a2\u0006\u0002\n\u0000R*\u0010\u000f\u001a\u0012\u0012\u0004\u0012\u00020\u00110\u0010j\u0008\u0012\u0004\u0012\u00020\u0011`\u0012X\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\u0008\u0013\u0010\u0014\"\u0004\u0008\u0015\u0010\u0016R\u0010\u0010\u0017\u001a\u0004\u0018\u00010\u0018X\u0082\u000e\u00a2\u0006\u0002\n\u0000R\u001a\u0010\u0019\u001a\u00020\u001aX\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\u0008\u001b\u0010\u001c\"\u0004\u0008\u001d\u0010\u001eR\u0014\u0010\u001f\u001a\u0008\u0012\u0004\u0012\u00020!0 X\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u001a\u0010\"\u001a\u00020\u0011X\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\u0008#\u0010$\"\u0004\u0008%\u0010&R\u001a\u0010\'\u001a\u00020(X\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\u0008)\u0010*\"\u0004\u0008+\u0010,R\u001a\u0010-\u001a\u00020.X\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\u0008/\u00100\"\u0004\u00081\u00102\u0082\u0002\u0004\n\u0002\u0008\u0019\u00a8\u0006F"
+        "\u0000r\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0003\n\u0002\u0018\u0002\n\u0002\u0008\u0005\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0008\n\n\u0002\u0018\u0002\n\u0002\u0008\u0005\n\u0002\u0010\u000b\n\u0002\u0008\u0005\n\u0002\u0010\u0008\n\u0002\u0008\u0005\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010%\n\u0002\u0010\u000e\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0002\n\u0002\u0008\t\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0006\u0008\u0007\u0018\u0000 E2\u00020\u0001:\u0002DEB\u0011\u0008\u0002\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u00a2\u0006\u0004\u0008\u0004\u0010\u0005J\u0006\u00103\u001a\u000204J\u0006\u00105\u001a\u000204J\u000e\u00106\u001a\u0002042\u0006\u00107\u001a\u00020,J\u000e\u00108\u001a\u0002042\u0006\u00107\u001a\u00020,J\u000e\u00109\u001a\u0002042\u0006\u0010:\u001a\u00020\u001fJ\u0006\u0010;\u001a\u000204J\u0016\u0010<\u001a\u0002042\u0006\u0010=\u001a\u00020>2\u0006\u0010?\u001a\u00020@J\u0006\u0010A\u001a\u000204J\u001e\u0010B\u001a\u0002042\u0006\u0010=\u001a\u00020>2\u0006\u0010?\u001a\u00020@H\u0082@\u00a2\u0006\u0002\u0010CR\u001a\u0010\u0006\u001a\u00020\u0007X\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\u0008\u0008\u0010\t\"\u0004\u0008\n\u0010\u000bR \u0010\u000c\u001a\u0008\u0012\u0004\u0012\u00020\u000e0\rX\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\u0008\u000f\u0010\u0010\"\u0004\u0008\u0011\u0010\u0012R\u001a\u0010\u0013\u001a\u00020\u000eX\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\u0008\u0014\u0010\u0015\"\u0004\u0008\u0016\u0010\u0017R\u001a\u0010\u0018\u001a\u00020\u0019X\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\u0008\u001a\u0010\u001b\"\u0004\u0008\u001c\u0010\u001dR\u001a\u0010\u001e\u001a\u00020\u001fX\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\u0008 \u0010!\"\u0004\u0008\"\u0010#R\u001a\u0010$\u001a\u00020%X\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\u0008&\u0010\'\"\u0004\u0008(\u0010)R\u0014\u0010*\u001a\u0008\u0012\u0004\u0012\u00020,0+X\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u001a\u0010-\u001a\u000e\u0012\u0004\u0012\u00020/\u0012\u0004\u0012\u0002000.X\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u0010\u00101\u001a\u0004\u0018\u000102X\u0082\u000e\u00a2\u0006\u0002\n\u0000\u00a8\u0006F"
     }
     d2 = {
         "Ljp/co/sony/mc/camera/rtmp/YouTubeStreamingDataManager;",
         "",
         "context",
         "Landroid/content/Context;",
+        "<init>",
         "(Landroid/content/Context;)V",
-        "addNewEvent",
-        "",
-        "getAddNewEvent",
-        "()Z",
-        "setAddNewEvent",
-        "(Z)V",
-        "chatDataMap",
-        "",
-        "",
-        "Ljp/co/sony/mc/camera/rtmp/YouTubeLiveChatData;",
-        "eventList",
-        "Ljava/util/ArrayList;",
-        "Ljp/co/sony/mc/camera/rtmp/YouTubeEventData;",
-        "Lkotlin/collections/ArrayList;",
-        "getEventList",
-        "()Ljava/util/ArrayList;",
-        "setEventList",
-        "(Ljava/util/ArrayList;)V",
-        "fetchLiveChatJob",
-        "Lkotlinx/coroutines/Job;",
-        "liveChatBanTarget",
-        "Ljp/co/sony/mc/camera/rtmp/YouTubeLiveChatBanData;",
-        "getLiveChatBanTarget",
-        "()Ljp/co/sony/mc/camera/rtmp/YouTubeLiveChatBanData;",
-        "setLiveChatBanTarget",
-        "(Ljp/co/sony/mc/camera/rtmp/YouTubeLiveChatBanData;)V",
-        "notifyListeners",
-        "Ljava/util/concurrent/CopyOnWriteArrayList;",
-        "Ljp/co/sony/mc/camera/rtmp/YouTubeStreamingDataManager$NotifyListener;",
-        "selectEvent",
-        "getSelectEvent",
-        "()Ljp/co/sony/mc/camera/rtmp/YouTubeEventData;",
-        "setSelectEvent",
-        "(Ljp/co/sony/mc/camera/rtmp/YouTubeEventData;)V",
-        "selectId",
-        "",
-        "getSelectId",
-        "()I",
-        "setSelectId",
-        "(I)V",
         "streamApi",
         "Ljp/co/sony/mc/camera/rtmp/YouTubeLiveStreamApi;",
         "getStreamApi",
         "()Ljp/co/sony/mc/camera/rtmp/YouTubeLiveStreamApi;",
         "setStreamApi",
         "(Ljp/co/sony/mc/camera/rtmp/YouTubeLiveStreamApi;)V",
+        "eventList",
+        "Ljava/util/ArrayList;",
+        "Ljp/co/sony/mc/camera/rtmp/YouTubeEventData;",
+        "getEventList",
+        "()Ljava/util/ArrayList;",
+        "setEventList",
+        "(Ljava/util/ArrayList;)V",
+        "selectEvent",
+        "getSelectEvent",
+        "()Ljp/co/sony/mc/camera/rtmp/YouTubeEventData;",
+        "setSelectEvent",
+        "(Ljp/co/sony/mc/camera/rtmp/YouTubeEventData;)V",
+        "liveChatBanTarget",
+        "Ljp/co/sony/mc/camera/rtmp/YouTubeLiveChatBanData;",
+        "getLiveChatBanTarget",
+        "()Ljp/co/sony/mc/camera/rtmp/YouTubeLiveChatBanData;",
+        "setLiveChatBanTarget",
+        "(Ljp/co/sony/mc/camera/rtmp/YouTubeLiveChatBanData;)V",
+        "addNewEvent",
+        "",
+        "getAddNewEvent",
+        "()Z",
+        "setAddNewEvent",
+        "(Z)V",
+        "selectId",
+        "",
+        "getSelectId",
+        "()I",
+        "setSelectId",
+        "(I)V",
+        "notifyListeners",
+        "Ljava/util/concurrent/CopyOnWriteArrayList;",
+        "Ljp/co/sony/mc/camera/rtmp/YouTubeStreamingDataManager$NotifyListener;",
+        "chatDataMap",
+        "",
+        "",
+        "Ljp/co/sony/mc/camera/rtmp/YouTubeLiveChatData;",
+        "fetchLiveChatJob",
+        "Lkotlinx/coroutines/Job;",
         "clearEventList",
         "",
-        "fetchLiveChat",
+        "updateYoutubeAccount",
+        "registerNotifyListener",
+        "listener",
+        "unregisterNotifyListener",
+        "updateList",
+        "isProgress",
+        "finish",
+        "startFetchLiveChat",
         "callback",
         "Ljp/co/sony/mc/camera/rtmp/YouTubeLiveChatCallback;",
         "activity",
         "Ljp/co/sony/mc/camera/CameraActivity;",
-        "(Ljp/co/sony/mc/camera/rtmp/YouTubeLiveChatCallback;Ljp/co/sony/mc/camera/CameraActivity;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;",
-        "finish",
-        "registerNotifyListener",
-        "listener",
-        "startFetchLiveChat",
         "stopFetchLiveChat",
-        "unregisterNotifyListener",
-        "updateList",
-        "isProgress",
-        "updateYoutubeAccount",
-        "Companion",
+        "fetchLiveChat",
+        "(Ljp/co/sony/mc/camera/rtmp/YouTubeLiveChatCallback;Ljp/co/sony/mc/camera/CameraActivity;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;",
         "NotifyListener",
+        "Companion",
         "SomcCamera_release"
     }
     k = 0x1
     mv = {
-        0x1,
-        0x9,
+        0x2,
+        0x0,
         0x0
     }
     xi = 0x30
@@ -569,6 +569,10 @@
 
     move-result-object p0
 
+    const-string v0, "iterator(...)"
+
+    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
+
     :goto_0
     invoke-interface {p0}, Ljava/util/Iterator;->hasNext()Z
 
@@ -846,6 +850,10 @@
     invoke-virtual {p0}, Ljava/util/concurrent/CopyOnWriteArrayList;->iterator()Ljava/util/Iterator;
 
     move-result-object p0
+
+    const-string v0, "iterator(...)"
+
+    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
 
     :goto_0
     invoke-interface {p0}, Ljava/util/Iterator;->hasNext()Z

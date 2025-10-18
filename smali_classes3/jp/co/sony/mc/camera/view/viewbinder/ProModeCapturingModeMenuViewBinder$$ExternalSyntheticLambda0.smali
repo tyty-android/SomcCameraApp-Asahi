@@ -3,7 +3,7 @@
 .source "D8$$SyntheticClass"
 
 # interfaces
-.implements Landroid/view/View$OnLayoutChangeListener;
+.implements Lkotlin/jvm/functions/Function1;
 
 
 # instance fields
@@ -24,33 +24,17 @@
 
 
 # virtual methods
-.method public final onLayoutChange(Landroid/view/View;IIIIIIII)V
-    .locals 10
+.method public final invoke(Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 0
 
     .line 0
-    move-object v0, p0
+    iget-object p0, p0, Ljp/co/sony/mc/camera/view/viewbinder/ProModeCapturingModeMenuViewBinder$$ExternalSyntheticLambda0;->f$0:Ljp/co/sony/mc/camera/view/viewbinder/ProModeCapturingModeMenuViewBinder;
 
-    iget-object v0, v0, Ljp/co/sony/mc/camera/view/viewbinder/ProModeCapturingModeMenuViewBinder$$ExternalSyntheticLambda0;->f$0:Ljp/co/sony/mc/camera/view/viewbinder/ProModeCapturingModeMenuViewBinder;
+    check-cast p1, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
-    move-object v1, p1
+    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/view/viewbinder/ProModeCapturingModeMenuViewBinder;->$r8$lambda$SMOY1Z3KxYjfdRus0Alwnit0vXk(Ljp/co/sony/mc/camera/view/viewbinder/ProModeCapturingModeMenuViewBinder;Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;)Lkotlin/Unit;
 
-    move v2, p2
+    move-result-object p0
 
-    move v3, p3
-
-    move v4, p4
-
-    move v5, p5
-
-    move/from16 v6, p6
-
-    move/from16 v7, p7
-
-    move/from16 v8, p8
-
-    move/from16 v9, p9
-
-    invoke-static/range {v0 .. v9}, Ljp/co/sony/mc/camera/view/viewbinder/ProModeCapturingModeMenuViewBinder;->$r8$lambda$y8aIbsrlyOpnOQqIi5Mb822F9_g(Ljp/co/sony/mc/camera/view/viewbinder/ProModeCapturingModeMenuViewBinder;Landroid/view/View;IIIIIIII)V
-
-    return-void
+    return-object p0
 .end method

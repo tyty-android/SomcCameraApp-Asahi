@@ -18,7 +18,7 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 922
+    .line 973
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -41,19 +41,19 @@
 
     goto :goto_0
 
-    .line 931
+    .line 982
     :cond_0
     const-string p0, "on"
 
     goto :goto_0
 
-    .line 928
+    .line 979
     :cond_1
     const-string p0, "auto"
 
     goto :goto_0
 
-    .line 934
+    .line 985
     :cond_2
     const-string p0, "off"
 
@@ -64,7 +64,7 @@
 .method static getApi2Value(Ljava/lang/String;)Ljava/lang/Integer;
     .locals 5
 
-    .line 943
+    .line 994
     invoke-virtual {p0}, Ljava/lang/String;->hashCode()I
 
     invoke-virtual {p0}, Ljava/lang/String;->hashCode()I
@@ -136,7 +136,7 @@
 
     goto :goto_1
 
-    .line 945
+    .line 996
     :pswitch_0
     invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -144,7 +144,7 @@
 
     goto :goto_1
 
-    .line 953
+    .line 1004
     :pswitch_1
     invoke-static {v3}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -152,7 +152,7 @@
 
     goto :goto_1
 
-    .line 949
+    .line 1000
     :pswitch_2
     invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 

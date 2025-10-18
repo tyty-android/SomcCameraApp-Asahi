@@ -53,7 +53,7 @@
     f = "FontListFontFamilyTypefaceAdapter.kt"
     i = {}
     l = {
-        0x95
+        0x99
     }
     m = "invokeSuspend"
     n = {}
@@ -167,7 +167,7 @@
 
     move-result-object v0
 
-    .line 149
+    .line 153
     iget v1, p0, Landroidx/compose/ui/text/font/FontListFontFamilyTypefaceAdapter$resolve$1;->label:I
 
     const/4 v2, 0x1

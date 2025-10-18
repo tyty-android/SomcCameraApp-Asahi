@@ -76,7 +76,7 @@
 .method public final invoke()Landroidx/compose/ui/unit/LayoutDirection;
     .locals 0
 
-    .line 132
+    .line 131
     const-string p0, "LocalLayoutDirection"
 
     invoke-static {p0}, Landroidx/compose/ui/platform/CompositionLocalsKt;->access$noLocalProvidedFor(Ljava/lang/String;)Ljava/lang/Void;
@@ -91,7 +91,7 @@
 .method public bridge synthetic invoke()Ljava/lang/Object;
     .locals 0
 
-    .line 131
+    .line 130
     invoke-virtual {p0}, Landroidx/compose/ui/platform/CompositionLocalsKt$LocalLayoutDirection$1;->invoke()Landroidx/compose/ui/unit/LayoutDirection;
 
     move-result-object p0

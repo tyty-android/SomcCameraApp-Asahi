@@ -113,10 +113,6 @@
 .method public static final PointerIcon(Landroid/view/PointerIcon;)Landroidx/compose/ui/input/pointer/PointerIcon;
     .locals 1
 
-    const-string v0, "pointerIcon"
-
-    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
     .line 70
     new-instance v0, Landroidx/compose/ui/input/pointer/AndroidPointerIcon;
 

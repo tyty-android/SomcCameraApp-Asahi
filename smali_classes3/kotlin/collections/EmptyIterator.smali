@@ -57,7 +57,7 @@
 .method private constructor <init>()V
     .locals 0
 
-    .line 15
+    .line 16
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -108,7 +108,7 @@
 .method public bridge synthetic next()Ljava/lang/Object;
     .locals 0
 
-    .line 15
+    .line 16
     invoke-virtual {p0}, Lkotlin/collections/EmptyIterator;->next()Ljava/lang/Void;
 
     move-result-object p0
@@ -119,7 +119,7 @@
 .method public next()Ljava/lang/Void;
     .locals 0
 
-    .line 20
+    .line 21
     new-instance p0, Ljava/util/NoSuchElementException;
 
     invoke-direct {p0}, Ljava/util/NoSuchElementException;-><init>()V
@@ -138,7 +138,7 @@
 .method public bridge synthetic previous()Ljava/lang/Object;
     .locals 0
 
-    .line 15
+    .line 16
     invoke-virtual {p0}, Lkotlin/collections/EmptyIterator;->previous()Ljava/lang/Void;
 
     move-result-object p0
@@ -149,7 +149,7 @@
 .method public previous()Ljava/lang/Void;
     .locals 0
 
-    .line 21
+    .line 22
     new-instance p0, Ljava/util/NoSuchElementException;
 
     invoke-direct {p0}, Ljava/util/NoSuchElementException;-><init>()V

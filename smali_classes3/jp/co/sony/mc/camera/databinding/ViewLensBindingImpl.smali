@@ -19,7 +19,7 @@
 
 # direct methods
 .method static constructor <clinit>()V
-    .locals 12
+    .locals 6
 
     .line 15
     new-instance v0, Landroidx/databinding/ViewDataBinding$IncludedLayouts;
@@ -30,44 +30,62 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/databinding/ViewLensBindingImpl;->sIncludes:Landroidx/databinding/ViewDataBinding$IncludedLayouts;
 
+    const/16 v1, 0xa
+
     .line 16
-    const-string/jumbo v10, "view_lens_slider"
+    new-array v2, v1, [Ljava/lang/String;
 
-    const-string/jumbo v11, "view_lens_slider"
-
-    const-string/jumbo v2, "view_lens_slider"
-
-    const-string/jumbo v3, "view_lens_slider"
+    const/4 v3, 0x0
 
     const-string/jumbo v4, "view_lens_slider"
 
-    const-string/jumbo v5, "view_lens_slider"
+    aput-object v4, v2, v3
 
-    const-string/jumbo v6, "view_lens_slider"
+    const/4 v5, 0x1
 
-    const-string/jumbo v7, "view_lens_slider"
+    aput-object v4, v2, v5
 
-    const-string/jumbo v8, "view_lens_slider"
+    const/4 v5, 0x2
 
-    const-string/jumbo v9, "view_lens_slider"
+    aput-object v4, v2, v5
 
-    filled-new-array/range {v2 .. v11}, [Ljava/lang/String;
+    const/4 v5, 0x3
 
-    move-result-object v1
+    aput-object v4, v2, v5
 
-    const/16 v2, 0xa
+    const/4 v5, 0x4
 
-    new-array v3, v2, [I
+    aput-object v4, v2, v5
 
-    fill-array-data v3, :array_0
+    const/4 v5, 0x5
 
-    new-array v2, v2, [I
+    aput-object v4, v2, v5
 
-    fill-array-data v2, :array_1
+    const/4 v5, 0x6
 
-    const/4 v4, 0x0
+    aput-object v4, v2, v5
 
-    invoke-virtual {v0, v4, v1, v3, v2}, Landroidx/databinding/ViewDataBinding$IncludedLayouts;->setIncludes(I[Ljava/lang/String;[I[I)V
+    const/4 v5, 0x7
+
+    aput-object v4, v2, v5
+
+    const/16 v5, 0x8
+
+    aput-object v4, v2, v5
+
+    const/16 v5, 0x9
+
+    aput-object v4, v2, v5
+
+    new-array v4, v1, [I
+
+    fill-array-data v4, :array_0
+
+    new-array v1, v1, [I
+
+    fill-array-data v1, :array_1
+
+    invoke-virtual {v0, v3, v2, v4, v1}, Landroidx/databinding/ViewDataBinding$IncludedLayouts;->setIncludes(I[Ljava/lang/String;[I[I)V
 
     const/4 v0, 0x0
 
@@ -94,16 +112,16 @@
 
     :array_1
     .array-data 4
-        0x7f0c015c
-        0x7f0c015c
-        0x7f0c015c
-        0x7f0c015c
-        0x7f0c015c
-        0x7f0c015c
-        0x7f0c015c
-        0x7f0c015c
-        0x7f0c015c
-        0x7f0c015c
+        0x7f0c014d
+        0x7f0c014d
+        0x7f0c014d
+        0x7f0c014d
+        0x7f0c014d
+        0x7f0c014d
+        0x7f0c014d
+        0x7f0c014d
+        0x7f0c014d
+        0x7f0c014d
     .end array-data
 .end method
 
@@ -1505,7 +1523,7 @@
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    const/16 p1, 0xf
+    const/16 p1, 0x11
 
     .line 163
     invoke-virtual {p0, p1}, Ljp/co/sony/mc/camera/databinding/ViewLensBindingImpl;->notifyPropertyChanged(I)V
@@ -1598,7 +1616,7 @@
 .method public setVariable(ILjava/lang/Object;)Z
     .locals 1
 
-    const/16 v0, 0x13
+    const/16 v0, 0x16
 
     if-ne v0, p1, :cond_0
 
@@ -1610,7 +1628,7 @@
     goto :goto_0
 
     :cond_0
-    const/16 v0, 0xf
+    const/16 v0, 0x11
 
     if-ne v0, p1, :cond_1
 
@@ -1622,7 +1640,7 @@
     goto :goto_0
 
     :cond_1
-    const/4 v0, 0x7
+    const/16 v0, 0x8
 
     if-ne v0, p1, :cond_2
 
@@ -1634,7 +1652,7 @@
     goto :goto_0
 
     :cond_2
-    const/16 v0, 0x8
+    const/16 v0, 0x9
 
     if-ne v0, p1, :cond_3
 

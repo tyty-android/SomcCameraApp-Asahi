@@ -73,7 +73,7 @@
 .method public bridge synthetic invoke(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
 
-    .line 72
+    .line 81
     check-cast p1, Lkotlin/io/path/CopyActionContext;
 
     check-cast p2, Ljava/nio/file/Path;
@@ -102,7 +102,7 @@
 
     invoke-static {p3, p1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 73
+    .line 82
     sget-object p1, Lkotlin/io/path/LinkFollowing;->INSTANCE:Lkotlin/io/path/LinkFollowing;
 
     iget-boolean p0, p0, Lkotlin/io/path/PathsKt__PathRecursiveFunctionsKt$copyToRecursively$2;->$followLinks:Z
@@ -113,14 +113,14 @@
 
     const/4 p1, 0x1
 
-    .line 74
+    .line 83
     new-array v0, p1, [Ljava/nio/file/LinkOption;
 
-    sget-object v1, Ljava/nio/file/LinkOption;->NOFOLLOW_LINKS:Ljava/nio/file/LinkOption;
+    const/4 v1, 0x0
 
-    const/4 v2, 0x0
+    sget-object v2, Ljava/nio/file/LinkOption;->NOFOLLOW_LINKS:Ljava/nio/file/LinkOption;
 
-    aput-object v1, v0, v2
+    aput-object v2, v0, v1
 
     invoke-static {v0, p1}, Ljava/util/Arrays;->copyOf([Ljava/lang/Object;I)[Ljava/lang/Object;
 
@@ -132,7 +132,7 @@
 
     move-result p1
 
-    .line 75
+    .line 84
     array-length v0, p0
 
     invoke-static {p0, v0}, Ljava/util/Arrays;->copyOf([Ljava/lang/Object;I)[Ljava/lang/Object;
@@ -160,10 +160,10 @@
     :cond_0
     if-eqz p1, :cond_1
 
-    .line 78
+    .line 87
     invoke-static {p3}, Lkotlin/io/path/PathsKt;->deleteRecursively(Ljava/nio/file/Path;)V
 
-    .line 80
+    .line 89
     :cond_1
     new-instance p1, Lkotlin/jvm/internal/SpreadBuilder;
 
@@ -201,11 +201,11 @@
 
     move-result-object p0
 
-    const-string p1, "copy(this, target, *options)"
+    const-string p1, "copy(...)"
 
     invoke-static {p0, p1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 84
+    .line 93
     :cond_2
     sget-object p0, Lkotlin/io/path/CopyActionResult;->CONTINUE:Lkotlin/io/path/CopyActionResult;
 

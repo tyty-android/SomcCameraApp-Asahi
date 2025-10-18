@@ -46,7 +46,7 @@
     k = 0x2
     mv = {
         0x1,
-        0x6,
+        0x8,
         0x0
     }
     xi = 0x30
@@ -140,7 +140,7 @@
 .method public static final getCoroutineName(Lkotlin/coroutines/CoroutineContext;)Ljava/lang/String;
     .locals 2
 
-    .line 239
+    .line 276
     invoke-static {}, Lkotlinx/coroutines/DebugKt;->getDEBUG()Z
 
     move-result v0
@@ -151,7 +151,7 @@
 
     return-object v1
 
-    .line 240
+    .line 277
     :cond_0
     sget-object v0, Lkotlinx/coroutines/CoroutineId;->Key:Lkotlinx/coroutines/CoroutineId$Key;
 
@@ -167,7 +167,7 @@
 
     return-object v1
 
-    .line 241
+    .line 278
     :cond_1
     sget-object v1, Lkotlinx/coroutines/CoroutineName;->Key:Lkotlinx/coroutines/CoroutineName$Key;
 
@@ -190,7 +190,7 @@
     :cond_2
     const-string p0, "coroutine"
 
-    .line 242
+    .line 279
     :cond_3
     new-instance v1, Ljava/lang/StringBuilder;
 
@@ -490,11 +490,6 @@
     :cond_0
     const/4 p0, 0x0
 
-    .line 113
-    move-object v1, p0
-
-    check-cast v1, Lkotlinx/coroutines/UndispatchedCoroutine;
-
     :goto_0
     const/4 v1, 0x1
 
@@ -529,12 +524,11 @@
     :catchall_0
     move-exception p2
 
-    .line 117
+    .line 118
     invoke-static {v1}, Lkotlin/jvm/internal/InlineMarker;->finallyStart(I)V
 
     if-eqz p0, :cond_3
 
-    .line 118
     invoke-virtual {p0}, Lkotlinx/coroutines/UndispatchedCoroutine;->clearThreadContext()Z
 
     move-result p0
@@ -592,10 +586,8 @@
     :catchall_0
     move-exception p2
 
-    .line 98
     invoke-static {v0}, Lkotlin/jvm/internal/InlineMarker;->finallyStart(I)V
 
-    .line 99
     invoke-static {p0, p1}, Lkotlinx/coroutines/internal/ThreadContextKt;->restoreThreadContext(Lkotlin/coroutines/CoroutineContext;Ljava/lang/Object;)V
 
     invoke-static {v0}, Lkotlin/jvm/internal/InlineMarker;->finallyEnd(I)V

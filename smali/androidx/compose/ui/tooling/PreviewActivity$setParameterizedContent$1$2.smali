@@ -1,6 +1,6 @@
 .class final Landroidx/compose/ui/tooling/PreviewActivity$setParameterizedContent$1$2;
 .super Lkotlin/jvm/internal/Lambda;
-.source "PreviewActivity.kt"
+.source "PreviewActivity.android.kt"
 
 # interfaces
 .implements Lkotlin/jvm/functions/Function3;
@@ -29,7 +29,7 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/SourceDebugExtension;
-    value = "SMAP\nPreviewActivity.kt\nKotlin\n*S Kotlin\n*F\n+ 1 PreviewActivity.kt\nandroidx/compose/ui/tooling/PreviewActivity$setParameterizedContent$1$2\n+ 2 Box.kt\nandroidx/compose/foundation/layout/BoxKt\n+ 3 Layout.kt\nandroidx/compose/ui/layout/LayoutKt\n+ 4 Composables.kt\nandroidx/compose/runtime/ComposablesKt\n+ 5 Composer.kt\nandroidx/compose/runtime/Updater\n*L\n1#1,145:1\n66#2,6:146\n72#2:180\n76#2:185\n78#3,11:152\n91#3:184\n456#4,8:163\n464#4,3:177\n467#4,3:181\n4144#5,6:171\n*S KotlinDebug\n*F\n+ 1 PreviewActivity.kt\nandroidx/compose/ui/tooling/PreviewActivity$setParameterizedContent$1$2\n*L\n114#1:146,6\n114#1:180\n114#1:185\n114#1:152,11\n114#1:184\n114#1:163,8\n114#1:177,3\n114#1:181,3\n114#1:171,6\n*E\n"
+    value = "SMAP\nPreviewActivity.android.kt\nKotlin\n*S Kotlin\n*F\n+ 1 PreviewActivity.android.kt\nandroidx/compose/ui/tooling/PreviewActivity$setParameterizedContent$1$2\n+ 2 Box.kt\nandroidx/compose/foundation/layout/BoxKt\n+ 3 Layout.kt\nandroidx/compose/ui/layout/LayoutKt\n+ 4 Composables.kt\nandroidx/compose/runtime/ComposablesKt\n+ 5 Composer.kt\nandroidx/compose/runtime/Updater\n*L\n1#1,145:1\n68#2,6:146\n74#2:180\n78#2:185\n79#3,11:152\n92#3:184\n456#4,8:163\n464#4,3:177\n467#4,3:181\n3737#5,6:171\n*S KotlinDebug\n*F\n+ 1 PreviewActivity.android.kt\nandroidx/compose/ui/tooling/PreviewActivity$setParameterizedContent$1$2\n*L\n114#1:146,6\n114#1:180\n114#1:185\n114#1:152,11\n114#1:184\n114#1:163,8\n114#1:177,3\n114#1:181,3\n114#1:171,6\n*E\n"
 .end annotation
 
 .annotation runtime Lkotlin/Metadata;
@@ -109,11 +109,7 @@
 .method public final invoke(Landroidx/compose/foundation/layout/PaddingValues;Landroidx/compose/runtime/Composer;I)V
     .locals 8
 
-    const-string v0, "padding"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string v0, "C113@4721L354:PreviewActivity.kt#hevd2p"
+    const-string v0, "C113@4741L354:PreviewActivity.android.kt#hevd2p"
 
     invoke-static {p2, v0}, Landroidx/compose/runtime/ComposerKt;->sourceInformation(Landroidx/compose/runtime/Composer;Ljava/lang/String;)V
 
@@ -135,15 +131,10 @@
     const/4 v0, 0x2
 
     :goto_0
-    or-int/2addr v0, p3
-
-    goto :goto_1
+    or-int/2addr p3, v0
 
     :cond_1
-    move v0, p3
-
-    :goto_1
-    and-int/lit8 v0, v0, 0x5b
+    and-int/lit8 v0, p3, 0x5b
 
     const/16 v1, 0x12
 
@@ -156,17 +147,17 @@
 
     if-nez v0, :cond_2
 
-    goto :goto_2
+    goto :goto_1
 
     .line 121
     :cond_2
     invoke-interface {p2}, Landroidx/compose/runtime/Composer;->skipToGroupEnd()V
 
-    goto/16 :goto_4
+    goto/16 :goto_3
 
     .line 114
     :cond_3
-    :goto_2
+    :goto_1
     invoke-static {}, Landroidx/compose/runtime/ComposerKt;->isTraceInProgress()Z
 
     move-result v0
@@ -175,9 +166,9 @@
 
     const/4 v0, -0x1
 
-    const-string v1, "androidx.compose.ui.tooling.PreviewActivity.setParameterizedContent.<anonymous>.<anonymous> (PreviewActivity.kt:112)"
+    const-string v1, "androidx.compose.ui.tooling.PreviewActivity.setParameterizedContent.<anonymous>.<anonymous> (PreviewActivity.android.kt:113)"
 
-    const v2, -0x5e14aa44
+    const v2, 0x36a7e9b
 
     invoke-static {v2, p3, v0, v1}, Landroidx/compose/runtime/ComposerKt;->traceEventStart(IIILjava/lang/String;)V
 
@@ -202,7 +193,7 @@
 
     invoke-interface {p2, v2}, Landroidx/compose/runtime/Composer;->startReplaceableGroup(I)V
 
-    const-string v2, "CC(Box)P(2,1,3)69@3214L67,70@3286L130:Box.kt#2w3rfo"
+    const-string v2, "CC(Box)P(2,1,3)71@3309L67,72@3381L130:Box.kt#2w3rfo"
 
     invoke-static {p2, v2}, Landroidx/compose/runtime/ComposerKt;->sourceInformation(Landroidx/compose/runtime/Composer;Ljava/lang/String;)V
 
@@ -225,7 +216,7 @@
     .line 151
     invoke-interface {p2, v4}, Landroidx/compose/runtime/Composer;->startReplaceableGroup(I)V
 
-    const-string v4, "CC(Layout)P(!1,2)77@3132L23,79@3222L420:Layout.kt#80mrfh"
+    const-string v4, "CC(Layout)P(!1,2)78@3182L23,80@3272L420:Layout.kt#80mrfh"
 
     invoke-static {p2, v4}, Landroidx/compose/runtime/ComposerKt;->sourceInformation(Landroidx/compose/runtime/Composer;Ljava/lang/String;)V
 
@@ -276,14 +267,14 @@
     .line 166
     invoke-interface {p2, v6}, Landroidx/compose/runtime/Composer;->createNode(Lkotlin/jvm/functions/Function0;)V
 
-    goto :goto_3
+    goto :goto_2
 
     .line 168
     :cond_6
     invoke-interface {p2}, Landroidx/compose/runtime/Composer;->useNode()V
 
     .line 170
-    :goto_3
+    :goto_2
     invoke-static {p2}, Landroidx/compose/runtime/Updater;->constructor-impl(Landroidx/compose/runtime/Composer;)Landroidx/compose/runtime/Composer;
 
     move-result-object v6
@@ -370,10 +361,10 @@
     .line 178
     invoke-interface {p2, p1}, Landroidx/compose/runtime/Composer;->startReplaceableGroup(I)V
 
-    const p1, -0x4ab8ddae
+    const p1, -0x4ab8dd4f
 
     .line 179
-    const-string v2, "C71@3331L9:Box.kt#2w3rfo"
+    const-string v2, "C73@3426L9:Box.kt#2w3rfo"
 
     .line 180
     invoke-static {p2, p1, v2}, Landroidx/compose/runtime/ComposerKt;->sourceInformationMarkerStart(Landroidx/compose/runtime/Composer;ILjava/lang/String;)V
@@ -382,9 +373,9 @@
 
     check-cast p1, Landroidx/compose/foundation/layout/BoxScope;
 
-    const p1, -0x1e99ce9d
+    const p1, -0x1e99ce89
 
-    const-string v2, "C:PreviewActivity.kt#hevd2p"
+    const-string v2, "C:PreviewActivity.android.kt#hevd2p"
 
     .line 115
     invoke-static {p2, p1, v2}, Landroidx/compose/runtime/ComposerKt;->sourceInformationMarkerStart(Landroidx/compose/runtime/Composer;ILjava/lang/String;)V
@@ -432,6 +423,6 @@
     invoke-static {}, Landroidx/compose/runtime/ComposerKt;->traceEventEnd()V
 
     :cond_9
-    :goto_4
+    :goto_3
     return-void
 .end method

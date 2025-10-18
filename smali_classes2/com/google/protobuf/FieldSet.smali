@@ -846,7 +846,9 @@
 
     packed-switch p0, :pswitch_data_0
 
-    goto :goto_1
+    const/4 p0, 0x0
+
+    goto :goto_0
 
     .line 313
     :pswitch_0
@@ -907,7 +909,6 @@
 
     .line 325
     :cond_0
-    :goto_1
     new-instance p0, Ljava/lang/IllegalArgumentException;
 
     const-string p1, "Wrong object type used with protocol message reflection."
@@ -915,6 +916,8 @@
     invoke-direct {p0, p1}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
 
     throw p0
+
+    nop
 
     :pswitch_data_0
     .packed-switch 0x1

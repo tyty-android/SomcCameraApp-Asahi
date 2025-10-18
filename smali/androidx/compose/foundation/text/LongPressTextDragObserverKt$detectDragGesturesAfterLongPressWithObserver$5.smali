@@ -90,11 +90,7 @@
 .end method
 
 .method public final invoke-Uv8p0NA(Landroidx/compose/ui/input/pointer/PointerInputChange;J)V
-    .locals 1
-
-    const-string v0, "<anonymous parameter 0>"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+    .locals 0
 
     .line 66
     iget-object p0, p0, Landroidx/compose/foundation/text/LongPressTextDragObserverKt$detectDragGesturesAfterLongPressWithObserver$5;->$observer:Landroidx/compose/foundation/text/TextDragObserver;

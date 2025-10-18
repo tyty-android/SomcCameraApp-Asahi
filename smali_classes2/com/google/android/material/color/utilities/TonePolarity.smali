@@ -18,16 +18,18 @@
 
 .field public static final enum DARKER:Lcom/google/android/material/color/utilities/TonePolarity;
 
+.field public static final enum FARTHER:Lcom/google/android/material/color/utilities/TonePolarity;
+
 .field public static final enum LIGHTER:Lcom/google/android/material/color/utilities/TonePolarity;
 
-.field public static final enum NO_PREFERENCE:Lcom/google/android/material/color/utilities/TonePolarity;
+.field public static final enum NEARER:Lcom/google/android/material/color/utilities/TonePolarity;
 
 
 # direct methods
 .method static constructor <clinit>()V
-    .locals 5
+    .locals 6
 
-    .line 30
+    .line 36
     new-instance v0, Lcom/google/android/material/color/utilities/TonePolarity;
 
     const-string v1, "DARKER"
@@ -38,7 +40,7 @@
 
     sput-object v0, Lcom/google/android/material/color/utilities/TonePolarity;->DARKER:Lcom/google/android/material/color/utilities/TonePolarity;
 
-    .line 31
+    .line 37
     new-instance v1, Lcom/google/android/material/color/utilities/TonePolarity;
 
     const-string v2, "LIGHTER"
@@ -49,19 +51,30 @@
 
     sput-object v1, Lcom/google/android/material/color/utilities/TonePolarity;->LIGHTER:Lcom/google/android/material/color/utilities/TonePolarity;
 
-    .line 32
+    .line 38
     new-instance v2, Lcom/google/android/material/color/utilities/TonePolarity;
 
-    const-string v3, "NO_PREFERENCE"
+    const-string v3, "NEARER"
 
     const/4 v4, 0x2
 
     invoke-direct {v2, v3, v4}, Lcom/google/android/material/color/utilities/TonePolarity;-><init>(Ljava/lang/String;I)V
 
-    sput-object v2, Lcom/google/android/material/color/utilities/TonePolarity;->NO_PREFERENCE:Lcom/google/android/material/color/utilities/TonePolarity;
+    sput-object v2, Lcom/google/android/material/color/utilities/TonePolarity;->NEARER:Lcom/google/android/material/color/utilities/TonePolarity;
 
-    .line 28
-    filled-new-array {v0, v1, v2}, [Lcom/google/android/material/color/utilities/TonePolarity;
+    .line 39
+    new-instance v3, Lcom/google/android/material/color/utilities/TonePolarity;
+
+    const-string v4, "FARTHER"
+
+    const/4 v5, 0x3
+
+    invoke-direct {v3, v4, v5}, Lcom/google/android/material/color/utilities/TonePolarity;-><init>(Ljava/lang/String;I)V
+
+    sput-object v3, Lcom/google/android/material/color/utilities/TonePolarity;->FARTHER:Lcom/google/android/material/color/utilities/TonePolarity;
+
+    .line 34
+    filled-new-array {v0, v1, v2, v3}, [Lcom/google/android/material/color/utilities/TonePolarity;
 
     move-result-object v0
 
@@ -78,7 +91,7 @@
         }
     .end annotation
 
-    .line 29
+    .line 35
     invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
     return-void
@@ -87,7 +100,7 @@
 .method public static valueOf(Ljava/lang/String;)Lcom/google/android/material/color/utilities/TonePolarity;
     .locals 1
 
-    .line 28
+    .line 34
     const-class v0, Lcom/google/android/material/color/utilities/TonePolarity;
 
     invoke-static {v0, p0}, Ljava/lang/Enum;->valueOf(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
@@ -102,7 +115,7 @@
 .method public static values()[Lcom/google/android/material/color/utilities/TonePolarity;
     .locals 1
 
-    .line 28
+    .line 34
     sget-object v0, Lcom/google/android/material/color/utilities/TonePolarity;->$VALUES:[Lcom/google/android/material/color/utilities/TonePolarity;
 
     invoke-virtual {v0}, [Lcom/google/android/material/color/utilities/TonePolarity;->clone()Ljava/lang/Object;

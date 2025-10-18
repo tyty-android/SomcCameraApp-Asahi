@@ -174,7 +174,7 @@
 
     invoke-static {}, Lkotlin/coroutines/intrinsics/IntrinsicsKt;->getCOROUTINE_SUSPENDED()Ljava/lang/Object;
 
-    .line 65535
+    .line 205
     iget v0, p0, Landroidx/compose/animation/core/InfiniteTransition$run$1$3;->label:I
 
     if-nez v0, :cond_1
@@ -204,7 +204,7 @@
 
     return-object p0
 
-    .line 65535
+    .line 205
     :cond_1
     new-instance p0, Ljava/lang/IllegalStateException;
 

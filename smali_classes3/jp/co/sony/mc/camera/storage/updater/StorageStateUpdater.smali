@@ -237,33 +237,35 @@
 .end method
 
 .method public requestVolumeCheck(Ljp/co/sony/mc/camera/storage/CameraStorageManager$UpdateInterval;Ljp/co/sony/mc/camera/storage/CameraStorageManager$UpdateRequestReason;)V
-    .locals 9
+    .locals 10
 
     .line 90
     sget-object v0, Ljp/co/sony/mc/camera/storage/CameraStorageManager$UpdateRequestReason;->APP_LAUNCH:Ljp/co/sony/mc/camera/storage/CameraStorageManager$UpdateRequestReason;
 
-    const/4 v1, 0x0
+    const/4 v1, 0x1
+
+    const/4 v2, 0x0
 
     if-ne p2, v0, :cond_1
 
     .line 91
     new-instance p1, Ljp/co/sony/mc/camera/storage/updater/StateUpdateTask;
 
-    iget-object v3, p0, Ljp/co/sony/mc/camera/storage/updater/StorageStateUpdater;->mType:Ljp/co/sony/mc/camera/storage/Storage$StorageType;
+    iget-object v4, p0, Ljp/co/sony/mc/camera/storage/updater/StorageStateUpdater;->mType:Ljp/co/sony/mc/camera/storage/Storage$StorageType;
 
-    iget-object v4, p0, Ljp/co/sony/mc/camera/storage/updater/StorageStateUpdater;->mStorageManager:Ljp/co/sony/mc/camera/storage/CameraStorageManager;
+    iget-object v5, p0, Ljp/co/sony/mc/camera/storage/updater/StorageStateUpdater;->mStorageManager:Ljp/co/sony/mc/camera/storage/CameraStorageManager;
 
-    iget-object v5, p0, Ljp/co/sony/mc/camera/storage/updater/StorageStateUpdater;->mInquiry:Ljp/co/sony/mc/camera/storage/SavingTaskInquiry;
+    iget-object v6, p0, Ljp/co/sony/mc/camera/storage/updater/StorageStateUpdater;->mInquiry:Ljp/co/sony/mc/camera/storage/SavingTaskInquiry;
 
-    iget-object v6, p0, Ljp/co/sony/mc/camera/storage/updater/StorageStateUpdater;->mSemaphore:Ljava/util/concurrent/Semaphore;
+    iget-object v7, p0, Ljp/co/sony/mc/camera/storage/updater/StorageStateUpdater;->mSemaphore:Ljava/util/concurrent/Semaphore;
 
-    iget-object v7, p0, Ljp/co/sony/mc/camera/storage/updater/StorageStateUpdater;->mCallback:Ljp/co/sony/mc/camera/storage/updater/StorageUpdateTask$OnTaskFinishCallback;
+    iget-object v8, p0, Ljp/co/sony/mc/camera/storage/updater/StorageStateUpdater;->mCallback:Ljp/co/sony/mc/camera/storage/updater/StorageUpdateTask$OnTaskFinishCallback;
 
-    move-object v2, p1
+    move-object v3, p1
 
-    move-object v8, p2
+    move-object v9, p2
 
-    invoke-direct/range {v2 .. v8}, Ljp/co/sony/mc/camera/storage/updater/StateUpdateTask;-><init>(Ljp/co/sony/mc/camera/storage/Storage$StorageType;Ljp/co/sony/mc/camera/storage/CameraStorageManager;Ljp/co/sony/mc/camera/storage/SavingTaskInquiry;Ljava/util/concurrent/Semaphore;Ljp/co/sony/mc/camera/storage/updater/StorageUpdateTask$OnTaskFinishCallback;Ljp/co/sony/mc/camera/storage/CameraStorageManager$UpdateRequestReason;)V
+    invoke-direct/range {v3 .. v9}, Ljp/co/sony/mc/camera/storage/updater/StateUpdateTask;-><init>(Ljp/co/sony/mc/camera/storage/Storage$StorageType;Ljp/co/sony/mc/camera/storage/CameraStorageManager;Ljp/co/sony/mc/camera/storage/SavingTaskInquiry;Ljava/util/concurrent/Semaphore;Ljp/co/sony/mc/camera/storage/updater/StorageUpdateTask$OnTaskFinishCallback;Ljp/co/sony/mc/camera/storage/CameraStorageManager$UpdateRequestReason;)V
 
     .line 93
     iget-object v0, p0, Ljp/co/sony/mc/camera/storage/updater/StorageStateUpdater;->mStackedTask:Ljava/util/Queue;
@@ -276,13 +278,11 @@
 
     if-eqz p2, :cond_0
 
-    const/4 p2, 0x1
+    new-array p2, v1, [Ljava/lang/String;
 
-    new-array p2, p2, [Ljava/lang/String;
+    const-string/jumbo v1, "submit StateUpdateTask."
 
-    const-string/jumbo v2, "submit StateUpdateTask."
-
-    aput-object v2, p2, v1
+    aput-object v1, p2, v2
 
     invoke-static {p2}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
@@ -325,7 +325,7 @@
     if-eqz v0, :cond_2
 
     .line 100
-    invoke-interface {v0, v1}, Ljava/util/concurrent/Future;->cancel(Z)Z
+    invoke-interface {v0, v2}, Ljava/util/concurrent/Future;->cancel(Z)Z
 
     const/4 v0, 0x0
 
@@ -387,11 +387,11 @@
 
     if-eqz p0, :cond_4
 
-    const-string p0, "Rejected the update for storage state."
+    new-array p0, v1, [Ljava/lang/String;
 
-    filled-new-array {p0}, [Ljava/lang/String;
+    const-string p1, "Rejected the update for storage state."
 
-    move-result-object p0
+    aput-object p1, p0, v2
 
     invoke-static {p0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 

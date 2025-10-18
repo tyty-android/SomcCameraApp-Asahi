@@ -14,7 +14,7 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/SourceDebugExtension;
-    value = "SMAP\nListBuilder.kt\nKotlin\n*S Kotlin\n*F\n+ 1 ListBuilder.kt\nkotlin/collections/builders/SerializedCollection\n+ 2 fake.kt\nkotlin/jvm/internal/FakeKt\n*L\n1#1,432:1\n1#2:433\n*E\n"
+    value = "SMAP\nListBuilder.kt\nKotlin\n*S Kotlin\n*F\n+ 1 ListBuilder.kt\nkotlin/collections/builders/SerializedCollection\n+ 2 fake.kt\nkotlin/jvm/internal/FakeKt\n*L\n1#1,718:1\n1#2:719\n*E\n"
 .end annotation
 
 .annotation runtime Lkotlin/Metadata;
@@ -93,7 +93,7 @@
 .method public constructor <init>()V
     .locals 2
 
-    .line 394
+    .line 679
     invoke-static {}, Lkotlin/collections/CollectionsKt;->emptyList()Ljava/util/List;
 
     move-result-object v0
@@ -121,13 +121,13 @@
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 389
+    .line 674
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 390
+    .line 675
     iput-object p1, p0, Lkotlin/collections/builders/SerializedCollection;->collection:Ljava/util/Collection;
 
-    .line 391
+    .line 676
     iput p2, p0, Lkotlin/collections/builders/SerializedCollection;->tag:I
 
     return-void
@@ -136,7 +136,7 @@
 .method private final readResolve()Ljava/lang/Object;
     .locals 0
 
-    .line 425
+    .line 710
     iget-object p0, p0, Lkotlin/collections/builders/SerializedCollection;->collection:Ljava/util/Collection;
 
     return-object p0
@@ -151,7 +151,7 @@
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 405
+    .line 690
     invoke-interface {p1}, Ljava/io/ObjectInput;->readByte()B
 
     move-result v0
@@ -164,7 +164,7 @@
 
     if-nez v2, :cond_5
 
-    .line 411
+    .line 696
     invoke-interface {p1}, Ljava/io/ObjectInput;->readInt()I
 
     move-result v0
@@ -179,7 +179,7 @@
 
     if-ne v1, v4, :cond_1
 
-    .line 417
+    .line 702
     invoke-static {v0}, Lkotlin/collections/SetsKt;->createSetBuilder(I)Ljava/util/Set;
 
     move-result-object v1
@@ -187,7 +187,7 @@
     :goto_0
     if-ge v2, v0, :cond_0
 
-    .line 418
+    .line 703
     invoke-interface {p1}, Ljava/io/ObjectInput;->readObject()Ljava/lang/Object;
 
     move-result-object v3
@@ -198,7 +198,7 @@
 
     goto :goto_0
 
-    .line 417
+    .line 702
     :cond_0
     invoke-static {v1}, Lkotlin/collections/SetsKt;->build(Ljava/util/Set;)Ljava/util/Set;
 
@@ -208,7 +208,7 @@
 
     goto :goto_2
 
-    .line 421
+    .line 706
     :cond_1
     new-instance p0, Ljava/io/InvalidObjectException;
 
@@ -234,7 +234,7 @@
 
     throw p0
 
-    .line 414
+    .line 699
     :cond_2
     invoke-static {v0}, Lkotlin/collections/CollectionsKt;->createListBuilder(I)Ljava/util/List;
 
@@ -243,7 +243,7 @@
     :goto_1
     if-ge v2, v0, :cond_3
 
-    .line 415
+    .line 700
     invoke-interface {p1}, Ljava/io/ObjectInput;->readObject()Ljava/lang/Object;
 
     move-result-object v3
@@ -254,7 +254,7 @@
 
     goto :goto_1
 
-    .line 414
+    .line 699
     :cond_3
     invoke-static {v1}, Lkotlin/collections/CollectionsKt;->build(Ljava/util/List;)Ljava/util/List;
 
@@ -262,13 +262,13 @@
 
     check-cast p1, Ljava/util/Collection;
 
-    .line 413
+    .line 698
     :goto_2
     iput-object p1, p0, Lkotlin/collections/builders/SerializedCollection;->collection:Ljava/util/Collection;
 
     return-void
 
-    .line 412
+    .line 697
     :cond_4
     new-instance p0, Ljava/io/InvalidObjectException;
 
@@ -294,7 +294,7 @@
 
     throw p0
 
-    .line 409
+    .line 694
     :cond_5
     new-instance p0, Ljava/io/InvalidObjectException;
 
@@ -328,12 +328,12 @@
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 397
+    .line 682
     iget v0, p0, Lkotlin/collections/builders/SerializedCollection;->tag:I
 
     invoke-interface {p1, v0}, Ljava/io/ObjectOutput;->writeByte(I)V
 
-    .line 398
+    .line 683
     iget-object v0, p0, Lkotlin/collections/builders/SerializedCollection;->collection:Ljava/util/Collection;
 
     invoke-interface {v0}, Ljava/util/Collection;->size()I
@@ -342,7 +342,7 @@
 
     invoke-interface {p1, v0}, Ljava/io/ObjectOutput;->writeInt(I)V
 
-    .line 399
+    .line 684
     iget-object p0, p0, Lkotlin/collections/builders/SerializedCollection;->collection:Ljava/util/Collection;
 
     invoke-interface {p0}, Ljava/util/Collection;->iterator()Ljava/util/Iterator;
@@ -360,7 +360,7 @@
 
     move-result-object v0
 
-    .line 400
+    .line 685
     invoke-interface {p1, v0}, Ljava/io/ObjectOutput;->writeObject(Ljava/lang/Object;)V
 
     goto :goto_0

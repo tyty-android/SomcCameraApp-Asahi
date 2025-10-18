@@ -21,7 +21,7 @@
 .method constructor <init>()V
     .locals 0
 
-    .line 1316
+    .line 1322
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -42,8 +42,8 @@
         }
     .end annotation
 
-    .line 1320
-    invoke-static {}, Ljp/co/sony/mc/camera/configuration/parameters/RemoteButtonCustom;->values()[Ljp/co/sony/mc/camera/configuration/parameters/RemoteButtonCustom;
+    .line 1326
+    invoke-static {}, Ljp/co/sony/mc/camera/configuration/parameters/DisplayMode;->values()[Ljp/co/sony/mc/camera/configuration/parameters/DisplayMode;
 
     move-result-object p0
 

@@ -25,7 +25,7 @@
 .method private constructor <init>(Ljp/co/sony/mc/camera/view/FragmentController;)V
     .locals 0
 
-    .line 5077
+    .line 5253
     iput-object p1, p0, Ljp/co/sony/mc/camera/view/FragmentController$MessageDialogOnOpenListenerImpl;->this$0:Ljp/co/sony/mc/camera/view/FragmentController;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -46,7 +46,7 @@
 .method public onOpen(Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogRequest;)V
     .locals 1
 
-    .line 5081
+    .line 5257
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/FragmentController$MessageDialogOnOpenListenerImpl;->this$0:Ljp/co/sony/mc/camera/view/FragmentController;
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/view/FragmentController;->-$$Nest$fgetmCameraEventNotifier(Ljp/co/sony/mc/camera/view/FragmentController;)Ljp/co/sony/mc/camera/view/CameraEventListener;
@@ -55,7 +55,7 @@
 
     invoke-interface {v0}, Ljp/co/sony/mc/camera/view/CameraEventListener;->onMessageDialogShown()V
 
-    .line 5082
+    .line 5258
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/FragmentController$MessageDialogOnOpenListenerImpl;->this$0:Ljp/co/sony/mc/camera/view/FragmentController;
 
     iget-object p1, p1, Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogRequest;->mDialogId:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;

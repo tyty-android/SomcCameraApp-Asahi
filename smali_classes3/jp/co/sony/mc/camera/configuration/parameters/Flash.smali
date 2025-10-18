@@ -75,7 +75,7 @@
     .line 22
     new-instance v7, Ljp/co/sony/mc/camera/configuration/parameters/Flash;
 
-    const v5, 0x7f1103be
+    const v5, 0x7f1103f3
 
     const-string v6, "off"
 
@@ -83,9 +83,9 @@
 
     const/4 v2, 0x0
 
-    const v3, 0x7f080192
+    const v3, 0x7f080197
 
-    const v4, 0x7f080188
+    const v4, 0x7f08018d
 
     move-object v0, v7
 
@@ -96,7 +96,7 @@
     .line 27
     new-instance v0, Ljp/co/sony/mc/camera/configuration/parameters/Flash;
 
-    const v13, 0x7f1103bd
+    const v13, 0x7f1103f2
 
     const-string v14, "auto"
 
@@ -104,9 +104,9 @@
 
     const/4 v10, 0x1
 
-    const v11, 0x7f08017a
+    const v11, 0x7f08017f
 
-    const v12, 0x7f080182
+    const v12, 0x7f080187
 
     move-object v8, v0
 
@@ -117,7 +117,7 @@
     .line 32
     new-instance v0, Ljp/co/sony/mc/camera/configuration/parameters/Flash;
 
-    const v6, 0x7f1103bf
+    const v6, 0x7f1103f4
 
     const-string v7, "on"
 
@@ -125,9 +125,9 @@
 
     const/4 v3, 0x2
 
-    const v4, 0x7f08017e
+    const v4, 0x7f080183
 
-    const v5, 0x7f080185
+    const v5, 0x7f08018a
 
     move-object v1, v0
 
@@ -138,7 +138,7 @@
     .line 37
     new-instance v0, Ljp/co/sony/mc/camera/configuration/parameters/Flash;
 
-    const v13, 0x7f11045b
+    const v13, 0x7f110492
 
     const-string/jumbo v14, "torch"
 
@@ -146,9 +146,9 @@
 
     const/4 v10, 0x3
 
-    const v11, 0x7f080195
+    const v11, 0x7f08019a
 
-    const v12, 0x7f08018b
+    const v12, 0x7f080190
 
     move-object v8, v0
 
@@ -159,7 +159,7 @@
     .line 42
     new-instance v0, Ljp/co/sony/mc/camera/configuration/parameters/Flash;
 
-    const v6, 0x7f1103be
+    const v6, 0x7f1103f3
 
     const-string v7, "off"
 
@@ -167,9 +167,9 @@
 
     const/4 v3, 0x4
 
-    const v4, 0x7f080192
+    const v4, 0x7f080197
 
-    const v5, 0x7f080188
+    const v5, 0x7f08018d
 
     move-object v1, v0
 

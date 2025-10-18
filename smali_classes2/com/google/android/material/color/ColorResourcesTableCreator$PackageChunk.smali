@@ -34,7 +34,7 @@
 
 # direct methods
 .method constructor <init>(Lcom/google/android/material/color/ColorResourcesTableCreator$PackageInfo;Ljava/util/List;)V
-    .locals 6
+    .locals 5
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -54,25 +54,47 @@
     .line 342
     new-instance p1, Lcom/google/android/material/color/ColorResourcesTableCreator$StringPoolChunk;
 
-    const-string v4, "?5"
+    const/4 v0, 0x6
 
-    const-string v5, "color"
+    new-array v0, v0, [Ljava/lang/String;
 
-    const-string v0, "?1"
+    const-string v1, "?1"
+
+    const/4 v2, 0x0
+
+    aput-object v1, v0, v2
 
     const-string v1, "?2"
 
-    const-string v2, "?3"
+    const/4 v3, 0x1
 
-    const-string v3, "?4"
+    aput-object v1, v0, v3
 
-    filled-new-array/range {v0 .. v5}, [Ljava/lang/String;
+    const/4 v1, 0x2
 
-    move-result-object v0
+    const-string v4, "?3"
 
-    const/4 v1, 0x0
+    aput-object v4, v0, v1
 
-    invoke-direct {p1, v1, v0}, Lcom/google/android/material/color/ColorResourcesTableCreator$StringPoolChunk;-><init>(Z[Ljava/lang/String;)V
+    const/4 v1, 0x3
+
+    const-string v4, "?4"
+
+    aput-object v4, v0, v1
+
+    const/4 v1, 0x4
+
+    const-string v4, "?5"
+
+    aput-object v4, v0, v1
+
+    const/4 v1, 0x5
+
+    const-string v4, "color"
+
+    aput-object v4, v0, v1
+
+    invoke-direct {p1, v2, v0}, Lcom/google/android/material/color/ColorResourcesTableCreator$StringPoolChunk;-><init>(Z[Ljava/lang/String;)V
 
     iput-object p1, p0, Lcom/google/android/material/color/ColorResourcesTableCreator$PackageChunk;->typeStrings:Lcom/google/android/material/color/ColorResourcesTableCreator$StringPoolChunk;
 
@@ -89,10 +111,10 @@
 
     move-result v0
 
-    if-ge v1, v0, :cond_0
+    if-ge v2, v0, :cond_0
 
     .line 345
-    invoke-interface {p2, v1}, Ljava/util/List;->get(I)Ljava/lang/Object;
+    invoke-interface {p2, v2}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
     move-result-object v0
 
@@ -102,9 +124,9 @@
 
     move-result-object v0
 
-    aput-object v0, p1, v1
+    aput-object v0, p1, v2
 
-    add-int/lit8 v1, v1, 0x1
+    add-int/lit8 v2, v2, 0x1
 
     goto :goto_0
 
@@ -112,9 +134,7 @@
     :cond_0
     new-instance v0, Lcom/google/android/material/color/ColorResourcesTableCreator$StringPoolChunk;
 
-    const/4 v1, 0x1
-
-    invoke-direct {v0, v1, p1}, Lcom/google/android/material/color/ColorResourcesTableCreator$StringPoolChunk;-><init>(Z[Ljava/lang/String;)V
+    invoke-direct {v0, v3, p1}, Lcom/google/android/material/color/ColorResourcesTableCreator$StringPoolChunk;-><init>(Z[Ljava/lang/String;)V
 
     iput-object v0, p0, Lcom/google/android/material/color/ColorResourcesTableCreator$PackageChunk;->keyStrings:Lcom/google/android/material/color/ColorResourcesTableCreator$StringPoolChunk;
 

@@ -15,76 +15,76 @@
 
 .annotation runtime Lkotlin/Metadata;
     d1 = {
-        "\u0000t\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\u0008\u0002\n\u0002\u0010\t\n\u0000\n\u0002\u0018\u0002\n\u0002\u0010\u000e\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000b\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0007\n\u0002\u0018\u0002\n\u0002\u0008\u0008\n\u0002\u0010\u0008\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\r\u0008\u00c7\u0002\u0018\u00002\u00020\u0001:\u00049:;<B\u0007\u0008\u0002\u00a2\u0006\u0002\u0010\u0002J\u000e\u0010\u000f\u001a\u00020\u00102\u0006\u0010\u0011\u001a\u00020\u0012J\u0006\u0010\u0013\u001a\u00020\u0010J\u001a\u0010\u0014\u001a\u0004\u0018\u00010\u00152\u0006\u0010\u0016\u001a\u00020\u00172\u0006\u0010\u0018\u001a\u00020\u0007H\u0002J\u001a\u0010\u0019\u001a\u0004\u0018\u00010\u00172\u0006\u0010\u0016\u001a\u00020\u00172\u0006\u0010\u0018\u001a\u00020\u0007H\u0002J\u000e\u0010\u001a\u001a\u00020\u00102\u0006\u0010\u0011\u001a\u00020\u0012J\u0018\u0010\u001b\u001a\u00020\u00072\u0006\u0010\u001c\u001a\u00020\u00172\u0006\u0010\u0018\u001a\u00020\u0007H\u0002J\u000e\u0010\u001d\u001a\u00020\u00102\u0006\u0010\u001e\u001a\u00020\u001fJ\u0006\u0010 \u001a\u00020\u000eJ\u0006\u0010!\u001a\u00020\u000eJ\u0006\u0010\"\u001a\u00020\u000eJ\u0006\u0010#\u001a\u00020\u000eJ\u000e\u0010$\u001a\u00020\u00102\u0006\u0010\u0011\u001a\u00020\u000cJ\u0006\u0010%\u001a\u00020\u0010J \u0010&\u001a\u00020\u00102\u0006\u0010\'\u001a\u00020(2\u0006\u0010)\u001a\u00020(2\u0008\u0010*\u001a\u0004\u0018\u00010+J\u0016\u0010,\u001a\u00020\u00102\u0006\u0010-\u001a\u00020.2\u0006\u0010/\u001a\u000200J\u000e\u00101\u001a\u00020\u00102\u0006\u0010/\u001a\u00020\nJ\u000e\u00102\u001a\u00020\u00102\u0006\u0010\u0011\u001a\u00020\u000cJ\u000e\u00103\u001a\u00020\u00102\u0006\u0010\u0011\u001a\u00020\u0012J\u000e\u00104\u001a\u00020\u00102\u0006\u00105\u001a\u00020\u0007J\u000e\u00106\u001a\u00020\u00102\u0006\u00107\u001a\u00020\u000eJ\u0006\u00108\u001a\u00020\u0010R\u000e\u0010\u0003\u001a\u00020\u0004X\u0082T\u00a2\u0006\u0002\n\u0000R\u001e\u0010\u0005\u001a\u0012\u0012\u0004\u0012\u00020\u00070\u0006j\u0008\u0012\u0004\u0012\u00020\u0007`\u0008X\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u0010\u0010\t\u001a\u0004\u0018\u00010\nX\u0082\u000e\u00a2\u0006\u0002\n\u0000R\u0010\u0010\u000b\u001a\u0004\u0018\u00010\u000cX\u0082\u000e\u00a2\u0006\u0002\n\u0000R\u000e\u0010\r\u001a\u00020\u000eX\u0082\u000e\u00a2\u0006\u0002\n\u0000\u00a8\u0006="
+        "\u0000r\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\u0008\u0003\n\u0002\u0018\u0002\n\u0002\u0010\u000e\n\u0000\n\u0002\u0010\t\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000b\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0003\n\u0002\u0010\u0008\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0005\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\r\n\u0002\u0018\u0002\n\u0002\u0008\u0003\n\u0002\u0018\u0002\n\u0002\u0008\u0007\u0008\u00c7\u0002\u0018\u00002\u00020\u0001:\u00049:;<B\t\u0008\u0003\u00a2\u0006\u0004\u0008\u0002\u0010\u0003J\u000e\u0010\u000f\u001a\u00020\u00102\u0006\u0010\u0011\u001a\u00020\u0012J\u0006\u0010\u0013\u001a\u00020\u0010J \u0010\u0014\u001a\u00020\u00102\u0006\u0010\u0015\u001a\u00020\u00162\u0006\u0010\u0017\u001a\u00020\u00162\u0008\u0010\u0018\u001a\u0004\u0018\u00010\u0019J\u000e\u0010\u001a\u001a\u00020\u00102\u0006\u0010\u001b\u001a\u00020\u001cJ\u000e\u0010\u001d\u001a\u00020\u00102\u0006\u0010\u001b\u001a\u00020\u001cJ\u000e\u0010\u001e\u001a\u00020\u00102\u0006\u0010\u001f\u001a\u00020\u0006J\u0016\u0010 \u001a\u00020\u00102\u0006\u0010!\u001a\u00020\"2\u0006\u0010#\u001a\u00020$J\u000e\u0010%\u001a\u00020\u00102\u0006\u0010\u001b\u001a\u00020\nJ\u0006\u0010&\u001a\u00020\u0010J\u0006\u0010\'\u001a\u00020\u000eJ\u0006\u0010(\u001a\u00020\u000eJ\u0006\u0010)\u001a\u00020\u000eJ\u000e\u0010*\u001a\u00020\u00102\u0006\u0010#\u001a\u00020\u000cJ\u000e\u0010+\u001a\u00020\u00102\u0006\u0010\u001b\u001a\u00020\nJ\u0006\u0010,\u001a\u00020\u0010J\u000e\u0010-\u001a\u00020\u00102\u0006\u0010.\u001a\u00020\u000eJ\u0006\u0010/\u001a\u00020\u000eJ\u000e\u00100\u001a\u00020\u00102\u0006\u0010\u001b\u001a\u00020\u001cJ\u001a\u00101\u001a\u0004\u0018\u0001022\u0006\u00103\u001a\u0002022\u0006\u00104\u001a\u00020\u0006H\u0002J\u001a\u00105\u001a\u0004\u0018\u0001062\u0006\u00103\u001a\u0002022\u0006\u00104\u001a\u00020\u0006H\u0002J\u0018\u00107\u001a\u00020\u00062\u0006\u00108\u001a\u0002022\u0006\u00104\u001a\u00020\u0006H\u0002R\u0014\u0010\u0004\u001a\u0008\u0012\u0004\u0012\u00020\u00060\u0005X\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u0007\u001a\u00020\u0008X\u0082T\u00a2\u0006\u0002\n\u0000R\u0010\u0010\t\u001a\u0004\u0018\u00010\nX\u0082\u000e\u00a2\u0006\u0002\n\u0000R\u0010\u0010\u000b\u001a\u0004\u0018\u00010\u000cX\u0082\u000e\u00a2\u0006\u0002\n\u0000R\u000e\u0010\r\u001a\u00020\u000eX\u0082\u000e\u00a2\u0006\u0002\n\u0000\u00a8\u0006="
     }
     d2 = {
         "Ljp/co/sony/mc/camera/rtmp/FacebookApi;",
         "",
+        "<init>",
         "()V",
-        "LIVE_VIDEO_EXPIRED_TIME",
-        "",
         "PERMISSIONS",
         "Ljava/util/ArrayList;",
         "",
-        "Lkotlin/collections/ArrayList;",
-        "mListener",
-        "Ljp/co/sony/mc/camera/rtmp/FacebookApi$UpdateLiveToListListener;",
+        "LIVE_VIDEO_EXPIRED_TIME",
+        "",
         "mLoginCallback",
         "Ljp/co/sony/mc/camera/rtmp/FacebookApi$LoginCallback;",
+        "mListener",
+        "Ljp/co/sony/mc/camera/rtmp/FacebookApi$UpdateLiveToListListener;",
         "mProcessingLogin",
         "",
-        "createLiveVideo",
-        "",
-        "callback",
-        "Ljp/co/sony/mc/camera/rtmp/FacebookLiveCallback;",
-        "destroy",
-        "getJsonArray",
-        "Lorg/json/JSONArray;",
-        "parent",
-        "Lorg/json/JSONObject;",
-        "key",
-        "getJsonObject",
-        "getLiveVideo",
-        "getStringValue",
-        "obj",
         "initialize",
+        "",
         "activity",
         "Ljp/co/sony/mc/camera/CameraActivity;",
-        "isDataAccessActive",
-        "isLogin",
-        "isLoginActive",
-        "isProcessingLogin",
-        "login",
-        "logout",
+        "destroy",
         "onActivityResult",
         "requestCode",
         "",
         "resultCode",
         "data",
         "Landroid/content/Intent;",
+        "getLiveVideo",
+        "callback",
+        "Ljp/co/sony/mc/camera/rtmp/FacebookLiveCallback;",
+        "createLiveVideo",
+        "requestStopLiveVideo",
+        "liveVideoId",
         "registerCallback",
         "view",
         "Landroid/view/View;",
         "listener",
         "Ljp/co/sony/mc/camera/rtmp/FacebookApi$NotifyListener;",
+        "login",
+        "logout",
+        "isLogin",
+        "isLoginActive",
+        "isDataAccessActive",
         "registerLiveToListListener",
         "registerLoginCallback",
-        "requestLiveToList",
-        "requestStopLiveVideo",
-        "liveVideoId",
+        "unRegisterLoginCallback",
         "setProcessingLogin",
         "value",
-        "unRegisterLoginCallback",
-        "LoginCallback",
-        "NotifyListener",
+        "isProcessingLogin",
+        "requestLiveToList",
+        "getJsonObject",
+        "Lorg/json/JSONObject;",
+        "parent",
+        "key",
+        "getJsonArray",
+        "Lorg/json/JSONArray;",
+        "getStringValue",
+        "obj",
         "Privacy",
+        "NotifyListener",
+        "LoginCallback",
         "UpdateLiveToListListener",
         "SomcCamera_release"
     }
     k = 0x1
     mv = {
-        0x1,
-        0x9,
+        0x2,
+        0x0,
         0x0
     }
     xi = 0x30
@@ -117,7 +117,7 @@
 
 # direct methods
 .method static constructor <clinit>()V
-    .locals 4
+    .locals 3
 
     new-instance v0, Ljp/co/sony/mc/camera/rtmp/FacebookApi;
 
@@ -125,19 +125,37 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/rtmp/FacebookApi;->INSTANCE:Ljp/co/sony/mc/camera/rtmp/FacebookApi;
 
-    .line 49
-    const-string v0, "publish_to_groups"
+    const/4 v0, 0x4
 
-    .line 50
-    const-string/jumbo v1, "user_videos"
+    .line 47
+    new-array v0, v0, [Ljava/lang/String;
+
+    const/4 v1, 0x0
 
     const-string v2, "publish_video"
 
-    const-string v3, "groups_show_list"
+    aput-object v2, v0, v1
 
-    filled-new-array {v2, v3, v0, v1}, [Ljava/lang/String;
+    const/4 v1, 0x1
 
-    move-result-object v0
+    .line 48
+    const-string v2, "groups_show_list"
+
+    aput-object v2, v0, v1
+
+    const/4 v1, 0x2
+
+    .line 49
+    const-string v2, "publish_to_groups"
+
+    aput-object v2, v0, v1
+
+    const/4 v1, 0x3
+
+    .line 50
+    const-string/jumbo v2, "user_videos"
+
+    aput-object v2, v0, v1
 
     .line 46
     invoke-static {v0}, Lkotlin/collections/CollectionsKt;->arrayListOf([Ljava/lang/Object;)Ljava/util/ArrayList;

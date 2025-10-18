@@ -25,12 +25,12 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/SourceDebugExtension;
-    value = "SMAP\nMapBuilder.kt\nKotlin\n*S Kotlin\n*F\n+ 1 MapBuilder.kt\nkotlin/collections/builders/MapBuilder$Itr\n+ 2 fake.kt\nkotlin/jvm/internal/FakeKt\n*L\n1#1,697:1\n1#2:698\n*E\n"
+    value = "SMAP\nMapBuilder.kt\nKotlin\n*S Kotlin\n*F\n+ 1 MapBuilder.kt\nkotlin/collections/builders/MapBuilder$Itr\n+ 2 fake.kt\nkotlin/jvm/internal/FakeKt\n*L\n1#1,728:1\n1#2:729\n*E\n"
 .end annotation
 
 .annotation runtime Lkotlin/Metadata;
     d1 = {
-        "\u0000,\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0010\u0008\n\u0002\u0008\n\n\u0002\u0010\u000b\n\u0000\n\u0002\u0010\u0002\n\u0002\u0008\u0003\u0008\u0010\u0018\u0000*\u0004\u0008\u0002\u0010\u0001*\u0004\u0008\u0003\u0010\u00022\u00020\u0003B\u0019\u0012\u0012\u0010\u0004\u001a\u000e\u0012\u0004\u0012\u00028\u0002\u0012\u0004\u0012\u00028\u00030\u0005\u00a2\u0006\u0002\u0010\u0006J\u0006\u0010\u0012\u001a\u00020\u0013J\r\u0010\u0014\u001a\u00020\u0015H\u0000\u00a2\u0006\u0002\u0008\u0016J\u0006\u0010\u0017\u001a\u00020\u0015R\u001a\u0010\u0007\u001a\u00020\u0008X\u0080\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\u0008\t\u0010\n\"\u0004\u0008\u000b\u0010\u000cR\u001a\u0010\r\u001a\u00020\u0008X\u0080\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\u0008\u000e\u0010\n\"\u0004\u0008\u000f\u0010\u000cR \u0010\u0004\u001a\u000e\u0012\u0004\u0012\u00028\u0002\u0012\u0004\u0012\u00028\u00030\u0005X\u0080\u0004\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\u0010\u0010\u0011\u00a8\u0006\u0018"
+        "\u0000.\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0010\u0008\n\u0002\u0008\u000b\n\u0002\u0010\u0002\n\u0002\u0008\u0002\n\u0002\u0010\u000b\n\u0002\u0008\u0004\u0008\u0010\u0018\u0000*\u0004\u0008\u0002\u0010\u0001*\u0004\u0008\u0003\u0010\u00022\u00020\u0003B\u0019\u0012\u0012\u0010\u0004\u001a\u000e\u0012\u0004\u0012\u00028\u0002\u0012\u0004\u0012\u00028\u00030\u0005\u00a2\u0006\u0002\u0010\u0006J\r\u0010\u0013\u001a\u00020\u0014H\u0000\u00a2\u0006\u0002\u0008\u0015J\u0006\u0010\u0016\u001a\u00020\u0017J\r\u0010\u0018\u001a\u00020\u0014H\u0000\u00a2\u0006\u0002\u0008\u0019J\u0006\u0010\u001a\u001a\u00020\u0014R\u000e\u0010\u0007\u001a\u00020\u0008X\u0082\u000e\u00a2\u0006\u0002\n\u0000R\u001a\u0010\t\u001a\u00020\u0008X\u0080\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\u0008\n\u0010\u000b\"\u0004\u0008\u000c\u0010\rR\u001a\u0010\u000e\u001a\u00020\u0008X\u0080\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\u0008\u000f\u0010\u000b\"\u0004\u0008\u0010\u0010\rR \u0010\u0004\u001a\u000e\u0012\u0004\u0012\u00028\u0002\u0012\u0004\u0012\u00028\u00030\u0005X\u0080\u0004\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\u0011\u0010\u0012\u00a8\u0006\u001b"
     }
     d2 = {
         "Lkotlin/collections/builders/MapBuilder$Itr;",
@@ -40,8 +40,9 @@
         "map",
         "Lkotlin/collections/builders/MapBuilder;",
         "(Lkotlin/collections/builders/MapBuilder;)V",
-        "index",
+        "expectedModCount",
         "",
+        "index",
         "getIndex$kotlin_stdlib",
         "()I",
         "setIndex$kotlin_stdlib",
@@ -51,10 +52,12 @@
         "setLastIndex$kotlin_stdlib",
         "getMap$kotlin_stdlib",
         "()Lkotlin/collections/builders/MapBuilder;",
+        "checkForComodification",
+        "",
+        "checkForComodification$kotlin_stdlib",
         "hasNext",
         "",
         "initNext",
-        "",
         "initNext$kotlin_stdlib",
         "remove",
         "kotlin-stdlib"
@@ -70,6 +73,8 @@
 
 
 # instance fields
+.field private expectedModCount:I
+
 .field private index:I
 
 .field private lastIndex:I
@@ -99,18 +104,25 @@
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 476
+    .line 496
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 477
+    .line 497
     iput-object p1, p0, Lkotlin/collections/builders/MapBuilder$Itr;->map:Lkotlin/collections/builders/MapBuilder;
 
-    const/4 p1, -0x1
+    const/4 v0, -0x1
 
-    .line 480
-    iput p1, p0, Lkotlin/collections/builders/MapBuilder$Itr;->lastIndex:I
+    .line 500
+    iput v0, p0, Lkotlin/collections/builders/MapBuilder$Itr;->lastIndex:I
 
-    .line 483
+    .line 501
+    invoke-static {p1}, Lkotlin/collections/builders/MapBuilder;->access$getModCount$p(Lkotlin/collections/builders/MapBuilder;)I
+
+    move-result p1
+
+    iput p1, p0, Lkotlin/collections/builders/MapBuilder$Itr;->expectedModCount:I
+
+    .line 504
     invoke-virtual {p0}, Lkotlin/collections/builders/MapBuilder$Itr;->initNext$kotlin_stdlib()V
 
     return-void
@@ -118,10 +130,35 @@
 
 
 # virtual methods
+.method public final checkForComodification$kotlin_stdlib()V
+    .locals 1
+
+    .line 524
+    iget-object v0, p0, Lkotlin/collections/builders/MapBuilder$Itr;->map:Lkotlin/collections/builders/MapBuilder;
+
+    invoke-static {v0}, Lkotlin/collections/builders/MapBuilder;->access$getModCount$p(Lkotlin/collections/builders/MapBuilder;)I
+
+    move-result v0
+
+    iget p0, p0, Lkotlin/collections/builders/MapBuilder$Itr;->expectedModCount:I
+
+    if-ne v0, p0, :cond_0
+
+    return-void
+
+    .line 525
+    :cond_0
+    new-instance p0, Ljava/util/ConcurrentModificationException;
+
+    invoke-direct {p0}, Ljava/util/ConcurrentModificationException;-><init>()V
+
+    throw p0
+.end method
+
 .method public final getIndex$kotlin_stdlib()I
     .locals 0
 
-    .line 479
+    .line 499
     iget p0, p0, Lkotlin/collections/builders/MapBuilder$Itr;->index:I
 
     return p0
@@ -130,7 +167,7 @@
 .method public final getLastIndex$kotlin_stdlib()I
     .locals 0
 
-    .line 480
+    .line 500
     iget p0, p0, Lkotlin/collections/builders/MapBuilder$Itr;->lastIndex:I
 
     return p0
@@ -146,7 +183,7 @@
         }
     .end annotation
 
-    .line 477
+    .line 497
     iget-object p0, p0, Lkotlin/collections/builders/MapBuilder$Itr;->map:Lkotlin/collections/builders/MapBuilder;
 
     return-object p0
@@ -155,7 +192,7 @@
 .method public final hasNext()Z
     .locals 1
 
-    .line 491
+    .line 512
     iget v0, p0, Lkotlin/collections/builders/MapBuilder$Itr;->index:I
 
     iget-object p0, p0, Lkotlin/collections/builders/MapBuilder$Itr;->map:Lkotlin/collections/builders/MapBuilder;
@@ -180,7 +217,7 @@
 .method public final initNext$kotlin_stdlib()V
     .locals 2
 
-    .line 487
+    .line 508
     :goto_0
     iget v0, p0, Lkotlin/collections/builders/MapBuilder$Itr;->index:I
 
@@ -206,7 +243,7 @@
 
     add-int/lit8 v1, v1, 0x1
 
-    .line 488
+    .line 509
     iput v1, p0, Lkotlin/collections/builders/MapBuilder$Itr;->index:I
 
     goto :goto_0
@@ -218,31 +255,43 @@
 .method public final remove()V
     .locals 3
 
-    .line 494
+    .line 515
+    invoke-virtual {p0}, Lkotlin/collections/builders/MapBuilder$Itr;->checkForComodification$kotlin_stdlib()V
+
+    .line 516
     iget v0, p0, Lkotlin/collections/builders/MapBuilder$Itr;->lastIndex:I
 
     const/4 v1, -0x1
 
     if-eq v0, v1, :cond_0
 
-    .line 495
+    .line 517
     iget-object v0, p0, Lkotlin/collections/builders/MapBuilder$Itr;->map:Lkotlin/collections/builders/MapBuilder;
 
     invoke-virtual {v0}, Lkotlin/collections/builders/MapBuilder;->checkIsMutable$kotlin_stdlib()V
 
-    .line 496
+    .line 518
     iget-object v0, p0, Lkotlin/collections/builders/MapBuilder$Itr;->map:Lkotlin/collections/builders/MapBuilder;
 
     iget v2, p0, Lkotlin/collections/builders/MapBuilder$Itr;->lastIndex:I
 
-    invoke-static {v0, v2}, Lkotlin/collections/builders/MapBuilder;->access$removeKeyAt(Lkotlin/collections/builders/MapBuilder;I)V
+    invoke-static {v0, v2}, Lkotlin/collections/builders/MapBuilder;->access$removeEntryAt(Lkotlin/collections/builders/MapBuilder;I)V
 
-    .line 497
+    .line 519
     iput v1, p0, Lkotlin/collections/builders/MapBuilder$Itr;->lastIndex:I
+
+    .line 520
+    iget-object v0, p0, Lkotlin/collections/builders/MapBuilder$Itr;->map:Lkotlin/collections/builders/MapBuilder;
+
+    invoke-static {v0}, Lkotlin/collections/builders/MapBuilder;->access$getModCount$p(Lkotlin/collections/builders/MapBuilder;)I
+
+    move-result v0
+
+    iput v0, p0, Lkotlin/collections/builders/MapBuilder$Itr;->expectedModCount:I
 
     return-void
 
-    .line 494
+    .line 516
     :cond_0
     new-instance p0, Ljava/lang/IllegalStateException;
 
@@ -260,7 +309,7 @@
 .method public final setIndex$kotlin_stdlib(I)V
     .locals 0
 
-    .line 479
+    .line 499
     iput p1, p0, Lkotlin/collections/builders/MapBuilder$Itr;->index:I
 
     return-void
@@ -269,7 +318,7 @@
 .method public final setLastIndex$kotlin_stdlib(I)V
     .locals 0
 
-    .line 480
+    .line 500
     iput p1, p0, Lkotlin/collections/builders/MapBuilder$Itr;->lastIndex:I
 
     return-void

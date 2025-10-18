@@ -3,28 +3,34 @@
 .source "D8$$SyntheticClass"
 
 # interfaces
-.implements Lcom/google/android/material/textfield/TextInputLayout$LengthCounter;
+.implements Ljava/lang/Runnable;
+
+
+# instance fields
+.field public final synthetic f$0:Lcom/google/android/material/textfield/TextInputLayout;
 
 
 # direct methods
-.method public synthetic constructor <init>()V
+.method public synthetic constructor <init>(Lcom/google/android/material/textfield/TextInputLayout;)V
     .locals 0
 
     .line 0
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    iput-object p1, p0, Lcom/google/android/material/textfield/TextInputLayout$$ExternalSyntheticLambda0;->f$0:Lcom/google/android/material/textfield/TextInputLayout;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final countLength(Landroid/text/Editable;)I
+.method public final run()V
     .locals 0
 
     .line 0
-    invoke-static {p1}, Lcom/google/android/material/textfield/TextInputLayout;->lambda$new$0(Landroid/text/Editable;)I
+    iget-object p0, p0, Lcom/google/android/material/textfield/TextInputLayout$$ExternalSyntheticLambda0;->f$0:Lcom/google/android/material/textfield/TextInputLayout;
 
-    move-result p0
+    invoke-virtual {p0}, Lcom/google/android/material/textfield/TextInputLayout;->lambda$onGlobalLayout$1$com-google-android-material-textfield-TextInputLayout()V
 
-    return p0
+    return-void
 .end method

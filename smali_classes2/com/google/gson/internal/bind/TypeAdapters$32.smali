@@ -29,7 +29,7 @@
 .method constructor <init>(Ljava/lang/Class;Ljava/lang/Class;Lcom/google/gson/TypeAdapter;)V
     .locals 0
 
-    .line 960
+    .line 1074
     iput-object p1, p0, Lcom/google/gson/internal/bind/TypeAdapters$32;->val$unboxed:Ljava/lang/Class;
 
     iput-object p2, p0, Lcom/google/gson/internal/bind/TypeAdapters$32;->val$boxed:Ljava/lang/Class;
@@ -58,12 +58,12 @@
         }
     .end annotation
 
-    .line 963
+    .line 1078
     invoke-virtual {p2}, Lcom/google/gson/reflect/TypeToken;->getRawType()Ljava/lang/Class;
 
     move-result-object p1
 
-    .line 964
+    .line 1079
     iget-object p2, p0, Lcom/google/gson/internal/bind/TypeAdapters$32;->val$unboxed:Ljava/lang/Class;
 
     if-eq p1, p2, :cond_1
@@ -90,7 +90,7 @@
 .method public toString()Ljava/lang/String;
     .locals 2
 
-    .line 967
+    .line 1084
     new-instance v0, Ljava/lang/StringBuilder;
 
     const-string v1, "Factory[type="
@@ -99,6 +99,7 @@
 
     iget-object v1, p0, Lcom/google/gson/internal/bind/TypeAdapters$32;->val$boxed:Ljava/lang/Class;
 
+    .line 1085
     invoke-virtual {v1}, Ljava/lang/Class;->getName()Ljava/lang/String;
 
     move-result-object v1
@@ -115,7 +116,7 @@
 
     iget-object v1, p0, Lcom/google/gson/internal/bind/TypeAdapters$32;->val$unboxed:Ljava/lang/Class;
 
-    .line 968
+    .line 1087
     invoke-virtual {v1}, Ljava/lang/Class;->getName()Ljava/lang/String;
 
     move-result-object v1

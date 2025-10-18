@@ -26,7 +26,7 @@
     k = 0x1
     mv = {
         0x1,
-        0x6,
+        0x8,
         0x0
     }
     xi = 0x30
@@ -132,12 +132,7 @@
 
     goto :goto_0
 
-    .line 73
     :catch_0
-    move-object v0, v1
-
-    check-cast v0, Lkotlinx/coroutines/MainCoroutineDispatcher;
-
     move-object v0, v1
 
     :goto_0

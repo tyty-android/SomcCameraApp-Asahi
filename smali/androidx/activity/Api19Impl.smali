@@ -48,7 +48,7 @@
 .method private constructor <init>()V
     .locals 0
 
-    .line 98
+    .line 96
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -59,11 +59,7 @@
 .method public final isAttachedToWindow(Landroid/view/View;)Z
     .locals 0
 
-    const-string/jumbo p0, "view"
-
-    invoke-static {p1, p0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 100
+    .line 98
     invoke-virtual {p1}, Landroid/view/View;->isAttachedToWindow()Z
 
     move-result p0

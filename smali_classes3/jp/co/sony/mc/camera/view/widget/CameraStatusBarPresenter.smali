@@ -325,7 +325,7 @@
 .method private getContext()Landroid/content/Context;
     .locals 0
 
-    .line 316
+    .line 304
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/widget/CameraStatusBarPresenter;->mBinding:Ljp/co/sony/mc/camera/databinding/FragmentProModeCameraStatusBarBinding;
 
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/databinding/FragmentProModeCameraStatusBarBinding;->getRoot()Landroid/view/View;
@@ -353,7 +353,7 @@
 .method private getView()Landroid/view/View;
     .locals 0
 
-    .line 320
+    .line 308
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/widget/CameraStatusBarPresenter;->mBinding:Ljp/co/sony/mc/camera/databinding/FragmentProModeCameraStatusBarBinding;
 
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/databinding/FragmentProModeCameraStatusBarBinding;->getRoot()Landroid/view/View;
@@ -368,7 +368,7 @@
 
     if-eqz p1, :cond_0
 
-    .line 287
+    .line 275
     invoke-virtual {p1, p2}, Landroid/view/View;->setEnabled(Z)V
 
     :cond_0
@@ -418,7 +418,7 @@
 
     if-eqz p1, :cond_0
 
-    .line 281
+    .line 269
     invoke-virtual {p1, p2}, Landroid/view/View;->setVisibility(I)V
 
     :cond_0
@@ -430,12 +430,12 @@
 .method public activateFooterText(Ljp/co/sony/mc/camera/view/widget/CameraStatusBarPresenter$FooterTextType;)V
     .locals 14
 
-    .line 335
+    .line 323
     invoke-direct {p0}, Ljp/co/sony/mc/camera/view/widget/CameraStatusBarPresenter;->getView()Landroid/view/View;
 
     move-result-object v0
 
-    .line 336
+    .line 324
     invoke-static {}, Ljp/co/sony/mc/camera/view/widget/CameraStatusBarPresenter$FooterTextType;->values()[Ljp/co/sony/mc/camera/view/widget/CameraStatusBarPresenter$FooterTextType;
 
     move-result-object v1
@@ -451,7 +451,7 @@
 
     aget-object v5, v1, v4
 
-    .line 337
+    .line 325
     invoke-static {v5}, Ljp/co/sony/mc/camera/view/widget/CameraStatusBarPresenter$FooterTextType;->-$$Nest$fgettextResId(Ljp/co/sony/mc/camera/view/widget/CameraStatusBarPresenter$FooterTextType;)I
 
     move-result v6
@@ -462,7 +462,7 @@
 
     if-eq v6, v7, :cond_4
 
-    .line 338
+    .line 326
     invoke-static {v5}, Ljp/co/sony/mc/camera/view/widget/CameraStatusBarPresenter$FooterTextType;->-$$Nest$fgettextResId(Ljp/co/sony/mc/camera/view/widget/CameraStatusBarPresenter$FooterTextType;)I
 
     move-result v6
@@ -482,35 +482,35 @@
     :cond_0
     move v9, v3
 
-    .line 339
+    .line 327
     :goto_1
     invoke-virtual {v6, v9}, Ljp/co/sony/mc/camera/view/widget/OutlineTextView;->setActivated(Z)V
 
     if-ne v5, p1, :cond_1
 
-    const v9, 0x7f070167
+    const v9, 0x7f070189
 
     goto :goto_2
 
     :cond_1
-    const v9, 0x7f070168
+    const v9, 0x7f07018a
 
-    .line 340
+    .line 328
     :goto_2
     invoke-virtual {v6, v9}, Ljp/co/sony/mc/camera/view/widget/OutlineTextView;->setStrokeWidth(I)V
 
     if-ne v5, p1, :cond_2
 
-    .line 344
+    .line 332
     sget-object v9, Landroid/graphics/Typeface;->DEFAULT_BOLD:Landroid/graphics/Typeface;
 
     goto :goto_3
 
-    .line 345
+    .line 333
     :cond_2
     sget-object v9, Landroid/graphics/Typeface;->DEFAULT:Landroid/graphics/Typeface;
 
-    .line 343
+    .line 331
     :goto_3
     invoke-virtual {v6, v9}, Ljp/co/sony/mc/camera/view/widget/OutlineTextView;->setTypeface(Landroid/graphics/Typeface;)V
 
@@ -525,7 +525,7 @@
     :cond_3
     const/high16 v10, 0x40800000    # 4.0f
 
-    .line 346
+    .line 334
     :goto_4
     invoke-direct {p0}, Ljp/co/sony/mc/camera/view/widget/CameraStatusBarPresenter;->getContext()Landroid/content/Context;
 
@@ -535,7 +535,7 @@
 
     move-result-object v11
 
-    .line 347
+    .line 335
     invoke-direct {p0}, Ljp/co/sony/mc/camera/view/widget/CameraStatusBarPresenter;->getContext()Landroid/content/Context;
 
     move-result-object v12
@@ -544,16 +544,16 @@
 
     move-result-object v12
 
-    const v13, 0x7f060053
+    const v13, 0x7f060054
 
     invoke-virtual {v11, v13, v12}, Landroid/content/res/Resources;->getColor(ILandroid/content/res/Resources$Theme;)I
 
     move-result v11
 
-    .line 346
+    .line 334
     invoke-virtual {v6, v10, v9, v9, v11}, Ljp/co/sony/mc/camera/view/widget/OutlineTextView;->setShadowLayer(FFFI)V
 
-    .line 349
+    .line 337
     :cond_4
     invoke-static {v5}, Ljp/co/sony/mc/camera/view/widget/CameraStatusBarPresenter$FooterTextType;->-$$Nest$fgetimageResId(Ljp/co/sony/mc/camera/view/widget/CameraStatusBarPresenter$FooterTextType;)I
 
@@ -561,7 +561,7 @@
 
     if-eq v6, v7, :cond_6
 
-    .line 350
+    .line 338
     invoke-static {v5}, Ljp/co/sony/mc/camera/view/widget/CameraStatusBarPresenter$FooterTextType;->-$$Nest$fgetimageResId(Ljp/co/sony/mc/camera/view/widget/CameraStatusBarPresenter$FooterTextType;)I
 
     move-result v6
@@ -579,11 +579,11 @@
     :cond_5
     move v9, v3
 
-    .line 351
+    .line 339
     :goto_5
     invoke-virtual {v6, v9}, Landroid/view/View;->setActivated(Z)V
 
-    .line 353
+    .line 341
     :cond_6
     invoke-static {v5}, Ljp/co/sony/mc/camera/view/widget/CameraStatusBarPresenter$FooterTextType;->-$$Nest$fgetbackgroundResId(Ljp/co/sony/mc/camera/view/widget/CameraStatusBarPresenter$FooterTextType;)I
 
@@ -591,7 +591,7 @@
 
     if-eq v6, v7, :cond_8
 
-    .line 354
+    .line 342
     invoke-static {v5}, Ljp/co/sony/mc/camera/view/widget/CameraStatusBarPresenter$FooterTextType;->-$$Nest$fgetbackgroundResId(Ljp/co/sony/mc/camera/view/widget/CameraStatusBarPresenter$FooterTextType;)I
 
     move-result v6
@@ -607,7 +607,7 @@
     :cond_7
     move v8, v3
 
-    .line 355
+    .line 343
     :goto_6
     invoke-virtual {v6, v8}, Landroid/view/View;->setActivated(Z)V
 
@@ -621,90 +621,122 @@
 .end method
 
 .method public applySettingsToViews(Ljp/co/sony/mc/camera/setting/CameraSettingsHolder;)V
-    .locals 10
+    .locals 5
+
+    const/16 v0, 0x9
 
     .line 98
-    sget-object v0, Ljp/co/sony/mc/camera/setting/CommonSettings;->CAMERA_ID:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
+    new-array v1, v0, [Ljava/lang/String;
+
+    sget-object v2, Ljp/co/sony/mc/camera/setting/CommonSettings;->CAMERA_ID:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
 
     .line 99
-    invoke-virtual {v0}, Ljp/co/sony/mc/camera/setting/CommonSettings$Key;->getName()Ljava/lang/String;
-
-    move-result-object v1
-
-    sget-object v0, Ljp/co/sony/mc/camera/setting/CommonSettings;->CAPTURING_MODE:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
-
-    .line 100
-    invoke-virtual {v0}, Ljp/co/sony/mc/camera/setting/CommonSettings$Key;->getName()Ljava/lang/String;
+    invoke-virtual {v2}, Ljp/co/sony/mc/camera/setting/CommonSettings$Key;->getName()Ljava/lang/String;
 
     move-result-object v2
 
-    sget-object v0, Ljp/co/sony/mc/camera/setting/CameraSettings;->AUTO_EXPOSURE_LOCK:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
+    const/4 v3, 0x0
+
+    aput-object v2, v1, v3
+
+    sget-object v2, Ljp/co/sony/mc/camera/setting/CommonSettings;->CAPTURING_MODE:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
+
+    .line 100
+    invoke-virtual {v2}, Ljp/co/sony/mc/camera/setting/CommonSettings$Key;->getName()Ljava/lang/String;
+
+    move-result-object v2
+
+    const/4 v4, 0x1
+
+    aput-object v2, v1, v4
+
+    sget-object v2, Ljp/co/sony/mc/camera/setting/CameraSettings;->AUTO_EXPOSURE_LOCK:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
 
     .line 101
-    invoke-virtual {v0}, Ljp/co/sony/mc/camera/setting/CameraSettings$Key;->getName()Ljava/lang/String;
+    invoke-virtual {v2}, Ljp/co/sony/mc/camera/setting/CameraSettings$Key;->getName()Ljava/lang/String;
 
-    move-result-object v3
+    move-result-object v2
 
-    sget-object v0, Ljp/co/sony/mc/camera/setting/CameraSettings;->SHUTTER_SPEED:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
+    const/4 v4, 0x2
+
+    aput-object v2, v1, v4
+
+    sget-object v2, Ljp/co/sony/mc/camera/setting/CameraSettings;->SHUTTER_SPEED:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
 
     .line 102
-    invoke-virtual {v0}, Ljp/co/sony/mc/camera/setting/CameraSettings$Key;->getName()Ljava/lang/String;
+    invoke-virtual {v2}, Ljp/co/sony/mc/camera/setting/CameraSettings$Key;->getName()Ljava/lang/String;
 
-    move-result-object v4
+    move-result-object v2
 
-    sget-object v0, Ljp/co/sony/mc/camera/setting/CameraSettings;->ISO:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
+    const/4 v4, 0x3
+
+    aput-object v2, v1, v4
+
+    sget-object v2, Ljp/co/sony/mc/camera/setting/CameraSettings;->ISO:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
 
     .line 103
-    invoke-virtual {v0}, Ljp/co/sony/mc/camera/setting/CameraSettings$Key;->getName()Ljava/lang/String;
+    invoke-virtual {v2}, Ljp/co/sony/mc/camera/setting/CameraSettings$Key;->getName()Ljava/lang/String;
 
-    move-result-object v5
+    move-result-object v2
 
-    sget-object v0, Ljp/co/sony/mc/camera/setting/CameraSettings;->EV:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
+    const/4 v4, 0x4
+
+    aput-object v2, v1, v4
+
+    sget-object v2, Ljp/co/sony/mc/camera/setting/CameraSettings;->EV:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
 
     .line 104
-    invoke-virtual {v0}, Ljp/co/sony/mc/camera/setting/CameraSettings$Key;->getName()Ljava/lang/String;
+    invoke-virtual {v2}, Ljp/co/sony/mc/camera/setting/CameraSettings$Key;->getName()Ljava/lang/String;
 
-    move-result-object v6
+    move-result-object v2
 
-    sget-object v0, Ljp/co/sony/mc/camera/setting/CameraSettings;->FOCUS_MODE:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
+    const/4 v4, 0x5
+
+    aput-object v2, v1, v4
+
+    sget-object v2, Ljp/co/sony/mc/camera/setting/CameraSettings;->FOCUS_MODE:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
 
     .line 105
-    invoke-virtual {v0}, Ljp/co/sony/mc/camera/setting/CameraSettings$Key;->getName()Ljava/lang/String;
+    invoke-virtual {v2}, Ljp/co/sony/mc/camera/setting/CameraSettings$Key;->getName()Ljava/lang/String;
 
-    move-result-object v7
+    move-result-object v2
 
-    sget-object v0, Ljp/co/sony/mc/camera/setting/CameraSettings;->APERTURE:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
+    const/4 v4, 0x6
+
+    aput-object v2, v1, v4
+
+    sget-object v2, Ljp/co/sony/mc/camera/setting/CameraSettings;->APERTURE:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
 
     .line 106
-    invoke-virtual {v0}, Ljp/co/sony/mc/camera/setting/CameraSettings$Key;->getName()Ljava/lang/String;
+    invoke-virtual {v2}, Ljp/co/sony/mc/camera/setting/CameraSettings$Key;->getName()Ljava/lang/String;
 
-    move-result-object v8
+    move-result-object v2
 
-    sget-object v0, Ljp/co/sony/mc/camera/setting/CameraSettings;->ZOOM_RATIO:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
+    const/4 v4, 0x7
+
+    aput-object v2, v1, v4
+
+    sget-object v2, Ljp/co/sony/mc/camera/setting/CameraSettings;->ZOOM_RATIO:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
 
     .line 107
-    invoke-virtual {v0}, Ljp/co/sony/mc/camera/setting/CameraSettings$Key;->getName()Ljava/lang/String;
+    invoke-virtual {v2}, Ljp/co/sony/mc/camera/setting/CameraSettings$Key;->getName()Ljava/lang/String;
 
-    move-result-object v9
+    move-result-object v2
 
-    filled-new-array/range {v1 .. v9}, [Ljava/lang/String;
+    const/16 v4, 0x8
 
-    move-result-object v0
-
-    const/4 v1, 0x0
+    aput-object v2, v1, v4
 
     :goto_0
-    const/16 v2, 0x9
-
-    if-ge v1, v2, :cond_0
+    if-ge v3, v0, :cond_0
 
     .line 98
-    aget-object v2, v0, v1
+    aget-object v2, v1, v3
 
     .line 109
     invoke-direct {p0, p1, v2}, Ljp/co/sony/mc/camera/view/widget/CameraStatusBarPresenter;->applySettingsToViews(Ljp/co/sony/mc/camera/setting/CameraSettingsHolder;Ljava/lang/String;)V
 
-    add-int/lit8 v1, v1, 0x1
+    add-int/lit8 v3, v3, 0x1
 
     goto :goto_0
 
@@ -751,17 +783,181 @@
     return-void
 .end method
 
+.method public changeBarAreaVisibility(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Ljp/co/sony/mc/camera/configuration/parameters/Iso;)V
+    .locals 3
+
+    .line 243
+    invoke-virtual {p1}, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->isProP()Z
+
+    move-result v0
+
+    const/16 v1, 0x8
+
+    const/4 v2, 0x0
+
+    if-eqz v0, :cond_0
+
+    .line 244
+    iget-object p1, p0, Ljp/co/sony/mc/camera/view/widget/CameraStatusBarPresenter;->mBinding:Ljp/co/sony/mc/camera/databinding/FragmentProModeCameraStatusBarBinding;
+
+    iget-object p1, p1, Ljp/co/sony/mc/camera/databinding/FragmentProModeCameraStatusBarBinding;->ev:Ljp/co/sony/mc/camera/view/widget/OutlineTextView;
+
+    invoke-direct {p0, p1, v2}, Ljp/co/sony/mc/camera/view/widget/CameraStatusBarPresenter;->setVisibility(Landroid/view/View;I)V
+
+    .line 245
+    iget-object p1, p0, Ljp/co/sony/mc/camera/view/widget/CameraStatusBarPresenter;->mBinding:Ljp/co/sony/mc/camera/databinding/FragmentProModeCameraStatusBarBinding;
+
+    iget-object p1, p1, Ljp/co/sony/mc/camera/databinding/FragmentProModeCameraStatusBarBinding;->ssUnderline:Landroid/view/View;
+
+    invoke-direct {p0, p1, v1}, Ljp/co/sony/mc/camera/view/widget/CameraStatusBarPresenter;->setVisibility(Landroid/view/View;I)V
+
+    .line 246
+    iget-object p1, p0, Ljp/co/sony/mc/camera/view/widget/CameraStatusBarPresenter;->mBinding:Ljp/co/sony/mc/camera/databinding/FragmentProModeCameraStatusBarBinding;
+
+    iget-object p1, p1, Ljp/co/sony/mc/camera/databinding/FragmentProModeCameraStatusBarBinding;->evUnderline:Landroid/view/View;
+
+    invoke-direct {p0, p1, v2}, Ljp/co/sony/mc/camera/view/widget/CameraStatusBarPresenter;->setVisibility(Landroid/view/View;I)V
+
+    .line 247
+    iget-object p1, p0, Ljp/co/sony/mc/camera/view/widget/CameraStatusBarPresenter;->mBinding:Ljp/co/sony/mc/camera/databinding/FragmentProModeCameraStatusBarBinding;
+
+    iget-object p1, p1, Ljp/co/sony/mc/camera/databinding/FragmentProModeCameraStatusBarBinding;->isoUnderline:Landroid/view/View;
+
+    invoke-direct {p0, p1, v2}, Ljp/co/sony/mc/camera/view/widget/CameraStatusBarPresenter;->setVisibility(Landroid/view/View;I)V
+
+    goto :goto_0
+
+    .line 248
+    :cond_0
+    invoke-virtual {p1}, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->isProS()Z
+
+    move-result v0
+
+    if-eqz v0, :cond_1
+
+    .line 249
+    iget-object p1, p0, Ljp/co/sony/mc/camera/view/widget/CameraStatusBarPresenter;->mBinding:Ljp/co/sony/mc/camera/databinding/FragmentProModeCameraStatusBarBinding;
+
+    iget-object p1, p1, Ljp/co/sony/mc/camera/databinding/FragmentProModeCameraStatusBarBinding;->ev:Ljp/co/sony/mc/camera/view/widget/OutlineTextView;
+
+    invoke-direct {p0, p1, v2}, Ljp/co/sony/mc/camera/view/widget/CameraStatusBarPresenter;->setVisibility(Landroid/view/View;I)V
+
+    .line 250
+    iget-object p1, p0, Ljp/co/sony/mc/camera/view/widget/CameraStatusBarPresenter;->mBinding:Ljp/co/sony/mc/camera/databinding/FragmentProModeCameraStatusBarBinding;
+
+    iget-object p1, p1, Ljp/co/sony/mc/camera/databinding/FragmentProModeCameraStatusBarBinding;->ssUnderline:Landroid/view/View;
+
+    invoke-direct {p0, p1, v2}, Ljp/co/sony/mc/camera/view/widget/CameraStatusBarPresenter;->setVisibility(Landroid/view/View;I)V
+
+    .line 251
+    iget-object p1, p0, Ljp/co/sony/mc/camera/view/widget/CameraStatusBarPresenter;->mBinding:Ljp/co/sony/mc/camera/databinding/FragmentProModeCameraStatusBarBinding;
+
+    iget-object p1, p1, Ljp/co/sony/mc/camera/databinding/FragmentProModeCameraStatusBarBinding;->evUnderline:Landroid/view/View;
+
+    invoke-direct {p0, p1, v2}, Ljp/co/sony/mc/camera/view/widget/CameraStatusBarPresenter;->setVisibility(Landroid/view/View;I)V
+
+    .line 252
+    iget-object p1, p0, Ljp/co/sony/mc/camera/view/widget/CameraStatusBarPresenter;->mBinding:Ljp/co/sony/mc/camera/databinding/FragmentProModeCameraStatusBarBinding;
+
+    iget-object p1, p1, Ljp/co/sony/mc/camera/databinding/FragmentProModeCameraStatusBarBinding;->isoUnderline:Landroid/view/View;
+
+    invoke-direct {p0, p1, v1}, Ljp/co/sony/mc/camera/view/widget/CameraStatusBarPresenter;->setVisibility(Landroid/view/View;I)V
+
+    goto :goto_0
+
+    .line 253
+    :cond_1
+    invoke-virtual {p1}, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->isProM()Z
+
+    move-result p1
+
+    const/4 v0, 0x4
+
+    if-eqz p1, :cond_3
+
+    .line 254
+    iget-object p1, p0, Ljp/co/sony/mc/camera/view/widget/CameraStatusBarPresenter;->mBinding:Ljp/co/sony/mc/camera/databinding/FragmentProModeCameraStatusBarBinding;
+
+    iget-object p1, p1, Ljp/co/sony/mc/camera/databinding/FragmentProModeCameraStatusBarBinding;->ev:Ljp/co/sony/mc/camera/view/widget/OutlineTextView;
+
+    invoke-direct {p0, p1, v2}, Ljp/co/sony/mc/camera/view/widget/CameraStatusBarPresenter;->setVisibility(Landroid/view/View;I)V
+
+    .line 255
+    iget-object p1, p0, Ljp/co/sony/mc/camera/view/widget/CameraStatusBarPresenter;->mBinding:Ljp/co/sony/mc/camera/databinding/FragmentProModeCameraStatusBarBinding;
+
+    iget-object p1, p1, Ljp/co/sony/mc/camera/databinding/FragmentProModeCameraStatusBarBinding;->ssUnderline:Landroid/view/View;
+
+    invoke-direct {p0, p1, v2}, Ljp/co/sony/mc/camera/view/widget/CameraStatusBarPresenter;->setVisibility(Landroid/view/View;I)V
+
+    .line 256
+    iget-object p1, p0, Ljp/co/sony/mc/camera/view/widget/CameraStatusBarPresenter;->mBinding:Ljp/co/sony/mc/camera/databinding/FragmentProModeCameraStatusBarBinding;
+
+    iget-object p1, p1, Ljp/co/sony/mc/camera/databinding/FragmentProModeCameraStatusBarBinding;->evUnderline:Landroid/view/View;
+
+    .line 257
+    sget-object v1, Ljp/co/sony/mc/camera/configuration/parameters/Iso;->ISO_AUTO:Ljp/co/sony/mc/camera/configuration/parameters/Iso;
+
+    if-ne p2, v1, :cond_2
+
+    move v0, v2
+
+    .line 256
+    :cond_2
+    invoke-direct {p0, p1, v0}, Ljp/co/sony/mc/camera/view/widget/CameraStatusBarPresenter;->setVisibility(Landroid/view/View;I)V
+
+    .line 258
+    iget-object p1, p0, Ljp/co/sony/mc/camera/view/widget/CameraStatusBarPresenter;->mBinding:Ljp/co/sony/mc/camera/databinding/FragmentProModeCameraStatusBarBinding;
+
+    iget-object p1, p1, Ljp/co/sony/mc/camera/databinding/FragmentProModeCameraStatusBarBinding;->isoUnderline:Landroid/view/View;
+
+    invoke-direct {p0, p1, v2}, Ljp/co/sony/mc/camera/view/widget/CameraStatusBarPresenter;->setVisibility(Landroid/view/View;I)V
+
+    goto :goto_0
+
+    .line 260
+    :cond_3
+    iget-object p1, p0, Ljp/co/sony/mc/camera/view/widget/CameraStatusBarPresenter;->mBinding:Ljp/co/sony/mc/camera/databinding/FragmentProModeCameraStatusBarBinding;
+
+    iget-object p1, p1, Ljp/co/sony/mc/camera/databinding/FragmentProModeCameraStatusBarBinding;->ev:Ljp/co/sony/mc/camera/view/widget/OutlineTextView;
+
+    invoke-direct {p0, p1, v0}, Ljp/co/sony/mc/camera/view/widget/CameraStatusBarPresenter;->setVisibility(Landroid/view/View;I)V
+
+    .line 261
+    iget-object p1, p0, Ljp/co/sony/mc/camera/view/widget/CameraStatusBarPresenter;->mBinding:Ljp/co/sony/mc/camera/databinding/FragmentProModeCameraStatusBarBinding;
+
+    iget-object p1, p1, Ljp/co/sony/mc/camera/databinding/FragmentProModeCameraStatusBarBinding;->ssUnderline:Landroid/view/View;
+
+    invoke-direct {p0, p1, v1}, Ljp/co/sony/mc/camera/view/widget/CameraStatusBarPresenter;->setVisibility(Landroid/view/View;I)V
+
+    .line 262
+    iget-object p1, p0, Ljp/co/sony/mc/camera/view/widget/CameraStatusBarPresenter;->mBinding:Ljp/co/sony/mc/camera/databinding/FragmentProModeCameraStatusBarBinding;
+
+    iget-object p1, p1, Ljp/co/sony/mc/camera/databinding/FragmentProModeCameraStatusBarBinding;->evUnderline:Landroid/view/View;
+
+    invoke-direct {p0, p1, v1}, Ljp/co/sony/mc/camera/view/widget/CameraStatusBarPresenter;->setVisibility(Landroid/view/View;I)V
+
+    .line 263
+    iget-object p1, p0, Ljp/co/sony/mc/camera/view/widget/CameraStatusBarPresenter;->mBinding:Ljp/co/sony/mc/camera/databinding/FragmentProModeCameraStatusBarBinding;
+
+    iget-object p1, p1, Ljp/co/sony/mc/camera/databinding/FragmentProModeCameraStatusBarBinding;->isoUnderline:Landroid/view/View;
+
+    invoke-direct {p0, p1, v1}, Ljp/co/sony/mc/camera/view/widget/CameraStatusBarPresenter;->setVisibility(Landroid/view/View;I)V
+
+    :goto_0
+    return-void
+.end method
+
 .method public hide()V
     .locals 2
 
-    .line 307
+    .line 295
     invoke-direct {p0}, Ljp/co/sony/mc/camera/view/widget/CameraStatusBarPresenter;->getView()Landroid/view/View;
 
     move-result-object v0
 
     if-eqz v0, :cond_0
 
-    .line 308
+    .line 296
     invoke-direct {p0}, Ljp/co/sony/mc/camera/view/widget/CameraStatusBarPresenter;->getView()Landroid/view/View;
 
     move-result-object v0
@@ -770,12 +966,12 @@
 
     invoke-virtual {v0, v1}, Landroid/view/View;->setVisibility(I)V
 
-    .line 309
+    .line 297
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/widget/CameraStatusBarPresenter;->mUpdateDisplayMonitor:Ljp/co/sony/mc/camera/UpdateDisplayMonitor;
 
     if-eqz v0, :cond_0
 
-    .line 310
+    .line 298
     invoke-interface {v0, p0}, Ljp/co/sony/mc/camera/UpdateDisplayMonitor;->unregisterUpdateDisplayListener(Ljp/co/sony/mc/camera/UpdateDisplayMonitor$UpdateDisplayListener;)V
 
     :cond_0
@@ -785,12 +981,12 @@
 .method public inactivateFooterText()V
     .locals 11
 
-    .line 361
+    .line 349
     invoke-direct {p0}, Ljp/co/sony/mc/camera/view/widget/CameraStatusBarPresenter;->getView()Landroid/view/View;
 
     move-result-object v0
 
-    .line 362
+    .line 350
     invoke-static {}, Ljp/co/sony/mc/camera/view/widget/CameraStatusBarPresenter$FooterTextType;->values()[Ljp/co/sony/mc/camera/view/widget/CameraStatusBarPresenter$FooterTextType;
 
     move-result-object v1
@@ -806,7 +1002,7 @@
 
     aget-object v5, v1, v4
 
-    .line 363
+    .line 351
     invoke-static {v5}, Ljp/co/sony/mc/camera/view/widget/CameraStatusBarPresenter$FooterTextType;->-$$Nest$fgettextResId(Ljp/co/sony/mc/camera/view/widget/CameraStatusBarPresenter$FooterTextType;)I
 
     move-result v6
@@ -815,7 +1011,7 @@
 
     if-eq v6, v7, :cond_0
 
-    .line 364
+    .line 352
     invoke-static {v5}, Ljp/co/sony/mc/camera/view/widget/CameraStatusBarPresenter$FooterTextType;->-$$Nest$fgettextResId(Ljp/co/sony/mc/camera/view/widget/CameraStatusBarPresenter$FooterTextType;)I
 
     move-result v6
@@ -826,20 +1022,20 @@
 
     check-cast v6, Ljp/co/sony/mc/camera/view/widget/OutlineTextView;
 
-    .line 365
+    .line 353
     invoke-virtual {v6, v3}, Ljp/co/sony/mc/camera/view/widget/OutlineTextView;->setActivated(Z)V
 
-    const v8, 0x7f070168
+    const v8, 0x7f07018a
 
-    .line 366
+    .line 354
     invoke-virtual {v6, v8}, Ljp/co/sony/mc/camera/view/widget/OutlineTextView;->setStrokeWidth(I)V
 
-    .line 367
+    .line 355
     sget-object v8, Landroid/graphics/Typeface;->DEFAULT:Landroid/graphics/Typeface;
 
     invoke-virtual {v6, v8}, Ljp/co/sony/mc/camera/view/widget/OutlineTextView;->setTypeface(Landroid/graphics/Typeface;)V
 
-    .line 368
+    .line 356
     invoke-direct {p0}, Ljp/co/sony/mc/camera/view/widget/CameraStatusBarPresenter;->getContext()Landroid/content/Context;
 
     move-result-object v8
@@ -848,7 +1044,7 @@
 
     move-result-object v8
 
-    .line 369
+    .line 357
     invoke-direct {p0}, Ljp/co/sony/mc/camera/view/widget/CameraStatusBarPresenter;->getContext()Landroid/content/Context;
 
     move-result-object v9
@@ -857,7 +1053,7 @@
 
     move-result-object v9
 
-    const v10, 0x7f060053
+    const v10, 0x7f060054
 
     invoke-virtual {v8, v10, v9}, Landroid/content/res/Resources;->getColor(ILandroid/content/res/Resources$Theme;)I
 
@@ -867,10 +1063,10 @@
 
     const/4 v10, 0x0
 
-    .line 368
+    .line 356
     invoke-virtual {v6, v9, v10, v10, v8}, Ljp/co/sony/mc/camera/view/widget/OutlineTextView;->setShadowLayer(FFFI)V
 
-    .line 371
+    .line 359
     :cond_0
     invoke-static {v5}, Ljp/co/sony/mc/camera/view/widget/CameraStatusBarPresenter$FooterTextType;->-$$Nest$fgetimageResId(Ljp/co/sony/mc/camera/view/widget/CameraStatusBarPresenter$FooterTextType;)I
 
@@ -878,7 +1074,7 @@
 
     if-eq v6, v7, :cond_1
 
-    .line 372
+    .line 360
     invoke-static {v5}, Ljp/co/sony/mc/camera/view/widget/CameraStatusBarPresenter$FooterTextType;->-$$Nest$fgetimageResId(Ljp/co/sony/mc/camera/view/widget/CameraStatusBarPresenter$FooterTextType;)I
 
     move-result v6
@@ -887,10 +1083,10 @@
 
     move-result-object v6
 
-    .line 373
+    .line 361
     invoke-virtual {v6, v3}, Landroid/view/View;->setActivated(Z)V
 
-    .line 375
+    .line 363
     :cond_1
     invoke-static {v5}, Ljp/co/sony/mc/camera/view/widget/CameraStatusBarPresenter$FooterTextType;->-$$Nest$fgetbackgroundResId(Ljp/co/sony/mc/camera/view/widget/CameraStatusBarPresenter$FooterTextType;)I
 
@@ -898,7 +1094,7 @@
 
     if-eq v6, v7, :cond_2
 
-    .line 376
+    .line 364
     invoke-static {v5}, Ljp/co/sony/mc/camera/view/widget/CameraStatusBarPresenter$FooterTextType;->-$$Nest$fgetbackgroundResId(Ljp/co/sony/mc/camera/view/widget/CameraStatusBarPresenter$FooterTextType;)I
 
     move-result v5
@@ -907,7 +1103,7 @@
 
     move-result-object v5
 
-    .line 377
+    .line 365
     invoke-virtual {v5, v3}, Landroid/view/View;->setActivated(Z)V
 
     :cond_2
@@ -939,7 +1135,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f1101ff
+    const v2, 0x7f110202
 
     invoke-virtual {v1, v2}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -1003,7 +1199,7 @@
 .method public onFocusAreaUpdated(Z)V
     .locals 1
 
-    .line 417
+    .line 405
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/widget/CameraStatusBarPresenter;->mFocusIconController:Ljp/co/sony/mc/camera/view/widget/CameraStatusBarPresenter$FocusIconController;
 
     sget-object v0, Ljp/co/sony/mc/camera/view/widget/CameraStatusBarPresenter$FocusEvent;->EVENT_FOCUS_AREA_UPDATE:Ljp/co/sony/mc/camera/view/widget/CameraStatusBarPresenter$FocusEvent;
@@ -1024,7 +1220,7 @@
 .method public onFocusCanceled()V
     .locals 2
 
-    .line 421
+    .line 409
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/widget/CameraStatusBarPresenter;->mFocusIconController:Ljp/co/sony/mc/camera/view/widget/CameraStatusBarPresenter$FocusIconController;
 
     sget-object v0, Ljp/co/sony/mc/camera/view/widget/CameraStatusBarPresenter$FocusEvent;->EVENT_RESET:Ljp/co/sony/mc/camera/view/widget/CameraStatusBarPresenter$FocusEvent;
@@ -1041,7 +1237,7 @@
 .method public onFocusStarted()V
     .locals 2
 
-    .line 402
+    .line 390
     invoke-static {}, Ljp/co/sony/mc/camera/setting/CameraProSetting;->getInstance()Ljp/co/sony/mc/camera/setting/CameraProSetting;
 
     move-result-object v0
@@ -1054,7 +1250,7 @@
 
     check-cast v0, Ljp/co/sony/mc/camera/configuration/parameters/FocusMode;
 
-    .line 403
+    .line 391
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/widget/CameraStatusBarPresenter;->mFocusIconController:Ljp/co/sony/mc/camera/view/widget/CameraStatusBarPresenter$FocusIconController;
 
     sget-object v1, Ljp/co/sony/mc/camera/view/widget/CameraStatusBarPresenter$FocusEvent;->EVENT_FOCUS_STARTED:Ljp/co/sony/mc/camera/view/widget/CameraStatusBarPresenter$FocusEvent;
@@ -1071,7 +1267,7 @@
 .method public onFocusStateLocked(Z)V
     .locals 1
 
-    .line 410
+    .line 398
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/widget/CameraStatusBarPresenter;->mFocusIconController:Ljp/co/sony/mc/camera/view/widget/CameraStatusBarPresenter$FocusIconController;
 
     sget-object v0, Ljp/co/sony/mc/camera/view/widget/CameraStatusBarPresenter$FocusEvent;->EVENT_FOCUS_LOCKED:Ljp/co/sony/mc/camera/view/widget/CameraStatusBarPresenter$FocusEvent;
@@ -1351,7 +1547,7 @@
 
     iget-object v0, v0, Ljp/co/sony/mc/camera/databinding/FragmentProModeCameraStatusBarBinding;->ev:Ljp/co/sony/mc/camera/view/widget/OutlineTextView;
 
-    const v1, 0x7f110374
+    const v1, 0x7f1103a7
 
     new-array v2, v3, [Ljava/lang/Object;
 
@@ -1404,304 +1600,42 @@
 .method public onValueChanged(Ljp/co/sony/mc/camera/view/widget/CameraStatusBarPresenter$FooterTextType;)V
     .locals 2
 
-    .line 324
+    .line 312
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/widget/CameraStatusBarPresenter;->mFooterTextAnimator:Landroid/view/ViewPropertyAnimator;
 
     if-eqz v0, :cond_0
 
     const/4 v1, 0x0
 
-    .line 327
+    .line 315
     invoke-virtual {v0, v1}, Landroid/view/ViewPropertyAnimator;->setListener(Landroid/animation/Animator$AnimatorListener;)Landroid/view/ViewPropertyAnimator;
 
-    .line 328
+    .line 316
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/widget/CameraStatusBarPresenter;->mFooterTextAnimator:Landroid/view/ViewPropertyAnimator;
 
     invoke-virtual {v0}, Landroid/view/ViewPropertyAnimator;->cancel()V
 
-    .line 330
+    .line 318
     :cond_0
     iput-object p1, p0, Ljp/co/sony/mc/camera/view/widget/CameraStatusBarPresenter;->mFooterText:Ljp/co/sony/mc/camera/view/widget/CameraStatusBarPresenter$FooterTextType;
 
-    .line 331
+    .line 319
     invoke-virtual {p0, p1}, Ljp/co/sony/mc/camera/view/widget/CameraStatusBarPresenter;->activateFooterText(Ljp/co/sony/mc/camera/view/widget/CameraStatusBarPresenter$FooterTextType;)V
 
-    return-void
-.end method
-
-.method public setBarAreaState(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Ljp/co/sony/mc/camera/configuration/parameters/Iso;Z)V
-    .locals 3
-
-    .line 243
-    invoke-virtual {p1}, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->isProP()Z
-
-    move-result v0
-
-    const/16 v1, 0x8
-
-    const/4 v2, 0x0
-
-    if-eqz v0, :cond_0
-
-    .line 244
-    iget-object p1, p0, Ljp/co/sony/mc/camera/view/widget/CameraStatusBarPresenter;->mBinding:Ljp/co/sony/mc/camera/databinding/FragmentProModeCameraStatusBarBinding;
-
-    iget-object p1, p1, Ljp/co/sony/mc/camera/databinding/FragmentProModeCameraStatusBarBinding;->labelEv:Landroid/widget/RelativeLayout;
-
-    invoke-direct {p0, p1, p3}, Ljp/co/sony/mc/camera/view/widget/CameraStatusBarPresenter;->setEnabled(Landroid/view/View;Z)V
-
-    .line 245
-    iget-object p1, p0, Ljp/co/sony/mc/camera/view/widget/CameraStatusBarPresenter;->mBinding:Ljp/co/sony/mc/camera/databinding/FragmentProModeCameraStatusBarBinding;
-
-    iget-object p1, p1, Ljp/co/sony/mc/camera/databinding/FragmentProModeCameraStatusBarBinding;->labelIso:Landroid/widget/RelativeLayout;
-
-    invoke-direct {p0, p1, p3}, Ljp/co/sony/mc/camera/view/widget/CameraStatusBarPresenter;->setEnabled(Landroid/view/View;Z)V
-
-    .line 246
-    iget-object p1, p0, Ljp/co/sony/mc/camera/view/widget/CameraStatusBarPresenter;->mBinding:Ljp/co/sony/mc/camera/databinding/FragmentProModeCameraStatusBarBinding;
-
-    iget-object p1, p1, Ljp/co/sony/mc/camera/databinding/FragmentProModeCameraStatusBarBinding;->labelSs:Landroid/widget/RelativeLayout;
-
-    invoke-direct {p0, p1, v2}, Ljp/co/sony/mc/camera/view/widget/CameraStatusBarPresenter;->setEnabled(Landroid/view/View;Z)V
-
-    .line 247
-    iget-object p1, p0, Ljp/co/sony/mc/camera/view/widget/CameraStatusBarPresenter;->mBinding:Ljp/co/sony/mc/camera/databinding/FragmentProModeCameraStatusBarBinding;
-
-    iget-object p1, p1, Ljp/co/sony/mc/camera/databinding/FragmentProModeCameraStatusBarBinding;->ev:Ljp/co/sony/mc/camera/view/widget/OutlineTextView;
-
-    invoke-direct {p0, p1, v2}, Ljp/co/sony/mc/camera/view/widget/CameraStatusBarPresenter;->setVisibility(Landroid/view/View;I)V
-
-    .line 248
-    iget-object p1, p0, Ljp/co/sony/mc/camera/view/widget/CameraStatusBarPresenter;->mBinding:Ljp/co/sony/mc/camera/databinding/FragmentProModeCameraStatusBarBinding;
-
-    iget-object p1, p1, Ljp/co/sony/mc/camera/databinding/FragmentProModeCameraStatusBarBinding;->ssUnderline:Landroid/view/View;
-
-    invoke-direct {p0, p1, v1}, Ljp/co/sony/mc/camera/view/widget/CameraStatusBarPresenter;->setVisibility(Landroid/view/View;I)V
-
-    .line 249
-    iget-object p1, p0, Ljp/co/sony/mc/camera/view/widget/CameraStatusBarPresenter;->mBinding:Ljp/co/sony/mc/camera/databinding/FragmentProModeCameraStatusBarBinding;
-
-    iget-object p1, p1, Ljp/co/sony/mc/camera/databinding/FragmentProModeCameraStatusBarBinding;->evUnderline:Landroid/view/View;
-
-    invoke-direct {p0, p1, v2}, Ljp/co/sony/mc/camera/view/widget/CameraStatusBarPresenter;->setVisibility(Landroid/view/View;I)V
-
-    .line 250
-    iget-object p1, p0, Ljp/co/sony/mc/camera/view/widget/CameraStatusBarPresenter;->mBinding:Ljp/co/sony/mc/camera/databinding/FragmentProModeCameraStatusBarBinding;
-
-    iget-object p1, p1, Ljp/co/sony/mc/camera/databinding/FragmentProModeCameraStatusBarBinding;->isoUnderline:Landroid/view/View;
-
-    invoke-direct {p0, p1, v2}, Ljp/co/sony/mc/camera/view/widget/CameraStatusBarPresenter;->setVisibility(Landroid/view/View;I)V
-
-    goto/16 :goto_1
-
-    .line 251
-    :cond_0
-    invoke-virtual {p1}, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->isProS()Z
-
-    move-result v0
-
-    if-eqz v0, :cond_1
-
-    .line 252
-    iget-object p1, p0, Ljp/co/sony/mc/camera/view/widget/CameraStatusBarPresenter;->mBinding:Ljp/co/sony/mc/camera/databinding/FragmentProModeCameraStatusBarBinding;
-
-    iget-object p1, p1, Ljp/co/sony/mc/camera/databinding/FragmentProModeCameraStatusBarBinding;->labelEv:Landroid/widget/RelativeLayout;
-
-    invoke-direct {p0, p1, p3}, Ljp/co/sony/mc/camera/view/widget/CameraStatusBarPresenter;->setEnabled(Landroid/view/View;Z)V
-
-    .line 253
-    iget-object p1, p0, Ljp/co/sony/mc/camera/view/widget/CameraStatusBarPresenter;->mBinding:Ljp/co/sony/mc/camera/databinding/FragmentProModeCameraStatusBarBinding;
-
-    iget-object p1, p1, Ljp/co/sony/mc/camera/databinding/FragmentProModeCameraStatusBarBinding;->labelIso:Landroid/widget/RelativeLayout;
-
-    invoke-direct {p0, p1, v2}, Ljp/co/sony/mc/camera/view/widget/CameraStatusBarPresenter;->setEnabled(Landroid/view/View;Z)V
-
-    .line 254
-    iget-object p1, p0, Ljp/co/sony/mc/camera/view/widget/CameraStatusBarPresenter;->mBinding:Ljp/co/sony/mc/camera/databinding/FragmentProModeCameraStatusBarBinding;
-
-    iget-object p1, p1, Ljp/co/sony/mc/camera/databinding/FragmentProModeCameraStatusBarBinding;->labelSs:Landroid/widget/RelativeLayout;
-
-    invoke-direct {p0, p1, p3}, Ljp/co/sony/mc/camera/view/widget/CameraStatusBarPresenter;->setEnabled(Landroid/view/View;Z)V
-
-    .line 255
-    iget-object p1, p0, Ljp/co/sony/mc/camera/view/widget/CameraStatusBarPresenter;->mBinding:Ljp/co/sony/mc/camera/databinding/FragmentProModeCameraStatusBarBinding;
-
-    iget-object p1, p1, Ljp/co/sony/mc/camera/databinding/FragmentProModeCameraStatusBarBinding;->ev:Ljp/co/sony/mc/camera/view/widget/OutlineTextView;
-
-    invoke-direct {p0, p1, v2}, Ljp/co/sony/mc/camera/view/widget/CameraStatusBarPresenter;->setVisibility(Landroid/view/View;I)V
-
-    .line 256
-    iget-object p1, p0, Ljp/co/sony/mc/camera/view/widget/CameraStatusBarPresenter;->mBinding:Ljp/co/sony/mc/camera/databinding/FragmentProModeCameraStatusBarBinding;
-
-    iget-object p1, p1, Ljp/co/sony/mc/camera/databinding/FragmentProModeCameraStatusBarBinding;->ssUnderline:Landroid/view/View;
-
-    invoke-direct {p0, p1, v2}, Ljp/co/sony/mc/camera/view/widget/CameraStatusBarPresenter;->setVisibility(Landroid/view/View;I)V
-
-    .line 257
-    iget-object p1, p0, Ljp/co/sony/mc/camera/view/widget/CameraStatusBarPresenter;->mBinding:Ljp/co/sony/mc/camera/databinding/FragmentProModeCameraStatusBarBinding;
-
-    iget-object p1, p1, Ljp/co/sony/mc/camera/databinding/FragmentProModeCameraStatusBarBinding;->evUnderline:Landroid/view/View;
-
-    invoke-direct {p0, p1, v2}, Ljp/co/sony/mc/camera/view/widget/CameraStatusBarPresenter;->setVisibility(Landroid/view/View;I)V
-
-    .line 258
-    iget-object p1, p0, Ljp/co/sony/mc/camera/view/widget/CameraStatusBarPresenter;->mBinding:Ljp/co/sony/mc/camera/databinding/FragmentProModeCameraStatusBarBinding;
-
-    iget-object p1, p1, Ljp/co/sony/mc/camera/databinding/FragmentProModeCameraStatusBarBinding;->isoUnderline:Landroid/view/View;
-
-    invoke-direct {p0, p1, v1}, Ljp/co/sony/mc/camera/view/widget/CameraStatusBarPresenter;->setVisibility(Landroid/view/View;I)V
-
-    goto/16 :goto_1
-
-    .line 259
-    :cond_1
-    invoke-virtual {p1}, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->isProM()Z
-
-    move-result p1
-
-    const/4 v0, 0x4
-
-    if-eqz p1, :cond_4
-
-    .line 260
-    iget-object p1, p0, Ljp/co/sony/mc/camera/view/widget/CameraStatusBarPresenter;->mBinding:Ljp/co/sony/mc/camera/databinding/FragmentProModeCameraStatusBarBinding;
-
-    iget-object p1, p1, Ljp/co/sony/mc/camera/databinding/FragmentProModeCameraStatusBarBinding;->labelEv:Landroid/widget/RelativeLayout;
-
-    sget-object v1, Ljp/co/sony/mc/camera/configuration/parameters/Iso;->ISO_AUTO:Ljp/co/sony/mc/camera/configuration/parameters/Iso;
-
-    if-ne p2, v1, :cond_2
-
-    if-eqz p3, :cond_2
-
-    const/4 v1, 0x1
-
-    goto :goto_0
-
-    :cond_2
-    move v1, v2
-
-    :goto_0
-    invoke-direct {p0, p1, v1}, Ljp/co/sony/mc/camera/view/widget/CameraStatusBarPresenter;->setEnabled(Landroid/view/View;Z)V
-
-    .line 261
-    iget-object p1, p0, Ljp/co/sony/mc/camera/view/widget/CameraStatusBarPresenter;->mBinding:Ljp/co/sony/mc/camera/databinding/FragmentProModeCameraStatusBarBinding;
-
-    iget-object p1, p1, Ljp/co/sony/mc/camera/databinding/FragmentProModeCameraStatusBarBinding;->labelIso:Landroid/widget/RelativeLayout;
-
-    invoke-direct {p0, p1, p3}, Ljp/co/sony/mc/camera/view/widget/CameraStatusBarPresenter;->setEnabled(Landroid/view/View;Z)V
-
-    .line 262
-    iget-object p1, p0, Ljp/co/sony/mc/camera/view/widget/CameraStatusBarPresenter;->mBinding:Ljp/co/sony/mc/camera/databinding/FragmentProModeCameraStatusBarBinding;
-
-    iget-object p1, p1, Ljp/co/sony/mc/camera/databinding/FragmentProModeCameraStatusBarBinding;->labelSs:Landroid/widget/RelativeLayout;
-
-    invoke-direct {p0, p1, p3}, Ljp/co/sony/mc/camera/view/widget/CameraStatusBarPresenter;->setEnabled(Landroid/view/View;Z)V
-
-    .line 263
-    iget-object p1, p0, Ljp/co/sony/mc/camera/view/widget/CameraStatusBarPresenter;->mBinding:Ljp/co/sony/mc/camera/databinding/FragmentProModeCameraStatusBarBinding;
-
-    iget-object p1, p1, Ljp/co/sony/mc/camera/databinding/FragmentProModeCameraStatusBarBinding;->ev:Ljp/co/sony/mc/camera/view/widget/OutlineTextView;
-
-    invoke-direct {p0, p1, v2}, Ljp/co/sony/mc/camera/view/widget/CameraStatusBarPresenter;->setVisibility(Landroid/view/View;I)V
-
-    .line 264
-    iget-object p1, p0, Ljp/co/sony/mc/camera/view/widget/CameraStatusBarPresenter;->mBinding:Ljp/co/sony/mc/camera/databinding/FragmentProModeCameraStatusBarBinding;
-
-    iget-object p1, p1, Ljp/co/sony/mc/camera/databinding/FragmentProModeCameraStatusBarBinding;->ssUnderline:Landroid/view/View;
-
-    invoke-direct {p0, p1, v2}, Ljp/co/sony/mc/camera/view/widget/CameraStatusBarPresenter;->setVisibility(Landroid/view/View;I)V
-
-    .line 265
-    iget-object p1, p0, Ljp/co/sony/mc/camera/view/widget/CameraStatusBarPresenter;->mBinding:Ljp/co/sony/mc/camera/databinding/FragmentProModeCameraStatusBarBinding;
-
-    iget-object p1, p1, Ljp/co/sony/mc/camera/databinding/FragmentProModeCameraStatusBarBinding;->evUnderline:Landroid/view/View;
-
-    .line 266
-    sget-object p3, Ljp/co/sony/mc/camera/configuration/parameters/Iso;->ISO_AUTO:Ljp/co/sony/mc/camera/configuration/parameters/Iso;
-
-    if-ne p2, p3, :cond_3
-
-    move v0, v2
-
-    .line 265
-    :cond_3
-    invoke-direct {p0, p1, v0}, Ljp/co/sony/mc/camera/view/widget/CameraStatusBarPresenter;->setVisibility(Landroid/view/View;I)V
-
-    .line 267
-    iget-object p1, p0, Ljp/co/sony/mc/camera/view/widget/CameraStatusBarPresenter;->mBinding:Ljp/co/sony/mc/camera/databinding/FragmentProModeCameraStatusBarBinding;
-
-    iget-object p1, p1, Ljp/co/sony/mc/camera/databinding/FragmentProModeCameraStatusBarBinding;->isoUnderline:Landroid/view/View;
-
-    invoke-direct {p0, p1, v2}, Ljp/co/sony/mc/camera/view/widget/CameraStatusBarPresenter;->setVisibility(Landroid/view/View;I)V
-
-    goto :goto_1
-
-    .line 269
-    :cond_4
-    iget-object p1, p0, Ljp/co/sony/mc/camera/view/widget/CameraStatusBarPresenter;->mBinding:Ljp/co/sony/mc/camera/databinding/FragmentProModeCameraStatusBarBinding;
-
-    iget-object p1, p1, Ljp/co/sony/mc/camera/databinding/FragmentProModeCameraStatusBarBinding;->labelEv:Landroid/widget/RelativeLayout;
-
-    invoke-direct {p0, p1, v2}, Ljp/co/sony/mc/camera/view/widget/CameraStatusBarPresenter;->setEnabled(Landroid/view/View;Z)V
-
-    .line 270
-    iget-object p1, p0, Ljp/co/sony/mc/camera/view/widget/CameraStatusBarPresenter;->mBinding:Ljp/co/sony/mc/camera/databinding/FragmentProModeCameraStatusBarBinding;
-
-    iget-object p1, p1, Ljp/co/sony/mc/camera/databinding/FragmentProModeCameraStatusBarBinding;->labelIso:Landroid/widget/RelativeLayout;
-
-    invoke-direct {p0, p1, v2}, Ljp/co/sony/mc/camera/view/widget/CameraStatusBarPresenter;->setEnabled(Landroid/view/View;Z)V
-
-    .line 271
-    iget-object p1, p0, Ljp/co/sony/mc/camera/view/widget/CameraStatusBarPresenter;->mBinding:Ljp/co/sony/mc/camera/databinding/FragmentProModeCameraStatusBarBinding;
-
-    iget-object p1, p1, Ljp/co/sony/mc/camera/databinding/FragmentProModeCameraStatusBarBinding;->labelSs:Landroid/widget/RelativeLayout;
-
-    invoke-direct {p0, p1, v2}, Ljp/co/sony/mc/camera/view/widget/CameraStatusBarPresenter;->setEnabled(Landroid/view/View;Z)V
-
-    .line 272
-    iget-object p1, p0, Ljp/co/sony/mc/camera/view/widget/CameraStatusBarPresenter;->mBinding:Ljp/co/sony/mc/camera/databinding/FragmentProModeCameraStatusBarBinding;
-
-    iget-object p1, p1, Ljp/co/sony/mc/camera/databinding/FragmentProModeCameraStatusBarBinding;->ev:Ljp/co/sony/mc/camera/view/widget/OutlineTextView;
-
-    invoke-direct {p0, p1, v0}, Ljp/co/sony/mc/camera/view/widget/CameraStatusBarPresenter;->setVisibility(Landroid/view/View;I)V
-
-    .line 273
-    iget-object p1, p0, Ljp/co/sony/mc/camera/view/widget/CameraStatusBarPresenter;->mBinding:Ljp/co/sony/mc/camera/databinding/FragmentProModeCameraStatusBarBinding;
-
-    iget-object p1, p1, Ljp/co/sony/mc/camera/databinding/FragmentProModeCameraStatusBarBinding;->ssUnderline:Landroid/view/View;
-
-    invoke-direct {p0, p1, v1}, Ljp/co/sony/mc/camera/view/widget/CameraStatusBarPresenter;->setVisibility(Landroid/view/View;I)V
-
-    .line 274
-    iget-object p1, p0, Ljp/co/sony/mc/camera/view/widget/CameraStatusBarPresenter;->mBinding:Ljp/co/sony/mc/camera/databinding/FragmentProModeCameraStatusBarBinding;
-
-    iget-object p1, p1, Ljp/co/sony/mc/camera/databinding/FragmentProModeCameraStatusBarBinding;->evUnderline:Landroid/view/View;
-
-    invoke-direct {p0, p1, v1}, Ljp/co/sony/mc/camera/view/widget/CameraStatusBarPresenter;->setVisibility(Landroid/view/View;I)V
-
-    .line 275
-    iget-object p1, p0, Ljp/co/sony/mc/camera/view/widget/CameraStatusBarPresenter;->mBinding:Ljp/co/sony/mc/camera/databinding/FragmentProModeCameraStatusBarBinding;
-
-    iget-object p1, p1, Ljp/co/sony/mc/camera/databinding/FragmentProModeCameraStatusBarBinding;->isoUnderline:Landroid/view/View;
-
-    invoke-direct {p0, p1, v1}, Ljp/co/sony/mc/camera/view/widget/CameraStatusBarPresenter;->setVisibility(Landroid/view/View;I)V
-
-    :goto_1
     return-void
 .end method
 
 .method public show()V
     .locals 2
 
-    .line 295
+    .line 283
     invoke-direct {p0}, Ljp/co/sony/mc/camera/view/widget/CameraStatusBarPresenter;->getView()Landroid/view/View;
 
     move-result-object v0
 
     if-eqz v0, :cond_0
 
-    .line 296
+    .line 284
     invoke-direct {p0}, Ljp/co/sony/mc/camera/view/widget/CameraStatusBarPresenter;->getView()Landroid/view/View;
 
     move-result-object v0
@@ -1710,12 +1644,12 @@
 
     invoke-virtual {v0, v1}, Landroid/view/View;->setVisibility(I)V
 
-    .line 297
+    .line 285
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/widget/CameraStatusBarPresenter;->mUpdateDisplayMonitor:Ljp/co/sony/mc/camera/UpdateDisplayMonitor;
 
     if-eqz v0, :cond_0
 
-    .line 298
+    .line 286
     invoke-interface {v0, p0}, Ljp/co/sony/mc/camera/UpdateDisplayMonitor;->registerUpdateDisplayListener(Ljp/co/sony/mc/camera/UpdateDisplayMonitor$UpdateDisplayListener;)V
 
     :cond_0

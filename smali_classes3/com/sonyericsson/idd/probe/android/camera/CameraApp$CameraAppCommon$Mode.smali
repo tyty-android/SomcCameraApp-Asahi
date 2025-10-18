@@ -29,6 +29,12 @@
 # static fields
 .field private static final synthetic $VALUES:[Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$Mode;
 
+.field public static final enum AUTO_FRAMING:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$Mode;
+
+.field public static final enum GIMBAL:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$Mode;
+
+.field public static final enum GOOGLE_LENS:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$Mode;
+
 .field public static final enum HI_RESOLUTION:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$Mode;
 
 .field public static final enum LIVE_STREAMING:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$Mode;
@@ -82,7 +88,7 @@
 
 # direct methods
 .method private static synthetic $values()[Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$Mode;
-    .locals 17
+    .locals 20
 
     .line 28
     sget-object v0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$Mode;->UNKNOWN:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$Mode;
@@ -119,7 +125,13 @@
 
     sget-object v16, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$Mode;->VIDEO_PRO_M:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$Mode;
 
-    filled-new-array/range {v0 .. v16}, [Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$Mode;
+    sget-object v17, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$Mode;->GIMBAL:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$Mode;
+
+    sget-object v18, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$Mode;->AUTO_FRAMING:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$Mode;
+
+    sget-object v19, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$Mode;->GOOGLE_LENS:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$Mode;
+
+    filled-new-array/range {v0 .. v19}, [Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$Mode;
 
     move-result-object v0
 
@@ -316,6 +328,39 @@
 
     sput-object v0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$Mode;->VIDEO_PRO_M:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$Mode;
 
+    .line 47
+    new-instance v0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$Mode;
+
+    const-string v1, "GIMBAL"
+
+    const/16 v2, 0x11
+
+    invoke-direct {v0, v1, v2, v2, v2}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$Mode;-><init>(Ljava/lang/String;III)V
+
+    sput-object v0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$Mode;->GIMBAL:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$Mode;
+
+    .line 48
+    new-instance v0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$Mode;
+
+    const-string v1, "AUTO_FRAMING"
+
+    const/16 v2, 0x12
+
+    invoke-direct {v0, v1, v2, v2, v2}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$Mode;-><init>(Ljava/lang/String;III)V
+
+    sput-object v0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$Mode;->AUTO_FRAMING:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$Mode;
+
+    .line 49
+    new-instance v0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$Mode;
+
+    const-string v1, "GOOGLE_LENS"
+
+    const/16 v2, 0x13
+
+    invoke-direct {v0, v1, v2, v2, v2}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$Mode;-><init>(Ljava/lang/String;III)V
+
+    sput-object v0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$Mode;->GOOGLE_LENS:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$Mode;
+
     .line 28
     invoke-static {}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$Mode;->$values()[Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$Mode;
 
@@ -323,7 +368,7 @@
 
     sput-object v0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$Mode;->$VALUES:[Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$Mode;
 
-    .line 80
+    .line 86
     new-instance v0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$Mode$1;
 
     invoke-direct {v0}, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$Mode$1;-><init>()V
@@ -341,13 +386,13 @@
         }
     .end annotation
 
-    .line 89
+    .line 95
     invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
-    .line 90
+    .line 96
     iput p3, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$Mode;->index:I
 
-    .line 91
+    .line 97
     iput p4, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$Mode;->value:I
 
     return-void
@@ -364,7 +409,7 @@
         }
     .end annotation
 
-    .line 77
+    .line 83
     sget-object v0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$Mode;->internalValueMap:Lcom/google/protobuf/Internal$EnumLiteMap;
 
     return-object v0
@@ -379,110 +424,133 @@
 
     return-object p0
 
-    .line 70
+    .line 76
     :pswitch_0
+    sget-object p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$Mode;->GOOGLE_LENS:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$Mode;
+
+    return-object p0
+
+    .line 75
+    :pswitch_1
+    sget-object p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$Mode;->AUTO_FRAMING:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$Mode;
+
+    return-object p0
+
+    .line 74
+    :pswitch_2
+    sget-object p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$Mode;->GIMBAL:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$Mode;
+
+    return-object p0
+
+    .line 73
+    :pswitch_3
     sget-object p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$Mode;->VIDEO_PRO_M:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$Mode;
 
     return-object p0
 
-    .line 69
-    :pswitch_1
+    .line 72
+    :pswitch_4
     sget-object p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$Mode;->VIDEO_PRO_S:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$Mode;
 
     return-object p0
 
-    .line 68
-    :pswitch_2
+    .line 71
+    :pswitch_5
     sget-object p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$Mode;->VIDEO_PRO_P:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$Mode;
 
     return-object p0
 
-    .line 67
-    :pswitch_3
+    .line 70
+    :pswitch_6
     sget-object p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$Mode;->HI_RESOLUTION:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$Mode;
 
     return-object p0
 
-    .line 66
-    :pswitch_4
+    .line 69
+    :pswitch_7
     sget-object p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$Mode;->PANORAMA:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$Mode;
 
     return-object p0
 
-    .line 65
-    :pswitch_5
+    .line 68
+    :pswitch_8
     sget-object p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$Mode;->VIDEO_BOKEH:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$Mode;
 
     return-object p0
 
-    .line 64
-    :pswitch_6
+    .line 67
+    :pswitch_9
     sget-object p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$Mode;->TELE_MACRO:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$Mode;
 
     return-object p0
 
-    .line 63
-    :pswitch_7
+    .line 66
+    :pswitch_a
     sget-object p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$Mode;->LIVE_STREAMING:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$Mode;
 
     return-object p0
 
-    .line 62
-    :pswitch_8
+    .line 65
+    :pswitch_b
     sget-object p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$Mode;->VIDEO_SLOW:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$Mode;
 
     return-object p0
 
-    .line 61
-    :pswitch_9
+    .line 64
+    :pswitch_c
     sget-object p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$Mode;->VIDEO:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$Mode;
 
     return-object p0
 
-    .line 60
-    :pswitch_a
+    .line 63
+    :pswitch_d
     sget-object p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$Mode;->PHOTO:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$Mode;
 
     return-object p0
 
-    .line 59
-    :pswitch_b
+    .line 62
+    :pswitch_e
     sget-object p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$Mode;->PHOTO_BOKEH:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$Mode;
 
     return-object p0
 
-    .line 58
-    :pswitch_c
+    .line 61
+    :pswitch_f
     sget-object p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$Mode;->M:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$Mode;
 
     return-object p0
 
-    .line 57
-    :pswitch_d
+    .line 60
+    :pswitch_10
     sget-object p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$Mode;->S:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$Mode;
 
     return-object p0
 
-    .line 56
-    :pswitch_e
+    .line 59
+    :pswitch_11
     sget-object p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$Mode;->P:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$Mode;
 
     return-object p0
 
-    .line 55
-    :pswitch_f
+    .line 58
+    :pswitch_12
     sget-object p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$Mode;->ONE_SHOT:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$Mode;
 
     return-object p0
 
-    .line 54
-    :pswitch_10
+    .line 57
+    :pswitch_13
     sget-object p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$Mode;->UNKNOWN:Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$Mode;
 
     return-object p0
 
+    nop
+
     :pswitch_data_0
     .packed-switch 0x0
+        :pswitch_13
+        :pswitch_12
+        :pswitch_11
         :pswitch_10
         :pswitch_f
         :pswitch_e
@@ -538,7 +606,7 @@
 .method public final getNumber()I
     .locals 0
 
-    .line 50
+    .line 53
     iget p0, p0, Lcom/sonyericsson/idd/probe/android/camera/CameraApp$CameraAppCommon$Mode;->value:I
 
     return p0

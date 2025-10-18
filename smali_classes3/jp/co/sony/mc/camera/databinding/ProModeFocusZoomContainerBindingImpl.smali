@@ -13,7 +13,7 @@
 
 
 # instance fields
-.field private final mCallback12:Landroid/view/View$OnClickListener;
+.field private final mCallback32:Landroid/view/View$OnClickListener;
 
 .field private mDirtyFlags:J
 
@@ -72,7 +72,7 @@
 
     check-cast v8, Landroid/widget/LinearLayout;
 
-    const/4 v5, 0x4
+    const/4 v5, 0x5
 
     move-object v2, p0
 
@@ -84,7 +84,7 @@
 
     const-wide/16 v1, -0x1
 
-    .line 332
+    .line 384
     iput-wide v1, p0, Ljp/co/sony/mc/camera/databinding/ProModeFocusZoomContainerBindingImpl;->mDirtyFlags:J
 
     .line 35
@@ -112,7 +112,7 @@
 
     invoke-direct {p1, p0, v0}, Ljp/co/sony/mc/camera/generated/callback/OnClickListener;-><init>(Ljp/co/sony/mc/camera/generated/callback/OnClickListener$Listener;I)V
 
-    iput-object p1, p0, Ljp/co/sony/mc/camera/databinding/ProModeFocusZoomContainerBindingImpl;->mCallback12:Landroid/view/View$OnClickListener;
+    iput-object p1, p0, Ljp/co/sony/mc/camera/databinding/ProModeFocusZoomContainerBindingImpl;->mCallback32:Landroid/view/View$OnClickListener;
 
     .line 41
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/databinding/ProModeFocusZoomContainerBindingImpl;->invalidateAll()V
@@ -133,20 +133,20 @@
 
     if-nez p2, :cond_0
 
-    .line 170
+    .line 192
     monitor-enter p0
 
-    .line 171
+    .line 193
     :try_start_0
     iget-wide p1, p0, Ljp/co/sony/mc/camera/databinding/ProModeFocusZoomContainerBindingImpl;->mDirtyFlags:J
 
-    const-wide/16 v0, 0x8
+    const-wide/16 v0, 0x10
 
     or-long/2addr p1, v0
 
     iput-wide p1, p0, Ljp/co/sony/mc/camera/databinding/ProModeFocusZoomContainerBindingImpl;->mDirtyFlags:J
 
-    .line 172
+    .line 194
     monitor-exit p0
 
     const/4 p0, 0x1
@@ -181,20 +181,20 @@
 
     if-nez p2, :cond_0
 
-    .line 143
+    .line 165
     monitor-enter p0
 
-    .line 144
+    .line 166
     :try_start_0
     iget-wide p1, p0, Ljp/co/sony/mc/camera/databinding/ProModeFocusZoomContainerBindingImpl;->mDirtyFlags:J
 
-    const-wide/16 v0, 0x1
+    const-wide/16 v0, 0x2
 
     or-long/2addr p1, v0
 
     iput-wide p1, p0, Ljp/co/sony/mc/camera/databinding/ProModeFocusZoomContainerBindingImpl;->mDirtyFlags:J
 
-    .line 145
+    .line 167
     monitor-exit p0
 
     const/4 p0, 0x1
@@ -229,20 +229,20 @@
 
     if-nez p2, :cond_0
 
-    .line 161
+    .line 183
     monitor-enter p0
 
-    .line 162
+    .line 184
     :try_start_0
     iget-wide p1, p0, Ljp/co/sony/mc/camera/databinding/ProModeFocusZoomContainerBindingImpl;->mDirtyFlags:J
 
-    const-wide/16 v0, 0x4
+    const-wide/16 v0, 0x8
 
     or-long/2addr p1, v0
 
     iput-wide p1, p0, Ljp/co/sony/mc/camera/databinding/ProModeFocusZoomContainerBindingImpl;->mDirtyFlags:J
 
-    .line 163
+    .line 185
     monitor-exit p0
 
     const/4 p0, 0x1
@@ -277,20 +277,68 @@
 
     if-nez p2, :cond_0
 
-    .line 152
+    .line 174
     monitor-enter p0
 
-    .line 153
+    .line 175
     :try_start_0
     iget-wide p1, p0, Ljp/co/sony/mc/camera/databinding/ProModeFocusZoomContainerBindingImpl;->mDirtyFlags:J
 
-    const-wide/16 v0, 0x2
+    const-wide/16 v0, 0x4
 
     or-long/2addr p1, v0
 
     iput-wide p1, p0, Ljp/co/sony/mc/camera/databinding/ProModeFocusZoomContainerBindingImpl;->mDirtyFlags:J
 
-    .line 154
+    .line 176
+    monitor-exit p0
+
+    const/4 p0, 0x1
+
+    return p0
+
+    :catchall_0
+    move-exception p1
+
+    monitor-exit p0
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    throw p1
+
+    :cond_0
+    const/4 p0, 0x0
+
+    return p0
+.end method
+
+.method private onChangeViewFinderUiStateIsViewFinderItemClickable(Landroidx/lifecycle/LiveData;I)Z
+    .locals 2
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Landroidx/lifecycle/LiveData<",
+            "Ljava/lang/Boolean;",
+            ">;I)Z"
+        }
+    .end annotation
+
+    if-nez p2, :cond_0
+
+    .line 156
+    monitor-enter p0
+
+    .line 157
+    :try_start_0
+    iget-wide p1, p0, Ljp/co/sony/mc/camera/databinding/ProModeFocusZoomContainerBindingImpl;->mDirtyFlags:J
+
+    const-wide/16 v0, 0x1
+
+    or-long/2addr p1, v0
+
+    iput-wide p1, p0, Ljp/co/sony/mc/camera/databinding/ProModeFocusZoomContainerBindingImpl;->mDirtyFlags:J
+
+    .line 158
     monitor-exit p0
 
     const/4 p0, 0x1
@@ -317,12 +365,12 @@
 .method public final _internalCallbackOnClick(ILandroid/view/View;)V
     .locals 0
 
-    .line 318
+    .line 370
     iget-object p0, p0, Ljp/co/sony/mc/camera/databinding/ProModeFocusZoomContainerBindingImpl;->mFocusMagnificationUiState:Ljp/co/sony/mc/camera/view/uistate/FocusMagnificationUiState;
 
     if-eqz p0, :cond_0
 
-    .line 328
+    .line 380
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/view/uistate/FocusMagnificationUiState;->toggleFocusMagnification()V
 
     :cond_0
@@ -330,57 +378,58 @@
 .end method
 
 .method protected executeBindings()V
-    .locals 18
+    .locals 22
 
     move-object/from16 v1, p0
 
-    .line 181
+    .line 203
     monitor-enter p0
 
-    .line 182
+    .line 204
     :try_start_0
     iget-wide v2, v1, Ljp/co/sony/mc/camera/databinding/ProModeFocusZoomContainerBindingImpl;->mDirtyFlags:J
 
     const-wide/16 v4, 0x0
 
-    .line 183
+    .line 205
     iput-wide v4, v1, Ljp/co/sony/mc/camera/databinding/ProModeFocusZoomContainerBindingImpl;->mDirtyFlags:J
 
-    .line 184
+    .line 206
     monitor-exit p0
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 185
+    .line 207
     iget-object v0, v1, Ljp/co/sony/mc/camera/databinding/ProModeFocusZoomContainerBindingImpl;->mOrientationViewModel:Ljp/co/sony/mc/camera/view/viewmodel/OrientationViewModel;
 
-    .line 186
-    iget-object v6, v1, Ljp/co/sony/mc/camera/databinding/ProModeFocusZoomContainerBindingImpl;->mProModeCommonUiState:Ljp/co/sony/mc/camera/view/uistate/ProModeCommonUiState;
+    .line 208
+    iget-object v6, v1, Ljp/co/sony/mc/camera/databinding/ProModeFocusZoomContainerBindingImpl;->mViewFinderUiState:Ljp/co/sony/mc/camera/view/uistate/ViewFinderUiState;
 
-    .line 189
+    .line 210
     iget-object v7, v1, Ljp/co/sony/mc/camera/databinding/ProModeFocusZoomContainerBindingImpl;->mFocusMagnificationUiState:Ljp/co/sony/mc/camera/view/uistate/FocusMagnificationUiState;
 
-    .line 190
+    .line 211
     iget-object v7, v1, Ljp/co/sony/mc/camera/databinding/ProModeFocusZoomContainerBindingImpl;->mProModeBottomPaneUiState:Ljp/co/sony/mc/camera/view/uistate/ProModeBottomPaneUiState;
 
-    .line 194
-    iget-object v8, v1, Ljp/co/sony/mc/camera/databinding/ProModeFocusZoomContainerBindingImpl;->mCameraSettingsModel:Ljp/co/sony/mc/camera/view/viewmodel/CameraSettingsModel;
+    .line 216
+    iget-object v8, v1, Ljp/co/sony/mc/camera/databinding/ProModeFocusZoomContainerBindingImpl;->mProModeCommonUiState:Ljp/co/sony/mc/camera/view/uistate/ProModeCommonUiState;
 
-    const-wide/16 v9, 0x211
+    .line 221
+    iget-object v9, v1, Ljp/co/sony/mc/camera/databinding/ProModeFocusZoomContainerBindingImpl;->mCameraSettingsModel:Ljp/co/sony/mc/camera/view/viewmodel/CameraSettingsModel;
 
-    and-long/2addr v9, v2
+    const-wide/16 v10, 0x822
 
-    cmp-long v9, v9, v4
+    and-long/2addr v10, v2
 
-    const/4 v10, 0x0
+    cmp-long v10, v10, v4
 
-    const/4 v11, 0x0
+    const/4 v11, 0x1
 
-    if-eqz v9, :cond_1
+    if-eqz v10, :cond_1
 
     if-eqz v0, :cond_0
 
-    .line 209
+    .line 235
     invoke-virtual {v0}, Ljp/co/sony/mc/camera/view/viewmodel/OrientationViewModel;->getLayoutOrientation()Landroidx/lifecycle/LiveData;
 
     move-result-object v0
@@ -388,15 +437,15 @@
     goto :goto_0
 
     :cond_0
-    move-object v0, v11
+    const/4 v0, 0x0
 
-    .line 211
+    .line 237
     :goto_0
-    invoke-virtual {v1, v10, v0}, Ljp/co/sony/mc/camera/databinding/ProModeFocusZoomContainerBindingImpl;->updateLiveDataRegistration(ILandroidx/lifecycle/LiveData;)Z
+    invoke-virtual {v1, v11, v0}, Ljp/co/sony/mc/camera/databinding/ProModeFocusZoomContainerBindingImpl;->updateLiveDataRegistration(ILandroidx/lifecycle/LiveData;)Z
 
     if-eqz v0, :cond_1
 
-    .line 216
+    .line 242
     invoke-virtual {v0}, Landroidx/lifecycle/LiveData;->getValue()Ljava/lang/Object;
 
     move-result-object v0
@@ -406,38 +455,38 @@
     goto :goto_1
 
     :cond_1
-    move-object v0, v11
+    const/4 v0, 0x0
 
     :goto_1
-    const-wide/16 v12, 0x222
+    const-wide/16 v13, 0x841
 
-    and-long/2addr v12, v2
+    and-long/2addr v13, v2
 
-    cmp-long v12, v12, v4
+    cmp-long v13, v13, v4
 
-    const/4 v13, 0x1
+    const/4 v14, 0x0
 
-    if-eqz v12, :cond_4
+    if-eqz v13, :cond_4
 
     if-eqz v6, :cond_2
 
-    .line 225
-    invoke-virtual {v6}, Ljp/co/sony/mc/camera/view/uistate/ProModeCommonUiState;->isFocusMagMenuOpened()Landroidx/lifecycle/LiveData;
+    .line 251
+    invoke-virtual {v6}, Ljp/co/sony/mc/camera/view/uistate/ViewFinderUiState;->isViewFinderItemClickable()Landroidx/lifecycle/LiveData;
 
     move-result-object v6
 
     goto :goto_2
 
     :cond_2
-    move-object v6, v11
+    const/4 v6, 0x0
 
-    .line 227
+    .line 253
     :goto_2
-    invoke-virtual {v1, v13, v6}, Ljp/co/sony/mc/camera/databinding/ProModeFocusZoomContainerBindingImpl;->updateLiveDataRegistration(ILandroidx/lifecycle/LiveData;)Z
+    invoke-virtual {v1, v14, v6}, Ljp/co/sony/mc/camera/databinding/ProModeFocusZoomContainerBindingImpl;->updateLiveDataRegistration(ILandroidx/lifecycle/LiveData;)Z
 
     if-eqz v6, :cond_3
 
-    .line 232
+    .line 258
     invoke-virtual {v6}, Landroidx/lifecycle/LiveData;->getValue()Ljava/lang/Object;
 
     move-result-object v6
@@ -447,9 +496,9 @@
     goto :goto_3
 
     :cond_3
-    move-object v6, v11
+    const/4 v6, 0x0
 
-    .line 237
+    .line 263
     :goto_3
     invoke-static {v6}, Landroidx/databinding/ViewDataBinding;->safeUnbox(Ljava/lang/Boolean;)Z
 
@@ -458,20 +507,20 @@
     goto :goto_4
 
     :cond_4
-    move v6, v10
+    move v6, v14
 
     :goto_4
-    const-wide/16 v14, 0x284
+    const-wide/16 v15, 0x908
 
-    and-long/2addr v14, v2
+    and-long/2addr v15, v2
 
-    cmp-long v14, v14, v4
+    cmp-long v15, v15, v4
 
-    if-eqz v14, :cond_7
+    if-eqz v15, :cond_7
 
     if-eqz v7, :cond_5
 
-    .line 245
+    .line 271
     invoke-virtual {v7}, Ljp/co/sony/mc/camera/view/uistate/ProModeBottomPaneUiState;->getProModeUiEnabled()Landroidx/lifecycle/LiveData;
 
     move-result-object v7
@@ -479,17 +528,17 @@
     goto :goto_5
 
     :cond_5
-    move-object v7, v11
+    const/4 v7, 0x0
 
     :goto_5
-    const/4 v15, 0x2
+    const/4 v12, 0x3
 
-    .line 247
-    invoke-virtual {v1, v15, v7}, Ljp/co/sony/mc/camera/databinding/ProModeFocusZoomContainerBindingImpl;->updateLiveDataRegistration(ILandroidx/lifecycle/LiveData;)Z
+    .line 273
+    invoke-virtual {v1, v12, v7}, Ljp/co/sony/mc/camera/databinding/ProModeFocusZoomContainerBindingImpl;->updateLiveDataRegistration(ILandroidx/lifecycle/LiveData;)Z
 
     if-eqz v7, :cond_6
 
-    .line 252
+    .line 278
     invoke-virtual {v7}, Landroidx/lifecycle/LiveData;->getValue()Ljava/lang/Object;
 
     move-result-object v7
@@ -499,9 +548,9 @@
     goto :goto_6
 
     :cond_6
-    move-object v7, v11
+    const/4 v7, 0x0
 
-    .line 257
+    .line 283
     :goto_6
     invoke-static {v7}, Landroidx/databinding/ViewDataBinding;->safeUnbox(Ljava/lang/Boolean;)Z
 
@@ -510,127 +559,201 @@
     goto :goto_7
 
     :cond_7
-    move v7, v10
+    move v7, v14
 
     :goto_7
-    const-wide/16 v15, 0x308
+    const-wide/16 v17, 0xa04
 
-    and-long/2addr v15, v2
+    and-long v17, v2, v17
 
-    cmp-long v15, v15, v4
+    cmp-long v12, v17, v4
 
-    if-eqz v15, :cond_b
+    if-eqz v12, :cond_a
 
     if-eqz v8, :cond_8
 
-    .line 265
-    invoke-virtual {v8}, Ljp/co/sony/mc/camera/view/viewmodel/CameraSettingsModel;->getFocusMode()Landroidx/lifecycle/LiveData;
+    .line 291
+    invoke-virtual {v8}, Ljp/co/sony/mc/camera/view/uistate/ProModeCommonUiState;->isFocusMagMenuOpened()Landroidx/lifecycle/LiveData;
 
     move-result-object v8
 
     goto :goto_8
 
     :cond_8
-    move-object v8, v11
+    const/4 v8, 0x0
 
     :goto_8
-    const/4 v10, 0x3
+    const/4 v14, 0x2
 
-    .line 267
-    invoke-virtual {v1, v10, v8}, Ljp/co/sony/mc/camera/databinding/ProModeFocusZoomContainerBindingImpl;->updateLiveDataRegistration(ILandroidx/lifecycle/LiveData;)Z
+    .line 293
+    invoke-virtual {v1, v14, v8}, Ljp/co/sony/mc/camera/databinding/ProModeFocusZoomContainerBindingImpl;->updateLiveDataRegistration(ILandroidx/lifecycle/LiveData;)Z
 
     if-eqz v8, :cond_9
 
-    .line 272
+    .line 298
     invoke-virtual {v8}, Landroidx/lifecycle/LiveData;->getValue()Ljava/lang/Object;
 
     move-result-object v8
 
-    move-object v11, v8
-
-    check-cast v11, Ljp/co/sony/mc/camera/configuration/parameters/FocusMode;
-
-    :cond_9
-    if-eqz v11, :cond_a
-
-    .line 278
-    invoke-virtual {v11}, Ljp/co/sony/mc/camera/configuration/parameters/FocusMode;->isAf()Z
-
-    move-result v10
+    check-cast v8, Ljava/lang/Boolean;
 
     goto :goto_9
 
-    :cond_a
-    const/4 v10, 0x0
+    :cond_9
+    const/4 v8, 0x0
 
+    .line 303
     :goto_9
-    xor-int/2addr v10, v13
+    invoke-static {v8}, Landroidx/databinding/ViewDataBinding;->safeUnbox(Ljava/lang/Boolean;)Z
+
+    move-result v8
 
     goto :goto_a
 
-    :cond_b
-    const/4 v10, 0x0
+    :cond_a
+    const/4 v8, 0x0
 
     :goto_a
-    const-wide/16 v16, 0x200
+    const-wide/16 v18, 0xc10
 
-    and-long v2, v2, v16
+    and-long v18, v2, v18
 
-    cmp-long v2, v2, v4
+    cmp-long v14, v18, v4
 
-    if-eqz v2, :cond_c
+    if-eqz v14, :cond_e
 
-    .line 289
+    if-eqz v9, :cond_b
+
+    .line 311
+    invoke-virtual {v9}, Ljp/co/sony/mc/camera/view/viewmodel/CameraSettingsModel;->getFocusMode()Landroidx/lifecycle/LiveData;
+
+    move-result-object v9
+
+    goto :goto_b
+
+    :cond_b
+    const/4 v9, 0x0
+
+    :goto_b
+    const/4 v4, 0x4
+
+    .line 313
+    invoke-virtual {v1, v4, v9}, Ljp/co/sony/mc/camera/databinding/ProModeFocusZoomContainerBindingImpl;->updateLiveDataRegistration(ILandroidx/lifecycle/LiveData;)Z
+
+    if-eqz v9, :cond_c
+
+    .line 318
+    invoke-virtual {v9}, Landroidx/lifecycle/LiveData;->getValue()Ljava/lang/Object;
+
+    move-result-object v4
+
+    check-cast v4, Ljp/co/sony/mc/camera/configuration/parameters/FocusMode;
+
+    move-object/from16 v16, v4
+
+    goto :goto_c
+
+    :cond_c
+    const/16 v16, 0x0
+
+    :goto_c
+    if-eqz v16, :cond_d
+
+    .line 324
+    invoke-virtual/range {v16 .. v16}, Ljp/co/sony/mc/camera/configuration/parameters/FocusMode;->isAf()Z
+
+    move-result v4
+
+    goto :goto_d
+
+    :cond_d
+    const/4 v4, 0x0
+
+    :goto_d
+    xor-int/2addr v4, v11
+
+    goto :goto_e
+
+    :cond_e
+    const/4 v4, 0x0
+
+    :goto_e
+    const-wide/16 v20, 0x800
+
+    and-long v2, v2, v20
+
+    const-wide/16 v18, 0x0
+
+    cmp-long v2, v2, v18
+
+    if-eqz v2, :cond_f
+
+    .line 335
     iget-object v2, v1, Ljp/co/sony/mc/camera/databinding/ProModeFocusZoomContainerBindingImpl;->focusMagBtn:Landroid/widget/ImageButton;
 
-    iget-object v3, v1, Ljp/co/sony/mc/camera/databinding/ProModeFocusZoomContainerBindingImpl;->mCallback12:Landroid/view/View$OnClickListener;
+    iget-object v3, v1, Ljp/co/sony/mc/camera/databinding/ProModeFocusZoomContainerBindingImpl;->mCallback32:Landroid/view/View$OnClickListener;
 
     invoke-virtual {v2, v3}, Landroid/widget/ImageButton;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
-    :cond_c
-    if-eqz v14, :cond_d
-
-    .line 294
-    iget-object v2, v1, Ljp/co/sony/mc/camera/databinding/ProModeFocusZoomContainerBindingImpl;->focusMagBtn:Landroid/widget/ImageButton;
-
-    invoke-static {v2, v7}, Ljp/co/sony/mc/camera/view/viewbinder/BindingAdapters;->setEnabledWithAlpha(Landroid/view/View;Z)V
-
-    :cond_d
-    if-eqz v12, :cond_e
-
-    .line 299
-    iget-object v2, v1, Ljp/co/sony/mc/camera/databinding/ProModeFocusZoomContainerBindingImpl;->focusMagBtn:Landroid/widget/ImageButton;
-
-    invoke-static {v2, v6}, Ljp/co/sony/mc/camera/view/viewbinder/BindingAdapters;->setSelected(Landroid/view/View;Z)V
-
-    .line 300
+    .line 336
     iget-object v2, v1, Ljp/co/sony/mc/camera/databinding/ProModeFocusZoomContainerBindingImpl;->focusZoomInfoText:Ljp/co/sony/mc/camera/view/widget/OutlineTextView;
 
-    invoke-static {v2, v6}, Ljp/co/sony/mc/camera/view/viewbinder/BindingAdapters;->setVisible(Landroid/view/View;Z)V
+    const/4 v3, 0x0
 
-    :cond_e
-    if-eqz v9, :cond_f
-
-    .line 305
-    iget-object v2, v1, Ljp/co/sony/mc/camera/databinding/ProModeFocusZoomContainerBindingImpl;->proModeFocusZoomContainer:Landroid/widget/LinearLayout;
-
-    invoke-static {v2, v0}, Ljp/co/sony/mc/camera/view/viewbinder/BindingAdapters;->setOrientation(Landroid/view/View;Ljp/co/sony/mc/camera/view/orientation/LayoutOrientation;)V
+    invoke-static {v2, v3}, Ljp/co/sony/mc/camera/view/viewbinder/BindingAdapters;->setAccessibilityClickable(Landroid/view/View;Z)V
 
     :cond_f
     if-eqz v15, :cond_10
 
-    .line 310
-    iget-object v0, v1, Ljp/co/sony/mc/camera/databinding/ProModeFocusZoomContainerBindingImpl;->proModeFocusZoomContainer:Landroid/widget/LinearLayout;
+    .line 341
+    iget-object v2, v1, Ljp/co/sony/mc/camera/databinding/ProModeFocusZoomContainerBindingImpl;->focusMagBtn:Landroid/widget/ImageButton;
 
-    invoke-static {v0, v10}, Ljp/co/sony/mc/camera/view/viewbinder/BindingAdapters;->setVisible(Landroid/view/View;Z)V
+    invoke-static {v2, v7}, Ljp/co/sony/mc/camera/view/viewbinder/BindingAdapters;->setEnabledWithAlpha(Landroid/view/View;Z)V
 
     :cond_10
+    if-eqz v12, :cond_11
+
+    .line 346
+    iget-object v2, v1, Ljp/co/sony/mc/camera/databinding/ProModeFocusZoomContainerBindingImpl;->focusMagBtn:Landroid/widget/ImageButton;
+
+    invoke-static {v2, v8}, Ljp/co/sony/mc/camera/view/viewbinder/BindingAdapters;->setSelected(Landroid/view/View;Z)V
+
+    .line 347
+    iget-object v2, v1, Ljp/co/sony/mc/camera/databinding/ProModeFocusZoomContainerBindingImpl;->focusZoomInfoText:Ljp/co/sony/mc/camera/view/widget/OutlineTextView;
+
+    invoke-static {v2, v8}, Ljp/co/sony/mc/camera/view/viewbinder/BindingAdapters;->setVisible(Landroid/view/View;Z)V
+
+    :cond_11
+    if-eqz v13, :cond_12
+
+    .line 352
+    iget-object v2, v1, Ljp/co/sony/mc/camera/databinding/ProModeFocusZoomContainerBindingImpl;->focusZoomInfoText:Ljp/co/sony/mc/camera/view/widget/OutlineTextView;
+
+    invoke-virtual {v2, v6}, Ljp/co/sony/mc/camera/view/widget/OutlineTextView;->setClickable(Z)V
+
+    :cond_12
+    if-eqz v10, :cond_13
+
+    .line 357
+    iget-object v2, v1, Ljp/co/sony/mc/camera/databinding/ProModeFocusZoomContainerBindingImpl;->proModeFocusZoomContainer:Landroid/widget/LinearLayout;
+
+    invoke-static {v2, v0}, Ljp/co/sony/mc/camera/view/viewbinder/BindingAdapters;->setOrientation(Landroid/view/View;Ljp/co/sony/mc/camera/view/orientation/LayoutOrientation;)V
+
+    :cond_13
+    if-eqz v14, :cond_14
+
+    .line 362
+    iget-object v0, v1, Ljp/co/sony/mc/camera/databinding/ProModeFocusZoomContainerBindingImpl;->proModeFocusZoomContainer:Landroid/widget/LinearLayout;
+
+    invoke-static {v0, v4}, Ljp/co/sony/mc/camera/view/viewbinder/BindingAdapters;->setVisible(Landroid/view/View;Z)V
+
+    :cond_14
     return-void
 
     :catchall_0
     move-exception v0
 
-    .line 184
+    .line 206
     :try_start_1
     monitor-exit p0
     :try_end_1
@@ -686,7 +809,7 @@
     .line 46
     monitor-enter p0
 
-    const-wide/16 v0, 0x200
+    const-wide/16 v0, 0x800
 
     .line 47
     :try_start_0
@@ -717,17 +840,21 @@
 .method protected onFieldChange(ILjava/lang/Object;I)Z
     .locals 1
 
-    if-eqz p1, :cond_3
+    if-eqz p1, :cond_4
 
     const/4 v0, 0x1
 
-    if-eq p1, v0, :cond_2
+    if-eq p1, v0, :cond_3
 
     const/4 v0, 0x2
 
-    if-eq p1, v0, :cond_1
+    if-eq p1, v0, :cond_2
 
     const/4 v0, 0x3
+
+    if-eq p1, v0, :cond_1
+
+    const/4 v0, 0x4
 
     if-eq p1, v0, :cond_0
 
@@ -735,7 +862,7 @@
 
     return p0
 
-    .line 137
+    .line 150
     :cond_0
     check-cast p2, Landroidx/lifecycle/LiveData;
 
@@ -745,7 +872,7 @@
 
     return p0
 
-    .line 135
+    .line 148
     :cond_1
     check-cast p2, Landroidx/lifecycle/LiveData;
 
@@ -755,7 +882,7 @@
 
     return p0
 
-    .line 133
+    .line 146
     :cond_2
     check-cast p2, Landroidx/lifecycle/LiveData;
 
@@ -765,11 +892,21 @@
 
     return p0
 
-    .line 131
+    .line 144
     :cond_3
     check-cast p2, Landroidx/lifecycle/LiveData;
 
     invoke-direct {p0, p2, p3}, Ljp/co/sony/mc/camera/databinding/ProModeFocusZoomContainerBindingImpl;->onChangeOrientationViewModelLayoutOrientation(Landroidx/lifecycle/LiveData;I)Z
+
+    move-result p0
+
+    return p0
+
+    .line 142
+    :cond_4
+    check-cast p2, Landroidx/lifecycle/LiveData;
+
+    invoke-direct {p0, p2, p3}, Ljp/co/sony/mc/camera/databinding/ProModeFocusZoomContainerBindingImpl;->onChangeViewFinderUiStateIsViewFinderItemClickable(Landroidx/lifecycle/LiveData;I)Z
 
     move-result p0
 
@@ -779,33 +916,33 @@
 .method public setCameraSettingsModel(Ljp/co/sony/mc/camera/view/viewmodel/CameraSettingsModel;)V
     .locals 4
 
-    .line 119
+    .line 130
     iput-object p1, p0, Ljp/co/sony/mc/camera/databinding/ProModeFocusZoomContainerBindingImpl;->mCameraSettingsModel:Ljp/co/sony/mc/camera/view/viewmodel/CameraSettingsModel;
 
-    .line 120
+    .line 131
     monitor-enter p0
 
-    .line 121
+    .line 132
     :try_start_0
     iget-wide v0, p0, Ljp/co/sony/mc/camera/databinding/ProModeFocusZoomContainerBindingImpl;->mDirtyFlags:J
 
-    const-wide/16 v2, 0x100
+    const-wide/16 v2, 0x400
 
     or-long/2addr v0, v2
 
     iput-wide v0, p0, Ljp/co/sony/mc/camera/databinding/ProModeFocusZoomContainerBindingImpl;->mDirtyFlags:J
 
-    .line 122
+    .line 133
     monitor-exit p0
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    const/4 p1, 0x7
+    const/16 p1, 0x8
 
-    .line 123
+    .line 134
     invoke-virtual {p0, p1}, Ljp/co/sony/mc/camera/databinding/ProModeFocusZoomContainerBindingImpl;->notifyPropertyChanged(I)V
 
-    .line 124
+    .line 135
     invoke-super {p0}, Ljp/co/sony/mc/camera/databinding/ProModeFocusZoomContainerBinding;->requestRebind()V
 
     return-void
@@ -813,7 +950,7 @@
     :catchall_0
     move-exception p1
 
-    .line 122
+    .line 133
     :try_start_1
     monitor-exit p0
     :try_end_1
@@ -825,33 +962,33 @@
 .method public setFocusMagnificationUiState(Ljp/co/sony/mc/camera/view/uistate/FocusMagnificationUiState;)V
     .locals 4
 
-    .line 103
+    .line 106
     iput-object p1, p0, Ljp/co/sony/mc/camera/databinding/ProModeFocusZoomContainerBindingImpl;->mFocusMagnificationUiState:Ljp/co/sony/mc/camera/view/uistate/FocusMagnificationUiState;
 
-    .line 104
+    .line 107
     monitor-enter p0
 
-    .line 105
+    .line 108
     :try_start_0
     iget-wide v0, p0, Ljp/co/sony/mc/camera/databinding/ProModeFocusZoomContainerBindingImpl;->mDirtyFlags:J
 
-    const-wide/16 v2, 0x40
+    const-wide/16 v2, 0x80
 
     or-long/2addr v0, v2
 
     iput-wide v0, p0, Ljp/co/sony/mc/camera/databinding/ProModeFocusZoomContainerBindingImpl;->mDirtyFlags:J
 
-    .line 106
+    .line 109
     monitor-exit p0
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    const/16 p1, 0xb
+    const/16 p1, 0xc
 
-    .line 107
+    .line 110
     invoke-virtual {p0, p1}, Ljp/co/sony/mc/camera/databinding/ProModeFocusZoomContainerBindingImpl;->notifyPropertyChanged(I)V
 
-    .line 108
+    .line 111
     invoke-super {p0}, Ljp/co/sony/mc/camera/databinding/ProModeFocusZoomContainerBinding;->requestRebind()V
 
     return-void
@@ -859,7 +996,7 @@
     :catchall_0
     move-exception p1
 
-    .line 106
+    .line 109
     :try_start_1
     monitor-exit p0
     :try_end_1
@@ -871,33 +1008,33 @@
 .method public setOrientationViewModel(Ljp/co/sony/mc/camera/view/viewmodel/OrientationViewModel;)V
     .locals 4
 
-    .line 87
+    .line 90
     iput-object p1, p0, Ljp/co/sony/mc/camera/databinding/ProModeFocusZoomContainerBindingImpl;->mOrientationViewModel:Ljp/co/sony/mc/camera/view/viewmodel/OrientationViewModel;
 
-    .line 88
+    .line 91
     monitor-enter p0
 
-    .line 89
+    .line 92
     :try_start_0
     iget-wide v0, p0, Ljp/co/sony/mc/camera/databinding/ProModeFocusZoomContainerBindingImpl;->mDirtyFlags:J
 
-    const-wide/16 v2, 0x10
+    const-wide/16 v2, 0x20
 
     or-long/2addr v0, v2
 
     iput-wide v0, p0, Ljp/co/sony/mc/camera/databinding/ProModeFocusZoomContainerBindingImpl;->mDirtyFlags:J
 
-    .line 90
+    .line 93
     monitor-exit p0
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    const/16 p1, 0x13
+    const/16 p1, 0x16
 
-    .line 91
+    .line 94
     invoke-virtual {p0, p1}, Ljp/co/sony/mc/camera/databinding/ProModeFocusZoomContainerBindingImpl;->notifyPropertyChanged(I)V
 
-    .line 92
+    .line 95
     invoke-super {p0}, Ljp/co/sony/mc/camera/databinding/ProModeFocusZoomContainerBinding;->requestRebind()V
 
     return-void
@@ -905,7 +1042,7 @@
     :catchall_0
     move-exception p1
 
-    .line 90
+    .line 93
     :try_start_1
     monitor-exit p0
     :try_end_1
@@ -917,33 +1054,33 @@
 .method public setProModeBottomPaneUiState(Ljp/co/sony/mc/camera/view/uistate/ProModeBottomPaneUiState;)V
     .locals 4
 
-    .line 111
+    .line 114
     iput-object p1, p0, Ljp/co/sony/mc/camera/databinding/ProModeFocusZoomContainerBindingImpl;->mProModeBottomPaneUiState:Ljp/co/sony/mc/camera/view/uistate/ProModeBottomPaneUiState;
 
-    .line 112
+    .line 115
     monitor-enter p0
 
-    .line 113
+    .line 116
     :try_start_0
     iget-wide v0, p0, Ljp/co/sony/mc/camera/databinding/ProModeFocusZoomContainerBindingImpl;->mDirtyFlags:J
 
-    const-wide/16 v2, 0x80
+    const-wide/16 v2, 0x100
 
     or-long/2addr v0, v2
 
     iput-wide v0, p0, Ljp/co/sony/mc/camera/databinding/ProModeFocusZoomContainerBindingImpl;->mDirtyFlags:J
 
-    .line 114
+    .line 117
     monitor-exit p0
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    const/16 p1, 0x14
+    const/16 p1, 0x17
 
-    .line 115
+    .line 118
     invoke-virtual {p0, p1}, Ljp/co/sony/mc/camera/databinding/ProModeFocusZoomContainerBindingImpl;->notifyPropertyChanged(I)V
 
-    .line 116
+    .line 119
     invoke-super {p0}, Ljp/co/sony/mc/camera/databinding/ProModeFocusZoomContainerBinding;->requestRebind()V
 
     return-void
@@ -951,7 +1088,7 @@
     :catchall_0
     move-exception p1
 
-    .line 114
+    .line 117
     :try_start_1
     monitor-exit p0
     :try_end_1
@@ -963,33 +1100,33 @@
 .method public setProModeCommonUiState(Ljp/co/sony/mc/camera/view/uistate/ProModeCommonUiState;)V
     .locals 4
 
-    .line 95
+    .line 122
     iput-object p1, p0, Ljp/co/sony/mc/camera/databinding/ProModeFocusZoomContainerBindingImpl;->mProModeCommonUiState:Ljp/co/sony/mc/camera/view/uistate/ProModeCommonUiState;
 
-    .line 96
+    .line 123
     monitor-enter p0
 
-    .line 97
+    .line 124
     :try_start_0
     iget-wide v0, p0, Ljp/co/sony/mc/camera/databinding/ProModeFocusZoomContainerBindingImpl;->mDirtyFlags:J
 
-    const-wide/16 v2, 0x20
+    const-wide/16 v2, 0x200
 
     or-long/2addr v0, v2
 
     iput-wide v0, p0, Ljp/co/sony/mc/camera/databinding/ProModeFocusZoomContainerBindingImpl;->mDirtyFlags:J
 
-    .line 98
+    .line 125
     monitor-exit p0
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    const/16 p1, 0x15
+    const/16 p1, 0x18
 
-    .line 99
+    .line 126
     invoke-virtual {p0, p1}, Ljp/co/sony/mc/camera/databinding/ProModeFocusZoomContainerBindingImpl;->notifyPropertyChanged(I)V
 
-    .line 100
+    .line 127
     invoke-super {p0}, Ljp/co/sony/mc/camera/databinding/ProModeFocusZoomContainerBinding;->requestRebind()V
 
     return-void
@@ -997,7 +1134,7 @@
     :catchall_0
     move-exception p1
 
-    .line 98
+    .line 125
     :try_start_1
     monitor-exit p0
     :try_end_1
@@ -1009,7 +1146,7 @@
 .method public setVariable(ILjava/lang/Object;)Z
     .locals 1
 
-    const/16 v0, 0x13
+    const/16 v0, 0x16
 
     if-ne v0, p1, :cond_0
 
@@ -1021,19 +1158,19 @@
     goto :goto_0
 
     :cond_0
-    const/16 v0, 0x15
+    const/16 v0, 0x25
 
     if-ne v0, p1, :cond_1
 
     .line 69
-    check-cast p2, Ljp/co/sony/mc/camera/view/uistate/ProModeCommonUiState;
+    check-cast p2, Ljp/co/sony/mc/camera/view/uistate/ViewFinderUiState;
 
-    invoke-virtual {p0, p2}, Ljp/co/sony/mc/camera/databinding/ProModeFocusZoomContainerBindingImpl;->setProModeCommonUiState(Ljp/co/sony/mc/camera/view/uistate/ProModeCommonUiState;)V
+    invoke-virtual {p0, p2}, Ljp/co/sony/mc/camera/databinding/ProModeFocusZoomContainerBindingImpl;->setViewFinderUiState(Ljp/co/sony/mc/camera/view/uistate/ViewFinderUiState;)V
 
     goto :goto_0
 
     :cond_1
-    const/16 v0, 0xb
+    const/16 v0, 0xc
 
     if-ne v0, p1, :cond_2
 
@@ -1045,7 +1182,7 @@
     goto :goto_0
 
     :cond_2
-    const/16 v0, 0x14
+    const/16 v0, 0x17
 
     if-ne v0, p1, :cond_3
 
@@ -1057,11 +1194,23 @@
     goto :goto_0
 
     :cond_3
-    const/4 v0, 0x7
+    const/16 v0, 0x18
 
     if-ne v0, p1, :cond_4
 
     .line 78
+    check-cast p2, Ljp/co/sony/mc/camera/view/uistate/ProModeCommonUiState;
+
+    invoke-virtual {p0, p2}, Ljp/co/sony/mc/camera/databinding/ProModeFocusZoomContainerBindingImpl;->setProModeCommonUiState(Ljp/co/sony/mc/camera/view/uistate/ProModeCommonUiState;)V
+
+    goto :goto_0
+
+    :cond_4
+    const/16 v0, 0x8
+
+    if-ne v0, p1, :cond_5
+
+    .line 81
     check-cast p2, Ljp/co/sony/mc/camera/view/viewmodel/CameraSettingsModel;
 
     invoke-virtual {p0, p2}, Ljp/co/sony/mc/camera/databinding/ProModeFocusZoomContainerBindingImpl;->setCameraSettingsModel(Ljp/co/sony/mc/camera/view/viewmodel/CameraSettingsModel;)V
@@ -1071,9 +1220,55 @@
 
     goto :goto_1
 
-    :cond_4
+    :cond_5
     const/4 p0, 0x0
 
     :goto_1
     return p0
+.end method
+
+.method public setViewFinderUiState(Ljp/co/sony/mc/camera/view/uistate/ViewFinderUiState;)V
+    .locals 4
+
+    .line 98
+    iput-object p1, p0, Ljp/co/sony/mc/camera/databinding/ProModeFocusZoomContainerBindingImpl;->mViewFinderUiState:Ljp/co/sony/mc/camera/view/uistate/ViewFinderUiState;
+
+    .line 99
+    monitor-enter p0
+
+    .line 100
+    :try_start_0
+    iget-wide v0, p0, Ljp/co/sony/mc/camera/databinding/ProModeFocusZoomContainerBindingImpl;->mDirtyFlags:J
+
+    const-wide/16 v2, 0x40
+
+    or-long/2addr v0, v2
+
+    iput-wide v0, p0, Ljp/co/sony/mc/camera/databinding/ProModeFocusZoomContainerBindingImpl;->mDirtyFlags:J
+
+    .line 101
+    monitor-exit p0
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    const/16 p1, 0x25
+
+    .line 102
+    invoke-virtual {p0, p1}, Ljp/co/sony/mc/camera/databinding/ProModeFocusZoomContainerBindingImpl;->notifyPropertyChanged(I)V
+
+    .line 103
+    invoke-super {p0}, Ljp/co/sony/mc/camera/databinding/ProModeFocusZoomContainerBinding;->requestRebind()V
+
+    return-void
+
+    :catchall_0
+    move-exception p1
+
+    .line 101
+    :try_start_1
+    monitor-exit p0
+    :try_end_1
+    .catchall {:try_start_1 .. :try_end_1} :catchall_0
+
+    throw p1
 .end method

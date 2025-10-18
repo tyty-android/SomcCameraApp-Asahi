@@ -27,7 +27,7 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/SourceDebugExtension;
-    value = "SMAP\nSavers.kt\nKotlin\n*S Kotlin\n*F\n+ 1 Savers.kt\nandroidx/compose/ui/text/SaversKt$ShadowSaver$2\n+ 2 Savers.kt\nandroidx/compose/ui/text/SaversKt\n+ 3 fake.kt\nkotlin/jvm/internal/FakeKt\n*L\n1#1,421:1\n55#2,2:422\n55#2,2:425\n70#2:428\n1#3:424\n1#3:427\n1#3:429\n*S KotlinDebug\n*F\n+ 1 Savers.kt\nandroidx/compose/ui/text/SaversKt$ShadowSaver$2\n*L\n348#1:422,2\n349#1:425,2\n350#1:428\n348#1:424\n349#1:427\n350#1:429\n*E\n"
+    value = "SMAP\nSavers.kt\nKotlin\n*S Kotlin\n*F\n+ 1 Savers.kt\nandroidx/compose/ui/text/SaversKt$ShadowSaver$2\n+ 2 Savers.kt\nandroidx/compose/ui/text/SaversKt\n+ 3 fake.kt\nkotlin/jvm/internal/FakeKt\n*L\n1#1,454:1\n60#2,2:455\n60#2,2:458\n91#2:461\n1#3:457\n1#3:460\n1#3:462\n*S KotlinDebug\n*F\n+ 1 Savers.kt\nandroidx/compose/ui/text/SaversKt$ShadowSaver$2\n*L\n369#1:455,2\n370#1:458,2\n371#1:461\n369#1:457\n370#1:460\n371#1:462\n*E\n"
 .end annotation
 
 .annotation runtime Lkotlin/Metadata;
@@ -83,24 +83,24 @@
 .method public final invoke(Ljava/lang/Object;)Landroidx/compose/ui/graphics/Shadow;
     .locals 8
 
-    const-string p0, "it"
+    .line 367
+    const-string p0, "null cannot be cast to non-null type kotlin.collections.List<kotlin.Any>"
 
-    invoke-static {p1, p0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, p0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 346
     check-cast p1, Ljava/util/List;
 
-    .line 347
+    .line 368
     new-instance p0, Landroidx/compose/ui/graphics/Shadow;
 
     const/4 v0, 0x0
 
-    .line 422
+    .line 455
     invoke-static {v0}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
     move-result-object v1
 
-    .line 348
+    .line 369
     invoke-interface {p1, v0}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
     move-result-object v0
@@ -111,31 +111,38 @@
 
     move-result-object v2
 
-    .line 422
+    .line 455
     invoke-static {v0, v1}, Lkotlin/jvm/internal/Intrinsics;->areEqual(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v3
 
     const/4 v4, 0x0
 
-    if-eqz v3, :cond_1
+    if-eqz v3, :cond_0
 
-    :cond_0
-    move-object v0, v4
+    instance-of v3, v2, Landroidx/compose/ui/text/NonNullValueClassSaver;
+
+    if-nez v3, :cond_0
 
     goto :goto_0
 
-    :cond_1
-    if-eqz v0, :cond_0
+    :cond_0
+    if-eqz v0, :cond_1
 
-    .line 423
+    .line 456
     invoke-interface {v2, v0}, Landroidx/compose/runtime/saveable/Saver;->restore(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v0
 
     check-cast v0, Landroidx/compose/ui/graphics/Color;
 
+    goto :goto_1
+
+    :cond_1
     :goto_0
+    move-object v0, v4
+
+    :goto_1
     invoke-static {v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;)V
 
     invoke-virtual {v0}, Landroidx/compose/ui/graphics/Color;->unbox-impl()J
@@ -144,7 +151,7 @@
 
     const/4 v0, 0x1
 
-    .line 349
+    .line 370
     invoke-interface {p1, v0}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
     move-result-object v0
@@ -155,29 +162,36 @@
 
     move-result-object v5
 
-    .line 425
+    .line 458
     invoke-static {v0, v1}, Lkotlin/jvm/internal/Intrinsics;->areEqual(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v1
 
-    if-eqz v1, :cond_3
+    if-eqz v1, :cond_2
+
+    instance-of v1, v5, Landroidx/compose/ui/text/NonNullValueClassSaver;
+
+    if-nez v1, :cond_2
+
+    goto :goto_2
 
     :cond_2
-    move-object v0, v4
+    if-eqz v0, :cond_3
 
-    goto :goto_1
-
-    :cond_3
-    if-eqz v0, :cond_2
-
-    .line 426
+    .line 459
     invoke-interface {v5, v0}, Landroidx/compose/runtime/saveable/Saver;->restore(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v0
 
     check-cast v0, Landroidx/compose/ui/geometry/Offset;
 
-    :goto_1
+    goto :goto_3
+
+    :cond_3
+    :goto_2
+    move-object v0, v4
+
+    :goto_3
     invoke-static {v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;)V
 
     invoke-virtual {v0}, Landroidx/compose/ui/geometry/Offset;->unbox-impl()J
@@ -186,14 +200,14 @@
 
     const/4 v0, 0x2
 
-    .line 350
+    .line 371
     invoke-interface {p1, v0}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
     move-result-object p1
 
     if-eqz p1, :cond_4
 
-    .line 428
+    .line 461
     move-object v4, p1
 
     check-cast v4, Ljava/lang/Float;
@@ -219,7 +233,7 @@
 
     move-object v6, v7
 
-    .line 347
+    .line 368
     invoke-direct/range {v0 .. v6}, Landroidx/compose/ui/graphics/Shadow;-><init>(JJFLkotlin/jvm/internal/DefaultConstructorMarker;)V
 
     return-object p0
@@ -228,7 +242,7 @@
 .method public bridge synthetic invoke(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
 
-    .line 336
+    .line 357
     invoke-virtual {p0, p1}, Landroidx/compose/ui/text/SaversKt$ShadowSaver$2;->invoke(Ljava/lang/Object;)Landroidx/compose/ui/graphics/Shadow;
 
     move-result-object p0

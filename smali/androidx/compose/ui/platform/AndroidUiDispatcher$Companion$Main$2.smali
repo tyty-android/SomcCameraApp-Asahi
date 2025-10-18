@@ -85,7 +85,7 @@
 .end method
 
 .method public final invoke()Lkotlin/coroutines/CoroutineContext;
-    .locals 4
+    .locals 3
 
     .line 156
     new-instance p0, Landroidx/compose/ui/platform/AndroidUiDispatcher;
@@ -125,13 +125,8 @@
 
     check-cast v0, Landroid/view/Choreographer;
 
-    .line 157
-    :goto_0
-    const-string v2, "if (isMainThread()) Chor\u2026eographer.getInstance() }"
-
-    invoke-static {v0, v2}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
-
     .line 159
+    :goto_0
     invoke-static {}, Landroid/os/Looper;->getMainLooper()Landroid/os/Looper;
 
     move-result-object v2
@@ -139,10 +134,6 @@
     invoke-static {v2}, Landroidx/core/os/HandlerCompat;->createAsync(Landroid/os/Looper;)Landroid/os/Handler;
 
     move-result-object v2
-
-    const-string v3, "createAsync(Looper.getMainLooper())"
-
-    invoke-static {v2, v3}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 156
     invoke-direct {p0, v0, v2, v1}, Landroidx/compose/ui/platform/AndroidUiDispatcher;-><init>(Landroid/view/Choreographer;Landroid/os/Handler;Lkotlin/jvm/internal/DefaultConstructorMarker;)V

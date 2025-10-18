@@ -25,10 +25,10 @@
 .method constructor <init>(Landroid/os/IBinder;)V
     .locals 0
 
-    .line 179
+    .line 227
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 180
+    .line 228
     iput-object p1, p0, Lcom/sonyericsson/psm/sysmonservice/ISysmonService$Stub$Proxy;->mRemote:Landroid/os/IBinder;
 
     return-void
@@ -39,10 +39,138 @@
 .method public asBinder()Landroid/os/IBinder;
     .locals 0
 
-    .line 184
+    .line 232
     iget-object p0, p0, Lcom/sonyericsson/psm/sysmonservice/ISysmonService$Stub$Proxy;->mRemote:Landroid/os/IBinder;
 
     return-object p0
+.end method
+
+.method public getAmbientTemperature()I
+    .locals 4
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Landroid/os/RemoteException;
+        }
+    .end annotation
+
+    .line 426
+    invoke-static {}, Landroid/os/Parcel;->obtain()Landroid/os/Parcel;
+
+    move-result-object v0
+
+    .line 427
+    invoke-static {}, Landroid/os/Parcel;->obtain()Landroid/os/Parcel;
+
+    move-result-object v1
+
+    .line 430
+    :try_start_0
+    const-string v2, "com.sonyericsson.psm.sysmonservice.ISysmonService"
+
+    invoke-virtual {v0, v2}, Landroid/os/Parcel;->writeInterfaceToken(Ljava/lang/String;)V
+
+    .line 431
+    iget-object p0, p0, Lcom/sonyericsson/psm/sysmonservice/ISysmonService$Stub$Proxy;->mRemote:Landroid/os/IBinder;
+
+    const/16 v2, 0x8
+
+    const/4 v3, 0x0
+
+    invoke-interface {p0, v2, v0, v1, v3}, Landroid/os/IBinder;->transact(ILandroid/os/Parcel;Landroid/os/Parcel;I)Z
+
+    .line 432
+    invoke-virtual {v1}, Landroid/os/Parcel;->readException()V
+
+    .line 433
+    invoke-virtual {v1}, Landroid/os/Parcel;->readInt()I
+
+    move-result p0
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    .line 436
+    invoke-virtual {v1}, Landroid/os/Parcel;->recycle()V
+
+    .line 437
+    invoke-virtual {v0}, Landroid/os/Parcel;->recycle()V
+
+    return p0
+
+    :catchall_0
+    move-exception p0
+
+    .line 436
+    invoke-virtual {v1}, Landroid/os/Parcel;->recycle()V
+
+    .line 437
+    invoke-virtual {v0}, Landroid/os/Parcel;->recycle()V
+
+    .line 438
+    throw p0
+.end method
+
+.method public getCameraLowTempBurnMonitor()I
+    .locals 4
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Landroid/os/RemoteException;
+        }
+    .end annotation
+
+    .line 404
+    invoke-static {}, Landroid/os/Parcel;->obtain()Landroid/os/Parcel;
+
+    move-result-object v0
+
+    .line 405
+    invoke-static {}, Landroid/os/Parcel;->obtain()Landroid/os/Parcel;
+
+    move-result-object v1
+
+    .line 408
+    :try_start_0
+    const-string v2, "com.sonyericsson.psm.sysmonservice.ISysmonService"
+
+    invoke-virtual {v0, v2}, Landroid/os/Parcel;->writeInterfaceToken(Ljava/lang/String;)V
+
+    .line 409
+    iget-object p0, p0, Lcom/sonyericsson/psm/sysmonservice/ISysmonService$Stub$Proxy;->mRemote:Landroid/os/IBinder;
+
+    const/4 v2, 0x7
+
+    const/4 v3, 0x0
+
+    invoke-interface {p0, v2, v0, v1, v3}, Landroid/os/IBinder;->transact(ILandroid/os/Parcel;Landroid/os/Parcel;I)Z
+
+    .line 410
+    invoke-virtual {v1}, Landroid/os/Parcel;->readException()V
+
+    .line 411
+    invoke-virtual {v1}, Landroid/os/Parcel;->readInt()I
+
+    move-result p0
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    .line 414
+    invoke-virtual {v1}, Landroid/os/Parcel;->recycle()V
+
+    .line 415
+    invoke-virtual {v0}, Landroid/os/Parcel;->recycle()V
+
+    return p0
+
+    :catchall_0
+    move-exception p0
+
+    .line 414
+    invoke-virtual {v1}, Landroid/os/Parcel;->recycle()V
+
+    .line 415
+    invoke-virtual {v0}, Landroid/os/Parcel;->recycle()V
+
+    .line 416
+    throw p0
 .end method
 
 .method public getCameraLowTempBurnTimeoutSec()I
@@ -53,23 +181,23 @@
         }
     .end annotation
 
-    .line 247
+    .line 300
     invoke-static {}, Landroid/os/Parcel;->obtain()Landroid/os/Parcel;
 
     move-result-object v0
 
-    .line 248
+    .line 301
     invoke-static {}, Landroid/os/Parcel;->obtain()Landroid/os/Parcel;
 
     move-result-object v1
 
-    .line 251
+    .line 304
     :try_start_0
     const-string v2, "com.sonyericsson.psm.sysmonservice.ISysmonService"
 
     invoke-virtual {v0, v2}, Landroid/os/Parcel;->writeInterfaceToken(Ljava/lang/String;)V
 
-    .line 252
+    .line 305
     iget-object p0, p0, Lcom/sonyericsson/psm/sysmonservice/ISysmonService$Stub$Proxy;->mRemote:Landroid/os/IBinder;
 
     const/4 v2, 0x3
@@ -78,20 +206,20 @@
 
     invoke-interface {p0, v2, v0, v1, v3}, Landroid/os/IBinder;->transact(ILandroid/os/Parcel;Landroid/os/Parcel;I)Z
 
-    .line 253
+    .line 306
     invoke-virtual {v1}, Landroid/os/Parcel;->readException()V
 
-    .line 254
+    .line 307
     invoke-virtual {v1}, Landroid/os/Parcel;->readInt()I
 
     move-result p0
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 257
+    .line 310
     invoke-virtual {v1}, Landroid/os/Parcel;->recycle()V
 
-    .line 258
+    .line 311
     invoke-virtual {v0}, Landroid/os/Parcel;->recycle()V
 
     return p0
@@ -99,20 +227,20 @@
     :catchall_0
     move-exception p0
 
-    .line 257
+    .line 310
     invoke-virtual {v1}, Landroid/os/Parcel;->recycle()V
 
-    .line 258
+    .line 311
     invoke-virtual {v0}, Landroid/os/Parcel;->recycle()V
 
-    .line 259
+    .line 312
     throw p0
 .end method
 
 .method public getInterfaceDescriptor()Ljava/lang/String;
     .locals 0
 
-    .line 188
+    .line 236
     const-string p0, "com.sonyericsson.psm.sysmonservice.ISysmonService"
 
     return-object p0
@@ -126,23 +254,23 @@
         }
     .end annotation
 
-    .line 202
+    .line 250
     invoke-static {}, Landroid/os/Parcel;->obtain()Landroid/os/Parcel;
 
     move-result-object v0
 
-    .line 203
+    .line 251
     invoke-static {}, Landroid/os/Parcel;->obtain()Landroid/os/Parcel;
 
     move-result-object v1
 
-    .line 206
+    .line 254
     :try_start_0
     const-string v2, "com.sonyericsson.psm.sysmonservice.ISysmonService"
 
     invoke-virtual {v0, v2}, Landroid/os/Parcel;->writeInterfaceToken(Ljava/lang/String;)V
 
-    .line 207
+    .line 255
     iget-object p0, p0, Lcom/sonyericsson/psm/sysmonservice/ISysmonService$Stub$Proxy;->mRemote:Landroid/os/IBinder;
 
     const/4 v2, 0x1
@@ -151,20 +279,20 @@
 
     invoke-interface {p0, v2, v0, v1, v3}, Landroid/os/IBinder;->transact(ILandroid/os/Parcel;Landroid/os/Parcel;I)Z
 
-    .line 208
+    .line 256
     invoke-virtual {v1}, Landroid/os/Parcel;->readException()V
 
-    .line 209
+    .line 257
     invoke-virtual {v1}, Landroid/os/Parcel;->readInt()I
 
     move-result p0
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 212
+    .line 260
     invoke-virtual {v1}, Landroid/os/Parcel;->recycle()V
 
-    .line 213
+    .line 261
     invoke-virtual {v0}, Landroid/os/Parcel;->recycle()V
 
     return p0
@@ -172,13 +300,13 @@
     :catchall_0
     move-exception p0
 
-    .line 212
+    .line 260
     invoke-virtual {v1}, Landroid/os/Parcel;->recycle()V
 
-    .line 213
+    .line 261
     invoke-virtual {v0}, Landroid/os/Parcel;->recycle()V
 
-    .line 214
+    .line 262
     throw p0
 .end method
 
@@ -190,23 +318,23 @@
         }
     .end annotation
 
-    .line 322
+    .line 380
     invoke-static {}, Landroid/os/Parcel;->obtain()Landroid/os/Parcel;
 
     move-result-object v0
 
-    .line 323
+    .line 381
     invoke-static {}, Landroid/os/Parcel;->obtain()Landroid/os/Parcel;
 
     move-result-object v1
 
-    .line 326
+    .line 384
     :try_start_0
     const-string v2, "com.sonyericsson.psm.sysmonservice.ISysmonService"
 
     invoke-virtual {v0, v2}, Landroid/os/Parcel;->writeInterfaceToken(Ljava/lang/String;)V
 
-    .line 327
+    .line 385
     iget-object p0, p0, Lcom/sonyericsson/psm/sysmonservice/ISysmonService$Stub$Proxy;->mRemote:Landroid/os/IBinder;
 
     const/4 v2, 0x6
@@ -215,20 +343,20 @@
 
     invoke-interface {p0, v2, v0, v1, v3}, Landroid/os/IBinder;->transact(ILandroid/os/Parcel;Landroid/os/Parcel;I)Z
 
-    .line 328
+    .line 386
     invoke-virtual {v1}, Landroid/os/Parcel;->readException()V
 
-    .line 329
+    .line 387
     invoke-virtual {v1}, Landroid/os/Parcel;->readInt()I
 
     move-result p0
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 332
+    .line 390
     invoke-virtual {v1}, Landroid/os/Parcel;->recycle()V
 
-    .line 333
+    .line 391
     invoke-virtual {v0}, Landroid/os/Parcel;->recycle()V
 
     return p0
@@ -236,13 +364,13 @@
     :catchall_0
     move-exception p0
 
-    .line 332
+    .line 390
     invoke-virtual {v1}, Landroid/os/Parcel;->recycle()V
 
-    .line 333
+    .line 391
     invoke-virtual {v0}, Landroid/os/Parcel;->recycle()V
 
-    .line 334
+    .line 392
     throw p0
 .end method
 
@@ -254,23 +382,23 @@
         }
     .end annotation
 
-    .line 225
+    .line 278
     invoke-static {}, Landroid/os/Parcel;->obtain()Landroid/os/Parcel;
 
     move-result-object v0
 
-    .line 226
+    .line 279
     invoke-static {}, Landroid/os/Parcel;->obtain()Landroid/os/Parcel;
 
     move-result-object v1
 
-    .line 229
+    .line 282
     :try_start_0
     const-string v2, "com.sonyericsson.psm.sysmonservice.ISysmonService"
 
     invoke-virtual {v0, v2}, Landroid/os/Parcel;->writeInterfaceToken(Ljava/lang/String;)V
 
-    .line 230
+    .line 283
     iget-object p0, p0, Lcom/sonyericsson/psm/sysmonservice/ISysmonService$Stub$Proxy;->mRemote:Landroid/os/IBinder;
 
     const/4 v2, 0x2
@@ -279,20 +407,20 @@
 
     invoke-interface {p0, v2, v0, v1, v3}, Landroid/os/IBinder;->transact(ILandroid/os/Parcel;Landroid/os/Parcel;I)Z
 
-    .line 231
+    .line 284
     invoke-virtual {v1}, Landroid/os/Parcel;->readException()V
 
-    .line 232
+    .line 285
     invoke-virtual {v1}, Landroid/os/Parcel;->readInt()I
 
     move-result p0
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 235
+    .line 288
     invoke-virtual {v1}, Landroid/os/Parcel;->recycle()V
 
-    .line 236
+    .line 289
     invoke-virtual {v0}, Landroid/os/Parcel;->recycle()V
 
     return p0
@@ -300,13 +428,13 @@
     :catchall_0
     move-exception p0
 
-    .line 235
+    .line 288
     invoke-virtual {v1}, Landroid/os/Parcel;->recycle()V
 
-    .line 236
+    .line 289
     invoke-virtual {v0}, Landroid/os/Parcel;->recycle()V
 
-    .line 237
+    .line 290
     throw p0
 .end method
 
@@ -318,23 +446,23 @@
         }
     .end annotation
 
-    .line 296
+    .line 354
     invoke-static {}, Landroid/os/Parcel;->obtain()Landroid/os/Parcel;
 
     move-result-object v0
 
-    .line 297
+    .line 355
     invoke-static {}, Landroid/os/Parcel;->obtain()Landroid/os/Parcel;
 
     move-result-object v1
 
-    .line 300
+    .line 358
     :try_start_0
     const-string v2, "com.sonyericsson.psm.sysmonservice.ISysmonService"
 
     invoke-virtual {v0, v2}, Landroid/os/Parcel;->writeInterfaceToken(Ljava/lang/String;)V
 
-    .line 301
+    .line 359
     iget-object p0, p0, Lcom/sonyericsson/psm/sysmonservice/ISysmonService$Stub$Proxy;->mRemote:Landroid/os/IBinder;
 
     const/4 v2, 0x5
@@ -343,20 +471,20 @@
 
     invoke-interface {p0, v2, v0, v1, v3}, Landroid/os/IBinder;->transact(ILandroid/os/Parcel;Landroid/os/Parcel;I)Z
 
-    .line 302
+    .line 360
     invoke-virtual {v1}, Landroid/os/Parcel;->readException()V
 
-    .line 303
+    .line 361
     invoke-virtual {v1}, Landroid/os/Parcel;->readInt()I
 
     move-result p0
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 306
+    .line 364
     invoke-virtual {v1}, Landroid/os/Parcel;->recycle()V
 
-    .line 307
+    .line 365
     invoke-virtual {v0}, Landroid/os/Parcel;->recycle()V
 
     return p0
@@ -364,13 +492,13 @@
     :catchall_0
     move-exception p0
 
-    .line 306
+    .line 364
     invoke-virtual {v1}, Landroid/os/Parcel;->recycle()V
 
-    .line 307
+    .line 365
     invoke-virtual {v0}, Landroid/os/Parcel;->recycle()V
 
-    .line 308
+    .line 366
     throw p0
 .end method
 
@@ -382,23 +510,23 @@
         }
     .end annotation
 
-    .line 270
+    .line 328
     invoke-static {}, Landroid/os/Parcel;->obtain()Landroid/os/Parcel;
 
     move-result-object v0
 
-    .line 271
+    .line 329
     invoke-static {}, Landroid/os/Parcel;->obtain()Landroid/os/Parcel;
 
     move-result-object v1
 
-    .line 274
+    .line 332
     :try_start_0
     const-string v2, "com.sonyericsson.psm.sysmonservice.ISysmonService"
 
     invoke-virtual {v0, v2}, Landroid/os/Parcel;->writeInterfaceToken(Ljava/lang/String;)V
 
-    .line 275
+    .line 333
     iget-object p0, p0, Lcom/sonyericsson/psm/sysmonservice/ISysmonService$Stub$Proxy;->mRemote:Landroid/os/IBinder;
 
     const/4 v2, 0x4
@@ -407,20 +535,20 @@
 
     invoke-interface {p0, v2, v0, v1, v3}, Landroid/os/IBinder;->transact(ILandroid/os/Parcel;Landroid/os/Parcel;I)Z
 
-    .line 276
+    .line 334
     invoke-virtual {v1}, Landroid/os/Parcel;->readException()V
 
-    .line 277
+    .line 335
     invoke-virtual {v1}, Landroid/os/Parcel;->readInt()I
 
     move-result p0
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 280
+    .line 338
     invoke-virtual {v1}, Landroid/os/Parcel;->recycle()V
 
-    .line 281
+    .line 339
     invoke-virtual {v0}, Landroid/os/Parcel;->recycle()V
 
     return p0
@@ -428,12 +556,12 @@
     :catchall_0
     move-exception p0
 
-    .line 280
+    .line 338
     invoke-virtual {v1}, Landroid/os/Parcel;->recycle()V
 
-    .line 281
+    .line 339
     invoke-virtual {v0}, Landroid/os/Parcel;->recycle()V
 
-    .line 282
+    .line 340
     throw p0
 .end method

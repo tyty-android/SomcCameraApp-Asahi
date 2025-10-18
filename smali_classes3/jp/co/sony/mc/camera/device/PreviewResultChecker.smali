@@ -49,7 +49,7 @@
 .end method
 
 .method public constructor <init>(Landroid/os/Handler;Ljp/co/sony/mc/camera/device/CaptureResultNotifier$PreviewResultCallback;Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;)V
-    .locals 1
+    .locals 4
 
     .line 43
     invoke-direct {p0, p1}, Ljp/co/sony/mc/camera/device/CaptureResultCheckerBase;-><init>(Landroid/os/Handler;)V
@@ -72,15 +72,21 @@
     .line 48
     sget-boolean p2, Ljp/co/sony/mc/camera/util/CamLog;->VERBOSE:Z
 
+    const/4 v0, 0x0
+
+    const/4 v1, 0x1
+
     if-eqz p2, :cond_0
 
-    new-instance p2, Ljava/lang/StringBuilder;
+    new-array p2, v1, [Ljava/lang/String;
 
-    const-string v0, "isAfFailureReasonAvailable:"
+    new-instance v2, Ljava/lang/StringBuilder;
 
-    invoke-direct {p2, v0}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+    const-string v3, "isAfFailureReasonAvailable:"
 
-    invoke-virtual {p2, p1}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
+    invoke-direct {v2, v3}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+
+    invoke-virtual {v2, p1}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
 
     move-result-object p1
 
@@ -88,11 +94,9 @@
 
     move-result-object p1
 
-    filled-new-array {p1}, [Ljava/lang/String;
+    aput-object p1, p2, v0
 
-    move-result-object p1
-
-    invoke-static {p1}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
+    invoke-static {p2}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
     .line 49
     :cond_0
@@ -109,13 +113,15 @@
 
     if-eqz p2, :cond_1
 
-    new-instance p2, Ljava/lang/StringBuilder;
+    new-array p2, v1, [Ljava/lang/String;
 
-    const-string v0, "isIlluminanceAvailable:"
+    new-instance v2, Ljava/lang/StringBuilder;
 
-    invoke-direct {p2, v0}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+    const-string v3, "isIlluminanceAvailable:"
 
-    invoke-virtual {p2, p1}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
+    invoke-direct {v2, v3}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+
+    invoke-virtual {v2, p1}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
 
     move-result-object p1
 
@@ -123,11 +129,9 @@
 
     move-result-object p1
 
-    filled-new-array {p1}, [Ljava/lang/String;
+    aput-object p1, p2, v0
 
-    move-result-object p1
-
-    invoke-static {p1}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
+    invoke-static {p2}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
     .line 52
     :cond_1
@@ -144,13 +148,15 @@
 
     if-eqz p2, :cond_2
 
-    new-instance p2, Ljava/lang/StringBuilder;
+    new-array p2, v1, [Ljava/lang/String;
 
-    const-string v0, "isExposureTimeHintAvailable:"
+    new-instance v2, Ljava/lang/StringBuilder;
 
-    invoke-direct {p2, v0}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+    const-string v3, "isExposureTimeHintAvailable:"
 
-    invoke-virtual {p2, p1}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
+    invoke-direct {v2, v3}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+
+    invoke-virtual {v2, p1}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
 
     move-result-object p1
 
@@ -158,11 +164,9 @@
 
     move-result-object p1
 
-    filled-new-array {p1}, [Ljava/lang/String;
+    aput-object p1, p2, v0
 
-    move-result-object p1
-
-    invoke-static {p1}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
+    invoke-static {p2}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
     .line 55
     :cond_2
@@ -179,13 +183,15 @@
 
     if-eqz p2, :cond_3
 
-    new-instance p2, Ljava/lang/StringBuilder;
+    new-array p2, v1, [Ljava/lang/String;
 
-    const-string v0, "isSensitivityAvailable:"
+    new-instance v2, Ljava/lang/StringBuilder;
 
-    invoke-direct {p2, v0}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+    const-string v3, "isSensitivityAvailable:"
 
-    invoke-virtual {p2, p1}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
+    invoke-direct {v2, v3}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+
+    invoke-virtual {v2, p1}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
 
     move-result-object p1
 
@@ -193,11 +199,9 @@
 
     move-result-object p1
 
-    filled-new-array {p1}, [Ljava/lang/String;
+    aput-object p1, p2, v0
 
-    move-result-object p1
-
-    invoke-static {p1}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
+    invoke-static {p2}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
     .line 58
     :cond_3
@@ -212,19 +216,21 @@
 
     if-eqz p2, :cond_4
 
-    new-instance p2, Ljava/lang/StringBuilder;
+    new-array p2, v1, [Ljava/lang/String;
 
-    const-string v0, "isFocusSupported:"
+    new-instance v2, Ljava/lang/StringBuilder;
 
-    invoke-direct {p2, v0}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+    const-string v3, "isFocusSupported:"
 
-    invoke-virtual {p2, p1}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
+    invoke-direct {v2, v3}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+
+    invoke-virtual {v2, p1}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
 
     move-result-object p1
 
-    const-string p2, " (cameraId:"
+    const-string v2, " (cameraId:"
 
-    invoke-virtual {p1, p2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {p1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object p1
 
@@ -232,9 +238,9 @@
 
     move-result-object p1
 
-    const-string p2, ")"
+    const-string v2, ")"
 
-    invoke-virtual {p1, p2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {p1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object p1
 
@@ -242,11 +248,9 @@
 
     move-result-object p1
 
-    filled-new-array {p1}, [Ljava/lang/String;
+    aput-object p1, p2, v0
 
-    move-result-object p1
-
-    invoke-static {p1}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
+    invoke-static {p2}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
     .line 61
     :cond_4
@@ -263,23 +267,23 @@
 
     if-eqz p0, :cond_5
 
-    new-instance p0, Ljava/lang/StringBuilder;
+    new-array p0, v1, [Ljava/lang/String;
 
-    const-string p2, "isStillHdrStateAvailable:"
+    new-instance p2, Ljava/lang/StringBuilder;
 
-    invoke-direct {p0, p2}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+    const-string p3, "isStillHdrStateAvailable:"
 
-    invoke-virtual {p0, p1}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
+    invoke-direct {p2, p3}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
-    move-result-object p0
+    invoke-virtual {p2, p1}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
 
-    invoke-virtual {p0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    move-result-object p1
 
-    move-result-object p0
+    invoke-virtual {p1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    filled-new-array {p0}, [Ljava/lang/String;
+    move-result-object p1
 
-    move-result-object p0
+    aput-object p1, p0, v0
 
     invoke-static {p0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 

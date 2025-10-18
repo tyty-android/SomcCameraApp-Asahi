@@ -11,12 +11,12 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/SourceDebugExtension;
-    value = "SMAP\nSegmentBreaker.kt\nKotlin\n*S Kotlin\n*F\n+ 1 SegmentBreaker.kt\nandroidx/compose/ui/text/android/animation/SegmentBreaker\n+ 2 TempListUtils.kt\nandroidx/compose/ui/text/android/TempListUtilsKt\n*L\n1#1,312:1\n34#2,6:313\n73#2,11:319\n73#2,11:330\n*S KotlinDebug\n*F\n+ 1 SegmentBreaker.kt\nandroidx/compose/ui/text/android/animation/SegmentBreaker\n*L\n66#1:313,6\n226#1:319,11\n275#1:330,11\n*E\n"
+    value = "SMAP\nSegmentBreaker.kt\nKotlin\n*S Kotlin\n*F\n+ 1 SegmentBreaker.kt\nandroidx/compose/ui/text/android/animation/SegmentBreaker\n+ 2 ListUtils.kt\nandroidx/compose/ui/text/android/ListUtilsKt\n*L\n1#1,308:1\n33#2,6:309\n74#2,11:315\n74#2,11:326\n*S KotlinDebug\n*F\n+ 1 SegmentBreaker.kt\nandroidx/compose/ui/text/android/animation/SegmentBreaker\n*L\n61#1:309,6\n221#1:315,11\n270#1:326,11\n*E\n"
 .end annotation
 
 .annotation runtime Lkotlin/Metadata;
     d1 = {
-        "\u0000>\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\u0008\u0002\n\u0002\u0010 \n\u0002\u0010\u0008\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000b\n\u0002\u0008\u0007\n\u0002\u0010\r\n\u0000\n\u0002\u0018\u0002\n\u0000\u0008\u00c1\u0002\u0018\u00002\u00020\u0001B\u0007\u0008\u0002\u00a2\u0006\u0002\u0010\u0002J\u0016\u0010\u0003\u001a\u0008\u0012\u0004\u0012\u00020\u00050\u00042\u0006\u0010\u0006\u001a\u00020\u0007H\u0002J\u001c\u0010\u0008\u001a\u0008\u0012\u0004\u0012\u00020\u00050\u00042\u0006\u0010\u0006\u001a\u00020\u00072\u0006\u0010\t\u001a\u00020\nJ\u001e\u0010\u000b\u001a\u0008\u0012\u0004\u0012\u00020\u000c0\u00042\u0006\u0010\u0006\u001a\u00020\u00072\u0006\u0010\r\u001a\u00020\u000eH\u0002J\u0016\u0010\u000f\u001a\u0008\u0012\u0004\u0012\u00020\u000c0\u00042\u0006\u0010\u0006\u001a\u00020\u0007H\u0002J\u001e\u0010\u0010\u001a\u0008\u0012\u0004\u0012\u00020\u000c0\u00042\u0006\u0010\u0006\u001a\u00020\u00072\u0006\u0010\r\u001a\u00020\u000eH\u0002J\u0016\u0010\u0011\u001a\u0008\u0012\u0004\u0012\u00020\u000c0\u00042\u0006\u0010\u0006\u001a\u00020\u0007H\u0002J\u001e\u0010\u0012\u001a\u0008\u0012\u0004\u0012\u00020\u000c0\u00042\u0006\u0010\u0006\u001a\u00020\u00072\u0006\u0010\r\u001a\u00020\u000eH\u0002J$\u0010\u0013\u001a\u0008\u0012\u0004\u0012\u00020\u000c0\u00042\u0006\u0010\u0006\u001a\u00020\u00072\u0006\u0010\t\u001a\u00020\n2\u0006\u0010\r\u001a\u00020\u000eJ\u001e\u0010\u0014\u001a\u0008\u0012\u0004\u0012\u00020\u00050\u00042\u0006\u0010\u0015\u001a\u00020\u00162\u0006\u0010\u0017\u001a\u00020\u0018H\u0002\u00a8\u0006\u0019"
+        "\u0000>\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\u0008\u0002\n\u0002\u0010 \n\u0002\u0010\u0008\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000b\n\u0002\u0008\u0007\n\u0002\u0010\r\n\u0000\n\u0002\u0018\u0002\n\u0000\u0008\u00c0\u0002\u0018\u00002\u00020\u0001B\u0007\u0008\u0002\u00a2\u0006\u0002\u0010\u0002J\u0016\u0010\u0003\u001a\u0008\u0012\u0004\u0012\u00020\u00050\u00042\u0006\u0010\u0006\u001a\u00020\u0007H\u0002J\u001c\u0010\u0008\u001a\u0008\u0012\u0004\u0012\u00020\u00050\u00042\u0006\u0010\u0006\u001a\u00020\u00072\u0006\u0010\t\u001a\u00020\nJ\u001e\u0010\u000b\u001a\u0008\u0012\u0004\u0012\u00020\u000c0\u00042\u0006\u0010\u0006\u001a\u00020\u00072\u0006\u0010\r\u001a\u00020\u000eH\u0002J\u0016\u0010\u000f\u001a\u0008\u0012\u0004\u0012\u00020\u000c0\u00042\u0006\u0010\u0006\u001a\u00020\u0007H\u0002J\u001e\u0010\u0010\u001a\u0008\u0012\u0004\u0012\u00020\u000c0\u00042\u0006\u0010\u0006\u001a\u00020\u00072\u0006\u0010\r\u001a\u00020\u000eH\u0002J\u0016\u0010\u0011\u001a\u0008\u0012\u0004\u0012\u00020\u000c0\u00042\u0006\u0010\u0006\u001a\u00020\u0007H\u0002J\u001e\u0010\u0012\u001a\u0008\u0012\u0004\u0012\u00020\u000c0\u00042\u0006\u0010\u0006\u001a\u00020\u00072\u0006\u0010\r\u001a\u00020\u000eH\u0002J$\u0010\u0013\u001a\u0008\u0012\u0004\u0012\u00020\u000c0\u00042\u0006\u0010\u0006\u001a\u00020\u00072\u0006\u0010\t\u001a\u00020\n2\u0006\u0010\r\u001a\u00020\u000eJ\u001e\u0010\u0014\u001a\u0008\u0012\u0004\u0012\u00020\u00050\u00042\u0006\u0010\u0015\u001a\u00020\u00162\u0006\u0010\u0017\u001a\u00020\u0018H\u0002\u00a8\u0006\u0019"
     }
     d2 = {
         "Landroidx/compose/ui/text/android/animation/SegmentBreaker;",
@@ -57,6 +57,8 @@
 
 
 # static fields
+.field public static final $stable:I
+
 .field public static final INSTANCE:Landroidx/compose/ui/text/android/animation/SegmentBreaker;
 
 
@@ -76,7 +78,7 @@
 .method private constructor <init>()V
     .locals 0
 
-    .line 59
+    .line 55
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -95,7 +97,7 @@
         }
     .end annotation
 
-    .line 62
+    .line 57
     invoke-virtual {p1}, Landroidx/compose/ui/text/android/LayoutHelper;->getLayout()Landroid/text/Layout;
 
     move-result-object v0
@@ -104,11 +106,7 @@
 
     move-result-object v0
 
-    .line 63
-    const-string/jumbo v1, "text"
-
-    invoke-static {v0, v1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
-
+    .line 58
     invoke-static {}, Ljava/util/Locale;->getDefault()Ljava/util/Locale;
 
     move-result-object v1
@@ -117,20 +115,16 @@
 
     move-result-object v1
 
-    const-string v2, "getLineInstance(Locale.getDefault())"
-
-    invoke-static {v1, v2}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
-
     invoke-direct {p0, v0, v1}, Landroidx/compose/ui/text/android/animation/SegmentBreaker;->breakWithBreakIterator(Ljava/lang/CharSequence;Ljava/text/BreakIterator;)Ljava/util/List;
 
     move-result-object p0
 
-    .line 65
+    .line 60
     new-instance v0, Ljava/util/TreeSet;
 
     invoke-direct {v0}, Ljava/util/TreeSet;-><init>()V
 
-    .line 314
+    .line 310
     invoke-interface {p0}, Ljava/util/List;->size()I
 
     move-result v1
@@ -142,19 +136,19 @@
     :goto_0
     if-ge v3, v1, :cond_0
 
-    .line 315
+    .line 311
     invoke-interface {p0, v3}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
     move-result-object v4
 
-    .line 316
+    .line 312
     check-cast v4, Ljava/lang/Number;
 
     invoke-virtual {v4}, Ljava/lang/Number;->intValue()I
 
     move-result v4
 
-    .line 66
+    .line 61
     invoke-static {v4}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object v4
@@ -165,7 +159,7 @@
 
     goto :goto_0
 
-    .line 69
+    .line 64
     :cond_0
     invoke-virtual {p1}, Landroidx/compose/ui/text/android/LayoutHelper;->getParagraphCount()I
 
@@ -176,7 +170,7 @@
     :goto_1
     if-ge v1, p0, :cond_3
 
-    .line 70
+    .line 65
     invoke-virtual {p1, v1}, Landroidx/compose/ui/text/android/LayoutHelper;->analyzeBidi(I)Ljava/text/Bidi;
 
     move-result-object v3
@@ -185,13 +179,13 @@
 
     goto :goto_3
 
-    .line 71
+    .line 66
     :cond_1
     invoke-virtual {p1, v1}, Landroidx/compose/ui/text/android/LayoutHelper;->getParagraphStart(I)I
 
     move-result v4
 
-    .line 72
+    .line 67
     invoke-virtual {v3}, Ljava/text/Bidi;->getRunCount()I
 
     move-result v5
@@ -201,7 +195,7 @@
     :goto_2
     if-ge v6, v5, :cond_2
 
-    .line 73
+    .line 68
     invoke-virtual {v3, v6}, Ljava/text/Bidi;->getRunStart(I)I
 
     move-result v7
@@ -224,7 +218,7 @@
 
     goto :goto_1
 
-    .line 76
+    .line 71
     :cond_3
     check-cast v0, Ljava/lang/Iterable;
 
@@ -250,14 +244,14 @@
 
     move-object/from16 v0, p1
 
-    .line 274
+    .line 269
     new-instance v1, Ljava/util/ArrayList;
 
     invoke-direct {v1}, Ljava/util/ArrayList;-><init>()V
 
     check-cast v1, Ljava/util/List;
 
-    .line 275
+    .line 270
     sget-object v2, Landroidx/compose/ui/text/android/animation/SegmentType;->Character:Landroidx/compose/ui/text/android/animation/SegmentType;
 
     move-object/from16 v3, p0
@@ -266,7 +260,7 @@
 
     move-result-object v2
 
-    .line 331
+    .line 327
     invoke-interface {v2}, Ljava/util/List;->size()I
 
     move-result v3
@@ -283,7 +277,7 @@
 
     goto/16 :goto_5
 
-    .line 332
+    .line 328
     :cond_0
     new-instance v3, Ljava/util/ArrayList;
 
@@ -293,12 +287,12 @@
 
     const/4 v5, 0x0
 
-    .line 333
+    .line 329
     invoke-interface {v2, v5}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
     move-result-object v6
 
-    .line 335
+    .line 331
     invoke-static {v2}, Lkotlin/collections/CollectionsKt;->getLastIndex(Ljava/util/List;)I
 
     move-result v7
@@ -310,12 +304,12 @@
 
     add-int/lit8 v8, v8, 0x1
 
-    .line 336
+    .line 332
     invoke-interface {v2, v8}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
     move-result-object v9
 
-    .line 337
+    .line 333
     move-object v10, v9
 
     check-cast v10, Ljava/lang/Number;
@@ -330,7 +324,7 @@
 
     move-result v12
 
-    .line 276
+    .line 271
     invoke-virtual/range {p1 .. p1}, Landroidx/compose/ui/text/android/LayoutHelper;->getLayout()Landroid/text/Layout;
 
     move-result-object v6
@@ -341,7 +335,7 @@
 
     if-ne v13, v10, :cond_1
 
-    .line 279
+    .line 274
     invoke-virtual {v6}, Landroid/text/Layout;->getText()Ljava/lang/CharSequence;
 
     move-result-object v10
@@ -358,13 +352,13 @@
 
     goto :goto_4
 
-    .line 282
+    .line 277
     :cond_1
     invoke-static {v6, v12, v5}, Landroidx/compose/ui/text/android/LayoutCompatKt;->getLineForOffset(Landroid/text/Layout;IZ)I
 
     move-result v10
 
-    .line 283
+    .line 278
     invoke-virtual {v6, v10}, Landroid/text/Layout;->getParagraphDirection(I)I
 
     move-result v11
@@ -380,7 +374,7 @@
     :cond_2
     move v11, v5
 
-    .line 284
+    .line 279
     :goto_1
     invoke-virtual {v6, v12}, Landroid/text/Layout;->isRtlCharAt(I)Z
 
@@ -395,7 +389,7 @@
     :cond_3
     move v15, v5
 
-    .line 286
+    .line 281
     :goto_2
     invoke-virtual {v0, v12, v15, v5}, Landroidx/compose/ui/text/android/LayoutHelper;->getHorizontalPosition(IZZ)F
 
@@ -422,7 +416,7 @@
     :cond_4
     const/4 v6, 0x0
 
-    .line 293
+    .line 288
     :goto_3
     invoke-virtual {v0, v13, v6, v4}, Landroidx/compose/ui/text/android/LayoutHelper;->getHorizontalPosition(IZZ)F
 
@@ -438,27 +432,27 @@
 
     float-to-int v6, v6
 
-    .line 300
+    .line 295
     new-instance v15, Landroidx/compose/ui/text/android/animation/Segment;
 
-    .line 303
+    .line 298
     invoke-static {v5, v6}, Ljava/lang/Math;->min(II)I
 
     move-result v14
 
     move-object/from16 v11, v16
 
-    .line 304
+    .line 299
     invoke-virtual {v11, v10}, Landroid/text/Layout;->getLineTop(I)I
 
     move-result v16
 
-    .line 305
+    .line 300
     invoke-static {v5, v6}, Ljava/lang/Math;->max(II)I
 
     move-result v5
 
-    .line 306
+    .line 301
     invoke-virtual {v11, v10}, Landroid/text/Layout;->getLineBottom(I)I
 
     move-result v17
@@ -471,17 +465,17 @@
 
     move/from16 v16, v5
 
-    .line 300
+    .line 295
     invoke-direct/range {v11 .. v17}, Landroidx/compose/ui/text/android/animation/Segment;-><init>(IIIIII)V
 
-    .line 299
+    .line 294
     invoke-interface {v1, v6}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    .line 309
+    .line 304
     :goto_4
     sget-object v5, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
 
-    .line 337
+    .line 333
     invoke-interface {v3, v5}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
     move-object v6, v9
@@ -490,7 +484,7 @@
 
     goto/16 :goto_0
 
-    .line 331
+    .line 327
     :cond_5
     :goto_5
     invoke-static {}, Lkotlin/collections/CollectionsKt;->emptyList()Ljava/util/List;
@@ -512,10 +506,10 @@
         }
     .end annotation
 
-    .line 166
+    .line 161
     new-instance p0, Landroidx/compose/ui/text/android/animation/Segment;
 
-    .line 168
+    .line 163
     invoke-virtual {p1}, Landroidx/compose/ui/text/android/LayoutHelper;->getLayout()Landroid/text/Layout;
 
     move-result-object v0
@@ -528,7 +522,7 @@
 
     move-result v2
 
-    .line 171
+    .line 166
     invoke-virtual {p1}, Landroidx/compose/ui/text/android/LayoutHelper;->getLayout()Landroid/text/Layout;
 
     move-result-object v0
@@ -537,7 +531,7 @@
 
     move-result v5
 
-    .line 172
+    .line 167
     invoke-virtual {p1}, Landroidx/compose/ui/text/android/LayoutHelper;->getLayout()Landroid/text/Layout;
 
     move-result-object p1
@@ -554,10 +548,10 @@
 
     move-object v0, p0
 
-    .line 166
+    .line 161
     invoke-direct/range {v0 .. v6}, Landroidx/compose/ui/text/android/animation/Segment;-><init>(IIIIII)V
 
-    .line 165
+    .line 160
     invoke-static {p0}, Lkotlin/collections/CollectionsKt;->listOf(Ljava/lang/Object;)Ljava/util/List;
 
     move-result-object p0
@@ -578,19 +572,19 @@
         }
     .end annotation
 
-    .line 203
+    .line 198
     new-instance p0, Ljava/util/ArrayList;
 
     invoke-direct {p0}, Ljava/util/ArrayList;-><init>()V
 
     check-cast p0, Ljava/util/List;
 
-    .line 204
+    .line 199
     invoke-virtual {p1}, Landroidx/compose/ui/text/android/LayoutHelper;->getLayout()Landroid/text/Layout;
 
     move-result-object v0
 
-    .line 205
+    .line 200
     invoke-virtual {p1}, Landroidx/compose/ui/text/android/LayoutHelper;->getLayout()Landroid/text/Layout;
 
     move-result-object p1
@@ -606,22 +600,22 @@
     :goto_0
     if-ge v2, p1, :cond_2
 
-    .line 207
+    .line 202
     new-instance v10, Landroidx/compose/ui/text/android/animation/Segment;
 
-    .line 208
+    .line 203
     invoke-virtual {v0, v2}, Landroid/text/Layout;->getLineStart(I)I
 
     move-result v4
 
-    .line 209
+    .line 204
     invoke-virtual {v0, v2}, Landroid/text/Layout;->getLineEnd(I)I
 
     move-result v5
 
     if-eqz p2, :cond_0
 
-    .line 210
+    .line 205
     invoke-virtual {v0, v2}, Landroid/text/Layout;->getLineLeft(I)F
 
     move-result v3
@@ -643,7 +637,7 @@
     :cond_0
     move v6, v1
 
-    .line 211
+    .line 206
     :goto_1
     invoke-virtual {v0, v2}, Landroid/text/Layout;->getLineTop(I)I
 
@@ -651,7 +645,7 @@
 
     if-eqz p2, :cond_1
 
-    .line 212
+    .line 207
     invoke-virtual {v0, v2}, Landroid/text/Layout;->getLineRight(I)F
 
     move-result v3
@@ -676,17 +670,17 @@
     :goto_2
     move v8, v3
 
-    .line 213
+    .line 208
     invoke-virtual {v0, v2}, Landroid/text/Layout;->getLineBottom(I)I
 
     move-result v9
 
     move-object v3, v10
 
-    .line 207
+    .line 202
     invoke-direct/range {v3 .. v9}, Landroidx/compose/ui/text/android/animation/Segment;-><init>(IIIIII)V
 
-    .line 206
+    .line 201
     invoke-interface {p0, v10}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
     add-int/lit8 v2, v2, 0x1
@@ -710,19 +704,19 @@
         }
     .end annotation
 
-    .line 178
+    .line 173
     new-instance p0, Ljava/util/ArrayList;
 
     invoke-direct {p0}, Ljava/util/ArrayList;-><init>()V
 
     check-cast p0, Ljava/util/List;
 
-    .line 179
+    .line 174
     invoke-virtual {p1}, Landroidx/compose/ui/text/android/LayoutHelper;->getLayout()Landroid/text/Layout;
 
     move-result-object v0
 
-    .line 180
+    .line 175
     invoke-virtual {p1}, Landroidx/compose/ui/text/android/LayoutHelper;->getParagraphCount()I
 
     move-result v1
@@ -734,42 +728,42 @@
     :goto_0
     if-ge v3, v1, :cond_0
 
-    .line 181
+    .line 176
     invoke-virtual {p1, v3}, Landroidx/compose/ui/text/android/LayoutHelper;->getParagraphStart(I)I
 
     move-result v5
 
-    .line 182
+    .line 177
     invoke-virtual {p1, v3}, Landroidx/compose/ui/text/android/LayoutHelper;->getParagraphEnd(I)I
 
     move-result v6
 
-    .line 183
+    .line 178
     invoke-static {v0, v5, v2}, Landroidx/compose/ui/text/android/LayoutCompatKt;->getLineForOffset(Landroid/text/Layout;IZ)I
 
     move-result v4
 
     const/4 v7, 0x1
 
-    .line 184
+    .line 179
     invoke-static {v0, v6, v7}, Landroidx/compose/ui/text/android/LayoutCompatKt;->getLineForOffset(Landroid/text/Layout;IZ)I
 
     move-result v7
 
-    .line 186
+    .line 181
     new-instance v11, Landroidx/compose/ui/text/android/animation/Segment;
 
-    .line 190
+    .line 185
     invoke-virtual {v0, v4}, Landroid/text/Layout;->getLineTop(I)I
 
     move-result v8
 
-    .line 191
+    .line 186
     invoke-virtual {v0}, Landroid/text/Layout;->getWidth()I
 
     move-result v9
 
-    .line 192
+    .line 187
     invoke-virtual {v0, v7}, Landroid/text/Layout;->getLineBottom(I)I
 
     move-result v10
@@ -778,10 +772,10 @@
 
     move-object v4, v11
 
-    .line 186
+    .line 181
     invoke-direct/range {v4 .. v10}, Landroidx/compose/ui/text/android/animation/Segment;-><init>(IIIIII)V
 
-    .line 185
+    .line 180
     invoke-interface {p0, v11}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
     add-int/lit8 v3, v3, 0x1
@@ -807,12 +801,12 @@
 
     move-object/from16 v0, p1
 
-    .line 224
+    .line 219
     invoke-virtual/range {p1 .. p1}, Landroidx/compose/ui/text/android/LayoutHelper;->getLayout()Landroid/text/Layout;
 
     move-result-object v1
 
-    .line 225
+    .line 220
     invoke-virtual {v1}, Landroid/text/Layout;->getPaint()Landroid/text/TextPaint;
 
     move-result-object v2
@@ -833,7 +827,7 @@
 
     float-to-int v2, v2
 
-    .line 226
+    .line 221
     sget-object v3, Landroidx/compose/ui/text/android/animation/SegmentType;->Word:Landroidx/compose/ui/text/android/animation/SegmentType;
 
     move-object/from16 v4, p0
@@ -842,7 +836,7 @@
 
     move-result-object v3
 
-    .line 320
+    .line 316
     invoke-interface {v3}, Ljava/util/List;->size()I
 
     move-result v4
@@ -859,7 +853,7 @@
 
     goto/16 :goto_5
 
-    .line 321
+    .line 317
     :cond_0
     new-instance v4, Ljava/util/ArrayList;
 
@@ -869,12 +863,12 @@
 
     const/4 v6, 0x0
 
-    .line 322
+    .line 318
     invoke-interface {v3, v6}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
     move-result-object v7
 
-    .line 324
+    .line 320
     invoke-static {v3}, Lkotlin/collections/CollectionsKt;->getLastIndex(Ljava/util/List;)I
 
     move-result v8
@@ -886,12 +880,12 @@
 
     add-int/lit8 v9, v9, 0x1
 
-    .line 325
+    .line 321
     invoke-interface {v3, v9}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
     move-result-object v10
 
-    .line 326
+    .line 322
     move-object v11, v10
 
     check-cast v11, Ljava/lang/Number;
@@ -906,12 +900,12 @@
 
     move-result v13
 
-    .line 227
+    .line 222
     invoke-static {v1, v13, v6}, Landroidx/compose/ui/text/android/LayoutCompatKt;->getLineForOffset(Landroid/text/Layout;IZ)I
 
     move-result v7
 
-    .line 228
+    .line 223
     invoke-virtual {v1, v7}, Landroid/text/Layout;->getParagraphDirection(I)I
 
     move-result v11
@@ -927,7 +921,7 @@
     :cond_1
     move v11, v6
 
-    .line 229
+    .line 224
     :goto_1
     invoke-virtual {v1, v13}, Landroid/text/Layout;->isRtlCharAt(I)Z
 
@@ -942,7 +936,7 @@
     :cond_2
     move v15, v6
 
-    .line 231
+    .line 226
     :goto_2
     invoke-virtual {v0, v13, v15, v6}, Landroidx/compose/ui/text/android/LayoutHelper;->getHorizontalPosition(IZZ)F
 
@@ -969,7 +963,7 @@
     :cond_3
     const/4 v7, 0x0
 
-    .line 238
+    .line 233
     :goto_3
     invoke-virtual {v0, v14, v7, v5}, Landroidx/compose/ui/text/android/LayoutHelper;->getHorizontalPosition(IZZ)F
 
@@ -989,12 +983,12 @@
 
     move v6, v15
 
-    .line 246
+    .line 241
     invoke-static {v6, v5}, Ljava/lang/Math;->min(II)I
 
     move-result v7
 
-    .line 247
+    .line 242
     invoke-static {v6, v5}, Ljava/lang/Math;->max(II)I
 
     move-result v5
@@ -1003,7 +997,7 @@
 
     if-eqz v14, :cond_5
 
-    .line 248
+    .line 243
     invoke-virtual {v1}, Landroid/text/Layout;->getText()Ljava/lang/CharSequence;
 
     move-result-object v6
@@ -1020,7 +1014,7 @@
 
     move/from16 v6, v16
 
-    .line 249
+    .line 244
     invoke-virtual {v1, v6}, Landroid/text/Layout;->getLineEnd(I)I
 
     move-result v15
@@ -1047,25 +1041,25 @@
 
     move v15, v7
 
-    .line 259
+    .line 254
     new-instance v5, Landroidx/compose/ui/text/android/animation/Segment;
 
-    .line 263
+    .line 258
     invoke-virtual {v1, v6}, Landroid/text/Layout;->getLineTop(I)I
 
     move-result v16
 
-    .line 265
+    .line 260
     invoke-virtual {v1, v6}, Landroid/text/Layout;->getLineBottom(I)I
 
     move-result v18
 
     move-object v12, v5
 
-    .line 259
+    .line 254
     invoke-direct/range {v12 .. v18}, Landroidx/compose/ui/text/android/animation/Segment;-><init>(IIIIII)V
 
-    .line 326
+    .line 322
     invoke-interface {v4, v5}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
     move-object v7, v10
@@ -1076,7 +1070,7 @@
 
     goto/16 :goto_0
 
-    .line 320
+    .line 316
     :cond_7
     :goto_5
     invoke-static {}, Lkotlin/collections/CollectionsKt;->emptyList()Ljava/util/List;
@@ -1101,7 +1095,7 @@
         }
     .end annotation
 
-    .line 80
+    .line 75
     new-instance p0, Landroidx/compose/ui/text/android/CharSequenceCharacterIterator;
 
     invoke-interface {p1}, Ljava/lang/CharSequence;->length()I
@@ -1112,27 +1106,27 @@
 
     invoke-direct {p0, p1, v1, v0}, Landroidx/compose/ui/text/android/CharSequenceCharacterIterator;-><init>(Ljava/lang/CharSequence;II)V
 
-    .line 82
+    const/4 p1, 0x1
+
+    .line 77
+    new-array p1, p1, [Ljava/lang/Integer;
+
     invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
-    move-result-object p1
+    move-result-object v0
 
-    const/4 v0, 0x1
+    aput-object v0, p1, v1
 
-    new-array v0, v0, [Ljava/lang/Integer;
-
-    aput-object p1, v0, v1
-
-    invoke-static {v0}, Lkotlin/collections/CollectionsKt;->mutableListOf([Ljava/lang/Object;)Ljava/util/List;
+    invoke-static {p1}, Lkotlin/collections/CollectionsKt;->mutableListOf([Ljava/lang/Object;)Ljava/util/List;
 
     move-result-object p1
 
-    .line 83
+    .line 78
     check-cast p0, Ljava/text/CharacterIterator;
 
     invoke-virtual {p2, p0}, Ljava/text/BreakIterator;->setText(Ljava/text/CharacterIterator;)V
 
-    .line 84
+    .line 79
     :goto_0
     invoke-virtual {p2}, Ljava/text/BreakIterator;->next()I
 
@@ -1142,7 +1136,7 @@
 
     if-eq p0, v0, :cond_0
 
-    .line 85
+    .line 80
     invoke-virtual {p2}, Ljava/text/BreakIterator;->current()I
 
     move-result p0
@@ -1175,25 +1169,17 @@
         }
     .end annotation
 
-    const-string v0, "layoutHelper"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string v0, "segmentType"
-
-    invoke-static {p2, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 98
+    .line 93
     invoke-virtual {p1}, Landroidx/compose/ui/text/android/LayoutHelper;->getLayout()Landroid/text/Layout;
 
     move-result-object v0
 
-    .line 99
+    .line 94
     invoke-virtual {v0}, Landroid/text/Layout;->getText()Ljava/lang/CharSequence;
 
     move-result-object v1
 
-    .line 101
+    .line 96
     sget-object v2, Landroidx/compose/ui/text/android/animation/SegmentBreaker$WhenMappings;->$EnumSwitchMapping$0:[I
 
     invoke-virtual {p2}, Landroidx/compose/ui/text/android/animation/SegmentType;->ordinal()I
@@ -1224,12 +1210,7 @@
 
     if-ne p2, p1, :cond_0
 
-    .line 119
-    const-string/jumbo p1, "text"
-
-    invoke-static {v1, p1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 120
+    .line 115
     invoke-static {}, Ljava/util/Locale;->getDefault()Ljava/util/Locale;
 
     move-result-object p1
@@ -1238,11 +1219,7 @@
 
     move-result-object p1
 
-    const-string p2, "getCharacterInstance(Locale.getDefault())"
-
-    invoke-static {p1, p2}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 118
+    .line 113
     invoke-direct {p0, v1, p1}, Landroidx/compose/ui/text/android/animation/SegmentBreaker;->breakWithBreakIterator(Ljava/lang/CharSequence;Ljava/text/BreakIterator;)Ljava/util/List;
 
     move-result-object p0
@@ -1256,7 +1233,7 @@
 
     throw p0
 
-    .line 117
+    .line 112
     :cond_1
     invoke-direct {p0, p1}, Landroidx/compose/ui/text/android/animation/SegmentBreaker;->breakInWords(Landroidx/compose/ui/text/android/LayoutHelper;)Ljava/util/List;
 
@@ -1264,21 +1241,21 @@
 
     goto :goto_2
 
-    .line 111
+    .line 106
     :cond_2
+    new-array p0, v3, [Ljava/lang/Integer;
+
     invoke-static {v4}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
-    move-result-object p0
+    move-result-object p1
 
-    new-array p1, v3, [Ljava/lang/Integer;
+    aput-object p1, p0, v4
 
-    aput-object p0, p1, v4
-
-    invoke-static {p1}, Lkotlin/collections/CollectionsKt;->mutableListOf([Ljava/lang/Object;)Ljava/util/List;
+    invoke-static {p0}, Lkotlin/collections/CollectionsKt;->mutableListOf([Ljava/lang/Object;)Ljava/util/List;
 
     move-result-object p0
 
-    .line 112
+    .line 107
     invoke-virtual {v0}, Landroid/text/Layout;->getLineCount()I
 
     move-result p1
@@ -1286,7 +1263,7 @@
     :goto_0
     if-ge v4, p1, :cond_5
 
-    .line 113
+    .line 108
     invoke-virtual {v0, v4}, Landroid/text/Layout;->getLineEnd(I)I
 
     move-result p2
@@ -1301,21 +1278,21 @@
 
     goto :goto_0
 
-    .line 104
+    .line 99
     :cond_3
+    new-array p0, v3, [Ljava/lang/Integer;
+
     invoke-static {v4}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
-    move-result-object p0
+    move-result-object p2
 
-    new-array p2, v3, [Ljava/lang/Integer;
+    aput-object p2, p0, v4
 
-    aput-object p0, p2, v4
-
-    invoke-static {p2}, Lkotlin/collections/CollectionsKt;->mutableListOf([Ljava/lang/Object;)Ljava/util/List;
+    invoke-static {p0}, Lkotlin/collections/CollectionsKt;->mutableListOf([Ljava/lang/Object;)Ljava/util/List;
 
     move-result-object p0
 
-    .line 105
+    .line 100
     invoke-virtual {p1}, Landroidx/compose/ui/text/android/LayoutHelper;->getParagraphCount()I
 
     move-result p2
@@ -1323,7 +1300,7 @@
     :goto_1
     if-ge v4, p2, :cond_5
 
-    .line 106
+    .line 101
     invoke-virtual {p1, v4}, Landroidx/compose/ui/text/android/LayoutHelper;->getParagraphEnd(I)I
 
     move-result v0
@@ -1338,11 +1315,15 @@
 
     goto :goto_1
 
-    .line 102
+    .line 97
     :cond_4
+    new-array p0, v2, [Ljava/lang/Integer;
+
     invoke-static {v4}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
-    move-result-object p0
+    move-result-object p1
+
+    aput-object p1, p0, v4
 
     invoke-interface {v1}, Ljava/lang/CharSequence;->length()I
 
@@ -1352,13 +1333,9 @@
 
     move-result-object p1
 
-    new-array p2, v2, [Ljava/lang/Integer;
+    aput-object p1, p0, v3
 
-    aput-object p0, p2, v4
-
-    aput-object p1, p2, v3
-
-    invoke-static {p2}, Lkotlin/collections/CollectionsKt;->listOf([Ljava/lang/Object;)Ljava/util/List;
+    invoke-static {p0}, Lkotlin/collections/CollectionsKt;->listOf([Ljava/lang/Object;)Ljava/util/List;
 
     move-result-object p0
 
@@ -1381,15 +1358,7 @@
         }
     .end annotation
 
-    const-string v0, "layoutHelper"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string v0, "segmentType"
-
-    invoke-static {p2, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 155
+    .line 150
     sget-object v0, Landroidx/compose/ui/text/android/animation/SegmentBreaker$WhenMappings;->$EnumSwitchMapping$0:[I
 
     invoke-virtual {p2}, Landroidx/compose/ui/text/android/animation/SegmentType;->ordinal()I
@@ -1418,7 +1387,7 @@
 
     if-ne p2, v0, :cond_0
 
-    .line 160
+    .line 155
     invoke-direct {p0, p1, p3}, Landroidx/compose/ui/text/android/animation/SegmentBreaker;->breakSegmentWithChar(Landroidx/compose/ui/text/android/LayoutHelper;Z)Ljava/util/List;
 
     move-result-object p0
@@ -1432,7 +1401,7 @@
 
     throw p0
 
-    .line 159
+    .line 154
     :cond_1
     invoke-direct {p0, p1, p3}, Landroidx/compose/ui/text/android/animation/SegmentBreaker;->breakSegmentWithWord(Landroidx/compose/ui/text/android/LayoutHelper;Z)Ljava/util/List;
 
@@ -1440,7 +1409,7 @@
 
     goto :goto_0
 
-    .line 158
+    .line 153
     :cond_2
     invoke-direct {p0, p1, p3}, Landroidx/compose/ui/text/android/animation/SegmentBreaker;->breakSegmentWithLine(Landroidx/compose/ui/text/android/LayoutHelper;Z)Ljava/util/List;
 
@@ -1448,7 +1417,7 @@
 
     goto :goto_0
 
-    .line 157
+    .line 152
     :cond_3
     invoke-direct {p0, p1}, Landroidx/compose/ui/text/android/animation/SegmentBreaker;->breakSegmentWithParagraph(Landroidx/compose/ui/text/android/LayoutHelper;)Ljava/util/List;
 
@@ -1456,7 +1425,7 @@
 
     goto :goto_0
 
-    .line 156
+    .line 151
     :cond_4
     invoke-direct {p0, p1}, Landroidx/compose/ui/text/android/animation/SegmentBreaker;->breakSegmentWithDocument(Landroidx/compose/ui/text/android/LayoutHelper;)Ljava/util/List;
 

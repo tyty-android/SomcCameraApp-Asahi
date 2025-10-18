@@ -45,7 +45,7 @@
 .method private constructor <init>()V
     .locals 0
 
-    .line 97
+    .line 99
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -78,7 +78,7 @@
         }
     .end annotation
 
-    .line 99
+    .line 101
     sget-object p0, Landroidx/compose/foundation/lazy/layout/LazySaveableStateHolder$Companion$saver$1;->INSTANCE:Landroidx/compose/foundation/lazy/layout/LazySaveableStateHolder$Companion$saver$1;
 
     check-cast p0, Lkotlin/jvm/functions/Function2;

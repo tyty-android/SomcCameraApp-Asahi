@@ -25,7 +25,7 @@
 .method private constructor <init>(Ljp/co/sony/mc/camera/interaction/TouchActionTranslator;)V
     .locals 0
 
-    .line 772
+    .line 679
     iput-object p1, p0, Ljp/co/sony/mc/camera/interaction/TouchActionTranslator$OverTriple;->this$0:Ljp/co/sony/mc/camera/interaction/TouchActionTranslator;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -46,7 +46,7 @@
 .method public handleMotionEvent(Landroid/view/MotionEvent;)V
     .locals 4
 
-    .line 775
+    .line 682
     invoke-virtual {p1}, Landroid/view/MotionEvent;->getActionMasked()I
 
     move-result v0
@@ -63,7 +63,7 @@
 
     return-void
 
-    .line 782
+    .line 689
     :cond_0
     invoke-virtual {p1}, Landroid/view/MotionEvent;->getPointerCount()I
 
@@ -71,7 +71,7 @@
 
     if-ne p1, v2, :cond_1
 
-    .line 783
+    .line 690
     iget-object p1, p0, Ljp/co/sony/mc/camera/interaction/TouchActionTranslator$OverTriple;->this$0:Ljp/co/sony/mc/camera/interaction/TouchActionTranslator;
 
     new-instance v0, Ljp/co/sony/mc/camera/interaction/TouchActionTranslator$DoubleDown;
@@ -85,7 +85,7 @@
     :cond_1
     return-void
 
-    .line 777
+    .line 684
     :cond_2
     iget-object p1, p0, Ljp/co/sony/mc/camera/interaction/TouchActionTranslator$OverTriple;->this$0:Ljp/co/sony/mc/camera/interaction/TouchActionTranslator;
 
@@ -95,7 +95,7 @@
 
     invoke-interface {p1}, Ljp/co/sony/mc/camera/interaction/TouchActionTranslator$TouchActionListener;->onOverTripleCanceled()V
 
-    .line 778
+    .line 685
     iget-object p1, p0, Ljp/co/sony/mc/camera/interaction/TouchActionTranslator$OverTriple;->this$0:Ljp/co/sony/mc/camera/interaction/TouchActionTranslator;
 
     new-instance v0, Ljp/co/sony/mc/camera/interaction/TouchActionTranslator$Idle;

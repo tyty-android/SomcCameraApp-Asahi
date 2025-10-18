@@ -21,7 +21,7 @@
 .method constructor <init>()V
     .locals 0
 
-    .line 3170
+    .line 3260
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -42,15 +42,15 @@
         }
     .end annotation
 
-    .line 3174
+    .line 3264
     check-cast p1, Ljp/co/sony/mc/camera/setting/CameraSettings;
 
-    .line 3175
-    invoke-static {p1}, Ljp/co/sony/mc/camera/setting/CameraSettings;->-$$Nest$mgetBaseZoomRatio(Ljp/co/sony/mc/camera/setting/CameraSettings;)Ljava/lang/Float;
+    .line 3265
+    invoke-static {p1}, Ljp/co/sony/mc/camera/setting/CameraSettings;->-$$Nest$mgetBokehStrength(Ljp/co/sony/mc/camera/setting/CameraSettings;)Ljava/lang/Integer;
 
     move-result-object p0
 
-    invoke-static {p1}, Ljp/co/sony/mc/camera/setting/CameraSettings;->-$$Nest$fgetmBaseZoomRatio(Ljp/co/sony/mc/camera/setting/CameraSettings;)Ljava/lang/Float;
+    invoke-static {p1}, Ljp/co/sony/mc/camera/setting/CameraSettings;->-$$Nest$fgetmBokehStrength(Ljp/co/sony/mc/camera/setting/CameraSettings;)Ljava/lang/Integer;
 
     move-result-object p1
 

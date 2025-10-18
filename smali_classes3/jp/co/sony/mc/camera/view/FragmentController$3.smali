@@ -25,7 +25,7 @@
 .method constructor <init>(Ljp/co/sony/mc/camera/view/FragmentController;)V
     .locals 0
 
-    .line 448
+    .line 460
     iput-object p1, p0, Ljp/co/sony/mc/camera/view/FragmentController$3;->this$0:Ljp/co/sony/mc/camera/view/FragmentController;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -38,7 +38,7 @@
 .method public run()V
     .locals 2
 
-    .line 451
+    .line 463
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/FragmentController$3;->this$0:Ljp/co/sony/mc/camera/view/FragmentController;
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/view/FragmentController;->-$$Nest$fgetmMessageDialogController(Ljp/co/sony/mc/camera/view/FragmentController;)Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController;
@@ -51,7 +51,7 @@
 
     if-nez v0, :cond_0
 
-    .line 452
+    .line 464
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/FragmentController$3;->this$0:Ljp/co/sony/mc/camera/view/FragmentController;
 
     sget-object v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->VIDEO_HDR_CAUTION:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;

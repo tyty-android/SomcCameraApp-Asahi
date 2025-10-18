@@ -5,12 +5,12 @@
 
 # annotations
 .annotation system Ldalvik/annotation/SourceDebugExtension;
-    value = "SMAP\nBackdropScaffold.kt\nKotlin\n*S Kotlin\n*F\n+ 1 BackdropScaffold.kt\nandroidx/compose/material/BackdropScaffoldDefaults\n+ 2 Dp.kt\nandroidx/compose/ui/unit/DpKt\n*L\n1#1,522:1\n154#2:523\n154#2:524\n154#2:525\n154#2:526\n*S KotlinDebug\n*F\n+ 1 BackdropScaffold.kt\nandroidx/compose/material/BackdropScaffoldDefaults\n*L\n507#1:523\n494#1:524\n499#1:525\n512#1:526\n*E\n"
+    value = "SMAP\nBackdropScaffold.kt\nKotlin\n*S Kotlin\n*F\n+ 1 BackdropScaffold.kt\nandroidx/compose/material/BackdropScaffoldDefaults\n+ 2 Dp.kt\nandroidx/compose/ui/unit/DpKt\n*L\n1#1,524:1\n154#2:525\n154#2:526\n154#2:527\n154#2:528\n*S KotlinDebug\n*F\n+ 1 BackdropScaffold.kt\nandroidx/compose/material/BackdropScaffoldDefaults\n*L\n509#1:525\n496#1:526\n501#1:527\n514#1:528\n*E\n"
 .end annotation
 
 .annotation runtime Lkotlin/Metadata;
     d1 = {
-        "\u0000$\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0008\n\u0002\u0018\u0002\n\u0002\u0008\u0003\n\u0002\u0018\u0002\n\u0002\u0008\u0003\u0008\u00c7\u0002\u0018\u00002\u00020\u0001B\u0007\u0008\u0002\u00a2\u0006\u0002\u0010\u0002R\u001c\u0010\u0003\u001a\u00020\u0004\u00f8\u0001\u0000\u00f8\u0001\u0001\u00f8\u0001\u0002\u00a2\u0006\n\n\u0002\u0010\u0007\u001a\u0004\u0008\u0005\u0010\u0006R\u001c\u0010\u0008\u001a\u00020\u0004\u00f8\u0001\u0000\u00f8\u0001\u0001\u00f8\u0001\u0002\u00a2\u0006\n\n\u0002\u0010\u0007\u001a\u0004\u0008\t\u0010\u0006R\u001c\u0010\n\u001a\u00020\u0004\u00f8\u0001\u0000\u00f8\u0001\u0001\u00f8\u0001\u0002\u00a2\u0006\n\n\u0002\u0010\u0007\u001a\u0004\u0008\u000b\u0010\u0006R\u001a\u0010\u000c\u001a\u00020\r8G\u00f8\u0001\u0000\u00f8\u0001\u0001\u00f8\u0001\u0002\u00a2\u0006\u0006\u001a\u0004\u0008\u000e\u0010\u000fR\u0011\u0010\u0010\u001a\u00020\u00118G\u00a2\u0006\u0006\u001a\u0004\u0008\u0012\u0010\u0013\u0082\u0002\u000f\n\u0002\u0008\u0019\n\u0005\u0008\u00a1\u001e0\u0001\n\u0002\u0008!\u00a8\u0006\u0014"
+        "\u0000$\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0008\n\u0002\u0018\u0002\n\u0002\u0008\u0003\n\u0002\u0018\u0002\n\u0002\u0008\u0003\u0008\u00c7\u0002\u0018\u00002\u00020\u0001B\u0007\u0008\u0002\u00a2\u0006\u0002\u0010\u0002R\u0019\u0010\u0003\u001a\u00020\u0004\u00f8\u0001\u0000\u00f8\u0001\u0001\u00a2\u0006\n\n\u0002\u0010\u0007\u001a\u0004\u0008\u0005\u0010\u0006R\u0019\u0010\u0008\u001a\u00020\u0004\u00f8\u0001\u0000\u00f8\u0001\u0001\u00a2\u0006\n\n\u0002\u0010\u0007\u001a\u0004\u0008\t\u0010\u0006R\u0019\u0010\n\u001a\u00020\u0004\u00f8\u0001\u0000\u00f8\u0001\u0001\u00a2\u0006\n\n\u0002\u0010\u0007\u001a\u0004\u0008\u000b\u0010\u0006R\u0017\u0010\u000c\u001a\u00020\r8G\u00f8\u0001\u0000\u00f8\u0001\u0001\u00a2\u0006\u0006\u001a\u0004\u0008\u000e\u0010\u000fR\u0011\u0010\u0010\u001a\u00020\u00118G\u00a2\u0006\u0006\u001a\u0004\u0008\u0012\u0010\u0013\u0082\u0002\u000b\n\u0005\u0008\u00a1\u001e0\u0001\n\u0002\u0008!\u00a8\u0006\u0014"
     }
     d2 = {
         "Landroidx/compose/material/BackdropScaffoldDefaults;",
@@ -71,36 +71,36 @@
 
     int-to-float v0, v0
 
-    .line 524
+    .line 526
     invoke-static {v0}, Landroidx/compose/ui/unit/Dp;->constructor-impl(F)F
 
     move-result v0
 
-    .line 494
+    .line 496
     sput v0, Landroidx/compose/material/BackdropScaffoldDefaults;->PeekHeight:F
 
     const/16 v0, 0x30
 
     int-to-float v0, v0
 
-    .line 525
+    .line 527
     invoke-static {v0}, Landroidx/compose/ui/unit/Dp;->constructor-impl(F)F
 
     move-result v0
 
-    .line 499
+    .line 501
     sput v0, Landroidx/compose/material/BackdropScaffoldDefaults;->HeaderHeight:F
 
     const/4 v0, 0x1
 
     int-to-float v0, v0
 
-    .line 526
+    .line 528
     invoke-static {v0}, Landroidx/compose/ui/unit/Dp;->constructor-impl(F)F
 
     move-result v0
 
-    .line 512
+    .line 514
     sput v0, Landroidx/compose/material/BackdropScaffoldDefaults;->FrontLayerElevation:F
 
     return-void
@@ -109,7 +109,7 @@
 .method private constructor <init>()V
     .locals 0
 
-    .line 489
+    .line 491
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -120,7 +120,7 @@
 .method public final getFrontLayerElevation-D9Ej5fM()F
     .locals 0
 
-    .line 512
+    .line 514
     sget p0, Landroidx/compose/material/BackdropScaffoldDefaults;->FrontLayerElevation:F
 
     return p0
@@ -133,7 +133,7 @@
 
     invoke-interface {p1, p0}, Landroidx/compose/runtime/Composer;->startReplaceableGroup(I)V
 
-    const-string v0, "C517@20693L6:BackdropScaffold.kt#jmzs0o"
+    const-string v0, "C519@20739L6:BackdropScaffold.kt#jmzs0o"
 
     invoke-static {p1, v0}, Landroidx/compose/runtime/ComposerKt;->sourceInformation(Landroidx/compose/runtime/Composer;Ljava/lang/String;)V
 
@@ -145,9 +145,9 @@
 
     const/4 v0, -0x1
 
-    const-string v1, "androidx.compose.material.BackdropScaffoldDefaults.<get-frontLayerScrimColor> (BackdropScaffold.kt:517)"
+    const-string v1, "androidx.compose.material.BackdropScaffoldDefaults.<get-frontLayerScrimColor> (BackdropScaffold.kt:519)"
 
-    .line 518
+    .line 520
     invoke-static {p0, p2, v0, v1}, Landroidx/compose/runtime/ComposerKt;->traceEventStart(IIILjava/lang/String;)V
 
     :cond_0
@@ -200,7 +200,7 @@
 
     invoke-interface {p1, p0}, Landroidx/compose/runtime/Composer;->startReplaceableGroup(I)V
 
-    const-string v0, "C505@20342L6:BackdropScaffold.kt#jmzs0o"
+    const-string v0, "C507@20388L6:BackdropScaffold.kt#jmzs0o"
 
     invoke-static {p1, v0}, Landroidx/compose/runtime/ComposerKt;->sourceInformation(Landroidx/compose/runtime/Composer;Ljava/lang/String;)V
 
@@ -212,9 +212,9 @@
 
     const/4 v0, -0x1
 
-    const-string v1, "androidx.compose.material.BackdropScaffoldDefaults.<get-frontLayerShape> (BackdropScaffold.kt:505)"
+    const-string v1, "androidx.compose.material.BackdropScaffoldDefaults.<get-frontLayerShape> (BackdropScaffold.kt:507)"
 
-    .line 506
+    .line 508
     invoke-static {p0, p2, v0, v1}, Landroidx/compose/runtime/ComposerKt;->traceEventStart(IIILjava/lang/String;)V
 
     :cond_0
@@ -234,22 +234,22 @@
 
     int-to-float p0, p0
 
-    .line 523
+    .line 525
     invoke-static {p0}, Landroidx/compose/ui/unit/Dp;->constructor-impl(F)F
 
     move-result p2
 
-    .line 507
+    .line 509
     invoke-static {p2}, Landroidx/compose/foundation/shape/CornerSizeKt;->CornerSize-0680j_4(F)Landroidx/compose/foundation/shape/CornerSize;
 
     move-result-object v1
 
-    .line 523
+    .line 525
     invoke-static {p0}, Landroidx/compose/ui/unit/Dp;->constructor-impl(F)F
 
     move-result p0
 
-    .line 507
+    .line 509
     invoke-static {p0}, Landroidx/compose/foundation/shape/CornerSizeKt;->CornerSize-0680j_4(F)Landroidx/compose/foundation/shape/CornerSize;
 
     move-result-object v2
@@ -285,7 +285,7 @@
 .method public final getHeaderHeight-D9Ej5fM()F
     .locals 0
 
-    .line 499
+    .line 501
     sget p0, Landroidx/compose/material/BackdropScaffoldDefaults;->HeaderHeight:F
 
     return p0
@@ -294,7 +294,7 @@
 .method public final getPeekHeight-D9Ej5fM()F
     .locals 0
 
-    .line 494
+    .line 496
     sget p0, Landroidx/compose/material/BackdropScaffoldDefaults;->PeekHeight:F
 
     return p0

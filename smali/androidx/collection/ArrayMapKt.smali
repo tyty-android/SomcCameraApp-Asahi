@@ -4,16 +4,7 @@
 
 
 # annotations
-.annotation system Ldalvik/annotation/SourceDebugExtension;
-    value = "SMAP\nArrayMap.kt\nKotlin\n*S Kotlin\n*F\n+ 1 ArrayMap.kt\nandroidx/collection/ArrayMapKt\n*L\n1#1,38:1\n*E\n"
-.end annotation
-
 .annotation runtime Lkotlin/Metadata;
-    bv = {
-        0x1,
-        0x0,
-        0x3
-    }
     d1 = {
         "\u0000\u0016\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0003\n\u0002\u0010\u0011\n\u0002\u0018\u0002\n\u0002\u0008\u0002\u001a!\u0010\u0000\u001a\u000e\u0012\u0004\u0012\u0002H\u0002\u0012\u0004\u0012\u0002H\u00030\u0001\"\u0004\u0008\u0000\u0010\u0002\"\u0004\u0008\u0001\u0010\u0003H\u0086\u0008\u001aO\u0010\u0000\u001a\u000e\u0012\u0004\u0012\u0002H\u0002\u0012\u0004\u0012\u0002H\u00030\u0001\"\u0004\u0008\u0000\u0010\u0002\"\u0004\u0008\u0001\u0010\u00032*\u0010\u0004\u001a\u0016\u0012\u0012\u0008\u0001\u0012\u000e\u0012\u0004\u0012\u0002H\u0002\u0012\u0004\u0012\u0002H\u00030\u00060\u0005\"\u000e\u0012\u0004\u0012\u0002H\u0002\u0012\u0004\u0012\u0002H\u00030\u0006\u00a2\u0006\u0002\u0010\u0007\u00a8\u0006\u0008"
     }
@@ -26,14 +17,15 @@
         "",
         "Lkotlin/Pair;",
         "([Lkotlin/Pair;)Landroidx/collection/ArrayMap;",
-        "collection-ktx"
+        "collection"
     }
     k = 0x2
     mv = {
         0x1,
-        0x1,
-        0xd
+        0x8,
+        0x0
     }
+    xi = 0x30
 .end annotation
 
 
@@ -52,7 +44,7 @@
         }
     .end annotation
 
-    .line 22
+    .line 26
     new-instance v0, Landroidx/collection/ArrayMap;
 
     invoke-direct {v0}, Landroidx/collection/ArrayMap;-><init>()V
@@ -78,16 +70,16 @@
 
     const-string v0, "pairs"
 
-    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkParameterIsNotNull(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 32
+    .line 39
     new-instance v0, Landroidx/collection/ArrayMap;
 
     array-length v1, p0
 
     invoke-direct {v0, v1}, Landroidx/collection/ArrayMap;-><init>(I)V
 
-    .line 33
+    .line 40
     array-length v1, p0
 
     const/4 v2, 0x0
@@ -97,7 +89,7 @@
 
     aget-object v3, p0, v2
 
-    .line 34
+    .line 41
     move-object v4, v0
 
     check-cast v4, Ljava/util/Map;

@@ -27,7 +27,7 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/SourceDebugExtension;
-    value = "SMAP\nSwipeable.kt\nKotlin\n*S Kotlin\n*F\n+ 1 Swipeable.kt\nandroidx/compose/material/SwipeableKt$rememberSwipeableStateFor$2\n+ 2 Effects.kt\nandroidx/compose/runtime/DisposableEffectScope\n*L\n1#1,890:1\n63#2,5:891\n*S KotlinDebug\n*F\n+ 1 Swipeable.kt\nandroidx/compose/material/SwipeableKt$rememberSwipeableStateFor$2\n*L\n520#1:891,5\n*E\n"
+    value = "SMAP\nSwipeable.kt\nKotlin\n*S Kotlin\n*F\n+ 1 Swipeable.kt\nandroidx/compose/material/SwipeableKt$rememberSwipeableStateFor$2\n+ 2 Effects.kt\nandroidx/compose/runtime/DisposableEffectScope\n*L\n1#1,908:1\n64#2,5:909\n*S KotlinDebug\n*F\n+ 1 Swipeable.kt\nandroidx/compose/material/SwipeableKt$rememberSwipeableStateFor$2\n*L\n528#1:909,5\n*E\n"
 .end annotation
 
 .annotation runtime Lkotlin/Metadata;
@@ -130,11 +130,7 @@
 .method public final invoke(Landroidx/compose/runtime/DisposableEffectScope;)Landroidx/compose/runtime/DisposableEffectResult;
     .locals 1
 
-    const-string v0, "$this$DisposableEffect"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 516
+    .line 524
     iget-object p1, p0, Landroidx/compose/material/SwipeableKt$rememberSwipeableStateFor$2;->$value:Ljava/lang/Object;
 
     iget-object v0, p0, Landroidx/compose/material/SwipeableKt$rememberSwipeableStateFor$2;->$swipeableState:Landroidx/compose/material/SwipeableState;
@@ -149,7 +145,7 @@
 
     if-nez p1, :cond_0
 
-    .line 517
+    .line 525
     iget-object p1, p0, Landroidx/compose/material/SwipeableKt$rememberSwipeableStateFor$2;->$onValueChange:Lkotlin/jvm/functions/Function1;
 
     iget-object v0, p0, Landroidx/compose/material/SwipeableKt$rememberSwipeableStateFor$2;->$swipeableState:Landroidx/compose/material/SwipeableState;
@@ -160,7 +156,7 @@
 
     invoke-interface {p1, v0}, Lkotlin/jvm/functions/Function1;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 518
+    .line 526
     iget-object p0, p0, Landroidx/compose/material/SwipeableKt$rememberSwipeableStateFor$2;->$forceAnimationCheck:Landroidx/compose/runtime/MutableState;
 
     invoke-interface {p0}, Landroidx/compose/runtime/MutableState;->getValue()Ljava/lang/Object;
@@ -181,7 +177,7 @@
 
     invoke-interface {p0, p1}, Landroidx/compose/runtime/MutableState;->setValue(Ljava/lang/Object;)V
 
-    .line 891
+    .line 909
     :cond_0
     new-instance p0, Landroidx/compose/material/SwipeableKt$rememberSwipeableStateFor$2$invoke$$inlined$onDispose$1;
 
@@ -195,7 +191,7 @@
 .method public bridge synthetic invoke(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
 
-    .line 515
+    .line 523
     check-cast p1, Landroidx/compose/runtime/DisposableEffectScope;
 
     invoke-virtual {p0, p1}, Landroidx/compose/material/SwipeableKt$rememberSwipeableStateFor$2;->invoke(Landroidx/compose/runtime/DisposableEffectScope;)Landroidx/compose/runtime/DisposableEffectResult;

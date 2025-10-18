@@ -25,10 +25,10 @@
 .method constructor <init>(Ljp/co/sony/mc/camera/view/FragmentController;)V
     .locals 0
 
-    .line 8198
+    .line 8474
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 8199
+    .line 8475
     iput-object p1, p0, Ljp/co/sony/mc/camera/view/FragmentController$AutoFlashListenerImpl;->mController:Ljp/co/sony/mc/camera/view/FragmentController;
 
     return-void
@@ -39,7 +39,7 @@
 .method public onAutoFlashChanged(Z)V
     .locals 0
 
-    .line 8204
+    .line 8480
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/FragmentController$AutoFlashListenerImpl;->mController:Ljp/co/sony/mc/camera/view/FragmentController;
 
     invoke-static {p0}, Ljp/co/sony/mc/camera/view/FragmentController;->-$$Nest$fgetmCameraEventNotifier(Ljp/co/sony/mc/camera/view/FragmentController;)Ljp/co/sony/mc/camera/view/CameraEventListener;

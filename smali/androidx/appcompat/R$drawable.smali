@@ -170,27 +170,27 @@
 
 .field public static final abc_textfield_search_material:I = 0x7f080075
 
-.field public static final btn_checkbox_checked_mtrl:I = 0x7f08008a
+.field public static final btn_checkbox_checked_mtrl:I = 0x7f080082
 
-.field public static final btn_checkbox_checked_to_unchecked_mtrl_animation:I = 0x7f08008b
+.field public static final btn_checkbox_checked_to_unchecked_mtrl_animation:I = 0x7f080083
 
-.field public static final btn_checkbox_unchecked_mtrl:I = 0x7f08008c
+.field public static final btn_checkbox_unchecked_mtrl:I = 0x7f080084
 
-.field public static final btn_checkbox_unchecked_to_checked_mtrl_animation:I = 0x7f08008d
+.field public static final btn_checkbox_unchecked_to_checked_mtrl_animation:I = 0x7f080085
 
-.field public static final btn_radio_off_mtrl:I = 0x7f08008e
+.field public static final btn_radio_off_mtrl:I = 0x7f080086
 
-.field public static final btn_radio_off_to_on_mtrl_animation:I = 0x7f08008f
+.field public static final btn_radio_off_to_on_mtrl_animation:I = 0x7f080087
 
-.field public static final btn_radio_on_mtrl:I = 0x7f080090
+.field public static final btn_radio_on_mtrl:I = 0x7f080088
 
-.field public static final btn_radio_on_to_off_mtrl_animation:I = 0x7f080091
+.field public static final btn_radio_on_to_off_mtrl_animation:I = 0x7f080089
 
-.field public static final test_level_drawable:I = 0x7f080443
+.field public static final test_level_drawable:I = 0x7f08041a
 
-.field public static final tooltip_frame_dark:I = 0x7f080444
+.field public static final tooltip_frame_dark:I = 0x7f08041b
 
-.field public static final tooltip_frame_light:I = 0x7f080445
+.field public static final tooltip_frame_light:I = 0x7f08041c
 
 
 # direct methods

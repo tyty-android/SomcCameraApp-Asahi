@@ -11,19 +11,19 @@
     d2 = {
         "Ljp/co/sony/mc/camera/rtmp/LiveEventDetailDataRequestCallback;",
         "",
-        "onRequestError",
-        "",
-        "code",
-        "Ljp/co/sony/mc/camera/rtmp/ErrCode;",
         "onSuccess",
+        "",
         "eventData",
         "Ljp/co/sony/mc/camera/rtmp/YouTubeEventData;",
+        "onRequestError",
+        "code",
+        "Ljp/co/sony/mc/camera/rtmp/ErrCode;",
         "SomcCamera_release"
     }
     k = 0x1
     mv = {
-        0x1,
-        0x9,
+        0x2,
+        0x0,
         0x0
     }
     xi = 0x30

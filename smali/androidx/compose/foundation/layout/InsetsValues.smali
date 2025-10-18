@@ -40,6 +40,10 @@
 .end annotation
 
 
+# static fields
+.field public static final $stable:I
+
+
 # instance fields
 .field private final bottom:I
 
@@ -51,13 +55,19 @@
 
 
 # direct methods
+.method static constructor <clinit>()V
+    .locals 0
+
+    return-void
+.end method
+
 .method public constructor <init>(IIII)V
     .locals 0
 
-    .line 392
+    .line 394
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 393
+    .line 395
     iput p1, p0, Landroidx/compose/foundation/layout/InsetsValues;->left:I
 
     iput p2, p0, Landroidx/compose/foundation/layout/InsetsValues;->top:I
@@ -80,7 +90,7 @@
 
     return v0
 
-    .line 398
+    .line 400
     :cond_0
     instance-of v1, p1, Landroidx/compose/foundation/layout/InsetsValues;
 
@@ -90,7 +100,7 @@
 
     return v2
 
-    .line 402
+    .line 404
     :cond_1
     iget v1, p0, Landroidx/compose/foundation/layout/InsetsValues;->left:I
 
@@ -100,21 +110,21 @@
 
     if-ne v1, v3, :cond_2
 
-    .line 403
+    .line 405
     iget v1, p0, Landroidx/compose/foundation/layout/InsetsValues;->top:I
 
     iget v3, p1, Landroidx/compose/foundation/layout/InsetsValues;->top:I
 
     if-ne v1, v3, :cond_2
 
-    .line 404
+    .line 406
     iget v1, p0, Landroidx/compose/foundation/layout/InsetsValues;->right:I
 
     iget v3, p1, Landroidx/compose/foundation/layout/InsetsValues;->right:I
 
     if-ne v1, v3, :cond_2
 
-    .line 405
+    .line 407
     iget p0, p0, Landroidx/compose/foundation/layout/InsetsValues;->bottom:I
 
     iget p1, p1, Landroidx/compose/foundation/layout/InsetsValues;->bottom:I
@@ -133,7 +143,7 @@
 .method public final getBottom()I
     .locals 0
 
-    .line 393
+    .line 395
     iget p0, p0, Landroidx/compose/foundation/layout/InsetsValues;->bottom:I
 
     return p0
@@ -142,7 +152,7 @@
 .method public final getLeft()I
     .locals 0
 
-    .line 393
+    .line 395
     iget p0, p0, Landroidx/compose/foundation/layout/InsetsValues;->left:I
 
     return p0
@@ -151,7 +161,7 @@
 .method public final getRight()I
     .locals 0
 
-    .line 393
+    .line 395
     iget p0, p0, Landroidx/compose/foundation/layout/InsetsValues;->right:I
 
     return p0
@@ -160,7 +170,7 @@
 .method public final getTop()I
     .locals 0
 
-    .line 393
+    .line 395
     iget p0, p0, Landroidx/compose/foundation/layout/InsetsValues;->top:I
 
     return p0
@@ -169,26 +179,26 @@
 .method public hashCode()I
     .locals 2
 
-    .line 409
+    .line 411
     iget v0, p0, Landroidx/compose/foundation/layout/InsetsValues;->left:I
 
     mul-int/lit8 v0, v0, 0x1f
 
-    .line 410
+    .line 412
     iget v1, p0, Landroidx/compose/foundation/layout/InsetsValues;->top:I
 
     add-int/2addr v0, v1
 
     mul-int/lit8 v0, v0, 0x1f
 
-    .line 411
+    .line 413
     iget v1, p0, Landroidx/compose/foundation/layout/InsetsValues;->right:I
 
     add-int/2addr v0, v1
 
     mul-int/lit8 v0, v0, 0x1f
 
-    .line 412
+    .line 414
     iget p0, p0, Landroidx/compose/foundation/layout/InsetsValues;->bottom:I
 
     add-int/2addr v0, p0
@@ -199,7 +209,7 @@
 .method public toString()Ljava/lang/String;
     .locals 2
 
-    .line 417
+    .line 419
     new-instance v0, Ljava/lang/StringBuilder;
 
     const-string v1, "InsetsValues(left="

@@ -22,7 +22,7 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/SourceDebugExtension;
-    value = "SMAP\nDelegates.kt\nKotlin\n*S Kotlin\n*F\n+ 1 Delegates.kt\nkotlin/properties/Delegates$observable$1\n+ 2 AbsZoomRuler.kt\njp/co/sony/mc/camera/view/widget/AbsZoomRuler\n*L\n1#1,73:1\n54#2,3:74\n*E\n"
+    value = "SMAP\nDelegates.kt\nKotlin\n*S Kotlin\n*F\n+ 1 Delegates.kt\nkotlin/properties/Delegates$observable$1\n+ 2 AbsZoomRuler.kt\njp/co/sony/mc/camera/view/widget/AbsZoomRuler\n*L\n1#1,34:1\n54#2,3:35\n*E\n"
 .end annotation
 
 .annotation runtime Lkotlin/Metadata;
@@ -43,8 +43,8 @@
     }
     k = 0x1
     mv = {
-        0x1,
-        0x9,
+        0x2,
+        0x0,
         0x0
     }
     xi = 0x30
@@ -97,12 +97,12 @@
 
     invoke-virtual {p2}, Ljava/lang/Number;->intValue()I
 
-    .line 74
+    .line 35
     iget-object p2, p0, Ljp/co/sony/mc/camera/view/widget/AbsZoomRuler$special$$inlined$observable$2;->this$0:Ljp/co/sony/mc/camera/view/widget/AbsZoomRuler;
 
     invoke-virtual {p2}, Ljp/co/sony/mc/camera/view/widget/AbsZoomRuler;->invalidate()V
 
-    .line 75
+    .line 36
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/widget/AbsZoomRuler$special$$inlined$observable$2;->this$0:Ljp/co/sony/mc/camera/view/widget/AbsZoomRuler;
 
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/view/widget/AbsZoomRuler;->getMax()I

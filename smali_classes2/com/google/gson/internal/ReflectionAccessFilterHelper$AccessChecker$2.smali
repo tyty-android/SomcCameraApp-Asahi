@@ -20,7 +20,7 @@
 
     const/4 v0, 0x0
 
-    .line 89
+    .line 108
     invoke-direct {p0, v0}, Lcom/google/gson/internal/ReflectionAccessFilterHelper$AccessChecker;-><init>(Lcom/google/gson/internal/ReflectionAccessFilterHelper$1;)V
 
     return-void

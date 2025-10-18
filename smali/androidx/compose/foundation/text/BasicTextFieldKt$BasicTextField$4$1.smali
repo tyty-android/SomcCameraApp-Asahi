@@ -118,7 +118,7 @@
 .method public bridge synthetic invoke(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
 
-    .line 163
+    .line 168
     check-cast p1, Landroidx/compose/ui/text/input/TextFieldValue;
 
     invoke-virtual {p0, p1}, Landroidx/compose/foundation/text/BasicTextFieldKt$BasicTextField$4$1;->invoke(Landroidx/compose/ui/text/input/TextFieldValue;)V
@@ -131,16 +131,12 @@
 .method public final invoke(Landroidx/compose/ui/text/input/TextFieldValue;)V
     .locals 3
 
-    const-string v0, "newTextFieldValueState"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 164
+    .line 169
     iget-object v0, p0, Landroidx/compose/foundation/text/BasicTextFieldKt$BasicTextField$4$1;->$textFieldValueState$delegate:Landroidx/compose/runtime/MutableState;
 
     invoke-static {v0, p1}, Landroidx/compose/foundation/text/BasicTextFieldKt;->access$BasicTextField$lambda$3(Landroidx/compose/runtime/MutableState;Landroidx/compose/ui/text/input/TextFieldValue;)V
 
-    .line 166
+    .line 171
     iget-object v0, p0, Landroidx/compose/foundation/text/BasicTextFieldKt$BasicTextField$4$1;->$lastTextValue$delegate:Landroidx/compose/runtime/MutableState;
 
     invoke-static {v0}, Landroidx/compose/foundation/text/BasicTextFieldKt;->access$BasicTextField$lambda$6(Landroidx/compose/runtime/MutableState;)Ljava/lang/String;
@@ -157,7 +153,7 @@
 
     xor-int/lit8 v0, v0, 0x1
 
-    .line 167
+    .line 172
     iget-object v1, p0, Landroidx/compose/foundation/text/BasicTextFieldKt$BasicTextField$4$1;->$lastTextValue$delegate:Landroidx/compose/runtime/MutableState;
 
     invoke-virtual {p1}, Landroidx/compose/ui/text/input/TextFieldValue;->getText()Ljava/lang/String;
@@ -168,7 +164,7 @@
 
     if-eqz v0, :cond_0
 
-    .line 170
+    .line 175
     iget-object p0, p0, Landroidx/compose/foundation/text/BasicTextFieldKt$BasicTextField$4$1;->$onValueChange:Lkotlin/jvm/functions/Function1;
 
     invoke-virtual {p1}, Landroidx/compose/ui/text/input/TextFieldValue;->getText()Ljava/lang/String;

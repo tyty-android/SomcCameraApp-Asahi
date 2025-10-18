@@ -34,8 +34,8 @@
     }
     k = 0x1
     mv = {
-        0x1,
-        0x9,
+        0x2,
+        0x0,
         0x0
     }
     xi = 0x30
@@ -90,11 +90,11 @@
     .line 41
     new-array v0, v0, [Ljava/lang/Class;
 
-    const-class v1, Landroid/app/Activity;
+    const/4 v1, 0x0
 
-    const/4 v2, 0x0
+    const-class v2, Landroid/app/Activity;
 
-    aput-object v1, v0, v2
+    aput-object v2, v0, v1
 
     invoke-virtual {p1, v0}, Ljava/lang/Class;->getConstructor([Ljava/lang/Class;)Ljava/lang/reflect/Constructor;
 

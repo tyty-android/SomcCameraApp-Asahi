@@ -53,7 +53,7 @@
     f = "Scrollable.kt"
     i = {}
     l = {
-        0x1f4
+        0x34c
     }
     m = "invokeSuspend"
     n = {}
@@ -195,7 +195,7 @@
 
     move-result-object v0
 
-    .line 488
+    .line 831
     iget v1, p0, Landroidx/compose/foundation/gestures/ScrollingLogic$doFlingAnimation$2;->label:I
 
     const/4 v2, 0x1
@@ -238,7 +238,7 @@
 
     check-cast p1, Landroidx/compose/foundation/gestures/ScrollScope;
 
-    .line 489
+    .line 832
     new-instance v1, Landroidx/compose/foundation/gestures/ScrollingLogic$doFlingAnimation$2$outerScopeScroll$1;
 
     iget-object v3, p0, Landroidx/compose/foundation/gestures/ScrollingLogic$doFlingAnimation$2;->this$0:Landroidx/compose/foundation/gestures/ScrollingLogic;
@@ -247,29 +247,29 @@
 
     check-cast v1, Lkotlin/jvm/functions/Function1;
 
-    .line 492
+    .line 835
     new-instance p1, Landroidx/compose/foundation/gestures/ScrollingLogic$doFlingAnimation$2$scope$1;
 
     iget-object v3, p0, Landroidx/compose/foundation/gestures/ScrollingLogic$doFlingAnimation$2;->this$0:Landroidx/compose/foundation/gestures/ScrollingLogic;
 
     invoke-direct {p1, v3, v1}, Landroidx/compose/foundation/gestures/ScrollingLogic$doFlingAnimation$2$scope$1;-><init>(Landroidx/compose/foundation/gestures/ScrollingLogic;Lkotlin/jvm/functions/Function1;)V
 
-    .line 497
+    .line 841
     iget-object v3, p0, Landroidx/compose/foundation/gestures/ScrollingLogic$doFlingAnimation$2;->this$0:Landroidx/compose/foundation/gestures/ScrollingLogic;
 
     iget-object v1, p0, Landroidx/compose/foundation/gestures/ScrollingLogic$doFlingAnimation$2;->$result:Lkotlin/jvm/internal/Ref$LongRef;
 
     iget-wide v4, p0, Landroidx/compose/foundation/gestures/ScrollingLogic$doFlingAnimation$2;->$available:J
 
-    .line 498
-    invoke-virtual {v3}, Landroidx/compose/foundation/gestures/ScrollingLogic;->getFlingBehavior()Landroidx/compose/foundation/gestures/FlingBehavior;
+    .line 842
+    invoke-static {v3}, Landroidx/compose/foundation/gestures/ScrollingLogic;->access$getFlingBehavior$p(Landroidx/compose/foundation/gestures/ScrollingLogic;)Landroidx/compose/foundation/gestures/FlingBehavior;
 
     move-result-object v6
 
-    .line 499
+    .line 843
     iget-wide v7, v1, Lkotlin/jvm/internal/Ref$LongRef;->element:J
 
-    .line 500
+    .line 844
     check-cast p1, Landroidx/compose/foundation/gestures/ScrollScope;
 
     invoke-virtual {v3, v4, v5}, Landroidx/compose/foundation/gestures/ScrollingLogic;->toFloat-TH1AsA0(J)F
@@ -316,14 +316,14 @@
 
     move-result p0
 
-    .line 499
+    .line 843
     invoke-virtual {v3, v0, v1, p0}, Landroidx/compose/foundation/gestures/ScrollingLogic;->update-QWom1Mo(JF)J
 
     move-result-wide p0
 
     iput-wide p0, v2, Lkotlin/jvm/internal/Ref$LongRef;->element:J
 
-    .line 504
+    .line 848
     sget-object p0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
 
     return-object p0

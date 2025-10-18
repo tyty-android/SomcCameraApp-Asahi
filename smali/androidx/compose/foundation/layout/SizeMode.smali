@@ -60,7 +60,7 @@
 .method static constructor <clinit>()V
     .locals 3
 
-    .line 860
+    .line 863
     new-instance v0, Landroidx/compose/foundation/layout/SizeMode;
 
     const-string v1, "Wrap"
@@ -71,7 +71,7 @@
 
     sput-object v0, Landroidx/compose/foundation/layout/SizeMode;->Wrap:Landroidx/compose/foundation/layout/SizeMode;
 
-    .line 866
+    .line 869
     new-instance v0, Landroidx/compose/foundation/layout/SizeMode;
 
     const-string v1, "Expand"
@@ -99,7 +99,7 @@
         }
     .end annotation
 
-    .line 855
+    .line 858
     invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
     return-void

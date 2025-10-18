@@ -66,7 +66,7 @@
 .method public bridge synthetic invoke()Ljava/lang/Object;
     .locals 0
 
-    .line 119
+    .line 145
     invoke-virtual {p0}, Landroidx/compose/foundation/text/selection/SelectionManager$modifier$1;->invoke()V
 
     sget-object p0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
@@ -77,7 +77,7 @@
 .method public final invoke()V
     .locals 0
 
-    .line 119
+    .line 145
     iget-object p0, p0, Landroidx/compose/foundation/text/selection/SelectionManager$modifier$1;->this$0:Landroidx/compose/foundation/text/selection/SelectionManager;
 
     invoke-virtual {p0}, Landroidx/compose/foundation/text/selection/SelectionManager;->onRelease()V

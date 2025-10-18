@@ -26,21 +26,21 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeSeamlessRangeBindingImpl;->sViewsWithIds:Landroid/util/SparseIntArray;
 
-    const v1, 0x7f0900a3
+    const v1, 0x7f0900a4
 
     const/4 v2, 0x3
 
     .line 17
     invoke-virtual {v0, v1, v2}, Landroid/util/SparseIntArray;->put(II)V
 
-    const v1, 0x7f09027e
+    const v1, 0x7f090279
 
     const/4 v2, 0x4
 
     .line 18
     invoke-virtual {v0, v1, v2}, Landroid/util/SparseIntArray;->put(II)V
 
-    const v1, 0x7f09027a
+    const v1, 0x7f090275
 
     const/4 v2, 0x5
 
@@ -426,7 +426,7 @@
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    const/16 p1, 0xf
+    const/16 p1, 0x11
 
     .line 84
     invoke-virtual {p0, p1}, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeSeamlessRangeBindingImpl;->notifyPropertyChanged(I)V
@@ -451,7 +451,7 @@
 .method public setVariable(ILjava/lang/Object;)Z
     .locals 1
 
-    const/16 v0, 0xf
+    const/16 v0, 0x11
 
     if-ne v0, p1, :cond_0
 

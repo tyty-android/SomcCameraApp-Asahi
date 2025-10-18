@@ -18,67 +18,68 @@
 
 .annotation runtime Lkotlin/Metadata;
     d1 = {
-        "\u0000P\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0010\u0008\n\u0002\u0008\t\n\u0002\u0010\u000e\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0002\n\u0002\u0008\u0005\n\u0002\u0010\u000b\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u000b\n\u0002\u0010\u0017\n\u0002\u0008\u0008\u0008\u0002\u0018\u00002\u00020\u0001B\u0005\u00a2\u0006\u0002\u0010\u0002J\u0008\u0010\u0017\u001a\u00020\u0018H\u0002J\u0008\u0010\u0019\u001a\u00020\u0018H\u0002J\u0018\u0010\u001a\u001a\u00020\u00182\u0006\u0010\u001b\u001a\u00020\u00042\u0006\u0010\u001c\u001a\u00020\u0004H\u0003J\u0010\u0010\u001d\u001a\u00020\u001e2\u0006\u0010\u001f\u001a\u00020 H\u0016J\u0008\u0010!\u001a\u00020\u0018H\u0002J\u0008\u0010\"\u001a\u00020\u0018H\u0002J\u0006\u0010#\u001a\u00020\u0018J\u0006\u0010$\u001a\u00020\u0018J\u0006\u0010%\u001a\u00020\u0018J\u0006\u0010&\u001a\u00020\u0018J\u000e\u0010\'\u001a\u00020\u00182\u0006\u0010(\u001a\u00020\u001eJ\u0010\u0010)\u001a\u00020\u00182\u0006\u0010*\u001a\u00020\u0004H\u0002J\u0018\u0010)\u001a\u00020\u00182\u0006\u0010*\u001a\u00020\u00042\u0006\u0010+\u001a\u00020,H\u0002J\u000e\u0010-\u001a\u00020\u00182\u0006\u0010+\u001a\u00020,J\u0006\u0010.\u001a\u00020\u0018J\u0018\u0010/\u001a\u00020\u00182\u0006\u0010*\u001a\u00020\u00042\u0006\u0010(\u001a\u00020\u001eH\u0002J\u0006\u00100\u001a\u00020\u0018J\u0006\u00101\u001a\u00020\u0018J\u0008\u00102\u001a\u00020\u0018H\u0002J\u0008\u00103\u001a\u00020\u0018H\u0002R\u000e\u0010\u0003\u001a\u00020\u0004X\u0082D\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u0005\u001a\u00020\u0004X\u0082D\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u0006\u001a\u00020\u0004X\u0082D\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u0007\u001a\u00020\u0004X\u0082D\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u0008\u001a\u00020\u0004X\u0082D\u00a2\u0006\u0002\n\u0000R\u000e\u0010\t\u001a\u00020\u0004X\u0082D\u00a2\u0006\u0002\n\u0000R\u000e\u0010\n\u001a\u00020\u0004X\u0082D\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u000b\u001a\u00020\u0004X\u0082D\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u000c\u001a\u00020\u0004X\u0082D\u00a2\u0006\u0002\n\u0000R\u000e\u0010\r\u001a\u00020\u000eX\u0082D\u00a2\u0006\u0002\n\u0000R\u0010\u0010\u000f\u001a\u0004\u0018\u00010\u0010X\u0082\u000e\u00a2\u0006\u0002\n\u0000R\u0010\u0010\u0011\u001a\u0004\u0018\u00010\u0012X\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u0010\u0010\u0013\u001a\u0004\u0018\u00010\u0014X\u0082\u000e\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u0015\u001a\u00020\u0016X\u0082\u0004\u00a2\u0006\u0002\n\u0000\u00a8\u00064"
+        "\u0000P\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0003\n\u0002\u0010\u000e\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0008\n\u0002\u0008\t\n\u0002\u0010\u0002\n\u0000\n\u0002\u0010\u000b\n\u0002\u0008\u0006\n\u0002\u0010\u0017\n\u0002\u0008\t\n\u0002\u0018\u0002\n\u0002\u0008\t\u0008\u0002\u0018\u00002\u00020\u0001B\u0007\u00a2\u0006\u0004\u0008\u0002\u0010\u0003J\u000e\u0010\u0018\u001a\u00020\u00192\u0006\u0010\u001a\u001a\u00020\u001bJ\u0006\u0010\u001c\u001a\u00020\u0019J\u0006\u0010\u001d\u001a\u00020\u0019J\u0006\u0010\u001e\u001a\u00020\u0019J\u0006\u0010\u001f\u001a\u00020\u0019J\u000e\u0010 \u001a\u00020\u00192\u0006\u0010!\u001a\u00020\"J\u0006\u0010#\u001a\u00020\u0019J\u0006\u0010$\u001a\u00020\u0019J\u0006\u0010%\u001a\u00020\u0019J\u0010\u0010&\u001a\u00020\u00192\u0006\u0010\'\u001a\u00020\u000fH\u0002J\u0018\u0010&\u001a\u00020\u00192\u0006\u0010\'\u001a\u00020\u000f2\u0006\u0010!\u001a\u00020\"H\u0002J\u0018\u0010(\u001a\u00020\u00192\u0006\u0010\'\u001a\u00020\u000f2\u0006\u0010\u001a\u001a\u00020\u001bH\u0002J\u0008\u0010)\u001a\u00020\u0019H\u0002J\u0010\u0010*\u001a\u00020\u001b2\u0006\u0010+\u001a\u00020,H\u0016J\u0008\u0010-\u001a\u00020\u0019H\u0002J\u0008\u0010.\u001a\u00020\u0019H\u0002J\u0008\u0010/\u001a\u00020\u0019H\u0002J\u0008\u00100\u001a\u00020\u0019H\u0002J\u0018\u00101\u001a\u00020\u00192\u0006\u00102\u001a\u00020\u000f2\u0006\u00103\u001a\u00020\u000fH\u0003J\u0008\u00104\u001a\u00020\u0019H\u0002R\u000e\u0010\u0004\u001a\u00020\u0005X\u0082D\u00a2\u0006\u0002\n\u0000R\u0010\u0010\u0006\u001a\u0004\u0018\u00010\u0007X\u0082\u000e\u00a2\u0006\u0002\n\u0000R\u0010\u0010\u0008\u001a\u0004\u0018\u00010\tX\u0082\u000e\u00a2\u0006\u0002\n\u0000R\u000e\u0010\n\u001a\u00020\u000bX\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u0010\u0010\u000c\u001a\u0004\u0018\u00010\rX\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u000e\u001a\u00020\u000fX\u0082D\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u0010\u001a\u00020\u000fX\u0082D\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u0011\u001a\u00020\u000fX\u0082D\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u0012\u001a\u00020\u000fX\u0082D\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u0013\u001a\u00020\u000fX\u0082D\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u0014\u001a\u00020\u000fX\u0082D\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u0015\u001a\u00020\u000fX\u0082D\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u0016\u001a\u00020\u000fX\u0082D\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u0017\u001a\u00020\u000fX\u0082D\u00a2\u0006\u0002\n\u0000\u00a8\u00065"
     }
     d2 = {
         "Ljp/co/sony/mc/camera/recorder/AudioLevelMonitor$AudioHandler;",
         "Landroid/os/Handler$Callback;",
+        "<init>",
         "()V",
-        "MESSAGE_DEINIT",
-        "",
-        "MESSAGE_DISABLE",
-        "MESSAGE_ENABLE",
-        "MESSAGE_ERROR",
-        "MESSAGE_INIT",
-        "MESSAGE_NOTIFY",
-        "MESSAGE_RESTART",
-        "MESSAGE_START",
-        "MESSAGE_STOP",
         "TAG",
         "",
         "audioRecord",
         "Landroid/media/AudioRecord;",
-        "handler",
-        "Landroid/os/Handler;",
         "state",
         "Ljp/co/sony/mc/camera/recorder/AudioLevelMonitor$State;",
         "thread",
         "Landroid/os/HandlerThread;",
-        "captureAudio",
+        "handler",
+        "Landroid/os/Handler;",
+        "MESSAGE_INIT",
         "",
+        "MESSAGE_DEINIT",
+        "MESSAGE_START",
+        "MESSAGE_STOP",
+        "MESSAGE_RESTART",
+        "MESSAGE_ERROR",
+        "MESSAGE_NOTIFY",
+        "MESSAGE_ENABLE",
+        "MESSAGE_DISABLE",
+        "sendInit",
+        "",
+        "enable",
+        "",
+        "sendDeinit",
+        "sendStart",
+        "sendStop",
+        "sendRestart",
+        "sendNotify",
+        "data",
+        "",
+        "sendEnable",
+        "sendDisable",
+        "sendError",
+        "sendMessageCommand",
+        "message",
+        "sendSetupMessageCommand",
+        "removeAllMessages",
+        "handleMessage",
+        "msg",
+        "Landroid/os/Message;",
+        "startRecorder",
         "captureAudioData",
+        "captureAudio",
+        "stopRecorder",
         "configureRecorder",
         "channelConfig",
         "bufferSizeInByte",
-        "handleMessage",
-        "",
-        "msg",
-        "Landroid/os/Message;",
         "onError",
-        "removeAllMessages",
-        "sendDeinit",
-        "sendDisable",
-        "sendEnable",
-        "sendError",
-        "sendInit",
-        "enable",
-        "sendMessageCommand",
-        "message",
-        "data",
-        "",
-        "sendNotify",
-        "sendRestart",
-        "sendSetupMessageCommand",
-        "sendStart",
-        "sendStop",
-        "startRecorder",
-        "stopRecorder",
         "SomcCamera_release"
     }
     k = 0x1
     mv = {
-        0x1,
-        0x9,
+        0x2,
+        0x0,
         0x0
     }
     xi = 0x30
@@ -127,15 +128,15 @@
 .method public constructor <init>()V
     .locals 3
 
-    .line 247
+    .line 248
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 248
+    .line 249
     const-string v0, "AudioHandler"
 
     iput-object v0, p0, Ljp/co/sony/mc/camera/recorder/AudioLevelMonitor$AudioHandler;->TAG:Ljava/lang/String;
 
-    .line 254
+    .line 255
     new-instance v1, Landroid/os/HandlerThread;
 
     invoke-direct {v1, v0}, Landroid/os/HandlerThread;-><init>(Ljava/lang/String;)V
@@ -144,48 +145,48 @@
 
     const/4 v0, 0x1
 
-    .line 257
+    .line 258
     iput v0, p0, Ljp/co/sony/mc/camera/recorder/AudioLevelMonitor$AudioHandler;->MESSAGE_DEINIT:I
 
     const/4 v0, 0x2
 
-    .line 258
+    .line 259
     iput v0, p0, Ljp/co/sony/mc/camera/recorder/AudioLevelMonitor$AudioHandler;->MESSAGE_START:I
 
     const/4 v0, 0x3
 
-    .line 259
+    .line 260
     iput v0, p0, Ljp/co/sony/mc/camera/recorder/AudioLevelMonitor$AudioHandler;->MESSAGE_STOP:I
 
     const/4 v0, 0x4
 
-    .line 260
+    .line 261
     iput v0, p0, Ljp/co/sony/mc/camera/recorder/AudioLevelMonitor$AudioHandler;->MESSAGE_RESTART:I
 
     const/4 v0, 0x5
 
-    .line 261
+    .line 262
     iput v0, p0, Ljp/co/sony/mc/camera/recorder/AudioLevelMonitor$AudioHandler;->MESSAGE_ERROR:I
 
     const/4 v0, 0x6
 
-    .line 262
+    .line 263
     iput v0, p0, Ljp/co/sony/mc/camera/recorder/AudioLevelMonitor$AudioHandler;->MESSAGE_NOTIFY:I
 
     const/4 v0, 0x7
 
-    .line 263
+    .line 264
     iput v0, p0, Ljp/co/sony/mc/camera/recorder/AudioLevelMonitor$AudioHandler;->MESSAGE_ENABLE:I
 
     const/16 v0, 0x8
 
-    .line 264
+    .line 265
     iput v0, p0, Ljp/co/sony/mc/camera/recorder/AudioLevelMonitor$AudioHandler;->MESSAGE_DISABLE:I
 
-    .line 267
+    .line 268
     invoke-virtual {v1}, Landroid/os/HandlerThread;->start()V
 
-    .line 268
+    .line 269
     new-instance v0, Landroid/os/Handler;
 
     invoke-virtual {v1}, Landroid/os/HandlerThread;->getLooper()Landroid/os/Looper;
@@ -200,7 +201,7 @@
 
     iput-object v0, p0, Ljp/co/sony/mc/camera/recorder/AudioLevelMonitor$AudioHandler;->handler:Landroid/os/Handler;
 
-    .line 269
+    .line 270
     sget-object v0, Ljp/co/sony/mc/camera/recorder/AudioLevelMonitor$State;->UNINITIALIZED:Ljp/co/sony/mc/camera/recorder/AudioLevelMonitor$State;
 
     iput-object v0, p0, Ljp/co/sony/mc/camera/recorder/AudioLevelMonitor$AudioHandler;->state:Ljp/co/sony/mc/camera/recorder/AudioLevelMonitor$State;
@@ -209,9 +210,9 @@
 .end method
 
 .method private final captureAudio()V
-    .locals 11
+    .locals 13
 
-    .line 441
+    .line 442
     invoke-static {}, Ljp/co/sony/mc/camera/recorder/AudioLevelMonitor;->access$getSAMPLING_RATE$p()I
 
     move-result v0
@@ -230,208 +231,216 @@
 
     mul-int/2addr v0, v1
 
-    .line 442
+    .line 443
     invoke-static {}, Ljp/co/sony/mc/camera/recorder/AudioLevelMonitor;->access$getAUDIO_READ_SAMPLING_RATE$p()I
 
     move-result v1
 
-    .line 441
+    .line 442
     div-int/2addr v0, v1
+
+    const/4 v1, 0x2
 
     if-lez v0, :cond_0
 
-    .line 444
-    sget-object v1, Ljp/co/sony/mc/camera/recorder/AudioLevelMonitor;->INSTANCE:Ljp/co/sony/mc/camera/recorder/AudioLevelMonitor;
+    .line 445
+    sget-object v2, Ljp/co/sony/mc/camera/recorder/AudioLevelMonitor;->INSTANCE:Ljp/co/sony/mc/camera/recorder/AudioLevelMonitor;
 
-    div-int/lit8 v0, v0, 0x2
+    div-int/2addr v0, v1
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/recorder/AudioLevelMonitor;->access$setBufferSizeInShort$p(I)V
 
-    .line 446
+    .line 447
     :cond_0
     invoke-static {}, Ljp/co/sony/mc/camera/recorder/AudioLevelMonitor;->access$getBufferSizeInShort$p()I
 
     move-result v0
 
-    new-array v1, v0, [S
-
-    .line 447
-    :cond_1
-    :goto_0
-    iget-object v2, p0, Ljp/co/sony/mc/camera/recorder/AudioLevelMonitor$AudioHandler;->audioRecord:Landroid/media/AudioRecord;
-
-    if-eqz v2, :cond_6
+    new-array v2, v0, [S
 
     .line 448
-    invoke-static {v2}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;)V
+    :cond_1
+    :goto_0
+    iget-object v3, p0, Ljp/co/sony/mc/camera/recorder/AudioLevelMonitor$AudioHandler;->audioRecord:Landroid/media/AudioRecord;
 
-    invoke-virtual {v2}, Landroid/media/AudioRecord;->getRecordingState()I
-
-    move-result v2
-
-    const/4 v3, 0x3
-
-    if-ne v2, v3, :cond_6
+    if-eqz v3, :cond_6
 
     .line 449
-    iget-object v2, p0, Ljp/co/sony/mc/camera/recorder/AudioLevelMonitor$AudioHandler;->state:Ljp/co/sony/mc/camera/recorder/AudioLevelMonitor$State;
+    invoke-static {v3}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;)V
 
-    sget-object v3, Ljp/co/sony/mc/camera/recorder/AudioLevelMonitor$State;->ACTIVE:Ljp/co/sony/mc/camera/recorder/AudioLevelMonitor$State;
-
-    if-ne v2, v3, :cond_6
-
-    .line 451
-    iget-object v2, p0, Ljp/co/sony/mc/camera/recorder/AudioLevelMonitor$AudioHandler;->audioRecord:Landroid/media/AudioRecord;
-
-    invoke-static {v2}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;)V
-
-    invoke-static {}, Ljp/co/sony/mc/camera/recorder/AudioLevelMonitor;->access$getBufferSizeInShort$p()I
+    invoke-virtual {v3}, Landroid/media/AudioRecord;->getRecordingState()I
 
     move-result v3
 
-    const/4 v4, 0x0
+    const/4 v4, 0x3
 
-    invoke-virtual {v2, v1, v4, v3}, Landroid/media/AudioRecord;->read([SII)I
+    if-ne v3, v4, :cond_6
 
-    move-result v2
+    .line 450
+    iget-object v3, p0, Ljp/co/sony/mc/camera/recorder/AudioLevelMonitor$AudioHandler;->state:Ljp/co/sony/mc/camera/recorder/AudioLevelMonitor$State;
 
-    if-lez v2, :cond_1
+    sget-object v4, Ljp/co/sony/mc/camera/recorder/AudioLevelMonitor$State;->ACTIVE:Ljp/co/sony/mc/camera/recorder/AudioLevelMonitor$State;
 
-    move v3, v4
+    if-ne v3, v4, :cond_6
+
+    .line 452
+    iget-object v3, p0, Ljp/co/sony/mc/camera/recorder/AudioLevelMonitor$AudioHandler;->audioRecord:Landroid/media/AudioRecord;
+
+    invoke-static {v3}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;)V
+
+    invoke-static {}, Ljp/co/sony/mc/camera/recorder/AudioLevelMonitor;->access$getBufferSizeInShort$p()I
+
+    move-result v4
+
+    const/4 v5, 0x0
+
+    invoke-virtual {v3, v2, v5, v4}, Landroid/media/AudioRecord;->read([SII)I
+
+    move-result v3
+
+    if-lez v3, :cond_1
+
+    move v4, v5
 
     :goto_1
-    if-ge v3, v0, :cond_5
-
-    .line 454
-    aget-short v5, v1, v3
+    if-ge v4, v0, :cond_5
 
     .line 455
-    const-string v6, ", short: "
-
-    const-string v7, " Audio data exceeds the range of short data type double: "
-
-    const/16 v8, 0x7fff
-
-    if-le v5, v8, :cond_2
+    aget-short v6, v2, v4
 
     .line 456
-    aput-short v8, v1, v3
+    const-string v7, ", short: "
+
+    const-string v8, " Audio data exceeds the range of short data type double: "
+
+    const/16 v9, 0x7fff
+
+    const/4 v10, 0x1
+
+    if-le v6, v9, :cond_2
 
     .line 457
-    sget-boolean v8, Ljp/co/sony/mc/camera/util/CamLog;->DEBUG:Z
-
-    if-eqz v8, :cond_4
-
-    .line 459
-    iget-object v8, p0, Ljp/co/sony/mc/camera/recorder/AudioLevelMonitor$AudioHandler;->TAG:Ljava/lang/String;
-
-    .line 461
-    aget-short v9, v1, v3
-
-    new-instance v10, Ljava/lang/StringBuilder;
-
-    invoke-direct {v10, v7}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
-
-    invoke-virtual {v10, v5}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
-
-    move-result-object v5
-
-    invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v5
-
-    invoke-virtual {v5, v9}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
-
-    move-result-object v5
-
-    invoke-virtual {v5}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v5
-
-    filled-new-array {v8, v5}, [Ljava/lang/String;
-
-    move-result-object v5
+    aput-short v9, v2, v4
 
     .line 458
-    invoke-static {v5}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
+    sget-boolean v9, Ljp/co/sony/mc/camera/util/CamLog;->DEBUG:Z
+
+    if-eqz v9, :cond_4
+
+    .line 460
+    new-array v9, v1, [Ljava/lang/String;
+
+    iget-object v11, p0, Ljp/co/sony/mc/camera/recorder/AudioLevelMonitor$AudioHandler;->TAG:Ljava/lang/String;
+
+    aput-object v11, v9, v5
+
+    .line 462
+    aget-short v11, v2, v4
+
+    new-instance v12, Ljava/lang/StringBuilder;
+
+    invoke-direct {v12, v8}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+
+    invoke-virtual {v12, v6}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    move-result-object v6
+
+    invoke-virtual {v6, v7}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v6
+
+    invoke-virtual {v6, v11}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    move-result-object v6
+
+    invoke-virtual {v6}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v6
+
+    aput-object v6, v9, v10
+
+    .line 459
+    invoke-static {v9}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
     goto :goto_2
 
     :cond_2
-    const/16 v8, -0x8000
+    const/16 v9, -0x8000
 
-    if-ge v5, v8, :cond_3
-
-    .line 465
-    aput-short v8, v1, v3
+    if-ge v6, v9, :cond_3
 
     .line 466
-    sget-boolean v8, Ljp/co/sony/mc/camera/util/CamLog;->DEBUG:Z
-
-    if-eqz v8, :cond_4
-
-    .line 468
-    iget-object v8, p0, Ljp/co/sony/mc/camera/recorder/AudioLevelMonitor$AudioHandler;->TAG:Ljava/lang/String;
-
-    .line 471
-    aget-short v9, v1, v3
-
-    new-instance v10, Ljava/lang/StringBuilder;
-
-    invoke-direct {v10, v7}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
-
-    invoke-virtual {v10, v5}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
-
-    move-result-object v5
-
-    invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v5
-
-    invoke-virtual {v5, v9}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
-
-    move-result-object v5
-
-    invoke-virtual {v5}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v5
-
-    filled-new-array {v8, v5}, [Ljava/lang/String;
-
-    move-result-object v5
+    aput-short v9, v2, v4
 
     .line 467
-    invoke-static {v5}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
+    sget-boolean v9, Ljp/co/sony/mc/camera/util/CamLog;->DEBUG:Z
+
+    if-eqz v9, :cond_4
+
+    .line 469
+    new-array v9, v1, [Ljava/lang/String;
+
+    iget-object v11, p0, Ljp/co/sony/mc/camera/recorder/AudioLevelMonitor$AudioHandler;->TAG:Ljava/lang/String;
+
+    aput-object v11, v9, v5
+
+    .line 472
+    aget-short v11, v2, v4
+
+    new-instance v12, Ljava/lang/StringBuilder;
+
+    invoke-direct {v12, v8}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+
+    invoke-virtual {v12, v6}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    move-result-object v6
+
+    invoke-virtual {v6, v7}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v6
+
+    invoke-virtual {v6, v11}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    move-result-object v6
+
+    invoke-virtual {v6}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v6
+
+    aput-object v6, v9, v10
+
+    .line 468
+    invoke-static {v9}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
     goto :goto_2
 
     :cond_3
-    int-to-short v5, v5
+    int-to-short v6, v6
 
-    .line 475
-    aput-short v5, v1, v3
+    .line 476
+    aput-short v6, v2, v4
 
     :cond_4
     :goto_2
-    add-int/lit8 v3, v3, 0x1
+    add-int/lit8 v4, v4, 0x1
 
     goto :goto_1
 
-    .line 479
-    :cond_5
-    new-array v3, v2, [S
-
     .line 480
-    invoke-static {v1, v4, v3, v4, v2}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
+    :cond_5
+    new-array v4, v3, [S
 
     .line 481
+    invoke-static {v2, v5, v4, v5, v3}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
+
+    .line 482
     invoke-static {}, Ljp/co/sony/mc/camera/recorder/AudioLevelMonitor;->access$getAudioHandler$p()Ljp/co/sony/mc/camera/recorder/AudioLevelMonitor$AudioHandler;
 
-    move-result-object v2
+    move-result-object v3
 
-    if-eqz v2, :cond_1
+    if-eqz v3, :cond_1
 
-    invoke-virtual {v2, v3}, Ljp/co/sony/mc/camera/recorder/AudioLevelMonitor$AudioHandler;->sendNotify([S)V
+    invoke-virtual {v3, v4}, Ljp/co/sony/mc/camera/recorder/AudioLevelMonitor$AudioHandler;->sendNotify([S)V
 
     goto/16 :goto_0
 
@@ -447,17 +456,17 @@
         }
     .end annotation
 
-    .line 426
+    .line 427
     iget-object v0, p0, Ljp/co/sony/mc/camera/recorder/AudioLevelMonitor$AudioHandler;->audioRecord:Landroid/media/AudioRecord;
 
     if-eqz v0, :cond_0
 
-    .line 427
+    .line 428
     invoke-static {v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;)V
 
     invoke-virtual {v0}, Landroid/media/AudioRecord;->startRecording()V
 
-    .line 428
+    .line 429
     sget-object v0, Ljp/co/sony/mc/camera/recorder/AudioLevelMonitor;->INSTANCE:Ljp/co/sony/mc/camera/recorder/AudioLevelMonitor;
 
     new-instance v0, Ljava/lang/Thread;
@@ -466,15 +475,15 @@
 
     invoke-direct {v1, p0}, Ljp/co/sony/mc/camera/recorder/AudioLevelMonitor$AudioHandler$$ExternalSyntheticLambda0;-><init>(Ljp/co/sony/mc/camera/recorder/AudioLevelMonitor$AudioHandler;)V
 
-    .line 431
+    .line 432
     const-string p0, "AudioCapture Thread"
 
-    .line 428
+    .line 429
     invoke-direct {v0, v1, p0}, Ljava/lang/Thread;-><init>(Ljava/lang/Runnable;Ljava/lang/String;)V
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/recorder/AudioLevelMonitor;->access$setRecordingThread$p(Ljava/lang/Thread;)V
 
-    .line 432
+    .line 433
     invoke-static {}, Ljp/co/sony/mc/camera/recorder/AudioLevelMonitor;->access$getRecordingThread$p()Ljava/lang/Thread;
 
     move-result-object p0
@@ -496,10 +505,10 @@
 
     const/16 v0, -0x10
 
-    .line 429
+    .line 430
     invoke-static {v0}, Landroid/os/Process;->setThreadPriority(I)V
 
-    .line 430
+    .line 431
     invoke-direct {p0}, Ljp/co/sony/mc/camera/recorder/AudioLevelMonitor$AudioHandler;->captureAudio()V
 
     return-void
@@ -508,29 +517,20 @@
 .method private final configureRecorder(II)V
     .locals 7
 
-    .line 512
+    .line 513
     new-instance v6, Landroid/media/AudioRecord;
 
-    .line 513
-    sget-object v0, Ljp/co/sony/mc/camera/recorder/AudioDeviceManager;->Companion:Ljp/co/sony/mc/camera/recorder/AudioDeviceManager$Companion;
-
-    invoke-virtual {v0}, Ljp/co/sony/mc/camera/recorder/AudioDeviceManager$Companion;->getInstance()Ljp/co/sony/mc/camera/recorder/AudioDeviceManager;
-
-    move-result-object v0
-
-    invoke-virtual {v0}, Ljp/co/sony/mc/camera/recorder/AudioDeviceManager;->getAudioSource()I
-
-    move-result v1
-
-    .line 514
+    .line 515
     invoke-static {}, Ljp/co/sony/mc/camera/recorder/AudioLevelMonitor;->access$getSAMPLING_RATE$p()I
 
     move-result v2
 
-    .line 516
+    .line 517
     invoke-static {}, Ljp/co/sony/mc/camera/recorder/AudioLevelMonitor;->access$getRECORDER_AUDIO_ENCODING_FORMAT$p()I
 
     move-result v4
+
+    const/4 v1, 0x5
 
     move-object v0, v6
 
@@ -538,12 +538,12 @@
 
     move v5, p2
 
-    .line 512
+    .line 513
     invoke-direct/range {v0 .. v5}, Landroid/media/AudioRecord;-><init>(IIIII)V
 
     iput-object v6, p0, Ljp/co/sony/mc/camera/recorder/AudioLevelMonitor$AudioHandler;->audioRecord:Landroid/media/AudioRecord;
 
-    .line 519
+    .line 520
     sget-object p1, Ljp/co/sony/mc/camera/recorder/AudioDeviceManager;->Companion:Ljp/co/sony/mc/camera/recorder/AudioDeviceManager$Companion;
 
     invoke-virtual {p1}, Ljp/co/sony/mc/camera/recorder/AudioDeviceManager$Companion;->getInstance()Ljp/co/sony/mc/camera/recorder/AudioDeviceManager;
@@ -558,19 +558,27 @@
 
     invoke-virtual {v6, p1}, Landroid/media/AudioRecord;->setPreferredDevice(Landroid/media/AudioDeviceInfo;)Z
 
-    .line 520
+    .line 521
     sget-object p1, Ljp/co/sony/mc/camera/recorder/AudioLevelMonitor;->INSTANCE:Ljp/co/sony/mc/camera/recorder/AudioLevelMonitor;
 
-    div-int/lit8 p2, p2, 0x2
+    const/4 p1, 0x2
+
+    div-int/2addr p2, p1
 
     invoke-static {p2}, Ljp/co/sony/mc/camera/recorder/AudioLevelMonitor;->access$setBufferSizeInShort$p(I)V
 
-    .line 521
-    sget-boolean p1, Ljp/co/sony/mc/camera/util/CamLog;->DEBUG:Z
+    .line 522
+    sget-boolean p2, Ljp/co/sony/mc/camera/util/CamLog;->DEBUG:Z
 
-    if-eqz p1, :cond_0
+    if-eqz p2, :cond_0
 
-    iget-object p1, p0, Ljp/co/sony/mc/camera/recorder/AudioLevelMonitor$AudioHandler;->TAG:Ljava/lang/String;
+    new-array p1, p1, [Ljava/lang/String;
+
+    const/4 p2, 0x0
+
+    iget-object v1, p0, Ljp/co/sony/mc/camera/recorder/AudioLevelMonitor$AudioHandler;->TAG:Ljava/lang/String;
+
+    aput-object v1, p1, p2
 
     iget-object p0, p0, Ljp/co/sony/mc/camera/recorder/AudioLevelMonitor$AudioHandler;->audioRecord:Landroid/media/AudioRecord;
 
@@ -582,9 +590,9 @@
 
     new-instance p2, Ljava/lang/StringBuilder;
 
-    const-string v0, " AudioRecord state = "
+    const-string v1, " AudioRecord state = "
 
-    invoke-direct {p2, v0}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+    invoke-direct {p2, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
     invoke-virtual {p2, p0}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
@@ -594,11 +602,9 @@
 
     move-result-object p0
 
-    filled-new-array {p1, p0}, [Ljava/lang/String;
+    aput-object p0, p1, v0
 
-    move-result-object p0
-
-    invoke-static {p0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
+    invoke-static {p1}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
     :cond_0
     return-void
@@ -607,12 +613,12 @@
 .method private final onError()V
     .locals 1
 
-    .line 525
+    .line 526
     sget-object v0, Ljp/co/sony/mc/camera/recorder/AudioLevelMonitor$State;->ERROR:Ljp/co/sony/mc/camera/recorder/AudioLevelMonitor$State;
 
     iput-object v0, p0, Ljp/co/sony/mc/camera/recorder/AudioLevelMonitor$AudioHandler;->state:Ljp/co/sony/mc/camera/recorder/AudioLevelMonitor$State;
 
-    .line 526
+    .line 527
     invoke-static {}, Ljp/co/sony/mc/camera/recorder/AudioLevelMonitor;->access$getAudioLevelListeners$p()Ljava/util/concurrent/CopyOnWriteArrayList;
 
     move-result-object p0
@@ -620,6 +626,10 @@
     invoke-virtual {p0}, Ljava/util/concurrent/CopyOnWriteArrayList;->iterator()Ljava/util/Iterator;
 
     move-result-object p0
+
+    const-string v0, "iterator(...)"
+
+    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
 
     :goto_0
     invoke-interface {p0}, Ljava/util/Iterator;->hasNext()Z
@@ -634,7 +644,7 @@
 
     check-cast v0, Ljp/co/sony/mc/camera/recorder/AudioLevelMonitor$AudioLevelListener;
 
-    .line 527
+    .line 528
     invoke-interface {v0}, Ljp/co/sony/mc/camera/recorder/AudioLevelMonitor$AudioLevelListener;->onAudioLevelError()V
 
     goto :goto_0
@@ -646,66 +656,66 @@
 .method private final removeAllMessages()V
     .locals 2
 
-    .line 328
+    .line 329
     iget-object v0, p0, Ljp/co/sony/mc/camera/recorder/AudioLevelMonitor$AudioHandler;->handler:Landroid/os/Handler;
 
     if-eqz v0, :cond_0
 
-    .line 329
-    iget v1, p0, Ljp/co/sony/mc/camera/recorder/AudioLevelMonitor$AudioHandler;->MESSAGE_INIT:I
-
-    invoke-virtual {v0, v1}, Landroid/os/Handler;->removeMessages(I)V
-
     .line 330
-    iget-object v0, p0, Ljp/co/sony/mc/camera/recorder/AudioLevelMonitor$AudioHandler;->handler:Landroid/os/Handler;
-
-    iget v1, p0, Ljp/co/sony/mc/camera/recorder/AudioLevelMonitor$AudioHandler;->MESSAGE_DEINIT:I
+    iget v1, p0, Ljp/co/sony/mc/camera/recorder/AudioLevelMonitor$AudioHandler;->MESSAGE_INIT:I
 
     invoke-virtual {v0, v1}, Landroid/os/Handler;->removeMessages(I)V
 
     .line 331
     iget-object v0, p0, Ljp/co/sony/mc/camera/recorder/AudioLevelMonitor$AudioHandler;->handler:Landroid/os/Handler;
 
-    iget v1, p0, Ljp/co/sony/mc/camera/recorder/AudioLevelMonitor$AudioHandler;->MESSAGE_START:I
+    iget v1, p0, Ljp/co/sony/mc/camera/recorder/AudioLevelMonitor$AudioHandler;->MESSAGE_DEINIT:I
 
     invoke-virtual {v0, v1}, Landroid/os/Handler;->removeMessages(I)V
 
     .line 332
     iget-object v0, p0, Ljp/co/sony/mc/camera/recorder/AudioLevelMonitor$AudioHandler;->handler:Landroid/os/Handler;
 
-    iget v1, p0, Ljp/co/sony/mc/camera/recorder/AudioLevelMonitor$AudioHandler;->MESSAGE_STOP:I
+    iget v1, p0, Ljp/co/sony/mc/camera/recorder/AudioLevelMonitor$AudioHandler;->MESSAGE_START:I
 
     invoke-virtual {v0, v1}, Landroid/os/Handler;->removeMessages(I)V
 
     .line 333
     iget-object v0, p0, Ljp/co/sony/mc/camera/recorder/AudioLevelMonitor$AudioHandler;->handler:Landroid/os/Handler;
 
-    iget v1, p0, Ljp/co/sony/mc/camera/recorder/AudioLevelMonitor$AudioHandler;->MESSAGE_RESTART:I
+    iget v1, p0, Ljp/co/sony/mc/camera/recorder/AudioLevelMonitor$AudioHandler;->MESSAGE_STOP:I
 
     invoke-virtual {v0, v1}, Landroid/os/Handler;->removeMessages(I)V
 
     .line 334
     iget-object v0, p0, Ljp/co/sony/mc/camera/recorder/AudioLevelMonitor$AudioHandler;->handler:Landroid/os/Handler;
 
-    iget v1, p0, Ljp/co/sony/mc/camera/recorder/AudioLevelMonitor$AudioHandler;->MESSAGE_ERROR:I
+    iget v1, p0, Ljp/co/sony/mc/camera/recorder/AudioLevelMonitor$AudioHandler;->MESSAGE_RESTART:I
 
     invoke-virtual {v0, v1}, Landroid/os/Handler;->removeMessages(I)V
 
     .line 335
     iget-object v0, p0, Ljp/co/sony/mc/camera/recorder/AudioLevelMonitor$AudioHandler;->handler:Landroid/os/Handler;
 
-    iget v1, p0, Ljp/co/sony/mc/camera/recorder/AudioLevelMonitor$AudioHandler;->MESSAGE_NOTIFY:I
+    iget v1, p0, Ljp/co/sony/mc/camera/recorder/AudioLevelMonitor$AudioHandler;->MESSAGE_ERROR:I
 
     invoke-virtual {v0, v1}, Landroid/os/Handler;->removeMessages(I)V
 
     .line 336
     iget-object v0, p0, Ljp/co/sony/mc/camera/recorder/AudioLevelMonitor$AudioHandler;->handler:Landroid/os/Handler;
 
-    iget v1, p0, Ljp/co/sony/mc/camera/recorder/AudioLevelMonitor$AudioHandler;->MESSAGE_ENABLE:I
+    iget v1, p0, Ljp/co/sony/mc/camera/recorder/AudioLevelMonitor$AudioHandler;->MESSAGE_NOTIFY:I
 
     invoke-virtual {v0, v1}, Landroid/os/Handler;->removeMessages(I)V
 
     .line 337
+    iget-object v0, p0, Ljp/co/sony/mc/camera/recorder/AudioLevelMonitor$AudioHandler;->handler:Landroid/os/Handler;
+
+    iget v1, p0, Ljp/co/sony/mc/camera/recorder/AudioLevelMonitor$AudioHandler;->MESSAGE_ENABLE:I
+
+    invoke-virtual {v0, v1}, Landroid/os/Handler;->removeMessages(I)V
+
+    .line 338
     iget-object v0, p0, Ljp/co/sony/mc/camera/recorder/AudioLevelMonitor$AudioHandler;->handler:Landroid/os/Handler;
 
     iget p0, p0, Ljp/co/sony/mc/camera/recorder/AudioLevelMonitor$AudioHandler;->MESSAGE_DISABLE:I
@@ -719,15 +729,15 @@
 .method private final sendMessageCommand(I)V
     .locals 1
 
-    .line 309
+    .line 310
     iget-object v0, p0, Ljp/co/sony/mc/camera/recorder/AudioLevelMonitor$AudioHandler;->handler:Landroid/os/Handler;
 
     if-eqz v0, :cond_0
 
-    .line 310
+    .line 311
     invoke-virtual {v0, p1}, Landroid/os/Handler;->removeMessages(I)V
 
-    .line 311
+    .line 312
     iget-object p0, p0, Ljp/co/sony/mc/camera/recorder/AudioLevelMonitor$AudioHandler;->handler:Landroid/os/Handler;
 
     invoke-virtual {p0, p1}, Landroid/os/Handler;->sendEmptyMessage(I)Z
@@ -739,15 +749,15 @@
 .method private final sendMessageCommand(I[S)V
     .locals 1
 
-    .line 316
+    .line 317
     iget-object v0, p0, Ljp/co/sony/mc/camera/recorder/AudioLevelMonitor$AudioHandler;->handler:Landroid/os/Handler;
 
     if-eqz v0, :cond_0
 
-    .line 317
+    .line 318
     invoke-virtual {v0, p1}, Landroid/os/Handler;->removeMessages(I)V
 
-    .line 318
+    .line 319
     iget-object p0, p0, Ljp/co/sony/mc/camera/recorder/AudioLevelMonitor$AudioHandler;->handler:Landroid/os/Handler;
 
     invoke-virtual {p0, p1, p2}, Landroid/os/Handler;->obtainMessage(ILjava/lang/Object;)Landroid/os/Message;
@@ -763,10 +773,10 @@
 .method private final sendSetupMessageCommand(IZ)V
     .locals 0
 
-    .line 323
+    .line 324
     invoke-direct {p0}, Ljp/co/sony/mc/camera/recorder/AudioLevelMonitor$AudioHandler;->removeAllMessages()V
 
-    .line 324
+    .line 325
     iget-object p0, p0, Ljp/co/sony/mc/camera/recorder/AudioLevelMonitor$AudioHandler;->handler:Landroid/os/Handler;
 
     if-eqz p0, :cond_0
@@ -788,46 +798,54 @@
 .end method
 
 .method private final startRecorder()V
-    .locals 3
+    .locals 5
 
-    .line 399
+    .line 400
     sget-boolean v0, Ljp/co/sony/mc/camera/util/CamLog;->DEBUG:Z
+
+    const/4 v1, 0x2
+
+    const/4 v2, 0x0
+
+    const/4 v3, 0x1
 
     if-eqz v0, :cond_0
 
-    iget-object v0, p0, Ljp/co/sony/mc/camera/recorder/AudioLevelMonitor$AudioHandler;->TAG:Ljava/lang/String;
+    new-array v0, v1, [Ljava/lang/String;
 
-    const-string v1, " startRecorder"
+    iget-object v4, p0, Ljp/co/sony/mc/camera/recorder/AudioLevelMonitor$AudioHandler;->TAG:Ljava/lang/String;
 
-    filled-new-array {v0, v1}, [Ljava/lang/String;
+    aput-object v4, v0, v2
 
-    move-result-object v0
+    const-string v4, " startRecorder"
+
+    aput-object v4, v0, v3
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
-    .line 400
+    .line 401
     :cond_0
     iget-object v0, p0, Ljp/co/sony/mc/camera/recorder/AudioLevelMonitor$AudioHandler;->audioRecord:Landroid/media/AudioRecord;
 
     if-eqz v0, :cond_2
 
-    .line 401
+    .line 402
     sget-boolean p0, Ljp/co/sony/mc/camera/util/CamLog;->DEBUG:Z
 
     if-eqz p0, :cond_1
 
-    const-string p0, "AudioRecord is already initialized."
+    new-array p0, v3, [Ljava/lang/String;
 
-    filled-new-array {p0}, [Ljava/lang/String;
+    const-string v0, "AudioRecord is already initialized."
 
-    move-result-object p0
+    aput-object v0, p0, v2
 
     invoke-static {p0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
     :cond_1
     return-void
 
-    .line 404
+    .line 405
     :cond_2
     sget-object v0, Ljp/co/sony/mc/camera/recorder/AudioLevelMonitor;->INSTANCE:Ljp/co/sony/mc/camera/recorder/AudioLevelMonitor;
 
@@ -835,9 +853,7 @@
 
     move-result v0
 
-    const/4 v1, 0x1
-
-    if-ne v0, v1, :cond_3
+    if-ne v0, v3, :cond_3
 
     const/16 v0, 0x10
 
@@ -846,15 +862,15 @@
     :cond_3
     const/16 v0, 0xc
 
-    .line 412
+    .line 413
     :goto_0
     invoke-static {}, Ljp/co/sony/mc/camera/recorder/AudioLevelMonitor;->access$getAUDIO_ALLOCATE_BUFFER_SIZE$p()I
 
-    move-result v1
+    move-result v4
 
-    invoke-direct {p0, v0, v1}, Ljp/co/sony/mc/camera/recorder/AudioLevelMonitor$AudioHandler;->configureRecorder(II)V
+    invoke-direct {p0, v0, v4}, Ljp/co/sony/mc/camera/recorder/AudioLevelMonitor$AudioHandler;->configureRecorder(II)V
 
-    .line 414
+    .line 415
     :try_start_0
     invoke-direct {p0}, Ljp/co/sony/mc/camera/recorder/AudioLevelMonitor$AudioHandler;->captureAudioData()V
     :try_end_0
@@ -865,34 +881,36 @@
     :catch_0
     move-exception v0
 
-    .line 416
+    .line 417
+    new-array v1, v1, [Ljava/lang/String;
+
     iget-object p0, p0, Ljp/co/sony/mc/camera/recorder/AudioLevelMonitor$AudioHandler;->TAG:Ljava/lang/String;
+
+    aput-object p0, v1, v2
 
     invoke-virtual {v0}, Ljava/lang/IllegalStateException;->getMessage()Ljava/lang/String;
 
-    move-result-object v0
+    move-result-object p0
 
-    new-instance v1, Ljava/lang/StringBuilder;
+    new-instance v0, Ljava/lang/StringBuilder;
 
     const-string v2, "Start record failed."
 
-    invoke-direct {v1, v2}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+    invoke-direct {v0, v2}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
-    invoke-virtual {v1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v0
-
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v0
-
-    filled-new-array {p0, v0}, [Ljava/lang/String;
+    invoke-virtual {v0, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object p0
 
-    invoke-static {p0}, Ljp/co/sony/mc/camera/util/CamLog;->e([Ljava/lang/String;)V
+    invoke-virtual {p0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    .line 417
+    move-result-object p0
+
+    aput-object p0, v1, v3
+
+    invoke-static {v1}, Ljp/co/sony/mc/camera/util/CamLog;->e([Ljava/lang/String;)V
+
+    .line 418
     invoke-static {}, Ljp/co/sony/mc/camera/recorder/AudioLevelMonitor;->access$getAudioHandler$p()Ljp/co/sony/mc/camera/recorder/AudioLevelMonitor$AudioHandler;
 
     move-result-object p0
@@ -907,36 +925,44 @@
 .end method
 
 .method private final stopRecorder()V
-    .locals 3
+    .locals 5
 
-    .line 490
+    .line 491
     sget-boolean v0, Ljp/co/sony/mc/camera/util/CamLog;->DEBUG:Z
+
+    const/4 v1, 0x1
+
+    const/4 v2, 0x0
+
+    const/4 v3, 0x2
 
     if-eqz v0, :cond_0
 
-    iget-object v0, p0, Ljp/co/sony/mc/camera/recorder/AudioLevelMonitor$AudioHandler;->TAG:Ljava/lang/String;
+    new-array v0, v3, [Ljava/lang/String;
 
-    const-string v1, " stopRecorder"
+    iget-object v4, p0, Ljp/co/sony/mc/camera/recorder/AudioLevelMonitor$AudioHandler;->TAG:Ljava/lang/String;
 
-    filled-new-array {v0, v1}, [Ljava/lang/String;
+    aput-object v4, v0, v2
 
-    move-result-object v0
+    const-string v4, " stopRecorder"
+
+    aput-object v4, v0, v1
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
-    .line 491
+    .line 492
     :cond_0
     iget-object v0, p0, Ljp/co/sony/mc/camera/recorder/AudioLevelMonitor$AudioHandler;->audioRecord:Landroid/media/AudioRecord;
 
     if-eqz v0, :cond_1
 
-    .line 493
+    .line 494
     :try_start_0
     invoke-static {v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;)V
 
     invoke-virtual {v0}, Landroid/media/AudioRecord;->stop()V
 
-    .line 494
+    .line 495
     iget-object v0, p0, Ljp/co/sony/mc/camera/recorder/AudioLevelMonitor$AudioHandler;->audioRecord:Landroid/media/AudioRecord;
 
     invoke-static {v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;)V
@@ -945,7 +971,7 @@
 
     const/4 v0, 0x0
 
-    .line 495
+    .line 496
     iput-object v0, p0, Ljp/co/sony/mc/camera/recorder/AudioLevelMonitor$AudioHandler;->audioRecord:Landroid/media/AudioRecord;
     :try_end_0
     .catch Ljava/lang/IllegalStateException; {:try_start_0 .. :try_end_0} :catch_0
@@ -955,34 +981,36 @@
     :catch_0
     move-exception v0
 
-    .line 497
+    .line 498
+    new-array v3, v3, [Ljava/lang/String;
+
     iget-object p0, p0, Ljp/co/sony/mc/camera/recorder/AudioLevelMonitor$AudioHandler;->TAG:Ljava/lang/String;
+
+    aput-object p0, v3, v2
 
     invoke-virtual {v0}, Ljava/lang/IllegalStateException;->getMessage()Ljava/lang/String;
 
-    move-result-object v0
+    move-result-object p0
 
-    new-instance v1, Ljava/lang/StringBuilder;
+    new-instance v0, Ljava/lang/StringBuilder;
 
     const-string v2, "Stop record failed."
 
-    invoke-direct {v1, v2}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+    invoke-direct {v0, v2}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
-    invoke-virtual {v1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v0
-
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v0
-
-    filled-new-array {p0, v0}, [Ljava/lang/String;
+    invoke-virtual {v0, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object p0
 
-    invoke-static {p0}, Ljp/co/sony/mc/camera/util/CamLog;->e([Ljava/lang/String;)V
+    invoke-virtual {p0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    .line 498
+    move-result-object p0
+
+    aput-object p0, v3, v1
+
+    invoke-static {v3}, Ljp/co/sony/mc/camera/util/CamLog;->e([Ljava/lang/String;)V
+
+    .line 499
     invoke-static {}, Ljp/co/sony/mc/camera/recorder/AudioLevelMonitor;->access$getAudioHandler$p()Ljp/co/sony/mc/camera/recorder/AudioLevelMonitor$AudioHandler;
 
     move-result-object p0
@@ -991,7 +1019,7 @@
 
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/recorder/AudioLevelMonitor$AudioHandler;->sendError()V
 
-    .line 501
+    .line 502
     :cond_1
     :goto_0
     sget-object p0, Ljp/co/sony/mc/camera/recorder/AudioLevelMonitor;->INSTANCE:Ljp/co/sony/mc/camera/recorder/AudioLevelMonitor;
@@ -1004,89 +1032,97 @@
 
 # virtual methods
 .method public handleMessage(Landroid/os/Message;)Z
-    .locals 5
+    .locals 6
 
     const-string v0, "msg"
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 342
+    .line 343
     sget-boolean v0, Ljp/co/sony/mc/camera/util/CamLog;->DEBUG:Z
+
+    const/4 v1, 0x0
 
     if-eqz v0, :cond_0
 
-    .line 343
+    .line 344
     iget v0, p1, Landroid/os/Message;->what:I
 
-    iget v1, p0, Ljp/co/sony/mc/camera/recorder/AudioLevelMonitor$AudioHandler;->MESSAGE_NOTIFY:I
+    iget v2, p0, Ljp/co/sony/mc/camera/recorder/AudioLevelMonitor$AudioHandler;->MESSAGE_NOTIFY:I
 
-    if-eq v0, v1, :cond_0
+    if-eq v0, v2, :cond_0
 
-    .line 345
-    iget-object v0, p0, Ljp/co/sony/mc/camera/recorder/AudioLevelMonitor$AudioHandler;->TAG:Ljava/lang/String;
+    const/4 v0, 0x2
 
-    iget v1, p1, Landroid/os/Message;->what:I
+    .line 346
+    new-array v0, v0, [Ljava/lang/String;
 
-    iget-object v2, p0, Ljp/co/sony/mc/camera/recorder/AudioLevelMonitor$AudioHandler;->state:Ljp/co/sony/mc/camera/recorder/AudioLevelMonitor$State;
+    iget-object v2, p0, Ljp/co/sony/mc/camera/recorder/AudioLevelMonitor$AudioHandler;->TAG:Ljava/lang/String;
 
-    new-instance v3, Ljava/lang/StringBuilder;
+    aput-object v2, v0, v1
 
-    const-string v4, " msg.what = "
+    iget v2, p1, Landroid/os/Message;->what:I
 
-    invoke-direct {v3, v4}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+    iget-object v3, p0, Ljp/co/sony/mc/camera/recorder/AudioLevelMonitor$AudioHandler;->state:Ljp/co/sony/mc/camera/recorder/AudioLevelMonitor$State;
 
-    invoke-virtual {v3, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+    new-instance v4, Ljava/lang/StringBuilder;
 
-    move-result-object v1
+    const-string v5, " msg.what = "
 
-    const-string v3, ", state = "
+    invoke-direct {v4, v5}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
-    invoke-virtual {v1, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v4, v2}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
-    move-result-object v1
+    move-result-object v2
 
-    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+    const-string v4, ", state = "
 
-    move-result-object v1
+    invoke-virtual {v2, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    move-result-object v2
 
-    move-result-object v1
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
-    filled-new-array {v0, v1}, [Ljava/lang/String;
+    move-result-object v2
 
-    move-result-object v0
+    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v2
+
+    const/4 v3, 0x1
+
+    aput-object v2, v0, v3
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
-    .line 348
+    .line 349
     :cond_0
     iget v0, p1, Landroid/os/Message;->what:I
 
-    .line 349
-    iget v1, p0, Ljp/co/sony/mc/camera/recorder/AudioLevelMonitor$AudioHandler;->MESSAGE_INIT:I
-
-    if-ne v0, v1, :cond_1
-
     .line 350
+    iget v2, p0, Ljp/co/sony/mc/camera/recorder/AudioLevelMonitor$AudioHandler;->MESSAGE_INIT:I
+
+    if-ne v0, v2, :cond_1
+
+    .line 351
     iget-object p1, p0, Ljp/co/sony/mc/camera/recorder/AudioLevelMonitor$AudioHandler;->state:Ljp/co/sony/mc/camera/recorder/AudioLevelMonitor$State;
 
     sget-object v0, Ljp/co/sony/mc/camera/recorder/AudioLevelMonitor$State;->ACTIVE:Ljp/co/sony/mc/camera/recorder/AudioLevelMonitor$State;
 
     if-eq p1, v0, :cond_9
 
-    .line 351
+    .line 352
     sget-object p1, Ljp/co/sony/mc/camera/recorder/AudioLevelMonitor$State;->PROXY:Ljp/co/sony/mc/camera/recorder/AudioLevelMonitor$State;
 
     iput-object p1, p0, Ljp/co/sony/mc/camera/recorder/AudioLevelMonitor$AudioHandler;->state:Ljp/co/sony/mc/camera/recorder/AudioLevelMonitor$State;
 
     goto/16 :goto_0
 
-    .line 355
+    .line 356
     :cond_1
-    iget v1, p0, Ljp/co/sony/mc/camera/recorder/AudioLevelMonitor$AudioHandler;->MESSAGE_DEINIT:I
+    iget v2, p0, Ljp/co/sony/mc/camera/recorder/AudioLevelMonitor$AudioHandler;->MESSAGE_DEINIT:I
 
-    if-ne v0, v1, :cond_2
+    if-ne v0, v2, :cond_2
 
     iget-object p1, p0, Ljp/co/sony/mc/camera/recorder/AudioLevelMonitor$AudioHandler;->state:Ljp/co/sony/mc/camera/recorder/AudioLevelMonitor$State;
 
@@ -1094,23 +1130,23 @@
 
     if-eq p1, v0, :cond_9
 
-    .line 356
+    .line 357
     sget-object p1, Ljp/co/sony/mc/camera/recorder/AudioLevelMonitor$State;->UNINITIALIZED:Ljp/co/sony/mc/camera/recorder/AudioLevelMonitor$State;
 
     iput-object p1, p0, Ljp/co/sony/mc/camera/recorder/AudioLevelMonitor$AudioHandler;->state:Ljp/co/sony/mc/camera/recorder/AudioLevelMonitor$State;
 
-    .line 357
+    .line 358
     iget-object p0, p0, Ljp/co/sony/mc/camera/recorder/AudioLevelMonitor$AudioHandler;->thread:Landroid/os/HandlerThread;
 
     invoke-virtual {p0}, Landroid/os/HandlerThread;->quitSafely()Z
 
     goto/16 :goto_0
 
-    .line 360
+    .line 361
     :cond_2
-    iget v1, p0, Ljp/co/sony/mc/camera/recorder/AudioLevelMonitor$AudioHandler;->MESSAGE_START:I
+    iget v2, p0, Ljp/co/sony/mc/camera/recorder/AudioLevelMonitor$AudioHandler;->MESSAGE_START:I
 
-    if-ne v0, v1, :cond_3
+    if-ne v0, v2, :cond_3
 
     iget-object p1, p0, Ljp/co/sony/mc/camera/recorder/AudioLevelMonitor$AudioHandler;->state:Ljp/co/sony/mc/camera/recorder/AudioLevelMonitor$State;
 
@@ -1118,21 +1154,21 @@
 
     if-ne p1, v0, :cond_9
 
-    .line 361
+    .line 362
     invoke-direct {p0}, Ljp/co/sony/mc/camera/recorder/AudioLevelMonitor$AudioHandler;->startRecorder()V
 
-    .line 362
+    .line 363
     sget-object p1, Ljp/co/sony/mc/camera/recorder/AudioLevelMonitor$State;->ACTIVE:Ljp/co/sony/mc/camera/recorder/AudioLevelMonitor$State;
 
     iput-object p1, p0, Ljp/co/sony/mc/camera/recorder/AudioLevelMonitor$AudioHandler;->state:Ljp/co/sony/mc/camera/recorder/AudioLevelMonitor$State;
 
     goto :goto_0
 
-    .line 365
+    .line 366
     :cond_3
-    iget v1, p0, Ljp/co/sony/mc/camera/recorder/AudioLevelMonitor$AudioHandler;->MESSAGE_STOP:I
+    iget v2, p0, Ljp/co/sony/mc/camera/recorder/AudioLevelMonitor$AudioHandler;->MESSAGE_STOP:I
 
-    if-ne v0, v1, :cond_4
+    if-ne v0, v2, :cond_4
 
     iget-object p1, p0, Ljp/co/sony/mc/camera/recorder/AudioLevelMonitor$AudioHandler;->state:Ljp/co/sony/mc/camera/recorder/AudioLevelMonitor$State;
 
@@ -1140,21 +1176,21 @@
 
     if-ne p1, v0, :cond_9
 
-    .line 366
+    .line 367
     invoke-direct {p0}, Ljp/co/sony/mc/camera/recorder/AudioLevelMonitor$AudioHandler;->stopRecorder()V
 
-    .line 367
+    .line 368
     sget-object p1, Ljp/co/sony/mc/camera/recorder/AudioLevelMonitor$State;->PROXY:Ljp/co/sony/mc/camera/recorder/AudioLevelMonitor$State;
 
     iput-object p1, p0, Ljp/co/sony/mc/camera/recorder/AudioLevelMonitor$AudioHandler;->state:Ljp/co/sony/mc/camera/recorder/AudioLevelMonitor$State;
 
     goto :goto_0
 
-    .line 370
+    .line 371
     :cond_4
-    iget v1, p0, Ljp/co/sony/mc/camera/recorder/AudioLevelMonitor$AudioHandler;->MESSAGE_RESTART:I
+    iget v2, p0, Ljp/co/sony/mc/camera/recorder/AudioLevelMonitor$AudioHandler;->MESSAGE_RESTART:I
 
-    if-ne v0, v1, :cond_5
+    if-ne v0, v2, :cond_5
 
     iget-object p1, p0, Ljp/co/sony/mc/camera/recorder/AudioLevelMonitor$AudioHandler;->state:Ljp/co/sony/mc/camera/recorder/AudioLevelMonitor$State;
 
@@ -1162,29 +1198,29 @@
 
     if-ne p1, v0, :cond_9
 
-    .line 371
+    .line 372
     invoke-direct {p0}, Ljp/co/sony/mc/camera/recorder/AudioLevelMonitor$AudioHandler;->stopRecorder()V
 
-    .line 372
+    .line 373
     invoke-direct {p0}, Ljp/co/sony/mc/camera/recorder/AudioLevelMonitor$AudioHandler;->startRecorder()V
 
     goto :goto_0
 
-    .line 375
+    .line 376
     :cond_5
-    iget v1, p0, Ljp/co/sony/mc/camera/recorder/AudioLevelMonitor$AudioHandler;->MESSAGE_ERROR:I
+    iget v2, p0, Ljp/co/sony/mc/camera/recorder/AudioLevelMonitor$AudioHandler;->MESSAGE_ERROR:I
 
-    if-ne v0, v1, :cond_6
+    if-ne v0, v2, :cond_6
 
     invoke-direct {p0}, Ljp/co/sony/mc/camera/recorder/AudioLevelMonitor$AudioHandler;->onError()V
 
     goto :goto_0
 
-    .line 376
+    .line 377
     :cond_6
-    iget v1, p0, Ljp/co/sony/mc/camera/recorder/AudioLevelMonitor$AudioHandler;->MESSAGE_NOTIFY:I
+    iget v2, p0, Ljp/co/sony/mc/camera/recorder/AudioLevelMonitor$AudioHandler;->MESSAGE_NOTIFY:I
 
-    if-ne v0, v1, :cond_7
+    if-ne v0, v2, :cond_7
 
     sget-object p0, Ljp/co/sony/mc/camera/recorder/AudioLevelMonitor;->INSTANCE:Ljp/co/sony/mc/camera/recorder/AudioLevelMonitor;
 
@@ -1200,51 +1236,49 @@
 
     goto :goto_0
 
-    .line 377
+    .line 378
     :cond_7
     iget p1, p0, Ljp/co/sony/mc/camera/recorder/AudioLevelMonitor$AudioHandler;->MESSAGE_ENABLE:I
 
     if-ne v0, p1, :cond_8
 
-    .line 378
+    .line 379
     iget-object p1, p0, Ljp/co/sony/mc/camera/recorder/AudioLevelMonitor$AudioHandler;->state:Ljp/co/sony/mc/camera/recorder/AudioLevelMonitor$State;
 
     sget-object v0, Ljp/co/sony/mc/camera/recorder/AudioLevelMonitor$State;->ACTIVE:Ljp/co/sony/mc/camera/recorder/AudioLevelMonitor$State;
 
     if-ne p1, v0, :cond_9
 
-    .line 379
+    .line 380
     invoke-direct {p0}, Ljp/co/sony/mc/camera/recorder/AudioLevelMonitor$AudioHandler;->startRecorder()V
 
     goto :goto_0
 
-    .line 383
+    .line 384
     :cond_8
     iget p1, p0, Ljp/co/sony/mc/camera/recorder/AudioLevelMonitor$AudioHandler;->MESSAGE_DISABLE:I
 
     if-ne v0, p1, :cond_9
 
-    .line 384
+    .line 385
     iget-object p1, p0, Ljp/co/sony/mc/camera/recorder/AudioLevelMonitor$AudioHandler;->state:Ljp/co/sony/mc/camera/recorder/AudioLevelMonitor$State;
 
     sget-object v0, Ljp/co/sony/mc/camera/recorder/AudioLevelMonitor$State;->ACTIVE:Ljp/co/sony/mc/camera/recorder/AudioLevelMonitor$State;
 
     if-ne p1, v0, :cond_9
 
-    .line 385
+    .line 386
     invoke-direct {p0}, Ljp/co/sony/mc/camera/recorder/AudioLevelMonitor$AudioHandler;->stopRecorder()V
 
     :cond_9
     :goto_0
-    const/4 p0, 0x0
-
-    return p0
+    return v1
 .end method
 
 .method public final sendDeinit()V
     .locals 1
 
-    .line 277
+    .line 278
     iget v0, p0, Ljp/co/sony/mc/camera/recorder/AudioLevelMonitor$AudioHandler;->MESSAGE_DEINIT:I
 
     invoke-direct {p0, v0}, Ljp/co/sony/mc/camera/recorder/AudioLevelMonitor$AudioHandler;->sendMessageCommand(I)V
@@ -1255,7 +1289,7 @@
 .method public final sendDisable()V
     .locals 1
 
-    .line 301
+    .line 302
     iget v0, p0, Ljp/co/sony/mc/camera/recorder/AudioLevelMonitor$AudioHandler;->MESSAGE_DISABLE:I
 
     invoke-direct {p0, v0}, Ljp/co/sony/mc/camera/recorder/AudioLevelMonitor$AudioHandler;->sendMessageCommand(I)V
@@ -1266,7 +1300,7 @@
 .method public final sendEnable()V
     .locals 1
 
-    .line 297
+    .line 298
     iget v0, p0, Ljp/co/sony/mc/camera/recorder/AudioLevelMonitor$AudioHandler;->MESSAGE_ENABLE:I
 
     invoke-direct {p0, v0}, Ljp/co/sony/mc/camera/recorder/AudioLevelMonitor$AudioHandler;->sendMessageCommand(I)V
@@ -1277,7 +1311,7 @@
 .method public final sendError()V
     .locals 1
 
-    .line 305
+    .line 306
     iget v0, p0, Ljp/co/sony/mc/camera/recorder/AudioLevelMonitor$AudioHandler;->MESSAGE_ERROR:I
 
     invoke-direct {p0, v0}, Ljp/co/sony/mc/camera/recorder/AudioLevelMonitor$AudioHandler;->sendMessageCommand(I)V
@@ -1288,7 +1322,7 @@
 .method public final sendInit(Z)V
     .locals 1
 
-    .line 273
+    .line 274
     iget v0, p0, Ljp/co/sony/mc/camera/recorder/AudioLevelMonitor$AudioHandler;->MESSAGE_INIT:I
 
     invoke-direct {p0, v0, p1}, Ljp/co/sony/mc/camera/recorder/AudioLevelMonitor$AudioHandler;->sendSetupMessageCommand(IZ)V
@@ -1303,7 +1337,7 @@
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 293
+    .line 294
     iget v0, p0, Ljp/co/sony/mc/camera/recorder/AudioLevelMonitor$AudioHandler;->MESSAGE_NOTIFY:I
 
     invoke-direct {p0, v0, p1}, Ljp/co/sony/mc/camera/recorder/AudioLevelMonitor$AudioHandler;->sendMessageCommand(I[S)V
@@ -1314,7 +1348,7 @@
 .method public final sendRestart()V
     .locals 1
 
-    .line 289
+    .line 290
     iget v0, p0, Ljp/co/sony/mc/camera/recorder/AudioLevelMonitor$AudioHandler;->MESSAGE_RESTART:I
 
     invoke-direct {p0, v0}, Ljp/co/sony/mc/camera/recorder/AudioLevelMonitor$AudioHandler;->sendMessageCommand(I)V
@@ -1325,7 +1359,7 @@
 .method public final sendStart()V
     .locals 1
 
-    .line 281
+    .line 282
     iget v0, p0, Ljp/co/sony/mc/camera/recorder/AudioLevelMonitor$AudioHandler;->MESSAGE_START:I
 
     invoke-direct {p0, v0}, Ljp/co/sony/mc/camera/recorder/AudioLevelMonitor$AudioHandler;->sendMessageCommand(I)V
@@ -1336,7 +1370,7 @@
 .method public final sendStop()V
     .locals 1
 
-    .line 285
+    .line 286
     iget v0, p0, Ljp/co/sony/mc/camera/recorder/AudioLevelMonitor$AudioHandler;->MESSAGE_STOP:I
 
     invoke-direct {p0, v0}, Ljp/co/sony/mc/camera/recorder/AudioLevelMonitor$AudioHandler;->sendMessageCommand(I)V

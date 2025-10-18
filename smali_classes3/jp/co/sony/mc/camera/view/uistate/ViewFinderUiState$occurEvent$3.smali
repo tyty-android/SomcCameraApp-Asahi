@@ -32,7 +32,7 @@
 
 .annotation runtime Lkotlin/Metadata;
     d1 = {
-        "\u0000\n\n\u0000\n\u0002\u0010\u0002\n\u0002\u0018\u0002\u0010\u0000\u001a\u00020\u0001*\u00020\u0002H\u008a@"
+        "\u0000\n\n\u0000\n\u0002\u0010\u0002\n\u0002\u0018\u0002\u0010\u0000\u001a\u00020\u0001*\u00020\u0002H\n"
     }
     d2 = {
         "<anonymous>",
@@ -41,8 +41,8 @@
     }
     k = 0x3
     mv = {
-        0x1,
-        0x9,
+        0x2,
+        0x0,
         0x0
     }
     xi = 0x30
@@ -53,7 +53,7 @@
     f = "ViewFinderUiState.kt"
     i = {}
     l = {
-        0x240
+        0x25a
     }
     m = "invokeSuspend"
     n = {}
@@ -68,6 +68,16 @@
 
 
 # direct methods
+.method public static synthetic $r8$lambda$s6PErwb0xa5DRI_T62Qk4Mxid8Q(Ljp/co/sony/mc/camera/view/uistate/ViewFinderUiState;)Lkotlin/Unit;
+    .locals 0
+
+    invoke-static {p0}, Ljp/co/sony/mc/camera/view/uistate/ViewFinderUiState$occurEvent$3;->invokeSuspend$lambda$0(Ljp/co/sony/mc/camera/view/uistate/ViewFinderUiState;)Lkotlin/Unit;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
 .method constructor <init>(Ljp/co/sony/mc/camera/view/uistate/ViewFinderUiState;Lkotlin/coroutines/Continuation;)V
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
@@ -88,6 +98,22 @@
     invoke-direct {p0, p1, p2}, Lkotlin/coroutines/jvm/internal/SuspendLambda;-><init>(ILkotlin/coroutines/Continuation;)V
 
     return-void
+.end method
+
+.method private static final invokeSuspend$lambda$0(Ljp/co/sony/mc/camera/view/uistate/ViewFinderUiState;)Lkotlin/Unit;
+    .locals 1
+
+    .line 603
+    sget-object v0, Ljp/co/sony/mc/camera/view/uistate/FinderEvent$OnTransParentShowingItem;->INSTANCE:Ljp/co/sony/mc/camera/view/uistate/FinderEvent$OnTransParentShowingItem;
+
+    check-cast v0, Ljp/co/sony/mc/camera/view/uistate/FinderEvent;
+
+    invoke-static {p0, v0}, Ljp/co/sony/mc/camera/view/uistate/ViewFinderUiState;->access$occurEvent(Ljp/co/sony/mc/camera/view/uistate/ViewFinderUiState;Ljp/co/sony/mc/camera/view/uistate/FinderEvent;)V
+
+    .line 604
+    sget-object p0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
+
+    return-object p0
 .end method
 
 
@@ -167,7 +193,7 @@
 
     move-result-object v0
 
-    .line 575
+    .line 601
     iget v1, p0, Ljp/co/sony/mc/camera/view/uistate/ViewFinderUiState$occurEvent$3;->label:I
 
     const/4 v2, 0x1
@@ -192,24 +218,22 @@
     :cond_1
     invoke-static {p1}, Lkotlin/ResultKt;->throwOnFailure(Ljava/lang/Object;)V
 
-    .line 576
-    new-instance p1, Ljp/co/sony/mc/camera/view/uistate/ViewFinderUiState$occurEvent$3$1;
+    .line 602
+    iget-object p1, p0, Ljp/co/sony/mc/camera/view/uistate/ViewFinderUiState$occurEvent$3;->this$0:Ljp/co/sony/mc/camera/view/uistate/ViewFinderUiState;
 
-    iget-object v1, p0, Ljp/co/sony/mc/camera/view/uistate/ViewFinderUiState$occurEvent$3;->this$0:Ljp/co/sony/mc/camera/view/uistate/ViewFinderUiState;
+    new-instance v1, Ljp/co/sony/mc/camera/view/uistate/ViewFinderUiState$occurEvent$3$$ExternalSyntheticLambda0;
 
-    invoke-direct {p1, v1}, Ljp/co/sony/mc/camera/view/uistate/ViewFinderUiState$occurEvent$3$1;-><init>(Ljp/co/sony/mc/camera/view/uistate/ViewFinderUiState;)V
+    invoke-direct {v1, p1}, Ljp/co/sony/mc/camera/view/uistate/ViewFinderUiState$occurEvent$3$$ExternalSyntheticLambda0;-><init>(Ljp/co/sony/mc/camera/view/uistate/ViewFinderUiState;)V
 
-    check-cast p1, Lkotlin/jvm/functions/Function0;
+    move-object p1, p0
 
-    move-object v1, p0
-
-    check-cast v1, Lkotlin/coroutines/Continuation;
+    check-cast p1, Lkotlin/coroutines/Continuation;
 
     iput v2, p0, Ljp/co/sony/mc/camera/view/uistate/ViewFinderUiState$occurEvent$3;->label:I
 
     const-wide/16 v2, 0xfa0
 
-    invoke-static {v2, v3, p1, v1}, Ljp/co/sony/mc/camera/util/CoroutineUtilKt;->callBackWhenTimeOut(JLkotlin/jvm/functions/Function0;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+    invoke-static {v2, v3, v1, p1}, Ljp/co/sony/mc/camera/util/CoroutineUtilKt;->callBackWhenTimeOut(JLkotlin/jvm/functions/Function0;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
 
     move-result-object p0
 
@@ -217,7 +241,7 @@
 
     return-object v0
 
-    .line 579
+    .line 605
     :cond_2
     :goto_0
     sget-object p0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;

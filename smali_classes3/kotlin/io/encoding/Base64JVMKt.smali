@@ -66,7 +66,7 @@
 
     move-result-object p0
 
-    const-string/jumbo p1, "this as java.lang.String\u2026ing(startIndex, endIndex)"
+    const-string/jumbo p1, "substring(...)"
 
     invoke-static {p0, p1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
 
@@ -80,7 +80,7 @@
 
     move-result-object p0
 
-    const-string/jumbo p1, "this as java.lang.String).getBytes(charset)"
+    const-string p1, "getBytes(...)"
 
     invoke-static {p0, p1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
 

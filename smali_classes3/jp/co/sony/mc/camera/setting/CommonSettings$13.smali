@@ -21,7 +21,7 @@
 .method constructor <init>()V
     .locals 0
 
-    .line 431
+    .line 434
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -42,10 +42,10 @@
         }
     .end annotation
 
-    .line 435
+    .line 438
     check-cast p1, Ljp/co/sony/mc/camera/setting/CommonSettings;
 
-    .line 436
+    .line 439
     invoke-static {p1}, Ljp/co/sony/mc/camera/setting/CommonSettings;->-$$Nest$mgetVolumeKey(Ljp/co/sony/mc/camera/setting/CommonSettings;)Ljp/co/sony/mc/camera/configuration/parameters/VolumeKey;
 
     move-result-object p0

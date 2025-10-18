@@ -25,7 +25,7 @@
 .method constructor <init>(Ljp/co/sony/mc/camera/controller/StateMachine$StateBurstCapture;)V
     .locals 0
 
-    .line 4531
+    .line 4559
     iput-object p1, p0, Ljp/co/sony/mc/camera/controller/StateMachine$StateBurstCapture$1;->this$1:Ljp/co/sony/mc/camera/controller/StateMachine$StateBurstCapture;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -38,7 +38,7 @@
 .method public run()V
     .locals 0
 
-    .line 4534
+    .line 4562
     iget-object p0, p0, Ljp/co/sony/mc/camera/controller/StateMachine$StateBurstCapture$1;->this$1:Ljp/co/sony/mc/camera/controller/StateMachine$StateBurstCapture;
 
     invoke-static {p0}, Ljp/co/sony/mc/camera/controller/StateMachine$StateBurstCapture;->-$$Nest$mrequestStopBurstCapture(Ljp/co/sony/mc/camera/controller/StateMachine$StateBurstCapture;)V

@@ -91,7 +91,7 @@
 .method public bridge synthetic invoke(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
 
-    .line 241
+    .line 252
     check-cast p1, Ljava/util/List;
 
     invoke-virtual {p0, p1}, Landroidx/compose/foundation/text/BasicTextKt$BasicText$3$1;->invoke(Ljava/util/List;)V
@@ -102,7 +102,7 @@
 .end method
 
 .method public final invoke(Ljava/util/List;)V
-    .locals 1
+    .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -112,11 +112,7 @@
         }
     .end annotation
 
-    const-string v0, "it"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 241
+    .line 252
     iget-object p0, p0, Landroidx/compose/foundation/text/BasicTextKt$BasicText$3$1;->$measuredPlaceholderPositions:Landroidx/compose/runtime/MutableState;
 
     invoke-interface {p0, p1}, Landroidx/compose/runtime/MutableState;->setValue(Ljava/lang/Object;)V

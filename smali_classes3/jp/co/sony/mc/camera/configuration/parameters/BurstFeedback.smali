@@ -24,7 +24,7 @@
 
 .field public static final enum ON:Ljp/co/sony/mc/camera/configuration/parameters/BurstFeedback;
 
-.field private static final sParameterTextId:I = 0x7f110163
+.field private static final sParameterTextId:I = 0x7f110166
 
 
 # instance fields
@@ -55,7 +55,7 @@
     .line 21
     new-instance v0, Ljp/co/sony/mc/camera/configuration/parameters/BurstFeedback;
 
-    const v1, 0x7f1103bf
+    const v1, 0x7f1103f4
 
     const-string v2, "ON"
 
@@ -72,7 +72,7 @@
 
     const/4 v1, 0x1
 
-    const v2, 0x7f1103be
+    const v2, 0x7f1103f3
 
     const-string v3, "OFF"
 

@@ -28,7 +28,7 @@
 .method static constructor <clinit>()V
     .locals 1
 
-    .line 433
+    .line 453
     new-instance v0, Ljava/lang/Object;
 
     invoke-direct {v0}, Ljava/lang/Object;-><init>()V
@@ -41,10 +41,10 @@
 .method public constructor <init>()V
     .locals 1
 
-    .line 437
+    .line 457
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 438
+    .line 458
     invoke-static {}, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$CameraSessionId;->makeTag()Ljava/lang/String;
 
     move-result-object v0
@@ -57,12 +57,12 @@
 .method private static makeTag()Ljava/lang/String;
     .locals 2
 
-    .line 442
+    .line 462
     sget-object v0, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$CameraSessionId;->sIdLock:Ljava/lang/Object;
 
     monitor-enter v0
 
-    .line 443
+    .line 463
     :try_start_0
     sget v1, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$CameraSessionId;->sLastId:I
 
@@ -81,7 +81,7 @@
     :catchall_0
     move-exception v1
 
-    .line 444
+    .line 464
     monitor-exit v0
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
@@ -94,7 +94,7 @@
 .method public toString()Ljava/lang/String;
     .locals 0
 
-    .line 449
+    .line 469
     iget-object p0, p0, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$CameraSessionId;->mTag:Ljava/lang/String;
 
     return-object p0

@@ -21,7 +21,7 @@
 .method constructor <init>()V
     .locals 0
 
-    .line 986
+    .line 989
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -46,13 +46,13 @@
         }
     .end annotation
 
-    .line 990
+    .line 993
     check-cast p1, Ljp/co/sony/mc/camera/setting/CommonSettings;
 
-    .line 991
-    check-cast p3, Ljp/co/sony/mc/camera/configuration/parameters/DisplayFlip;
+    .line 994
+    check-cast p3, Ljp/co/sony/mc/camera/configuration/parameters/EnduranceMode;
 
-    invoke-virtual {p1, p3}, Ljp/co/sony/mc/camera/setting/CommonSettings;->setDispFlip(Ljp/co/sony/mc/camera/configuration/parameters/DisplayFlip;)Z
+    invoke-static {p1, p3}, Ljp/co/sony/mc/camera/setting/CommonSettings;->-$$Nest$msetEnduranceMode(Ljp/co/sony/mc/camera/setting/CommonSettings;Ljp/co/sony/mc/camera/configuration/parameters/EnduranceMode;)Z
 
     move-result p0
 

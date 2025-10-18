@@ -1071,61 +1071,55 @@
 .end method
 
 .method public createRowEquals(Landroidx/constraintlayout/core/SolverVariable;Landroidx/constraintlayout/core/SolverVariable;I)Landroidx/constraintlayout/core/ArrayRow;
-    .locals 3
+    .locals 2
 
-    const/high16 v0, -0x40800000    # -1.0f
+    const/4 v0, 0x0
 
-    const/high16 v1, 0x3f800000    # 1.0f
-
-    if-eqz p3, :cond_2
+    if-eqz p3, :cond_1
 
     if-gez p3, :cond_0
 
     mul-int/lit8 p3, p3, -0x1
 
-    const/4 v2, 0x1
-
-    goto :goto_0
+    const/4 v0, 0x1
 
     :cond_0
-    const/4 v2, 0x0
-
-    :goto_0
     int-to-float p3, p3
 
     .line 165
     iput p3, p0, Landroidx/constraintlayout/core/ArrayRow;->constantValue:F
 
-    if-nez v2, :cond_1
-
-    goto :goto_1
-
-    .line 171
     :cond_1
-    iget-object p3, p0, Landroidx/constraintlayout/core/ArrayRow;->variables:Landroidx/constraintlayout/core/ArrayRow$ArrayRowVariables;
+    const/high16 p3, -0x40800000    # -1.0f
 
-    invoke-interface {p3, p1, v1}, Landroidx/constraintlayout/core/ArrayRow$ArrayRowVariables;->put(Landroidx/constraintlayout/core/SolverVariable;F)V
+    const/high16 v1, 0x3f800000    # 1.0f
 
-    .line 172
-    iget-object p1, p0, Landroidx/constraintlayout/core/ArrayRow;->variables:Landroidx/constraintlayout/core/ArrayRow$ArrayRowVariables;
-
-    invoke-interface {p1, p2, v0}, Landroidx/constraintlayout/core/ArrayRow$ArrayRowVariables;->put(Landroidx/constraintlayout/core/SolverVariable;F)V
-
-    goto :goto_2
+    if-nez v0, :cond_2
 
     .line 168
-    :cond_2
-    :goto_1
-    iget-object p3, p0, Landroidx/constraintlayout/core/ArrayRow;->variables:Landroidx/constraintlayout/core/ArrayRow$ArrayRowVariables;
+    iget-object v0, p0, Landroidx/constraintlayout/core/ArrayRow;->variables:Landroidx/constraintlayout/core/ArrayRow$ArrayRowVariables;
 
-    invoke-interface {p3, p1, v0}, Landroidx/constraintlayout/core/ArrayRow$ArrayRowVariables;->put(Landroidx/constraintlayout/core/SolverVariable;F)V
+    invoke-interface {v0, p1, p3}, Landroidx/constraintlayout/core/ArrayRow$ArrayRowVariables;->put(Landroidx/constraintlayout/core/SolverVariable;F)V
 
     .line 169
     iget-object p1, p0, Landroidx/constraintlayout/core/ArrayRow;->variables:Landroidx/constraintlayout/core/ArrayRow$ArrayRowVariables;
 
     invoke-interface {p1, p2, v1}, Landroidx/constraintlayout/core/ArrayRow$ArrayRowVariables;->put(Landroidx/constraintlayout/core/SolverVariable;F)V
 
-    :goto_2
+    goto :goto_0
+
+    .line 171
+    :cond_2
+    iget-object v0, p0, Landroidx/constraintlayout/core/ArrayRow;->variables:Landroidx/constraintlayout/core/ArrayRow$ArrayRowVariables;
+
+    invoke-interface {v0, p1, v1}, Landroidx/constraintlayout/core/ArrayRow$ArrayRowVariables;->put(Landroidx/constraintlayout/core/SolverVariable;F)V
+
+    .line 172
+    iget-object p1, p0, Landroidx/constraintlayout/core/ArrayRow;->variables:Landroidx/constraintlayout/core/ArrayRow$ArrayRowVariables;
+
+    invoke-interface {p1, p2, p3}, Landroidx/constraintlayout/core/ArrayRow$ArrayRowVariables;->put(Landroidx/constraintlayout/core/SolverVariable;F)V
+
+    :goto_0
     return-object p0
 .end method
 
@@ -1148,59 +1142,35 @@
 .end method
 
 .method public createRowGreaterThan(Landroidx/constraintlayout/core/SolverVariable;Landroidx/constraintlayout/core/SolverVariable;Landroidx/constraintlayout/core/SolverVariable;I)Landroidx/constraintlayout/core/ArrayRow;
-    .locals 3
+    .locals 2
 
-    const/high16 v0, -0x40800000    # -1.0f
+    const/4 v0, 0x0
 
-    const/high16 v1, 0x3f800000    # 1.0f
-
-    if-eqz p4, :cond_2
+    if-eqz p4, :cond_1
 
     if-gez p4, :cond_0
 
     mul-int/lit8 p4, p4, -0x1
 
-    const/4 v2, 0x1
-
-    goto :goto_0
+    const/4 v0, 0x1
 
     :cond_0
-    const/4 v2, 0x0
-
-    :goto_0
     int-to-float p4, p4
 
     .line 192
     iput p4, p0, Landroidx/constraintlayout/core/ArrayRow;->constantValue:F
 
-    if-nez v2, :cond_1
-
-    goto :goto_1
-
-    .line 199
     :cond_1
-    iget-object p4, p0, Landroidx/constraintlayout/core/ArrayRow;->variables:Landroidx/constraintlayout/core/ArrayRow$ArrayRowVariables;
+    const/high16 p4, -0x40800000    # -1.0f
 
-    invoke-interface {p4, p1, v1}, Landroidx/constraintlayout/core/ArrayRow$ArrayRowVariables;->put(Landroidx/constraintlayout/core/SolverVariable;F)V
+    const/high16 v1, 0x3f800000    # 1.0f
 
-    .line 200
-    iget-object p1, p0, Landroidx/constraintlayout/core/ArrayRow;->variables:Landroidx/constraintlayout/core/ArrayRow$ArrayRowVariables;
-
-    invoke-interface {p1, p2, v0}, Landroidx/constraintlayout/core/ArrayRow$ArrayRowVariables;->put(Landroidx/constraintlayout/core/SolverVariable;F)V
-
-    .line 201
-    iget-object p1, p0, Landroidx/constraintlayout/core/ArrayRow;->variables:Landroidx/constraintlayout/core/ArrayRow$ArrayRowVariables;
-
-    invoke-interface {p1, p3, v0}, Landroidx/constraintlayout/core/ArrayRow$ArrayRowVariables;->put(Landroidx/constraintlayout/core/SolverVariable;F)V
-
-    goto :goto_2
+    if-nez v0, :cond_2
 
     .line 195
-    :cond_2
-    :goto_1
-    iget-object p4, p0, Landroidx/constraintlayout/core/ArrayRow;->variables:Landroidx/constraintlayout/core/ArrayRow$ArrayRowVariables;
+    iget-object v0, p0, Landroidx/constraintlayout/core/ArrayRow;->variables:Landroidx/constraintlayout/core/ArrayRow$ArrayRowVariables;
 
-    invoke-interface {p4, p1, v0}, Landroidx/constraintlayout/core/ArrayRow$ArrayRowVariables;->put(Landroidx/constraintlayout/core/SolverVariable;F)V
+    invoke-interface {v0, p1, p4}, Landroidx/constraintlayout/core/ArrayRow$ArrayRowVariables;->put(Landroidx/constraintlayout/core/SolverVariable;F)V
 
     .line 196
     iget-object p1, p0, Landroidx/constraintlayout/core/ArrayRow;->variables:Landroidx/constraintlayout/core/ArrayRow$ArrayRowVariables;
@@ -1212,64 +1182,58 @@
 
     invoke-interface {p1, p3, v1}, Landroidx/constraintlayout/core/ArrayRow$ArrayRowVariables;->put(Landroidx/constraintlayout/core/SolverVariable;F)V
 
-    :goto_2
+    goto :goto_0
+
+    .line 199
+    :cond_2
+    iget-object v0, p0, Landroidx/constraintlayout/core/ArrayRow;->variables:Landroidx/constraintlayout/core/ArrayRow$ArrayRowVariables;
+
+    invoke-interface {v0, p1, v1}, Landroidx/constraintlayout/core/ArrayRow$ArrayRowVariables;->put(Landroidx/constraintlayout/core/SolverVariable;F)V
+
+    .line 200
+    iget-object p1, p0, Landroidx/constraintlayout/core/ArrayRow;->variables:Landroidx/constraintlayout/core/ArrayRow$ArrayRowVariables;
+
+    invoke-interface {p1, p2, p4}, Landroidx/constraintlayout/core/ArrayRow$ArrayRowVariables;->put(Landroidx/constraintlayout/core/SolverVariable;F)V
+
+    .line 201
+    iget-object p1, p0, Landroidx/constraintlayout/core/ArrayRow;->variables:Landroidx/constraintlayout/core/ArrayRow$ArrayRowVariables;
+
+    invoke-interface {p1, p3, p4}, Landroidx/constraintlayout/core/ArrayRow$ArrayRowVariables;->put(Landroidx/constraintlayout/core/SolverVariable;F)V
+
+    :goto_0
     return-object p0
 .end method
 
 .method public createRowLowerThan(Landroidx/constraintlayout/core/SolverVariable;Landroidx/constraintlayout/core/SolverVariable;Landroidx/constraintlayout/core/SolverVariable;I)Landroidx/constraintlayout/core/ArrayRow;
-    .locals 3
+    .locals 2
 
-    const/high16 v0, -0x40800000    # -1.0f
+    const/4 v0, 0x0
 
-    const/high16 v1, 0x3f800000    # 1.0f
-
-    if-eqz p4, :cond_2
+    if-eqz p4, :cond_1
 
     if-gez p4, :cond_0
 
     mul-int/lit8 p4, p4, -0x1
 
-    const/4 v2, 0x1
-
-    goto :goto_0
+    const/4 v0, 0x1
 
     :cond_0
-    const/4 v2, 0x0
-
-    :goto_0
     int-to-float p4, p4
 
     .line 221
     iput p4, p0, Landroidx/constraintlayout/core/ArrayRow;->constantValue:F
 
-    if-nez v2, :cond_1
-
-    goto :goto_1
-
-    .line 228
     :cond_1
-    iget-object p4, p0, Landroidx/constraintlayout/core/ArrayRow;->variables:Landroidx/constraintlayout/core/ArrayRow$ArrayRowVariables;
+    const/high16 p4, -0x40800000    # -1.0f
 
-    invoke-interface {p4, p1, v1}, Landroidx/constraintlayout/core/ArrayRow$ArrayRowVariables;->put(Landroidx/constraintlayout/core/SolverVariable;F)V
+    const/high16 v1, 0x3f800000    # 1.0f
 
-    .line 229
-    iget-object p1, p0, Landroidx/constraintlayout/core/ArrayRow;->variables:Landroidx/constraintlayout/core/ArrayRow$ArrayRowVariables;
-
-    invoke-interface {p1, p2, v0}, Landroidx/constraintlayout/core/ArrayRow$ArrayRowVariables;->put(Landroidx/constraintlayout/core/SolverVariable;F)V
-
-    .line 230
-    iget-object p1, p0, Landroidx/constraintlayout/core/ArrayRow;->variables:Landroidx/constraintlayout/core/ArrayRow$ArrayRowVariables;
-
-    invoke-interface {p1, p3, v1}, Landroidx/constraintlayout/core/ArrayRow$ArrayRowVariables;->put(Landroidx/constraintlayout/core/SolverVariable;F)V
-
-    goto :goto_2
+    if-nez v0, :cond_2
 
     .line 224
-    :cond_2
-    :goto_1
-    iget-object p4, p0, Landroidx/constraintlayout/core/ArrayRow;->variables:Landroidx/constraintlayout/core/ArrayRow$ArrayRowVariables;
+    iget-object v0, p0, Landroidx/constraintlayout/core/ArrayRow;->variables:Landroidx/constraintlayout/core/ArrayRow$ArrayRowVariables;
 
-    invoke-interface {p4, p1, v0}, Landroidx/constraintlayout/core/ArrayRow$ArrayRowVariables;->put(Landroidx/constraintlayout/core/SolverVariable;F)V
+    invoke-interface {v0, p1, p4}, Landroidx/constraintlayout/core/ArrayRow$ArrayRowVariables;->put(Landroidx/constraintlayout/core/SolverVariable;F)V
 
     .line 225
     iget-object p1, p0, Landroidx/constraintlayout/core/ArrayRow;->variables:Landroidx/constraintlayout/core/ArrayRow$ArrayRowVariables;
@@ -1279,9 +1243,27 @@
     .line 226
     iget-object p1, p0, Landroidx/constraintlayout/core/ArrayRow;->variables:Landroidx/constraintlayout/core/ArrayRow$ArrayRowVariables;
 
-    invoke-interface {p1, p3, v0}, Landroidx/constraintlayout/core/ArrayRow$ArrayRowVariables;->put(Landroidx/constraintlayout/core/SolverVariable;F)V
+    invoke-interface {p1, p3, p4}, Landroidx/constraintlayout/core/ArrayRow$ArrayRowVariables;->put(Landroidx/constraintlayout/core/SolverVariable;F)V
 
-    :goto_2
+    goto :goto_0
+
+    .line 228
+    :cond_2
+    iget-object v0, p0, Landroidx/constraintlayout/core/ArrayRow;->variables:Landroidx/constraintlayout/core/ArrayRow$ArrayRowVariables;
+
+    invoke-interface {v0, p1, v1}, Landroidx/constraintlayout/core/ArrayRow$ArrayRowVariables;->put(Landroidx/constraintlayout/core/SolverVariable;F)V
+
+    .line 229
+    iget-object p1, p0, Landroidx/constraintlayout/core/ArrayRow;->variables:Landroidx/constraintlayout/core/ArrayRow$ArrayRowVariables;
+
+    invoke-interface {p1, p2, p4}, Landroidx/constraintlayout/core/ArrayRow$ArrayRowVariables;->put(Landroidx/constraintlayout/core/SolverVariable;F)V
+
+    .line 230
+    iget-object p1, p0, Landroidx/constraintlayout/core/ArrayRow;->variables:Landroidx/constraintlayout/core/ArrayRow$ArrayRowVariables;
+
+    invoke-interface {p1, p3, v1}, Landroidx/constraintlayout/core/ArrayRow$ArrayRowVariables;->put(Landroidx/constraintlayout/core/SolverVariable;F)V
+
+    :goto_0
     return-object p0
 .end method
 

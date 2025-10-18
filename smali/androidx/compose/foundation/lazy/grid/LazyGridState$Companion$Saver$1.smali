@@ -84,7 +84,7 @@
 .method public bridge synthetic invoke(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
 
-    .line 443
+    .line 474
     check-cast p1, Landroidx/compose/runtime/saveable/SaverScope;
 
     check-cast p2, Landroidx/compose/foundation/lazy/grid/LazyGridState;
@@ -110,22 +110,22 @@
         }
     .end annotation
 
-    const-string p0, "$this$listSaver"
+    const/4 p0, 0x2
 
-    invoke-static {p1, p0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+    .line 475
+    new-array p0, p0, [Ljava/lang/Integer;
 
-    const-string p0, "it"
-
-    invoke-static {p2, p0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 444
     invoke-virtual {p2}, Landroidx/compose/foundation/lazy/grid/LazyGridState;->getFirstVisibleItemIndex()I
 
-    move-result p0
+    move-result p1
 
-    invoke-static {p0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+    invoke-static {p1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
-    move-result-object p0
+    move-result-object p1
+
+    const/4 v0, 0x0
+
+    aput-object p1, p0, v0
 
     invoke-virtual {p2}, Landroidx/compose/foundation/lazy/grid/LazyGridState;->getFirstVisibleItemScrollOffset()I
 
@@ -135,19 +135,11 @@
 
     move-result-object p1
 
-    const/4 p2, 0x2
+    const/4 p2, 0x1
 
-    new-array p2, p2, [Ljava/lang/Integer;
+    aput-object p1, p0, p2
 
-    const/4 v0, 0x0
-
-    aput-object p0, p2, v0
-
-    const/4 p0, 0x1
-
-    aput-object p1, p2, p0
-
-    invoke-static {p2}, Lkotlin/collections/CollectionsKt;->listOf([Ljava/lang/Object;)Ljava/util/List;
+    invoke-static {p0}, Lkotlin/collections/CollectionsKt;->listOf([Ljava/lang/Object;)Ljava/util/List;
 
     move-result-object p0
 

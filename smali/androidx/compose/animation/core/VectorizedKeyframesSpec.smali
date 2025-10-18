@@ -112,7 +112,7 @@
 .end method
 
 .method public constructor <init>(Ljava/util/Map;II)V
-    .locals 1
+    .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -125,10 +125,6 @@
             ">;>;II)V"
         }
     .end annotation
-
-    const-string v0, "keyframes"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 226
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -220,18 +216,6 @@
         }
     .end annotation
 
-    const-string v0, "initialValue"
-
-    invoke-static {p3, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string/jumbo v0, "targetValue"
-
-    invoke-static {p4, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string v0, "initialVelocity"
-
-    invoke-static {p5, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
     const-wide/32 v0, 0xf4240
 
     .line 241
@@ -242,7 +226,7 @@
 
     check-cast p5, Landroidx/compose/animation/core/VectorizedDurationBasedAnimationSpec;
 
-    invoke-static {p5, p1, p2}, Landroidx/compose/animation/core/VectorizedAnimationSpecKt;->access$clampPlayTime(Landroidx/compose/animation/core/VectorizedDurationBasedAnimationSpec;J)J
+    invoke-static {p5, p1, p2}, Landroidx/compose/animation/core/VectorizedAnimationSpecKt;->clampPlayTime(Landroidx/compose/animation/core/VectorizedDurationBasedAnimationSpec;J)J
 
     move-result-wide p1
 
@@ -484,18 +468,6 @@
         }
     .end annotation
 
-    const-string v0, "initialValue"
-
-    invoke-static {p3, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string/jumbo v0, "targetValue"
-
-    invoke-static {p4, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string v0, "initialVelocity"
-
-    invoke-static {p5, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
     const-wide/32 v0, 0xf4240
 
     .line 292
@@ -506,7 +478,7 @@
 
     check-cast v0, Landroidx/compose/animation/core/VectorizedDurationBasedAnimationSpec;
 
-    invoke-static {v0, p1, p2}, Landroidx/compose/animation/core/VectorizedAnimationSpecKt;->access$clampPlayTime(Landroidx/compose/animation/core/VectorizedDurationBasedAnimationSpec;J)J
+    invoke-static {v0, p1, p2}, Landroidx/compose/animation/core/VectorizedAnimationSpecKt;->clampPlayTime(Landroidx/compose/animation/core/VectorizedDurationBasedAnimationSpec;J)J
 
     move-result-wide v2
 

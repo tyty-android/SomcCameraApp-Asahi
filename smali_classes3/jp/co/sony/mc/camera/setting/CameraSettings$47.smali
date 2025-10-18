@@ -21,7 +21,7 @@
 .method constructor <init>()V
     .locals 0
 
-    .line 931
+    .line 985
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -42,11 +42,11 @@
         }
     .end annotation
 
-    .line 935
+    .line 989
     check-cast p1, Ljp/co/sony/mc/camera/setting/CameraSettings;
 
-    .line 936
-    invoke-virtual {p1}, Ljp/co/sony/mc/camera/setting/CameraSettings;->getAmberBlue()Ljava/lang/Float;
+    .line 990
+    invoke-virtual {p1}, Ljp/co/sony/mc/camera/setting/CameraSettings;->getBrightness()Ljava/lang/Integer;
 
     move-result-object p0
 

@@ -19,5 +19,4 @@ Slå WLAN til under INDSTILLINGER."</string>
     <string name="camera_strings_runtime_permission_rationale_network_cta_txt">"Appen bruger WLAN og mobildata til at sende brugerdata (dvs. optagne billeder/videoer, stemmedata, kontooplysninger om de anvendte tjenester osv.) til internettet.
 Bemærk, at du kan blive opkrævet for data afhængigt af kontrakten med din netværksoperatør eller internetudbyder."</string>
     <string name="camera_strings_streaming_error_wifi_disconnected_txt">Ingen WLAN-forbindelse</string>
-    <string name="mv_wireless_network_txt">Brug WLAN og mobildata</string>
 </resources>

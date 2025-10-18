@@ -58,19 +58,19 @@
 .method public constructor <init>(IIII)V
     .locals 0
 
-    .line 578
+    .line 667
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 579
+    .line 668
     iput p1, p0, Landroidx/compose/ui/semantics/CollectionItemInfo;->rowIndex:I
 
-    .line 580
+    .line 669
     iput p2, p0, Landroidx/compose/ui/semantics/CollectionItemInfo;->rowSpan:I
 
-    .line 581
+    .line 670
     iput p3, p0, Landroidx/compose/ui/semantics/CollectionItemInfo;->columnIndex:I
 
-    .line 582
+    .line 671
     iput p4, p0, Landroidx/compose/ui/semantics/CollectionItemInfo;->columnSpan:I
 
     return-void
@@ -81,7 +81,7 @@
 .method public final getColumnIndex()I
     .locals 0
 
-    .line 581
+    .line 670
     iget p0, p0, Landroidx/compose/ui/semantics/CollectionItemInfo;->columnIndex:I
 
     return p0
@@ -90,7 +90,7 @@
 .method public final getColumnSpan()I
     .locals 0
 
-    .line 582
+    .line 671
     iget p0, p0, Landroidx/compose/ui/semantics/CollectionItemInfo;->columnSpan:I
 
     return p0
@@ -99,7 +99,7 @@
 .method public final getRowIndex()I
     .locals 0
 
-    .line 579
+    .line 668
     iget p0, p0, Landroidx/compose/ui/semantics/CollectionItemInfo;->rowIndex:I
 
     return p0
@@ -108,7 +108,7 @@
 .method public final getRowSpan()I
     .locals 0
 
-    .line 580
+    .line 669
     iget p0, p0, Landroidx/compose/ui/semantics/CollectionItemInfo;->rowSpan:I
 
     return p0

@@ -11,7 +11,7 @@
 .method public constructor <init>(Lcom/google/android/gms/auth/GooglePlayServicesAvailabilityException;)V
     .locals 0
 
-    .line 58
+    .line 51
     invoke-direct {p0, p1}, Lcom/google/api/client/googleapis/extensions/android/gms/auth/UserRecoverableAuthIOException;-><init>(Lcom/google/android/gms/auth/UserRecoverableAuthException;)V
 
     return-void
@@ -22,7 +22,7 @@
 .method public bridge synthetic getCause()Lcom/google/android/gms/auth/GoogleAuthException;
     .locals 0
 
-    .line 48
+    .line 43
     invoke-virtual {p0}, Lcom/google/api/client/googleapis/extensions/android/gms/auth/GooglePlayServicesAvailabilityIOException;->getCause()Lcom/google/android/gms/auth/GooglePlayServicesAvailabilityException;
 
     move-result-object p0
@@ -33,7 +33,7 @@
 .method public getCause()Lcom/google/android/gms/auth/GooglePlayServicesAvailabilityException;
     .locals 0
 
-    .line 63
+    .line 56
     invoke-super {p0}, Lcom/google/api/client/googleapis/extensions/android/gms/auth/UserRecoverableAuthIOException;->getCause()Lcom/google/android/gms/auth/UserRecoverableAuthException;
 
     move-result-object p0
@@ -46,7 +46,7 @@
 .method public bridge synthetic getCause()Lcom/google/android/gms/auth/UserRecoverableAuthException;
     .locals 0
 
-    .line 48
+    .line 43
     invoke-virtual {p0}, Lcom/google/api/client/googleapis/extensions/android/gms/auth/GooglePlayServicesAvailabilityIOException;->getCause()Lcom/google/android/gms/auth/GooglePlayServicesAvailabilityException;
 
     move-result-object p0
@@ -57,7 +57,7 @@
 .method public bridge synthetic getCause()Ljava/lang/Throwable;
     .locals 0
 
-    .line 48
+    .line 43
     invoke-virtual {p0}, Lcom/google/api/client/googleapis/extensions/android/gms/auth/GooglePlayServicesAvailabilityIOException;->getCause()Lcom/google/android/gms/auth/GooglePlayServicesAvailabilityException;
 
     move-result-object p0
@@ -68,7 +68,7 @@
 .method public final getConnectionStatusCode()I
     .locals 0
 
-    .line 71
+    .line 64
     invoke-virtual {p0}, Lcom/google/api/client/googleapis/extensions/android/gms/auth/GooglePlayServicesAvailabilityIOException;->getCause()Lcom/google/android/gms/auth/GooglePlayServicesAvailabilityException;
 
     move-result-object p0

@@ -18,7 +18,7 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 257
+    .line 262
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -29,7 +29,7 @@
 .method public getProviderInfo(Landroid/content/pm/ResolveInfo;)Landroid/content/pm/ProviderInfo;
     .locals 0
 
-    .line 286
+    .line 291
     new-instance p0, Ljava/lang/IllegalStateException;
 
     const-string p1, "Unable to get provider info prior to API 19"
@@ -49,12 +49,12 @@
 
     const/16 p0, 0x40
 
-    .line 265
+    .line 270
     invoke-virtual {p1, p2, p0}, Landroid/content/pm/PackageManager;->getPackageInfo(Ljava/lang/String;I)Landroid/content/pm/PackageInfo;
 
     move-result-object p0
 
-    .line 267
+    .line 272
     iget-object p0, p0, Landroid/content/pm/PackageInfo;->signatures:[Landroid/content/pm/Signature;
 
     return-object p0
@@ -74,7 +74,7 @@
         }
     .end annotation
 
-    .line 276
+    .line 281
     invoke-static {}, Ljava/util/Collections;->emptyList()Ljava/util/List;
 
     move-result-object p0

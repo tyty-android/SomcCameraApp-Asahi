@@ -46,17 +46,17 @@
 .method public constructor <init>()V
     .locals 1
 
-    .line 36
+    .line 38
     invoke-direct {p0}, Ljp/co/sony/mc/camera/view/setting/fragment/RotatableDialogFragment;-><init>()V
 
-    .line 44
+    .line 46
     new-instance v0, Ljp/co/sony/mc/camera/view/setting/fragment/CameraSettingsDialogFragment$1;
 
     invoke-direct {v0, p0}, Ljp/co/sony/mc/camera/view/setting/fragment/CameraSettingsDialogFragment$1;-><init>(Ljp/co/sony/mc/camera/view/setting/fragment/CameraSettingsDialogFragment;)V
 
     iput-object v0, p0, Ljp/co/sony/mc/camera/view/setting/fragment/CameraSettingsDialogFragment;->mOnItemClickListener:Landroid/content/DialogInterface$OnClickListener;
 
-    .line 71
+    .line 73
     new-instance v0, Ljp/co/sony/mc/camera/view/setting/fragment/CameraSettingsDialogFragment$2;
 
     invoke-direct {v0, p0}, Ljp/co/sony/mc/camera/view/setting/fragment/CameraSettingsDialogFragment$2;-><init>(Ljp/co/sony/mc/camera/view/setting/fragment/CameraSettingsDialogFragment;)V
@@ -69,7 +69,7 @@
 .method private getSelectedValuePos()I
     .locals 2
 
-    .line 161
+    .line 163
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/setting/fragment/CameraSettingsDialogFragment;->mCameraSettingItem:Ljp/co/sony/mc/camera/view/setting/settingitem/CameraSettingItem;
 
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/view/setting/settingitem/CameraSettingItem;->getOptions()Ljava/util/List;
@@ -95,7 +95,7 @@
 
     check-cast v1, Ljp/co/sony/mc/camera/view/setting/settingitem/CameraSettingItem$CameraSettingValueItem;
 
-    .line 162
+    .line 164
     invoke-virtual {v1}, Ljp/co/sony/mc/camera/view/setting/settingitem/CameraSettingItem$CameraSettingValueItem;->isSelected()Z
 
     move-result v1
@@ -117,25 +117,25 @@
 .method public static newInstance(Ljp/co/sony/mc/camera/view/setting/settingitem/CameraSettingItem;Z)Ljp/co/sony/mc/camera/view/setting/fragment/CameraSettingsDialogFragment;
     .locals 2
 
-    .line 99
+    .line 101
     new-instance v0, Ljp/co/sony/mc/camera/view/setting/fragment/CameraSettingsDialogFragment;
 
     invoke-direct {v0}, Ljp/co/sony/mc/camera/view/setting/fragment/CameraSettingsDialogFragment;-><init>()V
 
-    .line 100
+    .line 102
     iput-object p0, v0, Ljp/co/sony/mc/camera/view/setting/fragment/CameraSettingsDialogFragment;->mCameraSettingItem:Ljp/co/sony/mc/camera/view/setting/settingitem/CameraSettingItem;
 
-    .line 101
+    .line 103
     new-instance p0, Landroid/os/Bundle;
 
     invoke-direct {p0}, Landroid/os/Bundle;-><init>()V
 
-    .line 102
+    .line 104
     const-string v1, "isRotatable"
 
     invoke-virtual {p0, v1, p1}, Landroid/os/Bundle;->putBoolean(Ljava/lang/String;Z)V
 
-    .line 103
+    .line 105
     invoke-virtual {v0, p0}, Ljp/co/sony/mc/camera/view/setting/fragment/CameraSettingsDialogFragment;->setArguments(Landroid/os/Bundle;)V
 
     return-object v0
@@ -146,7 +146,7 @@
 .method public onCreateDialog(Landroid/os/Bundle;)Landroid/app/Dialog;
     .locals 5
 
-    .line 110
+    .line 112
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/view/setting/fragment/CameraSettingsDialogFragment;->getActivity()Landroidx/fragment/app/FragmentActivity;
 
     move-result-object v0
@@ -155,7 +155,7 @@
 
     if-eqz p1, :cond_0
 
-    .line 115
+    .line 117
     const-string v0, "CameraSettingItem"
 
     const-class v1, Ljp/co/sony/mc/camera/view/setting/settingitem/CameraSettingItem;
@@ -168,7 +168,7 @@
 
     iput-object p1, p0, Ljp/co/sony/mc/camera/view/setting/fragment/CameraSettingsDialogFragment;->mCameraSettingItem:Ljp/co/sony/mc/camera/view/setting/settingitem/CameraSettingItem;
 
-    .line 119
+    .line 121
     :cond_0
     new-instance p1, Landroid/app/AlertDialog$Builder;
 
@@ -180,15 +180,15 @@
 
     const/4 v0, 0x1
 
-    .line 120
+    .line 122
     invoke-virtual {p1, v0}, Landroid/app/AlertDialog$Builder;->setCancelable(Z)Landroid/app/AlertDialog$Builder;
 
     const/4 v1, 0x0
 
-    .line 121
+    .line 123
     invoke-virtual {p1, v1}, Landroid/app/AlertDialog$Builder;->setView(Landroid/view/View;)Landroid/app/AlertDialog$Builder;
 
-    .line 122
+    .line 124
     iget-object v2, p0, Ljp/co/sony/mc/camera/view/setting/fragment/CameraSettingsDialogFragment;->mCameraSettingItem:Ljp/co/sony/mc/camera/view/setting/settingitem/CameraSettingItem;
 
     invoke-virtual {v2}, Ljp/co/sony/mc/camera/view/setting/settingitem/CameraSettingItem;->getTitleText()Ljava/lang/String;
@@ -197,10 +197,10 @@
 
     invoke-virtual {p1, v2}, Landroid/app/AlertDialog$Builder;->setTitle(Ljava/lang/CharSequence;)Landroid/app/AlertDialog$Builder;
 
-    .line 123
+    .line 125
     new-instance v2, Ljp/co/sony/mc/camera/view/setting/fragment/CameraSettingsDialogFragment$ValueArrayAdapter;
 
-    .line 124
+    .line 126
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/view/setting/fragment/CameraSettingsDialogFragment;->getActivity()Landroidx/fragment/app/FragmentActivity;
 
     move-result-object v3
@@ -213,38 +213,38 @@
 
     invoke-direct {v2, v3, v4}, Ljp/co/sony/mc/camera/view/setting/fragment/CameraSettingsDialogFragment$ValueArrayAdapter;-><init>(Landroid/content/Context;Ljava/util/List;)V
 
-    .line 125
+    .line 127
     invoke-direct {p0}, Ljp/co/sony/mc/camera/view/setting/fragment/CameraSettingsDialogFragment;->getSelectedValuePos()I
 
     move-result v3
 
     iget-object v4, p0, Ljp/co/sony/mc/camera/view/setting/fragment/CameraSettingsDialogFragment;->mOnItemClickListener:Landroid/content/DialogInterface$OnClickListener;
 
-    .line 123
+    .line 125
     invoke-virtual {p1, v2, v3, v4}, Landroid/app/AlertDialog$Builder;->setSingleChoiceItems(Landroid/widget/ListAdapter;ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
-    .line 126
+    .line 128
     invoke-virtual {p1, v1, v1}, Landroid/app/AlertDialog$Builder;->setPositiveButton(Ljava/lang/CharSequence;Landroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
-    .line 127
+    .line 129
     invoke-virtual {p1, v1, v1}, Landroid/app/AlertDialog$Builder;->setNegativeButton(Ljava/lang/CharSequence;Landroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
-    .line 128
+    .line 130
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/setting/fragment/CameraSettingsDialogFragment;->mOnKeyListener:Landroid/content/DialogInterface$OnKeyListener;
 
     invoke-virtual {p1, p0}, Landroid/app/AlertDialog$Builder;->setOnKeyListener(Landroid/content/DialogInterface$OnKeyListener;)Landroid/app/AlertDialog$Builder;
 
-    .line 130
+    .line 132
     invoke-virtual {p1}, Landroid/app/AlertDialog$Builder;->create()Landroid/app/AlertDialog;
 
     move-result-object p0
 
-    .line 131
+    .line 133
     invoke-virtual {p0, v0}, Landroid/app/AlertDialog;->setCanceledOnTouchOutside(Z)V
 
     return-object p0
 
-    .line 111
+    .line 113
     :cond_1
     new-instance p0, Ljava/lang/IllegalStateException;
 
@@ -258,12 +258,12 @@
 .method public onPause()V
     .locals 1
 
-    .line 148
+    .line 150
     invoke-super {p0}, Ljp/co/sony/mc/camera/view/setting/fragment/RotatableDialogFragment;->onPause()V
 
     const/4 v0, 0x0
 
-    .line 150
+    .line 152
     iput-object v0, p0, Ljp/co/sony/mc/camera/view/setting/fragment/CameraSettingsDialogFragment;->mOnItemSelectedListener:Ljp/co/sony/mc/camera/view/setting/fragment/CameraSettingsDialogFragment$OnItemSelectedListener;
 
     return-void
@@ -272,20 +272,20 @@
 .method public onResume()V
     .locals 2
 
-    .line 138
+    .line 140
     invoke-super {p0}, Ljp/co/sony/mc/camera/view/setting/fragment/RotatableDialogFragment;->onResume()V
 
-    .line 140
+    .line 142
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/view/setting/fragment/CameraSettingsDialogFragment;->getActivity()Landroidx/fragment/app/FragmentActivity;
 
     move-result-object v0
 
-    .line 141
+    .line 143
     instance-of v1, v0, Ljp/co/sony/mc/camera/view/setting/fragment/CameraSettingsDialogFragment$OnItemSelectedListener;
 
     if-eqz v1, :cond_0
 
-    .line 142
+    .line 144
     check-cast v0, Ljp/co/sony/mc/camera/view/setting/fragment/CameraSettingsDialogFragment$OnItemSelectedListener;
 
     iput-object v0, p0, Ljp/co/sony/mc/camera/view/setting/fragment/CameraSettingsDialogFragment;->mOnItemSelectedListener:Ljp/co/sony/mc/camera/view/setting/fragment/CameraSettingsDialogFragment$OnItemSelectedListener;
@@ -297,14 +297,14 @@
 .method public onSaveInstanceState(Landroid/os/Bundle;)V
     .locals 2
 
-    .line 155
+    .line 157
     const-string v0, "CameraSettingItem"
 
     iget-object v1, p0, Ljp/co/sony/mc/camera/view/setting/fragment/CameraSettingsDialogFragment;->mCameraSettingItem:Ljp/co/sony/mc/camera/view/setting/settingitem/CameraSettingItem;
 
     invoke-virtual {p1, v0, v1}, Landroid/os/Bundle;->putSerializable(Ljava/lang/String;Ljava/io/Serializable;)V
 
-    .line 156
+    .line 158
     invoke-super {p0, p1}, Ljp/co/sony/mc/camera/view/setting/fragment/RotatableDialogFragment;->onSaveInstanceState(Landroid/os/Bundle;)V
 
     return-void

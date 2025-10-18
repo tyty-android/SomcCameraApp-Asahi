@@ -32,7 +32,7 @@
         }
     .end annotation
 
-    .line 123
+    .line 127
     iput-object p1, p0, Ljp/co/sony/mc/camera/view/setting/fragment/CameraSettingsFragment$2;->this$0:Ljp/co/sony/mc/camera/view/setting/fragment/CameraSettingsFragment;
 
     iput-object p2, p0, Ljp/co/sony/mc/camera/view/setting/fragment/CameraSettingsFragment$2;->val$view:Landroid/view/View;
@@ -45,16 +45,16 @@
 .method static synthetic lambda$onClick$0(Landroid/view/View;)Lkotlin/Unit;
     .locals 1
 
-    const v0, 0x7f090222
+    const v0, 0x7f0900a3
 
-    .line 131
+    .line 135
     invoke-virtual {p0, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
     move-result-object p0
 
     const/16 v0, 0x8
 
-    .line 132
+    .line 136
     invoke-virtual {p0, v0}, Landroid/view/View;->sendAccessibilityEvent(I)V
 
     const/4 p0, 0x0
@@ -67,12 +67,12 @@
 .method public onClick(Ljp/co/sony/mc/camera/view/setting/settingitem/CameraSettingCategoryItem;I)V
     .locals 1
 
-    .line 126
+    .line 130
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/setting/fragment/CameraSettingsFragment$2;->this$0:Ljp/co/sony/mc/camera/view/setting/fragment/CameraSettingsFragment;
 
     invoke-static {v0, p2}, Ljp/co/sony/mc/camera/view/setting/fragment/CameraSettingsFragment;->-$$Nest$fputmCategoryPosition(Ljp/co/sony/mc/camera/view/setting/fragment/CameraSettingsFragment;I)V
 
-    .line 127
+    .line 131
     iget-object p2, p0, Ljp/co/sony/mc/camera/view/setting/fragment/CameraSettingsFragment$2;->this$0:Ljp/co/sony/mc/camera/view/setting/fragment/CameraSettingsFragment;
 
     invoke-static {p2}, Ljp/co/sony/mc/camera/view/setting/fragment/CameraSettingsFragment;->-$$Nest$fgetmItemAdapter(Ljp/co/sony/mc/camera/view/setting/fragment/CameraSettingsFragment;)Ljp/co/sony/mc/camera/view/setting/fragment/CameraSettingsItemAdapter;
@@ -85,7 +85,7 @@
 
     invoke-virtual {p2, p1}, Ljp/co/sony/mc/camera/view/setting/fragment/CameraSettingsItemAdapter;->setSettingItems(Ljava/util/List;)V
 
-    .line 128
+    .line 132
     iget-object p1, p0, Ljp/co/sony/mc/camera/view/setting/fragment/CameraSettingsFragment$2;->this$0:Ljp/co/sony/mc/camera/view/setting/fragment/CameraSettingsFragment;
 
     invoke-static {p1}, Ljp/co/sony/mc/camera/view/setting/fragment/CameraSettingsFragment;->-$$Nest$fgetmCategoryAdapter(Ljp/co/sony/mc/camera/view/setting/fragment/CameraSettingsFragment;)Ljp/co/sony/mc/camera/view/setting/fragment/CameraSettingsCategoryAdapter;
@@ -94,7 +94,7 @@
 
     invoke-virtual {p1}, Ljp/co/sony/mc/camera/view/setting/fragment/CameraSettingsCategoryAdapter;->notifyDataSetChanged()V
 
-    .line 129
+    .line 133
     iget-object p1, p0, Ljp/co/sony/mc/camera/view/setting/fragment/CameraSettingsFragment$2;->this$0:Ljp/co/sony/mc/camera/view/setting/fragment/CameraSettingsFragment;
 
     invoke-static {p1}, Ljp/co/sony/mc/camera/view/setting/fragment/CameraSettingsFragment;->-$$Nest$fgetmItemAdapter(Ljp/co/sony/mc/camera/view/setting/fragment/CameraSettingsFragment;)Ljp/co/sony/mc/camera/view/setting/fragment/CameraSettingsItemAdapter;
@@ -103,7 +103,7 @@
 
     invoke-virtual {p1}, Ljp/co/sony/mc/camera/view/setting/fragment/CameraSettingsItemAdapter;->notifyDataSetChanged()V
 
-    .line 130
+    .line 134
     sget-object p1, Ljp/co/sony/mc/camera/util/AccessibilityUtil;->INSTANCE:Ljp/co/sony/mc/camera/util/AccessibilityUtil;
 
     iget-object p2, p0, Ljp/co/sony/mc/camera/view/setting/fragment/CameraSettingsFragment$2;->val$view:Landroid/view/View;

@@ -79,7 +79,7 @@
 .method public final invoke(Z)Ljava/lang/Boolean;
     .locals 0
 
-    .line 383
+    .line 389
     invoke-static {p1}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
     move-result-object p0
@@ -90,7 +90,7 @@
 .method public bridge synthetic invoke(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
 
-    .line 383
+    .line 389
     check-cast p1, Ljava/lang/Boolean;
 
     invoke-virtual {p1}, Ljava/lang/Boolean;->booleanValue()Z

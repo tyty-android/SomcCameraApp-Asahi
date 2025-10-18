@@ -118,19 +118,19 @@
         }
     .end annotation
 
-    .line 479
+    .line 486
     new-instance v0, Landroidx/compose/material/SwipeableState;
 
-    .line 480
+    .line 487
     iget-object v1, p0, Landroidx/compose/material/SwipeableKt$rememberSwipeableState$2;->$initialValue:Ljava/lang/Object;
 
-    .line 481
+    .line 488
     iget-object v2, p0, Landroidx/compose/material/SwipeableKt$rememberSwipeableState$2;->$animationSpec:Landroidx/compose/animation/core/AnimationSpec;
 
-    .line 482
+    .line 489
     iget-object p0, p0, Landroidx/compose/material/SwipeableKt$rememberSwipeableState$2;->$confirmStateChange:Lkotlin/jvm/functions/Function1;
 
-    .line 479
+    .line 486
     invoke-direct {v0, v1, v2, p0}, Landroidx/compose/material/SwipeableState;-><init>(Ljava/lang/Object;Landroidx/compose/animation/core/AnimationSpec;Lkotlin/jvm/functions/Function1;)V
 
     return-object v0
@@ -139,7 +139,7 @@
 .method public bridge synthetic invoke()Ljava/lang/Object;
     .locals 0
 
-    .line 473
+    .line 480
     invoke-virtual {p0}, Landroidx/compose/material/SwipeableKt$rememberSwipeableState$2;->invoke()Landroidx/compose/material/SwipeableState;
 
     move-result-object p0

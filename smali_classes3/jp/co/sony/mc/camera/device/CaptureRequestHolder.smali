@@ -71,14 +71,14 @@
 .method static constructor <clinit>()V
     .locals 1
 
-    .line 220
+    .line 224
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
     sput-object v0, Ljp/co/sony/mc/camera/device/CaptureRequestHolder;->mSurfacesStillCapture:Ljava/util/List;
 
-    .line 221
+    .line 225
     new-instance v0, Ljava/lang/Object;
 
     invoke-direct {v0}, Ljava/lang/Object;-><init>()V
@@ -116,12 +116,12 @@
 .method private clear()V
     .locals 1
 
-    .line 323
+    .line 327
     sget-object v0, Ljp/co/sony/mc/camera/device/CaptureRequestHolder;->mReqBuilderInitLock:Ljava/lang/Object;
 
     monitor-enter v0
 
-    .line 324
+    .line 328
     :try_start_0
     iget-object p0, p0, Ljp/co/sony/mc/camera/device/CaptureRequestHolder;->mCaptureRequests:Ljava/util/Map;
 
@@ -129,38 +129,38 @@
 
     const/4 p0, 0x0
 
-    .line 326
+    .line 330
     sput-object p0, Ljp/co/sony/mc/camera/device/CaptureRequestHolder;->mReqBuilderAf:Landroid/hardware/camera2/CaptureRequest$Builder;
 
-    .line 327
+    .line 331
     sput-object p0, Ljp/co/sony/mc/camera/device/CaptureRequestHolder;->mReqBuilderAfCancel:Landroid/hardware/camera2/CaptureRequest$Builder;
 
-    .line 328
+    .line 332
     sput-object p0, Ljp/co/sony/mc/camera/device/CaptureRequestHolder;->mReqBuilderSnapshotPrepare:Landroid/hardware/camera2/CaptureRequest$Builder;
 
-    .line 329
+    .line 333
     sput-object p0, Ljp/co/sony/mc/camera/device/CaptureRequestHolder;->mReqBuilderSnapshotPrepareCancel:Landroid/hardware/camera2/CaptureRequest$Builder;
 
-    .line 330
+    .line 334
     sput-object p0, Ljp/co/sony/mc/camera/device/CaptureRequestHolder;->mReqBuilderAfAndSnapshotPrepare:Landroid/hardware/camera2/CaptureRequest$Builder;
 
-    .line 331
+    .line 335
     sput-object p0, Ljp/co/sony/mc/camera/device/CaptureRequestHolder;->mReqBuilderAfAndSnapshotPrepareCancel:Landroid/hardware/camera2/CaptureRequest$Builder;
 
-    .line 332
+    .line 336
     sput-object p0, Ljp/co/sony/mc/camera/device/CaptureRequestHolder;->mReqBuilderStillCapture:Landroid/hardware/camera2/CaptureRequest$Builder;
 
     const/4 p0, 0x0
 
-    .line 337
+    .line 341
     sput p0, Ljp/co/sony/mc/camera/device/CaptureRequestHolder;->mIsNeedUpdated:I
 
-    .line 342
+    .line 346
     sget-object p0, Ljp/co/sony/mc/camera/device/CaptureRequestHolder;->mSurfacesStillCapture:Ljava/util/List;
 
     invoke-interface {p0}, Ljava/util/List;->clear()V
 
-    .line 343
+    .line 347
     monitor-exit v0
 
     return-void
@@ -180,7 +180,7 @@
 
     monitor-enter p0
 
-    .line 494
+    .line 498
     :try_start_0
     sget-boolean v0, Ljp/co/sony/mc/camera/util/CamLog;->VERBOSE:Z
 
@@ -200,14 +200,14 @@
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 498
+    .line 502
     :cond_0
     :try_start_1
     invoke-virtual {p1, p3}, Landroid/hardware/camera2/CameraDevice;->createCaptureRequest(I)Landroid/hardware/camera2/CaptureRequest$Builder;
 
     move-result-object p1
 
-    .line 499
+    .line 503
     iget-object p3, p0, Ljp/co/sony/mc/camera/device/CaptureRequestHolder;->mCaptureRequests:Ljava/util/Map;
 
     invoke-interface {p3}, Ljava/util/Map;->keySet()Ljava/util/Set;
@@ -231,12 +231,12 @@
 
     check-cast v0, Landroid/hardware/camera2/CaptureRequest$Key;
 
-    .line 500
+    .line 504
     invoke-direct {p0, p1, v0}, Ljp/co/sony/mc/camera/device/CaptureRequestHolder;->setRequest(Landroid/hardware/camera2/CaptureRequest$Builder;Landroid/hardware/camera2/CaptureRequest$Key;)V
 
     goto :goto_0
 
-    .line 502
+    .line 506
     :cond_1
     array-length p3, p4
 
@@ -247,21 +247,21 @@
 
     aget-object v3, p4, v0
 
-    .line 503
+    .line 507
     invoke-virtual {p1, v3}, Landroid/hardware/camera2/CaptureRequest$Builder;->addTarget(Landroid/view/Surface;)V
 
     add-int/lit8 v0, v0, 0x1
 
     goto :goto_1
 
-    .line 505
+    .line 509
     :cond_2
     invoke-virtual {p1, p2}, Landroid/hardware/camera2/CaptureRequest$Builder;->setTag(Ljava/lang/Object;)V
     :try_end_1
     .catch Landroid/hardware/camera2/CameraAccessException; {:try_start_1 .. :try_end_1} :catch_0
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
-    .line 510
+    .line 514
     :try_start_2
     sget-boolean p2, Ljp/co/sony/mc/camera/util/CamLog;->VERBOSE:Z
 
@@ -275,7 +275,7 @@
 
     invoke-static {p2}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
-    .line 512
+    .line 516
     :cond_3
     invoke-virtual {p1}, Landroid/hardware/camera2/CaptureRequest$Builder;->build()Landroid/hardware/camera2/CaptureRequest;
 
@@ -290,7 +290,7 @@
     :catch_0
     move-exception p1
 
-    .line 507
+    .line 511
     :try_start_3
     const-string p2, "createCaptureRequest() X : Exception"
 
@@ -298,7 +298,7 @@
     :try_end_3
     .catchall {:try_start_3 .. :try_end_3} :catchall_0
 
-    .line 508
+    .line 512
     monitor-exit p0
 
     const/4 p0, 0x0
@@ -318,7 +318,7 @@
 
     monitor-enter p0
 
-    .line 522
+    .line 526
     :try_start_0
     sget-boolean v0, Ljp/co/sony/mc/camera/util/CamLog;->VERBOSE:Z
 
@@ -341,7 +341,7 @@
     :cond_0
     if-nez p5, :cond_1
 
-    .line 526
+    .line 530
     :try_start_1
     new-array p5, v1, [Ljava/lang/String;
 
@@ -351,7 +351,7 @@
 
     invoke-static {p5}, Ljp/co/sony/mc/camera/util/CamLog;->w([Ljava/lang/String;)V
 
-    .line 527
+    .line 531
     invoke-virtual {p1, p3}, Landroid/hardware/camera2/CameraDevice;->createCaptureRequest(I)Landroid/hardware/camera2/CaptureRequest$Builder;
 
     move-result-object p5
@@ -367,7 +367,7 @@
     :goto_0
     if-eqz p4, :cond_2
 
-    .line 531
+    .line 535
     iget-object p1, p0, Ljp/co/sony/mc/camera/device/CaptureRequestHolder;->mCaptureRequests:Ljava/util/Map;
 
     invoke-interface {p1}, Ljava/util/Map;->keySet()Ljava/util/Set;
@@ -391,18 +391,18 @@
 
     check-cast p3, Landroid/hardware/camera2/CaptureRequest$Key;
 
-    .line 532
+    .line 536
     invoke-direct {p0, p5, p3}, Ljp/co/sony/mc/camera/device/CaptureRequestHolder;->setRequest(Landroid/hardware/camera2/CaptureRequest$Builder;Landroid/hardware/camera2/CaptureRequest$Key;)V
 
     goto :goto_1
 
-    .line 536
+    .line 540
     :cond_2
     array-length p1, p6
 
     if-le p1, v1, :cond_4
 
-    .line 538
+    .line 542
     sget-object p1, Ljp/co/sony/mc/camera/device/CaptureRequestHolder;->mSurfacesStillCapture:Ljava/util/List;
 
     invoke-interface {p1}, Ljava/util/List;->iterator()Ljava/util/Iterator;
@@ -422,18 +422,18 @@
 
     check-cast p3, Landroid/view/Surface;
 
-    .line 539
+    .line 543
     invoke-virtual {p5, p3}, Landroid/hardware/camera2/CaptureRequest$Builder;->removeTarget(Landroid/view/Surface;)V
 
     goto :goto_2
 
-    .line 541
+    .line 545
     :cond_3
     sget-object p1, Ljp/co/sony/mc/camera/device/CaptureRequestHolder;->mSurfacesStillCapture:Ljava/util/List;
 
     invoke-interface {p1}, Ljava/util/List;->clear()V
 
-    .line 542
+    .line 546
     array-length p1, p6
 
     move p3, v2
@@ -443,10 +443,10 @@
 
     aget-object p4, p6, p3
 
-    .line 543
+    .line 547
     invoke-virtual {p5, p4}, Landroid/hardware/camera2/CaptureRequest$Builder;->addTarget(Landroid/view/Surface;)V
 
-    .line 544
+    .line 548
     sget-object v0, Ljp/co/sony/mc/camera/device/CaptureRequestHolder;->mSurfacesStillCapture:Ljava/util/List;
 
     invoke-interface {v0, p4}, Ljava/util/List;->add(Ljava/lang/Object;)Z
@@ -455,25 +455,25 @@
 
     goto :goto_3
 
-    .line 547
+    .line 551
     :cond_4
     aget-object p1, p6, v2
 
     invoke-virtual {p5, p1}, Landroid/hardware/camera2/CaptureRequest$Builder;->removeTarget(Landroid/view/Surface;)V
 
-    .line 548
+    .line 552
     aget-object p1, p6, v2
 
     invoke-virtual {p5, p1}, Landroid/hardware/camera2/CaptureRequest$Builder;->addTarget(Landroid/view/Surface;)V
 
-    .line 551
+    .line 555
     :cond_5
     invoke-virtual {p5, p2}, Landroid/hardware/camera2/CaptureRequest$Builder;->setTag(Ljava/lang/Object;)V
     :try_end_1
     .catch Landroid/hardware/camera2/CameraAccessException; {:try_start_1 .. :try_end_1} :catch_0
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
-    .line 556
+    .line 560
     :try_start_2
     sget-boolean p1, Ljp/co/sony/mc/camera/util/CamLog;->VERBOSE:Z
 
@@ -487,7 +487,7 @@
 
     invoke-static {p1}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
-    .line 558
+    .line 562
     :cond_6
     invoke-virtual {p5}, Landroid/hardware/camera2/CaptureRequest$Builder;->build()Landroid/hardware/camera2/CaptureRequest;
 
@@ -499,7 +499,7 @@
 
     return-object p1
 
-    .line 553
+    .line 557
     :goto_4
     :try_start_3
     const-string p2, "createCaptureRequest() X : Exception"
@@ -508,7 +508,7 @@
     :try_end_3
     .catchall {:try_start_3 .. :try_end_3} :catchall_0
 
-    .line 554
+    .line 558
     monitor-exit p0
 
     const/4 p0, 0x0
@@ -524,7 +524,7 @@
 .end method
 
 .method private setRequest(Landroid/hardware/camera2/CaptureRequest$Builder;Landroid/hardware/camera2/CaptureRequest$Key;)V
-    .locals 0
+    .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<T:",
@@ -536,7 +536,7 @@
         }
     .end annotation
 
-    .line 563
+    .line 567
     :try_start_0
     invoke-virtual {p0, p2}, Ljp/co/sony/mc/camera/device/CaptureRequestHolder;->get(Landroid/hardware/camera2/CaptureRequest$Key;)Ljava/lang/Object;
 
@@ -548,35 +548,39 @@
 
     goto :goto_0
 
-    .line 565
     :catch_0
-    new-instance p0, Ljava/lang/StringBuilder;
+    const/4 p0, 0x1
 
-    const-string/jumbo p1, "setRequest(): key ("
+    .line 569
+    new-array p0, p0, [Ljava/lang/String;
 
-    invoke-direct {p0, p1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+    new-instance p1, Ljava/lang/StringBuilder;
+
+    const-string/jumbo v0, "setRequest(): key ("
+
+    invoke-direct {p1, v0}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
     invoke-virtual {p2}, Landroid/hardware/camera2/CaptureRequest$Key;->getName()Ljava/lang/String;
 
+    move-result-object p2
+
+    invoke-virtual {p1, p2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
     move-result-object p1
 
-    invoke-virtual {p0, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    const-string p2, ") is not valid."
 
-    move-result-object p0
+    invoke-virtual {p1, p2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    const-string p1, ") is not valid."
+    move-result-object p1
 
-    invoke-virtual {p0, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {p1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    move-result-object p0
+    move-result-object p1
 
-    invoke-virtual {p0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    const/4 p2, 0x0
 
-    move-result-object p0
-
-    filled-new-array {p0}, [Ljava/lang/String;
-
-    move-result-object p0
+    aput-object p1, p0, p2
 
     invoke-static {p0}, Ljp/co/sony/mc/camera/util/CamLog;->e([Ljava/lang/String;)V
 
@@ -591,13 +595,13 @@
 
     monitor-enter p0
 
-    .line 177
+    .line 181
     :try_start_0
     new-instance v0, Ljp/co/sony/mc/camera/device/CaptureRequestHolder;
 
     invoke-direct {v0}, Ljp/co/sony/mc/camera/device/CaptureRequestHolder;-><init>()V
 
-    .line 178
+    .line 182
     iget-object v1, v0, Ljp/co/sony/mc/camera/device/CaptureRequestHolder;->mCaptureRequests:Ljava/util/Map;
 
     iget-object v2, p0, Ljp/co/sony/mc/camera/device/CaptureRequestHolder;->mCaptureRequests:Ljava/util/Map;
@@ -606,7 +610,7 @@
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 179
+    .line 183
     monitor-exit p0
 
     return-object v0
@@ -626,7 +630,7 @@
 
     const/4 v0, 0x0
 
-    .line 392
+    .line 396
     :try_start_0
     invoke-virtual {p0, p1, v0, p2, p3}, Ljp/co/sony/mc/camera/device/CaptureRequestHolder;->createCaptureRequest(Landroid/hardware/camera2/CameraDevice;Ljava/lang/Object;I[Landroid/view/Surface;)Landroid/hardware/camera2/CaptureRequest;
 
@@ -653,7 +657,7 @@
 
     monitor-enter p0
 
-    .line 397
+    .line 401
     :try_start_0
     sget-boolean v1, Ljp/co/sony/mc/camera/util/CamLog;->VERBOSE:Z
 
@@ -696,7 +700,7 @@
 
     goto/16 :goto_2
 
-    .line 414
+    .line 418
     :cond_1
     sget v1, Ljp/co/sony/mc/camera/device/CaptureRequestHolder;->mIsNeedUpdated:I
 
@@ -740,7 +744,7 @@
 
     if-ne p3, v1, :cond_3
 
-    .line 475
+    .line 479
     sget-object v9, Ljp/co/sony/mc/camera/device/CaptureRequestHolder;->mReqBuilderStillCapture:Landroid/hardware/camera2/CaptureRequest$Builder;
 
     const/4 v7, 0x2
@@ -759,7 +763,7 @@
 
     goto/16 :goto_1
 
-    .line 480
+    .line 484
     :cond_3
     new-instance p1, Ljava/lang/IllegalArgumentException;
 
@@ -779,7 +783,7 @@
 
     throw p1
 
-    .line 466
+    .line 470
     :cond_4
     sget-object v9, Ljp/co/sony/mc/camera/device/CaptureRequestHolder;->mReqBuilderAfAndSnapshotPrepareCancel:Landroid/hardware/camera2/CaptureRequest$Builder;
 
@@ -799,7 +803,7 @@
 
     goto :goto_1
 
-    .line 457
+    .line 461
     :cond_5
     sget-object v9, Ljp/co/sony/mc/camera/device/CaptureRequestHolder;->mReqBuilderAfAndSnapshotPrepare:Landroid/hardware/camera2/CaptureRequest$Builder;
 
@@ -819,7 +823,7 @@
 
     goto :goto_1
 
-    .line 448
+    .line 452
     :cond_6
     sget-object v9, Ljp/co/sony/mc/camera/device/CaptureRequestHolder;->mReqBuilderSnapshotPrepareCancel:Landroid/hardware/camera2/CaptureRequest$Builder;
 
@@ -839,7 +843,7 @@
 
     goto :goto_1
 
-    .line 439
+    .line 443
     :cond_7
     sget-object v9, Ljp/co/sony/mc/camera/device/CaptureRequestHolder;->mReqBuilderSnapshotPrepare:Landroid/hardware/camera2/CaptureRequest$Builder;
 
@@ -859,7 +863,7 @@
 
     goto :goto_1
 
-    .line 430
+    .line 434
     :cond_8
     sget-object v9, Ljp/co/sony/mc/camera/device/CaptureRequestHolder;->mReqBuilderAfCancel:Landroid/hardware/camera2/CaptureRequest$Builder;
 
@@ -879,7 +883,7 @@
 
     goto :goto_1
 
-    .line 421
+    .line 425
     :cond_9
     sget-object v9, Ljp/co/sony/mc/camera/device/CaptureRequestHolder;->mReqBuilderAf:Landroid/hardware/camera2/CaptureRequest$Builder;
 
@@ -901,7 +905,7 @@
 
     move-result-object p1
 
-    .line 486
+    .line 490
     :goto_1
     sget p2, Ljp/co/sony/mc/camera/device/CaptureRequestHolder;->mIsNeedUpdated:I
 
@@ -911,7 +915,7 @@
 
     sput p2, Ljp/co/sony/mc/camera/device/CaptureRequestHolder;->mIsNeedUpdated:I
 
-    .line 487
+    .line 491
     sget-boolean p2, Ljp/co/sony/mc/camera/util/CamLog;->VERBOSE:Z
 
     if-eqz p2, :cond_a
@@ -926,13 +930,13 @@
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 489
+    .line 493
     :cond_a
     monitor-exit p0
 
     return-object p1
 
-    .line 406
+    .line 410
     :cond_b
     :goto_2
     :try_start_1
@@ -957,12 +961,12 @@
 .method public deepCopy()Ljp/co/sony/mc/camera/device/CaptureRequestHolder;
     .locals 5
 
-    .line 188
+    .line 192
     new-instance v0, Ljp/co/sony/mc/camera/device/CaptureRequestHolder;
 
     invoke-direct {v0}, Ljp/co/sony/mc/camera/device/CaptureRequestHolder;-><init>()V
 
-    .line 189
+    .line 193
     iget-object v1, p0, Ljp/co/sony/mc/camera/device/CaptureRequestHolder;->mReadWriteLock:Ljava/util/concurrent/locks/ReadWriteLock;
 
     invoke-interface {v1}, Ljava/util/concurrent/locks/ReadWriteLock;->writeLock()Ljava/util/concurrent/locks/Lock;
@@ -971,7 +975,7 @@
 
     invoke-interface {v1}, Ljava/util/concurrent/locks/Lock;->lock()V
 
-    .line 191
+    .line 195
     :try_start_0
     iget-object v1, p0, Ljp/co/sony/mc/camera/device/CaptureRequestHolder;->mCaptureRequests:Ljava/util/Map;
 
@@ -996,7 +1000,7 @@
 
     check-cast v2, Landroid/hardware/camera2/CaptureRequest$Key;
 
-    .line 192
+    .line 196
     iget-object v3, v0, Ljp/co/sony/mc/camera/device/CaptureRequestHolder;->mCaptureRequests:Ljava/util/Map;
 
     iget-object v4, p0, Ljp/co/sony/mc/camera/device/CaptureRequestHolder;->mCaptureRequests:Ljava/util/Map;
@@ -1011,7 +1015,7 @@
 
     goto :goto_0
 
-    .line 195
+    .line 199
     :cond_0
     iget-object p0, p0, Ljp/co/sony/mc/camera/device/CaptureRequestHolder;->mReadWriteLock:Ljava/util/concurrent/locks/ReadWriteLock;
 
@@ -1034,7 +1038,7 @@
 
     invoke-interface {p0}, Ljava/util/concurrent/locks/Lock;->unlock()V
 
-    .line 196
+    .line 200
     throw v0
 .end method
 
@@ -1054,7 +1058,7 @@
 
     monitor-enter p0
 
-    .line 375
+    .line 379
     :try_start_0
     iget-object v1, p0, Ljp/co/sony/mc/camera/device/CaptureRequestHolder;->mReadWriteLock:Ljava/util/concurrent/locks/ReadWriteLock;
 
@@ -1066,7 +1070,7 @@
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_1
 
-    .line 377
+    .line 381
     :try_start_1
     iget-object v1, p0, Ljp/co/sony/mc/camera/device/CaptureRequestHolder;->mCaptureRequests:Ljava/util/Map;
 
@@ -1074,7 +1078,7 @@
 
     move-result-object v1
 
-    .line 378
+    .line 382
     sget-boolean v2, Ljp/co/sony/mc/camera/util/CamLog;->VERBOSE:Z
 
     if-eqz v2, :cond_0
@@ -1087,7 +1091,7 @@
 
     invoke-direct {v3, v0}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
-    .line 379
+    .line 383
     invoke-virtual {p1}, Landroid/hardware/camera2/CaptureRequest$Key;->getName()Ljava/lang/String;
 
     move-result-object p1
@@ -1114,12 +1118,12 @@
 
     aput-object p1, v2, v0
 
-    .line 378
+    .line 382
     invoke-static {v2}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
-    .line 383
+    .line 387
     :cond_0
     :try_start_2
     iget-object p1, p0, Ljp/co/sony/mc/camera/device/CaptureRequestHolder;->mReadWriteLock:Ljava/util/concurrent/locks/ReadWriteLock;
@@ -1132,7 +1136,7 @@
     :try_end_2
     .catchall {:try_start_2 .. :try_end_2} :catchall_1
 
-    .line 381
+    .line 385
     monitor-exit p0
 
     return-object v1
@@ -1140,7 +1144,7 @@
     :catchall_0
     move-exception p1
 
-    .line 383
+    .line 387
     :try_start_3
     iget-object v0, p0, Ljp/co/sony/mc/camera/device/CaptureRequestHolder;->mReadWriteLock:Ljava/util/concurrent/locks/ReadWriteLock;
 
@@ -1150,7 +1154,7 @@
 
     invoke-interface {v0}, Ljava/util/concurrent/locks/Lock;->unlock()V
 
-    .line 384
+    .line 388
     throw p1
     :try_end_3
     .catchall {:try_start_3 .. :try_end_3} :catchall_1
@@ -1166,23 +1170,23 @@
 .method public preparedCaptureRequestBuilder(Landroid/hardware/camera2/CameraDevice;Z)V
     .locals 7
 
-    .line 225
+    .line 229
     sget-object v0, Ljp/co/sony/mc/camera/device/CaptureRequestHolder;->mReqBuilderInitLock:Ljava/lang/Object;
 
     monitor-enter v0
 
-    .line 226
+    .line 230
     :try_start_0
     sget-object v1, Ljp/co/sony/mc/camera/device/CaptureRequestHolder;->mReqBuilderAf:Landroid/hardware/camera2/CaptureRequest$Builder;
 
     if-eqz v1, :cond_0
 
-    .line 227
+    .line 231
     monitor-exit v0
 
     return-void
 
-    .line 229
+    .line 233
     :cond_0
     sget-boolean v1, Ljp/co/sony/mc/camera/util/CamLog;->VERBOSE:Z
 
@@ -1202,7 +1206,7 @@
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 237
+    .line 241
     :cond_1
     :try_start_1
     invoke-virtual {p1, v3}, Landroid/hardware/camera2/CameraDevice;->createCaptureRequest(I)Landroid/hardware/camera2/CaptureRequest$Builder;
@@ -1211,38 +1215,38 @@
 
     sput-object v1, Ljp/co/sony/mc/camera/device/CaptureRequestHolder;->mReqBuilderAf:Landroid/hardware/camera2/CaptureRequest$Builder;
 
-    .line 238
+    .line 242
     sget-object v4, Landroid/hardware/camera2/CaptureRequest;->CONTROL_AF_TRIGGER:Landroid/hardware/camera2/CaptureRequest$Key;
 
-    .line 239
+    .line 243
     invoke-static {v3}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object v5
 
-    .line 238
+    .line 242
     invoke-virtual {v1, v4, v5}, Landroid/hardware/camera2/CaptureRequest$Builder;->set(Landroid/hardware/camera2/CaptureRequest$Key;Ljava/lang/Object;)V
 
-    .line 242
+    .line 246
     invoke-virtual {p1, v3}, Landroid/hardware/camera2/CameraDevice;->createCaptureRequest(I)Landroid/hardware/camera2/CaptureRequest$Builder;
 
     move-result-object v1
 
     sput-object v1, Ljp/co/sony/mc/camera/device/CaptureRequestHolder;->mReqBuilderAfCancel:Landroid/hardware/camera2/CaptureRequest$Builder;
 
-    .line 243
+    .line 247
     sget-object v4, Landroid/hardware/camera2/CaptureRequest;->CONTROL_AF_TRIGGER:Landroid/hardware/camera2/CaptureRequest$Key;
 
     const/4 v5, 0x2
 
-    .line 244
+    .line 248
     invoke-static {v5}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object v6
 
-    .line 243
+    .line 247
     invoke-virtual {v1, v4, v6}, Landroid/hardware/camera2/CaptureRequest$Builder;->set(Landroid/hardware/camera2/CaptureRequest$Key;Ljava/lang/Object;)V
 
-    .line 248
+    .line 252
     invoke-virtual {p1, v3}, Landroid/hardware/camera2/CameraDevice;->createCaptureRequest(I)Landroid/hardware/camera2/CaptureRequest$Builder;
 
     move-result-object v1
@@ -1251,18 +1255,18 @@
 
     if-eqz p2, :cond_2
 
-    .line 250
+    .line 254
     sget-object v4, Lcom/sonymobile/camera/device/SomcCaptureRequestKeys;->SONYMOBILE_CONTROL_SNAPSHOT_PREPARE:Landroid/hardware/camera2/CaptureRequest$Key;
 
-    .line 253
+    .line 257
     invoke-static {v5}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object v6
 
-    .line 250
+    .line 254
     invoke-virtual {v1, v4, v6}, Landroid/hardware/camera2/CaptureRequest$Builder;->set(Landroid/hardware/camera2/CaptureRequest$Key;Ljava/lang/Object;)V
 
-    .line 259
+    .line 263
     :cond_2
     invoke-virtual {p1, v3}, Landroid/hardware/camera2/CameraDevice;->createCaptureRequest(I)Landroid/hardware/camera2/CaptureRequest$Builder;
 
@@ -1270,33 +1274,33 @@
 
     sput-object v1, Ljp/co/sony/mc/camera/device/CaptureRequestHolder;->mReqBuilderSnapshotPrepareCancel:Landroid/hardware/camera2/CaptureRequest$Builder;
 
-    .line 260
+    .line 264
     sget-object v4, Landroid/hardware/camera2/CaptureRequest;->CONTROL_AE_PRECAPTURE_TRIGGER:Landroid/hardware/camera2/CaptureRequest$Key;
 
-    .line 262
+    .line 266
     invoke-static {v5}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object v6
 
-    .line 260
+    .line 264
     invoke-virtual {v1, v4, v6}, Landroid/hardware/camera2/CaptureRequest$Builder;->set(Landroid/hardware/camera2/CaptureRequest$Key;Ljava/lang/Object;)V
 
     if-eqz p2, :cond_3
 
-    .line 264
+    .line 268
     sget-object v1, Ljp/co/sony/mc/camera/device/CaptureRequestHolder;->mReqBuilderSnapshotPrepareCancel:Landroid/hardware/camera2/CaptureRequest$Builder;
 
     sget-object v4, Lcom/sonymobile/camera/device/SomcCaptureRequestKeys;->SONYMOBILE_CONTROL_SNAPSHOT_PREPARE:Landroid/hardware/camera2/CaptureRequest$Key;
 
-    .line 266
+    .line 270
     invoke-static {v3}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object v6
 
-    .line 264
+    .line 268
     invoke-virtual {v1, v4, v6}, Landroid/hardware/camera2/CaptureRequest$Builder;->set(Landroid/hardware/camera2/CaptureRequest$Key;Ljava/lang/Object;)V
 
-    .line 271
+    .line 275
     :cond_3
     invoke-virtual {p1, v3}, Landroid/hardware/camera2/CameraDevice;->createCaptureRequest(I)Landroid/hardware/camera2/CaptureRequest$Builder;
 
@@ -1304,33 +1308,33 @@
 
     sput-object v1, Ljp/co/sony/mc/camera/device/CaptureRequestHolder;->mReqBuilderAfAndSnapshotPrepare:Landroid/hardware/camera2/CaptureRequest$Builder;
 
-    .line 272
+    .line 276
     sget-object v4, Landroid/hardware/camera2/CaptureRequest;->CONTROL_AF_TRIGGER:Landroid/hardware/camera2/CaptureRequest$Key;
 
-    .line 274
+    .line 278
     invoke-static {v3}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object v6
 
-    .line 272
+    .line 276
     invoke-virtual {v1, v4, v6}, Landroid/hardware/camera2/CaptureRequest$Builder;->set(Landroid/hardware/camera2/CaptureRequest$Key;Ljava/lang/Object;)V
 
     if-eqz p2, :cond_4
 
-    .line 276
+    .line 280
     sget-object v1, Ljp/co/sony/mc/camera/device/CaptureRequestHolder;->mReqBuilderAfAndSnapshotPrepare:Landroid/hardware/camera2/CaptureRequest$Builder;
 
     sget-object v4, Lcom/sonymobile/camera/device/SomcCaptureRequestKeys;->SONYMOBILE_CONTROL_SNAPSHOT_PREPARE:Landroid/hardware/camera2/CaptureRequest$Key;
 
-    .line 279
+    .line 283
     invoke-static {v5}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object v6
 
-    .line 276
+    .line 280
     invoke-virtual {v1, v4, v6}, Landroid/hardware/camera2/CaptureRequest$Builder;->set(Landroid/hardware/camera2/CaptureRequest$Key;Ljava/lang/Object;)V
 
-    .line 285
+    .line 289
     :cond_4
     invoke-virtual {p1, v3}, Landroid/hardware/camera2/CameraDevice;->createCaptureRequest(I)Landroid/hardware/camera2/CaptureRequest$Builder;
 
@@ -1338,54 +1342,54 @@
 
     sput-object v1, Ljp/co/sony/mc/camera/device/CaptureRequestHolder;->mReqBuilderAfAndSnapshotPrepareCancel:Landroid/hardware/camera2/CaptureRequest$Builder;
 
-    .line 286
+    .line 290
     sget-object v4, Landroid/hardware/camera2/CaptureRequest;->CONTROL_AF_TRIGGER:Landroid/hardware/camera2/CaptureRequest$Key;
 
-    .line 288
+    .line 292
     invoke-static {v5}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object v6
 
-    .line 286
+    .line 290
     invoke-virtual {v1, v4, v6}, Landroid/hardware/camera2/CaptureRequest$Builder;->set(Landroid/hardware/camera2/CaptureRequest$Key;Ljava/lang/Object;)V
 
     if-eqz p2, :cond_5
 
-    .line 290
+    .line 294
     sget-object p2, Ljp/co/sony/mc/camera/device/CaptureRequestHolder;->mReqBuilderAfAndSnapshotPrepareCancel:Landroid/hardware/camera2/CaptureRequest$Builder;
 
     sget-object v1, Lcom/sonymobile/camera/device/SomcCaptureRequestKeys;->SONYMOBILE_CONTROL_SNAPSHOT_PREPARE:Landroid/hardware/camera2/CaptureRequest$Key;
 
-    .line 292
+    .line 296
     invoke-static {v3}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object v4
 
-    .line 290
+    .line 294
     invoke-virtual {p2, v1, v4}, Landroid/hardware/camera2/CaptureRequest$Builder;->set(Landroid/hardware/camera2/CaptureRequest$Key;Ljava/lang/Object;)V
 
-    .line 294
+    .line 298
     :cond_5
     sget-object p2, Ljp/co/sony/mc/camera/device/CaptureRequestHolder;->mReqBuilderAfAndSnapshotPrepareCancel:Landroid/hardware/camera2/CaptureRequest$Builder;
 
     sget-object v1, Landroid/hardware/camera2/CaptureRequest;->CONTROL_AE_PRECAPTURE_TRIGGER:Landroid/hardware/camera2/CaptureRequest$Key;
 
-    .line 296
+    .line 300
     invoke-static {v5}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object v4
 
-    .line 294
+    .line 298
     invoke-virtual {p2, v1, v4}, Landroid/hardware/camera2/CaptureRequest$Builder;->set(Landroid/hardware/camera2/CaptureRequest$Key;Ljava/lang/Object;)V
 
-    .line 300
+    .line 304
     invoke-virtual {p1, v5}, Landroid/hardware/camera2/CameraDevice;->createCaptureRequest(I)Landroid/hardware/camera2/CaptureRequest$Builder;
 
     move-result-object p1
 
     sput-object p1, Ljp/co/sony/mc/camera/device/CaptureRequestHolder;->mReqBuilderStillCapture:Landroid/hardware/camera2/CaptureRequest$Builder;
 
-    .line 303
+    .line 307
     iget-object p1, p0, Ljp/co/sony/mc/camera/device/CaptureRequestHolder;->mCaptureRequests:Ljava/util/Map;
 
     invoke-interface {p1}, Ljava/util/Map;->keySet()Ljava/util/Set;
@@ -1409,37 +1413,37 @@
 
     check-cast p2, Landroid/hardware/camera2/CaptureRequest$Key;
 
-    .line 304
+    .line 308
     sget-object v1, Ljp/co/sony/mc/camera/device/CaptureRequestHolder;->mReqBuilderAf:Landroid/hardware/camera2/CaptureRequest$Builder;
 
     invoke-direct {p0, v1, p2}, Ljp/co/sony/mc/camera/device/CaptureRequestHolder;->setRequest(Landroid/hardware/camera2/CaptureRequest$Builder;Landroid/hardware/camera2/CaptureRequest$Key;)V
 
-    .line 305
+    .line 309
     sget-object v1, Ljp/co/sony/mc/camera/device/CaptureRequestHolder;->mReqBuilderAfCancel:Landroid/hardware/camera2/CaptureRequest$Builder;
 
     invoke-direct {p0, v1, p2}, Ljp/co/sony/mc/camera/device/CaptureRequestHolder;->setRequest(Landroid/hardware/camera2/CaptureRequest$Builder;Landroid/hardware/camera2/CaptureRequest$Key;)V
 
-    .line 306
+    .line 310
     sget-object v1, Ljp/co/sony/mc/camera/device/CaptureRequestHolder;->mReqBuilderSnapshotPrepare:Landroid/hardware/camera2/CaptureRequest$Builder;
 
     invoke-direct {p0, v1, p2}, Ljp/co/sony/mc/camera/device/CaptureRequestHolder;->setRequest(Landroid/hardware/camera2/CaptureRequest$Builder;Landroid/hardware/camera2/CaptureRequest$Key;)V
 
-    .line 307
+    .line 311
     sget-object v1, Ljp/co/sony/mc/camera/device/CaptureRequestHolder;->mReqBuilderSnapshotPrepareCancel:Landroid/hardware/camera2/CaptureRequest$Builder;
 
     invoke-direct {p0, v1, p2}, Ljp/co/sony/mc/camera/device/CaptureRequestHolder;->setRequest(Landroid/hardware/camera2/CaptureRequest$Builder;Landroid/hardware/camera2/CaptureRequest$Key;)V
 
-    .line 308
+    .line 312
     sget-object v1, Ljp/co/sony/mc/camera/device/CaptureRequestHolder;->mReqBuilderAfAndSnapshotPrepare:Landroid/hardware/camera2/CaptureRequest$Builder;
 
     invoke-direct {p0, v1, p2}, Ljp/co/sony/mc/camera/device/CaptureRequestHolder;->setRequest(Landroid/hardware/camera2/CaptureRequest$Builder;Landroid/hardware/camera2/CaptureRequest$Key;)V
 
-    .line 309
+    .line 313
     sget-object v1, Ljp/co/sony/mc/camera/device/CaptureRequestHolder;->mReqBuilderAfAndSnapshotPrepareCancel:Landroid/hardware/camera2/CaptureRequest$Builder;
 
     invoke-direct {p0, v1, p2}, Ljp/co/sony/mc/camera/device/CaptureRequestHolder;->setRequest(Landroid/hardware/camera2/CaptureRequest$Builder;Landroid/hardware/camera2/CaptureRequest$Key;)V
 
-    .line 310
+    .line 314
     sget-object v1, Ljp/co/sony/mc/camera/device/CaptureRequestHolder;->mReqBuilderStillCapture:Landroid/hardware/camera2/CaptureRequest$Builder;
 
     invoke-direct {p0, v1, p2}, Ljp/co/sony/mc/camera/device/CaptureRequestHolder;->setRequest(Landroid/hardware/camera2/CaptureRequest$Builder;Landroid/hardware/camera2/CaptureRequest$Key;)V
@@ -1452,13 +1456,13 @@
     :catch_0
     move-exception p0
 
-    .line 313
+    .line 317
     :try_start_2
     const-string p1, "cameraDevice.createCaptureRequest() : Exception"
 
     invoke-static {p1, p0}, Ljp/co/sony/mc/camera/util/CamLog;->e(Ljava/lang/String;Ljava/lang/Throwable;)V
 
-    .line 315
+    .line 319
     :cond_6
     sget-boolean p0, Ljp/co/sony/mc/camera/util/CamLog;->VERBOSE:Z
 
@@ -1472,7 +1476,7 @@
 
     invoke-static {p0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
-    .line 316
+    .line 320
     :cond_7
     monitor-exit v0
 
@@ -1504,7 +1508,7 @@
 
     monitor-enter p0
 
-    .line 353
+    .line 357
     :try_start_0
     iget-object v1, p0, Ljp/co/sony/mc/camera/device/CaptureRequestHolder;->mReadWriteLock:Ljava/util/concurrent/locks/ReadWriteLock;
 
@@ -1516,7 +1520,7 @@
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_1
 
-    .line 355
+    .line 359
     :try_start_1
     iget-object v1, p0, Ljp/co/sony/mc/camera/device/CaptureRequestHolder;->mCaptureRequests:Ljava/util/Map;
 
@@ -1524,12 +1528,12 @@
 
     const v1, 0xffff
 
-    .line 360
+    .line 364
     sput v1, Ljp/co/sony/mc/camera/device/CaptureRequestHolder;->mIsNeedUpdated:I
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
-    .line 364
+    .line 368
     :try_start_2
     iget-object v1, p0, Ljp/co/sony/mc/camera/device/CaptureRequestHolder;->mReadWriteLock:Ljava/util/concurrent/locks/ReadWriteLock;
 
@@ -1539,7 +1543,7 @@
 
     invoke-interface {v1}, Ljava/util/concurrent/locks/Lock;->unlock()V
 
-    .line 367
+    .line 371
     sget-boolean v1, Ljp/co/sony/mc/camera/util/CamLog;->VERBOSE:Z
 
     if-eqz v1, :cond_0
@@ -1552,7 +1556,7 @@
 
     invoke-direct {v2, v0}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
-    .line 368
+    .line 372
     invoke-virtual {p1}, Landroid/hardware/camera2/CaptureRequest$Key;->getName()Ljava/lang/String;
 
     move-result-object p1
@@ -1579,12 +1583,12 @@
 
     aput-object p1, v1, p2
 
-    .line 367
+    .line 371
     invoke-static {v1}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
     :try_end_2
     .catchall {:try_start_2 .. :try_end_2} :catchall_1
 
-    .line 369
+    .line 373
     :cond_0
     monitor-exit p0
 
@@ -1593,7 +1597,7 @@
     :catchall_0
     move-exception p1
 
-    .line 364
+    .line 368
     :try_start_3
     iget-object p2, p0, Ljp/co/sony/mc/camera/device/CaptureRequestHolder;->mReadWriteLock:Ljava/util/concurrent/locks/ReadWriteLock;
 
@@ -1603,7 +1607,7 @@
 
     invoke-interface {p2}, Ljava/util/concurrent/locks/Lock;->unlock()V
 
-    .line 365
+    .line 369
     throw p1
     :try_end_3
     .catchall {:try_start_3 .. :try_end_3} :catchall_1
@@ -2034,15 +2038,28 @@
 
     invoke-static {p1, v0}, Ljp/co/sony/mc/camera/util/capability/PlatformCapability;->isCaptureRequestKeyAvailable(Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;Landroid/hardware/camera2/CaptureRequest$Key;)Z
 
-    move-result p1
+    move-result v0
 
-    if-eqz p1, :cond_b
+    if-eqz v0, :cond_b
 
     .line 166
-    sget-object p1, Lcom/sonymobile/camera/device/SomcCaptureRequestKeys;->SONYMOBILE_CONTROL_VARIABLE_FPS_VIDEO_MODE:Landroid/hardware/camera2/CaptureRequest$Key;
+    sget-object v0, Lcom/sonymobile/camera/device/SomcCaptureRequestKeys;->SONYMOBILE_CONTROL_VARIABLE_FPS_VIDEO_MODE:Landroid/hardware/camera2/CaptureRequest$Key;
+
+    invoke-virtual {p0, v0, v3}, Ljp/co/sony/mc/camera/device/CaptureRequestHolder;->set(Landroid/hardware/camera2/CaptureRequest$Key;Ljava/lang/Object;)V
+
+    .line 169
+    :cond_b
+    invoke-static {p1}, Ljp/co/sony/mc/camera/util/capability/PlatformCapability;->isAutoFramingModeSupported(Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;)Z
+
+    move-result p1
+
+    if-eqz p1, :cond_c
+
+    .line 170
+    sget-object p1, Lcom/sonymobile/camera/device/SomcCaptureRequestKeys;->SONYMOBILE_CONTROL_FRAMING_MODE:Landroid/hardware/camera2/CaptureRequest$Key;
 
     invoke-virtual {p0, p1, v3}, Ljp/co/sony/mc/camera/device/CaptureRequestHolder;->set(Landroid/hardware/camera2/CaptureRequest$Key;Ljava/lang/Object;)V
 
-    :cond_b
+    :cond_c
     return-void
 .end method

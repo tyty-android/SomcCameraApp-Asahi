@@ -1,6 +1,6 @@
 .class final Landroidx/compose/ui/tooling/ComposeViewAdapter$init$3$1$1;
 .super Lkotlin/jvm/internal/Lambda;
-.source "ComposeViewAdapter.kt"
+.source "ComposeViewAdapter.android.kt"
 
 # interfaces
 .implements Lkotlin/jvm/functions/Function0;
@@ -66,7 +66,7 @@
 .method public bridge synthetic invoke()Ljava/lang/Object;
     .locals 0
 
-    .line 532
+    .line 527
     invoke-virtual {p0}, Landroidx/compose/ui/tooling/ComposeViewAdapter$init$3$1$1;->invoke()V
 
     sget-object p0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
@@ -77,7 +77,7 @@
 .method public final invoke()V
     .locals 2
 
-    .line 536
+    .line 531
     iget-object p0, p0, Landroidx/compose/ui/tooling/ComposeViewAdapter$init$3$1$1;->this$0:Landroidx/compose/ui/tooling/ComposeViewAdapter;
 
     const/4 v0, 0x0
@@ -92,7 +92,7 @@
 
     check-cast p0, Landroidx/compose/ui/platform/ComposeView;
 
-    .line 537
+    .line 532
     invoke-virtual {p0, v0}, Landroidx/compose/ui/platform/ComposeView;->getChildAt(I)Landroid/view/View;
 
     move-result-object p0
@@ -111,10 +111,10 @@
     :goto_0
     if-eqz p0, :cond_1
 
-    .line 538
+    .line 533
     invoke-interface {p0}, Landroidx/compose/ui/platform/ViewRootForTest;->invalidateDescendants()V
 
-    .line 541
+    .line 536
     :cond_1
     sget-object p0, Landroidx/compose/runtime/snapshots/Snapshot;->Companion:Landroidx/compose/runtime/snapshots/Snapshot$Companion;
 

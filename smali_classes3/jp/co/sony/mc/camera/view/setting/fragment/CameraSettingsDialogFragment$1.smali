@@ -25,7 +25,7 @@
 .method constructor <init>(Ljp/co/sony/mc/camera/view/setting/fragment/CameraSettingsDialogFragment;)V
     .locals 0
 
-    .line 45
+    .line 47
     iput-object p1, p0, Ljp/co/sony/mc/camera/view/setting/fragment/CameraSettingsDialogFragment$1;->this$0:Ljp/co/sony/mc/camera/view/setting/fragment/CameraSettingsDialogFragment;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -38,14 +38,14 @@
 .method public onClick(Landroid/content/DialogInterface;I)V
     .locals 2
 
-    .line 48
+    .line 50
     iget-object p1, p0, Ljp/co/sony/mc/camera/view/setting/fragment/CameraSettingsDialogFragment$1;->this$0:Ljp/co/sony/mc/camera/view/setting/fragment/CameraSettingsDialogFragment;
 
     invoke-static {p1}, Ljp/co/sony/mc/camera/view/setting/fragment/CameraSettingsDialogFragment;->-$$Nest$fgetmCameraSettingItem(Ljp/co/sony/mc/camera/view/setting/fragment/CameraSettingsDialogFragment;)Ljp/co/sony/mc/camera/view/setting/settingitem/CameraSettingItem;
 
     move-result-object p1
 
-    .line 49
+    .line 51
     invoke-virtual {p1}, Ljp/co/sony/mc/camera/view/setting/settingitem/CameraSettingItem;->getOptions()Ljava/util/List;
 
     move-result-object p1
@@ -56,7 +56,7 @@
 
     check-cast p1, Ljp/co/sony/mc/camera/view/setting/settingitem/CameraSettingItem$CameraSettingValueItem;
 
-    .line 50
+    .line 52
     sget-object p2, Ljp/co/sony/mc/camera/view/setting/fragment/CameraSettingsDialogFragment$3;->$SwitchMap$jp$co$sony$mc$camera$setting$SettingAppearance:[I
 
     invoke-virtual {p1}, Ljp/co/sony/mc/camera/view/setting/settingitem/CameraSettingItem$CameraSettingValueItem;->getAppearance()Ljp/co/sony/mc/camera/setting/SettingAppearance;
@@ -79,7 +79,7 @@
 
     goto :goto_0
 
-    .line 54
+    .line 56
     :cond_0
     iget-object p2, p0, Ljp/co/sony/mc/camera/view/setting/fragment/CameraSettingsDialogFragment$1;->this$0:Ljp/co/sony/mc/camera/view/setting/fragment/CameraSettingsDialogFragment;
 
@@ -89,14 +89,14 @@
 
     if-eqz p2, :cond_1
 
-    .line 55
+    .line 57
     iget-object p2, p0, Ljp/co/sony/mc/camera/view/setting/fragment/CameraSettingsDialogFragment$1;->this$0:Ljp/co/sony/mc/camera/view/setting/fragment/CameraSettingsDialogFragment;
 
     invoke-static {p2}, Ljp/co/sony/mc/camera/view/setting/fragment/CameraSettingsDialogFragment;->-$$Nest$fgetmOnItemSelectedListener(Ljp/co/sony/mc/camera/view/setting/fragment/CameraSettingsDialogFragment;)Ljp/co/sony/mc/camera/view/setting/fragment/CameraSettingsDialogFragment$OnItemSelectedListener;
 
     move-result-object p2
 
-    .line 56
+    .line 58
     invoke-virtual {p1}, Ljp/co/sony/mc/camera/view/setting/settingitem/CameraSettingItem$CameraSettingValueItem;->getValue()Ljp/co/sony/mc/camera/configuration/parameters/UserSettingValue;
 
     move-result-object v0
@@ -105,20 +105,20 @@
 
     move-result-object v0
 
-    .line 57
+    .line 59
     invoke-virtual {p1}, Ljp/co/sony/mc/camera/view/setting/settingitem/CameraSettingItem$CameraSettingValueItem;->getValue()Ljp/co/sony/mc/camera/configuration/parameters/UserSettingValue;
 
     move-result-object v1
 
-    .line 58
+    .line 60
     invoke-virtual {p1}, Ljp/co/sony/mc/camera/view/setting/settingitem/CameraSettingItem$CameraSettingValueItem;->getAppearance()Ljp/co/sony/mc/camera/setting/SettingAppearance;
 
     move-result-object p1
 
-    .line 56
+    .line 58
     invoke-interface {p2, v0, v1, p1}, Ljp/co/sony/mc/camera/view/setting/fragment/CameraSettingsDialogFragment$OnItemSelectedListener;->onItemSelected(Ljp/co/sony/mc/camera/setting/SettingKey$Key;Ljp/co/sony/mc/camera/configuration/parameters/UserSettingValue;Ljp/co/sony/mc/camera/setting/SettingAppearance;)V
 
-    .line 60
+    .line 62
     :cond_1
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/setting/fragment/CameraSettingsDialogFragment$1;->this$0:Ljp/co/sony/mc/camera/view/setting/fragment/CameraSettingsDialogFragment;
 

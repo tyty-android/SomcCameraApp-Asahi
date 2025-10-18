@@ -56,7 +56,7 @@
 .method private static final countLeadingZeroBits(I)I
     .locals 0
 
-    .line 111
+    .line 109
     invoke-static {p0}, Ljava/lang/Integer;->numberOfLeadingZeros(I)I
 
     move-result p0
@@ -67,7 +67,7 @@
 .method private static final countLeadingZeroBits(J)I
     .locals 0
 
-    .line 185
+    .line 178
     invoke-static {p0, p1}, Ljava/lang/Long;->numberOfLeadingZeros(J)I
 
     move-result p0
@@ -78,7 +78,7 @@
 .method private static final countOneBits(I)I
     .locals 0
 
-    .line 103
+    .line 102
     invoke-static {p0}, Ljava/lang/Integer;->bitCount(I)I
 
     move-result p0
@@ -89,7 +89,7 @@
 .method private static final countOneBits(J)I
     .locals 0
 
-    .line 177
+    .line 171
     invoke-static {p0, p1}, Ljava/lang/Long;->bitCount(J)I
 
     move-result p0
@@ -100,7 +100,7 @@
 .method private static final countTrailingZeroBits(I)I
     .locals 0
 
-    .line 119
+    .line 116
     invoke-static {p0}, Ljava/lang/Integer;->numberOfTrailingZeros(I)I
 
     move-result p0
@@ -111,7 +111,7 @@
 .method private static final countTrailingZeroBits(J)I
     .locals 0
 
-    .line 193
+    .line 185
     invoke-static {p0, p1}, Ljava/lang/Long;->numberOfTrailingZeros(J)I
 
     move-result p0
@@ -250,7 +250,7 @@
 .method private static final rotateLeft(II)I
     .locals 0
 
-    .line 152
+    .line 147
     invoke-static {p0, p1}, Ljava/lang/Integer;->rotateLeft(II)I
 
     move-result p0
@@ -261,7 +261,7 @@
 .method private static final rotateLeft(JI)J
     .locals 0
 
-    .line 226
+    .line 216
     invoke-static {p0, p1, p2}, Ljava/lang/Long;->rotateLeft(JI)J
 
     move-result-wide p0
@@ -272,7 +272,7 @@
 .method private static final rotateRight(II)I
     .locals 0
 
-    .line 168
+    .line 163
     invoke-static {p0, p1}, Ljava/lang/Integer;->rotateRight(II)I
 
     move-result p0
@@ -283,7 +283,7 @@
 .method private static final rotateRight(JI)J
     .locals 0
 
-    .line 241
+    .line 231
     invoke-static {p0, p1, p2}, Ljava/lang/Long;->rotateRight(JI)J
 
     move-result-wide p0
@@ -294,7 +294,7 @@
 .method private static final takeHighestOneBit(I)I
     .locals 0
 
-    .line 128
+    .line 124
     invoke-static {p0}, Ljava/lang/Integer;->highestOneBit(I)I
 
     move-result p0
@@ -305,7 +305,7 @@
 .method private static final takeHighestOneBit(J)J
     .locals 0
 
-    .line 202
+    .line 193
     invoke-static {p0, p1}, Ljava/lang/Long;->highestOneBit(J)J
 
     move-result-wide p0
@@ -316,7 +316,7 @@
 .method private static final takeLowestOneBit(I)I
     .locals 0
 
-    .line 137
+    .line 132
     invoke-static {p0}, Ljava/lang/Integer;->lowestOneBit(I)I
 
     move-result p0
@@ -327,7 +327,7 @@
 .method private static final takeLowestOneBit(J)J
     .locals 0
 
-    .line 211
+    .line 201
     invoke-static {p0, p1}, Ljava/lang/Long;->lowestOneBit(J)J
 
     move-result-wide p0

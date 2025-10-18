@@ -85,7 +85,7 @@
 
     sput-object v3, Lcom/google/gson/stream/JsonToken;->END_OBJECT:Lcom/google/gson/stream/JsonToken;
 
-    .line 56
+    .line 55
     new-instance v4, Lcom/google/gson/stream/JsonToken;
 
     const-string v5, "NAME"
@@ -96,7 +96,7 @@
 
     sput-object v4, Lcom/google/gson/stream/JsonToken;->NAME:Lcom/google/gson/stream/JsonToken;
 
-    .line 61
+    .line 58
     new-instance v5, Lcom/google/gson/stream/JsonToken;
 
     const-string v6, "STRING"
@@ -107,7 +107,7 @@
 
     sput-object v5, Lcom/google/gson/stream/JsonToken;->STRING:Lcom/google/gson/stream/JsonToken;
 
-    .line 67
+    .line 63
     new-instance v6, Lcom/google/gson/stream/JsonToken;
 
     const-string v7, "NUMBER"
@@ -118,7 +118,7 @@
 
     sput-object v6, Lcom/google/gson/stream/JsonToken;->NUMBER:Lcom/google/gson/stream/JsonToken;
 
-    .line 72
+    .line 66
     new-instance v7, Lcom/google/gson/stream/JsonToken;
 
     const-string v8, "BOOLEAN"
@@ -129,7 +129,7 @@
 
     sput-object v7, Lcom/google/gson/stream/JsonToken;->BOOLEAN:Lcom/google/gson/stream/JsonToken;
 
-    .line 77
+    .line 69
     new-instance v8, Lcom/google/gson/stream/JsonToken;
 
     const-string v9, "NULL"
@@ -140,7 +140,7 @@
 
     sput-object v8, Lcom/google/gson/stream/JsonToken;->NULL:Lcom/google/gson/stream/JsonToken;
 
-    .line 84
+    .line 75
     new-instance v9, Lcom/google/gson/stream/JsonToken;
 
     const-string v10, "END_DOCUMENT"

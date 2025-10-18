@@ -376,7 +376,7 @@
 .method private dispatchOnEndIconChanged(I)V
     .locals 3
 
-    .line 780
+    .line 795
     iget-object v0, p0, Lcom/google/android/material/textfield/EndCompoundLayout;->endIconChangedListeners:Ljava/util/LinkedHashSet;
 
     invoke-virtual {v0}, Ljava/util/LinkedHashSet;->iterator()Ljava/util/Iterator;
@@ -396,7 +396,7 @@
 
     check-cast v1, Lcom/google/android/material/textfield/TextInputLayout$OnEndIconChangedListener;
 
-    .line 781
+    .line 796
     iget-object v2, p0, Lcom/google/android/material/textfield/EndCompoundLayout;->textInputLayout:Lcom/google/android/material/textfield/TextInputLayout;
 
     invoke-interface {v1, v2, p1}, Lcom/google/android/material/textfield/TextInputLayout$OnEndIconChangedListener;->onEndIconChanged(Lcom/google/android/material/textfield/TextInputLayout;I)V
@@ -988,14 +988,14 @@
 
     if-eqz p1, :cond_0
 
-    .line 786
+    .line 801
     invoke-virtual {p0}, Lcom/google/android/material/textfield/EndCompoundLayout;->getEndIconDrawable()Landroid/graphics/drawable/Drawable;
 
     move-result-object p1
 
     if-eqz p1, :cond_0
 
-    .line 789
+    .line 804
     invoke-virtual {p0}, Lcom/google/android/material/textfield/EndCompoundLayout;->getEndIconDrawable()Landroid/graphics/drawable/Drawable;
 
     move-result-object p1
@@ -1008,25 +1008,25 @@
 
     move-result-object p1
 
-    .line 790
+    .line 805
     iget-object v0, p0, Lcom/google/android/material/textfield/EndCompoundLayout;->textInputLayout:Lcom/google/android/material/textfield/TextInputLayout;
 
-    .line 791
+    .line 806
     invoke-virtual {v0}, Lcom/google/android/material/textfield/TextInputLayout;->getErrorCurrentTextColors()I
 
     move-result v0
 
-    .line 790
+    .line 805
     invoke-static {p1, v0}, Landroidx/core/graphics/drawable/DrawableCompat;->setTint(Landroid/graphics/drawable/Drawable;I)V
 
-    .line 792
+    .line 807
     iget-object p0, p0, Lcom/google/android/material/textfield/EndCompoundLayout;->endIconView:Lcom/google/android/material/internal/CheckableImageButton;
 
     invoke-virtual {p0, p1}, Lcom/google/android/material/internal/CheckableImageButton;->setImageDrawable(Landroid/graphics/drawable/Drawable;)V
 
     goto :goto_0
 
-    .line 794
+    .line 809
     :cond_0
     iget-object p1, p0, Lcom/google/android/material/textfield/EndCompoundLayout;->textInputLayout:Lcom/google/android/material/textfield/TextInputLayout;
 
@@ -1045,10 +1045,10 @@
 .method private updateEndLayoutVisibility()V
     .locals 4
 
-    .line 770
+    .line 785
     iget-object v0, p0, Lcom/google/android/material/textfield/EndCompoundLayout;->endIconFrame:Landroid/widget/FrameLayout;
 
-    .line 771
+    .line 786
     iget-object v1, p0, Lcom/google/android/material/textfield/EndCompoundLayout;->endIconView:Lcom/google/android/material/internal/CheckableImageButton;
 
     invoke-virtual {v1}, Lcom/google/android/material/internal/CheckableImageButton;->getVisibility()I
@@ -1074,11 +1074,11 @@
     :cond_0
     move v1, v3
 
-    .line 770
+    .line 785
     :goto_0
     invoke-virtual {v0, v1}, Landroid/widget/FrameLayout;->setVisibility(I)V
 
-    .line 773
+    .line 788
     iget-object v0, p0, Lcom/google/android/material/textfield/EndCompoundLayout;->suffixText:Ljava/lang/CharSequence;
 
     if-eqz v0, :cond_1
@@ -1094,7 +1094,7 @@
     :cond_1
     move v0, v3
 
-    .line 775
+    .line 790
     :goto_1
     invoke-virtual {p0}, Lcom/google/android/material/textfield/EndCompoundLayout;->isEndIconVisible()Z
 
@@ -1115,7 +1115,7 @@
     :cond_2
     move v2, v3
 
-    .line 776
+    .line 791
     :cond_3
     :goto_2
     invoke-virtual {p0, v2}, Lcom/google/android/material/textfield/EndCompoundLayout;->setVisibility(I)V
@@ -1126,7 +1126,7 @@
 .method private updateErrorIconVisibility()V
     .locals 3
 
-    .line 757
+    .line 772
     invoke-virtual {p0}, Lcom/google/android/material/textfield/EndCompoundLayout;->getErrorIconDrawable()Landroid/graphics/drawable/Drawable;
 
     move-result-object v0
@@ -1137,7 +1137,7 @@
 
     iget-object v0, p0, Lcom/google/android/material/textfield/EndCompoundLayout;->textInputLayout:Lcom/google/android/material/textfield/TextInputLayout;
 
-    .line 758
+    .line 773
     invoke-virtual {v0}, Lcom/google/android/material/textfield/TextInputLayout;->isErrorEnabled()Z
 
     move-result v0
@@ -1146,7 +1146,7 @@
 
     iget-object v0, p0, Lcom/google/android/material/textfield/EndCompoundLayout;->textInputLayout:Lcom/google/android/material/textfield/TextInputLayout;
 
-    .line 759
+    .line 774
     invoke-virtual {v0}, Lcom/google/android/material/textfield/TextInputLayout;->shouldShowError()Z
 
     move-result v0
@@ -1160,7 +1160,7 @@
     :cond_0
     move v0, v1
 
-    .line 760
+    .line 775
     :goto_0
     iget-object v2, p0, Lcom/google/android/material/textfield/EndCompoundLayout;->errorIconView:Lcom/google/android/material/internal/CheckableImageButton;
 
@@ -1174,20 +1174,20 @@
     :goto_1
     invoke-virtual {v2, v1}, Lcom/google/android/material/internal/CheckableImageButton;->setVisibility(I)V
 
-    .line 761
+    .line 776
     invoke-direct {p0}, Lcom/google/android/material/textfield/EndCompoundLayout;->updateEndLayoutVisibility()V
 
-    .line 762
+    .line 777
     invoke-virtual {p0}, Lcom/google/android/material/textfield/EndCompoundLayout;->updateSuffixTextViewPadding()V
 
-    .line 763
+    .line 778
     invoke-virtual {p0}, Lcom/google/android/material/textfield/EndCompoundLayout;->hasEndIcon()Z
 
     move-result v0
 
     if-nez v0, :cond_2
 
-    .line 764
+    .line 779
     iget-object p0, p0, Lcom/google/android/material/textfield/EndCompoundLayout;->textInputLayout:Lcom/google/android/material/textfield/TextInputLayout;
 
     invoke-virtual {p0}, Lcom/google/android/material/textfield/TextInputLayout;->updateDummyDrawables()Z
@@ -1299,19 +1299,19 @@
 .method getCurrentEndIconView()Lcom/google/android/material/internal/CheckableImageButton;
     .locals 1
 
-    .line 742
+    .line 757
     invoke-virtual {p0}, Lcom/google/android/material/textfield/EndCompoundLayout;->isErrorIconVisible()Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
-    .line 743
+    .line 758
     iget-object p0, p0, Lcom/google/android/material/textfield/EndCompoundLayout;->errorIconView:Lcom/google/android/material/internal/CheckableImageButton;
 
     return-object p0
 
-    .line 744
+    .line 759
     :cond_0
     invoke-virtual {p0}, Lcom/google/android/material/textfield/EndCompoundLayout;->hasEndIcon()Z
 
@@ -1325,7 +1325,7 @@
 
     if-eqz v0, :cond_1
 
-    .line 745
+    .line 760
     iget-object p0, p0, Lcom/google/android/material/textfield/EndCompoundLayout;->endIconView:Lcom/google/android/material/internal/CheckableImageButton;
 
     return-object p0
@@ -1474,6 +1474,75 @@
     return-object p0
 .end method
 
+.method getSuffixTextEndOffset()I
+    .locals 2
+
+    .line 742
+    invoke-virtual {p0}, Lcom/google/android/material/textfield/EndCompoundLayout;->isEndIconVisible()Z
+
+    move-result v0
+
+    if-nez v0, :cond_1
+
+    invoke-virtual {p0}, Lcom/google/android/material/textfield/EndCompoundLayout;->isErrorIconVisible()Z
+
+    move-result v0
+
+    if-eqz v0, :cond_0
+
+    goto :goto_0
+
+    :cond_0
+    const/4 v0, 0x0
+
+    goto :goto_1
+
+    .line 743
+    :cond_1
+    :goto_0
+    iget-object v0, p0, Lcom/google/android/material/textfield/EndCompoundLayout;->endIconView:Lcom/google/android/material/internal/CheckableImageButton;
+
+    .line 744
+    invoke-virtual {v0}, Lcom/google/android/material/internal/CheckableImageButton;->getMeasuredWidth()I
+
+    move-result v0
+
+    iget-object v1, p0, Lcom/google/android/material/textfield/EndCompoundLayout;->endIconView:Lcom/google/android/material/internal/CheckableImageButton;
+
+    .line 746
+    invoke-virtual {v1}, Lcom/google/android/material/internal/CheckableImageButton;->getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
+
+    move-result-object v1
+
+    check-cast v1, Landroid/view/ViewGroup$MarginLayoutParams;
+
+    .line 745
+    invoke-static {v1}, Landroidx/core/view/MarginLayoutParamsCompat;->getMarginStart(Landroid/view/ViewGroup$MarginLayoutParams;)I
+
+    move-result v1
+
+    add-int/2addr v0, v1
+
+    .line 750
+    :goto_1
+    invoke-static {p0}, Landroidx/core/view/ViewCompat;->getPaddingEnd(Landroid/view/View;)I
+
+    move-result v1
+
+    iget-object p0, p0, Lcom/google/android/material/textfield/EndCompoundLayout;->suffixTextView:Landroid/widget/TextView;
+
+    .line 751
+    invoke-static {p0}, Landroidx/core/view/ViewCompat;->getPaddingEnd(Landroid/view/View;)I
+
+    move-result p0
+
+    add-int/2addr v1, p0
+
+    add-int/2addr v1, v0
+
+    return v1
+.end method
+
 .method getSuffixTextView()Landroid/widget/TextView;
     .locals 0
 
@@ -1578,7 +1647,7 @@
 .method isErrorIconVisible()Z
     .locals 0
 
-    .line 752
+    .line 767
     iget-object p0, p0, Lcom/google/android/material/textfield/EndCompoundLayout;->errorIconView:Lcom/google/android/material/internal/CheckableImageButton;
 
     invoke-virtual {p0}, Lcom/google/android/material/internal/CheckableImageButton;->getVisibility()I

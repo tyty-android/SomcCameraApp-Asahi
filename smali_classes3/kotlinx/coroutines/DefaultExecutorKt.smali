@@ -6,11 +6,13 @@
 # annotations
 .annotation runtime Lkotlin/Metadata;
     d1 = {
-        "\u0000\u0012\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0003\n\u0002\u0010\u000b\n\u0002\u0008\u0002\u001a\u0008\u0010\u0006\u001a\u00020\u0001H\u0002\"\u0014\u0010\u0000\u001a\u00020\u0001X\u0080\u0004\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\u0002\u0010\u0003\"\u000e\u0010\u0004\u001a\u00020\u0005X\u0082\u0004\u00a2\u0006\u0002\n\u0000\u00a8\u0006\u0007"
+        "\u0000\u0012\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0005\n\u0002\u0010\u000b\n\u0002\u0008\u0002\u001a\u0008\u0010\u0008\u001a\u00020\u0001H\u0002\"\u001c\u0010\u0000\u001a\u00020\u00018\u0000X\u0081\u0004\u00a2\u0006\u000e\n\u0000\u0012\u0004\u0008\u0002\u0010\u0003\u001a\u0004\u0008\u0004\u0010\u0005\"\u000e\u0010\u0006\u001a\u00020\u0007X\u0082\u0004\u00a2\u0006\u0002\n\u0000\u00a8\u0006\t"
     }
     d2 = {
         "DefaultDelay",
         "Lkotlinx/coroutines/Delay;",
+        "getDefaultDelay$annotations",
+        "()V",
         "getDefaultDelay",
         "()Lkotlinx/coroutines/Delay;",
         "defaultMainDelayOptIn",
@@ -21,7 +23,7 @@
     k = 0x2
     mv = {
         0x1,
-        0x6,
+        0x8,
         0x0
     }
     xi = 0x30
@@ -49,7 +51,7 @@
 
     sput-boolean v0, Lkotlinx/coroutines/DefaultExecutorKt;->defaultMainDelayOptIn:Z
 
-    .line 13
+    .line 14
     invoke-static {}, Lkotlinx/coroutines/DefaultExecutorKt;->initializeDefaultDelay()Lkotlinx/coroutines/Delay;
 
     move-result-object v0
@@ -62,16 +64,22 @@
 .method public static final getDefaultDelay()Lkotlinx/coroutines/Delay;
     .locals 1
 
-    .line 13
+    .line 14
     sget-object v0, Lkotlinx/coroutines/DefaultExecutorKt;->DefaultDelay:Lkotlinx/coroutines/Delay;
 
     return-object v0
 .end method
 
+.method public static synthetic getDefaultDelay$annotations()V
+    .locals 0
+
+    return-void
+.end method
+
 .method private static final initializeDefaultDelay()Lkotlinx/coroutines/Delay;
     .locals 2
 
-    .line 17
+    .line 18
     sget-boolean v0, Lkotlinx/coroutines/DefaultExecutorKt;->defaultMainDelayOptIn:Z
 
     if-nez v0, :cond_0
@@ -82,13 +90,13 @@
 
     return-object v0
 
-    .line 18
+    .line 19
     :cond_0
     invoke-static {}, Lkotlinx/coroutines/Dispatchers;->getMain()Lkotlinx/coroutines/MainCoroutineDispatcher;
 
     move-result-object v0
 
-    .line 24
+    .line 25
     invoke-static {v0}, Lkotlinx/coroutines/internal/MainDispatchersKt;->isMissing(Lkotlinx/coroutines/MainCoroutineDispatcher;)Z
 
     move-result v1

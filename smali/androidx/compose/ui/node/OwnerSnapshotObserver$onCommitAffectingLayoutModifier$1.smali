@@ -92,10 +92,6 @@
 .method public final invoke(Landroidx/compose/ui/node/LayoutNode;)V
     .locals 2
 
-    const-string p0, "layoutNode"
-
-    invoke-static {p1, p0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
     .line 55
     invoke-virtual {p1}, Landroidx/compose/ui/node/LayoutNode;->isValidOwnerScope()Z
 

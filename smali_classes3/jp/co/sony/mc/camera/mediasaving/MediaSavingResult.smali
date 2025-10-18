@@ -78,7 +78,7 @@
     .line 17
     new-instance v0, Ljp/co/sony/mc/camera/mediasaving/MediaSavingResult;
 
-    const v11, 0x7f110420
+    const v11, 0x7f110455
 
     const/4 v12, 0x0
 
@@ -97,7 +97,7 @@
     .line 21
     new-instance v0, Ljp/co/sony/mc/camera/mediasaving/MediaSavingResult;
 
-    const v5, 0x7f1102eb
+    const v5, 0x7f110318
 
     const/4 v6, 0x0
 

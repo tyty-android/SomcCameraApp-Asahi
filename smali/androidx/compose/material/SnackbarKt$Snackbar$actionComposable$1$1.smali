@@ -66,7 +66,7 @@
 .method public bridge synthetic invoke()Ljava/lang/Object;
     .locals 0
 
-    .line 165
+    .line 166
     invoke-virtual {p0}, Landroidx/compose/material/SnackbarKt$Snackbar$actionComposable$1$1;->invoke()V
 
     sget-object p0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
@@ -77,7 +77,7 @@
 .method public final invoke()V
     .locals 0
 
-    .line 167
+    .line 168
     iget-object p0, p0, Landroidx/compose/material/SnackbarKt$Snackbar$actionComposable$1$1;->$snackbarData:Landroidx/compose/material/SnackbarData;
 
     invoke-interface {p0}, Landroidx/compose/material/SnackbarData;->performAction()V

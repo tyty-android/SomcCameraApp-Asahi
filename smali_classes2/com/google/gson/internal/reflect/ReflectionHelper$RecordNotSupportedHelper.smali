@@ -20,7 +20,7 @@
 
     const/4 v0, 0x0
 
-    .line 252
+    .line 299
     invoke-direct {p0, v0}, Lcom/google/gson/internal/reflect/ReflectionHelper$RecordHelper;-><init>(Lcom/google/gson/internal/reflect/ReflectionHelper$1;)V
 
     return-void
@@ -29,7 +29,7 @@
 .method synthetic constructor <init>(Lcom/google/gson/internal/reflect/ReflectionHelper$1;)V
     .locals 0
 
-    .line 252
+    .line 299
     invoke-direct {p0}, Lcom/google/gson/internal/reflect/ReflectionHelper$RecordNotSupportedHelper;-><init>()V
 
     return-void
@@ -50,7 +50,7 @@
         }
     .end annotation
 
-    .line 273
+    .line 320
     new-instance p0, Ljava/lang/UnsupportedOperationException;
 
     const-string p1, "Records are not supported on this JVM, this method should not be called"
@@ -74,7 +74,7 @@
         }
     .end annotation
 
-    .line 267
+    .line 314
     new-instance p0, Ljava/lang/UnsupportedOperationException;
 
     const-string p1, "Records are not supported on this JVM, this method should not be called"
@@ -95,7 +95,7 @@
         }
     .end annotation
 
-    .line 261
+    .line 308
     new-instance p0, Ljava/lang/UnsupportedOperationException;
 
     const-string p1, "Records are not supported on this JVM, this method should not be called"

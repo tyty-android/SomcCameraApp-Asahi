@@ -56,7 +56,7 @@
     f = "Draggable.kt"
     i = {}
     l = {
-        0xc2
+        0xcb
     }
     m = "invokeSuspend"
     n = {}
@@ -192,7 +192,7 @@
 
     move-result-object v0
 
-    .line 194
+    .line 203
     iget v1, p0, Landroidx/compose/foundation/gestures/DraggableKt$draggable$5;->label:I
 
     const/4 v2, 0x1

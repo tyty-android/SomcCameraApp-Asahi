@@ -3,7 +3,7 @@
 .source "D8$$SyntheticClass"
 
 # interfaces
-.implements Landroid/view/View$OnClickListener;
+.implements Lkotlin/jvm/functions/Function1;
 
 
 # instance fields
@@ -24,13 +24,21 @@
 
 
 # virtual methods
-.method public final onClick(Landroid/view/View;)V
+.method public final invoke(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
 
     .line 0
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/setting/fragment/RecommendedSettingsFragment$$ExternalSyntheticLambda0;->f$0:Ljp/co/sony/mc/camera/view/setting/fragment/RecommendedSettingsFragment;
 
-    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/view/setting/fragment/RecommendedSettingsFragment;->$r8$lambda$HFxNF4EuDuXMCAZ2MagKu2xpKW0(Ljp/co/sony/mc/camera/view/setting/fragment/RecommendedSettingsFragment;Landroid/view/View;)V
+    check-cast p1, Ljava/lang/Integer;
 
-    return-void
+    invoke-virtual {p1}, Ljava/lang/Integer;->intValue()I
+
+    move-result p1
+
+    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/view/setting/fragment/RecommendedSettingsFragment;->$r8$lambda$qZXKw4TP6TJ0px1ttgAzNqDn428(Ljp/co/sony/mc/camera/view/setting/fragment/RecommendedSettingsFragment;I)Lkotlin/Unit;
+
+    move-result-object p0
+
+    return-object p0
 .end method

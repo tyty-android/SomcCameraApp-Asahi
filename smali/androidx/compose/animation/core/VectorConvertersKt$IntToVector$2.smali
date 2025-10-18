@@ -80,10 +80,6 @@
 .method public final invoke(Landroidx/compose/animation/core/AnimationVector1D;)Ljava/lang/Integer;
     .locals 0
 
-    const-string p0, "it"
-
-    invoke-static {p1, p0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
     .line 88
     invoke-virtual {p1}, Landroidx/compose/animation/core/AnimationVector1D;->getValue()F
 

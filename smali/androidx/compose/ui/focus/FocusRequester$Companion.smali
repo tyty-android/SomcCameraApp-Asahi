@@ -53,7 +53,7 @@
 .method private constructor <init>()V
     .locals 0
 
-    .line 130
+    .line 171
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -78,7 +78,7 @@
 .method public final createRefs()Landroidx/compose/ui/focus/FocusRequester$Companion$FocusRequesterFactory;
     .locals 0
 
-    .line 182
+    .line 223
     sget-object p0, Landroidx/compose/ui/focus/FocusRequester$Companion$FocusRequesterFactory;->INSTANCE:Landroidx/compose/ui/focus/FocusRequester$Companion$FocusRequesterFactory;
 
     return-object p0
@@ -87,7 +87,7 @@
 .method public final getCancel()Landroidx/compose/ui/focus/FocusRequester;
     .locals 0
 
-    .line 148
+    .line 189
     invoke-static {}, Landroidx/compose/ui/focus/FocusRequester;->access$getCancel$cp()Landroidx/compose/ui/focus/FocusRequester;
 
     move-result-object p0
@@ -98,7 +98,7 @@
 .method public final getDefault()Landroidx/compose/ui/focus/FocusRequester;
     .locals 0
 
-    .line 136
+    .line 177
     invoke-static {}, Landroidx/compose/ui/focus/FocusRequester;->access$getDefault$cp()Landroidx/compose/ui/focus/FocusRequester;
 
     move-result-object p0

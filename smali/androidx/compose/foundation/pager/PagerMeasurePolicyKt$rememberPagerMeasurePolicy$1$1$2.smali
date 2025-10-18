@@ -105,14 +105,10 @@
         }
     .end annotation
 
-    const-string v0, "placement"
-
-    invoke-static {p3, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 179
+    .line 180
     iget-object v0, p0, Landroidx/compose/foundation/pager/PagerMeasurePolicyKt$rememberPagerMeasurePolicy$1$1$2;->$this_null:Landroidx/compose/foundation/lazy/layout/LazyLayoutMeasureScope;
 
-    .line 180
+    .line 181
     iget-wide v1, p0, Landroidx/compose/foundation/pager/PagerMeasurePolicyKt$rememberPagerMeasurePolicy$1$1$2;->$containerConstraints:J
 
     iget v3, p0, Landroidx/compose/foundation/pager/PagerMeasurePolicyKt$rememberPagerMeasurePolicy$1$1$2;->$totalHorizontalPadding:I
@@ -123,7 +119,7 @@
 
     move-result p1
 
-    .line 181
+    .line 182
     iget-wide v1, p0, Landroidx/compose/foundation/pager/PagerMeasurePolicyKt$rememberPagerMeasurePolicy$1$1$2;->$containerConstraints:J
 
     iget p0, p0, Landroidx/compose/foundation/pager/PagerMeasurePolicyKt$rememberPagerMeasurePolicy$1$1$2;->$totalVerticalPadding:I
@@ -134,12 +130,12 @@
 
     move-result p0
 
-    .line 182
+    .line 183
     invoke-static {}, Lkotlin/collections/MapsKt;->emptyMap()Ljava/util/Map;
 
     move-result-object p2
 
-    .line 179
+    .line 180
     invoke-interface {v0, p1, p0, p2, p3}, Landroidx/compose/foundation/lazy/layout/LazyLayoutMeasureScope;->layout(IILjava/util/Map;Lkotlin/jvm/functions/Function1;)Landroidx/compose/ui/layout/MeasureResult;
 
     move-result-object p0

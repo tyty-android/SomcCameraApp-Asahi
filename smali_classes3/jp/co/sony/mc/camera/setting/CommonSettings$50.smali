@@ -21,7 +21,7 @@
 .method constructor <init>()V
     .locals 0
 
-    .line 708
+    .line 711
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -42,10 +42,10 @@
         }
     .end annotation
 
-    .line 712
+    .line 715
     check-cast p1, Ljp/co/sony/mc/camera/setting/CommonSettings;
 
-    .line 713
+    .line 716
     invoke-static {p1}, Ljp/co/sony/mc/camera/setting/CommonSettings;->-$$Nest$mgetNetworkUsage(Ljp/co/sony/mc/camera/setting/CommonSettings;)Ljp/co/sony/mc/camera/configuration/parameters/NetworkUsage;
 
     move-result-object p0

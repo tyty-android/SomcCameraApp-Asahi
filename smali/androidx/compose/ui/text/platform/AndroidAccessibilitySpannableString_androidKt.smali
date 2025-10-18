@@ -5,7 +5,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/SourceDebugExtension;
-    value = "SMAP\nAndroidAccessibilitySpannableString.android.kt\nKotlin\n*S Kotlin\n*F\n+ 1 AndroidAccessibilitySpannableString.android.kt\nandroidx/compose/ui/text/platform/AndroidAccessibilitySpannableString_androidKt\n+ 2 ListUtils.kt\nandroidx/compose/ui/util/ListUtilsKt\n*L\n1#1,181:1\n33#2,6:182\n33#2,6:188\n33#2,6:194\n*S KotlinDebug\n*F\n+ 1 AndroidAccessibilitySpannableString.android.kt\nandroidx/compose/ui/text/platform/AndroidAccessibilitySpannableString_androidKt\n*L\n59#1:182,6\n66#1:188,6\n75#1:194,6\n*E\n"
+    value = "SMAP\nAndroidAccessibilitySpannableString.android.kt\nKotlin\n*S Kotlin\n*F\n+ 1 AndroidAccessibilitySpannableString.android.kt\nandroidx/compose/ui/text/platform/AndroidAccessibilitySpannableString_androidKt\n+ 2 ListUtils.kt\nandroidx/compose/ui/util/ListUtilsKt\n*L\n1#1,182:1\n33#2,6:183\n33#2,6:189\n33#2,6:195\n*S KotlinDebug\n*F\n+ 1 AndroidAccessibilitySpannableString.android.kt\nandroidx/compose/ui/text/platform/AndroidAccessibilitySpannableString_androidKt\n*L\n59#1:183,6\n66#1:189,6\n75#1:195,6\n*E\n"
 .end annotation
 
 .annotation runtime Lkotlin/Metadata;
@@ -346,138 +346,116 @@
 .end method
 
 .method public static final toAccessibilitySpannableString(Landroidx/compose/ui/text/AnnotatedString;Landroidx/compose/ui/unit/Density;Landroidx/compose/ui/text/font/FontFamily$Resolver;Landroidx/compose/ui/text/platform/URLSpanCache;)Landroid/text/SpannableString;
-    .locals 38
+    .locals 35
 
     move-object/from16 v0, p0
 
-    move-object/from16 v1, p3
-
-    const-string v2, "<this>"
-
-    invoke-static {v0, v2}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string v2, "density"
-
-    move-object/from16 v9, p1
-
-    invoke-static {v9, v2}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string v2, "fontFamilyResolver"
-
-    move-object/from16 v10, p2
-
-    invoke-static {v10, v2}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string/jumbo v2, "urlSpanCache"
-
-    invoke-static {v1, v2}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
     .line 58
-    new-instance v2, Landroid/text/SpannableString;
+    new-instance v7, Landroid/text/SpannableString;
 
     invoke-virtual/range {p0 .. p0}, Landroidx/compose/ui/text/AnnotatedString;->getText()Ljava/lang/String;
 
-    move-result-object v3
+    move-result-object v1
 
-    check-cast v3, Ljava/lang/CharSequence;
+    check-cast v1, Ljava/lang/CharSequence;
 
-    invoke-direct {v2, v3}, Landroid/text/SpannableString;-><init>(Ljava/lang/CharSequence;)V
+    invoke-direct {v7, v1}, Landroid/text/SpannableString;-><init>(Ljava/lang/CharSequence;)V
 
     .line 59
     invoke-virtual/range {p0 .. p0}, Landroidx/compose/ui/text/AnnotatedString;->getSpanStylesOrNull$ui_text_release()Ljava/util/List;
 
-    move-result-object v11
+    move-result-object v8
 
-    const/4 v12, 0x0
+    const/4 v9, 0x0
 
-    if-eqz v11, :cond_0
-
-    .line 183
-    invoke-interface {v11}, Ljava/util/List;->size()I
-
-    move-result v13
-
-    move v14, v12
-
-    :goto_0
-    if-ge v14, v13, :cond_0
+    if-eqz v8, :cond_0
 
     .line 184
-    invoke-interface {v11, v14}, Ljava/util/List;->get(I)Ljava/lang/Object;
+    invoke-interface {v8}, Ljava/util/List;->size()I
 
-    move-result-object v3
+    move-result v10
+
+    move v11, v9
+
+    :goto_0
+    if-ge v11, v10, :cond_0
 
     .line 185
-    check-cast v3, Landroidx/compose/ui/text/AnnotatedString$Range;
+    invoke-interface {v8, v11}, Ljava/util/List;->get(I)Ljava/lang/Object;
+
+    move-result-object v1
+
+    .line 186
+    check-cast v1, Landroidx/compose/ui/text/AnnotatedString$Range;
 
     .line 59
-    invoke-virtual {v3}, Landroidx/compose/ui/text/AnnotatedString$Range;->component1()Ljava/lang/Object;
+    invoke-virtual {v1}, Landroidx/compose/ui/text/AnnotatedString$Range;->component1()Ljava/lang/Object;
 
-    move-result-object v4
+    move-result-object v2
 
-    move-object v15, v4
+    move-object v12, v2
 
-    check-cast v15, Landroidx/compose/ui/text/SpanStyle;
+    check-cast v12, Landroidx/compose/ui/text/SpanStyle;
 
-    invoke-virtual {v3}, Landroidx/compose/ui/text/AnnotatedString$Range;->component2()I
+    invoke-virtual {v1}, Landroidx/compose/ui/text/AnnotatedString$Range;->component2()I
 
-    move-result v5
+    move-result v3
 
-    invoke-virtual {v3}, Landroidx/compose/ui/text/AnnotatedString$Range;->component3()I
+    invoke-virtual {v1}, Landroidx/compose/ui/text/AnnotatedString$Range;->component3()I
 
-    move-result v6
+    move-result v4
 
-    const v36, 0xffdf
+    const v33, 0xffdf
 
-    const/16 v37, 0x0
+    const/16 v34, 0x0
 
-    const-wide/16 v16, 0x0
+    const-wide/16 v13, 0x0
 
-    const-wide/16 v18, 0x0
+    const-wide/16 v15, 0x0
+
+    const/16 v17, 0x0
+
+    const/16 v18, 0x0
+
+    const/16 v19, 0x0
 
     const/16 v20, 0x0
 
     const/16 v21, 0x0
 
-    const/16 v22, 0x0
-
-    const/16 v23, 0x0
+    const-wide/16 v22, 0x0
 
     const/16 v24, 0x0
 
-    const-wide/16 v25, 0x0
+    const/16 v25, 0x0
 
-    const/16 v27, 0x0
+    const/16 v26, 0x0
 
-    const/16 v28, 0x0
+    const-wide/16 v27, 0x0
 
     const/16 v29, 0x0
 
-    const-wide/16 v30, 0x0
+    const/16 v30, 0x0
+
+    const/16 v31, 0x0
 
     const/16 v32, 0x0
 
-    const/16 v33, 0x0
-
-    const/16 v34, 0x0
-
-    const/16 v35, 0x0
-
     .line 62
-    invoke-static/range {v15 .. v37}, Landroidx/compose/ui/text/SpanStyle;->copy-GSF8kmg$default(Landroidx/compose/ui/text/SpanStyle;JJLandroidx/compose/ui/text/font/FontWeight;Landroidx/compose/ui/text/font/FontStyle;Landroidx/compose/ui/text/font/FontSynthesis;Landroidx/compose/ui/text/font/FontFamily;Ljava/lang/String;JLandroidx/compose/ui/text/style/BaselineShift;Landroidx/compose/ui/text/style/TextGeometricTransform;Landroidx/compose/ui/text/intl/LocaleList;JLandroidx/compose/ui/text/style/TextDecoration;Landroidx/compose/ui/graphics/Shadow;Landroidx/compose/ui/text/PlatformSpanStyle;Landroidx/compose/ui/graphics/drawscope/DrawStyle;ILjava/lang/Object;)Landroidx/compose/ui/text/SpanStyle;
+    invoke-static/range {v12 .. v34}, Landroidx/compose/ui/text/SpanStyle;->copy-GSF8kmg$default(Landroidx/compose/ui/text/SpanStyle;JJLandroidx/compose/ui/text/font/FontWeight;Landroidx/compose/ui/text/font/FontStyle;Landroidx/compose/ui/text/font/FontSynthesis;Landroidx/compose/ui/text/font/FontFamily;Ljava/lang/String;JLandroidx/compose/ui/text/style/BaselineShift;Landroidx/compose/ui/text/style/TextGeometricTransform;Landroidx/compose/ui/text/intl/LocaleList;JLandroidx/compose/ui/text/style/TextDecoration;Landroidx/compose/ui/graphics/Shadow;Landroidx/compose/ui/text/PlatformSpanStyle;Landroidx/compose/ui/graphics/drawscope/DrawStyle;ILjava/lang/Object;)Landroidx/compose/ui/text/SpanStyle;
 
-    move-result-object v4
+    move-result-object v2
 
-    move-object v3, v2
+    move-object v1, v7
 
-    move-object/from16 v7, p1
+    move-object/from16 v5, p1
 
-    move-object/from16 v8, p2
+    move-object/from16 v6, p2
 
     .line 63
-    invoke-static/range {v3 .. v8}, Landroidx/compose/ui/text/platform/AndroidAccessibilitySpannableString_androidKt;->setSpanStyle(Landroid/text/SpannableString;Landroidx/compose/ui/text/SpanStyle;IILandroidx/compose/ui/unit/Density;Landroidx/compose/ui/text/font/FontFamily$Resolver;)V
+    invoke-static/range {v1 .. v6}, Landroidx/compose/ui/text/platform/AndroidAccessibilitySpannableString_androidKt;->setSpanStyle(Landroid/text/SpannableString;Landroidx/compose/ui/text/SpanStyle;IILandroidx/compose/ui/unit/Density;Landroidx/compose/ui/text/font/FontFamily$Resolver;)V
 
-    add-int/lit8 v14, v14, 0x1
+    add-int/lit8 v11, v11, 0x1
 
     goto :goto_0
 
@@ -485,56 +463,56 @@
     :cond_0
     invoke-virtual/range {p0 .. p0}, Landroidx/compose/ui/text/AnnotatedString;->length()I
 
-    move-result v3
+    move-result v1
 
-    invoke-virtual {v0, v12, v3}, Landroidx/compose/ui/text/AnnotatedString;->getTtsAnnotations(II)Ljava/util/List;
+    invoke-virtual {v0, v9, v1}, Landroidx/compose/ui/text/AnnotatedString;->getTtsAnnotations(II)Ljava/util/List;
 
-    move-result-object v3
-
-    .line 189
-    invoke-interface {v3}, Ljava/util/List;->size()I
-
-    move-result v4
-
-    move v5, v12
-
-    :goto_1
-    const/16 v6, 0x21
-
-    if-ge v5, v4, :cond_1
+    move-result-object v1
 
     .line 190
-    invoke-interface {v3, v5}, Ljava/util/List;->get(I)Ljava/lang/Object;
+    invoke-interface {v1}, Ljava/util/List;->size()I
 
-    move-result-object v7
+    move-result v2
+
+    move v3, v9
+
+    :goto_1
+    const/16 v4, 0x21
+
+    if-ge v3, v2, :cond_1
 
     .line 191
-    check-cast v7, Landroidx/compose/ui/text/AnnotatedString$Range;
+    invoke-interface {v1, v3}, Ljava/util/List;->get(I)Ljava/lang/Object;
+
+    move-result-object v5
+
+    .line 192
+    check-cast v5, Landroidx/compose/ui/text/AnnotatedString$Range;
 
     .line 66
-    invoke-virtual {v7}, Landroidx/compose/ui/text/AnnotatedString$Range;->component1()Ljava/lang/Object;
+    invoke-virtual {v5}, Landroidx/compose/ui/text/AnnotatedString$Range;->component1()Ljava/lang/Object;
 
-    move-result-object v8
+    move-result-object v6
 
-    check-cast v8, Landroidx/compose/ui/text/TtsAnnotation;
+    check-cast v6, Landroidx/compose/ui/text/TtsAnnotation;
 
-    invoke-virtual {v7}, Landroidx/compose/ui/text/AnnotatedString$Range;->component2()I
+    invoke-virtual {v5}, Landroidx/compose/ui/text/AnnotatedString$Range;->component2()I
 
-    move-result v9
+    move-result v8
 
-    invoke-virtual {v7}, Landroidx/compose/ui/text/AnnotatedString$Range;->component3()I
+    invoke-virtual {v5}, Landroidx/compose/ui/text/AnnotatedString$Range;->component3()I
 
-    move-result v7
+    move-result v5
 
     .line 68
-    invoke-static {v8}, Landroidx/compose/ui/text/platform/extensions/TtsAnnotationExtensions_androidKt;->toSpan(Landroidx/compose/ui/text/TtsAnnotation;)Landroid/text/style/TtsSpan;
+    invoke-static {v6}, Landroidx/compose/ui/text/platform/extensions/TtsAnnotationExtensions_androidKt;->toSpan(Landroidx/compose/ui/text/TtsAnnotation;)Landroid/text/style/TtsSpan;
 
-    move-result-object v8
+    move-result-object v6
 
     .line 67
-    invoke-virtual {v2, v8, v9, v7, v6}, Landroid/text/SpannableString;->setSpan(Ljava/lang/Object;III)V
+    invoke-virtual {v7, v6, v8, v5, v4}, Landroid/text/SpannableString;->setSpan(Ljava/lang/Object;III)V
 
-    add-int/lit8 v5, v5, 0x1
+    add-int/lit8 v3, v3, 0x1
 
     goto :goto_1
 
@@ -542,55 +520,57 @@
     :cond_1
     invoke-virtual/range {p0 .. p0}, Landroidx/compose/ui/text/AnnotatedString;->length()I
 
-    move-result v3
+    move-result v1
 
-    invoke-virtual {v0, v12, v3}, Landroidx/compose/ui/text/AnnotatedString;->getUrlAnnotations(II)Ljava/util/List;
+    invoke-virtual {v0, v9, v1}, Landroidx/compose/ui/text/AnnotatedString;->getUrlAnnotations(II)Ljava/util/List;
 
     move-result-object v0
 
-    .line 195
+    .line 196
     invoke-interface {v0}, Ljava/util/List;->size()I
 
-    move-result v3
+    move-result v1
 
     :goto_2
-    if-ge v12, v3, :cond_2
-
-    .line 196
-    invoke-interface {v0, v12}, Ljava/util/List;->get(I)Ljava/lang/Object;
-
-    move-result-object v4
+    if-ge v9, v1, :cond_2
 
     .line 197
-    check-cast v4, Landroidx/compose/ui/text/AnnotatedString$Range;
+    invoke-interface {v0, v9}, Ljava/util/List;->get(I)Ljava/lang/Object;
+
+    move-result-object v2
+
+    .line 198
+    check-cast v2, Landroidx/compose/ui/text/AnnotatedString$Range;
 
     .line 75
-    invoke-virtual {v4}, Landroidx/compose/ui/text/AnnotatedString$Range;->component1()Ljava/lang/Object;
+    invoke-virtual {v2}, Landroidx/compose/ui/text/AnnotatedString$Range;->component1()Ljava/lang/Object;
 
-    move-result-object v5
+    move-result-object v3
 
-    check-cast v5, Landroidx/compose/ui/text/UrlAnnotation;
+    check-cast v3, Landroidx/compose/ui/text/UrlAnnotation;
 
-    invoke-virtual {v4}, Landroidx/compose/ui/text/AnnotatedString$Range;->component2()I
+    invoke-virtual {v2}, Landroidx/compose/ui/text/AnnotatedString$Range;->component2()I
 
-    move-result v7
+    move-result v5
 
-    invoke-virtual {v4}, Landroidx/compose/ui/text/AnnotatedString$Range;->component3()I
+    invoke-virtual {v2}, Landroidx/compose/ui/text/AnnotatedString$Range;->component3()I
 
-    move-result v4
+    move-result v2
+
+    move-object/from16 v6, p3
 
     .line 77
-    invoke-virtual {v1, v5}, Landroidx/compose/ui/text/platform/URLSpanCache;->toURLSpan(Landroidx/compose/ui/text/UrlAnnotation;)Landroid/text/style/URLSpan;
+    invoke-virtual {v6, v3}, Landroidx/compose/ui/text/platform/URLSpanCache;->toURLSpan(Landroidx/compose/ui/text/UrlAnnotation;)Landroid/text/style/URLSpan;
 
-    move-result-object v5
+    move-result-object v3
 
     .line 76
-    invoke-virtual {v2, v5, v7, v4, v6}, Landroid/text/SpannableString;->setSpan(Ljava/lang/Object;III)V
+    invoke-virtual {v7, v3, v5, v2, v4}, Landroid/text/SpannableString;->setSpan(Ljava/lang/Object;III)V
 
-    add-int/lit8 v12, v12, 0x1
+    add-int/lit8 v9, v9, 0x1
 
     goto :goto_2
 
     :cond_2
-    return-object v2
+    return-object v7
 .end method

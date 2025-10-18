@@ -56,13 +56,13 @@
         }
     .end annotation
 
-    .line 465
+    .line 461
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 466
+    .line 462
     iput-object p1, p0, Landroidx/activity/result/ActivityResultRegistry$CallbackAndContract;->mCallback:Landroidx/activity/result/ActivityResultCallback;
 
-    .line 467
+    .line 463
     iput-object p2, p0, Landroidx/activity/result/ActivityResultRegistry$CallbackAndContract;->mContract:Landroidx/activity/result/contract/ActivityResultContract;
 
     return-void

@@ -32,7 +32,7 @@
 
 # direct methods
 .method public static final focusOrder(Landroidx/compose/ui/Modifier;Landroidx/compose/ui/focus/FocusRequester;)Landroidx/compose/ui/Modifier;
-    .locals 1
+    .locals 0
     .annotation runtime Lkotlin/Deprecated;
         message = "Use focusRequester() instead"
         replaceWith = .subannotation Lkotlin/ReplaceWith;
@@ -43,15 +43,7 @@
         .end subannotation
     .end annotation
 
-    const-string v0, "<this>"
-
-    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string v0, "focusRequester"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 174
+    .line 176
     invoke-static {p0, p1}, Landroidx/compose/ui/focus/FocusRequesterModifierKt;->focusRequester(Landroidx/compose/ui/Modifier;Landroidx/compose/ui/focus/FocusRequester;)Landroidx/compose/ui/Modifier;
 
     move-result-object p0
@@ -85,27 +77,20 @@
         .end subannotation
     .end annotation
 
-    const-string v0, "<this>"
+    .line 194
+    new-instance v0, Landroidx/compose/ui/focus/FocusOrderToProperties;
 
-    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-direct {v0, p2}, Landroidx/compose/ui/focus/FocusOrderToProperties;-><init>(Lkotlin/jvm/functions/Function1;)V
 
-    const-string v0, "focusRequester"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string v0, "focusOrderReceiver"
-
-    invoke-static {p2, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 192
+    .line 196
     invoke-static {p0, p1}, Landroidx/compose/ui/focus/FocusRequesterModifierKt;->focusRequester(Landroidx/compose/ui/Modifier;Landroidx/compose/ui/focus/FocusRequester;)Landroidx/compose/ui/Modifier;
 
     move-result-object p0
 
-    .line 193
-    new-instance p1, Landroidx/compose/ui/focus/FocusOrderToProperties;
+    .line 197
+    new-instance p1, Landroidx/compose/ui/focus/FocusOrderModifierKt$focusOrder$2;
 
-    invoke-direct {p1, p2}, Landroidx/compose/ui/focus/FocusOrderToProperties;-><init>(Lkotlin/jvm/functions/Function1;)V
+    invoke-direct {p1, v0}, Landroidx/compose/ui/focus/FocusOrderModifierKt$focusOrder$2;-><init>(Landroidx/compose/ui/focus/FocusOrderToProperties;)V
 
     check-cast p1, Lkotlin/jvm/functions/Function1;
 
@@ -141,22 +126,19 @@
         .end subannotation
     .end annotation
 
-    const-string v0, "<this>"
-
-    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string v0, "focusOrderReceiver"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
     .line 162
     new-instance v0, Landroidx/compose/ui/focus/FocusOrderToProperties;
 
     invoke-direct {v0, p1}, Landroidx/compose/ui/focus/FocusOrderToProperties;-><init>(Lkotlin/jvm/functions/Function1;)V
 
-    check-cast v0, Lkotlin/jvm/functions/Function1;
+    .line 163
+    new-instance p1, Landroidx/compose/ui/focus/FocusOrderModifierKt$focusOrder$1;
 
-    invoke-static {p0, v0}, Landroidx/compose/ui/focus/FocusPropertiesKt;->focusProperties(Landroidx/compose/ui/Modifier;Lkotlin/jvm/functions/Function1;)Landroidx/compose/ui/Modifier;
+    invoke-direct {p1, v0}, Landroidx/compose/ui/focus/FocusOrderModifierKt$focusOrder$1;-><init>(Landroidx/compose/ui/focus/FocusOrderToProperties;)V
+
+    check-cast p1, Lkotlin/jvm/functions/Function1;
+
+    invoke-static {p0, p1}, Landroidx/compose/ui/focus/FocusPropertiesKt;->focusProperties(Landroidx/compose/ui/Modifier;Lkotlin/jvm/functions/Function1;)Landroidx/compose/ui/Modifier;
 
     move-result-object p0
 

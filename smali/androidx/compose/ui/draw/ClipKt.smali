@@ -34,18 +34,6 @@
 
     move-object/from16 v13, p1
 
-    const-string v1, "<this>"
-
-    move-object/from16 v2, p0
-
-    invoke-static {v2, v1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string/jumbo v1, "shape"
-
-    move-object/from16 v2, p1
-
-    invoke-static {v2, v1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
     const v21, 0x1e7ff
 
     const/16 v22, 0x0
@@ -94,12 +82,6 @@
     .locals 23
 
     move-object/from16 v0, p0
-
-    const-string v1, "<this>"
-
-    move-object/from16 v2, p0
-
-    invoke-static {v2, v1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
     const v21, 0x1efff
 

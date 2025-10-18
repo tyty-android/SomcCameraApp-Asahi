@@ -50,6 +50,8 @@
 
 
 # static fields
+.field public static final $stable:I
+
 .field public static final Companion:Landroidx/compose/foundation/text/modifiers/StaticTextSelectionParams$Companion;
 
 .field private static final Empty:Landroidx/compose/foundation/text/modifiers/StaticTextSelectionParams;
@@ -73,7 +75,11 @@
 
     sput-object v0, Landroidx/compose/foundation/text/modifiers/StaticTextSelectionParams;->Companion:Landroidx/compose/foundation/text/modifiers/StaticTextSelectionParams$Companion;
 
-    .line 49
+    const/16 v0, 0x8
+
+    sput v0, Landroidx/compose/foundation/text/modifiers/StaticTextSelectionParams;->$stable:I
+
+    .line 44
     new-instance v0, Landroidx/compose/foundation/text/modifiers/StaticTextSelectionParams;
 
     invoke-direct {v0, v1, v1}, Landroidx/compose/foundation/text/modifiers/StaticTextSelectionParams;-><init>(Landroidx/compose/ui/layout/LayoutCoordinates;Landroidx/compose/ui/text/TextLayoutResult;)V
@@ -86,13 +92,13 @@
 .method public constructor <init>(Landroidx/compose/ui/layout/LayoutCoordinates;Landroidx/compose/ui/text/TextLayoutResult;)V
     .locals 0
 
-    .line 44
+    .line 39
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 45
+    .line 40
     iput-object p1, p0, Landroidx/compose/foundation/text/modifiers/StaticTextSelectionParams;->layoutCoordinates:Landroidx/compose/ui/layout/LayoutCoordinates;
 
-    .line 46
+    .line 41
     iput-object p2, p0, Landroidx/compose/foundation/text/modifiers/StaticTextSelectionParams;->textLayoutResult:Landroidx/compose/ui/text/TextLayoutResult;
 
     return-void
@@ -101,7 +107,7 @@
 .method public static final synthetic access$getEmpty$cp()Landroidx/compose/foundation/text/modifiers/StaticTextSelectionParams;
     .locals 1
 
-    .line 44
+    .line 39
     sget-object v0, Landroidx/compose/foundation/text/modifiers/StaticTextSelectionParams;->Empty:Landroidx/compose/foundation/text/modifiers/StaticTextSelectionParams;
 
     return-object v0
@@ -116,7 +122,7 @@
 
     if-eqz p4, :cond_0
 
-    .line 61
+    .line 58
     iget-object p1, p0, Landroidx/compose/foundation/text/modifiers/StaticTextSelectionParams;->layoutCoordinates:Landroidx/compose/ui/layout/LayoutCoordinates;
 
     :cond_0
@@ -124,10 +130,10 @@
 
     if-eqz p3, :cond_1
 
-    .line 62
+    .line 59
     iget-object p2, p0, Landroidx/compose/foundation/text/modifiers/StaticTextSelectionParams;->textLayoutResult:Landroidx/compose/ui/text/TextLayoutResult;
 
-    .line 60
+    .line 57
     :cond_1
     invoke-virtual {p0, p1, p2}, Landroidx/compose/foundation/text/modifiers/StaticTextSelectionParams;->copy(Landroidx/compose/ui/layout/LayoutCoordinates;Landroidx/compose/ui/text/TextLayoutResult;)Landroidx/compose/foundation/text/modifiers/StaticTextSelectionParams;
 
@@ -150,7 +156,7 @@
 .method public final copy(Landroidx/compose/ui/layout/LayoutCoordinates;Landroidx/compose/ui/text/TextLayoutResult;)Landroidx/compose/foundation/text/modifiers/StaticTextSelectionParams;
     .locals 0
 
-    .line 64
+    .line 61
     new-instance p0, Landroidx/compose/foundation/text/modifiers/StaticTextSelectionParams;
 
     invoke-direct {p0, p1, p2}, Landroidx/compose/foundation/text/modifiers/StaticTextSelectionParams;-><init>(Landroidx/compose/ui/layout/LayoutCoordinates;Landroidx/compose/ui/text/TextLayoutResult;)V
@@ -161,7 +167,7 @@
 .method public final getLayoutCoordinates()Landroidx/compose/ui/layout/LayoutCoordinates;
     .locals 0
 
-    .line 45
+    .line 40
     iget-object p0, p0, Landroidx/compose/foundation/text/modifiers/StaticTextSelectionParams;->layoutCoordinates:Landroidx/compose/ui/layout/LayoutCoordinates;
 
     return-object p0
@@ -170,7 +176,7 @@
 .method public getPathForRange(II)Landroidx/compose/ui/graphics/Path;
     .locals 0
 
-    .line 53
+    .line 48
     iget-object p0, p0, Landroidx/compose/foundation/text/modifiers/StaticTextSelectionParams;->textLayoutResult:Landroidx/compose/ui/text/TextLayoutResult;
 
     if-eqz p0, :cond_0
@@ -189,62 +195,54 @@
 .end method
 
 .method public getShouldClip()Z
-    .locals 1
+    .locals 3
 
-    .line 57
+    .line 52
     iget-object p0, p0, Landroidx/compose/foundation/text/modifiers/StaticTextSelectionParams;->textLayoutResult:Landroidx/compose/ui/text/TextLayoutResult;
 
+    const/4 v0, 0x0
+
     if-eqz p0, :cond_0
 
+    .line 53
     invoke-virtual {p0}, Landroidx/compose/ui/text/TextLayoutResult;->getLayoutInput()Landroidx/compose/ui/text/TextLayoutInput;
 
-    move-result-object p0
+    move-result-object v1
+
+    invoke-virtual {v1}, Landroidx/compose/ui/text/TextLayoutInput;->getOverflow-gIe3tQ8()I
+
+    move-result v1
+
+    sget-object v2, Landroidx/compose/ui/text/style/TextOverflow;->Companion:Landroidx/compose/ui/text/style/TextOverflow$Companion;
+
+    invoke-virtual {v2}, Landroidx/compose/ui/text/style/TextOverflow$Companion;->getVisible-gIe3tQ8()I
+
+    move-result v2
+
+    invoke-static {v1, v2}, Landroidx/compose/ui/text/style/TextOverflow;->equals-impl0(II)Z
+
+    move-result v1
+
+    if-nez v1, :cond_0
+
+    invoke-virtual {p0}, Landroidx/compose/ui/text/TextLayoutResult;->getHasVisualOverflow()Z
+
+    move-result p0
 
     if-eqz p0, :cond_0
 
-    invoke-virtual {p0}, Landroidx/compose/ui/text/TextLayoutInput;->getOverflow-gIe3tQ8()I
+    const/4 p0, 0x1
 
-    move-result p0
-
-    invoke-static {p0}, Landroidx/compose/ui/text/style/TextOverflow;->box-impl(I)Landroidx/compose/ui/text/style/TextOverflow;
-
-    move-result-object p0
-
-    goto :goto_0
+    move v0, p0
 
     :cond_0
-    const/4 p0, 0x0
-
-    :goto_0
-    sget-object v0, Landroidx/compose/ui/text/style/TextOverflow;->Companion:Landroidx/compose/ui/text/style/TextOverflow$Companion;
-
-    invoke-virtual {v0}, Landroidx/compose/ui/text/style/TextOverflow$Companion;->getVisible-gIe3tQ8()I
-
-    move-result v0
-
-    if-nez p0, :cond_1
-
-    const/4 p0, 0x0
-
-    goto :goto_1
-
-    :cond_1
-    invoke-virtual {p0}, Landroidx/compose/ui/text/style/TextOverflow;->unbox-impl()I
-
-    move-result p0
-
-    invoke-static {p0, v0}, Landroidx/compose/ui/text/style/TextOverflow;->equals-impl0(II)Z
-
-    move-result p0
-
-    :goto_1
-    return p0
+    return v0
 .end method
 
 .method public final getTextLayoutResult()Landroidx/compose/ui/text/TextLayoutResult;
     .locals 0
 
-    .line 46
+    .line 41
     iget-object p0, p0, Landroidx/compose/foundation/text/modifiers/StaticTextSelectionParams;->textLayoutResult:Landroidx/compose/ui/text/TextLayoutResult;
 
     return-object p0

@@ -162,10 +162,6 @@
 .method public final invoke(Landroidx/compose/ui/graphics/drawscope/DrawScope;)V
     .locals 9
 
-    const-string v0, "$this$Canvas"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
     .line 302
     invoke-static {}, Landroidx/compose/material/CheckboxKt;->access$getStrokeWidth$p()F
 

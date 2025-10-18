@@ -286,7 +286,7 @@
 .end method
 
 .method public static synthetic colorMatrix$default(Lcom/google/android/renderscript/Toolkit;Landroid/graphics/Bitmap;[F[FLcom/google/android/renderscript/Range2d;ILjava/lang/Object;)Landroid/graphics/Bitmap;
-    .locals 0
+    .locals 1
 
     and-int/lit8 p6, p5, 0x4
 
@@ -297,7 +297,23 @@
     .line 402
     new-array p3, p3, [F
 
-    fill-array-data p3, :array_0
+    const/4 p6, 0x0
+
+    const/4 v0, 0x0
+
+    aput v0, p3, p6
+
+    const/4 p6, 0x1
+
+    aput v0, p3, p6
+
+    const/4 p6, 0x2
+
+    aput v0, p3, p6
+
+    const/4 p6, 0x3
+
+    aput v0, p3, p6
 
     :cond_0
     and-int/lit8 p5, p5, 0x8
@@ -317,20 +333,10 @@
     move-result-object p0
 
     return-object p0
-
-    nop
-
-    :array_0
-    .array-data 4
-        0x0
-        0x0
-        0x0
-        0x0
-    .end array-data
 .end method
 
 .method public static synthetic colorMatrix$default(Lcom/google/android/renderscript/Toolkit;[BIIII[F[FLcom/google/android/renderscript/Range2d;ILjava/lang/Object;)[B
-    .locals 11
+    .locals 13
 
     move/from16 v0, p9
 
@@ -343,14 +349,30 @@
     .line 344
     new-array v1, v1, [F
 
-    fill-array-data v1, :array_0
+    const/4 v2, 0x0
 
-    move-object v9, v1
+    const/4 v3, 0x0
+
+    aput v3, v1, v2
+
+    const/4 v2, 0x1
+
+    aput v3, v1, v2
+
+    const/4 v2, 0x2
+
+    aput v3, v1, v2
+
+    const/4 v2, 0x3
+
+    aput v3, v1, v2
+
+    move-object v11, v1
 
     goto :goto_0
 
     :cond_0
-    move-object/from16 v9, p7
+    move-object/from16 v11, p7
 
     :goto_0
     and-int/lit16 v0, v0, 0x80
@@ -364,41 +386,33 @@
 
     check-cast v1, Lcom/google/android/renderscript/Range2d;
 
-    move-object v10, v0
+    move-object v12, v0
 
     goto :goto_1
 
     :cond_1
-    move-object/from16 v10, p8
+    move-object/from16 v12, p8
 
     :goto_1
-    move-object v2, p0
+    move-object v4, p0
 
-    move-object v3, p1
+    move-object v5, p1
 
-    move v4, p2
+    move v6, p2
 
-    move v5, p3
+    move/from16 v7, p3
 
-    move v6, p4
+    move/from16 v8, p4
 
-    move/from16 v7, p5
+    move/from16 v9, p5
 
-    move-object/from16 v8, p6
+    move-object/from16 v10, p6
 
-    invoke-virtual/range {v2 .. v10}, Lcom/google/android/renderscript/Toolkit;->colorMatrix([BIIII[F[FLcom/google/android/renderscript/Range2d;)[B
+    invoke-virtual/range {v4 .. v12}, Lcom/google/android/renderscript/Toolkit;->colorMatrix([BIIII[F[FLcom/google/android/renderscript/Range2d;)[B
 
     move-result-object v0
 
     return-object v0
-
-    :array_0
-    .array-data 4
-        0x0
-        0x0
-        0x0
-        0x0
-    .end array-data
 .end method
 
 .method public static synthetic convolve$default(Lcom/google/android/renderscript/Toolkit;Landroid/graphics/Bitmap;[FLcom/google/android/renderscript/Range2d;ILjava/lang/Object;)Landroid/graphics/Bitmap;
@@ -3330,7 +3344,27 @@
     :cond_0
     new-array p2, v3, [F
 
-    fill-array-data p2, :array_0
+    const v1, 0x3e991687    # 0.299f
+
+    aput v1, p2, v2
+
+    const/4 v1, 0x1
+
+    const v2, 0x3f1645a2    # 0.587f
+
+    aput v2, p2, v1
+
+    const/4 v1, 0x2
+
+    const v2, 0x3de978d5    # 0.114f
+
+    aput v2, p2, v1
+
+    const/4 v1, 0x3
+
+    const/4 v2, 0x0
+
+    aput v2, p2, v1
 
     :goto_0
     move-object v9, p2
@@ -3350,14 +3384,6 @@
     invoke-direct/range {v4 .. v10}, Lcom/google/android/renderscript/Toolkit;->nativeHistogramDotBitmap(JLandroid/graphics/Bitmap;[I[FLcom/google/android/renderscript/Range2d;)V
 
     return-object v0
-
-    :array_0
-    .array-data 4
-        0x3e991687    # 0.299f
-        0x3f1645a2    # 0.587f
-        0x3de978d5    # 0.114f
-        0x0
-    .end array-data
 .end method
 
 .method public final histogramDot([BIII)[I
@@ -3466,37 +3492,60 @@
 
     if-lt v8, v9, :cond_2
 
-    move v1, v7
+    move v8, v7
+
+    goto :goto_2
 
     :cond_2
-    if-eqz v1, :cond_4
+    move v8, v1
+
+    :goto_2
+    if-eqz v8, :cond_4
 
     .line 681
     invoke-static {v0, p2}, Lcom/google/android/renderscript/ToolkitKt;->validateHistogramDotCoefficients([FI)V
 
     .line 682
-    const-string v1, "histogramDot"
+    const-string v8, "histogramDot"
 
     move-object/from16 v9, p6
 
-    invoke-static {v1, p3, p4, v9}, Lcom/google/android/renderscript/ToolkitKt;->validateRestriction(Ljava/lang/String;IILcom/google/android/renderscript/Range2d;)V
+    invoke-static {v8, p3, p4, v9}, Lcom/google/android/renderscript/ToolkitKt;->validateRestriction(Ljava/lang/String;IILcom/google/android/renderscript/Range2d;)V
 
-    const/16 v1, 0x100
+    const/16 v8, 0x100
 
     .line 684
-    new-array v10, v1, [I
+    new-array v10, v8, [I
 
     if-eqz v0, :cond_3
 
-    goto :goto_2
+    goto :goto_3
 
     .line 685
     :cond_3
     new-array v0, v2, [F
 
-    fill-array-data v0, :array_0
+    const v2, 0x3e991687    # 0.299f
 
-    :goto_2
+    aput v2, v0, v1
+
+    const v1, 0x3f1645a2    # 0.587f
+
+    aput v1, v0, v7
+
+    const/4 v1, 0x2
+
+    const v2, 0x3de978d5    # 0.114f
+
+    aput v2, v0, v1
+
+    const/4 v1, 0x3
+
+    const/4 v2, 0x0
+
+    aput v2, v0, v1
+
+    :goto_3
     move-object v8, v0
 
     .line 687
@@ -3622,16 +3671,6 @@
     check-cast v1, Ljava/lang/Throwable;
 
     throw v1
-
-    nop
-
-    :array_0
-    .array-data 4
-        0x3e991687    # 0.299f
-        0x3f1645a2    # 0.587f
-        0x3de978d5    # 0.114f
-        0x0
-    .end array-data
 .end method
 
 .method public final lut(Landroid/graphics/Bitmap;Lcom/google/android/renderscript/LookupTable;)Landroid/graphics/Bitmap;

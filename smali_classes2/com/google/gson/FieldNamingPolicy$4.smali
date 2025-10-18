@@ -20,7 +20,7 @@
 
     const/4 v0, 0x0
 
-    .line 92
+    .line 94
     invoke-direct {p0, p1, p2, v0}, Lcom/google/gson/FieldNamingPolicy;-><init>(Ljava/lang/String;ILcom/google/gson/FieldNamingPolicy$1;)V
 
     return-void
@@ -31,7 +31,7 @@
 .method public translateName(Ljava/lang/reflect/Field;)Ljava/lang/String;
     .locals 0
 
-    .line 94
+    .line 97
     invoke-virtual {p1}, Ljava/lang/reflect/Field;->getName()Ljava/lang/String;
 
     move-result-object p0

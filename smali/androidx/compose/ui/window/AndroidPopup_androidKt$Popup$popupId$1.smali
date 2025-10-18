@@ -77,7 +77,7 @@
 .method public bridge synthetic invoke()Ljava/lang/Object;
     .locals 0
 
-    .line 234
+    .line 236
     invoke-virtual {p0}, Landroidx/compose/ui/window/AndroidPopup_androidKt$Popup$popupId$1;->invoke()Ljava/util/UUID;
 
     move-result-object p0
@@ -88,7 +88,7 @@
 .method public final invoke()Ljava/util/UUID;
     .locals 0
 
-    .line 234
+    .line 236
     invoke-static {}, Ljava/util/UUID;->randomUUID()Ljava/util/UUID;
 
     move-result-object p0

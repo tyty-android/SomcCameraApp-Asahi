@@ -43,11 +43,11 @@
         "Ljp/co/sony/mc/camera/view/widget/CaptureButtonTouchEventDispatcher$GestureEvent;",
         "",
         "Down",
-        "LongPress",
-        "Scroll",
-        "SingleTap",
-        "Swipe",
         "Up",
+        "SingleTap",
+        "LongPress",
+        "Swipe",
+        "Scroll",
         "Ljp/co/sony/mc/camera/view/widget/CaptureButtonTouchEventDispatcher$GestureEvent$Down;",
         "Ljp/co/sony/mc/camera/view/widget/CaptureButtonTouchEventDispatcher$GestureEvent$LongPress;",
         "Ljp/co/sony/mc/camera/view/widget/CaptureButtonTouchEventDispatcher$GestureEvent$Scroll;",
@@ -58,8 +58,8 @@
     }
     k = 0x1
     mv = {
-        0x1,
-        0x9,
+        0x2,
+        0x0,
         0x0
     }
     xi = 0x30

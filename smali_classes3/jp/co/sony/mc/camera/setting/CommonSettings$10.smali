@@ -21,7 +21,7 @@
 .method constructor <init>()V
     .locals 0
 
-    .line 404
+    .line 407
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -42,10 +42,10 @@
         }
     .end annotation
 
-    .line 408
+    .line 411
     check-cast p1, Ljp/co/sony/mc/camera/setting/CommonSettings;
 
-    .line 409
+    .line 412
     invoke-static {p1}, Ljp/co/sony/mc/camera/setting/CommonSettings;->-$$Nest$mgetQuickLaunch(Ljp/co/sony/mc/camera/setting/CommonSettings;)Ljp/co/sony/mc/camera/configuration/parameters/FastCapture;
 
     move-result-object p0

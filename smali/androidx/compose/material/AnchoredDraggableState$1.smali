@@ -88,7 +88,7 @@
 
     const/4 p0, 0x1
 
-    .line 130
+    .line 226
     invoke-static {p0}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
     move-result-object p0
@@ -99,7 +99,7 @@
 .method public bridge synthetic invoke(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
 
-    .line 130
+    .line 226
     invoke-virtual {p0, p1}, Landroidx/compose/material/AnchoredDraggableState$1;->invoke(Ljava/lang/Object;)Ljava/lang/Boolean;
 
     move-result-object p0

@@ -40,7 +40,7 @@
     k = 0x3
     mv = {
         0x1,
-        0x6,
+        0x8,
         0x0
     }
     xi = 0x30
@@ -171,7 +171,7 @@
 
     invoke-static {}, Lkotlin/coroutines/intrinsics/IntrinsicsKt;->getCOROUTINE_SUSPENDED()Ljava/lang/Object;
 
-    .line 42
+    .line 43
     iget v0, p0, Lkotlinx/coroutines/InterruptibleKt$runInterruptible$2;->label:I
 
     if-nez v0, :cond_0
@@ -182,7 +182,7 @@
 
     check-cast p1, Lkotlinx/coroutines/CoroutineScope;
 
-    .line 43
+    .line 44
     invoke-interface {p1}, Lkotlinx/coroutines/CoroutineScope;->getCoroutineContext()Lkotlin/coroutines/CoroutineContext;
 
     move-result-object p1
@@ -195,6 +195,7 @@
 
     return-object p0
 
+    .line 43
     :cond_0
     new-instance p0, Ljava/lang/IllegalStateException;
 

@@ -66,7 +66,7 @@
 .method public bridge synthetic invoke()Ljava/lang/Object;
     .locals 0
 
-    .line 161
+    .line 172
     invoke-virtual {p0}, Landroidx/compose/ui/focus/FocusTransactionsKt$grantFocus$1;->invoke()V
 
     sget-object p0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
@@ -77,7 +77,7 @@
 .method public final invoke()V
     .locals 0
 
-    .line 161
+    .line 172
     iget-object p0, p0, Landroidx/compose/ui/focus/FocusTransactionsKt$grantFocus$1;->$this_grantFocus:Landroidx/compose/ui/focus/FocusTargetNode;
 
     invoke-virtual {p0}, Landroidx/compose/ui/focus/FocusTargetNode;->fetchFocusProperties$ui_release()Landroidx/compose/ui/focus/FocusProperties;

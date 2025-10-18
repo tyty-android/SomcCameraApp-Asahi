@@ -39,7 +39,7 @@
 .end method
 
 .method public static vectorize(Landroidx/compose/animation/core/FloatAnimationSpec;Landroidx/compose/animation/core/TwoWayConverter;)Landroidx/compose/animation/core/VectorizedFloatAnimationSpec;
-    .locals 1
+    .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<V:",
@@ -56,10 +56,6 @@
 
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
-
-    const-string v0, "converter"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 116
     invoke-static {p0, p1}, Landroidx/compose/animation/core/FloatAnimationSpec;->access$vectorize$jd(Landroidx/compose/animation/core/FloatAnimationSpec;Landroidx/compose/animation/core/TwoWayConverter;)Landroidx/compose/animation/core/VectorizedFloatAnimationSpec;

@@ -61,9 +61,9 @@
         0x1
     }
     l = {
-        0x112,
-        0x11a,
-        0x11e
+        0x113,
+        0x11b,
+        0x11f
     }
     m = "invokeSuspend"
     n = {
@@ -210,7 +210,7 @@
 
     move-result-object v0
 
-    .line 271
+    .line 272
     iget v1, p0, Lkotlin/text/Regex$splitToSequence$1;->label:I
 
     const/4 v2, 0x3
@@ -269,7 +269,7 @@
 
     check-cast p1, Lkotlin/sequences/SequenceScope;
 
-    .line 272
+    .line 273
     iget-object v1, p0, Lkotlin/text/Regex$splitToSequence$1;->this$0:Lkotlin/text/Regex;
 
     invoke-static {v1}, Lkotlin/text/Regex;->access$getNativePattern$p(Lkotlin/text/Regex;)Ljava/util/regex/Pattern;
@@ -282,7 +282,7 @@
 
     move-result-object v1
 
-    .line 273
+    .line 274
     iget v5, p0, Lkotlin/text/Regex$splitToSequence$1;->$limit:I
 
     if-eq v5, v4, :cond_9
@@ -304,7 +304,7 @@
 
     move v1, v5
 
-    .line 282
+    .line 283
     :cond_5
     iget-object v7, p0, Lkotlin/text/Regex$splitToSequence$1;->$input:Ljava/lang/CharSequence;
 
@@ -340,7 +340,7 @@
 
     return-object v0
 
-    .line 283
+    .line 284
     :cond_6
     :goto_0
     invoke-virtual {p1}, Ljava/util/regex/Matcher;->end()I
@@ -349,7 +349,7 @@
 
     add-int/2addr v1, v4
 
-    .line 284
+    .line 285
     iget v7, p0, Lkotlin/text/Regex$splitToSequence$1;->$limit:I
 
     sub-int/2addr v7, v4
@@ -362,7 +362,7 @@
 
     if-nez v7, :cond_5
 
-    .line 286
+    .line 287
     :cond_7
     iget-object p1, p0, Lkotlin/text/Regex$splitToSequence$1;->$input:Ljava/lang/CharSequence;
 
@@ -398,14 +398,14 @@
 
     return-object v0
 
-    .line 287
+    .line 288
     :cond_8
     :goto_1
     sget-object p0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
 
     return-object p0
 
-    .line 274
+    .line 275
     :cond_9
     :goto_2
     iget-object v1, p0, Lkotlin/text/Regex$splitToSequence$1;->$input:Ljava/lang/CharSequence;
@@ -428,7 +428,7 @@
 
     return-object v0
 
-    .line 275
+    .line 276
     :cond_a
     :goto_3
     sget-object p0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;

@@ -85,7 +85,7 @@
 .method public bridge synthetic invoke(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
 
-    .line 603
+    .line 965
     check-cast p1, Landroidx/compose/animation/core/AnimationScope;
 
     invoke-virtual {p0, p1}, Landroidx/compose/foundation/gestures/DefaultFlingBehavior$performFling$2$1;->invoke(Landroidx/compose/animation/core/AnimationScope;)V
@@ -107,11 +107,7 @@
         }
     .end annotation
 
-    const-string v0, "$this$animateDecay"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 604
+    .line 966
     invoke-virtual {p1}, Landroidx/compose/animation/core/AnimationScope;->getValue()Ljava/lang/Object;
 
     move-result-object v0
@@ -128,14 +124,14 @@
 
     sub-float/2addr v0, v1
 
-    .line 605
+    .line 967
     iget-object v1, p0, Landroidx/compose/foundation/gestures/DefaultFlingBehavior$performFling$2$1;->$this_performFling:Landroidx/compose/foundation/gestures/ScrollScope;
 
     invoke-interface {v1, v0}, Landroidx/compose/foundation/gestures/ScrollScope;->scrollBy(F)F
 
     move-result v1
 
-    .line 606
+    .line 968
     iget-object v2, p0, Landroidx/compose/foundation/gestures/DefaultFlingBehavior$performFling$2$1;->$lastValue:Lkotlin/jvm/internal/Ref$FloatRef;
 
     invoke-virtual {p1}, Landroidx/compose/animation/core/AnimationScope;->getValue()Ljava/lang/Object;
@@ -150,7 +146,7 @@
 
     iput v3, v2, Lkotlin/jvm/internal/Ref$FloatRef;->element:F
 
-    .line 607
+    .line 969
     iget-object v2, p0, Landroidx/compose/foundation/gestures/DefaultFlingBehavior$performFling$2$1;->$velocityLeft:Lkotlin/jvm/internal/Ref$FloatRef;
 
     invoke-virtual {p1}, Landroidx/compose/animation/core/AnimationScope;->getVelocity()Ljava/lang/Object;
@@ -167,7 +163,7 @@
 
     sub-float/2addr v0, v1
 
-    .line 609
+    .line 971
     invoke-static {v0}, Ljava/lang/Math;->abs(F)F
 
     move-result v0
@@ -180,7 +176,7 @@
 
     invoke-virtual {p1}, Landroidx/compose/animation/core/AnimationScope;->cancelAnimation()V
 
-    .line 610
+    .line 972
     :cond_0
     iget-object p0, p0, Landroidx/compose/foundation/gestures/DefaultFlingBehavior$performFling$2$1;->this$0:Landroidx/compose/foundation/gestures/DefaultFlingBehavior;
 

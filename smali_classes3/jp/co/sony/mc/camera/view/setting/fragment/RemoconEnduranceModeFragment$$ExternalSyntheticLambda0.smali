@@ -3,7 +3,7 @@
 .source "D8$$SyntheticClass"
 
 # interfaces
-.implements Landroid/widget/CompoundButton$OnCheckedChangeListener;
+.implements Landroid/view/View$OnClickListener;
 
 
 # instance fields
@@ -24,13 +24,13 @@
 
 
 # virtual methods
-.method public final onCheckedChanged(Landroid/widget/CompoundButton;Z)V
+.method public final onClick(Landroid/view/View;)V
     .locals 0
 
     .line 0
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/setting/fragment/RemoconEnduranceModeFragment$$ExternalSyntheticLambda0;->f$0:Ljp/co/sony/mc/camera/view/setting/fragment/RemoconEnduranceModeFragment;
 
-    invoke-static {p0, p1, p2}, Ljp/co/sony/mc/camera/view/setting/fragment/RemoconEnduranceModeFragment;->$r8$lambda$83NQU252-QXDCHYIiQ3z234eowc(Ljp/co/sony/mc/camera/view/setting/fragment/RemoconEnduranceModeFragment;Landroid/widget/CompoundButton;Z)V
+    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/view/setting/fragment/RemoconEnduranceModeFragment;->$r8$lambda$qtNXWkgCPI6ebg_ZQ1_Ht4z__Rc(Ljp/co/sony/mc/camera/view/setting/fragment/RemoconEnduranceModeFragment;Landroid/view/View;)V
 
     return-void
 .end method

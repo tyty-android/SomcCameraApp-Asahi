@@ -15,9 +15,6 @@
 
 
 # virtual methods
-.method public abstract onStartScroll(Ljp/co/sony/mc/camera/view/widget/DialPicker;)V
-.end method
-
 .method public abstract onStartValueChange(Ljp/co/sony/mc/camera/view/widget/DialPicker;I)V
 .end method
 

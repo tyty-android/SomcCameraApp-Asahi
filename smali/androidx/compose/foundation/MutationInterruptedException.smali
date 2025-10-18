@@ -5,7 +5,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/SourceDebugExtension;
-    value = "SMAP\nMutatorMutex.kt\nKotlin\n*S Kotlin\n*F\n+ 1 MutatorMutex.kt\nandroidx/compose/foundation/MutationInterruptedException\n+ 2 ArrayIntrinsics.kt\nkotlin/ArrayIntrinsicsKt\n*L\n1#1,180:1\n26#2:181\n*S KotlinDebug\n*F\n+ 1 MutatorMutex.kt\nandroidx/compose/foundation/MutationInterruptedException\n*L\n64#1:181\n*E\n"
+    value = "SMAP\nMutatorMutex.kt\nKotlin\n*S Kotlin\n*F\n+ 1 MutatorMutex.kt\nandroidx/compose/foundation/MutationInterruptedException\n+ 2 ArrayIntrinsics.kt\nkotlin/ArrayIntrinsicsKt\n*L\n1#1,214:1\n26#2:215\n*S KotlinDebug\n*F\n+ 1 MutatorMutex.kt\nandroidx/compose/foundation/MutationInterruptedException\n*L\n64#1:215\n*E\n"
 .end annotation
 
 .annotation runtime Lkotlin/Metadata;
@@ -50,7 +50,7 @@
 
     const/4 v0, 0x0
 
-    .line 181
+    .line 215
     new-array v0, v0, [Ljava/lang/StackTraceElement;
 
     .line 64

@@ -37,18 +37,18 @@
 .method constructor <init>(Ljp/co/sony/mc/camera/view/FragmentController;Landroidx/fragment/app/FragmentManager;)V
     .locals 0
 
-    .line 6736
+    .line 6988
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 6737
+    .line 6989
     iput-object p1, p0, Ljp/co/sony/mc/camera/view/FragmentController$AutoFocusCallbackImpl;->mController:Ljp/co/sony/mc/camera/view/FragmentController;
 
-    .line 6738
+    .line 6990
     iput-object p2, p0, Ljp/co/sony/mc/camera/view/FragmentController$AutoFocusCallbackImpl;->mFragmentManager:Landroidx/fragment/app/FragmentManager;
 
     const/4 p1, 0x0
 
-    .line 6739
+    .line 6991
     iput-boolean p1, p0, Ljp/co/sony/mc/camera/view/FragmentController$AutoFocusCallbackImpl;->mIsAfOnRequest:Z
 
     return-void
@@ -57,16 +57,16 @@
 .method constructor <init>(ZLjp/co/sony/mc/camera/view/FragmentController;Landroidx/fragment/app/FragmentManager;)V
     .locals 0
 
-    .line 6744
+    .line 6996
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 6745
+    .line 6997
     iput-object p2, p0, Ljp/co/sony/mc/camera/view/FragmentController$AutoFocusCallbackImpl;->mController:Ljp/co/sony/mc/camera/view/FragmentController;
 
-    .line 6746
+    .line 6998
     iput-object p3, p0, Ljp/co/sony/mc/camera/view/FragmentController$AutoFocusCallbackImpl;->mFragmentManager:Landroidx/fragment/app/FragmentManager;
 
-    .line 6747
+    .line 6999
     iput-boolean p1, p0, Ljp/co/sony/mc/camera/view/FragmentController$AutoFocusCallbackImpl;->mIsAfOnRequest:Z
 
     return-void
@@ -77,20 +77,24 @@
 .method public onAutoFocusCanceled()V
     .locals 3
 
-    .line 6797
+    .line 7049
     sget-boolean v0, Ljp/co/sony/mc/camera/util/CamLog;->VERBOSE:Z
+
+    const/4 v1, 0x0
 
     if-eqz v0, :cond_0
 
-    const-string v0, "invoke"
+    const/4 v0, 0x1
 
-    filled-new-array {v0}, [Ljava/lang/String;
+    new-array v0, v0, [Ljava/lang/String;
 
-    move-result-object v0
+    const-string v2, "invoke"
+
+    aput-object v2, v0, v1
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
-    .line 6799
+    .line 7051
     :cond_0
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/FragmentController$AutoFocusCallbackImpl;->mController:Ljp/co/sony/mc/camera/view/FragmentController;
 
@@ -98,11 +102,9 @@
 
     move-result-object v0
 
-    const/4 v1, 0x0
-
     invoke-virtual {v0, v1}, Ljp/co/sony/mc/camera/view/DisplayFlashController;->enable(Z)V
 
-    .line 6802
+    .line 7054
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/FragmentController$AutoFocusCallbackImpl;->mController:Ljp/co/sony/mc/camera/view/FragmentController;
 
     iget-object v2, p0, Ljp/co/sony/mc/camera/view/FragmentController$AutoFocusCallbackImpl;->mFragmentManager:Landroidx/fragment/app/FragmentManager;
@@ -111,13 +113,13 @@
 
     move-result-object v0
 
-    .line 6803
+    .line 7055
     invoke-virtual {v0}, Ljp/co/sony/mc/camera/view/fragment/ViewFinderFragment;->resetFocus()V
 
-    .line 6804
+    .line 7056
     invoke-virtual {v0}, Ljp/co/sony/mc/camera/view/fragment/ViewFinderFragment;->onAutoFocusCanceled()V
 
-    .line 6805
+    .line 7057
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/FragmentController$AutoFocusCallbackImpl;->mController:Ljp/co/sony/mc/camera/view/FragmentController;
 
     const-class v2, Ljp/co/sony/mc/camera/view/viewmodel/CameraViewModel;
@@ -132,10 +134,10 @@
 
     move-result-object v0
 
-    .line 6806
+    .line 7058
     invoke-virtual {v0}, Ljp/co/sony/mc/camera/view/uistate/ProModeFinderOverlayUiState;->onFocusCanceled()V
 
-    .line 6807
+    .line 7059
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/FragmentController$AutoFocusCallbackImpl;->mController:Ljp/co/sony/mc/camera/view/FragmentController;
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/view/FragmentController;->-$$Nest$fgetmIsRemoconConnected(Ljp/co/sony/mc/camera/view/FragmentController;)Z
@@ -144,7 +146,7 @@
 
     if-eqz v0, :cond_1
 
-    .line 6808
+    .line 7060
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/FragmentController$AutoFocusCallbackImpl;->mController:Ljp/co/sony/mc/camera/view/FragmentController;
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/view/FragmentController;->-$$Nest$fgetmRemoconManager(Ljp/co/sony/mc/camera/view/FragmentController;)Lcom/sonymobile/camera/bleremotecontrol/RemoconManager;
@@ -153,7 +155,7 @@
 
     invoke-virtual {v0, v1}, Lcom/sonymobile/camera/bleremotecontrol/RemoconManager;->setAfStatusFeedback(Z)V
 
-    .line 6810
+    .line 7062
     :cond_1
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/FragmentController$AutoFocusCallbackImpl;->mController:Ljp/co/sony/mc/camera/view/FragmentController;
 
@@ -163,22 +165,26 @@
 .end method
 
 .method public onAutoFocusDone(IZI)V
-    .locals 2
+    .locals 3
 
-    .line 6752
+    .line 7004
     sget-boolean p1, Ljp/co/sony/mc/camera/util/CamLog;->DEBUG:Z
+
+    const/4 v0, 0x0
+
+    const/4 v1, 0x1
 
     if-eqz p1, :cond_0
 
-    const-string p1, "invoke"
+    new-array p1, v1, [Ljava/lang/String;
 
-    filled-new-array {p1}, [Ljava/lang/String;
+    const-string v2, "invoke"
 
-    move-result-object p1
+    aput-object v2, p1, v0
 
     invoke-static {p1}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
-    .line 6754
+    .line 7006
     :cond_0
     iget-object p1, p0, Ljp/co/sony/mc/camera/view/FragmentController$AutoFocusCallbackImpl;->mController:Ljp/co/sony/mc/camera/view/FragmentController;
 
@@ -188,7 +194,7 @@
 
     if-eqz p1, :cond_1
 
-    .line 6755
+    .line 7007
     iget-object p1, p0, Ljp/co/sony/mc/camera/view/FragmentController$AutoFocusCallbackImpl;->mController:Ljp/co/sony/mc/camera/view/FragmentController;
 
     invoke-static {p1}, Ljp/co/sony/mc/camera/view/FragmentController;->-$$Nest$fgetmRemoconManager(Ljp/co/sony/mc/camera/view/FragmentController;)Lcom/sonymobile/camera/bleremotecontrol/RemoconManager;
@@ -197,7 +203,7 @@
 
     invoke-virtual {p1, p2}, Lcom/sonymobile/camera/bleremotecontrol/RemoconManager;->setAfStatusFeedback(Z)V
 
-    .line 6758
+    .line 7010
     :cond_1
     iget-object p1, p0, Ljp/co/sony/mc/camera/view/FragmentController$AutoFocusCallbackImpl;->mController:Ljp/co/sony/mc/camera/view/FragmentController;
 
@@ -207,17 +213,12 @@
 
     if-eqz p3, :cond_2
 
-    const/4 v0, 0x1
-
-    goto :goto_0
+    move v0, v1
 
     :cond_2
-    const/4 v0, 0x0
-
-    :goto_0
     invoke-virtual {p1, v0}, Ljp/co/sony/mc/camera/view/DisplayFlashController;->enable(Z)V
 
-    .line 6759
+    .line 7011
     iget-object p1, p0, Ljp/co/sony/mc/camera/view/FragmentController$AutoFocusCallbackImpl;->mController:Ljp/co/sony/mc/camera/view/FragmentController;
 
     invoke-static {p1}, Ljp/co/sony/mc/camera/view/FragmentController;->-$$Nest$fgetmDisplayFlashController(Ljp/co/sony/mc/camera/view/FragmentController;)Ljp/co/sony/mc/camera/view/DisplayFlashController;
@@ -228,7 +229,7 @@
 
     move-result v0
 
-    .line 6760
+    .line 7012
     invoke-static {p3}, Landroid/graphics/Color;->green(I)I
 
     move-result v1
@@ -237,10 +238,10 @@
 
     move-result p3
 
-    .line 6759
+    .line 7011
     invoke-virtual {p1, v0, v1, p3}, Ljp/co/sony/mc/camera/view/DisplayFlashController;->setColor(III)V
 
-    .line 6762
+    .line 7014
     iget-object p1, p0, Ljp/co/sony/mc/camera/view/FragmentController$AutoFocusCallbackImpl;->mController:Ljp/co/sony/mc/camera/view/FragmentController;
 
     iget-object p3, p0, Ljp/co/sony/mc/camera/view/FragmentController$AutoFocusCallbackImpl;->mFragmentManager:Landroidx/fragment/app/FragmentManager;
@@ -249,10 +250,10 @@
 
     move-result-object p1
 
-    .line 6763
+    .line 7015
     invoke-virtual {p1, p2}, Ljp/co/sony/mc/camera/view/fragment/ViewFinderFragment;->onAutoFocusDone(Z)V
 
-    .line 6764
+    .line 7016
     iget-object p1, p0, Ljp/co/sony/mc/camera/view/FragmentController$AutoFocusCallbackImpl;->mController:Ljp/co/sony/mc/camera/view/FragmentController;
 
     const-class p3, Ljp/co/sony/mc/camera/view/viewmodel/CameraViewModel;
@@ -267,15 +268,15 @@
 
     move-result-object p1
 
-    .line 6765
+    .line 7017
     invoke-virtual {p1, p2}, Ljp/co/sony/mc/camera/view/uistate/ProModeFinderOverlayUiState;->onFocusStateLocked(Z)V
 
-    .line 6767
+    .line 7019
     iget-boolean p1, p0, Ljp/co/sony/mc/camera/view/FragmentController$AutoFocusCallbackImpl;->mIsAfOnRequest:Z
 
     if-eqz p1, :cond_3
 
-    .line 6768
+    .line 7020
     iget-object p1, p0, Ljp/co/sony/mc/camera/view/FragmentController$AutoFocusCallbackImpl;->mController:Ljp/co/sony/mc/camera/view/FragmentController;
 
     invoke-static {p1}, Ljp/co/sony/mc/camera/view/FragmentController;->-$$Nest$fgetmActivity(Ljp/co/sony/mc/camera/view/FragmentController;)Ljp/co/sony/mc/camera/CameraActivity;
@@ -293,22 +294,26 @@
 .end method
 
 .method public onFocusAreaUpdated(Z[Landroid/graphics/Rect;)V
-    .locals 2
+    .locals 3
 
-    .line 6779
+    .line 7031
     sget-boolean v0, Ljp/co/sony/mc/camera/util/CamLog;->VERBOSE:Z
 
     if-eqz v0, :cond_0
 
-    const-string v0, "invoke"
+    const/4 v0, 0x1
 
-    filled-new-array {v0}, [Ljava/lang/String;
+    new-array v0, v0, [Ljava/lang/String;
 
-    move-result-object v0
+    const/4 v1, 0x0
+
+    const-string v2, "invoke"
+
+    aput-object v2, v0, v1
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
-    .line 6781
+    .line 7033
     :cond_0
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/FragmentController$AutoFocusCallbackImpl;->mController:Ljp/co/sony/mc/camera/view/FragmentController;
 
@@ -362,7 +367,7 @@
 
     if-ne v0, v1, :cond_2
 
-    .line 6786
+    .line 7038
     :cond_1
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/FragmentController$AutoFocusCallbackImpl;->mController:Ljp/co/sony/mc/camera/view/FragmentController;
 
@@ -372,7 +377,7 @@
 
     invoke-virtual {v0, p1}, Lcom/sonymobile/camera/bleremotecontrol/RemoconManager;->setAfStatusFeedback(Z)V
 
-    .line 6789
+    .line 7041
     :cond_2
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/FragmentController$AutoFocusCallbackImpl;->mController:Ljp/co/sony/mc/camera/view/FragmentController;
 
@@ -382,10 +387,10 @@
 
     move-result-object v0
 
-    .line 6790
+    .line 7042
     invoke-virtual {v0, p1, p2}, Ljp/co/sony/mc/camera/view/fragment/ViewFinderFragment;->setMultiAutoFocusArea(Z[Landroid/graphics/Rect;)V
 
-    .line 6791
+    .line 7043
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/FragmentController$AutoFocusCallbackImpl;->mController:Ljp/co/sony/mc/camera/view/FragmentController;
 
     const-class p2, Ljp/co/sony/mc/camera/view/viewmodel/CameraViewModel;
@@ -400,7 +405,7 @@
 
     move-result-object p0
 
-    .line 6792
+    .line 7044
     invoke-virtual {p0, p1}, Ljp/co/sony/mc/camera/view/uistate/ProModeFinderOverlayUiState;->onFocusAreaUpdated(Z)V
 
     return-void

@@ -105,31 +105,35 @@
 
     cmp-long v1, v1, v3
 
+    const/4 v2, 0x0
+
     if-ltz v1, :cond_2
 
-    const/4 v0, 0x0
-
     .line 91
-    iput v0, p0, Ljp/co/sony/mc/camera/storage/StorageWriteNotifierImpl;->mProgressCount:I
+    iput v2, p0, Ljp/co/sony/mc/camera/storage/StorageWriteNotifierImpl;->mProgressCount:I
 
     goto :goto_0
 
     :cond_2
-    add-int/lit8 v0, v0, 0x1
+    const/4 v1, 0x1
+
+    add-int/2addr v0, v1
 
     .line 94
     iput v0, p0, Ljp/co/sony/mc/camera/storage/StorageWriteNotifierImpl;->mProgressCount:I
 
     .line 95
-    new-instance v0, Ljava/lang/StringBuilder;
+    new-array v0, v1, [Ljava/lang/String;
 
-    const-string v1, "mProgressCount is "
+    new-instance v1, Ljava/lang/StringBuilder;
 
-    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+    const-string v3, "mProgressCount is "
+
+    invoke-direct {v1, v3}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
     iget p0, p0, Ljp/co/sony/mc/camera/storage/StorageWriteNotifierImpl;->mProgressCount:I
 
-    invoke-virtual {v0, p0}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+    invoke-virtual {v1, p0}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
     move-result-object p0
 
@@ -137,11 +141,9 @@
 
     move-result-object p0
 
-    filled-new-array {p0}, [Ljava/lang/String;
+    aput-object p0, v0, v2
 
-    move-result-object p0
-
-    invoke-static {p0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
+    invoke-static {v0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
     :goto_0
     return-void

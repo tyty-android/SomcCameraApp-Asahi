@@ -44,6 +44,10 @@
 .end annotation
 
 
+# static fields
+.field public static final $stable:I = 0x8
+
+
 # instance fields
 .field private final autofillManager:Landroid/view/autofill/AutofillManager;
 
@@ -53,16 +57,14 @@
 
 
 # direct methods
+.method static constructor <clinit>()V
+    .locals 0
+
+    return-void
+.end method
+
 .method public constructor <init>(Landroid/view/View;Landroidx/compose/ui/autofill/AutofillTree;)V
     .locals 1
-
-    const-string/jumbo v0, "view"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string v0, "autofillTree"
-
-    invoke-static {p2, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 39
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -117,10 +119,6 @@
 .method public cancelAutofillForNode(Landroidx/compose/ui/autofill/AutofillNode;)V
     .locals 1
 
-    const-string v0, "autofillNode"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
     .line 67
     iget-object v0, p0, Landroidx/compose/ui/autofill/AndroidAutofill;->autofillManager:Landroid/view/autofill/AutofillManager;
 
@@ -164,10 +162,6 @@
 
 .method public requestAutofillForNode(Landroidx/compose/ui/autofill/AutofillNode;)V
     .locals 6
-
-    const-string v0, "autofillNode"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 49
     invoke-virtual {p1}, Landroidx/compose/ui/autofill/AutofillNode;->getBoundingBox()Landroidx/compose/ui/geometry/Rect;

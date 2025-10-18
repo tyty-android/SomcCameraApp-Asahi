@@ -51,10 +51,6 @@
         }
     .end annotation
 
-    const-string v0, "onBuildDrawCache"
-
-    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
     .line 160
     new-instance v0, Landroidx/compose/ui/draw/CacheDrawModifierNodeImpl;
 
@@ -83,14 +79,6 @@
             "Landroidx/compose/ui/Modifier;"
         }
     .end annotation
-
-    const-string v0, "<this>"
-
-    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string v0, "onDraw"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 94
     new-instance v0, Landroidx/compose/ui/draw/DrawBehindElement;
@@ -121,14 +109,6 @@
         }
     .end annotation
 
-    const-string v0, "<this>"
-
-    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string v0, "onBuildDrawCache"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
     .line 138
     new-instance v0, Landroidx/compose/ui/draw/DrawWithCacheElement;
 
@@ -157,14 +137,6 @@
             "Landroidx/compose/ui/Modifier;"
         }
     .end annotation
-
-    const-string v0, "<this>"
-
-    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string v0, "onDraw"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 287
     new-instance v0, Landroidx/compose/ui/draw/DrawWithContentElement;

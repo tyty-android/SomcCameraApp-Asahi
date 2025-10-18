@@ -1,66 +1,83 @@
-.class Ljp/co/sony/mc/camera/GoogleLensActivity$3;
+.class synthetic Ljp/co/sony/mc/camera/GoogleLensActivity$3;
 .super Ljava/lang/Object;
 .source "GoogleLensActivity.java"
 
-# interfaces
-.implements Lcom/google/lens/sdk/LensApi$LensAvailabilityCallback;
-
 
 # annotations
-.annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Ljp/co/sony/mc/camera/GoogleLensActivity;->onResume()V
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Ljp/co/sony/mc/camera/GoogleLensActivity;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0x0
+    accessFlags = 0x1008
     name = null
 .end annotation
 
 
-# instance fields
-.field final synthetic this$0:Ljp/co/sony/mc/camera/GoogleLensActivity;
+# static fields
+.field static final synthetic $SwitchMap$jp$co$sony$mc$camera$GoogleLensActivity$State:[I
 
 
 # direct methods
-.method constructor <init>(Ljp/co/sony/mc/camera/GoogleLensActivity;)V
-    .locals 0
+.method static constructor <clinit>()V
+    .locals 3
 
     .line 100
-    iput-object p1, p0, Ljp/co/sony/mc/camera/GoogleLensActivity$3;->this$0:Ljp/co/sony/mc/camera/GoogleLensActivity;
+    invoke-static {}, Ljp/co/sony/mc/camera/GoogleLensActivity$State;->values()[Ljp/co/sony/mc/camera/GoogleLensActivity$State;
 
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    move-result-object v0
 
-    return-void
-.end method
+    array-length v0, v0
 
+    new-array v0, v0, [I
 
-# virtual methods
-.method public onAvailabilityStatusFetched(I)V
-    .locals 1
+    sput-object v0, Ljp/co/sony/mc/camera/GoogleLensActivity$3;->$SwitchMap$jp$co$sony$mc$camera$GoogleLensActivity$State:[I
 
-    if-eqz p1, :cond_0
+    :try_start_0
+    sget-object v1, Ljp/co/sony/mc/camera/GoogleLensActivity$State;->READY:Ljp/co/sony/mc/camera/GoogleLensActivity$State;
 
-    .line 105
-    new-instance p0, Ljava/lang/StringBuilder;
+    invoke-virtual {v1}, Ljp/co/sony/mc/camera/GoogleLensActivity$State;->ordinal()I
 
-    const-string v0, "LensApi.LensAvailabilityStatus = "
+    move-result v1
 
-    invoke-direct {p0, v0}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+    const/4 v2, 0x1
 
-    invoke-virtual {p0, p1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+    aput v2, v0, v1
+    :try_end_0
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_0 .. :try_end_0} :catch_0
 
-    move-result-object p0
+    :catch_0
+    :try_start_1
+    sget-object v0, Ljp/co/sony/mc/camera/GoogleLensActivity$3;->$SwitchMap$jp$co$sony$mc$camera$GoogleLensActivity$State:[I
 
-    invoke-virtual {p0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    sget-object v1, Ljp/co/sony/mc/camera/GoogleLensActivity$State;->KEYGUARD:Ljp/co/sony/mc/camera/GoogleLensActivity$State;
 
-    move-result-object p0
+    invoke-virtual {v1}, Ljp/co/sony/mc/camera/GoogleLensActivity$State;->ordinal()I
 
-    filled-new-array {p0}, [Ljava/lang/String;
+    move-result v1
 
-    move-result-object p0
+    const/4 v2, 0x2
 
-    invoke-static {p0}, Ljp/co/sony/mc/camera/util/CamLog;->e([Ljava/lang/String;)V
+    aput v2, v0, v1
+    :try_end_1
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_1 .. :try_end_1} :catch_1
 
-    :cond_0
+    :catch_1
+    :try_start_2
+    sget-object v0, Ljp/co/sony/mc/camera/GoogleLensActivity$3;->$SwitchMap$jp$co$sony$mc$camera$GoogleLensActivity$State:[I
+
+    sget-object v1, Ljp/co/sony/mc/camera/GoogleLensActivity$State;->DONE:Ljp/co/sony/mc/camera/GoogleLensActivity$State;
+
+    invoke-virtual {v1}, Ljp/co/sony/mc/camera/GoogleLensActivity$State;->ordinal()I
+
+    move-result v1
+
+    const/4 v2, 0x3
+
+    aput v2, v0, v1
+    :try_end_2
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_2 .. :try_end_2} :catch_2
+
+    :catch_2
     return-void
 .end method

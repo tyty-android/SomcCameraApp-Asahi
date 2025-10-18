@@ -53,7 +53,7 @@
     f = "BasicMarquee.kt"
     i = {}
     l = {
-        0x160
+        0x16f
     }
     m = "invokeSuspend"
     n = {}
@@ -167,7 +167,7 @@
 
     move-result-object v0
 
-    .line 345
+    .line 360
     iget v1, p0, Landroidx/compose/foundation/MarqueeModifierNode$runAnimation$2;->label:I
 
     const/4 v2, 0x1
@@ -192,7 +192,7 @@
     :cond_1
     invoke-static {p1}, Lkotlin/ResultKt;->throwOnFailure(Ljava/lang/Object;)V
 
-    .line 346
+    .line 361
     new-instance p1, Landroidx/compose/foundation/MarqueeModifierNode$runAnimation$2$1;
 
     iget-object v1, p0, Landroidx/compose/foundation/MarqueeModifierNode$runAnimation$2;->this$0:Landroidx/compose/foundation/MarqueeModifierNode;
@@ -205,7 +205,7 @@
 
     move-result-object p1
 
-    .line 352
+    .line 367
     new-instance v1, Landroidx/compose/foundation/MarqueeModifierNode$runAnimation$2$2;
 
     iget-object v3, p0, Landroidx/compose/foundation/MarqueeModifierNode$runAnimation$2;->this$0:Landroidx/compose/foundation/MarqueeModifierNode;
@@ -230,7 +230,7 @@
 
     return-object v0
 
-    .line 372
+    .line 389
     :cond_2
     :goto_0
     sget-object p0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;

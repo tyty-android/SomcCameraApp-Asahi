@@ -25,7 +25,7 @@
 .method private constructor <init>(Ljp/co/sony/mc/camera/view/FragmentController;)V
     .locals 0
 
-    .line 5019
+    .line 5195
     iput-object p1, p0, Ljp/co/sony/mc/camera/view/FragmentController$MessageDialogOnDismissListenerImpl;->this$0:Ljp/co/sony/mc/camera/view/FragmentController;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -46,7 +46,7 @@
 .method public onDismiss(Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogRequest;)V
     .locals 2
 
-    .line 5023
+    .line 5199
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/FragmentController$MessageDialogOnDismissListenerImpl;->this$0:Ljp/co/sony/mc/camera/view/FragmentController;
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/view/FragmentController;->-$$Nest$fgetmCameraEventNotifier(Ljp/co/sony/mc/camera/view/FragmentController;)Ljp/co/sony/mc/camera/view/CameraEventListener;
@@ -55,7 +55,7 @@
 
     invoke-interface {v0}, Ljp/co/sony/mc/camera/view/CameraEventListener;->onMessageDialogHidden()V
 
-    .line 5025
+    .line 5201
     new-instance v0, Ljp/co/sony/mc/camera/idd/event/IddCloseDialogEvent;
 
     iget-object v1, p1, Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogRequest;->mDialogId:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
@@ -64,7 +64,7 @@
 
     invoke-virtual {v0}, Ljp/co/sony/mc/camera/idd/event/IddCloseDialogEvent;->send()V
 
-    .line 5027
+    .line 5203
     sget-object v0, Ljp/co/sony/mc/camera/view/FragmentController$26;->$SwitchMap$jp$co$sony$mc$camera$view$messagedialog$DialogId:[I
 
     iget-object v1, p1, Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogRequest;->mDialogId:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
@@ -89,7 +89,7 @@
 
     packed-switch v0, :pswitch_data_0
 
-    .line 5068
+    .line 5244
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/FragmentController$MessageDialogOnDismissListenerImpl;->this$0:Ljp/co/sony/mc/camera/view/FragmentController;
 
     iget-object p1, p1, Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogRequest;->mDialogId:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
@@ -98,7 +98,7 @@
 
     goto :goto_0
 
-    .line 5040
+    .line 5216
     :pswitch_0
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/FragmentController$MessageDialogOnDismissListenerImpl;->this$0:Ljp/co/sony/mc/camera/view/FragmentController;
 
@@ -109,23 +109,23 @@
     :pswitch_1
     const/4 p1, 0x1
 
-    .line 5032
+    .line 5208
     invoke-static {p1}, Ljp/co/sony/mc/camera/util/capability/PlatformCapability;->setDeviceError(Z)V
 
-    .line 5033
+    .line 5209
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/FragmentController$MessageDialogOnDismissListenerImpl;->this$0:Ljp/co/sony/mc/camera/view/FragmentController;
 
     invoke-static {p0}, Ljp/co/sony/mc/camera/view/FragmentController;->-$$Nest$mexitByError(Ljp/co/sony/mc/camera/view/FragmentController;)V
 
     goto :goto_0
 
-    .line 5045
+    .line 5221
     :pswitch_2
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/FragmentController$MessageDialogOnDismissListenerImpl;->this$0:Ljp/co/sony/mc/camera/view/FragmentController;
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/view/FragmentController;->-$$Nest$mcancelYoutubeDetailDataFuture(Ljp/co/sony/mc/camera/view/FragmentController;)V
 
-    .line 5046
+    .line 5222
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/FragmentController$MessageDialogOnDismissListenerImpl;->this$0:Ljp/co/sony/mc/camera/view/FragmentController;
 
     iget-object p1, p1, Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogRequest;->mDialogId:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
@@ -134,7 +134,7 @@
 
     goto :goto_0
 
-    .line 5061
+    .line 5237
     :cond_0
     sget-object v0, Ljp/co/sony/mc/camera/rtmp/FacebookApi;->INSTANCE:Ljp/co/sony/mc/camera/rtmp/FacebookApi;
 
@@ -144,12 +144,12 @@
 
     if-nez v0, :cond_1
 
-    .line 5062
+    .line 5238
     sget-object v0, Ljp/co/sony/mc/camera/rtmp/FacebookApi;->INSTANCE:Ljp/co/sony/mc/camera/rtmp/FacebookApi;
 
     invoke-virtual {v0}, Ljp/co/sony/mc/camera/rtmp/FacebookApi;->unRegisterLoginCallback()V
 
-    .line 5064
+    .line 5240
     :cond_1
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/FragmentController$MessageDialogOnDismissListenerImpl;->this$0:Ljp/co/sony/mc/camera/view/FragmentController;
 
@@ -159,13 +159,13 @@
 
     goto :goto_0
 
-    .line 5056
+    .line 5232
     :cond_2
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/FragmentController$MessageDialogOnDismissListenerImpl;->this$0:Ljp/co/sony/mc/camera/view/FragmentController;
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/view/FragmentController;->-$$Nest$mcancelFacebookLiveToListFuture(Ljp/co/sony/mc/camera/view/FragmentController;)V
 
-    .line 5057
+    .line 5233
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/FragmentController$MessageDialogOnDismissListenerImpl;->this$0:Ljp/co/sony/mc/camera/view/FragmentController;
 
     iget-object p1, p1, Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogRequest;->mDialogId:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
@@ -174,13 +174,13 @@
 
     goto :goto_0
 
-    .line 5051
+    .line 5227
     :cond_3
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/FragmentController$MessageDialogOnDismissListenerImpl;->this$0:Ljp/co/sony/mc/camera/view/FragmentController;
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/view/FragmentController;->-$$Nest$mcancelYoutubeAuthFuture(Ljp/co/sony/mc/camera/view/FragmentController;)V
 
-    .line 5052
+    .line 5228
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/FragmentController$MessageDialogOnDismissListenerImpl;->this$0:Ljp/co/sony/mc/camera/view/FragmentController;
 
     iget-object p1, p1, Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogRequest;->mDialogId:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;

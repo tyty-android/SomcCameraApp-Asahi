@@ -18,7 +18,7 @@
 .method private constructor <init>()V
     .locals 0
 
-    .line 280
+    .line 282
     invoke-direct {p0}, Lio/grpc/Deadline$Ticker;-><init>()V
 
     return-void
@@ -27,7 +27,7 @@
 .method synthetic constructor <init>(Lio/grpc/Deadline$1;)V
     .locals 0
 
-    .line 280
+    .line 282
     invoke-direct {p0}, Lio/grpc/Deadline$SystemTicker;-><init>()V
 
     return-void
@@ -38,7 +38,7 @@
 .method public nanoTime()J
     .locals 2
 
-    .line 283
+    .line 285
     invoke-static {}, Ljava/lang/System;->nanoTime()J
 
     move-result-wide v0

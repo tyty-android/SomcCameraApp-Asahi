@@ -96,7 +96,7 @@
 .method public bridge synthetic invoke(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
 
-    .line 359
+    .line 425
     check-cast p1, Landroidx/compose/ui/layout/Placeable$PlacementScope;
 
     invoke-virtual {p0, p1}, Landroidx/compose/material/NavigationRailKt$placeLabelAndIcon$1;->invoke(Landroidx/compose/ui/layout/Placeable$PlacementScope;)V
@@ -107,14 +107,12 @@
 .end method
 
 .method public final invoke(Landroidx/compose/ui/layout/Placeable$PlacementScope;)V
-    .locals 9
+    .locals 16
 
-    const-string v1, "$this$layout"
+    move-object/from16 v0, p0
 
-    invoke-static {p1, v1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 360
-    iget v1, p0, Landroidx/compose/material/NavigationRailKt$placeLabelAndIcon$1;->$iconPositionAnimationProgress:F
+    .line 426
+    iget v1, v0, Landroidx/compose/material/NavigationRailKt$placeLabelAndIcon$1;->$iconPositionAnimationProgress:F
 
     const/4 v2, 0x0
 
@@ -124,15 +122,15 @@
 
     goto :goto_0
 
-    .line 361
+    .line 427
     :cond_0
-    iget-object v3, p0, Landroidx/compose/material/NavigationRailKt$placeLabelAndIcon$1;->$labelPlaceable:Landroidx/compose/ui/layout/Placeable;
+    iget-object v3, v0, Landroidx/compose/material/NavigationRailKt$placeLabelAndIcon$1;->$labelPlaceable:Landroidx/compose/ui/layout/Placeable;
 
-    iget v4, p0, Landroidx/compose/material/NavigationRailKt$placeLabelAndIcon$1;->$labelX:I
+    iget v4, v0, Landroidx/compose/material/NavigationRailKt$placeLabelAndIcon$1;->$labelX:I
 
-    iget v1, p0, Landroidx/compose/material/NavigationRailKt$placeLabelAndIcon$1;->$labelY:I
+    iget v1, v0, Landroidx/compose/material/NavigationRailKt$placeLabelAndIcon$1;->$labelY:I
 
-    iget v2, p0, Landroidx/compose/material/NavigationRailKt$placeLabelAndIcon$1;->$offset:I
+    iget v2, v0, Landroidx/compose/material/NavigationRailKt$placeLabelAndIcon$1;->$offset:I
 
     add-int v5, v1, v2
 
@@ -142,31 +140,31 @@
 
     const/4 v6, 0x0
 
-    move-object v2, p1
+    move-object/from16 v2, p1
 
     invoke-static/range {v2 .. v8}, Landroidx/compose/ui/layout/Placeable$PlacementScope;->placeRelative$default(Landroidx/compose/ui/layout/Placeable$PlacementScope;Landroidx/compose/ui/layout/Placeable;IIFILjava/lang/Object;)V
 
-    .line 363
+    .line 429
     :goto_0
-    iget-object v3, p0, Landroidx/compose/material/NavigationRailKt$placeLabelAndIcon$1;->$iconPlaceable:Landroidx/compose/ui/layout/Placeable;
+    iget-object v10, v0, Landroidx/compose/material/NavigationRailKt$placeLabelAndIcon$1;->$iconPlaceable:Landroidx/compose/ui/layout/Placeable;
 
-    iget v4, p0, Landroidx/compose/material/NavigationRailKt$placeLabelAndIcon$1;->$iconX:I
+    iget v11, v0, Landroidx/compose/material/NavigationRailKt$placeLabelAndIcon$1;->$iconX:I
 
-    iget v1, p0, Landroidx/compose/material/NavigationRailKt$placeLabelAndIcon$1;->$selectedIconY:I
+    iget v1, v0, Landroidx/compose/material/NavigationRailKt$placeLabelAndIcon$1;->$selectedIconY:I
 
-    iget v0, p0, Landroidx/compose/material/NavigationRailKt$placeLabelAndIcon$1;->$offset:I
+    iget v0, v0, Landroidx/compose/material/NavigationRailKt$placeLabelAndIcon$1;->$offset:I
 
-    add-int v5, v1, v0
+    add-int v12, v1, v0
 
-    const/4 v7, 0x4
+    const/4 v14, 0x4
 
-    const/4 v8, 0x0
+    const/4 v15, 0x0
 
-    const/4 v6, 0x0
+    const/4 v13, 0x0
 
-    move-object v2, p1
+    move-object/from16 v9, p1
 
-    invoke-static/range {v2 .. v8}, Landroidx/compose/ui/layout/Placeable$PlacementScope;->placeRelative$default(Landroidx/compose/ui/layout/Placeable$PlacementScope;Landroidx/compose/ui/layout/Placeable;IIFILjava/lang/Object;)V
+    invoke-static/range {v9 .. v15}, Landroidx/compose/ui/layout/Placeable$PlacementScope;->placeRelative$default(Landroidx/compose/ui/layout/Placeable$PlacementScope;Landroidx/compose/ui/layout/Placeable;IIFILjava/lang/Object;)V
 
     return-void
 .end method

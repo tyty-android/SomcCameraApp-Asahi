@@ -108,10 +108,10 @@
 
     iput-object p1, p0, Lkotlin/sequences/DropWhileSequence$iterator$1;->this$0:Lkotlin/sequences/DropWhileSequence;
 
-    .line 523
+    .line 541
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 524
+    .line 542
     invoke-static {p1}, Lkotlin/sequences/DropWhileSequence;->access$getSequence$p(Lkotlin/sequences/DropWhileSequence;)Lkotlin/sequences/Sequence;
 
     move-result-object p1
@@ -124,7 +124,7 @@
 
     const/4 p1, -0x1
 
-    .line 525
+    .line 543
     iput p1, p0, Lkotlin/sequences/DropWhileSequence$iterator$1;->dropState:I
 
     return-void
@@ -133,7 +133,7 @@
 .method private final drop()V
     .locals 2
 
-    .line 529
+    .line 547
     :cond_0
     iget-object v0, p0, Lkotlin/sequences/DropWhileSequence$iterator$1;->iterator:Ljava/util/Iterator;
 
@@ -143,14 +143,14 @@
 
     if-eqz v0, :cond_1
 
-    .line 530
+    .line 548
     iget-object v0, p0, Lkotlin/sequences/DropWhileSequence$iterator$1;->iterator:Ljava/util/Iterator;
 
     invoke-interface {v0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
     move-result-object v0
 
-    .line 531
+    .line 549
     iget-object v1, p0, Lkotlin/sequences/DropWhileSequence$iterator$1;->this$0:Lkotlin/sequences/DropWhileSequence;
 
     invoke-static {v1}, Lkotlin/sequences/DropWhileSequence;->access$getPredicate$p(Lkotlin/sequences/DropWhileSequence;)Lkotlin/jvm/functions/Function1;
@@ -169,12 +169,12 @@
 
     if-nez v1, :cond_0
 
-    .line 532
+    .line 550
     iput-object v0, p0, Lkotlin/sequences/DropWhileSequence$iterator$1;->nextItem:Ljava/lang/Object;
 
     const/4 v0, 0x1
 
-    .line 533
+    .line 551
     iput v0, p0, Lkotlin/sequences/DropWhileSequence$iterator$1;->dropState:I
 
     return-void
@@ -182,7 +182,7 @@
     :cond_1
     const/4 v0, 0x0
 
-    .line 537
+    .line 555
     iput v0, p0, Lkotlin/sequences/DropWhileSequence$iterator$1;->dropState:I
 
     return-void
@@ -193,7 +193,7 @@
 .method public final getDropState()I
     .locals 0
 
-    .line 525
+    .line 543
     iget p0, p0, Lkotlin/sequences/DropWhileSequence$iterator$1;->dropState:I
 
     return p0
@@ -209,7 +209,7 @@
         }
     .end annotation
 
-    .line 524
+    .line 542
     iget-object p0, p0, Lkotlin/sequences/DropWhileSequence$iterator$1;->iterator:Ljava/util/Iterator;
 
     return-object p0
@@ -223,7 +223,7 @@
         }
     .end annotation
 
-    .line 526
+    .line 544
     iget-object p0, p0, Lkotlin/sequences/DropWhileSequence$iterator$1;->nextItem:Ljava/lang/Object;
 
     return-object p0
@@ -232,17 +232,17 @@
 .method public hasNext()Z
     .locals 2
 
-    .line 555
+    .line 573
     iget v0, p0, Lkotlin/sequences/DropWhileSequence$iterator$1;->dropState:I
 
     const/4 v1, -0x1
 
     if-ne v0, v1, :cond_0
 
-    .line 556
+    .line 574
     invoke-direct {p0}, Lkotlin/sequences/DropWhileSequence$iterator$1;->drop()V
 
-    .line 557
+    .line 575
     :cond_0
     iget v0, p0, Lkotlin/sequences/DropWhileSequence$iterator$1;->dropState:I
 
@@ -276,17 +276,17 @@
         }
     .end annotation
 
-    .line 541
+    .line 559
     iget v0, p0, Lkotlin/sequences/DropWhileSequence$iterator$1;->dropState:I
 
     const/4 v1, -0x1
 
     if-ne v0, v1, :cond_0
 
-    .line 542
+    .line 560
     invoke-direct {p0}, Lkotlin/sequences/DropWhileSequence$iterator$1;->drop()V
 
-    .line 544
+    .line 562
     :cond_0
     iget v0, p0, Lkotlin/sequences/DropWhileSequence$iterator$1;->dropState:I
 
@@ -294,22 +294,22 @@
 
     if-ne v0, v1, :cond_1
 
-    .line 546
+    .line 564
     iget-object v0, p0, Lkotlin/sequences/DropWhileSequence$iterator$1;->nextItem:Ljava/lang/Object;
 
     const/4 v1, 0x0
 
-    .line 547
+    .line 565
     iput-object v1, p0, Lkotlin/sequences/DropWhileSequence$iterator$1;->nextItem:Ljava/lang/Object;
 
     const/4 v1, 0x0
 
-    .line 548
+    .line 566
     iput v1, p0, Lkotlin/sequences/DropWhileSequence$iterator$1;->dropState:I
 
     return-object v0
 
-    .line 551
+    .line 569
     :cond_1
     iget-object p0, p0, Lkotlin/sequences/DropWhileSequence$iterator$1;->iterator:Ljava/util/Iterator;
 
@@ -335,7 +335,7 @@
 .method public final setDropState(I)V
     .locals 0
 
-    .line 525
+    .line 543
     iput p1, p0, Lkotlin/sequences/DropWhileSequence$iterator$1;->dropState:I
 
     return-void
@@ -349,7 +349,7 @@
         }
     .end annotation
 
-    .line 526
+    .line 544
     iput-object p1, p0, Lkotlin/sequences/DropWhileSequence$iterator$1;->nextItem:Ljava/lang/Object;
 
     return-void

@@ -5,12 +5,12 @@
 
 # annotations
 .annotation system Ldalvik/annotation/SourceDebugExtension;
-    value = "SMAP\nMemoryRecallViewBindHelper.kt\nKotlin\n*S Kotlin\n*F\n+ 1 MemoryRecallViewBindHelper.kt\njp/co/sony/mc/camera/view/memoryrecall/widget/MemoryRecallViewBindHelper\n+ 2 _Maps.kt\nkotlin/collections/MapsKt___MapsKt\n*L\n1#1,408:1\n303#1:409\n300#1,7:410\n303#1:417\n300#1,7:418\n303#1:425\n300#1,7:426\n303#1:433\n300#1,7:434\n303#1:441\n300#1,7:442\n303#1:449\n300#1,7:450\n215#2,2:457\n*S KotlinDebug\n*F\n+ 1 MemoryRecallViewBindHelper.kt\njp/co/sony/mc/camera/view/memoryrecall/widget/MemoryRecallViewBindHelper\n*L\n61#1:409\n61#1:410,7\n148#1:417\n148#1:418,7\n171#1:425\n171#1:426,7\n223#1:433\n223#1:434,7\n249#1:441\n249#1:442,7\n284#1:449\n284#1:450,7\n393#1:457,2\n*E\n"
+    value = "SMAP\nMemoryRecallViewBindHelper.kt\nKotlin\n*S Kotlin\n*F\n+ 1 MemoryRecallViewBindHelper.kt\njp/co/sony/mc/camera/view/memoryrecall/widget/MemoryRecallViewBindHelper\n+ 2 _Maps.kt\nkotlin/collections/MapsKt___MapsKt\n*L\n1#1,408:1\n303#1:409\n300#1,7:410\n303#1:417\n300#1,7:418\n303#1:425\n300#1,7:426\n303#1:433\n300#1,7:434\n303#1:441\n300#1,7:442\n303#1:449\n300#1,7:450\n216#2,2:457\n*S KotlinDebug\n*F\n+ 1 MemoryRecallViewBindHelper.kt\njp/co/sony/mc/camera/view/memoryrecall/widget/MemoryRecallViewBindHelper\n*L\n61#1:409\n61#1:410,7\n148#1:417\n148#1:418,7\n171#1:425\n171#1:426,7\n223#1:433\n223#1:434,7\n249#1:441\n249#1:442,7\n284#1:449\n284#1:450,7\n393#1:457,2\n*E\n"
 .end annotation
 
 .annotation runtime Lkotlin/Metadata;
     d1 = {
-        "\u0000H\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000e\n\u0000\n\u0002\u0010\u0008\n\u0002\u0008\u0003\n\u0002\u0018\u0002\n\u0002\u0008\u000c\n\u0002\u0018\u0002\n\u0002\u0008\u0008\u0008\u0007\u0018\u00002\u00020\u0001B\u0015\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\u0006\u0010\u0004\u001a\u00020\u0005\u00a2\u0006\u0002\u0010\u0006J#\u0010\u0007\u001a\u00020\u00082\n\u0010\t\u001a\u0006\u0012\u0002\u0008\u00030\n2\u000c\u0010\u000b\u001a\u0008\u0012\u0004\u0012\u00020\u00080\u000cH\u0082\u0008J\u0018\u0010\r\u001a\u00020\u000e2\u0006\u0010\u000f\u001a\u00020\u00102\u0006\u0010\u0011\u001a\u00020\u0010H\u0002J\u000e\u0010\u0012\u001a\u00020\u00082\u0006\u0010\u0013\u001a\u00020\u0014J\u000e\u0010\u0015\u001a\u00020\u00082\u0006\u0010\u0013\u001a\u00020\u0014J\u000e\u0010\u0016\u001a\u00020\u00082\u0006\u0010\u0013\u001a\u00020\u0014J\u000e\u0010\u0017\u001a\u00020\u00082\u0006\u0010\u0013\u001a\u00020\u0014J\u000e\u0010\u0018\u001a\u00020\u00082\u0006\u0010\u0013\u001a\u00020\u0014J\u000e\u0010\u0019\u001a\u00020\u00082\u0006\u0010\u0013\u001a\u00020\u0014J\u000e\u0010\u001a\u001a\u00020\u00082\u0006\u0010\u0013\u001a\u00020\u0014J\u000e\u0010\u001b\u001a\u00020\u00082\u0006\u0010\u0013\u001a\u00020\u0014J\u000e\u0010\u001c\u001a\u00020\u00082\u0006\u0010\u0013\u001a\u00020\u0014J\u000e\u0010\u001d\u001a\u00020\u00082\u0006\u0010\u0013\u001a\u00020\u0014J\u000e\u0010\u001e\u001a\u00020\u00082\u0006\u0010\u0013\u001a\u00020\u0014J\u000e\u0010\u001f\u001a\u00020\u00082\u0006\u0010\u0013\u001a\u00020\u0014J\u000e\u0010 \u001a\u00020\u00082\u0006\u0010\u0013\u001a\u00020!J\u000e\u0010\"\u001a\u00020\u00082\u0006\u0010\u0013\u001a\u00020\u0014J\u000e\u0010#\u001a\u00020\u00082\u0006\u0010\u0013\u001a\u00020\u0014J\u000e\u0010$\u001a\u00020\u00082\u0006\u0010\u0013\u001a\u00020\u0014J\u000e\u0010%\u001a\u00020\u00082\u0006\u0010\u0013\u001a\u00020\u0014J\u000e\u0010&\u001a\u00020\u00082\u0006\u0010\u0013\u001a\u00020\u0014J\u000e\u0010\'\u001a\u00020\u00082\u0006\u0010\u0013\u001a\u00020\u0014J\u000e\u0010(\u001a\u00020\u00082\u0006\u0010\u0013\u001a\u00020\u0014R\u000e\u0010\u0002\u001a\u00020\u0003X\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u0004\u001a\u00020\u0005X\u0082\u0004\u00a2\u0006\u0002\n\u0000\u00a8\u0006)"
+        "\u0000F\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0003\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0014\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000e\n\u0000\n\u0002\u0010\u0008\n\u0002\u0008\u0002\u0008\u0007\u0018\u00002\u00020\u0001B\u0017\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\u0006\u0010\u0004\u001a\u00020\u0005\u00a2\u0006\u0004\u0008\u0006\u0010\u0007J\u000e\u0010\u0008\u001a\u00020\t2\u0006\u0010\n\u001a\u00020\u000bJ\u000e\u0010\u000c\u001a\u00020\t2\u0006\u0010\n\u001a\u00020\u000bJ\u000e\u0010\r\u001a\u00020\t2\u0006\u0010\n\u001a\u00020\u000bJ\u000e\u0010\u000e\u001a\u00020\t2\u0006\u0010\n\u001a\u00020\u000bJ\u000e\u0010\u000f\u001a\u00020\t2\u0006\u0010\n\u001a\u00020\u000bJ\u000e\u0010\u0010\u001a\u00020\t2\u0006\u0010\n\u001a\u00020\u000bJ\u000e\u0010\u0011\u001a\u00020\t2\u0006\u0010\n\u001a\u00020\u000bJ\u000e\u0010\u0012\u001a\u00020\t2\u0006\u0010\n\u001a\u00020\u000bJ\u000e\u0010\u0013\u001a\u00020\t2\u0006\u0010\n\u001a\u00020\u000bJ\u000e\u0010\u0014\u001a\u00020\t2\u0006\u0010\n\u001a\u00020\u000bJ\u000e\u0010\u0015\u001a\u00020\t2\u0006\u0010\n\u001a\u00020\u000bJ\u000e\u0010\u0016\u001a\u00020\t2\u0006\u0010\n\u001a\u00020\u000bJ\u000e\u0010\u0017\u001a\u00020\t2\u0006\u0010\n\u001a\u00020\u000bJ\u000e\u0010\u0018\u001a\u00020\t2\u0006\u0010\n\u001a\u00020\u000bJ\u000e\u0010\u0019\u001a\u00020\t2\u0006\u0010\n\u001a\u00020\u000bJ\u000e\u0010\u001a\u001a\u00020\t2\u0006\u0010\n\u001a\u00020\u000bJ\u000e\u0010\u001b\u001a\u00020\t2\u0006\u0010\n\u001a\u00020\u000bJ\u000e\u0010\u001c\u001a\u00020\t2\u0006\u0010\n\u001a\u00020\u000bJ\u000e\u0010\u001d\u001a\u00020\t2\u0006\u0010\n\u001a\u00020\u000bJ#\u0010\u001e\u001a\u00020\t2\n\u0010\u001f\u001a\u0006\u0012\u0002\u0008\u00030 2\u000c\u0010!\u001a\u0008\u0012\u0004\u0012\u00020\t0\"H\u0082\u0008J\u000e\u0010#\u001a\u00020\t2\u0006\u0010\n\u001a\u00020$J\u0018\u0010%\u001a\u00020&2\u0006\u0010\'\u001a\u00020(2\u0006\u0010)\u001a\u00020(H\u0002R\u000e\u0010\u0002\u001a\u00020\u0003X\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u0004\u001a\u00020\u0005X\u0082\u0004\u00a2\u0006\u0002\n\u0000\u00a8\u0006*"
     }
     d2 = {
         "Ljp/co/sony/mc/camera/view/memoryrecall/widget/MemoryRecallViewBindHelper;",
@@ -19,47 +19,48 @@
         "Landroid/content/Context;",
         "holder",
         "Ljp/co/sony/mc/camera/setting/CameraSettingsHolder;",
+        "<init>",
         "(Landroid/content/Context;Ljp/co/sony/mc/camera/setting/CameraSettingsHolder;)V",
-        "disableIfNeeded",
+        "setCapturingMode",
         "",
+        "layout",
+        "Landroid/view/View;",
+        "setShutterSpeed",
+        "setLens",
+        "setIso",
+        "setAspectRatio",
+        "setResolution",
+        "setFileFormat",
+        "setDriveMode",
+        "setFocusMode",
+        "setFocusArea",
+        "setMetering",
+        "setFlash",
+        "setWhiteBalance",
+        "setNightShooting",
+        "setFaceEye",
+        "setColorToneProfile",
+        "setABGM",
+        "setTemperature",
+        "setEV",
+        "disableIfNeeded",
         "key",
         "Ljp/co/sony/mc/camera/setting/CameraSettings$Key;",
         "disable",
         "Lkotlin/Function0;",
+        "setItemList",
+        "Landroid/widget/ListView;",
         "makeContentDescription",
         "",
         "titleResId",
         "",
         "valueResId",
-        "setABGM",
-        "layout",
-        "Landroid/view/View;",
-        "setAspectRatio",
-        "setCapturingMode",
-        "setColorToneProfile",
-        "setDriveMode",
-        "setEV",
-        "setFaceEye",
-        "setFileFormat",
-        "setFlash",
-        "setFocusArea",
-        "setFocusMode",
-        "setIso",
-        "setItemList",
-        "Landroid/widget/ListView;",
-        "setLens",
-        "setMetering",
-        "setNightShooting",
-        "setResolution",
-        "setShutterSpeed",
-        "setTemperature",
-        "setWhiteBalance",
         "SomcCamera_release"
     }
     k = 0x1
     mv = {
-        0x1,
-        0x9,
+        0x2,
+        0x0,
         0x0
     }
     xi = 0x30
@@ -259,7 +260,7 @@
     :goto_0
     if-eqz v0, :cond_1
 
-    const p0, 0x7f090526
+    const p0, 0x7f09050d
 
     .line 224
     invoke-virtual {p1, p0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
@@ -341,7 +342,7 @@
 
     move-result-object p0
 
-    const v1, 0x7f0902ec
+    const v1, 0x7f0902e5
 
     .line 238
     invoke-virtual {p1, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
@@ -370,7 +371,7 @@
 
     invoke-virtual {v1, v0}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
-    const v0, 0x7f0902ee
+    const v0, 0x7f0902e7
 
     .line 242
     invoke-virtual {p1, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
@@ -407,7 +408,7 @@
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    const v0, 0x7f0902ce
+    const v0, 0x7f0902c7
 
     .line 91
     invoke-virtual {p1, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
@@ -468,7 +469,7 @@
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    const v0, 0x7f0902e5
+    const v0, 0x7f0902de
 
     .line 47
     invoke-virtual {p1, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
@@ -543,7 +544,7 @@
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    const v0, 0x7f0902d1
+    const v0, 0x7f0902ca
 
     .line 207
     invoke-virtual {p1, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
@@ -621,7 +622,7 @@
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    const v0, 0x7f0902d3
+    const v0, 0x7f0902cc
 
     .line 117
     invoke-virtual {p1, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
@@ -725,7 +726,7 @@
     :goto_0
     if-eqz v0, :cond_1
 
-    const p0, 0x7f0901ad
+    const p0, 0x7f0901ac
 
     .line 285
     invoke-virtual {p1, p0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
@@ -741,7 +742,7 @@
     return-void
 
     :cond_1
-    const v0, 0x7f0901ac
+    const v0, 0x7f0901ab
 
     .line 290
     invoke-virtual {p1, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
@@ -804,7 +805,7 @@
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    const v0, 0x7f0902d4
+    const v0, 0x7f0902cd
 
     .line 197
     invoke-virtual {p1, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
@@ -865,7 +866,7 @@
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    const v0, 0x7f0902d5
+    const v0, 0x7f0902ce
 
     .line 107
     invoke-virtual {p1, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
@@ -926,7 +927,7 @@
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    const v0, 0x7f0902d6
+    const v0, 0x7f0902cf
 
     .line 160
     invoke-virtual {p1, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
@@ -987,7 +988,7 @@
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    const v0, 0x7f0902d7
+    const v0, 0x7f0902d0
 
     .line 137
     invoke-virtual {p1, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
@@ -1048,7 +1049,7 @@
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    const v0, 0x7f0902d8
+    const v0, 0x7f0902d1
 
     .line 127
     invoke-virtual {p1, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
@@ -1109,7 +1110,7 @@
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    const v0, 0x7f0902d9
+    const v0, 0x7f0902d2
 
     .line 82
     invoke-virtual {p1, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
@@ -1206,10 +1207,6 @@
     check-cast v4, Ljava/util/Map;
 
     sget-object v5, Ljp/co/sony/mc/camera/setting/CameraSettings;->DISTORTION_CORRECTION:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
-
-    const-string v6, "DISTORTION_CORRECTION"
-
-    invoke-static {v5, v6}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 314
     sget-object v6, Ljp/co/sony/mc/camera/setting/CameraSettings;->DISTORTION_CORRECTION:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
@@ -1311,10 +1308,6 @@
     .line 323
     sget-object v5, Ljp/co/sony/mc/camera/setting/CameraSettings;->BURST_FEEDBACK:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
 
-    const-string v6, "BURST_FEEDBACK"
-
-    invoke-static {v5, v6}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
-
     .line 324
     sget-object v6, Ljp/co/sony/mc/camera/setting/CameraSettings;->BURST_FEEDBACK:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
 
@@ -1405,10 +1398,6 @@
     .line 333
     sget-object v5, Ljp/co/sony/mc/camera/setting/CameraSettings;->HDR:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
 
-    const-string v6, "HDR"
-
-    invoke-static {v5, v6}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
-
     .line 334
     sget-object v6, Ljp/co/sony/mc/camera/setting/CameraSettings;->HDR:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
 
@@ -1485,10 +1474,6 @@
 
     .line 343
     sget-object v5, Ljp/co/sony/mc/camera/setting/CameraSettings;->BACK_SOFT_SKIN:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
-
-    const-string v6, "BACK_SOFT_SKIN"
-
-    invoke-static {v5, v6}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 344
     sget-object v6, Ljp/co/sony/mc/camera/setting/CameraSettings;->BACK_SOFT_SKIN:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
@@ -1580,10 +1565,6 @@
     .line 353
     sget-object v5, Ljp/co/sony/mc/camera/setting/CameraSettings;->FOCUS_FRAME_COLOR:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
 
-    const-string v6, "FOCUS_FRAME_COLOR"
-
-    invoke-static {v5, v6}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
-
     .line 354
     sget-object v6, Ljp/co/sony/mc/camera/setting/CameraSettings;->FOCUS_FRAME_COLOR:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
 
@@ -1660,10 +1641,6 @@
 
     .line 363
     sget-object v5, Ljp/co/sony/mc/camera/setting/CameraSettings;->PEAKING:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
-
-    const-string v6, "PEAKING"
-
-    invoke-static {v5, v6}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 364
     sget-object v6, Ljp/co/sony/mc/camera/setting/CameraSettings;->PEAKING:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
@@ -1755,10 +1732,6 @@
     .line 373
     sget-object v5, Ljp/co/sony/mc/camera/setting/CameraSettings;->PEAKING_COLOR:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
 
-    const-string v6, "PEAKING_COLOR"
-
-    invoke-static {v5, v6}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
-
     .line 374
     sget-object v6, Ljp/co/sony/mc/camera/setting/CameraSettings;->PEAKING_COLOR:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
 
@@ -1835,10 +1808,6 @@
 
     .line 383
     sget-object v5, Ljp/co/sony/mc/camera/setting/CameraSettings;->TOUCH_INTENTION:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
-
-    const-string v6, "TOUCH_INTENTION"
-
-    invoke-static {v5, v6}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 384
     sget-object v6, Ljp/co/sony/mc/camera/setting/CameraSettings;->TOUCH_INTENTION:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
@@ -1990,13 +1959,13 @@
 .end method
 
 .method public final setLens(Landroid/view/View;)V
-    .locals 8
+    .locals 9
 
     const-string v0, "layout"
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    const v0, 0x7f0902e2
+    const v0, 0x7f0902db
 
     .line 73
     invoke-virtual {p1, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
@@ -2016,37 +1985,37 @@
 
     iget-object v1, p0, Ljp/co/sony/mc/camera/view/memoryrecall/widget/MemoryRecallViewBindHelper;->holder:Ljp/co/sony/mc/camera/setting/CameraSettingsHolder;
 
-    invoke-virtual {v1}, Ljp/co/sony/mc/camera/setting/CameraSettingsHolder;->getCameraId()Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;
+    invoke-virtual {v1}, Ljp/co/sony/mc/camera/setting/CameraSettingsHolder;->getCapturingMode()Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
     move-result-object v1
 
-    const-string v7, "getCameraId(...)"
+    const-string v7, "getCapturingMode(...)"
 
     invoke-static {v1, v7}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 75
     iget-object v2, p0, Ljp/co/sony/mc/camera/view/memoryrecall/widget/MemoryRecallViewBindHelper;->holder:Ljp/co/sony/mc/camera/setting/CameraSettingsHolder;
 
-    invoke-virtual {v2}, Ljp/co/sony/mc/camera/setting/CameraSettingsHolder;->getBaseZoomRatio()F
+    invoke-virtual {v2}, Ljp/co/sony/mc/camera/setting/CameraSettingsHolder;->getCameraId()Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;
 
-    move-result v2
+    move-result-object v2
+
+    const-string v8, "getCameraId(...)"
+
+    invoke-static {v2, v8}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
 
     iget-object v3, p0, Ljp/co/sony/mc/camera/view/memoryrecall/widget/MemoryRecallViewBindHelper;->holder:Ljp/co/sony/mc/camera/setting/CameraSettingsHolder;
 
-    invoke-virtual {v3}, Ljp/co/sony/mc/camera/setting/CameraSettingsHolder;->getCapturingMode()Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
+    invoke-virtual {v3}, Ljp/co/sony/mc/camera/setting/CameraSettingsHolder;->getBaseZoomRatio()F
 
-    move-result-object v3
+    move-result v3
 
-    invoke-virtual {v3}, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->isProVideo()Z
-
-    move-result v4
+    const/4 v4, 0x0
 
     const/4 v5, 0x1
 
-    const/4 v3, 0x0
-
     .line 74
-    invoke-static/range {v0 .. v5}, Ljp/co/sony/mc/camera/util/capability/CameraSensorInfo;->getFocalLengthText(Landroid/content/Context;Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;FZZZ)Ljava/lang/String;
+    invoke-static/range {v0 .. v5}, Ljp/co/sony/mc/camera/util/capability/CameraSensorInfo;->getFocalLengthText(Landroid/content/Context;Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;FZZ)Ljava/lang/String;
 
     move-result-object v0
 
@@ -2064,7 +2033,7 @@
     .line 77
     iget-object v1, p0, Ljp/co/sony/mc/camera/view/memoryrecall/widget/MemoryRecallViewBindHelper;->holder:Ljp/co/sony/mc/camera/setting/CameraSettingsHolder;
 
-    invoke-virtual {v1}, Ljp/co/sony/mc/camera/setting/CameraSettingsHolder;->getCameraId()Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;
+    invoke-virtual {v1}, Ljp/co/sony/mc/camera/setting/CameraSettingsHolder;->getCapturingMode()Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
     move-result-object v1
 
@@ -2072,22 +2041,20 @@
 
     iget-object v2, p0, Ljp/co/sony/mc/camera/view/memoryrecall/widget/MemoryRecallViewBindHelper;->holder:Ljp/co/sony/mc/camera/setting/CameraSettingsHolder;
 
-    invoke-virtual {v2}, Ljp/co/sony/mc/camera/setting/CameraSettingsHolder;->getBaseZoomRatio()F
+    invoke-virtual {v2}, Ljp/co/sony/mc/camera/setting/CameraSettingsHolder;->getCameraId()Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;
 
-    move-result v2
+    move-result-object v2
+
+    invoke-static {v2, v8}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
 
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/memoryrecall/widget/MemoryRecallViewBindHelper;->holder:Ljp/co/sony/mc/camera/setting/CameraSettingsHolder;
 
-    invoke-virtual {p0}, Ljp/co/sony/mc/camera/setting/CameraSettingsHolder;->getCapturingMode()Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
-
-    move-result-object p0
-
-    invoke-virtual {p0}, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->isProVideo()Z
+    invoke-virtual {p0}, Ljp/co/sony/mc/camera/setting/CameraSettingsHolder;->getBaseZoomRatio()F
 
     move-result p0
 
     .line 76
-    invoke-static {v0, v1, v2, p0}, Ljp/co/sony/mc/camera/util/capability/CameraSensorInfo;->getFocalLengthContentDescription(Landroid/content/Context;Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;FZ)Ljava/lang/String;
+    invoke-static {v0, v1, v2, p0}, Ljp/co/sony/mc/camera/util/capability/CameraSensorInfo;->getFocalLengthContentDescription(Landroid/content/Context;Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;F)Ljava/lang/String;
 
     move-result-object p0
 
@@ -2105,7 +2072,7 @@
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    const v0, 0x7f0902e4
+    const v0, 0x7f0902dd
 
     .line 147
     invoke-virtual {p1, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
@@ -2219,7 +2186,7 @@
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    const v0, 0x7f0902e6
+    const v0, 0x7f0902df
 
     .line 183
     invoke-virtual {p1, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
@@ -2313,7 +2280,7 @@
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    const v0, 0x7f0902e7
+    const v0, 0x7f0902e0
 
     .line 101
     invoke-virtual {p1, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
@@ -2345,7 +2312,7 @@
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    const v0, 0x7f0902e8
+    const v0, 0x7f0902e1
 
     .line 60
     invoke-virtual {p1, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
@@ -2502,7 +2469,7 @@
     :goto_0
     const/16 v1, 0x8
 
-    const v2, 0x7f09050a
+    const v2, 0x7f0904f1
 
     if-eqz v0, :cond_1
 
@@ -2570,7 +2537,7 @@
     .line 258
     invoke-virtual {v0, v1}, Landroid/widget/LinearLayout;->setVisibility(I)V
 
-    const v0, 0x7f0902ef
+    const v0, 0x7f0902e8
 
     .line 265
     invoke-virtual {p1, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
@@ -2584,7 +2551,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f110100
+    const v2, 0x7f110101
 
     invoke-virtual {v1, v2}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -2643,7 +2610,7 @@
 
     move-result-object p0
 
-    const v0, 0x7f0902f0
+    const v0, 0x7f0902e9
 
     .line 277
     invoke-virtual {p1, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
@@ -2692,7 +2659,7 @@
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    const v0, 0x7f0902ea
+    const v0, 0x7f0902e3
 
     .line 170
     invoke-virtual {p1, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;

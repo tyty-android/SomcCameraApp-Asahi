@@ -115,10 +115,6 @@
 .method public final invoke(Ljava/lang/Object;)V
     .locals 1
 
-    const-string/jumbo v0, "state"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
     .line 1290
     iget-object v0, p0, Landroidx/compose/runtime/snapshots/NestedReadonlySnapshot$readObserver$1$1$1;->$readObserver:Lkotlin/jvm/functions/Function1;
 

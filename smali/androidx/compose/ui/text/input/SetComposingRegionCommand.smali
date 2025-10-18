@@ -81,10 +81,6 @@
 .method public applyTo(Landroidx/compose/ui/text/input/EditingBuffer;)V
     .locals 3
 
-    const-string v0, "buffer"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
     .line 123
     invoke-virtual {p1}, Landroidx/compose/ui/text/input/EditingBuffer;->hasComposition$ui_text_release()Z
 

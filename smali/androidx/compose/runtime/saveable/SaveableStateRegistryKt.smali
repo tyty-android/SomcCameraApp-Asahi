@@ -85,10 +85,6 @@
         }
     .end annotation
 
-    const-string v0, "canBeSaved"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
     .line 86
     new-instance v0, Landroidx/compose/runtime/saveable/SaveableStateRegistryImpl;
 

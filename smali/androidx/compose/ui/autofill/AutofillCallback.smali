@@ -36,6 +36,8 @@
 
 
 # static fields
+.field public static final $stable:I
+
 .field public static final INSTANCE:Landroidx/compose/ui/autofill/AutofillCallback;
 
 
@@ -64,11 +66,7 @@
 
 # virtual methods
 .method public onAutofillEvent(Landroid/view/View;II)V
-    .locals 1
-
-    const-string/jumbo v0, "view"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+    .locals 0
 
     .line 36
     invoke-super {p0, p1, p2, p3}, Landroid/view/autofill/AutofillManager$AutofillCallback;->onAutofillEvent(Landroid/view/View;II)V
@@ -116,11 +114,7 @@
 .end method
 
 .method public final register(Landroidx/compose/ui/autofill/AndroidAutofill;)V
-    .locals 1
-
-    const-string v0, "autofill"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+    .locals 0
 
     .line 65
     invoke-virtual {p1}, Landroidx/compose/ui/autofill/AndroidAutofill;->getAutofillManager()Landroid/view/autofill/AutofillManager;
@@ -135,11 +129,7 @@
 .end method
 
 .method public final unregister(Landroidx/compose/ui/autofill/AndroidAutofill;)V
-    .locals 1
-
-    const-string v0, "autofill"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+    .locals 0
 
     .line 74
     invoke-virtual {p1}, Landroidx/compose/ui/autofill/AndroidAutofill;->getAutofillManager()Landroid/view/autofill/AutofillManager;

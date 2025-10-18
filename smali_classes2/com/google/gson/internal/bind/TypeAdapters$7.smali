@@ -26,7 +26,7 @@
 .method constructor <init>()V
     .locals 0
 
-    .line 241
+    .line 267
     invoke-direct {p0}, Lcom/google/gson/TypeAdapter;-><init>()V
 
     return-void
@@ -42,7 +42,7 @@
         }
     .end annotation
 
-    .line 244
+    .line 270
     invoke-virtual {p1}, Lcom/google/gson/stream/JsonReader;->peek()Lcom/google/gson/stream/JsonToken;
 
     move-result-object p0
@@ -51,14 +51,14 @@
 
     if-ne p0, v0, :cond_0
 
-    .line 245
+    .line 271
     invoke-virtual {p1}, Lcom/google/gson/stream/JsonReader;->nextNull()V
 
     const/4 p0, 0x0
 
     return-object p0
 
-    .line 249
+    .line 275
     :cond_0
     :try_start_0
     invoke-virtual {p1}, Lcom/google/gson/stream/JsonReader;->nextInt()I
@@ -76,7 +76,7 @@
     :catch_0
     move-exception p0
 
-    .line 251
+    .line 277
     new-instance p1, Lcom/google/gson/JsonSyntaxException;
 
     invoke-direct {p1, p0}, Lcom/google/gson/JsonSyntaxException;-><init>(Ljava/lang/Throwable;)V
@@ -92,7 +92,7 @@
         }
     .end annotation
 
-    .line 241
+    .line 267
     invoke-virtual {p0, p1}, Lcom/google/gson/internal/bind/TypeAdapters$7;->read(Lcom/google/gson/stream/JsonReader;)Ljava/lang/Number;
 
     move-result-object p0
@@ -110,12 +110,12 @@
 
     if-nez p2, :cond_0
 
-    .line 257
+    .line 284
     invoke-virtual {p1}, Lcom/google/gson/stream/JsonWriter;->nullValue()Lcom/google/gson/stream/JsonWriter;
 
     goto :goto_0
 
-    .line 259
+    .line 286
     :cond_0
     invoke-virtual {p2}, Ljava/lang/Number;->intValue()I
 
@@ -137,7 +137,7 @@
         }
     .end annotation
 
-    .line 241
+    .line 267
     check-cast p2, Ljava/lang/Number;
 
     invoke-virtual {p0, p1, p2}, Lcom/google/gson/internal/bind/TypeAdapters$7;->write(Lcom/google/gson/stream/JsonWriter;Ljava/lang/Number;)V

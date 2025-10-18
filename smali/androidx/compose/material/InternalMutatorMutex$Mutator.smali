@@ -54,15 +54,7 @@
 
 # direct methods
 .method public constructor <init>(Landroidx/compose/foundation/MutatePriority;Lkotlinx/coroutines/Job;)V
-    .locals 1
-
-    const-string v0, "priority"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string v0, "job"
-
-    invoke-static {p2, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+    .locals 0
 
     .line 53
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -77,11 +69,7 @@
 
 # virtual methods
 .method public final canInterrupt(Landroidx/compose/material/InternalMutatorMutex$Mutator;)Z
-    .locals 1
-
-    const-string v0, "other"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+    .locals 0
 
     .line 54
     iget-object p0, p0, Landroidx/compose/material/InternalMutatorMutex$Mutator;->priority:Landroidx/compose/foundation/MutatePriority;

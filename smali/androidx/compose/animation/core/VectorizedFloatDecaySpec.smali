@@ -95,19 +95,15 @@
 
 # direct methods
 .method public constructor <init>(Landroidx/compose/animation/core/FloatDecayAnimationSpec;)V
-    .locals 1
-
-    const-string v0, "floatDecaySpec"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 131
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    .locals 0
 
     .line 132
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 133
     iput-object p1, p0, Landroidx/compose/animation/core/VectorizedFloatDecaySpec;->floatDecaySpec:Landroidx/compose/animation/core/FloatDecayAnimationSpec;
 
-    .line 137
+    .line 138
     invoke-interface {p1}, Landroidx/compose/animation/core/FloatDecayAnimationSpec;->getAbsVelocityThreshold()F
 
     move-result p1
@@ -122,7 +118,7 @@
 .method public getAbsVelocityThreshold()F
     .locals 0
 
-    .line 137
+    .line 138
     iget p0, p0, Landroidx/compose/animation/core/VectorizedFloatDecaySpec;->absVelocityThreshold:F
 
     return p0
@@ -136,27 +132,19 @@
         }
     .end annotation
 
-    const-string v0, "initialValue"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string v0, "initialVelocity"
-
-    invoke-static {p2, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 155
+    .line 156
     iget-object v0, p0, Landroidx/compose/animation/core/VectorizedFloatDecaySpec;->velocityVector:Landroidx/compose/animation/core/AnimationVector;
 
     if-nez v0, :cond_0
 
-    .line 156
+    .line 157
     invoke-static {p1}, Landroidx/compose/animation/core/AnimationVectorsKt;->newInstance(Landroidx/compose/animation/core/AnimationVector;)Landroidx/compose/animation/core/AnimationVector;
 
     move-result-object v0
 
     iput-object v0, p0, Landroidx/compose/animation/core/VectorizedFloatDecaySpec;->velocityVector:Landroidx/compose/animation/core/AnimationVector;
 
-    .line 158
+    .line 159
     :cond_0
     iget-object v0, p0, Landroidx/compose/animation/core/VectorizedFloatDecaySpec;->velocityVector:Landroidx/compose/animation/core/AnimationVector;
 
@@ -180,7 +168,7 @@
     :goto_0
     if-ge v3, v0, :cond_2
 
-    .line 161
+    .line 162
     iget-object v4, p0, Landroidx/compose/animation/core/VectorizedFloatDecaySpec;->floatDecaySpec:Landroidx/compose/animation/core/FloatDecayAnimationSpec;
 
     invoke-virtual {p1, v3}, Landroidx/compose/animation/core/AnimationVector;->get$animation_core_release(I)F
@@ -210,7 +198,7 @@
 .method public final getFloatDecaySpec()Landroidx/compose/animation/core/FloatDecayAnimationSpec;
     .locals 0
 
-    .line 132
+    .line 133
     iget-object p0, p0, Landroidx/compose/animation/core/VectorizedFloatDecaySpec;->floatDecaySpec:Landroidx/compose/animation/core/FloatDecayAnimationSpec;
 
     return-object p0
@@ -224,27 +212,19 @@
         }
     .end annotation
 
-    const-string v0, "initialValue"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string v0, "initialVelocity"
-
-    invoke-static {p2, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 182
+    .line 183
     iget-object v0, p0, Landroidx/compose/animation/core/VectorizedFloatDecaySpec;->targetVector:Landroidx/compose/animation/core/AnimationVector;
 
     if-nez v0, :cond_0
 
-    .line 183
+    .line 184
     invoke-static {p1}, Landroidx/compose/animation/core/AnimationVectorsKt;->newInstance(Landroidx/compose/animation/core/AnimationVector;)Landroidx/compose/animation/core/AnimationVector;
 
     move-result-object v0
 
     iput-object v0, p0, Landroidx/compose/animation/core/VectorizedFloatDecaySpec;->targetVector:Landroidx/compose/animation/core/AnimationVector;
 
-    .line 185
+    .line 186
     :cond_0
     iget-object v0, p0, Landroidx/compose/animation/core/VectorizedFloatDecaySpec;->targetVector:Landroidx/compose/animation/core/AnimationVector;
 
@@ -268,7 +248,7 @@
     :goto_0
     if-ge v3, v0, :cond_3
 
-    .line 186
+    .line 187
     iget-object v4, p0, Landroidx/compose/animation/core/VectorizedFloatDecaySpec;->targetVector:Landroidx/compose/animation/core/AnimationVector;
 
     if-nez v4, :cond_2
@@ -280,17 +260,17 @@
     :cond_2
     iget-object v5, p0, Landroidx/compose/animation/core/VectorizedFloatDecaySpec;->floatDecaySpec:Landroidx/compose/animation/core/FloatDecayAnimationSpec;
 
-    .line 187
+    .line 188
     invoke-virtual {p1, v3}, Landroidx/compose/animation/core/AnimationVector;->get$animation_core_release(I)F
 
     move-result v6
 
-    .line 188
+    .line 189
     invoke-virtual {p2, v3}, Landroidx/compose/animation/core/AnimationVector;->get$animation_core_release(I)F
 
     move-result v7
 
-    .line 186
+    .line 187
     invoke-interface {v5, v6, v7}, Landroidx/compose/animation/core/FloatDecayAnimationSpec;->getTargetValue(FF)F
 
     move-result v5
@@ -301,7 +281,7 @@
 
     goto :goto_0
 
-    .line 191
+    .line 192
     :cond_3
     iget-object p0, p0, Landroidx/compose/animation/core/VectorizedFloatDecaySpec;->targetVector:Landroidx/compose/animation/core/AnimationVector;
 
@@ -326,27 +306,19 @@
         }
     .end annotation
 
-    const-string v0, "initialValue"
-
-    invoke-static {p3, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string v0, "initialVelocity"
-
-    invoke-static {p4, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 140
+    .line 141
     iget-object v0, p0, Landroidx/compose/animation/core/VectorizedFloatDecaySpec;->valueVector:Landroidx/compose/animation/core/AnimationVector;
 
     if-nez v0, :cond_0
 
-    .line 141
+    .line 142
     invoke-static {p3}, Landroidx/compose/animation/core/AnimationVectorsKt;->newInstance(Landroidx/compose/animation/core/AnimationVector;)Landroidx/compose/animation/core/AnimationVector;
 
     move-result-object v0
 
     iput-object v0, p0, Landroidx/compose/animation/core/VectorizedFloatDecaySpec;->valueVector:Landroidx/compose/animation/core/AnimationVector;
 
-    .line 143
+    .line 144
     :cond_0
     iget-object v0, p0, Landroidx/compose/animation/core/VectorizedFloatDecaySpec;->valueVector:Landroidx/compose/animation/core/AnimationVector;
 
@@ -370,7 +342,7 @@
     :goto_0
     if-ge v3, v0, :cond_3
 
-    .line 144
+    .line 145
     iget-object v4, p0, Landroidx/compose/animation/core/VectorizedFloatDecaySpec;->valueVector:Landroidx/compose/animation/core/AnimationVector;
 
     if-nez v4, :cond_2
@@ -382,17 +354,17 @@
     :cond_2
     iget-object v5, p0, Landroidx/compose/animation/core/VectorizedFloatDecaySpec;->floatDecaySpec:Landroidx/compose/animation/core/FloatDecayAnimationSpec;
 
-    .line 146
+    .line 147
     invoke-virtual {p3, v3}, Landroidx/compose/animation/core/AnimationVector;->get$animation_core_release(I)F
 
     move-result v6
 
-    .line 147
+    .line 148
     invoke-virtual {p4, v3}, Landroidx/compose/animation/core/AnimationVector;->get$animation_core_release(I)F
 
     move-result v7
 
-    .line 144
+    .line 145
     invoke-interface {v5, p1, p2, v6, v7}, Landroidx/compose/animation/core/FloatDecayAnimationSpec;->getValueFromNanos(JFF)F
 
     move-result v5
@@ -403,7 +375,7 @@
 
     goto :goto_0
 
-    .line 150
+    .line 151
     :cond_3
     iget-object p0, p0, Landroidx/compose/animation/core/VectorizedFloatDecaySpec;->valueVector:Landroidx/compose/animation/core/AnimationVector;
 
@@ -428,27 +400,19 @@
         }
     .end annotation
 
-    const-string v0, "initialValue"
-
-    invoke-static {p3, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string v0, "initialVelocity"
-
-    invoke-static {p4, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 168
+    .line 169
     iget-object v0, p0, Landroidx/compose/animation/core/VectorizedFloatDecaySpec;->velocityVector:Landroidx/compose/animation/core/AnimationVector;
 
     if-nez v0, :cond_0
 
-    .line 169
+    .line 170
     invoke-static {p3}, Landroidx/compose/animation/core/AnimationVectorsKt;->newInstance(Landroidx/compose/animation/core/AnimationVector;)Landroidx/compose/animation/core/AnimationVector;
 
     move-result-object v0
 
     iput-object v0, p0, Landroidx/compose/animation/core/VectorizedFloatDecaySpec;->velocityVector:Landroidx/compose/animation/core/AnimationVector;
 
-    .line 171
+    .line 172
     :cond_0
     iget-object v0, p0, Landroidx/compose/animation/core/VectorizedFloatDecaySpec;->velocityVector:Landroidx/compose/animation/core/AnimationVector;
 
@@ -472,7 +436,7 @@
     :goto_0
     if-ge v3, v0, :cond_3
 
-    .line 172
+    .line 173
     iget-object v4, p0, Landroidx/compose/animation/core/VectorizedFloatDecaySpec;->velocityVector:Landroidx/compose/animation/core/AnimationVector;
 
     if-nez v4, :cond_2
@@ -484,17 +448,17 @@
     :cond_2
     iget-object v5, p0, Landroidx/compose/animation/core/VectorizedFloatDecaySpec;->floatDecaySpec:Landroidx/compose/animation/core/FloatDecayAnimationSpec;
 
-    .line 174
+    .line 175
     invoke-virtual {p3, v3}, Landroidx/compose/animation/core/AnimationVector;->get$animation_core_release(I)F
 
     move-result v6
 
-    .line 175
+    .line 176
     invoke-virtual {p4, v3}, Landroidx/compose/animation/core/AnimationVector;->get$animation_core_release(I)F
 
     move-result v7
 
-    .line 172
+    .line 173
     invoke-interface {v5, p1, p2, v6, v7}, Landroidx/compose/animation/core/FloatDecayAnimationSpec;->getVelocityFromNanos(JFF)F
 
     move-result v5
@@ -505,7 +469,7 @@
 
     goto :goto_0
 
-    .line 178
+    .line 179
     :cond_3
     iget-object p0, p0, Landroidx/compose/animation/core/VectorizedFloatDecaySpec;->velocityVector:Landroidx/compose/animation/core/AnimationVector;
 

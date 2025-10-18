@@ -112,16 +112,16 @@
     .line 178
     iget-object p1, p0, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog;->mWindow:Landroid/view/Window;
 
-    const v0, 0x7f060392
+    const v0, 0x7f0603aa
 
     invoke-virtual {p1, v0}, Landroid/view/Window;->setBackgroundDrawableResource(I)V
 
-    const p1, 0x7f120514
+    const p1, 0x7f12050e
 
     .line 180
     iput p1, p0, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog;->mAnimationsForLand:I
 
-    const p1, 0x7f120515
+    const p1, 0x7f12050f
 
     .line 182
     iput p1, p0, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog;->mAnimationsForPort:I
@@ -785,7 +785,7 @@
 .end method
 
 .method public cancel()V
-    .locals 2
+    .locals 3
 
     .line 536
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog;->mDialog:Landroid/app/AlertDialog;
@@ -797,25 +797,29 @@
 
     if-eqz v0, :cond_0
 
-    new-instance v0, Ljava/lang/StringBuilder;
+    const/4 v0, 0x1
 
-    const-string v1, "Cancel Dialog: "
+    new-array v0, v0, [Ljava/lang/String;
 
-    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+    new-instance v1, Ljava/lang/StringBuilder;
 
-    iget-object v1, p0, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog;->mDialog:Landroid/app/AlertDialog;
+    const-string v2, "Cancel Dialog: "
 
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+    invoke-direct {v1, v2}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
-    move-result-object v0
+    iget-object v2, p0, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog;->mDialog:Landroid/app/AlertDialog;
 
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
-    move-result-object v0
+    move-result-object v1
 
-    filled-new-array {v0}, [Ljava/lang/String;
+    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    move-result-object v0
+    move-result-object v1
+
+    const/4 v2, 0x0
+
+    aput-object v1, v0, v2
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
@@ -830,7 +834,7 @@
 .end method
 
 .method public dismiss()V
-    .locals 2
+    .locals 3
 
     .line 529
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog;->mDialog:Landroid/app/AlertDialog;
@@ -842,25 +846,29 @@
 
     if-eqz v0, :cond_0
 
-    new-instance v0, Ljava/lang/StringBuilder;
+    const/4 v0, 0x1
 
-    const-string v1, "Dismiss Dialog: "
+    new-array v0, v0, [Ljava/lang/String;
 
-    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+    new-instance v1, Ljava/lang/StringBuilder;
 
-    iget-object v1, p0, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog;->mDialog:Landroid/app/AlertDialog;
+    const-string v2, "Dismiss Dialog: "
 
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+    invoke-direct {v1, v2}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
-    move-result-object v0
+    iget-object v2, p0, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog;->mDialog:Landroid/app/AlertDialog;
 
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
-    move-result-object v0
+    move-result-object v1
 
-    filled-new-array {v0}, [Ljava/lang/String;
+    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    move-result-object v0
+    move-result-object v1
+
+    const/4 v2, 0x0
+
+    aput-object v1, v0, v2
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
@@ -875,7 +883,7 @@
 .end method
 
 .method public hide()V
-    .locals 2
+    .locals 3
 
     .line 522
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog;->mDialog:Landroid/app/AlertDialog;
@@ -887,25 +895,29 @@
 
     if-eqz v0, :cond_0
 
-    new-instance v0, Ljava/lang/StringBuilder;
+    const/4 v0, 0x1
 
-    const-string v1, "Hide Dialog: "
+    new-array v0, v0, [Ljava/lang/String;
 
-    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+    new-instance v1, Ljava/lang/StringBuilder;
 
-    iget-object v1, p0, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog;->mDialog:Landroid/app/AlertDialog;
+    const-string v2, "Hide Dialog: "
 
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+    invoke-direct {v1, v2}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
-    move-result-object v0
+    iget-object v2, p0, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog;->mDialog:Landroid/app/AlertDialog;
 
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
-    move-result-object v0
+    move-result-object v1
 
-    filled-new-array {v0}, [Ljava/lang/String;
+    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    move-result-object v0
+    move-result-object v1
+
+    const/4 v2, 0x0
+
+    aput-object v1, v0, v2
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
@@ -1314,7 +1326,7 @@
 .end method
 
 .method public show()V
-    .locals 2
+    .locals 3
 
     .line 511
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog;->mDialog:Landroid/app/AlertDialog;
@@ -1326,25 +1338,29 @@
 
     if-eqz v0, :cond_0
 
-    new-instance v0, Ljava/lang/StringBuilder;
+    const/4 v0, 0x1
 
-    const-string v1, "Show Dialog: "
+    new-array v0, v0, [Ljava/lang/String;
 
-    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+    new-instance v1, Ljava/lang/StringBuilder;
 
-    iget-object v1, p0, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog;->mDialog:Landroid/app/AlertDialog;
+    const-string v2, "Show Dialog: "
 
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+    invoke-direct {v1, v2}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
-    move-result-object v0
+    iget-object v2, p0, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog;->mDialog:Landroid/app/AlertDialog;
 
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
-    move-result-object v0
+    move-result-object v1
 
-    filled-new-array {v0}, [Ljava/lang/String;
+    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    move-result-object v0
+    move-result-object v1
+
+    const/4 v2, 0x0
+
+    aput-object v1, v0, v2
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 

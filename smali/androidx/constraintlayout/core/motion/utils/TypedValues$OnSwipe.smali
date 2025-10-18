@@ -66,67 +66,113 @@
 .method static constructor <clinit>()V
     .locals 8
 
+    const/16 v0, 0x8
+
     .line 812
-    const-string v6, "neverCompleteToStart"
+    new-array v0, v0, [Ljava/lang/String;
 
-    const-string v7, "neverCompleteToEnd"
+    const-string v1, "autoComplete"
 
-    const-string v0, "autoComplete"
+    const/4 v2, 0x0
+
+    aput-object v1, v0, v2
 
     const-string v1, "autoCompleteToStart"
 
-    const-string v2, "autoCompleteToEnd"
+    const/4 v3, 0x1
 
-    const-string/jumbo v3, "stop"
+    aput-object v1, v0, v3
 
-    const-string v4, "decelerate"
+    const-string v1, "autoCompleteToEnd"
 
-    const-string v5, "decelerateAndComplete"
+    const/4 v4, 0x2
 
-    filled-new-array/range {v0 .. v7}, [Ljava/lang/String;
+    aput-object v1, v0, v4
 
-    move-result-object v0
+    const-string/jumbo v1, "stop"
+
+    const/4 v5, 0x3
+
+    aput-object v1, v0, v5
+
+    const-string v1, "decelerate"
+
+    const/4 v6, 0x4
+
+    aput-object v1, v0, v6
+
+    const/4 v1, 0x5
+
+    const-string v7, "decelerateAndComplete"
+
+    aput-object v7, v0, v1
+
+    const/4 v1, 0x6
+
+    const-string v7, "neverCompleteToStart"
+
+    aput-object v7, v0, v1
+
+    const/4 v1, 0x7
+
+    const-string v7, "neverCompleteToEnd"
+
+    aput-object v7, v0, v1
 
     sput-object v0, Landroidx/constraintlayout/core/motion/utils/TypedValues$OnSwipe;->ON_TOUCH_UP_ENUM:[Ljava/lang/String;
 
     .line 823
-    const-string v0, "bounceEnd"
+    new-array v0, v6, [Ljava/lang/String;
+
+    const-string v1, "overshoot"
+
+    aput-object v1, v0, v2
+
+    const-string v1, "bounceStart"
+
+    aput-object v1, v0, v3
+
+    const-string v1, "bounceEnd"
+
+    aput-object v1, v0, v4
 
     const-string v1, "bounceBoth"
 
-    const-string v2, "overshoot"
-
-    const-string v3, "bounceStart"
-
-    filled-new-array {v2, v3, v0, v1}, [Ljava/lang/String;
-
-    move-result-object v0
+    aput-object v1, v0, v5
 
     sput-object v0, Landroidx/constraintlayout/core/motion/utils/TypedValues$OnSwipe;->SPRING_BOUNDARY_ENUM:[Ljava/lang/String;
 
     .line 829
-    const-string v0, "continuousVelocity"
+    new-array v0, v4, [Ljava/lang/String;
+
+    const-string v1, "continuousVelocity"
+
+    aput-object v1, v0, v2
 
     const-string/jumbo v1, "spring"
 
-    filled-new-array {v0, v1}, [Ljava/lang/String;
-
-    move-result-object v0
+    aput-object v1, v0, v3
 
     sput-object v0, Landroidx/constraintlayout/core/motion/utils/TypedValues$OnSwipe;->AUTOCOMPLETE_MODE_ENUM:[Ljava/lang/String;
 
     .line 834
-    const-string v0, "disableScroll"
+    new-array v0, v6, [Ljava/lang/String;
+
+    const-string v1, "none"
+
+    aput-object v1, v0, v2
+
+    const-string v1, "disablePostScroll"
+
+    aput-object v1, v0, v3
+
+    const-string v1, "disableScroll"
+
+    aput-object v1, v0, v4
 
     const-string/jumbo v1, "supportScrollUp"
 
-    const-string v2, "none"
-
-    const-string v3, "disablePostScroll"
-
-    filled-new-array {v2, v3, v0, v1}, [Ljava/lang/String;
-
-    move-result-object v0
+    aput-object v1, v0, v5
 
     sput-object v0, Landroidx/constraintlayout/core/motion/utils/TypedValues$OnSwipe;->NESTED_SCROLL_FLAGS_ENUM:[Ljava/lang/String;
 

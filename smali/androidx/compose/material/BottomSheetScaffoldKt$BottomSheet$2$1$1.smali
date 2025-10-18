@@ -53,7 +53,7 @@
     f = "BottomSheetScaffold.kt"
     i = {}
     l = {
-        0x231
+        0x27c
     }
     m = "invokeSuspend"
     n = {}
@@ -167,7 +167,7 @@
 
     move-result-object v0
 
-    .line 65535
+    .line 636
     iget v1, p0, Landroidx/compose/material/BottomSheetScaffoldKt$BottomSheet$2$1$1;->label:I
 
     const/4 v2, 0x1
@@ -192,7 +192,6 @@
     :cond_1
     invoke-static {p1}, Lkotlin/ResultKt;->throwOnFailure(Ljava/lang/Object;)V
 
-    .line 561
     iget-object p1, p0, Landroidx/compose/material/BottomSheetScaffoldKt$BottomSheet$2$1$1;->$state:Landroidx/compose/material/BottomSheetState;
 
     move-object v1, p0

@@ -79,6 +79,10 @@
 .end annotation
 
 
+# static fields
+.field public static final $stable:I = 0x8
+
+
 # instance fields
 .field private final entries:Landroidx/compose/runtime/external/kotlinx/collections/immutable/ImmutableSet;
     .annotation system Ldalvik/annotation/Signature;
@@ -119,6 +123,12 @@
 
 
 # direct methods
+.method static constructor <clinit>()V
+    .locals 0
+
+    return-void
+.end method
+
 .method public constructor <init>(Ljava/util/Map;)V
     .locals 2
     .annotation system Ldalvik/annotation/Signature;
@@ -128,10 +138,6 @@
             "TK;+TV;>;)V"
         }
     .end annotation
-
-    const-string v0, "impl"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 36
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V

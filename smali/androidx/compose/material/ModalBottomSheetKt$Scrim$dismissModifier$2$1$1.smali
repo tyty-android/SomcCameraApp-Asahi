@@ -83,7 +83,7 @@
 .method public final invoke()Ljava/lang/Boolean;
     .locals 0
 
-    .line 711
+    .line 725
     iget-object p0, p0, Landroidx/compose/material/ModalBottomSheetKt$Scrim$dismissModifier$2$1$1;->$onDismiss:Lkotlin/jvm/functions/Function0;
 
     invoke-interface {p0}, Lkotlin/jvm/functions/Function0;->invoke()Ljava/lang/Object;
@@ -100,7 +100,7 @@
 .method public bridge synthetic invoke()Ljava/lang/Object;
     .locals 0
 
-    .line 711
+    .line 725
     invoke-virtual {p0}, Landroidx/compose/material/ModalBottomSheetKt$Scrim$dismissModifier$2$1$1;->invoke()Ljava/lang/Boolean;
 
     move-result-object p0

@@ -51,7 +51,7 @@
     f = "FontListFontFamilyTypefaceAdapter.kt"
     i = {}
     l = {
-        0x69
+        0x6d
     }
     m = "invokeSuspend"
     n = {}
@@ -167,7 +167,7 @@
 
     move-result-object v0
 
-    .line 103
+    .line 107
     iget v1, p0, Landroidx/compose/ui/text/font/FontListFontFamilyTypefaceAdapter$preload$3$2$1$1;->label:I
 
     const-string v2, "Unable to load font "
@@ -202,7 +202,7 @@
     :cond_1
     invoke-static {p1}, Lkotlin/ResultKt;->throwOnFailure(Ljava/lang/Object;)V
 
-    .line 105
+    .line 109
     :try_start_1
     new-instance p1, Landroidx/compose/ui/text/font/FontListFontFamilyTypefaceAdapter$preload$3$2$1$1$1;
 
@@ -240,7 +240,7 @@
 
     return-object p1
 
-    .line 110
+    .line 114
     :cond_3
     new-instance p1, Ljava/lang/IllegalStateException;
 
@@ -262,7 +262,7 @@
 
     throw p1
 
-    .line 109
+    .line 113
     :goto_1
     new-instance v0, Ljava/lang/IllegalStateException;
 

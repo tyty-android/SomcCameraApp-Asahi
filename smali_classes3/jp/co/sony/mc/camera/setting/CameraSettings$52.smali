@@ -21,7 +21,7 @@
 .method constructor <init>()V
     .locals 0
 
-    .line 973
+    .line 1026
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -42,11 +42,11 @@
         }
     .end annotation
 
-    .line 977
+    .line 1030
     check-cast p1, Ljp/co/sony/mc/camera/setting/CameraSettings;
 
-    .line 978
-    invoke-static {p1}, Ljp/co/sony/mc/camera/setting/CameraSettings;->-$$Nest$mgetSurfaceSize(Ljp/co/sony/mc/camera/setting/CameraSettings;)Landroid/util/Size;
+    .line 1031
+    invoke-static {p1}, Ljp/co/sony/mc/camera/setting/CameraSettings;->-$$Nest$mgetPreviewRect(Ljp/co/sony/mc/camera/setting/CameraSettings;)Landroid/graphics/Rect;
 
     move-result-object p0
 

@@ -1049,14 +1049,18 @@
 .end method
 
 .method public setPerson(Landroidx/core/app/Person;)Landroidx/core/content/pm/ShortcutInfoCompat$Builder;
-    .locals 0
+    .locals 2
+
+    const/4 v0, 0x1
 
     .line 779
-    filled-new-array {p1}, [Landroidx/core/app/Person;
+    new-array v0, v0, [Landroidx/core/app/Person;
 
-    move-result-object p1
+    const/4 v1, 0x0
 
-    invoke-virtual {p0, p1}, Landroidx/core/content/pm/ShortcutInfoCompat$Builder;->setPersons([Landroidx/core/app/Person;)Landroidx/core/content/pm/ShortcutInfoCompat$Builder;
+    aput-object p1, v0, v1
+
+    invoke-virtual {p0, v0}, Landroidx/core/content/pm/ShortcutInfoCompat$Builder;->setPersons([Landroidx/core/app/Person;)Landroidx/core/content/pm/ShortcutInfoCompat$Builder;
 
     move-result-object p0
 

@@ -100,22 +100,18 @@
 .end method
 
 .method public constructor <init>(IILandroidx/compose/animation/core/Easing;)V
-    .locals 1
+    .locals 0
 
-    const-string v0, "easing"
-
-    invoke-static {p3, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 90
+    .line 95
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 92
+    .line 97
     iput p1, p0, Landroidx/compose/animation/core/TweenSpec;->durationMillis:I
 
-    .line 93
+    .line 98
     iput p2, p0, Landroidx/compose/animation/core/TweenSpec;->delay:I
 
-    .line 94
+    .line 99
     iput-object p3, p0, Landroidx/compose/animation/core/TweenSpec;->easing:Landroidx/compose/animation/core/Easing;
 
     return-void
@@ -142,12 +138,12 @@
 
     if-eqz p4, :cond_2
 
-    .line 94
+    .line 99
     invoke-static {}, Landroidx/compose/animation/core/EasingKt;->getFastOutSlowInEasing()Landroidx/compose/animation/core/Easing;
 
     move-result-object p3
 
-    .line 91
+    .line 96
     :cond_2
     invoke-direct {p0, p1, p2, p3}, Landroidx/compose/animation/core/TweenSpec;-><init>(IILandroidx/compose/animation/core/Easing;)V
 
@@ -159,14 +155,14 @@
 .method public equals(Ljava/lang/Object;)Z
     .locals 3
 
-    .line 101
+    .line 106
     instance-of v0, p1, Landroidx/compose/animation/core/TweenSpec;
 
     const/4 v1, 0x0
 
     if-eqz v0, :cond_0
 
-    .line 102
+    .line 107
     check-cast p1, Landroidx/compose/animation/core/TweenSpec;
 
     iget v0, p1, Landroidx/compose/animation/core/TweenSpec;->durationMillis:I
@@ -175,14 +171,14 @@
 
     if-ne v0, v2, :cond_0
 
-    .line 103
+    .line 108
     iget v0, p1, Landroidx/compose/animation/core/TweenSpec;->delay:I
 
     iget v2, p0, Landroidx/compose/animation/core/TweenSpec;->delay:I
 
     if-ne v0, v2, :cond_0
 
-    .line 104
+    .line 109
     iget-object p1, p1, Landroidx/compose/animation/core/TweenSpec;->easing:Landroidx/compose/animation/core/Easing;
 
     iget-object p0, p0, Landroidx/compose/animation/core/TweenSpec;->easing:Landroidx/compose/animation/core/Easing;
@@ -202,7 +198,7 @@
 .method public final getDelay()I
     .locals 0
 
-    .line 93
+    .line 98
     iget p0, p0, Landroidx/compose/animation/core/TweenSpec;->delay:I
 
     return p0
@@ -211,7 +207,7 @@
 .method public final getDurationMillis()I
     .locals 0
 
-    .line 92
+    .line 97
     iget p0, p0, Landroidx/compose/animation/core/TweenSpec;->durationMillis:I
 
     return p0
@@ -220,7 +216,7 @@
 .method public final getEasing()Landroidx/compose/animation/core/Easing;
     .locals 0
 
-    .line 94
+    .line 99
     iget-object p0, p0, Landroidx/compose/animation/core/TweenSpec;->easing:Landroidx/compose/animation/core/Easing;
 
     return-object p0
@@ -229,7 +225,7 @@
 .method public hashCode()I
     .locals 2
 
-    .line 110
+    .line 115
     iget v0, p0, Landroidx/compose/animation/core/TweenSpec;->durationMillis:I
 
     mul-int/lit8 v0, v0, 0x1f
@@ -254,7 +250,7 @@
 .method public bridge synthetic vectorize(Landroidx/compose/animation/core/TwoWayConverter;)Landroidx/compose/animation/core/VectorizedAnimationSpec;
     .locals 0
 
-    .line 90
+    .line 95
     invoke-virtual {p0, p1}, Landroidx/compose/animation/core/TweenSpec;->vectorize(Landroidx/compose/animation/core/TwoWayConverter;)Landroidx/compose/animation/core/VectorizedTweenSpec;
 
     move-result-object p0
@@ -267,7 +263,7 @@
 .method public bridge synthetic vectorize(Landroidx/compose/animation/core/TwoWayConverter;)Landroidx/compose/animation/core/VectorizedDurationBasedAnimationSpec;
     .locals 0
 
-    .line 90
+    .line 95
     invoke-virtual {p0, p1}, Landroidx/compose/animation/core/TweenSpec;->vectorize(Landroidx/compose/animation/core/TwoWayConverter;)Landroidx/compose/animation/core/VectorizedTweenSpec;
 
     move-result-object p0
@@ -280,7 +276,7 @@
 .method public bridge synthetic vectorize(Landroidx/compose/animation/core/TwoWayConverter;)Landroidx/compose/animation/core/VectorizedFiniteAnimationSpec;
     .locals 0
 
-    .line 90
+    .line 95
     invoke-virtual {p0, p1}, Landroidx/compose/animation/core/TweenSpec;->vectorize(Landroidx/compose/animation/core/TwoWayConverter;)Landroidx/compose/animation/core/VectorizedTweenSpec;
 
     move-result-object p0
@@ -304,11 +300,7 @@
         }
     .end annotation
 
-    const-string v0, "converter"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 98
+    .line 103
     new-instance p1, Landroidx/compose/animation/core/VectorizedTweenSpec;
 
     iget v0, p0, Landroidx/compose/animation/core/TweenSpec;->durationMillis:I

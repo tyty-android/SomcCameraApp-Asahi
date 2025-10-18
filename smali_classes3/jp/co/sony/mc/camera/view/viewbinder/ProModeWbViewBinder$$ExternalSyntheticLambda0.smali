@@ -3,28 +3,38 @@
 .source "D8$$SyntheticClass"
 
 # interfaces
-.implements Landroid/view/View$OnTouchListener;
+.implements Lkotlin/jvm/functions/Function1;
+
+
+# instance fields
+.field public final synthetic f$0:Ljp/co/sony/mc/camera/view/viewbinder/ProModeWbViewBinder;
 
 
 # direct methods
-.method public synthetic constructor <init>()V
+.method public synthetic constructor <init>(Ljp/co/sony/mc/camera/view/viewbinder/ProModeWbViewBinder;)V
     .locals 0
 
     .line 0
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    iput-object p1, p0, Ljp/co/sony/mc/camera/view/viewbinder/ProModeWbViewBinder$$ExternalSyntheticLambda0;->f$0:Ljp/co/sony/mc/camera/view/viewbinder/ProModeWbViewBinder;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final onTouch(Landroid/view/View;Landroid/view/MotionEvent;)Z
+.method public final invoke(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
 
     .line 0
-    invoke-static {p1, p2}, Ljp/co/sony/mc/camera/view/viewbinder/ProModeWbViewBinder;->$r8$lambda$EKjexsJdSL7YXJxzbNvz1qwWpRM(Landroid/view/View;Landroid/view/MotionEvent;)Z
+    iget-object p0, p0, Ljp/co/sony/mc/camera/view/viewbinder/ProModeWbViewBinder$$ExternalSyntheticLambda0;->f$0:Ljp/co/sony/mc/camera/view/viewbinder/ProModeWbViewBinder;
 
-    move-result p0
+    check-cast p1, Ljava/lang/Boolean;
 
-    return p0
+    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/view/viewbinder/ProModeWbViewBinder;->$r8$lambda$mvkb24lCFoIjwtWrTqC_AI_tp3g(Ljp/co/sony/mc/camera/view/viewbinder/ProModeWbViewBinder;Ljava/lang/Boolean;)Lkotlin/Unit;
+
+    move-result-object p0
+
+    return-object p0
 .end method

@@ -32,10 +32,10 @@
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 1
 
-    .line 55
+    .line 56
     invoke-direct {p0, p1}, Landroid/view/View;-><init>(Landroid/content/Context;)V
 
-    .line 28
+    .line 29
     new-instance v0, Landroid/graphics/Paint;
 
     invoke-direct {v0}, Landroid/graphics/Paint;-><init>()V
@@ -44,12 +44,12 @@
 
     const/4 v0, 0x0
 
-    .line 42
+    .line 43
     iput-boolean v0, p0, Ljp/co/sony/mc/camera/view/widget/HistogramView;->mIsUpdated:Z
 
     const/4 v0, 0x0
 
-    .line 56
+    .line 57
     invoke-direct {p0, p1, v0}, Ljp/co/sony/mc/camera/view/widget/HistogramView;->init(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
     return-void
@@ -58,10 +58,10 @@
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 1
 
-    .line 45
+    .line 46
     invoke-direct {p0, p1, p2}, Landroid/view/View;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
-    .line 28
+    .line 29
     new-instance v0, Landroid/graphics/Paint;
 
     invoke-direct {v0}, Landroid/graphics/Paint;-><init>()V
@@ -70,10 +70,10 @@
 
     const/4 v0, 0x0
 
-    .line 42
+    .line 43
     iput-boolean v0, p0, Ljp/co/sony/mc/camera/view/widget/HistogramView;->mIsUpdated:Z
 
-    .line 46
+    .line 47
     invoke-direct {p0, p1, p2}, Ljp/co/sony/mc/camera/view/widget/HistogramView;->init(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
     return-void
@@ -82,10 +82,10 @@
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
     .locals 0
 
-    .line 50
+    .line 51
     invoke-direct {p0, p1, p2, p3}, Landroid/view/View;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
 
-    .line 28
+    .line 29
     new-instance p3, Landroid/graphics/Paint;
 
     invoke-direct {p3}, Landroid/graphics/Paint;-><init>()V
@@ -94,10 +94,10 @@
 
     const/4 p3, 0x0
 
-    .line 42
+    .line 43
     iput-boolean p3, p0, Ljp/co/sony/mc/camera/view/widget/HistogramView;->mIsUpdated:Z
 
-    .line 51
+    .line 52
     invoke-direct {p0, p1, p2}, Ljp/co/sony/mc/camera/view/widget/HistogramView;->init(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
     return-void
@@ -106,7 +106,7 @@
 .method private init(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 3
 
-    .line 60
+    .line 61
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/widget/HistogramView;->mPaint:Landroid/graphics/Paint;
 
     new-instance v1, Landroid/graphics/PorterDuffXfermode;
@@ -117,26 +117,26 @@
 
     invoke-virtual {v0, v1}, Landroid/graphics/Paint;->setXfermode(Landroid/graphics/Xfermode;)Landroid/graphics/Xfermode;
 
-    .line 61
+    .line 62
     invoke-virtual {p1}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
 
     move-result-object v0
 
-    const v1, 0x7f070650
+    const v1, 0x7f0706d0
 
-    .line 62
+    .line 63
     invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
     move-result v0
 
     iput v0, p0, Ljp/co/sony/mc/camera/view/widget/HistogramView;->mFrameThickness:I
 
-    .line 63
+    .line 64
     invoke-virtual {p1}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
 
     move-result-object p1
 
-    const v0, 0x7f0603a5
+    const v0, 0x7f0603bd
 
     invoke-virtual {p1, v0}, Landroid/content/res/Resources;->getColor(I)I
 
@@ -144,7 +144,7 @@
 
     iput p1, p0, Ljp/co/sony/mc/camera/view/widget/HistogramView;->mFrameColor:I
 
-    .line 64
+    .line 65
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/view/widget/HistogramView;->getContext()Landroid/content/Context;
 
     move-result-object p1
@@ -159,14 +159,14 @@
 
     const/high16 v0, -0x1000000
 
-    .line 65
+    .line 66
     invoke-virtual {p1, p2, v0}, Landroid/content/res/TypedArray;->getColor(II)I
 
     move-result p2
 
     iput p2, p0, Ljp/co/sony/mc/camera/view/widget/HistogramView;->mBackgroundColor:I
 
-    .line 66
+    .line 67
     invoke-virtual {p1}, Landroid/content/res/TypedArray;->recycle()V
 
     return-void
@@ -174,32 +174,43 @@
 
 
 # virtual methods
+.method public dispatchTouchEvent(Landroid/view/MotionEvent;)Z
+    .locals 0
+
+    .line 142
+    invoke-super {p0, p1}, Landroid/view/View;->dispatchTouchEvent(Landroid/view/MotionEvent;)Z
+
+    const/4 p0, 0x0
+
+    return p0
+.end method
+
 .method protected onDraw(Landroid/graphics/Canvas;)V
     .locals 14
 
-    .line 91
+    .line 92
     invoke-super {p0, p1}, Landroid/view/View;->onDraw(Landroid/graphics/Canvas;)V
 
-    .line 94
+    .line 95
     iget v0, p0, Ljp/co/sony/mc/camera/view/widget/HistogramView;->mBackgroundColor:I
 
     invoke-virtual {p1, v0}, Landroid/graphics/Canvas;->drawColor(I)V
 
-    .line 97
+    .line 98
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/widget/HistogramView;->mPaint:Landroid/graphics/Paint;
 
     iget v1, p0, Ljp/co/sony/mc/camera/view/widget/HistogramView;->mFrameColor:I
 
     invoke-virtual {v0, v1}, Landroid/graphics/Paint;->setColor(I)V
 
-    .line 98
+    .line 99
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/widget/HistogramView;->mPaint:Landroid/graphics/Paint;
 
     sget-object v1, Landroid/graphics/Paint$Style;->STROKE:Landroid/graphics/Paint$Style;
 
     invoke-virtual {v0, v1}, Landroid/graphics/Paint;->setStyle(Landroid/graphics/Paint$Style;)V
 
-    .line 99
+    .line 100
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/widget/HistogramView;->mPaint:Landroid/graphics/Paint;
 
     iget v1, p0, Ljp/co/sony/mc/camera/view/widget/HistogramView;->mFrameThickness:I
@@ -208,7 +219,7 @@
 
     invoke-virtual {v0, v1}, Landroid/graphics/Paint;->setStrokeWidth(F)V
 
-    .line 100
+    .line 101
     iget v0, p0, Ljp/co/sony/mc/camera/view/widget/HistogramView;->mFrameThickness:I
 
     int-to-double v1, v0
@@ -251,20 +262,20 @@
 
     invoke-virtual/range {v5 .. v10}, Landroid/graphics/Canvas;->drawRect(FFFFLandroid/graphics/Paint;)V
 
-    .line 107
+    .line 108
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/widget/HistogramView;->mHistogramResult:Ljp/co/sony/mc/camera/device/CaptureResultNotifier$HistogramResult;
 
     if-nez v0, :cond_0
 
     return-void
 
-    .line 112
+    .line 113
     :cond_0
     invoke-virtual {v0}, Ljp/co/sony/mc/camera/device/CaptureResultNotifier$HistogramResult;->getHistogramBucketCount()I
 
     move-result v0
 
-    .line 113
+    .line 114
     iget v1, p0, Ljp/co/sony/mc/camera/view/widget/HistogramView;->mWidth:F
 
     iget v2, p0, Ljp/co/sony/mc/camera/view/widget/HistogramView;->mFrameThickness:I
@@ -281,7 +292,7 @@
 
     div-float/2addr v1, v0
 
-    .line 114
+    .line 115
     iget v0, p0, Ljp/co/sony/mc/camera/view/widget/HistogramView;->mHeight:F
 
     int-to-float v2, v2
@@ -290,29 +301,29 @@
 
     sub-float/2addr v0, v2
 
-    .line 115
+    .line 116
     iget-object v2, p0, Ljp/co/sony/mc/camera/view/widget/HistogramView;->mPaint:Landroid/graphics/Paint;
 
     invoke-virtual {v2, v1}, Landroid/graphics/Paint;->setStrokeWidth(F)V
 
-    .line 117
+    .line 118
     iget-object v2, p0, Ljp/co/sony/mc/camera/view/widget/HistogramView;->mPaint:Landroid/graphics/Paint;
 
-    .line 118
+    .line 119
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/view/widget/HistogramView;->getContext()Landroid/content/Context;
 
     move-result-object v3
 
-    const v4, 0x7f0603a4
+    const v4, 0x7f0603bc
 
     invoke-static {v3, v4}, Landroidx/core/content/ContextCompat;->getColor(Landroid/content/Context;I)I
 
     move-result v3
 
-    .line 117
+    .line 118
     invoke-virtual {v2, v3}, Landroid/graphics/Paint;->setColor(I)V
 
-    .line 123
+    .line 124
     iget-object v2, p0, Ljp/co/sony/mc/camera/view/widget/HistogramView;->mHistogramResult:Ljp/co/sony/mc/camera/device/CaptureResultNotifier$HistogramResult;
 
     invoke-virtual {v2}, Ljp/co/sony/mc/camera/device/CaptureResultNotifier$HistogramResult;->getHistogram()[I
@@ -321,7 +332,7 @@
 
     const/4 v3, 0x0
 
-    .line 124
+    .line 125
     :goto_0
     array-length v4, v2
 
@@ -335,14 +346,14 @@
 
     mul-float/2addr v4, v1
 
-    .line 126
+    .line 127
     aget v5, v2, v3
 
     int-to-float v5, v5
 
     iget-object v6, p0, Ljp/co/sony/mc/camera/view/widget/HistogramView;->mHistogramResult:Ljp/co/sony/mc/camera/device/CaptureResultNotifier$HistogramResult;
 
-    .line 127
+    .line 128
     invoke-virtual {v6}, Ljp/co/sony/mc/camera/device/CaptureResultNotifier$HistogramResult;->getMaxHistogramCount()I
 
     move-result v6
@@ -364,7 +375,7 @@
     :cond_1
     const/high16 v5, 0x3f800000    # 1.0f
 
-    .line 130
+    .line 131
     :goto_1
     iget v6, p0, Ljp/co/sony/mc/camera/view/widget/HistogramView;->mFrameThickness:I
 
@@ -403,7 +414,7 @@
 .method public onHistogramChanged(Ljp/co/sony/mc/camera/device/CaptureResultNotifier$HistogramResult;)V
     .locals 3
 
-    .line 70
+    .line 71
     new-instance v0, Ljp/co/sony/mc/camera/device/CaptureResultNotifier$HistogramResult;
 
     invoke-virtual {p1}, Ljp/co/sony/mc/camera/device/CaptureResultNotifier$HistogramResult;->getHistogram()[I
@@ -416,7 +427,7 @@
 
     check-cast v1, [I
 
-    .line 71
+    .line 72
     invoke-virtual {p1}, Ljp/co/sony/mc/camera/device/CaptureResultNotifier$HistogramResult;->getHistogramBucketCount()I
 
     move-result v2
@@ -431,7 +442,7 @@
 
     const/4 p1, 0x1
 
-    .line 72
+    .line 73
     iput-boolean p1, p0, Ljp/co/sony/mc/camera/view/widget/HistogramView;->mIsUpdated:Z
 
     return-void
@@ -442,12 +453,12 @@
 
     int-to-float p1, p1
 
-    .line 85
+    .line 86
     iput p1, p0, Ljp/co/sony/mc/camera/view/widget/HistogramView;->mWidth:F
 
     int-to-float p1, p2
 
-    .line 86
+    .line 87
     iput p1, p0, Ljp/co/sony/mc/camera/view/widget/HistogramView;->mHeight:F
 
     return-void
@@ -456,7 +467,7 @@
 .method public onUpdateDisplayRequested()V
     .locals 1
 
-    .line 77
+    .line 78
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/widget/HistogramView;->mHistogramResult:Ljp/co/sony/mc/camera/device/CaptureResultNotifier$HistogramResult;
 
     if-eqz v0, :cond_0
@@ -471,12 +482,12 @@
 
     if-eqz v0, :cond_0
 
-    .line 78
+    .line 79
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/view/widget/HistogramView;->postInvalidate()V
 
     const/4 v0, 0x0
 
-    .line 79
+    .line 80
     iput-boolean v0, p0, Ljp/co/sony/mc/camera/view/widget/HistogramView;->mIsUpdated:Z
 
     :cond_0

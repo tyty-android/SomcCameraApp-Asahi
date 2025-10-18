@@ -25,7 +25,7 @@
 .method constructor <init>(Ljp/co/sony/mc/camera/view/FragmentController;)V
     .locals 0
 
-    .line 317
+    .line 323
     iput-object p1, p0, Ljp/co/sony/mc/camera/view/FragmentController$1;->this$0:Ljp/co/sony/mc/camera/view/FragmentController;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -38,7 +38,7 @@
 .method public onSurfaceFinalized()V
     .locals 0
 
-    .line 331
+    .line 337
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/FragmentController$1;->this$0:Ljp/co/sony/mc/camera/view/FragmentController;
 
     invoke-static {p0}, Ljp/co/sony/mc/camera/view/FragmentController;->-$$Nest$fgetmCameraAccessor(Ljp/co/sony/mc/camera/view/FragmentController;)Ljp/co/sony/mc/camera/CameraAccessor;
@@ -53,7 +53,7 @@
 .method public onSurfacePrepared(Landroid/view/Surface;Landroid/util/Size;)V
     .locals 1
 
-    .line 320
+    .line 326
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/FragmentController$1;->this$0:Ljp/co/sony/mc/camera/view/FragmentController;
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/view/FragmentController;->-$$Nest$fgetmIsExtDispConnected(Ljp/co/sony/mc/camera/view/FragmentController;)Z
@@ -62,7 +62,7 @@
 
     if-eqz v0, :cond_0
 
-    .line 321
+    .line 327
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/FragmentController$1;->this$0:Ljp/co/sony/mc/camera/view/FragmentController;
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/view/FragmentController;->-$$Nest$fgetmIsPendingDisplaySwitch(Ljp/co/sony/mc/camera/view/FragmentController;)Z
@@ -71,14 +71,14 @@
 
     if-eqz v0, :cond_1
 
-    .line 322
+    .line 328
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/FragmentController$1;->this$0:Ljp/co/sony/mc/camera/view/FragmentController;
 
     invoke-static {p0, p1, p2}, Ljp/co/sony/mc/camera/view/FragmentController;->-$$Nest$msetSurface(Ljp/co/sony/mc/camera/view/FragmentController;Landroid/view/Surface;Landroid/util/Size;)V
 
     goto :goto_0
 
-    .line 325
+    .line 331
     :cond_0
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/FragmentController$1;->this$0:Ljp/co/sony/mc/camera/view/FragmentController;
 

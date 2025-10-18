@@ -84,7 +84,7 @@
 .method public bridge synthetic invoke(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
 
-    .line 140
+    .line 106
     check-cast p1, Landroidx/compose/runtime/saveable/SaverScope;
 
     check-cast p2, Landroidx/compose/foundation/pager/PagerStateImpl;
@@ -110,15 +110,7 @@
         }
     .end annotation
 
-    const-string p0, "$this$listSaver"
-
-    invoke-static {p1, p0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string p0, "it"
-
-    invoke-static {p2, p0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 143
+    .line 109
     invoke-virtual {p2}, Landroidx/compose/foundation/pager/PagerStateImpl;->getCurrentPage()I
 
     move-result p0
@@ -127,7 +119,7 @@
 
     move-result-object p0
 
-    .line 144
+    .line 110
     invoke-virtual {p2}, Landroidx/compose/foundation/pager/PagerStateImpl;->getCurrentPageOffsetFraction()F
 
     move-result p1
@@ -136,7 +128,7 @@
 
     move-result-object p1
 
-    .line 145
+    .line 111
     invoke-virtual {p2}, Landroidx/compose/foundation/pager/PagerStateImpl;->getPageCount()I
 
     move-result p2
@@ -149,7 +141,7 @@
 
     move-result-object p0
 
-    .line 142
+    .line 108
     invoke-static {p0}, Lkotlin/collections/CollectionsKt;->listOf([Ljava/lang/Object;)Ljava/util/List;
 
     move-result-object p0

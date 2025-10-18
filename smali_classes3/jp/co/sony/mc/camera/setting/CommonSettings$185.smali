@@ -21,7 +21,7 @@
 .method constructor <init>()V
     .locals 0
 
-    .line 1726
+    .line 1732
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -42,8 +42,8 @@
         }
     .end annotation
 
-    .line 1730
-    invoke-static {}, Ljp/co/sony/mc/camera/configuration/parameters/RtmpStreamUrl;->getDefaultValue()Ljava/lang/String;
+    .line 1736
+    invoke-static {}, Ljp/co/sony/mc/camera/configuration/parameters/LastBackVideoFps;->getDefaultValue()Ljp/co/sony/mc/camera/configuration/parameters/LastBackVideoFps;
 
     move-result-object p0
 

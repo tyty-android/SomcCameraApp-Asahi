@@ -36,7 +36,7 @@
 .method static constructor <clinit>()V
     .locals 1
 
-    .line 965
+    .line 1085
     new-instance v0, Lcom/google/android/material/search/SearchView$SavedState$1;
 
     invoke-direct {v0}, Lcom/google/android/material/search/SearchView$SavedState$1;-><init>()V
@@ -51,7 +51,7 @@
 
     const/4 v0, 0x0
 
-    .line 952
+    .line 1072
     invoke-direct {p0, p1, v0}, Lcom/google/android/material/search/SearchView$SavedState;-><init>(Landroid/os/Parcel;Ljava/lang/ClassLoader;)V
 
     return-void
@@ -60,17 +60,17 @@
 .method public constructor <init>(Landroid/os/Parcel;Ljava/lang/ClassLoader;)V
     .locals 0
 
-    .line 956
+    .line 1076
     invoke-direct {p0, p1, p2}, Landroidx/customview/view/AbsSavedState;-><init>(Landroid/os/Parcel;Ljava/lang/ClassLoader;)V
 
-    .line 957
+    .line 1077
     invoke-virtual {p1}, Landroid/os/Parcel;->readString()Ljava/lang/String;
 
     move-result-object p2
 
     iput-object p2, p0, Lcom/google/android/material/search/SearchView$SavedState;->text:Ljava/lang/String;
 
-    .line 958
+    .line 1078
     invoke-virtual {p1}, Landroid/os/Parcel;->readInt()I
 
     move-result p1
@@ -83,7 +83,7 @@
 .method public constructor <init>(Landroid/os/Parcelable;)V
     .locals 0
 
-    .line 962
+    .line 1082
     invoke-direct {p0, p1}, Landroidx/customview/view/AbsSavedState;-><init>(Landroid/os/Parcelable;)V
 
     return-void
@@ -94,15 +94,15 @@
 .method public writeToParcel(Landroid/os/Parcel;I)V
     .locals 0
 
-    .line 986
+    .line 1106
     invoke-super {p0, p1, p2}, Landroidx/customview/view/AbsSavedState;->writeToParcel(Landroid/os/Parcel;I)V
 
-    .line 987
+    .line 1107
     iget-object p2, p0, Lcom/google/android/material/search/SearchView$SavedState;->text:Ljava/lang/String;
 
     invoke-virtual {p1, p2}, Landroid/os/Parcel;->writeString(Ljava/lang/String;)V
 
-    .line 988
+    .line 1108
     iget p0, p0, Lcom/google/android/material/search/SearchView$SavedState;->visibility:I
 
     invoke-virtual {p1, p0}, Landroid/os/Parcel;->writeInt(I)V

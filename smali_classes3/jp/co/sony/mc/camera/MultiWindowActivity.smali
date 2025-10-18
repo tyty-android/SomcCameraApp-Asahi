@@ -121,7 +121,7 @@
 .end method
 
 .method private checkCameraDisabled()Z
-    .locals 1
+    .locals 3
 
     .line 212
     const-string v0, "device_policy"
@@ -139,48 +139,64 @@
 
     move-result p0
 
+    const/4 v0, 0x0
+
     if-eqz p0, :cond_0
 
-    .line 215
-    const-string p0, "[CameraNotAvailable] startCameraOpen: dpm.getCameraDisabled(null)"
-
-    filled-new-array {p0}, [Ljava/lang/String;
-
-    move-result-object p0
-
-    invoke-static {p0}, Ljp/co/sony/mc/camera/util/CamLog;->i([Ljava/lang/String;)V
-
     const/4 p0, 0x1
+
+    .line 215
+    new-array v1, p0, [Ljava/lang/String;
+
+    const-string v2, "[CameraNotAvailable] startCameraOpen: dpm.getCameraDisabled(null)"
+
+    aput-object v2, v1, v0
+
+    invoke-static {v1}, Ljp/co/sony/mc/camera/util/CamLog;->i([Ljava/lang/String;)V
 
     return p0
 
     :cond_0
-    const/4 p0, 0x0
-
-    return p0
+    return v0
 .end method
 
 .method private getPermissionList()[Ljava/lang/String;
-    .locals 3
+    .locals 2
+
+    const/4 p0, 0x4
 
     .line 239
-    const-string p0, "android.permission.READ_MEDIA_IMAGES"
+    new-array p0, p0, [Ljava/lang/String;
 
-    const-string v0, "android.permission.READ_MEDIA_VIDEO"
+    const/4 v0, 0x0
 
     const-string v1, "android.permission.CAMERA"
 
-    const-string v2, "android.permission.RECORD_AUDIO"
+    aput-object v1, p0, v0
 
-    filled-new-array {v1, v2, p0, v0}, [Ljava/lang/String;
+    const/4 v0, 0x1
 
-    move-result-object p0
+    const-string v1, "android.permission.RECORD_AUDIO"
+
+    aput-object v1, p0, v0
+
+    const/4 v0, 0x2
+
+    const-string v1, "android.permission.READ_MEDIA_IMAGES"
+
+    aput-object v1, p0, v0
+
+    const/4 v0, 0x3
+
+    const-string v1, "android.permission.READ_MEDIA_VIDEO"
+
+    aput-object v1, p0, v0
 
     return-object p0
 .end method
 
 .method private launchCamera()V
-    .locals 3
+    .locals 4
 
     .line 94
     invoke-direct {p0}, Ljp/co/sony/mc/camera/MultiWindowActivity;->checkCameraDisabled()Z
@@ -208,113 +224,115 @@
     iput-boolean v0, p0, Ljp/co/sony/mc/camera/MultiWindowActivity;->isCameraActivityLaunched:Z
 
     .line 101
-    new-instance v0, Landroid/content/Intent;
+    new-instance v1, Landroid/content/Intent;
 
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/MultiWindowActivity;->getIntent()Landroid/content/Intent;
 
-    move-result-object v1
+    move-result-object v2
 
-    invoke-direct {v0, v1}, Landroid/content/Intent;-><init>(Landroid/content/Intent;)V
+    invoke-direct {v1, v2}, Landroid/content/Intent;-><init>(Landroid/content/Intent;)V
 
     .line 102
-    invoke-virtual {v0}, Landroid/content/Intent;->getAction()Ljava/lang/String;
+    invoke-virtual {v1}, Landroid/content/Intent;->getAction()Ljava/lang/String;
 
-    move-result-object v1
+    move-result-object v2
 
     .line 103
-    const-string v2, "android.media.action.IMAGE_CAPTURE"
+    const-string v3, "android.media.action.IMAGE_CAPTURE"
 
-    if-ne v1, v2, :cond_1
+    if-ne v2, v3, :cond_1
 
     .line 104
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/MultiWindowActivity;->getApplicationContext()Landroid/content/Context;
 
-    move-result-object v1
+    move-result-object v0
 
     const-class v2, Ljp/co/sony/mc/camera/OneshotPhotoActivity;
 
-    invoke-virtual {v0, v1, v2}, Landroid/content/Intent;->setClass(Landroid/content/Context;Ljava/lang/Class;)Landroid/content/Intent;
+    invoke-virtual {v1, v0, v2}, Landroid/content/Intent;->setClass(Landroid/content/Context;Ljava/lang/Class;)Landroid/content/Intent;
 
     .line 105
-    invoke-direct {p0, v0}, Ljp/co/sony/mc/camera/MultiWindowActivity;->resetNewTaskFlag(Landroid/content/Intent;)V
+    invoke-direct {p0, v1}, Ljp/co/sony/mc/camera/MultiWindowActivity;->resetNewTaskFlag(Landroid/content/Intent;)V
 
     goto :goto_1
 
     .line 106
     :cond_1
-    const-string v2, "android.media.action.VIDEO_CAPTURE"
+    const-string v3, "android.media.action.VIDEO_CAPTURE"
 
-    if-ne v1, v2, :cond_2
+    if-ne v2, v3, :cond_2
 
     .line 107
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/MultiWindowActivity;->getApplicationContext()Landroid/content/Context;
 
-    move-result-object v1
+    move-result-object v0
 
     const-class v2, Ljp/co/sony/mc/camera/OneshotVideoActivity;
 
-    invoke-virtual {v0, v1, v2}, Landroid/content/Intent;->setClass(Landroid/content/Context;Ljava/lang/Class;)Landroid/content/Intent;
+    invoke-virtual {v1, v0, v2}, Landroid/content/Intent;->setClass(Landroid/content/Context;Ljava/lang/Class;)Landroid/content/Intent;
 
     .line 108
-    invoke-direct {p0, v0}, Ljp/co/sony/mc/camera/MultiWindowActivity;->resetNewTaskFlag(Landroid/content/Intent;)V
+    invoke-direct {p0, v1}, Ljp/co/sony/mc/camera/MultiWindowActivity;->resetNewTaskFlag(Landroid/content/Intent;)V
 
     goto :goto_1
 
     .line 109
     :cond_2
-    const-string v2, "android.media.action.STILL_IMAGE_CAMERA"
+    const-string v3, "android.media.action.STILL_IMAGE_CAMERA"
 
-    if-eq v1, v2, :cond_5
+    if-eq v2, v3, :cond_5
 
-    const-string v2, "android.media.action.VIDEO_CAMERA"
+    const-string v3, "android.media.action.VIDEO_CAMERA"
 
-    if-ne v1, v2, :cond_3
+    if-ne v2, v3, :cond_3
 
     goto :goto_0
 
     .line 113
     :cond_3
-    sget-boolean v1, Ljp/co/sony/mc/camera/util/CamLog;->VERBOSE:Z
+    sget-boolean v2, Ljp/co/sony/mc/camera/util/CamLog;->VERBOSE:Z
 
-    if-eqz v1, :cond_4
+    if-eqz v2, :cond_4
 
-    new-instance v1, Ljava/lang/StringBuilder;
+    new-array v0, v0, [Ljava/lang/String;
 
-    const-string v2, "No oneshot action found : "
+    new-instance v2, Ljava/lang/StringBuilder;
 
-    invoke-direct {v1, v2}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+    const-string v3, "No oneshot action found : "
 
-    invoke-virtual {v1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+    invoke-direct {v2, v3}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
-    move-result-object v1
+    invoke-virtual {v2, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    move-result-object v2
 
-    move-result-object v1
+    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    filled-new-array {v1}, [Ljava/lang/String;
+    move-result-object v2
 
-    move-result-object v1
+    const/4 v3, 0x0
 
-    invoke-static {v1}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
+    aput-object v2, v0, v3
+
+    invoke-static {v0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
     .line 115
     :cond_4
-    const-string v1, "android.intent.action.MAIN"
+    const-string v0, "android.intent.action.MAIN"
 
-    invoke-virtual {v0, v1}, Landroid/content/Intent;->setAction(Ljava/lang/String;)Landroid/content/Intent;
+    invoke-virtual {v1, v0}, Landroid/content/Intent;->setAction(Ljava/lang/String;)Landroid/content/Intent;
 
     .line 116
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/MultiWindowActivity;->getApplicationContext()Landroid/content/Context;
 
-    move-result-object v1
+    move-result-object v0
 
     const-class v2, Ljp/co/sony/mc/camera/CameraActivity;
 
-    invoke-virtual {v0, v1, v2}, Landroid/content/Intent;->setClass(Landroid/content/Context;Ljava/lang/Class;)Landroid/content/Intent;
+    invoke-virtual {v1, v0, v2}, Landroid/content/Intent;->setClass(Landroid/content/Context;Ljava/lang/Class;)Landroid/content/Intent;
 
     .line 117
-    invoke-virtual {p0, v0}, Ljp/co/sony/mc/camera/MultiWindowActivity;->startActivity(Landroid/content/Intent;)V
+    invoke-virtual {p0, v1}, Ljp/co/sony/mc/camera/MultiWindowActivity;->startActivity(Landroid/content/Intent;)V
 
     .line 118
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/MultiWindowActivity;->finish()V
@@ -326,20 +344,20 @@
     :goto_0
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/MultiWindowActivity;->getApplicationContext()Landroid/content/Context;
 
-    move-result-object v1
+    move-result-object v0
 
     const-class v2, Ljp/co/sony/mc/camera/CameraActivity;
 
-    invoke-virtual {v0, v1, v2}, Landroid/content/Intent;->setClass(Landroid/content/Context;Ljava/lang/Class;)Landroid/content/Intent;
+    invoke-virtual {v1, v0, v2}, Landroid/content/Intent;->setClass(Landroid/content/Context;Ljava/lang/Class;)Landroid/content/Intent;
 
     :goto_1
-    const/high16 v1, 0x2000000
+    const/high16 v0, 0x2000000
 
     .line 121
-    invoke-virtual {v0, v1}, Landroid/content/Intent;->addFlags(I)Landroid/content/Intent;
+    invoke-virtual {v1, v0}, Landroid/content/Intent;->addFlags(I)Landroid/content/Intent;
 
     .line 122
-    invoke-virtual {p0, v0}, Ljp/co/sony/mc/camera/MultiWindowActivity;->startActivity(Landroid/content/Intent;)V
+    invoke-virtual {p0, v1}, Ljp/co/sony/mc/camera/MultiWindowActivity;->startActivity(Landroid/content/Intent;)V
 
     .line 123
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/MultiWindowActivity;->finish()V
@@ -380,12 +398,12 @@
 
     invoke-direct {v0, p0}, Landroid/app/AlertDialog$Builder;-><init>(Landroid/content/Context;)V
 
-    const v1, 0x7f1101dd
+    const v1, 0x7f1101e0
 
     .line 223
     invoke-virtual {v0, v1}, Landroid/app/AlertDialog$Builder;->setTitle(I)Landroid/app/AlertDialog$Builder;
 
-    const v1, 0x7f110453
+    const v1, 0x7f11048a
 
     .line 224
     invoke-virtual {v0, v1}, Landroid/app/AlertDialog$Builder;->setMessage(I)Landroid/app/AlertDialog$Builder;
@@ -511,7 +529,7 @@
     .line 43
     invoke-super {p0, p1}, Landroid/app/Activity;->onCreate(Landroid/os/Bundle;)V
 
-    const p1, 0x7f0c002b
+    const p1, 0x7f0c002c
 
     .line 44
     invoke-virtual {p0, p1}, Ljp/co/sony/mc/camera/MultiWindowActivity;->setContentView(I)V
@@ -531,7 +549,7 @@
 
     move-result-object p1
 
-    const v0, 0x7f09032b
+    const v0, 0x7f09032a
 
     .line 46
     invoke-virtual {p0, v0}, Ljp/co/sony/mc/camera/MultiWindowActivity;->findViewById(I)Landroid/view/View;
@@ -567,7 +585,7 @@
 
     move-result-object p0
 
-    const v0, 0x7f110314
+    const v0, 0x7f110345
 
     invoke-virtual {p0, v0}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -591,7 +609,7 @@
 
     move-result-object p0
 
-    const v0, 0x7f110315
+    const v0, 0x7f110346
 
     invoke-virtual {p0, v0}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 

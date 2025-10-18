@@ -19,5 +19,4 @@
     <string name="camera_strings_runtime_permission_rationale_network_cta_txt">"此應用程式使用WLAN和行動數據連線來發送使用者資料 (例如已拍攝的相片/影片、語音資料、使用中的服務的帳號資料等) 至網際網路。
 注意您可能會被收取數據費用 (視乎您的電信業者或網際網路服務供應商契約而定)。"</string>
     <string name="camera_strings_streaming_error_wifi_disconnected_txt">沒有 WLAN 連線</string>
-    <string name="mv_wireless_network_txt">使用WLAN與行動數據連線</string>
 </resources>

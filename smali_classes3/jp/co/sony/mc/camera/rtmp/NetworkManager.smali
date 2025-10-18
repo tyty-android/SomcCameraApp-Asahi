@@ -17,57 +17,58 @@
 
 .annotation runtime Lkotlin/Metadata;
     d1 = {
-        "\u0000V\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0005\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\r\u0008\u0007\u0018\u0000 %2\u00020\u0001:\u0005%&\'()B\r\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u00a2\u0006\u0002\u0010\u0004J\u0006\u0010\u001a\u001a\u00020\u001bJ\u0006\u0010\u001c\u001a\u00020\u001dJ\u0008\u0010\u001e\u001a\u00020\u001bH\u0002J\u0006\u0010\u001f\u001a\u00020\u001bJ\u000e\u0010 \u001a\u00020\u001b2\u0006\u0010!\u001a\u00020\u0013J\u0006\u0010\"\u001a\u00020\u001bJ\u000e\u0010#\u001a\u00020\u001b2\u0006\u0010!\u001a\u00020\u0013J\u0008\u0010$\u001a\u00020\u001bH\u0002R\u001a\u0010\u0005\u001a\u00020\u0006X\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\u0008\u0007\u0010\u0008\"\u0004\u0008\t\u0010\nR\u000e\u0010\u000b\u001a\u00020\u000cX\u0082\u000e\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u0002\u001a\u00020\u0003X\u0082\u000e\u00a2\u0006\u0002\n\u0000R\u000e\u0010\r\u001a\u00020\u000eX\u0082\u000e\u00a2\u0006\u0002\n\u0000R\u0010\u0010\u000f\u001a\u0004\u0018\u00010\u0010X\u0082\u000e\u00a2\u0006\u0002\n\u0000R\u0014\u0010\u0011\u001a\u0008\u0012\u0004\u0012\u00020\u00130\u0012X\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u0010\u0010\u0014\u001a\u0004\u0018\u00010\u0015X\u0082\u000e\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u0016\u001a\u00020\u0017X\u0082\u000e\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u0018\u001a\u00020\u0019X\u0082\u000e\u00a2\u0006\u0002\n\u0000\u00a8\u0006*"
+        "\u0000X\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0003\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0005\n\u0002\u0010\u0002\n\u0002\u0008\u0005\n\u0002\u0018\u0002\n\u0002\u0008\t\u0008\u0007\u0018\u0000 )2\u00020\u0001:\u0005&\'()*B\u000f\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u00a2\u0006\u0004\u0008\u0004\u0010\u0005J\u0006\u0010\u001b\u001a\u00020\u001cJ\u0006\u0010\u001d\u001a\u00020\u001cJ\u000e\u0010\u001e\u001a\u00020\u001c2\u0006\u0010\u001f\u001a\u00020\u0008J\u000e\u0010 \u001a\u00020\u001c2\u0006\u0010\u001f\u001a\u00020\u0008J\u0006\u0010!\u001a\u00020\"J\u0006\u0010#\u001a\u00020\u001cJ\u0008\u0010$\u001a\u00020\u001cH\u0002J\u0008\u0010%\u001a\u00020\u001cH\u0002R\u000e\u0010\u0002\u001a\u00020\u0003X\u0082\u000e\u00a2\u0006\u0002\n\u0000R\u0014\u0010\u0006\u001a\u0008\u0012\u0004\u0012\u00020\u00080\u0007X\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u000e\u0010\t\u001a\u00020\nX\u0082\u000e\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u000b\u001a\u00020\u000cX\u0082\u000e\u00a2\u0006\u0002\n\u0000R\u000e\u0010\r\u001a\u00020\u000eX\u0082\u000e\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u000f\u001a\u00020\u0010X\u0082\u000e\u00a2\u0006\u0002\n\u0000R\u0010\u0010\u0011\u001a\u0004\u0018\u00010\u0012X\u0082\u000e\u00a2\u0006\u0002\n\u0000R\u0010\u0010\u0013\u001a\u0004\u0018\u00010\u0014X\u0082\u000e\u00a2\u0006\u0002\n\u0000R\u001a\u0010\u0015\u001a\u00020\u0016X\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\u0008\u0017\u0010\u0018\"\u0004\u0008\u0019\u0010\u001a\u00a8\u0006+"
     }
     d2 = {
         "Ljp/co/sony/mc/camera/rtmp/NetworkManager;",
         "",
         "context",
         "Landroid/content/Context;",
+        "<init>",
         "(Landroid/content/Context;)V",
+        "networkStateListeners",
+        "Ljava/util/concurrent/CopyOnWriteArrayList;",
+        "Ljp/co/sony/mc/camera/rtmp/NetworkManager$NetworkStateListener;",
+        "connectivityManager",
+        "Landroid/net/ConnectivityManager;",
+        "telephonyManager",
+        "Landroid/telephony/TelephonyManager;",
+        "wifiManager",
+        "Landroid/net/wifi/WifiManager;",
+        "networkCallback",
+        "Landroid/net/ConnectivityManager$NetworkCallback;",
+        "networkCapabilities",
+        "Landroid/net/NetworkCapabilities;",
+        "signalStrength",
+        "Landroid/telephony/SignalStrength;",
         "connectLevel",
         "Ljp/co/sony/mc/camera/rtmp/NetworkManager$ConnectLevel;",
         "getConnectLevel",
         "()Ljp/co/sony/mc/camera/rtmp/NetworkManager$ConnectLevel;",
         "setConnectLevel",
         "(Ljp/co/sony/mc/camera/rtmp/NetworkManager$ConnectLevel;)V",
-        "connectivityManager",
-        "Landroid/net/ConnectivityManager;",
-        "networkCallback",
-        "Landroid/net/ConnectivityManager$NetworkCallback;",
-        "networkCapabilities",
-        "Landroid/net/NetworkCapabilities;",
-        "networkStateListeners",
-        "Ljava/util/concurrent/CopyOnWriteArrayList;",
-        "Ljp/co/sony/mc/camera/rtmp/NetworkManager$NetworkStateListener;",
-        "signalStrength",
-        "Landroid/telephony/SignalStrength;",
-        "telephonyManager",
-        "Landroid/telephony/TelephonyManager;",
-        "wifiManager",
-        "Landroid/net/wifi/WifiManager;",
-        "capabilitiesChanged",
-        "",
-        "getNetworkState",
-        "Ljp/co/sony/mc/camera/rtmp/NetworkManager$NetworkState;",
-        "notifyNetworkState",
         "registerNetworkCallback",
+        "",
+        "unregisterNetworkCallback",
         "registerNetworkStateListener",
         "networkStateListener",
-        "unregisterNetworkCallback",
         "unregisterNetworkStateListener",
+        "getNetworkState",
+        "Ljp/co/sony/mc/camera/rtmp/NetworkManager$NetworkState;",
+        "capabilitiesChanged",
+        "notifyNetworkState",
         "updateConnectState",
-        "Companion",
-        "ConnectLevel",
         "NetworkState",
+        "ConnectLevel",
         "NetworkStateListener",
+        "Companion",
         "SignalStrengthsListenerImpl",
         "SomcCamera_release"
     }
     k = 0x1
     mv = {
-        0x1,
-        0x9,
+        0x2,
+        0x0,
         0x0
     }
     xi = 0x30
@@ -305,6 +306,10 @@
 
     move-result-object v0
 
+    const-string v1, "iterator(...)"
+
+    invoke-static {v0, v1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
+
     :goto_0
     invoke-interface {v0}, Ljava/util/Iterator;->hasNext()Z
 
@@ -362,7 +367,6 @@
 
     packed-switch v0, :pswitch_data_0
 
-    .line 213
     new-instance p0, Lkotlin/NoWhenBranchMatchedException;
 
     invoke-direct {p0}, Lkotlin/NoWhenBranchMatchedException;-><init>()V

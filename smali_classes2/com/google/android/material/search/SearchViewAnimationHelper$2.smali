@@ -5,7 +5,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/google/android/material/search/SearchViewAnimationHelper;->startHideAnimationCollapse()V
+    value = Lcom/google/android/material/search/SearchViewAnimationHelper;->startHideAnimationCollapse()Landroid/animation/AnimatorSet;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -22,7 +22,7 @@
 .method constructor <init>(Lcom/google/android/material/search/SearchViewAnimationHelper;)V
     .locals 0
 
-    .line 167
+    .line 183
     iput-object p1, p0, Lcom/google/android/material/search/SearchViewAnimationHelper$2;->this$0:Lcom/google/android/material/search/SearchViewAnimationHelper;
 
     invoke-direct {p0}, Landroid/animation/AnimatorListenerAdapter;-><init>()V
@@ -35,7 +35,7 @@
 .method public onAnimationEnd(Landroid/animation/Animator;)V
     .locals 1
 
-    .line 175
+    .line 191
     iget-object p1, p0, Lcom/google/android/material/search/SearchViewAnimationHelper$2;->this$0:Lcom/google/android/material/search/SearchViewAnimationHelper;
 
     invoke-static {p1}, Lcom/google/android/material/search/SearchViewAnimationHelper;->access$100(Lcom/google/android/material/search/SearchViewAnimationHelper;)Lcom/google/android/material/internal/ClippableRoundedCornerLayout;
@@ -46,7 +46,7 @@
 
     invoke-virtual {p1, v0}, Lcom/google/android/material/internal/ClippableRoundedCornerLayout;->setVisibility(I)V
 
-    .line 176
+    .line 192
     iget-object p1, p0, Lcom/google/android/material/search/SearchViewAnimationHelper$2;->this$0:Lcom/google/android/material/search/SearchViewAnimationHelper;
 
     invoke-static {p1}, Lcom/google/android/material/search/SearchViewAnimationHelper;->access$000(Lcom/google/android/material/search/SearchViewAnimationHelper;)Lcom/google/android/material/search/SearchView;
@@ -59,7 +59,7 @@
 
     if-nez p1, :cond_0
 
-    .line 177
+    .line 193
     iget-object p1, p0, Lcom/google/android/material/search/SearchViewAnimationHelper$2;->this$0:Lcom/google/android/material/search/SearchViewAnimationHelper;
 
     invoke-static {p1}, Lcom/google/android/material/search/SearchViewAnimationHelper;->access$000(Lcom/google/android/material/search/SearchViewAnimationHelper;)Lcom/google/android/material/search/SearchView;
@@ -68,7 +68,7 @@
 
     invoke-virtual {p1}, Lcom/google/android/material/search/SearchView;->clearFocusAndHideKeyboard()V
 
-    .line 179
+    .line 195
     :cond_0
     iget-object p0, p0, Lcom/google/android/material/search/SearchViewAnimationHelper$2;->this$0:Lcom/google/android/material/search/SearchViewAnimationHelper;
 
@@ -86,7 +86,7 @@
 .method public onAnimationStart(Landroid/animation/Animator;)V
     .locals 0
 
-    .line 170
+    .line 186
     iget-object p0, p0, Lcom/google/android/material/search/SearchViewAnimationHelper$2;->this$0:Lcom/google/android/material/search/SearchViewAnimationHelper;
 
     invoke-static {p0}, Lcom/google/android/material/search/SearchViewAnimationHelper;->access$000(Lcom/google/android/material/search/SearchViewAnimationHelper;)Lcom/google/android/material/search/SearchView;

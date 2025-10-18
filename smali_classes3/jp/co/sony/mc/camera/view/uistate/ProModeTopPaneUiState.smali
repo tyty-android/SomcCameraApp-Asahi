@@ -6,7 +6,7 @@
 # annotations
 .annotation runtime Lkotlin/Metadata;
     d1 = {
-        "\u0000B\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0002\u0010\u000b\n\u0002\u0008\u0003\n\u0002\u0018\u0002\n\u0002\u0008\u0007\n\u0002\u0010\u0008\n\u0002\u0008\u0006\n\u0002\u0010\u0002\n\u0002\u0008\u0003\u0008\u0007\u0018\u00002\u00020\u0001B\u001d\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\u0006\u0010\u0004\u001a\u00020\u0005\u0012\u0006\u0010\u0006\u001a\u00020\u0007\u00a2\u0006\u0002\u0010\u0008J\u0006\u0010\u001c\u001a\u00020\u000bJ\u0006\u0010\u001d\u001a\u00020\u001eJ\u0006\u0010\u001f\u001a\u00020\u001eJ\u0006\u0010 \u001a\u00020\u001eR\u001c\u0010\t\u001a\u0010\u0012\u000c\u0012\n \u000c*\u0004\u0018\u00010\u000b0\u000b0\nX\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u001c\u0010\r\u001a\u0010\u0012\u000c\u0012\n \u000c*\u0004\u0018\u00010\u000b0\u000b0\nX\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u0004\u001a\u00020\u0005X\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u0002\u001a\u00020\u0003X\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u0017\u0010\u000e\u001a\u0008\u0012\u0004\u0012\u00020\u000b0\u000f\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\u0010\u0010\u0011R\u0017\u0010\u0012\u001a\u0008\u0012\u0004\u0012\u00020\u000b0\u000f\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\u0013\u0010\u0011R\u0017\u0010\u0014\u001a\u0008\u0012\u0004\u0012\u00020\u000b0\u000f\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\u0015\u0010\u0011R\u0017\u0010\u0016\u001a\u0008\u0012\u0004\u0012\u00020\u00170\u000f\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\u0018\u0010\u0011R\u0017\u0010\u0019\u001a\u0008\u0012\u0004\u0012\u00020\u000b0\u000f\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\u0019\u0010\u0011R\u000e\u0010\u0006\u001a\u00020\u0007X\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u0017\u0010\u001a\u001a\u0008\u0012\u0004\u0012\u00020\u000b0\u000f\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\u001b\u0010\u0011\u00a8\u0006!"
+        "\u0000B\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0003\n\u0002\u0018\u0002\n\u0002\u0010\u000b\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0008\n\u0002\u0010\u0002\n\u0002\u0008\u0003\n\u0002\u0010\u0008\n\u0002\u0008\u0006\u0008\u0007\u0018\u00002\u00020\u0001B\u001f\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\u0006\u0010\u0004\u001a\u00020\u0005\u0012\u0006\u0010\u0006\u001a\u00020\u0007\u00a2\u0006\u0004\u0008\u0008\u0010\tJ\u0006\u0010\u0017\u001a\u00020\u0018J\u0006\u0010\u0019\u001a\u00020\u0018J\u0006\u0010\u001a\u001a\u00020\u000cJ\u0006\u0010!\u001a\u00020\u0018R\u000e\u0010\u0002\u001a\u00020\u0003X\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u0004\u001a\u00020\u0005X\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u0006\u001a\u00020\u0007X\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u001c\u0010\n\u001a\u0010\u0012\u000c\u0012\n \r*\u0004\u0018\u00010\u000c0\u000c0\u000bX\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u0017\u0010\u000e\u001a\u0008\u0012\u0004\u0012\u00020\u000c0\u000f\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\u0010\u0010\u0011R\u001c\u0010\u0012\u001a\u0010\u0012\u000c\u0012\n \r*\u0004\u0018\u00010\u000c0\u000c0\u000bX\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u0017\u0010\u0013\u001a\u0008\u0012\u0004\u0012\u00020\u000c0\u000f\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\u0014\u0010\u0011R\u0017\u0010\u0015\u001a\u0008\u0012\u0004\u0012\u00020\u000c0\u000f\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\u0016\u0010\u0011R\u0017\u0010\u001b\u001a\u0008\u0012\u0004\u0012\u00020\u001c0\u000f\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\u001d\u0010\u0011R\u0017\u0010\u001e\u001a\u0008\u0012\u0004\u0012\u00020\u000c0\u000f\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\u001f\u0010\u0011R\u0017\u0010 \u001a\u0008\u0012\u0004\u0012\u00020\u000c0\u000f\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008 \u0010\u0011\u00a8\u0006\""
     }
     d2 = {
         "Ljp/co/sony/mc/camera/view/uistate/ProModeTopPaneUiState;",
@@ -17,37 +17,38 @@
         "Ljp/co/sony/mc/camera/view/viewmodel/CameraSettingsModel;",
         "proModeCommonUiState",
         "Ljp/co/sony/mc/camera/view/uistate/ProModeCommonUiState;",
+        "<init>",
         "(Ljp/co/sony/mc/camera/view/viewmodel/CameraStatusModel;Ljp/co/sony/mc/camera/view/viewmodel/CameraSettingsModel;Ljp/co/sony/mc/camera/view/uistate/ProModeCommonUiState;)V",
-        "_capturingModeInfoVisible",
+        "_capturingModeMenuVisible",
         "Landroidx/lifecycle/MutableLiveData;",
         "",
         "kotlin.jvm.PlatformType",
-        "_capturingModeMenuVisible",
-        "capturingModeButtonVisible",
+        "capturingModeMenuVisible",
         "Landroidx/lifecycle/LiveData;",
-        "getCapturingModeButtonVisible",
+        "getCapturingModeMenuVisible",
         "()Landroidx/lifecycle/LiveData;",
+        "_capturingModeInfoVisible",
         "capturingModeInfoVisible",
         "getCapturingModeInfoVisible",
-        "capturingModeMenuVisible",
-        "getCapturingModeMenuVisible",
+        "capturingModeButtonVisible",
+        "getCapturingModeButtonVisible",
+        "toggleCapturingModeMenuVisible",
+        "",
+        "toggleCapturingModeInfoVisible",
+        "hideCapturingModeMenu",
         "hideFnMenuCoverVisibility",
         "",
         "getHideFnMenuCoverVisibility",
-        "isSettingMenuEnabled",
         "settingMenuButtonVisible",
         "getSettingMenuButtonVisible",
-        "hideCapturingModeMenu",
+        "isSettingMenuEnabled",
         "onPause",
-        "",
-        "toggleCapturingModeInfoVisible",
-        "toggleCapturingModeMenuVisible",
         "SomcCamera_release"
     }
     k = 0x1
     mv = {
-        0x1,
-        0x9,
+        0x2,
+        0x0,
         0x0
     }
     xi = 0x30
@@ -147,6 +148,46 @@
 
 
 # direct methods
+.method public static synthetic $r8$lambda$G4vIpthHvP216cKXJmRx95s-eHs(Lkotlin/Unit;ZLjp/co/sony/mc/camera/configuration/parameters/CapturingMode;ZLjava/lang/Boolean;Ljp/co/sony/mc/camera/configuration/parameters/AutoFocusLock;)Z
+    .locals 0
+
+    invoke-static/range {p0 .. p5}, Ljp/co/sony/mc/camera/view/uistate/ProModeTopPaneUiState;->isSettingMenuEnabled$lambda$3(Lkotlin/Unit;ZLjp/co/sony/mc/camera/configuration/parameters/CapturingMode;ZLjava/lang/Boolean;Ljp/co/sony/mc/camera/configuration/parameters/AutoFocusLock;)Z
+
+    move-result p0
+
+    return p0
+.end method
+
+.method public static synthetic $r8$lambda$Vchz7hskofeKCnVF0qib2Z8uoJ4(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;)Z
+    .locals 0
+
+    invoke-static {p0}, Ljp/co/sony/mc/camera/view/uistate/ProModeTopPaneUiState;->capturingModeButtonVisible$lambda$0(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;)Z
+
+    move-result p0
+
+    return p0
+.end method
+
+.method public static synthetic $r8$lambda$p3aM87VfdKZLVYVhaYRe02v9u1Y(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;)Z
+    .locals 0
+
+    invoke-static {p0}, Ljp/co/sony/mc/camera/view/uistate/ProModeTopPaneUiState;->settingMenuButtonVisible$lambda$2(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;)Z
+
+    move-result p0
+
+    return p0
+.end method
+
+.method public static synthetic $r8$lambda$xf7xFzbcUGlrL5qb0M55p4Ax2cI(ZZ)I
+    .locals 0
+
+    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/view/uistate/ProModeTopPaneUiState;->hideFnMenuCoverVisibility$lambda$1(ZZ)I
+
+    move-result p0
+
+    return p0
+.end method
+
 .method static constructor <clinit>()V
     .locals 0
 
@@ -215,9 +256,9 @@
 
     move-result-object v0
 
-    sget-object v1, Ljp/co/sony/mc/camera/view/uistate/ProModeTopPaneUiState$capturingModeButtonVisible$1;->INSTANCE:Ljp/co/sony/mc/camera/view/uistate/ProModeTopPaneUiState$capturingModeButtonVisible$1;
+    new-instance v1, Ljp/co/sony/mc/camera/view/uistate/ProModeTopPaneUiState$$ExternalSyntheticLambda0;
 
-    check-cast v1, Lkotlin/jvm/functions/Function1;
+    invoke-direct {v1}, Ljp/co/sony/mc/camera/view/uistate/ProModeTopPaneUiState$$ExternalSyntheticLambda0;-><init>()V
 
     invoke-static {v0, v1}, Landroidx/lifecycle/Transformations;->map(Landroidx/lifecycle/LiveData;Lkotlin/jvm/functions/Function1;)Landroidx/lifecycle/LiveData;
 
@@ -238,11 +279,11 @@
 
     move-result-object v2
 
+    new-instance v3, Ljp/co/sony/mc/camera/view/uistate/ProModeTopPaneUiState$$ExternalSyntheticLambda1;
+
+    invoke-direct {v3}, Ljp/co/sony/mc/camera/view/uistate/ProModeTopPaneUiState$$ExternalSyntheticLambda1;-><init>()V
+
     .line 49
-    sget-object v3, Ljp/co/sony/mc/camera/view/uistate/ProModeTopPaneUiState$hideFnMenuCoverVisibility$1;->INSTANCE:Ljp/co/sony/mc/camera/view/uistate/ProModeTopPaneUiState$hideFnMenuCoverVisibility$1;
-
-    check-cast v3, Lkotlin/jvm/functions/Function2;
-
     invoke-virtual {v0, v1, v2, v3}, Ljp/co/sony/mc/camera/view/viewmodel/LiveDataMediators;->notNulls(Landroidx/lifecycle/LiveData;Landroidx/lifecycle/LiveData;Lkotlin/jvm/functions/Function2;)Landroidx/lifecycle/LiveData;
 
     move-result-object v0
@@ -254,9 +295,9 @@
 
     move-result-object v0
 
-    sget-object v1, Ljp/co/sony/mc/camera/view/uistate/ProModeTopPaneUiState$settingMenuButtonVisible$1;->INSTANCE:Ljp/co/sony/mc/camera/view/uistate/ProModeTopPaneUiState$settingMenuButtonVisible$1;
+    new-instance v1, Ljp/co/sony/mc/camera/view/uistate/ProModeTopPaneUiState$$ExternalSyntheticLambda2;
 
-    check-cast v1, Lkotlin/jvm/functions/Function1;
+    invoke-direct {v1}, Ljp/co/sony/mc/camera/view/uistate/ProModeTopPaneUiState$$ExternalSyntheticLambda2;-><init>()V
 
     invoke-static {v0, v1}, Landroidx/lifecycle/Transformations;->map(Landroidx/lifecycle/LiveData;Lkotlin/jvm/functions/Function1;)Landroidx/lifecycle/LiveData;
 
@@ -297,13 +338,11 @@
 
     move-result-object v7
 
+    new-instance v8, Ljp/co/sony/mc/camera/view/uistate/ProModeTopPaneUiState$$ExternalSyntheticLambda3;
+
+    invoke-direct {v8}, Ljp/co/sony/mc/camera/view/uistate/ProModeTopPaneUiState$$ExternalSyntheticLambda3;-><init>()V
+
     .line 61
-    sget-object p1, Ljp/co/sony/mc/camera/view/uistate/ProModeTopPaneUiState$isSettingMenuEnabled$1;->INSTANCE:Ljp/co/sony/mc/camera/view/uistate/ProModeTopPaneUiState$isSettingMenuEnabled$1;
-
-    move-object v8, p1
-
-    check-cast v8, Lkotlin/jvm/functions/Function6;
-
     invoke-virtual/range {v1 .. v8}, Ljp/co/sony/mc/camera/view/viewmodel/LiveDataMediators;->notNulls(Landroidx/lifecycle/LiveData;Landroidx/lifecycle/LiveData;Landroidx/lifecycle/LiveData;Landroidx/lifecycle/LiveData;Landroidx/lifecycle/LiveData;Landroidx/lifecycle/LiveData;Lkotlin/jvm/functions/Function6;)Landroidx/lifecycle/LiveData;
 
     move-result-object p1
@@ -311,6 +350,114 @@
     iput-object p1, p0, Ljp/co/sony/mc/camera/view/uistate/ProModeTopPaneUiState;->isSettingMenuEnabled:Landroidx/lifecycle/LiveData;
 
     return-void
+.end method
+
+.method private static final capturingModeButtonVisible$lambda$0(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;)Z
+    .locals 0
+
+    .line 29
+    invoke-virtual {p0}, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->isQuickRecord()Z
+
+    move-result p0
+
+    xor-int/lit8 p0, p0, 0x1
+
+    return p0
+.end method
+
+.method private static final hideFnMenuCoverVisibility$lambda$1(ZZ)I
+    .locals 2
+
+    const/4 v0, 0x1
+
+    const/4 v1, 0x0
+
+    if-eqz p0, :cond_0
+
+    if-nez p1, :cond_0
+
+    move p0, v0
+
+    goto :goto_0
+
+    :cond_0
+    move p0, v1
+
+    :goto_0
+    if-ne p0, v0, :cond_1
+
+    goto :goto_1
+
+    :cond_1
+    if-nez p0, :cond_2
+
+    const/16 v1, 0x8
+
+    :goto_1
+    return v1
+
+    .line 53
+    :cond_2
+    new-instance p0, Lkotlin/NoWhenBranchMatchedException;
+
+    invoke-direct {p0}, Lkotlin/NoWhenBranchMatchedException;-><init>()V
+
+    throw p0
+.end method
+
+.method private static final isSettingMenuEnabled$lambda$3(Lkotlin/Unit;ZLjp/co/sony/mc/camera/configuration/parameters/CapturingMode;ZLjava/lang/Boolean;Ljp/co/sony/mc/camera/configuration/parameters/AutoFocusLock;)Z
+    .locals 1
+
+    const-string v0, "<unused var>"
+
+    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 69
+    invoke-virtual {p2}, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->isQuickRecord()Z
+
+    move-result p0
+
+    if-nez p0, :cond_0
+
+    if-eqz p3, :cond_0
+
+    invoke-virtual {p4}, Ljava/lang/Boolean;->booleanValue()Z
+
+    move-result p0
+
+    if-nez p0, :cond_0
+
+    .line 70
+    invoke-virtual {p5}, Ljp/co/sony/mc/camera/configuration/parameters/AutoFocusLock;->getBooleanValue()Z
+
+    move-result p0
+
+    if-nez p0, :cond_0
+
+    if-nez p1, :cond_0
+
+    const/4 p0, 0x1
+
+    goto :goto_0
+
+    :cond_0
+    const/4 p0, 0x0
+
+    :goto_0
+    return p0
+.end method
+
+.method private static final settingMenuButtonVisible$lambda$2(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;)Z
+    .locals 0
+
+    .line 59
+    invoke-virtual {p0}, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->isQuickRecord()Z
+
+    move-result p0
+
+    xor-int/lit8 p0, p0, 0x1
+
+    return p0
 .end method
 
 

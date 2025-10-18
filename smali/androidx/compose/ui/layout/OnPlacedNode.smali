@@ -53,7 +53,7 @@
 
 # direct methods
 .method public constructor <init>(Lkotlin/jvm/functions/Function1;)V
-    .locals 1
+    .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -64,10 +64,6 @@
             ">;)V"
         }
     .end annotation
-
-    const-string v0, "callback"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 55
     invoke-direct {p0}, Landroidx/compose/ui/Modifier$Node;-><init>()V
@@ -99,11 +95,7 @@
 .end method
 
 .method public onPlaced(Landroidx/compose/ui/layout/LayoutCoordinates;)V
-    .locals 1
-
-    const-string v0, "coordinates"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+    .locals 0
 
     .line 58
     iget-object p0, p0, Landroidx/compose/ui/layout/OnPlacedNode;->callback:Lkotlin/jvm/functions/Function1;
@@ -114,7 +106,7 @@
 .end method
 
 .method public final setCallback(Lkotlin/jvm/functions/Function1;)V
-    .locals 1
+    .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -125,10 +117,6 @@
             ">;)V"
         }
     .end annotation
-
-    const-string v0, "<set-?>"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 54
     iput-object p1, p0, Landroidx/compose/ui/layout/OnPlacedNode;->callback:Lkotlin/jvm/functions/Function1;

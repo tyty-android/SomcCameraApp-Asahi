@@ -20,7 +20,7 @@
 
     const/4 v0, 0x0
 
-    .line 50
+    .line 51
     invoke-direct {p0, p1, p2, v0}, Lcom/google/gson/ToNumberPolicy;-><init>(Ljava/lang/String;ILcom/google/gson/ToNumberPolicy$1;)V
 
     return-void
@@ -36,7 +36,7 @@
         }
     .end annotation
 
-    .line 52
+    .line 54
     new-instance p0, Lcom/google/gson/internal/LazilyParsedNumber;
 
     invoke-virtual {p1}, Lcom/google/gson/stream/JsonReader;->nextString()Ljava/lang/String;

@@ -1,6 +1,6 @@
 .class final Landroidx/compose/ui/text/platform/ImmutableBool;
 .super Ljava/lang/Object;
-.source "EmojiCompatStatus.kt"
+.source "EmojiCompatStatus.android.kt"
 
 # interfaces
 .implements Landroidx/compose/runtime/State;

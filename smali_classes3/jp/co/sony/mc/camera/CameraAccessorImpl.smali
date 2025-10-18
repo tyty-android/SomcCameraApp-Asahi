@@ -44,7 +44,7 @@
         }
     .end annotation
 
-    .line 180
+    .line 192
     iget-object p0, p0, Ljp/co/sony/mc/camera/CameraAccessorImpl;->mStateMachine:Ljp/co/sony/mc/camera/controller/StateMachine;
 
     sget-object v0, Ljp/co/sony/mc/camera/controller/StateMachine$TransitterEvent;->EVENT_APPLY_CHANGED_SETTING:Ljp/co/sony/mc/camera/controller/StateMachine$TransitterEvent;
@@ -61,7 +61,7 @@
 .method public applyShutterSoundSetting(ZZ)V
     .locals 0
 
-    .line 187
+    .line 199
     iget-object p0, p0, Ljp/co/sony/mc/camera/CameraAccessorImpl;->mStateMachine:Ljp/co/sony/mc/camera/controller/StateMachine;
 
     invoke-virtual {p0, p1, p2}, Ljp/co/sony/mc/camera/controller/StateMachine;->setShutterSoundSetting(ZZ)V
@@ -72,7 +72,7 @@
 .method public cancelCapture()V
     .locals 2
 
-    .line 264
+    .line 276
     iget-object p0, p0, Ljp/co/sony/mc/camera/CameraAccessorImpl;->mStateMachine:Ljp/co/sony/mc/camera/controller/StateMachine;
 
     sget-object v0, Ljp/co/sony/mc/camera/controller/StateMachine$TransitterEvent;->EVENT_CAPTURE_CANCEL:Ljp/co/sony/mc/camera/controller/StateMachine$TransitterEvent;
@@ -89,7 +89,7 @@
 .method public cancelPrepareCapture(Z)V
     .locals 1
 
-    .line 252
+    .line 264
     iget-object p0, p0, Ljp/co/sony/mc/camera/CameraAccessorImpl;->mStateMachine:Ljp/co/sony/mc/camera/controller/StateMachine;
 
     sget-object v0, Ljp/co/sony/mc/camera/controller/StateMachine$TransitterEvent;->EVENT_CANCEL_PREPARE_CAPTURE:Ljp/co/sony/mc/camera/controller/StateMachine$TransitterEvent;
@@ -116,12 +116,12 @@
 .method public clearTouchFocus(Ljp/co/sony/mc/camera/configuration/parameters/FocusArea;Ljp/co/sony/mc/camera/configuration/parameters/Metering;Z)V
     .locals 1
 
-    .line 216
+    .line 228
     iget-object p0, p0, Ljp/co/sony/mc/camera/CameraAccessorImpl;->mStateMachine:Ljp/co/sony/mc/camera/controller/StateMachine;
 
     sget-object v0, Ljp/co/sony/mc/camera/controller/StateMachine$TransitterEvent;->EVENT_CLEAR_FOCUS:Ljp/co/sony/mc/camera/controller/StateMachine$TransitterEvent;
 
-    .line 218
+    .line 230
     invoke-static {p3}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
     move-result-object p3
@@ -130,7 +130,7 @@
 
     move-result-object p1
 
-    .line 216
+    .line 228
     invoke-virtual {p0, v0, p1}, Ljp/co/sony/mc/camera/controller/StateMachine;->sendEvent(Ljp/co/sony/mc/camera/controller/StateMachine$TransitterEvent;[Ljava/lang/Object;)V
 
     return-void
@@ -139,7 +139,7 @@
 .method public closeCamera()V
     .locals 0
 
-    .line 347
+    .line 359
     iget-object p0, p0, Ljp/co/sony/mc/camera/CameraAccessorImpl;->mStateMachine:Ljp/co/sony/mc/camera/controller/StateMachine;
 
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/controller/StateMachine;->closeCamera()V
@@ -150,7 +150,7 @@
 .method public closeCamera(Ljp/co/sony/mc/camera/CameraAccessor$CameraDeviceClosedCallback;)V
     .locals 0
 
-    .line 352
+    .line 364
     iget-object p0, p0, Ljp/co/sony/mc/camera/CameraAccessorImpl;->mStateMachine:Ljp/co/sony/mc/camera/controller/StateMachine;
 
     invoke-virtual {p0, p1}, Ljp/co/sony/mc/camera/controller/StateMachine;->closeCamera(Ljp/co/sony/mc/camera/CameraAccessor$CameraDeviceClosedCallback;)V
@@ -161,7 +161,7 @@
 .method public disableYuvFrameDrawMode()V
     .locals 2
 
-    .line 480
+    .line 492
     iget-object p0, p0, Ljp/co/sony/mc/camera/CameraAccessorImpl;->mStateMachine:Ljp/co/sony/mc/camera/controller/StateMachine;
 
     sget-object v0, Ljp/co/sony/mc/camera/controller/StateMachine$TransitterEvent;->EVENT_DISABLE_YUV_FRAME_DRAW_MODE:Ljp/co/sony/mc/camera/controller/StateMachine$TransitterEvent;
@@ -178,7 +178,7 @@
 .method public enableYuvFrameDrawMode()V
     .locals 2
 
-    .line 475
+    .line 487
     iget-object p0, p0, Ljp/co/sony/mc/camera/CameraAccessorImpl;->mStateMachine:Ljp/co/sony/mc/camera/controller/StateMachine;
 
     sget-object v0, Ljp/co/sony/mc/camera/controller/StateMachine$TransitterEvent;->EVENT_ENABLE_YUV_FRAME_DRAW_MODE:Ljp/co/sony/mc/camera/controller/StateMachine$TransitterEvent;
@@ -195,7 +195,7 @@
 .method public forceFallbackOn()V
     .locals 2
 
-    .line 485
+    .line 497
     iget-object p0, p0, Ljp/co/sony/mc/camera/CameraAccessorImpl;->mStateMachine:Ljp/co/sony/mc/camera/controller/StateMachine;
 
     sget-object v0, Ljp/co/sony/mc/camera/controller/StateMachine$TransitterEvent;->EVENT_FORCE_FALLBACK_ON:Ljp/co/sony/mc/camera/controller/StateMachine$TransitterEvent;
@@ -212,7 +212,7 @@
 .method public lockAutoFocus(Ljp/co/sony/mc/camera/CameraAccessor$AutoFocusCallback;)V
     .locals 1
 
-    .line 235
+    .line 247
     iget-object p0, p0, Ljp/co/sony/mc/camera/CameraAccessorImpl;->mStateMachine:Ljp/co/sony/mc/camera/controller/StateMachine;
 
     sget-object v0, Ljp/co/sony/mc/camera/controller/StateMachine$TransitterEvent;->EVENT_REQUEST_AF_LOCK:Ljp/co/sony/mc/camera/controller/StateMachine$TransitterEvent;
@@ -229,7 +229,7 @@
 .method public lockAutoWhiteBalance()V
     .locals 0
 
-    .line 424
+    .line 436
     iget-object p0, p0, Ljp/co/sony/mc/camera/CameraAccessorImpl;->mStateMachine:Ljp/co/sony/mc/camera/controller/StateMachine;
 
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/controller/StateMachine;->lockAutoWhiteBalance()V
@@ -240,7 +240,7 @@
 .method public pauseRecording()V
     .locals 2
 
-    .line 295
+    .line 307
     iget-object p0, p0, Ljp/co/sony/mc/camera/CameraAccessorImpl;->mStateMachine:Ljp/co/sony/mc/camera/controller/StateMachine;
 
     sget-object v0, Ljp/co/sony/mc/camera/controller/StateMachine$TransitterEvent;->EVENT_PAUSE_RECORDING:Ljp/co/sony/mc/camera/controller/StateMachine$TransitterEvent;
@@ -257,12 +257,12 @@
 .method public prepareCapture(Ljp/co/sony/mc/camera/CameraAccessor$AutoFocusCallback;Z)V
     .locals 1
 
-    .line 246
+    .line 258
     iget-object p0, p0, Ljp/co/sony/mc/camera/CameraAccessorImpl;->mStateMachine:Ljp/co/sony/mc/camera/controller/StateMachine;
 
     sget-object v0, Ljp/co/sony/mc/camera/controller/StateMachine$TransitterEvent;->EVENT_CAPTURE_READY:Ljp/co/sony/mc/camera/controller/StateMachine$TransitterEvent;
 
-    .line 247
+    .line 259
     invoke-static {p2}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
     move-result-object p2
@@ -271,7 +271,7 @@
 
     move-result-object p1
 
-    .line 246
+    .line 258
     invoke-virtual {p0, v0, p1}, Ljp/co/sony/mc/camera/controller/StateMachine;->sendEvent(Ljp/co/sony/mc/camera/controller/StateMachine$TransitterEvent;[Ljava/lang/Object;)V
 
     return-void
@@ -280,7 +280,7 @@
 .method public prepareObjectTracking()V
     .locals 2
 
-    .line 310
+    .line 322
     iget-object p0, p0, Ljp/co/sony/mc/camera/CameraAccessorImpl;->mStateMachine:Ljp/co/sony/mc/camera/controller/StateMachine;
 
     sget-object v0, Ljp/co/sony/mc/camera/controller/StateMachine$TransitterEvent;->EVENT_PREPARE_OBJECT_TRACKING:Ljp/co/sony/mc/camera/controller/StateMachine$TransitterEvent;
@@ -297,7 +297,7 @@
 .method public prepareRecording()V
     .locals 2
 
-    .line 275
+    .line 287
     iget-object p0, p0, Ljp/co/sony/mc/camera/CameraAccessorImpl;->mStateMachine:Ljp/co/sony/mc/camera/controller/StateMachine;
 
     sget-object v0, Ljp/co/sony/mc/camera/controller/StateMachine$TransitterEvent;->EVENT_RECORD_READY:Ljp/co/sony/mc/camera/controller/StateMachine$TransitterEvent;
@@ -314,7 +314,7 @@
 .method public prepareSurfaceSwitch(Ljp/co/sony/mc/camera/CameraAccessor$SurfaceSwitchCallback;)V
     .locals 1
 
-    .line 378
+    .line 390
     iget-object p0, p0, Ljp/co/sony/mc/camera/CameraAccessorImpl;->mStateMachine:Ljp/co/sony/mc/camera/controller/StateMachine;
 
     sget-object v0, Ljp/co/sony/mc/camera/controller/StateMachine$TransitterEvent;->EVENT_PREPARE_SURFACE_SWITCH:Ljp/co/sony/mc/camera/controller/StateMachine$TransitterEvent;
@@ -331,7 +331,7 @@
 .method public registerPrepareCaptureCallback(Ljp/co/sony/mc/camera/CameraAccessor$PrepareCaptureCallback;)V
     .locals 0
 
-    .line 305
+    .line 317
     iget-object p0, p0, Ljp/co/sony/mc/camera/CameraAccessorImpl;->mStateMachine:Ljp/co/sony/mc/camera/controller/StateMachine;
 
     invoke-virtual {p0, p1}, Ljp/co/sony/mc/camera/controller/StateMachine;->registerPrepareCaptureCallback(Ljp/co/sony/mc/camera/CameraAccessor$PrepareCaptureCallback;)V
@@ -342,7 +342,7 @@
 .method public registerRecordingCallback(Ljp/co/sony/mc/camera/CameraAccessor$RecordingCallback;)V
     .locals 0
 
-    .line 300
+    .line 312
     iget-object p0, p0, Ljp/co/sony/mc/camera/CameraAccessorImpl;->mStateMachine:Ljp/co/sony/mc/camera/controller/StateMachine;
 
     invoke-virtual {p0, p1}, Ljp/co/sony/mc/camera/controller/StateMachine;->registerRecordingCallback(Ljp/co/sony/mc/camera/CameraAccessor$RecordingCallback;)V
@@ -353,12 +353,12 @@
 .method public requestHighPerformanceMode(Z)V
     .locals 1
 
-    .line 418
+    .line 430
     iget-object p0, p0, Ljp/co/sony/mc/camera/CameraAccessorImpl;->mStateMachine:Ljp/co/sony/mc/camera/controller/StateMachine;
 
     sget-object v0, Ljp/co/sony/mc/camera/controller/StateMachine$StaticEvent;->EVENT_REQUEST_HIGH_PERFORMANCE_MODE:Ljp/co/sony/mc/camera/controller/StateMachine$StaticEvent;
 
-    .line 419
+    .line 431
     invoke-static {p1}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
     move-result-object p1
@@ -367,7 +367,7 @@
 
     move-result-object p1
 
-    .line 418
+    .line 430
     invoke-virtual {p0, v0, p1}, Ljp/co/sony/mc/camera/controller/StateMachine;->sendStaticEvent(Ljp/co/sony/mc/camera/controller/StateMachine$StaticEvent;[Ljava/lang/Object;)V
 
     return-void
@@ -376,7 +376,7 @@
 .method public requestStartHistogramMonitoring()V
     .locals 2
 
-    .line 368
+    .line 380
     iget-object p0, p0, Ljp/co/sony/mc/camera/CameraAccessorImpl;->mStateMachine:Ljp/co/sony/mc/camera/controller/StateMachine;
 
     sget-object v0, Ljp/co/sony/mc/camera/controller/StateMachine$TransitterEvent;->EVENT_START_MONITOR_HISTOGRAM:Ljp/co/sony/mc/camera/controller/StateMachine$TransitterEvent;
@@ -393,7 +393,7 @@
 .method public requestStopHistogramMonitoring()V
     .locals 2
 
-    .line 373
+    .line 385
     iget-object p0, p0, Ljp/co/sony/mc/camera/CameraAccessorImpl;->mStateMachine:Ljp/co/sony/mc/camera/controller/StateMachine;
 
     sget-object v0, Ljp/co/sony/mc/camera/controller/StateMachine$TransitterEvent;->EVENT_STOP_MONITOR_HISTOGRAM:Ljp/co/sony/mc/camera/controller/StateMachine$TransitterEvent;
@@ -407,10 +407,27 @@
     return-void
 .end method
 
+.method public requestUpdateAudioDevice()V
+    .locals 2
+
+    .line 526
+    iget-object p0, p0, Ljp/co/sony/mc/camera/CameraAccessorImpl;->mStateMachine:Ljp/co/sony/mc/camera/controller/StateMachine;
+
+    sget-object v0, Ljp/co/sony/mc/camera/controller/StateMachine$StaticEvent;->EVENT_REQUEST_UPDATE_AUDIO_DEVICE:Ljp/co/sony/mc/camera/controller/StateMachine$StaticEvent;
+
+    const/4 v1, 0x0
+
+    new-array v1, v1, [Ljava/lang/Object;
+
+    invoke-virtual {p0, v0, v1}, Ljp/co/sony/mc/camera/controller/StateMachine;->sendStaticEvent(Ljp/co/sony/mc/camera/controller/StateMachine$StaticEvent;[Ljava/lang/Object;)V
+
+    return-void
+.end method
+
 .method public restartPreviewSession(Ljp/co/sony/mc/camera/setting/CameraSettingsHolder;Ljp/co/sony/mc/camera/CameraAccessor$PreviewCallback;)V
     .locals 1
 
-    .line 168
+    .line 180
     iget-object p0, p0, Ljp/co/sony/mc/camera/CameraAccessorImpl;->mStateMachine:Ljp/co/sony/mc/camera/controller/StateMachine;
 
     sget-object v0, Ljp/co/sony/mc/camera/controller/StateMachine$TransitterEvent;->EVENT_RESTART_PREVIEW_SESSION:Ljp/co/sony/mc/camera/controller/StateMachine$TransitterEvent;
@@ -427,7 +444,7 @@
 .method public resumeRecording()V
     .locals 2
 
-    .line 290
+    .line 302
     iget-object p0, p0, Ljp/co/sony/mc/camera/CameraAccessorImpl;->mStateMachine:Ljp/co/sony/mc/camera/controller/StateMachine;
 
     sget-object v0, Ljp/co/sony/mc/camera/controller/StateMachine$TransitterEvent;->EVENT_RESUME_RECORDING:Ljp/co/sony/mc/camera/controller/StateMachine$TransitterEvent;
@@ -444,7 +461,7 @@
 .method public selectFace(Landroid/graphics/Point;)V
     .locals 1
 
-    .line 223
+    .line 235
     iget-object p0, p0, Ljp/co/sony/mc/camera/CameraAccessorImpl;->mStateMachine:Ljp/co/sony/mc/camera/controller/StateMachine;
 
     sget-object v0, Ljp/co/sony/mc/camera/controller/StateMachine$TransitterEvent;->EVENT_CHANGE_SELECTED_FACE:Ljp/co/sony/mc/camera/controller/StateMachine$TransitterEvent;
@@ -487,6 +504,17 @@
     iget-object p0, p0, Ljp/co/sony/mc/camera/CameraAccessorImpl;->mCameraStatusNotifier:Ljp/co/sony/mc/camera/CameraStatusNotifierImpl;
 
     invoke-virtual {p0, p1}, Ljp/co/sony/mc/camera/CameraStatusNotifierImpl;->setAutoFlashListener(Ljp/co/sony/mc/camera/CameraStatusNotifier$AutoFlashListener;)V
+
+    return-void
+.end method
+
+.method public setAutoFramingObjectTrackingListener(Ljp/co/sony/mc/camera/CameraStatusNotifier$AutoFramingObjectTrackingListener;)V
+    .locals 0
+
+    .line 152
+    iget-object p0, p0, Ljp/co/sony/mc/camera/CameraAccessorImpl;->mCameraStatusNotifier:Ljp/co/sony/mc/camera/CameraStatusNotifierImpl;
+
+    invoke-virtual {p0, p1}, Ljp/co/sony/mc/camera/CameraStatusNotifierImpl;->setAutoFramingObjectTrackingListener(Ljp/co/sony/mc/camera/CameraStatusNotifier$AutoFramingObjectTrackingListener;)V
 
     return-void
 .end method
@@ -609,12 +637,12 @@
 .method public setFocusPosition(Landroid/graphics/Rect;ZZLjp/co/sony/mc/camera/configuration/parameters/Metering;Ljp/co/sony/mc/camera/configuration/parameters/FocusArea;Ljp/co/sony/mc/camera/CameraAccessor$AutoFocusCallback;)V
     .locals 7
 
-    .line 210
+    .line 222
     iget-object p0, p0, Ljp/co/sony/mc/camera/CameraAccessorImpl;->mStateMachine:Ljp/co/sony/mc/camera/controller/StateMachine;
 
     sget-object v0, Ljp/co/sony/mc/camera/controller/StateMachine$TransitterEvent;->EVENT_SET_TOUCHED_POSITION:Ljp/co/sony/mc/camera/controller/StateMachine$TransitterEvent;
 
-    .line 211
+    .line 223
     invoke-static {p2}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
     move-result-object v2
@@ -635,8 +663,19 @@
 
     move-result-object p1
 
-    .line 210
+    .line 222
     invoke-virtual {p0, v0, p1}, Ljp/co/sony/mc/camera/controller/StateMachine;->sendEvent(Ljp/co/sony/mc/camera/controller/StateMachine$TransitterEvent;[Ljava/lang/Object;)V
+
+    return-void
+.end method
+
+.method public setFramingAssistCroppedPositionListener(Ljp/co/sony/mc/camera/CameraStatusNotifier$FramingAssistCroppedPositionListener;)V
+    .locals 0
+
+    .line 158
+    iget-object p0, p0, Ljp/co/sony/mc/camera/CameraAccessorImpl;->mCameraStatusNotifier:Ljp/co/sony/mc/camera/CameraStatusNotifierImpl;
+
+    invoke-virtual {p0, p1}, Ljp/co/sony/mc/camera/CameraStatusNotifierImpl;->setFramngAssistCroppedPositionListener(Ljp/co/sony/mc/camera/CameraStatusNotifier$FramingAssistCroppedPositionListener;)V
 
     return-void
 .end method
@@ -677,7 +716,7 @@
 .method public setLowPowerMode()V
     .locals 2
 
-    .line 401
+    .line 413
     iget-object p0, p0, Ljp/co/sony/mc/camera/CameraAccessorImpl;->mStateMachine:Ljp/co/sony/mc/camera/controller/StateMachine;
 
     sget-object v0, Ljp/co/sony/mc/camera/controller/StateMachine$TransitterEvent;->EVENT_ON_HEATED_OVER_COOLING_LOW:Ljp/co/sony/mc/camera/controller/StateMachine$TransitterEvent;
@@ -713,13 +752,21 @@
     return-void
 .end method
 
-.method public setRecordingProfile(Ljp/co/sony/mc/camera/recorder/RecordingProfile;)V
+.method public setRecordingProfiles(Ljava/util/List;)V
     .locals 0
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Ljava/util/List<",
+            "Ljp/co/sony/mc/camera/recorder/RecordingProfile;",
+            ">;)V"
+        }
+    .end annotation
 
-    .line 337
+    .line 349
     iget-object p0, p0, Ljp/co/sony/mc/camera/CameraAccessorImpl;->mStateMachine:Ljp/co/sony/mc/camera/controller/StateMachine;
 
-    invoke-virtual {p0, p1}, Ljp/co/sony/mc/camera/controller/StateMachine;->setRecordingProfile(Ljp/co/sony/mc/camera/recorder/RecordingProfile;)V
+    invoke-virtual {p0, p1}, Ljp/co/sony/mc/camera/controller/StateMachine;->setRecordingProfile(Ljava/util/List;)V
 
     return-void
 .end method
@@ -749,7 +796,7 @@
 .method public setSurface(Landroid/view/Surface;Landroid/util/Size;)V
     .locals 1
 
-    .line 161
+    .line 173
     iget-object p0, p0, Ljp/co/sony/mc/camera/CameraAccessorImpl;->mStateMachine:Ljp/co/sony/mc/camera/controller/StateMachine;
 
     sget-object v0, Ljp/co/sony/mc/camera/controller/StateMachine$TransitterEvent;->EVENT_ON_SURFACE_PREPARED:Ljp/co/sony/mc/camera/controller/StateMachine$TransitterEvent;
@@ -766,7 +813,7 @@
 .method public setTorch(Z)V
     .locals 0
 
-    .line 342
+    .line 354
     iget-object p0, p0, Ljp/co/sony/mc/camera/CameraAccessorImpl;->mStateMachine:Ljp/co/sony/mc/camera/controller/StateMachine;
 
     invoke-virtual {p0, p1}, Ljp/co/sony/mc/camera/controller/StateMachine;->setTorchAndCommit(Z)V
@@ -777,7 +824,7 @@
 .method public setUltraLowPowerMode()V
     .locals 2
 
-    .line 395
+    .line 407
     iget-object p0, p0, Ljp/co/sony/mc/camera/CameraAccessorImpl;->mStateMachine:Ljp/co/sony/mc/camera/controller/StateMachine;
 
     sget-object v0, Ljp/co/sony/mc/camera/controller/StateMachine$TransitterEvent;->EVENT_ON_HEATED_OVER_COOLING_ULTRA_LOW:Ljp/co/sony/mc/camera/controller/StateMachine$TransitterEvent;
@@ -794,7 +841,7 @@
 .method public startAeAwbLockStateDetection()V
     .locals 0
 
-    .line 444
+    .line 456
     iget-object p0, p0, Ljp/co/sony/mc/camera/CameraAccessorImpl;->mStateMachine:Ljp/co/sony/mc/camera/controller/StateMachine;
 
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/controller/StateMachine;->startAeAwbLockStateMonitoring()V
@@ -805,7 +852,7 @@
 .method public startBurstCaptures(Ljp/co/sony/mc/camera/CameraAccessor$RequestCaptureParam;Ljp/co/sony/mc/camera/CameraAccessor$CaptureCallback;)V
     .locals 1
 
-    .line 269
+    .line 281
     iget-object p0, p0, Ljp/co/sony/mc/camera/CameraAccessorImpl;->mStateMachine:Ljp/co/sony/mc/camera/controller/StateMachine;
 
     sget-object v0, Ljp/co/sony/mc/camera/controller/StateMachine$TransitterEvent;->EVENT_CAPTURE_BURST:Ljp/co/sony/mc/camera/controller/StateMachine$TransitterEvent;
@@ -822,12 +869,12 @@
 .method public startCapture(Ljp/co/sony/mc/camera/CameraAccessor$RequestCaptureParam;Ljp/co/sony/mc/camera/CameraAccessor$CaptureCallback;Z)V
     .locals 1
 
-    .line 258
+    .line 270
     iget-object p0, p0, Ljp/co/sony/mc/camera/CameraAccessorImpl;->mStateMachine:Ljp/co/sony/mc/camera/controller/StateMachine;
 
     sget-object v0, Ljp/co/sony/mc/camera/controller/StateMachine$TransitterEvent;->EVENT_CAPTURE:Ljp/co/sony/mc/camera/controller/StateMachine$TransitterEvent;
 
-    .line 259
+    .line 271
     invoke-static {p3}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
     move-result-object p3
@@ -836,7 +883,7 @@
 
     move-result-object p1
 
-    .line 258
+    .line 270
     invoke-virtual {p0, v0, p1}, Ljp/co/sony/mc/camera/controller/StateMachine;->sendEvent(Ljp/co/sony/mc/camera/controller/StateMachine$TransitterEvent;[Ljava/lang/Object;)V
 
     return-void
@@ -845,7 +892,7 @@
 .method public startFaceDetection(Ljp/co/sony/mc/camera/configuration/parameters/FaceDetection;)V
     .locals 0
 
-    .line 327
+    .line 339
     iget-object p0, p0, Ljp/co/sony/mc/camera/CameraAccessorImpl;->mStateMachine:Ljp/co/sony/mc/camera/controller/StateMachine;
 
     invoke-virtual {p0, p1}, Ljp/co/sony/mc/camera/controller/StateMachine;->startFaceDetection(Ljp/co/sony/mc/camera/configuration/parameters/FaceDetection;)V
@@ -856,7 +903,7 @@
 .method public startFocusMagnificationResultMonitoring()V
     .locals 0
 
-    .line 434
+    .line 446
     iget-object p0, p0, Ljp/co/sony/mc/camera/CameraAccessorImpl;->mStateMachine:Ljp/co/sony/mc/camera/controller/StateMachine;
 
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/controller/StateMachine;->startFocusMagnificationResultMonitoring()V
@@ -867,7 +914,7 @@
 .method public startHandDetection()V
     .locals 2
 
-    .line 406
+    .line 418
     iget-object p0, p0, Ljp/co/sony/mc/camera/CameraAccessorImpl;->mStateMachine:Ljp/co/sony/mc/camera/controller/StateMachine;
 
     sget-object v0, Ljp/co/sony/mc/camera/controller/StateMachine$StaticEvent;->EVENT_START_HAND_SHUTTER:Ljp/co/sony/mc/camera/controller/StateMachine$StaticEvent;
@@ -881,10 +928,27 @@
     return-void
 .end method
 
+.method public startMonitorAutoFramingState()V
+    .locals 2
+
+    .line 502
+    iget-object p0, p0, Ljp/co/sony/mc/camera/CameraAccessorImpl;->mStateMachine:Ljp/co/sony/mc/camera/controller/StateMachine;
+
+    sget-object v0, Ljp/co/sony/mc/camera/controller/StateMachine$StaticEvent;->EVENT_START_MONITOR_AUTO_FRAMING_STATE:Ljp/co/sony/mc/camera/controller/StateMachine$StaticEvent;
+
+    const/4 v1, 0x0
+
+    new-array v1, v1, [Ljava/lang/Object;
+
+    invoke-virtual {p0, v0, v1}, Ljp/co/sony/mc/camera/controller/StateMachine;->sendStaticEvent(Ljp/co/sony/mc/camera/controller/StateMachine$StaticEvent;[Ljava/lang/Object;)V
+
+    return-void
+.end method
+
 .method public startMonitorFallbackState()V
     .locals 2
 
-    .line 464
+    .line 476
     iget-object p0, p0, Ljp/co/sony/mc/camera/CameraAccessorImpl;->mStateMachine:Ljp/co/sony/mc/camera/controller/StateMachine;
 
     sget-object v0, Ljp/co/sony/mc/camera/controller/StateMachine$TransitterEvent;->EVENT_START_MONITOR_FALLBACK_STATE:Ljp/co/sony/mc/camera/controller/StateMachine$TransitterEvent;
@@ -898,10 +962,27 @@
     return-void
 .end method
 
+.method public startMonitorFramingAssistCroppedPosition()V
+    .locals 2
+
+    .line 514
+    iget-object p0, p0, Ljp/co/sony/mc/camera/CameraAccessorImpl;->mStateMachine:Ljp/co/sony/mc/camera/controller/StateMachine;
+
+    sget-object v0, Ljp/co/sony/mc/camera/controller/StateMachine$StaticEvent;->EVENT_START_MONITOR_FRAMING_ASSIST_CROPPED_POSITION:Ljp/co/sony/mc/camera/controller/StateMachine$StaticEvent;
+
+    const/4 v1, 0x0
+
+    new-array v1, v1, [Ljava/lang/Object;
+
+    invoke-virtual {p0, v0, v1}, Ljp/co/sony/mc/camera/controller/StateMachine;->sendStaticEvent(Ljp/co/sony/mc/camera/controller/StateMachine$StaticEvent;[Ljava/lang/Object;)V
+
+    return-void
+.end method
+
 .method public startMonitorLowLightState()V
     .locals 2
 
-    .line 454
+    .line 466
     iget-object p0, p0, Ljp/co/sony/mc/camera/CameraAccessorImpl;->mStateMachine:Ljp/co/sony/mc/camera/controller/StateMachine;
 
     sget-object v0, Ljp/co/sony/mc/camera/controller/StateMachine$TransitterEvent;->EVENT_START_MONITOR_LOW_LIGHT_STATE:Ljp/co/sony/mc/camera/controller/StateMachine$TransitterEvent;
@@ -918,7 +999,7 @@
 .method public startMonitorPoseRotation()V
     .locals 2
 
-    .line 151
+    .line 163
     iget-object p0, p0, Ljp/co/sony/mc/camera/CameraAccessorImpl;->mStateMachine:Ljp/co/sony/mc/camera/controller/StateMachine;
 
     sget-object v0, Ljp/co/sony/mc/camera/controller/StateMachine$TransitterEvent;->EVENT_START_MONITOR_POSEROTATION:Ljp/co/sony/mc/camera/controller/StateMachine$TransitterEvent;
@@ -935,7 +1016,7 @@
 .method public startObjectTracking(Landroid/graphics/Rect;Ljp/co/sony/mc/camera/configuration/parameters/FocusMode;Ljp/co/sony/mc/camera/configuration/parameters/Metering;Ljp/co/sony/mc/camera/CameraAccessor$ObjectTrackingCallback;)V
     .locals 1
 
-    .line 316
+    .line 328
     iget-object p0, p0, Ljp/co/sony/mc/camera/CameraAccessorImpl;->mStateMachine:Ljp/co/sony/mc/camera/controller/StateMachine;
 
     sget-object v0, Ljp/co/sony/mc/camera/controller/StateMachine$TransitterEvent;->EVENT_SET_SELECTED_OBJECT_POSITION:Ljp/co/sony/mc/camera/controller/StateMachine$TransitterEvent;
@@ -952,7 +1033,7 @@
 .method public startQrScan()V
     .locals 2
 
-    .line 385
+    .line 397
     iget-object p0, p0, Ljp/co/sony/mc/camera/CameraAccessorImpl;->mStateMachine:Ljp/co/sony/mc/camera/controller/StateMachine;
 
     sget-object v0, Ljp/co/sony/mc/camera/controller/StateMachine$StaticEvent;->EVENT_START_QR_SCANNING:Ljp/co/sony/mc/camera/controller/StateMachine$StaticEvent;
@@ -966,10 +1047,18 @@
     return-void
 .end method
 
-.method public startRecording(Ljp/co/sony/mc/camera/CameraAccessor$RequestRecordingParam;)V
+.method public startRecording(Ljava/util/List;)V
     .locals 1
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Ljava/util/List<",
+            "Ljp/co/sony/mc/camera/CameraAccessor$RequestRecordingParam;",
+            ">;)V"
+        }
+    .end annotation
 
-    .line 280
+    .line 292
     iget-object p0, p0, Ljp/co/sony/mc/camera/CameraAccessorImpl;->mStateMachine:Ljp/co/sony/mc/camera/controller/StateMachine;
 
     sget-object v0, Ljp/co/sony/mc/camera/controller/StateMachine$TransitterEvent;->EVENT_START_RECORDING:Ljp/co/sony/mc/camera/controller/StateMachine$TransitterEvent;
@@ -986,7 +1075,7 @@
 .method public startWbCustom(Ljp/co/sony/mc/camera/CameraAccessor$WbCustomStateChangedCallback;)V
     .locals 1
 
-    .line 357
+    .line 369
     iget-object p0, p0, Ljp/co/sony/mc/camera/CameraAccessorImpl;->mStateMachine:Ljp/co/sony/mc/camera/controller/StateMachine;
 
     sget-object v0, Ljp/co/sony/mc/camera/controller/StateMachine$TransitterEvent;->EVENT_START_WB_CUSTOM_TRIGGER:Ljp/co/sony/mc/camera/controller/StateMachine$TransitterEvent;
@@ -995,7 +1084,7 @@
 
     move-result-object p1
 
-    .line 358
+    .line 370
     invoke-virtual {p0, v0, p1}, Ljp/co/sony/mc/camera/controller/StateMachine;->sendEvent(Ljp/co/sony/mc/camera/controller/StateMachine$TransitterEvent;[Ljava/lang/Object;)V
 
     return-void
@@ -1004,7 +1093,7 @@
 .method public stopAeAwbLockStateDetection()V
     .locals 0
 
-    .line 449
+    .line 461
     iget-object p0, p0, Ljp/co/sony/mc/camera/CameraAccessorImpl;->mStateMachine:Ljp/co/sony/mc/camera/controller/StateMachine;
 
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/controller/StateMachine;->stopAeAwbLockStateMonitoring()V
@@ -1015,7 +1104,7 @@
 .method public stopFaceDetection()V
     .locals 0
 
-    .line 332
+    .line 344
     iget-object p0, p0, Ljp/co/sony/mc/camera/CameraAccessorImpl;->mStateMachine:Ljp/co/sony/mc/camera/controller/StateMachine;
 
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/controller/StateMachine;->stopFaceDetection()V
@@ -1026,7 +1115,7 @@
 .method public stopFocusMagnificationResultMonitoring()V
     .locals 0
 
-    .line 439
+    .line 451
     iget-object p0, p0, Ljp/co/sony/mc/camera/CameraAccessorImpl;->mStateMachine:Ljp/co/sony/mc/camera/controller/StateMachine;
 
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/controller/StateMachine;->stopFocusMagnificationResultMonitoring()V
@@ -1037,7 +1126,7 @@
 .method public stopHandDetection()V
     .locals 2
 
-    .line 412
+    .line 424
     iget-object p0, p0, Ljp/co/sony/mc/camera/CameraAccessorImpl;->mStateMachine:Ljp/co/sony/mc/camera/controller/StateMachine;
 
     sget-object v0, Ljp/co/sony/mc/camera/controller/StateMachine$StaticEvent;->EVENT_STOP_HAND_SHUTTER:Ljp/co/sony/mc/camera/controller/StateMachine$StaticEvent;
@@ -1051,10 +1140,27 @@
     return-void
 .end method
 
+.method public stopMonitorAutoFramingState()V
+    .locals 2
+
+    .line 508
+    iget-object p0, p0, Ljp/co/sony/mc/camera/CameraAccessorImpl;->mStateMachine:Ljp/co/sony/mc/camera/controller/StateMachine;
+
+    sget-object v0, Ljp/co/sony/mc/camera/controller/StateMachine$StaticEvent;->EVENT_STOP_MONITOR_AUTO_FRAMING_STATE:Ljp/co/sony/mc/camera/controller/StateMachine$StaticEvent;
+
+    const/4 v1, 0x0
+
+    new-array v1, v1, [Ljava/lang/Object;
+
+    invoke-virtual {p0, v0, v1}, Ljp/co/sony/mc/camera/controller/StateMachine;->sendStaticEvent(Ljp/co/sony/mc/camera/controller/StateMachine$StaticEvent;[Ljava/lang/Object;)V
+
+    return-void
+.end method
+
 .method public stopMonitorFallbackState()V
     .locals 2
 
-    .line 469
+    .line 481
     iget-object p0, p0, Ljp/co/sony/mc/camera/CameraAccessorImpl;->mStateMachine:Ljp/co/sony/mc/camera/controller/StateMachine;
 
     sget-object v0, Ljp/co/sony/mc/camera/controller/StateMachine$TransitterEvent;->EVENT_STOP_MONITOR_FALLBACK_STATE:Ljp/co/sony/mc/camera/controller/StateMachine$TransitterEvent;
@@ -1068,10 +1174,27 @@
     return-void
 .end method
 
+.method public stopMonitorFramingAssistCroppedPosition()V
+    .locals 2
+
+    .line 520
+    iget-object p0, p0, Ljp/co/sony/mc/camera/CameraAccessorImpl;->mStateMachine:Ljp/co/sony/mc/camera/controller/StateMachine;
+
+    sget-object v0, Ljp/co/sony/mc/camera/controller/StateMachine$StaticEvent;->EVENT_STOP_MONITOR_FRAMING_ASSIST_CROPPED_POSITION:Ljp/co/sony/mc/camera/controller/StateMachine$StaticEvent;
+
+    const/4 v1, 0x0
+
+    new-array v1, v1, [Ljava/lang/Object;
+
+    invoke-virtual {p0, v0, v1}, Ljp/co/sony/mc/camera/controller/StateMachine;->sendStaticEvent(Ljp/co/sony/mc/camera/controller/StateMachine$StaticEvent;[Ljava/lang/Object;)V
+
+    return-void
+.end method
+
 .method public stopMonitorLowLightState()V
     .locals 2
 
-    .line 459
+    .line 471
     iget-object p0, p0, Ljp/co/sony/mc/camera/CameraAccessorImpl;->mStateMachine:Ljp/co/sony/mc/camera/controller/StateMachine;
 
     sget-object v0, Ljp/co/sony/mc/camera/controller/StateMachine$TransitterEvent;->EVENT_STOP_MONITOR_LOW_LIGHT_STATE:Ljp/co/sony/mc/camera/controller/StateMachine$TransitterEvent;
@@ -1088,7 +1211,7 @@
 .method public stopMonitorPoseRotation()V
     .locals 2
 
-    .line 156
+    .line 168
     iget-object p0, p0, Ljp/co/sony/mc/camera/CameraAccessorImpl;->mStateMachine:Ljp/co/sony/mc/camera/controller/StateMachine;
 
     sget-object v0, Ljp/co/sony/mc/camera/controller/StateMachine$TransitterEvent;->EVENT_STOP_MONITOR_POSEROTATION:Ljp/co/sony/mc/camera/controller/StateMachine$TransitterEvent;
@@ -1105,7 +1228,7 @@
 .method public stopObjectTracking(Ljp/co/sony/mc/camera/configuration/parameters/Metering;)V
     .locals 1
 
-    .line 322
+    .line 334
     iget-object p0, p0, Ljp/co/sony/mc/camera/CameraAccessorImpl;->mStateMachine:Ljp/co/sony/mc/camera/controller/StateMachine;
 
     sget-object v0, Ljp/co/sony/mc/camera/controller/StateMachine$TransitterEvent;->EVENT_STOP_OBJECT_TRACKING:Ljp/co/sony/mc/camera/controller/StateMachine$TransitterEvent;
@@ -1122,7 +1245,7 @@
 .method public stopPreview()V
     .locals 2
 
-    .line 174
+    .line 186
     iget-object p0, p0, Ljp/co/sony/mc/camera/CameraAccessorImpl;->mStateMachine:Ljp/co/sony/mc/camera/controller/StateMachine;
 
     sget-object v0, Ljp/co/sony/mc/camera/controller/StateMachine$TransitterEvent;->EVENT_REQUEST_STOP_PREVIEW:Ljp/co/sony/mc/camera/controller/StateMachine$TransitterEvent;
@@ -1139,7 +1262,7 @@
 .method public stopQrScan()V
     .locals 2
 
-    .line 390
+    .line 402
     iget-object p0, p0, Ljp/co/sony/mc/camera/CameraAccessorImpl;->mStateMachine:Ljp/co/sony/mc/camera/controller/StateMachine;
 
     sget-object v0, Ljp/co/sony/mc/camera/controller/StateMachine$StaticEvent;->EVENT_STOP_QR_SCANNING:Ljp/co/sony/mc/camera/controller/StateMachine$StaticEvent;
@@ -1156,7 +1279,7 @@
 .method public stopRecording()V
     .locals 2
 
-    .line 285
+    .line 297
     iget-object p0, p0, Ljp/co/sony/mc/camera/CameraAccessorImpl;->mStateMachine:Ljp/co/sony/mc/camera/controller/StateMachine;
 
     sget-object v0, Ljp/co/sony/mc/camera/controller/StateMachine$TransitterEvent;->EVENT_STOP_RECORDING:Ljp/co/sony/mc/camera/controller/StateMachine$TransitterEvent;
@@ -1173,7 +1296,7 @@
 .method public stopWbCustom()V
     .locals 2
 
-    .line 363
+    .line 375
     iget-object p0, p0, Ljp/co/sony/mc/camera/CameraAccessorImpl;->mStateMachine:Ljp/co/sony/mc/camera/controller/StateMachine;
 
     sget-object v0, Ljp/co/sony/mc/camera/controller/StateMachine$TransitterEvent;->EVENT_STOP_WB_CUSTOM_TRIGGER:Ljp/co/sony/mc/camera/controller/StateMachine$TransitterEvent;
@@ -1190,7 +1313,7 @@
 .method public switchLensDuringStreaming(Ljp/co/sony/mc/camera/setting/CameraSettingsHolder;Ljp/co/sony/mc/camera/CameraAccessor$ModeAndCameraSwitchCallback;Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;)V
     .locals 1
 
-    .line 202
+    .line 214
     iget-object p0, p0, Ljp/co/sony/mc/camera/CameraAccessorImpl;->mStateMachine:Ljp/co/sony/mc/camera/controller/StateMachine;
 
     sget-object v0, Ljp/co/sony/mc/camera/controller/StateMachine$TransitterEvent;->EVENT_REQUEST_SWITCH_LENS_DURING_STREAMING:Ljp/co/sony/mc/camera/controller/StateMachine$TransitterEvent;
@@ -1207,7 +1330,7 @@
 .method public switchModeAndCamera(Ljp/co/sony/mc/camera/setting/CameraSettingsHolder;Ljp/co/sony/mc/camera/CameraAccessor$ModeAndCameraSwitchCallback;)V
     .locals 1
 
-    .line 194
+    .line 206
     iget-object p0, p0, Ljp/co/sony/mc/camera/CameraAccessorImpl;->mStateMachine:Ljp/co/sony/mc/camera/controller/StateMachine;
 
     sget-object v0, Ljp/co/sony/mc/camera/controller/StateMachine$TransitterEvent;->EVENT_REQUEST_SWITCH_MODE_AND_CAMERA:Ljp/co/sony/mc/camera/controller/StateMachine$TransitterEvent;
@@ -1224,7 +1347,7 @@
 .method public unlockAutoFocus()V
     .locals 2
 
-    .line 240
+    .line 252
     iget-object p0, p0, Ljp/co/sony/mc/camera/CameraAccessorImpl;->mStateMachine:Ljp/co/sony/mc/camera/controller/StateMachine;
 
     sget-object v0, Ljp/co/sony/mc/camera/controller/StateMachine$TransitterEvent;->EVENT_REQUEST_AF_UNLOCK:Ljp/co/sony/mc/camera/controller/StateMachine$TransitterEvent;
@@ -1241,7 +1364,7 @@
 .method public unlockAutoWhiteBalance()V
     .locals 0
 
-    .line 429
+    .line 441
     iget-object p0, p0, Ljp/co/sony/mc/camera/CameraAccessorImpl;->mStateMachine:Ljp/co/sony/mc/camera/controller/StateMachine;
 
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/controller/StateMachine;->unlockAutoWhiteBalance()V

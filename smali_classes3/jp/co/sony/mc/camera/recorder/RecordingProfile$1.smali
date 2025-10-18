@@ -26,7 +26,7 @@
 .method static constructor <clinit>()V
     .locals 7
 
-    .line 543
+    .line 557
     invoke-static {}, Ljp/co/sony/mc/camera/configuration/parameters/VideoQuality;->values()[Ljp/co/sony/mc/camera/configuration/parameters/VideoQuality;
 
     move-result-object v0
@@ -82,7 +82,7 @@
     :try_end_2
     .catch Ljava/lang/NoSuchFieldError; {:try_start_2 .. :try_end_2} :catch_2
 
-    .line 400
+    .line 414
     :catch_2
     invoke-static {}, Ljp/co/sony/mc/camera/configuration/parameters/VideoSize;->values()[Ljp/co/sony/mc/camera/configuration/parameters/VideoSize;
 
@@ -165,7 +165,7 @@
     :try_end_7
     .catch Ljava/lang/NoSuchFieldError; {:try_start_7 .. :try_end_7} :catch_7
 
-    .line 402
+    .line 416
     :catch_7
     invoke-static {}, Ljp/co/sony/mc/camera/configuration/parameters/CaptureFps;->values()[Ljp/co/sony/mc/camera/configuration/parameters/CaptureFps;
 

@@ -42,7 +42,7 @@
 .method static constructor <clinit>()V
     .locals 3
 
-    .line 101
+    .line 102
     sget-object v0, Landroidx/compose/material/ContentAlphaKt$LocalContentAlpha$1;->INSTANCE:Landroidx/compose/material/ContentAlphaKt$LocalContentAlpha$1;
 
     check-cast v0, Lkotlin/jvm/functions/Function0;
@@ -71,7 +71,7 @@
         }
     .end annotation
 
-    .line 101
+    .line 102
     sget-object v0, Landroidx/compose/material/ContentAlphaKt;->LocalContentAlpha:Landroidx/compose/runtime/ProvidableCompositionLocal;
 
     return-object v0

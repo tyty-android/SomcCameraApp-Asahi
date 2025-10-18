@@ -409,25 +409,6 @@
 
     sput-object v0, Lkotlin/text/CharDirectionality;->$VALUES:[Lkotlin/text/CharDirectionality;
 
-    new-instance v1, Lkotlin/text/CharDirectionality$Companion;
-
-    const/4 v2, 0x0
-
-    invoke-direct {v1, v2}, Lkotlin/text/CharDirectionality$Companion;-><init>(Lkotlin/jvm/internal/DefaultConstructorMarker;)V
-
-    sput-object v1, Lkotlin/text/CharDirectionality;->Companion:Lkotlin/text/CharDirectionality$Companion;
-
-    .line 118
-    sget-object v1, Lkotlin/text/CharDirectionality$Companion$directionalityMap$2;->INSTANCE:Lkotlin/text/CharDirectionality$Companion$directionalityMap$2;
-
-    check-cast v1, Lkotlin/jvm/functions/Function0;
-
-    invoke-static {v1}, Lkotlin/LazyKt;->lazy(Lkotlin/jvm/functions/Function0;)Lkotlin/Lazy;
-
-    move-result-object v1
-
-    sput-object v1, Lkotlin/text/CharDirectionality;->directionalityMap$delegate:Lkotlin/Lazy;
-
     check-cast v0, [Ljava/lang/Enum;
 
     invoke-static {v0}, Lkotlin/enums/EnumEntriesKt;->enumEntries([Ljava/lang/Enum;)Lkotlin/enums/EnumEntries;
@@ -435,6 +416,25 @@
     move-result-object v0
 
     sput-object v0, Lkotlin/text/CharDirectionality;->$ENTRIES:Lkotlin/enums/EnumEntries;
+
+    new-instance v0, Lkotlin/text/CharDirectionality$Companion;
+
+    const/4 v1, 0x0
+
+    invoke-direct {v0, v1}, Lkotlin/text/CharDirectionality$Companion;-><init>(Lkotlin/jvm/internal/DefaultConstructorMarker;)V
+
+    sput-object v0, Lkotlin/text/CharDirectionality;->Companion:Lkotlin/text/CharDirectionality$Companion;
+
+    .line 118
+    sget-object v0, Lkotlin/text/CharDirectionality$Companion$directionalityMap$2;->INSTANCE:Lkotlin/text/CharDirectionality$Companion$directionalityMap$2;
+
+    check-cast v0, Lkotlin/jvm/functions/Function0;
+
+    invoke-static {v0}, Lkotlin/LazyKt;->lazy(Lkotlin/jvm/functions/Function0;)Lkotlin/Lazy;
+
+    move-result-object v0
+
+    sput-object v0, Lkotlin/text/CharDirectionality;->directionalityMap$delegate:Lkotlin/Lazy;
 
     return-void
 .end method
@@ -499,7 +499,7 @@
 
     sget-object v0, Lkotlin/text/CharDirectionality;->$VALUES:[Lkotlin/text/CharDirectionality;
 
-    invoke-virtual {v0}, [Ljava/lang/Object;->clone()Ljava/lang/Object;
+    invoke-virtual {v0}, Ljava/lang/Object;->clone()Ljava/lang/Object;
 
     move-result-object v0
 

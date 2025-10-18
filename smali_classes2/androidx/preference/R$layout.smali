@@ -18,37 +18,37 @@
 
 .field public static final image_frame:I = 0x7f0c00cb
 
-.field public static final preference:I = 0x7f0c0128
+.field public static final preference:I = 0x7f0c0119
 
-.field public static final preference_category:I = 0x7f0c0129
+.field public static final preference_category:I = 0x7f0c011a
 
-.field public static final preference_category_material:I = 0x7f0c012a
+.field public static final preference_category_material:I = 0x7f0c011b
 
-.field public static final preference_dialog_edittext:I = 0x7f0c012b
+.field public static final preference_dialog_edittext:I = 0x7f0c011c
 
-.field public static final preference_dropdown:I = 0x7f0c012c
+.field public static final preference_dropdown:I = 0x7f0c011d
 
-.field public static final preference_dropdown_material:I = 0x7f0c012d
+.field public static final preference_dropdown_material:I = 0x7f0c011e
 
-.field public static final preference_information:I = 0x7f0c012e
+.field public static final preference_information:I = 0x7f0c011f
 
-.field public static final preference_information_material:I = 0x7f0c012f
+.field public static final preference_information_material:I = 0x7f0c0120
 
-.field public static final preference_list_fragment:I = 0x7f0c0130
+.field public static final preference_list_fragment:I = 0x7f0c0121
 
-.field public static final preference_material:I = 0x7f0c0131
+.field public static final preference_material:I = 0x7f0c0122
 
-.field public static final preference_recyclerview:I = 0x7f0c0132
+.field public static final preference_recyclerview:I = 0x7f0c0123
 
-.field public static final preference_widget_checkbox:I = 0x7f0c0133
+.field public static final preference_widget_checkbox:I = 0x7f0c0124
 
-.field public static final preference_widget_seekbar:I = 0x7f0c0134
+.field public static final preference_widget_seekbar:I = 0x7f0c0125
 
-.field public static final preference_widget_seekbar_material:I = 0x7f0c0135
+.field public static final preference_widget_seekbar_material:I = 0x7f0c0126
 
-.field public static final preference_widget_switch:I = 0x7f0c0136
+.field public static final preference_widget_switch:I = 0x7f0c0127
 
-.field public static final preference_widget_switch_compat:I = 0x7f0c0137
+.field public static final preference_widget_switch_compat:I = 0x7f0c0128
 
 
 # direct methods

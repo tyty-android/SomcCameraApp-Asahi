@@ -16,7 +16,15 @@
 
 .field private mSavingPreviewSessionRequest:Ljp/co/sony/mc/camera/device/CameraDeviceHandler$PreviewSessionRequest;
 
-.field private mSavingRecordingProfile:Ljp/co/sony/mc/camera/recorder/RecordingProfile;
+.field private mSavingRecordingProfiles:Ljava/util/List;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljava/util/List<",
+            "Ljp/co/sony/mc/camera/recorder/RecordingProfile;",
+            ">;"
+        }
+    .end annotation
+.end field
 
 .field private mSavingStopPreviewObject:Ljava/lang/Object;
 
@@ -25,46 +33,59 @@
 .method constructor <init>(Z)V
     .locals 2
 
-    .line 39
+    .line 42
     const-string v0, "StateWaitingDeferredSessionConfigured"
 
     invoke-direct {p0, v0}, Ljp/co/sony/mc/camera/device/state/DeviceState;-><init>(Ljava/lang/String;)V
 
     const/4 v0, 0x0
 
-    .line 26
+    .line 29
     iput-object v0, p0, Ljp/co/sony/mc/camera/device/state/DeviceStateWaitingDeferredSessionConfigured;->mSavingPreviewSessionRequest:Ljp/co/sony/mc/camera/device/CameraDeviceHandler$PreviewSessionRequest;
 
-    .line 27
-    iput-object v0, p0, Ljp/co/sony/mc/camera/device/state/DeviceStateWaitingDeferredSessionConfigured;->mSavingRecordingProfile:Ljp/co/sony/mc/camera/recorder/RecordingProfile;
+    .line 30
+    new-instance v1, Ljava/util/ArrayList;
 
-    .line 29
+    invoke-direct {v1}, Ljava/util/ArrayList;-><init>()V
+
+    iput-object v1, p0, Ljp/co/sony/mc/camera/device/state/DeviceStateWaitingDeferredSessionConfigured;->mSavingRecordingProfiles:Ljava/util/List;
+
+    .line 32
     iput-object v0, p0, Ljp/co/sony/mc/camera/device/state/DeviceStateWaitingDeferredSessionConfigured;->mSavingStopPreviewObject:Ljava/lang/Object;
 
     const/4 v1, 0x0
 
-    .line 30
+    .line 33
     iput-boolean v1, p0, Ljp/co/sony/mc/camera/device/state/DeviceStateWaitingDeferredSessionConfigured;->mIsStopRequested:Z
 
-    .line 31
+    .line 34
     iput-object v0, p0, Ljp/co/sony/mc/camera/device/state/DeviceStateWaitingDeferredSessionConfigured;->mSavingPrepareRecordingObjects:[Ljava/lang/Object;
 
-    .line 32
+    .line 35
     iput-boolean v1, p0, Ljp/co/sony/mc/camera/device/state/DeviceStateWaitingDeferredSessionConfigured;->mIsStartRecordingRequested:Z
 
-    .line 33
+    .line 36
     iput-object v0, p0, Ljp/co/sony/mc/camera/device/state/DeviceStateWaitingDeferredSessionConfigured;->mSavingBokehEnableObjects:[Ljava/lang/Object;
 
-    .line 40
+    .line 43
     iput-boolean p1, p0, Ljp/co/sony/mc/camera/device/state/DeviceStateWaitingDeferredSessionConfigured;->mIsVideo:Z
 
     return-void
 .end method
 
-.method constructor <init>(ZLjp/co/sony/mc/camera/device/CameraDeviceHandler$PreviewSessionRequest;Ljp/co/sony/mc/camera/recorder/RecordingProfile;)V
-    .locals 2
+.method constructor <init>(ZLjp/co/sony/mc/camera/device/CameraDeviceHandler$PreviewSessionRequest;Ljava/util/List;)V
+    .locals 3
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(Z",
+            "Ljp/co/sony/mc/camera/device/CameraDeviceHandler$PreviewSessionRequest;",
+            "Ljava/util/List<",
+            "Ljp/co/sony/mc/camera/recorder/RecordingProfile;",
+            ">;)V"
+        }
+    .end annotation
 
-    .line 46
+    .line 49
     const-string v0, "StateWaitingDeferredSessionConfigured"
 
     invoke-direct {p0, v0}, Ljp/co/sony/mc/camera/device/state/DeviceState;-><init>(Ljava/lang/String;)V
@@ -72,30 +93,45 @@
     const/4 v0, 0x0
 
     .line 29
-    iput-object v0, p0, Ljp/co/sony/mc/camera/device/state/DeviceStateWaitingDeferredSessionConfigured;->mSavingStopPreviewObject:Ljava/lang/Object;
-
-    const/4 v1, 0x0
+    iput-object v0, p0, Ljp/co/sony/mc/camera/device/state/DeviceStateWaitingDeferredSessionConfigured;->mSavingPreviewSessionRequest:Ljp/co/sony/mc/camera/device/CameraDeviceHandler$PreviewSessionRequest;
 
     .line 30
-    iput-boolean v1, p0, Ljp/co/sony/mc/camera/device/state/DeviceStateWaitingDeferredSessionConfigured;->mIsStopRequested:Z
+    new-instance v1, Ljava/util/ArrayList;
 
-    .line 31
-    iput-object v0, p0, Ljp/co/sony/mc/camera/device/state/DeviceStateWaitingDeferredSessionConfigured;->mSavingPrepareRecordingObjects:[Ljava/lang/Object;
+    invoke-direct {v1}, Ljava/util/ArrayList;-><init>()V
+
+    iput-object v1, p0, Ljp/co/sony/mc/camera/device/state/DeviceStateWaitingDeferredSessionConfigured;->mSavingRecordingProfiles:Ljava/util/List;
 
     .line 32
-    iput-boolean v1, p0, Ljp/co/sony/mc/camera/device/state/DeviceStateWaitingDeferredSessionConfigured;->mIsStartRecordingRequested:Z
+    iput-object v0, p0, Ljp/co/sony/mc/camera/device/state/DeviceStateWaitingDeferredSessionConfigured;->mSavingStopPreviewObject:Ljava/lang/Object;
+
+    const/4 v2, 0x0
 
     .line 33
+    iput-boolean v2, p0, Ljp/co/sony/mc/camera/device/state/DeviceStateWaitingDeferredSessionConfigured;->mIsStopRequested:Z
+
+    .line 34
+    iput-object v0, p0, Ljp/co/sony/mc/camera/device/state/DeviceStateWaitingDeferredSessionConfigured;->mSavingPrepareRecordingObjects:[Ljava/lang/Object;
+
+    .line 35
+    iput-boolean v2, p0, Ljp/co/sony/mc/camera/device/state/DeviceStateWaitingDeferredSessionConfigured;->mIsStartRecordingRequested:Z
+
+    .line 36
     iput-object v0, p0, Ljp/co/sony/mc/camera/device/state/DeviceStateWaitingDeferredSessionConfigured;->mSavingBokehEnableObjects:[Ljava/lang/Object;
 
-    .line 47
+    .line 50
     iput-boolean p1, p0, Ljp/co/sony/mc/camera/device/state/DeviceStateWaitingDeferredSessionConfigured;->mIsVideo:Z
 
-    .line 48
+    .line 51
     iput-object p2, p0, Ljp/co/sony/mc/camera/device/state/DeviceStateWaitingDeferredSessionConfigured;->mSavingPreviewSessionRequest:Ljp/co/sony/mc/camera/device/CameraDeviceHandler$PreviewSessionRequest;
 
-    .line 49
-    iput-object p3, p0, Ljp/co/sony/mc/camera/device/state/DeviceStateWaitingDeferredSessionConfigured;->mSavingRecordingProfile:Ljp/co/sony/mc/camera/recorder/RecordingProfile;
+    .line 52
+    invoke-interface {v1}, Ljava/util/List;->clear()V
+
+    .line 53
+    iget-object p0, p0, Ljp/co/sony/mc/camera/device/state/DeviceStateWaitingDeferredSessionConfigured;->mSavingRecordingProfiles:Ljava/util/List;
+
+    invoke-interface {p0, p3}, Ljava/util/List;->addAll(Ljava/util/Collection;)Z
 
     return-void
 .end method
@@ -105,7 +141,7 @@
 .method public varargs handleCameraClose(Ljp/co/sony/mc/camera/device/state/DeviceStateContext;[Ljava/lang/Object;)V
     .locals 0
 
-    .line 58
+    .line 62
     new-instance p1, Ljp/co/sony/mc/camera/device/state/DeviceStateCameraClosing;
 
     invoke-direct {p1}, Ljp/co/sony/mc/camera/device/state/DeviceStateCameraClosing;-><init>()V
@@ -116,44 +152,44 @@
 .end method
 
 .method public varargs handleCaptureSessionConfigured(Ljp/co/sony/mc/camera/device/state/DeviceStateContext;[Ljava/lang/Object;)V
-    .locals 10
+    .locals 11
 
     const/4 v0, 0x0
 
-    .line 90
+    .line 95
     aget-object p2, p2, v0
 
     check-cast p2, Landroid/hardware/camera2/CameraCaptureSession;
 
-    .line 91
+    .line 96
     invoke-virtual {p1}, Ljp/co/sony/mc/camera/device/state/DeviceStateContext;->getCameraInfo()Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CameraDeviceInfo;
 
-    move-result-object v0
+    move-result-object v1
 
-    invoke-virtual {v0}, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CameraDeviceInfo;->getSessionId()Ljp/co/sony/mc/camera/device/CameraDeviceHandler$CameraSessionId;
+    invoke-virtual {v1}, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CameraDeviceInfo;->getSessionId()Ljp/co/sony/mc/camera/device/CameraDeviceHandler$CameraSessionId;
 
-    move-result-object v0
+    move-result-object v1
 
     if-nez p2, :cond_0
 
-    .line 93
-    sget-object v1, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$ErrorCode;->ERROR_ON_CONFIGURE_FAILED:Ljp/co/sony/mc/camera/device/CameraDeviceHandler$ErrorCode;
+    .line 98
+    sget-object v0, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$ErrorCode;->ERROR_ON_CONFIGURE_FAILED:Ljp/co/sony/mc/camera/device/CameraDeviceHandler$ErrorCode;
 
-    invoke-virtual {p0, p1, v0, v1}, Ljp/co/sony/mc/camera/device/state/DeviceStateWaitingDeferredSessionConfigured;->sendNotifyOtherError(Ljp/co/sony/mc/camera/device/state/DeviceStateContext;Ljp/co/sony/mc/camera/device/CameraDeviceHandler$CameraSessionId;Ljp/co/sony/mc/camera/device/CameraDeviceHandler$ErrorCode;)V
+    invoke-virtual {p0, p1, v1, v0}, Ljp/co/sony/mc/camera/device/state/DeviceStateWaitingDeferredSessionConfigured;->sendNotifyOtherError(Ljp/co/sony/mc/camera/device/state/DeviceStateContext;Ljp/co/sony/mc/camera/device/CameraDeviceHandler$CameraSessionId;Ljp/co/sony/mc/camera/device/CameraDeviceHandler$ErrorCode;)V
 
-    .line 95
+    .line 100
     invoke-virtual {p1}, Ljp/co/sony/mc/camera/device/state/DeviceStateContext;->getCameraDeviceHandlerCallback()Ljp/co/sony/mc/camera/device/state/IDeviceStateMachineCallback;
 
     move-result-object p1
 
-    invoke-interface {p1, v0, p2}, Ljp/co/sony/mc/camera/device/state/IDeviceStateMachineCallback;->onConfigureFailed(Ljp/co/sony/mc/camera/device/CameraDeviceHandler$CameraSessionId;Landroid/hardware/camera2/CameraCaptureSession;)V
+    invoke-interface {p1, v1, p2}, Ljp/co/sony/mc/camera/device/state/IDeviceStateMachineCallback;->onConfigureFailed(Ljp/co/sony/mc/camera/device/CameraDeviceHandler$CameraSessionId;Landroid/hardware/camera2/CameraCaptureSession;)V
 
-    .line 96
+    .line 101
     new-instance p1, Ljp/co/sony/mc/camera/device/state/DeviceStateError;
 
     sget-object p2, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$ErrorCode;->ERROR_ON_CONFIGURE_FAILED:Ljp/co/sony/mc/camera/device/CameraDeviceHandler$ErrorCode;
 
-    .line 97
+    .line 102
     invoke-virtual {p2}, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$ErrorCode;->ordinal()I
 
     move-result p2
@@ -162,115 +198,123 @@
 
     invoke-direct {p1, v0, p2}, Ljp/co/sony/mc/camera/device/state/DeviceStateError;-><init>(Ljava/lang/String;I)V
 
-    .line 96
+    .line 101
     invoke-virtual {p0, p1}, Ljp/co/sony/mc/camera/device/state/DeviceStateWaitingDeferredSessionConfigured;->setNextState(Ljp/co/sony/mc/camera/device/state/DeviceState;)V
 
     return-void
 
-    .line 101
+    .line 106
     :cond_0
-    iget-boolean v1, p0, Ljp/co/sony/mc/camera/device/state/DeviceStateWaitingDeferredSessionConfigured;->mIsVideo:Z
+    iget-boolean v2, p0, Ljp/co/sony/mc/camera/device/state/DeviceStateWaitingDeferredSessionConfigured;->mIsVideo:Z
 
-    const/4 v2, 0x1
+    const/4 v3, 0x1
 
-    xor-int/2addr v1, v2
+    xor-int/2addr v2, v3
 
-    invoke-virtual {p1, v1}, Ljp/co/sony/mc/camera/device/state/DeviceStateContext;->setCropRegionChecker(Z)V
+    invoke-virtual {p1, v2}, Ljp/co/sony/mc/camera/device/state/DeviceStateContext;->setCropRegionChecker(Z)V
 
-    .line 102
+    .line 107
     invoke-virtual {p1, p2}, Ljp/co/sony/mc/camera/device/state/DeviceStateContext;->createCaptureRequestDumper(Landroid/hardware/camera2/CameraCaptureSession;)V
 
-    .line 103
+    .line 108
     invoke-virtual {p1}, Ljp/co/sony/mc/camera/device/state/DeviceStateContext;->getCaptureSessionInfo()Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CaptureSessionInfo;
 
-    move-result-object v1
+    move-result-object v2
 
-    iput-object p2, v1, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CaptureSessionInfo;->captureSession:Landroid/hardware/camera2/CameraCaptureSession;
+    iput-object p2, v2, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CaptureSessionInfo;->captureSession:Landroid/hardware/camera2/CameraCaptureSession;
 
-    .line 105
-    iget-object v1, p0, Ljp/co/sony/mc/camera/device/state/DeviceStateWaitingDeferredSessionConfigured;->mSavingPreviewSessionRequest:Ljp/co/sony/mc/camera/device/CameraDeviceHandler$PreviewSessionRequest;
+    .line 110
+    iget-object v2, p0, Ljp/co/sony/mc/camera/device/state/DeviceStateWaitingDeferredSessionConfigured;->mSavingPreviewSessionRequest:Ljp/co/sony/mc/camera/device/CameraDeviceHandler$PreviewSessionRequest;
 
-    if-eqz v1, :cond_3
+    if-eqz v2, :cond_3
 
-    .line 106
+    .line 111
     sget-boolean p2, Ljp/co/sony/mc/camera/util/CamLog;->DEBUG:Z
 
     if-eqz p2, :cond_1
 
-    new-instance p2, Ljava/lang/StringBuilder;
+    new-array p2, v3, [Ljava/lang/String;
 
-    const-string v0, "recreate session. request="
+    new-instance v1, Ljava/lang/StringBuilder;
 
-    invoke-direct {p2, v0}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+    const-string v2, "recreate session. request="
 
-    iget-object v0, p0, Ljp/co/sony/mc/camera/device/state/DeviceStateWaitingDeferredSessionConfigured;->mSavingPreviewSessionRequest:Ljp/co/sony/mc/camera/device/CameraDeviceHandler$PreviewSessionRequest;
+    invoke-direct {v1, v2}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
-    .line 107
-    invoke-virtual {v0}, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$PreviewSessionRequest;->toString()Ljava/lang/String;
+    iget-object v2, p0, Ljp/co/sony/mc/camera/device/state/DeviceStateWaitingDeferredSessionConfigured;->mSavingPreviewSessionRequest:Ljp/co/sony/mc/camera/device/CameraDeviceHandler$PreviewSessionRequest;
 
-    move-result-object v0
+    .line 112
+    invoke-virtual {v2}, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$PreviewSessionRequest;->toString()Ljava/lang/String;
 
-    invoke-virtual {p2, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    move-result-object v2
 
-    move-result-object p2
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {p2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    move-result-object v1
 
-    move-result-object p2
+    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    filled-new-array {p2}, [Ljava/lang/String;
+    move-result-object v1
 
-    move-result-object p2
+    aput-object v1, p2, v0
 
-    .line 106
+    .line 111
     invoke-static {p2}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
-    .line 109
+    .line 114
     :cond_1
-    iget-object p2, p0, Ljp/co/sony/mc/camera/device/state/DeviceStateWaitingDeferredSessionConfigured;->mSavingRecordingProfile:Ljp/co/sony/mc/camera/recorder/RecordingProfile;
+    iget-object p2, p0, Ljp/co/sony/mc/camera/device/state/DeviceStateWaitingDeferredSessionConfigured;->mSavingRecordingProfiles:Ljava/util/List;
 
-    if-nez p2, :cond_2
+    invoke-interface {p2}, Ljava/util/List;->isEmpty()Z
 
-    .line 110
+    move-result p2
+
+    if-eqz p2, :cond_2
+
+    .line 115
     iget-object p2, p0, Ljp/co/sony/mc/camera/device/state/DeviceStateWaitingDeferredSessionConfigured;->mSavingPreviewSessionRequest:Ljp/co/sony/mc/camera/device/CameraDeviceHandler$PreviewSessionRequest;
 
     invoke-virtual {p0, p1, p2}, Ljp/co/sony/mc/camera/device/state/DeviceStateWaitingDeferredSessionConfigured;->createPhotoPreviewSession(Ljp/co/sony/mc/camera/device/state/DeviceStateContext;Ljp/co/sony/mc/camera/device/CameraDeviceHandler$PreviewSessionRequest;)V
 
     goto :goto_0
 
-    .line 113
+    .line 117
     :cond_2
-    iget-object v0, p0, Ljp/co/sony/mc/camera/device/state/DeviceStateWaitingDeferredSessionConfigured;->mSavingPreviewSessionRequest:Ljp/co/sony/mc/camera/device/CameraDeviceHandler$PreviewSessionRequest;
+    iget-object p2, p0, Ljp/co/sony/mc/camera/device/state/DeviceStateWaitingDeferredSessionConfigured;->mSavingPreviewSessionRequest:Ljp/co/sony/mc/camera/device/CameraDeviceHandler$PreviewSessionRequest;
 
-    invoke-virtual {p0, p1, v0, p2}, Ljp/co/sony/mc/camera/device/state/DeviceStateWaitingDeferredSessionConfigured;->createVideoPreviewSession(Ljp/co/sony/mc/camera/device/state/DeviceStateContext;Ljp/co/sony/mc/camera/device/CameraDeviceHandler$PreviewSessionRequest;Ljp/co/sony/mc/camera/recorder/RecordingProfile;)V
+    iget-object v0, p0, Ljp/co/sony/mc/camera/device/state/DeviceStateWaitingDeferredSessionConfigured;->mSavingRecordingProfiles:Ljava/util/List;
+
+    invoke-virtual {p0, p1, p2, v0}, Ljp/co/sony/mc/camera/device/state/DeviceStateWaitingDeferredSessionConfigured;->createVideoPreviewSession(Ljp/co/sony/mc/camera/device/state/DeviceStateContext;Ljp/co/sony/mc/camera/device/CameraDeviceHandler$PreviewSessionRequest;Ljava/util/List;)V
 
     :goto_0
     const/4 p1, 0x0
 
-    .line 116
+    .line 120
     iput-object p1, p0, Ljp/co/sony/mc/camera/device/state/DeviceStateWaitingDeferredSessionConfigured;->mSavingPreviewSessionRequest:Ljp/co/sony/mc/camera/device/CameraDeviceHandler$PreviewSessionRequest;
 
-    .line 117
-    iput-object p1, p0, Ljp/co/sony/mc/camera/device/state/DeviceStateWaitingDeferredSessionConfigured;->mSavingRecordingProfile:Ljp/co/sony/mc/camera/recorder/RecordingProfile;
+    .line 121
+    iget-object p0, p0, Ljp/co/sony/mc/camera/device/state/DeviceStateWaitingDeferredSessionConfigured;->mSavingRecordingProfiles:Ljava/util/List;
+
+    invoke-interface {p0}, Ljava/util/List;->clear()V
 
     return-void
 
-    .line 122
+    .line 126
     :cond_3
     invoke-virtual {p1}, Ljp/co/sony/mc/camera/device/state/DeviceStateContext;->getSurfaceInfo()Ljp/co/sony/mc/camera/device/state/DeviceStateContext$SurfaceInfo;
 
-    move-result-object v1
+    move-result-object v0
 
-    if-eqz v1, :cond_7
+    if-eqz v0, :cond_7
 
-    .line 123
+    .line 127
     invoke-virtual {p1}, Ljp/co/sony/mc/camera/device/state/DeviceStateContext;->getCameraDeviceHandlerCallback()Ljp/co/sony/mc/camera/device/state/IDeviceStateMachineCallback;
 
-    move-result-object v1
+    move-result-object v0
 
-    invoke-interface {v1, v0, p2}, Ljp/co/sony/mc/camera/device/state/IDeviceStateMachineCallback;->onConfigured(Ljp/co/sony/mc/camera/device/CameraDeviceHandler$CameraSessionId;Landroid/hardware/camera2/CameraCaptureSession;)V
+    invoke-interface {v0, v1, p2}, Ljp/co/sony/mc/camera/device/state/IDeviceStateMachineCallback;->onConfigured(Ljp/co/sony/mc/camera/device/CameraDeviceHandler$CameraSessionId;Landroid/hardware/camera2/CameraCaptureSession;)V
 
-    .line 125
+    .line 129
     invoke-virtual {p1}, Ljp/co/sony/mc/camera/device/state/DeviceStateContext;->getSurfaceInfo()Ljp/co/sony/mc/camera/device/state/DeviceStateContext$SurfaceInfo;
 
     move-result-object p2
@@ -281,61 +325,61 @@
 
     if-eqz p2, :cond_5
 
-    .line 126
+    .line 130
     invoke-virtual {p2}, Landroid/view/Surface;->isValid()Z
 
     move-result p2
 
     if-eqz p2, :cond_5
 
-    .line 128
+    .line 132
     invoke-virtual {p1}, Ljp/co/sony/mc/camera/device/state/DeviceStateContext;->setPreviewResultChecker()Z
 
-    .line 129
+    .line 133
     iget-boolean p1, p0, Ljp/co/sony/mc/camera/device/state/DeviceStateWaitingDeferredSessionConfigured;->mIsVideo:Z
 
     if-eqz p1, :cond_4
 
-    .line 130
+    .line 134
     new-instance p1, Ljp/co/sony/mc/camera/device/state/DeviceStateVideoPreview;
 
-    iget-object v5, p0, Ljp/co/sony/mc/camera/device/state/DeviceStateWaitingDeferredSessionConfigured;->mSavingPrepareRecordingObjects:[Ljava/lang/Object;
+    iget-object v6, p0, Ljp/co/sony/mc/camera/device/state/DeviceStateWaitingDeferredSessionConfigured;->mSavingPrepareRecordingObjects:[Ljava/lang/Object;
 
-    iget-boolean v6, p0, Ljp/co/sony/mc/camera/device/state/DeviceStateWaitingDeferredSessionConfigured;->mIsStartRecordingRequested:Z
+    iget-boolean v7, p0, Ljp/co/sony/mc/camera/device/state/DeviceStateWaitingDeferredSessionConfigured;->mIsStartRecordingRequested:Z
 
-    iget-object v7, p0, Ljp/co/sony/mc/camera/device/state/DeviceStateWaitingDeferredSessionConfigured;->mSavingStopPreviewObject:Ljava/lang/Object;
+    iget-object v8, p0, Ljp/co/sony/mc/camera/device/state/DeviceStateWaitingDeferredSessionConfigured;->mSavingStopPreviewObject:Ljava/lang/Object;
 
-    iget-boolean v8, p0, Ljp/co/sony/mc/camera/device/state/DeviceStateWaitingDeferredSessionConfigured;->mIsStopRequested:Z
+    iget-boolean v9, p0, Ljp/co/sony/mc/camera/device/state/DeviceStateWaitingDeferredSessionConfigured;->mIsStopRequested:Z
 
-    iget-object v9, p0, Ljp/co/sony/mc/camera/device/state/DeviceStateWaitingDeferredSessionConfigured;->mSavingBokehEnableObjects:[Ljava/lang/Object;
+    iget-object v10, p0, Ljp/co/sony/mc/camera/device/state/DeviceStateWaitingDeferredSessionConfigured;->mSavingBokehEnableObjects:[Ljava/lang/Object;
 
-    const/4 v4, 0x1
+    const/4 v5, 0x1
 
-    move-object v3, p1
+    move-object v4, p1
 
-    invoke-direct/range {v3 .. v9}, Ljp/co/sony/mc/camera/device/state/DeviceStateVideoPreview;-><init>(Z[Ljava/lang/Object;ZLjava/lang/Object;Z[Ljava/lang/Object;)V
+    invoke-direct/range {v4 .. v10}, Ljp/co/sony/mc/camera/device/state/DeviceStateVideoPreview;-><init>(Z[Ljava/lang/Object;ZLjava/lang/Object;Z[Ljava/lang/Object;)V
 
     invoke-virtual {p0, p1}, Ljp/co/sony/mc/camera/device/state/DeviceStateWaitingDeferredSessionConfigured;->setNextState(Ljp/co/sony/mc/camera/device/state/DeviceState;)V
 
     goto :goto_1
 
-    .line 134
+    .line 138
     :cond_4
     new-instance p1, Ljp/co/sony/mc/camera/device/state/DeviceStatePhotoPreview;
 
-    invoke-direct {p1, v2}, Ljp/co/sony/mc/camera/device/state/DeviceStatePhotoPreview;-><init>(Z)V
+    invoke-direct {p1, v3}, Ljp/co/sony/mc/camera/device/state/DeviceStatePhotoPreview;-><init>(Z)V
 
     invoke-virtual {p0, p1}, Ljp/co/sony/mc/camera/device/state/DeviceStateWaitingDeferredSessionConfigured;->setNextState(Ljp/co/sony/mc/camera/device/state/DeviceState;)V
 
     goto :goto_1
 
-    .line 137
+    .line 141
     :cond_5
     iget-boolean p1, p0, Ljp/co/sony/mc/camera/device/state/DeviceStateWaitingDeferredSessionConfigured;->mIsVideo:Z
 
     if-eqz p1, :cond_6
 
-    .line 138
+    .line 142
     new-instance p1, Ljp/co/sony/mc/camera/device/state/DeviceStateWaitingEvfPrepared;
 
     iget-object v1, p0, Ljp/co/sony/mc/camera/device/state/DeviceStateWaitingDeferredSessionConfigured;->mSavingPrepareRecordingObjects:[Ljava/lang/Object;
@@ -356,7 +400,7 @@
 
     goto :goto_1
 
-    .line 142
+    .line 146
     :cond_6
     new-instance p1, Ljp/co/sony/mc/camera/device/state/DeviceStateWaitingEvfPrepared;
 
@@ -371,7 +415,7 @@
     :cond_7
     const/4 p2, -0x1
 
-    .line 146
+    .line 150
     invoke-static {p2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object p2
@@ -393,12 +437,12 @@
 
     const/4 p0, 0x0
 
-    .line 222
+    .line 226
     aget-object p0, p2, p0
 
     check-cast p0, Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;
 
-    .line 223
+    .line 227
     invoke-virtual {p1, p0}, Ljp/co/sony/mc/camera/device/state/DeviceStateContext;->updateCameraId(Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;)V
 
     return-void
@@ -409,21 +453,28 @@
 
     const/4 p1, 0x0
 
-    .line 81
+    .line 85
     aget-object p1, p2, p1
 
     check-cast p1, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$PreviewSessionRequest;
 
     iput-object p1, p0, Ljp/co/sony/mc/camera/device/state/DeviceStateWaitingDeferredSessionConfigured;->mSavingPreviewSessionRequest:Ljp/co/sony/mc/camera/device/CameraDeviceHandler$PreviewSessionRequest;
 
+    .line 86
+    iget-object p1, p0, Ljp/co/sony/mc/camera/device/state/DeviceStateWaitingDeferredSessionConfigured;->mSavingRecordingProfiles:Ljava/util/List;
+
+    invoke-interface {p1}, Ljava/util/List;->clear()V
+
+    .line 87
+    iget-object p0, p0, Ljp/co/sony/mc/camera/device/state/DeviceStateWaitingDeferredSessionConfigured;->mSavingRecordingProfiles:Ljava/util/List;
+
     const/4 p1, 0x1
 
-    .line 82
     aget-object p1, p2, p1
 
-    check-cast p1, Ljp/co/sony/mc/camera/recorder/RecordingProfile;
+    check-cast p1, Ljava/util/List;
 
-    iput-object p1, p0, Ljp/co/sony/mc/camera/device/state/DeviceStateWaitingDeferredSessionConfigured;->mSavingRecordingProfile:Ljp/co/sony/mc/camera/recorder/RecordingProfile;
+    invoke-interface {p0, p1}, Ljava/util/List;->addAll(Ljava/util/Collection;)Z
 
     return-void
 .end method
@@ -433,14 +484,14 @@
 
     const/4 p1, 0x0
 
-    .line 212
+    .line 216
     aget-object p1, p2, p1
 
     check-cast p1, Ljava/lang/String;
 
     const/4 v0, 0x1
 
-    .line 213
+    .line 217
     aget-object p2, p2, v0
 
     check-cast p2, Ljava/lang/Integer;
@@ -449,7 +500,7 @@
 
     move-result p2
 
-    .line 214
+    .line 218
     new-instance v0, Ljp/co/sony/mc/camera/device/state/DeviceStateError;
 
     invoke-direct {v0, p1, p2}, Ljp/co/sony/mc/camera/device/state/DeviceStateError;-><init>(Ljava/lang/String;I)V
@@ -460,61 +511,61 @@
 .end method
 
 .method public varargs handleEvfPrepared(Ljp/co/sony/mc/camera/device/state/DeviceStateContext;[Ljava/lang/Object;)V
-    .locals 1
+    .locals 2
 
     const/4 p0, 0x0
 
-    .line 66
-    aget-object p0, p2, p0
+    .line 70
+    aget-object v0, p2, p0
 
-    check-cast p0, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$CameraSessionId;
+    check-cast v0, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$CameraSessionId;
 
-    const/4 v0, 0x1
+    const/4 v1, 0x1
 
-    .line 67
-    aget-object p2, p2, v0
+    .line 71
+    aget-object p2, p2, v1
 
     check-cast p2, Landroid/view/Surface;
 
-    .line 70
+    .line 74
     invoke-virtual {p1}, Ljp/co/sony/mc/camera/device/state/DeviceStateContext;->getSurfaceInfo()Ljp/co/sony/mc/camera/device/state/DeviceStateContext$SurfaceInfo;
 
     move-result-object p1
 
-    invoke-virtual {p1, p0, p2}, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$SurfaceInfo;->setPreviewSurface(Ljp/co/sony/mc/camera/device/CameraDeviceHandler$CameraSessionId;Landroid/view/Surface;)Z
+    invoke-virtual {p1, v0, p2}, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$SurfaceInfo;->setPreviewSurface(Ljp/co/sony/mc/camera/device/CameraDeviceHandler$CameraSessionId;Landroid/view/Surface;)Z
 
     move-result p1
 
     if-nez p1, :cond_0
 
-    .line 71
+    .line 75
     sget-boolean p1, Ljp/co/sony/mc/camera/util/CamLog;->DEBUG:Z
 
     if-eqz p1, :cond_0
 
-    new-instance p1, Ljava/lang/StringBuilder;
+    new-array p1, v1, [Ljava/lang/String;
 
-    const-string p2, "not set surface. id="
+    new-instance p2, Ljava/lang/StringBuilder;
 
-    invoke-direct {p1, p2}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+    const-string v1, "not set surface. id="
 
-    invoke-virtual {p0}, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$CameraSessionId;->toString()Ljava/lang/String;
+    invoke-direct {p2, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
-    move-result-object p0
+    invoke-virtual {v0}, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$CameraSessionId;->toString()Ljava/lang/String;
 
-    invoke-virtual {p1, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    move-result-object v0
 
-    move-result-object p0
+    invoke-virtual {p2, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {p0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    move-result-object p2
 
-    move-result-object p0
+    invoke-virtual {p2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    filled-new-array {p0}, [Ljava/lang/String;
+    move-result-object p2
 
-    move-result-object p0
+    aput-object p2, p1, p0
 
-    invoke-static {p0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
+    invoke-static {p1}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
     :cond_0
     return-void
@@ -523,12 +574,12 @@
 .method public varargs handlePrepareRecording(Ljp/co/sony/mc/camera/device/state/DeviceStateContext;[Ljava/lang/Object;)V
     .locals 0
 
-    .line 255
+    .line 259
     iget-boolean p1, p0, Ljp/co/sony/mc/camera/device/state/DeviceStateWaitingDeferredSessionConfigured;->mIsVideo:Z
 
     if-eqz p1, :cond_0
 
-    .line 256
+    .line 260
     iput-object p2, p0, Ljp/co/sony/mc/camera/device/state/DeviceStateWaitingDeferredSessionConfigured;->mSavingPrepareRecordingObjects:[Ljava/lang/Object;
 
     :cond_0
@@ -538,7 +589,7 @@
 .method public varargs handleStartAutoFlashMonitoring(Ljp/co/sony/mc/camera/device/state/DeviceStateContext;[Ljava/lang/Object;)V
     .locals 0
 
-    .line 188
+    .line 192
     invoke-virtual {p1}, Ljp/co/sony/mc/camera/device/state/DeviceStateContext;->setAutoFlashResultChecker()Z
 
     return-void
@@ -547,7 +598,7 @@
 .method public varargs handleStartBokehMonitoring(Ljp/co/sony/mc/camera/device/state/DeviceStateContext;[Ljava/lang/Object;)V
     .locals 0
 
-    .line 275
+    .line 279
     iput-object p2, p0, Ljp/co/sony/mc/camera/device/state/DeviceStateWaitingDeferredSessionConfigured;->mSavingBokehEnableObjects:[Ljava/lang/Object;
 
     return-void
@@ -558,47 +609,49 @@
 
     const/4 p0, 0x1
 
-    .line 231
+    .line 235
     invoke-virtual {p1, p0}, Ljp/co/sony/mc/camera/device/state/DeviceStateContext;->setHistogramEnabled(Z)V
 
-    .line 232
+    .line 236
     invoke-virtual {p1}, Ljp/co/sony/mc/camera/device/state/DeviceStateContext;->getCameraInfo()Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CameraDeviceInfo;
 
-    move-result-object p0
+    move-result-object p2
 
-    invoke-virtual {p0}, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CameraDeviceInfo;->getCameraId()Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;
+    invoke-virtual {p2}, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CameraDeviceInfo;->getCameraId()Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;
 
-    move-result-object p0
+    move-result-object p2
 
-    invoke-static {p0}, Ljp/co/sony/mc/camera/util/capability/PlatformCapability;->isHistogramSupported(Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;)Z
+    invoke-static {p2}, Ljp/co/sony/mc/camera/util/capability/PlatformCapability;->isHistogramSupported(Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;)Z
 
-    move-result p0
+    move-result p2
 
-    if-eqz p0, :cond_0
+    if-eqz p2, :cond_0
 
-    .line 233
+    .line 237
     invoke-virtual {p1}, Ljp/co/sony/mc/camera/device/state/DeviceStateContext;->setHistogramResultChecker()Z
 
-    move-result p0
+    move-result p1
 
-    if-nez p0, :cond_1
+    if-nez p1, :cond_1
 
-    .line 234
-    sget-boolean p0, Ljp/co/sony/mc/camera/util/CamLog;->DEBUG:Z
+    .line 238
+    sget-boolean p1, Ljp/co/sony/mc/camera/util/CamLog;->DEBUG:Z
 
-    if-eqz p0, :cond_1
+    if-eqz p1, :cond_1
 
-    const-string p0, "Histogram monitor is already running."
+    new-array p0, p0, [Ljava/lang/String;
 
-    filled-new-array {p0}, [Ljava/lang/String;
+    const/4 p1, 0x0
 
-    move-result-object p0
+    const-string p2, "Histogram monitor is already running."
+
+    aput-object p2, p0, p1
 
     invoke-static {p0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
     goto :goto_0
 
-    .line 237
+    .line 241
     :cond_0
     invoke-virtual {p1}, Ljp/co/sony/mc/camera/device/state/DeviceStateContext;->removeHistogramResultChecker()Z
 
@@ -616,14 +669,14 @@
 .method public varargs handleStartRecording(Ljp/co/sony/mc/camera/device/state/DeviceStateContext;[Ljava/lang/Object;)V
     .locals 0
 
-    .line 265
+    .line 269
     iget-boolean p1, p0, Ljp/co/sony/mc/camera/device/state/DeviceStateWaitingDeferredSessionConfigured;->mIsVideo:Z
 
     if-eqz p1, :cond_0
 
     const/4 p1, 0x1
 
-    .line 266
+    .line 270
     iput-boolean p1, p0, Ljp/co/sony/mc/camera/device/state/DeviceStateWaitingDeferredSessionConfigured;->mIsStartRecordingRequested:Z
 
     :cond_0
@@ -633,7 +686,7 @@
 .method public varargs handleStopAutoFlashMonitoring(Ljp/co/sony/mc/camera/device/state/DeviceStateContext;[Ljava/lang/Object;)V
     .locals 0
 
-    .line 196
+    .line 200
     invoke-virtual {p1}, Ljp/co/sony/mc/camera/device/state/DeviceStateContext;->removeAutoFlashResultChecker()Z
 
     return-void
@@ -650,10 +703,10 @@
 
     const/4 p0, 0x0
 
-    .line 246
+    .line 250
     invoke-virtual {p1, p0}, Ljp/co/sony/mc/camera/device/state/DeviceStateContext;->setHistogramEnabled(Z)V
 
-    .line 247
+    .line 251
     invoke-virtual {p1}, Ljp/co/sony/mc/camera/device/state/DeviceStateContext;->removeHistogramResultChecker()Z
 
     return-void
@@ -670,12 +723,12 @@
 
     const/4 p1, 0x1
 
-    .line 163
+    .line 167
     iput-boolean p1, p0, Ljp/co/sony/mc/camera/device/state/DeviceStateWaitingDeferredSessionConfigured;->mIsStopRequested:Z
 
     const/4 p1, 0x0
 
-    .line 164
+    .line 168
     aget-object p1, p2, p1
 
     iput-object p1, p0, Ljp/co/sony/mc/camera/device/state/DeviceStateWaitingDeferredSessionConfigured;->mSavingStopPreviewObject:Ljava/lang/Object;

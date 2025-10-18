@@ -13,14 +13,20 @@
 
 # direct methods
 .method static constructor <clinit>()V
-    .locals 2
+    .locals 3
 
-    const/4 v0, 0x0
+    const/4 v0, 0x2
 
     .line 83
-    filled-new-array {v0, v0}, [I
+    new-array v0, v0, [I
 
-    move-result-object v0
+    const/4 v1, 0x1
+
+    const/4 v2, 0x0
+
+    aput v2, v0, v1
+
+    aput v2, v0, v2
 
     sget-object v1, Ljava/lang/Character;->TYPE:Ljava/lang/Class;
 

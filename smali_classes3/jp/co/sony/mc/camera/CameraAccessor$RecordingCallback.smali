@@ -36,7 +36,15 @@
 .method public abstract onRecordError(Ljp/co/sony/mc/camera/CameraAccessor$RecordingCallback$RecordingErrorCode;I)V
 .end method
 
-.method public abstract onRecordFinished(Ljp/co/sony/mc/camera/storage/RequestFactory$VideoSavingRequestBuilder;)V
+.method public abstract onRecordFinished(Ljava/util/List;)V
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Ljava/util/List<",
+            "Ljp/co/sony/mc/camera/storage/RequestFactory$VideoSavingRequestBuilder;",
+            ">;)V"
+        }
+    .end annotation
 .end method
 
 .method public abstract onRecordingStarted(Z)V

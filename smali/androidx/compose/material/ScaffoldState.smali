@@ -50,23 +50,15 @@
 .end method
 
 .method public constructor <init>(Landroidx/compose/material/DrawerState;Landroidx/compose/material/SnackbarHostState;)V
-    .locals 1
+    .locals 0
 
-    const-string v0, "drawerState"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string/jumbo v0, "snackbarHostState"
-
-    invoke-static {p2, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 49
+    .line 60
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 51
+    .line 62
     iput-object p1, p0, Landroidx/compose/material/ScaffoldState;->drawerState:Landroidx/compose/material/DrawerState;
 
-    .line 52
+    .line 63
     iput-object p2, p0, Landroidx/compose/material/ScaffoldState;->snackbarHostState:Landroidx/compose/material/SnackbarHostState;
 
     return-void
@@ -77,7 +69,7 @@
 .method public final getDrawerState()Landroidx/compose/material/DrawerState;
     .locals 0
 
-    .line 51
+    .line 62
     iget-object p0, p0, Landroidx/compose/material/ScaffoldState;->drawerState:Landroidx/compose/material/DrawerState;
 
     return-object p0
@@ -86,7 +78,7 @@
 .method public final getSnackbarHostState()Landroidx/compose/material/SnackbarHostState;
     .locals 0
 
-    .line 52
+    .line 63
     iget-object p0, p0, Landroidx/compose/material/ScaffoldState;->snackbarHostState:Landroidx/compose/material/SnackbarHostState;
 
     return-object p0

@@ -22,7 +22,7 @@
 .method private constructor <init>(Lcom/sonymobile/android/media/internal/VideoTrack;)V
     .locals 0
 
-    .line 740
+    .line 756
     iput-object p1, p0, Lcom/sonymobile/android/media/internal/VideoTrack$VideoEncoderCallback;->this$0:Lcom/sonymobile/android/media/internal/VideoTrack;
 
     invoke-direct {p0}, Landroid/media/MediaCodec$Callback;-><init>()V
@@ -41,33 +41,39 @@
 
 # virtual methods
 .method public onError(Landroid/media/MediaCodec;Landroid/media/MediaCodec$CodecException;)V
-    .locals 1
+    .locals 2
 
-    .line 758
+    .line 774
     const-string p1, "VideoTrack"
 
     const-string v0, "Error from encoder"
 
     invoke-static {p1, v0, p2}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)I
 
-    .line 759
+    .line 775
+    iget-object p1, p0, Lcom/sonymobile/android/media/internal/VideoTrack$VideoEncoderCallback;->this$0:Lcom/sonymobile/android/media/internal/VideoTrack;
+
+    invoke-static {p1}, Lcom/sonymobile/android/media/internal/VideoTrack;->-$$Nest$fgetmCallback(Lcom/sonymobile/android/media/internal/VideoTrack;)Landroid/os/Handler;
+
+    move-result-object p1
+
     iget-object p0, p0, Lcom/sonymobile/android/media/internal/VideoTrack$VideoEncoderCallback;->this$0:Lcom/sonymobile/android/media/internal/VideoTrack;
 
-    invoke-static {p0}, Lcom/sonymobile/android/media/internal/VideoTrack;->-$$Nest$fgetmCallback(Lcom/sonymobile/android/media/internal/VideoTrack;)Landroid/os/Handler;
+    invoke-static {p0}, Lcom/sonymobile/android/media/internal/VideoTrack;->-$$Nest$fgetmVideoTrackId(Lcom/sonymobile/android/media/internal/VideoTrack;)Ljp/co/sony/mc/camera/recorder/RecorderParameters$VideoTrackId;
 
     move-result-object p0
 
-    const/4 p1, 0x4
+    const/4 p2, 0x1
 
-    const/4 p2, 0x0
+    const/4 v0, 0x4
 
-    const/4 v0, 0x1
+    const/4 v1, 0x0
 
-    invoke-virtual {p0, v0, p1, p2}, Landroid/os/Handler;->obtainMessage(III)Landroid/os/Message;
+    invoke-virtual {p1, p2, v0, v1, p0}, Landroid/os/Handler;->obtainMessage(IIILjava/lang/Object;)Landroid/os/Message;
 
     move-result-object p0
 
-    .line 760
+    .line 776
     invoke-virtual {p0}, Landroid/os/Message;->sendToTarget()V
 
     return-void
@@ -82,7 +88,7 @@
 .method public onOutputBufferAvailable(Landroid/media/MediaCodec;ILandroid/media/MediaCodec$BufferInfo;)V
     .locals 1
 
-    .line 753
+    .line 769
     iget-object p0, p0, Lcom/sonymobile/android/media/internal/VideoTrack$VideoEncoderCallback;->this$0:Lcom/sonymobile/android/media/internal/VideoTrack;
 
     invoke-static {p0}, Lcom/sonymobile/android/media/internal/VideoTrack;->-$$Nest$fgetmCodecHandler(Lcom/sonymobile/android/media/internal/VideoTrack;)Lcom/sonymobile/android/media/internal/VideoTrack$CodecHandler;

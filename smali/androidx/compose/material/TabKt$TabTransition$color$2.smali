@@ -99,10 +99,6 @@
         }
     .end annotation
 
-    const-string p0, "$this$animateColor"
-
-    invoke-static {p1, p0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
     const p0, -0x7e6a4056
 
     invoke-interface {p2, p0}, Landroidx/compose/runtime/Composer;->startReplaceableGroup(I)V
@@ -115,9 +111,9 @@
 
     const/4 v0, -0x1
 
-    const-string v1, "androidx.compose.material.TabTransition.<anonymous> (Tab.kt:270)"
+    const-string v1, "androidx.compose.material.TabTransition.<anonymous> (Tab.kt:272)"
 
-    .line 272
+    .line 273
     invoke-static {p0, p3, v0, v1}, Landroidx/compose/runtime/ComposerKt;->traceEventStart(IIILjava/lang/String;)V
 
     :cond_0
@@ -143,12 +139,12 @@
 
     const/16 p0, 0x96
 
-    .line 276
+    .line 277
     invoke-static {}, Landroidx/compose/animation/core/EasingKt;->getLinearEasing()Landroidx/compose/animation/core/Easing;
 
     move-result-object p1
 
-    .line 273
+    .line 274
     invoke-static {p0, p3, p1}, Landroidx/compose/animation/core/AnimationSpecKt;->tween(IILandroidx/compose/animation/core/Easing;)Landroidx/compose/animation/core/TweenSpec;
 
     move-result-object p0
@@ -157,7 +153,7 @@
 
     goto :goto_0
 
-    .line 281
+    .line 282
     :cond_1
     invoke-static {}, Landroidx/compose/animation/core/EasingKt;->getLinearEasing()Landroidx/compose/animation/core/Easing;
 
@@ -167,14 +163,14 @@
 
     const/4 v1, 0x0
 
-    .line 279
+    .line 280
     invoke-static {p3, p0, p1, v0, v1}, Landroidx/compose/animation/core/AnimationSpecKt;->tween$default(IILandroidx/compose/animation/core/Easing;ILjava/lang/Object;)Landroidx/compose/animation/core/TweenSpec;
 
     move-result-object p0
 
     check-cast p0, Landroidx/compose/animation/core/FiniteAnimationSpec;
 
-    .line 272
+    .line 273
     :goto_0
     invoke-static {}, Landroidx/compose/runtime/ComposerKt;->isTraceInProgress()Z
 
@@ -193,7 +189,7 @@
 .method public bridge synthetic invoke(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
 
-    .line 270
+    .line 271
     check-cast p1, Landroidx/compose/animation/core/Transition$Segment;
 
     check-cast p2, Landroidx/compose/runtime/Composer;

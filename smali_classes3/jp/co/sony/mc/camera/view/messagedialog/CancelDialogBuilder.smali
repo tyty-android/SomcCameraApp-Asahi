@@ -21,7 +21,7 @@
     .line 42
     new-instance p2, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Builder;
 
-    const p4, 0x7f1202a9
+    const p4, 0x7f1202ab
 
     invoke-direct {p2, p1, p4}, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Builder;-><init>(Landroid/content/Context;I)V
 

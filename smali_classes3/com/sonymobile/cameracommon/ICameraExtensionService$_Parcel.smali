@@ -36,7 +36,7 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 112
+    .line 116
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -55,14 +55,14 @@
         }
     .end annotation
 
-    .line 116
+    .line 120
     invoke-virtual {p0}, Landroid/os/Parcel;->readInt()I
 
     move-result v0
 
     if-eqz v0, :cond_0
 
-    .line 117
+    .line 121
     invoke-interface {p1, p0}, Landroid/os/Parcelable$Creator;->createFromParcel(Landroid/os/Parcel;)Ljava/lang/Object;
 
     move-result-object p0
@@ -91,10 +91,10 @@
 
     const/4 v0, 0x1
 
-    .line 125
+    .line 129
     invoke-virtual {p0, v0}, Landroid/os/Parcel;->writeInt(I)V
 
-    .line 126
+    .line 130
     invoke-interface {p1, p0, p2}, Landroid/os/Parcelable;->writeToParcel(Landroid/os/Parcel;I)V
 
     goto :goto_0
@@ -102,7 +102,7 @@
     :cond_0
     const/4 p1, 0x0
 
-    .line 128
+    .line 132
     invoke-virtual {p0, p1}, Landroid/os/Parcel;->writeInt(I)V
 
     :goto_0

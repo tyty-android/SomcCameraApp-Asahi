@@ -31,6 +31,8 @@
 
 
 # static fields
+.field public static final $stable:I
+
 .field public static final INSTANCE:Landroidx/compose/ui/platform/Api29Impl;
 
 
@@ -60,10 +62,6 @@
 # virtual methods
 .method public final getRecommendedTimeoutMillis(Landroid/view/accessibility/AccessibilityManager;II)I
     .locals 0
-
-    const-string p0, "accessibilityManager"
-
-    invoke-static {p1, p0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 87
     invoke-virtual {p1, p2, p3}, Landroid/view/accessibility/AccessibilityManager;->getRecommendedTimeoutMillis(II)I

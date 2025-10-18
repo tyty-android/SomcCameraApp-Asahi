@@ -86,10 +86,10 @@
 .method public constructor <init>(I)V
     .locals 0
 
-    .line 375
+    .line 380
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 376
+    .line 381
     iput p1, p0, Landroidx/compose/animation/core/SnapSpec;->delay:I
 
     return-void
@@ -104,7 +104,7 @@
 
     const/4 p1, 0x0
 
-    .line 376
+    .line 381
     :cond_0
     invoke-direct {p0, p1}, Landroidx/compose/animation/core/SnapSpec;-><init>(I)V
 
@@ -116,14 +116,14 @@
 .method public equals(Ljava/lang/Object;)Z
     .locals 2
 
-    .line 382
+    .line 387
     instance-of v0, p1, Landroidx/compose/animation/core/SnapSpec;
 
     const/4 v1, 0x0
 
     if-eqz v0, :cond_0
 
-    .line 383
+    .line 388
     check-cast p1, Landroidx/compose/animation/core/SnapSpec;
 
     iget p1, p1, Landroidx/compose/animation/core/SnapSpec;->delay:I
@@ -141,7 +141,7 @@
 .method public final getDelay()I
     .locals 0
 
-    .line 376
+    .line 381
     iget p0, p0, Landroidx/compose/animation/core/SnapSpec;->delay:I
 
     return p0
@@ -150,7 +150,7 @@
 .method public hashCode()I
     .locals 0
 
-    .line 389
+    .line 394
     iget p0, p0, Landroidx/compose/animation/core/SnapSpec;->delay:I
 
     return p0
@@ -159,7 +159,7 @@
 .method public bridge synthetic vectorize(Landroidx/compose/animation/core/TwoWayConverter;)Landroidx/compose/animation/core/VectorizedAnimationSpec;
     .locals 0
 
-    .line 375
+    .line 380
     invoke-virtual {p0, p1}, Landroidx/compose/animation/core/SnapSpec;->vectorize(Landroidx/compose/animation/core/TwoWayConverter;)Landroidx/compose/animation/core/VectorizedDurationBasedAnimationSpec;
 
     move-result-object p0
@@ -170,7 +170,7 @@
 .end method
 
 .method public vectorize(Landroidx/compose/animation/core/TwoWayConverter;)Landroidx/compose/animation/core/VectorizedDurationBasedAnimationSpec;
-    .locals 1
+    .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<V:",
@@ -183,11 +183,7 @@
         }
     .end annotation
 
-    const-string v0, "converter"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 379
+    .line 384
     new-instance p1, Landroidx/compose/animation/core/VectorizedSnapSpec;
 
     iget p0, p0, Landroidx/compose/animation/core/SnapSpec;->delay:I
@@ -202,7 +198,7 @@
 .method public bridge synthetic vectorize(Landroidx/compose/animation/core/TwoWayConverter;)Landroidx/compose/animation/core/VectorizedFiniteAnimationSpec;
     .locals 0
 
-    .line 375
+    .line 380
     invoke-virtual {p0, p1}, Landroidx/compose/animation/core/SnapSpec;->vectorize(Landroidx/compose/animation/core/TwoWayConverter;)Landroidx/compose/animation/core/VectorizedDurationBasedAnimationSpec;
 
     move-result-object p0

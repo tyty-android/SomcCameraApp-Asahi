@@ -19,5 +19,4 @@ Lūdzu, ieslēdziet WLAN izvēlnē IESTATĪJUMI."</string>
     <string name="camera_strings_runtime_permission_rationale_network_cta_txt">"Šajā lietotnē tiek izmantots WLAN tīkls un mobilie dati, lai internetā nosūtītu lietotāja datus (t.i., ierakstītos attēlus/video, balss datus, konta informāciju par izmantotajiem pakalpojumiem utt.).
 Ievērojiet, ka par datu pārraidi no jums var tikt iekasēta maksa atkarībā no jūsu tīkla operatora vai interneta pakalpojuma sniedzēja līgumiem."</string>
     <string name="camera_strings_streaming_error_wifi_disconnected_txt">Nav WLAN savienojuma</string>
-    <string name="mv_wireless_network_txt">Lietot WLAN un mob. datus</string>
 </resources>

@@ -87,10 +87,6 @@
 .method public final invoke-vNxB06k(Landroidx/compose/animation/core/AnimationVector4D;)J
     .locals 7
 
-    const-string/jumbo v0, "vector"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
     .line 39
     invoke-virtual {p1}, Landroidx/compose/animation/core/AnimationVector4D;->getV2()F
 

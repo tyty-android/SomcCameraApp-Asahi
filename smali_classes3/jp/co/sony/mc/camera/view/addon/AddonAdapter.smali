@@ -171,6 +171,10 @@
 
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/addon/AddonAdapter;->mParent:Landroidx/recyclerview/widget/RecyclerView;
 
+    invoke-virtual {v0}, Landroidx/recyclerview/widget/RecyclerView;->getRootView()Landroid/view/View;
+
+    move-result-object v0
+
     new-instance v1, Ljp/co/sony/mc/camera/view/addon/AddonAdapter$$ExternalSyntheticLambda0;
 
     invoke-direct {v1, p0}, Ljp/co/sony/mc/camera/view/addon/AddonAdapter$$ExternalSyntheticLambda0;-><init>(Ljp/co/sony/mc/camera/view/addon/AddonAdapter;)V
@@ -186,7 +190,7 @@
 .method public getItemCount()I
     .locals 0
 
-    .line 126
+    .line 128
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/addon/AddonAdapter;->mDataSet:Ljava/util/List;
 
     invoke-interface {p0}, Ljava/util/List;->size()I
@@ -327,30 +331,47 @@
 
     .line 106
     :goto_2
+    iget-object v1, p1, Ljp/co/sony/mc/camera/view/addon/AddonAdapter$AddonViewHolder;->itemView:Landroid/view/View;
+
+    iget-boolean v2, v0, Ljp/co/sony/mc/camera/view/addon/AddonItem;->isGray:Z
+
+    if-eqz v2, :cond_3
+
+    const v2, 0x3ecccccd    # 0.4f
+
+    goto :goto_3
+
+    :cond_3
+    const/high16 v2, 0x3f800000    # 1.0f
+
+    :goto_3
+    invoke-virtual {v1, v2}, Landroid/view/View;->setAlpha(F)V
+
+    .line 108
     iget-object v1, v0, Ljp/co/sony/mc/camera/view/addon/AddonItem;->itemClickListener:Landroid/view/View$OnClickListener;
 
-    if-eqz v1, :cond_3
+    if-eqz v1, :cond_4
 
-    .line 107
+    .line 109
     iget-object v1, p1, Ljp/co/sony/mc/camera/view/addon/AddonAdapter$AddonViewHolder;->itemView:Landroid/view/View;
 
     iget-object v0, v0, Ljp/co/sony/mc/camera/view/addon/AddonItem;->itemClickListener:Landroid/view/View$OnClickListener;
 
     invoke-virtual {v1, v0}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
-    :cond_3
-    if-nez p2, :cond_4
+    :cond_4
+    if-nez p2, :cond_5
 
-    .line 110
+    .line 112
     sget-object p2, Ljp/co/sony/mc/camera/util/AccessibilityUtil;->INSTANCE:Ljp/co/sony/mc/camera/util/AccessibilityUtil;
 
     invoke-virtual {p2}, Ljp/co/sony/mc/camera/util/AccessibilityUtil;->isTalkBackEnabled()Z
 
     move-result p2
 
-    if-eqz p2, :cond_4
+    if-eqz p2, :cond_5
 
-    .line 111
+    .line 113
     iget-object p2, p1, Ljp/co/sony/mc/camera/view/addon/AddonAdapter$AddonViewHolder;->itemView:Landroid/view/View;
 
     invoke-virtual {p2}, Landroid/view/View;->getViewTreeObserver()Landroid/view/ViewTreeObserver;
@@ -363,7 +384,7 @@
 
     invoke-virtual {p2, v0}, Landroid/view/ViewTreeObserver;->addOnGlobalLayoutListener(Landroid/view/ViewTreeObserver$OnGlobalLayoutListener;)V
 
-    :cond_4
+    :cond_5
     return-void
 .end method
 

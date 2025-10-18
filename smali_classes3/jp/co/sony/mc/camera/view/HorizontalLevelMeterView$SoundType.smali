@@ -34,7 +34,7 @@
 .method private static synthetic $values()[Ljp/co/sony/mc/camera/view/HorizontalLevelMeterView$SoundType;
     .locals 2
 
-    .line 365
+    .line 387
     sget-object v0, Ljp/co/sony/mc/camera/view/HorizontalLevelMeterView$SoundType;->HORIZONTAL:Ljp/co/sony/mc/camera/view/HorizontalLevelMeterView$SoundType;
 
     sget-object v1, Ljp/co/sony/mc/camera/view/HorizontalLevelMeterView$SoundType;->TILT:Ljp/co/sony/mc/camera/view/HorizontalLevelMeterView$SoundType;
@@ -49,7 +49,7 @@
 .method static constructor <clinit>()V
     .locals 3
 
-    .line 366
+    .line 388
     new-instance v0, Ljp/co/sony/mc/camera/view/HorizontalLevelMeterView$SoundType;
 
     const-string v1, "HORIZONTAL"
@@ -60,7 +60,7 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/view/HorizontalLevelMeterView$SoundType;->HORIZONTAL:Ljp/co/sony/mc/camera/view/HorizontalLevelMeterView$SoundType;
 
-    .line 367
+    .line 389
     new-instance v0, Ljp/co/sony/mc/camera/view/HorizontalLevelMeterView$SoundType;
 
     const-string v1, "TILT"
@@ -71,7 +71,7 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/view/HorizontalLevelMeterView$SoundType;->TILT:Ljp/co/sony/mc/camera/view/HorizontalLevelMeterView$SoundType;
 
-    .line 365
+    .line 387
     invoke-static {}, Ljp/co/sony/mc/camera/view/HorizontalLevelMeterView$SoundType;->$values()[Ljp/co/sony/mc/camera/view/HorizontalLevelMeterView$SoundType;
 
     move-result-object v0
@@ -89,7 +89,7 @@
         }
     .end annotation
 
-    .line 365
+    .line 387
     invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
     return-void
@@ -98,7 +98,7 @@
 .method public static valueOf(Ljava/lang/String;)Ljp/co/sony/mc/camera/view/HorizontalLevelMeterView$SoundType;
     .locals 1
 
-    .line 365
+    .line 387
     const-class v0, Ljp/co/sony/mc/camera/view/HorizontalLevelMeterView$SoundType;
 
     invoke-static {v0, p0}, Ljava/lang/Enum;->valueOf(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
@@ -113,7 +113,7 @@
 .method public static values()[Ljp/co/sony/mc/camera/view/HorizontalLevelMeterView$SoundType;
     .locals 1
 
-    .line 365
+    .line 387
     sget-object v0, Ljp/co/sony/mc/camera/view/HorizontalLevelMeterView$SoundType;->$VALUES:[Ljp/co/sony/mc/camera/view/HorizontalLevelMeterView$SoundType;
 
     invoke-virtual {v0}, [Ljp/co/sony/mc/camera/view/HorizontalLevelMeterView$SoundType;->clone()Ljava/lang/Object;

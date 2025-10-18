@@ -19,7 +19,7 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/SourceDebugExtension;
-    value = "SMAP\nSnapshotStateMap.kt\nKotlin\n*S Kotlin\n*F\n+ 1 SnapshotStateMap.kt\nandroidx/compose/runtime/snapshots/SnapshotMapEntrySet\n+ 2 _Collections.kt\nkotlin/collections/CollectionsKt___CollectionsKt\n+ 3 SnapshotStateMap.kt\nandroidx/compose/runtime/snapshots/SnapshotStateMap\n+ 4 ActualJvm.jvm.kt\nandroidx/compose/runtime/ActualJvm_jvmKt\n+ 5 Snapshot.kt\nandroidx/compose/runtime/snapshots/SnapshotKt\n*L\n1#1,360:1\n1179#2,2:361\n1253#2,4:363\n1726#2,3:410\n84#3,2:367\n129#3,4:369\n133#3:374\n121#3:375\n134#3,5:377\n86#3,7:382\n139#3,2:389\n125#3:391\n141#3,6:397\n149#3,3:406\n93#3:409\n70#4:373\n2279#5:376\n2172#5,2:392\n1722#5:394\n2174#5,2:395\n2176#5,3:403\n*S KotlinDebug\n*F\n+ 1 SnapshotStateMap.kt\nandroidx/compose/runtime/snapshots/SnapshotMapEntrySet\n*L\n209#1:361,2\n209#1:363,4\n216#1:410,3\n210#1:367,2\n210#1:369,4\n210#1:374\n210#1:375\n210#1:377,5\n210#1:382,7\n210#1:389,2\n210#1:391\n210#1:397,6\n210#1:406,3\n210#1:409\n210#1:373\n210#1:376\n210#1:392,2\n210#1:394\n210#1:395,2\n210#1:403,3\n*E\n"
+    value = "SMAP\nSnapshotStateMap.kt\nKotlin\n*S Kotlin\n*F\n+ 1 SnapshotStateMap.kt\nandroidx/compose/runtime/snapshots/SnapshotMapEntrySet\n+ 2 _Collections.kt\nkotlin/collections/CollectionsKt___CollectionsKt\n+ 3 SnapshotStateMap.kt\nandroidx/compose/runtime/snapshots/SnapshotStateMap\n+ 4 ActualJvm.jvm.kt\nandroidx/compose/runtime/ActualJvm_jvmKt\n+ 5 Snapshot.kt\nandroidx/compose/runtime/snapshots/SnapshotKt\n*L\n1#1,360:1\n1179#2,2:361\n1253#2,4:363\n1726#2,3:411\n84#3,2:367\n128#3,5:369\n133#3:375\n121#3:376\n134#3,5:378\n86#3,7:383\n139#3,2:390\n125#3:392\n141#3,6:398\n149#3,3:407\n93#3:410\n82#4:374\n2283#5:377\n2176#5,2:393\n1714#5:395\n2178#5,2:396\n2180#5,3:404\n*S KotlinDebug\n*F\n+ 1 SnapshotStateMap.kt\nandroidx/compose/runtime/snapshots/SnapshotMapEntrySet\n*L\n209#1:361,2\n209#1:363,4\n216#1:411,3\n210#1:367,2\n210#1:369,5\n210#1:375\n210#1:376\n210#1:378,5\n210#1:383,7\n210#1:390,2\n210#1:392\n210#1:398,6\n210#1:407,3\n210#1:410\n210#1:374\n210#1:377\n210#1:393,2\n210#1:395\n210#1:396,2\n210#1:404,3\n*E\n"
 .end annotation
 
 .annotation runtime Lkotlin/Metadata;
@@ -63,7 +63,7 @@
 
 # direct methods
 .method public constructor <init>(Landroidx/compose/runtime/snapshots/SnapshotStateMap;)V
-    .locals 1
+    .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -71,10 +71,6 @@
             "TK;TV;>;)V"
         }
     .end annotation
-
-    const-string v0, "map"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 194
     invoke-direct {p0, p1}, Landroidx/compose/runtime/snapshots/SnapshotMapSet;-><init>(Landroidx/compose/runtime/snapshots/SnapshotStateMap;)V
@@ -94,10 +90,6 @@
             "Ljava/lang/Void;"
         }
     .end annotation
-
-    const-string p0, "element"
-
-    invoke-static {p1, p0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 195
     invoke-static {}, Landroidx/compose/runtime/snapshots/SnapshotStateMapKt;->unsupported()Ljava/lang/Void;
@@ -140,10 +132,6 @@
             "Ljava/lang/Void;"
         }
     .end annotation
-
-    const-string p0, "elements"
-
-    invoke-static {p1, p0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 196
     invoke-static {}, Landroidx/compose/runtime/snapshots/SnapshotStateMapKt;->unsupported()Ljava/lang/Void;
@@ -206,10 +194,6 @@
         }
     .end annotation
 
-    const-string v0, "element"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
     .line 213
     invoke-virtual {p0}, Landroidx/compose/runtime/snapshots/SnapshotMapEntrySet;->getMap()Landroidx/compose/runtime/snapshots/SnapshotStateMap;
 
@@ -246,14 +230,16 @@
         }
     .end annotation
 
-    const-string v0, "elements"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
     .line 216
     check-cast p1, Ljava/lang/Iterable;
 
-    .line 410
+    .line 411
+    instance-of v0, p1, Ljava/util/Collection;
+
+    const/4 v1, 0x1
+
+    if-eqz v0, :cond_0
+
     move-object v0, p1
 
     check-cast v0, Ljava/util/Collection;
@@ -262,13 +248,11 @@
 
     move-result v0
 
-    const/4 v1, 0x1
-
     if-eqz v0, :cond_0
 
     goto :goto_0
 
-    .line 411
+    .line 412
     :cond_0
     invoke-interface {p1}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
 
@@ -373,7 +357,7 @@
 .end method
 
 .method public remove(Ljava/util/Map$Entry;)Z
-    .locals 1
+    .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -381,10 +365,6 @@
             "TK;TV;>;)Z"
         }
     .end annotation
-
-    const-string v0, "element"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 200
     invoke-virtual {p0}, Landroidx/compose/runtime/snapshots/SnapshotMapEntrySet;->getMap()Landroidx/compose/runtime/snapshots/SnapshotStateMap;
@@ -423,10 +403,6 @@
             ">;)Z"
         }
     .end annotation
-
-    const-string v0, "elements"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 203
     invoke-interface {p1}, Ljava/util/Collection;->iterator()Ljava/util/Iterator;
@@ -488,10 +464,6 @@
             ">;)Z"
         }
     .end annotation
-
-    const-string v0, "elements"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 209
     check-cast p1, Ljava/lang/Iterable;
@@ -575,16 +547,16 @@
 
     move v0, p1
 
-    .line 372
+    .line 373
     :cond_1
     invoke-static {}, Landroidx/compose/runtime/snapshots/SnapshotStateMapKt;->access$getSync$p()Ljava/lang/Object;
 
     move-result-object v2
 
-    .line 373
+    .line 374
     monitor-enter v2
 
-    .line 375
+    .line 376
     :try_start_0
     invoke-virtual {p0}, Landroidx/compose/runtime/snapshots/SnapshotStateMap;->getFirstStateRecord()Landroidx/compose/runtime/snapshots/StateRecord;
 
@@ -598,44 +570,44 @@
 
     check-cast v3, Landroidx/compose/runtime/snapshots/StateRecord;
 
-    .line 376
+    .line 377
     invoke-static {v3}, Landroidx/compose/runtime/snapshots/SnapshotKt;->current(Landroidx/compose/runtime/snapshots/StateRecord;)Landroidx/compose/runtime/snapshots/StateRecord;
 
     move-result-object v3
 
     check-cast v3, Landroidx/compose/runtime/snapshots/SnapshotStateMap$StateMapStateRecord;
 
-    .line 377
+    .line 378
     invoke-virtual {v3}, Landroidx/compose/runtime/snapshots/SnapshotStateMap$StateMapStateRecord;->getMap$runtime_release()Landroidx/compose/runtime/external/kotlinx/collections/immutable/PersistentMap;
 
     move-result-object v4
 
-    .line 378
+    .line 379
     invoke-virtual {v3}, Landroidx/compose/runtime/snapshots/SnapshotStateMap$StateMapStateRecord;->getModification$runtime_release()I
 
     move-result v3
 
-    .line 379
+    .line 380
     sget-object v5, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_2
 
-    .line 373
+    .line 374
     monitor-exit v2
 
-    .line 380
+    .line 381
     invoke-static {v4}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;)V
 
     invoke-interface {v4}, Landroidx/compose/runtime/external/kotlinx/collections/immutable/PersistentMap;->builder()Landroidx/compose/runtime/external/kotlinx/collections/immutable/PersistentMap$Builder;
 
     move-result-object v2
 
-    .line 381
+    .line 382
     move-object v5, v2
 
     check-cast v5, Ljava/util/Map;
 
-    .line 382
+    .line 383
     invoke-virtual {p0}, Landroidx/compose/runtime/snapshots/SnapshotStateMap;->entrySet()Ljava/util/Set;
 
     move-result-object v6
@@ -689,7 +661,7 @@
 
     if-nez v9, :cond_2
 
-    .line 384
+    .line 385
     :cond_3
     invoke-interface {v7}, Ljava/util/Map$Entry;->getKey()Ljava/lang/Object;
 
@@ -701,23 +673,23 @@
 
     goto :goto_1
 
-    .line 388
+    .line 389
     :cond_4
     sget-object v5, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
 
-    .line 389
+    .line 390
     invoke-interface {v2}, Landroidx/compose/runtime/external/kotlinx/collections/immutable/PersistentMap$Builder;->build()Landroidx/compose/runtime/external/kotlinx/collections/immutable/PersistentMap;
 
     move-result-object v2
 
-    .line 390
+    .line 391
     invoke-static {v2, v4}, Lkotlin/jvm/internal/Intrinsics;->areEqual(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v4
 
     if-nez v4, :cond_6
 
-    .line 391
+    .line 392
     invoke-virtual {p0}, Landroidx/compose/runtime/snapshots/SnapshotStateMap;->getFirstStateRecord()Landroidx/compose/runtime/snapshots/StateRecord;
 
     move-result-object v4
@@ -730,18 +702,18 @@
 
     check-cast v4, Landroidx/compose/runtime/snapshots/StateRecord;
 
-    .line 392
+    .line 393
     invoke-static {}, Landroidx/compose/runtime/snapshots/SnapshotKt;->getSnapshotInitializer()Landroidx/compose/runtime/snapshots/Snapshot;
 
-    .line 394
+    .line 395
     invoke-static {}, Landroidx/compose/runtime/snapshots/SnapshotKt;->getLock()Ljava/lang/Object;
 
     move-result-object v5
 
-    .line 373
+    .line 374
     monitor-enter v5
 
-    .line 395
+    .line 396
     :try_start_1
     sget-object v6, Landroidx/compose/runtime/snapshots/Snapshot;->Companion:Landroidx/compose/runtime/snapshots/Snapshot$Companion;
 
@@ -749,7 +721,7 @@
 
     move-result-object v6
 
-    .line 396
+    .line 397
     move-object v7, p0
 
     check-cast v7, Landroidx/compose/runtime/snapshots/StateObject;
@@ -760,17 +732,17 @@
 
     check-cast v4, Landroidx/compose/runtime/snapshots/SnapshotStateMap$StateMapStateRecord;
 
-    .line 397
+    .line 398
     invoke-static {}, Landroidx/compose/runtime/snapshots/SnapshotStateMapKt;->access$getSync$p()Ljava/lang/Object;
 
     move-result-object v7
 
-    .line 373
+    .line 374
     monitor-enter v7
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_1
 
-    .line 398
+    .line 399
     :try_start_2
     invoke-virtual {v4}, Landroidx/compose/runtime/snapshots/SnapshotStateMap$StateMapStateRecord;->getModification$runtime_release()I
 
@@ -778,10 +750,10 @@
 
     if-ne v9, v3, :cond_5
 
-    .line 399
+    .line 400
     invoke-virtual {v4, v2}, Landroidx/compose/runtime/snapshots/SnapshotStateMap$StateMapStateRecord;->setMap$runtime_release(Landroidx/compose/runtime/external/kotlinx/collections/immutable/PersistentMap;)V
 
-    .line 400
+    .line 401
     invoke-virtual {v4}, Landroidx/compose/runtime/snapshots/SnapshotStateMap$StateMapStateRecord;->getModification$runtime_release()I
 
     move-result v2
@@ -797,7 +769,7 @@
     :cond_5
     move v8, p1
 
-    .line 373
+    .line 374
     :goto_2
     :try_start_3
     monitor-exit v7
@@ -806,7 +778,7 @@
 
     monitor-exit v5
 
-    .line 404
+    .line 405
     move-object v2, p0
 
     check-cast v2, Landroidx/compose/runtime/snapshots/StateObject;
@@ -820,7 +792,7 @@
     :catchall_0
     move-exception p0
 
-    .line 373
+    .line 374
     :try_start_4
     monitor-exit v7
 

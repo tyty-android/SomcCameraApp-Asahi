@@ -31,7 +31,7 @@
 
     const-wide v0, 0x4041800000000000L    # 35.0
 
-    .line 57
+    .line 56
     invoke-static {v0, v1}, Ljava/lang/Math;->toRadians(D)D
 
     move-result-wide v0
@@ -50,29 +50,29 @@
 .method public constructor <init>()V
     .locals 2
 
-    .line 66
+    .line 65
     invoke-direct {p0}, Landroidx/transition/PathMotion;-><init>()V
 
     const/4 v0, 0x0
 
-    .line 59
+    .line 58
     iput v0, p0, Landroidx/transition/ArcMotion;->mMinimumHorizontalAngle:F
 
-    .line 60
+    .line 59
     iput v0, p0, Landroidx/transition/ArcMotion;->mMinimumVerticalAngle:F
 
     const/high16 v1, 0x428c0000    # 70.0f
 
-    .line 61
+    .line 60
     iput v1, p0, Landroidx/transition/ArcMotion;->mMaximumAngle:F
 
-    .line 62
+    .line 61
     iput v0, p0, Landroidx/transition/ArcMotion;->mMinimumHorizontalTangent:F
 
-    .line 63
+    .line 62
     iput v0, p0, Landroidx/transition/ArcMotion;->mMinimumVerticalTangent:F
 
-    .line 64
+    .line 63
     sget v0, Landroidx/transition/ArcMotion;->DEFAULT_MAX_TANGENT:F
 
     iput v0, p0, Landroidx/transition/ArcMotion;->mMaximumTangent:F
@@ -83,44 +83,44 @@
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 4
 
-    .line 72
+    .line 69
     invoke-direct {p0, p1, p2}, Landroidx/transition/PathMotion;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
     const/4 v0, 0x0
 
-    .line 59
+    .line 58
     iput v0, p0, Landroidx/transition/ArcMotion;->mMinimumHorizontalAngle:F
 
-    .line 60
+    .line 59
     iput v0, p0, Landroidx/transition/ArcMotion;->mMinimumVerticalAngle:F
 
     const/high16 v1, 0x428c0000    # 70.0f
 
-    .line 61
+    .line 60
     iput v1, p0, Landroidx/transition/ArcMotion;->mMaximumAngle:F
 
-    .line 62
+    .line 61
     iput v0, p0, Landroidx/transition/ArcMotion;->mMinimumHorizontalTangent:F
 
-    .line 63
+    .line 62
     iput v0, p0, Landroidx/transition/ArcMotion;->mMinimumVerticalTangent:F
 
-    .line 64
+    .line 63
     sget v2, Landroidx/transition/ArcMotion;->DEFAULT_MAX_TANGENT:F
 
     iput v2, p0, Landroidx/transition/ArcMotion;->mMaximumTangent:F
 
-    .line 73
+    .line 70
     sget-object v2, Landroidx/transition/Styleable;->ARC_MOTION:[I
 
     invoke-virtual {p1, p2, v2}, Landroid/content/Context;->obtainStyledAttributes(Landroid/util/AttributeSet;[I)Landroid/content/res/TypedArray;
 
     move-result-object p1
 
-    .line 74
+    .line 71
     check-cast p2, Lorg/xmlpull/v1/XmlPullParser;
 
-    .line 75
+    .line 72
     const-string v2, "minimumVerticalAngle"
 
     const/4 v3, 0x1
@@ -129,10 +129,10 @@
 
     move-result v2
 
-    .line 78
+    .line 75
     invoke-virtual {p0, v2}, Landroidx/transition/ArcMotion;->setMinimumVerticalAngle(F)V
 
-    .line 79
+    .line 76
     const-string v2, "minimumHorizontalAngle"
 
     const/4 v3, 0x0
@@ -141,10 +141,10 @@
 
     move-result v0
 
-    .line 82
+    .line 79
     invoke-virtual {p0, v0}, Landroidx/transition/ArcMotion;->setMinimumHorizontalAngle(F)V
 
-    .line 83
+    .line 80
     const-string v0, "maximumAngle"
 
     const/4 v2, 0x2
@@ -153,10 +153,10 @@
 
     move-result p2
 
-    .line 85
+    .line 82
     invoke-virtual {p0, p2}, Landroidx/transition/ArcMotion;->setMaximumAngle(F)V
 
-    .line 86
+    .line 83
     invoke-virtual {p1}, Landroid/content/res/TypedArray;->recycle()V
 
     return-void
@@ -183,7 +183,7 @@
 
     float-to-double v0, p0
 
-    .line 181
+    .line 178
     invoke-static {v0, v1}, Ljava/lang/Math;->toRadians(D)D
 
     move-result-wide v0
@@ -196,7 +196,7 @@
 
     return p0
 
-    .line 179
+    .line 176
     :cond_0
     new-instance p0, Ljava/lang/IllegalArgumentException;
 
@@ -212,7 +212,7 @@
 .method public getMaximumAngle()F
     .locals 0
 
-    .line 174
+    .line 171
     iget p0, p0, Landroidx/transition/ArcMotion;->mMaximumAngle:F
 
     return p0
@@ -221,7 +221,7 @@
 .method public getMinimumHorizontalAngle()F
     .locals 0
 
-    .line 116
+    .line 113
     iget p0, p0, Landroidx/transition/ArcMotion;->mMinimumHorizontalAngle:F
 
     return p0
@@ -230,7 +230,7 @@
 .method public getMinimumVerticalAngle()F
     .locals 0
 
-    .line 147
+    .line 144
     iget p0, p0, Landroidx/transition/ArcMotion;->mMinimumVerticalAngle:F
 
     return p0
@@ -239,12 +239,12 @@
 .method public getPath(FFFF)Landroid/graphics/Path;
     .locals 11
 
-    .line 203
+    .line 200
     new-instance v7, Landroid/graphics/Path;
 
     invoke-direct {v7}, Landroid/graphics/Path;-><init>()V
 
-    .line 204
+    .line 201
     invoke-virtual {v7, p1, p2}, Landroid/graphics/Path;->moveTo(FF)V
 
     sub-float v0, p3, p1
@@ -282,7 +282,7 @@
     :cond_0
     const/4 v8, 0x0
 
-    .line 225
+    .line 222
     :goto_0
     invoke-static {v0}, Ljava/lang/Math;->abs(F)F
 
@@ -300,7 +300,7 @@
 
     div-float/2addr v2, v1
 
-    .line 231
+    .line 228
     invoke-static {v2}, Ljava/lang/Math;->abs(F)F
 
     move-result v0
@@ -318,7 +318,7 @@
 
     move v1, p1
 
-    .line 240
+    .line 237
     :goto_1
     iget v2, p0, Landroidx/transition/ArcMotion;->mMinimumVerticalTangent:F
 
@@ -346,7 +346,7 @@
 
     move v0, p4
 
-    .line 253
+    .line 250
     :goto_2
     iget v2, p0, Landroidx/transition/ArcMotion;->mMinimumHorizontalTangent:F
 
@@ -365,7 +365,7 @@
 
     add-float/2addr v2, v9
 
-    .line 260
+    .line 257
     iget p0, p0, Landroidx/transition/ArcMotion;->mMaximumTangent:F
 
     mul-float/2addr v6, p0
@@ -401,7 +401,7 @@
 
     float-to-double v8, v8
 
-    .line 270
+    .line 267
     invoke-static {v8, v9}, Ljava/lang/Math;->sqrt(D)D
 
     move-result-wide v8
@@ -445,7 +445,7 @@
 
     move v6, p4
 
-    .line 278
+    .line 275
     invoke-virtual/range {v0 .. v6}, Landroid/graphics/Path;->cubicTo(FFFFFF)V
 
     return-object v7
@@ -454,10 +454,10 @@
 .method public setMaximumAngle(F)V
     .locals 0
 
-    .line 160
+    .line 157
     iput p1, p0, Landroidx/transition/ArcMotion;->mMaximumAngle:F
 
-    .line 161
+    .line 158
     invoke-static {p1}, Landroidx/transition/ArcMotion;->toTangent(F)F
 
     move-result p1
@@ -470,10 +470,10 @@
 .method public setMinimumHorizontalAngle(F)V
     .locals 0
 
-    .line 101
+    .line 98
     iput p1, p0, Landroidx/transition/ArcMotion;->mMinimumHorizontalAngle:F
 
-    .line 102
+    .line 99
     invoke-static {p1}, Landroidx/transition/ArcMotion;->toTangent(F)F
 
     move-result p1
@@ -486,10 +486,10 @@
 .method public setMinimumVerticalAngle(F)V
     .locals 0
 
-    .line 131
+    .line 128
     iput p1, p0, Landroidx/transition/ArcMotion;->mMinimumVerticalAngle:F
 
-    .line 132
+    .line 129
     invoke-static {p1}, Landroidx/transition/ArcMotion;->toTangent(F)F
 
     move-result p1

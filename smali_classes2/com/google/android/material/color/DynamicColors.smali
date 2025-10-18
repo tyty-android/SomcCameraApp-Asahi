@@ -43,6 +43,8 @@
 
 .field private static final SAMSUNG_DEVICE_SUPPORT_CONDITION:Lcom/google/android/material/color/DynamicColors$DeviceSupportCondition;
 
+.field private static final TAG:Ljava/lang/String;
+
 .field private static final USE_DEFAULT_THEME_OVERLAY:I
 
 
@@ -50,7 +52,7 @@
 .method static constructor <clinit>()V
     .locals 4
 
-    .line 46
+    .line 47
     sget v0, Lcom/google/android/material/R$attr;->dynamicColorThemeOverlay:I
 
     filled-new-array {v0}, [I
@@ -59,173 +61,188 @@
 
     sput-object v0, Lcom/google/android/material/color/DynamicColors;->DYNAMIC_COLOR_THEME_OVERLAY_ATTRIBUTE:[I
 
-    .line 49
+    .line 50
     new-instance v0, Lcom/google/android/material/color/DynamicColors$1;
 
     invoke-direct {v0}, Lcom/google/android/material/color/DynamicColors$1;-><init>()V
 
     sput-object v0, Lcom/google/android/material/color/DynamicColors;->DEFAULT_DEVICE_SUPPORT_CONDITION:Lcom/google/android/material/color/DynamicColors$DeviceSupportCondition;
 
-    .line 58
+    .line 59
     new-instance v1, Lcom/google/android/material/color/DynamicColors$2;
 
     invoke-direct {v1}, Lcom/google/android/material/color/DynamicColors$2;-><init>()V
 
     sput-object v1, Lcom/google/android/material/color/DynamicColors;->SAMSUNG_DEVICE_SUPPORT_CONDITION:Lcom/google/android/material/color/DynamicColors$DeviceSupportCondition;
 
-    .line 80
+    .line 81
     new-instance v2, Ljava/util/HashMap;
 
     invoke-direct {v2}, Ljava/util/HashMap;-><init>()V
 
-    .line 81
+    .line 82
     const-string v3, "fcnt"
 
     invoke-interface {v2, v3, v0}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 82
+    .line 83
     const-string v3, "google"
 
     invoke-interface {v2, v3, v0}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 83
+    .line 84
     const-string v3, "hmd global"
 
     invoke-interface {v2, v3, v0}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 84
+    .line 85
     const-string v3, "infinix"
 
     invoke-interface {v2, v3, v0}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 85
+    .line 86
     const-string v3, "infinix mobility limited"
 
     invoke-interface {v2, v3, v0}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 86
+    .line 87
     const-string v3, "itel"
 
     invoke-interface {v2, v3, v0}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 87
+    .line 88
     const-string v3, "kyocera"
 
     invoke-interface {v2, v3, v0}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 88
+    .line 89
     const-string v3, "lenovo"
 
     invoke-interface {v2, v3, v0}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 89
+    .line 90
     const-string v3, "lge"
 
     invoke-interface {v2, v3, v0}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 90
-    const-string v3, "motorola"
-
-    invoke-interface {v2, v3, v0}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
-
     .line 91
-    const-string v3, "nothing"
+    const-string v3, "meizu"
 
     invoke-interface {v2, v3, v0}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 92
-    const-string v3, "oneplus"
+    const-string v3, "motorola"
 
     invoke-interface {v2, v3, v0}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 93
-    const-string v3, "oppo"
+    const-string v3, "nothing"
 
     invoke-interface {v2, v3, v0}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 94
-    const-string v3, "realme"
+    const-string v3, "oneplus"
 
     invoke-interface {v2, v3, v0}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 95
-    const-string v3, "robolectric"
+    const-string v3, "oppo"
 
     invoke-interface {v2, v3, v0}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 96
+    const-string v3, "realme"
+
+    invoke-interface {v2, v3, v0}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 97
+    const-string v3, "robolectric"
+
+    invoke-interface {v2, v3, v0}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 98
     const-string v3, "samsung"
 
     invoke-interface {v2, v3, v1}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 97
+    .line 99
     const-string v1, "sharp"
 
     invoke-interface {v2, v1, v0}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 98
-    const-string v1, "sony"
-
-    invoke-interface {v2, v1, v0}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
-
-    .line 99
-    const-string v1, "tcl"
-
-    invoke-interface {v2, v1, v0}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
-
     .line 100
-    const-string v1, "tecno"
+    const-string v1, "shift"
 
     invoke-interface {v2, v1, v0}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 101
-    const-string v1, "tecno mobile limited"
+    const-string v1, "sony"
 
     invoke-interface {v2, v1, v0}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 102
-    const-string v1, "vivo"
+    const-string v1, "tcl"
 
     invoke-interface {v2, v1, v0}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 103
-    const-string v1, "wingtech"
+    const-string v1, "tecno"
 
     invoke-interface {v2, v1, v0}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 104
-    const-string v1, "xiaomi"
+    const-string v1, "tecno mobile limited"
 
     invoke-interface {v2, v1, v0}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 105
+    const-string v1, "vivo"
+
+    invoke-interface {v2, v1, v0}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 106
+    const-string v1, "wingtech"
+
+    invoke-interface {v2, v1, v0}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 107
+    const-string v1, "xiaomi"
+
+    invoke-interface {v2, v1, v0}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 108
     invoke-static {v2}, Ljava/util/Collections;->unmodifiableMap(Ljava/util/Map;)Ljava/util/Map;
 
     move-result-object v1
 
     sput-object v1, Lcom/google/android/material/color/DynamicColors;->DYNAMIC_COLOR_SUPPORTED_MANUFACTURERS:Ljava/util/Map;
 
-    .line 111
+    .line 114
     new-instance v1, Ljava/util/HashMap;
 
     invoke-direct {v1}, Ljava/util/HashMap;-><init>()V
 
-    .line 112
+    .line 115
     const-string v2, "asus"
 
     invoke-interface {v1, v2, v0}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 113
+    .line 116
     const-string v2, "jio"
 
     invoke-interface {v1, v2, v0}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 114
+    .line 117
     invoke-static {v1}, Ljava/util/Collections;->unmodifiableMap(Ljava/util/Map;)Ljava/util/Map;
 
     move-result-object v0
 
     sput-object v0, Lcom/google/android/material/color/DynamicColors;->DYNAMIC_COLOR_SUPPORTED_BRANDS:Ljava/util/Map;
+
+    .line 121
+    const-string v0, "DynamicColors"
+
+    sput-object v0, Lcom/google/android/material/color/DynamicColors;->TAG:Ljava/lang/String;
 
     return-void
 .end method
@@ -233,7 +250,7 @@
 .method private constructor <init>()V
     .locals 0
 
-    .line 119
+    .line 123
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -244,7 +261,7 @@
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
-    .line 230
+    .line 234
     invoke-static {p0}, Lcom/google/android/material/color/DynamicColors;->applyToActivityIfAvailable(Landroid/app/Activity;)V
 
     return-void
@@ -255,12 +272,12 @@
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
-    .line 242
+    .line 246
     new-instance v0, Lcom/google/android/material/color/DynamicColorsOptions$Builder;
 
     invoke-direct {v0}, Lcom/google/android/material/color/DynamicColorsOptions$Builder;-><init>()V
 
-    .line 243
+    .line 247
     invoke-virtual {v0, p1}, Lcom/google/android/material/color/DynamicColorsOptions$Builder;->setThemeOverlay(I)Lcom/google/android/material/color/DynamicColorsOptions$Builder;
 
     move-result-object p1
@@ -269,7 +286,7 @@
 
     move-result-object p1
 
-    .line 242
+    .line 246
     invoke-static {p0, p1}, Lcom/google/android/material/color/DynamicColors;->applyToActivityIfAvailable(Landroid/app/Activity;Lcom/google/android/material/color/DynamicColorsOptions;)V
 
     return-void
@@ -280,12 +297,12 @@
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
-    .line 257
+    .line 261
     new-instance v0, Lcom/google/android/material/color/DynamicColorsOptions$Builder;
 
     invoke-direct {v0}, Lcom/google/android/material/color/DynamicColorsOptions$Builder;-><init>()V
 
-    .line 258
+    .line 262
     invoke-virtual {v0, p1}, Lcom/google/android/material/color/DynamicColorsOptions$Builder;->setPrecondition(Lcom/google/android/material/color/DynamicColors$Precondition;)Lcom/google/android/material/color/DynamicColorsOptions$Builder;
 
     move-result-object p1
@@ -294,7 +311,7 @@
 
     move-result-object p1
 
-    .line 257
+    .line 261
     invoke-static {p0, p1}, Lcom/google/android/material/color/DynamicColors;->applyToActivityIfAvailable(Landroid/app/Activity;Lcom/google/android/material/color/DynamicColorsOptions;)V
 
     return-void
@@ -303,7 +320,7 @@
 .method public static applyToActivitiesIfAvailable(Landroid/app/Application;)V
     .locals 1
 
-    .line 131
+    .line 135
     new-instance v0, Lcom/google/android/material/color/DynamicColorsOptions$Builder;
 
     invoke-direct {v0}, Lcom/google/android/material/color/DynamicColorsOptions$Builder;-><init>()V
@@ -322,12 +339,12 @@
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
-    .line 146
+    .line 150
     new-instance v0, Lcom/google/android/material/color/DynamicColorsOptions$Builder;
 
     invoke-direct {v0}, Lcom/google/android/material/color/DynamicColorsOptions$Builder;-><init>()V
 
-    .line 147
+    .line 151
     invoke-virtual {v0, p1}, Lcom/google/android/material/color/DynamicColorsOptions$Builder;->setThemeOverlay(I)Lcom/google/android/material/color/DynamicColorsOptions$Builder;
 
     move-result-object p1
@@ -336,7 +353,7 @@
 
     move-result-object p1
 
-    .line 146
+    .line 150
     invoke-static {p0, p1}, Lcom/google/android/material/color/DynamicColors;->applyToActivitiesIfAvailable(Landroid/app/Application;Lcom/google/android/material/color/DynamicColorsOptions;)V
 
     return-void
@@ -347,27 +364,27 @@
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
-    .line 180
+    .line 184
     new-instance v0, Lcom/google/android/material/color/DynamicColorsOptions$Builder;
 
     invoke-direct {v0}, Lcom/google/android/material/color/DynamicColorsOptions$Builder;-><init>()V
 
-    .line 183
+    .line 187
     invoke-virtual {v0, p1}, Lcom/google/android/material/color/DynamicColorsOptions$Builder;->setThemeOverlay(I)Lcom/google/android/material/color/DynamicColorsOptions$Builder;
 
     move-result-object p1
 
-    .line 184
+    .line 188
     invoke-virtual {p1, p2}, Lcom/google/android/material/color/DynamicColorsOptions$Builder;->setPrecondition(Lcom/google/android/material/color/DynamicColors$Precondition;)Lcom/google/android/material/color/DynamicColorsOptions$Builder;
 
     move-result-object p1
 
-    .line 185
+    .line 189
     invoke-virtual {p1}, Lcom/google/android/material/color/DynamicColorsOptions$Builder;->build()Lcom/google/android/material/color/DynamicColorsOptions;
 
     move-result-object p1
 
-    .line 180
+    .line 184
     invoke-static {p0, p1}, Lcom/google/android/material/color/DynamicColors;->applyToActivitiesIfAvailable(Landroid/app/Application;Lcom/google/android/material/color/DynamicColorsOptions;)V
 
     return-void
@@ -378,12 +395,12 @@
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
-    .line 163
+    .line 167
     new-instance v0, Lcom/google/android/material/color/DynamicColorsOptions$Builder;
 
     invoke-direct {v0}, Lcom/google/android/material/color/DynamicColorsOptions$Builder;-><init>()V
 
-    .line 164
+    .line 168
     invoke-virtual {v0, p1}, Lcom/google/android/material/color/DynamicColorsOptions$Builder;->setPrecondition(Lcom/google/android/material/color/DynamicColors$Precondition;)Lcom/google/android/material/color/DynamicColorsOptions$Builder;
 
     move-result-object p1
@@ -392,7 +409,7 @@
 
     move-result-object p1
 
-    .line 163
+    .line 167
     invoke-static {p0, p1}, Lcom/google/android/material/color/DynamicColors;->applyToActivitiesIfAvailable(Landroid/app/Application;Lcom/google/android/material/color/DynamicColorsOptions;)V
 
     return-void
@@ -401,7 +418,7 @@
 .method public static applyToActivitiesIfAvailable(Landroid/app/Application;Lcom/google/android/material/color/DynamicColorsOptions;)V
     .locals 1
 
-    .line 217
+    .line 221
     new-instance v0, Lcom/google/android/material/color/DynamicColors$DynamicColorsActivityLifecycleCallbacks;
 
     invoke-direct {v0, p1}, Lcom/google/android/material/color/DynamicColors$DynamicColorsActivityLifecycleCallbacks;-><init>(Lcom/google/android/material/color/DynamicColorsOptions;)V
@@ -414,7 +431,7 @@
 .method public static applyToActivityIfAvailable(Landroid/app/Activity;)V
     .locals 1
 
-    .line 268
+    .line 272
     new-instance v0, Lcom/google/android/material/color/DynamicColorsOptions$Builder;
 
     invoke-direct {v0}, Lcom/google/android/material/color/DynamicColorsOptions$Builder;-><init>()V
@@ -431,7 +448,7 @@
 .method public static applyToActivityIfAvailable(Landroid/app/Activity;Lcom/google/android/material/color/DynamicColorsOptions;)V
     .locals 5
 
-    .line 281
+    .line 285
     invoke-static {}, Lcom/google/android/material/color/DynamicColors;->isDynamicColorAvailable()Z
 
     move-result v0
@@ -440,7 +457,7 @@
 
     return-void
 
-    .line 287
+    .line 291
     :cond_0
     invoke-virtual {p1}, Lcom/google/android/material/color/DynamicColorsOptions;->getContentBasedSeedColor()Ljava/lang/Integer;
 
@@ -448,21 +465,23 @@
 
     if-nez v0, :cond_2
 
-    .line 289
+    .line 293
     invoke-virtual {p1}, Lcom/google/android/material/color/DynamicColorsOptions;->getThemeOverlay()I
 
     move-result v0
 
     if-nez v0, :cond_1
 
-    .line 290
-    invoke-static {p0}, Lcom/google/android/material/color/DynamicColors;->getDefaultThemeOverlay(Landroid/content/Context;)I
+    .line 294
+    sget-object v0, Lcom/google/android/material/color/DynamicColors;->DYNAMIC_COLOR_THEME_OVERLAY_ATTRIBUTE:[I
+
+    invoke-static {p0, v0}, Lcom/google/android/material/color/DynamicColors;->getDefaultThemeOverlay(Landroid/content/Context;[I)I
 
     move-result v0
 
     goto :goto_0
 
-    .line 291
+    .line 295
     :cond_1
     invoke-virtual {p1}, Lcom/google/android/material/color/DynamicColorsOptions;->getThemeOverlay()I
 
@@ -473,7 +492,7 @@
     :cond_2
     const/4 v0, 0x0
 
-    .line 294
+    .line 298
     :goto_0
     invoke-virtual {p1}, Lcom/google/android/material/color/DynamicColorsOptions;->getPrecondition()Lcom/google/android/material/color/DynamicColors$Precondition;
 
@@ -485,17 +504,17 @@
 
     if-eqz v1, :cond_6
 
-    .line 296
+    .line 300
     invoke-virtual {p1}, Lcom/google/android/material/color/DynamicColorsOptions;->getContentBasedSeedColor()Ljava/lang/Integer;
 
     move-result-object v1
 
     if-eqz v1, :cond_4
 
-    .line 297
+    .line 301
     new-instance v0, Lcom/google/android/material/color/utilities/SchemeContent;
 
-    .line 299
+    .line 303
     invoke-virtual {p1}, Lcom/google/android/material/color/DynamicColorsOptions;->getContentBasedSeedColor()Ljava/lang/Integer;
 
     move-result-object v1
@@ -508,22 +527,23 @@
 
     move-result-object v1
 
-    sget v2, Lcom/google/android/material/R$attr;->isLightTheme:I
-
-    const/4 v3, 0x1
-
-    .line 300
-    invoke-static {p0, v2, v3}, Lcom/google/android/material/resources/MaterialAttributes;->resolveBoolean(Landroid/content/Context;IZ)Z
+    .line 304
+    invoke-static {p0}, Lcom/google/android/material/color/MaterialColors;->isLightTheme(Landroid/content/Context;)Z
 
     move-result v2
 
-    xor-int/2addr v2, v3
+    xor-int/lit8 v2, v2, 0x1
 
-    const-wide/16 v3, 0x0
+    .line 305
+    invoke-static {p0}, Lcom/google/android/material/color/DynamicColors;->getSystemContrast(Landroid/content/Context;)F
+
+    move-result v3
+
+    float-to-double v3, v3
 
     invoke-direct {v0, v1, v2, v3, v4}, Lcom/google/android/material/color/utilities/SchemeContent;-><init>(Lcom/google/android/material/color/utilities/Hct;ZD)V
 
-    .line 303
+    .line 306
     invoke-static {}, Lcom/google/android/material/color/ColorResourcesOverride;->getInstance()Lcom/google/android/material/color/ColorResourcesOverride;
 
     move-result-object v1
@@ -532,13 +552,13 @@
 
     return-void
 
-    .line 309
+    .line 312
     :cond_3
     invoke-static {v0}, Lcom/google/android/material/color/MaterialColorUtilitiesHelper;->createColorResourcesIdsToColorValues(Lcom/google/android/material/color/utilities/DynamicScheme;)Ljava/util/Map;
 
     move-result-object v0
 
-    .line 307
+    .line 310
     invoke-interface {v1, p0, v0}, Lcom/google/android/material/color/ColorResourcesOverride;->applyIfPossible(Landroid/content/Context;Ljava/util/Map;)Z
 
     move-result v0
@@ -547,11 +567,11 @@
 
     return-void
 
-    .line 314
+    .line 317
     :cond_4
     invoke-static {p0, v0}, Lcom/google/android/material/color/ThemeUtils;->applyThemeOverlay(Landroid/content/Context;I)V
 
-    .line 318
+    .line 321
     :cond_5
     invoke-virtual {p1}, Lcom/google/android/material/color/DynamicColorsOptions;->getOnAppliedCallback()Lcom/google/android/material/color/DynamicColors$OnAppliedCallback;
 
@@ -563,34 +583,59 @@
     return-void
 .end method
 
-.method private static getDefaultThemeOverlay(Landroid/content/Context;)I
-    .locals 1
+.method private static getDefaultThemeOverlay(Landroid/content/Context;[I)I
+    .locals 0
 
-    .line 377
-    sget-object v0, Lcom/google/android/material/color/DynamicColors;->DYNAMIC_COLOR_THEME_OVERLAY_ATTRIBUTE:[I
-
-    .line 378
-    invoke-virtual {p0, v0}, Landroid/content/Context;->obtainStyledAttributes([I)Landroid/content/res/TypedArray;
+    .line 417
+    invoke-virtual {p0, p1}, Landroid/content/Context;->obtainStyledAttributes([I)Landroid/content/res/TypedArray;
 
     move-result-object p0
 
-    const/4 v0, 0x0
+    const/4 p1, 0x0
 
-    .line 379
-    invoke-virtual {p0, v0, v0}, Landroid/content/res/TypedArray;->getResourceId(II)I
+    .line 418
+    invoke-virtual {p0, p1, p1}, Landroid/content/res/TypedArray;->getResourceId(II)I
 
-    move-result v0
+    move-result p1
 
-    .line 380
+    .line 419
     invoke-virtual {p0}, Landroid/content/res/TypedArray;->recycle()V
 
-    return v0
+    return p1
+.end method
+
+.method private static getSystemContrast(Landroid/content/Context;)F
+    .locals 1
+
+    .line 482
+    const-string v0, "uimode"
+
+    invoke-virtual {p0, v0}, Landroid/content/Context;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
+
+    move-result-object p0
+
+    check-cast p0, Landroid/app/UiModeManager;
+
+    if-eqz p0, :cond_0
+
+    .line 485
+    invoke-virtual {p0}, Landroid/app/UiModeManager;->getContrast()F
+
+    move-result p0
+
+    goto :goto_0
+
+    :cond_0
+    const/4 p0, 0x0
+
+    :goto_0
+    return p0
 .end method
 
 .method public static isDynamicColorAvailable()Z
-    .locals 3
+    .locals 4
 
-    .line 365
+    .line 404
     invoke-static {}, Landroidx/core/os/BuildCompat;->isAtLeastT()Z
 
     move-result v0
@@ -601,14 +646,16 @@
 
     return v1
 
-    .line 368
+    .line 407
     :cond_0
     sget-object v0, Lcom/google/android/material/color/DynamicColors;->DYNAMIC_COLOR_SUPPORTED_MANUFACTURERS:Ljava/util/Map;
 
     sget-object v2, Landroid/os/Build;->MANUFACTURER:Ljava/lang/String;
 
-    .line 369
-    invoke-virtual {v2}, Ljava/lang/String;->toLowerCase()Ljava/lang/String;
+    sget-object v3, Ljava/util/Locale;->ROOT:Ljava/util/Locale;
+
+    .line 408
+    invoke-virtual {v2, v3}, Ljava/lang/String;->toLowerCase(Ljava/util/Locale;)Ljava/lang/String;
 
     move-result-object v2
 
@@ -620,12 +667,15 @@
 
     if-nez v0, :cond_1
 
-    .line 371
+    .line 410
     sget-object v0, Lcom/google/android/material/color/DynamicColors;->DYNAMIC_COLOR_SUPPORTED_BRANDS:Ljava/util/Map;
 
     sget-object v2, Landroid/os/Build;->BRAND:Ljava/lang/String;
 
-    invoke-virtual {v2}, Ljava/lang/String;->toLowerCase()Ljava/lang/String;
+    sget-object v3, Ljava/util/Locale;->ROOT:Ljava/util/Locale;
+
+    .line 411
+    invoke-virtual {v2, v3}, Ljava/lang/String;->toLowerCase(Ljava/util/Locale;)Ljava/lang/String;
 
     move-result-object v2
 
@@ -638,7 +688,7 @@
     :cond_1
     if-eqz v0, :cond_2
 
-    .line 373
+    .line 413
     invoke-interface {v0}, Lcom/google/android/material/color/DynamicColors$DeviceSupportCondition;->isSupported()Z
 
     move-result v0
@@ -659,7 +709,7 @@
 
     const/4 v0, 0x0
 
-    .line 334
+    .line 337
     invoke-static {p0, v0}, Lcom/google/android/material/color/DynamicColors;->wrapContextIfAvailable(Landroid/content/Context;I)Landroid/content/Context;
 
     move-result-object p0
@@ -670,7 +720,32 @@
 .method public static wrapContextIfAvailable(Landroid/content/Context;I)Landroid/content/Context;
     .locals 1
 
-    .line 349
+    .line 352
+    new-instance v0, Lcom/google/android/material/color/DynamicColorsOptions$Builder;
+
+    invoke-direct {v0}, Lcom/google/android/material/color/DynamicColorsOptions$Builder;-><init>()V
+
+    .line 353
+    invoke-virtual {v0, p1}, Lcom/google/android/material/color/DynamicColorsOptions$Builder;->setThemeOverlay(I)Lcom/google/android/material/color/DynamicColorsOptions$Builder;
+
+    move-result-object p1
+
+    invoke-virtual {p1}, Lcom/google/android/material/color/DynamicColorsOptions$Builder;->build()Lcom/google/android/material/color/DynamicColorsOptions;
+
+    move-result-object p1
+
+    .line 352
+    invoke-static {p0, p1}, Lcom/google/android/material/color/DynamicColors;->wrapContextIfAvailable(Landroid/content/Context;Lcom/google/android/material/color/DynamicColorsOptions;)Landroid/content/Context;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method public static wrapContextIfAvailable(Landroid/content/Context;Lcom/google/android/material/color/DynamicColorsOptions;)Landroid/content/Context;
+    .locals 5
+
+    .line 369
     invoke-static {}, Lcom/google/android/material/color/DynamicColors;->isDynamicColorAvailable()Z
 
     move-result v0
@@ -679,27 +754,90 @@
 
     return-object p0
 
+    .line 372
     :cond_0
-    if-nez p1, :cond_1
+    invoke-virtual {p1}, Lcom/google/android/material/color/DynamicColorsOptions;->getThemeOverlay()I
 
-    .line 353
-    invoke-static {p0}, Lcom/google/android/material/color/DynamicColors;->getDefaultThemeOverlay(Landroid/content/Context;)I
+    move-result v0
+
+    if-nez v0, :cond_1
+
+    .line 374
+    sget-object v0, Lcom/google/android/material/color/DynamicColors;->DYNAMIC_COLOR_THEME_OVERLAY_ATTRIBUTE:[I
+
+    invoke-static {p0, v0}, Lcom/google/android/material/color/DynamicColors;->getDefaultThemeOverlay(Landroid/content/Context;[I)I
+
+    move-result v0
+
+    :cond_1
+    if-nez v0, :cond_2
+
+    return-object p0
+
+    .line 381
+    :cond_2
+    invoke-virtual {p1}, Lcom/google/android/material/color/DynamicColorsOptions;->getContentBasedSeedColor()Ljava/lang/Integer;
+
+    move-result-object v1
+
+    if-eqz v1, :cond_3
+
+    .line 382
+    new-instance v1, Lcom/google/android/material/color/utilities/SchemeContent;
+
+    .line 384
+    invoke-virtual {p1}, Lcom/google/android/material/color/DynamicColorsOptions;->getContentBasedSeedColor()Ljava/lang/Integer;
+
+    move-result-object p1
+
+    invoke-virtual {p1}, Ljava/lang/Integer;->intValue()I
 
     move-result p1
 
-    :cond_1
-    if-nez p1, :cond_2
+    invoke-static {p1}, Lcom/google/android/material/color/utilities/Hct;->fromInt(I)Lcom/google/android/material/color/utilities/Hct;
 
-    goto :goto_0
+    move-result-object p1
 
-    .line 355
-    :cond_2
-    new-instance v0, Landroid/view/ContextThemeWrapper;
+    .line 385
+    invoke-static {p0}, Lcom/google/android/material/color/MaterialColors;->isLightTheme(Landroid/content/Context;)Z
 
-    invoke-direct {v0, p0, p1}, Landroid/view/ContextThemeWrapper;-><init>(Landroid/content/Context;I)V
+    move-result v2
 
-    move-object p0, v0
+    xor-int/lit8 v2, v2, 0x1
 
-    :goto_0
+    .line 386
+    invoke-static {p0}, Lcom/google/android/material/color/DynamicColors;->getSystemContrast(Landroid/content/Context;)F
+
+    move-result v3
+
+    float-to-double v3, v3
+
+    invoke-direct {v1, p1, v2, v3, v4}, Lcom/google/android/material/color/utilities/SchemeContent;-><init>(Lcom/google/android/material/color/utilities/Hct;ZD)V
+
+    .line 387
+    invoke-static {}, Lcom/google/android/material/color/ColorResourcesOverride;->getInstance()Lcom/google/android/material/color/ColorResourcesOverride;
+
+    move-result-object p1
+
+    if-eqz p1, :cond_3
+
+    .line 391
+    invoke-static {v1}, Lcom/google/android/material/color/MaterialColorUtilitiesHelper;->createColorResourcesIdsToColorValues(Lcom/google/android/material/color/utilities/DynamicScheme;)Ljava/util/Map;
+
+    move-result-object v0
+
+    .line 389
+    invoke-interface {p1, p0, v0}, Lcom/google/android/material/color/ColorResourcesOverride;->wrapContextIfPossible(Landroid/content/Context;Ljava/util/Map;)Landroid/content/Context;
+
+    move-result-object p0
+
     return-object p0
+
+    .line 394
+    :cond_3
+    new-instance p1, Landroid/view/ContextThemeWrapper;
+
+    invoke-direct {p1, p0, v0}, Landroid/view/ContextThemeWrapper;-><init>(Landroid/content/Context;I)V
+
+    return-object p1
 .end method

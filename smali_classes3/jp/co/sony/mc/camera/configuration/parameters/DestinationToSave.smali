@@ -81,7 +81,7 @@
 
     const/4 v3, -0x1
 
-    const v4, 0x7f1103b5
+    const v4, 0x7f1103e9
 
     move-object v0, v7
 
@@ -102,7 +102,7 @@
 
     const/4 v11, -0x1
 
-    const v12, 0x7f1103b6
+    const v12, 0x7f1103ea
 
     move-object v8, v15
 
@@ -216,7 +216,7 @@
 .end method
 
 .method public static getValueFromType(Ljp/co/sony/mc/camera/storage/Storage$StorageType;)Ljp/co/sony/mc/camera/configuration/parameters/DestinationToSave;
-    .locals 6
+    .locals 7
 
     const/4 v0, 0x0
 
@@ -234,40 +234,46 @@
 
     const/4 v3, 0x0
 
-    :goto_0
-    if-ge v3, v2, :cond_3
+    move v4, v3
 
-    aget-object v4, v1, v3
+    :goto_0
+    if-ge v4, v2, :cond_3
+
+    aget-object v5, v1, v4
 
     .line 154
-    invoke-virtual {v4}, Ljp/co/sony/mc/camera/configuration/parameters/DestinationToSave;->getType()Ljp/co/sony/mc/camera/storage/Storage$StorageType;
+    invoke-virtual {v5}, Ljp/co/sony/mc/camera/configuration/parameters/DestinationToSave;->getType()Ljp/co/sony/mc/camera/storage/Storage$StorageType;
 
-    move-result-object v5
+    move-result-object v6
 
-    if-ne p0, v5, :cond_2
+    if-ne p0, v6, :cond_2
 
     .line 155
     sget-boolean v0, Ljp/co/sony/mc/camera/util/CamLog;->VERBOSE:Z
 
     if-eqz v0, :cond_1
 
-    new-instance v0, Ljava/lang/StringBuilder;
+    const/4 v0, 0x1
 
-    const-string v1, "getValueFromType: type: "
+    new-array v0, v0, [Ljava/lang/String;
 
-    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+    new-instance v1, Ljava/lang/StringBuilder;
 
-    invoke-virtual {v0, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+    const-string v2, "getValueFromType: type: "
 
-    move-result-object p0
+    invoke-direct {v1, v2}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
-    const-string v0, ", value : "
-
-    invoke-virtual {p0, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v1, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
     move-result-object p0
 
-    invoke-virtual {p0, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+    const-string v1, ", value : "
+
+    invoke-virtual {p0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object p0
+
+    invoke-virtual {p0, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
     move-result-object p0
 
@@ -275,17 +281,15 @@
 
     move-result-object p0
 
-    filled-new-array {p0}, [Ljava/lang/String;
+    aput-object p0, v0, v3
 
-    move-result-object p0
-
-    invoke-static {p0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
+    invoke-static {v0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
     :cond_1
-    return-object v4
+    return-object v5
 
     :cond_2
-    add-int/lit8 v3, v3, 0x1
+    add-int/lit8 v4, v4, 0x1
 
     goto :goto_0
 
@@ -309,7 +313,7 @@
 .end method
 
 .method public static setMountPoint(Ljava/util/List;)V
-    .locals 6
+    .locals 8
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -341,25 +345,29 @@
     .line 74
     sget-boolean v1, Ljp/co/sony/mc/camera/util/CamLog;->VERBOSE:Z
 
+    const/4 v2, 0x0
+
+    const/4 v3, 0x1
+
     if-eqz v1, :cond_1
 
-    new-instance v1, Ljava/lang/StringBuilder;
+    new-array v1, v3, [Ljava/lang/String;
 
-    const-string/jumbo v2, "setMountPoint: type: "
+    new-instance v4, Ljava/lang/StringBuilder;
 
-    invoke-direct {v1, v2}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+    const-string/jumbo v5, "setMountPoint: type: "
 
-    invoke-virtual {v1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+    invoke-direct {v4, v5}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
-    move-result-object v1
+    invoke-virtual {v4, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    move-result-object v4
 
-    move-result-object v1
+    invoke-virtual {v4}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    filled-new-array {v1}, [Ljava/lang/String;
+    move-result-object v4
 
-    move-result-object v1
+    aput-object v4, v1, v2
 
     invoke-static {v1}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
@@ -369,61 +377,59 @@
 
     move-result-object v1
 
-    array-length v2, v1
+    array-length v4, v1
 
-    const/4 v3, 0x0
+    move v5, v2
 
     :goto_1
-    if-ge v3, v2, :cond_0
+    if-ge v5, v4, :cond_0
 
-    aget-object v4, v1, v3
+    aget-object v6, v1, v5
 
     .line 77
-    iget-object v5, v4, Ljp/co/sony/mc/camera/configuration/parameters/DestinationToSave;->mCompatibleValue:Ljp/co/sony/mc/camera/configuration/parameters/DestinationToSave;
+    iget-object v7, v6, Ljp/co/sony/mc/camera/configuration/parameters/DestinationToSave;->mCompatibleValue:Ljp/co/sony/mc/camera/configuration/parameters/DestinationToSave;
 
-    if-nez v5, :cond_2
+    if-nez v7, :cond_2
 
     .line 78
-    invoke-virtual {v4}, Ljp/co/sony/mc/camera/configuration/parameters/DestinationToSave;->getType()Ljp/co/sony/mc/camera/storage/Storage$StorageType;
+    invoke-virtual {v6}, Ljp/co/sony/mc/camera/configuration/parameters/DestinationToSave;->getType()Ljp/co/sony/mc/camera/storage/Storage$StorageType;
 
-    move-result-object v5
+    move-result-object v7
 
-    if-ne v0, v5, :cond_2
-
-    const/4 v0, 0x1
+    if-ne v0, v7, :cond_2
 
     .line 79
-    iput-boolean v0, v4, Ljp/co/sony/mc/camera/configuration/parameters/DestinationToSave;->mIsEquipped:Z
+    iput-boolean v3, v6, Ljp/co/sony/mc/camera/configuration/parameters/DestinationToSave;->mIsEquipped:Z
 
     .line 80
     sget-boolean v0, Ljp/co/sony/mc/camera/util/CamLog;->VERBOSE:Z
 
     if-eqz v0, :cond_0
 
-    new-instance v0, Ljava/lang/StringBuilder;
+    new-array v0, v3, [Ljava/lang/String;
 
-    const-string/jumbo v1, "setMountPoint: valid mount point: "
+    new-instance v1, Ljava/lang/StringBuilder;
 
-    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+    const-string/jumbo v3, "setMountPoint: valid mount point: "
 
-    invoke-virtual {v0, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+    invoke-direct {v1, v3}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
-    move-result-object v0
+    invoke-virtual {v1, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    move-result-object v1
 
-    move-result-object v0
+    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    filled-new-array {v0}, [Ljava/lang/String;
+    move-result-object v1
 
-    move-result-object v0
+    aput-object v1, v0, v2
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
     goto :goto_0
 
     :cond_2
-    add-int/lit8 v3, v3, 0x1
+    add-int/lit8 v5, v5, 0x1
 
     goto :goto_1
 

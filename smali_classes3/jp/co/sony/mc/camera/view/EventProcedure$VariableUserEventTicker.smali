@@ -39,10 +39,10 @@
 .method private constructor <init>()V
     .locals 2
 
-    .line 1008
+    .line 1029
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 1012
+    .line 1033
     new-instance v0, Landroid/os/Handler;
 
     invoke-static {}, Landroid/os/Looper;->getMainLooper()Landroid/os/Looper;
@@ -67,20 +67,20 @@
 .method private postSchedule(J)V
     .locals 1
 
-    .line 1027
+    .line 1048
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/EventProcedure$VariableUserEventTicker;->mOnTickingListener:Ljp/co/sony/mc/camera/view/EventProcedure$VariableUserEventTicker$OnEventTickedListener;
 
     if-nez v0, :cond_0
 
     return-void
 
-    .line 1030
+    .line 1051
     :cond_0
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/EventProcedure$VariableUserEventTicker;->mHandler:Landroid/os/Handler;
 
     invoke-virtual {v0, p0}, Landroid/os/Handler;->removeCallbacks(Ljava/lang/Runnable;)V
 
-    .line 1031
+    .line 1052
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/EventProcedure$VariableUserEventTicker;->mHandler:Landroid/os/Handler;
 
     invoke-virtual {v0, p0, p1, p2}, Landroid/os/Handler;->postDelayed(Ljava/lang/Runnable;J)Z
@@ -93,17 +93,17 @@
 .method public run()V
     .locals 4
 
-    .line 1036
+    .line 1057
     invoke-static {}, Landroid/os/SystemClock;->uptimeMillis()J
 
     move-result-wide v0
 
-    .line 1038
+    .line 1059
     iget-object v2, p0, Ljp/co/sony/mc/camera/view/EventProcedure$VariableUserEventTicker;->mOnTickingListener:Ljp/co/sony/mc/camera/view/EventProcedure$VariableUserEventTicker$OnEventTickedListener;
 
     invoke-interface {v2, p0}, Ljp/co/sony/mc/camera/view/EventProcedure$VariableUserEventTicker$OnEventTickedListener;->onTicked(Ljp/co/sony/mc/camera/view/EventProcedure$VariableUserEventTicker;)V
 
-    .line 1041
+    .line 1062
     invoke-static {}, Landroid/os/SystemClock;->uptimeMillis()J
 
     move-result-wide v2
@@ -112,7 +112,7 @@
 
     long-to-int v0, v2
 
-    .line 1042
+    .line 1063
     iget v1, p0, Ljp/co/sony/mc/camera/view/EventProcedure$VariableUserEventTicker;->mInterval:I
 
     sub-int/2addr v1, v0
@@ -126,7 +126,7 @@
     :cond_0
     int-to-long v0, v1
 
-    .line 1043
+    .line 1064
     :goto_0
     invoke-direct {p0, v0, v1}, Ljp/co/sony/mc/camera/view/EventProcedure$VariableUserEventTicker;->postSchedule(J)V
 
@@ -136,15 +136,15 @@
 .method start(ILjp/co/sony/mc/camera/view/EventProcedure$VariableUserEventTicker$OnEventTickedListener;)V
     .locals 0
 
-    .line 1016
+    .line 1037
     iput p1, p0, Ljp/co/sony/mc/camera/view/EventProcedure$VariableUserEventTicker;->mInterval:I
 
-    .line 1017
+    .line 1038
     iput-object p2, p0, Ljp/co/sony/mc/camera/view/EventProcedure$VariableUserEventTicker;->mOnTickingListener:Ljp/co/sony/mc/camera/view/EventProcedure$VariableUserEventTicker$OnEventTickedListener;
 
     const-wide/16 p1, 0x0
 
-    .line 1018
+    .line 1039
     invoke-direct {p0, p1, p2}, Ljp/co/sony/mc/camera/view/EventProcedure$VariableUserEventTicker;->postSchedule(J)V
 
     return-void
@@ -153,14 +153,14 @@
 .method stop()V
     .locals 1
 
-    .line 1022
+    .line 1043
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/EventProcedure$VariableUserEventTicker;->mHandler:Landroid/os/Handler;
 
     invoke-virtual {v0, p0}, Landroid/os/Handler;->removeCallbacks(Ljava/lang/Runnable;)V
 
     const/4 v0, 0x0
 
-    .line 1023
+    .line 1044
     iput-object v0, p0, Ljp/co/sony/mc/camera/view/EventProcedure$VariableUserEventTicker;->mOnTickingListener:Ljp/co/sony/mc/camera/view/EventProcedure$VariableUserEventTicker$OnEventTickedListener;
 
     return-void

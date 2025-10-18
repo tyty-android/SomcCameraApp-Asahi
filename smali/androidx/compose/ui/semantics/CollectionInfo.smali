@@ -50,7 +50,7 @@
 .method public constructor <init>(II)V
     .locals 0
 
-    .line 563
+    .line 652
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     iput p1, p0, Landroidx/compose/ui/semantics/CollectionInfo;->rowCount:I
@@ -65,7 +65,7 @@
 .method public final getColumnCount()I
     .locals 0
 
-    .line 563
+    .line 652
     iget p0, p0, Landroidx/compose/ui/semantics/CollectionInfo;->columnCount:I
 
     return p0
@@ -74,7 +74,7 @@
 .method public final getRowCount()I
     .locals 0
 
-    .line 563
+    .line 652
     iget p0, p0, Landroidx/compose/ui/semantics/CollectionInfo;->rowCount:I
 
     return p0

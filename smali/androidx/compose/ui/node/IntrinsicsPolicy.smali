@@ -64,6 +64,8 @@
 
 
 # static fields
+.field public static final $stable:I
+
 .field private static final Companion:Landroidx/compose/ui/node/IntrinsicsPolicy$Companion;
 
 .field private static final NoPolicyError:Ljava/lang/String; = "Intrinsic size is queried but there is no measure policy in place."
@@ -87,15 +89,15 @@
 
     sput-object v0, Landroidx/compose/ui/node/IntrinsicsPolicy;->Companion:Landroidx/compose/ui/node/IntrinsicsPolicy$Companion;
 
+    const/16 v0, 0x8
+
+    sput v0, Landroidx/compose/ui/node/IntrinsicsPolicy;->$stable:I
+
     return-void
 .end method
 
 .method public constructor <init>(Landroidx/compose/ui/node/LayoutNode;)V
     .locals 1
-
-    const-string v0, "layoutNode"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 29
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -432,11 +434,7 @@
 .end method
 
 .method public final updateFrom(Landroidx/compose/ui/layout/MeasurePolicy;)V
-    .locals 1
-
-    const-string v0, "measurePolicy"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+    .locals 0
 
     .line 33
     invoke-direct {p0, p1}, Landroidx/compose/ui/node/IntrinsicsPolicy;->setMeasurePolicyState(Landroidx/compose/ui/layout/MeasurePolicy;)V

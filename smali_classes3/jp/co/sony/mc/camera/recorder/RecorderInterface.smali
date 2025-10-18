@@ -15,9 +15,6 @@
 
 
 # virtual methods
-.method public abstract getSurface()Landroid/view/Surface;
-.end method
-
 .method public abstract isAsyncStopSupported()Z
 .end method
 
@@ -40,9 +37,6 @@
 .end method
 
 .method public abstract setHalfFps()V
-.end method
-
-.method public abstract setInputSurface(Landroid/view/Surface;)V
 .end method
 
 .method public abstract setListener(Ljp/co/sony/mc/camera/recorder/RecorderInterface$RecordTrackListener;Ljp/co/sony/mc/camera/recorder/RecorderInterface$RecordTrackListener;Ljp/co/sony/mc/camera/recorder/RecorderInterface$OnErrorListener;Ljp/co/sony/mc/camera/recorder/RecorderInterface$OnMaxReachedListener;Ljp/co/sony/mc/camera/recorder/RecorderInterface$OnSetOutputDoneListener;)V

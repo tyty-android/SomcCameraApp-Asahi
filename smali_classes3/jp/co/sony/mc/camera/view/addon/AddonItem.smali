@@ -8,29 +8,34 @@
 
 .field public final iconId:I
 
+.field public final isGray:Z
+
 .field public final itemClickListener:Landroid/view/View$OnClickListener;
 
 .field public final titleId:I
 
 
 # direct methods
-.method public constructor <init>(IIILandroid/view/View$OnClickListener;)V
+.method public constructor <init>(IIIZLandroid/view/View$OnClickListener;)V
     .locals 0
 
-    .line 20
+    .line 21
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 21
+    .line 22
     iput p1, p0, Ljp/co/sony/mc/camera/view/addon/AddonItem;->titleId:I
 
-    .line 22
+    .line 23
     iput p2, p0, Ljp/co/sony/mc/camera/view/addon/AddonItem;->accessibilityId:I
 
-    .line 23
+    .line 24
     iput p3, p0, Ljp/co/sony/mc/camera/view/addon/AddonItem;->iconId:I
 
-    .line 24
-    iput-object p4, p0, Ljp/co/sony/mc/camera/view/addon/AddonItem;->itemClickListener:Landroid/view/View$OnClickListener;
+    .line 25
+    iput-boolean p4, p0, Ljp/co/sony/mc/camera/view/addon/AddonItem;->isGray:Z
+
+    .line 26
+    iput-object p5, p0, Ljp/co/sony/mc/camera/view/addon/AddonItem;->itemClickListener:Landroid/view/View$OnClickListener;
 
     return-void
 .end method

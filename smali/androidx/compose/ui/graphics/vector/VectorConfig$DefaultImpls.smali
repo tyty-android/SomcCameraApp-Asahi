@@ -26,7 +26,7 @@
 
 # direct methods
 .method public static getOrDefault(Landroidx/compose/ui/graphics/vector/VectorConfig;Landroidx/compose/ui/graphics/vector/VectorProperty;Ljava/lang/Object;)Ljava/lang/Object;
-    .locals 1
+    .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<T:",
@@ -41,11 +41,7 @@
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
-    const-string v0, "property"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 315
+    .line 300
     invoke-static {p0, p1, p2}, Landroidx/compose/ui/graphics/vector/VectorConfig;->access$getOrDefault$jd(Landroidx/compose/ui/graphics/vector/VectorConfig;Landroidx/compose/ui/graphics/vector/VectorProperty;Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p0

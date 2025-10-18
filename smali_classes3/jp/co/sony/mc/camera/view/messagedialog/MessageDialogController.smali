@@ -604,14 +604,18 @@
 .end method
 
 .method private static trace(Ljava/lang/String;)V
-    .locals 0
+    .locals 2
+
+    const/4 v0, 0x1
 
     .line 50
-    filled-new-array {p0}, [Ljava/lang/String;
+    new-array v0, v0, [Ljava/lang/String;
 
-    move-result-object p0
+    const/4 v1, 0x0
 
-    invoke-static {p0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
+    aput-object p0, v0, v1
+
+    invoke-static {v0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
     return-void
 .end method

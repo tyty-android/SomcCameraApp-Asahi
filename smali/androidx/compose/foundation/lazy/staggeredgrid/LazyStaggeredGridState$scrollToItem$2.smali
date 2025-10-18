@@ -180,7 +180,7 @@
 
     invoke-static {}, Lkotlin/coroutines/intrinsics/IntrinsicsKt;->getCOROUTINE_SUSPENDED()Ljava/lang/Object;
 
-    .line 301
+    .line 299
     iget v0, p0, Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridState$scrollToItem$2;->label:I
 
     if-nez v0, :cond_0
@@ -191,7 +191,7 @@
 
     check-cast p1, Landroidx/compose/foundation/gestures/ScrollScope;
 
-    .line 302
+    .line 300
     iget-object v0, p0, Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridState$scrollToItem$2;->this$0:Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridState;
 
     iget v1, p0, Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridState$scrollToItem$2;->$index:I
@@ -200,12 +200,12 @@
 
     invoke-virtual {v0, p1, v1, p0}, Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridState;->snapToItemInternal$foundation_release(Landroidx/compose/foundation/gestures/ScrollScope;II)V
 
-    .line 303
+    .line 301
     sget-object p0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
 
     return-object p0
 
-    .line 301
+    .line 299
     :cond_0
     new-instance p0, Ljava/lang/IllegalStateException;
 

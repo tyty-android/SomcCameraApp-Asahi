@@ -14,12 +14,12 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/SourceDebugExtension;
-    value = "SMAP\nScroll.kt\nKotlin\n*S Kotlin\n*F\n+ 1 Scroll.kt\nandroidx/compose/foundation/ScrollState\n+ 2 SnapshotIntState.kt\nandroidx/compose/runtime/SnapshotIntStateKt__SnapshotIntStateKt\n+ 3 SnapshotState.kt\nandroidx/compose/runtime/SnapshotStateKt__SnapshotStateKt\n*L\n1#1,454:1\n75#2:455\n108#2,2:456\n75#2:458\n108#2,2:459\n81#3:461\n81#3:462\n*S KotlinDebug\n*F\n+ 1 Scroll.kt\nandroidx/compose/foundation/ScrollState\n*L\n98#1:455\n98#1:456,2\n116#1:458\n116#1:459,2\n159#1:461\n161#1:462\n*E\n"
+    value = "SMAP\nScroll.kt\nKotlin\n*S Kotlin\n*F\n+ 1 Scroll.kt\nandroidx/compose/foundation/ScrollState\n+ 2 SnapshotIntState.kt\nandroidx/compose/runtime/SnapshotIntStateKt__SnapshotIntStateKt\n+ 3 Snapshot.kt\nandroidx/compose/runtime/snapshots/Snapshot$Companion\n+ 4 Snapshot.kt\nandroidx/compose/runtime/snapshots/Snapshot\n+ 5 SnapshotState.kt\nandroidx/compose/runtime/SnapshotStateKt__SnapshotStateKt\n*L\n1#1,459:1\n75#2:460\n108#2,2:461\n75#2:473\n108#2,2:474\n495#3,4:463\n500#3:472\n129#4,5:467\n81#5:476\n81#5:477\n*S KotlinDebug\n*F\n+ 1 Scroll.kt\nandroidx/compose/foundation/ScrollState\n*L\n99#1:460\n99#1:461,2\n120#1:473\n120#1:474,2\n109#1:463,4\n109#1:472\n109#1:467,5\n164#1:476\n166#1:477\n*E\n"
 .end annotation
 
 .annotation runtime Lkotlin/Metadata;
     d1 = {
-        "\u0000b\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0008\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0007\n\u0000\n\u0002\u0010\u000b\n\u0002\u0008\u0008\n\u0002\u0018\u0002\n\u0002\u0008\u0003\n\u0002\u0018\u0002\n\u0002\u0008\u0014\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0005\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0005\u0008\u0007\u0018\u0000 >2\u00020\u0001:\u0001>B\r\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u00a2\u0006\u0002\u0010\u0004J)\u0010+\u001a\u00020,2\u0006\u0010\"\u001a\u00020\u00032\u000e\u0008\u0002\u0010-\u001a\u0008\u0012\u0004\u0012\u00020\u00080.H\u0086@\u00f8\u0001\u0000\u00a2\u0006\u0002\u0010/J\u0010\u00100\u001a\u00020\u00082\u0006\u00101\u001a\u00020\u0008H\u0016JB\u00102\u001a\u00020,2\u0006\u00103\u001a\u0002042\'\u00105\u001a#\u0008\u0001\u0012\u0004\u0012\u000207\u0012\n\u0012\u0008\u0012\u0004\u0012\u00020,08\u0012\u0006\u0012\u0004\u0018\u00010906\u00a2\u0006\u0002\u0008:H\u0096@\u00f8\u0001\u0000\u00a2\u0006\u0002\u0010;J\u0019\u0010<\u001a\u00020\u00082\u0006\u0010\"\u001a\u00020\u0003H\u0086@\u00f8\u0001\u0000\u00a2\u0006\u0002\u0010=R\u000e\u0010\u0005\u001a\u00020\u0006X\u0082\u000e\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u0007\u001a\u00020\u0008X\u0082\u000e\u00a2\u0006\u0002\n\u0000R\u001b\u0010\t\u001a\u00020\n8VX\u0096\u0084\u0002\u00a2\u0006\u000c\n\u0004\u0008\r\u0010\u000e\u001a\u0004\u0008\u000b\u0010\u000cR\u001b\u0010\u000f\u001a\u00020\n8VX\u0096\u0084\u0002\u00a2\u0006\u000c\n\u0004\u0008\u0011\u0010\u000e\u001a\u0004\u0008\u0010\u0010\u000cR\u0011\u0010\u0012\u001a\u00020\u00138F\u00a2\u0006\u0006\u001a\u0004\u0008\u0014\u0010\u0015R\u0014\u0010\u0016\u001a\u00020\u0017X\u0080\u0004\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\u0018\u0010\u0019R\u0014\u0010\u001a\u001a\u00020\n8VX\u0096\u0004\u00a2\u0006\u0006\u001a\u0004\u0008\u001a\u0010\u000cR$\u0010\u001c\u001a\u00020\u00032\u0006\u0010\u001b\u001a\u00020\u00038F@@X\u0086\u000e\u00a2\u0006\u000c\u001a\u0004\u0008\u001d\u0010\u001e\"\u0004\u0008\u001f\u0010\u0004R\u000e\u0010 \u001a\u00020\u0001X\u0082\u0004\u00a2\u0006\u0002\n\u0000R+\u0010\"\u001a\u00020\u00032\u0006\u0010!\u001a\u00020\u00038F@BX\u0086\u008e\u0002\u00a2\u0006\u0012\n\u0004\u0008%\u0010&\u001a\u0004\u0008#\u0010\u001e\"\u0004\u0008$\u0010\u0004R+\u0010\'\u001a\u00020\u00032\u0006\u0010!\u001a\u00020\u00038@@@X\u0080\u008e\u0002\u00a2\u0006\u0012\n\u0004\u0008*\u0010&\u001a\u0004\u0008(\u0010\u001e\"\u0004\u0008)\u0010\u0004\u0082\u0002\u0004\n\u0002\u0008\u0019\u00a8\u0006?"
+        "\u0000b\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0008\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0007\n\u0000\n\u0002\u0010\u000b\n\u0002\u0008\u0008\n\u0002\u0018\u0002\n\u0002\u0008\u0003\n\u0002\u0018\u0002\n\u0002\u0008\u0014\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0005\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0005\u0008\u0007\u0018\u0000 >2\u00020\u0001:\u0001>B\r\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u00a2\u0006\u0002\u0010\u0004J&\u0010+\u001a\u00020,2\u0006\u0010\"\u001a\u00020\u00032\u000e\u0008\u0002\u0010-\u001a\u0008\u0012\u0004\u0012\u00020\u00080.H\u0086@\u00a2\u0006\u0002\u0010/J\u0010\u00100\u001a\u00020\u00082\u0006\u00101\u001a\u00020\u0008H\u0016J?\u00102\u001a\u00020,2\u0006\u00103\u001a\u0002042\'\u00105\u001a#\u0008\u0001\u0012\u0004\u0012\u000207\u0012\n\u0012\u0008\u0012\u0004\u0012\u00020,08\u0012\u0006\u0012\u0004\u0018\u00010906\u00a2\u0006\u0002\u0008:H\u0096@\u00a2\u0006\u0002\u0010;J\u0016\u0010<\u001a\u00020\u00082\u0006\u0010\"\u001a\u00020\u0003H\u0086@\u00a2\u0006\u0002\u0010=R\u000e\u0010\u0005\u001a\u00020\u0006X\u0082\u000e\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u0007\u001a\u00020\u0008X\u0082\u000e\u00a2\u0006\u0002\n\u0000R\u001b\u0010\t\u001a\u00020\n8VX\u0096\u0084\u0002\u00a2\u0006\u000c\n\u0004\u0008\r\u0010\u000e\u001a\u0004\u0008\u000b\u0010\u000cR\u001b\u0010\u000f\u001a\u00020\n8VX\u0096\u0084\u0002\u00a2\u0006\u000c\n\u0004\u0008\u0011\u0010\u000e\u001a\u0004\u0008\u0010\u0010\u000cR\u0011\u0010\u0012\u001a\u00020\u00138F\u00a2\u0006\u0006\u001a\u0004\u0008\u0014\u0010\u0015R\u0014\u0010\u0016\u001a\u00020\u0017X\u0080\u0004\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\u0018\u0010\u0019R\u0014\u0010\u001a\u001a\u00020\n8VX\u0096\u0004\u00a2\u0006\u0006\u001a\u0004\u0008\u001a\u0010\u000cR$\u0010\u001c\u001a\u00020\u00032\u0006\u0010\u001b\u001a\u00020\u00038F@@X\u0086\u000e\u00a2\u0006\u000c\u001a\u0004\u0008\u001d\u0010\u001e\"\u0004\u0008\u001f\u0010\u0004R\u000e\u0010 \u001a\u00020\u0001X\u0082\u0004\u00a2\u0006\u0002\n\u0000R+\u0010\"\u001a\u00020\u00032\u0006\u0010!\u001a\u00020\u00038F@BX\u0086\u008e\u0002\u00a2\u0006\u0012\n\u0004\u0008%\u0010&\u001a\u0004\u0008#\u0010\u001e\"\u0004\u0008$\u0010\u0004R+\u0010\'\u001a\u00020\u00032\u0006\u0010!\u001a\u00020\u00038F@@X\u0086\u008e\u0002\u00a2\u0006\u0012\n\u0004\u0008*\u0010&\u001a\u0004\u0008(\u0010\u001e\"\u0004\u0008)\u0010\u0004\u00a8\u0006?"
     }
     d2 = {
         "Landroidx/compose/foundation/ScrollState;",
@@ -62,7 +62,7 @@
         "value$delegate",
         "Landroidx/compose/runtime/MutableIntState;",
         "viewportSize",
-        "getViewportSize$foundation_release",
+        "getViewportSize",
         "setViewportSize$foundation_release",
         "viewportSize$delegate",
         "animateScrollTo",
@@ -143,7 +143,7 @@
 
     sput-object v0, Landroidx/compose/foundation/ScrollState;->Companion:Landroidx/compose/foundation/ScrollState$Companion;
 
-    .line 194
+    .line 199
     sget-object v0, Landroidx/compose/foundation/ScrollState$Companion$Saver$1;->INSTANCE:Landroidx/compose/foundation/ScrollState$Companion$Saver$1;
 
     check-cast v0, Lkotlin/jvm/functions/Function2;
@@ -164,10 +164,10 @@
 .method public constructor <init>(I)V
     .locals 0
 
-    .line 92
+    .line 93
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 98
+    .line 99
     invoke-static {p1}, Landroidx/compose/runtime/SnapshotIntStateKt;->mutableIntStateOf(I)Landroidx/compose/runtime/MutableIntState;
 
     move-result-object p1
@@ -176,14 +176,14 @@
 
     const/4 p1, 0x0
 
-    .line 116
+    .line 120
     invoke-static {p1}, Landroidx/compose/runtime/SnapshotIntStateKt;->mutableIntStateOf(I)Landroidx/compose/runtime/MutableIntState;
 
     move-result-object p1
 
     iput-object p1, p0, Landroidx/compose/foundation/ScrollState;->viewportSize$delegate:Landroidx/compose/runtime/MutableIntState;
 
-    .line 125
+    .line 130
     invoke-static {}, Landroidx/compose/foundation/interaction/InteractionSourceKt;->MutableInteractionSource()Landroidx/compose/foundation/interaction/MutableInteractionSource;
 
     move-result-object p1
@@ -192,14 +192,14 @@
 
     const p1, 0x7fffffff
 
-    .line 127
+    .line 132
     invoke-static {p1}, Landroidx/compose/runtime/SnapshotIntStateKt;->mutableIntStateOf(I)Landroidx/compose/runtime/MutableIntState;
 
     move-result-object p1
 
     iput-object p1, p0, Landroidx/compose/foundation/ScrollState;->_maxValueState:Landroidx/compose/runtime/MutableIntState;
 
-    .line 135
+    .line 140
     new-instance p1, Landroidx/compose/foundation/ScrollState$scrollableState$1;
 
     invoke-direct {p1, p0}, Landroidx/compose/foundation/ScrollState$scrollableState$1;-><init>(Landroidx/compose/foundation/ScrollState;)V
@@ -212,7 +212,7 @@
 
     iput-object p1, p0, Landroidx/compose/foundation/ScrollState;->scrollableState:Landroidx/compose/foundation/gestures/ScrollableState;
 
-    .line 159
+    .line 164
     new-instance p1, Landroidx/compose/foundation/ScrollState$canScrollForward$2;
 
     invoke-direct {p1, p0}, Landroidx/compose/foundation/ScrollState$canScrollForward$2;-><init>(Landroidx/compose/foundation/ScrollState;)V
@@ -225,7 +225,7 @@
 
     iput-object p1, p0, Landroidx/compose/foundation/ScrollState;->canScrollForward$delegate:Landroidx/compose/runtime/State;
 
-    .line 161
+    .line 166
     new-instance p1, Landroidx/compose/foundation/ScrollState$canScrollBackward$2;
 
     invoke-direct {p1, p0}, Landroidx/compose/foundation/ScrollState$canScrollBackward$2;-><init>(Landroidx/compose/foundation/ScrollState;)V
@@ -244,7 +244,7 @@
 .method public static final synthetic access$getAccumulator$p(Landroidx/compose/foundation/ScrollState;)F
     .locals 0
 
-    .line 92
+    .line 93
     iget p0, p0, Landroidx/compose/foundation/ScrollState;->accumulator:F
 
     return p0
@@ -253,7 +253,7 @@
 .method public static final synthetic access$getSaver$cp()Landroidx/compose/runtime/saveable/Saver;
     .locals 1
 
-    .line 92
+    .line 93
     sget-object v0, Landroidx/compose/foundation/ScrollState;->Saver:Landroidx/compose/runtime/saveable/Saver;
 
     return-object v0
@@ -262,7 +262,7 @@
 .method public static final synthetic access$setAccumulator$p(Landroidx/compose/foundation/ScrollState;F)V
     .locals 0
 
-    .line 92
+    .line 93
     iput p1, p0, Landroidx/compose/foundation/ScrollState;->accumulator:F
 
     return-void
@@ -271,7 +271,7 @@
 .method public static final synthetic access$setValue(Landroidx/compose/foundation/ScrollState;I)V
     .locals 0
 
-    .line 92
+    .line 93
     invoke-direct {p0, p1}, Landroidx/compose/foundation/ScrollState;->setValue(I)V
 
     return-void
@@ -284,7 +284,7 @@
 
     if-eqz p4, :cond_0
 
-    .line 172
+    .line 177
     new-instance p2, Landroidx/compose/animation/core/SpringSpec;
 
     const/4 v4, 0x7
@@ -303,7 +303,7 @@
 
     check-cast p2, Landroidx/compose/animation/core/AnimationSpec;
 
-    .line 170
+    .line 175
     :cond_0
     invoke-virtual {p0, p1, p2, p3}, Landroidx/compose/foundation/ScrollState;->animateScrollTo(ILandroidx/compose/animation/core/AnimationSpec;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
 
@@ -315,10 +315,10 @@
 .method private final setValue(I)V
     .locals 0
 
-    .line 98
+    .line 99
     iget-object p0, p0, Landroidx/compose/foundation/ScrollState;->value$delegate:Landroidx/compose/runtime/MutableIntState;
 
-    .line 456
+    .line 461
     invoke-interface {p0, p1}, Landroidx/compose/runtime/MutableIntState;->setIntValue(I)V
 
     return-void
@@ -342,7 +342,7 @@
         }
     .end annotation
 
-    .line 174
+    .line 179
     move-object v0, p0
 
     check-cast v0, Landroidx/compose/foundation/gestures/ScrollableState;
@@ -376,7 +376,7 @@
 .method public dispatchRawDelta(F)F
     .locals 0
 
-    .line 154
+    .line 159
     iget-object p0, p0, Landroidx/compose/foundation/ScrollState;->scrollableState:Landroidx/compose/foundation/gestures/ScrollableState;
 
     invoke-interface {p0, p1}, Landroidx/compose/foundation/gestures/ScrollableState;->dispatchRawDelta(F)F
@@ -389,10 +389,10 @@
 .method public getCanScrollBackward()Z
     .locals 0
 
-    .line 161
+    .line 166
     iget-object p0, p0, Landroidx/compose/foundation/ScrollState;->canScrollBackward$delegate:Landroidx/compose/runtime/State;
 
-    .line 462
+    .line 477
     invoke-interface {p0}, Landroidx/compose/runtime/State;->getValue()Ljava/lang/Object;
 
     move-result-object p0
@@ -409,10 +409,10 @@
 .method public getCanScrollForward()Z
     .locals 0
 
-    .line 159
+    .line 164
     iget-object p0, p0, Landroidx/compose/foundation/ScrollState;->canScrollForward$delegate:Landroidx/compose/runtime/State;
 
-    .line 461
+    .line 476
     invoke-interface {p0}, Landroidx/compose/runtime/State;->getValue()Ljava/lang/Object;
 
     move-result-object p0
@@ -429,7 +429,7 @@
 .method public final getInteractionSource()Landroidx/compose/foundation/interaction/InteractionSource;
     .locals 0
 
-    .line 123
+    .line 128
     iget-object p0, p0, Landroidx/compose/foundation/ScrollState;->internalInteractionSource:Landroidx/compose/foundation/interaction/MutableInteractionSource;
 
     check-cast p0, Landroidx/compose/foundation/interaction/InteractionSource;
@@ -440,7 +440,7 @@
 .method public final getInternalInteractionSource$foundation_release()Landroidx/compose/foundation/interaction/MutableInteractionSource;
     .locals 0
 
-    .line 125
+    .line 130
     iget-object p0, p0, Landroidx/compose/foundation/ScrollState;->internalInteractionSource:Landroidx/compose/foundation/interaction/MutableInteractionSource;
 
     return-object p0
@@ -449,7 +449,7 @@
 .method public final getMaxValue()I
     .locals 0
 
-    .line 105
+    .line 106
     iget-object p0, p0, Landroidx/compose/foundation/ScrollState;->_maxValueState:Landroidx/compose/runtime/MutableIntState;
 
     invoke-interface {p0}, Landroidx/compose/runtime/MutableIntState;->getIntValue()I
@@ -462,12 +462,12 @@
 .method public final getValue()I
     .locals 0
 
-    .line 98
+    .line 99
     iget-object p0, p0, Landroidx/compose/foundation/ScrollState;->value$delegate:Landroidx/compose/runtime/MutableIntState;
 
     check-cast p0, Landroidx/compose/runtime/IntState;
 
-    .line 455
+    .line 460
     invoke-interface {p0}, Landroidx/compose/runtime/IntState;->getIntValue()I
 
     move-result p0
@@ -475,15 +475,15 @@
     return p0
 .end method
 
-.method public final getViewportSize$foundation_release()I
+.method public final getViewportSize()I
     .locals 0
 
-    .line 116
+    .line 120
     iget-object p0, p0, Landroidx/compose/foundation/ScrollState;->viewportSize$delegate:Landroidx/compose/runtime/MutableIntState;
 
     check-cast p0, Landroidx/compose/runtime/IntState;
 
-    .line 458
+    .line 473
     invoke-interface {p0}, Landroidx/compose/runtime/IntState;->getIntValue()I
 
     move-result p0
@@ -494,7 +494,7 @@
 .method public isScrollInProgress()Z
     .locals 0
 
-    .line 157
+    .line 162
     iget-object p0, p0, Landroidx/compose/foundation/ScrollState;->scrollableState:Landroidx/compose/foundation/gestures/ScrollableState;
 
     invoke-interface {p0}, Landroidx/compose/foundation/gestures/ScrollableState;->isScrollInProgress()Z
@@ -528,7 +528,7 @@
         }
     .end annotation
 
-    .line 151
+    .line 156
     iget-object p0, p0, Landroidx/compose/foundation/ScrollState;->scrollableState:Landroidx/compose/foundation/gestures/ScrollableState;
 
     invoke-interface {p0, p1, p2, p3}, Landroidx/compose/foundation/gestures/ScrollableState;->scroll(Landroidx/compose/foundation/MutatePriority;Lkotlin/jvm/functions/Function2;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
@@ -562,7 +562,7 @@
         }
     .end annotation
 
-    .line 188
+    .line 193
     move-object v0, p0
 
     check-cast v0, Landroidx/compose/foundation/gestures/ScrollableState;
@@ -583,34 +583,84 @@
 .end method
 
 .method public final setMaxValue$foundation_release(I)V
-    .locals 1
+    .locals 3
 
-    .line 107
+    .line 108
     iget-object v0, p0, Landroidx/compose/foundation/ScrollState;->_maxValueState:Landroidx/compose/runtime/MutableIntState;
 
     invoke-interface {v0, p1}, Landroidx/compose/runtime/MutableIntState;->setIntValue(I)V
 
-    .line 108
+    .line 109
+    sget-object v0, Landroidx/compose/runtime/snapshots/Snapshot;->Companion:Landroidx/compose/runtime/snapshots/Snapshot$Companion;
+
+    .line 464
+    invoke-virtual {v0}, Landroidx/compose/runtime/snapshots/Snapshot$Companion;->createNonObservableSnapshot()Landroidx/compose/runtime/snapshots/Snapshot;
+
+    move-result-object v0
+
+    .line 467
+    :try_start_0
+    invoke-virtual {v0}, Landroidx/compose/runtime/snapshots/Snapshot;->makeCurrent()Landroidx/compose/runtime/snapshots/Snapshot;
+
+    move-result-object v1
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_1
+
+    .line 110
+    :try_start_1
     invoke-virtual {p0}, Landroidx/compose/foundation/ScrollState;->getValue()I
 
-    move-result v0
+    move-result v2
 
-    if-le v0, p1, :cond_0
+    if-le v2, p1, :cond_0
 
-    .line 109
+    .line 111
     invoke-direct {p0, p1}, Landroidx/compose/foundation/ScrollState;->setValue(I)V
 
+    .line 113
     :cond_0
+    sget-object p0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
+    :try_end_1
+    .catchall {:try_start_1 .. :try_end_1} :catchall_0
+
+    .line 471
+    :try_start_2
+    invoke-virtual {v0, v1}, Landroidx/compose/runtime/snapshots/Snapshot;->restoreCurrent(Landroidx/compose/runtime/snapshots/Snapshot;)V
+    :try_end_2
+    .catchall {:try_start_2 .. :try_end_2} :catchall_1
+
+    .line 472
+    invoke-virtual {v0}, Landroidx/compose/runtime/snapshots/Snapshot;->dispose()V
+
     return-void
+
+    :catchall_0
+    move-exception p0
+
+    .line 471
+    :try_start_3
+    invoke-virtual {v0, v1}, Landroidx/compose/runtime/snapshots/Snapshot;->restoreCurrent(Landroidx/compose/runtime/snapshots/Snapshot;)V
+
+    throw p0
+    :try_end_3
+    .catchall {:try_start_3 .. :try_end_3} :catchall_1
+
+    :catchall_1
+    move-exception p0
+
+    .line 472
+    invoke-virtual {v0}, Landroidx/compose/runtime/snapshots/Snapshot;->dispose()V
+
+    throw p0
 .end method
 
 .method public final setViewportSize$foundation_release(I)V
     .locals 0
 
-    .line 116
+    .line 120
     iget-object p0, p0, Landroidx/compose/foundation/ScrollState;->viewportSize$delegate:Landroidx/compose/runtime/MutableIntState;
 
-    .line 459
+    .line 474
     invoke-interface {p0, p1}, Landroidx/compose/runtime/MutableIntState;->setIntValue(I)V
 
     return-void

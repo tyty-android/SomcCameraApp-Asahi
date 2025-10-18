@@ -54,7 +54,7 @@
     .line 28
     invoke-super {p0}, Landroid/widget/FrameLayout;->onFinishInflate()V
 
-    const v0, 0x7f0900ee
+    const v0, 0x7f0900eb
 
     .line 29
     invoke-virtual {p0, v0}, Ljp/co/sony/mc/camera/view/feedback/CaptureProgressView;->findViewById(I)Landroid/view/View;
@@ -63,7 +63,7 @@
 
     iput-object v0, p0, Ljp/co/sony/mc/camera/view/feedback/CaptureProgressView;->mLayout:Landroid/view/View;
 
-    const v0, 0x7f0900ec
+    const v0, 0x7f0900e9
 
     .line 30
     invoke-virtual {p0, v0}, Ljp/co/sony/mc/camera/view/feedback/CaptureProgressView;->findViewById(I)Landroid/view/View;

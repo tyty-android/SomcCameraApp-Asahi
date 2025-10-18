@@ -297,7 +297,7 @@
 
     move-result-object p0
 
-    const v0, 0x7f110210
+    const v0, 0x7f110213
 
     invoke-virtual {p0, v0}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -410,7 +410,7 @@
     .line 83
     new-instance p2, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Builder;
 
-    const v0, 0x7f1202a9
+    const v0, 0x7f1202ab
 
     invoke-direct {p2, p1, v0}, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Builder;-><init>(Landroid/content/Context;I)V
 
@@ -472,7 +472,7 @@
 
     if-ne v4, v5, :cond_1
 
-    const v4, 0x7f0903a3
+    const v4, 0x7f0903a2
 
     .line 96
     invoke-virtual {v0, v4}, Landroid/view/View;->findViewById(I)Landroid/view/View;
@@ -483,7 +483,7 @@
 
     iput-object v4, p0, Ljp/co/sony/mc/camera/view/messagedialog/FacebookLiveSelectDialogBuilder;->mProgressBar:Landroid/widget/ProgressBar;
 
-    const v4, 0x7f0903af
+    const v4, 0x7f0903ad
 
     .line 97
     invoke-virtual {v0, v4}, Landroid/view/View;->findViewById(I)Landroid/view/View;

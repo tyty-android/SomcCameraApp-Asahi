@@ -40,7 +40,7 @@
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
-    .line 636
+    .line 860
     invoke-static {p0, p1, p2}, Landroidx/compose/animation/core/Transition$Segment;->access$isTransitioningTo$jd(Landroidx/compose/animation/core/Transition$Segment;Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result p0

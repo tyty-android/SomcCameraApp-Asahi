@@ -67,32 +67,28 @@
 
 # direct methods
 .method public constructor <init>(Landroidx/compose/runtime/SlotTable;II)V
-    .locals 1
+    .locals 0
 
-    const-string/jumbo v0, "table"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 3085
+    .line 3334
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 3086
+    .line 3335
     iput-object p1, p0, Landroidx/compose/runtime/GroupIterator;->table:Landroidx/compose/runtime/SlotTable;
 
-    .line 3088
+    .line 3337
     iput p3, p0, Landroidx/compose/runtime/GroupIterator;->end:I
 
-    .line 3090
+    .line 3339
     iput p2, p0, Landroidx/compose/runtime/GroupIterator;->index:I
 
-    .line 3091
+    .line 3340
     invoke-virtual {p1}, Landroidx/compose/runtime/SlotTable;->getVersion$runtime_release()I
 
     move-result p2
 
     iput p2, p0, Landroidx/compose/runtime/GroupIterator;->version:I
 
-    .line 3094
+    .line 3343
     invoke-virtual {p1}, Landroidx/compose/runtime/SlotTable;->getWriter$runtime_release()Z
 
     move-result p0
@@ -112,7 +108,7 @@
 .method private final validateRead()V
     .locals 1
 
-    .line 3108
+    .line 3357
     iget-object v0, p0, Landroidx/compose/runtime/GroupIterator;->table:Landroidx/compose/runtime/SlotTable;
 
     invoke-virtual {v0}, Landroidx/compose/runtime/SlotTable;->getVersion$runtime_release()I
@@ -125,7 +121,7 @@
 
     return-void
 
-    .line 3109
+    .line 3358
     :cond_0
     new-instance p0, Ljava/util/ConcurrentModificationException;
 
@@ -139,7 +135,7 @@
 .method public final getEnd()I
     .locals 0
 
-    .line 3088
+    .line 3337
     iget p0, p0, Landroidx/compose/runtime/GroupIterator;->end:I
 
     return p0
@@ -148,7 +144,7 @@
 .method public final getTable()Landroidx/compose/runtime/SlotTable;
     .locals 0
 
-    .line 3086
+    .line 3335
     iget-object p0, p0, Landroidx/compose/runtime/GroupIterator;->table:Landroidx/compose/runtime/SlotTable;
 
     return-object p0
@@ -157,7 +153,7 @@
 .method public hasNext()Z
     .locals 1
 
-    .line 3097
+    .line 3346
     iget v0, p0, Landroidx/compose/runtime/GroupIterator;->index:I
 
     iget p0, p0, Landroidx/compose/runtime/GroupIterator;->end:I
@@ -178,13 +174,13 @@
 .method public next()Landroidx/compose/runtime/tooling/CompositionGroup;
     .locals 3
 
-    .line 3100
+    .line 3349
     invoke-direct {p0}, Landroidx/compose/runtime/GroupIterator;->validateRead()V
 
-    .line 3101
+    .line 3350
     iget v0, p0, Landroidx/compose/runtime/GroupIterator;->index:I
 
-    .line 3103
+    .line 3352
     iget-object v1, p0, Landroidx/compose/runtime/GroupIterator;->table:Landroidx/compose/runtime/SlotTable;
 
     invoke-virtual {v1}, Landroidx/compose/runtime/SlotTable;->getGroups()[I
@@ -199,7 +195,7 @@
 
     iput v1, p0, Landroidx/compose/runtime/GroupIterator;->index:I
 
-    .line 3104
+    .line 3353
     new-instance v1, Landroidx/compose/runtime/SlotTableGroup;
 
     iget-object v2, p0, Landroidx/compose/runtime/GroupIterator;->table:Landroidx/compose/runtime/SlotTable;
@@ -216,7 +212,7 @@
 .method public bridge synthetic next()Ljava/lang/Object;
     .locals 0
 
-    .line 3085
+    .line 3334
     invoke-virtual {p0}, Landroidx/compose/runtime/GroupIterator;->next()Landroidx/compose/runtime/tooling/CompositionGroup;
 
     move-result-object p0

@@ -189,23 +189,23 @@
 .method protected constructor <init>()V
     .locals 2
 
-    .line 225
+    .line 229
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     const/4 v0, 0x0
 
-    .line 210
+    .line 214
     iput v0, p0, Lorg/apache/http/impl/client/HttpClientBuilder;->maxConnTotal:I
 
-    .line 211
+    .line 215
     iput v0, p0, Lorg/apache/http/impl/client/HttpClientBuilder;->maxConnPerRoute:I
 
     const-wide/16 v0, -0x1
 
-    .line 213
+    .line 217
     iput-wide v0, p0, Lorg/apache/http/impl/client/HttpClientBuilder;->connTimeToLive:J
 
-    .line 214
+    .line 218
     sget-object v0, Ljava/util/concurrent/TimeUnit;->MILLISECONDS:Ljava/util/concurrent/TimeUnit;
 
     iput-object v0, p0, Lorg/apache/http/impl/client/HttpClientBuilder;->connTimeToLiveTimeUnit:Ljava/util/concurrent/TimeUnit;
@@ -216,7 +216,7 @@
 .method public static create()Lorg/apache/http/impl/client/HttpClientBuilder;
     .locals 1
 
-    .line 221
+    .line 225
     new-instance v0, Lorg/apache/http/impl/client/HttpClientBuilder;
 
     invoke-direct {v0}, Lorg/apache/http/impl/client/HttpClientBuilder;-><init>()V
@@ -227,7 +227,7 @@
 .method private static split(Ljava/lang/String;)[Ljava/lang/String;
     .locals 1
 
-    .line 938
+    .line 942
     invoke-static {p0}, Lorg/apache/http/util/TextUtils;->isBlank(Ljava/lang/CharSequence;)Z
 
     move-result v0
@@ -238,7 +238,7 @@
 
     return-object p0
 
-    .line 941
+    .line 945
     :cond_0
     const-string v0, " *, *"
 
@@ -258,20 +258,20 @@
 
     return-void
 
-    .line 931
+    .line 935
     :cond_0
     iget-object v0, p0, Lorg/apache/http/impl/client/HttpClientBuilder;->closeables:Ljava/util/List;
 
     if-nez v0, :cond_1
 
-    .line 932
+    .line 936
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
     iput-object v0, p0, Lorg/apache/http/impl/client/HttpClientBuilder;->closeables:Ljava/util/List;
 
-    .line 934
+    .line 938
     :cond_1
     iget-object p0, p0, Lorg/apache/http/impl/client/HttpClientBuilder;->closeables:Ljava/util/List;
 
@@ -287,20 +287,20 @@
 
     return-object p0
 
-    .line 551
+    .line 555
     :cond_0
     iget-object v0, p0, Lorg/apache/http/impl/client/HttpClientBuilder;->requestFirst:Ljava/util/LinkedList;
 
     if-nez v0, :cond_1
 
-    .line 552
+    .line 556
     new-instance v0, Ljava/util/LinkedList;
 
     invoke-direct {v0}, Ljava/util/LinkedList;-><init>()V
 
     iput-object v0, p0, Lorg/apache/http/impl/client/HttpClientBuilder;->requestFirst:Ljava/util/LinkedList;
 
-    .line 554
+    .line 558
     :cond_1
     iget-object v0, p0, Lorg/apache/http/impl/client/HttpClientBuilder;->requestFirst:Ljava/util/LinkedList;
 
@@ -316,20 +316,20 @@
 
     return-object p0
 
-    .line 516
+    .line 520
     :cond_0
     iget-object v0, p0, Lorg/apache/http/impl/client/HttpClientBuilder;->responseFirst:Ljava/util/LinkedList;
 
     if-nez v0, :cond_1
 
-    .line 517
+    .line 521
     new-instance v0, Ljava/util/LinkedList;
 
     invoke-direct {v0}, Ljava/util/LinkedList;-><init>()V
 
     iput-object v0, p0, Lorg/apache/http/impl/client/HttpClientBuilder;->responseFirst:Ljava/util/LinkedList;
 
-    .line 519
+    .line 523
     :cond_1
     iget-object v0, p0, Lorg/apache/http/impl/client/HttpClientBuilder;->responseFirst:Ljava/util/LinkedList;
 
@@ -345,20 +345,20 @@
 
     return-object p0
 
-    .line 568
+    .line 572
     :cond_0
     iget-object v0, p0, Lorg/apache/http/impl/client/HttpClientBuilder;->requestLast:Ljava/util/LinkedList;
 
     if-nez v0, :cond_1
 
-    .line 569
+    .line 573
     new-instance v0, Ljava/util/LinkedList;
 
     invoke-direct {v0}, Ljava/util/LinkedList;-><init>()V
 
     iput-object v0, p0, Lorg/apache/http/impl/client/HttpClientBuilder;->requestLast:Ljava/util/LinkedList;
 
-    .line 571
+    .line 575
     :cond_1
     iget-object v0, p0, Lorg/apache/http/impl/client/HttpClientBuilder;->requestLast:Ljava/util/LinkedList;
 
@@ -374,20 +374,20 @@
 
     return-object p0
 
-    .line 534
+    .line 538
     :cond_0
     iget-object v0, p0, Lorg/apache/http/impl/client/HttpClientBuilder;->responseLast:Ljava/util/LinkedList;
 
     if-nez v0, :cond_1
 
-    .line 535
+    .line 539
     new-instance v0, Ljava/util/LinkedList;
 
     invoke-direct {v0}, Ljava/util/LinkedList;-><init>()V
 
     iput-object v0, p0, Lorg/apache/http/impl/client/HttpClientBuilder;->responseLast:Ljava/util/LinkedList;
 
-    .line 537
+    .line 541
     :cond_1
     iget-object v0, p0, Lorg/apache/http/impl/client/HttpClientBuilder;->responseLast:Ljava/util/LinkedList;
 
@@ -401,12 +401,12 @@
 
     move-object/from16 v9, p0
 
-    .line 947
+    .line 951
     iget-object v0, v9, Lorg/apache/http/impl/client/HttpClientBuilder;->publicSuffixMatcher:Lorg/apache/http/conn/util/PublicSuffixMatcher;
 
     if-nez v0, :cond_0
 
-    .line 949
+    .line 953
     invoke-static {}, Lorg/apache/http/conn/util/PublicSuffixMatcherLoader;->getDefault()Lorg/apache/http/conn/util/PublicSuffixMatcher;
 
     move-result-object v0
@@ -414,12 +414,12 @@
     :cond_0
     move-object v10, v0
 
-    .line 952
+    .line 956
     iget-object v0, v9, Lorg/apache/http/impl/client/HttpClientBuilder;->requestExec:Lorg/apache/http/protocol/HttpRequestExecutor;
 
     if-nez v0, :cond_1
 
-    .line 954
+    .line 958
     new-instance v0, Lorg/apache/http/protocol/HttpRequestExecutor;
 
     invoke-direct {v0}, Lorg/apache/http/protocol/HttpRequestExecutor;-><init>()V
@@ -427,10 +427,10 @@
     :cond_1
     move-object v1, v0
 
-    .line 956
+    .line 960
     iget-object v0, v9, Lorg/apache/http/impl/client/HttpClientBuilder;->connManager:Lorg/apache/http/conn/HttpClientConnectionManager;
 
-    .line 957
+    .line 961
     const-string v2, "http.keepAlive"
 
     const/4 v11, 0x2
@@ -439,12 +439,12 @@
 
     if-nez v0, :cond_e
 
-    .line 958
+    .line 962
     iget-object v0, v9, Lorg/apache/http/impl/client/HttpClientBuilder;->sslSocketFactory:Lorg/apache/http/conn/socket/LayeredConnectionSocketFactory;
 
     if-nez v0, :cond_7
 
-    .line 960
+    .line 964
     iget-boolean v0, v9, Lorg/apache/http/impl/client/HttpClientBuilder;->systemProperties:Z
 
     if-eqz v0, :cond_2
@@ -464,7 +464,7 @@
     :cond_2
     const/4 v0, 0x0
 
-    .line 962
+    .line 966
     :goto_0
     iget-boolean v4, v9, Lorg/apache/http/impl/client/HttpClientBuilder;->systemProperties:Z
 
@@ -485,24 +485,24 @@
     :cond_3
     const/4 v4, 0x0
 
-    .line 964
+    .line 968
     :goto_1
     iget-object v5, v9, Lorg/apache/http/impl/client/HttpClientBuilder;->hostnameVerifier:Ljavax/net/ssl/HostnameVerifier;
 
     if-nez v5, :cond_4
 
-    .line 966
+    .line 970
     new-instance v5, Lorg/apache/http/conn/ssl/DefaultHostnameVerifier;
 
     invoke-direct {v5, v10}, Lorg/apache/http/conn/ssl/DefaultHostnameVerifier;-><init>(Lorg/apache/http/conn/util/PublicSuffixMatcher;)V
 
-    .line 968
+    .line 972
     :cond_4
     iget-object v6, v9, Lorg/apache/http/impl/client/HttpClientBuilder;->sslContext:Ljavax/net/ssl/SSLContext;
 
     if-eqz v6, :cond_5
 
-    .line 969
+    .line 973
     new-instance v6, Lorg/apache/http/conn/ssl/SSLConnectionSocketFactory;
 
     iget-object v7, v9, Lorg/apache/http/impl/client/HttpClientBuilder;->sslContext:Ljavax/net/ssl/SSLContext;
@@ -514,13 +514,13 @@
 
     goto :goto_3
 
-    .line 972
+    .line 976
     :cond_5
     iget-boolean v6, v9, Lorg/apache/http/impl/client/HttpClientBuilder;->systemProperties:Z
 
     if-eqz v6, :cond_6
 
-    .line 973
+    .line 977
     new-instance v6, Lorg/apache/http/conn/ssl/SSLConnectionSocketFactory;
 
     invoke-static {}, Ljavax/net/ssl/SSLSocketFactory;->getDefault()Ljavax/net/SocketFactory;
@@ -533,7 +533,7 @@
 
     goto :goto_2
 
-    .line 977
+    .line 981
     :cond_6
     new-instance v0, Lorg/apache/http/conn/ssl/SSLConnectionSocketFactory;
 
@@ -543,7 +543,7 @@
 
     invoke-direct {v0, v4, v5}, Lorg/apache/http/conn/ssl/SSLConnectionSocketFactory;-><init>(Ljavax/net/ssl/SSLContext;Ljavax/net/ssl/HostnameVerifier;)V
 
-    .line 984
+    .line 988
     :cond_7
     :goto_3
     new-instance v4, Lorg/apache/http/impl/conn/PoolingHttpClientConnectionManager;
@@ -600,42 +600,42 @@
 
     invoke-direct/range {v13 .. v20}, Lorg/apache/http/impl/conn/PoolingHttpClientConnectionManager;-><init>(Lorg/apache/http/config/Registry;Lorg/apache/http/conn/HttpConnectionFactory;Lorg/apache/http/conn/SchemePortResolver;Lorg/apache/http/conn/DnsResolver;JLjava/util/concurrent/TimeUnit;)V
 
-    .line 994
+    .line 998
     iget-object v0, v9, Lorg/apache/http/impl/client/HttpClientBuilder;->defaultSocketConfig:Lorg/apache/http/config/SocketConfig;
 
     if-eqz v0, :cond_9
 
-    .line 995
+    .line 999
     invoke-virtual {v4, v0}, Lorg/apache/http/impl/conn/PoolingHttpClientConnectionManager;->setDefaultSocketConfig(Lorg/apache/http/config/SocketConfig;)V
 
-    .line 997
+    .line 1001
     :cond_9
     iget-object v0, v9, Lorg/apache/http/impl/client/HttpClientBuilder;->defaultConnectionConfig:Lorg/apache/http/config/ConnectionConfig;
 
     if-eqz v0, :cond_a
 
-    .line 998
+    .line 1002
     invoke-virtual {v4, v0}, Lorg/apache/http/impl/conn/PoolingHttpClientConnectionManager;->setDefaultConnectionConfig(Lorg/apache/http/config/ConnectionConfig;)V
 
-    .line 1000
+    .line 1004
     :cond_a
     iget-boolean v0, v9, Lorg/apache/http/impl/client/HttpClientBuilder;->systemProperties:Z
 
     if-eqz v0, :cond_b
 
-    .line 1001
+    .line 1005
     invoke-static {v2, v3}, Ljava/lang/System;->getProperty(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 
-    .line 1002
+    .line 1006
     invoke-virtual {v3, v0}, Ljava/lang/String;->equalsIgnoreCase(Ljava/lang/String;)Z
 
     move-result v0
 
     if-eqz v0, :cond_b
 
-    .line 1003
+    .line 1007
     const-string v0, "http.maxConnections"
 
     const-string v5, "5"
@@ -644,35 +644,35 @@
 
     move-result-object v0
 
-    .line 1004
+    .line 1008
     invoke-static {v0}, Ljava/lang/Integer;->parseInt(Ljava/lang/String;)I
 
     move-result v0
 
-    .line 1005
+    .line 1009
     invoke-virtual {v4, v0}, Lorg/apache/http/impl/conn/PoolingHttpClientConnectionManager;->setDefaultMaxPerRoute(I)V
 
     mul-int/2addr v0, v11
 
-    .line 1006
+    .line 1010
     invoke-virtual {v4, v0}, Lorg/apache/http/impl/conn/PoolingHttpClientConnectionManager;->setMaxTotal(I)V
 
-    .line 1009
+    .line 1013
     :cond_b
     iget v0, v9, Lorg/apache/http/impl/client/HttpClientBuilder;->maxConnTotal:I
 
     if-lez v0, :cond_c
 
-    .line 1010
+    .line 1014
     invoke-virtual {v4, v0}, Lorg/apache/http/impl/conn/PoolingHttpClientConnectionManager;->setMaxTotal(I)V
 
-    .line 1012
+    .line 1016
     :cond_c
     iget v0, v9, Lorg/apache/http/impl/client/HttpClientBuilder;->maxConnPerRoute:I
 
     if-lez v0, :cond_d
 
-    .line 1013
+    .line 1017
     invoke-virtual {v4, v0}, Lorg/apache/http/impl/conn/PoolingHttpClientConnectionManager;->setDefaultMaxPerRoute(I)V
 
     :cond_d
@@ -683,41 +683,41 @@
     :cond_e
     move-object v15, v0
 
-    .line 1017
+    .line 1021
     :goto_5
     iget-object v0, v9, Lorg/apache/http/impl/client/HttpClientBuilder;->reuseStrategy:Lorg/apache/http/ConnectionReuseStrategy;
 
     if-nez v0, :cond_11
 
-    .line 1019
+    .line 1023
     iget-boolean v0, v9, Lorg/apache/http/impl/client/HttpClientBuilder;->systemProperties:Z
 
     if-eqz v0, :cond_10
 
-    .line 1020
+    .line 1024
     invoke-static {v2, v3}, Ljava/lang/System;->getProperty(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 
-    .line 1021
+    .line 1025
     invoke-virtual {v3, v0}, Ljava/lang/String;->equalsIgnoreCase(Ljava/lang/String;)Z
 
     move-result v0
 
     if-eqz v0, :cond_f
 
-    .line 1022
+    .line 1026
     sget-object v0, Lorg/apache/http/impl/client/DefaultClientConnectionReuseStrategy;->INSTANCE:Lorg/apache/http/impl/client/DefaultClientConnectionReuseStrategy;
 
     goto :goto_6
 
-    .line 1024
+    .line 1028
     :cond_f
     sget-object v0, Lorg/apache/http/impl/NoConnectionReuseStrategy;->INSTANCE:Lorg/apache/http/impl/NoConnectionReuseStrategy;
 
     goto :goto_6
 
-    .line 1027
+    .line 1031
     :cond_10
     sget-object v0, Lorg/apache/http/impl/client/DefaultClientConnectionReuseStrategy;->INSTANCE:Lorg/apache/http/impl/client/DefaultClientConnectionReuseStrategy;
 
@@ -725,55 +725,55 @@
     :goto_6
     move-object v3, v0
 
-    .line 1030
+    .line 1034
     iget-object v0, v9, Lorg/apache/http/impl/client/HttpClientBuilder;->keepAliveStrategy:Lorg/apache/http/conn/ConnectionKeepAliveStrategy;
 
     if-nez v0, :cond_12
 
-    .line 1032
+    .line 1036
     sget-object v0, Lorg/apache/http/impl/client/DefaultConnectionKeepAliveStrategy;->INSTANCE:Lorg/apache/http/impl/client/DefaultConnectionKeepAliveStrategy;
 
     :cond_12
     move-object v4, v0
 
-    .line 1034
+    .line 1038
     iget-object v0, v9, Lorg/apache/http/impl/client/HttpClientBuilder;->targetAuthStrategy:Lorg/apache/http/client/AuthenticationStrategy;
 
     if-nez v0, :cond_13
 
-    .line 1036
+    .line 1040
     sget-object v0, Lorg/apache/http/impl/client/TargetAuthenticationStrategy;->INSTANCE:Lorg/apache/http/impl/client/TargetAuthenticationStrategy;
 
     :cond_13
     move-object v6, v0
 
-    .line 1038
+    .line 1042
     iget-object v0, v9, Lorg/apache/http/impl/client/HttpClientBuilder;->proxyAuthStrategy:Lorg/apache/http/client/AuthenticationStrategy;
 
     if-nez v0, :cond_14
 
-    .line 1040
+    .line 1044
     sget-object v0, Lorg/apache/http/impl/client/ProxyAuthenticationStrategy;->INSTANCE:Lorg/apache/http/impl/client/ProxyAuthenticationStrategy;
 
     :cond_14
     move-object v7, v0
 
-    .line 1042
+    .line 1046
     iget-object v0, v9, Lorg/apache/http/impl/client/HttpClientBuilder;->userTokenHandler:Lorg/apache/http/client/UserTokenHandler;
 
     if-nez v0, :cond_16
 
-    .line 1044
+    .line 1048
     iget-boolean v0, v9, Lorg/apache/http/impl/client/HttpClientBuilder;->connectionStateDisabled:Z
 
     if-nez v0, :cond_15
 
-    .line 1045
+    .line 1049
     sget-object v0, Lorg/apache/http/impl/client/DefaultUserTokenHandler;->INSTANCE:Lorg/apache/http/impl/client/DefaultUserTokenHandler;
 
     goto :goto_7
 
-    .line 1047
+    .line 1051
     :cond_15
     sget-object v0, Lorg/apache/http/impl/client/NoopUserTokenHandler;->INSTANCE:Lorg/apache/http/impl/client/NoopUserTokenHandler;
 
@@ -781,17 +781,17 @@
     :goto_7
     move-object v8, v0
 
-    .line 1051
+    .line 1055
     iget-object v0, v9, Lorg/apache/http/impl/client/HttpClientBuilder;->userAgent:Ljava/lang/String;
 
     if-nez v0, :cond_18
 
-    .line 1053
+    .line 1057
     iget-boolean v2, v9, Lorg/apache/http/impl/client/HttpClientBuilder;->systemProperties:Z
 
     if-eqz v2, :cond_17
 
-    .line 1054
+    .line 1058
     const-string v0, "http.agent"
 
     invoke-static {v0}, Ljava/lang/System;->getProperty(Ljava/lang/String;)Ljava/lang/String;
@@ -801,12 +801,12 @@
     :cond_17
     if-nez v0, :cond_18
 
-    .line 1056
+    .line 1060
     iget-boolean v2, v9, Lorg/apache/http/impl/client/HttpClientBuilder;->defaultUserAgentDisabled:Z
 
     if-nez v2, :cond_18
 
-    .line 1057
+    .line 1061
     const-string v0, "org.apache.http.client"
 
     invoke-virtual/range {p0 .. p0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
@@ -822,7 +822,7 @@
     :cond_18
     move-object v13, v0
 
-    .line 1062
+    .line 1066
     new-instance v5, Lorg/apache/http/protocol/ImmutableHttpProcessor;
 
     new-array v0, v11, [Lorg/apache/http/HttpRequestInterceptor;
@@ -853,27 +853,27 @@
 
     move-result-object v0
 
-    .line 1072
+    .line 1076
     invoke-virtual {v9, v0}, Lorg/apache/http/impl/client/HttpClientBuilder;->decorateMainExec(Lorg/apache/http/impl/execchain/ClientExecChain;)Lorg/apache/http/impl/execchain/ClientExecChain;
 
     move-result-object v0
 
-    .line 1074
+    .line 1078
     iget-object v1, v9, Lorg/apache/http/impl/client/HttpClientBuilder;->httpprocessor:Lorg/apache/http/protocol/HttpProcessor;
 
     if-nez v1, :cond_25
 
-    .line 1077
+    .line 1081
     invoke-static {}, Lorg/apache/http/protocol/HttpProcessorBuilder;->create()Lorg/apache/http/protocol/HttpProcessorBuilder;
 
     move-result-object v1
 
-    .line 1078
+    .line 1082
     iget-object v2, v9, Lorg/apache/http/impl/client/HttpClientBuilder;->requestFirst:Ljava/util/LinkedList;
 
     if-eqz v2, :cond_19
 
-    .line 1079
+    .line 1083
     invoke-virtual {v2}, Ljava/util/LinkedList;->iterator()Ljava/util/Iterator;
 
     move-result-object v2
@@ -891,18 +891,18 @@
 
     check-cast v3, Lorg/apache/http/HttpRequestInterceptor;
 
-    .line 1080
+    .line 1084
     invoke-virtual {v1, v3}, Lorg/apache/http/protocol/HttpProcessorBuilder;->addFirst(Lorg/apache/http/HttpRequestInterceptor;)Lorg/apache/http/protocol/HttpProcessorBuilder;
 
     goto :goto_8
 
-    .line 1083
+    .line 1087
     :cond_19
     iget-object v2, v9, Lorg/apache/http/impl/client/HttpClientBuilder;->responseFirst:Ljava/util/LinkedList;
 
     if-eqz v2, :cond_1a
 
-    .line 1084
+    .line 1088
     invoke-virtual {v2}, Ljava/util/LinkedList;->iterator()Ljava/util/Iterator;
 
     move-result-object v2
@@ -920,7 +920,7 @@
 
     check-cast v3, Lorg/apache/http/HttpResponseInterceptor;
 
-    .line 1085
+    .line 1089
     invoke-virtual {v1, v3}, Lorg/apache/http/protocol/HttpProcessorBuilder;->addFirst(Lorg/apache/http/HttpResponseInterceptor;)Lorg/apache/http/protocol/HttpProcessorBuilder;
 
     goto :goto_9
@@ -928,7 +928,7 @@
     :cond_1a
     const/4 v2, 0x6
 
-    .line 1088
+    .line 1092
     new-array v2, v2, [Lorg/apache/http/HttpRequestInterceptor;
 
     new-instance v3, Lorg/apache/http/client/protocol/RequestDefaultHeaders;
@@ -977,30 +977,30 @@
 
     invoke-virtual {v1, v2}, Lorg/apache/http/protocol/HttpProcessorBuilder;->addAll([Lorg/apache/http/HttpRequestInterceptor;)Lorg/apache/http/protocol/HttpProcessorBuilder;
 
-    .line 1095
+    .line 1099
     iget-boolean v2, v9, Lorg/apache/http/impl/client/HttpClientBuilder;->cookieManagementDisabled:Z
 
     if-nez v2, :cond_1b
 
-    .line 1096
+    .line 1100
     new-instance v2, Lorg/apache/http/client/protocol/RequestAddCookies;
 
     invoke-direct {v2}, Lorg/apache/http/client/protocol/RequestAddCookies;-><init>()V
 
     invoke-virtual {v1, v2}, Lorg/apache/http/protocol/HttpProcessorBuilder;->add(Lorg/apache/http/HttpRequestInterceptor;)Lorg/apache/http/protocol/HttpProcessorBuilder;
 
-    .line 1098
+    .line 1102
     :cond_1b
     iget-boolean v2, v9, Lorg/apache/http/impl/client/HttpClientBuilder;->contentCompressionDisabled:Z
 
     if-nez v2, :cond_1d
 
-    .line 1099
+    .line 1103
     iget-object v2, v9, Lorg/apache/http/impl/client/HttpClientBuilder;->contentDecoderMap:Ljava/util/Map;
 
     if-eqz v2, :cond_1c
 
-    .line 1100
+    .line 1104
     new-instance v2, Ljava/util/ArrayList;
 
     iget-object v3, v9, Lorg/apache/http/impl/client/HttpClientBuilder;->contentDecoderMap:Ljava/util/Map;
@@ -1011,10 +1011,10 @@
 
     invoke-direct {v2, v3}, Ljava/util/ArrayList;-><init>(Ljava/util/Collection;)V
 
-    .line 1101
+    .line 1105
     invoke-static {v2}, Ljava/util/Collections;->sort(Ljava/util/List;)V
 
-    .line 1102
+    .line 1106
     new-instance v3, Lorg/apache/http/client/protocol/RequestAcceptEncoding;
 
     invoke-direct {v3, v2}, Lorg/apache/http/client/protocol/RequestAcceptEncoding;-><init>(Ljava/util/List;)V
@@ -1023,7 +1023,7 @@
 
     goto :goto_a
 
-    .line 1104
+    .line 1108
     :cond_1c
     new-instance v2, Lorg/apache/http/client/protocol/RequestAcceptEncoding;
 
@@ -1031,50 +1031,50 @@
 
     invoke-virtual {v1, v2}, Lorg/apache/http/protocol/HttpProcessorBuilder;->add(Lorg/apache/http/HttpRequestInterceptor;)Lorg/apache/http/protocol/HttpProcessorBuilder;
 
-    .line 1107
+    .line 1111
     :cond_1d
     :goto_a
     iget-boolean v2, v9, Lorg/apache/http/impl/client/HttpClientBuilder;->authCachingDisabled:Z
 
     if-nez v2, :cond_1e
 
-    .line 1108
+    .line 1112
     new-instance v2, Lorg/apache/http/client/protocol/RequestAuthCache;
 
     invoke-direct {v2}, Lorg/apache/http/client/protocol/RequestAuthCache;-><init>()V
 
     invoke-virtual {v1, v2}, Lorg/apache/http/protocol/HttpProcessorBuilder;->add(Lorg/apache/http/HttpRequestInterceptor;)Lorg/apache/http/protocol/HttpProcessorBuilder;
 
-    .line 1110
+    .line 1114
     :cond_1e
     iget-boolean v2, v9, Lorg/apache/http/impl/client/HttpClientBuilder;->cookieManagementDisabled:Z
 
     if-nez v2, :cond_1f
 
-    .line 1111
+    .line 1115
     new-instance v2, Lorg/apache/http/client/protocol/ResponseProcessCookies;
 
     invoke-direct {v2}, Lorg/apache/http/client/protocol/ResponseProcessCookies;-><init>()V
 
     invoke-virtual {v1, v2}, Lorg/apache/http/protocol/HttpProcessorBuilder;->add(Lorg/apache/http/HttpResponseInterceptor;)Lorg/apache/http/protocol/HttpProcessorBuilder;
 
-    .line 1113
+    .line 1117
     :cond_1f
     iget-boolean v2, v9, Lorg/apache/http/impl/client/HttpClientBuilder;->contentCompressionDisabled:Z
 
     if-nez v2, :cond_22
 
-    .line 1114
+    .line 1118
     iget-object v2, v9, Lorg/apache/http/impl/client/HttpClientBuilder;->contentDecoderMap:Ljava/util/Map;
 
     if-eqz v2, :cond_21
 
-    .line 1115
+    .line 1119
     invoke-static {}, Lorg/apache/http/config/RegistryBuilder;->create()Lorg/apache/http/config/RegistryBuilder;
 
     move-result-object v2
 
-    .line 1116
+    .line 1120
     iget-object v3, v9, Lorg/apache/http/impl/client/HttpClientBuilder;->contentDecoderMap:Ljava/util/Map;
 
     invoke-interface {v3}, Ljava/util/Map;->entrySet()Ljava/util/Set;
@@ -1098,7 +1098,7 @@
 
     check-cast v4, Ljava/util/Map$Entry;
 
-    .line 1117
+    .line 1121
     invoke-interface {v4}, Ljava/util/Map$Entry;->getKey()Ljava/lang/Object;
 
     move-result-object v5
@@ -1113,7 +1113,7 @@
 
     goto :goto_b
 
-    .line 1119
+    .line 1123
     :cond_20
     new-instance v3, Lorg/apache/http/client/protocol/ResponseContentEncoding;
 
@@ -1127,7 +1127,7 @@
 
     goto :goto_c
 
-    .line 1121
+    .line 1125
     :cond_21
     new-instance v2, Lorg/apache/http/client/protocol/ResponseContentEncoding;
 
@@ -1135,14 +1135,14 @@
 
     invoke-virtual {v1, v2}, Lorg/apache/http/protocol/HttpProcessorBuilder;->add(Lorg/apache/http/HttpResponseInterceptor;)Lorg/apache/http/protocol/HttpProcessorBuilder;
 
-    .line 1124
+    .line 1128
     :cond_22
     :goto_c
     iget-object v2, v9, Lorg/apache/http/impl/client/HttpClientBuilder;->requestLast:Ljava/util/LinkedList;
 
     if-eqz v2, :cond_23
 
-    .line 1125
+    .line 1129
     invoke-virtual {v2}, Ljava/util/LinkedList;->iterator()Ljava/util/Iterator;
 
     move-result-object v2
@@ -1160,18 +1160,18 @@
 
     check-cast v3, Lorg/apache/http/HttpRequestInterceptor;
 
-    .line 1126
+    .line 1130
     invoke-virtual {v1, v3}, Lorg/apache/http/protocol/HttpProcessorBuilder;->addLast(Lorg/apache/http/HttpRequestInterceptor;)Lorg/apache/http/protocol/HttpProcessorBuilder;
 
     goto :goto_d
 
-    .line 1129
+    .line 1133
     :cond_23
     iget-object v2, v9, Lorg/apache/http/impl/client/HttpClientBuilder;->responseLast:Ljava/util/LinkedList;
 
     if-eqz v2, :cond_24
 
-    .line 1130
+    .line 1134
     invoke-virtual {v2}, Ljava/util/LinkedList;->iterator()Ljava/util/Iterator;
 
     move-result-object v2
@@ -1189,42 +1189,42 @@
 
     check-cast v3, Lorg/apache/http/HttpResponseInterceptor;
 
-    .line 1131
+    .line 1135
     invoke-virtual {v1, v3}, Lorg/apache/http/protocol/HttpProcessorBuilder;->addLast(Lorg/apache/http/HttpResponseInterceptor;)Lorg/apache/http/protocol/HttpProcessorBuilder;
 
     goto :goto_e
 
-    .line 1134
+    .line 1138
     :cond_24
     invoke-virtual {v1}, Lorg/apache/http/protocol/HttpProcessorBuilder;->build()Lorg/apache/http/protocol/HttpProcessor;
 
     move-result-object v1
 
-    .line 1136
+    .line 1140
     :cond_25
     new-instance v2, Lorg/apache/http/impl/execchain/ProtocolExec;
 
     invoke-direct {v2, v0, v1}, Lorg/apache/http/impl/execchain/ProtocolExec;-><init>(Lorg/apache/http/impl/execchain/ClientExecChain;Lorg/apache/http/protocol/HttpProcessor;)V
 
-    .line 1138
+    .line 1142
     invoke-virtual {v9, v2}, Lorg/apache/http/impl/client/HttpClientBuilder;->decorateProtocolExec(Lorg/apache/http/impl/execchain/ClientExecChain;)Lorg/apache/http/impl/execchain/ClientExecChain;
 
     move-result-object v0
 
-    .line 1141
+    .line 1145
     iget-boolean v1, v9, Lorg/apache/http/impl/client/HttpClientBuilder;->automaticRetriesDisabled:Z
 
     if-nez v1, :cond_27
 
-    .line 1142
+    .line 1146
     iget-object v1, v9, Lorg/apache/http/impl/client/HttpClientBuilder;->retryHandler:Lorg/apache/http/client/HttpRequestRetryHandler;
 
     if-nez v1, :cond_26
 
-    .line 1144
+    .line 1148
     sget-object v1, Lorg/apache/http/impl/client/DefaultHttpRequestRetryHandler;->INSTANCE:Lorg/apache/http/impl/client/DefaultHttpRequestRetryHandler;
 
-    .line 1146
+    .line 1150
     :cond_26
     new-instance v2, Lorg/apache/http/impl/execchain/RetryExec;
 
@@ -1232,27 +1232,27 @@
 
     move-object v0, v2
 
-    .line 1149
+    .line 1153
     :cond_27
     iget-object v1, v9, Lorg/apache/http/impl/client/HttpClientBuilder;->routePlanner:Lorg/apache/http/conn/routing/HttpRoutePlanner;
 
     if-nez v1, :cond_2b
 
-    .line 1151
+    .line 1155
     iget-object v1, v9, Lorg/apache/http/impl/client/HttpClientBuilder;->schemePortResolver:Lorg/apache/http/conn/SchemePortResolver;
 
     if-nez v1, :cond_28
 
-    .line 1153
+    .line 1157
     sget-object v1, Lorg/apache/http/impl/conn/DefaultSchemePortResolver;->INSTANCE:Lorg/apache/http/impl/conn/DefaultSchemePortResolver;
 
-    .line 1155
+    .line 1159
     :cond_28
     iget-object v2, v9, Lorg/apache/http/impl/client/HttpClientBuilder;->proxy:Lorg/apache/http/HttpHost;
 
     if-eqz v2, :cond_29
 
-    .line 1156
+    .line 1160
     new-instance v2, Lorg/apache/http/impl/conn/DefaultProxyRoutePlanner;
 
     iget-object v3, v9, Lorg/apache/http/impl/client/HttpClientBuilder;->proxy:Lorg/apache/http/HttpHost;
@@ -1261,13 +1261,13 @@
 
     goto :goto_f
 
-    .line 1157
+    .line 1161
     :cond_29
     iget-boolean v2, v9, Lorg/apache/http/impl/client/HttpClientBuilder;->systemProperties:Z
 
     if-eqz v2, :cond_2a
 
-    .line 1158
+    .line 1162
     new-instance v2, Lorg/apache/http/impl/conn/SystemDefaultRoutePlanner;
 
     invoke-static {}, Ljava/net/ProxySelector;->getDefault()Ljava/net/ProxySelector;
@@ -1278,7 +1278,7 @@
 
     goto :goto_f
 
-    .line 1161
+    .line 1165
     :cond_2a
     new-instance v2, Lorg/apache/http/impl/conn/DefaultRoutePlanner;
 
@@ -1289,34 +1289,34 @@
     :cond_2b
     move-object v2, v1
 
-    .line 1166
+    .line 1170
     :goto_f
     iget-object v1, v9, Lorg/apache/http/impl/client/HttpClientBuilder;->serviceUnavailStrategy:Lorg/apache/http/client/ServiceUnavailableRetryStrategy;
 
     if-eqz v1, :cond_2c
 
-    .line 1168
+    .line 1172
     new-instance v3, Lorg/apache/http/impl/execchain/ServiceUnavailableRetryExec;
 
     invoke-direct {v3, v0, v1}, Lorg/apache/http/impl/execchain/ServiceUnavailableRetryExec;-><init>(Lorg/apache/http/impl/execchain/ClientExecChain;Lorg/apache/http/client/ServiceUnavailableRetryStrategy;)V
 
     move-object v0, v3
 
-    .line 1172
+    .line 1176
     :cond_2c
     iget-boolean v1, v9, Lorg/apache/http/impl/client/HttpClientBuilder;->redirectHandlingDisabled:Z
 
     if-nez v1, :cond_2e
 
-    .line 1173
+    .line 1177
     iget-object v1, v9, Lorg/apache/http/impl/client/HttpClientBuilder;->redirectStrategy:Lorg/apache/http/client/RedirectStrategy;
 
     if-nez v1, :cond_2d
 
-    .line 1175
+    .line 1179
     sget-object v1, Lorg/apache/http/impl/client/DefaultRedirectStrategy;->INSTANCE:Lorg/apache/http/impl/client/DefaultRedirectStrategy;
 
-    .line 1177
+    .line 1181
     :cond_2d
     new-instance v3, Lorg/apache/http/impl/execchain/RedirectExec;
 
@@ -1324,7 +1324,7 @@
 
     move-object v0, v3
 
-    .line 1181
+    .line 1185
     :cond_2e
     iget-object v1, v9, Lorg/apache/http/impl/client/HttpClientBuilder;->backoffManager:Lorg/apache/http/client/BackoffManager;
 
@@ -1334,7 +1334,7 @@
 
     if-eqz v1, :cond_2f
 
-    .line 1182
+    .line 1186
     new-instance v1, Lorg/apache/http/impl/execchain/BackoffStrategyExec;
 
     iget-object v3, v9, Lorg/apache/http/impl/client/HttpClientBuilder;->connectionBackoffStrategy:Lorg/apache/http/client/ConnectionBackoffStrategy;
@@ -1345,13 +1345,13 @@
 
     move-object v0, v1
 
-    .line 1185
+    .line 1189
     :cond_2f
     iget-object v1, v9, Lorg/apache/http/impl/client/HttpClientBuilder;->authSchemeRegistry:Lorg/apache/http/config/Lookup;
 
     if-nez v1, :cond_30
 
-    .line 1187
+    .line 1191
     invoke-static {}, Lorg/apache/http/config/RegistryBuilder;->create()Lorg/apache/http/config/RegistryBuilder;
 
     move-result-object v1
@@ -1410,53 +1410,53 @@
 
     move-result-object v1
 
-    .line 1195
+    .line 1199
     :cond_30
     iget-object v3, v9, Lorg/apache/http/impl/client/HttpClientBuilder;->cookieSpecRegistry:Lorg/apache/http/config/Lookup;
 
     if-nez v3, :cond_31
 
-    .line 1197
+    .line 1201
     invoke-static {v10}, Lorg/apache/http/impl/client/CookieSpecRegistries;->createDefault(Lorg/apache/http/conn/util/PublicSuffixMatcher;)Lorg/apache/http/config/Lookup;
 
     move-result-object v3
 
-    .line 1200
+    .line 1204
     :cond_31
     iget-object v4, v9, Lorg/apache/http/impl/client/HttpClientBuilder;->cookieStore:Lorg/apache/http/client/CookieStore;
 
     if-nez v4, :cond_32
 
-    .line 1202
+    .line 1206
     new-instance v4, Lorg/apache/http/impl/client/BasicCookieStore;
 
     invoke-direct {v4}, Lorg/apache/http/impl/client/BasicCookieStore;-><init>()V
 
-    .line 1205
+    .line 1209
     :cond_32
     iget-object v5, v9, Lorg/apache/http/impl/client/HttpClientBuilder;->credentialsProvider:Lorg/apache/http/client/CredentialsProvider;
 
     if-nez v5, :cond_34
 
-    .line 1207
+    .line 1211
     iget-boolean v5, v9, Lorg/apache/http/impl/client/HttpClientBuilder;->systemProperties:Z
 
     if-eqz v5, :cond_33
 
-    .line 1208
+    .line 1212
     new-instance v5, Lorg/apache/http/impl/client/SystemDefaultCredentialsProvider;
 
     invoke-direct {v5}, Lorg/apache/http/impl/client/SystemDefaultCredentialsProvider;-><init>()V
 
     goto :goto_10
 
-    .line 1210
+    .line 1214
     :cond_33
     new-instance v5, Lorg/apache/http/impl/client/BasicCredentialsProvider;
 
     invoke-direct {v5}, Lorg/apache/http/impl/client/BasicCredentialsProvider;-><init>()V
 
-    .line 1214
+    .line 1218
     :cond_34
     :goto_10
     iget-object v6, v9, Lorg/apache/http/impl/client/HttpClientBuilder;->closeables:Ljava/util/List;
@@ -1476,7 +1476,7 @@
     :cond_35
     const/16 v16, 0x0
 
-    .line 1215
+    .line 1219
     :goto_11
     iget-boolean v6, v9, Lorg/apache/http/impl/client/HttpClientBuilder;->connManagerShared:Z
 
@@ -1484,7 +1484,7 @@
 
     if-nez v16, :cond_36
 
-    .line 1217
+    .line 1221
     new-instance v6, Ljava/util/ArrayList;
 
     invoke-direct {v6, v12}, Ljava/util/ArrayList;-><init>(I)V
@@ -1494,7 +1494,7 @@
     :cond_36
     move-object/from16 v6, v16
 
-    .line 1221
+    .line 1225
     :goto_12
     iget-boolean v7, v9, Lorg/apache/http/impl/client/HttpClientBuilder;->evictExpiredConnections:Z
 
@@ -1511,7 +1511,7 @@
 
     goto :goto_16
 
-    .line 1222
+    .line 1226
     :cond_38
     :goto_13
     new-instance v7, Lorg/apache/http/impl/client/IdleConnectionEvictor;
@@ -1560,17 +1560,17 @@
 
     invoke-direct/range {v13 .. v20}, Lorg/apache/http/impl/client/IdleConnectionEvictor;-><init>(Lorg/apache/http/conn/HttpClientConnectionManager;JLjava/util/concurrent/TimeUnit;JLjava/util/concurrent/TimeUnit;)V
 
-    .line 1225
+    .line 1229
     new-instance v8, Lorg/apache/http/impl/client/HttpClientBuilder$1;
 
     invoke-direct {v8, v9, v7}, Lorg/apache/http/impl/client/HttpClientBuilder$1;-><init>(Lorg/apache/http/impl/client/HttpClientBuilder;Lorg/apache/http/impl/client/IdleConnectionEvictor;)V
 
     invoke-interface {v6, v8}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    .line 1238
+    .line 1242
     invoke-virtual {v7}, Lorg/apache/http/impl/client/IdleConnectionEvictor;->start()V
 
-    .line 1240
+    .line 1244
     :goto_16
     new-instance v7, Lorg/apache/http/impl/client/HttpClientBuilder$2;
 
@@ -1587,7 +1587,7 @@
 
     move-object/from16 v22, v16
 
-    .line 1250
+    .line 1254
     :goto_17
     new-instance v6, Lorg/apache/http/impl/client/InternalHttpClient;
 
@@ -1627,7 +1627,7 @@
 .method protected createMainExec(Lorg/apache/http/protocol/HttpRequestExecutor;Lorg/apache/http/conn/HttpClientConnectionManager;Lorg/apache/http/ConnectionReuseStrategy;Lorg/apache/http/conn/ConnectionKeepAliveStrategy;Lorg/apache/http/protocol/HttpProcessor;Lorg/apache/http/client/AuthenticationStrategy;Lorg/apache/http/client/AuthenticationStrategy;Lorg/apache/http/client/UserTokenHandler;)Lorg/apache/http/impl/execchain/ClientExecChain;
     .locals 10
 
-    .line 899
+    .line 903
     new-instance v9, Lorg/apache/http/impl/execchain/MainClientExec;
 
     move-object v0, v9
@@ -1670,7 +1670,7 @@
 
     const/4 v0, 0x1
 
-    .line 604
+    .line 608
     iput-boolean v0, p0, Lorg/apache/http/impl/client/HttpClientBuilder;->authCachingDisabled:Z
 
     return-object p0
@@ -1681,7 +1681,7 @@
 
     const/4 v0, 0x1
 
-    .line 641
+    .line 645
     iput-boolean v0, p0, Lorg/apache/http/impl/client/HttpClientBuilder;->automaticRetriesDisabled:Z
 
     return-object p0
@@ -1692,7 +1692,7 @@
 
     const/4 v0, 0x1
 
-    .line 468
+    .line 472
     iput-boolean v0, p0, Lorg/apache/http/impl/client/HttpClientBuilder;->connectionStateDisabled:Z
 
     return-object p0
@@ -1703,7 +1703,7 @@
 
     const/4 v0, 0x1
 
-    .line 593
+    .line 597
     iput-boolean v0, p0, Lorg/apache/http/impl/client/HttpClientBuilder;->contentCompressionDisabled:Z
 
     return-object p0
@@ -1714,7 +1714,7 @@
 
     const/4 v0, 0x1
 
-    .line 582
+    .line 586
     iput-boolean v0, p0, Lorg/apache/http/impl/client/HttpClientBuilder;->cookieManagementDisabled:Z
 
     return-object p0
@@ -1725,7 +1725,7 @@
 
     const/4 v0, 0x1
 
-    .line 874
+    .line 878
     iput-boolean v0, p0, Lorg/apache/http/impl/client/HttpClientBuilder;->defaultUserAgentDisabled:Z
 
     return-object p0
@@ -1736,7 +1736,7 @@
 
     const/4 v0, 0x1
 
-    .line 680
+    .line 684
     iput-boolean v0, p0, Lorg/apache/http/impl/client/HttpClientBuilder;->redirectHandlingDisabled:Z
 
     return-object p0
@@ -1747,7 +1747,7 @@
 
     const/4 v0, 0x1
 
-    .line 804
+    .line 808
     iput-boolean v0, p0, Lorg/apache/http/impl/client/HttpClientBuilder;->evictExpiredConnections:Z
 
     return-object p0
@@ -1758,13 +1758,13 @@
 
     const/4 v0, 0x1
 
-    .line 862
+    .line 866
     iput-boolean v0, p0, Lorg/apache/http/impl/client/HttpClientBuilder;->evictIdleConnections:Z
 
-    .line 863
+    .line 867
     iput-wide p1, p0, Lorg/apache/http/impl/client/HttpClientBuilder;->maxIdleTime:J
 
-    .line 864
+    .line 868
     iput-object p3, p0, Lorg/apache/http/impl/client/HttpClientBuilder;->maxIdleTimeUnit:Ljava/util/concurrent/TimeUnit;
 
     return-object p0
@@ -1775,7 +1775,7 @@
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
-    .line 835
+    .line 839
     invoke-virtual {p1}, Ljava/lang/Long;->longValue()J
 
     move-result-wide v0
@@ -1790,7 +1790,7 @@
 .method public final setBackoffManager(Lorg/apache/http/client/BackoffManager;)Lorg/apache/http/impl/client/HttpClientBuilder;
     .locals 0
 
-    .line 697
+    .line 701
     iput-object p1, p0, Lorg/apache/http/impl/client/HttpClientBuilder;->backoffManager:Lorg/apache/http/client/BackoffManager;
 
     return-object p0
@@ -1799,7 +1799,7 @@
 .method public final setConnectionBackoffStrategy(Lorg/apache/http/client/ConnectionBackoffStrategy;)Lorg/apache/http/impl/client/HttpClientBuilder;
     .locals 0
 
-    .line 689
+    .line 693
     iput-object p1, p0, Lorg/apache/http/impl/client/HttpClientBuilder;->connectionBackoffStrategy:Lorg/apache/http/client/ConnectionBackoffStrategy;
 
     return-object p0
@@ -1808,7 +1808,7 @@
 .method public final setConnectionManager(Lorg/apache/http/conn/HttpClientConnectionManager;)Lorg/apache/http/impl/client/HttpClientBuilder;
     .locals 0
 
-    .line 390
+    .line 394
     iput-object p1, p0, Lorg/apache/http/impl/client/HttpClientBuilder;->connManager:Lorg/apache/http/conn/HttpClientConnectionManager;
 
     return-object p0
@@ -1817,7 +1817,7 @@
 .method public final setConnectionManagerShared(Z)Lorg/apache/http/impl/client/HttpClientBuilder;
     .locals 0
 
-    .line 410
+    .line 414
     iput-boolean p1, p0, Lorg/apache/http/impl/client/HttpClientBuilder;->connManagerShared:Z
 
     return-object p0
@@ -1826,7 +1826,7 @@
 .method public final setConnectionReuseStrategy(Lorg/apache/http/ConnectionReuseStrategy;)Lorg/apache/http/impl/client/HttpClientBuilder;
     .locals 0
 
-    .line 419
+    .line 423
     iput-object p1, p0, Lorg/apache/http/impl/client/HttpClientBuilder;->reuseStrategy:Lorg/apache/http/ConnectionReuseStrategy;
 
     return-object p0
@@ -1835,10 +1835,10 @@
 .method public final setConnectionTimeToLive(JLjava/util/concurrent/TimeUnit;)Lorg/apache/http/impl/client/HttpClientBuilder;
     .locals 0
 
-    .line 380
+    .line 384
     iput-wide p1, p0, Lorg/apache/http/impl/client/HttpClientBuilder;->connTimeToLive:J
 
-    .line 381
+    .line 385
     iput-object p3, p0, Lorg/apache/http/impl/client/HttpClientBuilder;->connTimeToLiveTimeUnit:Ljava/util/concurrent/TimeUnit;
 
     return-object p0
@@ -1857,7 +1857,7 @@
         }
     .end annotation
 
-    .line 762
+    .line 766
     iput-object p1, p0, Lorg/apache/http/impl/client/HttpClientBuilder;->contentDecoderMap:Ljava/util/Map;
 
     return-object p0
@@ -1875,7 +1875,7 @@
         }
     .end annotation
 
-    .line 737
+    .line 741
     iput-object p1, p0, Lorg/apache/http/impl/client/HttpClientBuilder;->authSchemeRegistry:Lorg/apache/http/config/Lookup;
 
     return-object p0
@@ -1884,7 +1884,7 @@
 .method public final setDefaultConnectionConfig(Lorg/apache/http/config/ConnectionConfig;)Lorg/apache/http/impl/client/HttpClientBuilder;
     .locals 0
 
-    .line 366
+    .line 370
     iput-object p1, p0, Lorg/apache/http/impl/client/HttpClientBuilder;->defaultConnectionConfig:Lorg/apache/http/config/ConnectionConfig;
 
     return-object p0
@@ -1902,7 +1902,7 @@
         }
     .end annotation
 
-    .line 751
+    .line 755
     iput-object p1, p0, Lorg/apache/http/impl/client/HttpClientBuilder;->cookieSpecRegistry:Lorg/apache/http/config/Lookup;
 
     return-object p0
@@ -1911,7 +1911,7 @@
 .method public final setDefaultCookieStore(Lorg/apache/http/client/CookieStore;)Lorg/apache/http/impl/client/HttpClientBuilder;
     .locals 0
 
-    .line 715
+    .line 719
     iput-object p1, p0, Lorg/apache/http/impl/client/HttpClientBuilder;->cookieStore:Lorg/apache/http/client/CookieStore;
 
     return-object p0
@@ -1920,7 +1920,7 @@
 .method public final setDefaultCredentialsProvider(Lorg/apache/http/client/CredentialsProvider;)Lorg/apache/http/impl/client/HttpClientBuilder;
     .locals 0
 
-    .line 726
+    .line 730
     iput-object p1, p0, Lorg/apache/http/impl/client/HttpClientBuilder;->credentialsProvider:Lorg/apache/http/client/CredentialsProvider;
 
     return-object p0
@@ -1939,7 +1939,7 @@
         }
     .end annotation
 
-    .line 501
+    .line 505
     iput-object p1, p0, Lorg/apache/http/impl/client/HttpClientBuilder;->defaultHeaders:Ljava/util/Collection;
 
     return-object p0
@@ -1948,7 +1948,7 @@
 .method public final setDefaultRequestConfig(Lorg/apache/http/client/config/RequestConfig;)Lorg/apache/http/impl/client/HttpClientBuilder;
     .locals 0
 
-    .line 772
+    .line 776
     iput-object p1, p0, Lorg/apache/http/impl/client/HttpClientBuilder;->defaultRequestConfig:Lorg/apache/http/client/config/RequestConfig;
 
     return-object p0
@@ -1957,7 +1957,7 @@
 .method public final setDefaultSocketConfig(Lorg/apache/http/config/SocketConfig;)Lorg/apache/http/impl/client/HttpClientBuilder;
     .locals 0
 
-    .line 354
+    .line 358
     iput-object p1, p0, Lorg/apache/http/impl/client/HttpClientBuilder;->defaultSocketConfig:Lorg/apache/http/config/SocketConfig;
 
     return-object p0
@@ -1966,7 +1966,7 @@
 .method public final setDnsResolver(Lorg/apache/http/conn/DnsResolver;)Lorg/apache/http/impl/client/HttpClientBuilder;
     .locals 0
 
-    .line 622
+    .line 626
     iput-object p1, p0, Lorg/apache/http/impl/client/HttpClientBuilder;->dnsResolver:Lorg/apache/http/conn/DnsResolver;
 
     return-object p0
@@ -1977,7 +1977,7 @@
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
-    .line 248
+    .line 252
     iput-object p1, p0, Lorg/apache/http/impl/client/HttpClientBuilder;->hostnameVerifier:Ljavax/net/ssl/HostnameVerifier;
 
     return-object p0
@@ -1986,7 +1986,7 @@
 .method public final setHttpProcessor(Lorg/apache/http/protocol/HttpProcessor;)Lorg/apache/http/impl/client/HttpClientBuilder;
     .locals 0
 
-    .line 612
+    .line 616
     iput-object p1, p0, Lorg/apache/http/impl/client/HttpClientBuilder;->httpprocessor:Lorg/apache/http/protocol/HttpProcessor;
 
     return-object p0
@@ -1995,7 +1995,7 @@
 .method public final setKeepAliveStrategy(Lorg/apache/http/conn/ConnectionKeepAliveStrategy;)Lorg/apache/http/impl/client/HttpClientBuilder;
     .locals 0
 
-    .line 428
+    .line 432
     iput-object p1, p0, Lorg/apache/http/impl/client/HttpClientBuilder;->keepAliveStrategy:Lorg/apache/http/conn/ConnectionKeepAliveStrategy;
 
     return-object p0
@@ -2004,7 +2004,7 @@
 .method public final setMaxConnPerRoute(I)Lorg/apache/http/impl/client/HttpClientBuilder;
     .locals 0
 
-    .line 342
+    .line 346
     iput p1, p0, Lorg/apache/http/impl/client/HttpClientBuilder;->maxConnPerRoute:I
 
     return-object p0
@@ -2013,7 +2013,7 @@
 .method public final setMaxConnTotal(I)Lorg/apache/http/impl/client/HttpClientBuilder;
     .locals 0
 
-    .line 330
+    .line 334
     iput p1, p0, Lorg/apache/http/impl/client/HttpClientBuilder;->maxConnTotal:I
 
     return-object p0
@@ -2022,7 +2022,7 @@
 .method public final setProxy(Lorg/apache/http/HttpHost;)Lorg/apache/http/impl/client/HttpClientBuilder;
     .locals 0
 
-    .line 652
+    .line 656
     iput-object p1, p0, Lorg/apache/http/impl/client/HttpClientBuilder;->proxy:Lorg/apache/http/HttpHost;
 
     return-object p0
@@ -2031,7 +2031,7 @@
 .method public final setProxyAuthenticationStrategy(Lorg/apache/http/client/AuthenticationStrategy;)Lorg/apache/http/impl/client/HttpClientBuilder;
     .locals 0
 
-    .line 448
+    .line 452
     iput-object p1, p0, Lorg/apache/http/impl/client/HttpClientBuilder;->proxyAuthStrategy:Lorg/apache/http/client/AuthenticationStrategy;
 
     return-object p0
@@ -2040,7 +2040,7 @@
 .method public final setPublicSuffixMatcher(Lorg/apache/http/conn/util/PublicSuffixMatcher;)Lorg/apache/http/impl/client/HttpClientBuilder;
     .locals 0
 
-    .line 277
+    .line 281
     iput-object p1, p0, Lorg/apache/http/impl/client/HttpClientBuilder;->publicSuffixMatcher:Lorg/apache/http/conn/util/PublicSuffixMatcher;
 
     return-object p0
@@ -2049,7 +2049,7 @@
 .method public final setRedirectStrategy(Lorg/apache/http/client/RedirectStrategy;)Lorg/apache/http/impl/client/HttpClientBuilder;
     .locals 0
 
-    .line 672
+    .line 676
     iput-object p1, p0, Lorg/apache/http/impl/client/HttpClientBuilder;->redirectStrategy:Lorg/apache/http/client/RedirectStrategy;
 
     return-object p0
@@ -2058,7 +2058,7 @@
 .method public final setRequestExecutor(Lorg/apache/http/protocol/HttpRequestExecutor;)Lorg/apache/http/impl/client/HttpClientBuilder;
     .locals 0
 
-    .line 232
+    .line 236
     iput-object p1, p0, Lorg/apache/http/impl/client/HttpClientBuilder;->requestExec:Lorg/apache/http/protocol/HttpRequestExecutor;
 
     return-object p0
@@ -2067,7 +2067,7 @@
 .method public final setRetryHandler(Lorg/apache/http/client/HttpRequestRetryHandler;)Lorg/apache/http/impl/client/HttpClientBuilder;
     .locals 0
 
-    .line 633
+    .line 637
     iput-object p1, p0, Lorg/apache/http/impl/client/HttpClientBuilder;->retryHandler:Lorg/apache/http/client/HttpRequestRetryHandler;
 
     return-object p0
@@ -2076,7 +2076,7 @@
 .method public final setRoutePlanner(Lorg/apache/http/conn/routing/HttpRoutePlanner;)Lorg/apache/http/impl/client/HttpClientBuilder;
     .locals 0
 
-    .line 660
+    .line 664
     iput-object p1, p0, Lorg/apache/http/impl/client/HttpClientBuilder;->routePlanner:Lorg/apache/http/conn/routing/HttpRoutePlanner;
 
     return-object p0
@@ -2085,7 +2085,7 @@
 .method public final setSSLContext(Ljavax/net/ssl/SSLContext;)Lorg/apache/http/impl/client/HttpClientBuilder;
     .locals 0
 
-    .line 305
+    .line 309
     iput-object p1, p0, Lorg/apache/http/impl/client/HttpClientBuilder;->sslContext:Ljavax/net/ssl/SSLContext;
 
     return-object p0
@@ -2094,7 +2094,7 @@
 .method public final setSSLHostnameVerifier(Ljavax/net/ssl/HostnameVerifier;)Lorg/apache/http/impl/client/HttpClientBuilder;
     .locals 0
 
-    .line 263
+    .line 267
     iput-object p1, p0, Lorg/apache/http/impl/client/HttpClientBuilder;->hostnameVerifier:Ljavax/net/ssl/HostnameVerifier;
 
     return-object p0
@@ -2103,7 +2103,7 @@
 .method public final setSSLSocketFactory(Lorg/apache/http/conn/socket/LayeredConnectionSocketFactory;)Lorg/apache/http/impl/client/HttpClientBuilder;
     .locals 0
 
-    .line 318
+    .line 322
     iput-object p1, p0, Lorg/apache/http/impl/client/HttpClientBuilder;->sslSocketFactory:Lorg/apache/http/conn/socket/LayeredConnectionSocketFactory;
 
     return-object p0
@@ -2112,7 +2112,7 @@
 .method public final setSchemePortResolver(Lorg/apache/http/conn/SchemePortResolver;)Lorg/apache/http/impl/client/HttpClientBuilder;
     .locals 0
 
-    .line 477
+    .line 481
     iput-object p1, p0, Lorg/apache/http/impl/client/HttpClientBuilder;->schemePortResolver:Lorg/apache/http/conn/SchemePortResolver;
 
     return-object p0
@@ -2121,7 +2121,7 @@
 .method public final setServiceUnavailableRetryStrategy(Lorg/apache/http/client/ServiceUnavailableRetryStrategy;)Lorg/apache/http/impl/client/HttpClientBuilder;
     .locals 0
 
-    .line 706
+    .line 710
     iput-object p1, p0, Lorg/apache/http/impl/client/HttpClientBuilder;->serviceUnavailStrategy:Lorg/apache/http/client/ServiceUnavailableRetryStrategy;
 
     return-object p0
@@ -2132,7 +2132,7 @@
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
-    .line 293
+    .line 297
     invoke-virtual {p0, p1}, Lorg/apache/http/impl/client/HttpClientBuilder;->setSSLContext(Ljavax/net/ssl/SSLContext;)Lorg/apache/http/impl/client/HttpClientBuilder;
 
     move-result-object p0
@@ -2143,7 +2143,7 @@
 .method public final setTargetAuthenticationStrategy(Lorg/apache/http/client/AuthenticationStrategy;)Lorg/apache/http/impl/client/HttpClientBuilder;
     .locals 0
 
-    .line 438
+    .line 442
     iput-object p1, p0, Lorg/apache/http/impl/client/HttpClientBuilder;->targetAuthStrategy:Lorg/apache/http/client/AuthenticationStrategy;
 
     return-object p0
@@ -2152,7 +2152,7 @@
 .method public final setUserAgent(Ljava/lang/String;)Lorg/apache/http/impl/client/HttpClientBuilder;
     .locals 0
 
-    .line 489
+    .line 493
     iput-object p1, p0, Lorg/apache/http/impl/client/HttpClientBuilder;->userAgent:Ljava/lang/String;
 
     return-object p0
@@ -2161,7 +2161,7 @@
 .method public final setUserTokenHandler(Lorg/apache/http/client/UserTokenHandler;)Lorg/apache/http/impl/client/HttpClientBuilder;
     .locals 0
 
-    .line 460
+    .line 464
     iput-object p1, p0, Lorg/apache/http/impl/client/HttpClientBuilder;->userTokenHandler:Lorg/apache/http/client/UserTokenHandler;
 
     return-object p0
@@ -2172,7 +2172,7 @@
 
     const/4 v0, 0x1
 
-    .line 781
+    .line 785
     iput-boolean v0, p0, Lorg/apache/http/impl/client/HttpClientBuilder;->systemProperties:Z
 
     return-object p0

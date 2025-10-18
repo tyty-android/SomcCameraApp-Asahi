@@ -48,10 +48,10 @@
 .method constructor <init>(FF)V
     .locals 7
 
-    .line 678
+    .line 683
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 679
+    .line 684
     new-instance v6, Landroidx/compose/animation/core/FloatSpringSpec;
 
     const/4 v4, 0x4
@@ -78,7 +78,7 @@
 .method public bridge synthetic get(I)Landroidx/compose/animation/core/FloatAnimationSpec;
     .locals 0
 
-    .line 678
+    .line 683
     invoke-virtual {p0, p1}, Landroidx/compose/animation/core/VectorizedAnimationSpecKt$createSpringAnimations$2;->get(I)Landroidx/compose/animation/core/FloatSpringSpec;
 
     move-result-object p0
@@ -91,7 +91,7 @@
 .method public get(I)Landroidx/compose/animation/core/FloatSpringSpec;
     .locals 0
 
-    .line 680
+    .line 685
     iget-object p0, p0, Landroidx/compose/animation/core/VectorizedAnimationSpecKt$createSpringAnimations$2;->anim:Landroidx/compose/animation/core/FloatSpringSpec;
 
     return-object p0

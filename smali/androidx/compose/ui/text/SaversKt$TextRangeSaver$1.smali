@@ -82,7 +82,7 @@
 .method public bridge synthetic invoke(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
     .locals 2
 
-    .line 322
+    .line 343
     check-cast p1, Landroidx/compose/runtime/saveable/SaverScope;
 
     check-cast p2, Landroidx/compose/ui/text/TextRange;
@@ -101,13 +101,9 @@
 .method public final invoke-FDrldGo(Landroidx/compose/runtime/saveable/SaverScope;J)Ljava/lang/Object;
     .locals 1
 
-    const-string p0, "$this$Saver"
-
-    invoke-static {p1, p0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
     const/4 p0, 0x2
 
-    .line 324
+    .line 345
     new-array p0, p0, [Ljava/lang/Integer;
 
     invoke-static {p2, p3}, Landroidx/compose/ui/text/TextRange;->getStart-impl(J)I

@@ -21,7 +21,7 @@
 .method constructor <init>()V
     .locals 0
 
-    .line 915
+    .line 969
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -42,11 +42,11 @@
         }
     .end annotation
 
-    .line 919
+    .line 973
     check-cast p1, Ljp/co/sony/mc/camera/setting/CameraSettings;
 
-    .line 920
-    invoke-virtual {p1}, Ljp/co/sony/mc/camera/setting/CameraSettings;->getSemiAutoMode()Ljp/co/sony/mc/camera/configuration/parameters/SemiAutoMode;
+    .line 974
+    invoke-static {p1}, Ljp/co/sony/mc/camera/setting/CameraSettings;->-$$Nest$mgetWbExtensionData(Ljp/co/sony/mc/camera/setting/CameraSettings;)Ljp/co/sony/mc/camera/configuration/parameters/WbExtensionData;
 
     move-result-object p0
 

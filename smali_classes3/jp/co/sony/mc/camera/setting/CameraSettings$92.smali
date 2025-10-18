@@ -21,7 +21,7 @@
 .method constructor <init>()V
     .locals 0
 
-    .line 1297
+    .line 1354
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -46,13 +46,13 @@
         }
     .end annotation
 
-    .line 1301
+    .line 1358
     check-cast p1, Ljp/co/sony/mc/camera/setting/CameraSettings;
 
-    .line 1302
-    check-cast p3, Ljp/co/sony/mc/camera/configuration/parameters/MultiFrameNrMode;
+    .line 1359
+    check-cast p3, Ljp/co/sony/mc/camera/configuration/parameters/FocusArea;
 
-    invoke-static {p1, p3}, Ljp/co/sony/mc/camera/setting/CameraSettings;->-$$Nest$msetMultiFrameNrMode(Ljp/co/sony/mc/camera/setting/CameraSettings;Ljp/co/sony/mc/camera/configuration/parameters/MultiFrameNrMode;)Z
+    invoke-static {p1, p3}, Ljp/co/sony/mc/camera/setting/CameraSettings;->-$$Nest$msetFocusArea(Ljp/co/sony/mc/camera/setting/CameraSettings;Ljp/co/sony/mc/camera/configuration/parameters/FocusArea;)Z
 
     move-result p0
 

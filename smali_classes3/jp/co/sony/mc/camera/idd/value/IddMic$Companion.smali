@@ -21,11 +21,12 @@
 
 .annotation runtime Lkotlin/Metadata;
     d1 = {
-        "\u0000\u0018\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\u0008\u0086\u0003\u0018\u00002\u00020\u0001B\u0007\u0008\u0002\u00a2\u0006\u0002\u0010\u0002J\u000e\u0010\u0003\u001a\u00020\u00042\u0006\u0010\u0005\u001a\u00020\u0006\u00a8\u0006\u0007"
+        "\u0000\u0018\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\u0008\u0003\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\u0008\u0086\u0003\u0018\u00002\u00020\u0001B\t\u0008\u0002\u00a2\u0006\u0004\u0008\u0002\u0010\u0003J\u000e\u0010\u0004\u001a\u00020\u00052\u0006\u0010\u0006\u001a\u00020\u0007\u00a8\u0006\u0008"
     }
     d2 = {
         "Ljp/co/sony/mc/camera/idd/value/IddMic$Companion;",
         "",
+        "<init>",
         "()V",
         "getMicTypeFromSetting",
         "Ljp/co/sony/mc/camera/idd/value/IddMic;",
@@ -35,8 +36,8 @@
     }
     k = 0x1
     mv = {
-        0x1,
-        0x9,
+        0x2,
+        0x0,
         0x0
     }
     xi = 0x30
@@ -47,7 +48,7 @@
 .method private constructor <init>()V
     .locals 0
 
-    .line 222
+    .line 255
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -70,7 +71,7 @@
 
     invoke-static {p1, p0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 223
+    .line 256
     sget-object p0, Ljp/co/sony/mc/camera/idd/value/IddMic$Companion$WhenMappings;->$EnumSwitchMapping$0:[I
 
     invoke-virtual {p1}, Ljp/co/sony/mc/camera/configuration/parameters/Mic;->ordinal()I
@@ -91,11 +92,12 @@
 
     if-ne p0, p1, :cond_0
 
-    .line 226
+    .line 259
     sget-object p0, Ljp/co/sony/mc/camera/idd/value/IddMic;->INTERNAL_TOP:Ljp/co/sony/mc/camera/idd/value/IddMic;
 
     goto :goto_0
 
+    .line 256
     :cond_0
     new-instance p0, Lkotlin/NoWhenBranchMatchedException;
 
@@ -103,13 +105,13 @@
 
     throw p0
 
-    .line 225
+    .line 258
     :cond_1
     sget-object p0, Ljp/co/sony/mc/camera/idd/value/IddMic;->INTERNAL_REAR:Ljp/co/sony/mc/camera/idd/value/IddMic;
 
     goto :goto_0
 
-    .line 224
+    .line 257
     :cond_2
     sget-object p0, Ljp/co/sony/mc/camera/idd/value/IddMic;->INTERNAL_LR:Ljp/co/sony/mc/camera/idd/value/IddMic;
 

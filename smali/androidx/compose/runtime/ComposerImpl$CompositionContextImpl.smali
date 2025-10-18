@@ -14,12 +14,12 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/SourceDebugExtension;
-    value = "SMAP\nComposer.kt\nKotlin\n*S Kotlin\n*F\n+ 1 Composer.kt\nandroidx/compose/runtime/ComposerImpl$CompositionContextImpl\n+ 2 _Collections.kt\nkotlin/collections/CollectionsKt___CollectionsKt\n+ 3 SnapshotState.kt\nandroidx/compose/runtime/SnapshotStateKt__SnapshotStateKt\n*L\n1#1,4563:1\n1855#2,2:4564\n81#3:4566\n107#3,2:4567\n*S KotlinDebug\n*F\n+ 1 Composer.kt\nandroidx/compose/runtime/ComposerImpl$CompositionContextImpl\n*L\n3982#1:4564,2\n4032#1:4566\n4032#1:4567,2\n*E\n"
+    value = "SMAP\nComposer.kt\nKotlin\n*S Kotlin\n*F\n+ 1 Composer.kt\nandroidx/compose/runtime/ComposerImpl$CompositionContextImpl\n+ 2 _Collections.kt\nkotlin/collections/CollectionsKt___CollectionsKt\n+ 3 SnapshotState.kt\nandroidx/compose/runtime/SnapshotStateKt__SnapshotStateKt\n*L\n1#1,4197:1\n1855#2,2:4198\n81#3:4200\n107#3,2:4201\n*S KotlinDebug\n*F\n+ 1 Composer.kt\nandroidx/compose/runtime/ComposerImpl$CompositionContextImpl\n*L\n3574#1:4198,2\n3624#1:4200\n3624#1:4201,2\n*E\n"
 .end annotation
 
 .annotation runtime Lkotlin/Metadata;
     d1 = {
-        "\u0000t\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0008\n\u0000\n\u0002\u0010\u000b\n\u0002\u0008\u0004\n\u0002\u0010#\n\u0002\u0018\u0002\n\u0002\u0008\u0003\n\u0002\u0018\u0002\n\u0002\u0008\n\n\u0002\u0018\u0002\n\u0002\u0008\u0003\n\u0002\u0018\u0002\n\u0002\u0008\u0008\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0004\n\u0002\u0018\u0002\n\u0002\u0008\u000b\n\u0002\u0018\u0002\n\u0002\u0008\u0003\n\u0002\u0018\u0002\n\u0002\u0008\u0008\n\u0002\u0018\u0002\n\u0002\u0008\r\u0008\u0082\u0004\u0018\u00002\u00020\u0001B\u0015\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\u0006\u0010\u0004\u001a\u00020\u0005\u00a2\u0006\u0002\u0010\u0006J*\u0010&\u001a\u00020\'2\u0006\u0010(\u001a\u00020)2\u0011\u0010*\u001a\r\u0012\u0004\u0012\u00020\'0+\u00a2\u0006\u0002\u0008,H\u0010\u00a2\u0006\u0004\u0008-\u0010.J\u0015\u0010/\u001a\u00020\'2\u0006\u00100\u001a\u000201H\u0010\u00a2\u0006\u0002\u00082J\u0006\u00103\u001a\u00020\'J\r\u00104\u001a\u00020\'H\u0010\u00a2\u0006\u0002\u00085J\r\u0010\u0011\u001a\u00020\u000fH\u0010\u00a2\u0006\u0002\u00086J\u0015\u00107\u001a\u00020\'2\u0006\u00100\u001a\u000201H\u0010\u00a2\u0006\u0002\u00088J\u0015\u00109\u001a\u00020\'2\u0006\u0010(\u001a\u00020)H\u0010\u00a2\u0006\u0002\u0008:J\u0015\u0010;\u001a\u00020\'2\u0006\u0010<\u001a\u00020=H\u0010\u00a2\u0006\u0002\u0008>J\u001d\u0010?\u001a\u00020\'2\u0006\u00100\u001a\u0002012\u0006\u0010@\u001a\u00020AH\u0010\u00a2\u0006\u0002\u0008BJ\u0017\u0010C\u001a\u0004\u0018\u00010A2\u0006\u00100\u001a\u000201H\u0010\u00a2\u0006\u0002\u0008DJ\u001b\u0010E\u001a\u00020\'2\u000c\u0010F\u001a\u0008\u0012\u0004\u0012\u00020\u001e0\nH\u0010\u00a2\u0006\u0002\u0008GJ\u0015\u0010H\u001a\u00020\'2\u0006\u0010I\u001a\u00020JH\u0010\u00a2\u0006\u0002\u0008KJ\u0015\u0010L\u001a\u00020\'2\u0006\u0010(\u001a\u00020)H\u0010\u00a2\u0006\u0002\u0008MJ\u0015\u0010N\u001a\u00020\'2\u0006\u0010(\u001a\u00020)H\u0010\u00a2\u0006\u0002\u0008OJ\r\u0010P\u001a\u00020\'H\u0010\u00a2\u0006\u0002\u0008QJ\u0015\u0010R\u001a\u00020\'2\u0006\u0010I\u001a\u00020JH\u0010\u00a2\u0006\u0002\u0008SJ\u0015\u0010T\u001a\u00020\'2\u0006\u0010(\u001a\u00020)H\u0010\u00a2\u0006\u0002\u0008UJ\u000e\u0010V\u001a\u00020\'2\u0006\u0010<\u001a\u00020\u000fR\u0014\u0010\u0004\u001a\u00020\u0005X\u0090\u0004\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\u0007\u0010\u0008R\u0017\u0010\t\u001a\u0008\u0012\u0004\u0012\u00020\u000b0\n\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\u000c\u0010\rR+\u0010\u0010\u001a\u00020\u000f2\u0006\u0010\u000e\u001a\u00020\u000f8B@BX\u0082\u008e\u0002\u00a2\u0006\u0012\n\u0004\u0008\u0015\u0010\u0016\u001a\u0004\u0008\u0011\u0010\u0012\"\u0004\u0008\u0013\u0010\u0014R\u0014\u0010\u0002\u001a\u00020\u0003X\u0090\u0004\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\u0017\u0010\u0018R\u0014\u0010\u0019\u001a\u00020\u001a8VX\u0096\u0004\u00a2\u0006\u0006\u001a\u0004\u0008\u001b\u0010\u001cR(\u0010\u001d\u001a\u0010\u0012\n\u0012\u0008\u0012\u0004\u0012\u00020\u001e0\n\u0018\u00010\nX\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\u0008\u001f\u0010\r\"\u0004\u0008 \u0010!R\u001a\u0010\"\u001a\u00020\u001a8PX\u0090\u0004\u00a2\u0006\u000c\u0012\u0004\u0008#\u0010$\u001a\u0004\u0008%\u0010\u001c\u00a8\u0006W"
+        "\u0000|\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0008\n\u0000\n\u0002\u0010\u000b\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0005\n\u0002\u0010#\n\u0002\u0018\u0002\n\u0002\u0008\u0003\n\u0002\u0018\u0002\n\u0002\u0008\n\n\u0002\u0018\u0002\n\u0002\u0008\u0003\n\u0002\u0018\u0002\n\u0002\u0008\n\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0004\n\u0002\u0018\u0002\n\u0002\u0008\u000b\n\u0002\u0018\u0002\n\u0002\u0008\u0003\n\u0002\u0018\u0002\n\u0002\u0008\u0008\n\u0002\u0018\u0002\n\u0002\u0008\r\u0008\u0082\u0004\u0018\u00002\u00020\u0001B\'\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\u0006\u0010\u0004\u001a\u00020\u0005\u0012\u0006\u0010\u0006\u001a\u00020\u0005\u0012\u0008\u0010\u0007\u001a\u0004\u0018\u00010\u0008\u00a2\u0006\u0002\u0010\tJ*\u0010,\u001a\u00020-2\u0006\u0010.\u001a\u00020/2\u0011\u00100\u001a\r\u0012\u0004\u0012\u00020-01\u00a2\u0006\u0002\u00082H\u0010\u00a2\u0006\u0004\u00083\u00104J\u0015\u00105\u001a\u00020-2\u0006\u00106\u001a\u000207H\u0010\u00a2\u0006\u0002\u00088J\u0006\u00109\u001a\u00020-J\r\u0010:\u001a\u00020-H\u0010\u00a2\u0006\u0002\u0008;J\r\u0010\u0015\u001a\u00020\u0013H\u0010\u00a2\u0006\u0002\u0008<J\u0015\u0010=\u001a\u00020-2\u0006\u00106\u001a\u000207H\u0010\u00a2\u0006\u0002\u0008>J\u0015\u0010?\u001a\u00020-2\u0006\u0010.\u001a\u00020/H\u0010\u00a2\u0006\u0002\u0008@J\u0015\u0010A\u001a\u00020-2\u0006\u0010B\u001a\u00020CH\u0010\u00a2\u0006\u0002\u0008DJ\u001d\u0010E\u001a\u00020-2\u0006\u00106\u001a\u0002072\u0006\u0010F\u001a\u00020GH\u0010\u00a2\u0006\u0002\u0008HJ\u0017\u0010I\u001a\u0004\u0018\u00010G2\u0006\u00106\u001a\u000207H\u0010\u00a2\u0006\u0002\u0008JJ\u001b\u0010K\u001a\u00020-2\u000c\u0010L\u001a\u0008\u0012\u0004\u0012\u00020\"0\u000eH\u0010\u00a2\u0006\u0002\u0008MJ\u0015\u0010N\u001a\u00020-2\u0006\u0010O\u001a\u00020PH\u0010\u00a2\u0006\u0002\u0008QJ\u0015\u0010R\u001a\u00020-2\u0006\u0010.\u001a\u00020/H\u0010\u00a2\u0006\u0002\u0008SJ\u0015\u0010T\u001a\u00020-2\u0006\u0010.\u001a\u00020/H\u0010\u00a2\u0006\u0002\u0008UJ\r\u0010V\u001a\u00020-H\u0010\u00a2\u0006\u0002\u0008WJ\u0015\u0010X\u001a\u00020-2\u0006\u0010O\u001a\u00020PH\u0010\u00a2\u0006\u0002\u0008YJ\u0015\u0010Z\u001a\u00020-2\u0006\u0010.\u001a\u00020/H\u0010\u00a2\u0006\u0002\u0008[J\u000e\u0010\\\u001a\u00020-2\u0006\u0010B\u001a\u00020\u0013R\u0014\u0010\u0004\u001a\u00020\u0005X\u0090\u0004\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\n\u0010\u000bR\u0014\u0010\u0006\u001a\u00020\u0005X\u0090\u0004\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\u000c\u0010\u000bR\u0017\u0010\r\u001a\u0008\u0012\u0004\u0012\u00020\u000f0\u000e\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\u0010\u0010\u0011R+\u0010\u0014\u001a\u00020\u00132\u0006\u0010\u0012\u001a\u00020\u00138B@BX\u0082\u008e\u0002\u00a2\u0006\u0012\n\u0004\u0008\u0019\u0010\u001a\u001a\u0004\u0008\u0015\u0010\u0016\"\u0004\u0008\u0017\u0010\u0018R\u0014\u0010\u0002\u001a\u00020\u0003X\u0090\u0004\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\u001b\u0010\u001cR\u0014\u0010\u001d\u001a\u00020\u001e8VX\u0096\u0004\u00a2\u0006\u0006\u001a\u0004\u0008\u001f\u0010 R(\u0010!\u001a\u0010\u0012\n\u0012\u0008\u0012\u0004\u0012\u00020\"0\u000e\u0018\u00010\u000eX\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\u0008#\u0010\u0011\"\u0004\u0008$\u0010%R\u0016\u0010\u0007\u001a\u0004\u0018\u00010\u0008X\u0090\u0004\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008&\u0010\'R\u001a\u0010(\u001a\u00020\u001e8PX\u0090\u0004\u00a2\u0006\u000c\u0012\u0004\u0008)\u0010*\u001a\u0004\u0008+\u0010 \u00a8\u0006]"
     }
     d2 = {
         "Landroidx/compose/runtime/ComposerImpl$CompositionContextImpl;",
@@ -28,9 +28,13 @@
         "",
         "collectingParameterInformation",
         "",
-        "(Landroidx/compose/runtime/ComposerImpl;IZ)V",
+        "collectingSourceInformation",
+        "observerHolder",
+        "Landroidx/compose/runtime/CompositionObserverHolder;",
+        "(Landroidx/compose/runtime/ComposerImpl;IZZLandroidx/compose/runtime/CompositionObserverHolder;)V",
         "getCollectingParameterInformation$runtime_release",
         "()Z",
+        "getCollectingSourceInformation$runtime_release",
         "composers",
         "",
         "Landroidx/compose/runtime/ComposerImpl;",
@@ -56,6 +60,8 @@
         "getInspectionTables",
         "setInspectionTables",
         "(Ljava/util/Set;)V",
+        "getObserverHolder$runtime_release",
+        "()Landroidx/compose/runtime/CompositionObserverHolder;",
         "recomposeCoroutineContext",
         "getRecomposeCoroutineContext$runtime_release$annotations",
         "()V",
@@ -124,6 +130,8 @@
 # instance fields
 .field private final collectingParameterInformation:Z
 
+.field private final collectingSourceInformation:Z
+
 .field private final composers:Ljava/util/Set;
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -149,31 +157,41 @@
     .end annotation
 .end field
 
+.field private final observerHolder:Landroidx/compose/runtime/CompositionObserverHolder;
+
 .field final synthetic this$0:Landroidx/compose/runtime/ComposerImpl;
 
 
 # direct methods
-.method public constructor <init>(Landroidx/compose/runtime/ComposerImpl;IZ)V
+.method public constructor <init>(Landroidx/compose/runtime/ComposerImpl;IZZLandroidx/compose/runtime/CompositionObserverHolder;)V
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "(IZ)V"
+            "(IZZ",
+            "Landroidx/compose/runtime/CompositionObserverHolder;",
+            ")V"
         }
     .end annotation
 
-    .line 3957
+    .line 3547
     iput-object p1, p0, Landroidx/compose/runtime/ComposerImpl$CompositionContextImpl;->this$0:Landroidx/compose/runtime/ComposerImpl;
 
-    .line 3960
+    .line 3552
     invoke-direct {p0}, Landroidx/compose/runtime/CompositionContext;-><init>()V
 
-    .line 3958
+    .line 3548
     iput p2, p0, Landroidx/compose/runtime/ComposerImpl$CompositionContextImpl;->compoundHashKey:I
 
-    .line 3959
+    .line 3549
     iput-boolean p3, p0, Landroidx/compose/runtime/ComposerImpl$CompositionContextImpl;->collectingParameterInformation:Z
 
-    .line 3962
+    .line 3550
+    iput-boolean p4, p0, Landroidx/compose/runtime/ComposerImpl$CompositionContextImpl;->collectingSourceInformation:Z
+
+    .line 3551
+    iput-object p5, p0, Landroidx/compose/runtime/ComposerImpl$CompositionContextImpl;->observerHolder:Landroidx/compose/runtime/CompositionObserverHolder;
+
+    .line 3554
     new-instance p1, Ljava/util/LinkedHashSet;
 
     invoke-direct {p1}, Ljava/util/LinkedHashSet;-><init>()V
@@ -182,17 +200,18 @@
 
     iput-object p1, p0, Landroidx/compose/runtime/ComposerImpl$CompositionContextImpl;->composers:Ljava/util/Set;
 
-    .line 4033
+    .line 3625
     invoke-static {}, Landroidx/compose/runtime/internal/PersistentCompositionLocalMapKt;->persistentCompositionLocalHashMapOf()Landroidx/compose/runtime/internal/PersistentCompositionLocalHashMap;
 
     move-result-object p1
 
-    const/4 p2, 0x0
+    .line 3626
+    invoke-static {}, Landroidx/compose/runtime/SnapshotStateKt;->referentialEqualityPolicy()Landroidx/compose/runtime/SnapshotMutationPolicy;
 
-    const/4 p3, 0x2
+    move-result-object p2
 
-    .line 4032
-    invoke-static {p1, p2, p3, p2}, Landroidx/compose/runtime/SnapshotStateKt;->mutableStateOf$default(Ljava/lang/Object;Landroidx/compose/runtime/SnapshotMutationPolicy;ILjava/lang/Object;)Landroidx/compose/runtime/MutableState;
+    .line 3624
+    invoke-static {p1, p2}, Landroidx/compose/runtime/SnapshotStateKt;->mutableStateOf(Ljava/lang/Object;Landroidx/compose/runtime/SnapshotMutationPolicy;)Landroidx/compose/runtime/MutableState;
 
     move-result-object p1
 
@@ -204,12 +223,12 @@
 .method private final getCompositionLocalScope()Landroidx/compose/runtime/PersistentCompositionLocalMap;
     .locals 0
 
-    .line 4032
+    .line 3624
     iget-object p0, p0, Landroidx/compose/runtime/ComposerImpl$CompositionContextImpl;->compositionLocalScope$delegate:Landroidx/compose/runtime/MutableState;
 
     check-cast p0, Landroidx/compose/runtime/State;
 
-    .line 4566
+    .line 4200
     invoke-interface {p0}, Landroidx/compose/runtime/State;->getValue()Ljava/lang/Object;
 
     move-result-object p0
@@ -228,10 +247,10 @@
 .method private final setCompositionLocalScope(Landroidx/compose/runtime/PersistentCompositionLocalMap;)V
     .locals 0
 
-    .line 4032
+    .line 3624
     iget-object p0, p0, Landroidx/compose/runtime/ComposerImpl$CompositionContextImpl;->compositionLocalScope$delegate:Landroidx/compose/runtime/MutableState;
 
-    .line 4567
+    .line 4201
     invoke-interface {p0, p1}, Landroidx/compose/runtime/MutableState;->setValue(Ljava/lang/Object;)V
 
     return-void
@@ -240,7 +259,7 @@
 
 # virtual methods
 .method public composeInitial$runtime_release(Landroidx/compose/runtime/ControlledComposition;Lkotlin/jvm/functions/Function2;)V
-    .locals 1
+    .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -255,15 +274,7 @@
         }
     .end annotation
 
-    const-string v0, "composition"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string v0, "content"
-
-    invoke-static {p2, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 4007
+    .line 3599
     iget-object p0, p0, Landroidx/compose/runtime/ComposerImpl$CompositionContextImpl;->this$0:Landroidx/compose/runtime/ComposerImpl;
 
     invoke-static {p0}, Landroidx/compose/runtime/ComposerImpl;->access$getParentContext$p(Landroidx/compose/runtime/ComposerImpl;)Landroidx/compose/runtime/CompositionContext;
@@ -276,13 +287,9 @@
 .end method
 
 .method public deletedMovableContent$runtime_release(Landroidx/compose/runtime/MovableContentStateReference;)V
-    .locals 1
+    .locals 0
 
-    const-string v0, "reference"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 4064
+    .line 3657
     iget-object p0, p0, Landroidx/compose/runtime/ComposerImpl$CompositionContextImpl;->this$0:Landroidx/compose/runtime/ComposerImpl;
 
     invoke-static {p0}, Landroidx/compose/runtime/ComposerImpl;->access$getParentContext$p(Landroidx/compose/runtime/ComposerImpl;)Landroidx/compose/runtime/CompositionContext;
@@ -297,7 +304,7 @@
 .method public final dispose()V
     .locals 6
 
-    .line 3965
+    .line 3557
     iget-object v0, p0, Landroidx/compose/runtime/ComposerImpl$CompositionContextImpl;->composers:Ljava/util/Set;
 
     check-cast v0, Ljava/util/Collection;
@@ -310,12 +317,12 @@
 
     if-eqz v0, :cond_2
 
-    .line 3966
+    .line 3558
     iget-object v0, p0, Landroidx/compose/runtime/ComposerImpl$CompositionContextImpl;->inspectionTables:Ljava/util/Set;
 
     if-eqz v0, :cond_1
 
-    .line 3967
+    .line 3559
     iget-object v1, p0, Landroidx/compose/runtime/ComposerImpl$CompositionContextImpl;->composers:Ljava/util/Set;
 
     invoke-interface {v1}, Ljava/util/Set;->iterator()Ljava/util/Iterator;
@@ -335,7 +342,7 @@
 
     check-cast v2, Landroidx/compose/runtime/ComposerImpl;
 
-    .line 3968
+    .line 3560
     invoke-interface {v0}, Ljava/util/Set;->iterator()Ljava/util/Iterator;
 
     move-result-object v3
@@ -353,7 +360,7 @@
 
     check-cast v4, Ljava/util/Set;
 
-    .line 3969
+    .line 3561
     invoke-static {v2}, Landroidx/compose/runtime/ComposerImpl;->access$getSlotTable$p(Landroidx/compose/runtime/ComposerImpl;)Landroidx/compose/runtime/SlotTable;
 
     move-result-object v5
@@ -362,7 +369,7 @@
 
     goto :goto_0
 
-    .line 3972
+    .line 3564
     :cond_1
     iget-object p0, p0, Landroidx/compose/runtime/ComposerImpl$CompositionContextImpl;->composers:Ljava/util/Set;
 
@@ -375,7 +382,7 @@
 .method public doneComposing$runtime_release()V
     .locals 1
 
-    .line 4056
+    .line 3649
     iget-object p0, p0, Landroidx/compose/runtime/ComposerImpl$CompositionContextImpl;->this$0:Landroidx/compose/runtime/ComposerImpl;
 
     invoke-static {p0}, Landroidx/compose/runtime/ComposerImpl;->access$getChildrenComposing$p(Landroidx/compose/runtime/ComposerImpl;)I
@@ -392,8 +399,17 @@
 .method public getCollectingParameterInformation$runtime_release()Z
     .locals 0
 
-    .line 3959
+    .line 3549
     iget-boolean p0, p0, Landroidx/compose/runtime/ComposerImpl$CompositionContextImpl;->collectingParameterInformation:Z
+
+    return p0
+.end method
+
+.method public getCollectingSourceInformation$runtime_release()Z
+    .locals 0
+
+    .line 3550
+    iget-boolean p0, p0, Landroidx/compose/runtime/ComposerImpl$CompositionContextImpl;->collectingSourceInformation:Z
 
     return p0
 .end method
@@ -409,7 +425,7 @@
         }
     .end annotation
 
-    .line 3962
+    .line 3554
     iget-object p0, p0, Landroidx/compose/runtime/ComposerImpl$CompositionContextImpl;->composers:Ljava/util/Set;
 
     return-object p0
@@ -418,7 +434,7 @@
 .method public getCompositionLocalScope$runtime_release()Landroidx/compose/runtime/PersistentCompositionLocalMap;
     .locals 0
 
-    .line 4037
+    .line 3630
     invoke-direct {p0}, Landroidx/compose/runtime/ComposerImpl$CompositionContextImpl;->getCompositionLocalScope()Landroidx/compose/runtime/PersistentCompositionLocalMap;
 
     move-result-object p0
@@ -429,7 +445,7 @@
 .method public getCompoundHashKey$runtime_release()I
     .locals 0
 
-    .line 3958
+    .line 3548
     iget p0, p0, Landroidx/compose/runtime/ComposerImpl$CompositionContextImpl;->compoundHashKey:I
 
     return p0
@@ -438,7 +454,7 @@
 .method public getEffectCoroutineContext()Lkotlin/coroutines/CoroutineContext;
     .locals 0
 
-    .line 3995
+    .line 3587
     iget-object p0, p0, Landroidx/compose/runtime/ComposerImpl$CompositionContextImpl;->this$0:Landroidx/compose/runtime/ComposerImpl;
 
     invoke-static {p0}, Landroidx/compose/runtime/ComposerImpl;->access$getParentContext$p(Landroidx/compose/runtime/ComposerImpl;)Landroidx/compose/runtime/CompositionContext;
@@ -464,8 +480,17 @@
         }
     .end annotation
 
-    .line 3961
+    .line 3553
     iget-object p0, p0, Landroidx/compose/runtime/ComposerImpl$CompositionContextImpl;->inspectionTables:Ljava/util/Set;
+
+    return-object p0
+.end method
+
+.method public getObserverHolder$runtime_release()Landroidx/compose/runtime/CompositionObserverHolder;
+    .locals 0
+
+    .line 3551
+    iget-object p0, p0, Landroidx/compose/runtime/ComposerImpl$CompositionContextImpl;->observerHolder:Landroidx/compose/runtime/CompositionObserverHolder;
 
     return-object p0
 .end method
@@ -473,7 +498,7 @@
 .method public getRecomposeCoroutineContext$runtime_release()Lkotlin/coroutines/CoroutineContext;
     .locals 0
 
-    .line 4001
+    .line 3593
     iget-object p0, p0, Landroidx/compose/runtime/ComposerImpl$CompositionContextImpl;->this$0:Landroidx/compose/runtime/ComposerImpl;
 
     invoke-virtual {p0}, Landroidx/compose/runtime/ComposerImpl;->getComposition()Landroidx/compose/runtime/ControlledComposition;
@@ -488,13 +513,9 @@
 .end method
 
 .method public insertMovableContent$runtime_release(Landroidx/compose/runtime/MovableContentStateReference;)V
-    .locals 1
+    .locals 0
 
-    const-string v0, "reference"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 4060
+    .line 3653
     iget-object p0, p0, Landroidx/compose/runtime/ComposerImpl$CompositionContextImpl;->this$0:Landroidx/compose/runtime/ComposerImpl;
 
     invoke-static {p0}, Landroidx/compose/runtime/ComposerImpl;->access$getParentContext$p(Landroidx/compose/runtime/ComposerImpl;)Landroidx/compose/runtime/CompositionContext;
@@ -509,11 +530,7 @@
 .method public invalidate$runtime_release(Landroidx/compose/runtime/ControlledComposition;)V
     .locals 2
 
-    const-string v0, "composition"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 4020
+    .line 3612
     iget-object v0, p0, Landroidx/compose/runtime/ComposerImpl$CompositionContextImpl;->this$0:Landroidx/compose/runtime/ComposerImpl;
 
     invoke-static {v0}, Landroidx/compose/runtime/ComposerImpl;->access$getParentContext$p(Landroidx/compose/runtime/ComposerImpl;)Landroidx/compose/runtime/CompositionContext;
@@ -528,7 +545,7 @@
 
     invoke-virtual {v0, v1}, Landroidx/compose/runtime/CompositionContext;->invalidate$runtime_release(Landroidx/compose/runtime/ControlledComposition;)V
 
-    .line 4021
+    .line 3613
     iget-object p0, p0, Landroidx/compose/runtime/ComposerImpl$CompositionContextImpl;->this$0:Landroidx/compose/runtime/ComposerImpl;
 
     invoke-static {p0}, Landroidx/compose/runtime/ComposerImpl;->access$getParentContext$p(Landroidx/compose/runtime/ComposerImpl;)Landroidx/compose/runtime/CompositionContext;
@@ -541,13 +558,9 @@
 .end method
 
 .method public invalidateScope$runtime_release(Landroidx/compose/runtime/RecomposeScopeImpl;)V
-    .locals 1
+    .locals 0
 
-    const-string v0, "scope"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 4025
+    .line 3617
     iget-object p0, p0, Landroidx/compose/runtime/ComposerImpl$CompositionContextImpl;->this$0:Landroidx/compose/runtime/ComposerImpl;
 
     invoke-static {p0}, Landroidx/compose/runtime/ComposerImpl;->access$getParentContext$p(Landroidx/compose/runtime/ComposerImpl;)Landroidx/compose/runtime/CompositionContext;
@@ -560,17 +573,9 @@
 .end method
 
 .method public movableContentStateReleased$runtime_release(Landroidx/compose/runtime/MovableContentStateReference;Landroidx/compose/runtime/MovableContentState;)V
-    .locals 1
+    .locals 0
 
-    const-string v0, "reference"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string v0, "data"
-
-    invoke-static {p2, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 4075
+    .line 3668
     iget-object p0, p0, Landroidx/compose/runtime/ComposerImpl$CompositionContextImpl;->this$0:Landroidx/compose/runtime/ComposerImpl;
 
     invoke-static {p0}, Landroidx/compose/runtime/ComposerImpl;->access$getParentContext$p(Landroidx/compose/runtime/ComposerImpl;)Landroidx/compose/runtime/CompositionContext;
@@ -583,13 +588,9 @@
 .end method
 
 .method public movableContentStateResolve$runtime_release(Landroidx/compose/runtime/MovableContentStateReference;)Landroidx/compose/runtime/MovableContentState;
-    .locals 1
+    .locals 0
 
-    const-string v0, "reference"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 4069
+    .line 3662
     iget-object p0, p0, Landroidx/compose/runtime/ComposerImpl$CompositionContextImpl;->this$0:Landroidx/compose/runtime/ComposerImpl;
 
     invoke-static {p0}, Landroidx/compose/runtime/ComposerImpl;->access$getParentContext$p(Landroidx/compose/runtime/ComposerImpl;)Landroidx/compose/runtime/CompositionContext;
@@ -614,11 +615,7 @@
         }
     .end annotation
 
-    const-string/jumbo v0, "table"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 4045
+    .line 3638
     iget-object v0, p0, Landroidx/compose/runtime/ComposerImpl$CompositionContextImpl;->inspectionTables:Ljava/util/Set;
 
     if-nez v0, :cond_0
@@ -627,12 +624,12 @@
 
     invoke-direct {v0}, Ljava/util/HashSet;-><init>()V
 
-    .line 4046
+    .line 3639
     check-cast v0, Ljava/util/Set;
 
     iput-object v0, p0, Landroidx/compose/runtime/ComposerImpl$CompositionContextImpl;->inspectionTables:Ljava/util/Set;
 
-    .line 4048
+    .line 3641
     :cond_0
     invoke-interface {v0, p1}, Ljava/util/Set;->add(Ljava/lang/Object;)Z
 
@@ -642,11 +639,11 @@
 .method public registerComposer$runtime_release(Landroidx/compose/runtime/Composer;)V
     .locals 1
 
-    const-string v0, "composer"
+    .line 3569
+    const-string v0, "null cannot be cast to non-null type androidx.compose.runtime.ComposerImpl"
 
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 3977
     move-object v0, p1
 
     check-cast v0, Landroidx/compose/runtime/ComposerImpl;
@@ -655,7 +652,7 @@
 
     invoke-super {p0, v0}, Landroidx/compose/runtime/CompositionContext;->registerComposer$runtime_release(Landroidx/compose/runtime/Composer;)V
 
-    .line 3978
+    .line 3570
     iget-object p0, p0, Landroidx/compose/runtime/ComposerImpl$CompositionContextImpl;->composers:Ljava/util/Set;
 
     invoke-interface {p0, p1}, Ljava/util/Set;->add(Ljava/lang/Object;)Z
@@ -664,13 +661,9 @@
 .end method
 
 .method public registerComposition$runtime_release(Landroidx/compose/runtime/ControlledComposition;)V
-    .locals 1
+    .locals 0
 
-    const-string v0, "composition"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 3987
+    .line 3579
     iget-object p0, p0, Landroidx/compose/runtime/ComposerImpl$CompositionContextImpl;->this$0:Landroidx/compose/runtime/ComposerImpl;
 
     invoke-static {p0}, Landroidx/compose/runtime/ComposerImpl;->access$getParentContext$p(Landroidx/compose/runtime/ComposerImpl;)Landroidx/compose/runtime/CompositionContext;
@@ -683,13 +676,9 @@
 .end method
 
 .method public reportRemovedComposition$runtime_release(Landroidx/compose/runtime/ControlledComposition;)V
-    .locals 1
+    .locals 0
 
-    const-string v0, "composition"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 4079
+    .line 3672
     iget-object p0, p0, Landroidx/compose/runtime/ComposerImpl$CompositionContextImpl;->this$0:Landroidx/compose/runtime/ComposerImpl;
 
     invoke-static {p0}, Landroidx/compose/runtime/ComposerImpl;->access$getParentContext$p(Landroidx/compose/runtime/ComposerImpl;)Landroidx/compose/runtime/CompositionContext;
@@ -713,7 +702,7 @@
         }
     .end annotation
 
-    .line 3961
+    .line 3553
     iput-object p1, p0, Landroidx/compose/runtime/ComposerImpl$CompositionContextImpl;->inspectionTables:Ljava/util/Set;
 
     return-void
@@ -722,7 +711,7 @@
 .method public startComposing$runtime_release()V
     .locals 1
 
-    .line 4052
+    .line 3645
     iget-object p0, p0, Landroidx/compose/runtime/ComposerImpl$CompositionContextImpl;->this$0:Landroidx/compose/runtime/ComposerImpl;
 
     invoke-static {p0}, Landroidx/compose/runtime/ComposerImpl;->access$getChildrenComposing$p(Landroidx/compose/runtime/ComposerImpl;)I
@@ -739,18 +728,14 @@
 .method public unregisterComposer$runtime_release(Landroidx/compose/runtime/Composer;)V
     .locals 3
 
-    const-string v0, "composer"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 3982
+    .line 3574
     iget-object v0, p0, Landroidx/compose/runtime/ComposerImpl$CompositionContextImpl;->inspectionTables:Ljava/util/Set;
 
     if-eqz v0, :cond_0
 
     check-cast v0, Ljava/lang/Iterable;
 
-    .line 4564
+    .line 4198
     invoke-interface {v0}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
 
     move-result-object v0
@@ -768,7 +753,11 @@
 
     check-cast v1, Ljava/util/Set;
 
-    .line 3982
+    .line 3574
+    const-string v2, "null cannot be cast to non-null type androidx.compose.runtime.ComposerImpl"
+
+    invoke-static {p1, v2}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;Ljava/lang/String;)V
+
     move-object v2, p1
 
     check-cast v2, Landroidx/compose/runtime/ComposerImpl;
@@ -781,7 +770,7 @@
 
     goto :goto_0
 
-    .line 3983
+    .line 3575
     :cond_0
     iget-object p0, p0, Landroidx/compose/runtime/ComposerImpl$CompositionContextImpl;->composers:Ljava/util/Set;
 
@@ -797,13 +786,9 @@
 .end method
 
 .method public unregisterComposition$runtime_release(Landroidx/compose/runtime/ControlledComposition;)V
-    .locals 1
+    .locals 0
 
-    const-string v0, "composition"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 3991
+    .line 3583
     iget-object p0, p0, Landroidx/compose/runtime/ComposerImpl$CompositionContextImpl;->this$0:Landroidx/compose/runtime/ComposerImpl;
 
     invoke-static {p0}, Landroidx/compose/runtime/ComposerImpl;->access$getParentContext$p(Landroidx/compose/runtime/ComposerImpl;)Landroidx/compose/runtime/CompositionContext;
@@ -816,13 +801,9 @@
 .end method
 
 .method public final updateCompositionLocalScope(Landroidx/compose/runtime/PersistentCompositionLocalMap;)V
-    .locals 1
+    .locals 0
 
-    const-string v0, "scope"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 4040
+    .line 3633
     invoke-direct {p0, p1}, Landroidx/compose/runtime/ComposerImpl$CompositionContextImpl;->setCompositionLocalScope(Landroidx/compose/runtime/PersistentCompositionLocalMap;)V
 
     return-void

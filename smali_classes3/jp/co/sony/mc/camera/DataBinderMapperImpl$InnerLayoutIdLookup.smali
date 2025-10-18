@@ -31,18 +31,29 @@
 .method static constructor <clinit>()V
     .locals 3
 
-    .line 1053
+    .line 1126
     new-instance v0, Ljava/util/HashMap;
 
-    const/16 v1, 0x5c
+    const/16 v1, 0x63
 
     invoke-direct {v0, v1}, Ljava/util/HashMap;-><init>(I)V
 
     sput-object v0, Ljp/co/sony/mc/camera/DataBinderMapperImpl$InnerLayoutIdLookup;->sKeys:Ljava/util/HashMap;
 
-    const v1, 0x7f0c002d
+    const v1, 0x7f0c0029
 
-    .line 1056
+    .line 1129
+    invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v1
+
+    const-string v2, "layout/auto_framing_size_menu_0"
+
+    invoke-virtual {v0, v2, v1}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    const v1, 0x7f0c002e
+
+    .line 1130
     invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object v1
@@ -51,9 +62,9 @@
 
     invoke-virtual {v0, v2, v1}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    const v1, 0x7f0c002e
+    const v1, 0x7f0c002f
 
-    .line 1057
+    .line 1131
     invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object v1
@@ -62,9 +73,20 @@
 
     invoke-virtual {v0, v2, v1}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
+    const v1, 0x7f0c0056
+
+    .line 1132
+    invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v1
+
+    const-string v2, "layout/dialog_mode_restricted_in_high_temperature_0"
+
+    invoke-virtual {v0, v2, v1}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
     const v1, 0x7f0c005f
 
-    .line 1058
+    .line 1133
     invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object v1
@@ -75,7 +97,7 @@
 
     const v1, 0x7f0c0060
 
-    .line 1059
+    .line 1134
     invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object v1
@@ -86,7 +108,7 @@
 
     const v1, 0x7f0c0061
 
-    .line 1060
+    .line 1135
     invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object v1
@@ -97,7 +119,7 @@
 
     const v1, 0x7f0c0062
 
-    .line 1061
+    .line 1136
     invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object v1
@@ -108,7 +130,7 @@
 
     const v1, 0x7f0c0063
 
-    .line 1062
+    .line 1137
     invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object v1
@@ -119,7 +141,7 @@
 
     const v1, 0x7f0c0064
 
-    .line 1063
+    .line 1138
     invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object v1
@@ -130,7 +152,7 @@
 
     const v1, 0x7f0c0065
 
-    .line 1064
+    .line 1139
     invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object v1
@@ -141,7 +163,7 @@
 
     const v1, 0x7f0c0066
 
-    .line 1065
+    .line 1140
     invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object v1
@@ -152,7 +174,7 @@
 
     const v1, 0x7f0c0067
 
-    .line 1066
+    .line 1141
     invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object v1
@@ -163,7 +185,7 @@
 
     const v1, 0x7f0c0068
 
-    .line 1067
+    .line 1142
     invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object v1
@@ -174,7 +196,7 @@
 
     const v1, 0x7f0c0069
 
-    .line 1068
+    .line 1143
     invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object v1
@@ -185,7 +207,7 @@
 
     const v1, 0x7f0c006a
 
-    .line 1069
+    .line 1144
     invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object v1
@@ -196,7 +218,7 @@
 
     const v1, 0x7f0c006b
 
-    .line 1070
+    .line 1145
     invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object v1
@@ -207,7 +229,7 @@
 
     const v1, 0x7f0c0072
 
-    .line 1071
+    .line 1146
     invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object v1
@@ -218,7 +240,7 @@
 
     const v1, 0x7f0c0073
 
-    .line 1072
+    .line 1147
     invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object v1
@@ -229,7 +251,7 @@
 
     const v1, 0x7f0c0074
 
-    .line 1073
+    .line 1148
     invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object v1
@@ -240,7 +262,7 @@
 
     const v1, 0x7f0c0075
 
-    .line 1074
+    .line 1149
     invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object v1
@@ -251,7 +273,7 @@
 
     const v1, 0x7f0c0076
 
-    .line 1075
+    .line 1150
     invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object v1
@@ -262,7 +284,7 @@
 
     const v1, 0x7f0c0077
 
-    .line 1076
+    .line 1151
     invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object v1
@@ -273,7 +295,7 @@
 
     const v1, 0x7f0c0078
 
-    .line 1077
+    .line 1152
     invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object v1
@@ -284,7 +306,7 @@
 
     const v1, 0x7f0c0079
 
-    .line 1078
+    .line 1153
     invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object v1
@@ -295,7 +317,7 @@
 
     const v1, 0x7f0c007a
 
-    .line 1079
+    .line 1154
     invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object v1
@@ -306,7 +328,7 @@
 
     const v1, 0x7f0c007b
 
-    .line 1080
+    .line 1155
     invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object v1
@@ -317,7 +339,7 @@
 
     const v1, 0x7f0c007c
 
-    .line 1081
+    .line 1156
     invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object v1
@@ -328,7 +350,7 @@
 
     const v1, 0x7f0c007d
 
-    .line 1082
+    .line 1157
     invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object v1
@@ -339,7 +361,7 @@
 
     const v1, 0x7f0c007f
 
-    .line 1083
+    .line 1158
     invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object v1
@@ -350,7 +372,7 @@
 
     const v1, 0x7f0c0080
 
-    .line 1084
+    .line 1159
     invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object v1
@@ -361,7 +383,7 @@
 
     const v1, 0x7f0c0081
 
-    .line 1085
+    .line 1160
     invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object v1
@@ -372,7 +394,7 @@
 
     const v1, 0x7f0c0082
 
-    .line 1086
+    .line 1161
     invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object v1
@@ -383,7 +405,7 @@
 
     const v1, 0x7f0c008d
 
-    .line 1087
+    .line 1162
     invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object v1
@@ -394,7 +416,7 @@
 
     const v1, 0x7f0c008e
 
-    .line 1088
+    .line 1163
     invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object v1
@@ -403,14 +425,14 @@
 
     invoke-virtual {v0, v2, v1}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 1089
+    .line 1164
     const-string v2, "layout-land/fragment_memory_recall_0"
 
     invoke-virtual {v0, v2, v1}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     const v1, 0x7f0c0097
 
-    .line 1090
+    .line 1165
     invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object v1
@@ -421,7 +443,7 @@
 
     const v1, 0x7f0c0098
 
-    .line 1091
+    .line 1166
     invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object v1
@@ -432,7 +454,7 @@
 
     const v1, 0x7f0c0099
 
-    .line 1092
+    .line 1167
     invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object v1
@@ -443,7 +465,7 @@
 
     const v1, 0x7f0c009a
 
-    .line 1093
+    .line 1168
     invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object v1
@@ -454,7 +476,7 @@
 
     const v1, 0x7f0c009b
 
-    .line 1094
+    .line 1169
     invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object v1
@@ -465,7 +487,7 @@
 
     const v1, 0x7f0c009c
 
-    .line 1095
+    .line 1170
     invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object v1
@@ -476,7 +498,7 @@
 
     const v1, 0x7f0c009d
 
-    .line 1096
+    .line 1171
     invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object v1
@@ -487,7 +509,7 @@
 
     const v1, 0x7f0c009e
 
-    .line 1097
+    .line 1172
     invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object v1
@@ -498,7 +520,7 @@
 
     const v1, 0x7f0c009f
 
-    .line 1098
+    .line 1173
     invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object v1
@@ -509,7 +531,7 @@
 
     const v1, 0x7f0c00a0
 
-    .line 1099
+    .line 1174
     invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object v1
@@ -520,7 +542,7 @@
 
     const v1, 0x7f0c00a1
 
-    .line 1100
+    .line 1175
     invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object v1
@@ -531,7 +553,7 @@
 
     const v1, 0x7f0c00a5
 
-    .line 1101
+    .line 1176
     invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object v1
@@ -542,7 +564,7 @@
 
     const v1, 0x7f0c00a6
 
-    .line 1102
+    .line 1177
     invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object v1
@@ -553,7 +575,7 @@
 
     const v1, 0x7f0c00a7
 
-    .line 1103
+    .line 1178
     invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object v1
@@ -564,7 +586,7 @@
 
     const v1, 0x7f0c00a8
 
-    .line 1104
+    .line 1179
     invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object v1
@@ -575,7 +597,7 @@
 
     const v1, 0x7f0c00a9
 
-    .line 1105
+    .line 1180
     invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object v1
@@ -586,7 +608,7 @@
 
     const v1, 0x7f0c00aa
 
-    .line 1106
+    .line 1181
     invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object v1
@@ -597,7 +619,7 @@
 
     const v1, 0x7f0c00ab
 
-    .line 1107
+    .line 1182
     invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object v1
@@ -608,7 +630,7 @@
 
     const v1, 0x7f0c00ac
 
-    .line 1108
+    .line 1183
     invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object v1
@@ -619,7 +641,7 @@
 
     const v1, 0x7f0c00ad
 
-    .line 1109
+    .line 1184
     invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object v1
@@ -630,7 +652,7 @@
 
     const v1, 0x7f0c00ae
 
-    .line 1110
+    .line 1185
     invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object v1
@@ -641,7 +663,7 @@
 
     const v1, 0x7f0c00af
 
-    .line 1111
+    .line 1186
     invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object v1
@@ -652,7 +674,7 @@
 
     const v1, 0x7f0c00b0
 
-    .line 1112
+    .line 1187
     invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object v1
@@ -663,7 +685,7 @@
 
     const v1, 0x7f0c00b1
 
-    .line 1113
+    .line 1188
     invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object v1
@@ -674,7 +696,7 @@
 
     const v1, 0x7f0c00b2
 
-    .line 1114
+    .line 1189
     invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object v1
@@ -683,14 +705,14 @@
 
     invoke-virtual {v0, v2, v1}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 1115
+    .line 1190
     const-string v2, "layout/fragment_recommended_settings_0"
 
     invoke-virtual {v0, v2, v1}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     const v1, 0x7f0c00bf
 
-    .line 1116
+    .line 1191
     invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object v1
@@ -701,7 +723,7 @@
 
     const v1, 0x7f0c00c0
 
-    .line 1117
+    .line 1192
     invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object v1
@@ -712,7 +734,7 @@
 
     const v1, 0x7f0c00c1
 
-    .line 1118
+    .line 1193
     invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object v1
@@ -723,7 +745,7 @@
 
     const v1, 0x7f0c00c2
 
-    .line 1119
+    .line 1194
     invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object v1
@@ -734,7 +756,7 @@
 
     const v1, 0x7f0c00c3
 
-    .line 1120
+    .line 1195
     invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object v1
@@ -745,7 +767,7 @@
 
     const v1, 0x7f0c00c5
 
-    .line 1121
+    .line 1196
     invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object v1
@@ -754,9 +776,20 @@
 
     invoke-virtual {v0, v2, v1}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
+    const v1, 0x7f0c00c6
+
+    .line 1197
+    invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v1
+
+    const-string v2, "layout/fragment_view_finder_preview_0"
+
+    invoke-virtual {v0, v2, v1}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
     const v1, 0x7f0c00c7
 
-    .line 1122
+    .line 1198
     invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object v1
@@ -767,7 +800,7 @@
 
     const v1, 0x7f0c00ca
 
-    .line 1123
+    .line 1199
     invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object v1
@@ -778,7 +811,7 @@
 
     const v1, 0x7f0c00ce
 
-    .line 1124
+    .line 1200
     invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object v1
@@ -789,7 +822,7 @@
 
     const v1, 0x7f0c00d0
 
-    .line 1125
+    .line 1201
     invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object v1
@@ -800,7 +833,7 @@
 
     const v1, 0x7f0c00d1
 
-    .line 1126
+    .line 1202
     invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object v1
@@ -811,7 +844,7 @@
 
     const v1, 0x7f0c00d4
 
-    .line 1127
+    .line 1203
     invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object v1
@@ -822,7 +855,7 @@
 
     const v1, 0x7f0c00e9
 
-    .line 1128
+    .line 1204
     invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object v1
@@ -831,9 +864,42 @@
 
     invoke-virtual {v0, v2, v1}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    const v1, 0x7f0c0138
+    const v1, 0x7f0c00ea
 
-    .line 1129
+    .line 1205
+    invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v1
+
+    const-string v2, "layout/mode_custom_item_0"
+
+    invoke-virtual {v0, v2, v1}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    const v1, 0x7f0c00eb
+
+    .line 1206
+    invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v1
+
+    const-string v2, "layout/mode_custom_layout_0"
+
+    invoke-virtual {v0, v2, v1}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    const v1, 0x7f0c00ee
+
+    .line 1207
+    invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v1
+
+    const-string v2, "layout/mode_dial_view_0"
+
+    invoke-virtual {v0, v2, v1}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    const v1, 0x7f0c0129
+
+    .line 1208
     invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object v1
@@ -842,31 +908,9 @@
 
     invoke-virtual {v0, v2, v1}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    const v1, 0x7f0c0139
+    const v1, 0x7f0c012a
 
-    .line 1130
-    invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
-
-    move-result-object v1
-
-    const-string v2, "layout/pro_mode_first_in_dialog_0"
-
-    invoke-virtual {v0, v2, v1}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
-
-    const v1, 0x7f0c013a
-
-    .line 1131
-    invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
-
-    move-result-object v1
-
-    const-string v2, "layout/pro_mode_first_in_dialog_view_pager_item_0"
-
-    invoke-virtual {v0, v2, v1}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
-
-    const v1, 0x7f0c013b
-
-    .line 1132
+    .line 1209
     invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object v1
@@ -875,9 +919,9 @@
 
     invoke-virtual {v0, v2, v1}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    const v1, 0x7f0c013c
+    const v1, 0x7f0c012b
 
-    .line 1133
+    .line 1210
     invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object v1
@@ -886,9 +930,20 @@
 
     invoke-virtual {v0, v2, v1}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    const v1, 0x7f0c013e
+    const v1, 0x7f0c012c
 
-    .line 1134
+    .line 1211
+    invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v1
+
+    const-string v2, "layout/pro_mode_system_status_bar_variable_icons_0"
+
+    invoke-virtual {v0, v2, v1}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    const v1, 0x7f0c012d
+
+    .line 1212
     invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object v1
@@ -897,9 +952,9 @@
 
     invoke-virtual {v0, v2, v1}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    const v1, 0x7f0c013f
+    const v1, 0x7f0c012e
 
-    .line 1135
+    .line 1213
     invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object v1
@@ -908,9 +963,9 @@
 
     invoke-virtual {v0, v2, v1}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    const v1, 0x7f0c0140
+    const v1, 0x7f0c012f
 
-    .line 1136
+    .line 1214
     invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object v1
@@ -919,9 +974,9 @@
 
     invoke-virtual {v0, v2, v1}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    const v1, 0x7f0c0141
+    const v1, 0x7f0c0130
 
-    .line 1137
+    .line 1215
     invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object v1
@@ -930,9 +985,9 @@
 
     invoke-virtual {v0, v2, v1}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    const v1, 0x7f0c0143
+    const v1, 0x7f0c0132
 
-    .line 1138
+    .line 1216
     invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object v1
@@ -941,9 +996,9 @@
 
     invoke-virtual {v0, v2, v1}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    const v1, 0x7f0c014e
+    const v1, 0x7f0c013e
 
-    .line 1139
+    .line 1217
     invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object v1
@@ -952,9 +1007,9 @@
 
     invoke-virtual {v0, v2, v1}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    const v1, 0x7f0c014f
+    const v1, 0x7f0c013f
 
-    .line 1140
+    .line 1218
     invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object v1
@@ -963,9 +1018,9 @@
 
     invoke-virtual {v0, v2, v1}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    const v1, 0x7f0c0151
+    const v1, 0x7f0c0141
 
-    .line 1141
+    .line 1219
     invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object v1
@@ -974,9 +1029,31 @@
 
     invoke-virtual {v0, v2, v1}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    const v1, 0x7f0c0156
+    const v1, 0x7f0c0143
 
-    .line 1142
+    .line 1220
+    invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v1
+
+    const-string v2, "layout/tutorial_dialog_0"
+
+    invoke-virtual {v0, v2, v1}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    const v1, 0x7f0c0144
+
+    .line 1221
+    invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v1
+
+    const-string v2, "layout/tutorial_dialog_view_pager_item_0"
+
+    invoke-virtual {v0, v2, v1}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    const v1, 0x7f0c0147
+
+    .line 1222
     invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object v1
@@ -985,9 +1062,9 @@
 
     invoke-virtual {v0, v2, v1}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    const v1, 0x7f0c0159
+    const v1, 0x7f0c014a
 
-    .line 1143
+    .line 1223
     invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object v1
@@ -996,9 +1073,9 @@
 
     invoke-virtual {v0, v2, v1}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    const v1, 0x7f0c015b
+    const v1, 0x7f0c014c
 
-    .line 1144
+    .line 1224
     invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object v1
@@ -1007,9 +1084,9 @@
 
     invoke-virtual {v0, v2, v1}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    const v1, 0x7f0c015c
+    const v1, 0x7f0c014d
 
-    .line 1145
+    .line 1225
     invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object v1
@@ -1018,9 +1095,9 @@
 
     invoke-virtual {v0, v2, v1}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    const v1, 0x7f0c015d
+    const v1, 0x7f0c014e
 
-    .line 1146
+    .line 1226
     invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object v1
@@ -1029,9 +1106,9 @@
 
     invoke-virtual {v0, v2, v1}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    const v1, 0x7f0c0160
+    const v1, 0x7f0c0151
 
-    .line 1147
+    .line 1227
     invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object v1
@@ -1046,7 +1123,7 @@
 .method private constructor <init>()V
     .locals 0
 
-    .line 1052
+    .line 1125
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void

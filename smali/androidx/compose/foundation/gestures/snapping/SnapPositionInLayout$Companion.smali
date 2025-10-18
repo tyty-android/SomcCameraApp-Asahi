@@ -44,6 +44,16 @@
 
 
 # direct methods
+.method public static synthetic $r8$lambda$6Lon7lbA98Kb1SoAyQTzCCinKy8(IIIII)I
+    .locals 0
+
+    invoke-static {p0, p1, p2, p3, p4}, Landroidx/compose/foundation/gestures/snapping/SnapPositionInLayout$Companion;->CenterToCenter$lambda$0(IIIII)I
+
+    move-result p0
+
+    return p0
+.end method
+
 .method static constructor <clinit>()V
     .locals 1
 
@@ -53,10 +63,10 @@
 
     sput-object v0, Landroidx/compose/foundation/gestures/snapping/SnapPositionInLayout$Companion;->$$INSTANCE:Landroidx/compose/foundation/gestures/snapping/SnapPositionInLayout$Companion;
 
-    .line 40
-    sget-object v0, Landroidx/compose/foundation/gestures/snapping/SnapPositionInLayout$Companion$CenterToCenter$1;->INSTANCE:Landroidx/compose/foundation/gestures/snapping/SnapPositionInLayout$Companion$CenterToCenter$1;
+    .line 54
+    new-instance v0, Landroidx/compose/foundation/gestures/snapping/SnapPositionInLayout$Companion$$ExternalSyntheticLambda0;
 
-    check-cast v0, Landroidx/compose/foundation/gestures/snapping/SnapPositionInLayout;
+    invoke-direct {v0}, Landroidx/compose/foundation/gestures/snapping/SnapPositionInLayout$Companion$$ExternalSyntheticLambda0;-><init>()V
 
     sput-object v0, Landroidx/compose/foundation/gestures/snapping/SnapPositionInLayout$Companion;->CenterToCenter:Landroidx/compose/foundation/gestures/snapping/SnapPositionInLayout;
 
@@ -66,10 +76,27 @@
 .method private constructor <init>()V
     .locals 0
 
-    .line 35
+    .line 49
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
+.end method
+
+.method private static final CenterToCenter$lambda$0(IIIII)I
+    .locals 0
+
+    sub-int/2addr p0, p2
+
+    sub-int/2addr p0, p3
+
+    .line 57
+    div-int/lit8 p0, p0, 0x2
+
+    div-int/lit8 p1, p1, 0x2
+
+    sub-int/2addr p0, p1
+
+    return p0
 .end method
 
 
@@ -77,7 +104,7 @@
 .method public final getCenterToCenter()Landroidx/compose/foundation/gestures/snapping/SnapPositionInLayout;
     .locals 0
 
-    .line 39
+    .line 53
     sget-object p0, Landroidx/compose/foundation/gestures/snapping/SnapPositionInLayout$Companion;->CenterToCenter:Landroidx/compose/foundation/gestures/snapping/SnapPositionInLayout;
 
     return-object p0

@@ -34,7 +34,7 @@
 .method static constructor <clinit>()V
     .locals 1
 
-    .line 923
+    .line 932
     new-instance v0, Lcom/google/android/material/checkbox/MaterialCheckBox$SavedState$1;
 
     invoke-direct {v0}, Lcom/google/android/material/checkbox/MaterialCheckBox$SavedState$1;-><init>()V
@@ -47,10 +47,10 @@
 .method private constructor <init>(Landroid/os/Parcel;)V
     .locals 1
 
-    .line 904
+    .line 913
     invoke-direct {p0, p1}, Landroid/view/View$BaseSavedState;-><init>(Landroid/os/Parcel;)V
 
-    .line 905
+    .line 914
     invoke-virtual {p0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     move-result-object v0
@@ -77,7 +77,7 @@
 .method synthetic constructor <init>(Landroid/os/Parcel;Lcom/google/android/material/checkbox/MaterialCheckBox$1;)V
     .locals 0
 
-    .line 889
+    .line 898
     invoke-direct {p0, p1}, Lcom/google/android/material/checkbox/MaterialCheckBox$SavedState;-><init>(Landroid/os/Parcel;)V
 
     return-void
@@ -86,7 +86,7 @@
 .method constructor <init>(Landroid/os/Parcelable;)V
     .locals 0
 
-    .line 897
+    .line 906
     invoke-direct {p0, p1}, Landroid/view/View$BaseSavedState;-><init>(Landroid/os/Parcelable;)V
 
     return-void
@@ -95,7 +95,7 @@
 .method private getCheckedStateString()Ljava/lang/String;
     .locals 1
 
-    .line 938
+    .line 947
     iget p0, p0, Lcom/google/android/material/checkbox/MaterialCheckBox$SavedState;->checkedState:I
 
     const/4 v0, 0x1
@@ -106,18 +106,18 @@
 
     if-eq p0, v0, :cond_0
 
-    .line 945
+    .line 954
     const-string p0, "unchecked"
 
     return-object p0
 
-    .line 942
+    .line 951
     :cond_0
     const-string p0, "indeterminate"
 
     return-object p0
 
-    .line 940
+    .line 949
     :cond_1
     const-string p0, "checked"
 
@@ -129,14 +129,14 @@
 .method public toString()Ljava/lang/String;
     .locals 2
 
-    .line 917
+    .line 926
     new-instance v0, Ljava/lang/StringBuilder;
 
     const-string v1, "MaterialCheckBox.SavedState{"
 
     invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
-    .line 918
+    .line 927
     invoke-static {p0}, Ljava/lang/System;->identityHashCode(Ljava/lang/Object;)I
 
     move-result v1
@@ -155,7 +155,7 @@
 
     move-result-object v0
 
-    .line 919
+    .line 928
     invoke-direct {p0}, Lcom/google/android/material/checkbox/MaterialCheckBox$SavedState;->getCheckedStateString()Ljava/lang/String;
 
     move-result-object p0
@@ -180,10 +180,10 @@
 .method public writeToParcel(Landroid/os/Parcel;I)V
     .locals 0
 
-    .line 910
+    .line 919
     invoke-super {p0, p1, p2}, Landroid/view/View$BaseSavedState;->writeToParcel(Landroid/os/Parcel;I)V
 
-    .line 911
+    .line 920
     iget p0, p0, Lcom/google/android/material/checkbox/MaterialCheckBox$SavedState;->checkedState:I
 
     invoke-static {p0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;

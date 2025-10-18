@@ -120,10 +120,10 @@
     return-object v0
 .end method
 
-.method static bridge synthetic -$$Nest$smgetStoragePermissionList()Ljava/util/List;
+.method static bridge synthetic -$$Nest$smgetReadMediaVisualPermissionList()Ljava/util/List;
     .locals 1
 
-    invoke-static {}, Ljp/co/sony/mc/camera/RequestPermissionActivity;->getStoragePermissionList()Ljava/util/List;
+    invoke-static {}, Ljp/co/sony/mc/camera/RequestPermissionActivity;->getReadMediaVisualPermissionList()Ljava/util/List;
 
     move-result-object v0
 
@@ -179,7 +179,7 @@
 .end method
 
 .method private createPermissionStateList(Ljava/util/List;)Ljava/util/List;
-    .locals 11
+    .locals 13
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -195,13 +195,17 @@
     .line 314
     sget-boolean v0, Ljp/co/sony/mc/camera/util/CamLog;->VERBOSE:Z
 
+    const/4 v1, 0x1
+
+    const/4 v2, 0x0
+
     if-eqz v0, :cond_0
 
-    const-string v0, "createPermissionStateList() start"
+    new-array v0, v1, [Ljava/lang/String;
 
-    filled-new-array {v0}, [Ljava/lang/String;
+    const-string v3, "createPermissionStateList() start"
 
-    move-result-object v0
+    aput-object v3, v0, v2
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
@@ -214,101 +218,101 @@
     .line 317
     invoke-static {}, Ljp/co/sony/mc/camera/RequestPermissionActivity$PermissionCategory;->values()[Ljp/co/sony/mc/camera/RequestPermissionActivity$PermissionCategory;
 
-    move-result-object v1
+    move-result-object v3
 
-    array-length v2, v1
+    array-length v4, v3
 
-    const/4 v3, 0x0
+    move v5, v2
 
     :goto_0
-    if-ge v3, v2, :cond_5
+    if-ge v5, v4, :cond_5
 
-    aget-object v4, v1, v3
+    aget-object v6, v3, v5
 
     .line 318
-    new-instance v5, Ljava/util/ArrayList;
+    new-instance v7, Ljava/util/ArrayList;
 
-    invoke-direct {v5}, Ljava/util/ArrayList;-><init>()V
+    invoke-direct {v7}, Ljava/util/ArrayList;-><init>()V
 
     .line 320
-    invoke-virtual {v4}, Ljp/co/sony/mc/camera/RequestPermissionActivity$PermissionCategory;->getGroupList()Ljava/util/List;
+    invoke-virtual {v6}, Ljp/co/sony/mc/camera/RequestPermissionActivity$PermissionCategory;->getGroupList()Ljava/util/List;
 
-    move-result-object v6
+    move-result-object v8
 
     .line 321
-    invoke-interface {v6}, Ljava/util/List;->iterator()Ljava/util/Iterator;
+    invoke-interface {v8}, Ljava/util/List;->iterator()Ljava/util/Iterator;
 
-    move-result-object v6
+    move-result-object v8
 
     :cond_1
     :goto_1
-    invoke-interface {v6}, Ljava/util/Iterator;->hasNext()Z
+    invoke-interface {v8}, Ljava/util/Iterator;->hasNext()Z
 
-    move-result v7
+    move-result v9
 
-    if-eqz v7, :cond_3
+    if-eqz v9, :cond_3
 
-    invoke-interface {v6}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+    invoke-interface {v8}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
-    move-result-object v7
+    move-result-object v9
 
-    check-cast v7, Ljp/co/sony/mc/camera/RequestPermissionActivity$PermissionGroup;
+    check-cast v9, Ljp/co/sony/mc/camera/RequestPermissionActivity$PermissionGroup;
 
     if-eqz p1, :cond_1
 
     .line 323
     invoke-interface {p1}, Ljava/util/List;->iterator()Ljava/util/Iterator;
 
-    move-result-object v8
+    move-result-object v10
 
     :cond_2
-    invoke-interface {v8}, Ljava/util/Iterator;->hasNext()Z
+    invoke-interface {v10}, Ljava/util/Iterator;->hasNext()Z
 
-    move-result v9
+    move-result v11
 
-    if-eqz v9, :cond_1
+    if-eqz v11, :cond_1
 
-    invoke-interface {v8}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+    invoke-interface {v10}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
-    move-result-object v9
+    move-result-object v11
 
-    check-cast v9, Ljava/lang/String;
+    check-cast v11, Ljava/lang/String;
 
     .line 324
-    invoke-virtual {v7, v9}, Ljp/co/sony/mc/camera/RequestPermissionActivity$PermissionGroup;->contains(Ljava/lang/String;)Z
+    invoke-virtual {v9, v11}, Ljp/co/sony/mc/camera/RequestPermissionActivity$PermissionGroup;->contains(Ljava/lang/String;)Z
 
-    move-result v10
+    move-result v12
 
-    if-eqz v10, :cond_2
+    if-eqz v12, :cond_2
 
-    invoke-virtual {p0, v9}, Ljp/co/sony/mc/camera/RequestPermissionActivity;->checkSelfPermission(Ljava/lang/String;)I
+    invoke-virtual {p0, v11}, Ljp/co/sony/mc/camera/RequestPermissionActivity;->checkSelfPermission(Ljava/lang/String;)I
 
-    move-result v9
+    move-result v11
 
-    if-eqz v9, :cond_2
+    if-eqz v11, :cond_2
 
     .line 326
-    invoke-interface {v5, v7}, Ljava/util/List;->add(Ljava/lang/Object;)Z
+    invoke-interface {v7, v9}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
     goto :goto_1
 
     .line 332
     :cond_3
-    invoke-interface {v5}, Ljava/util/List;->size()I
+    invoke-interface {v7}, Ljava/util/List;->size()I
 
-    move-result v6
+    move-result v8
 
-    if-eqz v6, :cond_4
+    if-eqz v8, :cond_4
 
     .line 333
-    new-instance v6, Ljp/co/sony/mc/camera/RequestPermissionActivity$PermissionState;
+    new-instance v8, Ljp/co/sony/mc/camera/RequestPermissionActivity$PermissionState;
 
-    invoke-direct {v6, p0, v4, v5}, Ljp/co/sony/mc/camera/RequestPermissionActivity$PermissionState;-><init>(Ljp/co/sony/mc/camera/RequestPermissionActivity;Ljp/co/sony/mc/camera/RequestPermissionActivity$PermissionCategory;Ljava/util/List;)V
+    invoke-direct {v8, p0, v6, v7}, Ljp/co/sony/mc/camera/RequestPermissionActivity$PermissionState;-><init>(Ljp/co/sony/mc/camera/RequestPermissionActivity;Ljp/co/sony/mc/camera/RequestPermissionActivity$PermissionCategory;Ljava/util/List;)V
 
-    invoke-interface {v0, v6}, Ljava/util/List;->add(Ljava/lang/Object;)Z
+    invoke-interface {v0, v8}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
     :cond_4
-    add-int/lit8 v3, v3, 0x1
+    add-int/lit8 v5, v5, 0x1
 
     goto :goto_0
 
@@ -318,43 +322,43 @@
 
     if-eqz p0, :cond_6
 
-    new-instance p0, Ljava/lang/StringBuilder;
+    new-array p0, v1, [Ljava/lang/String;
 
-    const-string p1, "createPermissionStateList() end:PermissionState num:"
+    new-instance p1, Ljava/lang/StringBuilder;
 
-    invoke-direct {p0, p1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+    const-string v1, "createPermissionStateList() end:PermissionState num:"
+
+    invoke-direct {p1, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
     .line 338
     invoke-interface {v0}, Ljava/util/List;->size()I
 
-    move-result p1
+    move-result v1
 
-    invoke-virtual {p0, p1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+    invoke-virtual {p1, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
-    move-result-object p0
+    move-result-object p1
 
-    const-string p1, ", "
+    const-string v1, ", "
 
-    invoke-virtual {p0, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {p1, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    move-result-object p0
+    move-result-object p1
 
     .line 339
     invoke-virtual {v0}, Ljava/lang/Object;->toString()Ljava/lang/String;
 
+    move-result-object v1
+
+    invoke-virtual {p1, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
     move-result-object p1
 
-    invoke-virtual {p0, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {p1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    move-result-object p0
+    move-result-object p1
 
-    invoke-virtual {p0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object p0
-
-    filled-new-array {p0}, [Ljava/lang/String;
-
-    move-result-object p0
+    aput-object p1, p0, v2
 
     .line 337
     invoke-static {p0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
@@ -364,18 +368,22 @@
 .end method
 
 .method private decideNextAction()Ljp/co/sony/mc/camera/RequestPermissionActivity$PermissionAction;
-    .locals 2
+    .locals 4
 
     .line 446
     sget-boolean v0, Ljp/co/sony/mc/camera/util/CamLog;->VERBOSE:Z
 
+    const/4 v1, 0x0
+
+    const/4 v2, 0x1
+
     if-eqz v0, :cond_0
 
-    const-string v0, "decideNextAction() start"
+    new-array v0, v2, [Ljava/lang/String;
 
-    filled-new-array {v0}, [Ljava/lang/String;
+    const-string v3, "decideNextAction() start"
 
-    move-result-object v0
+    aput-object v3, v0, v1
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
@@ -390,11 +398,11 @@
 
     if-eqz p0, :cond_1
 
-    const-string p0, "decideNextAction() end:DO_NOTHING"
+    new-array p0, v2, [Ljava/lang/String;
 
-    filled-new-array {p0}, [Ljava/lang/String;
+    const-string v0, "decideNextAction() end:DO_NOTHING"
 
-    move-result-object p0
+    aput-object v0, p0, v1
 
     invoke-static {p0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
@@ -415,11 +423,11 @@
 
     if-eqz p0, :cond_3
 
-    const-string p0, "decideNextAction() end:FINISH"
+    new-array p0, v2, [Ljava/lang/String;
 
-    filled-new-array {p0}, [Ljava/lang/String;
+    const-string v0, "decideNextAction() end:FINISH"
 
-    move-result-object p0
+    aput-object v0, p0, v1
 
     invoke-static {p0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
@@ -486,27 +494,27 @@
 
     if-eqz v0, :cond_8
 
-    new-instance v0, Ljava/lang/StringBuilder;
+    new-array v0, v2, [Ljava/lang/String;
 
-    const-string v1, "decideNextAction() end:"
+    new-instance v2, Ljava/lang/StringBuilder;
 
-    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+    const-string v3, "decideNextAction() end:"
+
+    invoke-direct {v2, v3}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/RequestPermissionActivity$PermissionAction;->name()Ljava/lang/String;
 
-    move-result-object v1
+    move-result-object v3
 
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    move-result-object v0
+    move-result-object v2
 
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    move-result-object v0
+    move-result-object v2
 
-    filled-new-array {v0}, [Ljava/lang/String;
-
-    move-result-object v0
+    aput-object v2, v0, v1
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
@@ -520,117 +528,117 @@
     .line 479
     sget-boolean v0, Ljp/co/sony/mc/camera/util/CamLog;->VERBOSE:Z
 
+    const/4 v1, 0x1
+
+    const/4 v2, 0x0
+
     if-eqz v0, :cond_0
 
-    new-instance v0, Ljava/lang/StringBuilder;
+    new-array v0, v1, [Ljava/lang/String;
 
-    const-string v1, "doAction() start:"
+    new-instance v3, Ljava/lang/StringBuilder;
 
-    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+    const-string v4, "doAction() start:"
+
+    invoke-direct {v3, v4}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
     invoke-virtual {p1}, Ljp/co/sony/mc/camera/RequestPermissionActivity$PermissionAction;->name()Ljava/lang/String;
 
-    move-result-object v1
+    move-result-object v4
 
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    move-result-object v0
+    move-result-object v3
 
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-virtual {v3}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    move-result-object v0
+    move-result-object v3
 
-    filled-new-array {v0}, [Ljava/lang/String;
-
-    move-result-object v0
+    aput-object v3, v0, v2
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
-    :cond_0
-    const/4 v0, 0x0
-
     .line 481
-    new-array v1, v0, [Ljava/lang/String;
+    :cond_0
+    new-array v0, v2, [Ljava/lang/String;
 
     .line 482
-    iget-object v2, p0, Ljp/co/sony/mc/camera/RequestPermissionActivity;->mCurrentPermissionState:Ljp/co/sony/mc/camera/RequestPermissionActivity$PermissionState;
+    iget-object v3, p0, Ljp/co/sony/mc/camera/RequestPermissionActivity;->mCurrentPermissionState:Ljp/co/sony/mc/camera/RequestPermissionActivity$PermissionState;
 
-    if-eqz v2, :cond_1
+    if-eqz v3, :cond_1
 
     .line 483
-    invoke-virtual {v2}, Ljp/co/sony/mc/camera/RequestPermissionActivity$PermissionState;->getRequestPermissionList()[Ljava/lang/String;
+    invoke-virtual {v3}, Ljp/co/sony/mc/camera/RequestPermissionActivity$PermissionState;->getRequestPermissionList()[Ljava/lang/String;
 
-    move-result-object v1
+    move-result-object v0
 
     .line 486
     :cond_1
-    new-instance v2, Ljava/util/ArrayList;
+    new-instance v3, Ljava/util/ArrayList;
 
-    invoke-direct {v2}, Ljava/util/ArrayList;-><init>()V
+    invoke-direct {v3}, Ljava/util/ArrayList;-><init>()V
 
     .line 487
     invoke-static {}, Ljp/co/sony/mc/camera/RequestPermissionActivity$PermissionGroup;->getValues()[Ljp/co/sony/mc/camera/RequestPermissionActivity$PermissionGroup;
 
-    move-result-object v3
+    move-result-object v4
 
-    array-length v4, v3
+    array-length v5, v4
 
-    move v5, v0
+    move v6, v2
 
     :goto_0
-    if-ge v5, v4, :cond_3
+    if-ge v6, v5, :cond_3
 
-    aget-object v6, v3, v5
+    aget-object v7, v4, v6
 
     .line 488
-    invoke-virtual {v6}, Ljp/co/sony/mc/camera/RequestPermissionActivity$PermissionGroup;->getPermissionList()Ljava/util/List;
-
-    move-result-object v6
-
-    invoke-interface {v6}, Ljava/util/List;->iterator()Ljava/util/Iterator;
-
-    move-result-object v6
-
-    :goto_1
-    invoke-interface {v6}, Ljava/util/Iterator;->hasNext()Z
-
-    move-result v7
-
-    if-eqz v7, :cond_2
-
-    invoke-interface {v6}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+    invoke-virtual {v7}, Ljp/co/sony/mc/camera/RequestPermissionActivity$PermissionGroup;->getPermissionList()Ljava/util/List;
 
     move-result-object v7
 
-    check-cast v7, Ljava/lang/String;
+    invoke-interface {v7}, Ljava/util/List;->iterator()Ljava/util/Iterator;
+
+    move-result-object v7
+
+    :goto_1
+    invoke-interface {v7}, Ljava/util/Iterator;->hasNext()Z
+
+    move-result v8
+
+    if-eqz v8, :cond_2
+
+    invoke-interface {v7}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+
+    move-result-object v8
+
+    check-cast v8, Ljava/lang/String;
 
     .line 489
-    invoke-interface {v2, v7}, Ljava/util/List;->add(Ljava/lang/Object;)Z
+    invoke-interface {v3, v8}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
     goto :goto_1
 
     :cond_2
-    add-int/lit8 v5, v5, 0x1
+    add-int/lit8 v6, v6, 0x1
 
     goto :goto_0
 
     .line 493
     :cond_3
-    sget-object v3, Ljp/co/sony/mc/camera/RequestPermissionActivity$5;->$SwitchMap$jp$co$sony$mc$camera$RequestPermissionActivity$PermissionAction:[I
+    sget-object v4, Ljp/co/sony/mc/camera/RequestPermissionActivity$5;->$SwitchMap$jp$co$sony$mc$camera$RequestPermissionActivity$PermissionAction:[I
 
     invoke-virtual {p1}, Ljp/co/sony/mc/camera/RequestPermissionActivity$PermissionAction;->ordinal()I
 
     move-result p1
 
-    aget p1, v3, p1
+    aget p1, v4, p1
 
-    const/4 v3, 0x1
+    if-eq p1, v1, :cond_b
 
-    if-eq p1, v3, :cond_b
+    const/4 v0, 0x2
 
-    const/4 v1, 0x2
-
-    if-eq p1, v1, :cond_5
+    if-eq p1, v0, :cond_5
 
     const/4 v0, 0x3
 
@@ -651,26 +659,26 @@
     invoke-direct {p1}, Ljava/util/ArrayList;-><init>()V
 
     .line 524
-    invoke-interface {v2}, Ljava/util/List;->iterator()Ljava/util/Iterator;
+    invoke-interface {v3}, Ljava/util/List;->iterator()Ljava/util/Iterator;
 
-    move-result-object v1
+    move-result-object v0
 
     :cond_6
     :goto_2
-    invoke-interface {v1}, Ljava/util/Iterator;->hasNext()Z
+    invoke-interface {v0}, Ljava/util/Iterator;->hasNext()Z
 
-    move-result v2
+    move-result v3
 
-    if-eqz v2, :cond_8
+    if-eqz v3, :cond_8
 
-    invoke-interface {v1}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+    invoke-interface {v0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
-    move-result-object v2
+    move-result-object v3
 
-    check-cast v2, Ljava/lang/String;
+    check-cast v3, Ljava/lang/String;
 
     .line 525
-    invoke-virtual {p0, v2}, Ljp/co/sony/mc/camera/RequestPermissionActivity;->checkSelfPermission(Ljava/lang/String;)I
+    invoke-virtual {p0, v3}, Ljp/co/sony/mc/camera/RequestPermissionActivity;->checkSelfPermission(Ljava/lang/String;)I
 
     move-result v4
 
@@ -683,7 +691,7 @@
 
     array-length v5, v4
 
-    move v6, v0
+    move v6, v2
 
     :goto_3
     if-ge v6, v5, :cond_6
@@ -691,7 +699,7 @@
     aget-object v7, v4, v6
 
     .line 527
-    invoke-virtual {v7, v2}, Ljp/co/sony/mc/camera/RequestPermissionActivity$PermissionGroup;->contains(Ljava/lang/String;)Z
+    invoke-virtual {v7, v3}, Ljp/co/sony/mc/camera/RequestPermissionActivity$PermissionGroup;->contains(Ljava/lang/String;)Z
 
     move-result v8
 
@@ -731,25 +739,25 @@
     :cond_8
     invoke-interface {p1}, Ljava/util/List;->size()I
 
-    move-result v1
+    move-result v0
 
-    if-nez v1, :cond_a
+    if-nez v0, :cond_a
 
     .line 538
     sget-boolean p0, Ljp/co/sony/mc/camera/util/CamLog;->VERBOSE:Z
 
     if-eqz p0, :cond_9
 
-    const-string p0, "doAction() end:not done"
+    new-array p0, v1, [Ljava/lang/String;
 
-    filled-new-array {p0}, [Ljava/lang/String;
+    const-string p1, "doAction() end:not done"
 
-    move-result-object p0
+    aput-object p1, p0, v2
 
     invoke-static {p0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
     :cond_9
-    return v0
+    return v2
 
     .line 541
     :cond_a
@@ -764,77 +772,79 @@
     invoke-direct {p1}, Ljava/util/ArrayList;-><init>()V
 
     .line 497
-    iget-object v2, p0, Ljp/co/sony/mc/camera/RequestPermissionActivity;->mCurrentPermissionState:Ljp/co/sony/mc/camera/RequestPermissionActivity$PermissionState;
+    iget-object v3, p0, Ljp/co/sony/mc/camera/RequestPermissionActivity;->mCurrentPermissionState:Ljp/co/sony/mc/camera/RequestPermissionActivity$PermissionState;
 
-    if-eqz v2, :cond_e
+    if-eqz v3, :cond_e
 
     .line 498
-    array-length v2, v1
+    array-length v3, v0
+
+    move v4, v2
 
     :goto_4
-    if-ge v0, v2, :cond_e
+    if-ge v4, v3, :cond_e
 
-    aget-object v4, v1, v0
+    aget-object v5, v0, v4
 
     .line 499
-    invoke-virtual {p0, v4}, Ljp/co/sony/mc/camera/RequestPermissionActivity;->shouldShowRequestPermissionRationale(Ljava/lang/String;)Z
-
-    move-result v5
-
-    if-eqz v5, :cond_d
-
-    .line 501
-    iget-object v5, p0, Ljp/co/sony/mc/camera/RequestPermissionActivity;->mCurrentPermissionState:Ljp/co/sony/mc/camera/RequestPermissionActivity$PermissionState;
-
-    invoke-virtual {v5}, Ljp/co/sony/mc/camera/RequestPermissionActivity$PermissionState;->getRequestGroupList()Ljava/util/List;
-
-    move-result-object v5
-
-    invoke-interface {v5}, Ljava/util/List;->iterator()Ljava/util/Iterator;
-
-    move-result-object v5
-
-    :cond_c
-    invoke-interface {v5}, Ljava/util/Iterator;->hasNext()Z
+    invoke-virtual {p0, v5}, Ljp/co/sony/mc/camera/RequestPermissionActivity;->shouldShowRequestPermissionRationale(Ljava/lang/String;)Z
 
     move-result v6
 
     if-eqz v6, :cond_d
 
-    invoke-interface {v5}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+    .line 501
+    iget-object v6, p0, Ljp/co/sony/mc/camera/RequestPermissionActivity;->mCurrentPermissionState:Ljp/co/sony/mc/camera/RequestPermissionActivity$PermissionState;
+
+    invoke-virtual {v6}, Ljp/co/sony/mc/camera/RequestPermissionActivity$PermissionState;->getRequestGroupList()Ljava/util/List;
 
     move-result-object v6
 
-    check-cast v6, Ljp/co/sony/mc/camera/RequestPermissionActivity$PermissionGroup;
+    invoke-interface {v6}, Ljava/util/List;->iterator()Ljava/util/Iterator;
+
+    move-result-object v6
+
+    :cond_c
+    invoke-interface {v6}, Ljava/util/Iterator;->hasNext()Z
+
+    move-result v7
+
+    if-eqz v7, :cond_d
+
+    invoke-interface {v6}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+
+    move-result-object v7
+
+    check-cast v7, Ljp/co/sony/mc/camera/RequestPermissionActivity$PermissionGroup;
 
     .line 502
-    invoke-virtual {v6, v4}, Ljp/co/sony/mc/camera/RequestPermissionActivity$PermissionGroup;->contains(Ljava/lang/String;)Z
+    invoke-virtual {v7, v5}, Ljp/co/sony/mc/camera/RequestPermissionActivity$PermissionGroup;->contains(Ljava/lang/String;)Z
 
-    move-result v7
+    move-result v8
 
-    if-eqz v7, :cond_c
+    if-eqz v8, :cond_c
 
     .line 503
-    invoke-virtual {v6}, Ljp/co/sony/mc/camera/RequestPermissionActivity$PermissionGroup;->getPreDialogMessageId()I
+    invoke-virtual {v7}, Ljp/co/sony/mc/camera/RequestPermissionActivity$PermissionGroup;->getPreDialogMessageId()I
 
-    move-result v7
+    move-result v8
 
-    sget v8, Ljp/co/sony/mc/camera/RequestPermissionActivity;->INVALID_ID:I
+    sget v9, Ljp/co/sony/mc/camera/RequestPermissionActivity;->INVALID_ID:I
 
-    if-eq v7, v8, :cond_c
+    if-eq v8, v9, :cond_c
 
     .line 504
-    invoke-interface {p1, v6}, Ljava/util/List;->contains(Ljava/lang/Object;)Z
+    invoke-interface {p1, v7}, Ljava/util/List;->contains(Ljava/lang/Object;)Z
 
-    move-result v7
+    move-result v8
 
-    if-nez v7, :cond_c
+    if-nez v8, :cond_c
 
     .line 505
-    invoke-interface {p1, v6}, Ljava/util/List;->add(Ljava/lang/Object;)Z
+    invoke-interface {p1, v7}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
     :cond_d
-    add-int/lit8 v0, v0, 0x1
+    add-int/lit8 v4, v4, 0x1
 
     goto :goto_4
 
@@ -842,12 +852,12 @@
     :cond_e
     invoke-interface {p1}, Ljava/util/List;->size()I
 
-    move-result v0
+    move-result v3
 
-    if-nez v0, :cond_f
+    if-nez v3, :cond_f
 
     .line 513
-    invoke-direct {p0, v1}, Ljp/co/sony/mc/camera/RequestPermissionActivity;->requestPermissions([Ljava/lang/String;)V
+    invoke-direct {p0, v0}, Ljp/co/sony/mc/camera/RequestPermissionActivity;->requestPermissions([Ljava/lang/String;)V
 
     goto :goto_5
 
@@ -861,16 +871,16 @@
 
     if-eqz p0, :cond_10
 
-    const-string p0, "doAction() end:done"
+    new-array p0, v1, [Ljava/lang/String;
 
-    filled-new-array {p0}, [Ljava/lang/String;
+    const-string p1, "doAction() end:done"
 
-    move-result-object p0
+    aput-object p1, p0, v2
 
     invoke-static {p0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
     :cond_10
-    return v3
+    return v1
 .end method
 
 .method private doNextAction()V
@@ -951,16 +961,28 @@
         }
     .end annotation
 
+    const/4 v0, 0x3
+
     .line 250
-    sget-object v0, Ljp/co/sony/mc/camera/RequestPermissionActivity$PermissionGroup;->CAMERA:Ljp/co/sony/mc/camera/RequestPermissionActivity$PermissionGroup;
+    new-array v0, v0, [Ljp/co/sony/mc/camera/RequestPermissionActivity$PermissionGroup;
 
-    sget-object v1, Ljp/co/sony/mc/camera/RequestPermissionActivity$PermissionGroup;->MIC:Ljp/co/sony/mc/camera/RequestPermissionActivity$PermissionGroup;
+    const/4 v1, 0x0
 
-    sget-object v2, Ljp/co/sony/mc/camera/RequestPermissionActivity$PermissionGroup;->STORAGE:Ljp/co/sony/mc/camera/RequestPermissionActivity$PermissionGroup;
+    sget-object v2, Ljp/co/sony/mc/camera/RequestPermissionActivity$PermissionGroup;->CAMERA:Ljp/co/sony/mc/camera/RequestPermissionActivity$PermissionGroup;
 
-    filled-new-array {v0, v1, v2}, [Ljp/co/sony/mc/camera/RequestPermissionActivity$PermissionGroup;
+    aput-object v2, v0, v1
 
-    move-result-object v0
+    const/4 v1, 0x1
+
+    sget-object v2, Ljp/co/sony/mc/camera/RequestPermissionActivity$PermissionGroup;->MIC:Ljp/co/sony/mc/camera/RequestPermissionActivity$PermissionGroup;
+
+    aput-object v2, v0, v1
+
+    const/4 v1, 0x2
+
+    sget-object v2, Ljp/co/sony/mc/camera/RequestPermissionActivity$PermissionGroup;->READ_MEDIA_VISUAL:Ljp/co/sony/mc/camera/RequestPermissionActivity$PermissionGroup;
+
+    aput-object v2, v0, v1
 
     invoke-static {v0}, Ljava/util/Arrays;->asList([Ljava/lang/Object;)Ljava/util/List;
 
@@ -980,16 +1002,28 @@
         }
     .end annotation
 
-    .line 258
-    sget-object v0, Ljp/co/sony/mc/camera/RequestPermissionActivity$PermissionGroup;->LOCATION:Ljp/co/sony/mc/camera/RequestPermissionActivity$PermissionGroup;
+    const/4 v0, 0x3
 
-    sget-object v1, Ljp/co/sony/mc/camera/RequestPermissionActivity$PermissionGroup;->BLUETOOTH:Ljp/co/sony/mc/camera/RequestPermissionActivity$PermissionGroup;
+    .line 258
+    new-array v0, v0, [Ljp/co/sony/mc/camera/RequestPermissionActivity$PermissionGroup;
+
+    const/4 v1, 0x0
+
+    sget-object v2, Ljp/co/sony/mc/camera/RequestPermissionActivity$PermissionGroup;->LOCATION:Ljp/co/sony/mc/camera/RequestPermissionActivity$PermissionGroup;
+
+    aput-object v2, v0, v1
+
+    const/4 v1, 0x1
+
+    sget-object v2, Ljp/co/sony/mc/camera/RequestPermissionActivity$PermissionGroup;->BLUETOOTH:Ljp/co/sony/mc/camera/RequestPermissionActivity$PermissionGroup;
+
+    aput-object v2, v0, v1
+
+    const/4 v1, 0x2
 
     sget-object v2, Ljp/co/sony/mc/camera/RequestPermissionActivity$PermissionGroup;->NOTIFICATION:Ljp/co/sony/mc/camera/RequestPermissionActivity$PermissionGroup;
 
-    filled-new-array {v0, v1, v2}, [Ljp/co/sony/mc/camera/RequestPermissionActivity$PermissionGroup;
-
-    move-result-object v0
+    aput-object v2, v0, v1
 
     invoke-static {v0}, Ljava/util/Arrays;->asList([Ljava/lang/Object;)Ljava/util/List;
 
@@ -999,20 +1033,24 @@
 .end method
 
 .method private getPermissionGroupLabel(Ljp/co/sony/mc/camera/RequestPermissionActivity$PermissionGroup;)Ljava/lang/String;
-    .locals 4
+    .locals 6
 
     const-string v0, "getPermissionGroupLabel label :"
 
     .line 711
     sget-boolean v1, Ljp/co/sony/mc/camera/util/CamLog;->VERBOSE:Z
 
+    const/4 v2, 0x0
+
+    const/4 v3, 0x1
+
     if-eqz v1, :cond_0
 
-    const-string v1, "getPermissionGroupLabel() start"
+    new-array v1, v3, [Ljava/lang/String;
 
-    filled-new-array {v1}, [Ljava/lang/String;
+    const-string v4, "getPermissionGroupLabel() start"
 
-    move-result-object v1
+    aput-object v4, v1, v2
 
     invoke-static {v1}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
@@ -1029,32 +1067,32 @@
     :try_start_0
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/RequestPermissionActivity;->getPackageManager()Landroid/content/pm/PackageManager;
 
-    move-result-object v2
+    move-result-object v4
 
-    const/16 v3, 0x80
+    const/16 v5, 0x80
 
     .line 717
-    invoke-virtual {v2, p1, v3}, Landroid/content/pm/PackageManager;->getPermissionGroupInfo(Ljava/lang/String;I)Landroid/content/pm/PermissionGroupInfo;
+    invoke-virtual {v4, p1, v5}, Landroid/content/pm/PackageManager;->getPermissionGroupInfo(Ljava/lang/String;I)Landroid/content/pm/PermissionGroupInfo;
 
-    move-result-object v2
+    move-result-object v4
 
-    if-eqz v2, :cond_1
+    if-eqz v4, :cond_1
 
     .line 719
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/RequestPermissionActivity;->getPackageManager()Landroid/content/pm/PackageManager;
 
     move-result-object p0
 
-    invoke-virtual {v2, p0}, Landroid/content/pm/PermissionGroupInfo;->loadLabel(Landroid/content/pm/PackageManager;)Ljava/lang/CharSequence;
+    invoke-virtual {v4, p0}, Landroid/content/pm/PermissionGroupInfo;->loadLabel(Landroid/content/pm/PackageManager;)Ljava/lang/CharSequence;
 
     move-result-object p0
 
     .line 720
     invoke-static {p0}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
-    move-result v2
+    move-result v4
 
-    if-nez v2, :cond_1
+    if-nez v4, :cond_1
 
     .line 721
     invoke-interface {p0}, Ljava/lang/CharSequence;->toString()Ljava/lang/String;
@@ -1066,15 +1104,13 @@
 
     if-eqz p0, :cond_1
 
-    const/4 p0, 0x1
+    new-array p0, v3, [Ljava/lang/String;
 
-    new-array p0, p0, [Ljava/lang/String;
+    new-instance v4, Ljava/lang/StringBuilder;
 
-    new-instance v2, Ljava/lang/StringBuilder;
+    invoke-direct {v4, v0}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
-    invoke-direct {v2, v0}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
-
-    invoke-virtual {v2, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v4, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object p1
 
@@ -1082,9 +1118,7 @@
 
     move-result-object p1
 
-    const/4 v0, 0x0
-
-    aput-object p1, p0, v0
+    aput-object p1, p0, v2
 
     invoke-static {p0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
     :try_end_0
@@ -1096,13 +1130,15 @@
     move-exception p0
 
     .line 727
-    new-instance p1, Ljava/lang/StringBuilder;
+    new-array p1, v3, [Ljava/lang/String;
 
-    const-string v0, "getPermissionGroupLabel(): "
+    new-instance v0, Ljava/lang/StringBuilder;
 
-    invoke-direct {p1, v0}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+    const-string v4, "getPermissionGroupLabel(): "
 
-    invoke-virtual {p1, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+    invoke-direct {v0, v4}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+
+    invoke-virtual {v0, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
     move-result-object p0
 
@@ -1110,11 +1146,9 @@
 
     move-result-object p0
 
-    filled-new-array {p0}, [Ljava/lang/String;
+    aput-object p0, p1, v2
 
-    move-result-object p0
-
-    invoke-static {p0}, Ljp/co/sony/mc/camera/util/CamLog;->e([Ljava/lang/String;)V
+    invoke-static {p1}, Ljp/co/sony/mc/camera/util/CamLog;->e([Ljava/lang/String;)V
 
     .line 730
     :cond_1
@@ -1123,11 +1157,11 @@
 
     if-eqz p0, :cond_2
 
-    const-string p0, "getPermissionGroupLabel() end"
+    new-array p0, v3, [Ljava/lang/String;
 
-    filled-new-array {p0}, [Ljava/lang/String;
+    const-string p1, "getPermissionGroupLabel() end"
 
-    move-result-object p0
+    aput-object p1, p0, v2
 
     invoke-static {p0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
@@ -1135,8 +1169,8 @@
     return-object v1
 .end method
 
-.method private static getStoragePermissionList()Ljava/util/List;
-    .locals 2
+.method private static getReadMediaVisualPermissionList()Ljava/util/List;
+    .locals 3
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()",
@@ -1146,14 +1180,22 @@
         }
     .end annotation
 
+    const/4 v0, 0x2
+
     .line 266
-    const-string v0, "android.permission.READ_MEDIA_IMAGES"
+    new-array v0, v0, [Ljava/lang/String;
 
-    const-string v1, "android.permission.READ_MEDIA_VIDEO"
+    const/4 v1, 0x0
 
-    filled-new-array {v0, v1}, [Ljava/lang/String;
+    const-string v2, "android.permission.READ_MEDIA_IMAGES"
 
-    move-result-object v0
+    aput-object v2, v0, v1
+
+    const/4 v1, 0x1
+
+    const-string v2, "android.permission.READ_MEDIA_VIDEO"
+
+    aput-object v2, v0, v1
 
     invoke-static {v0}, Ljava/util/Arrays;->asList([Ljava/lang/Object;)Ljava/util/List;
 
@@ -1203,18 +1245,22 @@
 .end method
 
 .method private requestPermissions([Ljava/lang/String;)V
-    .locals 1
+    .locals 4
 
     .line 559
     sget-boolean v0, Ljp/co/sony/mc/camera/util/CamLog;->VERBOSE:Z
 
+    const/4 v1, 0x0
+
+    const/4 v2, 0x1
+
     if-eqz v0, :cond_0
 
-    const-string v0, "requestPermissions() start"
+    new-array v0, v2, [Ljava/lang/String;
 
-    filled-new-array {v0}, [Ljava/lang/String;
+    const-string v3, "requestPermissions() start"
 
-    move-result-object v0
+    aput-object v3, v0, v1
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
@@ -1238,11 +1284,11 @@
 
     if-eqz p0, :cond_2
 
-    const-string p0, "requestPermissions() end"
+    new-array p0, v2, [Ljava/lang/String;
 
-    filled-new-array {p0}, [Ljava/lang/String;
+    const-string p1, "requestPermissions() end"
 
-    move-result-object p0
+    aput-object p1, p0, v1
 
     invoke-static {p0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
@@ -1251,7 +1297,7 @@
 .end method
 
 .method private showPermissionDialog(ILjava/util/List;)V
-    .locals 5
+    .locals 7
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(I",
@@ -1264,13 +1310,17 @@
     .line 582
     sget-boolean v0, Ljp/co/sony/mc/camera/util/CamLog;->VERBOSE:Z
 
+    const/4 v1, 0x1
+
+    const/4 v2, 0x0
+
     if-eqz v0, :cond_0
 
-    const-string/jumbo v0, "showPermissionDialog() start"
+    new-array v0, v1, [Ljava/lang/String;
 
-    filled-new-array {v0}, [Ljava/lang/String;
+    const-string/jumbo v3, "showPermissionDialog() start"
 
-    move-result-object v0
+    aput-object v3, v0, v2
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
@@ -1281,78 +1331,78 @@
     move-result-object v0
 
     .line 587
-    new-instance v1, Landroid/app/AlertDialog$Builder;
+    new-instance v3, Landroid/app/AlertDialog$Builder;
 
-    invoke-direct {v1, p0}, Landroid/app/AlertDialog$Builder;-><init>(Landroid/content/Context;)V
+    invoke-direct {v3, p0}, Landroid/app/AlertDialog$Builder;-><init>(Landroid/content/Context;)V
 
     .line 589
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/RequestPermissionActivity;->getResources()Landroid/content/res/Resources;
 
-    move-result-object v2
+    move-result-object v4
 
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/RequestPermissionActivity;->getApplicationInfo()Landroid/content/pm/ApplicationInfo;
 
-    move-result-object v3
+    move-result-object v5
 
-    iget v3, v3, Landroid/content/pm/ApplicationInfo;->labelRes:I
+    iget v5, v5, Landroid/content/pm/ApplicationInfo;->labelRes:I
 
-    invoke-virtual {v2, v3}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
+    invoke-virtual {v4, v5}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
-    move-result-object v2
+    move-result-object v4
 
-    const/16 v3, 0x201
+    const/16 v5, 0x201
 
-    if-eq p1, v3, :cond_4
+    if-eq p1, v5, :cond_4
 
-    const/16 v3, 0x202
+    const/16 v5, 0x202
 
-    if-ne p1, v3, :cond_2
+    if-ne p1, v5, :cond_2
 
-    const v3, 0x7f0c011c
+    const v5, 0x7f0c0116
 
-    const/4 v4, 0x0
+    const/4 v6, 0x0
 
     .line 633
-    invoke-virtual {v0, v3, v4}, Landroid/view/LayoutInflater;->inflate(ILandroid/view/ViewGroup;)Landroid/view/View;
+    invoke-virtual {v0, v5, v6}, Landroid/view/LayoutInflater;->inflate(ILandroid/view/ViewGroup;)Landroid/view/View;
 
     move-result-object v0
 
     check-cast v0, Landroid/view/ViewGroup;
 
-    const v3, 0x7f090056
+    const v5, 0x7f090052
 
     .line 635
-    invoke-virtual {v0, v3}, Landroid/view/ViewGroup;->findViewById(I)Landroid/view/View;
+    invoke-virtual {v0, v5}, Landroid/view/ViewGroup;->findViewById(I)Landroid/view/View;
 
-    move-result-object v3
+    move-result-object v5
 
-    check-cast v3, Landroid/widget/TextView;
+    check-cast v5, Landroid/widget/TextView;
 
-    const v4, 0x7f11039d
+    const v6, 0x7f1103d1
 
     .line 636
-    invoke-virtual {v3, v4}, Landroid/widget/TextView;->setText(I)V
+    invoke-virtual {v5, v6}, Landroid/widget/TextView;->setText(I)V
 
-    const v3, 0x7f090367
+    const v5, 0x7f090374
 
     .line 638
-    invoke-virtual {v0, v3}, Landroid/view/ViewGroup;->findViewById(I)Landroid/view/View;
+    invoke-virtual {v0, v5}, Landroid/view/ViewGroup;->findViewById(I)Landroid/view/View;
 
-    move-result-object v3
+    move-result-object v5
 
-    check-cast v3, Landroid/widget/ListView;
+    check-cast v5, Landroid/widget/ListView;
 
-    if-eqz v3, :cond_1
+    if-eqz v5, :cond_1
 
     .line 640
-    new-instance v4, Ljp/co/sony/mc/camera/RequestPermissionActivity$PermissionAdapter;
+    new-instance v6, Ljp/co/sony/mc/camera/RequestPermissionActivity$PermissionAdapter;
 
-    invoke-direct {v4, p0, p0, p1, p2}, Ljp/co/sony/mc/camera/RequestPermissionActivity$PermissionAdapter;-><init>(Ljp/co/sony/mc/camera/RequestPermissionActivity;Landroid/content/Context;ILjava/util/List;)V
+    invoke-direct {v6, p0, p0, p1, p2}, Ljp/co/sony/mc/camera/RequestPermissionActivity$PermissionAdapter;-><init>(Ljp/co/sony/mc/camera/RequestPermissionActivity;Landroid/content/Context;ILjava/util/List;)V
 
-    invoke-virtual {v3, v4}, Landroid/widget/ListView;->setAdapter(Landroid/widget/ListAdapter;)V
+    invoke-virtual {v5, v6}, Landroid/widget/ListView;->setAdapter(Landroid/widget/ListAdapter;)V
 
     :cond_1
-    const p1, 0x7f090055
+    const p1, 0x7f090051
 
     .line 643
     invoke-virtual {v0, p1}, Landroid/view/ViewGroup;->findViewById(I)Landroid/view/View;
@@ -1361,7 +1411,7 @@
 
     check-cast p1, Landroid/widget/TextView;
 
-    const p2, 0x7f11039e
+    const p2, 0x7f1103d2
 
     .line 644
     invoke-virtual {p1, p2}, Landroid/widget/TextView;->setText(I)V
@@ -1373,57 +1423,55 @@
 
     move-result-object p2
 
-    const v3, 0x7f11039f
+    const v5, 0x7f1103d3
 
-    invoke-virtual {p2, v3}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
+    invoke-virtual {p2, v5}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
     move-result-object p2
 
-    filled-new-array {v2}, [Ljava/lang/Object;
+    filled-new-array {v4}, [Ljava/lang/Object;
 
-    move-result-object v2
+    move-result-object v4
 
-    invoke-static {p1, p2, v2}, Ljava/lang/String;->format(Ljava/util/Locale;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
+    invoke-static {p1, p2, v4}, Ljava/lang/String;->format(Ljava/util/Locale;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
 
     move-result-object p1
 
-    invoke-virtual {v1, p1}, Landroid/app/AlertDialog$Builder;->setTitle(Ljava/lang/CharSequence;)Landroid/app/AlertDialog$Builder;
+    invoke-virtual {v3, p1}, Landroid/app/AlertDialog$Builder;->setTitle(Ljava/lang/CharSequence;)Landroid/app/AlertDialog$Builder;
 
     .line 648
-    invoke-virtual {v1, v0}, Landroid/app/AlertDialog$Builder;->setView(Landroid/view/View;)Landroid/app/AlertDialog$Builder;
-
-    const/4 p1, 0x0
+    invoke-virtual {v3, v0}, Landroid/app/AlertDialog$Builder;->setView(Landroid/view/View;)Landroid/app/AlertDialog$Builder;
 
     .line 649
-    invoke-virtual {v1, p1}, Landroid/app/AlertDialog$Builder;->setCancelable(Z)Landroid/app/AlertDialog$Builder;
+    invoke-virtual {v3, v2}, Landroid/app/AlertDialog$Builder;->setCancelable(Z)Landroid/app/AlertDialog$Builder;
 
     .line 652
     new-instance p1, Ljp/co/sony/mc/camera/RequestPermissionActivity$2;
 
     invoke-direct {p1, p0}, Ljp/co/sony/mc/camera/RequestPermissionActivity$2;-><init>(Ljp/co/sony/mc/camera/RequestPermissionActivity;)V
 
-    const p2, 0x7f110137
+    const p2, 0x7f11013a
 
-    invoke-virtual {v1, p2, p1}, Landroid/app/AlertDialog$Builder;->setPositiveButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
+    invoke-virtual {v3, p2, p1}, Landroid/app/AlertDialog$Builder;->setPositiveButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
     .line 679
     new-instance p1, Ljp/co/sony/mc/camera/RequestPermissionActivity$3;
 
     invoke-direct {p1, p0}, Ljp/co/sony/mc/camera/RequestPermissionActivity$3;-><init>(Ljp/co/sony/mc/camera/RequestPermissionActivity;)V
 
-    const p2, 0x7f11013d
+    const p2, 0x7f110140
 
-    invoke-virtual {v1, p2, p1}, Landroid/app/AlertDialog$Builder;->setNegativeButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
+    invoke-virtual {v3, p2, p1}, Landroid/app/AlertDialog$Builder;->setNegativeButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
     .line 692
     new-instance p1, Ljp/co/sony/mc/camera/RequestPermissionActivity$4;
 
     invoke-direct {p1, p0}, Ljp/co/sony/mc/camera/RequestPermissionActivity$4;-><init>(Ljp/co/sony/mc/camera/RequestPermissionActivity;)V
 
-    invoke-virtual {v1, p1}, Landroid/app/AlertDialog$Builder;->setOnDismissListener(Landroid/content/DialogInterface$OnDismissListener;)Landroid/app/AlertDialog$Builder;
+    invoke-virtual {v3, p1}, Landroid/app/AlertDialog$Builder;->setOnDismissListener(Landroid/content/DialogInterface$OnDismissListener;)Landroid/app/AlertDialog$Builder;
 
     .line 699
-    invoke-virtual {v1}, Landroid/app/AlertDialog$Builder;->create()Landroid/app/AlertDialog;
+    invoke-virtual {v3}, Landroid/app/AlertDialog$Builder;->create()Landroid/app/AlertDialog;
 
     move-result-object p1
 
@@ -1438,11 +1486,11 @@
 
     if-eqz p0, :cond_3
 
-    const-string/jumbo p0, "showPermissionDialog() end"
+    new-array p0, v1, [Ljava/lang/String;
 
-    filled-new-array {p0}, [Ljava/lang/String;
+    const-string/jumbo p1, "showPermissionDialog() end"
 
-    move-result-object p0
+    aput-object p1, p0, v2
 
     invoke-static {p0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
@@ -1499,18 +1547,22 @@
 .end method
 
 .method private updateCurrentState()V
-    .locals 8
+    .locals 10
 
     .line 344
     sget-boolean v0, Ljp/co/sony/mc/camera/util/CamLog;->VERBOSE:Z
 
+    const/4 v1, 0x0
+
+    const/4 v2, 0x1
+
     if-eqz v0, :cond_0
 
-    const-string/jumbo v0, "updateCurrentState() start"
+    new-array v0, v2, [Ljava/lang/String;
 
-    filled-new-array {v0}, [Ljava/lang/String;
+    const-string/jumbo v3, "updateCurrentState() start"
 
-    move-result-object v0
+    aput-object v3, v0, v1
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
@@ -1518,15 +1570,15 @@
     :cond_0
     sget v0, Ljp/co/sony/mc/camera/RequestPermissionActivity;->HIGHEST_PRIORITY:I
 
-    add-int/lit8 v0, v0, -0x1
+    sub-int/2addr v0, v2
 
     .line 347
-    iget-object v1, p0, Ljp/co/sony/mc/camera/RequestPermissionActivity;->mCurrentPermissionState:Ljp/co/sony/mc/camera/RequestPermissionActivity$PermissionState;
+    iget-object v3, p0, Ljp/co/sony/mc/camera/RequestPermissionActivity;->mCurrentPermissionState:Ljp/co/sony/mc/camera/RequestPermissionActivity$PermissionState;
 
-    if-eqz v1, :cond_1
+    if-eqz v3, :cond_1
 
     .line 348
-    invoke-virtual {v1}, Ljp/co/sony/mc/camera/RequestPermissionActivity$PermissionState;->getCategory()Ljp/co/sony/mc/camera/RequestPermissionActivity$PermissionCategory;
+    invoke-virtual {v3}, Ljp/co/sony/mc/camera/RequestPermissionActivity$PermissionState;->getCategory()Ljp/co/sony/mc/camera/RequestPermissionActivity$PermissionCategory;
 
     move-result-object v0
 
@@ -1535,113 +1587,113 @@
     move-result v0
 
     .line 349
-    sget-boolean v1, Ljp/co/sony/mc/camera/util/CamLog;->VERBOSE:Z
+    sget-boolean v3, Ljp/co/sony/mc/camera/util/CamLog;->VERBOSE:Z
 
-    if-eqz v1, :cond_2
+    if-eqz v3, :cond_2
 
-    new-instance v1, Ljava/lang/StringBuilder;
+    new-array v3, v2, [Ljava/lang/String;
 
-    const-string/jumbo v2, "updateCurrentState() before state="
+    new-instance v4, Ljava/lang/StringBuilder;
 
-    invoke-direct {v1, v2}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+    const-string/jumbo v5, "updateCurrentState() before state="
 
-    iget-object v2, p0, Ljp/co/sony/mc/camera/RequestPermissionActivity;->mCurrentPermissionState:Ljp/co/sony/mc/camera/RequestPermissionActivity$PermissionState;
+    invoke-direct {v4, v5}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+
+    iget-object v5, p0, Ljp/co/sony/mc/camera/RequestPermissionActivity;->mCurrentPermissionState:Ljp/co/sony/mc/camera/RequestPermissionActivity$PermissionState;
 
     .line 350
-    invoke-virtual {v2}, Ljp/co/sony/mc/camera/RequestPermissionActivity$PermissionState;->getCategory()Ljp/co/sony/mc/camera/RequestPermissionActivity$PermissionCategory;
+    invoke-virtual {v5}, Ljp/co/sony/mc/camera/RequestPermissionActivity$PermissionState;->getCategory()Ljp/co/sony/mc/camera/RequestPermissionActivity$PermissionCategory;
 
-    move-result-object v2
+    move-result-object v5
 
-    invoke-virtual {v2}, Ljp/co/sony/mc/camera/RequestPermissionActivity$PermissionCategory;->name()Ljava/lang/String;
+    invoke-virtual {v5}, Ljp/co/sony/mc/camera/RequestPermissionActivity$PermissionCategory;->name()Ljava/lang/String;
 
-    move-result-object v2
+    move-result-object v5
 
-    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    move-result-object v1
+    move-result-object v4
 
-    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-virtual {v4}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    move-result-object v1
+    move-result-object v4
 
-    filled-new-array {v1}, [Ljava/lang/String;
-
-    move-result-object v1
+    aput-object v4, v3, v1
 
     .line 349
-    invoke-static {v1}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
+    invoke-static {v3}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
     goto :goto_0
 
     .line 352
     :cond_1
-    sget-boolean v1, Ljp/co/sony/mc/camera/util/CamLog;->VERBOSE:Z
+    sget-boolean v3, Ljp/co/sony/mc/camera/util/CamLog;->VERBOSE:Z
 
-    if-eqz v1, :cond_2
+    if-eqz v3, :cond_2
 
-    const-string/jumbo v1, "updateCurrentState() before state=null"
+    new-array v3, v2, [Ljava/lang/String;
 
-    filled-new-array {v1}, [Ljava/lang/String;
+    const-string/jumbo v4, "updateCurrentState() before state=null"
 
-    move-result-object v1
+    aput-object v4, v3, v1
 
-    invoke-static {v1}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
+    invoke-static {v3}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
     .line 357
     :cond_2
     :goto_0
-    sget v1, Ljp/co/sony/mc/camera/RequestPermissionActivity;->LOWEST_PRIORITY:I
+    sget v3, Ljp/co/sony/mc/camera/RequestPermissionActivity;->LOWEST_PRIORITY:I
 
-    add-int/lit8 v1, v1, 0x1
+    add-int/2addr v3, v2
 
     .line 358
-    iget-object v2, p0, Ljp/co/sony/mc/camera/RequestPermissionActivity;->mPermissionStateList:Ljava/util/List;
+    iget-object v4, p0, Ljp/co/sony/mc/camera/RequestPermissionActivity;->mPermissionStateList:Ljava/util/List;
 
-    invoke-interface {v2}, Ljava/util/List;->iterator()Ljava/util/Iterator;
+    invoke-interface {v4}, Ljava/util/List;->iterator()Ljava/util/Iterator;
 
-    move-result-object v2
+    move-result-object v4
 
-    const/4 v3, 0x0
+    const/4 v5, 0x0
 
-    move-object v4, v3
+    move-object v6, v5
 
     :cond_3
     :goto_1
-    invoke-interface {v2}, Ljava/util/Iterator;->hasNext()Z
-
-    move-result v5
-
-    if-eqz v5, :cond_4
-
-    invoke-interface {v2}, Ljava/util/Iterator;->next()Ljava/lang/Object;
-
-    move-result-object v5
-
-    check-cast v5, Ljp/co/sony/mc/camera/RequestPermissionActivity$PermissionState;
-
-    .line 359
-    invoke-virtual {v5}, Ljp/co/sony/mc/camera/RequestPermissionActivity$PermissionState;->getCategory()Ljp/co/sony/mc/camera/RequestPermissionActivity$PermissionCategory;
-
-    move-result-object v6
-
-    invoke-virtual {v6}, Ljp/co/sony/mc/camera/RequestPermissionActivity$PermissionCategory;->getPriority()I
-
-    move-result v6
-
-    .line 360
-    invoke-virtual {v5}, Ljp/co/sony/mc/camera/RequestPermissionActivity$PermissionState;->isRequested()Z
+    invoke-interface {v4}, Ljava/util/Iterator;->hasNext()Z
 
     move-result v7
 
-    if-ge v0, v6, :cond_3
+    if-eqz v7, :cond_4
 
-    if-ge v6, v1, :cond_3
+    invoke-interface {v4}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
-    if-nez v7, :cond_3
+    move-result-object v7
 
-    move-object v4, v5
+    check-cast v7, Ljp/co/sony/mc/camera/RequestPermissionActivity$PermissionState;
 
-    move v1, v6
+    .line 359
+    invoke-virtual {v7}, Ljp/co/sony/mc/camera/RequestPermissionActivity$PermissionState;->getCategory()Ljp/co/sony/mc/camera/RequestPermissionActivity$PermissionCategory;
+
+    move-result-object v8
+
+    invoke-virtual {v8}, Ljp/co/sony/mc/camera/RequestPermissionActivity$PermissionCategory;->getPriority()I
+
+    move-result v8
+
+    .line 360
+    invoke-virtual {v7}, Ljp/co/sony/mc/camera/RequestPermissionActivity$PermissionState;->isRequested()Z
+
+    move-result v9
+
+    if-ge v0, v8, :cond_3
+
+    if-ge v8, v3, :cond_3
+
+    if-nez v9, :cond_3
+
+    move-object v6, v7
+
+    move v3, v8
 
     goto :goto_1
 
@@ -1649,16 +1701,16 @@
     :cond_4
     iget-object v0, p0, Ljp/co/sony/mc/camera/RequestPermissionActivity;->mCurrentPermissionState:Ljp/co/sony/mc/camera/RequestPermissionActivity$PermissionState;
 
-    if-ne v0, v4, :cond_5
+    if-ne v0, v6, :cond_5
 
     .line 367
-    iput-object v3, p0, Ljp/co/sony/mc/camera/RequestPermissionActivity;->mCurrentPermissionState:Ljp/co/sony/mc/camera/RequestPermissionActivity$PermissionState;
+    iput-object v5, p0, Ljp/co/sony/mc/camera/RequestPermissionActivity;->mCurrentPermissionState:Ljp/co/sony/mc/camera/RequestPermissionActivity$PermissionState;
 
     goto :goto_2
 
     .line 369
     :cond_5
-    iput-object v4, p0, Ljp/co/sony/mc/camera/RequestPermissionActivity;->mCurrentPermissionState:Ljp/co/sony/mc/camera/RequestPermissionActivity$PermissionState;
+    iput-object v6, p0, Ljp/co/sony/mc/camera/RequestPermissionActivity;->mCurrentPermissionState:Ljp/co/sony/mc/camera/RequestPermissionActivity$PermissionState;
 
     .line 372
     :goto_2
@@ -1672,11 +1724,13 @@
     if-eqz v0, :cond_6
 
     .line 374
-    new-instance v0, Ljava/lang/StringBuilder;
+    new-array v0, v2, [Ljava/lang/String;
 
-    const-string/jumbo v1, "updateCurrentState() after state="
+    new-instance v3, Ljava/lang/StringBuilder;
 
-    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+    const-string/jumbo v4, "updateCurrentState() after state="
+
+    invoke-direct {v3, v4}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
     iget-object p0, p0, Ljp/co/sony/mc/camera/RequestPermissionActivity;->mCurrentPermissionState:Ljp/co/sony/mc/camera/RequestPermissionActivity$PermissionState;
 
@@ -1689,7 +1743,7 @@
 
     move-result-object p0
 
-    invoke-virtual {v0, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v3, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object p0
 
@@ -1697,22 +1751,20 @@
 
     move-result-object p0
 
-    filled-new-array {p0}, [Ljava/lang/String;
-
-    move-result-object p0
+    aput-object p0, v0, v1
 
     .line 374
-    invoke-static {p0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
+    invoke-static {v0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
     goto :goto_3
 
     .line 377
     :cond_6
-    const-string/jumbo p0, "updateCurrentState() after state=null"
+    new-array p0, v2, [Ljava/lang/String;
 
-    filled-new-array {p0}, [Ljava/lang/String;
+    const-string/jumbo v0, "updateCurrentState() after state=null"
 
-    move-result-object p0
+    aput-object v0, p0, v1
 
     invoke-static {p0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
@@ -1723,11 +1775,11 @@
 
     if-eqz p0, :cond_8
 
-    const-string/jumbo p0, "updateCurrentState() end"
+    new-array p0, v2, [Ljava/lang/String;
 
-    filled-new-array {p0}, [Ljava/lang/String;
+    const-string/jumbo v0, "updateCurrentState() end"
 
-    move-result-object p0
+    aput-object v0, p0, v1
 
     invoke-static {p0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
@@ -1738,18 +1790,22 @@
 
 # virtual methods
 .method protected onCreate(Landroid/os/Bundle;)V
-    .locals 3
+    .locals 4
 
     .line 273
     sget-boolean v0, Ljp/co/sony/mc/camera/util/CamLog;->VERBOSE:Z
 
+    const/4 v1, 0x1
+
+    const/4 v2, 0x0
+
     if-eqz v0, :cond_0
 
-    const-string v0, "onCreate() start"
+    new-array v0, v1, [Ljava/lang/String;
 
-    filled-new-array {v0}, [Ljava/lang/String;
+    const-string v3, "onCreate() start"
 
-    move-result-object v0
+    aput-object v3, v0, v2
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
@@ -1762,18 +1818,16 @@
     if-eqz v0, :cond_1
 
     .line 277
-    const-string v1, "permissions_theme_res_id"
+    const-string v3, "permissions_theme_res_id"
 
-    const/4 v2, 0x0
+    invoke-virtual {v0, v3, v2}, Landroid/content/Intent;->getIntExtra(Ljava/lang/String;I)I
 
-    invoke-virtual {v0, v1, v2}, Landroid/content/Intent;->getIntExtra(Ljava/lang/String;I)I
+    move-result v3
 
-    move-result v1
-
-    if-lez v1, :cond_1
+    if-lez v3, :cond_1
 
     .line 279
-    invoke-virtual {p0, v1}, Ljp/co/sony/mc/camera/RequestPermissionActivity;->setTheme(I)V
+    invoke-virtual {p0, v3}, Ljp/co/sony/mc/camera/RequestPermissionActivity;->setTheme(I)V
 
     .line 283
     :cond_1
@@ -1791,11 +1845,11 @@
 
     if-eqz p1, :cond_2
 
-    const-string p1, "onCreate() finish():intent = null"
+    new-array p1, v1, [Ljava/lang/String;
 
-    filled-new-array {p1}, [Ljava/lang/String;
+    const-string v0, "onCreate() finish():intent = null"
 
-    move-result-object p1
+    aput-object v0, p1, v2
 
     invoke-static {p1}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
@@ -1836,11 +1890,11 @@
 
     if-eqz p0, :cond_4
 
-    const-string p0, "onCreate() finish()"
+    new-array p0, v1, [Ljava/lang/String;
 
-    filled-new-array {p0}, [Ljava/lang/String;
+    const-string p1, "onCreate() finish()"
 
-    move-result-object p0
+    aput-object p1, p0, v2
 
     invoke-static {p0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
@@ -1853,11 +1907,11 @@
 
     if-eqz p0, :cond_6
 
-    const-string p0, "onCreate() end"
+    new-array p0, v1, [Ljava/lang/String;
 
-    filled-new-array {p0}, [Ljava/lang/String;
+    const-string p1, "onCreate() end"
 
-    move-result-object p0
+    aput-object p1, p0, v2
 
     invoke-static {p0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
@@ -1866,18 +1920,22 @@
 .end method
 
 .method protected onDestroy()V
-    .locals 1
+    .locals 4
 
     .line 736
     sget-boolean v0, Ljp/co/sony/mc/camera/util/CamLog;->VERBOSE:Z
 
+    const/4 v1, 0x0
+
+    const/4 v2, 0x1
+
     if-eqz v0, :cond_0
 
-    const-string v0, "onDestroy() start"
+    new-array v0, v2, [Ljava/lang/String;
 
-    filled-new-array {v0}, [Ljava/lang/String;
+    const-string v3, "onDestroy() start"
 
-    move-result-object v0
+    aput-object v3, v0, v1
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
@@ -1906,11 +1964,11 @@
 
     if-eqz p0, :cond_1
 
-    const-string p0, "onDestroy() end"
+    new-array p0, v2, [Ljava/lang/String;
 
-    filled-new-array {p0}, [Ljava/lang/String;
+    const-string v0, "onDestroy() end"
 
-    move-result-object p0
+    aput-object v0, p0, v1
 
     invoke-static {p0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
@@ -1933,18 +1991,22 @@
 .end method
 
 .method protected onResume()V
-    .locals 2
+    .locals 5
 
     .line 386
     sget-boolean v0, Ljp/co/sony/mc/camera/util/CamLog;->VERBOSE:Z
 
+    const/4 v1, 0x0
+
+    const/4 v2, 0x1
+
     if-eqz v0, :cond_0
 
-    const-string v0, "onResume() start"
+    new-array v0, v2, [Ljava/lang/String;
 
-    filled-new-array {v0}, [Ljava/lang/String;
+    const-string v3, "onResume() start"
 
-    move-result-object v0
+    aput-object v3, v0, v1
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
@@ -1968,34 +2030,34 @@
     if-eqz v0, :cond_1
 
     .line 394
-    new-instance v0, Ljava/lang/StringBuilder;
+    new-array v0, v2, [Ljava/lang/String;
 
-    const-string v1, "onResume() state="
+    new-instance v3, Ljava/lang/StringBuilder;
 
-    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+    const-string v4, "onResume() state="
 
-    iget-object v1, p0, Ljp/co/sony/mc/camera/RequestPermissionActivity;->mCurrentPermissionState:Ljp/co/sony/mc/camera/RequestPermissionActivity$PermissionState;
+    invoke-direct {v3, v4}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+
+    iget-object v4, p0, Ljp/co/sony/mc/camera/RequestPermissionActivity;->mCurrentPermissionState:Ljp/co/sony/mc/camera/RequestPermissionActivity$PermissionState;
 
     .line 395
-    invoke-virtual {v1}, Ljp/co/sony/mc/camera/RequestPermissionActivity$PermissionState;->getCategory()Ljp/co/sony/mc/camera/RequestPermissionActivity$PermissionCategory;
+    invoke-virtual {v4}, Ljp/co/sony/mc/camera/RequestPermissionActivity$PermissionState;->getCategory()Ljp/co/sony/mc/camera/RequestPermissionActivity$PermissionCategory;
 
-    move-result-object v1
+    move-result-object v4
 
-    invoke-virtual {v1}, Ljp/co/sony/mc/camera/RequestPermissionActivity$PermissionCategory;->name()Ljava/lang/String;
+    invoke-virtual {v4}, Ljp/co/sony/mc/camera/RequestPermissionActivity$PermissionCategory;->name()Ljava/lang/String;
 
-    move-result-object v1
+    move-result-object v4
 
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    move-result-object v0
+    move-result-object v3
 
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-virtual {v3}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    move-result-object v0
+    move-result-object v3
 
-    filled-new-array {v0}, [Ljava/lang/String;
-
-    move-result-object v0
+    aput-object v3, v0, v1
 
     .line 394
     invoke-static {v0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
@@ -2004,11 +2066,11 @@
 
     .line 397
     :cond_1
-    const-string v0, "onResume() state=null"
+    new-array v0, v2, [Ljava/lang/String;
 
-    filled-new-array {v0}, [Ljava/lang/String;
+    const-string v3, "onResume() state=null"
 
-    move-result-object v0
+    aput-object v3, v0, v1
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
@@ -2022,11 +2084,11 @@
 
     if-eqz p0, :cond_3
 
-    const-string p0, "onResume() end"
+    new-array p0, v2, [Ljava/lang/String;
 
-    filled-new-array {p0}, [Ljava/lang/String;
+    const-string v0, "onResume() end"
 
-    move-result-object p0
+    aput-object v0, p0, v1
 
     invoke-static {p0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
@@ -2035,18 +2097,22 @@
 .end method
 
 .method protected onStop()V
-    .locals 1
+    .locals 4
 
     .line 415
     sget-boolean v0, Ljp/co/sony/mc/camera/util/CamLog;->VERBOSE:Z
 
+    const/4 v1, 0x0
+
+    const/4 v2, 0x1
+
     if-eqz v0, :cond_0
 
-    const-string v0, "onStop() start"
+    new-array v0, v2, [Ljava/lang/String;
 
-    filled-new-array {v0}, [Ljava/lang/String;
+    const-string v3, "onStop() start"
 
-    move-result-object v0
+    aput-object v3, v0, v1
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
@@ -2064,11 +2130,11 @@
 
     if-eqz v0, :cond_1
 
-    const-string v0, "onStop() Current dialog is shown."
+    new-array v0, v2, [Ljava/lang/String;
 
-    filled-new-array {v0}, [Ljava/lang/String;
+    const-string v3, "onStop() Current dialog is shown."
 
-    move-result-object v0
+    aput-object v3, v0, v1
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
@@ -2082,11 +2148,11 @@
 
     if-eqz p0, :cond_3
 
-    const-string p0, "onStop() end"
+    new-array p0, v2, [Ljava/lang/String;
 
-    filled-new-array {p0}, [Ljava/lang/String;
+    const-string v0, "onStop() end"
 
-    move-result-object p0
+    aput-object v0, p0, v1
 
     invoke-static {p0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 

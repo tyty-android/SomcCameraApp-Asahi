@@ -141,7 +141,7 @@
 
     invoke-static {}, Lkotlin/coroutines/intrinsics/IntrinsicsKt;->getCOROUTINE_SUSPENDED()Ljava/lang/Object;
 
-    .line 184
+    .line 193
     iget p0, p0, Landroidx/compose/foundation/gestures/DraggableKt$draggable$1;->label:I
 
     if-nez p0, :cond_0

@@ -80,7 +80,7 @@
 .method public bridge synthetic invoke(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
 
-    .line 128
+    .line 129
     check-cast p1, Landroidx/compose/runtime/Composer;
 
     check-cast p2, Ljava/lang/Number;
@@ -99,11 +99,7 @@
 .method public final invoke(Landroidx/compose/runtime/Composer;I)V
     .locals 1
 
-    const-string p2, "nc"
-
-    invoke-static {p1, p2}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 129
+    .line 130
     iget-object p2, p0, Landroidx/compose/runtime/internal/ComposableLambdaImpl$invoke$1;->this$0:Landroidx/compose/runtime/internal/ComposableLambdaImpl;
 
     iget-object v0, p0, Landroidx/compose/runtime/internal/ComposableLambdaImpl$invoke$1;->$p1:Ljava/lang/Object;

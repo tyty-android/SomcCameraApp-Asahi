@@ -22,7 +22,7 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/SourceDebugExtension;
-    value = "SMAP\nSequences.kt\nKotlin\n*S Kotlin\n*F\n+ 1 Sequences.kt\nkotlin/sequences/SubSequence\n+ 2 fake.kt\nkotlin/jvm/internal/FakeKt\n*L\n1#1,680:1\n1#2:681\n*E\n"
+    value = "SMAP\nSequences.kt\nKotlin\n*S Kotlin\n*F\n+ 1 Sequences.kt\nkotlin/sequences/SubSequence\n+ 2 fake.kt\nkotlin/jvm/internal/FakeKt\n*L\n1#1,698:1\n1#2:699\n*E\n"
 .end annotation
 
 .annotation runtime Lkotlin/Metadata;
@@ -89,16 +89,16 @@
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 348
+    .line 366
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 349
+    .line 367
     iput-object p1, p0, Lkotlin/sequences/SubSequence;->sequence:Lkotlin/sequences/Sequence;
 
-    .line 350
+    .line 368
     iput p2, p0, Lkotlin/sequences/SubSequence;->startIndex:I
 
-    .line 351
+    .line 369
     iput p3, p0, Lkotlin/sequences/SubSequence;->endIndex:I
 
     if-ltz p2, :cond_2
@@ -109,7 +109,7 @@
 
     return-void
 
-    .line 357
+    .line 375
     :cond_0
     new-instance p0, Ljava/lang/StringBuilder;
 
@@ -145,7 +145,7 @@
 
     throw p1
 
-    .line 356
+    .line 374
     :cond_1
     new-instance p0, Ljava/lang/StringBuilder;
 
@@ -171,7 +171,7 @@
 
     throw p1
 
-    .line 355
+    .line 373
     :cond_2
     new-instance p0, Ljava/lang/StringBuilder;
 
@@ -201,7 +201,7 @@
 .method public static final synthetic access$getEndIndex$p(Lkotlin/sequences/SubSequence;)I
     .locals 0
 
-    .line 348
+    .line 366
     iget p0, p0, Lkotlin/sequences/SubSequence;->endIndex:I
 
     return p0
@@ -210,7 +210,7 @@
 .method public static final synthetic access$getSequence$p(Lkotlin/sequences/SubSequence;)Lkotlin/sequences/Sequence;
     .locals 0
 
-    .line 348
+    .line 366
     iget-object p0, p0, Lkotlin/sequences/SubSequence;->sequence:Lkotlin/sequences/Sequence;
 
     return-object p0
@@ -219,7 +219,7 @@
 .method public static final synthetic access$getStartIndex$p(Lkotlin/sequences/SubSequence;)I
     .locals 0
 
-    .line 348
+    .line 366
     iget p0, p0, Lkotlin/sequences/SubSequence;->startIndex:I
 
     return p0
@@ -228,7 +228,7 @@
 .method private final getCount()I
     .locals 1
 
-    .line 360
+    .line 378
     iget v0, p0, Lkotlin/sequences/SubSequence;->endIndex:I
 
     iget p0, p0, Lkotlin/sequences/SubSequence;->startIndex:I
@@ -250,7 +250,7 @@
         }
     .end annotation
 
-    .line 362
+    .line 380
     invoke-direct {p0}, Lkotlin/sequences/SubSequence;->getCount()I
 
     move-result v0
@@ -294,7 +294,7 @@
         }
     .end annotation
 
-    .line 365
+    .line 383
     new-instance v0, Lkotlin/sequences/SubSequence$iterator$1;
 
     invoke-direct {v0, p0}, Lkotlin/sequences/SubSequence$iterator$1;-><init>(Lkotlin/sequences/SubSequence;)V
@@ -314,7 +314,7 @@
         }
     .end annotation
 
-    .line 363
+    .line 381
     invoke-direct {p0}, Lkotlin/sequences/SubSequence;->getCount()I
 
     move-result v0

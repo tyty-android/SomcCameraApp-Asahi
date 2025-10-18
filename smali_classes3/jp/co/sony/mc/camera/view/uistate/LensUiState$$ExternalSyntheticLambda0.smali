@@ -3,34 +3,62 @@
 .source "D8$$SyntheticClass"
 
 # interfaces
-.implements Ljava/lang/Runnable;
-
-
-# instance fields
-.field public final synthetic f$0:Ljp/co/sony/mc/camera/view/uistate/LensUiState;
+.implements Lkotlin/jvm/functions/Function6;
 
 
 # direct methods
-.method public synthetic constructor <init>(Ljp/co/sony/mc/camera/view/uistate/LensUiState;)V
+.method public synthetic constructor <init>()V
     .locals 0
 
     .line 0
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    iput-object p1, p0, Ljp/co/sony/mc/camera/view/uistate/LensUiState$$ExternalSyntheticLambda0;->f$0:Ljp/co/sony/mc/camera/view/uistate/LensUiState;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final run()V
-    .locals 0
+.method public final invoke(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 6
 
     .line 0
-    iget-object p0, p0, Ljp/co/sony/mc/camera/view/uistate/LensUiState$$ExternalSyntheticLambda0;->f$0:Ljp/co/sony/mc/camera/view/uistate/LensUiState;
+    check-cast p1, Ljava/lang/Boolean;
 
-    invoke-static {p0}, Ljp/co/sony/mc/camera/view/uistate/LensUiState;->$r8$lambda$Akce0zdFG9N2lwcKUapXtt5vp2E(Ljp/co/sony/mc/camera/view/uistate/LensUiState;)V
+    invoke-virtual {p1}, Ljava/lang/Boolean;->booleanValue()Z
 
-    return-void
+    move-result v0
+
+    check-cast p2, Ljava/lang/Boolean;
+
+    invoke-virtual {p2}, Ljava/lang/Boolean;->booleanValue()Z
+
+    move-result v1
+
+    move-object v2, p3
+
+    check-cast v2, Ljava/lang/Boolean;
+
+    move-object v3, p4
+
+    check-cast v3, Ljava/lang/Boolean;
+
+    check-cast p5, Ljava/lang/Boolean;
+
+    invoke-virtual {p5}, Ljava/lang/Boolean;->booleanValue()Z
+
+    move-result v4
+
+    move-object v5, p6
+
+    check-cast v5, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
+
+    invoke-static/range {v0 .. v5}, Ljp/co/sony/mc/camera/view/uistate/LensUiState;->$r8$lambda$uN5Lh5QrYaZD7lD346AaW31KvDA(ZZLjava/lang/Boolean;Ljava/lang/Boolean;ZLjp/co/sony/mc/camera/configuration/parameters/CapturingMode;)Z
+
+    move-result p0
+
+    invoke-static {p0}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
+
+    move-result-object p0
+
+    return-object p0
 .end method

@@ -26,6 +26,15 @@
 .end annotation
 
 .annotation runtime Lkotlin/Metadata;
+    d1 = {
+        "\u0000\n\n\u0000\n\u0002\u0010\u000b\n\u0002\u0008\u0002\u0010\u0000\u001a\u00020\u0001H\n\u00a2\u0006\u0004\u0008\u0002\u0010\u0003"
+    }
+    d2 = {
+        "<anonymous>",
+        "",
+        "invoke",
+        "()Ljava/lang/Boolean;"
+    }
     k = 0x3
     mv = {
         0x1,

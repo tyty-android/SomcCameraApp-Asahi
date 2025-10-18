@@ -124,35 +124,31 @@
         }
     .end annotation
 
-    const-string v0, "pageContent"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 220
+    .line 228
     invoke-direct {p0}, Landroidx/compose/foundation/lazy/layout/LazyLayoutIntervalContent;-><init>()V
 
-    .line 217
+    .line 225
     iput-object p1, p0, Landroidx/compose/foundation/pager/PagerLayoutIntervalContent;->pageContent:Lkotlin/jvm/functions/Function4;
 
-    .line 218
+    .line 226
     iput-object p2, p0, Landroidx/compose/foundation/pager/PagerLayoutIntervalContent;->key:Lkotlin/jvm/functions/Function1;
 
-    .line 219
+    .line 227
     iput p3, p0, Landroidx/compose/foundation/pager/PagerLayoutIntervalContent;->pageCount:I
 
-    .line 222
+    .line 230
     new-instance v0, Landroidx/compose/foundation/lazy/layout/MutableIntervalList;
 
     invoke-direct {v0}, Landroidx/compose/foundation/lazy/layout/MutableIntervalList;-><init>()V
 
-    .line 223
+    .line 231
     new-instance v1, Landroidx/compose/foundation/pager/PagerIntervalContent;
 
     invoke-direct {v1, p2, p1}, Landroidx/compose/foundation/pager/PagerIntervalContent;-><init>(Lkotlin/jvm/functions/Function1;Lkotlin/jvm/functions/Function4;)V
 
     invoke-virtual {v0, p3, v1}, Landroidx/compose/foundation/lazy/layout/MutableIntervalList;->addInterval(ILjava/lang/Object;)V
 
-    .line 222
+    .line 230
     check-cast v0, Landroidx/compose/foundation/lazy/layout/IntervalList;
 
     iput-object v0, p0, Landroidx/compose/foundation/pager/PagerLayoutIntervalContent;->intervals:Landroidx/compose/foundation/lazy/layout/IntervalList;
@@ -173,7 +169,7 @@
         }
     .end annotation
 
-    .line 221
+    .line 229
     iget-object p0, p0, Landroidx/compose/foundation/pager/PagerLayoutIntervalContent;->intervals:Landroidx/compose/foundation/lazy/layout/IntervalList;
 
     return-object p0
@@ -191,7 +187,7 @@
         }
     .end annotation
 
-    .line 218
+    .line 226
     iget-object p0, p0, Landroidx/compose/foundation/pager/PagerLayoutIntervalContent;->key:Lkotlin/jvm/functions/Function1;
 
     return-object p0
@@ -212,7 +208,7 @@
         }
     .end annotation
 
-    .line 217
+    .line 225
     iget-object p0, p0, Landroidx/compose/foundation/pager/PagerLayoutIntervalContent;->pageContent:Lkotlin/jvm/functions/Function4;
 
     return-object p0
@@ -221,7 +217,7 @@
 .method public final getPageCount()I
     .locals 0
 
-    .line 219
+    .line 227
     iget p0, p0, Landroidx/compose/foundation/pager/PagerLayoutIntervalContent;->pageCount:I
 
     return p0

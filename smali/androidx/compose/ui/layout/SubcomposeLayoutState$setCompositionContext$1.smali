@@ -71,7 +71,7 @@
 .method public bridge synthetic invoke(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
 
-    .line 432
+    .line 206
     check-cast p1, Landroidx/compose/ui/node/LayoutNode;
 
     check-cast p2, Landroidx/compose/runtime/CompositionContext;
@@ -84,17 +84,9 @@
 .end method
 
 .method public final invoke(Landroidx/compose/ui/node/LayoutNode;Landroidx/compose/runtime/CompositionContext;)V
-    .locals 1
+    .locals 0
 
-    const-string v0, "$this$null"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string p1, "it"
-
-    invoke-static {p2, p1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 432
+    .line 206
     iget-object p0, p0, Landroidx/compose/ui/layout/SubcomposeLayoutState$setCompositionContext$1;->this$0:Landroidx/compose/ui/layout/SubcomposeLayoutState;
 
     invoke-static {p0}, Landroidx/compose/ui/layout/SubcomposeLayoutState;->access$getState(Landroidx/compose/ui/layout/SubcomposeLayoutState;)Landroidx/compose/ui/layout/LayoutNodeSubcompositionsState;

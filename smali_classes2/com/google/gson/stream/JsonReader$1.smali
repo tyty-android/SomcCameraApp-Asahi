@@ -18,7 +18,7 @@
 .method constructor <init>()V
     .locals 0
 
-    .line 1685
+    .line 1797
     invoke-direct {p0}, Lcom/google/gson/internal/JsonReaderInternalAccess;-><init>()V
 
     return-void
@@ -27,32 +27,32 @@
 
 # virtual methods
 .method public promoteNameToValue(Lcom/google/gson/stream/JsonReader;)V
-    .locals 2
+    .locals 1
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
         }
     .end annotation
 
-    .line 1687
+    .line 1800
     instance-of p0, p1, Lcom/google/gson/internal/bind/JsonTreeReader;
 
     if-eqz p0, :cond_0
 
-    .line 1688
+    .line 1801
     check-cast p1, Lcom/google/gson/internal/bind/JsonTreeReader;
 
     invoke-virtual {p1}, Lcom/google/gson/internal/bind/JsonTreeReader;->promoteNameToValue()V
 
     return-void
 
-    .line 1691
+    .line 1804
     :cond_0
     iget p0, p1, Lcom/google/gson/stream/JsonReader;->peeked:I
 
     if-nez p0, :cond_1
 
-    .line 1693
+    .line 1806
     invoke-virtual {p1}, Lcom/google/gson/stream/JsonReader;->doPeek()I
 
     move-result p0
@@ -64,7 +64,7 @@
 
     const/16 p0, 0x9
 
-    .line 1696
+    .line 1809
     iput p0, p1, Lcom/google/gson/stream/JsonReader;->peeked:I
 
     goto :goto_0
@@ -76,7 +76,7 @@
 
     const/16 p0, 0x8
 
-    .line 1698
+    .line 1811
     iput p0, p1, Lcom/google/gson/stream/JsonReader;->peeked:I
 
     goto :goto_0
@@ -88,44 +88,19 @@
 
     const/16 p0, 0xa
 
-    .line 1700
+    .line 1813
     iput p0, p1, Lcom/google/gson/stream/JsonReader;->peeked:I
 
     :goto_0
     return-void
 
-    .line 1702
+    .line 1815
     :cond_4
-    new-instance p0, Ljava/lang/IllegalStateException;
+    const-string p0, "a name"
 
-    new-instance v0, Ljava/lang/StringBuilder;
+    invoke-static {p1, p0}, Lcom/google/gson/stream/JsonReader;->access$000(Lcom/google/gson/stream/JsonReader;Ljava/lang/String;)Ljava/lang/IllegalStateException;
 
-    const-string v1, "Expected a name but was "
-
-    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
-
-    .line 1703
-    invoke-virtual {p1}, Lcom/google/gson/stream/JsonReader;->peek()Lcom/google/gson/stream/JsonToken;
-
-    move-result-object v1
-
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
-
-    move-result-object v0
-
-    invoke-virtual {p1}, Lcom/google/gson/stream/JsonReader;->locationString()Ljava/lang/String;
-
-    move-result-object p1
-
-    invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object p1
-
-    invoke-virtual {p1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object p1
-
-    invoke-direct {p0, p1}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
+    move-result-object p0
 
     throw p0
 .end method

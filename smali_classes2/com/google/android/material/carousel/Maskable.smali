@@ -8,9 +8,16 @@
 .end method
 
 .method public abstract getMaskXPercentage()F
+    .annotation runtime Ljava/lang/Deprecated;
+    .end annotation
+.end method
+
+.method public abstract setMaskRectF(Landroid/graphics/RectF;)V
 .end method
 
 .method public abstract setMaskXPercentage(F)V
+    .annotation runtime Ljava/lang/Deprecated;
+    .end annotation
 .end method
 
 .method public abstract setOnMaskChangedListener(Lcom/google/android/material/carousel/OnMaskChangedListener;)V

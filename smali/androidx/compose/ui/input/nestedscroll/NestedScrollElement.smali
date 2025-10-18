@@ -61,19 +61,15 @@
 
 # direct methods
 .method public constructor <init>(Landroidx/compose/ui/input/nestedscroll/NestedScrollConnection;Landroidx/compose/ui/input/nestedscroll/NestedScrollDispatcher;)V
-    .locals 1
+    .locals 0
 
-    const-string v0, "connection"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 342
+    .line 347
     invoke-direct {p0}, Landroidx/compose/ui/node/ModifierNodeElement;-><init>()V
 
-    .line 340
+    .line 345
     iput-object p1, p0, Landroidx/compose/ui/input/nestedscroll/NestedScrollElement;->connection:Landroidx/compose/ui/input/nestedscroll/NestedScrollConnection;
 
-    .line 341
+    .line 346
     iput-object p2, p0, Landroidx/compose/ui/input/nestedscroll/NestedScrollElement;->dispatcher:Landroidx/compose/ui/input/nestedscroll/NestedScrollDispatcher;
 
     return-void
@@ -84,7 +80,7 @@
 .method public bridge synthetic create()Landroidx/compose/ui/Modifier$Node;
     .locals 0
 
-    .line 339
+    .line 344
     invoke-virtual {p0}, Landroidx/compose/ui/input/nestedscroll/NestedScrollElement;->create()Landroidx/compose/ui/input/nestedscroll/NestedScrollNode;
 
     move-result-object p0
@@ -97,7 +93,7 @@
 .method public create()Landroidx/compose/ui/input/nestedscroll/NestedScrollNode;
     .locals 2
 
-    .line 344
+    .line 349
     new-instance v0, Landroidx/compose/ui/input/nestedscroll/NestedScrollNode;
 
     iget-object v1, p0, Landroidx/compose/ui/input/nestedscroll/NestedScrollElement;->connection:Landroidx/compose/ui/input/nestedscroll/NestedScrollConnection;
@@ -112,7 +108,7 @@
 .method public equals(Ljava/lang/Object;)Z
     .locals 3
 
-    .line 358
+    .line 363
     instance-of v0, p1, Landroidx/compose/ui/input/nestedscroll/NestedScrollElement;
 
     const/4 v1, 0x0
@@ -121,7 +117,7 @@
 
     return v1
 
-    .line 359
+    .line 364
     :cond_0
     check-cast p1, Landroidx/compose/ui/input/nestedscroll/NestedScrollElement;
 
@@ -137,7 +133,7 @@
 
     return v1
 
-    .line 360
+    .line 365
     :cond_1
     iget-object p1, p1, Landroidx/compose/ui/input/nestedscroll/NestedScrollElement;->dispatcher:Landroidx/compose/ui/input/nestedscroll/NestedScrollDispatcher;
 
@@ -160,7 +156,7 @@
 .method public final getConnection()Landroidx/compose/ui/input/nestedscroll/NestedScrollConnection;
     .locals 0
 
-    .line 340
+    .line 345
     iget-object p0, p0, Landroidx/compose/ui/input/nestedscroll/NestedScrollElement;->connection:Landroidx/compose/ui/input/nestedscroll/NestedScrollConnection;
 
     return-object p0
@@ -169,7 +165,7 @@
 .method public final getDispatcher()Landroidx/compose/ui/input/nestedscroll/NestedScrollDispatcher;
     .locals 0
 
-    .line 341
+    .line 346
     iget-object p0, p0, Landroidx/compose/ui/input/nestedscroll/NestedScrollElement;->dispatcher:Landroidx/compose/ui/input/nestedscroll/NestedScrollDispatcher;
 
     return-object p0
@@ -178,7 +174,7 @@
 .method public hashCode()I
     .locals 1
 
-    .line 352
+    .line 357
     iget-object v0, p0, Landroidx/compose/ui/input/nestedscroll/NestedScrollElement;->connection:Landroidx/compose/ui/input/nestedscroll/NestedScrollConnection;
 
     invoke-virtual {v0}, Ljava/lang/Object;->hashCode()I
@@ -187,7 +183,7 @@
 
     mul-int/lit8 v0, v0, 0x1f
 
-    .line 353
+    .line 358
     iget-object p0, p0, Landroidx/compose/ui/input/nestedscroll/NestedScrollElement;->dispatcher:Landroidx/compose/ui/input/nestedscroll/NestedScrollDispatcher;
 
     if-eqz p0, :cond_0
@@ -210,16 +206,12 @@
 .method public inspectableProperties(Landroidx/compose/ui/platform/InspectorInfo;)V
     .locals 3
 
-    const-string v0, "<this>"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 365
+    .line 370
     const-string v0, "nestedScroll"
 
     invoke-virtual {p1, v0}, Landroidx/compose/ui/platform/InspectorInfo;->setName(Ljava/lang/String;)V
 
-    .line 366
+    .line 371
     invoke-virtual {p1}, Landroidx/compose/ui/platform/InspectorInfo;->getProperties()Landroidx/compose/ui/platform/ValueElementSequence;
 
     move-result-object v0
@@ -230,7 +222,7 @@
 
     invoke-virtual {v0, v1, v2}, Landroidx/compose/ui/platform/ValueElementSequence;->set(Ljava/lang/String;Ljava/lang/Object;)V
 
-    .line 367
+    .line 372
     invoke-virtual {p1}, Landroidx/compose/ui/platform/InspectorInfo;->getProperties()Landroidx/compose/ui/platform/ValueElementSequence;
 
     move-result-object p1
@@ -247,7 +239,7 @@
 .method public bridge synthetic update(Landroidx/compose/ui/Modifier$Node;)V
     .locals 0
 
-    .line 339
+    .line 344
     check-cast p1, Landroidx/compose/ui/input/nestedscroll/NestedScrollNode;
 
     invoke-virtual {p0, p1}, Landroidx/compose/ui/input/nestedscroll/NestedScrollElement;->update(Landroidx/compose/ui/input/nestedscroll/NestedScrollNode;)V
@@ -258,11 +250,7 @@
 .method public update(Landroidx/compose/ui/input/nestedscroll/NestedScrollNode;)V
     .locals 1
 
-    const-string v0, "node"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 348
+    .line 353
     iget-object v0, p0, Landroidx/compose/ui/input/nestedscroll/NestedScrollElement;->connection:Landroidx/compose/ui/input/nestedscroll/NestedScrollConnection;
 
     iget-object p0, p0, Landroidx/compose/ui/input/nestedscroll/NestedScrollElement;->dispatcher:Landroidx/compose/ui/input/nestedscroll/NestedScrollDispatcher;

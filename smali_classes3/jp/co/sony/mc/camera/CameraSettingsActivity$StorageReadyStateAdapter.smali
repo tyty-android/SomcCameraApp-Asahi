@@ -25,7 +25,7 @@
 .method private constructor <init>(Ljp/co/sony/mc/camera/CameraSettingsActivity;)V
     .locals 0
 
-    .line 1500
+    .line 1503
     iput-object p1, p0, Ljp/co/sony/mc/camera/CameraSettingsActivity$StorageReadyStateAdapter;->this$0:Ljp/co/sony/mc/camera/CameraSettingsActivity;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -46,12 +46,12 @@
 .method public onStorageReadyStateChanged(Ljp/co/sony/mc/camera/storage/Storage$StorageType;Ljp/co/sony/mc/camera/storage/Storage$StorageReadyState;)V
     .locals 1
 
-    .line 1504
+    .line 1507
     sget-object v0, Ljp/co/sony/mc/camera/storage/Storage$StorageReadyState;->COMPLETED:Ljp/co/sony/mc/camera/storage/Storage$StorageReadyState;
 
     if-ne p2, v0, :cond_0
 
-    .line 1505
+    .line 1508
     iget-object p2, p0, Ljp/co/sony/mc/camera/CameraSettingsActivity$StorageReadyStateAdapter;->this$0:Ljp/co/sony/mc/camera/CameraSettingsActivity;
 
     invoke-static {p2}, Ljp/co/sony/mc/camera/CameraSettingsActivity;->-$$Nest$fgetmMainHandler(Ljp/co/sony/mc/camera/CameraSettingsActivity;)Landroid/os/Handler;

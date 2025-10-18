@@ -80,7 +80,7 @@
 .method public final invoke(II)Ljava/lang/Integer;
     .locals 0
 
-    .line 107
+    .line 109
     invoke-static {p1, p2}, Ljava/lang/Math;->max(II)I
 
     move-result p0
@@ -95,7 +95,7 @@
 .method public bridge synthetic invoke(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
 
-    .line 107
+    .line 109
     check-cast p1, Ljava/lang/Number;
 
     invoke-virtual {p1}, Ljava/lang/Number;->intValue()I

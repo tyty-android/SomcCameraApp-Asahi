@@ -64,16 +64,24 @@
 
 # direct methods
 .method static constructor <clinit>()V
-    .locals 2
+    .locals 3
+
+    const/4 v0, 0x2
 
     .line 358
-    const-string v0, "_display_name"
+    new-array v0, v0, [Ljava/lang/String;
 
-    const-string v1, "_size"
+    const/4 v1, 0x0
 
-    filled-new-array {v0, v1}, [Ljava/lang/String;
+    const-string v2, "_display_name"
 
-    move-result-object v0
+    aput-object v2, v0, v1
+
+    const/4 v1, 0x1
+
+    const-string v2, "_size"
+
+    aput-object v2, v0, v1
 
     sput-object v0, Landroidx/core/content/FileProvider;->COLUMNS:[Ljava/lang/String;
 
@@ -557,7 +565,7 @@
 .end method
 
 .method private static parsePathStrategy(Landroid/content/Context;Ljava/lang/String;I)Landroidx/core/content/FileProvider$PathStrategy;
-    .locals 6
+    .locals 7
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;,
@@ -598,9 +606,9 @@
 
     if-eq p2, v1, :cond_8
 
-    const/4 v1, 0x2
+    const/4 v2, 0x2
 
-    if-ne p2, v1, :cond_0
+    if-ne p2, v2, :cond_0
 
     .line 743
     invoke-interface {p1}, Landroid/content/res/XmlResourceParser;->getName()Ljava/lang/String;
@@ -608,122 +616,122 @@
     move-result-object p2
 
     .line 745
-    const-string v1, "name"
+    const-string v2, "name"
 
-    const/4 v2, 0x0
+    const/4 v3, 0x0
 
-    invoke-interface {p1, v2, v1}, Landroid/content/res/XmlResourceParser;->getAttributeValue(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    invoke-interface {p1, v3, v2}, Landroid/content/res/XmlResourceParser;->getAttributeValue(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
-    move-result-object v1
+    move-result-object v2
 
     .line 746
-    const-string v3, "path"
+    const-string v4, "path"
 
-    invoke-interface {p1, v2, v3}, Landroid/content/res/XmlResourceParser;->getAttributeValue(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    invoke-interface {p1, v3, v4}, Landroid/content/res/XmlResourceParser;->getAttributeValue(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
-    move-result-object v3
+    move-result-object v4
 
     .line 749
-    const-string v4, "root-path"
+    const-string v5, "root-path"
 
-    invoke-virtual {v4, p2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+    invoke-virtual {v5, p2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
-    move-result v4
+    move-result v5
 
-    if-eqz v4, :cond_1
+    const/4 v6, 0x0
+
+    if-eqz v5, :cond_1
 
     .line 750
-    sget-object v2, Landroidx/core/content/FileProvider;->DEVICE_ROOT:Ljava/io/File;
+    sget-object v3, Landroidx/core/content/FileProvider;->DEVICE_ROOT:Ljava/io/File;
 
     goto :goto_1
 
     .line 751
     :cond_1
-    const-string v4, "files-path"
+    const-string v5, "files-path"
 
-    invoke-virtual {v4, p2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+    invoke-virtual {v5, p2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
-    move-result v4
+    move-result v5
 
-    if-eqz v4, :cond_2
+    if-eqz v5, :cond_2
 
     .line 752
     invoke-virtual {p0}, Landroid/content/Context;->getFilesDir()Ljava/io/File;
 
-    move-result-object v2
+    move-result-object v3
 
     goto :goto_1
 
     .line 753
     :cond_2
-    const-string v4, "cache-path"
+    const-string v5, "cache-path"
 
-    invoke-virtual {v4, p2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+    invoke-virtual {v5, p2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
-    move-result v4
+    move-result v5
 
-    if-eqz v4, :cond_3
+    if-eqz v5, :cond_3
 
     .line 754
     invoke-virtual {p0}, Landroid/content/Context;->getCacheDir()Ljava/io/File;
 
-    move-result-object v2
+    move-result-object v3
 
     goto :goto_1
 
     .line 755
     :cond_3
-    const-string v4, "external-path"
+    const-string v5, "external-path"
 
-    invoke-virtual {v4, p2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+    invoke-virtual {v5, p2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
-    move-result v4
+    move-result v5
 
-    if-eqz v4, :cond_4
+    if-eqz v5, :cond_4
 
     .line 756
     invoke-static {}, Landroid/os/Environment;->getExternalStorageDirectory()Ljava/io/File;
 
-    move-result-object v2
+    move-result-object v3
 
     goto :goto_1
 
     .line 757
     :cond_4
-    const-string v4, "external-files-path"
+    const-string v5, "external-files-path"
 
-    invoke-virtual {v4, p2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+    invoke-virtual {v5, p2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
-    move-result v4
+    move-result v5
 
-    const/4 v5, 0x0
-
-    if-eqz v4, :cond_5
+    if-eqz v5, :cond_5
 
     .line 758
-    invoke-static {p0, v2}, Landroidx/core/content/ContextCompat;->getExternalFilesDirs(Landroid/content/Context;Ljava/lang/String;)[Ljava/io/File;
+    invoke-static {p0, v3}, Landroidx/core/content/ContextCompat;->getExternalFilesDirs(Landroid/content/Context;Ljava/lang/String;)[Ljava/io/File;
 
     move-result-object p2
 
     .line 759
-    array-length v4, p2
+    array-length v5, p2
 
-    if-lez v4, :cond_7
+    if-lez v5, :cond_7
 
     .line 760
-    aget-object v2, p2, v5
+    aget-object v3, p2, v6
 
     goto :goto_1
 
     .line 762
     :cond_5
-    const-string v4, "external-cache-path"
+    const-string v5, "external-cache-path"
 
-    invoke-virtual {v4, p2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+    invoke-virtual {v5, p2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
-    move-result v4
+    move-result v5
 
-    if-eqz v4, :cond_6
+    if-eqz v5, :cond_6
 
     .line 763
     invoke-static {p0}, Landroidx/core/content/ContextCompat;->getExternalCacheDirs(Landroid/content/Context;)[Ljava/io/File;
@@ -731,21 +739,21 @@
     move-result-object p2
 
     .line 764
-    array-length v4, p2
+    array-length v5, p2
 
-    if-lez v4, :cond_7
+    if-lez v5, :cond_7
 
     .line 765
-    aget-object v2, p2, v5
+    aget-object v3, p2, v6
 
     goto :goto_1
 
     .line 767
     :cond_6
-    const-string v4, "external-media-path"
+    const-string v5, "external-media-path"
 
     .line 768
-    invoke-virtual {v4, p2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+    invoke-virtual {v5, p2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result p2
 
@@ -757,27 +765,27 @@
     move-result-object p2
 
     .line 770
-    array-length v4, p2
+    array-length v5, p2
 
-    if-lez v4, :cond_7
+    if-lez v5, :cond_7
 
     .line 771
-    aget-object v2, p2, v5
+    aget-object v3, p2, v6
 
     :cond_7
     :goto_1
-    if-eqz v2, :cond_0
+    if-eqz v3, :cond_0
 
     .line 776
-    filled-new-array {v3}, [Ljava/lang/String;
+    new-array p2, v1, [Ljava/lang/String;
+
+    aput-object v4, p2, v6
+
+    invoke-static {v3, p2}, Landroidx/core/content/FileProvider;->buildPath(Ljava/io/File;[Ljava/lang/String;)Ljava/io/File;
 
     move-result-object p2
 
-    invoke-static {v2, p2}, Landroidx/core/content/FileProvider;->buildPath(Ljava/io/File;[Ljava/lang/String;)Ljava/io/File;
-
-    move-result-object p2
-
-    invoke-virtual {v0, v1, p2}, Landroidx/core/content/FileProvider$SimplePathStrategy;->addRoot(Ljava/lang/String;Ljava/io/File;)V
+    invoke-virtual {v0, v2, p2}, Landroidx/core/content/FileProvider$SimplePathStrategy;->addRoot(Ljava/lang/String;Ljava/io/File;)V
 
     goto/16 :goto_0
 

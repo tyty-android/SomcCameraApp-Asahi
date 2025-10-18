@@ -21,7 +21,7 @@
 .method constructor <init>()V
     .locals 0
 
-    .line 1712
+    .line 1718
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -42,8 +42,8 @@
         }
     .end annotation
 
-    .line 1716
-    invoke-static {}, Ljp/co/sony/mc/camera/configuration/parameters/LastBackVideoFps;->getDefaultValue()Ljp/co/sony/mc/camera/configuration/parameters/LastBackVideoFps;
+    .line 1722
+    invoke-static {}, Ljp/co/sony/mc/camera/configuration/parameters/EnduranceMode;->getDefaultValue()Ljp/co/sony/mc/camera/configuration/parameters/EnduranceMode;
 
     move-result-object p0
 

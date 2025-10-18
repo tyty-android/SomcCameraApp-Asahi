@@ -1,6 +1,6 @@
 .class public final Landroidx/compose/runtime/ParcelableSnapshotMutableState$Companion;
 .super Ljava/lang/Object;
-.source "ParcelableSnapshotMutableState.kt"
+.source "ParcelableSnapshotMutableState.android.kt"
 
 
 # annotations

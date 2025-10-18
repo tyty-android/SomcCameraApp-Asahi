@@ -1,11 +1,11 @@
 .class public final Landroidx/compose/foundation/SystemGestureExclusionKt;
 .super Ljava/lang/Object;
-.source "SystemGestureExclusion.kt"
+.source "SystemGestureExclusion.android.kt"
 
 
 # annotations
 .annotation system Ldalvik/annotation/SourceDebugExtension;
-    value = "SMAP\nSystemGestureExclusion.kt\nKotlin\n*S Kotlin\n*F\n+ 1 SystemGestureExclusion.kt\nandroidx/compose/foundation/SystemGestureExclusionKt\n*L\n1#1,176:1\n69#1:177\n69#1:178\n*S KotlinDebug\n*F\n+ 1 SystemGestureExclusion.kt\nandroidx/compose/foundation/SystemGestureExclusionKt\n*L\n45#1:177\n62#1:178\n*E\n"
+    value = "SMAP\nSystemGestureExclusion.android.kt\nKotlin\n*S Kotlin\n*F\n+ 1 SystemGestureExclusion.android.kt\nandroidx/compose/foundation/SystemGestureExclusionKt\n*L\n1#1,111:1\n66#1:112\n66#1:113\n*S KotlinDebug\n*F\n+ 1 SystemGestureExclusion.android.kt\nandroidx/compose/foundation/SystemGestureExclusionKt\n*L\n42#1:112\n59#1:113\n*E\n"
 .end annotation
 
 .annotation runtime Lkotlin/Metadata;
@@ -47,7 +47,7 @@
         }
     .end annotation
 
-    .line 69
+    .line 66
     new-instance v0, Landroidx/compose/foundation/ExcludeFromSystemGestureElement;
 
     invoke-direct {v0, p0}, Landroidx/compose/foundation/ExcludeFromSystemGestureElement;-><init>(Lkotlin/jvm/functions/Function1;)V
@@ -60,11 +60,7 @@
 .method public static final systemGestureExclusion(Landroidx/compose/ui/Modifier;)Landroidx/compose/ui/Modifier;
     .locals 2
 
-    const-string v0, "<this>"
-
-    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 177
+    .line 112
     new-instance v0, Landroidx/compose/foundation/ExcludeFromSystemGestureElement;
 
     const/4 v1, 0x0
@@ -73,7 +69,7 @@
 
     check-cast v0, Landroidx/compose/ui/Modifier;
 
-    .line 45
+    .line 42
     invoke-interface {p0, v0}, Landroidx/compose/ui/Modifier;->then(Landroidx/compose/ui/Modifier;)Landroidx/compose/ui/Modifier;
 
     move-result-object p0
@@ -96,22 +92,14 @@
         }
     .end annotation
 
-    const-string v0, "<this>"
-
-    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string v0, "exclusion"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 178
+    .line 113
     new-instance v0, Landroidx/compose/foundation/ExcludeFromSystemGestureElement;
 
     invoke-direct {v0, p1}, Landroidx/compose/foundation/ExcludeFromSystemGestureElement;-><init>(Lkotlin/jvm/functions/Function1;)V
 
     check-cast v0, Landroidx/compose/ui/Modifier;
 
-    .line 62
+    .line 59
     invoke-interface {p0, v0}, Landroidx/compose/ui/Modifier;->then(Landroidx/compose/ui/Modifier;)Landroidx/compose/ui/Modifier;
 
     move-result-object p0

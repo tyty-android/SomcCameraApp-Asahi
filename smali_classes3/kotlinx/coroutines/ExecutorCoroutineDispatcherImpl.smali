@@ -54,7 +54,7 @@
     k = 0x1
     mv = {
         0x1,
-        0x6,
+        0x8,
         0x0
     }
     xi = 0x30
@@ -69,12 +69,12 @@
 .method public constructor <init>(Ljava/util/concurrent/Executor;)V
     .locals 0
 
-    .line 115
+    .line 122
     invoke-direct {p0}, Lkotlinx/coroutines/ExecutorCoroutineDispatcher;-><init>()V
 
     iput-object p1, p0, Lkotlinx/coroutines/ExecutorCoroutineDispatcherImpl;->executor:Ljava/util/concurrent/Executor;
 
-    .line 123
+    .line 130
     invoke-virtual {p0}, Lkotlinx/coroutines/ExecutorCoroutineDispatcherImpl;->getExecutor()Ljava/util/concurrent/Executor;
 
     move-result-object p0
@@ -87,7 +87,7 @@
 .method private final cancelJobOnRejection(Lkotlin/coroutines/CoroutineContext;Ljava/util/concurrent/RejectedExecutionException;)V
     .locals 0
 
-    .line 169
+    .line 176
     const-string p0, "The task was rejected"
 
     check-cast p2, Ljava/lang/Throwable;
@@ -115,7 +115,7 @@
         }
     .end annotation
 
-    .line 161
+    .line 168
     :try_start_0
     sget-object v0, Ljava/util/concurrent/TimeUnit;->MILLISECONDS:Ljava/util/concurrent/TimeUnit;
 
@@ -130,15 +130,10 @@
     :catch_0
     move-exception p1
 
-    .line 163
+    .line 170
     invoke-direct {p0, p3, p1}, Lkotlinx/coroutines/ExecutorCoroutineDispatcherImpl;->cancelJobOnRejection(Lkotlin/coroutines/CoroutineContext;Ljava/util/concurrent/RejectedExecutionException;)V
 
     const/4 p0, 0x0
-
-    .line 164
-    move-object p1, p0
-
-    check-cast p1, Ljava/util/concurrent/ScheduledFuture;
 
     :goto_0
     return-object p0
@@ -149,7 +144,7 @@
 .method public close()V
     .locals 1
 
-    .line 173
+    .line 180
     invoke-virtual {p0}, Lkotlinx/coroutines/ExecutorCoroutineDispatcherImpl;->getExecutor()Ljava/util/concurrent/Executor;
 
     move-result-object p0
@@ -192,7 +187,7 @@
         message = "Deprecated without replacement as an internal method never intended for public use"
     .end annotation
 
-    .line 115
+    .line 122
     invoke-static {p0, p1, p2, p3}, Lkotlinx/coroutines/Delay$DefaultImpls;->delay(Lkotlinx/coroutines/Delay;JLkotlin/coroutines/Continuation;)Ljava/lang/Object;
 
     move-result-object p0
@@ -203,7 +198,7 @@
 .method public dispatch(Lkotlin/coroutines/CoroutineContext;Ljava/lang/Runnable;)V
     .locals 2
 
-    .line 128
+    .line 135
     :try_start_0
     invoke-virtual {p0}, Lkotlinx/coroutines/ExecutorCoroutineDispatcherImpl;->getExecutor()Ljava/util/concurrent/Executor;
 
@@ -234,7 +229,7 @@
     :catch_0
     move-exception v0
 
-    .line 130
+    .line 137
     invoke-static {}, Lkotlinx/coroutines/AbstractTimeSourceKt;->getTimeSource()Lkotlinx/coroutines/AbstractTimeSource;
 
     move-result-object v1
@@ -243,11 +238,11 @@
 
     invoke-virtual {v1}, Lkotlinx/coroutines/AbstractTimeSource;->unTrackTask()V
 
-    .line 131
+    .line 138
     :cond_2
     invoke-direct {p0, p1, v0}, Lkotlinx/coroutines/ExecutorCoroutineDispatcherImpl;->cancelJobOnRejection(Lkotlin/coroutines/CoroutineContext;Ljava/util/concurrent/RejectedExecutionException;)V
 
-    .line 132
+    .line 139
     invoke-static {}, Lkotlinx/coroutines/Dispatchers;->getIO()Lkotlinx/coroutines/CoroutineDispatcher;
 
     move-result-object p0
@@ -261,7 +256,7 @@
 .method public equals(Ljava/lang/Object;)Z
     .locals 1
 
-    .line 177
+    .line 184
     instance-of v0, p1, Lkotlinx/coroutines/ExecutorCoroutineDispatcherImpl;
 
     if-eqz v0, :cond_0
@@ -292,7 +287,7 @@
 .method public getExecutor()Ljava/util/concurrent/Executor;
     .locals 0
 
-    .line 115
+    .line 122
     iget-object p0, p0, Lkotlinx/coroutines/ExecutorCoroutineDispatcherImpl;->executor:Ljava/util/concurrent/Executor;
 
     return-object p0
@@ -301,7 +296,7 @@
 .method public hashCode()I
     .locals 0
 
-    .line 178
+    .line 185
     invoke-virtual {p0}, Lkotlinx/coroutines/ExecutorCoroutineDispatcherImpl;->getExecutor()Ljava/util/concurrent/Executor;
 
     move-result-object p0
@@ -316,7 +311,7 @@
 .method public invokeOnTimeout(JLjava/lang/Runnable;Lkotlin/coroutines/CoroutineContext;)Lkotlinx/coroutines/DisposableHandle;
     .locals 9
 
-    .line 152
+    .line 159
     invoke-virtual {p0}, Lkotlinx/coroutines/ExecutorCoroutineDispatcherImpl;->getExecutor()Ljava/util/concurrent/Executor;
 
     move-result-object v0
@@ -354,7 +349,7 @@
     :cond_1
     if-eqz v2, :cond_2
 
-    .line 154
+    .line 161
     new-instance p0, Lkotlinx/coroutines/DisposableFutureHandle;
 
     check-cast v2, Ljava/util/concurrent/Future;
@@ -365,7 +360,7 @@
 
     goto :goto_1
 
-    .line 155
+    .line 162
     :cond_2
     sget-object p0, Lkotlinx/coroutines/DefaultExecutor;->INSTANCE:Lkotlinx/coroutines/DefaultExecutor;
 
@@ -389,7 +384,7 @@
         }
     .end annotation
 
-    .line 137
+    .line 144
     invoke-virtual {p0}, Lkotlinx/coroutines/ExecutorCoroutineDispatcherImpl;->getExecutor()Ljava/util/concurrent/Executor;
 
     move-result-object v0
@@ -412,7 +407,7 @@
     :goto_0
     if-eqz v4, :cond_1
 
-    .line 138
+    .line 145
     new-instance v0, Lkotlinx/coroutines/ResumeUndispatchedRunnable;
 
     move-object v1, p0
@@ -425,7 +420,7 @@
 
     check-cast v5, Ljava/lang/Runnable;
 
-    .line 139
+    .line 146
     invoke-interface {p3}, Lkotlinx/coroutines/CancellableContinuation;->getContext()Lkotlin/coroutines/CoroutineContext;
 
     move-result-object v6
@@ -434,7 +429,7 @@
 
     move-wide v7, p1
 
-    .line 137
+    .line 144
     invoke-direct/range {v3 .. v8}, Lkotlinx/coroutines/ExecutorCoroutineDispatcherImpl;->scheduleBlock(Ljava/util/concurrent/ScheduledExecutorService;Ljava/lang/Runnable;Lkotlin/coroutines/CoroutineContext;J)Ljava/util/concurrent/ScheduledFuture;
 
     move-result-object v2
@@ -442,14 +437,14 @@
     :cond_1
     if-eqz v2, :cond_2
 
-    .line 144
+    .line 151
     check-cast v2, Ljava/util/concurrent/Future;
 
     invoke-static {p3, v2}, Lkotlinx/coroutines/JobKt;->cancelFutureOnCancellation(Lkotlinx/coroutines/CancellableContinuation;Ljava/util/concurrent/Future;)V
 
     return-void
 
-    .line 148
+    .line 155
     :cond_2
     sget-object p0, Lkotlinx/coroutines/DefaultExecutor;->INSTANCE:Lkotlinx/coroutines/DefaultExecutor;
 
@@ -461,7 +456,7 @@
 .method public toString()Ljava/lang/String;
     .locals 0
 
-    .line 176
+    .line 183
     invoke-virtual {p0}, Lkotlinx/coroutines/ExecutorCoroutineDispatcherImpl;->getExecutor()Ljava/util/concurrent/Executor;
 
     move-result-object p0

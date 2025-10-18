@@ -6,7 +6,7 @@
 # annotations
 .annotation runtime Lkotlin/Metadata;
     d1 = {
-        "\u0000L\n\u0000\n\u0002\u0010\u000b\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0010\u0008\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0003\n\u0002\u0018\u0002\n\u0002\u0008\u0003\n\u0002\u0018\u0002\n\u0002\u0008\u0003\n\u0002\u0018\u0002\n\u0002\u0008\u0003\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0010\r\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0002\u001a\u0018\u0010\u0000\u001a\u00020\u00012\u0006\u0010\u0002\u001a\u00020\u00032\u0006\u0010\u0004\u001a\u00020\u0001H\u0002\u001a\u001d\u0010\u0005\u001a\u00020\u00062\u0008\u0010\u0007\u001a\u0004\u0018\u00010\u0008H\u0002\u00f8\u0001\u0000\u00f8\u0001\u0001\u00a2\u0006\u0002\u0008\t\u001a\u001d\u0010\n\u001a\u00020\u00062\u0008\u0010\u000b\u001a\u0004\u0018\u00010\u000cH\u0002\u00f8\u0001\u0000\u00f8\u0001\u0001\u00a2\u0006\u0002\u0008\r\u001a\u001d\u0010\u000e\u001a\u00020\u00062\u0008\u0010\u000f\u001a\u0004\u0018\u00010\u0010H\u0002\u00f8\u0001\u0000\u00f8\u0001\u0001\u00a2\u0006\u0002\u0008\u0011\u001a\u001d\u0010\u0012\u001a\u00020\u00062\u0008\u0010\u0013\u001a\u0004\u0018\u00010\u0014H\u0002\u00f8\u0001\u0000\u00f8\u0001\u0001\u00a2\u0006\u0002\u0008\u0015\u001a\u001d\u0010\u0016\u001a\u00020\u00062\u0008\u0010\u0017\u001a\u0004\u0018\u00010\u0018H\u0002\u00f8\u0001\u0000\u00f8\u0001\u0001\u00a2\u0006\u0002\u0008\u0019\u001a\u000c\u0010\u001a\u001a\u00020\u001b*\u00020\u001bH\u0002\u001a\u0014\u0010\u001c\u001a\u00020\u0006*\u00020\u001d2\u0006\u0010\u001e\u001a\u00020\u0006H\u0002\u0082\u0002\u000b\n\u0005\u0008\u00a1\u001e0\u0001\n\u0002\u0008\u0019\u00a8\u0006\u001f"
+        "\u0000L\n\u0000\n\u0002\u0010\u000b\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0010\u0008\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0004\n\u0002\u0018\u0002\n\u0002\u0008\u0003\n\u0002\u0018\u0002\n\u0002\u0008\u0003\n\u0002\u0018\u0002\n\u0002\u0008\u0003\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0010\r\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0002\u001a\u0018\u0010\u0000\u001a\u00020\u00012\u0006\u0010\u0002\u001a\u00020\u00032\u0006\u0010\u0004\u001a\u00020\u0001H\u0002\u001a\u001a\u0010\u0005\u001a\u00020\u00062\u0006\u0010\u0007\u001a\u00020\u0008H\u0002\u00f8\u0001\u0000\u00a2\u0006\u0004\u0008\t\u0010\n\u001a\u001a\u0010\u000b\u001a\u00020\u00062\u0006\u0010\u000c\u001a\u00020\rH\u0002\u00f8\u0001\u0000\u00a2\u0006\u0004\u0008\u000e\u0010\n\u001a\u001a\u0010\u000f\u001a\u00020\u00062\u0006\u0010\u0010\u001a\u00020\u0011H\u0002\u00f8\u0001\u0000\u00a2\u0006\u0004\u0008\u0012\u0010\n\u001a\u001a\u0010\u0013\u001a\u00020\u00062\u0006\u0010\u0014\u001a\u00020\u0015H\u0002\u00f8\u0001\u0000\u00a2\u0006\u0004\u0008\u0016\u0010\n\u001a\u001a\u0010\u0017\u001a\u00020\u00062\u0006\u0010\u0018\u001a\u00020\u0019H\u0002\u00f8\u0001\u0000\u00a2\u0006\u0004\u0008\u001a\u0010\n\u001a\u000c\u0010\u001b\u001a\u00020\u001c*\u00020\u001cH\u0002\u001a\u0014\u0010\u001d\u001a\u00020\u0006*\u00020\u001e2\u0006\u0010\u001f\u001a\u00020\u0006H\u0002\u0082\u0002\u0007\n\u0005\u0008\u00a1\u001e0\u0001\u00a8\u0006 "
     }
     d2 = {
         "shouldAttachIndentationFixSpan",
@@ -18,23 +18,24 @@
         "",
         "align",
         "Landroidx/compose/ui/text/style/TextAlign;",
-        "toLayoutAlign-AMY3VfE",
+        "toLayoutAlign-aXe7zB0",
+        "(I)I",
         "toLayoutBreakStrategy",
         "breakStrategy",
         "Landroidx/compose/ui/text/style/LineBreak$Strategy;",
-        "toLayoutBreakStrategy-u6PBz3U",
+        "toLayoutBreakStrategy-xImikfE",
         "toLayoutHyphenationFrequency",
         "hyphens",
         "Landroidx/compose/ui/text/style/Hyphens;",
-        "toLayoutHyphenationFrequency-0_XeFpE",
+        "toLayoutHyphenationFrequency--3fSNIE",
         "toLayoutLineBreakStyle",
         "lineBreakStrictness",
         "Landroidx/compose/ui/text/style/LineBreak$Strictness;",
-        "toLayoutLineBreakStyle-4a2g8L8",
+        "toLayoutLineBreakStyle-hpcqdu8",
         "toLayoutLineBreakWordStyle",
         "lineBreakWordStyle",
         "Landroidx/compose/ui/text/style/LineBreak$WordBreak;",
-        "toLayoutLineBreakWordStyle-gvcdTPQ",
+        "toLayoutLineBreakWordStyle-wPN0Rpw",
         "attachIndentationFixSpan",
         "",
         "numberOfLinesThatFitMaxHeight",
@@ -86,55 +87,55 @@
     return p0
 .end method
 
-.method public static final synthetic access$toLayoutAlign-AMY3VfE(Landroidx/compose/ui/text/style/TextAlign;)I
+.method public static final synthetic access$toLayoutAlign-aXe7zB0(I)I
     .locals 0
 
     .line 1
-    invoke-static {p0}, Landroidx/compose/ui/text/AndroidParagraph_androidKt;->toLayoutAlign-AMY3VfE(Landroidx/compose/ui/text/style/TextAlign;)I
+    invoke-static {p0}, Landroidx/compose/ui/text/AndroidParagraph_androidKt;->toLayoutAlign-aXe7zB0(I)I
 
     move-result p0
 
     return p0
 .end method
 
-.method public static final synthetic access$toLayoutBreakStrategy-u6PBz3U(Landroidx/compose/ui/text/style/LineBreak$Strategy;)I
+.method public static final synthetic access$toLayoutBreakStrategy-xImikfE(I)I
     .locals 0
 
     .line 1
-    invoke-static {p0}, Landroidx/compose/ui/text/AndroidParagraph_androidKt;->toLayoutBreakStrategy-u6PBz3U(Landroidx/compose/ui/text/style/LineBreak$Strategy;)I
+    invoke-static {p0}, Landroidx/compose/ui/text/AndroidParagraph_androidKt;->toLayoutBreakStrategy-xImikfE(I)I
 
     move-result p0
 
     return p0
 .end method
 
-.method public static final synthetic access$toLayoutHyphenationFrequency-0_XeFpE(Landroidx/compose/ui/text/style/Hyphens;)I
+.method public static final synthetic access$toLayoutHyphenationFrequency--3fSNIE(I)I
     .locals 0
 
     .line 1
-    invoke-static {p0}, Landroidx/compose/ui/text/AndroidParagraph_androidKt;->toLayoutHyphenationFrequency-0_XeFpE(Landroidx/compose/ui/text/style/Hyphens;)I
+    invoke-static {p0}, Landroidx/compose/ui/text/AndroidParagraph_androidKt;->toLayoutHyphenationFrequency--3fSNIE(I)I
 
     move-result p0
 
     return p0
 .end method
 
-.method public static final synthetic access$toLayoutLineBreakStyle-4a2g8L8(Landroidx/compose/ui/text/style/LineBreak$Strictness;)I
+.method public static final synthetic access$toLayoutLineBreakStyle-hpcqdu8(I)I
     .locals 0
 
     .line 1
-    invoke-static {p0}, Landroidx/compose/ui/text/AndroidParagraph_androidKt;->toLayoutLineBreakStyle-4a2g8L8(Landroidx/compose/ui/text/style/LineBreak$Strictness;)I
+    invoke-static {p0}, Landroidx/compose/ui/text/AndroidParagraph_androidKt;->toLayoutLineBreakStyle-hpcqdu8(I)I
 
     move-result p0
 
     return p0
 .end method
 
-.method public static final synthetic access$toLayoutLineBreakWordStyle-gvcdTPQ(Landroidx/compose/ui/text/style/LineBreak$WordBreak;)I
+.method public static final synthetic access$toLayoutLineBreakWordStyle-wPN0Rpw(I)I
     .locals 0
 
     .line 1
-    invoke-static {p0}, Landroidx/compose/ui/text/AndroidParagraph_androidKt;->toLayoutLineBreakWordStyle-gvcdTPQ(Landroidx/compose/ui/text/style/LineBreak$WordBreak;)I
+    invoke-static {p0}, Landroidx/compose/ui/text/AndroidParagraph_androidKt;->toLayoutLineBreakWordStyle-wPN0Rpw(I)I
 
     move-result p0
 
@@ -144,7 +145,7 @@
 .method private static final attachIndentationFixSpan(Ljava/lang/CharSequence;)Ljava/lang/CharSequence;
     .locals 3
 
-    .line 615
+    .line 618
     invoke-interface {p0}, Ljava/lang/CharSequence;->length()I
 
     move-result v0
@@ -153,7 +154,7 @@
 
     return-object p0
 
-    .line 616
+    .line 619
     :cond_0
     instance-of v0, p0, Landroid/text/Spannable;
 
@@ -172,7 +173,7 @@
 
     check-cast p0, Landroid/text/Spannable;
 
-    .line 617
+    .line 620
     :goto_0
     new-instance v0, Landroidx/compose/ui/text/android/style/IndentationFixSpan;
 
@@ -192,7 +193,7 @@
 
     invoke-static {p0, v0, v1, v2}, Landroidx/compose/ui/text/platform/extensions/SpannableExtensions_androidKt;->setSpan(Landroid/text/Spannable;Ljava/lang/Object;II)V
 
-    .line 618
+    .line 621
     check-cast p0, Ljava/lang/CharSequence;
 
     return-object p0
@@ -201,7 +202,7 @@
 .method private static final numberOfLinesThatFitMaxHeight(Landroidx/compose/ui/text/android/TextLayout;I)I
     .locals 4
 
-    .line 601
+    .line 603
     invoke-virtual {p0}, Landroidx/compose/ui/text/android/TextLayout;->getLineCount()I
 
     move-result v0
@@ -211,7 +212,7 @@
     :goto_0
     if-ge v1, v0, :cond_1
 
-    .line 602
+    .line 604
     invoke-virtual {p0, v1}, Landroidx/compose/ui/text/android/TextLayout;->getLineBottom(I)F
 
     move-result v2
@@ -229,7 +230,7 @@
 
     goto :goto_0
 
-    .line 604
+    .line 606
     :cond_1
     invoke-virtual {p0}, Landroidx/compose/ui/text/android/TextLayout;->getLineCount()I
 
@@ -243,9 +244,9 @@
 
     const/4 v0, 0x0
 
-    if-eqz p1, :cond_2
+    if-eqz p1, :cond_0
 
-    .line 609
+    .line 611
     invoke-virtual {p0}, Landroidx/compose/ui/text/TextStyle;->getLetterSpacing-XSAIIZE()J
 
     move-result-wide v1
@@ -258,7 +259,7 @@
 
     move-result p1
 
-    if-nez p1, :cond_2
+    if-nez p1, :cond_0
 
     invoke-virtual {p0}, Landroidx/compose/ui/text/TextStyle;->getLetterSpacing-XSAIIZE()J
 
@@ -274,18 +275,28 @@
 
     move-result p1
 
-    if-nez p1, :cond_2
+    if-nez p1, :cond_0
 
-    .line 610
-    invoke-virtual {p0}, Landroidx/compose/ui/text/TextStyle;->getTextAlign-buA522U()Landroidx/compose/ui/text/style/TextAlign;
+    .line 612
+    invoke-virtual {p0}, Landroidx/compose/ui/text/TextStyle;->getTextAlign-e0LSkKk()I
 
-    move-result-object p1
+    move-result p1
 
-    if-eqz p1, :cond_2
+    sget-object v1, Landroidx/compose/ui/text/style/TextAlign;->Companion:Landroidx/compose/ui/text/style/TextAlign$Companion;
 
-    invoke-virtual {p0}, Landroidx/compose/ui/text/TextStyle;->getTextAlign-buA522U()Landroidx/compose/ui/text/style/TextAlign;
+    invoke-virtual {v1}, Landroidx/compose/ui/text/style/TextAlign$Companion;->getUnspecified-e0LSkKk()I
 
-    move-result-object p1
+    move-result v1
+
+    invoke-static {p1, v1}, Landroidx/compose/ui/text/style/TextAlign;->equals-impl0(II)Z
+
+    move-result p1
+
+    if-nez p1, :cond_0
+
+    invoke-virtual {p0}, Landroidx/compose/ui/text/TextStyle;->getTextAlign-e0LSkKk()I
+
+    move-result p1
 
     sget-object v1, Landroidx/compose/ui/text/style/TextAlign;->Companion:Landroidx/compose/ui/text/style/TextAlign$Companion;
 
@@ -293,25 +304,16 @@
 
     move-result v1
 
-    if-nez p1, :cond_0
-
-    goto :goto_0
-
-    :cond_0
-    invoke-virtual {p1}, Landroidx/compose/ui/text/style/TextAlign;->unbox-impl()I
-
-    move-result p1
-
     invoke-static {p1, v1}, Landroidx/compose/ui/text/style/TextAlign;->equals-impl0(II)Z
 
     move-result p1
 
-    if-nez p1, :cond_2
+    if-nez p1, :cond_0
 
-    :goto_0
-    invoke-virtual {p0}, Landroidx/compose/ui/text/TextStyle;->getTextAlign-buA522U()Landroidx/compose/ui/text/style/TextAlign;
+    .line 613
+    invoke-virtual {p0}, Landroidx/compose/ui/text/TextStyle;->getTextAlign-e0LSkKk()I
 
-    move-result-object p0
+    move-result p0
 
     sget-object p1, Landroidx/compose/ui/text/style/TextAlign;->Companion:Landroidx/compose/ui/text/style/TextAlign$Companion;
 
@@ -319,495 +321,324 @@
 
     move-result p1
 
-    if-nez p0, :cond_1
-
-    goto :goto_1
-
-    :cond_1
-    invoke-virtual {p0}, Landroidx/compose/ui/text/style/TextAlign;->unbox-impl()I
-
-    move-result p0
-
     invoke-static {p0, p1}, Landroidx/compose/ui/text/style/TextAlign;->equals-impl0(II)Z
 
     move-result p0
 
-    if-nez p0, :cond_2
+    if-nez p0, :cond_0
 
-    :goto_1
     const/4 v0, 0x1
 
-    :cond_2
+    :cond_0
     return v0
 .end method
 
-.method private static final toLayoutAlign-AMY3VfE(Landroidx/compose/ui/text/style/TextAlign;)I
-    .locals 3
+.method private static final toLayoutAlign-aXe7zB0(I)I
+    .locals 2
 
-    .line 554
+    .line 556
     sget-object v0, Landroidx/compose/ui/text/style/TextAlign;->Companion:Landroidx/compose/ui/text/style/TextAlign$Companion;
 
     invoke-virtual {v0}, Landroidx/compose/ui/text/style/TextAlign$Companion;->getLeft-e0LSkKk()I
 
     move-result v0
 
-    if-nez p0, :cond_0
-
-    goto :goto_0
-
-    :cond_0
-    invoke-virtual {p0}, Landroidx/compose/ui/text/style/TextAlign;->unbox-impl()I
-
-    move-result v1
-
-    invoke-static {v1, v0}, Landroidx/compose/ui/text/style/TextAlign;->equals-impl0(II)Z
+    invoke-static {p0, v0}, Landroidx/compose/ui/text/style/TextAlign;->equals-impl0(II)Z
 
     move-result v0
 
-    if-eqz v0, :cond_1
+    if-eqz v0, :cond_0
 
     const/4 p0, 0x3
 
-    goto :goto_5
+    goto :goto_0
 
-    .line 555
-    :cond_1
-    :goto_0
+    .line 557
+    :cond_0
     sget-object v0, Landroidx/compose/ui/text/style/TextAlign;->Companion:Landroidx/compose/ui/text/style/TextAlign$Companion;
 
     invoke-virtual {v0}, Landroidx/compose/ui/text/style/TextAlign$Companion;->getRight-e0LSkKk()I
 
     move-result v0
 
-    if-nez p0, :cond_2
-
-    goto :goto_1
-
-    :cond_2
-    invoke-virtual {p0}, Landroidx/compose/ui/text/style/TextAlign;->unbox-impl()I
-
-    move-result v1
-
-    invoke-static {v1, v0}, Landroidx/compose/ui/text/style/TextAlign;->equals-impl0(II)Z
+    invoke-static {p0, v0}, Landroidx/compose/ui/text/style/TextAlign;->equals-impl0(II)Z
 
     move-result v0
 
-    if-eqz v0, :cond_3
+    if-eqz v0, :cond_1
 
     const/4 p0, 0x4
 
-    goto :goto_5
+    goto :goto_0
 
-    .line 556
-    :cond_3
-    :goto_1
+    .line 558
+    :cond_1
     sget-object v0, Landroidx/compose/ui/text/style/TextAlign;->Companion:Landroidx/compose/ui/text/style/TextAlign$Companion;
 
     invoke-virtual {v0}, Landroidx/compose/ui/text/style/TextAlign$Companion;->getCenter-e0LSkKk()I
 
     move-result v0
 
-    if-nez p0, :cond_4
-
-    goto :goto_2
-
-    :cond_4
-    invoke-virtual {p0}, Landroidx/compose/ui/text/style/TextAlign;->unbox-impl()I
-
-    move-result v1
-
-    invoke-static {v1, v0}, Landroidx/compose/ui/text/style/TextAlign;->equals-impl0(II)Z
+    invoke-static {p0, v0}, Landroidx/compose/ui/text/style/TextAlign;->equals-impl0(II)Z
 
     move-result v0
 
-    if-eqz v0, :cond_5
+    if-eqz v0, :cond_2
 
     const/4 p0, 0x2
 
-    goto :goto_5
+    goto :goto_0
 
-    .line 557
-    :cond_5
-    :goto_2
+    .line 559
+    :cond_2
     sget-object v0, Landroidx/compose/ui/text/style/TextAlign;->Companion:Landroidx/compose/ui/text/style/TextAlign$Companion;
 
     invoke-virtual {v0}, Landroidx/compose/ui/text/style/TextAlign$Companion;->getStart-e0LSkKk()I
 
     move-result v0
 
-    const/4 v1, 0x0
-
-    if-nez p0, :cond_6
-
-    goto :goto_4
-
-    :cond_6
-    invoke-virtual {p0}, Landroidx/compose/ui/text/style/TextAlign;->unbox-impl()I
-
-    move-result v2
-
-    invoke-static {v2, v0}, Landroidx/compose/ui/text/style/TextAlign;->equals-impl0(II)Z
+    invoke-static {p0, v0}, Landroidx/compose/ui/text/style/TextAlign;->equals-impl0(II)Z
 
     move-result v0
 
-    if-eqz v0, :cond_8
+    const/4 v1, 0x0
 
-    :cond_7
-    :goto_3
+    if-eqz v0, :cond_4
+
+    :cond_3
     move p0, v1
 
-    goto :goto_5
+    goto :goto_0
 
-    .line 558
-    :cond_8
-    :goto_4
+    .line 560
+    :cond_4
     sget-object v0, Landroidx/compose/ui/text/style/TextAlign;->Companion:Landroidx/compose/ui/text/style/TextAlign$Companion;
 
     invoke-virtual {v0}, Landroidx/compose/ui/text/style/TextAlign$Companion;->getEnd-e0LSkKk()I
 
     move-result v0
 
-    if-nez p0, :cond_9
-
-    goto :goto_3
-
-    :cond_9
-    invoke-virtual {p0}, Landroidx/compose/ui/text/style/TextAlign;->unbox-impl()I
-
-    move-result p0
-
     invoke-static {p0, v0}, Landroidx/compose/ui/text/style/TextAlign;->equals-impl0(II)Z
 
     move-result p0
 
-    if-eqz p0, :cond_7
+    if-eqz p0, :cond_3
 
     const/4 p0, 0x1
 
-    :goto_5
+    :goto_0
     return p0
 .end method
 
-.method private static final toLayoutBreakStrategy-u6PBz3U(Landroidx/compose/ui/text/style/LineBreak$Strategy;)I
-    .locals 3
+.method private static final toLayoutBreakStrategy-xImikfE(I)I
+    .locals 2
 
-    .line 575
+    .line 577
     sget-object v0, Landroidx/compose/ui/text/style/LineBreak$Strategy;->Companion:Landroidx/compose/ui/text/style/LineBreak$Strategy$Companion;
 
     invoke-virtual {v0}, Landroidx/compose/ui/text/style/LineBreak$Strategy$Companion;->getSimple-fcGXIks()I
 
     move-result v0
 
-    const/4 v1, 0x0
-
-    if-nez p0, :cond_0
-
-    goto :goto_0
-
-    :cond_0
-    invoke-virtual {p0}, Landroidx/compose/ui/text/style/LineBreak$Strategy;->unbox-impl()I
-
-    move-result v2
-
-    invoke-static {v2, v0}, Landroidx/compose/ui/text/style/LineBreak$Strategy;->equals-impl0(II)Z
+    invoke-static {p0, v0}, Landroidx/compose/ui/text/style/LineBreak$Strategy;->equals-impl0(II)Z
 
     move-result v0
 
-    if-eqz v0, :cond_1
+    const/4 v1, 0x0
 
-    goto :goto_2
+    if-eqz v0, :cond_0
 
-    .line 576
-    :cond_1
-    :goto_0
+    goto :goto_0
+
+    .line 578
+    :cond_0
     sget-object v0, Landroidx/compose/ui/text/style/LineBreak$Strategy;->Companion:Landroidx/compose/ui/text/style/LineBreak$Strategy$Companion;
 
     invoke-virtual {v0}, Landroidx/compose/ui/text/style/LineBreak$Strategy$Companion;->getHighQuality-fcGXIks()I
 
     move-result v0
 
-    if-nez p0, :cond_2
-
-    goto :goto_1
-
-    :cond_2
-    invoke-virtual {p0}, Landroidx/compose/ui/text/style/LineBreak$Strategy;->unbox-impl()I
-
-    move-result v2
-
-    invoke-static {v2, v0}, Landroidx/compose/ui/text/style/LineBreak$Strategy;->equals-impl0(II)Z
+    invoke-static {p0, v0}, Landroidx/compose/ui/text/style/LineBreak$Strategy;->equals-impl0(II)Z
 
     move-result v0
 
-    if-eqz v0, :cond_3
+    if-eqz v0, :cond_1
 
     const/4 v1, 0x1
 
-    goto :goto_2
+    goto :goto_0
 
-    .line 577
-    :cond_3
-    :goto_1
+    .line 579
+    :cond_1
     sget-object v0, Landroidx/compose/ui/text/style/LineBreak$Strategy;->Companion:Landroidx/compose/ui/text/style/LineBreak$Strategy$Companion;
 
     invoke-virtual {v0}, Landroidx/compose/ui/text/style/LineBreak$Strategy$Companion;->getBalanced-fcGXIks()I
 
     move-result v0
 
-    if-nez p0, :cond_4
-
-    goto :goto_2
-
-    :cond_4
-    invoke-virtual {p0}, Landroidx/compose/ui/text/style/LineBreak$Strategy;->unbox-impl()I
-
-    move-result p0
-
     invoke-static {p0, v0}, Landroidx/compose/ui/text/style/LineBreak$Strategy;->equals-impl0(II)Z
 
     move-result p0
 
-    if-eqz p0, :cond_5
+    if-eqz p0, :cond_2
 
     const/4 v1, 0x2
 
-    :cond_5
-    :goto_2
+    :cond_2
+    :goto_0
     return v1
 .end method
 
-.method private static final toLayoutHyphenationFrequency-0_XeFpE(Landroidx/compose/ui/text/style/Hyphens;)I
-    .locals 2
+.method private static final toLayoutHyphenationFrequency--3fSNIE(I)I
+    .locals 1
 
-    .line 564
+    .line 566
     sget-object v0, Landroidx/compose/ui/text/style/Hyphens;->Companion:Landroidx/compose/ui/text/style/Hyphens$Companion;
 
     invoke-virtual {v0}, Landroidx/compose/ui/text/style/Hyphens$Companion;->getAuto-vmbZdU8()I
 
     move-result v0
 
-    if-nez p0, :cond_0
-
-    goto :goto_0
-
-    :cond_0
-    invoke-virtual {p0}, Landroidx/compose/ui/text/style/Hyphens;->unbox-impl()I
-
-    move-result v1
-
-    invoke-static {v1, v0}, Landroidx/compose/ui/text/style/Hyphens;->equals-impl0(II)Z
+    invoke-static {p0, v0}, Landroidx/compose/ui/text/style/Hyphens;->equals-impl0(II)Z
 
     move-result v0
 
-    if-eqz v0, :cond_1
+    if-eqz v0, :cond_0
 
     const/4 p0, 0x4
 
-    goto :goto_2
+    goto :goto_0
 
-    .line 569
-    :cond_1
-    :goto_0
+    .line 571
+    :cond_0
     sget-object v0, Landroidx/compose/ui/text/style/Hyphens;->Companion:Landroidx/compose/ui/text/style/Hyphens$Companion;
 
     invoke-virtual {v0}, Landroidx/compose/ui/text/style/Hyphens$Companion;->getNone-vmbZdU8()I
 
     move-result v0
 
-    const/4 v1, 0x0
-
-    if-nez p0, :cond_2
-
-    goto :goto_1
-
-    :cond_2
-    invoke-virtual {p0}, Landroidx/compose/ui/text/style/Hyphens;->unbox-impl()I
-
-    move-result p0
-
     invoke-static {p0, v0}, Landroidx/compose/ui/text/style/Hyphens;->equals-impl0(II)Z
 
-    move-result p0
+    const/4 p0, 0x0
 
-    :goto_1
-    move p0, v1
-
-    :goto_2
+    :goto_0
     return p0
 .end method
 
-.method private static final toLayoutLineBreakStyle-4a2g8L8(Landroidx/compose/ui/text/style/LineBreak$Strictness;)I
-    .locals 3
+.method private static final toLayoutLineBreakStyle-hpcqdu8(I)I
+    .locals 2
 
-    .line 584
+    .line 586
     sget-object v0, Landroidx/compose/ui/text/style/LineBreak$Strictness;->Companion:Landroidx/compose/ui/text/style/LineBreak$Strictness$Companion;
 
     invoke-virtual {v0}, Landroidx/compose/ui/text/style/LineBreak$Strictness$Companion;->getDefault-usljTpc()I
 
     move-result v0
 
-    const/4 v1, 0x0
-
-    if-nez p0, :cond_0
-
-    goto :goto_0
-
-    :cond_0
-    invoke-virtual {p0}, Landroidx/compose/ui/text/style/LineBreak$Strictness;->unbox-impl()I
-
-    move-result v2
-
-    invoke-static {v2, v0}, Landroidx/compose/ui/text/style/LineBreak$Strictness;->equals-impl0(II)Z
+    invoke-static {p0, v0}, Landroidx/compose/ui/text/style/LineBreak$Strictness;->equals-impl0(II)Z
 
     move-result v0
 
-    if-eqz v0, :cond_1
+    const/4 v1, 0x0
 
-    goto :goto_3
+    if-eqz v0, :cond_0
 
-    .line 585
-    :cond_1
-    :goto_0
+    goto :goto_0
+
+    .line 587
+    :cond_0
     sget-object v0, Landroidx/compose/ui/text/style/LineBreak$Strictness;->Companion:Landroidx/compose/ui/text/style/LineBreak$Strictness$Companion;
 
     invoke-virtual {v0}, Landroidx/compose/ui/text/style/LineBreak$Strictness$Companion;->getLoose-usljTpc()I
 
     move-result v0
 
-    if-nez p0, :cond_2
-
-    goto :goto_1
-
-    :cond_2
-    invoke-virtual {p0}, Landroidx/compose/ui/text/style/LineBreak$Strictness;->unbox-impl()I
-
-    move-result v2
-
-    invoke-static {v2, v0}, Landroidx/compose/ui/text/style/LineBreak$Strictness;->equals-impl0(II)Z
+    invoke-static {p0, v0}, Landroidx/compose/ui/text/style/LineBreak$Strictness;->equals-impl0(II)Z
 
     move-result v0
 
-    if-eqz v0, :cond_3
+    if-eqz v0, :cond_1
 
     const/4 v1, 0x1
 
-    goto :goto_3
+    goto :goto_0
 
-    .line 586
-    :cond_3
-    :goto_1
+    .line 588
+    :cond_1
     sget-object v0, Landroidx/compose/ui/text/style/LineBreak$Strictness;->Companion:Landroidx/compose/ui/text/style/LineBreak$Strictness$Companion;
 
     invoke-virtual {v0}, Landroidx/compose/ui/text/style/LineBreak$Strictness$Companion;->getNormal-usljTpc()I
 
     move-result v0
 
-    if-nez p0, :cond_4
-
-    goto :goto_2
-
-    :cond_4
-    invoke-virtual {p0}, Landroidx/compose/ui/text/style/LineBreak$Strictness;->unbox-impl()I
-
-    move-result v2
-
-    invoke-static {v2, v0}, Landroidx/compose/ui/text/style/LineBreak$Strictness;->equals-impl0(II)Z
+    invoke-static {p0, v0}, Landroidx/compose/ui/text/style/LineBreak$Strictness;->equals-impl0(II)Z
 
     move-result v0
 
-    if-eqz v0, :cond_5
+    if-eqz v0, :cond_2
 
     const/4 v1, 0x2
 
-    goto :goto_3
+    goto :goto_0
 
-    .line 587
-    :cond_5
-    :goto_2
+    .line 589
+    :cond_2
     sget-object v0, Landroidx/compose/ui/text/style/LineBreak$Strictness;->Companion:Landroidx/compose/ui/text/style/LineBreak$Strictness$Companion;
 
     invoke-virtual {v0}, Landroidx/compose/ui/text/style/LineBreak$Strictness$Companion;->getStrict-usljTpc()I
 
     move-result v0
 
-    if-nez p0, :cond_6
-
-    goto :goto_3
-
-    :cond_6
-    invoke-virtual {p0}, Landroidx/compose/ui/text/style/LineBreak$Strictness;->unbox-impl()I
-
-    move-result p0
-
     invoke-static {p0, v0}, Landroidx/compose/ui/text/style/LineBreak$Strictness;->equals-impl0(II)Z
 
     move-result p0
 
-    if-eqz p0, :cond_7
+    if-eqz p0, :cond_3
 
     const/4 v1, 0x3
 
-    :cond_7
-    :goto_3
+    :cond_3
+    :goto_0
     return v1
 .end method
 
-.method private static final toLayoutLineBreakWordStyle-gvcdTPQ(Landroidx/compose/ui/text/style/LineBreak$WordBreak;)I
-    .locals 3
+.method private static final toLayoutLineBreakWordStyle-wPN0Rpw(I)I
+    .locals 2
 
-    .line 594
+    .line 596
     sget-object v0, Landroidx/compose/ui/text/style/LineBreak$WordBreak;->Companion:Landroidx/compose/ui/text/style/LineBreak$WordBreak$Companion;
 
     invoke-virtual {v0}, Landroidx/compose/ui/text/style/LineBreak$WordBreak$Companion;->getDefault-jp8hJ3c()I
 
     move-result v0
 
-    const/4 v1, 0x0
-
-    if-nez p0, :cond_0
-
-    goto :goto_0
-
-    :cond_0
-    invoke-virtual {p0}, Landroidx/compose/ui/text/style/LineBreak$WordBreak;->unbox-impl()I
-
-    move-result v2
-
-    invoke-static {v2, v0}, Landroidx/compose/ui/text/style/LineBreak$WordBreak;->equals-impl0(II)Z
+    invoke-static {p0, v0}, Landroidx/compose/ui/text/style/LineBreak$WordBreak;->equals-impl0(II)Z
 
     move-result v0
 
-    if-eqz v0, :cond_1
+    const/4 v1, 0x0
 
-    goto :goto_1
+    if-eqz v0, :cond_0
 
-    .line 595
-    :cond_1
-    :goto_0
+    goto :goto_0
+
+    .line 597
+    :cond_0
     sget-object v0, Landroidx/compose/ui/text/style/LineBreak$WordBreak;->Companion:Landroidx/compose/ui/text/style/LineBreak$WordBreak$Companion;
 
     invoke-virtual {v0}, Landroidx/compose/ui/text/style/LineBreak$WordBreak$Companion;->getPhrase-jp8hJ3c()I
 
     move-result v0
 
-    if-nez p0, :cond_2
-
-    goto :goto_1
-
-    :cond_2
-    invoke-virtual {p0}, Landroidx/compose/ui/text/style/LineBreak$WordBreak;->unbox-impl()I
-
-    move-result p0
-
     invoke-static {p0, v0}, Landroidx/compose/ui/text/style/LineBreak$WordBreak;->equals-impl0(II)Z
 
     move-result p0
 
-    if-eqz p0, :cond_3
+    if-eqz p0, :cond_1
 
     const/4 v1, 0x1
 
-    :cond_3
-    :goto_1
+    :cond_1
+    :goto_0
     return v1
 .end method

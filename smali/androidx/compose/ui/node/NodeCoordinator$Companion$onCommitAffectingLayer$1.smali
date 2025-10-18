@@ -79,7 +79,7 @@
 .method public bridge synthetic invoke(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
 
-    .line 1219
+    .line 1197
     check-cast p1, Landroidx/compose/ui/node/NodeCoordinator;
 
     invoke-virtual {p0, p1}, Landroidx/compose/ui/node/NodeCoordinator$Companion$onCommitAffectingLayer$1;->invoke(Landroidx/compose/ui/node/NodeCoordinator;)V
@@ -92,11 +92,7 @@
 .method public final invoke(Landroidx/compose/ui/node/NodeCoordinator;)V
     .locals 0
 
-    const-string p0, "coordinator"
-
-    invoke-static {p1, p0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 1220
+    .line 1198
     invoke-virtual {p1}, Landroidx/compose/ui/node/NodeCoordinator;->getLayer()Landroidx/compose/ui/node/OwnedLayer;
 
     move-result-object p0

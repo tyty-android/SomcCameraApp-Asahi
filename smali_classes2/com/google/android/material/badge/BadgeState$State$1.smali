@@ -30,7 +30,7 @@
 .method constructor <init>()V
     .locals 0
 
-    .line 597
+    .line 721
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -41,7 +41,7 @@
 .method public createFromParcel(Landroid/os/Parcel;)Lcom/google/android/material/badge/BadgeState$State;
     .locals 0
 
-    .line 601
+    .line 725
     new-instance p0, Lcom/google/android/material/badge/BadgeState$State;
 
     invoke-direct {p0, p1}, Lcom/google/android/material/badge/BadgeState$State;-><init>(Landroid/os/Parcel;)V
@@ -52,7 +52,7 @@
 .method public bridge synthetic createFromParcel(Landroid/os/Parcel;)Ljava/lang/Object;
     .locals 0
 
-    .line 597
+    .line 721
     invoke-virtual {p0, p1}, Lcom/google/android/material/badge/BadgeState$State$1;->createFromParcel(Landroid/os/Parcel;)Lcom/google/android/material/badge/BadgeState$State;
 
     move-result-object p0
@@ -63,7 +63,7 @@
 .method public newArray(I)[Lcom/google/android/material/badge/BadgeState$State;
     .locals 0
 
-    .line 607
+    .line 731
     new-array p0, p1, [Lcom/google/android/material/badge/BadgeState$State;
 
     return-object p0
@@ -72,7 +72,7 @@
 .method public bridge synthetic newArray(I)[Ljava/lang/Object;
     .locals 0
 
-    .line 597
+    .line 721
     invoke-virtual {p0, p1}, Lcom/google/android/material/badge/BadgeState$State$1;->newArray(I)[Lcom/google/android/material/badge/BadgeState$State;
 
     move-result-object p0

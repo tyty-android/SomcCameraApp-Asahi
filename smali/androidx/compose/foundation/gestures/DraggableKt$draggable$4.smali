@@ -67,7 +67,7 @@
 .method public final invoke()Ljava/lang/Boolean;
     .locals 0
 
-    .line 192
+    .line 201
     iget-boolean p0, p0, Landroidx/compose/foundation/gestures/DraggableKt$draggable$4;->$startDragImmediately:Z
 
     invoke-static {p0}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
@@ -80,7 +80,7 @@
 .method public bridge synthetic invoke()Ljava/lang/Object;
     .locals 0
 
-    .line 187
+    .line 196
     invoke-virtual {p0}, Landroidx/compose/foundation/gestures/DraggableKt$draggable$4;->invoke()Ljava/lang/Boolean;
 
     move-result-object p0

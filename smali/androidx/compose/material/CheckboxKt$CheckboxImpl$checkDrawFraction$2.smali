@@ -99,10 +99,6 @@
         }
     .end annotation
 
-    const-string p0, "$this$animateFloat"
-
-    invoke-static {p1, p0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
     const p0, -0x65c97a74
 
     invoke-interface {p2, p0}, Landroidx/compose/runtime/Composer;->startReplaceableGroup(I)V
@@ -115,7 +111,7 @@
 
     const/4 v0, -0x1
 
-    const-string v1, "androidx.compose.material.CheckboxImpl.<anonymous> (Checkbox.kt:266)"
+    const-string v1, "androidx.compose.material.CheckboxImpl.<anonymous> (Checkbox.kt:267)"
 
     .line 268
     invoke-static {p0, p3, v0, v1}, Landroidx/compose/runtime/ComposerKt;->traceEventStart(IIILjava/lang/String;)V

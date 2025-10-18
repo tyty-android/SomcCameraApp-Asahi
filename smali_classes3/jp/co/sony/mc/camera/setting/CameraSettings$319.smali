@@ -21,7 +21,7 @@
 .method constructor <init>()V
     .locals 0
 
-    .line 3242
+    .line 3335
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -42,15 +42,15 @@
         }
     .end annotation
 
-    .line 3246
+    .line 3339
     check-cast p1, Ljp/co/sony/mc/camera/setting/CameraSettings;
 
-    .line 3247
-    invoke-virtual {p1}, Ljp/co/sony/mc/camera/setting/CameraSettings;->getAmberBlue()Ljava/lang/Float;
+    .line 3340
+    invoke-static {p1}, Ljp/co/sony/mc/camera/setting/CameraSettings;->-$$Nest$mgetFocusMode(Ljp/co/sony/mc/camera/setting/CameraSettings;)Ljp/co/sony/mc/camera/configuration/parameters/FocusMode;
 
     move-result-object p0
 
-    invoke-static {p1}, Ljp/co/sony/mc/camera/setting/CameraSettings;->-$$Nest$fgetmAmberBlue(Ljp/co/sony/mc/camera/setting/CameraSettings;)Ljava/lang/Float;
+    invoke-static {p1}, Ljp/co/sony/mc/camera/setting/CameraSettings;->-$$Nest$fgetmFocusMode(Ljp/co/sony/mc/camera/setting/CameraSettings;)Ljp/co/sony/mc/camera/configuration/parameters/FocusMode;
 
     move-result-object p1
 

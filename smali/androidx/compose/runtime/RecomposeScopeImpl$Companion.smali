@@ -14,7 +14,7 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/SourceDebugExtension;
-    value = "SMAP\nRecomposeScopeImpl.kt\nKotlin\n*S Kotlin\n*F\n+ 1 RecomposeScopeImpl.kt\nandroidx/compose/runtime/RecomposeScopeImpl$Companion\n+ 2 ListUtils.kt\nandroidx/compose/runtime/snapshots/ListUtilsKt\n*L\n1#1,388:1\n33#2,6:389\n93#2,2:395\n33#2,4:397\n95#2,2:401\n38#2:403\n97#2:404\n*S KotlinDebug\n*F\n+ 1 RecomposeScopeImpl.kt\nandroidx/compose/runtime/RecomposeScopeImpl$Companion\n*L\n373#1:389,6\n383#1:395,2\n383#1:397,4\n383#1:401,2\n383#1:403\n383#1:404\n*E\n"
+    value = "SMAP\nRecomposeScopeImpl.kt\nKotlin\n*S Kotlin\n*F\n+ 1 RecomposeScopeImpl.kt\nandroidx/compose/runtime/RecomposeScopeImpl$Companion\n+ 2 ListUtils.kt\nandroidx/compose/runtime/snapshots/ListUtilsKt\n*L\n1#1,444:1\n33#2,6:445\n93#2,2:451\n33#2,4:453\n95#2,2:457\n38#2:459\n97#2:460\n*S KotlinDebug\n*F\n+ 1 RecomposeScopeImpl.kt\nandroidx/compose/runtime/RecomposeScopeImpl$Companion\n*L\n429#1:445,6\n439#1:451,2\n439#1:453,4\n439#1:457,2\n439#1:459\n439#1:460\n*E\n"
 .end annotation
 
 .annotation runtime Lkotlin/Metadata;
@@ -55,7 +55,7 @@
 .method private constructor <init>()V
     .locals 0
 
-    .line 366
+    .line 422
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -85,19 +85,7 @@
         }
     .end annotation
 
-    const-string/jumbo p0, "slots"
-
-    invoke-static {p1, p0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string p0, "anchors"
-
-    invoke-static {p2, p0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string p0, "newOwner"
-
-    invoke-static {p3, p0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 372
+    .line 428
     move-object p0, p2
 
     check-cast p0, Ljava/util/Collection;
@@ -110,7 +98,7 @@
 
     if-eqz p0, :cond_2
 
-    .line 390
+    .line 446
     invoke-interface {p2}, Ljava/util/List;->size()I
 
     move-result p0
@@ -122,15 +110,15 @@
     :goto_0
     if-ge v1, p0, :cond_2
 
-    .line 391
+    .line 447
     invoke-interface {p2, v1}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
     move-result-object v2
 
-    .line 392
+    .line 448
     check-cast v2, Landroidx/compose/runtime/Anchor;
 
-    .line 375
+    .line 431
     invoke-virtual {p1, v2, v0}, Landroidx/compose/runtime/SlotWriter;->slot(Landroidx/compose/runtime/Anchor;I)Ljava/lang/Object;
 
     move-result-object v2
@@ -149,7 +137,7 @@
     :goto_1
     if-eqz v2, :cond_1
 
-    .line 377
+    .line 433
     invoke-virtual {v2, p3}, Landroidx/compose/runtime/RecomposeScopeImpl;->adoptedBy(Landroidx/compose/runtime/RecomposeScopeOwner;)V
 
     :cond_1
@@ -173,15 +161,7 @@
         }
     .end annotation
 
-    const-string/jumbo p0, "slots"
-
-    invoke-static {p1, p0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string p0, "anchors"
-
-    invoke-static {p2, p0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 383
+    .line 439
     move-object p0, p2
 
     check-cast p0, Ljava/util/Collection;
@@ -198,7 +178,7 @@
 
     if-eqz p0, :cond_1
 
-    .line 398
+    .line 454
     invoke-interface {p2}, Ljava/util/List;->size()I
 
     move-result p0
@@ -208,15 +188,15 @@
     :goto_0
     if-ge v2, p0, :cond_1
 
-    .line 399
+    .line 455
     invoke-interface {p2, v2}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
     move-result-object v3
 
-    .line 401
+    .line 457
     check-cast v3, Landroidx/compose/runtime/Anchor;
 
-    .line 384
+    .line 440
     invoke-virtual {p1, v3}, Landroidx/compose/runtime/SlotTable;->ownsAnchor(Landroidx/compose/runtime/Anchor;)Z
 
     move-result v4

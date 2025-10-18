@@ -21,7 +21,7 @@
 .method constructor <init>()V
     .locals 0
 
-    .line 1225
+    .line 1281
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -46,13 +46,13 @@
         }
     .end annotation
 
-    .line 1229
+    .line 1285
     check-cast p1, Ljp/co/sony/mc/camera/setting/CameraSettings;
 
-    .line 1230
-    check-cast p3, Ljp/co/sony/mc/camera/configuration/parameters/FocusMode;
+    .line 1286
+    check-cast p3, Ljp/co/sony/mc/camera/configuration/parameters/AspectRatio;
 
-    invoke-static {p1, p3}, Ljp/co/sony/mc/camera/setting/CameraSettings;->-$$Nest$msetFocusMode(Ljp/co/sony/mc/camera/setting/CameraSettings;Ljp/co/sony/mc/camera/configuration/parameters/FocusMode;)Z
+    invoke-static {p1, p3}, Ljp/co/sony/mc/camera/setting/CameraSettings;->-$$Nest$msetAspectRatio(Ljp/co/sony/mc/camera/setting/CameraSettings;Ljp/co/sony/mc/camera/configuration/parameters/AspectRatio;)Z
 
     move-result p0
 

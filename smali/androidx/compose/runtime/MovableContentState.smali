@@ -44,16 +44,12 @@
 .end method
 
 .method public constructor <init>(Landroidx/compose/runtime/SlotTable;)V
-    .locals 1
+    .locals 0
 
-    const-string/jumbo v0, "slotTable"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 334
+    .line 332
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 336
+    .line 334
     iput-object p1, p0, Landroidx/compose/runtime/MovableContentState;->slotTable:Landroidx/compose/runtime/SlotTable;
 
     return-void
@@ -64,7 +60,7 @@
 .method public final getSlotTable$runtime_release()Landroidx/compose/runtime/SlotTable;
     .locals 0
 
-    .line 336
+    .line 334
     iget-object p0, p0, Landroidx/compose/runtime/MovableContentState;->slotTable:Landroidx/compose/runtime/SlotTable;
 
     return-object p0

@@ -69,7 +69,7 @@
 .method public bridge synthetic invoke(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 2
 
-    .line 206
+    .line 237
     check-cast p1, Ljava/lang/Number;
 
     invoke-virtual {p1}, Ljava/lang/Number;->longValue()J
@@ -84,68 +84,39 @@
 .end method
 
 .method public final invoke(J)V
-    .locals 2
+    .locals 0
 
-    .line 208
-    iget-object v0, p0, Landroidx/compose/foundation/text/selection/SelectionManager$1;->this$0:Landroidx/compose/foundation/text/selection/SelectionManager;
+    .line 238
+    invoke-static {p1, p2}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
 
-    invoke-virtual {v0}, Landroidx/compose/foundation/text/selection/SelectionManager;->getSelection()Landroidx/compose/foundation/text/selection/Selection;
+    move-result-object p1
 
-    move-result-object v0
+    iget-object p2, p0, Landroidx/compose/foundation/text/selection/SelectionManager$1;->this$0:Landroidx/compose/foundation/text/selection/SelectionManager;
 
-    if-eqz v0, :cond_0
+    invoke-static {p2}, Landroidx/compose/foundation/text/selection/SelectionManager;->access$getSelectionRegistrar$p(Landroidx/compose/foundation/text/selection/SelectionManager;)Landroidx/compose/foundation/text/selection/SelectionRegistrarImpl;
 
-    invoke-virtual {v0}, Landroidx/compose/foundation/text/selection/Selection;->getStart()Landroidx/compose/foundation/text/selection/Selection$AnchorInfo;
+    move-result-object p2
 
-    move-result-object v0
+    invoke-virtual {p2}, Landroidx/compose/foundation/text/selection/SelectionRegistrarImpl;->getSubselections()Ljava/util/Map;
 
-    if-eqz v0, :cond_0
+    move-result-object p2
 
-    invoke-virtual {v0}, Landroidx/compose/foundation/text/selection/Selection$AnchorInfo;->getSelectableId()J
+    invoke-interface {p2, p1}, Ljava/util/Map;->containsKey(Ljava/lang/Object;)Z
 
-    move-result-wide v0
+    move-result p1
 
-    cmp-long v0, p1, v0
+    if-eqz p1, :cond_0
 
-    if-nez v0, :cond_0
-
-    goto :goto_0
-
-    .line 209
-    :cond_0
-    iget-object v0, p0, Landroidx/compose/foundation/text/selection/SelectionManager$1;->this$0:Landroidx/compose/foundation/text/selection/SelectionManager;
-
-    invoke-virtual {v0}, Landroidx/compose/foundation/text/selection/SelectionManager;->getSelection()Landroidx/compose/foundation/text/selection/Selection;
-
-    move-result-object v0
-
-    if-eqz v0, :cond_1
-
-    invoke-virtual {v0}, Landroidx/compose/foundation/text/selection/Selection;->getEnd()Landroidx/compose/foundation/text/selection/Selection$AnchorInfo;
-
-    move-result-object v0
-
-    if-eqz v0, :cond_1
-
-    invoke-virtual {v0}, Landroidx/compose/foundation/text/selection/Selection$AnchorInfo;->getSelectableId()J
-
-    move-result-wide v0
-
-    cmp-long p1, p1, v0
-
-    if-nez p1, :cond_1
-
-    .line 211
-    :goto_0
+    .line 239
     iget-object p1, p0, Landroidx/compose/foundation/text/selection/SelectionManager$1;->this$0:Landroidx/compose/foundation/text/selection/SelectionManager;
 
     invoke-static {p1}, Landroidx/compose/foundation/text/selection/SelectionManager;->access$updateHandleOffsets(Landroidx/compose/foundation/text/selection/SelectionManager;)V
 
-    .line 212
+    .line 240
     iget-object p0, p0, Landroidx/compose/foundation/text/selection/SelectionManager$1;->this$0:Landroidx/compose/foundation/text/selection/SelectionManager;
 
-    invoke-static {p0}, Landroidx/compose/foundation/text/selection/SelectionManager;->access$updateSelectionToolbarPosition(Landroidx/compose/foundation/text/selection/SelectionManager;)V
+    invoke-static {p0}, Landroidx/compose/foundation/text/selection/SelectionManager;->access$updateSelectionToolbar(Landroidx/compose/foundation/text/selection/SelectionManager;)V
 
-    :cond_1
+    :cond_0
     return-void
 .end method

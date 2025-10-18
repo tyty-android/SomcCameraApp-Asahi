@@ -68,7 +68,7 @@
 .method static constructor <clinit>()V
     .locals 1
 
-    .line 443
+    .line 568
     invoke-static {}, Lcom/google/gson/internal/bind/ReflectiveTypeAdapterFactory$RecordAdapter;->primitiveDefaults()Ljava/util/Map;
 
     move-result-object v0
@@ -78,31 +78,29 @@
     return-void
 .end method
 
-.method constructor <init>(Ljava/lang/Class;Ljava/util/Map;Z)V
+.method constructor <init>(Ljava/lang/Class;Lcom/google/gson/internal/bind/ReflectiveTypeAdapterFactory$FieldsData;Z)V
     .locals 3
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
             "Ljava/lang/Class<",
             "TT;>;",
-            "Ljava/util/Map<",
-            "Ljava/lang/String;",
-            "Lcom/google/gson/internal/bind/ReflectiveTypeAdapterFactory$BoundField;",
-            ">;Z)V"
+            "Lcom/google/gson/internal/bind/ReflectiveTypeAdapterFactory$FieldsData;",
+            "Z)V"
         }
     .end annotation
 
-    .line 453
-    invoke-direct {p0, p2}, Lcom/google/gson/internal/bind/ReflectiveTypeAdapterFactory$Adapter;-><init>(Ljava/util/Map;)V
+    .line 578
+    invoke-direct {p0, p2}, Lcom/google/gson/internal/bind/ReflectiveTypeAdapterFactory$Adapter;-><init>(Lcom/google/gson/internal/bind/ReflectiveTypeAdapterFactory$FieldsData;)V
 
-    .line 450
+    .line 575
     new-instance p2, Ljava/util/HashMap;
 
     invoke-direct {p2}, Ljava/util/HashMap;-><init>()V
 
     iput-object p2, p0, Lcom/google/gson/internal/bind/ReflectiveTypeAdapterFactory$RecordAdapter;->componentIndices:Ljava/util/Map;
 
-    .line 454
+    .line 579
     invoke-static {p1}, Lcom/google/gson/internal/reflect/ReflectionHelper;->getCanonicalRecordConstructor(Ljava/lang/Class;)Ljava/lang/reflect/Constructor;
 
     move-result-object p2
@@ -113,16 +111,16 @@
 
     const/4 p3, 0x0
 
-    .line 457
+    .line 582
     invoke-static {p3, p2}, Lcom/google/gson/internal/bind/ReflectiveTypeAdapterFactory;->access$000(Ljava/lang/Object;Ljava/lang/reflect/AccessibleObject;)V
 
     goto :goto_0
 
-    .line 460
+    .line 585
     :cond_0
     invoke-static {p2}, Lcom/google/gson/internal/reflect/ReflectionHelper;->makeAccessible(Ljava/lang/reflect/AccessibleObject;)V
 
-    .line 463
+    .line 588
     :goto_0
     invoke-static {p1}, Lcom/google/gson/internal/reflect/ReflectionHelper;->getRecordComponentNames(Ljava/lang/Class;)[Ljava/lang/String;
 
@@ -132,13 +130,13 @@
 
     move p3, p2
 
-    .line 464
+    .line 589
     :goto_1
     array-length v0, p1
 
     if-ge p3, v0, :cond_1
 
-    .line 465
+    .line 590
     iget-object v0, p0, Lcom/google/gson/internal/bind/ReflectiveTypeAdapterFactory$RecordAdapter;->componentIndices:Ljava/util/Map;
 
     aget-object v1, p1, p3
@@ -153,7 +151,7 @@
 
     goto :goto_1
 
-    .line 467
+    .line 592
     :cond_1
     iget-object p1, p0, Lcom/google/gson/internal/bind/ReflectiveTypeAdapterFactory$RecordAdapter;->constructor:Ljava/lang/reflect/Constructor;
 
@@ -161,20 +159,20 @@
 
     move-result-object p1
 
-    .line 471
+    .line 597
     array-length p3, p1
 
     new-array p3, p3, [Ljava/lang/Object;
 
     iput-object p3, p0, Lcom/google/gson/internal/bind/ReflectiveTypeAdapterFactory$RecordAdapter;->constructorArgsDefaults:[Ljava/lang/Object;
 
-    .line 472
+    .line 598
     :goto_2
     array-length p3, p1
 
     if-ge p2, p3, :cond_2
 
-    .line 474
+    .line 600
     iget-object p3, p0, Lcom/google/gson/internal/bind/ReflectiveTypeAdapterFactory$RecordAdapter;->constructorArgsDefaults:[Ljava/lang/Object;
 
     sget-object v0, Lcom/google/gson/internal/bind/ReflectiveTypeAdapterFactory$RecordAdapter;->PRIMITIVE_DEFAULTS:Ljava/util/Map;
@@ -208,12 +206,12 @@
         }
     .end annotation
 
-    .line 479
+    .line 605
     new-instance v0, Ljava/util/HashMap;
 
     invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
 
-    .line 480
+    .line 606
     sget-object v1, Ljava/lang/Byte;->TYPE:Ljava/lang/Class;
 
     const/4 v2, 0x0
@@ -224,7 +222,7 @@
 
     invoke-interface {v0, v1, v3}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 481
+    .line 607
     sget-object v1, Ljava/lang/Short;->TYPE:Ljava/lang/Class;
 
     invoke-static {v2}, Ljava/lang/Short;->valueOf(S)Ljava/lang/Short;
@@ -233,7 +231,7 @@
 
     invoke-interface {v0, v1, v3}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 482
+    .line 608
     sget-object v1, Ljava/lang/Integer;->TYPE:Ljava/lang/Class;
 
     invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
@@ -242,7 +240,7 @@
 
     invoke-interface {v0, v1, v3}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 483
+    .line 609
     sget-object v1, Ljava/lang/Long;->TYPE:Ljava/lang/Class;
 
     const-wide/16 v3, 0x0
@@ -253,7 +251,7 @@
 
     invoke-interface {v0, v1, v3}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 484
+    .line 610
     sget-object v1, Ljava/lang/Float;->TYPE:Ljava/lang/Class;
 
     const/4 v3, 0x0
@@ -264,7 +262,7 @@
 
     invoke-interface {v0, v1, v3}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 485
+    .line 611
     sget-object v1, Ljava/lang/Double;->TYPE:Ljava/lang/Class;
 
     const-wide/16 v3, 0x0
@@ -275,7 +273,7 @@
 
     invoke-interface {v0, v1, v3}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 486
+    .line 612
     sget-object v1, Ljava/lang/Character;->TYPE:Ljava/lang/Class;
 
     invoke-static {v2}, Ljava/lang/Character;->valueOf(C)Ljava/lang/Character;
@@ -284,7 +282,7 @@
 
     invoke-interface {v0, v1, v3}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 487
+    .line 613
     sget-object v1, Ljava/lang/Boolean;->TYPE:Ljava/lang/Class;
 
     invoke-static {v2}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
@@ -301,7 +299,7 @@
 .method bridge synthetic createAccumulator()Ljava/lang/Object;
     .locals 0
 
-    .line 442
+    .line 567
     invoke-virtual {p0}, Lcom/google/gson/internal/bind/ReflectiveTypeAdapterFactory$RecordAdapter;->createAccumulator()[Ljava/lang/Object;
 
     move-result-object p0
@@ -312,7 +310,7 @@
 .method createAccumulator()[Ljava/lang/Object;
     .locals 0
 
-    .line 493
+    .line 619
     iget-object p0, p0, Lcom/google/gson/internal/bind/ReflectiveTypeAdapterFactory$RecordAdapter;->constructorArgsDefaults:[Ljava/lang/Object;
 
     invoke-virtual {p0}, [Ljava/lang/Object;->clone()Ljava/lang/Object;
@@ -327,7 +325,7 @@
 .method bridge synthetic finalize(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
 
-    .line 442
+    .line 567
     check-cast p1, [Ljava/lang/Object;
 
     invoke-virtual {p0, p1}, Lcom/google/gson/internal/bind/ReflectiveTypeAdapterFactory$RecordAdapter;->finalize([Ljava/lang/Object;)Ljava/lang/Object;
@@ -347,7 +345,7 @@
         }
     .end annotation
 
-    .line 515
+    .line 644
     const-string v0, "\' with args "
 
     const-string v1, "Failed to invoke constructor \'"
@@ -369,7 +367,7 @@
     :catch_0
     move-exception v2
 
-    .line 528
+    .line 660
     new-instance v3, Ljava/lang/RuntimeException;
 
     new-instance v4, Ljava/lang/StringBuilder;
@@ -378,7 +376,7 @@
 
     iget-object p0, p0, Lcom/google/gson/internal/bind/ReflectiveTypeAdapterFactory$RecordAdapter;->constructor:Ljava/lang/reflect/Constructor;
 
-    .line 529
+    .line 662
     invoke-static {p0}, Lcom/google/gson/internal/reflect/ReflectionHelper;->constructorToString(Ljava/lang/reflect/Constructor;)Ljava/lang/String;
 
     move-result-object p0
@@ -391,7 +389,7 @@
 
     move-result-object p0
 
-    .line 530
+    .line 664
     invoke-static {p1}, Ljava/util/Arrays;->toString([Ljava/lang/Object;)Ljava/lang/String;
 
     move-result-object p1
@@ -404,6 +402,7 @@
 
     move-result-object p0
 
+    .line 665
     invoke-virtual {v2}, Ljava/lang/reflect/InvocationTargetException;->getCause()Ljava/lang/Throwable;
 
     move-result-object p1
@@ -415,7 +414,7 @@
     :catch_1
     move-exception v2
 
-    .line 522
+    .line 652
     new-instance v3, Ljava/lang/RuntimeException;
 
     new-instance v4, Ljava/lang/StringBuilder;
@@ -424,7 +423,7 @@
 
     iget-object p0, p0, Lcom/google/gson/internal/bind/ReflectiveTypeAdapterFactory$RecordAdapter;->constructor:Ljava/lang/reflect/Constructor;
 
-    .line 523
+    .line 654
     invoke-static {p0}, Lcom/google/gson/internal/reflect/ReflectionHelper;->constructorToString(Ljava/lang/reflect/Constructor;)Ljava/lang/String;
 
     move-result-object p0
@@ -437,7 +436,7 @@
 
     move-result-object p0
 
-    .line 524
+    .line 656
     invoke-static {p1}, Ljava/util/Arrays;->toString([Ljava/lang/Object;)Ljava/lang/String;
 
     move-result-object p1
@@ -457,7 +456,7 @@
     :catch_2
     move-exception p0
 
-    .line 517
+    .line 646
     invoke-static {p0}, Lcom/google/gson/internal/reflect/ReflectionHelper;->createExceptionForUnexpectedIllegalAccess(Ljava/lang/IllegalAccessException;)Ljava/lang/RuntimeException;
 
     move-result-object p0
@@ -474,7 +473,7 @@
         }
     .end annotation
 
-    .line 442
+    .line 567
     check-cast p1, [Ljava/lang/Object;
 
     invoke-virtual {p0, p1, p2, p3}, Lcom/google/gson/internal/bind/ReflectiveTypeAdapterFactory$RecordAdapter;->readField([Ljava/lang/Object;Lcom/google/gson/stream/JsonReader;Lcom/google/gson/internal/bind/ReflectiveTypeAdapterFactory$BoundField;)V
@@ -490,7 +489,7 @@
         }
     .end annotation
 
-    .line 499
+    .line 625
     iget-object v0, p0, Lcom/google/gson/internal/bind/ReflectiveTypeAdapterFactory$RecordAdapter;->componentIndices:Ljava/util/Map;
 
     iget-object v1, p3, Lcom/google/gson/internal/bind/ReflectiveTypeAdapterFactory$BoundField;->fieldName:Ljava/lang/String;
@@ -503,7 +502,7 @@
 
     if-eqz v0, :cond_0
 
-    .line 509
+    .line 638
     invoke-virtual {v0}, Ljava/lang/Integer;->intValue()I
 
     move-result p0
@@ -512,7 +511,7 @@
 
     return-void
 
-    .line 501
+    .line 627
     :cond_0
     new-instance p1, Ljava/lang/IllegalStateException;
 
@@ -524,7 +523,7 @@
 
     iget-object p0, p0, Lcom/google/gson/internal/bind/ReflectiveTypeAdapterFactory$RecordAdapter;->constructor:Ljava/lang/reflect/Constructor;
 
-    .line 502
+    .line 629
     invoke-static {p0}, Lcom/google/gson/internal/reflect/ReflectionHelper;->constructorToString(Ljava/lang/reflect/Constructor;)Ljava/lang/String;
 
     move-result-object p0

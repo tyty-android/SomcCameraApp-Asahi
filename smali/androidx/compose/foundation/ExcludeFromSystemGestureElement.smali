@@ -1,6 +1,6 @@
 .class final Landroidx/compose/foundation/ExcludeFromSystemGestureElement;
 .super Landroidx/compose/ui/node/ModifierNodeElement;
-.source "SystemGestureExclusion.kt"
+.source "SystemGestureExclusion.android.kt"
 
 
 # annotations
@@ -78,10 +78,10 @@
         }
     .end annotation
 
-    .line 74
+    .line 71
     invoke-direct {p0}, Landroidx/compose/ui/node/ModifierNodeElement;-><init>()V
 
-    .line 73
+    .line 70
     iput-object p1, p0, Landroidx/compose/foundation/ExcludeFromSystemGestureElement;->exclusion:Lkotlin/jvm/functions/Function1;
 
     return-void
@@ -92,7 +92,7 @@
 .method public create()Landroidx/compose/foundation/ExcludeFromSystemGestureNode;
     .locals 1
 
-    .line 77
+    .line 74
     new-instance v0, Landroidx/compose/foundation/ExcludeFromSystemGestureNode;
 
     iget-object p0, p0, Landroidx/compose/foundation/ExcludeFromSystemGestureElement;->exclusion:Lkotlin/jvm/functions/Function1;
@@ -105,7 +105,7 @@
 .method public bridge synthetic create()Landroidx/compose/ui/Modifier$Node;
     .locals 0
 
-    .line 71
+    .line 68
     invoke-virtual {p0}, Landroidx/compose/foundation/ExcludeFromSystemGestureElement;->create()Landroidx/compose/foundation/ExcludeFromSystemGestureNode;
 
     move-result-object p0
@@ -118,7 +118,7 @@
 .method public equals(Ljava/lang/Object;)Z
     .locals 1
 
-    .line 89
+    .line 86
     instance-of v0, p1, Landroidx/compose/foundation/ExcludeFromSystemGestureElement;
 
     if-nez v0, :cond_0
@@ -127,7 +127,7 @@
 
     return p0
 
-    .line 90
+    .line 87
     :cond_0
     iget-object p0, p0, Landroidx/compose/foundation/ExcludeFromSystemGestureElement;->exclusion:Lkotlin/jvm/functions/Function1;
 
@@ -154,7 +154,7 @@
         }
     .end annotation
 
-    .line 73
+    .line 70
     iget-object p0, p0, Landroidx/compose/foundation/ExcludeFromSystemGestureElement;->exclusion:Lkotlin/jvm/functions/Function1;
 
     return-object p0
@@ -163,7 +163,7 @@
 .method public hashCode()I
     .locals 0
 
-    .line 85
+    .line 82
     iget-object p0, p0, Landroidx/compose/foundation/ExcludeFromSystemGestureElement;->exclusion:Lkotlin/jvm/functions/Function1;
 
     if-eqz p0, :cond_0
@@ -184,21 +184,17 @@
 .method public inspectableProperties(Landroidx/compose/ui/platform/InspectorInfo;)V
     .locals 1
 
-    const-string v0, "<this>"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 94
+    .line 91
     const-string/jumbo v0, "systemGestureExclusion"
 
     invoke-virtual {p1, v0}, Landroidx/compose/ui/platform/InspectorInfo;->setName(Ljava/lang/String;)V
 
-    .line 95
+    .line 92
     iget-object v0, p0, Landroidx/compose/foundation/ExcludeFromSystemGestureElement;->exclusion:Lkotlin/jvm/functions/Function1;
 
     if-eqz v0, :cond_0
 
-    .line 96
+    .line 93
     invoke-virtual {p1}, Landroidx/compose/ui/platform/InspectorInfo;->getProperties()Landroidx/compose/ui/platform/ValueElementSequence;
 
     move-result-object p1
@@ -214,16 +210,12 @@
 .end method
 
 .method public update(Landroidx/compose/foundation/ExcludeFromSystemGestureNode;)V
-    .locals 1
+    .locals 0
 
-    const-string v0, "node"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 81
+    .line 78
     iget-object p0, p0, Landroidx/compose/foundation/ExcludeFromSystemGestureElement;->exclusion:Lkotlin/jvm/functions/Function1;
 
-    invoke-virtual {p1, p0}, Landroidx/compose/foundation/ExcludeFromSystemGestureNode;->setExclusion(Lkotlin/jvm/functions/Function1;)V
+    invoke-virtual {p1, p0}, Landroidx/compose/foundation/ExcludeFromSystemGestureNode;->setRect(Lkotlin/jvm/functions/Function1;)V
 
     return-void
 .end method
@@ -231,7 +223,7 @@
 .method public bridge synthetic update(Landroidx/compose/ui/Modifier$Node;)V
     .locals 0
 
-    .line 71
+    .line 68
     check-cast p1, Landroidx/compose/foundation/ExcludeFromSystemGestureNode;
 
     invoke-virtual {p0, p1}, Landroidx/compose/foundation/ExcludeFromSystemGestureElement;->update(Landroidx/compose/foundation/ExcludeFromSystemGestureNode;)V

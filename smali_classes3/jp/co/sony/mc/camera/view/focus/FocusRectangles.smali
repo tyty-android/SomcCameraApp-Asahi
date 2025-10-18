@@ -636,30 +636,34 @@
 
     if-nez v0, :cond_0
 
+    const/4 p0, 0x1
+
     .line 2329
-    new-instance p0, Ljava/lang/StringBuilder;
+    new-array p0, p0, [Ljava/lang/String;
 
-    const-string v0, "changeFacePriority() faceUuid "
+    new-instance v0, Ljava/lang/StringBuilder;
 
-    invoke-direct {p0, v0}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+    const-string v1, "changeFacePriority() faceUuid "
 
-    invoke-virtual {p0, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
-    move-result-object p0
+    invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    const-string p1, " not found."
+    move-result-object p1
 
-    invoke-virtual {p0, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    const-string v0, " not found."
 
-    move-result-object p0
+    invoke-virtual {p1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {p0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    move-result-object p1
 
-    move-result-object p0
+    invoke-virtual {p1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    filled-new-array {p0}, [Ljava/lang/String;
+    move-result-object p1
 
-    move-result-object p0
+    const/4 v0, 0x0
+
+    aput-object p1, p0, v0
 
     invoke-static {p0}, Ljp/co/sony/mc/camera/util/CamLog;->e([Ljava/lang/String;)V
 
@@ -1520,39 +1524,10 @@
     return-void
 .end method
 
-.method private isAnimalEyeDetectionAvailable()Z
-    .locals 0
-
-    .line 2765
-    invoke-static {}, Ljp/co/sony/mc/camera/setting/CameraProSetting;->getInstance()Ljp/co/sony/mc/camera/setting/CameraProSetting;
-
-    move-result-object p0
-
-    invoke-virtual {p0}, Ljp/co/sony/mc/camera/setting/CameraProSetting;->getCurrentCameraId()Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;
-
-    move-result-object p0
-
-    .line 2764
-    invoke-static {p0}, Ljp/co/sony/mc/camera/util/capability/PlatformCapability;->isAnimalEyeDetectionAvailable(Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;)Z
-
-    move-result p0
-
-    if-eqz p0, :cond_0
-
-    const/4 p0, 0x1
-
-    return p0
-
-    :cond_0
-    const/4 p0, 0x0
-
-    return p0
-.end method
-
 .method private isAvailableFramePlatformDrawing()Z
     .locals 0
 
-    .line 2815
+    .line 2807
     iget-boolean p0, p0, Ljp/co/sony/mc/camera/view/focus/FocusRectangles;->mIsFocusFramePlatformDraw:Z
 
     if-nez p0, :cond_0
@@ -1570,7 +1545,7 @@
 .method private isBodyRectangle()Z
     .locals 4
 
-    .line 2790
+    .line 2782
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/focus/FocusRectangles;->mLastFaceDetectionResult:Ljp/co/sony/mc/camera/CameraStatusNotifier$DetectedFace;
 
     invoke-direct {p0, v0}, Ljp/co/sony/mc/camera/view/focus/FocusRectangles;->getSelectedFaceUuId(Ljp/co/sony/mc/camera/CameraStatusNotifier$DetectedFace;)Ljava/lang/String;
@@ -1583,7 +1558,7 @@
 
     return v1
 
-    .line 2795
+    .line 2787
     :cond_0
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/focus/FocusRectangles;->mLastFaceDetectionResult:Ljp/co/sony/mc/camera/CameraStatusNotifier$DetectedFace;
 
@@ -1608,7 +1583,7 @@
 
     check-cast v2, Ljp/co/sony/mc/camera/CameraStatusNotifier$ExtFace;
 
-    .line 2796
+    .line 2788
     invoke-virtual {v2}, Ljp/co/sony/mc/camera/CameraStatusNotifier$ExtFace;->getId()I
 
     move-result v3
@@ -1623,12 +1598,12 @@
 
     if-eqz v3, :cond_1
 
-    .line 2798
+    .line 2790
     invoke-virtual {v2}, Ljp/co/sony/mc/camera/CameraStatusNotifier$ExtFace;->getFaceRectType()Ljp/co/sony/mc/camera/device/CaptureResultNotifier$FaceRectType;
 
     move-result-object p0
 
-    .line 2799
+    .line 2791
     sget-object v0, Ljp/co/sony/mc/camera/device/CaptureResultNotifier$FaceRectType;->HUMAN_BODY:Ljp/co/sony/mc/camera/device/CaptureResultNotifier$FaceRectType;
 
     if-eq p0, v0, :cond_2
@@ -1647,7 +1622,7 @@
 .method private isFaceLost()Z
     .locals 0
 
-    .line 2811
+    .line 2803
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/focus/FocusRectangles;->mLastFaceDetectionResult:Ljp/co/sony/mc/camera/CameraStatusNotifier$DetectedFace;
 
     if-nez p0, :cond_0
@@ -1666,7 +1641,7 @@
 .method private isPortrait()Z
     .locals 0
 
-    .line 2823
+    .line 2815
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/focus/FocusRectangles;->mUiOrientation:Ljp/co/sony/mc/camera/view/orientation/LayoutOrientation;
 
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/view/orientation/LayoutOrientation;->isPortrait()Z
@@ -1679,7 +1654,7 @@
 .method private isValidMultiAutoFocusArea()Z
     .locals 4
 
-    .line 2774
+    .line 2766
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/focus/FocusRectangles;->mMultiAutoFocusArea:[Landroid/graphics/Rect;
 
     const/4 v1, 0x0
@@ -1688,7 +1663,7 @@
 
     goto :goto_0
 
-    .line 2776
+    .line 2768
     :cond_0
     array-length v2, v0
 
@@ -1696,7 +1671,7 @@
 
     goto :goto_0
 
-    .line 2778
+    .line 2770
     :cond_1
     array-length v2, v0
 
@@ -1704,14 +1679,14 @@
 
     if-ne v2, v3, :cond_3
 
-    .line 2779
+    .line 2771
     aget-object v0, v0, v1
 
     if-nez v0, :cond_2
 
     goto :goto_0
 
-    .line 2781
+    .line 2773
     :cond_2
     invoke-virtual {v0}, Landroid/graphics/Rect;->width()I
 
@@ -1723,7 +1698,7 @@
 
     aget-object p0, p0, v1
 
-    .line 2782
+    .line 2774
     invoke-virtual {p0}, Landroid/graphics/Rect;->height()I
 
     move-result p0
@@ -1810,7 +1785,7 @@
     .line 2224
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/focus/FocusRectangles;->mTouchAfRect:Ljp/co/sony/mc/camera/view/focus/TouchFocusFrameView;
 
-    const v1, 0x7f0900a1
+    const v1, 0x7f09009d
 
     invoke-virtual {v0, v1}, Ljp/co/sony/mc/camera/view/focus/TouchFocusFrameView;->findViewById(I)Landroid/view/View;
 
@@ -1830,12 +1805,12 @@
 
     if-ne p0, v1, :cond_0
 
-    const p0, 0x7f080099
+    const p0, 0x7f080091
 
     goto :goto_0
 
     :cond_0
-    const p0, 0x7f080098
+    const p0, 0x7f080090
 
     :goto_0
     invoke-virtual {v0, p0}, Landroid/widget/ImageView;->setBackgroundResource(I)V
@@ -2062,28 +2037,32 @@
 
     if-eqz v0, :cond_4
 
+    const/4 v0, 0x1
+
     .line 2726
-    new-instance v0, Ljava/lang/StringBuilder;
+    new-array v0, v0, [Ljava/lang/String;
 
-    const-string v1, "rect: "
+    new-instance v1, Ljava/lang/StringBuilder;
 
-    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+    const-string v2, "rect: "
 
-    iget-object v1, p0, Ljp/co/sony/mc/camera/view/focus/FocusRectangles;->mMultiAutoFocusArea:[Landroid/graphics/Rect;
+    invoke-direct {v1, v2}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
-    array-length v1, v1
+    iget-object v2, p0, Ljp/co/sony/mc/camera/view/focus/FocusRectangles;->mMultiAutoFocusArea:[Landroid/graphics/Rect;
 
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+    array-length v2, v2
 
-    move-result-object v0
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    move-result-object v1
 
-    move-result-object v0
+    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    filled-new-array {v0}, [Ljava/lang/String;
+    move-result-object v1
 
-    move-result-object v0
+    const/4 v2, 0x0
+
+    aput-object v1, v0, v2
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
@@ -2102,14 +2081,14 @@
     move-result-object v1
 
     .line 2731
-    iget-object v2, p0, Ljp/co/sony/mc/camera/view/focus/FocusRectangles;->mActivity:Landroid/app/Activity;
+    iget-object v3, p0, Ljp/co/sony/mc/camera/view/focus/FocusRectangles;->mActivity:Landroid/app/Activity;
 
     .line 2733
     invoke-virtual {v1}, Landroid/graphics/Rect;->width()I
 
-    move-result v3
+    move-result v4
 
-    int-to-float v3, v3
+    int-to-float v4, v4
 
     invoke-virtual {v1}, Landroid/graphics/Rect;->height()I
 
@@ -2117,24 +2096,22 @@
 
     int-to-float v1, v1
 
-    div-float/2addr v3, v1
+    div-float/2addr v4, v1
 
     .line 2731
-    invoke-static {v2, v3}, Ljp/co/sony/mc/camera/view/LayoutDependencyResolver;->getSurfaceViewRectOnDisplay(Landroid/content/Context;F)Landroid/graphics/Rect;
+    invoke-static {v3, v4}, Ljp/co/sony/mc/camera/view/LayoutDependencyResolver;->getSurfaceViewRectOnDisplay(Landroid/content/Context;F)Landroid/graphics/Rect;
 
     move-result-object v1
 
     .line 2735
-    iget-object v2, p0, Ljp/co/sony/mc/camera/view/focus/FocusRectangles;->mMultiAutoFocusArea:[Landroid/graphics/Rect;
+    iget-object v3, p0, Ljp/co/sony/mc/camera/view/focus/FocusRectangles;->mMultiAutoFocusArea:[Landroid/graphics/Rect;
 
-    array-length v3, v2
-
-    const/4 v4, 0x0
+    array-length v4, v3
 
     :goto_0
-    if-ge v4, v3, :cond_3
+    if-ge v2, v4, :cond_3
 
-    aget-object v5, v2, v4
+    aget-object v5, v3, v2
 
     if-nez v5, :cond_1
 
@@ -2158,7 +2135,7 @@
 
     move-result-object v6
 
-    const v7, 0x7f0705f7
+    const v7, 0x7f070682
 
     .line 2744
     invoke-virtual {v6, v7}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
@@ -2211,7 +2188,7 @@
 
     :cond_2
     :goto_1
-    add-int/lit8 v4, v4, 0x1
+    add-int/lit8 v2, v2, 0x1
 
     goto :goto_0
 
@@ -2232,7 +2209,7 @@
 .end method
 
 .method private showSingleAutoFocusingView()V
-    .locals 4
+    .locals 5
 
     .line 2676
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/focus/FocusRectangles;->mCaptureArea:Landroid/view/View;
@@ -2241,39 +2218,43 @@
 
     return-void
 
-    .line 2679
     :cond_0
-    new-instance v0, Ljava/lang/StringBuilder;
+    const/4 v0, 0x1
 
-    const-string v1, "inZoom: "
+    .line 2679
+    new-array v0, v0, [Ljava/lang/String;
 
-    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+    new-instance v1, Ljava/lang/StringBuilder;
 
-    iget-boolean v1, p0, Ljp/co/sony/mc/camera/view/focus/FocusRectangles;->mIsZooming:Z
+    const-string v2, "inZoom: "
 
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
+    invoke-direct {v1, v2}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
-    move-result-object v0
+    iget-boolean v2, p0, Ljp/co/sony/mc/camera/view/focus/FocusRectangles;->mIsZooming:Z
 
-    const-string v1, "/ state: "
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    move-result-object v1
 
-    move-result-object v0
+    const-string v2, "/ state: "
 
-    iget-object v1, p0, Ljp/co/sony/mc/camera/view/focus/FocusRectangles;->mNextFocusState:Ljp/co/sony/mc/camera/view/focus/SingleFocusFrameView$FocusState;
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+    move-result-object v1
 
-    move-result-object v0
+    iget-object v2, p0, Ljp/co/sony/mc/camera/view/focus/FocusRectangles;->mNextFocusState:Ljp/co/sony/mc/camera/view/focus/SingleFocusFrameView$FocusState;
 
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
-    move-result-object v0
+    move-result-object v1
 
-    filled-new-array {v0}, [Ljava/lang/String;
+    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    move-result-object v0
+    move-result-object v1
+
+    const/4 v2, 0x0
+
+    aput-object v1, v0, v2
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
@@ -2298,29 +2279,27 @@
     iget-object v1, p0, Ljp/co/sony/mc/camera/view/focus/FocusRectangles;->mNextFocusState:Ljp/co/sony/mc/camera/view/focus/SingleFocusFrameView$FocusState;
 
     .line 2685
-    iget-object v2, p0, Ljp/co/sony/mc/camera/view/focus/FocusRectangles;->mFocusFrameColor:Ljp/co/sony/mc/camera/configuration/parameters/FocusFrameColor;
+    iget-object v3, p0, Ljp/co/sony/mc/camera/view/focus/FocusRectangles;->mFocusFrameColor:Ljp/co/sony/mc/camera/configuration/parameters/FocusFrameColor;
 
-    sget-object v3, Ljp/co/sony/mc/camera/configuration/parameters/FocusFrameColor;->WHITE:Ljp/co/sony/mc/camera/configuration/parameters/FocusFrameColor;
+    sget-object v4, Ljp/co/sony/mc/camera/configuration/parameters/FocusFrameColor;->WHITE:Ljp/co/sony/mc/camera/configuration/parameters/FocusFrameColor;
 
-    if-ne v2, v3, :cond_2
+    if-ne v3, v4, :cond_2
 
-    sget-object v2, Ljp/co/sony/mc/camera/view/focus/SingleFocusFrameView$FocusColor;->NORMAL:Ljp/co/sony/mc/camera/view/focus/SingleFocusFrameView$FocusColor;
+    sget-object v3, Ljp/co/sony/mc/camera/view/focus/SingleFocusFrameView$FocusColor;->NORMAL:Ljp/co/sony/mc/camera/view/focus/SingleFocusFrameView$FocusColor;
 
     goto :goto_0
 
     :cond_2
-    sget-object v2, Ljp/co/sony/mc/camera/view/focus/SingleFocusFrameView$FocusColor;->RED:Ljp/co/sony/mc/camera/view/focus/SingleFocusFrameView$FocusColor;
+    sget-object v3, Ljp/co/sony/mc/camera/view/focus/SingleFocusFrameView$FocusColor;->RED:Ljp/co/sony/mc/camera/view/focus/SingleFocusFrameView$FocusColor;
 
     .line 2684
     :goto_0
-    invoke-virtual {v0, v1, v2}, Ljp/co/sony/mc/camera/view/focus/SingleFocusFrameView;->setFocusRectangleColor(Ljp/co/sony/mc/camera/view/focus/SingleFocusFrameView$FocusState;Ljp/co/sony/mc/camera/view/focus/SingleFocusFrameView$FocusColor;)V
+    invoke-virtual {v0, v1, v3}, Ljp/co/sony/mc/camera/view/focus/SingleFocusFrameView;->setFocusRectangleColor(Ljp/co/sony/mc/camera/view/focus/SingleFocusFrameView$FocusState;Ljp/co/sony/mc/camera/view/focus/SingleFocusFrameView$FocusColor;)V
 
     .line 2686
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/focus/FocusRectangles;->mSingleAfRect:Ljp/co/sony/mc/camera/view/focus/SingleFocusFrameView;
 
-    const/4 v0, 0x0
-
-    invoke-virtual {p0, v0}, Ljp/co/sony/mc/camera/view/focus/SingleFocusFrameView;->setVisibility(I)V
+    invoke-virtual {p0, v2}, Ljp/co/sony/mc/camera/view/focus/SingleFocusFrameView;->setVisibility(I)V
 
     :goto_1
     return-void
@@ -2332,7 +2311,7 @@
     .line 2237
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/focus/FocusRectangles;->mTouchAfRect:Ljp/co/sony/mc/camera/view/focus/TouchFocusFrameView;
 
-    const v1, 0x7f0900a1
+    const v1, 0x7f09009d
 
     invoke-virtual {v0, v1}, Ljp/co/sony/mc/camera/view/focus/TouchFocusFrameView;->findViewById(I)Landroid/view/View;
 
@@ -2383,7 +2362,7 @@
     goto :goto_1
 
     :cond_1
-    const v1, 0x7f080097
+    const v1, 0x7f08008f
 
     .line 2254
     invoke-virtual {v0, v1}, Landroid/view/View;->setBackgroundResource(I)V
@@ -2394,7 +2373,7 @@
     goto :goto_1
 
     :cond_2
-    const v1, 0x7f080096
+    const v1, 0x7f08008e
 
     .line 2250
     invoke-virtual {v0, v1}, Landroid/view/View;->setBackgroundResource(I)V
@@ -2412,12 +2391,12 @@
 
     if-ne v1, v2, :cond_4
 
-    const v1, 0x7f080099
+    const v1, 0x7f080091
 
     goto :goto_0
 
     :cond_4
-    const v1, 0x7f080098
+    const v1, 0x7f080090
 
     :goto_0
     invoke-virtual {v0, v1}, Landroid/view/View;->setBackgroundResource(I)V
@@ -2470,7 +2449,7 @@
 .method private startFaceDetection()V
     .locals 2
 
-    .line 2807
+    .line 2799
     sget-object v0, Ljp/co/sony/mc/camera/view/focus/FocusRectangles$Event;->EVENT_FACE_DETECTION_STARTED:Ljp/co/sony/mc/camera/view/focus/FocusRectangles$Event;
 
     const/4 v1, 0x0
@@ -2523,7 +2502,7 @@
 
     const/16 v3, 0x8
 
-    const v4, 0x7f0802f0
+    const v4, 0x7f080306
 
     const/4 v5, 0x0
 
@@ -2579,7 +2558,7 @@
 
     if-ne v2, v3, :cond_3
 
-    const v2, 0x7f08041e
+    const v2, 0x7f0803fd
 
     move v4, v2
 
@@ -2637,7 +2616,7 @@
     goto :goto_2
 
     :cond_6
-    const v4, 0x7f08041d
+    const v4, 0x7f0803fc
 
     .line 1907
     :goto_2
@@ -2685,7 +2664,7 @@
     goto :goto_3
 
     :cond_a
-    const v4, 0x7f08041c
+    const v4, 0x7f0803fb
 
     .line 1887
     :goto_3
@@ -2714,7 +2693,7 @@
 .end method
 
 .method private updateFaceRectangles(Ljp/co/sony/mc/camera/view/focus/FaceInformationList;Z)V
-    .locals 5
+    .locals 7
 
     .line 1949
     invoke-virtual {p1}, Ljp/co/sony/mc/camera/view/focus/FaceInformationList;->getUserSelectedUuid()Ljava/lang/String;
@@ -2734,161 +2713,165 @@
 
     const/4 v2, 0x0
 
+    move v3, v2
+
     :goto_0
     invoke-interface {v1}, Ljava/util/Iterator;->hasNext()Z
 
-    move-result v3
+    move-result v4
 
-    if-eqz v3, :cond_5
+    if-eqz v4, :cond_5
 
     invoke-interface {v1}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
-    move-result-object v3
+    move-result-object v4
 
-    check-cast v3, Ljp/co/sony/mc/camera/view/focus/TaggedRectangle;
+    check-cast v4, Ljp/co/sony/mc/camera/view/focus/TaggedRectangle;
 
-    if-nez v3, :cond_1
+    const/4 v5, 0x1
+
+    if-nez v4, :cond_1
 
     .line 1953
-    sget-boolean v3, Ljp/co/sony/mc/camera/util/CamLog;->VERBOSE:Z
+    sget-boolean v4, Ljp/co/sony/mc/camera/util/CamLog;->VERBOSE:Z
 
-    if-eqz v3, :cond_0
+    if-eqz v4, :cond_0
 
     .line 1954
-    new-instance v3, Ljava/lang/StringBuilder;
+    new-array v4, v5, [Ljava/lang/String;
 
-    const-string/jumbo v4, "updateFaceRectangles: view is null, index = "
+    new-instance v5, Ljava/lang/StringBuilder;
 
-    invoke-direct {v3, v4}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+    const-string/jumbo v6, "updateFaceRectangles: view is null, index = "
 
-    invoke-virtual {v3, v2}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+    invoke-direct {v5, v6}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
-    move-result-object v3
+    invoke-virtual {v5, v3}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v3}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    move-result-object v5
 
-    move-result-object v3
+    invoke-virtual {v5}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    filled-new-array {v3}, [Ljava/lang/String;
+    move-result-object v5
 
-    move-result-object v3
+    aput-object v5, v4, v2
 
-    invoke-static {v3}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
+    invoke-static {v4}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
     :cond_0
     :goto_1
-    add-int/lit8 v2, v2, 0x1
+    add-int/lit8 v3, v3, 0x1
 
     goto :goto_0
 
     .line 1961
     :cond_1
-    invoke-virtual {v3}, Ljp/co/sony/mc/camera/view/focus/TaggedRectangle;->clearUpdated()V
+    invoke-virtual {v4}, Ljp/co/sony/mc/camera/view/focus/TaggedRectangle;->clearUpdated()V
 
     .line 1964
-    iget-boolean v4, p0, Ljp/co/sony/mc/camera/view/focus/FocusRectangles;->mIsFaceSelectEnabled:Z
+    iget-boolean v6, p0, Ljp/co/sony/mc/camera/view/focus/FocusRectangles;->mIsFaceSelectEnabled:Z
 
-    invoke-virtual {v3, v4}, Ljp/co/sony/mc/camera/view/focus/TaggedRectangle;->setTouchable(Z)V
+    invoke-virtual {v4, v6}, Ljp/co/sony/mc/camera/view/focus/TaggedRectangle;->setTouchable(Z)V
 
     .line 1966
     invoke-virtual {p1}, Ljp/co/sony/mc/camera/view/focus/FaceInformationList;->getNamedFaceList()Ljava/util/List;
 
-    move-result-object v4
+    move-result-object v6
 
-    invoke-interface {v4}, Ljava/util/List;->size()I
+    invoke-interface {v6}, Ljava/util/List;->size()I
 
-    move-result v4
+    move-result v6
 
-    if-ge v2, v4, :cond_4
+    if-ge v3, v6, :cond_4
 
     .line 1968
-    invoke-virtual {p1, v2}, Ljp/co/sony/mc/camera/view/focus/FaceInformationList;->getNamedFace(I)Ljp/co/sony/mc/camera/view/focus/NamedFace;
+    invoke-virtual {p1, v3}, Ljp/co/sony/mc/camera/view/focus/FaceInformationList;->getNamedFace(I)Ljp/co/sony/mc/camera/view/focus/NamedFace;
 
-    move-result-object v4
+    move-result-object v6
 
-    if-nez v4, :cond_2
+    if-nez v6, :cond_2
 
     .line 1970
-    sget-boolean v3, Ljp/co/sony/mc/camera/util/CamLog;->VERBOSE:Z
+    sget-boolean v4, Ljp/co/sony/mc/camera/util/CamLog;->VERBOSE:Z
 
-    if-eqz v3, :cond_0
+    if-eqz v4, :cond_0
 
     .line 1971
-    new-instance v3, Ljava/lang/StringBuilder;
+    new-array v4, v5, [Ljava/lang/String;
 
-    const-string/jumbo v4, "updateFaceRectangles: namedFace is null, index = "
+    new-instance v5, Ljava/lang/StringBuilder;
 
-    invoke-direct {v3, v4}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+    const-string/jumbo v6, "updateFaceRectangles: namedFace is null, index = "
 
-    invoke-virtual {v3, v2}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+    invoke-direct {v5, v6}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
-    move-result-object v3
+    invoke-virtual {v5, v3}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v3}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    move-result-object v5
 
-    move-result-object v3
+    invoke-virtual {v5}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    filled-new-array {v3}, [Ljava/lang/String;
+    move-result-object v5
 
-    move-result-object v3
+    aput-object v5, v4, v2
 
-    invoke-static {v3}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
+    invoke-static {v4}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
     goto :goto_1
 
     .line 1979
     :cond_2
-    invoke-direct {p0, v3, v4, p2}, Ljp/co/sony/mc/camera/view/focus/FocusRectangles;->updateRectangle(Ljp/co/sony/mc/camera/view/focus/TaggedRectangle;Ljp/co/sony/mc/camera/view/focus/NamedFace;Z)V
+    invoke-direct {p0, v4, v6, p2}, Ljp/co/sony/mc/camera/view/focus/FocusRectangles;->updateRectangle(Ljp/co/sony/mc/camera/view/focus/TaggedRectangle;Ljp/co/sony/mc/camera/view/focus/NamedFace;Z)V
 
     .line 1985
-    iget-object v4, v4, Ljp/co/sony/mc/camera/view/focus/NamedFace;->mUuid:Ljava/lang/String;
+    iget-object v5, v6, Ljp/co/sony/mc/camera/view/focus/NamedFace;->mUuid:Ljava/lang/String;
 
-    invoke-virtual {v4, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+    invoke-virtual {v5, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
-    move-result v4
+    move-result v5
 
-    if-eqz v4, :cond_0
+    if-eqz v5, :cond_0
 
     if-nez p2, :cond_0
 
     .line 1987
     invoke-direct {p0}, Ljp/co/sony/mc/camera/view/focus/FocusRectangles;->isAvailableFramePlatformDrawing()Z
 
-    move-result v4
+    move-result v5
 
-    if-eqz v4, :cond_3
+    if-eqz v5, :cond_3
 
-    const v4, 0x7f0802f0
+    const v5, 0x7f080306
 
     goto :goto_2
 
     :cond_3
-    const v4, 0x7f08041f
+    const v5, 0x7f0803fe
 
     .line 1990
     :goto_2
-    invoke-virtual {v3, v4}, Ljp/co/sony/mc/camera/view/focus/TaggedRectangle;->changeRectangleResource(I)V
+    invoke-virtual {v4, v5}, Ljp/co/sony/mc/camera/view/focus/TaggedRectangle;->changeRectangleResource(I)V
 
     .line 1991
-    invoke-virtual {v3}, Ljp/co/sony/mc/camera/view/focus/TaggedRectangle;->stopAnimation()V
+    invoke-virtual {v4}, Ljp/co/sony/mc/camera/view/focus/TaggedRectangle;->stopAnimation()V
 
     .line 1993
-    invoke-virtual {v3}, Ljp/co/sony/mc/camera/view/focus/TaggedRectangle;->getUuid()Ljava/lang/String;
+    invoke-virtual {v4}, Ljp/co/sony/mc/camera/view/focus/TaggedRectangle;->getUuid()Ljava/lang/String;
 
-    move-result-object v3
+    move-result-object v4
 
-    iput-object v3, p0, Ljp/co/sony/mc/camera/view/focus/FocusRectangles;->mLatestSelectedFaceUuid:Ljava/lang/String;
+    iput-object v4, p0, Ljp/co/sony/mc/camera/view/focus/FocusRectangles;->mLatestSelectedFaceUuid:Ljava/lang/String;
 
     goto :goto_1
 
     .line 1997
     :cond_4
-    invoke-virtual {v3}, Ljp/co/sony/mc/camera/view/focus/TaggedRectangle;->hide()V
+    invoke-virtual {v4}, Ljp/co/sony/mc/camera/view/focus/TaggedRectangle;->hide()V
 
-    const/4 v4, 0x0
+    const/4 v5, 0x0
 
     .line 1998
-    invoke-virtual {v3, v4, v4}, Ljp/co/sony/mc/camera/view/focus/TaggedRectangle;->update(Ljava/lang/String;Ljp/co/sony/mc/camera/device/CaptureResultNotifier$FaceRectType;)V
+    invoke-virtual {v4, v5, v5}, Ljp/co/sony/mc/camera/view/focus/TaggedRectangle;->update(Ljava/lang/String;Ljp/co/sony/mc/camera/device/CaptureResultNotifier$FaceRectType;)V
 
     goto :goto_1
 
@@ -2897,7 +2880,7 @@
 .end method
 
 .method private updateRectangle(Ljp/co/sony/mc/camera/view/focus/TaggedRectangle;Ljp/co/sony/mc/camera/view/focus/NamedFace;Z)V
-    .locals 3
+    .locals 4
 
     .line 2009
     invoke-static {}, Ljp/co/sony/mc/camera/util/PositionConverter;->getInstance()Ljp/co/sony/mc/camera/util/PositionConverter;
@@ -2910,35 +2893,37 @@
 
     move-result-object v0
 
+    const/4 v1, 0x1
+
     .line 2011
-    new-instance v1, Ljava/lang/StringBuilder;
+    new-array v1, v1, [Ljava/lang/String;
 
-    const-string v2, "Converted rectangle: "
+    new-instance v2, Ljava/lang/StringBuilder;
 
-    invoke-direct {v1, v2}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+    const-string v3, "Converted rectangle: "
 
-    invoke-virtual {v1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+    invoke-direct {v2, v3}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
-    move-result-object v1
+    invoke-virtual {v2, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    move-result-object v2
 
-    move-result-object v1
+    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    filled-new-array {v1}, [Ljava/lang/String;
+    move-result-object v2
 
-    move-result-object v1
+    const/4 v3, 0x0
+
+    aput-object v2, v1, v3
 
     invoke-static {v1}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
     .line 2013
     invoke-virtual {p1, v0}, Ljp/co/sony/mc/camera/view/focus/TaggedRectangle;->setFaceRect(Landroid/graphics/Rect;)V
 
-    const/4 v0, 0x0
-
     if-eqz p3, :cond_0
 
-    move p3, v0
+    move p3, v3
 
     goto :goto_0
 
@@ -2950,12 +2935,12 @@
 
     if-eqz p3, :cond_1
 
-    const p3, 0x7f0802f0
+    const p3, 0x7f080306
 
     goto :goto_0
 
     :cond_1
-    const p3, 0x7f08041c
+    const p3, 0x7f0803fb
 
     .line 2024
     :goto_0
@@ -3002,7 +2987,7 @@
     invoke-virtual {p1}, Ljp/co/sony/mc/camera/view/focus/TaggedRectangle;->requestLayout()V
 
     .line 2049
-    invoke-virtual {p1, v0}, Ljp/co/sony/mc/camera/view/focus/TaggedRectangle;->setVisibility(I)V
+    invoke-virtual {p1, v3}, Ljp/co/sony/mc/camera/view/focus/TaggedRectangle;->setVisibility(I)V
 
     :cond_4
     return-void
@@ -3361,7 +3346,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f07032f
+    const v2, 0x7f070360
 
     invoke-virtual {v1, v2}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
@@ -3374,7 +3359,7 @@
 
     move-result-object p0
 
-    const v2, 0x7f07032e
+    const v2, 0x7f07035f
 
     invoke-virtual {p0, v2}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 

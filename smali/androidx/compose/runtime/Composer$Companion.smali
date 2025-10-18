@@ -56,7 +56,7 @@
 
     sput-object v0, Landroidx/compose/runtime/Composer$Companion;->$$INSTANCE:Landroidx/compose/runtime/Composer$Companion;
 
-    .line 1072
+    .line 1091
     new-instance v0, Landroidx/compose/runtime/Composer$Companion$Empty$1;
 
     invoke-direct {v0}, Landroidx/compose/runtime/Composer$Companion$Empty$1;-><init>()V
@@ -69,7 +69,7 @@
 .method private constructor <init>()V
     .locals 0
 
-    .line 1066
+    .line 1085
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -80,7 +80,7 @@
 .method public final getEmpty()Ljava/lang/Object;
     .locals 0
 
-    .line 1072
+    .line 1091
     sget-object p0, Landroidx/compose/runtime/Composer$Companion;->Empty:Ljava/lang/Object;
 
     return-object p0
@@ -89,11 +89,7 @@
 .method public final setTracer(Landroidx/compose/runtime/CompositionTracer;)V
     .locals 0
 
-    const-string/jumbo p0, "tracer"
-
-    invoke-static {p1, p0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 1082
+    .line 1101
     invoke-static {p1}, Landroidx/compose/runtime/ComposerKt;->access$setCompositionTracer$p(Landroidx/compose/runtime/CompositionTracer;)V
 
     return-void

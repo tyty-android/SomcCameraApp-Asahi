@@ -44,11 +44,7 @@
 
 # direct methods
 .method public constructor <init>(Landroidx/compose/ui/text/input/OffsetMapping;II)V
-    .locals 1
-
-    const-string v0, "delegate"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+    .locals 0
 
     .line 43
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -77,16 +73,23 @@
 
     move-result v0
 
+    if-ltz p1, :cond_1
+
+    .line 57
+    iget v1, p0, Landroidx/compose/foundation/text/ValidatingOffsetMapping;->originalLength:I
+
+    if-gt p1, v1, :cond_1
+
     if-ltz v0, :cond_0
 
-    .line 55
+    .line 58
     iget v1, p0, Landroidx/compose/foundation/text/ValidatingOffsetMapping;->transformedLength:I
 
     if-gt v0, v1, :cond_0
 
-    return v0
+    goto :goto_0
 
-    .line 56
+    .line 59
     :cond_0
     new-instance v1, Ljava/lang/StringBuilder;
 
@@ -98,10 +101,10 @@
 
     move-result-object p1
 
-    .line 57
+    .line 60
     const-string v1, " -> "
 
-    .line 56
+    .line 59
     invoke-virtual {p1, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object p1
@@ -110,18 +113,18 @@
 
     move-result-object p1
 
-    .line 57
+    .line 60
     const-string v0, " is not in range of transformed text [0, "
 
-    .line 56
+    .line 59
     invoke-virtual {p1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object p1
 
-    .line 58
+    .line 61
     iget p0, p0, Landroidx/compose/foundation/text/ValidatingOffsetMapping;->transformedLength:I
 
-    .line 56
+    .line 59
     invoke-virtual {p1, p0}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
     move-result-object p0
@@ -136,7 +139,7 @@
 
     move-result-object p0
 
-    .line 55
+    .line 58
     new-instance p1, Ljava/lang/IllegalStateException;
 
     invoke-virtual {p0}, Ljava/lang/Object;->toString()Ljava/lang/String;
@@ -146,28 +149,39 @@
     invoke-direct {p1, p0}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
 
     throw p1
+
+    :cond_1
+    :goto_0
+    return v0
 .end method
 
 .method public transformedToOriginal(I)I
     .locals 3
 
-    .line 68
+    .line 72
     iget-object v0, p0, Landroidx/compose/foundation/text/ValidatingOffsetMapping;->delegate:Landroidx/compose/ui/text/input/OffsetMapping;
 
     invoke-interface {v0, p1}, Landroidx/compose/ui/text/input/OffsetMapping;->transformedToOriginal(I)I
 
     move-result v0
 
+    if-ltz p1, :cond_1
+
+    .line 75
+    iget v1, p0, Landroidx/compose/foundation/text/ValidatingOffsetMapping;->transformedLength:I
+
+    if-gt p1, v1, :cond_1
+
     if-ltz v0, :cond_0
 
-    .line 69
+    .line 76
     iget v1, p0, Landroidx/compose/foundation/text/ValidatingOffsetMapping;->originalLength:I
 
     if-gt v0, v1, :cond_0
 
-    return v0
+    goto :goto_0
 
-    .line 70
+    .line 77
     :cond_0
     new-instance v1, Ljava/lang/StringBuilder;
 
@@ -179,10 +193,10 @@
 
     move-result-object p1
 
-    .line 71
+    .line 78
     const-string v1, " -> "
 
-    .line 70
+    .line 77
     invoke-virtual {p1, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object p1
@@ -191,18 +205,18 @@
 
     move-result-object p1
 
-    .line 71
+    .line 78
     const-string v0, " is not in range of original text [0, "
 
-    .line 70
+    .line 77
     invoke-virtual {p1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object p1
 
-    .line 72
+    .line 79
     iget p0, p0, Landroidx/compose/foundation/text/ValidatingOffsetMapping;->originalLength:I
 
-    .line 70
+    .line 77
     invoke-virtual {p1, p0}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
     move-result-object p0
@@ -217,7 +231,7 @@
 
     move-result-object p0
 
-    .line 69
+    .line 76
     new-instance p1, Ljava/lang/IllegalStateException;
 
     invoke-virtual {p0}, Ljava/lang/Object;->toString()Ljava/lang/String;
@@ -227,4 +241,8 @@
     invoke-direct {p1, p0}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
 
     throw p1
+
+    :cond_1
+    :goto_0
+    return v0
 .end method

@@ -1,17 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <style name="ActionBar.Player" parent="@android:style/Widget.DeviceDefault.ActionBar">
-        <item name="android:background">@android:color/transparent</item>
-    </style>
     <style name="AlertDialog.AppCompat" parent="@style/Base.AlertDialog.AppCompat" />
     <style name="AlertDialog.AppCompat.Light" parent="@style/Base.AlertDialog.AppCompat.Light" />
-    <style name="AlertDialogText">
-        <item name="android:textAppearance">@android:style/TextAppearance.Material.Subhead</item>
-        <item name="android:textColor">?android:textColorPrimary</item>
-        <item name="android:gravity">center_vertical</item>
-        <item name="android:paddingStart">@dimen/alert_dialog_padding_start</item>
-        <item name="android:paddingEnd">@dimen/alert_dialog_padding_start</item>
-    </style>
     <style name="Animation.AppCompat.Dialog" parent="@style/Base.Animation.AppCompat.Dialog" />
     <style name="Animation.AppCompat.DropDownUp" parent="@style/Base.Animation.AppCompat.DropDownUp" />
     <style name="Animation.AppCompat.Tooltip" parent="@style/Base.Animation.AppCompat.Tooltip" />
@@ -24,9 +14,14 @@
         <item name="android:windowExitAnimation">@anim/m3_bottom_sheet_slide_out</item>
     </style>
     <style name="Animation.Material3.SideSheetDialog" parent="@style/Animation.AppCompat.Dialog">
-        <item name="android:windowEnterAnimation">@anim/m3_side_sheet_slide_in</item>
-        <item name="android:windowExitAnimation">@anim/m3_side_sheet_slide_out</item>
+        <item name="android:windowEnterAnimation">@anim/m3_side_sheet_enter_from_right</item>
+        <item name="android:windowExitAnimation">@anim/m3_side_sheet_exit_to_right</item>
     </style>
+    <style name="Animation.Material3.SideSheetDialog.Left" parent="@style/Animation.Material3.SideSheetDialog">
+        <item name="android:windowEnterAnimation">@anim/m3_side_sheet_enter_from_left</item>
+        <item name="android:windowExitAnimation">@anim/m3_side_sheet_exit_to_left</item>
+    </style>
+    <style name="Animation.Material3.SideSheetDialog.Right" parent="@style/Animation.Material3.SideSheetDialog" />
     <style name="Animation.MaterialComponents.BottomSheetDialog" parent="@style/Animation.AppCompat.Dialog">
         <item name="android:windowEnterAnimation">@anim/mtrl_bottom_sheet_slide_in</item>
         <item name="android:windowExitAnimation">@anim/mtrl_bottom_sheet_slide_out</item>
@@ -265,10 +260,24 @@
     <style name="Base.Theme.Material3.Dark" parent="@style/Base.V24.Theme.Material3.Dark" />
     <style name="Base.Theme.Material3.Dark.BottomSheetDialog" parent="@style/Base.V14.Theme.Material3.Dark.BottomSheetDialog" />
     <style name="Base.Theme.Material3.Dark.Dialog" parent="@style/Base.V24.Theme.Material3.Dark.Dialog" />
+    <style name="Base.Theme.Material3.Dark.Dialog.FixedSize" parent="@style/Base.Theme.Material3.Dark.Dialog">
+        <item name="windowFixedHeightMajor">@dimen/abc_dialog_fixed_height_major</item>
+        <item name="windowFixedHeightMinor">@dimen/abc_dialog_fixed_height_minor</item>
+        <item name="windowFixedWidthMajor">@dimen/abc_dialog_fixed_width_major</item>
+        <item name="windowFixedWidthMinor">@dimen/abc_dialog_fixed_width_minor</item>
+    </style>
+    <style name="Base.Theme.Material3.Dark.DialogWhenLarge" parent="@style/Base.Theme.Material3.Dark" />
     <style name="Base.Theme.Material3.Dark.SideSheetDialog" parent="@style/Base.V14.Theme.Material3.Dark.SideSheetDialog" />
     <style name="Base.Theme.Material3.Light" parent="@style/Base.V24.Theme.Material3.Light" />
     <style name="Base.Theme.Material3.Light.BottomSheetDialog" parent="@style/Base.V14.Theme.Material3.Light.BottomSheetDialog" />
     <style name="Base.Theme.Material3.Light.Dialog" parent="@style/Base.V24.Theme.Material3.Light.Dialog" />
+    <style name="Base.Theme.Material3.Light.Dialog.FixedSize" parent="@style/Base.Theme.Material3.Light.Dialog">
+        <item name="windowFixedHeightMajor">@dimen/abc_dialog_fixed_height_major</item>
+        <item name="windowFixedHeightMinor">@dimen/abc_dialog_fixed_height_minor</item>
+        <item name="windowFixedWidthMajor">@dimen/abc_dialog_fixed_width_major</item>
+        <item name="windowFixedWidthMinor">@dimen/abc_dialog_fixed_width_minor</item>
+    </style>
+    <style name="Base.Theme.Material3.Light.DialogWhenLarge" parent="@style/Base.Theme.Material3.Light" />
     <style name="Base.Theme.Material3.Light.SideSheetDialog" parent="@style/Base.V14.Theme.Material3.Light.SideSheetDialog" />
     <style name="Base.Theme.MaterialComponents" parent="@style/Base.V21.Theme.MaterialComponents" />
     <style name="Base.Theme.MaterialComponents.Bridge" parent="@style/Base.V14.Theme.MaterialComponents.Bridge" />
@@ -387,6 +396,7 @@
     </style>
     <style name="Base.ThemeOverlay.Material3.BottomSheetDialog" parent="@style/Base.V21.ThemeOverlay.Material3.BottomSheetDialog" />
     <style name="Base.ThemeOverlay.Material3.Dialog" parent="@style/Base.ThemeOverlay.MaterialComponents.Dialog">
+        <item name="android:backgroundDimAmount">@dimen/m3_comp_scrim_container_opacity</item>
         <item name="android:windowAnimationStyle">@style/MaterialAlertDialog.Material3.Animation</item>
         <item name="materialButtonStyle">@style/Widget.Material3.Button.TextButton.Dialog.Flush</item>
     </style>
@@ -407,6 +417,7 @@
     <style name="Base.ThemeOverlay.MaterialComponents.MaterialAlertDialog" parent="@style/Base.V14.ThemeOverlay.MaterialComponents.MaterialAlertDialog" />
     <style name="Base.V14.Theme.Material3.Dark" parent="@style/Theme.MaterialComponents">
         <item name="android:colorBackground">@color/m3_sys_color_dark_background</item>
+        <item name="android:backgroundDimAmount">@dimen/m3_comp_scrim_container_opacity</item>
         <item name="android:textColorPrimary">@color/m3_dark_default_color_primary_text</item>
         <item name="android:textColorPrimaryDisableOnly">@color/m3_dark_primary_text_disable_only</item>
         <item name="android:textColorSecondary">@color/m3_dark_default_color_secondary_text</item>
@@ -543,7 +554,10 @@
         <item name="materialIconButtonOutlinedStyle">@style/Widget.Material3.Button.IconButton.Outlined</item>
         <item name="materialIconButtonStyle">@style/Widget.Material3.Button.IconButton</item>
         <item name="materialSearchBarStyle">@style/Widget.Material3.SearchBar</item>
+        <item name="materialSearchViewPrefixStyle">@style/Widget.Material3.SearchView.Prefix</item>
         <item name="materialSearchViewStyle">@style/Widget.Material3.SearchView</item>
+        <item name="materialSearchViewToolbarHeight">@dimen/m3_searchview_height</item>
+        <item name="materialSearchViewToolbarStyle">@style/Widget.Material3.SearchView.Toolbar</item>
         <item name="materialSwitchStyle">@style/Widget.Material3.CompoundButton.MaterialSwitch</item>
         <item name="materialTimePickerTheme">@style/ThemeOverlay.Material3.MaterialTimePicker</item>
         <item name="motionDurationExtraLong1">@integer/m3_sys_motion_duration_extra_long1</item>
@@ -636,6 +650,7 @@
     </style>
     <style name="Base.V14.Theme.Material3.Dark.Dialog" parent="@style/Theme.MaterialComponents.Dialog">
         <item name="android:colorBackground">@color/m3_sys_color_dark_background</item>
+        <item name="android:backgroundDimAmount">@dimen/m3_comp_scrim_container_opacity</item>
         <item name="android:textColorPrimary">@color/m3_dark_default_color_primary_text</item>
         <item name="android:textColorPrimaryDisableOnly">@color/m3_dark_primary_text_disable_only</item>
         <item name="android:textColorSecondary">@color/m3_dark_default_color_secondary_text</item>
@@ -770,7 +785,10 @@
         <item name="materialIconButtonOutlinedStyle">@style/Widget.Material3.Button.IconButton.Outlined</item>
         <item name="materialIconButtonStyle">@style/Widget.Material3.Button.IconButton</item>
         <item name="materialSearchBarStyle">@style/Widget.Material3.SearchBar</item>
+        <item name="materialSearchViewPrefixStyle">@style/Widget.Material3.SearchView.Prefix</item>
         <item name="materialSearchViewStyle">@style/Widget.Material3.SearchView</item>
+        <item name="materialSearchViewToolbarHeight">@dimen/m3_searchview_height</item>
+        <item name="materialSearchViewToolbarStyle">@style/Widget.Material3.SearchView.Toolbar</item>
         <item name="materialSwitchStyle">@style/Widget.Material3.CompoundButton.MaterialSwitch</item>
         <item name="materialTimePickerTheme">@style/ThemeOverlay.Material3.MaterialTimePicker</item>
         <item name="motionDurationExtraLong1">@integer/m3_sys_motion_duration_extra_long1</item>
@@ -861,6 +879,7 @@
     </style>
     <style name="Base.V14.Theme.Material3.Light" parent="@style/Theme.MaterialComponents.Light">
         <item name="android:colorBackground">@color/m3_sys_color_light_background</item>
+        <item name="android:backgroundDimAmount">@dimen/m3_comp_scrim_container_opacity</item>
         <item name="android:textColorPrimary">@color/m3_default_color_primary_text</item>
         <item name="android:textColorPrimaryDisableOnly">@color/m3_primary_text_disable_only</item>
         <item name="android:textColorSecondary">@color/m3_default_color_secondary_text</item>
@@ -997,7 +1016,10 @@
         <item name="materialIconButtonOutlinedStyle">@style/Widget.Material3.Button.IconButton.Outlined</item>
         <item name="materialIconButtonStyle">@style/Widget.Material3.Button.IconButton</item>
         <item name="materialSearchBarStyle">@style/Widget.Material3.SearchBar</item>
+        <item name="materialSearchViewPrefixStyle">@style/Widget.Material3.SearchView.Prefix</item>
         <item name="materialSearchViewStyle">@style/Widget.Material3.SearchView</item>
+        <item name="materialSearchViewToolbarHeight">@dimen/m3_searchview_height</item>
+        <item name="materialSearchViewToolbarStyle">@style/Widget.Material3.SearchView.Toolbar</item>
         <item name="materialSwitchStyle">@style/Widget.Material3.CompoundButton.MaterialSwitch</item>
         <item name="materialTimePickerTheme">@style/ThemeOverlay.Material3.MaterialTimePicker</item>
         <item name="motionDurationExtraLong1">@integer/m3_sys_motion_duration_extra_long1</item>
@@ -1090,6 +1112,7 @@
     </style>
     <style name="Base.V14.Theme.Material3.Light.Dialog" parent="@style/Theme.MaterialComponents.Light.Dialog">
         <item name="android:colorBackground">@color/m3_sys_color_light_background</item>
+        <item name="android:backgroundDimAmount">@dimen/m3_comp_scrim_container_opacity</item>
         <item name="android:textColorPrimary">@color/m3_default_color_primary_text</item>
         <item name="android:textColorPrimaryDisableOnly">@color/m3_primary_text_disable_only</item>
         <item name="android:textColorSecondary">@color/m3_default_color_secondary_text</item>
@@ -1224,7 +1247,10 @@
         <item name="materialIconButtonOutlinedStyle">@style/Widget.Material3.Button.IconButton.Outlined</item>
         <item name="materialIconButtonStyle">@style/Widget.Material3.Button.IconButton</item>
         <item name="materialSearchBarStyle">@style/Widget.Material3.SearchBar</item>
+        <item name="materialSearchViewPrefixStyle">@style/Widget.Material3.SearchView.Prefix</item>
         <item name="materialSearchViewStyle">@style/Widget.Material3.SearchView</item>
+        <item name="materialSearchViewToolbarHeight">@dimen/m3_searchview_height</item>
+        <item name="materialSearchViewToolbarStyle">@style/Widget.Material3.SearchView.Toolbar</item>
         <item name="materialSwitchStyle">@style/Widget.Material3.CompoundButton.MaterialSwitch</item>
         <item name="materialTimePickerTheme">@style/ThemeOverlay.Material3.MaterialTimePicker</item>
         <item name="motionDurationExtraLong1">@integer/m3_sys_motion_duration_extra_long1</item>
@@ -1819,7 +1845,7 @@
         <item name="buttonBarButtonStyle">@style/Widget.MaterialComponents.Button.TextButton.Dialog.Flush</item>
     </style>
     <style name="Base.V14.ThemeOverlay.MaterialComponents.MaterialAlertDialog" parent="@style/ThemeOverlay.AppCompat.Dialog.Alert">
-        <item name="android:backgroundDimAmount">0.32</item>
+        <item name="android:backgroundDimAmount">@dimen/m3_comp_scrim_container_opacity</item>
         <item name="android:checkedTextViewStyle">@style/Widget.MaterialComponents.CheckedTextView</item>
         <item name="android:dialogCornerRadius">@null</item>
         <item name="alertDialogStyle">@style/MaterialAlertDialog.MaterialComponents</item>
@@ -2532,20 +2558,20 @@
         <item name="tabUnboundedRipple">false</item>
     </style>
     <style name="Base.Widget.Material3.ActionBar.Solid" parent="@style/Widget.AppCompat.ActionBar.Solid">
-        <item name="background">?colorSurface</item>
-        <item name="backgroundSplit">?colorSurface</item>
-        <item name="backgroundStacked">?colorSurface</item>
+        <item name="background">?colorSurfaceContainer</item>
+        <item name="backgroundSplit">?colorSurfaceContainer</item>
+        <item name="backgroundStacked">?colorSurfaceContainer</item>
         <item name="subtitleTextStyle">@style/TextAppearance.Material3.ActionBar.Subtitle</item>
         <item name="titleTextStyle">@style/TextAppearance.Material3.ActionBar.Title</item>
     </style>
     <style name="Base.Widget.Material3.ActionMode" parent="@style/Widget.AppCompat.ActionMode">
-        <item name="background">?colorSurface</item>
-        <item name="backgroundSplit">?colorSurface</item>
+        <item name="background">?colorSurfaceContainer</item>
+        <item name="backgroundSplit">?colorSurfaceContainer</item>
         <item name="subtitleTextStyle">@style/TextAppearance.Material3.ActionBar.Subtitle</item>
         <item name="titleTextStyle">@style/TextAppearance.Material3.ActionBar.Title</item>
     </style>
     <style name="Base.Widget.Material3.BottomNavigationView" parent="@style/Widget.MaterialComponents.BottomNavigationView">
-        <item name="android:background">?colorSurface</item>
+        <item name="android:background">?colorSurfaceContainer</item>
         <item name="android:minHeight">@dimen/m3_bottom_nav_min_height</item>
         <item name="backgroundTint">@null</item>
         <item name="elevation">@dimen/m3_comp_navigation_bar_container_elevation</item>
@@ -2558,6 +2584,8 @@
         <item name="itemTextAppearanceActive">?textAppearanceLabelMedium</item>
         <item name="itemTextAppearanceInactive">?textAppearanceLabelMedium</item>
         <item name="itemTextColor">@color/m3_navigation_bar_item_with_indicator_label_tint</item>
+        <item name="materialThemeOverlay">@style/ThemeOverlay.Material3.BottomNavigationView</item>
+        <item name="shapeAppearance">@style/ShapeAppearance.M3.Comp.NavigationBar.Container.Shape</item>
     </style>
     <style name="Base.Widget.Material3.CardView" parent="@style/Widget.MaterialComponents.CardView">
         <item name="android:stateListAnimator">@animator/m3_card_state_list_anim</item>
@@ -2675,9 +2703,9 @@
         <item name="shapeAppearanceOverlay">@null</item>
     </style>
     <style name="Base.Widget.Material3.Light.ActionBar.Solid" parent="@style/Widget.AppCompat.Light.ActionBar.Solid">
-        <item name="background">?colorSurface</item>
-        <item name="backgroundSplit">?colorSurface</item>
-        <item name="backgroundStacked">?colorSurface</item>
+        <item name="background">?colorSurfaceContainer</item>
+        <item name="backgroundSplit">?colorSurfaceContainer</item>
+        <item name="backgroundStacked">?colorSurfaceContainer</item>
         <item name="subtitleTextStyle">@style/TextAppearance.Material3.ActionBar.Subtitle</item>
         <item name="titleTextStyle">@style/TextAppearance.Material3.ActionBar.Title</item>
     </style>
@@ -2694,6 +2722,7 @@
     <style name="Base.Widget.Material3.TabLayout" parent="@style/Widget.MaterialComponents.TabLayout">
         <item name="android:background">?colorSurface</item>
         <item name="enforceTextAppearance">false</item>
+        <item name="materialThemeOverlay">@style/ThemeOverlay.Material3.TabLayout</item>
         <item name="tabIconTint">@color/m3_tabs_icon_color</item>
         <item name="tabIndicator">@drawable/m3_tabs_rounded_line_indicator</item>
         <item name="tabIndicatorAnimationDuration">?motionDurationLong2</item>
@@ -2833,6 +2862,8 @@
         <item name="counterOverflowTextColor">@color/mtrl_error</item>
         <item name="counterTextAppearance">?textAppearanceCaption</item>
         <item name="counterTextColor">@color/mtrl_indicator_text_color</item>
+        <item name="cursorColor">@null</item>
+        <item name="cursorErrorColor">@color/mtrl_error</item>
         <item name="endIconTint">@color/mtrl_outlined_icon_tint</item>
         <item name="enforceMaterialTheme">true</item>
         <item name="enforceTextAppearance">true</item>
@@ -2879,7 +2910,7 @@
         <item name="android:maxLines">1</item>
         <item name="android:textAllCaps">true</item>
     </style>
-    <style name="CameraAppTheme" parent="@style/Theme.AppCompat.NoActionBar">
+    <style name="CameraActivityTheme" parent="@style/Theme.AppCompat.NoActionBar">
         <item name="android:disabledAlpha">0.4</item>
         <item name="android:textColorPrimary">@color/camera_text_primary_stateful</item>
         <item name="android:textColorSecondary">@color/photopro_text_secondary_stateful</item>
@@ -2911,6 +2942,10 @@
         <item name="imageButtonStyle">@style/Widget.PhotoPro.ImageButton</item>
         <item name="switchStyle">@style/Widget.PhotoPro.Switch</item>
     </style>
+    <style name="CameraApplicationTheme" parent="@style/Theme.AppCompat.NoActionBar">
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowFullscreen">true</item>
+    </style>
     <style name="CardView" parent="@style/Base.CardView">
         <item name="cardBackgroundColor">?android:colorBackgroundFloating</item>
     </style>
@@ -2919,12 +2954,6 @@
     </style>
     <style name="CardView.Light" parent="@style/CardView">
         <item name="cardBackgroundColor">@color/cardview_light_background</item>
-    </style>
-    <style name="CombinationActionBarViewStyle">
-        <item name="android:gravity">center</item>
-        <item name="android:divider">?android:dividerVertical</item>
-        <item name="android:showDividers">middle</item>
-        <item name="android:dividerPadding">6.0dip</item>
     </style>
     <style name="DetailSwitchStyle" parent="@style/Theme.AppCompat.Light">
         <item name="colorAccent">@color/settings_color_primary</item>
@@ -2949,6 +2978,7 @@
     </style>
     <style name="MaterialAlertDialog.Material3" parent="@style/MaterialAlertDialog.MaterialComponents">
         <item name="android:layout">@layout/m3_alert_dialog</item>
+        <item name="backgroundTint">?colorSurfaceContainerHigh</item>
         <item name="enforceMaterialTheme">true</item>
         <item name="shapeAppearance">?shapeAppearanceCornerExtraLarge</item>
     </style>
@@ -2997,6 +3027,7 @@
         <item name="backgroundInsetEnd">@dimen/mtrl_alert_dialog_background_inset_end</item>
         <item name="backgroundInsetStart">@dimen/mtrl_alert_dialog_background_inset_start</item>
         <item name="backgroundInsetTop">@dimen/mtrl_alert_dialog_background_inset_top</item>
+        <item name="backgroundTint">?colorSurface</item>
         <item name="listItemLayout">@layout/mtrl_alert_select_dialog_item</item>
         <item name="multiChoiceItemLayout">@layout/mtrl_alert_select_dialog_multichoice</item>
         <item name="shapeAppearance">?shapeAppearanceMediumComponent</item>
@@ -3045,43 +3076,6 @@
         <item name="android:layout_gravity">center</item>
         <item name="android:textAlignment">center</item>
     </style>
-    <style name="Movies.ActionBar" parent="@android:style/Widget.DeviceDefault.ActionBar.Solid">
-        <item name="android:background">@android:color/transparent</item>
-        <item name="android:titleTextStyle">@style/Movies.ActionBarTitleText</item>
-        <item name="android:contentInsetStart">@dimen/action_bar_content_inset_start</item>
-    </style>
-    <style name="Movies.ActionBar.Dark" parent="@style/Movies.ActionBar">
-        <item name="android:titleTextStyle">@style/Movies.ActionBarTitleText.Dark</item>
-    </style>
-    <style name="Movies.ActionBar.Light" parent="@style/Movies.ActionBar">
-        <item name="android:titleTextStyle">@style/Movies.ActionBarTitleText.Light</item>
-    </style>
-    <style name="Movies.ActionBarOverflowButton" parent="@android:style/Widget.DeviceDefault.ActionButton.Overflow">
-        <item name="android:src">@drawable/actionbar_option_menu_icn</item>
-    </style>
-    <style name="Movies.ActionBarTitleText" parent="@android:style/TextAppearance.DeviceDefault.Widget.ActionBar.Title">
-        <item name="android:textSize">20.0sp</item>
-    </style>
-    <style name="Movies.ActionBarTitleText.Dark" parent="@style/Movies.ActionBarTitleText">
-        <item name="android:textColor">@color/statusbar_text_color_dark</item>
-    </style>
-    <style name="Movies.ActionBarTitleText.Light" parent="@style/Movies.ActionBarTitleText">
-        <item name="android:textColor">@color/statusbar_text_color_light</item>
-    </style>
-    <style name="Movies.Dark" parent="@style/Theme.AppCompat">
-        <item name="android:alertDialogTheme">@style/Theme.Dark.AlertDialog</item>
-        <item name="android:colorEdgeEffect">@color/edge_effect_color</item>
-        <item name="colorAccent">@color/material_accent</item>
-        <item name="colorPrimary">@color/material_primary</item>
-        <item name="colorPrimaryDark">@color/material_primary_dark</item>
-    </style>
-    <style name="Movies.White" parent="@style/Theme.AppCompat.Light">
-        <item name="android:alertDialogTheme">@style/Theme.Light.AlertDialog</item>
-        <item name="android:colorEdgeEffect">@color/edge_effect_color</item>
-        <item name="colorAccent">@color/material_accent</item>
-        <item name="colorPrimary">@color/material_primary_light</item>
-        <item name="colorPrimaryDark">@color/material_primary_light</item>
-    </style>
     <style name="OnScreenTextDropShadow">
         <item name="android:shadowColor">#80000000</item>
         <item name="android:shadowDx">0.0</item>
@@ -3124,7 +3118,6 @@
     <style name="Platform.V25.AppCompat" parent="@android:style/Theme.Material.NoActionBar" />
     <style name="Platform.V25.AppCompat.Light" parent="@android:style/Theme.Material.Light.NoActionBar" />
     <style name="Platform.Widget.AppCompat.Spinner" parent="@android:style/Widget.Holo.Spinner" />
-    <style name="PopupMenu" parent="@style/Widget.AppCompat.Light.PopupMenu" />
     <style name="Preference">
         <item name="android:layout">@layout/preference</item>
     </style>
@@ -3387,10 +3380,13 @@
     <style name="ShapeAppearance.M3.Comp.Badge.Large.Shape" parent="@style/ShapeAppearance.M3.Sys.Shape.Corner.Full" />
     <style name="ShapeAppearance.M3.Comp.Badge.Shape" parent="@style/ShapeAppearance.M3.Sys.Shape.Corner.Full" />
     <style name="ShapeAppearance.M3.Comp.BottomAppBar.Container.Shape" parent="@style/ShapeAppearance.M3.Sys.Shape.Corner.None" />
+    <style name="ShapeAppearance.M3.Comp.DatePicker.Modal.Date.Container.Shape" parent="@style/ShapeAppearance.M3.Sys.Shape.Corner.Full" />
     <style name="ShapeAppearance.M3.Comp.FilledButton.Container.Shape" parent="@style/ShapeAppearance.M3.Sys.Shape.Corner.Full" />
     <style name="ShapeAppearance.M3.Comp.NavigationBar.ActiveIndicator.Shape" parent="@style/ShapeAppearance.M3.Sys.Shape.Corner.Full" />
+    <style name="ShapeAppearance.M3.Comp.NavigationBar.Container.Shape" parent="@style/ShapeAppearance.M3.Sys.Shape.Corner.None" />
     <style name="ShapeAppearance.M3.Comp.NavigationDrawer.ActiveIndicator.Shape" parent="@style/ShapeAppearance.M3.Sys.Shape.Corner.Full" />
     <style name="ShapeAppearance.M3.Comp.NavigationRail.ActiveIndicator.Shape" parent="@style/ShapeAppearance.M3.Sys.Shape.Corner.Full" />
+    <style name="ShapeAppearance.M3.Comp.NavigationRail.Container.Shape" parent="@style/ShapeAppearance.M3.Sys.Shape.Corner.None" />
     <style name="ShapeAppearance.M3.Comp.SearchBar.Avatar.Shape" parent="@style/ShapeAppearance.M3.Sys.Shape.Corner.Full" />
     <style name="ShapeAppearance.M3.Comp.SearchBar.Container.Shape" parent="@style/ShapeAppearance.M3.Sys.Shape.Corner.Full" />
     <style name="ShapeAppearance.M3.Comp.SearchView.FullScreen.Container.Shape" parent="@style/ShapeAppearance.M3.Sys.Shape.Corner.None" />
@@ -3619,9 +3615,32 @@
     <style name="TextAppearance.AppCompat.Widget.PopupMenu.Small" parent="@style/Base.TextAppearance.AppCompat.Widget.PopupMenu.Small" />
     <style name="TextAppearance.AppCompat.Widget.Switch" parent="@style/Base.TextAppearance.AppCompat.Widget.Switch" />
     <style name="TextAppearance.AppCompat.Widget.TextView.SpinnerItem" parent="@style/Base.TextAppearance.AppCompat.Widget.TextView.SpinnerItem" />
+    <style name="TextAppearance.BasicModeDialThumbnailPickerIcon" parent="@style/TextAppearance.AppCompat">
+        <item name="android:textSize">@dimen/dial_thumbnail_picker_item_text_size</item>
+        <item name="android:fontFamily">sans-serif-condensed</item>
+        <item name="android:autoSizeTextType">uniform</item>
+        <item name="android:autoSizeMinTextSize">@dimen/dial_thumbnail_picker_item_text_size_small</item>
+        <item name="android:autoSizeMaxTextSize">@dimen/dial_thumbnail_picker_item_text_size</item>
+    </style>
     <style name="TextAppearance.Camera.Mic" parent="@style/TextAppearance.AppCompat">
         <item name="android:textSize">12.0sp</item>
         <item name="android:textColor">@color/camera_white_color</item>
+    </style>
+    <style name="TextAppearance.Camera.ModeDialPicker.Item.Label" parent="@android:style/Widget.DeviceDefault.TextView">
+        <item name="android:textSize">@dimen/camera_capturing_mode_text_size</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:gravity">center</item>
+        <item name="android:duplicateParentState">true</item>
+        <item name="android:minWidth">@dimen/camera_capturing_mode_width</item>
+        <item name="android:minHeight">@dimen/camera_capturing_mode_height</item>
+        <item name="android:includeFontPadding">true</item>
+        <item name="android:paddingHorizontal">@dimen/camera_capturing_mode_padding_horizontal</item>
+        <item name="android:fallbackLineSpacing">true</item>
+        <item name="android:lineHeight">@dimen/camera_capturing_mode_text_size</item>
+    </style>
+    <style name="TextAppearance.Camera.Mode_Custom_Item_Text" parent="@style/TextAppearance.AppCompat">
+        <item name="android:textSize">14.0dip</item>
+        <item name="android:textColor">?android:textColorPrimary</item>
     </style>
     <style name="TextAppearance.Camera.More_Mode_Selection_Text" parent="@style/TextAppearance.AppCompat">
         <item name="android:textSize">14.0dip</item>
@@ -3648,16 +3667,23 @@
         <item name="android:textSize">14.0dip</item>
         <item name="android:textColor">@color/camera_pro_mode_camera_status_bar_text_color</item>
     </style>
+    <style name="TextAppearance.CameraStatus" parent="@style/TextAppearance.AppCompat">
+        <item name="android:textSize">16.0sp</item>
+        <item name="android:textColor">@color/camera_pro_mode_camera_status_bar_text_color</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:shadowColor">#40000000</item>
+        <item name="android:shadowRadius">4.0</item>
+        <item name="android:autoSizeTextType">uniform</item>
+        <item name="android:autoSizeMinTextSize">4.0sp</item>
+        <item name="android:autoSizeMaxTextSize">16.0sp</item>
+        <item name="outlineStrokeColor">#b3000000</item>
+        <item name="outlineStrokeWidth">2.0dip</item>
+    </style>
     <style name="TextAppearance.Compat.Notification" parent="@android:style/TextAppearance.Material.Notification" />
     <style name="TextAppearance.Compat.Notification.Info" parent="@android:style/TextAppearance.Material.Notification.Info" />
-    <style name="TextAppearance.Compat.Notification.Info.Media" parent="@style/TextAppearance.Compat.Notification.Info" />
     <style name="TextAppearance.Compat.Notification.Line2" parent="@style/TextAppearance.Compat.Notification.Info" />
-    <style name="TextAppearance.Compat.Notification.Line2.Media" parent="@style/TextAppearance.Compat.Notification.Info.Media" />
-    <style name="TextAppearance.Compat.Notification.Media" parent="@style/TextAppearance.Compat.Notification" />
     <style name="TextAppearance.Compat.Notification.Time" parent="@android:style/TextAppearance.Material.Notification.Time" />
-    <style name="TextAppearance.Compat.Notification.Time.Media" parent="@style/TextAppearance.Compat.Notification.Time" />
     <style name="TextAppearance.Compat.Notification.Title" parent="@android:style/TextAppearance.Material.Notification.Title" />
-    <style name="TextAppearance.Compat.Notification.Title.Media" parent="@style/TextAppearance.Compat.Notification.Title" />
     <style name="TextAppearance.Design.CollapsingToolbar.Expanded" parent="@style/TextAppearance.AppCompat.Display1">
         <item name="android:textColor">?android:textColorPrimary</item>
     </style>
@@ -3683,12 +3709,6 @@
         <item name="android:textSize">@dimen/design_tab_text_size</item>
         <item name="android:textColor">@color/mtrl_tabs_legacy_text_color_selector</item>
         <item name="textAllCaps">true</item>
-    </style>
-    <style name="TextAppearance.ExtraLarge" parent="@android:style/TextAppearance.DeviceDefault.Large">
-        <item name="android:textSize">27.0dip</item>
-    </style>
-    <style name="TextAppearance.ExtraSmall" parent="@android:style/TextAppearance.DeviceDefault.Small">
-        <item name="android:textSize">12.0dip</item>
     </style>
     <style name="TextAppearance.M3.Sys.Typescale.BodyLarge" parent="@style/TextAppearance.AppCompat.Body2">
         <item name="android:textSize">16.0sp</item>
@@ -3985,10 +4005,6 @@
         <item name="android:textSize">16.0dip</item>
         <item name="android:textColor">?android:textColorPrimary</item>
     </style>
-    <style name="TextAppearance.PhotoPro.CameraStatus" parent="@style/TextAppearance.AppCompat">
-        <item name="android:textSize">16.0dip</item>
-        <item name="android:textColor">@color/camera_pro_mode_camera_status_bar_text_color</item>
-    </style>
     <style name="TextAppearance.PhotoPro.FnValue" parent="@style/TextAppearance.AppCompat">
         <item name="android:textSize">12.0dip</item>
         <item name="android:textColor">@color/camera_text_primary_stateful</item>
@@ -4011,9 +4027,13 @@
         <item name="android:textColor">@color/photopro_text_secondary</item>
     </style>
     <style name="TextAppearance.PhotoPro.Setting.Menu.Category" parent="@style/TextAppearance.AppCompat">
-        <item name="android:textSize">18.0dip</item>
+        <item name="android:textSize">18.0sp</item>
         <item name="android:textColor">@color/photopro_setting_menu_text</item>
+        <item name="android:maxLines">1</item>
         <item name="android:lineSpacingMultiplier">1.3</item>
+        <item name="android:autoSizeTextType">uniform</item>
+        <item name="android:autoSizeMinTextSize">6.0sp</item>
+        <item name="android:autoSizeMaxTextSize">18.0sp</item>
     </style>
     <style name="TextAppearance.PhotoPro.Setting.Menu.Category.Port" parent="@style/TextAppearance.AppCompat">
         <item name="android:textColor">@color/photopro_setting_menu_text</item>
@@ -4028,10 +4048,6 @@
         <item name="android:textSize">18.0dip</item>
         <item name="android:textColor">@color/photopro_setting_item_description_text</item>
         <item name="android:lineSpacingMultiplier">1.3</item>
-    </style>
-    <style name="TextAppearance.PhotoPro.SystemStatus" parent="@style/TextAppearance.AppCompat">
-        <item name="android:textSize">12.0dip</item>
-        <item name="android:textColor">#ffffffff</item>
     </style>
     <style name="TextAppearance.PhotoPro.Title" parent="@style/TextAppearance.AppCompat">
         <item name="android:textSize">16.0dip</item>
@@ -4068,6 +4084,11 @@
         <item name="android:textAllCaps">true</item>
     </style>
     <style name="TextAppearance.PhotoPro.Widget.DialPicker.Title" parent="@style/TextAppearance.AppCompat">
+        <item name="android:textSize">@dimen/basic_mode_color_tone_profile_button_text_size</item>
+        <item name="android:textColor">?android:textColorPrimary</item>
+        <item name="android:includeFontPadding">false</item>
+    </style>
+    <style name="TextAppearance.PhotoPro.Widget.DialPicker.Title.Info" parent="@style/TextAppearance.AppCompat">
         <item name="android:textSize">@dimen/photopro_dial_title_size</item>
         <item name="android:textColor">?android:textColorPrimary</item>
         <item name="android:includeFontPadding">false</item>
@@ -4075,6 +4096,26 @@
     <style name="TextAppearance.Preview.Menu" parent="@style/TextAppearance.AppCompat">
         <item name="android:textSize">16.0dip</item>
         <item name="android:textColor">?android:textColorPrimary</item>
+    </style>
+    <style name="TextAppearance.ProModeFnButton" parent="@style/TextAppearance.AppCompat">
+        <item name="android:textSize">16.0sp</item>
+        <item name="android:textColor">?android:textColorPrimary</item>
+        <item name="android:background">@drawable/camera_button</item>
+        <item name="android:scaleType">center</item>
+        <item name="android:soundEffectsEnabled">false</item>
+        <item name="android:hapticFeedbackEnabled">false</item>
+    </style>
+    <style name="TextAppearance.ProModeMenuButton" parent="@style/TextAppearance.AppCompat">
+        <item name="android:maxLines">1</item>
+        <item name="android:autoSizeTextType">uniform</item>
+        <item name="android:autoSizeMinTextSize">@dimen/pro_mode_top_pane_menu_min_text_size</item>
+        <item name="android:autoSizeMaxTextSize">@dimen/pro_mode_top_pane_menu_max_text_size</item>
+    </style>
+    <style name="TextAppearance.ShootingModeTitle" parent="@style/TextAppearance.AppCompat">
+        <item name="android:textSize">@dimen/pro_mode_capturing_mode_menu_title_text_size</item>
+        <item name="android:autoSizeTextType">uniform</item>
+        <item name="android:autoSizeMinTextSize">@dimen/pro_mode_capturing_mode_menu_title_min_text_size</item>
+        <item name="android:autoSizeMaxTextSize">@dimen/pro_mode_capturing_mode_menu_title_max_text_size</item>
     </style>
     <style name="TextAppearance.SomcCamera.BallonTipsStyleLarge" parent="@style/BallonTipsStyle">
         <item name="android:textSize">16.0dip</item>
@@ -4112,37 +4153,69 @@
     <style name="TextAppearance.SomcCamera.Small" parent="@style/OnScreenTextDropShadow">
         <item name="android:textSize">12.0dip</item>
     </style>
+    <style name="TextAppearance.SystemStatus" parent="@style/TextAppearance.AppCompat">
+        <item name="android:textSize">12.0sp</item>
+        <item name="android:textColor">#ffffffff</item>
+        <item name="android:shadowColor">#40000000</item>
+        <item name="android:shadowRadius">4.0</item>
+        <item name="android:autoSizeTextType">uniform</item>
+        <item name="android:autoSizeMinTextSize">4.0sp</item>
+        <item name="android:autoSizeMaxTextSize">12.0sp</item>
+        <item name="outlineStrokeColor">#b3000000</item>
+        <item name="outlineStrokeWidth">2.0dip</item>
+    </style>
+    <style name="TextAppearance.VideoFormatButton" parent="@style/TextAppearance.AppCompat">
+        <item name="android:textSize">@dimen/camera_top_pane_video_format_text_size</item>
+        <item name="android:textColor">@color/camera_top_pane_video_format_text_color</item>
+        <item name="android:autoSizeTextType">uniform</item>
+        <item name="android:autoSizeMinTextSize">@dimen/camera_top_pane_video_format_min_text_size</item>
+        <item name="android:autoSizeMaxTextSize">@dimen/camera_top_pane_video_format_max_text_size</item>
+    </style>
     <style name="TextAppearance.Widget.AppCompat.ExpandedMenu.Item" parent="@style/Base.TextAppearance.Widget.AppCompat.ExpandedMenu.Item" />
     <style name="TextAppearance.Widget.AppCompat.Toolbar.Subtitle" parent="@style/Base.TextAppearance.Widget.AppCompat.Toolbar.Subtitle" />
     <style name="TextAppearance.Widget.AppCompat.Toolbar.Title" parent="@style/Base.TextAppearance.Widget.AppCompat.Toolbar.Title" />
     <style name="TextAppearance.Widget.DialPicker.Item.Label" parent="@style/TextAppearance.AppCompat">
-        <item name="android:textSize">16.0dip</item>
+        <item name="android:textSize">16.0sp</item>
         <item name="android:textColor">@color/list_item_label_dial_picker_text_color</item>
         <item name="android:background">@drawable/list_item_label_dial_picker_background</item>
         <item name="android:includeFontPadding">false</item>
+        <item name="android:autoSizeTextType">uniform</item>
+        <item name="android:autoSizeMinTextSize">6.0sp</item>
+        <item name="android:autoSizeMaxTextSize">16.0sp</item>
         <item name="outlineStrokeColor">#b3000000</item>
         <item name="outlineStrokeWidth">2.0dip</item>
     </style>
+    <style name="TextAppearance.ZoomLabel" parent="@style/TextAppearance.AppCompat">
+        <item name="android:textSize">@dimen/auto_mode_zoom_label_text_size</item>
+        <item name="android:textColor">@color/photopro_auto_mode_zoom_ui_label</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:autoSizeTextType">uniform</item>
+        <item name="android:autoSizeMinTextSize">@dimen/auto_mode_zoom_label_min_text_size</item>
+        <item name="android:autoSizeMaxTextSize">@dimen/auto_mode_zoom_label_max_text_size</item>
+    </style>
     <style name="TextAppearanceAudioLevelMeterTitle">
-        <item name="android:textSize">12.0dip</item>
+        <item name="android:textSize">12.0sp</item>
         <item name="android:textColor">@color/camera_color_state_primary_text</item>
         <item name="android:gravity">center</item>
         <item name="android:includeFontPadding">false</item>
+        <item name="android:autoSizeTextType">uniform</item>
+        <item name="android:autoSizeMinTextSize">6.0sp</item>
+        <item name="android:autoSizeMaxTextSize">12.0sp</item>
     </style>
     <style name="TextAppearanceAutoModeSettingsCategoryTitle">
-        <item name="android:textSize">14.0dip</item>
+        <item name="android:textSize">14.0sp</item>
         <item name="android:textColor">@color/photopro_auto_mode_setting_category_title_text</item>
         <item name="android:lineSpacingMultiplier">1.3</item>
         <item name="android:fontFamily">sans-serif</item>
     </style>
     <style name="TextAppearanceAutoModeSettingsItemDesc">
-        <item name="android:textSize">14.0dip</item>
+        <item name="android:textSize">14.0sp</item>
         <item name="android:textColor">@color/photopro_auto_mode_setting_item_description_text</item>
         <item name="android:lineSpacingMultiplier">1.3</item>
         <item name="android:fontFamily">sans-serif</item>
     </style>
     <style name="TextAppearanceAutoModeSettingsItemTitle">
-        <item name="android:textSize">16.0dip</item>
+        <item name="android:textSize">16.0sp</item>
         <item name="android:textColor">@color/photopro_auto_mode_setting_item_title_text</item>
         <item name="android:lineSpacingMultiplier">1.3</item>
         <item name="android:fontFamily">sans-serif</item>
@@ -4160,19 +4233,19 @@
         <item name="android:fontFamily">sans-serif</item>
     </style>
     <style name="TextAppearanceSettingsDetailDesc">
-        <item name="android:textSize">16.0dip</item>
+        <item name="android:textSize">16.0sp</item>
         <item name="android:textColor">@color/settings_list_text_color</item>
         <item name="android:lineSpacingMultiplier">1.3</item>
         <item name="android:fontFamily">sans-serif</item>
     </style>
     <style name="TextAppearanceSettingsDetailItemDesc">
-        <item name="android:textSize">14.0dip</item>
+        <item name="android:textSize">14.0sp</item>
         <item name="android:textColor">@color/photopro_text_secondary</item>
         <item name="android:lineSpacingMultiplier">1.3</item>
         <item name="android:fontFamily">sans-serif</item>
     </style>
     <style name="TextAppearanceSettingsDetailItemTitle">
-        <item name="android:textSize">16.0dip</item>
+        <item name="android:textSize">16.0sp</item>
         <item name="android:textColor">@color/photopro_text_primary</item>
         <item name="android:lineSpacingMultiplier">1.3</item>
         <item name="android:fontFamily">sans-serif</item>
@@ -4184,14 +4257,36 @@
         <item name="android:fontFamily">sans-serif-medium</item>
     </style>
     <style name="TextAppearanceSettingsEndurance">
-        <item name="android:textSize">16.0dip</item>
+        <item name="android:textSize">16.0sp</item>
         <item name="android:textColor">@color/settings_list_text_color</item>
         <item name="android:fontFamily">sans-serif</item>
+        <item name="android:autoSizeTextType">uniform</item>
+        <item name="android:autoSizeMinTextSize">6.0sp</item>
+        <item name="android:autoSizeMaxTextSize">16.0sp</item>
     </style>
     <style name="TextAppearanceSettingsEnduranceDetail">
-        <item name="android:textSize">16.0dip</item>
+        <item name="android:textSize">16.0sp</item>
         <item name="android:textColor">@color/photopro_control_activated</item>
         <item name="android:fontFamily">sans-serif</item>
+        <item name="android:autoSizeTextType">uniform</item>
+        <item name="android:autoSizeMinTextSize">6.0sp</item>
+        <item name="android:autoSizeMaxTextSize">16.0sp</item>
+    </style>
+    <style name="TextAppearanceSettingsEnduranceTitle">
+        <item name="android:textSize">16.0sp</item>
+        <item name="android:textColor">@color/settings_list_text_color</item>
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:autoSizeTextType">uniform</item>
+        <item name="android:autoSizeMinTextSize">6.0sp</item>
+        <item name="android:autoSizeMaxTextSize">16.0sp</item>
+    </style>
+    <style name="TextAppearanceSettingsEnduranceValue">
+        <item name="android:textSize">16.0sp</item>
+        <item name="android:textColor">@color/photopro_control_activated</item>
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:autoSizeTextType">uniform</item>
+        <item name="android:autoSizeMinTextSize">6.0sp</item>
+        <item name="android:autoSizeMaxTextSize">16.0sp</item>
     </style>
     <style name="TextAppearanceSettingsItemDesc">
         <item name="android:textSize">14.0dip</item>
@@ -4205,10 +4300,19 @@
         <item name="android:fontFamily">sans-serif</item>
     </style>
     <style name="TextAppearanceSettingsItemTitle">
-        <item name="android:textSize">16.0dip</item>
+        <item name="android:textSize">16.0sp</item>
         <item name="android:textColor">@color/photopro_setting_item_title_text</item>
         <item name="android:lineSpacingMultiplier">1.3</item>
         <item name="android:fontFamily">sans-serif</item>
+    </style>
+    <style name="TextAppearanceSettingsRemoteControlTitle">
+        <item name="android:textSize">16.0sp</item>
+        <item name="android:textColor">@color/settings_list_text_color</item>
+        <item name="android:lineSpacingMultiplier">1.3</item>
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:autoSizeTextType">uniform</item>
+        <item name="android:autoSizeMinTextSize">6.0sp</item>
+        <item name="android:autoSizeMaxTextSize">16.0sp</item>
     </style>
     <style name="TextAppearanceSettingsWindowTitleStyle" parent="@style/RtlOverlay.DialogWindowTitle.AppCompat">
         <item name="android:fontFamily">sans-serif</item>
@@ -4269,14 +4373,14 @@
         <item name="android:backgroundDimEnabled">false</item>
         <item name="android:colorBackgroundCacheHint">@null</item>
     </style>
-    <style name="Theme.AutoModeSettings" parent="@style/Theme.AppCompat">
+    <style name="Theme.AutoModeSettings" parent="@style/Theme.AppCompat.NoActionBar">
         <item name="android:textColorPrimary">@color/camera_text_primary_stateful</item>
         <item name="android:textColorSecondary">@color/photopro_text_secondary_stateful</item>
         <item name="android:windowBackground">@color/photopro_background</item>
         <item name="android:textDirection">locale</item>
         <item name="android:colorControlActivated">@color/photopro_control_activated</item>
+        <item name="android:navigationBarColor">@android:color/black</item>
         <item name="android:colorBackgroundFloating">?colorBackgroundFloating</item>
-        <item name="actionBarStyle">@style/AutoModeActionBar</item>
         <item name="colorAccent">@color/photopro_accent</item>
         <item name="colorBackgroundFloating">@color/photopro_background</item>
         <item name="colorPrimary">@color/settings_header_background_color</item>
@@ -4294,49 +4398,6 @@
         <item name="colorAccent">@color/photopro_accent</item>
         <item name="colorBackgroundFloating">@color/photopro_background</item>
     </style>
-    <style name="Theme.Dark.AlertDialog" parent="@style/Theme.Dark.AlertDialog.Base" />
-    <style name="Theme.Dark.AlertDialog.Base" parent="@android:style/Theme.DeviceDefault.Dialog.MinWidth">
-        <item name="android:colorAccent">@color/material_accent</item>
-        <item name="colorAccent">@color/material_accent</item>
-        <item name="colorPrimary">@color/material_primary</item>
-        <item name="colorPrimaryDark">@color/material_primary_dark</item>
-    </style>
-    <style name="Theme.Dark.Movies" parent="@style/Theme.Dark.MoviesDefault">
-        <item name="android:windowBackground">@color/default_background_color</item>
-        <item name="android:actionBarStyle">@style/Movies.ActionBar</item>
-        <item name="android:popupMenuStyle">@style/PopupMenu</item>
-        <item name="android:windowTranslucentStatus">true</item>
-    </style>
-    <style name="Theme.Dark.MoviesDefault" parent="@style/Theme.Dark.MoviesDefaultBase">
-        <item name="android:colorEdgeEffect">@color/edge_effect_color</item>
-        <item name="colorAccent">@color/material_accent</item>
-        <item name="colorPrimary">@color/material_primary</item>
-        <item name="colorPrimaryDark">@color/material_primary_dark</item>
-    </style>
-    <style name="Theme.Dark.MoviesDefaultBase" parent="@style/Theme.AppCompat">
-        <item name="android:logo">@android:color/transparent</item>
-        <item name="android:displayOptions">homeAsUp</item>
-        <item name="android:actionOverflowButtonStyle">@style/Movies.ActionBarOverflowButton</item>
-        <item name="android:alertDialogTheme">@style/Theme.Dark.AlertDialog</item>
-        <item name="android:homeAsUpIndicator">@drawable/drawer_back_icn</item>
-        <item name="actionOverflowButtonStyle">@style/Movies.ActionBarOverflowButton</item>
-        <item name="colorAccent">@color/material_accent</item>
-        <item name="colorPrimary">@color/material_primary</item>
-        <item name="colorPrimaryDark">@color/material_primary_dark</item>
-        <item name="homeAsUpIndicator">@drawable/drawer_back_icn</item>
-        <item name="isLightTheme">false</item>
-        <item name="windowActionBar">false</item>
-        <item name="windowNoTitle">true</item>
-    </style>
-    <style name="Theme.Dark.Player" parent="@style/Theme.Dark.MoviesDefault">
-        <item name="android:windowBackground">@android:color/transparent</item>
-        <item name="android:actionBarStyle">@style/ActionBar.Player</item>
-        <item name="android:windowActionBarOverlay">true</item>
-        <item name="textColorAlertDialogListItem">?android:textColorSecondary</item>
-        <item name="toolbarPopupTheme">@style/Theme.Dark.Popup</item>
-        <item name="toolbarTheme">@style/Theme.Dark.Movies</item>
-    </style>
-    <style name="Theme.Dark.Popup" parent="@style/Movies.Dark" />
     <style name="Theme.DebugCameraSettingsMenu" parent="@style/Theme.AppCompat.Light">
         <item name="android:windowLightStatusBar">true</item>
     </style>
@@ -4368,62 +4429,6 @@
     <style name="Theme.Holo.SomcCamera.AlertDialog" parent="@style/Theme.SomcCamera.AlertDialog">
         <item name="android:windowBackground">@android:color/transparent</item>
     </style>
-    <style name="Theme.Light.AlertDialog" parent="@style/Theme.Light.AlertDialog.Base" />
-    <style name="Theme.Light.AlertDialog.Base" parent="@android:style/Theme.DeviceDefault.Light.Dialog.MinWidth">
-        <item name="android:colorAccent">@color/material_accent</item>
-        <item name="colorAccent">@color/material_accent</item>
-        <item name="colorPrimary">@color/material_primary_light</item>
-        <item name="colorPrimaryDark">@color/material_primary_light</item>
-    </style>
-    <style name="Theme.Light.Movies" parent="@style/Theme.Light.MoviesDefault">
-        <item name="android:windowBackground">@color/default_background_color</item>
-        <item name="android:actionBarStyle">@style/Movies.ActionBar</item>
-        <item name="android:popupMenuStyle">@style/PopupMenu</item>
-        <item name="android:windowTranslucentStatus">true</item>
-    </style>
-    <style name="Theme.Light.Movies.NoActionBarOverlay" parent="@style/Theme.Light.Movies">
-        <item name="android:windowActionBarOverlay">false</item>
-    </style>
-    <style name="Theme.Light.MoviesDefault" parent="@style/Theme.Light.MoviesDefaultBase">
-        <item name="android:colorEdgeEffect">@color/edge_effect_color</item>
-        <item name="colorAccent">@color/material_accent</item>
-        <item name="colorPrimary">@color/material_primary_light</item>
-        <item name="colorPrimaryDark">@color/material_primary_light</item>
-    </style>
-    <style name="Theme.Light.MoviesDefaultBase" parent="@style/Theme.AppCompat">
-        <item name="android:logo">@android:color/transparent</item>
-        <item name="android:displayOptions">homeAsUp</item>
-        <item name="android:actionOverflowButtonStyle">@style/Movies.ActionBarOverflowButton</item>
-        <item name="android:alertDialogTheme">@style/Theme.Light.AlertDialog</item>
-        <item name="android:homeAsUpIndicator">@drawable/drawer_back_icn</item>
-        <item name="actionOverflowButtonStyle">@style/Movies.ActionBarOverflowButton</item>
-        <item name="colorAccent">@color/material_accent</item>
-        <item name="colorPrimary">@color/material_primary_light</item>
-        <item name="colorPrimaryDark">@color/material_primary_light</item>
-        <item name="homeAsUpIndicator">@drawable/drawer_back_icn</item>
-        <item name="isLightTheme">true</item>
-        <item name="windowActionBar">false</item>
-        <item name="windowNoTitle">true</item>
-    </style>
-    <style name="Theme.Light.Player" parent="@style/Theme.Light.MoviesDefault">
-        <item name="android:windowBackground">@android:color/transparent</item>
-        <item name="android:actionBarStyle">@style/ActionBar.Player</item>
-        <item name="android:windowActionBarOverlay">true</item>
-        <item name="textColorAlertDialogListItem">?android:textColorSecondaryInverse</item>
-        <item name="toolbarPopupTheme">@style/Theme.Light.Popup</item>
-        <item name="toolbarTheme">@style/Theme.Light.Movies</item>
-    </style>
-    <style name="Theme.Light.Popup" parent="@style/Movies.White" />
-    <style name="Theme.ListSeparator" parent="@android:style/Widget.TextView">
-        <item name="android:textSize">14.0sp</item>
-        <item name="android:textStyle">bold</item>
-        <item name="android:textColor">@color/material_primary</item>
-        <item name="android:gravity">center_vertical</item>
-        <item name="android:paddingTop">8.0dip</item>
-        <item name="android:layout_width">fill_parent</item>
-        <item name="android:layout_height">wrap_content</item>
-        <item name="android:paddingStart">8.0dip</item>
-    </style>
     <style name="Theme.Material3.Dark" parent="@style/Base.Theme.Material3.Dark" />
     <style name="Theme.Material3.Dark.BottomSheetDialog" parent="@style/Base.Theme.Material3.Dark.BottomSheetDialog" />
     <style name="Theme.Material3.Dark.Dialog" parent="@style/Base.Theme.Material3.Dark.Dialog" />
@@ -4435,7 +4440,7 @@
         <item name="windowMinWidthMajor">@dimen/abc_dialog_min_width_major</item>
         <item name="windowMinWidthMinor">@dimen/abc_dialog_min_width_minor</item>
     </style>
-    <style name="Theme.Material3.Dark.DialogWhenLarge" parent="@style/Base.Theme.Material3.Dark.Dialog" />
+    <style name="Theme.Material3.Dark.DialogWhenLarge" parent="@style/Base.Theme.Material3.Dark.DialogWhenLarge" />
     <style name="Theme.Material3.Dark.NoActionBar" parent="@style/Theme.Material3.Dark">
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>
@@ -4510,7 +4515,12 @@
         <item name="colorTertiaryFixedDim">@color/m3_sys_color_dynamic_tertiary_fixed_dim</item>
         <item name="isMaterial3DynamicColorApplied">true</item>
     </style>
+    <style name="Theme.Material3.DynamicColors.Dark.NoActionBar" parent="@style/Theme.Material3.DynamicColors.Dark">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
     <style name="Theme.Material3.DynamicColors.DayNight" parent="@style/Theme.Material3.DynamicColors.Light" />
+    <style name="Theme.Material3.DynamicColors.DayNight.NoActionBar" parent="@style/Theme.Material3.DynamicColors.Light.NoActionBar" />
     <style name="Theme.Material3.DynamicColors.Light" parent="@style/Theme.Material3.Light">
         <item name="android:colorBackground">@color/m3_sys_color_dynamic_light_background</item>
         <item name="android:textColorPrimary">@color/m3_dynamic_default_color_primary_text</item>
@@ -4572,6 +4582,10 @@
         <item name="colorTertiaryFixedDim">@color/m3_sys_color_dynamic_tertiary_fixed_dim</item>
         <item name="isMaterial3DynamicColorApplied">true</item>
     </style>
+    <style name="Theme.Material3.DynamicColors.Light.NoActionBar" parent="@style/Theme.Material3.DynamicColors.Light">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
     <style name="Theme.Material3.Light" parent="@style/Base.Theme.Material3.Light" />
     <style name="Theme.Material3.Light.BottomSheetDialog" parent="@style/Base.Theme.Material3.Light.BottomSheetDialog" />
     <style name="Theme.Material3.Light.Dialog" parent="@style/Base.Theme.Material3.Light.Dialog" />
@@ -4583,7 +4597,7 @@
         <item name="windowMinWidthMajor">@dimen/abc_dialog_min_width_major</item>
         <item name="windowMinWidthMinor">@dimen/abc_dialog_min_width_minor</item>
     </style>
-    <style name="Theme.Material3.Light.DialogWhenLarge" parent="@style/Base.Theme.Material3.Light.Dialog" />
+    <style name="Theme.Material3.Light.DialogWhenLarge" parent="@style/Base.Theme.Material3.Light.DialogWhenLarge" />
     <style name="Theme.Material3.Light.NoActionBar" parent="@style/Theme.Material3.Light">
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>
@@ -4688,58 +4702,6 @@
         <item name="colorAccent">@color/photopro_accent</item>
         <item name="colorBackgroundFloating">@color/photopro_background</item>
     </style>
-    <style name="Theme.Picker.Dark" parent="@style/Theme.Picker.Dark.Base">
-        <item name="android:alertDialogTheme">@style/Theme.Dark.AlertDialog</item>
-        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
-        <item name="android:colorEdgeEffect">@color/edge_effect_color</item>
-    </style>
-    <style name="Theme.Picker.Dark.Base" parent="@android:style/Theme.DeviceDefault.NoActionBar">
-        <item name="android:windowBackground">@color/settings_background_dark</item>
-        <item name="android:alertDialogTheme">@style/Theme.Dark.AlertDialog</item>
-        <item name="colorAccent">@color/material_accent</item>
-        <item name="colorPrimary">@color/material_primary</item>
-        <item name="colorPrimaryDark">@color/material_primary_dark</item>
-    </style>
-    <style name="Theme.Picker.Light" parent="@style/Theme.Picker.Light.Base">
-        <item name="android:alertDialogTheme">@style/Theme.Light.AlertDialog</item>
-        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
-        <item name="android:colorEdgeEffect">@color/edge_effect_color</item>
-    </style>
-    <style name="Theme.Picker.Light.Base" parent="@android:style/Theme.DeviceDefault.Light.NoActionBar">
-        <item name="android:windowBackground">@color/settings_background_light</item>
-        <item name="android:alertDialogTheme">@style/Theme.Light.AlertDialog</item>
-        <item name="colorAccent">@color/material_accent</item>
-        <item name="colorPrimary">@color/material_primary_light</item>
-        <item name="colorPrimaryDark">@color/material_primary_light</item>
-    </style>
-    <style name="Theme.Settings.Dark" parent="@style/Theme.Settings.Dark.Base">
-        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
-        <item name="android:colorEdgeEffect">@color/edge_effect_color</item>
-        <item name="android:windowLightStatusBar">false</item>
-    </style>
-    <style name="Theme.Settings.Dark.Base" parent="@style/Theme.AppCompat.NoActionBar">
-        <item name="android:windowBackground">@color/settings_background_dark</item>
-        <item name="android:alertDialogTheme">@style/Theme.Dark.AlertDialog</item>
-        <item name="colorAccent">@color/material_accent</item>
-        <item name="colorPrimary">@color/material_primary</item>
-        <item name="colorPrimaryDark">@color/material_primary_dark</item>
-        <item name="preferenceFragmentBackgroundColor">@color/settings_background_dark</item>
-        <item name="settingDividerColor">@color/divider_color_dark</item>
-    </style>
-    <style name="Theme.Settings.Light" parent="@style/Theme.Settings.Light.Base">
-        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
-        <item name="android:colorEdgeEffect">@color/edge_effect_color</item>
-        <item name="android:windowLightStatusBar">true</item>
-    </style>
-    <style name="Theme.Settings.Light.Base" parent="@style/Theme.AppCompat.Light.NoActionBar">
-        <item name="android:windowBackground">@color/settings_background_light</item>
-        <item name="android:alertDialogTheme">@style/Theme.Light.AlertDialog</item>
-        <item name="colorAccent">@color/material_accent</item>
-        <item name="colorPrimary">@color/material_primary_light</item>
-        <item name="colorPrimaryDark">@color/material_primary_light</item>
-        <item name="preferenceFragmentBackgroundColor">@color/settings_background_light</item>
-        <item name="settingDividerColor">@color/divider_color_light</item>
-    </style>
     <style name="Theme.SomcCamera.AlertDialog" parent="@style/Theme.AppCompat.Dialog.Alert">
         <item name="android:textAppearanceMedium">@style/TextAppearance.SomcCamera.Dialog.Medium</item>
         <item name="android:windowNoTitle">true</item>
@@ -4800,13 +4762,16 @@
         <item name="actionMenuTextColor">?colorOnSurface</item>
         <item name="colorControlNormal">?colorOnSurface</item>
     </style>
+    <style name="ThemeOverlay.Material3.BottomNavigationView" parent="">
+        <item name="badgeStyle">@style/Widget.Material3.BottomNavigation.Badge</item>
+    </style>
     <style name="ThemeOverlay.Material3.BottomSheetDialog" parent="@style/Base.ThemeOverlay.Material3.BottomSheetDialog" />
     <style name="ThemeOverlay.Material3.Button" parent="">
         <item name="colorContainer">?colorPrimary</item>
         <item name="colorOnContainer">?colorOnPrimary</item>
     </style>
     <style name="ThemeOverlay.Material3.Button.ElevatedButton" parent="@style/ThemeOverlay.Material3.Button.TextButton">
-        <item name="colorContainer">?colorSurface</item>
+        <item name="colorContainer">?colorSurfaceContainerLow</item>
     </style>
     <style name="ThemeOverlay.Material3.Button.IconButton" parent="@style/ThemeOverlay.Material3.Button.TextButton">
         <item name="colorOnContainer">?colorPrimary</item>
@@ -4904,11 +4869,11 @@
         <item name="android:textColorPrimaryInverseDisableOnly">@color/m3_dynamic_primary_text_disable_only</item>
         <item name="android:textColorAlertDialogListItem">@color/m3_dynamic_dark_default_color_primary_text</item>
         <item name="android:textColorHighlightInverse">@color/m3_dynamic_highlighted_text</item>
-        <item name="colorError">@color/m3_sys_color_dark_error</item>
-        <item name="colorErrorContainer">@color/m3_sys_color_dark_error_container</item>
+        <item name="colorError">@color/material_dynamic_color_dark_error</item>
+        <item name="colorErrorContainer">@color/material_dynamic_color_dark_error_container</item>
         <item name="colorOnBackground">@color/m3_sys_color_dynamic_dark_on_background</item>
-        <item name="colorOnError">@color/m3_sys_color_dark_on_error</item>
-        <item name="colorOnErrorContainer">@color/m3_sys_color_dark_on_error_container</item>
+        <item name="colorOnError">@color/material_dynamic_color_dark_on_error</item>
+        <item name="colorOnErrorContainer">@color/material_dynamic_color_dark_on_error_container</item>
         <item name="colorOnPrimary">@color/m3_sys_color_dynamic_dark_on_primary</item>
         <item name="colorOnPrimaryContainer">@color/m3_sys_color_dynamic_dark_on_primary_container</item>
         <item name="colorOnPrimaryFixed">@color/m3_sys_color_dynamic_on_primary_fixed</item>
@@ -4967,11 +4932,11 @@
         <item name="android:textColorPrimaryInverseDisableOnly">@color/m3_dynamic_dark_primary_text_disable_only</item>
         <item name="android:textColorAlertDialogListItem">@color/m3_dynamic_default_color_primary_text</item>
         <item name="android:textColorHighlightInverse">@color/m3_dynamic_dark_highlighted_text</item>
-        <item name="colorError">@color/m3_sys_color_light_error</item>
-        <item name="colorErrorContainer">@color/m3_sys_color_light_error_container</item>
+        <item name="colorError">@color/material_dynamic_color_light_error</item>
+        <item name="colorErrorContainer">@color/material_dynamic_color_light_error_container</item>
         <item name="colorOnBackground">@color/m3_sys_color_dynamic_light_on_background</item>
-        <item name="colorOnError">@color/m3_sys_color_light_on_error</item>
-        <item name="colorOnErrorContainer">@color/m3_sys_color_light_on_error_container</item>
+        <item name="colorOnError">@color/material_dynamic_color_light_on_error</item>
+        <item name="colorOnErrorContainer">@color/material_dynamic_color_light_on_error_container</item>
         <item name="colorOnPrimary">@color/m3_sys_color_dynamic_light_on_primary</item>
         <item name="colorOnPrimaryContainer">@color/m3_sys_color_dynamic_light_on_primary_container</item>
         <item name="colorOnPrimaryFixed">@color/m3_sys_color_dynamic_on_primary_fixed</item>
@@ -5023,7 +4988,7 @@
         <item name="colorOnContainer">?colorOnSecondaryContainer</item>
     </style>
     <style name="ThemeOverlay.Material3.ExtendedFloatingActionButton.Surface" parent="">
-        <item name="colorContainer">?colorSurface</item>
+        <item name="colorContainer">?colorSurfaceContainerHigh</item>
         <item name="colorOnContainer">?colorPrimary</item>
     </style>
     <style name="ThemeOverlay.Material3.ExtendedFloatingActionButton.Tertiary" parent="">
@@ -5039,7 +5004,7 @@
         <item name="colorOnContainer">?colorOnSecondaryContainer</item>
     </style>
     <style name="ThemeOverlay.Material3.FloatingActionButton.Surface" parent="">
-        <item name="colorContainer">?colorSurface</item>
+        <item name="colorContainer">?colorSurfaceContainerHigh</item>
         <item name="colorOnContainer">?colorPrimary</item>
     </style>
     <style name="ThemeOverlay.Material3.FloatingActionButton.Tertiary" parent="">
@@ -5157,6 +5122,9 @@
         <item name="android:textViewStyle">@style/Widget.Material3.MaterialTimePicker.Display.HelperText</item>
         <item name="editTextStyle">@style/Widget.Material3.MaterialTimePicker.Display.TextInputEditText</item>
     </style>
+    <style name="ThemeOverlay.Material3.NavigationRailView" parent="">
+        <item name="badgeStyle">@style/Widget.Material3.NavigationRailView.Badge</item>
+    </style>
     <style name="ThemeOverlay.Material3.NavigationView" parent="">
         <item name="android:listDivider">?colorOutline</item>
     </style>
@@ -5221,6 +5189,9 @@
     <style name="ThemeOverlay.Material3.SideSheetDialog" parent="@style/Base.ThemeOverlay.Material3.SideSheetDialog" />
     <style name="ThemeOverlay.Material3.Snackbar" parent="">
         <item name="colorOnSurface">?colorOnBackground</item>
+    </style>
+    <style name="ThemeOverlay.Material3.TabLayout" parent="">
+        <item name="badgeStyle">@style/Widget.Material3.Badge.AdjustToBounds</item>
     </style>
     <style name="ThemeOverlay.Material3.TextInputEditText" parent="@style/Base.ThemeOverlay.Material3.TextInputEditText">
         <item name="colorControlNormal">@color/m3_textfield_indicator_text_color</item>
@@ -5400,7 +5371,6 @@
         <item name="actionMenuTextColor">@color/material_on_surface_emphasis_medium</item>
         <item name="colorControlNormal">@color/material_on_surface_emphasis_medium</item>
     </style>
-    <style name="WebView" parent="@style/Theme.AppCompat.Light" />
     <style name="Widget.AppCompat.ActionBar" parent="@style/Base.Widget.AppCompat.ActionBar" />
     <style name="Widget.AppCompat.ActionBar.Solid" parent="@style/Base.Widget.AppCompat.ActionBar.Solid" />
     <style name="Widget.AppCompat.ActionBar.TabBar" parent="@style/Base.Widget.AppCompat.ActionBar.TabBar" />
@@ -5483,7 +5453,7 @@
         <item name="outlineStrokeWidth">2.0dip</item>
     </style>
     <style name="Widget.Camera.Footer.AudioLevel" parent="@style/TextAppearance.AppCompat">
-        <item name="android:background">@color/camera_button_background_stateful</item>
+        <item name="android:background">@color/camera_transparent_color</item>
     </style>
     <style name="Widget.Camera.HeaderOutlineText.Scene" parent="@android:style/Widget.DeviceDefault.TextView">
         <item name="outlineStrokeColor">@color/photopro_text_scene_outline_header</item>
@@ -5630,48 +5600,46 @@
         <item name="suffixTextAppearance">@style/TextAppearance.Design.Suffix</item>
         <item name="suffixTextColor">@null</item>
     </style>
-    <style name="Widget.Material3.ActionBar.Solid" parent="@style/Base.Widget.Material3.ActionBar.Solid">
-        <item name="background">@drawable/m3_appbar_background</item>
-        <item name="backgroundSplit">@drawable/m3_appbar_background</item>
-        <item name="backgroundStacked">@drawable/m3_appbar_background</item>
-    </style>
-    <style name="Widget.Material3.ActionMode" parent="@style/Base.Widget.Material3.ActionMode">
-        <item name="background">@drawable/m3_appbar_background</item>
-        <item name="backgroundSplit">@drawable/m3_appbar_background</item>
-    </style>
+    <style name="Widget.Material3.ActionBar.Solid" parent="@style/Base.Widget.Material3.ActionBar.Solid" />
+    <style name="Widget.Material3.ActionMode" parent="@style/Base.Widget.Material3.ActionMode" />
     <style name="Widget.Material3.AppBarLayout" parent="@style/Widget.MaterialComponents.AppBarLayout.Surface">
         <item name="android:background">?colorSurface</item>
         <item name="android:stateListAnimator">@animator/m3_appbar_state_list_animator</item>
         <item name="android:outlineSpotShadowColor">@android:color/transparent</item>
         <item name="android:outlineAmbientShadowColor">@android:color/transparent</item>
         <item name="liftOnScroll">true</item>
+        <item name="liftOnScrollColor">?colorSurfaceContainer</item>
     </style>
     <style name="Widget.Material3.AutoCompleteTextView.FilledBox" parent="@style/Widget.MaterialComponents.AutoCompleteTextView.FilledBox">
         <item name="android:textAppearance">?textAppearanceBodyLarge</item>
         <item name="android:popupElevation">@dimen/m3_comp_filled_autocomplete_menu_container_elevation</item>
+        <item name="dropDownBackgroundTint">?colorSurfaceContainer</item>
         <item name="simpleItemLayout">@layout/m3_auto_complete_simple_item</item>
-        <item name="simpleItemSelectedColor">?colorSurfaceVariant</item>
+        <item name="simpleItemSelectedColor">?colorSecondaryContainer</item>
         <item name="simpleItemSelectedRippleColor">@color/m3_simple_item_ripple_color</item>
     </style>
     <style name="Widget.Material3.AutoCompleteTextView.FilledBox.Dense" parent="@style/Widget.MaterialComponents.AutoCompleteTextView.FilledBox.Dense">
         <item name="android:textAppearance">?textAppearanceBodyLarge</item>
         <item name="android:popupElevation">@dimen/m3_comp_filled_autocomplete_menu_container_elevation</item>
+        <item name="dropDownBackgroundTint">?colorSurfaceContainer</item>
         <item name="simpleItemLayout">@layout/m3_auto_complete_simple_item</item>
-        <item name="simpleItemSelectedColor">?colorSurfaceVariant</item>
+        <item name="simpleItemSelectedColor">?colorSecondaryContainer</item>
         <item name="simpleItemSelectedRippleColor">@color/m3_simple_item_ripple_color</item>
     </style>
     <style name="Widget.Material3.AutoCompleteTextView.OutlinedBox" parent="@style/Widget.MaterialComponents.AutoCompleteTextView.OutlinedBox">
         <item name="android:textAppearance">?textAppearanceBodyLarge</item>
         <item name="android:popupElevation">@dimen/m3_comp_outlined_autocomplete_menu_container_elevation</item>
+        <item name="dropDownBackgroundTint">?colorSurfaceContainer</item>
         <item name="simpleItemLayout">@layout/m3_auto_complete_simple_item</item>
-        <item name="simpleItemSelectedColor">?colorSurfaceVariant</item>
+        <item name="simpleItemSelectedColor">?colorSecondaryContainer</item>
         <item name="simpleItemSelectedRippleColor">@color/m3_simple_item_ripple_color</item>
     </style>
     <style name="Widget.Material3.AutoCompleteTextView.OutlinedBox.Dense" parent="@style/Widget.MaterialComponents.AutoCompleteTextView.OutlinedBox.Dense">
         <item name="android:textAppearance">?textAppearanceBodyLarge</item>
         <item name="android:popupElevation">@dimen/m3_comp_outlined_autocomplete_menu_container_elevation</item>
+        <item name="dropDownBackgroundTint">?colorSurfaceContainer</item>
         <item name="simpleItemLayout">@layout/m3_auto_complete_simple_item</item>
-        <item name="simpleItemSelectedColor">?colorSurfaceVariant</item>
+        <item name="simpleItemSelectedColor">?colorSecondaryContainer</item>
         <item name="simpleItemSelectedRippleColor">@color/m3_simple_item_ripple_color</item>
     </style>
     <style name="Widget.Material3.Badge" parent="@style/Widget.MaterialComponents.Badge">
@@ -5680,6 +5648,7 @@
         <item name="badgeShapeAppearance">@style/ShapeAppearance.M3.Comp.Badge.Shape</item>
         <item name="badgeTextAppearance">?textAppearanceLabelSmall</item>
         <item name="badgeTextColor">?colorOnError</item>
+        <item name="badgeVerticalPadding">@dimen/m3_badge_with_text_vertical_padding</item>
         <item name="badgeWidth">@dimen/m3_badge_size</item>
         <item name="badgeWithTextHeight">@dimen/m3_badge_with_text_size</item>
         <item name="badgeWithTextShapeAppearance">@style/ShapeAppearance.M3.Comp.Badge.Shape</item>
@@ -5690,6 +5659,9 @@
         <item name="verticalOffset">@dimen/m3_badge_offset</item>
         <item name="verticalOffsetWithText">@dimen/m3_badge_with_text_offset</item>
     </style>
+    <style name="Widget.Material3.Badge.AdjustToBounds" parent="@style/Widget.Material3.Badge">
+        <item name="autoAdjustToWithinGrandparentBounds">true</item>
+    </style>
     <style name="Widget.Material3.BottomAppBar" parent="@style/Widget.MaterialComponents.BottomAppBar">
         <item name="android:paddingLeft">@dimen/m3_bottomappbar_horizontal_padding</item>
         <item name="android:paddingRight">@dimen/m3_bottomappbar_horizontal_padding</item>
@@ -5697,7 +5669,7 @@
         <item name="android:paddingStart">@dimen/m3_bottomappbar_horizontal_padding</item>
         <item name="android:paddingEnd">@dimen/m3_bottomappbar_horizontal_padding</item>
         <item name="addElevationShadow">false</item>
-        <item name="backgroundTint">?colorSurface</item>
+        <item name="backgroundTint">?colorSurfaceContainer</item>
         <item name="elevation">@dimen/m3_comp_bottom_app_bar_container_elevation</item>
         <item name="fabAlignmentMode">end</item>
         <item name="fabAlignmentModeEndMargin">@dimen/m3_bottomappbar_fab_end_margin</item>
@@ -5718,7 +5690,7 @@
         <item name="android:minWidth">@dimen/mtrl_min_touch_target_size</item>
     </style>
     <style name="Widget.Material3.BottomAppBar.Legacy" parent="@style/Widget.MaterialComponents.BottomAppBar">
-        <item name="backgroundTint">?colorSurface</item>
+        <item name="backgroundTint">?colorSurfaceContainer</item>
         <item name="elevation">@dimen/m3_comp_bottom_app_bar_container_elevation</item>
         <item name="fabAlignmentMode">center</item>
         <item name="fabAlignmentModeEndMargin">@null</item>
@@ -5731,6 +5703,9 @@
         <item name="menuAlignmentMode">auto</item>
         <item name="navigationIconTint">?colorOnSurfaceVariant</item>
         <item name="removeEmbeddedFabElevation">false</item>
+    </style>
+    <style name="Widget.Material3.BottomNavigation.Badge" parent="@style/Widget.Material3.Badge.AdjustToBounds">
+        <item name="verticalOffsetWithText">@dimen/m3_nav_badge_with_text_vertical_offset</item>
     </style>
     <style name="Widget.Material3.BottomNavigationView" parent="@style/Base.Widget.Material3.BottomNavigationView">
         <item name="android:outlineSpotShadowColor">@android:color/transparent</item>
@@ -5745,7 +5720,7 @@
     </style>
     <style name="Widget.Material3.BottomSheet" parent="@style/Widget.MaterialComponents.BottomSheet">
         <item name="android:elevation">@dimen/m3_bottom_sheet_elevation</item>
-        <item name="backgroundTint">?colorSurface</item>
+        <item name="backgroundTint">?colorSurfaceContainerLow</item>
         <item name="marginLeftSystemWindowInsets">true</item>
         <item name="marginRightSystemWindowInsets">true</item>
         <item name="paddingBottomSystemWindowInsets">true</item>
@@ -5762,7 +5737,7 @@
         <item name="android:minWidth">@dimen/mtrl_min_touch_target_size</item>
         <item name="android:minHeight">@dimen/mtrl_min_touch_target_size</item>
         <item name="android:contentDescription">@string/bottomsheet_drag_handle_content_description</item>
-        <item name="srcCompat">@drawable/mtrl_bottomsheet_drag_handle</item>
+        <item name="srcCompat">@drawable/m3_bottom_sheet_drag_handle</item>
         <item name="tint">?colorOnSurfaceVariant</item>
     </style>
     <style name="Widget.Material3.BottomSheet.Modal" parent="@style/Widget.Material3.BottomSheet">
@@ -5893,14 +5868,14 @@
     </style>
     <style name="Widget.Material3.CardView.Elevated" parent="@style/Base.Widget.Material3.CardView">
         <item name="android:stateListAnimator">@animator/m3_card_elevated_state_list_anim</item>
-        <item name="cardBackgroundColor">?colorSurface</item>
+        <item name="cardBackgroundColor">?colorSurfaceContainerLow</item>
         <item name="cardElevation">@dimen/m3_card_elevated_elevation</item>
         <item name="checkedIconSize">@dimen/m3_comp_elevated_card_icon_size</item>
         <item name="shapeAppearance">?shapeAppearanceCornerMedium</item>
         <item name="strokeWidth">0.0dip</item>
     </style>
     <style name="Widget.Material3.CardView.Filled" parent="@style/Base.Widget.Material3.CardView">
-        <item name="cardBackgroundColor">?colorSurfaceVariant</item>
+        <item name="cardBackgroundColor">?colorSurfaceContainerHighest</item>
         <item name="cardElevation">@dimen/m3_comp_filled_card_container_elevation</item>
         <item name="checkedIconSize">@dimen/m3_comp_filled_card_icon_size</item>
         <item name="shapeAppearance">?shapeAppearanceCornerMedium</item>
@@ -6035,11 +6010,36 @@
     </style>
     <style name="Widget.Material3.CircularProgressIndicator" parent="@style/Widget.MaterialComponents.CircularProgressIndicator">
         <item name="indicatorColor">?colorPrimary</item>
-        <item name="trackThickness">@dimen/m3_comp_circular_progress_indicator_active_indicator_width</item>
+        <item name="indicatorTrackGapSize">@dimen/m3_comp_progress_indicator_active_indicator_track_space</item>
+        <item name="trackColor">?colorSecondaryContainer</item>
+        <item name="trackCornerRadius">2.0dip</item>
+        <item name="trackThickness">@dimen/m3_comp_progress_indicator_track_thickness</item>
     </style>
-    <style name="Widget.Material3.CircularProgressIndicator.ExtraSmall" parent="@style/Widget.MaterialComponents.CircularProgressIndicator.ExtraSmall" />
-    <style name="Widget.Material3.CircularProgressIndicator.Medium" parent="@style/Widget.MaterialComponents.CircularProgressIndicator.Medium" />
-    <style name="Widget.Material3.CircularProgressIndicator.Small" parent="@style/Widget.MaterialComponents.CircularProgressIndicator.Small" />
+    <style name="Widget.Material3.CircularProgressIndicator.ExtraSmall" parent="@style/Widget.Material3.CircularProgressIndicator">
+        <item name="indicatorInset">@dimen/mtrl_progress_circular_inset_extra_small</item>
+        <item name="indicatorSize">@dimen/mtrl_progress_circular_size_extra_small</item>
+        <item name="indicatorTrackGapSize">2.0dip</item>
+        <item name="trackCornerRadius">1.25dip</item>
+        <item name="trackThickness">@dimen/mtrl_progress_circular_track_thickness_extra_small</item>
+    </style>
+    <style name="Widget.Material3.CircularProgressIndicator.Legacy" parent="@style/Widget.MaterialComponents.CircularProgressIndicator">
+        <item name="indicatorColor">?colorPrimary</item>
+        <item name="indicatorTrackGapSize">0.0dip</item>
+        <item name="trackColor">@android:color/transparent</item>
+        <item name="trackCornerRadius">0.0dip</item>
+        <item name="trackThickness">4.0dip</item>
+    </style>
+    <style name="Widget.Material3.CircularProgressIndicator.Legacy.ExtraSmall" parent="@style/Widget.MaterialComponents.CircularProgressIndicator.ExtraSmall" />
+    <style name="Widget.Material3.CircularProgressIndicator.Legacy.Medium" parent="@style/Widget.MaterialComponents.CircularProgressIndicator.Medium" />
+    <style name="Widget.Material3.CircularProgressIndicator.Legacy.Small" parent="@style/Widget.MaterialComponents.CircularProgressIndicator.Small" />
+    <style name="Widget.Material3.CircularProgressIndicator.Medium" parent="@style/Widget.Material3.CircularProgressIndicator" />
+    <style name="Widget.Material3.CircularProgressIndicator.Small" parent="@style/Widget.Material3.CircularProgressIndicator">
+        <item name="indicatorInset">@dimen/mtrl_progress_circular_inset_small</item>
+        <item name="indicatorSize">@dimen/mtrl_progress_circular_size_small</item>
+        <item name="indicatorTrackGapSize">3.0dip</item>
+        <item name="trackCornerRadius">1.5dip</item>
+        <item name="trackThickness">@dimen/mtrl_progress_circular_track_thickness_small</item>
+    </style>
     <style name="Widget.Material3.CollapsingToolbar" parent="@style/Base.Widget.Material3.CollapsingToolbar">
         <item name="expandedTitleTextAppearance">?textAppearanceHeadlineSmall</item>
         <item name="scrimVisibleHeightTrigger">@dimen/m3_appbar_scrim_height_trigger</item>
@@ -6064,6 +6064,7 @@
         <item name="android:minHeight">?minTouchTargetSize</item>
         <item name="android:thumb">@drawable/mtrl_switch_thumb</item>
         <item name="switchPadding">@dimen/mtrl_switch_text_padding</item>
+        <item name="thumbIconSize">@dimen/mtrl_switch_thumb_icon_size</item>
         <item name="thumbIconTint">@color/mtrl_switch_thumb_icon_tint</item>
         <item name="thumbTint">@color/mtrl_switch_thumb_tint</item>
         <item name="track">@drawable/mtrl_switch_track</item>
@@ -6140,24 +6141,32 @@
     <style name="Widget.Material3.FloatingActionButton.Tertiary" parent="@style/Base.Widget.Material3.FloatingActionButton">
         <item name="materialThemeOverlay">@style/ThemeOverlay.Material3.FloatingActionButton.Tertiary</item>
     </style>
-    <style name="Widget.Material3.Light.ActionBar.Solid" parent="@style/Base.Widget.Material3.Light.ActionBar.Solid">
-        <item name="background">@drawable/m3_appbar_background</item>
-        <item name="backgroundSplit">@drawable/m3_appbar_background</item>
-        <item name="backgroundStacked">@drawable/m3_appbar_background</item>
-    </style>
+    <style name="Widget.Material3.Light.ActionBar.Solid" parent="@style/Base.Widget.Material3.Light.ActionBar.Solid" />
     <style name="Widget.Material3.LinearProgressIndicator" parent="@style/Widget.MaterialComponents.LinearProgressIndicator">
         <item name="indicatorColor">?colorPrimary</item>
-        <item name="trackColor">?colorSurfaceVariant</item>
-        <item name="trackThickness">@dimen/m3_comp_linear_progress_indicator_active_indicator_height</item>
+        <item name="indicatorTrackGapSize">@dimen/m3_comp_progress_indicator_active_indicator_track_space</item>
+        <item name="trackColor">?colorSecondaryContainer</item>
+        <item name="trackCornerRadius">2.0dip</item>
+        <item name="trackStopIndicatorSize">@dimen/m3_comp_progress_indicator_stop_indicator_size</item>
+        <item name="trackThickness">@dimen/m3_comp_progress_indicator_track_thickness</item>
+    </style>
+    <style name="Widget.Material3.LinearProgressIndicator.Legacy" parent="@style/Widget.MaterialComponents.LinearProgressIndicator">
+        <item name="indicatorColor">?colorPrimary</item>
+        <item name="indicatorTrackGapSize">0.0dip</item>
+        <item name="trackColor">?colorSurfaceContainerHighest</item>
+        <item name="trackCornerRadius">0.0dip</item>
+        <item name="trackStopIndicatorSize">0.0dip</item>
+        <item name="trackThickness">4.0dip</item>
     </style>
     <style name="Widget.Material3.MaterialButtonToggleGroup" parent="@style/Widget.MaterialComponents.MaterialButtonToggleGroup" />
     <style name="Widget.Material3.MaterialCalendar" parent="@style/Widget.MaterialComponents.MaterialCalendar">
         <item name="android:windowFullscreen">false</item>
+        <item name="backgroundTint">?colorSurfaceContainerHigh</item>
         <item name="dayInvalidStyle">@style/Widget.Material3.MaterialCalendar.Day.Invalid</item>
         <item name="daySelectedStyle">@style/Widget.Material3.MaterialCalendar.Day.Selected</item>
         <item name="dayStyle">@style/Widget.Material3.MaterialCalendar.Day</item>
         <item name="dayTodayStyle">@style/Widget.Material3.MaterialCalendar.Day.Today</item>
-        <item name="rangeFillColor">?colorSurfaceVariant</item>
+        <item name="rangeFillColor">?colorSecondaryContainer</item>
         <item name="shapeAppearance">?shapeAppearanceCornerExtraLarge</item>
         <item name="yearSelectedStyle">@style/Widget.Material3.MaterialCalendar.Year.Selected</item>
         <item name="yearStyle">@style/Widget.Material3.MaterialCalendar.Year</item>
@@ -6170,6 +6179,8 @@
         <item name="android:insetRight">@dimen/mtrl_calendar_day_horizontal_padding</item>
         <item name="android:insetTop">@dimen/mtrl_calendar_day_vertical_padding</item>
         <item name="android:insetBottom">@dimen/mtrl_calendar_day_vertical_padding</item>
+        <item name="itemShapeAppearance">@style/ShapeAppearance.M3.Comp.DatePicker.Modal.Date.Container.Shape</item>
+        <item name="itemTextColor">?colorOnSurface</item>
     </style>
     <style name="Widget.Material3.MaterialCalendar.Day.Invalid" parent="@style/Widget.Material3.MaterialCalendar.Day">
         <item name="itemStrokeWidth">0.0dip</item>
@@ -6182,12 +6193,12 @@
     </style>
     <style name="Widget.Material3.MaterialCalendar.Day.Today" parent="@style/Widget.Material3.MaterialCalendar.Day">
         <item name="itemStrokeColor">?colorPrimary</item>
-        <item name="itemStrokeWidth">@dimen/mtrl_calendar_day_today_stroke</item>
+        <item name="itemStrokeWidth">@dimen/m3_comp_date_picker_modal_date_today_container_outline_width</item>
         <item name="itemTextColor">?colorPrimary</item>
     </style>
     <style name="Widget.Material3.MaterialCalendar.DayOfWeekLabel" parent="@style/Widget.MaterialComponents.MaterialCalendar.DayOfWeekLabel">
         <item name="android:textAppearance">?textAppearanceBodyLarge</item>
-        <item name="android:textColor">?colorOnSurfaceVariant</item>
+        <item name="android:textColor">?colorOnSurface</item>
     </style>
     <style name="Widget.Material3.MaterialCalendar.DayTextView" parent="@style/Widget.MaterialComponents.MaterialCalendar.DayTextView">
         <item name="android:textAppearance">?textAppearanceBodyLarge</item>
@@ -6205,16 +6216,17 @@
     </style>
     <style name="Widget.Material3.MaterialCalendar.HeaderLayout" parent="@style/Widget.MaterialComponents.MaterialCalendar.HeaderLayout">
         <item name="android:background">@android:color/transparent</item>
+        <item name="android:layout_height">@dimen/m3_comp_date_picker_modal_header_container_height</item>
     </style>
     <style name="Widget.Material3.MaterialCalendar.HeaderLayout.Fullscreen" parent="@style/Widget.Material3.MaterialCalendar.HeaderLayout">
-        <item name="android:layout_height">@dimen/mtrl_calendar_header_height_fullscreen</item>
+        <item name="android:layout_height">@dimen/m3_comp_date_picker_modal_range_selection_header_container_height</item>
     </style>
     <style name="Widget.Material3.MaterialCalendar.HeaderSelection" parent="@style/Widget.MaterialComponents.MaterialCalendar.HeaderSelection">
         <item name="android:textAppearance">?textAppearanceHeadlineLarge</item>
-        <item name="android:textColor">?colorOnSurface</item>
+        <item name="android:textColor">?colorOnSurfaceVariant</item>
     </style>
     <style name="Widget.Material3.MaterialCalendar.HeaderSelection.Fullscreen" parent="@style/Widget.Material3.MaterialCalendar.HeaderSelection">
-        <item name="android:textAppearance">?textAppearanceHeadlineSmall</item>
+        <item name="android:textAppearance">?textAppearanceTitleLarge</item>
         <item name="android:maxLines">1</item>
         <item name="autoSizeMaxTextSize">20.0sp</item>
     </style>
@@ -6248,6 +6260,7 @@
         <item name="android:insetRight">@dimen/mtrl_calendar_year_horizontal_padding</item>
         <item name="android:insetTop">@dimen/mtrl_calendar_year_vertical_padding</item>
         <item name="android:insetBottom">@dimen/mtrl_calendar_year_vertical_padding</item>
+        <item name="itemTextColor">?colorOnSurfaceVariant</item>
     </style>
     <style name="Widget.Material3.MaterialCalendar.Year.Selected" parent="@style/Widget.Material3.MaterialCalendar.Year">
         <item name="itemFillColor">?colorPrimary</item>
@@ -6268,6 +6281,7 @@
         <item name="dividerThickness">@dimen/m3_divider_heavy_thickness</item>
     </style>
     <style name="Widget.Material3.MaterialTimePicker" parent="@style/Widget.MaterialComponents.TimePicker">
+        <item name="backgroundTint">?colorSurfaceContainerHigh</item>
         <item name="shapeAppearance">?shapeAppearanceCornerExtraLarge</item>
     </style>
     <style name="Widget.Material3.MaterialTimePicker.Button" parent="@style/Widget.MaterialComponents.TimePicker.Button">
@@ -6283,7 +6297,7 @@
         <item name="strokeWidth">@dimen/m3_comp_time_picker_period_selector_outline_width</item>
     </style>
     <style name="Widget.Material3.MaterialTimePicker.Clock" parent="@style/Widget.MaterialComponents.TimePicker.Clock">
-        <item name="clockFaceBackgroundColor">?colorSurfaceVariant</item>
+        <item name="clockFaceBackgroundColor">?colorSurfaceContainerHighest</item>
         <item name="clockHandColor">?colorPrimary</item>
         <item name="clockNumberTextColor">@color/m3_timepicker_clock_text_color</item>
     </style>
@@ -6344,6 +6358,8 @@
         <item name="itemTextAppearanceActive">?textAppearanceLabelMedium</item>
         <item name="itemTextAppearanceInactive">?textAppearanceLabelMedium</item>
         <item name="itemTextColor">@color/m3_navigation_rail_item_with_indicator_label_tint</item>
+        <item name="materialThemeOverlay">@style/ThemeOverlay.Material3.NavigationRailView</item>
+        <item name="shapeAppearance">@style/ShapeAppearance.M3.Comp.NavigationRail.Container.Shape</item>
     </style>
     <style name="Widget.Material3.NavigationRailView.ActiveIndicator" parent="">
         <item name="android:height">@dimen/m3_navigation_rail_item_active_indicator_height</item>
@@ -6352,9 +6368,14 @@
         <item name="marginHorizontal">@dimen/m3_navigation_rail_item_active_indicator_margin_horizontal</item>
         <item name="shapeAppearance">@style/ShapeAppearance.M3.Comp.NavigationRail.ActiveIndicator.Shape</item>
     </style>
+    <style name="Widget.Material3.NavigationRailView.Badge" parent="@style/Widget.Material3.Badge.AdjustToBounds">
+        <item name="largeFontVerticalOffsetAdjustment">@dimen/m3_large_text_vertical_offset_adjustment</item>
+        <item name="verticalOffsetWithText">@dimen/m3_nav_badge_with_text_vertical_offset</item>
+    </style>
     <style name="Widget.Material3.NavigationView" parent="@style/Widget.MaterialComponents.NavigationView">
-        <item name="android:background">?colorSurface</item>
+        <item name="android:background">?colorSurfaceContainerLow</item>
         <item name="android:maxWidth">@dimen/m3_comp_navigation_drawer_container_width</item>
+        <item name="activeIndicatorLabelPadding">@dimen/m3_navigation_item_active_indicator_label_padding</item>
         <item name="bottomInsetScrimEnabled">false</item>
         <item name="dividerInsetEnd">@dimen/m3_navigation_menu_divider_horizontal_padding</item>
         <item name="dividerInsetStart">@dimen/m3_navigation_menu_divider_horizontal_padding</item>
@@ -6405,6 +6426,7 @@
         <item name="android:paddingStart">@dimen/m3_searchbar_padding_start</item>
         <item name="android:outlineSpotShadowColor">@android:color/transparent</item>
         <item name="android:outlineAmbientShadowColor">@android:color/transparent</item>
+        <item name="backgroundTint">?colorSurfaceContainerHigh</item>
         <item name="defaultMarginsEnabled">true</item>
         <item name="defaultScrollFlagsEnabled">true</item>
         <item name="elevation">@dimen/m3_searchbar_elevation</item>
@@ -6416,6 +6438,7 @@
         <item name="shapeAppearanceOverlay">@style/ShapeAppearanceOverlay.Material3.SearchBar</item>
     </style>
     <style name="Widget.Material3.SearchBar.Outlined" parent="@style/Widget.Material3.SearchBar">
+        <item name="backgroundTint">?colorSurface</item>
         <item name="elevation">0.0dip</item>
         <item name="strokeColor">?colorOutline</item>
         <item name="strokeWidth">@dimen/m3_searchbar_outlined_stroke_width</item>
@@ -6423,6 +6446,7 @@
     <style name="Widget.Material3.SearchView" parent="@android:style/Widget">
         <item name="android:textAppearance">@style/TextAppearance.Material3.SearchView</item>
         <item name="android:elevation">@dimen/m3_searchview_elevation</item>
+        <item name="backgroundTint">?colorSurfaceContainerHigh</item>
         <item name="enforceMaterialTheme">true</item>
         <item name="materialThemeOverlay">@style/ThemeOverlay.Material3.Search</item>
         <item name="shapeAppearanceOverlay">@style/ShapeAppearanceOverlay.Material3.SearchView</item>
@@ -6442,12 +6466,13 @@
         <item name="android:paddingEnd">0.0dip</item>
         <item name="contentInsetStartWithNavigation">0.0dip</item>
         <item name="maxButtonHeight">@dimen/m3_searchview_height</item>
+        <item name="navigationIcon">@drawable/ic_arrow_back_black_24</item>
         <item name="navigationIconTint">?colorOnSurface</item>
     </style>
     <style name="Widget.Material3.SideSheet" parent="">
-        <item name="android:layout_gravity">right</item>
-        <item name="android:background">?colorSurface</item>
+        <item name="android:layout_gravity">end</item>
         <item name="android:elevation">@dimen/m3_side_sheet_standard_elevation</item>
+        <item name="backgroundTint">?colorSurface</item>
         <item name="enforceMaterialTheme">true</item>
         <item name="shapeAppearance">@style/ShapeAppearance.M3.Comp.Sheet.Side.Docked.Container.Shape</item>
     </style>
@@ -6456,27 +6481,58 @@
         <item name="shapeAppearance">?shapeAppearanceCornerLarge</item>
     </style>
     <style name="Widget.Material3.SideSheet.Modal" parent="@style/Widget.Material3.SideSheet">
+        <item name="android:layout_width">@dimen/m3_side_sheet_width</item>
+        <item name="android:layout_height">fill_parent</item>
         <item name="android:elevation">@dimen/m3_side_sheet_modal_elevation</item>
+        <item name="backgroundTint">?colorSurfaceContainerLow</item>
         <item name="shapeAppearance">?shapeAppearanceCornerLarge</item>
-        <item name="shapeAppearanceOverlay">@style/ShapeAppearanceOverlay.Material3.Corner.Left</item>
     </style>
     <style name="Widget.Material3.SideSheet.Modal.Detached" parent="@style/Widget.Material3.SideSheet.Modal">
         <item name="android:layout_margin">@dimen/m3_side_sheet_margin_detached</item>
         <item name="shapeAppearance">?shapeAppearanceCornerLarge</item>
-        <item name="shapeAppearanceOverlay">@null</item>
     </style>
     <style name="Widget.Material3.Slider" parent="@style/Widget.MaterialComponents.Slider">
-        <item name="haloColor">@color/m3_slider_halo_color</item>
+        <item name="haloColor">#00ffffff</item>
         <item name="labelStyle">@style/Widget.Material3.Slider.Label</item>
         <item name="thumbColor">@color/m3_slider_thumb_color</item>
-        <item name="thumbElevation">@dimen/m3_slider_thumb_elevation</item>
+        <item name="thumbElevation">0.0dip</item>
+        <item name="thumbHeight">@dimen/m3_comp_slider_active_handle_height</item>
+        <item name="thumbTrackGapSize">@dimen/m3_comp_slider_active_handle_leading_space</item>
+        <item name="thumbWidth">@dimen/m3_comp_slider_active_handle_width</item>
         <item name="tickColorActive">@color/m3_slider_inactive_track_color</item>
         <item name="tickColorInactive">@color/m3_slider_active_track_color</item>
+        <item name="tickRadiusActive">@null</item>
+        <item name="tickRadiusInactive">@null</item>
         <item name="trackColorActive">@color/m3_slider_active_track_color</item>
         <item name="trackColorInactive">@color/m3_slider_inactive_track_color</item>
-        <item name="trackHeight">@dimen/m3_slider_inactive_track_height</item>
+        <item name="trackHeight">@dimen/m3_comp_slider_inactive_track_height</item>
+        <item name="trackInsideCornerSize">2.0dip</item>
+        <item name="trackStopIndicatorSize">@dimen/m3_comp_slider_stop_indicator_size</item>
     </style>
     <style name="Widget.Material3.Slider.Label" parent="@style/Widget.Material3.Tooltip">
+        <item name="android:textColor">?colorOnSurfaceInverse</item>
+        <item name="android:padding">10.0dip</item>
+        <item name="android:minHeight">32.0dip</item>
+        <item name="backgroundTint">?colorSurfaceInverse</item>
+        <item name="showMarker">false</item>
+    </style>
+    <style name="Widget.Material3.Slider.Legacy" parent="@style/Widget.MaterialComponents.Slider">
+        <item name="haloColor">@color/m3_slider_halo_color_legacy</item>
+        <item name="labelStyle">@style/Widget.Material3.Slider.Legacy.Label</item>
+        <item name="thumbColor">@color/m3_slider_thumb_color_legacy</item>
+        <item name="thumbElevation">@dimen/m3_slider_thumb_elevation</item>
+        <item name="thumbHeight">@null</item>
+        <item name="thumbTrackGapSize">0.0dip</item>
+        <item name="thumbWidth">@null</item>
+        <item name="tickColorActive">@color/m3_slider_inactive_track_color_legacy</item>
+        <item name="tickColorInactive">@color/m3_slider_active_track_color_legacy</item>
+        <item name="trackColorActive">@color/m3_slider_active_track_color_legacy</item>
+        <item name="trackColorInactive">@color/m3_slider_inactive_track_color_legacy</item>
+        <item name="trackHeight">4.0dip</item>
+        <item name="trackInsideCornerSize">0.0dip</item>
+        <item name="trackStopIndicatorSize">0.0dip</item>
+    </style>
+    <style name="Widget.Material3.Slider.Legacy.Label" parent="@style/Widget.Material3.Tooltip">
         <item name="android:textColor">?colorOnPrimary</item>
         <item name="backgroundTint">?colorPrimary</item>
     </style>
@@ -6529,6 +6585,8 @@
         <item name="counterOverflowTextColor">?colorError</item>
         <item name="counterTextAppearance">?textAppearanceBodySmall</item>
         <item name="counterTextColor">@color/m3_textfield_indicator_text_color</item>
+        <item name="cursorColor">@null</item>
+        <item name="cursorErrorColor">?colorError</item>
         <item name="endIconTint">@color/m3_textfield_indicator_text_color</item>
         <item name="errorIconTint">?colorError</item>
         <item name="errorTextAppearance">?textAppearanceBodySmall</item>
@@ -6568,6 +6626,8 @@
         <item name="counterOverflowTextColor">?colorError</item>
         <item name="counterTextAppearance">?textAppearanceBodySmall</item>
         <item name="counterTextColor">@color/m3_textfield_indicator_text_color</item>
+        <item name="cursorColor">@null</item>
+        <item name="cursorErrorColor">?colorError</item>
         <item name="endIconTint">@color/m3_textfield_indicator_text_color</item>
         <item name="errorIconTint">?colorError</item>
         <item name="errorTextAppearance">?textAppearanceBodySmall</item>
@@ -6665,6 +6725,7 @@
         <item name="android:paddingBottom">13.0dip</item>
     </style>
     <style name="Widget.MaterialComponents.Badge" parent="@android:style/Widget">
+        <item name="autoAdjustToWithinGrandparentBounds">false</item>
         <item name="backgroundColor">?colorError</item>
         <item name="badgeGravity">TOP_END</item>
         <item name="badgeHeight">@dimen/mtrl_badge_size</item>
@@ -6675,7 +6736,7 @@
         <item name="badgeWithTextHeight">@dimen/mtrl_badge_with_text_size</item>
         <item name="badgeWithTextShapeAppearance">@style/ShapeAppearance.MaterialComponents.Badge</item>
         <item name="badgeWithTextWidth">@dimen/mtrl_badge_with_text_size</item>
-        <item name="maxCharacterCount">@integer/mtrl_badge_max_character_count</item>
+        <item name="maxNumber">@integer/m3_badge_max_number</item>
         <item name="offsetAlignmentMode">legacy</item>
     </style>
     <style name="Widget.MaterialComponents.BottomAppBar" parent="@style/Widget.AppCompat.Toolbar">
@@ -6948,6 +7009,7 @@
     </style>
     <style name="Widget.MaterialComponents.MaterialCalendar" parent="@android:style/Widget">
         <item name="android:windowFullscreen">false</item>
+        <item name="backgroundTint">?colorSurface</item>
         <item name="dayInvalidStyle">@style/Widget.MaterialComponents.MaterialCalendar.Day.Invalid</item>
         <item name="daySelectedStyle">@style/Widget.MaterialComponents.MaterialCalendar.Day.Selected</item>
         <item name="dayStyle">@style/Widget.MaterialComponents.MaterialCalendar.Day</item>
@@ -7016,7 +7078,7 @@
         <item name="android:textAppearance">?textAppearanceHeadline4</item>
         <item name="android:textColor">?colorOnPrimary</item>
         <item name="android:ellipsize">end</item>
-        <item name="android:layout_gravity">start|center|top</item>
+        <item name="android:layout_gravity">start|top</item>
         <item name="android:layout_width">fill_parent</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:maxLines">@integer/mtrl_calendar_selection_text_lines</item>
@@ -7039,7 +7101,7 @@
         <item name="autoSizeTextType">uniform</item>
     </style>
     <style name="Widget.MaterialComponents.MaterialCalendar.HeaderToggleButton" parent="@style/Base.Widget.MaterialComponents.MaterialCalendar.HeaderToggleButton">
-        <item name="android:layout_gravity">end|bottom|center</item>
+        <item name="android:layout_gravity">end|bottom</item>
     </style>
     <style name="Widget.MaterialComponents.MaterialCalendar.Item" parent="">
         <item name="itemFillColor">@android:color/transparent</item>
@@ -7246,6 +7308,7 @@
     </style>
     <style name="Widget.MaterialComponents.TextView" parent="@style/Base.Widget.MaterialComponents.TextView" />
     <style name="Widget.MaterialComponents.TimePicker" parent="">
+        <item name="backgroundTint">?colorSurface</item>
         <item name="clockIcon">@drawable/ic_clock_black_24dp</item>
         <item name="keyboardIcon">@drawable/ic_keyboard_black_24dp</item>
         <item name="shapeAppearance">?shapeAppearanceMediumComponent</item>
@@ -7395,6 +7458,10 @@
     </style>
     <style name="Widget.PhotoPro.DialPicker.Title" parent="@android:style/Widget.DeviceDefault.TextView">
         <item name="android:textAppearance">@style/TextAppearance.PhotoPro.Widget.DialPicker.Title</item>
+        <item name="android:includeFontPadding">false</item>
+    </style>
+    <style name="Widget.PhotoPro.DialPicker.Title.Info" parent="@android:style/Widget.DeviceDefault.TextView">
+        <item name="android:textAppearance">@style/TextAppearance.PhotoPro.Widget.DialPicker.Title.Info</item>
         <item name="android:includeFontPadding">false</item>
     </style>
     <style name="Widget.PhotoPro.FnButton" parent="@android:style/Widget">

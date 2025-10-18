@@ -25,7 +25,7 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/SourceDebugExtension;
-    value = "SMAP\nClassReference.kt\nKotlin\n*S Kotlin\n*F\n+ 1 ClassReference.kt\nkotlin/jvm/internal/ClassReference\n+ 2 _Collections.kt\nkotlin/collections/CollectionsKt___CollectionsKt\n+ 3 Maps.kt\nkotlin/collections/MapsKt__MapsKt\n*L\n1#1,205:1\n1559#2:206\n1590#2,4:207\n1253#2,4:211\n1238#2,4:217\n453#3:215\n403#3:216\n*S KotlinDebug\n*F\n+ 1 ClassReference.kt\nkotlin/jvm/internal/ClassReference\n*L\n107#1:206\n107#1:207,4\n155#1:211,4\n163#1:217,4\n163#1:215\n163#1:216\n*E\n"
+    value = "SMAP\nClassReference.kt\nKotlin\n*S Kotlin\n*F\n+ 1 ClassReference.kt\nkotlin/jvm/internal/ClassReference\n+ 2 _Collections.kt\nkotlin/collections/CollectionsKt___CollectionsKt\n+ 3 Maps.kt\nkotlin/collections/MapsKt__MapsKt\n*L\n1#1,205:1\n1567#2:206\n1598#2,4:207\n1261#2,4:211\n1246#2,4:217\n462#3:215\n412#3:216\n*S KotlinDebug\n*F\n+ 1 ClassReference.kt\nkotlin/jvm/internal/ClassReference\n*L\n107#1:206\n107#1:207,4\n155#1:211,4\n163#1:217,4\n163#1:215\n163#1:216\n*E\n"
 .end annotation
 
 .annotation runtime Lkotlin/Metadata;
@@ -221,11 +221,11 @@
 
     aput-object v2, v0, v3
 
-    const-class v2, Lkotlin/jvm/functions/Function1;
+    const/4 v2, 0x1
 
-    const/4 v4, 0x1
+    const-class v4, Lkotlin/jvm/functions/Function1;
 
-    aput-object v2, v0, v4
+    aput-object v4, v0, v2
 
     const-class v2, Lkotlin/jvm/functions/Function2;
 
@@ -233,125 +233,129 @@
 
     aput-object v2, v0, v4
 
-    const-class v2, Lkotlin/jvm/functions/Function3;
+    const/4 v2, 0x3
 
-    const/4 v5, 0x3
+    const-class v5, Lkotlin/jvm/functions/Function3;
 
-    aput-object v2, v0, v5
+    aput-object v5, v0, v2
 
-    const-class v2, Lkotlin/jvm/functions/Function4;
+    const/4 v2, 0x4
 
-    const/4 v5, 0x4
+    const-class v5, Lkotlin/jvm/functions/Function4;
 
-    aput-object v2, v0, v5
+    aput-object v5, v0, v2
 
-    const-class v2, Lkotlin/jvm/functions/Function5;
+    const/4 v2, 0x5
 
-    const/4 v5, 0x5
+    .line 103
+    const-class v5, Lkotlin/jvm/functions/Function5;
 
-    aput-object v2, v0, v5
+    aput-object v5, v0, v2
 
-    const-class v2, Lkotlin/jvm/functions/Function6;
+    const/4 v2, 0x6
 
-    const/4 v5, 0x6
+    const-class v5, Lkotlin/jvm/functions/Function6;
 
-    aput-object v2, v0, v5
+    aput-object v5, v0, v2
 
-    const-class v2, Lkotlin/jvm/functions/Function7;
+    const/4 v2, 0x7
 
-    const/4 v5, 0x7
+    const-class v5, Lkotlin/jvm/functions/Function7;
 
-    aput-object v2, v0, v5
+    aput-object v5, v0, v2
 
-    const-class v2, Lkotlin/jvm/functions/Function8;
+    const/16 v2, 0x8
 
-    const/16 v5, 0x8
+    const-class v5, Lkotlin/jvm/functions/Function8;
 
-    aput-object v2, v0, v5
+    aput-object v5, v0, v2
 
-    const-class v2, Lkotlin/jvm/functions/Function9;
+    const/16 v2, 0x9
 
-    const/16 v5, 0x9
+    const-class v5, Lkotlin/jvm/functions/Function9;
 
-    aput-object v2, v0, v5
+    aput-object v5, v0, v2
 
+    .line 104
     const-class v2, Lkotlin/jvm/functions/Function10;
 
     const/16 v5, 0xa
 
     aput-object v2, v0, v5
 
-    const-class v2, Lkotlin/jvm/functions/Function11;
+    const/16 v2, 0xb
 
-    const/16 v6, 0xb
+    const-class v6, Lkotlin/jvm/functions/Function11;
 
-    aput-object v2, v0, v6
+    aput-object v6, v0, v2
 
-    const-class v2, Lkotlin/jvm/functions/Function12;
+    const/16 v2, 0xc
 
-    const/16 v6, 0xc
+    const-class v6, Lkotlin/jvm/functions/Function12;
 
-    aput-object v2, v0, v6
+    aput-object v6, v0, v2
 
-    const-class v2, Lkotlin/jvm/functions/Function13;
+    const/16 v2, 0xd
 
-    const/16 v6, 0xd
+    const-class v6, Lkotlin/jvm/functions/Function13;
 
-    aput-object v2, v0, v6
+    aput-object v6, v0, v2
 
-    const-class v2, Lkotlin/jvm/functions/Function14;
+    const/16 v2, 0xe
 
-    const/16 v6, 0xe
+    const-class v6, Lkotlin/jvm/functions/Function14;
 
-    aput-object v2, v0, v6
+    aput-object v6, v0, v2
 
-    const-class v2, Lkotlin/jvm/functions/Function15;
+    const/16 v2, 0xf
 
-    const/16 v6, 0xf
+    .line 105
+    const-class v6, Lkotlin/jvm/functions/Function15;
 
-    aput-object v2, v0, v6
+    aput-object v6, v0, v2
 
-    const-class v2, Lkotlin/jvm/functions/Function16;
+    const/16 v2, 0x10
 
-    const/16 v6, 0x10
+    const-class v6, Lkotlin/jvm/functions/Function16;
 
-    aput-object v2, v0, v6
+    aput-object v6, v0, v2
 
-    const-class v2, Lkotlin/jvm/functions/Function17;
+    const/16 v2, 0x11
 
-    const/16 v6, 0x11
+    const-class v6, Lkotlin/jvm/functions/Function17;
 
-    aput-object v2, v0, v6
+    aput-object v6, v0, v2
 
-    const-class v2, Lkotlin/jvm/functions/Function18;
+    const/16 v2, 0x12
 
-    const/16 v6, 0x12
+    const-class v6, Lkotlin/jvm/functions/Function18;
 
-    aput-object v2, v0, v6
+    aput-object v6, v0, v2
 
-    const-class v2, Lkotlin/jvm/functions/Function19;
+    const/16 v2, 0x13
 
-    const/16 v6, 0x13
+    const-class v6, Lkotlin/jvm/functions/Function19;
 
-    aput-object v2, v0, v6
+    aput-object v6, v0, v2
 
-    const-class v2, Lkotlin/jvm/functions/Function20;
+    const/16 v2, 0x14
 
-    const/16 v6, 0x14
+    .line 106
+    const-class v6, Lkotlin/jvm/functions/Function20;
 
-    aput-object v2, v0, v6
+    aput-object v6, v0, v2
 
-    const-class v2, Lkotlin/jvm/functions/Function21;
+    const/16 v2, 0x15
 
-    const/16 v6, 0x15
+    const-class v6, Lkotlin/jvm/functions/Function21;
 
-    aput-object v2, v0, v6
+    aput-object v6, v0, v2
 
-    const-class v2, Lkotlin/jvm/functions/Function22;
+    const/16 v2, 0x16
 
-    const/16 v6, 0x16
+    const-class v6, Lkotlin/jvm/functions/Function22;
 
-    aput-object v2, v0, v6
+    aput-object v6, v0, v2
 
     .line 101
     invoke-static {v0}, Lkotlin/collections/CollectionsKt;->listOf([Ljava/lang/Object;)Ljava/util/List;
@@ -694,7 +698,7 @@
 
     move-result-object v0
 
-    const-string v2, "primitiveFqNames.values"
+    const-string v2, "<get-values>(...)"
 
     invoke-static {v0, v2}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
 
@@ -732,9 +736,7 @@
 
     invoke-direct {v7, v8}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
-    const-string v8, "kotlinName"
-
-    invoke-static {v2, v8}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v2}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;)V
 
     invoke-static {v2, v5, v1, v4, v1}, Lkotlin/text/StringsKt;->substringAfterLast$default(Ljava/lang/String;CLjava/lang/String;ILjava/lang/Object;)Ljava/lang/String;
 

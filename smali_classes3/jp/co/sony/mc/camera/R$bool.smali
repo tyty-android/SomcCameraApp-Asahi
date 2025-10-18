@@ -20,15 +20,13 @@
 
 .field public static final config_materialPreferenceIconSpaceReserved:I = 0x7f050002
 
-.field public static final enable_share_in_streaming:I = 0x7f050003
+.field public static final is_tablet:I = 0x7f050003
 
-.field public static final is_tablet:I = 0x7f050004
+.field public static final is_ten_inch:I = 0x7f050004
 
-.field public static final is_ten_inch:I = 0x7f050005
+.field public static final mtrl_btn_textappearance_all_caps:I = 0x7f050005
 
-.field public static final mtrl_btn_textappearance_all_caps:I = 0x7f050006
-
-.field public static final show_ime_fullscreen:I = 0x7f050007
+.field public static final show_ime_fullscreen:I = 0x7f050006
 
 
 # direct methods

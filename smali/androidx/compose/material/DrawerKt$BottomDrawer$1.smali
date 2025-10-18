@@ -70,7 +70,7 @@
 .method public bridge synthetic invoke()Ljava/lang/Object;
     .locals 0
 
-    .line 656
+    .line 652
     invoke-virtual {p0}, Landroidx/compose/material/DrawerKt$BottomDrawer$1;->invoke()V
 
     sget-object p0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
@@ -81,7 +81,7 @@
 .method public final invoke()V
     .locals 1
 
-    .line 657
+    .line 653
     iget-object v0, p0, Landroidx/compose/material/DrawerKt$BottomDrawer$1;->$drawerState:Landroidx/compose/material/BottomDrawerState;
 
     iget-object p0, p0, Landroidx/compose/material/DrawerKt$BottomDrawer$1;->$density:Landroidx/compose/ui/unit/Density;

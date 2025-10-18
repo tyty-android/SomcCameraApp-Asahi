@@ -47,10 +47,6 @@
 .method public static final asAndroidPath(Landroidx/compose/ui/graphics/Path;)Landroid/graphics/Path;
     .locals 1
 
-    const-string v0, "<this>"
-
-    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
     .line 35
     instance-of v0, p0, Landroidx/compose/ui/graphics/AndroidPath;
 
@@ -78,10 +74,6 @@
 
 .method public static final asComposePath(Landroid/graphics/Path;)Landroidx/compose/ui/graphics/Path;
     .locals 1
-
-    const-string v0, "<this>"
-
-    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 28
     new-instance v0, Landroidx/compose/ui/graphics/AndroidPath;

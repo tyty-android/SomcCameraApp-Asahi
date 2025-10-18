@@ -3,7 +3,7 @@
 .source "D8$$SyntheticClass"
 
 # interfaces
-.implements Landroid/view/View$OnClickListener;
+.implements Lkotlin/jvm/functions/Function1;
 
 
 # instance fields
@@ -24,13 +24,17 @@
 
 
 # virtual methods
-.method public final onClick(Landroid/view/View;)V
+.method public final invoke(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
 
     .line 0
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/viewbinder/BasicModeFocusViewBinder$$ExternalSyntheticLambda5;->f$0:Ljp/co/sony/mc/camera/view/viewbinder/BasicModeFocusViewBinder;
 
-    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/view/viewbinder/BasicModeFocusViewBinder;->$r8$lambda$CR-zyPy_Ynv3KKwEgt1yx0wVamc(Ljp/co/sony/mc/camera/view/viewbinder/BasicModeFocusViewBinder;Landroid/view/View;)V
+    check-cast p1, Ljp/co/sony/mc/camera/view/uistate/ProModeFocusUiState$FocusAdjustAction;
 
-    return-void
+    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/view/viewbinder/BasicModeFocusViewBinder;->$r8$lambda$i7QOG4wqyYu4-fRYUmJaNfNZHEY(Ljp/co/sony/mc/camera/view/viewbinder/BasicModeFocusViewBinder;Ljp/co/sony/mc/camera/view/uistate/ProModeFocusUiState$FocusAdjustAction;)Lkotlin/Unit;
+
+    move-result-object p0
+
+    return-object p0
 .end method

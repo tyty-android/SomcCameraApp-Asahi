@@ -127,10 +127,6 @@
 .method public final invoke(Landroidx/compose/ui/graphics/GraphicsLayerScope;)V
     .locals 2
 
-    const-string v0, "$this$graphicsLayer"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
     .line 118
     iget-object v0, p0, Landroidx/compose/material/MenuKt$DropdownMenuContent$1$1;->$scale$delegate:Landroidx/compose/runtime/State;
 

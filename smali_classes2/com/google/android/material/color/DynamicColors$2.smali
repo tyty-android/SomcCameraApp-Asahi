@@ -25,7 +25,7 @@
 .method constructor <init>()V
     .locals 0
 
-    .line 59
+    .line 60
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -36,7 +36,7 @@
 .method public isSupported()Z
     .locals 7
 
-    .line 64
+    .line 65
     iget-object v0, p0, Lcom/google/android/material/color/DynamicColors$2;->version:Ljava/lang/Long;
 
     const/4 v1, 0x0
@@ -45,7 +45,7 @@
 
     if-nez v0, :cond_0
 
-    .line 66
+    .line 67
     :try_start_0
     const-class v0, Landroid/os/Build;
 
@@ -61,15 +61,15 @@
 
     move-result-object v0
 
-    .line 67
+    .line 68
     invoke-virtual {v0, v2}, Ljava/lang/reflect/Method;->setAccessible(Z)V
 
-    .line 68
-    new-array v3, v2, [Ljava/lang/Object;
+    .line 69
+    const-string v3, "ro.build.version.oneui"
 
-    const-string v4, "ro.build.version.oneui"
+    filled-new-array {v3}, [Ljava/lang/Object;
 
-    aput-object v4, v3, v1
+    move-result-object v3
 
     const/4 v4, 0x0
 
@@ -96,14 +96,14 @@
     :catch_0
     const-wide/16 v3, -0x1
 
-    .line 70
+    .line 71
     invoke-static {v3, v4}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
 
     move-result-object v0
 
     iput-object v0, p0, Lcom/google/android/material/color/DynamicColors$2;->version:Ljava/lang/Long;
 
-    .line 73
+    .line 74
     :cond_0
     :goto_0
     iget-object p0, p0, Lcom/google/android/material/color/DynamicColors$2;->version:Ljava/lang/Long;

@@ -87,7 +87,7 @@
         }
     .end annotation
 
-    .line 758
+    .line 728
     iget-object p0, p0, Landroidx/compose/animation/AnimatedContentKt$AnimatedContent$6$1$3;->$stateForContent:Ljava/lang/Object;
 
     invoke-static {p1, p0}, Lkotlin/jvm/internal/Intrinsics;->areEqual(Ljava/lang/Object;Ljava/lang/Object;)Z
@@ -104,7 +104,7 @@
 .method public bridge synthetic invoke(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
 
-    .line 757
+    .line 726
     invoke-virtual {p0, p1}, Landroidx/compose/animation/AnimatedContentKt$AnimatedContent$6$1$3;->invoke(Ljava/lang/Object;)Ljava/lang/Boolean;
 
     move-result-object p0

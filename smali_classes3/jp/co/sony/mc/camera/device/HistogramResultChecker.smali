@@ -71,18 +71,22 @@
 
 # virtual methods
 .method public checkOnCompleted(Landroid/hardware/camera2/CaptureRequest;Ljp/co/sony/mc/camera/device/CaptureResultHolder;)V
-    .locals 6
+    .locals 7
 
     .line 49
     sget-boolean p1, Ljp/co/sony/mc/camera/util/CamLog;->VERBOSE:Z
 
+    const/4 v0, 0x0
+
     if-eqz p1, :cond_0
 
-    const-string p1, "check() E"
+    const/4 p1, 0x1
 
-    filled-new-array {p1}, [Ljava/lang/String;
+    new-array p1, p1, [Ljava/lang/String;
 
-    move-result-object p1
+    const-string v1, "check() E"
+
+    aput-object v1, p1, v0
 
     invoke-static {p1}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
@@ -90,16 +94,16 @@
     :cond_0
     invoke-static {}, Landroid/os/SystemClock;->uptimeMillis()J
 
-    move-result-wide v0
+    move-result-wide v1
 
     .line 53
-    iget-wide v2, p0, Ljp/co/sony/mc/camera/device/HistogramResultChecker;->mPreviousHistogramResultTime:J
+    iget-wide v3, p0, Ljp/co/sony/mc/camera/device/HistogramResultChecker;->mPreviousHistogramResultTime:J
 
-    sub-long v2, v0, v2
+    sub-long v3, v1, v3
 
-    const-wide/16 v4, 0xc8
+    const-wide/16 v5, 0xc8
 
-    cmp-long p1, v2, v4
+    cmp-long p1, v3, v5
 
     if-gez p1, :cond_1
 
@@ -107,7 +111,7 @@
 
     .line 56
     :cond_1
-    iput-wide v0, p0, Ljp/co/sony/mc/camera/device/HistogramResultChecker;->mPreviousHistogramResultTime:J
+    iput-wide v1, p0, Ljp/co/sony/mc/camera/device/HistogramResultChecker;->mPreviousHistogramResultTime:J
 
     .line 58
     sget-object p1, Lcom/sonymobile/camera/device/SomcCaptureResultKeys;->SONYMOBILE_STATISTICS_HISTOGRAM:Landroid/hardware/camera2/CaptureResult$Key;
@@ -123,19 +127,17 @@
     .line 61
     array-length p2, p1
 
-    iget v0, p0, Ljp/co/sony/mc/camera/device/HistogramResultChecker;->mHistogramBucketCount:I
+    iget v1, p0, Ljp/co/sony/mc/camera/device/HistogramResultChecker;->mHistogramBucketCount:I
 
-    mul-int/lit8 v1, v0, 0x3
+    mul-int/lit8 v2, v1, 0x3
 
-    if-ge p2, v1, :cond_2
+    if-ge p2, v2, :cond_2
 
     goto :goto_1
 
     .line 65
     :cond_2
-    new-array p2, v0, [I
-
-    const/4 v0, 0x0
+    new-array p2, v1, [I
 
     .line 66
     :goto_0

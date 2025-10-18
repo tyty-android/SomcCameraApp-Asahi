@@ -69,7 +69,7 @@
 .method public bridge synthetic invoke(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 2
 
-    .line 273
+    .line 319
     check-cast p1, Ljava/lang/Number;
 
     invoke-virtual {p1}, Ljava/lang/Number;->longValue()J
@@ -86,7 +86,7 @@
 .method public final invoke(J)V
     .locals 0
 
-    .line 274
+    .line 320
     invoke-static {p1, p2}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
 
     move-result-object p1
@@ -107,12 +107,12 @@
 
     if-eqz p1, :cond_0
 
-    .line 276
+    .line 322
     iget-object p1, p0, Landroidx/compose/foundation/text/selection/SelectionManager$6;->this$0:Landroidx/compose/foundation/text/selection/SelectionManager;
 
     invoke-virtual {p1}, Landroidx/compose/foundation/text/selection/SelectionManager;->onRelease()V
 
-    .line 277
+    .line 323
     iget-object p0, p0, Landroidx/compose/foundation/text/selection/SelectionManager$6;->this$0:Landroidx/compose/foundation/text/selection/SelectionManager;
 
     const/4 p1, 0x0

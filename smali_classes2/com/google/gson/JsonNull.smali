@@ -57,7 +57,7 @@
 .method public equals(Ljava/lang/Object;)Z
     .locals 0
 
-    .line 67
+    .line 63
     instance-of p0, p1, Lcom/google/gson/JsonNull;
 
     return p0
@@ -66,7 +66,7 @@
 .method public hashCode()I
     .locals 0
 
-    .line 59
+    .line 57
     const-class p0, Lcom/google/gson/JsonNull;
 
     invoke-virtual {p0}, Ljava/lang/Object;->hashCode()I

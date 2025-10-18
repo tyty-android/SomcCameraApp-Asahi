@@ -5,7 +5,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/SourceDebugExtension;
-    value = "SMAP\nLayoutIntrinsics.kt\nKotlin\n*S Kotlin\n*F\n+ 1 LayoutIntrinsics.kt\nandroidx/compose/ui/text/android/LayoutIntrinsicsKt\n+ 2 _Collections.kt\nkotlin/collections/CollectionsKt___CollectionsKt\n*L\n1#1,171:1\n1855#2,2:172\n*S KotlinDebug\n*F\n+ 1 LayoutIntrinsics.kt\nandroidx/compose/ui/text/android/LayoutIntrinsicsKt\n*L\n142#1:172,2\n*E\n"
+    value = "SMAP\nLayoutIntrinsics.kt\nKotlin\n*S Kotlin\n*F\n+ 1 LayoutIntrinsics.kt\nandroidx/compose/ui/text/android/LayoutIntrinsicsKt\n+ 2 _Collections.kt\nkotlin/collections/CollectionsKt___CollectionsKt\n*L\n1#1,169:1\n1855#2,2:170\n*S KotlinDebug\n*F\n+ 1 LayoutIntrinsics.kt\nandroidx/compose/ui/text/android/LayoutIntrinsicsKt\n*L\n139#1:170,2\n*E\n"
 .end annotation
 
 .annotation runtime Lkotlin/Metadata;
@@ -61,15 +61,7 @@
 .method public static final minIntrinsicWidth(Ljava/lang/CharSequence;Landroid/text/TextPaint;)F
     .locals 8
 
-    const-string/jumbo v0, "text"
-
-    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string v0, "paint"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 109
+    .line 106
     invoke-virtual {p1}, Landroid/text/TextPaint;->getTextLocale()Ljava/util/Locale;
 
     move-result-object v0
@@ -78,7 +70,7 @@
 
     move-result-object v0
 
-    .line 110
+    .line 107
     new-instance v1, Landroidx/compose/ui/text/android/CharSequenceCharacterIterator;
 
     invoke-interface {p0}, Ljava/lang/CharSequence;->length()I
@@ -93,20 +85,20 @@
 
     invoke-virtual {v0, v1}, Ljava/text/BreakIterator;->setText(Ljava/text/CharacterIterator;)V
 
-    .line 115
+    .line 112
     new-instance v1, Ljava/util/PriorityQueue;
 
-    .line 116
+    .line 113
     new-instance v2, Landroidx/compose/ui/text/android/LayoutIntrinsicsKt$$ExternalSyntheticLambda0;
 
     invoke-direct {v2}, Landroidx/compose/ui/text/android/LayoutIntrinsicsKt$$ExternalSyntheticLambda0;-><init>()V
 
     const/16 v4, 0xa
 
-    .line 115
+    .line 112
     invoke-direct {v1, v4, v2}, Ljava/util/PriorityQueue;-><init>(ILjava/util/Comparator;)V
 
-    .line 123
+    .line 120
     invoke-virtual {v0}, Ljava/text/BreakIterator;->next()I
 
     move-result v2
@@ -122,14 +114,14 @@
 
     if-eq v3, v5, :cond_2
 
-    .line 125
+    .line 122
     invoke-virtual {v1}, Ljava/util/PriorityQueue;->size()I
 
     move-result v5
 
     if-ge v5, v4, :cond_0
 
-    .line 126
+    .line 123
     new-instance v5, Lkotlin/Pair;
 
     invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
@@ -146,7 +138,7 @@
 
     goto :goto_1
 
-    .line 128
+    .line 125
     :cond_0
     invoke-virtual {v1}, Ljava/util/PriorityQueue;->peek()Ljava/lang/Object;
 
@@ -156,7 +148,7 @@
 
     if-eqz v5, :cond_1
 
-    .line 129
+    .line 126
     invoke-virtual {v5}, Lkotlin/Pair;->getSecond()Ljava/lang/Object;
 
     move-result-object v6
@@ -183,10 +175,10 @@
 
     if-ge v6, v5, :cond_1
 
-    .line 130
+    .line 127
     invoke-virtual {v1}, Ljava/util/PriorityQueue;->poll()Ljava/lang/Object;
 
-    .line 131
+    .line 128
     new-instance v5, Lkotlin/Pair;
 
     invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
@@ -201,7 +193,7 @@
 
     invoke-virtual {v1, v5}, Ljava/util/PriorityQueue;->add(Ljava/lang/Object;)Z
 
-    .line 137
+    .line 134
     :cond_1
     :goto_1
     invoke-virtual {v0}, Ljava/text/BreakIterator;->next()I
@@ -210,11 +202,11 @@
 
     goto :goto_0
 
-    .line 142
+    .line 139
     :cond_2
     check-cast v1, Ljava/lang/Iterable;
 
-    .line 172
+    .line 170
     invoke-interface {v1}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
 
     move-result-object v0
@@ -234,7 +226,7 @@
 
     check-cast v2, Lkotlin/Pair;
 
-    .line 142
+    .line 139
     invoke-virtual {v2}, Lkotlin/Pair;->component1()Ljava/lang/Object;
 
     move-result-object v3
@@ -255,12 +247,12 @@
 
     move-result v2
 
-    .line 143
+    .line 140
     invoke-static {p0, v3, v2, p1}, Landroid/text/Layout;->getDesiredWidth(Ljava/lang/CharSequence;IILandroid/text/TextPaint;)F
 
     move-result v2
 
-    .line 144
+    .line 141
     invoke-static {v1, v2}, Ljava/lang/Math;->max(FF)F
 
     move-result v1
@@ -274,7 +266,7 @@
 .method private static final minIntrinsicWidth$lambda$0(Lkotlin/Pair;Lkotlin/Pair;)I
     .locals 1
 
-    .line 118
+    .line 115
     invoke-virtual {p0}, Lkotlin/Pair;->getSecond()Ljava/lang/Object;
 
     move-result-object v0
@@ -335,13 +327,13 @@
 
     goto :goto_0
 
-    .line 167
+    .line 164
     :cond_0
     instance-of p0, p1, Landroid/text/Spanned;
 
     if-eqz p0, :cond_1
 
-    .line 168
+    .line 165
     check-cast p1, Landroid/text/Spanned;
 
     const-class p0, Landroidx/compose/ui/text/android/style/LetterSpacingSpanPx;
@@ -352,7 +344,7 @@
 
     if-nez p0, :cond_2
 
-    .line 169
+    .line 166
     const-class p0, Landroidx/compose/ui/text/android/style/LetterSpacingSpanEm;
 
     invoke-static {p1, p0}, Landroidx/compose/ui/text/android/SpannedExtensionsKt;->hasSpan(Landroid/text/Spanned;Ljava/lang/Class;)Z
@@ -361,7 +353,7 @@
 
     if-nez p0, :cond_2
 
-    .line 170
+    .line 167
     :cond_1
     invoke-virtual {p2}, Landroid/text/TextPaint;->getLetterSpacing()F
 

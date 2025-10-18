@@ -112,49 +112,57 @@
 .method static constructor <clinit>()V
     .locals 21
 
+    const/4 v0, 0x2
+
     .line 196
-    const-string v0, "materialContainerTransition:bounds"
+    new-array v0, v0, [Ljava/lang/String;
 
-    const-string v1, "materialContainerTransition:shapeAppearance"
+    const/4 v1, 0x0
 
-    filled-new-array {v0, v1}, [Ljava/lang/String;
+    const-string v2, "materialContainerTransition:bounds"
 
-    move-result-object v0
+    aput-object v2, v0, v1
+
+    const/4 v1, 0x1
+
+    const-string v2, "materialContainerTransition:shapeAppearance"
+
+    aput-object v2, v0, v1
 
     sput-object v0, Lcom/google/android/material/transition/MaterialContainerTransform;->TRANSITION_PROPS:[Ljava/lang/String;
 
     .line 202
     new-instance v0, Lcom/google/android/material/transition/MaterialContainerTransform$ProgressThresholdsGroup;
 
-    new-instance v2, Lcom/google/android/material/transition/MaterialContainerTransform$ProgressThresholds;
+    new-instance v4, Lcom/google/android/material/transition/MaterialContainerTransform$ProgressThresholds;
 
     const/high16 v1, 0x3e800000    # 0.25f
 
-    const/4 v7, 0x0
+    const/4 v2, 0x0
 
-    invoke-direct {v2, v7, v1}, Lcom/google/android/material/transition/MaterialContainerTransform$ProgressThresholds;-><init>(FF)V
-
-    new-instance v3, Lcom/google/android/material/transition/MaterialContainerTransform$ProgressThresholds;
-
-    const/high16 v8, 0x3f800000    # 1.0f
-
-    invoke-direct {v3, v7, v8}, Lcom/google/android/material/transition/MaterialContainerTransform$ProgressThresholds;-><init>(FF)V
-
-    new-instance v4, Lcom/google/android/material/transition/MaterialContainerTransform$ProgressThresholds;
-
-    invoke-direct {v4, v7, v8}, Lcom/google/android/material/transition/MaterialContainerTransform$ProgressThresholds;-><init>(FF)V
+    invoke-direct {v4, v2, v1}, Lcom/google/android/material/transition/MaterialContainerTransform$ProgressThresholds;-><init>(FF)V
 
     new-instance v5, Lcom/google/android/material/transition/MaterialContainerTransform$ProgressThresholds;
 
-    const/high16 v1, 0x3f400000    # 0.75f
+    const/high16 v1, 0x3f800000    # 1.0f
 
-    invoke-direct {v5, v7, v1}, Lcom/google/android/material/transition/MaterialContainerTransform$ProgressThresholds;-><init>(FF)V
+    invoke-direct {v5, v2, v1}, Lcom/google/android/material/transition/MaterialContainerTransform$ProgressThresholds;-><init>(FF)V
 
-    const/4 v6, 0x0
+    new-instance v6, Lcom/google/android/material/transition/MaterialContainerTransform$ProgressThresholds;
 
-    move-object v1, v0
+    invoke-direct {v6, v2, v1}, Lcom/google/android/material/transition/MaterialContainerTransform$ProgressThresholds;-><init>(FF)V
 
-    invoke-direct/range {v1 .. v6}, Lcom/google/android/material/transition/MaterialContainerTransform$ProgressThresholdsGroup;-><init>(Lcom/google/android/material/transition/MaterialContainerTransform$ProgressThresholds;Lcom/google/android/material/transition/MaterialContainerTransform$ProgressThresholds;Lcom/google/android/material/transition/MaterialContainerTransform$ProgressThresholds;Lcom/google/android/material/transition/MaterialContainerTransform$ProgressThresholds;Lcom/google/android/material/transition/MaterialContainerTransform$1;)V
+    new-instance v7, Lcom/google/android/material/transition/MaterialContainerTransform$ProgressThresholds;
+
+    const/high16 v3, 0x3f400000    # 0.75f
+
+    invoke-direct {v7, v2, v3}, Lcom/google/android/material/transition/MaterialContainerTransform$ProgressThresholds;-><init>(FF)V
+
+    const/4 v8, 0x0
+
+    move-object v3, v0
+
+    invoke-direct/range {v3 .. v8}, Lcom/google/android/material/transition/MaterialContainerTransform$ProgressThresholdsGroup;-><init>(Lcom/google/android/material/transition/MaterialContainerTransform$ProgressThresholds;Lcom/google/android/material/transition/MaterialContainerTransform$ProgressThresholds;Lcom/google/android/material/transition/MaterialContainerTransform$ProgressThresholds;Lcom/google/android/material/transition/MaterialContainerTransform$ProgressThresholds;Lcom/google/android/material/transition/MaterialContainerTransform$1;)V
 
     sput-object v0, Lcom/google/android/material/transition/MaterialContainerTransform;->DEFAULT_ENTER_THRESHOLDS:Lcom/google/android/material/transition/MaterialContainerTransform$ProgressThresholdsGroup;
 
@@ -163,25 +171,25 @@
 
     new-instance v10, Lcom/google/android/material/transition/MaterialContainerTransform$ProgressThresholds;
 
-    const v1, 0x3f19999a    # 0.6f
+    const v3, 0x3f19999a    # 0.6f
 
-    const v2, 0x3f666666    # 0.9f
+    const v4, 0x3f666666    # 0.9f
 
-    invoke-direct {v10, v1, v2}, Lcom/google/android/material/transition/MaterialContainerTransform$ProgressThresholds;-><init>(FF)V
+    invoke-direct {v10, v3, v4}, Lcom/google/android/material/transition/MaterialContainerTransform$ProgressThresholds;-><init>(FF)V
 
     new-instance v11, Lcom/google/android/material/transition/MaterialContainerTransform$ProgressThresholds;
 
-    invoke-direct {v11, v7, v8}, Lcom/google/android/material/transition/MaterialContainerTransform$ProgressThresholds;-><init>(FF)V
+    invoke-direct {v11, v2, v1}, Lcom/google/android/material/transition/MaterialContainerTransform$ProgressThresholds;-><init>(FF)V
 
     new-instance v12, Lcom/google/android/material/transition/MaterialContainerTransform$ProgressThresholds;
 
-    invoke-direct {v12, v7, v2}, Lcom/google/android/material/transition/MaterialContainerTransform$ProgressThresholds;-><init>(FF)V
+    invoke-direct {v12, v2, v4}, Lcom/google/android/material/transition/MaterialContainerTransform$ProgressThresholds;-><init>(FF)V
 
     new-instance v13, Lcom/google/android/material/transition/MaterialContainerTransform$ProgressThresholds;
 
-    const v3, 0x3e99999a    # 0.3f
+    const v5, 0x3e99999a    # 0.3f
 
-    invoke-direct {v13, v3, v2}, Lcom/google/android/material/transition/MaterialContainerTransform$ProgressThresholds;-><init>(FF)V
+    invoke-direct {v13, v5, v4}, Lcom/google/android/material/transition/MaterialContainerTransform$ProgressThresholds;-><init>(FF)V
 
     const/4 v14, 0x0
 
@@ -194,37 +202,37 @@
     .line 217
     new-instance v0, Lcom/google/android/material/transition/MaterialContainerTransform$ProgressThresholdsGroup;
 
-    new-instance v3, Lcom/google/android/material/transition/MaterialContainerTransform$ProgressThresholds;
+    new-instance v5, Lcom/google/android/material/transition/MaterialContainerTransform$ProgressThresholds;
 
-    const v4, 0x3ecccccd    # 0.4f
+    const v6, 0x3ecccccd    # 0.4f
 
-    const v5, 0x3dcccccd    # 0.1f
+    const v7, 0x3dcccccd    # 0.1f
 
-    invoke-direct {v3, v5, v4}, Lcom/google/android/material/transition/MaterialContainerTransform$ProgressThresholds;-><init>(FF)V
-
-    new-instance v4, Lcom/google/android/material/transition/MaterialContainerTransform$ProgressThresholds;
-
-    invoke-direct {v4, v5, v8}, Lcom/google/android/material/transition/MaterialContainerTransform$ProgressThresholds;-><init>(FF)V
+    invoke-direct {v5, v7, v6}, Lcom/google/android/material/transition/MaterialContainerTransform$ProgressThresholds;-><init>(FF)V
 
     new-instance v6, Lcom/google/android/material/transition/MaterialContainerTransform$ProgressThresholds;
 
-    invoke-direct {v6, v5, v8}, Lcom/google/android/material/transition/MaterialContainerTransform$ProgressThresholds;-><init>(FF)V
+    invoke-direct {v6, v7, v1}, Lcom/google/android/material/transition/MaterialContainerTransform$ProgressThresholds;-><init>(FF)V
 
     new-instance v8, Lcom/google/android/material/transition/MaterialContainerTransform$ProgressThresholds;
 
-    invoke-direct {v8, v5, v2}, Lcom/google/android/material/transition/MaterialContainerTransform$ProgressThresholds;-><init>(FF)V
+    invoke-direct {v8, v7, v1}, Lcom/google/android/material/transition/MaterialContainerTransform$ProgressThresholds;-><init>(FF)V
+
+    new-instance v1, Lcom/google/android/material/transition/MaterialContainerTransform$ProgressThresholds;
+
+    invoke-direct {v1, v7, v4}, Lcom/google/android/material/transition/MaterialContainerTransform$ProgressThresholds;-><init>(FF)V
 
     const/16 v20, 0x0
 
     move-object v15, v0
 
-    move-object/from16 v16, v3
+    move-object/from16 v16, v5
 
-    move-object/from16 v17, v4
+    move-object/from16 v17, v6
 
-    move-object/from16 v18, v6
+    move-object/from16 v18, v8
 
-    move-object/from16 v19, v8
+    move-object/from16 v19, v1
 
     invoke-direct/range {v15 .. v20}, Lcom/google/android/material/transition/MaterialContainerTransform$ProgressThresholdsGroup;-><init>(Lcom/google/android/material/transition/MaterialContainerTransform$ProgressThresholds;Lcom/google/android/material/transition/MaterialContainerTransform$ProgressThresholds;Lcom/google/android/material/transition/MaterialContainerTransform$ProgressThresholds;Lcom/google/android/material/transition/MaterialContainerTransform$ProgressThresholds;Lcom/google/android/material/transition/MaterialContainerTransform$1;)V
 
@@ -235,21 +243,21 @@
 
     new-instance v10, Lcom/google/android/material/transition/MaterialContainerTransform$ProgressThresholds;
 
-    invoke-direct {v10, v1, v2}, Lcom/google/android/material/transition/MaterialContainerTransform$ProgressThresholds;-><init>(FF)V
+    invoke-direct {v10, v3, v4}, Lcom/google/android/material/transition/MaterialContainerTransform$ProgressThresholds;-><init>(FF)V
 
     new-instance v11, Lcom/google/android/material/transition/MaterialContainerTransform$ProgressThresholds;
 
-    invoke-direct {v11, v7, v2}, Lcom/google/android/material/transition/MaterialContainerTransform$ProgressThresholds;-><init>(FF)V
+    invoke-direct {v11, v2, v4}, Lcom/google/android/material/transition/MaterialContainerTransform$ProgressThresholds;-><init>(FF)V
 
     new-instance v12, Lcom/google/android/material/transition/MaterialContainerTransform$ProgressThresholds;
 
-    invoke-direct {v12, v7, v2}, Lcom/google/android/material/transition/MaterialContainerTransform$ProgressThresholds;-><init>(FF)V
+    invoke-direct {v12, v2, v4}, Lcom/google/android/material/transition/MaterialContainerTransform$ProgressThresholds;-><init>(FF)V
 
     new-instance v13, Lcom/google/android/material/transition/MaterialContainerTransform$ProgressThresholds;
 
     const v1, 0x3e4ccccd    # 0.2f
 
-    invoke-direct {v13, v1, v2}, Lcom/google/android/material/transition/MaterialContainerTransform$ProgressThresholds;-><init>(FF)V
+    invoke-direct {v13, v1, v4}, Lcom/google/android/material/transition/MaterialContainerTransform$ProgressThresholds;-><init>(FF)V
 
     move-object v9, v0
 

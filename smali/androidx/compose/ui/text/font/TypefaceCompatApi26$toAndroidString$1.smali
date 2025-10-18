@@ -1,6 +1,6 @@
 .class final Landroidx/compose/ui/text/font/TypefaceCompatApi26$toAndroidString$1;
 .super Lkotlin/jvm/internal/Lambda;
-.source "PlatformTypefaces.kt"
+.source "PlatformTypefaces.android.kt"
 
 # interfaces
 .implements Lkotlin/jvm/functions/Function1;
@@ -68,10 +68,6 @@
 # virtual methods
 .method public final invoke(Landroidx/compose/ui/text/font/FontVariation$Setting;)Ljava/lang/CharSequence;
     .locals 2
-
-    const-string/jumbo v0, "setting"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 270
     new-instance v0, Ljava/lang/StringBuilder;

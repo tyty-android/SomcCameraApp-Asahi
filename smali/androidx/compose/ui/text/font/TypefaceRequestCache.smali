@@ -5,7 +5,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/SourceDebugExtension;
-    value = "SMAP\nFontFamilyResolver.kt\nKotlin\n*S Kotlin\n*F\n+ 1 FontFamilyResolver.kt\nandroidx/compose/ui/text/font/TypefaceRequestCache\n+ 2 Synchronization.jvm.kt\nandroidx/compose/ui/text/platform/Synchronization_jvmKt\n*L\n1#1,248:1\n24#2:249\n24#2:250\n24#2:251\n24#2:252\n24#2:253\n24#2:254\n*S KotlinDebug\n*F\n+ 1 FontFamilyResolver.kt\nandroidx/compose/ui/text/font/TypefaceRequestCache\n*L\n165#1:249\n202#1:250\n219#1:251\n232#1:252\n239#1:253\n245#1:254\n*E\n"
+    value = "SMAP\nFontFamilyResolver.kt\nKotlin\n*S Kotlin\n*F\n+ 1 FontFamilyResolver.kt\nandroidx/compose/ui/text/font/TypefaceRequestCache\n+ 2 Synchronization.jvm.kt\nandroidx/compose/ui/text/platform/Synchronization_jvmKt\n*L\n1#1,256:1\n26#2:257\n26#2:258\n26#2:259\n26#2:260\n26#2:261\n26#2:262\n*S KotlinDebug\n*F\n+ 1 FontFamilyResolver.kt\nandroidx/compose/ui/text/font/TypefaceRequestCache\n*L\n172#1:257\n209#1:258\n226#1:259\n239#1:260\n246#1:261\n252#1:262\n*E\n"
 .end annotation
 
 .annotation runtime Lkotlin/Metadata;
@@ -51,6 +51,10 @@
 .end annotation
 
 
+# static fields
+.field public static final $stable:I = 0x8
+
+
 # instance fields
 .field private final lock:Landroidx/compose/ui/text/platform/SynchronizedObject;
 
@@ -67,20 +71,26 @@
 
 
 # direct methods
+.method static constructor <clinit>()V
+    .locals 0
+
+    return-void
+.end method
+
 .method public constructor <init>()V
     .locals 2
 
-    .line 156
+    .line 163
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 157
+    .line 164
     invoke-static {}, Landroidx/compose/ui/text/platform/Synchronization_jvmKt;->createSynchronizedObject()Landroidx/compose/ui/text/platform/SynchronizedObject;
 
     move-result-object v0
 
     iput-object v0, p0, Landroidx/compose/ui/text/font/TypefaceRequestCache;->lock:Landroidx/compose/ui/text/platform/SynchronizedObject;
 
-    .line 159
+    .line 166
     new-instance v0, Landroidx/compose/ui/text/caches/LruCache;
 
     const/16 v1, 0x10
@@ -95,7 +105,7 @@
 .method public static final synthetic access$getResultCache$p(Landroidx/compose/ui/text/font/TypefaceRequestCache;)Landroidx/compose/ui/text/caches/LruCache;
     .locals 0
 
-    .line 156
+    .line 163
     iget-object p0, p0, Landroidx/compose/ui/text/font/TypefaceRequestCache;->resultCache:Landroidx/compose/ui/text/caches/LruCache;
 
     return-object p0
@@ -106,17 +116,13 @@
 .method public final get$ui_text_release(Landroidx/compose/ui/text/font/TypefaceRequest;)Landroidx/compose/ui/text/font/TypefaceResult;
     .locals 1
 
-    const-string/jumbo v0, "typefaceRequest"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 239
+    .line 246
     iget-object v0, p0, Landroidx/compose/ui/text/font/TypefaceRequestCache;->lock:Landroidx/compose/ui/text/platform/SynchronizedObject;
 
-    .line 253
+    .line 261
     monitor-enter v0
 
-    .line 240
+    .line 247
     :try_start_0
     iget-object p0, p0, Landroidx/compose/ui/text/font/TypefaceRequestCache;->resultCache:Landroidx/compose/ui/text/caches/LruCache;
 
@@ -128,7 +134,7 @@
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 253
+    .line 261
     monitor-exit v0
 
     return-object p0
@@ -144,7 +150,7 @@
 .method public final getLock$ui_text_release()Landroidx/compose/ui/text/platform/SynchronizedObject;
     .locals 0
 
-    .line 157
+    .line 164
     iget-object p0, p0, Landroidx/compose/ui/text/font/TypefaceRequestCache;->lock:Landroidx/compose/ui/text/platform/SynchronizedObject;
 
     return-object p0
@@ -153,13 +159,13 @@
 .method public final getSize$ui_text_release()I
     .locals 1
 
-    .line 245
+    .line 252
     iget-object v0, p0, Landroidx/compose/ui/text/font/TypefaceRequestCache;->lock:Landroidx/compose/ui/text/platform/SynchronizedObject;
 
-    .line 254
+    .line 262
     monitor-enter v0
 
-    .line 246
+    .line 253
     :try_start_0
     iget-object p0, p0, Landroidx/compose/ui/text/font/TypefaceRequestCache;->resultCache:Landroidx/compose/ui/text/caches/LruCache;
 
@@ -169,7 +175,7 @@
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 254
+    .line 262
     monitor-exit v0
 
     return p0
@@ -199,15 +205,7 @@
         }
     .end annotation
 
-    const-string/jumbo v0, "typefaceRequests"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string v0, "resolveTypeface"
-
-    invoke-static {p2, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 216
+    .line 223
     invoke-interface {p1}, Ljava/util/List;->size()I
 
     move-result v0
@@ -217,20 +215,20 @@
     :goto_0
     if-ge v1, v0, :cond_1
 
-    .line 217
+    .line 224
     invoke-interface {p1, v1}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
     move-result-object v2
 
     check-cast v2, Landroidx/compose/ui/text/font/TypefaceRequest;
 
-    .line 219
+    .line 226
     iget-object v3, p0, Landroidx/compose/ui/text/font/TypefaceRequestCache;->lock:Landroidx/compose/ui/text/platform/SynchronizedObject;
 
-    .line 251
+    .line 259
     monitor-enter v3
 
-    .line 219
+    .line 226
     :try_start_0
     iget-object v4, p0, Landroidx/compose/ui/text/font/TypefaceRequestCache;->resultCache:Landroidx/compose/ui/text/caches/LruCache;
 
@@ -242,12 +240,12 @@
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_1
 
-    .line 251
+    .line 259
     monitor-exit v3
 
     if-nez v4, :cond_0
 
-    .line 223
+    .line 230
     :try_start_1
     invoke-interface {p2, v2}, Lkotlin/jvm/functions/Function1;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -257,18 +255,18 @@
     :try_end_1
     .catch Ljava/lang/Exception; {:try_start_1 .. :try_end_1} :catch_0
 
-    .line 230
+    .line 237
     instance-of v4, v3, Landroidx/compose/ui/text/font/TypefaceResult$Async;
 
     if-nez v4, :cond_0
 
-    .line 232
+    .line 239
     iget-object v4, p0, Landroidx/compose/ui/text/font/TypefaceRequestCache;->lock:Landroidx/compose/ui/text/platform/SynchronizedObject;
 
-    .line 252
+    .line 260
     monitor-enter v4
 
-    .line 233
+    .line 240
     :try_start_2
     iget-object v5, p0, Landroidx/compose/ui/text/font/TypefaceRequestCache;->resultCache:Landroidx/compose/ui/text/caches/LruCache;
 
@@ -280,7 +278,7 @@
     :try_end_2
     .catchall {:try_start_2 .. :try_end_2} :catchall_0
 
-    .line 252
+    .line 260
     monitor-exit v4
 
     goto :goto_1
@@ -295,7 +293,7 @@
     :catch_0
     move-exception p0
 
-    .line 225
+    .line 232
     new-instance p1, Ljava/lang/IllegalStateException;
 
     const-string p2, "Could not load font"
@@ -315,7 +313,7 @@
     :catchall_1
     move-exception p0
 
-    .line 251
+    .line 259
     monitor-exit v3
 
     throw p0
@@ -345,21 +343,13 @@
         }
     .end annotation
 
-    const-string/jumbo v0, "typefaceRequest"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string v0, "resolveTypeface"
-
-    invoke-static {p2, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 165
+    .line 172
     iget-object v0, p0, Landroidx/compose/ui/text/font/TypefaceRequestCache;->lock:Landroidx/compose/ui/text/platform/SynchronizedObject;
 
-    .line 249
+    .line 257
     monitor-enter v0
 
-    .line 166
+    .line 173
     :try_start_0
     iget-object v1, p0, Landroidx/compose/ui/text/font/TypefaceRequestCache;->resultCache:Landroidx/compose/ui/text/caches/LruCache;
 
@@ -371,14 +361,14 @@
 
     if-eqz v1, :cond_1
 
-    .line 167
+    .line 174
     invoke-interface {v1}, Landroidx/compose/ui/text/font/TypefaceResult;->getCacheable()Z
 
     move-result v2
 
     if-eqz v2, :cond_0
 
-    .line 168
+    .line 175
     check-cast v1, Landroidx/compose/runtime/State;
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_1
@@ -387,7 +377,7 @@
 
     return-object v1
 
-    .line 170
+    .line 177
     :cond_0
     :try_start_1
     iget-object v1, p0, Landroidx/compose/ui/text/font/TypefaceRequestCache;->resultCache:Landroidx/compose/ui/text/caches/LruCache;
@@ -400,11 +390,11 @@
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_1
 
-    .line 249
+    .line 257
     :cond_1
     monitor-exit v0
 
-    .line 185
+    .line 192
     :try_start_2
     new-instance v0, Landroidx/compose/ui/text/font/TypefaceRequestCache$runCached$currentTypefaceResult$1;
 
@@ -418,13 +408,13 @@
     :try_end_2
     .catch Ljava/lang/Exception; {:try_start_2 .. :try_end_2} :catch_0
 
-    .line 202
+    .line 209
     iget-object v0, p0, Landroidx/compose/ui/text/font/TypefaceRequestCache;->lock:Landroidx/compose/ui/text/platform/SynchronizedObject;
 
-    .line 250
+    .line 258
     monitor-enter v0
 
-    .line 205
+    .line 212
     :try_start_3
     iget-object v1, p0, Landroidx/compose/ui/text/font/TypefaceRequestCache;->resultCache:Landroidx/compose/ui/text/caches/LruCache;
 
@@ -440,21 +430,21 @@
 
     if-eqz v1, :cond_2
 
-    .line 206
+    .line 213
     iget-object p0, p0, Landroidx/compose/ui/text/font/TypefaceRequestCache;->resultCache:Landroidx/compose/ui/text/caches/LruCache;
 
     invoke-virtual {p0, p1, p2}, Landroidx/compose/ui/text/caches/LruCache;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 208
+    .line 215
     :cond_2
     sget-object p0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
     :try_end_3
     .catchall {:try_start_3 .. :try_end_3} :catchall_0
 
-    .line 250
+    .line 258
     monitor-exit v0
 
-    .line 209
+    .line 216
     check-cast p2, Landroidx/compose/runtime/State;
 
     return-object p2
@@ -462,7 +452,7 @@
     :catchall_0
     move-exception p0
 
-    .line 250
+    .line 258
     monitor-exit v0
 
     throw p0
@@ -470,7 +460,7 @@
     :catch_0
     move-exception p0
 
-    .line 200
+    .line 207
     new-instance p1, Ljava/lang/IllegalStateException;
 
     const-string p2, "Could not load font"
@@ -484,7 +474,7 @@
     :catchall_1
     move-exception p0
 
-    .line 249
+    .line 257
     monitor-exit v0
 
     throw p0

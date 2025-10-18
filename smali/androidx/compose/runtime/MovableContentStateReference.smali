@@ -103,7 +103,7 @@
 .end method
 
 .method public constructor <init>(Landroidx/compose/runtime/MovableContent;Ljava/lang/Object;Landroidx/compose/runtime/ControlledComposition;Landroidx/compose/runtime/SlotTable;Landroidx/compose/runtime/Anchor;Ljava/util/List;Landroidx/compose/runtime/PersistentCompositionLocalMap;)V
-    .locals 1
+    .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -125,52 +125,28 @@
         }
     .end annotation
 
-    const-string v0, "content"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string v0, "composition"
-
-    invoke-static {p3, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string/jumbo v0, "slotTable"
-
-    invoke-static {p4, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string v0, "anchor"
-
-    invoke-static {p5, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string v0, "invalidations"
-
-    invoke-static {p6, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string v0, "locals"
-
-    invoke-static {p7, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 316
+    .line 314
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 318
+    .line 316
     iput-object p1, p0, Landroidx/compose/runtime/MovableContentStateReference;->content:Landroidx/compose/runtime/MovableContent;
 
-    .line 319
+    .line 317
     iput-object p2, p0, Landroidx/compose/runtime/MovableContentStateReference;->parameter:Ljava/lang/Object;
 
-    .line 320
+    .line 318
     iput-object p3, p0, Landroidx/compose/runtime/MovableContentStateReference;->composition:Landroidx/compose/runtime/ControlledComposition;
 
-    .line 321
+    .line 319
     iput-object p4, p0, Landroidx/compose/runtime/MovableContentStateReference;->slotTable:Landroidx/compose/runtime/SlotTable;
 
-    .line 322
+    .line 320
     iput-object p5, p0, Landroidx/compose/runtime/MovableContentStateReference;->anchor:Landroidx/compose/runtime/Anchor;
 
-    .line 323
+    .line 321
     iput-object p6, p0, Landroidx/compose/runtime/MovableContentStateReference;->invalidations:Ljava/util/List;
 
-    .line 324
+    .line 322
     iput-object p7, p0, Landroidx/compose/runtime/MovableContentStateReference;->locals:Landroidx/compose/runtime/PersistentCompositionLocalMap;
 
     return-void
@@ -181,7 +157,7 @@
 .method public final getAnchor$runtime_release()Landroidx/compose/runtime/Anchor;
     .locals 0
 
-    .line 322
+    .line 320
     iget-object p0, p0, Landroidx/compose/runtime/MovableContentStateReference;->anchor:Landroidx/compose/runtime/Anchor;
 
     return-object p0
@@ -190,7 +166,7 @@
 .method public final getComposition$runtime_release()Landroidx/compose/runtime/ControlledComposition;
     .locals 0
 
-    .line 320
+    .line 318
     iget-object p0, p0, Landroidx/compose/runtime/MovableContentStateReference;->composition:Landroidx/compose/runtime/ControlledComposition;
 
     return-object p0
@@ -207,7 +183,7 @@
         }
     .end annotation
 
-    .line 318
+    .line 316
     iget-object p0, p0, Landroidx/compose/runtime/MovableContentStateReference;->content:Landroidx/compose/runtime/MovableContent;
 
     return-object p0
@@ -227,7 +203,7 @@
         }
     .end annotation
 
-    .line 323
+    .line 321
     iget-object p0, p0, Landroidx/compose/runtime/MovableContentStateReference;->invalidations:Ljava/util/List;
 
     return-object p0
@@ -236,7 +212,7 @@
 .method public final getLocals$runtime_release()Landroidx/compose/runtime/PersistentCompositionLocalMap;
     .locals 0
 
-    .line 324
+    .line 322
     iget-object p0, p0, Landroidx/compose/runtime/MovableContentStateReference;->locals:Landroidx/compose/runtime/PersistentCompositionLocalMap;
 
     return-object p0
@@ -245,7 +221,7 @@
 .method public final getParameter$runtime_release()Ljava/lang/Object;
     .locals 0
 
-    .line 319
+    .line 317
     iget-object p0, p0, Landroidx/compose/runtime/MovableContentStateReference;->parameter:Ljava/lang/Object;
 
     return-object p0
@@ -254,14 +230,14 @@
 .method public final getSlotTable$runtime_release()Landroidx/compose/runtime/SlotTable;
     .locals 0
 
-    .line 321
+    .line 319
     iget-object p0, p0, Landroidx/compose/runtime/MovableContentStateReference;->slotTable:Landroidx/compose/runtime/SlotTable;
 
     return-object p0
 .end method
 
 .method public final setInvalidations$runtime_release(Ljava/util/List;)V
-    .locals 1
+    .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -274,11 +250,7 @@
         }
     .end annotation
 
-    const-string v0, "<set-?>"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 323
+    .line 321
     iput-object p1, p0, Landroidx/compose/runtime/MovableContentStateReference;->invalidations:Ljava/util/List;
 
     return-void

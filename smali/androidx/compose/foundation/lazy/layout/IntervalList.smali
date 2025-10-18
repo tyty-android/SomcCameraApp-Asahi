@@ -71,14 +71,14 @@
 
     if-eqz p4, :cond_1
 
-    .line 63
+    .line 66
     invoke-interface {p0}, Landroidx/compose/foundation/lazy/layout/IntervalList;->getSize()I
 
     move-result p2
 
     add-int/lit8 p2, p2, -0x1
 
-    .line 61
+    .line 64
     :cond_1
     invoke-interface {p0, p1, p2, p3}, Landroidx/compose/foundation/lazy/layout/IntervalList;->forEach(IILkotlin/jvm/functions/Function1;)V
 

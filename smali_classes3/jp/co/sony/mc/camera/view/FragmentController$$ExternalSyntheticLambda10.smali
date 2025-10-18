@@ -3,7 +3,7 @@
 .source "D8$$SyntheticClass"
 
 # interfaces
-.implements Ljp/co/sony/mc/camera/rtmp/YouTubeCheckEventStatusCallback;
+.implements Landroidx/lifecycle/Observer;
 
 
 # instance fields
@@ -24,13 +24,15 @@
 
 
 # virtual methods
-.method public final onResult(Ljp/co/sony/mc/camera/rtmp/ValidationCheckResultCode;)V
+.method public final onChanged(Ljava/lang/Object;)V
     .locals 0
 
     .line 0
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/FragmentController$$ExternalSyntheticLambda10;->f$0:Ljp/co/sony/mc/camera/view/FragmentController;
 
-    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/view/FragmentController;->$r8$lambda$dQCQ3z_sV6yMYCC1fR-bGHtlm5Q(Ljp/co/sony/mc/camera/view/FragmentController;Ljp/co/sony/mc/camera/rtmp/ValidationCheckResultCode;)V
+    check-cast p1, Ljava/lang/Boolean;
+
+    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/view/FragmentController;->$r8$lambda$4QIu3lroXPKgMOo7Xk9wSP4svoA(Ljp/co/sony/mc/camera/view/FragmentController;Ljava/lang/Boolean;)V
 
     return-void
 .end method

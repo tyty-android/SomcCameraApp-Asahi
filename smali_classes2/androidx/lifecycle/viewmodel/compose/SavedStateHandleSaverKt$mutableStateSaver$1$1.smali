@@ -1,6 +1,6 @@
 .class final Landroidx/lifecycle/viewmodel/compose/SavedStateHandleSaverKt$mutableStateSaver$1$1;
 .super Lkotlin/jvm/internal/Lambda;
-.source "SavedStateHandleSaver.kt"
+.source "SavedStateHandleSaver.android.kt"
 
 # interfaces
 .implements Lkotlin/jvm/functions/Function2;
@@ -111,12 +111,12 @@
 
     invoke-static {p2, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 181
+    .line 184
     instance-of v0, p2, Landroidx/compose/runtime/snapshots/SnapshotMutableState;
 
     if-eqz v0, :cond_0
 
-    .line 185
+    .line 188
     iget-object p0, p0, Landroidx/lifecycle/viewmodel/compose/SavedStateHandleSaverKt$mutableStateSaver$1$1;->$this_with:Landroidx/compose/runtime/saveable/Saver;
 
     invoke-interface {p2}, Landroidx/compose/runtime/MutableState;->getValue()Ljava/lang/Object;
@@ -143,7 +143,7 @@
 
     return-object p0
 
-    .line 181
+    .line 184
     :cond_0
     new-instance p0, Ljava/lang/IllegalArgumentException;
 
@@ -161,7 +161,7 @@
 .method public bridge synthetic invoke(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
 
-    .line 179
+    .line 182
     check-cast p1, Landroidx/compose/runtime/saveable/SaverScope;
 
     check-cast p2, Landroidx/compose/runtime/MutableState;

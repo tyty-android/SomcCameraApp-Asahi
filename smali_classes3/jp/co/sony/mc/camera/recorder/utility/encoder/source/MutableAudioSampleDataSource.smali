@@ -150,12 +150,16 @@
 
     if-eqz p0, :cond_0
 
+    const/4 p0, 0x1
+
     .line 308
-    const-string p0, "  dequeue input buffer failed"
+    new-array p0, p0, [Ljava/lang/String;
 
-    filled-new-array {p0}, [Ljava/lang/String;
+    const/4 v0, 0x0
 
-    move-result-object p0
+    const-string v1, "  dequeue input buffer failed"
+
+    aput-object v1, p0, v0
 
     invoke-static {p0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
@@ -284,28 +288,30 @@
 
     if-eqz v4, :cond_0
 
+    const/4 v4, 0x1
+
     .line 288
-    new-instance v4, Ljava/lang/StringBuilder;
+    new-array v4, v4, [Ljava/lang/String;
 
-    invoke-direct {v4}, Ljava/lang/StringBuilder;-><init>()V
+    new-instance v5, Ljava/lang/StringBuilder;
 
-    invoke-virtual {v4, v0}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+    invoke-direct {v5}, Ljava/lang/StringBuilder;-><init>()V
 
-    move-result-object v4
+    invoke-virtual {v5, v0}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
-    const-string v5, " silent bytes are remaining to write"
+    move-result-object v5
 
-    invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    const-string v6, " silent bytes are remaining to write"
 
-    move-result-object v4
+    invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v4}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    move-result-object v5
 
-    move-result-object v4
+    invoke-virtual {v5}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    filled-new-array {v4}, [Ljava/lang/String;
+    move-result-object v5
 
-    move-result-object v4
+    aput-object v5, v4, v1
 
     invoke-static {v4}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
@@ -368,30 +374,34 @@
 
     if-eqz p0, :cond_0
 
+    const/4 p0, 0x1
+
     .line 325
-    new-instance p0, Ljava/lang/StringBuilder;
+    new-array p0, p0, [Ljava/lang/String;
 
-    const-string p2, "  Buffer index "
+    new-instance p2, Ljava/lang/StringBuilder;
 
-    invoke-direct {p0, p2}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+    const-string p3, "  Buffer index "
 
-    invoke-virtual {p0, p1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+    invoke-direct {p2, p3}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
-    move-result-object p0
+    invoke-virtual {p2, p1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
-    const-string p1, " is queued"
+    move-result-object p1
 
-    invoke-virtual {p0, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    const-string p2, " is queued"
 
-    move-result-object p0
+    invoke-virtual {p1, p2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {p0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    move-result-object p1
 
-    move-result-object p0
+    invoke-virtual {p1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    filled-new-array {p0}, [Ljava/lang/String;
+    move-result-object p1
 
-    move-result-object p0
+    const/4 p2, 0x0
+
+    aput-object p1, p0, p2
 
     invoke-static {p0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
@@ -482,11 +492,11 @@
     if-ge v1, v2, :cond_0
 
     .line 194
-    const-string v2, "Could not read enough audio samples."
+    new-array v2, v4, [Ljava/lang/String;
 
-    filled-new-array {v2}, [Ljava/lang/String;
+    const-string v5, "Could not read enough audio samples."
 
-    move-result-object v2
+    aput-object v5, v2, v3
 
     invoke-static {v2}, Ljp/co/sony/mc/camera/util/CamLog;->w([Ljava/lang/String;)V
 
@@ -523,23 +533,23 @@
     add-int/2addr v1, v2
 
     .line 205
-    new-instance v2, Ljava/lang/StringBuilder;
+    new-array v2, v4, [Ljava/lang/String;
 
-    const-string v7, "Re-try to read until audio samples are retrieved enough. read-bytes:"
+    new-instance v7, Ljava/lang/StringBuilder;
 
-    invoke-direct {v2, v7}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+    const-string v8, "Re-try to read until audio samples are retrieved enough. read-bytes:"
 
-    invoke-virtual {v2, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+    invoke-direct {v7, v8}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
-    move-result-object v2
+    invoke-virtual {v7, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    move-result-object v7
 
-    move-result-object v2
+    invoke-virtual {v7}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    filled-new-array {v2}, [Ljava/lang/String;
+    move-result-object v7
 
-    move-result-object v2
+    aput-object v7, v2, v3
 
     invoke-static {v2}, Ljp/co/sony/mc/camera/util/CamLog;->w([Ljava/lang/String;)V
 
@@ -560,11 +570,11 @@
 
     .line 212
     :catch_0
-    const-string v2, "Interrupt skipping audio samples in mute range."
+    new-array v2, v4, [Ljava/lang/String;
 
-    filled-new-array {v2}, [Ljava/lang/String;
+    const-string v7, "Interrupt skipping audio samples in mute range."
 
-    move-result-object v2
+    aput-object v7, v2, v3
 
     invoke-static {v2}, Ljp/co/sony/mc/camera/util/CamLog;->e([Ljava/lang/String;)V
 
@@ -579,35 +589,35 @@
     if-gez v0, :cond_1
 
     .line 223
-    new-instance v0, Ljava/lang/StringBuilder;
+    new-array v0, v4, [Ljava/lang/String;
 
-    const-string v2, "Could not read enough audio samples by re-trying. read-bytes:"
+    new-instance v2, Ljava/lang/StringBuilder;
 
-    invoke-direct {v0, v2}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+    const-string v4, "Could not read enough audio samples by re-trying. read-bytes:"
 
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+    invoke-direct {v2, v4}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
-    move-result-object v0
+    invoke-virtual {v2, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
-    const-string v2, " remain-bytes:"
+    move-result-object v2
 
-    invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    const-string v4, " remain-bytes:"
 
-    move-result-object v0
+    invoke-virtual {v2, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget v2, p0, Ljp/co/sony/mc/camera/recorder/utility/encoder/source/MutableAudioSampleDataSource;->mMuteDurationRemainingBytes:I
+    move-result-object v2
 
-    invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+    iget v4, p0, Ljp/co/sony/mc/camera/recorder/utility/encoder/source/MutableAudioSampleDataSource;->mMuteDurationRemainingBytes:I
 
-    move-result-object v0
+    invoke-virtual {v2, v4}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    move-result-object v2
 
-    move-result-object v0
+    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    filled-new-array {v0}, [Ljava/lang/String;
+    move-result-object v2
 
-    move-result-object v0
+    aput-object v2, v0, v3
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/util/CamLog;->e([Ljava/lang/String;)V
 

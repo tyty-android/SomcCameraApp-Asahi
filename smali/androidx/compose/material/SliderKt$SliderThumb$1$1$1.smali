@@ -53,7 +53,7 @@
     f = "Slider.kt"
     i = {}
     l = {
-        0x2bb
+        0x2be
     }
     m = "invokeSuspend"
     n = {}
@@ -184,7 +184,7 @@
 
     move-result-object v0
 
-    .line 65535
+    .line 701
     iget v1, p0, Landroidx/compose/material/SliderKt$SliderThumb$1$1$1;->label:I
 
     const/4 v2, 0x1
@@ -209,7 +209,7 @@
     :cond_1
     invoke-static {p1}, Lkotlin/ResultKt;->throwOnFailure(Ljava/lang/Object;)V
 
-    .line 699
+    .line 702
     iget-object p1, p0, Landroidx/compose/material/SliderKt$SliderThumb$1$1$1;->$interactionSource:Landroidx/compose/foundation/interaction/MutableInteractionSource;
 
     invoke-interface {p1}, Landroidx/compose/foundation/interaction/MutableInteractionSource;->getInteractions()Lkotlinx/coroutines/flow/Flow;
@@ -238,7 +238,7 @@
 
     return-object v0
 
-    .line 709
+    .line 712
     :cond_2
     :goto_0
     sget-object p0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;

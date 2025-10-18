@@ -37,6 +37,13 @@
 .end method
 
 .method public abstract flagsFromClass()Ljava/lang/Class;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()",
+            "Ljava/lang/Class<",
+            "*>;"
+        }
+    .end annotation
 .end method
 
 .method public abstract intValues()[J
@@ -46,4 +53,11 @@
 .end method
 
 .method public abstract valuesFromClass()Ljava/lang/Class;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()",
+            "Ljava/lang/Class<",
+            "*>;"
+        }
+    .end annotation
 .end method

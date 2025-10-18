@@ -196,12 +196,16 @@
 
     if-eqz v0, :cond_0
 
+    const/4 v0, 0x1
+
     .line 185
-    const-string v0, "StorageImpl prepareReceiver"
+    new-array v0, v0, [Ljava/lang/String;
 
-    filled-new-array {v0}, [Ljava/lang/String;
+    const/4 v1, 0x0
 
-    move-result-object v0
+    const-string v2, "StorageImpl prepareReceiver"
+
+    aput-object v2, v0, v1
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
@@ -264,12 +268,16 @@
 
     if-eqz v0, :cond_0
 
+    const/4 v0, 0x1
+
     .line 219
-    const-string v0, "StorageImpl release"
+    new-array v0, v0, [Ljava/lang/String;
 
-    filled-new-array {v0}, [Ljava/lang/String;
+    const/4 v1, 0x0
 
-    move-result-object v0
+    const-string v2, "StorageImpl release"
+
+    aput-object v2, v0, v1
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
@@ -370,19 +378,23 @@
 .end method
 
 .method private releaseReceiver()V
-    .locals 1
+    .locals 3
 
     .line 211
     sget-boolean v0, Ljp/co/sony/mc/camera/util/CamLog;->VERBOSE:Z
 
     if-eqz v0, :cond_0
 
+    const/4 v0, 0x1
+
     .line 212
-    const-string v0, "StorageImpl releaseReceiver"
+    new-array v0, v0, [Ljava/lang/String;
 
-    filled-new-array {v0}, [Ljava/lang/String;
+    const/4 v1, 0x0
 
-    move-result-object v0
+    const-string v2, "StorageImpl releaseReceiver"
+
+    aput-object v2, v0, v1
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
@@ -414,19 +426,23 @@
 .end method
 
 .method public addStorageStateListener(Ljp/co/sony/mc/camera/storage/Storage$StorageStateListener;)V
-    .locals 1
+    .locals 3
 
     .line 305
     sget-boolean v0, Ljp/co/sony/mc/camera/util/CamLog;->VERBOSE:Z
 
     if-eqz v0, :cond_0
 
+    const/4 v0, 0x1
+
     .line 306
-    const-string v0, "StorageImpl addStorageStateListener"
+    new-array v0, v0, [Ljava/lang/String;
 
-    filled-new-array {v0}, [Ljava/lang/String;
+    const/4 v1, 0x0
 
-    move-result-object v0
+    const-string v2, "StorageImpl addStorageStateListener"
+
+    aput-object v2, v0, v1
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
@@ -525,19 +541,23 @@
 .end method
 
 .method public close()V
-    .locals 1
+    .locals 3
 
     .line 204
     sget-boolean v0, Ljp/co/sony/mc/camera/util/CamLog;->VERBOSE:Z
 
     if-eqz v0, :cond_0
 
+    const/4 v0, 0x1
+
     .line 205
-    const-string v0, "StorageImpl close"
+    new-array v0, v0, [Ljava/lang/String;
 
-    filled-new-array {v0}, [Ljava/lang/String;
+    const/4 v1, 0x0
 
-    move-result-object v0
+    const-string v2, "StorageImpl close"
+
+    aput-object v2, v0, v1
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
@@ -591,7 +611,7 @@
 .end method
 
 .method public getAvailableStorage()Ljava/util/List;
-    .locals 6
+    .locals 8
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()",
@@ -621,29 +641,33 @@
 
     const/4 v3, 0x0
 
-    :goto_0
-    if-ge v3, v2, :cond_1
+    move v4, v3
 
-    aget-object v4, v1, v3
+    :goto_0
+    if-ge v4, v2, :cond_1
+
+    aget-object v5, v1, v4
+
+    const/4 v6, 0x1
 
     .line 355
-    sget-object v5, Ljp/co/sony/mc/camera/storage/Storage$StorageState;->AVAILABLE:Ljp/co/sony/mc/camera/storage/Storage$StorageState;
+    new-array v6, v6, [Ljp/co/sony/mc/camera/storage/Storage$StorageState;
 
-    filled-new-array {v5}, [Ljp/co/sony/mc/camera/storage/Storage$StorageState;
+    sget-object v7, Ljp/co/sony/mc/camera/storage/Storage$StorageState;->AVAILABLE:Ljp/co/sony/mc/camera/storage/Storage$StorageState;
 
-    move-result-object v5
+    aput-object v7, v6, v3
 
-    invoke-direct {p0, v4, v5}, Ljp/co/sony/mc/camera/storage/StorageImpl;->checkStorageState(Ljp/co/sony/mc/camera/storage/Storage$StorageType;[Ljp/co/sony/mc/camera/storage/Storage$StorageState;)Z
+    invoke-direct {p0, v5, v6}, Ljp/co/sony/mc/camera/storage/StorageImpl;->checkStorageState(Ljp/co/sony/mc/camera/storage/Storage$StorageType;[Ljp/co/sony/mc/camera/storage/Storage$StorageState;)Z
 
-    move-result v5
+    move-result v6
 
-    if-eqz v5, :cond_0
+    if-eqz v6, :cond_0
 
     .line 356
-    invoke-interface {v0, v4}, Ljava/util/List;->add(Ljava/lang/Object;)Z
+    invoke-interface {v0, v5}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
     :cond_0
-    add-int/lit8 v3, v3, 0x1
+    add-int/lit8 v4, v4, 0x1
 
     goto :goto_0
 
@@ -661,19 +685,23 @@
 .end method
 
 .method public getCurrentState(Ljp/co/sony/mc/camera/storage/Storage$StorageType;)Ljp/co/sony/mc/camera/storage/Storage$StorageState;
-    .locals 1
+    .locals 3
 
     .line 323
     sget-boolean v0, Ljp/co/sony/mc/camera/util/CamLog;->VERBOSE:Z
 
     if-eqz v0, :cond_0
 
+    const/4 v0, 0x1
+
     .line 324
-    const-string v0, "StorageImpl getCurrentState"
+    new-array v0, v0, [Ljava/lang/String;
 
-    filled-new-array {v0}, [Ljava/lang/String;
+    const/4 v1, 0x0
 
-    move-result-object v0
+    const-string v2, "StorageImpl getCurrentState"
+
+    aput-object v2, v0, v1
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
@@ -710,27 +738,29 @@
 .end method
 
 .method public getRemainStorage(Ljp/co/sony/mc/camera/storage/Storage$StorageType;)J
-    .locals 2
+    .locals 3
 
     .line 332
     sget-boolean v0, Ljp/co/sony/mc/camera/util/CamLog;->VERBOSE:Z
 
+    const/4 v1, 0x0
+
     if-eqz v0, :cond_0
 
+    const/4 v0, 0x1
+
     .line 333
-    const-string v0, "StorageImpl getRemainStorage"
+    new-array v0, v0, [Ljava/lang/String;
 
-    filled-new-array {v0}, [Ljava/lang/String;
+    const-string v2, "StorageImpl getRemainStorage"
 
-    move-result-object v0
+    aput-object v2, v0, v1
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
     .line 335
     :cond_0
     iget-object v0, p0, Ljp/co/sony/mc/camera/storage/StorageImpl;->mCameraStorageManager:Ljp/co/sony/mc/camera/storage/CameraStorageManager;
-
-    const/4 v1, 0x0
 
     invoke-virtual {v0, v1, p1}, Ljp/co/sony/mc/camera/storage/CameraStorageManager;->checkRemain(ZLjp/co/sony/mc/camera/storage/Storage$StorageType;)J
 
@@ -745,7 +775,7 @@
 .end method
 
 .method public isStorageReadable()Z
-    .locals 3
+    .locals 5
 
     .line 374
     invoke-static {}, Ljp/co/sony/mc/camera/storage/StorageUtil;->getMountableStorageTypes()Ljava/util/List;
@@ -761,6 +791,8 @@
 
     move-result v1
 
+    const/4 v2, 0x1
+
     if-eqz v1, :cond_2
 
     invoke-interface {v0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
@@ -772,31 +804,35 @@
     .line 375
     invoke-virtual {p0, v1}, Ljp/co/sony/mc/camera/storage/StorageImpl;->isStorageReadable(Ljp/co/sony/mc/camera/storage/Storage$StorageType;)Z
 
-    move-result v2
+    move-result v3
 
-    if-nez v2, :cond_0
+    if-nez v3, :cond_0
 
     .line 376
     sget-boolean v0, Ljp/co/sony/mc/camera/util/CamLog;->DEBUG:Z
 
+    const/4 v3, 0x0
+
     if-eqz v0, :cond_1
 
     .line 377
-    new-instance v0, Ljava/lang/StringBuilder;
+    new-array v0, v2, [Ljava/lang/String;
 
-    const-string/jumbo v2, "type = "
+    new-instance v2, Ljava/lang/StringBuilder;
 
-    invoke-direct {v0, v2}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+    const-string/jumbo v4, "type = "
 
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+    invoke-direct {v2, v4}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
-    move-result-object v0
+    invoke-virtual {v2, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
-    const-string v2, ", readyState = "
+    move-result-object v2
 
-    invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    const-string v4, ", readyState = "
 
-    move-result-object v0
+    invoke-virtual {v2, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v2
 
     iget-object p0, p0, Ljp/co/sony/mc/camera/storage/StorageImpl;->mStorageController:Ljp/co/sony/mc/camera/storage/StorageController;
 
@@ -805,7 +841,7 @@
 
     move-result-object p0
 
-    invoke-virtual {v0, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+    invoke-virtual {v2, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
     move-result-object p0
 
@@ -813,22 +849,16 @@
 
     move-result-object p0
 
-    filled-new-array {p0}, [Ljava/lang/String;
-
-    move-result-object p0
+    aput-object p0, v0, v3
 
     .line 377
-    invoke-static {p0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
+    invoke-static {v0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
     :cond_1
-    const/4 p0, 0x0
-
-    return p0
+    return v3
 
     :cond_2
-    const/4 p0, 0x1
-
-    return p0
+    return v2
 .end method
 
 .method public isStorageReadable(Ljp/co/sony/mc/camera/storage/Storage$StorageType;)Z
@@ -861,31 +891,35 @@
 .end method
 
 .method public onWriteStorage(Ljp/co/sony/mc/camera/storage/Storage$StorageType;)V
-    .locals 2
+    .locals 3
 
     .line 435
     sget-boolean v0, Ljp/co/sony/mc/camera/util/CamLog;->VERBOSE:Z
 
     if-eqz v0, :cond_0
 
+    const/4 v0, 0x1
+
     .line 436
-    new-instance v0, Ljava/lang/StringBuilder;
+    new-array v0, v0, [Ljava/lang/String;
 
-    const-string v1, "onWriteStorage : "
+    new-instance v1, Ljava/lang/StringBuilder;
 
-    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+    const-string v2, "onWriteStorage : "
 
-    invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+    invoke-direct {v1, v2}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
-    move-result-object v0
+    invoke-virtual {v1, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    move-result-object v1
 
-    move-result-object v0
+    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    filled-new-array {v0}, [Ljava/lang/String;
+    move-result-object v1
 
-    move-result-object v0
+    const/4 v2, 0x0
+
+    aput-object v1, v0, v2
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
@@ -908,14 +942,18 @@
     .line 147
     sget-boolean v0, Ljp/co/sony/mc/camera/util/CamLog;->VERBOSE:Z
 
+    const/4 v1, 0x1
+
     if-eqz v0, :cond_0
 
     .line 148
-    const-string v0, "StorageImpl open"
+    new-array v0, v1, [Ljava/lang/String;
 
-    filled-new-array {v0}, [Ljava/lang/String;
+    const/4 v2, 0x0
 
-    move-result-object v0
+    const-string v3, "StorageImpl open"
+
+    aput-object v3, v0, v2
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
@@ -935,22 +973,20 @@
     :goto_0
     invoke-interface {v0}, Ljava/util/Iterator;->hasNext()Z
 
-    move-result v1
+    move-result v2
 
-    const/4 v2, 0x1
-
-    if-eqz v1, :cond_2
+    if-eqz v2, :cond_2
 
     invoke-interface {v0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
-    move-result-object v1
+    move-result-object v2
 
-    check-cast v1, Ljp/co/sony/mc/camera/storage/Storage$StorageType;
+    check-cast v2, Ljp/co/sony/mc/camera/storage/Storage$StorageType;
 
     .line 152
     sget-object v3, Ljp/co/sony/mc/camera/storage/Storage$StorageType;->INTERNAL:Ljp/co/sony/mc/camera/storage/Storage$StorageType;
 
-    if-ne v1, v3, :cond_1
+    if-ne v2, v3, :cond_1
 
     .line 153
     iget-object v3, p0, Ljp/co/sony/mc/camera/storage/StorageImpl;->mStorageAccessSemaphoreMap:Ljava/util/Map;
@@ -959,9 +995,9 @@
 
     const/4 v5, 0x2
 
-    invoke-direct {v4, v5, v2}, Ljava/util/concurrent/Semaphore;-><init>(IZ)V
+    invoke-direct {v4, v5, v1}, Ljava/util/concurrent/Semaphore;-><init>(IZ)V
 
-    invoke-interface {v3, v1, v4}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-interface {v3, v2, v4}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     goto :goto_0
 
@@ -971,9 +1007,9 @@
 
     new-instance v4, Ljava/util/concurrent/Semaphore;
 
-    invoke-direct {v4, v2, v2}, Ljava/util/concurrent/Semaphore;-><init>(IZ)V
+    invoke-direct {v4, v1, v1}, Ljava/util/concurrent/Semaphore;-><init>(IZ)V
 
-    invoke-interface {v3, v1, v4}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-interface {v3, v2, v4}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     goto :goto_0
 
@@ -988,20 +1024,20 @@
     .line 162
     new-instance v0, Ljp/co/sony/mc/camera/storage/CameraStorageManager;
 
-    iget-object v1, p0, Ljp/co/sony/mc/camera/storage/StorageImpl;->mStorageController:Ljp/co/sony/mc/camera/storage/StorageController;
+    iget-object v2, p0, Ljp/co/sony/mc/camera/storage/StorageImpl;->mStorageController:Ljp/co/sony/mc/camera/storage/StorageController;
 
-    invoke-direct {v0, p1, v1}, Ljp/co/sony/mc/camera/storage/CameraStorageManager;-><init>(Landroid/content/Context;Ljp/co/sony/mc/camera/storage/StorageController;)V
+    invoke-direct {v0, p1, v2}, Ljp/co/sony/mc/camera/storage/CameraStorageManager;-><init>(Landroid/content/Context;Ljp/co/sony/mc/camera/storage/StorageController;)V
 
     iput-object v0, p0, Ljp/co/sony/mc/camera/storage/StorageImpl;->mCameraStorageManager:Ljp/co/sony/mc/camera/storage/CameraStorageManager;
 
     .line 163
     new-instance v0, Ljp/co/sony/mc/camera/storage/SavingTaskManager;
 
-    iget-object v1, p0, Ljp/co/sony/mc/camera/storage/StorageImpl;->mCameraStorageManager:Ljp/co/sony/mc/camera/storage/CameraStorageManager;
+    iget-object v2, p0, Ljp/co/sony/mc/camera/storage/StorageImpl;->mCameraStorageManager:Ljp/co/sony/mc/camera/storage/CameraStorageManager;
 
     iget-object v3, p0, Ljp/co/sony/mc/camera/storage/StorageImpl;->mStorageAccessSemaphoreMap:Ljava/util/Map;
 
-    invoke-direct {v0, p1, v1, v3}, Ljp/co/sony/mc/camera/storage/SavingTaskManager;-><init>(Landroid/content/Context;Ljp/co/sony/mc/camera/storage/CameraStorageManager;Ljava/util/Map;)V
+    invoke-direct {v0, p1, v2, v3}, Ljp/co/sony/mc/camera/storage/SavingTaskManager;-><init>(Landroid/content/Context;Ljp/co/sony/mc/camera/storage/CameraStorageManager;Ljava/util/Map;)V
 
     iput-object v0, p0, Ljp/co/sony/mc/camera/storage/StorageImpl;->mSavingTaskManager:Ljp/co/sony/mc/camera/storage/SavingTaskManager;
 
@@ -1011,7 +1047,7 @@
     .line 167
     new-instance p1, Ljava/util/concurrent/LinkedBlockingDeque;
 
-    invoke-direct {p1, v2}, Ljava/util/concurrent/LinkedBlockingDeque;-><init>(I)V
+    invoke-direct {p1, v1}, Ljava/util/concurrent/LinkedBlockingDeque;-><init>(I)V
 
     iput-object p1, p0, Ljp/co/sony/mc/camera/storage/StorageImpl;->mDataLoaderTaskQueue:Ljava/util/concurrent/LinkedBlockingDeque;
 
@@ -1050,18 +1086,22 @@
 .end method
 
 .method public pause()V
-    .locals 1
+    .locals 3
 
     .line 458
     sget-boolean v0, Ljp/co/sony/mc/camera/util/CamLog;->DEBUG:Z
 
     if-eqz v0, :cond_0
 
-    const-string v0, "pause()"
+    const/4 v0, 0x1
 
-    filled-new-array {v0}, [Ljava/lang/String;
+    new-array v0, v0, [Ljava/lang/String;
 
-    move-result-object v0
+    const/4 v1, 0x0
+
+    const-string v2, "pause()"
+
+    aput-object v2, v0, v1
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
@@ -1089,19 +1129,23 @@
 .end method
 
 .method public removeStorageStateListener(Ljp/co/sony/mc/camera/storage/Storage$StorageStateListener;)V
-    .locals 1
+    .locals 3
 
     .line 314
     sget-boolean v0, Ljp/co/sony/mc/camera/util/CamLog;->VERBOSE:Z
 
     if-eqz v0, :cond_0
 
+    const/4 v0, 0x1
+
     .line 315
-    const-string v0, "StorageImpl removeStorageStateListener"
+    new-array v0, v0, [Ljava/lang/String;
 
-    filled-new-array {v0}, [Ljava/lang/String;
+    const/4 v1, 0x0
 
-    move-result-object v0
+    const-string v2, "StorageImpl removeStorageStateListener"
+
+    aput-object v2, v0, v1
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
@@ -1115,19 +1159,23 @@
 .end method
 
 .method public requestLoad(Landroid/net/Uri;ILjp/co/sony/mc/camera/storage/Storage$OnLoadCompletedListener;)V
-    .locals 2
+    .locals 3
 
     .line 284
     sget-boolean v0, Ljp/co/sony/mc/camera/util/CamLog;->VERBOSE:Z
 
     if-eqz v0, :cond_0
 
+    const/4 v0, 0x1
+
     .line 285
-    const-string v0, "StorageImpl requestLoad"
+    new-array v0, v0, [Ljava/lang/String;
 
-    filled-new-array {v0}, [Ljava/lang/String;
+    const/4 v1, 0x0
 
-    move-result-object v0
+    const-string v2, "StorageImpl requestLoad"
+
+    aput-object v2, v0, v1
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
@@ -1162,19 +1210,23 @@
 .end method
 
 .method public requestStore(Ljp/co/sony/mc/camera/storage/SavingRequest;Ljp/co/sony/mc/camera/storage/Storage$StorageType;)Z
-    .locals 3
+    .locals 5
 
     .line 249
     sget-boolean v0, Ljp/co/sony/mc/camera/util/CamLog;->VERBOSE:Z
 
+    const/4 v1, 0x0
+
+    const/4 v2, 0x1
+
     if-eqz v0, :cond_0
 
     .line 250
-    const-string v0, "requestStore"
+    new-array v0, v2, [Ljava/lang/String;
 
-    filled-new-array {v0}, [Ljava/lang/String;
+    const-string v3, "requestStore"
 
-    move-result-object v0
+    aput-object v3, v0, v1
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
@@ -1184,33 +1236,33 @@
 
     if-nez v0, :cond_1
 
-    iget-object v1, p1, Ljp/co/sony/mc/camera/storage/SavingRequest;->common:Ljp/co/sony/mc/camera/mediasaving/takenstatus/TakenStatusCommon;
+    iget-object v3, p1, Ljp/co/sony/mc/camera/storage/SavingRequest;->common:Ljp/co/sony/mc/camera/mediasaving/takenstatus/TakenStatusCommon;
 
-    iget-object v1, v1, Ljp/co/sony/mc/camera/mediasaving/takenstatus/TakenStatusCommon;->burstType:Ljp/co/sony/mc/camera/configuration/parameters/DriveMode$BurstType;
+    iget-object v3, v3, Ljp/co/sony/mc/camera/mediasaving/takenstatus/TakenStatusCommon;->burstType:Ljp/co/sony/mc/camera/configuration/parameters/DriveMode$BurstType;
 
-    sget-object v2, Ljp/co/sony/mc/camera/configuration/parameters/DriveMode$BurstType;->NORMAL:Ljp/co/sony/mc/camera/configuration/parameters/DriveMode$BurstType;
+    sget-object v4, Ljp/co/sony/mc/camera/configuration/parameters/DriveMode$BurstType;->NORMAL:Ljp/co/sony/mc/camera/configuration/parameters/DriveMode$BurstType;
 
     .line 254
-    invoke-virtual {v1, v2}, Ljp/co/sony/mc/camera/configuration/parameters/DriveMode$BurstType;->equals(Ljava/lang/Object;)Z
+    invoke-virtual {v3, v4}, Ljp/co/sony/mc/camera/configuration/parameters/DriveMode$BurstType;->equals(Ljava/lang/Object;)Z
 
-    move-result v1
+    move-result v3
 
-    if-eqz v1, :cond_1
+    if-eqz v3, :cond_1
 
-    sget-object v1, Ljp/co/sony/mc/camera/storage/Storage$StorageType;->EXTERNAL_CARD:Ljp/co/sony/mc/camera/storage/Storage$StorageType;
+    sget-object v3, Ljp/co/sony/mc/camera/storage/Storage$StorageType;->EXTERNAL_CARD:Ljp/co/sony/mc/camera/storage/Storage$StorageType;
 
     .line 255
-    invoke-virtual {p2, v1}, Ljp/co/sony/mc/camera/storage/Storage$StorageType;->equals(Ljava/lang/Object;)Z
+    invoke-virtual {p2, v3}, Ljp/co/sony/mc/camera/storage/Storage$StorageType;->equals(Ljava/lang/Object;)Z
 
-    move-result v1
+    move-result v3
 
-    if-nez v1, :cond_3
+    if-nez v3, :cond_3
 
     .line 256
     :cond_1
-    iget-object v1, p0, Ljp/co/sony/mc/camera/storage/StorageImpl;->mSavingTaskManager:Ljp/co/sony/mc/camera/storage/SavingTaskManager;
+    iget-object v3, p0, Ljp/co/sony/mc/camera/storage/StorageImpl;->mSavingTaskManager:Ljp/co/sony/mc/camera/storage/SavingTaskManager;
 
-    invoke-virtual {v1, p2}, Ljp/co/sony/mc/camera/storage/SavingTaskManager;->canPushStoreTask(Ljp/co/sony/mc/camera/storage/Storage$StorageType;)Z
+    invoke-virtual {v3, p2}, Ljp/co/sony/mc/camera/storage/SavingTaskManager;->canPushStoreTask(Ljp/co/sony/mc/camera/storage/Storage$StorageType;)Z
 
     move-result p2
 
@@ -1237,15 +1289,13 @@
 
     sget-object v0, Landroid/net/Uri;->EMPTY:Landroid/net/Uri;
 
-    const/4 v1, 0x0
+    const/4 v2, 0x0
 
-    invoke-direct {p0, p2, v0, p1, v1}, Ljp/co/sony/mc/camera/mediasaving/StoreDataResult;-><init>(Ljp/co/sony/mc/camera/mediasaving/MediaSavingResult;Landroid/net/Uri;Ljp/co/sony/mc/camera/storage/SavingRequest;Ljava/lang/String;)V
+    invoke-direct {p0, p2, v0, p1, v2}, Ljp/co/sony/mc/camera/mediasaving/StoreDataResult;-><init>(Ljp/co/sony/mc/camera/mediasaving/MediaSavingResult;Landroid/net/Uri;Ljp/co/sony/mc/camera/storage/SavingRequest;Ljava/lang/String;)V
 
     invoke-virtual {p1, p0}, Ljp/co/sony/mc/camera/storage/SavingRequest;->notifyStoreResult(Ljp/co/sony/mc/camera/mediasaving/StoreDataResult;)V
 
-    const/4 p0, 0x0
-
-    return p0
+    return v1
 
     :cond_3
     if-eqz v0, :cond_5
@@ -1256,11 +1306,11 @@
     if-eqz p2, :cond_4
 
     .line 269
-    const-string p2, "StorageImpl storeVideo"
+    new-array p2, v2, [Ljava/lang/String;
 
-    filled-new-array {p2}, [Ljava/lang/String;
+    const-string v0, "StorageImpl storeVideo"
 
-    move-result-object p2
+    aput-object v0, p2, v1
 
     invoke-static {p2}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
@@ -1281,11 +1331,11 @@
     if-eqz p2, :cond_6
 
     .line 274
-    const-string p2, "StorageImpl Photo"
+    new-array p2, v2, [Ljava/lang/String;
 
-    filled-new-array {p2}, [Ljava/lang/String;
+    const-string v0, "StorageImpl Photo"
 
-    move-result-object p2
+    aput-object v0, p2, v1
 
     invoke-static {p2}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
@@ -1298,9 +1348,7 @@
     invoke-virtual {p0, p1}, Ljp/co/sony/mc/camera/storage/SavingTaskManager;->storePicture(Ljp/co/sony/mc/camera/storage/PhotoSavingRequest;)V
 
     :goto_0
-    const/4 p0, 0x1
-
-    return p0
+    return v2
 .end method
 
 .method public resume()V
@@ -1311,11 +1359,15 @@
 
     if-eqz v0, :cond_0
 
-    const-string v0, "resume()"
+    const/4 v0, 0x1
 
-    filled-new-array {v0}, [Ljava/lang/String;
+    new-array v0, v0, [Ljava/lang/String;
 
-    move-result-object v0
+    const/4 v1, 0x0
+
+    const-string v2, "resume()"
+
+    aput-object v2, v0, v1
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 

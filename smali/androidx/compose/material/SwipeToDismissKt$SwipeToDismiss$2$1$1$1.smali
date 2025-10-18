@@ -69,7 +69,7 @@
 .method public bridge synthetic invoke(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
 
-    .line 218
+    .line 219
     check-cast p1, Landroidx/compose/ui/unit/Density;
 
     invoke-virtual {p0, p1}, Landroidx/compose/material/SwipeToDismissKt$SwipeToDismiss$2$1$1$1;->invoke-Bjo55l4(Landroidx/compose/ui/unit/Density;)J
@@ -84,13 +84,9 @@
 .end method
 
 .method public final invoke-Bjo55l4(Landroidx/compose/ui/unit/Density;)J
-    .locals 1
+    .locals 0
 
-    const-string v0, "$this$offset"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 218
+    .line 219
     iget-object p0, p0, Landroidx/compose/material/SwipeToDismissKt$SwipeToDismiss$2$1$1$1;->$state:Landroidx/compose/material/DismissState;
 
     invoke-virtual {p0}, Landroidx/compose/material/DismissState;->getOffset()Landroidx/compose/runtime/State;

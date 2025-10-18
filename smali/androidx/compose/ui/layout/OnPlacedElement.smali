@@ -69,7 +69,7 @@
 
 # direct methods
 .method public constructor <init>(Lkotlin/jvm/functions/Function1;)V
-    .locals 1
+    .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -80,10 +80,6 @@
             ">;)V"
         }
     .end annotation
-
-    const-string v0, "onPlaced"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 40
     invoke-direct {p0}, Landroidx/compose/ui/node/ModifierNodeElement;-><init>()V
@@ -143,10 +139,6 @@
             "Landroidx/compose/ui/layout/OnPlacedElement;"
         }
     .end annotation
-
-    const-string p0, "onPlaced"
-
-    invoke-static {p1, p0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
     new-instance p0, Landroidx/compose/ui/layout/OnPlacedElement;
 
@@ -251,10 +243,6 @@
 .method public inspectableProperties(Landroidx/compose/ui/platform/InspectorInfo;)V
     .locals 1
 
-    const-string v0, "<this>"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
     .line 48
     const-string v0, "onPlaced"
 
@@ -312,11 +300,7 @@
 .end method
 
 .method public update(Landroidx/compose/ui/layout/OnPlacedNode;)V
-    .locals 1
-
-    const-string v0, "node"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+    .locals 0
 
     .line 44
     iget-object p0, p0, Landroidx/compose/ui/layout/OnPlacedElement;->onPlaced:Lkotlin/jvm/functions/Function1;

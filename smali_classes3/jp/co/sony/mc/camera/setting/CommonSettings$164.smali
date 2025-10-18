@@ -21,7 +21,7 @@
 .method constructor <init>()V
     .locals 0
 
-    .line 1577
+    .line 1583
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -42,10 +42,8 @@
         }
     .end annotation
 
-    .line 1581
-    invoke-static {}, Ljp/co/sony/mc/camera/configuration/parameters/FunctionCustom;->getDefaultValue()Ljp/co/sony/mc/camera/configuration/parameters/FunctionCustom;
-
-    move-result-object p0
+    .line 1587
+    sget-object p0, Ljp/co/sony/mc/camera/configuration/parameters/ShutterSound;->ALL:Ljp/co/sony/mc/camera/configuration/parameters/ShutterSound;
 
     return-object p0
 .end method

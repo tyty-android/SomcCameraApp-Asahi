@@ -48,8 +48,6 @@
 
 
 # instance fields
-.field final synthetic $$dirty:I
-
 .field final synthetic $actionColor:J
 
 .field final synthetic $actionLabel:Ljava/lang/String;
@@ -58,16 +56,14 @@
 
 
 # direct methods
-.method constructor <init>(JILandroidx/compose/material/SnackbarData;Ljava/lang/String;)V
+.method constructor <init>(JLandroidx/compose/material/SnackbarData;Ljava/lang/String;)V
     .locals 0
 
     iput-wide p1, p0, Landroidx/compose/material/SnackbarKt$Snackbar$actionComposable$1;->$actionColor:J
 
-    iput p3, p0, Landroidx/compose/material/SnackbarKt$Snackbar$actionComposable$1;->$$dirty:I
+    iput-object p3, p0, Landroidx/compose/material/SnackbarKt$Snackbar$actionComposable$1;->$snackbarData:Landroidx/compose/material/SnackbarData;
 
-    iput-object p4, p0, Landroidx/compose/material/SnackbarKt$Snackbar$actionComposable$1;->$snackbarData:Landroidx/compose/material/SnackbarData;
-
-    iput-object p5, p0, Landroidx/compose/material/SnackbarKt$Snackbar$actionComposable$1;->$actionLabel:Ljava/lang/String;
+    iput-object p4, p0, Landroidx/compose/material/SnackbarKt$Snackbar$actionComposable$1;->$actionLabel:Ljava/lang/String;
 
     const/4 p1, 0x2
 
@@ -81,7 +77,7 @@
 .method public bridge synthetic invoke(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
 
-    .line 164
+    .line 165
     check-cast p1, Landroidx/compose/runtime/Composer;
 
     check-cast p2, Ljava/lang/Number;
@@ -106,7 +102,7 @@
 
     move/from16 v1, p2
 
-    const-string v2, "C165@7570L44,164@7518L219:Snackbar.kt#jmzs0o"
+    const-string v2, "C166@7612L44,165@7560L219:Snackbar.kt#jmzs0o"
 
     invoke-static {p1, v2}, Landroidx/compose/runtime/ComposerKt;->sourceInformation(Landroidx/compose/runtime/Composer;Ljava/lang/String;)V
 
@@ -116,7 +112,7 @@
 
     if-ne v2, v3, :cond_1
 
-    .line 165
+    .line 166
     invoke-interface {p1}, Landroidx/compose/runtime/Composer;->getSkipping()Z
 
     move-result v2
@@ -125,13 +121,13 @@
 
     goto :goto_0
 
-    .line 169
+    .line 170
     :cond_0
     invoke-interface {p1}, Landroidx/compose/runtime/Composer;->skipToGroupEnd()V
 
     goto :goto_1
 
-    .line 165
+    .line 166
     :cond_1
     :goto_0
     invoke-static {}, Landroidx/compose/runtime/ComposerKt;->isTraceInProgress()Z
@@ -142,25 +138,19 @@
 
     const/4 v2, -0x1
 
-    const-string v3, "androidx.compose.material.Snackbar.<anonymous> (Snackbar.kt:163)"
+    const-string v3, "androidx.compose.material.Snackbar.<anonymous> (Snackbar.kt:165)"
 
     const v4, 0x6de142b0
 
     invoke-static {v4, v1, v2, v3}, Landroidx/compose/runtime/ComposerKt;->traceEventStart(IIILjava/lang/String;)V
 
-    .line 166
+    .line 167
     :cond_2
     sget-object v1, Landroidx/compose/material/ButtonDefaults;->INSTANCE:Landroidx/compose/material/ButtonDefaults;
 
     iget-wide v4, v0, Landroidx/compose/material/SnackbarKt$Snackbar$actionComposable$1;->$actionColor:J
 
-    iget v2, v0, Landroidx/compose/material/SnackbarKt$Snackbar$actionComposable$1;->$$dirty:I
-
-    shr-int/lit8 v2, v2, 0xf
-
-    and-int/lit8 v2, v2, 0x70
-
-    or-int/lit16 v9, v2, 0xc00
+    const/16 v9, 0xc00
 
     const/4 v10, 0x5
 
@@ -174,7 +164,7 @@
 
     move-result-object v7
 
-    .line 165
+    .line 166
     new-instance v1, Landroidx/compose/material/SnackbarKt$Snackbar$actionComposable$1$1;
 
     iget-object v2, v0, Landroidx/compose/material/SnackbarKt$Snackbar$actionComposable$1;->$snackbarData:Landroidx/compose/material/SnackbarData;
@@ -183,7 +173,7 @@
 
     check-cast v1, Lkotlin/jvm/functions/Function0;
 
-    .line 168
+    .line 169
     new-instance v2, Landroidx/compose/material/SnackbarKt$Snackbar$actionComposable$1$2;
 
     iget-object v0, v0, Landroidx/compose/material/SnackbarKt$Snackbar$actionComposable$1;->$actionLabel:Ljava/lang/String;
@@ -242,7 +232,7 @@
 
     move v12, v13
 
-    .line 165
+    .line 166
     invoke-static/range {v0 .. v12}, Landroidx/compose/material/ButtonKt;->TextButton(Lkotlin/jvm/functions/Function0;Landroidx/compose/ui/Modifier;ZLandroidx/compose/foundation/interaction/MutableInteractionSource;Landroidx/compose/material/ButtonElevation;Landroidx/compose/ui/graphics/Shape;Landroidx/compose/foundation/BorderStroke;Landroidx/compose/material/ButtonColors;Landroidx/compose/foundation/layout/PaddingValues;Lkotlin/jvm/functions/Function3;Landroidx/compose/runtime/Composer;II)V
 
     invoke-static {}, Landroidx/compose/runtime/ComposerKt;->isTraceInProgress()Z

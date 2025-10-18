@@ -14,33 +14,33 @@
 
 
 # static fields
-.field public static final activityAction:I = 0x7f040028
+.field public static final activityAction:I = 0x7f040029
 
-.field public static final activityName:I = 0x7f04002a
+.field public static final activityName:I = 0x7f04002b
 
-.field public static final alwaysExpand:I = 0x7f040038
+.field public static final alwaysExpand:I = 0x7f040039
 
-.field public static final clearTop:I = 0x7f0400eb
+.field public static final clearTop:I = 0x7f0400f1
 
-.field public static final finishPrimaryWithSecondary:I = 0x7f0401f7
+.field public static final finishPrimaryWithSecondary:I = 0x7f040200
 
-.field public static final finishSecondaryWithPrimary:I = 0x7f0401f8
+.field public static final finishSecondaryWithPrimary:I = 0x7f040201
 
-.field public static final placeholderActivityName:I = 0x7f0403a9
+.field public static final placeholderActivityName:I = 0x7f0403b9
 
-.field public static final primaryActivityName:I = 0x7f0403c4
+.field public static final primaryActivityName:I = 0x7f0403d3
 
-.field public static final secondaryActivityAction:I = 0x7f0403eb
+.field public static final secondaryActivityAction:I = 0x7f0403fa
 
-.field public static final secondaryActivityName:I = 0x7f0403ec
+.field public static final secondaryActivityName:I = 0x7f0403fb
 
-.field public static final splitLayoutDirection:I = 0x7f040423
+.field public static final splitLayoutDirection:I = 0x7f040432
 
-.field public static final splitMinSmallestWidth:I = 0x7f040424
+.field public static final splitMinSmallestWidth:I = 0x7f040433
 
-.field public static final splitMinWidth:I = 0x7f040425
+.field public static final splitMinWidth:I = 0x7f040434
 
-.field public static final splitRatio:I = 0x7f040426
+.field public static final splitRatio:I = 0x7f040435
 
 
 # direct methods

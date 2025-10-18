@@ -85,7 +85,7 @@
 .method public bridge synthetic invoke(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
 
-    .line 47
+    .line 48
     check-cast p1, Landroidx/compose/foundation/text/selection/Selection;
 
     invoke-virtual {p0, p1}, Landroidx/compose/foundation/text/selection/SelectionContainerKt$SelectionContainer$1$1;->invoke(Landroidx/compose/foundation/text/selection/Selection;)V
@@ -98,7 +98,7 @@
 .method public final invoke(Landroidx/compose/foundation/text/selection/Selection;)V
     .locals 0
 
-    .line 48
+    .line 49
     iget-object p0, p0, Landroidx/compose/foundation/text/selection/SelectionContainerKt$SelectionContainer$1$1;->$selection$delegate:Landroidx/compose/runtime/MutableState;
 
     invoke-static {p0, p1}, Landroidx/compose/foundation/text/selection/SelectionContainerKt;->access$SelectionContainer$lambda$2(Landroidx/compose/runtime/MutableState;Landroidx/compose/foundation/text/selection/Selection;)V

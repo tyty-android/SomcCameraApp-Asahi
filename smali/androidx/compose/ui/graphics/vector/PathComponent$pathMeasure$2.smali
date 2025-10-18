@@ -76,7 +76,7 @@
 .method public final invoke()Landroidx/compose/ui/graphics/PathMeasure;
     .locals 0
 
-    .line 283
+    .line 301
     invoke-static {}, Landroidx/compose/ui/graphics/AndroidPathMeasure_androidKt;->PathMeasure()Landroidx/compose/ui/graphics/PathMeasure;
 
     move-result-object p0
@@ -87,7 +87,7 @@
 .method public bridge synthetic invoke()Ljava/lang/Object;
     .locals 0
 
-    .line 283
+    .line 301
     invoke-virtual {p0}, Landroidx/compose/ui/graphics/vector/PathComponent$pathMeasure$2;->invoke()Landroidx/compose/ui/graphics/PathMeasure;
 
     move-result-object p0

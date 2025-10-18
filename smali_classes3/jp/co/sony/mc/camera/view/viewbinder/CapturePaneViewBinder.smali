@@ -9,14 +9,19 @@
 # annotations
 .annotation runtime Lkotlin/Metadata;
     d1 = {
-        "\u0000H\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0003\n\u0002\u0018\u0002\n\u0002\u0008\u0003\n\u0002\u0018\u0002\n\u0002\u0008\u0003\n\u0002\u0018\u0002\n\u0002\u0008\u0003\n\u0002\u0018\u0002\n\u0002\u0008\u0003\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0002\n\u0002\u0008\u0002\u0008\u0007\u0018\u00002\u00020\u0001B\r\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u00a2\u0006\u0002\u0010\u0004J\n\u0010\u0019\u001a\u0004\u0018\u00010\u001aH\u0002J\u0010\u0010\u001b\u001a\u00020\u001c2\u0006\u0010\u001d\u001a\u00020\u0016H\u0016R\u000e\u0010\u0002\u001a\u00020\u0003X\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u0014\u0010\u0005\u001a\u00020\u00068BX\u0082\u0004\u00a2\u0006\u0006\u001a\u0004\u0008\u0007\u0010\u0008R\u0014\u0010\t\u001a\u00020\n8BX\u0082\u0004\u00a2\u0006\u0006\u001a\u0004\u0008\u000b\u0010\u000cR\u0014\u0010\r\u001a\u00020\u000e8BX\u0082\u0004\u00a2\u0006\u0006\u001a\u0004\u0008\u000f\u0010\u0010R\u0014\u0010\u0011\u001a\u00020\u00128BX\u0082\u0004\u00a2\u0006\u0006\u001a\u0004\u0008\u0013\u0010\u0014R\u0014\u0010\u0015\u001a\u00020\u00168BX\u0082\u0004\u00a2\u0006\u0006\u001a\u0004\u0008\u0017\u0010\u0018\u00a8\u0006\u001e"
+        "\u0000H\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0003\n\u0002\u0018\u0002\n\u0002\u0008\u0003\n\u0002\u0018\u0002\n\u0002\u0008\u0003\n\u0002\u0018\u0002\n\u0002\u0008\u0003\n\u0002\u0018\u0002\n\u0002\u0008\u0003\n\u0002\u0018\u0002\n\u0002\u0008\u0003\n\u0002\u0010\u0002\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0000\u0008\u0007\u0018\u00002\u00020\u0001B\u000f\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u00a2\u0006\u0004\u0008\u0004\u0010\u0005J\u0010\u0010\u001a\u001a\u00020\u001b2\u0006\u0010\u001c\u001a\u00020\u0007H\u0016J\n\u0010\u001d\u001a\u0004\u0018\u00010\u001eH\u0002R\u000e\u0010\u0002\u001a\u00020\u0003X\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u0014\u0010\u0006\u001a\u00020\u00078BX\u0082\u0004\u00a2\u0006\u0006\u001a\u0004\u0008\u0008\u0010\tR\u0014\u0010\n\u001a\u00020\u000b8BX\u0082\u0004\u00a2\u0006\u0006\u001a\u0004\u0008\u000c\u0010\rR\u0014\u0010\u000e\u001a\u00020\u000f8BX\u0082\u0004\u00a2\u0006\u0006\u001a\u0004\u0008\u0010\u0010\u0011R\u0014\u0010\u0012\u001a\u00020\u00138BX\u0082\u0004\u00a2\u0006\u0006\u001a\u0004\u0008\u0014\u0010\u0015R\u0014\u0010\u0016\u001a\u00020\u00178BX\u0082\u0004\u00a2\u0006\u0006\u001a\u0004\u0008\u0018\u0010\u0019\u00a8\u0006\u001f"
     }
     d2 = {
         "Ljp/co/sony/mc/camera/view/viewbinder/CapturePaneViewBinder;",
         "Landroidx/lifecycle/DefaultLifecycleObserver;",
         "binding",
         "Ljp/co/sony/mc/camera/databinding/FragmentBasicModeRightPaneCaptureBinding;",
+        "<init>",
         "(Ljp/co/sony/mc/camera/databinding/FragmentBasicModeRightPaneCaptureBinding;)V",
+        "lifecycleOwner",
+        "Landroidx/lifecycle/LifecycleOwner;",
+        "getLifecycleOwner",
+        "()Landroidx/lifecycle/LifecycleOwner;",
         "cameraSettingsModel",
         "Ljp/co/sony/mc/camera/view/viewmodel/CameraSettingsModel;",
         "getCameraSettingsModel",
@@ -25,29 +30,25 @@
         "Ljp/co/sony/mc/camera/view/viewmodel/CameraStatusModel;",
         "getCameraStatusModel",
         "()Ljp/co/sony/mc/camera/view/viewmodel/CameraStatusModel;",
-        "captureControlUiState",
-        "Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState;",
-        "getCaptureControlUiState",
-        "()Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState;",
         "lensUiState",
         "Ljp/co/sony/mc/camera/view/uistate/LensUiState;",
         "getLensUiState",
         "()Ljp/co/sony/mc/camera/view/uistate/LensUiState;",
-        "lifecycleOwner",
-        "Landroidx/lifecycle/LifecycleOwner;",
-        "getLifecycleOwner",
-        "()Landroidx/lifecycle/LifecycleOwner;",
-        "getButtonAccessibilityDelegate",
-        "Landroid/view/View$AccessibilityDelegate;",
+        "captureControlUiState",
+        "Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState;",
+        "getCaptureControlUiState",
+        "()Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState;",
         "onCreate",
         "",
         "owner",
+        "getButtonAccessibilityDelegate",
+        "Landroid/view/View$AccessibilityDelegate;",
         "SomcCamera_release"
     }
     k = 0x1
     mv = {
-        0x1,
-        0x9,
+        0x2,
+        0x0,
         0x0
     }
     xi = 0x30
@@ -63,6 +64,76 @@
 
 
 # direct methods
+.method public static synthetic $r8$lambda$1uB3aSWJU3Hl6p3jnfmF5j5b_lU(Ljp/co/sony/mc/camera/view/viewbinder/CapturePaneViewBinder;Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;)Lkotlin/Unit;
+    .locals 0
+
+    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/view/viewbinder/CapturePaneViewBinder;->onCreate$lambda$8(Ljp/co/sony/mc/camera/view/viewbinder/CapturePaneViewBinder;Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;)Lkotlin/Unit;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method public static synthetic $r8$lambda$7zWW_ZCRKZYMVy0UsbEtQTJhDlc(Ljp/co/sony/mc/camera/view/viewbinder/CapturePaneViewBinder;Ljava/lang/Boolean;)Lkotlin/Unit;
+    .locals 0
+
+    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/view/viewbinder/CapturePaneViewBinder;->onCreate$lambda$5(Ljp/co/sony/mc/camera/view/viewbinder/CapturePaneViewBinder;Ljava/lang/Boolean;)Lkotlin/Unit;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method public static synthetic $r8$lambda$KuXZRyUOFjDVlGrtLCUuQCxh5cY(Ljp/co/sony/mc/camera/view/viewbinder/CapturePaneViewBinder;Lkotlin/Unit;)Lkotlin/Unit;
+    .locals 0
+
+    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/view/viewbinder/CapturePaneViewBinder;->onCreate$lambda$7(Ljp/co/sony/mc/camera/view/viewbinder/CapturePaneViewBinder;Lkotlin/Unit;)Lkotlin/Unit;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method public static synthetic $r8$lambda$QSBU7abHXD6uslmiyJ7nBzTqi60(Ljp/co/sony/mc/camera/view/viewbinder/CapturePaneViewBinder;Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState$ControlState;)Lkotlin/Unit;
+    .locals 0
+
+    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/view/viewbinder/CapturePaneViewBinder;->onCreate$lambda$2(Ljp/co/sony/mc/camera/view/viewbinder/CapturePaneViewBinder;Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState$ControlState;)Lkotlin/Unit;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method public static synthetic $r8$lambda$QmFhL81G7cKAM6yY4twBE6xBiDA(Ljp/co/sony/mc/camera/view/viewbinder/CapturePaneViewBinder;Ljava/lang/Boolean;)Lkotlin/Unit;
+    .locals 0
+
+    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/view/viewbinder/CapturePaneViewBinder;->onCreate$lambda$0(Ljp/co/sony/mc/camera/view/viewbinder/CapturePaneViewBinder;Ljava/lang/Boolean;)Lkotlin/Unit;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method public static synthetic $r8$lambda$iLiALhdjqr7eamwq_DEyj52S_ys(Ljp/co/sony/mc/camera/view/viewbinder/CapturePaneViewBinder;Ljava/lang/Boolean;)Lkotlin/Unit;
+    .locals 0
+
+    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/view/viewbinder/CapturePaneViewBinder;->onCreate$lambda$10(Ljp/co/sony/mc/camera/view/viewbinder/CapturePaneViewBinder;Ljava/lang/Boolean;)Lkotlin/Unit;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method public static synthetic $r8$lambda$zMAYmtTJnu_gm2cLNTpL10FjW9w(Ljp/co/sony/mc/camera/view/viewbinder/CapturePaneViewBinder;Ljava/lang/Boolean;)Lkotlin/Unit;
+    .locals 0
+
+    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/view/viewbinder/CapturePaneViewBinder;->onCreate$lambda$6(Ljp/co/sony/mc/camera/view/viewbinder/CapturePaneViewBinder;Ljava/lang/Boolean;)Lkotlin/Unit;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
 .method static constructor <clinit>()V
     .locals 0
 
@@ -98,30 +169,10 @@
     return-void
 .end method
 
-.method public static final synthetic access$getBinding$p(Ljp/co/sony/mc/camera/view/viewbinder/CapturePaneViewBinder;)Ljp/co/sony/mc/camera/databinding/FragmentBasicModeRightPaneCaptureBinding;
-    .locals 0
-
-    .line 19
-    iget-object p0, p0, Ljp/co/sony/mc/camera/view/viewbinder/CapturePaneViewBinder;->binding:Ljp/co/sony/mc/camera/databinding/FragmentBasicModeRightPaneCaptureBinding;
-
-    return-object p0
-.end method
-
-.method public static final synthetic access$getCaptureControlUiState(Ljp/co/sony/mc/camera/view/viewbinder/CapturePaneViewBinder;)Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState;
-    .locals 0
-
-    .line 19
-    invoke-direct {p0}, Ljp/co/sony/mc/camera/view/viewbinder/CapturePaneViewBinder;->getCaptureControlUiState()Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState;
-
-    move-result-object p0
-
-    return-object p0
-.end method
-
 .method private final getButtonAccessibilityDelegate()Landroid/view/View$AccessibilityDelegate;
     .locals 0
 
-    .line 109
+    .line 113
     new-instance p0, Ljp/co/sony/mc/camera/view/viewbinder/CapturePaneViewBinder$getButtonAccessibilityDelegate$1;
 
     invoke-direct {p0}, Ljp/co/sony/mc/camera/view/viewbinder/CapturePaneViewBinder$getButtonAccessibilityDelegate$1;-><init>()V
@@ -206,6 +257,352 @@
     return-object p0
 .end method
 
+.method private static final onCreate$lambda$0(Ljp/co/sony/mc/camera/view/viewbinder/CapturePaneViewBinder;Ljava/lang/Boolean;)Lkotlin/Unit;
+    .locals 1
+
+    const-string/jumbo v0, "this$0"
+
+    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 39
+    iget-object p0, p0, Ljp/co/sony/mc/camera/view/viewbinder/CapturePaneViewBinder;->binding:Ljp/co/sony/mc/camera/databinding/FragmentBasicModeRightPaneCaptureBinding;
+
+    iget-object p0, p0, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeRightPaneCaptureBinding;->pause:Ljp/co/sony/mc/camera/view/widget/PushImageButton;
+
+    invoke-virtual {p1}, Ljava/lang/Boolean;->booleanValue()Z
+
+    move-result p1
+
+    invoke-virtual {p0, p1}, Ljp/co/sony/mc/camera/view/widget/PushImageButton;->setEnabled(Z)V
+
+    .line 40
+    sget-object p0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
+
+    return-object p0
+.end method
+
+.method private static final onCreate$lambda$10(Ljp/co/sony/mc/camera/view/viewbinder/CapturePaneViewBinder;Ljava/lang/Boolean;)Lkotlin/Unit;
+    .locals 2
+
+    const-string/jumbo v0, "this$0"
+
+    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 97
+    iget-object v0, p0, Ljp/co/sony/mc/camera/view/viewbinder/CapturePaneViewBinder;->binding:Ljp/co/sony/mc/camera/databinding/FragmentBasicModeRightPaneCaptureBinding;
+
+    iget-object v0, v0, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeRightPaneCaptureBinding;->contentsContainer:Ljp/co/sony/mc/camera/view/contentsview/ContentsContainer;
+
+    invoke-virtual {v0}, Ljp/co/sony/mc/camera/view/contentsview/ContentsContainer;->getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
+
+    move-result-object v0
+
+    const-string v1, "null cannot be cast to non-null type android.view.ViewGroup.MarginLayoutParams"
+
+    invoke-static {v0, v1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;Ljava/lang/String;)V
+
+    check-cast v0, Landroid/view/ViewGroup$MarginLayoutParams;
+
+    .line 98
+    invoke-virtual {p1}, Ljava/lang/Boolean;->booleanValue()Z
+
+    move-result p1
+
+    if-eqz p1, :cond_0
+
+    .line 99
+    iget-object p1, p0, Ljp/co/sony/mc/camera/view/viewbinder/CapturePaneViewBinder;->binding:Ljp/co/sony/mc/camera/databinding/FragmentBasicModeRightPaneCaptureBinding;
+
+    iget-object p1, p1, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeRightPaneCaptureBinding;->contentsContainer:Ljp/co/sony/mc/camera/view/contentsview/ContentsContainer;
+
+    invoke-virtual {p1}, Ljp/co/sony/mc/camera/view/contentsview/ContentsContainer;->getContext()Landroid/content/Context;
+
+    move-result-object p1
+
+    invoke-virtual {p1}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
+
+    move-result-object p1
+
+    const v1, 0x7f070252
+
+    invoke-virtual {p1, v1}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
+
+    move-result p1
+
+    goto :goto_0
+
+    .line 103
+    :cond_0
+    iget-object p1, p0, Ljp/co/sony/mc/camera/view/viewbinder/CapturePaneViewBinder;->binding:Ljp/co/sony/mc/camera/databinding/FragmentBasicModeRightPaneCaptureBinding;
+
+    iget-object p1, p1, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeRightPaneCaptureBinding;->contentsContainer:Ljp/co/sony/mc/camera/view/contentsview/ContentsContainer;
+
+    invoke-virtual {p1}, Ljp/co/sony/mc/camera/view/contentsview/ContentsContainer;->getContext()Landroid/content/Context;
+
+    move-result-object p1
+
+    invoke-virtual {p1}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
+
+    move-result-object p1
+
+    const v1, 0x7f070253
+
+    invoke-virtual {p1, v1}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
+
+    move-result p1
+
+    .line 98
+    :goto_0
+    invoke-virtual {v0, p1}, Landroid/view/ViewGroup$MarginLayoutParams;->setMarginStart(I)V
+
+    .line 107
+    iget-object p0, p0, Ljp/co/sony/mc/camera/view/viewbinder/CapturePaneViewBinder;->binding:Ljp/co/sony/mc/camera/databinding/FragmentBasicModeRightPaneCaptureBinding;
+
+    iget-object p0, p0, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeRightPaneCaptureBinding;->contentsContainer:Ljp/co/sony/mc/camera/view/contentsview/ContentsContainer;
+
+    check-cast v0, Landroid/view/ViewGroup$LayoutParams;
+
+    invoke-virtual {p0, v0}, Ljp/co/sony/mc/camera/view/contentsview/ContentsContainer;->setLayoutParams(Landroid/view/ViewGroup$LayoutParams;)V
+
+    .line 109
+    sget-object p0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
+
+    return-object p0
+.end method
+
+.method private static final onCreate$lambda$2(Ljp/co/sony/mc/camera/view/viewbinder/CapturePaneViewBinder;Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState$ControlState;)Lkotlin/Unit;
+    .locals 2
+
+    const-string/jumbo v0, "this$0"
+
+    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 43
+    invoke-direct {p0}, Ljp/co/sony/mc/camera/view/viewbinder/CapturePaneViewBinder;->getCameraSettingsModel()Ljp/co/sony/mc/camera/view/viewmodel/CameraSettingsModel;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Ljp/co/sony/mc/camera/view/viewmodel/CameraSettingsModel;->isProVideo()Landroidx/lifecycle/LiveData;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Landroidx/lifecycle/LiveData;->getValue()Ljava/lang/Object;
+
+    move-result-object v0
+
+    invoke-static {v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;)V
+
+    check-cast v0, Ljava/lang/Boolean;
+
+    invoke-virtual {v0}, Ljava/lang/Boolean;->booleanValue()Z
+
+    move-result v0
+
+    if-eqz v0, :cond_0
+
+    .line 44
+    sget-object p0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
+
+    return-object p0
+
+    .line 47
+    :cond_0
+    iget-object p0, p0, Ljp/co/sony/mc/camera/view/viewbinder/CapturePaneViewBinder;->binding:Ljp/co/sony/mc/camera/databinding/FragmentBasicModeRightPaneCaptureBinding;
+
+    iget-object p0, p0, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeRightPaneCaptureBinding;->pause:Ljp/co/sony/mc/camera/view/widget/PushImageButton;
+
+    .line 48
+    invoke-static {p1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;)V
+
+    .line 49
+    sget-object v0, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState$ControlState$Ready;->INSTANCE:Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState$ControlState$Ready;
+
+    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->areEqual(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    move-result v0
+
+    const/4 v1, 0x0
+
+    if-eqz v0, :cond_1
+
+    const p1, 0x7f080368
+
+    .line 50
+    invoke-virtual {p0, p1}, Ljp/co/sony/mc/camera/view/widget/PushImageButton;->setImageResource(I)V
+
+    .line 51
+    invoke-virtual {p0, v1}, Ljp/co/sony/mc/camera/view/widget/PushImageButton;->setImportantForAccessibility(I)V
+
+    .line 52
+    invoke-virtual {p0}, Ljp/co/sony/mc/camera/view/widget/PushImageButton;->getContext()Landroid/content/Context;
+
+    move-result-object p1
+
+    const v0, 0x7f1100e1
+
+    invoke-virtual {p1, v0}, Landroid/content/Context;->getString(I)Ljava/lang/String;
+
+    move-result-object p1
+
+    check-cast p1, Ljava/lang/CharSequence;
+
+    invoke-virtual {p0, p1}, Ljp/co/sony/mc/camera/view/widget/PushImageButton;->setContentDescription(Ljava/lang/CharSequence;)V
+
+    goto :goto_0
+
+    .line 56
+    :cond_1
+    sget-object v0, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState$ControlState$Pause$Pausing;->INSTANCE:Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState$ControlState$Pause$Pausing;
+
+    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->areEqual(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    move-result p1
+
+    if-eqz p1, :cond_2
+
+    const p1, 0x7f080369
+
+    .line 57
+    invoke-virtual {p0, p1}, Ljp/co/sony/mc/camera/view/widget/PushImageButton;->setImageResource(I)V
+
+    .line 58
+    invoke-virtual {p0, v1}, Ljp/co/sony/mc/camera/view/widget/PushImageButton;->setImportantForAccessibility(I)V
+
+    .line 59
+    invoke-virtual {p0}, Ljp/co/sony/mc/camera/view/widget/PushImageButton;->getContext()Landroid/content/Context;
+
+    move-result-object p1
+
+    const v0, 0x7f1100e2
+
+    invoke-virtual {p1, v0}, Landroid/content/Context;->getString(I)Ljava/lang/String;
+
+    move-result-object p1
+
+    check-cast p1, Ljava/lang/CharSequence;
+
+    invoke-virtual {p0, p1}, Ljp/co/sony/mc/camera/view/widget/PushImageButton;->setContentDescription(Ljava/lang/CharSequence;)V
+
+    .line 66
+    :cond_2
+    :goto_0
+    sget-object p0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
+
+    return-object p0
+.end method
+
+.method private static final onCreate$lambda$5(Ljp/co/sony/mc/camera/view/viewbinder/CapturePaneViewBinder;Ljava/lang/Boolean;)Lkotlin/Unit;
+    .locals 1
+
+    const-string/jumbo v0, "this$0"
+
+    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 77
+    iget-object p0, p0, Ljp/co/sony/mc/camera/view/viewbinder/CapturePaneViewBinder;->binding:Ljp/co/sony/mc/camera/databinding/FragmentBasicModeRightPaneCaptureBinding;
+
+    iget-object p0, p0, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeRightPaneCaptureBinding;->snapshot:Ljp/co/sony/mc/camera/view/widget/PushImageButton;
+
+    invoke-virtual {p1}, Ljava/lang/Boolean;->booleanValue()Z
+
+    move-result p1
+
+    invoke-virtual {p0, p1}, Ljp/co/sony/mc/camera/view/widget/PushImageButton;->setEnabled(Z)V
+
+    .line 78
+    sget-object p0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
+
+    return-object p0
+.end method
+
+.method private static final onCreate$lambda$6(Ljp/co/sony/mc/camera/view/viewbinder/CapturePaneViewBinder;Ljava/lang/Boolean;)Lkotlin/Unit;
+    .locals 1
+
+    const-string/jumbo v0, "this$0"
+
+    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 81
+    iget-object p0, p0, Ljp/co/sony/mc/camera/view/viewbinder/CapturePaneViewBinder;->binding:Ljp/co/sony/mc/camera/databinding/FragmentBasicModeRightPaneCaptureBinding;
+
+    iget-object p0, p0, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeRightPaneCaptureBinding;->snapshot:Ljp/co/sony/mc/camera/view/widget/PushImageButton;
+
+    invoke-virtual {p1}, Ljava/lang/Boolean;->booleanValue()Z
+
+    move-result p1
+
+    invoke-virtual {p0, p1}, Ljp/co/sony/mc/camera/view/widget/PushImageButton;->setActivated(Z)V
+
+    .line 82
+    sget-object p0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
+
+    return-object p0
+.end method
+
+.method private static final onCreate$lambda$7(Ljp/co/sony/mc/camera/view/viewbinder/CapturePaneViewBinder;Lkotlin/Unit;)Lkotlin/Unit;
+    .locals 0
+
+    const-string/jumbo p1, "this$0"
+
+    invoke-static {p0, p1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 85
+    iget-object p1, p0, Ljp/co/sony/mc/camera/view/viewbinder/CapturePaneViewBinder;->binding:Ljp/co/sony/mc/camera/databinding/FragmentBasicModeRightPaneCaptureBinding;
+
+    iget-object p1, p1, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeRightPaneCaptureBinding;->snapshot:Ljp/co/sony/mc/camera/view/widget/PushImageButton;
+
+    invoke-virtual {p1}, Ljp/co/sony/mc/camera/view/widget/PushImageButton;->isEnabled()Z
+
+    move-result p1
+
+    if-eqz p1, :cond_0
+
+    .line 86
+    invoke-direct {p0}, Ljp/co/sony/mc/camera/view/viewbinder/CapturePaneViewBinder;->getCaptureControlUiState()Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState;
+
+    move-result-object p0
+
+    invoke-virtual {p0}, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState;->execSnapshot()V
+
+    .line 88
+    :cond_0
+    sget-object p0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
+
+    return-object p0
+.end method
+
+.method private static final onCreate$lambda$8(Ljp/co/sony/mc/camera/view/viewbinder/CapturePaneViewBinder;Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;)Lkotlin/Unit;
+    .locals 1
+
+    const-string/jumbo v0, "this$0"
+
+    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 91
+    invoke-virtual {p1}, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->isMacro()Z
+
+    move-result v0
+
+    if-eqz v0, :cond_0
+
+    .line 92
+    iget-object p0, p0, Ljp/co/sony/mc/camera/view/viewbinder/CapturePaneViewBinder;->binding:Ljp/co/sony/mc/camera/databinding/FragmentBasicModeRightPaneCaptureBinding;
+
+    iget-object p0, p0, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeRightPaneCaptureBinding;->teleMacroStillVideoSwitchButton:Landroid/widget/ImageButton;
+
+    invoke-virtual {p1}, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->isVideo()Z
+
+    move-result p1
+
+    invoke-virtual {p0, p1}, Landroid/widget/ImageButton;->setSelected(Z)V
+
+    .line 94
+    :cond_0
+    sget-object p0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
+
+    return-object p0
+.end method
+
 
 # virtual methods
 .method public onCreate(Landroidx/lifecycle/LifecycleOwner;)V
@@ -228,11 +625,9 @@
 
     move-result-object v0
 
-    new-instance v1, Ljp/co/sony/mc/camera/view/viewbinder/CapturePaneViewBinder$onCreate$1;
+    new-instance v1, Ljp/co/sony/mc/camera/view/viewbinder/CapturePaneViewBinder$$ExternalSyntheticLambda0;
 
-    invoke-direct {v1, p0}, Ljp/co/sony/mc/camera/view/viewbinder/CapturePaneViewBinder$onCreate$1;-><init>(Ljp/co/sony/mc/camera/view/viewbinder/CapturePaneViewBinder;)V
-
-    check-cast v1, Lkotlin/jvm/functions/Function1;
+    invoke-direct {v1, p0}, Ljp/co/sony/mc/camera/view/viewbinder/CapturePaneViewBinder$$ExternalSyntheticLambda0;-><init>(Ljp/co/sony/mc/camera/view/viewbinder/CapturePaneViewBinder;)V
 
     new-instance v2, Ljp/co/sony/mc/camera/view/viewbinder/CapturePaneViewBinder$sam$androidx_lifecycle_Observer$0;
 
@@ -255,11 +650,9 @@
 
     move-result-object v0
 
-    new-instance v1, Ljp/co/sony/mc/camera/view/viewbinder/CapturePaneViewBinder$onCreate$2;
+    new-instance v1, Ljp/co/sony/mc/camera/view/viewbinder/CapturePaneViewBinder$$ExternalSyntheticLambda1;
 
-    invoke-direct {v1, p0}, Ljp/co/sony/mc/camera/view/viewbinder/CapturePaneViewBinder$onCreate$2;-><init>(Ljp/co/sony/mc/camera/view/viewbinder/CapturePaneViewBinder;)V
-
-    check-cast v1, Lkotlin/jvm/functions/Function1;
+    invoke-direct {v1, p0}, Ljp/co/sony/mc/camera/view/viewbinder/CapturePaneViewBinder$$ExternalSyntheticLambda1;-><init>(Ljp/co/sony/mc/camera/view/viewbinder/CapturePaneViewBinder;)V
 
     new-instance v2, Ljp/co/sony/mc/camera/view/viewbinder/CapturePaneViewBinder$sam$androidx_lifecycle_Observer$0;
 
@@ -269,22 +662,10 @@
 
     invoke-virtual {p1, v0, v2}, Landroidx/lifecycle/MutableLiveData;->observe(Landroidx/lifecycle/LifecycleOwner;Landroidx/lifecycle/Observer;)V
 
-    .line 64
-    iget-object p1, p0, Ljp/co/sony/mc/camera/view/viewbinder/CapturePaneViewBinder;->binding:Ljp/co/sony/mc/camera/databinding/FragmentBasicModeRightPaneCaptureBinding;
-
-    iget-object p1, p1, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeRightPaneCaptureBinding;->pause:Ljp/co/sony/mc/camera/view/widget/PushImageButton;
-
-    .line 65
-    invoke-direct {p0}, Ljp/co/sony/mc/camera/view/viewbinder/CapturePaneViewBinder;->getButtonAccessibilityDelegate()Landroid/view/View$AccessibilityDelegate;
-
-    move-result-object v0
-
-    invoke-virtual {p1, v0}, Ljp/co/sony/mc/camera/view/widget/PushImageButton;->setAccessibilityDelegate(Landroid/view/View$AccessibilityDelegate;)V
-
     .line 68
     iget-object p1, p0, Ljp/co/sony/mc/camera/view/viewbinder/CapturePaneViewBinder;->binding:Ljp/co/sony/mc/camera/databinding/FragmentBasicModeRightPaneCaptureBinding;
 
-    iget-object p1, p1, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeRightPaneCaptureBinding;->snapshot:Ljp/co/sony/mc/camera/view/widget/PushImageButton;
+    iget-object p1, p1, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeRightPaneCaptureBinding;->pause:Ljp/co/sony/mc/camera/view/widget/PushImageButton;
 
     .line 69
     invoke-direct {p0}, Ljp/co/sony/mc/camera/view/viewbinder/CapturePaneViewBinder;->getButtonAccessibilityDelegate()Landroid/view/View$AccessibilityDelegate;
@@ -294,6 +675,18 @@
     invoke-virtual {p1, v0}, Ljp/co/sony/mc/camera/view/widget/PushImageButton;->setAccessibilityDelegate(Landroid/view/View$AccessibilityDelegate;)V
 
     .line 72
+    iget-object p1, p0, Ljp/co/sony/mc/camera/view/viewbinder/CapturePaneViewBinder;->binding:Ljp/co/sony/mc/camera/databinding/FragmentBasicModeRightPaneCaptureBinding;
+
+    iget-object p1, p1, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeRightPaneCaptureBinding;->snapshot:Ljp/co/sony/mc/camera/view/widget/PushImageButton;
+
+    .line 73
+    invoke-direct {p0}, Ljp/co/sony/mc/camera/view/viewbinder/CapturePaneViewBinder;->getButtonAccessibilityDelegate()Landroid/view/View$AccessibilityDelegate;
+
+    move-result-object v0
+
+    invoke-virtual {p1, v0}, Ljp/co/sony/mc/camera/view/widget/PushImageButton;->setAccessibilityDelegate(Landroid/view/View$AccessibilityDelegate;)V
+
+    .line 76
     invoke-direct {p0}, Ljp/co/sony/mc/camera/view/viewbinder/CapturePaneViewBinder;->getCaptureControlUiState()Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState;
 
     move-result-object p1
@@ -306,38 +699,9 @@
 
     move-result-object v0
 
-    new-instance v1, Ljp/co/sony/mc/camera/view/viewbinder/CapturePaneViewBinder$onCreate$5;
+    new-instance v1, Ljp/co/sony/mc/camera/view/viewbinder/CapturePaneViewBinder$$ExternalSyntheticLambda2;
 
-    invoke-direct {v1, p0}, Ljp/co/sony/mc/camera/view/viewbinder/CapturePaneViewBinder$onCreate$5;-><init>(Ljp/co/sony/mc/camera/view/viewbinder/CapturePaneViewBinder;)V
-
-    check-cast v1, Lkotlin/jvm/functions/Function1;
-
-    new-instance v2, Ljp/co/sony/mc/camera/view/viewbinder/CapturePaneViewBinder$sam$androidx_lifecycle_Observer$0;
-
-    invoke-direct {v2, v1}, Ljp/co/sony/mc/camera/view/viewbinder/CapturePaneViewBinder$sam$androidx_lifecycle_Observer$0;-><init>(Lkotlin/jvm/functions/Function1;)V
-
-    check-cast v2, Landroidx/lifecycle/Observer;
-
-    invoke-virtual {p1, v0, v2}, Landroidx/lifecycle/LiveData;->observe(Landroidx/lifecycle/LifecycleOwner;Landroidx/lifecycle/Observer;)V
-
-    .line 76
-    invoke-direct {p0}, Ljp/co/sony/mc/camera/view/viewbinder/CapturePaneViewBinder;->getCaptureControlUiState()Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState;
-
-    move-result-object p1
-
-    invoke-virtual {p1}, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState;->getSnapshotActivated()Landroidx/lifecycle/LiveData;
-
-    move-result-object p1
-
-    invoke-direct {p0}, Ljp/co/sony/mc/camera/view/viewbinder/CapturePaneViewBinder;->getLifecycleOwner()Landroidx/lifecycle/LifecycleOwner;
-
-    move-result-object v0
-
-    new-instance v1, Ljp/co/sony/mc/camera/view/viewbinder/CapturePaneViewBinder$onCreate$6;
-
-    invoke-direct {v1, p0}, Ljp/co/sony/mc/camera/view/viewbinder/CapturePaneViewBinder$onCreate$6;-><init>(Ljp/co/sony/mc/camera/view/viewbinder/CapturePaneViewBinder;)V
-
-    check-cast v1, Lkotlin/jvm/functions/Function1;
+    invoke-direct {v1, p0}, Ljp/co/sony/mc/camera/view/viewbinder/CapturePaneViewBinder$$ExternalSyntheticLambda2;-><init>(Ljp/co/sony/mc/camera/view/viewbinder/CapturePaneViewBinder;)V
 
     new-instance v2, Ljp/co/sony/mc/camera/view/viewbinder/CapturePaneViewBinder$sam$androidx_lifecycle_Observer$0;
 
@@ -352,7 +716,7 @@
 
     move-result-object p1
 
-    invoke-virtual {p1}, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState;->getOnCaptureInRecording()Landroidx/lifecycle/LiveData;
+    invoke-virtual {p1}, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState;->getSnapshotActivated()Landroidx/lifecycle/LiveData;
 
     move-result-object p1
 
@@ -360,11 +724,9 @@
 
     move-result-object v0
 
-    new-instance v1, Ljp/co/sony/mc/camera/view/viewbinder/CapturePaneViewBinder$onCreate$7;
+    new-instance v1, Ljp/co/sony/mc/camera/view/viewbinder/CapturePaneViewBinder$$ExternalSyntheticLambda3;
 
-    invoke-direct {v1, p0}, Ljp/co/sony/mc/camera/view/viewbinder/CapturePaneViewBinder$onCreate$7;-><init>(Ljp/co/sony/mc/camera/view/viewbinder/CapturePaneViewBinder;)V
-
-    check-cast v1, Lkotlin/jvm/functions/Function1;
+    invoke-direct {v1, p0}, Ljp/co/sony/mc/camera/view/viewbinder/CapturePaneViewBinder$$ExternalSyntheticLambda3;-><init>(Ljp/co/sony/mc/camera/view/viewbinder/CapturePaneViewBinder;)V
 
     new-instance v2, Ljp/co/sony/mc/camera/view/viewbinder/CapturePaneViewBinder$sam$androidx_lifecycle_Observer$0;
 
@@ -374,7 +736,32 @@
 
     invoke-virtual {p1, v0, v2}, Landroidx/lifecycle/LiveData;->observe(Landroidx/lifecycle/LifecycleOwner;Landroidx/lifecycle/Observer;)V
 
-    .line 86
+    .line 84
+    invoke-direct {p0}, Ljp/co/sony/mc/camera/view/viewbinder/CapturePaneViewBinder;->getCaptureControlUiState()Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState;
+
+    move-result-object p1
+
+    invoke-virtual {p1}, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState;->getOnCaptureInRecording()Landroidx/lifecycle/LiveData;
+
+    move-result-object p1
+
+    invoke-direct {p0}, Ljp/co/sony/mc/camera/view/viewbinder/CapturePaneViewBinder;->getLifecycleOwner()Landroidx/lifecycle/LifecycleOwner;
+
+    move-result-object v0
+
+    new-instance v1, Ljp/co/sony/mc/camera/view/viewbinder/CapturePaneViewBinder$$ExternalSyntheticLambda4;
+
+    invoke-direct {v1, p0}, Ljp/co/sony/mc/camera/view/viewbinder/CapturePaneViewBinder$$ExternalSyntheticLambda4;-><init>(Ljp/co/sony/mc/camera/view/viewbinder/CapturePaneViewBinder;)V
+
+    new-instance v2, Ljp/co/sony/mc/camera/view/viewbinder/CapturePaneViewBinder$sam$androidx_lifecycle_Observer$0;
+
+    invoke-direct {v2, v1}, Ljp/co/sony/mc/camera/view/viewbinder/CapturePaneViewBinder$sam$androidx_lifecycle_Observer$0;-><init>(Lkotlin/jvm/functions/Function1;)V
+
+    check-cast v2, Landroidx/lifecycle/Observer;
+
+    invoke-virtual {p1, v0, v2}, Landroidx/lifecycle/LiveData;->observe(Landroidx/lifecycle/LifecycleOwner;Landroidx/lifecycle/Observer;)V
+
+    .line 90
     invoke-direct {p0}, Ljp/co/sony/mc/camera/view/viewbinder/CapturePaneViewBinder;->getCameraSettingsModel()Ljp/co/sony/mc/camera/view/viewmodel/CameraSettingsModel;
 
     move-result-object p1
@@ -387,11 +774,9 @@
 
     move-result-object v0
 
-    new-instance v1, Ljp/co/sony/mc/camera/view/viewbinder/CapturePaneViewBinder$onCreate$8;
+    new-instance v1, Ljp/co/sony/mc/camera/view/viewbinder/CapturePaneViewBinder$$ExternalSyntheticLambda5;
 
-    invoke-direct {v1, p0}, Ljp/co/sony/mc/camera/view/viewbinder/CapturePaneViewBinder$onCreate$8;-><init>(Ljp/co/sony/mc/camera/view/viewbinder/CapturePaneViewBinder;)V
-
-    check-cast v1, Lkotlin/jvm/functions/Function1;
+    invoke-direct {v1, p0}, Ljp/co/sony/mc/camera/view/viewbinder/CapturePaneViewBinder$$ExternalSyntheticLambda5;-><init>(Ljp/co/sony/mc/camera/view/viewbinder/CapturePaneViewBinder;)V
 
     new-instance v2, Ljp/co/sony/mc/camera/view/viewbinder/CapturePaneViewBinder$sam$androidx_lifecycle_Observer$0;
 
@@ -401,7 +786,7 @@
 
     invoke-virtual {p1, v0, v2}, Landroidx/lifecycle/LiveData;->observe(Landroidx/lifecycle/LifecycleOwner;Landroidx/lifecycle/Observer;)V
 
-    .line 92
+    .line 96
     invoke-direct {p0}, Ljp/co/sony/mc/camera/view/viewbinder/CapturePaneViewBinder;->getCameraStatusModel()Ljp/co/sony/mc/camera/view/viewmodel/CameraStatusModel;
 
     move-result-object p1
@@ -414,11 +799,9 @@
 
     move-result-object v0
 
-    new-instance v1, Ljp/co/sony/mc/camera/view/viewbinder/CapturePaneViewBinder$onCreate$9;
+    new-instance v1, Ljp/co/sony/mc/camera/view/viewbinder/CapturePaneViewBinder$$ExternalSyntheticLambda6;
 
-    invoke-direct {v1, p0}, Ljp/co/sony/mc/camera/view/viewbinder/CapturePaneViewBinder$onCreate$9;-><init>(Ljp/co/sony/mc/camera/view/viewbinder/CapturePaneViewBinder;)V
-
-    check-cast v1, Lkotlin/jvm/functions/Function1;
+    invoke-direct {v1, p0}, Ljp/co/sony/mc/camera/view/viewbinder/CapturePaneViewBinder$$ExternalSyntheticLambda6;-><init>(Ljp/co/sony/mc/camera/view/viewbinder/CapturePaneViewBinder;)V
 
     new-instance p0, Ljp/co/sony/mc/camera/view/viewbinder/CapturePaneViewBinder$sam$androidx_lifecycle_Observer$0;
 

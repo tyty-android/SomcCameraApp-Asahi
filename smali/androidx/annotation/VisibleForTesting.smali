@@ -19,6 +19,9 @@
     }
 .end annotation
 
+.annotation runtime Ljava/lang/annotation/Documented;
+.end annotation
+
 .annotation runtime Ljava/lang/annotation/Retention;
     value = .enum Ljava/lang/annotation/RetentionPolicy;->CLASS:Ljava/lang/annotation/RetentionPolicy;
 .end annotation
@@ -39,10 +42,13 @@
     k = 0x1
     mv = {
         0x1,
-        0x8,
+        0x7,
         0x0
     }
     xi = 0x30
+.end annotation
+
+.annotation runtime Lkotlin/annotation/MustBeDocumented;
 .end annotation
 
 .annotation runtime Lkotlin/annotation/Retention;

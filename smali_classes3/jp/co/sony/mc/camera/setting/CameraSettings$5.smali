@@ -21,7 +21,7 @@
 .method constructor <init>()V
     .locals 0
 
-    .line 570
+    .line 624
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -42,11 +42,11 @@
         }
     .end annotation
 
-    .line 574
+    .line 628
     check-cast p1, Ljp/co/sony/mc/camera/setting/CameraSettings;
 
-    .line 575
-    invoke-static {p1}, Ljp/co/sony/mc/camera/setting/CameraSettings;->-$$Nest$mgetDriveMode(Ljp/co/sony/mc/camera/setting/CameraSettings;)Ljp/co/sony/mc/camera/configuration/parameters/DriveMode;
+    .line 629
+    invoke-static {p1}, Ljp/co/sony/mc/camera/setting/CameraSettings;->-$$Nest$mgetVolumeDistortionCorrection(Ljp/co/sony/mc/camera/setting/CameraSettings;)Ljp/co/sony/mc/camera/configuration/parameters/VolumeDistortionCorrection;
 
     move-result-object p0
 

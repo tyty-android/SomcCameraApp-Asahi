@@ -68,12 +68,12 @@
 .method private constructor <init>(Ljp/co/sony/mc/camera/view/widget/CameraStatusBarPresenter;)V
     .locals 2
 
-    .line 437
+    .line 425
     iput-object p1, p0, Ljp/co/sony/mc/camera/view/widget/CameraStatusBarPresenter$FocusIconController;->this$0:Ljp/co/sony/mc/camera/view/widget/CameraStatusBarPresenter;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 435
+    .line 423
     new-instance v0, Ljp/co/sony/mc/camera/view/widget/CameraStatusBarPresenter$FocusIconController$StateIdle;
 
     const/4 v1, 0x0
@@ -82,7 +82,7 @@
 
     iput-object v0, p0, Ljp/co/sony/mc/camera/view/widget/CameraStatusBarPresenter$FocusIconController;->mCurrentState:Ljp/co/sony/mc/camera/view/widget/CameraStatusBarPresenter$FocusIconController$FocusControllerState;
 
-    .line 438
+    .line 426
     invoke-static {p1}, Ljp/co/sony/mc/camera/view/widget/CameraStatusBarPresenter;->-$$Nest$fgetmBinding(Ljp/co/sony/mc/camera/view/widget/CameraStatusBarPresenter;)Ljp/co/sony/mc/camera/databinding/FragmentProModeCameraStatusBarBinding;
 
     move-result-object p1
@@ -103,109 +103,113 @@
 .end method
 
 .method private changeStateTo(Ljp/co/sony/mc/camera/view/widget/CameraStatusBarPresenter$FocusIconController$FocusControllerState;)V
-    .locals 2
+    .locals 3
 
-    .line 626
-    new-instance v0, Ljava/lang/StringBuilder;
+    const/4 v0, 0x1
 
-    const-string v1, "State changed from "
+    .line 614
+    new-array v0, v0, [Ljava/lang/String;
 
-    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+    new-instance v1, Ljava/lang/StringBuilder;
 
-    iget-object v1, p0, Ljp/co/sony/mc/camera/view/widget/CameraStatusBarPresenter$FocusIconController;->mCurrentState:Ljp/co/sony/mc/camera/view/widget/CameraStatusBarPresenter$FocusIconController$FocusControllerState;
+    const-string v2, "State changed from "
 
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+    invoke-direct {v1, v2}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
-    move-result-object v0
+    iget-object v2, p0, Ljp/co/sony/mc/camera/view/widget/CameraStatusBarPresenter$FocusIconController;->mCurrentState:Ljp/co/sony/mc/camera/view/widget/CameraStatusBarPresenter$FocusIconController$FocusControllerState;
 
-    const-string v1, " to "
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    move-result-object v1
 
-    move-result-object v0
+    const-string v2, " to "
 
-    invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    move-result-object v0
+    move-result-object v1
 
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-virtual {v1, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
-    move-result-object v0
+    move-result-object v1
 
-    filled-new-array {v0}, [Ljava/lang/String;
+    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    move-result-object v0
+    move-result-object v1
+
+    const/4 v2, 0x0
+
+    aput-object v1, v0, v2
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/util/CamLog;->v([Ljava/lang/String;)V
 
-    .line 628
+    .line 616
     invoke-virtual {p1}, Ljp/co/sony/mc/camera/view/widget/CameraStatusBarPresenter$FocusIconController$FocusControllerState;->updateIcon()V
 
-    .line 629
+    .line 617
     iput-object p1, p0, Ljp/co/sony/mc/camera/view/widget/CameraStatusBarPresenter$FocusIconController;->mCurrentState:Ljp/co/sony/mc/camera/view/widget/CameraStatusBarPresenter$FocusIconController$FocusControllerState;
 
     return-void
 .end method
 
 .method private varargs performEvent(Ljp/co/sony/mc/camera/view/widget/CameraStatusBarPresenter$FocusEvent;[Ljava/lang/Object;)V
-    .locals 2
+    .locals 4
 
-    .line 603
+    .line 591
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/widget/CameraStatusBarPresenter$FocusIconController;->mCurrentState:Ljp/co/sony/mc/camera/view/widget/CameraStatusBarPresenter$FocusIconController$FocusControllerState;
 
-    .line 605
-    new-instance v0, Ljava/lang/StringBuilder;
+    const/4 v0, 0x1
 
-    const-string v1, "FocusStatus event = "
+    .line 593
+    new-array v1, v0, [Ljava/lang/String;
 
-    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+    new-instance v2, Ljava/lang/StringBuilder;
 
-    invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+    const-string v3, "FocusStatus event = "
 
-    move-result-object v0
+    invoke-direct {v2, v3}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
-    const-string v1, ", state:"
+    invoke-virtual {v2, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    move-result-object v2
 
-    move-result-object v0
+    const-string v3, ", state:"
 
-    .line 606
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v2
+
+    .line 594
     invoke-virtual {p0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
-    move-result-object v1
+    move-result-object v3
 
-    invoke-virtual {v1}, Ljava/lang/Class;->getSimpleName()Ljava/lang/String;
+    invoke-virtual {v3}, Ljava/lang/Class;->getSimpleName()Ljava/lang/String;
 
-    move-result-object v1
+    move-result-object v3
 
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    move-result-object v0
+    move-result-object v2
 
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    move-result-object v0
+    move-result-object v2
 
-    filled-new-array {v0}, [Ljava/lang/String;
+    const/4 v3, 0x0
 
-    move-result-object v0
+    aput-object v2, v1, v3
 
-    .line 605
-    invoke-static {v0}, Ljp/co/sony/mc/camera/util/CamLog;->v([Ljava/lang/String;)V
+    .line 593
+    invoke-static {v1}, Ljp/co/sony/mc/camera/util/CamLog;->v([Ljava/lang/String;)V
 
-    .line 607
-    sget-object v0, Ljp/co/sony/mc/camera/view/widget/CameraStatusBarPresenter$1;->$SwitchMap$jp$co$sony$mc$camera$view$widget$CameraStatusBarPresenter$FocusEvent:[I
+    .line 595
+    sget-object v1, Ljp/co/sony/mc/camera/view/widget/CameraStatusBarPresenter$1;->$SwitchMap$jp$co$sony$mc$camera$view$widget$CameraStatusBarPresenter$FocusEvent:[I
 
     invoke-virtual {p1}, Ljp/co/sony/mc/camera/view/widget/CameraStatusBarPresenter$FocusEvent;->ordinal()I
 
     move-result p1
 
-    aget p1, v0, p1
-
-    const/4 v0, 0x1
-
-    const/4 v1, 0x0
+    aget p1, v1, p1
 
     if-eq p1, v0, :cond_3
 
@@ -223,15 +227,15 @@
 
     goto :goto_0
 
-    .line 618
+    .line 606
     :cond_0
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/view/widget/CameraStatusBarPresenter$FocusIconController$FocusControllerState;->handleEventCancel()V
 
     goto :goto_0
 
-    .line 615
+    .line 603
     :cond_1
-    aget-object p1, p2, v1
+    aget-object p1, p2, v3
 
     check-cast p1, Ljava/lang/Boolean;
 
@@ -243,9 +247,9 @@
 
     goto :goto_0
 
-    .line 612
+    .line 600
     :cond_2
-    aget-object p1, p2, v1
+    aget-object p1, p2, v3
 
     check-cast p1, Ljava/lang/Boolean;
 
@@ -257,9 +261,9 @@
 
     goto :goto_0
 
-    .line 609
+    .line 597
     :cond_3
-    aget-object p1, p2, v1
+    aget-object p1, p2, v3
 
     check-cast p1, Ljp/co/sony/mc/camera/configuration/parameters/FocusMode;
 
@@ -272,7 +276,7 @@
 .method private setIcon(I)V
     .locals 1
 
-    .line 633
+    .line 621
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/widget/CameraStatusBarPresenter$FocusIconController;->mIconView:Landroid/widget/ImageView;
 
     invoke-virtual {v0}, Landroid/widget/ImageView;->getDrawable()Landroid/graphics/drawable/Drawable;
@@ -283,7 +287,7 @@
 
     if-eqz v0, :cond_0
 
-    .line 634
+    .line 622
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/widget/CameraStatusBarPresenter$FocusIconController;->mIconView:Landroid/widget/ImageView;
 
     invoke-virtual {v0}, Landroid/widget/ImageView;->getDrawable()Landroid/graphics/drawable/Drawable;
@@ -299,7 +303,7 @@
 
     if-ne p1, v0, :cond_1
 
-    .line 638
+    .line 626
     iget-object p1, p0, Ljp/co/sony/mc/camera/view/widget/CameraStatusBarPresenter$FocusIconController;->mIconView:Landroid/widget/ImageView;
 
     const/4 v0, 0x0
@@ -308,13 +312,13 @@
 
     goto :goto_0
 
-    .line 640
+    .line 628
     :cond_1
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/widget/CameraStatusBarPresenter$FocusIconController;->mIconView:Landroid/widget/ImageView;
 
     invoke-virtual {v0, p1}, Landroid/widget/ImageView;->setImageResource(I)V
 
-    .line 643
+    .line 631
     :goto_0
     iget-object p1, p0, Ljp/co/sony/mc/camera/view/widget/CameraStatusBarPresenter$FocusIconController;->mIconView:Landroid/widget/ImageView;
 
@@ -326,7 +330,7 @@
 
     if-eqz p1, :cond_2
 
-    .line 644
+    .line 632
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/widget/CameraStatusBarPresenter$FocusIconController;->mIconView:Landroid/widget/ImageView;
 
     invoke-virtual {p0}, Landroid/widget/ImageView;->getDrawable()Landroid/graphics/drawable/Drawable;

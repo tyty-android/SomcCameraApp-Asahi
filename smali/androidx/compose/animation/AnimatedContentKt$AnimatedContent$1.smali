@@ -78,10 +78,6 @@
         }
     .end annotation
 
-    const-string p0, "$this$null"
-
-    invoke-static {p1, p0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
     const/16 p0, 0xdc
 
     const/16 p1, 0x5a
@@ -90,7 +86,7 @@
 
     const/4 v1, 0x4
 
-    .line 132
+    .line 131
     invoke-static {p0, p1, v0, v1, v0}, Landroidx/compose/animation/core/AnimationSpecKt;->tween$default(IILandroidx/compose/animation/core/Easing;ILjava/lang/Object;)Landroidx/compose/animation/core/TweenSpec;
 
     move-result-object v2
@@ -105,7 +101,7 @@
 
     move-result-object v2
 
-    .line 133
+    .line 132
     invoke-static {p0, p1, v0, v1, v0}, Landroidx/compose/animation/core/AnimationSpecKt;->tween$default(IILandroidx/compose/animation/core/Easing;ILjava/lang/Object;)Landroidx/compose/animation/core/TweenSpec;
 
     move-result-object p0
@@ -126,7 +122,7 @@
 
     move-result-object p0
 
-    .line 132
+    .line 131
     invoke-virtual {v2, p0}, Landroidx/compose/animation/EnterTransition;->plus(Landroidx/compose/animation/EnterTransition;)Landroidx/compose/animation/EnterTransition;
 
     move-result-object p0
@@ -135,7 +131,7 @@
 
     const/4 v2, 0x6
 
-    .line 134
+    .line 133
     invoke-static {p1, v1, v0, v2, v0}, Landroidx/compose/animation/core/AnimationSpecKt;->tween$default(IILandroidx/compose/animation/core/Easing;ILjava/lang/Object;)Landroidx/compose/animation/core/TweenSpec;
 
     move-result-object p1
@@ -156,7 +152,7 @@
 .method public bridge synthetic invoke(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
 
-    .line 131
+    .line 130
     check-cast p1, Landroidx/compose/animation/AnimatedContentTransitionScope;
 
     invoke-virtual {p0, p1}, Landroidx/compose/animation/AnimatedContentKt$AnimatedContent$1;->invoke(Landroidx/compose/animation/AnimatedContentTransitionScope;)Landroidx/compose/animation/ContentTransform;

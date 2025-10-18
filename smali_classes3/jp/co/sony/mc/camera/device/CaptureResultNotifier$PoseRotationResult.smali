@@ -22,7 +22,7 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 416
+    .line 423
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -31,10 +31,10 @@
 .method public constructor <init>([F)V
     .locals 0
 
-    .line 424
+    .line 431
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 425
+    .line 432
     iput-object p1, p0, Ljp/co/sony/mc/camera/device/CaptureResultNotifier$PoseRotationResult;->mPoseRotation:[F
 
     return-void
@@ -45,7 +45,7 @@
 .method public getPoseRotation()[F
     .locals 0
 
-    .line 434
+    .line 441
     iget-object p0, p0, Ljp/co/sony/mc/camera/device/CaptureResultNotifier$PoseRotationResult;->mPoseRotation:[F
 
     return-object p0

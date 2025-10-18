@@ -35,7 +35,7 @@
 .method constructor <init>(Lcom/google/gson/internal/ConstructorConstructor;Ljava/lang/Class;)V
     .locals 0
 
-    .line 366
+    .line 414
     iput-object p1, p0, Lcom/google/gson/internal/ConstructorConstructor$19;->this$0:Lcom/google/gson/internal/ConstructorConstructor;
 
     iput-object p2, p0, Lcom/google/gson/internal/ConstructorConstructor$19;->val$rawType:Ljava/lang/Class;
@@ -55,7 +55,7 @@
         }
     .end annotation
 
-    .line 370
+    .line 419
     :try_start_0
     sget-object v0, Lcom/google/gson/internal/UnsafeAllocator;->INSTANCE:Lcom/google/gson/internal/UnsafeAllocator;
 
@@ -72,7 +72,7 @@
     :catch_0
     move-exception v0
 
-    .line 373
+    .line 422
     new-instance v1, Ljava/lang/RuntimeException;
 
     new-instance v2, Ljava/lang/StringBuilder;

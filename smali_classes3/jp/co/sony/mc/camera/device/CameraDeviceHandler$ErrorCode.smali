@@ -40,7 +40,7 @@
 .method private static synthetic $values()[Ljp/co/sony/mc/camera/device/CameraDeviceHandler$ErrorCode;
     .locals 5
 
-    .line 3553
+    .line 3742
     sget-object v0, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$ErrorCode;->ERROR_ON_CAMERA_OPEN:Ljp/co/sony/mc/camera/device/CameraDeviceHandler$ErrorCode;
 
     sget-object v1, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$ErrorCode;->ERROR_ON_CAMERA_ERROR:Ljp/co/sony/mc/camera/device/CameraDeviceHandler$ErrorCode;
@@ -61,7 +61,7 @@
 .method static constructor <clinit>()V
     .locals 3
 
-    .line 3554
+    .line 3743
     new-instance v0, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$ErrorCode;
 
     const-string v1, "ERROR_ON_CAMERA_OPEN"
@@ -72,7 +72,7 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$ErrorCode;->ERROR_ON_CAMERA_OPEN:Ljp/co/sony/mc/camera/device/CameraDeviceHandler$ErrorCode;
 
-    .line 3555
+    .line 3744
     new-instance v0, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$ErrorCode;
 
     const-string v1, "ERROR_ON_CAMERA_ERROR"
@@ -83,7 +83,7 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$ErrorCode;->ERROR_ON_CAMERA_ERROR:Ljp/co/sony/mc/camera/device/CameraDeviceHandler$ErrorCode;
 
-    .line 3556
+    .line 3745
     new-instance v0, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$ErrorCode;
 
     const-string v1, "ERROR_ON_CAMERA_DISCONNECTION"
@@ -94,7 +94,7 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$ErrorCode;->ERROR_ON_CAMERA_DISCONNECTION:Ljp/co/sony/mc/camera/device/CameraDeviceHandler$ErrorCode;
 
-    .line 3557
+    .line 3746
     new-instance v0, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$ErrorCode;
 
     const-string v1, "ERROR_ON_CAPTURE_FAILED"
@@ -105,7 +105,7 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$ErrorCode;->ERROR_ON_CAPTURE_FAILED:Ljp/co/sony/mc/camera/device/CameraDeviceHandler$ErrorCode;
 
-    .line 3558
+    .line 3747
     new-instance v0, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$ErrorCode;
 
     const-string v1, "ERROR_ON_CONFIGURE_FAILED"
@@ -116,7 +116,7 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$ErrorCode;->ERROR_ON_CONFIGURE_FAILED:Ljp/co/sony/mc/camera/device/CameraDeviceHandler$ErrorCode;
 
-    .line 3553
+    .line 3742
     invoke-static {}, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$ErrorCode;->$values()[Ljp/co/sony/mc/camera/device/CameraDeviceHandler$ErrorCode;
 
     move-result-object v0
@@ -134,7 +134,7 @@
         }
     .end annotation
 
-    .line 3553
+    .line 3742
     invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
     return-void
@@ -143,7 +143,7 @@
 .method public static valueOf(Ljava/lang/String;)Ljp/co/sony/mc/camera/device/CameraDeviceHandler$ErrorCode;
     .locals 1
 
-    .line 3553
+    .line 3742
     const-class v0, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$ErrorCode;
 
     invoke-static {v0, p0}, Ljava/lang/Enum;->valueOf(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
@@ -158,7 +158,7 @@
 .method public static values()[Ljp/co/sony/mc/camera/device/CameraDeviceHandler$ErrorCode;
     .locals 1
 
-    .line 3553
+    .line 3742
     sget-object v0, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$ErrorCode;->$VALUES:[Ljp/co/sony/mc/camera/device/CameraDeviceHandler$ErrorCode;
 
     invoke-virtual {v0}, [Ljp/co/sony/mc/camera/device/CameraDeviceHandler$ErrorCode;->clone()Ljava/lang/Object;

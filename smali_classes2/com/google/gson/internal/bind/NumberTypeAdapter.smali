@@ -25,9 +25,10 @@
 .method static constructor <clinit>()V
     .locals 1
 
-    .line 39
+    .line 34
     sget-object v0, Lcom/google/gson/ToNumberPolicy;->LAZILY_PARSED_NUMBER:Lcom/google/gson/ToNumberPolicy;
 
+    .line 35
     invoke-static {v0}, Lcom/google/gson/internal/bind/NumberTypeAdapter;->newFactory(Lcom/google/gson/ToNumberStrategy;)Lcom/google/gson/TypeAdapterFactory;
 
     move-result-object v0
@@ -40,10 +41,10 @@
 .method private constructor <init>(Lcom/google/gson/ToNumberStrategy;)V
     .locals 0
 
-    .line 43
+    .line 39
     invoke-direct {p0}, Lcom/google/gson/TypeAdapter;-><init>()V
 
-    .line 44
+    .line 40
     iput-object p1, p0, Lcom/google/gson/internal/bind/NumberTypeAdapter;->toNumberStrategy:Lcom/google/gson/ToNumberStrategy;
 
     return-void
@@ -52,17 +53,17 @@
 .method public static getFactory(Lcom/google/gson/ToNumberStrategy;)Lcom/google/gson/TypeAdapterFactory;
     .locals 1
 
-    .line 58
+    .line 55
     sget-object v0, Lcom/google/gson/ToNumberPolicy;->LAZILY_PARSED_NUMBER:Lcom/google/gson/ToNumberPolicy;
 
     if-ne p0, v0, :cond_0
 
-    .line 59
+    .line 56
     sget-object p0, Lcom/google/gson/internal/bind/NumberTypeAdapter;->LAZILY_PARSED_NUMBER_FACTORY:Lcom/google/gson/TypeAdapterFactory;
 
     return-object p0
 
-    .line 61
+    .line 58
     :cond_0
     invoke-static {p0}, Lcom/google/gson/internal/bind/NumberTypeAdapter;->newFactory(Lcom/google/gson/ToNumberStrategy;)Lcom/google/gson/TypeAdapterFactory;
 
@@ -74,12 +75,12 @@
 .method private static newFactory(Lcom/google/gson/ToNumberStrategy;)Lcom/google/gson/TypeAdapterFactory;
     .locals 1
 
-    .line 48
+    .line 44
     new-instance v0, Lcom/google/gson/internal/bind/NumberTypeAdapter;
 
     invoke-direct {v0, p0}, Lcom/google/gson/internal/bind/NumberTypeAdapter;-><init>(Lcom/google/gson/ToNumberStrategy;)V
 
-    .line 49
+    .line 45
     new-instance p0, Lcom/google/gson/internal/bind/NumberTypeAdapter$1;
 
     invoke-direct {p0, v0}, Lcom/google/gson/internal/bind/NumberTypeAdapter$1;-><init>(Lcom/google/gson/internal/bind/NumberTypeAdapter;)V
@@ -97,12 +98,12 @@
         }
     .end annotation
 
-    .line 66
+    .line 64
     invoke-virtual {p1}, Lcom/google/gson/stream/JsonReader;->peek()Lcom/google/gson/stream/JsonToken;
 
     move-result-object v0
 
-    .line 67
+    .line 65
     sget-object v1, Lcom/google/gson/internal/bind/NumberTypeAdapter$2;->$SwitchMap$com$google$gson$stream$JsonToken:[I
 
     invoke-virtual {v0}, Lcom/google/gson/stream/JsonToken;->ordinal()I
@@ -125,7 +126,7 @@
 
     goto :goto_0
 
-    .line 75
+    .line 73
     :cond_0
     new-instance p0, Lcom/google/gson/JsonSyntaxException;
 
@@ -145,6 +146,7 @@
 
     move-result-object v0
 
+    .line 74
     invoke-virtual {p1}, Lcom/google/gson/stream/JsonReader;->getPath()Ljava/lang/String;
 
     move-result-object p1
@@ -161,7 +163,7 @@
 
     throw p0
 
-    .line 73
+    .line 71
     :cond_1
     :goto_0
     iget-object p0, p0, Lcom/google/gson/internal/bind/NumberTypeAdapter;->toNumberStrategy:Lcom/google/gson/ToNumberStrategy;
@@ -172,7 +174,7 @@
 
     return-object p0
 
-    .line 69
+    .line 67
     :cond_2
     invoke-virtual {p1}, Lcom/google/gson/stream/JsonReader;->nextNull()V
 
@@ -189,7 +191,7 @@
         }
     .end annotation
 
-    .line 35
+    .line 32
     invoke-virtual {p0, p1}, Lcom/google/gson/internal/bind/NumberTypeAdapter;->read(Lcom/google/gson/stream/JsonReader;)Ljava/lang/Number;
 
     move-result-object p0
@@ -219,7 +221,7 @@
         }
     .end annotation
 
-    .line 35
+    .line 32
     check-cast p2, Ljava/lang/Number;
 
     invoke-virtual {p0, p1, p2}, Lcom/google/gson/internal/bind/NumberTypeAdapter;->write(Lcom/google/gson/stream/JsonWriter;Ljava/lang/Number;)V

@@ -6,41 +6,33 @@
 # annotations
 .annotation runtime Lkotlin/Metadata;
     d1 = {
-        "\u0000l\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000b\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0004\n\u0002\u0018\u0002\n\u0002\u0008\r\n\u0002\u0018\u0002\n\u0002\u0008\u0004\n\u0002\u0010\u0002\n\u0002\u0008\u0003\n\u0002\u0018\u0002\n\u0002\u0008\u0007\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0004\n\u0002\u0010\u0007\n\u0002\u0008\u0010\u0008\u0002\u0018\u00002\u00020\u0001B=\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\u0006\u0010\u0004\u001a\u00020\u0005\u0012\u000c\u0010\u0006\u001a\u0008\u0012\u0004\u0012\u00020\u00080\u0007\u0012\u0006\u0010\t\u001a\u00020\n\u0012\u0006\u0010\u000b\u001a\u00020\u000c\u0012\u0008\u0010\r\u001a\u0004\u0018\u00010\u000e\u00a2\u0006\u0002\u0010\u000fJ!\u0010 \u001a\u00020!2\u0006\u0010\"\u001a\u00020!H\u0086@\u00f8\u0001\u0000\u00f8\u0001\u0001\u00f8\u0001\u0001\u00a2\u0006\u0004\u0008#\u0010$J!\u0010%\u001a\u00020&2\u0006\u0010\'\u001a\u00020!H\u0086@\u00f8\u0001\u0000\u00f8\u0001\u0001\u00f8\u0001\u0001\u00a2\u0006\u0004\u0008(\u0010$J\u001b\u0010)\u001a\u00020*2\u0006\u0010+\u001a\u00020*\u00f8\u0001\u0000\u00f8\u0001\u0001\u00a2\u0006\u0004\u0008,\u0010-J\u000e\u0010.\u001a\u00020&2\u0006\u0010/\u001a\u00020\u0005J\u0006\u00100\u001a\u00020\u0005J\'\u00101\u001a\u00020**\u0002022\u0006\u00103\u001a\u00020*2\u0006\u00104\u001a\u000205\u00f8\u0001\u0000\u00f8\u0001\u0001\u00a2\u0006\u0004\u00086\u00107J\u0017\u00108\u001a\u00020**\u00020*\u00f8\u0001\u0000\u00f8\u0001\u0001\u00a2\u0006\u0004\u00089\u0010-J\n\u00108\u001a\u00020:*\u00020:J\u0017\u0010;\u001a\u00020**\u00020*\u00f8\u0001\u0000\u00f8\u0001\u0001\u00a2\u0006\u0004\u0008<\u0010-J\u0017\u0010=\u001a\u00020!*\u00020!\u00f8\u0001\u0000\u00f8\u0001\u0001\u00a2\u0006\u0004\u0008>\u0010-J\u0017\u0010?\u001a\u00020:*\u00020*\u00f8\u0001\u0000\u00f8\u0001\u0001\u00a2\u0006\u0004\u0008@\u0010AJ\u0017\u0010?\u001a\u00020:*\u00020!\u00f8\u0001\u0000\u00f8\u0001\u0001\u00a2\u0006\u0004\u0008B\u0010AJ\u001a\u0010C\u001a\u00020**\u00020:\u00f8\u0001\u0002\u00f8\u0001\u0000\u00f8\u0001\u0001\u00a2\u0006\u0004\u0008D\u0010EJ\u001f\u0010F\u001a\u00020!*\u00020!2\u0006\u0010G\u001a\u00020:\u00f8\u0001\u0000\u00f8\u0001\u0001\u00a2\u0006\u0004\u0008H\u0010IR\u0011\u0010\u000b\u001a\u00020\u000c\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\u0010\u0010\u0011R\u0014\u0010\u0012\u001a\u0008\u0012\u0004\u0012\u00020\u00050\u0013X\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u0017\u0010\u0006\u001a\u0008\u0012\u0004\u0012\u00020\u00080\u0007\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\u0014\u0010\u0015R\u0011\u0010\u0002\u001a\u00020\u0003\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\u0016\u0010\u0017R\u0013\u0010\r\u001a\u0004\u0018\u00010\u000e\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\u0018\u0010\u0019R\u0011\u0010\u0004\u001a\u00020\u0005\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\u001a\u0010\u001bR\u0011\u0010\t\u001a\u00020\n\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\u001c\u0010\u001dR\u0014\u0010\u001e\u001a\u00020\u00058BX\u0082\u0004\u00a2\u0006\u0006\u001a\u0004\u0008\u001f\u0010\u001b\u0082\u0002\u000f\n\u0005\u0008\u00a1\u001e0\u0001\n\u0002\u0008\u0019\n\u0002\u0008!\u00a8\u0006J"
+        "\u0000h\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000b\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0008\n\u0002\u0018\u0002\n\u0002\u0008\u0004\n\u0002\u0010\u0002\n\u0002\u0008\u0003\n\u0002\u0018\u0002\n\u0002\u0008\u0008\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0004\n\u0002\u0010\u0007\n\u0002\u0008\u000f\u0008\u0002\u0018\u00002\u00020\u0001B7\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\u0006\u0010\u0004\u001a\u00020\u0005\u0012\u0008\u0010\u0006\u001a\u0004\u0018\u00010\u0007\u0012\u0006\u0010\u0008\u001a\u00020\t\u0012\u0006\u0010\n\u001a\u00020\u000b\u0012\u0006\u0010\u000c\u001a\u00020\r\u00a2\u0006\u0002\u0010\u000eJ\u001b\u0010\u0018\u001a\u00020\u00192\u0006\u0010\u001a\u001a\u00020\u0019H\u0086@\u00f8\u0001\u0000\u00a2\u0006\u0004\u0008\u001b\u0010\u001cJ\u001b\u0010\u001d\u001a\u00020\u001e2\u0006\u0010\u001f\u001a\u00020\u0019H\u0086@\u00f8\u0001\u0000\u00a2\u0006\u0004\u0008 \u0010\u001cJ\u0018\u0010!\u001a\u00020\"2\u0006\u0010#\u001a\u00020\"\u00f8\u0001\u0000\u00a2\u0006\u0004\u0008$\u0010%J\u000e\u0010&\u001a\u00020\u001e2\u0006\u0010\'\u001a\u00020\tJ\u0006\u0010(\u001a\u00020\tJ8\u0010)\u001a\u00020\u001e2\u0006\u0010\u0002\u001a\u00020\u00032\u0006\u0010\u0004\u001a\u00020\u00052\u0008\u0010\u0006\u001a\u0004\u0018\u00010\u00072\u0006\u0010\u0008\u001a\u00020\t2\u0006\u0010\n\u001a\u00020\u000b2\u0006\u0010\u000c\u001a\u00020\rJ$\u0010*\u001a\u00020\"*\u00020+2\u0006\u0010,\u001a\u00020\"2\u0006\u0010-\u001a\u00020.\u00f8\u0001\u0000\u00a2\u0006\u0004\u0008/\u00100J\u0014\u00101\u001a\u00020\"*\u00020\"\u00f8\u0001\u0000\u00a2\u0006\u0004\u00082\u0010%J\n\u00101\u001a\u000203*\u000203J\u0014\u00104\u001a\u00020\"*\u00020\"\u00f8\u0001\u0000\u00a2\u0006\u0004\u00085\u0010%J\u0014\u00106\u001a\u00020\u0019*\u00020\u0019\u00f8\u0001\u0000\u00a2\u0006\u0004\u00087\u0010%J\u0014\u00108\u001a\u000203*\u00020\"\u00f8\u0001\u0000\u00a2\u0006\u0004\u00089\u0010:J\u0014\u00108\u001a\u000203*\u00020\u0019\u00f8\u0001\u0000\u00a2\u0006\u0004\u0008;\u0010:J\u0017\u0010<\u001a\u00020\"*\u000203\u00f8\u0001\u0001\u00f8\u0001\u0000\u00a2\u0006\u0004\u0008=\u0010>J\u001c\u0010)\u001a\u00020\u0019*\u00020\u00192\u0006\u0010?\u001a\u000203\u00f8\u0001\u0000\u00a2\u0006\u0004\u0008@\u0010AR\u000e\u0010\n\u001a\u00020\u000bX\u0082\u000e\u00a2\u0006\u0002\n\u0000R\u0014\u0010\u000f\u001a\u0008\u0012\u0004\u0012\u00020\t0\u0010X\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u000c\u001a\u00020\rX\u0082\u000e\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u0004\u001a\u00020\u0005X\u0082\u000e\u00a2\u0006\u0002\n\u0000R\u0010\u0010\u0006\u001a\u0004\u0018\u00010\u0007X\u0082\u000e\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u0008\u001a\u00020\tX\u0082\u000e\u00a2\u0006\u0002\n\u0000R\u001a\u0010\u0002\u001a\u00020\u0003X\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\u0008\u0011\u0010\u0012\"\u0004\u0008\u0013\u0010\u0014R\u0014\u0010\u0015\u001a\u00020\t8BX\u0082\u0004\u00a2\u0006\u0006\u001a\u0004\u0008\u0016\u0010\u0017\u0082\u0002\u000b\n\u0005\u0008\u00a1\u001e0\u0001\n\u0002\u0008!\u00a8\u0006B"
     }
     d2 = {
         "Landroidx/compose/foundation/gestures/ScrollingLogic;",
         "",
-        "orientation",
-        "Landroidx/compose/foundation/gestures/Orientation;",
-        "reverseDirection",
-        "",
-        "nestedScrollDispatcher",
-        "Landroidx/compose/runtime/State;",
-        "Landroidx/compose/ui/input/nestedscroll/NestedScrollDispatcher;",
         "scrollableState",
         "Landroidx/compose/foundation/gestures/ScrollableState;",
-        "flingBehavior",
-        "Landroidx/compose/foundation/gestures/FlingBehavior;",
+        "orientation",
+        "Landroidx/compose/foundation/gestures/Orientation;",
         "overscrollEffect",
         "Landroidx/compose/foundation/OverscrollEffect;",
-        "(Landroidx/compose/foundation/gestures/Orientation;ZLandroidx/compose/runtime/State;Landroidx/compose/foundation/gestures/ScrollableState;Landroidx/compose/foundation/gestures/FlingBehavior;Landroidx/compose/foundation/OverscrollEffect;)V",
-        "getFlingBehavior",
-        "()Landroidx/compose/foundation/gestures/FlingBehavior;",
+        "reverseDirection",
+        "",
+        "flingBehavior",
+        "Landroidx/compose/foundation/gestures/FlingBehavior;",
+        "nestedScrollDispatcher",
+        "Landroidx/compose/ui/input/nestedscroll/NestedScrollDispatcher;",
+        "(Landroidx/compose/foundation/gestures/ScrollableState;Landroidx/compose/foundation/gestures/Orientation;Landroidx/compose/foundation/OverscrollEffect;ZLandroidx/compose/foundation/gestures/FlingBehavior;Landroidx/compose/ui/input/nestedscroll/NestedScrollDispatcher;)V",
         "isNestedFlinging",
         "Landroidx/compose/runtime/MutableState;",
-        "getNestedScrollDispatcher",
-        "()Landroidx/compose/runtime/State;",
-        "getOrientation",
-        "()Landroidx/compose/foundation/gestures/Orientation;",
-        "getOverscrollEffect",
-        "()Landroidx/compose/foundation/OverscrollEffect;",
-        "getReverseDirection",
-        "()Z",
         "getScrollableState",
         "()Landroidx/compose/foundation/gestures/ScrollableState;",
+        "setScrollableState",
+        "(Landroidx/compose/foundation/gestures/ScrollableState;)V",
         "shouldDispatchOverscroll",
         "getShouldDispatchOverscroll",
+        "()Z",
         "doFlingAnimation",
         "Landroidx/compose/ui/unit/Velocity;",
         "available",
@@ -58,9 +50,10 @@
         "registerNestedFling",
         "isFlinging",
         "shouldScrollImmediately",
+        "update",
         "dispatchScroll",
         "Landroidx/compose/foundation/gestures/ScrollScope;",
-        "availableDelta",
+        "initialAvailableDelta",
         "source",
         "Landroidx/compose/ui/input/nestedscroll/NestedScrollSource;",
         "dispatchScroll-3eAAhYA",
@@ -79,7 +72,6 @@
         "toOffset",
         "toOffset-tuRUvjQ",
         "(F)J",
-        "update",
         "newValue",
         "update-QWom1Mo",
         "(JF)J",
@@ -96,7 +88,7 @@
 
 
 # instance fields
-.field private final flingBehavior:Landroidx/compose/foundation/gestures/FlingBehavior;
+.field private flingBehavior:Landroidx/compose/foundation/gestures/FlingBehavior;
 
 .field private final isNestedFlinging:Landroidx/compose/runtime/MutableState;
     .annotation system Ldalvik/annotation/Signature;
@@ -108,83 +100,45 @@
     .end annotation
 .end field
 
-.field private final nestedScrollDispatcher:Landroidx/compose/runtime/State;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Landroidx/compose/runtime/State<",
-            "Landroidx/compose/ui/input/nestedscroll/NestedScrollDispatcher;",
-            ">;"
-        }
-    .end annotation
-.end field
+.field private nestedScrollDispatcher:Landroidx/compose/ui/input/nestedscroll/NestedScrollDispatcher;
 
-.field private final orientation:Landroidx/compose/foundation/gestures/Orientation;
+.field private orientation:Landroidx/compose/foundation/gestures/Orientation;
 
-.field private final overscrollEffect:Landroidx/compose/foundation/OverscrollEffect;
+.field private overscrollEffect:Landroidx/compose/foundation/OverscrollEffect;
 
-.field private final reverseDirection:Z
+.field private reverseDirection:Z
 
-.field private final scrollableState:Landroidx/compose/foundation/gestures/ScrollableState;
+.field private scrollableState:Landroidx/compose/foundation/gestures/ScrollableState;
 
 
 # direct methods
-.method public constructor <init>(Landroidx/compose/foundation/gestures/Orientation;ZLandroidx/compose/runtime/State;Landroidx/compose/foundation/gestures/ScrollableState;Landroidx/compose/foundation/gestures/FlingBehavior;Landroidx/compose/foundation/OverscrollEffect;)V
-    .locals 1
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(",
-            "Landroidx/compose/foundation/gestures/Orientation;",
-            "Z",
-            "Landroidx/compose/runtime/State<",
-            "Landroidx/compose/ui/input/nestedscroll/NestedScrollDispatcher;",
-            ">;",
-            "Landroidx/compose/foundation/gestures/ScrollableState;",
-            "Landroidx/compose/foundation/gestures/FlingBehavior;",
-            "Landroidx/compose/foundation/OverscrollEffect;",
-            ")V"
-        }
-    .end annotation
+.method public constructor <init>(Landroidx/compose/foundation/gestures/ScrollableState;Landroidx/compose/foundation/gestures/Orientation;Landroidx/compose/foundation/OverscrollEffect;ZLandroidx/compose/foundation/gestures/FlingBehavior;Landroidx/compose/ui/input/nestedscroll/NestedScrollDispatcher;)V
+    .locals 0
 
-    const-string v0, "orientation"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string v0, "nestedScrollDispatcher"
-
-    invoke-static {p3, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string v0, "scrollableState"
-
-    invoke-static {p4, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string v0, "flingBehavior"
-
-    invoke-static {p5, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 376
+    .line 710
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 378
-    iput-object p1, p0, Landroidx/compose/foundation/gestures/ScrollingLogic;->orientation:Landroidx/compose/foundation/gestures/Orientation;
+    .line 712
+    iput-object p1, p0, Landroidx/compose/foundation/gestures/ScrollingLogic;->scrollableState:Landroidx/compose/foundation/gestures/ScrollableState;
 
-    .line 379
-    iput-boolean p2, p0, Landroidx/compose/foundation/gestures/ScrollingLogic;->reverseDirection:Z
+    .line 713
+    iput-object p2, p0, Landroidx/compose/foundation/gestures/ScrollingLogic;->orientation:Landroidx/compose/foundation/gestures/Orientation;
 
-    .line 380
-    iput-object p3, p0, Landroidx/compose/foundation/gestures/ScrollingLogic;->nestedScrollDispatcher:Landroidx/compose/runtime/State;
+    .line 714
+    iput-object p3, p0, Landroidx/compose/foundation/gestures/ScrollingLogic;->overscrollEffect:Landroidx/compose/foundation/OverscrollEffect;
 
-    .line 381
-    iput-object p4, p0, Landroidx/compose/foundation/gestures/ScrollingLogic;->scrollableState:Landroidx/compose/foundation/gestures/ScrollableState;
+    .line 715
+    iput-boolean p4, p0, Landroidx/compose/foundation/gestures/ScrollingLogic;->reverseDirection:Z
 
-    .line 382
+    .line 716
     iput-object p5, p0, Landroidx/compose/foundation/gestures/ScrollingLogic;->flingBehavior:Landroidx/compose/foundation/gestures/FlingBehavior;
 
-    .line 383
-    iput-object p6, p0, Landroidx/compose/foundation/gestures/ScrollingLogic;->overscrollEffect:Landroidx/compose/foundation/OverscrollEffect;
+    .line 717
+    iput-object p6, p0, Landroidx/compose/foundation/gestures/ScrollingLogic;->nestedScrollDispatcher:Landroidx/compose/ui/input/nestedscroll/NestedScrollDispatcher;
 
     const/4 p1, 0x0
 
-    .line 385
+    .line 719
     invoke-static {p1}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
     move-result-object p1
@@ -202,10 +156,28 @@
     return-void
 .end method
 
+.method public static final synthetic access$getFlingBehavior$p(Landroidx/compose/foundation/gestures/ScrollingLogic;)Landroidx/compose/foundation/gestures/FlingBehavior;
+    .locals 0
+
+    .line 710
+    iget-object p0, p0, Landroidx/compose/foundation/gestures/ScrollingLogic;->flingBehavior:Landroidx/compose/foundation/gestures/FlingBehavior;
+
+    return-object p0
+.end method
+
+.method public static final synthetic access$getNestedScrollDispatcher$p(Landroidx/compose/foundation/gestures/ScrollingLogic;)Landroidx/compose/ui/input/nestedscroll/NestedScrollDispatcher;
+    .locals 0
+
+    .line 710
+    iget-object p0, p0, Landroidx/compose/foundation/gestures/ScrollingLogic;->nestedScrollDispatcher:Landroidx/compose/ui/input/nestedscroll/NestedScrollDispatcher;
+
+    return-object p0
+.end method
+
 .method private final getShouldDispatchOverscroll()Z
     .locals 1
 
-    .line 445
+    .line 785
     iget-object v0, p0, Landroidx/compose/foundation/gestures/ScrollingLogic;->scrollableState:Landroidx/compose/foundation/gestures/ScrollableState;
 
     invoke-interface {v0}, Landroidx/compose/foundation/gestures/ScrollableState;->getCanScrollForward()Z
@@ -240,46 +212,67 @@
 
 # virtual methods
 .method public final dispatchScroll-3eAAhYA(Landroidx/compose/foundation/gestures/ScrollScope;JI)J
-    .locals 1
+    .locals 2
 
-    const-string v0, "$this$dispatchScroll"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 415
-    invoke-virtual {p0, p2, p3}, Landroidx/compose/foundation/gestures/ScrollingLogic;->singleAxisOffset-MK-Hz9U(J)J
-
-    move-result-wide p2
-
-    .line 417
+    .line 752
     new-instance v0, Landroidx/compose/foundation/gestures/ScrollingLogic$dispatchScroll$performScroll$1;
 
     invoke-direct {v0, p0, p4, p1}, Landroidx/compose/foundation/gestures/ScrollingLogic$dispatchScroll$performScroll$1;-><init>(Landroidx/compose/foundation/gestures/ScrollingLogic;ILandroidx/compose/foundation/gestures/ScrollScope;)V
 
     check-cast v0, Lkotlin/jvm/functions/Function1;
 
-    .line 437
+    .line 773
     iget-object p1, p0, Landroidx/compose/foundation/gestures/ScrollingLogic;->overscrollEffect:Landroidx/compose/foundation/OverscrollEffect;
 
-    if-eqz p1, :cond_0
+    .line 775
+    sget-object v1, Landroidx/compose/ui/input/nestedscroll/NestedScrollSource;->Companion:Landroidx/compose/ui/input/nestedscroll/NestedScrollSource$Companion;
 
-    invoke-direct {p0}, Landroidx/compose/foundation/gestures/ScrollingLogic;->getShouldDispatchOverscroll()Z
+    invoke-virtual {v1}, Landroidx/compose/ui/input/nestedscroll/NestedScrollSource$Companion;->getWheel-WNlRxjI()I
 
-    move-result p1
+    move-result v1
 
-    if-eqz p1, :cond_0
+    invoke-static {p4, v1}, Landroidx/compose/ui/input/nestedscroll/NestedScrollSource;->equals-impl0(II)Z
 
-    .line 438
-    iget-object p0, p0, Landroidx/compose/foundation/gestures/ScrollingLogic;->overscrollEffect:Landroidx/compose/foundation/OverscrollEffect;
+    move-result v1
 
-    invoke-interface {p0, p2, p3, p4, v0}, Landroidx/compose/foundation/OverscrollEffect;->applyToScroll-Rhakbz0(JILkotlin/jvm/functions/Function1;)J
+    if-eqz v1, :cond_0
+
+    .line 776
+    invoke-static {p2, p3}, Landroidx/compose/ui/geometry/Offset;->box-impl(J)Landroidx/compose/ui/geometry/Offset;
+
+    move-result-object p0
+
+    invoke-interface {v0, p0}, Lkotlin/jvm/functions/Function1;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object p0
+
+    check-cast p0, Landroidx/compose/ui/geometry/Offset;
+
+    invoke-virtual {p0}, Landroidx/compose/ui/geometry/Offset;->unbox-impl()J
 
     move-result-wide p0
 
     goto :goto_0
 
-    .line 440
     :cond_0
+    if-eqz p1, :cond_1
+
+    .line 777
+    invoke-direct {p0}, Landroidx/compose/foundation/gestures/ScrollingLogic;->getShouldDispatchOverscroll()Z
+
+    move-result p0
+
+    if-eqz p0, :cond_1
+
+    .line 778
+    invoke-interface {p1, p2, p3, p4, v0}, Landroidx/compose/foundation/OverscrollEffect;->applyToScroll-Rhakbz0(JILkotlin/jvm/functions/Function1;)J
+
+    move-result-wide p0
+
+    goto :goto_0
+
+    .line 780
+    :cond_1
     invoke-static {p2, p3}, Landroidx/compose/ui/geometry/Offset;->box-impl(J)Landroidx/compose/ui/geometry/Offset;
 
     move-result-object p0
@@ -349,7 +342,7 @@
 
     move-result-object v0
 
-    .line 486
+    .line 829
     iget v1, v4, Landroidx/compose/foundation/gestures/ScrollingLogic$doFlingAnimation$1;->label:I
 
     const/4 v2, 0x1
@@ -378,14 +371,14 @@
     :cond_2
     invoke-static {p3}, Lkotlin/ResultKt;->throwOnFailure(Ljava/lang/Object;)V
 
-    .line 487
+    .line 830
     new-instance p3, Lkotlin/jvm/internal/Ref$LongRef;
 
     invoke-direct {p3}, Lkotlin/jvm/internal/Ref$LongRef;-><init>()V
 
     iput-wide p1, p3, Lkotlin/jvm/internal/Ref$LongRef;->element:J
 
-    .line 488
+    .line 831
     iget-object v1, p0, Landroidx/compose/foundation/gestures/ScrollingLogic;->scrollableState:Landroidx/compose/foundation/gestures/ScrollableState;
 
     new-instance v3, Landroidx/compose/foundation/gestures/ScrollingLogic$doFlingAnimation$2;
@@ -425,7 +418,7 @@
     :cond_3
     move-object p0, p3
 
-    .line 505
+    .line 849
     :goto_1
     iget-wide p0, p0, Lkotlin/jvm/internal/Ref$LongRef;->element:J
 
@@ -436,70 +429,17 @@
     return-object p0
 .end method
 
-.method public final getFlingBehavior()Landroidx/compose/foundation/gestures/FlingBehavior;
-    .locals 0
-
-    .line 382
-    iget-object p0, p0, Landroidx/compose/foundation/gestures/ScrollingLogic;->flingBehavior:Landroidx/compose/foundation/gestures/FlingBehavior;
-
-    return-object p0
-.end method
-
-.method public final getNestedScrollDispatcher()Landroidx/compose/runtime/State;
-    .locals 0
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "()",
-            "Landroidx/compose/runtime/State<",
-            "Landroidx/compose/ui/input/nestedscroll/NestedScrollDispatcher;",
-            ">;"
-        }
-    .end annotation
-
-    .line 380
-    iget-object p0, p0, Landroidx/compose/foundation/gestures/ScrollingLogic;->nestedScrollDispatcher:Landroidx/compose/runtime/State;
-
-    return-object p0
-.end method
-
-.method public final getOrientation()Landroidx/compose/foundation/gestures/Orientation;
-    .locals 0
-
-    .line 378
-    iget-object p0, p0, Landroidx/compose/foundation/gestures/ScrollingLogic;->orientation:Landroidx/compose/foundation/gestures/Orientation;
-
-    return-object p0
-.end method
-
-.method public final getOverscrollEffect()Landroidx/compose/foundation/OverscrollEffect;
-    .locals 0
-
-    .line 383
-    iget-object p0, p0, Landroidx/compose/foundation/gestures/ScrollingLogic;->overscrollEffect:Landroidx/compose/foundation/OverscrollEffect;
-
-    return-object p0
-.end method
-
-.method public final getReverseDirection()Z
-    .locals 0
-
-    .line 379
-    iget-boolean p0, p0, Landroidx/compose/foundation/gestures/ScrollingLogic;->reverseDirection:Z
-
-    return p0
-.end method
-
 .method public final getScrollableState()Landroidx/compose/foundation/gestures/ScrollableState;
     .locals 0
 
-    .line 381
+    .line 712
     iget-object p0, p0, Landroidx/compose/foundation/gestures/ScrollingLogic;->scrollableState:Landroidx/compose/foundation/gestures/ScrollableState;
 
     return-object p0
 .end method
 
 .method public final onDragStopped-sF-c-tU(JLkotlin/coroutines/Continuation;)Ljava/lang/Object;
-    .locals 5
+    .locals 6
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(J",
@@ -547,7 +487,7 @@
 
     move-result-object v1
 
-    .line 456
+    .line 796
     iget v2, v0, Landroidx/compose/foundation/gestures/ScrollingLogic$onDragStopped$1;->label:I
 
     const/4 v3, 0x2
@@ -584,15 +524,15 @@
     :cond_3
     invoke-static {p3}, Lkotlin/ResultKt;->throwOnFailure(Ljava/lang/Object;)V
 
-    .line 458
+    .line 798
     invoke-virtual {p0, v4}, Landroidx/compose/foundation/gestures/ScrollingLogic;->registerNestedFling(Z)V
 
-    .line 460
+    .line 800
     invoke-virtual {p0, p1, p2}, Landroidx/compose/foundation/gestures/ScrollingLogic;->singleAxisVelocity-AH228Gc(J)J
 
     move-result-wide p1
 
-    .line 462
+    .line 802
     new-instance p3, Landroidx/compose/foundation/gestures/ScrollingLogic$onDragStopped$performFling$1;
 
     const/4 v2, 0x0
@@ -601,20 +541,19 @@
 
     check-cast p3, Lkotlin/jvm/functions/Function2;
 
-    .line 476
+    .line 818
     iget-object v2, p0, Landroidx/compose/foundation/gestures/ScrollingLogic;->overscrollEffect:Landroidx/compose/foundation/OverscrollEffect;
 
     if-eqz v2, :cond_4
 
+    .line 819
     invoke-direct {p0}, Landroidx/compose/foundation/gestures/ScrollingLogic;->getShouldDispatchOverscroll()Z
 
-    move-result v2
+    move-result v5
 
-    if-eqz v2, :cond_4
+    if-eqz v5, :cond_4
 
-    .line 477
-    iget-object v2, p0, Landroidx/compose/foundation/gestures/ScrollingLogic;->overscrollEffect:Landroidx/compose/foundation/OverscrollEffect;
-
+    .line 820
     iput-object p0, v0, Landroidx/compose/foundation/gestures/ScrollingLogic$onDragStopped$1;->L$0:Ljava/lang/Object;
 
     iput v4, v0, Landroidx/compose/foundation/gestures/ScrollingLogic$onDragStopped$1;->label:I
@@ -627,7 +566,7 @@
 
     return-object v1
 
-    .line 479
+    .line 822
     :cond_4
     invoke-static {p1, p2}, Landroidx/compose/ui/unit/Velocity;->box-impl(J)Landroidx/compose/ui/unit/Velocity;
 
@@ -649,10 +588,10 @@
     :goto_2
     const/4 p1, 0x0
 
-    .line 483
+    .line 826
     invoke-virtual {p0, p1}, Landroidx/compose/foundation/gestures/ScrollingLogic;->registerNestedFling(Z)V
 
-    .line 484
+    .line 827
     sget-object p0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
 
     return-object p0
@@ -661,7 +600,7 @@
 .method public final performRawScroll-MK-Hz9U(J)J
     .locals 1
 
-    .line 448
+    .line 788
     iget-object v0, p0, Landroidx/compose/foundation/gestures/ScrollingLogic;->scrollableState:Landroidx/compose/foundation/gestures/ScrollableState;
 
     invoke-interface {v0}, Landroidx/compose/foundation/gestures/ScrollableState;->isScrollInProgress()Z
@@ -670,7 +609,7 @@
 
     if-eqz v0, :cond_0
 
-    .line 449
+    .line 789
     sget-object p0, Landroidx/compose/ui/geometry/Offset;->Companion:Landroidx/compose/ui/geometry/Offset$Companion;
 
     invoke-virtual {p0}, Landroidx/compose/ui/geometry/Offset$Companion;->getZero-F1C5BW0()J
@@ -679,7 +618,7 @@
 
     goto :goto_0
 
-    .line 451
+    .line 791
     :cond_0
     iget-object v0, p0, Landroidx/compose/foundation/gestures/ScrollingLogic;->scrollableState:Landroidx/compose/foundation/gestures/ScrollableState;
 
@@ -695,7 +634,7 @@
 
     move-result p1
 
-    .line 452
+    .line 792
     invoke-virtual {p0, p1}, Landroidx/compose/foundation/gestures/ScrollingLogic;->reverseIfNeeded(F)F
 
     move-result p1
@@ -711,7 +650,7 @@
 .method public final registerNestedFling(Z)V
     .locals 0
 
-    .line 514
+    .line 858
     iget-object p0, p0, Landroidx/compose/foundation/gestures/ScrollingLogic;->isNestedFlinging:Landroidx/compose/runtime/MutableState;
 
     invoke-static {p1}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
@@ -726,7 +665,7 @@
 .method public final reverseIfNeeded(F)F
     .locals 0
 
-    .line 407
+    .line 741
     iget-boolean p0, p0, Landroidx/compose/foundation/gestures/ScrollingLogic;->reverseDirection:Z
 
     if-eqz p0, :cond_0
@@ -744,7 +683,7 @@
 .method public final reverseIfNeeded-MK-Hz9U(J)J
     .locals 0
 
-    .line 409
+    .line 743
     iget-boolean p0, p0, Landroidx/compose/foundation/gestures/ScrollingLogic;->reverseDirection:Z
 
     if-eqz p0, :cond_0
@@ -759,10 +698,19 @@
     return-wide p1
 .end method
 
+.method public final setScrollableState(Landroidx/compose/foundation/gestures/ScrollableState;)V
+    .locals 0
+
+    .line 712
+    iput-object p1, p0, Landroidx/compose/foundation/gestures/ScrollingLogic;->scrollableState:Landroidx/compose/foundation/gestures/ScrollableState;
+
+    return-void
+.end method
+
 .method public final shouldScrollImmediately()Z
     .locals 1
 
-    .line 509
+    .line 853
     iget-object v0, p0, Landroidx/compose/foundation/gestures/ScrollingLogic;->scrollableState:Landroidx/compose/foundation/gestures/ScrollableState;
 
     invoke-interface {v0}, Landroidx/compose/foundation/gestures/ScrollableState;->isScrollInProgress()Z
@@ -785,8 +733,10 @@
 
     if-nez v0, :cond_1
 
-    .line 510
+    .line 854
     iget-object p0, p0, Landroidx/compose/foundation/gestures/ScrollingLogic;->overscrollEffect:Landroidx/compose/foundation/OverscrollEffect;
+
+    const/4 v0, 0x0
 
     if-eqz p0, :cond_0
 
@@ -794,27 +744,25 @@
 
     move-result p0
 
-    if-eqz p0, :cond_0
-
     goto :goto_0
 
     :cond_0
-    const/4 p0, 0x0
+    move p0, v0
 
-    goto :goto_1
+    :goto_0
+    if-eqz p0, :cond_2
 
     :cond_1
-    :goto_0
-    const/4 p0, 0x1
+    const/4 v0, 0x1
 
-    :goto_1
-    return p0
+    :cond_2
+    return v0
 .end method
 
 .method public final singleAxisOffset-MK-Hz9U(J)J
     .locals 7
 
-    .line 393
+    .line 727
     iget-object p0, p0, Landroidx/compose/foundation/gestures/ScrollingLogic;->orientation:Landroidx/compose/foundation/gestures/Orientation;
 
     sget-object v0, Landroidx/compose/foundation/gestures/Orientation;->Horizontal:Landroidx/compose/foundation/gestures/Orientation;
@@ -859,7 +807,7 @@
 .method public final singleAxisVelocity-AH228Gc(J)J
     .locals 7
 
-    .line 402
+    .line 736
     iget-object p0, p0, Landroidx/compose/foundation/gestures/ScrollingLogic;->orientation:Landroidx/compose/foundation/gestures/Orientation;
 
     sget-object v0, Landroidx/compose/foundation/gestures/Orientation;->Horizontal:Landroidx/compose/foundation/gestures/Orientation;
@@ -904,7 +852,7 @@
 .method public final toFloat-TH1AsA0(J)F
     .locals 1
 
-    .line 399
+    .line 733
     iget-object p0, p0, Landroidx/compose/foundation/gestures/ScrollingLogic;->orientation:Landroidx/compose/foundation/gestures/Orientation;
 
     sget-object v0, Landroidx/compose/foundation/gestures/Orientation;->Horizontal:Landroidx/compose/foundation/gestures/Orientation;
@@ -929,7 +877,7 @@
 .method public final toFloat-k-4lQ0M(J)F
     .locals 1
 
-    .line 396
+    .line 730
     iget-object p0, p0, Landroidx/compose/foundation/gestures/ScrollingLogic;->orientation:Landroidx/compose/foundation/gestures/Orientation;
 
     sget-object v0, Landroidx/compose/foundation/gestures/Orientation;->Horizontal:Landroidx/compose/foundation/gestures/Orientation;
@@ -960,7 +908,7 @@
 
     if-nez v1, :cond_0
 
-    .line 387
+    .line 721
     sget-object p0, Landroidx/compose/ui/geometry/Offset;->Companion:Landroidx/compose/ui/geometry/Offset$Companion;
 
     invoke-virtual {p0}, Landroidx/compose/ui/geometry/Offset$Companion;->getZero-F1C5BW0()J
@@ -969,7 +917,7 @@
 
     goto :goto_0
 
-    .line 388
+    .line 722
     :cond_0
     iget-object p0, p0, Landroidx/compose/foundation/gestures/ScrollingLogic;->orientation:Landroidx/compose/foundation/gestures/Orientation;
 
@@ -983,7 +931,7 @@
 
     goto :goto_0
 
-    .line 389
+    .line 723
     :cond_1
     invoke-static {v0, p1}, Landroidx/compose/ui/geometry/OffsetKt;->Offset(FF)J
 
@@ -993,10 +941,34 @@
     return-wide p0
 .end method
 
+.method public final update(Landroidx/compose/foundation/gestures/ScrollableState;Landroidx/compose/foundation/gestures/Orientation;Landroidx/compose/foundation/OverscrollEffect;ZLandroidx/compose/foundation/gestures/FlingBehavior;Landroidx/compose/ui/input/nestedscroll/NestedScrollDispatcher;)V
+    .locals 0
+
+    .line 869
+    iput-object p1, p0, Landroidx/compose/foundation/gestures/ScrollingLogic;->scrollableState:Landroidx/compose/foundation/gestures/ScrollableState;
+
+    .line 870
+    iput-object p2, p0, Landroidx/compose/foundation/gestures/ScrollingLogic;->orientation:Landroidx/compose/foundation/gestures/Orientation;
+
+    .line 871
+    iput-object p3, p0, Landroidx/compose/foundation/gestures/ScrollingLogic;->overscrollEffect:Landroidx/compose/foundation/OverscrollEffect;
+
+    .line 872
+    iput-boolean p4, p0, Landroidx/compose/foundation/gestures/ScrollingLogic;->reverseDirection:Z
+
+    .line 873
+    iput-object p5, p0, Landroidx/compose/foundation/gestures/ScrollingLogic;->flingBehavior:Landroidx/compose/foundation/gestures/FlingBehavior;
+
+    .line 874
+    iput-object p6, p0, Landroidx/compose/foundation/gestures/ScrollingLogic;->nestedScrollDispatcher:Landroidx/compose/ui/input/nestedscroll/NestedScrollDispatcher;
+
+    return-void
+.end method
+
 .method public final update-QWom1Mo(JF)J
     .locals 7
 
-    .line 405
+    .line 739
     iget-object p0, p0, Landroidx/compose/foundation/gestures/ScrollingLogic;->orientation:Landroidx/compose/foundation/gestures/Orientation;
 
     sget-object v0, Landroidx/compose/foundation/gestures/Orientation;->Horizontal:Landroidx/compose/foundation/gestures/Orientation;

@@ -21,7 +21,7 @@
 .method constructor <init>()V
     .locals 0
 
-    .line 1209
+    .line 1215
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -42,8 +42,8 @@
         }
     .end annotation
 
-    .line 1213
-    invoke-static {}, Ljp/co/sony/mc/camera/configuration/parameters/DestinationToSave;->getOptions()[Ljp/co/sony/mc/camera/configuration/parameters/DestinationToSave;
+    .line 1219
+    invoke-static {}, Ljp/co/sony/mc/camera/configuration/parameters/HorizontalLevelCalibration;->values()[Ljp/co/sony/mc/camera/configuration/parameters/HorizontalLevelCalibration;
 
     move-result-object p0
 

@@ -35,26 +35,54 @@
 
 # direct methods
 .method static constructor <clinit>()V
-    .locals 7
+    .locals 3
 
-    .line 7793
-    sget-object v0, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->MEMORY_FULL_PROPOSE_CHANGE_TO_INTERNAL:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
+    const/4 v0, 0x7
 
-    sget-object v1, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->MEMORY_UNAVAILABLE_PROPOSE_CHANGE_TO_INTERNAL:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
+    .line 8073
+    new-array v0, v0, [Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
+
+    const/4 v1, 0x0
+
+    sget-object v2, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->MEMORY_FULL_PROPOSE_CHANGE_TO_INTERNAL:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
+
+    aput-object v2, v0, v1
+
+    const/4 v1, 0x1
+
+    sget-object v2, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->MEMORY_UNAVAILABLE_PROPOSE_CHANGE_TO_INTERNAL:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
+
+    aput-object v2, v0, v1
+
+    const/4 v1, 0x2
 
     sget-object v2, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->MEMORY_FULL:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
 
-    sget-object v3, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->MEMORY_SD_UNAVAILABLE:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
+    aput-object v2, v0, v1
 
-    sget-object v4, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->MEMORY_FULL_PROPOSE_CHANGE_TO_SD:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
+    const/4 v1, 0x3
 
-    sget-object v5, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->MEMORY_INTERNAL_UNAVAILABLE:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
+    sget-object v2, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->MEMORY_SD_UNAVAILABLE:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
 
-    sget-object v6, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->MEMORY_UNAVAILABLE_PROPOSE_CHANGE_TO_SD:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
+    aput-object v2, v0, v1
 
-    filled-new-array/range {v0 .. v6}, [Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
+    const/4 v1, 0x4
 
-    move-result-object v0
+    sget-object v2, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->MEMORY_FULL_PROPOSE_CHANGE_TO_SD:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
+
+    aput-object v2, v0, v1
+
+    const/4 v1, 0x5
+
+    sget-object v2, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->MEMORY_INTERNAL_UNAVAILABLE:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
+
+    aput-object v2, v0, v1
+
+    const/4 v1, 0x6
+
+    sget-object v2, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->MEMORY_UNAVAILABLE_PROPOSE_CHANGE_TO_SD:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
+
+    aput-object v2, v0, v1
 
     invoke-static {v0}, Ljava/util/Arrays;->asList([Ljava/lang/Object;)Ljava/util/List;
 
@@ -68,10 +96,10 @@
 .method constructor <init>(Ljp/co/sony/mc/camera/view/FragmentController;)V
     .locals 0
 
-    .line 7804
+    .line 8084
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 7805
+    .line 8085
     iput-object p1, p0, Ljp/co/sony/mc/camera/view/FragmentController$StorageStateListenerImpl;->mController:Ljp/co/sony/mc/camera/view/FragmentController;
 
     return-void
@@ -82,7 +110,7 @@
 .method public onRecordingFileSizeChanged(J)V
     .locals 0
 
-    .line 7916
+    .line 8192
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/FragmentController$StorageStateListenerImpl;->mController:Ljp/co/sony/mc/camera/view/FragmentController;
 
     invoke-static {p0}, Ljp/co/sony/mc/camera/view/FragmentController;->-$$Nest$fgetmExternalDisplayFragment(Ljp/co/sony/mc/camera/view/FragmentController;)Ljp/co/sony/mc/camera/view/fragment/ExternalDisplayFragment;
@@ -97,14 +125,14 @@
 .method public onStorageSizeChanged(Ljp/co/sony/mc/camera/storage/Storage$StorageType;J)V
     .locals 2
 
-    .line 7907
+    .line 8183
     invoke-static {}, Ljp/co/sony/mc/camera/setting/CameraProSetting;->getInstance()Ljp/co/sony/mc/camera/setting/CameraProSetting;
 
     move-result-object v0
 
     sget-object v1, Ljp/co/sony/mc/camera/setting/CommonSettings;->SAVE_DESTINATION:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
 
-    .line 7908
+    .line 8184
     invoke-virtual {v0, v1}, Ljp/co/sony/mc/camera/setting/CameraProSetting;->get(Ljp/co/sony/mc/camera/setting/SettingKey$Key;)Ljava/lang/Object;
 
     move-result-object v0
@@ -117,7 +145,7 @@
 
     if-ne v0, p1, :cond_0
 
-    .line 7910
+    .line 8186
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/FragmentController$StorageStateListenerImpl;->mController:Ljp/co/sony/mc/camera/view/FragmentController;
 
     invoke-static {p0}, Ljp/co/sony/mc/camera/view/FragmentController;->-$$Nest$fgetmExternalDisplayFragment(Ljp/co/sony/mc/camera/view/FragmentController;)Ljp/co/sony/mc/camera/view/fragment/ExternalDisplayFragment;
@@ -131,80 +159,59 @@
 .end method
 
 .method public onStorageStateChanged(Ljp/co/sony/mc/camera/storage/Storage$StorageType;Ljp/co/sony/mc/camera/storage/Storage$StorageState;ZZ)V
-    .locals 3
+    .locals 5
 
-    .line 7812
+    .line 8092
     sget-boolean v0, Ljp/co/sony/mc/camera/util/CamLog;->VERBOSE:Z
+
+    const/4 v1, 0x1
+
+    const/4 v2, 0x0
 
     if-eqz v0, :cond_0
 
-    new-instance v0, Ljava/lang/StringBuilder;
+    new-array v0, v1, [Ljava/lang/String;
 
-    const-string v1, "onStorageStateChanged: StorageType = "
+    new-instance v3, Ljava/lang/StringBuilder;
 
-    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+    const-string v4, "onStorageStateChanged: StorageType = "
 
-    invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+    invoke-direct {v3, v4}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
-    move-result-object v0
+    invoke-virtual {v3, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
-    const-string v1, ", StorageState = "
+    move-result-object v3
 
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    const-string v4, ", StorageState = "
 
-    move-result-object v0
+    invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v0, p2}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+    move-result-object v3
 
-    move-result-object v0
+    invoke-virtual {v3, p2}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
-    const-string v1, ", isChangeable = "
+    move-result-object v3
 
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    const-string v4, ", isChangeable = "
 
-    move-result-object v0
+    invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v0, p3}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
+    move-result-object v3
 
-    move-result-object v0
+    invoke-virtual {v3, p3}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    move-result-object v3
 
-    move-result-object v0
+    invoke-virtual {v3}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    filled-new-array {v0}, [Ljava/lang/String;
+    move-result-object v3
 
-    move-result-object v0
+    aput-object v3, v0, v2
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
-    .line 7819
+    .line 8097
     :cond_0
-    sget-object v0, Ljp/co/sony/mc/camera/storage/Storage$StorageState;->AVAILABLE:Ljp/co/sony/mc/camera/storage/Storage$StorageState;
-
-    if-eq p2, v0, :cond_1
-
-    .line 7820
-    iget-object v0, p0, Ljp/co/sony/mc/camera/view/FragmentController$StorageStateListenerImpl;->mController:Ljp/co/sony/mc/camera/view/FragmentController;
-
-    .line 7821
-    invoke-static {v0}, Ljp/co/sony/mc/camera/view/FragmentController;->-$$Nest$mgetFragmentManager(Ljp/co/sony/mc/camera/view/FragmentController;)Landroidx/fragment/app/FragmentManager;
-
-    move-result-object v1
-
-    invoke-static {v0, v1}, Ljp/co/sony/mc/camera/view/FragmentController;->-$$Nest$mgetViewFinderFragment(Ljp/co/sony/mc/camera/view/FragmentController;Landroidx/fragment/app/FragmentManager;)Ljp/co/sony/mc/camera/view/fragment/ViewFinderFragment;
-
-    .line 7822
-    iget-object v0, p0, Ljp/co/sony/mc/camera/view/FragmentController$StorageStateListenerImpl;->mController:Ljp/co/sony/mc/camera/view/FragmentController;
-
-    invoke-static {v0}, Ljp/co/sony/mc/camera/view/FragmentController;->-$$Nest$fgetmCameraAccessor(Ljp/co/sony/mc/camera/view/FragmentController;)Ljp/co/sony/mc/camera/CameraAccessor;
-
-    move-result-object v0
-
-    invoke-interface {v0}, Ljp/co/sony/mc/camera/CameraAccessor;->stopFaceDetection()V
-
-    .line 7825
-    :cond_1
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/FragmentController$StorageStateListenerImpl;->mController:Ljp/co/sony/mc/camera/view/FragmentController;
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/view/FragmentController;->-$$Nest$fgetmGestureShutter(Ljp/co/sony/mc/camera/view/FragmentController;)Ljp/co/sony/mc/camera/view/GestureShutter;
@@ -213,11 +220,11 @@
 
     invoke-virtual {p2}, Ljp/co/sony/mc/camera/storage/Storage$StorageState;->isWritable()Z
 
-    move-result v1
+    move-result v3
 
-    invoke-virtual {v0, v1}, Ljp/co/sony/mc/camera/view/GestureShutter;->setEnabled(Z)V
+    invoke-virtual {v0, v3}, Ljp/co/sony/mc/camera/view/GestureShutter;->setEnabled(Z)V
 
-    .line 7826
+    .line 8098
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/FragmentController$StorageStateListenerImpl;->mController:Ljp/co/sony/mc/camera/view/FragmentController;
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/view/FragmentController;->-$$Nest$fgetmCameraEventNotifier(Ljp/co/sony/mc/camera/view/FragmentController;)Ljp/co/sony/mc/camera/view/CameraEventListener;
@@ -226,7 +233,25 @@
 
     invoke-interface {v0, p1, p2}, Ljp/co/sony/mc/camera/view/CameraEventListener;->onStorageStateChanged(Ljp/co/sony/mc/camera/storage/Storage$StorageType;Ljp/co/sony/mc/camera/storage/Storage$StorageState;)V
 
-    .line 7828
+    .line 8100
+    invoke-static {}, Ljp/co/sony/mc/camera/setting/CameraProSetting;->getInstance()Ljp/co/sony/mc/camera/setting/CameraProSetting;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Ljp/co/sony/mc/camera/setting/CameraProSetting;->getCurrentCapturingMode()Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->isStreaming()Z
+
+    move-result v0
+
+    if-eqz v0, :cond_1
+
+    return-void
+
+    .line 8104
+    :cond_1
     sget-object v0, Ljp/co/sony/mc/camera/view/FragmentController$26;->$SwitchMap$jp$co$sony$mc$camera$storage$Storage$StorageState:[I
 
     invoke-virtual {p2}, Ljp/co/sony/mc/camera/storage/Storage$StorageState;->ordinal()I
@@ -235,17 +260,13 @@
 
     aget p2, v0, p2
 
-    const/4 v0, 0x1
-
-    const/4 v1, 0x2
-
-    const/4 v2, 0x0
+    const/4 v0, 0x2
 
     packed-switch p2, :pswitch_data_0
 
     goto/16 :goto_0
 
-    .line 7893
+    .line 8169
     :pswitch_0
     sget-object p2, Ljp/co/sony/mc/camera/view/FragmentController$26;->$SwitchMap$jp$co$sony$mc$camera$storage$Storage$StorageType:[I
 
@@ -255,11 +276,11 @@
 
     aget p1, p2, p1
 
-    if-eq p1, v1, :cond_2
+    if-eq p1, v0, :cond_2
 
     goto/16 :goto_0
 
-    .line 7896
+    .line 8172
     :cond_2
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/FragmentController$StorageStateListenerImpl;->mController:Ljp/co/sony/mc/camera/view/FragmentController;
 
@@ -274,7 +295,7 @@
     :pswitch_1
     if-eqz p3, :cond_5
 
-    .line 7862
+    .line 8138
     sget-object p2, Ljp/co/sony/mc/camera/view/FragmentController$26;->$SwitchMap$jp$co$sony$mc$camera$storage$Storage$StorageType:[I
 
     invoke-virtual {p1}, Ljp/co/sony/mc/camera/storage/Storage$StorageType;->ordinal()I
@@ -283,13 +304,13 @@
 
     aget p1, p2, p1
 
-    if-eq p1, v0, :cond_4
+    if-eq p1, v1, :cond_4
 
-    if-eq p1, v1, :cond_3
+    if-eq p1, v0, :cond_3
 
     goto/16 :goto_0
 
-    .line 7865
+    .line 8141
     :cond_3
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/FragmentController$StorageStateListenerImpl;->mController:Ljp/co/sony/mc/camera/view/FragmentController;
 
@@ -301,7 +322,7 @@
 
     goto/16 :goto_0
 
-    .line 7870
+    .line 8146
     :cond_4
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/FragmentController$StorageStateListenerImpl;->mController:Ljp/co/sony/mc/camera/view/FragmentController;
 
@@ -313,7 +334,7 @@
 
     goto :goto_0
 
-    .line 7877
+    .line 8153
     :cond_5
     sget-object p2, Ljp/co/sony/mc/camera/view/FragmentController$26;->$SwitchMap$jp$co$sony$mc$camera$storage$Storage$StorageType:[I
 
@@ -323,13 +344,13 @@
 
     aget p1, p2, p1
 
-    if-eq p1, v0, :cond_7
+    if-eq p1, v1, :cond_7
 
-    if-eq p1, v1, :cond_6
+    if-eq p1, v0, :cond_6
 
     goto :goto_0
 
-    .line 7880
+    .line 8156
     :cond_6
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/FragmentController$StorageStateListenerImpl;->mController:Ljp/co/sony/mc/camera/view/FragmentController;
 
@@ -341,7 +362,7 @@
 
     goto :goto_0
 
-    .line 7884
+    .line 8160
     :cond_7
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/FragmentController$StorageStateListenerImpl;->mController:Ljp/co/sony/mc/camera/view/FragmentController;
 
@@ -356,7 +377,7 @@
     :pswitch_2
     if-eqz p4, :cond_8
 
-    .line 7837
+    .line 8113
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/FragmentController$StorageStateListenerImpl;->mController:Ljp/co/sony/mc/camera/view/FragmentController;
 
     sget-object p1, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->MEMORY_FULL_IN_BURST_MODE:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
@@ -370,7 +391,7 @@
     :cond_8
     if-eqz p3, :cond_b
 
-    .line 7839
+    .line 8115
     sget-object p2, Ljp/co/sony/mc/camera/view/FragmentController$26;->$SwitchMap$jp$co$sony$mc$camera$storage$Storage$StorageType:[I
 
     invoke-virtual {p1}, Ljp/co/sony/mc/camera/storage/Storage$StorageType;->ordinal()I
@@ -379,13 +400,13 @@
 
     aget p1, p2, p1
 
-    if-eq p1, v0, :cond_a
+    if-eq p1, v1, :cond_a
 
-    if-eq p1, v1, :cond_9
+    if-eq p1, v0, :cond_9
 
     goto :goto_0
 
-    .line 7841
+    .line 8117
     :cond_9
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/FragmentController$StorageStateListenerImpl;->mController:Ljp/co/sony/mc/camera/view/FragmentController;
 
@@ -397,7 +418,7 @@
 
     goto :goto_0
 
-    .line 7846
+    .line 8122
     :cond_a
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/FragmentController$StorageStateListenerImpl;->mController:Ljp/co/sony/mc/camera/view/FragmentController;
 
@@ -409,7 +430,7 @@
 
     goto :goto_0
 
-    .line 7854
+    .line 8130
     :cond_b
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/FragmentController$StorageStateListenerImpl;->mController:Ljp/co/sony/mc/camera/view/FragmentController;
 
@@ -421,7 +442,7 @@
 
     goto :goto_0
 
-    .line 7830
+    .line 8106
     :pswitch_3
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/FragmentController$StorageStateListenerImpl;->mController:Ljp/co/sony/mc/camera/view/FragmentController;
 
@@ -431,6 +452,8 @@
 
     :goto_0
     return-void
+
+    nop
 
     :pswitch_data_0
     .packed-switch 0x1

@@ -5,7 +5,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/SourceDebugExtension;
-    value = "SMAP\nLocaleExtensions.android.kt\nKotlin\n*S Kotlin\n*F\n+ 1 LocaleExtensions.android.kt\nandroidx/compose/ui/text/platform/extensions/LocaleListHelperMethods\n+ 2 _Collections.kt\nkotlin/collections/CollectionsKt___CollectionsKt\n+ 3 ArraysJVM.kt\nkotlin/collections/ArraysKt__ArraysJVMKt\n*L\n1#1,50:1\n1549#2:51\n1620#2,3:52\n1549#2:57\n1620#2,3:58\n37#3,2:55\n37#3,2:61\n*S KotlinDebug\n*F\n+ 1 LocaleExtensions.android.kt\nandroidx/compose/ui/text/platform/extensions/LocaleListHelperMethods\n*L\n40#1:51\n40#1:52,3\n47#1:57\n47#1:58,3\n40#1:55,2\n47#1:61,2\n*E\n"
+    value = "SMAP\nLocaleExtensions.android.kt\nKotlin\n*S Kotlin\n*F\n+ 1 LocaleExtensions.android.kt\nandroidx/compose/ui/text/platform/extensions/LocaleListHelperMethods\n+ 2 _Collections.kt\nkotlin/collections/CollectionsKt___CollectionsKt\n+ 3 ArraysJVM.kt\nkotlin/collections/ArraysKt__ArraysJVMKt\n*L\n1#1,51:1\n1549#2:52\n1620#2,3:53\n1549#2:58\n1620#2,3:59\n37#3,2:56\n37#3,2:62\n*S KotlinDebug\n*F\n+ 1 LocaleExtensions.android.kt\nandroidx/compose/ui/text/platform/extensions/LocaleListHelperMethods\n*L\n40#1:52\n40#1:53,3\n47#1:58\n47#1:59,3\n40#1:56,2\n47#1:62,2\n*E\n"
 .end annotation
 
 .annotation runtime Lkotlin/Metadata;
@@ -36,6 +36,8 @@
 
 
 # static fields
+.field public static final $stable:I
+
 .field public static final INSTANCE:Landroidx/compose/ui/text/platform/extensions/LocaleListHelperMethods;
 
 
@@ -66,14 +68,10 @@
 .method public final localeSpan(Landroidx/compose/ui/text/intl/LocaleList;)Ljava/lang/Object;
     .locals 1
 
-    const-string p0, "localeList"
-
-    invoke-static {p1, p0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
     .line 40
     check-cast p1, Ljava/lang/Iterable;
 
-    .line 51
+    .line 52
     new-instance p0, Ljava/util/ArrayList;
 
     const/16 v0, 0xa
@@ -86,7 +84,7 @@
 
     check-cast p0, Ljava/util/Collection;
 
-    .line 52
+    .line 53
     invoke-interface {p1}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
 
     move-result-object p1
@@ -102,7 +100,7 @@
 
     move-result-object v0
 
-    .line 53
+    .line 54
     check-cast v0, Landroidx/compose/ui/text/intl/Locale;
 
     .line 40
@@ -110,21 +108,21 @@
 
     move-result-object v0
 
-    .line 53
+    .line 54
     invoke-interface {p0, v0}, Ljava/util/Collection;->add(Ljava/lang/Object;)Z
 
     goto :goto_0
 
-    .line 54
+    .line 55
     :cond_0
     check-cast p0, Ljava/util/List;
 
-    .line 51
+    .line 52
     check-cast p0, Ljava/util/Collection;
 
     const/4 p1, 0x0
 
-    .line 56
+    .line 57
     new-array p1, p1, [Ljava/util/Locale;
 
     invoke-interface {p0, p1}, Ljava/util/Collection;->toArray([Ljava/lang/Object;)[Ljava/lang/Object;
@@ -157,18 +155,10 @@
 .method public final setTextLocales(Landroidx/compose/ui/text/platform/AndroidTextPaint;Landroidx/compose/ui/text/intl/LocaleList;)V
     .locals 1
 
-    const-string/jumbo p0, "textPaint"
-
-    invoke-static {p1, p0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string p0, "localeList"
-
-    invoke-static {p2, p0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
     .line 47
     check-cast p2, Ljava/lang/Iterable;
 
-    .line 57
+    .line 58
     new-instance p0, Ljava/util/ArrayList;
 
     const/16 v0, 0xa
@@ -181,7 +171,7 @@
 
     check-cast p0, Ljava/util/Collection;
 
-    .line 58
+    .line 59
     invoke-interface {p2}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
 
     move-result-object p2
@@ -197,7 +187,7 @@
 
     move-result-object v0
 
-    .line 59
+    .line 60
     check-cast v0, Landroidx/compose/ui/text/intl/Locale;
 
     .line 47
@@ -205,21 +195,21 @@
 
     move-result-object v0
 
-    .line 59
+    .line 60
     invoke-interface {p0, v0}, Ljava/util/Collection;->add(Ljava/lang/Object;)Z
 
     goto :goto_0
 
-    .line 60
+    .line 61
     :cond_0
     check-cast p0, Ljava/util/List;
 
-    .line 57
+    .line 58
     check-cast p0, Ljava/util/Collection;
 
     const/4 p2, 0x0
 
-    .line 62
+    .line 63
     new-array p2, p2, [Ljava/util/Locale;
 
     invoke-interface {p0, p2}, Ljava/util/Collection;->toArray([Ljava/lang/Object;)[Ljava/lang/Object;

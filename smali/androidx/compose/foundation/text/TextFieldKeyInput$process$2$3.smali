@@ -78,10 +78,6 @@
 .method public final invoke(Landroidx/compose/foundation/text/selection/TextFieldPreparedSelection;)Landroidx/compose/ui/text/input/EditCommand;
     .locals 2
 
-    const-string p0, "$this$deleteIfSelectedOr"
-
-    invoke-static {p1, p0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
     .line 130
     new-instance p0, Landroidx/compose/ui/text/input/DeleteSurroundingTextCommand;
 

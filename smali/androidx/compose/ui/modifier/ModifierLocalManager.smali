@@ -5,7 +5,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/SourceDebugExtension;
-    value = "SMAP\nModifierLocalManager.kt\nKotlin\n*S Kotlin\n*F\n+ 1 ModifierLocalManager.kt\nandroidx/compose/ui/modifier/ModifierLocalManager\n+ 2 MutableVector.kt\nandroidx/compose/runtime/collection/MutableVectorKt\n+ 3 MutableVector.kt\nandroidx/compose/runtime/collection/MutableVector\n+ 4 _Collections.kt\nkotlin/collections/CollectionsKt___CollectionsKt\n+ 5 NodeKind.kt\nandroidx/compose/ui/node/Nodes\n+ 6 DelegatableNode.kt\nandroidx/compose/ui/node/DelegatableNodeKt\n+ 7 fake.kt\nkotlin/jvm/internal/FakeKt\n+ 8 Modifier.kt\nandroidx/compose/ui/Modifier$Node\n+ 9 DelegatingNode.kt\nandroidx/compose/ui/node/DelegatingNode\n*L\n1#1,121:1\n1182#2:122\n1161#2,2:123\n1182#2:125\n1161#2,2:126\n1182#2:128\n1161#2,2:129\n1182#2:131\n1161#2,2:132\n1182#2:165\n1161#2,2:166\n476#3,7:134\n523#3:141\n483#3,4:142\n476#3,7:146\n523#3:153\n483#3,4:154\n728#3,2:233\n728#3,2:235\n728#3,2:237\n728#3,2:239\n728#3,2:241\n728#3,2:243\n1855#4,2:158\n80#5:160\n289#6:161\n163#6:162\n164#6:164\n165#6,12:168\n290#6:180\n383#6,5:181\n291#6,2:186\n388#6:188\n393#6,2:190\n395#6,17:195\n412#6,8:215\n293#6:223\n177#6,8:224\n294#6:232\n1#7:163\n261#8:189\n234#9,3:192\n237#9,3:212\n*S KotlinDebug\n*F\n+ 1 ModifierLocalManager.kt\nandroidx/compose/ui/modifier/ModifierLocalManager\n*L\n44#1:122\n44#1:123,2\n45#1:125\n45#1:126,2\n46#1:128\n46#1:129,2\n47#1:131\n47#1:132,2\n93#1:165\n93#1:166,2\n64#1:134,7\n65#1:141\n64#1:142,4\n77#1:146,7\n78#1:153\n77#1:154,4\n105#1:233,2\n106#1:235,2\n111#1:237,2\n112#1:239,2\n117#1:241,2\n118#1:243,2\n85#1:158,2\n93#1:160\n93#1:161\n93#1:162\n93#1:164\n93#1:168,12\n93#1:180\n93#1:181,5\n93#1:186,2\n93#1:188\n93#1:190,2\n93#1:195,17\n93#1:215,8\n93#1:223\n93#1:224,8\n93#1:232\n93#1:163\n93#1:189\n93#1:192,3\n93#1:212,3\n*E\n"
+    value = "SMAP\nModifierLocalManager.kt\nKotlin\n*S Kotlin\n*F\n+ 1 ModifierLocalManager.kt\nandroidx/compose/ui/modifier/ModifierLocalManager\n+ 2 MutableVector.kt\nandroidx/compose/runtime/collection/MutableVectorKt\n+ 3 MutableVector.kt\nandroidx/compose/runtime/collection/MutableVector\n+ 4 _Collections.kt\nkotlin/collections/CollectionsKt___CollectionsKt\n+ 5 NodeKind.kt\nandroidx/compose/ui/node/Nodes\n+ 6 DelegatableNode.kt\nandroidx/compose/ui/node/DelegatableNodeKt\n+ 7 fake.kt\nkotlin/jvm/internal/FakeKt\n+ 8 Modifier.kt\nandroidx/compose/ui/Modifier$Node\n+ 9 DelegatingNode.kt\nandroidx/compose/ui/node/DelegatingNode\n*L\n1#1,122:1\n1208#2:123\n1187#2,2:124\n1208#2:126\n1187#2,2:127\n1208#2:129\n1187#2,2:130\n1208#2:132\n1187#2,2:133\n1208#2:166\n1187#2,2:167\n476#3,7:135\n523#3:142\n483#3,4:143\n476#3,7:147\n523#3:154\n483#3,4:155\n728#3,2:234\n728#3,2:236\n728#3,2:238\n728#3,2:240\n728#3,2:242\n728#3,2:244\n1855#4,2:159\n80#5:161\n289#6:162\n163#6:163\n164#6:165\n165#6,12:169\n290#6:181\n385#6,5:182\n291#6,2:187\n390#6:189\n395#6,2:191\n397#6,17:196\n414#6,8:216\n293#6:224\n177#6,8:225\n294#6:233\n1#7:164\n261#8:190\n234#9,3:193\n237#9,3:213\n*S KotlinDebug\n*F\n+ 1 ModifierLocalManager.kt\nandroidx/compose/ui/modifier/ModifierLocalManager\n*L\n44#1:123\n44#1:124,2\n45#1:126\n45#1:127,2\n46#1:129\n46#1:130,2\n47#1:132\n47#1:133,2\n93#1:166\n93#1:167,2\n64#1:135,7\n65#1:142\n64#1:143,4\n77#1:147,7\n78#1:154\n77#1:155,4\n105#1:234,2\n106#1:236,2\n111#1:238,2\n112#1:240,2\n117#1:242,2\n118#1:244,2\n85#1:159,2\n93#1:161\n93#1:162\n93#1:163\n93#1:165\n93#1:169,12\n93#1:181\n93#1:182,5\n93#1:187,2\n93#1:189\n93#1:191,2\n93#1:196,17\n93#1:216,8\n93#1:224\n93#1:225,8\n93#1:233\n93#1:164\n93#1:190\n93#1:193,3\n93#1:213,3\n*E\n"
 .end annotation
 
 .annotation runtime Lkotlin/Metadata;
@@ -52,6 +52,10 @@
     }
     xi = 0x30
 .end annotation
+
+
+# static fields
+.field public static final $stable:I = 0x8
 
 
 # instance fields
@@ -101,12 +105,14 @@
 
 
 # direct methods
+.method static constructor <clinit>()V
+    .locals 0
+
+    return-void
+.end method
+
 .method public constructor <init>(Landroidx/compose/ui/node/Owner;)V
     .locals 3
-
-    const-string v0, "owner"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 42
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -114,7 +120,7 @@
     .line 43
     iput-object p1, p0, Landroidx/compose/ui/modifier/ModifierLocalManager;->owner:Landroidx/compose/ui/node/Owner;
 
-    .line 124
+    .line 125
     new-instance p1, Landroidx/compose/runtime/collection/MutableVector;
 
     const/16 v0, 0x10
@@ -128,7 +134,7 @@
     .line 44
     iput-object p1, p0, Landroidx/compose/ui/modifier/ModifierLocalManager;->inserted:Landroidx/compose/runtime/collection/MutableVector;
 
-    .line 127
+    .line 128
     new-instance p1, Landroidx/compose/runtime/collection/MutableVector;
 
     new-array v1, v0, [Landroidx/compose/ui/modifier/ModifierLocal;
@@ -138,7 +144,7 @@
     .line 45
     iput-object p1, p0, Landroidx/compose/ui/modifier/ModifierLocalManager;->insertedLocal:Landroidx/compose/runtime/collection/MutableVector;
 
-    .line 130
+    .line 131
     new-instance p1, Landroidx/compose/runtime/collection/MutableVector;
 
     new-array v1, v0, [Landroidx/compose/ui/node/LayoutNode;
@@ -148,7 +154,7 @@
     .line 46
     iput-object p1, p0, Landroidx/compose/ui/modifier/ModifierLocalManager;->removed:Landroidx/compose/runtime/collection/MutableVector;
 
-    .line 133
+    .line 134
     new-instance p1, Landroidx/compose/runtime/collection/MutableVector;
 
     new-array v0, v0, [Landroidx/compose/ui/modifier/ModifierLocal;
@@ -180,12 +186,12 @@
 
     const/16 p0, 0x20
 
-    .line 160
+    .line 161
     invoke-static {p0}, Landroidx/compose/ui/node/NodeKind;->constructor-impl(I)I
 
     move-result p0
 
-    .line 162
+    .line 163
     invoke-interface {p1}, Landroidx/compose/ui/node/DelegatableNode;->getNode()Landroidx/compose/ui/Modifier$Node;
 
     move-result-object v0
@@ -196,7 +202,7 @@
 
     if-eqz v0, :cond_d
 
-    .line 167
+    .line 168
     new-instance v0, Landroidx/compose/runtime/collection/MutableVector;
 
     const/16 v1, 0x10
@@ -207,7 +213,7 @@
 
     invoke-direct {v0, v2, v3}, Landroidx/compose/runtime/collection/MutableVector;-><init>([Ljava/lang/Object;I)V
 
-    .line 168
+    .line 169
     invoke-interface {p1}, Landroidx/compose/ui/node/DelegatableNode;->getNode()Landroidx/compose/ui/Modifier$Node;
 
     move-result-object v2
@@ -218,7 +224,7 @@
 
     if-nez v2, :cond_0
 
-    .line 170
+    .line 171
     invoke-interface {p1}, Landroidx/compose/ui/node/DelegatableNode;->getNode()Landroidx/compose/ui/Modifier$Node;
 
     move-result-object p1
@@ -227,11 +233,11 @@
 
     goto :goto_0
 
-    .line 172
+    .line 173
     :cond_0
     invoke-virtual {v0, v2}, Landroidx/compose/runtime/collection/MutableVector;->add(Ljava/lang/Object;)Z
 
-    .line 173
+    .line 174
     :goto_0
     invoke-virtual {v0}, Landroidx/compose/runtime/collection/MutableVector;->isNotEmpty()Z
 
@@ -239,7 +245,7 @@
 
     if-eqz p1, :cond_c
 
-    .line 174
+    .line 175
     invoke-virtual {v0}, Landroidx/compose/runtime/collection/MutableVector;->getSize()I
 
     move-result p1
@@ -254,7 +260,7 @@
 
     check-cast p1, Landroidx/compose/ui/Modifier$Node;
 
-    .line 175
+    .line 176
     invoke-virtual {p1}, Landroidx/compose/ui/Modifier$Node;->getAggregateChildKindSet$ui_release()I
 
     move-result v4
@@ -268,7 +274,7 @@
     :goto_1
     if-eqz v4, :cond_b
 
-    .line 178
+    .line 179
     invoke-virtual {v4}, Landroidx/compose/ui/Modifier$Node;->getKindSet$ui_release()I
 
     move-result v5
@@ -286,12 +292,12 @@
     :goto_2
     if-eqz v6, :cond_a
 
-    .line 184
+    .line 185
     instance-of v8, v6, Landroidx/compose/ui/modifier/ModifierLocalModifierNode;
 
     if-eqz v8, :cond_2
 
-    .line 186
+    .line 187
     check-cast v6, Landroidx/compose/ui/modifier/ModifierLocalModifierNode;
 
     .line 94
@@ -341,7 +347,7 @@
 
     goto :goto_0
 
-    .line 189
+    .line 190
     :cond_2
     invoke-virtual {v6}, Landroidx/compose/ui/Modifier$Node;->getKindSet$ui_release()I
 
@@ -351,17 +357,17 @@
 
     if-eqz v8, :cond_9
 
-    .line 188
+    .line 189
     instance-of v8, v6, Landroidx/compose/ui/node/DelegatingNode;
 
     if-eqz v8, :cond_9
 
-    .line 191
+    .line 192
     move-object v8, v6
 
     check-cast v8, Landroidx/compose/ui/node/DelegatingNode;
 
-    .line 192
+    .line 193
     invoke-virtual {v8}, Landroidx/compose/ui/node/DelegatingNode;->getDelegate$ui_release()Landroidx/compose/ui/Modifier$Node;
 
     move-result-object v8
@@ -371,7 +377,7 @@
     :goto_3
     if-eqz v8, :cond_8
 
-    .line 189
+    .line 190
     invoke-virtual {v8}, Landroidx/compose/ui/Modifier$Node;->getKindSet$ui_release()I
 
     move-result v10
@@ -391,7 +397,7 @@
     :cond_3
     if-nez v7, :cond_4
 
-    .line 167
+    .line 168
     new-instance v7, Landroidx/compose/runtime/collection/MutableVector;
 
     new-array v10, v1, [Landroidx/compose/ui/Modifier$Node;
@@ -403,7 +409,7 @@
 
     if-eqz v7, :cond_5
 
-    .line 205
+    .line 206
     invoke-virtual {v7, v6}, Landroidx/compose/runtime/collection/MutableVector;->add(Ljava/lang/Object;)Z
 
     :cond_5
@@ -412,10 +418,10 @@
     :cond_6
     if-eqz v7, :cond_7
 
-    .line 208
+    .line 209
     invoke-virtual {v7, v8}, Landroidx/compose/runtime/collection/MutableVector;->add(Ljava/lang/Object;)Z
 
-    .line 212
+    .line 213
     :cond_7
     :goto_4
     invoke-virtual {v8}, Landroidx/compose/ui/Modifier$Node;->getChild$ui_release()Landroidx/compose/ui/Modifier$Node;
@@ -429,7 +435,7 @@
 
     goto :goto_2
 
-    .line 220
+    .line 221
     :cond_9
     invoke-static {v7}, Landroidx/compose/ui/node/DelegatableNodeKt;->access$pop(Landroidx/compose/runtime/collection/MutableVector;)Landroidx/compose/ui/Modifier$Node;
 
@@ -437,7 +443,7 @@
 
     goto :goto_2
 
-    .line 226
+    .line 227
     :cond_a
     invoke-virtual {v4}, Landroidx/compose/ui/Modifier$Node;->getChild$ui_release()Landroidx/compose/ui/Modifier$Node;
 
@@ -445,7 +451,7 @@
 
     goto/16 :goto_1
 
-    .line 229
+    .line 230
     :cond_b
     invoke-static {v0, p1}, Landroidx/compose/ui/node/DelegatableNodeKt;->access$addLayoutNodeChildren(Landroidx/compose/runtime/collection/MutableVector;Landroidx/compose/ui/Modifier$Node;)V
 
@@ -454,7 +460,7 @@
     :cond_c
     return-void
 
-    .line 162
+    .line 163
     :cond_d
     new-instance p0, Ljava/lang/IllegalStateException;
 
@@ -491,24 +497,16 @@
         }
     .end annotation
 
-    const-string v0, "node"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string v0, "key"
-
-    invoke-static {p2, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
     .line 111
     iget-object v0, p0, Landroidx/compose/ui/modifier/ModifierLocalManager;->inserted:Landroidx/compose/runtime/collection/MutableVector;
 
-    .line 237
+    .line 238
     invoke-virtual {v0, p1}, Landroidx/compose/runtime/collection/MutableVector;->add(Ljava/lang/Object;)Z
 
     .line 112
     iget-object p1, p0, Landroidx/compose/ui/modifier/ModifierLocalManager;->insertedLocal:Landroidx/compose/runtime/collection/MutableVector;
 
-    .line 239
+    .line 240
     invoke-virtual {p1, p2}, Landroidx/compose/runtime/collection/MutableVector;->add(Ljava/lang/Object;)Z
 
     .line 113
@@ -556,14 +554,6 @@
         }
     .end annotation
 
-    const-string v0, "node"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string v0, "key"
-
-    invoke-static {p2, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
     .line 117
     iget-object v0, p0, Landroidx/compose/ui/modifier/ModifierLocalManager;->removed:Landroidx/compose/runtime/collection/MutableVector;
 
@@ -573,13 +563,13 @@
 
     move-result-object p1
 
-    .line 241
+    .line 242
     invoke-virtual {v0, p1}, Landroidx/compose/runtime/collection/MutableVector;->add(Ljava/lang/Object;)Z
 
     .line 118
     iget-object p1, p0, Landroidx/compose/ui/modifier/ModifierLocalManager;->removedLocal:Landroidx/compose/runtime/collection/MutableVector;
 
-    .line 243
+    .line 244
     invoke-virtual {p1, p2}, Landroidx/compose/runtime/collection/MutableVector;->add(Ljava/lang/Object;)Z
 
     .line 119
@@ -604,21 +594,21 @@
     .line 64
     iget-object v2, p0, Landroidx/compose/ui/modifier/ModifierLocalManager;->removed:Landroidx/compose/runtime/collection/MutableVector;
 
-    .line 135
+    .line 136
     invoke-virtual {v2}, Landroidx/compose/runtime/collection/MutableVector;->getSize()I
 
     move-result v3
 
     if-lez v3, :cond_2
 
-    .line 138
+    .line 139
     invoke-virtual {v2}, Landroidx/compose/runtime/collection/MutableVector;->getContent()[Ljava/lang/Object;
 
     move-result-object v2
 
     move v4, v0
 
-    .line 140
+    .line 141
     :cond_0
     aget-object v5, v2, v4
 
@@ -627,7 +617,7 @@
     .line 65
     iget-object v6, p0, Landroidx/compose/ui/modifier/ModifierLocalManager;->removedLocal:Landroidx/compose/runtime/collection/MutableVector;
 
-    .line 141
+    .line 142
     invoke-virtual {v6}, Landroidx/compose/runtime/collection/MutableVector;->getContent()[Ljava/lang/Object;
 
     move-result-object v6
@@ -686,19 +676,19 @@
     .line 77
     iget-object v2, p0, Landroidx/compose/ui/modifier/ModifierLocalManager;->inserted:Landroidx/compose/runtime/collection/MutableVector;
 
-    .line 147
+    .line 148
     invoke-virtual {v2}, Landroidx/compose/runtime/collection/MutableVector;->getSize()I
 
     move-result v3
 
     if-lez v3, :cond_5
 
-    .line 150
+    .line 151
     invoke-virtual {v2}, Landroidx/compose/runtime/collection/MutableVector;->getContent()[Ljava/lang/Object;
 
     move-result-object v2
 
-    .line 152
+    .line 153
     :cond_3
     aget-object v4, v2, v0
 
@@ -707,7 +697,7 @@
     .line 78
     iget-object v5, p0, Landroidx/compose/ui/modifier/ModifierLocalManager;->insertedLocal:Landroidx/compose/runtime/collection/MutableVector;
 
-    .line 153
+    .line 154
     invoke-virtual {v5}, Landroidx/compose/runtime/collection/MutableVector;->getContent()[Ljava/lang/Object;
 
     move-result-object v5
@@ -752,7 +742,7 @@
     .line 85
     check-cast v1, Ljava/lang/Iterable;
 
-    .line 158
+    .line 159
     invoke-interface {v1}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
 
     move-result-object p0
@@ -790,24 +780,16 @@
         }
     .end annotation
 
-    const-string v0, "node"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string v0, "key"
-
-    invoke-static {p2, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
     .line 105
     iget-object v0, p0, Landroidx/compose/ui/modifier/ModifierLocalManager;->inserted:Landroidx/compose/runtime/collection/MutableVector;
 
-    .line 233
+    .line 234
     invoke-virtual {v0, p1}, Landroidx/compose/runtime/collection/MutableVector;->add(Ljava/lang/Object;)Z
 
     .line 106
     iget-object p1, p0, Landroidx/compose/ui/modifier/ModifierLocalManager;->insertedLocal:Landroidx/compose/runtime/collection/MutableVector;
 
-    .line 235
+    .line 236
     invoke-virtual {p1, p2}, Landroidx/compose/runtime/collection/MutableVector;->add(Ljava/lang/Object;)Z
 
     .line 107

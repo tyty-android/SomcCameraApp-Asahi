@@ -1,6 +1,6 @@
 .class public final Landroidx/compose/ui/tooling/preview/PreviewParameterProvider$DefaultImpls;
 .super Ljava/lang/Object;
-.source "PreviewParameter.kt"
+.source "PreviewParameter.android.kt"
 
 
 # annotations

@@ -25,10 +25,10 @@
 .method constructor <init>(Ljp/co/sony/mc/camera/view/FragmentController;)V
     .locals 0
 
-    .line 7718
+    .line 7970
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 7719
+    .line 7971
     iput-object p1, p0, Ljp/co/sony/mc/camera/view/FragmentController$FallbackStateListenerImpl;->mController:Ljp/co/sony/mc/camera/view/FragmentController;
 
     return-void
@@ -39,7 +39,7 @@
 .method public onFallbackStateChanged(ZZ)V
     .locals 0
 
-    .line 7724
+    .line 7976
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/FragmentController$FallbackStateListenerImpl;->mController:Ljp/co/sony/mc/camera/view/FragmentController;
 
     invoke-static {p0}, Ljp/co/sony/mc/camera/view/FragmentController;->-$$Nest$fgetmCameraEventNotifier(Ljp/co/sony/mc/camera/view/FragmentController;)Ljp/co/sony/mc/camera/view/CameraEventListener;

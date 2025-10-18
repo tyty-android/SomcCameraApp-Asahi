@@ -1,6 +1,6 @@
 .class final Landroidx/compose/ui/tooling/animation/AnimationSearch$unsupportedSearch$1;
 .super Lkotlin/jvm/internal/Lambda;
-.source "AnimationSearch.kt"
+.source "AnimationSearch.android.kt"
 
 # interfaces
 .implements Lkotlin/jvm/functions/Function1;
@@ -69,7 +69,7 @@
 .method public bridge synthetic invoke(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
 
-    .line 105
+    .line 106
     invoke-virtual {p0, p1}, Landroidx/compose/ui/tooling/animation/AnimationSearch$unsupportedSearch$1;->invoke(Ljava/lang/Object;)V
 
     sget-object p0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
@@ -78,13 +78,9 @@
 .end method
 
 .method public final invoke(Ljava/lang/Object;)V
-    .locals 1
+    .locals 0
 
-    const-string v0, "it"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 106
+    .line 107
     iget-object p0, p0, Landroidx/compose/ui/tooling/animation/AnimationSearch$unsupportedSearch$1;->this$0:Landroidx/compose/ui/tooling/animation/AnimationSearch;
 
     invoke-static {p0}, Landroidx/compose/ui/tooling/animation/AnimationSearch;->access$getClock$p(Landroidx/compose/ui/tooling/animation/AnimationSearch;)Lkotlin/jvm/functions/Function0;

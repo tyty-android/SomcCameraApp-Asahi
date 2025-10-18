@@ -25,7 +25,7 @@
 .method private constructor <init>(Ljp/co/sony/mc/camera/interaction/TouchActionTranslator;)V
     .locals 0
 
-    .line 576
+    .line 483
     iput-object p1, p0, Ljp/co/sony/mc/camera/interaction/TouchActionTranslator$DoubleTapDown;->this$0:Ljp/co/sony/mc/camera/interaction/TouchActionTranslator;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -46,7 +46,7 @@
 .method public handleMotionEvent(Landroid/view/MotionEvent;)V
     .locals 3
 
-    .line 580
+    .line 487
     invoke-virtual {p1}, Landroid/view/MotionEvent;->getActionMasked()I
 
     move-result v0
@@ -63,7 +63,7 @@
 
     return-void
 
-    .line 586
+    .line 493
     :cond_0
     iget-object p1, p0, Ljp/co/sony/mc/camera/interaction/TouchActionTranslator$DoubleTapDown;->this$0:Ljp/co/sony/mc/camera/interaction/TouchActionTranslator;
 
@@ -77,7 +77,7 @@
 
     return-void
 
-    .line 582
+    .line 489
     :cond_1
     iget-object v0, p0, Ljp/co/sony/mc/camera/interaction/TouchActionTranslator$DoubleTapDown;->this$0:Ljp/co/sony/mc/camera/interaction/TouchActionTranslator;
 
@@ -87,7 +87,7 @@
 
     invoke-interface {v0, p1}, Ljp/co/sony/mc/camera/interaction/TouchActionTranslator$TouchActionListener;->onDoubleTapUp(Landroid/view/MotionEvent;)V
 
-    .line 583
+    .line 490
     iget-object p1, p0, Ljp/co/sony/mc/camera/interaction/TouchActionTranslator$DoubleTapDown;->this$0:Ljp/co/sony/mc/camera/interaction/TouchActionTranslator;
 
     new-instance v0, Ljp/co/sony/mc/camera/interaction/TouchActionTranslator$Idle;

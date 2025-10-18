@@ -45,46 +45,36 @@
 
 # virtual methods
 .method public run()V
-    .locals 6
+    .locals 4
 
     .line 272
     :try_start_0
     sget-object v0, Landroidx/core/app/ActivityRecreator;->performStopActivity3ParamsMethod:Ljava/lang/reflect/Method;
 
-    const/4 v1, 0x1
-
-    const/4 v2, 0x2
-
-    const/4 v3, 0x0
+    const/4 v1, 0x0
 
     if-eqz v0, :cond_0
 
     .line 273
     sget-object v0, Landroidx/core/app/ActivityRecreator;->performStopActivity3ParamsMethod:Ljava/lang/reflect/Method;
 
-    iget-object v4, p0, Landroidx/core/app/ActivityRecreator$3;->val$activityThread:Ljava/lang/Object;
-
-    const/4 v5, 0x3
-
-    new-array v5, v5, [Ljava/lang/Object;
+    iget-object v2, p0, Landroidx/core/app/ActivityRecreator$3;->val$activityThread:Ljava/lang/Object;
 
     iget-object p0, p0, Landroidx/core/app/ActivityRecreator$3;->val$token:Ljava/lang/Object;
 
-    aput-object p0, v5, v3
-
     .line 274
-    invoke-static {v3}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
+    invoke-static {v1}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
+
+    move-result-object v1
+
+    const-string v3, "AppCompat recreation"
+
+    filled-new-array {p0, v1, v3}, [Ljava/lang/Object;
 
     move-result-object p0
 
-    aput-object p0, v5, v1
-
-    const-string p0, "AppCompat recreation"
-
-    aput-object p0, v5, v2
-
     .line 273
-    invoke-virtual {v0, v4, v5}, Ljava/lang/reflect/Method;->invoke(Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v0, v2, p0}, Ljava/lang/reflect/Method;->invoke(Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;
 
     goto :goto_0
 
@@ -92,23 +82,21 @@
     :cond_0
     sget-object v0, Landroidx/core/app/ActivityRecreator;->performStopActivity2ParamsMethod:Ljava/lang/reflect/Method;
 
-    iget-object v4, p0, Landroidx/core/app/ActivityRecreator$3;->val$activityThread:Ljava/lang/Object;
-
-    new-array v2, v2, [Ljava/lang/Object;
+    iget-object v2, p0, Landroidx/core/app/ActivityRecreator$3;->val$activityThread:Ljava/lang/Object;
 
     iget-object p0, p0, Landroidx/core/app/ActivityRecreator$3;->val$token:Ljava/lang/Object;
 
-    aput-object p0, v2, v3
-
     .line 277
-    invoke-static {v3}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
+    invoke-static {v1}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
+
+    move-result-object v1
+
+    filled-new-array {p0, v1}, [Ljava/lang/Object;
 
     move-result-object p0
 
-    aput-object p0, v2, v1
-
     .line 276
-    invoke-virtual {v0, v4, v2}, Ljava/lang/reflect/Method;->invoke(Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v0, v2, p0}, Ljava/lang/reflect/Method;->invoke(Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;
     :try_end_0
     .catch Ljava/lang/RuntimeException; {:try_start_0 .. :try_end_0} :catch_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0

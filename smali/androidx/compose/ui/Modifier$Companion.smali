@@ -94,10 +94,6 @@
         }
     .end annotation
 
-    const-string p0, "predicate"
-
-    invoke-static {p1, p0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
     const/4 p0, 0x1
 
     return p0
@@ -115,10 +111,6 @@
             ">;)Z"
         }
     .end annotation
-
-    const-string p0, "predicate"
-
-    invoke-static {p1, p0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
     const/4 p0, 0x0
 
@@ -139,10 +131,6 @@
         }
     .end annotation
 
-    const-string p0, "operation"
-
-    invoke-static {p2, p0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
     return-object p1
 .end method
 
@@ -160,19 +148,11 @@
         }
     .end annotation
 
-    const-string p0, "operation"
-
-    invoke-static {p2, p0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
     return-object p1
 .end method
 
 .method public then(Landroidx/compose/ui/Modifier;)Landroidx/compose/ui/Modifier;
     .locals 0
-
-    const-string p0, "other"
-
-    invoke-static {p1, p0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
     return-object p1
 .end method

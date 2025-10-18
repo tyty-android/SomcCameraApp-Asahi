@@ -71,7 +71,7 @@
 .method public final invoke()Ljava/lang/Boolean;
     .locals 7
 
-    .line 567
+    .line 642
     iget-object v0, p0, Landroidx/compose/material/BottomSheetScaffoldKt$BottomSheet$2$2;->$state:Landroidx/compose/material/BottomSheetState;
 
     invoke-virtual {v0}, Landroidx/compose/material/BottomSheetState;->getAnchoredDraggableState$material_release()Landroidx/compose/material/AnchoredDraggableState;
@@ -96,7 +96,7 @@
 
     if-eqz v0, :cond_0
 
-    .line 568
+    .line 643
     iget-object v1, p0, Landroidx/compose/material/BottomSheetScaffoldKt$BottomSheet$2$2;->$scope:Lkotlinx/coroutines/CoroutineScope;
 
     new-instance v0, Landroidx/compose/material/BottomSheetScaffoldKt$BottomSheet$2$2$1;
@@ -122,7 +122,7 @@
     :cond_0
     const/4 p0, 0x1
 
-    .line 570
+    .line 645
     invoke-static {p0}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
     move-result-object p0
@@ -133,7 +133,7 @@
 .method public bridge synthetic invoke()Ljava/lang/Object;
     .locals 0
 
-    .line 566
+    .line 641
     invoke-virtual {p0}, Landroidx/compose/material/BottomSheetScaffoldKt$BottomSheet$2$2;->invoke()Ljava/lang/Boolean;
 
     move-result-object p0

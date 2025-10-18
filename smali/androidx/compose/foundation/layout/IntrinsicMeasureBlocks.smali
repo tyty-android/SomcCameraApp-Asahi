@@ -187,56 +187,56 @@
 
     sput-object v0, Landroidx/compose/foundation/layout/IntrinsicMeasureBlocks;->INSTANCE:Landroidx/compose/foundation/layout/IntrinsicMeasureBlocks;
 
-    .line 437
+    .line 438
     sget-object v0, Landroidx/compose/foundation/layout/IntrinsicMeasureBlocks$HorizontalMinWidth$1;->INSTANCE:Landroidx/compose/foundation/layout/IntrinsicMeasureBlocks$HorizontalMinWidth$1;
 
     check-cast v0, Lkotlin/jvm/functions/Function3;
 
     sput-object v0, Landroidx/compose/foundation/layout/IntrinsicMeasureBlocks;->HorizontalMinWidth:Lkotlin/jvm/functions/Function3;
 
-    .line 449
+    .line 450
     sget-object v0, Landroidx/compose/foundation/layout/IntrinsicMeasureBlocks$VerticalMinWidth$1;->INSTANCE:Landroidx/compose/foundation/layout/IntrinsicMeasureBlocks$VerticalMinWidth$1;
 
     check-cast v0, Lkotlin/jvm/functions/Function3;
 
     sput-object v0, Landroidx/compose/foundation/layout/IntrinsicMeasureBlocks;->VerticalMinWidth:Lkotlin/jvm/functions/Function3;
 
-    .line 461
+    .line 462
     sget-object v0, Landroidx/compose/foundation/layout/IntrinsicMeasureBlocks$HorizontalMinHeight$1;->INSTANCE:Landroidx/compose/foundation/layout/IntrinsicMeasureBlocks$HorizontalMinHeight$1;
 
     check-cast v0, Lkotlin/jvm/functions/Function3;
 
     sput-object v0, Landroidx/compose/foundation/layout/IntrinsicMeasureBlocks;->HorizontalMinHeight:Lkotlin/jvm/functions/Function3;
 
-    .line 473
+    .line 474
     sget-object v0, Landroidx/compose/foundation/layout/IntrinsicMeasureBlocks$VerticalMinHeight$1;->INSTANCE:Landroidx/compose/foundation/layout/IntrinsicMeasureBlocks$VerticalMinHeight$1;
 
     check-cast v0, Lkotlin/jvm/functions/Function3;
 
     sput-object v0, Landroidx/compose/foundation/layout/IntrinsicMeasureBlocks;->VerticalMinHeight:Lkotlin/jvm/functions/Function3;
 
-    .line 485
+    .line 486
     sget-object v0, Landroidx/compose/foundation/layout/IntrinsicMeasureBlocks$HorizontalMaxWidth$1;->INSTANCE:Landroidx/compose/foundation/layout/IntrinsicMeasureBlocks$HorizontalMaxWidth$1;
 
     check-cast v0, Lkotlin/jvm/functions/Function3;
 
     sput-object v0, Landroidx/compose/foundation/layout/IntrinsicMeasureBlocks;->HorizontalMaxWidth:Lkotlin/jvm/functions/Function3;
 
-    .line 497
+    .line 498
     sget-object v0, Landroidx/compose/foundation/layout/IntrinsicMeasureBlocks$VerticalMaxWidth$1;->INSTANCE:Landroidx/compose/foundation/layout/IntrinsicMeasureBlocks$VerticalMaxWidth$1;
 
     check-cast v0, Lkotlin/jvm/functions/Function3;
 
     sput-object v0, Landroidx/compose/foundation/layout/IntrinsicMeasureBlocks;->VerticalMaxWidth:Lkotlin/jvm/functions/Function3;
 
-    .line 509
+    .line 510
     sget-object v0, Landroidx/compose/foundation/layout/IntrinsicMeasureBlocks$HorizontalMaxHeight$1;->INSTANCE:Landroidx/compose/foundation/layout/IntrinsicMeasureBlocks$HorizontalMaxHeight$1;
 
     check-cast v0, Lkotlin/jvm/functions/Function3;
 
     sput-object v0, Landroidx/compose/foundation/layout/IntrinsicMeasureBlocks;->HorizontalMaxHeight:Lkotlin/jvm/functions/Function3;
 
-    .line 521
+    .line 522
     sget-object v0, Landroidx/compose/foundation/layout/IntrinsicMeasureBlocks$VerticalMaxHeight$1;->INSTANCE:Landroidx/compose/foundation/layout/IntrinsicMeasureBlocks$VerticalMaxHeight$1;
 
     check-cast v0, Lkotlin/jvm/functions/Function3;
@@ -249,7 +249,7 @@
 .method private constructor <init>()V
     .locals 0
 
-    .line 435
+    .line 436
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -274,7 +274,7 @@
         }
     .end annotation
 
-    .line 508
+    .line 509
     sget-object p0, Landroidx/compose/foundation/layout/IntrinsicMeasureBlocks;->HorizontalMaxHeight:Lkotlin/jvm/functions/Function3;
 
     return-object p0
@@ -297,7 +297,7 @@
         }
     .end annotation
 
-    .line 484
+    .line 485
     sget-object p0, Landroidx/compose/foundation/layout/IntrinsicMeasureBlocks;->HorizontalMaxWidth:Lkotlin/jvm/functions/Function3;
 
     return-object p0
@@ -320,7 +320,7 @@
         }
     .end annotation
 
-    .line 460
+    .line 461
     sget-object p0, Landroidx/compose/foundation/layout/IntrinsicMeasureBlocks;->HorizontalMinHeight:Lkotlin/jvm/functions/Function3;
 
     return-object p0
@@ -343,7 +343,7 @@
         }
     .end annotation
 
-    .line 436
+    .line 437
     sget-object p0, Landroidx/compose/foundation/layout/IntrinsicMeasureBlocks;->HorizontalMinWidth:Lkotlin/jvm/functions/Function3;
 
     return-object p0
@@ -366,7 +366,7 @@
         }
     .end annotation
 
-    .line 520
+    .line 521
     sget-object p0, Landroidx/compose/foundation/layout/IntrinsicMeasureBlocks;->VerticalMaxHeight:Lkotlin/jvm/functions/Function3;
 
     return-object p0
@@ -389,7 +389,7 @@
         }
     .end annotation
 
-    .line 496
+    .line 497
     sget-object p0, Landroidx/compose/foundation/layout/IntrinsicMeasureBlocks;->VerticalMaxWidth:Lkotlin/jvm/functions/Function3;
 
     return-object p0
@@ -412,7 +412,7 @@
         }
     .end annotation
 
-    .line 472
+    .line 473
     sget-object p0, Landroidx/compose/foundation/layout/IntrinsicMeasureBlocks;->VerticalMinHeight:Lkotlin/jvm/functions/Function3;
 
     return-object p0
@@ -435,7 +435,7 @@
         }
     .end annotation
 
-    .line 448
+    .line 449
     sget-object p0, Landroidx/compose/foundation/layout/IntrinsicMeasureBlocks;->VerticalMinWidth:Lkotlin/jvm/functions/Function3;
 
     return-object p0

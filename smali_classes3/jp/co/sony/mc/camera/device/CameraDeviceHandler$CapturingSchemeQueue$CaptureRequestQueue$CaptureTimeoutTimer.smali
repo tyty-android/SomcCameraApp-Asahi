@@ -48,7 +48,7 @@
 .method private constructor <init>()V
     .locals 0
 
-    .line 5703
+    .line 5963
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -65,19 +65,19 @@
 .method private start()V
     .locals 3
 
-    .line 5716
+    .line 5976
     iget-object v0, p0, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$CapturingSchemeQueue$CaptureRequestQueue$CaptureTimeoutTimer;->mTimer:Ljava/util/Timer;
 
     if-nez v0, :cond_0
 
-    .line 5717
+    .line 5977
     new-instance v0, Ljava/util/Timer;
 
     invoke-direct {v0}, Ljava/util/Timer;-><init>()V
 
     iput-object v0, p0, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$CapturingSchemeQueue$CaptureRequestQueue$CaptureTimeoutTimer;->mTimer:Ljava/util/Timer;
 
-    .line 5718
+    .line 5978
     new-instance p0, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$CapturingSchemeQueue$CaptureRequestQueue$CaptureTimeoutTimer$TimeoutTask;
 
     const/4 v1, 0x0
@@ -95,22 +95,22 @@
 .method private stop()V
     .locals 1
 
-    .line 5708
+    .line 5968
     iget-object v0, p0, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$CapturingSchemeQueue$CaptureRequestQueue$CaptureTimeoutTimer;->mTimer:Ljava/util/Timer;
 
     if-eqz v0, :cond_0
 
-    .line 5709
+    .line 5969
     invoke-virtual {v0}, Ljava/util/Timer;->cancel()V
 
-    .line 5710
+    .line 5970
     iget-object v0, p0, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$CapturingSchemeQueue$CaptureRequestQueue$CaptureTimeoutTimer;->mTimer:Ljava/util/Timer;
 
     invoke-virtual {v0}, Ljava/util/Timer;->purge()I
 
     const/4 v0, 0x0
 
-    .line 5711
+    .line 5971
     iput-object v0, p0, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$CapturingSchemeQueue$CaptureRequestQueue$CaptureTimeoutTimer;->mTimer:Ljava/util/Timer;
 
     :cond_0

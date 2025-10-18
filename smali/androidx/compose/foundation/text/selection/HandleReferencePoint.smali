@@ -65,7 +65,7 @@
 .method static constructor <clinit>()V
     .locals 3
 
-    .line 255
+    .line 245
     new-instance v0, Landroidx/compose/foundation/text/selection/HandleReferencePoint;
 
     const-string v1, "TopLeft"
@@ -76,7 +76,7 @@
 
     sput-object v0, Landroidx/compose/foundation/text/selection/HandleReferencePoint;->TopLeft:Landroidx/compose/foundation/text/selection/HandleReferencePoint;
 
-    .line 256
+    .line 246
     new-instance v0, Landroidx/compose/foundation/text/selection/HandleReferencePoint;
 
     const-string v1, "TopRight"
@@ -87,7 +87,7 @@
 
     sput-object v0, Landroidx/compose/foundation/text/selection/HandleReferencePoint;->TopRight:Landroidx/compose/foundation/text/selection/HandleReferencePoint;
 
-    .line 257
+    .line 247
     new-instance v0, Landroidx/compose/foundation/text/selection/HandleReferencePoint;
 
     const-string v1, "TopMiddle"
@@ -115,7 +115,7 @@
         }
     .end annotation
 
-    .line 254
+    .line 244
     invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
     return-void

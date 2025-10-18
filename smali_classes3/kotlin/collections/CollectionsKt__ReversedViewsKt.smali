@@ -134,7 +134,7 @@
 .end method
 
 .method private static final reverseElementIndex$CollectionsKt__ReversedViewsKt(Ljava/util/List;I)I
-    .locals 4
+    .locals 3
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -143,22 +143,14 @@
         }
     .end annotation
 
+    if-ltz p1, :cond_0
+
     .line 65
-    new-instance v0, Lkotlin/ranges/IntRange;
-
     invoke-static {p0}, Lkotlin/collections/CollectionsKt;->getLastIndex(Ljava/util/List;)I
-
-    move-result v1
-
-    const/4 v2, 0x0
-
-    invoke-direct {v0, v2, v1}, Lkotlin/ranges/IntRange;-><init>(II)V
-
-    invoke-virtual {v0, p1}, Lkotlin/ranges/IntRange;->contains(I)Z
 
     move-result v0
 
-    if-eqz v0, :cond_0
+    if-gt p1, v0, :cond_0
 
     invoke-static {p0}, Lkotlin/collections/CollectionsKt;->getLastIndex(Ljava/util/List;)I
 
@@ -173,9 +165,9 @@
 
     new-instance v1, Ljava/lang/StringBuilder;
 
-    const-string v3, "Element index "
+    const-string v2, "Element index "
 
-    invoke-direct {v1, v3}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+    invoke-direct {v1, v2}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
     invoke-virtual {v1, p1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
@@ -188,6 +180,8 @@
     move-result-object p1
 
     new-instance v1, Lkotlin/ranges/IntRange;
+
+    const/4 v2, 0x0
 
     invoke-static {p0}, Lkotlin/collections/CollectionsKt;->getLastIndex(Ljava/util/List;)I
 
@@ -235,7 +229,7 @@
 .end method
 
 .method private static final reversePositionIndex$CollectionsKt__ReversedViewsKt(Ljava/util/List;I)I
-    .locals 4
+    .locals 3
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -244,22 +238,14 @@
         }
     .end annotation
 
+    if-ltz p1, :cond_0
+
     .line 68
-    new-instance v0, Lkotlin/ranges/IntRange;
-
     invoke-interface {p0}, Ljava/util/List;->size()I
-
-    move-result v1
-
-    const/4 v2, 0x0
-
-    invoke-direct {v0, v2, v1}, Lkotlin/ranges/IntRange;-><init>(II)V
-
-    invoke-virtual {v0, p1}, Lkotlin/ranges/IntRange;->contains(I)Z
 
     move-result v0
 
-    if-eqz v0, :cond_0
+    if-gt p1, v0, :cond_0
 
     invoke-interface {p0}, Ljava/util/List;->size()I
 
@@ -274,9 +260,9 @@
 
     new-instance v1, Ljava/lang/StringBuilder;
 
-    const-string v3, "Position index "
+    const-string v2, "Position index "
 
-    invoke-direct {v1, v3}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+    invoke-direct {v1, v2}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
     invoke-virtual {v1, p1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
@@ -289,6 +275,8 @@
     move-result-object p1
 
     new-instance v1, Lkotlin/ranges/IntRange;
+
+    const/4 v2, 0x0
 
     invoke-interface {p0}, Ljava/util/List;->size()I
 

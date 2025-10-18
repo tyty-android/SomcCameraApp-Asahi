@@ -24,24 +24,35 @@
 
 
 # direct methods
-.method static bridge synthetic -$$Nest$fgetmService(Ljp/co/sony/mc/camera/setting/CameraProSetting$LoadCommonSettingsTask;)Ljava/util/concurrent/ExecutorService;
+.method public static synthetic $r8$lambda$lsp-q9t6Wdqx6vQ_vzw-Hn3QS28(Ljp/co/sony/mc/camera/setting/CameraProSetting$LoadCommonSettingsTask;)V
     .locals 0
 
-    iget-object p0, p0, Ljp/co/sony/mc/camera/setting/CameraProSetting$LoadCommonSettingsTask;->mService:Ljava/util/concurrent/ExecutorService;
+    invoke-direct {p0}, Ljp/co/sony/mc/camera/setting/CameraProSetting$LoadCommonSettingsTask;->lambda$call$0()V
 
-    return-object p0
+    return-void
 .end method
 
 .method constructor <init>(Ljp/co/sony/mc/camera/setting/CameraProSetting;Ljava/util/concurrent/ExecutorService;)V
     .locals 0
 
-    .line 933
+    .line 947
     iput-object p1, p0, Ljp/co/sony/mc/camera/setting/CameraProSetting$LoadCommonSettingsTask;->this$0:Ljp/co/sony/mc/camera/setting/CameraProSetting;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 934
+    .line 948
     iput-object p2, p0, Ljp/co/sony/mc/camera/setting/CameraProSetting$LoadCommonSettingsTask;->mService:Ljava/util/concurrent/ExecutorService;
+
+    return-void
+.end method
+
+.method private synthetic lambda$call$0()V
+    .locals 0
+
+    .line 956
+    iget-object p0, p0, Ljp/co/sony/mc/camera/setting/CameraProSetting$LoadCommonSettingsTask;->mService:Ljava/util/concurrent/ExecutorService;
+
+    invoke-interface {p0}, Ljava/util/concurrent/ExecutorService;->shutdown()V
 
     return-void
 .end method
@@ -56,7 +67,7 @@
         }
     .end annotation
 
-    .line 930
+    .line 944
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/setting/CameraProSetting$LoadCommonSettingsTask;->call()Ljava/lang/String;
 
     move-result-object p0
@@ -67,28 +78,53 @@
 .method public call()Ljava/lang/String;
     .locals 2
 
-    .line 939
+    .line 953
     iget-object v0, p0, Ljp/co/sony/mc/camera/setting/CameraProSetting$LoadCommonSettingsTask;->this$0:Ljp/co/sony/mc/camera/setting/CameraProSetting;
 
-    invoke-static {v0}, Ljp/co/sony/mc/camera/setting/CameraProSetting;->-$$Nest$fgetmCommonSettings(Ljp/co/sony/mc/camera/setting/CameraProSetting;)Ljp/co/sony/mc/camera/setting/CommonSettings;
+    invoke-static {v0}, Ljp/co/sony/mc/camera/setting/CameraProSetting;->-$$Nest$fgetmCurrentSettingsLock(Ljp/co/sony/mc/camera/setting/CameraProSetting;)Ljava/lang/Object;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Ljp/co/sony/mc/camera/setting/CommonSettings;->loadAll()V
+    monitor-enter v0
 
-    .line 940
+    .line 954
+    :try_start_0
+    iget-object v1, p0, Ljp/co/sony/mc/camera/setting/CameraProSetting$LoadCommonSettingsTask;->this$0:Ljp/co/sony/mc/camera/setting/CameraProSetting;
+
+    invoke-static {v1}, Ljp/co/sony/mc/camera/setting/CameraProSetting;->-$$Nest$fgetmCommonSettings(Ljp/co/sony/mc/camera/setting/CameraProSetting;)Ljp/co/sony/mc/camera/setting/CommonSettings;
+
+    move-result-object v1
+
+    invoke-virtual {v1}, Ljp/co/sony/mc/camera/setting/CommonSettings;->loadAll()V
+
+    .line 955
+    monitor-exit v0
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    .line 956
     new-instance v0, Ljava/lang/Thread;
 
-    new-instance v1, Ljp/co/sony/mc/camera/setting/CameraProSetting$LoadCommonSettingsTask$1;
+    new-instance v1, Ljp/co/sony/mc/camera/setting/CameraProSetting$LoadCommonSettingsTask$$ExternalSyntheticLambda0;
 
-    invoke-direct {v1, p0}, Ljp/co/sony/mc/camera/setting/CameraProSetting$LoadCommonSettingsTask$1;-><init>(Ljp/co/sony/mc/camera/setting/CameraProSetting$LoadCommonSettingsTask;)V
+    invoke-direct {v1, p0}, Ljp/co/sony/mc/camera/setting/CameraProSetting$LoadCommonSettingsTask$$ExternalSyntheticLambda0;-><init>(Ljp/co/sony/mc/camera/setting/CameraProSetting$LoadCommonSettingsTask;)V
 
     invoke-direct {v0, v1}, Ljava/lang/Thread;-><init>(Ljava/lang/Runnable;)V
 
-    .line 945
     invoke-virtual {v0}, Ljava/lang/Thread;->start()V
 
     const/4 p0, 0x0
 
     return-object p0
+
+    :catchall_0
+    move-exception p0
+
+    .line 955
+    :try_start_1
+    monitor-exit v0
+    :try_end_1
+    .catchall {:try_start_1 .. :try_end_1} :catchall_0
+
+    throw p0
 .end method

@@ -17,8 +17,6 @@
 # instance fields
 .field private mSnapHelper:Ljp/co/sony/mc/camera/view/widget/DialPicker$HorizontalCenterSnapHelper;
 
-.field private mViewKind:Ljp/co/sony/mc/camera/view/widget/DialPicker$ViewKind;
-
 .field final synthetic this$0:Ljp/co/sony/mc/camera/view/widget/DialPicker;
 
 
@@ -26,12 +24,12 @@
 .method constructor <init>(Ljp/co/sony/mc/camera/view/widget/DialPicker;Landroid/content/Context;)V
     .locals 0
 
-    .line 1152
+    .line 1157
     iput-object p1, p0, Ljp/co/sony/mc/camera/view/widget/DialPicker$SnapScrollingLayoutManager;->this$0:Ljp/co/sony/mc/camera/view/widget/DialPicker;
 
     const/4 p1, 0x0
 
-    .line 1153
+    .line 1158
     invoke-direct {p0, p2, p1, p1}, Landroidx/recyclerview/widget/LinearLayoutManager;-><init>(Landroid/content/Context;IZ)V
 
     return-void
@@ -50,12 +48,12 @@
 .method public onLayoutChildren(Landroidx/recyclerview/widget/RecyclerView$Recycler;Landroidx/recyclerview/widget/RecyclerView$State;)V
     .locals 1
 
-    .line 1173
+    .line 1178
     invoke-super {p0, p1, p2}, Landroidx/recyclerview/widget/LinearLayoutManager;->onLayoutChildren(Landroidx/recyclerview/widget/RecyclerView$Recycler;Landroidx/recyclerview/widget/RecyclerView$State;)V
 
     const/4 v0, 0x0
 
-    .line 1174
+    .line 1179
     invoke-virtual {p0, v0, p1, p2}, Ljp/co/sony/mc/camera/view/widget/DialPicker$SnapScrollingLayoutManager;->scrollHorizontallyBy(ILandroidx/recyclerview/widget/RecyclerView$Recycler;Landroidx/recyclerview/widget/RecyclerView$State;)I
 
     return-void
@@ -64,17 +62,8 @@
 .method setSnapHelper(Ljp/co/sony/mc/camera/view/widget/DialPicker$HorizontalCenterSnapHelper;)V
     .locals 0
 
-    .line 1187
+    .line 1188
     iput-object p1, p0, Ljp/co/sony/mc/camera/view/widget/DialPicker$SnapScrollingLayoutManager;->mSnapHelper:Ljp/co/sony/mc/camera/view/widget/DialPicker$HorizontalCenterSnapHelper;
-
-    return-void
-.end method
-
-.method setViewKind(Ljp/co/sony/mc/camera/view/widget/DialPicker$ViewKind;)V
-    .locals 0
-
-    .line 1183
-    iput-object p1, p0, Ljp/co/sony/mc/camera/view/widget/DialPicker$SnapScrollingLayoutManager;->mViewKind:Ljp/co/sony/mc/camera/view/widget/DialPicker$ViewKind;
 
     return-void
 .end method
@@ -84,7 +73,7 @@
 
     if-ltz p3, :cond_2
 
-    .line 1159
+    .line 1164
     invoke-virtual {p2}, Landroidx/recyclerview/widget/RecyclerView$State;->getItemCount()I
 
     move-result v0
@@ -93,27 +82,27 @@
 
     goto :goto_0
 
-    .line 1162
+    .line 1167
     :cond_0
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/widget/DialPicker$SnapScrollingLayoutManager;->mSnapHelper:Ljp/co/sony/mc/camera/view/widget/DialPicker$HorizontalCenterSnapHelper;
 
     if-nez v0, :cond_1
 
-    .line 1163
+    .line 1168
     invoke-super {p0, p1, p2, p3}, Landroidx/recyclerview/widget/LinearLayoutManager;->smoothScrollToPosition(Landroidx/recyclerview/widget/RecyclerView;Landroidx/recyclerview/widget/RecyclerView$State;I)V
 
     return-void
 
-    .line 1166
+    .line 1171
     :cond_1
     invoke-virtual {v0, p0}, Ljp/co/sony/mc/camera/view/widget/DialPicker$HorizontalCenterSnapHelper;->createScroller(Landroidx/recyclerview/widget/RecyclerView$LayoutManager;)Landroidx/recyclerview/widget/RecyclerView$SmoothScroller;
 
     move-result-object p1
 
-    .line 1167
+    .line 1172
     invoke-virtual {p1, p3}, Landroidx/recyclerview/widget/RecyclerView$SmoothScroller;->setTargetPosition(I)V
 
-    .line 1168
+    .line 1173
     invoke-virtual {p0, p1}, Ljp/co/sony/mc/camera/view/widget/DialPicker$SnapScrollingLayoutManager;->startSmoothScroll(Landroidx/recyclerview/widget/RecyclerView$SmoothScroller;)V
 
     :cond_2

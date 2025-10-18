@@ -48,8 +48,6 @@
 
 
 # instance fields
-.field final synthetic $$dirty:I
-
 .field final synthetic $indicator:Lkotlin/jvm/functions/Function3;
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -77,7 +75,7 @@
 
 
 # direct methods
-.method constructor <init>(Lkotlin/jvm/functions/Function3;Ljava/util/List;I)V
+.method constructor <init>(Lkotlin/jvm/functions/Function3;Ljava/util/List;)V
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -94,15 +92,13 @@
             ">;",
             "Ljava/util/List<",
             "Landroidx/compose/material/TabPosition;",
-            ">;I)V"
+            ">;)V"
         }
     .end annotation
 
     iput-object p1, p0, Landroidx/compose/material/TabRowKt$ScrollableTabRow$2$1$2$3;->$indicator:Lkotlin/jvm/functions/Function3;
 
     iput-object p2, p0, Landroidx/compose/material/TabRowKt$ScrollableTabRow$2$1$2$3;->$tabPositions:Ljava/util/List;
-
-    iput p3, p0, Landroidx/compose/material/TabRowKt$ScrollableTabRow$2$1$2$3;->$$dirty:I
 
     const/4 p1, 0x2
 
@@ -116,7 +112,7 @@
 .method public bridge synthetic invoke(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
 
-    .line 301
+    .line 305
     check-cast p1, Landroidx/compose/runtime/Composer;
 
     check-cast p2, Ljava/lang/Number;
@@ -135,7 +131,7 @@
 .method public final invoke(Landroidx/compose/runtime/Composer;I)V
     .locals 3
 
-    const-string v0, "C301@14237L23:TabRow.kt#jmzs0o"
+    const-string v0, "C305@14444L23:TabRow.kt#jmzs0o"
 
     invoke-static {p1, v0}, Landroidx/compose/runtime/ComposerKt;->sourceInformation(Landroidx/compose/runtime/Composer;Ljava/lang/String;)V
 
@@ -145,7 +141,7 @@
 
     if-ne v0, v1, :cond_1
 
-    .line 302
+    .line 306
     invoke-interface {p1}, Landroidx/compose/runtime/Composer;->getSkipping()Z
 
     move-result v0
@@ -169,30 +165,24 @@
 
     const/4 v0, -0x1
 
-    const-string v1, "androidx.compose.material.ScrollableTabRow.<anonymous>.<anonymous>.<anonymous>.<anonymous> (TabRow.kt:300)"
+    const-string v1, "androidx.compose.material.ScrollableTabRow.<anonymous>.<anonymous>.<anonymous>.<anonymous> (TabRow.kt:305)"
 
-    const v2, 0xdc14255
+    const v2, -0x188c9ea7
 
     invoke-static {v2, p2, v0, v1}, Landroidx/compose/runtime/ComposerKt;->traceEventStart(IIILjava/lang/String;)V
 
     :cond_2
     iget-object p2, p0, Landroidx/compose/material/TabRowKt$ScrollableTabRow$2$1$2$3;->$indicator:Lkotlin/jvm/functions/Function3;
 
-    iget-object v0, p0, Landroidx/compose/material/TabRowKt$ScrollableTabRow$2$1$2$3;->$tabPositions:Ljava/util/List;
+    iget-object p0, p0, Landroidx/compose/material/TabRowKt$ScrollableTabRow$2$1$2$3;->$tabPositions:Ljava/util/List;
 
-    iget p0, p0, Landroidx/compose/material/TabRowKt$ScrollableTabRow$2$1$2$3;->$$dirty:I
+    const/16 v0, 0x8
 
-    shr-int/lit8 p0, p0, 0xc
+    invoke-static {v0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
-    and-int/lit8 p0, p0, 0x70
+    move-result-object v0
 
-    or-int/lit8 p0, p0, 0x8
-
-    invoke-static {p0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
-
-    move-result-object p0
-
-    invoke-interface {p2, v0, p1, p0}, Lkotlin/jvm/functions/Function3;->invoke(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-interface {p2, p0, p1, v0}, Lkotlin/jvm/functions/Function3;->invoke(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     invoke-static {}, Landroidx/compose/runtime/ComposerKt;->isTraceInProgress()Z
 

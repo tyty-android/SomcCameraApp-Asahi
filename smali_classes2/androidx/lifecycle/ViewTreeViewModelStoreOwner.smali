@@ -1,6 +1,6 @@
 .class public final Landroidx/lifecycle/ViewTreeViewModelStoreOwner;
 .super Ljava/lang/Object;
-.source "ViewTreeViewModelStoreOwner.kt"
+.source "ViewTreeViewModelStoreOwner.android.kt"
 
 
 # annotations

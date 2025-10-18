@@ -25,7 +25,7 @@
 .method constructor <init>(Ljp/co/sony/mc/camera/CameraActivity;)V
     .locals 0
 
-    .line 747
+    .line 753
     iput-object p1, p0, Ljp/co/sony/mc/camera/CameraActivity$8;->this$0:Ljp/co/sony/mc/camera/CameraActivity;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -36,9 +36,9 @@
 
 # virtual methods
 .method public onStorageReadyStateChanged(Ljp/co/sony/mc/camera/storage/Storage$StorageType;Ljp/co/sony/mc/camera/storage/Storage$StorageReadyState;)V
-    .locals 0
+    .locals 1
 
-    .line 753
+    .line 759
     iget-object p1, p0, Ljp/co/sony/mc/camera/CameraActivity$8;->this$0:Ljp/co/sony/mc/camera/CameraActivity;
 
     invoke-static {p1}, Ljp/co/sony/mc/camera/CameraActivity;->-$$Nest$fgetmStorage(Ljp/co/sony/mc/camera/CameraActivity;)Ljp/co/sony/mc/camera/storage/Storage;
@@ -51,21 +51,25 @@
 
     if-eqz p1, :cond_1
 
-    .line 754
+    .line 760
     sget-boolean p1, Ljp/co/sony/mc/camera/util/CamLog;->DEBUG:Z
 
     if-eqz p1, :cond_0
 
-    .line 755
-    const-string p1, "onStorageReadyStateChanged: Storage can be readable, Got to setupAll"
+    const/4 p1, 0x1
 
-    filled-new-array {p1}, [Ljava/lang/String;
+    .line 761
+    new-array p1, p1, [Ljava/lang/String;
 
-    move-result-object p1
+    const/4 p2, 0x0
+
+    const-string v0, "onStorageReadyStateChanged: Storage can be readable, Got to setupAll"
+
+    aput-object v0, p1, p2
 
     invoke-static {p1}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
-    .line 760
+    .line 766
     :cond_0
     invoke-static {}, Ljp/co/sony/mc/camera/CameraApplication;->getUiThreadHandler()Landroid/os/Handler;
 

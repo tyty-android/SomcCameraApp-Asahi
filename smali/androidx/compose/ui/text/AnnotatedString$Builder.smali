@@ -23,7 +23,7 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/SourceDebugExtension;
-    value = "SMAP\nAnnotatedString.kt\nKotlin\n*S Kotlin\n*F\n+ 1 AnnotatedString.kt\nandroidx/compose/ui/text/AnnotatedString$Builder\n+ 2 ListUtils.kt\nandroidx/compose/ui/util/ListUtilsKt\n+ 3 fake.kt\nkotlin/jvm/internal/FakeKt\n*L\n1#1,1126:1\n33#2,6:1127\n33#2,6:1133\n33#2,6:1139\n33#2,6:1145\n33#2,6:1151\n33#2,6:1157\n151#2,3:1164\n33#2,4:1167\n154#2,2:1171\n38#2:1173\n156#2:1174\n151#2,3:1175\n33#2,4:1178\n154#2,2:1182\n38#2:1184\n156#2:1185\n151#2,3:1186\n33#2,4:1189\n154#2,2:1193\n38#2:1195\n156#2:1196\n1#3:1163\n*S KotlinDebug\n*F\n+ 1 AnnotatedString.kt\nandroidx/compose/ui/text/AnnotatedString$Builder\n*L\n396#1:1127,6\n399#1:1133,6\n403#1:1139,6\n423#1:1145,6\n426#1:1151,6\n430#1:1157,6\n640#1:1164,3\n640#1:1167,4\n640#1:1171,2\n640#1:1173\n640#1:1174\n643#1:1175,3\n643#1:1178,4\n643#1:1182,2\n643#1:1184\n643#1:1185\n646#1:1186,3\n646#1:1189,4\n646#1:1193,2\n646#1:1195\n646#1:1196\n*E\n"
+    value = "SMAP\nAnnotatedString.kt\nKotlin\n*S Kotlin\n*F\n+ 1 AnnotatedString.kt\nandroidx/compose/ui/text/AnnotatedString$Builder\n+ 2 ListUtils.kt\nandroidx/compose/ui/util/ListUtilsKt\n+ 3 fake.kt\nkotlin/jvm/internal/FakeKt\n*L\n1#1,1128:1\n33#2,6:1129\n33#2,6:1135\n33#2,6:1141\n33#2,6:1147\n33#2,6:1153\n33#2,6:1159\n151#2,3:1166\n33#2,4:1169\n154#2,2:1173\n38#2:1175\n156#2:1176\n151#2,3:1177\n33#2,4:1180\n154#2,2:1184\n38#2:1186\n156#2:1187\n151#2,3:1188\n33#2,4:1191\n154#2,2:1195\n38#2:1197\n156#2:1198\n1#3:1165\n*S KotlinDebug\n*F\n+ 1 AnnotatedString.kt\nandroidx/compose/ui/text/AnnotatedString$Builder\n*L\n397#1:1129,6\n400#1:1135,6\n404#1:1141,6\n424#1:1147,6\n427#1:1153,6\n431#1:1159,6\n641#1:1166,3\n641#1:1169,4\n641#1:1173,2\n641#1:1175\n641#1:1176\n644#1:1177,3\n644#1:1180,4\n644#1:1184,2\n644#1:1186\n644#1:1187\n647#1:1188,3\n647#1:1191,4\n647#1:1195,2\n647#1:1197\n647#1:1198\n*E\n"
 .end annotation
 
 .annotation runtime Lkotlin/Metadata;
@@ -173,24 +173,15 @@
 .method public constructor <init>(I)V
     .locals 1
 
-    .line 272
+    .line 273
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 292
+    .line 293
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0, p1}, Ljava/lang/StringBuilder;-><init>(I)V
 
     iput-object v0, p0, Landroidx/compose/ui/text/AnnotatedString$Builder;->text:Ljava/lang/StringBuilder;
-
-    .line 293
-    new-instance p1, Ljava/util/ArrayList;
-
-    invoke-direct {p1}, Ljava/util/ArrayList;-><init>()V
-
-    check-cast p1, Ljava/util/List;
-
-    iput-object p1, p0, Landroidx/compose/ui/text/AnnotatedString$Builder;->spanStyles:Ljava/util/List;
 
     .line 294
     new-instance p1, Ljava/util/ArrayList;
@@ -199,7 +190,7 @@
 
     check-cast p1, Ljava/util/List;
 
-    iput-object p1, p0, Landroidx/compose/ui/text/AnnotatedString$Builder;->paragraphStyles:Ljava/util/List;
+    iput-object p1, p0, Landroidx/compose/ui/text/AnnotatedString$Builder;->spanStyles:Ljava/util/List;
 
     .line 295
     new-instance p1, Ljava/util/ArrayList;
@@ -208,9 +199,18 @@
 
     check-cast p1, Ljava/util/List;
 
-    iput-object p1, p0, Landroidx/compose/ui/text/AnnotatedString$Builder;->annotations:Ljava/util/List;
+    iput-object p1, p0, Landroidx/compose/ui/text/AnnotatedString$Builder;->paragraphStyles:Ljava/util/List;
 
     .line 296
+    new-instance p1, Ljava/util/ArrayList;
+
+    invoke-direct {p1}, Ljava/util/ArrayList;-><init>()V
+
+    check-cast p1, Ljava/util/List;
+
+    iput-object p1, p0, Landroidx/compose/ui/text/AnnotatedString$Builder;->annotations:Ljava/util/List;
+
+    .line 297
     new-instance p1, Ljava/util/ArrayList;
 
     invoke-direct {p1}, Ljava/util/ArrayList;-><init>()V
@@ -231,7 +231,7 @@
 
     const/16 p1, 0x10
 
-    .line 272
+    .line 273
     :cond_0
     invoke-direct {p0, p1}, Landroidx/compose/ui/text/AnnotatedString$Builder;-><init>(I)V
 
@@ -241,20 +241,16 @@
 .method public constructor <init>(Landroidx/compose/ui/text/AnnotatedString;)V
     .locals 3
 
-    const-string/jumbo v0, "text"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
     const/4 v0, 0x1
 
     const/4 v1, 0x0
 
     const/4 v2, 0x0
 
-    .line 308
+    .line 309
     invoke-direct {p0, v2, v0, v1}, Landroidx/compose/ui/text/AnnotatedString$Builder;-><init>(IILkotlin/jvm/internal/DefaultConstructorMarker;)V
 
-    .line 309
+    .line 310
     invoke-virtual {p0, p1}, Landroidx/compose/ui/text/AnnotatedString$Builder;->append(Landroidx/compose/ui/text/AnnotatedString;)V
 
     return-void
@@ -263,20 +259,16 @@
 .method public constructor <init>(Ljava/lang/String;)V
     .locals 3
 
-    const-string/jumbo v0, "text"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
     const/4 v0, 0x1
 
     const/4 v1, 0x0
 
     const/4 v2, 0x0
 
-    .line 301
+    .line 302
     invoke-direct {p0, v2, v0, v1}, Landroidx/compose/ui/text/AnnotatedString$Builder;-><init>(IILkotlin/jvm/internal/DefaultConstructorMarker;)V
 
-    .line 302
+    .line 303
     invoke-virtual {p0, p1}, Landroidx/compose/ui/text/AnnotatedString$Builder;->append(Ljava/lang/String;)V
 
     return-void
@@ -287,15 +279,7 @@
 .method public final addStringAnnotation(Ljava/lang/String;Ljava/lang/String;II)V
     .locals 1
 
-    const-string/jumbo v0, "tag"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string v0, "annotation"
-
-    invoke-static {p2, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 476
+    .line 477
     iget-object p0, p0, Landroidx/compose/ui/text/AnnotatedString$Builder;->annotations:Ljava/util/List;
 
     new-instance v0, Landroidx/compose/ui/text/AnnotatedString$Builder$MutableRange;
@@ -310,11 +294,7 @@
 .method public final addStyle(Landroidx/compose/ui/text/ParagraphStyle;II)V
     .locals 8
 
-    const-string/jumbo v0, "style"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 462
+    .line 463
     iget-object p0, p0, Landroidx/compose/ui/text/AnnotatedString$Builder;->paragraphStyles:Ljava/util/List;
 
     new-instance v7, Landroidx/compose/ui/text/AnnotatedString$Builder$MutableRange;
@@ -343,11 +323,7 @@
 .method public final addStyle(Landroidx/compose/ui/text/SpanStyle;II)V
     .locals 8
 
-    const-string/jumbo v0, "style"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 450
+    .line 451
     iget-object p0, p0, Landroidx/compose/ui/text/AnnotatedString$Builder;->spanStyles:Ljava/util/List;
 
     new-instance v7, Landroidx/compose/ui/text/AnnotatedString$Builder$MutableRange;
@@ -376,11 +352,7 @@
 .method public final addTtsAnnotation(Landroidx/compose/ui/text/TtsAnnotation;II)V
     .locals 8
 
-    const-string/jumbo v0, "ttsAnnotation"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 492
+    .line 493
     iget-object p0, p0, Landroidx/compose/ui/text/AnnotatedString$Builder;->annotations:Ljava/util/List;
 
     new-instance v7, Landroidx/compose/ui/text/AnnotatedString$Builder$MutableRange;
@@ -409,11 +381,7 @@
 .method public final addUrlAnnotation(Landroidx/compose/ui/text/UrlAnnotation;II)V
     .locals 8
 
-    const-string/jumbo v0, "urlAnnotation"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 509
+    .line 510
     iget-object p0, p0, Landroidx/compose/ui/text/AnnotatedString$Builder;->annotations:Ljava/util/List;
 
     new-instance v7, Landroidx/compose/ui/text/AnnotatedString$Builder$MutableRange;
@@ -442,7 +410,7 @@
 .method public append(C)Landroidx/compose/ui/text/AnnotatedString$Builder;
     .locals 1
 
-    .line 383
+    .line 384
     iget-object v0, p0, Landroidx/compose/ui/text/AnnotatedString$Builder;->text:Ljava/lang/StringBuilder;
 
     invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
@@ -453,19 +421,19 @@
 .method public append(Ljava/lang/CharSequence;)Landroidx/compose/ui/text/AnnotatedString$Builder;
     .locals 1
 
-    .line 349
+    .line 350
     instance-of v0, p1, Landroidx/compose/ui/text/AnnotatedString;
 
     if-eqz v0, :cond_0
 
-    .line 350
+    .line 351
     check-cast p1, Landroidx/compose/ui/text/AnnotatedString;
 
     invoke-virtual {p0, p1}, Landroidx/compose/ui/text/AnnotatedString$Builder;->append(Landroidx/compose/ui/text/AnnotatedString;)V
 
     goto :goto_0
 
-    .line 352
+    .line 353
     :cond_0
     iget-object v0, p0, Landroidx/compose/ui/text/AnnotatedString$Builder;->text:Ljava/lang/StringBuilder;
 
@@ -478,19 +446,19 @@
 .method public append(Ljava/lang/CharSequence;II)Landroidx/compose/ui/text/AnnotatedString$Builder;
     .locals 1
 
-    .line 373
+    .line 374
     instance-of v0, p1, Landroidx/compose/ui/text/AnnotatedString;
 
     if-eqz v0, :cond_0
 
-    .line 374
+    .line 375
     check-cast p1, Landroidx/compose/ui/text/AnnotatedString;
 
     invoke-virtual {p0, p1, p2, p3}, Landroidx/compose/ui/text/AnnotatedString$Builder;->append(Landroidx/compose/ui/text/AnnotatedString;II)V
 
     goto :goto_0
 
-    .line 376
+    .line 377
     :cond_0
     iget-object v0, p0, Landroidx/compose/ui/text/AnnotatedString$Builder;->text:Ljava/lang/StringBuilder;
 
@@ -503,7 +471,7 @@
 .method public bridge synthetic append(C)Ljava/lang/Appendable;
     .locals 0
 
-    .line 272
+    .line 273
     invoke-virtual {p0, p1}, Landroidx/compose/ui/text/AnnotatedString$Builder;->append(C)Landroidx/compose/ui/text/AnnotatedString$Builder;
 
     move-result-object p0
@@ -516,7 +484,7 @@
 .method public bridge synthetic append(Ljava/lang/CharSequence;)Ljava/lang/Appendable;
     .locals 0
 
-    .line 272
+    .line 273
     invoke-virtual {p0, p1}, Landroidx/compose/ui/text/AnnotatedString$Builder;->append(Ljava/lang/CharSequence;)Landroidx/compose/ui/text/AnnotatedString$Builder;
 
     move-result-object p0
@@ -529,7 +497,7 @@
 .method public bridge synthetic append(Ljava/lang/CharSequence;II)Ljava/lang/Appendable;
     .locals 0
 
-    .line 272
+    .line 273
     invoke-virtual {p0, p1, p2, p3}, Landroidx/compose/ui/text/AnnotatedString$Builder;->append(Ljava/lang/CharSequence;II)Landroidx/compose/ui/text/AnnotatedString$Builder;
 
     move-result-object p0
@@ -546,7 +514,7 @@
         message = "Replaced by the append(Char) method that returns an Appendable. This method must be kept around for binary compatibility."
     .end annotation
 
-    .line 335
+    .line 336
     invoke-virtual {p0, p1}, Landroidx/compose/ui/text/AnnotatedString$Builder;->append(C)Landroidx/compose/ui/text/AnnotatedString$Builder;
 
     return-void
@@ -555,18 +523,14 @@
 .method public final append(Landroidx/compose/ui/text/AnnotatedString;)V
     .locals 9
 
-    const-string/jumbo v0, "text"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 393
+    .line 394
     iget-object v0, p0, Landroidx/compose/ui/text/AnnotatedString$Builder;->text:Ljava/lang/StringBuilder;
 
     invoke-virtual {v0}, Ljava/lang/StringBuilder;->length()I
 
     move-result v0
 
-    .line 394
+    .line 395
     iget-object v1, p0, Landroidx/compose/ui/text/AnnotatedString$Builder;->text:Ljava/lang/StringBuilder;
 
     invoke-virtual {p1}, Landroidx/compose/ui/text/AnnotatedString;->getText()Ljava/lang/String;
@@ -575,7 +539,7 @@
 
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 396
+    .line 397
     invoke-virtual {p1}, Landroidx/compose/ui/text/AnnotatedString;->getSpanStylesOrNull$ui_text_release()Ljava/util/List;
 
     move-result-object v1
@@ -584,7 +548,7 @@
 
     if-eqz v1, :cond_0
 
-    .line 1128
+    .line 1130
     invoke-interface {v1}, Ljava/util/List;->size()I
 
     move-result v3
@@ -594,15 +558,15 @@
     :goto_0
     if-ge v4, v3, :cond_0
 
-    .line 1129
+    .line 1131
     invoke-interface {v1, v4}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
     move-result-object v5
 
-    .line 1130
+    .line 1132
     check-cast v5, Landroidx/compose/ui/text/AnnotatedString$Range;
 
-    .line 397
+    .line 398
     invoke-virtual {v5}, Landroidx/compose/ui/text/AnnotatedString$Range;->getItem()Ljava/lang/Object;
 
     move-result-object v6
@@ -627,7 +591,7 @@
 
     goto :goto_0
 
-    .line 399
+    .line 400
     :cond_0
     invoke-virtual {p1}, Landroidx/compose/ui/text/AnnotatedString;->getParagraphStylesOrNull$ui_text_release()Ljava/util/List;
 
@@ -635,7 +599,7 @@
 
     if-eqz v1, :cond_1
 
-    .line 1134
+    .line 1136
     invoke-interface {v1}, Ljava/util/List;->size()I
 
     move-result v3
@@ -645,15 +609,15 @@
     :goto_1
     if-ge v4, v3, :cond_1
 
-    .line 1135
+    .line 1137
     invoke-interface {v1, v4}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
     move-result-object v5
 
-    .line 1136
+    .line 1138
     check-cast v5, Landroidx/compose/ui/text/AnnotatedString$Range;
 
-    .line 400
+    .line 401
     invoke-virtual {v5}, Landroidx/compose/ui/text/AnnotatedString$Range;->getItem()Ljava/lang/Object;
 
     move-result-object v6
@@ -678,7 +642,7 @@
 
     goto :goto_1
 
-    .line 403
+    .line 404
     :cond_1
     invoke-virtual {p1}, Landroidx/compose/ui/text/AnnotatedString;->getAnnotations$ui_text_release()Ljava/util/List;
 
@@ -686,7 +650,7 @@
 
     if-eqz p1, :cond_2
 
-    .line 1140
+    .line 1142
     invoke-interface {p1}, Ljava/util/List;->size()I
 
     move-result v1
@@ -694,18 +658,18 @@
     :goto_2
     if-ge v2, v1, :cond_2
 
-    .line 1141
+    .line 1143
     invoke-interface {p1, v2}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
     move-result-object v3
 
-    .line 1142
+    .line 1144
     check-cast v3, Landroidx/compose/ui/text/AnnotatedString$Range;
 
-    .line 404
+    .line 405
     iget-object v4, p0, Landroidx/compose/ui/text/AnnotatedString$Builder;->annotations:Ljava/util/List;
 
-    .line 405
+    .line 406
     new-instance v5, Landroidx/compose/ui/text/AnnotatedString$Builder$MutableRange;
 
     invoke-virtual {v3}, Landroidx/compose/ui/text/AnnotatedString$Range;->getItem()Ljava/lang/Object;
@@ -730,7 +694,7 @@
 
     invoke-direct {v5, v6, v7, v8, v3}, Landroidx/compose/ui/text/AnnotatedString$Builder$MutableRange;-><init>(Ljava/lang/Object;IILjava/lang/String;)V
 
-    .line 404
+    .line 405
     invoke-interface {v4, v5}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
     add-int/lit8 v2, v2, 0x1
@@ -744,18 +708,14 @@
 .method public final append(Landroidx/compose/ui/text/AnnotatedString;II)V
     .locals 8
 
-    const-string/jumbo v0, "text"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 420
+    .line 421
     iget-object v0, p0, Landroidx/compose/ui/text/AnnotatedString$Builder;->text:Ljava/lang/StringBuilder;
 
     invoke-virtual {v0}, Ljava/lang/StringBuilder;->length()I
 
     move-result v0
 
-    .line 421
+    .line 422
     iget-object v1, p0, Landroidx/compose/ui/text/AnnotatedString$Builder;->text:Ljava/lang/StringBuilder;
 
     invoke-virtual {p1}, Landroidx/compose/ui/text/AnnotatedString;->getText()Ljava/lang/String;
@@ -766,7 +726,7 @@
 
     invoke-virtual {v1, v2, p2, p3}, Ljava/lang/StringBuilder;->append(Ljava/lang/CharSequence;II)Ljava/lang/StringBuilder;
 
-    .line 423
+    .line 424
     invoke-static {p1, p2, p3}, Landroidx/compose/ui/text/AnnotatedStringKt;->access$getLocalSpanStyles(Landroidx/compose/ui/text/AnnotatedString;II)Ljava/util/List;
 
     move-result-object v1
@@ -775,7 +735,7 @@
 
     if-eqz v1, :cond_0
 
-    .line 1146
+    .line 1148
     invoke-interface {v1}, Ljava/util/List;->size()I
 
     move-result v3
@@ -785,15 +745,15 @@
     :goto_0
     if-ge v4, v3, :cond_0
 
-    .line 1147
+    .line 1149
     invoke-interface {v1, v4}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
     move-result-object v5
 
-    .line 1148
+    .line 1150
     check-cast v5, Landroidx/compose/ui/text/AnnotatedString$Range;
 
-    .line 424
+    .line 425
     invoke-virtual {v5}, Landroidx/compose/ui/text/AnnotatedString$Range;->getItem()Ljava/lang/Object;
 
     move-result-object v6
@@ -818,7 +778,7 @@
 
     goto :goto_0
 
-    .line 426
+    .line 427
     :cond_0
     invoke-static {p1, p2, p3}, Landroidx/compose/ui/text/AnnotatedStringKt;->access$getLocalParagraphStyles(Landroidx/compose/ui/text/AnnotatedString;II)Ljava/util/List;
 
@@ -826,7 +786,7 @@
 
     if-eqz v1, :cond_1
 
-    .line 1152
+    .line 1154
     invoke-interface {v1}, Ljava/util/List;->size()I
 
     move-result v3
@@ -836,15 +796,15 @@
     :goto_1
     if-ge v4, v3, :cond_1
 
-    .line 1153
+    .line 1155
     invoke-interface {v1, v4}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
     move-result-object v5
 
-    .line 1154
+    .line 1156
     check-cast v5, Landroidx/compose/ui/text/AnnotatedString$Range;
 
-    .line 427
+    .line 428
     invoke-virtual {v5}, Landroidx/compose/ui/text/AnnotatedString$Range;->getItem()Ljava/lang/Object;
 
     move-result-object v6
@@ -869,7 +829,7 @@
 
     goto :goto_1
 
-    .line 430
+    .line 431
     :cond_1
     invoke-static {p1, p2, p3}, Landroidx/compose/ui/text/AnnotatedStringKt;->access$getLocalAnnotations(Landroidx/compose/ui/text/AnnotatedString;II)Ljava/util/List;
 
@@ -877,7 +837,7 @@
 
     if-eqz p1, :cond_2
 
-    .line 1158
+    .line 1160
     invoke-interface {p1}, Ljava/util/List;->size()I
 
     move-result p2
@@ -885,48 +845,48 @@
     :goto_2
     if-ge v2, p2, :cond_2
 
-    .line 1159
+    .line 1161
     invoke-interface {p1, v2}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
     move-result-object p3
 
-    .line 1160
+    .line 1162
     check-cast p3, Landroidx/compose/ui/text/AnnotatedString$Range;
 
-    .line 431
+    .line 432
     iget-object v1, p0, Landroidx/compose/ui/text/AnnotatedString$Builder;->annotations:Ljava/util/List;
 
-    .line 432
+    .line 433
     new-instance v3, Landroidx/compose/ui/text/AnnotatedString$Builder$MutableRange;
 
-    .line 433
+    .line 434
     invoke-virtual {p3}, Landroidx/compose/ui/text/AnnotatedString$Range;->getItem()Ljava/lang/Object;
 
     move-result-object v4
 
-    .line 434
+    .line 435
     invoke-virtual {p3}, Landroidx/compose/ui/text/AnnotatedString$Range;->getStart()I
 
     move-result v5
 
     add-int/2addr v5, v0
 
-    .line 435
+    .line 436
     invoke-virtual {p3}, Landroidx/compose/ui/text/AnnotatedString$Range;->getEnd()I
 
     move-result v6
 
     add-int/2addr v6, v0
 
-    .line 436
+    .line 437
     invoke-virtual {p3}, Landroidx/compose/ui/text/AnnotatedString$Range;->getTag()Ljava/lang/String;
 
     move-result-object p3
 
-    .line 432
+    .line 433
     invoke-direct {v3, v4, v5, v6, p3}, Landroidx/compose/ui/text/AnnotatedString$Builder$MutableRange;-><init>(Ljava/lang/Object;IILjava/lang/String;)V
 
-    .line 431
+    .line 432
     invoke-interface {v1, v3}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
     add-int/lit8 v2, v2, 0x1
@@ -938,13 +898,9 @@
 .end method
 
 .method public final append(Ljava/lang/String;)V
-    .locals 1
+    .locals 0
 
-    const-string/jumbo v0, "text"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 323
+    .line 324
     iget-object p0, p0, Landroidx/compose/ui/text/AnnotatedString$Builder;->text:Ljava/lang/StringBuilder;
 
     invoke-virtual {p0, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
@@ -955,7 +911,7 @@
 .method public final getLength()I
     .locals 0
 
-    .line 315
+    .line 316
     iget-object p0, p0, Landroidx/compose/ui/text/AnnotatedString$Builder;->text:Ljava/lang/StringBuilder;
 
     invoke-virtual {p0}, Ljava/lang/StringBuilder;->length()I
@@ -968,7 +924,7 @@
 .method public final pop()V
     .locals 2
 
-    .line 609
+    .line 610
     iget-object v0, p0, Landroidx/compose/ui/text/AnnotatedString$Builder;->styleStack:Ljava/util/List;
 
     check-cast v0, Ljava/util/Collection;
@@ -981,7 +937,7 @@
 
     if-eqz v0, :cond_0
 
-    .line 611
+    .line 612
     iget-object v0, p0, Landroidx/compose/ui/text/AnnotatedString$Builder;->styleStack:Ljava/util/List;
 
     invoke-interface {v0}, Ljava/util/List;->size()I
@@ -996,7 +952,7 @@
 
     check-cast v0, Landroidx/compose/ui/text/AnnotatedString$Builder$MutableRange;
 
-    .line 612
+    .line 613
     iget-object p0, p0, Landroidx/compose/ui/text/AnnotatedString$Builder;->text:Ljava/lang/StringBuilder;
 
     invoke-virtual {p0}, Ljava/lang/StringBuilder;->length()I
@@ -1007,7 +963,7 @@
 
     return-void
 
-    .line 609
+    .line 610
     :cond_0
     new-instance p0, Ljava/lang/IllegalStateException;
 
@@ -1025,7 +981,7 @@
 .method public final pop(I)V
     .locals 1
 
-    .line 627
+    .line 628
     iget-object v0, p0, Landroidx/compose/ui/text/AnnotatedString$Builder;->styleStack:Ljava/util/List;
 
     invoke-interface {v0}, Ljava/util/List;->size()I
@@ -1034,7 +990,7 @@
 
     if-ge p1, v0, :cond_1
 
-    .line 628
+    .line 629
     :goto_0
     iget-object v0, p0, Landroidx/compose/ui/text/AnnotatedString$Builder;->styleStack:Ljava/util/List;
 
@@ -1046,7 +1002,7 @@
 
     if-lt v0, p1, :cond_0
 
-    .line 629
+    .line 630
     invoke-virtual {p0}, Landroidx/compose/ui/text/AnnotatedString$Builder;->pop()V
 
     goto :goto_0
@@ -1054,7 +1010,7 @@
     :cond_0
     return-void
 
-    .line 627
+    .line 628
     :cond_1
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -1098,48 +1054,40 @@
 .method public final pushStringAnnotation(Ljava/lang/String;Ljava/lang/String;)I
     .locals 8
 
-    const-string/jumbo v0, "tag"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string v0, "annotation"
-
-    invoke-static {p2, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 556
-    new-instance v0, Landroidx/compose/ui/text/AnnotatedString$Builder$MutableRange;
-
-    iget-object v1, p0, Landroidx/compose/ui/text/AnnotatedString$Builder;->text:Ljava/lang/StringBuilder;
-
-    invoke-virtual {v1}, Ljava/lang/StringBuilder;->length()I
-
-    move-result v3
-
-    const/4 v6, 0x4
-
-    const/4 v7, 0x0
-
-    const/4 v4, 0x0
-
-    move-object v1, v0
-
-    move-object v2, p2
-
-    move-object v5, p1
-
-    invoke-direct/range {v1 .. v7}, Landroidx/compose/ui/text/AnnotatedString$Builder$MutableRange;-><init>(Ljava/lang/Object;IILjava/lang/String;ILkotlin/jvm/internal/DefaultConstructorMarker;)V
-
     .line 557
-    iget-object p1, p0, Landroidx/compose/ui/text/AnnotatedString$Builder;->styleStack:Ljava/util/List;
+    new-instance v7, Landroidx/compose/ui/text/AnnotatedString$Builder$MutableRange;
 
-    invoke-interface {p1, v0}, Ljava/util/List;->add(Ljava/lang/Object;)Z
+    iget-object v0, p0, Landroidx/compose/ui/text/AnnotatedString$Builder;->text:Ljava/lang/StringBuilder;
+
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->length()I
+
+    move-result v2
+
+    const/4 v5, 0x4
+
+    const/4 v6, 0x0
+
+    const/4 v3, 0x0
+
+    move-object v0, v7
+
+    move-object v1, p2
+
+    move-object v4, p1
+
+    invoke-direct/range {v0 .. v6}, Landroidx/compose/ui/text/AnnotatedString$Builder$MutableRange;-><init>(Ljava/lang/Object;IILjava/lang/String;ILkotlin/jvm/internal/DefaultConstructorMarker;)V
 
     .line 558
+    iget-object p1, p0, Landroidx/compose/ui/text/AnnotatedString$Builder;->styleStack:Ljava/util/List;
+
+    invoke-interface {p1, v7}, Ljava/util/List;->add(Ljava/lang/Object;)Z
+
+    .line 559
     iget-object p1, p0, Landroidx/compose/ui/text/AnnotatedString$Builder;->annotations:Ljava/util/List;
 
-    invoke-interface {p1, v0}, Ljava/util/List;->add(Ljava/lang/Object;)Z
+    invoke-interface {p1, v7}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    .line 560
+    .line 561
     iget-object p0, p0, Landroidx/compose/ui/text/AnnotatedString$Builder;->styleStack:Ljava/util/List;
 
     invoke-interface {p0}, Ljava/util/List;->size()I
@@ -1154,44 +1102,40 @@
 .method public final pushStyle(Landroidx/compose/ui/text/ParagraphStyle;)I
     .locals 8
 
-    const-string/jumbo v0, "style"
+    .line 538
+    new-instance v7, Landroidx/compose/ui/text/AnnotatedString$Builder$MutableRange;
 
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+    iget-object v0, p0, Landroidx/compose/ui/text/AnnotatedString$Builder;->text:Ljava/lang/StringBuilder;
 
-    .line 537
-    new-instance v0, Landroidx/compose/ui/text/AnnotatedString$Builder$MutableRange;
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->length()I
 
-    iget-object v1, p0, Landroidx/compose/ui/text/AnnotatedString$Builder;->text:Ljava/lang/StringBuilder;
+    move-result v2
 
-    invoke-virtual {v1}, Ljava/lang/StringBuilder;->length()I
+    const/16 v5, 0xc
 
-    move-result v3
+    const/4 v6, 0x0
 
-    const/16 v6, 0xc
-
-    const/4 v7, 0x0
+    const/4 v3, 0x0
 
     const/4 v4, 0x0
 
-    const/4 v5, 0x0
+    move-object v0, v7
 
-    move-object v1, v0
+    move-object v1, p1
 
-    move-object v2, p1
-
-    invoke-direct/range {v1 .. v7}, Landroidx/compose/ui/text/AnnotatedString$Builder$MutableRange;-><init>(Ljava/lang/Object;IILjava/lang/String;ILkotlin/jvm/internal/DefaultConstructorMarker;)V
-
-    .line 538
-    iget-object p1, p0, Landroidx/compose/ui/text/AnnotatedString$Builder;->styleStack:Ljava/util/List;
-
-    invoke-interface {p1, v0}, Ljava/util/List;->add(Ljava/lang/Object;)Z
+    invoke-direct/range {v0 .. v6}, Landroidx/compose/ui/text/AnnotatedString$Builder$MutableRange;-><init>(Ljava/lang/Object;IILjava/lang/String;ILkotlin/jvm/internal/DefaultConstructorMarker;)V
 
     .line 539
+    iget-object p1, p0, Landroidx/compose/ui/text/AnnotatedString$Builder;->styleStack:Ljava/util/List;
+
+    invoke-interface {p1, v7}, Ljava/util/List;->add(Ljava/lang/Object;)Z
+
+    .line 540
     iget-object p1, p0, Landroidx/compose/ui/text/AnnotatedString$Builder;->paragraphStyles:Ljava/util/List;
 
-    invoke-interface {p1, v0}, Ljava/util/List;->add(Ljava/lang/Object;)Z
+    invoke-interface {p1, v7}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    .line 541
+    .line 542
     iget-object p0, p0, Landroidx/compose/ui/text/AnnotatedString$Builder;->styleStack:Ljava/util/List;
 
     invoke-interface {p0}, Ljava/util/List;->size()I
@@ -1206,44 +1150,40 @@
 .method public final pushStyle(Landroidx/compose/ui/text/SpanStyle;)I
     .locals 8
 
-    const-string/jumbo v0, "style"
+    .line 522
+    new-instance v7, Landroidx/compose/ui/text/AnnotatedString$Builder$MutableRange;
 
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+    iget-object v0, p0, Landroidx/compose/ui/text/AnnotatedString$Builder;->text:Ljava/lang/StringBuilder;
 
-    .line 521
-    new-instance v0, Landroidx/compose/ui/text/AnnotatedString$Builder$MutableRange;
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->length()I
 
-    iget-object v1, p0, Landroidx/compose/ui/text/AnnotatedString$Builder;->text:Ljava/lang/StringBuilder;
+    move-result v2
 
-    invoke-virtual {v1}, Ljava/lang/StringBuilder;->length()I
+    const/16 v5, 0xc
 
-    move-result v3
+    const/4 v6, 0x0
 
-    const/16 v6, 0xc
-
-    const/4 v7, 0x0
+    const/4 v3, 0x0
 
     const/4 v4, 0x0
 
-    const/4 v5, 0x0
+    move-object v0, v7
 
-    move-object v1, v0
+    move-object v1, p1
 
-    move-object v2, p1
-
-    invoke-direct/range {v1 .. v7}, Landroidx/compose/ui/text/AnnotatedString$Builder$MutableRange;-><init>(Ljava/lang/Object;IILjava/lang/String;ILkotlin/jvm/internal/DefaultConstructorMarker;)V
-
-    .line 522
-    iget-object p1, p0, Landroidx/compose/ui/text/AnnotatedString$Builder;->styleStack:Ljava/util/List;
-
-    invoke-interface {p1, v0}, Ljava/util/List;->add(Ljava/lang/Object;)Z
+    invoke-direct/range {v0 .. v6}, Landroidx/compose/ui/text/AnnotatedString$Builder$MutableRange;-><init>(Ljava/lang/Object;IILjava/lang/String;ILkotlin/jvm/internal/DefaultConstructorMarker;)V
 
     .line 523
+    iget-object p1, p0, Landroidx/compose/ui/text/AnnotatedString$Builder;->styleStack:Ljava/util/List;
+
+    invoke-interface {p1, v7}, Ljava/util/List;->add(Ljava/lang/Object;)Z
+
+    .line 524
     iget-object p1, p0, Landroidx/compose/ui/text/AnnotatedString$Builder;->spanStyles:Ljava/util/List;
 
-    invoke-interface {p1, v0}, Ljava/util/List;->add(Ljava/lang/Object;)Z
+    invoke-interface {p1, v7}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    .line 525
+    .line 526
     iget-object p0, p0, Landroidx/compose/ui/text/AnnotatedString$Builder;->styleStack:Ljava/util/List;
 
     invoke-interface {p0}, Ljava/util/List;->size()I
@@ -1258,44 +1198,40 @@
 .method public final pushTtsAnnotation(Landroidx/compose/ui/text/TtsAnnotation;)I
     .locals 8
 
-    const-string/jumbo v0, "ttsAnnotation"
+    .line 576
+    new-instance v7, Landroidx/compose/ui/text/AnnotatedString$Builder$MutableRange;
 
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+    iget-object v0, p0, Landroidx/compose/ui/text/AnnotatedString$Builder;->text:Ljava/lang/StringBuilder;
 
-    .line 575
-    new-instance v0, Landroidx/compose/ui/text/AnnotatedString$Builder$MutableRange;
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->length()I
 
-    iget-object v1, p0, Landroidx/compose/ui/text/AnnotatedString$Builder;->text:Ljava/lang/StringBuilder;
+    move-result v2
 
-    invoke-virtual {v1}, Ljava/lang/StringBuilder;->length()I
+    const/16 v5, 0xc
 
-    move-result v3
+    const/4 v6, 0x0
 
-    const/16 v6, 0xc
-
-    const/4 v7, 0x0
+    const/4 v3, 0x0
 
     const/4 v4, 0x0
 
-    const/4 v5, 0x0
+    move-object v0, v7
 
-    move-object v1, v0
+    move-object v1, p1
 
-    move-object v2, p1
-
-    invoke-direct/range {v1 .. v7}, Landroidx/compose/ui/text/AnnotatedString$Builder$MutableRange;-><init>(Ljava/lang/Object;IILjava/lang/String;ILkotlin/jvm/internal/DefaultConstructorMarker;)V
-
-    .line 576
-    iget-object p1, p0, Landroidx/compose/ui/text/AnnotatedString$Builder;->styleStack:Ljava/util/List;
-
-    invoke-interface {p1, v0}, Ljava/util/List;->add(Ljava/lang/Object;)Z
+    invoke-direct/range {v0 .. v6}, Landroidx/compose/ui/text/AnnotatedString$Builder$MutableRange;-><init>(Ljava/lang/Object;IILjava/lang/String;ILkotlin/jvm/internal/DefaultConstructorMarker;)V
 
     .line 577
+    iget-object p1, p0, Landroidx/compose/ui/text/AnnotatedString$Builder;->styleStack:Ljava/util/List;
+
+    invoke-interface {p1, v7}, Ljava/util/List;->add(Ljava/lang/Object;)Z
+
+    .line 578
     iget-object p1, p0, Landroidx/compose/ui/text/AnnotatedString$Builder;->annotations:Ljava/util/List;
 
-    invoke-interface {p1, v0}, Ljava/util/List;->add(Ljava/lang/Object;)Z
+    invoke-interface {p1, v7}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    .line 579
+    .line 580
     iget-object p0, p0, Landroidx/compose/ui/text/AnnotatedString$Builder;->styleStack:Ljava/util/List;
 
     invoke-interface {p0}, Ljava/util/List;->size()I
@@ -1310,44 +1246,40 @@
 .method public final pushUrlAnnotation(Landroidx/compose/ui/text/UrlAnnotation;)I
     .locals 8
 
-    const-string/jumbo v0, "urlAnnotation"
+    .line 596
+    new-instance v7, Landroidx/compose/ui/text/AnnotatedString$Builder$MutableRange;
 
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+    iget-object v0, p0, Landroidx/compose/ui/text/AnnotatedString$Builder;->text:Ljava/lang/StringBuilder;
 
-    .line 595
-    new-instance v0, Landroidx/compose/ui/text/AnnotatedString$Builder$MutableRange;
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->length()I
 
-    iget-object v1, p0, Landroidx/compose/ui/text/AnnotatedString$Builder;->text:Ljava/lang/StringBuilder;
+    move-result v2
 
-    invoke-virtual {v1}, Ljava/lang/StringBuilder;->length()I
+    const/16 v5, 0xc
 
-    move-result v3
+    const/4 v6, 0x0
 
-    const/16 v6, 0xc
-
-    const/4 v7, 0x0
+    const/4 v3, 0x0
 
     const/4 v4, 0x0
 
-    const/4 v5, 0x0
+    move-object v0, v7
 
-    move-object v1, v0
+    move-object v1, p1
 
-    move-object v2, p1
-
-    invoke-direct/range {v1 .. v7}, Landroidx/compose/ui/text/AnnotatedString$Builder$MutableRange;-><init>(Ljava/lang/Object;IILjava/lang/String;ILkotlin/jvm/internal/DefaultConstructorMarker;)V
-
-    .line 596
-    iget-object p1, p0, Landroidx/compose/ui/text/AnnotatedString$Builder;->styleStack:Ljava/util/List;
-
-    invoke-interface {p1, v0}, Ljava/util/List;->add(Ljava/lang/Object;)Z
+    invoke-direct/range {v0 .. v6}, Landroidx/compose/ui/text/AnnotatedString$Builder$MutableRange;-><init>(Ljava/lang/Object;IILjava/lang/String;ILkotlin/jvm/internal/DefaultConstructorMarker;)V
 
     .line 597
+    iget-object p1, p0, Landroidx/compose/ui/text/AnnotatedString$Builder;->styleStack:Ljava/util/List;
+
+    invoke-interface {p1, v7}, Ljava/util/List;->add(Ljava/lang/Object;)Z
+
+    .line 598
     iget-object p1, p0, Landroidx/compose/ui/text/AnnotatedString$Builder;->annotations:Ljava/util/List;
 
-    invoke-interface {p1, v0}, Ljava/util/List;->add(Ljava/lang/Object;)Z
+    invoke-interface {p1, v7}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    .line 599
+    .line 600
     iget-object p0, p0, Landroidx/compose/ui/text/AnnotatedString$Builder;->styleStack:Ljava/util/List;
 
     invoke-interface {p0}, Ljava/util/List;->size()I
@@ -1362,21 +1294,17 @@
 .method public final toAnnotatedString()Landroidx/compose/ui/text/AnnotatedString;
     .locals 11
 
-    .line 638
+    .line 639
     iget-object v0, p0, Landroidx/compose/ui/text/AnnotatedString$Builder;->text:Ljava/lang/StringBuilder;
 
     invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object v0
 
-    const-string/jumbo v1, "text.toString()"
-
-    invoke-static {v0, v1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 639
+    .line 640
     iget-object v1, p0, Landroidx/compose/ui/text/AnnotatedString$Builder;->spanStyles:Ljava/util/List;
 
-    .line 1165
+    .line 1167
     new-instance v2, Ljava/util/ArrayList;
 
     invoke-interface {v1}, Ljava/util/List;->size()I
@@ -1385,7 +1313,7 @@
 
     invoke-direct {v2, v3}, Ljava/util/ArrayList;-><init>(I)V
 
-    .line 1168
+    .line 1170
     invoke-interface {v1}, Ljava/util/List;->size()I
 
     move-result v3
@@ -1397,19 +1325,19 @@
     :goto_0
     if-ge v5, v3, :cond_0
 
-    .line 1169
+    .line 1171
     invoke-interface {v1, v5}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
     move-result-object v6
 
-    .line 1171
+    .line 1173
     move-object v7, v2
 
     check-cast v7, Ljava/util/Collection;
 
     check-cast v6, Landroidx/compose/ui/text/AnnotatedString$Builder$MutableRange;
 
-    .line 640
+    .line 641
     iget-object v8, p0, Landroidx/compose/ui/text/AnnotatedString$Builder;->text:Ljava/lang/StringBuilder;
 
     invoke-virtual {v8}, Ljava/lang/StringBuilder;->length()I
@@ -1420,20 +1348,20 @@
 
     move-result-object v6
 
-    .line 1171
+    .line 1173
     invoke-interface {v7, v6}, Ljava/util/Collection;->add(Ljava/lang/Object;)Z
 
     add-int/lit8 v5, v5, 0x1
 
     goto :goto_0
 
-    .line 1174
+    .line 1176
     :cond_0
     check-cast v2, Ljava/util/List;
 
     check-cast v2, Ljava/util/Collection;
 
-    .line 641
+    .line 642
     invoke-interface {v2}, Ljava/util/Collection;->isEmpty()Z
 
     move-result v1
@@ -1447,10 +1375,10 @@
     :cond_1
     check-cast v2, Ljava/util/List;
 
-    .line 642
+    .line 643
     iget-object v1, p0, Landroidx/compose/ui/text/AnnotatedString$Builder;->paragraphStyles:Ljava/util/List;
 
-    .line 1176
+    .line 1178
     new-instance v5, Ljava/util/ArrayList;
 
     invoke-interface {v1}, Ljava/util/List;->size()I
@@ -1459,7 +1387,7 @@
 
     invoke-direct {v5, v6}, Ljava/util/ArrayList;-><init>(I)V
 
-    .line 1179
+    .line 1181
     invoke-interface {v1}, Ljava/util/List;->size()I
 
     move-result v6
@@ -1469,19 +1397,19 @@
     :goto_1
     if-ge v7, v6, :cond_2
 
-    .line 1180
+    .line 1182
     invoke-interface {v1, v7}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
     move-result-object v8
 
-    .line 1182
+    .line 1184
     move-object v9, v5
 
     check-cast v9, Ljava/util/Collection;
 
     check-cast v8, Landroidx/compose/ui/text/AnnotatedString$Builder$MutableRange;
 
-    .line 643
+    .line 644
     iget-object v10, p0, Landroidx/compose/ui/text/AnnotatedString$Builder;->text:Ljava/lang/StringBuilder;
 
     invoke-virtual {v10}, Ljava/lang/StringBuilder;->length()I
@@ -1492,20 +1420,20 @@
 
     move-result-object v8
 
-    .line 1182
+    .line 1184
     invoke-interface {v9, v8}, Ljava/util/Collection;->add(Ljava/lang/Object;)Z
 
     add-int/lit8 v7, v7, 0x1
 
     goto :goto_1
 
-    .line 1185
+    .line 1187
     :cond_2
     check-cast v5, Ljava/util/List;
 
     check-cast v5, Ljava/util/Collection;
 
-    .line 644
+    .line 645
     invoke-interface {v5}, Ljava/util/Collection;->isEmpty()Z
 
     move-result v1
@@ -1517,10 +1445,10 @@
     :cond_3
     check-cast v5, Ljava/util/List;
 
-    .line 645
+    .line 646
     iget-object v1, p0, Landroidx/compose/ui/text/AnnotatedString$Builder;->annotations:Ljava/util/List;
 
-    .line 1187
+    .line 1189
     new-instance v6, Ljava/util/ArrayList;
 
     invoke-interface {v1}, Ljava/util/List;->size()I
@@ -1529,7 +1457,7 @@
 
     invoke-direct {v6, v7}, Ljava/util/ArrayList;-><init>(I)V
 
-    .line 1190
+    .line 1192
     invoke-interface {v1}, Ljava/util/List;->size()I
 
     move-result v7
@@ -1537,19 +1465,19 @@
     :goto_2
     if-ge v4, v7, :cond_4
 
-    .line 1191
+    .line 1193
     invoke-interface {v1, v4}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
     move-result-object v8
 
-    .line 1193
+    .line 1195
     move-object v9, v6
 
     check-cast v9, Ljava/util/Collection;
 
     check-cast v8, Landroidx/compose/ui/text/AnnotatedString$Builder$MutableRange;
 
-    .line 646
+    .line 647
     iget-object v10, p0, Landroidx/compose/ui/text/AnnotatedString$Builder;->text:Ljava/lang/StringBuilder;
 
     invoke-virtual {v10}, Ljava/lang/StringBuilder;->length()I
@@ -1560,20 +1488,20 @@
 
     move-result-object v8
 
-    .line 1193
+    .line 1195
     invoke-interface {v9, v8}, Ljava/util/Collection;->add(Ljava/lang/Object;)Z
 
     add-int/lit8 v4, v4, 0x1
 
     goto :goto_2
 
-    .line 1196
+    .line 1198
     :cond_4
     check-cast v6, Ljava/util/List;
 
     check-cast v6, Ljava/util/Collection;
 
-    .line 647
+    .line 648
     invoke-interface {v6}, Ljava/util/Collection;->isEmpty()Z
 
     move-result p0
@@ -1588,7 +1516,7 @@
     :goto_3
     check-cast v3, Ljava/util/List;
 
-    .line 637
+    .line 638
     new-instance p0, Landroidx/compose/ui/text/AnnotatedString;
 
     invoke-direct {p0, v0, v2, v5, v3}, Landroidx/compose/ui/text/AnnotatedString;-><init>(Ljava/lang/String;Ljava/util/List;Ljava/util/List;Ljava/util/List;)V

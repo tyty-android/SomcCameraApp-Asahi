@@ -62,9 +62,9 @@
         0x2
     }
     l = {
-        0x3d9,
-        0x3e3,
-        0x3f6
+        0x3dd,
+        0x3e7,
+        0x3fa
     }
     m = "invokeSuspend"
     n = {
@@ -316,7 +316,7 @@
 
     move-result-object v1
 
-    .line 984
+    .line 988
     iget v2, v0, Landroidx/compose/material/SliderKt$rangeSliderPressDragModifier$1$1$1;->label:I
 
     const/4 v3, 0x3
@@ -412,7 +412,7 @@
 
     check-cast v2, Landroidx/compose/ui/input/pointer/AwaitPointerEventScope;
 
-    .line 985
+    .line 989
     move-object v11, v0
 
     check-cast v11, Lkotlin/coroutines/Continuation;
@@ -443,17 +443,17 @@
     :goto_0
     move-object v10, v2
 
-    .line 984
+    .line 988
     move-object v9, v8
 
     check-cast v9, Landroidx/compose/ui/input/pointer/PointerInputChange;
 
-    .line 986
+    .line 990
     new-instance v2, Landroidx/compose/foundation/interaction/DragInteraction$Start;
 
     invoke-direct {v2}, Landroidx/compose/foundation/interaction/DragInteraction$Start;-><init>()V
 
-    .line 987
+    .line 991
     new-instance v8, Lkotlin/jvm/internal/Ref$FloatRef;
 
     invoke-direct {v8}, Lkotlin/jvm/internal/Ref$FloatRef;-><init>()V
@@ -488,7 +488,7 @@
     :goto_1
     iput v11, v8, Lkotlin/jvm/internal/Ref$FloatRef;->element:F
 
-    .line 988
+    .line 992
     iget-object v11, v0, Landroidx/compose/material/SliderKt$rangeSliderPressDragModifier$1$1$1;->$rangeSliderLogic:Landroidx/compose/material/RangeSliderLogic;
 
     iget v12, v8, Lkotlin/jvm/internal/Ref$FloatRef;->element:F
@@ -497,7 +497,7 @@
 
     move-result v11
 
-    .line 989
+    .line 993
     new-instance v12, Lkotlin/jvm/internal/Ref$BooleanRef;
 
     invoke-direct {v12}, Lkotlin/jvm/internal/Ref$BooleanRef;-><init>()V
@@ -508,7 +508,7 @@
 
     goto :goto_2
 
-    .line 992
+    .line 996
     :cond_6
     iget-object v11, v0, Landroidx/compose/material/SliderKt$rangeSliderPressDragModifier$1$1$1;->$rawOffsetStart:Landroidx/compose/runtime/State;
 
@@ -536,11 +536,11 @@
     :cond_7
     const/4 v11, 0x0
 
-    .line 989
+    .line 993
     :goto_3
     iput-boolean v11, v12, Lkotlin/jvm/internal/Ref$BooleanRef;->element:Z
 
-    .line 995
+    .line 999
     invoke-virtual {v9}, Landroidx/compose/ui/input/pointer/PointerInputChange;->getId-J3iCeTQ()J
 
     move-result-wide v13
@@ -595,7 +595,7 @@
 
     iget-boolean v14, v0, Landroidx/compose/material/SliderKt$rangeSliderPressDragModifier$1$1$1;->$isRtl:Z
 
-    .line 996
+    .line 1000
     invoke-interface {v11}, Landroidx/compose/ui/input/pointer/AwaitPointerEventScope;->getViewConfiguration()Landroidx/compose/ui/platform/ViewConfiguration;
 
     move-result-object v15
@@ -608,7 +608,7 @@
 
     move-result v5
 
-    .line 997
+    .line 1001
     invoke-interface {v12}, Landroidx/compose/runtime/State;->getValue()Ljava/lang/Object;
 
     move-result-object v12
@@ -631,7 +631,7 @@
 
     if-gez v12, :cond_b
 
-    .line 998
+    .line 1002
     invoke-interface {v13}, Landroidx/compose/runtime/State;->getValue()Ljava/lang/Object;
 
     move-result-object v12
@@ -654,7 +654,7 @@
 
     if-gez v5, :cond_b
 
-    .line 1000
+    .line 1004
     invoke-virtual {v4}, Lkotlin/Pair;->getSecond()Ljava/lang/Object;
 
     move-result-object v5
@@ -688,11 +688,11 @@
     :cond_a
     const/4 v5, 0x0
 
-    .line 1001
+    .line 1005
     :goto_6
     iput-boolean v5, v2, Lkotlin/jvm/internal/Ref$BooleanRef;->element:Z
 
-    .line 1002
+    .line 1006
     iget v5, v9, Lkotlin/jvm/internal/Ref$FloatRef;->element:F
 
     invoke-virtual {v4}, Lkotlin/Pair;->getFirst()Ljava/lang/Object;
@@ -713,28 +713,28 @@
 
     iput v5, v9, Lkotlin/jvm/internal/Ref$FloatRef;->element:F
 
-    .line 1006
+    .line 1010
     :cond_b
     iget-object v4, v0, Landroidx/compose/material/SliderKt$rangeSliderPressDragModifier$1$1$1;->$rangeSliderLogic:Landroidx/compose/material/RangeSliderLogic;
 
-    .line 1007
+    .line 1011
     iget-boolean v5, v2, Lkotlin/jvm/internal/Ref$BooleanRef;->element:Z
 
-    .line 1008
+    .line 1012
     iget v7, v9, Lkotlin/jvm/internal/Ref$FloatRef;->element:F
 
-    .line 1009
+    .line 1013
     move-object v9, v8
 
     check-cast v9, Landroidx/compose/foundation/interaction/Interaction;
 
-    .line 1010
+    .line 1014
     iget-object v12, v0, Landroidx/compose/material/SliderKt$rangeSliderPressDragModifier$1$1$1;->$$this$coroutineScope:Lkotlinx/coroutines/CoroutineScope;
 
-    .line 1006
+    .line 1010
     invoke-virtual {v4, v5, v7, v9, v12}, Landroidx/compose/material/RangeSliderLogic;->captureThumb(ZFLandroidx/compose/foundation/interaction/Interaction;Lkotlinx/coroutines/CoroutineScope;)V
 
-    .line 1014
+    .line 1018
     :try_start_1
     invoke-virtual {v10}, Landroidx/compose/ui/input/pointer/PointerInputChange;->getId-J3iCeTQ()J
 
@@ -791,7 +791,7 @@
 
     if-eqz v3, :cond_d
 
-    .line 1019
+    .line 1023
     new-instance v3, Landroidx/compose/foundation/interaction/DragInteraction$Stop;
 
     invoke-direct {v3, v2}, Landroidx/compose/foundation/interaction/DragInteraction$Stop;-><init>(Landroidx/compose/foundation/interaction/DragInteraction$Start;)V
@@ -800,7 +800,7 @@
 
     goto :goto_8
 
-    .line 1021
+    .line 1025
     :cond_d
     new-instance v3, Landroidx/compose/foundation/interaction/DragInteraction$Cancel;
 
@@ -817,7 +817,7 @@
 
     move-object v2, v8
 
-    .line 1024
+    .line 1028
     :catch_1
     new-instance v3, Landroidx/compose/foundation/interaction/DragInteraction$Cancel;
 
@@ -825,7 +825,7 @@
 
     check-cast v3, Landroidx/compose/foundation/interaction/DragInteraction;
 
-    .line 1027
+    .line 1031
     :goto_8
     iget-object v2, v0, Landroidx/compose/material/SliderKt$rangeSliderPressDragModifier$1$1$1;->$gestureEndAction:Landroidx/compose/runtime/State;
 
@@ -843,7 +843,7 @@
 
     invoke-interface {v2, v4}, Lkotlin/jvm/functions/Function1;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 1028
+    .line 1032
     iget-object v7, v0, Landroidx/compose/material/SliderKt$rangeSliderPressDragModifier$1$1$1;->$$this$coroutineScope:Lkotlinx/coroutines/CoroutineScope;
 
     new-instance v2, Landroidx/compose/material/SliderKt$rangeSliderPressDragModifier$1$1$1$2;
@@ -866,7 +866,7 @@
 
     invoke-static/range {v7 .. v12}, Lkotlinx/coroutines/BuildersKt;->launch$default(Lkotlinx/coroutines/CoroutineScope;Lkotlin/coroutines/CoroutineContext;Lkotlinx/coroutines/CoroutineStart;Lkotlin/jvm/functions/Function2;ILjava/lang/Object;)Lkotlinx/coroutines/Job;
 
-    .line 1033
+    .line 1037
     sget-object v0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
 
     return-object v0

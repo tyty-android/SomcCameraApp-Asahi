@@ -65,17 +65,21 @@
 
 # virtual methods
 .method public final invoke()Ljava/lang/Boolean;
-    .locals 0
+    .locals 3
 
-    .line 520
+    .line 563
     iget-object p0, p0, Landroidx/compose/foundation/text/CoreTextFieldKt$CoreTextField$semanticsModifier$1$7;->$manager:Landroidx/compose/foundation/text/selection/TextFieldSelectionManager;
 
-    invoke-virtual {p0}, Landroidx/compose/foundation/text/selection/TextFieldSelectionManager;->enterSelectionMode$foundation_release()V
+    const/4 v0, 0x0
 
-    const/4 p0, 0x1
+    const/4 v1, 0x0
 
-    .line 521
-    invoke-static {p0}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
+    const/4 v2, 0x1
+
+    invoke-static {p0, v1, v2, v0}, Landroidx/compose/foundation/text/selection/TextFieldSelectionManager;->enterSelectionMode$foundation_release$default(Landroidx/compose/foundation/text/selection/TextFieldSelectionManager;ZILjava/lang/Object;)V
+
+    .line 564
+    invoke-static {v2}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
     move-result-object p0
 
@@ -85,7 +89,7 @@
 .method public bridge synthetic invoke()Ljava/lang/Object;
     .locals 0
 
-    .line 519
+    .line 562
     invoke-virtual {p0}, Landroidx/compose/foundation/text/CoreTextFieldKt$CoreTextField$semanticsModifier$1$7;->invoke()Ljava/lang/Boolean;
 
     move-result-object p0

@@ -1,6 +1,6 @@
 .class public final Landroidx/compose/ui/tooling/data/SourceLocation;
 .super Ljava/lang/Object;
-.source "SlotTree.kt"
+.source "SlotTree.jvm.kt"
 
 
 # annotations
@@ -75,22 +75,22 @@
 .method public constructor <init>(IIILjava/lang/String;I)V
     .locals 0
 
-    .line 100
+    .line 102
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 105
+    .line 107
     iput p1, p0, Landroidx/compose/ui/tooling/data/SourceLocation;->lineNumber:I
 
-    .line 111
+    .line 113
     iput p2, p0, Landroidx/compose/ui/tooling/data/SourceLocation;->offset:I
 
-    .line 117
+    .line 119
     iput p3, p0, Landroidx/compose/ui/tooling/data/SourceLocation;->length:I
 
-    .line 124
+    .line 126
     iput-object p4, p0, Landroidx/compose/ui/tooling/data/SourceLocation;->sourceFile:Ljava/lang/String;
 
-    .line 135
+    .line 137
     iput p5, p0, Landroidx/compose/ui/tooling/data/SourceLocation;->packageHash:I
 
     return-void
@@ -301,7 +301,7 @@
 .method public final getLength()I
     .locals 0
 
-    .line 117
+    .line 119
     iget p0, p0, Landroidx/compose/ui/tooling/data/SourceLocation;->length:I
 
     return p0
@@ -310,7 +310,7 @@
 .method public final getLineNumber()I
     .locals 0
 
-    .line 105
+    .line 107
     iget p0, p0, Landroidx/compose/ui/tooling/data/SourceLocation;->lineNumber:I
 
     return p0
@@ -319,7 +319,7 @@
 .method public final getOffset()I
     .locals 0
 
-    .line 111
+    .line 113
     iget p0, p0, Landroidx/compose/ui/tooling/data/SourceLocation;->offset:I
 
     return p0
@@ -328,7 +328,7 @@
 .method public final getPackageHash()I
     .locals 0
 
-    .line 135
+    .line 137
     iget p0, p0, Landroidx/compose/ui/tooling/data/SourceLocation;->packageHash:I
 
     return p0
@@ -337,7 +337,7 @@
 .method public final getSourceFile()Ljava/lang/String;
     .locals 0
 
-    .line 124
+    .line 126
     iget-object p0, p0, Landroidx/compose/ui/tooling/data/SourceLocation;->sourceFile:Ljava/lang/String;
 
     return-object p0

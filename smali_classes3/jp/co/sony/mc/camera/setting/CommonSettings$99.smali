@@ -21,7 +21,7 @@
 .method constructor <init>()V
     .locals 0
 
-    .line 1098
+    .line 1101
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -46,13 +46,13 @@
         }
     .end annotation
 
-    .line 1102
+    .line 1105
     check-cast p1, Ljp/co/sony/mc/camera/setting/CommonSettings;
 
-    .line 1103
+    .line 1106
     check-cast p3, Ljava/lang/String;
 
-    invoke-static {p1, p3}, Ljp/co/sony/mc/camera/setting/CommonSettings;->-$$Nest$msetFacebookLiveVideoId(Ljp/co/sony/mc/camera/setting/CommonSettings;Ljava/lang/String;)Z
+    invoke-static {p1, p3}, Ljp/co/sony/mc/camera/setting/CommonSettings;->-$$Nest$msetFacebookAccount(Ljp/co/sony/mc/camera/setting/CommonSettings;Ljava/lang/String;)Z
 
     move-result p0
 

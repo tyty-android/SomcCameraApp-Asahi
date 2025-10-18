@@ -25,7 +25,7 @@
 .method constructor <init>(Ljp/co/sony/mc/camera/SaveLocationSettingActivity;)V
     .locals 0
 
-    .line 234
+    .line 233
     iput-object p1, p0, Ljp/co/sony/mc/camera/SaveLocationSettingActivity$1;->this$0:Ljp/co/sony/mc/camera/SaveLocationSettingActivity;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -36,22 +36,26 @@
 
 # virtual methods
 .method public onPrepared()V
-    .locals 0
+    .locals 2
 
-    .line 237
+    .line 236
     sget-boolean p0, Ljp/co/sony/mc/camera/util/CamLog;->DEBUG:Z
 
     if-eqz p0, :cond_0
 
-    const-string p0, "PlatformCapability Prepared"
+    const/4 p0, 0x1
 
-    filled-new-array {p0}, [Ljava/lang/String;
+    new-array p0, p0, [Ljava/lang/String;
 
-    move-result-object p0
+    const/4 v0, 0x0
+
+    const-string v1, "PlatformCapability Prepared"
+
+    aput-object v1, p0, v0
 
     invoke-static {p0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
-    .line 238
+    .line 237
     :cond_0
     invoke-static {}, Ljp/co/sony/mc/camera/setting/CameraProSetting;->getInstance()Ljp/co/sony/mc/camera/setting/CameraProSetting;
 

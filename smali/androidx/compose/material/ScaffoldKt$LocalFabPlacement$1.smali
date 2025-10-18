@@ -84,7 +84,7 @@
 .method public bridge synthetic invoke()Ljava/lang/Object;
     .locals 0
 
-    .line 369
+    .line 812
     invoke-virtual {p0}, Landroidx/compose/material/ScaffoldKt$LocalFabPlacement$1;->invoke()Landroidx/compose/material/FabPlacement;
 
     move-result-object p0

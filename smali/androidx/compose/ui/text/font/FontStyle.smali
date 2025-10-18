@@ -12,7 +12,7 @@
 
 .annotation runtime Lkotlin/Metadata;
     d1 = {
-        "\u0000\"\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0010\u0008\n\u0002\u0008\u0005\n\u0002\u0010\u000b\n\u0002\u0008\u0006\n\u0002\u0010\u000e\n\u0002\u0008\u0004\u0008\u0087@\u0018\u0000 \u00132\u00020\u0001:\u0001\u0013B\u0012\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u00f8\u0001\u0000\u00a2\u0006\u0004\u0008\u0004\u0010\u0005J\u001a\u0010\u0008\u001a\u00020\t2\u0008\u0010\n\u001a\u0004\u0018\u00010\u0001H\u00d6\u0003\u00a2\u0006\u0004\u0008\u000b\u0010\u000cJ\u0010\u0010\r\u001a\u00020\u0003H\u00d6\u0001\u00a2\u0006\u0004\u0008\u000e\u0010\u0005J\u000f\u0010\u000f\u001a\u00020\u0010H\u0016\u00a2\u0006\u0004\u0008\u0011\u0010\u0012R\u0011\u0010\u0002\u001a\u00020\u0003\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\u0006\u0010\u0007\u0088\u0001\u0002\u00f8\u0001\u0000\u0082\u0002\u0004\n\u0002\u0008\u0019\u00a8\u0006\u0014"
+        "\u0000\"\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0010\u0008\n\u0002\u0008\u0005\n\u0002\u0010\u000b\n\u0002\u0008\u0006\n\u0002\u0010\u000e\n\u0002\u0008\u0004\u0008\u0087@\u0018\u0000 \u00132\u00020\u0001:\u0001\u0013B\u0011\u0008\u0007\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u00a2\u0006\u0004\u0008\u0004\u0010\u0005J\u001a\u0010\u0008\u001a\u00020\t2\u0008\u0010\n\u001a\u0004\u0018\u00010\u0001H\u00d6\u0003\u00a2\u0006\u0004\u0008\u000b\u0010\u000cJ\u0010\u0010\r\u001a\u00020\u0003H\u00d6\u0001\u00a2\u0006\u0004\u0008\u000e\u0010\u0005J\u000f\u0010\u000f\u001a\u00020\u0010H\u0016\u00a2\u0006\u0004\u0008\u0011\u0010\u0012R\u0011\u0010\u0002\u001a\u00020\u0003\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\u0006\u0010\u0007\u0088\u0001\u0002\u00a8\u0006\u0014"
     }
     d2 = {
         "Landroidx/compose/ui/text/font/FontStyle;",
@@ -76,7 +76,7 @@
 
     const/4 v0, 0x0
 
-    .line 38
+    .line 43
     invoke-static {v0}, Landroidx/compose/ui/text/font/FontStyle;->constructor-impl(I)I
 
     move-result v0
@@ -85,7 +85,7 @@
 
     const/4 v0, 0x1
 
-    .line 41
+    .line 47
     invoke-static {v0}, Landroidx/compose/ui/text/font/FontStyle;->constructor-impl(I)I
 
     move-result v0
@@ -97,8 +97,15 @@
 
 .method private synthetic constructor <init>(I)V
     .locals 0
+    .annotation runtime Lkotlin/Deprecated;
+        message = "Please use FontStyle.Normal or FontStyle.Italic"
+        replaceWith = .subannotation Lkotlin/ReplaceWith;
+            expression = "FontStyle."
+            imports = {}
+        .end subannotation
+    .end annotation
 
-    .line 26
+    .line 30
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     iput p1, p0, Landroidx/compose/ui/text/font/FontStyle;->value:I
@@ -109,7 +116,7 @@
 .method public static final synthetic access$getItalic$cp()I
     .locals 1
 
-    .line 25
+    .line 24
     sget v0, Landroidx/compose/ui/text/font/FontStyle;->Italic:I
 
     return v0
@@ -118,7 +125,7 @@
 .method public static final synthetic access$getNormal$cp()I
     .locals 1
 
-    .line 25
+    .line 24
     sget v0, Landroidx/compose/ui/text/font/FontStyle;->Normal:I
 
     return v0
@@ -136,6 +143,13 @@
 
 .method public static constructor-impl(I)I
     .locals 0
+    .annotation runtime Lkotlin/Deprecated;
+        message = "Please use FontStyle.Normal or FontStyle.Italic"
+        replaceWith = .subannotation Lkotlin/ReplaceWith;
+            expression = "FontStyle."
+            imports = {}
+        .end subannotation
+    .end annotation
 
     return p0
 .end method
@@ -197,7 +211,7 @@
 .method public static toString-impl(I)Ljava/lang/String;
     .locals 1
 
-    .line 30
+    .line 34
     sget v0, Landroidx/compose/ui/text/font/FontStyle;->Normal:I
 
     invoke-static {p0, v0}, Landroidx/compose/ui/text/font/FontStyle;->equals-impl0(II)Z
@@ -210,7 +224,7 @@
 
     goto :goto_0
 
-    .line 31
+    .line 35
     :cond_0
     sget v0, Landroidx/compose/ui/text/font/FontStyle;->Italic:I
 
@@ -224,7 +238,7 @@
 
     goto :goto_0
 
-    .line 32
+    .line 36
     :cond_1
     const-string p0, "Invalid"
 
@@ -249,7 +263,7 @@
 .method public final getValue()I
     .locals 0
 
-    .line 26
+    .line 30
     iget p0, p0, Landroidx/compose/ui/text/font/FontStyle;->value:I
 
     return p0
@@ -270,7 +284,7 @@
 .method public toString()Ljava/lang/String;
     .locals 0
 
-    .line 28
+    .line 32
     iget p0, p0, Landroidx/compose/ui/text/font/FontStyle;->value:I
 
     invoke-static {p0}, Landroidx/compose/ui/text/font/FontStyle;->toString-impl(I)Ljava/lang/String;

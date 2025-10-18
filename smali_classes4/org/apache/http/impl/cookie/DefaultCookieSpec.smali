@@ -222,11 +222,11 @@
     goto :goto_0
 
     :cond_0
-    const-string p1, "EEE, dd-MMM-yy HH:mm:ss z"
+    new-array p1, v4, [Ljava/lang/String;
 
-    filled-new-array {p1}, [Ljava/lang/String;
+    const-string v2, "EEE, dd-MMM-yy HH:mm:ss z"
 
-    move-result-object p1
+    aput-object v2, p1, v3
 
     :goto_0
     invoke-direct {v1, p1}, Lorg/apache/http/impl/cookie/BasicExpiresHandler;-><init>([Ljava/lang/String;)V
@@ -599,18 +599,18 @@
 
     .line 139
     :goto_3
+    new-array p1, v6, [Lorg/apache/http/HeaderElement;
+
     invoke-virtual {v0, v1, v3}, Lorg/apache/http/impl/cookie/NetscapeDraftHeaderParser;->parseHeader(Lorg/apache/http/util/CharArrayBuffer;Lorg/apache/http/message/ParserCursor;)Lorg/apache/http/HeaderElement;
 
-    move-result-object p1
+    move-result-object v0
 
-    new-array v0, v6, [Lorg/apache/http/HeaderElement;
-
-    aput-object p1, v0, v2
+    aput-object v0, p1, v2
 
     .line 140
     iget-object p0, p0, Lorg/apache/http/impl/cookie/DefaultCookieSpec;->netscapeDraft:Lorg/apache/http/impl/cookie/NetscapeDraftSpec;
 
-    invoke-virtual {p0, v0, p2}, Lorg/apache/http/impl/cookie/NetscapeDraftSpec;->parse([Lorg/apache/http/HeaderElement;Lorg/apache/http/cookie/CookieOrigin;)Ljava/util/List;
+    invoke-virtual {p0, p1, p2}, Lorg/apache/http/impl/cookie/NetscapeDraftSpec;->parse([Lorg/apache/http/HeaderElement;Lorg/apache/http/cookie/CookieOrigin;)Ljava/util/List;
 
     move-result-object p0
 

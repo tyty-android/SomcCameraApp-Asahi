@@ -69,7 +69,7 @@
 
     iput-object p1, p0, Lkotlin/sequences/SequencesKt___SequencesKt$sorted$1;->$this_sorted:Lkotlin/sequences/Sequence;
 
-    .line 584
+    .line 588
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -87,17 +87,17 @@
         }
     .end annotation
 
-    .line 586
+    .line 590
     iget-object p0, p0, Lkotlin/sequences/SequencesKt___SequencesKt$sorted$1;->$this_sorted:Lkotlin/sequences/Sequence;
 
     invoke-static {p0}, Lkotlin/sequences/SequencesKt;->toMutableList(Lkotlin/sequences/Sequence;)Ljava/util/List;
 
     move-result-object p0
 
-    .line 587
+    .line 591
     invoke-static {p0}, Lkotlin/collections/CollectionsKt;->sort(Ljava/util/List;)V
 
-    .line 588
+    .line 592
     invoke-interface {p0}, Ljava/util/List;->iterator()Ljava/util/Iterator;
 
     move-result-object p0

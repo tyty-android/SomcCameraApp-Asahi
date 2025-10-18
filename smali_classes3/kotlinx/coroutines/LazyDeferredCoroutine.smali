@@ -39,7 +39,7 @@
     k = 0x1
     mv = {
         0x1,
-        0x6,
+        0x8,
         0x0
     }
     xi = 0x30
@@ -78,10 +78,10 @@
 
     const/4 v0, 0x0
 
-    .line 110
+    .line 108
     invoke-direct {p0, p1, v0}, Lkotlinx/coroutines/DeferredCoroutine;-><init>(Lkotlin/coroutines/CoroutineContext;Z)V
 
-    .line 111
+    .line 109
     move-object p1, p0
 
     check-cast p1, Lkotlin/coroutines/Continuation;
@@ -100,7 +100,7 @@
 .method protected onStart()V
     .locals 1
 
-    .line 114
+    .line 112
     iget-object v0, p0, Lkotlinx/coroutines/LazyDeferredCoroutine;->continuation:Lkotlin/coroutines/Continuation;
 
     check-cast p0, Lkotlin/coroutines/Continuation;

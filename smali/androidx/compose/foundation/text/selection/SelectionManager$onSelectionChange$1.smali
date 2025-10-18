@@ -47,29 +47,19 @@
 .end annotation
 
 
-# static fields
-.field public static final INSTANCE:Landroidx/compose/foundation/text/selection/SelectionManager$onSelectionChange$1;
+# instance fields
+.field final synthetic this$0:Landroidx/compose/foundation/text/selection/SelectionManager;
 
 
 # direct methods
-.method static constructor <clinit>()V
-    .locals 1
+.method constructor <init>(Landroidx/compose/foundation/text/selection/SelectionManager;)V
+    .locals 0
 
-    new-instance v0, Landroidx/compose/foundation/text/selection/SelectionManager$onSelectionChange$1;
+    iput-object p1, p0, Landroidx/compose/foundation/text/selection/SelectionManager$onSelectionChange$1;->this$0:Landroidx/compose/foundation/text/selection/SelectionManager;
 
-    invoke-direct {v0}, Landroidx/compose/foundation/text/selection/SelectionManager$onSelectionChange$1;-><init>()V
+    const/4 p1, 0x1
 
-    sput-object v0, Landroidx/compose/foundation/text/selection/SelectionManager$onSelectionChange$1;->INSTANCE:Landroidx/compose/foundation/text/selection/SelectionManager$onSelectionChange$1;
-
-    return-void
-.end method
-
-.method constructor <init>()V
-    .locals 1
-
-    const/4 v0, 0x1
-
-    invoke-direct {p0, v0}, Lkotlin/jvm/internal/Lambda;-><init>(I)V
+    invoke-direct {p0, p1}, Lkotlin/jvm/internal/Lambda;-><init>(I)V
 
     return-void
 .end method
@@ -79,7 +69,7 @@
 .method public bridge synthetic invoke(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
 
-    .line 87
+    .line 101
     check-cast p1, Landroidx/compose/foundation/text/selection/Selection;
 
     invoke-virtual {p0, p1}, Landroidx/compose/foundation/text/selection/SelectionManager$onSelectionChange$1;->invoke(Landroidx/compose/foundation/text/selection/Selection;)V
@@ -91,6 +81,11 @@
 
 .method public final invoke(Landroidx/compose/foundation/text/selection/Selection;)V
     .locals 0
+
+    .line 101
+    iget-object p0, p0, Landroidx/compose/foundation/text/selection/SelectionManager$onSelectionChange$1;->this$0:Landroidx/compose/foundation/text/selection/SelectionManager;
+
+    invoke-virtual {p0, p1}, Landroidx/compose/foundation/text/selection/SelectionManager;->setSelection(Landroidx/compose/foundation/text/selection/Selection;)V
 
     return-void
 .end method

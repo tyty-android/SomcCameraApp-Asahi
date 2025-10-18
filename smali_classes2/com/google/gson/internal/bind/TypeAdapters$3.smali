@@ -26,7 +26,7 @@
 .method constructor <init>()V
     .locals 0
 
-    .line 135
+    .line 152
     invoke-direct {p0}, Lcom/google/gson/TypeAdapter;-><init>()V
 
     return-void
@@ -42,30 +42,30 @@
         }
     .end annotation
 
-    .line 138
+    .line 155
     invoke-virtual {p1}, Lcom/google/gson/stream/JsonReader;->peek()Lcom/google/gson/stream/JsonToken;
 
     move-result-object p0
 
-    .line 139
+    .line 156
     sget-object v0, Lcom/google/gson/stream/JsonToken;->NULL:Lcom/google/gson/stream/JsonToken;
 
     if-ne p0, v0, :cond_0
 
-    .line 140
+    .line 157
     invoke-virtual {p1}, Lcom/google/gson/stream/JsonReader;->nextNull()V
 
     const/4 p0, 0x0
 
     return-object p0
 
-    .line 142
+    .line 159
     :cond_0
     sget-object v0, Lcom/google/gson/stream/JsonToken;->STRING:Lcom/google/gson/stream/JsonToken;
 
     if-ne p0, v0, :cond_1
 
-    .line 144
+    .line 161
     invoke-virtual {p1}, Lcom/google/gson/stream/JsonReader;->nextString()Ljava/lang/String;
 
     move-result-object p0
@@ -80,7 +80,7 @@
 
     return-object p0
 
-    .line 146
+    .line 163
     :cond_1
     invoke-virtual {p1}, Lcom/google/gson/stream/JsonReader;->nextBoolean()Z
 
@@ -101,7 +101,7 @@
         }
     .end annotation
 
-    .line 135
+    .line 152
     invoke-virtual {p0, p1}, Lcom/google/gson/internal/bind/TypeAdapters$3;->read(Lcom/google/gson/stream/JsonReader;)Ljava/lang/Boolean;
 
     move-result-object p0
@@ -117,7 +117,7 @@
         }
     .end annotation
 
-    .line 150
+    .line 168
     invoke-virtual {p1, p2}, Lcom/google/gson/stream/JsonWriter;->value(Ljava/lang/Boolean;)Lcom/google/gson/stream/JsonWriter;
 
     return-void
@@ -131,7 +131,7 @@
         }
     .end annotation
 
-    .line 135
+    .line 152
     check-cast p2, Ljava/lang/Boolean;
 
     invoke-virtual {p0, p1, p2}, Lcom/google/gson/internal/bind/TypeAdapters$3;->write(Lcom/google/gson/stream/JsonWriter;Ljava/lang/Boolean;)V

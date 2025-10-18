@@ -35,7 +35,7 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/SourceDebugExtension;
-    value = "SMAP\nSavers.kt\nKotlin\n*S Kotlin\n*F\n+ 1 Savers.kt\nandroidx/compose/ui/text/SaversKt$AnnotationRangeSaver$2\n+ 2 Savers.kt\nandroidx/compose/ui/text/SaversKt\n+ 3 fake.kt\nkotlin/jvm/internal/FakeKt\n*L\n1#1,421:1\n70#2:422\n70#2:424\n70#2:426\n70#2:428\n55#2,2:430\n55#2,2:433\n55#2,2:436\n55#2,2:439\n70#2:442\n1#3:423\n1#3:425\n1#3:427\n1#3:429\n1#3:432\n1#3:435\n1#3:438\n1#3:441\n1#3:443\n*S KotlinDebug\n*F\n+ 1 Savers.kt\nandroidx/compose/ui/text/SaversKt$AnnotationRangeSaver$2\n*L\n160#1:422\n161#1:424\n162#1:426\n163#1:428\n167#1:430,2\n171#1:433,2\n175#1:436,2\n179#1:439,2\n183#1:442\n160#1:423\n161#1:425\n162#1:427\n163#1:429\n167#1:432\n171#1:435\n175#1:438\n179#1:441\n183#1:443\n*E\n"
+    value = "SMAP\nSavers.kt\nKotlin\n*S Kotlin\n*F\n+ 1 Savers.kt\nandroidx/compose/ui/text/SaversKt$AnnotationRangeSaver$2\n+ 2 Savers.kt\nandroidx/compose/ui/text/SaversKt\n+ 3 fake.kt\nkotlin/jvm/internal/FakeKt\n*L\n1#1,454:1\n91#2:455\n91#2:457\n91#2:459\n91#2:461\n60#2,2:463\n60#2,2:466\n60#2,2:469\n60#2,2:472\n91#2:475\n1#3:456\n1#3:458\n1#3:460\n1#3:462\n1#3:465\n1#3:468\n1#3:471\n1#3:474\n1#3:476\n*S KotlinDebug\n*F\n+ 1 Savers.kt\nandroidx/compose/ui/text/SaversKt$AnnotationRangeSaver$2\n*L\n181#1:455\n182#1:457\n183#1:459\n184#1:461\n188#1:463,2\n192#1:466,2\n196#1:469,2\n200#1:472,2\n204#1:475\n181#1:456\n182#1:458\n183#1:460\n184#1:462\n188#1:465\n192#1:468\n196#1:471\n200#1:474\n204#1:476\n*E\n"
 .end annotation
 
 .annotation runtime Lkotlin/Metadata;
@@ -102,21 +102,21 @@
         }
     .end annotation
 
-    const-string p0, "it"
+    .line 180
+    const-string p0, "null cannot be cast to non-null type kotlin.collections.List<kotlin.Any>"
 
-    invoke-static {p1, p0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, p0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 159
     check-cast p1, Ljava/util/List;
 
     const/4 p0, 0x0
 
-    .line 430
+    .line 463
     invoke-static {p0}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
     move-result-object v0
 
-    .line 160
+    .line 181
     invoke-interface {p1, p0}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
     move-result-object p0
@@ -125,7 +125,7 @@
 
     if-eqz p0, :cond_0
 
-    .line 422
+    .line 455
     check-cast p0, Landroidx/compose/ui/text/AnnotationType;
 
     goto :goto_0
@@ -133,20 +133,20 @@
     :cond_0
     move-object p0, v1
 
-    .line 160
+    .line 181
     :goto_0
     invoke-static {p0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;)V
 
     const/4 v2, 0x2
 
-    .line 161
+    .line 182
     invoke-interface {p1, v2}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
     move-result-object v3
 
     if-eqz v3, :cond_1
 
-    .line 424
+    .line 457
     check-cast v3, Ljava/lang/Integer;
 
     goto :goto_1
@@ -154,7 +154,7 @@
     :cond_1
     move-object v3, v1
 
-    .line 161
+    .line 182
     :goto_1
     invoke-static {v3}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;)V
 
@@ -166,14 +166,14 @@
 
     const/4 v4, 0x3
 
-    .line 162
+    .line 183
     invoke-interface {p1, v4}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
     move-result-object v5
 
     if-eqz v5, :cond_2
 
-    .line 426
+    .line 459
     check-cast v5, Ljava/lang/Integer;
 
     goto :goto_2
@@ -181,7 +181,7 @@
     :cond_2
     move-object v5, v1
 
-    .line 162
+    .line 183
     :goto_2
     invoke-static {v5}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;)V
 
@@ -193,14 +193,14 @@
 
     const/4 v6, 0x4
 
-    .line 163
+    .line 184
     invoke-interface {p1, v6}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
     move-result-object v7
 
     if-eqz v7, :cond_3
 
-    .line 428
+    .line 461
     check-cast v7, Ljava/lang/String;
 
     goto :goto_3
@@ -208,11 +208,11 @@
     :cond_3
     move-object v7, v1
 
-    .line 163
+    .line 184
     :goto_3
     invoke-static {v7}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;)V
 
-    .line 165
+    .line 186
     sget-object v8, Landroidx/compose/ui/text/SaversKt$AnnotationRangeSaver$2$WhenMappings;->$EnumSwitchMapping$0:[I
 
     invoke-virtual {p0}, Landroidx/compose/ui/text/AnnotationType;->ordinal()I
@@ -235,23 +235,23 @@
 
     if-ne p0, v0, :cond_5
 
-    .line 183
+    .line 204
     invoke-interface {p1, v8}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
     move-result-object p0
 
     if-eqz p0, :cond_4
 
-    .line 442
+    .line 475
     move-object v1, p0
 
     check-cast v1, Ljava/lang/String;
 
-    .line 183
+    .line 204
     :cond_4
     invoke-static {v1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;)V
 
-    .line 184
+    .line 205
     new-instance p0, Landroidx/compose/ui/text/AnnotatedString$Range;
 
     invoke-direct {p0, v1, v3, v5, v7}, Landroidx/compose/ui/text/AnnotatedString$Range;-><init>(Ljava/lang/Object;IILjava/lang/String;)V
@@ -265,7 +265,7 @@
 
     throw p0
 
-    .line 179
+    .line 200
     :cond_6
     invoke-interface {p1, v8}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
@@ -275,19 +275,23 @@
 
     move-result-object p1
 
-    .line 439
+    .line 472
     invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->areEqual(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v0
 
     if-eqz v0, :cond_7
 
+    instance-of v0, p1, Landroidx/compose/ui/text/NonNullValueClassSaver;
+
+    if-nez v0, :cond_7
+
     goto :goto_4
 
     :cond_7
     if-eqz p0, :cond_8
 
-    .line 440
+    .line 473
     invoke-interface {p1, p0}, Landroidx/compose/runtime/saveable/Saver;->restore(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p0
@@ -296,19 +300,19 @@
 
     check-cast v1, Landroidx/compose/ui/text/UrlAnnotation;
 
-    .line 179
+    .line 200
     :cond_8
     :goto_4
     invoke-static {v1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;)V
 
-    .line 180
+    .line 201
     new-instance p0, Landroidx/compose/ui/text/AnnotatedString$Range;
 
     invoke-direct {p0, v1, v3, v5, v7}, Landroidx/compose/ui/text/AnnotatedString$Range;-><init>(Ljava/lang/Object;IILjava/lang/String;)V
 
-    goto :goto_8
+    goto/16 :goto_8
 
-    .line 175
+    .line 196
     :cond_9
     invoke-interface {p1, v8}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
@@ -318,19 +322,23 @@
 
     move-result-object p1
 
-    .line 436
+    .line 469
     invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->areEqual(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v0
 
     if-eqz v0, :cond_a
 
+    instance-of v0, p1, Landroidx/compose/ui/text/NonNullValueClassSaver;
+
+    if-nez v0, :cond_a
+
     goto :goto_5
 
     :cond_a
     if-eqz p0, :cond_b
 
-    .line 437
+    .line 470
     invoke-interface {p1, p0}, Landroidx/compose/runtime/saveable/Saver;->restore(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p0
@@ -339,19 +347,19 @@
 
     check-cast v1, Landroidx/compose/ui/text/VerbatimTtsAnnotation;
 
-    .line 175
+    .line 196
     :cond_b
     :goto_5
     invoke-static {v1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;)V
 
-    .line 176
+    .line 197
     new-instance p0, Landroidx/compose/ui/text/AnnotatedString$Range;
 
     invoke-direct {p0, v1, v3, v5, v7}, Landroidx/compose/ui/text/AnnotatedString$Range;-><init>(Ljava/lang/Object;IILjava/lang/String;)V
 
     goto :goto_8
 
-    .line 171
+    .line 192
     :cond_c
     invoke-interface {p1, v8}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
@@ -361,19 +369,23 @@
 
     move-result-object p1
 
-    .line 433
+    .line 466
     invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->areEqual(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v0
 
     if-eqz v0, :cond_d
 
+    instance-of v0, p1, Landroidx/compose/ui/text/NonNullValueClassSaver;
+
+    if-nez v0, :cond_d
+
     goto :goto_6
 
     :cond_d
     if-eqz p0, :cond_e
 
-    .line 434
+    .line 467
     invoke-interface {p1, p0}, Landroidx/compose/runtime/saveable/Saver;->restore(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p0
@@ -382,19 +394,19 @@
 
     check-cast v1, Landroidx/compose/ui/text/SpanStyle;
 
-    .line 171
+    .line 192
     :cond_e
     :goto_6
     invoke-static {v1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;)V
 
-    .line 172
+    .line 193
     new-instance p0, Landroidx/compose/ui/text/AnnotatedString$Range;
 
     invoke-direct {p0, v1, v3, v5, v7}, Landroidx/compose/ui/text/AnnotatedString$Range;-><init>(Ljava/lang/Object;IILjava/lang/String;)V
 
     goto :goto_8
 
-    .line 167
+    .line 188
     :cond_f
     invoke-interface {p1, v8}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
@@ -404,19 +416,23 @@
 
     move-result-object p1
 
-    .line 430
+    .line 463
     invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->areEqual(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v0
 
     if-eqz v0, :cond_10
 
+    instance-of v0, p1, Landroidx/compose/ui/text/NonNullValueClassSaver;
+
+    if-nez v0, :cond_10
+
     goto :goto_7
 
     :cond_10
     if-eqz p0, :cond_11
 
-    .line 431
+    .line 464
     invoke-interface {p1, p0}, Landroidx/compose/runtime/saveable/Saver;->restore(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p0
@@ -425,12 +441,12 @@
 
     check-cast v1, Landroidx/compose/ui/text/ParagraphStyle;
 
-    .line 167
+    .line 188
     :cond_11
     :goto_7
     invoke-static {v1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;)V
 
-    .line 168
+    .line 189
     new-instance p0, Landroidx/compose/ui/text/AnnotatedString$Range;
 
     invoke-direct {p0, v1, v3, v5, v7}, Landroidx/compose/ui/text/AnnotatedString$Range;-><init>(Ljava/lang/Object;IILjava/lang/String;)V
@@ -442,7 +458,7 @@
 .method public bridge synthetic invoke(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
 
-    .line 123
+    .line 144
     invoke-virtual {p0, p1}, Landroidx/compose/ui/text/SaversKt$AnnotationRangeSaver$2;->invoke(Ljava/lang/Object;)Landroidx/compose/ui/text/AnnotatedString$Range;
 
     move-result-object p0

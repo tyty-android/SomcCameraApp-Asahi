@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Ljp/co/sony/mc/camera/view/viewbinder/BasicModeShutterSpeedViewBinder$onCreate$7;->invoke(Ljp/co/sony/mc/camera/view/uistate/BasicModeMenuType;)V
+    value = Ljp/co/sony/mc/camera/view/viewbinder/BasicModeShutterSpeedViewBinder;->onCreate(Landroidx/lifecycle/LifecycleOwner;)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -29,8 +29,8 @@
     }
     k = 0x1
     mv = {
-        0x1,
-        0x9,
+        0x2,
+        0x0,
         0x0
     }
     xi = 0x30

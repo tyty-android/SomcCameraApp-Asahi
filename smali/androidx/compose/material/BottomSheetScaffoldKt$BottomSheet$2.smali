@@ -72,7 +72,7 @@
 .method public bridge synthetic invoke(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
 
-    .line 554
+    .line 629
     check-cast p1, Landroidx/compose/ui/semantics/SemanticsPropertyReceiver;
 
     invoke-virtual {p0, p1}, Landroidx/compose/material/BottomSheetScaffoldKt$BottomSheet$2;->invoke(Landroidx/compose/ui/semantics/SemanticsPropertyReceiver;)V
@@ -85,22 +85,18 @@
 .method public final invoke(Landroidx/compose/ui/semantics/SemanticsPropertyReceiver;)V
     .locals 4
 
-    const-string v0, "$this$semantics"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 557
+    .line 632
     iget-object v0, p0, Landroidx/compose/material/BottomSheetScaffoldKt$BottomSheet$2;->$state:Landroidx/compose/material/BottomSheetState;
 
     invoke-virtual {v0}, Landroidx/compose/material/BottomSheetState;->getAnchoredDraggableState$material_release()Landroidx/compose/material/AnchoredDraggableState;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Landroidx/compose/material/AnchoredDraggableState;->getAnchors$material_release()Ljava/util/Map;
+    invoke-virtual {v0}, Landroidx/compose/material/AnchoredDraggableState;->getAnchors()Landroidx/compose/material/DraggableAnchors;
 
     move-result-object v0
 
-    invoke-interface {v0}, Ljava/util/Map;->size()I
+    invoke-interface {v0}, Landroidx/compose/material/DraggableAnchors;->getSize()I
 
     move-result v0
 
@@ -108,7 +104,7 @@
 
     if-le v0, v1, :cond_1
 
-    .line 558
+    .line 633
     iget-object v0, p0, Landroidx/compose/material/BottomSheetScaffoldKt$BottomSheet$2;->$state:Landroidx/compose/material/BottomSheetState;
 
     invoke-virtual {v0}, Landroidx/compose/material/BottomSheetState;->isCollapsed()Z
@@ -119,7 +115,7 @@
 
     if-eqz v0, :cond_0
 
-    .line 559
+    .line 634
     new-instance v0, Landroidx/compose/material/BottomSheetScaffoldKt$BottomSheet$2$1;
 
     iget-object v3, p0, Landroidx/compose/material/BottomSheetScaffoldKt$BottomSheet$2;->$state:Landroidx/compose/material/BottomSheetState;
@@ -134,7 +130,7 @@
 
     goto :goto_0
 
-    .line 566
+    .line 641
     :cond_0
     new-instance v0, Landroidx/compose/material/BottomSheetScaffoldKt$BottomSheet$2$2;
 

@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/SourceDebugExtension;
-    value = "SMAP\nRecordingInputConnection.android.kt\nKotlin\n*S Kotlin\n*F\n+ 1 RecordingInputConnection.android.kt\nandroidx/compose/ui/text/input/RecordingInputConnection\n*L\n1#1,403:1\n80#1,5:404\n80#1,5:409\n80#1,5:414\n80#1,5:419\n80#1,5:424\n80#1,5:429\n80#1,5:434\n80#1,5:439\n80#1,5:444\n80#1,5:449\n80#1,5:454\n80#1,5:459\n80#1,5:464\n80#1,5:469\n80#1,5:474\n80#1,5:479\n80#1,5:484\n*S KotlinDebug\n*F\n+ 1 RecordingInputConnection.android.kt\nandroidx/compose/ui/text/input/RecordingInputConnection\n*L\n139#1:404,5\n175#1:409,5\n180#1:414,5\n186#1:419,5\n194#1:424,5\n205#1:429,5\n211#1:434,5\n217#1:439,5\n223#1:444,5\n259#1:449,5\n295#1:454,5\n321#1:459,5\n344#1:464,5\n354#1:469,5\n366#1:474,5\n386#1:479,5\n395#1:484,5\n*E\n"
+    value = "SMAP\nRecordingInputConnection.android.kt\nKotlin\n*S Kotlin\n*F\n+ 1 RecordingInputConnection.android.kt\nandroidx/compose/ui/text/input/RecordingInputConnection\n*L\n1#1,453:1\n81#1,5:454\n81#1,5:459\n81#1,5:464\n81#1,5:469\n81#1,5:474\n81#1,5:479\n81#1,5:484\n81#1,5:489\n81#1,5:494\n81#1,5:499\n81#1,5:504\n81#1,5:509\n81#1,5:514\n81#1,5:519\n81#1,5:524\n81#1,5:529\n81#1,5:534\n*S KotlinDebug\n*F\n+ 1 RecordingInputConnection.android.kt\nandroidx/compose/ui/text/input/RecordingInputConnection\n*L\n140#1:454,5\n176#1:459,5\n181#1:464,5\n187#1:469,5\n195#1:474,5\n206#1:479,5\n212#1:484,5\n218#1:489,5\n224#1:494,5\n260#1:499,5\n344#1:504,5\n370#1:509,5\n393#1:514,5\n403#1:519,5\n415#1:524,5\n435#1:529,5\n444#1:534,5\n*E\n"
 .end annotation
 
 .annotation runtime Lkotlin/Metadata;
@@ -128,6 +128,10 @@
 .end annotation
 
 
+# static fields
+.field public static final $stable:I = 0x8
+
+
 # instance fields
 .field private final autoCorrect:Z
 
@@ -155,30 +159,28 @@
 
 
 # direct methods
+.method static constructor <clinit>()V
+    .locals 0
+
+    return-void
+.end method
+
 .method public constructor <init>(Landroidx/compose/ui/text/input/TextFieldValue;Landroidx/compose/ui/text/input/InputEventCallback2;Z)V
-    .locals 1
+    .locals 0
 
-    const-string v0, "initState"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string v0, "eventCallback"
-
-    invoke-static {p2, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 43
+    .line 44
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 45
+    .line 46
     iput-object p2, p0, Landroidx/compose/ui/text/input/RecordingInputConnection;->eventCallback:Landroidx/compose/ui/text/input/InputEventCallback2;
 
-    .line 46
+    .line 47
     iput-boolean p3, p0, Landroidx/compose/ui/text/input/RecordingInputConnection;->autoCorrect:Z
 
-    .line 53
+    .line 54
     iput-object p1, p0, Landroidx/compose/ui/text/input/RecordingInputConnection;->mTextFieldValue:Landroidx/compose/ui/text/input/TextFieldValue;
 
-    .line 75
+    .line 76
     new-instance p1, Ljava/util/ArrayList;
 
     invoke-direct {p1}, Ljava/util/ArrayList;-><init>()V
@@ -189,7 +191,7 @@
 
     const/4 p1, 0x1
 
-    .line 77
+    .line 78
     iput-boolean p1, p0, Landroidx/compose/ui/text/input/RecordingInputConnection;->isActive:Z
 
     return-void
@@ -198,10 +200,10 @@
 .method private final addEditCommandWithBatch(Landroidx/compose/ui/text/input/EditCommand;)V
     .locals 1
 
-    .line 127
+    .line 128
     invoke-direct {p0}, Landroidx/compose/ui/text/input/RecordingInputConnection;->beginBatchEditInternal()Z
 
-    .line 129
+    .line 130
     :try_start_0
     iget-object v0, p0, Landroidx/compose/ui/text/input/RecordingInputConnection;->editCommands:Ljava/util/List;
 
@@ -209,7 +211,7 @@
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 131
+    .line 132
     invoke-direct {p0}, Landroidx/compose/ui/text/input/RecordingInputConnection;->endBatchEditInternal()Z
 
     return-void
@@ -225,7 +227,7 @@
 .method private final beginBatchEditInternal()Z
     .locals 2
 
-    .line 145
+    .line 146
     iget v0, p0, Landroidx/compose/ui/text/input/RecordingInputConnection;->batchDepth:I
 
     const/4 v1, 0x1
@@ -240,7 +242,7 @@
 .method private final endBatchEditInternal()Z
     .locals 3
 
-    .line 155
+    .line 156
     iget v0, p0, Landroidx/compose/ui/text/input/RecordingInputConnection;->batchDepth:I
 
     add-int/lit8 v0, v0, -0x1
@@ -251,7 +253,7 @@
 
     if-nez v0, :cond_0
 
-    .line 156
+    .line 157
     iget-object v0, p0, Landroidx/compose/ui/text/input/RecordingInputConnection;->editCommands:Ljava/util/List;
 
     check-cast v0, Ljava/util/Collection;
@@ -264,7 +266,7 @@
 
     if-eqz v0, :cond_0
 
-    .line 157
+    .line 158
     iget-object v0, p0, Landroidx/compose/ui/text/input/RecordingInputConnection;->eventCallback:Landroidx/compose/ui/text/input/InputEventCallback2;
 
     iget-object v2, p0, Landroidx/compose/ui/text/input/RecordingInputConnection;->editCommands:Ljava/util/List;
@@ -277,12 +279,12 @@
 
     invoke-interface {v0, v2}, Landroidx/compose/ui/text/input/InputEventCallback2;->onEditCommands(Ljava/util/List;)V
 
-    .line 158
+    .line 159
     iget-object v0, p0, Landroidx/compose/ui/text/input/RecordingInputConnection;->editCommands:Ljava/util/List;
 
     invoke-interface {v0}, Ljava/util/List;->clear()V
 
-    .line 160
+    .line 161
     :cond_0
     iget p0, p0, Landroidx/compose/ui/text/input/RecordingInputConnection;->batchDepth:I
 
@@ -308,12 +310,12 @@
         }
     .end annotation
 
-    .line 80
+    .line 81
     iget-boolean p0, p0, Landroidx/compose/ui/text/input/RecordingInputConnection;->isActive:Z
 
     if-eqz p0, :cond_0
 
-    .line 82
+    .line 83
     invoke-interface {p1}, Lkotlin/jvm/functions/Function0;->invoke()Ljava/lang/Object;
 
     :cond_0
@@ -329,7 +331,7 @@
 .method private final sendSynthesizedKeyEvent(I)V
     .locals 2
 
-    .line 317
+    .line 366
     new-instance v0, Landroid/view/KeyEvent;
 
     const/4 v1, 0x0
@@ -338,7 +340,7 @@
 
     invoke-virtual {p0, v0}, Landroidx/compose/ui/text/input/RecordingInputConnection;->sendKeyEvent(Landroid/view/KeyEvent;)Z
 
-    .line 318
+    .line 367
     new-instance v0, Landroid/view/KeyEvent;
 
     const/4 v1, 0x1
@@ -355,12 +357,12 @@
 .method public beginBatchEdit()Z
     .locals 1
 
-    .line 404
+    .line 454
     iget-boolean v0, p0, Landroidx/compose/ui/text/input/RecordingInputConnection;->isActive:Z
 
     if-eqz v0, :cond_0
 
-    .line 141
+    .line 142
     invoke-direct {p0}, Landroidx/compose/ui/text/input/RecordingInputConnection;->beginBatchEditInternal()Z
 
     move-result p0
@@ -374,7 +376,7 @@
 .method public clearMetaKeyStates(I)Z
     .locals 0
 
-    .line 474
+    .line 524
     iget-boolean p0, p0, Landroidx/compose/ui/text/input/RecordingInputConnection;->isActive:Z
 
     if-eqz p0, :cond_0
@@ -388,20 +390,20 @@
 .method public closeConnection()V
     .locals 1
 
-    .line 165
+    .line 166
     iget-object v0, p0, Landroidx/compose/ui/text/input/RecordingInputConnection;->editCommands:Ljava/util/List;
 
     invoke-interface {v0}, Ljava/util/List;->clear()V
 
     const/4 v0, 0x0
 
-    .line 166
+    .line 167
     iput v0, p0, Landroidx/compose/ui/text/input/RecordingInputConnection;->batchDepth:I
 
-    .line 167
+    .line 168
     iput-boolean v0, p0, Landroidx/compose/ui/text/input/RecordingInputConnection;->isActive:Z
 
-    .line 168
+    .line 169
     iget-object v0, p0, Landroidx/compose/ui/text/input/RecordingInputConnection;->eventCallback:Landroidx/compose/ui/text/input/InputEventCallback2;
 
     invoke-interface {v0, p0}, Landroidx/compose/ui/text/input/InputEventCallback2;->onConnectionClosed(Landroidx/compose/ui/text/input/RecordingInputConnection;)V
@@ -412,7 +414,7 @@
 .method public commitCompletion(Landroid/view/inputmethod/CompletionInfo;)Z
     .locals 0
 
-    .line 464
+    .line 514
     iget-boolean p0, p0, Landroidx/compose/ui/text/input/RecordingInputConnection;->isActive:Z
 
     if-eqz p0, :cond_0
@@ -426,11 +428,7 @@
 .method public commitContent(Landroid/view/inputmethod/InputContentInfo;ILandroid/os/Bundle;)Z
     .locals 0
 
-    const-string p2, "inputContentInfo"
-
-    invoke-static {p1, p2}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 484
+    .line 534
     iget-boolean p0, p0, Landroidx/compose/ui/text/input/RecordingInputConnection;->isActive:Z
 
     if-eqz p0, :cond_0
@@ -444,12 +442,12 @@
 .method public commitCorrection(Landroid/view/inputmethod/CorrectionInfo;)Z
     .locals 0
 
-    .line 469
+    .line 519
     iget-boolean p1, p0, Landroidx/compose/ui/text/input/RecordingInputConnection;->isActive:Z
 
     if-eqz p1, :cond_0
 
-    .line 358
+    .line 407
     iget-boolean p0, p0, Landroidx/compose/ui/text/input/RecordingInputConnection;->autoCorrect:Z
 
     return p0
@@ -461,12 +459,12 @@
 .method public commitText(Ljava/lang/CharSequence;I)Z
     .locals 2
 
-    .line 409
+    .line 459
     iget-boolean v0, p0, Landroidx/compose/ui/text/input/RecordingInputConnection;->isActive:Z
 
     if-eqz v0, :cond_0
 
-    .line 177
+    .line 178
     new-instance v1, Landroidx/compose/ui/text/input/CommitTextCommand;
 
     invoke-static {p1}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
@@ -486,12 +484,12 @@
 .method public deleteSurroundingText(II)Z
     .locals 1
 
-    .line 429
+    .line 479
     iget-boolean v0, p0, Landroidx/compose/ui/text/input/RecordingInputConnection;->isActive:Z
 
     if-eqz v0, :cond_0
 
-    .line 207
+    .line 208
     new-instance v0, Landroidx/compose/ui/text/input/DeleteSurroundingTextCommand;
 
     invoke-direct {v0, p1, p2}, Landroidx/compose/ui/text/input/DeleteSurroundingTextCommand;-><init>(II)V
@@ -511,19 +509,19 @@
 .method public deleteSurroundingTextInCodePoints(II)Z
     .locals 1
 
-    .line 424
+    .line 474
     iget-boolean v0, p0, Landroidx/compose/ui/text/input/RecordingInputConnection;->isActive:Z
 
     if-eqz v0, :cond_0
 
-    .line 199
+    .line 200
     new-instance v0, Landroidx/compose/ui/text/input/DeleteSurroundingTextInCodePointsCommand;
 
     invoke-direct {v0, p1, p2}, Landroidx/compose/ui/text/input/DeleteSurroundingTextInCodePointsCommand;-><init>(II)V
 
     check-cast v0, Landroidx/compose/ui/text/input/EditCommand;
 
-    .line 198
+    .line 199
     invoke-direct {p0, v0}, Landroidx/compose/ui/text/input/RecordingInputConnection;->addEditCommandWithBatch(Landroidx/compose/ui/text/input/EditCommand;)V
 
     const/4 p0, 0x1
@@ -537,7 +535,7 @@
 .method public endBatchEdit()Z
     .locals 0
 
-    .line 151
+    .line 152
     invoke-direct {p0}, Landroidx/compose/ui/text/input/RecordingInputConnection;->endBatchEditInternal()Z
 
     move-result p0
@@ -548,12 +546,12 @@
 .method public finishComposingText()Z
     .locals 1
 
-    .line 439
+    .line 489
     iget-boolean v0, p0, Landroidx/compose/ui/text/input/RecordingInputConnection;->isActive:Z
 
     if-eqz v0, :cond_0
 
-    .line 219
+    .line 220
     new-instance v0, Landroidx/compose/ui/text/input/FinishComposingTextCommand;
 
     invoke-direct {v0}, Landroidx/compose/ui/text/input/FinishComposingTextCommand;-><init>()V
@@ -573,7 +571,7 @@
 .method public final getAutoCorrect()Z
     .locals 0
 
-    .line 46
+    .line 47
     iget-boolean p0, p0, Landroidx/compose/ui/text/input/RecordingInputConnection;->autoCorrect:Z
 
     return p0
@@ -582,7 +580,7 @@
 .method public getCursorCapsMode(I)I
     .locals 3
 
-    .line 383
+    .line 432
     iget-object v0, p0, Landroidx/compose/ui/text/input/RecordingInputConnection;->mTextFieldValue:Landroidx/compose/ui/text/input/TextFieldValue;
 
     invoke-virtual {v0}, Landroidx/compose/ui/text/input/TextFieldValue;->getText()Ljava/lang/String;
@@ -611,7 +609,7 @@
 .method public final getEventCallback()Landroidx/compose/ui/text/input/InputEventCallback2;
     .locals 0
 
-    .line 45
+    .line 46
     iget-object p0, p0, Landroidx/compose/ui/text/input/RecordingInputConnection;->eventCallback:Landroidx/compose/ui/text/input/InputEventCallback2;
 
     return-object p0
@@ -633,7 +631,7 @@
     :cond_0
     move v0, v1
 
-    .line 267
+    .line 316
     :goto_0
     iput-boolean v0, p0, Landroidx/compose/ui/text/input/RecordingInputConnection;->extractedTextMonitorMode:Z
 
@@ -641,13 +639,13 @@
 
     if-eqz p1, :cond_1
 
-    .line 269
+    .line 318
     iget v1, p1, Landroid/view/inputmethod/ExtractedTextRequest;->token:I
 
     :cond_1
     iput v1, p0, Landroidx/compose/ui/text/input/RecordingInputConnection;->currentExtractedTextRequestToken:I
 
-    .line 272
+    .line 321
     :cond_2
     iget-object p0, p0, Landroidx/compose/ui/text/input/RecordingInputConnection;->mTextFieldValue:Landroidx/compose/ui/text/input/TextFieldValue;
 
@@ -669,7 +667,7 @@
 .method public final getMTextFieldValue$ui_release()Landroidx/compose/ui/text/input/TextFieldValue;
     .locals 0
 
-    .line 53
+    .line 54
     iget-object p0, p0, Landroidx/compose/ui/text/input/RecordingInputConnection;->mTextFieldValue:Landroidx/compose/ui/text/input/TextFieldValue;
 
     return-object p0
@@ -678,7 +676,7 @@
 .method public getSelectedText(I)Ljava/lang/CharSequence;
     .locals 2
 
-    .line 249
+    .line 250
     iget-object p1, p0, Landroidx/compose/ui/text/input/RecordingInputConnection;->mTextFieldValue:Landroidx/compose/ui/text/input/TextFieldValue;
 
     invoke-virtual {p1}, Landroidx/compose/ui/text/input/TextFieldValue;->getSelection-d9O1mEE()J
@@ -695,7 +693,7 @@
 
     goto :goto_0
 
-    .line 253
+    .line 254
     :cond_0
     iget-object p0, p0, Landroidx/compose/ui/text/input/RecordingInputConnection;->mTextFieldValue:Landroidx/compose/ui/text/input/TextFieldValue;
 
@@ -716,7 +714,7 @@
 .method public getTextAfterCursor(II)Ljava/lang/CharSequence;
     .locals 0
 
-    .line 242
+    .line 243
     iget-object p0, p0, Landroidx/compose/ui/text/input/RecordingInputConnection;->mTextFieldValue:Landroidx/compose/ui/text/input/TextFieldValue;
 
     invoke-static {p0, p1}, Landroidx/compose/ui/text/input/TextFieldValueKt;->getTextAfterSelection(Landroidx/compose/ui/text/input/TextFieldValue;I)Landroidx/compose/ui/text/AnnotatedString;
@@ -727,7 +725,7 @@
 
     move-result-object p0
 
-    .line 244
+    .line 245
     check-cast p0, Ljava/lang/CharSequence;
 
     return-object p0
@@ -736,7 +734,7 @@
 .method public getTextBeforeCursor(II)Ljava/lang/CharSequence;
     .locals 0
 
-    .line 235
+    .line 236
     iget-object p0, p0, Landroidx/compose/ui/text/input/RecordingInputConnection;->mTextFieldValue:Landroidx/compose/ui/text/input/TextFieldValue;
 
     invoke-static {p0, p1}, Landroidx/compose/ui/text/input/TextFieldValueKt;->getTextBeforeSelection(Landroidx/compose/ui/text/input/TextFieldValue;I)Landroidx/compose/ui/text/AnnotatedString;
@@ -747,7 +745,7 @@
 
     move-result-object p0
 
-    .line 237
+    .line 238
     check-cast p0, Ljava/lang/CharSequence;
 
     return-object p0
@@ -756,7 +754,7 @@
 .method public performContextMenuAction(I)Z
     .locals 2
 
-    .line 454
+    .line 504
     iget-boolean v0, p0, Landroidx/compose/ui/text/input/RecordingInputConnection;->isActive:Z
 
     if-eqz v0, :cond_0
@@ -770,7 +768,7 @@
     :pswitch_0
     const/16 p1, 0x117
 
-    .line 304
+    .line 353
     invoke-direct {p0, p1}, Landroidx/compose/ui/text/input/RecordingInputConnection;->sendSynthesizedKeyEvent(I)V
 
     goto :goto_0
@@ -778,7 +776,7 @@
     :pswitch_1
     const/16 p1, 0x116
 
-    .line 303
+    .line 352
     invoke-direct {p0, p1}, Landroidx/compose/ui/text/input/RecordingInputConnection;->sendSynthesizedKeyEvent(I)V
 
     goto :goto_0
@@ -786,12 +784,12 @@
     :pswitch_2
     const/16 p1, 0x115
 
-    .line 302
+    .line 351
     invoke-direct {p0, p1}, Landroidx/compose/ui/text/input/RecordingInputConnection;->sendSynthesizedKeyEvent(I)V
 
     goto :goto_0
 
-    .line 299
+    .line 348
     :pswitch_3
     new-instance p1, Landroidx/compose/ui/text/input/SetSelectionCommand;
 
@@ -827,7 +825,7 @@
 .method public performEditorAction(I)Z
     .locals 2
 
-    .line 459
+    .line 509
     iget-boolean v0, p0, Landroidx/compose/ui/text/input/RecordingInputConnection;->isActive:Z
 
     if-eqz v0, :cond_1
@@ -836,7 +834,7 @@
 
     packed-switch p1, :pswitch_data_0
 
-    .line 332
+    .line 381
     new-instance v0, Ljava/lang/StringBuilder;
 
     const-string v1, "IME sends unsupported Editor Action: "
@@ -855,7 +853,7 @@
 
     invoke-static {v0, p1}, Landroid/util/Log;->w(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 333
+    .line 382
     sget-object p1, Landroidx/compose/ui/text/input/ImeAction;->Companion:Landroidx/compose/ui/text/input/ImeAction$Companion;
 
     invoke-virtual {p1}, Landroidx/compose/ui/text/input/ImeAction$Companion;->getDefault-eUduSuo()I
@@ -864,7 +862,7 @@
 
     goto :goto_0
 
-    .line 328
+    .line 377
     :pswitch_0
     sget-object p1, Landroidx/compose/ui/text/input/ImeAction;->Companion:Landroidx/compose/ui/text/input/ImeAction$Companion;
 
@@ -874,7 +872,7 @@
 
     goto :goto_0
 
-    .line 325
+    .line 374
     :pswitch_1
     sget-object p1, Landroidx/compose/ui/text/input/ImeAction;->Companion:Landroidx/compose/ui/text/input/ImeAction$Companion;
 
@@ -884,7 +882,7 @@
 
     goto :goto_0
 
-    .line 329
+    .line 378
     :pswitch_2
     sget-object p1, Landroidx/compose/ui/text/input/ImeAction;->Companion:Landroidx/compose/ui/text/input/ImeAction$Companion;
 
@@ -894,7 +892,7 @@
 
     goto :goto_0
 
-    .line 326
+    .line 375
     :pswitch_3
     sget-object p1, Landroidx/compose/ui/text/input/ImeAction;->Companion:Landroidx/compose/ui/text/input/ImeAction$Companion;
 
@@ -904,7 +902,7 @@
 
     goto :goto_0
 
-    .line 327
+    .line 376
     :pswitch_4
     sget-object p1, Landroidx/compose/ui/text/input/ImeAction;->Companion:Landroidx/compose/ui/text/input/ImeAction$Companion;
 
@@ -914,7 +912,7 @@
 
     goto :goto_0
 
-    .line 330
+    .line 379
     :pswitch_5
     sget-object p1, Landroidx/compose/ui/text/input/ImeAction;->Companion:Landroidx/compose/ui/text/input/ImeAction$Companion;
 
@@ -924,7 +922,7 @@
 
     goto :goto_0
 
-    .line 324
+    .line 373
     :cond_0
     sget-object p1, Landroidx/compose/ui/text/input/ImeAction;->Companion:Landroidx/compose/ui/text/input/ImeAction$Companion;
 
@@ -932,7 +930,7 @@
 
     move-result p1
 
-    .line 336
+    .line 385
     :goto_0
     iget-object p0, p0, Landroidx/compose/ui/text/input/RecordingInputConnection;->eventCallback:Landroidx/compose/ui/text/input/InputEventCallback2;
 
@@ -959,7 +957,7 @@
 .method public performPrivateCommand(Ljava/lang/String;Landroid/os/Bundle;)Z
     .locals 0
 
-    .line 479
+    .line 529
     iget-boolean p0, p0, Landroidx/compose/ui/text/input/RecordingInputConnection;->isActive:Z
 
     if-eqz p0, :cond_0
@@ -979,39 +977,132 @@
 .end method
 
 .method public requestCursorUpdates(I)Z
-    .locals 0
+    .locals 10
 
-    .line 449
-    iget-boolean p0, p0, Landroidx/compose/ui/text/input/RecordingInputConnection;->isActive:Z
+    .line 499
+    iget-boolean v0, p0, Landroidx/compose/ui/text/input/RecordingInputConnection;->isActive:Z
 
-    if-eqz p0, :cond_0
+    if-eqz v0, :cond_7
 
-    .line 261
-    const-string p0, "RecordingIC"
+    and-int/lit8 v0, p1, 0x1
 
-    const-string p1, "requestCursorUpdates is not supported"
+    const/4 v1, 0x0
 
-    invoke-static {p0, p1}, Landroid/util/Log;->w(Ljava/lang/String;Ljava/lang/String;)I
+    const/4 v2, 0x1
 
-    const/4 p0, 0x0
+    if-eqz v0, :cond_0
+
+    move v4, v2
+
+    goto :goto_0
 
     :cond_0
-    return p0
+    move v4, v1
+
+    :goto_0
+    and-int/lit8 v0, p1, 0x2
+
+    if-eqz v0, :cond_1
+
+    move v5, v2
+
+    goto :goto_1
+
+    :cond_1
+    move v5, v1
+
+    :goto_1
+    and-int/lit8 v0, p1, 0x10
+
+    if-eqz v0, :cond_2
+
+    move v0, v2
+
+    goto :goto_2
+
+    :cond_2
+    move v0, v1
+
+    :goto_2
+    and-int/lit8 v3, p1, 0x8
+
+    if-eqz v3, :cond_3
+
+    move v3, v2
+
+    goto :goto_3
+
+    :cond_3
+    move v3, v1
+
+    :goto_3
+    and-int/lit8 v6, p1, 0x4
+
+    if-eqz v6, :cond_4
+
+    move v6, v2
+
+    goto :goto_4
+
+    :cond_4
+    move v6, v1
+
+    :goto_4
+    and-int/lit8 p1, p1, 0x20
+
+    if-eqz p1, :cond_5
+
+    move v1, v2
+
+    :cond_5
+    if-nez v0, :cond_6
+
+    if-nez v3, :cond_6
+
+    if-nez v6, :cond_6
+
+    if-nez v1, :cond_6
+
+    move v6, v2
+
+    move v7, v6
+
+    move v8, v7
+
+    move v9, v8
+
+    goto :goto_5
+
+    :cond_6
+    move v9, v1
+
+    move v7, v3
+
+    move v8, v6
+
+    move v6, v0
+
+    .line 303
+    :goto_5
+    iget-object v3, p0, Landroidx/compose/ui/text/input/RecordingInputConnection;->eventCallback:Landroidx/compose/ui/text/input/InputEventCallback2;
+
+    invoke-interface/range {v3 .. v9}, Landroidx/compose/ui/text/input/InputEventCallback2;->onRequestCursorAnchorInfo(ZZZZZZ)V
+
+    return v2
+
+    :cond_7
+    return v0
 .end method
 
 .method public sendKeyEvent(Landroid/view/KeyEvent;)Z
     .locals 1
 
-    const-string v0, "event"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 444
+    .line 494
     iget-boolean v0, p0, Landroidx/compose/ui/text/input/RecordingInputConnection;->isActive:Z
 
     if-eqz v0, :cond_0
 
-    .line 225
+    .line 226
     iget-object p0, p0, Landroidx/compose/ui/text/input/RecordingInputConnection;->eventCallback:Landroidx/compose/ui/text/input/InputEventCallback2;
 
     invoke-interface {p0, p1}, Landroidx/compose/ui/text/input/InputEventCallback2;->onKeyEvent(Landroid/view/KeyEvent;)V
@@ -1027,12 +1118,12 @@
 .method public setComposingRegion(II)Z
     .locals 2
 
-    .line 414
+    .line 464
     iget-boolean v0, p0, Landroidx/compose/ui/text/input/RecordingInputConnection;->isActive:Z
 
     if-eqz v0, :cond_0
 
-    .line 182
+    .line 183
     new-instance v1, Landroidx/compose/ui/text/input/SetComposingRegionCommand;
 
     invoke-direct {v1, p1, p2}, Landroidx/compose/ui/text/input/SetComposingRegionCommand;-><init>(II)V
@@ -1048,12 +1139,12 @@
 .method public setComposingText(Ljava/lang/CharSequence;I)Z
     .locals 2
 
-    .line 419
+    .line 469
     iget-boolean v0, p0, Landroidx/compose/ui/text/input/RecordingInputConnection;->isActive:Z
 
     if-eqz v0, :cond_0
 
-    .line 190
+    .line 191
     new-instance v1, Landroidx/compose/ui/text/input/SetComposingTextCommand;
 
     invoke-static {p1}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
@@ -1071,13 +1162,9 @@
 .end method
 
 .method public final setMTextFieldValue$ui_release(Landroidx/compose/ui/text/input/TextFieldValue;)V
-    .locals 1
+    .locals 0
 
-    const-string/jumbo v0, "value"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 56
+    .line 57
     iput-object p1, p0, Landroidx/compose/ui/text/input/RecordingInputConnection;->mTextFieldValue:Landroidx/compose/ui/text/input/TextFieldValue;
 
     return-void
@@ -1086,12 +1173,12 @@
 .method public setSelection(II)Z
     .locals 1
 
-    .line 434
+    .line 484
     iget-boolean v0, p0, Landroidx/compose/ui/text/input/RecordingInputConnection;->isActive:Z
 
     if-eqz v0, :cond_0
 
-    .line 213
+    .line 214
     new-instance v0, Landroidx/compose/ui/text/input/SetSelectionCommand;
 
     invoke-direct {v0, p1, p2}, Landroidx/compose/ui/text/input/SetSelectionCommand;-><init>(II)V
@@ -1111,42 +1198,34 @@
 .method public final updateInputState(Landroidx/compose/ui/text/input/TextFieldValue;Landroidx/compose/ui/text/input/InputMethodManager;)V
     .locals 4
 
-    const-string/jumbo v0, "state"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string v0, "inputMethodManager"
-
-    invoke-static {p2, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 97
+    .line 98
     iget-boolean v0, p0, Landroidx/compose/ui/text/input/RecordingInputConnection;->isActive:Z
 
     if-nez v0, :cond_0
 
     return-void
 
-    .line 101
+    .line 102
     :cond_0
     invoke-virtual {p0, p1}, Landroidx/compose/ui/text/input/RecordingInputConnection;->setMTextFieldValue$ui_release(Landroidx/compose/ui/text/input/TextFieldValue;)V
 
-    .line 103
+    .line 104
     iget-boolean v0, p0, Landroidx/compose/ui/text/input/RecordingInputConnection;->extractedTextMonitorMode:Z
 
     if-eqz v0, :cond_1
 
-    .line 105
+    .line 106
     iget p0, p0, Landroidx/compose/ui/text/input/RecordingInputConnection;->currentExtractedTextRequestToken:I
 
-    .line 106
+    .line 107
     invoke-static {p1}, Landroidx/compose/ui/text/input/InputState_androidKt;->toExtractedText(Landroidx/compose/ui/text/input/TextFieldValue;)Landroid/view/inputmethod/ExtractedText;
 
     move-result-object v0
 
-    .line 104
+    .line 105
     invoke-interface {p2, p0, v0}, Landroidx/compose/ui/text/input/InputMethodManager;->updateExtractedText(ILandroid/view/inputmethod/ExtractedText;)V
 
-    .line 111
+    .line 112
     :cond_1
     invoke-virtual {p1}, Landroidx/compose/ui/text/input/TextFieldValue;->getComposition-MzsxiRA()Landroidx/compose/ui/text/TextRange;
 
@@ -1169,7 +1248,7 @@
     :cond_2
     move p0, v0
 
-    .line 112
+    .line 113
     :goto_0
     invoke-virtual {p1}, Landroidx/compose/ui/text/input/TextFieldValue;->getComposition-MzsxiRA()Landroidx/compose/ui/text/TextRange;
 
@@ -1185,7 +1264,7 @@
 
     move-result v0
 
-    .line 121
+    .line 122
     :cond_3
     invoke-virtual {p1}, Landroidx/compose/ui/text/input/TextFieldValue;->getSelection-d9O1mEE()J
 
@@ -1203,7 +1282,7 @@
 
     move-result p1
 
-    .line 120
+    .line 121
     invoke-interface {p2, v1, p1, p0, v0}, Landroidx/compose/ui/text/input/InputMethodManager;->updateSelection(IIII)V
 
     return-void

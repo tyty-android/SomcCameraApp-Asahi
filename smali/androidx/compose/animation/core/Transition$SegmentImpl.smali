@@ -87,13 +87,13 @@
         }
     .end annotation
 
-    .line 601
+    .line 825
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 602
+    .line 826
     iput-object p1, p0, Landroidx/compose/animation/core/Transition$SegmentImpl;->initialState:Ljava/lang/Object;
 
-    .line 603
+    .line 827
     iput-object p2, p0, Landroidx/compose/animation/core/Transition$SegmentImpl;->targetState:Ljava/lang/Object;
 
     return-void
@@ -104,7 +104,7 @@
 .method public equals(Ljava/lang/Object;)Z
     .locals 2
 
-    .line 606
+    .line 830
     instance-of v0, p1, Landroidx/compose/animation/core/Transition$Segment;
 
     if-eqz v0, :cond_0
@@ -125,7 +125,7 @@
 
     if-eqz v0, :cond_0
 
-    .line 607
+    .line 831
     invoke-virtual {p0}, Landroidx/compose/animation/core/Transition$SegmentImpl;->getTargetState()Ljava/lang/Object;
 
     move-result-object p0
@@ -159,7 +159,7 @@
         }
     .end annotation
 
-    .line 602
+    .line 826
     iget-object p0, p0, Landroidx/compose/animation/core/Transition$SegmentImpl;->initialState:Ljava/lang/Object;
 
     return-object p0
@@ -173,7 +173,7 @@
         }
     .end annotation
 
-    .line 603
+    .line 827
     iget-object p0, p0, Landroidx/compose/animation/core/Transition$SegmentImpl;->targetState:Ljava/lang/Object;
 
     return-object p0
@@ -182,7 +182,7 @@
 .method public hashCode()I
     .locals 2
 
-    .line 611
+    .line 835
     invoke-virtual {p0}, Landroidx/compose/animation/core/Transition$SegmentImpl;->getInitialState()Ljava/lang/Object;
 
     move-result-object v0

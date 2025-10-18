@@ -21,7 +21,7 @@
 .method private constructor <init>()V
     .locals 0
 
-    .line 8221
+    .line 8497
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -40,7 +40,7 @@
 .method public onCropRegionChanged(Landroid/graphics/Rect;)V
     .locals 0
 
-    .line 8229
+    .line 8505
     invoke-static {}, Ljp/co/sony/mc/camera/util/PositionConverter;->getInstance()Ljp/co/sony/mc/camera/util/PositionConverter;
 
     move-result-object p0

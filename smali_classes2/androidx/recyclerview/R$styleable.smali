@@ -60,15 +60,15 @@
         0x10100c4
         0x10100eb
         0x10100f1
-        0x7f0401f2
-        0x7f0401f3
-        0x7f0401f4
-        0x7f0401f5
-        0x7f0401f6
-        0x7f040296
-        0x7f0403dc
-        0x7f04041f
+        0x7f0401fb
+        0x7f0401fc
+        0x7f0401fd
+        0x7f0401fe
+        0x7f0401ff
+        0x7f0402a2
+        0x7f0403eb
         0x7f04042e
+        0x7f04043d
     .end array-data
 .end method
 

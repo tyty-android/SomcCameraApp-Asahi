@@ -46,10 +46,10 @@
 .method public constructor <init>(I)V
     .locals 0
 
-    .line 1033
+    .line 957
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 1034
+    .line 958
     iput p1, p0, Landroidx/compose/ui/layout/FixedCountSubcomposeSlotReusePolicy;->maxSlotsToRetainForReuse:I
 
     return-void
@@ -68,11 +68,7 @@
 .method public getSlotsToRetain(Landroidx/compose/ui/layout/SubcomposeSlotReusePolicy$SlotIdsSet;)V
     .locals 2
 
-    const-string/jumbo v0, "slotIds"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 1038
+    .line 962
     invoke-virtual {p1}, Landroidx/compose/ui/layout/SubcomposeSlotReusePolicy$SlotIdsSet;->size()I
 
     move-result v0
@@ -81,14 +77,14 @@
 
     if-le v0, v1, :cond_1
 
-    .line 1040
+    .line 964
     invoke-virtual {p1}, Landroidx/compose/ui/layout/SubcomposeSlotReusePolicy$SlotIdsSet;->iterator()Ljava/util/Iterator;
 
     move-result-object p1
 
     const/4 v0, 0x0
 
-    .line 1042
+    .line 966
     :cond_0
     :goto_0
     invoke-interface {p1}, Ljava/util/Iterator;->hasNext()Z
@@ -97,17 +93,17 @@
 
     if-eqz v1, :cond_1
 
-    .line 1043
+    .line 967
     invoke-interface {p1}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
     add-int/lit8 v0, v0, 0x1
 
-    .line 1045
+    .line 969
     iget v1, p0, Landroidx/compose/ui/layout/FixedCountSubcomposeSlotReusePolicy;->maxSlotsToRetainForReuse:I
 
     if-le v0, v1, :cond_0
 
-    .line 1046
+    .line 970
     invoke-interface {p1}, Ljava/util/Iterator;->remove()V
 
     goto :goto_0

@@ -38,24 +38,22 @@
         .end subannotation
     .end annotation
 
-    const-string v0, "fontResourceLoader"
-
-    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
     .line 61
-    new-instance v0, Landroidx/compose/ui/text/font/FontFamilyResolverImpl;
+    new-instance v8, Landroidx/compose/ui/text/font/FontFamilyResolverImpl;
 
-    new-instance v1, Landroidx/compose/ui/text/font/DelegatingFontLoaderForDeprecatedUsage;
+    new-instance v0, Landroidx/compose/ui/text/font/DelegatingFontLoaderForDeprecatedUsage;
 
-    invoke-direct {v1, p0}, Landroidx/compose/ui/text/font/DelegatingFontLoaderForDeprecatedUsage;-><init>(Landroidx/compose/ui/text/font/Font$ResourceLoader;)V
+    invoke-direct {v0, p0}, Landroidx/compose/ui/text/font/DelegatingFontLoaderForDeprecatedUsage;-><init>(Landroidx/compose/ui/text/font/Font$ResourceLoader;)V
 
-    move-object v2, v1
+    move-object v1, v0
 
-    check-cast v2, Landroidx/compose/ui/text/font/PlatformFontLoader;
+    check-cast v1, Landroidx/compose/ui/text/font/PlatformFontLoader;
 
-    const/16 v7, 0x1e
+    const/16 v6, 0x1e
 
-    const/4 v8, 0x0
+    const/4 v7, 0x0
+
+    const/4 v2, 0x0
 
     const/4 v3, 0x0
 
@@ -63,15 +61,13 @@
 
     const/4 v5, 0x0
 
-    const/4 v6, 0x0
+    move-object v0, v8
 
-    move-object v1, v0
+    invoke-direct/range {v0 .. v7}, Landroidx/compose/ui/text/font/FontFamilyResolverImpl;-><init>(Landroidx/compose/ui/text/font/PlatformFontLoader;Landroidx/compose/ui/text/font/PlatformResolveInterceptor;Landroidx/compose/ui/text/font/TypefaceRequestCache;Landroidx/compose/ui/text/font/FontListFontFamilyTypefaceAdapter;Landroidx/compose/ui/text/font/PlatformFontFamilyTypefaceAdapter;ILkotlin/jvm/internal/DefaultConstructorMarker;)V
 
-    invoke-direct/range {v1 .. v8}, Landroidx/compose/ui/text/font/FontFamilyResolverImpl;-><init>(Landroidx/compose/ui/text/font/PlatformFontLoader;Landroidx/compose/ui/text/font/PlatformResolveInterceptor;Landroidx/compose/ui/text/font/TypefaceRequestCache;Landroidx/compose/ui/text/font/FontListFontFamilyTypefaceAdapter;Landroidx/compose/ui/text/font/PlatformFontFamilyTypefaceAdapter;ILkotlin/jvm/internal/DefaultConstructorMarker;)V
+    check-cast v8, Landroidx/compose/ui/text/font/FontFamily$Resolver;
 
-    check-cast v0, Landroidx/compose/ui/text/font/FontFamily$Resolver;
-
-    return-object v0
+    return-object v8
 .end method
 
 .method public static final createFontFamilyResolver(Landroidx/compose/ui/text/font/Font$ResourceLoader;Landroid/content/Context;)Landroidx/compose/ui/text/font/FontFamily$Resolver;
@@ -84,37 +80,27 @@
         .end subannotation
     .end annotation
 
-    const-string v0, "fontResourceLoader"
-
-    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string v0, "context"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
     .line 48
-    new-instance v0, Landroidx/compose/ui/text/font/FontFamilyResolverImpl;
+    new-instance v8, Landroidx/compose/ui/text/font/FontFamilyResolverImpl;
 
     .line 49
-    new-instance v1, Landroidx/compose/ui/text/font/DelegatingFontLoaderForBridgeUsage;
+    new-instance v0, Landroidx/compose/ui/text/font/DelegatingFontLoaderForBridgeUsage;
 
     invoke-virtual {p1}, Landroid/content/Context;->getApplicationContext()Landroid/content/Context;
 
     move-result-object p1
 
-    const-string v2, "context.applicationContext"
+    invoke-direct {v0, p0, p1}, Landroidx/compose/ui/text/font/DelegatingFontLoaderForBridgeUsage;-><init>(Landroidx/compose/ui/text/font/Font$ResourceLoader;Landroid/content/Context;)V
 
-    invoke-static {p1, v2}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
+    move-object v1, v0
 
-    invoke-direct {v1, p0, p1}, Landroidx/compose/ui/text/font/DelegatingFontLoaderForBridgeUsage;-><init>(Landroidx/compose/ui/text/font/Font$ResourceLoader;Landroid/content/Context;)V
+    check-cast v1, Landroidx/compose/ui/text/font/PlatformFontLoader;
 
-    move-object v2, v1
+    const/16 v6, 0x1e
 
-    check-cast v2, Landroidx/compose/ui/text/font/PlatformFontLoader;
+    const/4 v7, 0x0
 
-    const/16 v7, 0x1e
-
-    const/4 v8, 0x0
+    const/4 v2, 0x0
 
     const/4 v3, 0x0
 
@@ -122,14 +108,12 @@
 
     const/4 v5, 0x0
 
-    const/4 v6, 0x0
-
-    move-object v1, v0
+    move-object v0, v8
 
     .line 48
-    invoke-direct/range {v1 .. v8}, Landroidx/compose/ui/text/font/FontFamilyResolverImpl;-><init>(Landroidx/compose/ui/text/font/PlatformFontLoader;Landroidx/compose/ui/text/font/PlatformResolveInterceptor;Landroidx/compose/ui/text/font/TypefaceRequestCache;Landroidx/compose/ui/text/font/FontListFontFamilyTypefaceAdapter;Landroidx/compose/ui/text/font/PlatformFontFamilyTypefaceAdapter;ILkotlin/jvm/internal/DefaultConstructorMarker;)V
+    invoke-direct/range {v0 .. v7}, Landroidx/compose/ui/text/font/FontFamilyResolverImpl;-><init>(Landroidx/compose/ui/text/font/PlatformFontLoader;Landroidx/compose/ui/text/font/PlatformResolveInterceptor;Landroidx/compose/ui/text/font/TypefaceRequestCache;Landroidx/compose/ui/text/font/FontListFontFamilyTypefaceAdapter;Landroidx/compose/ui/text/font/PlatformFontFamilyTypefaceAdapter;ILkotlin/jvm/internal/DefaultConstructorMarker;)V
 
-    check-cast v0, Landroidx/compose/ui/text/font/FontFamily$Resolver;
+    check-cast v8, Landroidx/compose/ui/text/font/FontFamily$Resolver;
 
-    return-object v0
+    return-object v8
 .end method

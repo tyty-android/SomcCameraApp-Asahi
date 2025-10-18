@@ -96,9 +96,5 @@
 .method public final invoke(Lkotlin/Unit;Lkotlin/Unit;)Lkotlin/Unit;
     .locals 0
 
-    const-string p0, "<anonymous parameter 1>"
-
-    invoke-static {p2, p0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
     return-object p1
 .end method

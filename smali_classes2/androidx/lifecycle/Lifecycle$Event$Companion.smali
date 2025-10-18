@@ -50,7 +50,7 @@
 .method private constructor <init>()V
     .locals 0
 
-    .line 151
+    .line 174
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -75,7 +75,7 @@
 
     invoke-static {p1, p0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 162
+    .line 185
     sget-object p0, Landroidx/lifecycle/Lifecycle$Event$Companion$WhenMappings;->$EnumSwitchMapping$0:[I
 
     invoke-virtual {p1}, Landroidx/lifecycle/Lifecycle$State;->ordinal()I
@@ -100,19 +100,19 @@
 
     goto :goto_0
 
-    .line 165
+    .line 188
     :cond_0
     sget-object p0, Landroidx/lifecycle/Lifecycle$Event;->ON_PAUSE:Landroidx/lifecycle/Lifecycle$Event;
 
     goto :goto_0
 
-    .line 164
+    .line 187
     :cond_1
     sget-object p0, Landroidx/lifecycle/Lifecycle$Event;->ON_STOP:Landroidx/lifecycle/Lifecycle$Event;
 
     goto :goto_0
 
-    .line 163
+    .line 186
     :cond_2
     sget-object p0, Landroidx/lifecycle/Lifecycle$Event;->ON_DESTROY:Landroidx/lifecycle/Lifecycle$Event;
 
@@ -129,7 +129,7 @@
 
     invoke-static {p1, p0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 180
+    .line 203
     sget-object p0, Landroidx/lifecycle/Lifecycle$Event$Companion$WhenMappings;->$EnumSwitchMapping$0:[I
 
     invoke-virtual {p1}, Landroidx/lifecycle/Lifecycle$State;->ordinal()I
@@ -154,19 +154,19 @@
 
     goto :goto_0
 
-    .line 181
+    .line 204
     :cond_0
     sget-object p0, Landroidx/lifecycle/Lifecycle$Event;->ON_DESTROY:Landroidx/lifecycle/Lifecycle$Event;
 
     goto :goto_0
 
-    .line 183
+    .line 206
     :cond_1
     sget-object p0, Landroidx/lifecycle/Lifecycle$Event;->ON_PAUSE:Landroidx/lifecycle/Lifecycle$Event;
 
     goto :goto_0
 
-    .line 182
+    .line 205
     :cond_2
     sget-object p0, Landroidx/lifecycle/Lifecycle$Event;->ON_STOP:Landroidx/lifecycle/Lifecycle$Event;
 
@@ -183,7 +183,7 @@
 
     invoke-static {p1, p0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 198
+    .line 221
     sget-object p0, Landroidx/lifecycle/Lifecycle$Event$Companion$WhenMappings;->$EnumSwitchMapping$0:[I
 
     invoke-virtual {p1}, Landroidx/lifecycle/Lifecycle$State;->ordinal()I
@@ -208,19 +208,19 @@
 
     goto :goto_0
 
-    .line 199
+    .line 222
     :cond_0
     sget-object p0, Landroidx/lifecycle/Lifecycle$Event;->ON_CREATE:Landroidx/lifecycle/Lifecycle$Event;
 
     goto :goto_0
 
-    .line 201
+    .line 224
     :cond_1
     sget-object p0, Landroidx/lifecycle/Lifecycle$Event;->ON_RESUME:Landroidx/lifecycle/Lifecycle$Event;
 
     goto :goto_0
 
-    .line 200
+    .line 223
     :cond_2
     sget-object p0, Landroidx/lifecycle/Lifecycle$Event;->ON_START:Landroidx/lifecycle/Lifecycle$Event;
 
@@ -237,7 +237,7 @@
 
     invoke-static {p1, p0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 216
+    .line 239
     sget-object p0, Landroidx/lifecycle/Lifecycle$Event$Companion$WhenMappings;->$EnumSwitchMapping$0:[I
 
     invoke-virtual {p1}, Landroidx/lifecycle/Lifecycle$State;->ordinal()I
@@ -262,19 +262,19 @@
 
     goto :goto_0
 
-    .line 219
+    .line 242
     :cond_0
     sget-object p0, Landroidx/lifecycle/Lifecycle$Event;->ON_RESUME:Landroidx/lifecycle/Lifecycle$Event;
 
     goto :goto_0
 
-    .line 218
+    .line 241
     :cond_1
     sget-object p0, Landroidx/lifecycle/Lifecycle$Event;->ON_START:Landroidx/lifecycle/Lifecycle$Event;
 
     goto :goto_0
 
-    .line 217
+    .line 240
     :cond_2
     sget-object p0, Landroidx/lifecycle/Lifecycle$Event;->ON_CREATE:Landroidx/lifecycle/Lifecycle$Event;
 

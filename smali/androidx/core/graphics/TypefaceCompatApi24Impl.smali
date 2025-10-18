@@ -174,53 +174,33 @@
 .end method
 
 .method private static addFontWeightStyle(Ljava/lang/Object;Ljava/nio/ByteBuffer;IIZ)Z
-    .locals 3
-
-    const/4 v0, 0x0
+    .locals 2
 
     .line 111
     :try_start_0
-    sget-object v1, Landroidx/core/graphics/TypefaceCompatApi24Impl;->sAddFontWeightStyle:Ljava/lang/reflect/Method;
-
-    const/4 v2, 0x5
-
-    new-array v2, v2, [Ljava/lang/Object;
-
-    aput-object p1, v2, v0
+    sget-object v0, Landroidx/core/graphics/TypefaceCompatApi24Impl;->sAddFontWeightStyle:Ljava/lang/reflect/Method;
 
     .line 112
     invoke-static {p2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
-    move-result-object p1
-
-    const/4 p2, 0x1
-
-    aput-object p1, v2, p2
-
-    const/4 p1, 0x2
-
-    const/4 p2, 0x0
-
-    aput-object p2, v2, p1
+    move-result-object p2
 
     invoke-static {p3}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
-    move-result-object p1
-
-    const/4 p2, 0x3
-
-    aput-object p1, v2, p2
+    move-result-object p3
 
     invoke-static {p4}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
+    move-result-object p4
+
+    const/4 v1, 0x0
+
+    filled-new-array {p1, p2, v1, p3, p4}, [Ljava/lang/Object;
+
     move-result-object p1
 
-    const/4 p2, 0x4
-
-    aput-object p1, v2, p2
-
     .line 111
-    invoke-virtual {v1, p0, v2}, Ljava/lang/reflect/Method;->invoke(Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v0, p0, p1}, Ljava/lang/reflect/Method;->invoke(Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p0
 
@@ -237,7 +217,9 @@
     return p0
 
     :catch_0
-    return v0
+    const/4 p0, 0x0
+
+    return p0
 .end method
 
 .method private static createFromFamiliesWithDefault(Ljava/lang/Object;)Landroid/graphics/Typeface;

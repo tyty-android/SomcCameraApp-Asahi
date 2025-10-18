@@ -19,5 +19,4 @@ Attiva il WLAN da IMPOSTAZIONI."</string>
     <string name="camera_strings_runtime_permission_rationale_network_cta_txt">"Questa app utilizza la rete WLAN e i dati mobili per inviare i dati dell'utente (ovvero, immagini/video registrati, dati vocali, informazioni sui servizi in uso memorizzate nell'account e così via) su Internet.
 Si noti che il costo dei dati potrebbe venire addebitato a seconda del contratto con il gestore di rete o il provider di servizi Internet."</string>
     <string name="camera_strings_streaming_error_wifi_disconnected_txt">Nessuna connessione WLAN</string>
-    <string name="mv_wireless_network_txt">Usa il WLAN e i dati mobili</string>
 </resources>

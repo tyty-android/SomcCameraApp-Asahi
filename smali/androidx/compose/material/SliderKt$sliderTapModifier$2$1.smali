@@ -53,7 +53,7 @@
     f = "Slider.kt"
     i = {}
     l = {
-        0x38e
+        0x392
     }
     m = "invokeSuspend"
     n = {}
@@ -251,7 +251,7 @@
 
     move-result-object v0
 
-    .line 65535
+    .line 913
     iget v1, p0, Landroidx/compose/material/SliderKt$sliderTapModifier$2$1;->label:I
 
     const/4 v2, 0x1
@@ -282,7 +282,7 @@
 
     check-cast v3, Landroidx/compose/ui/input/pointer/PointerInputScope;
 
-    .line 910
+    .line 914
     new-instance p1, Landroidx/compose/material/SliderKt$sliderTapModifier$2$1$1;
 
     iget-boolean v5, p0, Landroidx/compose/material/SliderKt$sliderTapModifier$2$1;->$isRtl:Z
@@ -339,7 +339,7 @@
 
     return-object v0
 
-    .line 930
+    .line 934
     :cond_2
     :goto_0
     sget-object p0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;

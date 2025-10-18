@@ -35,6 +35,10 @@
 .end annotation
 
 
+# static fields
+.field public static final $stable:I
+
+
 # instance fields
 .field private final height:I
 
@@ -46,22 +50,28 @@
 
 
 # direct methods
+.method static constructor <clinit>()V
+    .locals 0
+
+    return-void
+.end method
+
 .method public constructor <init>(ZIII)V
     .locals 0
 
-    .line 357
+    .line 800
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 359
+    .line 802
     iput-boolean p1, p0, Landroidx/compose/material/FabPlacement;->isDocked:Z
 
-    .line 360
+    .line 803
     iput p2, p0, Landroidx/compose/material/FabPlacement;->left:I
 
-    .line 361
+    .line 804
     iput p3, p0, Landroidx/compose/material/FabPlacement;->width:I
 
-    .line 362
+    .line 805
     iput p4, p0, Landroidx/compose/material/FabPlacement;->height:I
 
     return-void
@@ -72,7 +82,7 @@
 .method public final getHeight()I
     .locals 0
 
-    .line 362
+    .line 805
     iget p0, p0, Landroidx/compose/material/FabPlacement;->height:I
 
     return p0
@@ -81,7 +91,7 @@
 .method public final getLeft()I
     .locals 0
 
-    .line 360
+    .line 803
     iget p0, p0, Landroidx/compose/material/FabPlacement;->left:I
 
     return p0
@@ -90,7 +100,7 @@
 .method public final getWidth()I
     .locals 0
 
-    .line 361
+    .line 804
     iget p0, p0, Landroidx/compose/material/FabPlacement;->width:I
 
     return p0
@@ -99,7 +109,7 @@
 .method public final isDocked()Z
     .locals 0
 
-    .line 359
+    .line 802
     iget-boolean p0, p0, Landroidx/compose/material/FabPlacement;->isDocked:Z
 
     return p0

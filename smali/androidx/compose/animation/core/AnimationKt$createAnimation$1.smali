@@ -83,17 +83,13 @@
         }
     .end annotation
 
-    const-string p0, "it"
-
-    invoke-static {p1, p0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
     return-object p1
 .end method
 
 .method public bridge synthetic invoke(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
 
-    .line 121
+    .line 122
     check-cast p1, Landroidx/compose/animation/core/AnimationVector;
 
     invoke-virtual {p0, p1}, Landroidx/compose/animation/core/AnimationKt$createAnimation$1;->invoke(Landroidx/compose/animation/core/AnimationVector;)Landroidx/compose/animation/core/AnimationVector;

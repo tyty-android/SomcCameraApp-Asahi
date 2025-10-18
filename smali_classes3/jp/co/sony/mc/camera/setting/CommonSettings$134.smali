@@ -21,7 +21,7 @@
 .method constructor <init>()V
     .locals 0
 
-    .line 1357
+    .line 1363
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -42,8 +42,8 @@
         }
     .end annotation
 
-    .line 1361
-    invoke-static {}, Ljp/co/sony/mc/camera/configuration/parameters/RtmpStreamKey;->values()[Ljp/co/sony/mc/camera/configuration/parameters/RtmpStreamKey;
+    .line 1367
+    invoke-static {}, Ljp/co/sony/mc/camera/configuration/parameters/StreamingConnectMode;->getOptions()[Ljp/co/sony/mc/camera/configuration/parameters/StreamingConnectMode;
 
     move-result-object p0
 

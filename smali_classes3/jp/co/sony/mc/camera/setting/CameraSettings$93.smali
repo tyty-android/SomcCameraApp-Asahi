@@ -21,7 +21,7 @@
 .method constructor <init>()V
     .locals 0
 
-    .line 1305
+    .line 1362
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -46,13 +46,13 @@
         }
     .end annotation
 
-    .line 1309
+    .line 1366
     check-cast p1, Ljp/co/sony/mc/camera/setting/CameraSettings;
 
-    .line 1310
-    check-cast p3, Ljp/co/sony/mc/camera/configuration/parameters/ObjectTracking;
+    .line 1367
+    check-cast p3, Ljp/co/sony/mc/camera/configuration/parameters/FocusMode;
 
-    invoke-static {p1, p3}, Ljp/co/sony/mc/camera/setting/CameraSettings;->-$$Nest$msetObjectTracking(Ljp/co/sony/mc/camera/setting/CameraSettings;Ljp/co/sony/mc/camera/configuration/parameters/ObjectTracking;)Z
+    invoke-static {p1, p3}, Ljp/co/sony/mc/camera/setting/CameraSettings;->-$$Nest$msetFocusMode(Ljp/co/sony/mc/camera/setting/CameraSettings;Ljp/co/sony/mc/camera/configuration/parameters/FocusMode;)Z
 
     move-result p0
 

@@ -22,7 +22,7 @@
 .method private constructor <init>(Ljp/co/sony/mc/camera/view/FragmentController$TimerForWaitingEnduranceModeActivate;)V
     .locals 0
 
-    .line 9136
+    .line 9421
     iput-object p1, p0, Ljp/co/sony/mc/camera/view/FragmentController$TimerForWaitingEnduranceModeActivate$TimeoutTask;->this$1:Ljp/co/sony/mc/camera/view/FragmentController$TimerForWaitingEnduranceModeActivate;
 
     invoke-direct {p0}, Ljava/util/TimerTask;-><init>()V
@@ -43,7 +43,7 @@
 .method public run()V
     .locals 4
 
-    .line 9138
+    .line 9423
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/FragmentController$TimerForWaitingEnduranceModeActivate$TimeoutTask;->this$1:Ljp/co/sony/mc/camera/view/FragmentController$TimerForWaitingEnduranceModeActivate;
 
     iget-object v0, v0, Ljp/co/sony/mc/camera/view/FragmentController$TimerForWaitingEnduranceModeActivate;->this$0:Ljp/co/sony/mc/camera/view/FragmentController;
@@ -56,7 +56,7 @@
 
     if-ne v0, v1, :cond_0
 
-    .line 9139
+    .line 9424
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/FragmentController$TimerForWaitingEnduranceModeActivate$TimeoutTask;->this$1:Ljp/co/sony/mc/camera/view/FragmentController$TimerForWaitingEnduranceModeActivate;
 
     iget-object v0, v0, Ljp/co/sony/mc/camera/view/FragmentController$TimerForWaitingEnduranceModeActivate;->this$0:Ljp/co/sony/mc/camera/view/FragmentController;
@@ -69,7 +69,7 @@
 
     invoke-static {v0, v3, v1, v2}, Ljp/co/sony/mc/camera/view/FragmentController;->-$$Nest$msendIntentChangeActivateStateToHpm(Ljp/co/sony/mc/camera/view/FragmentController;Ljava/lang/String;Ljava/lang/String;I)V
 
-    .line 9142
+    .line 9427
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/FragmentController$TimerForWaitingEnduranceModeActivate$TimeoutTask;->this$1:Ljp/co/sony/mc/camera/view/FragmentController$TimerForWaitingEnduranceModeActivate;
 
     iget-object v0, v0, Ljp/co/sony/mc/camera/view/FragmentController$TimerForWaitingEnduranceModeActivate;->this$0:Ljp/co/sony/mc/camera/view/FragmentController;
@@ -78,7 +78,7 @@
 
     invoke-static {v0, v1}, Ljp/co/sony/mc/camera/view/FragmentController;->-$$Nest$fputmEnduranceModeState(Ljp/co/sony/mc/camera/view/FragmentController;Ljp/co/sony/mc/camera/view/FragmentController$EnduranceMode;)V
 
-    .line 9144
+    .line 9429
     :cond_0
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/FragmentController$TimerForWaitingEnduranceModeActivate$TimeoutTask;->this$1:Ljp/co/sony/mc/camera/view/FragmentController$TimerForWaitingEnduranceModeActivate;
 
@@ -90,7 +90,7 @@
 
     invoke-virtual {v0}, Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController;->clear()V
 
-    .line 9145
+    .line 9430
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/FragmentController$TimerForWaitingEnduranceModeActivate$TimeoutTask;->this$1:Ljp/co/sony/mc/camera/view/FragmentController$TimerForWaitingEnduranceModeActivate;
 
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/FragmentController$TimerForWaitingEnduranceModeActivate;->this$0:Ljp/co/sony/mc/camera/view/FragmentController;

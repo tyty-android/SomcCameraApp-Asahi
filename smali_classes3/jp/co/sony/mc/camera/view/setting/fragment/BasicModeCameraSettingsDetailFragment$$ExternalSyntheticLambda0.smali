@@ -3,7 +3,7 @@
 .source "D8$$SyntheticClass"
 
 # interfaces
-.implements Landroid/widget/AdapterView$OnItemClickListener;
+.implements Landroid/view/View$OnClickListener;
 
 
 # instance fields
@@ -24,21 +24,13 @@
 
 
 # virtual methods
-.method public final onItemClick(Landroid/widget/AdapterView;Landroid/view/View;IJ)V
-    .locals 6
+.method public final onClick(Landroid/view/View;)V
+    .locals 0
 
     .line 0
-    iget-object v0, p0, Ljp/co/sony/mc/camera/view/setting/fragment/BasicModeCameraSettingsDetailFragment$$ExternalSyntheticLambda0;->f$0:Ljp/co/sony/mc/camera/view/setting/fragment/BasicModeCameraSettingsDetailFragment;
+    iget-object p0, p0, Ljp/co/sony/mc/camera/view/setting/fragment/BasicModeCameraSettingsDetailFragment$$ExternalSyntheticLambda0;->f$0:Ljp/co/sony/mc/camera/view/setting/fragment/BasicModeCameraSettingsDetailFragment;
 
-    move-object v1, p1
-
-    move-object v2, p2
-
-    move v3, p3
-
-    move-wide v4, p4
-
-    invoke-static/range {v0 .. v5}, Ljp/co/sony/mc/camera/view/setting/fragment/BasicModeCameraSettingsDetailFragment;->$r8$lambda$FXMMjCftJiARdc-jGfYjrBPHHus(Ljp/co/sony/mc/camera/view/setting/fragment/BasicModeCameraSettingsDetailFragment;Landroid/widget/AdapterView;Landroid/view/View;IJ)V
+    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/view/setting/fragment/BasicModeCameraSettingsDetailFragment;->$r8$lambda$R0KFZ5SYFK2ffTbMN5Vp_pxcY3E(Ljp/co/sony/mc/camera/view/setting/fragment/BasicModeCameraSettingsDetailFragment;Landroid/view/View;)V
 
     return-void
 .end method

@@ -29,7 +29,7 @@
 .method private constructor <init>(Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CaptureSessionInfo;)V
     .locals 0
 
-    .line 1061
+    .line 1075
     iput-object p1, p0, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CaptureSessionInfo$YuvHistogramImageAvailableListener;->this$1:Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CaptureSessionInfo;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -48,54 +48,56 @@
 
 # virtual methods
 .method public onImageAvailable(Landroid/media/Image;)V
-    .locals 11
+    .locals 13
 
-    .line 1069
+    .line 1083
     invoke-static {}, Landroid/os/SystemClock;->elapsedRealtime()J
 
     move-result-wide v0
 
-    .line 1070
+    .line 1084
     invoke-virtual {p1}, Landroid/media/Image;->getWidth()I
 
     move-result v8
 
-    .line 1071
+    .line 1085
     invoke-virtual {p1}, Landroid/media/Image;->getHeight()I
 
     move-result v9
 
     const/16 v2, 0x40
 
-    .line 1072
+    .line 1086
     new-array v10, v2, [I
 
-    const/4 v2, 0x0
+    const/4 v11, 0x0
 
-    .line 1073
-    invoke-static {v10, v2}, Ljava/util/Arrays;->fill([II)V
+    .line 1087
+    invoke-static {v10, v11}, Ljava/util/Arrays;->fill([II)V
 
-    .line 1074
+    .line 1088
     invoke-virtual {p1}, Landroid/media/Image;->getPlanes()[Landroid/media/Image$Plane;
 
     move-result-object p1
 
-    aget-object p1, p1, v2
+    aget-object p1, p1, v11
 
-    .line 1076
+    .line 1090
     sget-boolean v2, Ljp/co/sony/mc/camera/util/CamLog;->VERBOSE:Z
+
+    const/4 v12, 0x1
 
     if-eqz v2, :cond_0
 
-    const-string v2, "Start convert"
+    new-array v2, v12, [Ljava/lang/String;
 
-    filled-new-array {v2}, [Ljava/lang/String;
+    const-string v3, "Start convert"
 
-    move-result-object v2
+    aput-object v3, v2, v11
 
     invoke-static {v2}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
-    .line 1078
+    .line 1092
     :cond_0
     invoke-virtual {p1}, Landroid/media/Image$Plane;->getBuffer()Ljava/nio/ByteBuffer;
 
@@ -105,7 +107,7 @@
 
     move-result v6
 
-    .line 1079
+    .line 1093
     invoke-virtual {p1}, Landroid/media/Image$Plane;->getPixelStride()I
 
     move-result v7
@@ -116,23 +118,23 @@
 
     move v4, v9
 
-    .line 1077
+    .line 1091
     invoke-static/range {v2 .. v7}, Ljp/co/sony/mc/camera/device/ImageConverter;->getHistogramData([IIILjava/nio/ByteBuffer;II)V
 
-    .line 1080
+    .line 1094
     sget-boolean p1, Ljp/co/sony/mc/camera/util/CamLog;->VERBOSE:Z
 
     if-eqz p1, :cond_1
 
-    const-string p1, "Finished convert."
+    new-array p1, v12, [Ljava/lang/String;
 
-    filled-new-array {p1}, [Ljava/lang/String;
+    const-string v2, "Finished convert."
 
-    move-result-object p1
+    aput-object v2, p1, v11
 
     invoke-static {p1}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
-    .line 1082
+    .line 1096
     :cond_1
     iget-object p1, p0, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CaptureSessionInfo$YuvHistogramImageAvailableListener;->this$1:Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CaptureSessionInfo;
 
@@ -148,7 +150,7 @@
 
     invoke-virtual {p1, v2}, Landroid/os/Handler;->post(Ljava/lang/Runnable;)Z
 
-    .line 1091
+    .line 1105
     iget-object p1, p0, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CaptureSessionInfo$YuvHistogramImageAvailableListener;->this$1:Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CaptureSessionInfo;
 
     iget-object p1, p1, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CaptureSessionInfo;->this$0:Ljp/co/sony/mc/camera/device/state/DeviceStateContext;
@@ -167,7 +169,7 @@
 
     invoke-virtual {p1, v2}, Landroid/os/Handler;->removeCallbacks(Ljava/lang/Runnable;)V
 
-    .line 1092
+    .line 1106
     iget-object p1, p0, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CaptureSessionInfo$YuvHistogramImageAvailableListener;->this$1:Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CaptureSessionInfo;
 
     iget-object p1, p1, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CaptureSessionInfo;->this$0:Ljp/co/sony/mc/camera/device/state/DeviceStateContext;
@@ -182,7 +184,7 @@
 
     iget-object p1, p1, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CaptureSessionInfo;->this$0:Ljp/co/sony/mc/camera/device/state/DeviceStateContext;
 
-    .line 1093
+    .line 1107
     invoke-virtual {p1}, Ljp/co/sony/mc/camera/device/state/DeviceStateContext;->getCameraInfo()Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CameraDeviceInfo;
 
     move-result-object p1
@@ -191,14 +193,14 @@
 
     move-result-object p1
 
-    .line 1092
+    .line 1106
     invoke-static {p1}, Ljp/co/sony/mc/camera/util/capability/PlatformCapability;->isHistogramSupported(Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;)Z
 
     move-result p1
 
     if-nez p1, :cond_2
 
-    .line 1094
+    .line 1108
     iget-object p1, p0, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CaptureSessionInfo$YuvHistogramImageAvailableListener;->this$1:Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CaptureSessionInfo;
 
     iget-object p1, p1, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CaptureSessionInfo;->this$0:Ljp/co/sony/mc/camera/device/state/DeviceStateContext;
@@ -219,17 +221,19 @@
 
     invoke-virtual {p1, p0, v2, v3}, Landroid/os/Handler;->postDelayed(Ljava/lang/Runnable;J)Z
 
-    .line 1097
+    .line 1111
     :cond_2
     sget-boolean p0, Ljp/co/sony/mc/camera/util/CamLog;->VERBOSE:Z
 
     if-eqz p0, :cond_3
 
-    new-instance p0, Ljava/lang/StringBuilder;
+    new-array p0, v12, [Ljava/lang/String;
 
-    const-string p1, "Duration = "
+    new-instance p1, Ljava/lang/StringBuilder;
 
-    invoke-direct {p0, p1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+    const-string v2, "Duration = "
+
+    invoke-direct {p1, v2}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
     invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
 
@@ -237,17 +241,15 @@
 
     sub-long/2addr v2, v0
 
-    invoke-virtual {p0, v2, v3}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
+    invoke-virtual {p1, v2, v3}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
 
-    move-result-object p0
+    move-result-object p1
 
-    invoke-virtual {p0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-virtual {p1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    move-result-object p0
+    move-result-object p1
 
-    filled-new-array {p0}, [Ljava/lang/String;
-
-    move-result-object p0
+    aput-object p1, p0, v11
 
     invoke-static {p0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 

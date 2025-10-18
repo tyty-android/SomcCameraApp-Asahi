@@ -22,7 +22,7 @@
 .method static constructor <clinit>()V
     .locals 3
 
-    .line 503
+    .line 611
     invoke-static {}, Ljp/co/sony/mc/camera/util/KeyEventTranslator$TranslatedKeyCode;->values()[Ljp/co/sony/mc/camera/util/KeyEventTranslator$TranslatedKeyCode;
 
     move-result-object v0
@@ -34,7 +34,7 @@
     sput-object v0, Ljp/co/sony/mc/camera/view/EventProcedure$1;->$SwitchMap$jp$co$sony$mc$camera$util$KeyEventTranslator$TranslatedKeyCode:[I
 
     :try_start_0
-    sget-object v1, Ljp/co/sony/mc/camera/util/KeyEventTranslator$TranslatedKeyCode;->ZOOM_UP_KEY:Ljp/co/sony/mc/camera/util/KeyEventTranslator$TranslatedKeyCode;
+    sget-object v1, Ljp/co/sony/mc/camera/util/KeyEventTranslator$TranslatedKeyCode;->FOCUS_AND_SHUTTER_DOWN_KEY:Ljp/co/sony/mc/camera/util/KeyEventTranslator$TranslatedKeyCode;
 
     invoke-virtual {v1}, Ljp/co/sony/mc/camera/util/KeyEventTranslator$TranslatedKeyCode;->ordinal()I
 
@@ -50,7 +50,7 @@
     :try_start_1
     sget-object v0, Ljp/co/sony/mc/camera/view/EventProcedure$1;->$SwitchMap$jp$co$sony$mc$camera$util$KeyEventTranslator$TranslatedKeyCode:[I
 
-    sget-object v1, Ljp/co/sony/mc/camera/util/KeyEventTranslator$TranslatedKeyCode;->ZOOM_DOWN_KEY:Ljp/co/sony/mc/camera/util/KeyEventTranslator$TranslatedKeyCode;
+    sget-object v1, Ljp/co/sony/mc/camera/util/KeyEventTranslator$TranslatedKeyCode;->FOCUS_AND_SHUTTER_UP_KEY:Ljp/co/sony/mc/camera/util/KeyEventTranslator$TranslatedKeyCode;
 
     invoke-virtual {v1}, Ljp/co/sony/mc/camera/util/KeyEventTranslator$TranslatedKeyCode;->ordinal()I
 
@@ -66,7 +66,7 @@
     :try_start_2
     sget-object v0, Ljp/co/sony/mc/camera/view/EventProcedure$1;->$SwitchMap$jp$co$sony$mc$camera$util$KeyEventTranslator$TranslatedKeyCode:[I
 
-    sget-object v1, Ljp/co/sony/mc/camera/util/KeyEventTranslator$TranslatedKeyCode;->VOLUME:Ljp/co/sony/mc/camera/util/KeyEventTranslator$TranslatedKeyCode;
+    sget-object v1, Ljp/co/sony/mc/camera/util/KeyEventTranslator$TranslatedKeyCode;->ZOOM_UP_KEY:Ljp/co/sony/mc/camera/util/KeyEventTranslator$TranslatedKeyCode;
 
     invoke-virtual {v1}, Ljp/co/sony/mc/camera/util/KeyEventTranslator$TranslatedKeyCode;->ordinal()I
 
@@ -82,7 +82,7 @@
     :try_start_3
     sget-object v0, Ljp/co/sony/mc/camera/view/EventProcedure$1;->$SwitchMap$jp$co$sony$mc$camera$util$KeyEventTranslator$TranslatedKeyCode:[I
 
-    sget-object v1, Ljp/co/sony/mc/camera/util/KeyEventTranslator$TranslatedKeyCode;->FOCUS:Ljp/co/sony/mc/camera/util/KeyEventTranslator$TranslatedKeyCode;
+    sget-object v1, Ljp/co/sony/mc/camera/util/KeyEventTranslator$TranslatedKeyCode;->ZOOM_DOWN_KEY:Ljp/co/sony/mc/camera/util/KeyEventTranslator$TranslatedKeyCode;
 
     invoke-virtual {v1}, Ljp/co/sony/mc/camera/util/KeyEventTranslator$TranslatedKeyCode;->ordinal()I
 
@@ -98,7 +98,7 @@
     :try_start_4
     sget-object v0, Ljp/co/sony/mc/camera/view/EventProcedure$1;->$SwitchMap$jp$co$sony$mc$camera$util$KeyEventTranslator$TranslatedKeyCode:[I
 
-    sget-object v1, Ljp/co/sony/mc/camera/util/KeyEventTranslator$TranslatedKeyCode;->FOCUS_AND_SHUTTER_UP_KEY:Ljp/co/sony/mc/camera/util/KeyEventTranslator$TranslatedKeyCode;
+    sget-object v1, Ljp/co/sony/mc/camera/util/KeyEventTranslator$TranslatedKeyCode;->VOLUME:Ljp/co/sony/mc/camera/util/KeyEventTranslator$TranslatedKeyCode;
 
     invoke-virtual {v1}, Ljp/co/sony/mc/camera/util/KeyEventTranslator$TranslatedKeyCode;->ordinal()I
 
@@ -114,7 +114,7 @@
     :try_start_5
     sget-object v0, Ljp/co/sony/mc/camera/view/EventProcedure$1;->$SwitchMap$jp$co$sony$mc$camera$util$KeyEventTranslator$TranslatedKeyCode:[I
 
-    sget-object v1, Ljp/co/sony/mc/camera/util/KeyEventTranslator$TranslatedKeyCode;->FOCUS_AND_SHUTTER_DOWN_KEY:Ljp/co/sony/mc/camera/util/KeyEventTranslator$TranslatedKeyCode;
+    sget-object v1, Ljp/co/sony/mc/camera/util/KeyEventTranslator$TranslatedKeyCode;->FOCUS:Ljp/co/sony/mc/camera/util/KeyEventTranslator$TranslatedKeyCode;
 
     invoke-virtual {v1}, Ljp/co/sony/mc/camera/util/KeyEventTranslator$TranslatedKeyCode;->ordinal()I
 

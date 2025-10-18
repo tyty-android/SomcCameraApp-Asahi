@@ -48,8 +48,6 @@
 
 
 # instance fields
-.field final synthetic $$dirty:I
-
 .field final synthetic $content:Lkotlin/jvm/functions/Function2;
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -64,7 +62,7 @@
 
 
 # direct methods
-.method constructor <init>(Lkotlin/jvm/functions/Function2;I)V
+.method constructor <init>(Lkotlin/jvm/functions/Function2;)V
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -75,13 +73,11 @@
             "-",
             "Ljava/lang/Integer;",
             "Lkotlin/Unit;",
-            ">;I)V"
+            ">;)V"
         }
     .end annotation
 
     iput-object p1, p0, Landroidx/compose/material/MaterialThemeKt$MaterialTheme$1$1;->$content:Lkotlin/jvm/functions/Function2;
-
-    iput p2, p0, Landroidx/compose/material/MaterialThemeKt$MaterialTheme$1$1;->$$dirty:I
 
     const/4 p1, 0x2
 
@@ -148,22 +144,18 @@
 
     const/4 v0, -0x1
 
-    const-string v1, "androidx.compose.material.MaterialTheme.<anonymous>.<anonymous> (MaterialTheme.kt:80)"
+    const-string v1, "androidx.compose.material.MaterialTheme.<anonymous>.<anonymous> (MaterialTheme.kt:81)"
 
     const v2, 0xad0597a
 
     invoke-static {v2, p2, v0, v1}, Landroidx/compose/runtime/ComposerKt;->traceEventStart(IIILjava/lang/String;)V
 
     :cond_2
-    iget-object p2, p0, Landroidx/compose/material/MaterialThemeKt$MaterialTheme$1$1;->$content:Lkotlin/jvm/functions/Function2;
+    iget-object p0, p0, Landroidx/compose/material/MaterialThemeKt$MaterialTheme$1$1;->$content:Lkotlin/jvm/functions/Function2;
 
-    iget p0, p0, Landroidx/compose/material/MaterialThemeKt$MaterialTheme$1$1;->$$dirty:I
+    const/4 p2, 0x0
 
-    shr-int/lit8 p0, p0, 0x9
-
-    and-int/lit8 p0, p0, 0xe
-
-    invoke-static {p2, p1, p0}, Landroidx/compose/material/MaterialTheme_androidKt;->PlatformMaterialTheme(Lkotlin/jvm/functions/Function2;Landroidx/compose/runtime/Composer;I)V
+    invoke-static {p0, p1, p2}, Landroidx/compose/material/MaterialTheme_androidKt;->PlatformMaterialTheme(Lkotlin/jvm/functions/Function2;Landroidx/compose/runtime/Composer;I)V
 
     invoke-static {}, Landroidx/compose/runtime/ComposerKt;->isTraceInProgress()Z
 

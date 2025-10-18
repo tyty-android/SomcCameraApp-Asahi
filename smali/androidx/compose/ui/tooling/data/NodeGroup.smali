@@ -1,6 +1,6 @@
 .class public final Landroidx/compose/ui/tooling/data/NodeGroup;
 .super Landroidx/compose/ui/tooling/data/Group;
-.source "SlotTree.kt"
+.source "SlotTree.jvm.kt"
 
 
 # annotations
@@ -65,7 +65,7 @@
 .end method
 
 .method public constructor <init>(Ljava/lang/Object;Ljava/lang/Object;Landroidx/compose/ui/unit/IntRect;Ljava/util/Collection;Ljava/util/List;Ljava/util/Collection;)V
-    .locals 13
+    .locals 11
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -88,36 +88,6 @@
 
     move-object v10, p0
 
-    move-object v11, p2
-
-    move-object/from16 v12, p5
-
-    const-string v0, "node"
-
-    invoke-static {p2, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string v0, "box"
-
-    move-object/from16 v5, p3
-
-    invoke-static {v5, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string v0, "data"
-
-    move-object/from16 v6, p4
-
-    invoke-static {v6, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string v0, "modifierInfo"
-
-    invoke-static {v12, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string v0, "children"
-
-    move-object/from16 v7, p6
-
-    invoke-static {v7, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
     const/4 v8, 0x0
 
     const/4 v9, 0x0
@@ -132,14 +102,24 @@
 
     move-object v1, p1
 
-    .line 169
+    move-object v5, p3
+
+    move-object v6, p4
+
+    move-object/from16 v7, p6
+
+    .line 171
     invoke-direct/range {v0 .. v9}, Landroidx/compose/ui/tooling/data/Group;-><init>(Ljava/lang/Object;Ljava/lang/String;Landroidx/compose/ui/tooling/data/SourceLocation;Ljava/lang/Object;Landroidx/compose/ui/unit/IntRect;Ljava/util/Collection;Ljava/util/Collection;ZLkotlin/jvm/internal/DefaultConstructorMarker;)V
 
-    .line 164
-    iput-object v11, v10, Landroidx/compose/ui/tooling/data/NodeGroup;->node:Ljava/lang/Object;
+    move-object v0, p2
 
-    .line 167
-    iput-object v12, v10, Landroidx/compose/ui/tooling/data/NodeGroup;->modifierInfo:Ljava/util/List;
+    .line 166
+    iput-object v0, v10, Landroidx/compose/ui/tooling/data/NodeGroup;->node:Ljava/lang/Object;
+
+    move-object/from16 v0, p5
+
+    .line 169
+    iput-object v0, v10, Landroidx/compose/ui/tooling/data/NodeGroup;->modifierInfo:Ljava/util/List;
 
     return-void
 .end method
@@ -157,7 +137,7 @@
         }
     .end annotation
 
-    .line 167
+    .line 169
     iget-object p0, p0, Landroidx/compose/ui/tooling/data/NodeGroup;->modifierInfo:Ljava/util/List;
 
     return-object p0
@@ -166,7 +146,7 @@
 .method public final getNode()Ljava/lang/Object;
     .locals 0
 
-    .line 164
+    .line 166
     iget-object p0, p0, Landroidx/compose/ui/tooling/data/NodeGroup;->node:Ljava/lang/Object;
 
     return-object p0

@@ -30,7 +30,7 @@
         0x0
     }
     l = {
-        0x12c
+        0x130
     }
     m = "loadWithTimeoutOrNull$ui_text_release"
     n = {

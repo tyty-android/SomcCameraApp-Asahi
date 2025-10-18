@@ -82,24 +82,30 @@
 
     move-result p0
 
+    const/4 p1, 0x0
+
     if-eqz p0, :cond_0
 
-    const/4 p0, 0x0
-
     .line 268
-    new-array p0, p0, [Ljp/co/sony/mc/camera/configuration/parameters/Flash;
+    new-array p0, p1, [Ljp/co/sony/mc/camera/configuration/parameters/Flash;
 
     return-object p0
 
-    .line 270
     :cond_0
-    sget-object p0, Ljp/co/sony/mc/camera/configuration/parameters/Flash;->PHOTO_LIGHT_ON_AS_FLASH:Ljp/co/sony/mc/camera/configuration/parameters/Flash;
+    const/4 p0, 0x2
 
-    sget-object p1, Ljp/co/sony/mc/camera/configuration/parameters/Flash;->LED_OFF:Ljp/co/sony/mc/camera/configuration/parameters/Flash;
+    .line 270
+    new-array p0, p0, [Ljp/co/sony/mc/camera/configuration/parameters/Flash;
 
-    filled-new-array {p0, p1}, [Ljp/co/sony/mc/camera/configuration/parameters/Flash;
+    sget-object p2, Ljp/co/sony/mc/camera/configuration/parameters/Flash;->PHOTO_LIGHT_ON_AS_FLASH:Ljp/co/sony/mc/camera/configuration/parameters/Flash;
 
-    move-result-object p0
+    aput-object p2, p0, p1
+
+    const/4 p1, 0x1
+
+    sget-object p2, Ljp/co/sony/mc/camera/configuration/parameters/Flash;->LED_OFF:Ljp/co/sony/mc/camera/configuration/parameters/Flash;
+
+    aput-object p2, p0, p1
 
     return-object p0
 .end method

@@ -3,7 +3,7 @@
 .source "D8$$SyntheticClass"
 
 # interfaces
-.implements Landroid/view/View$OnClickListener;
+.implements Lkotlin/jvm/functions/Function1;
 
 
 # instance fields
@@ -24,13 +24,17 @@
 
 
 # virtual methods
-.method public final onClick(Landroid/view/View;)V
+.method public final invoke(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
 
     .line 0
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/viewbinder/ProModeIsoDialViewBinder$$ExternalSyntheticLambda0;->f$0:Ljp/co/sony/mc/camera/view/viewbinder/ProModeIsoDialViewBinder;
 
-    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/view/viewbinder/ProModeIsoDialViewBinder;->$r8$lambda$SFoQr_0k7w9jhUch65kOyKwu0Xc(Ljp/co/sony/mc/camera/view/viewbinder/ProModeIsoDialViewBinder;Landroid/view/View;)V
+    check-cast p1, [Ljp/co/sony/mc/camera/configuration/parameters/Iso;
 
-    return-void
+    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/view/viewbinder/ProModeIsoDialViewBinder;->$r8$lambda$9DGXeC_cA4ZLoaQ9emax8-obmE0(Ljp/co/sony/mc/camera/view/viewbinder/ProModeIsoDialViewBinder;[Ljp/co/sony/mc/camera/configuration/parameters/Iso;)Lkotlin/Unit;
+
+    move-result-object p0
+
+    return-object p0
 .end method

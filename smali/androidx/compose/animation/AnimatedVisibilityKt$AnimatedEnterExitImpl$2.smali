@@ -3,12 +3,12 @@
 .source "AnimatedVisibility.kt"
 
 # interfaces
-.implements Lkotlin/jvm/functions/Function2;
+.implements Lkotlin/jvm/functions/Function3;
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Landroidx/compose/animation/AnimatedVisibilityKt;->AnimatedEnterExitImpl(Landroidx/compose/animation/core/Transition;Lkotlin/jvm/functions/Function1;Landroidx/compose/ui/Modifier;Landroidx/compose/animation/EnterTransition;Landroidx/compose/animation/ExitTransition;Lkotlin/jvm/functions/Function3;Landroidx/compose/runtime/Composer;I)V
+    value = Landroidx/compose/animation/AnimatedVisibilityKt;->AnimatedEnterExitImpl(Landroidx/compose/animation/core/Transition;Lkotlin/jvm/functions/Function1;Landroidx/compose/ui/Modifier;Landroidx/compose/animation/EnterTransition;Landroidx/compose/animation/ExitTransition;Lkotlin/jvm/functions/Function2;Landroidx/compose/animation/OnLookaheadMeasured;Lkotlin/jvm/functions/Function3;Landroidx/compose/runtime/Composer;II)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -19,15 +19,31 @@
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lkotlin/jvm/internal/Lambda;",
-        "Lkotlin/jvm/functions/Function2<",
-        "Landroidx/compose/runtime/Composer;",
-        "Ljava/lang/Integer;",
-        "Lkotlin/Unit;",
+        "Lkotlin/jvm/functions/Function3<",
+        "Landroidx/compose/ui/layout/MeasureScope;",
+        "Landroidx/compose/ui/layout/Measurable;",
+        "Landroidx/compose/ui/unit/Constraints;",
+        "Landroidx/compose/ui/layout/MeasureResult;",
         ">;"
     }
 .end annotation
 
 .annotation runtime Lkotlin/Metadata;
+    d1 = {
+        "\u0000\u001c\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0002\u0010\u0000\u001a\u00020\u0001\"\u0004\u0008\u0000\u0010\u0002*\u00020\u00032\u0006\u0010\u0004\u001a\u00020\u00052\u0006\u0010\u0006\u001a\u00020\u0007H\n\u00a2\u0006\u0004\u0008\u0008\u0010\t"
+    }
+    d2 = {
+        "<anonymous>",
+        "Landroidx/compose/ui/layout/MeasureResult;",
+        "T",
+        "Landroidx/compose/ui/layout/MeasureScope;",
+        "measurable",
+        "Landroidx/compose/ui/layout/Measurable;",
+        "constraints",
+        "Landroidx/compose/ui/unit/Constraints;",
+        "invoke-3p2s80s",
+        "(Landroidx/compose/ui/layout/MeasureScope;Landroidx/compose/ui/layout/Measurable;J)Landroidx/compose/ui/layout/MeasureResult;"
+    }
     k = 0x3
     mv = {
         0x1,
@@ -39,90 +55,16 @@
 
 
 # instance fields
-.field final synthetic $$changed:I
-
-.field final synthetic $content:Lkotlin/jvm/functions/Function3;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Lkotlin/jvm/functions/Function3<",
-            "Landroidx/compose/animation/AnimatedVisibilityScope;",
-            "Landroidx/compose/runtime/Composer;",
-            "Ljava/lang/Integer;",
-            "Lkotlin/Unit;",
-            ">;"
-        }
-    .end annotation
-.end field
-
-.field final synthetic $enter:Landroidx/compose/animation/EnterTransition;
-
-.field final synthetic $exit:Landroidx/compose/animation/ExitTransition;
-
-.field final synthetic $modifier:Landroidx/compose/ui/Modifier;
-
-.field final synthetic $transition:Landroidx/compose/animation/core/Transition;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Landroidx/compose/animation/core/Transition<",
-            "TT;>;"
-        }
-    .end annotation
-.end field
-
-.field final synthetic $visible:Lkotlin/jvm/functions/Function1;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Lkotlin/jvm/functions/Function1<",
-            "TT;",
-            "Ljava/lang/Boolean;",
-            ">;"
-        }
-    .end annotation
-.end field
+.field final synthetic $onLookaheadMeasured:Landroidx/compose/animation/OnLookaheadMeasured;
 
 
 # direct methods
-.method constructor <init>(Landroidx/compose/animation/core/Transition;Lkotlin/jvm/functions/Function1;Landroidx/compose/ui/Modifier;Landroidx/compose/animation/EnterTransition;Landroidx/compose/animation/ExitTransition;Lkotlin/jvm/functions/Function3;I)V
+.method constructor <init>(Landroidx/compose/animation/OnLookaheadMeasured;)V
     .locals 0
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(",
-            "Landroidx/compose/animation/core/Transition<",
-            "TT;>;",
-            "Lkotlin/jvm/functions/Function1<",
-            "-TT;",
-            "Ljava/lang/Boolean;",
-            ">;",
-            "Landroidx/compose/ui/Modifier;",
-            "Landroidx/compose/animation/EnterTransition;",
-            "Landroidx/compose/animation/ExitTransition;",
-            "Lkotlin/jvm/functions/Function3<",
-            "-",
-            "Landroidx/compose/animation/AnimatedVisibilityScope;",
-            "-",
-            "Landroidx/compose/runtime/Composer;",
-            "-",
-            "Ljava/lang/Integer;",
-            "Lkotlin/Unit;",
-            ">;I)V"
-        }
-    .end annotation
 
-    iput-object p1, p0, Landroidx/compose/animation/AnimatedVisibilityKt$AnimatedEnterExitImpl$2;->$transition:Landroidx/compose/animation/core/Transition;
+    iput-object p1, p0, Landroidx/compose/animation/AnimatedVisibilityKt$AnimatedEnterExitImpl$2;->$onLookaheadMeasured:Landroidx/compose/animation/OnLookaheadMeasured;
 
-    iput-object p2, p0, Landroidx/compose/animation/AnimatedVisibilityKt$AnimatedEnterExitImpl$2;->$visible:Lkotlin/jvm/functions/Function1;
-
-    iput-object p3, p0, Landroidx/compose/animation/AnimatedVisibilityKt$AnimatedEnterExitImpl$2;->$modifier:Landroidx/compose/ui/Modifier;
-
-    iput-object p4, p0, Landroidx/compose/animation/AnimatedVisibilityKt$AnimatedEnterExitImpl$2;->$enter:Landroidx/compose/animation/EnterTransition;
-
-    iput-object p5, p0, Landroidx/compose/animation/AnimatedVisibilityKt$AnimatedEnterExitImpl$2;->$exit:Landroidx/compose/animation/ExitTransition;
-
-    iput-object p6, p0, Landroidx/compose/animation/AnimatedVisibilityKt$AnimatedEnterExitImpl$2;->$content:Lkotlin/jvm/functions/Function3;
-
-    iput p7, p0, Landroidx/compose/animation/AnimatedVisibilityKt$AnimatedEnterExitImpl$2;->$$changed:I
-
-    const/4 p1, 0x2
+    const/4 p1, 0x3
 
     invoke-direct {p0, p1}, Lkotlin/jvm/internal/Lambda;-><init>(I)V
 
@@ -131,50 +73,88 @@
 
 
 # virtual methods
-.method public bridge synthetic invoke(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
-    .locals 0
+.method public bridge synthetic invoke(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 2
 
-    check-cast p1, Landroidx/compose/runtime/Composer;
+    .line 822
+    check-cast p1, Landroidx/compose/ui/layout/MeasureScope;
 
-    check-cast p2, Ljava/lang/Number;
+    check-cast p2, Landroidx/compose/ui/layout/Measurable;
 
-    invoke-virtual {p2}, Ljava/lang/Number;->intValue()I
+    check-cast p3, Landroidx/compose/ui/unit/Constraints;
 
-    move-result p2
+    invoke-virtual {p3}, Landroidx/compose/ui/unit/Constraints;->unbox-impl()J
 
-    invoke-virtual {p0, p1, p2}, Landroidx/compose/animation/AnimatedVisibilityKt$AnimatedEnterExitImpl$2;->invoke(Landroidx/compose/runtime/Composer;I)V
+    move-result-wide v0
 
-    sget-object p0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
+    invoke-virtual {p0, p1, p2, v0, v1}, Landroidx/compose/animation/AnimatedVisibilityKt$AnimatedEnterExitImpl$2;->invoke-3p2s80s(Landroidx/compose/ui/layout/MeasureScope;Landroidx/compose/ui/layout/Measurable;J)Landroidx/compose/ui/layout/MeasureResult;
+
+    move-result-object p0
 
     return-object p0
 .end method
 
-.method public final invoke(Landroidx/compose/runtime/Composer;I)V
-    .locals 8
+.method public final invoke-3p2s80s(Landroidx/compose/ui/layout/MeasureScope;Landroidx/compose/ui/layout/Measurable;J)Landroidx/compose/ui/layout/MeasureResult;
+    .locals 7
 
-    iget-object v0, p0, Landroidx/compose/animation/AnimatedVisibilityKt$AnimatedEnterExitImpl$2;->$transition:Landroidx/compose/animation/core/Transition;
+    .line 823
+    invoke-interface {p2, p3, p4}, Landroidx/compose/ui/layout/Measurable;->measure-BRTryo0(J)Landroidx/compose/ui/layout/Placeable;
 
-    iget-object v1, p0, Landroidx/compose/animation/AnimatedVisibilityKt$AnimatedEnterExitImpl$2;->$visible:Lkotlin/jvm/functions/Function1;
+    move-result-object p2
 
-    iget-object v2, p0, Landroidx/compose/animation/AnimatedVisibilityKt$AnimatedEnterExitImpl$2;->$modifier:Landroidx/compose/ui/Modifier;
+    iget-object p0, p0, Landroidx/compose/animation/AnimatedVisibilityKt$AnimatedEnterExitImpl$2;->$onLookaheadMeasured:Landroidx/compose/animation/OnLookaheadMeasured;
 
-    iget-object v3, p0, Landroidx/compose/animation/AnimatedVisibilityKt$AnimatedEnterExitImpl$2;->$enter:Landroidx/compose/animation/EnterTransition;
+    .line 824
+    invoke-interface {p1}, Landroidx/compose/ui/layout/MeasureScope;->isLookingAhead()Z
 
-    iget-object v4, p0, Landroidx/compose/animation/AnimatedVisibilityKt$AnimatedEnterExitImpl$2;->$exit:Landroidx/compose/animation/ExitTransition;
+    move-result p3
 
-    iget-object v5, p0, Landroidx/compose/animation/AnimatedVisibilityKt$AnimatedEnterExitImpl$2;->$content:Lkotlin/jvm/functions/Function3;
+    if-eqz p3, :cond_0
 
-    iget p0, p0, Landroidx/compose/animation/AnimatedVisibilityKt$AnimatedEnterExitImpl$2;->$$changed:I
+    .line 825
+    invoke-virtual {p2}, Landroidx/compose/ui/layout/Placeable;->getWidth()I
 
-    or-int/lit8 p0, p0, 0x1
+    move-result p3
 
-    invoke-static {p0}, Landroidx/compose/runtime/RecomposeScopeImplKt;->updateChangedFlags(I)I
+    invoke-virtual {p2}, Landroidx/compose/ui/layout/Placeable;->getHeight()I
 
-    move-result v7
+    move-result p4
 
-    move-object v6, p1
+    invoke-static {p3, p4}, Landroidx/compose/ui/unit/IntSizeKt;->IntSize(II)J
 
-    invoke-static/range {v0 .. v7}, Landroidx/compose/animation/AnimatedVisibilityKt;->access$AnimatedEnterExitImpl(Landroidx/compose/animation/core/Transition;Lkotlin/jvm/functions/Function1;Landroidx/compose/ui/Modifier;Landroidx/compose/animation/EnterTransition;Landroidx/compose/animation/ExitTransition;Lkotlin/jvm/functions/Function3;Landroidx/compose/runtime/Composer;I)V
+    move-result-wide p3
 
-    return-void
+    invoke-interface {p0, p3, p4}, Landroidx/compose/animation/OnLookaheadMeasured;->invoke-ozmzZPI(J)V
+
+    .line 827
+    :cond_0
+    invoke-virtual {p2}, Landroidx/compose/ui/layout/Placeable;->getWidth()I
+
+    move-result v1
+
+    invoke-virtual {p2}, Landroidx/compose/ui/layout/Placeable;->getHeight()I
+
+    move-result v2
+
+    new-instance p0, Landroidx/compose/animation/AnimatedVisibilityKt$AnimatedEnterExitImpl$2$1$1;
+
+    invoke-direct {p0, p2}, Landroidx/compose/animation/AnimatedVisibilityKt$AnimatedEnterExitImpl$2$1$1;-><init>(Landroidx/compose/ui/layout/Placeable;)V
+
+    move-object v4, p0
+
+    check-cast v4, Lkotlin/jvm/functions/Function1;
+
+    const/4 v5, 0x4
+
+    const/4 v6, 0x0
+
+    const/4 v3, 0x0
+
+    move-object v0, p1
+
+    invoke-static/range {v0 .. v6}, Landroidx/compose/ui/layout/MeasureScope;->layout$default(Landroidx/compose/ui/layout/MeasureScope;IILjava/util/Map;Lkotlin/jvm/functions/Function1;ILjava/lang/Object;)Landroidx/compose/ui/layout/MeasureResult;
+
+    move-result-object p0
+
+    return-object p0
 .end method

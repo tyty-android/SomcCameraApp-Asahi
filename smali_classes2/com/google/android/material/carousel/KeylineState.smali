@@ -42,23 +42,23 @@
         }
     .end annotation
 
-    .line 59
+    .line 63
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 60
+    .line 64
     iput p1, p0, Lcom/google/android/material/carousel/KeylineState;->itemSize:F
 
-    .line 61
+    .line 65
     invoke-static {p2}, Ljava/util/Collections;->unmodifiableList(Ljava/util/List;)Ljava/util/List;
 
     move-result-object p1
 
     iput-object p1, p0, Lcom/google/android/material/carousel/KeylineState;->keylines:Ljava/util/List;
 
-    .line 62
+    .line 66
     iput p3, p0, Lcom/google/android/material/carousel/KeylineState;->firstFocalKeylineIndex:I
 
-    .line 63
+    .line 67
     iput p4, p0, Lcom/google/android/material/carousel/KeylineState;->lastFocalKeylineIndex:I
 
     return-void
@@ -67,7 +67,7 @@
 .method synthetic constructor <init>(FLjava/util/List;IILcom/google/android/material/carousel/KeylineState$1;)V
     .locals 0
 
-    .line 48
+    .line 52
     invoke-direct {p0, p1, p2, p3, p4}, Lcom/google/android/material/carousel/KeylineState;-><init>(FLjava/util/List;II)V
 
     return-void
@@ -76,7 +76,7 @@
 .method static lerp(Lcom/google/android/material/carousel/KeylineState;Lcom/google/android/material/carousel/KeylineState;F)Lcom/google/android/material/carousel/KeylineState;
     .locals 6
 
-    .line 119
+    .line 163
     invoke-virtual {p0}, Lcom/google/android/material/carousel/KeylineState;->getItemSize()F
 
     move-result v0
@@ -89,17 +89,17 @@
 
     if-nez v0, :cond_2
 
-    .line 123
+    .line 167
     invoke-virtual {p0}, Lcom/google/android/material/carousel/KeylineState;->getKeylines()Ljava/util/List;
 
     move-result-object v0
 
-    .line 124
+    .line 168
     invoke-virtual {p1}, Lcom/google/android/material/carousel/KeylineState;->getKeylines()Ljava/util/List;
 
     move-result-object v1
 
-    .line 125
+    .line 169
     invoke-interface {v0}, Ljava/util/List;->size()I
 
     move-result v2
@@ -110,14 +110,14 @@
 
     if-ne v2, v3, :cond_1
 
-    .line 130
+    .line 174
     new-instance v2, Ljava/util/ArrayList;
 
     invoke-direct {v2}, Ljava/util/ArrayList;-><init>()V
 
     const/4 v3, 0x0
 
-    .line 131
+    .line 175
     :goto_0
     invoke-virtual {p0}, Lcom/google/android/material/carousel/KeylineState;->getKeylines()Ljava/util/List;
 
@@ -129,7 +129,7 @@
 
     if-ge v3, v4, :cond_0
 
-    .line 132
+    .line 176
     invoke-interface {v0, v3}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
     move-result-object v4
@@ -152,7 +152,7 @@
 
     goto :goto_0
 
-    .line 137
+    .line 181
     :cond_0
     invoke-virtual {p0}, Lcom/google/android/material/carousel/KeylineState;->getFirstFocalKeylineIndex()I
 
@@ -162,12 +162,12 @@
 
     move-result v1
 
-    .line 136
+    .line 180
     invoke-static {v0, v1, p2}, Lcom/google/android/material/animation/AnimationUtils;->lerp(IIF)I
 
     move-result v0
 
-    .line 140
+    .line 184
     invoke-virtual {p0}, Lcom/google/android/material/carousel/KeylineState;->getLastFocalKeylineIndex()I
 
     move-result v1
@@ -176,15 +176,15 @@
 
     move-result p1
 
-    .line 139
+    .line 183
     invoke-static {v1, p1, p2}, Lcom/google/android/material/animation/AnimationUtils;->lerp(IIF)I
 
     move-result p1
 
-    .line 142
+    .line 186
     new-instance p2, Lcom/google/android/material/carousel/KeylineState;
 
-    .line 143
+    .line 187
     invoke-virtual {p0}, Lcom/google/android/material/carousel/KeylineState;->getItemSize()F
 
     move-result p0
@@ -193,7 +193,7 @@
 
     return-object p2
 
-    .line 126
+    .line 170
     :cond_1
     new-instance p0, Ljava/lang/IllegalArgumentException;
 
@@ -203,7 +203,7 @@
 
     throw p0
 
-    .line 120
+    .line 164
     :cond_2
     new-instance p0, Ljava/lang/IllegalArgumentException;
 
@@ -214,113 +214,126 @@
     throw p0
 .end method
 
-.method static reverse(Lcom/google/android/material/carousel/KeylineState;)Lcom/google/android/material/carousel/KeylineState;
-    .locals 10
+.method static reverse(Lcom/google/android/material/carousel/KeylineState;F)Lcom/google/android/material/carousel/KeylineState;
+    .locals 11
 
-    .line 156
-    new-instance v0, Lcom/google/android/material/carousel/KeylineState$Builder;
+    .line 202
+    new-instance v6, Lcom/google/android/material/carousel/KeylineState$Builder;
 
+    .line 203
     invoke-virtual {p0}, Lcom/google/android/material/carousel/KeylineState;->getItemSize()F
 
-    move-result v1
+    move-result v0
 
-    invoke-direct {v0, v1}, Lcom/google/android/material/carousel/KeylineState$Builder;-><init>(F)V
+    invoke-direct {v6, v0, p1}, Lcom/google/android/material/carousel/KeylineState$Builder;-><init>(FF)V
 
-    .line 159
-    invoke-virtual {p0}, Lcom/google/android/material/carousel/KeylineState;->getFirstKeyline()Lcom/google/android/material/carousel/KeylineState$Keyline;
+    .line 209
+    invoke-virtual {p0}, Lcom/google/android/material/carousel/KeylineState;->getLastKeyline()Lcom/google/android/material/carousel/KeylineState$Keyline;
 
-    move-result-object v1
+    move-result-object v0
 
-    iget v1, v1, Lcom/google/android/material/carousel/KeylineState$Keyline;->locOffset:F
+    iget v0, v0, Lcom/google/android/material/carousel/KeylineState$Keyline;->locOffset:F
 
-    .line 160
-    invoke-virtual {p0}, Lcom/google/android/material/carousel/KeylineState;->getFirstKeyline()Lcom/google/android/material/carousel/KeylineState$Keyline;
+    sub-float/2addr p1, v0
 
-    move-result-object v2
+    .line 210
+    invoke-virtual {p0}, Lcom/google/android/material/carousel/KeylineState;->getLastKeyline()Lcom/google/android/material/carousel/KeylineState$Keyline;
 
-    iget v2, v2, Lcom/google/android/material/carousel/KeylineState$Keyline;->maskedItemSize:F
+    move-result-object v0
 
-    const/high16 v3, 0x40000000    # 2.0f
+    iget v0, v0, Lcom/google/android/material/carousel/KeylineState$Keyline;->maskedItemSize:F
 
-    div-float/2addr v2, v3
+    const/high16 v7, 0x40000000    # 2.0f
 
-    sub-float/2addr v1, v2
+    div-float/2addr v0, v7
 
-    .line 161
+    sub-float/2addr p1, v0
+
+    .line 211
     invoke-virtual {p0}, Lcom/google/android/material/carousel/KeylineState;->getKeylines()Ljava/util/List;
 
-    move-result-object v2
+    move-result-object v0
 
-    invoke-interface {v2}, Ljava/util/List;->size()I
+    invoke-interface {v0}, Ljava/util/List;->size()I
 
-    move-result v2
+    move-result v0
 
-    const/4 v4, 0x1
+    const/4 v8, 0x1
 
-    sub-int/2addr v2, v4
+    sub-int/2addr v0, v8
+
+    move v9, v0
 
     :goto_0
-    if-ltz v2, :cond_1
+    if-ltz v9, :cond_1
 
-    .line 162
+    .line 212
     invoke-virtual {p0}, Lcom/google/android/material/carousel/KeylineState;->getKeylines()Ljava/util/List;
 
-    move-result-object v5
+    move-result-object v0
 
-    invoke-interface {v5, v2}, Ljava/util/List;->get(I)Ljava/lang/Object;
+    invoke-interface {v0, v9}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
-    move-result-object v5
+    move-result-object v0
 
-    check-cast v5, Lcom/google/android/material/carousel/KeylineState$Keyline;
+    move-object v10, v0
 
-    .line 163
-    iget v6, v5, Lcom/google/android/material/carousel/KeylineState$Keyline;->maskedItemSize:F
+    check-cast v10, Lcom/google/android/material/carousel/KeylineState$Keyline;
 
-    div-float/2addr v6, v3
+    .line 213
+    iget v0, v10, Lcom/google/android/material/carousel/KeylineState$Keyline;->maskedItemSize:F
 
-    add-float/2addr v6, v1
+    div-float/2addr v0, v7
 
-    .line 165
+    add-float v1, p1, v0
+
+    .line 215
     invoke-virtual {p0}, Lcom/google/android/material/carousel/KeylineState;->getFirstFocalKeylineIndex()I
 
-    move-result v7
+    move-result v0
 
-    if-lt v2, v7, :cond_0
+    if-lt v9, v0, :cond_0
 
-    .line 166
+    .line 216
     invoke-virtual {p0}, Lcom/google/android/material/carousel/KeylineState;->getLastFocalKeylineIndex()I
 
-    move-result v7
+    move-result v0
 
-    if-gt v2, v7, :cond_0
+    if-gt v9, v0, :cond_0
 
-    move v7, v4
+    move v4, v8
 
     goto :goto_1
 
     :cond_0
-    const/4 v7, 0x0
+    const/4 v0, 0x0
 
-    .line 167
+    move v4, v0
+
+    .line 217
     :goto_1
-    iget v8, v5, Lcom/google/android/material/carousel/KeylineState$Keyline;->mask:F
+    iget v2, v10, Lcom/google/android/material/carousel/KeylineState$Keyline;->mask:F
 
-    iget v9, v5, Lcom/google/android/material/carousel/KeylineState$Keyline;->maskedItemSize:F
+    iget v3, v10, Lcom/google/android/material/carousel/KeylineState$Keyline;->maskedItemSize:F
 
-    invoke-virtual {v0, v6, v8, v9, v7}, Lcom/google/android/material/carousel/KeylineState$Builder;->addKeyline(FFFZ)Lcom/google/android/material/carousel/KeylineState$Builder;
+    iget-boolean v5, v10, Lcom/google/android/material/carousel/KeylineState$Keyline;->isAnchor:Z
 
-    .line 168
-    iget v5, v5, Lcom/google/android/material/carousel/KeylineState$Keyline;->maskedItemSize:F
+    move-object v0, v6
 
-    add-float/2addr v1, v5
+    invoke-virtual/range {v0 .. v5}, Lcom/google/android/material/carousel/KeylineState$Builder;->addKeyline(FFFZZ)Lcom/google/android/material/carousel/KeylineState$Builder;
 
-    add-int/lit8 v2, v2, -0x1
+    .line 218
+    iget v0, v10, Lcom/google/android/material/carousel/KeylineState$Keyline;->maskedItemSize:F
+
+    add-float/2addr p1, v0
+
+    add-int/lit8 v9, v9, -0x1
 
     goto :goto_0
 
-    .line 171
+    .line 221
     :cond_1
-    invoke-virtual {v0}, Lcom/google/android/material/carousel/KeylineState$Builder;->build()Lcom/google/android/material/carousel/KeylineState;
+    invoke-virtual {v6}, Lcom/google/android/material/carousel/KeylineState$Builder;->build()Lcom/google/android/material/carousel/KeylineState;
 
     move-result-object p0
 
@@ -332,7 +345,7 @@
 .method getFirstFocalKeyline()Lcom/google/android/material/carousel/KeylineState$Keyline;
     .locals 1
 
-    .line 82
+    .line 86
     iget-object v0, p0, Lcom/google/android/material/carousel/KeylineState;->keylines:Ljava/util/List;
 
     iget p0, p0, Lcom/google/android/material/carousel/KeylineState;->firstFocalKeylineIndex:I
@@ -349,7 +362,7 @@
 .method getFirstFocalKeylineIndex()I
     .locals 0
 
-    .line 87
+    .line 91
     iget p0, p0, Lcom/google/android/material/carousel/KeylineState;->firstFocalKeylineIndex:I
 
     return p0
@@ -358,7 +371,7 @@
 .method getFirstKeyline()Lcom/google/android/material/carousel/KeylineState$Keyline;
     .locals 1
 
-    .line 102
+    .line 111
     iget-object p0, p0, Lcom/google/android/material/carousel/KeylineState;->keylines:Ljava/util/List;
 
     const/4 v0, 0x0
@@ -372,10 +385,79 @@
     return-object p0
 .end method
 
+.method getFirstNonAnchorKeyline()Lcom/google/android/material/carousel/KeylineState$Keyline;
+    .locals 3
+
+    const/4 v0, 0x0
+
+    .line 122
+    :goto_0
+    iget-object v1, p0, Lcom/google/android/material/carousel/KeylineState;->keylines:Ljava/util/List;
+
+    invoke-interface {v1}, Ljava/util/List;->size()I
+
+    move-result v1
+
+    if-ge v0, v1, :cond_1
+
+    .line 123
+    iget-object v1, p0, Lcom/google/android/material/carousel/KeylineState;->keylines:Ljava/util/List;
+
+    invoke-interface {v1, v0}, Ljava/util/List;->get(I)Ljava/lang/Object;
+
+    move-result-object v1
+
+    check-cast v1, Lcom/google/android/material/carousel/KeylineState$Keyline;
+
+    .line 124
+    iget-boolean v2, v1, Lcom/google/android/material/carousel/KeylineState$Keyline;->isAnchor:Z
+
+    if-nez v2, :cond_0
+
+    return-object v1
+
+    :cond_0
+    add-int/lit8 v0, v0, 0x1
+
+    goto :goto_0
+
+    :cond_1
+    const/4 p0, 0x0
+
+    return-object p0
+.end method
+
+.method getFocalKeylines()Ljava/util/List;
+    .locals 2
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()",
+            "Ljava/util/List<",
+            "Lcom/google/android/material/carousel/KeylineState$Keyline;",
+            ">;"
+        }
+    .end annotation
+
+    .line 106
+    iget-object v0, p0, Lcom/google/android/material/carousel/KeylineState;->keylines:Ljava/util/List;
+
+    iget v1, p0, Lcom/google/android/material/carousel/KeylineState;->firstFocalKeylineIndex:I
+
+    iget p0, p0, Lcom/google/android/material/carousel/KeylineState;->lastFocalKeylineIndex:I
+
+    add-int/lit8 p0, p0, 0x1
+
+    invoke-interface {v0, v1, p0}, Ljava/util/List;->subList(II)Ljava/util/List;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
 .method getItemSize()F
     .locals 0
 
-    .line 72
+    .line 76
     iget p0, p0, Lcom/google/android/material/carousel/KeylineState;->itemSize:F
 
     return p0
@@ -392,7 +474,7 @@
         }
     .end annotation
 
-    .line 77
+    .line 81
     iget-object p0, p0, Lcom/google/android/material/carousel/KeylineState;->keylines:Ljava/util/List;
 
     return-object p0
@@ -401,7 +483,7 @@
 .method getLastFocalKeyline()Lcom/google/android/material/carousel/KeylineState$Keyline;
     .locals 1
 
-    .line 92
+    .line 96
     iget-object v0, p0, Lcom/google/android/material/carousel/KeylineState;->keylines:Ljava/util/List;
 
     iget p0, p0, Lcom/google/android/material/carousel/KeylineState;->lastFocalKeylineIndex:I
@@ -418,7 +500,7 @@
 .method getLastFocalKeylineIndex()I
     .locals 0
 
-    .line 97
+    .line 101
     iget p0, p0, Lcom/google/android/material/carousel/KeylineState;->lastFocalKeylineIndex:I
 
     return p0
@@ -427,7 +509,7 @@
 .method getLastKeyline()Lcom/google/android/material/carousel/KeylineState$Keyline;
     .locals 1
 
-    .line 107
+    .line 116
     iget-object p0, p0, Lcom/google/android/material/carousel/KeylineState;->keylines:Ljava/util/List;
 
     invoke-interface {p0}, Ljava/util/List;->size()I
@@ -443,4 +525,94 @@
     check-cast p0, Lcom/google/android/material/carousel/KeylineState$Keyline;
 
     return-object p0
+.end method
+
+.method getLastNonAnchorKeyline()Lcom/google/android/material/carousel/KeylineState$Keyline;
+    .locals 3
+
+    .line 134
+    iget-object v0, p0, Lcom/google/android/material/carousel/KeylineState;->keylines:Ljava/util/List;
+
+    invoke-interface {v0}, Ljava/util/List;->size()I
+
+    move-result v0
+
+    add-int/lit8 v0, v0, -0x1
+
+    :goto_0
+    if-ltz v0, :cond_1
+
+    .line 135
+    iget-object v1, p0, Lcom/google/android/material/carousel/KeylineState;->keylines:Ljava/util/List;
+
+    invoke-interface {v1, v0}, Ljava/util/List;->get(I)Ljava/lang/Object;
+
+    move-result-object v1
+
+    check-cast v1, Lcom/google/android/material/carousel/KeylineState$Keyline;
+
+    .line 136
+    iget-boolean v2, v1, Lcom/google/android/material/carousel/KeylineState$Keyline;->isAnchor:Z
+
+    if-nez v2, :cond_0
+
+    return-object v1
+
+    :cond_0
+    add-int/lit8 v0, v0, -0x1
+
+    goto :goto_0
+
+    :cond_1
+    const/4 p0, 0x0
+
+    return-object p0
+.end method
+
+.method getNumberOfNonAnchorKeylines()I
+    .locals 3
+
+    .line 146
+    iget-object v0, p0, Lcom/google/android/material/carousel/KeylineState;->keylines:Ljava/util/List;
+
+    invoke-interface {v0}, Ljava/util/List;->iterator()Ljava/util/Iterator;
+
+    move-result-object v0
+
+    const/4 v1, 0x0
+
+    :cond_0
+    :goto_0
+    invoke-interface {v0}, Ljava/util/Iterator;->hasNext()Z
+
+    move-result v2
+
+    if-eqz v2, :cond_1
+
+    invoke-interface {v0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+
+    move-result-object v2
+
+    check-cast v2, Lcom/google/android/material/carousel/KeylineState$Keyline;
+
+    .line 147
+    iget-boolean v2, v2, Lcom/google/android/material/carousel/KeylineState$Keyline;->isAnchor:Z
+
+    if-eqz v2, :cond_0
+
+    add-int/lit8 v1, v1, 0x1
+
+    goto :goto_0
+
+    .line 151
+    :cond_1
+    iget-object p0, p0, Lcom/google/android/material/carousel/KeylineState;->keylines:Ljava/util/List;
+
+    invoke-interface {p0}, Ljava/util/List;->size()I
+
+    move-result p0
+
+    sub-int/2addr p0, v1
+
+    return p0
 .end method

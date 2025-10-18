@@ -6,7 +6,7 @@
 # annotations
 .annotation runtime Lkotlin/Metadata;
     d1 = {
-        "\u0000.\n\u0000\n\u0002\u0010\u000b\n\u0002\u0018\u0002\n\u0002\u0008\u0005\n\u0002\u0010\u0002\n\u0002\u0008\u0004\n\u0002\u0018\u0002\n\u0002\u0008\u0003\n\u0002\u0018\u0002\n\u0002\u0008\u0003\n\u0002\u0018\u0002\n\u0002\u0008\t\u001a\u000c\u0010\u0000\u001a\u00020\u0001*\u00020\u0002H\u0007\u001a\n\u0010\u0003\u001a\u00020\u0001*\u00020\u0002\u001a\n\u0010\u0004\u001a\u00020\u0001*\u00020\u0002\u001a\n\u0010\u0005\u001a\u00020\u0001*\u00020\u0002\u001a\n\u0010\u0006\u001a\u00020\u0001*\u00020\u0002\u001a\u000c\u0010\u0007\u001a\u00020\u0008*\u00020\u0002H\u0007\u001a\u000c\u0010\t\u001a\u00020\u0008*\u00020\u0002H\u0007\u001a\u000c\u0010\n\u001a\u00020\u0008*\u00020\u0002H\u0007\u001a!\u0010\u000b\u001a\u00020\u0001*\u00020\u00022\u0006\u0010\u000c\u001a\u00020\rH\u0007\u00f8\u0001\u0000\u00f8\u0001\u0001\u00a2\u0006\u0004\u0008\u000e\u0010\u000f\u001a\'\u0010\u000b\u001a\u00020\u0001*\u00020\u00022\u0006\u0010\u000c\u001a\u00020\r2\u0006\u0010\u0010\u001a\u00020\u0011\u00f8\u0001\u0000\u00f8\u0001\u0001\u00a2\u0006\u0004\u0008\u0012\u0010\u0013\u001a\u0012\u0010\u0014\u001a\u00020\u0015*\u00020\u0002\u00f8\u0001\u0001\u00a2\u0006\u0002\u0010\u0016\u001a\u000c\u0010\u0017\u001a\u00020\u0001*\u00020\u0002H\u0007\u001a\u0012\u0010\u0018\u001a\u00020\u0015*\u00020\u0002\u00f8\u0001\u0001\u00a2\u0006\u0002\u0010\u0016\u001a\u001e\u0010\u0019\u001a\u00020\u0015*\u00020\u00022\u0008\u0008\u0002\u0010\u001a\u001a\u00020\u0001H\u0002\u00f8\u0001\u0001\u00a2\u0006\u0002\u0010\u001b\u001a\n\u0010\u001c\u001a\u00020\u0001*\u00020\u0002\u001a\n\u0010\u001d\u001a\u00020\u0001*\u00020\u0002\u0082\u0002\u000b\n\u0005\u0008\u00a1\u001e0\u0001\n\u0002\u0008\u0019\u00a8\u0006\u001e"
+        "\u0000.\n\u0000\n\u0002\u0010\u000b\n\u0002\u0018\u0002\n\u0002\u0008\u0005\n\u0002\u0010\u0002\n\u0002\u0008\u0004\n\u0002\u0018\u0002\n\u0002\u0008\u0003\n\u0002\u0018\u0002\n\u0002\u0008\u0003\n\u0002\u0018\u0002\n\u0002\u0008\t\u001a\u000c\u0010\u0000\u001a\u00020\u0001*\u00020\u0002H\u0007\u001a\n\u0010\u0003\u001a\u00020\u0001*\u00020\u0002\u001a\n\u0010\u0004\u001a\u00020\u0001*\u00020\u0002\u001a\n\u0010\u0005\u001a\u00020\u0001*\u00020\u0002\u001a\n\u0010\u0006\u001a\u00020\u0001*\u00020\u0002\u001a\u000c\u0010\u0007\u001a\u00020\u0008*\u00020\u0002H\u0007\u001a\u000c\u0010\t\u001a\u00020\u0008*\u00020\u0002H\u0007\u001a\u000c\u0010\n\u001a\u00020\u0008*\u00020\u0002H\u0007\u001a\u001e\u0010\u000b\u001a\u00020\u0001*\u00020\u00022\u0006\u0010\u000c\u001a\u00020\rH\u0007\u00f8\u0001\u0000\u00a2\u0006\u0004\u0008\u000e\u0010\u000f\u001a$\u0010\u000b\u001a\u00020\u0001*\u00020\u00022\u0006\u0010\u000c\u001a\u00020\r2\u0006\u0010\u0010\u001a\u00020\u0011\u00f8\u0001\u0000\u00a2\u0006\u0004\u0008\u0012\u0010\u0013\u001a\u000f\u0010\u0014\u001a\u00020\u0015*\u00020\u0002\u00a2\u0006\u0002\u0010\u0016\u001a\u000c\u0010\u0017\u001a\u00020\u0001*\u00020\u0002H\u0007\u001a\u000f\u0010\u0018\u001a\u00020\u0015*\u00020\u0002\u00a2\u0006\u0002\u0010\u0016\u001a\u001b\u0010\u0019\u001a\u00020\u0015*\u00020\u00022\u0008\u0008\u0002\u0010\u001a\u001a\u00020\u0001H\u0002\u00a2\u0006\u0002\u0010\u001b\u001a\n\u0010\u001c\u001a\u00020\u0001*\u00020\u0002\u001a\n\u0010\u001d\u001a\u00020\u0001*\u00020\u0002\u0082\u0002\u0007\n\u0005\u0008\u00a1\u001e0\u0001\u00a8\u0006\u001e"
     }
     d2 = {
         "anyChangeConsumed",
@@ -53,7 +53,7 @@
 
 # direct methods
 .method public static final anyChangeConsumed(Landroidx/compose/ui/input/pointer/PointerInputChange;)Z
-    .locals 1
+    .locals 0
     .annotation runtime Lkotlin/Deprecated;
         message = "Partial consumption has been deprecated. Use isConsumed instead"
         replaceWith = .subannotation Lkotlin/ReplaceWith;
@@ -62,11 +62,7 @@
         .end subannotation
     .end annotation
 
-    const-string v0, "<this>"
-
-    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 953
+    .line 974
     invoke-virtual {p0}, Landroidx/compose/ui/input/pointer/PointerInputChange;->isConsumed()Z
 
     move-result p0
@@ -77,11 +73,7 @@
 .method public static final changedToDown(Landroidx/compose/ui/input/pointer/PointerInputChange;)Z
     .locals 1
 
-    const-string v0, "<this>"
-
-    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 883
+    .line 904
     invoke-virtual {p0}, Landroidx/compose/ui/input/pointer/PointerInputChange;->isConsumed()Z
 
     move-result v0
@@ -114,11 +106,7 @@
 .method public static final changedToDownIgnoreConsumed(Landroidx/compose/ui/input/pointer/PointerInputChange;)Z
     .locals 1
 
-    const-string v0, "<this>"
-
-    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 889
+    .line 910
     invoke-virtual {p0}, Landroidx/compose/ui/input/pointer/PointerInputChange;->getPreviousPressed()Z
 
     move-result v0
@@ -145,11 +133,7 @@
 .method public static final changedToUp(Landroidx/compose/ui/input/pointer/PointerInputChange;)Z
     .locals 1
 
-    const-string v0, "<this>"
-
-    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 895
+    .line 916
     invoke-virtual {p0}, Landroidx/compose/ui/input/pointer/PointerInputChange;->isConsumed()Z
 
     move-result v0
@@ -182,11 +166,7 @@
 .method public static final changedToUpIgnoreConsumed(Landroidx/compose/ui/input/pointer/PointerInputChange;)Z
     .locals 1
 
-    const-string v0, "<this>"
-
-    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 901
+    .line 922
     invoke-virtual {p0}, Landroidx/compose/ui/input/pointer/PointerInputChange;->getPreviousPressed()Z
 
     move-result v0
@@ -211,7 +191,7 @@
 .end method
 
 .method public static final consumeAllChanges(Landroidx/compose/ui/input/pointer/PointerInputChange;)V
-    .locals 1
+    .locals 0
     .annotation runtime Lkotlin/Deprecated;
         message = "Use consume() instead"
         replaceWith = .subannotation Lkotlin/ReplaceWith;
@@ -220,11 +200,7 @@
         .end subannotation
     .end annotation
 
-    const-string v0, "<this>"
-
-    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 987
+    .line 1008
     invoke-virtual {p0}, Landroidx/compose/ui/input/pointer/PointerInputChange;->consume()V
 
     return-void
@@ -240,11 +216,7 @@
         .end subannotation
     .end annotation
 
-    const-string v0, "<this>"
-
-    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 964
+    .line 985
     invoke-virtual {p0}, Landroidx/compose/ui/input/pointer/PointerInputChange;->getPressed()Z
 
     move-result v0
@@ -255,7 +227,7 @@
 
     if-eq v0, v1, :cond_0
 
-    .line 965
+    .line 986
     invoke-virtual {p0}, Landroidx/compose/ui/input/pointer/PointerInputChange;->consume()V
 
     :cond_0
@@ -272,11 +244,7 @@
         .end subannotation
     .end annotation
 
-    const-string v0, "<this>"
-
-    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 977
+    .line 998
     invoke-static {p0}, Landroidx/compose/ui/input/pointer/PointerEventKt;->positionChange(Landroidx/compose/ui/input/pointer/PointerInputChange;)J
 
     move-result-wide v0
@@ -293,7 +261,7 @@
 
     if-nez v0, :cond_0
 
-    .line 978
+    .line 999
     invoke-virtual {p0}, Landroidx/compose/ui/input/pointer/PointerInputChange;->consume()V
 
     :cond_0
@@ -310,31 +278,27 @@
         .end subannotation
     .end annotation
 
-    const-string v0, "$this$isOutOfBounds"
-
-    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 1000
+    .line 1021
     invoke-virtual {p0}, Landroidx/compose/ui/input/pointer/PointerInputChange;->getPosition-F1C5BW0()J
 
     move-result-wide v0
 
-    .line 1001
+    .line 1022
     invoke-static {v0, v1}, Landroidx/compose/ui/geometry/Offset;->getX-impl(J)F
 
     move-result p0
 
-    .line 1002
+    .line 1023
     invoke-static {v0, v1}, Landroidx/compose/ui/geometry/Offset;->getY-impl(J)F
 
     move-result v0
 
-    .line 1003
+    .line 1024
     invoke-static {p1, p2}, Landroidx/compose/ui/unit/IntSize;->getWidth-impl(J)I
 
     move-result v1
 
-    .line 1004
+    .line 1025
     invoke-static {p1, p2}, Landroidx/compose/ui/unit/IntSize;->getHeight-impl(J)I
 
     move-result p1
@@ -379,11 +343,7 @@
 .method public static final isOutOfBounds-jwHxaWs(Landroidx/compose/ui/input/pointer/PointerInputChange;JJ)Z
     .locals 4
 
-    const-string v0, "$this$isOutOfBounds"
-
-    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 1016
+    .line 1037
     invoke-virtual {p0}, Landroidx/compose/ui/input/pointer/PointerInputChange;->getType-T8wyACA()I
 
     move-result v0
@@ -400,37 +360,37 @@
 
     if-nez v0, :cond_0
 
-    .line 1018
+    .line 1039
     invoke-static {p0, p1, p2}, Landroidx/compose/ui/input/pointer/PointerEventKt;->isOutOfBounds-O0kMr_c(Landroidx/compose/ui/input/pointer/PointerInputChange;J)Z
 
     move-result p0
 
     return p0
 
-    .line 1020
+    .line 1041
     :cond_0
     invoke-virtual {p0}, Landroidx/compose/ui/input/pointer/PointerInputChange;->getPosition-F1C5BW0()J
 
     move-result-wide v0
 
-    .line 1021
+    .line 1042
     invoke-static {v0, v1}, Landroidx/compose/ui/geometry/Offset;->getX-impl(J)F
 
     move-result p0
 
-    .line 1022
+    .line 1043
     invoke-static {v0, v1}, Landroidx/compose/ui/geometry/Offset;->getY-impl(J)F
 
     move-result v0
 
-    .line 1023
+    .line 1044
     invoke-static {p3, p4}, Landroidx/compose/ui/geometry/Size;->getWidth-impl(J)F
 
     move-result v1
 
     neg-float v1, v1
 
-    .line 1024
+    .line 1045
     invoke-static {p1, p2}, Landroidx/compose/ui/unit/IntSize;->getWidth-impl(J)I
 
     move-result v2
@@ -443,14 +403,14 @@
 
     add-float/2addr v2, v3
 
-    .line 1025
+    .line 1046
     invoke-static {p3, p4}, Landroidx/compose/ui/geometry/Size;->getHeight-impl(J)F
 
     move-result v3
 
     neg-float v3, v3
 
-    .line 1026
+    .line 1047
     invoke-static {p1, p2}, Landroidx/compose/ui/unit/IntSize;->getHeight-impl(J)I
 
     move-result p1
@@ -497,13 +457,9 @@
 .method public static final positionChange(Landroidx/compose/ui/input/pointer/PointerInputChange;)J
     .locals 2
 
-    const-string v0, "<this>"
-
-    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
     const/4 v0, 0x0
 
-    .line 920
+    .line 941
     invoke-static {p0, v0}, Landroidx/compose/ui/input/pointer/PointerEventKt;->positionChangeInternal(Landroidx/compose/ui/input/pointer/PointerInputChange;Z)J
 
     move-result-wide v0
@@ -512,7 +468,7 @@
 .end method
 
 .method public static final positionChangeConsumed(Landroidx/compose/ui/input/pointer/PointerInputChange;)Z
-    .locals 1
+    .locals 0
     .annotation runtime Lkotlin/Deprecated;
         message = "Partial consumption has been deprecated. Use isConsumed instead"
         replaceWith = .subannotation Lkotlin/ReplaceWith;
@@ -521,11 +477,7 @@
         .end subannotation
     .end annotation
 
-    const-string v0, "<this>"
-
-    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 944
+    .line 965
     invoke-virtual {p0}, Landroidx/compose/ui/input/pointer/PointerInputChange;->isConsumed()Z
 
     move-result p0
@@ -536,13 +488,9 @@
 .method public static final positionChangeIgnoreConsumed(Landroidx/compose/ui/input/pointer/PointerInputChange;)J
     .locals 2
 
-    const-string v0, "<this>"
-
-    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
     const/4 v0, 0x1
 
-    .line 926
+    .line 947
     invoke-static {p0, v0}, Landroidx/compose/ui/input/pointer/PointerEventKt;->positionChangeInternal(Landroidx/compose/ui/input/pointer/PointerInputChange;Z)J
 
     move-result-wide v0
@@ -553,24 +501,24 @@
 .method private static final positionChangeInternal(Landroidx/compose/ui/input/pointer/PointerInputChange;Z)J
     .locals 4
 
-    .line 929
+    .line 950
     invoke-virtual {p0}, Landroidx/compose/ui/input/pointer/PointerInputChange;->getPreviousPosition-F1C5BW0()J
 
     move-result-wide v0
 
-    .line 930
+    .line 951
     invoke-virtual {p0}, Landroidx/compose/ui/input/pointer/PointerInputChange;->getPosition-F1C5BW0()J
 
     move-result-wide v2
 
-    .line 932
+    .line 953
     invoke-static {v2, v3, v0, v1}, Landroidx/compose/ui/geometry/Offset;->minus-MK-Hz9U(JJ)J
 
     move-result-wide v0
 
     if-nez p1, :cond_0
 
-    .line 934
+    .line 955
     invoke-virtual {p0}, Landroidx/compose/ui/input/pointer/PointerInputChange;->isConsumed()Z
 
     move-result p0
@@ -596,7 +544,7 @@
 
     const/4 p1, 0x0
 
-    .line 928
+    .line 949
     :cond_0
     invoke-static {p0, p1}, Landroidx/compose/ui/input/pointer/PointerEventKt;->positionChangeInternal(Landroidx/compose/ui/input/pointer/PointerInputChange;Z)J
 
@@ -608,13 +556,9 @@
 .method public static final positionChanged(Landroidx/compose/ui/input/pointer/PointerInputChange;)Z
     .locals 4
 
-    const-string v0, "<this>"
-
-    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
     const/4 v0, 0x0
 
-    .line 908
+    .line 929
     invoke-static {p0, v0}, Landroidx/compose/ui/input/pointer/PointerEventKt;->positionChangeInternal(Landroidx/compose/ui/input/pointer/PointerInputChange;Z)J
 
     move-result-wide v0
@@ -637,13 +581,9 @@
 .method public static final positionChangedIgnoreConsumed(Landroidx/compose/ui/input/pointer/PointerInputChange;)Z
     .locals 5
 
-    const-string v0, "<this>"
-
-    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
     const/4 v0, 0x1
 
-    .line 915
+    .line 936
     invoke-static {p0, v0}, Landroidx/compose/ui/input/pointer/PointerEventKt;->positionChangeInternal(Landroidx/compose/ui/input/pointer/PointerInputChange;Z)J
 
     move-result-wide v1

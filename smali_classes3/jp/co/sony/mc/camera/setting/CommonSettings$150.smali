@@ -3,7 +3,7 @@
 .source "CommonSettings.java"
 
 # interfaces
-.implements Ljp/co/sony/mc/camera/setting/SettingsBase$GetDefaultCommand;
+.implements Ljp/co/sony/mc/camera/setting/SettingsBase$GetOptionsCommand;
 
 
 # annotations
@@ -21,7 +21,7 @@
 .method constructor <init>()V
     .locals 0
 
-    .line 1474
+    .line 1475
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -29,7 +29,7 @@
 
 
 # virtual methods
-.method public getDefaultValue(Ljp/co/sony/mc/camera/setting/SettingsBase;Ljp/co/sony/mc/camera/setting/SettingKey$Key;)Ljava/lang/Object;
+.method public getOptions(Ljp/co/sony/mc/camera/setting/SettingsBase;Ljp/co/sony/mc/camera/setting/SettingKey$Key;)[Ljava/lang/Object;
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -38,11 +38,16 @@
             ">(",
             "Ljp/co/sony/mc/camera/setting/SettingsBase;",
             "Ljp/co/sony/mc/camera/setting/SettingKey$Key<",
-            "TT;>;)TT;"
+            "TT;>;)[TT;"
         }
     .end annotation
 
-    const/4 p0, 0x0
+    .line 1479
+    invoke-static {}, Ljp/co/sony/mc/camera/configuration/parameters/NetworkUsage;->values()[Ljp/co/sony/mc/camera/configuration/parameters/NetworkUsage;
+
+    move-result-object p0
+
+    check-cast p0, [Ljava/lang/Object;
 
     return-object p0
 .end method

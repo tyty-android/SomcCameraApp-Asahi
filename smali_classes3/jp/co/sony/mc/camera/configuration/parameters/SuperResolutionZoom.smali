@@ -53,7 +53,7 @@
     .line 18
     new-instance v0, Ljp/co/sony/mc/camera/configuration/parameters/SuperResolutionZoom;
 
-    const v1, 0x7f1104ae
+    const v1, 0x7f1104e8
 
     const-string v2, "off"
 
@@ -68,7 +68,7 @@
     .line 21
     new-instance v0, Ljp/co/sony/mc/camera/configuration/parameters/SuperResolutionZoom;
 
-    const v1, 0x7f1104ad
+    const v1, 0x7f1104e7
 
     const-string v2, "auto"
 

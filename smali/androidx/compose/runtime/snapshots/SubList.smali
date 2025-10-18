@@ -21,12 +21,12 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/SourceDebugExtension;
-    value = "SMAP\nSnapshotStateList.kt\nKotlin\n*S Kotlin\n*F\n+ 1 SnapshotStateList.kt\nandroidx/compose/runtime/snapshots/SubList\n+ 2 _Collections.kt\nkotlin/collections/CollectionsKt___CollectionsKt\n*L\n1#1,457:1\n1726#2,3:458\n1855#2,2:461\n*S KotlinDebug\n*F\n+ 1 SnapshotStateList.kt\nandroidx/compose/runtime/snapshots/SubList\n*L\n311#1:458,3\n320#1:461,2\n*E\n"
+    value = "SMAP\nSnapshotStateList.kt\nKotlin\n*S Kotlin\n*F\n+ 1 SnapshotStateList.kt\nandroidx/compose/runtime/snapshots/SubList\n+ 2 _Collections.kt\nkotlin/collections/CollectionsKt___CollectionsKt\n*L\n1#1,484:1\n1726#2,3:485\n1855#2,2:488\n*S KotlinDebug\n*F\n+ 1 SnapshotStateList.kt\nandroidx/compose/runtime/snapshots/SubList\n*L\n336#1:485,3\n345#1:488,2\n*E\n"
 .end annotation
 
 .annotation runtime Lkotlin/Metadata;
     d1 = {
-        "\u0000B\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010!\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0008\n\u0002\u0008\u000b\n\u0002\u0010\u000b\n\u0002\u0008\u0002\n\u0002\u0010\u0002\n\u0002\u0008\u0004\n\u0002\u0010\u001e\n\u0002\u0008\t\n\u0002\u0010)\n\u0002\u0008\u0002\n\u0002\u0010+\n\u0002\u0008\t\u0008\u0002\u0018\u0000*\u0004\u0008\u0000\u0010\u00012\u0008\u0012\u0004\u0012\u0002H\u00010\u0002B#\u0012\u000c\u0010\u0003\u001a\u0008\u0012\u0004\u0012\u00028\u00000\u0004\u0012\u0006\u0010\u0005\u001a\u00020\u0006\u0012\u0006\u0010\u0007\u001a\u00020\u0006\u00a2\u0006\u0002\u0010\u0008J\u0015\u0010\u0011\u001a\u00020\u00122\u0006\u0010\u0013\u001a\u00028\u0000H\u0016\u00a2\u0006\u0002\u0010\u0014J\u001d\u0010\u0011\u001a\u00020\u00152\u0006\u0010\u0016\u001a\u00020\u00062\u0006\u0010\u0013\u001a\u00028\u0000H\u0016\u00a2\u0006\u0002\u0010\u0017J\u001e\u0010\u0018\u001a\u00020\u00122\u0006\u0010\u0016\u001a\u00020\u00062\u000c\u0010\u0019\u001a\u0008\u0012\u0004\u0012\u00028\u00000\u001aH\u0016J\u0016\u0010\u0018\u001a\u00020\u00122\u000c\u0010\u0019\u001a\u0008\u0012\u0004\u0012\u00028\u00000\u001aH\u0016J\u0008\u0010\u001b\u001a\u00020\u0015H\u0016J\u0016\u0010\u001c\u001a\u00020\u00122\u0006\u0010\u0013\u001a\u00028\u0000H\u0096\u0002\u00a2\u0006\u0002\u0010\u0014J\u0016\u0010\u001d\u001a\u00020\u00122\u000c\u0010\u0019\u001a\u0008\u0012\u0004\u0012\u00028\u00000\u001aH\u0016J\u0016\u0010\u001e\u001a\u00028\u00002\u0006\u0010\u0016\u001a\u00020\u0006H\u0096\u0002\u00a2\u0006\u0002\u0010\u001fJ\u0015\u0010 \u001a\u00020\u00062\u0006\u0010\u0013\u001a\u00028\u0000H\u0016\u00a2\u0006\u0002\u0010!J\u0008\u0010\"\u001a\u00020\u0012H\u0016J\u000f\u0010#\u001a\u0008\u0012\u0004\u0012\u00028\u00000$H\u0096\u0002J\u0015\u0010%\u001a\u00020\u00062\u0006\u0010\u0013\u001a\u00028\u0000H\u0016\u00a2\u0006\u0002\u0010!J\u000e\u0010&\u001a\u0008\u0012\u0004\u0012\u00028\u00000\'H\u0016J\u0016\u0010&\u001a\u0008\u0012\u0004\u0012\u00028\u00000\'2\u0006\u0010\u0016\u001a\u00020\u0006H\u0016J\u0015\u0010(\u001a\u00020\u00122\u0006\u0010\u0013\u001a\u00028\u0000H\u0016\u00a2\u0006\u0002\u0010\u0014J\u0016\u0010)\u001a\u00020\u00122\u000c\u0010\u0019\u001a\u0008\u0012\u0004\u0012\u00028\u00000\u001aH\u0016J\u0015\u0010*\u001a\u00028\u00002\u0006\u0010\u0016\u001a\u00020\u0006H\u0016\u00a2\u0006\u0002\u0010\u001fJ\u0016\u0010+\u001a\u00020\u00122\u000c\u0010\u0019\u001a\u0008\u0012\u0004\u0012\u00028\u00000\u001aH\u0016J\u001e\u0010,\u001a\u00028\u00002\u0006\u0010\u0016\u001a\u00020\u00062\u0006\u0010\u0013\u001a\u00028\u0000H\u0096\u0002\u00a2\u0006\u0002\u0010-J\u001e\u0010.\u001a\u0008\u0012\u0004\u0012\u00028\u00000\u00022\u0006\u0010\u0005\u001a\u00020\u00062\u0006\u0010\u0007\u001a\u00020\u0006H\u0016J\u0008\u0010/\u001a\u00020\u0015H\u0002R\u000e\u0010\t\u001a\u00020\u0006X\u0082\u000e\u00a2\u0006\u0002\n\u0000R\u000e\u0010\n\u001a\u00020\u0006X\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u0017\u0010\u0003\u001a\u0008\u0012\u0004\u0012\u00028\u00000\u0004\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\u000b\u0010\u000cR\u001e\u0010\u000e\u001a\u00020\u00062\u0006\u0010\r\u001a\u00020\u0006@RX\u0096\u000e\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\u000f\u0010\u0010\u00a8\u00060"
+        "\u0000B\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010!\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0008\n\u0002\u0008\u000b\n\u0002\u0010\u000b\n\u0002\u0008\u0002\n\u0002\u0010\u0002\n\u0002\u0008\u0004\n\u0002\u0010\u001e\n\u0002\u0008\t\n\u0002\u0010)\n\u0002\u0008\u0002\n\u0002\u0010+\n\u0002\u0008\t\u0008\u0002\u0018\u0000*\u0004\u0008\u0000\u0010\u00012\u0008\u0012\u0004\u0012\u0002H\u00010\u0002B#\u0012\u000c\u0010\u0003\u001a\u0008\u0012\u0004\u0012\u00028\u00000\u0004\u0012\u0006\u0010\u0005\u001a\u00020\u0006\u0012\u0006\u0010\u0007\u001a\u00020\u0006\u00a2\u0006\u0002\u0010\u0008J\u0015\u0010\u0011\u001a\u00020\u00122\u0006\u0010\u0013\u001a\u00028\u0000H\u0016\u00a2\u0006\u0002\u0010\u0014J\u001d\u0010\u0011\u001a\u00020\u00152\u0006\u0010\u0016\u001a\u00020\u00062\u0006\u0010\u0013\u001a\u00028\u0000H\u0016\u00a2\u0006\u0002\u0010\u0017J\u001e\u0010\u0018\u001a\u00020\u00122\u0006\u0010\u0016\u001a\u00020\u00062\u000c\u0010\u0019\u001a\u0008\u0012\u0004\u0012\u00028\u00000\u001aH\u0016J\u0016\u0010\u0018\u001a\u00020\u00122\u000c\u0010\u0019\u001a\u0008\u0012\u0004\u0012\u00028\u00000\u001aH\u0016J\u0008\u0010\u001b\u001a\u00020\u0015H\u0016J\u0016\u0010\u001c\u001a\u00020\u00122\u0006\u0010\u0013\u001a\u00028\u0000H\u0096\u0002\u00a2\u0006\u0002\u0010\u0014J\u0016\u0010\u001d\u001a\u00020\u00122\u000c\u0010\u0019\u001a\u0008\u0012\u0004\u0012\u00028\u00000\u001aH\u0016J\u0016\u0010\u001e\u001a\u00028\u00002\u0006\u0010\u0016\u001a\u00020\u0006H\u0096\u0002\u00a2\u0006\u0002\u0010\u001fJ\u0015\u0010 \u001a\u00020\u00062\u0006\u0010\u0013\u001a\u00028\u0000H\u0016\u00a2\u0006\u0002\u0010!J\u0008\u0010\"\u001a\u00020\u0012H\u0016J\u000f\u0010#\u001a\u0008\u0012\u0004\u0012\u00028\u00000$H\u0096\u0002J\u0015\u0010%\u001a\u00020\u00062\u0006\u0010\u0013\u001a\u00028\u0000H\u0016\u00a2\u0006\u0002\u0010!J\u000e\u0010&\u001a\u0008\u0012\u0004\u0012\u00028\u00000\'H\u0016J\u0016\u0010&\u001a\u0008\u0012\u0004\u0012\u00028\u00000\'2\u0006\u0010\u0016\u001a\u00020\u0006H\u0016J\u0015\u0010(\u001a\u00020\u00122\u0006\u0010\u0013\u001a\u00028\u0000H\u0016\u00a2\u0006\u0002\u0010\u0014J\u0016\u0010)\u001a\u00020\u00122\u000c\u0010\u0019\u001a\u0008\u0012\u0004\u0012\u00028\u00000\u001aH\u0016J\u0015\u0010*\u001a\u00028\u00002\u0006\u0010\u0016\u001a\u00020\u0006H\u0016\u00a2\u0006\u0002\u0010\u001fJ\u0016\u0010+\u001a\u00020\u00122\u000c\u0010\u0019\u001a\u0008\u0012\u0004\u0012\u00028\u00000\u001aH\u0016J\u001e\u0010,\u001a\u00028\u00002\u0006\u0010\u0016\u001a\u00020\u00062\u0006\u0010\u0013\u001a\u00028\u0000H\u0096\u0002\u00a2\u0006\u0002\u0010-J\u001e\u0010.\u001a\u0008\u0012\u0004\u0012\u00028\u00000\u00022\u0006\u0010\u0005\u001a\u00020\u00062\u0006\u0010\u0007\u001a\u00020\u0006H\u0016J\u0008\u0010/\u001a\u00020\u0015H\u0002R\u000e\u0010\t\u001a\u00020\u0006X\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u0017\u0010\u0003\u001a\u0008\u0012\u0004\u0012\u00028\u00000\u0004\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\n\u0010\u000bR\u001e\u0010\r\u001a\u00020\u00062\u0006\u0010\u000c\u001a\u00020\u0006@RX\u0096\u000e\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\u000e\u0010\u000fR\u000e\u0010\u0010\u001a\u00020\u0006X\u0082\u000e\u00a2\u0006\u0002\n\u0000\u00a8\u00060"
     }
     d2 = {
         "Landroidx/compose/runtime/snapshots/SubList;",
@@ -38,7 +38,6 @@
         "",
         "toIndex",
         "(Landroidx/compose/runtime/snapshots/SnapshotStateList;II)V",
-        "modification",
         "offset",
         "getParentList",
         "()Landroidx/compose/runtime/snapshots/SnapshotStateList;",
@@ -46,6 +45,7 @@
         "size",
         "getSize",
         "()I",
+        "structure",
         "add",
         "",
         "element",
@@ -90,8 +90,6 @@
 
 
 # instance fields
-.field private modification:I
-
 .field private final offset:I
 
 .field private final parentList:Landroidx/compose/runtime/snapshots/SnapshotStateList;
@@ -105,10 +103,12 @@
 
 .field private size:I
 
+.field private structure:I
+
 
 # direct methods
 .method public constructor <init>(Landroidx/compose/runtime/snapshots/SnapshotStateList;II)V
-    .locals 1
+    .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -117,29 +117,25 @@
         }
     .end annotation
 
-    const-string v0, "parentList"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 300
+    .line 325
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 301
+    .line 326
     iput-object p1, p0, Landroidx/compose/runtime/snapshots/SubList;->parentList:Landroidx/compose/runtime/snapshots/SnapshotStateList;
 
-    .line 305
+    .line 330
     iput p2, p0, Landroidx/compose/runtime/snapshots/SubList;->offset:I
 
-    .line 306
-    invoke-virtual {p1}, Landroidx/compose/runtime/snapshots/SnapshotStateList;->getModification$runtime_release()I
+    .line 331
+    invoke-virtual {p1}, Landroidx/compose/runtime/snapshots/SnapshotStateList;->getStructure$runtime_release()I
 
     move-result p1
 
-    iput p1, p0, Landroidx/compose/runtime/snapshots/SubList;->modification:I
+    iput p1, p0, Landroidx/compose/runtime/snapshots/SubList;->structure:I
 
     sub-int/2addr p3, p2
 
-    .line 307
+    .line 332
     iput p3, p0, Landroidx/compose/runtime/snapshots/SubList;->size:I
 
     return-void
@@ -148,20 +144,20 @@
 .method private final validateModification()V
     .locals 1
 
-    .line 452
+    .line 479
     iget-object v0, p0, Landroidx/compose/runtime/snapshots/SubList;->parentList:Landroidx/compose/runtime/snapshots/SnapshotStateList;
 
-    invoke-virtual {v0}, Landroidx/compose/runtime/snapshots/SnapshotStateList;->getModification$runtime_release()I
+    invoke-virtual {v0}, Landroidx/compose/runtime/snapshots/SnapshotStateList;->getStructure$runtime_release()I
 
     move-result v0
 
-    iget p0, p0, Landroidx/compose/runtime/snapshots/SubList;->modification:I
+    iget p0, p0, Landroidx/compose/runtime/snapshots/SubList;->structure:I
 
     if-ne v0, p0, :cond_0
 
     return-void
 
-    .line 453
+    .line 480
     :cond_0
     new-instance p0, Ljava/util/ConcurrentModificationException;
 
@@ -180,10 +176,10 @@
         }
     .end annotation
 
-    .line 349
+    .line 374
     invoke-direct {p0}, Landroidx/compose/runtime/snapshots/SubList;->validateModification()V
 
-    .line 350
+    .line 375
     iget-object v0, p0, Landroidx/compose/runtime/snapshots/SubList;->parentList:Landroidx/compose/runtime/snapshots/SnapshotStateList;
 
     iget v1, p0, Landroidx/compose/runtime/snapshots/SubList;->offset:I
@@ -192,7 +188,7 @@
 
     invoke-virtual {v0, v1, p2}, Landroidx/compose/runtime/snapshots/SnapshotStateList;->add(ILjava/lang/Object;)V
 
-    .line 351
+    .line 376
     invoke-virtual {p0}, Landroidx/compose/runtime/snapshots/SubList;->size()I
 
     move-result p1
@@ -201,14 +197,14 @@
 
     iput p1, p0, Landroidx/compose/runtime/snapshots/SubList;->size:I
 
-    .line 352
+    .line 377
     iget-object p1, p0, Landroidx/compose/runtime/snapshots/SubList;->parentList:Landroidx/compose/runtime/snapshots/SnapshotStateList;
 
-    invoke-virtual {p1}, Landroidx/compose/runtime/snapshots/SnapshotStateList;->getModification$runtime_release()I
+    invoke-virtual {p1}, Landroidx/compose/runtime/snapshots/SnapshotStateList;->getStructure$runtime_release()I
 
     move-result p1
 
-    iput p1, p0, Landroidx/compose/runtime/snapshots/SubList;->modification:I
+    iput p1, p0, Landroidx/compose/runtime/snapshots/SubList;->structure:I
 
     return-void
 .end method
@@ -221,10 +217,10 @@
         }
     .end annotation
 
-    .line 341
+    .line 366
     invoke-direct {p0}, Landroidx/compose/runtime/snapshots/SubList;->validateModification()V
 
-    .line 342
+    .line 367
     iget-object v0, p0, Landroidx/compose/runtime/snapshots/SubList;->parentList:Landroidx/compose/runtime/snapshots/SnapshotStateList;
 
     iget v1, p0, Landroidx/compose/runtime/snapshots/SubList;->offset:I
@@ -237,7 +233,7 @@
 
     invoke-virtual {v0, v1, p1}, Landroidx/compose/runtime/snapshots/SnapshotStateList;->add(ILjava/lang/Object;)V
 
-    .line 343
+    .line 368
     invoke-virtual {p0}, Landroidx/compose/runtime/snapshots/SubList;->size()I
 
     move-result p1
@@ -248,14 +244,14 @@
 
     iput p1, p0, Landroidx/compose/runtime/snapshots/SubList;->size:I
 
-    .line 344
+    .line 369
     iget-object p1, p0, Landroidx/compose/runtime/snapshots/SubList;->parentList:Landroidx/compose/runtime/snapshots/SnapshotStateList;
 
-    invoke-virtual {p1}, Landroidx/compose/runtime/snapshots/SnapshotStateList;->getModification$runtime_release()I
+    invoke-virtual {p1}, Landroidx/compose/runtime/snapshots/SnapshotStateList;->getStructure$runtime_release()I
 
     move-result p1
 
-    iput p1, p0, Landroidx/compose/runtime/snapshots/SubList;->modification:I
+    iput p1, p0, Landroidx/compose/runtime/snapshots/SubList;->structure:I
 
     return v0
 .end method
@@ -270,14 +266,10 @@
         }
     .end annotation
 
-    const-string v0, "elements"
-
-    invoke-static {p2, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 356
+    .line 381
     invoke-direct {p0}, Landroidx/compose/runtime/snapshots/SubList;->validateModification()V
 
-    .line 357
+    .line 382
     iget-object v0, p0, Landroidx/compose/runtime/snapshots/SubList;->parentList:Landroidx/compose/runtime/snapshots/SnapshotStateList;
 
     iget v1, p0, Landroidx/compose/runtime/snapshots/SubList;->offset:I
@@ -290,7 +282,7 @@
 
     if-eqz p1, :cond_0
 
-    .line 359
+    .line 384
     invoke-virtual {p0}, Landroidx/compose/runtime/snapshots/SubList;->size()I
 
     move-result v0
@@ -303,14 +295,14 @@
 
     iput v0, p0, Landroidx/compose/runtime/snapshots/SubList;->size:I
 
-    .line 360
+    .line 385
     iget-object p2, p0, Landroidx/compose/runtime/snapshots/SubList;->parentList:Landroidx/compose/runtime/snapshots/SnapshotStateList;
 
-    invoke-virtual {p2}, Landroidx/compose/runtime/snapshots/SnapshotStateList;->getModification$runtime_release()I
+    invoke-virtual {p2}, Landroidx/compose/runtime/snapshots/SnapshotStateList;->getStructure$runtime_release()I
 
     move-result p2
 
-    iput p2, p0, Landroidx/compose/runtime/snapshots/SubList;->modification:I
+    iput p2, p0, Landroidx/compose/runtime/snapshots/SubList;->structure:I
 
     :cond_0
     return p1
@@ -326,11 +318,7 @@
         }
     .end annotation
 
-    const-string v0, "elements"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 365
+    .line 390
     invoke-virtual {p0}, Landroidx/compose/runtime/snapshots/SubList;->size()I
 
     move-result v0
@@ -345,17 +333,17 @@
 .method public clear()V
     .locals 3
 
-    .line 368
+    .line 393
     invoke-virtual {p0}, Landroidx/compose/runtime/snapshots/SubList;->size()I
 
     move-result v0
 
     if-lez v0, :cond_0
 
-    .line 369
+    .line 394
     invoke-direct {p0}, Landroidx/compose/runtime/snapshots/SubList;->validateModification()V
 
-    .line 370
+    .line 395
     iget-object v0, p0, Landroidx/compose/runtime/snapshots/SubList;->parentList:Landroidx/compose/runtime/snapshots/SnapshotStateList;
 
     iget v1, p0, Landroidx/compose/runtime/snapshots/SubList;->offset:I
@@ -370,17 +358,17 @@
 
     const/4 v0, 0x0
 
-    .line 371
+    .line 396
     iput v0, p0, Landroidx/compose/runtime/snapshots/SubList;->size:I
 
-    .line 372
+    .line 397
     iget-object v0, p0, Landroidx/compose/runtime/snapshots/SubList;->parentList:Landroidx/compose/runtime/snapshots/SnapshotStateList;
 
-    invoke-virtual {v0}, Landroidx/compose/runtime/snapshots/SnapshotStateList;->getModification$runtime_release()I
+    invoke-virtual {v0}, Landroidx/compose/runtime/snapshots/SnapshotStateList;->getStructure$runtime_release()I
 
     move-result v0
 
-    iput v0, p0, Landroidx/compose/runtime/snapshots/SubList;->modification:I
+    iput v0, p0, Landroidx/compose/runtime/snapshots/SubList;->structure:I
 
     :cond_0
     return-void
@@ -389,7 +377,7 @@
 .method public contains(Ljava/lang/Object;)Z
     .locals 0
 
-    .line 310
+    .line 335
     invoke-virtual {p0, p1}, Landroidx/compose/runtime/snapshots/SubList;->indexOf(Ljava/lang/Object;)I
 
     move-result p0
@@ -419,14 +407,16 @@
         }
     .end annotation
 
-    const-string v0, "elements"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 311
+    .line 336
     check-cast p1, Ljava/lang/Iterable;
 
-    .line 458
+    .line 485
+    instance-of v0, p1, Ljava/util/Collection;
+
+    const/4 v1, 0x1
+
+    if-eqz v0, :cond_0
+
     move-object v0, p1
 
     check-cast v0, Ljava/util/Collection;
@@ -435,13 +425,11 @@
 
     move-result v0
 
-    const/4 v1, 0x1
-
     if-eqz v0, :cond_0
 
     goto :goto_0
 
-    .line 459
+    .line 486
     :cond_0
     invoke-interface {p1}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
 
@@ -458,7 +446,7 @@
 
     move-result-object v0
 
-    .line 311
+    .line 336
     invoke-virtual {p0, v0}, Landroidx/compose/runtime/snapshots/SubList;->contains(Ljava/lang/Object;)Z
 
     move-result v0
@@ -480,17 +468,17 @@
         }
     .end annotation
 
-    .line 313
+    .line 338
     invoke-direct {p0}, Landroidx/compose/runtime/snapshots/SubList;->validateModification()V
 
-    .line 314
+    .line 339
     invoke-virtual {p0}, Landroidx/compose/runtime/snapshots/SubList;->size()I
 
     move-result v0
 
     invoke-static {p1, v0}, Landroidx/compose/runtime/snapshots/SnapshotStateListKt;->access$validateRange(II)V
 
-    .line 315
+    .line 340
     iget-object v0, p0, Landroidx/compose/runtime/snapshots/SubList;->parentList:Landroidx/compose/runtime/snapshots/SnapshotStateList;
 
     iget p0, p0, Landroidx/compose/runtime/snapshots/SubList;->offset:I
@@ -514,7 +502,7 @@
         }
     .end annotation
 
-    .line 301
+    .line 326
     iget-object p0, p0, Landroidx/compose/runtime/snapshots/SubList;->parentList:Landroidx/compose/runtime/snapshots/SnapshotStateList;
 
     return-object p0
@@ -523,7 +511,7 @@
 .method public getSize()I
     .locals 0
 
-    .line 307
+    .line 332
     iget p0, p0, Landroidx/compose/runtime/snapshots/SubList;->size:I
 
     return p0
@@ -532,10 +520,10 @@
 .method public indexOf(Ljava/lang/Object;)I
     .locals 3
 
-    .line 319
+    .line 344
     invoke-direct {p0}, Landroidx/compose/runtime/snapshots/SubList;->validateModification()V
 
-    .line 320
+    .line 345
     iget v0, p0, Landroidx/compose/runtime/snapshots/SubList;->offset:I
 
     invoke-virtual {p0}, Landroidx/compose/runtime/snapshots/SubList;->size()I
@@ -550,7 +538,7 @@
 
     check-cast v0, Ljava/lang/Iterable;
 
-    .line 461
+    .line 488
     invoke-interface {v0}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
 
     move-result-object v0
@@ -570,7 +558,7 @@
 
     move-result v1
 
-    .line 321
+    .line 346
     iget-object v2, p0, Landroidx/compose/runtime/snapshots/SubList;->parentList:Landroidx/compose/runtime/snapshots/SnapshotStateList;
 
     invoke-virtual {v2, v1}, Landroidx/compose/runtime/snapshots/SnapshotStateList;->get(I)Ljava/lang/Object;
@@ -598,7 +586,7 @@
 .method public isEmpty()Z
     .locals 0
 
-    .line 326
+    .line 351
     invoke-virtual {p0}, Landroidx/compose/runtime/snapshots/SubList;->size()I
 
     move-result p0
@@ -626,7 +614,7 @@
         }
     .end annotation
 
-    .line 328
+    .line 353
     invoke-virtual {p0}, Landroidx/compose/runtime/snapshots/SubList;->listIterator()Ljava/util/ListIterator;
 
     move-result-object p0
@@ -639,10 +627,10 @@
 .method public lastIndexOf(Ljava/lang/Object;)I
     .locals 2
 
-    .line 331
+    .line 356
     invoke-direct {p0}, Landroidx/compose/runtime/snapshots/SubList;->validateModification()V
 
-    .line 332
+    .line 357
     iget v0, p0, Landroidx/compose/runtime/snapshots/SubList;->offset:I
 
     invoke-virtual {p0}, Landroidx/compose/runtime/snapshots/SubList;->size()I
@@ -653,13 +641,13 @@
 
     add-int/lit8 v0, v0, -0x1
 
-    .line 333
+    .line 358
     :goto_0
     iget v1, p0, Landroidx/compose/runtime/snapshots/SubList;->offset:I
 
     if-lt v0, v1, :cond_1
 
-    .line 334
+    .line 359
     iget-object v1, p0, Landroidx/compose/runtime/snapshots/SubList;->parentList:Landroidx/compose/runtime/snapshots/SnapshotStateList;
 
     invoke-virtual {v1, v0}, Landroidx/compose/runtime/snapshots/SnapshotStateList;->get(I)Ljava/lang/Object;
@@ -701,7 +689,7 @@
 
     const/4 v0, 0x0
 
-    .line 376
+    .line 401
     invoke-virtual {p0, v0}, Landroidx/compose/runtime/snapshots/SubList;->listIterator(I)Ljava/util/ListIterator;
 
     move-result-object p0
@@ -719,10 +707,10 @@
         }
     .end annotation
 
-    .line 378
+    .line 403
     invoke-direct {p0}, Landroidx/compose/runtime/snapshots/SubList;->validateModification()V
 
-    .line 379
+    .line 404
     new-instance v0, Lkotlin/jvm/internal/Ref$IntRef;
 
     invoke-direct {v0}, Lkotlin/jvm/internal/Ref$IntRef;-><init>()V
@@ -731,7 +719,7 @@
 
     iput p1, v0, Lkotlin/jvm/internal/Ref$IntRef;->element:I
 
-    .line 380
+    .line 405
     new-instance p1, Landroidx/compose/runtime/snapshots/SubList$listIterator$1;
 
     invoke-direct {p1, v0, p0}, Landroidx/compose/runtime/snapshots/SubList$listIterator$1;-><init>(Lkotlin/jvm/internal/Ref$IntRef;Landroidx/compose/runtime/snapshots/SubList;)V
@@ -749,7 +737,7 @@
         }
     .end annotation
 
-    .line 300
+    .line 325
     invoke-virtual {p0, p1}, Landroidx/compose/runtime/snapshots/SubList;->removeAt(I)Ljava/lang/Object;
 
     move-result-object p0
@@ -760,14 +748,14 @@
 .method public remove(Ljava/lang/Object;)Z
     .locals 0
 
-    .line 404
+    .line 429
     invoke-virtual {p0, p1}, Landroidx/compose/runtime/snapshots/SubList;->indexOf(Ljava/lang/Object;)I
 
     move-result p1
 
     if-ltz p1, :cond_0
 
-    .line 406
+    .line 431
     invoke-virtual {p0, p1}, Landroidx/compose/runtime/snapshots/SubList;->remove(I)Ljava/lang/Object;
 
     const/4 p0, 0x1
@@ -793,11 +781,7 @@
         }
     .end annotation
 
-    const-string v0, "elements"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 413
+    .line 438
     invoke-interface {p1}, Ljava/util/Collection;->iterator()Ljava/util/Iterator;
 
     move-result-object p1
@@ -818,7 +802,7 @@
 
     move-result-object v2
 
-    .line 414
+    .line 439
     invoke-virtual {p0, v2}, Landroidx/compose/runtime/snapshots/SubList;->remove(Ljava/lang/Object;)Z
 
     move-result v2
@@ -844,10 +828,10 @@
         }
     .end annotation
 
-    .line 420
+    .line 445
     invoke-direct {p0}, Landroidx/compose/runtime/snapshots/SubList;->validateModification()V
 
-    .line 421
+    .line 446
     iget-object v0, p0, Landroidx/compose/runtime/snapshots/SubList;->parentList:Landroidx/compose/runtime/snapshots/SnapshotStateList;
 
     iget v1, p0, Landroidx/compose/runtime/snapshots/SubList;->offset:I
@@ -858,7 +842,7 @@
 
     move-result-object p1
 
-    .line 422
+    .line 447
     invoke-virtual {p0}, Landroidx/compose/runtime/snapshots/SubList;->size()I
 
     move-result v0
@@ -867,14 +851,14 @@
 
     iput v0, p0, Landroidx/compose/runtime/snapshots/SubList;->size:I
 
-    .line 423
+    .line 448
     iget-object v0, p0, Landroidx/compose/runtime/snapshots/SubList;->parentList:Landroidx/compose/runtime/snapshots/SnapshotStateList;
 
-    invoke-virtual {v0}, Landroidx/compose/runtime/snapshots/SnapshotStateList;->getModification$runtime_release()I
+    invoke-virtual {v0}, Landroidx/compose/runtime/snapshots/SnapshotStateList;->getStructure$runtime_release()I
 
     move-result v0
 
-    iput v0, p0, Landroidx/compose/runtime/snapshots/SubList;->modification:I
+    iput v0, p0, Landroidx/compose/runtime/snapshots/SubList;->structure:I
 
     return-object p1
 .end method
@@ -891,14 +875,10 @@
         }
     .end annotation
 
-    const-string v0, "elements"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 428
+    .line 453
     invoke-direct {p0}, Landroidx/compose/runtime/snapshots/SubList;->validateModification()V
 
-    .line 429
+    .line 454
     iget-object v0, p0, Landroidx/compose/runtime/snapshots/SubList;->parentList:Landroidx/compose/runtime/snapshots/SnapshotStateList;
 
     iget v1, p0, Landroidx/compose/runtime/snapshots/SubList;->offset:I
@@ -915,16 +895,16 @@
 
     if-lez p1, :cond_0
 
-    .line 431
+    .line 456
     iget-object v0, p0, Landroidx/compose/runtime/snapshots/SubList;->parentList:Landroidx/compose/runtime/snapshots/SnapshotStateList;
 
-    invoke-virtual {v0}, Landroidx/compose/runtime/snapshots/SnapshotStateList;->getModification$runtime_release()I
+    invoke-virtual {v0}, Landroidx/compose/runtime/snapshots/SnapshotStateList;->getStructure$runtime_release()I
 
     move-result v0
 
-    iput v0, p0, Landroidx/compose/runtime/snapshots/SubList;->modification:I
+    iput v0, p0, Landroidx/compose/runtime/snapshots/SubList;->structure:I
 
-    .line 432
+    .line 457
     invoke-virtual {p0}, Landroidx/compose/runtime/snapshots/SubList;->size()I
 
     move-result v0
@@ -955,17 +935,17 @@
         }
     .end annotation
 
-    .line 438
+    .line 463
     invoke-virtual {p0}, Landroidx/compose/runtime/snapshots/SubList;->size()I
 
     move-result v0
 
     invoke-static {p1, v0}, Landroidx/compose/runtime/snapshots/SnapshotStateListKt;->access$validateRange(II)V
 
-    .line 439
+    .line 464
     invoke-direct {p0}, Landroidx/compose/runtime/snapshots/SubList;->validateModification()V
 
-    .line 440
+    .line 465
     iget-object v0, p0, Landroidx/compose/runtime/snapshots/SubList;->parentList:Landroidx/compose/runtime/snapshots/SnapshotStateList;
 
     iget v1, p0, Landroidx/compose/runtime/snapshots/SubList;->offset:I
@@ -976,14 +956,14 @@
 
     move-result-object p1
 
-    .line 441
+    .line 466
     iget-object p2, p0, Landroidx/compose/runtime/snapshots/SubList;->parentList:Landroidx/compose/runtime/snapshots/SnapshotStateList;
 
-    invoke-virtual {p2}, Landroidx/compose/runtime/snapshots/SnapshotStateList;->getModification$runtime_release()I
+    invoke-virtual {p2}, Landroidx/compose/runtime/snapshots/SnapshotStateList;->getStructure$runtime_release()I
 
     move-result p2
 
-    iput p2, p0, Landroidx/compose/runtime/snapshots/SubList;->modification:I
+    iput p2, p0, Landroidx/compose/runtime/snapshots/SubList;->structure:I
 
     return-object p1
 .end method
@@ -991,7 +971,7 @@
 .method public final bridge size()I
     .locals 0
 
-    .line 300
+    .line 325
     invoke-virtual {p0}, Landroidx/compose/runtime/snapshots/SubList;->getSize()I
 
     move-result p0
@@ -1013,17 +993,17 @@
 
     if-gt p1, p2, :cond_0
 
-    .line 446
+    .line 471
     invoke-virtual {p0}, Landroidx/compose/runtime/snapshots/SubList;->size()I
 
     move-result v0
 
     if-gt p2, v0, :cond_0
 
-    .line 447
+    .line 474
     invoke-direct {p0}, Landroidx/compose/runtime/snapshots/SubList;->validateModification()V
 
-    .line 448
+    .line 475
     new-instance v0, Landroidx/compose/runtime/snapshots/SubList;
 
     iget-object v1, p0, Landroidx/compose/runtime/snapshots/SubList;->parentList:Landroidx/compose/runtime/snapshots/SnapshotStateList;
@@ -1040,11 +1020,11 @@
 
     return-object v0
 
-    .line 446
+    .line 471
     :cond_0
     new-instance p0, Ljava/lang/IllegalArgumentException;
 
-    const-string p1, "Failed requirement."
+    const-string p1, "fromIndex or toIndex are out of bounds"
 
     invoke-virtual {p1}, Ljava/lang/Object;->toString()Ljava/lang/String;
 
@@ -1068,7 +1048,7 @@
 .end method
 
 .method public toArray([Ljava/lang/Object;)[Ljava/lang/Object;
-    .locals 1
+    .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<T:",
@@ -1076,10 +1056,6 @@
             ">([TT;)[TT;"
         }
     .end annotation
-
-    const-string v0, "array"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
     check-cast p0, Ljava/util/Collection;
 

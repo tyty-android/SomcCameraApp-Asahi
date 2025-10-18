@@ -14,13 +14,14 @@
 
 .annotation runtime Lkotlin/Metadata;
     d1 = {
-        "\u0000\u0016\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0003\n\u0002\u0010\u000e\n\u0000\u0008\u0007\u0018\u00002\u0008\u0012\u0004\u0012\u00020\u00020\u0001B\r\u0012\u0006\u0010\u0003\u001a\u00020\u0002\u00a2\u0006\u0002\u0010\u0004J\u0008\u0010\u0005\u001a\u00020\u0006H\u0016\u00a8\u0006\u0007"
+        "\u0000\u0016\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0004\n\u0002\u0010\u000e\n\u0000\u0008\u0007\u0018\u00002\u0008\u0012\u0004\u0012\u00020\u00020\u0001B\u000f\u0012\u0006\u0010\u0003\u001a\u00020\u0002\u00a2\u0006\u0004\u0008\u0004\u0010\u0005J\u0008\u0010\u0006\u001a\u00020\u0007H\u0016\u00a8\u0006\u0008"
     }
     d2 = {
         "Ljp/co/sony/mc/camera/idd/value/IddStreamingMute;",
         "Ljp/co/sony/mc/camera/idd/value/IddUserSettingBooleanValue;",
         "Ljp/co/sony/mc/camera/configuration/parameters/StreamingAudioMute;",
         "value",
+        "<init>",
         "(Ljp/co/sony/mc/camera/configuration/parameters/StreamingAudioMute;)V",
         "toString",
         "",
@@ -28,8 +29,8 @@
     }
     k = 0x1
     mv = {
-        0x1,
-        0x9,
+        0x2,
+        0x0,
         0x0
     }
     xi = 0x30
@@ -54,7 +55,7 @@
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 422
+    .line 457
     check-cast p1, Ljp/co/sony/mc/camera/configuration/parameters/UserSettingBooleanValue;
 
     const/4 v0, 0x0
@@ -69,7 +70,7 @@
 .method public toString()Ljava/lang/String;
     .locals 0
 
-    .line 424
+    .line 459
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/idd/value/IddStreamingMute;->getValue()Ljp/co/sony/mc/camera/configuration/parameters/UserSettingBooleanValue;
 
     move-result-object p0

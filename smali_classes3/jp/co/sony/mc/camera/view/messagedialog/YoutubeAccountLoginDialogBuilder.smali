@@ -126,7 +126,7 @@
     .line 49
     new-instance p2, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Builder;
 
-    const p5, 0x7f1202a9
+    const p5, 0x7f1202ab
 
     invoke-direct {p2, p1, p5}, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Builder;-><init>(Landroid/content/Context;I)V
 
@@ -142,7 +142,7 @@
 
     move-result-object p5
 
-    const p6, 0x7f0c0051
+    const p6, 0x7f0c0050
 
     const/4 v0, 0x0
 
@@ -188,7 +188,7 @@
 
     if-eq v1, v2, :cond_1
 
-    const v1, 0x7f0902f9
+    const v1, 0x7f0902ed
 
     .line 61
     invoke-virtual {p5, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
@@ -215,7 +215,7 @@
     invoke-virtual {v1, v0}, Landroid/widget/TextView;->setText(I)V
 
     :cond_1
-    const v0, 0x7f090247
+    const v0, 0x7f090244
 
     .line 78
     invoke-virtual {p5, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;

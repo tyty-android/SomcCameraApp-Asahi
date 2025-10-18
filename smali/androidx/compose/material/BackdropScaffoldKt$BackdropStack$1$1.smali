@@ -28,7 +28,7 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/SourceDebugExtension;
-    value = "SMAP\nBackdropScaffold.kt\nKotlin\n*S Kotlin\n*F\n+ 1 BackdropScaffold.kt\nandroidx/compose/material/BackdropScaffoldKt$BackdropStack$1$1\n+ 2 ListUtils.kt\nandroidx/compose/ui/util/ListUtilsKt\n*L\n1#1,522:1\n151#2,3:523\n33#2,4:526\n154#2,2:530\n38#2:532\n156#2:533\n33#2,6:534\n*S KotlinDebug\n*F\n+ 1 BackdropScaffold.kt\nandroidx/compose/material/BackdropScaffoldKt$BackdropStack$1$1\n*L\n468#1:523,3\n468#1:526,4\n468#1:530,2\n468#1:532\n468#1:533\n472#1:534,6\n*E\n"
+    value = "SMAP\nBackdropScaffold.kt\nKotlin\n*S Kotlin\n*F\n+ 1 BackdropScaffold.kt\nandroidx/compose/material/BackdropScaffoldKt$BackdropStack$1$1\n+ 2 ListUtils.kt\nandroidx/compose/ui/util/ListUtilsKt\n*L\n1#1,524:1\n151#2,3:525\n33#2,4:528\n154#2,2:532\n38#2:534\n156#2:535\n33#2,6:536\n*S KotlinDebug\n*F\n+ 1 BackdropScaffold.kt\nandroidx/compose/material/BackdropScaffoldKt$BackdropStack$1$1\n*L\n470#1:525,3\n470#1:528,4\n470#1:532,2\n470#1:534\n470#1:535\n474#1:536,6\n*E\n"
 .end annotation
 
 .annotation runtime Lkotlin/Metadata;
@@ -55,8 +55,6 @@
 
 
 # instance fields
-.field final synthetic $$dirty:I
-
 .field final synthetic $backLayer:Lkotlin/jvm/functions/Function2;
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -96,7 +94,7 @@
 
 
 # direct methods
-.method constructor <init>(Lkotlin/jvm/functions/Function2;Lkotlin/jvm/functions/Function1;Lkotlin/jvm/functions/Function4;I)V
+.method constructor <init>(Lkotlin/jvm/functions/Function2;Lkotlin/jvm/functions/Function1;Lkotlin/jvm/functions/Function4;)V
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -123,7 +121,7 @@
             "-",
             "Ljava/lang/Integer;",
             "Lkotlin/Unit;",
-            ">;I)V"
+            ">;)V"
         }
     .end annotation
 
@@ -132,8 +130,6 @@
     iput-object p2, p0, Landroidx/compose/material/BackdropScaffoldKt$BackdropStack$1$1;->$calculateBackLayerConstraints:Lkotlin/jvm/functions/Function1;
 
     iput-object p3, p0, Landroidx/compose/material/BackdropScaffoldKt$BackdropStack$1$1;->$frontLayer:Lkotlin/jvm/functions/Function4;
-
-    iput p4, p0, Landroidx/compose/material/BackdropScaffoldKt$BackdropStack$1$1;->$$dirty:I
 
     const/4 p1, 0x2
 
@@ -147,7 +143,7 @@
 .method public bridge synthetic invoke(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
     .locals 2
 
-    .line 458
+    .line 460
     check-cast p1, Landroidx/compose/ui/layout/SubcomposeMeasureScope;
 
     check-cast p2, Landroidx/compose/ui/unit/Constraints;
@@ -166,11 +162,7 @@
 .method public final invoke-0kLqBqw(Landroidx/compose/ui/layout/SubcomposeMeasureScope;J)Landroidx/compose/ui/layout/MeasureResult;
     .locals 11
 
-    const-string v0, "$this$SubcomposeLayout"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 460
+    .line 462
     sget-object v0, Landroidx/compose/material/BackdropLayers;->Back:Landroidx/compose/material/BackdropLayers;
 
     iget-object v1, p0, Landroidx/compose/material/BackdropScaffoldKt$BackdropStack$1$1;->$backLayer:Lkotlin/jvm/functions/Function2;
@@ -185,7 +177,7 @@
 
     check-cast v0, Landroidx/compose/ui/layout/Measurable;
 
-    .line 461
+    .line 463
     iget-object v1, p0, Landroidx/compose/material/BackdropScaffoldKt$BackdropStack$1$1;->$calculateBackLayerConstraints:Lkotlin/jvm/functions/Function1;
 
     invoke-static {p2, p3}, Landroidx/compose/ui/unit/Constraints;->box-impl(J)Landroidx/compose/ui/unit/Constraints;
@@ -206,43 +198,37 @@
 
     move-result-object v0
 
-    .line 463
+    .line 465
     invoke-virtual {v0}, Landroidx/compose/ui/layout/Placeable;->getHeight()I
 
     move-result v1
 
-    int-to-float v6, v1
+    int-to-float v1, v1
 
-    .line 466
-    sget-object v1, Landroidx/compose/material/BackdropLayers;->Front:Landroidx/compose/material/BackdropLayers;
+    .line 468
+    sget-object v2, Landroidx/compose/material/BackdropLayers;->Front:Landroidx/compose/material/BackdropLayers;
 
-    new-instance v8, Landroidx/compose/material/BackdropScaffoldKt$BackdropStack$1$1$placeables$1;
+    new-instance v3, Landroidx/compose/material/BackdropScaffoldKt$BackdropStack$1$1$placeables$1;
 
-    iget-object v3, p0, Landroidx/compose/material/BackdropScaffoldKt$BackdropStack$1$1;->$frontLayer:Lkotlin/jvm/functions/Function4;
+    iget-object p0, p0, Landroidx/compose/material/BackdropScaffoldKt$BackdropStack$1$1;->$frontLayer:Lkotlin/jvm/functions/Function4;
 
-    iget v7, p0, Landroidx/compose/material/BackdropScaffoldKt$BackdropStack$1$1;->$$dirty:I
-
-    move-object v2, v8
-
-    move-wide v4, p2
-
-    invoke-direct/range {v2 .. v7}, Landroidx/compose/material/BackdropScaffoldKt$BackdropStack$1$1$placeables$1;-><init>(Lkotlin/jvm/functions/Function4;JFI)V
+    invoke-direct {v3, p0, p2, p3, v1}, Landroidx/compose/material/BackdropScaffoldKt$BackdropStack$1$1$placeables$1;-><init>(Lkotlin/jvm/functions/Function4;JF)V
 
     const p0, -0x48e00bd9
 
-    const/4 v2, 0x1
+    const/4 v1, 0x1
 
-    invoke-static {p0, v2, v8}, Landroidx/compose/runtime/internal/ComposableLambdaKt;->composableLambdaInstance(IZLjava/lang/Object;)Landroidx/compose/runtime/internal/ComposableLambda;
+    invoke-static {p0, v1, v3}, Landroidx/compose/runtime/internal/ComposableLambdaKt;->composableLambdaInstance(IZLjava/lang/Object;)Landroidx/compose/runtime/internal/ComposableLambda;
 
     move-result-object p0
 
     check-cast p0, Lkotlin/jvm/functions/Function2;
 
-    invoke-interface {p1, v1, p0}, Landroidx/compose/ui/layout/SubcomposeMeasureScope;->subcompose(Ljava/lang/Object;Lkotlin/jvm/functions/Function2;)Ljava/util/List;
+    invoke-interface {p1, v2, p0}, Landroidx/compose/ui/layout/SubcomposeMeasureScope;->subcompose(Ljava/lang/Object;Lkotlin/jvm/functions/Function2;)Ljava/util/List;
 
     move-result-object p0
 
-    .line 524
+    .line 526
     new-instance v1, Ljava/util/ArrayList;
 
     invoke-interface {p0}, Ljava/util/List;->size()I
@@ -251,7 +237,7 @@
 
     invoke-direct {v1, v2}, Ljava/util/ArrayList;-><init>(I)V
 
-    .line 527
+    .line 529
     invoke-interface {p0}, Ljava/util/List;->size()I
 
     move-result v2
@@ -263,35 +249,35 @@
     :goto_0
     if-ge v4, v2, :cond_0
 
-    .line 528
+    .line 530
     invoke-interface {p0, v4}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
     move-result-object v5
 
-    .line 530
+    .line 532
     move-object v6, v1
 
     check-cast v6, Ljava/util/Collection;
 
     check-cast v5, Landroidx/compose/ui/layout/Measurable;
 
-    .line 468
+    .line 470
     invoke-interface {v5, p2, p3}, Landroidx/compose/ui/layout/Measurable;->measure-BRTryo0(J)Landroidx/compose/ui/layout/Placeable;
 
     move-result-object v5
 
-    .line 530
+    .line 532
     invoke-interface {v6, v5}, Ljava/util/Collection;->add(Ljava/lang/Object;)Z
 
     add-int/lit8 v4, v4, 0x1
 
     goto :goto_0
 
-    .line 533
+    .line 535
     :cond_0
     check-cast v1, Ljava/util/List;
 
-    .line 470
+    .line 472
     invoke-static {p2, p3}, Landroidx/compose/ui/unit/Constraints;->getMinWidth-impl(J)I
 
     move-result p0
@@ -304,7 +290,7 @@
 
     move-result p0
 
-    .line 471
+    .line 473
     invoke-static {p2, p3}, Landroidx/compose/ui/unit/Constraints;->getMinHeight-impl(J)I
 
     move-result p2
@@ -317,7 +303,7 @@
 
     move-result p2
 
-    .line 535
+    .line 537
     invoke-interface {v1}, Ljava/util/List;->size()I
 
     move-result p3
@@ -329,15 +315,15 @@
     :goto_1
     if-ge v3, p3, :cond_1
 
-    .line 536
+    .line 538
     invoke-interface {v1, v3}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
     move-result-object p0
 
-    .line 537
+    .line 539
     check-cast p0, Landroidx/compose/ui/layout/Placeable;
 
-    .line 473
+    .line 475
     invoke-virtual {p0}, Landroidx/compose/ui/layout/Placeable;->getWidth()I
 
     move-result p2
@@ -346,7 +332,7 @@
 
     move-result v5
 
-    .line 474
+    .line 476
     invoke-virtual {p0}, Landroidx/compose/ui/layout/Placeable;->getHeight()I
 
     move-result p0
@@ -359,7 +345,7 @@
 
     goto :goto_1
 
-    .line 477
+    .line 479
     :cond_1
     move-object v4, p1
 

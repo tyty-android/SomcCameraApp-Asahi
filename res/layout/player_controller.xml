@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout android:id="@id/controller_group" android:layout_width="fill_parent" android:layout_height="fill_parent"
-  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:custom="http://schemas.android.com/apk/res-auto">
-    <com.sonyericsson.album.video.player.PlayerControllerView android:id="@id/controller_view" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_centerInParent="true" />
-    <ProgressBar android:id="@id/buffering_icon" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" style="?android:progressBarStyle" />
-    <ProgressBar android:id="@id/player_loading_icon" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" style="?android:progressBarStyleLarge" />
-    <TextView android:textAppearance="?android:textAppearanceSmall" android:textColor="@android:color/white" android:id="@id/player_loading_text" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/player_overlay_padding" android:layout_below="@id/player_loading_icon" android:layout_centerHorizontal="true" />
-</RelativeLayout>

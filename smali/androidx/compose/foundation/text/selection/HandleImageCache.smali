@@ -68,7 +68,7 @@
 .method private constructor <init>()V
     .locals 0
 
-    .line 145
+    .line 141
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -79,7 +79,7 @@
 .method public final getCanvas()Landroidx/compose/ui/graphics/Canvas;
     .locals 0
 
-    .line 147
+    .line 143
     sget-object p0, Landroidx/compose/foundation/text/selection/HandleImageCache;->canvas:Landroidx/compose/ui/graphics/Canvas;
 
     return-object p0
@@ -88,7 +88,7 @@
 .method public final getCanvasDrawScope()Landroidx/compose/ui/graphics/drawscope/CanvasDrawScope;
     .locals 0
 
-    .line 148
+    .line 144
     sget-object p0, Landroidx/compose/foundation/text/selection/HandleImageCache;->canvasDrawScope:Landroidx/compose/ui/graphics/drawscope/CanvasDrawScope;
 
     return-object p0
@@ -97,7 +97,7 @@
 .method public final getImageBitmap()Landroidx/compose/ui/graphics/ImageBitmap;
     .locals 0
 
-    .line 146
+    .line 142
     sget-object p0, Landroidx/compose/foundation/text/selection/HandleImageCache;->imageBitmap:Landroidx/compose/ui/graphics/ImageBitmap;
 
     return-object p0
@@ -106,7 +106,7 @@
 .method public final setCanvas(Landroidx/compose/ui/graphics/Canvas;)V
     .locals 0
 
-    .line 147
+    .line 143
     sput-object p1, Landroidx/compose/foundation/text/selection/HandleImageCache;->canvas:Landroidx/compose/ui/graphics/Canvas;
 
     return-void
@@ -115,7 +115,7 @@
 .method public final setCanvasDrawScope(Landroidx/compose/ui/graphics/drawscope/CanvasDrawScope;)V
     .locals 0
 
-    .line 148
+    .line 144
     sput-object p1, Landroidx/compose/foundation/text/selection/HandleImageCache;->canvasDrawScope:Landroidx/compose/ui/graphics/drawscope/CanvasDrawScope;
 
     return-void
@@ -124,7 +124,7 @@
 .method public final setImageBitmap(Landroidx/compose/ui/graphics/ImageBitmap;)V
     .locals 0
 
-    .line 146
+    .line 142
     sput-object p1, Landroidx/compose/foundation/text/selection/HandleImageCache;->imageBitmap:Landroidx/compose/ui/graphics/ImageBitmap;
 
     return-void

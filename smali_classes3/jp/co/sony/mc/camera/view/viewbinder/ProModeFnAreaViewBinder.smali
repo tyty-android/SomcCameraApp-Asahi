@@ -16,82 +16,84 @@
 
 .annotation runtime Lkotlin/Metadata;
     d1 = {
-        "\u0000\u00a8\u0001\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010%\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0008\n\u0000\n\u0002\u0010 \n\u0002\u0008\u0008\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0010\u000e\n\u0002\u0008\u0003\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0003\n\u0002\u0010\u000b\n\u0002\u0008\u0004\n\u0002\u0018\u0002\n\u0002\u0008\u0002\u0008\u0007\u0018\u0000 B2\u00020\u0001:\u0001BB\r\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u00a2\u0006\u0002\u0010\u0004J\u0010\u0010\u001a\u001a\u00020\u001b2\u0006\u0010\u001c\u001a\u00020\u001dH\u0002J\u0018\u0010\u001e\u001a\u00020\u000f2\u0006\u0010\u001f\u001a\u00020 2\u0006\u0010!\u001a\u00020\"H\u0002J\u0016\u0010#\u001a\u0008\u0012\u0004\u0012\u00020\u000f0$2\u0006\u0010%\u001a\u00020\u0010H\u0002J\u0008\u0010&\u001a\u00020\u001bH\u0002J\u0010\u0010\'\u001a\u00020\u001b2\u0006\u0010(\u001a\u00020\u000cH\u0016J\u0010\u0010)\u001a\u00020\u001b2\u0006\u0010(\u001a\u00020\u000cH\u0016J\u0008\u0010*\u001a\u00020\u001bH\u0002J\u001a\u0010+\u001a\u00020\u001b2\u0008\u0010,\u001a\u0004\u0018\u00010-2\u0006\u0010.\u001a\u00020/H\u0002J\u0018\u00100\u001a\u00020\u001b2\u0006\u0010.\u001a\u00020/2\u0006\u00101\u001a\u000202H\u0002J&\u00103\u001a\u00020\u001b2\u0008\u00104\u001a\u0004\u0018\u00010\u000f2\n\u00105\u001a\u0006\u0012\u0002\u0008\u0003062\u0006\u00107\u001a\u000208H\u0002J \u00109\u001a\u00020\u001b2\u0006\u0010,\u001a\u00020\u000f2\u0006\u0010:\u001a\u00020\u00182\u0006\u0010;\u001a\u00020<H\u0002J\u001a\u0010=\u001a\u00020\u001b2\u0008\u00104\u001a\u0004\u0018\u00010\u000f2\u0006\u00107\u001a\u000208H\u0002J\u0018\u0010>\u001a\u00020\u001b2\u0006\u0010.\u001a\u00020/2\u0006\u00101\u001a\u000202H\u0002J\u0008\u0010?\u001a\u00020\u001bH\u0002J\u001a\u0010@\u001a\u00020\u001b2\u0008\u0010,\u001a\u0004\u0018\u00010A2\u0006\u0010.\u001a\u00020/H\u0002R\u000e\u0010\u0002\u001a\u00020\u0003X\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u0005\u001a\u00020\u0006X\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u0007\u001a\u00020\u0008X\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u000e\u0010\t\u001a\u00020\nX\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u000b\u001a\u00020\u000cX\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u001a\u0010\r\u001a\u000e\u0012\u0004\u0012\u00020\u000f\u0012\u0004\u0012\u00020\u00100\u000eX\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u0011\u001a\u00020\u0012X\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u0013\u001a\u00020\u0014X\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u0015\u001a\u00020\u0016X\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u0016\u0010\u0017\u001a\n \u0019*\u0004\u0018\u00010\u00180\u0018X\u0082\u0004\u00a2\u0006\u0002\n\u0000\u00a8\u0006C"
+        "\u0000\u00aa\u0001\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0003\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0003\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010%\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0002\n\u0002\u0008\u0006\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0008\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000e\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010 \n\u0002\u0008\u0004\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0003\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0004\n\u0002\u0010\u000b\n\u0002\u0008\u0002\u0008\u0007\u0018\u0000 D2\u00020\u0001:\u0001DB\u000f\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u00a2\u0006\u0004\u0008\u0004\u0010\u0005J\u0010\u0010\u001c\u001a\u00020\u001d2\u0006\u0010\u001e\u001a\u00020\tH\u0016J\u0010\u0010\u001f\u001a\u00020\u001d2\u0006\u0010\u001e\u001a\u00020\tH\u0016J\u0008\u0010 \u001a\u00020\u001dH\u0002J\u0008\u0010!\u001a\u00020\u001dH\u0002J\u0018\u0010\"\u001a\u00020\u001a2\u0006\u0010#\u001a\u00020$2\u0006\u0010%\u001a\u00020&H\u0002J\u0018\u0010\'\u001a\u00020\u001d2\u0006\u0010(\u001a\u00020)2\u0006\u0010*\u001a\u00020+H\u0002J\u0010\u0010,\u001a\u00020\u001d2\u0006\u0010-\u001a\u00020.H\u0002J\u0016\u0010/\u001a\u0008\u0012\u0004\u0012\u00020\u001a002\u0006\u00101\u001a\u00020\u001bH\u0002J\u001a\u00102\u001a\u00020\u001d2\u0008\u00103\u001a\u0004\u0018\u00010\u001a2\u0006\u00104\u001a\u000205H\u0002J&\u00106\u001a\u00020\u001d2\u0008\u00103\u001a\u0004\u0018\u00010\u001a2\n\u00107\u001a\u0006\u0012\u0002\u0008\u0003082\u0006\u00104\u001a\u000205H\u0002J\u0018\u00109\u001a\u00020\u001d2\u0006\u0010(\u001a\u00020)2\u0006\u0010*\u001a\u00020+H\u0002J\u001a\u0010:\u001a\u00020\u001d2\u0008\u0010;\u001a\u0004\u0018\u00010<2\u0006\u0010(\u001a\u00020)H\u0002J\u001a\u0010=\u001a\u00020\u001d2\u0008\u0010;\u001a\u0004\u0018\u00010>2\u0006\u0010(\u001a\u00020)H\u0002J\u0008\u0010?\u001a\u00020\u001dH\u0002J \u0010@\u001a\u00020\u001d2\u0006\u0010;\u001a\u00020\u001a2\u0006\u0010A\u001a\u00020\u000b2\u0006\u0010B\u001a\u00020CH\u0002R\u000e\u0010\u0002\u001a\u00020\u0003X\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u0006\u001a\u00020\u0007X\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u0008\u001a\u00020\tX\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u0018\u0010\n\u001a\n \u000c*\u0004\u0018\u00010\u000b0\u000bX\u0082\u0004\u00a2\u0006\u0004\n\u0002\u0010\rR\u000e\u0010\u000e\u001a\u00020\u000fX\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u0010\u001a\u00020\u0011X\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u0012\u001a\u00020\u0013X\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u0014\u001a\u00020\u0015X\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u0016\u001a\u00020\u0017X\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u001a\u0010\u0018\u001a\u000e\u0012\u0004\u0012\u00020\u001a\u0012\u0004\u0012\u00020\u001b0\u0019X\u0082\u0004\u00a2\u0006\u0002\n\u0000\u00a8\u0006E"
     }
     d2 = {
         "Ljp/co/sony/mc/camera/view/viewbinder/ProModeFnAreaViewBinder;",
         "Landroidx/lifecycle/DefaultLifecycleObserver;",
         "binding",
         "Ljp/co/sony/mc/camera/databinding/FragmentProModeFnAreaBinding;",
+        "<init>",
         "(Ljp/co/sony/mc/camera/databinding/FragmentProModeFnAreaBinding;)V",
-        "cameraSettingsModel",
-        "Ljp/co/sony/mc/camera/view/viewmodel/CameraSettingsModel;",
-        "cameraStatusModel",
-        "Ljp/co/sony/mc/camera/view/viewmodel/CameraStatusModel;",
         "context",
         "Landroid/content/Context;",
         "lifecycleOwner",
         "Landroidx/lifecycle/LifecycleOwner;",
+        "settings",
+        "Ljp/co/sony/mc/camera/setting/CameraProSetting;",
+        "kotlin.jvm.PlatformType",
+        "Ljp/co/sony/mc/camera/setting/CameraProSetting;",
+        "cameraStatusModel",
+        "Ljp/co/sony/mc/camera/view/viewmodel/CameraStatusModel;",
+        "cameraSettingsModel",
+        "Ljp/co/sony/mc/camera/view/viewmodel/CameraSettingsModel;",
+        "proModeFnUiState",
+        "Ljp/co/sony/mc/camera/view/uistate/ProModeFnUiState;",
+        "proModeCommonUiState",
+        "Ljp/co/sony/mc/camera/view/uistate/ProModeCommonUiState;",
+        "orientationVm",
+        "Ljp/co/sony/mc/camera/view/viewmodel/OrientationViewModel;",
         "mFnButtonMap",
         "",
         "Ljp/co/sony/mc/camera/view/widget/FnButtonBase;",
         "Ljp/co/sony/mc/camera/view/uistate/ProModeFnUiState$FnType;",
-        "orientationVm",
-        "Ljp/co/sony/mc/camera/view/viewmodel/OrientationViewModel;",
-        "proModeCommonUiState",
-        "Ljp/co/sony/mc/camera/view/uistate/ProModeCommonUiState;",
-        "proModeFnUiState",
-        "Ljp/co/sony/mc/camera/view/uistate/ProModeFnUiState;",
-        "settings",
-        "Ljp/co/sony/mc/camera/setting/CameraProSetting;",
-        "kotlin.jvm.PlatformType",
-        "changeSelfTimerIcon",
+        "onCreate",
         "",
-        "pattern",
-        "Ljp/co/sony/mc/camera/view/CameraEventListener$CameraEvent;",
+        "owner",
+        "onResume",
+        "initFnButtonType",
+        "updateFnButtonType",
         "createFnButton",
         "functionCustom",
         "Ljp/co/sony/mc/camera/configuration/parameters/FunctionCustom;",
         "position",
         "",
+        "updateFnButton",
+        "holder",
+        "Ljp/co/sony/mc/camera/setting/CameraSettingsHolder;",
+        "changedKeyName",
+        "",
+        "changeSelfTimerIcon",
+        "pattern",
+        "Ljp/co/sony/mc/camera/view/CameraEventListener$CameraEvent;",
         "getFnButtonList",
         "",
         "fnType",
-        "initFnButtonType",
-        "onCreate",
-        "owner",
-        "onResume",
-        "updateEnabled",
+        "updateFnButtonIcon",
+        "fnButton",
+        "value",
+        "Ljp/co/sony/mc/camera/configuration/parameters/UserSettingValue;",
+        "updateFnButtonDescription",
+        "key",
+        "Ljp/co/sony/mc/camera/setting/SettingKey$Key;",
+        "updateFnButtonText",
         "updateEvFnButtonText",
         "button",
         "Ljp/co/sony/mc/camera/view/widget/FnButton;",
-        "holder",
-        "Ljp/co/sony/mc/camera/setting/CameraSettingsHolder;",
-        "updateFnButton",
-        "changedKeyName",
-        "",
-        "updateFnButtonDescription",
-        "fnButton",
-        "key",
-        "Ljp/co/sony/mc/camera/setting/SettingKey$Key;",
-        "value",
-        "Ljp/co/sony/mc/camera/configuration/parameters/UserSettingValue;",
+        "updateWbFnButtonText",
+        "Ljp/co/sony/mc/camera/view/widget/WhiteBalanceFnButton;",
+        "updateEnabled",
         "updateFnButtonEnabled",
         "setting",
         "isRecording",
         "",
-        "updateFnButtonIcon",
-        "updateFnButtonText",
-        "updateFnButtonType",
-        "updateWbFnButtonText",
-        "Ljp/co/sony/mc/camera/view/widget/WhiteBalanceFnButton;",
         "Companion",
         "SomcCamera_release"
     }
     k = 0x1
     mv = {
-        0x1,
-        0x9,
+        0x2,
+        0x0,
         0x0
     }
     xi = 0x30
@@ -138,12 +140,112 @@
 
 
 # direct methods
-.method public static synthetic $r8$lambda$SyyY61eItzOr8WAIlpS5azSnPfE(Ljp/co/sony/mc/camera/view/widget/FnButtonBase;Ljp/co/sony/mc/camera/view/uistate/ProModeFnUiState$FnType;Ljp/co/sony/mc/camera/view/viewbinder/ProModeFnAreaViewBinder;Landroid/view/View;)V
+.method public static synthetic $r8$lambda$0NnJgXViCQvocY3snGftSp0eYro(ZLjp/co/sony/mc/camera/view/orientation/LayoutOrientation;)Lkotlin/Pair;
     .locals 0
 
-    invoke-static {p0, p1, p2, p3}, Ljp/co/sony/mc/camera/view/viewbinder/ProModeFnAreaViewBinder;->createFnButton$lambda$3(Ljp/co/sony/mc/camera/view/widget/FnButtonBase;Ljp/co/sony/mc/camera/view/uistate/ProModeFnUiState$FnType;Ljp/co/sony/mc/camera/view/viewbinder/ProModeFnAreaViewBinder;Landroid/view/View;)V
+    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/view/viewbinder/ProModeFnAreaViewBinder;->onCreate$lambda$2(ZLjp/co/sony/mc/camera/view/orientation/LayoutOrientation;)Lkotlin/Pair;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method public static synthetic $r8$lambda$6KJyQsy_juBzT4FpFK7eaEWttWk(Ljp/co/sony/mc/camera/view/viewbinder/ProModeFnAreaViewBinder;Lkotlin/Pair;)Lkotlin/Unit;
+    .locals 0
+
+    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/view/viewbinder/ProModeFnAreaViewBinder;->onCreate$lambda$4(Ljp/co/sony/mc/camera/view/viewbinder/ProModeFnAreaViewBinder;Lkotlin/Pair;)Lkotlin/Unit;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method public static synthetic $r8$lambda$Dg71udfQvCQlHfHkmNMVdtUYLp0(Ljp/co/sony/mc/camera/view/viewbinder/ProModeFnAreaViewBinder;Lkotlin/Pair;)Lkotlin/Unit;
+    .locals 0
+
+    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/view/viewbinder/ProModeFnAreaViewBinder;->onCreate$lambda$7(Ljp/co/sony/mc/camera/view/viewbinder/ProModeFnAreaViewBinder;Lkotlin/Pair;)Lkotlin/Unit;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method public static synthetic $r8$lambda$MO4DZhAwU7JcRujkZ517MhnTrEQ(Ljp/co/sony/mc/camera/view/viewbinder/ProModeFnAreaViewBinder;Ljava/lang/Boolean;)Lkotlin/Unit;
+    .locals 0
+
+    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/view/viewbinder/ProModeFnAreaViewBinder;->onCreate$lambda$8(Ljp/co/sony/mc/camera/view/viewbinder/ProModeFnAreaViewBinder;Ljava/lang/Boolean;)Lkotlin/Unit;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method public static synthetic $r8$lambda$PtNcvm25S8rd1r6SCP7lRkcCNQI(Ljp/co/sony/mc/camera/view/widget/FnButtonBase;Ljp/co/sony/mc/camera/view/uistate/ProModeFnUiState$FnType;Ljp/co/sony/mc/camera/view/viewbinder/ProModeFnAreaViewBinder;Landroid/view/View;)V
+    .locals 0
+
+    invoke-static {p0, p1, p2, p3}, Ljp/co/sony/mc/camera/view/viewbinder/ProModeFnAreaViewBinder;->createFnButton$lambda$13(Ljp/co/sony/mc/camera/view/widget/FnButtonBase;Ljp/co/sony/mc/camera/view/uistate/ProModeFnUiState$FnType;Ljp/co/sony/mc/camera/view/viewbinder/ProModeFnAreaViewBinder;Landroid/view/View;)V
 
     return-void
+.end method
+
+.method public static synthetic $r8$lambda$TVR-x0IkStzOEICGfvgLZeYMiPg(Ljp/co/sony/mc/camera/view/viewbinder/ProModeFnAreaViewBinder;ILandroid/view/ViewGroup$MarginLayoutParams;)Lkotlin/Unit;
+    .locals 0
+
+    invoke-static {p0, p1, p2}, Ljp/co/sony/mc/camera/view/viewbinder/ProModeFnAreaViewBinder;->createFnButton$lambda$12(Ljp/co/sony/mc/camera/view/viewbinder/ProModeFnAreaViewBinder;ILandroid/view/ViewGroup$MarginLayoutParams;)Lkotlin/Unit;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method public static synthetic $r8$lambda$TkydbD2vkFWN73r8zrEnONotcIg(Lkotlin/Unit;Lkotlin/Unit;Ljava/lang/Boolean;Ljava/lang/Boolean;)Lkotlin/Unit;
+    .locals 0
+
+    invoke-static {p0, p1, p2, p3}, Ljp/co/sony/mc/camera/view/viewbinder/ProModeFnAreaViewBinder;->onCreate$lambda$5(Lkotlin/Unit;Lkotlin/Unit;Ljava/lang/Boolean;Ljava/lang/Boolean;)Lkotlin/Unit;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method public static synthetic $r8$lambda$WqmBMXGZaIDBbJpuDU6SHWOIv8o(Ljp/co/sony/mc/camera/view/viewbinder/ProModeFnAreaViewBinder;Lkotlin/Pair;)Lkotlin/Unit;
+    .locals 0
+
+    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/view/viewbinder/ProModeFnAreaViewBinder;->onCreate$lambda$3(Ljp/co/sony/mc/camera/view/viewbinder/ProModeFnAreaViewBinder;Lkotlin/Pair;)Lkotlin/Unit;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method public static synthetic $r8$lambda$_ZIXXtK6brelUhrraEfvyqH9emM(ZZ)Z
+    .locals 0
+
+    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/view/viewbinder/ProModeFnAreaViewBinder;->onCreate$lambda$0(ZZ)Z
+
+    move-result p0
+
+    return p0
+.end method
+
+.method public static synthetic $r8$lambda$hF09bAR5er5wB6hof9rMCSi6PhU(Ljp/co/sony/mc/camera/view/viewbinder/ProModeFnAreaViewBinder;Ljava/lang/Boolean;)Lkotlin/Unit;
+    .locals 0
+
+    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/view/viewbinder/ProModeFnAreaViewBinder;->onCreate$lambda$1(Ljp/co/sony/mc/camera/view/viewbinder/ProModeFnAreaViewBinder;Ljava/lang/Boolean;)Lkotlin/Unit;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method public static synthetic $r8$lambda$kOpMQ7Jv5HqEjingJ0-QgkHq7HA(Ljp/co/sony/mc/camera/view/viewbinder/ProModeFnAreaViewBinder;Lkotlin/Unit;)Lkotlin/Unit;
+    .locals 0
+
+    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/view/viewbinder/ProModeFnAreaViewBinder;->onCreate$lambda$6(Ljp/co/sony/mc/camera/view/viewbinder/ProModeFnAreaViewBinder;Lkotlin/Unit;)Lkotlin/Unit;
+
+    move-result-object p0
+
+    return-object p0
 .end method
 
 .method static constructor <clinit>()V
@@ -274,78 +376,6 @@
     return-void
 .end method
 
-.method public static final synthetic access$getBinding$p(Ljp/co/sony/mc/camera/view/viewbinder/ProModeFnAreaViewBinder;)Ljp/co/sony/mc/camera/databinding/FragmentProModeFnAreaBinding;
-    .locals 0
-
-    .line 54
-    iget-object p0, p0, Ljp/co/sony/mc/camera/view/viewbinder/ProModeFnAreaViewBinder;->binding:Ljp/co/sony/mc/camera/databinding/FragmentProModeFnAreaBinding;
-
-    return-object p0
-.end method
-
-.method public static final synthetic access$getContext$p(Ljp/co/sony/mc/camera/view/viewbinder/ProModeFnAreaViewBinder;)Landroid/content/Context;
-    .locals 0
-
-    .line 54
-    iget-object p0, p0, Ljp/co/sony/mc/camera/view/viewbinder/ProModeFnAreaViewBinder;->context:Landroid/content/Context;
-
-    return-object p0
-.end method
-
-.method public static final synthetic access$getMFnButtonMap$p(Ljp/co/sony/mc/camera/view/viewbinder/ProModeFnAreaViewBinder;)Ljava/util/Map;
-    .locals 0
-
-    .line 54
-    iget-object p0, p0, Ljp/co/sony/mc/camera/view/viewbinder/ProModeFnAreaViewBinder;->mFnButtonMap:Ljava/util/Map;
-
-    return-object p0
-.end method
-
-.method public static final synthetic access$getProModeCommonUiState$p(Ljp/co/sony/mc/camera/view/viewbinder/ProModeFnAreaViewBinder;)Ljp/co/sony/mc/camera/view/uistate/ProModeCommonUiState;
-    .locals 0
-
-    .line 54
-    iget-object p0, p0, Ljp/co/sony/mc/camera/view/viewbinder/ProModeFnAreaViewBinder;->proModeCommonUiState:Ljp/co/sony/mc/camera/view/uistate/ProModeCommonUiState;
-
-    return-object p0
-.end method
-
-.method public static final synthetic access$getSettings$p(Ljp/co/sony/mc/camera/view/viewbinder/ProModeFnAreaViewBinder;)Ljp/co/sony/mc/camera/setting/CameraProSetting;
-    .locals 0
-
-    .line 54
-    iget-object p0, p0, Ljp/co/sony/mc/camera/view/viewbinder/ProModeFnAreaViewBinder;->settings:Ljp/co/sony/mc/camera/setting/CameraProSetting;
-
-    return-object p0
-.end method
-
-.method public static final synthetic access$initFnButtonType(Ljp/co/sony/mc/camera/view/viewbinder/ProModeFnAreaViewBinder;)V
-    .locals 0
-
-    .line 54
-    invoke-direct {p0}, Ljp/co/sony/mc/camera/view/viewbinder/ProModeFnAreaViewBinder;->initFnButtonType()V
-
-    return-void
-.end method
-
-.method public static final synthetic access$updateEnabled(Ljp/co/sony/mc/camera/view/viewbinder/ProModeFnAreaViewBinder;)V
-    .locals 0
-
-    .line 54
-    invoke-direct {p0}, Ljp/co/sony/mc/camera/view/viewbinder/ProModeFnAreaViewBinder;->updateEnabled()V
-
-    return-void
-.end method
-
-.method public static final synthetic access$updateFnButton(Ljp/co/sony/mc/camera/view/viewbinder/ProModeFnAreaViewBinder;Ljp/co/sony/mc/camera/setting/CameraSettingsHolder;Ljava/lang/String;)V
-    .locals 0
-
-    .line 54
-    invoke-direct {p0, p1, p2}, Ljp/co/sony/mc/camera/view/viewbinder/ProModeFnAreaViewBinder;->updateFnButton(Ljp/co/sony/mc/camera/setting/CameraSettingsHolder;Ljava/lang/String;)V
-
-    return-void
-.end method
-
 .method private final changeSelfTimerIcon(Ljp/co/sony/mc/camera/view/CameraEventListener$CameraEvent;)V
     .locals 3
 
@@ -416,7 +446,7 @@
 .end method
 
 .method private final createFnButton(Ljp/co/sony/mc/camera/configuration/parameters/FunctionCustom;I)Ljp/co/sony/mc/camera/view/widget/FnButtonBase;
-    .locals 7
+    .locals 6
 
     .line 253
     invoke-virtual {p1}, Ljp/co/sony/mc/camera/configuration/parameters/FunctionCustom;->getCustomSettingKey()Ljp/co/sony/mc/camera/setting/SettingKey$Key;
@@ -492,10 +522,6 @@
 
     move-result-object v4
 
-    const-string v6, "getFnType(...)"
-
-    invoke-static {v4, v6}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
-
     invoke-virtual {v1, v4}, Ljp/co/sony/mc/camera/view/widget/FnButtonBase;->setType(Ljp/co/sony/mc/camera/view/widget/FnButtonBase$Type;)V
 
     .line 272
@@ -517,7 +543,7 @@
 
     move-result-object p1
 
-    const v3, 0x7f070622
+    const v3, 0x7f0706a2
 
     invoke-virtual {p1, v3}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
@@ -550,11 +576,9 @@
 
     check-cast p1, Landroid/view/View;
 
-    new-instance v2, Ljp/co/sony/mc/camera/view/viewbinder/ProModeFnAreaViewBinder$createFnButton$1;
+    new-instance v2, Ljp/co/sony/mc/camera/view/viewbinder/ProModeFnAreaViewBinder$$ExternalSyntheticLambda0;
 
-    invoke-direct {v2, p0, p2}, Ljp/co/sony/mc/camera/view/viewbinder/ProModeFnAreaViewBinder$createFnButton$1;-><init>(Ljp/co/sony/mc/camera/view/viewbinder/ProModeFnAreaViewBinder;I)V
-
-    check-cast v2, Lkotlin/jvm/functions/Function1;
+    invoke-direct {v2, p0, p2}, Ljp/co/sony/mc/camera/view/viewbinder/ProModeFnAreaViewBinder$$ExternalSyntheticLambda0;-><init>(Ljp/co/sony/mc/camera/view/viewbinder/ProModeFnAreaViewBinder;I)V
 
     invoke-static {p1, v2}, Ljp/co/sony/mc/camera/util/ViewExtensionsKt;->adjustMargin(Landroid/view/View;Lkotlin/jvm/functions/Function1;)V
 
@@ -566,16 +590,99 @@
     move-result-object p1
 
     .line 297
-    new-instance p2, Ljp/co/sony/mc/camera/view/viewbinder/ProModeFnAreaViewBinder$$ExternalSyntheticLambda0;
+    new-instance p2, Ljp/co/sony/mc/camera/view/viewbinder/ProModeFnAreaViewBinder$$ExternalSyntheticLambda2;
 
-    invoke-direct {p2, v1, p1, p0}, Ljp/co/sony/mc/camera/view/viewbinder/ProModeFnAreaViewBinder$$ExternalSyntheticLambda0;-><init>(Ljp/co/sony/mc/camera/view/widget/FnButtonBase;Ljp/co/sony/mc/camera/view/uistate/ProModeFnUiState$FnType;Ljp/co/sony/mc/camera/view/viewbinder/ProModeFnAreaViewBinder;)V
+    invoke-direct {p2, v1, p1, p0}, Ljp/co/sony/mc/camera/view/viewbinder/ProModeFnAreaViewBinder$$ExternalSyntheticLambda2;-><init>(Ljp/co/sony/mc/camera/view/widget/FnButtonBase;Ljp/co/sony/mc/camera/view/uistate/ProModeFnUiState$FnType;Ljp/co/sony/mc/camera/view/viewbinder/ProModeFnAreaViewBinder;)V
 
     invoke-virtual {v1, p2}, Ljp/co/sony/mc/camera/view/widget/FnButtonBase;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     return-object v1
 .end method
 
-.method private static final createFnButton$lambda$3(Ljp/co/sony/mc/camera/view/widget/FnButtonBase;Ljp/co/sony/mc/camera/view/uistate/ProModeFnUiState$FnType;Ljp/co/sony/mc/camera/view/viewbinder/ProModeFnAreaViewBinder;Landroid/view/View;)V
+.method private static final createFnButton$lambda$12(Ljp/co/sony/mc/camera/view/viewbinder/ProModeFnAreaViewBinder;ILandroid/view/ViewGroup$MarginLayoutParams;)Lkotlin/Unit;
+    .locals 3
+
+    const-string/jumbo v0, "this$0"
+
+    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+
+    const-string v0, "$this$adjustMargin"
+
+    invoke-static {p2, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 282
+    iget-object v0, p0, Ljp/co/sony/mc/camera/view/viewbinder/ProModeFnAreaViewBinder;->context:Landroid/content/Context;
+
+    invoke-virtual {v0}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
+
+    move-result-object v0
+
+    const v1, 0x7f07014e
+
+    invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
+
+    move-result v0
+
+    .line 284
+    iget-object v1, p0, Ljp/co/sony/mc/camera/view/viewbinder/ProModeFnAreaViewBinder;->context:Landroid/content/Context;
+
+    invoke-virtual {v1}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
+
+    move-result-object v1
+
+    const v2, 0x7f070150
+
+    invoke-virtual {v1, v2}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
+
+    move-result v1
+
+    .line 286
+    iget-object p0, p0, Ljp/co/sony/mc/camera/view/viewbinder/ProModeFnAreaViewBinder;->context:Landroid/content/Context;
+
+    invoke-virtual {p0}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
+
+    move-result-object p0
+
+    const v2, 0x7f07014f
+
+    invoke-virtual {p0, v2}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
+
+    move-result p0
+
+    .line 288
+    rem-int/lit8 p1, p1, 0x6
+
+    const/4 v2, 0x0
+
+    if-nez p1, :cond_0
+
+    .line 289
+    invoke-virtual {p2, v1, v2, v0, v2}, Landroid/view/ViewGroup$MarginLayoutParams;->setMargins(IIII)V
+
+    goto :goto_0
+
+    :cond_0
+    const/4 v1, 0x5
+
+    if-ne p1, v1, :cond_1
+
+    .line 291
+    invoke-virtual {p2, v0, v2, p0, v2}, Landroid/view/ViewGroup$MarginLayoutParams;->setMargins(IIII)V
+
+    goto :goto_0
+
+    .line 293
+    :cond_1
+    invoke-virtual {p2, v0, v2, v0, v2}, Landroid/view/ViewGroup$MarginLayoutParams;->setMargins(IIII)V
+
+    .line 295
+    :goto_0
+    sget-object p0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
+
+    return-object p0
+.end method
+
+.method private static final createFnButton$lambda$13(Ljp/co/sony/mc/camera/view/widget/FnButtonBase;Ljp/co/sony/mc/camera/view/uistate/ProModeFnUiState$FnType;Ljp/co/sony/mc/camera/view/viewbinder/ProModeFnAreaViewBinder;Landroid/view/View;)V
     .locals 0
 
     const-string p3, "$button"
@@ -813,7 +920,11 @@
     invoke-virtual {v2}, Landroid/widget/LinearLayout;->removeAllViews()V
 
     .line 206
-    invoke-interface {v0}, Ljava/util/List;->size()I
+    move-object v3, v0
+
+    check-cast v3, Ljava/util/Collection;
+
+    invoke-interface {v3}, Ljava/util/Collection;->size()I
 
     move-result v3
 
@@ -881,6 +992,424 @@
 
     :cond_2
     return-void
+.end method
+
+.method private static final onCreate$lambda$0(ZZ)Z
+    .locals 0
+
+    if-nez p0, :cond_1
+
+    if-eqz p1, :cond_0
+
+    goto :goto_0
+
+    :cond_0
+    const/4 p0, 0x0
+
+    goto :goto_1
+
+    :cond_1
+    :goto_0
+    const/4 p0, 0x1
+
+    :goto_1
+    return p0
+.end method
+
+.method private static final onCreate$lambda$1(Ljp/co/sony/mc/camera/view/viewbinder/ProModeFnAreaViewBinder;Ljava/lang/Boolean;)Lkotlin/Unit;
+    .locals 1
+
+    const-string/jumbo v0, "this$0"
+
+    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 77
+    invoke-virtual {p1}, Ljava/lang/Boolean;->booleanValue()Z
+
+    move-result p1
+
+    if-eqz p1, :cond_0
+
+    .line 78
+    invoke-direct {p0}, Ljp/co/sony/mc/camera/view/viewbinder/ProModeFnAreaViewBinder;->initFnButtonType()V
+
+    .line 80
+    :cond_0
+    sget-object p0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
+
+    return-object p0
+.end method
+
+.method private static final onCreate$lambda$2(ZLjp/co/sony/mc/camera/view/orientation/LayoutOrientation;)Lkotlin/Pair;
+    .locals 1
+
+    const-string v0, "orientation"
+
+    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 88
+    new-instance v0, Lkotlin/Pair;
+
+    invoke-static {p0}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
+
+    move-result-object p0
+
+    invoke-direct {v0, p0, p1}, Lkotlin/Pair;-><init>(Ljava/lang/Object;Ljava/lang/Object;)V
+
+    return-object v0
+.end method
+
+.method private static final onCreate$lambda$3(Ljp/co/sony/mc/camera/view/viewbinder/ProModeFnAreaViewBinder;Lkotlin/Pair;)Lkotlin/Unit;
+    .locals 2
+
+    const-string/jumbo v0, "this$0"
+
+    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 89
+    invoke-virtual {p1}, Lkotlin/Pair;->component1()Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, Ljava/lang/Boolean;
+
+    invoke-virtual {v0}, Ljava/lang/Boolean;->booleanValue()Z
+
+    move-result v0
+
+    invoke-virtual {p1}, Lkotlin/Pair;->component2()Ljava/lang/Object;
+
+    move-result-object p1
+
+    check-cast p1, Ljp/co/sony/mc/camera/view/orientation/LayoutOrientation;
+
+    if-eqz v0, :cond_0
+
+    .line 91
+    iget-object p0, p0, Ljp/co/sony/mc/camera/view/viewbinder/ProModeFnAreaViewBinder;->mFnButtonMap:Ljava/util/Map;
+
+    invoke-interface {p0}, Ljava/util/Map;->keySet()Ljava/util/Set;
+
+    move-result-object p0
+
+    invoke-interface {p0}, Ljava/util/Set;->iterator()Ljava/util/Iterator;
+
+    move-result-object p0
+
+    :goto_0
+    invoke-interface {p0}, Ljava/util/Iterator;->hasNext()Z
+
+    move-result v0
+
+    if-eqz v0, :cond_0
+
+    invoke-interface {p0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, Ljp/co/sony/mc/camera/view/widget/FnButtonBase;
+
+    .line 92
+    invoke-static {p1}, Ljp/co/sony/mc/camera/view/orientation/LayoutOrientationKt;->toRotation(Ljp/co/sony/mc/camera/view/orientation/LayoutOrientation;)F
+
+    move-result v1
+
+    invoke-virtual {v0, v1}, Ljp/co/sony/mc/camera/view/widget/FnButtonBase;->setRotation(F)V
+
+    goto :goto_0
+
+    .line 95
+    :cond_0
+    sget-object p0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
+
+    return-object p0
+.end method
+
+.method private static final onCreate$lambda$4(Ljp/co/sony/mc/camera/view/viewbinder/ProModeFnAreaViewBinder;Lkotlin/Pair;)Lkotlin/Unit;
+    .locals 3
+
+    const-string/jumbo v0, "this$0"
+
+    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 98
+    invoke-virtual {p1}, Lkotlin/Pair;->getSecond()Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, Ljava/util/List;
+
+    invoke-interface {v0}, Ljava/util/List;->iterator()Ljava/util/Iterator;
+
+    move-result-object v0
+
+    :goto_0
+    invoke-interface {v0}, Ljava/util/Iterator;->hasNext()Z
+
+    move-result v1
+
+    if-eqz v1, :cond_0
+
+    invoke-interface {v0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+
+    move-result-object v1
+
+    check-cast v1, Ljava/lang/String;
+
+    .line 99
+    invoke-virtual {p1}, Lkotlin/Pair;->getFirst()Ljava/lang/Object;
+
+    move-result-object v2
+
+    check-cast v2, Ljp/co/sony/mc/camera/setting/CameraSettingsHolder;
+
+    invoke-direct {p0, v2, v1}, Ljp/co/sony/mc/camera/view/viewbinder/ProModeFnAreaViewBinder;->updateFnButton(Ljp/co/sony/mc/camera/setting/CameraSettingsHolder;Ljava/lang/String;)V
+
+    goto :goto_0
+
+    .line 101
+    :cond_0
+    sget-object p0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
+
+    return-object p0
+.end method
+
+.method private static final onCreate$lambda$5(Lkotlin/Unit;Lkotlin/Unit;Ljava/lang/Boolean;Ljava/lang/Boolean;)Lkotlin/Unit;
+    .locals 0
+
+    .line 108
+    sget-object p0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
+
+    return-object p0
+.end method
+
+.method private static final onCreate$lambda$6(Ljp/co/sony/mc/camera/view/viewbinder/ProModeFnAreaViewBinder;Lkotlin/Unit;)Lkotlin/Unit;
+    .locals 0
+
+    const-string/jumbo p1, "this$0"
+
+    invoke-static {p0, p1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 109
+    invoke-direct {p0}, Ljp/co/sony/mc/camera/view/viewbinder/ProModeFnAreaViewBinder;->updateEnabled()V
+
+    .line 110
+    sget-object p0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
+
+    return-object p0
+.end method
+
+.method private static final onCreate$lambda$7(Ljp/co/sony/mc/camera/view/viewbinder/ProModeFnAreaViewBinder;Lkotlin/Pair;)Lkotlin/Unit;
+    .locals 6
+
+    const-string/jumbo v0, "this$0"
+
+    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+
+    const-string v0, "menuChange"
+
+    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 113
+    invoke-virtual {p1}, Lkotlin/Pair;->getSecond()Ljava/lang/Object;
+
+    move-result-object v0
+
+    instance-of v0, v0, Ljp/co/sony/mc/camera/view/uistate/ProModeCommonUiState$Menu$FnMenu;
+
+    if-eqz v0, :cond_3
+
+    .line 115
+    invoke-virtual {p1}, Lkotlin/Pair;->getFirst()Ljava/lang/Object;
+
+    move-result-object v0
+
+    instance-of v0, v0, Ljp/co/sony/mc/camera/view/uistate/ProModeCommonUiState$Menu$FnSubmenu;
+
+    const/4 v1, 0x0
+
+    if-eqz v0, :cond_1
+
+    .line 116
+    invoke-virtual {p1}, Lkotlin/Pair;->getFirst()Ljava/lang/Object;
+
+    move-result-object p1
+
+    const-string v0, "null cannot be cast to non-null type jp.co.sony.mc.camera.view.uistate.ProModeCommonUiState.Menu.FnSubmenu"
+
+    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;Ljava/lang/String;)V
+
+    check-cast p1, Ljp/co/sony/mc/camera/view/uistate/ProModeCommonUiState$Menu$FnSubmenu;
+
+    .line 117
+    iget-object v0, p0, Ljp/co/sony/mc/camera/view/viewbinder/ProModeFnAreaViewBinder;->settings:Ljp/co/sony/mc/camera/setting/CameraProSetting;
+
+    sget-object v2, Ljp/co/sony/mc/camera/setting/CameraSettings;->FUNCTION_CUSTOM_EXTENSION_DATA:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
+
+    check-cast v2, Ljp/co/sony/mc/camera/setting/SettingKey$Key;
+
+    invoke-virtual {v0, v2}, Ljp/co/sony/mc/camera/setting/CameraProSetting;->get(Ljp/co/sony/mc/camera/setting/SettingKey$Key;)Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, Ljp/co/sony/mc/camera/configuration/parameters/FunctionCustomExtensionData;
+
+    .line 118
+    invoke-virtual {v0}, Ljp/co/sony/mc/camera/configuration/parameters/FunctionCustomExtensionData;->getFunctionCustomList()Ljava/util/List;
+
+    move-result-object v0
+
+    .line 119
+    move-object v2, v0
+
+    check-cast v2, Ljava/util/Collection;
+
+    invoke-interface {v2}, Ljava/util/Collection;->size()I
+
+    move-result v2
+
+    move v3, v1
+
+    :goto_0
+    if-ge v3, v2, :cond_1
+
+    .line 120
+    invoke-interface {v0, v3}, Ljava/util/List;->get(I)Ljava/lang/Object;
+
+    move-result-object v4
+
+    check-cast v4, Ljp/co/sony/mc/camera/configuration/parameters/FunctionCustom;
+
+    .line 121
+    invoke-virtual {v4}, Ljp/co/sony/mc/camera/configuration/parameters/FunctionCustom;->getCustomSettingKey()Ljp/co/sony/mc/camera/setting/SettingKey$Key;
+
+    move-result-object v4
+
+    .line 122
+    sget-object v5, Ljp/co/sony/mc/camera/view/uistate/ProModeFnUiState$FnType;->Companion:Ljp/co/sony/mc/camera/view/uistate/ProModeFnUiState$FnType$Companion;
+
+    invoke-virtual {v5, v4}, Ljp/co/sony/mc/camera/view/uistate/ProModeFnUiState$FnType$Companion;->getFnType(Ljp/co/sony/mc/camera/setting/SettingKey$Key;)Ljp/co/sony/mc/camera/view/uistate/ProModeFnUiState$FnType;
+
+    move-result-object v4
+
+    invoke-virtual {p1}, Ljp/co/sony/mc/camera/view/uistate/ProModeCommonUiState$Menu$FnSubmenu;->getFnType()Ljp/co/sony/mc/camera/view/uistate/ProModeFnUiState$FnType;
+
+    move-result-object v5
+
+    if-ne v4, v5, :cond_0
+
+    move v1, v3
+
+    goto :goto_1
+
+    :cond_0
+    add-int/lit8 v3, v3, 0x1
+
+    goto :goto_0
+
+    :cond_1
+    :goto_1
+    const/4 p1, 0x6
+
+    if-ge v1, p1, :cond_2
+
+    .line 130
+    iget-object p0, p0, Ljp/co/sony/mc/camera/view/viewbinder/ProModeFnAreaViewBinder;->binding:Ljp/co/sony/mc/camera/databinding/FragmentProModeFnAreaBinding;
+
+    iget-object p0, p0, Ljp/co/sony/mc/camera/databinding/FragmentProModeFnAreaBinding;->fnRow1:Landroid/widget/LinearLayout;
+
+    invoke-virtual {p0, v1}, Landroid/widget/LinearLayout;->getChildAt(I)Landroid/view/View;
+
+    move-result-object p0
+
+    goto :goto_2
+
+    .line 132
+    :cond_2
+    iget-object p0, p0, Ljp/co/sony/mc/camera/view/viewbinder/ProModeFnAreaViewBinder;->binding:Ljp/co/sony/mc/camera/databinding/FragmentProModeFnAreaBinding;
+
+    iget-object p0, p0, Ljp/co/sony/mc/camera/databinding/FragmentProModeFnAreaBinding;->fnRow2:Landroid/widget/LinearLayout;
+
+    rem-int/2addr v1, p1
+
+    invoke-virtual {p0, v1}, Landroid/widget/LinearLayout;->getChildAt(I)Landroid/view/View;
+
+    move-result-object p0
+
+    .line 134
+    :goto_2
+    invoke-virtual {p0}, Landroid/view/View;->getViewTreeObserver()Landroid/view/ViewTreeObserver;
+
+    move-result-object p1
+
+    new-instance v0, Ljp/co/sony/mc/camera/view/viewbinder/ProModeFnAreaViewBinder$onCreate$8$1;
+
+    invoke-direct {v0, p0}, Ljp/co/sony/mc/camera/view/viewbinder/ProModeFnAreaViewBinder$onCreate$8$1;-><init>(Landroid/view/View;)V
+
+    check-cast v0, Landroid/view/ViewTreeObserver$OnGlobalLayoutListener;
+
+    invoke-virtual {p1, v0}, Landroid/view/ViewTreeObserver;->addOnGlobalLayoutListener(Landroid/view/ViewTreeObserver$OnGlobalLayoutListener;)V
+
+    .line 142
+    :cond_3
+    sget-object p0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
+
+    return-object p0
+.end method
+
+.method private static final onCreate$lambda$8(Ljp/co/sony/mc/camera/view/viewbinder/ProModeFnAreaViewBinder;Ljava/lang/Boolean;)Lkotlin/Unit;
+    .locals 1
+
+    const-string/jumbo v0, "this$0"
+
+    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 146
+    iget-object v0, p0, Ljp/co/sony/mc/camera/view/viewbinder/ProModeFnAreaViewBinder;->proModeCommonUiState:Ljp/co/sony/mc/camera/view/uistate/ProModeCommonUiState;
+
+    invoke-virtual {v0}, Ljp/co/sony/mc/camera/view/uistate/ProModeCommonUiState;->getCurrentMenuState()Landroidx/lifecycle/MediatorLiveData;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Landroidx/lifecycle/MediatorLiveData;->getValue()Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, Ljp/co/sony/mc/camera/view/uistate/ProModeCommonUiState$Menu;
+
+    .line 147
+    invoke-virtual {p1}, Ljava/lang/Boolean;->booleanValue()Z
+
+    move-result p1
+
+    if-eqz p1, :cond_0
+
+    .line 148
+    instance-of p1, v0, Ljp/co/sony/mc/camera/view/uistate/ProModeCommonUiState$Menu$PopupFnSubmenu;
+
+    if-eqz p1, :cond_0
+
+    .line 149
+    check-cast v0, Ljp/co/sony/mc/camera/view/uistate/ProModeCommonUiState$Menu$PopupFnSubmenu;
+
+    invoke-virtual {v0}, Ljp/co/sony/mc/camera/view/uistate/ProModeCommonUiState$Menu$PopupFnSubmenu;->getFnType()Ljp/co/sony/mc/camera/view/uistate/ProModeFnUiState$FnType;
+
+    move-result-object p1
+
+    sget-object v0, Ljp/co/sony/mc/camera/view/uistate/ProModeFnUiState$FnType;->MIC:Ljp/co/sony/mc/camera/view/uistate/ProModeFnUiState$FnType;
+
+    if-ne p1, v0, :cond_0
+
+    .line 151
+    iget-object p0, p0, Ljp/co/sony/mc/camera/view/viewbinder/ProModeFnAreaViewBinder;->proModeCommonUiState:Ljp/co/sony/mc/camera/view/uistate/ProModeCommonUiState;
+
+    invoke-virtual {p0}, Ljp/co/sony/mc/camera/view/uistate/ProModeCommonUiState;->backOneStep()V
+
+    .line 153
+    :cond_0
+    sget-object p0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
+
+    return-object p0
 .end method
 
 .method private final updateEnabled()V
@@ -1089,18 +1618,10 @@
 
     move-result-object p1
 
-    const-string v0, "getDriveMode(...)"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
-
     check-cast p1, Ljp/co/sony/mc/camera/configuration/parameters/UserSettingValue;
 
     .line 332
     sget-object v0, Ljp/co/sony/mc/camera/setting/CameraSettings;->DRIVE_MODE:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
-
-    const-string v1, "DRIVE_MODE"
-
-    invoke-static {v0, v1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
 
     check-cast v0, Ljp/co/sony/mc/camera/setting/SettingKey$Key;
 
@@ -1132,18 +1653,10 @@
 
     move-result-object p1
 
-    const-string v0, "getFocusMode(...)"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
-
     check-cast p1, Ljp/co/sony/mc/camera/configuration/parameters/UserSettingValue;
 
     .line 336
     sget-object v0, Ljp/co/sony/mc/camera/setting/CameraSettings;->FOCUS_MODE:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
-
-    const-string v1, "FOCUS_MODE"
-
-    invoke-static {v0, v1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
 
     check-cast v0, Ljp/co/sony/mc/camera/setting/SettingKey$Key;
 
@@ -1175,18 +1688,10 @@
 
     move-result-object p1
 
-    const-string v0, "getFocusArea(...)"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
-
     check-cast p1, Ljp/co/sony/mc/camera/configuration/parameters/UserSettingValue;
 
     .line 340
     sget-object v0, Ljp/co/sony/mc/camera/setting/CameraSettings;->FOCUS_AREA:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
-
-    const-string v1, "FOCUS_AREA"
-
-    invoke-static {v0, v1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
 
     check-cast v0, Ljp/co/sony/mc/camera/setting/SettingKey$Key;
 
@@ -1218,18 +1723,10 @@
 
     move-result-object p1
 
-    const-string v0, "getMetering(...)"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
-
     check-cast p1, Ljp/co/sony/mc/camera/configuration/parameters/UserSettingValue;
 
     .line 344
     sget-object v0, Ljp/co/sony/mc/camera/setting/CameraSettings;->METERING:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
-
-    const-string v1, "METERING"
-
-    invoke-static {v0, v1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
 
     check-cast v0, Ljp/co/sony/mc/camera/setting/SettingKey$Key;
 
@@ -1261,18 +1758,10 @@
 
     move-result-object p1
 
-    const-string v0, "getFlash(...)"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
-
     check-cast p1, Ljp/co/sony/mc/camera/configuration/parameters/UserSettingValue;
 
     .line 348
     sget-object v0, Ljp/co/sony/mc/camera/setting/CameraSettings;->FLASH:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
-
-    const-string v1, "FLASH"
-
-    invoke-static {v0, v1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
 
     check-cast v0, Ljp/co/sony/mc/camera/setting/SettingKey$Key;
 
@@ -1304,18 +1793,10 @@
 
     move-result-object p1
 
-    const-string v0, "getWhiteBalance(...)"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
-
     check-cast p1, Ljp/co/sony/mc/camera/configuration/parameters/UserSettingValue;
 
     .line 352
     sget-object v0, Ljp/co/sony/mc/camera/setting/CameraSettings;->WHITE_BALANCE:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
-
-    const-string v1, "WHITE_BALANCE"
-
-    invoke-static {v0, v1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
 
     check-cast v0, Ljp/co/sony/mc/camera/setting/SettingKey$Key;
 
@@ -1347,18 +1828,10 @@
 
     move-result-object p1
 
-    const-string v0, "getFaceDetection(...)"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
-
     check-cast p1, Ljp/co/sony/mc/camera/configuration/parameters/UserSettingValue;
 
     .line 356
     sget-object v0, Ljp/co/sony/mc/camera/setting/CameraSettings;->FACE_DETECTION:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
-
-    const-string v1, "FACE_DETECTION"
-
-    invoke-static {v0, v1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
 
     check-cast v0, Ljp/co/sony/mc/camera/setting/SettingKey$Key;
 
@@ -1390,18 +1863,10 @@
 
     move-result-object p1
 
-    const-string v0, "getPeaking(...)"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
-
     check-cast p1, Ljp/co/sony/mc/camera/configuration/parameters/UserSettingValue;
 
     .line 360
     sget-object v0, Ljp/co/sony/mc/camera/setting/CameraSettings;->PEAKING:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
-
-    const-string v1, "PEAKING"
-
-    invoke-static {v0, v1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
 
     check-cast v0, Ljp/co/sony/mc/camera/setting/SettingKey$Key;
 
@@ -1433,18 +1898,10 @@
 
     move-result-object p1
 
-    const-string v0, "getAspectRatio(...)"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
-
     check-cast p1, Ljp/co/sony/mc/camera/configuration/parameters/UserSettingValue;
 
     .line 364
     sget-object v0, Ljp/co/sony/mc/camera/setting/CameraSettings;->ASPECT_RATIO:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
-
-    const-string v1, "ASPECT_RATIO"
-
-    invoke-static {v0, v1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
 
     check-cast v0, Ljp/co/sony/mc/camera/setting/SettingKey$Key;
 
@@ -1476,18 +1933,10 @@
 
     move-result-object p1
 
-    const-string v0, "getHdr(...)"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
-
     check-cast p1, Ljp/co/sony/mc/camera/configuration/parameters/UserSettingValue;
 
     .line 368
     sget-object v0, Ljp/co/sony/mc/camera/setting/CameraSettings;->HDR:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
-
-    const-string v1, "HDR"
-
-    invoke-static {v0, v1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
 
     check-cast v0, Ljp/co/sony/mc/camera/setting/SettingKey$Key;
 
@@ -1519,18 +1968,10 @@
 
     move-result-object p1
 
-    const-string v0, "getPhotoFormat(...)"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
-
     check-cast p1, Ljp/co/sony/mc/camera/configuration/parameters/UserSettingValue;
 
     .line 372
     sget-object v0, Ljp/co/sony/mc/camera/setting/CameraSettings;->PHOTO_FORMAT:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
-
-    const-string v1, "PHOTO_FORMAT"
-
-    invoke-static {v0, v1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
 
     check-cast v0, Ljp/co/sony/mc/camera/setting/SettingKey$Key;
 
@@ -1562,18 +2003,10 @@
 
     move-result-object p1
 
-    const-string v0, "getBackSoftSkin(...)"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
-
     check-cast p1, Ljp/co/sony/mc/camera/configuration/parameters/UserSettingValue;
 
     .line 376
     sget-object v0, Ljp/co/sony/mc/camera/setting/CameraSettings;->BACK_SOFT_SKIN:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
-
-    const-string v1, "BACK_SOFT_SKIN"
-
-    invoke-static {v0, v1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
 
     check-cast v0, Ljp/co/sony/mc/camera/setting/SettingKey$Key;
 
@@ -1605,18 +2038,10 @@
 
     move-result-object p1
 
-    const-string v0, "getFocusFrameColor(...)"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
-
     check-cast p1, Ljp/co/sony/mc/camera/configuration/parameters/UserSettingValue;
 
     .line 380
     sget-object v0, Ljp/co/sony/mc/camera/setting/CameraSettings;->FOCUS_FRAME_COLOR:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
-
-    const-string v1, "FOCUS_FRAME_COLOR"
-
-    invoke-static {v0, v1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
 
     check-cast v0, Ljp/co/sony/mc/camera/setting/SettingKey$Key;
 
@@ -1648,18 +2073,10 @@
 
     move-result-object p1
 
-    const-string v0, "getTouchIntention(...)"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
-
     check-cast p1, Ljp/co/sony/mc/camera/configuration/parameters/UserSettingValue;
 
     .line 384
     sget-object v0, Ljp/co/sony/mc/camera/setting/CameraSettings;->TOUCH_INTENTION:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
-
-    const-string v1, "TOUCH_INTENTION"
-
-    invoke-static {v0, v1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
 
     check-cast v0, Ljp/co/sony/mc/camera/setting/SettingKey$Key;
 
@@ -1691,18 +2108,10 @@
 
     move-result-object p1
 
-    const-string v0, "getGridLine(...)"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
-
     check-cast p1, Ljp/co/sony/mc/camera/configuration/parameters/UserSettingValue;
 
     .line 388
     sget-object v0, Ljp/co/sony/mc/camera/setting/CommonSettings;->GRID_LINE:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
-
-    const-string v1, "GRID_LINE"
-
-    invoke-static {v0, v1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
 
     check-cast v0, Ljp/co/sony/mc/camera/setting/SettingKey$Key;
 
@@ -1734,18 +2143,10 @@
 
     move-result-object p1
 
-    const-string v0, "getShutterSound(...)"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
-
     check-cast p1, Ljp/co/sony/mc/camera/configuration/parameters/UserSettingValue;
 
     .line 392
     sget-object v0, Ljp/co/sony/mc/camera/setting/CommonSettings;->SHUTTER_SOUND:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
-
-    const-string v1, "SHUTTER_SOUND"
-
-    invoke-static {v0, v1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
 
     check-cast v0, Ljp/co/sony/mc/camera/setting/SettingKey$Key;
 
@@ -1777,18 +2178,10 @@
 
     move-result-object p1
 
-    const-string v0, "getColorToneProfile(...)"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
-
     check-cast p1, Ljp/co/sony/mc/camera/configuration/parameters/UserSettingValue;
 
     .line 396
     sget-object v0, Ljp/co/sony/mc/camera/setting/CameraSettings;->COLOR_TONE_PROFILE:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
-
-    const-string v1, "COLOR_TONE_PROFILE"
-
-    invoke-static {v0, v1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
 
     check-cast v0, Ljp/co/sony/mc/camera/setting/SettingKey$Key;
 
@@ -1820,18 +2213,10 @@
 
     move-result-object p1
 
-    const-string v0, "getLowLightMode(...)"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
-
     check-cast p1, Ljp/co/sony/mc/camera/configuration/parameters/UserSettingValue;
 
     .line 400
     sget-object v0, Ljp/co/sony/mc/camera/setting/CameraSettings;->LOW_LIGHT_MODE:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
-
-    const-string v1, "LOW_LIGHT_MODE"
-
-    invoke-static {v0, v1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
 
     check-cast v0, Ljp/co/sony/mc/camera/setting/SettingKey$Key;
 
@@ -1863,18 +2248,10 @@
 
     move-result-object p1
 
-    const-string v0, "getComputationalMode(...)"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
-
     check-cast p1, Ljp/co/sony/mc/camera/configuration/parameters/UserSettingValue;
 
     .line 404
     sget-object v0, Ljp/co/sony/mc/camera/setting/CameraSettings;->COMPUTATIONAL_MODE:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
-
-    const-string v1, "COMPUTATIONAL_MODE"
-
-    invoke-static {v0, v1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
 
     check-cast v0, Ljp/co/sony/mc/camera/setting/SettingKey$Key;
 
@@ -1906,18 +2283,10 @@
 
     move-result-object p1
 
-    const-string v0, "getVideoSize(...)"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
-
     check-cast p1, Ljp/co/sony/mc/camera/configuration/parameters/UserSettingValue;
 
     .line 408
     sget-object v0, Ljp/co/sony/mc/camera/setting/CameraSettings;->VIDEO_SIZE:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
-
-    const-string v1, "VIDEO_SIZE"
-
-    invoke-static {v0, v1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
 
     check-cast v0, Ljp/co/sony/mc/camera/setting/SettingKey$Key;
 
@@ -1949,18 +2318,10 @@
 
     move-result-object p1
 
-    const-string v0, "getVideoFps(...)"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
-
     check-cast p1, Ljp/co/sony/mc/camera/configuration/parameters/UserSettingValue;
 
     .line 412
     sget-object v0, Ljp/co/sony/mc/camera/setting/CameraSettings;->VIDEO_FPS:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
-
-    const-string v1, "VIDEO_FPS"
-
-    invoke-static {v0, v1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
 
     check-cast v0, Ljp/co/sony/mc/camera/setting/SettingKey$Key;
 
@@ -1992,18 +2353,10 @@
 
     move-result-object p1
 
-    const-string v0, "getVideoStabilizer(...)"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
-
     check-cast p1, Ljp/co/sony/mc/camera/configuration/parameters/UserSettingValue;
 
     .line 416
     sget-object v0, Ljp/co/sony/mc/camera/setting/CameraSettings;->VIDEO_STABILIZER:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
-
-    const-string v1, "VIDEO_STABILIZER"
-
-    invoke-static {v0, v1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
 
     check-cast v0, Ljp/co/sony/mc/camera/setting/SettingKey$Key;
 
@@ -2035,18 +2388,10 @@
 
     move-result-object p1
 
-    const-string v0, "getMic(...)"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
-
     check-cast p1, Ljp/co/sony/mc/camera/configuration/parameters/UserSettingValue;
 
     .line 420
     sget-object v0, Ljp/co/sony/mc/camera/setting/CameraSettings;->MIC:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
-
-    const-string v1, "MIC"
-
-    invoke-static {v0, v1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
 
     check-cast v0, Ljp/co/sony/mc/camera/setting/SettingKey$Key;
 
@@ -2078,18 +2423,10 @@
 
     move-result-object p1
 
-    const-string v0, "getVideoHdr(...)"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
-
     check-cast p1, Ljp/co/sony/mc/camera/configuration/parameters/UserSettingValue;
 
     .line 424
     sget-object v0, Ljp/co/sony/mc/camera/setting/CameraSettings;->VIDEO_HDR:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
-
-    const-string v1, "VIDEO_HDR"
-
-    invoke-static {v0, v1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
 
     check-cast v0, Ljp/co/sony/mc/camera/setting/SettingKey$Key;
 
@@ -2121,18 +2458,10 @@
 
     move-result-object p1
 
-    const-string v0, "getVideoMfHdr(...)"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
-
     check-cast p1, Ljp/co/sony/mc/camera/configuration/parameters/UserSettingValue;
 
     .line 428
     sget-object v0, Ljp/co/sony/mc/camera/setting/CameraSettings;->VIDEO_MF_HDR:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
-
-    const-string v1, "VIDEO_MF_HDR"
-
-    invoke-static {v0, v1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
 
     check-cast v0, Ljp/co/sony/mc/camera/setting/SettingKey$Key;
 
@@ -2164,18 +2493,10 @@
 
     move-result-object p1
 
-    const-string v0, "getPhotoLight(...)"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
-
     check-cast p1, Ljp/co/sony/mc/camera/configuration/parameters/UserSettingValue;
 
     .line 432
     sget-object v0, Ljp/co/sony/mc/camera/setting/CameraSettings;->PHOTO_LIGHT:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
-
-    const-string v1, "PHOTO_LIGHT"
-
-    invoke-static {v0, v1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
 
     check-cast v0, Ljp/co/sony/mc/camera/setting/SettingKey$Key;
 
@@ -2207,18 +2528,10 @@
 
     move-result-object p1
 
-    const-string v0, "getProductShowcase(...)"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
-
     check-cast p1, Ljp/co/sony/mc/camera/configuration/parameters/UserSettingValue;
 
     .line 436
     sget-object v0, Ljp/co/sony/mc/camera/setting/CameraSettings;->PRODUCT_SHOWCASE:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
-
-    const-string v1, "PRODUCT_SHOWCASE"
-
-    invoke-static {v0, v1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
 
     check-cast v0, Ljp/co/sony/mc/camera/setting/SettingKey$Key;
 
@@ -2288,7 +2601,7 @@
     .line 541
     iget-object p2, p0, Ljp/co/sony/mc/camera/view/viewbinder/ProModeFnAreaViewBinder;->context:Landroid/content/Context;
 
-    const v1, 0x7f1100a1
+    const v1, 0x7f11009c
 
     invoke-virtual {p2, v1}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -2324,7 +2637,7 @@
 
     sget-object v1, Ljp/co/sony/mc/camera/setting/SettingAppearance;->ENABLED:Ljp/co/sony/mc/camera/setting/SettingAppearance;
 
-    if-ne p2, v1, :cond_4
+    if-ne p2, v1, :cond_5
 
     .line 548
     instance-of p2, p3, Ljp/co/sony/mc/camera/configuration/parameters/AspectRatio;
@@ -2408,7 +2721,7 @@
 
     const/4 v1, -0x1
 
-    if-eq p2, v1, :cond_5
+    if-eq p2, v1, :cond_4
 
     .line 562
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/viewbinder/ProModeFnAreaViewBinder;->context:Landroid/content/Context;
@@ -2423,13 +2736,16 @@
 
     invoke-virtual {v0, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    :cond_4
+    sget-object p0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
+
     goto :goto_1
 
     .line 567
-    :cond_4
+    :cond_5
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/viewbinder/ProModeFnAreaViewBinder;->context:Landroid/content/Context;
 
-    const p2, 0x7f1100d6
+    const p2, 0x7f1100d7
 
     invoke-virtual {p0, p2}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -2439,7 +2755,6 @@
     invoke-virtual {v0, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     .line 572
-    :cond_5
     :goto_1
     invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
@@ -2651,7 +2966,7 @@
 
     move-result v0
 
-    const v2, 0x7f0801bf
+    const v2, 0x7f0801c4
 
     if-eqz v0, :cond_4
 
@@ -2694,7 +3009,7 @@
     goto/16 :goto_1
 
     :cond_3
-    const p0, 0x7f0801bd
+    const p0, 0x7f0801c2
 
     .line 509
     invoke-virtual {p1, p0}, Ljp/co/sony/mc/camera/view/widget/FnButtonBase;->setIcon(I)V
@@ -2748,7 +3063,7 @@
 
     if-eq p0, v0, :cond_7
 
-    const p0, 0x7f0802ea
+    const p0, 0x7f080300
 
     .line 496
     invoke-virtual {p1, p0}, Ljp/co/sony/mc/camera/view/widget/FnButtonBase;->setIcon(I)V
@@ -3264,7 +3579,11 @@
     invoke-static {v2, v3}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 228
-    invoke-interface {v0}, Ljava/util/List;->size()I
+    move-object v3, v0
+
+    check-cast v3, Ljava/util/Collection;
+
+    invoke-interface {v3}, Ljava/util/Collection;->size()I
 
     move-result v3
 
@@ -3626,11 +3945,11 @@
 
     move-result-object v3
 
+    new-instance v4, Ljp/co/sony/mc/camera/view/viewbinder/ProModeFnAreaViewBinder$$ExternalSyntheticLambda3;
+
+    invoke-direct {v4}, Ljp/co/sony/mc/camera/view/viewbinder/ProModeFnAreaViewBinder$$ExternalSyntheticLambda3;-><init>()V
+
     .line 73
-    sget-object v4, Ljp/co/sony/mc/camera/view/viewbinder/ProModeFnAreaViewBinder$onCreate$1;->INSTANCE:Ljp/co/sony/mc/camera/view/viewbinder/ProModeFnAreaViewBinder$onCreate$1;
-
-    check-cast v4, Lkotlin/jvm/functions/Function2;
-
     invoke-virtual {v1, v2, v3, v4}, Ljp/co/sony/mc/camera/view/viewmodel/LiveDataMediators;->notNulls(Landroidx/lifecycle/LiveData;Landroidx/lifecycle/LiveData;Lkotlin/jvm/functions/Function2;)Landroidx/lifecycle/LiveData;
 
     move-result-object v1
@@ -3638,11 +3957,9 @@
     .line 76
     iget-object v2, p0, Ljp/co/sony/mc/camera/view/viewbinder/ProModeFnAreaViewBinder;->lifecycleOwner:Landroidx/lifecycle/LifecycleOwner;
 
-    new-instance v3, Ljp/co/sony/mc/camera/view/viewbinder/ProModeFnAreaViewBinder$onCreate$2;
+    new-instance v3, Ljp/co/sony/mc/camera/view/viewbinder/ProModeFnAreaViewBinder$$ExternalSyntheticLambda4;
 
-    invoke-direct {v3, p0}, Ljp/co/sony/mc/camera/view/viewbinder/ProModeFnAreaViewBinder$onCreate$2;-><init>(Ljp/co/sony/mc/camera/view/viewbinder/ProModeFnAreaViewBinder;)V
-
-    check-cast v3, Lkotlin/jvm/functions/Function1;
+    invoke-direct {v3, p0}, Ljp/co/sony/mc/camera/view/viewbinder/ProModeFnAreaViewBinder$$ExternalSyntheticLambda4;-><init>(Ljp/co/sony/mc/camera/view/viewbinder/ProModeFnAreaViewBinder;)V
 
     new-instance v4, Ljp/co/sony/mc/camera/view/viewbinder/ProModeFnAreaViewBinder$sam$androidx_lifecycle_Observer$0;
 
@@ -3676,11 +3993,11 @@
 
     move-result-object v3
 
+    new-instance v4, Ljp/co/sony/mc/camera/view/viewbinder/ProModeFnAreaViewBinder$$ExternalSyntheticLambda5;
+
+    invoke-direct {v4}, Ljp/co/sony/mc/camera/view/viewbinder/ProModeFnAreaViewBinder$$ExternalSyntheticLambda5;-><init>()V
+
     .line 85
-    sget-object v4, Ljp/co/sony/mc/camera/view/viewbinder/ProModeFnAreaViewBinder$onCreate$3;->INSTANCE:Ljp/co/sony/mc/camera/view/viewbinder/ProModeFnAreaViewBinder$onCreate$3;
-
-    check-cast v4, Lkotlin/jvm/functions/Function2;
-
     invoke-virtual {v1, v2, v3, v4}, Ljp/co/sony/mc/camera/view/viewmodel/LiveDataMediators;->notNulls(Landroidx/lifecycle/LiveData;Landroidx/lifecycle/LiveData;Lkotlin/jvm/functions/Function2;)Landroidx/lifecycle/LiveData;
 
     move-result-object v1
@@ -3688,11 +4005,9 @@
     .line 88
     iget-object v2, p0, Ljp/co/sony/mc/camera/view/viewbinder/ProModeFnAreaViewBinder;->lifecycleOwner:Landroidx/lifecycle/LifecycleOwner;
 
-    new-instance v3, Ljp/co/sony/mc/camera/view/viewbinder/ProModeFnAreaViewBinder$onCreate$4;
+    new-instance v3, Ljp/co/sony/mc/camera/view/viewbinder/ProModeFnAreaViewBinder$$ExternalSyntheticLambda6;
 
-    invoke-direct {v3, p0}, Ljp/co/sony/mc/camera/view/viewbinder/ProModeFnAreaViewBinder$onCreate$4;-><init>(Ljp/co/sony/mc/camera/view/viewbinder/ProModeFnAreaViewBinder;)V
-
-    check-cast v3, Lkotlin/jvm/functions/Function1;
+    invoke-direct {v3, p0}, Ljp/co/sony/mc/camera/view/viewbinder/ProModeFnAreaViewBinder$$ExternalSyntheticLambda6;-><init>(Ljp/co/sony/mc/camera/view/viewbinder/ProModeFnAreaViewBinder;)V
 
     new-instance v4, Ljp/co/sony/mc/camera/view/viewbinder/ProModeFnAreaViewBinder$sam$androidx_lifecycle_Observer$0;
 
@@ -3717,11 +4032,9 @@
 
     iget-object v2, p0, Ljp/co/sony/mc/camera/view/viewbinder/ProModeFnAreaViewBinder;->lifecycleOwner:Landroidx/lifecycle/LifecycleOwner;
 
-    new-instance v3, Ljp/co/sony/mc/camera/view/viewbinder/ProModeFnAreaViewBinder$onCreate$5;
+    new-instance v3, Ljp/co/sony/mc/camera/view/viewbinder/ProModeFnAreaViewBinder$$ExternalSyntheticLambda7;
 
-    invoke-direct {v3, p0}, Ljp/co/sony/mc/camera/view/viewbinder/ProModeFnAreaViewBinder$onCreate$5;-><init>(Ljp/co/sony/mc/camera/view/viewbinder/ProModeFnAreaViewBinder;)V
-
-    check-cast v3, Lkotlin/jvm/functions/Function1;
+    invoke-direct {v3, p0}, Ljp/co/sony/mc/camera/view/viewbinder/ProModeFnAreaViewBinder$$ExternalSyntheticLambda7;-><init>(Ljp/co/sony/mc/camera/view/viewbinder/ProModeFnAreaViewBinder;)V
 
     new-instance v4, Ljp/co/sony/mc/camera/view/viewbinder/ProModeFnAreaViewBinder$sam$androidx_lifecycle_Observer$0;
 
@@ -3766,13 +4079,11 @@
 
     move-result-object v9
 
+    new-instance v10, Ljp/co/sony/mc/camera/view/viewbinder/ProModeFnAreaViewBinder$$ExternalSyntheticLambda8;
+
+    invoke-direct {v10}, Ljp/co/sony/mc/camera/view/viewbinder/ProModeFnAreaViewBinder$$ExternalSyntheticLambda8;-><init>()V
+
     .line 103
-    sget-object v1, Ljp/co/sony/mc/camera/view/viewbinder/ProModeFnAreaViewBinder$onCreate$6;->INSTANCE:Ljp/co/sony/mc/camera/view/viewbinder/ProModeFnAreaViewBinder$onCreate$6;
-
-    move-object v10, v1
-
-    check-cast v10, Lkotlin/jvm/functions/Function4;
-
     invoke-virtual/range {v5 .. v10}, Ljp/co/sony/mc/camera/view/viewmodel/LiveDataMediators;->nullable(Landroidx/lifecycle/LiveData;Landroidx/lifecycle/LiveData;Landroidx/lifecycle/LiveData;Landroidx/lifecycle/LiveData;Lkotlin/jvm/functions/Function4;)Landroidx/lifecycle/LiveData;
 
     move-result-object v1
@@ -3780,11 +4091,9 @@
     .line 108
     iget-object v2, p0, Ljp/co/sony/mc/camera/view/viewbinder/ProModeFnAreaViewBinder;->lifecycleOwner:Landroidx/lifecycle/LifecycleOwner;
 
-    new-instance v3, Ljp/co/sony/mc/camera/view/viewbinder/ProModeFnAreaViewBinder$onCreate$7;
+    new-instance v3, Ljp/co/sony/mc/camera/view/viewbinder/ProModeFnAreaViewBinder$$ExternalSyntheticLambda9;
 
-    invoke-direct {v3, p0}, Ljp/co/sony/mc/camera/view/viewbinder/ProModeFnAreaViewBinder$onCreate$7;-><init>(Ljp/co/sony/mc/camera/view/viewbinder/ProModeFnAreaViewBinder;)V
-
-    check-cast v3, Lkotlin/jvm/functions/Function1;
+    invoke-direct {v3, p0}, Ljp/co/sony/mc/camera/view/viewbinder/ProModeFnAreaViewBinder$$ExternalSyntheticLambda9;-><init>(Ljp/co/sony/mc/camera/view/viewbinder/ProModeFnAreaViewBinder;)V
 
     new-instance v4, Ljp/co/sony/mc/camera/view/viewbinder/ProModeFnAreaViewBinder$sam$androidx_lifecycle_Observer$0;
 
@@ -3803,11 +4112,9 @@
 
     iget-object v2, p0, Ljp/co/sony/mc/camera/view/viewbinder/ProModeFnAreaViewBinder;->lifecycleOwner:Landroidx/lifecycle/LifecycleOwner;
 
-    new-instance v3, Ljp/co/sony/mc/camera/view/viewbinder/ProModeFnAreaViewBinder$onCreate$8;
+    new-instance v3, Ljp/co/sony/mc/camera/view/viewbinder/ProModeFnAreaViewBinder$$ExternalSyntheticLambda10;
 
-    invoke-direct {v3, p0}, Ljp/co/sony/mc/camera/view/viewbinder/ProModeFnAreaViewBinder$onCreate$8;-><init>(Ljp/co/sony/mc/camera/view/viewbinder/ProModeFnAreaViewBinder;)V
-
-    check-cast v3, Lkotlin/jvm/functions/Function1;
+    invoke-direct {v3, p0}, Ljp/co/sony/mc/camera/view/viewbinder/ProModeFnAreaViewBinder$$ExternalSyntheticLambda10;-><init>(Ljp/co/sony/mc/camera/view/viewbinder/ProModeFnAreaViewBinder;)V
 
     new-instance v4, Ljp/co/sony/mc/camera/view/viewbinder/ProModeFnAreaViewBinder$sam$androidx_lifecycle_Observer$0;
 
@@ -3830,11 +4137,9 @@
 
     iget-object v2, p0, Ljp/co/sony/mc/camera/view/viewbinder/ProModeFnAreaViewBinder;->lifecycleOwner:Landroidx/lifecycle/LifecycleOwner;
 
-    new-instance v3, Ljp/co/sony/mc/camera/view/viewbinder/ProModeFnAreaViewBinder$onCreate$9;
+    new-instance v3, Ljp/co/sony/mc/camera/view/viewbinder/ProModeFnAreaViewBinder$$ExternalSyntheticLambda1;
 
-    invoke-direct {v3, p0}, Ljp/co/sony/mc/camera/view/viewbinder/ProModeFnAreaViewBinder$onCreate$9;-><init>(Ljp/co/sony/mc/camera/view/viewbinder/ProModeFnAreaViewBinder;)V
-
-    check-cast v3, Lkotlin/jvm/functions/Function1;
+    invoke-direct {v3, p0}, Ljp/co/sony/mc/camera/view/viewbinder/ProModeFnAreaViewBinder$$ExternalSyntheticLambda1;-><init>(Ljp/co/sony/mc/camera/view/viewbinder/ProModeFnAreaViewBinder;)V
 
     new-instance v4, Ljp/co/sony/mc/camera/view/viewbinder/ProModeFnAreaViewBinder$sam$androidx_lifecycle_Observer$0;
 
@@ -3859,7 +4164,7 @@
 
     move-result-object v2
 
-    const v3, 0x7f080131
+    const v3, 0x7f080136
 
     invoke-virtual {v2, v3}, Landroid/content/Context;->getDrawable(I)Landroid/graphics/drawable/Drawable;
 
@@ -3877,7 +4182,7 @@
 
     move-result-object v2
 
-    const v3, 0x7f080133
+    const v3, 0x7f080138
 
     invoke-virtual {v2, v3}, Landroid/content/Context;->getDrawable(I)Landroid/graphics/drawable/Drawable;
 
@@ -3889,9 +4194,9 @@
     .line 164
     new-instance v2, Landroid/widget/LinearLayout$LayoutParams;
 
-    const v4, 0x7f07012b
+    const v4, 0x7f07014d
 
-    const v5, 0x7f07012a
+    const v5, 0x7f07014c
 
     if-eqz v0, :cond_1
 

@@ -67,14 +67,14 @@
 .method public final invoke()Ljava/lang/Boolean;
     .locals 0
 
-    .line 530
+    .line 573
     iget-object p0, p0, Landroidx/compose/foundation/text/CoreTextFieldKt$CoreTextField$semanticsModifier$1$9;->$manager:Landroidx/compose/foundation/text/selection/TextFieldSelectionManager;
 
     invoke-virtual {p0}, Landroidx/compose/foundation/text/selection/TextFieldSelectionManager;->cut$foundation_release()V
 
     const/4 p0, 0x1
 
-    .line 531
+    .line 574
     invoke-static {p0}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
     move-result-object p0
@@ -85,7 +85,7 @@
 .method public bridge synthetic invoke()Ljava/lang/Object;
     .locals 0
 
-    .line 529
+    .line 572
     invoke-virtual {p0}, Landroidx/compose/foundation/text/CoreTextFieldKt$CoreTextField$semanticsModifier$1$9;->invoke()Ljava/lang/Boolean;
 
     move-result-object p0

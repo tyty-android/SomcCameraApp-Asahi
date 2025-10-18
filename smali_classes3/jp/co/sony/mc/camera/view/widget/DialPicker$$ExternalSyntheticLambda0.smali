@@ -3,17 +3,15 @@
 .source "D8$$SyntheticClass"
 
 # interfaces
-.implements Ljava/lang/Runnable;
+.implements Landroid/view/View$OnClickListener;
 
 
 # instance fields
 .field public final synthetic f$0:Ljp/co/sony/mc/camera/view/widget/DialPicker;
 
-.field public final synthetic f$1:I
-
 
 # direct methods
-.method public synthetic constructor <init>(Ljp/co/sony/mc/camera/view/widget/DialPicker;I)V
+.method public synthetic constructor <init>(Ljp/co/sony/mc/camera/view/widget/DialPicker;)V
     .locals 0
 
     .line 0
@@ -21,22 +19,18 @@
 
     iput-object p1, p0, Ljp/co/sony/mc/camera/view/widget/DialPicker$$ExternalSyntheticLambda0;->f$0:Ljp/co/sony/mc/camera/view/widget/DialPicker;
 
-    iput p2, p0, Ljp/co/sony/mc/camera/view/widget/DialPicker$$ExternalSyntheticLambda0;->f$1:I
-
     return-void
 .end method
 
 
 # virtual methods
-.method public final run()V
-    .locals 1
+.method public final onClick(Landroid/view/View;)V
+    .locals 0
 
     .line 0
-    iget-object v0, p0, Ljp/co/sony/mc/camera/view/widget/DialPicker$$ExternalSyntheticLambda0;->f$0:Ljp/co/sony/mc/camera/view/widget/DialPicker;
+    iget-object p0, p0, Ljp/co/sony/mc/camera/view/widget/DialPicker$$ExternalSyntheticLambda0;->f$0:Ljp/co/sony/mc/camera/view/widget/DialPicker;
 
-    iget p0, p0, Ljp/co/sony/mc/camera/view/widget/DialPicker$$ExternalSyntheticLambda0;->f$1:I
-
-    invoke-static {v0, p0}, Ljp/co/sony/mc/camera/view/widget/DialPicker;->$r8$lambda$UcHt2-ENbK6nplkothMytb3MBQ0(Ljp/co/sony/mc/camera/view/widget/DialPicker;I)V
+    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/view/widget/DialPicker;->$r8$lambda$e6Jmmw8BBG0Kbr2SVaJDhmto650(Ljp/co/sony/mc/camera/view/widget/DialPicker;Landroid/view/View;)V
 
     return-void
 .end method

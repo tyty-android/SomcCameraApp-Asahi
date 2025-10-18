@@ -22,7 +22,7 @@
 .method constructor <init>(Ljp/co/sony/mc/camera/util/SpiritLevelMonitor;)V
     .locals 0
 
-    .line 62
+    .line 63
     iput-object p1, p0, Ljp/co/sony/mc/camera/util/SpiritLevelMonitor$1;->this$0:Ljp/co/sony/mc/camera/util/SpiritLevelMonitor;
 
     invoke-direct {p0}, Ljp/co/sony/mc/camera/util/SpiritLevelMonitor$SensorEventListenerImpl;-><init>()V
@@ -35,7 +35,7 @@
 .method protected notifySpiritLevelChanged(IFF)V
     .locals 1
 
-    .line 65
+    .line 66
     iget-object p0, p0, Ljp/co/sony/mc/camera/util/SpiritLevelMonitor$1;->this$0:Ljp/co/sony/mc/camera/util/SpiritLevelMonitor;
 
     invoke-static {p0}, Ljp/co/sony/mc/camera/util/SpiritLevelMonitor;->-$$Nest$fgetmSpiritLevelListeners(Ljp/co/sony/mc/camera/util/SpiritLevelMonitor;)Ljava/util/List;
@@ -59,7 +59,7 @@
 
     check-cast v0, Ljp/co/sony/mc/camera/util/SpiritLevelMonitor$SpiritLevelListener;
 
-    .line 66
+    .line 67
     invoke-interface {v0, p1, p2, p3}, Ljp/co/sony/mc/camera/util/SpiritLevelMonitor$SpiritLevelListener;->onSpiritLevelChanged(IFF)V
 
     goto :goto_0

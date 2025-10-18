@@ -1,6 +1,6 @@
 .class public interface abstract annotation Landroidx/compose/ui/tooling/preview/Preview;
 .super Ljava/lang/Object;
-.source "Preview.kt"
+.source "Preview.android.kt"
 
 # interfaces
 .implements Ljava/lang/annotation/Annotation;

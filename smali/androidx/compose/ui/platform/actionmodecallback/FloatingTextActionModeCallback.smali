@@ -43,17 +43,23 @@
 .end annotation
 
 
+# static fields
+.field public static final $stable:I = 0x8
+
+
 # instance fields
 .field private final callback:Landroidx/compose/ui/platform/actionmodecallback/TextActionModeCallback;
 
 
 # direct methods
+.method static constructor <clinit>()V
+    .locals 0
+
+    return-void
+.end method
+
 .method public constructor <init>(Landroidx/compose/ui/platform/actionmodecallback/TextActionModeCallback;)V
-    .locals 1
-
-    const-string v0, "callback"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+    .locals 0
 
     .line 29
     invoke-direct {p0}, Landroid/view/ActionMode$Callback2;-><init>()V

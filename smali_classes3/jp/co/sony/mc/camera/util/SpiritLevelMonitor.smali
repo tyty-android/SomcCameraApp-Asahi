@@ -92,17 +92,17 @@
 .method private constructor <init>()V
     .locals 2
 
-    .line 134
+    .line 139
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 47
+    .line 48
     new-instance v0, Ljava/util/concurrent/CopyOnWriteArrayList;
 
     invoke-direct {v0}, Ljava/util/concurrent/CopyOnWriteArrayList;-><init>()V
 
     iput-object v0, p0, Ljp/co/sony/mc/camera/util/SpiritLevelMonitor;->mSpiritLevelListeners:Ljava/util/List;
 
-    .line 49
+    .line 50
     new-instance v0, Ljava/util/concurrent/atomic/AtomicBoolean;
 
     invoke-direct {v0}, Ljava/util/concurrent/atomic/AtomicBoolean;-><init>()V
@@ -111,17 +111,17 @@
 
     const/4 v0, 0x0
 
-    .line 56
+    .line 57
     iput v0, p0, Ljp/co/sony/mc/camera/util/SpiritLevelMonitor;->mPoseRotationRoll:F
 
-    .line 62
+    .line 63
     new-instance v0, Ljp/co/sony/mc/camera/util/SpiritLevelMonitor$1;
 
     invoke-direct {v0, p0}, Ljp/co/sony/mc/camera/util/SpiritLevelMonitor$1;-><init>(Ljp/co/sony/mc/camera/util/SpiritLevelMonitor;)V
 
     iput-object v0, p0, Ljp/co/sony/mc/camera/util/SpiritLevelMonitor;->mSensorEventListener:Landroid/hardware/SensorEventListener;
 
-    .line 90
+    .line 91
     new-instance v0, Ljp/co/sony/mc/camera/util/SpiritLevelMonitor$PoseRotationListenerImpl;
 
     const/4 v1, 0x0
@@ -130,14 +130,14 @@
 
     iput-object v0, p0, Ljp/co/sony/mc/camera/util/SpiritLevelMonitor;->mPoseRotationListener:Ljp/co/sony/mc/camera/util/SpiritLevelMonitor$PoseRotationListenerImpl;
 
-    .line 135
+    .line 140
     invoke-static {}, Ljp/co/sony/mc/camera/CameraApplication;->getContext()Landroid/content/Context;
 
     move-result-object v0
 
     const-string v1, "sensor"
 
-    .line 136
+    .line 141
     invoke-virtual {v0, v1}, Landroid/content/Context;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object v0
@@ -156,20 +156,20 @@
 
     monitor-enter v0
 
-    .line 120
+    .line 125
     :try_start_0
     sget-object v1, Ljp/co/sony/mc/camera/util/SpiritLevelMonitor;->sInstance:Ljp/co/sony/mc/camera/util/SpiritLevelMonitor;
 
     if-nez v1, :cond_0
 
-    .line 121
+    .line 126
     new-instance v1, Ljp/co/sony/mc/camera/util/SpiritLevelMonitor;
 
     invoke-direct {v1}, Ljp/co/sony/mc/camera/util/SpiritLevelMonitor;-><init>()V
 
     sput-object v1, Ljp/co/sony/mc/camera/util/SpiritLevelMonitor;->sInstance:Ljp/co/sony/mc/camera/util/SpiritLevelMonitor;
 
-    .line 123
+    .line 128
     :cond_0
     sget-object v1, Ljp/co/sony/mc/camera/util/SpiritLevelMonitor;->sInstance:Ljp/co/sony/mc/camera/util/SpiritLevelMonitor;
     :try_end_0
@@ -190,7 +190,7 @@
 .method private startMonitoring()V
     .locals 6
 
-    .line 166
+    .line 171
     iget-object v0, p0, Ljp/co/sony/mc/camera/util/SpiritLevelMonitor;->mIsMonitoring:Ljava/util/concurrent/atomic/AtomicBoolean;
 
     invoke-virtual {v0}, Ljava/util/concurrent/atomic/AtomicBoolean;->get()Z
@@ -199,7 +199,7 @@
 
     if-nez v0, :cond_1
 
-    .line 167
+    .line 172
     new-instance v0, Landroid/os/HandlerThread;
 
     const-string v1, "SpiritLevelMonitor"
@@ -208,10 +208,10 @@
 
     iput-object v0, p0, Ljp/co/sony/mc/camera/util/SpiritLevelMonitor;->mHandlerThread:Landroid/os/HandlerThread;
 
-    .line 168
+    .line 173
     invoke-virtual {v0}, Landroid/os/HandlerThread;->start()V
 
-    .line 169
+    .line 174
     new-instance v0, Landroid/os/Handler;
 
     iget-object v1, p0, Ljp/co/sony/mc/camera/util/SpiritLevelMonitor;->mHandlerThread:Landroid/os/HandlerThread;
@@ -222,50 +222,50 @@
 
     invoke-direct {v0, v1}, Landroid/os/Handler;-><init>(Landroid/os/Looper;)V
 
-    .line 170
+    .line 175
     iget-object v1, p0, Ljp/co/sony/mc/camera/util/SpiritLevelMonitor;->mSensorManager:Landroid/hardware/SensorManager;
 
     iget-object v2, p0, Ljp/co/sony/mc/camera/util/SpiritLevelMonitor;->mSensorEventListener:Landroid/hardware/SensorEventListener;
 
     const/4 v3, 0x1
 
-    .line 171
+    .line 176
     invoke-virtual {v1, v3}, Landroid/hardware/SensorManager;->getDefaultSensor(I)Landroid/hardware/Sensor;
 
     move-result-object v4
 
     const/4 v5, 0x2
 
-    .line 170
+    .line 175
     invoke-virtual {v1, v2, v4, v5, v0}, Landroid/hardware/SensorManager;->registerListener(Landroid/hardware/SensorEventListener;Landroid/hardware/Sensor;ILandroid/os/Handler;)Z
 
-    .line 173
+    .line 178
     iget-object v0, p0, Ljp/co/sony/mc/camera/util/SpiritLevelMonitor;->mIsMonitoring:Ljava/util/concurrent/atomic/AtomicBoolean;
 
     invoke-virtual {v0, v3}, Ljava/util/concurrent/atomic/AtomicBoolean;->set(Z)V
 
-    .line 174
+    .line 179
     iget-object v0, p0, Ljp/co/sony/mc/camera/util/SpiritLevelMonitor;->mPoseRotationFetcher:Ljp/co/sony/mc/camera/util/SpiritLevelMonitor$PoseRotationFetcher;
 
     if-eqz v0, :cond_0
 
-    .line 175
+    .line 180
     iget-object v1, p0, Ljp/co/sony/mc/camera/util/SpiritLevelMonitor;->mPoseRotationListener:Ljp/co/sony/mc/camera/util/SpiritLevelMonitor$PoseRotationListenerImpl;
 
     invoke-interface {v0, v1}, Ljp/co/sony/mc/camera/util/SpiritLevelMonitor$PoseRotationFetcher;->setPoseRotationListener(Ljp/co/sony/mc/camera/CameraStatusNotifier$PoseRotationResultListener;)V
 
-    .line 176
+    .line 181
     iget-object v0, p0, Ljp/co/sony/mc/camera/util/SpiritLevelMonitor;->mPoseRotationFetcher:Ljp/co/sony/mc/camera/util/SpiritLevelMonitor$PoseRotationFetcher;
 
     invoke-interface {v0}, Ljp/co/sony/mc/camera/util/SpiritLevelMonitor$PoseRotationFetcher;->startMonitorPoseRotation()V
 
-    .line 178
+    .line 183
     :cond_0
     iget-object v0, p0, Ljp/co/sony/mc/camera/util/SpiritLevelMonitor;->mCameraCalibrationAccessor:Ljp/co/sony/mc/camera/calibration/ui/SpiritLevelCalibrationFragment$CameraCalibrationAccessor;
 
     if-eqz v0, :cond_1
 
-    .line 179
+    .line 184
     iget-object p0, p0, Ljp/co/sony/mc/camera/util/SpiritLevelMonitor;->mPoseRotationListener:Ljp/co/sony/mc/camera/util/SpiritLevelMonitor$PoseRotationListenerImpl;
 
     invoke-virtual {v0, p0}, Ljp/co/sony/mc/camera/calibration/ui/SpiritLevelCalibrationFragment$CameraCalibrationAccessor;->setPoseRotationResultListener(Ljp/co/sony/mc/camera/CameraStatusNotifier$PoseRotationResultListener;)V
@@ -277,7 +277,7 @@
 .method private stopMonitoring()V
     .locals 3
 
-    .line 185
+    .line 190
     iget-object v0, p0, Ljp/co/sony/mc/camera/util/SpiritLevelMonitor;->mIsMonitoring:Ljava/util/concurrent/atomic/AtomicBoolean;
 
     invoke-virtual {v0}, Ljava/util/concurrent/atomic/AtomicBoolean;->get()Z
@@ -286,50 +286,50 @@
 
     if-eqz v0, :cond_1
 
-    .line 186
+    .line 191
     iget-object v0, p0, Ljp/co/sony/mc/camera/util/SpiritLevelMonitor;->mHandlerThread:Landroid/os/HandlerThread;
 
     invoke-virtual {v0}, Landroid/os/HandlerThread;->quit()Z
 
     const/4 v0, 0x0
 
-    .line 187
+    .line 192
     iput-object v0, p0, Ljp/co/sony/mc/camera/util/SpiritLevelMonitor;->mHandlerThread:Landroid/os/HandlerThread;
 
-    .line 188
+    .line 193
     iget-object v1, p0, Ljp/co/sony/mc/camera/util/SpiritLevelMonitor;->mSensorManager:Landroid/hardware/SensorManager;
 
     iget-object v2, p0, Ljp/co/sony/mc/camera/util/SpiritLevelMonitor;->mSensorEventListener:Landroid/hardware/SensorEventListener;
 
     invoke-virtual {v1, v2}, Landroid/hardware/SensorManager;->unregisterListener(Landroid/hardware/SensorEventListener;)V
 
-    .line 189
+    .line 194
     iget-object v1, p0, Ljp/co/sony/mc/camera/util/SpiritLevelMonitor;->mIsMonitoring:Ljava/util/concurrent/atomic/AtomicBoolean;
 
     const/4 v2, 0x0
 
     invoke-virtual {v1, v2}, Ljava/util/concurrent/atomic/AtomicBoolean;->set(Z)V
 
-    .line 190
+    .line 195
     iget-object v1, p0, Ljp/co/sony/mc/camera/util/SpiritLevelMonitor;->mPoseRotationFetcher:Ljp/co/sony/mc/camera/util/SpiritLevelMonitor$PoseRotationFetcher;
 
     if-eqz v1, :cond_0
 
-    .line 191
+    .line 196
     invoke-interface {v1, v0}, Ljp/co/sony/mc/camera/util/SpiritLevelMonitor$PoseRotationFetcher;->setPoseRotationListener(Ljp/co/sony/mc/camera/CameraStatusNotifier$PoseRotationResultListener;)V
 
-    .line 192
+    .line 197
     iget-object v1, p0, Ljp/co/sony/mc/camera/util/SpiritLevelMonitor;->mPoseRotationFetcher:Ljp/co/sony/mc/camera/util/SpiritLevelMonitor$PoseRotationFetcher;
 
     invoke-interface {v1}, Ljp/co/sony/mc/camera/util/SpiritLevelMonitor$PoseRotationFetcher;->stopMonitorPoseRotation()V
 
-    .line 194
+    .line 199
     :cond_0
     iget-object p0, p0, Ljp/co/sony/mc/camera/util/SpiritLevelMonitor;->mCameraCalibrationAccessor:Ljp/co/sony/mc/camera/calibration/ui/SpiritLevelCalibrationFragment$CameraCalibrationAccessor;
 
     if-eqz p0, :cond_1
 
-    .line 195
+    .line 200
     invoke-virtual {p0, v0}, Ljp/co/sony/mc/camera/calibration/ui/SpiritLevelCalibrationFragment$CameraCalibrationAccessor;->setPoseRotationResultListener(Ljp/co/sony/mc/camera/CameraStatusNotifier$PoseRotationResultListener;)V
 
     :cond_1
@@ -339,7 +339,7 @@
 .method private updateMonitoring()V
     .locals 1
 
-    .line 158
+    .line 163
     iget-object v0, p0, Ljp/co/sony/mc/camera/util/SpiritLevelMonitor;->mSpiritLevelListeners:Ljava/util/List;
 
     invoke-interface {v0}, Ljava/util/List;->isEmpty()Z
@@ -348,12 +348,12 @@
 
     if-nez v0, :cond_0
 
-    .line 159
+    .line 164
     invoke-direct {p0}, Ljp/co/sony/mc/camera/util/SpiritLevelMonitor;->startMonitoring()V
 
     goto :goto_0
 
-    .line 161
+    .line 166
     :cond_0
     invoke-direct {p0}, Ljp/co/sony/mc/camera/util/SpiritLevelMonitor;->stopMonitoring()V
 
@@ -366,7 +366,7 @@
 .method public registerSpiritLevelListener(Ljp/co/sony/mc/camera/util/SpiritLevelMonitor$SpiritLevelListener;)V
     .locals 1
 
-    .line 143
+    .line 148
     iget-object v0, p0, Ljp/co/sony/mc/camera/util/SpiritLevelMonitor;->mSpiritLevelListeners:Ljava/util/List;
 
     invoke-interface {v0, p1}, Ljava/util/List;->contains(Ljava/lang/Object;)Z
@@ -375,12 +375,12 @@
 
     if-nez v0, :cond_0
 
-    .line 144
+    .line 149
     iget-object v0, p0, Ljp/co/sony/mc/camera/util/SpiritLevelMonitor;->mSpiritLevelListeners:Ljava/util/List;
 
     invoke-interface {v0, p1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    .line 146
+    .line 151
     :cond_0
     invoke-direct {p0}, Ljp/co/sony/mc/camera/util/SpiritLevelMonitor;->updateMonitoring()V
 
@@ -390,7 +390,7 @@
 .method public setCameraCalibrationAccessor(Ljp/co/sony/mc/camera/calibration/ui/SpiritLevelCalibrationFragment$CameraCalibrationAccessor;)V
     .locals 0
 
-    .line 131
+    .line 136
     iput-object p1, p0, Ljp/co/sony/mc/camera/util/SpiritLevelMonitor;->mCameraCalibrationAccessor:Ljp/co/sony/mc/camera/calibration/ui/SpiritLevelCalibrationFragment$CameraCalibrationAccessor;
 
     return-void
@@ -399,7 +399,7 @@
 .method public setPoseRotationFetcher(Ljp/co/sony/mc/camera/util/SpiritLevelMonitor$PoseRotationFetcher;)V
     .locals 0
 
-    .line 127
+    .line 132
     iput-object p1, p0, Ljp/co/sony/mc/camera/util/SpiritLevelMonitor;->mPoseRotationFetcher:Ljp/co/sony/mc/camera/util/SpiritLevelMonitor$PoseRotationFetcher;
 
     return-void
@@ -408,12 +408,12 @@
 .method public unregisterSpiritLevelListener(Ljp/co/sony/mc/camera/util/SpiritLevelMonitor$SpiritLevelListener;)V
     .locals 1
 
-    .line 153
+    .line 158
     iget-object v0, p0, Ljp/co/sony/mc/camera/util/SpiritLevelMonitor;->mSpiritLevelListeners:Ljava/util/List;
 
     invoke-interface {v0, p1}, Ljava/util/List;->remove(Ljava/lang/Object;)Z
 
-    .line 154
+    .line 159
     invoke-direct {p0}, Ljp/co/sony/mc/camera/util/SpiritLevelMonitor;->updateMonitoring()V
 
     return-void

@@ -22,10 +22,10 @@
 .method varargs constructor <init>([Ljp/co/sony/mc/camera/view/setting/ContextualSettingList$Category;)V
     .locals 0
 
-    .line 808
+    .line 892
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 809
+    .line 893
     iput-object p1, p0, Ljp/co/sony/mc/camera/view/setting/ContextualSettingList$Group;->categories:[Ljp/co/sony/mc/camera/view/setting/ContextualSettingList$Category;
 
     return-void

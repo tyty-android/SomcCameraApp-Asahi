@@ -25,7 +25,7 @@
 .method constructor <init>(Lcom/google/android/material/slider/BaseSlider;)V
     .locals 0
 
-    .line 2226
+    .line 2632
     iput-object p1, p0, Lcom/google/android/material/slider/BaseSlider$1;->this$0:Lcom/google/android/material/slider/BaseSlider;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -38,7 +38,7 @@
 .method public onAnimationUpdate(Landroid/animation/ValueAnimator;)V
     .locals 2
 
-    .line 2229
+    .line 2635
     invoke-virtual {p1}, Landroid/animation/ValueAnimator;->getAnimatedValue()Ljava/lang/Object;
 
     move-result-object p1
@@ -49,7 +49,7 @@
 
     move-result p1
 
-    .line 2230
+    .line 2636
     iget-object v0, p0, Lcom/google/android/material/slider/BaseSlider$1;->this$0:Lcom/google/android/material/slider/BaseSlider;
 
     invoke-static {v0}, Lcom/google/android/material/slider/BaseSlider;->access$000(Lcom/google/android/material/slider/BaseSlider;)Ljava/util/List;
@@ -73,12 +73,12 @@
 
     check-cast v1, Lcom/google/android/material/tooltip/TooltipDrawable;
 
-    .line 2231
+    .line 2637
     invoke-virtual {v1, p1}, Lcom/google/android/material/tooltip/TooltipDrawable;->setRevealFraction(F)V
 
     goto :goto_0
 
-    .line 2234
+    .line 2640
     :cond_0
     iget-object p0, p0, Lcom/google/android/material/slider/BaseSlider$1;->this$0:Lcom/google/android/material/slider/BaseSlider;
 

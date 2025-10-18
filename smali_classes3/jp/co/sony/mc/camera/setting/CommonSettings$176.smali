@@ -21,7 +21,7 @@
 .method constructor <init>()V
     .locals 0
 
-    .line 1662
+    .line 1667
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -42,12 +42,8 @@
         }
     .end annotation
 
-    .line 1666
-    sget-object p0, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->VIDEO_PRO_P:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
-
-    invoke-static {p0}, Ljp/co/sony/mc/camera/configuration/parameters/DispCustomExtensionData;->getDefaultExtensionValue(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;)Ljp/co/sony/mc/camera/configuration/parameters/DispCustomExtensionData;
-
-    move-result-object p0
+    .line 1671
+    sget-object p0, Ljp/co/sony/mc/camera/configuration/parameters/DispCustom;->HEADER:Ljp/co/sony/mc/camera/configuration/parameters/DispCustom;
 
     return-object p0
 .end method

@@ -71,7 +71,7 @@
 
 # virtual methods
 .method public final invoke(Landroidx/compose/material/FadeInFadeOutAnimationItem;)Ljava/lang/Boolean;
-    .locals 1
+    .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -82,11 +82,7 @@
         }
     .end annotation
 
-    const-string v0, "it"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 286
+    .line 293
     invoke-virtual {p1}, Landroidx/compose/material/FadeInFadeOutAnimationItem;->getKey()Ljava/lang/Object;
 
     move-result-object p1
@@ -107,7 +103,7 @@
 .method public bridge synthetic invoke(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
 
-    .line 286
+    .line 293
     check-cast p1, Landroidx/compose/material/FadeInFadeOutAnimationItem;
 
     invoke-virtual {p0, p1}, Landroidx/compose/material/SnackbarHostKt$FadeInFadeOutWithScale$1$1$opacity$1$1;->invoke(Landroidx/compose/material/FadeInFadeOutAnimationItem;)Ljava/lang/Boolean;

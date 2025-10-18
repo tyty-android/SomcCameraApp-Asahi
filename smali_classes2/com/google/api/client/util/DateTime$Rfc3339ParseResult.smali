@@ -17,6 +17,10 @@
 .end annotation
 
 
+# static fields
+.field private static final serialVersionUID:J = 0x1L
+
+
 # instance fields
 .field private final nanos:I
 
@@ -31,19 +35,19 @@
 .method private constructor <init>(JIZLjava/lang/Integer;)V
     .locals 0
 
-    .line 345
+    .line 349
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 346
+    .line 350
     iput-wide p1, p0, Lcom/google/api/client/util/DateTime$Rfc3339ParseResult;->seconds:J
 
-    .line 347
+    .line 351
     iput p3, p0, Lcom/google/api/client/util/DateTime$Rfc3339ParseResult;->nanos:I
 
-    .line 348
+    .line 352
     iput-boolean p4, p0, Lcom/google/api/client/util/DateTime$Rfc3339ParseResult;->timeGiven:Z
 
-    .line 349
+    .line 353
     iput-object p5, p0, Lcom/google/api/client/util/DateTime$Rfc3339ParseResult;->tzShift:Ljava/lang/Integer;
 
     return-void
@@ -52,7 +56,7 @@
 .method synthetic constructor <init>(JIZLjava/lang/Integer;Lcom/google/api/client/util/DateTime$1;)V
     .locals 0
 
-    .line 339
+    .line 341
     invoke-direct/range {p0 .. p5}, Lcom/google/api/client/util/DateTime$Rfc3339ParseResult;-><init>(JIZLjava/lang/Integer;)V
 
     return-void
@@ -61,7 +65,7 @@
 .method static synthetic access$000(Lcom/google/api/client/util/DateTime$Rfc3339ParseResult;)Lcom/google/api/client/util/DateTime;
     .locals 0
 
-    .line 339
+    .line 341
     invoke-direct {p0}, Lcom/google/api/client/util/DateTime$Rfc3339ParseResult;->toDateTime()Lcom/google/api/client/util/DateTime;
 
     move-result-object p0
@@ -72,7 +76,7 @@
 .method static synthetic access$100(Lcom/google/api/client/util/DateTime$Rfc3339ParseResult;)Lcom/google/api/client/util/DateTime$SecondsAndNanos;
     .locals 0
 
-    .line 339
+    .line 341
     invoke-direct {p0}, Lcom/google/api/client/util/DateTime$Rfc3339ParseResult;->toSecondsAndNanos()Lcom/google/api/client/util/DateTime$SecondsAndNanos;
 
     move-result-object p0
@@ -83,7 +87,7 @@
 .method private toDateTime()Lcom/google/api/client/util/DateTime;
     .locals 6
 
-    .line 357
+    .line 361
     sget-object v0, Ljava/util/concurrent/TimeUnit;->SECONDS:Ljava/util/concurrent/TimeUnit;
 
     iget-wide v1, p0, Lcom/google/api/client/util/DateTime$Rfc3339ParseResult;->seconds:J
@@ -92,7 +96,7 @@
 
     move-result-wide v0
 
-    .line 358
+    .line 362
     sget-object v2, Ljava/util/concurrent/TimeUnit;->NANOSECONDS:Ljava/util/concurrent/TimeUnit;
 
     iget v3, p0, Lcom/google/api/client/util/DateTime$Rfc3339ParseResult;->nanos:I
@@ -103,7 +107,7 @@
 
     move-result-wide v2
 
-    .line 359
+    .line 363
     new-instance v4, Lcom/google/api/client/util/DateTime;
 
     iget-boolean v5, p0, Lcom/google/api/client/util/DateTime$Rfc3339ParseResult;->timeGiven:Z
@@ -122,7 +126,7 @@
 .method private toSecondsAndNanos()Lcom/google/api/client/util/DateTime$SecondsAndNanos;
     .locals 4
 
-    .line 363
+    .line 367
     new-instance v0, Lcom/google/api/client/util/DateTime$SecondsAndNanos;
 
     iget-wide v1, p0, Lcom/google/api/client/util/DateTime$Rfc3339ParseResult;->seconds:J

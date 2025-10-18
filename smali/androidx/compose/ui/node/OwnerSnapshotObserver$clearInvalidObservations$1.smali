@@ -80,11 +80,11 @@
 .method public final invoke(Ljava/lang/Object;)Ljava/lang/Boolean;
     .locals 0
 
-    const-string p0, "it"
-
-    invoke-static {p1, p0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
     .line 137
+    const-string p0, "null cannot be cast to non-null type androidx.compose.ui.node.OwnerScope"
+
+    invoke-static {p1, p0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;Ljava/lang/String;)V
+
     check-cast p1, Landroidx/compose/ui/node/OwnerScope;
 
     invoke-interface {p1}, Landroidx/compose/ui/node/OwnerScope;->isValidOwnerScope()Z

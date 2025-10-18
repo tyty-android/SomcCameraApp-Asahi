@@ -81,7 +81,7 @@
 .method public bridge synthetic invoke(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
 
-    .line 85
+    .line 88
     check-cast p1, Landroidx/compose/animation/core/KeyframesSpec$KeyframesSpecConfig;
 
     invoke-virtual {p0, p1}, Landroidx/compose/foundation/text/TextFieldCursorKt$cursorAnimationSpec$1;->invoke(Landroidx/compose/animation/core/KeyframesSpec$KeyframesSpecConfig;)V
@@ -102,18 +102,14 @@
         }
     .end annotation
 
-    const-string p0, "$this$keyframes"
-
-    invoke-static {p1, p0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
     const/16 p0, 0x3e8
 
-    .line 86
+    .line 89
     invoke-virtual {p1, p0}, Landroidx/compose/animation/core/KeyframesSpec$KeyframesSpecConfig;->setDurationMillis(I)V
 
     const/high16 p0, 0x3f800000    # 1.0f
 
-    .line 87
+    .line 90
     invoke-static {p0}, Ljava/lang/Float;->valueOf(F)Ljava/lang/Float;
 
     move-result-object p0
@@ -124,12 +120,12 @@
 
     const/16 v0, 0x1f3
 
-    .line 88
+    .line 91
     invoke-virtual {p1, p0, v0}, Landroidx/compose/animation/core/KeyframesSpec$KeyframesSpecConfig;->at(Ljava/lang/Object;I)Landroidx/compose/animation/core/KeyframesSpec$KeyframeEntity;
 
     const/4 p0, 0x0
 
-    .line 89
+    .line 92
     invoke-static {p0}, Ljava/lang/Float;->valueOf(F)Ljava/lang/Float;
 
     move-result-object p0
@@ -140,7 +136,7 @@
 
     const/16 v0, 0x3e7
 
-    .line 90
+    .line 93
     invoke-virtual {p1, p0, v0}, Landroidx/compose/animation/core/KeyframesSpec$KeyframesSpecConfig;->at(Ljava/lang/Object;I)Landroidx/compose/animation/core/KeyframesSpec$KeyframeEntity;
 
     return-void

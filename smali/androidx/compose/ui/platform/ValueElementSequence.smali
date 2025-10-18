@@ -114,10 +114,6 @@
 .method public final set(Ljava/lang/String;Ljava/lang/Object;)V
     .locals 1
 
-    const-string v0, "name"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
     .line 97
     iget-object p0, p0, Landroidx/compose/ui/platform/ValueElementSequence;->elements:Ljava/util/List;
 

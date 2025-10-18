@@ -53,7 +53,7 @@
     f = "BackdropScaffold.kt"
     i = {}
     l = {
-        0x166
+        0x168
     }
     m = "invokeSuspend"
     n = {}
@@ -167,7 +167,7 @@
 
     move-result-object v0
 
-    .line 65535
+    .line 360
     iget v1, p0, Landroidx/compose/material/BackdropScaffoldKt$BackdropScaffold$1$1$2$1$1$1;->label:I
 
     const/4 v2, 0x1
@@ -192,7 +192,6 @@
     :cond_1
     invoke-static {p1}, Lkotlin/ResultKt;->throwOnFailure(Ljava/lang/Object;)V
 
-    .line 358
     iget-object p1, p0, Landroidx/compose/material/BackdropScaffoldKt$BackdropScaffold$1$1$2$1$1$1;->$scaffoldState:Landroidx/compose/material/BackdropScaffoldState;
 
     move-object v1, p0

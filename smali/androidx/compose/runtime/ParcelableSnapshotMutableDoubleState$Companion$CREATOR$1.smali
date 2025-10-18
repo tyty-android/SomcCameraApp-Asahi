@@ -1,6 +1,6 @@
 .class public final Landroidx/compose/runtime/ParcelableSnapshotMutableDoubleState$Companion$CREATOR$1;
 .super Ljava/lang/Object;
-.source "ParcelableSnapshotMutableDoubleState.kt"
+.source "ParcelableSnapshotMutableDoubleState.android.kt"
 
 # interfaces
 .implements Landroid/os/Parcelable$Creator;
@@ -67,10 +67,6 @@
 # virtual methods
 .method public createFromParcel(Landroid/os/Parcel;)Landroidx/compose/runtime/ParcelableSnapshotMutableDoubleState;
     .locals 2
-
-    const-string p0, "parcel"
-
-    invoke-static {p1, p0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 41
     new-instance p0, Landroidx/compose/runtime/ParcelableSnapshotMutableDoubleState;

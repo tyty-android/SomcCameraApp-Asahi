@@ -84,7 +84,7 @@
 .method public bridge synthetic invoke(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
 
-    .line 201
+    .line 206
     check-cast p1, Ljava/lang/Number;
 
     invoke-virtual {p1}, Ljava/lang/Number;->floatValue()F
@@ -101,7 +101,7 @@
 .method public final invoke(F)V
     .locals 4
 
-    .line 202
+    .line 207
     iget-object v0, p0, Landroidx/compose/material/SwipeableState$draggableState$1;->this$0:Landroidx/compose/material/SwipeableState;
 
     invoke-static {v0}, Landroidx/compose/material/SwipeableState;->access$getAbsoluteOffset$p(Landroidx/compose/material/SwipeableState;)Landroidx/compose/runtime/MutableFloatState;
@@ -114,7 +114,7 @@
 
     add-float/2addr v0, p1
 
-    .line 203
+    .line 208
     iget-object p1, p0, Landroidx/compose/material/SwipeableState$draggableState$1;->this$0:Landroidx/compose/material/SwipeableState;
 
     invoke-virtual {p1}, Landroidx/compose/material/SwipeableState;->getMinBound$material_release()F
@@ -133,7 +133,7 @@
 
     sub-float v1, v0, p1
 
-    .line 205
+    .line 210
     iget-object v2, p0, Landroidx/compose/material/SwipeableState$draggableState$1;->this$0:Landroidx/compose/material/SwipeableState;
 
     invoke-virtual {v2}, Landroidx/compose/material/SwipeableState;->getResistance$material_release()Landroidx/compose/material/ResistanceConfig;
@@ -151,7 +151,7 @@
     :cond_0
     const/4 v2, 0x0
 
-    .line 206
+    .line 211
     :goto_0
     iget-object v3, p0, Landroidx/compose/material/SwipeableState$draggableState$1;->this$0:Landroidx/compose/material/SwipeableState;
 
@@ -163,7 +163,7 @@
 
     invoke-interface {v3, p1}, Landroidx/compose/runtime/MutableFloatState;->setFloatValue(F)V
 
-    .line 207
+    .line 212
     iget-object p1, p0, Landroidx/compose/material/SwipeableState$draggableState$1;->this$0:Landroidx/compose/material/SwipeableState;
 
     invoke-static {p1}, Landroidx/compose/material/SwipeableState;->access$getOverflowState$p(Landroidx/compose/material/SwipeableState;)Landroidx/compose/runtime/MutableFloatState;
@@ -172,7 +172,7 @@
 
     invoke-interface {p1, v1}, Landroidx/compose/runtime/MutableFloatState;->setFloatValue(F)V
 
-    .line 208
+    .line 213
     iget-object p0, p0, Landroidx/compose/material/SwipeableState$draggableState$1;->this$0:Landroidx/compose/material/SwipeableState;
 
     invoke-static {p0}, Landroidx/compose/material/SwipeableState;->access$getAbsoluteOffset$p(Landroidx/compose/material/SwipeableState;)Landroidx/compose/runtime/MutableFloatState;

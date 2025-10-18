@@ -185,7 +185,7 @@
 .end method
 
 .method private doCopy(Lorg/apache/http/HttpRequest;)Lorg/apache/http/client/methods/RequestBuilder;
-    .locals 4
+    .locals 5
 
     if-nez p1, :cond_0
 
@@ -273,45 +273,52 @@
     .line 278
     invoke-virtual {v2}, Lorg/apache/http/entity/ContentType;->getMimeType()Ljava/lang/String;
 
-    move-result-object v2
-
-    sget-object v3, Lorg/apache/http/entity/ContentType;->APPLICATION_FORM_URLENCODED:Lorg/apache/http/entity/ContentType;
-
-    invoke-virtual {v3}, Lorg/apache/http/entity/ContentType;->getMimeType()Ljava/lang/String;
-
     move-result-object v3
 
-    invoke-virtual {v2, v3}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+    sget-object v4, Lorg/apache/http/entity/ContentType;->APPLICATION_FORM_URLENCODED:Lorg/apache/http/entity/ContentType;
 
-    move-result v2
+    invoke-virtual {v4}, Lorg/apache/http/entity/ContentType;->getMimeType()Ljava/lang/String;
 
-    if-eqz v2, :cond_2
+    move-result-object v4
+
+    invoke-virtual {v3, v4}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v3
+
+    if-eqz v3, :cond_2
 
     .line 281
     :try_start_0
+    invoke-virtual {v2}, Lorg/apache/http/entity/ContentType;->getCharset()Ljava/nio/charset/Charset;
+
+    move-result-object v2
+
+    iput-object v2, p0, Lorg/apache/http/client/methods/RequestBuilder;->charset:Ljava/nio/charset/Charset;
+
+    .line 282
     invoke-static {v1}, Lorg/apache/http/client/utils/URLEncodedUtils;->parse(Lorg/apache/http/HttpEntity;)Ljava/util/List;
 
     move-result-object v1
 
-    .line 282
+    .line 283
     invoke-interface {v1}, Ljava/util/List;->isEmpty()Z
 
     move-result v2
 
     if-nez v2, :cond_3
 
-    .line 283
+    .line 284
     iput-object v1, p0, Lorg/apache/http/client/methods/RequestBuilder;->parameters:Ljava/util/List;
     :try_end_0
     .catch Ljava/io/IOException; {:try_start_0 .. :try_end_0} :catch_0
 
     goto :goto_0
 
-    .line 288
+    .line 289
     :cond_2
     iput-object v1, p0, Lorg/apache/http/client/methods/RequestBuilder;->entity:Lorg/apache/http/HttpEntity;
 
-    .line 293
+    .line 294
     :catch_0
     :cond_3
     :goto_0
@@ -319,7 +326,7 @@
 
     if-eqz v1, :cond_4
 
-    .line 294
+    .line 295
     move-object v1, p1
 
     check-cast v1, Lorg/apache/http/client/methods/HttpUriRequest;
@@ -332,7 +339,7 @@
 
     goto :goto_1
 
-    .line 296
+    .line 297
     :cond_4
     invoke-interface {p1}, Lorg/apache/http/HttpRequest;->getRequestLine()Lorg/apache/http/RequestLine;
 
@@ -348,13 +355,13 @@
 
     iput-object v1, p0, Lorg/apache/http/client/methods/RequestBuilder;->uri:Ljava/net/URI;
 
-    .line 299
+    .line 300
     :goto_1
     instance-of v1, p1, Lorg/apache/http/client/methods/Configurable;
 
     if-eqz v1, :cond_5
 
-    .line 300
+    .line 301
     check-cast p1, Lorg/apache/http/client/methods/Configurable;
 
     invoke-interface {p1}, Lorg/apache/http/client/methods/Configurable;->getConfig()Lorg/apache/http/client/config/RequestConfig;
@@ -365,7 +372,7 @@
 
     goto :goto_2
 
-    .line 302
+    .line 303
     :cond_5
     iput-object v0, p0, Lorg/apache/http/client/methods/RequestBuilder;->config:Lorg/apache/http/client/config/RequestConfig;
 
@@ -651,19 +658,19 @@
 .method public addHeader(Ljava/lang/String;Ljava/lang/String;)Lorg/apache/http/client/methods/RequestBuilder;
     .locals 2
 
-    .line 370
+    .line 371
     iget-object v0, p0, Lorg/apache/http/client/methods/RequestBuilder;->headerGroup:Lorg/apache/http/message/HeaderGroup;
 
     if-nez v0, :cond_0
 
-    .line 371
+    .line 372
     new-instance v0, Lorg/apache/http/message/HeaderGroup;
 
     invoke-direct {v0}, Lorg/apache/http/message/HeaderGroup;-><init>()V
 
     iput-object v0, p0, Lorg/apache/http/client/methods/RequestBuilder;->headerGroup:Lorg/apache/http/message/HeaderGroup;
 
-    .line 373
+    .line 374
     :cond_0
     iget-object v0, p0, Lorg/apache/http/client/methods/RequestBuilder;->headerGroup:Lorg/apache/http/message/HeaderGroup;
 
@@ -679,19 +686,19 @@
 .method public addHeader(Lorg/apache/http/Header;)Lorg/apache/http/client/methods/RequestBuilder;
     .locals 1
 
-    .line 362
+    .line 363
     iget-object v0, p0, Lorg/apache/http/client/methods/RequestBuilder;->headerGroup:Lorg/apache/http/message/HeaderGroup;
 
     if-nez v0, :cond_0
 
-    .line 363
+    .line 364
     new-instance v0, Lorg/apache/http/message/HeaderGroup;
 
     invoke-direct {v0}, Lorg/apache/http/message/HeaderGroup;-><init>()V
 
     iput-object v0, p0, Lorg/apache/http/client/methods/RequestBuilder;->headerGroup:Lorg/apache/http/message/HeaderGroup;
 
-    .line 365
+    .line 366
     :cond_0
     iget-object v0, p0, Lorg/apache/http/client/methods/RequestBuilder;->headerGroup:Lorg/apache/http/message/HeaderGroup;
 
@@ -703,7 +710,7 @@
 .method public addParameter(Ljava/lang/String;Ljava/lang/String;)Lorg/apache/http/client/methods/RequestBuilder;
     .locals 1
 
-    .line 438
+    .line 439
     new-instance v0, Lorg/apache/http/message/BasicNameValuePair;
 
     invoke-direct {v0, p1, p2}, Lorg/apache/http/message/BasicNameValuePair;-><init>(Ljava/lang/String;Ljava/lang/String;)V
@@ -718,24 +725,24 @@
 .method public addParameter(Lorg/apache/http/NameValuePair;)Lorg/apache/http/client/methods/RequestBuilder;
     .locals 1
 
-    .line 429
+    .line 430
     const-string v0, "Name value pair"
 
     invoke-static {p1, v0}, Lorg/apache/http/util/Args;->notNull(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
 
-    .line 430
+    .line 431
     iget-object v0, p0, Lorg/apache/http/client/methods/RequestBuilder;->parameters:Ljava/util/List;
 
     if-nez v0, :cond_0
 
-    .line 431
+    .line 432
     new-instance v0, Ljava/util/LinkedList;
 
     invoke-direct {v0}, Ljava/util/LinkedList;-><init>()V
 
     iput-object v0, p0, Lorg/apache/http/client/methods/RequestBuilder;->parameters:Ljava/util/List;
 
-    .line 433
+    .line 434
     :cond_0
     iget-object v0, p0, Lorg/apache/http/client/methods/RequestBuilder;->parameters:Ljava/util/List;
 
@@ -747,7 +754,7 @@
 .method public varargs addParameters([Lorg/apache/http/NameValuePair;)Lorg/apache/http/client/methods/RequestBuilder;
     .locals 3
 
-    .line 442
+    .line 443
     array-length v0, p1
 
     const/4 v1, 0x0
@@ -757,7 +764,7 @@
 
     aget-object v2, p1, v1
 
-    .line 443
+    .line 444
     invoke-virtual {p0, v2}, Lorg/apache/http/client/methods/RequestBuilder;->addParameter(Lorg/apache/http/NameValuePair;)Lorg/apache/http/client/methods/RequestBuilder;
 
     add-int/lit8 v1, v1, 0x1
@@ -771,7 +778,7 @@
 .method public build()Lorg/apache/http/client/methods/HttpUriRequest;
     .locals 4
 
-    .line 459
+    .line 460
     iget-object v0, p0, Lorg/apache/http/client/methods/RequestBuilder;->uri:Ljava/net/URI;
 
     if-eqz v0, :cond_0
@@ -785,11 +792,11 @@
 
     move-result-object v0
 
-    .line 460
+    .line 461
     :goto_0
     iget-object v1, p0, Lorg/apache/http/client/methods/RequestBuilder;->entity:Lorg/apache/http/HttpEntity;
 
-    .line 461
+    .line 462
     iget-object v2, p0, Lorg/apache/http/client/methods/RequestBuilder;->parameters:Ljava/util/List;
 
     if-eqz v2, :cond_4
@@ -802,7 +809,7 @@
 
     if-nez v1, :cond_3
 
-    .line 462
+    .line 463
     const-string v2, "POST"
 
     iget-object v3, p0, Lorg/apache/http/client/methods/RequestBuilder;->method:Ljava/lang/String;
@@ -823,7 +830,7 @@
 
     if-eqz v2, :cond_3
 
-    .line 464
+    .line 465
     :cond_1
     new-instance v1, Lorg/apache/http/client/entity/UrlEncodedFormEntity;
 
@@ -843,7 +850,7 @@
 
     goto :goto_2
 
-    .line 467
+    .line 468
     :cond_3
     :try_start_0
     new-instance v2, Lorg/apache/http/client/utils/URIBuilder;
@@ -873,7 +880,7 @@
     :goto_2
     if-nez v1, :cond_5
 
-    .line 477
+    .line 478
     new-instance v1, Lorg/apache/http/client/methods/RequestBuilder$InternalRequest;
 
     iget-object v2, p0, Lorg/apache/http/client/methods/RequestBuilder;->method:Ljava/lang/String;
@@ -882,7 +889,7 @@
 
     goto :goto_3
 
-    .line 479
+    .line 480
     :cond_5
     new-instance v2, Lorg/apache/http/client/methods/RequestBuilder$InternalEntityEclosingRequest;
 
@@ -890,33 +897,33 @@
 
     invoke-direct {v2, v3}, Lorg/apache/http/client/methods/RequestBuilder$InternalEntityEclosingRequest;-><init>(Ljava/lang/String;)V
 
-    .line 480
+    .line 481
     invoke-virtual {v2, v1}, Lorg/apache/http/client/methods/RequestBuilder$InternalEntityEclosingRequest;->setEntity(Lorg/apache/http/HttpEntity;)V
 
     move-object v1, v2
 
-    .line 483
+    .line 484
     :goto_3
     iget-object v2, p0, Lorg/apache/http/client/methods/RequestBuilder;->version:Lorg/apache/http/ProtocolVersion;
 
     invoke-virtual {v1, v2}, Lorg/apache/http/client/methods/HttpRequestBase;->setProtocolVersion(Lorg/apache/http/ProtocolVersion;)V
 
-    .line 484
+    .line 485
     invoke-virtual {v1, v0}, Lorg/apache/http/client/methods/HttpRequestBase;->setURI(Ljava/net/URI;)V
 
-    .line 485
+    .line 486
     iget-object v0, p0, Lorg/apache/http/client/methods/RequestBuilder;->headerGroup:Lorg/apache/http/message/HeaderGroup;
 
     if-eqz v0, :cond_6
 
-    .line 486
+    .line 487
     invoke-virtual {v0}, Lorg/apache/http/message/HeaderGroup;->getAllHeaders()[Lorg/apache/http/Header;
 
     move-result-object v0
 
     invoke-virtual {v1, v0}, Lorg/apache/http/client/methods/HttpRequestBase;->setHeaders([Lorg/apache/http/Header;)V
 
-    .line 488
+    .line 489
     :cond_6
     iget-object p0, p0, Lorg/apache/http/client/methods/RequestBuilder;->config:Lorg/apache/http/client/config/RequestConfig;
 
@@ -928,7 +935,7 @@
 .method public getCharset()Ljava/nio/charset/Charset;
     .locals 0
 
-    .line 319
+    .line 320
     iget-object p0, p0, Lorg/apache/http/client/methods/RequestBuilder;->charset:Ljava/nio/charset/Charset;
 
     return-object p0
@@ -937,7 +944,7 @@
 .method public getConfig()Lorg/apache/http/client/config/RequestConfig;
     .locals 0
 
-    .line 449
+    .line 450
     iget-object p0, p0, Lorg/apache/http/client/methods/RequestBuilder;->config:Lorg/apache/http/client/config/RequestConfig;
 
     return-object p0
@@ -946,7 +953,7 @@
 .method public getEntity()Lorg/apache/http/HttpEntity;
     .locals 0
 
-    .line 415
+    .line 416
     iget-object p0, p0, Lorg/apache/http/client/methods/RequestBuilder;->entity:Lorg/apache/http/HttpEntity;
 
     return-object p0
@@ -955,7 +962,7 @@
 .method public getFirstHeader(Ljava/lang/String;)Lorg/apache/http/Header;
     .locals 0
 
-    .line 350
+    .line 351
     iget-object p0, p0, Lorg/apache/http/client/methods/RequestBuilder;->headerGroup:Lorg/apache/http/message/HeaderGroup;
 
     if-eqz p0, :cond_0
@@ -976,7 +983,7 @@
 .method public getHeaders(Ljava/lang/String;)[Lorg/apache/http/Header;
     .locals 0
 
-    .line 358
+    .line 359
     iget-object p0, p0, Lorg/apache/http/client/methods/RequestBuilder;->headerGroup:Lorg/apache/http/message/HeaderGroup;
 
     if-eqz p0, :cond_0
@@ -997,7 +1004,7 @@
 .method public getLastHeader(Ljava/lang/String;)Lorg/apache/http/Header;
     .locals 0
 
-    .line 354
+    .line 355
     iget-object p0, p0, Lorg/apache/http/client/methods/RequestBuilder;->headerGroup:Lorg/apache/http/message/HeaderGroup;
 
     if-eqz p0, :cond_0
@@ -1018,7 +1025,7 @@
 .method public getMethod()Ljava/lang/String;
     .locals 0
 
-    .line 323
+    .line 324
     iget-object p0, p0, Lorg/apache/http/client/methods/RequestBuilder;->method:Ljava/lang/String;
 
     return-object p0
@@ -1035,7 +1042,7 @@
         }
     .end annotation
 
-    .line 424
+    .line 425
     iget-object v0, p0, Lorg/apache/http/client/methods/RequestBuilder;->parameters:Ljava/util/List;
 
     if-eqz v0, :cond_0
@@ -1060,7 +1067,7 @@
 .method public getUri()Ljava/net/URI;
     .locals 0
 
-    .line 336
+    .line 337
     iget-object p0, p0, Lorg/apache/http/client/methods/RequestBuilder;->uri:Ljava/net/URI;
 
     return-object p0
@@ -1069,7 +1076,7 @@
 .method public getVersion()Lorg/apache/http/ProtocolVersion;
     .locals 0
 
-    .line 327
+    .line 328
     iget-object p0, p0, Lorg/apache/http/client/methods/RequestBuilder;->version:Lorg/apache/http/ProtocolVersion;
 
     return-object p0
@@ -1078,19 +1085,19 @@
 .method public removeHeader(Lorg/apache/http/Header;)Lorg/apache/http/client/methods/RequestBuilder;
     .locals 1
 
-    .line 378
+    .line 379
     iget-object v0, p0, Lorg/apache/http/client/methods/RequestBuilder;->headerGroup:Lorg/apache/http/message/HeaderGroup;
 
     if-nez v0, :cond_0
 
-    .line 379
+    .line 380
     new-instance v0, Lorg/apache/http/message/HeaderGroup;
 
     invoke-direct {v0}, Lorg/apache/http/message/HeaderGroup;-><init>()V
 
     iput-object v0, p0, Lorg/apache/http/client/methods/RequestBuilder;->headerGroup:Lorg/apache/http/message/HeaderGroup;
 
-    .line 381
+    .line 382
     :cond_0
     iget-object v0, p0, Lorg/apache/http/client/methods/RequestBuilder;->headerGroup:Lorg/apache/http/message/HeaderGroup;
 
@@ -1104,14 +1111,14 @@
 
     if-eqz p1, :cond_2
 
-    .line 386
+    .line 387
     iget-object v0, p0, Lorg/apache/http/client/methods/RequestBuilder;->headerGroup:Lorg/apache/http/message/HeaderGroup;
 
     if-nez v0, :cond_0
 
     goto :goto_1
 
-    .line 389
+    .line 390
     :cond_0
     invoke-virtual {v0}, Lorg/apache/http/message/HeaderGroup;->iterator()Lorg/apache/http/HeaderIterator;
 
@@ -1125,12 +1132,12 @@
 
     if-eqz v1, :cond_2
 
-    .line 390
+    .line 391
     invoke-interface {v0}, Lorg/apache/http/HeaderIterator;->nextHeader()Lorg/apache/http/Header;
 
     move-result-object v1
 
-    .line 391
+    .line 392
     invoke-interface {v1}, Lorg/apache/http/Header;->getName()Ljava/lang/String;
 
     move-result-object v1
@@ -1141,7 +1148,7 @@
 
     if-eqz v1, :cond_1
 
-    .line 392
+    .line 393
     invoke-interface {v0}, Lorg/apache/http/HeaderIterator;->remove()V
 
     goto :goto_0
@@ -1154,7 +1161,7 @@
 .method public setCharset(Ljava/nio/charset/Charset;)Lorg/apache/http/client/methods/RequestBuilder;
     .locals 0
 
-    .line 311
+    .line 312
     iput-object p1, p0, Lorg/apache/http/client/methods/RequestBuilder;->charset:Ljava/nio/charset/Charset;
 
     return-object p0
@@ -1163,7 +1170,7 @@
 .method public setConfig(Lorg/apache/http/client/config/RequestConfig;)Lorg/apache/http/client/methods/RequestBuilder;
     .locals 0
 
-    .line 453
+    .line 454
     iput-object p1, p0, Lorg/apache/http/client/methods/RequestBuilder;->config:Lorg/apache/http/client/config/RequestConfig;
 
     return-object p0
@@ -1172,7 +1179,7 @@
 .method public setEntity(Lorg/apache/http/HttpEntity;)Lorg/apache/http/client/methods/RequestBuilder;
     .locals 0
 
-    .line 419
+    .line 420
     iput-object p1, p0, Lorg/apache/http/client/methods/RequestBuilder;->entity:Lorg/apache/http/HttpEntity;
 
     return-object p0
@@ -1181,19 +1188,19 @@
 .method public setHeader(Ljava/lang/String;Ljava/lang/String;)Lorg/apache/http/client/methods/RequestBuilder;
     .locals 2
 
-    .line 407
+    .line 408
     iget-object v0, p0, Lorg/apache/http/client/methods/RequestBuilder;->headerGroup:Lorg/apache/http/message/HeaderGroup;
 
     if-nez v0, :cond_0
 
-    .line 408
+    .line 409
     new-instance v0, Lorg/apache/http/message/HeaderGroup;
 
     invoke-direct {v0}, Lorg/apache/http/message/HeaderGroup;-><init>()V
 
     iput-object v0, p0, Lorg/apache/http/client/methods/RequestBuilder;->headerGroup:Lorg/apache/http/message/HeaderGroup;
 
-    .line 410
+    .line 411
     :cond_0
     iget-object v0, p0, Lorg/apache/http/client/methods/RequestBuilder;->headerGroup:Lorg/apache/http/message/HeaderGroup;
 
@@ -1209,19 +1216,19 @@
 .method public setHeader(Lorg/apache/http/Header;)Lorg/apache/http/client/methods/RequestBuilder;
     .locals 1
 
-    .line 399
+    .line 400
     iget-object v0, p0, Lorg/apache/http/client/methods/RequestBuilder;->headerGroup:Lorg/apache/http/message/HeaderGroup;
 
     if-nez v0, :cond_0
 
-    .line 400
+    .line 401
     new-instance v0, Lorg/apache/http/message/HeaderGroup;
 
     invoke-direct {v0}, Lorg/apache/http/message/HeaderGroup;-><init>()V
 
     iput-object v0, p0, Lorg/apache/http/client/methods/RequestBuilder;->headerGroup:Lorg/apache/http/message/HeaderGroup;
 
-    .line 402
+    .line 403
     :cond_0
     iget-object v0, p0, Lorg/apache/http/client/methods/RequestBuilder;->headerGroup:Lorg/apache/http/message/HeaderGroup;
 
@@ -1235,7 +1242,7 @@
 
     if-eqz p1, :cond_0
 
-    .line 345
+    .line 346
     invoke-static {p1}, Ljava/net/URI;->create(Ljava/lang/String;)Ljava/net/URI;
 
     move-result-object p1
@@ -1254,7 +1261,7 @@
 .method public setUri(Ljava/net/URI;)Lorg/apache/http/client/methods/RequestBuilder;
     .locals 0
 
-    .line 340
+    .line 341
     iput-object p1, p0, Lorg/apache/http/client/methods/RequestBuilder;->uri:Ljava/net/URI;
 
     return-object p0
@@ -1263,7 +1270,7 @@
 .method public setVersion(Lorg/apache/http/ProtocolVersion;)Lorg/apache/http/client/methods/RequestBuilder;
     .locals 0
 
-    .line 331
+    .line 332
     iput-object p1, p0, Lorg/apache/http/client/methods/RequestBuilder;->version:Lorg/apache/http/ProtocolVersion;
 
     return-object p0
@@ -1272,94 +1279,94 @@
 .method public toString()Ljava/lang/String;
     .locals 2
 
-    .line 526
+    .line 527
     new-instance v0, Ljava/lang/StringBuilder;
 
     const-string v1, "RequestBuilder [method="
 
     invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
-    .line 528
+    .line 529
     iget-object v1, p0, Lorg/apache/http/client/methods/RequestBuilder;->method:Ljava/lang/String;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 529
+    .line 530
     const-string v1, ", charset="
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 530
+    .line 531
     iget-object v1, p0, Lorg/apache/http/client/methods/RequestBuilder;->charset:Ljava/nio/charset/Charset;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
-    .line 531
+    .line 532
     const-string v1, ", version="
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 532
+    .line 533
     iget-object v1, p0, Lorg/apache/http/client/methods/RequestBuilder;->version:Lorg/apache/http/ProtocolVersion;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
-    .line 533
+    .line 534
     const-string v1, ", uri="
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 534
+    .line 535
     iget-object v1, p0, Lorg/apache/http/client/methods/RequestBuilder;->uri:Ljava/net/URI;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
-    .line 535
+    .line 536
     const-string v1, ", headerGroup="
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 536
+    .line 537
     iget-object v1, p0, Lorg/apache/http/client/methods/RequestBuilder;->headerGroup:Lorg/apache/http/message/HeaderGroup;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
-    .line 537
+    .line 538
     const-string v1, ", entity="
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 538
+    .line 539
     iget-object v1, p0, Lorg/apache/http/client/methods/RequestBuilder;->entity:Lorg/apache/http/HttpEntity;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
-    .line 539
+    .line 540
     const-string v1, ", parameters="
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 540
+    .line 541
     iget-object v1, p0, Lorg/apache/http/client/methods/RequestBuilder;->parameters:Ljava/util/List;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
-    .line 541
+    .line 542
     const-string v1, ", config="
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 542
+    .line 543
     iget-object p0, p0, Lorg/apache/http/client/methods/RequestBuilder;->config:Lorg/apache/http/client/config/RequestConfig;
 
     invoke-virtual {v0, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
-    .line 543
+    .line 544
     const-string p0, "]"
 
     invoke-virtual {v0, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 544
+    .line 545
     invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object p0

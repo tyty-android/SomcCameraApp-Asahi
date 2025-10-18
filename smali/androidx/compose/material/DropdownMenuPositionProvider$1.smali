@@ -81,7 +81,7 @@
 .method public bridge synthetic invoke(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
 
-    .line 242
+    .line 241
     check-cast p1, Landroidx/compose/ui/unit/IntRect;
 
     check-cast p2, Landroidx/compose/ui/unit/IntRect;
@@ -95,14 +95,6 @@
 
 .method public final invoke(Landroidx/compose/ui/unit/IntRect;Landroidx/compose/ui/unit/IntRect;)V
     .locals 0
-
-    const-string p0, "<anonymous parameter 0>"
-
-    invoke-static {p1, p0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string p0, "<anonymous parameter 1>"
-
-    invoke-static {p2, p0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
     return-void
 .end method

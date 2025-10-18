@@ -410,7 +410,7 @@
 .end method
 
 .method protected setImage()V
-    .locals 9
+    .locals 11
 
     .line 85
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/view/SelfTimerCountDownNumberView;->getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
@@ -424,7 +424,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f0707b1
+    const v2, 0x7f070812
 
     invoke-virtual {v1, v2}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
@@ -437,7 +437,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f0707ae
+    const v2, 0x7f07080f
 
     invoke-virtual {v1, v2}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
@@ -457,7 +457,7 @@
     .line 91
     iget-boolean v1, p0, Ljp/co/sony/mc/camera/view/SelfTimerCountDownNumberView;->mIsTenDigit:Z
 
-    const v4, 0x7f0707af
+    const v4, 0x7f070810
 
     if-eqz v1, :cond_0
 
@@ -512,12 +512,12 @@
 
     move-result v1
 
-    const/16 v2, 0x8
+    const/16 v4, 0x8
 
-    if-eq v1, v2, :cond_3
+    if-eq v1, v4, :cond_3
 
     .line 105
-    invoke-virtual {p0, v2}, Ljp/co/sony/mc/camera/view/SelfTimerCountDownNumberView;->setVisibility(I)V
+    invoke-virtual {p0, v4}, Ljp/co/sony/mc/camera/view/SelfTimerCountDownNumberView;->setVisibility(I)V
 
     goto :goto_0
 
@@ -548,15 +548,17 @@
 
     const-string v1, "]"
 
-    const-string/jumbo v2, "setImage() [Irregal Value = "
+    const-string v4, "setImage() [Irregal Value = "
 
-    const-string/jumbo v4, "setImage() : mCurrentCount = "
+    const-string v5, "setImage() : mCurrentCount = "
 
-    const v5, 0x7f08029d
+    const v6, 0x7f0802b3
 
-    const v6, 0x7f08029c
+    const v7, 0x7f0802b2
 
-    const v7, 0x7f08029b
+    const v8, 0x7f0802b1
+
+    const/4 v9, 0x1
 
     if-eqz v0, :cond_9
 
@@ -567,9 +569,7 @@
 
     if-eqz v0, :cond_c
 
-    const/4 v3, 0x1
-
-    if-eq v0, v3, :cond_8
+    if-eq v0, v9, :cond_8
 
     const/4 v3, 0x2
 
@@ -585,9 +585,11 @@
     if-eqz v0, :cond_5
 
     .line 131
-    new-instance v0, Ljava/lang/StringBuilder;
+    new-array v0, v9, [Ljava/lang/String;
 
-    invoke-direct {v0, v2}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+    new-instance v3, Ljava/lang/StringBuilder;
+
+    invoke-direct {v3, v4}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/SelfTimerCountDownNumberView;->mValueAnimator:Landroid/animation/ValueAnimator;
 
@@ -596,7 +598,7 @@
 
     move-result-object p0
 
-    invoke-virtual {v0, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+    invoke-virtual {v3, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
     move-result-object p0
 
@@ -608,24 +610,24 @@
 
     move-result-object p0
 
-    filled-new-array {p0}, [Ljava/lang/String;
-
-    move-result-object p0
+    aput-object p0, v0, v2
 
     .line 131
-    invoke-static {p0}, Ljp/co/sony/mc/camera/util/CamLog;->e([Ljava/lang/String;)V
+    invoke-static {v0}, Ljp/co/sony/mc/camera/util/CamLog;->e([Ljava/lang/String;)V
 
     goto/16 :goto_2
 
     .line 134
     :cond_5
-    new-instance v0, Ljava/lang/StringBuilder;
+    new-array v0, v9, [Ljava/lang/String;
 
-    invoke-direct {v0, v4}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+    new-instance v1, Ljava/lang/StringBuilder;
+
+    invoke-direct {v1, v5}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
     iget p0, p0, Ljp/co/sony/mc/camera/view/SelfTimerCountDownNumberView;->mCurrentCount:I
 
-    invoke-virtual {v0, p0}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+    invoke-virtual {v1, p0}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
     move-result-object p0
 
@@ -633,29 +635,27 @@
 
     move-result-object p0
 
-    filled-new-array {p0}, [Ljava/lang/String;
+    aput-object p0, v0, v2
 
-    move-result-object p0
-
-    invoke-static {p0}, Ljp/co/sony/mc/camera/util/CamLog;->e([Ljava/lang/String;)V
+    invoke-static {v0}, Ljp/co/sony/mc/camera/util/CamLog;->e([Ljava/lang/String;)V
 
     goto/16 :goto_2
 
     .line 119
     :cond_6
-    invoke-virtual {p0, v5}, Ljp/co/sony/mc/camera/view/SelfTimerCountDownNumberView;->setImageResource(I)V
+    invoke-virtual {p0, v6}, Ljp/co/sony/mc/camera/view/SelfTimerCountDownNumberView;->setImageResource(I)V
 
     goto/16 :goto_2
 
     .line 122
     :cond_7
-    invoke-virtual {p0, v6}, Ljp/co/sony/mc/camera/view/SelfTimerCountDownNumberView;->setImageResource(I)V
+    invoke-virtual {p0, v7}, Ljp/co/sony/mc/camera/view/SelfTimerCountDownNumberView;->setImageResource(I)V
 
     goto/16 :goto_2
 
     .line 125
     :cond_8
-    invoke-virtual {p0, v7}, Ljp/co/sony/mc/camera/view/SelfTimerCountDownNumberView;->setImageResource(I)V
+    invoke-virtual {p0, v8}, Ljp/co/sony/mc/camera/view/SelfTimerCountDownNumberView;->setImageResource(I)V
 
     goto/16 :goto_2
 
@@ -663,14 +663,14 @@
     :cond_9
     iget v0, p0, Ljp/co/sony/mc/camera/view/SelfTimerCountDownNumberView;->mCurrentCount:I
 
-    rem-int/lit8 v8, v0, 0xa
+    rem-int/lit8 v10, v0, 0xa
 
-    packed-switch v8, :pswitch_data_0
+    packed-switch v10, :pswitch_data_0
 
     goto :goto_1
 
     :pswitch_0
-    const v0, 0x7f0802a3
+    const v0, 0x7f0802b9
 
     .line 141
     invoke-virtual {p0, v0}, Ljp/co/sony/mc/camera/view/SelfTimerCountDownNumberView;->setImageResource(I)V
@@ -678,7 +678,7 @@
     goto/16 :goto_2
 
     :pswitch_1
-    const v0, 0x7f0802a2
+    const v0, 0x7f0802b8
 
     .line 144
     invoke-virtual {p0, v0}, Ljp/co/sony/mc/camera/view/SelfTimerCountDownNumberView;->setImageResource(I)V
@@ -686,7 +686,7 @@
     goto/16 :goto_2
 
     :pswitch_2
-    const v0, 0x7f0802a1
+    const v0, 0x7f0802b7
 
     .line 147
     invoke-virtual {p0, v0}, Ljp/co/sony/mc/camera/view/SelfTimerCountDownNumberView;->setImageResource(I)V
@@ -694,7 +694,7 @@
     goto :goto_2
 
     :pswitch_3
-    const v0, 0x7f0802a0
+    const v0, 0x7f0802b6
 
     .line 150
     invoke-virtual {p0, v0}, Ljp/co/sony/mc/camera/view/SelfTimerCountDownNumberView;->setImageResource(I)V
@@ -702,7 +702,7 @@
     goto :goto_2
 
     :pswitch_4
-    const v0, 0x7f08029f
+    const v0, 0x7f0802b5
 
     .line 153
     invoke-virtual {p0, v0}, Ljp/co/sony/mc/camera/view/SelfTimerCountDownNumberView;->setImageResource(I)V
@@ -710,7 +710,7 @@
     goto :goto_2
 
     :pswitch_5
-    const v0, 0x7f08029e
+    const v0, 0x7f0802b4
 
     .line 156
     invoke-virtual {p0, v0}, Ljp/co/sony/mc/camera/view/SelfTimerCountDownNumberView;->setImageResource(I)V
@@ -719,26 +719,26 @@
 
     .line 159
     :pswitch_6
-    invoke-virtual {p0, v5}, Ljp/co/sony/mc/camera/view/SelfTimerCountDownNumberView;->setImageResource(I)V
+    invoke-virtual {p0, v6}, Ljp/co/sony/mc/camera/view/SelfTimerCountDownNumberView;->setImageResource(I)V
 
     goto :goto_2
 
     .line 162
     :pswitch_7
-    invoke-virtual {p0, v6}, Ljp/co/sony/mc/camera/view/SelfTimerCountDownNumberView;->setImageResource(I)V
+    invoke-virtual {p0, v7}, Ljp/co/sony/mc/camera/view/SelfTimerCountDownNumberView;->setImageResource(I)V
 
     goto :goto_2
 
     .line 165
     :pswitch_8
-    invoke-virtual {p0, v7}, Ljp/co/sony/mc/camera/view/SelfTimerCountDownNumberView;->setImageResource(I)V
+    invoke-virtual {p0, v8}, Ljp/co/sony/mc/camera/view/SelfTimerCountDownNumberView;->setImageResource(I)V
 
     goto :goto_2
 
     :pswitch_9
     if-le v0, v3, :cond_a
 
-    const v0, 0x7f08029a
+    const v0, 0x7f0802b0
 
     .line 169
     invoke-virtual {p0, v0}, Ljp/co/sony/mc/camera/view/SelfTimerCountDownNumberView;->setImageResource(I)V
@@ -753,9 +753,11 @@
     if-eqz v0, :cond_b
 
     .line 175
-    new-instance v0, Ljava/lang/StringBuilder;
+    new-array v0, v9, [Ljava/lang/String;
 
-    invoke-direct {v0, v2}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+    new-instance v3, Ljava/lang/StringBuilder;
+
+    invoke-direct {v3, v4}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/SelfTimerCountDownNumberView;->mValueAnimator:Landroid/animation/ValueAnimator;
 
@@ -764,7 +766,7 @@
 
     move-result-object p0
 
-    invoke-virtual {v0, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+    invoke-virtual {v3, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
     move-result-object p0
 
@@ -776,24 +778,24 @@
 
     move-result-object p0
 
-    filled-new-array {p0}, [Ljava/lang/String;
-
-    move-result-object p0
+    aput-object p0, v0, v2
 
     .line 175
-    invoke-static {p0}, Ljp/co/sony/mc/camera/util/CamLog;->e([Ljava/lang/String;)V
+    invoke-static {v0}, Ljp/co/sony/mc/camera/util/CamLog;->e([Ljava/lang/String;)V
 
     goto :goto_2
 
     .line 178
     :cond_b
-    new-instance v0, Ljava/lang/StringBuilder;
+    new-array v0, v9, [Ljava/lang/String;
 
-    invoke-direct {v0, v4}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+    new-instance v1, Ljava/lang/StringBuilder;
+
+    invoke-direct {v1, v5}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
     iget p0, p0, Ljp/co/sony/mc/camera/view/SelfTimerCountDownNumberView;->mCurrentCount:I
 
-    invoke-virtual {v0, p0}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+    invoke-virtual {v1, p0}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
     move-result-object p0
 
@@ -801,11 +803,9 @@
 
     move-result-object p0
 
-    filled-new-array {p0}, [Ljava/lang/String;
+    aput-object p0, v0, v2
 
-    move-result-object p0
-
-    invoke-static {p0}, Ljp/co/sony/mc/camera/util/CamLog;->e([Ljava/lang/String;)V
+    invoke-static {v0}, Ljp/co/sony/mc/camera/util/CamLog;->e([Ljava/lang/String;)V
 
     :cond_c
     :goto_2

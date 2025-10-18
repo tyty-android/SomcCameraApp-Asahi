@@ -22,18 +22,19 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/SourceDebugExtension;
-    value = "SMAP\nModeDial.kt\nKotlin\n*S Kotlin\n*F\n+ 1 ModeDial.kt\njp/co/sony/mc/camera/view/widget/ModeDial\n+ 2 _Collections.kt\nkotlin/collections/CollectionsKt___CollectionsKt\n*L\n1#1,647:1\n1855#2,2:648\n1855#2,2:650\n1855#2,2:652\n2310#2,14:654\n1855#2,2:668\n2310#2,14:670\n1855#2,2:684\n*S KotlinDebug\n*F\n+ 1 ModeDial.kt\njp/co/sony/mc/camera/view/widget/ModeDial\n*L\n87#1:648,2\n168#1:650,2\n225#1:652,2\n234#1:654,14\n249#1:668,2\n260#1:670,14\n388#1:684,2\n*E\n"
+    value = "SMAP\nModeDial.kt\nKotlin\n*S Kotlin\n*F\n+ 1 ModeDial.kt\njp/co/sony/mc/camera/view/widget/ModeDial\n+ 2 _Collections.kt\nkotlin/collections/CollectionsKt___CollectionsKt\n*L\n1#1,647:1\n1863#2,2:648\n1863#2,2:650\n1863#2,2:652\n2318#2,14:654\n1863#2,2:668\n2318#2,14:670\n1863#2,2:684\n*S KotlinDebug\n*F\n+ 1 ModeDial.kt\njp/co/sony/mc/camera/view/widget/ModeDial\n*L\n87#1:648,2\n168#1:650,2\n225#1:652,2\n234#1:654,14\n249#1:668,2\n260#1:670,14\n388#1:684,2\n*E\n"
 .end annotation
 
 .annotation runtime Lkotlin/Metadata;
     d1 = {
-        "\u0000\u009e\u0001\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0010\u0008\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0010 \n\u0002\u0018\u0002\n\u0002\u0008\u0006\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0007\n\u0002\u0008\u0008\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010!\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0003\n\u0002\u0010\u000b\n\u0000\n\u0002\u0010\u0002\n\u0002\u0008\u0005\n\u0002\u0018\u0002\n\u0002\u0008\u0005\n\u0002\u0018\u0002\n\u0002\u0008\u0007\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\"\u0008\u0007\u0018\u0000 b2\u00020\u0001:\u000c`abcdefghijkB\u000f\u0008\u0016\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u00a2\u0006\u0002\u0010\u0004B\u0017\u0008\u0016\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\u0006\u0010\u0005\u001a\u00020\u0006\u00a2\u0006\u0002\u0010\u0007B\u001f\u0008\u0016\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\u0006\u0010\u0005\u001a\u00020\u0006\u0012\u0006\u0010\u0008\u001a\u00020\t\u00a2\u0006\u0002\u0010\nJ\u0010\u0010K\u001a\u00020\u001d2\u0006\u00109\u001a\u00020\tH\u0002J\u0010\u0010L\u001a\u0002022\u0006\u0010G\u001a\u00020HH\u0002J\u0006\u0010M\u001a\u000202J\u0008\u0010N\u001a\u000202H\u0002J\u0008\u0010O\u001a\u000202H\u0002J\u0010\u0010P\u001a\u0002022\u0006\u0010Q\u001a\u00020\u000eH\u0002J\u0016\u0010R\u001a\u0002022\u000c\u0010\u0015\u001a\u0008\u0012\u0004\u0012\u00020\u00140\u0013H\u0002J\u0008\u0010S\u001a\u000202H\u0015J\u0006\u0010T\u001a\u000202J\u000e\u0010U\u001a\u0002022\u0006\u0010V\u001a\u00020\u000cJ\u0010\u0010W\u001a\u0002022\u0006\u0010X\u001a\u000200H\u0002J\u000e\u0010Y\u001a\u0002022\u0006\u00109\u001a\u00020\tJ\u0018\u0010Z\u001a\u0002022\u0006\u0010[\u001a\u00020)2\u0006\u0010\\\u001a\u000200H\u0002J\u0008\u0010]\u001a\u000202H\u0002J\u0008\u0010^\u001a\u000202H\u0002J\u0008\u0010_\u001a\u000200H\u0002R\u000e\u0010\u000b\u001a\u00020\u000cX\u0082\u000e\u00a2\u0006\u0002\n\u0000R\u000e\u0010\r\u001a\u00020\u000eX\u0082.\u00a2\u0006\u0002\n\u0000R\u0012\u0010\u000f\u001a\u00060\u0010R\u00020\u0000X\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u0011\u001a\u00020\u0001X\u0082.\u00a2\u0006\u0002\n\u0000R0\u0010\u0015\u001a\u0008\u0012\u0004\u0012\u00020\u00140\u00132\u000c\u0010\u0012\u001a\u0008\u0012\u0004\u0012\u00020\u00140\u0013@FX\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\u0008\u0016\u0010\u0017\"\u0004\u0008\u0018\u0010\u0019R\u0012\u0010\u001a\u001a\u00060\u001bR\u00020\u0000X\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u001c\u001a\u00020\u000eX\u0082.\u00a2\u0006\u0002\n\u0000R\u001e\u0010\u001e\u001a\u00020\u001d2\u0006\u0010\u0012\u001a\u00020\u001d@BX\u0082\u000e\u00a2\u0006\u0008\n\u0000\"\u0004\u0008\u001f\u0010 R$\u0010!\u001a\u00020\u001d2\u0006\u0010\u0012\u001a\u00020\u001d@FX\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\u0008\"\u0010#\"\u0004\u0008$\u0010 R\u0012\u0010%\u001a\u00060&R\u00020\u0000X\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u0014\u0010\'\u001a\u0008\u0012\u0004\u0012\u00020)0(X\u0082\u0004\u00a2\u0006\u0002\n\u0000R_\u0010*\u001aG\u0012\u0013\u0012\u00110\t\u00a2\u0006\u000c\u0008,\u0012\u0008\u0008-\u0012\u0004\u0008\u0008(.\u0012\u0013\u0012\u00110\t\u00a2\u0006\u000c\u0008,\u0012\u0008\u0008-\u0012\u0004\u0008\u0008(/\u0012\u0013\u0012\u001100\u00a2\u0006\u000c\u0008,\u0012\u0008\u0008-\u0012\u0004\u0008\u0008(1\u0012\u0004\u0012\u0002020+X\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\u00083\u00104\"\u0004\u00085\u00106R5\u00107\u001a\u001d\u0012\u0013\u0012\u00110\t\u00a2\u0006\u000c\u0008,\u0012\u0008\u0008-\u0012\u0004\u0008\u0008(9\u0012\u0004\u0012\u00020208X\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\u0008:\u0010;\"\u0004\u0008<\u0010=R0\u0010?\u001a\u0008\u0012\u0004\u0012\u0002020>2\u000c\u0010\u0012\u001a\u0008\u0012\u0004\u0012\u0002020>@FX\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\u0008@\u0010A\"\u0004\u0008B\u0010CR\u000e\u0010D\u001a\u00020\tX\u0082\u000e\u00a2\u0006\u0002\n\u0000R\u0010\u0010E\u001a\u0004\u0018\u00010FX\u0082\u000e\u00a2\u0006\u0002\n\u0000R\u000e\u0010G\u001a\u00020HX\u0082\u000e\u00a2\u0006\u0002\n\u0000R\u0014\u0010I\u001a\u0008\u0012\u0004\u0012\u00020)0JX\u0082\u000e\u00a2\u0006\u0002\n\u0000\u00a8\u0006l"
+        "\u0000\u009c\u0001\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0003\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0010\u0008\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0010!\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0007\n\u0002\u0008\u0005\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0010 \n\u0002\u0018\u0002\n\u0002\u0008\n\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0003\n\u0002\u0010\u000b\n\u0000\n\u0002\u0010\u0002\n\u0002\u0008\u0005\n\u0002\u0018\u0002\n\u0002\u0008\u0005\n\u0002\u0018\u0002\n\u0002\u0008\'\u0008\u0007\u0018\u0000 a2\u00020\u0001:\u000cabcdefghijklB\u0011\u0008\u0016\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u00a2\u0006\u0004\u0008\u0004\u0010\u0005B\u0019\u0008\u0016\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\u0006\u0010\u0006\u001a\u00020\u0007\u00a2\u0006\u0004\u0008\u0004\u0010\u0008B!\u0008\u0016\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\u0006\u0010\u0006\u001a\u00020\u0007\u0012\u0006\u0010\t\u001a\u00020\n\u00a2\u0006\u0004\u0008\u0004\u0010\u000bJ\u0008\u0010L\u001a\u00020:H\u0002J\u0008\u0010M\u001a\u00020:H\u0015J\u000e\u0010N\u001a\u00020:2\u0006\u0010A\u001a\u00020\nJ\u0006\u0010O\u001a\u00020:J\u000e\u0010P\u001a\u00020:2\u0006\u0010Q\u001a\u00020\u000fJ\u0016\u0010R\u001a\u00020:2\u000c\u0010)\u001a\u0008\u0012\u0004\u0012\u00020(0\'H\u0002J\u0010\u0010S\u001a\u00020:2\u0006\u0010T\u001a\u00020\u0012H\u0002J\u0008\u0010U\u001a\u00020:H\u0002J\u0008\u0010V\u001a\u000208H\u0002J\u0008\u0010W\u001a\u00020:H\u0002J\u0008\u0010X\u001a\u00020:H\u0002J\u0018\u0010Y\u001a\u00020:2\u0006\u0010Z\u001a\u00020\u00162\u0006\u0010[\u001a\u000208H\u0002J\u0010\u0010\\\u001a\u00020\u00182\u0006\u0010A\u001a\u00020\nH\u0002J\u0010\u0010]\u001a\u00020:2\u0006\u0010^\u001a\u000208H\u0002J\u0010\u0010_\u001a\u00020:2\u0006\u0010\u000c\u001a\u00020\rH\u0002J\u0006\u0010`\u001a\u00020:R\u000e\u0010\u000c\u001a\u00020\rX\u0082\u000e\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u000e\u001a\u00020\u000fX\u0082\u000e\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u0010\u001a\u00020\u0001X\u0082.\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u0011\u001a\u00020\u0012X\u0082.\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u0013\u001a\u00020\u0012X\u0082.\u00a2\u0006\u0002\n\u0000R\u0014\u0010\u0014\u001a\u0008\u0012\u0004\u0012\u00020\u00160\u0015X\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u001e\u0010\u0019\u001a\u00020\u00182\u0006\u0010\u0017\u001a\u00020\u0018@BX\u0082\u000e\u00a2\u0006\u0008\n\u0000\"\u0004\u0008\u001a\u0010\u001bR\u000e\u0010\u001c\u001a\u00020\nX\u0082\u000e\u00a2\u0006\u0002\n\u0000R\u0014\u0010\u001d\u001a\u0008\u0012\u0004\u0012\u00020\u00160\u001eX\u0082\u000e\u00a2\u0006\u0002\n\u0000R\u0012\u0010\u001f\u001a\u00060 R\u00020\u0000X\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u0010\u0010!\u001a\u0004\u0018\u00010\"X\u0082\u000e\u00a2\u0006\u0002\n\u0000R\u0012\u0010#\u001a\u00060$R\u00020\u0000X\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u0012\u0010%\u001a\u00060&R\u00020\u0000X\u0082\u0004\u00a2\u0006\u0002\n\u0000R0\u0010)\u001a\u0008\u0012\u0004\u0012\u00020(0\'2\u000c\u0010\u0017\u001a\u0008\u0012\u0004\u0012\u00020(0\'@FX\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\u0008*\u0010+\"\u0004\u0008,\u0010-R$\u0010.\u001a\u00020\u00182\u0006\u0010\u0017\u001a\u00020\u0018@FX\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\u0008/\u00100\"\u0004\u00081\u0010\u001bR_\u00102\u001aG\u0012\u0013\u0012\u00110\n\u00a2\u0006\u000c\u00084\u0012\u0008\u00085\u0012\u0004\u0008\u0008(6\u0012\u0013\u0012\u00110\n\u00a2\u0006\u000c\u00084\u0012\u0008\u00085\u0012\u0004\u0008\u0008(7\u0012\u0013\u0012\u001108\u00a2\u0006\u000c\u00084\u0012\u0008\u00085\u0012\u0004\u0008\u0008(9\u0012\u0004\u0012\u00020:03X\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\u0008;\u0010<\"\u0004\u0008=\u0010>R5\u0010?\u001a\u001d\u0012\u0013\u0012\u00110\n\u00a2\u0006\u000c\u00084\u0012\u0008\u00085\u0012\u0004\u0008\u0008(A\u0012\u0004\u0012\u00020:0@X\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\u0008B\u0010C\"\u0004\u0008D\u0010ER0\u0010G\u001a\u0008\u0012\u0004\u0012\u00020:0F2\u000c\u0010\u0017\u001a\u0008\u0012\u0004\u0012\u00020:0F@FX\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\u0008H\u0010I\"\u0004\u0008J\u0010K\u00a8\u0006m"
     }
     d2 = {
         "Ljp/co/sony/mc/camera/view/widget/ModeDial;",
         "Landroid/widget/FrameLayout;",
         "context",
         "Landroid/content/Context;",
+        "<init>",
         "(Landroid/content/Context;)V",
         "attrs",
         "Landroid/util/AttributeSet;",
@@ -41,14 +42,33 @@
         "defStyle",
         "",
         "(Landroid/content/Context;Landroid/util/AttributeSet;I)V",
+        "state",
+        "Ljp/co/sony/mc/camera/view/widget/ModeDial$State;",
         "camEvent",
         "Ljp/co/sony/mc/camera/view/CameraEventListener$CameraEvent;",
+        "container",
         "circle",
         "Landroid/view/View;",
+        "divider",
+        "items",
+        "",
+        "Ljp/co/sony/mc/camera/view/widget/ModeDial$ItemViewHolder;",
+        "value",
+        "",
+        "internalRotation",
+        "setInternalRotation",
+        "(F)V",
+        "selectedPosition",
+        "tappedItem",
+        "Ljava/util/concurrent/atomic/AtomicReference;",
+        "dialTouchEventHandler",
+        "Ljp/co/sony/mc/camera/view/widget/ModeDial$DialTouchEventHandler;",
+        "snapAnimation",
+        "Landroid/animation/Animator;",
         "circleSizeChangedListener",
         "Ljp/co/sony/mc/camera/view/widget/ModeDial$CircleSizeChangedListener;",
-        "container",
-        "value",
+        "itemSizeChangedListener",
+        "Ljp/co/sony/mc/camera/view/widget/ModeDial$ItemSizeChangedListener;",
         "",
         "Ljp/co/sony/mc/camera/view/widget/ModeDial$DialItem;",
         "dialItems",
@@ -56,22 +76,10 @@
         "()Ljava/util/List;",
         "setDialItems",
         "(Ljava/util/List;)V",
-        "dialTouchEventHandler",
-        "Ljp/co/sony/mc/camera/view/widget/ModeDial$DialTouchEventHandler;",
-        "divider",
-        "",
-        "internalRotation",
-        "setInternalRotation",
-        "(F)V",
         "itemRotation",
         "getItemRotation",
         "()F",
         "setItemRotation",
-        "itemSizeChangedListener",
-        "Ljp/co/sony/mc/camera/view/widget/ModeDial$ItemSizeChangedListener;",
-        "items",
-        "",
-        "Ljp/co/sony/mc/camera/view/widget/ModeDial$ItemViewHolder;",
         "onItemChangedListener",
         "Lkotlin/Function3;",
         "Lkotlin/ParameterName;",
@@ -98,52 +106,45 @@
         "()Lkotlin/jvm/functions/Function0;",
         "setOnOutsideClickListener",
         "(Lkotlin/jvm/functions/Function0;)V",
-        "selectedPosition",
-        "snapAnimation",
-        "Landroid/animation/Animator;",
-        "state",
-        "Ljp/co/sony/mc/camera/view/widget/ModeDial$State;",
-        "tappedItem",
-        "Ljava/util/concurrent/atomic/AtomicReference;",
-        "calculateRotationTo",
-        "changeStateTo",
-        "hide",
         "init",
-        "initAllButtonPivots",
-        "initButtonPivot",
-        "itemView",
-        "initButtons",
         "onFinishInflate",
-        "requestAccessibilityFocus",
+        "show",
+        "hide",
         "setCameraEvent",
         "event",
-        "setItemsClickable",
-        "clickable",
-        "show",
+        "initButtons",
+        "initButtonPivot",
+        "itemView",
+        "initAllButtonPivots",
+        "updateSelectedPosition",
+        "updateItemRotations",
+        "startSnapAnimation",
         "startAnimationTo",
         "holder",
         "isForward",
-        "startSnapAnimation",
-        "updateItemRotations",
-        "updateSelectedPosition",
-        "AnimationListener",
-        "CircleSizeChangedListener",
+        "calculateRotationTo",
+        "setItemsClickable",
+        "clickable",
+        "changeStateTo",
+        "requestAccessibilityFocus",
         "Companion",
-        "DialItem",
+        "AnimationListener",
+        "OnSizeChangedListener",
+        "CircleSizeChangedListener",
+        "ItemSizeChangedListener",
+        "TappedItemKeeper",
         "DialItemOnClickLister",
         "DialItemOnKeyListener",
         "DialTouchEventHandler",
-        "ItemSizeChangedListener",
-        "ItemViewHolder",
-        "OnSizeChangedListener",
         "State",
-        "TappedItemKeeper",
+        "ItemViewHolder",
+        "DialItem",
         "SomcCamera_release"
     }
     k = 0x1
     mv = {
-        0x1,
-        0x9,
+        0x2,
+        0x0,
         0x0
     }
     xi = 0x30
@@ -261,20 +262,50 @@
 
 
 # direct methods
-.method public static synthetic $r8$lambda$0iOwULOEd4AjktMjOEf1fe4c83g(Lkotlin/jvm/functions/Function0;Landroid/view/View;)V
+.method public static synthetic $r8$lambda$8JNVb80k269JrNIF6YhtF94Z8tw(I)Lkotlin/Unit;
     .locals 0
 
-    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/view/widget/ModeDial;->_set_onOutsideClickListener_$lambda$1(Lkotlin/jvm/functions/Function0;Landroid/view/View;)V
+    invoke-static {p0}, Ljp/co/sony/mc/camera/view/widget/ModeDial;->onItemClickListener$lambda$2(I)Lkotlin/Unit;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method public static synthetic $r8$lambda$9WPaRYTospIuQ-aIPGbLe8SXInw(Ljp/co/sony/mc/camera/view/widget/ModeDial;FLkotlin/jvm/internal/Ref$FloatRef;Landroid/animation/ValueAnimator;)V
+    .locals 0
+
+    invoke-static {p0, p1, p2, p3}, Ljp/co/sony/mc/camera/view/widget/ModeDial;->startAnimationTo$lambda$13(Ljp/co/sony/mc/camera/view/widget/ModeDial;FLkotlin/jvm/internal/Ref$FloatRef;Landroid/animation/ValueAnimator;)V
 
     return-void
 .end method
 
-.method public static synthetic $r8$lambda$XyJIGOFZKEuWRrVtGTP1oF5QTPI(Ljp/co/sony/mc/camera/view/widget/ModeDial;FLkotlin/jvm/internal/Ref$FloatRef;Landroid/animation/ValueAnimator;)V
+.method public static synthetic $r8$lambda$ARcHlJZnMa_WOmjRh_7hKk-A4gA(Lkotlin/jvm/functions/Function0;Landroid/view/View;)V
     .locals 0
 
-    invoke-static {p0, p1, p2, p3}, Ljp/co/sony/mc/camera/view/widget/ModeDial;->startAnimationTo$lambda$10(Ljp/co/sony/mc/camera/view/widget/ModeDial;FLkotlin/jvm/internal/Ref$FloatRef;Landroid/animation/ValueAnimator;)V
+    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/view/widget/ModeDial;->_set_onOutsideClickListener_$lambda$4(Lkotlin/jvm/functions/Function0;Landroid/view/View;)V
 
     return-void
+.end method
+
+.method public static synthetic $r8$lambda$T8jOn9QBKNkzdBboF4rRaa0Dshc()Lkotlin/Unit;
+    .locals 1
+
+    invoke-static {}, Ljp/co/sony/mc/camera/view/widget/ModeDial;->onOutsideClickListener$lambda$3()Lkotlin/Unit;
+
+    move-result-object v0
+
+    return-object v0
+.end method
+
+.method public static synthetic $r8$lambda$s5vzJbmPHk_QKjS-KqML5Uk7t9Y(IIZ)Lkotlin/Unit;
+    .locals 0
+
+    invoke-static {p0, p1, p2}, Ljp/co/sony/mc/camera/view/widget/ModeDial;->onItemChangedListener$lambda$1(IIZ)Lkotlin/Unit;
+
+    move-result-object p0
+
+    return-object p0
 .end method
 
 .method static constructor <clinit>()V
@@ -360,23 +391,23 @@
     iput-object p1, p0, Ljp/co/sony/mc/camera/view/widget/ModeDial;->dialItems:Ljava/util/List;
 
     .line 90
-    sget-object p1, Ljp/co/sony/mc/camera/view/widget/ModeDial$onItemChangedListener$1;->INSTANCE:Ljp/co/sony/mc/camera/view/widget/ModeDial$onItemChangedListener$1;
+    new-instance p1, Ljp/co/sony/mc/camera/view/widget/ModeDial$$ExternalSyntheticLambda0;
 
-    check-cast p1, Lkotlin/jvm/functions/Function3;
+    invoke-direct {p1}, Ljp/co/sony/mc/camera/view/widget/ModeDial$$ExternalSyntheticLambda0;-><init>()V
 
     iput-object p1, p0, Ljp/co/sony/mc/camera/view/widget/ModeDial;->onItemChangedListener:Lkotlin/jvm/functions/Function3;
 
     .line 92
-    sget-object p1, Ljp/co/sony/mc/camera/view/widget/ModeDial$onItemClickListener$1;->INSTANCE:Ljp/co/sony/mc/camera/view/widget/ModeDial$onItemClickListener$1;
+    new-instance p1, Ljp/co/sony/mc/camera/view/widget/ModeDial$$ExternalSyntheticLambda1;
 
-    check-cast p1, Lkotlin/jvm/functions/Function1;
+    invoke-direct {p1}, Ljp/co/sony/mc/camera/view/widget/ModeDial$$ExternalSyntheticLambda1;-><init>()V
 
     iput-object p1, p0, Ljp/co/sony/mc/camera/view/widget/ModeDial;->onItemClickListener:Lkotlin/jvm/functions/Function1;
 
     .line 94
-    sget-object p1, Ljp/co/sony/mc/camera/view/widget/ModeDial$onOutsideClickListener$1;->INSTANCE:Ljp/co/sony/mc/camera/view/widget/ModeDial$onOutsideClickListener$1;
+    new-instance p1, Ljp/co/sony/mc/camera/view/widget/ModeDial$$ExternalSyntheticLambda2;
 
-    check-cast p1, Lkotlin/jvm/functions/Function0;
+    invoke-direct {p1}, Ljp/co/sony/mc/camera/view/widget/ModeDial$$ExternalSyntheticLambda2;-><init>()V
 
     iput-object p1, p0, Ljp/co/sony/mc/camera/view/widget/ModeDial;->onOutsideClickListener:Lkotlin/jvm/functions/Function0;
 
@@ -455,23 +486,23 @@
     iput-object p1, p0, Ljp/co/sony/mc/camera/view/widget/ModeDial;->dialItems:Ljava/util/List;
 
     .line 90
-    sget-object p1, Ljp/co/sony/mc/camera/view/widget/ModeDial$onItemChangedListener$1;->INSTANCE:Ljp/co/sony/mc/camera/view/widget/ModeDial$onItemChangedListener$1;
+    new-instance p1, Ljp/co/sony/mc/camera/view/widget/ModeDial$$ExternalSyntheticLambda0;
 
-    check-cast p1, Lkotlin/jvm/functions/Function3;
+    invoke-direct {p1}, Ljp/co/sony/mc/camera/view/widget/ModeDial$$ExternalSyntheticLambda0;-><init>()V
 
     iput-object p1, p0, Ljp/co/sony/mc/camera/view/widget/ModeDial;->onItemChangedListener:Lkotlin/jvm/functions/Function3;
 
     .line 92
-    sget-object p1, Ljp/co/sony/mc/camera/view/widget/ModeDial$onItemClickListener$1;->INSTANCE:Ljp/co/sony/mc/camera/view/widget/ModeDial$onItemClickListener$1;
+    new-instance p1, Ljp/co/sony/mc/camera/view/widget/ModeDial$$ExternalSyntheticLambda1;
 
-    check-cast p1, Lkotlin/jvm/functions/Function1;
+    invoke-direct {p1}, Ljp/co/sony/mc/camera/view/widget/ModeDial$$ExternalSyntheticLambda1;-><init>()V
 
     iput-object p1, p0, Ljp/co/sony/mc/camera/view/widget/ModeDial;->onItemClickListener:Lkotlin/jvm/functions/Function1;
 
     .line 94
-    sget-object p1, Ljp/co/sony/mc/camera/view/widget/ModeDial$onOutsideClickListener$1;->INSTANCE:Ljp/co/sony/mc/camera/view/widget/ModeDial$onOutsideClickListener$1;
+    new-instance p1, Ljp/co/sony/mc/camera/view/widget/ModeDial$$ExternalSyntheticLambda2;
 
-    check-cast p1, Lkotlin/jvm/functions/Function0;
+    invoke-direct {p1}, Ljp/co/sony/mc/camera/view/widget/ModeDial$$ExternalSyntheticLambda2;-><init>()V
 
     iput-object p1, p0, Ljp/co/sony/mc/camera/view/widget/ModeDial;->onOutsideClickListener:Lkotlin/jvm/functions/Function0;
 
@@ -550,23 +581,23 @@
     iput-object p1, p0, Ljp/co/sony/mc/camera/view/widget/ModeDial;->dialItems:Ljava/util/List;
 
     .line 90
-    sget-object p1, Ljp/co/sony/mc/camera/view/widget/ModeDial$onItemChangedListener$1;->INSTANCE:Ljp/co/sony/mc/camera/view/widget/ModeDial$onItemChangedListener$1;
+    new-instance p1, Ljp/co/sony/mc/camera/view/widget/ModeDial$$ExternalSyntheticLambda0;
 
-    check-cast p1, Lkotlin/jvm/functions/Function3;
+    invoke-direct {p1}, Ljp/co/sony/mc/camera/view/widget/ModeDial$$ExternalSyntheticLambda0;-><init>()V
 
     iput-object p1, p0, Ljp/co/sony/mc/camera/view/widget/ModeDial;->onItemChangedListener:Lkotlin/jvm/functions/Function3;
 
     .line 92
-    sget-object p1, Ljp/co/sony/mc/camera/view/widget/ModeDial$onItemClickListener$1;->INSTANCE:Ljp/co/sony/mc/camera/view/widget/ModeDial$onItemClickListener$1;
+    new-instance p1, Ljp/co/sony/mc/camera/view/widget/ModeDial$$ExternalSyntheticLambda1;
 
-    check-cast p1, Lkotlin/jvm/functions/Function1;
+    invoke-direct {p1}, Ljp/co/sony/mc/camera/view/widget/ModeDial$$ExternalSyntheticLambda1;-><init>()V
 
     iput-object p1, p0, Ljp/co/sony/mc/camera/view/widget/ModeDial;->onItemClickListener:Lkotlin/jvm/functions/Function1;
 
     .line 94
-    sget-object p1, Ljp/co/sony/mc/camera/view/widget/ModeDial$onOutsideClickListener$1;->INSTANCE:Ljp/co/sony/mc/camera/view/widget/ModeDial$onOutsideClickListener$1;
+    new-instance p1, Ljp/co/sony/mc/camera/view/widget/ModeDial$$ExternalSyntheticLambda2;
 
-    check-cast p1, Lkotlin/jvm/functions/Function0;
+    invoke-direct {p1}, Ljp/co/sony/mc/camera/view/widget/ModeDial$$ExternalSyntheticLambda2;-><init>()V
 
     iput-object p1, p0, Ljp/co/sony/mc/camera/view/widget/ModeDial;->onOutsideClickListener:Lkotlin/jvm/functions/Function0;
 
@@ -576,7 +607,7 @@
     return-void
 .end method
 
-.method private static final _set_onOutsideClickListener_$lambda$1(Lkotlin/jvm/functions/Function0;Landroid/view/View;)V
+.method private static final _set_onOutsideClickListener_$lambda$4(Lkotlin/jvm/functions/Function0;Landroid/view/View;)V
     .locals 0
 
     const-string p1, "$value"
@@ -751,43 +782,47 @@
 .end method
 
 .method private final changeStateTo(Ljp/co/sony/mc/camera/view/widget/ModeDial$State;)V
-    .locals 3
+    .locals 4
 
     .line 623
     sget-boolean v0, Ljp/co/sony/mc/camera/util/CamLog;->VERBOSE:Z
 
     if-eqz v0, :cond_0
 
+    const/4 v0, 0x1
+
     .line 624
-    iget-object v0, p0, Ljp/co/sony/mc/camera/view/widget/ModeDial;->state:Ljp/co/sony/mc/camera/view/widget/ModeDial$State;
+    new-array v0, v0, [Ljava/lang/String;
 
-    new-instance v1, Ljava/lang/StringBuilder;
+    iget-object v1, p0, Ljp/co/sony/mc/camera/view/widget/ModeDial;->state:Ljp/co/sony/mc/camera/view/widget/ModeDial$State;
 
-    const-string v2, "State is changed; "
+    new-instance v2, Ljava/lang/StringBuilder;
 
-    invoke-direct {v1, v2}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+    const-string v3, "State is changed; "
 
-    invoke-virtual {v1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+    invoke-direct {v2, v3}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
-    move-result-object v0
+    invoke-virtual {v2, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
-    const-string v1, " -> "
+    move-result-object v1
 
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    const-string v2, " -> "
 
-    move-result-object v0
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+    move-result-object v1
 
-    move-result-object v0
+    invoke-virtual {v1, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    move-result-object v1
 
-    move-result-object v0
+    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    filled-new-array {v0}, [Ljava/lang/String;
+    move-result-object v1
 
-    move-result-object v0
+    const/4 v2, 0x0
+
+    aput-object v1, v0, v2
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/util/CamLog;->v([Ljava/lang/String;)V
 
@@ -806,7 +841,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f0c00ea
+    const v1, 0x7f0c00ec
 
     check-cast p0, Landroid/view/ViewGroup;
 
@@ -1001,7 +1036,11 @@
 
     .line 179
     :cond_2
-    invoke-interface {p1}, Ljava/util/List;->size()I
+    move-object v0, p1
+
+    check-cast v0, Ljava/util/Collection;
+
+    invoke-interface {v0}, Ljava/util/Collection;->size()I
 
     move-result v0
 
@@ -1040,7 +1079,7 @@
 
     move-result-object v7
 
-    const v8, 0x7f0c00eb
+    const v8, 0x7f0c00ed
 
     move-object v9, p0
 
@@ -1050,7 +1089,7 @@
 
     move-result-object v7
 
-    const v8, 0x7f090239
+    const v8, 0x7f090236
 
     .line 185
     invoke-virtual {v7, v8}, Landroid/view/View;->findViewById(I)Landroid/view/View;
@@ -1244,6 +1283,33 @@
 
     :cond_9
     return-void
+.end method
+
+.method private static final onItemChangedListener$lambda$1(IIZ)Lkotlin/Unit;
+    .locals 0
+
+    .line 90
+    sget-object p0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
+
+    return-object p0
+.end method
+
+.method private static final onItemClickListener$lambda$2(I)Lkotlin/Unit;
+    .locals 0
+
+    .line 92
+    sget-object p0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
+
+    return-object p0
+.end method
+
+.method private static final onOutsideClickListener$lambda$3()Lkotlin/Unit;
+    .locals 1
+
+    .line 94
+    sget-object v0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
+
+    return-object v0
 .end method
 
 .method private final setInternalRotation(F)V
@@ -1443,9 +1509,9 @@
     invoke-virtual {p2, v2, v3}, Landroid/animation/ValueAnimator;->setDuration(J)Landroid/animation/ValueAnimator;
 
     .line 304
-    new-instance v2, Ljp/co/sony/mc/camera/view/widget/ModeDial$$ExternalSyntheticLambda0;
+    new-instance v2, Ljp/co/sony/mc/camera/view/widget/ModeDial$$ExternalSyntheticLambda3;
 
-    invoke-direct {v2, p0, v0, v1}, Ljp/co/sony/mc/camera/view/widget/ModeDial$$ExternalSyntheticLambda0;-><init>(Ljp/co/sony/mc/camera/view/widget/ModeDial;FLkotlin/jvm/internal/Ref$FloatRef;)V
+    invoke-direct {v2, p0, v0, v1}, Ljp/co/sony/mc/camera/view/widget/ModeDial$$ExternalSyntheticLambda3;-><init>(Ljp/co/sony/mc/camera/view/widget/ModeDial;FLkotlin/jvm/internal/Ref$FloatRef;)V
 
     invoke-virtual {p2, v2}, Landroid/animation/ValueAnimator;->addUpdateListener(Landroid/animation/ValueAnimator$AnimatorUpdateListener;)V
 
@@ -1484,7 +1550,7 @@
     .end array-data
 .end method
 
-.method private static final startAnimationTo$lambda$10(Ljp/co/sony/mc/camera/view/widget/ModeDial;FLkotlin/jvm/internal/Ref$FloatRef;Landroid/animation/ValueAnimator;)V
+.method private static final startAnimationTo$lambda$13(Ljp/co/sony/mc/camera/view/widget/ModeDial;FLkotlin/jvm/internal/Ref$FloatRef;Landroid/animation/ValueAnimator;)V
     .locals 1
 
     const-string/jumbo v0, "this$0"
@@ -1993,7 +2059,7 @@
 
     move-result-object p0
 
-    const v0, 0x7f09015f
+    const v0, 0x7f09015e
 
     invoke-virtual {p0, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -2005,79 +2071,71 @@
 .end method
 
 .method protected onFinishInflate()V
-    .locals 5
+    .locals 4
 
     .line 118
     invoke-super {p0}, Landroid/widget/FrameLayout;->onFinishInflate()V
 
-    const v0, 0x7f090173
+    const v0, 0x7f09016d
 
     .line 119
     invoke-virtual {p0, v0}, Ljp/co/sony/mc/camera/view/widget/ModeDial;->findViewById(I)Landroid/view/View;
 
     move-result-object v0
 
-    const-string v1, "findViewById(...)"
-
-    invoke-static {v0, v1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
-
     check-cast v0, Landroid/widget/FrameLayout;
 
     iput-object v0, p0, Ljp/co/sony/mc/camera/view/widget/ModeDial;->container:Landroid/widget/FrameLayout;
 
-    const v0, 0x7f090110
+    const v0, 0x7f09010c
 
     .line 121
     invoke-virtual {p0, v0}, Ljp/co/sony/mc/camera/view/widget/ModeDial;->findViewById(I)Landroid/view/View;
 
     move-result-object v0
 
-    invoke-static {v0, v1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
-
     iput-object v0, p0, Ljp/co/sony/mc/camera/view/widget/ModeDial;->circle:Landroid/view/View;
 
     .line 122
-    const-string v2, "circle"
+    const-string v1, "circle"
 
-    const/4 v3, 0x0
+    const/4 v2, 0x0
 
     if-nez v0, :cond_0
 
-    invoke-static {v2}, Lkotlin/jvm/internal/Intrinsics;->throwUninitializedPropertyAccessException(Ljava/lang/String;)V
+    invoke-static {v1}, Lkotlin/jvm/internal/Intrinsics;->throwUninitializedPropertyAccessException(Ljava/lang/String;)V
 
-    move-object v0, v3
+    move-object v0, v2
 
     :cond_0
-    iget-object v4, p0, Ljp/co/sony/mc/camera/view/widget/ModeDial;->dialTouchEventHandler:Ljp/co/sony/mc/camera/view/widget/ModeDial$DialTouchEventHandler;
+    iget-object v3, p0, Ljp/co/sony/mc/camera/view/widget/ModeDial;->dialTouchEventHandler:Ljp/co/sony/mc/camera/view/widget/ModeDial$DialTouchEventHandler;
 
-    check-cast v4, Landroid/view/View$OnTouchListener;
+    check-cast v3, Landroid/view/View$OnTouchListener;
 
-    invoke-virtual {v0, v4}, Landroid/view/View;->setOnTouchListener(Landroid/view/View$OnTouchListener;)V
+    invoke-virtual {v0, v3}, Landroid/view/View;->setOnTouchListener(Landroid/view/View$OnTouchListener;)V
 
     .line 123
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/widget/ModeDial;->circle:Landroid/view/View;
 
     if-nez v0, :cond_1
 
-    invoke-static {v2}, Lkotlin/jvm/internal/Intrinsics;->throwUninitializedPropertyAccessException(Ljava/lang/String;)V
+    invoke-static {v1}, Lkotlin/jvm/internal/Intrinsics;->throwUninitializedPropertyAccessException(Ljava/lang/String;)V
 
-    move-object v0, v3
+    move-object v0, v2
 
     :cond_1
-    iget-object v2, p0, Ljp/co/sony/mc/camera/view/widget/ModeDial;->circleSizeChangedListener:Ljp/co/sony/mc/camera/view/widget/ModeDial$CircleSizeChangedListener;
+    iget-object v1, p0, Ljp/co/sony/mc/camera/view/widget/ModeDial;->circleSizeChangedListener:Ljp/co/sony/mc/camera/view/widget/ModeDial$CircleSizeChangedListener;
 
-    check-cast v2, Landroid/view/View$OnLayoutChangeListener;
+    check-cast v1, Landroid/view/View$OnLayoutChangeListener;
 
-    invoke-virtual {v0, v2}, Landroid/view/View;->addOnLayoutChangeListener(Landroid/view/View$OnLayoutChangeListener;)V
+    invoke-virtual {v0, v1}, Landroid/view/View;->addOnLayoutChangeListener(Landroid/view/View$OnLayoutChangeListener;)V
 
-    const v0, 0x7f090185
+    const v0, 0x7f090181
 
     .line 125
     invoke-virtual {p0, v0}, Ljp/co/sony/mc/camera/view/widget/ModeDial;->findViewById(I)Landroid/view/View;
 
     move-result-object v0
-
-    invoke-static {v0, v1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
 
     iput-object v0, p0, Ljp/co/sony/mc/camera/view/widget/ModeDial;->divider:Landroid/view/View;
 
@@ -2091,14 +2149,14 @@
     goto :goto_0
 
     :cond_2
-    move-object v3, v0
+    move-object v2, v0
 
     :goto_0
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/widget/ModeDial;->itemSizeChangedListener:Ljp/co/sony/mc/camera/view/widget/ModeDial$ItemSizeChangedListener;
 
     check-cast v0, Landroid/view/View$OnLayoutChangeListener;
 
-    invoke-virtual {v3, v0}, Landroid/view/View;->addOnLayoutChangeListener(Landroid/view/View$OnLayoutChangeListener;)V
+    invoke-virtual {v2, v0}, Landroid/view/View;->addOnLayoutChangeListener(Landroid/view/View$OnLayoutChangeListener;)V
 
     .line 128
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/widget/ModeDial;->dialItems:Ljava/util/List;
@@ -2210,7 +2268,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f090239
+    const v1, 0x7f090236
 
     invoke-virtual {v0, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -2293,9 +2351,9 @@
     iput-object p1, p0, Ljp/co/sony/mc/camera/view/widget/ModeDial;->onOutsideClickListener:Lkotlin/jvm/functions/Function0;
 
     .line 97
-    new-instance v0, Ljp/co/sony/mc/camera/view/widget/ModeDial$$ExternalSyntheticLambda1;
+    new-instance v0, Ljp/co/sony/mc/camera/view/widget/ModeDial$$ExternalSyntheticLambda4;
 
-    invoke-direct {v0, p1}, Ljp/co/sony/mc/camera/view/widget/ModeDial$$ExternalSyntheticLambda1;-><init>(Lkotlin/jvm/functions/Function0;)V
+    invoke-direct {v0, p1}, Ljp/co/sony/mc/camera/view/widget/ModeDial$$ExternalSyntheticLambda4;-><init>(Lkotlin/jvm/functions/Function0;)V
 
     invoke-virtual {p0, v0}, Ljp/co/sony/mc/camera/view/widget/ModeDial;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
@@ -2310,7 +2368,9 @@
     .line 134
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/widget/ModeDial;->dialItems:Ljava/util/List;
 
-    invoke-interface {v0}, Ljava/util/List;->size()I
+    check-cast v0, Ljava/util/Collection;
+
+    invoke-interface {v0}, Ljava/util/Collection;->size()I
 
     move-result v0
 

@@ -85,10 +85,10 @@
         }
     .end annotation
 
-    .line 171
+    .line 303
     iget-object v0, p0, Landroidx/compose/material/AnchoredDraggableState$targetValue$2;->this$0:Landroidx/compose/material/AnchoredDraggableState;
 
-    invoke-static {v0}, Landroidx/compose/material/AnchoredDraggableState;->access$getAnimationTarget(Landroidx/compose/material/AnchoredDraggableState;)Ljava/lang/Object;
+    invoke-static {v0}, Landroidx/compose/material/AnchoredDraggableState;->access$getDragTarget(Landroidx/compose/material/AnchoredDraggableState;)Ljava/lang/Object;
 
     move-result-object v0
 
@@ -96,19 +96,19 @@
 
     iget-object p0, p0, Landroidx/compose/material/AnchoredDraggableState$targetValue$2;->this$0:Landroidx/compose/material/AnchoredDraggableState;
 
-    .line 172
+    .line 304
     invoke-virtual {p0}, Landroidx/compose/material/AnchoredDraggableState;->getOffset()F
 
     move-result v0
 
-    .line 173
+    .line 305
     invoke-static {v0}, Ljava/lang/Float;->isNaN(F)Z
 
     move-result v1
 
     if-nez v1, :cond_0
 
-    .line 174
+    .line 306
     invoke-virtual {p0}, Landroidx/compose/material/AnchoredDraggableState;->getCurrentValue()Ljava/lang/Object;
 
     move-result-object v1
@@ -121,7 +121,7 @@
 
     goto :goto_0
 
-    .line 175
+    .line 307
     :cond_0
     invoke-virtual {p0}, Landroidx/compose/material/AnchoredDraggableState;->getCurrentValue()Ljava/lang/Object;
 

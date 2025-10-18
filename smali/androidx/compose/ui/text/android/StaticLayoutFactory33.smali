@@ -55,22 +55,18 @@
 .method private constructor <init>()V
     .locals 0
 
-    .line 242
+    .line 235
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
 .end method
 
 .method public static final isFallbackLineSpacingEnabled(Landroid/text/StaticLayout;)Z
-    .locals 1
+    .locals 0
     .annotation runtime Lkotlin/jvm/JvmStatic;
     .end annotation
 
-    const-string v0, "layout"
-
-    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 247
+    .line 240
     invoke-virtual {p0}, Landroid/text/StaticLayout;->isFallbackLineSpacingEnabled()Z
 
     move-result p0
@@ -83,35 +79,27 @@
     .annotation runtime Lkotlin/jvm/JvmStatic;
     .end annotation
 
-    const-string v0, "builder"
-
-    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 254
+    .line 247
     new-instance v0, Landroid/graphics/text/LineBreakConfig$Builder;
 
     invoke-direct {v0}, Landroid/graphics/text/LineBreakConfig$Builder;-><init>()V
 
-    .line 255
+    .line 248
     invoke-virtual {v0, p1}, Landroid/graphics/text/LineBreakConfig$Builder;->setLineBreakStyle(I)Landroid/graphics/text/LineBreakConfig$Builder;
 
     move-result-object p1
 
-    .line 256
+    .line 249
     invoke-virtual {p1, p2}, Landroid/graphics/text/LineBreakConfig$Builder;->setLineBreakWordStyle(I)Landroid/graphics/text/LineBreakConfig$Builder;
 
     move-result-object p1
 
-    .line 257
+    .line 250
     invoke-virtual {p1}, Landroid/graphics/text/LineBreakConfig$Builder;->build()Landroid/graphics/text/LineBreakConfig;
 
     move-result-object p1
 
-    const-string p2, "Builder()\n              \u2026\n                .build()"
-
-    invoke-static {p1, p2}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 258
+    .line 251
     invoke-virtual {p0, p1}, Landroid/text/StaticLayout$Builder;->setLineBreakConfig(Landroid/graphics/text/LineBreakConfig;)Landroid/text/StaticLayout$Builder;
 
     return-void

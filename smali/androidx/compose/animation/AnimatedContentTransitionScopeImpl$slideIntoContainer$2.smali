@@ -102,7 +102,7 @@
 .method public final invoke(I)Ljava/lang/Integer;
     .locals 6
 
-    .line 451
+    .line 449
     iget-object v0, p0, Landroidx/compose/animation/AnimatedContentTransitionScopeImpl$slideIntoContainer$2;->$initialOffset:Lkotlin/jvm/functions/Function1;
 
     iget-object v1, p0, Landroidx/compose/animation/AnimatedContentTransitionScopeImpl$slideIntoContainer$2;->this$0:Landroidx/compose/animation/AnimatedContentTransitionScopeImpl;
@@ -145,7 +145,7 @@
 .method public bridge synthetic invoke(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
 
-    .line 450
+    .line 448
     check-cast p1, Ljava/lang/Number;
 
     invoke-virtual {p1}, Ljava/lang/Number;->intValue()I

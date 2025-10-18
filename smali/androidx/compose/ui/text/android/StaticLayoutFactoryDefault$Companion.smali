@@ -43,7 +43,7 @@
 .method private constructor <init>()V
     .locals 0
 
-    .line 264
+    .line 257
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -60,7 +60,7 @@
 .method public static final synthetic access$getStaticLayoutConstructor(Landroidx/compose/ui/text/android/StaticLayoutFactoryDefault$Companion;)Ljava/lang/reflect/Constructor;
     .locals 0
 
-    .line 264
+    .line 257
     invoke-direct {p0}, Landroidx/compose/ui/text/android/StaticLayoutFactoryDefault$Companion;->getStaticLayoutConstructor()Ljava/lang/reflect/Constructor;
 
     move-result-object p0
@@ -79,7 +79,7 @@
         }
     .end annotation
 
-    .line 269
+    .line 262
     invoke-static {}, Landroidx/compose/ui/text/android/StaticLayoutFactoryDefault;->access$isInitialized$cp()Z
 
     move-result p0
@@ -95,16 +95,16 @@
     :cond_0
     const/4 p0, 0x1
 
-    .line 270
+    .line 263
     invoke-static {p0}, Landroidx/compose/ui/text/android/StaticLayoutFactoryDefault;->access$setInitialized$cp(Z)V
 
-    .line 272
+    .line 265
     :try_start_0
     const-class v0, Landroid/text/StaticLayout;
 
     const/16 v1, 0xd
 
-    .line 274
+    .line 267
     new-array v1, v1, [Ljava/lang/Class;
 
     const-class v2, Ljava/lang/CharSequence;
@@ -183,12 +183,12 @@
 
     aput-object p0, v1, v2
 
-    .line 273
+    .line 266
     invoke-virtual {v0, v1}, Ljava/lang/Class;->getConstructor([Ljava/lang/Class;)Ljava/lang/reflect/Constructor;
 
     move-result-object p0
 
-    .line 272
+    .line 265
     invoke-static {p0}, Landroidx/compose/ui/text/android/StaticLayoutFactoryDefault;->access$setStaticLayoutConstructor$cp(Ljava/lang/reflect/Constructor;)V
     :try_end_0
     .catch Ljava/lang/NoSuchMethodException; {:try_start_0 .. :try_end_0} :catch_0
@@ -198,17 +198,17 @@
     :catch_0
     const/4 p0, 0x0
 
-    .line 289
+    .line 282
     invoke-static {p0}, Landroidx/compose/ui/text/android/StaticLayoutFactoryDefault;->access$setStaticLayoutConstructor$cp(Ljava/lang/reflect/Constructor;)V
 
-    .line 290
+    .line 283
     const-string p0, "StaticLayoutFactory"
 
     const-string/jumbo v0, "unable to collect necessary constructor."
 
     invoke-static {p0, v0}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 293
+    .line 286
     :goto_0
     invoke-static {}, Landroidx/compose/ui/text/android/StaticLayoutFactoryDefault;->access$getStaticLayoutConstructor$cp()Ljava/lang/reflect/Constructor;
 

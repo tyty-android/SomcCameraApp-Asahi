@@ -35,8 +35,8 @@
         0x1
     }
     l = {
-        0x64,
-        0x92
+        0x65,
+        0x93
     }
     m = "animateToZero"
     n = {

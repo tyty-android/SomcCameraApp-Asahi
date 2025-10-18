@@ -47,6 +47,10 @@
 .end annotation
 
 
+# static fields
+.field public static final $stable:I
+
+
 # instance fields
 .field private final beyondBoundsItemCount:I
 
@@ -54,20 +58,22 @@
 
 
 # direct methods
+.method static constructor <clinit>()V
+    .locals 0
+
+    return-void
+.end method
+
 .method public constructor <init>(Landroidx/compose/foundation/lazy/LazyListState;I)V
-    .locals 1
+    .locals 0
 
-    const-string/jumbo v0, "state"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 61
+    .line 33
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 62
+    .line 34
     iput-object p1, p0, Landroidx/compose/foundation/lazy/LazyListBeyondBoundsState;->state:Landroidx/compose/foundation/lazy/LazyListState;
 
-    .line 63
+    .line 35
     iput p2, p0, Landroidx/compose/foundation/lazy/LazyListBeyondBoundsState;->beyondBoundsItemCount:I
 
     return-void
@@ -78,7 +84,7 @@
 .method public final getBeyondBoundsItemCount()I
     .locals 0
 
-    .line 63
+    .line 35
     iget p0, p0, Landroidx/compose/foundation/lazy/LazyListBeyondBoundsState;->beyondBoundsItemCount:I
 
     return p0
@@ -87,7 +93,7 @@
 .method public getFirstPlacedIndex()I
     .locals 1
 
-    .line 75
+    .line 47
     iget-object v0, p0, Landroidx/compose/foundation/lazy/LazyListBeyondBoundsState;->state:Landroidx/compose/foundation/lazy/LazyListState;
 
     invoke-virtual {v0}, Landroidx/compose/foundation/lazy/LazyListState;->getFirstVisibleItemIndex()I
@@ -110,7 +116,7 @@
 .method public getHasVisibleItems()Z
     .locals 0
 
-    .line 73
+    .line 45
     iget-object p0, p0, Landroidx/compose/foundation/lazy/LazyListBeyondBoundsState;->state:Landroidx/compose/foundation/lazy/LazyListState;
 
     invoke-virtual {p0}, Landroidx/compose/foundation/lazy/LazyListState;->getLayoutInfo()Landroidx/compose/foundation/lazy/LazyListLayoutInfo;
@@ -135,7 +141,7 @@
 .method public getItemCount()I
     .locals 0
 
-    .line 71
+    .line 43
     iget-object p0, p0, Landroidx/compose/foundation/lazy/LazyListBeyondBoundsState;->state:Landroidx/compose/foundation/lazy/LazyListState;
 
     invoke-virtual {p0}, Landroidx/compose/foundation/lazy/LazyListState;->getLayoutInfo()Landroidx/compose/foundation/lazy/LazyListLayoutInfo;
@@ -152,14 +158,14 @@
 .method public getLastPlacedIndex()I
     .locals 2
 
-    .line 78
+    .line 50
     invoke-virtual {p0}, Landroidx/compose/foundation/lazy/LazyListBeyondBoundsState;->getItemCount()I
 
     move-result v0
 
     add-int/lit8 v0, v0, -0x1
 
-    .line 79
+    .line 51
     iget-object v1, p0, Landroidx/compose/foundation/lazy/LazyListBeyondBoundsState;->state:Landroidx/compose/foundation/lazy/LazyListState;
 
     invoke-virtual {v1}, Landroidx/compose/foundation/lazy/LazyListState;->getLayoutInfo()Landroidx/compose/foundation/lazy/LazyListLayoutInfo;
@@ -194,7 +200,7 @@
 .method public final getState()Landroidx/compose/foundation/lazy/LazyListState;
     .locals 0
 
-    .line 62
+    .line 34
     iget-object p0, p0, Landroidx/compose/foundation/lazy/LazyListBeyondBoundsState;->state:Landroidx/compose/foundation/lazy/LazyListState;
 
     return-object p0
@@ -203,7 +209,7 @@
 .method public remeasure()V
     .locals 0
 
-    .line 67
+    .line 39
     iget-object p0, p0, Landroidx/compose/foundation/lazy/LazyListBeyondBoundsState;->state:Landroidx/compose/foundation/lazy/LazyListState;
 
     invoke-virtual {p0}, Landroidx/compose/foundation/lazy/LazyListState;->getRemeasurement$foundation_release()Landroidx/compose/ui/layout/Remeasurement;

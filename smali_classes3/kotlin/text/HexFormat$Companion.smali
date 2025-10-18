@@ -43,7 +43,7 @@
 .method private constructor <init>()V
     .locals 0
 
-    .line 361
+    .line 385
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -62,7 +62,7 @@
 .method public final getDefault()Lkotlin/text/HexFormat;
     .locals 0
 
-    .line 379
+    .line 403
     invoke-static {}, Lkotlin/text/HexFormat;->access$getDefault$cp()Lkotlin/text/HexFormat;
 
     move-result-object p0
@@ -73,7 +73,7 @@
 .method public final getUpperCase()Lkotlin/text/HexFormat;
     .locals 0
 
-    .line 391
+    .line 415
     invoke-static {}, Lkotlin/text/HexFormat;->access$getUpperCase$cp()Lkotlin/text/HexFormat;
 
     move-result-object p0

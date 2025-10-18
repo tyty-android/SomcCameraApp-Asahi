@@ -114,10 +114,6 @@
 .method public final invoke(Lkotlin/Unit;Landroidx/compose/runtime/Composer;I)V
     .locals 2
 
-    const-string v0, "it"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
     const-string p1, "C37@1498L9:MovableContent.kt#9igjgp"
 
     invoke-static {p2, p1}, Landroidx/compose/runtime/ComposerKt;->sourceInformation(Landroidx/compose/runtime/Composer;Ljava/lang/String;)V

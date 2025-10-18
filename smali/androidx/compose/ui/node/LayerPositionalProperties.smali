@@ -6,7 +6,7 @@
 # annotations
 .annotation runtime Lkotlin/Metadata;
     d1 = {
-        "\u00000\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\u0008\u0002\n\u0002\u0010\u0007\n\u0002\u0008\u0006\n\u0002\u0018\u0002\n\u0002\u0008\u0004\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0010\u000b\n\u0000\u0008\u0002\u0018\u00002\u00020\u0001B\u0005\u00a2\u0006\u0002\u0010\u0002J\u000e\u0010\u000f\u001a\u00020\u00102\u0006\u0010\u0011\u001a\u00020\u0012J\u000e\u0010\u000f\u001a\u00020\u00102\u0006\u0010\u0013\u001a\u00020\u0000J\u000e\u0010\u0014\u001a\u00020\u00152\u0006\u0010\u0013\u001a\u00020\u0000R\u000e\u0010\u0003\u001a\u00020\u0004X\u0082\u000e\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u0005\u001a\u00020\u0004X\u0082\u000e\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u0006\u001a\u00020\u0004X\u0082\u000e\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u0007\u001a\u00020\u0004X\u0082\u000e\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u0008\u001a\u00020\u0004X\u0082\u000e\u00a2\u0006\u0002\n\u0000R\u000e\u0010\t\u001a\u00020\u0004X\u0082\u000e\u00a2\u0006\u0002\n\u0000R\u0019\u0010\n\u001a\u00020\u000bX\u0082\u000e\u00f8\u0001\u0000\u00f8\u0001\u0001\u00f8\u0001\u0002\u00a2\u0006\u0004\n\u0002\u0010\u000cR\u000e\u0010\r\u001a\u00020\u0004X\u0082\u000e\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u000e\u001a\u00020\u0004X\u0082\u000e\u00a2\u0006\u0002\n\u0000\u0082\u0002\u000f\n\u0002\u0008\u0019\n\u0005\u0008\u00a1\u001e0\u0001\n\u0002\u0008!\u00a8\u0006\u0016"
+        "\u00000\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\u0008\u0002\n\u0002\u0010\u0007\n\u0002\u0008\u0006\n\u0002\u0018\u0002\n\u0002\u0008\u0004\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0010\u000b\n\u0000\u0008\u0002\u0018\u00002\u00020\u0001B\u0005\u00a2\u0006\u0002\u0010\u0002J\u000e\u0010\u000f\u001a\u00020\u00102\u0006\u0010\u0011\u001a\u00020\u0012J\u000e\u0010\u000f\u001a\u00020\u00102\u0006\u0010\u0013\u001a\u00020\u0000J\u000e\u0010\u0014\u001a\u00020\u00152\u0006\u0010\u0013\u001a\u00020\u0000R\u000e\u0010\u0003\u001a\u00020\u0004X\u0082\u000e\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u0005\u001a\u00020\u0004X\u0082\u000e\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u0006\u001a\u00020\u0004X\u0082\u000e\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u0007\u001a\u00020\u0004X\u0082\u000e\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u0008\u001a\u00020\u0004X\u0082\u000e\u00a2\u0006\u0002\n\u0000R\u000e\u0010\t\u001a\u00020\u0004X\u0082\u000e\u00a2\u0006\u0002\n\u0000R\u0016\u0010\n\u001a\u00020\u000bX\u0082\u000e\u00f8\u0001\u0000\u00f8\u0001\u0001\u00a2\u0006\u0004\n\u0002\u0010\u000cR\u000e\u0010\r\u001a\u00020\u0004X\u0082\u000e\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u000e\u001a\u00020\u0004X\u0082\u000e\u00a2\u0006\u0002\n\u0000\u0082\u0002\u000b\n\u0005\u0008\u00a1\u001e0\u0001\n\u0002\u0008!\u00a8\u0006\u0016"
     }
     d2 = {
         "Landroidx/compose/ui/node/LayerPositionalProperties;",
@@ -67,23 +67,23 @@
 .method public constructor <init>()V
     .locals 2
 
-    .line 1286
+    .line 1264
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     const/high16 v0, 0x3f800000    # 1.0f
 
-    .line 1287
+    .line 1265
     iput v0, p0, Landroidx/compose/ui/node/LayerPositionalProperties;->scaleX:F
 
-    .line 1288
+    .line 1266
     iput v0, p0, Landroidx/compose/ui/node/LayerPositionalProperties;->scaleY:F
 
     const/high16 v0, 0x41000000    # 8.0f
 
-    .line 1294
+    .line 1272
     iput v0, p0, Landroidx/compose/ui/node/LayerPositionalProperties;->cameraDistance:F
 
-    .line 1295
+    .line 1273
     sget-object v0, Landroidx/compose/ui/graphics/TransformOrigin;->Companion:Landroidx/compose/ui/graphics/TransformOrigin$Companion;
 
     invoke-virtual {v0}, Landroidx/compose/ui/graphics/TransformOrigin$Companion;->getCenter-SzJe1aQ()J
@@ -100,67 +100,63 @@
 .method public final copyFrom(Landroidx/compose/ui/graphics/GraphicsLayerScope;)V
     .locals 2
 
-    const-string v0, "scope"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 1310
+    .line 1288
     invoke-interface {p1}, Landroidx/compose/ui/graphics/GraphicsLayerScope;->getScaleX()F
 
     move-result v0
 
     iput v0, p0, Landroidx/compose/ui/node/LayerPositionalProperties;->scaleX:F
 
-    .line 1311
+    .line 1289
     invoke-interface {p1}, Landroidx/compose/ui/graphics/GraphicsLayerScope;->getScaleY()F
 
     move-result v0
 
     iput v0, p0, Landroidx/compose/ui/node/LayerPositionalProperties;->scaleY:F
 
-    .line 1312
+    .line 1290
     invoke-interface {p1}, Landroidx/compose/ui/graphics/GraphicsLayerScope;->getTranslationX()F
 
     move-result v0
 
     iput v0, p0, Landroidx/compose/ui/node/LayerPositionalProperties;->translationX:F
 
-    .line 1313
+    .line 1291
     invoke-interface {p1}, Landroidx/compose/ui/graphics/GraphicsLayerScope;->getTranslationY()F
 
     move-result v0
 
     iput v0, p0, Landroidx/compose/ui/node/LayerPositionalProperties;->translationY:F
 
-    .line 1314
+    .line 1292
     invoke-interface {p1}, Landroidx/compose/ui/graphics/GraphicsLayerScope;->getRotationX()F
 
     move-result v0
 
     iput v0, p0, Landroidx/compose/ui/node/LayerPositionalProperties;->rotationX:F
 
-    .line 1315
+    .line 1293
     invoke-interface {p1}, Landroidx/compose/ui/graphics/GraphicsLayerScope;->getRotationY()F
 
     move-result v0
 
     iput v0, p0, Landroidx/compose/ui/node/LayerPositionalProperties;->rotationY:F
 
-    .line 1316
+    .line 1294
     invoke-interface {p1}, Landroidx/compose/ui/graphics/GraphicsLayerScope;->getRotationZ()F
 
     move-result v0
 
     iput v0, p0, Landroidx/compose/ui/node/LayerPositionalProperties;->rotationZ:F
 
-    .line 1317
+    .line 1295
     invoke-interface {p1}, Landroidx/compose/ui/graphics/GraphicsLayerScope;->getCameraDistance()F
 
     move-result v0
 
     iput v0, p0, Landroidx/compose/ui/node/LayerPositionalProperties;->cameraDistance:F
 
-    .line 1318
+    .line 1296
     invoke-interface {p1}, Landroidx/compose/ui/graphics/GraphicsLayerScope;->getTransformOrigin-SzJe1aQ()J
 
     move-result-wide v0
@@ -173,51 +169,47 @@
 .method public final copyFrom(Landroidx/compose/ui/node/LayerPositionalProperties;)V
     .locals 2
 
-    const-string v0, "other"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 1298
+    .line 1276
     iget v0, p1, Landroidx/compose/ui/node/LayerPositionalProperties;->scaleX:F
 
     iput v0, p0, Landroidx/compose/ui/node/LayerPositionalProperties;->scaleX:F
 
-    .line 1299
+    .line 1277
     iget v0, p1, Landroidx/compose/ui/node/LayerPositionalProperties;->scaleY:F
 
     iput v0, p0, Landroidx/compose/ui/node/LayerPositionalProperties;->scaleY:F
 
-    .line 1300
+    .line 1278
     iget v0, p1, Landroidx/compose/ui/node/LayerPositionalProperties;->translationX:F
 
     iput v0, p0, Landroidx/compose/ui/node/LayerPositionalProperties;->translationX:F
 
-    .line 1301
+    .line 1279
     iget v0, p1, Landroidx/compose/ui/node/LayerPositionalProperties;->translationY:F
 
     iput v0, p0, Landroidx/compose/ui/node/LayerPositionalProperties;->translationY:F
 
-    .line 1302
+    .line 1280
     iget v0, p1, Landroidx/compose/ui/node/LayerPositionalProperties;->rotationX:F
 
     iput v0, p0, Landroidx/compose/ui/node/LayerPositionalProperties;->rotationX:F
 
-    .line 1303
+    .line 1281
     iget v0, p1, Landroidx/compose/ui/node/LayerPositionalProperties;->rotationY:F
 
     iput v0, p0, Landroidx/compose/ui/node/LayerPositionalProperties;->rotationY:F
 
-    .line 1304
+    .line 1282
     iget v0, p1, Landroidx/compose/ui/node/LayerPositionalProperties;->rotationZ:F
 
     iput v0, p0, Landroidx/compose/ui/node/LayerPositionalProperties;->rotationZ:F
 
-    .line 1305
+    .line 1283
     iget v0, p1, Landroidx/compose/ui/node/LayerPositionalProperties;->cameraDistance:F
 
     iput v0, p0, Landroidx/compose/ui/node/LayerPositionalProperties;->cameraDistance:F
 
-    .line 1306
+    .line 1284
     iget-wide v0, p1, Landroidx/compose/ui/node/LayerPositionalProperties;->transformOrigin:J
 
     iput-wide v0, p0, Landroidx/compose/ui/node/LayerPositionalProperties;->transformOrigin:J
@@ -228,11 +220,7 @@
 .method public final hasSameValuesAs(Landroidx/compose/ui/node/LayerPositionalProperties;)Z
     .locals 2
 
-    const-string v0, "other"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 1322
+    .line 1300
     iget v0, p0, Landroidx/compose/ui/node/LayerPositionalProperties;->scaleX:F
 
     iget v1, p1, Landroidx/compose/ui/node/LayerPositionalProperties;->scaleX:F
@@ -241,7 +229,7 @@
 
     if-nez v0, :cond_0
 
-    .line 1323
+    .line 1301
     iget v0, p0, Landroidx/compose/ui/node/LayerPositionalProperties;->scaleY:F
 
     iget v1, p1, Landroidx/compose/ui/node/LayerPositionalProperties;->scaleY:F
@@ -250,7 +238,7 @@
 
     if-nez v0, :cond_0
 
-    .line 1324
+    .line 1302
     iget v0, p0, Landroidx/compose/ui/node/LayerPositionalProperties;->translationX:F
 
     iget v1, p1, Landroidx/compose/ui/node/LayerPositionalProperties;->translationX:F
@@ -259,7 +247,7 @@
 
     if-nez v0, :cond_0
 
-    .line 1325
+    .line 1303
     iget v0, p0, Landroidx/compose/ui/node/LayerPositionalProperties;->translationY:F
 
     iget v1, p1, Landroidx/compose/ui/node/LayerPositionalProperties;->translationY:F
@@ -268,7 +256,7 @@
 
     if-nez v0, :cond_0
 
-    .line 1326
+    .line 1304
     iget v0, p0, Landroidx/compose/ui/node/LayerPositionalProperties;->rotationX:F
 
     iget v1, p1, Landroidx/compose/ui/node/LayerPositionalProperties;->rotationX:F
@@ -277,7 +265,7 @@
 
     if-nez v0, :cond_0
 
-    .line 1327
+    .line 1305
     iget v0, p0, Landroidx/compose/ui/node/LayerPositionalProperties;->rotationY:F
 
     iget v1, p1, Landroidx/compose/ui/node/LayerPositionalProperties;->rotationY:F
@@ -286,7 +274,7 @@
 
     if-nez v0, :cond_0
 
-    .line 1328
+    .line 1306
     iget v0, p0, Landroidx/compose/ui/node/LayerPositionalProperties;->rotationZ:F
 
     iget v1, p1, Landroidx/compose/ui/node/LayerPositionalProperties;->rotationZ:F
@@ -295,7 +283,7 @@
 
     if-nez v0, :cond_0
 
-    .line 1329
+    .line 1307
     iget v0, p0, Landroidx/compose/ui/node/LayerPositionalProperties;->cameraDistance:F
 
     iget v1, p1, Landroidx/compose/ui/node/LayerPositionalProperties;->cameraDistance:F
@@ -304,7 +292,7 @@
 
     if-nez v0, :cond_0
 
-    .line 1330
+    .line 1308
     iget-wide v0, p0, Landroidx/compose/ui/node/LayerPositionalProperties;->transformOrigin:J
 
     iget-wide p0, p1, Landroidx/compose/ui/node/LayerPositionalProperties;->transformOrigin:J

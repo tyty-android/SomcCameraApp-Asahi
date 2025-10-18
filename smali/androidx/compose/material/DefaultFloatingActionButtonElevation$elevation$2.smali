@@ -53,7 +53,7 @@
     f = "FloatingActionButton.kt"
     i = {}
     l = {
-        0x141
+        0x123
     }
     m = "invokeSuspend"
     n = {}
@@ -62,39 +62,23 @@
 
 
 # instance fields
-.field final synthetic $animatable:Landroidx/compose/animation/core/Animatable;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Landroidx/compose/animation/core/Animatable<",
-            "Landroidx/compose/ui/unit/Dp;",
-            "Landroidx/compose/animation/core/AnimationVector1D;",
-            ">;"
-        }
-    .end annotation
-.end field
+.field final synthetic $animatable:Landroidx/compose/material/FloatingActionButtonElevationAnimatable;
 
-.field final synthetic $interaction:Landroidx/compose/foundation/interaction/Interaction;
+.field final synthetic $interactionSource:Landroidx/compose/foundation/interaction/InteractionSource;
 
-.field final synthetic $target:F
+.field private synthetic L$0:Ljava/lang/Object;
 
 .field label:I
 
-.field final synthetic this$0:Landroidx/compose/material/DefaultFloatingActionButtonElevation;
-
 
 # direct methods
-.method constructor <init>(Landroidx/compose/animation/core/Animatable;Landroidx/compose/material/DefaultFloatingActionButtonElevation;FLandroidx/compose/foundation/interaction/Interaction;Lkotlin/coroutines/Continuation;)V
+.method constructor <init>(Landroidx/compose/foundation/interaction/InteractionSource;Landroidx/compose/material/FloatingActionButtonElevationAnimatable;Lkotlin/coroutines/Continuation;)V
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Landroidx/compose/animation/core/Animatable<",
-            "Landroidx/compose/ui/unit/Dp;",
-            "Landroidx/compose/animation/core/AnimationVector1D;",
-            ">;",
-            "Landroidx/compose/material/DefaultFloatingActionButtonElevation;",
-            "F",
-            "Landroidx/compose/foundation/interaction/Interaction;",
+            "Landroidx/compose/foundation/interaction/InteractionSource;",
+            "Landroidx/compose/material/FloatingActionButtonElevationAnimatable;",
             "Lkotlin/coroutines/Continuation<",
             "-",
             "Landroidx/compose/material/DefaultFloatingActionButtonElevation$elevation$2;",
@@ -102,17 +86,13 @@
         }
     .end annotation
 
-    iput-object p1, p0, Landroidx/compose/material/DefaultFloatingActionButtonElevation$elevation$2;->$animatable:Landroidx/compose/animation/core/Animatable;
+    iput-object p1, p0, Landroidx/compose/material/DefaultFloatingActionButtonElevation$elevation$2;->$interactionSource:Landroidx/compose/foundation/interaction/InteractionSource;
 
-    iput-object p2, p0, Landroidx/compose/material/DefaultFloatingActionButtonElevation$elevation$2;->this$0:Landroidx/compose/material/DefaultFloatingActionButtonElevation;
-
-    iput p3, p0, Landroidx/compose/material/DefaultFloatingActionButtonElevation$elevation$2;->$target:F
-
-    iput-object p4, p0, Landroidx/compose/material/DefaultFloatingActionButtonElevation$elevation$2;->$interaction:Landroidx/compose/foundation/interaction/Interaction;
+    iput-object p2, p0, Landroidx/compose/material/DefaultFloatingActionButtonElevation$elevation$2;->$animatable:Landroidx/compose/material/FloatingActionButtonElevationAnimatable;
 
     const/4 p1, 0x2
 
-    invoke-direct {p0, p1, p5}, Lkotlin/coroutines/jvm/internal/SuspendLambda;-><init>(ILkotlin/coroutines/Continuation;)V
+    invoke-direct {p0, p1, p3}, Lkotlin/coroutines/jvm/internal/SuspendLambda;-><init>(ILkotlin/coroutines/Continuation;)V
 
     return-void
 .end method
@@ -120,7 +100,7 @@
 
 # virtual methods
 .method public final create(Ljava/lang/Object;Lkotlin/coroutines/Continuation;)Lkotlin/coroutines/Continuation;
-    .locals 6
+    .locals 2
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -133,25 +113,19 @@
         }
     .end annotation
 
-    new-instance p1, Landroidx/compose/material/DefaultFloatingActionButtonElevation$elevation$2;
+    new-instance v0, Landroidx/compose/material/DefaultFloatingActionButtonElevation$elevation$2;
 
-    iget-object v1, p0, Landroidx/compose/material/DefaultFloatingActionButtonElevation$elevation$2;->$animatable:Landroidx/compose/animation/core/Animatable;
+    iget-object v1, p0, Landroidx/compose/material/DefaultFloatingActionButtonElevation$elevation$2;->$interactionSource:Landroidx/compose/foundation/interaction/InteractionSource;
 
-    iget-object v2, p0, Landroidx/compose/material/DefaultFloatingActionButtonElevation$elevation$2;->this$0:Landroidx/compose/material/DefaultFloatingActionButtonElevation;
+    iget-object p0, p0, Landroidx/compose/material/DefaultFloatingActionButtonElevation$elevation$2;->$animatable:Landroidx/compose/material/FloatingActionButtonElevationAnimatable;
 
-    iget v3, p0, Landroidx/compose/material/DefaultFloatingActionButtonElevation$elevation$2;->$target:F
+    invoke-direct {v0, v1, p0, p2}, Landroidx/compose/material/DefaultFloatingActionButtonElevation$elevation$2;-><init>(Landroidx/compose/foundation/interaction/InteractionSource;Landroidx/compose/material/FloatingActionButtonElevationAnimatable;Lkotlin/coroutines/Continuation;)V
 
-    iget-object v4, p0, Landroidx/compose/material/DefaultFloatingActionButtonElevation$elevation$2;->$interaction:Landroidx/compose/foundation/interaction/Interaction;
+    iput-object p1, v0, Landroidx/compose/material/DefaultFloatingActionButtonElevation$elevation$2;->L$0:Ljava/lang/Object;
 
-    move-object v0, p1
+    check-cast v0, Lkotlin/coroutines/Continuation;
 
-    move-object v5, p2
-
-    invoke-direct/range {v0 .. v5}, Landroidx/compose/material/DefaultFloatingActionButtonElevation$elevation$2;-><init>(Landroidx/compose/animation/core/Animatable;Landroidx/compose/material/DefaultFloatingActionButtonElevation;FLandroidx/compose/foundation/interaction/Interaction;Lkotlin/coroutines/Continuation;)V
-
-    check-cast p1, Lkotlin/coroutines/Continuation;
-
-    return-object p1
+    return-object v0
 .end method
 
 .method public bridge synthetic invoke(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
@@ -204,7 +178,7 @@
 
     move-result-object v0
 
-    .line 65535
+    .line 289
     iget v1, p0, Landroidx/compose/material/DefaultFloatingActionButtonElevation$elevation$2;->label:I
 
     const/4 v2, 0x1
@@ -215,7 +189,7 @@
 
     invoke-static {p1}, Lkotlin/ResultKt;->throwOnFailure(Ljava/lang/Object;)V
 
-    goto :goto_1
+    goto :goto_0
 
     :cond_0
     new-instance p0, Ljava/lang/IllegalStateException;
@@ -229,125 +203,49 @@
     :cond_1
     invoke-static {p1}, Lkotlin/ResultKt;->throwOnFailure(Ljava/lang/Object;)V
 
-    .line 315
-    iget-object p1, p0, Landroidx/compose/material/DefaultFloatingActionButtonElevation$elevation$2;->$animatable:Landroidx/compose/animation/core/Animatable;
+    iget-object p1, p0, Landroidx/compose/material/DefaultFloatingActionButtonElevation$elevation$2;->L$0:Ljava/lang/Object;
 
-    invoke-virtual {p1}, Landroidx/compose/animation/core/Animatable;->getTargetValue()Ljava/lang/Object;
+    check-cast p1, Lkotlinx/coroutines/CoroutineScope;
 
-    move-result-object p1
+    .line 290
+    new-instance v1, Ljava/util/ArrayList;
 
-    check-cast p1, Landroidx/compose/ui/unit/Dp;
+    invoke-direct {v1}, Ljava/util/ArrayList;-><init>()V
 
-    invoke-virtual {p1}, Landroidx/compose/ui/unit/Dp;->unbox-impl()F
+    check-cast v1, Ljava/util/List;
 
-    move-result p1
+    .line 291
+    iget-object v3, p0, Landroidx/compose/material/DefaultFloatingActionButtonElevation$elevation$2;->$interactionSource:Landroidx/compose/foundation/interaction/InteractionSource;
 
-    .line 316
-    iget-object v1, p0, Landroidx/compose/material/DefaultFloatingActionButtonElevation$elevation$2;->this$0:Landroidx/compose/material/DefaultFloatingActionButtonElevation;
+    invoke-interface {v3}, Landroidx/compose/foundation/interaction/InteractionSource;->getInteractions()Lkotlinx/coroutines/flow/Flow;
 
-    invoke-static {v1}, Landroidx/compose/material/DefaultFloatingActionButtonElevation;->access$getPressedElevation$p(Landroidx/compose/material/DefaultFloatingActionButtonElevation;)F
+    move-result-object v3
 
-    move-result v1
+    new-instance v4, Landroidx/compose/material/DefaultFloatingActionButtonElevation$elevation$2$1;
 
-    invoke-static {p1, v1}, Landroidx/compose/ui/unit/Dp;->equals-impl0(FF)Z
+    iget-object v5, p0, Landroidx/compose/material/DefaultFloatingActionButtonElevation$elevation$2;->$animatable:Landroidx/compose/material/FloatingActionButtonElevationAnimatable;
 
-    move-result v1
+    invoke-direct {v4, v1, p1, v5}, Landroidx/compose/material/DefaultFloatingActionButtonElevation$elevation$2$1;-><init>(Ljava/util/List;Lkotlinx/coroutines/CoroutineScope;Landroidx/compose/material/FloatingActionButtonElevationAnimatable;)V
 
-    const/4 v3, 0x0
+    check-cast v4, Lkotlinx/coroutines/flow/FlowCollector;
 
-    if-eqz v1, :cond_2
+    move-object p1, p0
 
-    new-instance p1, Landroidx/compose/foundation/interaction/PressInteraction$Press;
+    check-cast p1, Lkotlin/coroutines/Continuation;
 
-    sget-object v1, Landroidx/compose/ui/geometry/Offset;->Companion:Landroidx/compose/ui/geometry/Offset$Companion;
-
-    invoke-virtual {v1}, Landroidx/compose/ui/geometry/Offset$Companion;->getZero-F1C5BW0()J
-
-    move-result-wide v4
-
-    invoke-direct {p1, v4, v5, v3}, Landroidx/compose/foundation/interaction/PressInteraction$Press;-><init>(JLkotlin/jvm/internal/DefaultConstructorMarker;)V
-
-    move-object v3, p1
-
-    check-cast v3, Landroidx/compose/foundation/interaction/Interaction;
-
-    goto :goto_0
-
-    .line 317
-    :cond_2
-    iget-object v1, p0, Landroidx/compose/material/DefaultFloatingActionButtonElevation$elevation$2;->this$0:Landroidx/compose/material/DefaultFloatingActionButtonElevation;
-
-    invoke-static {v1}, Landroidx/compose/material/DefaultFloatingActionButtonElevation;->access$getHoveredElevation$p(Landroidx/compose/material/DefaultFloatingActionButtonElevation;)F
-
-    move-result v1
-
-    invoke-static {p1, v1}, Landroidx/compose/ui/unit/Dp;->equals-impl0(FF)Z
-
-    move-result v1
-
-    if-eqz v1, :cond_3
-
-    new-instance p1, Landroidx/compose/foundation/interaction/HoverInteraction$Enter;
-
-    invoke-direct {p1}, Landroidx/compose/foundation/interaction/HoverInteraction$Enter;-><init>()V
-
-    move-object v3, p1
-
-    check-cast v3, Landroidx/compose/foundation/interaction/Interaction;
-
-    goto :goto_0
-
-    .line 318
-    :cond_3
-    iget-object v1, p0, Landroidx/compose/material/DefaultFloatingActionButtonElevation$elevation$2;->this$0:Landroidx/compose/material/DefaultFloatingActionButtonElevation;
-
-    invoke-static {v1}, Landroidx/compose/material/DefaultFloatingActionButtonElevation;->access$getFocusedElevation$p(Landroidx/compose/material/DefaultFloatingActionButtonElevation;)F
-
-    move-result v1
-
-    invoke-static {p1, v1}, Landroidx/compose/ui/unit/Dp;->equals-impl0(FF)Z
-
-    move-result p1
-
-    if-eqz p1, :cond_4
-
-    new-instance p1, Landroidx/compose/foundation/interaction/FocusInteraction$Focus;
-
-    invoke-direct {p1}, Landroidx/compose/foundation/interaction/FocusInteraction$Focus;-><init>()V
-
-    move-object v3, p1
-
-    check-cast v3, Landroidx/compose/foundation/interaction/Interaction;
-
-    .line 321
-    :cond_4
-    :goto_0
-    iget-object p1, p0, Landroidx/compose/material/DefaultFloatingActionButtonElevation$elevation$2;->$animatable:Landroidx/compose/animation/core/Animatable;
-
-    .line 324
-    iget v1, p0, Landroidx/compose/material/DefaultFloatingActionButtonElevation$elevation$2;->$target:F
-
-    .line 323
-    iget-object v4, p0, Landroidx/compose/material/DefaultFloatingActionButtonElevation$elevation$2;->$interaction:Landroidx/compose/foundation/interaction/Interaction;
-
-    move-object v5, p0
-
-    check-cast v5, Lkotlin/coroutines/Continuation;
-
-    .line 321
     iput v2, p0, Landroidx/compose/material/DefaultFloatingActionButtonElevation$elevation$2;->label:I
 
-    invoke-static {p1, v1, v3, v4, v5}, Landroidx/compose/material/ElevationKt;->animateElevation-rAjV9yQ(Landroidx/compose/animation/core/Animatable;FLandroidx/compose/foundation/interaction/Interaction;Landroidx/compose/foundation/interaction/Interaction;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+    invoke-interface {v3, v4, p1}, Lkotlinx/coroutines/flow/Flow;->collect(Lkotlinx/coroutines/flow/FlowCollector;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
 
     move-result-object p0
 
-    if-ne p0, v0, :cond_5
+    if-ne p0, v0, :cond_2
 
     return-object v0
 
-    .line 326
-    :cond_5
-    :goto_1
+    .line 320
+    :cond_2
+    :goto_0
     sget-object p0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
 
     return-object p0

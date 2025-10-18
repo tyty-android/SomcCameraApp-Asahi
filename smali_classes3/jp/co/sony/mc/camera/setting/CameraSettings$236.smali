@@ -21,7 +21,7 @@
 .method constructor <init>()V
     .locals 0
 
-    .line 2544
+    .line 2578
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -42,15 +42,12 @@
         }
     .end annotation
 
-    .line 2548
-    check-cast p1, Ljp/co/sony/mc/camera/setting/CameraSettings;
-
-    .line 2549
-    invoke-static {p1}, Ljp/co/sony/mc/camera/setting/CameraSettings;->-$$Nest$fgetmCameraId(Ljp/co/sony/mc/camera/setting/CameraSettings;)Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;
+    .line 2582
+    invoke-static {}, Ljp/co/sony/mc/camera/configuration/parameters/LedOptionsResolver;->getInstance()Ljp/co/sony/mc/camera/configuration/parameters/LedOptionsResolver;
 
     move-result-object p0
 
-    invoke-static {p0}, Ljp/co/sony/mc/camera/configuration/parameters/Mic;->getDefaultValue(Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;)Ljp/co/sony/mc/camera/configuration/parameters/Mic;
+    invoke-virtual {p0}, Ljp/co/sony/mc/camera/configuration/parameters/LedOptionsResolver;->getDefaultFlash()Ljp/co/sony/mc/camera/configuration/parameters/Flash;
 
     move-result-object p0
 

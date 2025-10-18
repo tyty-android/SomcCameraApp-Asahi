@@ -53,8 +53,8 @@
         0x0
     }
     l = {
-        0x44,
-        0x46
+        0x47,
+        0x49
     }
     m = "invokeSuspend"
     n = {
@@ -195,7 +195,7 @@
 
     move-result-object v0
 
-    .line 64
+    .line 67
     iget v1, p0, Landroidx/compose/runtime/RecomposerKt$withRunningRecomposer$2;->label:I
 
     const/4 v2, 0x2
@@ -239,7 +239,7 @@
 
     check-cast p1, Lkotlinx/coroutines/CoroutineScope;
 
-    .line 65
+    .line 68
     new-instance v1, Landroidx/compose/runtime/Recomposer;
 
     invoke-interface {p1}, Lkotlinx/coroutines/CoroutineScope;->getCoroutineContext()Lkotlin/coroutines/CoroutineContext;
@@ -248,7 +248,7 @@
 
     invoke-direct {v1, v4}, Landroidx/compose/runtime/Recomposer;-><init>(Lkotlin/coroutines/CoroutineContext;)V
 
-    .line 67
+    .line 70
     new-instance v4, Landroidx/compose/runtime/RecomposerKt$withRunningRecomposer$2$1;
 
     const/4 v5, 0x0
@@ -269,7 +269,7 @@
 
     invoke-static/range {v4 .. v9}, Lkotlinx/coroutines/BuildersKt;->launch$default(Lkotlinx/coroutines/CoroutineScope;Lkotlin/coroutines/CoroutineContext;Lkotlinx/coroutines/CoroutineStart;Lkotlin/jvm/functions/Function2;ILjava/lang/Object;)Lkotlinx/coroutines/Job;
 
-    .line 68
+    .line 71
     iget-object v4, p0, Landroidx/compose/runtime/RecomposerKt$withRunningRecomposer$2;->$block:Lkotlin/jvm/functions/Function3;
 
     iput-object v1, p0, Landroidx/compose/runtime/RecomposerKt$withRunningRecomposer$2;->L$0:Ljava/lang/Object;
@@ -284,12 +284,12 @@
 
     return-object v0
 
-    .line 69
+    .line 72
     :cond_3
     :goto_0
     invoke-virtual {v1}, Landroidx/compose/runtime/Recomposer;->close()V
 
-    .line 70
+    .line 73
     iput-object p1, p0, Landroidx/compose/runtime/RecomposerKt$withRunningRecomposer$2;->L$0:Ljava/lang/Object;
 
     iput v2, p0, Landroidx/compose/runtime/RecomposerKt$withRunningRecomposer$2;->label:I

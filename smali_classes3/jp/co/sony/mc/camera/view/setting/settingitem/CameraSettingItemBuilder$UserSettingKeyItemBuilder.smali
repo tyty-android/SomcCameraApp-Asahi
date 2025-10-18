@@ -74,7 +74,7 @@
 .method private constructor <init>()V
     .locals 0
 
-    .line 474
+    .line 484
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -95,7 +95,7 @@
 
     move-object/from16 v0, p0
 
-    .line 587
+    .line 597
     new-instance v16, Ljp/co/sony/mc/camera/view/setting/settingitem/CameraSettingItem;
 
     iget-object v1, v0, Ljp/co/sony/mc/camera/view/setting/settingitem/CameraSettingItemBuilder$UserSettingKeyItemBuilder;->mKey:Ljp/co/sony/mc/camera/setting/SettingKey$Key;
@@ -146,7 +146,7 @@
         }
     .end annotation
 
-    .line 567
+    .line 577
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/setting/settingitem/CameraSettingItemBuilder$UserSettingKeyItemBuilder;->mOptions:Ljava/util/List;
 
     return-object p0
@@ -155,7 +155,7 @@
 .method setAdditionalTextForAccessibility(Ljava/lang/String;)Ljp/co/sony/mc/camera/view/setting/settingitem/CameraSettingItemBuilder$UserSettingKeyItemBuilder;
     .locals 0
 
-    .line 547
+    .line 557
     iput-object p1, p0, Ljp/co/sony/mc/camera/view/setting/settingitem/CameraSettingItemBuilder$UserSettingKeyItemBuilder;->mAdditionalTextForAccessibility:Ljava/lang/String;
 
     return-object p0
@@ -164,7 +164,7 @@
 .method setChoiceMode(I)Ljp/co/sony/mc/camera/view/setting/settingitem/CameraSettingItemBuilder$UserSettingKeyItemBuilder;
     .locals 0
 
-    .line 582
+    .line 592
     iput p1, p0, Ljp/co/sony/mc/camera/view/setting/settingitem/CameraSettingItemBuilder$UserSettingKeyItemBuilder;->mChoiceMode:I
 
     return-object p0
@@ -182,7 +182,7 @@
         }
     .end annotation
 
-    .line 526
+    .line 536
     iput-object p1, p0, Ljp/co/sony/mc/camera/view/setting/settingitem/CameraSettingItemBuilder$UserSettingKeyItemBuilder;->mDescriptionResIdList:Ljava/util/List;
 
     return-object p0
@@ -191,7 +191,7 @@
 .method setImageResId(I)Ljp/co/sony/mc/camera/view/setting/settingitem/CameraSettingItemBuilder$UserSettingKeyItemBuilder;
     .locals 0
 
-    .line 577
+    .line 587
     iput p1, p0, Ljp/co/sony/mc/camera/view/setting/settingitem/CameraSettingItemBuilder$UserSettingKeyItemBuilder;->mImageResId:I
 
     return-object p0
@@ -200,7 +200,7 @@
 .method setInformationResId(I)Ljp/co/sony/mc/camera/view/setting/settingitem/CameraSettingItemBuilder$UserSettingKeyItemBuilder;
     .locals 0
 
-    .line 541
+    .line 551
     iput p1, p0, Ljp/co/sony/mc/camera/view/setting/settingitem/CameraSettingItemBuilder$UserSettingKeyItemBuilder;->mInformationResId:I
 
     return-object p0
@@ -209,7 +209,7 @@
 .method setIsExclusionInfo(Z)Ljp/co/sony/mc/camera/view/setting/settingitem/CameraSettingItemBuilder$UserSettingKeyItemBuilder;
     .locals 0
 
-    .line 536
+    .line 546
     iput-boolean p1, p0, Ljp/co/sony/mc/camera/view/setting/settingitem/CameraSettingItemBuilder$UserSettingKeyItemBuilder;->mIsExclusionInfo:Z
 
     return-object p0
@@ -218,7 +218,7 @@
 .method setIsRestricted(Z)Ljp/co/sony/mc/camera/view/setting/settingitem/CameraSettingItemBuilder$UserSettingKeyItemBuilder;
     .locals 0
 
-    .line 557
+    .line 567
     iput-boolean p1, p0, Ljp/co/sony/mc/camera/view/setting/settingitem/CameraSettingItemBuilder$UserSettingKeyItemBuilder;->mIsRestricted:Z
 
     return-object p0
@@ -236,7 +236,7 @@
         }
     .end annotation
 
-    .line 572
+    .line 582
     iput-object p1, p0, Ljp/co/sony/mc/camera/view/setting/settingitem/CameraSettingItemBuilder$UserSettingKeyItemBuilder;->mOptions:Ljava/util/List;
 
     return-object p0
@@ -245,7 +245,7 @@
 .method setRestrictMessageDialogId(Ljp/co/sony/mc/camera/view/messagedialog/DialogId;)Ljp/co/sony/mc/camera/view/setting/settingitem/CameraSettingItemBuilder$UserSettingKeyItemBuilder;
     .locals 0
 
-    .line 562
+    .line 572
     iput-object p1, p0, Ljp/co/sony/mc/camera/view/setting/settingitem/CameraSettingItemBuilder$UserSettingKeyItemBuilder;->mRestrictMessageDialogId:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
 
     return-object p0
@@ -254,7 +254,7 @@
 .method setSettingLayoutType(Ljp/co/sony/mc/camera/view/setting/settingitem/SettingLayoutType;)Ljp/co/sony/mc/camera/view/setting/settingitem/CameraSettingItemBuilder$UserSettingKeyItemBuilder;
     .locals 0
 
-    .line 552
+    .line 562
     iput-object p1, p0, Ljp/co/sony/mc/camera/view/setting/settingitem/CameraSettingItemBuilder$UserSettingKeyItemBuilder;->mLayoutType:Ljp/co/sony/mc/camera/view/setting/settingitem/SettingLayoutType;
 
     return-object p0
@@ -263,7 +263,7 @@
 .method setSubCategoryTitleId(I)Ljp/co/sony/mc/camera/view/setting/settingitem/CameraSettingItemBuilder$UserSettingKeyItemBuilder;
     .locals 0
 
-    .line 511
+    .line 521
     iput p1, p0, Ljp/co/sony/mc/camera/view/setting/settingitem/CameraSettingItemBuilder$UserSettingKeyItemBuilder;->mSubCategoryTitleId:I
 
     return-object p0
@@ -281,7 +281,7 @@
         }
     .end annotation
 
-    .line 531
+    .line 541
     iput-object p1, p0, Ljp/co/sony/mc/camera/view/setting/settingitem/CameraSettingItemBuilder$UserSettingKeyItemBuilder;->mSubDescriptionResIdList:Ljava/util/List;
 
     return-object p0
@@ -290,7 +290,7 @@
 .method setTitleText(Ljava/lang/String;)Ljp/co/sony/mc/camera/view/setting/settingitem/CameraSettingItemBuilder$UserSettingKeyItemBuilder;
     .locals 0
 
-    .line 516
+    .line 526
     iput-object p1, p0, Ljp/co/sony/mc/camera/view/setting/settingitem/CameraSettingItemBuilder$UserSettingKeyItemBuilder;->mTitleText:Ljava/lang/String;
 
     return-object p0
@@ -299,7 +299,7 @@
 .method setUserSettingKey(Ljp/co/sony/mc/camera/setting/SettingKey$Key;)Ljp/co/sony/mc/camera/view/setting/settingitem/CameraSettingItemBuilder$UserSettingKeyItemBuilder;
     .locals 0
 
-    .line 506
+    .line 516
     iput-object p1, p0, Ljp/co/sony/mc/camera/view/setting/settingitem/CameraSettingItemBuilder$UserSettingKeyItemBuilder;->mKey:Ljp/co/sony/mc/camera/setting/SettingKey$Key;
 
     return-object p0
@@ -308,7 +308,7 @@
 .method setValueText(Ljava/lang/String;)Ljp/co/sony/mc/camera/view/setting/settingitem/CameraSettingItemBuilder$UserSettingKeyItemBuilder;
     .locals 0
 
-    .line 521
+    .line 531
     iput-object p1, p0, Ljp/co/sony/mc/camera/view/setting/settingitem/CameraSettingItemBuilder$UserSettingKeyItemBuilder;->mValueText:Ljava/lang/String;
 
     return-object p0

@@ -165,7 +165,7 @@
 
     invoke-static {}, Lkotlin/coroutines/intrinsics/IntrinsicsKt;->getCOROUTINE_SUSPENDED()Ljava/lang/Object;
 
-    .line 65535
+    .line 625
     iget v0, p0, Landroidx/compose/material/SwipeableKt$swipeable$3$4$1;->label:I
 
     if-nez v0, :cond_0
@@ -180,7 +180,6 @@
 
     iget p1, p0, Landroidx/compose/material/SwipeableKt$swipeable$3$4$1;->F$0:F
 
-    .line 616
     new-instance v1, Landroidx/compose/material/SwipeableKt$swipeable$3$4$1$1;
 
     iget-object p0, p0, Landroidx/compose/material/SwipeableKt$swipeable$3$4$1;->$state:Landroidx/compose/material/SwipeableState;
@@ -205,7 +204,6 @@
 
     return-object p0
 
-    .line 65535
     :cond_0
     new-instance p0, Ljava/lang/IllegalStateException;
 

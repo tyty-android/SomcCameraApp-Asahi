@@ -1,6 +1,6 @@
 .class final Landroidx/compose/material/internal/PopupLayout$Content$4;
 .super Lkotlin/jvm/internal/Lambda;
-.source "ExposedDropdownMenuPopup.kt"
+.source "ExposedDropdownMenuPopup.android.kt"
 
 # interfaces
 .implements Lkotlin/jvm/functions/Function2;

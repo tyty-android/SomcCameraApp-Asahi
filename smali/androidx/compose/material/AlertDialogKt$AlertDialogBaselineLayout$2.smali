@@ -17,12 +17,12 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/SourceDebugExtension;
-    value = "SMAP\nAlertDialog.kt\nKotlin\n*S Kotlin\n*F\n+ 1 AlertDialog.kt\nandroidx/compose/material/AlertDialogKt$AlertDialogBaselineLayout$2\n+ 2 _Collections.kt\nkotlin/collections/CollectionsKt___CollectionsKt\n+ 3 fake.kt\nkotlin/jvm/internal/FakeKt\n*L\n1#1,292:1\n288#2,2:293\n288#2,2:295\n1#3:297\n*S KotlinDebug\n*F\n+ 1 AlertDialog.kt\nandroidx/compose/material/AlertDialogKt$AlertDialogBaselineLayout$2\n*L\n114#1:293,2\n117#1:295,2\n*E\n"
+    value = "SMAP\nAlertDialog.kt\nKotlin\n*S Kotlin\n*F\n+ 1 AlertDialog.kt\nandroidx/compose/material/AlertDialogKt$AlertDialogBaselineLayout$2\n+ 2 ListUtils.kt\nandroidx/compose/ui/util/ListUtilsKt\n+ 3 fake.kt\nkotlin/jvm/internal/FakeKt\n*L\n1#1,295:1\n116#2,2:296\n33#2,6:298\n118#2:304\n116#2,2:305\n33#2,6:307\n118#2:313\n1#3:314\n*S KotlinDebug\n*F\n+ 1 AlertDialog.kt\nandroidx/compose/material/AlertDialogKt$AlertDialogBaselineLayout$2\n*L\n116#1:296,2\n116#1:298,6\n116#1:304\n119#1:305,2\n119#1:307,6\n119#1:313\n*E\n"
 .end annotation
 
 .annotation runtime Lkotlin/Metadata;
     d1 = {
-        "\u0000\u001a\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010 \n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\u0010\u0000\u001a\u00020\u0001*\u00020\u00022\u000c\u0010\u0003\u001a\u0008\u0012\u0004\u0012\u00020\u00050\u00042\u0006\u0010\u0006\u001a\u00020\u0007H\n"
+        "\u0000\u001e\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010 \n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0002\u0010\u0000\u001a\u00020\u0001*\u00020\u00022\u000c\u0010\u0003\u001a\u0008\u0012\u0004\u0012\u00020\u00050\u00042\u0006\u0010\u0006\u001a\u00020\u0007H\n\u00a2\u0006\u0004\u0008\u0008\u0010\t"
     }
     d2 = {
         "<anonymous>",
@@ -32,7 +32,9 @@
         "",
         "Landroidx/compose/ui/layout/Measurable;",
         "constraints",
-        "Landroidx/compose/ui/unit/Constraints;"
+        "Landroidx/compose/ui/unit/Constraints;",
+        "measure-3p2s80s",
+        "(Landroidx/compose/ui/layout/MeasureScope;Ljava/util/List;J)Landroidx/compose/ui/layout/MeasureResult;"
     }
     k = 0x3
     mv = {
@@ -72,7 +74,7 @@
 
 # virtual methods
 .method public final measure-3p2s80s(Landroidx/compose/ui/layout/MeasureScope;Ljava/util/List;J)Landroidx/compose/ui/layout/MeasureResult;
-    .locals 10
+    .locals 16
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -85,460 +87,471 @@
         }
     .end annotation
 
-    const-string p0, "$this$Layout"
+    move-object/from16 v0, p1
 
-    invoke-static {p1, p0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+    move-object/from16 v1, p2
 
-    const-string p0, "measurables"
-
-    invoke-static {p2, p0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 114
-    check-cast p2, Ljava/lang/Iterable;
-
-    .line 293
-    invoke-interface {p2}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
-
-    move-result-object p0
-
-    :cond_0
-    invoke-interface {p0}, Ljava/util/Iterator;->hasNext()Z
-
-    move-result v0
-
-    const/4 v1, 0x0
-
-    if-eqz v0, :cond_1
-
-    invoke-interface {p0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
-
-    move-result-object v0
-
-    move-object v2, v0
-
-    check-cast v2, Landroidx/compose/ui/layout/Measurable;
-
-    .line 114
-    invoke-static {v2}, Landroidx/compose/ui/layout/LayoutIdKt;->getLayoutId(Landroidx/compose/ui/layout/Measurable;)Ljava/lang/Object;
-
-    move-result-object v2
-
-    const-string/jumbo v3, "title"
-
-    invoke-static {v2, v3}, Lkotlin/jvm/internal/Intrinsics;->areEqual(Ljava/lang/Object;Ljava/lang/Object;)Z
+    .line 299
+    invoke-interface/range {p2 .. p2}, Ljava/util/List;->size()I
 
     move-result v2
 
-    if-eqz v2, :cond_0
+    const/4 v3, 0x0
+
+    move v4, v3
+
+    :goto_0
+    const/4 v5, 0x0
+
+    if-ge v4, v2, :cond_1
+
+    .line 300
+    invoke-interface {v1, v4}, Ljava/util/List;->get(I)Ljava/lang/Object;
+
+    move-result-object v6
+
+    .line 297
+    move-object v7, v6
+
+    check-cast v7, Landroidx/compose/ui/layout/Measurable;
+
+    .line 116
+    invoke-static {v7}, Landroidx/compose/ui/layout/LayoutIdKt;->getLayoutId(Landroidx/compose/ui/layout/Measurable;)Ljava/lang/Object;
+
+    move-result-object v7
+
+    const-string/jumbo v8, "title"
+
+    invoke-static {v7, v8}, Lkotlin/jvm/internal/Intrinsics;->areEqual(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    move-result v7
+
+    if-eqz v7, :cond_0
+
+    goto :goto_1
+
+    :cond_0
+    add-int/lit8 v4, v4, 0x1
 
     goto :goto_0
 
     :cond_1
-    move-object v0, v1
+    move-object v6, v5
 
-    :goto_0
-    check-cast v0, Landroidx/compose/ui/layout/Measurable;
+    :goto_1
+    check-cast v6, Landroidx/compose/ui/layout/Measurable;
 
-    if-eqz v0, :cond_2
+    if-eqz v6, :cond_2
 
-    const/16 v8, 0xb
+    const/16 v13, 0xb
+
+    const/4 v14, 0x0
 
     const/4 v9, 0x0
 
-    const/4 v4, 0x0
+    const/4 v10, 0x0
 
-    const/4 v5, 0x0
+    const/4 v11, 0x0
 
-    const/4 v6, 0x0
+    const/4 v12, 0x0
 
-    const/4 v7, 0x0
-
-    move-wide v2, p3
-
-    .line 115
-    invoke-static/range {v2 .. v9}, Landroidx/compose/ui/unit/Constraints;->copy-Zbe2FdA$default(JIIIIILjava/lang/Object;)J
-
-    move-result-wide v2
-
-    .line 114
-    invoke-interface {v0, v2, v3}, Landroidx/compose/ui/layout/Measurable;->measure-BRTryo0(J)Landroidx/compose/ui/layout/Placeable;
-
-    move-result-object p0
-
-    goto :goto_1
-
-    :cond_2
-    move-object p0, v1
-
-    .line 295
-    :goto_1
-    invoke-interface {p2}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
-
-    move-result-object p2
-
-    :cond_3
-    invoke-interface {p2}, Ljava/util/Iterator;->hasNext()Z
-
-    move-result v0
-
-    if-eqz v0, :cond_4
-
-    invoke-interface {p2}, Ljava/util/Iterator;->next()Ljava/lang/Object;
-
-    move-result-object v0
-
-    move-object v2, v0
-
-    check-cast v2, Landroidx/compose/ui/layout/Measurable;
+    move-wide/from16 v7, p3
 
     .line 117
-    invoke-static {v2}, Landroidx/compose/ui/layout/LayoutIdKt;->getLayoutId(Landroidx/compose/ui/layout/Measurable;)Ljava/lang/Object;
+    invoke-static/range {v7 .. v14}, Landroidx/compose/ui/unit/Constraints;->copy-Zbe2FdA$default(JIIIIILjava/lang/Object;)J
+
+    move-result-wide v7
+
+    .line 116
+    invoke-interface {v6, v7, v8}, Landroidx/compose/ui/layout/Measurable;->measure-BRTryo0(J)Landroidx/compose/ui/layout/Placeable;
 
     move-result-object v2
-
-    const-string/jumbo v3, "text"
-
-    invoke-static {v2, v3}, Lkotlin/jvm/internal/Intrinsics;->areEqual(Ljava/lang/Object;Ljava/lang/Object;)Z
-
-    move-result v2
-
-    if-eqz v2, :cond_3
 
     goto :goto_2
 
-    :cond_4
-    move-object v0, v1
+    :cond_2
+    move-object v2, v5
 
+    .line 308
     :goto_2
-    check-cast v0, Landroidx/compose/ui/layout/Measurable;
-
-    if-eqz v0, :cond_5
-
-    const/16 v8, 0xb
-
-    const/4 v9, 0x0
-
-    const/4 v4, 0x0
-
-    const/4 v5, 0x0
-
-    const/4 v6, 0x0
-
-    const/4 v7, 0x0
-
-    move-wide v2, p3
-
-    .line 118
-    invoke-static/range {v2 .. v9}, Landroidx/compose/ui/unit/Constraints;->copy-Zbe2FdA$default(JIIIIILjava/lang/Object;)J
-
-    move-result-wide p2
-
-    .line 117
-    invoke-interface {v0, p2, p3}, Landroidx/compose/ui/layout/Measurable;->measure-BRTryo0(J)Landroidx/compose/ui/layout/Placeable;
-
-    move-result-object p2
-
-    goto :goto_3
-
-    :cond_5
-    move-object p2, v1
-
-    :goto_3
-    const/4 p3, 0x0
-
-    if-eqz p0, :cond_6
-
-    .line 121
-    invoke-virtual {p0}, Landroidx/compose/ui/layout/Placeable;->getWidth()I
-
-    move-result p4
-
-    goto :goto_4
-
-    :cond_6
-    move p4, p3
-
-    :goto_4
-    if-eqz p2, :cond_7
-
-    invoke-virtual {p2}, Landroidx/compose/ui/layout/Placeable;->getWidth()I
-
-    move-result v0
-
-    goto :goto_5
-
-    :cond_7
-    move v0, p3
-
-    :goto_5
-    invoke-static {p4, v0}, Ljava/lang/Math;->max(II)I
-
-    move-result v3
-
-    const/high16 p4, -0x80000000
-
-    if-eqz p0, :cond_9
-
-    .line 123
-    invoke-static {}, Landroidx/compose/ui/layout/AlignmentLineKt;->getFirstBaseline()Landroidx/compose/ui/layout/HorizontalAlignmentLine;
-
-    move-result-object v0
-
-    check-cast v0, Landroidx/compose/ui/layout/AlignmentLine;
-
-    invoke-virtual {p0, v0}, Landroidx/compose/ui/layout/Placeable;->get(Landroidx/compose/ui/layout/AlignmentLine;)I
-
-    move-result v0
-
-    invoke-static {v0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
-
-    move-result-object v0
-
-    check-cast v0, Ljava/lang/Number;
-
-    invoke-virtual {v0}, Ljava/lang/Number;->intValue()I
-
-    move-result v0
-
-    if-ne v0, p4, :cond_8
-
-    move-object v0, v1
-
-    goto :goto_6
-
-    .line 124
-    :cond_8
-    invoke-static {v0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
-
-    move-result-object v0
-
-    :goto_6
-    if-eqz v0, :cond_9
-
-    .line 123
-    invoke-virtual {v0}, Ljava/lang/Integer;->intValue()I
-
-    move-result v0
-
-    goto :goto_7
-
-    :cond_9
-    move v0, p3
-
-    :goto_7
-    if-eqz p0, :cond_b
-
-    .line 126
-    invoke-static {}, Landroidx/compose/ui/layout/AlignmentLineKt;->getLastBaseline()Landroidx/compose/ui/layout/HorizontalAlignmentLine;
-
-    move-result-object v2
-
-    check-cast v2, Landroidx/compose/ui/layout/AlignmentLine;
-
-    invoke-virtual {p0, v2}, Landroidx/compose/ui/layout/Placeable;->get(Landroidx/compose/ui/layout/AlignmentLine;)I
-
-    move-result v2
-
-    if-ne v2, p4, :cond_a
-
-    move-object v2, v1
-
-    goto :goto_8
-
-    .line 127
-    :cond_a
-    invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
-
-    move-result-object v2
-
-    :goto_8
-    if-eqz v2, :cond_b
-
-    .line 126
-    invoke-virtual {v2}, Ljava/lang/Integer;->intValue()I
-
-    move-result v2
-
-    goto :goto_9
-
-    :cond_b
-    move v2, p3
-
-    .line 130
-    :goto_9
-    invoke-static {}, Landroidx/compose/material/AlertDialogKt;->access$getTitleBaselineDistanceFromTop$p()J
-
-    move-result-wide v4
-
-    invoke-interface {p1, v4, v5}, Landroidx/compose/ui/layout/MeasureScope;->roundToPx--R2X_6o(J)I
+    invoke-interface/range {p2 .. p2}, Ljava/util/List;->size()I
 
     move-result v4
 
-    sub-int/2addr v4, v0
+    move v6, v3
 
-    if-eqz p2, :cond_d
+    :goto_3
+    if-ge v6, v4, :cond_4
 
-    .line 135
-    invoke-static {}, Landroidx/compose/ui/layout/AlignmentLineKt;->getFirstBaseline()Landroidx/compose/ui/layout/HorizontalAlignmentLine;
+    .line 309
+    invoke-interface {v1, v6}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
-    move-result-object v0
+    move-result-object v7
 
-    check-cast v0, Landroidx/compose/ui/layout/AlignmentLine;
+    .line 306
+    move-object v8, v7
 
-    invoke-virtual {p2, v0}, Landroidx/compose/ui/layout/Placeable;->get(Landroidx/compose/ui/layout/AlignmentLine;)I
+    check-cast v8, Landroidx/compose/ui/layout/Measurable;
 
-    move-result v0
+    .line 119
+    invoke-static {v8}, Landroidx/compose/ui/layout/LayoutIdKt;->getLayoutId(Landroidx/compose/ui/layout/Measurable;)Ljava/lang/Object;
 
-    if-ne v0, p4, :cond_c
+    move-result-object v8
 
-    goto :goto_a
+    const-string/jumbo v9, "text"
 
-    .line 136
-    :cond_c
-    invoke-static {v0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+    invoke-static {v8, v9}, Lkotlin/jvm/internal/Intrinsics;->areEqual(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    move-result v8
+
+    if-eqz v8, :cond_3
+
+    goto :goto_4
+
+    :cond_3
+    add-int/lit8 v6, v6, 0x1
+
+    goto :goto_3
+
+    :cond_4
+    move-object v7, v5
+
+    :goto_4
+    check-cast v7, Landroidx/compose/ui/layout/Measurable;
+
+    if-eqz v7, :cond_5
+
+    const/16 v14, 0xb
+
+    const/4 v15, 0x0
+
+    const/4 v10, 0x0
+
+    const/4 v11, 0x0
+
+    const/4 v12, 0x0
+
+    const/4 v13, 0x0
+
+    move-wide/from16 v8, p3
+
+    .line 120
+    invoke-static/range {v8 .. v15}, Landroidx/compose/ui/unit/Constraints;->copy-Zbe2FdA$default(JIIIIILjava/lang/Object;)J
+
+    move-result-wide v8
+
+    .line 119
+    invoke-interface {v7, v8, v9}, Landroidx/compose/ui/layout/Measurable;->measure-BRTryo0(J)Landroidx/compose/ui/layout/Placeable;
 
     move-result-object v1
 
-    :goto_a
-    if-eqz v1, :cond_d
+    goto :goto_5
 
-    .line 135
-    invoke-virtual {v1}, Ljava/lang/Integer;->intValue()I
+    :cond_5
+    move-object v1, v5
 
-    move-result p4
+    :goto_5
+    if-eqz v2, :cond_6
 
-    goto :goto_b
+    .line 123
+    invoke-virtual {v2}, Landroidx/compose/ui/layout/Placeable;->getWidth()I
 
-    :cond_d
-    move p4, p3
+    move-result v4
 
-    :goto_b
-    if-nez p0, :cond_e
+    goto :goto_6
 
-    .line 140
-    invoke-static {}, Landroidx/compose/material/AlertDialogKt;->access$getTextBaselineDistanceFromTop$p()J
+    :cond_6
+    move v4, v3
 
-    move-result-wide v0
+    :goto_6
+    if-eqz v1, :cond_7
 
-    invoke-interface {p1, v0, v1}, Landroidx/compose/ui/layout/MeasureScope;->roundToPx--R2X_6o(J)I
-
-    move-result v0
-
-    goto :goto_c
-
-    .line 142
-    :cond_e
-    invoke-static {}, Landroidx/compose/material/AlertDialogKt;->access$getTextBaselineDistanceFromTitle$p()J
-
-    move-result-wide v0
-
-    invoke-interface {p1, v0, v1}, Landroidx/compose/ui/layout/MeasureScope;->roundToPx--R2X_6o(J)I
-
-    move-result v0
-
-    :goto_c
-    if-eqz p0, :cond_f
-
-    .line 146
-    invoke-virtual {p0}, Landroidx/compose/ui/layout/Placeable;->getHeight()I
-
-    move-result v1
-
-    add-int/2addr v1, v4
-
-    goto :goto_d
-
-    :cond_f
-    move v1, p3
-
-    :goto_d
-    if-nez p0, :cond_10
-
-    sub-int v5, v0, p4
-
-    goto :goto_f
-
-    :cond_10
-    if-nez v2, :cond_11
-
-    sub-int v5, v1, p4
-
-    goto :goto_e
-
-    :cond_11
-    add-int v5, v4, v2
-
-    sub-int/2addr v5, p4
-
-    :goto_e
-    add-int/2addr v5, v0
-
-    :goto_f
-    if-eqz p2, :cond_14
-
-    if-nez v2, :cond_12
-
-    .line 167
-    invoke-virtual {p2}, Landroidx/compose/ui/layout/Placeable;->getHeight()I
-
-    move-result p3
-
-    add-int/2addr p3, v0
-
-    sub-int/2addr p3, p4
-
-    goto :goto_10
-
-    .line 169
-    :cond_12
-    invoke-virtual {p2}, Landroidx/compose/ui/layout/Placeable;->getHeight()I
+    invoke-virtual {v1}, Landroidx/compose/ui/layout/Placeable;->getWidth()I
 
     move-result v6
 
-    add-int/2addr v6, v0
+    goto :goto_7
 
-    sub-int/2addr v6, p4
+    :cond_7
+    move v6, v3
 
-    if-eqz p0, :cond_13
+    :goto_7
+    invoke-static {v4, v6}, Ljava/lang/Math;->max(II)I
 
-    .line 170
-    invoke-virtual {p0}, Landroidx/compose/ui/layout/Placeable;->getHeight()I
+    move-result v4
 
-    move-result p3
+    const/high16 v6, -0x80000000
+
+    if-eqz v2, :cond_9
+
+    .line 125
+    invoke-static {}, Landroidx/compose/ui/layout/AlignmentLineKt;->getFirstBaseline()Landroidx/compose/ui/layout/HorizontalAlignmentLine;
+
+    move-result-object v7
+
+    check-cast v7, Landroidx/compose/ui/layout/AlignmentLine;
+
+    invoke-virtual {v2, v7}, Landroidx/compose/ui/layout/Placeable;->get(Landroidx/compose/ui/layout/AlignmentLine;)I
+
+    move-result v7
+
+    invoke-static {v7}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v7
+
+    check-cast v7, Ljava/lang/Number;
+
+    invoke-virtual {v7}, Ljava/lang/Number;->intValue()I
+
+    move-result v7
+
+    if-ne v7, v6, :cond_8
+
+    move-object v7, v5
+
+    goto :goto_8
+
+    .line 126
+    :cond_8
+    invoke-static {v7}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v7
+
+    :goto_8
+    if-eqz v7, :cond_9
+
+    .line 125
+    invoke-virtual {v7}, Ljava/lang/Integer;->intValue()I
+
+    move-result v7
+
+    goto :goto_9
+
+    :cond_9
+    move v7, v3
+
+    :goto_9
+    if-eqz v2, :cond_b
+
+    .line 128
+    invoke-static {}, Landroidx/compose/ui/layout/AlignmentLineKt;->getLastBaseline()Landroidx/compose/ui/layout/HorizontalAlignmentLine;
+
+    move-result-object v8
+
+    check-cast v8, Landroidx/compose/ui/layout/AlignmentLine;
+
+    invoke-virtual {v2, v8}, Landroidx/compose/ui/layout/Placeable;->get(Landroidx/compose/ui/layout/AlignmentLine;)I
+
+    move-result v8
+
+    if-ne v8, v6, :cond_a
+
+    move-object v8, v5
+
+    goto :goto_a
+
+    .line 129
+    :cond_a
+    invoke-static {v8}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v8
+
+    :goto_a
+    if-eqz v8, :cond_b
+
+    .line 128
+    invoke-virtual {v8}, Ljava/lang/Integer;->intValue()I
+
+    move-result v8
+
+    goto :goto_b
+
+    :cond_b
+    move v8, v3
+
+    .line 132
+    :goto_b
+    invoke-static {}, Landroidx/compose/material/AlertDialogKt;->access$getTitleBaselineDistanceFromTop$p()J
+
+    move-result-wide v9
+
+    invoke-interface {v0, v9, v10}, Landroidx/compose/ui/layout/MeasureScope;->roundToPx--R2X_6o(J)I
+
+    move-result v9
+
+    sub-int/2addr v9, v7
+
+    if-eqz v1, :cond_d
+
+    .line 137
+    invoke-static {}, Landroidx/compose/ui/layout/AlignmentLineKt;->getFirstBaseline()Landroidx/compose/ui/layout/HorizontalAlignmentLine;
+
+    move-result-object v7
+
+    check-cast v7, Landroidx/compose/ui/layout/AlignmentLine;
+
+    invoke-virtual {v1, v7}, Landroidx/compose/ui/layout/Placeable;->get(Landroidx/compose/ui/layout/AlignmentLine;)I
+
+    move-result v7
+
+    if-ne v7, v6, :cond_c
+
+    goto :goto_c
+
+    .line 138
+    :cond_c
+    invoke-static {v7}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v5
+
+    :goto_c
+    if-eqz v5, :cond_d
+
+    .line 137
+    invoke-virtual {v5}, Ljava/lang/Integer;->intValue()I
+
+    move-result v5
+
+    goto :goto_d
+
+    :cond_d
+    move v5, v3
+
+    :goto_d
+    if-nez v2, :cond_e
+
+    .line 142
+    invoke-static {}, Landroidx/compose/material/AlertDialogKt;->access$getTextBaselineDistanceFromTop$p()J
+
+    move-result-wide v6
+
+    invoke-interface {v0, v6, v7}, Landroidx/compose/ui/layout/MeasureScope;->roundToPx--R2X_6o(J)I
+
+    move-result v6
+
+    goto :goto_e
+
+    .line 144
+    :cond_e
+    invoke-static {}, Landroidx/compose/material/AlertDialogKt;->access$getTextBaselineDistanceFromTitle$p()J
+
+    move-result-wide v6
+
+    invoke-interface {v0, v6, v7}, Landroidx/compose/ui/layout/MeasureScope;->roundToPx--R2X_6o(J)I
+
+    move-result v6
+
+    :goto_e
+    if-eqz v2, :cond_f
+
+    .line 148
+    invoke-virtual {v2}, Landroidx/compose/ui/layout/Placeable;->getHeight()I
+
+    move-result v7
+
+    add-int/2addr v7, v9
+
+    goto :goto_f
+
+    :cond_f
+    move v7, v3
+
+    :goto_f
+    if-nez v2, :cond_10
+
+    sub-int v10, v6, v5
+
+    goto :goto_11
+
+    :cond_10
+    if-nez v8, :cond_11
+
+    sub-int v10, v7, v5
+
+    goto :goto_10
+
+    :cond_11
+    add-int v10, v9, v8
+
+    sub-int/2addr v10, v5
+
+    :goto_10
+    add-int/2addr v10, v6
+
+    :goto_11
+    if-eqz v1, :cond_14
+
+    if-nez v8, :cond_12
+
+    .line 169
+    invoke-virtual {v1}, Landroidx/compose/ui/layout/Placeable;->getHeight()I
+
+    move-result v3
+
+    add-int/2addr v3, v6
+
+    sub-int/2addr v3, v5
+
+    goto :goto_12
+
+    .line 171
+    :cond_12
+    invoke-virtual {v1}, Landroidx/compose/ui/layout/Placeable;->getHeight()I
+
+    move-result v11
+
+    add-int/2addr v11, v6
+
+    sub-int/2addr v11, v5
+
+    if-eqz v2, :cond_13
+
+    .line 172
+    invoke-virtual {v2}, Landroidx/compose/ui/layout/Placeable;->getHeight()I
+
+    move-result v3
 
     :cond_13
-    sub-int/2addr p3, v2
+    sub-int/2addr v3, v8
 
-    sub-int/2addr v6, p3
+    sub-int/2addr v11, v3
 
-    move p3, v6
+    move v3, v11
 
     :cond_14
-    :goto_10
-    add-int/2addr p3, v1
+    :goto_12
+    add-int/2addr v3, v7
 
-    .line 176
-    new-instance p4, Landroidx/compose/material/AlertDialogKt$AlertDialogBaselineLayout$2$measure$1;
+    .line 178
+    new-instance v5, Landroidx/compose/material/AlertDialogKt$AlertDialogBaselineLayout$2$1;
 
-    invoke-direct {p4, p0, v4, p2, v5}, Landroidx/compose/material/AlertDialogKt$AlertDialogBaselineLayout$2$measure$1;-><init>(Landroidx/compose/ui/layout/Placeable;ILandroidx/compose/ui/layout/Placeable;I)V
+    invoke-direct {v5, v2, v9, v1, v10}, Landroidx/compose/material/AlertDialogKt$AlertDialogBaselineLayout$2$1;-><init>(Landroidx/compose/ui/layout/Placeable;ILandroidx/compose/ui/layout/Placeable;I)V
 
-    move-object v6, p4
+    check-cast v5, Lkotlin/jvm/functions/Function1;
 
-    check-cast v6, Lkotlin/jvm/functions/Function1;
+    const/4 v6, 0x4
 
-    const/4 v7, 0x4
+    const/4 v7, 0x0
 
     const/4 v8, 0x0
 
-    const/4 v5, 0x0
+    move-object/from16 v0, p1
 
-    move-object v2, p1
+    move v1, v4
 
-    move v4, p3
+    move v2, v3
 
-    invoke-static/range {v2 .. v8}, Landroidx/compose/ui/layout/MeasureScope;->layout$default(Landroidx/compose/ui/layout/MeasureScope;IILjava/util/Map;Lkotlin/jvm/functions/Function1;ILjava/lang/Object;)Landroidx/compose/ui/layout/MeasureResult;
+    move-object v3, v8
 
-    move-result-object p0
+    move-object v4, v5
 
-    return-object p0
+    move v5, v6
+
+    move-object v6, v7
+
+    invoke-static/range {v0 .. v6}, Landroidx/compose/ui/layout/MeasureScope;->layout$default(Landroidx/compose/ui/layout/MeasureScope;IILjava/util/Map;Lkotlin/jvm/functions/Function1;ILjava/lang/Object;)Landroidx/compose/ui/layout/MeasureResult;
+
+    move-result-object v0
+
+    return-object v0
 .end method

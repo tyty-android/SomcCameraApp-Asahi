@@ -25,7 +25,7 @@
 .method constructor <init>(Ljp/co/sony/mc/camera/view/setting/fragment/RemoconMenuFragment;)V
     .locals 0
 
-    .line 421
+    .line 429
     iput-object p1, p0, Ljp/co/sony/mc/camera/view/setting/fragment/RemoconMenuFragment$2;->this$0:Ljp/co/sony/mc/camera/view/setting/fragment/RemoconMenuFragment;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -38,7 +38,7 @@
 .method public onBluetoothAvailable()V
     .locals 1
 
-    .line 425
+    .line 433
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/setting/fragment/RemoconMenuFragment$2;->this$0:Ljp/co/sony/mc/camera/view/setting/fragment/RemoconMenuFragment;
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/view/setting/fragment/RemoconMenuFragment;->-$$Nest$fgetmRemoconManager(Ljp/co/sony/mc/camera/view/setting/fragment/RemoconMenuFragment;)Lcom/sonymobile/camera/bleremotecontrol/RemoconManager;
@@ -59,7 +59,7 @@
 .method public onBluetoothUnavailable()V
     .locals 2
 
-    .line 430
+    .line 438
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/setting/fragment/RemoconMenuFragment$2;->this$0:Ljp/co/sony/mc/camera/view/setting/fragment/RemoconMenuFragment;
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/view/setting/fragment/RemoconMenuFragment;->-$$Nest$fgetmRemoconManager(Ljp/co/sony/mc/camera/view/setting/fragment/RemoconMenuFragment;)Lcom/sonymobile/camera/bleremotecontrol/RemoconManager;
@@ -70,7 +70,7 @@
 
     invoke-virtual {v0, v1}, Lcom/sonymobile/camera/bleremotecontrol/RemoconManager;->registerDeviceStateCallback(Lcom/sonymobile/camera/bleremotecontrol/RemoconManager$DeviceStateCallback;)V
 
-    .line 431
+    .line 439
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/setting/fragment/RemoconMenuFragment$2;->this$0:Ljp/co/sony/mc/camera/view/setting/fragment/RemoconMenuFragment;
 
     invoke-static {p0}, Ljp/co/sony/mc/camera/view/setting/fragment/RemoconMenuFragment;->-$$Nest$fgetmRemoconManager(Ljp/co/sony/mc/camera/view/setting/fragment/RemoconMenuFragment;)Lcom/sonymobile/camera/bleremotecontrol/RemoconManager;

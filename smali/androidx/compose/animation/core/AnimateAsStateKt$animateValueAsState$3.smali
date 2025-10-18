@@ -249,7 +249,7 @@
 
     move-result-object v1
 
-    .line 65535
+    .line 418
     iget v2, p0, Landroidx/compose/animation/core/AnimateAsStateKt$animateValueAsState$3;->label:I
 
     const/4 v3, 0x1

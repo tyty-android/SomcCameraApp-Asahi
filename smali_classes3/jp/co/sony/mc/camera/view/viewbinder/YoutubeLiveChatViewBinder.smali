@@ -19,28 +19,29 @@
 
 .annotation runtime Lkotlin/Metadata;
     d1 = {
-        "\u0000F\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0003\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0002\n\u0002\u0008\u0004\n\u0002\u0018\u0002\n\u0000\u0008\u0007\u0018\u00002\u00020\u0001B\r\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u00a2\u0006\u0002\u0010\u0004J\u0010\u0010\u0013\u001a\u00020\u00142\u0006\u0010\u0015\u001a\u00020\nH\u0016J\u0010\u0010\u0016\u001a\u00020\u00142\u0006\u0010\u0015\u001a\u00020\nH\u0016J\u0010\u0010\u0017\u001a\u00020\u00142\u0006\u0010\u0018\u001a\u00020\u0019H\u0002R\u000e\u0010\u0002\u001a\u00020\u0003X\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u0005\u001a\u00020\u0006X\u0082.\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u0007\u001a\u00020\u0008X\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u0014\u0010\t\u001a\u00020\n8BX\u0082\u0004\u00a2\u0006\u0006\u001a\u0004\u0008\u000b\u0010\u000cR\u000e\u0010\r\u001a\u00020\u000eX\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u000f\u001a\u00020\u0010X\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u0011\u001a\u00020\u0012X\u0082\u0004\u00a2\u0006\u0002\n\u0000\u00a8\u0006\u001a"
+        "\u0000F\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0003\n\u0002\u0018\u0002\n\u0002\u0008\u0003\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0002\n\u0002\u0008\u0004\n\u0002\u0018\u0002\n\u0000\u0008\u0007\u0018\u00002\u00020\u0001B\u000f\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u00a2\u0006\u0004\u0008\u0004\u0010\u0005J\u0010\u0010\u0014\u001a\u00020\u00152\u0006\u0010\u0016\u001a\u00020\u0007H\u0016J\u0010\u0010\u0017\u001a\u00020\u00152\u0006\u0010\u0016\u001a\u00020\u0007H\u0016J\u0010\u0010\u0018\u001a\u00020\u00152\u0006\u0010\u0019\u001a\u00020\u001aH\u0002R\u000e\u0010\u0002\u001a\u00020\u0003X\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u0014\u0010\u0006\u001a\u00020\u00078BX\u0082\u0004\u00a2\u0006\u0006\u001a\u0004\u0008\u0008\u0010\tR\u000e\u0010\n\u001a\u00020\u000bX\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u000c\u001a\u00020\rX\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u000e\u001a\u00020\u000fX\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u0010\u001a\u00020\u0011X\u0082.\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u0012\u001a\u00020\u0013X\u0082\u0004\u00a2\u0006\u0002\n\u0000\u00a8\u0006\u001b"
     }
     d2 = {
         "Ljp/co/sony/mc/camera/view/viewbinder/YoutubeLiveChatViewBinder;",
         "Landroidx/lifecycle/DefaultLifecycleObserver;",
         "binding",
         "Ljp/co/sony/mc/camera/databinding/StreamLiveChatBinding;",
+        "<init>",
         "(Ljp/co/sony/mc/camera/databinding/StreamLiveChatBinding;)V",
-        "context",
-        "Landroid/content/Context;",
-        "layoutChangeListener",
-        "Landroid/view/View$OnLayoutChangeListener;",
         "lifecycleOwner",
         "Landroidx/lifecycle/LifecycleOwner;",
         "getLifecycleOwner",
         "()Landroidx/lifecycle/LifecycleOwner;",
+        "youtubeLiveChatUiState",
+        "Ljp/co/sony/mc/camera/view/uistate/YoutubeLiveChatUiState;",
         "messageUiState",
         "Ljp/co/sony/mc/camera/view/uistate/MessageUiState;",
         "orientationViewModel",
         "Ljp/co/sony/mc/camera/view/viewmodel/OrientationViewModel;",
-        "youtubeLiveChatUiState",
-        "Ljp/co/sony/mc/camera/view/uistate/YoutubeLiveChatUiState;",
+        "context",
+        "Landroid/content/Context;",
+        "layoutChangeListener",
+        "Landroid/view/View$OnLayoutChangeListener;",
         "onCreate",
         "",
         "owner",
@@ -52,8 +53,8 @@
     }
     k = 0x1
     mv = {
-        0x1,
-        0x9,
+        0x2,
+        0x0,
         0x0
     }
     xi = 0x30
@@ -79,14 +80,24 @@
 
 
 # direct methods
-.method public static synthetic $r8$lambda$AOnjYZcuCg0wqyj9mh79dNi-cFU(Landroid/view/View;Landroid/view/MotionEvent;)Z
+.method public static synthetic $r8$lambda$-nfTsVupBFbzzPLMfcBEmiBUsOY(Landroid/view/View;Landroid/view/MotionEvent;)Z
     .locals 0
 
-    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/view/viewbinder/YoutubeLiveChatViewBinder;->onCreate$lambda$3(Landroid/view/View;Landroid/view/MotionEvent;)Z
+    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/view/viewbinder/YoutubeLiveChatViewBinder;->onCreate$lambda$13(Landroid/view/View;Landroid/view/MotionEvent;)Z
 
     move-result p0
 
     return p0
+.end method
+
+.method public static synthetic $r8$lambda$8pPNrtv7aIVLX7XejIWkmWjS_OY(Ljp/co/sony/mc/camera/view/viewbinder/YoutubeLiveChatViewBinder;Ljava/util/List;)Lkotlin/Unit;
+    .locals 0
+
+    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/view/viewbinder/YoutubeLiveChatViewBinder;->onCreate$lambda$8(Ljp/co/sony/mc/camera/view/viewbinder/YoutubeLiveChatViewBinder;Ljava/util/List;)Lkotlin/Unit;
+
+    move-result-object p0
+
+    return-object p0
 .end method
 
 .method public static synthetic $r8$lambda$BR-kdkyyKMSrxPRKtCmmCdv0hX4(Ljp/co/sony/mc/camera/view/viewbinder/YoutubeLiveChatViewBinder;Landroid/view/View;IIIIIIII)V
@@ -97,12 +108,52 @@
     return-void
 .end method
 
-.method public static synthetic $r8$lambda$ZogcIFAakLR4jMJxy26xt8WU-n4(Ljp/co/sony/mc/camera/view/viewbinder/YoutubeLiveChatViewBinder;Ljp/co/sony/mc/camera/rtmp/YoutubeLiveChatAdapter;Landroid/view/View;)V
+.method public static synthetic $r8$lambda$GWCoJl5V6OiXC71dotxJS015XBc(Ljp/co/sony/mc/camera/view/viewbinder/YoutubeLiveChatViewBinder;Ljp/co/sony/mc/camera/rtmp/YoutubeLiveChatAdapter;Landroid/view/View;)V
     .locals 0
 
-    invoke-static {p0, p1, p2}, Ljp/co/sony/mc/camera/view/viewbinder/YoutubeLiveChatViewBinder;->onCreate$lambda$4(Ljp/co/sony/mc/camera/view/viewbinder/YoutubeLiveChatViewBinder;Ljp/co/sony/mc/camera/rtmp/YoutubeLiveChatAdapter;Landroid/view/View;)V
+    invoke-static {p0, p1, p2}, Ljp/co/sony/mc/camera/view/viewbinder/YoutubeLiveChatViewBinder;->onCreate$lambda$14(Ljp/co/sony/mc/camera/view/viewbinder/YoutubeLiveChatViewBinder;Ljp/co/sony/mc/camera/rtmp/YoutubeLiveChatAdapter;Landroid/view/View;)V
 
     return-void
+.end method
+
+.method public static synthetic $r8$lambda$LdcRXvluj-Mm-7zdO1VOwRvHsBE(Ljp/co/sony/mc/camera/rtmp/YoutubeLiveChatAdapter;Ljp/co/sony/mc/camera/view/viewbinder/YoutubeLiveChatViewBinder;Ljp/co/sony/mc/camera/rtmp/YouTubeLiveChatData;)Lkotlin/Unit;
+    .locals 0
+
+    invoke-static {p0, p1, p2}, Ljp/co/sony/mc/camera/view/viewbinder/YoutubeLiveChatViewBinder;->onCreate$lambda$5(Ljp/co/sony/mc/camera/rtmp/YoutubeLiveChatAdapter;Ljp/co/sony/mc/camera/view/viewbinder/YoutubeLiveChatViewBinder;Ljp/co/sony/mc/camera/rtmp/YouTubeLiveChatData;)Lkotlin/Unit;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method public static synthetic $r8$lambda$gR1zAeeWrG_Q702lrvkOsjUJmlk(Ljp/co/sony/mc/camera/view/viewbinder/YoutubeLiveChatViewBinder;Ljava/lang/Boolean;)Lkotlin/Unit;
+    .locals 0
+
+    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/view/viewbinder/YoutubeLiveChatViewBinder;->onCreate$lambda$12(Ljp/co/sony/mc/camera/view/viewbinder/YoutubeLiveChatViewBinder;Ljava/lang/Boolean;)Lkotlin/Unit;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method public static synthetic $r8$lambda$oH6_Q23AuErr4t90qNk2qRQV7pw(Ljp/co/sony/mc/camera/view/viewbinder/YoutubeLiveChatViewBinder;Ljp/co/sony/mc/camera/view/orientation/LayoutOrientation;)Lkotlin/Unit;
+    .locals 0
+
+    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/view/viewbinder/YoutubeLiveChatViewBinder;->onCreate$lambda$16(Ljp/co/sony/mc/camera/view/viewbinder/YoutubeLiveChatViewBinder;Ljp/co/sony/mc/camera/view/orientation/LayoutOrientation;)Lkotlin/Unit;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method public static synthetic $r8$lambda$sOtDULkY3UR152tAS1yvs63rA1c(Ljp/co/sony/mc/camera/view/viewbinder/YoutubeLiveChatViewBinder;Ljava/lang/Boolean;)Lkotlin/Unit;
+    .locals 0
+
+    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/view/viewbinder/YoutubeLiveChatViewBinder;->onCreate$lambda$9(Ljp/co/sony/mc/camera/view/viewbinder/YoutubeLiveChatViewBinder;Ljava/lang/Boolean;)Lkotlin/Unit;
+
+    move-result-object p0
+
+    return-object p0
 .end method
 
 .method static constructor <clinit>()V
@@ -174,24 +225,6 @@
     return-void
 .end method
 
-.method public static final synthetic access$getBinding$p(Ljp/co/sony/mc/camera/view/viewbinder/YoutubeLiveChatViewBinder;)Ljp/co/sony/mc/camera/databinding/StreamLiveChatBinding;
-    .locals 0
-
-    .line 22
-    iget-object p0, p0, Ljp/co/sony/mc/camera/view/viewbinder/YoutubeLiveChatViewBinder;->binding:Ljp/co/sony/mc/camera/databinding/StreamLiveChatBinding;
-
-    return-object p0
-.end method
-
-.method public static final synthetic access$getContext$p(Ljp/co/sony/mc/camera/view/viewbinder/YoutubeLiveChatViewBinder;)Landroid/content/Context;
-    .locals 0
-
-    .line 22
-    iget-object p0, p0, Ljp/co/sony/mc/camera/view/viewbinder/YoutubeLiveChatViewBinder;->context:Landroid/content/Context;
-
-    return-object p0
-.end method
-
 .method public static final synthetic access$getYoutubeLiveChatUiState$p(Ljp/co/sony/mc/camera/view/viewbinder/YoutubeLiveChatViewBinder;)Ljp/co/sony/mc/camera/view/uistate/YoutubeLiveChatUiState;
     .locals 0
 
@@ -199,15 +232,6 @@
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/viewbinder/YoutubeLiveChatViewBinder;->youtubeLiveChatUiState:Ljp/co/sony/mc/camera/view/uistate/YoutubeLiveChatUiState;
 
     return-object p0
-.end method
-
-.method public static final synthetic access$rotateContainer(Ljp/co/sony/mc/camera/view/viewbinder/YoutubeLiveChatViewBinder;Ljp/co/sony/mc/camera/view/orientation/LayoutOrientation;)V
-    .locals 0
-
-    .line 22
-    invoke-direct {p0, p1}, Ljp/co/sony/mc/camera/view/viewbinder/YoutubeLiveChatViewBinder;->rotateContainer(Ljp/co/sony/mc/camera/view/orientation/LayoutOrientation;)V
-
-    return-void
 .end method
 
 .method private final getLifecycleOwner()Landroidx/lifecycle/LifecycleOwner;
@@ -254,7 +278,154 @@
     return-void
 .end method
 
-.method private static final onCreate$lambda$3(Landroid/view/View;Landroid/view/MotionEvent;)Z
+.method private static final onCreate$lambda$12(Ljp/co/sony/mc/camera/view/viewbinder/YoutubeLiveChatViewBinder;Ljava/lang/Boolean;)Lkotlin/Unit;
+    .locals 2
+
+    const-string/jumbo v0, "this$0"
+
+    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 108
+    new-instance v0, Landroidx/constraintlayout/widget/ConstraintLayout$LayoutParams;
+
+    const/4 v1, 0x0
+
+    invoke-direct {v0, v1, v1}, Landroidx/constraintlayout/widget/ConstraintLayout$LayoutParams;-><init>(II)V
+
+    .line 109
+    iput v1, v0, Landroidx/constraintlayout/widget/ConstraintLayout$LayoutParams;->startToStart:I
+
+    .line 110
+    iput v1, v0, Landroidx/constraintlayout/widget/ConstraintLayout$LayoutParams;->endToEnd:I
+
+    .line 111
+    iput v1, v0, Landroidx/constraintlayout/widget/ConstraintLayout$LayoutParams;->bottomToBottom:I
+
+    .line 112
+    invoke-virtual {p1}, Ljava/lang/Boolean;->booleanValue()Z
+
+    move-result p1
+
+    if-eqz p1, :cond_0
+
+    .line 113
+    iput v1, v0, Landroidx/constraintlayout/widget/ConstraintLayout$LayoutParams;->bottomToBottom:I
+
+    .line 114
+    const-string p1, "1:1"
+
+    iput-object p1, v0, Landroidx/constraintlayout/widget/ConstraintLayout$LayoutParams;->dimensionRatio:Ljava/lang/String;
+
+    .line 115
+    iget-object p1, p0, Ljp/co/sony/mc/camera/view/viewbinder/YoutubeLiveChatViewBinder;->binding:Ljp/co/sony/mc/camera/databinding/StreamLiveChatBinding;
+
+    iget-object p1, p1, Ljp/co/sony/mc/camera/databinding/StreamLiveChatBinding;->chatArea:Landroidx/constraintlayout/widget/ConstraintLayout;
+
+    check-cast v0, Landroid/view/ViewGroup$LayoutParams;
+
+    invoke-virtual {p1, v0}, Landroidx/constraintlayout/widget/ConstraintLayout;->setLayoutParams(Landroid/view/ViewGroup$LayoutParams;)V
+
+    .line 116
+    iget-object p1, p0, Ljp/co/sony/mc/camera/view/viewbinder/YoutubeLiveChatViewBinder;->binding:Ljp/co/sony/mc/camera/databinding/StreamLiveChatBinding;
+
+    iget-object p1, p1, Ljp/co/sony/mc/camera/databinding/StreamLiveChatBinding;->sizeChangeButton:Landroid/widget/ImageButton;
+
+    const v0, 0x7f0800f8
+
+    invoke-virtual {p1, v0}, Landroid/widget/ImageButton;->setImageResource(I)V
+
+    .line 119
+    iget-object p0, p0, Ljp/co/sony/mc/camera/view/viewbinder/YoutubeLiveChatViewBinder;->binding:Ljp/co/sony/mc/camera/databinding/StreamLiveChatBinding;
+
+    iget-object p0, p0, Ljp/co/sony/mc/camera/databinding/StreamLiveChatBinding;->sizeChangeButton:Landroid/widget/ImageButton;
+
+    .line 120
+    invoke-virtual {p0, v0}, Landroid/widget/ImageButton;->setImageResource(I)V
+
+    .line 121
+    invoke-virtual {p0}, Landroid/widget/ImageButton;->getContext()Landroid/content/Context;
+
+    move-result-object p1
+
+    const v0, 0x7f1100f0
+
+    invoke-virtual {p1, v0}, Landroid/content/Context;->getString(I)Ljava/lang/String;
+
+    move-result-object p1
+
+    check-cast p1, Ljava/lang/CharSequence;
+
+    invoke-virtual {p0, p1}, Landroid/widget/ImageButton;->setContentDescription(Ljava/lang/CharSequence;)V
+
+    goto :goto_0
+
+    .line 126
+    :cond_0
+    iget-object p1, p0, Ljp/co/sony/mc/camera/view/viewbinder/YoutubeLiveChatViewBinder;->context:Landroid/content/Context;
+
+    if-nez p1, :cond_1
+
+    const-string p1, "context"
+
+    invoke-static {p1}, Lkotlin/jvm/internal/Intrinsics;->throwUninitializedPropertyAccessException(Ljava/lang/String;)V
+
+    const/4 p1, 0x0
+
+    :cond_1
+    invoke-virtual {p1}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
+
+    move-result-object p1
+
+    const v1, 0x7f070270
+
+    invoke-virtual {p1, v1}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
+
+    move-result p1
+
+    iput p1, v0, Landroidx/constraintlayout/widget/ConstraintLayout$LayoutParams;->height:I
+
+    .line 129
+    iget-object p1, p0, Ljp/co/sony/mc/camera/view/viewbinder/YoutubeLiveChatViewBinder;->binding:Ljp/co/sony/mc/camera/databinding/StreamLiveChatBinding;
+
+    iget-object p1, p1, Ljp/co/sony/mc/camera/databinding/StreamLiveChatBinding;->chatArea:Landroidx/constraintlayout/widget/ConstraintLayout;
+
+    check-cast v0, Landroid/view/ViewGroup$LayoutParams;
+
+    invoke-virtual {p1, v0}, Landroidx/constraintlayout/widget/ConstraintLayout;->setLayoutParams(Landroid/view/ViewGroup$LayoutParams;)V
+
+    .line 130
+    iget-object p0, p0, Ljp/co/sony/mc/camera/view/viewbinder/YoutubeLiveChatViewBinder;->binding:Ljp/co/sony/mc/camera/databinding/StreamLiveChatBinding;
+
+    iget-object p0, p0, Ljp/co/sony/mc/camera/databinding/StreamLiveChatBinding;->sizeChangeButton:Landroid/widget/ImageButton;
+
+    const p1, 0x7f0800f7
+
+    .line 131
+    invoke-virtual {p0, p1}, Landroid/widget/ImageButton;->setImageResource(I)V
+
+    .line 132
+    invoke-virtual {p0}, Landroid/widget/ImageButton;->getContext()Landroid/content/Context;
+
+    move-result-object p1
+
+    const v0, 0x7f11009b
+
+    invoke-virtual {p1, v0}, Landroid/content/Context;->getString(I)Ljava/lang/String;
+
+    move-result-object p1
+
+    check-cast p1, Ljava/lang/CharSequence;
+
+    invoke-virtual {p0, p1}, Landroid/widget/ImageButton;->setContentDescription(Ljava/lang/CharSequence;)V
+
+    .line 137
+    :goto_0
+    sget-object p0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
+
+    return-object p0
+.end method
+
+.method private static final onCreate$lambda$13(Landroid/view/View;Landroid/view/MotionEvent;)Z
     .locals 0
 
     const/4 p0, 0x1
@@ -262,7 +433,7 @@
     return p0
 .end method
 
-.method private static final onCreate$lambda$4(Ljp/co/sony/mc/camera/view/viewbinder/YoutubeLiveChatViewBinder;Ljp/co/sony/mc/camera/rtmp/YoutubeLiveChatAdapter;Landroid/view/View;)V
+.method private static final onCreate$lambda$14(Ljp/co/sony/mc/camera/view/viewbinder/YoutubeLiveChatViewBinder;Ljp/co/sony/mc/camera/rtmp/YoutubeLiveChatAdapter;Landroid/view/View;)V
     .locals 2
 
     const-string/jumbo p2, "this$0"
@@ -309,6 +480,215 @@
     invoke-virtual {p0, p1}, Landroidx/recyclerview/widget/RecyclerView;->smoothScrollToPosition(I)V
 
     return-void
+.end method
+
+.method private static final onCreate$lambda$16(Ljp/co/sony/mc/camera/view/viewbinder/YoutubeLiveChatViewBinder;Ljp/co/sony/mc/camera/view/orientation/LayoutOrientation;)Lkotlin/Unit;
+    .locals 1
+
+    const-string/jumbo v0, "this$0"
+
+    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 163
+    invoke-static {p1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;)V
+
+    invoke-direct {p0, p1}, Ljp/co/sony/mc/camera/view/viewbinder/YoutubeLiveChatViewBinder;->rotateContainer(Ljp/co/sony/mc/camera/view/orientation/LayoutOrientation;)V
+
+    .line 164
+    sget-object p0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
+
+    return-object p0
+.end method
+
+.method private static final onCreate$lambda$5(Ljp/co/sony/mc/camera/rtmp/YoutubeLiveChatAdapter;Ljp/co/sony/mc/camera/view/viewbinder/YoutubeLiveChatViewBinder;Ljp/co/sony/mc/camera/rtmp/YouTubeLiveChatData;)Lkotlin/Unit;
+    .locals 2
+
+    const-string v0, "$youtubeLiveChatAdapter"
+
+    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+
+    const-string/jumbo v0, "this$0"
+
+    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+
+    if-eqz p2, :cond_1
+
+    .line 73
+    iget-object p2, p1, Ljp/co/sony/mc/camera/view/viewbinder/YoutubeLiveChatViewBinder;->youtubeLiveChatUiState:Ljp/co/sony/mc/camera/view/uistate/YoutubeLiveChatUiState;
+
+    invoke-virtual {p2}, Ljp/co/sony/mc/camera/view/uistate/YoutubeLiveChatUiState;->getChatList()Landroidx/lifecycle/LiveData;
+
+    move-result-object p2
+
+    invoke-virtual {p2}, Landroidx/lifecycle/LiveData;->getValue()Ljava/lang/Object;
+
+    move-result-object p2
+
+    check-cast p2, Ljava/util/List;
+
+    if-nez p2, :cond_0
+
+    invoke-static {}, Ljava/util/Collections;->emptyList()Ljava/util/List;
+
+    move-result-object p2
+
+    const-string v0, "emptyList(...)"
+
+    invoke-static {p2, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 72
+    :cond_0
+    invoke-virtual {p0, p2}, Ljp/co/sony/mc/camera/rtmp/YoutubeLiveChatAdapter;->setChatDataList(Ljava/util/List;)V
+
+    .line 75
+    iget-object p2, p1, Ljp/co/sony/mc/camera/view/viewbinder/YoutubeLiveChatViewBinder;->youtubeLiveChatUiState:Ljp/co/sony/mc/camera/view/uistate/YoutubeLiveChatUiState;
+
+    invoke-virtual {p2}, Ljp/co/sony/mc/camera/view/uistate/YoutubeLiveChatUiState;->getLIST_START_POSITION()I
+
+    move-result p2
+
+    .line 76
+    invoke-virtual {p0}, Ljp/co/sony/mc/camera/rtmp/YoutubeLiveChatAdapter;->getChatDataList()Ljava/util/List;
+
+    move-result-object v0
+
+    invoke-interface {v0}, Ljava/util/List;->size()I
+
+    move-result v0
+
+    .line 74
+    invoke-virtual {p0, p2, v0}, Ljp/co/sony/mc/camera/rtmp/YoutubeLiveChatAdapter;->notifyItemRangeChanged(II)V
+
+    .line 78
+    iget-object p2, p1, Ljp/co/sony/mc/camera/view/viewbinder/YoutubeLiveChatViewBinder;->youtubeLiveChatUiState:Ljp/co/sony/mc/camera/view/uistate/YoutubeLiveChatUiState;
+
+    invoke-virtual {p2}, Ljp/co/sony/mc/camera/view/uistate/YoutubeLiveChatUiState;->isShowChatLatest()Landroidx/lifecycle/MutableLiveData;
+
+    move-result-object p2
+
+    invoke-virtual {p2}, Landroidx/lifecycle/MutableLiveData;->getValue()Ljava/lang/Object;
+
+    move-result-object p2
+
+    const/4 v0, 0x1
+
+    invoke-static {v0}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
+
+    move-result-object v1
+
+    invoke-static {p2, v1}, Lkotlin/jvm/internal/Intrinsics;->areEqual(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    move-result p2
+
+    if-eqz p2, :cond_1
+
+    .line 79
+    iget-object p1, p1, Ljp/co/sony/mc/camera/view/viewbinder/YoutubeLiveChatViewBinder;->binding:Ljp/co/sony/mc/camera/databinding/StreamLiveChatBinding;
+
+    iget-object p1, p1, Ljp/co/sony/mc/camera/databinding/StreamLiveChatBinding;->chatLogList:Landroidx/recyclerview/widget/RecyclerView;
+
+    invoke-virtual {p0}, Ljp/co/sony/mc/camera/rtmp/YoutubeLiveChatAdapter;->getItemCount()I
+
+    move-result p0
+
+    sub-int/2addr p0, v0
+
+    invoke-virtual {p1, p0}, Landroidx/recyclerview/widget/RecyclerView;->scrollToPosition(I)V
+
+    .line 83
+    :cond_1
+    sget-object p0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
+
+    return-object p0
+.end method
+
+.method private static final onCreate$lambda$8(Ljp/co/sony/mc/camera/view/viewbinder/YoutubeLiveChatViewBinder;Ljava/util/List;)Lkotlin/Unit;
+    .locals 1
+
+    const-string/jumbo v0, "this$0"
+
+    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+
+    if-eqz p1, :cond_0
+
+    .line 87
+    iget-object p1, p0, Ljp/co/sony/mc/camera/view/viewbinder/YoutubeLiveChatViewBinder;->binding:Ljp/co/sony/mc/camera/databinding/StreamLiveChatBinding;
+
+    iget-object p1, p1, Ljp/co/sony/mc/camera/databinding/StreamLiveChatBinding;->chatLogList:Landroidx/recyclerview/widget/RecyclerView;
+
+    invoke-virtual {p1}, Landroidx/recyclerview/widget/RecyclerView;->getAdapter()Landroidx/recyclerview/widget/RecyclerView$Adapter;
+
+    move-result-object p1
+
+    instance-of p1, p1, Ljp/co/sony/mc/camera/rtmp/YoutubeLiveChatAdapter;
+
+    if-eqz p1, :cond_0
+
+    .line 88
+    iget-object p0, p0, Ljp/co/sony/mc/camera/view/viewbinder/YoutubeLiveChatViewBinder;->binding:Ljp/co/sony/mc/camera/databinding/StreamLiveChatBinding;
+
+    iget-object p0, p0, Ljp/co/sony/mc/camera/databinding/StreamLiveChatBinding;->chatLogList:Landroidx/recyclerview/widget/RecyclerView;
+
+    invoke-virtual {p0}, Landroidx/recyclerview/widget/RecyclerView;->getAdapter()Landroidx/recyclerview/widget/RecyclerView$Adapter;
+
+    move-result-object p0
+
+    const-string p1, "null cannot be cast to non-null type jp.co.sony.mc.camera.rtmp.YoutubeLiveChatAdapter"
+
+    invoke-static {p0, p1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;Ljava/lang/String;)V
+
+    check-cast p0, Ljp/co/sony/mc/camera/rtmp/YoutubeLiveChatAdapter;
+
+    .line 89
+    invoke-virtual {p0}, Ljp/co/sony/mc/camera/rtmp/YoutubeLiveChatAdapter;->notifyDataSetChanged()V
+
+    .line 93
+    :cond_0
+    sget-object p0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
+
+    return-object p0
+.end method
+
+.method private static final onCreate$lambda$9(Ljp/co/sony/mc/camera/view/viewbinder/YoutubeLiveChatViewBinder;Ljava/lang/Boolean;)Lkotlin/Unit;
+    .locals 1
+
+    const-string/jumbo v0, "this$0"
+
+    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 96
+    invoke-virtual {p1}, Ljava/lang/Boolean;->booleanValue()Z
+
+    move-result p1
+
+    if-eqz p1, :cond_0
+
+    .line 97
+    iget-object p0, p0, Ljp/co/sony/mc/camera/view/viewbinder/YoutubeLiveChatViewBinder;->binding:Ljp/co/sony/mc/camera/databinding/StreamLiveChatBinding;
+
+    iget-object p0, p0, Ljp/co/sony/mc/camera/databinding/StreamLiveChatBinding;->chatGuideText:Landroid/widget/TextView;
+
+    const p1, 0x7f110154
+
+    invoke-virtual {p0, p1}, Landroid/widget/TextView;->setText(I)V
+
+    goto :goto_0
+
+    .line 101
+    :cond_0
+    iget-object p0, p0, Ljp/co/sony/mc/camera/view/viewbinder/YoutubeLiveChatViewBinder;->binding:Ljp/co/sony/mc/camera/databinding/StreamLiveChatBinding;
+
+    iget-object p0, p0, Ljp/co/sony/mc/camera/databinding/StreamLiveChatBinding;->chatGuideText:Landroid/widget/TextView;
+
+    const p1, 0x7f110155
+
+    invoke-virtual {p0, p1}, Landroid/widget/TextView;->setText(I)V
+
+    .line 105
+    :goto_0
+    sget-object p0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
+
+    return-object p0
 .end method
 
 .method private final rotateContainer(Ljp/co/sony/mc/camera/view/orientation/LayoutOrientation;)V
@@ -365,7 +745,6 @@
 
     goto :goto_0
 
-    .line 191
     :cond_0
     new-instance p0, Lkotlin/NoWhenBranchMatchedException;
 
@@ -438,73 +817,71 @@
 
     move-result-object p1
 
-    const-string v0, "getContext(...)"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
-
     iput-object p1, p0, Ljp/co/sony/mc/camera/view/viewbinder/YoutubeLiveChatViewBinder;->context:Landroid/content/Context;
 
     .line 48
     new-instance p1, Ljp/co/sony/mc/camera/rtmp/YoutubeLiveChatAdapter;
 
     .line 49
-    iget-object v1, p0, Ljp/co/sony/mc/camera/view/viewbinder/YoutubeLiveChatViewBinder;->context:Landroid/content/Context;
+    iget-object v0, p0, Ljp/co/sony/mc/camera/view/viewbinder/YoutubeLiveChatViewBinder;->context:Landroid/content/Context;
 
-    const/4 v2, 0x0
+    const/4 v1, 0x0
 
-    const-string v3, "context"
+    const-string v2, "context"
 
-    if-nez v1, :cond_0
+    if-nez v0, :cond_0
 
-    invoke-static {v3}, Lkotlin/jvm/internal/Intrinsics;->throwUninitializedPropertyAccessException(Ljava/lang/String;)V
+    invoke-static {v2}, Lkotlin/jvm/internal/Intrinsics;->throwUninitializedPropertyAccessException(Ljava/lang/String;)V
 
-    move-object v1, v2
+    move-object v0, v1
 
     .line 50
     :cond_0
-    iget-object v4, p0, Ljp/co/sony/mc/camera/view/viewbinder/YoutubeLiveChatViewBinder;->youtubeLiveChatUiState:Ljp/co/sony/mc/camera/view/uistate/YoutubeLiveChatUiState;
+    iget-object v3, p0, Ljp/co/sony/mc/camera/view/viewbinder/YoutubeLiveChatViewBinder;->youtubeLiveChatUiState:Ljp/co/sony/mc/camera/view/uistate/YoutubeLiveChatUiState;
 
     .line 51
-    iget-object v5, p0, Ljp/co/sony/mc/camera/view/viewbinder/YoutubeLiveChatViewBinder;->messageUiState:Ljp/co/sony/mc/camera/view/uistate/MessageUiState;
+    iget-object v4, p0, Ljp/co/sony/mc/camera/view/viewbinder/YoutubeLiveChatViewBinder;->messageUiState:Ljp/co/sony/mc/camera/view/uistate/MessageUiState;
 
     .line 48
-    invoke-direct {p1, v1, v4, v5}, Ljp/co/sony/mc/camera/rtmp/YoutubeLiveChatAdapter;-><init>(Landroid/content/Context;Ljp/co/sony/mc/camera/view/uistate/YoutubeLiveChatUiState;Ljp/co/sony/mc/camera/view/uistate/MessageUiState;)V
+    invoke-direct {p1, v0, v3, v4}, Ljp/co/sony/mc/camera/rtmp/YoutubeLiveChatAdapter;-><init>(Landroid/content/Context;Ljp/co/sony/mc/camera/view/uistate/YoutubeLiveChatUiState;Ljp/co/sony/mc/camera/view/uistate/MessageUiState;)V
 
     .line 53
-    iget-object v1, p0, Ljp/co/sony/mc/camera/view/viewbinder/YoutubeLiveChatViewBinder;->binding:Ljp/co/sony/mc/camera/databinding/StreamLiveChatBinding;
+    iget-object v0, p0, Ljp/co/sony/mc/camera/view/viewbinder/YoutubeLiveChatViewBinder;->binding:Ljp/co/sony/mc/camera/databinding/StreamLiveChatBinding;
 
-    iget-object v1, v1, Ljp/co/sony/mc/camera/databinding/StreamLiveChatBinding;->chatLogList:Landroidx/recyclerview/widget/RecyclerView;
+    iget-object v0, v0, Ljp/co/sony/mc/camera/databinding/StreamLiveChatBinding;->chatLogList:Landroidx/recyclerview/widget/RecyclerView;
 
     .line 54
-    new-instance v4, Ljp/co/sony/mc/camera/rtmp/CustomLayoutManager;
+    new-instance v3, Ljp/co/sony/mc/camera/rtmp/CustomLayoutManager;
 
-    invoke-virtual {v1}, Landroidx/recyclerview/widget/RecyclerView;->getContext()Landroid/content/Context;
+    invoke-virtual {v0}, Landroidx/recyclerview/widget/RecyclerView;->getContext()Landroid/content/Context;
 
-    move-result-object v5
+    move-result-object v4
 
-    invoke-static {v5, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
+    const-string v5, "getContext(...)"
 
-    invoke-direct {v4, v5}, Ljp/co/sony/mc/camera/rtmp/CustomLayoutManager;-><init>(Landroid/content/Context;)V
+    invoke-static {v4, v5}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
 
-    check-cast v4, Landroidx/recyclerview/widget/RecyclerView$LayoutManager;
+    invoke-direct {v3, v4}, Ljp/co/sony/mc/camera/rtmp/CustomLayoutManager;-><init>(Landroid/content/Context;)V
 
-    invoke-virtual {v1, v4}, Landroidx/recyclerview/widget/RecyclerView;->setLayoutManager(Landroidx/recyclerview/widget/RecyclerView$LayoutManager;)V
+    check-cast v3, Landroidx/recyclerview/widget/RecyclerView$LayoutManager;
+
+    invoke-virtual {v0, v3}, Landroidx/recyclerview/widget/RecyclerView;->setLayoutManager(Landroidx/recyclerview/widget/RecyclerView$LayoutManager;)V
 
     .line 55
-    move-object v0, p1
+    move-object v3, p1
 
-    check-cast v0, Landroidx/recyclerview/widget/RecyclerView$Adapter;
+    check-cast v3, Landroidx/recyclerview/widget/RecyclerView$Adapter;
 
-    invoke-virtual {v1, v0}, Landroidx/recyclerview/widget/RecyclerView;->setAdapter(Landroidx/recyclerview/widget/RecyclerView$Adapter;)V
+    invoke-virtual {v0, v3}, Landroidx/recyclerview/widget/RecyclerView;->setAdapter(Landroidx/recyclerview/widget/RecyclerView$Adapter;)V
 
     .line 56
-    new-instance v0, Ljp/co/sony/mc/camera/view/viewbinder/YoutubeLiveChatViewBinder$onCreate$1$1;
+    new-instance v3, Ljp/co/sony/mc/camera/view/viewbinder/YoutubeLiveChatViewBinder$onCreate$1$1;
 
-    invoke-direct {v0, p0, v1, p1}, Ljp/co/sony/mc/camera/view/viewbinder/YoutubeLiveChatViewBinder$onCreate$1$1;-><init>(Ljp/co/sony/mc/camera/view/viewbinder/YoutubeLiveChatViewBinder;Landroidx/recyclerview/widget/RecyclerView;Ljp/co/sony/mc/camera/rtmp/YoutubeLiveChatAdapter;)V
+    invoke-direct {v3, p0, v0, p1}, Ljp/co/sony/mc/camera/view/viewbinder/YoutubeLiveChatViewBinder$onCreate$1$1;-><init>(Ljp/co/sony/mc/camera/view/viewbinder/YoutubeLiveChatViewBinder;Landroidx/recyclerview/widget/RecyclerView;Ljp/co/sony/mc/camera/rtmp/YoutubeLiveChatAdapter;)V
 
-    check-cast v0, Landroidx/recyclerview/widget/RecyclerView$OnScrollListener;
+    check-cast v3, Landroidx/recyclerview/widget/RecyclerView$OnScrollListener;
 
-    invoke-virtual {v1, v0}, Landroidx/recyclerview/widget/RecyclerView;->addOnScrollListener(Landroidx/recyclerview/widget/RecyclerView$OnScrollListener;)V
+    invoke-virtual {v0, v3}, Landroidx/recyclerview/widget/RecyclerView;->addOnScrollListener(Landroidx/recyclerview/widget/RecyclerView$OnScrollListener;)V
 
     .line 69
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/viewbinder/YoutubeLiveChatViewBinder;->binding:Ljp/co/sony/mc/camera/databinding/StreamLiveChatBinding;
@@ -521,13 +898,11 @@
 
     invoke-direct {p0}, Ljp/co/sony/mc/camera/view/viewbinder/YoutubeLiveChatViewBinder;->getLifecycleOwner()Landroidx/lifecycle/LifecycleOwner;
 
-    move-result-object v1
+    move-result-object v3
 
-    new-instance v4, Ljp/co/sony/mc/camera/view/viewbinder/YoutubeLiveChatViewBinder$onCreate$2;
+    new-instance v4, Ljp/co/sony/mc/camera/view/viewbinder/YoutubeLiveChatViewBinder$$ExternalSyntheticLambda1;
 
-    invoke-direct {v4, p1, p0}, Ljp/co/sony/mc/camera/view/viewbinder/YoutubeLiveChatViewBinder$onCreate$2;-><init>(Ljp/co/sony/mc/camera/rtmp/YoutubeLiveChatAdapter;Ljp/co/sony/mc/camera/view/viewbinder/YoutubeLiveChatViewBinder;)V
-
-    check-cast v4, Lkotlin/jvm/functions/Function1;
+    invoke-direct {v4, p1, p0}, Ljp/co/sony/mc/camera/view/viewbinder/YoutubeLiveChatViewBinder$$ExternalSyntheticLambda1;-><init>(Ljp/co/sony/mc/camera/rtmp/YoutubeLiveChatAdapter;Ljp/co/sony/mc/camera/view/viewbinder/YoutubeLiveChatViewBinder;)V
 
     new-instance v5, Ljp/co/sony/mc/camera/view/viewbinder/YoutubeLiveChatViewBinder$sam$androidx_lifecycle_Observer$0;
 
@@ -535,7 +910,7 @@
 
     check-cast v5, Landroidx/lifecycle/Observer;
 
-    invoke-virtual {v0, v1, v5}, Landroidx/lifecycle/LiveData;->observe(Landroidx/lifecycle/LifecycleOwner;Landroidx/lifecycle/Observer;)V
+    invoke-virtual {v0, v3, v5}, Landroidx/lifecycle/LiveData;->observe(Landroidx/lifecycle/LifecycleOwner;Landroidx/lifecycle/Observer;)V
 
     .line 85
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/viewbinder/YoutubeLiveChatViewBinder;->binding:Ljp/co/sony/mc/camera/databinding/StreamLiveChatBinding;
@@ -552,13 +927,11 @@
 
     invoke-direct {p0}, Ljp/co/sony/mc/camera/view/viewbinder/YoutubeLiveChatViewBinder;->getLifecycleOwner()Landroidx/lifecycle/LifecycleOwner;
 
-    move-result-object v1
+    move-result-object v3
 
-    new-instance v4, Ljp/co/sony/mc/camera/view/viewbinder/YoutubeLiveChatViewBinder$onCreate$3;
+    new-instance v4, Ljp/co/sony/mc/camera/view/viewbinder/YoutubeLiveChatViewBinder$$ExternalSyntheticLambda2;
 
-    invoke-direct {v4, p0}, Ljp/co/sony/mc/camera/view/viewbinder/YoutubeLiveChatViewBinder$onCreate$3;-><init>(Ljp/co/sony/mc/camera/view/viewbinder/YoutubeLiveChatViewBinder;)V
-
-    check-cast v4, Lkotlin/jvm/functions/Function1;
+    invoke-direct {v4, p0}, Ljp/co/sony/mc/camera/view/viewbinder/YoutubeLiveChatViewBinder$$ExternalSyntheticLambda2;-><init>(Ljp/co/sony/mc/camera/view/viewbinder/YoutubeLiveChatViewBinder;)V
 
     new-instance v5, Ljp/co/sony/mc/camera/view/viewbinder/YoutubeLiveChatViewBinder$sam$androidx_lifecycle_Observer$0;
 
@@ -566,7 +939,7 @@
 
     check-cast v5, Landroidx/lifecycle/Observer;
 
-    invoke-virtual {v0, v1, v5}, Landroidx/lifecycle/LiveData;->observe(Landroidx/lifecycle/LifecycleOwner;Landroidx/lifecycle/Observer;)V
+    invoke-virtual {v0, v3, v5}, Landroidx/lifecycle/LiveData;->observe(Landroidx/lifecycle/LifecycleOwner;Landroidx/lifecycle/Observer;)V
 
     .line 95
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/viewbinder/YoutubeLiveChatViewBinder;->binding:Ljp/co/sony/mc/camera/databinding/StreamLiveChatBinding;
@@ -583,13 +956,11 @@
 
     invoke-direct {p0}, Ljp/co/sony/mc/camera/view/viewbinder/YoutubeLiveChatViewBinder;->getLifecycleOwner()Landroidx/lifecycle/LifecycleOwner;
 
-    move-result-object v1
+    move-result-object v3
 
-    new-instance v4, Ljp/co/sony/mc/camera/view/viewbinder/YoutubeLiveChatViewBinder$onCreate$4;
+    new-instance v4, Ljp/co/sony/mc/camera/view/viewbinder/YoutubeLiveChatViewBinder$$ExternalSyntheticLambda3;
 
-    invoke-direct {v4, p0}, Ljp/co/sony/mc/camera/view/viewbinder/YoutubeLiveChatViewBinder$onCreate$4;-><init>(Ljp/co/sony/mc/camera/view/viewbinder/YoutubeLiveChatViewBinder;)V
-
-    check-cast v4, Lkotlin/jvm/functions/Function1;
+    invoke-direct {v4, p0}, Ljp/co/sony/mc/camera/view/viewbinder/YoutubeLiveChatViewBinder$$ExternalSyntheticLambda3;-><init>(Ljp/co/sony/mc/camera/view/viewbinder/YoutubeLiveChatViewBinder;)V
 
     new-instance v5, Ljp/co/sony/mc/camera/view/viewbinder/YoutubeLiveChatViewBinder$sam$androidx_lifecycle_Observer$0;
 
@@ -597,7 +968,7 @@
 
     check-cast v5, Landroidx/lifecycle/Observer;
 
-    invoke-virtual {v0, v1, v5}, Landroidx/lifecycle/LiveData;->observe(Landroidx/lifecycle/LifecycleOwner;Landroidx/lifecycle/Observer;)V
+    invoke-virtual {v0, v3, v5}, Landroidx/lifecycle/LiveData;->observe(Landroidx/lifecycle/LifecycleOwner;Landroidx/lifecycle/Observer;)V
 
     .line 107
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/viewbinder/YoutubeLiveChatViewBinder;->binding:Ljp/co/sony/mc/camera/databinding/StreamLiveChatBinding;
@@ -614,13 +985,11 @@
 
     invoke-direct {p0}, Ljp/co/sony/mc/camera/view/viewbinder/YoutubeLiveChatViewBinder;->getLifecycleOwner()Landroidx/lifecycle/LifecycleOwner;
 
-    move-result-object v1
+    move-result-object v3
 
-    new-instance v4, Ljp/co/sony/mc/camera/view/viewbinder/YoutubeLiveChatViewBinder$onCreate$5;
+    new-instance v4, Ljp/co/sony/mc/camera/view/viewbinder/YoutubeLiveChatViewBinder$$ExternalSyntheticLambda4;
 
-    invoke-direct {v4, p0}, Ljp/co/sony/mc/camera/view/viewbinder/YoutubeLiveChatViewBinder$onCreate$5;-><init>(Ljp/co/sony/mc/camera/view/viewbinder/YoutubeLiveChatViewBinder;)V
-
-    check-cast v4, Lkotlin/jvm/functions/Function1;
+    invoke-direct {v4, p0}, Ljp/co/sony/mc/camera/view/viewbinder/YoutubeLiveChatViewBinder$$ExternalSyntheticLambda4;-><init>(Ljp/co/sony/mc/camera/view/viewbinder/YoutubeLiveChatViewBinder;)V
 
     new-instance v5, Ljp/co/sony/mc/camera/view/viewbinder/YoutubeLiveChatViewBinder$sam$androidx_lifecycle_Observer$0;
 
@@ -628,29 +997,29 @@
 
     check-cast v5, Landroidx/lifecycle/Observer;
 
-    invoke-virtual {v0, v1, v5}, Landroidx/lifecycle/LiveData;->observe(Landroidx/lifecycle/LifecycleOwner;Landroidx/lifecycle/Observer;)V
+    invoke-virtual {v0, v3, v5}, Landroidx/lifecycle/LiveData;->observe(Landroidx/lifecycle/LifecycleOwner;Landroidx/lifecycle/Observer;)V
 
     .line 139
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/viewbinder/YoutubeLiveChatViewBinder;->binding:Ljp/co/sony/mc/camera/databinding/StreamLiveChatBinding;
 
     iget-object v0, v0, Ljp/co/sony/mc/camera/databinding/StreamLiveChatBinding;->chatArea:Landroidx/constraintlayout/widget/ConstraintLayout;
 
-    new-instance v1, Ljp/co/sony/mc/camera/view/viewbinder/YoutubeLiveChatViewBinder$$ExternalSyntheticLambda1;
+    new-instance v3, Ljp/co/sony/mc/camera/view/viewbinder/YoutubeLiveChatViewBinder$$ExternalSyntheticLambda5;
 
-    invoke-direct {v1}, Ljp/co/sony/mc/camera/view/viewbinder/YoutubeLiveChatViewBinder$$ExternalSyntheticLambda1;-><init>()V
+    invoke-direct {v3}, Ljp/co/sony/mc/camera/view/viewbinder/YoutubeLiveChatViewBinder$$ExternalSyntheticLambda5;-><init>()V
 
-    invoke-virtual {v0, v1}, Landroidx/constraintlayout/widget/ConstraintLayout;->setOnTouchListener(Landroid/view/View$OnTouchListener;)V
+    invoke-virtual {v0, v3}, Landroidx/constraintlayout/widget/ConstraintLayout;->setOnTouchListener(Landroid/view/View$OnTouchListener;)V
 
     .line 143
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/viewbinder/YoutubeLiveChatViewBinder;->binding:Ljp/co/sony/mc/camera/databinding/StreamLiveChatBinding;
 
     iget-object v0, v0, Ljp/co/sony/mc/camera/databinding/StreamLiveChatBinding;->jumpLatestChatButton:Landroid/widget/ImageButton;
 
-    new-instance v1, Ljp/co/sony/mc/camera/view/viewbinder/YoutubeLiveChatViewBinder$$ExternalSyntheticLambda2;
+    new-instance v3, Ljp/co/sony/mc/camera/view/viewbinder/YoutubeLiveChatViewBinder$$ExternalSyntheticLambda6;
 
-    invoke-direct {v1, p0, p1}, Ljp/co/sony/mc/camera/view/viewbinder/YoutubeLiveChatViewBinder$$ExternalSyntheticLambda2;-><init>(Ljp/co/sony/mc/camera/view/viewbinder/YoutubeLiveChatViewBinder;Ljp/co/sony/mc/camera/rtmp/YoutubeLiveChatAdapter;)V
+    invoke-direct {v3, p0, p1}, Ljp/co/sony/mc/camera/view/viewbinder/YoutubeLiveChatViewBinder$$ExternalSyntheticLambda6;-><init>(Ljp/co/sony/mc/camera/view/viewbinder/YoutubeLiveChatViewBinder;Ljp/co/sony/mc/camera/rtmp/YoutubeLiveChatAdapter;)V
 
-    invoke-virtual {v0, v1}, Landroid/widget/ImageButton;->setOnClickListener(Landroid/view/View$OnClickListener;)V
+    invoke-virtual {v0, v3}, Landroid/widget/ImageButton;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     .line 152
     iget-object p1, p0, Ljp/co/sony/mc/camera/view/viewbinder/YoutubeLiveChatViewBinder;->binding:Ljp/co/sony/mc/camera/databinding/StreamLiveChatBinding;
@@ -675,25 +1044,25 @@
     check-cast v0, Landroid/view/ViewGroup$LayoutParams;
 
     .line 203
-    move-object v1, v0
+    move-object v3, v0
 
-    check-cast v1, Landroidx/constraintlayout/widget/ConstraintLayout$LayoutParams;
+    check-cast v3, Landroidx/constraintlayout/widget/ConstraintLayout$LayoutParams;
 
     .line 153
     iget-object v4, p0, Ljp/co/sony/mc/camera/view/viewbinder/YoutubeLiveChatViewBinder;->context:Landroid/content/Context;
 
     if-nez v4, :cond_1
 
-    invoke-static {v3}, Lkotlin/jvm/internal/Intrinsics;->throwUninitializedPropertyAccessException(Ljava/lang/String;)V
+    invoke-static {v2}, Lkotlin/jvm/internal/Intrinsics;->throwUninitializedPropertyAccessException(Ljava/lang/String;)V
 
-    move-object v4, v2
+    move-object v4, v1
 
     :cond_1
     invoke-virtual {v4}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
 
     move-result-object v4
 
-    const v5, 0x7f070366
+    const v5, 0x7f0703a5
 
     invoke-virtual {v4, v5}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
@@ -704,16 +1073,16 @@
 
     if-nez v5, :cond_2
 
-    invoke-static {v3}, Lkotlin/jvm/internal/Intrinsics;->throwUninitializedPropertyAccessException(Ljava/lang/String;)V
+    invoke-static {v2}, Lkotlin/jvm/internal/Intrinsics;->throwUninitializedPropertyAccessException(Ljava/lang/String;)V
 
-    move-object v5, v2
+    move-object v5, v1
 
     :cond_2
     invoke-virtual {v5}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
 
     move-result-object v5
 
-    const v6, 0x7f0700a4
+    const v6, 0x7f0700b4
 
     invoke-virtual {v5, v6}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
@@ -728,28 +1097,28 @@
 
     if-nez v5, :cond_3
 
-    invoke-static {v3}, Lkotlin/jvm/internal/Intrinsics;->throwUninitializedPropertyAccessException(Ljava/lang/String;)V
+    invoke-static {v2}, Lkotlin/jvm/internal/Intrinsics;->throwUninitializedPropertyAccessException(Ljava/lang/String;)V
 
     goto :goto_0
 
     :cond_3
-    move-object v2, v5
+    move-object v1, v5
 
     :goto_0
-    invoke-virtual {v2}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {v1}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
 
-    move-result-object v2
+    move-result-object v1
 
-    const v3, 0x7f0701c3
+    const v2, 0x7f0701ee
 
-    invoke-virtual {v2, v3}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
+    invoke-virtual {v1, v2}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
-    move-result v2
+    move-result v1
 
-    add-int/2addr v4, v2
+    add-int/2addr v4, v1
 
     .line 153
-    iput v4, v1, Landroidx/constraintlayout/widget/ConstraintLayout$LayoutParams;->bottomMargin:I
+    iput v4, v3, Landroidx/constraintlayout/widget/ConstraintLayout$LayoutParams;->bottomMargin:I
 
     .line 204
     invoke-virtual {p1, v0}, Landroid/view/View;->setLayoutParams(Landroid/view/ViewGroup$LayoutParams;)V
@@ -774,11 +1143,9 @@
 
     move-result-object v0
 
-    new-instance v1, Ljp/co/sony/mc/camera/view/viewbinder/YoutubeLiveChatViewBinder$onCreate$9;
+    new-instance v1, Ljp/co/sony/mc/camera/view/viewbinder/YoutubeLiveChatViewBinder$$ExternalSyntheticLambda7;
 
-    invoke-direct {v1, p0}, Ljp/co/sony/mc/camera/view/viewbinder/YoutubeLiveChatViewBinder$onCreate$9;-><init>(Ljp/co/sony/mc/camera/view/viewbinder/YoutubeLiveChatViewBinder;)V
-
-    check-cast v1, Lkotlin/jvm/functions/Function1;
+    invoke-direct {v1, p0}, Ljp/co/sony/mc/camera/view/viewbinder/YoutubeLiveChatViewBinder$$ExternalSyntheticLambda7;-><init>(Ljp/co/sony/mc/camera/view/viewbinder/YoutubeLiveChatViewBinder;)V
 
     new-instance p0, Ljp/co/sony/mc/camera/view/viewbinder/YoutubeLiveChatViewBinder$sam$androidx_lifecycle_Observer$0;
 

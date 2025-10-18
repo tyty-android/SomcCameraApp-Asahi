@@ -5,7 +5,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/SourceDebugExtension;
-    value = "SMAP\n_StringsJvm.kt\nKotlin\n*S Kotlin\n*F\n+ 1 _StringsJvm.kt\nkotlin/text/StringsKt___StringsJvmKt\n+ 2 _Strings.kt\nkotlin/text/StringsKt___StringsKt\n*L\n1#1,108:1\n1239#2,14:109\n1521#2,14:123\n*S KotlinDebug\n*F\n+ 1 _StringsJvm.kt\nkotlin/text/StringsKt___StringsJvmKt\n*L\n45#1:109,14\n66#1:123,14\n*E\n"
+    value = "SMAP\n_StringsJvm.kt\nKotlin\n*S Kotlin\n*F\n+ 1 _StringsJvm.kt\nkotlin/text/StringsKt___StringsJvmKt\n+ 2 _Strings.kt\nkotlin/text/StringsKt___StringsKt\n*L\n1#1,108:1\n1244#2,14:109\n1526#2,14:123\n*S KotlinDebug\n*F\n+ 1 _StringsJvm.kt\nkotlin/text/StringsKt___StringsJvmKt\n*L\n45#1:109,14\n66#1:123,14\n*E\n"
 .end annotation
 
 .annotation runtime Lkotlin/Metadata;
@@ -107,7 +107,7 @@
 .end method
 
 .method public static final synthetic maxBy(Ljava/lang/CharSequence;Lkotlin/jvm/functions/Function1;)Ljava/lang/Character;
-    .locals 6
+    .locals 7
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<R::",
@@ -189,55 +189,42 @@
 
     check-cast v2, Ljava/lang/Comparable;
 
-    .line 114
-    new-instance v3, Lkotlin/ranges/IntRange;
+    const/4 v3, 0x1
 
-    const/4 v4, 0x1
-
-    invoke-direct {v3, v4, v1}, Lkotlin/ranges/IntRange;-><init>(II)V
-
-    invoke-virtual {v3}, Lkotlin/ranges/IntRange;->iterator()Lkotlin/collections/IntIterator;
-
-    move-result-object v1
-
-    :cond_2
-    :goto_0
-    invoke-virtual {v1}, Lkotlin/collections/IntIterator;->hasNext()Z
-
-    move-result v3
-
-    if-eqz v3, :cond_3
-
-    invoke-virtual {v1}, Lkotlin/collections/IntIterator;->nextInt()I
-
-    move-result v3
+    if-gt v3, v1, :cond_3
 
     .line 115
+    :goto_0
     invoke-interface {p0, v3}, Ljava/lang/CharSequence;->charAt(I)C
 
-    move-result v3
+    move-result v4
 
     .line 116
-    invoke-static {v3}, Ljava/lang/Character;->valueOf(C)Ljava/lang/Character;
+    invoke-static {v4}, Ljava/lang/Character;->valueOf(C)Ljava/lang/Character;
 
-    move-result-object v4
+    move-result-object v5
 
-    invoke-interface {p1, v4}, Lkotlin/jvm/functions/Function1;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-interface {p1, v5}, Lkotlin/jvm/functions/Function1;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
 
-    move-result-object v4
+    move-result-object v5
 
-    check-cast v4, Ljava/lang/Comparable;
+    check-cast v5, Ljava/lang/Comparable;
 
     .line 117
-    invoke-interface {v2, v4}, Ljava/lang/Comparable;->compareTo(Ljava/lang/Object;)I
+    invoke-interface {v2, v5}, Ljava/lang/Comparable;->compareTo(Ljava/lang/Object;)I
 
-    move-result v5
+    move-result v6
 
-    if-gez v5, :cond_2
+    if-gez v6, :cond_2
 
-    move v0, v3
+    move v0, v4
 
-    move-object v2, v4
+    move-object v2, v5
+
+    :cond_2
+    if-eq v3, v1, :cond_3
+
+    add-int/lit8 v3, v3, 0x1
 
     goto :goto_0
 
@@ -312,7 +299,7 @@
 .end method
 
 .method public static final synthetic minBy(Ljava/lang/CharSequence;Lkotlin/jvm/functions/Function1;)Ljava/lang/Character;
-    .locals 6
+    .locals 7
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<R::",
@@ -394,55 +381,42 @@
 
     check-cast v2, Ljava/lang/Comparable;
 
-    .line 128
-    new-instance v3, Lkotlin/ranges/IntRange;
+    const/4 v3, 0x1
 
-    const/4 v4, 0x1
-
-    invoke-direct {v3, v4, v1}, Lkotlin/ranges/IntRange;-><init>(II)V
-
-    invoke-virtual {v3}, Lkotlin/ranges/IntRange;->iterator()Lkotlin/collections/IntIterator;
-
-    move-result-object v1
-
-    :cond_2
-    :goto_0
-    invoke-virtual {v1}, Lkotlin/collections/IntIterator;->hasNext()Z
-
-    move-result v3
-
-    if-eqz v3, :cond_3
-
-    invoke-virtual {v1}, Lkotlin/collections/IntIterator;->nextInt()I
-
-    move-result v3
+    if-gt v3, v1, :cond_3
 
     .line 129
+    :goto_0
     invoke-interface {p0, v3}, Ljava/lang/CharSequence;->charAt(I)C
 
-    move-result v3
+    move-result v4
 
     .line 130
-    invoke-static {v3}, Ljava/lang/Character;->valueOf(C)Ljava/lang/Character;
+    invoke-static {v4}, Ljava/lang/Character;->valueOf(C)Ljava/lang/Character;
 
-    move-result-object v4
+    move-result-object v5
 
-    invoke-interface {p1, v4}, Lkotlin/jvm/functions/Function1;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-interface {p1, v5}, Lkotlin/jvm/functions/Function1;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
 
-    move-result-object v4
+    move-result-object v5
 
-    check-cast v4, Ljava/lang/Comparable;
+    check-cast v5, Ljava/lang/Comparable;
 
     .line 131
-    invoke-interface {v2, v4}, Ljava/lang/Comparable;->compareTo(Ljava/lang/Object;)I
+    invoke-interface {v2, v5}, Ljava/lang/Comparable;->compareTo(Ljava/lang/Object;)I
 
-    move-result v5
+    move-result v6
 
-    if-lez v5, :cond_2
+    if-lez v6, :cond_2
 
-    move v0, v3
+    move v0, v4
 
-    move-object v2, v4
+    move-object v2, v5
+
+    :cond_2
+    if-eq v3, v1, :cond_3
+
+    add-int/lit8 v3, v3, 0x1
 
     goto :goto_0
 
@@ -519,7 +493,7 @@
 
     move-result-object v0
 
-    const-string/jumbo v1, "valueOf(this.toLong())"
+    const-string/jumbo v1, "valueOf(...)"
 
     invoke-static {v0, v1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
 
@@ -552,7 +526,7 @@
 
     move-result-object v0
 
-    const-string/jumbo v2, "this.add(other)"
+    const-string v2, "add(...)"
 
     invoke-static {v0, v2}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
 
@@ -595,7 +569,7 @@
 
     move-result-object v0
 
-    const-string/jumbo v1, "valueOf(this.toLong())"
+    const-string/jumbo v1, "valueOf(...)"
 
     invoke-static {v0, v1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
 
@@ -628,7 +602,7 @@
 
     move-result-object v0
 
-    const-string/jumbo v2, "this.add(other)"
+    const-string v2, "add(...)"
 
     invoke-static {v0, v2}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
 

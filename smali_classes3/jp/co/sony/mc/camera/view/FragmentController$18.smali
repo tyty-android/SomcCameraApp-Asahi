@@ -22,7 +22,7 @@
 .method constructor <init>(Ljp/co/sony/mc/camera/view/FragmentController;)V
     .locals 0
 
-    .line 3204
+    .line 3347
     iput-object p1, p0, Ljp/co/sony/mc/camera/view/FragmentController$18;->this$0:Ljp/co/sony/mc/camera/view/FragmentController;
 
     invoke-direct {p0}, Landroid/app/KeyguardManager$KeyguardDismissCallback;-><init>()V
@@ -47,7 +47,7 @@
 .method public onDismissSucceeded()V
     .locals 0
 
-    .line 3212
+    .line 3355
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/FragmentController$18;->this$0:Ljp/co/sony/mc/camera/view/FragmentController;
 
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/view/FragmentController;->setRtmpStreamUrl()V

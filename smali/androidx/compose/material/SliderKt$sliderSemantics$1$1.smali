@@ -127,7 +127,7 @@
 .method public final invoke(F)Ljava/lang/Boolean;
     .locals 10
 
-    .line 864
+    .line 868
     iget-object v0, p0, Landroidx/compose/material/SliderKt$sliderSemantics$1$1;->$valueRange:Lkotlin/ranges/ClosedFloatingPointRange;
 
     invoke-interface {v0}, Lkotlin/ranges/ClosedFloatingPointRange;->getStart()Ljava/lang/Comparable;
@@ -156,7 +156,7 @@
 
     move-result p1
 
-    .line 866
+    .line 870
     iget v0, p0, Landroidx/compose/material/SliderKt$sliderSemantics$1$1;->$steps:I
 
     const/4 v1, 0x0
@@ -175,7 +175,7 @@
 
     move v3, v1
 
-    .line 870
+    .line 874
     :goto_0
     iget-object v6, p0, Landroidx/compose/material/SliderKt$sliderSemantics$1$1;->$valueRange:Lkotlin/ranges/ClosedFloatingPointRange;
 
@@ -189,7 +189,7 @@
 
     move-result v6
 
-    .line 871
+    .line 875
     iget-object v7, p0, Landroidx/compose/material/SliderKt$sliderSemantics$1$1;->$valueRange:Lkotlin/ranges/ClosedFloatingPointRange;
 
     invoke-interface {v7}, Lkotlin/ranges/ClosedFloatingPointRange;->getEndInclusive()Ljava/lang/Comparable;
@@ -204,7 +204,7 @@
 
     int-to-float v8, v3
 
-    .line 872
+    .line 876
     iget v9, p0, Landroidx/compose/material/SliderKt$sliderSemantics$1$1;->$steps:I
 
     add-int/2addr v9, v2
@@ -213,14 +213,14 @@
 
     div-float/2addr v8, v9
 
-    .line 869
+    .line 873
     invoke-static {v6, v7, v8}, Landroidx/compose/ui/util/MathHelpersKt;->lerp(FFF)F
 
     move-result v6
 
     sub-float v7, v6, p1
 
-    .line 873
+    .line 877
     invoke-static {v7}, Ljava/lang/Math;->abs(F)F
 
     move-result v8
@@ -229,7 +229,7 @@
 
     if-gtz v8, :cond_0
 
-    .line 874
+    .line 878
     invoke-static {v7}, Ljava/lang/Math;->abs(F)F
 
     move-result v4
@@ -246,7 +246,7 @@
     :cond_1
     move p1, v5
 
-    .line 884
+    .line 888
     :cond_2
     iget v0, p0, Landroidx/compose/material/SliderKt$sliderSemantics$1$1;->$coerced:F
 
@@ -256,7 +256,7 @@
 
     goto :goto_1
 
-    .line 887
+    .line 891
     :cond_3
     iget-object v0, p0, Landroidx/compose/material/SliderKt$sliderSemantics$1$1;->$onValueChange:Lkotlin/jvm/functions/Function1;
 
@@ -266,7 +266,7 @@
 
     invoke-interface {v0, p1}, Lkotlin/jvm/functions/Function1;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 888
+    .line 892
     iget-object p0, p0, Landroidx/compose/material/SliderKt$sliderSemantics$1$1;->$onValueChangeFinished:Lkotlin/jvm/functions/Function0;
 
     if-eqz p0, :cond_4
@@ -276,7 +276,7 @@
     :cond_4
     move v1, v2
 
-    .line 889
+    .line 893
     :goto_1
     invoke-static {v1}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
@@ -288,7 +288,7 @@
 .method public bridge synthetic invoke(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
 
-    .line 862
+    .line 866
     check-cast p1, Ljava/lang/Number;
 
     invoke-virtual {p1}, Ljava/lang/Number;->floatValue()F

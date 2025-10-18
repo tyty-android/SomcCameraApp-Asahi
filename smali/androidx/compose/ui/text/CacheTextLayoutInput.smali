@@ -33,17 +33,23 @@
 .end annotation
 
 
+# static fields
+.field public static final $stable:I
+
+
 # instance fields
 .field private final textLayoutInput:Landroidx/compose/ui/text/TextLayoutInput;
 
 
 # direct methods
+.method static constructor <clinit>()V
+    .locals 0
+
+    return-void
+.end method
+
 .method public constructor <init>(Landroidx/compose/ui/text/TextLayoutInput;)V
-    .locals 1
-
-    const-string/jumbo v0, "textLayoutInput"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+    .locals 0
 
     .line 374
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V

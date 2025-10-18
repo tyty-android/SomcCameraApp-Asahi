@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/SourceDebugExtension;
-    value = "SMAP\nMultiParagraphIntrinsics.kt\nKotlin\n*S Kotlin\n*F\n+ 1 MultiParagraphIntrinsics.kt\nandroidx/compose/ui/text/MultiParagraphIntrinsics\n+ 2 AnnotatedString.kt\nandroidx/compose/ui/text/AnnotatedStringKt\n+ 3 ListUtils.kt\nandroidx/compose/ui/util/ListUtilsKt\n+ 4 fake.kt\nkotlin/jvm/internal/FakeKt\n*L\n1#1,152:1\n803#2:153\n804#2,5:162\n151#3,3:154\n33#3,4:157\n154#3:161\n155#3:167\n38#3:168\n156#3:169\n101#3,2:170\n33#3,6:172\n103#3:178\n1#4:179\n*S KotlinDebug\n*F\n+ 1 MultiParagraphIntrinsics.kt\nandroidx/compose/ui/text/MultiParagraphIntrinsics\n*L\n95#1:153\n95#1:162,5\n95#1:154,3\n95#1:157,4\n95#1:161\n95#1:167\n95#1:168\n95#1:169\n120#1:170,2\n120#1:172,6\n120#1:178\n*E\n"
+    value = "SMAP\nMultiParagraphIntrinsics.kt\nKotlin\n*S Kotlin\n*F\n+ 1 MultiParagraphIntrinsics.kt\nandroidx/compose/ui/text/MultiParagraphIntrinsics\n+ 2 AnnotatedString.kt\nandroidx/compose/ui/text/AnnotatedStringKt\n+ 3 ListUtils.kt\nandroidx/compose/ui/util/ListUtilsKt\n*L\n1#1,154:1\n804#2:155\n805#2,5:164\n151#3,3:156\n33#3,4:159\n154#3:163\n155#3:169\n38#3:170\n156#3:171\n101#3,2:172\n33#3,6:174\n103#3:180\n*S KotlinDebug\n*F\n+ 1 MultiParagraphIntrinsics.kt\nandroidx/compose/ui/text/MultiParagraphIntrinsics\n*L\n96#1:155\n96#1:164,5\n96#1:156,3\n96#1:159,4\n96#1:163\n96#1:169\n96#1:170\n96#1:171\n121#1:172,2\n121#1:174,6\n121#1:180\n*E\n"
 .end annotation
 
 .annotation runtime Lkotlin/Metadata;
@@ -110,7 +110,7 @@
 .end method
 
 .method public constructor <init>(Landroidx/compose/ui/text/AnnotatedString;Landroidx/compose/ui/text/TextStyle;Ljava/util/List;Landroidx/compose/ui/unit/Density;Landroidx/compose/ui/text/font/Font$ResourceLoader;)V
-    .locals 7
+    .locals 6
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -134,49 +134,29 @@
         .end subannotation
     .end annotation
 
-    const-string v0, "annotatedString"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string/jumbo v0, "style"
-
-    invoke-static {p2, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string v0, "placeholders"
-
-    invoke-static {p3, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string v0, "density"
-
-    invoke-static {p4, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string v0, "resourceLoader"
-
-    invoke-static {p5, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 69
+    .line 70
     invoke-static {p5}, Landroidx/compose/ui/text/font/DelegatingFontLoaderForDeprecatedUsage_androidKt;->createFontFamilyResolver(Landroidx/compose/ui/text/font/Font$ResourceLoader;)Landroidx/compose/ui/text/font/FontFamily$Resolver;
 
-    move-result-object v6
+    move-result-object v5
 
-    move-object v1, p0
+    move-object v0, p0
 
-    move-object v2, p1
+    move-object v1, p1
 
-    move-object v3, p2
+    move-object v2, p2
 
-    move-object v4, p3
+    move-object v3, p3
 
-    move-object v5, p4
+    move-object v4, p4
 
-    .line 64
-    invoke-direct/range {v1 .. v6}, Landroidx/compose/ui/text/MultiParagraphIntrinsics;-><init>(Landroidx/compose/ui/text/AnnotatedString;Landroidx/compose/ui/text/TextStyle;Ljava/util/List;Landroidx/compose/ui/unit/Density;Landroidx/compose/ui/text/font/FontFamily$Resolver;)V
+    .line 65
+    invoke-direct/range {v0 .. v5}, Landroidx/compose/ui/text/MultiParagraphIntrinsics;-><init>(Landroidx/compose/ui/text/AnnotatedString;Landroidx/compose/ui/text/TextStyle;Ljava/util/List;Landroidx/compose/ui/unit/Density;Landroidx/compose/ui/text/font/FontFamily$Resolver;)V
 
     return-void
 .end method
 
 .method public constructor <init>(Landroidx/compose/ui/text/AnnotatedString;Landroidx/compose/ui/text/TextStyle;Ljava/util/List;Landroidx/compose/ui/unit/Density;Landroidx/compose/ui/text/font/FontFamily$Resolver;)V
-    .locals 17
+    .locals 18
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -196,232 +176,194 @@
 
     move-object/from16 v1, p1
 
-    move-object/from16 v2, p2
-
-    move-object/from16 v3, p3
-
-    const-string v4, "annotatedString"
-
-    invoke-static {v1, v4}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string/jumbo v4, "style"
-
-    invoke-static {v2, v4}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string v4, "placeholders"
-
-    invoke-static {v3, v4}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string v4, "density"
-
-    move-object/from16 v11, p4
-
-    invoke-static {v11, v4}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string v4, "fontFamilyResolver"
-
-    move-object/from16 v12, p5
-
-    invoke-static {v12, v4}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 45
+    .line 46
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
 
-    .line 46
+    .line 47
     iput-object v1, v0, Landroidx/compose/ui/text/MultiParagraphIntrinsics;->annotatedString:Landroidx/compose/ui/text/AnnotatedString;
 
-    .line 48
-    iput-object v3, v0, Landroidx/compose/ui/text/MultiParagraphIntrinsics;->placeholders:Ljava/util/List;
+    move-object/from16 v2, p3
 
-    .line 74
-    sget-object v3, Lkotlin/LazyThreadSafetyMode;->NONE:Lkotlin/LazyThreadSafetyMode;
+    .line 49
+    iput-object v2, v0, Landroidx/compose/ui/text/MultiParagraphIntrinsics;->placeholders:Ljava/util/List;
 
-    new-instance v4, Landroidx/compose/ui/text/MultiParagraphIntrinsics$minIntrinsicWidth$2;
+    .line 75
+    sget-object v2, Lkotlin/LazyThreadSafetyMode;->NONE:Lkotlin/LazyThreadSafetyMode;
 
-    invoke-direct {v4, v0}, Landroidx/compose/ui/text/MultiParagraphIntrinsics$minIntrinsicWidth$2;-><init>(Landroidx/compose/ui/text/MultiParagraphIntrinsics;)V
+    new-instance v3, Landroidx/compose/ui/text/MultiParagraphIntrinsics$minIntrinsicWidth$2;
 
-    check-cast v4, Lkotlin/jvm/functions/Function0;
+    invoke-direct {v3, v0}, Landroidx/compose/ui/text/MultiParagraphIntrinsics$minIntrinsicWidth$2;-><init>(Landroidx/compose/ui/text/MultiParagraphIntrinsics;)V
 
-    invoke-static {v3, v4}, Lkotlin/LazyKt;->lazy(Lkotlin/LazyThreadSafetyMode;Lkotlin/jvm/functions/Function0;)Lkotlin/Lazy;
+    check-cast v3, Lkotlin/jvm/functions/Function0;
 
-    move-result-object v3
+    invoke-static {v2, v3}, Lkotlin/LazyKt;->lazy(Lkotlin/LazyThreadSafetyMode;Lkotlin/jvm/functions/Function0;)Lkotlin/Lazy;
 
-    iput-object v3, v0, Landroidx/compose/ui/text/MultiParagraphIntrinsics;->minIntrinsicWidth$delegate:Lkotlin/Lazy;
+    move-result-object v2
 
-    .line 80
-    sget-object v3, Lkotlin/LazyThreadSafetyMode;->NONE:Lkotlin/LazyThreadSafetyMode;
+    iput-object v2, v0, Landroidx/compose/ui/text/MultiParagraphIntrinsics;->minIntrinsicWidth$delegate:Lkotlin/Lazy;
 
-    new-instance v4, Landroidx/compose/ui/text/MultiParagraphIntrinsics$maxIntrinsicWidth$2;
+    .line 81
+    sget-object v2, Lkotlin/LazyThreadSafetyMode;->NONE:Lkotlin/LazyThreadSafetyMode;
 
-    invoke-direct {v4, v0}, Landroidx/compose/ui/text/MultiParagraphIntrinsics$maxIntrinsicWidth$2;-><init>(Landroidx/compose/ui/text/MultiParagraphIntrinsics;)V
+    new-instance v3, Landroidx/compose/ui/text/MultiParagraphIntrinsics$maxIntrinsicWidth$2;
 
-    check-cast v4, Lkotlin/jvm/functions/Function0;
+    invoke-direct {v3, v0}, Landroidx/compose/ui/text/MultiParagraphIntrinsics$maxIntrinsicWidth$2;-><init>(Landroidx/compose/ui/text/MultiParagraphIntrinsics;)V
 
-    invoke-static {v3, v4}, Lkotlin/LazyKt;->lazy(Lkotlin/LazyThreadSafetyMode;Lkotlin/jvm/functions/Function0;)Lkotlin/Lazy;
+    check-cast v3, Lkotlin/jvm/functions/Function0;
 
-    move-result-object v3
+    invoke-static {v2, v3}, Lkotlin/LazyKt;->lazy(Lkotlin/LazyThreadSafetyMode;Lkotlin/jvm/functions/Function0;)Lkotlin/Lazy;
 
-    iput-object v3, v0, Landroidx/compose/ui/text/MultiParagraphIntrinsics;->maxIntrinsicWidth$delegate:Lkotlin/Lazy;
+    move-result-object v2
 
-    .line 93
+    iput-object v2, v0, Landroidx/compose/ui/text/MultiParagraphIntrinsics;->maxIntrinsicWidth$delegate:Lkotlin/Lazy;
+
+    .line 94
     invoke-virtual/range {p2 .. p2}, Landroidx/compose/ui/text/TextStyle;->toParagraphStyle()Landroidx/compose/ui/text/ParagraphStyle;
 
-    move-result-object v3
-
-    .line 153
-    invoke-static {v1, v3}, Landroidx/compose/ui/text/AnnotatedStringKt;->normalizedParagraphStyles(Landroidx/compose/ui/text/AnnotatedString;Landroidx/compose/ui/text/ParagraphStyle;)Ljava/util/List;
-
-    move-result-object v4
+    move-result-object v2
 
     .line 155
-    new-instance v13, Ljava/util/ArrayList;
+    invoke-static {v1, v2}, Landroidx/compose/ui/text/AnnotatedStringKt;->normalizedParagraphStyles(Landroidx/compose/ui/text/AnnotatedString;Landroidx/compose/ui/text/ParagraphStyle;)Ljava/util/List;
 
-    invoke-interface {v4}, Ljava/util/List;->size()I
+    move-result-object v3
+
+    .line 157
+    new-instance v4, Ljava/util/ArrayList;
+
+    invoke-interface {v3}, Ljava/util/List;->size()I
 
     move-result v5
 
-    invoke-direct {v13, v5}, Ljava/util/ArrayList;-><init>(I)V
+    invoke-direct {v4, v5}, Ljava/util/ArrayList;-><init>(I)V
 
-    .line 158
-    invoke-interface {v4}, Ljava/util/List;->size()I
+    .line 160
+    invoke-interface {v3}, Ljava/util/List;->size()I
 
-    move-result v14
+    move-result v5
 
-    const/4 v5, 0x0
-
-    move v15, v5
+    const/4 v6, 0x0
 
     :goto_0
-    if-ge v15, v14, :cond_0
-
-    .line 159
-    invoke-interface {v4, v15}, Ljava/util/List;->get(I)Ljava/lang/Object;
-
-    move-result-object v5
+    if-ge v6, v5, :cond_0
 
     .line 161
-    move-object v10, v13
-
-    check-cast v10, Ljava/util/Collection;
-
-    move-object/from16 v16, v5
-
-    check-cast v16, Landroidx/compose/ui/text/AnnotatedString$Range;
-
-    .line 163
-    invoke-virtual/range {v16 .. v16}, Landroidx/compose/ui/text/AnnotatedString$Range;->getStart()I
-
-    move-result v5
-
-    .line 164
-    invoke-virtual/range {v16 .. v16}, Landroidx/compose/ui/text/AnnotatedString$Range;->getEnd()I
-
-    move-result v6
-
-    .line 162
-    invoke-static {v1, v5, v6}, Landroidx/compose/ui/text/AnnotatedStringKt;->access$substringWithoutParagraphStyles(Landroidx/compose/ui/text/AnnotatedString;II)Landroidx/compose/ui/text/AnnotatedString;
-
-    move-result-object v5
-
-    .line 97
-    invoke-virtual/range {v16 .. v16}, Landroidx/compose/ui/text/AnnotatedString$Range;->getItem()Ljava/lang/Object;
-
-    move-result-object v6
-
-    check-cast v6, Landroidx/compose/ui/text/ParagraphStyle;
-
-    .line 96
-    invoke-static {v0, v6, v3}, Landroidx/compose/ui/text/MultiParagraphIntrinsics;->access$resolveTextDirection(Landroidx/compose/ui/text/MultiParagraphIntrinsics;Landroidx/compose/ui/text/ParagraphStyle;Landroidx/compose/ui/text/ParagraphStyle;)Landroidx/compose/ui/text/ParagraphStyle;
-
-    move-result-object v6
-
-    .line 101
-    new-instance v9, Landroidx/compose/ui/text/ParagraphIntrinsicInfo;
-
-    .line 103
-    invoke-virtual {v5}, Landroidx/compose/ui/text/AnnotatedString;->getText()Ljava/lang/String;
+    invoke-interface {v3, v6}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
     move-result-object v7
 
-    .line 104
-    invoke-virtual {v2, v6}, Landroidx/compose/ui/text/TextStyle;->merge(Landroidx/compose/ui/text/ParagraphStyle;)Landroidx/compose/ui/text/TextStyle;
+    .line 163
+    move-object v8, v4
 
-    move-result-object v6
+    check-cast v8, Ljava/util/Collection;
+
+    check-cast v7, Landroidx/compose/ui/text/AnnotatedString$Range;
+
+    .line 165
+    invoke-virtual {v7}, Landroidx/compose/ui/text/AnnotatedString$Range;->getStart()I
+
+    move-result v9
+
+    .line 166
+    invoke-virtual {v7}, Landroidx/compose/ui/text/AnnotatedString$Range;->getEnd()I
+
+    move-result v10
+
+    .line 164
+    invoke-static {v1, v9, v10}, Landroidx/compose/ui/text/AnnotatedStringKt;->access$substringWithoutParagraphStyles(Landroidx/compose/ui/text/AnnotatedString;II)Landroidx/compose/ui/text/AnnotatedString;
+
+    move-result-object v9
+
+    .line 98
+    invoke-virtual {v7}, Landroidx/compose/ui/text/AnnotatedString$Range;->getItem()Ljava/lang/Object;
+
+    move-result-object v10
+
+    check-cast v10, Landroidx/compose/ui/text/ParagraphStyle;
+
+    .line 97
+    invoke-static {v0, v10, v2}, Landroidx/compose/ui/text/MultiParagraphIntrinsics;->access$resolveTextDirection(Landroidx/compose/ui/text/MultiParagraphIntrinsics;Landroidx/compose/ui/text/ParagraphStyle;Landroidx/compose/ui/text/ParagraphStyle;)Landroidx/compose/ui/text/ParagraphStyle;
+
+    move-result-object v10
+
+    .line 102
+    new-instance v11, Landroidx/compose/ui/text/ParagraphIntrinsicInfo;
+
+    .line 104
+    invoke-virtual {v9}, Landroidx/compose/ui/text/AnnotatedString;->getText()Ljava/lang/String;
+
+    move-result-object v12
+
+    move-object/from16 v15, p2
 
     .line 105
-    invoke-virtual {v5}, Landroidx/compose/ui/text/AnnotatedString;->getSpanStyles()Ljava/util/List;
+    invoke-virtual {v15, v10}, Landroidx/compose/ui/text/TextStyle;->merge(Landroidx/compose/ui/text/ParagraphStyle;)Landroidx/compose/ui/text/TextStyle;
 
-    move-result-object v8
+    move-result-object v13
 
     .line 106
-    invoke-virtual/range {p0 .. p0}, Landroidx/compose/ui/text/MultiParagraphIntrinsics;->getPlaceholders()Ljava/util/List;
+    invoke-virtual {v9}, Landroidx/compose/ui/text/AnnotatedString;->getSpanStyles()Ljava/util/List;
 
-    move-result-object v5
+    move-result-object v14
 
     .line 107
-    invoke-virtual/range {v16 .. v16}, Landroidx/compose/ui/text/AnnotatedString$Range;->getStart()I
+    invoke-virtual/range {p0 .. p0}, Landroidx/compose/ui/text/MultiParagraphIntrinsics;->getPlaceholders()Ljava/util/List;
+
+    move-result-object v9
+
+    .line 108
+    invoke-virtual {v7}, Landroidx/compose/ui/text/AnnotatedString$Range;->getStart()I
+
+    move-result v10
+
+    .line 109
+    invoke-virtual {v7}, Landroidx/compose/ui/text/AnnotatedString$Range;->getEnd()I
 
     move-result v1
 
-    .line 108
-    invoke-virtual/range {v16 .. v16}, Landroidx/compose/ui/text/AnnotatedString$Range;->getEnd()I
-
-    move-result v2
-
-    .line 106
-    invoke-static {v5, v1, v2}, Landroidx/compose/ui/text/MultiParagraphIntrinsicsKt;->access$getLocalPlaceholders(Ljava/util/List;II)Ljava/util/List;
+    .line 107
+    invoke-static {v9, v10, v1}, Landroidx/compose/ui/text/MultiParagraphIntrinsicsKt;->access$getLocalPlaceholders(Ljava/util/List;II)Ljava/util/List;
 
     move-result-object v1
 
-    move-object v5, v7
+    move-object v15, v1
 
-    move-object v7, v8
+    move-object/from16 v16, p4
 
-    move-object v8, v1
+    move-object/from16 v17, p5
 
-    move-object v1, v9
+    .line 103
+    invoke-static/range {v12 .. v17}, Landroidx/compose/ui/text/ParagraphIntrinsicsKt;->ParagraphIntrinsics(Ljava/lang/String;Landroidx/compose/ui/text/TextStyle;Ljava/util/List;Ljava/util/List;Landroidx/compose/ui/unit/Density;Landroidx/compose/ui/text/font/FontFamily$Resolver;)Landroidx/compose/ui/text/ParagraphIntrinsics;
 
-    move-object/from16 v9, p4
-
-    move-object v2, v10
-
-    move-object/from16 v10, p5
-
-    .line 102
-    invoke-static/range {v5 .. v10}, Landroidx/compose/ui/text/ParagraphIntrinsicsKt;->ParagraphIntrinsics(Ljava/lang/String;Landroidx/compose/ui/text/TextStyle;Ljava/util/List;Ljava/util/List;Landroidx/compose/ui/unit/Density;Landroidx/compose/ui/text/font/FontFamily$Resolver;)Landroidx/compose/ui/text/ParagraphIntrinsics;
-
-    move-result-object v5
-
-    .line 113
-    invoke-virtual/range {v16 .. v16}, Landroidx/compose/ui/text/AnnotatedString$Range;->getStart()I
-
-    move-result v6
+    move-result-object v1
 
     .line 114
-    invoke-virtual/range {v16 .. v16}, Landroidx/compose/ui/text/AnnotatedString$Range;->getEnd()I
+    invoke-virtual {v7}, Landroidx/compose/ui/text/AnnotatedString$Range;->getStart()I
+
+    move-result v9
+
+    .line 115
+    invoke-virtual {v7}, Landroidx/compose/ui/text/AnnotatedString$Range;->getEnd()I
 
     move-result v7
 
-    .line 101
-    invoke-direct {v1, v5, v6, v7}, Landroidx/compose/ui/text/ParagraphIntrinsicInfo;-><init>(Landroidx/compose/ui/text/ParagraphIntrinsics;II)V
+    .line 102
+    invoke-direct {v11, v1, v9, v7}, Landroidx/compose/ui/text/ParagraphIntrinsicInfo;-><init>(Landroidx/compose/ui/text/ParagraphIntrinsics;II)V
 
-    .line 161
-    invoke-interface {v2, v1}, Ljava/util/Collection;->add(Ljava/lang/Object;)Z
+    .line 163
+    invoke-interface {v8, v11}, Ljava/util/Collection;->add(Ljava/lang/Object;)Z
 
-    add-int/lit8 v15, v15, 0x1
+    add-int/lit8 v6, v6, 0x1
 
     move-object/from16 v1, p1
 
-    move-object/from16 v2, p2
-
     goto :goto_0
 
-    .line 169
+    .line 171
     :cond_0
-    check-cast v13, Ljava/util/List;
+    check-cast v4, Ljava/util/List;
 
-    .line 94
-    iput-object v13, v0, Landroidx/compose/ui/text/MultiParagraphIntrinsics;->infoList:Ljava/util/List;
+    .line 95
+    iput-object v4, v0, Landroidx/compose/ui/text/MultiParagraphIntrinsics;->infoList:Ljava/util/List;
 
     return-void
 .end method
@@ -429,7 +371,7 @@
 .method public static final synthetic access$resolveTextDirection(Landroidx/compose/ui/text/MultiParagraphIntrinsics;Landroidx/compose/ui/text/ParagraphStyle;Landroidx/compose/ui/text/ParagraphStyle;)Landroidx/compose/ui/text/ParagraphStyle;
     .locals 0
 
-    .line 45
+    .line 46
     invoke-direct {p0, p1, p2}, Landroidx/compose/ui/text/MultiParagraphIntrinsics;->resolveTextDirection(Landroidx/compose/ui/text/ParagraphStyle;Landroidx/compose/ui/text/ParagraphStyle;)Landroidx/compose/ui/text/ParagraphStyle;
 
     move-result-object p0
@@ -440,22 +382,30 @@
 .method private final resolveTextDirection(Landroidx/compose/ui/text/ParagraphStyle;Landroidx/compose/ui/text/ParagraphStyle;)Landroidx/compose/ui/text/ParagraphStyle;
     .locals 13
 
-    .line 134
-    invoke-virtual {p1}, Landroidx/compose/ui/text/ParagraphStyle;->getTextDirection-mmuk1to()Landroidx/compose/ui/text/style/TextDirection;
-
-    move-result-object p0
-
-    if-eqz p0, :cond_0
-
-    invoke-virtual {p0}, Landroidx/compose/ui/text/style/TextDirection;->unbox-impl()I
-
-    if-nez p1, :cond_1
-
     .line 135
-    :cond_0
-    invoke-virtual {p2}, Landroidx/compose/ui/text/ParagraphStyle;->getTextDirection-mmuk1to()Landroidx/compose/ui/text/style/TextDirection;
+    invoke-virtual {p1}, Landroidx/compose/ui/text/ParagraphStyle;->getTextDirection-s_7X-co()I
 
-    move-result-object v2
+    move-result p0
+
+    sget-object v0, Landroidx/compose/ui/text/style/TextDirection;->Companion:Landroidx/compose/ui/text/style/TextDirection$Companion;
+
+    invoke-virtual {v0}, Landroidx/compose/ui/text/style/TextDirection$Companion;->getUnspecified-s_7X-co()I
+
+    move-result v0
+
+    invoke-static {p0, v0}, Landroidx/compose/ui/text/style/TextDirection;->equals-impl0(II)Z
+
+    move-result p0
+
+    if-nez p0, :cond_0
+
+    goto :goto_0
+
+    .line 136
+    :cond_0
+    invoke-virtual {p2}, Landroidx/compose/ui/text/ParagraphStyle;->getTextDirection-s_7X-co()I
+
+    move-result v2
 
     const/16 v11, 0x1fd
 
@@ -479,12 +429,12 @@
 
     move-object v0, p1
 
-    .line 134
-    invoke-static/range {v0 .. v12}, Landroidx/compose/ui/text/ParagraphStyle;->copy-NH1kkwU$default(Landroidx/compose/ui/text/ParagraphStyle;Landroidx/compose/ui/text/style/TextAlign;Landroidx/compose/ui/text/style/TextDirection;JLandroidx/compose/ui/text/style/TextIndent;Landroidx/compose/ui/text/PlatformParagraphStyle;Landroidx/compose/ui/text/style/LineHeightStyle;Landroidx/compose/ui/text/style/LineBreak;Landroidx/compose/ui/text/style/Hyphens;Landroidx/compose/ui/text/style/TextMotion;ILjava/lang/Object;)Landroidx/compose/ui/text/ParagraphStyle;
+    .line 135
+    invoke-static/range {v0 .. v12}, Landroidx/compose/ui/text/ParagraphStyle;->copy-ykzQM6k$default(Landroidx/compose/ui/text/ParagraphStyle;IIJLandroidx/compose/ui/text/style/TextIndent;Landroidx/compose/ui/text/PlatformParagraphStyle;Landroidx/compose/ui/text/style/LineHeightStyle;IILandroidx/compose/ui/text/style/TextMotion;ILjava/lang/Object;)Landroidx/compose/ui/text/ParagraphStyle;
 
     move-result-object p1
 
-    :cond_1
+    :goto_0
     return-object p1
 .end method
 
@@ -493,7 +443,7 @@
 .method public final getAnnotatedString()Landroidx/compose/ui/text/AnnotatedString;
     .locals 0
 
-    .line 46
+    .line 47
     iget-object p0, p0, Landroidx/compose/ui/text/MultiParagraphIntrinsics;->annotatedString:Landroidx/compose/ui/text/AnnotatedString;
 
     return-object p0
@@ -502,10 +452,10 @@
 .method public getHasStaleResolvedFonts()Z
     .locals 4
 
-    .line 120
+    .line 121
     iget-object p0, p0, Landroidx/compose/ui/text/MultiParagraphIntrinsics;->infoList:Ljava/util/List;
 
-    .line 173
+    .line 175
     invoke-interface {p0}, Ljava/util/List;->size()I
 
     move-result v0
@@ -517,15 +467,15 @@
     :goto_0
     if-ge v2, v0, :cond_1
 
-    .line 174
+    .line 176
     invoke-interface {p0, v2}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
     move-result-object v3
 
-    .line 171
+    .line 173
     check-cast v3, Landroidx/compose/ui/text/ParagraphIntrinsicInfo;
 
-    .line 120
+    .line 121
     invoke-virtual {v3}, Landroidx/compose/ui/text/ParagraphIntrinsicInfo;->getIntrinsics()Landroidx/compose/ui/text/ParagraphIntrinsics;
 
     move-result-object v3
@@ -561,7 +511,7 @@
         }
     .end annotation
 
-    .line 90
+    .line 91
     iget-object p0, p0, Landroidx/compose/ui/text/MultiParagraphIntrinsics;->infoList:Ljava/util/List;
 
     return-object p0
@@ -570,7 +520,7 @@
 .method public getMaxIntrinsicWidth()F
     .locals 0
 
-    .line 80
+    .line 81
     iget-object p0, p0, Landroidx/compose/ui/text/MultiParagraphIntrinsics;->maxIntrinsicWidth$delegate:Lkotlin/Lazy;
 
     invoke-interface {p0}, Lkotlin/Lazy;->getValue()Ljava/lang/Object;
@@ -589,7 +539,7 @@
 .method public getMinIntrinsicWidth()F
     .locals 0
 
-    .line 74
+    .line 75
     iget-object p0, p0, Landroidx/compose/ui/text/MultiParagraphIntrinsics;->minIntrinsicWidth$delegate:Lkotlin/Lazy;
 
     invoke-interface {p0}, Lkotlin/Lazy;->getValue()Ljava/lang/Object;
@@ -617,7 +567,7 @@
         }
     .end annotation
 
-    .line 48
+    .line 49
     iget-object p0, p0, Landroidx/compose/ui/text/MultiParagraphIntrinsics;->placeholders:Ljava/util/List;
 
     return-object p0

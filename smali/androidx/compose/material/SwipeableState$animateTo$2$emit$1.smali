@@ -31,7 +31,7 @@
         0x0
     }
     l = {
-        0x14f
+        0x154
     }
     m = "emit"
     n = {
@@ -55,6 +55,13 @@
 .field synthetic result:Ljava/lang/Object;
 
 .field final synthetic this$0:Landroidx/compose/material/SwipeableState$animateTo$2;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Landroidx/compose/material/SwipeableState$animateTo$2<",
+            "TT;>;"
+        }
+    .end annotation
+.end field
 
 
 # direct methods
@@ -63,7 +70,8 @@
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Landroidx/compose/material/SwipeableState$animateTo$2;",
+            "Landroidx/compose/material/SwipeableState$animateTo$2<",
+            "-TT;>;",
             "Lkotlin/coroutines/Continuation<",
             "-",
             "Landroidx/compose/material/SwipeableState$animateTo$2$emit$1;",

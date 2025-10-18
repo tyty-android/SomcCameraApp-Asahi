@@ -22,6 +22,8 @@
 # static fields
 .field private static final synthetic $VALUES:[Ljp/co/sony/mc/camera/configuration/parameters/VideoStabilizer;
 
+.field public static final enum ACTION_MODE:Ljp/co/sony/mc/camera/configuration/parameters/VideoStabilizer;
+
 .field public static final enum INTELLIGENT_ACTIVE:Ljp/co/sony/mc/camera/configuration/parameters/VideoStabilizer;
 
 .field public static final enum OFF:Ljp/co/sony/mc/camera/configuration/parameters/VideoStabilizer;
@@ -32,13 +34,7 @@
 
 .field private static final TEXT_ID_SS:I = -0x1
 
-.field private static final TEXT_ID_VS:I = 0x7f11041b
-
-.field private static final VIDEOSTABILIZER_TYPE_INTELLIGENT_ACTIVE:Ljava/lang/String; = "INTELLIGENT_ACTIVE"
-
-.field private static final VIDEOSTABILIZER_TYPE_OFF:Ljava/lang/String; = "OFF"
-
-.field private static final VIDEOSTABILIZER_TYPE_STEADY_SHOT:Ljava/lang/String; = "STEADY_SHOT"
+.field private static final TEXT_ID_VS:I = 0x7f110450
 
 
 # instance fields
@@ -53,16 +49,18 @@
 
 # direct methods
 .method private static synthetic $values()[Ljp/co/sony/mc/camera/configuration/parameters/VideoStabilizer;
-    .locals 3
+    .locals 4
 
-    .line 27
+    .line 25
     sget-object v0, Ljp/co/sony/mc/camera/configuration/parameters/VideoStabilizer;->OFF:Ljp/co/sony/mc/camera/configuration/parameters/VideoStabilizer;
 
     sget-object v1, Ljp/co/sony/mc/camera/configuration/parameters/VideoStabilizer;->STEADY_SHOT:Ljp/co/sony/mc/camera/configuration/parameters/VideoStabilizer;
 
     sget-object v2, Ljp/co/sony/mc/camera/configuration/parameters/VideoStabilizer;->INTELLIGENT_ACTIVE:Ljp/co/sony/mc/camera/configuration/parameters/VideoStabilizer;
 
-    filled-new-array {v0, v1, v2}, [Ljp/co/sony/mc/camera/configuration/parameters/VideoStabilizer;
+    sget-object v3, Ljp/co/sony/mc/camera/configuration/parameters/VideoStabilizer;->ACTION_MODE:Ljp/co/sony/mc/camera/configuration/parameters/VideoStabilizer;
+
+    filled-new-array {v0, v1, v2, v3}, [Ljp/co/sony/mc/camera/configuration/parameters/VideoStabilizer;
 
     move-result-object v0
 
@@ -72,7 +70,7 @@
 .method static constructor <clinit>()V
     .locals 15
 
-    .line 28
+    .line 26
     new-instance v7, Ljp/co/sony/mc/camera/configuration/parameters/VideoStabilizer;
 
     const-string v5, "off"
@@ -83,9 +81,9 @@
 
     const/4 v2, 0x0
 
-    const v3, 0x7f0801b6
+    const v3, 0x7f0801bb
 
-    const v4, 0x7f1103be
+    const v4, 0x7f1103f3
 
     move-object v0, v7
 
@@ -93,7 +91,7 @@
 
     sput-object v7, Ljp/co/sony/mc/camera/configuration/parameters/VideoStabilizer;->OFF:Ljp/co/sony/mc/camera/configuration/parameters/VideoStabilizer;
 
-    .line 33
+    .line 31
     new-instance v0, Ljp/co/sony/mc/camera/configuration/parameters/VideoStabilizer;
 
     const-string v13, "on"
@@ -104,9 +102,9 @@
 
     const/4 v10, 0x1
 
-    const v11, 0x7f0801b9
+    const v11, 0x7f0801be
 
-    const v12, 0x7f1103c0
+    const v12, 0x7f1103f5
 
     move-object v8, v0
 
@@ -114,7 +112,7 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/configuration/parameters/VideoStabilizer;->STEADY_SHOT:Ljp/co/sony/mc/camera/configuration/parameters/VideoStabilizer;
 
-    .line 38
+    .line 36
     new-instance v0, Ljp/co/sony/mc/camera/configuration/parameters/VideoStabilizer;
 
     const-string v6, "intelligent_active"
@@ -125,9 +123,9 @@
 
     const/4 v3, 0x2
 
-    const v4, 0x7f0801b3
+    const v4, 0x7f0801b8
 
-    const v5, 0x7f110462
+    const v5, 0x7f110499
 
     move-object v1, v0
 
@@ -135,7 +133,28 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/configuration/parameters/VideoStabilizer;->INTELLIGENT_ACTIVE:Ljp/co/sony/mc/camera/configuration/parameters/VideoStabilizer;
 
-    .line 27
+    .line 41
+    new-instance v0, Ljp/co/sony/mc/camera/configuration/parameters/VideoStabilizer;
+
+    const-string v13, "action_mode"
+
+    sget-object v14, Ljp/co/sony/mc/camera/configuration/parameters/PowerLevel;->LEVEL_2:Ljp/co/sony/mc/camera/configuration/parameters/PowerLevel;
+
+    const-string v9, "ACTION_MODE"
+
+    const/4 v10, 0x3
+
+    const v11, 0x7f0801b8
+
+    const v12, 0x7f1103f1
+
+    move-object v8, v0
+
+    invoke-direct/range {v8 .. v14}, Ljp/co/sony/mc/camera/configuration/parameters/VideoStabilizer;-><init>(Ljava/lang/String;IIILjava/lang/String;Ljp/co/sony/mc/camera/configuration/parameters/PowerLevel;)V
+
+    sput-object v0, Ljp/co/sony/mc/camera/configuration/parameters/VideoStabilizer;->ACTION_MODE:Ljp/co/sony/mc/camera/configuration/parameters/VideoStabilizer;
+
+    .line 25
     invoke-static {}, Ljp/co/sony/mc/camera/configuration/parameters/VideoStabilizer;->$values()[Ljp/co/sony/mc/camera/configuration/parameters/VideoStabilizer;
 
     move-result-object v0
@@ -156,29 +175,29 @@
         }
     .end annotation
 
-    .line 78
+    .line 77
     invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
-    .line 79
+    .line 78
     iput p3, p0, Ljp/co/sony/mc/camera/configuration/parameters/VideoStabilizer;->mIconId:I
 
-    .line 80
+    .line 79
     iput p4, p0, Ljp/co/sony/mc/camera/configuration/parameters/VideoStabilizer;->mTextId:I
 
-    .line 81
+    .line 80
     iput-object p5, p0, Ljp/co/sony/mc/camera/configuration/parameters/VideoStabilizer;->mValue:Ljava/lang/String;
 
-    .line 82
+    .line 81
     iput-object p6, p0, Ljp/co/sony/mc/camera/configuration/parameters/VideoStabilizer;->mPowerLevel:Ljp/co/sony/mc/camera/configuration/parameters/PowerLevel;
 
     return-void
 .end method
 
-.method public static getOptions(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;)[Ljp/co/sony/mc/camera/configuration/parameters/VideoStabilizer;
+.method public static getOptions(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;Ljp/co/sony/mc/camera/configuration/parameters/VideoSize;Ljp/co/sony/mc/camera/configuration/parameters/CaptureFps;Ljp/co/sony/mc/camera/configuration/parameters/VideoHdr;)[Ljp/co/sony/mc/camera/configuration/parameters/VideoStabilizer;
     .locals 0
 
     .line 129
-    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/configuration/parameters/VideoStabilizer;->getVideoStabilizerOptions(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;)[Ljp/co/sony/mc/camera/configuration/parameters/VideoStabilizer;
+    invoke-static {p0, p1, p2, p3, p4}, Ljp/co/sony/mc/camera/configuration/parameters/VideoStabilizer;->getVideoStabilizerOptions(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;Ljp/co/sony/mc/camera/configuration/parameters/VideoSize;Ljp/co/sony/mc/camera/configuration/parameters/CaptureFps;Ljp/co/sony/mc/camera/configuration/parameters/VideoHdr;)[Ljp/co/sony/mc/camera/configuration/parameters/VideoStabilizer;
 
     move-result-object p0
 
@@ -188,7 +207,7 @@
 .method public static getParameterKeyTitleText()I
     .locals 1
 
-    const v0, 0x7f11041b
+    const v0, 0x7f110450
 
     return v0
 .end method
@@ -196,145 +215,168 @@
 .method public static getRecommendedValue()Ljp/co/sony/mc/camera/configuration/parameters/VideoStabilizer;
     .locals 1
 
-    .line 233
+    .line 252
     sget-object v0, Ljp/co/sony/mc/camera/configuration/parameters/VideoStabilizer;->STEADY_SHOT:Ljp/co/sony/mc/camera/configuration/parameters/VideoStabilizer;
 
     return-object v0
 .end method
 
-.method public static getRecommendedVideoStabilizerValue(Landroid/content/Context;Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;Ljp/co/sony/mc/camera/configuration/parameters/VideoSize;Ljp/co/sony/mc/camera/configuration/parameters/CaptureFps;Ljp/co/sony/mc/camera/configuration/parameters/VideoHdr;Ljp/co/sony/mc/camera/configuration/parameters/VideoMfHdr;)Ljp/co/sony/mc/camera/configuration/parameters/VideoStabilizer;
-    .locals 1
+.method public static getRecommendedVideoStabilizerValue(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;Ljp/co/sony/mc/camera/configuration/parameters/VideoSize;Ljp/co/sony/mc/camera/configuration/parameters/CaptureFps;Ljp/co/sony/mc/camera/configuration/parameters/VideoHdr;Ljp/co/sony/mc/camera/configuration/parameters/VideoMfHdr;)Ljp/co/sony/mc/camera/configuration/parameters/VideoStabilizer;
+    .locals 4
 
-    .line 181
-    sget-boolean p0, Ljp/co/sony/mc/camera/util/CamLog;->VERBOSE:Z
+    .line 193
+    sget-boolean v0, Ljp/co/sony/mc/camera/util/CamLog;->VERBOSE:Z
 
-    if-eqz p0, :cond_0
+    const/4 v1, 0x1
 
-    new-instance p0, Ljava/lang/StringBuilder;
+    if-eqz v0, :cond_0
 
-    const-string v0, "getRecommendedVideoStabilizerValue() mode:"
+    new-array v0, v1, [Ljava/lang/String;
 
-    invoke-direct {p0, v0}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+    new-instance v2, Ljava/lang/StringBuilder;
 
-    .line 182
-    invoke-virtual {p1}, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->name()Ljava/lang/String;
+    const-string v3, "getRecommendedVideoStabilizerValue() mode:"
 
-    move-result-object v0
-
-    invoke-virtual {p0, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object p0
-
-    const-string v0, " videoSize:"
-
-    invoke-virtual {p0, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object p0
-
-    .line 183
-    invoke-virtual {p3}, Ljp/co/sony/mc/camera/configuration/parameters/VideoSize;->name()Ljava/lang/String;
-
-    move-result-object v0
-
-    invoke-virtual {p0, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object p0
-
-    invoke-virtual {p0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object p0
-
-    filled-new-array {p0}, [Ljava/lang/String;
-
-    move-result-object p0
-
-    .line 181
-    invoke-static {p0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
-
-    .line 185
-    :cond_0
-    sget-object p0, Ljp/co/sony/mc/camera/configuration/parameters/VideoStabilizer$1;->$SwitchMap$jp$co$sony$mc$camera$configuration$parameters$CapturingMode:[I
-
-    invoke-virtual {p1}, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->getLayoutMode()Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
-
-    move-result-object v0
-
-    invoke-virtual {v0}, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->ordinal()I
-
-    move-result v0
-
-    aget p0, p0, v0
-
-    const/4 v0, 0x1
-
-    if-eq p0, v0, :cond_4
+    invoke-direct {v2, v3}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
     .line 194
-    invoke-virtual {p1}, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->isVideo()Z
+    invoke-virtual {p0}, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->name()Ljava/lang/String;
 
-    move-result p0
+    move-result-object v3
 
-    if-eqz p0, :cond_3
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v2
+
+    const-string v3, " videoSize:"
+
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v2
 
     .line 195
-    invoke-virtual {p1}, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->isMacro()Z
+    invoke-virtual {p2}, Ljp/co/sony/mc/camera/configuration/parameters/VideoSize;->name()Ljava/lang/String;
 
-    move-result p0
+    move-result-object v3
 
-    if-nez p0, :cond_2
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {p1}, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->isQuickRecord()Z
+    move-result-object v2
 
-    move-result p0
+    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    if-eqz p0, :cond_1
+    move-result-object v2
+
+    const/4 v3, 0x0
+
+    aput-object v2, v0, v3
+
+    .line 193
+    invoke-static {v0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
+
+    .line 197
+    :cond_0
+    sget-object v0, Ljp/co/sony/mc/camera/configuration/parameters/VideoStabilizer$1;->$SwitchMap$jp$co$sony$mc$camera$configuration$parameters$CapturingMode:[I
+
+    invoke-virtual {p0}, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->getLayoutMode()Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
+
+    move-result-object v2
+
+    invoke-virtual {v2}, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->ordinal()I
+
+    move-result v2
+
+    aget v0, v0, v2
+
+    if-eq v0, v1, :cond_6
+
+    const/4 v1, 0x2
+
+    if-eq v0, v1, :cond_1
 
     goto :goto_0
 
-    .line 201
+    .line 203
     :cond_1
-    invoke-static {p2, p3, p4, p5, p6}, Ljp/co/sony/mc/camera/util/capability/PlatformCapability;->isIntelligentActiveSupported(Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;Ljp/co/sony/mc/camera/configuration/parameters/VideoSize;Ljp/co/sony/mc/camera/configuration/parameters/CaptureFps;Ljp/co/sony/mc/camera/configuration/parameters/VideoHdr;Ljp/co/sony/mc/camera/configuration/parameters/VideoMfHdr;)Z
+    invoke-static {p1, p2, p3, p4}, Ljp/co/sony/mc/camera/util/capability/PlatformCapability;->isActionModeSupported(Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;Ljp/co/sony/mc/camera/configuration/parameters/VideoSize;Ljp/co/sony/mc/camera/configuration/parameters/CaptureFps;Ljp/co/sony/mc/camera/configuration/parameters/VideoHdr;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_2
+
+    .line 205
+    sget-object p0, Ljp/co/sony/mc/camera/configuration/parameters/VideoStabilizer;->ACTION_MODE:Ljp/co/sony/mc/camera/configuration/parameters/VideoStabilizer;
+
+    return-object p0
+
+    .line 213
+    :cond_2
+    :goto_0
+    invoke-virtual {p0}, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->isVideo()Z
+
+    move-result v0
+
+    if-eqz v0, :cond_5
+
+    .line 214
+    invoke-virtual {p0}, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->isMacro()Z
+
+    move-result v0
+
+    if-nez v0, :cond_4
+
+    invoke-virtual {p0}, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->isQuickRecord()Z
 
     move-result p0
 
     if-eqz p0, :cond_3
 
-    .line 203
+    goto :goto_1
+
+    .line 220
+    :cond_3
+    invoke-static {p1, p2, p3, p4, p5}, Ljp/co/sony/mc/camera/util/capability/PlatformCapability;->isIntelligentActiveSupported(Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;Ljp/co/sony/mc/camera/configuration/parameters/VideoSize;Ljp/co/sony/mc/camera/configuration/parameters/CaptureFps;Ljp/co/sony/mc/camera/configuration/parameters/VideoHdr;Ljp/co/sony/mc/camera/configuration/parameters/VideoMfHdr;)Z
+
+    move-result p0
+
+    if-eqz p0, :cond_5
+
+    .line 222
     sget-object p0, Ljp/co/sony/mc/camera/configuration/parameters/VideoStabilizer;->INTELLIGENT_ACTIVE:Ljp/co/sony/mc/camera/configuration/parameters/VideoStabilizer;
 
     return-object p0
 
-    .line 196
-    :cond_2
-    :goto_0
-    invoke-static {p2, p3, p4, p5, p6}, Ljp/co/sony/mc/camera/util/capability/PlatformCapability;->isSteadyShotSupported(Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;Ljp/co/sony/mc/camera/configuration/parameters/VideoSize;Ljp/co/sony/mc/camera/configuration/parameters/CaptureFps;Ljp/co/sony/mc/camera/configuration/parameters/VideoHdr;Ljp/co/sony/mc/camera/configuration/parameters/VideoMfHdr;)Z
+    .line 215
+    :cond_4
+    :goto_1
+    invoke-static {p1, p2, p3, p4, p5}, Ljp/co/sony/mc/camera/util/capability/PlatformCapability;->isSteadyShotSupported(Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;Ljp/co/sony/mc/camera/configuration/parameters/VideoSize;Ljp/co/sony/mc/camera/configuration/parameters/CaptureFps;Ljp/co/sony/mc/camera/configuration/parameters/VideoHdr;Ljp/co/sony/mc/camera/configuration/parameters/VideoMfHdr;)Z
 
     move-result p0
 
-    if-eqz p0, :cond_3
+    if-eqz p0, :cond_5
 
-    .line 198
+    .line 217
     sget-object p0, Ljp/co/sony/mc/camera/configuration/parameters/VideoStabilizer;->STEADY_SHOT:Ljp/co/sony/mc/camera/configuration/parameters/VideoStabilizer;
 
     return-object p0
 
-    .line 207
-    :cond_3
+    .line 226
+    :cond_5
     sget-object p0, Ljp/co/sony/mc/camera/configuration/parameters/VideoStabilizer;->OFF:Ljp/co/sony/mc/camera/configuration/parameters/VideoStabilizer;
 
     return-object p0
 
-    .line 188
-    :cond_4
+    .line 200
+    :cond_6
     sget-object p0, Ljp/co/sony/mc/camera/configuration/parameters/VideoStabilizer;->OFF:Ljp/co/sony/mc/camera/configuration/parameters/VideoStabilizer;
 
     return-object p0
 .end method
 
-.method public static getVideoStabilizerOptions(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;)[Ljp/co/sony/mc/camera/configuration/parameters/VideoStabilizer;
+.method public static getVideoStabilizerOptions(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;Ljp/co/sony/mc/camera/configuration/parameters/VideoSize;Ljp/co/sony/mc/camera/configuration/parameters/CaptureFps;Ljp/co/sony/mc/camera/configuration/parameters/VideoHdr;)[Ljp/co/sony/mc/camera/configuration/parameters/VideoStabilizer;
     .locals 2
 
-    .line 141
+    .line 146
     sget-object v0, Ljp/co/sony/mc/camera/configuration/parameters/VideoStabilizer$1;->$SwitchMap$jp$co$sony$mc$camera$configuration$parameters$CapturingMode:[I
 
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->getLayoutMode()Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
@@ -349,26 +391,51 @@
 
     const/4 v1, 0x1
 
-    if-eq v0, v1, :cond_2
+    if-eq v0, v1, :cond_4
 
-    .line 150
+    const/4 v1, 0x2
+
+    if-eq v0, v1, :cond_0
+
+    goto :goto_0
+
+    .line 152
+    :cond_0
+    invoke-static {p1, p2, p3, p4}, Ljp/co/sony/mc/camera/util/capability/PlatformCapability;->isActionModeSupported(Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;Ljp/co/sony/mc/camera/configuration/parameters/VideoSize;Ljp/co/sony/mc/camera/configuration/parameters/CaptureFps;Ljp/co/sony/mc/camera/configuration/parameters/VideoHdr;)Z
+
+    move-result p2
+
+    if-eqz p2, :cond_1
+
+    .line 154
+    sget-object p0, Ljp/co/sony/mc/camera/configuration/parameters/VideoStabilizer;->ACTION_MODE:Ljp/co/sony/mc/camera/configuration/parameters/VideoStabilizer;
+
+    filled-new-array {p0}, [Ljp/co/sony/mc/camera/configuration/parameters/VideoStabilizer;
+
+    move-result-object p0
+
+    return-object p0
+
+    .line 162
+    :cond_1
+    :goto_0
     invoke-static {p1}, Ljp/co/sony/mc/camera/util/capability/PlatformCapability;->getCameraCapability(Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;)Ljp/co/sony/mc/camera/util/capability/CameraCapabilityList;
 
     move-result-object p1
 
-    .line 151
-    new-instance v0, Ljava/util/ArrayList;
+    .line 163
+    new-instance p2, Ljava/util/ArrayList;
 
-    invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
+    invoke-direct {p2}, Ljava/util/ArrayList;-><init>()V
 
-    .line 154
+    .line 166
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->isMacro()Z
 
     move-result p0
 
-    if-nez p0, :cond_0
+    if-nez p0, :cond_2
 
-    .line 155
+    .line 167
     iget-object p0, p1, Ljp/co/sony/mc/camera/util/capability/CameraCapabilityList;->VIDEO_STABILIZATION_MODE:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
 
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/util/capability/CapabilityItem;->get()Ljava/lang/Object;
@@ -377,22 +444,22 @@
 
     check-cast p0, Ljava/util/List;
 
-    const-string v1, "intelligent_active"
+    const-string p3, "intelligent_active"
 
-    .line 156
-    invoke-interface {p0, v1}, Ljava/util/List;->contains(Ljava/lang/Object;)Z
+    .line 168
+    invoke-interface {p0, p3}, Ljava/util/List;->contains(Ljava/lang/Object;)Z
 
     move-result p0
 
-    if-eqz p0, :cond_0
+    if-eqz p0, :cond_2
 
-    .line 157
+    .line 169
     sget-object p0, Ljp/co/sony/mc/camera/configuration/parameters/VideoStabilizer;->INTELLIGENT_ACTIVE:Ljp/co/sony/mc/camera/configuration/parameters/VideoStabilizer;
 
-    invoke-virtual {v0, p0}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+    invoke-virtual {p2, p0}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
-    .line 160
-    :cond_0
+    .line 172
+    :cond_2
     iget-object p0, p1, Ljp/co/sony/mc/camera/util/capability/CameraCapabilityList;->VIDEO_STABILIZATION_MODE:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
 
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/util/capability/CapabilityItem;->get()Ljava/lang/Object;
@@ -407,25 +474,25 @@
 
     move-result p0
 
-    if-eqz p0, :cond_1
+    if-eqz p0, :cond_3
 
-    .line 161
+    .line 173
     sget-object p0, Ljp/co/sony/mc/camera/configuration/parameters/VideoStabilizer;->STEADY_SHOT:Ljp/co/sony/mc/camera/configuration/parameters/VideoStabilizer;
 
-    invoke-virtual {v0, p0}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+    invoke-virtual {p2, p0}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
-    .line 164
-    :cond_1
+    .line 176
+    :cond_3
     sget-object p0, Ljp/co/sony/mc/camera/configuration/parameters/VideoStabilizer;->OFF:Ljp/co/sony/mc/camera/configuration/parameters/VideoStabilizer;
 
-    invoke-virtual {v0, p0}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+    invoke-virtual {p2, p0}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
     const/4 p0, 0x0
 
-    .line 165
+    .line 177
     new-array p0, p0, [Ljp/co/sony/mc/camera/configuration/parameters/VideoStabilizer;
 
-    invoke-virtual {v0, p0}, Ljava/util/ArrayList;->toArray([Ljava/lang/Object;)[Ljava/lang/Object;
+    invoke-virtual {p2, p0}, Ljava/util/ArrayList;->toArray([Ljava/lang/Object;)[Ljava/lang/Object;
 
     move-result-object p0
 
@@ -433,8 +500,8 @@
 
     return-object p0
 
-    .line 144
-    :cond_2
+    .line 149
+    :cond_4
     sget-object p0, Ljp/co/sony/mc/camera/configuration/parameters/VideoStabilizer;->OFF:Ljp/co/sony/mc/camera/configuration/parameters/VideoStabilizer;
 
     filled-new-array {p0}, [Ljp/co/sony/mc/camera/configuration/parameters/VideoStabilizer;
@@ -445,95 +512,99 @@
 .end method
 
 .method public static isVideoStabilizerSupported(Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;Ljp/co/sony/mc/camera/configuration/parameters/VideoSize;Ljp/co/sony/mc/camera/configuration/parameters/CaptureFps;Ljp/co/sony/mc/camera/configuration/parameters/VideoHdr;Ljp/co/sony/mc/camera/configuration/parameters/VideoMfHdr;)Z
-    .locals 2
+    .locals 3
 
-    .line 213
+    .line 232
     sget-boolean v0, Ljp/co/sony/mc/camera/util/CamLog;->VERBOSE:Z
 
     if-eqz v0, :cond_0
 
-    new-instance v0, Ljava/lang/StringBuilder;
+    const/4 v0, 0x1
 
-    const-string v1, "isVideoStabilizerSupported() cameraId:"
+    new-array v0, v0, [Ljava/lang/String;
 
-    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+    new-instance v1, Ljava/lang/StringBuilder;
 
-    invoke-virtual {v0, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+    const-string v2, "isVideoStabilizerSupported() cameraId:"
 
-    move-result-object v0
+    invoke-direct {v1, v2}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
-    const-string v1, " videoSize:"
+    invoke-virtual {v1, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    move-result-object v1
 
-    move-result-object v0
+    const-string v2, " videoSize:"
 
-    .line 215
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v1
+
+    .line 234
     invoke-virtual {p1}, Ljp/co/sony/mc/camera/configuration/parameters/VideoSize;->name()Ljava/lang/String;
 
+    move-result-object v2
+
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
     move-result-object v1
 
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    const-string v2, " captureFps:"
 
-    move-result-object v0
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    const-string v1, " captureFps:"
+    move-result-object v1
 
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v0
-
-    .line 216
+    .line 235
     invoke-virtual {p2}, Ljp/co/sony/mc/camera/configuration/parameters/CaptureFps;->name()Ljava/lang/String;
 
+    move-result-object v2
+
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
     move-result-object v1
 
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    const-string v2, " videoHdr:"
 
-    move-result-object v0
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    const-string v1, " videoHdr:"
+    move-result-object v1
 
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v0
-
-    .line 217
+    .line 236
     invoke-virtual {p3}, Ljp/co/sony/mc/camera/configuration/parameters/VideoHdr;->name()Ljava/lang/String;
 
+    move-result-object v2
+
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
     move-result-object v1
 
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    const-string v2, " videoMfHdr:"
 
-    move-result-object v0
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    const-string v1, " videoMfHdr:"
+    move-result-object v1
 
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v0
-
-    .line 218
+    .line 237
     invoke-virtual {p4}, Ljp/co/sony/mc/camera/configuration/parameters/VideoMfHdr;->name()Ljava/lang/String;
 
+    move-result-object v2
+
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
     move-result-object v1
 
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    move-result-object v0
+    move-result-object v1
 
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    const/4 v2, 0x0
 
-    move-result-object v0
+    aput-object v1, v0, v2
 
-    filled-new-array {v0}, [Ljava/lang/String;
-
-    move-result-object v0
-
-    .line 213
+    .line 232
     invoke-static {v0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
-    .line 220
+    .line 239
     :cond_0
     invoke-static {p0, p1, p2, p3, p4}, Ljp/co/sony/mc/camera/util/capability/PlatformCapability;->isVideoStabilizerSupported(Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;Ljp/co/sony/mc/camera/configuration/parameters/VideoSize;Ljp/co/sony/mc/camera/configuration/parameters/CaptureFps;Ljp/co/sony/mc/camera/configuration/parameters/VideoHdr;Ljp/co/sony/mc/camera/configuration/parameters/VideoMfHdr;)Z
 
@@ -551,7 +622,7 @@
 .method public static valueOf(Ljava/lang/String;)Ljp/co/sony/mc/camera/configuration/parameters/VideoStabilizer;
     .locals 1
 
-    .line 27
+    .line 25
     const-class v0, Ljp/co/sony/mc/camera/configuration/parameters/VideoStabilizer;
 
     invoke-static {v0, p0}, Ljava/lang/Enum;->valueOf(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
@@ -566,7 +637,7 @@
 .method public static values()[Ljp/co/sony/mc/camera/configuration/parameters/VideoStabilizer;
     .locals 1
 
-    .line 27
+    .line 25
     sget-object v0, Ljp/co/sony/mc/camera/configuration/parameters/VideoStabilizer;->$VALUES:[Ljp/co/sony/mc/camera/configuration/parameters/VideoStabilizer;
 
     invoke-virtual {v0}, [Ljp/co/sony/mc/camera/configuration/parameters/VideoStabilizer;->clone()Ljava/lang/Object;
@@ -583,7 +654,7 @@
 .method public getIconId()I
     .locals 0
 
-    .line 100
+    .line 99
     iget p0, p0, Ljp/co/sony/mc/camera/configuration/parameters/VideoStabilizer;->mIconId:I
 
     return p0
@@ -592,7 +663,7 @@
 .method public getName()Ljava/lang/String;
     .locals 0
 
-    .line 170
+    .line 182
     invoke-virtual {p0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     move-result-object p0
@@ -607,7 +678,7 @@
 .method public getPowerLevel()Ljp/co/sony/mc/camera/configuration/parameters/PowerLevel;
     .locals 0
 
-    .line 238
+    .line 257
     iget-object p0, p0, Ljp/co/sony/mc/camera/configuration/parameters/VideoStabilizer;->mPowerLevel:Ljp/co/sony/mc/camera/configuration/parameters/PowerLevel;
 
     return-object p0
@@ -616,7 +687,7 @@
 .method public getSettingKey()Ljp/co/sony/mc/camera/setting/SettingKey$Key;
     .locals 0
 
-    .line 90
+    .line 89
     sget-object p0, Ljp/co/sony/mc/camera/setting/CameraSettings;->VIDEO_STABILIZER:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
 
     return-object p0
@@ -625,7 +696,7 @@
 .method public getTextId()I
     .locals 0
 
-    .line 110
+    .line 109
     iget p0, p0, Ljp/co/sony/mc/camera/configuration/parameters/VideoStabilizer;->mTextId:I
 
     return p0
@@ -634,7 +705,7 @@
 .method public getValue()Ljava/lang/String;
     .locals 0
 
-    .line 120
+    .line 119
     iget-object p0, p0, Ljp/co/sony/mc/camera/configuration/parameters/VideoStabilizer;->mValue:Ljava/lang/String;
 
     return-object p0

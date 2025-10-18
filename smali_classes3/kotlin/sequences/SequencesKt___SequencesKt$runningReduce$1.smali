@@ -63,8 +63,8 @@
         0x1
     }
     l = {
-        0x93e,
-        0x941
+        0x940,
+        0x943
     }
     m = "invokeSuspend"
     n = {
@@ -224,7 +224,7 @@
 
     move-result-object v0
 
-    .line 2362
+    .line 2364
     iget v1, p0, Lkotlin/sequences/SequencesKt___SequencesKt$runningReduce$1;->label:I
 
     const/4 v2, 0x2
@@ -273,26 +273,26 @@
 
     check-cast v4, Lkotlin/sequences/SequenceScope;
 
-    .line 2363
+    .line 2365
     iget-object p1, p0, Lkotlin/sequences/SequencesKt___SequencesKt$runningReduce$1;->$this_runningReduce:Lkotlin/sequences/Sequence;
 
     invoke-interface {p1}, Lkotlin/sequences/Sequence;->iterator()Ljava/util/Iterator;
 
     move-result-object p1
 
-    .line 2364
+    .line 2366
     invoke-interface {p1}, Ljava/util/Iterator;->hasNext()Z
 
     move-result v1
 
     if-eqz v1, :cond_5
 
-    .line 2365
+    .line 2367
     invoke-interface {p1}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
     move-result-object v1
 
-    .line 2366
+    .line 2368
     move-object v5, p0
 
     check-cast v5, Lkotlin/coroutines/Continuation;
@@ -316,7 +316,7 @@
     :cond_3
     move-object v3, p1
 
-    .line 2367
+    .line 2369
     :cond_4
     :goto_1
     invoke-interface {v3}, Ljava/util/Iterator;->hasNext()Z
@@ -325,7 +325,7 @@
 
     if-eqz p1, :cond_5
 
-    .line 2368
+    .line 2370
     iget-object p1, p0, Lkotlin/sequences/SequencesKt___SequencesKt$runningReduce$1;->$operation:Lkotlin/jvm/functions/Function2;
 
     invoke-interface {v3}, Ljava/util/Iterator;->next()Ljava/lang/Object;
@@ -336,7 +336,7 @@
 
     move-result-object v1
 
-    .line 2369
+    .line 2371
     move-object p1, p0
 
     check-cast p1, Lkotlin/coroutines/Continuation;
@@ -357,7 +357,7 @@
 
     return-object v0
 
-    .line 2372
+    .line 2374
     :cond_5
     sget-object p0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
 

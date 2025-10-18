@@ -24,7 +24,7 @@
 .method static constructor <clinit>()V
     .locals 6
 
-    .line 1189
+    .line 1228
     invoke-static {}, Ljp/co/sony/mc/camera/view/CameraEventListener$CameraEvent;->values()[Ljp/co/sony/mc/camera/view/CameraEventListener$CameraEvent;
 
     move-result-object v0
@@ -176,7 +176,7 @@
     :try_end_8
     .catch Ljava/lang/NoSuchFieldError; {:try_start_8 .. :try_end_8} :catch_8
 
-    .line 840
+    .line 879
     :catch_8
     invoke-static {}, Ljp/co/sony/mc/camera/view/orientation/LayoutOrientation;->values()[Ljp/co/sony/mc/camera/view/orientation/LayoutOrientation;
 

@@ -65,7 +65,7 @@
 .method static constructor <clinit>()V
     .locals 3
 
-    .line 1108
+    .line 1110
     new-instance v0, Landroidx/compose/foundation/layout/Direction;
 
     const-string v1, "Vertical"
@@ -113,7 +113,7 @@
         }
     .end annotation
 
-    .line 1107
+    .line 1109
     invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
     return-void

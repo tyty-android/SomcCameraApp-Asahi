@@ -67,7 +67,7 @@
 .method public final invoke()Ljava/lang/Boolean;
     .locals 1
 
-    .line 408
+    .line 410
     iget-object v0, p0, Landroidx/compose/ui/window/PopupLayout$canCalculatePosition$2;->this$0:Landroidx/compose/ui/window/PopupLayout;
 
     invoke-static {v0}, Landroidx/compose/ui/window/PopupLayout;->access$getParentLayoutCoordinates(Landroidx/compose/ui/window/PopupLayout;)Landroidx/compose/ui/layout/LayoutCoordinates;
@@ -102,7 +102,7 @@
 .method public bridge synthetic invoke()Ljava/lang/Object;
     .locals 0
 
-    .line 407
+    .line 409
     invoke-virtual {p0}, Landroidx/compose/ui/window/PopupLayout$canCalculatePosition$2;->invoke()Ljava/lang/Boolean;
 
     move-result-object p0

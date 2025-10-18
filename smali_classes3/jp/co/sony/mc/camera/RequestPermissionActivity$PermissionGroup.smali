@@ -35,7 +35,7 @@
 
 .field public static final enum NOTIFICATION:Ljp/co/sony/mc/camera/RequestPermissionActivity$PermissionGroup;
 
-.field public static final enum STORAGE:Ljp/co/sony/mc/camera/RequestPermissionActivity$PermissionGroup;
+.field public static final enum READ_MEDIA_VISUAL:Ljp/co/sony/mc/camera/RequestPermissionActivity$PermissionGroup;
 
 
 # instance fields
@@ -65,7 +65,7 @@
 
     sget-object v1, Ljp/co/sony/mc/camera/RequestPermissionActivity$PermissionGroup;->MIC:Ljp/co/sony/mc/camera/RequestPermissionActivity$PermissionGroup;
 
-    sget-object v2, Ljp/co/sony/mc/camera/RequestPermissionActivity$PermissionGroup;->STORAGE:Ljp/co/sony/mc/camera/RequestPermissionActivity$PermissionGroup;
+    sget-object v2, Ljp/co/sony/mc/camera/RequestPermissionActivity$PermissionGroup;->READ_MEDIA_VISUAL:Ljp/co/sony/mc/camera/RequestPermissionActivity$PermissionGroup;
 
     sget-object v3, Ljp/co/sony/mc/camera/RequestPermissionActivity$PermissionGroup;->NOTIFICATION:Ljp/co/sony/mc/camera/RequestPermissionActivity$PermissionGroup;
 
@@ -81,16 +81,20 @@
 .end method
 
 .method static constructor <clinit>()V
-    .locals 15
+    .locals 18
 
     .line 68
     new-instance v7, Ljp/co/sony/mc/camera/RequestPermissionActivity$PermissionGroup;
 
-    const-string v0, "android.permission.CAMERA"
+    const/4 v8, 0x1
 
-    filled-new-array {v0}, [Ljava/lang/String;
+    new-array v0, v8, [Ljava/lang/String;
 
-    move-result-object v0
+    const-string v1, "android.permission.CAMERA"
+
+    const/4 v9, 0x0
+
+    aput-object v1, v0, v9
 
     .line 70
     invoke-static {v0}, Ljava/util/Arrays;->asList([Ljava/lang/Object;)Ljava/util/List;
@@ -101,7 +105,7 @@
 
     move-result v5
 
-    const v6, 0x7f1103a2
+    const v6, 0x7f1103d6
 
     const-string v1, "CAMERA"
 
@@ -118,32 +122,32 @@
     .line 73
     new-instance v0, Ljp/co/sony/mc/camera/RequestPermissionActivity$PermissionGroup;
 
-    const-string v1, "android.permission.RECORD_AUDIO"
+    new-array v1, v8, [Ljava/lang/String;
 
-    filled-new-array {v1}, [Ljava/lang/String;
+    const-string v2, "android.permission.RECORD_AUDIO"
 
-    move-result-object v1
+    aput-object v2, v1, v9
 
     .line 75
     invoke-static {v1}, Ljava/util/Arrays;->asList([Ljava/lang/Object;)Ljava/util/List;
 
-    move-result-object v12
+    move-result-object v14
 
     invoke-static {}, Ljp/co/sony/mc/camera/RequestPermissionActivity;->-$$Nest$sfgetINVALID_ID()I
 
-    move-result v13
+    move-result v15
 
-    const v14, 0x7f1103a4
+    const v16, 0x7f1103d8
 
-    const-string v9, "MIC"
+    const-string v11, "MIC"
 
-    const/4 v10, 0x1
+    const/4 v12, 0x1
 
-    const-string v11, "android.permission-group.MICROPHONE"
+    const-string v13, "android.permission-group.MICROPHONE"
 
-    move-object v8, v0
+    move-object v10, v0
 
-    invoke-direct/range {v8 .. v14}, Ljp/co/sony/mc/camera/RequestPermissionActivity$PermissionGroup;-><init>(Ljava/lang/String;ILjava/lang/String;Ljava/util/List;II)V
+    invoke-direct/range {v10 .. v16}, Ljp/co/sony/mc/camera/RequestPermissionActivity$PermissionGroup;-><init>(Ljava/lang/String;ILjava/lang/String;Ljava/util/List;II)V
 
     sput-object v0, Ljp/co/sony/mc/camera/RequestPermissionActivity$PermissionGroup;->MIC:Ljp/co/sony/mc/camera/RequestPermissionActivity$PermissionGroup;
 
@@ -151,7 +155,7 @@
     new-instance v0, Ljp/co/sony/mc/camera/RequestPermissionActivity$PermissionGroup;
 
     .line 80
-    invoke-static {}, Ljp/co/sony/mc/camera/RequestPermissionActivity;->-$$Nest$smgetStoragePermissionList()Ljava/util/List;
+    invoke-static {}, Ljp/co/sony/mc/camera/RequestPermissionActivity;->-$$Nest$smgetReadMediaVisualPermissionList()Ljava/util/List;
 
     move-result-object v5
 
@@ -159,62 +163,66 @@
 
     move-result v6
 
-    const v7, 0x7f1103a8
+    const v7, 0x7f1103dc
 
-    const-string v2, "STORAGE"
+    const-string v2, "READ_MEDIA_VISUAL"
 
     const/4 v3, 0x2
 
-    const-string v4, "android.permission-group.STORAGE"
+    const-string v4, "android.permission-group.READ_MEDIA_VISUAL"
 
     move-object v1, v0
 
     invoke-direct/range {v1 .. v7}, Ljp/co/sony/mc/camera/RequestPermissionActivity$PermissionGroup;-><init>(Ljava/lang/String;ILjava/lang/String;Ljava/util/List;II)V
 
-    sput-object v0, Ljp/co/sony/mc/camera/RequestPermissionActivity$PermissionGroup;->STORAGE:Ljp/co/sony/mc/camera/RequestPermissionActivity$PermissionGroup;
+    sput-object v0, Ljp/co/sony/mc/camera/RequestPermissionActivity$PermissionGroup;->READ_MEDIA_VISUAL:Ljp/co/sony/mc/camera/RequestPermissionActivity$PermissionGroup;
 
     .line 83
     new-instance v0, Ljp/co/sony/mc/camera/RequestPermissionActivity$PermissionGroup;
 
-    const-string v1, "android.permission.POST_NOTIFICATIONS"
+    new-array v1, v8, [Ljava/lang/String;
 
-    filled-new-array {v1}, [Ljava/lang/String;
+    const-string v2, "android.permission.POST_NOTIFICATIONS"
 
-    move-result-object v1
+    aput-object v2, v1, v9
 
     .line 85
     invoke-static {v1}, Ljava/util/Arrays;->asList([Ljava/lang/Object;)Ljava/util/List;
 
-    move-result-object v12
+    move-result-object v14
 
     invoke-static {}, Ljp/co/sony/mc/camera/RequestPermissionActivity;->-$$Nest$sfgetINVALID_ID()I
 
-    move-result v13
+    move-result v15
 
-    const v14, 0x7f1103a7
+    const v16, 0x7f1103db
 
-    const-string v9, "NOTIFICATION"
+    const-string v11, "NOTIFICATION"
 
-    const/4 v10, 0x3
+    const/4 v12, 0x3
 
-    const-string v11, "android.permission-group.NOTIFICATIONS"
+    const-string v13, "android.permission-group.NOTIFICATIONS"
 
-    move-object v8, v0
+    move-object v10, v0
 
-    invoke-direct/range {v8 .. v14}, Ljp/co/sony/mc/camera/RequestPermissionActivity$PermissionGroup;-><init>(Ljava/lang/String;ILjava/lang/String;Ljava/util/List;II)V
+    invoke-direct/range {v10 .. v16}, Ljp/co/sony/mc/camera/RequestPermissionActivity$PermissionGroup;-><init>(Ljava/lang/String;ILjava/lang/String;Ljava/util/List;II)V
 
     sput-object v0, Ljp/co/sony/mc/camera/RequestPermissionActivity$PermissionGroup;->NOTIFICATION:Ljp/co/sony/mc/camera/RequestPermissionActivity$PermissionGroup;
 
     .line 88
     new-instance v0, Ljp/co/sony/mc/camera/RequestPermissionActivity$PermissionGroup;
 
-    const-string v1, "android.permission.ACCESS_FINE_LOCATION"
+    const/4 v10, 0x2
+
+    new-array v1, v10, [Ljava/lang/String;
+
+    const-string v2, "android.permission.ACCESS_FINE_LOCATION"
+
+    aput-object v2, v1, v9
 
     const-string v2, "android.permission.ACCESS_COARSE_LOCATION"
 
-    filled-new-array {v1, v2}, [Ljava/lang/String;
-
-    move-result-object v1
+    aput-object v2, v1, v8
 
     .line 90
     invoke-static {v1}, Ljava/util/Arrays;->asList([Ljava/lang/Object;)Ljava/util/List;
@@ -225,7 +233,7 @@
 
     move-result v6
 
-    const v7, 0x7f1103a3
+    const v7, 0x7f1103d7
 
     const-string v2, "LOCATION"
 
@@ -242,34 +250,36 @@
     .line 96
     new-instance v0, Ljp/co/sony/mc/camera/RequestPermissionActivity$PermissionGroup;
 
-    const-string v1, "android.permission.BLUETOOTH_CONNECT"
+    new-array v1, v10, [Ljava/lang/String;
+
+    const-string v2, "android.permission.BLUETOOTH_CONNECT"
+
+    aput-object v2, v1, v9
 
     const-string v2, "android.permission.BLUETOOTH_ADVERTISE"
 
-    filled-new-array {v1, v2}, [Ljava/lang/String;
-
-    move-result-object v1
+    aput-object v2, v1, v8
 
     .line 98
     invoke-static {v1}, Ljava/util/Arrays;->asList([Ljava/lang/Object;)Ljava/util/List;
 
-    move-result-object v12
+    move-result-object v15
 
     invoke-static {}, Ljp/co/sony/mc/camera/RequestPermissionActivity;->-$$Nest$sfgetINVALID_ID()I
 
-    move-result v13
+    move-result v16
 
-    const v14, 0x7f1103a5
+    const v17, 0x7f1103d9
 
-    const-string v9, "BLUETOOTH"
+    const-string v12, "BLUETOOTH"
 
-    const/4 v10, 0x5
+    const/4 v13, 0x5
 
-    const-string v11, "android.permission-group.NEARBY_DEVICES"
+    const-string v14, "android.permission-group.NEARBY_DEVICES"
 
-    move-object v8, v0
+    move-object v11, v0
 
-    invoke-direct/range {v8 .. v14}, Ljp/co/sony/mc/camera/RequestPermissionActivity$PermissionGroup;-><init>(Ljava/lang/String;ILjava/lang/String;Ljava/util/List;II)V
+    invoke-direct/range {v11 .. v17}, Ljp/co/sony/mc/camera/RequestPermissionActivity$PermissionGroup;-><init>(Ljava/lang/String;ILjava/lang/String;Ljava/util/List;II)V
 
     sput-object v0, Ljp/co/sony/mc/camera/RequestPermissionActivity$PermissionGroup;->BLUETOOTH:Ljp/co/sony/mc/camera/RequestPermissionActivity$PermissionGroup;
 

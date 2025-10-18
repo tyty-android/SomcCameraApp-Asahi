@@ -58,7 +58,7 @@
 .method public static synthetic access$getValue$jd(Landroidx/compose/runtime/MutableDoubleState;)D
     .locals 2
 
-    .line 91
+    .line 92
     invoke-super {p0}, Landroidx/compose/runtime/MutableDoubleState;->getValue()Ljava/lang/Double;
 
     move-result-object p0
@@ -73,7 +73,7 @@
 .method public static synthetic access$setValue$jd(Landroidx/compose/runtime/MutableDoubleState;D)V
     .locals 0
 
-    .line 91
+    .line 92
     invoke-super {p0, p1, p2}, Landroidx/compose/runtime/MutableDoubleState;->setValue(D)V
 
     return-void
@@ -87,7 +87,7 @@
 .method public getValue()Ljava/lang/Double;
     .locals 2
 
-    .line 97
+    .line 98
     invoke-interface {p0}, Landroidx/compose/runtime/MutableDoubleState;->getDoubleValue()D
 
     move-result-wide v0
@@ -102,7 +102,7 @@
 .method public bridge synthetic getValue()Ljava/lang/Object;
     .locals 0
 
-    .line 91
+    .line 92
     invoke-interface {p0}, Landroidx/compose/runtime/MutableDoubleState;->getValue()Ljava/lang/Double;
 
     move-result-object p0
@@ -116,7 +116,7 @@
 .method public setValue(D)V
     .locals 0
 
-    .line 98
+    .line 99
     invoke-interface {p0, p1, p2}, Landroidx/compose/runtime/MutableDoubleState;->setDoubleValue(D)V
 
     return-void
@@ -125,7 +125,7 @@
 .method public bridge synthetic setValue(Ljava/lang/Object;)V
     .locals 2
 
-    .line 91
+    .line 92
     check-cast p1, Ljava/lang/Number;
 
     invoke-virtual {p1}, Ljava/lang/Number;->doubleValue()D

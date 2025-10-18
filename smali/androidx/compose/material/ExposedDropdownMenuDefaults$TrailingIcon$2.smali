@@ -1,6 +1,6 @@
 .class final Landroidx/compose/material/ExposedDropdownMenuDefaults$TrailingIcon$2;
 .super Lkotlin/jvm/internal/Lambda;
-.source "ExposedDropdownMenu.kt"
+.source "ExposedDropdownMenu.android.kt"
 
 # interfaces
 .implements Lkotlin/jvm/functions/Function1;
@@ -90,10 +90,6 @@
 
 .method public final invoke(Landroidx/compose/ui/semantics/SemanticsPropertyReceiver;)V
     .locals 0
-
-    const-string p0, "$this$clearAndSetSemantics"
-
-    invoke-static {p1, p0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
     return-void
 .end method

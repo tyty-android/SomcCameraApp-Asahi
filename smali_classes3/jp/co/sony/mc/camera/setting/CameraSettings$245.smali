@@ -21,7 +21,7 @@
 .method constructor <init>()V
     .locals 0
 
-    .line 2624
+    .line 2650
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -42,15 +42,8 @@
         }
     .end annotation
 
-    .line 2628
-    check-cast p1, Ljp/co/sony/mc/camera/setting/CameraSettings;
-
-    .line 2629
-    invoke-static {p1}, Ljp/co/sony/mc/camera/setting/CameraSettings;->-$$Nest$fgetmCameraId(Ljp/co/sony/mc/camera/setting/CameraSettings;)Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;
-
-    move-result-object p0
-
-    invoke-static {p0}, Ljp/co/sony/mc/camera/configuration/parameters/WbExtensionData;->getDefaultExtensionValue(Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;)Ljp/co/sony/mc/camera/configuration/parameters/WbExtensionData;
+    .line 2654
+    invoke-static {}, Ljp/co/sony/mc/camera/configuration/parameters/Iso;->getDefaultValue()Ljp/co/sony/mc/camera/configuration/parameters/Iso;
 
     move-result-object p0
 

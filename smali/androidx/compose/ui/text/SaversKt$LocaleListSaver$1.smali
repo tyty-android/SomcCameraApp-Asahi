@@ -28,7 +28,7 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/SourceDebugExtension;
-    value = "SMAP\nSavers.kt\nKotlin\n*S Kotlin\n*F\n+ 1 Savers.kt\nandroidx/compose/ui/text/SaversKt$LocaleListSaver$1\n+ 2 ListUtils.kt\nandroidx/compose/ui/util/ListUtilsKt\n*L\n1#1,421:1\n151#2,3:422\n33#2,4:425\n154#2,2:429\n38#2:431\n156#2:432\n*S KotlinDebug\n*F\n+ 1 Savers.kt\nandroidx/compose/ui/text/SaversKt$LocaleListSaver$1\n*L\n404#1:422,3\n404#1:425,4\n404#1:429,2\n404#1:431\n404#1:432\n*E\n"
+    value = "SMAP\nSavers.kt\nKotlin\n*S Kotlin\n*F\n+ 1 Savers.kt\nandroidx/compose/ui/text/SaversKt$LocaleListSaver$1\n+ 2 ListUtils.kt\nandroidx/compose/ui/util/ListUtilsKt\n*L\n1#1,454:1\n151#2,3:455\n33#2,4:458\n154#2,2:462\n38#2:464\n156#2:465\n*S KotlinDebug\n*F\n+ 1 Savers.kt\nandroidx/compose/ui/text/SaversKt$LocaleListSaver$1\n*L\n436#1:455,3\n436#1:458,4\n436#1:462,2\n436#1:464\n436#1:465\n*E\n"
 .end annotation
 
 .annotation runtime Lkotlin/Metadata;
@@ -85,20 +85,12 @@
 .method public final invoke(Landroidx/compose/runtime/saveable/SaverScope;Landroidx/compose/ui/text/intl/LocaleList;)Ljava/lang/Object;
     .locals 5
 
-    const-string p0, "$this$Saver"
-
-    invoke-static {p1, p0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string p0, "it"
-
-    invoke-static {p2, p0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 404
+    .line 436
     invoke-virtual {p2}, Landroidx/compose/ui/text/intl/LocaleList;->getLocaleList()Ljava/util/List;
 
     move-result-object p0
 
-    .line 423
+    .line 456
     new-instance p2, Ljava/util/ArrayList;
 
     invoke-interface {p0}, Ljava/util/List;->size()I
@@ -107,7 +99,7 @@
 
     invoke-direct {p2, v0}, Ljava/util/ArrayList;-><init>(I)V
 
-    .line 426
+    .line 459
     invoke-interface {p0}, Ljava/util/List;->size()I
 
     move-result v0
@@ -117,19 +109,19 @@
     :goto_0
     if-ge v1, v0, :cond_0
 
-    .line 427
+    .line 460
     invoke-interface {p0, v1}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
     move-result-object v2
 
-    .line 429
+    .line 462
     move-object v3, p2
 
     check-cast v3, Ljava/util/Collection;
 
     check-cast v2, Landroidx/compose/ui/text/intl/Locale;
 
-    .line 405
+    .line 437
     sget-object v4, Landroidx/compose/ui/text/intl/Locale;->Companion:Landroidx/compose/ui/text/intl/Locale$Companion;
 
     invoke-static {v4}, Landroidx/compose/ui/text/SaversKt;->getSaver(Landroidx/compose/ui/text/intl/Locale$Companion;)Landroidx/compose/runtime/saveable/Saver;
@@ -140,14 +132,14 @@
 
     move-result-object v2
 
-    .line 429
+    .line 462
     invoke-interface {v3, v2}, Ljava/util/Collection;->add(Ljava/lang/Object;)Z
 
     add-int/lit8 v1, v1, 0x1
 
     goto :goto_0
 
-    .line 432
+    .line 465
     :cond_0
     check-cast p2, Ljava/util/List;
 
@@ -157,7 +149,7 @@
 .method public bridge synthetic invoke(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
 
-    .line 402
+    .line 434
     check-cast p1, Landroidx/compose/runtime/saveable/SaverScope;
 
     check-cast p2, Landroidx/compose/ui/text/intl/LocaleList;

@@ -18,7 +18,7 @@
 .method public constructor <init>(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/view/View$OnClickListener;)V
     .locals 2
 
-    .line 457
+    .line 473
     sget v0, Lcom/google/android/material/R$layout;->design_navigation_item:I
 
     const/4 v1, 0x0
@@ -29,7 +29,7 @@
 
     invoke-direct {p0, p1}, Lcom/google/android/material/internal/NavigationMenuPresenter$ViewHolder;-><init>(Landroid/view/View;)V
 
-    .line 458
+    .line 474
     iget-object p0, p0, Lcom/google/android/material/internal/NavigationMenuPresenter$NormalViewHolder;->itemView:Landroid/view/View;
 
     invoke-virtual {p0, p3}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V

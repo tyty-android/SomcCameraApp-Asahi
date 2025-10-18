@@ -64,10 +64,10 @@
 .method public constructor <init>()V
     .locals 1
 
-    .line 246
+    .line 270
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 254
+    .line 278
     sget-object v0, Lkotlin/text/HexFormat$NumberHexFormat;->Companion:Lkotlin/text/HexFormat$NumberHexFormat$Companion;
 
     invoke-virtual {v0}, Lkotlin/text/HexFormat$NumberHexFormat$Companion;->getDefault$kotlin_stdlib()Lkotlin/text/HexFormat$NumberHexFormat;
@@ -80,7 +80,7 @@
 
     iput-object v0, p0, Lkotlin/text/HexFormat$NumberHexFormat$Builder;->prefix:Ljava/lang/String;
 
-    .line 268
+    .line 292
     sget-object v0, Lkotlin/text/HexFormat$NumberHexFormat;->Companion:Lkotlin/text/HexFormat$NumberHexFormat$Companion;
 
     invoke-virtual {v0}, Lkotlin/text/HexFormat$NumberHexFormat$Companion;->getDefault$kotlin_stdlib()Lkotlin/text/HexFormat$NumberHexFormat;
@@ -93,7 +93,7 @@
 
     iput-object v0, p0, Lkotlin/text/HexFormat$NumberHexFormat$Builder;->suffix:Ljava/lang/String;
 
-    .line 276
+    .line 300
     sget-object v0, Lkotlin/text/HexFormat$NumberHexFormat;->Companion:Lkotlin/text/HexFormat$NumberHexFormat$Companion;
 
     invoke-virtual {v0}, Lkotlin/text/HexFormat$NumberHexFormat$Companion;->getDefault$kotlin_stdlib()Lkotlin/text/HexFormat$NumberHexFormat;
@@ -114,7 +114,7 @@
 .method public final build$kotlin_stdlib()Lkotlin/text/HexFormat$NumberHexFormat;
     .locals 3
 
-    .line 279
+    .line 303
     new-instance v0, Lkotlin/text/HexFormat$NumberHexFormat;
 
     iget-object v1, p0, Lkotlin/text/HexFormat$NumberHexFormat$Builder;->prefix:Ljava/lang/String;
@@ -131,7 +131,7 @@
 .method public final getPrefix()Ljava/lang/String;
     .locals 0
 
-    .line 254
+    .line 278
     iget-object p0, p0, Lkotlin/text/HexFormat$NumberHexFormat$Builder;->prefix:Ljava/lang/String;
 
     return-object p0
@@ -140,7 +140,7 @@
 .method public final getRemoveLeadingZeros()Z
     .locals 0
 
-    .line 276
+    .line 300
     iget-boolean p0, p0, Lkotlin/text/HexFormat$NumberHexFormat$Builder;->removeLeadingZeros:Z
 
     return p0
@@ -149,7 +149,7 @@
 .method public final getSuffix()Ljava/lang/String;
     .locals 0
 
-    .line 268
+    .line 292
     iget-object p0, p0, Lkotlin/text/HexFormat$NumberHexFormat$Builder;->suffix:Ljava/lang/String;
 
     return-object p0
@@ -162,7 +162,7 @@
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 256
+    .line 280
     move-object v0, p1
 
     check-cast v0, Ljava/lang/CharSequence;
@@ -189,12 +189,12 @@
 
     if-nez v0, :cond_0
 
-    .line 258
+    .line 282
     iput-object p1, p0, Lkotlin/text/HexFormat$NumberHexFormat$Builder;->prefix:Ljava/lang/String;
 
     return-void
 
-    .line 257
+    .line 281
     :cond_0
     new-instance p0, Ljava/lang/IllegalArgumentException;
 
@@ -220,7 +220,7 @@
 .method public final setRemoveLeadingZeros(Z)V
     .locals 0
 
-    .line 276
+    .line 300
     iput-boolean p1, p0, Lkotlin/text/HexFormat$NumberHexFormat$Builder;->removeLeadingZeros:Z
 
     return-void
@@ -233,7 +233,7 @@
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 270
+    .line 294
     move-object v0, p1
 
     check-cast v0, Ljava/lang/CharSequence;
@@ -260,12 +260,12 @@
 
     if-nez v0, :cond_0
 
-    .line 272
+    .line 296
     iput-object p1, p0, Lkotlin/text/HexFormat$NumberHexFormat$Builder;->suffix:Ljava/lang/String;
 
     return-void
 
-    .line 271
+    .line 295
     :cond_0
     new-instance p0, Ljava/lang/IllegalArgumentException;
 

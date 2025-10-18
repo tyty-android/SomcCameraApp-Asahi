@@ -13,17 +13,17 @@
 
 
 # instance fields
-.field private final mCallback15:Landroid/view/View$OnClickListener;
+.field private final mCallback33:Landroid/view/View$OnClickListener;
 
-.field private final mCallback16:Landroid/view/View$OnClickListener;
+.field private final mCallback34:Landroid/view/View$OnClickListener;
 
-.field private final mCallback17:Landroid/view/View$OnClickListener;
+.field private final mCallback35:Landroid/view/View$OnClickListener;
 
-.field private final mCallback18:Landroid/view/View$OnClickListener;
+.field private final mCallback36:Landroid/view/View$OnClickListener;
 
-.field private final mCallback19:Landroid/view/View$OnClickListener;
+.field private final mCallback37:Landroid/view/View$OnClickListener;
 
-.field private final mCallback20:Landroid/view/View$OnClickListener;
+.field private final mCallback38:Landroid/view/View$OnClickListener;
 
 .field private mDirtyFlags:J
 
@@ -41,14 +41,14 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/databinding/FragmentProModeTopPaneBindingImpl;->sViewsWithIds:Landroid/util/SparseIntArray;
 
-    const v1, 0x7f0903bc
+    const v1, 0x7f0903ba
 
     const/16 v2, 0x9
 
     .line 17
     invoke-virtual {v0, v1, v2}, Landroid/util/SparseIntArray;->put(II)V
 
-    const v1, 0x7f09044d
+    const v1, 0x7f09043d
 
     const/16 v2, 0xa
 
@@ -175,8 +175,6 @@
 
     move/from16 v3, v20
 
-    move v15, v10
-
     move-object/from16 v10, v16
 
     move-object/from16 v11, v17
@@ -189,7 +187,7 @@
 
     const-wide/16 v0, -0x1
 
-    .line 1066
+    .line 1072
     iput-wide v0, v14, Ljp/co/sony/mc/camera/databinding/FragmentProModeTopPaneBindingImpl;->mDirtyFlags:J
 
     .line 56
@@ -256,34 +254,34 @@
 
     invoke-direct {v0, v14, v15}, Ljp/co/sony/mc/camera/generated/callback/OnClickListener;-><init>(Ljp/co/sony/mc/camera/generated/callback/OnClickListener$Listener;I)V
 
-    iput-object v0, v14, Ljp/co/sony/mc/camera/databinding/FragmentProModeTopPaneBindingImpl;->mCallback15:Landroid/view/View$OnClickListener;
+    iput-object v0, v14, Ljp/co/sony/mc/camera/databinding/FragmentProModeTopPaneBindingImpl;->mCallback35:Landroid/view/View$OnClickListener;
 
     .line 69
+    new-instance v0, Ljp/co/sony/mc/camera/generated/callback/OnClickListener;
+
+    const/4 v1, 0x4
+
+    invoke-direct {v0, v14, v1}, Ljp/co/sony/mc/camera/generated/callback/OnClickListener;-><init>(Ljp/co/sony/mc/camera/generated/callback/OnClickListener$Listener;I)V
+
+    iput-object v0, v14, Ljp/co/sony/mc/camera/databinding/FragmentProModeTopPaneBindingImpl;->mCallback36:Landroid/view/View$OnClickListener;
+
+    .line 70
     new-instance v0, Ljp/co/sony/mc/camera/generated/callback/OnClickListener;
 
     const/4 v1, 0x5
 
     invoke-direct {v0, v14, v1}, Ljp/co/sony/mc/camera/generated/callback/OnClickListener;-><init>(Ljp/co/sony/mc/camera/generated/callback/OnClickListener$Listener;I)V
 
-    iput-object v0, v14, Ljp/co/sony/mc/camera/databinding/FragmentProModeTopPaneBindingImpl;->mCallback19:Landroid/view/View$OnClickListener;
-
-    .line 70
-    new-instance v0, Ljp/co/sony/mc/camera/generated/callback/OnClickListener;
-
-    const/4 v1, 0x2
-
-    invoke-direct {v0, v14, v1}, Ljp/co/sony/mc/camera/generated/callback/OnClickListener;-><init>(Ljp/co/sony/mc/camera/generated/callback/OnClickListener$Listener;I)V
-
-    iput-object v0, v14, Ljp/co/sony/mc/camera/databinding/FragmentProModeTopPaneBindingImpl;->mCallback16:Landroid/view/View$OnClickListener;
+    iput-object v0, v14, Ljp/co/sony/mc/camera/databinding/FragmentProModeTopPaneBindingImpl;->mCallback37:Landroid/view/View$OnClickListener;
 
     .line 71
     new-instance v0, Ljp/co/sony/mc/camera/generated/callback/OnClickListener;
 
-    const/4 v1, 0x3
+    const/4 v1, 0x1
 
     invoke-direct {v0, v14, v1}, Ljp/co/sony/mc/camera/generated/callback/OnClickListener;-><init>(Ljp/co/sony/mc/camera/generated/callback/OnClickListener$Listener;I)V
 
-    iput-object v0, v14, Ljp/co/sony/mc/camera/databinding/FragmentProModeTopPaneBindingImpl;->mCallback17:Landroid/view/View$OnClickListener;
+    iput-object v0, v14, Ljp/co/sony/mc/camera/databinding/FragmentProModeTopPaneBindingImpl;->mCallback33:Landroid/view/View$OnClickListener;
 
     .line 72
     new-instance v0, Ljp/co/sony/mc/camera/generated/callback/OnClickListener;
@@ -292,16 +290,16 @@
 
     invoke-direct {v0, v14, v1}, Ljp/co/sony/mc/camera/generated/callback/OnClickListener;-><init>(Ljp/co/sony/mc/camera/generated/callback/OnClickListener$Listener;I)V
 
-    iput-object v0, v14, Ljp/co/sony/mc/camera/databinding/FragmentProModeTopPaneBindingImpl;->mCallback20:Landroid/view/View$OnClickListener;
+    iput-object v0, v14, Ljp/co/sony/mc/camera/databinding/FragmentProModeTopPaneBindingImpl;->mCallback38:Landroid/view/View$OnClickListener;
 
     .line 73
     new-instance v0, Ljp/co/sony/mc/camera/generated/callback/OnClickListener;
 
-    const/4 v1, 0x4
+    const/4 v1, 0x2
 
     invoke-direct {v0, v14, v1}, Ljp/co/sony/mc/camera/generated/callback/OnClickListener;-><init>(Ljp/co/sony/mc/camera/generated/callback/OnClickListener$Listener;I)V
 
-    iput-object v0, v14, Ljp/co/sony/mc/camera/databinding/FragmentProModeTopPaneBindingImpl;->mCallback18:Landroid/view/View$OnClickListener;
+    iput-object v0, v14, Ljp/co/sony/mc/camera/databinding/FragmentProModeTopPaneBindingImpl;->mCallback34:Landroid/view/View$OnClickListener;
 
     .line 74
     invoke-virtual/range {p0 .. p0}, Ljp/co/sony/mc/camera/databinding/FragmentProModeTopPaneBindingImpl;->invalidateAll()V
@@ -322,10 +320,10 @@
 
     if-nez p2, :cond_0
 
-    .line 377
+    .line 383
     monitor-enter p0
 
-    .line 378
+    .line 384
     :try_start_0
     iget-wide p1, p0, Ljp/co/sony/mc/camera/databinding/FragmentProModeTopPaneBindingImpl;->mDirtyFlags:J
 
@@ -335,7 +333,7 @@
 
     iput-wide p1, p0, Ljp/co/sony/mc/camera/databinding/FragmentProModeTopPaneBindingImpl;->mDirtyFlags:J
 
-    .line 379
+    .line 385
     monitor-exit p0
 
     const/4 p0, 0x1
@@ -370,10 +368,10 @@
 
     if-nez p2, :cond_0
 
-    .line 359
+    .line 365
     monitor-enter p0
 
-    .line 360
+    .line 366
     :try_start_0
     iget-wide p1, p0, Ljp/co/sony/mc/camera/databinding/FragmentProModeTopPaneBindingImpl;->mDirtyFlags:J
 
@@ -383,7 +381,7 @@
 
     iput-wide p1, p0, Ljp/co/sony/mc/camera/databinding/FragmentProModeTopPaneBindingImpl;->mDirtyFlags:J
 
-    .line 361
+    .line 367
     monitor-exit p0
 
     const/4 p0, 0x1
@@ -418,10 +416,10 @@
 
     if-nez p2, :cond_0
 
-    .line 260
+    .line 266
     monitor-enter p0
 
-    .line 261
+    .line 267
     :try_start_0
     iget-wide p1, p0, Ljp/co/sony/mc/camera/databinding/FragmentProModeTopPaneBindingImpl;->mDirtyFlags:J
 
@@ -431,7 +429,7 @@
 
     iput-wide p1, p0, Ljp/co/sony/mc/camera/databinding/FragmentProModeTopPaneBindingImpl;->mDirtyFlags:J
 
-    .line 262
+    .line 268
     monitor-exit p0
 
     const/4 p0, 0x1
@@ -466,10 +464,10 @@
 
     if-nez p2, :cond_0
 
-    .line 314
+    .line 320
     monitor-enter p0
 
-    .line 315
+    .line 321
     :try_start_0
     iget-wide p1, p0, Ljp/co/sony/mc/camera/databinding/FragmentProModeTopPaneBindingImpl;->mDirtyFlags:J
 
@@ -479,7 +477,7 @@
 
     iput-wide p1, p0, Ljp/co/sony/mc/camera/databinding/FragmentProModeTopPaneBindingImpl;->mDirtyFlags:J
 
-    .line 316
+    .line 322
     monitor-exit p0
 
     const/4 p0, 0x1
@@ -514,10 +512,10 @@
 
     if-nez p2, :cond_0
 
-    .line 341
+    .line 347
     monitor-enter p0
 
-    .line 342
+    .line 348
     :try_start_0
     iget-wide p1, p0, Ljp/co/sony/mc/camera/databinding/FragmentProModeTopPaneBindingImpl;->mDirtyFlags:J
 
@@ -527,7 +525,7 @@
 
     iput-wide p1, p0, Ljp/co/sony/mc/camera/databinding/FragmentProModeTopPaneBindingImpl;->mDirtyFlags:J
 
-    .line 343
+    .line 349
     monitor-exit p0
 
     const/4 p0, 0x1
@@ -562,10 +560,10 @@
 
     if-nez p2, :cond_0
 
-    .line 413
+    .line 419
     monitor-enter p0
 
-    .line 414
+    .line 420
     :try_start_0
     iget-wide p1, p0, Ljp/co/sony/mc/camera/databinding/FragmentProModeTopPaneBindingImpl;->mDirtyFlags:J
 
@@ -575,7 +573,7 @@
 
     iput-wide p1, p0, Ljp/co/sony/mc/camera/databinding/FragmentProModeTopPaneBindingImpl;->mDirtyFlags:J
 
-    .line 415
+    .line 421
     monitor-exit p0
 
     const/4 p0, 0x1
@@ -610,10 +608,10 @@
 
     if-nez p2, :cond_0
 
-    .line 395
+    .line 401
     monitor-enter p0
 
-    .line 396
+    .line 402
     :try_start_0
     iget-wide p1, p0, Ljp/co/sony/mc/camera/databinding/FragmentProModeTopPaneBindingImpl;->mDirtyFlags:J
 
@@ -623,7 +621,7 @@
 
     iput-wide p1, p0, Ljp/co/sony/mc/camera/databinding/FragmentProModeTopPaneBindingImpl;->mDirtyFlags:J
 
-    .line 397
+    .line 403
     monitor-exit p0
 
     const/4 p0, 0x1
@@ -658,10 +656,10 @@
 
     if-nez p2, :cond_0
 
-    .line 350
+    .line 356
     monitor-enter p0
 
-    .line 351
+    .line 357
     :try_start_0
     iget-wide p1, p0, Ljp/co/sony/mc/camera/databinding/FragmentProModeTopPaneBindingImpl;->mDirtyFlags:J
 
@@ -671,7 +669,7 @@
 
     iput-wide p1, p0, Ljp/co/sony/mc/camera/databinding/FragmentProModeTopPaneBindingImpl;->mDirtyFlags:J
 
-    .line 352
+    .line 358
     monitor-exit p0
 
     const/4 p0, 0x1
@@ -706,10 +704,10 @@
 
     if-nez p2, :cond_0
 
-    .line 404
+    .line 410
     monitor-enter p0
 
-    .line 405
+    .line 411
     :try_start_0
     iget-wide p1, p0, Ljp/co/sony/mc/camera/databinding/FragmentProModeTopPaneBindingImpl;->mDirtyFlags:J
 
@@ -719,7 +717,7 @@
 
     iput-wide p1, p0, Ljp/co/sony/mc/camera/databinding/FragmentProModeTopPaneBindingImpl;->mDirtyFlags:J
 
-    .line 406
+    .line 412
     monitor-exit p0
 
     const/4 p0, 0x1
@@ -754,10 +752,10 @@
 
     if-nez p2, :cond_0
 
-    .line 251
+    .line 257
     monitor-enter p0
 
-    .line 252
+    .line 258
     :try_start_0
     iget-wide p1, p0, Ljp/co/sony/mc/camera/databinding/FragmentProModeTopPaneBindingImpl;->mDirtyFlags:J
 
@@ -767,7 +765,7 @@
 
     iput-wide p1, p0, Ljp/co/sony/mc/camera/databinding/FragmentProModeTopPaneBindingImpl;->mDirtyFlags:J
 
-    .line 253
+    .line 259
     monitor-exit p0
 
     const/4 p0, 0x1
@@ -802,10 +800,10 @@
 
     if-nez p2, :cond_0
 
-    .line 368
+    .line 374
     monitor-enter p0
 
-    .line 369
+    .line 375
     :try_start_0
     iget-wide p1, p0, Ljp/co/sony/mc/camera/databinding/FragmentProModeTopPaneBindingImpl;->mDirtyFlags:J
 
@@ -815,7 +813,7 @@
 
     iput-wide p1, p0, Ljp/co/sony/mc/camera/databinding/FragmentProModeTopPaneBindingImpl;->mDirtyFlags:J
 
-    .line 370
+    .line 376
     monitor-exit p0
 
     const/4 p0, 0x1
@@ -850,10 +848,10 @@
 
     if-nez p2, :cond_0
 
-    .line 296
+    .line 302
     monitor-enter p0
 
-    .line 297
+    .line 303
     :try_start_0
     iget-wide p1, p0, Ljp/co/sony/mc/camera/databinding/FragmentProModeTopPaneBindingImpl;->mDirtyFlags:J
 
@@ -863,7 +861,7 @@
 
     iput-wide p1, p0, Ljp/co/sony/mc/camera/databinding/FragmentProModeTopPaneBindingImpl;->mDirtyFlags:J
 
-    .line 298
+    .line 304
     monitor-exit p0
 
     const/4 p0, 0x1
@@ -898,10 +896,10 @@
 
     if-nez p2, :cond_0
 
-    .line 278
+    .line 284
     monitor-enter p0
 
-    .line 279
+    .line 285
     :try_start_0
     iget-wide p1, p0, Ljp/co/sony/mc/camera/databinding/FragmentProModeTopPaneBindingImpl;->mDirtyFlags:J
 
@@ -911,7 +909,7 @@
 
     iput-wide p1, p0, Ljp/co/sony/mc/camera/databinding/FragmentProModeTopPaneBindingImpl;->mDirtyFlags:J
 
-    .line 280
+    .line 286
     monitor-exit p0
 
     const/4 p0, 0x1
@@ -946,10 +944,10 @@
 
     if-nez p2, :cond_0
 
-    .line 305
+    .line 311
     monitor-enter p0
 
-    .line 306
+    .line 312
     :try_start_0
     iget-wide p1, p0, Ljp/co/sony/mc/camera/databinding/FragmentProModeTopPaneBindingImpl;->mDirtyFlags:J
 
@@ -959,7 +957,7 @@
 
     iput-wide p1, p0, Ljp/co/sony/mc/camera/databinding/FragmentProModeTopPaneBindingImpl;->mDirtyFlags:J
 
-    .line 307
+    .line 313
     monitor-exit p0
 
     const/4 p0, 0x1
@@ -994,10 +992,10 @@
 
     if-nez p2, :cond_0
 
-    .line 269
+    .line 275
     monitor-enter p0
 
-    .line 270
+    .line 276
     :try_start_0
     iget-wide p1, p0, Ljp/co/sony/mc/camera/databinding/FragmentProModeTopPaneBindingImpl;->mDirtyFlags:J
 
@@ -1007,7 +1005,7 @@
 
     iput-wide p1, p0, Ljp/co/sony/mc/camera/databinding/FragmentProModeTopPaneBindingImpl;->mDirtyFlags:J
 
-    .line 271
+    .line 277
     monitor-exit p0
 
     const/4 p0, 0x1
@@ -1042,10 +1040,10 @@
 
     if-nez p2, :cond_0
 
-    .line 323
+    .line 329
     monitor-enter p0
 
-    .line 324
+    .line 330
     :try_start_0
     iget-wide p1, p0, Ljp/co/sony/mc/camera/databinding/FragmentProModeTopPaneBindingImpl;->mDirtyFlags:J
 
@@ -1055,7 +1053,7 @@
 
     iput-wide p1, p0, Ljp/co/sony/mc/camera/databinding/FragmentProModeTopPaneBindingImpl;->mDirtyFlags:J
 
-    .line 325
+    .line 331
     monitor-exit p0
 
     const/4 p0, 0x1
@@ -1090,10 +1088,10 @@
 
     if-nez p2, :cond_0
 
-    .line 287
+    .line 293
     monitor-enter p0
 
-    .line 288
+    .line 294
     :try_start_0
     iget-wide p1, p0, Ljp/co/sony/mc/camera/databinding/FragmentProModeTopPaneBindingImpl;->mDirtyFlags:J
 
@@ -1103,7 +1101,7 @@
 
     iput-wide p1, p0, Ljp/co/sony/mc/camera/databinding/FragmentProModeTopPaneBindingImpl;->mDirtyFlags:J
 
-    .line 289
+    .line 295
     monitor-exit p0
 
     const/4 p0, 0x1
@@ -1138,10 +1136,10 @@
 
     if-nez p2, :cond_0
 
-    .line 332
+    .line 338
     monitor-enter p0
 
-    .line 333
+    .line 339
     :try_start_0
     iget-wide p1, p0, Ljp/co/sony/mc/camera/databinding/FragmentProModeTopPaneBindingImpl;->mDirtyFlags:J
 
@@ -1151,7 +1149,7 @@
 
     iput-wide p1, p0, Ljp/co/sony/mc/camera/databinding/FragmentProModeTopPaneBindingImpl;->mDirtyFlags:J
 
-    .line 334
+    .line 340
     monitor-exit p0
 
     const/4 p0, 0x1
@@ -1186,10 +1184,10 @@
 
     if-nez p2, :cond_0
 
-    .line 386
+    .line 392
     monitor-enter p0
 
-    .line 387
+    .line 393
     :try_start_0
     iget-wide p1, p0, Ljp/co/sony/mc/camera/databinding/FragmentProModeTopPaneBindingImpl;->mDirtyFlags:J
 
@@ -1199,7 +1197,7 @@
 
     iput-wide p1, p0, Ljp/co/sony/mc/camera/databinding/FragmentProModeTopPaneBindingImpl;->mDirtyFlags:J
 
-    .line 388
+    .line 394
     monitor-exit p0
 
     const/4 p0, 0x1
@@ -1230,68 +1228,68 @@
 
     goto :goto_0
 
-    .line 1032
+    .line 1038
     :pswitch_0
     iget-object p0, p0, Ljp/co/sony/mc/camera/databinding/FragmentProModeTopPaneBindingImpl;->mProModeCommonUiState:Ljp/co/sony/mc/camera/view/uistate/ProModeCommonUiState;
 
     if-eqz p0, :cond_0
 
-    .line 1042
+    .line 1048
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/view/uistate/ProModeCommonUiState;->closeAllSubmenu()V
 
     goto :goto_0
 
-    .line 983
+    .line 1006
     :pswitch_1
     iget-object p0, p0, Ljp/co/sony/mc/camera/databinding/FragmentProModeTopPaneBindingImpl;->mLauncherModel:Ljp/co/sony/mc/camera/view/viewmodel/LauncherModel;
 
     if-eqz p0, :cond_0
 
-    .line 991
+    .line 1014
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/view/viewmodel/LauncherModel;->showDetailSettings()V
 
     goto :goto_0
 
-    .line 1049
+    .line 987
     :pswitch_2
     iget-object p0, p0, Ljp/co/sony/mc/camera/databinding/FragmentProModeTopPaneBindingImpl;->mMacroFallbackUiState:Ljp/co/sony/mc/camera/view/uistate/MacroFallbackUiState;
 
     if-eqz p0, :cond_0
 
-    .line 1059
+    .line 997
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/view/uistate/MacroFallbackUiState;->toggleMacroIndicator()V
 
     goto :goto_0
 
-    .line 1015
+    .line 970
     :pswitch_3
     iget-object p0, p0, Ljp/co/sony/mc/camera/databinding/FragmentProModeTopPaneBindingImpl;->mFlashUiState:Ljp/co/sony/mc/camera/view/uistate/FlashUiState;
 
     if-eqz p0, :cond_0
 
-    .line 1025
+    .line 980
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/view/uistate/FlashUiState;->togglePhotoLightMode()V
 
     goto :goto_0
 
-    .line 998
+    .line 1055
     :pswitch_4
     iget-object p0, p0, Ljp/co/sony/mc/camera/databinding/FragmentProModeTopPaneBindingImpl;->mFlashUiState:Ljp/co/sony/mc/camera/view/uistate/FlashUiState;
 
     if-eqz p0, :cond_0
 
-    .line 1008
+    .line 1065
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/view/uistate/FlashUiState;->toggleFlashMode()V
 
     goto :goto_0
 
-    .line 964
+    .line 1021
     :pswitch_5
     iget-object p0, p0, Ljp/co/sony/mc/camera/databinding/FragmentProModeTopPaneBindingImpl;->mProModeTopPaneUiState:Ljp/co/sony/mc/camera/view/uistate/ProModeTopPaneUiState;
 
     if-eqz p0, :cond_0
 
-    .line 974
+    .line 1031
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/view/uistate/ProModeTopPaneUiState;->toggleCapturingModeMenuVisible()V
 
     :cond_0
@@ -1314,48 +1312,48 @@
 
     move-object/from16 v1, p0
 
-    .line 424
+    .line 430
     monitor-enter p0
 
-    .line 425
+    .line 431
     :try_start_0
     iget-wide v2, v1, Ljp/co/sony/mc/camera/databinding/FragmentProModeTopPaneBindingImpl;->mDirtyFlags:J
 
     const-wide/16 v4, 0x0
 
-    .line 426
+    .line 432
     iput-wide v4, v1, Ljp/co/sony/mc/camera/databinding/FragmentProModeTopPaneBindingImpl;->mDirtyFlags:J
 
-    .line 427
+    .line 433
     monitor-exit p0
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 428
+    .line 434
     iget-object v0, v1, Ljp/co/sony/mc/camera/databinding/FragmentProModeTopPaneBindingImpl;->mOrientationViewModel:Ljp/co/sony/mc/camera/view/viewmodel/OrientationViewModel;
 
-    .line 430
+    .line 436
     iget-object v6, v1, Ljp/co/sony/mc/camera/databinding/FragmentProModeTopPaneBindingImpl;->mViewFinderUiState:Ljp/co/sony/mc/camera/view/uistate/ViewFinderUiState;
 
-    .line 437
+    .line 443
     iget-object v7, v1, Ljp/co/sony/mc/camera/databinding/FragmentProModeTopPaneBindingImpl;->mProModeTopPaneUiState:Ljp/co/sony/mc/camera/view/uistate/ProModeTopPaneUiState;
 
-    .line 439
+    .line 445
     iget-object v8, v1, Ljp/co/sony/mc/camera/databinding/FragmentProModeTopPaneBindingImpl;->mProModeCommonUiState:Ljp/co/sony/mc/camera/view/uistate/ProModeCommonUiState;
 
-    .line 455
+    .line 461
     iget-object v8, v1, Ljp/co/sony/mc/camera/databinding/FragmentProModeTopPaneBindingImpl;->mMacroFallbackUiState:Ljp/co/sony/mc/camera/view/uistate/MacroFallbackUiState;
 
-    .line 457
+    .line 463
     iget-object v9, v1, Ljp/co/sony/mc/camera/databinding/FragmentProModeTopPaneBindingImpl;->mFlashUiState:Ljp/co/sony/mc/camera/view/uistate/FlashUiState;
 
-    .line 471
+    .line 477
     iget-object v10, v1, Ljp/co/sony/mc/camera/databinding/FragmentProModeTopPaneBindingImpl;->mLauncherModel:Ljp/co/sony/mc/camera/view/viewmodel/LauncherModel;
 
-    .line 476
+    .line 482
     iget-object v10, v1, Ljp/co/sony/mc/camera/databinding/FragmentProModeTopPaneBindingImpl;->mModeDialUiState:Ljp/co/sony/mc/camera/view/uistate/ModeDialUiState;
 
-    const-wide/32 v11, 0x20080040
+    const-wide/32 v11, 0x40080040
 
     and-long/2addr v11, v2
 
@@ -1365,7 +1363,7 @@
 
     if-eqz v0, :cond_0
 
-    .line 498
+    .line 504
     invoke-virtual {v0}, Ljp/co/sony/mc/camera/view/viewmodel/OrientationViewModel;->getLayoutOrientation()Landroidx/lifecycle/LiveData;
 
     move-result-object v0
@@ -1378,12 +1376,12 @@
     :goto_0
     const/4 v13, 0x6
 
-    .line 500
+    .line 506
     invoke-virtual {v1, v13, v0}, Ljp/co/sony/mc/camera/databinding/FragmentProModeTopPaneBindingImpl;->updateLiveDataRegistration(ILandroidx/lifecycle/LiveData;)Z
 
     if-eqz v0, :cond_1
 
-    .line 505
+    .line 511
     invoke-virtual {v0}, Landroidx/lifecycle/LiveData;->getValue()Ljava/lang/Object;
 
     move-result-object v0
@@ -1396,7 +1394,7 @@
     const/4 v0, 0x0
 
     :goto_1
-    const-wide/32 v13, 0x20108000
+    const-wide/32 v13, 0x40108000
 
     and-long/2addr v13, v2
 
@@ -1406,7 +1404,7 @@
 
     if-eqz v6, :cond_2
 
-    .line 514
+    .line 520
     invoke-virtual {v6}, Ljp/co/sony/mc/camera/view/uistate/ViewFinderUiState;->getRecordingDuration()Landroidx/lifecycle/LiveData;
 
     move-result-object v6
@@ -1419,12 +1417,12 @@
     :goto_2
     const/16 v14, 0xf
 
-    .line 516
+    .line 522
     invoke-virtual {v1, v14, v6}, Ljp/co/sony/mc/camera/databinding/FragmentProModeTopPaneBindingImpl;->updateLiveDataRegistration(ILandroidx/lifecycle/LiveData;)Z
 
     if-eqz v6, :cond_3
 
-    .line 521
+    .line 527
     invoke-virtual {v6}, Landroidx/lifecycle/LiveData;->getValue()Ljava/lang/Object;
 
     move-result-object v6
@@ -1437,7 +1435,7 @@
     const/4 v6, 0x0
 
     :goto_3
-    const-wide/32 v14, 0x20200314
+    const-wide/32 v14, 0x40200314
 
     and-long/2addr v14, v2
 
@@ -1445,13 +1443,13 @@
 
     const/4 v15, 0x4
 
-    const-wide/32 v16, 0x20200200
+    const-wide/32 v16, 0x40200200
 
-    const-wide/32 v18, 0x20200100
+    const-wide/32 v18, 0x40200100
 
-    const-wide/32 v20, 0x20200010
+    const-wide/32 v20, 0x40200010
 
-    const-wide/32 v22, 0x20200004
+    const-wide/32 v22, 0x40200004
 
     if-eqz v14, :cond_10
 
@@ -1463,7 +1461,7 @@
 
     if-eqz v7, :cond_4
 
-    .line 531
+    .line 537
     invoke-virtual {v7}, Ljp/co/sony/mc/camera/view/uistate/ProModeTopPaneUiState;->getCapturingModeButtonVisible()Landroidx/lifecycle/LiveData;
 
     move-result-object v14
@@ -1476,12 +1474,12 @@
     :goto_4
     const/4 v12, 0x2
 
-    .line 533
+    .line 539
     invoke-virtual {v1, v12, v14}, Ljp/co/sony/mc/camera/databinding/FragmentProModeTopPaneBindingImpl;->updateLiveDataRegistration(ILandroidx/lifecycle/LiveData;)Z
 
     if-eqz v14, :cond_5
 
-    .line 538
+    .line 544
     invoke-virtual {v14}, Landroidx/lifecycle/LiveData;->getValue()Ljava/lang/Object;
 
     move-result-object v12
@@ -1493,7 +1491,7 @@
     :cond_5
     const/4 v12, 0x0
 
-    .line 543
+    .line 549
     :goto_5
     invoke-static {v12}, Landroidx/databinding/ViewDataBinding;->safeUnbox(Ljava/lang/Boolean;)Z
 
@@ -1513,7 +1511,7 @@
 
     if-eqz v7, :cond_7
 
-    .line 549
+    .line 555
     invoke-virtual {v7}, Ljp/co/sony/mc/camera/view/uistate/ProModeTopPaneUiState;->isSettingMenuEnabled()Landroidx/lifecycle/LiveData;
 
     move-result-object v14
@@ -1523,13 +1521,13 @@
     :cond_7
     const/4 v14, 0x0
 
-    .line 551
+    .line 557
     :goto_7
     invoke-virtual {v1, v15, v14}, Ljp/co/sony/mc/camera/databinding/FragmentProModeTopPaneBindingImpl;->updateLiveDataRegistration(ILandroidx/lifecycle/LiveData;)Z
 
     if-eqz v14, :cond_8
 
-    .line 556
+    .line 562
     invoke-virtual {v14}, Landroidx/lifecycle/LiveData;->getValue()Ljava/lang/Object;
 
     move-result-object v14
@@ -1541,7 +1539,7 @@
     :cond_8
     const/4 v14, 0x0
 
-    .line 561
+    .line 567
     :goto_8
     invoke-static {v14}, Landroidx/databinding/ViewDataBinding;->safeUnbox(Ljava/lang/Boolean;)Z
 
@@ -1561,7 +1559,7 @@
 
     if-eqz v7, :cond_a
 
-    .line 567
+    .line 573
     invoke-virtual {v7}, Ljp/co/sony/mc/camera/view/uistate/ProModeTopPaneUiState;->getHideFnMenuCoverVisibility()Landroidx/lifecycle/LiveData;
 
     move-result-object v26
@@ -1576,12 +1574,12 @@
     :goto_a
     const/16 v4, 0x8
 
-    .line 569
+    .line 575
     invoke-virtual {v1, v4, v15}, Ljp/co/sony/mc/camera/databinding/FragmentProModeTopPaneBindingImpl;->updateLiveDataRegistration(ILandroidx/lifecycle/LiveData;)Z
 
     if-eqz v15, :cond_b
 
-    .line 574
+    .line 580
     invoke-virtual {v15}, Landroidx/lifecycle/LiveData;->getValue()Ljava/lang/Object;
 
     move-result-object v4
@@ -1593,7 +1591,7 @@
     :cond_b
     const/4 v4, 0x0
 
-    .line 579
+    .line 585
     :goto_b
     invoke-static {v4}, Landroidx/databinding/ViewDataBinding;->safeUnbox(Ljava/lang/Integer;)I
 
@@ -1615,7 +1613,7 @@
 
     if-eqz v7, :cond_d
 
-    .line 585
+    .line 591
     invoke-virtual {v7}, Ljp/co/sony/mc/camera/view/uistate/ProModeTopPaneUiState;->getSettingMenuButtonVisible()Landroidx/lifecycle/LiveData;
 
     move-result-object v5
@@ -1628,12 +1626,12 @@
     :goto_d
     const/16 v7, 0x9
 
-    .line 587
+    .line 593
     invoke-virtual {v1, v7, v5}, Ljp/co/sony/mc/camera/databinding/FragmentProModeTopPaneBindingImpl;->updateLiveDataRegistration(ILandroidx/lifecycle/LiveData;)Z
 
     if-eqz v5, :cond_e
 
-    .line 592
+    .line 598
     invoke-virtual {v5}, Landroidx/lifecycle/LiveData;->getValue()Ljava/lang/Object;
 
     move-result-object v5
@@ -1645,7 +1643,7 @@
     :cond_e
     const/4 v5, 0x0
 
-    .line 597
+    .line 603
     :goto_e
     invoke-static {v5}, Landroidx/databinding/ViewDataBinding;->safeUnbox(Ljava/lang/Boolean;)Z
 
@@ -1668,7 +1666,7 @@
     const/4 v14, 0x0
 
     :goto_f
-    const-wide/32 v29, 0x21022021
+    const-wide/32 v29, 0x42022021
 
     and-long v29, v2, v29
 
@@ -1676,13 +1674,13 @@
 
     cmp-long v7, v29, v27
 
-    const-wide/32 v29, 0x21020000
+    const-wide/32 v29, 0x42020000
 
-    const-wide/32 v31, 0x21002000
+    const-wide/32 v31, 0x42002000
 
-    const-wide/32 v33, 0x21000020
+    const-wide/32 v33, 0x42000020
 
-    const-wide/32 v35, 0x21000001
+    const-wide/32 v35, 0x42000001
 
     if-eqz v7, :cond_1d
 
@@ -1694,7 +1692,7 @@
 
     if-eqz v8, :cond_11
 
-    .line 607
+    .line 613
     invoke-virtual {v8}, Ljp/co/sony/mc/camera/view/uistate/MacroFallbackUiState;->getMacroIndicatorContentDescription()Landroidx/lifecycle/LiveData;
 
     move-result-object v7
@@ -1707,12 +1705,12 @@
     :goto_10
     const/4 v15, 0x0
 
-    .line 609
+    .line 615
     invoke-virtual {v1, v15, v7}, Ljp/co/sony/mc/camera/databinding/FragmentProModeTopPaneBindingImpl;->updateLiveDataRegistration(ILandroidx/lifecycle/LiveData;)Z
 
     if-eqz v7, :cond_12
 
-    .line 614
+    .line 620
     invoke-virtual {v7}, Landroidx/lifecycle/LiveData;->getValue()Ljava/lang/Object;
 
     move-result-object v7
@@ -1724,7 +1722,7 @@
     :cond_12
     const/4 v7, 0x0
 
-    .line 619
+    .line 625
     :goto_11
     invoke-static {v7}, Landroidx/databinding/ViewDataBinding;->safeUnbox(Ljava/lang/Integer;)I
 
@@ -1748,7 +1746,7 @@
 
     if-eqz v8, :cond_14
 
-    .line 625
+    .line 631
     invoke-virtual {v8}, Ljp/co/sony/mc/camera/view/uistate/MacroFallbackUiState;->getMacroIndicatorImageSrc()Landroidx/lifecycle/LiveData;
 
     move-result-object v25
@@ -1767,12 +1765,12 @@
     :goto_13
     const/4 v7, 0x5
 
-    .line 627
+    .line 633
     invoke-virtual {v1, v7, v15}, Ljp/co/sony/mc/camera/databinding/FragmentProModeTopPaneBindingImpl;->updateLiveDataRegistration(ILandroidx/lifecycle/LiveData;)Z
 
     if-eqz v15, :cond_15
 
-    .line 632
+    .line 638
     invoke-virtual {v15}, Landroidx/lifecycle/LiveData;->getValue()Ljava/lang/Object;
 
     move-result-object v7
@@ -1784,7 +1782,7 @@
     :cond_15
     const/4 v7, 0x0
 
-    .line 637
+    .line 643
     :goto_14
     invoke-static {v7}, Landroidx/databinding/ViewDataBinding;->safeUnbox(Ljava/lang/Integer;)I
 
@@ -1808,7 +1806,7 @@
 
     if-eqz v8, :cond_17
 
-    .line 643
+    .line 649
     invoke-virtual {v8}, Ljp/co/sony/mc/camera/view/uistate/MacroFallbackUiState;->getMacroIndicatorEnable()Landroidx/lifecycle/LiveData;
 
     move-result-object v15
@@ -1825,12 +1823,12 @@
     :goto_16
     const/16 v7, 0xd
 
-    .line 645
+    .line 651
     invoke-virtual {v1, v7, v15}, Ljp/co/sony/mc/camera/databinding/FragmentProModeTopPaneBindingImpl;->updateLiveDataRegistration(ILandroidx/lifecycle/LiveData;)Z
 
     if-eqz v15, :cond_18
 
-    .line 650
+    .line 656
     invoke-virtual {v15}, Landroidx/lifecycle/LiveData;->getValue()Ljava/lang/Object;
 
     move-result-object v7
@@ -1842,7 +1840,7 @@
     :cond_18
     const/4 v7, 0x0
 
-    .line 655
+    .line 661
     :goto_17
     invoke-static {v7}, Landroidx/databinding/ViewDataBinding;->safeUnbox(Ljava/lang/Boolean;)Z
 
@@ -1866,7 +1864,7 @@
 
     if-eqz v8, :cond_1a
 
-    .line 661
+    .line 667
     invoke-virtual {v8}, Ljp/co/sony/mc/camera/view/uistate/MacroFallbackUiState;->isMacroIndicatorVisible()Landroidx/lifecycle/LiveData;
 
     move-result-object v8
@@ -1879,12 +1877,12 @@
     :goto_19
     const/16 v15, 0x11
 
-    .line 663
+    .line 669
     invoke-virtual {v1, v15, v8}, Ljp/co/sony/mc/camera/databinding/FragmentProModeTopPaneBindingImpl;->updateLiveDataRegistration(ILandroidx/lifecycle/LiveData;)Z
 
     if-eqz v8, :cond_1b
 
-    .line 668
+    .line 674
     invoke-virtual {v8}, Landroidx/lifecycle/LiveData;->getValue()Ljava/lang/Object;
 
     move-result-object v8
@@ -1896,7 +1894,7 @@
     :cond_1b
     const/4 v8, 0x0
 
-    .line 673
+    .line 679
     :goto_1a
     invoke-static {v8}, Landroidx/databinding/ViewDataBinding;->safeUnbox(Ljava/lang/Boolean;)Z
 
@@ -1939,7 +1937,7 @@
     const/4 v15, 0x0
 
     :goto_1b
-    const-wide/32 v38, 0x22055c82
+    const-wide/32 v38, 0x44055c82
 
     and-long v38, v2, v38
 
@@ -1947,21 +1945,21 @@
 
     cmp-long v38, v38, v27
 
-    const-wide/32 v39, 0x22040000
+    const-wide/32 v39, 0x44040000
 
-    const-wide/32 v41, 0x22010000
+    const-wide/32 v41, 0x44010000
 
-    const-wide/32 v43, 0x22001000
+    const-wide/32 v43, 0x44001000
 
-    const-wide/32 v45, 0x22000800
+    const-wide/32 v45, 0x44000800
 
-    const-wide/32 v47, 0x22004000
+    const-wide/32 v47, 0x44004000
 
-    const-wide/32 v49, 0x22000400
+    const-wide/32 v49, 0x44000400
 
-    const-wide/32 v51, 0x22000080
+    const-wide/32 v51, 0x44000080
 
-    const-wide/32 v53, 0x22000002
+    const-wide/32 v53, 0x44000002
 
     if-eqz v38, :cond_36
 
@@ -1973,7 +1971,7 @@
 
     if-eqz v9, :cond_1e
 
-    .line 683
+    .line 689
     invoke-virtual {v9}, Ljp/co/sony/mc/camera/view/uistate/FlashUiState;->isFlashModeButtonClickable()Landroidx/lifecycle/LiveData;
 
     move-result-object v38
@@ -1998,12 +1996,12 @@
     :goto_1c
     const/4 v12, 0x1
 
-    .line 685
+    .line 691
     invoke-virtual {v1, v12, v13}, Ljp/co/sony/mc/camera/databinding/FragmentProModeTopPaneBindingImpl;->updateLiveDataRegistration(ILandroidx/lifecycle/LiveData;)Z
 
     if-eqz v13, :cond_1f
 
-    .line 690
+    .line 696
     invoke-virtual {v13}, Landroidx/lifecycle/LiveData;->getValue()Ljava/lang/Object;
 
     move-result-object v12
@@ -2015,7 +2013,7 @@
     :cond_1f
     const/4 v12, 0x0
 
-    .line 695
+    .line 701
     :goto_1d
     invoke-static {v12}, Landroidx/databinding/ViewDataBinding;->safeUnbox(Ljava/lang/Boolean;)Z
 
@@ -2041,7 +2039,7 @@
 
     if-eqz v9, :cond_21
 
-    .line 701
+    .line 707
     invoke-virtual {v9}, Ljp/co/sony/mc/camera/view/uistate/FlashUiState;->isFlashModeButtonEnabled()Landroidx/lifecycle/LiveData;
 
     move-result-object v13
@@ -2058,12 +2056,12 @@
     :goto_1f
     const/4 v12, 0x7
 
-    .line 703
+    .line 709
     invoke-virtual {v1, v12, v13}, Ljp/co/sony/mc/camera/databinding/FragmentProModeTopPaneBindingImpl;->updateLiveDataRegistration(ILandroidx/lifecycle/LiveData;)Z
 
     if-eqz v13, :cond_22
 
-    .line 708
+    .line 714
     invoke-virtual {v13}, Landroidx/lifecycle/LiveData;->getValue()Ljava/lang/Object;
 
     move-result-object v12
@@ -2075,7 +2073,7 @@
     :cond_22
     const/4 v12, 0x0
 
-    .line 713
+    .line 719
     :goto_20
     invoke-static {v12}, Landroidx/databinding/ViewDataBinding;->safeUnbox(Ljava/lang/Boolean;)Z
 
@@ -2099,7 +2097,7 @@
 
     if-eqz v9, :cond_24
 
-    .line 719
+    .line 725
     invoke-virtual {v9}, Ljp/co/sony/mc/camera/view/uistate/FlashUiState;->isPhotoLightButtonClickable()Landroidx/lifecycle/LiveData;
 
     move-result-object v13
@@ -2116,12 +2114,12 @@
     :goto_22
     const/16 v12, 0xa
 
-    .line 721
+    .line 727
     invoke-virtual {v1, v12, v13}, Ljp/co/sony/mc/camera/databinding/FragmentProModeTopPaneBindingImpl;->updateLiveDataRegistration(ILandroidx/lifecycle/LiveData;)Z
 
     if-eqz v13, :cond_25
 
-    .line 726
+    .line 732
     invoke-virtual {v13}, Landroidx/lifecycle/LiveData;->getValue()Ljava/lang/Object;
 
     move-result-object v12
@@ -2133,7 +2131,7 @@
     :cond_25
     const/4 v12, 0x0
 
-    .line 731
+    .line 737
     :goto_23
     invoke-static {v12}, Landroidx/databinding/ViewDataBinding;->safeUnbox(Ljava/lang/Boolean;)Z
 
@@ -2157,7 +2155,7 @@
 
     if-eqz v9, :cond_27
 
-    .line 737
+    .line 743
     invoke-virtual {v9}, Ljp/co/sony/mc/camera/view/uistate/FlashUiState;->getPhotoLightModeButtonSrc()Landroidx/lifecycle/LiveData;
 
     move-result-object v13
@@ -2174,12 +2172,12 @@
     :goto_25
     const/16 v12, 0xb
 
-    .line 739
+    .line 745
     invoke-virtual {v1, v12, v13}, Ljp/co/sony/mc/camera/databinding/FragmentProModeTopPaneBindingImpl;->updateLiveDataRegistration(ILandroidx/lifecycle/LiveData;)Z
 
     if-eqz v13, :cond_28
 
-    .line 744
+    .line 750
     invoke-virtual {v13}, Landroidx/lifecycle/LiveData;->getValue()Ljava/lang/Object;
 
     move-result-object v12
@@ -2191,7 +2189,7 @@
     :cond_28
     const/4 v12, 0x0
 
-    .line 749
+    .line 755
     :goto_26
     invoke-static {v12}, Landroidx/databinding/ViewDataBinding;->safeUnbox(Ljava/lang/Integer;)I
 
@@ -2215,7 +2213,7 @@
 
     if-eqz v9, :cond_2a
 
-    .line 755
+    .line 761
     invoke-virtual {v9}, Ljp/co/sony/mc/camera/view/uistate/FlashUiState;->getFlashModeButtonVisible()Landroidx/lifecycle/LiveData;
 
     move-result-object v13
@@ -2232,12 +2230,12 @@
     :goto_28
     const/16 v12, 0xc
 
-    .line 757
+    .line 763
     invoke-virtual {v1, v12, v13}, Ljp/co/sony/mc/camera/databinding/FragmentProModeTopPaneBindingImpl;->updateLiveDataRegistration(ILandroidx/lifecycle/LiveData;)Z
 
     if-eqz v13, :cond_2b
 
-    .line 762
+    .line 768
     invoke-virtual {v13}, Landroidx/lifecycle/LiveData;->getValue()Ljava/lang/Object;
 
     move-result-object v12
@@ -2249,7 +2247,7 @@
     :cond_2b
     const/4 v12, 0x0
 
-    .line 767
+    .line 773
     :goto_29
     invoke-static {v12}, Landroidx/databinding/ViewDataBinding;->safeUnbox(Ljava/lang/Boolean;)Z
 
@@ -2273,7 +2271,7 @@
 
     if-eqz v9, :cond_2d
 
-    .line 773
+    .line 779
     invoke-virtual {v9}, Ljp/co/sony/mc/camera/view/uistate/FlashUiState;->getFlashModeButtonSrc()Landroidx/lifecycle/LiveData;
 
     move-result-object v13
@@ -2290,12 +2288,12 @@
     :goto_2b
     const/16 v12, 0xe
 
-    .line 775
+    .line 781
     invoke-virtual {v1, v12, v13}, Ljp/co/sony/mc/camera/databinding/FragmentProModeTopPaneBindingImpl;->updateLiveDataRegistration(ILandroidx/lifecycle/LiveData;)Z
 
     if-eqz v13, :cond_2e
 
-    .line 780
+    .line 786
     invoke-virtual {v13}, Landroidx/lifecycle/LiveData;->getValue()Ljava/lang/Object;
 
     move-result-object v12
@@ -2307,7 +2305,7 @@
     :cond_2e
     const/4 v12, 0x0
 
-    .line 785
+    .line 791
     :goto_2c
     invoke-static {v12}, Landroidx/databinding/ViewDataBinding;->safeUnbox(Ljava/lang/Integer;)I
 
@@ -2331,7 +2329,7 @@
 
     if-eqz v9, :cond_30
 
-    .line 791
+    .line 797
     invoke-virtual {v9}, Ljp/co/sony/mc/camera/view/uistate/FlashUiState;->getPhotoLightButtonVisible()Landroidx/lifecycle/LiveData;
 
     move-result-object v13
@@ -2348,12 +2346,12 @@
     :goto_2e
     const/16 v12, 0x10
 
-    .line 793
+    .line 799
     invoke-virtual {v1, v12, v13}, Ljp/co/sony/mc/camera/databinding/FragmentProModeTopPaneBindingImpl;->updateLiveDataRegistration(ILandroidx/lifecycle/LiveData;)Z
 
     if-eqz v13, :cond_31
 
-    .line 798
+    .line 804
     invoke-virtual {v13}, Landroidx/lifecycle/LiveData;->getValue()Ljava/lang/Object;
 
     move-result-object v12
@@ -2365,7 +2363,7 @@
     :cond_31
     const/4 v12, 0x0
 
-    .line 803
+    .line 809
     :goto_2f
     invoke-static {v12}, Landroidx/databinding/ViewDataBinding;->safeUnbox(Ljava/lang/Boolean;)Z
 
@@ -2389,7 +2387,7 @@
 
     if-eqz v9, :cond_33
 
-    .line 809
+    .line 815
     invoke-virtual {v9}, Ljp/co/sony/mc/camera/view/uistate/FlashUiState;->isPhotoLightButtonEnabled()Landroidx/lifecycle/LiveData;
 
     move-result-object v9
@@ -2402,12 +2400,12 @@
     :goto_31
     const/16 v13, 0x12
 
-    .line 811
+    .line 817
     invoke-virtual {v1, v13, v9}, Ljp/co/sony/mc/camera/databinding/FragmentProModeTopPaneBindingImpl;->updateLiveDataRegistration(ILandroidx/lifecycle/LiveData;)Z
 
     if-eqz v9, :cond_34
 
-    .line 816
+    .line 822
     invoke-virtual {v9}, Landroidx/lifecycle/LiveData;->getValue()Ljava/lang/Object;
 
     move-result-object v9
@@ -2419,7 +2417,7 @@
     :cond_34
     const/4 v9, 0x0
 
-    .line 821
+    .line 827
     :goto_32
     invoke-static {v9}, Landroidx/databinding/ViewDataBinding;->safeUnbox(Ljava/lang/Boolean;)Z
 
@@ -2490,7 +2488,7 @@
     const/16 v66, 0x0
 
     :goto_33
-    const-wide/32 v58, 0x28000008
+    const-wide/32 v58, 0x50000008
 
     and-long v58, v2, v58
 
@@ -2502,7 +2500,7 @@
 
     if-eqz v10, :cond_37
 
-    .line 830
+    .line 836
     invoke-virtual {v10}, Ljp/co/sony/mc/camera/view/uistate/ModeDialUiState;->getProModeResourceId()Landroidx/lifecycle/LiveData;
 
     move-result-object v10
@@ -2519,12 +2517,12 @@
     :goto_34
     const/4 v14, 0x3
 
-    .line 832
+    .line 838
     invoke-virtual {v1, v14, v10}, Ljp/co/sony/mc/camera/databinding/FragmentProModeTopPaneBindingImpl;->updateLiveDataRegistration(ILandroidx/lifecycle/LiveData;)Z
 
     if-eqz v10, :cond_38
 
-    .line 837
+    .line 843
     invoke-virtual {v10}, Landroidx/lifecycle/LiveData;->getValue()Ljava/lang/Object;
 
     move-result-object v10
@@ -2538,7 +2536,7 @@
     :cond_38
     const/16 v24, 0x0
 
-    .line 842
+    .line 848
     :goto_35
     invoke-static/range {v24 .. v24}, Landroidx/databinding/ViewDataBinding;->safeUnbox(Ljava/lang/Integer;)I
 
@@ -2560,7 +2558,7 @@
 
     if-eqz v14, :cond_3a
 
-    .line 848
+    .line 854
     iget-object v14, v1, Ljp/co/sony/mc/camera/databinding/FragmentProModeTopPaneBindingImpl;->flashMode:Landroid/widget/ImageButton;
 
     invoke-static {v14, v12}, Ljp/co/sony/mc/camera/view/viewbinder/BindingAdapters;->setEnabledWithAlpha(Landroid/view/View;Z)V
@@ -2568,27 +2566,27 @@
     :cond_3a
     if-eqz v11, :cond_3b
 
-    .line 853
+    .line 859
     iget-object v11, v1, Ljp/co/sony/mc/camera/databinding/FragmentProModeTopPaneBindingImpl;->flashMode:Landroid/widget/ImageButton;
 
     invoke-static {v11, v0}, Ljp/co/sony/mc/camera/view/viewbinder/BindingAdapters;->setOrientation(Landroid/view/View;Ljp/co/sony/mc/camera/view/orientation/LayoutOrientation;)V
 
-    .line 854
+    .line 860
     iget-object v11, v1, Ljp/co/sony/mc/camera/databinding/FragmentProModeTopPaneBindingImpl;->macroIndicator:Landroid/widget/ImageButton;
 
     invoke-static {v11, v0}, Ljp/co/sony/mc/camera/view/viewbinder/BindingAdapters;->setOrientation(Landroid/view/View;Ljp/co/sony/mc/camera/view/orientation/LayoutOrientation;)V
 
-    .line 855
+    .line 861
     iget-object v11, v1, Ljp/co/sony/mc/camera/databinding/FragmentProModeTopPaneBindingImpl;->menu:Landroid/widget/Button;
 
     invoke-static {v11, v0}, Ljp/co/sony/mc/camera/view/viewbinder/BindingAdapters;->setOrientation(Landroid/view/View;Ljp/co/sony/mc/camera/view/orientation/LayoutOrientation;)V
 
-    .line 856
+    .line 862
     iget-object v11, v1, Ljp/co/sony/mc/camera/databinding/FragmentProModeTopPaneBindingImpl;->mode:Landroid/widget/ImageButton;
 
     invoke-static {v11, v0}, Ljp/co/sony/mc/camera/view/viewbinder/BindingAdapters;->setOrientation(Landroid/view/View;Ljp/co/sony/mc/camera/view/orientation/LayoutOrientation;)V
 
-    .line 857
+    .line 863
     iget-object v11, v1, Ljp/co/sony/mc/camera/databinding/FragmentProModeTopPaneBindingImpl;->photoLightMode:Landroid/widget/ImageButton;
 
     invoke-static {v11, v0}, Ljp/co/sony/mc/camera/view/viewbinder/BindingAdapters;->setOrientation(Landroid/view/View;Ljp/co/sony/mc/camera/view/orientation/LayoutOrientation;)V
@@ -2602,7 +2600,7 @@
 
     if-eqz v0, :cond_3c
 
-    .line 862
+    .line 868
     iget-object v0, v1, Ljp/co/sony/mc/camera/databinding/FragmentProModeTopPaneBindingImpl;->flashMode:Landroid/widget/ImageButton;
 
     invoke-static {v0, v13}, Ljp/co/sony/mc/camera/view/viewbinder/BindingAdapters;->setImageResource(Landroid/widget/ImageView;I)V
@@ -2614,7 +2612,7 @@
 
     if-eqz v0, :cond_3d
 
-    .line 867
+    .line 873
     iget-object v0, v1, Ljp/co/sony/mc/camera/databinding/FragmentProModeTopPaneBindingImpl;->flashMode:Landroid/widget/ImageButton;
 
     invoke-static {v0, v9}, Ljp/co/sony/mc/camera/view/viewbinder/BindingAdapters;->setVisible(Landroid/view/View;Z)V
@@ -2626,10 +2624,10 @@
 
     if-eqz v0, :cond_3e
 
-    .line 872
+    .line 878
     iget-object v0, v1, Ljp/co/sony/mc/camera/databinding/FragmentProModeTopPaneBindingImpl;->flashMode:Landroid/widget/ImageButton;
 
-    iget-object v9, v1, Ljp/co/sony/mc/camera/databinding/FragmentProModeTopPaneBindingImpl;->mCallback16:Landroid/view/View$OnClickListener;
+    iget-object v9, v1, Ljp/co/sony/mc/camera/databinding/FragmentProModeTopPaneBindingImpl;->mCallback34:Landroid/view/View$OnClickListener;
 
     invoke-static {v0, v9, v5}, Landroidx/databinding/adapters/ViewBindingAdapter;->setOnClick(Landroid/view/View;Landroid/view/View$OnClickListener;Z)V
 
@@ -2640,13 +2638,13 @@
 
     if-eqz v0, :cond_3f
 
-    .line 877
+    .line 883
     iget-object v0, v1, Ljp/co/sony/mc/camera/databinding/FragmentProModeTopPaneBindingImpl;->hideFnMenuCover:Landroid/view/View;
 
     invoke-virtual {v0, v4}, Landroid/view/View;->setVisibility(I)V
 
     :cond_3f
-    const-wide/32 v4, 0x20000000
+    const-wide/32 v4, 0x40000000
 
     and-long/2addr v4, v2
 
@@ -2654,31 +2652,31 @@
 
     if-eqz v0, :cond_40
 
-    .line 882
+    .line 888
     iget-object v0, v1, Ljp/co/sony/mc/camera/databinding/FragmentProModeTopPaneBindingImpl;->hideFnMenuCover:Landroid/view/View;
 
-    iget-object v4, v1, Ljp/co/sony/mc/camera/databinding/FragmentProModeTopPaneBindingImpl;->mCallback20:Landroid/view/View$OnClickListener;
+    iget-object v4, v1, Ljp/co/sony/mc/camera/databinding/FragmentProModeTopPaneBindingImpl;->mCallback38:Landroid/view/View$OnClickListener;
 
     invoke-virtual {v0, v4}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
-    .line 883
+    .line 889
     iget-object v0, v1, Ljp/co/sony/mc/camera/databinding/FragmentProModeTopPaneBindingImpl;->macroIndicator:Landroid/widget/ImageButton;
 
-    iget-object v4, v1, Ljp/co/sony/mc/camera/databinding/FragmentProModeTopPaneBindingImpl;->mCallback18:Landroid/view/View$OnClickListener;
+    iget-object v4, v1, Ljp/co/sony/mc/camera/databinding/FragmentProModeTopPaneBindingImpl;->mCallback36:Landroid/view/View$OnClickListener;
 
     invoke-virtual {v0, v4}, Landroid/widget/ImageButton;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
-    .line 884
+    .line 890
     iget-object v0, v1, Ljp/co/sony/mc/camera/databinding/FragmentProModeTopPaneBindingImpl;->menu:Landroid/widget/Button;
 
-    iget-object v4, v1, Ljp/co/sony/mc/camera/databinding/FragmentProModeTopPaneBindingImpl;->mCallback19:Landroid/view/View$OnClickListener;
+    iget-object v4, v1, Ljp/co/sony/mc/camera/databinding/FragmentProModeTopPaneBindingImpl;->mCallback37:Landroid/view/View$OnClickListener;
 
     invoke-virtual {v0, v4}, Landroid/widget/Button;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
-    .line 885
+    .line 891
     iget-object v0, v1, Ljp/co/sony/mc/camera/databinding/FragmentProModeTopPaneBindingImpl;->mode:Landroid/widget/ImageButton;
 
-    iget-object v4, v1, Ljp/co/sony/mc/camera/databinding/FragmentProModeTopPaneBindingImpl;->mCallback15:Landroid/view/View$OnClickListener;
+    iget-object v4, v1, Ljp/co/sony/mc/camera/databinding/FragmentProModeTopPaneBindingImpl;->mCallback33:Landroid/view/View$OnClickListener;
 
     invoke-virtual {v0, v4}, Landroid/widget/ImageButton;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
@@ -2691,7 +2689,7 @@
 
     if-eqz v0, :cond_41
 
-    .line 890
+    .line 896
     iget-object v0, v1, Ljp/co/sony/mc/camera/databinding/FragmentProModeTopPaneBindingImpl;->macroIndicator:Landroid/widget/ImageButton;
 
     invoke-static {v0, v7}, Ljp/co/sony/mc/camera/view/viewbinder/BindingAdapters;->setContentDescription(Landroid/view/View;I)V
@@ -2703,7 +2701,7 @@
 
     if-eqz v0, :cond_42
 
-    .line 895
+    .line 901
     iget-object v0, v1, Ljp/co/sony/mc/camera/databinding/FragmentProModeTopPaneBindingImpl;->macroIndicator:Landroid/widget/ImageButton;
 
     invoke-static {v0, v8}, Ljp/co/sony/mc/camera/view/viewbinder/BindingAdapters;->setImageResource(Landroid/widget/ImageView;I)V
@@ -2715,7 +2713,7 @@
 
     if-eqz v0, :cond_43
 
-    .line 900
+    .line 906
     iget-object v0, v1, Ljp/co/sony/mc/camera/databinding/FragmentProModeTopPaneBindingImpl;->macroIndicator:Landroid/widget/ImageButton;
 
     invoke-static {v0, v6}, Ljp/co/sony/mc/camera/view/viewbinder/BindingAdapters;->setVisible(Landroid/view/View;Z)V
@@ -2727,7 +2725,7 @@
 
     if-eqz v0, :cond_44
 
-    .line 905
+    .line 911
     iget-object v0, v1, Ljp/co/sony/mc/camera/databinding/FragmentProModeTopPaneBindingImpl;->macroIndicator:Landroid/widget/ImageButton;
 
     invoke-static {v0, v15}, Ljp/co/sony/mc/camera/view/viewbinder/BindingAdapters;->setEnabledWithAlpha(Landroid/view/View;Z)V
@@ -2739,14 +2737,14 @@
 
     if-eqz v0, :cond_45
 
-    .line 910
+    .line 916
     iget-object v0, v1, Ljp/co/sony/mc/camera/databinding/FragmentProModeTopPaneBindingImpl;->menu:Landroid/widget/Button;
 
     move/from16 v14, v59
 
     invoke-static {v0, v14}, Ljp/co/sony/mc/camera/view/viewbinder/BindingAdapters;->setEnabledWithAlpha(Landroid/view/View;Z)V
 
-    .line 911
+    .line 917
     iget-object v0, v1, Ljp/co/sony/mc/camera/databinding/FragmentProModeTopPaneBindingImpl;->mode:Landroid/widget/ImageButton;
 
     invoke-virtual {v0, v14}, Landroid/widget/ImageButton;->setEnabled(Z)V
@@ -2758,7 +2756,7 @@
 
     if-eqz v0, :cond_46
 
-    .line 916
+    .line 922
     iget-object v0, v1, Ljp/co/sony/mc/camera/databinding/FragmentProModeTopPaneBindingImpl;->menu:Landroid/widget/Button;
 
     move/from16 v5, v57
@@ -2768,7 +2766,7 @@
     :cond_46
     if-eqz v58, :cond_47
 
-    .line 921
+    .line 927
     iget-object v0, v1, Ljp/co/sony/mc/camera/databinding/FragmentProModeTopPaneBindingImpl;->mode:Landroid/widget/ImageButton;
 
     invoke-static {v0, v10}, Ljp/co/sony/mc/camera/view/viewbinder/BindingAdapters;->setImageResource(Landroid/widget/ImageView;I)V
@@ -2782,14 +2780,14 @@
 
     if-eqz v0, :cond_48
 
-    .line 926
+    .line 932
     iget-object v0, v1, Ljp/co/sony/mc/camera/databinding/FragmentProModeTopPaneBindingImpl;->mode:Landroid/widget/ImageButton;
 
     move/from16 v12, v55
 
     invoke-static {v0, v12}, Ljp/co/sony/mc/camera/view/viewbinder/BindingAdapters;->setVisible(Landroid/view/View;Z)V
 
-    .line 927
+    .line 933
     iget-object v0, v1, Ljp/co/sony/mc/camera/databinding/FragmentProModeTopPaneBindingImpl;->spaceForMode:Landroid/widget/Space;
 
     invoke-static {v0, v12}, Ljp/co/sony/mc/camera/view/viewbinder/BindingAdapters;->setVisible(Landroid/view/View;Z)V
@@ -2801,7 +2799,7 @@
 
     if-eqz v0, :cond_49
 
-    .line 932
+    .line 938
     iget-object v0, v1, Ljp/co/sony/mc/camera/databinding/FragmentProModeTopPaneBindingImpl;->photoLightMode:Landroid/widget/ImageButton;
 
     move/from16 v9, v56
@@ -2815,7 +2813,7 @@
 
     if-eqz v0, :cond_4a
 
-    .line 937
+    .line 943
     iget-object v0, v1, Ljp/co/sony/mc/camera/databinding/FragmentProModeTopPaneBindingImpl;->photoLightMode:Landroid/widget/ImageButton;
 
     move/from16 v4, v64
@@ -2829,7 +2827,7 @@
 
     if-eqz v0, :cond_4b
 
-    .line 942
+    .line 948
     iget-object v0, v1, Ljp/co/sony/mc/camera/databinding/FragmentProModeTopPaneBindingImpl;->photoLightMode:Landroid/widget/ImageButton;
 
     move/from16 v12, v65
@@ -2843,10 +2841,10 @@
 
     if-eqz v0, :cond_4c
 
-    .line 947
+    .line 953
     iget-object v0, v1, Ljp/co/sony/mc/camera/databinding/FragmentProModeTopPaneBindingImpl;->photoLightMode:Landroid/widget/ImageButton;
 
-    iget-object v2, v1, Ljp/co/sony/mc/camera/databinding/FragmentProModeTopPaneBindingImpl;->mCallback17:Landroid/view/View$OnClickListener;
+    iget-object v2, v1, Ljp/co/sony/mc/camera/databinding/FragmentProModeTopPaneBindingImpl;->mCallback35:Landroid/view/View$OnClickListener;
 
     move/from16 v3, v66
 
@@ -2855,7 +2853,7 @@
     :cond_4c
     if-eqz v38, :cond_4d
 
-    .line 951
+    .line 957
     invoke-static {}, Ljp/co/sony/mc/camera/databinding/FragmentProModeTopPaneBindingImpl;->getBuildSdkInt()I
 
     move-result v0
@@ -2864,7 +2862,7 @@
 
     if-lt v0, v2, :cond_4d
 
-    .line 953
+    .line 959
     iget-object v0, v1, Ljp/co/sony/mc/camera/databinding/FragmentProModeTopPaneBindingImpl;->recordingDurationPortrait:Landroid/widget/LinearLayout;
 
     move-object/from16 v6, v37
@@ -2877,7 +2875,7 @@
     :catchall_0
     move-exception v0
 
-    .line 427
+    .line 433
     :try_start_1
     monitor-exit p0
     :try_end_1
@@ -2933,7 +2931,7 @@
     .line 79
     monitor-enter p0
 
-    const-wide/32 v0, 0x20000000
+    const-wide/32 v0, 0x40000000
 
     .line 80
     :try_start_0
@@ -2970,7 +2968,7 @@
 
     return p0
 
-    .line 245
+    .line 251
     :pswitch_0
     check-cast p2, Landroidx/lifecycle/LiveData;
 
@@ -2980,7 +2978,7 @@
 
     return p0
 
-    .line 243
+    .line 249
     :pswitch_1
     check-cast p2, Landroidx/lifecycle/LiveData;
 
@@ -2990,7 +2988,7 @@
 
     return p0
 
-    .line 241
+    .line 247
     :pswitch_2
     check-cast p2, Landroidx/lifecycle/LiveData;
 
@@ -3000,7 +2998,7 @@
 
     return p0
 
-    .line 239
+    .line 245
     :pswitch_3
     check-cast p2, Landroidx/lifecycle/LiveData;
 
@@ -3010,7 +3008,7 @@
 
     return p0
 
-    .line 237
+    .line 243
     :pswitch_4
     check-cast p2, Landroidx/lifecycle/LiveData;
 
@@ -3020,7 +3018,7 @@
 
     return p0
 
-    .line 235
+    .line 241
     :pswitch_5
     check-cast p2, Landroidx/lifecycle/LiveData;
 
@@ -3030,7 +3028,7 @@
 
     return p0
 
-    .line 233
+    .line 239
     :pswitch_6
     check-cast p2, Landroidx/lifecycle/LiveData;
 
@@ -3040,7 +3038,7 @@
 
     return p0
 
-    .line 231
+    .line 237
     :pswitch_7
     check-cast p2, Landroidx/lifecycle/LiveData;
 
@@ -3050,7 +3048,7 @@
 
     return p0
 
-    .line 229
+    .line 235
     :pswitch_8
     check-cast p2, Landroidx/lifecycle/LiveData;
 
@@ -3060,7 +3058,7 @@
 
     return p0
 
-    .line 227
+    .line 233
     :pswitch_9
     check-cast p2, Landroidx/lifecycle/LiveData;
 
@@ -3070,7 +3068,7 @@
 
     return p0
 
-    .line 225
+    .line 231
     :pswitch_a
     check-cast p2, Landroidx/lifecycle/LiveData;
 
@@ -3080,7 +3078,7 @@
 
     return p0
 
-    .line 223
+    .line 229
     :pswitch_b
     check-cast p2, Landroidx/lifecycle/LiveData;
 
@@ -3090,7 +3088,7 @@
 
     return p0
 
-    .line 221
+    .line 227
     :pswitch_c
     check-cast p2, Landroidx/lifecycle/LiveData;
 
@@ -3100,7 +3098,7 @@
 
     return p0
 
-    .line 219
+    .line 225
     :pswitch_d
     check-cast p2, Landroidx/lifecycle/LiveData;
 
@@ -3110,7 +3108,7 @@
 
     return p0
 
-    .line 217
+    .line 223
     :pswitch_e
     check-cast p2, Landroidx/lifecycle/LiveData;
 
@@ -3120,7 +3118,7 @@
 
     return p0
 
-    .line 215
+    .line 221
     :pswitch_f
     check-cast p2, Landroidx/lifecycle/LiveData;
 
@@ -3130,7 +3128,7 @@
 
     return p0
 
-    .line 213
+    .line 219
     :pswitch_10
     check-cast p2, Landroidx/lifecycle/LiveData;
 
@@ -3140,7 +3138,7 @@
 
     return p0
 
-    .line 211
+    .line 217
     :pswitch_11
     check-cast p2, Landroidx/lifecycle/LiveData;
 
@@ -3150,7 +3148,7 @@
 
     return p0
 
-    .line 209
+    .line 215
     :pswitch_12
     check-cast p2, Landroidx/lifecycle/LiveData;
 
@@ -3187,7 +3185,7 @@
 .method public setCameraSettingsModel(Ljp/co/sony/mc/camera/view/viewmodel/CameraSettingsModel;)V
     .locals 0
 
-    .line 202
+    .line 208
     iput-object p1, p0, Ljp/co/sony/mc/camera/databinding/FragmentProModeTopPaneBindingImpl;->mCameraSettingsModel:Ljp/co/sony/mc/camera/view/viewmodel/CameraSettingsModel;
 
     return-void
@@ -3196,8 +3194,17 @@
 .method public setCameraStatusModel(Ljp/co/sony/mc/camera/view/viewmodel/CameraStatusModel;)V
     .locals 0
 
-    .line 167
+    .line 173
     iput-object p1, p0, Ljp/co/sony/mc/camera/databinding/FragmentProModeTopPaneBindingImpl;->mCameraStatusModel:Ljp/co/sony/mc/camera/view/viewmodel/CameraStatusModel;
+
+    return-void
+.end method
+
+.method public setCaptureControlUiState(Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState;)V
+    .locals 0
+
+    .line 170
+    iput-object p1, p0, Ljp/co/sony/mc/camera/databinding/FragmentProModeTopPaneBindingImpl;->mCaptureControlUiState:Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState;
 
     return-void
 .end method
@@ -3205,33 +3212,33 @@
 .method public setFlashUiState(Ljp/co/sony/mc/camera/view/uistate/FlashUiState;)V
     .locals 4
 
-    .line 178
+    .line 184
     iput-object p1, p0, Ljp/co/sony/mc/camera/databinding/FragmentProModeTopPaneBindingImpl;->mFlashUiState:Ljp/co/sony/mc/camera/view/uistate/FlashUiState;
 
-    .line 179
+    .line 185
     monitor-enter p0
 
-    .line 180
+    .line 186
     :try_start_0
     iget-wide v0, p0, Ljp/co/sony/mc/camera/databinding/FragmentProModeTopPaneBindingImpl;->mDirtyFlags:J
 
-    const-wide/32 v2, 0x2000000
+    const-wide/32 v2, 0x4000000
 
     or-long/2addr v0, v2
 
     iput-wide v0, p0, Ljp/co/sony/mc/camera/databinding/FragmentProModeTopPaneBindingImpl;->mDirtyFlags:J
 
-    .line 181
+    .line 187
     monitor-exit p0
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    const/16 p1, 0xa
+    const/16 p1, 0xb
 
-    .line 182
+    .line 188
     invoke-virtual {p0, p1}, Ljp/co/sony/mc/camera/databinding/FragmentProModeTopPaneBindingImpl;->notifyPropertyChanged(I)V
 
-    .line 183
+    .line 189
     invoke-super {p0}, Ljp/co/sony/mc/camera/databinding/FragmentProModeTopPaneBinding;->requestRebind()V
 
     return-void
@@ -3239,7 +3246,7 @@
     :catchall_0
     move-exception p1
 
-    .line 181
+    .line 187
     :try_start_1
     monitor-exit p0
     :try_end_1
@@ -3251,33 +3258,33 @@
 .method public setLauncherModel(Ljp/co/sony/mc/camera/view/viewmodel/LauncherModel;)V
     .locals 4
 
-    .line 186
+    .line 192
     iput-object p1, p0, Ljp/co/sony/mc/camera/databinding/FragmentProModeTopPaneBindingImpl;->mLauncherModel:Ljp/co/sony/mc/camera/view/viewmodel/LauncherModel;
 
-    .line 187
+    .line 193
     monitor-enter p0
 
-    .line 188
+    .line 194
     :try_start_0
     iget-wide v0, p0, Ljp/co/sony/mc/camera/databinding/FragmentProModeTopPaneBindingImpl;->mDirtyFlags:J
 
-    const-wide/32 v2, 0x4000000
+    const-wide/32 v2, 0x8000000
 
     or-long/2addr v0, v2
 
     iput-wide v0, p0, Ljp/co/sony/mc/camera/databinding/FragmentProModeTopPaneBindingImpl;->mDirtyFlags:J
 
-    .line 189
+    .line 195
     monitor-exit p0
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    const/16 p1, 0xe
+    const/16 p1, 0x10
 
-    .line 190
+    .line 196
     invoke-virtual {p0, p1}, Ljp/co/sony/mc/camera/databinding/FragmentProModeTopPaneBindingImpl;->notifyPropertyChanged(I)V
 
-    .line 191
+    .line 197
     invoke-super {p0}, Ljp/co/sony/mc/camera/databinding/FragmentProModeTopPaneBinding;->requestRebind()V
 
     return-void
@@ -3285,7 +3292,7 @@
     :catchall_0
     move-exception p1
 
-    .line 189
+    .line 195
     :try_start_1
     monitor-exit p0
     :try_end_1
@@ -3297,33 +3304,33 @@
 .method public setMacroFallbackUiState(Ljp/co/sony/mc/camera/view/uistate/MacroFallbackUiState;)V
     .locals 4
 
-    .line 170
+    .line 176
     iput-object p1, p0, Ljp/co/sony/mc/camera/databinding/FragmentProModeTopPaneBindingImpl;->mMacroFallbackUiState:Ljp/co/sony/mc/camera/view/uistate/MacroFallbackUiState;
 
-    .line 171
+    .line 177
     monitor-enter p0
 
-    .line 172
+    .line 178
     :try_start_0
     iget-wide v0, p0, Ljp/co/sony/mc/camera/databinding/FragmentProModeTopPaneBindingImpl;->mDirtyFlags:J
 
-    const-wide/32 v2, 0x1000000
+    const-wide/32 v2, 0x2000000
 
     or-long/2addr v0, v2
 
     iput-wide v0, p0, Ljp/co/sony/mc/camera/databinding/FragmentProModeTopPaneBindingImpl;->mDirtyFlags:J
 
-    .line 173
+    .line 179
     monitor-exit p0
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    const/16 p1, 0x10
+    const/16 p1, 0x12
 
-    .line 174
+    .line 180
     invoke-virtual {p0, p1}, Ljp/co/sony/mc/camera/databinding/FragmentProModeTopPaneBindingImpl;->notifyPropertyChanged(I)V
 
-    .line 175
+    .line 181
     invoke-super {p0}, Ljp/co/sony/mc/camera/databinding/FragmentProModeTopPaneBinding;->requestRebind()V
 
     return-void
@@ -3331,7 +3338,7 @@
     :catchall_0
     move-exception p1
 
-    .line 173
+    .line 179
     :try_start_1
     monitor-exit p0
     :try_end_1
@@ -3343,33 +3350,33 @@
 .method public setModeDialUiState(Ljp/co/sony/mc/camera/view/uistate/ModeDialUiState;)V
     .locals 4
 
-    .line 194
+    .line 200
     iput-object p1, p0, Ljp/co/sony/mc/camera/databinding/FragmentProModeTopPaneBindingImpl;->mModeDialUiState:Ljp/co/sony/mc/camera/view/uistate/ModeDialUiState;
 
-    .line 195
+    .line 201
     monitor-enter p0
 
-    .line 196
+    .line 202
     :try_start_0
     iget-wide v0, p0, Ljp/co/sony/mc/camera/databinding/FragmentProModeTopPaneBindingImpl;->mDirtyFlags:J
 
-    const-wide/32 v2, 0x8000000
+    const-wide/32 v2, 0x10000000
 
     or-long/2addr v0, v2
 
     iput-wide v0, p0, Ljp/co/sony/mc/camera/databinding/FragmentProModeTopPaneBindingImpl;->mDirtyFlags:J
 
-    .line 197
+    .line 203
     monitor-exit p0
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    const/16 p1, 0x12
+    const/16 p1, 0x15
 
-    .line 198
+    .line 204
     invoke-virtual {p0, p1}, Ljp/co/sony/mc/camera/databinding/FragmentProModeTopPaneBindingImpl;->notifyPropertyChanged(I)V
 
-    .line 199
+    .line 205
     invoke-super {p0}, Ljp/co/sony/mc/camera/databinding/FragmentProModeTopPaneBinding;->requestRebind()V
 
     return-void
@@ -3377,7 +3384,7 @@
     :catchall_0
     move-exception p1
 
-    .line 197
+    .line 203
     :try_start_1
     monitor-exit p0
     :try_end_1
@@ -3389,13 +3396,13 @@
 .method public setOrientationViewModel(Ljp/co/sony/mc/camera/view/viewmodel/OrientationViewModel;)V
     .locals 4
 
-    .line 135
+    .line 138
     iput-object p1, p0, Ljp/co/sony/mc/camera/databinding/FragmentProModeTopPaneBindingImpl;->mOrientationViewModel:Ljp/co/sony/mc/camera/view/viewmodel/OrientationViewModel;
 
-    .line 136
+    .line 139
     monitor-enter p0
 
-    .line 137
+    .line 140
     :try_start_0
     iget-wide v0, p0, Ljp/co/sony/mc/camera/databinding/FragmentProModeTopPaneBindingImpl;->mDirtyFlags:J
 
@@ -3405,17 +3412,17 @@
 
     iput-wide v0, p0, Ljp/co/sony/mc/camera/databinding/FragmentProModeTopPaneBindingImpl;->mDirtyFlags:J
 
-    .line 138
+    .line 141
     monitor-exit p0
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    const/16 p1, 0x13
+    const/16 p1, 0x16
 
-    .line 139
+    .line 142
     invoke-virtual {p0, p1}, Ljp/co/sony/mc/camera/databinding/FragmentProModeTopPaneBindingImpl;->notifyPropertyChanged(I)V
 
-    .line 140
+    .line 143
     invoke-super {p0}, Ljp/co/sony/mc/camera/databinding/FragmentProModeTopPaneBinding;->requestRebind()V
 
     return-void
@@ -3423,7 +3430,7 @@
     :catchall_0
     move-exception p1
 
-    .line 138
+    .line 141
     :try_start_1
     monitor-exit p0
     :try_end_1
@@ -3435,13 +3442,13 @@
 .method public setProModeCommonUiState(Ljp/co/sony/mc/camera/view/uistate/ProModeCommonUiState;)V
     .locals 4
 
-    .line 159
+    .line 162
     iput-object p1, p0, Ljp/co/sony/mc/camera/databinding/FragmentProModeTopPaneBindingImpl;->mProModeCommonUiState:Ljp/co/sony/mc/camera/view/uistate/ProModeCommonUiState;
 
-    .line 160
+    .line 163
     monitor-enter p0
 
-    .line 161
+    .line 164
     :try_start_0
     iget-wide v0, p0, Ljp/co/sony/mc/camera/databinding/FragmentProModeTopPaneBindingImpl;->mDirtyFlags:J
 
@@ -3451,17 +3458,17 @@
 
     iput-wide v0, p0, Ljp/co/sony/mc/camera/databinding/FragmentProModeTopPaneBindingImpl;->mDirtyFlags:J
 
-    .line 162
+    .line 165
     monitor-exit p0
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    const/16 p1, 0x15
+    const/16 p1, 0x18
 
-    .line 163
+    .line 166
     invoke-virtual {p0, p1}, Ljp/co/sony/mc/camera/databinding/FragmentProModeTopPaneBindingImpl;->notifyPropertyChanged(I)V
 
-    .line 164
+    .line 167
     invoke-super {p0}, Ljp/co/sony/mc/camera/databinding/FragmentProModeTopPaneBinding;->requestRebind()V
 
     return-void
@@ -3469,7 +3476,7 @@
     :catchall_0
     move-exception p1
 
-    .line 162
+    .line 165
     :try_start_1
     monitor-exit p0
     :try_end_1
@@ -3481,13 +3488,13 @@
 .method public setProModeTopPaneUiState(Ljp/co/sony/mc/camera/view/uistate/ProModeTopPaneUiState;)V
     .locals 4
 
-    .line 151
+    .line 154
     iput-object p1, p0, Ljp/co/sony/mc/camera/databinding/FragmentProModeTopPaneBindingImpl;->mProModeTopPaneUiState:Ljp/co/sony/mc/camera/view/uistate/ProModeTopPaneUiState;
 
-    .line 152
+    .line 155
     monitor-enter p0
 
-    .line 153
+    .line 156
     :try_start_0
     iget-wide v0, p0, Ljp/co/sony/mc/camera/databinding/FragmentProModeTopPaneBindingImpl;->mDirtyFlags:J
 
@@ -3497,17 +3504,17 @@
 
     iput-wide v0, p0, Ljp/co/sony/mc/camera/databinding/FragmentProModeTopPaneBindingImpl;->mDirtyFlags:J
 
-    .line 154
+    .line 157
     monitor-exit p0
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    const/16 p1, 0x1a
+    const/16 p1, 0x1c
 
-    .line 155
+    .line 158
     invoke-virtual {p0, p1}, Ljp/co/sony/mc/camera/databinding/FragmentProModeTopPaneBindingImpl;->notifyPropertyChanged(I)V
 
-    .line 156
+    .line 159
     invoke-super {p0}, Ljp/co/sony/mc/camera/databinding/FragmentProModeTopPaneBinding;->requestRebind()V
 
     return-void
@@ -3515,7 +3522,7 @@
     :catchall_0
     move-exception p1
 
-    .line 154
+    .line 157
     :try_start_1
     monitor-exit p0
     :try_end_1
@@ -3527,7 +3534,7 @@
 .method public setVariable(ILjava/lang/Object;)Z
     .locals 1
 
-    const/16 v0, 0x13
+    const/16 v0, 0x16
 
     if-ne v0, p1, :cond_0
 
@@ -3536,10 +3543,10 @@
 
     invoke-virtual {p0, p2}, Ljp/co/sony/mc/camera/databinding/FragmentProModeTopPaneBindingImpl;->setOrientationViewModel(Ljp/co/sony/mc/camera/view/viewmodel/OrientationViewModel;)V
 
-    goto :goto_0
+    goto/16 :goto_0
 
     :cond_0
-    const/16 v0, 0x22
+    const/16 v0, 0x25
 
     if-ne v0, p1, :cond_1
 
@@ -3551,7 +3558,7 @@
     goto :goto_0
 
     :cond_1
-    const/16 v0, 0x1a
+    const/16 v0, 0x1c
 
     if-ne v0, p1, :cond_2
 
@@ -3563,7 +3570,7 @@
     goto :goto_0
 
     :cond_2
-    const/16 v0, 0x15
+    const/16 v0, 0x18
 
     if-ne v0, p1, :cond_3
 
@@ -3575,71 +3582,83 @@
     goto :goto_0
 
     :cond_3
-    const/16 v0, 0x8
+    const/16 v0, 0xa
 
     if-ne v0, p1, :cond_4
 
     .line 111
+    check-cast p2, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState;
+
+    invoke-virtual {p0, p2}, Ljp/co/sony/mc/camera/databinding/FragmentProModeTopPaneBindingImpl;->setCaptureControlUiState(Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState;)V
+
+    goto :goto_0
+
+    :cond_4
+    const/16 v0, 0x9
+
+    if-ne v0, p1, :cond_5
+
+    .line 114
     check-cast p2, Ljp/co/sony/mc/camera/view/viewmodel/CameraStatusModel;
 
     invoke-virtual {p0, p2}, Ljp/co/sony/mc/camera/databinding/FragmentProModeTopPaneBindingImpl;->setCameraStatusModel(Ljp/co/sony/mc/camera/view/viewmodel/CameraStatusModel;)V
 
     goto :goto_0
 
-    :cond_4
-    const/16 v0, 0x10
+    :cond_5
+    const/16 v0, 0x12
 
-    if-ne v0, p1, :cond_5
+    if-ne v0, p1, :cond_6
 
-    .line 114
+    .line 117
     check-cast p2, Ljp/co/sony/mc/camera/view/uistate/MacroFallbackUiState;
 
     invoke-virtual {p0, p2}, Ljp/co/sony/mc/camera/databinding/FragmentProModeTopPaneBindingImpl;->setMacroFallbackUiState(Ljp/co/sony/mc/camera/view/uistate/MacroFallbackUiState;)V
 
     goto :goto_0
 
-    :cond_5
-    const/16 v0, 0xa
+    :cond_6
+    const/16 v0, 0xb
 
-    if-ne v0, p1, :cond_6
+    if-ne v0, p1, :cond_7
 
-    .line 117
+    .line 120
     check-cast p2, Ljp/co/sony/mc/camera/view/uistate/FlashUiState;
 
     invoke-virtual {p0, p2}, Ljp/co/sony/mc/camera/databinding/FragmentProModeTopPaneBindingImpl;->setFlashUiState(Ljp/co/sony/mc/camera/view/uistate/FlashUiState;)V
 
     goto :goto_0
 
-    :cond_6
-    const/16 v0, 0xe
+    :cond_7
+    const/16 v0, 0x10
 
-    if-ne v0, p1, :cond_7
+    if-ne v0, p1, :cond_8
 
-    .line 120
+    .line 123
     check-cast p2, Ljp/co/sony/mc/camera/view/viewmodel/LauncherModel;
 
     invoke-virtual {p0, p2}, Ljp/co/sony/mc/camera/databinding/FragmentProModeTopPaneBindingImpl;->setLauncherModel(Ljp/co/sony/mc/camera/view/viewmodel/LauncherModel;)V
 
     goto :goto_0
 
-    :cond_7
-    const/16 v0, 0x12
+    :cond_8
+    const/16 v0, 0x15
 
-    if-ne v0, p1, :cond_8
+    if-ne v0, p1, :cond_9
 
-    .line 123
+    .line 126
     check-cast p2, Ljp/co/sony/mc/camera/view/uistate/ModeDialUiState;
 
     invoke-virtual {p0, p2}, Ljp/co/sony/mc/camera/databinding/FragmentProModeTopPaneBindingImpl;->setModeDialUiState(Ljp/co/sony/mc/camera/view/uistate/ModeDialUiState;)V
 
     goto :goto_0
 
-    :cond_8
-    const/4 v0, 0x7
+    :cond_9
+    const/16 v0, 0x8
 
-    if-ne v0, p1, :cond_9
+    if-ne v0, p1, :cond_a
 
-    .line 126
+    .line 129
     check-cast p2, Ljp/co/sony/mc/camera/view/viewmodel/CameraSettingsModel;
 
     invoke-virtual {p0, p2}, Ljp/co/sony/mc/camera/databinding/FragmentProModeTopPaneBindingImpl;->setCameraSettingsModel(Ljp/co/sony/mc/camera/view/viewmodel/CameraSettingsModel;)V
@@ -3649,7 +3668,7 @@
 
     goto :goto_1
 
-    :cond_9
+    :cond_a
     const/4 p0, 0x0
 
     :goto_1
@@ -3659,13 +3678,13 @@
 .method public setViewFinderUiState(Ljp/co/sony/mc/camera/view/uistate/ViewFinderUiState;)V
     .locals 4
 
-    .line 143
+    .line 146
     iput-object p1, p0, Ljp/co/sony/mc/camera/databinding/FragmentProModeTopPaneBindingImpl;->mViewFinderUiState:Ljp/co/sony/mc/camera/view/uistate/ViewFinderUiState;
 
-    .line 144
+    .line 147
     monitor-enter p0
 
-    .line 145
+    .line 148
     :try_start_0
     iget-wide v0, p0, Ljp/co/sony/mc/camera/databinding/FragmentProModeTopPaneBindingImpl;->mDirtyFlags:J
 
@@ -3675,17 +3694,17 @@
 
     iput-wide v0, p0, Ljp/co/sony/mc/camera/databinding/FragmentProModeTopPaneBindingImpl;->mDirtyFlags:J
 
-    .line 146
+    .line 149
     monitor-exit p0
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    const/16 p1, 0x22
+    const/16 p1, 0x25
 
-    .line 147
+    .line 150
     invoke-virtual {p0, p1}, Ljp/co/sony/mc/camera/databinding/FragmentProModeTopPaneBindingImpl;->notifyPropertyChanged(I)V
 
-    .line 148
+    .line 151
     invoke-super {p0}, Ljp/co/sony/mc/camera/databinding/FragmentProModeTopPaneBinding;->requestRebind()V
 
     return-void
@@ -3693,7 +3712,7 @@
     :catchall_0
     move-exception p1
 
-    .line 146
+    .line 149
     :try_start_1
     monitor-exit p0
     :try_end_1

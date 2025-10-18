@@ -103,6 +103,8 @@
 
 
 # static fields
+.field public static final $stable:I
+
 .field public static final INSTANCE:Landroidx/compose/ui/graphics/vector/compat/AndroidVectorResources;
 
 .field private static final STYLEABLE_VECTOR_DRAWABLE_ALPHA:I
@@ -339,6 +341,8 @@
 
     .line 97
     sput v4, Landroidx/compose/ui/graphics/vector/compat/AndroidVectorResources;->STYLEABLE_VECTOR_DRAWABLE_CLIP_PATH_PATH_DATA:I
+
+    sput v6, Landroidx/compose/ui/graphics/vector/compat/AndroidVectorResources;->$stable:I
 
     return-void
 

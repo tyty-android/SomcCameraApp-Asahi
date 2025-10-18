@@ -30,7 +30,7 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/SourceDebugExtension;
-    value = "SMAP\nLazyGridDsl.kt\nKotlin\n*S Kotlin\n*F\n+ 1 LazyGridDsl.kt\nandroidx/compose/foundation/lazy/grid/LazyGridDslKt$items$5\n*L\n1#1,557:1\n*E\n"
+    value = "SMAP\nLazyGridDsl.kt\nKotlin\n*S Kotlin\n*F\n+ 1 LazyGridDsl.kt\nandroidx/compose/foundation/lazy/grid/LazyGridDslKt$items$5\n*L\n1#1,563:1\n*E\n"
 .end annotation
 
 .annotation runtime Lkotlin/Metadata;
@@ -118,7 +118,7 @@
 .method public bridge synthetic invoke(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
 
-    .line 455
+    .line 461
     check-cast p1, Landroidx/compose/foundation/lazy/grid/LazyGridItemScope;
 
     check-cast p2, Ljava/lang/Number;
@@ -145,11 +145,7 @@
 .method public final invoke(Landroidx/compose/foundation/lazy/grid/LazyGridItemScope;ILandroidx/compose/runtime/Composer;I)V
     .locals 3
 
-    const-string v0, "$this$items"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string v0, "C455@19203L22:LazyGridDsl.kt#7791vq"
+    const-string v0, "C461@19441L22:LazyGridDsl.kt#7791vq"
 
     invoke-static {p3, v0}, Landroidx/compose/runtime/ComposerKt;->sourceInformation(Landroidx/compose/runtime/Composer;Ljava/lang/String;)V
 
@@ -206,7 +202,7 @@
 
     if-ne p4, v1, :cond_5
 
-    .line 456
+    .line 462
     invoke-interface {p3}, Landroidx/compose/runtime/Composer;->getSkipping()Z
 
     move-result p4
@@ -230,7 +226,7 @@
 
     const/4 p4, -0x1
 
-    const-string v1, "androidx.compose.foundation.lazy.grid.items.<anonymous> (LazyGridDsl.kt:454)"
+    const-string v1, "androidx.compose.foundation.lazy.grid.items.<anonymous> (LazyGridDsl.kt:461)"
 
     const v2, 0x29b3c0fe
 

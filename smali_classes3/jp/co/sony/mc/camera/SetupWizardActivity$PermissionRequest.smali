@@ -38,7 +38,7 @@
 .method private static synthetic $values()[Ljp/co/sony/mc/camera/SetupWizardActivity$PermissionRequest;
     .locals 4
 
-    .line 57
+    .line 55
     sget-object v0, Ljp/co/sony/mc/camera/SetupWizardActivity$PermissionRequest;->NONE:Ljp/co/sony/mc/camera/SetupWizardActivity$PermissionRequest;
 
     sget-object v1, Ljp/co/sony/mc/camera/SetupWizardActivity$PermissionRequest;->REQUEST_LOCATION_PERMISSION:Ljp/co/sony/mc/camera/SetupWizardActivity$PermissionRequest;
@@ -57,7 +57,7 @@
 .method static constructor <clinit>()V
     .locals 3
 
-    .line 58
+    .line 56
     new-instance v0, Ljp/co/sony/mc/camera/SetupWizardActivity$PermissionRequest;
 
     const-string v1, "NONE"
@@ -68,7 +68,7 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/SetupWizardActivity$PermissionRequest;->NONE:Ljp/co/sony/mc/camera/SetupWizardActivity$PermissionRequest;
 
-    .line 59
+    .line 57
     new-instance v0, Ljp/co/sony/mc/camera/SetupWizardActivity$PermissionRequest;
 
     const-string v1, "REQUEST_LOCATION_PERMISSION"
@@ -79,7 +79,7 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/SetupWizardActivity$PermissionRequest;->REQUEST_LOCATION_PERMISSION:Ljp/co/sony/mc/camera/SetupWizardActivity$PermissionRequest;
 
-    .line 60
+    .line 58
     new-instance v0, Ljp/co/sony/mc/camera/SetupWizardActivity$PermissionRequest;
 
     const-string v1, "REQUEST_NOTIFICATIONS_PERMISSION"
@@ -90,7 +90,7 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/SetupWizardActivity$PermissionRequest;->REQUEST_NOTIFICATIONS_PERMISSION:Ljp/co/sony/mc/camera/SetupWizardActivity$PermissionRequest;
 
-    .line 61
+    .line 59
     new-instance v0, Ljp/co/sony/mc/camera/SetupWizardActivity$PermissionRequest;
 
     const-string v1, "LAUNCH_LOCATION_SETTING"
@@ -101,7 +101,7 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/SetupWizardActivity$PermissionRequest;->LAUNCH_LOCATION_SETTING:Ljp/co/sony/mc/camera/SetupWizardActivity$PermissionRequest;
 
-    .line 57
+    .line 55
     invoke-static {}, Ljp/co/sony/mc/camera/SetupWizardActivity$PermissionRequest;->$values()[Ljp/co/sony/mc/camera/SetupWizardActivity$PermissionRequest;
 
     move-result-object v0
@@ -119,7 +119,7 @@
         }
     .end annotation
 
-    .line 57
+    .line 55
     invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
     return-void
@@ -128,7 +128,7 @@
 .method public static valueOf(Ljava/lang/String;)Ljp/co/sony/mc/camera/SetupWizardActivity$PermissionRequest;
     .locals 1
 
-    .line 57
+    .line 55
     const-class v0, Ljp/co/sony/mc/camera/SetupWizardActivity$PermissionRequest;
 
     invoke-static {v0, p0}, Ljava/lang/Enum;->valueOf(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
@@ -143,7 +143,7 @@
 .method public static values()[Ljp/co/sony/mc/camera/SetupWizardActivity$PermissionRequest;
     .locals 1
 
-    .line 57
+    .line 55
     sget-object v0, Ljp/co/sony/mc/camera/SetupWizardActivity$PermissionRequest;->$VALUES:[Ljp/co/sony/mc/camera/SetupWizardActivity$PermissionRequest;
 
     invoke-virtual {v0}, [Ljp/co/sony/mc/camera/SetupWizardActivity$PermissionRequest;->clone()Ljava/lang/Object;

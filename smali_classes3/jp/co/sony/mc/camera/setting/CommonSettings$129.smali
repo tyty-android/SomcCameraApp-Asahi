@@ -21,7 +21,7 @@
 .method constructor <init>()V
     .locals 0
 
-    .line 1323
+    .line 1329
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -42,8 +42,8 @@
         }
     .end annotation
 
-    .line 1326
-    invoke-static {}, Ljp/co/sony/mc/camera/configuration/parameters/HapticFeedback;->values()[Ljp/co/sony/mc/camera/configuration/parameters/HapticFeedback;
+    .line 1333
+    invoke-static {}, Ljp/co/sony/mc/camera/configuration/parameters/RemoteControl;->values()[Ljp/co/sony/mc/camera/configuration/parameters/RemoteControl;
 
     move-result-object p0
 

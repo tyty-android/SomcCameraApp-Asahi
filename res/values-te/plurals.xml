@@ -4,20 +4,4 @@
         <item quantity="other">%d కొత్త నోటిఫికేషన్‌లు</item>
         <item quantity="one">%d కొత్త నోటిఫికేషన్</item>
     </plurals>
-    <plurals name="mv_minute_remaining_txt">
-        <item quantity="other">%1$d నిమిషాలు మిగిలాయి</item>
-        <item quantity="one">1 నిమిషం మిగిలి ఉంది</item>
-    </plurals>
-    <plurals name="mv_minute_txt">
-        <item quantity="other">%1$d నిమిషాలు</item>
-        <item quantity="one">1 నిమిషం</item>
-    </plurals>
-    <plurals name="mv_second_remaining_txt">
-        <item quantity="other">%1$d సెకన్లు మిగిలాయి</item>
-        <item quantity="one">1 సెకను మిగిలి ఉంది</item>
-    </plurals>
-    <plurals name="mv_second_txt">
-        <item quantity="other">%1$d సెకన్లు</item>
-        <item quantity="one">1 సెకను</item>
-    </plurals>
 </resources>

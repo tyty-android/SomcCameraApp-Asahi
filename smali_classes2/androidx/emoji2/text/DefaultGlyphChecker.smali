@@ -28,7 +28,7 @@
 .method static constructor <clinit>()V
     .locals 1
 
-    .line 45
+    .line 46
     new-instance v0, Ljava/lang/ThreadLocal;
 
     invoke-direct {v0}, Ljava/lang/ThreadLocal;-><init>()V
@@ -41,10 +41,10 @@
 .method constructor <init>()V
     .locals 1
 
-    .line 52
+    .line 53
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 53
+    .line 54
     new-instance v0, Landroid/text/TextPaint;
 
     invoke-direct {v0}, Landroid/text/TextPaint;-><init>()V
@@ -53,7 +53,7 @@
 
     const/high16 p0, 0x41200000    # 10.0f
 
-    .line 54
+    .line 55
     invoke-virtual {v0, p0}, Landroid/text/TextPaint;->setTextSize(F)V
 
     return-void
@@ -62,7 +62,7 @@
 .method private static getStringBuilder()Ljava/lang/StringBuilder;
     .locals 2
 
-    .line 83
+    .line 84
     sget-object v0, Landroidx/emoji2/text/DefaultGlyphChecker;->sStringBuilder:Ljava/lang/ThreadLocal;
 
     invoke-virtual {v0}, Ljava/lang/ThreadLocal;->get()Ljava/lang/Object;
@@ -71,14 +71,14 @@
 
     if-nez v1, :cond_0
 
-    .line 84
+    .line 85
     new-instance v1, Ljava/lang/StringBuilder;
 
     invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
 
     invoke-virtual {v0, v1}, Ljava/lang/ThreadLocal;->set(Ljava/lang/Object;)V
 
-    .line 86
+    .line 87
     :cond_0
     invoke-virtual {v0}, Ljava/lang/ThreadLocal;->get()Ljava/lang/Object;
 
@@ -94,20 +94,20 @@
 .method public hasGlyph(Ljava/lang/CharSequence;III)Z
     .locals 1
 
-    .line 71
+    .line 72
     invoke-static {}, Landroidx/emoji2/text/DefaultGlyphChecker;->getStringBuilder()Ljava/lang/StringBuilder;
 
     move-result-object p4
 
     const/4 v0, 0x0
 
-    .line 72
+    .line 73
     invoke-virtual {p4, v0}, Ljava/lang/StringBuilder;->setLength(I)V
 
     :goto_0
     if-ge p2, p3, :cond_0
 
-    .line 75
+    .line 76
     invoke-interface {p1, p2}, Ljava/lang/CharSequence;->charAt(I)C
 
     move-result v0
@@ -118,7 +118,7 @@
 
     goto :goto_0
 
-    .line 79
+    .line 80
     :cond_0
     iget-object p0, p0, Landroidx/emoji2/text/DefaultGlyphChecker;->mTextPaint:Landroid/text/TextPaint;
 

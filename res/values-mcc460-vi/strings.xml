@@ -19,5 +19,4 @@ Vui lòng bật WLAN từ phần CÀI ĐẶT."</string>
     <string name="camera_strings_runtime_permission_rationale_network_cta_txt">"Ứng dụng này sử dụng mạng WLAN và dữ liệu di động để gửi dữ liệu người dùng (tức là ảnh/video đã ghi, dữ liệu giọng nói, thông tin tài khoản của các dịch vụ đang sử dụng, v.v.) lên Internet.
 Lưu ý rằng bạn có thể bị tính phí dữ liệu tùy thuộc vào hợp đồng với nhà khai thác mạng hoặc nhà cung cấp dịch vụ Internet của bạn."</string>
     <string name="camera_strings_streaming_error_wifi_disconnected_txt">Không có kết nối WLAN</string>
-    <string name="mv_wireless_network_txt">Sd dữ liệu WLAN &amp; di động</string>
 </resources>

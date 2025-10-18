@@ -71,7 +71,7 @@
 .method public final invoke()Ljava/lang/Boolean;
     .locals 7
 
-    .line 737
+    .line 747
     iget-object v0, p0, Landroidx/compose/material/DrawerKt$BottomDrawer$2$1$4$1;->$drawerState:Landroidx/compose/material/BottomDrawerState;
 
     sget-object v1, Landroidx/compose/material/BottomDrawerValue;->Closed:Landroidx/compose/material/BottomDrawerValue;
@@ -82,7 +82,7 @@
 
     if-eqz v0, :cond_0
 
-    .line 738
+    .line 748
     iget-object v1, p0, Landroidx/compose/material/DrawerKt$BottomDrawer$2$1$4$1;->$scope:Lkotlinx/coroutines/CoroutineScope;
 
     new-instance v0, Landroidx/compose/material/DrawerKt$BottomDrawer$2$1$4$1$1;
@@ -108,7 +108,7 @@
     :cond_0
     const/4 p0, 0x1
 
-    .line 739
+    .line 749
     invoke-static {p0}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
     move-result-object p0
@@ -119,7 +119,7 @@
 .method public bridge synthetic invoke()Ljava/lang/Object;
     .locals 0
 
-    .line 736
+    .line 746
     invoke-virtual {p0}, Landroidx/compose/material/DrawerKt$BottomDrawer$2$1$4$1;->invoke()Ljava/lang/Boolean;
 
     move-result-object p0

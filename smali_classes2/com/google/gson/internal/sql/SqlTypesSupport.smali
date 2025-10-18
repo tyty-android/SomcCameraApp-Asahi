@@ -39,7 +39,7 @@
 .method static constructor <clinit>()V
     .locals 2
 
-    .line 37
+    .line 48
     :try_start_0
     const-string v0, "java.sql.Date"
 
@@ -54,13 +54,13 @@
     :catch_0
     const/4 v0, 0x0
 
-    .line 42
+    .line 53
     :goto_0
     sput-boolean v0, Lcom/google/gson/internal/sql/SqlTypesSupport;->SUPPORTS_SQL_TYPES:Z
 
     if-eqz v0, :cond_0
 
-    .line 45
+    .line 56
     new-instance v0, Lcom/google/gson/internal/sql/SqlTypesSupport$1;
 
     const-class v1, Ljava/sql/Date;
@@ -69,7 +69,7 @@
 
     sput-object v0, Lcom/google/gson/internal/sql/SqlTypesSupport;->DATE_DATE_TYPE:Lcom/google/gson/internal/bind/DefaultDateTypeAdapter$DateType;
 
-    .line 50
+    .line 63
     new-instance v0, Lcom/google/gson/internal/sql/SqlTypesSupport$2;
 
     const-class v1, Ljava/sql/Timestamp;
@@ -78,17 +78,17 @@
 
     sput-object v0, Lcom/google/gson/internal/sql/SqlTypesSupport;->TIMESTAMP_DATE_TYPE:Lcom/google/gson/internal/bind/DefaultDateTypeAdapter$DateType;
 
-    .line 56
+    .line 71
     sget-object v0, Lcom/google/gson/internal/sql/SqlDateTypeAdapter;->FACTORY:Lcom/google/gson/TypeAdapterFactory;
 
     sput-object v0, Lcom/google/gson/internal/sql/SqlTypesSupport;->DATE_FACTORY:Lcom/google/gson/TypeAdapterFactory;
 
-    .line 57
+    .line 72
     sget-object v0, Lcom/google/gson/internal/sql/SqlTimeTypeAdapter;->FACTORY:Lcom/google/gson/TypeAdapterFactory;
 
     sput-object v0, Lcom/google/gson/internal/sql/SqlTypesSupport;->TIME_FACTORY:Lcom/google/gson/TypeAdapterFactory;
 
-    .line 58
+    .line 73
     sget-object v0, Lcom/google/gson/internal/sql/SqlTimestampTypeAdapter;->FACTORY:Lcom/google/gson/TypeAdapterFactory;
 
     sput-object v0, Lcom/google/gson/internal/sql/SqlTypesSupport;->TIMESTAMP_FACTORY:Lcom/google/gson/TypeAdapterFactory;
@@ -98,19 +98,19 @@
     :cond_0
     const/4 v0, 0x0
 
-    .line 60
+    .line 75
     sput-object v0, Lcom/google/gson/internal/sql/SqlTypesSupport;->DATE_DATE_TYPE:Lcom/google/gson/internal/bind/DefaultDateTypeAdapter$DateType;
 
-    .line 61
+    .line 76
     sput-object v0, Lcom/google/gson/internal/sql/SqlTypesSupport;->TIMESTAMP_DATE_TYPE:Lcom/google/gson/internal/bind/DefaultDateTypeAdapter$DateType;
 
-    .line 63
+    .line 78
     sput-object v0, Lcom/google/gson/internal/sql/SqlTypesSupport;->DATE_FACTORY:Lcom/google/gson/TypeAdapterFactory;
 
-    .line 64
+    .line 79
     sput-object v0, Lcom/google/gson/internal/sql/SqlTypesSupport;->TIME_FACTORY:Lcom/google/gson/TypeAdapterFactory;
 
-    .line 65
+    .line 80
     sput-object v0, Lcom/google/gson/internal/sql/SqlTypesSupport;->TIMESTAMP_FACTORY:Lcom/google/gson/TypeAdapterFactory;
 
     :goto_1
@@ -120,7 +120,7 @@
 .method private constructor <init>()V
     .locals 0
 
-    .line 69
+    .line 84
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void

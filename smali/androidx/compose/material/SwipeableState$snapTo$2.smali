@@ -18,17 +18,17 @@
 
 .annotation system Ldalvik/annotation/Signature;
     value = {
+        "<T:",
         "Ljava/lang/Object;",
-        "Lkotlinx/coroutines/flow/FlowCollector<",
-        "Ljava/util/Map<",
-        "Ljava/lang/Float;",
-        "+TT;>;>;"
+        ">",
+        "Ljava/lang/Object;",
+        "Lkotlinx/coroutines/flow/FlowCollector;"
     }
 .end annotation
 
 .annotation runtime Lkotlin/Metadata;
     d1 = {
-        "\u0000\u0012\n\u0000\n\u0002\u0010\u0002\n\u0002\u0008\u0002\n\u0002\u0010$\n\u0002\u0010\u0007\u0010\u0000\u001a\u00020\u0001\"\u0004\u0008\u0000\u0010\u00022\u0012\u0010\u0003\u001a\u000e\u0012\u0004\u0012\u00020\u0005\u0012\u0004\u0012\u0002H\u00020\u0004H\u008a@"
+        "\u0000\u0016\n\u0000\n\u0002\u0010\u0002\n\u0002\u0008\u0002\n\u0002\u0010$\n\u0002\u0010\u0007\n\u0002\u0008\u0002\u0010\u0000\u001a\u00020\u0001\"\u0004\u0008\u0000\u0010\u00022\u0012\u0010\u0003\u001a\u000e\u0012\u0004\u0012\u00020\u0005\u0012\u0004\u0012\u0002H\u00020\u0004H\u008a@\u00a2\u0006\u0004\u0008\u0006\u0010\u0007"
     }
     d2 = {
         "<anonymous>",
@@ -36,7 +36,9 @@
         "T",
         "anchors",
         "",
-        ""
+        "",
+        "emit",
+        "(Ljava/util/Map;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;"
     }
     k = 0x3
     mv = {
@@ -92,7 +94,7 @@
 .method public bridge synthetic emit(Ljava/lang/Object;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
     .locals 0
 
-    .line 311
+    .line 316
     check-cast p1, Ljava/util/Map;
 
     invoke-virtual {p0, p1, p2}, Landroidx/compose/material/SwipeableState$snapTo$2;->emit(Ljava/util/Map;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
@@ -154,7 +156,7 @@
 
     move-result-object v1
 
-    .line 311
+    .line 316
     iget v2, v0, Landroidx/compose/material/SwipeableState$snapTo$2$emit$1;->label:I
 
     const/4 v3, 0x1
@@ -183,7 +185,7 @@
     :cond_2
     invoke-static {p2}, Lkotlin/ResultKt;->throwOnFailure(Ljava/lang/Object;)V
 
-    .line 312
+    .line 317
     iget-object p2, p0, Landroidx/compose/material/SwipeableState$snapTo$2;->$targetValue:Ljava/lang/Object;
 
     invoke-static {p1, p2}, Landroidx/compose/material/SwipeableKt;->access$getOffset(Ljava/util/Map;Ljava/lang/Object;)Ljava/lang/Float;
@@ -192,7 +194,7 @@
 
     if-eqz p1, :cond_4
 
-    .line 316
+    .line 321
     iget-object p2, p0, Landroidx/compose/material/SwipeableState$snapTo$2;->this$0:Landroidx/compose/material/SwipeableState;
 
     invoke-virtual {p1}, Ljava/lang/Float;->floatValue()F
@@ -211,7 +213,7 @@
 
     return-object v1
 
-    .line 317
+    .line 322
     :cond_3
     :goto_1
     iget-object p1, p0, Landroidx/compose/material/SwipeableState$snapTo$2;->this$0:Landroidx/compose/material/SwipeableState;
@@ -220,12 +222,12 @@
 
     invoke-static {p1, p0}, Landroidx/compose/material/SwipeableState;->access$setCurrentValue(Landroidx/compose/material/SwipeableState;Ljava/lang/Object;)V
 
-    .line 318
+    .line 323
     sget-object p0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
 
     return-object p0
 
-    .line 313
+    .line 318
     :cond_4
     new-instance p0, Ljava/lang/IllegalArgumentException;
 

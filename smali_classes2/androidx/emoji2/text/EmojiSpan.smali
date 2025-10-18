@@ -19,7 +19,7 @@
 .method constructor <init>(Landroidx/emoji2/text/TypefaceEmojiRasterizer;)V
     .locals 1
 
-    .line 73
+    .line 74
     invoke-direct {p0}, Landroid/text/style/ReplacementSpan;-><init>()V
 
     .line 41
@@ -42,12 +42,12 @@
     .line 64
     iput v0, p0, Landroidx/emoji2/text/EmojiSpan;->mRatio:F
 
-    .line 74
+    .line 75
     const-string v0, "rasterizer cannot be null"
 
     invoke-static {p1, v0}, Landroidx/core/util/Preconditions;->checkNotNull(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 75
+    .line 76
     iput-object p1, p0, Landroidx/emoji2/text/EmojiSpan;->mRasterizer:Landroidx/emoji2/text/TypefaceEmojiRasterizer;
 
     return-void
@@ -58,7 +58,7 @@
 .method public final getHeight()I
     .locals 0
 
-    .line 128
+    .line 130
     iget-short p0, p0, Landroidx/emoji2/text/EmojiSpan;->mHeight:S
 
     return p0
@@ -67,7 +67,7 @@
 .method public final getId()I
     .locals 0
 
-    .line 145
+    .line 148
     invoke-virtual {p0}, Landroidx/emoji2/text/EmojiSpan;->getTypefaceRasterizer()Landroidx/emoji2/text/TypefaceEmojiRasterizer;
 
     move-result-object p0
@@ -82,7 +82,7 @@
 .method final getRatio()F
     .locals 0
 
-    .line 135
+    .line 138
     iget p0, p0, Landroidx/emoji2/text/EmojiSpan;->mRatio:F
 
     return p0
@@ -91,12 +91,12 @@
 .method public getSize(Landroid/graphics/Paint;Ljava/lang/CharSequence;IILandroid/graphics/Paint$FontMetricsInt;)I
     .locals 0
 
-    .line 85
+    .line 86
     iget-object p2, p0, Landroidx/emoji2/text/EmojiSpan;->mTmpFontMetrics:Landroid/graphics/Paint$FontMetricsInt;
 
     invoke-virtual {p1, p2}, Landroid/graphics/Paint;->getFontMetricsInt(Landroid/graphics/Paint$FontMetricsInt;)I
 
-    .line 86
+    .line 87
     iget-object p1, p0, Landroidx/emoji2/text/EmojiSpan;->mTmpFontMetrics:Landroid/graphics/Paint$FontMetricsInt;
 
     iget p1, p1, Landroid/graphics/Paint$FontMetricsInt;->descent:I
@@ -117,7 +117,7 @@
 
     mul-float/2addr p1, p2
 
-    .line 88
+    .line 89
     iget-object p2, p0, Landroidx/emoji2/text/EmojiSpan;->mRasterizer:Landroidx/emoji2/text/TypefaceEmojiRasterizer;
 
     invoke-virtual {p2}, Landroidx/emoji2/text/TypefaceEmojiRasterizer;->getHeight()I
@@ -130,7 +130,7 @@
 
     iput p1, p0, Landroidx/emoji2/text/EmojiSpan;->mRatio:F
 
-    .line 89
+    .line 90
     iget-object p1, p0, Landroidx/emoji2/text/EmojiSpan;->mRasterizer:Landroidx/emoji2/text/TypefaceEmojiRasterizer;
 
     invoke-virtual {p1}, Landroidx/emoji2/text/TypefaceEmojiRasterizer;->getHeight()I
@@ -149,7 +149,7 @@
 
     iput-short p1, p0, Landroidx/emoji2/text/EmojiSpan;->mHeight:S
 
-    .line 90
+    .line 91
     iget-object p1, p0, Landroidx/emoji2/text/EmojiSpan;->mRasterizer:Landroidx/emoji2/text/TypefaceEmojiRasterizer;
 
     invoke-virtual {p1}, Landroidx/emoji2/text/TypefaceEmojiRasterizer;->getWidth()I
@@ -170,35 +170,35 @@
 
     if-eqz p5, :cond_0
 
-    .line 93
+    .line 94
     iget-object p1, p0, Landroidx/emoji2/text/EmojiSpan;->mTmpFontMetrics:Landroid/graphics/Paint$FontMetricsInt;
 
     iget p1, p1, Landroid/graphics/Paint$FontMetricsInt;->ascent:I
 
     iput p1, p5, Landroid/graphics/Paint$FontMetricsInt;->ascent:I
 
-    .line 94
+    .line 95
     iget-object p1, p0, Landroidx/emoji2/text/EmojiSpan;->mTmpFontMetrics:Landroid/graphics/Paint$FontMetricsInt;
 
     iget p1, p1, Landroid/graphics/Paint$FontMetricsInt;->descent:I
 
     iput p1, p5, Landroid/graphics/Paint$FontMetricsInt;->descent:I
 
-    .line 95
+    .line 96
     iget-object p1, p0, Landroidx/emoji2/text/EmojiSpan;->mTmpFontMetrics:Landroid/graphics/Paint$FontMetricsInt;
 
     iget p1, p1, Landroid/graphics/Paint$FontMetricsInt;->top:I
 
     iput p1, p5, Landroid/graphics/Paint$FontMetricsInt;->top:I
 
-    .line 96
+    .line 97
     iget-object p1, p0, Landroidx/emoji2/text/EmojiSpan;->mTmpFontMetrics:Landroid/graphics/Paint$FontMetricsInt;
 
     iget p1, p1, Landroid/graphics/Paint$FontMetricsInt;->bottom:I
 
     iput p1, p5, Landroid/graphics/Paint$FontMetricsInt;->bottom:I
 
-    .line 99
+    .line 100
     :cond_0
     iget-short p0, p0, Landroidx/emoji2/text/EmojiSpan;->mWidth:S
 
@@ -208,7 +208,7 @@
 .method public final getTypefaceRasterizer()Landroidx/emoji2/text/TypefaceEmojiRasterizer;
     .locals 0
 
-    .line 109
+    .line 110
     iget-object p0, p0, Landroidx/emoji2/text/EmojiSpan;->mRasterizer:Landroidx/emoji2/text/TypefaceEmojiRasterizer;
 
     return-object p0
@@ -217,7 +217,7 @@
 .method final getWidth()I
     .locals 0
 
-    .line 118
+    .line 120
     iget-short p0, p0, Landroidx/emoji2/text/EmojiSpan;->mWidth:S
 
     return p0

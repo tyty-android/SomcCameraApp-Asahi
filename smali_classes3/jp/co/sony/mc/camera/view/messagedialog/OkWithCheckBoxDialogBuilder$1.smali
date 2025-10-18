@@ -36,7 +36,7 @@
         }
     .end annotation
 
-    .line 84
+    .line 98
     iput-object p1, p0, Ljp/co/sony/mc/camera/view/messagedialog/OkWithCheckBoxDialogBuilder$1;->this$0:Ljp/co/sony/mc/camera/view/messagedialog/OkWithCheckBoxDialogBuilder;
 
     iput-object p2, p0, Ljp/co/sony/mc/camera/view/messagedialog/OkWithCheckBoxDialogBuilder$1;->val$localActivity:Landroid/app/Activity;
@@ -55,14 +55,14 @@
 .method public onClick(Landroid/content/DialogInterface;I)V
     .locals 2
 
-    .line 87
+    .line 101
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/messagedialog/OkWithCheckBoxDialogBuilder$1;->val$localActivity:Landroid/app/Activity;
 
     iget-object v1, p0, Ljp/co/sony/mc/camera/view/messagedialog/OkWithCheckBoxDialogBuilder$1;->val$checkBoxListener:Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogBuilder$MessageDialogCheckBoxListener;
 
     invoke-virtual {v0, v1}, Landroid/app/Activity;->runOnUiThread(Ljava/lang/Runnable;)V
 
-    .line 88
+    .line 102
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/messagedialog/OkWithCheckBoxDialogBuilder$1;->val$localListener:Landroid/content/DialogInterface$OnClickListener;
 
     invoke-interface {p0, p1, p2}, Landroid/content/DialogInterface$OnClickListener;->onClick(Landroid/content/DialogInterface;I)V

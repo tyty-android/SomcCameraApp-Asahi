@@ -441,7 +441,7 @@
 .end method
 
 .method public hashCode()I
-    .locals 3
+    .locals 2
 
     iget v0, p0, Landroidx/compose/ui/graphics/vector/PathNode$RelativeArcTo;->horizontalEllipseRadius:F
 
@@ -473,28 +473,21 @@
 
     iget-boolean v1, p0, Landroidx/compose/ui/graphics/vector/PathNode$RelativeArcTo;->isMoreThanHalf:Z
 
-    const/4 v2, 0x1
+    invoke-static {v1}, Ljava/lang/Boolean;->hashCode(Z)I
 
-    if-eqz v1, :cond_0
+    move-result v1
 
-    move v1, v2
-
-    :cond_0
     add-int/2addr v0, v1
 
     mul-int/lit8 v0, v0, 0x1f
 
     iget-boolean v1, p0, Landroidx/compose/ui/graphics/vector/PathNode$RelativeArcTo;->isPositiveArc:Z
 
-    if-eqz v1, :cond_1
+    invoke-static {v1}, Ljava/lang/Boolean;->hashCode(Z)I
 
-    goto :goto_0
+    move-result v1
 
-    :cond_1
-    move v2, v1
-
-    :goto_0
-    add-int/2addr v0, v2
+    add-int/2addr v0, v1
 
     mul-int/lit8 v0, v0, 0x1f
 

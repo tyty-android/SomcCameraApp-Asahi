@@ -55,7 +55,7 @@
     .line 20
     new-instance v6, Ljp/co/sony/mc/camera/configuration/parameters/LowLightMode;
 
-    const v4, 0x7f1100d3
+    const v4, 0x7f1100d4
 
     const-string v5, "auto"
 
@@ -63,7 +63,7 @@
 
     const/4 v2, 0x0
 
-    const v3, 0x7f080233
+    const v3, 0x7f080241
 
     move-object v0, v6
 
@@ -74,7 +74,7 @@
     .line 24
     new-instance v0, Ljp/co/sony/mc/camera/configuration/parameters/LowLightMode;
 
-    const v11, 0x7f1103be
+    const v11, 0x7f1103f3
 
     const-string v12, "off"
 
@@ -82,7 +82,7 @@
 
     const/4 v9, 0x1
 
-    const v10, 0x7f080239
+    const v10, 0x7f080247
 
     move-object v7, v0
 

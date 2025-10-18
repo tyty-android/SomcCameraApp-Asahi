@@ -57,7 +57,7 @@
     .line 21
     new-instance v7, Ljp/co/sony/mc/camera/configuration/parameters/VideoHdr;
 
-    const v5, 0x7f11027e
+    const v5, 0x7f1102a2
 
     const-string v6, "on-video-hdr"
 
@@ -65,9 +65,9 @@
 
     const/4 v2, 0x0
 
-    const v3, 0x7f0802f4
+    const v3, 0x7f08030b
 
-    const v4, 0x7f110275
+    const v4, 0x7f110299
 
     move-object v0, v7
 
@@ -78,7 +78,7 @@
     .line 26
     new-instance v0, Ljp/co/sony/mc/camera/configuration/parameters/VideoHdr;
 
-    const v13, 0x7f1103ba
+    const v13, 0x7f1103ee
 
     const-string v14, "off"
 
@@ -86,9 +86,9 @@
 
     const/4 v10, 0x1
 
-    const v11, 0x7f0802f3
+    const v11, 0x7f08030a
 
-    const v12, 0x7f110276
+    const v12, 0x7f11029a
 
     move-object v8, v0
 
@@ -137,7 +137,7 @@
 .method public static getDefault()Ljp/co/sony/mc/camera/configuration/parameters/VideoHdr;
     .locals 1
 
-    .line 120
+    .line 121
     sget-object v0, Ljp/co/sony/mc/camera/configuration/parameters/VideoHdr;->HDR_OFF:Ljp/co/sony/mc/camera/configuration/parameters/VideoHdr;
 
     return-object v0
@@ -176,21 +176,42 @@
     .line 111
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->getLayoutMode()Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
+    move-result-object p1
+
+    invoke-virtual {p1}, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->isSlowMotion()Z
+
+    move-result p1
+
+    if-nez p1, :cond_0
+
+    invoke-virtual {p0}, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->getLayoutMode()Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
+
+    move-result-object p1
+
+    invoke-virtual {p1}, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->isAutoFraming()Z
+
+    move-result p1
+
+    if-nez p1, :cond_0
+
+    .line 112
+    invoke-virtual {p0}, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->getLayoutMode()Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
+
     move-result-object p0
 
-    invoke-virtual {p0}, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->isSlowMotion()Z
+    invoke-virtual {p0}, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->isGimbal()Z
 
     move-result p0
 
     if-eqz p0, :cond_1
 
-    .line 112
+    .line 113
     :cond_0
     sget-object p0, Ljp/co/sony/mc/camera/configuration/parameters/VideoHdr;->HDR_ON:Ljp/co/sony/mc/camera/configuration/parameters/VideoHdr;
 
     invoke-interface {v0, p0}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    .line 113
+    .line 114
     sget-object p0, Ljp/co/sony/mc/camera/configuration/parameters/VideoHdr;->HDR_OFF:Ljp/co/sony/mc/camera/configuration/parameters/VideoHdr;
 
     invoke-interface {v0, p0}, Ljava/util/List;->add(Ljava/lang/Object;)Z
@@ -198,7 +219,7 @@
     :cond_1
     const/4 p0, 0x0
 
-    .line 116
+    .line 117
     new-array p0, p0, [Ljp/co/sony/mc/camera/configuration/parameters/VideoHdr;
 
     invoke-interface {v0, p0}, Ljava/util/List;->toArray([Ljava/lang/Object;)[Ljava/lang/Object;

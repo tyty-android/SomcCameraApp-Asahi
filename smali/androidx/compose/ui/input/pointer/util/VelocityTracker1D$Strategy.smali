@@ -69,7 +69,7 @@
 .method static constructor <clinit>()V
     .locals 3
 
-    .line 147
+    .line 177
     new-instance v0, Landroidx/compose/ui/input/pointer/util/VelocityTracker1D$Strategy;
 
     const-string v1, "Lsq2"
@@ -80,7 +80,7 @@
 
     sput-object v0, Landroidx/compose/ui/input/pointer/util/VelocityTracker1D$Strategy;->Lsq2:Landroidx/compose/ui/input/pointer/util/VelocityTracker1D$Strategy;
 
-    .line 153
+    .line 183
     new-instance v0, Landroidx/compose/ui/input/pointer/util/VelocityTracker1D$Strategy;
 
     const-string v1, "Impulse"
@@ -108,7 +108,7 @@
         }
     .end annotation
 
-    .line 141
+    .line 171
     invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
     return-void

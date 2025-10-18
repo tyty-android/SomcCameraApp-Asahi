@@ -69,16 +69,12 @@
 .method public final invoke(F)Ljava/lang/Float;
     .locals 0
 
-    .line 203
+    .line 184
     iget-object p0, p0, Landroidx/compose/foundation/pager/PagerState$scrollableState$1;->this$0:Landroidx/compose/foundation/pager/PagerState;
-
-    neg-float p1, p1
 
     invoke-static {p0, p1}, Landroidx/compose/foundation/pager/PagerState;->access$performScroll(Landroidx/compose/foundation/pager/PagerState;F)F
 
     move-result p0
-
-    neg-float p0, p0
 
     invoke-static {p0}, Ljava/lang/Float;->valueOf(F)Ljava/lang/Float;
 
@@ -90,7 +86,7 @@
 .method public bridge synthetic invoke(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
 
-    .line 203
+    .line 184
     check-cast p1, Ljava/lang/Number;
 
     invoke-virtual {p1}, Ljava/lang/Number;->floatValue()F

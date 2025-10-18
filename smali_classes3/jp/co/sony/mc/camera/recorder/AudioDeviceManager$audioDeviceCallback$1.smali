@@ -32,8 +32,8 @@
     }
     k = 0x1
     mv = {
-        0x1,
-        0x9,
+        0x2,
+        0x0,
         0x0
     }
     xi = 0x30
@@ -50,7 +50,7 @@
 
     iput-object p1, p0, Ljp/co/sony/mc/camera/recorder/AudioDeviceManager$audioDeviceCallback$1;->this$0:Ljp/co/sony/mc/camera/recorder/AudioDeviceManager;
 
-    .line 155
+    .line 151
     invoke-direct {p0}, Landroid/media/AudioDeviceCallback;-><init>()V
 
     return-void
@@ -65,19 +65,19 @@
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 157
+    .line 153
     invoke-super {p0, p1}, Landroid/media/AudioDeviceCallback;->onAudioDevicesAdded([Landroid/media/AudioDeviceInfo;)V
 
-    .line 158
+    .line 154
     iget-object p0, p0, Ljp/co/sony/mc/camera/recorder/AudioDeviceManager$audioDeviceCallback$1;->this$0:Ljp/co/sony/mc/camera/recorder/AudioDeviceManager;
 
-    invoke-virtual {p0}, Ljp/co/sony/mc/camera/recorder/AudioDeviceManager;->updateAudioSource()Z
+    invoke-virtual {p0}, Ljp/co/sony/mc/camera/recorder/AudioDeviceManager;->updateAudioDeviceInfo()Z
 
     move-result p0
 
     if-eqz p0, :cond_0
 
-    .line 159
+    .line 155
     sget-object p0, Ljp/co/sony/mc/camera/recorder/AudioLevelMonitor;->INSTANCE:Ljp/co/sony/mc/camera/recorder/AudioLevelMonitor;
 
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/recorder/AudioLevelMonitor;->restartMonitor()V
@@ -93,19 +93,19 @@
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 164
+    .line 160
     invoke-super {p0, p1}, Landroid/media/AudioDeviceCallback;->onAudioDevicesRemoved([Landroid/media/AudioDeviceInfo;)V
 
-    .line 165
+    .line 161
     iget-object p0, p0, Ljp/co/sony/mc/camera/recorder/AudioDeviceManager$audioDeviceCallback$1;->this$0:Ljp/co/sony/mc/camera/recorder/AudioDeviceManager;
 
-    invoke-virtual {p0}, Ljp/co/sony/mc/camera/recorder/AudioDeviceManager;->updateAudioSource()Z
+    invoke-virtual {p0}, Ljp/co/sony/mc/camera/recorder/AudioDeviceManager;->updateAudioDeviceInfo()Z
 
     move-result p0
 
     if-eqz p0, :cond_0
 
-    .line 166
+    .line 162
     sget-object p0, Ljp/co/sony/mc/camera/recorder/AudioLevelMonitor;->INSTANCE:Ljp/co/sony/mc/camera/recorder/AudioLevelMonitor;
 
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/recorder/AudioLevelMonitor;->restartMonitor()V

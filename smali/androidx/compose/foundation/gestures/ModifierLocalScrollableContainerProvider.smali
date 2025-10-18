@@ -1,37 +1,31 @@
 .class final Landroidx/compose/foundation/gestures/ModifierLocalScrollableContainerProvider;
-.super Ljava/lang/Object;
+.super Landroidx/compose/ui/Modifier$Node;
 .source "Scrollable.kt"
 
 # interfaces
-.implements Landroidx/compose/ui/modifier/ModifierLocalProvider;
+.implements Landroidx/compose/ui/modifier/ModifierLocalModifierNode;
 
 
 # annotations
-.annotation system Ldalvik/annotation/Signature;
-    value = {
-        "Ljava/lang/Object;",
-        "Landroidx/compose/ui/modifier/ModifierLocalProvider<",
-        "Ljava/lang/Boolean;",
-        ">;"
-    }
-.end annotation
-
 .annotation runtime Lkotlin/Metadata;
     d1 = {
-        "\u0000\u0018\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0010\u000b\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0006\u0008\u00c2\u0002\u0018\u00002\u0008\u0012\u0004\u0012\u00020\u00020\u0001B\u0007\u0008\u0002\u00a2\u0006\u0002\u0010\u0003R\u001a\u0010\u0004\u001a\u0008\u0012\u0004\u0012\u00020\u00020\u0005X\u0096\u0004\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\u0006\u0010\u0007R\u0014\u0010\u0008\u001a\u00020\u0002X\u0096D\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\t\u0010\n\u00a8\u0006\u000b"
+        "\u0000\u001e\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000b\n\u0002\u0008\u0005\n\u0002\u0018\u0002\n\u0002\u0008\u0004\u0008\u0002\u0018\u00002\u00020\u00012\u00020\u0002B\r\u0012\u0006\u0010\u0003\u001a\u00020\u0004\u00a2\u0006\u0002\u0010\u0005R\u001a\u0010\u0003\u001a\u00020\u0004X\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\u0008\u0006\u0010\u0007\"\u0004\u0008\u0008\u0010\u0005R\u000e\u0010\t\u001a\u00020\nX\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u0014\u0010\u000b\u001a\u00020\n8VX\u0096\u0004\u00a2\u0006\u0006\u001a\u0004\u0008\u000c\u0010\r\u00a8\u0006\u000e"
     }
     d2 = {
         "Landroidx/compose/foundation/gestures/ModifierLocalScrollableContainerProvider;",
-        "Landroidx/compose/ui/modifier/ModifierLocalProvider;",
+        "Landroidx/compose/ui/modifier/ModifierLocalModifierNode;",
+        "Landroidx/compose/ui/Modifier$Node;",
+        "enabled",
         "",
-        "()V",
-        "key",
-        "Landroidx/compose/ui/modifier/ProvidableModifierLocal;",
-        "getKey",
-        "()Landroidx/compose/ui/modifier/ProvidableModifierLocal;",
-        "value",
-        "getValue",
-        "()Ljava/lang/Boolean;",
+        "(Z)V",
+        "getEnabled",
+        "()Z",
+        "setEnabled",
+        "modifierLocalMap",
+        "Landroidx/compose/ui/modifier/ModifierLocalMap;",
+        "providedValues",
+        "getProvidedValues",
+        "()Landroidx/compose/ui/modifier/ModifierLocalMap;",
         "foundation_release"
     }
     k = 0x1
@@ -44,95 +38,85 @@
 .end annotation
 
 
-# static fields
-.field public static final INSTANCE:Landroidx/compose/foundation/gestures/ModifierLocalScrollableContainerProvider;
+# instance fields
+.field private enabled:Z
 
-.field private static final key:Landroidx/compose/ui/modifier/ProvidableModifierLocal;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Landroidx/compose/ui/modifier/ProvidableModifierLocal<",
-            "Ljava/lang/Boolean;",
-            ">;"
-        }
-    .end annotation
-.end field
-
-.field private static final value:Z
+.field private final modifierLocalMap:Landroidx/compose/ui/modifier/ModifierLocalMap;
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public constructor <init>(Z)V
     .locals 1
 
-    new-instance v0, Landroidx/compose/foundation/gestures/ModifierLocalScrollableContainerProvider;
+    .line 1004
+    invoke-direct {p0}, Landroidx/compose/ui/Modifier$Node;-><init>()V
 
-    invoke-direct {v0}, Landroidx/compose/foundation/gestures/ModifierLocalScrollableContainerProvider;-><init>()V
+    .line 1002
+    iput-boolean p1, p0, Landroidx/compose/foundation/gestures/ModifierLocalScrollableContainerProvider;->enabled:Z
 
-    sput-object v0, Landroidx/compose/foundation/gestures/ModifierLocalScrollableContainerProvider;->INSTANCE:Landroidx/compose/foundation/gestures/ModifierLocalScrollableContainerProvider;
-
-    .line 628
+    .line 1006
     invoke-static {}, Landroidx/compose/foundation/gestures/ScrollableKt;->getModifierLocalScrollableContainer()Landroidx/compose/ui/modifier/ProvidableModifierLocal;
 
-    move-result-object v0
-
-    sput-object v0, Landroidx/compose/foundation/gestures/ModifierLocalScrollableContainerProvider;->key:Landroidx/compose/ui/modifier/ProvidableModifierLocal;
+    move-result-object p1
 
     const/4 v0, 0x1
 
-    .line 629
-    sput-boolean v0, Landroidx/compose/foundation/gestures/ModifierLocalScrollableContainerProvider;->value:Z
+    invoke-static {v0}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
-    return-void
-.end method
+    move-result-object v0
 
-.method private constructor <init>()V
-    .locals 0
+    invoke-static {p1, v0}, Lkotlin/TuplesKt;->to(Ljava/lang/Object;Ljava/lang/Object;)Lkotlin/Pair;
 
-    .line 627
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    move-result-object p1
+
+    invoke-static {p1}, Landroidx/compose/ui/modifier/ModifierLocalModifierNodeKt;->modifierLocalMapOf(Lkotlin/Pair;)Landroidx/compose/ui/modifier/ModifierLocalMap;
+
+    move-result-object p1
+
+    iput-object p1, p0, Landroidx/compose/foundation/gestures/ModifierLocalScrollableContainerProvider;->modifierLocalMap:Landroidx/compose/ui/modifier/ModifierLocalMap;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public getKey()Landroidx/compose/ui/modifier/ProvidableModifierLocal;
+.method public final getEnabled()Z
     .locals 0
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "()",
-            "Landroidx/compose/ui/modifier/ProvidableModifierLocal<",
-            "Ljava/lang/Boolean;",
-            ">;"
-        }
-    .end annotation
 
-    .line 628
-    sget-object p0, Landroidx/compose/foundation/gestures/ModifierLocalScrollableContainerProvider;->key:Landroidx/compose/ui/modifier/ProvidableModifierLocal;
+    .line 1002
+    iget-boolean p0, p0, Landroidx/compose/foundation/gestures/ModifierLocalScrollableContainerProvider;->enabled:Z
 
-    return-object p0
+    return p0
 .end method
 
-.method public getValue()Ljava/lang/Boolean;
-    .locals 0
+.method public getProvidedValues()Landroidx/compose/ui/modifier/ModifierLocalMap;
+    .locals 1
 
-    .line 629
-    sget-boolean p0, Landroidx/compose/foundation/gestures/ModifierLocalScrollableContainerProvider;->value:Z
+    .line 1008
+    iget-boolean v0, p0, Landroidx/compose/foundation/gestures/ModifierLocalScrollableContainerProvider;->enabled:Z
 
-    invoke-static {p0}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
+    if-eqz v0, :cond_0
+
+    .line 1009
+    iget-object p0, p0, Landroidx/compose/foundation/gestures/ModifierLocalScrollableContainerProvider;->modifierLocalMap:Landroidx/compose/ui/modifier/ModifierLocalMap;
+
+    goto :goto_0
+
+    .line 1011
+    :cond_0
+    invoke-static {}, Landroidx/compose/ui/modifier/ModifierLocalModifierNodeKt;->modifierLocalMapOf()Landroidx/compose/ui/modifier/ModifierLocalMap;
 
     move-result-object p0
 
+    :goto_0
     return-object p0
 .end method
 
-.method public bridge synthetic getValue()Ljava/lang/Object;
+.method public final setEnabled(Z)V
     .locals 0
 
-    .line 627
-    invoke-virtual {p0}, Landroidx/compose/foundation/gestures/ModifierLocalScrollableContainerProvider;->getValue()Ljava/lang/Boolean;
+    .line 1002
+    iput-boolean p1, p0, Landroidx/compose/foundation/gestures/ModifierLocalScrollableContainerProvider;->enabled:Z
 
-    move-result-object p0
-
-    return-object p0
+    return-void
 .end method

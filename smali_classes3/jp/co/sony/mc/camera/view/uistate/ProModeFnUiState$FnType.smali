@@ -28,12 +28,12 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/SourceDebugExtension;
-    value = "SMAP\nProModeFnUiState.kt\nKotlin\n*S Kotlin\n*F\n+ 1 ProModeFnUiState.kt\njp/co/sony/mc/camera/view/uistate/ProModeFnUiState$FnType\n+ 2 _Arrays.kt\nkotlin/collections/ArraysKt___ArraysKt\n*L\n1#1,394:1\n11065#2:395\n11400#2,3:396\n*S KotlinDebug\n*F\n+ 1 ProModeFnUiState.kt\njp/co/sony/mc/camera/view/uistate/ProModeFnUiState$FnType\n*L\n359#1:395\n359#1:396,3\n*E\n"
+    value = "SMAP\nProModeFnUiState.kt\nKotlin\n*S Kotlin\n*F\n+ 1 ProModeFnUiState.kt\njp/co/sony/mc/camera/view/uistate/ProModeFnUiState$FnType\n+ 2 _Arrays.kt\nkotlin/collections/ArraysKt___ArraysKt\n*L\n1#1,433:1\n11102#2:434\n11437#2,3:435\n*S KotlinDebug\n*F\n+ 1 ProModeFnUiState.kt\njp/co/sony/mc/camera/view/uistate/ProModeFnUiState$FnType\n*L\n398#1:434\n398#1:435,3\n*E\n"
 .end annotation
 
 .annotation runtime Lkotlin/Metadata;
     d1 = {
-        "\u0000\u0016\n\u0002\u0018\u0002\n\u0002\u0010\u0010\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0008$\u0008\u0086\u0081\u0002\u0018\u0000 \'2\u0008\u0012\u0004\u0012\u00020\u00000\u0001:\u0001\'B\u0019\u0008\u0002\u0012\u0010\u0010\u0002\u001a\u000c\u0012\u0006\u0008\u0001\u0012\u00020\u0004\u0018\u00010\u0003\u00a2\u0006\u0002\u0010\u0005R\u001b\u0010\u0002\u001a\u000c\u0012\u0006\u0008\u0001\u0012\u00020\u0004\u0018\u00010\u0003\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\u0006\u0010\u0007j\u0002\u0008\u0008j\u0002\u0008\tj\u0002\u0008\nj\u0002\u0008\u000bj\u0002\u0008\u000cj\u0002\u0008\rj\u0002\u0008\u000ej\u0002\u0008\u000fj\u0002\u0008\u0010j\u0002\u0008\u0011j\u0002\u0008\u0012j\u0002\u0008\u0013j\u0002\u0008\u0014j\u0002\u0008\u0015j\u0002\u0008\u0016j\u0002\u0008\u0017j\u0002\u0008\u0018j\u0002\u0008\u0019j\u0002\u0008\u001aj\u0002\u0008\u001bj\u0002\u0008\u001cj\u0002\u0008\u001dj\u0002\u0008\u001ej\u0002\u0008\u001fj\u0002\u0008 j\u0002\u0008!j\u0002\u0008\"j\u0002\u0008#j\u0002\u0008$j\u0002\u0008%j\u0002\u0008&\u00a8\u0006("
+        "\u0000\u0016\n\u0002\u0018\u0002\n\u0002\u0010\u0010\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0008%\u0008\u0086\u0081\u0002\u0018\u0000 (2\u0008\u0012\u0004\u0012\u00020\u00000\u0001:\u0001(B\u001b\u0008\u0002\u0012\u0010\u0010\u0002\u001a\u000c\u0012\u0006\u0008\u0001\u0012\u00020\u0004\u0018\u00010\u0003\u00a2\u0006\u0004\u0008\u0005\u0010\u0006R\u001b\u0010\u0002\u001a\u000c\u0012\u0006\u0008\u0001\u0012\u00020\u0004\u0018\u00010\u0003\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\u0007\u0010\u0008j\u0002\u0008\tj\u0002\u0008\nj\u0002\u0008\u000bj\u0002\u0008\u000cj\u0002\u0008\rj\u0002\u0008\u000ej\u0002\u0008\u000fj\u0002\u0008\u0010j\u0002\u0008\u0011j\u0002\u0008\u0012j\u0002\u0008\u0013j\u0002\u0008\u0014j\u0002\u0008\u0015j\u0002\u0008\u0016j\u0002\u0008\u0017j\u0002\u0008\u0018j\u0002\u0008\u0019j\u0002\u0008\u001aj\u0002\u0008\u001bj\u0002\u0008\u001cj\u0002\u0008\u001dj\u0002\u0008\u001ej\u0002\u0008\u001fj\u0002\u0008 j\u0002\u0008!j\u0002\u0008\"j\u0002\u0008#j\u0002\u0008$j\u0002\u0008%j\u0002\u0008&j\u0002\u0008\'\u00a8\u0006)"
     }
     d2 = {
         "Ljp/co/sony/mc/camera/view/uistate/ProModeFnUiState$FnType;",
@@ -41,6 +41,7 @@
         "settingKey",
         "Ljp/co/sony/mc/camera/setting/SettingKey$Key;",
         "Ljp/co/sony/mc/camera/configuration/parameters/UserSettingValue;",
+        "<init>",
         "(Ljava/lang/String;ILjp/co/sony/mc/camera/setting/SettingKey$Key;)V",
         "getSettingKey",
         "()Ljp/co/sony/mc/camera/setting/SettingKey$Key;",
@@ -80,8 +81,8 @@
     }
     k = 0x1
     mv = {
-        0x1,
-        0x9,
+        0x2,
+        0x0,
         0x0
     }
     xi = 0x30
@@ -257,7 +258,7 @@
 .method static constructor <clinit>()V
     .locals 6
 
-    .line 326
+    .line 365
     new-instance v0, Ljp/co/sony/mc/camera/view/uistate/ProModeFnUiState$FnType;
 
     const-string v1, "NONE"
@@ -270,7 +271,7 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/view/uistate/ProModeFnUiState$FnType;->NONE:Ljp/co/sony/mc/camera/view/uistate/ProModeFnUiState$FnType;
 
-    .line 327
+    .line 366
     new-instance v0, Ljp/co/sony/mc/camera/view/uistate/ProModeFnUiState$FnType;
 
     sget-object v1, Ljp/co/sony/mc/camera/setting/CameraSettings;->DRIVE_MODE:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
@@ -285,7 +286,7 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/view/uistate/ProModeFnUiState$FnType;->DRIVE_MODE:Ljp/co/sony/mc/camera/view/uistate/ProModeFnUiState$FnType;
 
-    .line 328
+    .line 367
     new-instance v0, Ljp/co/sony/mc/camera/view/uistate/ProModeFnUiState$FnType;
 
     sget-object v1, Ljp/co/sony/mc/camera/setting/CameraSettings;->FOCUS_MODE:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
@@ -300,7 +301,7 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/view/uistate/ProModeFnUiState$FnType;->FOCUS_MODE:Ljp/co/sony/mc/camera/view/uistate/ProModeFnUiState$FnType;
 
-    .line 329
+    .line 368
     new-instance v0, Ljp/co/sony/mc/camera/view/uistate/ProModeFnUiState$FnType;
 
     sget-object v1, Ljp/co/sony/mc/camera/setting/CameraSettings;->FOCUS_AREA:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
@@ -315,7 +316,7 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/view/uistate/ProModeFnUiState$FnType;->FOCUS_AREA:Ljp/co/sony/mc/camera/view/uistate/ProModeFnUiState$FnType;
 
-    .line 330
+    .line 369
     new-instance v0, Ljp/co/sony/mc/camera/view/uistate/ProModeFnUiState$FnType;
 
     sget-object v1, Ljp/co/sony/mc/camera/setting/CameraSettings;->EV:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
@@ -330,7 +331,7 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/view/uistate/ProModeFnUiState$FnType;->EV:Ljp/co/sony/mc/camera/view/uistate/ProModeFnUiState$FnType;
 
-    .line 331
+    .line 370
     new-instance v0, Ljp/co/sony/mc/camera/view/uistate/ProModeFnUiState$FnType;
 
     sget-object v1, Ljp/co/sony/mc/camera/setting/CameraSettings;->ISO:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
@@ -345,7 +346,7 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/view/uistate/ProModeFnUiState$FnType;->ISO:Ljp/co/sony/mc/camera/view/uistate/ProModeFnUiState$FnType;
 
-    .line 332
+    .line 371
     new-instance v0, Ljp/co/sony/mc/camera/view/uistate/ProModeFnUiState$FnType;
 
     sget-object v1, Ljp/co/sony/mc/camera/setting/CameraSettings;->METERING:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
@@ -360,7 +361,7 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/view/uistate/ProModeFnUiState$FnType;->METERING:Ljp/co/sony/mc/camera/view/uistate/ProModeFnUiState$FnType;
 
-    .line 333
+    .line 372
     new-instance v0, Ljp/co/sony/mc/camera/view/uistate/ProModeFnUiState$FnType;
 
     sget-object v1, Ljp/co/sony/mc/camera/setting/CameraSettings;->FLASH:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
@@ -375,7 +376,7 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/view/uistate/ProModeFnUiState$FnType;->FLASH:Ljp/co/sony/mc/camera/view/uistate/ProModeFnUiState$FnType;
 
-    .line 334
+    .line 373
     new-instance v0, Ljp/co/sony/mc/camera/view/uistate/ProModeFnUiState$FnType;
 
     sget-object v1, Ljp/co/sony/mc/camera/setting/CameraSettings;->WHITE_BALANCE:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
@@ -390,7 +391,7 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/view/uistate/ProModeFnUiState$FnType;->WB:Ljp/co/sony/mc/camera/view/uistate/ProModeFnUiState$FnType;
 
-    .line 335
+    .line 374
     new-instance v0, Ljp/co/sony/mc/camera/view/uistate/ProModeFnUiState$FnType;
 
     sget-object v1, Ljp/co/sony/mc/camera/setting/CameraSettings;->FACE_DETECTION:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
@@ -405,7 +406,7 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/view/uistate/ProModeFnUiState$FnType;->FACE_DETECTION:Ljp/co/sony/mc/camera/view/uistate/ProModeFnUiState$FnType;
 
-    .line 336
+    .line 375
     new-instance v0, Ljp/co/sony/mc/camera/view/uistate/ProModeFnUiState$FnType;
 
     sget-object v1, Ljp/co/sony/mc/camera/setting/CameraSettings;->PEAKING:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
@@ -420,7 +421,7 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/view/uistate/ProModeFnUiState$FnType;->PEAKING:Ljp/co/sony/mc/camera/view/uistate/ProModeFnUiState$FnType;
 
-    .line 337
+    .line 376
     new-instance v0, Ljp/co/sony/mc/camera/view/uistate/ProModeFnUiState$FnType;
 
     sget-object v1, Ljp/co/sony/mc/camera/setting/CameraSettings;->ASPECT_RATIO:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
@@ -435,7 +436,7 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/view/uistate/ProModeFnUiState$FnType;->ASPECT_RATIO:Ljp/co/sony/mc/camera/view/uistate/ProModeFnUiState$FnType;
 
-    .line 338
+    .line 377
     new-instance v0, Ljp/co/sony/mc/camera/view/uistate/ProModeFnUiState$FnType;
 
     sget-object v1, Ljp/co/sony/mc/camera/setting/CameraSettings;->HDR:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
@@ -450,7 +451,7 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/view/uistate/ProModeFnUiState$FnType;->HDR:Ljp/co/sony/mc/camera/view/uistate/ProModeFnUiState$FnType;
 
-    .line 339
+    .line 378
     new-instance v0, Ljp/co/sony/mc/camera/view/uistate/ProModeFnUiState$FnType;
 
     sget-object v1, Ljp/co/sony/mc/camera/setting/CameraSettings;->PHOTO_FORMAT:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
@@ -465,7 +466,7 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/view/uistate/ProModeFnUiState$FnType;->PHOTO_FORMAT:Ljp/co/sony/mc/camera/view/uistate/ProModeFnUiState$FnType;
 
-    .line 340
+    .line 379
     new-instance v0, Ljp/co/sony/mc/camera/view/uistate/ProModeFnUiState$FnType;
 
     sget-object v1, Ljp/co/sony/mc/camera/setting/CameraSettings;->BACK_SOFT_SKIN:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
@@ -480,7 +481,7 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/view/uistate/ProModeFnUiState$FnType;->SOFT_SKIN:Ljp/co/sony/mc/camera/view/uistate/ProModeFnUiState$FnType;
 
-    .line 341
+    .line 380
     new-instance v0, Ljp/co/sony/mc/camera/view/uistate/ProModeFnUiState$FnType;
 
     sget-object v1, Ljp/co/sony/mc/camera/setting/CameraSettings;->FOCUS_FRAME_COLOR:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
@@ -495,7 +496,7 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/view/uistate/ProModeFnUiState$FnType;->FOCUS_FRAME_COLOR:Ljp/co/sony/mc/camera/view/uistate/ProModeFnUiState$FnType;
 
-    .line 342
+    .line 381
     new-instance v0, Ljp/co/sony/mc/camera/view/uistate/ProModeFnUiState$FnType;
 
     sget-object v1, Ljp/co/sony/mc/camera/setting/CameraSettings;->TOUCH_INTENTION:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
@@ -510,7 +511,7 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/view/uistate/ProModeFnUiState$FnType;->TOUCH_TO_ADJUST:Ljp/co/sony/mc/camera/view/uistate/ProModeFnUiState$FnType;
 
-    .line 343
+    .line 382
     new-instance v0, Ljp/co/sony/mc/camera/view/uistate/ProModeFnUiState$FnType;
 
     sget-object v1, Ljp/co/sony/mc/camera/setting/CommonSettings;->GRID_LINE:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
@@ -525,7 +526,7 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/view/uistate/ProModeFnUiState$FnType;->GRID_LINE:Ljp/co/sony/mc/camera/view/uistate/ProModeFnUiState$FnType;
 
-    .line 344
+    .line 383
     new-instance v0, Ljp/co/sony/mc/camera/view/uistate/ProModeFnUiState$FnType;
 
     sget-object v1, Ljp/co/sony/mc/camera/setting/CommonSettings;->SHUTTER_SOUND:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
@@ -540,7 +541,7 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/view/uistate/ProModeFnUiState$FnType;->AUDIO_SIGNAL:Ljp/co/sony/mc/camera/view/uistate/ProModeFnUiState$FnType;
 
-    .line 345
+    .line 384
     new-instance v0, Ljp/co/sony/mc/camera/view/uistate/ProModeFnUiState$FnType;
 
     sget-object v1, Ljp/co/sony/mc/camera/setting/CameraSettings;->COLOR_TONE_PROFILE:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
@@ -555,7 +556,7 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/view/uistate/ProModeFnUiState$FnType;->COLOR_TONE_PROFILE:Ljp/co/sony/mc/camera/view/uistate/ProModeFnUiState$FnType;
 
-    .line 346
+    .line 385
     new-instance v0, Ljp/co/sony/mc/camera/view/uistate/ProModeFnUiState$FnType;
 
     sget-object v1, Ljp/co/sony/mc/camera/setting/CameraSettings;->PRODUCT_SHOWCASE:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
@@ -570,7 +571,7 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/view/uistate/ProModeFnUiState$FnType;->PRODUCT_SHOWCASE:Ljp/co/sony/mc/camera/view/uistate/ProModeFnUiState$FnType;
 
-    .line 347
+    .line 386
     new-instance v0, Ljp/co/sony/mc/camera/view/uistate/ProModeFnUiState$FnType;
 
     sget-object v1, Ljp/co/sony/mc/camera/setting/CameraSettings;->FOCUS_MAGNIFICATION:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
@@ -585,7 +586,7 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/view/uistate/ProModeFnUiState$FnType;->FOCUS_MAGNIFICATION:Ljp/co/sony/mc/camera/view/uistate/ProModeFnUiState$FnType;
 
-    .line 348
+    .line 387
     new-instance v0, Ljp/co/sony/mc/camera/view/uistate/ProModeFnUiState$FnType;
 
     sget-object v1, Ljp/co/sony/mc/camera/setting/CameraSettings;->LOW_LIGHT_MODE:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
@@ -600,7 +601,7 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/view/uistate/ProModeFnUiState$FnType;->LOW_LIGHT_MODE:Ljp/co/sony/mc/camera/view/uistate/ProModeFnUiState$FnType;
 
-    .line 349
+    .line 388
     new-instance v0, Ljp/co/sony/mc/camera/view/uistate/ProModeFnUiState$FnType;
 
     sget-object v1, Ljp/co/sony/mc/camera/setting/CameraSettings;->COMPUTATIONAL_MODE:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
@@ -615,7 +616,7 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/view/uistate/ProModeFnUiState$FnType;->COMPUTATIONAL_MODE:Ljp/co/sony/mc/camera/view/uistate/ProModeFnUiState$FnType;
 
-    .line 350
+    .line 389
     new-instance v0, Ljp/co/sony/mc/camera/view/uistate/ProModeFnUiState$FnType;
 
     sget-object v1, Ljp/co/sony/mc/camera/setting/CameraSettings;->VIDEO_SIZE:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
@@ -630,7 +631,7 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/view/uistate/ProModeFnUiState$FnType;->VIDEO_SIZE:Ljp/co/sony/mc/camera/view/uistate/ProModeFnUiState$FnType;
 
-    .line 351
+    .line 390
     new-instance v0, Ljp/co/sony/mc/camera/view/uistate/ProModeFnUiState$FnType;
 
     sget-object v1, Ljp/co/sony/mc/camera/setting/CameraSettings;->VIDEO_FPS:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
@@ -645,7 +646,7 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/view/uistate/ProModeFnUiState$FnType;->VIDEO_FPS:Ljp/co/sony/mc/camera/view/uistate/ProModeFnUiState$FnType;
 
-    .line 352
+    .line 391
     new-instance v0, Ljp/co/sony/mc/camera/view/uistate/ProModeFnUiState$FnType;
 
     sget-object v1, Ljp/co/sony/mc/camera/setting/CameraSettings;->VIDEO_STABILIZER:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
@@ -660,7 +661,7 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/view/uistate/ProModeFnUiState$FnType;->VIDEO_STABILIZER:Ljp/co/sony/mc/camera/view/uistate/ProModeFnUiState$FnType;
 
-    .line 353
+    .line 392
     new-instance v0, Ljp/co/sony/mc/camera/view/uistate/ProModeFnUiState$FnType;
 
     sget-object v1, Ljp/co/sony/mc/camera/setting/CameraSettings;->MIC:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
@@ -675,7 +676,7 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/view/uistate/ProModeFnUiState$FnType;->MIC:Ljp/co/sony/mc/camera/view/uistate/ProModeFnUiState$FnType;
 
-    .line 354
+    .line 393
     new-instance v0, Ljp/co/sony/mc/camera/view/uistate/ProModeFnUiState$FnType;
 
     sget-object v1, Ljp/co/sony/mc/camera/setting/CameraSettings;->VIDEO_HDR:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
@@ -690,7 +691,7 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/view/uistate/ProModeFnUiState$FnType;->VIDEO_HDR:Ljp/co/sony/mc/camera/view/uistate/ProModeFnUiState$FnType;
 
-    .line 355
+    .line 394
     new-instance v0, Ljp/co/sony/mc/camera/view/uistate/ProModeFnUiState$FnType;
 
     sget-object v1, Ljp/co/sony/mc/camera/setting/CameraSettings;->VIDEO_MF_HDR:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
@@ -705,7 +706,7 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/view/uistate/ProModeFnUiState$FnType;->VIDEO_MF_HDR:Ljp/co/sony/mc/camera/view/uistate/ProModeFnUiState$FnType;
 
-    .line 356
+    .line 395
     new-instance v0, Ljp/co/sony/mc/camera/view/uistate/ProModeFnUiState$FnType;
 
     sget-object v1, Ljp/co/sony/mc/camera/setting/CameraSettings;->PHOTO_LIGHT:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
@@ -740,82 +741,72 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/view/uistate/ProModeFnUiState$FnType;->Companion:Ljp/co/sony/mc/camera/view/uistate/ProModeFnUiState$FnType$Companion;
 
-    .line 359
+    .line 398
     invoke-static {}, Ljp/co/sony/mc/camera/view/uistate/ProModeFnUiState$FnType;->values()[Ljp/co/sony/mc/camera/view/uistate/ProModeFnUiState$FnType;
 
     move-result-object v0
 
-    .line 395
+    .line 434
     new-instance v1, Ljava/util/ArrayList;
 
-    array-length v4, v0
+    array-length v3, v0
 
-    invoke-direct {v1, v4}, Ljava/util/ArrayList;-><init>(I)V
+    invoke-direct {v1, v3}, Ljava/util/ArrayList;-><init>(I)V
 
     check-cast v1, Ljava/util/Collection;
 
-    .line 396
-    array-length v4, v0
+    .line 435
+    array-length v3, v0
 
     :goto_0
-    if-ge v2, v4, :cond_2
+    if-ge v2, v3, :cond_2
 
-    aget-object v5, v0, v2
+    aget-object v4, v0, v2
 
-    .line 359
-    iget-object v5, v5, Ljp/co/sony/mc/camera/view/uistate/ProModeFnUiState$FnType;->settingKey:Ljp/co/sony/mc/camera/setting/SettingKey$Key;
+    .line 398
+    iget-object v4, v4, Ljp/co/sony/mc/camera/view/uistate/ProModeFnUiState$FnType;->settingKey:Ljp/co/sony/mc/camera/setting/SettingKey$Key;
 
-    if-eqz v5, :cond_0
+    if-eqz v4, :cond_0
 
-    invoke-virtual {v5}, Ljp/co/sony/mc/camera/setting/SettingKey$Key;->getName()Ljava/lang/String;
+    invoke-virtual {v4}, Ljp/co/sony/mc/camera/setting/SettingKey$Key;->getName()Ljava/lang/String;
 
-    move-result-object v5
+    move-result-object v4
 
-    goto :goto_1
+    if-nez v4, :cond_1
 
     :cond_0
-    move-object v5, v3
+    const-string v4, ""
 
-    :goto_1
-    if-nez v5, :cond_1
-
-    const-string v5, ""
-
-    goto :goto_2
-
+    .line 436
     :cond_1
-    invoke-static {v5}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;)V
-
-    .line 397
-    :goto_2
-    invoke-interface {v1, v5}, Ljava/util/Collection;->add(Ljava/lang/Object;)Z
+    invoke-interface {v1, v4}, Ljava/util/Collection;->add(Ljava/lang/Object;)Z
 
     add-int/lit8 v2, v2, 0x1
 
     goto :goto_0
 
-    .line 398
+    .line 437
     :cond_2
     check-cast v1, Ljava/util/List;
 
-    .line 395
+    .line 434
     check-cast v1, Ljava/util/Collection;
 
-    .line 359
+    .line 398
     invoke-static {v1}, Lkotlin/collections/CollectionsKt;->toMutableList(Ljava/util/Collection;)Ljava/util/List;
 
     move-result-object v0
 
     check-cast v0, Ljava/util/Collection;
 
-    .line 360
+    .line 399
     sget-object v1, Ljp/co/sony/mc/camera/setting/CameraSettings;->WB_EXTENSION_DATA:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
 
     invoke-virtual {v1}, Ljp/co/sony/mc/camera/setting/CameraSettings$Key;->getName()Ljava/lang/String;
 
     move-result-object v1
 
-    .line 359
+    .line 398
     invoke-static {v0, v1}, Lkotlin/collections/CollectionsKt;->plus(Ljava/util/Collection;Ljava/lang/Object;)Ljava/util/List;
 
     move-result-object v0
@@ -837,10 +828,10 @@
         }
     .end annotation
 
-    .line 323
+    .line 362
     invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
-    .line 324
+    .line 363
     iput-object p3, p0, Ljp/co/sony/mc/camera/view/uistate/ProModeFnUiState$FnType;->settingKey:Ljp/co/sony/mc/camera/setting/SettingKey$Key;
 
     return-void
@@ -849,7 +840,7 @@
 .method public static final synthetic access$getFnRelatedKeys$cp()Ljava/util/List;
     .locals 1
 
-    .line 323
+    .line 362
     sget-object v0, Ljp/co/sony/mc/camera/view/uistate/ProModeFnUiState$FnType;->fnRelatedKeys:Ljava/util/List;
 
     return-object v0
@@ -903,6 +894,7 @@
 
     move-result-object p0
 
+    .line 414
     check-cast p0, Ljp/co/sony/mc/camera/view/uistate/ProModeFnUiState$FnType;
 
     return-object p0
@@ -913,10 +905,11 @@
 
     sget-object v0, Ljp/co/sony/mc/camera/view/uistate/ProModeFnUiState$FnType;->$VALUES:[Ljp/co/sony/mc/camera/view/uistate/ProModeFnUiState$FnType;
 
-    invoke-virtual {v0}, [Ljava/lang/Object;->clone()Ljava/lang/Object;
+    invoke-virtual {v0}, Ljava/lang/Object;->clone()Ljava/lang/Object;
 
     move-result-object v0
 
+    .line 414
     check-cast v0, [Ljp/co/sony/mc/camera/view/uistate/ProModeFnUiState$FnType;
 
     return-object v0
@@ -936,7 +929,7 @@
         }
     .end annotation
 
-    .line 324
+    .line 363
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/uistate/ProModeFnUiState$FnType;->settingKey:Ljp/co/sony/mc/camera/setting/SettingKey$Key;
 
     return-object p0

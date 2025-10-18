@@ -15,7 +15,7 @@
 
 .annotation runtime Lkotlin/Metadata;
     d1 = {
-        "\u00004\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0008\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0013\n\u0002\u0010\u000b\n\u0002\u0008\u0003\n\u0002\u0010\u000e\n\u0000\u0008\u0087\u0008\u0018\u00002\u00020\u0001B;\u0012\n\u0008\u0002\u0010\u0002\u001a\u0004\u0018\u00010\u0003\u0012\n\u0008\u0002\u0010\u0004\u001a\u0004\u0018\u00010\u0005\u0012\u0008\u0008\u0002\u0010\u0006\u001a\u00020\u0007\u0012\u0008\u0008\u0002\u0010\u0008\u001a\u00020\u0007\u0012\u0008\u0008\u0002\u0010\t\u001a\u00020\n\u00a2\u0006\u0002\u0010\u000bJ\u000b\u0010\u0017\u001a\u0004\u0018\u00010\u0003H\u00c6\u0003J\u000b\u0010\u0018\u001a\u0004\u0018\u00010\u0005H\u00c6\u0003J\t\u0010\u0019\u001a\u00020\u0007H\u00c6\u0003J\t\u0010\u001a\u001a\u00020\u0007H\u00c6\u0003J\t\u0010\u001b\u001a\u00020\nH\u00c6\u0003J?\u0010\u001c\u001a\u00020\u00002\n\u0008\u0002\u0010\u0002\u001a\u0004\u0018\u00010\u00032\n\u0008\u0002\u0010\u0004\u001a\u0004\u0018\u00010\u00052\u0008\u0008\u0002\u0010\u0006\u001a\u00020\u00072\u0008\u0008\u0002\u0010\u0008\u001a\u00020\u00072\u0008\u0008\u0002\u0010\t\u001a\u00020\nH\u00c6\u0001J\u0013\u0010\u001d\u001a\u00020\u001e2\u0008\u0010\u001f\u001a\u0004\u0018\u00010\u0001H\u00d6\u0003J\t\u0010 \u001a\u00020\u0007H\u00d6\u0001J\t\u0010!\u001a\u00020\"H\u00d6\u0001R\u0013\u0010\u0004\u001a\u0004\u0018\u00010\u0005\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\u000c\u0010\rR\u0011\u0010\t\u001a\u00020\n\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\u000e\u0010\u000fR\u001a\u0010\u0006\u001a\u00020\u0007X\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\u0008\u0010\u0010\u0011\"\u0004\u0008\u0012\u0010\u0013R\u0013\u0010\u0002\u001a\u0004\u0018\u00010\u0003\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\u0014\u0010\u0015R\u0011\u0010\u0008\u001a\u00020\u0007\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\u0016\u0010\u0011\u00a8\u0006#"
+        "\u00004\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0008\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0014\n\u0002\u0010\u000b\n\u0002\u0008\u0003\n\u0002\u0010\u000e\n\u0000\u0008\u0087\u0008\u0018\u00002\u00020\u0001B=\u0012\n\u0008\u0002\u0010\u0002\u001a\u0004\u0018\u00010\u0003\u0012\n\u0008\u0002\u0010\u0004\u001a\u0004\u0018\u00010\u0005\u0012\u0008\u0008\u0002\u0010\u0006\u001a\u00020\u0007\u0012\u0008\u0008\u0002\u0010\u0008\u001a\u00020\u0007\u0012\u0008\u0008\u0002\u0010\t\u001a\u00020\n\u00a2\u0006\u0004\u0008\u000b\u0010\u000cJ\u000b\u0010\u0018\u001a\u0004\u0018\u00010\u0003H\u00c6\u0003J\u000b\u0010\u0019\u001a\u0004\u0018\u00010\u0005H\u00c6\u0003J\t\u0010\u001a\u001a\u00020\u0007H\u00c6\u0003J\t\u0010\u001b\u001a\u00020\u0007H\u00c6\u0003J\t\u0010\u001c\u001a\u00020\nH\u00c6\u0003J?\u0010\u001d\u001a\u00020\u00002\n\u0008\u0002\u0010\u0002\u001a\u0004\u0018\u00010\u00032\n\u0008\u0002\u0010\u0004\u001a\u0004\u0018\u00010\u00052\u0008\u0008\u0002\u0010\u0006\u001a\u00020\u00072\u0008\u0008\u0002\u0010\u0008\u001a\u00020\u00072\u0008\u0008\u0002\u0010\t\u001a\u00020\nH\u00c7\u0001J\u0013\u0010\u001e\u001a\u00020\u001f2\u0008\u0010 \u001a\u0004\u0018\u00010\u0001H\u00d7\u0003J\t\u0010!\u001a\u00020\u0007H\u00d7\u0001J\t\u0010\"\u001a\u00020#H\u00d7\u0001R\u0013\u0010\u0002\u001a\u0004\u0018\u00010\u0003\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\r\u0010\u000eR\u0013\u0010\u0004\u001a\u0004\u0018\u00010\u0005\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\u000f\u0010\u0010R\u001a\u0010\u0006\u001a\u00020\u0007X\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\u0008\u0011\u0010\u0012\"\u0004\u0008\u0013\u0010\u0014R\u0011\u0010\u0008\u001a\u00020\u0007\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\u0015\u0010\u0012R\u0011\u0010\t\u001a\u00020\n\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\u0016\u0010\u0017\u00a8\u0006$"
     }
     d2 = {
         "Ljp/co/sony/mc/camera/CameraStatusNotifier$ExtFace;",
@@ -29,18 +29,19 @@
         "trackingId",
         "faceRectType",
         "Ljp/co/sony/mc/camera/device/CaptureResultNotifier$FaceRectType;",
+        "<init>",
         "(Landroid/graphics/Rect;Landroid/graphics/Point;IILjp/co/sony/mc/camera/device/CaptureResultNotifier$FaceRectType;)V",
+        "getRect",
+        "()Landroid/graphics/Rect;",
         "getEyePosition",
         "()Landroid/graphics/Point;",
-        "getFaceRectType",
-        "()Ljp/co/sony/mc/camera/device/CaptureResultNotifier$FaceRectType;",
         "getId",
         "()I",
         "setId",
         "(I)V",
-        "getRect",
-        "()Landroid/graphics/Rect;",
         "getTrackingId",
+        "getFaceRectType",
+        "()Ljp/co/sony/mc/camera/device/CaptureResultNotifier$FaceRectType;",
         "component1",
         "component2",
         "component3",
@@ -57,8 +58,8 @@
     }
     k = 0x1
     mv = {
-        0x1,
-        0x9,
+        0x2,
+        0x0,
         0x0
     }
     xi = 0x30
@@ -119,22 +120,22 @@
 
     invoke-static {p5, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 19
+    .line 20
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 21
+    .line 22
     iput-object p1, p0, Ljp/co/sony/mc/camera/CameraStatusNotifier$ExtFace;->rect:Landroid/graphics/Rect;
 
-    .line 23
+    .line 24
     iput-object p2, p0, Ljp/co/sony/mc/camera/CameraStatusNotifier$ExtFace;->eyePosition:Landroid/graphics/Point;
 
-    .line 26
+    .line 27
     iput p3, p0, Ljp/co/sony/mc/camera/CameraStatusNotifier$ExtFace;->id:I
 
-    .line 32
+    .line 33
     iput p4, p0, Ljp/co/sony/mc/camera/CameraStatusNotifier$ExtFace;->trackingId:I
 
-    .line 35
+    .line 36
     iput-object p5, p0, Ljp/co/sony/mc/camera/CameraStatusNotifier$ExtFace;->faceRectType:Ljp/co/sony/mc/camera/device/CaptureResultNotifier$FaceRectType;
 
     return-void
@@ -179,10 +180,10 @@
 
     if-eqz p6, :cond_4
 
-    .line 35
+    .line 36
     sget-object p5, Ljp/co/sony/mc/camera/device/CaptureResultNotifier$FaceRectType;->HUMAN_FACE:Ljp/co/sony/mc/camera/device/CaptureResultNotifier$FaceRectType;
 
-    .line 19
+    .line 20
     :cond_4
     invoke-direct/range {p0 .. p5}, Ljp/co/sony/mc/camera/CameraStatusNotifier$ExtFace;-><init>(Landroid/graphics/Rect;Landroid/graphics/Point;IILjp/co/sony/mc/camera/device/CaptureResultNotifier$FaceRectType;)V
 
@@ -402,7 +403,7 @@
 .method public final getEyePosition()Landroid/graphics/Point;
     .locals 0
 
-    .line 23
+    .line 24
     iget-object p0, p0, Ljp/co/sony/mc/camera/CameraStatusNotifier$ExtFace;->eyePosition:Landroid/graphics/Point;
 
     return-object p0
@@ -411,7 +412,7 @@
 .method public final getFaceRectType()Ljp/co/sony/mc/camera/device/CaptureResultNotifier$FaceRectType;
     .locals 0
 
-    .line 35
+    .line 36
     iget-object p0, p0, Ljp/co/sony/mc/camera/CameraStatusNotifier$ExtFace;->faceRectType:Ljp/co/sony/mc/camera/device/CaptureResultNotifier$FaceRectType;
 
     return-object p0
@@ -420,7 +421,7 @@
 .method public final getId()I
     .locals 0
 
-    .line 26
+    .line 27
     iget p0, p0, Ljp/co/sony/mc/camera/CameraStatusNotifier$ExtFace;->id:I
 
     return p0
@@ -429,7 +430,7 @@
 .method public final getRect()Landroid/graphics/Rect;
     .locals 0
 
-    .line 21
+    .line 22
     iget-object p0, p0, Ljp/co/sony/mc/camera/CameraStatusNotifier$ExtFace;->rect:Landroid/graphics/Rect;
 
     return-object p0
@@ -438,7 +439,7 @@
 .method public final getTrackingId()I
     .locals 0
 
-    .line 32
+    .line 33
     iget p0, p0, Ljp/co/sony/mc/camera/CameraStatusNotifier$ExtFace;->trackingId:I
 
     return p0
@@ -515,7 +516,7 @@
 .method public final setId(I)V
     .locals 0
 
-    .line 26
+    .line 27
     iput p1, p0, Ljp/co/sony/mc/camera/CameraStatusNotifier$ExtFace;->id:I
 
     return-void

@@ -46,7 +46,7 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 35
+    .line 36
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -57,7 +57,7 @@
 .method public final next()Ljava/lang/Integer;
     .locals 0
 
-    .line 36
+    .line 37
     invoke-virtual {p0}, Lkotlin/collections/IntIterator;->nextInt()I
 
     move-result p0
@@ -72,7 +72,7 @@
 .method public bridge synthetic next()Ljava/lang/Object;
     .locals 0
 
-    .line 35
+    .line 36
     invoke-virtual {p0}, Lkotlin/collections/IntIterator;->nextInt()I
 
     move-result p0

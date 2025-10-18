@@ -59,7 +59,7 @@
 .method private constructor <init>()V
     .locals 0
 
-    .line 3201
+    .line 3412
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -70,22 +70,14 @@
     .annotation runtime Lkotlin/jvm/JvmStatic;
     .end annotation
 
-    const-string v0, "info"
-
-    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string v0, "semanticsNode"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 3209
+    .line 3420
     invoke-static {p1}, Landroidx/compose/ui/platform/AndroidComposeViewAccessibilityDelegateCompat_androidKt;->access$enabled(Landroidx/compose/ui/semantics/SemanticsNode;)Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
-    .line 3210
+    .line 3421
     invoke-virtual {p1}, Landroidx/compose/ui/semantics/SemanticsNode;->getUnmergedConfig$ui_release()Landroidx/compose/ui/semantics/SemanticsConfiguration;
 
     move-result-object p1
@@ -104,10 +96,10 @@
 
     if-eqz p1, :cond_0
 
-    .line 3212
+    .line 3423
     new-instance v0, Landroidx/core/view/accessibility/AccessibilityNodeInfoCompat$AccessibilityActionCompat;
 
-    .line 3214
+    .line 3425
     invoke-virtual {p1}, Landroidx/compose/ui/semantics/AccessibilityAction;->getLabel()Ljava/lang/String;
 
     move-result-object p1
@@ -116,10 +108,10 @@
 
     const v1, 0x102003d
 
-    .line 3212
+    .line 3423
     invoke-direct {v0, v1, p1}, Landroidx/core/view/accessibility/AccessibilityNodeInfoCompat$AccessibilityActionCompat;-><init>(ILjava/lang/CharSequence;)V
 
-    .line 3211
+    .line 3422
     invoke-virtual {p0, v0}, Landroidx/core/view/accessibility/AccessibilityNodeInfoCompat;->addAction(Landroidx/core/view/accessibility/AccessibilityNodeInfoCompat$AccessibilityActionCompat;)V
 
     :cond_0

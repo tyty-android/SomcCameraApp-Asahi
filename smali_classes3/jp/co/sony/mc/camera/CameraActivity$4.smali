@@ -25,7 +25,7 @@
 .method constructor <init>(Ljp/co/sony/mc/camera/CameraActivity;)V
     .locals 0
 
-    .line 542
+    .line 546
     iput-object p1, p0, Ljp/co/sony/mc/camera/CameraActivity$4;->this$0:Ljp/co/sony/mc/camera/CameraActivity;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -38,7 +38,7 @@
 .method public onNotifyUpdateDisplay()V
     .locals 0
 
-    .line 545
+    .line 549
     iget-object p0, p0, Ljp/co/sony/mc/camera/CameraActivity$4;->this$0:Ljp/co/sony/mc/camera/CameraActivity;
 
     invoke-static {p0}, Ljp/co/sony/mc/camera/CameraActivity;->-$$Nest$mupdateDisplay(Ljp/co/sony/mc/camera/CameraActivity;)V

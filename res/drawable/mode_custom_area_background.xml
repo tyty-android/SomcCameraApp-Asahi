@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<inset
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <selector>
+        <item>
+            <shape>
+                <solid android:color="@color/mode_custom_more_custom_area_background_color" />
+                <corners android:radius="@dimen/mode_custom_layout_custom_area_background_radius" />
+                <stroke android:width="@dimen/mode_custom_layout_custom_area_background_border_width" android:color="@color/mode_custom_area_border_color" />
+            </shape>
+        </item>
+    </selector>
+</inset>

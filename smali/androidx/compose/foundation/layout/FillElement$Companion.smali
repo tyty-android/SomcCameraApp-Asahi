@@ -43,7 +43,7 @@
 .method private constructor <init>()V
     .locals 0
 
-    .line 643
+    .line 644
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -62,16 +62,16 @@
 .method public final height(F)Landroidx/compose/foundation/layout/FillElement;
     .locals 2
 
-    .line 653
+    .line 654
     new-instance p0, Landroidx/compose/foundation/layout/FillElement;
 
-    .line 654
+    .line 655
     sget-object v0, Landroidx/compose/foundation/layout/Direction;->Vertical:Landroidx/compose/foundation/layout/Direction;
 
-    .line 656
+    .line 657
     const-string v1, "fillMaxHeight"
 
-    .line 653
+    .line 654
     invoke-direct {p0, v0, p1, v1}, Landroidx/compose/foundation/layout/FillElement;-><init>(Landroidx/compose/foundation/layout/Direction;FLjava/lang/String;)V
 
     return-object p0
@@ -80,16 +80,16 @@
 .method public final size(F)Landroidx/compose/foundation/layout/FillElement;
     .locals 2
 
-    .line 660
+    .line 661
     new-instance p0, Landroidx/compose/foundation/layout/FillElement;
 
-    .line 661
+    .line 662
     sget-object v0, Landroidx/compose/foundation/layout/Direction;->Both:Landroidx/compose/foundation/layout/Direction;
 
-    .line 663
+    .line 664
     const-string v1, "fillMaxSize"
 
-    .line 660
+    .line 661
     invoke-direct {p0, v0, p1, v1}, Landroidx/compose/foundation/layout/FillElement;-><init>(Landroidx/compose/foundation/layout/Direction;FLjava/lang/String;)V
 
     return-object p0
@@ -98,16 +98,16 @@
 .method public final width(F)Landroidx/compose/foundation/layout/FillElement;
     .locals 2
 
-    .line 646
+    .line 647
     new-instance p0, Landroidx/compose/foundation/layout/FillElement;
 
-    .line 647
+    .line 648
     sget-object v0, Landroidx/compose/foundation/layout/Direction;->Horizontal:Landroidx/compose/foundation/layout/Direction;
 
-    .line 649
+    .line 650
     const-string v1, "fillMaxWidth"
 
-    .line 646
+    .line 647
     invoke-direct {p0, v0, p1, v1}, Landroidx/compose/foundation/layout/FillElement;-><init>(Landroidx/compose/foundation/layout/Direction;FLjava/lang/String;)V
 
     return-object p0

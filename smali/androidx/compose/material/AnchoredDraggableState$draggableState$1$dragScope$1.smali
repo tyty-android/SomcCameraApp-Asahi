@@ -63,7 +63,7 @@
 
     iput-object p1, p0, Landroidx/compose/material/AnchoredDraggableState$draggableState$1$dragScope$1;->this$0:Landroidx/compose/material/AnchoredDraggableState;
 
-    .line 137
+    .line 269
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -74,7 +74,7 @@
 .method public dragBy(F)V
     .locals 3
 
-    .line 139
+    .line 271
     iget-object v0, p0, Landroidx/compose/material/AnchoredDraggableState$draggableState$1$dragScope$1;->this$0:Landroidx/compose/material/AnchoredDraggableState;
 
     invoke-static {v0}, Landroidx/compose/material/AnchoredDraggableState;->access$getAnchoredDragScope$p(Landroidx/compose/material/AnchoredDraggableState;)Landroidx/compose/material/AnchoredDragScope;
@@ -83,7 +83,7 @@
 
     iget-object p0, p0, Landroidx/compose/material/AnchoredDraggableState$draggableState$1$dragScope$1;->this$0:Landroidx/compose/material/AnchoredDraggableState;
 
-    .line 140
+    .line 272
     invoke-virtual {p0, p1}, Landroidx/compose/material/AnchoredDraggableState;->newOffsetForDelta$material_release(F)F
 
     move-result p0

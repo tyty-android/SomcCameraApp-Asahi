@@ -53,7 +53,7 @@
 
     sput-object v0, Landroidx/compose/material/ComposableSingletons$TabRowKt;->INSTANCE:Landroidx/compose/material/ComposableSingletons$TabRowKt;
 
-    .line 141
+    .line 145
     sget-object v0, Landroidx/compose/material/ComposableSingletons$TabRowKt$lambda-1$1;->INSTANCE:Landroidx/compose/material/ComposableSingletons$TabRowKt$lambda-1$1;
 
     const v1, 0xadbf494
@@ -70,7 +70,7 @@
 
     const v0, -0x583ddd55
 
-    .line 236
+    .line 240
     sget-object v1, Landroidx/compose/material/ComposableSingletons$TabRowKt$lambda-2$1;->INSTANCE:Landroidx/compose/material/ComposableSingletons$TabRowKt$lambda-2$1;
 
     invoke-static {v0, v2, v1}, Landroidx/compose/runtime/internal/ComposableLambdaKt;->composableLambdaInstance(IZLjava/lang/Object;)Landroidx/compose/runtime/internal/ComposableLambda;

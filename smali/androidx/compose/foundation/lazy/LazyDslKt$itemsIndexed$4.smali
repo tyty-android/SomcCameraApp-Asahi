@@ -30,7 +30,7 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/SourceDebugExtension;
-    value = "SMAP\nLazyDsl.kt\nKotlin\n*S Kotlin\n*F\n+ 1 LazyDsl.kt\nandroidx/compose/foundation/lazy/LazyDslKt$itemsIndexed$4\n*L\n1#1,423:1\n*E\n"
+    value = "SMAP\nLazyDsl.kt\nKotlin\n*S Kotlin\n*F\n+ 1 LazyDsl.kt\nandroidx/compose/foundation/lazy/LazyDslKt$itemsIndexed$4\n*L\n1#1,426:1\n*E\n"
 .end annotation
 
 .annotation runtime Lkotlin/Metadata;
@@ -121,7 +121,7 @@
 .method public bridge synthetic invoke(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
 
-    .line 180
+    .line 183
     check-cast p1, Landroidx/compose/foundation/lazy/LazyItemScope;
 
     check-cast p2, Ljava/lang/Number;
@@ -148,11 +148,7 @@
 .method public final invoke(Landroidx/compose/foundation/lazy/LazyItemScope;ILandroidx/compose/runtime/Composer;I)V
     .locals 9
 
-    const-string v0, "$this$items"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string v0, "C180@8239L26:LazyDsl.kt#428nma"
+    const-string v0, "C183@8439L26:LazyDsl.kt#428nma"
 
     invoke-static {p3, v0}, Landroidx/compose/runtime/ComposerKt;->sourceInformation(Landroidx/compose/runtime/Composer;Ljava/lang/String;)V
 
@@ -209,7 +205,7 @@
 
     if-ne p4, v1, :cond_5
 
-    .line 181
+    .line 184
     invoke-interface {p3}, Landroidx/compose/runtime/Composer;->getSkipping()Z
 
     move-result p4
@@ -233,7 +229,7 @@
 
     const/4 p4, -0x1
 
-    const-string v1, "androidx.compose.foundation.lazy.itemsIndexed.<anonymous> (LazyDsl.kt:179)"
+    const-string v1, "androidx.compose.foundation.lazy.itemsIndexed.<anonymous> (LazyDsl.kt:183)"
 
     const v2, -0x410876af
 

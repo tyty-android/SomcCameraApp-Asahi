@@ -46,6 +46,10 @@
 .end annotation
 
 
+# static fields
+.field public static final $stable:I = 0x8
+
+
 # instance fields
 .field private dataPoint:F
 
@@ -53,10 +57,16 @@
 
 
 # direct methods
+.method static constructor <clinit>()V
+    .locals 0
+
+    return-void
+.end method
+
 .method public constructor <init>(JF)V
     .locals 0
 
-    .line 338
+    .line 435
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     iput-wide p1, p0, Landroidx/compose/ui/input/pointer/util/DataPointAtTime;->time:J
@@ -169,7 +179,7 @@
 .method public final getDataPoint()F
     .locals 0
 
-    .line 338
+    .line 435
     iget p0, p0, Landroidx/compose/ui/input/pointer/util/DataPointAtTime;->dataPoint:F
 
     return p0
@@ -178,7 +188,7 @@
 .method public final getTime()J
     .locals 2
 
-    .line 338
+    .line 435
     iget-wide v0, p0, Landroidx/compose/ui/input/pointer/util/DataPointAtTime;->time:J
 
     return-wide v0
@@ -209,7 +219,7 @@
 .method public final setDataPoint(F)V
     .locals 0
 
-    .line 338
+    .line 435
     iput p1, p0, Landroidx/compose/ui/input/pointer/util/DataPointAtTime;->dataPoint:F
 
     return-void
@@ -218,7 +228,7 @@
 .method public final setTime(J)V
     .locals 0
 
-    .line 338
+    .line 435
     iput-wide p1, p0, Landroidx/compose/ui/input/pointer/util/DataPointAtTime;->time:J
 
     return-void

@@ -66,7 +66,7 @@
 .end method
 
 .method private initializeParser(Lcom/google/api/client/json/JsonParser;)V
-    .locals 4
+    .locals 2
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -93,10 +93,6 @@
 
     move-result-object v0
 
-    const/4 v1, 0x1
-
-    const/4 v2, 0x0
-
     if-eqz v0, :cond_1
 
     .line 120
@@ -104,28 +100,28 @@
 
     move-result-object v0
 
-    sget-object v3, Lcom/google/api/client/json/JsonToken;->END_OBJECT:Lcom/google/api/client/json/JsonToken;
+    sget-object v1, Lcom/google/api/client/json/JsonToken;->END_OBJECT:Lcom/google/api/client/json/JsonToken;
 
-    if-eq v0, v3, :cond_1
+    if-eq v0, v1, :cond_1
 
-    move v0, v1
+    const/4 v0, 0x1
 
     goto :goto_0
 
     :cond_1
-    move v0, v2
+    const/4 v0, 0x0
 
     :goto_0
-    const-string v3, "wrapper key(s) not found: %s"
-
-    new-array v1, v1, [Ljava/lang/Object;
+    const-string v1, "wrapper key(s) not found: %s"
 
     iget-object p0, p0, Lcom/google/api/client/json/JsonObjectParser;->wrapperKeys:Ljava/util/Set;
 
-    aput-object p0, v1, v2
+    filled-new-array {p0}, [Ljava/lang/Object;
+
+    move-result-object p0
 
     .line 119
-    invoke-static {v0, v3, v1}, Lcom/google/api/client/util/Preconditions;->checkArgument(ZLjava/lang/String;[Ljava/lang/Object;)V
+    invoke-static {v0, v1, p0}, Lcom/google/api/client/util/Preconditions;->checkArgument(ZLjava/lang/String;[Ljava/lang/Object;)V
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 

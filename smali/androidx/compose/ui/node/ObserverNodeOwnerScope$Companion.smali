@@ -43,7 +43,7 @@
 .method private constructor <init>()V
     .locals 0
 
-    .line 41
+    .line 43
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -71,7 +71,7 @@
         }
     .end annotation
 
-    .line 42
+    .line 44
     invoke-static {}, Landroidx/compose/ui/node/ObserverNodeOwnerScope;->access$getOnObserveReadsChanged$cp()Lkotlin/jvm/functions/Function1;
 
     move-result-object p0

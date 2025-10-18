@@ -25,7 +25,7 @@
 .method private constructor <init>(Ljp/co/sony/mc/camera/view/FragmentController;)V
     .locals 0
 
-    .line 8427
+    .line 8704
     iput-object p1, p0, Ljp/co/sony/mc/camera/view/FragmentController$YouTubeLiveChatCallbackImpl;->this$0:Ljp/co/sony/mc/camera/view/FragmentController;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -46,7 +46,7 @@
 .method public onFailure(Lcom/google/api/client/googleapis/json/GoogleJsonResponseException;)V
     .locals 3
 
-    .line 8438
+    .line 8715
     invoke-virtual {p1}, Lcom/google/api/client/googleapis/json/GoogleJsonResponseException;->getDetails()Lcom/google/api/client/googleapis/json/GoogleJsonError;
 
     move-result-object v0
@@ -71,7 +71,7 @@
 
     goto/16 :goto_0
 
-    .line 8457
+    .line 8734
     :cond_0
     invoke-virtual {p1}, Lcom/google/api/client/googleapis/json/GoogleJsonResponseException;->getDetails()Lcom/google/api/client/googleapis/json/GoogleJsonError;
 
@@ -93,19 +93,19 @@
 
     const-string v0, "liveChatNotFound"
 
-    .line 8458
+    .line 8735
     invoke-virtual {p1, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result p1
 
     if-eqz p1, :cond_4
 
-    .line 8459
+    .line 8736
     iget-object p1, p0, Ljp/co/sony/mc/camera/view/FragmentController$YouTubeLiveChatCallbackImpl;->this$0:Ljp/co/sony/mc/camera/view/FragmentController;
 
     invoke-virtual {p1}, Ljp/co/sony/mc/camera/view/FragmentController;->stopRecording()V
 
-    .line 8460
+    .line 8737
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/FragmentController$YouTubeLiveChatCallbackImpl;->this$0:Ljp/co/sony/mc/camera/view/FragmentController;
 
     sget-object p1, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->YOUTUBE_LIVE_CHAT_FAILED:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
@@ -116,7 +116,7 @@
 
     goto :goto_0
 
-    .line 8445
+    .line 8722
     :cond_1
     invoke-virtual {p1}, Lcom/google/api/client/googleapis/json/GoogleJsonResponseException;->getDetails()Lcom/google/api/client/googleapis/json/GoogleJsonError;
 
@@ -138,29 +138,29 @@
 
     const-string v1, "liveChatDisabled"
 
-    .line 8446
+    .line 8723
     invoke-virtual {v0, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v0
 
     if-eqz v0, :cond_2
 
-    .line 8447
+    .line 8724
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/FragmentController$YouTubeLiveChatCallbackImpl;->this$0:Ljp/co/sony/mc/camera/view/FragmentController;
 
-    .line 8448
+    .line 8725
     invoke-static {p0, v2}, Ljp/co/sony/mc/camera/view/FragmentController;->-$$Nest$mgetBasicModeMainFragment(Ljp/co/sony/mc/camera/view/FragmentController;Z)Ljp/co/sony/mc/camera/view/fragment/BasicModeMainFragment;
 
     move-result-object p0
 
     const/4 p1, 0x1
 
-    .line 8449
+    .line 8726
     invoke-virtual {p0, p1}, Ljp/co/sony/mc/camera/view/fragment/BasicModeMainFragment;->switchLiveChatDisabledMessageVisibility(Z)V
 
     goto :goto_0
 
-    .line 8450
+    .line 8727
     :cond_2
     invoke-virtual {p1}, Lcom/google/api/client/googleapis/json/GoogleJsonResponseException;->getDetails()Lcom/google/api/client/googleapis/json/GoogleJsonError;
 
@@ -182,19 +182,19 @@
 
     const-string v0, "liveChatEnded"
 
-    .line 8451
+    .line 8728
     invoke-virtual {p1, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result p1
 
     if-eqz p1, :cond_4
 
-    .line 8452
+    .line 8729
     iget-object p1, p0, Ljp/co/sony/mc/camera/view/FragmentController$YouTubeLiveChatCallbackImpl;->this$0:Ljp/co/sony/mc/camera/view/FragmentController;
 
     invoke-virtual {p1}, Ljp/co/sony/mc/camera/view/FragmentController;->stopRecording()V
 
-    .line 8453
+    .line 8730
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/FragmentController$YouTubeLiveChatCallbackImpl;->this$0:Ljp/co/sony/mc/camera/view/FragmentController;
 
     sget-object p1, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->YOUTUBE_LIVE_CHAT_FAILED:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
@@ -205,7 +205,7 @@
 
     goto :goto_0
 
-    .line 8440
+    .line 8717
     :cond_3
     invoke-virtual {p1}, Lcom/google/api/client/googleapis/json/GoogleJsonResponseException;->getDetails()Lcom/google/api/client/googleapis/json/GoogleJsonError;
 
@@ -245,7 +245,7 @@
         }
     .end annotation
 
-    .line 8430
+    .line 8707
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/FragmentController$YouTubeLiveChatCallbackImpl;->this$0:Ljp/co/sony/mc/camera/view/FragmentController;
 
     const/4 v0, 0x0
@@ -254,17 +254,17 @@
 
     move-result-object p0
 
-    .line 8431
+    .line 8708
     invoke-virtual {p0, v0}, Ljp/co/sony/mc/camera/view/fragment/BasicModeMainFragment;->switchLiveChatDisabledMessageVisibility(Z)V
 
-    .line 8432
+    .line 8709
     invoke-interface {p1}, Ljava/util/List;->isEmpty()Z
 
     move-result v0
 
     if-nez v0, :cond_0
 
-    .line 8433
+    .line 8710
     invoke-virtual {p0, p1}, Ljp/co/sony/mc/camera/view/fragment/BasicModeMainFragment;->updateChatList(Ljava/util/List;)V
 
     :cond_0

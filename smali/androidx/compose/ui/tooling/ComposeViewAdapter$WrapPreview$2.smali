@@ -1,6 +1,6 @@
 .class final Landroidx/compose/ui/tooling/ComposeViewAdapter$WrapPreview$2;
 .super Lkotlin/jvm/internal/Lambda;
-.source "ComposeViewAdapter.kt"
+.source "ComposeViewAdapter.android.kt"
 
 # interfaces
 .implements Lkotlin/jvm/functions/Function2;

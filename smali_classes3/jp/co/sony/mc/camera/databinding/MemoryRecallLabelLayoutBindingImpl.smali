@@ -26,7 +26,7 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/databinding/MemoryRecallLabelLayoutBindingImpl;->sViewsWithIds:Landroid/util/SparseIntArray;
 
-    const v1, 0x7f090279
+    const v1, 0x7f090274
 
     const/4 v2, 0x1
 

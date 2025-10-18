@@ -5,7 +5,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/SourceDebugExtension;
-    value = "SMAP\nRememberSaveable.kt\nKotlin\n*S Kotlin\n*F\n+ 1 RememberSaveable.kt\nandroidx/compose/runtime/saveable/RememberSaveableKt\n+ 2 CompositionLocal.kt\nandroidx/compose/runtime/CompositionLocal\n+ 3 Composables.kt\nandroidx/compose/runtime/ComposablesKt\n+ 4 Composer.kt\nandroidx/compose/runtime/ComposerKt\n*L\n1#1,200:1\n76#2:201\n83#3,3:202\n1097#4,6:205\n*S KotlinDebug\n*F\n+ 1 RememberSaveable.kt\nandroidx/compose/runtime/saveable/RememberSaveableKt\n*L\n81#1:201\n83#1:202,3\n83#1:205,6\n*E\n"
+    value = "SMAP\nRememberSaveable.kt\nKotlin\n*S Kotlin\n*F\n+ 1 RememberSaveable.kt\nandroidx/compose/runtime/saveable/RememberSaveableKt\n+ 2 CompositionLocal.kt\nandroidx/compose/runtime/CompositionLocal\n+ 3 Composables.kt\nandroidx/compose/runtime/ComposablesKt\n+ 4 Composer.kt\nandroidx/compose/runtime/ComposerKt\n*L\n1#1,271:1\n74#2:272\n25#3:273\n1116#4,6:274\n*S KotlinDebug\n*F\n+ 1 RememberSaveable.kt\nandroidx/compose/runtime/saveable/RememberSaveableKt\n*L\n82#1:272\n84#1:273\n84#1:274,6\n*E\n"
 .end annotation
 
 .annotation runtime Lkotlin/Metadata;
@@ -88,12 +88,12 @@
         }
     .end annotation
 
-    .line 150
+    .line 214
     const-string v0, "null cannot be cast to non-null type androidx.compose.runtime.saveable.Saver<T of androidx.compose.runtime.saveable.RememberSaveableKt.mutableStateSaver, kotlin.Any>"
 
     invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 151
+    .line 215
     new-instance v0, Landroidx/compose/runtime/saveable/RememberSaveableKt$mutableStateSaver$1$1;
 
     invoke-direct {v0, p0}, Landroidx/compose/runtime/saveable/RememberSaveableKt$mutableStateSaver$1$1;-><init>(Landroidx/compose/runtime/saveable/Saver;)V
@@ -137,23 +137,11 @@
         }
     .end annotation
 
-    const-string v0, "inputs"
-
-    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string/jumbo v0, "stateSaver"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string v0, "init"
-
-    invoke-static {p3, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
     const v0, -0xc0b1824
 
     invoke-interface {p4, v0}, Landroidx/compose/runtime/Composer;->startReplaceableGroup(I)V
 
-    const-string v1, "C(rememberSaveable)P(1,3,2)141@6040L106:RememberSaveable.kt#r2ddri"
+    const-string v1, "C(rememberSaveable)P(1,3,2)127@5317L106:RememberSaveable.kt#r2ddri"
 
     invoke-static {p4, v1}, Landroidx/compose/runtime/ComposerKt;->sourceInformation(Landroidx/compose/runtime/Composer;Ljava/lang/String;)V
 
@@ -166,7 +154,7 @@
     :cond_0
     move-object v3, p2
 
-    .line 140
+    .line 126
     invoke-static {}, Landroidx/compose/runtime/ComposerKt;->isTraceInProgress()Z
 
     move-result p2
@@ -175,12 +163,12 @@
 
     const/4 p2, -0x1
 
-    const-string p6, "androidx.compose.runtime.saveable.rememberSaveable (RememberSaveable.kt:136)"
+    const-string p6, "androidx.compose.runtime.saveable.rememberSaveable (RememberSaveable.kt:127)"
 
-    .line 142
+    .line 128
     invoke-static {v0, p5, p2, p6}, Landroidx/compose/runtime/ComposerKt;->traceEventStart(IIILjava/lang/String;)V
 
-    .line 143
+    .line 129
     :cond_1
     array-length p2, p0
 
@@ -188,7 +176,7 @@
 
     move-result-object v1
 
-    .line 144
+    .line 130
     invoke-static {p1}, Landroidx/compose/runtime/saveable/RememberSaveableKt;->mutableStateSaver(Landroidx/compose/runtime/saveable/Saver;)Landroidx/compose/runtime/saveable/Saver;
 
     move-result-object v2
@@ -207,7 +195,7 @@
 
     move-object v5, p4
 
-    .line 142
+    .line 128
     invoke-static/range {v1 .. v7}, Landroidx/compose/runtime/saveable/RememberSaveableKt;->rememberSaveable([Ljava/lang/Object;Landroidx/compose/runtime/saveable/Saver;Ljava/lang/String;Lkotlin/jvm/functions/Function0;Landroidx/compose/runtime/Composer;II)Ljava/lang/Object;
 
     move-result-object p0
@@ -229,7 +217,7 @@
 .end method
 
 .method public static final rememberSaveable([Ljava/lang/Object;Landroidx/compose/runtime/saveable/Saver;Ljava/lang/String;Lkotlin/jvm/functions/Function0;Landroidx/compose/runtime/Composer;II)Ljava/lang/Object;
-    .locals 5
+    .locals 8
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<T:",
@@ -248,19 +236,11 @@
         }
     .end annotation
 
-    const-string v0, "inputs"
-
-    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string v0, "init"
-
-    invoke-static {p3, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
     const v0, 0x1a56bfab
 
     invoke-interface {p4, v0}, Landroidx/compose/runtime/Composer;->startReplaceableGroup(I)V
 
-    const-string v1, "C(rememberSaveable)P(1,3,2)80@3500L7,82@3597L244,95@4209L27,96@4262L27,98@4299L441:RememberSaveable.kt#r2ddri"
+    const-string v1, "C(rememberSaveable)P(1,3,2)71@3180L23,81@3526L7,83@3552L313,93@3940L82:RememberSaveable.kt#r2ddri"
 
     invoke-static {p4, v1}, Landroidx/compose/runtime/ComposerKt;->sourceInformation(Landroidx/compose/runtime/Composer;Ljava/lang/String;)V
 
@@ -292,211 +272,202 @@
 
     const/4 p6, -0x1
 
-    const-string v2, "androidx.compose.runtime.saveable.rememberSaveable (RememberSaveable.kt:65)"
+    const-string v2, "androidx.compose.runtime.saveable.rememberSaveable (RememberSaveable.kt:70)"
 
     .line 71
     invoke-static {v0, p5, p6, v2}, Landroidx/compose/runtime/ComposerKt;->traceEventStart(IIILjava/lang/String;)V
 
     :cond_2
-    const p5, 0x3f24a645
+    const/4 p5, 0x0
 
-    invoke-interface {p4, p5}, Landroidx/compose/runtime/Composer;->startReplaceableGroup(I)V
+    .line 72
+    invoke-static {p4, p5}, Landroidx/compose/runtime/ComposablesKt;->getCurrentCompositeKeyHash(Landroidx/compose/runtime/Composer;I)I
 
-    const-string p5, "*75@3334L23"
+    move-result p6
 
-    invoke-static {p4, p5}, Landroidx/compose/runtime/ComposerKt;->sourceInformation(Landroidx/compose/runtime/Composer;Ljava/lang/String;)V
+    .line 74
+    move-object v0, p2
 
-    .line 73
-    move-object p5, p2
+    check-cast v0, Ljava/lang/CharSequence;
 
-    check-cast p5, Ljava/lang/CharSequence;
+    if-eqz v0, :cond_3
 
-    const/4 p6, 0x0
+    invoke-interface {v0}, Ljava/lang/CharSequence;->length()I
 
-    if-eqz p5, :cond_3
+    move-result v0
 
-    invoke-interface {p5}, Ljava/lang/CharSequence;->length()I
+    if-nez v0, :cond_4
 
-    move-result p5
-
-    if-nez p5, :cond_4
-
-    .line 76
+    .line 77
     :cond_3
-    invoke-static {p4, p6}, Landroidx/compose/runtime/ComposablesKt;->getCurrentCompositeKeyHash(Landroidx/compose/runtime/Composer;I)I
+    sget p2, Landroidx/compose/runtime/saveable/RememberSaveableKt;->MaxSupportedRadix:I
+
+    invoke-static {p2}, Lkotlin/text/CharsKt;->checkRadix(I)I
 
     move-result p2
 
-    sget p5, Landroidx/compose/runtime/saveable/RememberSaveableKt;->MaxSupportedRadix:I
-
-    invoke-static {p5}, Lkotlin/text/CharsKt;->checkRadix(I)I
-
-    move-result p5
-
-    invoke-static {p2, p5}, Ljava/lang/Integer;->toString(II)Ljava/lang/String;
+    invoke-static {p6, p2}, Ljava/lang/Integer;->toString(II)Ljava/lang/String;
 
     move-result-object p2
 
-    const-string/jumbo p5, "toString(this, checkRadix(radix))"
+    const-string/jumbo p6, "toString(this, checkRadix(radix))"
 
-    invoke-static {p2, p5}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p2, p6}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 73
+    .line 80
     :cond_4
-    invoke-interface {p4}, Landroidx/compose/runtime/Composer;->endReplaceableGroup()V
+    const-string p6, "null cannot be cast to non-null type androidx.compose.runtime.saveable.Saver<T of androidx.compose.runtime.saveable.RememberSaveableKt.rememberSaveable, kotlin.Any>"
 
-    .line 79
-    const-string p5, "null cannot be cast to non-null type androidx.compose.runtime.saveable.Saver<T of androidx.compose.runtime.saveable.RememberSaveableKt.rememberSaveable, kotlin.Any>"
+    invoke-static {p1, p6}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;Ljava/lang/String;)V
 
-    invoke-static {p1, p5}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 81
+    .line 82
     invoke-static {}, Landroidx/compose/runtime/saveable/SaveableStateRegistryKt;->getLocalSaveableStateRegistry()Landroidx/compose/runtime/ProvidableCompositionLocal;
 
-    move-result-object p5
+    move-result-object p6
 
-    check-cast p5, Landroidx/compose/runtime/CompositionLocal;
+    check-cast p6, Landroidx/compose/runtime/CompositionLocal;
 
     const v0, 0x789c5f52
 
     const-string v2, "CC:CompositionLocal.kt#9igjgp"
 
-    .line 201
+    .line 272
     invoke-static {p4, v0, v2}, Landroidx/compose/runtime/ComposerKt;->sourceInformationMarkerStart(Landroidx/compose/runtime/Composer;ILjava/lang/String;)V
 
-    invoke-interface {p4, p5}, Landroidx/compose/runtime/Composer;->consume(Landroidx/compose/runtime/CompositionLocal;)Ljava/lang/Object;
+    invoke-interface {p4, p6}, Landroidx/compose/runtime/Composer;->consume(Landroidx/compose/runtime/CompositionLocal;)Ljava/lang/Object;
 
-    move-result-object p5
+    move-result-object p6
 
     invoke-static {p4}, Landroidx/compose/runtime/ComposerKt;->sourceInformationMarkerEnd(Landroidx/compose/runtime/Composer;)V
 
-    .line 81
-    check-cast p5, Landroidx/compose/runtime/saveable/SaveableStateRegistry;
+    .line 82
+    check-cast p6, Landroidx/compose/runtime/saveable/SaveableStateRegistry;
 
-    .line 83
-    array-length v0, p0
+    const v0, -0x1d58f75c
 
-    invoke-static {p0, v0}, Ljava/util/Arrays;->copyOf([Ljava/lang/Object;I)[Ljava/lang/Object;
-
-    move-result-object p0
-
-    const v0, -0x21de6e89
-
+    .line 84
     invoke-interface {p4, v0}, Landroidx/compose/runtime/Composer;->startReplaceableGroup(I)V
 
-    const-string v0, "CC(remember)P(1):Composables.kt#9igjgp"
+    const-string v0, "CC(remember):Composables.kt#9igjgp"
 
     invoke-static {p4, v0}, Landroidx/compose/runtime/ComposerKt;->sourceInformation(Landroidx/compose/runtime/Composer;Ljava/lang/String;)V
 
-    .line 203
-    array-length v0, p0
-
-    move v2, p6
-
-    move v3, v2
-
-    :goto_0
-    if-ge v2, v0, :cond_5
-
-    aget-object v4, p0, v2
-
-    invoke-interface {p4, v4}, Landroidx/compose/runtime/Composer;->changed(Ljava/lang/Object;)Z
-
-    move-result v4
-
-    or-int/2addr v3, v4
-
-    add-int/lit8 v2, v2, 0x1
-
-    goto :goto_0
-
-    .line 205
-    :cond_5
+    .line 274
     invoke-interface {p4}, Landroidx/compose/runtime/Composer;->rememberedValue()Ljava/lang/Object;
-
-    move-result-object p0
-
-    if-nez v3, :cond_6
-
-    .line 206
-    sget-object v0, Landroidx/compose/runtime/Composer;->Companion:Landroidx/compose/runtime/Composer$Companion;
-
-    invoke-virtual {v0}, Landroidx/compose/runtime/Composer$Companion;->getEmpty()Ljava/lang/Object;
 
     move-result-object v0
 
-    if-ne p0, v0, :cond_9
+    .line 275
+    sget-object v2, Landroidx/compose/runtime/Composer;->Companion:Landroidx/compose/runtime/Composer$Companion;
 
-    :cond_6
-    if-eqz p5, :cond_7
+    invoke-virtual {v2}, Landroidx/compose/runtime/Composer$Companion;->getEmpty()Ljava/lang/Object;
 
-    .line 85
-    invoke-interface {p5, p2}, Landroidx/compose/runtime/saveable/SaveableStateRegistry;->consumeRestored(Ljava/lang/String;)Ljava/lang/Object;
+    move-result-object v2
 
-    move-result-object p0
+    if-ne v0, v2, :cond_7
 
-    if-eqz p0, :cond_7
+    if-eqz p6, :cond_5
 
     .line 86
-    invoke-interface {p1, p0}, Landroidx/compose/runtime/saveable/Saver;->restore(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-interface {p6, p2}, Landroidx/compose/runtime/saveable/SaveableStateRegistry;->consumeRestored(Ljava/lang/String;)Ljava/lang/Object;
+
+    move-result-object v0
+
+    if-eqz v0, :cond_5
+
+    .line 87
+    invoke-interface {p1, v0}, Landroidx/compose/runtime/saveable/Saver;->restore(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v1
 
-    :cond_7
-    if-nez v1, :cond_8
+    :cond_5
+    if-nez v1, :cond_6
 
-    .line 88
+    .line 89
     invoke-interface {p3}, Lkotlin/jvm/functions/Function0;->invoke()Ljava/lang/Object;
 
-    move-result-object p0
+    move-result-object v0
 
-    goto :goto_1
+    move-object v5, v0
 
-    :cond_8
-    move-object p0, v1
+    goto :goto_0
 
-    .line 208
-    :goto_1
-    invoke-interface {p4, p0}, Landroidx/compose/runtime/Composer;->updateRememberedValue(Ljava/lang/Object;)V
+    :cond_6
+    move-object v5, v1
 
-    .line 204
-    :cond_9
+    .line 90
+    :goto_0
+    new-instance v0, Landroidx/compose/runtime/saveable/SaveableHolder;
+
+    move-object v1, v0
+
+    move-object v2, p1
+
+    move-object v3, p6
+
+    move-object v4, p2
+
+    move-object v6, p0
+
+    invoke-direct/range {v1 .. v6}, Landroidx/compose/runtime/saveable/SaveableHolder;-><init>(Landroidx/compose/runtime/saveable/Saver;Landroidx/compose/runtime/saveable/SaveableStateRegistry;Ljava/lang/String;Ljava/lang/Object;[Ljava/lang/Object;)V
+
+    .line 277
+    invoke-interface {p4, v0}, Landroidx/compose/runtime/Composer;->updateRememberedValue(Ljava/lang/Object;)V
+
+    .line 273
+    :cond_7
     invoke-interface {p4}, Landroidx/compose/runtime/Composer;->endReplaceableGroup()V
 
-    if-eqz p5, :cond_a
+    .line 84
+    move-object v2, v0
 
-    .line 96
-    invoke-static {p1, p4, p6}, Landroidx/compose/runtime/SnapshotStateKt;->rememberUpdatedState(Ljava/lang/Object;Landroidx/compose/runtime/Composer;I)Landroidx/compose/runtime/State;
+    check-cast v2, Landroidx/compose/runtime/saveable/SaveableHolder;
 
-    move-result-object p1
+    .line 93
+    invoke-virtual {v2, p0}, Landroidx/compose/runtime/saveable/SaveableHolder;->getValueIfInputsDidntChange([Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 97
-    invoke-static {p0, p4, p6}, Landroidx/compose/runtime/SnapshotStateKt;->rememberUpdatedState(Ljava/lang/Object;Landroidx/compose/runtime/Composer;I)Landroidx/compose/runtime/State;
+    move-result-object v0
 
-    move-result-object p3
+    if-nez v0, :cond_8
 
-    .line 99
-    new-instance v0, Landroidx/compose/runtime/saveable/RememberSaveableKt$rememberSaveable$1;
+    invoke-interface {p3}, Lkotlin/jvm/functions/Function0;->invoke()Ljava/lang/Object;
 
-    invoke-direct {v0, p5, p2, p1, p3}, Landroidx/compose/runtime/saveable/RememberSaveableKt$rememberSaveable$1;-><init>(Landroidx/compose/runtime/saveable/SaveableStateRegistry;Ljava/lang/String;Landroidx/compose/runtime/State;Landroidx/compose/runtime/State;)V
+    move-result-object v0
 
-    check-cast v0, Lkotlin/jvm/functions/Function1;
+    .line 94
+    :cond_8
+    new-instance p3, Landroidx/compose/runtime/saveable/RememberSaveableKt$rememberSaveable$1;
 
-    invoke-static {p5, p2, v0, p4, p6}, Landroidx/compose/runtime/EffectsKt;->DisposableEffect(Ljava/lang/Object;Ljava/lang/Object;Lkotlin/jvm/functions/Function1;Landroidx/compose/runtime/Composer;I)V
+    move-object v1, p3
 
-    :cond_a
+    move-object v3, p1
+
+    move-object v4, p6
+
+    move-object v5, p2
+
+    move-object v6, v0
+
+    move-object v7, p0
+
+    invoke-direct/range {v1 .. v7}, Landroidx/compose/runtime/saveable/RememberSaveableKt$rememberSaveable$1;-><init>(Landroidx/compose/runtime/saveable/SaveableHolder;Landroidx/compose/runtime/saveable/Saver;Landroidx/compose/runtime/saveable/SaveableStateRegistry;Ljava/lang/String;Ljava/lang/Object;[Ljava/lang/Object;)V
+
+    check-cast p3, Lkotlin/jvm/functions/Function0;
+
+    invoke-static {p3, p4, p5}, Landroidx/compose/runtime/EffectsKt;->SideEffect(Lkotlin/jvm/functions/Function0;Landroidx/compose/runtime/Composer;I)V
+
     invoke-static {}, Landroidx/compose/runtime/ComposerKt;->isTraceInProgress()Z
 
-    move-result p1
+    move-result p0
 
-    if-eqz p1, :cond_b
+    if-eqz p0, :cond_9
 
     invoke-static {}, Landroidx/compose/runtime/ComposerKt;->traceEventEnd()V
 
-    :cond_b
+    :cond_9
     invoke-interface {p4}, Landroidx/compose/runtime/Composer;->endReplaceableGroup()V
 
-    return-object p0
+    return-object v0
 .end method
 
 .method private static final requireCanBeSaved(Landroidx/compose/runtime/saveable/SaveableStateRegistry;Ljava/lang/Object;)V
@@ -504,22 +475,22 @@
 
     if-eqz p1, :cond_2
 
-    .line 170
+    .line 241
     invoke-interface {p0, p1}, Landroidx/compose/runtime/saveable/SaveableStateRegistry;->canBeSaved(Ljava/lang/Object;)Z
 
     move-result p0
 
     if-nez p0, :cond_2
 
-    .line 171
+    .line 242
     new-instance p0, Ljava/lang/IllegalArgumentException;
 
-    .line 172
+    .line 243
     instance-of v0, p1, Landroidx/compose/runtime/snapshots/SnapshotMutableState;
 
     if-eqz v0, :cond_1
 
-    .line 173
+    .line 244
     check-cast p1, Landroidx/compose/runtime/snapshots/SnapshotMutableState;
 
     invoke-interface {p1}, Landroidx/compose/runtime/snapshots/SnapshotMutableState;->getPolicy()Landroidx/compose/runtime/SnapshotMutationPolicy;
@@ -532,7 +503,7 @@
 
     if-eq v0, v1, :cond_0
 
-    .line 174
+    .line 245
     invoke-interface {p1}, Landroidx/compose/runtime/snapshots/SnapshotMutableState;->getPolicy()Landroidx/compose/runtime/SnapshotMutationPolicy;
 
     move-result-object v0
@@ -543,7 +514,7 @@
 
     if-eq v0, v1, :cond_0
 
-    .line 175
+    .line 246
     invoke-interface {p1}, Landroidx/compose/runtime/snapshots/SnapshotMutableState;->getPolicy()Landroidx/compose/runtime/SnapshotMutationPolicy;
 
     move-result-object v0
@@ -554,12 +525,12 @@
 
     if-eq v0, v1, :cond_0
 
-    .line 177
+    .line 248
     const-string p1, "If you use a custom SnapshotMutationPolicy for your MutableState you have to write a custom Saver"
 
     goto :goto_0
 
-    .line 180
+    .line 251
     :cond_0
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -587,7 +558,7 @@
 
     goto :goto_0
 
-    .line 187
+    .line 258
     :cond_1
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -607,7 +578,7 @@
 
     move-result-object p1
 
-    .line 171
+    .line 242
     :goto_0
     invoke-direct {p0, p1}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
 

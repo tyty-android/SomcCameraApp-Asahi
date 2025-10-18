@@ -53,7 +53,7 @@
 
     const-wide v0, 0x4046800000000000L    # 45.0
 
-    .line 224
+    .line 229
     invoke-static {v0, v1}, Ljava/lang/Math;->toRadians(D)D
 
     move-result-wide v2
@@ -62,14 +62,14 @@
 
     const-wide v2, 0x4060e00000000000L    # 135.0
 
-    .line 226
+    .line 231
     invoke-static {v2, v3}, Ljava/lang/Math;->toRadians(D)D
 
     move-result-wide v2
 
     sput-wide v2, Ljp/co/sony/mc/camera/util/SpiritLevelMonitor$SensorEventListenerImpl;->_135_DEGREES_RAD:D
 
-    .line 230
+    .line 235
     invoke-static {v0, v1}, Ljava/lang/Math;->toRadians(D)D
 
     move-result-wide v0
@@ -78,7 +78,7 @@
 
     const-wide/high16 v0, 0x4051000000000000L    # 68.0
 
-    .line 233
+    .line 238
     invoke-static {v0, v1}, Ljava/lang/Math;->toRadians(D)D
 
     move-result-wide v0
@@ -91,61 +91,61 @@
 .method public constructor <init>()V
     .locals 4
 
-    .line 251
+    .line 256
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     const/16 v0, 0x9
 
-    .line 237
+    .line 242
     new-array v1, v0, [F
 
     iput-object v1, p0, Ljp/co/sony/mc/camera/util/SpiritLevelMonitor$SensorEventListenerImpl;->mRotationMatrix:[F
 
-    .line 239
+    .line 244
     new-array v1, v0, [F
 
     iput-object v1, p0, Ljp/co/sony/mc/camera/util/SpiritLevelMonitor$SensorEventListenerImpl;->mTempRotationMatrix:[F
 
     const/4 v1, 0x3
 
-    .line 241
+    .line 246
     new-array v2, v1, [F
 
     iput-object v2, p0, Ljp/co/sony/mc/camera/util/SpiritLevelMonitor$SensorEventListenerImpl;->mRotationAngle:[F
 
     const/4 v2, 0x0
 
-    .line 243
+    .line 248
     iput v2, p0, Ljp/co/sony/mc/camera/util/SpiritLevelMonitor$SensorEventListenerImpl;->mOrientation:I
 
-    .line 245
+    .line 250
     new-array v3, v1, [F
 
     fill-array-data v3, :array_0
 
     iput-object v3, p0, Ljp/co/sony/mc/camera/util/SpiritLevelMonitor$SensorEventListenerImpl;->mGravity:[F
 
-    .line 247
+    .line 252
     new-array v1, v1, [D
 
     iput-object v1, p0, Ljp/co/sony/mc/camera/util/SpiritLevelMonitor$SensorEventListenerImpl;->mAngle:[D
 
     const v1, 0x3f4ccccd    # 0.8f
 
-    .line 249
+    .line 254
     iput v1, p0, Ljp/co/sony/mc/camera/util/SpiritLevelMonitor$SensorEventListenerImpl;->LOW_PASS_ALPHA:F
 
     :goto_0
     if-ge v2, v0, :cond_0
 
-    .line 253
+    .line 258
     iget-object v1, p0, Ljp/co/sony/mc/camera/util/SpiritLevelMonitor$SensorEventListenerImpl;->mRotationMatrix:[F
 
     const/4 v3, 0x0
 
     aput v3, v1, v2
 
-    .line 254
+    .line 259
     iget-object v1, p0, Ljp/co/sony/mc/camera/util/SpiritLevelMonitor$SensorEventListenerImpl;->mTempRotationMatrix:[F
 
     aput v3, v1, v2
@@ -178,10 +178,10 @@
 
     if-nez p1, :cond_3
 
-    .line 317
+    .line 322
     invoke-static {p2, p3}, Landroid/hardware/SensorManager;->getOrientation([F[F)[F
 
-    .line 318
+    .line 323
     aget v4, p3, v3
 
     float-to-double v5, v4
@@ -217,7 +217,7 @@
 
     float-to-double v4, v4
 
-    .line 320
+    .line 325
     sget-wide v6, Ljp/co/sony/mc/camera/util/SpiritLevelMonitor$SensorEventListenerImpl;->_135_DEGREES_RAD:D
 
     cmpg-double v4, v4, v6
@@ -228,7 +228,7 @@
 
     goto :goto_0
 
-    .line 322
+    .line 327
     :cond_1
     aget v4, p3, v1
 
@@ -289,14 +289,14 @@
 
     move v2, v3
 
-    .line 357
+    .line 362
     :cond_8
     :goto_1
     iget-object v0, p0, Ljp/co/sony/mc/camera/util/SpiritLevelMonitor$SensorEventListenerImpl;->mTempRotationMatrix:[F
 
     invoke-static {p2, v2, v1, v0}, Landroid/hardware/SensorManager;->remapCoordinateSystem([FII[F)Z
 
-    .line 358
+    .line 363
     iget-object p0, p0, Ljp/co/sony/mc/camera/util/SpiritLevelMonitor$SensorEventListenerImpl;->mTempRotationMatrix:[F
 
     invoke-static {p0, p3}, Landroid/hardware/SensorManager;->getOrientation([F[F)[F
@@ -318,7 +318,7 @@
 .method public onSensorChanged(Landroid/hardware/SensorEvent;)V
     .locals 12
 
-    .line 260
+    .line 265
     iget-object v0, p1, Landroid/hardware/SensorEvent;->sensor:Landroid/hardware/Sensor;
 
     invoke-virtual {v0}, Landroid/hardware/Sensor;->getType()I
@@ -335,7 +335,7 @@
 
     goto/16 :goto_0
 
-    .line 262
+    .line 267
     :cond_0
     iget-object v0, p0, Ljp/co/sony/mc/camera/util/SpiritLevelMonitor$SensorEventListenerImpl;->mGravity:[F
 
@@ -357,7 +357,7 @@
 
     aput v4, v0, v2
 
-    .line 264
+    .line 269
     iget-object v0, p0, Ljp/co/sony/mc/camera/util/SpiritLevelMonitor$SensorEventListenerImpl;->mGravity:[F
 
     aget v4, v0, v3
@@ -374,7 +374,7 @@
 
     aput v4, v0, v3
 
-    .line 266
+    .line 271
     iget-object v0, p0, Ljp/co/sony/mc/camera/util/SpiritLevelMonitor$SensorEventListenerImpl;->mGravity:[F
 
     aget v4, v0, v1
@@ -391,7 +391,7 @@
 
     aput v4, v0, v1
 
-    .line 269
+    .line 274
     iget-object p1, p0, Ljp/co/sony/mc/camera/util/SpiritLevelMonitor$SensorEventListenerImpl;->mAngle:[D
 
     iget-object v0, p0, Ljp/co/sony/mc/camera/util/SpiritLevelMonitor$SensorEventListenerImpl;->mGravity:[F
@@ -412,7 +412,7 @@
 
     aput-wide v4, p1, v2
 
-    .line 270
+    .line 275
     iget-object p1, p0, Ljp/co/sony/mc/camera/util/SpiritLevelMonitor$SensorEventListenerImpl;->mAngle:[D
 
     iget-object v0, p0, Ljp/co/sony/mc/camera/util/SpiritLevelMonitor$SensorEventListenerImpl;->mGravity:[F
@@ -439,14 +439,14 @@
 
     float-to-double v10, v0
 
-    .line 271
+    .line 276
     invoke-static {v10, v11, v8, v9}, Ljava/lang/Math;->pow(DD)D
 
     move-result-wide v8
 
     add-double/2addr v6, v8
 
-    .line 270
+    .line 275
     invoke-static {v6, v7}, Ljava/lang/Math;->sqrt(D)D
 
     move-result-wide v6
@@ -459,14 +459,14 @@
 
     aput-wide v4, p1, v3
 
-    .line 272
+    .line 277
     iget-object p1, p0, Ljp/co/sony/mc/camera/util/SpiritLevelMonitor$SensorEventListenerImpl;->mAngle:[D
 
     const-wide/16 v4, 0x0
 
     aput-wide v4, p1, v1
 
-    .line 273
+    .line 278
     iget-object v0, p0, Ljp/co/sony/mc/camera/util/SpiritLevelMonitor$SensorEventListenerImpl;->mRotationMatrix:[F
 
     aget-wide v4, p1, v3
@@ -479,7 +479,7 @@
 
     aput p1, v0, v2
 
-    .line 274
+    .line 279
     iget-object p1, p0, Ljp/co/sony/mc/camera/util/SpiritLevelMonitor$SensorEventListenerImpl;->mRotationMatrix:[F
 
     iget-object v0, p0, Ljp/co/sony/mc/camera/util/SpiritLevelMonitor$SensorEventListenerImpl;->mAngle:[D
@@ -504,7 +504,7 @@
 
     aput v0, p1, v3
 
-    .line 275
+    .line 280
     iget-object p1, p0, Ljp/co/sony/mc/camera/util/SpiritLevelMonitor$SensorEventListenerImpl;->mRotationMatrix:[F
 
     iget-object v0, p0, Ljp/co/sony/mc/camera/util/SpiritLevelMonitor$SensorEventListenerImpl;->mAngle:[D
@@ -531,7 +531,7 @@
 
     aput v0, p1, v1
 
-    .line 276
+    .line 281
     iget-object p1, p0, Ljp/co/sony/mc/camera/util/SpiritLevelMonitor$SensorEventListenerImpl;->mRotationMatrix:[F
 
     const/4 v0, 0x3
@@ -540,7 +540,7 @@
 
     aput v4, p1, v0
 
-    .line 277
+    .line 282
     iget-object v0, p0, Ljp/co/sony/mc/camera/util/SpiritLevelMonitor$SensorEventListenerImpl;->mAngle:[D
 
     aget-wide v4, v0, v2
@@ -555,7 +555,7 @@
 
     aput v0, p1, v4
 
-    .line 278
+    .line 283
     iget-object p1, p0, Ljp/co/sony/mc/camera/util/SpiritLevelMonitor$SensorEventListenerImpl;->mRotationMatrix:[F
 
     iget-object v0, p0, Ljp/co/sony/mc/camera/util/SpiritLevelMonitor$SensorEventListenerImpl;->mAngle:[D
@@ -572,7 +572,7 @@
 
     aput v0, p1, v4
 
-    .line 279
+    .line 284
     iget-object p1, p0, Ljp/co/sony/mc/camera/util/SpiritLevelMonitor$SensorEventListenerImpl;->mRotationMatrix:[F
 
     iget-object v0, p0, Ljp/co/sony/mc/camera/util/SpiritLevelMonitor$SensorEventListenerImpl;->mAngle:[D
@@ -589,7 +589,7 @@
 
     aput v0, p1, v4
 
-    .line 280
+    .line 285
     iget-object p1, p0, Ljp/co/sony/mc/camera/util/SpiritLevelMonitor$SensorEventListenerImpl;->mRotationMatrix:[F
 
     iget-object v0, p0, Ljp/co/sony/mc/camera/util/SpiritLevelMonitor$SensorEventListenerImpl;->mAngle:[D
@@ -618,7 +618,7 @@
 
     aput v0, p1, v4
 
-    .line 281
+    .line 286
     iget-object p1, p0, Ljp/co/sony/mc/camera/util/SpiritLevelMonitor$SensorEventListenerImpl;->mRotationMatrix:[F
 
     iget-object v0, p0, Ljp/co/sony/mc/camera/util/SpiritLevelMonitor$SensorEventListenerImpl;->mAngle:[D
@@ -645,7 +645,7 @@
 
     aput v0, p1, v4
 
-    .line 285
+    .line 290
     :goto_0
     iget p1, p0, Ljp/co/sony/mc/camera/util/SpiritLevelMonitor$SensorEventListenerImpl;->mOrientation:I
 
@@ -659,7 +659,7 @@
 
     iput p1, p0, Ljp/co/sony/mc/camera/util/SpiritLevelMonitor$SensorEventListenerImpl;->mOrientation:I
 
-    .line 287
+    .line 292
     iget-object v0, p0, Ljp/co/sony/mc/camera/util/SpiritLevelMonitor$SensorEventListenerImpl;->mRotationAngle:[F
 
     aget v4, v0, v3
@@ -687,7 +687,7 @@
     :cond_1
     move v5, v2
 
-    .line 290
+    .line 295
     :goto_1
     aget v6, v0, v1
 
@@ -725,7 +725,7 @@
 
     goto :goto_4
 
-    .line 301
+    .line 306
     :cond_4
     iget-object p1, p0, Ljp/co/sony/mc/camera/util/SpiritLevelMonitor$SensorEventListenerImpl;->mRotationMatrix:[F
 
@@ -735,14 +735,14 @@
 
     iput p1, p0, Ljp/co/sony/mc/camera/util/SpiritLevelMonitor$SensorEventListenerImpl;->mOrientation:I
 
-    .line 302
+    .line 307
     iget-object v0, p0, Ljp/co/sony/mc/camera/util/SpiritLevelMonitor$SensorEventListenerImpl;->mRotationAngle:[F
 
     aget v0, v0, v3
 
     float-to-double v2, v0
 
-    .line 303
+    .line 308
     invoke-static {v2, v3}, Ljava/lang/Math;->toDegrees(D)D
 
     move-result-wide v2
@@ -755,7 +755,7 @@
 
     float-to-double v1, v1
 
-    .line 304
+    .line 309
     invoke-static {v1, v2}, Ljava/lang/Math;->toDegrees(D)D
 
     move-result-wide v1
@@ -772,7 +772,7 @@
 
     add-float/2addr v1, v2
 
-    .line 302
+    .line 307
     invoke-virtual {p0, p1, v0, v1}, Ljp/co/sony/mc/camera/util/SpiritLevelMonitor$SensorEventListenerImpl;->notifySpiritLevelChanged(IFF)V
 
     return-void
@@ -781,7 +781,7 @@
     :goto_4
     float-to-double v2, v4
 
-    .line 295
+    .line 300
     invoke-static {v2, v3}, Ljava/lang/Math;->toDegrees(D)D
 
     move-result-wide v2
@@ -794,7 +794,7 @@
 
     float-to-double v1, v1
 
-    .line 296
+    .line 301
     invoke-static {v1, v2}, Ljava/lang/Math;->toDegrees(D)D
 
     move-result-wide v1
@@ -811,7 +811,7 @@
 
     add-float/2addr v1, v2
 
-    .line 294
+    .line 299
     invoke-virtual {p0, p1, v0, v1}, Ljp/co/sony/mc/camera/util/SpiritLevelMonitor$SensorEventListenerImpl;->notifySpiritLevelChanged(IFF)V
 
     return-void

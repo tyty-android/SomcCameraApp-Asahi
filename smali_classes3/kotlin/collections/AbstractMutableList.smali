@@ -57,7 +57,7 @@
 .method protected constructor <init>()V
     .locals 0
 
-    .line 16
+    .line 18
     invoke-direct {p0}, Ljava/util/AbstractList;-><init>()V
 
     return-void

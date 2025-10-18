@@ -9,6 +9,7 @@
 # annotations
 .annotation system Ldalvik/annotation/AnnotationDefault;
     value = .subannotation Lorg/jetbrains/annotations/NotNull;
+        exception = Ljava/lang/Exception;
         value = ""
     .end subannotation
 .end annotation
@@ -25,11 +26,24 @@
         .enum Ljava/lang/annotation/ElementType;->METHOD:Ljava/lang/annotation/ElementType;,
         .enum Ljava/lang/annotation/ElementType;->FIELD:Ljava/lang/annotation/ElementType;,
         .enum Ljava/lang/annotation/ElementType;->PARAMETER:Ljava/lang/annotation/ElementType;,
-        .enum Ljava/lang/annotation/ElementType;->LOCAL_VARIABLE:Ljava/lang/annotation/ElementType;
+        .enum Ljava/lang/annotation/ElementType;->LOCAL_VARIABLE:Ljava/lang/annotation/ElementType;,
+        .enum Ljava/lang/annotation/ElementType;->TYPE_USE:Ljava/lang/annotation/ElementType;
     }
 .end annotation
 
 
 # virtual methods
+.method public abstract exception()Ljava/lang/Class;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()",
+            "Ljava/lang/Class<",
+            "+",
+            "Ljava/lang/Exception;",
+            ">;"
+        }
+    .end annotation
+.end method
+
 .method public abstract value()Ljava/lang/String;
 .end method

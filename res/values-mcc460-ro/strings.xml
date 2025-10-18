@@ -19,5 +19,4 @@ Activaţi funcţia WLAN din SETĂRI."</string>
     <string name="camera_strings_runtime_permission_rationale_network_cta_txt">"Această aplicație utilizează WLAN și date de telefonie mobilă pentru a trimite date de utilizator (de exemplu, imagini/clipuri video înregistrate, date vocale, informații de cont ale serviciilor utilizate, etc.) pe internet.
 În funcție de operatorul dvs. de rețea, sau de contractele cu furnizorul de servicii de internet, vi se pot percepe plăți pentru date."</string>
     <string name="camera_strings_streaming_error_wifi_disconnected_txt">Nicio conexiune WLAN</string>
-    <string name="mv_wireless_network_txt">Util. WLAN şi date tel. mob.</string>
 </resources>

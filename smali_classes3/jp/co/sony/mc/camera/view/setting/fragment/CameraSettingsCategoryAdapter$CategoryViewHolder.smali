@@ -29,7 +29,7 @@
     .line 42
     invoke-direct {p0, p1}, Landroidx/recyclerview/widget/RecyclerView$ViewHolder;-><init>(Landroid/view/View;)V
 
-    const v0, 0x7f0900fc
+    const v0, 0x7f0900f8
 
     .line 43
     invoke-virtual {p1, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
@@ -40,7 +40,7 @@
 
     iput-object v0, p0, Ljp/co/sony/mc/camera/view/setting/fragment/CameraSettingsCategoryAdapter$CategoryViewHolder;->linearLayout:Landroid/widget/LinearLayout;
 
-    const v0, 0x7f0900fa
+    const v0, 0x7f0900f6
 
     .line 44
     invoke-virtual {p1, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
@@ -51,7 +51,7 @@
 
     iput-object v0, p0, Ljp/co/sony/mc/camera/view/setting/fragment/CameraSettingsCategoryAdapter$CategoryViewHolder;->textView:Landroid/widget/TextView;
 
-    const v0, 0x7f0900f9
+    const v0, 0x7f0900f5
 
     .line 45
     invoke-virtual {p1, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;

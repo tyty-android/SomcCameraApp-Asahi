@@ -60,7 +60,7 @@
 .method static constructor <clinit>()V
     .locals 3
 
-    .line 136
+    .line 137
     new-instance v0, Landroidx/compose/foundation/layout/LayoutOrientation;
 
     const-string v1, "Horizontal"
@@ -71,7 +71,7 @@
 
     sput-object v0, Landroidx/compose/foundation/layout/LayoutOrientation;->Horizontal:Landroidx/compose/foundation/layout/LayoutOrientation;
 
-    .line 137
+    .line 138
     new-instance v0, Landroidx/compose/foundation/layout/LayoutOrientation;
 
     const-string v1, "Vertical"
@@ -99,7 +99,7 @@
         }
     .end annotation
 
-    .line 135
+    .line 136
     invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
     return-void

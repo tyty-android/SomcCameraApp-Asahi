@@ -27,7 +27,7 @@
 .method constructor <init>(Lcom/google/android/material/navigation/NavigationBarItemView;F)V
     .locals 0
 
-    .line 360
+    .line 364
     iput-object p1, p0, Lcom/google/android/material/navigation/NavigationBarItemView$3;->this$0:Lcom/google/android/material/navigation/NavigationBarItemView;
 
     iput p2, p0, Lcom/google/android/material/navigation/NavigationBarItemView$3;->val$newProgress:F
@@ -42,7 +42,7 @@
 .method public onAnimationUpdate(Landroid/animation/ValueAnimator;)V
     .locals 1
 
-    .line 363
+    .line 367
     invoke-virtual {p1}, Landroid/animation/ValueAnimator;->getAnimatedValue()Ljava/lang/Object;
 
     move-result-object p1
@@ -53,7 +53,7 @@
 
     move-result p1
 
-    .line 364
+    .line 368
     iget-object v0, p0, Lcom/google/android/material/navigation/NavigationBarItemView$3;->this$0:Lcom/google/android/material/navigation/NavigationBarItemView;
 
     iget p0, p0, Lcom/google/android/material/navigation/NavigationBarItemView$3;->val$newProgress:F

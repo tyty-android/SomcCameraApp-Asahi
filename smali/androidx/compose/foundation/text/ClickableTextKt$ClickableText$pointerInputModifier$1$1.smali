@@ -53,7 +53,7 @@
     f = "ClickableText.kt"
     i = {}
     l = {
-        0xa5
+        0xa8
     }
     m = "invokeSuspend"
     n = {}
@@ -204,7 +204,7 @@
 
     move-result-object v0
 
-    .line 65535
+    .line 166
     iget v1, p0, Landroidx/compose/foundation/text/ClickableTextKt$ClickableText$pointerInputModifier$1$1;->label:I
 
     const/4 v2, 0x1
@@ -229,12 +229,12 @@
     :cond_1
     invoke-static {p1}, Lkotlin/ResultKt;->throwOnFailure(Ljava/lang/Object;)V
 
-    .line 164
+    .line 167
     new-instance p1, Lkotlin/jvm/internal/Ref$ObjectRef;
 
     invoke-direct {p1}, Lkotlin/jvm/internal/Ref$ObjectRef;-><init>()V
 
-    .line 165
+    .line 168
     iget-object v1, p0, Landroidx/compose/foundation/text/ClickableTextKt$ClickableText$pointerInputModifier$1$1;->$$this$pointerInput:Landroidx/compose/ui/input/pointer/PointerInputScope;
 
     sget-object v3, Landroidx/compose/ui/input/pointer/PointerEventPass;->Main:Landroidx/compose/ui/input/pointer/PointerEventPass;
@@ -263,7 +263,7 @@
 
     return-object v0
 
-    .line 172
+    .line 175
     :cond_2
     :goto_0
     sget-object p0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;

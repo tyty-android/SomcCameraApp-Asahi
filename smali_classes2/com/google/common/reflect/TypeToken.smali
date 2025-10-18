@@ -726,13 +726,13 @@
 
     invoke-direct {v1, p0, v0}, Lcom/google/common/reflect/TypeToken$4;-><init>(Lcom/google/common/reflect/TypeToken;Lcom/google/common/collect/ImmutableSet$Builder;)V
 
-    iget-object p0, p0, Lcom/google/common/reflect/TypeToken;->runtimeType:Ljava/lang/reflect/Type;
-
     const/4 v2, 0x1
 
     new-array v2, v2, [Ljava/lang/reflect/Type;
 
     const/4 v3, 0x0
+
+    iget-object p0, p0, Lcom/google/common/reflect/TypeToken;->runtimeType:Ljava/lang/reflect/Type;
 
     aput-object p0, v2, v3
 
@@ -2621,18 +2621,18 @@
 
     invoke-direct {v0, p0}, Lcom/google/common/reflect/TypeToken$3;-><init>(Lcom/google/common/reflect/TypeToken;)V
 
-    iget-object v1, p0, Lcom/google/common/reflect/TypeToken;->runtimeType:Ljava/lang/reflect/Type;
+    const/4 v1, 0x1
 
-    const/4 v2, 0x1
+    new-array v1, v1, [Ljava/lang/reflect/Type;
 
-    new-array v2, v2, [Ljava/lang/reflect/Type;
+    const/4 v2, 0x0
 
-    const/4 v3, 0x0
+    iget-object v3, p0, Lcom/google/common/reflect/TypeToken;->runtimeType:Ljava/lang/reflect/Type;
 
-    aput-object v1, v2, v3
+    aput-object v3, v1, v2
 
     .line 876
-    invoke-virtual {v0, v2}, Lcom/google/common/reflect/TypeToken$3;->visit([Ljava/lang/reflect/Type;)V
+    invoke-virtual {v0, v1}, Lcom/google/common/reflect/TypeToken$3;->visit([Ljava/lang/reflect/Type;)V
 
     return-object p0
 .end method

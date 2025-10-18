@@ -44,7 +44,7 @@
 
     const/4 v0, 0x0
 
-    .line 274
+    .line 276
     sget-object v1, Landroidx/compose/material/ComposableSingletons$BackdropScaffoldKt$lambda-1$1;->INSTANCE:Landroidx/compose/material/ComposableSingletons$BackdropScaffoldKt$lambda-1$1;
 
     const v2, 0xdad0f74

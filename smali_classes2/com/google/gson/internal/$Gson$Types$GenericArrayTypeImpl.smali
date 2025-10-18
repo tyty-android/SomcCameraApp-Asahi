@@ -30,13 +30,13 @@
 .method public constructor <init>(Ljava/lang/reflect/Type;)V
     .locals 0
 
-    .line 556
+    .line 593
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 557
+    .line 594
     invoke-static {p1}, Ljava/util/Objects;->requireNonNull(Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 558
+    .line 595
     invoke-static {p1}, Lcom/google/gson/internal/$Gson$Types;->canonicalize(Ljava/lang/reflect/Type;)Ljava/lang/reflect/Type;
 
     move-result-object p1
@@ -51,14 +51,13 @@
 .method public equals(Ljava/lang/Object;)Z
     .locals 1
 
-    .line 566
+    .line 605
     instance-of v0, p1, Ljava/lang/reflect/GenericArrayType;
 
     if-eqz v0, :cond_0
 
     check-cast p1, Ljava/lang/reflect/GenericArrayType;
 
-    .line 567
     invoke-static {p0, p1}, Lcom/google/gson/internal/$Gson$Types;->equals(Ljava/lang/reflect/Type;Ljava/lang/reflect/Type;)Z
 
     move-result p0
@@ -79,7 +78,7 @@
 .method public getGenericComponentType()Ljava/lang/reflect/Type;
     .locals 0
 
-    .line 562
+    .line 600
     iget-object p0, p0, Lcom/google/gson/internal/$Gson$Types$GenericArrayTypeImpl;->componentType:Ljava/lang/reflect/Type;
 
     return-object p0
@@ -88,7 +87,7 @@
 .method public hashCode()I
     .locals 0
 
-    .line 571
+    .line 610
     iget-object p0, p0, Lcom/google/gson/internal/$Gson$Types$GenericArrayTypeImpl;->componentType:Ljava/lang/reflect/Type;
 
     invoke-virtual {p0}, Ljava/lang/Object;->hashCode()I
@@ -101,7 +100,7 @@
 .method public toString()Ljava/lang/String;
     .locals 1
 
-    .line 575
+    .line 615
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V

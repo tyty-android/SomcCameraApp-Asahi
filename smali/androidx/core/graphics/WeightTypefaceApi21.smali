@@ -195,7 +195,7 @@
 .end method
 
 .method private static create(J)Landroid/graphics/Typeface;
-    .locals 3
+    .locals 2
 
     const/4 v0, 0x0
 
@@ -203,19 +203,15 @@
     :try_start_0
     sget-object v1, Landroidx/core/graphics/WeightTypefaceApi21;->sConstructor:Ljava/lang/reflect/Constructor;
 
-    const/4 v2, 0x1
-
-    new-array v2, v2, [Ljava/lang/Object;
-
     invoke-static {p0, p1}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
 
     move-result-object p0
 
-    const/4 p1, 0x0
+    filled-new-array {p0}, [Ljava/lang/Object;
 
-    aput-object p0, v2, p1
+    move-result-object p0
 
-    invoke-virtual {v1, v2}, Ljava/lang/reflect/Constructor;->newInstance([Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v1, p0}, Ljava/lang/reflect/Constructor;->newInstance([Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p0
 
@@ -396,72 +392,62 @@
 .end method
 
 .method private static nativeCreateFromTypefaceWithExactStyle(JIZ)J
-    .locals 4
-
-    const/4 v0, 0x2
-
-    const/4 v1, 0x0
+    .locals 2
 
     if-eqz p3, :cond_0
 
-    move p3, v0
+    const/4 p3, 0x2
 
     goto :goto_0
 
     :cond_0
-    move p3, v1
+    const/4 p3, 0x0
 
     .line 152
     :goto_0
     :try_start_0
-    sget-object v2, Landroidx/core/graphics/WeightTypefaceApi21;->sNativeCreateFromTypeface:Ljava/lang/reflect/Method;
-
-    new-array v3, v0, [Ljava/lang/Object;
+    sget-object v0, Landroidx/core/graphics/WeightTypefaceApi21;->sNativeCreateFromTypeface:Ljava/lang/reflect/Method;
 
     invoke-static {p0, p1}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
 
     move-result-object p0
 
-    aput-object p0, v3, v1
-
     invoke-static {p3}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object p1
+
+    filled-new-array {p0, p1}, [Ljava/lang/Object;
 
     move-result-object p0
 
-    const/4 p1, 0x1
+    const/4 p1, 0x0
 
-    aput-object p0, v3, p1
+    invoke-virtual {v0, p1, p0}, Ljava/lang/reflect/Method;->invoke(Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;
 
-    const/4 p0, 0x0
+    move-result-object p0
 
-    invoke-virtual {v2, p0, v3}, Ljava/lang/reflect/Method;->invoke(Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;
+    check-cast p0, Ljava/lang/Long;
 
-    move-result-object p3
+    invoke-virtual {p0}, Ljava/lang/Long;->longValue()J
 
-    check-cast p3, Ljava/lang/Long;
-
-    invoke-virtual {p3}, Ljava/lang/Long;->longValue()J
-
-    move-result-wide v2
+    move-result-wide v0
 
     .line 153
-    sget-object p3, Landroidx/core/graphics/WeightTypefaceApi21;->sNativeCreateWeightAlias:Ljava/lang/reflect/Method;
+    sget-object p0, Landroidx/core/graphics/WeightTypefaceApi21;->sNativeCreateWeightAlias:Ljava/lang/reflect/Method;
 
-    new-array v0, v0, [Ljava/lang/Object;
+    invoke-static {v0, v1}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
 
-    invoke-static {v2, v3}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
-
-    move-result-object v2
-
-    aput-object v2, v0, v1
+    move-result-object p3
 
     invoke-static {p2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object p2
 
-    aput-object p2, v0, p1
+    filled-new-array {p3, p2}, [Ljava/lang/Object;
 
-    invoke-virtual {p3, p0, v0}, Ljava/lang/reflect/Method;->invoke(Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;
+    move-result-object p2
+
+    invoke-virtual {p0, p1, p2}, Ljava/lang/reflect/Method;->invoke(Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p0
 
@@ -498,35 +484,27 @@
 .end method
 
 .method private static nativeCreateWeightAlias(JI)J
-    .locals 2
+    .locals 1
 
     .line 165
     :try_start_0
     sget-object v0, Landroidx/core/graphics/WeightTypefaceApi21;->sNativeCreateWeightAlias:Ljava/lang/reflect/Method;
 
-    const/4 v1, 0x2
-
-    new-array v1, v1, [Ljava/lang/Object;
-
     invoke-static {p0, p1}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
+
+    move-result-object p0
+
+    invoke-static {p2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object p1
+
+    filled-new-array {p0, p1}, [Ljava/lang/Object;
 
     move-result-object p0
 
     const/4 p1, 0x0
 
-    aput-object p0, v1, p1
-
-    invoke-static {p2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
-
-    move-result-object p0
-
-    const/4 p1, 0x1
-
-    aput-object p0, v1, p1
-
-    const/4 p0, 0x0
-
-    invoke-virtual {v0, p0, v1}, Ljava/lang/reflect/Method;->invoke(Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v0, p1, p0}, Ljava/lang/reflect/Method;->invoke(Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p0
 

@@ -42,7 +42,7 @@
 .method private constructor <init>()V
     .locals 0
 
-    .line 60
+    .line 71
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -67,7 +67,7 @@
 .method public final getEmpty()Landroidx/compose/runtime/internal/PersistentCompositionLocalHashMap;
     .locals 0
 
-    .line 62
+    .line 73
     invoke-static {}, Landroidx/compose/runtime/internal/PersistentCompositionLocalHashMap;->access$getEmpty$cp()Landroidx/compose/runtime/internal/PersistentCompositionLocalHashMap;
 
     move-result-object p0

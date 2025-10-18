@@ -1,6 +1,6 @@
 .class public final Landroidx/compose/ui/text/platform/EmojiCompatStatus;
 .super Ljava/lang/Object;
-.source "EmojiCompatStatus.kt"
+.source "EmojiCompatStatus.android.kt"
 
 # interfaces
 .implements Landroidx/compose/ui/text/platform/EmojiCompatStatusDelegate;
@@ -38,6 +38,8 @@
 
 
 # static fields
+.field public static final $stable:I
+
 .field public static final INSTANCE:Landroidx/compose/ui/text/platform/EmojiCompatStatus;
 
 .field private static delegate:Landroidx/compose/ui/text/platform/EmojiCompatStatusDelegate;
@@ -61,6 +63,10 @@
     check-cast v0, Landroidx/compose/ui/text/platform/EmojiCompatStatusDelegate;
 
     sput-object v0, Landroidx/compose/ui/text/platform/EmojiCompatStatus;->delegate:Landroidx/compose/ui/text/platform/EmojiCompatStatusDelegate;
+
+    const/16 v0, 0x8
+
+    sput v0, Landroidx/compose/ui/text/platform/EmojiCompatStatus;->$stable:I
 
     return-void
 .end method

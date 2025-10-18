@@ -31,7 +31,7 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/SourceDebugExtension;
-    value = "SMAP\nDragGestureDetector.kt\nKotlin\n*S Kotlin\n*F\n+ 1 DragGestureDetector.kt\nandroidx/compose/foundation/gestures/DragGestureDetectorKt$awaitLongPressOrCancellation$2\n+ 2 ListUtils.kt\nandroidx/compose/ui/util/ListUtilsKt\n*L\n1#1,873:1\n86#2,2:874\n33#2,6:876\n88#2:882\n101#2,2:883\n33#2,6:885\n103#2:891\n101#2,2:892\n33#2,6:894\n103#2:900\n116#2,2:901\n33#2,6:903\n118#2:909\n116#2,2:910\n33#2,6:912\n118#2:918\n*S KotlinDebug\n*F\n+ 1 DragGestureDetector.kt\nandroidx/compose/foundation/gestures/DragGestureDetectorKt$awaitLongPressOrCancellation$2\n*L\n812#1:874,2\n812#1:876,6\n812#1:882\n818#1:883,2\n818#1:885,6\n818#1:891\n829#1:892,2\n829#1:894,6\n829#1:900\n833#1:901,2\n833#1:903,6\n833#1:909\n843#1:910,2\n843#1:912,6\n843#1:918\n*E\n"
+    value = "SMAP\nDragGestureDetector.kt\nKotlin\n*S Kotlin\n*F\n+ 1 DragGestureDetector.kt\nandroidx/compose/foundation/gestures/DragGestureDetectorKt$awaitLongPressOrCancellation$2\n+ 2 ListUtils.kt\nandroidx/compose/ui/util/ListUtilsKt\n*L\n1#1,875:1\n86#2,2:876\n33#2,6:878\n88#2:884\n101#2,2:885\n33#2,6:887\n103#2:893\n101#2,2:894\n33#2,6:896\n103#2:902\n116#2,2:903\n33#2,6:905\n118#2:911\n116#2,2:912\n33#2,6:914\n118#2:920\n*S KotlinDebug\n*F\n+ 1 DragGestureDetector.kt\nandroidx/compose/foundation/gestures/DragGestureDetectorKt$awaitLongPressOrCancellation$2\n*L\n813#1:876,2\n813#1:878,6\n813#1:884\n819#1:885,2\n819#1:887,6\n819#1:893\n830#1:894,2\n830#1:896,6\n830#1:902\n834#1:903,2\n834#1:905,6\n834#1:911\n844#1:912,2\n844#1:914,6\n844#1:920\n*E\n"
 .end annotation
 
 .annotation runtime Lkotlin/Metadata;
@@ -63,8 +63,8 @@
         0x1
     }
     l = {
-        0x32b,
-        0x33c
+        0x32c,
+        0x33d
     }
     m = "invokeSuspend"
     n = {
@@ -227,7 +227,7 @@
 
     move-result-object v1
 
-    .line 808
+    .line 809
     iget v2, v0, Landroidx/compose/foundation/gestures/DragGestureDetectorKt$awaitLongPressOrCancellation$2;->label:I
 
     const/4 v3, 0x2
@@ -294,7 +294,7 @@
     :goto_0
     if-nez v2, :cond_12
 
-    .line 811
+    .line 812
     sget-object v8, Landroidx/compose/ui/input/pointer/PointerEventPass;->Main:Landroidx/compose/ui/input/pointer/PointerEventPass;
 
     move-object v9, v0
@@ -317,17 +317,17 @@
 
     return-object v1
 
-    .line 808
+    .line 809
     :cond_3
     :goto_1
     check-cast v8, Landroidx/compose/ui/input/pointer/PointerEvent;
 
-    .line 812
+    .line 813
     invoke-virtual {v8}, Landroidx/compose/ui/input/pointer/PointerEvent;->getChanges()Ljava/util/List;
 
     move-result-object v9
 
-    .line 877
+    .line 879
     invoke-interface {v9}, Ljava/util/List;->size()I
 
     move-result v10
@@ -337,15 +337,15 @@
     :goto_2
     if-ge v11, v10, :cond_5
 
-    .line 878
+    .line 880
     invoke-interface {v9, v11}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
     move-result-object v12
 
-    .line 875
+    .line 877
     check-cast v12, Landroidx/compose/ui/input/pointer/PointerInputChange;
 
-    .line 812
+    .line 813
     invoke-static {v12}, Landroidx/compose/ui/input/pointer/PointerEventKt;->changedToUpIgnoreConsumed(Landroidx/compose/ui/input/pointer/PointerInputChange;)Z
 
     move-result v12
@@ -362,13 +362,13 @@
     :cond_5
     move v2, v6
 
-    .line 818
+    .line 819
     :goto_3
     invoke-virtual {v8}, Landroidx/compose/ui/input/pointer/PointerEvent;->getChanges()Ljava/util/List;
 
     move-result-object v9
 
-    .line 886
+    .line 888
     invoke-interface {v9}, Ljava/util/List;->size()I
 
     move-result v10
@@ -378,15 +378,15 @@
     :goto_4
     if-ge v11, v10, :cond_8
 
-    .line 887
+    .line 889
     invoke-interface {v9, v11}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
     move-result-object v12
 
-    .line 884
+    .line 886
     check-cast v12, Landroidx/compose/ui/input/pointer/PointerInputChange;
 
-    .line 819
+    .line 820
     invoke-virtual {v12}, Landroidx/compose/ui/input/pointer/PointerInputChange;->isConsumed()Z
 
     move-result v13
@@ -420,7 +420,7 @@
     :goto_5
     move v2, v6
 
-    .line 828
+    .line 829
     :cond_8
     sget-object v4, Landroidx/compose/ui/input/pointer/PointerEventPass;->Final:Landroidx/compose/ui/input/pointer/PointerEventPass;
 
@@ -451,16 +451,16 @@
 
     move-object v7, v15
 
-    .line 808
+    .line 809
     :goto_6
     check-cast v4, Landroidx/compose/ui/input/pointer/PointerEvent;
 
-    .line 829
+    .line 830
     invoke-virtual {v4}, Landroidx/compose/ui/input/pointer/PointerEvent;->getChanges()Ljava/util/List;
 
     move-result-object v4
 
-    .line 895
+    .line 897
     invoke-interface {v4}, Ljava/util/List;->size()I
 
     move-result v5
@@ -470,15 +470,15 @@
     :goto_7
     if-ge v9, v5, :cond_b
 
-    .line 896
+    .line 898
     invoke-interface {v4, v9}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
     move-result-object v10
 
-    .line 893
+    .line 895
     check-cast v10, Landroidx/compose/ui/input/pointer/PointerInputChange;
 
-    .line 829
+    .line 830
     invoke-virtual {v10}, Landroidx/compose/ui/input/pointer/PointerInputChange;->isConsumed()Z
 
     move-result v10
@@ -494,7 +494,7 @@
 
     goto :goto_7
 
-    .line 832
+    .line 833
     :cond_b
     :goto_8
     iget-object v4, v0, Landroidx/compose/foundation/gestures/DragGestureDetectorKt$awaitLongPressOrCancellation$2;->$currentDown:Lkotlin/jvm/internal/Ref$ObjectRef;
@@ -513,12 +513,12 @@
 
     if-eqz v4, :cond_f
 
-    .line 833
+    .line 834
     invoke-virtual {v7}, Landroidx/compose/ui/input/pointer/PointerEvent;->getChanges()Ljava/util/List;
 
     move-result-object v4
 
-    .line 904
+    .line 906
     invoke-interface {v4}, Ljava/util/List;->size()I
 
     move-result v5
@@ -528,17 +528,17 @@
     :goto_9
     if-ge v7, v5, :cond_d
 
-    .line 905
+    .line 907
     invoke-interface {v4, v7}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
     move-result-object v9
 
-    .line 902
+    .line 904
     move-object v10, v9
 
     check-cast v10, Landroidx/compose/ui/input/pointer/PointerInputChange;
 
-    .line 833
+    .line 834
     invoke-virtual {v10}, Landroidx/compose/ui/input/pointer/PointerInputChange;->getPressed()Z
 
     move-result v10
@@ -560,12 +560,12 @@
 
     if-eqz v9, :cond_e
 
-    .line 835
+    .line 836
     iget-object v4, v0, Landroidx/compose/foundation/gestures/DragGestureDetectorKt$awaitLongPressOrCancellation$2;->$currentDown:Lkotlin/jvm/internal/Ref$ObjectRef;
 
     iput-object v9, v4, Lkotlin/jvm/internal/Ref$ObjectRef;->element:Ljava/lang/Object;
 
-    .line 836
+    .line 837
     iget-object v4, v0, Landroidx/compose/foundation/gestures/DragGestureDetectorKt$awaitLongPressOrCancellation$2;->$longPress:Lkotlin/jvm/internal/Ref$ObjectRef;
 
     iget-object v5, v0, Landroidx/compose/foundation/gestures/DragGestureDetectorKt$awaitLongPressOrCancellation$2;->$currentDown:Lkotlin/jvm/internal/Ref$ObjectRef;
@@ -585,7 +585,7 @@
 
     goto/16 :goto_0
 
-    .line 843
+    .line 844
     :cond_f
     iget-object v4, v0, Landroidx/compose/foundation/gestures/DragGestureDetectorKt$awaitLongPressOrCancellation$2;->$longPress:Lkotlin/jvm/internal/Ref$ObjectRef;
 
@@ -595,7 +595,7 @@
 
     iget-object v7, v0, Landroidx/compose/foundation/gestures/DragGestureDetectorKt$awaitLongPressOrCancellation$2;->$currentDown:Lkotlin/jvm/internal/Ref$ObjectRef;
 
-    .line 913
+    .line 915
     invoke-interface {v5}, Ljava/util/List;->size()I
 
     move-result v9
@@ -605,17 +605,17 @@
     :goto_b
     if-ge v10, v9, :cond_11
 
-    .line 914
+    .line 916
     invoke-interface {v5, v10}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
     move-result-object v11
 
-    .line 911
+    .line 913
     move-object v12, v11
 
     check-cast v12, Landroidx/compose/ui/input/pointer/PointerInputChange;
 
-    .line 843
+    .line 844
     invoke-virtual {v12}, Landroidx/compose/ui/input/pointer/PointerInputChange;->getId-J3iCeTQ()J
 
     move-result-wide v12
@@ -662,7 +662,7 @@
 
     goto/16 :goto_0
 
-    .line 846
+    .line 847
     :cond_12
     sget-object v0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
 

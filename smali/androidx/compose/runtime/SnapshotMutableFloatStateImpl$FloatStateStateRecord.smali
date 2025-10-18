@@ -49,10 +49,10 @@
 .method public constructor <init>(F)V
     .locals 0
 
-    .line 174
+    .line 175
     invoke-direct {p0}, Landroidx/compose/runtime/snapshots/StateRecord;-><init>()V
 
-    .line 173
+    .line 174
     iput p1, p0, Landroidx/compose/runtime/SnapshotMutableFloatStateImpl$FloatStateStateRecord;->value:F
 
     return-void
@@ -63,11 +63,11 @@
 .method public assign(Landroidx/compose/runtime/snapshots/StateRecord;)V
     .locals 1
 
-    const-string/jumbo v0, "value"
+    .line 177
+    const-string v0, "null cannot be cast to non-null type androidx.compose.runtime.SnapshotMutableFloatStateImpl.FloatStateStateRecord"
 
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 176
     check-cast p1, Landroidx/compose/runtime/SnapshotMutableFloatStateImpl$FloatStateStateRecord;
 
     iget p1, p1, Landroidx/compose/runtime/SnapshotMutableFloatStateImpl$FloatStateStateRecord;->value:F
@@ -80,7 +80,7 @@
 .method public create()Landroidx/compose/runtime/snapshots/StateRecord;
     .locals 1
 
-    .line 179
+    .line 180
     new-instance v0, Landroidx/compose/runtime/SnapshotMutableFloatStateImpl$FloatStateStateRecord;
 
     iget p0, p0, Landroidx/compose/runtime/SnapshotMutableFloatStateImpl$FloatStateStateRecord;->value:F
@@ -95,7 +95,7 @@
 .method public final getValue()F
     .locals 0
 
-    .line 173
+    .line 174
     iget p0, p0, Landroidx/compose/runtime/SnapshotMutableFloatStateImpl$FloatStateStateRecord;->value:F
 
     return p0
@@ -104,7 +104,7 @@
 .method public final setValue(F)V
     .locals 0
 
-    .line 173
+    .line 174
     iput p1, p0, Landroidx/compose/runtime/SnapshotMutableFloatStateImpl$FloatStateStateRecord;->value:F
 
     return-void

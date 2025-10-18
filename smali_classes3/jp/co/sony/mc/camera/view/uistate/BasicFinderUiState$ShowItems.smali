@@ -15,15 +15,20 @@
 
 .annotation runtime Lkotlin/Metadata;
     d1 = {
-        "\u00000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000b\n\u0002\u0008\u0006\n\u0002\u0010\u0000\n\u0000\n\u0002\u0010\u0008\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000e\n\u0000\u0008\u0087\u0008\u0018\u00002\u00020\u0001B\r\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u00a2\u0006\u0002\u0010\u0004J\t\u0010\u0006\u001a\u00020\u0003H\u00c6\u0003J\u0013\u0010\u0007\u001a\u00020\u00002\u0008\u0008\u0002\u0010\u0002\u001a\u00020\u0003H\u00c6\u0001J\u0013\u0010\u0008\u001a\u00020\u00032\u0008\u0010\t\u001a\u0004\u0018\u00010\nH\u00d6\u0003J\t\u0010\u000b\u001a\u00020\u000cH\u00d6\u0001J\u0010\u0010\r\u001a\u00020\u000e2\u0006\u0010\u000f\u001a\u00020\u0010H\u0016J\t\u0010\u0011\u001a\u00020\u0012H\u00d6\u0001R\u0014\u0010\u0002\u001a\u00020\u0003X\u0096\u0004\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\u0002\u0010\u0005\u00a8\u0006\u0013"
+        "\u00002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000b\n\u0002\u0008\u0004\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0004\n\u0002\u0010\u0000\n\u0000\n\u0002\u0010\u0008\n\u0000\n\u0002\u0010\u000e\n\u0000\u0008\u0087\u0008\u0018\u00002\u00020\u0001B\u000f\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u00a2\u0006\u0004\u0008\u0004\u0010\u0005J\u0010\u0010\u0007\u001a\u00020\u00082\u0006\u0010\t\u001a\u00020\nH\u0016J\t\u0010\u000b\u001a\u00020\u0003H\u00c6\u0003J\u0013\u0010\u000c\u001a\u00020\u00002\u0008\u0008\u0002\u0010\u0002\u001a\u00020\u0003H\u00c7\u0001J\u0013\u0010\r\u001a\u00020\u00032\u0008\u0010\u000e\u001a\u0004\u0018\u00010\u000fH\u00d7\u0003J\t\u0010\u0010\u001a\u00020\u0011H\u00d7\u0001J\t\u0010\u0012\u001a\u00020\u0013H\u00d7\u0001R\u0014\u0010\u0002\u001a\u00020\u0003X\u0096\u0004\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\u0002\u0010\u0006\u00a8\u0006\u0014"
     }
     d2 = {
         "Ljp/co/sony/mc/camera/view/uistate/BasicFinderUiState$ShowItems;",
         "Ljp/co/sony/mc/camera/view/uistate/BasicFinderUiState$ItemShowState;",
         "isTransparent",
         "",
+        "<init>",
         "(Z)V",
         "()Z",
+        "onEvent",
+        "Ljp/co/sony/mc/camera/view/uistate/BasicFinderUiState;",
+        "event",
+        "Ljp/co/sony/mc/camera/view/uistate/FinderEvent;",
         "component1",
         "copy",
         "equals",
@@ -31,18 +36,14 @@
         "",
         "hashCode",
         "",
-        "onEvent",
-        "Ljp/co/sony/mc/camera/view/uistate/BasicFinderUiState;",
-        "event",
-        "Ljp/co/sony/mc/camera/view/uistate/FinderEvent;",
         "toString",
         "",
         "SomcCamera_release"
     }
     k = 0x1
     mv = {
-        0x1,
-        0x9,
+        0x2,
+        0x0,
         0x0
     }
     xi = 0x30
@@ -151,11 +152,10 @@
 
     iget-boolean p0, p0, Ljp/co/sony/mc/camera/view/uistate/BasicFinderUiState$ShowItems;->isTransparent:Z
 
-    if-eqz p0, :cond_0
+    invoke-static {p0}, Ljava/lang/Boolean;->hashCode(Z)I
 
-    const/4 p0, 0x1
+    move-result p0
 
-    :cond_0
     return p0
 .end method
 
@@ -267,6 +267,7 @@
     :goto_0
     return-object p0
 
+    .line 32
     :cond_4
     new-instance p0, Lkotlin/NoWhenBranchMatchedException;
 

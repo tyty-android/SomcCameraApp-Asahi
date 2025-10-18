@@ -50,7 +50,7 @@
 .method static constructor <clinit>()V
     .locals 2
 
-    .line 51
+    .line 83
     new-instance v0, Lcom/google/gson/internal/bind/DefaultDateTypeAdapter$DateType$1;
 
     const-class v1, Ljava/util/Date;
@@ -72,10 +72,10 @@
         }
     .end annotation
 
-    .line 59
+    .line 93
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 60
+    .line 94
     iput-object p1, p0, Lcom/google/gson/internal/bind/DefaultDateTypeAdapter$DateType;->dateClass:Ljava/lang/Class;
 
     return-void
@@ -92,7 +92,7 @@
         }
     .end annotation
 
-    .line 66
+    .line 100
     iget-object p0, p0, Lcom/google/gson/internal/bind/DefaultDateTypeAdapter$DateType;->dateClass:Ljava/lang/Class;
 
     invoke-static {p0, p1}, Lcom/google/gson/internal/bind/TypeAdapters;->newFactory(Ljava/lang/Class;Lcom/google/gson/TypeAdapter;)Lcom/google/gson/TypeAdapterFactory;
@@ -104,27 +104,10 @@
 
 
 # virtual methods
-.method public final createAdapterFactory(I)Lcom/google/gson/TypeAdapterFactory;
-    .locals 2
-
-    .line 74
-    new-instance v0, Lcom/google/gson/internal/bind/DefaultDateTypeAdapter;
-
-    const/4 v1, 0x0
-
-    invoke-direct {v0, p0, p1, v1}, Lcom/google/gson/internal/bind/DefaultDateTypeAdapter;-><init>(Lcom/google/gson/internal/bind/DefaultDateTypeAdapter$DateType;ILcom/google/gson/internal/bind/DefaultDateTypeAdapter$1;)V
-
-    invoke-direct {p0, v0}, Lcom/google/gson/internal/bind/DefaultDateTypeAdapter$DateType;->createFactory(Lcom/google/gson/internal/bind/DefaultDateTypeAdapter;)Lcom/google/gson/TypeAdapterFactory;
-
-    move-result-object p0
-
-    return-object p0
-.end method
-
 .method public final createAdapterFactory(II)Lcom/google/gson/TypeAdapterFactory;
     .locals 2
 
-    .line 78
+    .line 108
     new-instance v0, Lcom/google/gson/internal/bind/DefaultDateTypeAdapter;
 
     const/4 v1, 0x0
@@ -141,31 +124,12 @@
 .method public final createAdapterFactory(Ljava/lang/String;)Lcom/google/gson/TypeAdapterFactory;
     .locals 2
 
-    .line 70
+    .line 104
     new-instance v0, Lcom/google/gson/internal/bind/DefaultDateTypeAdapter;
 
     const/4 v1, 0x0
 
     invoke-direct {v0, p0, p1, v1}, Lcom/google/gson/internal/bind/DefaultDateTypeAdapter;-><init>(Lcom/google/gson/internal/bind/DefaultDateTypeAdapter$DateType;Ljava/lang/String;Lcom/google/gson/internal/bind/DefaultDateTypeAdapter$1;)V
-
-    invoke-direct {p0, v0}, Lcom/google/gson/internal/bind/DefaultDateTypeAdapter$DateType;->createFactory(Lcom/google/gson/internal/bind/DefaultDateTypeAdapter;)Lcom/google/gson/TypeAdapterFactory;
-
-    move-result-object p0
-
-    return-object p0
-.end method
-
-.method public final createDefaultsAdapterFactory()Lcom/google/gson/TypeAdapterFactory;
-    .locals 3
-
-    .line 82
-    new-instance v0, Lcom/google/gson/internal/bind/DefaultDateTypeAdapter;
-
-    const/4 v1, 0x2
-
-    const/4 v2, 0x0
-
-    invoke-direct {v0, p0, v1, v1, v2}, Lcom/google/gson/internal/bind/DefaultDateTypeAdapter;-><init>(Lcom/google/gson/internal/bind/DefaultDateTypeAdapter$DateType;IILcom/google/gson/internal/bind/DefaultDateTypeAdapter$1;)V
 
     invoke-direct {p0, v0}, Lcom/google/gson/internal/bind/DefaultDateTypeAdapter$DateType;->createFactory(Lcom/google/gson/internal/bind/DefaultDateTypeAdapter;)Lcom/google/gson/TypeAdapterFactory;
 

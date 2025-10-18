@@ -30,9 +30,11 @@
 .end method
 
 .method public static isAvailable(Landroid/content/Context;Ljava/lang/String;)Z
-    .locals 3
+    .locals 4
 
-    const/4 v0, 0x0
+    const/4 v0, 0x1
+
+    const/4 v1, 0x0
 
     .line 50
     :try_start_0
@@ -40,31 +42,31 @@
 
     move-result-object p0
 
-    const-wide/32 v1, 0x8000000
+    const-wide/32 v2, 0x8000000
 
     .line 51
-    invoke-static {v1, v2}, Landroid/content/pm/PackageManager$PackageInfoFlags;->of(J)Landroid/content/pm/PackageManager$PackageInfoFlags;
+    invoke-static {v2, v3}, Landroid/content/pm/PackageManager$PackageInfoFlags;->of(J)Landroid/content/pm/PackageManager$PackageInfoFlags;
 
-    move-result-object v1
+    move-result-object v2
 
     .line 50
-    invoke-virtual {p0, p1, v1}, Landroid/content/pm/PackageManager;->getPackageInfo(Ljava/lang/String;Landroid/content/pm/PackageManager$PackageInfoFlags;)Landroid/content/pm/PackageInfo;
+    invoke-virtual {p0, p1, v2}, Landroid/content/pm/PackageManager;->getPackageInfo(Ljava/lang/String;Landroid/content/pm/PackageManager$PackageInfoFlags;)Landroid/content/pm/PackageInfo;
 
     move-result-object p0
 
     .line 52
-    iget-object v1, p0, Landroid/content/pm/PackageInfo;->signingInfo:Landroid/content/pm/SigningInfo;
+    iget-object v2, p0, Landroid/content/pm/PackageInfo;->signingInfo:Landroid/content/pm/SigningInfo;
 
-    if-eqz v1, :cond_1
+    if-eqz v2, :cond_1
 
     .line 53
-    iget-object v1, p0, Landroid/content/pm/PackageInfo;->signingInfo:Landroid/content/pm/SigningInfo;
+    iget-object v2, p0, Landroid/content/pm/PackageInfo;->signingInfo:Landroid/content/pm/SigningInfo;
 
-    invoke-virtual {v1}, Landroid/content/pm/SigningInfo;->hasMultipleSigners()Z
+    invoke-virtual {v2}, Landroid/content/pm/SigningInfo;->hasMultipleSigners()Z
 
-    move-result v1
+    move-result v2
 
-    if-eqz v1, :cond_0
+    if-eqz v2, :cond_0
 
     .line 54
     iget-object p0, p0, Landroid/content/pm/PackageInfo;->signingInfo:Landroid/content/pm/SigningInfo;
@@ -92,11 +94,11 @@
     if-eqz p0, :cond_2
 
     .line 61
-    array-length v1, p0
+    array-length v2, p0
 
-    if-lez v1, :cond_2
+    if-lez v2, :cond_2
 
-    aget-object p0, p0, v0
+    aget-object p0, p0, v1
 
     .line 62
     invoke-static {p0}, Ljp/co/sony/mc/camera/util/SignatureUtil;->isSecureSignature(Landroid/content/pm/Signature;)Z
@@ -107,34 +109,32 @@
 
     if-eqz p0, :cond_2
 
-    const/4 p0, 0x1
-
-    return p0
+    return v0
 
     .line 70
     :catch_0
-    new-instance p0, Ljava/lang/StringBuilder;
+    new-array p0, v0, [Ljava/lang/String;
 
-    const-string v1, "The specified package is not found. name:"
+    new-instance v0, Ljava/lang/StringBuilder;
 
-    invoke-direct {p0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+    const-string v2, "The specified package is not found. name:"
 
-    invoke-virtual {p0, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-direct {v0, v2}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
-    move-result-object p0
+    invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {p0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    move-result-object p1
 
-    move-result-object p0
+    invoke-virtual {p1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    filled-new-array {p0}, [Ljava/lang/String;
+    move-result-object p1
 
-    move-result-object p0
+    aput-object p1, p0, v1
 
     invoke-static {p0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
     :cond_2
-    return v0
+    return v1
 .end method
 
 .method private static isSecureSignature(Landroid/content/pm/Signature;)Z

@@ -44,6 +44,10 @@
 .end annotation
 
 
+# static fields
+.field public static final $stable:I = 0x8
+
+
 # instance fields
 .field private isFocused:Z
 
@@ -51,10 +55,16 @@
 
 
 # direct methods
+.method static constructor <clinit>()V
+    .locals 0
+
+    return-void
+.end method
+
 .method public constructor <init>()V
     .locals 0
 
-    .line 94
+    .line 95
     invoke-direct {p0}, Landroidx/compose/ui/Modifier$Node;-><init>()V
 
     return-void
@@ -72,14 +82,14 @@
         }
     .end annotation
 
-    .line 99
+    .line 100
     invoke-virtual {p0}, Landroidx/compose/foundation/FocusedBoundsNode;->isAttached()Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
-    .line 100
+    .line 101
     invoke-static {}, Landroidx/compose/foundation/FocusedBoundsKt;->getModifierLocalFocusedBoundsObserver()Landroidx/compose/ui/modifier/ProvidableModifierLocal;
 
     move-result-object v0
@@ -104,7 +114,7 @@
 .method private final notifyObserverWhenAttached()V
     .locals 1
 
-    .line 133
+    .line 134
     iget-object v0, p0, Landroidx/compose/foundation/FocusedBoundsNode;->layoutCoordinates:Landroidx/compose/ui/layout/LayoutCoordinates;
 
     if-eqz v0, :cond_0
@@ -117,7 +127,7 @@
 
     if-eqz v0, :cond_0
 
-    .line 134
+    .line 135
     invoke-direct {p0}, Landroidx/compose/foundation/FocusedBoundsNode;->getObserver()Lkotlin/jvm/functions/Function1;
 
     move-result-object v0
@@ -137,21 +147,17 @@
 .method public onGloballyPositioned(Landroidx/compose/ui/layout/LayoutCoordinates;)V
     .locals 1
 
-    const-string v0, "coordinates"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 123
+    .line 124
     iput-object p1, p0, Landroidx/compose/foundation/FocusedBoundsNode;->layoutCoordinates:Landroidx/compose/ui/layout/LayoutCoordinates;
 
-    .line 124
+    .line 125
     iget-boolean v0, p0, Landroidx/compose/foundation/FocusedBoundsNode;->isFocused:Z
 
     if-nez v0, :cond_0
 
     return-void
 
-    .line 125
+    .line 126
     :cond_0
     invoke-interface {p1}, Landroidx/compose/ui/layout/LayoutCoordinates;->isAttached()Z
 
@@ -159,12 +165,12 @@
 
     if-eqz p1, :cond_1
 
-    .line 126
+    .line 127
     invoke-direct {p0}, Landroidx/compose/foundation/FocusedBoundsNode;->notifyObserverWhenAttached()V
 
     goto :goto_0
 
-    .line 128
+    .line 129
     :cond_1
     invoke-direct {p0}, Landroidx/compose/foundation/FocusedBoundsNode;->getObserver()Lkotlin/jvm/functions/Function1;
 
@@ -184,7 +190,7 @@
 .method public final setFocus(Z)V
     .locals 2
 
-    .line 113
+    .line 114
     iget-boolean v0, p0, Landroidx/compose/foundation/FocusedBoundsNode;->isFocused:Z
 
     if-ne p1, v0, :cond_0
@@ -194,7 +200,7 @@
     :cond_0
     if-nez p1, :cond_1
 
-    .line 115
+    .line 116
     invoke-direct {p0}, Landroidx/compose/foundation/FocusedBoundsNode;->getObserver()Lkotlin/jvm/functions/Function1;
 
     move-result-object v0
@@ -207,11 +213,11 @@
 
     goto :goto_0
 
-    .line 117
+    .line 118
     :cond_1
     invoke-direct {p0}, Landroidx/compose/foundation/FocusedBoundsNode;->notifyObserverWhenAttached()V
 
-    .line 119
+    .line 120
     :cond_2
     :goto_0
     iput-boolean p1, p0, Landroidx/compose/foundation/FocusedBoundsNode;->isFocused:Z

@@ -89,7 +89,7 @@
 
     iput-object p2, p0, Landroidx/compose/runtime/snapshots/SubList$listIterator$1;->this$0:Landroidx/compose/runtime/snapshots/SubList;
 
-    .line 380
+    .line 405
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -106,7 +106,7 @@
         }
     .end annotation
 
-    .line 390
+    .line 415
     invoke-static {}, Landroidx/compose/runtime/snapshots/SnapshotStateListKt;->access$modificationError()Ljava/lang/Void;
 
     new-instance p0, Lkotlin/KotlinNothingValueException;
@@ -119,7 +119,7 @@
 .method public bridge synthetic add(Ljava/lang/Object;)V
     .locals 0
 
-    .line 380
+    .line 405
     invoke-virtual {p0, p1}, Landroidx/compose/runtime/snapshots/SubList$listIterator$1;->add(Ljava/lang/Object;)Ljava/lang/Void;
 
     return-void
@@ -128,7 +128,7 @@
 .method public hasNext()Z
     .locals 2
 
-    .line 391
+    .line 416
     iget-object v0, p0, Landroidx/compose/runtime/snapshots/SubList$listIterator$1;->$current:Lkotlin/jvm/internal/Ref$IntRef;
 
     iget v0, v0, Lkotlin/jvm/internal/Ref$IntRef;->element:I
@@ -157,7 +157,7 @@
 .method public hasPrevious()Z
     .locals 0
 
-    .line 381
+    .line 406
     iget-object p0, p0, Landroidx/compose/runtime/snapshots/SubList$listIterator$1;->$current:Lkotlin/jvm/internal/Ref$IntRef;
 
     iget p0, p0, Lkotlin/jvm/internal/Ref$IntRef;->element:I
@@ -183,14 +183,14 @@
         }
     .end annotation
 
-    .line 393
+    .line 418
     iget-object v0, p0, Landroidx/compose/runtime/snapshots/SubList$listIterator$1;->$current:Lkotlin/jvm/internal/Ref$IntRef;
 
     iget v0, v0, Lkotlin/jvm/internal/Ref$IntRef;->element:I
 
     add-int/lit8 v0, v0, 0x1
 
-    .line 394
+    .line 419
     iget-object v1, p0, Landroidx/compose/runtime/snapshots/SubList$listIterator$1;->this$0:Landroidx/compose/runtime/snapshots/SubList;
 
     invoke-virtual {v1}, Landroidx/compose/runtime/snapshots/SubList;->size()I
@@ -199,12 +199,12 @@
 
     invoke-static {v0, v1}, Landroidx/compose/runtime/snapshots/SnapshotStateListKt;->access$validateRange(II)V
 
-    .line 395
+    .line 420
     iget-object v1, p0, Landroidx/compose/runtime/snapshots/SubList$listIterator$1;->$current:Lkotlin/jvm/internal/Ref$IntRef;
 
     iput v0, v1, Lkotlin/jvm/internal/Ref$IntRef;->element:I
 
-    .line 396
+    .line 421
     iget-object p0, p0, Landroidx/compose/runtime/snapshots/SubList$listIterator$1;->this$0:Landroidx/compose/runtime/snapshots/SubList;
 
     invoke-virtual {p0, v0}, Landroidx/compose/runtime/snapshots/SubList;->get(I)Ljava/lang/Object;
@@ -217,7 +217,7 @@
 .method public nextIndex()I
     .locals 0
 
-    .line 382
+    .line 407
     iget-object p0, p0, Landroidx/compose/runtime/snapshots/SubList$listIterator$1;->$current:Lkotlin/jvm/internal/Ref$IntRef;
 
     iget p0, p0, Lkotlin/jvm/internal/Ref$IntRef;->element:I
@@ -235,12 +235,12 @@
         }
     .end annotation
 
-    .line 384
+    .line 409
     iget-object v0, p0, Landroidx/compose/runtime/snapshots/SubList$listIterator$1;->$current:Lkotlin/jvm/internal/Ref$IntRef;
 
     iget v0, v0, Lkotlin/jvm/internal/Ref$IntRef;->element:I
 
-    .line 385
+    .line 410
     iget-object v1, p0, Landroidx/compose/runtime/snapshots/SubList$listIterator$1;->this$0:Landroidx/compose/runtime/snapshots/SubList;
 
     invoke-virtual {v1}, Landroidx/compose/runtime/snapshots/SubList;->size()I
@@ -249,14 +249,14 @@
 
     invoke-static {v0, v1}, Landroidx/compose/runtime/snapshots/SnapshotStateListKt;->access$validateRange(II)V
 
-    .line 386
+    .line 411
     iget-object v1, p0, Landroidx/compose/runtime/snapshots/SubList$listIterator$1;->$current:Lkotlin/jvm/internal/Ref$IntRef;
 
     add-int/lit8 v2, v0, -0x1
 
     iput v2, v1, Lkotlin/jvm/internal/Ref$IntRef;->element:I
 
-    .line 387
+    .line 412
     iget-object p0, p0, Landroidx/compose/runtime/snapshots/SubList$listIterator$1;->this$0:Landroidx/compose/runtime/snapshots/SubList;
 
     invoke-virtual {p0, v0}, Landroidx/compose/runtime/snapshots/SubList;->get(I)Ljava/lang/Object;
@@ -269,7 +269,7 @@
 .method public previousIndex()I
     .locals 0
 
-    .line 389
+    .line 414
     iget-object p0, p0, Landroidx/compose/runtime/snapshots/SubList$listIterator$1;->$current:Lkotlin/jvm/internal/Ref$IntRef;
 
     iget p0, p0, Lkotlin/jvm/internal/Ref$IntRef;->element:I
@@ -280,7 +280,7 @@
 .method public remove()Ljava/lang/Void;
     .locals 0
 
-    .line 398
+    .line 423
     invoke-static {}, Landroidx/compose/runtime/snapshots/SnapshotStateListKt;->access$modificationError()Ljava/lang/Void;
 
     new-instance p0, Lkotlin/KotlinNothingValueException;
@@ -293,7 +293,7 @@
 .method public bridge synthetic remove()V
     .locals 0
 
-    .line 380
+    .line 405
     invoke-virtual {p0}, Landroidx/compose/runtime/snapshots/SubList$listIterator$1;->remove()Ljava/lang/Void;
 
     return-void
@@ -308,7 +308,7 @@
         }
     .end annotation
 
-    .line 399
+    .line 424
     invoke-static {}, Landroidx/compose/runtime/snapshots/SnapshotStateListKt;->access$modificationError()Ljava/lang/Void;
 
     new-instance p0, Lkotlin/KotlinNothingValueException;
@@ -321,7 +321,7 @@
 .method public bridge synthetic set(Ljava/lang/Object;)V
     .locals 0
 
-    .line 380
+    .line 405
     invoke-virtual {p0, p1}, Landroidx/compose/runtime/snapshots/SubList$listIterator$1;->set(Ljava/lang/Object;)Ljava/lang/Void;
 
     return-void

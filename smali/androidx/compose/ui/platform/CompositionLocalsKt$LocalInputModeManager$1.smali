@@ -76,7 +76,7 @@
 .method public final invoke()Landroidx/compose/ui/input/InputModeManager;
     .locals 0
 
-    .line 125
+    .line 124
     const-string p0, "LocalInputManager"
 
     invoke-static {p0}, Landroidx/compose/ui/platform/CompositionLocalsKt;->access$noLocalProvidedFor(Ljava/lang/String;)Ljava/lang/Void;
@@ -91,7 +91,7 @@
 .method public bridge synthetic invoke()Ljava/lang/Object;
     .locals 0
 
-    .line 124
+    .line 123
     invoke-virtual {p0}, Landroidx/compose/ui/platform/CompositionLocalsKt$LocalInputModeManager$1;->invoke()Landroidx/compose/ui/input/InputModeManager;
 
     move-result-object p0

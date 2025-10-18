@@ -71,14 +71,14 @@
 .method public final invoke()Ljava/lang/Boolean;
     .locals 7
 
-    .line 591
+    .line 588
     iget-object v0, p0, Landroidx/compose/material/DrawerKt$ModalDrawer$1$2$6$1;->$drawerState:Landroidx/compose/material/DrawerState;
 
     invoke-virtual {v0}, Landroidx/compose/material/DrawerState;->getAnchoredDraggableState$material_release()Landroidx/compose/material/AnchoredDraggableState;
 
     move-result-object v0
 
-    .line 592
+    .line 589
     invoke-virtual {v0}, Landroidx/compose/material/AnchoredDraggableState;->getConfirmValueChange$material_release()Lkotlin/jvm/functions/Function1;
 
     move-result-object v0
@@ -97,7 +97,7 @@
 
     if-eqz v0, :cond_0
 
-    .line 594
+    .line 591
     iget-object v1, p0, Landroidx/compose/material/DrawerKt$ModalDrawer$1$2$6$1;->$scope:Lkotlinx/coroutines/CoroutineScope;
 
     new-instance v0, Landroidx/compose/material/DrawerKt$ModalDrawer$1$2$6$1$1;
@@ -123,7 +123,7 @@
     :cond_0
     const/4 p0, 0x1
 
-    .line 595
+    .line 592
     invoke-static {p0}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
     move-result-object p0
@@ -134,7 +134,7 @@
 .method public bridge synthetic invoke()Ljava/lang/Object;
     .locals 0
 
-    .line 589
+    .line 586
     invoke-virtual {p0}, Landroidx/compose/material/DrawerKt$ModalDrawer$1$2$6$1;->invoke()Ljava/lang/Boolean;
 
     move-result-object p0

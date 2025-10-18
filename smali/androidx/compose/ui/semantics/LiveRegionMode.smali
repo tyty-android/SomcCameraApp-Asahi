@@ -12,7 +12,7 @@
 
 .annotation runtime Lkotlin/Metadata;
     d1 = {
-        "\u0000\"\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0010\u0008\n\u0002\u0008\u0003\n\u0002\u0010\u000b\n\u0002\u0008\u0006\n\u0002\u0010\u000e\n\u0002\u0008\u0004\u0008\u0087@\u0018\u0000 \u00112\u00020\u0001:\u0001\u0011B\u0014\u0008\u0002\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u00f8\u0001\u0000\u00a2\u0006\u0004\u0008\u0004\u0010\u0005J\u001a\u0010\u0006\u001a\u00020\u00072\u0008\u0010\u0008\u001a\u0004\u0018\u00010\u0001H\u00d6\u0003\u00a2\u0006\u0004\u0008\t\u0010\nJ\u0010\u0010\u000b\u001a\u00020\u0003H\u00d6\u0001\u00a2\u0006\u0004\u0008\u000c\u0010\u0005J\u000f\u0010\r\u001a\u00020\u000eH\u0016\u00a2\u0006\u0004\u0008\u000f\u0010\u0010R\u000e\u0010\u0002\u001a\u00020\u0003X\u0082\u0004\u00a2\u0006\u0002\n\u0000\u0088\u0001\u0002\u0092\u0001\u00020\u0003\u00f8\u0001\u0000\u0082\u0002\u0004\n\u0002\u0008\u0019\u00a8\u0006\u0012"
+        "\u0000\"\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0010\u0008\n\u0002\u0008\u0003\n\u0002\u0010\u000b\n\u0002\u0008\u0006\n\u0002\u0010\u000e\n\u0002\u0008\u0004\u0008\u0087@\u0018\u0000 \u00112\u00020\u0001:\u0001\u0011B\u0011\u0008\u0002\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u00a2\u0006\u0004\u0008\u0004\u0010\u0005J\u001a\u0010\u0006\u001a\u00020\u00072\u0008\u0010\u0008\u001a\u0004\u0018\u00010\u0001H\u00d6\u0003\u00a2\u0006\u0004\u0008\t\u0010\nJ\u0010\u0010\u000b\u001a\u00020\u0003H\u00d6\u0001\u00a2\u0006\u0004\u0008\u000c\u0010\u0005J\u000f\u0010\r\u001a\u00020\u000eH\u0016\u00a2\u0006\u0004\u0008\u000f\u0010\u0010R\u000e\u0010\u0002\u001a\u00020\u0003X\u0082\u0004\u00a2\u0006\u0002\n\u0000\u0088\u0001\u0002\u0092\u0001\u00020\u0003\u00a8\u0006\u0012"
     }
     d2 = {
         "Landroidx/compose/ui/semantics/LiveRegionMode;",
@@ -74,7 +74,7 @@
 
     const/4 v0, 0x0
 
-    .line 691
+    .line 780
     invoke-static {v0}, Landroidx/compose/ui/semantics/LiveRegionMode;->constructor-impl(I)I
 
     move-result v0
@@ -83,7 +83,7 @@
 
     const/4 v0, 0x1
 
-    .line 697
+    .line 786
     invoke-static {v0}, Landroidx/compose/ui/semantics/LiveRegionMode;->constructor-impl(I)I
 
     move-result v0
@@ -96,7 +96,7 @@
 .method private synthetic constructor <init>(I)V
     .locals 0
 
-    .line 685
+    .line 774
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     iput p1, p0, Landroidx/compose/ui/semantics/LiveRegionMode;->value:I
@@ -107,7 +107,7 @@
 .method public static final synthetic access$getAssertive$cp()I
     .locals 1
 
-    .line 683
+    .line 772
     sget v0, Landroidx/compose/ui/semantics/LiveRegionMode;->Assertive:I
 
     return v0
@@ -116,7 +116,7 @@
 .method public static final synthetic access$getPolite$cp()I
     .locals 1
 
-    .line 683
+    .line 772
     sget v0, Landroidx/compose/ui/semantics/LiveRegionMode;->Polite:I
 
     return v0
@@ -195,7 +195,7 @@
 .method public static toString-impl(I)Ljava/lang/String;
     .locals 1
 
-    .line 701
+    .line 790
     sget v0, Landroidx/compose/ui/semantics/LiveRegionMode;->Polite:I
 
     invoke-static {p0, v0}, Landroidx/compose/ui/semantics/LiveRegionMode;->equals-impl0(II)Z
@@ -208,7 +208,7 @@
 
     goto :goto_0
 
-    .line 702
+    .line 791
     :cond_0
     sget v0, Landroidx/compose/ui/semantics/LiveRegionMode;->Assertive:I
 
@@ -222,7 +222,7 @@
 
     goto :goto_0
 
-    .line 703
+    .line 792
     :cond_1
     const-string p0, "Unknown"
 
@@ -259,7 +259,7 @@
 .method public toString()Ljava/lang/String;
     .locals 0
 
-    .line 700
+    .line 789
     iget p0, p0, Landroidx/compose/ui/semantics/LiveRegionMode;->value:I
 
     invoke-static {p0}, Landroidx/compose/ui/semantics/LiveRegionMode;->toString-impl(I)Ljava/lang/String;

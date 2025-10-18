@@ -44,18 +44,18 @@
 
 
 # direct methods
-.method public static synthetic $r8$lambda$nJJg34XLVi2Mw3BPHv7OYo0T1K4(Ljava/lang/Runnable;J)V
+.method public static synthetic $r8$lambda$nEtFUEU03rhWZ7PGABg9OjqaO2E(Ljava/lang/Runnable;J)V
     .locals 0
 
-    invoke-static {p0, p1, p2}, Landroidx/compose/ui/text/input/TextInputServiceAndroid_androidKt;->asExecutor$lambda$1$lambda$0(Ljava/lang/Runnable;J)V
+    invoke-static {p0, p1, p2}, Landroidx/compose/ui/text/input/TextInputServiceAndroid_androidKt;->asExecutor$lambda$2$lambda$1(Ljava/lang/Runnable;J)V
 
     return-void
 .end method
 
-.method public static synthetic $r8$lambda$xK-UBOJVaIuJ-tmtdd6FklWwdSc(Landroid/view/Choreographer;Ljava/lang/Runnable;)V
+.method public static synthetic $r8$lambda$qQ8zHHsFvyXcidaMIrvwPglQwQQ(Landroid/view/Choreographer;Ljava/lang/Runnable;)V
     .locals 0
 
-    invoke-static {p0, p1}, Landroidx/compose/ui/text/input/TextInputServiceAndroid_androidKt;->asExecutor$lambda$1(Landroid/view/Choreographer;Ljava/lang/Runnable;)V
+    invoke-static {p0, p1}, Landroidx/compose/ui/text/input/TextInputServiceAndroid_androidKt;->asExecutor$lambda$2(Landroid/view/Choreographer;Ljava/lang/Runnable;)V
 
     return-void
 .end method
@@ -72,11 +72,7 @@
 .method public static final asExecutor(Landroid/view/Choreographer;)Ljava/util/concurrent/Executor;
     .locals 1
 
-    const-string v0, "<this>"
-
-    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 510
+    .line 565
     new-instance v0, Landroidx/compose/ui/text/input/TextInputServiceAndroid_androidKt$$ExternalSyntheticLambda1;
 
     invoke-direct {v0, p0}, Landroidx/compose/ui/text/input/TextInputServiceAndroid_androidKt$$ExternalSyntheticLambda1;-><init>(Landroid/view/Choreographer;)V
@@ -84,14 +80,10 @@
     return-object v0
 .end method
 
-.method private static final asExecutor$lambda$1(Landroid/view/Choreographer;Ljava/lang/Runnable;)V
+.method private static final asExecutor$lambda$2(Landroid/view/Choreographer;Ljava/lang/Runnable;)V
     .locals 1
 
-    const-string v0, "$this_asExecutor"
-
-    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 511
+    .line 566
     new-instance v0, Landroidx/compose/ui/text/input/TextInputServiceAndroid_androidKt$$ExternalSyntheticLambda0;
 
     invoke-direct {v0, p1}, Landroidx/compose/ui/text/input/TextInputServiceAndroid_androidKt$$ExternalSyntheticLambda0;-><init>(Ljava/lang/Runnable;)V
@@ -101,10 +93,10 @@
     return-void
 .end method
 
-.method private static final asExecutor$lambda$1$lambda$0(Ljava/lang/Runnable;J)V
+.method private static final asExecutor$lambda$2$lambda$1(Ljava/lang/Runnable;J)V
     .locals 0
 
-    .line 511
+    .line 566
     invoke-interface {p0}, Ljava/lang/Runnable;->run()V
 
     return-void
@@ -131,24 +123,12 @@
 .method public static final update(Landroid/view/inputmethod/EditorInfo;Landroidx/compose/ui/text/input/ImeOptions;Landroidx/compose/ui/text/input/TextFieldValue;)V
     .locals 6
 
-    const-string v0, "<this>"
-
-    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string v0, "imeOptions"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string/jumbo v0, "textFieldValue"
-
-    invoke-static {p2, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 422
+    .line 474
     invoke-virtual {p1}, Landroidx/compose/ui/text/input/ImeOptions;->getImeAction-eUduSuo()I
 
     move-result v0
 
-    .line 423
+    .line 475
     sget-object v1, Landroidx/compose/ui/text/input/ImeAction;->Companion:Landroidx/compose/ui/text/input/ImeAction$Companion;
 
     invoke-virtual {v1}, Landroidx/compose/ui/text/input/ImeAction$Companion;->getDefault-eUduSuo()I
@@ -169,7 +149,7 @@
 
     if-eqz v1, :cond_1
 
-    .line 424
+    .line 476
     invoke-virtual {p1}, Landroidx/compose/ui/text/input/ImeOptions;->getSingleLine()Z
 
     move-result v0
@@ -183,7 +163,7 @@
 
     goto :goto_0
 
-    .line 433
+    .line 485
     :cond_1
     sget-object v1, Landroidx/compose/ui/text/input/ImeAction;->Companion:Landroidx/compose/ui/text/input/ImeAction$Companion;
 
@@ -201,7 +181,7 @@
 
     goto :goto_0
 
-    .line 434
+    .line 486
     :cond_2
     sget-object v1, Landroidx/compose/ui/text/input/ImeAction;->Companion:Landroidx/compose/ui/text/input/ImeAction$Companion;
 
@@ -219,7 +199,7 @@
 
     goto :goto_0
 
-    .line 435
+    .line 487
     :cond_3
     sget-object v1, Landroidx/compose/ui/text/input/ImeAction;->Companion:Landroidx/compose/ui/text/input/ImeAction$Companion;
 
@@ -237,7 +217,7 @@
 
     goto :goto_0
 
-    .line 436
+    .line 488
     :cond_4
     sget-object v1, Landroidx/compose/ui/text/input/ImeAction;->Companion:Landroidx/compose/ui/text/input/ImeAction$Companion;
 
@@ -255,7 +235,7 @@
 
     goto :goto_0
 
-    .line 437
+    .line 489
     :cond_5
     sget-object v1, Landroidx/compose/ui/text/input/ImeAction;->Companion:Landroidx/compose/ui/text/input/ImeAction$Companion;
 
@@ -273,7 +253,7 @@
 
     goto :goto_0
 
-    .line 438
+    .line 490
     :cond_6
     sget-object v1, Landroidx/compose/ui/text/input/ImeAction;->Companion:Landroidx/compose/ui/text/input/ImeAction$Companion;
 
@@ -291,7 +271,7 @@
 
     goto :goto_0
 
-    .line 439
+    .line 491
     :cond_7
     sget-object v1, Landroidx/compose/ui/text/input/ImeAction;->Companion:Landroidx/compose/ui/text/input/ImeAction$Companion;
 
@@ -303,18 +283,35 @@
 
     move-result v0
 
-    if-eqz v0, :cond_16
+    if-eqz v0, :cond_17
 
-    .line 422
+    .line 474
     :goto_0
     iput v4, p0, Landroid/view/inputmethod/EditorInfo;->imeOptions:I
 
-    .line 442
+    .line 494
+    invoke-virtual {p1}, Landroidx/compose/ui/text/input/ImeOptions;->getPlatformImeOptions()Landroidx/compose/ui/text/input/PlatformImeOptions;
+
+    move-result-object v0
+
+    if-eqz v0, :cond_8
+
+    invoke-virtual {v0}, Landroidx/compose/ui/text/input/PlatformImeOptions;->getPrivateImeOptions()Ljava/lang/String;
+
+    move-result-object v0
+
+    if-eqz v0, :cond_8
+
+    .line 495
+    iput-object v0, p0, Landroid/view/inputmethod/EditorInfo;->privateImeOptions:Ljava/lang/String;
+
+    .line 497
+    :cond_8
     invoke-virtual {p1}, Landroidx/compose/ui/text/input/ImeOptions;->getKeyboardType-PjHm6EE()I
 
     move-result v0
 
-    .line 443
+    .line 498
     sget-object v1, Landroidx/compose/ui/text/input/KeyboardType;->Companion:Landroidx/compose/ui/text/input/KeyboardType$Companion;
 
     invoke-virtual {v1}, Landroidx/compose/ui/text/input/KeyboardType$Companion;->getText-PjHm6EE()I
@@ -325,14 +322,14 @@
 
     move-result v1
 
-    if-eqz v1, :cond_8
+    if-eqz v1, :cond_9
 
     iput v5, p0, Landroid/view/inputmethod/EditorInfo;->inputType:I
 
     goto/16 :goto_1
 
-    .line 444
-    :cond_8
+    .line 499
+    :cond_9
     sget-object v1, Landroidx/compose/ui/text/input/KeyboardType;->Companion:Landroidx/compose/ui/text/input/KeyboardType$Companion;
 
     invoke-virtual {v1}, Landroidx/compose/ui/text/input/KeyboardType$Companion;->getAscii-PjHm6EE()I
@@ -343,12 +340,12 @@
 
     move-result v1
 
-    if-eqz v1, :cond_9
+    if-eqz v1, :cond_a
 
-    .line 445
+    .line 500
     iput v5, p0, Landroid/view/inputmethod/EditorInfo;->inputType:I
 
-    .line 446
+    .line 501
     iget v0, p0, Landroid/view/inputmethod/EditorInfo;->imeOptions:I
 
     const/high16 v1, -0x80000000
@@ -359,8 +356,8 @@
 
     goto/16 :goto_1
 
-    .line 448
-    :cond_9
+    .line 503
+    :cond_a
     sget-object v1, Landroidx/compose/ui/text/input/KeyboardType;->Companion:Landroidx/compose/ui/text/input/KeyboardType$Companion;
 
     invoke-virtual {v1}, Landroidx/compose/ui/text/input/KeyboardType$Companion;->getNumber-PjHm6EE()I
@@ -371,14 +368,14 @@
 
     move-result v1
 
-    if-eqz v1, :cond_a
+    if-eqz v1, :cond_b
 
     iput v3, p0, Landroid/view/inputmethod/EditorInfo;->inputType:I
 
     goto :goto_1
 
-    .line 449
-    :cond_a
+    .line 504
+    :cond_b
     sget-object v1, Landroidx/compose/ui/text/input/KeyboardType;->Companion:Landroidx/compose/ui/text/input/KeyboardType$Companion;
 
     invoke-virtual {v1}, Landroidx/compose/ui/text/input/KeyboardType$Companion;->getPhone-PjHm6EE()I
@@ -389,14 +386,14 @@
 
     move-result v1
 
-    if-eqz v1, :cond_b
+    if-eqz v1, :cond_c
 
     iput v2, p0, Landroid/view/inputmethod/EditorInfo;->inputType:I
 
     goto :goto_1
 
-    .line 450
-    :cond_b
+    .line 505
+    :cond_c
     sget-object v1, Landroidx/compose/ui/text/input/KeyboardType;->Companion:Landroidx/compose/ui/text/input/KeyboardType$Companion;
 
     invoke-virtual {v1}, Landroidx/compose/ui/text/input/KeyboardType$Companion;->getUri-PjHm6EE()I
@@ -407,17 +404,17 @@
 
     move-result v1
 
-    if-eqz v1, :cond_c
+    if-eqz v1, :cond_d
 
     const/16 v0, 0x11
 
-    .line 451
+    .line 506
     iput v0, p0, Landroid/view/inputmethod/EditorInfo;->inputType:I
 
     goto :goto_1
 
-    .line 452
-    :cond_c
+    .line 507
+    :cond_d
     sget-object v1, Landroidx/compose/ui/text/input/KeyboardType;->Companion:Landroidx/compose/ui/text/input/KeyboardType$Companion;
 
     invoke-virtual {v1}, Landroidx/compose/ui/text/input/KeyboardType$Companion;->getEmail-PjHm6EE()I
@@ -428,17 +425,17 @@
 
     move-result v1
 
-    if-eqz v1, :cond_d
+    if-eqz v1, :cond_e
 
     const/16 v0, 0x21
 
-    .line 453
+    .line 508
     iput v0, p0, Landroid/view/inputmethod/EditorInfo;->inputType:I
 
     goto :goto_1
 
-    .line 455
-    :cond_d
+    .line 510
+    :cond_e
     sget-object v1, Landroidx/compose/ui/text/input/KeyboardType;->Companion:Landroidx/compose/ui/text/input/KeyboardType$Companion;
 
     invoke-virtual {v1}, Landroidx/compose/ui/text/input/KeyboardType$Companion;->getPassword-PjHm6EE()I
@@ -449,17 +446,17 @@
 
     move-result v1
 
-    if-eqz v1, :cond_e
+    if-eqz v1, :cond_f
 
     const/16 v0, 0x81
 
-    .line 456
+    .line 511
     iput v0, p0, Landroid/view/inputmethod/EditorInfo;->inputType:I
 
     goto :goto_1
 
-    .line 459
-    :cond_e
+    .line 514
+    :cond_f
     sget-object v1, Landroidx/compose/ui/text/input/KeyboardType;->Companion:Landroidx/compose/ui/text/input/KeyboardType$Companion;
 
     invoke-virtual {v1}, Landroidx/compose/ui/text/input/KeyboardType$Companion;->getNumberPassword-PjHm6EE()I
@@ -470,17 +467,17 @@
 
     move-result v1
 
-    if-eqz v1, :cond_f
+    if-eqz v1, :cond_10
 
     const/16 v0, 0x12
 
-    .line 460
+    .line 515
     iput v0, p0, Landroid/view/inputmethod/EditorInfo;->inputType:I
 
     goto :goto_1
 
-    .line 463
-    :cond_f
+    .line 518
+    :cond_10
     sget-object v1, Landroidx/compose/ui/text/input/KeyboardType;->Companion:Landroidx/compose/ui/text/input/KeyboardType$Companion;
 
     invoke-virtual {v1}, Landroidx/compose/ui/text/input/KeyboardType$Companion;->getDecimal-PjHm6EE()I
@@ -491,31 +488,31 @@
 
     move-result v0
 
-    if-eqz v0, :cond_15
+    if-eqz v0, :cond_16
 
     const/16 v0, 0x2002
 
-    .line 464
+    .line 519
     iput v0, p0, Landroid/view/inputmethod/EditorInfo;->inputType:I
 
-    .line 470
+    .line 525
     :goto_1
     invoke-virtual {p1}, Landroidx/compose/ui/text/input/ImeOptions;->getSingleLine()Z
 
     move-result v0
 
-    if-nez v0, :cond_10
+    if-nez v0, :cond_11
 
-    .line 471
+    .line 526
     iget v0, p0, Landroid/view/inputmethod/EditorInfo;->inputType:I
 
     invoke-static {v0, v5}, Landroidx/compose/ui/text/input/TextInputServiceAndroid_androidKt;->hasFlag(II)Z
 
     move-result v0
 
-    if-eqz v0, :cond_10
+    if-eqz v0, :cond_11
 
-    .line 473
+    .line 528
     iget v0, p0, Landroid/view/inputmethod/EditorInfo;->inputType:I
 
     const/high16 v1, 0x20000
@@ -524,7 +521,7 @@
 
     iput v0, p0, Landroid/view/inputmethod/EditorInfo;->inputType:I
 
-    .line 475
+    .line 530
     invoke-virtual {p1}, Landroidx/compose/ui/text/input/ImeOptions;->getImeAction-eUduSuo()I
 
     move-result v0
@@ -539,9 +536,9 @@
 
     move-result v0
 
-    if-eqz v0, :cond_10
+    if-eqz v0, :cond_11
 
-    .line 476
+    .line 531
     iget v0, p0, Landroid/view/inputmethod/EditorInfo;->imeOptions:I
 
     const/high16 v1, 0x40000000    # 2.0f
@@ -550,22 +547,22 @@
 
     iput v0, p0, Landroid/view/inputmethod/EditorInfo;->imeOptions:I
 
-    .line 481
-    :cond_10
+    .line 536
+    :cond_11
     iget v0, p0, Landroid/view/inputmethod/EditorInfo;->inputType:I
 
     invoke-static {v0, v5}, Landroidx/compose/ui/text/input/TextInputServiceAndroid_androidKt;->hasFlag(II)Z
 
     move-result v0
 
-    if-eqz v0, :cond_14
+    if-eqz v0, :cond_15
 
-    .line 482
+    .line 537
     invoke-virtual {p1}, Landroidx/compose/ui/text/input/ImeOptions;->getCapitalization-IUNYP9k()I
 
     move-result v0
 
-    .line 483
+    .line 538
     sget-object v1, Landroidx/compose/ui/text/input/KeyboardCapitalization;->Companion:Landroidx/compose/ui/text/input/KeyboardCapitalization$Companion;
 
     invoke-virtual {v1}, Landroidx/compose/ui/text/input/KeyboardCapitalization$Companion;->getCharacters-IUNYP9k()I
@@ -576,9 +573,9 @@
 
     move-result v1
 
-    if-eqz v1, :cond_11
+    if-eqz v1, :cond_12
 
-    .line 484
+    .line 539
     iget v0, p0, Landroid/view/inputmethod/EditorInfo;->inputType:I
 
     or-int/lit16 v0, v0, 0x1000
@@ -587,8 +584,8 @@
 
     goto :goto_2
 
-    .line 486
-    :cond_11
+    .line 541
+    :cond_12
     sget-object v1, Landroidx/compose/ui/text/input/KeyboardCapitalization;->Companion:Landroidx/compose/ui/text/input/KeyboardCapitalization$Companion;
 
     invoke-virtual {v1}, Landroidx/compose/ui/text/input/KeyboardCapitalization$Companion;->getWords-IUNYP9k()I
@@ -599,9 +596,9 @@
 
     move-result v1
 
-    if-eqz v1, :cond_12
+    if-eqz v1, :cond_13
 
-    .line 487
+    .line 542
     iget v0, p0, Landroid/view/inputmethod/EditorInfo;->inputType:I
 
     or-int/lit16 v0, v0, 0x2000
@@ -610,8 +607,8 @@
 
     goto :goto_2
 
-    .line 489
-    :cond_12
+    .line 544
+    :cond_13
     sget-object v1, Landroidx/compose/ui/text/input/KeyboardCapitalization;->Companion:Landroidx/compose/ui/text/input/KeyboardCapitalization$Companion;
 
     invoke-virtual {v1}, Landroidx/compose/ui/text/input/KeyboardCapitalization$Companion;->getSentences-IUNYP9k()I
@@ -622,25 +619,25 @@
 
     move-result v0
 
-    if-eqz v0, :cond_13
+    if-eqz v0, :cond_14
 
-    .line 490
+    .line 545
     iget v0, p0, Landroid/view/inputmethod/EditorInfo;->inputType:I
 
     or-int/lit16 v0, v0, 0x4000
 
     iput v0, p0, Landroid/view/inputmethod/EditorInfo;->inputType:I
 
-    .line 497
-    :cond_13
+    .line 552
+    :cond_14
     :goto_2
     invoke-virtual {p1}, Landroidx/compose/ui/text/input/ImeOptions;->getAutoCorrect()Z
 
     move-result p1
 
-    if-eqz p1, :cond_14
+    if-eqz p1, :cond_15
 
-    .line 498
+    .line 553
     iget p1, p0, Landroid/view/inputmethod/EditorInfo;->inputType:I
 
     const v0, 0x8000
@@ -649,8 +646,8 @@
 
     iput p1, p0, Landroid/view/inputmethod/EditorInfo;->inputType:I
 
-    .line 502
-    :cond_14
+    .line 557
+    :cond_15
     invoke-virtual {p2}, Landroidx/compose/ui/text/input/TextFieldValue;->getSelection-d9O1mEE()J
 
     move-result-wide v0
@@ -661,7 +658,7 @@
 
     iput p1, p0, Landroid/view/inputmethod/EditorInfo;->initialSelStart:I
 
-    .line 503
+    .line 558
     invoke-virtual {p2}, Landroidx/compose/ui/text/input/TextFieldValue;->getSelection-d9O1mEE()J
 
     move-result-wide v0
@@ -672,7 +669,7 @@
 
     iput p1, p0, Landroid/view/inputmethod/EditorInfo;->initialSelEnd:I
 
-    .line 505
+    .line 560
     invoke-virtual {p2}, Landroidx/compose/ui/text/input/TextFieldValue;->getText()Ljava/lang/String;
 
     move-result-object p1
@@ -681,7 +678,7 @@
 
     invoke-static {p0, p1}, Landroidx/core/view/inputmethod/EditorInfoCompat;->setInitialSurroundingText(Landroid/view/inputmethod/EditorInfo;Ljava/lang/CharSequence;)V
 
-    .line 507
+    .line 562
     iget p1, p0, Landroid/view/inputmethod/EditorInfo;->imeOptions:I
 
     const/high16 p2, 0x2000000
@@ -692,11 +689,11 @@
 
     return-void
 
-    .line 464
-    :cond_15
+    .line 519
+    :cond_16
     new-instance p0, Ljava/lang/IllegalStateException;
 
-    .line 467
+    .line 522
     const-string p1, "Invalid Keyboard Type"
 
     invoke-virtual {p1}, Ljava/lang/Object;->toString()Ljava/lang/String;
@@ -707,11 +704,11 @@
 
     throw p0
 
-    .line 439
-    :cond_16
+    .line 491
+    :cond_17
     new-instance p0, Ljava/lang/IllegalStateException;
 
-    .line 440
+    .line 492
     const-string p1, "invalid ImeAction"
 
     invoke-virtual {p1}, Ljava/lang/Object;->toString()Ljava/lang/String;
@@ -726,7 +723,7 @@
 .method private static final updateWithEmojiCompat(Landroid/view/inputmethod/EditorInfo;)V
     .locals 1
 
-    .line 413
+    .line 465
     invoke-static {}, Landroidx/emoji2/text/EmojiCompat;->isConfigured()Z
 
     move-result v0
@@ -735,7 +732,7 @@
 
     return-void
 
-    .line 415
+    .line 467
     :cond_0
     invoke-static {}, Landroidx/emoji2/text/EmojiCompat;->get()Landroidx/emoji2/text/EmojiCompat;
 

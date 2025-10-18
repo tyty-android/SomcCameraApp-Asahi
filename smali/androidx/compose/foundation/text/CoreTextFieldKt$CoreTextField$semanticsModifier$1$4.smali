@@ -88,13 +88,13 @@
 
 # virtual methods
 .method public final invoke(IIZ)Ljava/lang/Boolean;
-    .locals 8
+    .locals 9
 
     if-eqz p3, :cond_0
 
     goto :goto_0
 
-    .line 472
+    .line 515
     :cond_0
     iget-object v0, p0, Landroidx/compose/foundation/text/CoreTextFieldKt$CoreTextField$semanticsModifier$1$4;->$offsetMapping:Landroidx/compose/ui/text/input/OffsetMapping;
 
@@ -107,7 +107,7 @@
 
     goto :goto_1
 
-    .line 477
+    .line 520
     :cond_1
     iget-object v0, p0, Landroidx/compose/foundation/text/CoreTextFieldKt$CoreTextField$semanticsModifier$1$4;->$offsetMapping:Landroidx/compose/ui/text/input/OffsetMapping;
 
@@ -115,7 +115,7 @@
 
     move-result p2
 
-    .line 480
+    .line 523
     :goto_1
     iget-boolean v0, p0, Landroidx/compose/foundation/text/CoreTextFieldKt$CoreTextField$semanticsModifier$1$4;->$enabled:Z
 
@@ -125,7 +125,7 @@
 
     goto :goto_4
 
-    .line 482
+    .line 525
     :cond_2
     iget-object v0, p0, Landroidx/compose/foundation/text/CoreTextFieldKt$CoreTextField$semanticsModifier$1$4;->$value:Landroidx/compose/ui/text/input/TextFieldValue;
 
@@ -153,16 +153,16 @@
 
     goto :goto_4
 
-    .line 484
+    .line 527
     :cond_3
-    invoke-static {p1, p2}, Lkotlin/ranges/RangesKt;->coerceAtMost(II)I
+    invoke-static {p1, p2}, Ljava/lang/Math;->min(II)I
 
     move-result v0
 
     if-ltz v0, :cond_6
 
-    .line 485
-    invoke-static {p1, p2}, Lkotlin/ranges/RangesKt;->coerceAtLeast(II)I
+    .line 528
+    invoke-static {p1, p2}, Ljava/lang/Math;->max(II)I
 
     move-result v0
 
@@ -178,28 +178,32 @@
 
     if-gt v0, v2, :cond_6
 
+    const/4 v0, 0x1
+
     if-nez p3, :cond_5
 
     if-ne p1, p2, :cond_4
 
     goto :goto_2
 
-    .line 492
+    .line 535
     :cond_4
     iget-object p3, p0, Landroidx/compose/foundation/text/CoreTextFieldKt$CoreTextField$semanticsModifier$1$4;->$manager:Landroidx/compose/foundation/text/selection/TextFieldSelectionManager;
 
-    invoke-virtual {p3}, Landroidx/compose/foundation/text/selection/TextFieldSelectionManager;->enterSelectionMode$foundation_release()V
+    const/4 v2, 0x0
+
+    invoke-static {p3, v1, v0, v2}, Landroidx/compose/foundation/text/selection/TextFieldSelectionManager;->enterSelectionMode$foundation_release$default(Landroidx/compose/foundation/text/selection/TextFieldSelectionManager;ZILjava/lang/Object;)V
 
     goto :goto_3
 
-    .line 490
+    .line 533
     :cond_5
     :goto_2
     iget-object p3, p0, Landroidx/compose/foundation/text/CoreTextFieldKt$CoreTextField$semanticsModifier$1$4;->$manager:Landroidx/compose/foundation/text/selection/TextFieldSelectionManager;
 
     invoke-virtual {p3}, Landroidx/compose/foundation/text/selection/TextFieldSelectionManager;->exitSelectionMode$foundation_release()V
 
-    .line 494
+    .line 537
     :goto_3
     iget-object p3, p0, Landroidx/compose/foundation/text/CoreTextFieldKt$CoreTextField$semanticsModifier$1$4;->$state:Landroidx/compose/foundation/text/TextFieldState;
 
@@ -207,46 +211,46 @@
 
     move-result-object p3
 
-    .line 495
-    new-instance v7, Landroidx/compose/ui/text/input/TextFieldValue;
+    .line 538
+    new-instance v8, Landroidx/compose/ui/text/input/TextFieldValue;
 
-    .line 496
+    .line 539
     iget-object p0, p0, Landroidx/compose/foundation/text/CoreTextFieldKt$CoreTextField$semanticsModifier$1$4;->$value:Landroidx/compose/ui/text/input/TextFieldValue;
 
     invoke-virtual {p0}, Landroidx/compose/ui/text/input/TextFieldValue;->getAnnotatedString()Landroidx/compose/ui/text/AnnotatedString;
 
-    move-result-object v1
+    move-result-object v2
 
-    .line 497
+    .line 540
     invoke-static {p1, p2}, Landroidx/compose/ui/text/TextRangeKt;->TextRange(II)J
 
-    move-result-wide v2
+    move-result-wide v3
 
-    const/4 v5, 0x4
+    const/4 v6, 0x4
 
-    const/4 v6, 0x0
+    const/4 v7, 0x0
 
-    const/4 v4, 0x0
+    const/4 v5, 0x0
 
-    move-object v0, v7
+    move-object v1, v8
 
-    .line 495
-    invoke-direct/range {v0 .. v6}, Landroidx/compose/ui/text/input/TextFieldValue;-><init>(Landroidx/compose/ui/text/AnnotatedString;JLandroidx/compose/ui/text/TextRange;ILkotlin/jvm/internal/DefaultConstructorMarker;)V
+    .line 538
+    invoke-direct/range {v1 .. v7}, Landroidx/compose/ui/text/input/TextFieldValue;-><init>(Landroidx/compose/ui/text/AnnotatedString;JLandroidx/compose/ui/text/TextRange;ILkotlin/jvm/internal/DefaultConstructorMarker;)V
 
-    .line 494
-    invoke-interface {p3, v7}, Lkotlin/jvm/functions/Function1;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
+    .line 537
+    invoke-interface {p3, v8}, Lkotlin/jvm/functions/Function1;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
 
-    const/4 v1, 0x1
+    move v1, v0
 
     goto :goto_4
 
-    .line 502
+    .line 545
     :cond_6
     iget-object p0, p0, Landroidx/compose/foundation/text/CoreTextFieldKt$CoreTextField$semanticsModifier$1$4;->$manager:Landroidx/compose/foundation/text/selection/TextFieldSelectionManager;
 
     invoke-virtual {p0}, Landroidx/compose/foundation/text/selection/TextFieldSelectionManager;->exitSelectionMode$foundation_release()V
 
-    .line 503
+    .line 546
     :goto_4
     invoke-static {v1}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
@@ -258,7 +262,7 @@
 .method public bridge synthetic invoke(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
 
-    .line 465
+    .line 508
     check-cast p1, Ljava/lang/Number;
 
     invoke-virtual {p1}, Ljava/lang/Number;->intValue()I

@@ -64,10 +64,6 @@
 .method public final getAmbientShadowColor(Landroid/view/RenderNode;)I
     .locals 0
 
-    const-string p0, "renderNode"
-
-    invoke-static {p1, p0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
     .line 381
     invoke-virtual {p1}, Landroid/view/RenderNode;->getAmbientShadowColor()I
 
@@ -78,10 +74,6 @@
 
 .method public final getSpotShadowColor(Landroid/view/RenderNode;)I
     .locals 0
-
-    const-string p0, "renderNode"
-
-    invoke-static {p1, p0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 391
     invoke-virtual {p1}, Landroid/view/RenderNode;->getSpotShadowColor()I
@@ -94,10 +86,6 @@
 .method public final setAmbientShadowColor(Landroid/view/RenderNode;I)V
     .locals 0
 
-    const-string p0, "renderNode"
-
-    invoke-static {p1, p0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
     .line 386
     invoke-virtual {p1, p2}, Landroid/view/RenderNode;->setAmbientShadowColor(I)Z
 
@@ -106,10 +94,6 @@
 
 .method public final setSpotShadowColor(Landroid/view/RenderNode;I)V
     .locals 0
-
-    const-string p0, "renderNode"
-
-    invoke-static {p1, p0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 396
     invoke-virtual {p1, p2}, Landroid/view/RenderNode;->setSpotShadowColor(I)Z

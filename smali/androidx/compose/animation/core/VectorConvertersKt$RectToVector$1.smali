@@ -79,10 +79,6 @@
 .method public final invoke(Landroidx/compose/ui/geometry/Rect;)Landroidx/compose/animation/core/AnimationVector4D;
     .locals 3
 
-    const-string p0, "it"
-
-    invoke-static {p1, p0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
     .line 190
     new-instance p0, Landroidx/compose/animation/core/AnimationVector4D;
 

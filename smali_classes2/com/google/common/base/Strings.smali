@@ -256,12 +256,14 @@
 
     if-nez p1, :cond_0
 
+    const/4 p1, 0x1
+
     .line 264
-    const-string p1, "(Object[])null"
+    new-array p1, p1, [Ljava/lang/Object;
 
-    filled-new-array {p1}, [Ljava/lang/Object;
+    const-string v1, "(Object[])null"
 
-    move-result-object p1
+    aput-object v1, p1, v0
 
     goto :goto_1
 

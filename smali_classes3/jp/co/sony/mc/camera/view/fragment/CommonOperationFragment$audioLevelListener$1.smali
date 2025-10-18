@@ -32,8 +32,8 @@
     }
     k = 0x1
     mv = {
-        0x1,
-        0x9,
+        0x2,
+        0x0,
         0x0
     }
     xi = 0x30
@@ -50,7 +50,7 @@
 
     iput-object p1, p0, Ljp/co/sony/mc/camera/view/fragment/CommonOperationFragment$audioLevelListener$1;->this$0:Ljp/co/sony/mc/camera/view/fragment/CommonOperationFragment;
 
-    .line 102
+    .line 103
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -67,7 +67,7 @@
 .method public onReportAudioLevel([I)V
     .locals 0
 
-    .line 108
+    .line 109
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/fragment/CommonOperationFragment$audioLevelListener$1;->this$0:Ljp/co/sony/mc/camera/view/fragment/CommonOperationFragment;
 
     invoke-static {p0}, Ljp/co/sony/mc/camera/view/fragment/CommonOperationFragment;->access$getCameraViewModel(Ljp/co/sony/mc/camera/view/fragment/CommonOperationFragment;)Ljp/co/sony/mc/camera/view/viewmodel/CameraViewModel;

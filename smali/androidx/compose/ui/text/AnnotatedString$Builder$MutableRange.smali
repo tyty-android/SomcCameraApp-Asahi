@@ -23,7 +23,7 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/SourceDebugExtension;
-    value = "SMAP\nAnnotatedString.kt\nKotlin\n*S Kotlin\n*F\n+ 1 AnnotatedString.kt\nandroidx/compose/ui/text/AnnotatedString$Builder$MutableRange\n+ 2 fake.kt\nkotlin/jvm/internal/FakeKt\n*L\n1#1,1126:1\n1#2:1127\n*E\n"
+    value = "SMAP\nAnnotatedString.kt\nKotlin\n*S Kotlin\n*F\n+ 1 AnnotatedString.kt\nandroidx/compose/ui/text/AnnotatedString$Builder$MutableRange\n+ 2 fake.kt\nkotlin/jvm/internal/FakeKt\n*L\n1#1,1128:1\n1#2:1129\n*E\n"
 .end annotation
 
 .annotation runtime Lkotlin/Metadata;
@@ -95,7 +95,7 @@
 
 # direct methods
 .method public constructor <init>(Ljava/lang/Object;IILjava/lang/String;)V
-    .locals 1
+    .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TT;II",
@@ -104,23 +104,19 @@
         }
     .end annotation
 
-    const-string/jumbo v0, "tag"
-
-    invoke-static {p4, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 274
+    .line 275
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 275
+    .line 276
     iput-object p1, p0, Landroidx/compose/ui/text/AnnotatedString$Builder$MutableRange;->item:Ljava/lang/Object;
 
-    .line 276
+    .line 277
     iput p2, p0, Landroidx/compose/ui/text/AnnotatedString$Builder$MutableRange;->start:I
 
-    .line 277
+    .line 278
     iput p3, p0, Landroidx/compose/ui/text/AnnotatedString$Builder$MutableRange;->end:I
 
-    .line 278
+    .line 279
     iput-object p4, p0, Landroidx/compose/ui/text/AnnotatedString$Builder$MutableRange;->tag:Ljava/lang/String;
 
     return-void
@@ -140,10 +136,10 @@
 
     if-eqz p5, :cond_1
 
-    .line 278
+    .line 279
     const-string p4, ""
 
-    .line 274
+    .line 275
     :cond_1
     invoke-direct {p0, p1, p2, p3, p4}, Landroidx/compose/ui/text/AnnotatedString$Builder$MutableRange;-><init>(Ljava/lang/Object;IILjava/lang/String;)V
 
@@ -197,7 +193,7 @@
 
     const/high16 p1, -0x80000000
 
-    .line 285
+    .line 286
     :cond_0
     invoke-virtual {p0, p1}, Landroidx/compose/ui/text/AnnotatedString$Builder$MutableRange;->toRange(I)Landroidx/compose/ui/text/AnnotatedString$Range;
 
@@ -256,10 +252,6 @@
             "TT;>;"
         }
     .end annotation
-
-    const-string/jumbo p0, "tag"
-
-    invoke-static {p4, p0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
     new-instance p0, Landroidx/compose/ui/text/AnnotatedString$Builder$MutableRange;
 
@@ -339,7 +331,7 @@
 .method public final getEnd()I
     .locals 0
 
-    .line 277
+    .line 278
     iget p0, p0, Landroidx/compose/ui/text/AnnotatedString$Builder$MutableRange;->end:I
 
     return p0
@@ -353,7 +345,7 @@
         }
     .end annotation
 
-    .line 275
+    .line 276
     iget-object p0, p0, Landroidx/compose/ui/text/AnnotatedString$Builder$MutableRange;->item:Ljava/lang/Object;
 
     return-object p0
@@ -362,7 +354,7 @@
 .method public final getStart()I
     .locals 0
 
-    .line 276
+    .line 277
     iget p0, p0, Landroidx/compose/ui/text/AnnotatedString$Builder$MutableRange;->start:I
 
     return p0
@@ -371,7 +363,7 @@
 .method public final getTag()Ljava/lang/String;
     .locals 0
 
-    .line 278
+    .line 279
     iget-object p0, p0, Landroidx/compose/ui/text/AnnotatedString$Builder$MutableRange;->tag:Ljava/lang/String;
 
     return-object p0
@@ -430,7 +422,7 @@
 .method public final setEnd(I)V
     .locals 0
 
-    .line 277
+    .line 278
     iput p1, p0, Landroidx/compose/ui/text/AnnotatedString$Builder$MutableRange;->end:I
 
     return-void
@@ -446,7 +438,7 @@
         }
     .end annotation
 
-    .line 286
+    .line 287
     iget v0, p0, Landroidx/compose/ui/text/AnnotatedString$Builder$MutableRange;->end:I
 
     const/high16 v1, -0x80000000
@@ -461,7 +453,7 @@
     :goto_0
     if-eq p1, v1, :cond_1
 
-    .line 288
+    .line 289
     new-instance v0, Landroidx/compose/ui/text/AnnotatedString$Range;
 
     iget-object v1, p0, Landroidx/compose/ui/text/AnnotatedString$Builder$MutableRange;->item:Ljava/lang/Object;
@@ -474,7 +466,7 @@
 
     return-object v0
 
-    .line 287
+    .line 288
     :cond_1
     new-instance p0, Ljava/lang/IllegalStateException;
 

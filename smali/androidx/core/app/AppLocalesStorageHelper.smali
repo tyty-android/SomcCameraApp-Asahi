@@ -70,16 +70,14 @@
 
     return-void
 
+    .line 130
     :cond_0
-    const/4 v1, 0x1
+    :try_start_1
+    const-string v1, "androidx.appcompat.app.AppCompatDelegate.application_locales_record_file"
 
     const/4 v2, 0x0
 
-    .line 130
-    :try_start_1
-    const-string v3, "androidx.appcompat.app.AppCompatDelegate.application_locales_record_file"
-
-    invoke-virtual {p0, v3, v2}, Landroid/content/Context;->openFileOutput(Ljava/lang/String;I)Ljava/io/FileOutputStream;
+    invoke-virtual {p0, v1, v2}, Landroid/content/Context;->openFileOutput(Ljava/lang/String;I)Ljava/io/FileOutputStream;
 
     move-result-object p0
     :try_end_1
@@ -90,42 +88,44 @@
     :try_start_2
     invoke-static {}, Landroid/util/Xml;->newSerializer()Lorg/xmlpull/v1/XmlSerializer;
 
-    move-result-object v2
+    move-result-object v1
     :try_end_2
     .catchall {:try_start_2 .. :try_end_2} :catchall_1
 
-    const/4 v3, 0x0
+    const/4 v2, 0x0
 
     .line 138
     :try_start_3
-    invoke-interface {v2, p0, v3}, Lorg/xmlpull/v1/XmlSerializer;->setOutput(Ljava/io/OutputStream;Ljava/lang/String;)V
+    invoke-interface {v1, p0, v2}, Lorg/xmlpull/v1/XmlSerializer;->setOutput(Ljava/io/OutputStream;Ljava/lang/String;)V
 
     .line 139
-    const-string v4, "UTF-8"
+    const-string v3, "UTF-8"
 
-    invoke-static {v1}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
+    const/4 v4, 0x1
 
-    move-result-object v1
+    invoke-static {v4}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
-    invoke-interface {v2, v4, v1}, Lorg/xmlpull/v1/XmlSerializer;->startDocument(Ljava/lang/String;Ljava/lang/Boolean;)V
+    move-result-object v4
+
+    invoke-interface {v1, v3, v4}, Lorg/xmlpull/v1/XmlSerializer;->startDocument(Ljava/lang/String;Ljava/lang/Boolean;)V
 
     .line 140
-    const-string v1, "locales"
+    const-string v3, "locales"
 
-    invoke-interface {v2, v3, v1}, Lorg/xmlpull/v1/XmlSerializer;->startTag(Ljava/lang/String;Ljava/lang/String;)Lorg/xmlpull/v1/XmlSerializer;
+    invoke-interface {v1, v2, v3}, Lorg/xmlpull/v1/XmlSerializer;->startTag(Ljava/lang/String;Ljava/lang/String;)Lorg/xmlpull/v1/XmlSerializer;
 
     .line 141
-    const-string v1, "application_locales"
+    const-string v3, "application_locales"
 
-    invoke-interface {v2, v3, v1, p1}, Lorg/xmlpull/v1/XmlSerializer;->attribute(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Lorg/xmlpull/v1/XmlSerializer;
+    invoke-interface {v1, v2, v3, p1}, Lorg/xmlpull/v1/XmlSerializer;->attribute(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Lorg/xmlpull/v1/XmlSerializer;
 
     .line 142
     const-string p1, "locales"
 
-    invoke-interface {v2, v3, p1}, Lorg/xmlpull/v1/XmlSerializer;->endTag(Ljava/lang/String;Ljava/lang/String;)Lorg/xmlpull/v1/XmlSerializer;
+    invoke-interface {v1, v2, p1}, Lorg/xmlpull/v1/XmlSerializer;->endTag(Ljava/lang/String;Ljava/lang/String;)Lorg/xmlpull/v1/XmlSerializer;
 
     .line 143
-    invoke-interface {v2}, Lorg/xmlpull/v1/XmlSerializer;->endDocument()V
+    invoke-interface {v1}, Lorg/xmlpull/v1/XmlSerializer;->endDocument()V
     :try_end_3
     .catch Ljava/lang/Exception; {:try_start_3 .. :try_end_3} :catch_0
     .catchall {:try_start_3 .. :try_end_3} :catchall_0
@@ -197,11 +197,11 @@
 
     const-string p1, "Storing App Locales : FileNotFoundException: Cannot open file %s for writing "
 
-    new-array v1, v1, [Ljava/lang/Object;
+    const-string v1, "androidx.appcompat.app.AppCompatDelegate.application_locales_record_file"
 
-    const-string v3, "androidx.appcompat.app.AppCompatDelegate.application_locales_record_file"
+    filled-new-array {v1}, [Ljava/lang/Object;
 
-    aput-object v3, v1, v2
+    move-result-object v1
 
     invoke-static {p1, v1}, Ljava/lang/String;->format(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
 

@@ -41,6 +41,7 @@ You will receive notifications and dialogs. Select Pair on all of them, then pre
     <string name="camera_strings_accessibility_adjust_color_txt">Adjust color</string>
     <string name="camera_strings_accessibility_lens_85_to_125mm_txt">85 millimeters to 125 millimeters</string>
     <string name="camera_strings_accessibility_lens_x1_to_x2_mm_txt">%1$s millimeters to %2$s millimeters</string>
+    <string name="camera_strings_accessibility_mode_custom_entrance_label">Mode customization</string>
     <string name="camera_strings_accessibility_program_auto_txt">Program auto</string>
     <string name="camera_strings_auto_frame_rate_description_note_txt">Note: Auto optimization will not work when the frame rate is set to 120 fps or 24 fps, or when the shutter speed is manually set.</string>
     <string name="camera_strings_auto_frame_rate_description_txt">Automatically optimize the frame rate to improve video quality while recording in low-light conditions</string>
@@ -90,6 +91,14 @@ Center: Focuses on subjects in the center of the viewfinder.
 Focus and tracking: This setting is available only when the Focus mode is set to Continuous AF. When the device's shutter button is pressed and held halfway down, the camera tracks the subject within the selected autofocus area."</string>
     <string name="camera_strings_focus_frame_color_txt">Focus area color</string>
     <string name="camera_strings_focus_mode_mf_txt">Manual Focus</string>
+    <string name="camera_strings_framing_mode_tips_overview_description1_txt">"The video will be automatically cropped to keep the detected subject near the center of the frame.
+A cropped video centered on the subject (Full HD resolution) will be saved in addition to the original uncropped recording of the entire screen (4K resolution)."</string>
+    <string name="camera_strings_gimbal_mode_tips_overview_description1_txt">"Stabilization which is stronger than that of the standard video mode's stabilization will be used.
+This allows you to shoot stable video even in shaky situations such as when jogging."</string>
+    <string name="camera_strings_gimbal_move_to_arrow_to_lock_txt">The subject is outside of the lock position. Point the camera toward the direction the arrow indicates.</string>
+    <string name="camera_strings_gimbal_setting_assist_method_center_hint_txt">Subject position lock: Center</string>
+    <string name="camera_strings_gimbal_setting_assist_method_center_txt">Center</string>
+    <string name="camera_strings_gimbal_setting_assist_method_description_txt">The camera automatically adjusts in order to keep the tracked subject in the same relative position in the frame. If you choose [Center], the subject will stay centered in the frame. If you choose [Manual], you can lock the subject in place wherever you want in the composition. In Manual, the composition will lock to the current framing at the moment you turn on Subject position lock.</string>
     <string name="camera_strings_hand_shutter_txt">Hand Shutter</string>
     <string name="camera_strings_hdr_sdr_format_description_s_cinetone_txt">"If SDR (BT.709) is selected while Look is set to S-Cinetone for mobile:
 - Gamma curve: S-Cinetone for mobile
@@ -105,12 +114,12 @@ If SDR (BT.709) is selected:
     <string name="camera_strings_lens_correction_description_txt">When using the ultra-wide lens, you can select a priority. By selecting Prioritize image quality, you can capture dynamic high-quality images. If you select Prioritize correction for distortion, you can reduce visual distortion.</string>
     <string name="camera_strings_lens_correction_off_txt">Prioritize image quality</string>
     <string name="camera_strings_lens_correction_on_txt">Prioritize correction for distortion</string>
-    <string name="camera_strings_max_file_size_save_failed_txt">Recording stopped due to maximum file size limitation or insufficient storage space</string>
     <string name="camera_strings_max_recording_time_save_failed_txt">Recording stopped due to maximum recording time limitation</string>
     <string name="camera_strings_menu_sub_photo_front_txt">Photo (Front)</string>
     <string name="camera_strings_menu_sub_video_front_txt">Video (Front)</string>
     <string name="camera_strings_menu_tab_exposure_color_txt">Exposure/Color</string>
     <string name="camera_strings_metering_center_txt">Center</string>
+    <string name="camera_strings_mode_custom_label">Mode customization</string>
     <string name="camera_strings_mode_p_fullname_txt">Program auto</string>
     <string name="camera_strings_multi_window_txt">Drag the middle of the split bar to switch to full screen %1$s to use</string>
     <string name="camera_strings_network_usage_wifi_only_txt">Wi-Fi only</string>
@@ -178,6 +187,8 @@ If you continue to use SD card as data storage, be sure to use a high-speed SD c
     <string name="switch_role">Switch</string>
     <string name="tab">Tab</string>
     <string name="template_percent">%1$d percent.</string>
+    <string name="tooltip_description">tooltip</string>
+    <string name="tooltip_label">show tooltip</string>
     <string name="v7_preference_off">OFF</string>
     <string name="v7_preference_on">ON</string>
 </resources>

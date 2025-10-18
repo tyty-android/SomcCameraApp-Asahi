@@ -28,7 +28,7 @@
     k = 0x1
     mv = {
         0x1,
-        0x6,
+        0x8,
         0x0
     }
     xi = 0x30
@@ -62,10 +62,10 @@
         }
     .end annotation
 
-    .line 571
+    .line 640
     invoke-direct {p0}, Lkotlinx/coroutines/CancelHandler;-><init>()V
 
-    .line 570
+    .line 639
     iput-object p1, p0, Lkotlinx/coroutines/InvokeOnCancel;->handler:Lkotlin/jvm/functions/Function1;
 
     return-void
@@ -76,7 +76,7 @@
 .method public bridge synthetic invoke(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
 
-    .line 569
+    .line 638
     check-cast p1, Ljava/lang/Throwable;
 
     invoke-virtual {p0, p1}, Lkotlinx/coroutines/InvokeOnCancel;->invoke(Ljava/lang/Throwable;)V
@@ -89,7 +89,7 @@
 .method public invoke(Ljava/lang/Throwable;)V
     .locals 0
 
-    .line 573
+    .line 642
     iget-object p0, p0, Lkotlinx/coroutines/InvokeOnCancel;->handler:Lkotlin/jvm/functions/Function1;
 
     invoke-interface {p0, p1}, Lkotlin/jvm/functions/Function1;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
@@ -100,7 +100,7 @@
 .method public toString()Ljava/lang/String;
     .locals 2
 
-    .line 575
+    .line 644
     new-instance v0, Ljava/lang/StringBuilder;
 
     const-string v1, "InvokeOnCancel["

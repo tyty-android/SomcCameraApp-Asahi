@@ -1,5 +1,5 @@
 .class public final Landroidx/compose/animation/core/MutableTransitionState;
-.super Ljava/lang/Object;
+.super Landroidx/compose/animation/core/TransitionState;
 .source "Transition.kt"
 
 
@@ -9,22 +9,23 @@
         "<S:",
         "Ljava/lang/Object;",
         ">",
-        "Ljava/lang/Object;"
+        "Landroidx/compose/animation/core/TransitionState<",
+        "TS;>;"
     }
 .end annotation
 
 .annotation system Ldalvik/annotation/SourceDebugExtension;
-    value = "SMAP\nTransition.kt\nKotlin\n*S Kotlin\n*F\n+ 1 Transition.kt\nandroidx/compose/animation/core/MutableTransitionState\n+ 2 SnapshotState.kt\nandroidx/compose/runtime/SnapshotStateKt__SnapshotStateKt\n*L\n1#1,1156:1\n81#2:1157\n107#2,2:1158\n81#2:1160\n107#2,2:1161\n81#2:1163\n107#2,2:1164\n*S KotlinDebug\n*F\n+ 1 Transition.kt\nandroidx/compose/animation/core/MutableTransitionState\n*L\n104#1:1157\n104#1:1158,2\n116#1:1160\n116#1:1161,2\n128#1:1163\n128#1:1164,2\n*E\n"
+    value = "SMAP\nTransition.kt\nKotlin\n*S Kotlin\n*F\n+ 1 Transition.kt\nandroidx/compose/animation/core/MutableTransitionState\n+ 2 SnapshotState.kt\nandroidx/compose/runtime/SnapshotStateKt__SnapshotStateKt\n*L\n1#1,1382:1\n81#2:1383\n107#2,2:1384\n81#2:1386\n107#2,2:1387\n*S KotlinDebug\n*F\n+ 1 Transition.kt\nandroidx/compose/animation/core/MutableTransitionState\n*L\n145#1:1383\n145#1:1384,2\n157#1:1386\n157#1:1387,2\n*E\n"
 .end annotation
 
 .annotation runtime Lkotlin/Metadata;
     d1 = {
-        "\u0000\u0016\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0000\n\u0002\u0008\n\n\u0002\u0010\u000b\n\u0002\u0008\u000b\u0008\u0007\u0018\u0000*\u0004\u0008\u0000\u0010\u00012\u00020\u0002B\r\u0012\u0006\u0010\u0003\u001a\u00028\u0000\u00a2\u0006\u0002\u0010\u0004R+\u0010\u0006\u001a\u00028\u00002\u0006\u0010\u0005\u001a\u00028\u00008F@@X\u0086\u008e\u0002\u00a2\u0006\u0012\n\u0004\u0008\n\u0010\u000b\u001a\u0004\u0008\u0007\u0010\u0008\"\u0004\u0008\t\u0010\u0004R\u0011\u0010\u000c\u001a\u00020\r8F\u00a2\u0006\u0006\u001a\u0004\u0008\u000c\u0010\u000eR+\u0010\u000f\u001a\u00020\r2\u0006\u0010\u0005\u001a\u00020\r8@@@X\u0080\u008e\u0002\u00a2\u0006\u0012\n\u0004\u0008\u0013\u0010\u000b\u001a\u0004\u0008\u0010\u0010\u000e\"\u0004\u0008\u0011\u0010\u0012R+\u0010\u0014\u001a\u00028\u00002\u0006\u0010\u0005\u001a\u00028\u00008F@FX\u0086\u008e\u0002\u00a2\u0006\u0012\n\u0004\u0008\u0017\u0010\u000b\u001a\u0004\u0008\u0015\u0010\u0008\"\u0004\u0008\u0016\u0010\u0004\u00a8\u0006\u0018"
+        "\u0000$\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\n\n\u0002\u0010\u000b\n\u0002\u0008\u0006\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0002\u0008\u0007\u0018\u0000*\u0004\u0008\u0000\u0010\u00012\u0008\u0012\u0004\u0012\u0002H\u00010\u0002B\r\u0012\u0006\u0010\u0003\u001a\u00028\u0000\u00a2\u0006\u0002\u0010\u0004J\u001b\u0010\u0013\u001a\u00020\u00142\u000c\u0010\u0015\u001a\u0008\u0012\u0004\u0012\u00028\u00000\u0016H\u0010\u00a2\u0006\u0002\u0008\u0017R+\u0010\u0006\u001a\u00028\u00002\u0006\u0010\u0005\u001a\u00028\u00008V@PX\u0096\u008e\u0002\u00a2\u0006\u0012\n\u0004\u0008\n\u0010\u000b\u001a\u0004\u0008\u0007\u0010\u0008\"\u0004\u0008\t\u0010\u0004R\u0011\u0010\u000c\u001a\u00020\r8F\u00a2\u0006\u0006\u001a\u0004\u0008\u000c\u0010\u000eR+\u0010\u000f\u001a\u00028\u00002\u0006\u0010\u0005\u001a\u00028\u00008V@VX\u0096\u008e\u0002\u00a2\u0006\u0012\n\u0004\u0008\u0012\u0010\u000b\u001a\u0004\u0008\u0010\u0010\u0008\"\u0004\u0008\u0011\u0010\u0004\u00a8\u0006\u0018"
     }
     d2 = {
         "Landroidx/compose/animation/core/MutableTransitionState;",
         "S",
-        "",
+        "Landroidx/compose/animation/core/TransitionState;",
         "initialState",
         "(Ljava/lang/Object;)V",
         "<set-?>",
@@ -37,15 +38,15 @@
         "isIdle",
         "",
         "()Z",
-        "isRunning",
-        "isRunning$animation_core_release",
-        "setRunning$animation_core_release",
-        "(Z)V",
-        "isRunning$delegate",
         "targetState",
         "getTargetState",
         "setTargetState",
         "targetState$delegate",
+        "transitionConfigured",
+        "",
+        "transition",
+        "Landroidx/compose/animation/core/Transition;",
+        "transitionConfigured$animation_core_release",
         "animation-core_release"
     }
     k = 0x1
@@ -65,8 +66,6 @@
 # instance fields
 .field private final currentState$delegate:Landroidx/compose/runtime/MutableState;
 
-.field private final isRunning$delegate:Landroidx/compose/runtime/MutableState;
-
 .field private final targetState$delegate:Landroidx/compose/runtime/MutableState;
 
 
@@ -85,46 +84,33 @@
         }
     .end annotation
 
-    .line 96
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
     const/4 v0, 0x0
+
+    .line 137
+    invoke-direct {p0, v0}, Landroidx/compose/animation/core/TransitionState;-><init>(Lkotlin/jvm/internal/DefaultConstructorMarker;)V
 
     const/4 v1, 0x2
 
-    .line 104
+    .line 145
     invoke-static {p1, v0, v1, v0}, Landroidx/compose/runtime/SnapshotStateKt;->mutableStateOf$default(Ljava/lang/Object;Landroidx/compose/runtime/SnapshotMutationPolicy;ILjava/lang/Object;)Landroidx/compose/runtime/MutableState;
 
     move-result-object v2
 
     iput-object v2, p0, Landroidx/compose/animation/core/MutableTransitionState;->currentState$delegate:Landroidx/compose/runtime/MutableState;
 
-    .line 116
+    .line 157
     invoke-static {p1, v0, v1, v0}, Landroidx/compose/runtime/SnapshotStateKt;->mutableStateOf$default(Ljava/lang/Object;Landroidx/compose/runtime/SnapshotMutationPolicy;ILjava/lang/Object;)Landroidx/compose/runtime/MutableState;
 
     move-result-object p1
 
     iput-object p1, p0, Landroidx/compose/animation/core/MutableTransitionState;->targetState$delegate:Landroidx/compose/runtime/MutableState;
 
-    const/4 p1, 0x0
-
-    .line 128
-    invoke-static {p1}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
-
-    move-result-object p1
-
-    invoke-static {p1, v0, v1, v0}, Landroidx/compose/runtime/SnapshotStateKt;->mutableStateOf$default(Ljava/lang/Object;Landroidx/compose/runtime/SnapshotMutationPolicy;ILjava/lang/Object;)Landroidx/compose/runtime/MutableState;
-
-    move-result-object p1
-
-    iput-object p1, p0, Landroidx/compose/animation/core/MutableTransitionState;->isRunning$delegate:Landroidx/compose/runtime/MutableState;
-
     return-void
 .end method
 
 
 # virtual methods
-.method public final getCurrentState()Ljava/lang/Object;
+.method public getCurrentState()Ljava/lang/Object;
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -132,12 +118,12 @@
         }
     .end annotation
 
-    .line 104
+    .line 145
     iget-object p0, p0, Landroidx/compose/animation/core/MutableTransitionState;->currentState$delegate:Landroidx/compose/runtime/MutableState;
 
     check-cast p0, Landroidx/compose/runtime/State;
 
-    .line 1157
+    .line 1383
     invoke-interface {p0}, Landroidx/compose/runtime/State;->getValue()Ljava/lang/Object;
 
     move-result-object p0
@@ -145,7 +131,7 @@
     return-object p0
 .end method
 
-.method public final getTargetState()Ljava/lang/Object;
+.method public getTargetState()Ljava/lang/Object;
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -153,12 +139,12 @@
         }
     .end annotation
 
-    .line 116
+    .line 157
     iget-object p0, p0, Landroidx/compose/animation/core/MutableTransitionState;->targetState$delegate:Landroidx/compose/runtime/MutableState;
 
     check-cast p0, Landroidx/compose/runtime/State;
 
-    .line 1160
+    .line 1386
     invoke-interface {p0}, Landroidx/compose/runtime/State;->getValue()Ljava/lang/Object;
 
     move-result-object p0
@@ -169,7 +155,7 @@
 .method public final isIdle()Z
     .locals 2
 
-    .line 125
+    .line 166
     invoke-virtual {p0}, Landroidx/compose/animation/core/MutableTransitionState;->getCurrentState()Ljava/lang/Object;
 
     move-result-object v0
@@ -201,29 +187,7 @@
     return p0
 .end method
 
-.method public final isRunning$animation_core_release()Z
-    .locals 0
-
-    .line 128
-    iget-object p0, p0, Landroidx/compose/animation/core/MutableTransitionState;->isRunning$delegate:Landroidx/compose/runtime/MutableState;
-
-    check-cast p0, Landroidx/compose/runtime/State;
-
-    .line 1163
-    invoke-interface {p0}, Landroidx/compose/runtime/State;->getValue()Ljava/lang/Object;
-
-    move-result-object p0
-
-    check-cast p0, Ljava/lang/Boolean;
-
-    invoke-virtual {p0}, Ljava/lang/Boolean;->booleanValue()Z
-
-    move-result p0
-
-    return p0
-.end method
-
-.method public final setCurrentState$animation_core_release(Ljava/lang/Object;)V
+.method public setCurrentState$animation_core_release(Ljava/lang/Object;)V
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -231,32 +195,16 @@
         }
     .end annotation
 
-    .line 104
+    .line 145
     iget-object p0, p0, Landroidx/compose/animation/core/MutableTransitionState;->currentState$delegate:Landroidx/compose/runtime/MutableState;
 
-    .line 1158
+    .line 1384
     invoke-interface {p0, p1}, Landroidx/compose/runtime/MutableState;->setValue(Ljava/lang/Object;)V
 
     return-void
 .end method
 
-.method public final setRunning$animation_core_release(Z)V
-    .locals 0
-
-    .line 128
-    iget-object p0, p0, Landroidx/compose/animation/core/MutableTransitionState;->isRunning$delegate:Landroidx/compose/runtime/MutableState;
-
-    invoke-static {p1}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
-
-    move-result-object p1
-
-    .line 1164
-    invoke-interface {p0, p1}, Landroidx/compose/runtime/MutableState;->setValue(Ljava/lang/Object;)V
-
-    return-void
-.end method
-
-.method public final setTargetState(Ljava/lang/Object;)V
+.method public setTargetState(Ljava/lang/Object;)V
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -264,11 +212,24 @@
         }
     .end annotation
 
-    .line 116
+    .line 157
     iget-object p0, p0, Landroidx/compose/animation/core/MutableTransitionState;->targetState$delegate:Landroidx/compose/runtime/MutableState;
 
-    .line 1161
+    .line 1387
     invoke-interface {p0, p1}, Landroidx/compose/runtime/MutableState;->setValue(Ljava/lang/Object;)V
+
+    return-void
+.end method
+
+.method public transitionConfigured$animation_core_release(Landroidx/compose/animation/core/Transition;)V
+    .locals 0
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Landroidx/compose/animation/core/Transition<",
+            "TS;>;)V"
+        }
+    .end annotation
 
     return-void
 .end method

@@ -1,6 +1,6 @@
 .class public final Landroidx/compose/ui/tooling/animation/AnimateXAsStateComposeAnimation;
 .super Ljava/lang/Object;
-.source "AnimateXAsStateComposeAnimation.kt"
+.source "AnimateXAsStateComposeAnimation.android.kt"
 
 # interfaces
 .implements Landroidx/compose/animation/tooling/ComposeAnimation;
@@ -26,7 +26,7 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/SourceDebugExtension;
-    value = "SMAP\nAnimateXAsStateComposeAnimation.kt\nKotlin\n*S Kotlin\n*F\n+ 1 AnimateXAsStateComposeAnimation.kt\nandroidx/compose/ui/tooling/animation/AnimateXAsStateComposeAnimation\n+ 2 _Arrays.kt\nkotlin/collections/ArraysKt___ArraysKt\n*L\n1#1,76:1\n12744#2,2:77\n*S KotlinDebug\n*F\n+ 1 AnimateXAsStateComposeAnimation.kt\nandroidx/compose/ui/tooling/animation/AnimateXAsStateComposeAnimation\n*L\n56#1:77,2\n*E\n"
+    value = "SMAP\nAnimateXAsStateComposeAnimation.android.kt\nKotlin\n*S Kotlin\n*F\n+ 1 AnimateXAsStateComposeAnimation.android.kt\nandroidx/compose/ui/tooling/animation/AnimateXAsStateComposeAnimation\n+ 2 _Arrays.kt\nkotlin/collections/ArraysKt___ArraysKt\n*L\n1#1,78:1\n12744#2,2:79\n*S KotlinDebug\n*F\n+ 1 AnimateXAsStateComposeAnimation.android.kt\nandroidx/compose/ui/tooling/animation/AnimateXAsStateComposeAnimation\n*L\n57#1:79,2\n*E\n"
 .end annotation
 
 .annotation runtime Lkotlin/Metadata;
@@ -82,6 +82,8 @@
 
 
 # static fields
+.field public static final $stable:I
+
 .field public static final Companion:Landroidx/compose/ui/tooling/animation/AnimateXAsStateComposeAnimation$Companion;
 
 .field private static apiAvailable:Z
@@ -142,12 +144,16 @@
 
     sput-object v0, Landroidx/compose/ui/tooling/animation/AnimateXAsStateComposeAnimation;->Companion:Landroidx/compose/ui/tooling/animation/AnimateXAsStateComposeAnimation$Companion;
 
-    .line 56
+    const/16 v0, 0x8
+
+    sput v0, Landroidx/compose/ui/tooling/animation/AnimateXAsStateComposeAnimation;->$stable:I
+
+    .line 57
     invoke-static {}, Landroidx/compose/animation/tooling/ComposeAnimationType;->values()[Landroidx/compose/animation/tooling/ComposeAnimationType;
 
     move-result-object v0
 
-    .line 77
+    .line 79
     array-length v1, v0
 
     const/4 v2, 0x0
@@ -159,12 +165,12 @@
 
     aget-object v4, v0, v3
 
-    .line 56
+    .line 57
     invoke-virtual {v4}, Landroidx/compose/animation/tooling/ComposeAnimationType;->name()Ljava/lang/String;
 
     move-result-object v4
 
-    const-string v5, "UNSUPPORTED"
+    const-string v5, "ANIMATE_X_AS_STATE"
 
     invoke-static {v4, v5}, Lkotlin/jvm/internal/Intrinsics;->areEqual(Ljava/lang/Object;Ljava/lang/Object;)Z
 
@@ -242,10 +248,6 @@
     move-result-object p2
 
     if-eqz p2, :cond_0
-
-    const-string p3, "enumConstants"
-
-    invoke-static {p2, p3}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
 
     invoke-static {p2}, Lkotlin/collections/ArraysKt;->toSet([Ljava/lang/Object;)Ljava/util/Set;
 
@@ -399,11 +401,7 @@
 .end method
 
 .method public final setState(Ljava/lang/Object;)V
-    .locals 1
-
-    const-string/jumbo v0, "value"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+    .locals 0
 
     .line 45
     iget-object p0, p0, Landroidx/compose/ui/tooling/animation/AnimateXAsStateComposeAnimation;->toolingState:Landroidx/compose/ui/tooling/animation/ToolingState;

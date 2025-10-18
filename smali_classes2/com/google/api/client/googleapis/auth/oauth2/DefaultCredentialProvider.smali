@@ -250,7 +250,7 @@
 .end method
 
 .method private getCredentialUsingEnvironmentVariable(Lcom/google/api/client/http/HttpTransport;Lcom/google/api/client/json/JsonFactory;)Lcom/google/api/client/googleapis/auth/oauth2/GoogleCredential;
-    .locals 5
+    .locals 4
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -318,29 +318,17 @@
 
     const-string v2, "Error reading credential file from environment variable %s, value \'%s\': %s"
 
-    const/4 v3, 0x3
-
-    new-array v3, v3, [Ljava/lang/Object;
-
-    const/4 v4, 0x0
-
-    aput-object v0, v3, v4
-
-    const/4 v0, 0x1
-
-    aput-object p0, v3, v0
-
     .line 226
     invoke-virtual {p1}, Ljava/io/IOException;->getMessage()Ljava/lang/String;
 
+    move-result-object v3
+
+    filled-new-array {v0, p0, v3}, [Ljava/lang/Object;
+
     move-result-object p0
 
-    const/4 v0, 0x2
-
-    aput-object p0, v3, v0
-
     .line 224
-    invoke-static {v2, v3}, Ljava/lang/String;->format(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
+    invoke-static {v2, p0}, Ljava/lang/String;->format(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
 
     move-result-object p0
 
@@ -369,7 +357,7 @@
 .end method
 
 .method private getCredentialUsingWellKnownFile(Lcom/google/api/client/http/HttpTransport;Lcom/google/api/client/json/JsonFactory;)Lcom/google/api/client/googleapis/auth/oauth2/GoogleCredential;
-    .locals 4
+    .locals 2
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -435,25 +423,17 @@
 
     const-string v1, "Error reading credential file from location %s: %s"
 
-    const/4 v2, 0x2
-
-    new-array v2, v2, [Ljava/lang/Object;
-
-    const/4 v3, 0x0
-
-    aput-object p0, v2, v3
-
     .line 256
     invoke-virtual {p1}, Ljava/io/IOException;->getMessage()Ljava/lang/String;
 
+    move-result-object p1
+
+    filled-new-array {p0, p1}, [Ljava/lang/Object;
+
     move-result-object p0
 
-    const/4 p1, 0x1
-
-    aput-object p0, v2, p1
-
     .line 254
-    invoke-static {v1, v2}, Ljava/lang/String;->format(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
+    invoke-static {v1, p0}, Ljava/lang/String;->format(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
 
     move-result-object p0
 
@@ -672,7 +652,7 @@
 .end method
 
 .method private runningUsingEnvironmentVariable()Z
-    .locals 6
+    .locals 4
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -711,8 +691,6 @@
 
     move-result v3
 
-    const/4 v4, 0x1
-
     if-eqz v3, :cond_1
 
     invoke-virtual {v2}, Ljava/io/File;->isDirectory()Z
@@ -721,7 +699,9 @@
 
     if-nez v2, :cond_1
 
-    return v4
+    const/4 p0, 0x1
+
+    return p0
 
     .line 197
     :cond_1
@@ -729,16 +709,12 @@
 
     const-string v3, "Error reading credential file from environment variable %s, value \'%s\': File does not exist."
 
-    const/4 v5, 0x2
+    filled-new-array {v0, p0}, [Ljava/lang/Object;
 
-    new-array v5, v5, [Ljava/lang/Object;
-
-    aput-object v0, v5, v1
-
-    aput-object p0, v5, v4
+    move-result-object p0
 
     .line 198
-    invoke-static {v3, v5}, Ljava/lang/String;->format(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
+    invoke-static {v3, p0}, Ljava/lang/String;->format(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
 
     move-result-object p0
 

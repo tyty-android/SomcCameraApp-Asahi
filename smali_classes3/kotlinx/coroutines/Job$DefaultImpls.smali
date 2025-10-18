@@ -17,7 +17,7 @@
     k = 0x3
     mv = {
         0x1,
-        0x6,
+        0x8,
         0x0
     }
     xi = 0x30
@@ -34,7 +34,7 @@
 
     const/4 v0, 0x0
 
-    .line 189
+    .line 205
     invoke-interface {p0, v0}, Lkotlinx/coroutines/Job;->cancel(Ljava/util/concurrent/CancellationException;)V
 
     return-void
@@ -51,7 +51,7 @@
 
     const/4 p1, 0x0
 
-    .line 183
+    .line 199
     :cond_0
     invoke-interface {p0, p1}, Lkotlinx/coroutines/Job;->cancel(Ljava/util/concurrent/CancellationException;)V
 
@@ -78,7 +78,7 @@
 
     const/4 p1, 0x0
 
-    .line 195
+    .line 211
     :cond_0
     invoke-interface {p0, p1}, Lkotlinx/coroutines/Job;->cancel(Ljava/lang/Throwable;)Z
 
@@ -145,6 +145,12 @@
     return-object p0
 .end method
 
+.method public static synthetic getParent$annotations()V
+    .locals 0
+
+    return-void
+.end method
+
 .method public static synthetic invokeOnCompletion$default(Lkotlinx/coroutines/Job;ZZLkotlin/jvm/functions/Function1;ILjava/lang/Object;)Lkotlinx/coroutines/DisposableHandle;
     .locals 0
 
@@ -163,7 +169,7 @@
 
     const/4 p2, 0x1
 
-    .line 341
+    .line 357
     :cond_1
     invoke-interface {p0, p1, p2, p3}, Lkotlinx/coroutines/Job;->invokeOnCompletion(ZZLkotlin/jvm/functions/Function1;)Lkotlinx/coroutines/DisposableHandle;
 

@@ -174,20 +174,20 @@
         }
     .end annotation
 
+    const/4 v0, 0x1
+
     .line 389
+    new-array v0, v0, [Ljava/lang/reflect/Type;
+
+    const/4 v1, 0x0
+
     invoke-virtual {p1}, Ljava/lang/Class;->getGenericSuperclass()Ljava/lang/reflect/Type;
 
-    move-result-object v0
+    move-result-object v2
 
-    const/4 v1, 0x1
+    aput-object v2, v0, v1
 
-    new-array v1, v1, [Ljava/lang/reflect/Type;
-
-    const/4 v2, 0x0
-
-    aput-object v0, v1, v2
-
-    invoke-virtual {p0, v1}, Lcom/google/common/reflect/TypeResolver$TypeMappingIntrospector;->visit([Ljava/lang/reflect/Type;)V
+    invoke-virtual {p0, v0}, Lcom/google/common/reflect/TypeResolver$TypeMappingIntrospector;->visit([Ljava/lang/reflect/Type;)V
 
     .line 390
     invoke-virtual {p1}, Ljava/lang/Class;->getGenericInterfaces()[Ljava/lang/reflect/Type;
@@ -272,11 +272,11 @@
     invoke-virtual {p0, v1}, Lcom/google/common/reflect/TypeResolver$TypeMappingIntrospector;->visit([Ljava/lang/reflect/Type;)V
 
     .line 403
+    new-array v0, v5, [Ljava/lang/reflect/Type;
+
     invoke-interface {p1}, Ljava/lang/reflect/ParameterizedType;->getOwnerType()Ljava/lang/reflect/Type;
 
     move-result-object p1
-
-    new-array v0, v5, [Ljava/lang/reflect/Type;
 
     aput-object p1, v0, v6
 

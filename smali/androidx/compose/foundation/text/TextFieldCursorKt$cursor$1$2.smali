@@ -124,10 +124,6 @@
 
     move-object/from16 v1, p1
 
-    const-string v2, "$this$drawWithContent"
-
-    invoke-static {v1, v2}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
     .line 59
     invoke-interface/range {p1 .. p1}, Landroidx/compose/ui/graphics/drawscope/ContentDrawScope;->drawContent()V
 
@@ -227,7 +223,7 @@
 
     add-float/2addr v3, v4
 
-    .line 68
+    .line 70
     invoke-interface/range {p1 .. p1}, Landroidx/compose/ui/graphics/drawscope/ContentDrawScope;->getSize-NH-jbRc()J
 
     move-result-wide v5
@@ -242,7 +238,12 @@
 
     move-result v3
 
-    .line 72
+    .line 71
+    invoke-static {v3, v4}, Lkotlin/ranges/RangesKt;->coerceAtLeast(FF)F
+
+    move-result v3
+
+    .line 75
     invoke-virtual {v2}, Landroidx/compose/ui/geometry/Rect;->getTop()F
 
     move-result v4
@@ -251,7 +252,7 @@
 
     move-result-wide v7
 
-    .line 73
+    .line 76
     invoke-virtual {v2}, Landroidx/compose/ui/geometry/Rect;->getBottom()F
 
     move-result v2
@@ -260,12 +261,12 @@
 
     move-result-wide v9
 
-    .line 70
+    .line 73
     move-object v5, v1
 
     check-cast v5, Landroidx/compose/ui/graphics/drawscope/DrawScope;
 
-    .line 71
+    .line 74
     iget-object v6, v0, Landroidx/compose/foundation/text/TextFieldCursorKt$cursor$1$2;->$cursorBrush:Landroidx/compose/ui/graphics/Brush;
 
     const/16 v17, 0x1b0
@@ -280,7 +281,7 @@
 
     const/16 v16, 0x0
 
-    .line 70
+    .line 73
     invoke-static/range {v5 .. v18}, Landroidx/compose/ui/graphics/drawscope/DrawScope;->drawLine-1RTmtNc$default(Landroidx/compose/ui/graphics/drawscope/DrawScope;Landroidx/compose/ui/graphics/Brush;JJFILandroidx/compose/ui/graphics/PathEffect;FLandroidx/compose/ui/graphics/ColorFilter;IILjava/lang/Object;)V
 
     :goto_0

@@ -37,6 +37,14 @@
 
 
 # direct methods
+.method public static synthetic $r8$lambda$3seKrxm4Wa8X9D5XVmiISvepDE8(Ljp/co/sony/mc/camera/view/setting/fragment/RemoconPairFragment;Landroid/view/View;)V
+    .locals 0
+
+    invoke-direct {p0, p1}, Ljp/co/sony/mc/camera/view/setting/fragment/RemoconPairFragment;->lambda$onCreateView$1(Landroid/view/View;)V
+
+    return-void
+.end method
+
 .method public static synthetic $r8$lambda$c6Y09g-KV5cmUGUCaPQVcMPUyzI(Ljp/co/sony/mc/camera/view/setting/fragment/RemoconPairFragment;Landroid/view/View;)V
     .locals 0
 
@@ -118,21 +126,21 @@
 
     iput-object v0, p0, Ljp/co/sony/mc/camera/view/setting/fragment/RemoconPairFragment;->mPairTimeoutTimer:Ljp/co/sony/mc/camera/view/setting/fragment/RemoconPairFragment$PairTimeoutTimer;
 
-    .line 145
+    .line 149
     new-instance v0, Ljp/co/sony/mc/camera/view/setting/fragment/RemoconPairFragment$2;
 
     invoke-direct {v0, p0}, Ljp/co/sony/mc/camera/view/setting/fragment/RemoconPairFragment$2;-><init>(Ljp/co/sony/mc/camera/view/setting/fragment/RemoconPairFragment;)V
 
     iput-object v0, p0, Ljp/co/sony/mc/camera/view/setting/fragment/RemoconPairFragment;->mBluetoothAvailabilityCallback:Lcom/sonymobile/camera/bleremotecontrol/RemoconManager$AvailabilityCallback;
 
-    .line 166
+    .line 170
     new-instance v0, Ljp/co/sony/mc/camera/view/setting/fragment/RemoconPairFragment$3;
 
     invoke-direct {v0, p0}, Ljp/co/sony/mc/camera/view/setting/fragment/RemoconPairFragment$3;-><init>(Ljp/co/sony/mc/camera/view/setting/fragment/RemoconPairFragment;)V
 
     iput-object v0, p0, Ljp/co/sony/mc/camera/view/setting/fragment/RemoconPairFragment;->mDeviceStateCallback:Lcom/sonymobile/camera/bleremotecontrol/RemoconManager$DeviceStateCallback;
 
-    .line 186
+    .line 190
     new-instance v0, Ljp/co/sony/mc/camera/view/setting/fragment/RemoconPairFragment$4;
 
     invoke-direct {v0, p0}, Ljp/co/sony/mc/camera/view/setting/fragment/RemoconPairFragment$4;-><init>(Ljp/co/sony/mc/camera/view/setting/fragment/RemoconPairFragment;)V
@@ -145,7 +153,7 @@
 .method private dismissDialog()V
     .locals 1
 
-    .line 237
+    .line 241
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/view/setting/fragment/RemoconPairFragment;->getActivity()Landroidx/fragment/app/FragmentActivity;
 
     move-result-object p0
@@ -156,10 +164,10 @@
 
     if-eqz p0, :cond_0
 
-    .line 239
+    .line 243
     const-class v0, Ljp/co/sony/mc/camera/view/setting/fragment/SettingMessageDialogFragment;
 
-    .line 240
+    .line 244
     const-string v0, "SettingMessageDialogFragment"
 
     invoke-virtual {p0, v0}, Landroidx/fragment/app/FragmentManager;->findFragmentByTag(Ljava/lang/String;)Landroidx/fragment/app/Fragment;
@@ -170,14 +178,14 @@
 
     if-eqz p0, :cond_0
 
-    .line 241
+    .line 245
     invoke-virtual {p0}, Landroidx/fragment/app/DialogFragment;->getShowsDialog()Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
-    .line 242
+    .line 246
     invoke-virtual {p0}, Landroidx/fragment/app/DialogFragment;->dismiss()V
 
     :cond_0
@@ -187,14 +195,14 @@
 .method private finishPairFragment()V
     .locals 2
 
-    .line 273
+    .line 277
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/view/setting/fragment/RemoconPairFragment;->getActivity()Landroidx/fragment/app/FragmentActivity;
 
     move-result-object v0
 
     if-eqz v0, :cond_0
 
-    .line 274
+    .line 278
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/view/setting/fragment/RemoconPairFragment;->getActivity()Landroidx/fragment/app/FragmentActivity;
 
     move-result-object v0
@@ -203,7 +211,7 @@
 
     move-result-object v0
 
-    .line 275
+    .line 279
     const-string v1, "remocon_pair_fragment"
 
     invoke-virtual {v0, v1}, Landroidx/fragment/app/FragmentManager;->findFragmentByTag(Ljava/lang/String;)Landroidx/fragment/app/Fragment;
@@ -212,7 +220,7 @@
 
     if-eqz v1, :cond_0
 
-    .line 276
+    .line 280
     invoke-virtual {v0}, Landroidx/fragment/app/FragmentManager;->getBackStackEntryCount()I
 
     move-result v0
@@ -221,7 +229,7 @@
 
     if-le v0, v1, :cond_0
 
-    .line 277
+    .line 281
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/view/setting/fragment/RemoconPairFragment;->getActivity()Landroidx/fragment/app/FragmentActivity;
 
     move-result-object p0
@@ -239,7 +247,7 @@
 .method private isDialogShowing()Z
     .locals 1
 
-    .line 225
+    .line 229
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/view/setting/fragment/RemoconPairFragment;->getActivity()Landroidx/fragment/app/FragmentActivity;
 
     move-result-object p0
@@ -250,10 +258,10 @@
 
     if-eqz p0, :cond_0
 
-    .line 227
+    .line 231
     const-class v0, Ljp/co/sony/mc/camera/view/setting/fragment/SettingMessageDialogFragment;
 
-    .line 228
+    .line 232
     const-string v0, "SettingMessageDialogFragment"
 
     invoke-virtual {p0, v0}, Landroidx/fragment/app/FragmentManager;->findFragmentByTag(Ljava/lang/String;)Landroidx/fragment/app/Fragment;
@@ -264,7 +272,7 @@
 
     if-eqz p0, :cond_0
 
-    .line 229
+    .line 233
     invoke-virtual {p0}, Landroidx/fragment/app/DialogFragment;->getShowsDialog()Z
 
     move-result p0
@@ -284,29 +292,29 @@
 .method private synthetic lambda$onCreateView$0(Landroid/view/View;)V
     .locals 0
 
-    .line 83
+    .line 79
     iget-object p1, p0, Ljp/co/sony/mc/camera/view/setting/fragment/RemoconPairFragment;->mPairTimeoutTimer:Ljp/co/sony/mc/camera/view/setting/fragment/RemoconPairFragment$PairTimeoutTimer;
 
     invoke-static {p1}, Ljp/co/sony/mc/camera/view/setting/fragment/RemoconPairFragment$PairTimeoutTimer;->-$$Nest$mstop(Ljp/co/sony/mc/camera/view/setting/fragment/RemoconPairFragment$PairTimeoutTimer;)V
 
-    .line 84
+    .line 80
     iget-object p1, p0, Ljp/co/sony/mc/camera/view/setting/fragment/RemoconPairFragment;->mRemoconManager:Lcom/sonymobile/camera/bleremotecontrol/RemoconManager;
 
     invoke-virtual {p1}, Lcom/sonymobile/camera/bleremotecontrol/RemoconManager;->stopPairing()V
 
-    .line 85
+    .line 81
     invoke-direct {p0}, Ljp/co/sony/mc/camera/view/setting/fragment/RemoconPairFragment;->isDialogShowing()Z
 
     move-result p1
 
     if-nez p1, :cond_0
 
-    .line 86
+    .line 82
     sget-object p1, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->REMOTE_CONTROL_PROBLEM:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
 
     invoke-direct {p0, p1}, Ljp/co/sony/mc/camera/view/setting/fragment/RemoconPairFragment;->showDialog(Ljp/co/sony/mc/camera/view/messagedialog/DialogId;)V
 
-    .line 87
+    .line 83
     sget-object p1, Ljp/co/sony/mc/camera/configuration/parameters/RemoteControl;->OFF:Ljp/co/sony/mc/camera/configuration/parameters/RemoteControl;
 
     invoke-direct {p0, p1}, Ljp/co/sony/mc/camera/view/setting/fragment/RemoconPairFragment;->updateSetting(Ljp/co/sony/mc/camera/configuration/parameters/RemoteControl;)V
@@ -315,25 +323,46 @@
     return-void
 .end method
 
+.method private synthetic lambda$onCreateView$1(Landroid/view/View;)V
+    .locals 0
+
+    .line 100
+    invoke-virtual {p0}, Ljp/co/sony/mc/camera/view/setting/fragment/RemoconPairFragment;->getActivity()Landroidx/fragment/app/FragmentActivity;
+
+    move-result-object p1
+
+    if-eqz p1, :cond_0
+
+    .line 101
+    invoke-virtual {p0}, Ljp/co/sony/mc/camera/view/setting/fragment/RemoconPairFragment;->getActivity()Landroidx/fragment/app/FragmentActivity;
+
+    move-result-object p0
+
+    invoke-virtual {p0}, Landroidx/fragment/app/FragmentActivity;->onBackPressed()V
+
+    :cond_0
+    return-void
+.end method
+
 .method private showDialog(Ljp/co/sony/mc/camera/view/messagedialog/DialogId;)V
     .locals 2
 
-    .line 213
+    .line 217
     new-instance v0, Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogRequest;
 
     invoke-direct {v0}, Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogRequest;-><init>()V
 
-    .line 214
+    .line 218
     iput-object p1, v0, Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogRequest;->mDialogId:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
 
     const/4 p1, 0x1
 
-    .line 216
+    .line 220
     invoke-static {v0, p1}, Ljp/co/sony/mc/camera/view/setting/fragment/SettingMessageDialogFragment;->newInstance(Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogRequest;Z)Ljp/co/sony/mc/camera/view/setting/fragment/SettingMessageDialogFragment;
 
     move-result-object p1
 
-    .line 217
+    .line 221
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/view/setting/fragment/RemoconPairFragment;->getActivity()Landroidx/fragment/app/FragmentActivity;
 
     move-result-object p0
@@ -342,22 +371,22 @@
 
     move-result-object p0
 
-    .line 218
+    .line 222
     invoke-virtual {p0}, Landroidx/fragment/app/FragmentManager;->beginTransaction()Landroidx/fragment/app/FragmentTransaction;
 
     move-result-object v0
 
-    .line 219
+    .line 223
     const-class v1, Ljp/co/sony/mc/camera/view/setting/fragment/SettingMessageDialogFragment;
 
     const-string v1, "SettingMessageDialogFragment"
 
     invoke-virtual {v0, p1, v1}, Landroidx/fragment/app/FragmentTransaction;->add(Landroidx/fragment/app/Fragment;Ljava/lang/String;)Landroidx/fragment/app/FragmentTransaction;
 
-    .line 220
+    .line 224
     invoke-virtual {v0}, Landroidx/fragment/app/FragmentTransaction;->commitAllowingStateLoss()I
 
-    .line 221
+    .line 225
     invoke-virtual {p0}, Landroidx/fragment/app/FragmentManager;->executePendingTransactions()Z
 
     return-void
@@ -366,7 +395,7 @@
 .method private updateSetting(Ljp/co/sony/mc/camera/configuration/parameters/RemoteControl;)V
     .locals 1
 
-    .line 209
+    .line 213
     invoke-static {}, Ljp/co/sony/mc/camera/setting/CameraProSetting;->getInstance()Ljp/co/sony/mc/camera/setting/CameraProSetting;
 
     move-result-object p0
@@ -383,14 +412,14 @@
 .method public onActivityResult(IILandroid/content/Intent;)V
     .locals 0
 
-    .line 139
+    .line 143
     invoke-super {p0, p1, p2, p3}, Landroidx/fragment/app/Fragment;->onActivityResult(IILandroid/content/Intent;)V
 
     const/16 p2, 0x3e8
 
     if-ne p1, p2, :cond_0
 
-    .line 141
+    .line 145
     invoke-direct {p0}, Ljp/co/sony/mc/camera/view/setting/fragment/RemoconPairFragment;->finishPairFragment()V
 
     :cond_0
@@ -407,45 +436,18 @@
 
     check-cast p3, Landroidx/appcompat/app/AppCompatActivity;
 
-    .line 74
-    invoke-virtual {p3}, Landroidx/appcompat/app/AppCompatActivity;->getSupportActionBar()Landroidx/appcompat/app/ActionBar;
-
-    move-result-object v0
-
-    const v1, 0x7f110053
-
-    invoke-virtual {v0, v1}, Landroidx/appcompat/app/ActionBar;->setTitle(I)V
-
-    .line 76
-    invoke-virtual {p3}, Landroidx/appcompat/app/AppCompatActivity;->getSupportActionBar()Landroidx/appcompat/app/ActionBar;
-
-    move-result-object v0
-
-    const/4 v1, 0x1
-
-    invoke-virtual {v0, v1}, Landroidx/appcompat/app/ActionBar;->setDisplayHomeAsUpEnabled(Z)V
-
-    .line 77
-    invoke-virtual {p3}, Landroidx/appcompat/app/AppCompatActivity;->getSupportActionBar()Landroidx/appcompat/app/ActionBar;
-
-    move-result-object v0
-
-    const v1, 0x7f080104
-
-    invoke-virtual {v0, v1}, Landroidx/appcompat/app/ActionBar;->setHomeAsUpIndicator(I)V
-
     const v0, 0x7f0c00b6
 
     const/4 v1, 0x0
 
-    .line 79
+    .line 75
     invoke-virtual {p1, v0, p2, v1}, Landroid/view/LayoutInflater;->inflate(ILandroid/view/ViewGroup;Z)Landroid/view/View;
 
     move-result-object p1
 
-    const p2, 0x7f090065
+    const p2, 0x7f090061
 
-    .line 80
+    .line 76
     invoke-virtual {p1, p2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
     move-result-object p2
@@ -454,14 +456,32 @@
 
     iput-object p2, p0, Ljp/co/sony/mc/camera/view/setting/fragment/RemoconPairFragment;->mAnyProblemButton:Landroid/widget/TextView;
 
-    .line 82
+    .line 78
     new-instance v0, Ljp/co/sony/mc/camera/view/setting/fragment/RemoconPairFragment$$ExternalSyntheticLambda0;
 
     invoke-direct {v0, p0}, Ljp/co/sony/mc/camera/view/setting/fragment/RemoconPairFragment$$ExternalSyntheticLambda0;-><init>(Ljp/co/sony/mc/camera/view/setting/fragment/RemoconPairFragment;)V
 
     invoke-virtual {p2, v0}, Landroid/widget/TextView;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
-    .line 91
+    const p2, 0x7f0904a9
+
+    .line 86
+    invoke-virtual {p1, p2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
+
+    move-result-object p2
+
+    check-cast p2, Landroid/widget/TextView;
+
+    const v0, 0x7f110048
+
+    .line 87
+    invoke-virtual {p0, v0}, Ljp/co/sony/mc/camera/view/setting/fragment/RemoconPairFragment;->getString(I)Ljava/lang/String;
+
+    move-result-object v0
+
+    invoke-virtual {p2, v0}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
+
+    .line 89
     invoke-virtual {p3}, Landroidx/appcompat/app/AppCompatActivity;->getApplication()Landroid/app/Application;
 
     move-result-object p2
@@ -474,12 +494,25 @@
 
     iput-object p2, p0, Ljp/co/sony/mc/camera/view/setting/fragment/RemoconPairFragment;->mRemoconManager:Lcom/sonymobile/camera/bleremotecontrol/RemoconManager;
 
-    .line 93
+    .line 91
     new-instance p2, Ljp/co/sony/mc/camera/view/setting/fragment/RemoconPairFragment$1;
 
     invoke-direct {p2, p0}, Ljp/co/sony/mc/camera/view/setting/fragment/RemoconPairFragment$1;-><init>(Ljp/co/sony/mc/camera/view/setting/fragment/RemoconPairFragment;)V
 
     invoke-virtual {p1, p2}, Landroid/view/View;->setOnTouchListener(Landroid/view/View$OnTouchListener;)V
+
+    const p2, 0x7f0900a3
+
+    .line 99
+    invoke-virtual {p1, p2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
+
+    move-result-object p2
+
+    new-instance p3, Ljp/co/sony/mc/camera/view/setting/fragment/RemoconPairFragment$$ExternalSyntheticLambda1;
+
+    invoke-direct {p3, p0}, Ljp/co/sony/mc/camera/view/setting/fragment/RemoconPairFragment$$ExternalSyntheticLambda1;-><init>(Ljp/co/sony/mc/camera/view/setting/fragment/RemoconPairFragment;)V
+
+    invoke-virtual {p2, p3}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     return-object p1
 .end method
@@ -487,7 +520,7 @@
 .method public onDismiss(Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogRequest;I)V
     .locals 2
 
-    .line 249
+    .line 253
     sget-object v0, Ljp/co/sony/mc/camera/view/setting/fragment/RemoconPairFragment$5;->$SwitchMap$jp$co$sony$mc$camera$view$messagedialog$DialogId:[I
 
     iget-object v1, p1, Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogRequest;->mDialogId:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
@@ -516,7 +549,7 @@
 
     goto :goto_0
 
-    .line 263
+    .line 267
     :cond_0
     invoke-direct {p0}, Ljp/co/sony/mc/camera/view/setting/fragment/RemoconPairFragment;->finishPairFragment()V
 
@@ -527,14 +560,14 @@
 
     if-ne p2, v0, :cond_2
 
-    .line 252
+    .line 256
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/view/setting/fragment/RemoconPairFragment;->getActivity()Landroidx/fragment/app/FragmentActivity;
 
     move-result-object p2
 
     if-eqz p2, :cond_3
 
-    .line 253
+    .line 257
     new-instance p2, Landroid/content/Intent;
 
     const-string v0, "android.settings.BLUETOOTH_SETTINGS"
@@ -547,11 +580,11 @@
 
     goto :goto_0
 
-    .line 257
+    .line 261
     :cond_2
     invoke-direct {p0}, Ljp/co/sony/mc/camera/view/setting/fragment/RemoconPairFragment;->finishPairFragment()V
 
-    .line 269
+    .line 273
     :cond_3
     :goto_0
     new-instance p0, Ljp/co/sony/mc/camera/idd/event/IddCloseDialogEvent;
@@ -568,42 +601,42 @@
 .method public onPause()V
     .locals 2
 
-    .line 124
+    .line 128
     invoke-super {p0}, Landroidx/fragment/app/Fragment;->onPause()V
 
-    .line 125
+    .line 129
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/setting/fragment/RemoconPairFragment;->mPairTimeoutTimer:Ljp/co/sony/mc/camera/view/setting/fragment/RemoconPairFragment$PairTimeoutTimer;
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/view/setting/fragment/RemoconPairFragment$PairTimeoutTimer;->-$$Nest$mstop(Ljp/co/sony/mc/camera/view/setting/fragment/RemoconPairFragment$PairTimeoutTimer;)V
 
-    .line 126
+    .line 130
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/setting/fragment/RemoconPairFragment;->mRemoconManager:Lcom/sonymobile/camera/bleremotecontrol/RemoconManager;
 
     const/4 v1, 0x0
 
     invoke-virtual {v0, v1}, Lcom/sonymobile/camera/bleremotecontrol/RemoconManager;->registerAvailbilityCallback(Lcom/sonymobile/camera/bleremotecontrol/RemoconManager$AvailabilityCallback;)V
 
-    .line 127
+    .line 131
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/setting/fragment/RemoconPairFragment;->mRemoconManager:Lcom/sonymobile/camera/bleremotecontrol/RemoconManager;
 
     invoke-virtual {v0, v1}, Lcom/sonymobile/camera/bleremotecontrol/RemoconManager;->registerDeviceStateCallback(Lcom/sonymobile/camera/bleremotecontrol/RemoconManager$DeviceStateCallback;)V
 
-    .line 128
+    .line 132
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/setting/fragment/RemoconPairFragment;->mRemoconManager:Lcom/sonymobile/camera/bleremotecontrol/RemoconManager;
 
     invoke-virtual {v0, v1}, Lcom/sonymobile/camera/bleremotecontrol/RemoconManager;->registerKeyCallback(Lcom/sonymobile/camera/bleremotecontrol/RemoconManager$KeyCallback;)V
 
-    .line 129
+    .line 133
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/setting/fragment/RemoconPairFragment;->mRemoconManager:Lcom/sonymobile/camera/bleremotecontrol/RemoconManager;
 
     invoke-virtual {v0}, Lcom/sonymobile/camera/bleremotecontrol/RemoconManager;->stopPairing()V
 
-    .line 130
+    .line 134
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/setting/fragment/RemoconPairFragment;->mRemoconManager:Lcom/sonymobile/camera/bleremotecontrol/RemoconManager;
 
     invoke-virtual {v0}, Lcom/sonymobile/camera/bleremotecontrol/RemoconManager;->stop()V
 
-    .line 131
+    .line 135
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/view/setting/fragment/RemoconPairFragment;->requireActivity()Landroidx/fragment/app/FragmentActivity;
 
     move-result-object v0
@@ -614,10 +647,10 @@
 
     if-nez v0, :cond_0
 
-    .line 132
+    .line 136
     invoke-direct {p0}, Ljp/co/sony/mc/camera/view/setting/fragment/RemoconPairFragment;->dismissDialog()V
 
-    .line 134
+    .line 138
     :cond_0
     invoke-static {}, Ljp/co/sony/mc/camera/setting/CameraProSetting;->getInstance()Ljp/co/sony/mc/camera/setting/CameraProSetting;
 
@@ -631,10 +664,10 @@
 .method public onResume()V
     .locals 2
 
-    .line 106
+    .line 110
     invoke-super {p0}, Landroidx/fragment/app/Fragment;->onResume()V
 
-    .line 108
+    .line 112
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/view/setting/fragment/RemoconPairFragment;->getActivity()Landroidx/fragment/app/FragmentActivity;
 
     move-result-object v0
@@ -651,19 +684,19 @@
 
     invoke-virtual {v0, v1}, Landroid/view/View;->setSystemUiVisibility(I)V
 
-    .line 111
+    .line 115
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/setting/fragment/RemoconPairFragment;->mPairTimeoutTimer:Ljp/co/sony/mc/camera/view/setting/fragment/RemoconPairFragment$PairTimeoutTimer;
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/view/setting/fragment/RemoconPairFragment$PairTimeoutTimer;->-$$Nest$mstart(Ljp/co/sony/mc/camera/view/setting/fragment/RemoconPairFragment$PairTimeoutTimer;)V
 
-    .line 112
+    .line 116
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/setting/fragment/RemoconPairFragment;->mRemoconManager:Lcom/sonymobile/camera/bleremotecontrol/RemoconManager;
 
     iget-object v1, p0, Ljp/co/sony/mc/camera/view/setting/fragment/RemoconPairFragment;->mBluetoothAvailabilityCallback:Lcom/sonymobile/camera/bleremotecontrol/RemoconManager$AvailabilityCallback;
 
     invoke-virtual {v0, v1}, Lcom/sonymobile/camera/bleremotecontrol/RemoconManager;->registerAvailbilityCallback(Lcom/sonymobile/camera/bleremotecontrol/RemoconManager$AvailabilityCallback;)V
 
-    .line 113
+    .line 117
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/setting/fragment/RemoconPairFragment;->mRemoconManager:Lcom/sonymobile/camera/bleremotecontrol/RemoconManager;
 
     invoke-virtual {v0}, Lcom/sonymobile/camera/bleremotecontrol/RemoconManager;->isStarted()Z
@@ -672,28 +705,28 @@
 
     if-eqz v0, :cond_0
 
-    .line 114
+    .line 118
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/setting/fragment/RemoconPairFragment;->mRemoconManager:Lcom/sonymobile/camera/bleremotecontrol/RemoconManager;
 
     iget-object v1, p0, Ljp/co/sony/mc/camera/view/setting/fragment/RemoconPairFragment;->mDeviceStateCallback:Lcom/sonymobile/camera/bleremotecontrol/RemoconManager$DeviceStateCallback;
 
     invoke-virtual {v0, v1}, Lcom/sonymobile/camera/bleremotecontrol/RemoconManager;->registerDeviceStateCallback(Lcom/sonymobile/camera/bleremotecontrol/RemoconManager$DeviceStateCallback;)V
 
-    .line 115
+    .line 119
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/setting/fragment/RemoconPairFragment;->mRemoconManager:Lcom/sonymobile/camera/bleremotecontrol/RemoconManager;
 
     iget-object v1, p0, Ljp/co/sony/mc/camera/view/setting/fragment/RemoconPairFragment;->mKeyCallback:Lcom/sonymobile/camera/bleremotecontrol/RemoconManager$KeyCallback;
 
     invoke-virtual {v0, v1}, Lcom/sonymobile/camera/bleremotecontrol/RemoconManager;->registerKeyCallback(Lcom/sonymobile/camera/bleremotecontrol/RemoconManager$KeyCallback;)V
 
-    .line 116
+    .line 120
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/setting/fragment/RemoconPairFragment;->mRemoconManager:Lcom/sonymobile/camera/bleremotecontrol/RemoconManager;
 
     invoke-virtual {p0}, Lcom/sonymobile/camera/bleremotecontrol/RemoconManager;->startPairing()V
 
     goto :goto_0
 
-    .line 118
+    .line 122
     :cond_0
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/setting/fragment/RemoconPairFragment;->mRemoconManager:Lcom/sonymobile/camera/bleremotecontrol/RemoconManager;
 

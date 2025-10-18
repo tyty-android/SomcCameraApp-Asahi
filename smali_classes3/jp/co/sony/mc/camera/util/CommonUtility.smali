@@ -38,16 +38,16 @@
     .line 163
     const-string v0, "Can\'t get packeage info. assume user app."
 
+    const/4 v1, 0x0
+
+    const/4 v2, 0x1
+
     :try_start_0
     invoke-virtual {p0}, Landroid/content/Context;->getPackageManager()Landroid/content/pm/PackageManager;
 
-    move-result-object v1
+    move-result-object v3
 
-    const/4 v2, 0x0
-
-    const/4 v3, 0x1
-
-    if-eqz v1, :cond_3
+    if-eqz v3, :cond_3
 
     .line 166
     invoke-virtual {p0}, Landroid/content/Context;->getPackageName()Ljava/lang/String;
@@ -61,25 +61,25 @@
     move-result-object v4
 
     .line 165
-    invoke-virtual {v1, p0, v4}, Landroid/content/pm/PackageManager;->getPackageInfo(Ljava/lang/String;Landroid/content/pm/PackageManager$PackageInfoFlags;)Landroid/content/pm/PackageInfo;
+    invoke-virtual {v3, p0, v4}, Landroid/content/pm/PackageManager;->getPackageInfo(Ljava/lang/String;Landroid/content/pm/PackageManager$PackageInfoFlags;)Landroid/content/pm/PackageInfo;
 
     move-result-object p0
 
     if-eqz p0, :cond_2
 
     .line 167
-    iget-object v1, p0, Landroid/content/pm/PackageInfo;->applicationInfo:Landroid/content/pm/ApplicationInfo;
+    iget-object v3, p0, Landroid/content/pm/PackageInfo;->applicationInfo:Landroid/content/pm/ApplicationInfo;
 
-    if-eqz v1, :cond_2
+    if-eqz v3, :cond_2
 
     .line 168
     iget-object p0, p0, Landroid/content/pm/PackageInfo;->applicationInfo:Landroid/content/pm/ApplicationInfo;
 
     iget p0, p0, Landroid/content/pm/ApplicationInfo;->flags:I
 
-    and-int/lit16 v1, p0, 0x80
+    and-int/lit16 v3, p0, 0x80
 
-    if-eqz v1, :cond_0
+    if-eqz v3, :cond_0
 
     .line 171
     sget-object p0, Ljp/co/sony/mc/camera/util/CommonUtility$ApplicationType;->UPDATED_SYSTEM_APP:Ljp/co/sony/mc/camera/util/CommonUtility$ApplicationType;
@@ -87,7 +87,7 @@
     return-object p0
 
     :cond_0
-    and-int/2addr p0, v3
+    and-int/2addr p0, v2
 
     if-eqz p0, :cond_1
 
@@ -104,9 +104,9 @@
 
     .line 180
     :cond_2
-    new-array p0, v3, [Ljava/lang/String;
+    new-array p0, v2, [Ljava/lang/String;
 
-    aput-object v0, p0, v2
+    aput-object v0, p0, v1
 
     invoke-static {p0}, Ljp/co/sony/mc/camera/util/CamLog;->w([Ljava/lang/String;)V
 
@@ -117,11 +117,11 @@
 
     .line 184
     :cond_3
-    new-array p0, v3, [Ljava/lang/String;
+    new-array p0, v2, [Ljava/lang/String;
 
-    const-string v1, "Can\'t get packeage manager. assume user app."
+    const-string v3, "Can\'t get packeage manager. assume user app."
 
-    aput-object v1, p0, v2
+    aput-object v3, p0, v1
 
     invoke-static {p0}, Ljp/co/sony/mc/camera/util/CamLog;->w([Ljava/lang/String;)V
 
@@ -134,9 +134,9 @@
 
     .line 188
     :catch_0
-    filled-new-array {v0}, [Ljava/lang/String;
+    new-array p0, v2, [Ljava/lang/String;
 
-    move-result-object p0
+    aput-object v0, p0, v1
 
     invoke-static {p0}, Ljp/co/sony/mc/camera/util/CamLog;->w([Ljava/lang/String;)V
 
@@ -190,28 +190,32 @@
 
     if-eqz p1, :cond_1
 
+    const/4 p1, 0x1
+
     .line 113
-    new-instance p1, Ljava/lang/StringBuilder;
+    new-array p1, p1, [Ljava/lang/String;
 
-    const-string p2, "resolveInfo.activityInfo.packageName: "
+    new-instance p2, Ljava/lang/StringBuilder;
 
-    invoke-direct {p1, p2}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+    const-string v0, "resolveInfo.activityInfo.packageName: "
 
-    iget-object p2, p0, Landroid/content/pm/ResolveInfo;->activityInfo:Landroid/content/pm/ActivityInfo;
+    invoke-direct {p2, v0}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
-    iget-object p2, p2, Landroid/content/pm/ActivityInfo;->packageName:Ljava/lang/String;
+    iget-object v0, p0, Landroid/content/pm/ResolveInfo;->activityInfo:Landroid/content/pm/ActivityInfo;
 
-    invoke-virtual {p1, p2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    iget-object v0, v0, Landroid/content/pm/ActivityInfo;->packageName:Ljava/lang/String;
 
-    move-result-object p1
+    invoke-virtual {p2, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {p1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    move-result-object p2
 
-    move-result-object p1
+    invoke-virtual {p2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    filled-new-array {p1}, [Ljava/lang/String;
+    move-result-object p2
 
-    move-result-object p1
+    const/4 v0, 0x0
+
+    aput-object p2, p1, v0
 
     invoke-static {p1}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
@@ -221,8 +225,6 @@
     move-result-object p1
 
     array-length p2, p1
-
-    const/4 v0, 0x0
 
     :goto_0
     if-ge v0, p2, :cond_1
@@ -295,6 +297,33 @@
     return-object p0
 .end method
 
+.method public static getGoogleLensIntent()Landroid/content/Intent;
+    .locals 2
+
+    .line 273
+    new-instance v0, Landroid/content/Intent;
+
+    const-string v1, "android.intent.action.VIEW"
+
+    invoke-direct {v0, v1}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
+
+    .line 274
+    const-string v1, "google://lens"
+
+    invoke-static {v1}, Landroid/net/Uri;->parse(Ljava/lang/String;)Landroid/net/Uri;
+
+    move-result-object v1
+
+    invoke-virtual {v0, v1}, Landroid/content/Intent;->setData(Landroid/net/Uri;)Landroid/content/Intent;
+
+    .line 275
+    const-string v1, "com.google.android.googlequicksearchbox"
+
+    invoke-virtual {v0, v1}, Landroid/content/Intent;->setPackage(Ljava/lang/String;)Landroid/content/Intent;
+
+    return-object v0
+.end method
+
 .method public static getUsedMemory()J
     .locals 4
 
@@ -340,38 +369,38 @@
 
     move-result-object p0
 
-    if-eqz p0, :cond_0
+    const/4 v0, 0x1
 
-    const/4 p0, 0x1
+    if-eqz p0, :cond_0
 
     goto :goto_0
 
     .line 69
     :cond_0
-    new-instance p0, Ljava/lang/StringBuilder;
+    new-array p0, v0, [Ljava/lang/String;
 
-    const-string v0, "isActivityAvailable: false : "
+    new-instance v0, Ljava/lang/StringBuilder;
 
-    invoke-direct {p0, v0}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+    const-string v1, "isActivityAvailable: false : "
 
-    invoke-virtual {p0, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
-    move-result-object p0
+    invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {p0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    move-result-object p1
 
-    move-result-object p0
+    invoke-virtual {p1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    filled-new-array {p0}, [Ljava/lang/String;
+    move-result-object p1
 
-    move-result-object p0
+    const/4 v0, 0x0
+
+    aput-object p1, p0, v0
 
     invoke-static {p0}, Ljp/co/sony/mc/camera/util/CamLog;->w([Ljava/lang/String;)V
 
-    const/4 p0, 0x0
-
     :goto_0
-    return p0
+    return v0
 .end method
 
 .method public static isCoreCameraApp(Landroid/content/Context;)Z
@@ -581,6 +610,35 @@
     const/4 p0, 0x0
 
     return p0
+.end method
+
+.method public static isGoogleLensAvailable(Landroid/content/Context;)Z
+    .locals 2
+
+    .line 286
+    invoke-virtual {p0}, Landroid/content/Context;->getPackageManager()Landroid/content/pm/PackageManager;
+
+    move-result-object p0
+
+    const/4 v0, 0x0
+
+    if-eqz p0, :cond_0
+
+    .line 288
+    invoke-static {}, Ljp/co/sony/mc/camera/util/CommonUtility;->getGoogleLensIntent()Landroid/content/Intent;
+
+    move-result-object v1
+
+    invoke-virtual {p0, v1, v0}, Landroid/content/pm/PackageManager;->resolveActivity(Landroid/content/Intent;I)Landroid/content/pm/ResolveInfo;
+
+    move-result-object p0
+
+    if-eqz p0, :cond_0
+
+    const/4 v0, 0x1
+
+    :cond_0
+    return v0
 .end method
 
 .method public static isSystemApp(Landroid/content/Context;)Z

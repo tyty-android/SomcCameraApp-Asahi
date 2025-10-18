@@ -21,7 +21,7 @@
 .method constructor <init>()V
     .locals 0
 
-    .line 1549
+    .line 1555
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -42,8 +42,8 @@
         }
     .end annotation
 
-    .line 1553
-    invoke-static {}, Ljp/co/sony/mc/camera/configuration/parameters/FastCapture;->getDefault()Ljp/co/sony/mc/camera/configuration/parameters/FastCapture;
+    .line 1559
+    invoke-static {}, Ljp/co/sony/mc/camera/configuration/parameters/GridLine;->getDefaultValue()Ljp/co/sony/mc/camera/configuration/parameters/GridLine;
 
     move-result-object p0
 

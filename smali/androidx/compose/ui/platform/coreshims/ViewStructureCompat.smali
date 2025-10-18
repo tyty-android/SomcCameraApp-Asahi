@@ -57,7 +57,7 @@
 .method public setContentDescription(Ljava/lang/CharSequence;)V
     .locals 0
 
-    .line 120
+    .line 141
     iget-object p0, p0, Landroidx/compose/ui/platform/coreshims/ViewStructureCompat;->mWrappedObj:Ljava/lang/Object;
 
     check-cast p0, Landroid/view/ViewStructure;
@@ -70,7 +70,7 @@
 .method public setDimens(IIIIII)V
     .locals 7
 
-    .line 144
+    .line 165
     iget-object p0, p0, Landroidx/compose/ui/platform/coreshims/ViewStructureCompat;->mWrappedObj:Ljava/lang/Object;
 
     move-object v0, p0
@@ -103,6 +103,19 @@
     check-cast p0, Landroid/view/ViewStructure;
 
     invoke-static {p0, p1}, Landroidx/compose/ui/platform/coreshims/ViewStructureCompat$Api23Impl;->setText(Landroid/view/ViewStructure;Ljava/lang/CharSequence;)V
+
+    return-void
+.end method
+
+.method public setTextStyle(FIII)V
+    .locals 0
+
+    .line 125
+    iget-object p0, p0, Landroidx/compose/ui/platform/coreshims/ViewStructureCompat;->mWrappedObj:Ljava/lang/Object;
+
+    check-cast p0, Landroid/view/ViewStructure;
+
+    invoke-static {p0, p1, p2, p3, p4}, Landroidx/compose/ui/platform/coreshims/ViewStructureCompat$Api23Impl;->setTextStyle(Landroid/view/ViewStructure;FIII)V
 
     return-void
 .end method

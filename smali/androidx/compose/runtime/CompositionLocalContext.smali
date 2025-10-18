@@ -44,11 +44,7 @@
 .end method
 
 .method public constructor <init>(Landroidx/compose/runtime/PersistentCompositionLocalMap;)V
-    .locals 1
-
-    const-string v0, "compositionLocals"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+    .locals 0
 
     .line 207
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V

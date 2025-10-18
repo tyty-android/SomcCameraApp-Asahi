@@ -41,7 +41,7 @@
 .method private constructor <init>()V
     .locals 0
 
-    .line 139
+    .line 136
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -60,7 +60,7 @@
 .method public final getNone()Landroidx/compose/animation/EnterTransition;
     .locals 0
 
-    .line 148
+    .line 145
     invoke-static {}, Landroidx/compose/animation/EnterTransition;->access$getNone$cp()Landroidx/compose/animation/EnterTransition;
 
     move-result-object p0

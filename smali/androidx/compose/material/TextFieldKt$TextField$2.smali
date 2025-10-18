@@ -59,10 +59,6 @@
 
 
 # instance fields
-.field final synthetic $$dirty:I
-
-.field final synthetic $$dirty1:I
-
 .field final synthetic $colors:Landroidx/compose/material/TextFieldColors;
 
 .field final synthetic $enabled:Z
@@ -127,7 +123,7 @@
 
 
 # direct methods
-.method constructor <init>(Ljava/lang/String;ZZLandroidx/compose/ui/text/input/VisualTransformation;Landroidx/compose/foundation/interaction/MutableInteractionSource;ZLkotlin/jvm/functions/Function2;Lkotlin/jvm/functions/Function2;Lkotlin/jvm/functions/Function2;Lkotlin/jvm/functions/Function2;Landroidx/compose/material/TextFieldColors;II)V
+.method constructor <init>(Ljava/lang/String;ZZLandroidx/compose/ui/text/input/VisualTransformation;Landroidx/compose/foundation/interaction/MutableInteractionSource;ZLkotlin/jvm/functions/Function2;Lkotlin/jvm/functions/Function2;Lkotlin/jvm/functions/Function2;Lkotlin/jvm/functions/Function2;Landroidx/compose/material/TextFieldColors;)V
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -166,7 +162,7 @@
             "Lkotlin/Unit;",
             ">;",
             "Landroidx/compose/material/TextFieldColors;",
-            "II)V"
+            ")V"
         }
     .end annotation
 
@@ -192,10 +188,6 @@
 
     iput-object p11, p0, Landroidx/compose/material/TextFieldKt$TextField$2;->$colors:Landroidx/compose/material/TextFieldColors;
 
-    iput p12, p0, Landroidx/compose/material/TextFieldKt$TextField$2;->$$dirty:I
-
-    iput p13, p0, Landroidx/compose/material/TextFieldKt$TextField$2;->$$dirty1:I
-
     const/4 p1, 0x3
 
     invoke-direct {p0, p1}, Lkotlin/jvm/internal/Lambda;-><init>(I)V
@@ -208,7 +200,7 @@
 .method public bridge synthetic invoke(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
 
-    .line 210
+    .line 213
     check-cast p1, Lkotlin/jvm/functions/Function2;
 
     check-cast p2, Landroidx/compose/runtime/Composer;
@@ -245,19 +237,15 @@
 
     move-object/from16 v0, p0
 
-    move-object/from16 v3, p1
-
     move-object/from16 v15, p2
 
-    const-string v1, "innerTextField"
-
-    invoke-static {v3, v1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string v1, "C211@10686L538:TextField.kt#jmzs0o"
+    const-string v1, "C214@10860L538:TextField.kt#jmzs0o"
 
     invoke-static {v15, v1}, Landroidx/compose/runtime/ComposerKt;->sourceInformation(Landroidx/compose/runtime/Composer;Ljava/lang/String;)V
 
     and-int/lit8 v1, p3, 0xe
+
+    move-object/from16 v3, p1
 
     if-nez v1, :cond_1
 
@@ -291,7 +279,7 @@
 
     if-ne v1, v2, :cond_3
 
-    .line 212
+    .line 215
     invoke-interface/range {p2 .. p2}, Landroidx/compose/runtime/Composer;->getSkipping()Z
 
     move-result v1
@@ -300,13 +288,13 @@
 
     goto :goto_2
 
-    .line 225
+    .line 228
     :cond_2
     invoke-interface/range {p2 .. p2}, Landroidx/compose/runtime/Composer;->skipToGroupEnd()V
 
-    goto/16 :goto_3
+    goto :goto_3
 
-    .line 212
+    .line 215
     :cond_3
     :goto_2
     invoke-static {}, Landroidx/compose/runtime/ComposerKt;->isTraceInProgress()Z
@@ -317,7 +305,7 @@
 
     const/4 v1, -0x1
 
-    const-string v2, "androidx.compose.material.TextField.<anonymous> (TextField.kt:209)"
+    const-string v2, "androidx.compose.material.TextField.<anonymous> (TextField.kt:214)"
 
     const v4, 0x3affac62
 
@@ -326,124 +314,46 @@
     :cond_4
     sget-object v1, Landroidx/compose/material/TextFieldDefaults;->INSTANCE:Landroidx/compose/material/TextFieldDefaults;
 
-    .line 213
+    .line 216
     iget-object v2, v0, Landroidx/compose/material/TextFieldKt$TextField$2;->$value:Ljava/lang/String;
 
-    .line 221
+    .line 224
     iget-boolean v4, v0, Landroidx/compose/material/TextFieldKt$TextField$2;->$enabled:Z
 
-    .line 220
+    .line 223
     iget-boolean v5, v0, Landroidx/compose/material/TextFieldKt$TextField$2;->$singleLine:Z
 
-    .line 214
+    .line 217
     iget-object v6, v0, Landroidx/compose/material/TextFieldKt$TextField$2;->$visualTransformation:Landroidx/compose/ui/text/input/VisualTransformation;
 
-    .line 223
+    .line 226
     iget-object v7, v0, Landroidx/compose/material/TextFieldKt$TextField$2;->$interactionSource:Landroidx/compose/foundation/interaction/MutableInteractionSource;
 
     check-cast v7, Landroidx/compose/foundation/interaction/InteractionSource;
 
-    .line 222
+    .line 225
     iget-boolean v8, v0, Landroidx/compose/material/TextFieldKt$TextField$2;->$isError:Z
 
-    .line 217
+    .line 220
     iget-object v9, v0, Landroidx/compose/material/TextFieldKt$TextField$2;->$label:Lkotlin/jvm/functions/Function2;
 
-    .line 216
+    .line 219
     iget-object v10, v0, Landroidx/compose/material/TextFieldKt$TextField$2;->$placeholder:Lkotlin/jvm/functions/Function2;
 
-    .line 218
+    .line 221
     iget-object v11, v0, Landroidx/compose/material/TextFieldKt$TextField$2;->$leadingIcon:Lkotlin/jvm/functions/Function2;
 
-    .line 219
+    .line 222
     iget-object v12, v0, Landroidx/compose/material/TextFieldKt$TextField$2;->$trailingIcon:Lkotlin/jvm/functions/Function2;
 
-    .line 224
+    .line 227
     iget-object v13, v0, Landroidx/compose/material/TextFieldKt$TextField$2;->$colors:Landroidx/compose/material/TextFieldColors;
 
-    iget v3, v0, Landroidx/compose/material/TextFieldKt$TextField$2;->$$dirty:I
+    shl-int/lit8 v0, v14, 0x3
 
-    and-int/lit8 v16, v3, 0xe
+    and-int/lit8 v16, v0, 0x70
 
-    shl-int/lit8 v14, v14, 0x3
-
-    and-int/lit8 v14, v14, 0x70
-
-    or-int v14, v16, v14
-
-    shr-int/lit8 v15, v3, 0x3
-
-    and-int/lit16 v15, v15, 0x380
-
-    or-int/2addr v14, v15
-
-    iget v0, v0, Landroidx/compose/material/TextFieldKt$TextField$2;->$$dirty1:I
-
-    shr-int/lit8 v15, v0, 0x3
-
-    and-int/lit16 v15, v15, 0x1c00
-
-    or-int/2addr v14, v15
-
-    shl-int/lit8 v15, v0, 0x9
-
-    const v16, 0xe000
-
-    and-int v15, v15, v16
-
-    or-int/2addr v14, v15
-
-    shr-int/lit8 v15, v0, 0x6
-
-    const/high16 v16, 0x70000
-
-    and-int v15, v15, v16
-
-    or-int/2addr v14, v15
-
-    shl-int/lit8 v15, v0, 0x12
-
-    const/high16 v16, 0x380000
-
-    and-int v15, v15, v16
-
-    or-int/2addr v14, v15
-
-    shl-int/lit8 v15, v3, 0x3
-
-    const/high16 v16, 0x1c00000
-
-    and-int v15, v15, v16
-
-    or-int/2addr v14, v15
-
-    shl-int/lit8 v15, v3, 0x3
-
-    const/high16 v16, 0xe000000
-
-    and-int v15, v15, v16
-
-    or-int/2addr v14, v15
-
-    shl-int/lit8 v15, v3, 0x3
-
-    const/high16 v16, 0x70000000
-
-    and-int v15, v15, v16
-
-    or-int v16, v14, v15
-
-    shr-int/lit8 v3, v3, 0x1b
-
-    and-int/lit8 v3, v3, 0xe
-
-    or-int/lit16 v3, v3, 0xc00
-
-    shr-int/lit8 v0, v0, 0x18
-
-    and-int/lit8 v0, v0, 0x70
-
-    or-int v17, v3, v0
+    const/16 v17, 0xc00
 
     const/16 v18, 0x1000
 
@@ -453,7 +363,7 @@
 
     move-object/from16 v15, p2
 
-    .line 212
+    .line 215
     invoke-virtual/range {v1 .. v18}, Landroidx/compose/material/TextFieldDefaults;->TextFieldDecorationBox(Ljava/lang/String;Lkotlin/jvm/functions/Function2;ZZLandroidx/compose/ui/text/input/VisualTransformation;Landroidx/compose/foundation/interaction/InteractionSource;ZLkotlin/jvm/functions/Function2;Lkotlin/jvm/functions/Function2;Lkotlin/jvm/functions/Function2;Lkotlin/jvm/functions/Function2;Landroidx/compose/material/TextFieldColors;Landroidx/compose/foundation/layout/PaddingValues;Landroidx/compose/runtime/Composer;III)V
 
     invoke-static {}, Landroidx/compose/runtime/ComposerKt;->isTraceInProgress()Z

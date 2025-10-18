@@ -7,6 +7,7 @@
 .annotation system Ldalvik/annotation/MemberClasses;
     value = {
         Ljp/co/sony/mc/camera/view/hint/HintTextContent$HintPriority;,
+        Ljp/co/sony/mc/camera/view/hint/HintTextContent$DisplayLocation;,
         Ljp/co/sony/mc/camera/view/hint/HintTextContent$MessageWrapType;
     }
 .end annotation
@@ -55,11 +56,11 @@
 
     return-void
 
-    .line 48
+    .line 53
     :cond_0
     invoke-virtual {p1, p0}, Ljp/co/sony/mc/camera/view/hint/HintTextView;->setContent(Ljp/co/sony/mc/camera/view/hint/HintTextContent;)V
 
-    .line 49
+    .line 54
     invoke-virtual {p1}, Ljp/co/sony/mc/camera/view/hint/HintTextView;->getVisibility()I
 
     move-result p0
@@ -68,11 +69,8 @@
 
     const/4 p0, 0x0
 
-    .line 50
+    .line 55
     invoke-virtual {p1, p0}, Ljp/co/sony/mc/camera/view/hint/HintTextView;->setVisibility(I)V
-
-    .line 51
-    invoke-virtual {p1}, Ljp/co/sony/mc/camera/view/hint/HintTextView;->setMoveFocusToMessage()V
 
     :cond_1
     return-void
@@ -81,7 +79,7 @@
 .method public canDisplayInMoreUiMode()Z
     .locals 0
 
-    .line 164
+    .line 172
     iget-boolean p0, p0, Ljp/co/sony/mc/camera/view/hint/HintTextContent;->mDisplayInMoreUiMode:Z
 
     return p0
@@ -102,7 +100,7 @@
 
     return-void
 
-    .line 60
+    .line 64
     :cond_0
     invoke-virtual {p1}, Ljp/co/sony/mc/camera/view/hint/HintTextView;->getVisibility()I
 
@@ -112,7 +110,7 @@
 
     if-eq p0, v0, :cond_1
 
-    .line 61
+    .line 65
     invoke-virtual {p1, v0}, Ljp/co/sony/mc/camera/view/hint/HintTextView;->setVisibility(I)V
 
     :cond_1
@@ -122,12 +120,12 @@
 .method public equals(Ljava/lang/Object;)Z
     .locals 1
 
-    .line 178
+    .line 186
     instance-of v0, p1, Ljp/co/sony/mc/camera/view/hint/HintTextContent;
 
     if-eqz v0, :cond_0
 
-    .line 179
+    .line 187
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/view/hint/HintTextContent;->getTag()Ljava/lang/String;
 
     move-result-object p0
@@ -148,6 +146,15 @@
     const/4 p0, 0x0
 
     return p0
+.end method
+
+.method public getDisplayLocation()Ljp/co/sony/mc/camera/view/hint/HintTextContent$DisplayLocation;
+    .locals 0
+
+    .line 140
+    sget-object p0, Ljp/co/sony/mc/camera/view/hint/HintTextContent$DisplayLocation;->TOP:Ljp/co/sony/mc/camera/view/hint/HintTextContent$DisplayLocation;
+
+    return-object p0
 .end method
 
 .method public getFadeDuration()I
@@ -236,7 +243,7 @@
 .method public getPriority()Ljp/co/sony/mc/camera/view/hint/HintTextContent$HintPriority;
     .locals 0
 
-    .line 40
+    .line 45
     sget-object p0, Ljp/co/sony/mc/camera/view/hint/HintTextContent$HintPriority;->LOW:Ljp/co/sony/mc/camera/view/hint/HintTextContent$HintPriority;
 
     return-object p0
@@ -277,7 +284,7 @@
 .method public getTag()Ljava/lang/String;
     .locals 0
 
-    .line 124
+    .line 128
     invoke-virtual {p0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     move-result-object p0
@@ -300,7 +307,7 @@
 .method public hashCode()I
     .locals 0
 
-    .line 186
+    .line 194
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/view/hint/HintTextContent;->getTag()Ljava/lang/String;
 
     move-result-object p0
@@ -329,7 +336,7 @@
 .method public isTransparentBackground()Z
     .locals 0
 
-    .line 157
+    .line 165
     iget-boolean p0, p0, Ljp/co/sony/mc/camera/view/hint/HintTextContent;->mTransparentBackground:Z
 
     return p0

@@ -29,6 +29,8 @@
 
 
 # static fields
+.field public static final $stable:I
+
 .field public static final INSTANCE:Landroidx/compose/ui/platform/WrapperRenderNodeLayerHelperMethods;
 
 
@@ -48,7 +50,7 @@
 .method private constructor <init>()V
     .locals 0
 
-    .line 375
+    .line 406
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -59,11 +61,7 @@
 .method public final onDescendantInvalidated(Landroidx/compose/ui/platform/AndroidComposeView;)V
     .locals 0
 
-    const-string p0, "ownerView"
-
-    invoke-static {p1, p0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 379
+    .line 410
     invoke-virtual {p1}, Landroidx/compose/ui/platform/AndroidComposeView;->getParent()Landroid/view/ViewParent;
 
     move-result-object p0

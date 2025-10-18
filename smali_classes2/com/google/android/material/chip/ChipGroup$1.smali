@@ -25,7 +25,7 @@
 .method constructor <init>(Lcom/google/android/material/chip/ChipGroup;)V
     .locals 0
 
-    .line 157
+    .line 162
     iput-object p1, p0, Lcom/google/android/material/chip/ChipGroup$1;->this$0:Lcom/google/android/material/chip/ChipGroup;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -46,7 +46,7 @@
         }
     .end annotation
 
-    .line 160
+    .line 165
     iget-object p1, p0, Lcom/google/android/material/chip/ChipGroup$1;->this$0:Lcom/google/android/material/chip/ChipGroup;
 
     invoke-static {p1}, Lcom/google/android/material/chip/ChipGroup;->access$100(Lcom/google/android/material/chip/ChipGroup;)Lcom/google/android/material/chip/ChipGroup$OnCheckedStateChangeListener;
@@ -55,7 +55,7 @@
 
     if-eqz p1, :cond_0
 
-    .line 161
+    .line 166
     iget-object p1, p0, Lcom/google/android/material/chip/ChipGroup$1;->this$0:Lcom/google/android/material/chip/ChipGroup;
 
     invoke-static {p1}, Lcom/google/android/material/chip/ChipGroup;->access$100(Lcom/google/android/material/chip/ChipGroup;)Lcom/google/android/material/chip/ChipGroup$OnCheckedStateChangeListener;
@@ -64,7 +64,7 @@
 
     iget-object v0, p0, Lcom/google/android/material/chip/ChipGroup$1;->this$0:Lcom/google/android/material/chip/ChipGroup;
 
-    .line 163
+    .line 168
     invoke-static {v0}, Lcom/google/android/material/chip/ChipGroup;->access$200(Lcom/google/android/material/chip/ChipGroup;)Lcom/google/android/material/internal/CheckableGroup;
 
     move-result-object v1
@@ -75,7 +75,7 @@
 
     move-result-object p0
 
-    .line 161
+    .line 166
     invoke-interface {p1, v0, p0}, Lcom/google/android/material/chip/ChipGroup$OnCheckedStateChangeListener;->onCheckedChanged(Lcom/google/android/material/chip/ChipGroup;Ljava/util/List;)V
 
     :cond_0

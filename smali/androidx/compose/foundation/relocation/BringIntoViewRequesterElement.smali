@@ -53,16 +53,12 @@
 
 # direct methods
 .method public constructor <init>(Landroidx/compose/foundation/relocation/BringIntoViewRequester;)V
-    .locals 1
+    .locals 0
 
-    const-string v0, "requester"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 118
+    .line 127
     invoke-direct {p0}, Landroidx/compose/ui/node/ModifierNodeElement;-><init>()V
 
-    .line 117
+    .line 126
     iput-object p1, p0, Landroidx/compose/foundation/relocation/BringIntoViewRequesterElement;->requester:Landroidx/compose/foundation/relocation/BringIntoViewRequester;
 
     return-void
@@ -73,7 +69,7 @@
 .method public create()Landroidx/compose/foundation/relocation/BringIntoViewRequesterNode;
     .locals 1
 
-    .line 120
+    .line 129
     new-instance v0, Landroidx/compose/foundation/relocation/BringIntoViewRequesterNode;
 
     iget-object p0, p0, Landroidx/compose/foundation/relocation/BringIntoViewRequesterElement;->requester:Landroidx/compose/foundation/relocation/BringIntoViewRequester;
@@ -86,7 +82,7 @@
 .method public bridge synthetic create()Landroidx/compose/ui/Modifier$Node;
     .locals 0
 
-    .line 115
+    .line 124
     invoke-virtual {p0}, Landroidx/compose/foundation/relocation/BringIntoViewRequesterElement;->create()Landroidx/compose/foundation/relocation/BringIntoViewRequesterNode;
 
     move-result-object p0
@@ -101,7 +97,7 @@
 
     if-eq p0, p1, :cond_1
 
-    .line 134
+    .line 143
     instance-of v0, p1, Landroidx/compose/foundation/relocation/BringIntoViewRequesterElement;
 
     if-eqz v0, :cond_0
@@ -136,7 +132,7 @@
 .method public hashCode()I
     .locals 0
 
-    .line 138
+    .line 147
     iget-object p0, p0, Landroidx/compose/foundation/relocation/BringIntoViewRequesterElement;->requester:Landroidx/compose/foundation/relocation/BringIntoViewRequester;
 
     invoke-virtual {p0}, Ljava/lang/Object;->hashCode()I
@@ -149,16 +145,12 @@
 .method public inspectableProperties(Landroidx/compose/ui/platform/InspectorInfo;)V
     .locals 1
 
-    const-string v0, "<this>"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 128
+    .line 137
     const-string v0, "bringIntoViewRequester"
 
     invoke-virtual {p1, v0}, Landroidx/compose/ui/platform/InspectorInfo;->setName(Ljava/lang/String;)V
 
-    .line 129
+    .line 138
     invoke-virtual {p1}, Landroidx/compose/ui/platform/InspectorInfo;->getProperties()Landroidx/compose/ui/platform/ValueElementSequence;
 
     move-result-object p1
@@ -171,13 +163,9 @@
 .end method
 
 .method public update(Landroidx/compose/foundation/relocation/BringIntoViewRequesterNode;)V
-    .locals 1
+    .locals 0
 
-    const-string v0, "node"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 124
+    .line 133
     iget-object p0, p0, Landroidx/compose/foundation/relocation/BringIntoViewRequesterElement;->requester:Landroidx/compose/foundation/relocation/BringIntoViewRequester;
 
     invoke-virtual {p1, p0}, Landroidx/compose/foundation/relocation/BringIntoViewRequesterNode;->updateRequester(Landroidx/compose/foundation/relocation/BringIntoViewRequester;)V
@@ -188,7 +176,7 @@
 .method public bridge synthetic update(Landroidx/compose/ui/Modifier$Node;)V
     .locals 0
 
-    .line 115
+    .line 124
     check-cast p1, Landroidx/compose/foundation/relocation/BringIntoViewRequesterNode;
 
     invoke-virtual {p0, p1}, Landroidx/compose/foundation/relocation/BringIntoViewRequesterElement;->update(Landroidx/compose/foundation/relocation/BringIntoViewRequesterNode;)V

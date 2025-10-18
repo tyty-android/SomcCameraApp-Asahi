@@ -144,7 +144,7 @@
 .end method
 
 .method public varargs handleCameraClose(Ljp/co/sony/mc/camera/device/state/DeviceStateContext;[Ljava/lang/Object;)V
-    .locals 4
+    .locals 6
 
     const/4 p2, 0x1
 
@@ -154,101 +154,101 @@
     .line 63
     invoke-virtual {p1}, Ljp/co/sony/mc/camera/device/state/DeviceStateContext;->getCameraInfo()Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CameraDeviceInfo;
 
-    move-result-object p2
+    move-result-object v0
 
-    invoke-virtual {p2}, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CameraDeviceInfo;->getSessionId()Ljp/co/sony/mc/camera/device/CameraDeviceHandler$CameraSessionId;
+    invoke-virtual {v0}, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CameraDeviceInfo;->getSessionId()Ljp/co/sony/mc/camera/device/CameraDeviceHandler$CameraSessionId;
 
-    move-result-object p2
+    move-result-object v0
 
     .line 64
     invoke-virtual {p1}, Ljp/co/sony/mc/camera/device/state/DeviceStateContext;->getCaptureSessionInfo()Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CaptureSessionInfo;
 
-    move-result-object v0
+    move-result-object v1
 
     .line 65
     invoke-virtual {p1}, Ljp/co/sony/mc/camera/device/state/DeviceStateContext;->getCameraDeviceHandlerCallback()Ljp/co/sony/mc/camera/device/state/IDeviceStateMachineCallback;
 
-    move-result-object v1
+    move-result-object v2
 
     .line 67
     invoke-virtual {p1}, Ljp/co/sony/mc/camera/device/state/DeviceStateContext;->getCaptureProcessQueue()Ljava/util/Deque;
 
-    move-result-object v2
+    move-result-object v3
 
     .line 68
-    invoke-interface {v2}, Ljava/util/Deque;->isEmpty()Z
+    invoke-interface {v3}, Ljava/util/Deque;->isEmpty()Z
 
-    move-result v3
+    move-result v4
 
-    if-nez v3, :cond_0
+    if-nez v4, :cond_0
 
     .line 69
-    invoke-interface {v2}, Ljava/util/Deque;->getLast()Ljava/lang/Object;
+    invoke-interface {v3}, Ljava/util/Deque;->getLast()Ljava/lang/Object;
 
-    move-result-object v2
+    move-result-object v3
 
-    check-cast v2, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CaptureProcessAdapter;
+    check-cast v3, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CaptureProcessAdapter;
 
-    invoke-virtual {v2}, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CaptureProcessAdapter;->shutdown()V
+    invoke-virtual {v3}, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CaptureProcessAdapter;->shutdown()V
 
     .line 73
     :cond_0
-    iget-boolean v2, p0, Ljp/co/sony/mc/camera/device/state/DeviceStateBurstCapture;->mIsErrorOccurred:Z
+    iget-boolean v3, p0, Ljp/co/sony/mc/camera/device/state/DeviceStateBurstCapture;->mIsErrorOccurred:Z
 
-    if-eqz v2, :cond_1
+    const/4 v4, 0x0
+
+    if-eqz v3, :cond_1
 
     .line 74
-    const-string v2, "Aborted burst capture"
+    new-array v3, p2, [Ljava/lang/String;
 
-    filled-new-array {v2}, [Ljava/lang/String;
+    const-string v5, "Aborted burst capture"
 
-    move-result-object v2
+    aput-object v5, v3, v4
 
-    invoke-static {v2}, Ljp/co/sony/mc/camera/util/CamLog;->w([Ljava/lang/String;)V
+    invoke-static {v3}, Ljp/co/sony/mc/camera/util/CamLog;->w([Ljava/lang/String;)V
 
     .line 75
     invoke-virtual {p1}, Ljp/co/sony/mc/camera/device/state/DeviceStateContext;->cancelCaptureRequest()V
 
     .line 76
-    invoke-virtual {v0}, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CaptureSessionInfo;->discardFreeBuffersForCaptureReader()V
+    invoke-virtual {v1}, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CaptureSessionInfo;->discardFreeBuffersForCaptureReader()V
 
     .line 77
-    invoke-virtual {v0}, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CaptureSessionInfo;->resetCaptureImageAvailableListener()V
+    invoke-virtual {v1}, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CaptureSessionInfo;->resetCaptureImageAvailableListener()V
 
     .line 80
     :cond_1
     invoke-virtual {p1}, Ljp/co/sony/mc/camera/device/state/DeviceStateContext;->isHighPerformanceMode()Z
 
-    move-result v0
+    move-result v1
 
-    if-nez v0, :cond_2
-
-    const/4 v0, 0x0
+    if-nez v1, :cond_2
 
     .line 81
-    invoke-virtual {p1, v0}, Ljp/co/sony/mc/camera/device/state/DeviceStateContext;->publishBurstShooting(Z)V
+    invoke-virtual {p1, v4}, Ljp/co/sony/mc/camera/device/state/DeviceStateContext;->publishBurstShooting(Z)V
 
     goto :goto_0
 
     .line 83
     :cond_2
-    sget-boolean v0, Ljp/co/sony/mc/camera/util/CamLog;->DEBUG:Z
+    sget-boolean v1, Ljp/co/sony/mc/camera/util/CamLog;->DEBUG:Z
 
-    if-eqz v0, :cond_3
+    if-eqz v1, :cond_3
 
     .line 84
-    const-string v0, "Now is in high performance mode. So does not publish burst-shooting off"
+    new-array p2, p2, [Ljava/lang/String;
 
-    filled-new-array {v0}, [Ljava/lang/String;
+    const-string v1, "Now is in high performance mode. So does not publish burst-shooting off"
 
-    move-result-object v0
+    aput-object v1, p2, v4
 
-    invoke-static {v0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
+    invoke-static {p2}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
     .line 88
     :cond_3
     :goto_0
-    invoke-interface {v1, p2}, Ljp/co/sony/mc/camera/device/state/IDeviceStateMachineCallback;->onBurstCaptureDone(Ljp/co/sony/mc/camera/device/CameraDeviceHandler$CameraSessionId;)V
+    invoke-interface {v2, v0}, Ljp/co/sony/mc/camera/device/state/IDeviceStateMachineCallback;->onBurstCaptureDone(Ljp/co/sony/mc/camera/device/CameraDeviceHandler$CameraSessionId;)V
 
     .line 89
     invoke-virtual {p1}, Ljp/co/sony/mc/camera/device/state/DeviceStateContext;->removePrepareBurstStateChecker()Z
@@ -342,19 +342,19 @@
 .end method
 
 .method public varargs handleError(Ljp/co/sony/mc/camera/device/state/DeviceStateContext;[Ljava/lang/Object;)V
-    .locals 3
+    .locals 5
 
     const/4 v0, 0x0
 
     .line 269
-    aget-object v0, p2, v0
+    aget-object v1, p2, v0
 
-    check-cast v0, Ljava/lang/String;
+    check-cast v1, Ljava/lang/String;
 
-    const/4 v1, 0x1
+    const/4 v2, 0x1
 
     .line 270
-    aget-object p2, p2, v1
+    aget-object p2, p2, v2
 
     check-cast p2, Ljava/lang/Integer;
 
@@ -363,21 +363,23 @@
     move-result p2
 
     .line 271
-    new-instance v2, Ljava/lang/StringBuilder;
+    new-array v3, v2, [Ljava/lang/String;
 
-    invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
+    new-instance v4, Ljava/lang/StringBuilder;
 
-    invoke-virtual {v2, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-direct {v4}, Ljava/lang/StringBuilder;-><init>()V
 
-    move-result-object v0
+    invoke-virtual {v4, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    const-string v2, " errorCode:"
+    move-result-object v1
 
-    invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    const-string v4, " errorCode:"
 
-    move-result-object v0
+    invoke-virtual {v1, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v0, p2}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+    move-result-object v1
+
+    invoke-virtual {v1, p2}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
     move-result-object p2
 
@@ -385,17 +387,15 @@
 
     move-result-object p2
 
-    filled-new-array {p2}, [Ljava/lang/String;
+    aput-object p2, v3, v0
 
-    move-result-object p2
-
-    invoke-static {p2}, Ljp/co/sony/mc/camera/util/CamLog;->e([Ljava/lang/String;)V
+    invoke-static {v3}, Ljp/co/sony/mc/camera/util/CamLog;->e([Ljava/lang/String;)V
 
     .line 273
-    iput-boolean v1, p0, Ljp/co/sony/mc/camera/device/state/DeviceStateBurstCapture;->mIsErrorOccurred:Z
+    iput-boolean v2, p0, Ljp/co/sony/mc/camera/device/state/DeviceStateBurstCapture;->mIsErrorOccurred:Z
 
     .line 276
-    iput-boolean v1, p0, Ljp/co/sony/mc/camera/device/state/DeviceStateBurstCapture;->mIsBurstFinished:Z
+    iput-boolean v2, p0, Ljp/co/sony/mc/camera/device/state/DeviceStateBurstCapture;->mIsBurstFinished:Z
 
     .line 277
     invoke-direct {p0, p1}, Ljp/co/sony/mc/camera/device/state/DeviceStateBurstCapture;->finishBurst(Ljp/co/sony/mc/camera/device/state/DeviceStateContext;)V
@@ -488,14 +488,16 @@
     :cond_1
     iget-boolean p0, p0, Ljp/co/sony/mc/camera/device/state/DeviceStateBurstCapture;->mIsErrorOccurred:Z
 
+    const/4 p2, 0x1
+
     if-eqz p0, :cond_2
 
     .line 245
-    const-string p0, "Aborted burst capture"
+    new-array p0, p2, [Ljava/lang/String;
 
-    filled-new-array {p0}, [Ljava/lang/String;
+    const-string v4, "Aborted burst capture"
 
-    move-result-object p0
+    aput-object v4, p0, v0
 
     invoke-static {p0}, Ljp/co/sony/mc/camera/util/CamLog;->w([Ljava/lang/String;)V
 
@@ -528,11 +530,11 @@
     if-eqz p0, :cond_4
 
     .line 255
-    const-string p0, "Now is in high performance mode. So does not publish burst-shooting off"
+    new-array p0, p2, [Ljava/lang/String;
 
-    filled-new-array {p0}, [Ljava/lang/String;
+    const-string p2, "Now is in high performance mode. So does not publish burst-shooting off"
 
-    move-result-object p0
+    aput-object p2, p0, v0
 
     invoke-static {p0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 

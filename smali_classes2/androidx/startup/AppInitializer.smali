@@ -121,8 +121,6 @@
 
     move-result v0
 
-    const/4 v1, 0x0
-
     if-nez v0, :cond_4
 
     .line 162
@@ -139,17 +137,19 @@
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_1
 
+    const/4 v0, 0x0
+
     .line 165
     :try_start_1
-    new-array v0, v1, [Ljava/lang/Class;
+    new-array v1, v0, [Ljava/lang/Class;
 
-    invoke-virtual {p1, v0}, Ljava/lang/Class;->getDeclaredConstructor([Ljava/lang/Class;)Ljava/lang/reflect/Constructor;
+    invoke-virtual {p1, v1}, Ljava/lang/Class;->getDeclaredConstructor([Ljava/lang/Class;)Ljava/lang/reflect/Constructor;
 
-    move-result-object v0
+    move-result-object v1
 
-    new-array v1, v1, [Ljava/lang/Object;
+    new-array v0, v0, [Ljava/lang/Object;
 
-    invoke-virtual {v0, v1}, Ljava/lang/reflect/Constructor;->newInstance([Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v1, v0}, Ljava/lang/reflect/Constructor;->newInstance([Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v0
 
@@ -253,19 +253,17 @@
     :try_start_3
     const-string p0, "Cannot initialize %s. Cycle detected."
 
-    const/4 p2, 0x1
-
-    new-array p2, p2, [Ljava/lang/Object;
-
     .line 157
     invoke-virtual {p1}, Ljava/lang/Class;->getName()Ljava/lang/String;
 
     move-result-object p1
 
-    aput-object p1, p2, v1
+    filled-new-array {p1}, [Ljava/lang/Object;
+
+    move-result-object p1
 
     .line 156
-    invoke-static {p0, p2}, Ljava/lang/String;->format(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
+    invoke-static {p0, p1}, Ljava/lang/String;->format(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
 
     move-result-object p0
 

@@ -29,88 +29,283 @@
 
 # direct methods
 .method static constructor <clinit>()V
-    .locals 11
+    .locals 16
+
+    const/4 v0, 0x5
 
     .line 42
-    const-string v0, "MIXED"
-
-    const-string v1, "PUNCT"
+    new-array v1, v0, [Ljava/lang/String;
 
     const-string v2, "UPPER"
 
-    const-string v3, "LOWER"
+    const/4 v3, 0x0
 
-    const-string v4, "DIGIT"
+    aput-object v2, v1, v3
 
-    filled-new-array {v2, v3, v4, v0, v1}, [Ljava/lang/String;
+    const-string v2, "LOWER"
 
-    move-result-object v0
+    const/4 v4, 0x1
 
-    sput-object v0, Lcom/google/zxing/aztec/encoder/HighLevelEncoder;->MODE_NAMES:[Ljava/lang/String;
+    aput-object v2, v1, v4
 
-    const/4 v0, 0x0
+    const-string v2, "DIGIT"
+
+    const/4 v5, 0x2
+
+    aput-object v2, v1, v5
+
+    const-string v2, "MIXED"
+
+    const/4 v6, 0x3
+
+    aput-object v2, v1, v6
+
+    const-string v2, "PUNCT"
+
+    const/4 v7, 0x4
+
+    aput-object v2, v1, v7
+
+    sput-object v1, Lcom/google/zxing/aztec/encoder/HighLevelEncoder;->MODE_NAMES:[Ljava/lang/String;
 
     const v1, 0x5001c
 
     const v2, 0x5001e
 
-    const v3, 0x5001d
+    const v8, 0x5001d
 
-    const v4, 0xa03be
+    const v9, 0xa03be
 
     .line 55
-    filled-new-array {v0, v1, v2, v3, v4}, [I
+    filled-new-array {v3, v1, v2, v8, v9}, [I
 
-    move-result-object v5
+    move-result-object v10
 
-    const v6, 0x901ee
+    const v11, 0x901ee
 
-    filled-new-array {v6, v0, v2, v3, v4}, [I
+    filled-new-array {v11, v3, v2, v8, v9}, [I
 
-    move-result-object v6
+    move-result-object v11
 
-    const v7, 0x901dd
+    const v12, 0x901dd
 
-    const v8, 0xe3bbe
+    const v13, 0xe3bbe
 
-    const v9, 0x4000e
+    const v14, 0x4000e
 
-    const v10, 0x901dc
+    const v15, 0x901dc
 
-    filled-new-array {v9, v10, v0, v7, v8}, [I
+    filled-new-array {v14, v15, v3, v12, v13}, [I
 
-    move-result-object v7
+    move-result-object v12
 
-    filled-new-array {v3, v1, v4, v0, v2}, [I
+    filled-new-array {v8, v1, v9, v3, v2}, [I
 
     move-result-object v1
 
     const v2, 0xa03fe
 
-    const v3, 0xa03fd
+    const v8, 0xa03fd
 
-    const v4, 0x5001f
+    const v9, 0x5001f
 
-    const v8, 0xa03fc
+    const v13, 0xa03fc
 
-    filled-new-array {v4, v8, v2, v3, v0}, [I
+    filled-new-array {v9, v13, v2, v8, v3}, [I
 
     move-result-object v2
 
-    filled-new-array {v5, v6, v7, v1, v2}, [[I
+    filled-new-array {v10, v11, v12, v1, v2}, [[I
 
     move-result-object v1
 
     sput-object v1, Lcom/google/zxing/aztec/encoder/HighLevelEncoder;->LATCH_TABLE:[[I
 
-    const/4 v1, 0x5
+    .line 96
+    new-array v1, v5, [I
 
     const/16 v2, 0x100
 
-    .line 96
-    filled-new-array {v1, v2}, [I
+    aput v2, v1, v4
 
-    move-result-object v1
+    aput v0, v1, v3
+
+    sget-object v0, Ljava/lang/Integer;->TYPE:Ljava/lang/Class;
+
+    invoke-static {v0, v1}, Ljava/lang/reflect/Array;->newInstance(Ljava/lang/Class;[I)Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, [[I
+
+    sput-object v0, Lcom/google/zxing/aztec/encoder/HighLevelEncoder;->CHAR_MAP:[[I
+
+    .line 98
+    aget-object v0, v0, v3
+
+    const/16 v1, 0x20
+
+    aput v4, v0, v1
+
+    const/16 v0, 0x41
+
+    :goto_0
+    const/16 v2, 0x5a
+
+    if-gt v0, v2, :cond_0
+
+    .line 100
+    sget-object v2, Lcom/google/zxing/aztec/encoder/HighLevelEncoder;->CHAR_MAP:[[I
+
+    aget-object v2, v2, v3
+
+    add-int/lit8 v8, v0, -0x3f
+
+    aput v8, v2, v0
+
+    add-int/lit8 v0, v0, 0x1
+
+    goto :goto_0
+
+    .line 102
+    :cond_0
+    sget-object v0, Lcom/google/zxing/aztec/encoder/HighLevelEncoder;->CHAR_MAP:[[I
+
+    aget-object v0, v0, v4
+
+    aput v4, v0, v1
+
+    const/16 v0, 0x61
+
+    :goto_1
+    const/16 v2, 0x7a
+
+    if-gt v0, v2, :cond_1
+
+    .line 104
+    sget-object v2, Lcom/google/zxing/aztec/encoder/HighLevelEncoder;->CHAR_MAP:[[I
+
+    aget-object v2, v2, v4
+
+    add-int/lit8 v8, v0, -0x5f
+
+    aput v8, v2, v0
+
+    add-int/lit8 v0, v0, 0x1
+
+    goto :goto_1
+
+    .line 106
+    :cond_1
+    sget-object v0, Lcom/google/zxing/aztec/encoder/HighLevelEncoder;->CHAR_MAP:[[I
+
+    aget-object v0, v0, v5
+
+    aput v4, v0, v1
+
+    const/16 v0, 0x30
+
+    :goto_2
+    const/16 v1, 0x39
+
+    if-gt v0, v1, :cond_2
+
+    .line 108
+    sget-object v1, Lcom/google/zxing/aztec/encoder/HighLevelEncoder;->CHAR_MAP:[[I
+
+    aget-object v1, v1, v5
+
+    add-int/lit8 v2, v0, -0x2e
+
+    aput v2, v1, v0
+
+    add-int/lit8 v0, v0, 0x1
+
+    goto :goto_2
+
+    .line 110
+    :cond_2
+    sget-object v0, Lcom/google/zxing/aztec/encoder/HighLevelEncoder;->CHAR_MAP:[[I
+
+    aget-object v0, v0, v5
+
+    const/16 v1, 0x2c
+
+    const/16 v2, 0xc
+
+    aput v2, v0, v1
+
+    const/16 v1, 0x2e
+
+    const/16 v2, 0xd
+
+    .line 111
+    aput v2, v0, v1
+
+    const/16 v0, 0x1c
+
+    .line 112
+    new-array v1, v0, [I
+
+    fill-array-data v1, :array_0
+
+    move v2, v3
+
+    :goto_3
+    if-ge v2, v0, :cond_3
+
+    .line 118
+    sget-object v8, Lcom/google/zxing/aztec/encoder/HighLevelEncoder;->CHAR_MAP:[[I
+
+    aget-object v8, v8, v6
+
+    aget v9, v1, v2
+
+    aput v2, v8, v9
+
+    add-int/lit8 v2, v2, 0x1
+
+    goto :goto_3
+
+    :cond_3
+    const/16 v1, 0x1f
+
+    .line 120
+    new-array v2, v1, [I
+
+    fill-array-data v2, :array_1
+
+    move v8, v3
+
+    :goto_4
+    if-ge v8, v1, :cond_5
+
+    .line 126
+    aget v9, v2, v8
+
+    if-lez v9, :cond_4
+
+    .line 127
+    sget-object v10, Lcom/google/zxing/aztec/encoder/HighLevelEncoder;->CHAR_MAP:[[I
+
+    aget-object v10, v10, v7
+
+    aput v8, v10, v9
+
+    :cond_4
+    add-int/lit8 v8, v8, 0x1
+
+    goto :goto_4
+
+    .line 134
+    :cond_5
+    new-array v1, v5, [I
+
+    const/4 v2, 0x6
+
+    aput v2, v1, v4
+
+    aput v2, v1, v3
 
     sget-object v2, Ljava/lang/Integer;->TYPE:Ljava/lang/Class;
 
@@ -120,240 +315,57 @@
 
     check-cast v1, [[I
 
-    sput-object v1, Lcom/google/zxing/aztec/encoder/HighLevelEncoder;->CHAR_MAP:[[I
-
-    .line 98
-    aget-object v1, v1, v0
-
-    const/16 v2, 0x20
-
-    const/4 v3, 0x1
-
-    aput v3, v1, v2
-
-    const/16 v1, 0x41
-
-    :goto_0
-    const/16 v4, 0x5a
-
-    if-gt v1, v4, :cond_0
-
-    .line 100
-    sget-object v4, Lcom/google/zxing/aztec/encoder/HighLevelEncoder;->CHAR_MAP:[[I
-
-    aget-object v4, v4, v0
-
-    add-int/lit8 v5, v1, -0x3f
-
-    aput v5, v4, v1
-
-    add-int/lit8 v1, v1, 0x1
-
-    goto :goto_0
-
-    .line 102
-    :cond_0
-    sget-object v1, Lcom/google/zxing/aztec/encoder/HighLevelEncoder;->CHAR_MAP:[[I
-
-    aget-object v1, v1, v3
-
-    aput v3, v1, v2
-
-    const/16 v1, 0x61
-
-    :goto_1
-    const/16 v4, 0x7a
-
-    if-gt v1, v4, :cond_1
-
-    .line 104
-    sget-object v4, Lcom/google/zxing/aztec/encoder/HighLevelEncoder;->CHAR_MAP:[[I
-
-    aget-object v4, v4, v3
-
-    add-int/lit8 v5, v1, -0x5f
-
-    aput v5, v4, v1
-
-    add-int/lit8 v1, v1, 0x1
-
-    goto :goto_1
-
-    .line 106
-    :cond_1
-    sget-object v1, Lcom/google/zxing/aztec/encoder/HighLevelEncoder;->CHAR_MAP:[[I
-
-    const/4 v4, 0x2
-
-    aget-object v1, v1, v4
-
-    aput v3, v1, v2
-
-    const/16 v1, 0x30
-
-    :goto_2
-    const/16 v2, 0x39
-
-    if-gt v1, v2, :cond_2
-
-    .line 108
-    sget-object v2, Lcom/google/zxing/aztec/encoder/HighLevelEncoder;->CHAR_MAP:[[I
-
-    aget-object v2, v2, v4
-
-    add-int/lit8 v5, v1, -0x2e
-
-    aput v5, v2, v1
-
-    add-int/lit8 v1, v1, 0x1
-
-    goto :goto_2
-
-    .line 110
-    :cond_2
-    sget-object v1, Lcom/google/zxing/aztec/encoder/HighLevelEncoder;->CHAR_MAP:[[I
-
-    aget-object v1, v1, v4
-
-    const/16 v2, 0x2c
-
-    const/16 v5, 0xc
-
-    aput v5, v1, v2
-
-    const/16 v2, 0x2e
-
-    const/16 v5, 0xd
-
-    .line 111
-    aput v5, v1, v2
-
-    const/16 v1, 0x1c
-
-    .line 112
-    new-array v2, v1, [I
-
-    fill-array-data v2, :array_0
-
-    move v5, v0
-
-    :goto_3
-    const/4 v6, 0x3
-
-    if-ge v5, v1, :cond_3
-
-    .line 118
-    sget-object v7, Lcom/google/zxing/aztec/encoder/HighLevelEncoder;->CHAR_MAP:[[I
-
-    aget-object v6, v7, v6
-
-    aget v7, v2, v5
-
-    aput v5, v6, v7
-
-    add-int/lit8 v5, v5, 0x1
-
-    goto :goto_3
-
-    :cond_3
-    const/16 v2, 0x1f
-
-    .line 120
-    new-array v5, v2, [I
-
-    fill-array-data v5, :array_1
-
-    move v7, v0
-
-    :goto_4
-    const/4 v8, 0x4
-
-    if-ge v7, v2, :cond_5
-
-    .line 126
-    aget v9, v5, v7
-
-    if-lez v9, :cond_4
-
-    .line 127
-    sget-object v10, Lcom/google/zxing/aztec/encoder/HighLevelEncoder;->CHAR_MAP:[[I
-
-    aget-object v8, v10, v8
-
-    aput v7, v8, v9
-
-    :cond_4
-    add-int/lit8 v7, v7, 0x1
-
-    goto :goto_4
-
-    :cond_5
-    const/4 v2, 0x6
-
-    .line 134
-    filled-new-array {v2, v2}, [I
-
-    move-result-object v2
-
-    sget-object v5, Ljava/lang/Integer;->TYPE:Ljava/lang/Class;
-
-    invoke-static {v5, v2}, Ljava/lang/reflect/Array;->newInstance(Ljava/lang/Class;[I)Ljava/lang/Object;
-
-    move-result-object v2
-
-    check-cast v2, [[I
-
-    sput-object v2, Lcom/google/zxing/aztec/encoder/HighLevelEncoder;->SHIFT_TABLE:[[I
+    sput-object v1, Lcom/google/zxing/aztec/encoder/HighLevelEncoder;->SHIFT_TABLE:[[I
 
     .line 136
-    array-length v5, v2
+    array-length v2, v1
 
-    move v7, v0
+    move v8, v3
 
     :goto_5
-    if-ge v7, v5, :cond_6
+    if-ge v8, v2, :cond_6
 
-    aget-object v9, v2, v7
+    aget-object v9, v1, v8
 
     const/4 v10, -0x1
 
     .line 137
     invoke-static {v9, v10}, Ljava/util/Arrays;->fill([II)V
 
-    add-int/lit8 v7, v7, 0x1
+    add-int/lit8 v8, v8, 0x1
 
     goto :goto_5
 
     .line 139
     :cond_6
-    sget-object v2, Lcom/google/zxing/aztec/encoder/HighLevelEncoder;->SHIFT_TABLE:[[I
+    sget-object v1, Lcom/google/zxing/aztec/encoder/HighLevelEncoder;->SHIFT_TABLE:[[I
 
-    aget-object v5, v2, v0
+    aget-object v2, v1, v3
 
-    aput v0, v5, v8
+    aput v3, v2, v7
 
     .line 141
-    aget-object v3, v2, v3
+    aget-object v2, v1, v4
 
-    aput v0, v3, v8
+    aput v3, v2, v7
 
     .line 142
-    aput v1, v3, v0
+    aput v0, v2, v3
 
     .line 144
-    aget-object v1, v2, v6
+    aget-object v0, v1, v6
 
-    aput v0, v1, v8
+    aput v3, v0, v7
 
     .line 146
-    aget-object v1, v2, v4
+    aget-object v0, v1, v5
 
-    aput v0, v1, v8
+    aput v3, v0, v7
 
-    const/16 v2, 0xf
+    const/16 v1, 0xf
 
     .line 147
-    aput v2, v1, v0
+    aput v1, v0, v3
 
     return-void
 

@@ -32,7 +32,7 @@
         }
     .end annotation
 
-    .line 4636
+    .line 4801
     iput-object p1, p0, Ljp/co/sony/mc/camera/view/FragmentController$MessageDialogOnClickPositiveListenerImpl$4;->this$1:Ljp/co/sony/mc/camera/view/FragmentController$MessageDialogOnClickPositiveListenerImpl;
 
     iput-object p2, p0, Ljp/co/sony/mc/camera/view/FragmentController$MessageDialogOnClickPositiveListenerImpl$4;->val$manager:Ljp/co/sony/mc/camera/rtmp/YouTubeStreamingDataManager;
@@ -47,43 +47,43 @@
 .method public onFailure(Ljp/co/sony/mc/camera/rtmp/ErrCode;)V
     .locals 2
 
-    .line 4698
+    .line 4863
     sget-object v0, Ljp/co/sony/mc/camera/rtmp/ErrCode;->ERROR_INCOMPATIBLE:Ljp/co/sony/mc/camera/rtmp/ErrCode;
 
     if-ne p1, v0, :cond_0
 
-    .line 4699
+    .line 4864
     sget-object p1, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->DUE_TO_YOUTUBE_LIVE_EVENT_NOT_SUPPORTED:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
 
     goto :goto_0
 
-    .line 4700
+    .line 4865
     :cond_0
     sget-object v0, Ljp/co/sony/mc/camera/rtmp/ErrCode;->ERROR_AUTH:Ljp/co/sony/mc/camera/rtmp/ErrCode;
 
     if-ne p1, v0, :cond_1
 
-    .line 4701
+    .line 4866
     sget-object p1, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->DUE_TO_YOUTUBE_AUTHORIZATION_FAILED:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
 
     goto :goto_0
 
-    .line 4703
+    .line 4868
     :cond_1
     sget-object p1, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->DUE_TO_YOUTUBE_LIVE_EVENT_RETRIEVE:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
 
-    .line 4705
+    .line 4870
     :goto_0
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
-    .line 4706
+    .line 4871
     sget-object v1, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->GET_YOUTUBE_LIVE_EVENT_PROCESSING:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
 
     invoke-interface {v0, v1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    .line 4707
+    .line 4872
     iget-object v1, p0, Ljp/co/sony/mc/camera/view/FragmentController$MessageDialogOnClickPositiveListenerImpl$4;->this$1:Ljp/co/sony/mc/camera/view/FragmentController$MessageDialogOnClickPositiveListenerImpl;
 
     iget-object v1, v1, Ljp/co/sony/mc/camera/view/FragmentController$MessageDialogOnClickPositiveListenerImpl;->this$0:Ljp/co/sony/mc/camera/view/FragmentController;
@@ -92,14 +92,14 @@
 
     move-result-object v1
 
-    .line 4708
+    .line 4873
     invoke-virtual {v1, v0}, Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController;->isCurrentDialogInList(Ljava/util/List;)Z
 
     move-result v0
 
     if-eqz v0, :cond_2
 
-    .line 4709
+    .line 4874
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/FragmentController$MessageDialogOnClickPositiveListenerImpl$4;->this$1:Ljp/co/sony/mc/camera/view/FragmentController$MessageDialogOnClickPositiveListenerImpl;
 
     iget-object v0, v0, Ljp/co/sony/mc/camera/view/FragmentController$MessageDialogOnClickPositiveListenerImpl;->this$0:Ljp/co/sony/mc/camera/view/FragmentController;
@@ -121,17 +121,17 @@
 .method public onSuccess()V
     .locals 8
 
-    .line 4639
+    .line 4804
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
-    .line 4640
+    .line 4805
     sget-object v1, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->GET_YOUTUBE_LIVE_EVENT_PROCESSING:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
 
     invoke-interface {v0, v1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    .line 4641
+    .line 4806
     iget-object v1, p0, Ljp/co/sony/mc/camera/view/FragmentController$MessageDialogOnClickPositiveListenerImpl$4;->this$1:Ljp/co/sony/mc/camera/view/FragmentController$MessageDialogOnClickPositiveListenerImpl;
 
     iget-object v1, v1, Ljp/co/sony/mc/camera/view/FragmentController$MessageDialogOnClickPositiveListenerImpl;->this$0:Ljp/co/sony/mc/camera/view/FragmentController;
@@ -140,41 +140,41 @@
 
     move-result-object v1
 
-    .line 4642
+    .line 4807
     invoke-virtual {v1, v0}, Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogController;->isCurrentDialogInList(Ljava/util/List;)Z
 
     move-result v0
 
     if-eqz v0, :cond_6
 
-    .line 4643
+    .line 4808
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/FragmentController$MessageDialogOnClickPositiveListenerImpl$4;->val$manager:Ljp/co/sony/mc/camera/rtmp/YouTubeStreamingDataManager;
 
     invoke-virtual {v0}, Ljp/co/sony/mc/camera/rtmp/YouTubeStreamingDataManager;->getSelectEvent()Ljp/co/sony/mc/camera/rtmp/YouTubeEventData;
 
     move-result-object v0
 
-    .line 4644
+    .line 4809
     invoke-virtual {v0}, Ljp/co/sony/mc/camera/rtmp/YouTubeEventData;->getTitle()Ljava/lang/String;
 
     move-result-object v1
 
     if-eqz v1, :cond_0
 
-    .line 4645
+    .line 4810
     invoke-virtual {v0}, Ljp/co/sony/mc/camera/rtmp/YouTubeEventData;->getTitle()Ljava/lang/String;
 
     move-result-object v1
 
     goto :goto_0
 
-    .line 4646
+    .line 4811
     :cond_0
     invoke-static {}, Ljp/co/sony/mc/camera/configuration/parameters/YoutubeLiveEvent;->getDefaultValue()Ljava/lang/String;
 
     move-result-object v1
 
-    .line 4647
+    .line 4812
     :goto_0
     invoke-virtual {v0}, Ljp/co/sony/mc/camera/rtmp/YouTubeEventData;->getRtmpsIngestionAddress()Ljava/lang/String;
 
@@ -182,20 +182,20 @@
 
     if-eqz v2, :cond_1
 
-    .line 4648
+    .line 4813
     invoke-virtual {v0}, Ljp/co/sony/mc/camera/rtmp/YouTubeEventData;->getRtmpsIngestionAddress()Ljava/lang/String;
 
     move-result-object v2
 
     goto :goto_1
 
-    .line 4649
+    .line 4814
     :cond_1
     invoke-static {}, Ljp/co/sony/mc/camera/configuration/parameters/YoutubeStreamUrl;->getDefaultValue()Ljava/lang/String;
 
     move-result-object v2
 
-    .line 4650
+    .line 4815
     :goto_1
     invoke-virtual {v0}, Ljp/co/sony/mc/camera/rtmp/YouTubeEventData;->getStreamKeyName()Ljava/lang/String;
 
@@ -203,20 +203,20 @@
 
     if-eqz v3, :cond_2
 
-    .line 4651
+    .line 4816
     invoke-virtual {v0}, Ljp/co/sony/mc/camera/rtmp/YouTubeEventData;->getStreamKeyName()Ljava/lang/String;
 
     move-result-object v3
 
     goto :goto_2
 
-    .line 4652
+    .line 4817
     :cond_2
     invoke-static {}, Ljp/co/sony/mc/camera/configuration/parameters/YoutubeStreamKey;->getDefaultValue()Ljava/lang/String;
 
     move-result-object v3
 
-    .line 4653
+    .line 4818
     :goto_2
     invoke-virtual {v0}, Ljp/co/sony/mc/camera/rtmp/YouTubeEventData;->getStreamId()Ljava/lang/String;
 
@@ -224,20 +224,20 @@
 
     if-eqz v4, :cond_3
 
-    .line 4654
+    .line 4819
     invoke-virtual {v0}, Ljp/co/sony/mc/camera/rtmp/YouTubeEventData;->getStreamId()Ljava/lang/String;
 
     move-result-object v4
 
     goto :goto_3
 
-    .line 4655
+    .line 4820
     :cond_3
     invoke-static {}, Ljp/co/sony/mc/camera/configuration/parameters/YouTubeStreamIdKey;->getDefaultValue()Ljava/lang/String;
 
     move-result-object v4
 
-    .line 4656
+    .line 4821
     :goto_3
     invoke-virtual {v0}, Ljp/co/sony/mc/camera/rtmp/YouTubeEventData;->getLiveChatId()Ljava/lang/String;
 
@@ -245,20 +245,20 @@
 
     if-eqz v5, :cond_4
 
-    .line 4657
+    .line 4822
     invoke-virtual {v0}, Ljp/co/sony/mc/camera/rtmp/YouTubeEventData;->getLiveChatId()Ljava/lang/String;
 
     move-result-object v5
 
     goto :goto_4
 
-    .line 4658
+    .line 4823
     :cond_4
     invoke-static {}, Ljp/co/sony/mc/camera/configuration/parameters/YouTubeLiveChatIdKey;->getDefaultValue()Ljava/lang/String;
 
     move-result-object v5
 
-    .line 4659
+    .line 4824
     :goto_4
     invoke-virtual {v0}, Ljp/co/sony/mc/camera/rtmp/YouTubeEventData;->getLiveId()Ljava/lang/String;
 
@@ -266,20 +266,20 @@
 
     if-eqz v6, :cond_5
 
-    .line 4660
+    .line 4825
     invoke-virtual {v0}, Ljp/co/sony/mc/camera/rtmp/YouTubeEventData;->getLiveId()Ljava/lang/String;
 
     move-result-object v0
 
     goto :goto_5
 
-    .line 4661
+    .line 4826
     :cond_5
     invoke-static {}, Ljp/co/sony/mc/camera/configuration/parameters/YoutubeLiveId;->getDefaultValue()Ljava/lang/String;
 
     move-result-object v0
 
-    .line 4662
+    .line 4827
     :goto_5
     invoke-static {}, Ljp/co/sony/mc/camera/setting/CameraProSetting;->getInstance()Ljp/co/sony/mc/camera/setting/CameraProSetting;
 
@@ -289,7 +289,7 @@
 
     invoke-virtual {v6, v7, v1}, Ljp/co/sony/mc/camera/setting/CameraProSetting;->set(Ljp/co/sony/mc/camera/setting/SettingKey$Key;Ljava/lang/Object;)V
 
-    .line 4664
+    .line 4829
     invoke-static {}, Ljp/co/sony/mc/camera/setting/CameraProSetting;->getInstance()Ljp/co/sony/mc/camera/setting/CameraProSetting;
 
     move-result-object v1
@@ -298,7 +298,7 @@
 
     invoke-virtual {v1, v6, v2}, Ljp/co/sony/mc/camera/setting/CameraProSetting;->set(Ljp/co/sony/mc/camera/setting/SettingKey$Key;Ljava/lang/Object;)V
 
-    .line 4666
+    .line 4831
     invoke-static {}, Ljp/co/sony/mc/camera/setting/CameraProSetting;->getInstance()Ljp/co/sony/mc/camera/setting/CameraProSetting;
 
     move-result-object v1
@@ -307,7 +307,7 @@
 
     invoke-virtual {v1, v2, v3}, Ljp/co/sony/mc/camera/setting/CameraProSetting;->set(Ljp/co/sony/mc/camera/setting/SettingKey$Key;Ljava/lang/Object;)V
 
-    .line 4668
+    .line 4833
     invoke-static {}, Ljp/co/sony/mc/camera/setting/CameraProSetting;->getInstance()Ljp/co/sony/mc/camera/setting/CameraProSetting;
 
     move-result-object v1
@@ -316,7 +316,7 @@
 
     invoke-virtual {v1, v2, v4}, Ljp/co/sony/mc/camera/setting/CameraProSetting;->set(Ljp/co/sony/mc/camera/setting/SettingKey$Key;Ljava/lang/Object;)V
 
-    .line 4670
+    .line 4835
     invoke-static {}, Ljp/co/sony/mc/camera/setting/CameraProSetting;->getInstance()Ljp/co/sony/mc/camera/setting/CameraProSetting;
 
     move-result-object v1
@@ -325,7 +325,7 @@
 
     invoke-virtual {v1, v2, v5}, Ljp/co/sony/mc/camera/setting/CameraProSetting;->set(Ljp/co/sony/mc/camera/setting/SettingKey$Key;Ljava/lang/Object;)V
 
-    .line 4672
+    .line 4837
     invoke-static {}, Ljp/co/sony/mc/camera/setting/CameraProSetting;->getInstance()Ljp/co/sony/mc/camera/setting/CameraProSetting;
 
     move-result-object v1
@@ -334,7 +334,7 @@
 
     invoke-virtual {v1, v2, v0}, Ljp/co/sony/mc/camera/setting/CameraProSetting;->set(Ljp/co/sony/mc/camera/setting/SettingKey$Key;Ljava/lang/Object;)V
 
-    .line 4679
+    .line 4844
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/FragmentController$MessageDialogOnClickPositiveListenerImpl$4;->this$1:Ljp/co/sony/mc/camera/view/FragmentController$MessageDialogOnClickPositiveListenerImpl;
 
     iget-object v0, v0, Ljp/co/sony/mc/camera/view/FragmentController$MessageDialogOnClickPositiveListenerImpl;->this$0:Ljp/co/sony/mc/camera/view/FragmentController;

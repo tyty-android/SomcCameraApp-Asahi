@@ -42,7 +42,7 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 151
+    .line 152
     invoke-direct {p0}, Landroidx/compose/ui/Modifier$Node;-><init>()V
 
     return-void
@@ -51,7 +51,7 @@
 .method private final getInputModeManager()Landroidx/compose/ui/input/InputModeManager;
     .locals 1
 
-    .line 155
+    .line 156
     check-cast p0, Landroidx/compose/ui/node/CompositionLocalConsumerModifierNode;
 
     invoke-static {}, Landroidx/compose/ui/platform/CompositionLocalsKt;->getLocalInputModeManager()Landroidx/compose/runtime/ProvidableCompositionLocal;
@@ -74,11 +74,7 @@
 .method public applyFocusProperties(Landroidx/compose/ui/focus/FocusProperties;)V
     .locals 1
 
-    const-string v0, "focusProperties"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 159
+    .line 160
     invoke-direct {p0}, Landroidx/compose/foundation/FocusableInNonTouchMode;->getInputModeManager()Landroidx/compose/ui/input/InputModeManager;
 
     move-result-object p0

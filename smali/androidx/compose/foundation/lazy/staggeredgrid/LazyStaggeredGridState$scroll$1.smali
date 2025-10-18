@@ -32,8 +32,8 @@
         0x0
     }
     l = {
-        0xf1,
-        0xf2
+        0xe3,
+        0xe4
     }
     m = "scroll"
     n = {

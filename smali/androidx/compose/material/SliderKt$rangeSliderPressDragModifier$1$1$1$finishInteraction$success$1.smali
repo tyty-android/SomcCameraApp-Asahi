@@ -104,7 +104,7 @@
 .method public bridge synthetic invoke(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
 
-    .line 1014
+    .line 1018
     check-cast p1, Landroidx/compose/ui/input/pointer/PointerInputChange;
 
     invoke-virtual {p0, p1}, Landroidx/compose/material/SliderKt$rangeSliderPressDragModifier$1$1$1$finishInteraction$success$1;->invoke(Landroidx/compose/ui/input/pointer/PointerInputChange;)V
@@ -117,11 +117,7 @@
 .method public final invoke(Landroidx/compose/ui/input/pointer/PointerInputChange;)V
     .locals 2
 
-    const-string v0, "it"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 1015
+    .line 1019
     invoke-static {p1}, Landroidx/compose/ui/input/pointer/PointerEventKt;->positionChange(Landroidx/compose/ui/input/pointer/PointerInputChange;)J
 
     move-result-wide v0
@@ -130,7 +126,7 @@
 
     move-result p1
 
-    .line 1016
+    .line 1020
     iget-object v0, p0, Landroidx/compose/material/SliderKt$rangeSliderPressDragModifier$1$1$1$finishInteraction$success$1;->$onDrag:Landroidx/compose/runtime/State;
 
     invoke-interface {v0}, Landroidx/compose/runtime/State;->getValue()Ljava/lang/Object;

@@ -6,7 +6,7 @@
 # annotations
 .annotation runtime Lkotlin/Metadata;
     d1 = {
-        "\u0000B\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0006\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0010\u0007\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0003\n\u0002\u0010\u000b\n\u0000\n\u0002\u0010\u0000\n\u0000\n\u0002\u0010\u0008\n\u0000\n\u0002\u0010\u000e\n\u0000\u0008\u0007\u0018\u00002\u00020\u0001B%\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\u0006\u0010\u0004\u001a\u00020\u0003\u0012\u0006\u0010\u0005\u001a\u00020\u0003\u0012\u0006\u0010\u0006\u001a\u00020\u0003\u00a2\u0006\u0002\u0010\u0007J(\u0010\u0008\u001a\u00020\u00002\u0006\u0010\u0002\u001a\u00020\u00032\u0006\u0010\u0004\u001a\u00020\u00032\u0006\u0010\u0005\u001a\u00020\u00032\u0006\u0010\u0006\u001a\u00020\u0003H\u0016JE\u0010\t\u001a\u00020\n2\u0006\u0010\u000b\u001a\u00020\u000c2\u0006\u0010\u0002\u001a\u00020\r2\u0006\u0010\u0004\u001a\u00020\r2\u0006\u0010\u0005\u001a\u00020\r2\u0006\u0010\u0006\u001a\u00020\r2\u0006\u0010\u000e\u001a\u00020\u000fH\u0016\u00f8\u0001\u0000\u00f8\u0001\u0001\u00a2\u0006\u0004\u0008\u0010\u0010\u0011J\u0013\u0010\u0012\u001a\u00020\u00132\u0008\u0010\u0014\u001a\u0004\u0018\u00010\u0015H\u0096\u0002J\u0008\u0010\u0016\u001a\u00020\u0017H\u0016J\u0008\u0010\u0018\u001a\u00020\u0019H\u0016\u0082\u0002\u000b\n\u0005\u0008\u00a1\u001e0\u0001\n\u0002\u0008\u0019\u00a8\u0006\u001a"
+        "\u0000B\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0006\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0010\u0007\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0003\n\u0002\u0010\u000b\n\u0000\n\u0002\u0010\u0000\n\u0000\n\u0002\u0010\u0008\n\u0000\n\u0002\u0010\u000e\n\u0000\u0008\u0007\u0018\u00002\u00020\u0001B%\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\u0006\u0010\u0004\u001a\u00020\u0003\u0012\u0006\u0010\u0005\u001a\u00020\u0003\u0012\u0006\u0010\u0006\u001a\u00020\u0003\u00a2\u0006\u0002\u0010\u0007J(\u0010\u0008\u001a\u00020\u00002\u0006\u0010\u0002\u001a\u00020\u00032\u0006\u0010\u0004\u001a\u00020\u00032\u0006\u0010\u0005\u001a\u00020\u00032\u0006\u0010\u0006\u001a\u00020\u0003H\u0016JB\u0010\t\u001a\u00020\n2\u0006\u0010\u000b\u001a\u00020\u000c2\u0006\u0010\u0002\u001a\u00020\r2\u0006\u0010\u0004\u001a\u00020\r2\u0006\u0010\u0005\u001a\u00020\r2\u0006\u0010\u0006\u001a\u00020\r2\u0006\u0010\u000e\u001a\u00020\u000fH\u0016\u00f8\u0001\u0000\u00a2\u0006\u0004\u0008\u0010\u0010\u0011J\u0013\u0010\u0012\u001a\u00020\u00132\u0008\u0010\u0014\u001a\u0004\u0018\u00010\u0015H\u0096\u0002J\u0008\u0010\u0016\u001a\u00020\u0017H\u0016J\u0008\u0010\u0018\u001a\u00020\u0019H\u0016\u0082\u0002\u0007\n\u0005\u0008\u00a1\u001e0\u0001\u00a8\u0006\u001a"
     }
     d2 = {
         "Landroidx/compose/foundation/shape/CutCornerShape;",
@@ -59,25 +59,9 @@
 .end method
 
 .method public constructor <init>(Landroidx/compose/foundation/shape/CornerSize;Landroidx/compose/foundation/shape/CornerSize;Landroidx/compose/foundation/shape/CornerSize;Landroidx/compose/foundation/shape/CornerSize;)V
-    .locals 1
+    .locals 0
 
-    const-string/jumbo v0, "topStart"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string/jumbo v0, "topEnd"
-
-    invoke-static {p2, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string v0, "bottomEnd"
-
-    invoke-static {p3, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string v0, "bottomStart"
-
-    invoke-static {p4, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 45
+    .line 46
     invoke-direct {p0, p1, p2, p3, p4}, Landroidx/compose/foundation/shape/CornerBasedShape;-><init>(Landroidx/compose/foundation/shape/CornerSize;Landroidx/compose/foundation/shape/CornerSize;Landroidx/compose/foundation/shape/CornerSize;Landroidx/compose/foundation/shape/CornerSize;)V
 
     return-void
@@ -88,7 +72,7 @@
 .method public bridge synthetic copy(Landroidx/compose/foundation/shape/CornerSize;Landroidx/compose/foundation/shape/CornerSize;Landroidx/compose/foundation/shape/CornerSize;Landroidx/compose/foundation/shape/CornerSize;)Landroidx/compose/foundation/shape/CornerBasedShape;
     .locals 0
 
-    .line 40
+    .line 41
     invoke-virtual {p0, p1, p2, p3, p4}, Landroidx/compose/foundation/shape/CutCornerShape;->copy(Landroidx/compose/foundation/shape/CornerSize;Landroidx/compose/foundation/shape/CornerSize;Landroidx/compose/foundation/shape/CornerSize;Landroidx/compose/foundation/shape/CornerSize;)Landroidx/compose/foundation/shape/CutCornerShape;
 
     move-result-object p0
@@ -101,23 +85,7 @@
 .method public copy(Landroidx/compose/foundation/shape/CornerSize;Landroidx/compose/foundation/shape/CornerSize;Landroidx/compose/foundation/shape/CornerSize;Landroidx/compose/foundation/shape/CornerSize;)Landroidx/compose/foundation/shape/CutCornerShape;
     .locals 0
 
-    const-string/jumbo p0, "topStart"
-
-    invoke-static {p1, p0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string/jumbo p0, "topEnd"
-
-    invoke-static {p2, p0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string p0, "bottomEnd"
-
-    invoke-static {p3, p0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string p0, "bottomStart"
-
-    invoke-static {p4, p0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 84
+    .line 85
     new-instance p0, Landroidx/compose/foundation/shape/CutCornerShape;
 
     invoke-direct {p0, p1, p2, p3, p4}, Landroidx/compose/foundation/shape/CutCornerShape;-><init>(Landroidx/compose/foundation/shape/CornerSize;Landroidx/compose/foundation/shape/CornerSize;Landroidx/compose/foundation/shape/CornerSize;Landroidx/compose/foundation/shape/CornerSize;)V
@@ -127,10 +95,6 @@
 
 .method public createOutline-LjSzlW0(JFFFFLandroidx/compose/ui/unit/LayoutDirection;)Landroidx/compose/ui/graphics/Outline;
     .locals 2
-
-    const-string p0, "layoutDirection"
-
-    invoke-static {p7, p0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
     add-float p0, p3, p4
 
@@ -144,7 +108,7 @@
 
     if-nez p0, :cond_0
 
-    .line 60
+    .line 61
     new-instance p0, Landroidx/compose/ui/graphics/Outline$Rectangle;
 
     invoke-static {p1, p2}, Landroidx/compose/ui/geometry/SizeKt;->toRect-uvyYCjk(J)Landroidx/compose/ui/geometry/Rect;
@@ -157,13 +121,13 @@
 
     goto :goto_2
 
-    .line 62
+    .line 63
     :cond_0
     invoke-static {}, Landroidx/compose/ui/graphics/AndroidPath_androidKt;->Path()Landroidx/compose/ui/graphics/Path;
 
     move-result-object p0
 
-    .line 63
+    .line 64
     sget-object v1, Landroidx/compose/ui/unit/LayoutDirection;->Ltr:Landroidx/compose/ui/unit/LayoutDirection;
 
     if-ne p7, v1, :cond_1
@@ -175,21 +139,21 @@
     :cond_1
     move v1, p4
 
-    .line 64
+    .line 65
     :goto_0
     invoke-interface {p0, v0, v1}, Landroidx/compose/ui/graphics/Path;->moveTo(FF)V
 
-    .line 65
+    .line 66
     invoke-interface {p0, v1, v0}, Landroidx/compose/ui/graphics/Path;->lineTo(FF)V
 
-    .line 66
+    .line 67
     sget-object v1, Landroidx/compose/ui/unit/LayoutDirection;->Ltr:Landroidx/compose/ui/unit/LayoutDirection;
 
     if-ne p7, v1, :cond_2
 
     move p3, p4
 
-    .line 67
+    .line 68
     :cond_2
     invoke-static {p1, p2}, Landroidx/compose/ui/geometry/Size;->getWidth-impl(J)F
 
@@ -199,14 +163,14 @@
 
     invoke-interface {p0, p4, v0}, Landroidx/compose/ui/graphics/Path;->lineTo(FF)V
 
-    .line 68
+    .line 69
     invoke-static {p1, p2}, Landroidx/compose/ui/geometry/Size;->getWidth-impl(J)F
 
     move-result p4
 
     invoke-interface {p0, p4, p3}, Landroidx/compose/ui/graphics/Path;->lineTo(FF)V
 
-    .line 69
+    .line 70
     sget-object p3, Landroidx/compose/ui/unit/LayoutDirection;->Ltr:Landroidx/compose/ui/unit/LayoutDirection;
 
     if-ne p7, p3, :cond_3
@@ -218,7 +182,7 @@
     :cond_3
     move p3, p6
 
-    .line 70
+    .line 71
     :goto_1
     invoke-static {p1, p2}, Landroidx/compose/ui/geometry/Size;->getWidth-impl(J)F
 
@@ -232,7 +196,7 @@
 
     invoke-interface {p0, p4, v1}, Landroidx/compose/ui/graphics/Path;->lineTo(FF)V
 
-    .line 71
+    .line 72
     invoke-static {p1, p2}, Landroidx/compose/ui/geometry/Size;->getWidth-impl(J)F
 
     move-result p4
@@ -245,14 +209,14 @@
 
     invoke-interface {p0, p4, p3}, Landroidx/compose/ui/graphics/Path;->lineTo(FF)V
 
-    .line 72
+    .line 73
     sget-object p3, Landroidx/compose/ui/unit/LayoutDirection;->Ltr:Landroidx/compose/ui/unit/LayoutDirection;
 
     if-ne p7, p3, :cond_4
 
     move p5, p6
 
-    .line 73
+    .line 74
     :cond_4
     invoke-static {p1, p2}, Landroidx/compose/ui/geometry/Size;->getHeight-impl(J)F
 
@@ -260,7 +224,7 @@
 
     invoke-interface {p0, p5, p3}, Landroidx/compose/ui/graphics/Path;->lineTo(FF)V
 
-    .line 74
+    .line 75
     invoke-static {p1, p2}, Landroidx/compose/ui/geometry/Size;->getHeight-impl(J)F
 
     move-result p1
@@ -269,10 +233,10 @@
 
     invoke-interface {p0, v0, p1}, Landroidx/compose/ui/graphics/Path;->lineTo(FF)V
 
-    .line 75
+    .line 76
     invoke-interface {p0}, Landroidx/compose/ui/graphics/Path;->close()V
 
-    .line 61
+    .line 62
     new-instance p1, Landroidx/compose/ui/graphics/Outline$Generic;
 
     invoke-direct {p1, p0}, Landroidx/compose/ui/graphics/Outline$Generic;-><init>(Landroidx/compose/ui/graphics/Path;)V
@@ -294,7 +258,7 @@
 
     return v0
 
-    .line 98
+    .line 99
     :cond_0
     instance-of v1, p1, Landroidx/compose/foundation/shape/CutCornerShape;
 
@@ -304,7 +268,7 @@
 
     return v2
 
-    .line 100
+    .line 101
     :cond_1
     invoke-virtual {p0}, Landroidx/compose/foundation/shape/CutCornerShape;->getTopStart()Landroidx/compose/foundation/shape/CornerSize;
 
@@ -324,7 +288,7 @@
 
     return v2
 
-    .line 101
+    .line 102
     :cond_2
     invoke-virtual {p0}, Landroidx/compose/foundation/shape/CutCornerShape;->getTopEnd()Landroidx/compose/foundation/shape/CornerSize;
 
@@ -342,7 +306,7 @@
 
     return v2
 
-    .line 102
+    .line 103
     :cond_3
     invoke-virtual {p0}, Landroidx/compose/foundation/shape/CutCornerShape;->getBottomEnd()Landroidx/compose/foundation/shape/CornerSize;
 
@@ -360,7 +324,7 @@
 
     return v2
 
-    .line 103
+    .line 104
     :cond_4
     invoke-virtual {p0}, Landroidx/compose/foundation/shape/CutCornerShape;->getBottomStart()Landroidx/compose/foundation/shape/CornerSize;
 
@@ -385,7 +349,7 @@
 .method public hashCode()I
     .locals 2
 
-    .line 109
+    .line 110
     invoke-virtual {p0}, Landroidx/compose/foundation/shape/CutCornerShape;->getTopStart()Landroidx/compose/foundation/shape/CornerSize;
 
     move-result-object v0
@@ -396,7 +360,7 @@
 
     mul-int/lit8 v0, v0, 0x1f
 
-    .line 110
+    .line 111
     invoke-virtual {p0}, Landroidx/compose/foundation/shape/CutCornerShape;->getTopEnd()Landroidx/compose/foundation/shape/CornerSize;
 
     move-result-object v1
@@ -409,7 +373,7 @@
 
     mul-int/lit8 v0, v0, 0x1f
 
-    .line 111
+    .line 112
     invoke-virtual {p0}, Landroidx/compose/foundation/shape/CutCornerShape;->getBottomEnd()Landroidx/compose/foundation/shape/CornerSize;
 
     move-result-object v1
@@ -422,7 +386,7 @@
 
     mul-int/lit8 v0, v0, 0x1f
 
-    .line 112
+    .line 113
     invoke-virtual {p0}, Landroidx/compose/foundation/shape/CutCornerShape;->getBottomStart()Landroidx/compose/foundation/shape/CornerSize;
 
     move-result-object p0
@@ -439,7 +403,7 @@
 .method public toString()Ljava/lang/String;
     .locals 2
 
-    .line 92
+    .line 93
     new-instance v0, Ljava/lang/StringBuilder;
 
     const-string v1, "CutCornerShape(topStart = "
@@ -474,30 +438,30 @@
 
     move-result-object v0
 
-    .line 93
+    .line 94
     invoke-virtual {p0}, Landroidx/compose/foundation/shape/CutCornerShape;->getBottomEnd()Landroidx/compose/foundation/shape/CornerSize;
 
     move-result-object v1
 
-    .line 92
+    .line 93
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
     move-result-object v0
 
-    .line 93
+    .line 94
     const-string v1, ", bottomStart = "
 
-    .line 92
+    .line 93
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v0
 
-    .line 93
+    .line 94
     invoke-virtual {p0}, Landroidx/compose/foundation/shape/CutCornerShape;->getBottomStart()Landroidx/compose/foundation/shape/CornerSize;
 
     move-result-object p0
 
-    .line 92
+    .line 93
     invoke-virtual {v0, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
     move-result-object p0

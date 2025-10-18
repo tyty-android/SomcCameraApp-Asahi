@@ -84,10 +84,10 @@
         }
     .end annotation
 
-    .line 489
+    .line 507
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 490
+    .line 508
     invoke-static {p1}, Lkotlin/sequences/DropSequence;->access$getSequence$p(Lkotlin/sequences/DropSequence;)Lkotlin/sequences/Sequence;
 
     move-result-object v0
@@ -98,7 +98,7 @@
 
     iput-object v0, p0, Lkotlin/sequences/DropSequence$iterator$1;->iterator:Ljava/util/Iterator;
 
-    .line 491
+    .line 509
     invoke-static {p1}, Lkotlin/sequences/DropSequence;->access$getCount$p(Lkotlin/sequences/DropSequence;)I
 
     move-result p1
@@ -111,7 +111,7 @@
 .method private final drop()V
     .locals 1
 
-    .line 495
+    .line 513
     :goto_0
     iget v0, p0, Lkotlin/sequences/DropSequence$iterator$1;->left:I
 
@@ -125,12 +125,12 @@
 
     if-eqz v0, :cond_0
 
-    .line 496
+    .line 514
     iget-object v0, p0, Lkotlin/sequences/DropSequence$iterator$1;->iterator:Ljava/util/Iterator;
 
     invoke-interface {v0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
-    .line 497
+    .line 515
     iget v0, p0, Lkotlin/sequences/DropSequence$iterator$1;->left:I
 
     add-int/lit8 v0, v0, -0x1
@@ -155,7 +155,7 @@
         }
     .end annotation
 
-    .line 490
+    .line 508
     iget-object p0, p0, Lkotlin/sequences/DropSequence$iterator$1;->iterator:Ljava/util/Iterator;
 
     return-object p0
@@ -164,7 +164,7 @@
 .method public final getLeft()I
     .locals 0
 
-    .line 491
+    .line 509
     iget p0, p0, Lkotlin/sequences/DropSequence$iterator$1;->left:I
 
     return p0
@@ -173,10 +173,10 @@
 .method public hasNext()Z
     .locals 0
 
-    .line 507
+    .line 525
     invoke-direct {p0}, Lkotlin/sequences/DropSequence$iterator$1;->drop()V
 
-    .line 508
+    .line 526
     iget-object p0, p0, Lkotlin/sequences/DropSequence$iterator$1;->iterator:Ljava/util/Iterator;
 
     invoke-interface {p0}, Ljava/util/Iterator;->hasNext()Z
@@ -194,10 +194,10 @@
         }
     .end annotation
 
-    .line 502
+    .line 520
     invoke-direct {p0}, Lkotlin/sequences/DropSequence$iterator$1;->drop()V
 
-    .line 503
+    .line 521
     iget-object p0, p0, Lkotlin/sequences/DropSequence$iterator$1;->iterator:Ljava/util/Iterator;
 
     invoke-interface {p0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
@@ -222,7 +222,7 @@
 .method public final setLeft(I)V
     .locals 0
 
-    .line 491
+    .line 509
     iput p1, p0, Lkotlin/sequences/DropSequence$iterator$1;->left:I
 
     return-void

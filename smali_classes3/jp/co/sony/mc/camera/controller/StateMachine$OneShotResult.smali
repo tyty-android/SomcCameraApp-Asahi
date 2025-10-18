@@ -30,18 +30,18 @@
 .method private constructor <init>(Landroid/net/Uri;Ljp/co/sony/mc/camera/mediasaving/MediaSavingResult;Ljp/co/sony/mc/camera/storage/SavingRequest;Landroid/graphics/Bitmap;)V
     .locals 0
 
-    .line 7991
+    .line 8060
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 7992
+    .line 8061
     iput-object p1, p0, Ljp/co/sony/mc/camera/controller/StateMachine$OneShotResult;->uri:Landroid/net/Uri;
 
-    .line 7993
+    .line 8062
     iget p1, p2, Ljp/co/sony/mc/camera/mediasaving/MediaSavingResult;->mResultCode:I
 
     iput p1, p0, Ljp/co/sony/mc/camera/controller/StateMachine$OneShotResult;->code:I
 
-    .line 7994
+    .line 8063
     sget-object p1, Ljp/co/sony/mc/camera/mediasaving/MediaSavingResult;->SUCCESS:Ljp/co/sony/mc/camera/mediasaving/MediaSavingResult;
 
     if-ne p2, p1, :cond_0
@@ -56,10 +56,10 @@
     :goto_0
     iput-boolean p1, p0, Ljp/co/sony/mc/camera/controller/StateMachine$OneShotResult;->isSuccess:Z
 
-    .line 7995
+    .line 8064
     iput-object p3, p0, Ljp/co/sony/mc/camera/controller/StateMachine$OneShotResult;->savingRequest:Ljp/co/sony/mc/camera/storage/SavingRequest;
 
-    .line 7996
+    .line 8065
     iput-object p4, p0, Ljp/co/sony/mc/camera/controller/StateMachine$OneShotResult;->bitmap:Landroid/graphics/Bitmap;
 
     return-void

@@ -50,7 +50,7 @@
     k = 0x1
     mv = {
         0x1,
-        0x6,
+        0x8,
         0x0
     }
     xi = 0x30
@@ -211,10 +211,14 @@
     .end annotation
 
     .line 166
+    const-string p0, "null cannot be cast to non-null type kotlinx.coroutines.internal.DispatchedContinuation<*>"
+
+    invoke-static {p1, p0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;Ljava/lang/String;)V
+
     check-cast p1, Lkotlinx/coroutines/internal/DispatchedContinuation;
 
     .line 167
-    invoke-virtual {p1}, Lkotlinx/coroutines/internal/DispatchedContinuation;->release()V
+    invoke-virtual {p1}, Lkotlinx/coroutines/internal/DispatchedContinuation;->release$kotlinx_coroutines_core()V
 
     return-void
 .end method

@@ -78,7 +78,7 @@
 
     const/4 p0, 0x0
 
-    .line 144
+    .line 132
     invoke-static {p0, p0, p0, p0}, Landroidx/compose/foundation/layout/WindowInsetsKt;->WindowInsets(IIII)Landroidx/compose/foundation/layout/WindowInsets;
 
     move-result-object p0
@@ -89,7 +89,7 @@
 .method public bridge synthetic invoke()Ljava/lang/Object;
     .locals 0
 
-    .line 143
+    .line 131
     invoke-virtual {p0}, Landroidx/compose/foundation/layout/WindowInsetsPaddingKt$ModifierLocalConsumedWindowInsets$1;->invoke()Landroidx/compose/foundation/layout/WindowInsets;
 
     move-result-object p0

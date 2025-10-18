@@ -111,11 +111,7 @@
         }
     .end annotation
 
-    const-string v0, "it"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 413
+    .line 418
     new-instance v0, Landroidx/compose/material/SwipeableState;
 
     iget-object v1, p0, Landroidx/compose/material/SwipeableState$Companion$Saver$2;->$animationSpec:Landroidx/compose/animation/core/AnimationSpec;
@@ -130,7 +126,7 @@
 .method public bridge synthetic invoke(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
 
-    .line 411
+    .line 416
     invoke-virtual {p0, p1}, Landroidx/compose/material/SwipeableState$Companion$Saver$2;->invoke(Ljava/lang/Object;)Landroidx/compose/material/SwipeableState;
 
     move-result-object p0

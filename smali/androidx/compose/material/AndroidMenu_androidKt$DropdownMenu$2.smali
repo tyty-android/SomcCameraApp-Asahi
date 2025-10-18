@@ -48,8 +48,6 @@
 
 
 # instance fields
-.field final synthetic $$dirty:I
-
 .field final synthetic $content:Lkotlin/jvm/functions/Function3;
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -89,7 +87,7 @@
 
 
 # direct methods
-.method constructor <init>(Landroidx/compose/animation/core/MutableTransitionState;Landroidx/compose/runtime/MutableState;Landroidx/compose/foundation/ScrollState;Landroidx/compose/ui/Modifier;Lkotlin/jvm/functions/Function3;I)V
+.method constructor <init>(Landroidx/compose/animation/core/MutableTransitionState;Landroidx/compose/runtime/MutableState;Landroidx/compose/foundation/ScrollState;Landroidx/compose/ui/Modifier;Lkotlin/jvm/functions/Function3;)V
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -110,7 +108,7 @@
             "-",
             "Ljava/lang/Integer;",
             "Lkotlin/Unit;",
-            ">;I)V"
+            ">;)V"
         }
     .end annotation
 
@@ -124,8 +122,6 @@
 
     iput-object p5, p0, Landroidx/compose/material/AndroidMenu_androidKt$DropdownMenu$2;->$content:Lkotlin/jvm/functions/Function3;
 
-    iput p6, p0, Landroidx/compose/material/AndroidMenu_androidKt$DropdownMenu$2;->$$dirty:I
-
     const/4 p1, 0x2
 
     invoke-direct {p0, p1}, Lkotlin/jvm/internal/Lambda;-><init>(I)V
@@ -138,7 +134,7 @@
 .method public bridge synthetic invoke(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
 
-    .line 173
+    .line 138
     check-cast p1, Landroidx/compose/runtime/Composer;
 
     check-cast p2, Ljava/lang/Number;
@@ -157,7 +153,7 @@
 .method public final invoke(Landroidx/compose/runtime/Composer;I)V
     .locals 11
 
-    const-string v0, "C173@8667L258:AndroidMenu.android.kt#jmzs0o"
+    const-string v0, "C138@6387L258:AndroidMenu.android.kt#jmzs0o"
 
     invoke-static {p1, v0}, Landroidx/compose/runtime/ComposerKt;->sourceInformation(Landroidx/compose/runtime/Composer;Ljava/lang/String;)V
 
@@ -167,7 +163,7 @@
 
     if-ne v0, v1, :cond_1
 
-    .line 174
+    .line 139
     invoke-interface {p1}, Landroidx/compose/runtime/Composer;->getSkipping()Z
 
     move-result v0
@@ -176,13 +172,13 @@
 
     goto :goto_0
 
-    .line 180
+    .line 145
     :cond_0
     invoke-interface {p1}, Landroidx/compose/runtime/Composer;->skipToGroupEnd()V
 
     goto :goto_1
 
-    .line 174
+    .line 139
     :cond_1
     :goto_0
     invoke-static {}, Landroidx/compose/runtime/ComposerKt;->isTraceInProgress()Z
@@ -193,59 +189,37 @@
 
     const/4 v0, -0x1
 
-    const-string v1, "androidx.compose.material.DropdownMenu.<anonymous> (AndroidMenu.android.kt:172)"
+    const-string v1, "androidx.compose.material.DropdownMenu.<anonymous> (AndroidMenu.android.kt:138)"
 
     const v2, -0x2d96d82
 
     invoke-static {v2, p2, v0, v1}, Landroidx/compose/runtime/ComposerKt;->traceEventStart(IIILjava/lang/String;)V
 
-    .line 175
+    .line 140
     :cond_2
     iget-object v3, p0, Landroidx/compose/material/AndroidMenu_androidKt$DropdownMenu$2;->$expandedStates:Landroidx/compose/animation/core/MutableTransitionState;
 
-    .line 176
+    .line 141
     iget-object v4, p0, Landroidx/compose/material/AndroidMenu_androidKt$DropdownMenu$2;->$transformOriginState:Landroidx/compose/runtime/MutableState;
 
-    .line 177
+    .line 142
     iget-object v5, p0, Landroidx/compose/material/AndroidMenu_androidKt$DropdownMenu$2;->$scrollState:Landroidx/compose/foundation/ScrollState;
 
-    .line 178
+    .line 143
     iget-object v6, p0, Landroidx/compose/material/AndroidMenu_androidKt$DropdownMenu$2;->$modifier:Landroidx/compose/ui/Modifier;
 
-    .line 179
+    .line 144
     iget-object v7, p0, Landroidx/compose/material/AndroidMenu_androidKt$DropdownMenu$2;->$content:Lkotlin/jvm/functions/Function3;
 
-    sget p2, Landroidx/compose/animation/core/MutableTransitionState;->$stable:I
+    sget p0, Landroidx/compose/animation/core/MutableTransitionState;->$stable:I
 
-    or-int/lit8 p2, p2, 0x30
-
-    iget p0, p0, Landroidx/compose/material/AndroidMenu_androidKt$DropdownMenu$2;->$$dirty:I
-
-    shr-int/lit8 v0, p0, 0x6
-
-    and-int/lit16 v0, v0, 0x380
-
-    or-int/2addr p2, v0
-
-    shl-int/lit8 v0, p0, 0x3
-
-    and-int/lit16 v0, v0, 0x1c00
-
-    or-int/2addr p2, v0
-
-    const v0, 0xe000
-
-    shr-int/lit8 p0, p0, 0x6
-
-    and-int/2addr p0, v0
-
-    or-int v9, p2, p0
+    or-int/lit8 v9, p0, 0x30
 
     const/4 v10, 0x0
 
     move-object v8, p1
 
-    .line 174
+    .line 139
     invoke-static/range {v3 .. v10}, Landroidx/compose/material/MenuKt;->DropdownMenuContent(Landroidx/compose/animation/core/MutableTransitionState;Landroidx/compose/runtime/MutableState;Landroidx/compose/foundation/ScrollState;Landroidx/compose/ui/Modifier;Lkotlin/jvm/functions/Function3;Landroidx/compose/runtime/Composer;II)V
 
     invoke-static {}, Landroidx/compose/runtime/ComposerKt;->isTraceInProgress()Z

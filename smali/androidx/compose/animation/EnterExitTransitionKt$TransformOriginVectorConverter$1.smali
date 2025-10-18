@@ -80,7 +80,7 @@
 .method public bridge synthetic invoke(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 2
 
-    .line 937
+    .line 1040
     check-cast p1, Landroidx/compose/ui/graphics/TransformOrigin;
 
     invoke-virtual {p1}, Landroidx/compose/ui/graphics/TransformOrigin;->unbox-impl()J
@@ -97,7 +97,7 @@
 .method public final invoke-__ExYCQ(J)Landroidx/compose/animation/core/AnimationVector2D;
     .locals 1
 
-    .line 938
+    .line 1041
     new-instance p0, Landroidx/compose/animation/core/AnimationVector2D;
 
     invoke-static {p1, p2}, Landroidx/compose/ui/graphics/TransformOrigin;->getPivotFractionX-impl(J)F

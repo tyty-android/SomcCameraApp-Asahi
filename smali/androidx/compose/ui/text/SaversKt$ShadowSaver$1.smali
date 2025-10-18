@@ -81,15 +81,7 @@
 .method public final invoke(Landroidx/compose/runtime/saveable/SaverScope;Landroidx/compose/ui/graphics/Shadow;)Ljava/lang/Object;
     .locals 2
 
-    const-string p0, "$this$Saver"
-
-    invoke-static {p1, p0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string p0, "it"
-
-    invoke-static {p2, p0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 339
+    .line 360
     invoke-virtual {p2}, Landroidx/compose/ui/graphics/Shadow;->getColor-0d7_KjU()J
 
     move-result-wide v0
@@ -108,7 +100,7 @@
 
     move-result-object p0
 
-    .line 340
+    .line 361
     invoke-virtual {p2}, Landroidx/compose/ui/graphics/Shadow;->getOffset-F1C5BW0()J
 
     move-result-wide v0
@@ -127,7 +119,7 @@
 
     move-result-object p1
 
-    .line 341
+    .line 362
     invoke-virtual {p2}, Landroidx/compose/ui/graphics/Shadow;->getBlurRadius()F
 
     move-result p2
@@ -144,7 +136,7 @@
 
     move-result-object p0
 
-    .line 338
+    .line 359
     invoke-static {p0}, Lkotlin/collections/CollectionsKt;->arrayListOf([Ljava/lang/Object;)Ljava/util/ArrayList;
 
     move-result-object p0
@@ -155,7 +147,7 @@
 .method public bridge synthetic invoke(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
 
-    .line 336
+    .line 357
     check-cast p1, Landroidx/compose/runtime/saveable/SaverScope;
 
     check-cast p2, Landroidx/compose/ui/graphics/Shadow;

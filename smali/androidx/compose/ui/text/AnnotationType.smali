@@ -75,7 +75,7 @@
 .method static constructor <clinit>()V
     .locals 3
 
-    .line 115
+    .line 136
     new-instance v0, Landroidx/compose/ui/text/AnnotationType;
 
     const-string v1, "Paragraph"
@@ -86,7 +86,7 @@
 
     sput-object v0, Landroidx/compose/ui/text/AnnotationType;->Paragraph:Landroidx/compose/ui/text/AnnotationType;
 
-    .line 116
+    .line 137
     new-instance v0, Landroidx/compose/ui/text/AnnotationType;
 
     const-string v1, "Span"
@@ -97,7 +97,7 @@
 
     sput-object v0, Landroidx/compose/ui/text/AnnotationType;->Span:Landroidx/compose/ui/text/AnnotationType;
 
-    .line 117
+    .line 138
     new-instance v0, Landroidx/compose/ui/text/AnnotationType;
 
     const-string v1, "VerbatimTts"
@@ -108,7 +108,7 @@
 
     sput-object v0, Landroidx/compose/ui/text/AnnotationType;->VerbatimTts:Landroidx/compose/ui/text/AnnotationType;
 
-    .line 118
+    .line 139
     new-instance v0, Landroidx/compose/ui/text/AnnotationType;
 
     const-string v1, "Url"
@@ -119,7 +119,7 @@
 
     sput-object v0, Landroidx/compose/ui/text/AnnotationType;->Url:Landroidx/compose/ui/text/AnnotationType;
 
-    .line 119
+    .line 140
     new-instance v0, Landroidx/compose/ui/text/AnnotationType;
 
     const-string v1, "String"
@@ -147,7 +147,7 @@
         }
     .end annotation
 
-    .line 114
+    .line 135
     invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
     return-void

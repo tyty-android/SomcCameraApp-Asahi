@@ -24,13 +24,13 @@
 .method constructor <init>(Landroid/view/View;Landroidx/transition/GhostView;)V
     .locals 0
 
-    .line 525
+    .line 482
     invoke-direct {p0}, Landroidx/transition/TransitionListenerAdapter;-><init>()V
 
-    .line 526
+    .line 483
     iput-object p1, p0, Landroidx/transition/ChangeTransform$GhostListener;->mView:Landroid/view/View;
 
-    .line 527
+    .line 484
     iput-object p2, p0, Landroidx/transition/ChangeTransform$GhostListener;->mGhostView:Landroidx/transition/GhostView;
 
     return-void
@@ -41,15 +41,15 @@
 .method public onTransitionEnd(Landroidx/transition/Transition;)V
     .locals 2
 
-    .line 532
+    .line 489
     invoke-virtual {p1, p0}, Landroidx/transition/Transition;->removeListener(Landroidx/transition/Transition$TransitionListener;)Landroidx/transition/Transition;
 
-    .line 533
+    .line 490
     iget-object p1, p0, Landroidx/transition/ChangeTransform$GhostListener;->mView:Landroid/view/View;
 
     invoke-static {p1}, Landroidx/transition/GhostViewUtils;->removeGhost(Landroid/view/View;)V
 
-    .line 534
+    .line 491
     iget-object p1, p0, Landroidx/transition/ChangeTransform$GhostListener;->mView:Landroid/view/View;
 
     sget v0, Landroidx/transition/R$id;->transition_transform:I
@@ -58,7 +58,7 @@
 
     invoke-virtual {p1, v0, v1}, Landroid/view/View;->setTag(ILjava/lang/Object;)V
 
-    .line 535
+    .line 492
     iget-object p0, p0, Landroidx/transition/ChangeTransform$GhostListener;->mView:Landroid/view/View;
 
     sget p1, Landroidx/transition/R$id;->parent_matrix:I
@@ -71,7 +71,7 @@
 .method public onTransitionPause(Landroidx/transition/Transition;)V
     .locals 0
 
-    .line 540
+    .line 497
     iget-object p0, p0, Landroidx/transition/ChangeTransform$GhostListener;->mGhostView:Landroidx/transition/GhostView;
 
     const/4 p1, 0x4
@@ -84,7 +84,7 @@
 .method public onTransitionResume(Landroidx/transition/Transition;)V
     .locals 0
 
-    .line 545
+    .line 502
     iget-object p0, p0, Landroidx/transition/ChangeTransform$GhostListener;->mGhostView:Landroidx/transition/GhostView;
 
     const/4 p1, 0x0

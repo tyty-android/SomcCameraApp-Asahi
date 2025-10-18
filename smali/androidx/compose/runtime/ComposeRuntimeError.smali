@@ -29,19 +29,25 @@
 .end annotation
 
 
+# static fields
+.field public static final $stable:I
+
+
 # instance fields
 .field private final message:Ljava/lang/String;
 
 
 # direct methods
+.method static constructor <clinit>()V
+    .locals 0
+
+    return-void
+.end method
+
 .method public constructor <init>(Ljava/lang/String;)V
-    .locals 1
+    .locals 0
 
-    const-string v0, "message"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 4545
+    .line 4175
     invoke-direct {p0}, Ljava/lang/IllegalStateException;-><init>()V
 
     iput-object p1, p0, Landroidx/compose/runtime/ComposeRuntimeError;->message:Ljava/lang/String;
@@ -54,7 +60,7 @@
 .method public getMessage()Ljava/lang/String;
     .locals 0
 
-    .line 4545
+    .line 4175
     iget-object p0, p0, Landroidx/compose/runtime/ComposeRuntimeError;->message:Ljava/lang/String;
 
     return-object p0

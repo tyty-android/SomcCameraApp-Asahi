@@ -5,12 +5,12 @@
 
 # annotations
 .annotation system Ldalvik/annotation/SourceDebugExtension;
-    value = "SMAP\nTransition.kt\nKotlin\n*S Kotlin\n*F\n+ 1 Transition.kt\nandroidx/compose/animation/TransitionKt\n+ 2 Composables.kt\nandroidx/compose/runtime/ComposablesKt\n+ 3 Composer.kt\nandroidx/compose/runtime/ComposerKt\n+ 4 Transition.kt\nandroidx/compose/animation/core/TransitionKt\n*L\n1#1,124:1\n36#2:125\n25#2:137\n1097#3,6:126\n1097#3,6:138\n858#4,5:132\n*S KotlinDebug\n*F\n+ 1 Transition.kt\nandroidx/compose/animation/TransitionKt\n*L\n70#1:125\n103#1:137\n70#1:126,6\n103#1:138,6\n74#1:132,5\n*E\n"
+    value = "SMAP\nTransition.kt\nKotlin\n*S Kotlin\n*F\n+ 1 Transition.kt\nandroidx/compose/animation/TransitionKt\n+ 2 Composables.kt\nandroidx/compose/runtime/ComposablesKt\n+ 3 Composer.kt\nandroidx/compose/runtime/ComposerKt\n+ 4 Transition.kt\nandroidx/compose/animation/core/TransitionKt\n*L\n1#1,124:1\n36#2:125\n25#2:137\n1116#3,6:126\n1116#3,6:138\n1083#4,5:132\n*S KotlinDebug\n*F\n+ 1 Transition.kt\nandroidx/compose/animation/TransitionKt\n*L\n70#1:125\n103#1:137\n70#1:126,6\n103#1:138,6\n74#1:132,5\n*E\n"
 .end annotation
 
 .annotation runtime Lkotlin/Metadata;
     d1 = {
-        "\u0000F\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0003\n\u0002\u0018\u0002\n\u0002\u0008\u0003\n\u0002\u0010\u000e\n\u0002\u0008\u0003\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0004\u001a=\u0010\u0000\u001a\u0008\u0012\u0004\u0012\u00020\u00020\u0001*\u00020\u00032\u0006\u0010\u0004\u001a\u00020\u00022\u0006\u0010\u0005\u001a\u00020\u00022\u000c\u0010\u0006\u001a\u0008\u0012\u0004\u0012\u00020\u00020\u0007H\u0007\u00f8\u0001\u0000\u00f8\u0001\u0001\u00a2\u0006\u0004\u0008\u0008\u0010\t\u001aG\u0010\u0000\u001a\u0008\u0012\u0004\u0012\u00020\u00020\u0001*\u00020\u00032\u0006\u0010\u0004\u001a\u00020\u00022\u0006\u0010\u0005\u001a\u00020\u00022\u000c\u0010\u0006\u001a\u0008\u0012\u0004\u0012\u00020\u00020\u00072\u0008\u0008\u0002\u0010\n\u001a\u00020\u000bH\u0007\u00f8\u0001\u0000\u00f8\u0001\u0001\u00a2\u0006\u0004\u0008\u000c\u0010\r\u001a\u0088\u0001\u0010\u0000\u001a\u0008\u0012\u0004\u0012\u00020\u00020\u0001\"\u0004\u0008\u0000\u0010\u000e*\u0008\u0012\u0004\u0012\u0002H\u000e0\u000f2*\u0008\n\u0010\u0010\u001a$\u0012\n\u0012\u0008\u0012\u0004\u0012\u0002H\u000e0\u0012\u0012\n\u0012\u0008\u0012\u0004\u0012\u00020\u00020\u00130\u0011\u00a2\u0006\u0002\u0008\u0014\u00a2\u0006\u0002\u0008\u00152\u0008\u0008\u0002\u0010\n\u001a\u00020\u000b2&\u0010\u0016\u001a\"\u0012\u0013\u0012\u0011H\u000e\u00a2\u0006\u000c\u0008\u0017\u0012\u0008\u0008\u0018\u0012\u0004\u0008\u0008(\u0019\u0012\u0004\u0012\u00020\u00020\u0011\u00a2\u0006\u0002\u0008\u0014H\u0087\u0008\u00f8\u0001\u0002\u00f8\u0001\u0001\u00a2\u0006\u0002\u0010\u001a\u0082\u0002\u0012\n\u0005\u0008\u00a1\u001e0\u0001\n\u0002\u0008\u0019\n\u0005\u0008\u009920\u0001\u00a8\u0006\u001b"
+        "\u0000F\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0003\n\u0002\u0018\u0002\n\u0002\u0008\u0003\n\u0002\u0010\u000e\n\u0002\u0008\u0003\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0004\u001a:\u0010\u0000\u001a\u0008\u0012\u0004\u0012\u00020\u00020\u0001*\u00020\u00032\u0006\u0010\u0004\u001a\u00020\u00022\u0006\u0010\u0005\u001a\u00020\u00022\u000c\u0010\u0006\u001a\u0008\u0012\u0004\u0012\u00020\u00020\u0007H\u0007\u00f8\u0001\u0000\u00a2\u0006\u0004\u0008\u0008\u0010\t\u001aD\u0010\u0000\u001a\u0008\u0012\u0004\u0012\u00020\u00020\u0001*\u00020\u00032\u0006\u0010\u0004\u001a\u00020\u00022\u0006\u0010\u0005\u001a\u00020\u00022\u000c\u0010\u0006\u001a\u0008\u0012\u0004\u0012\u00020\u00020\u00072\u0008\u0008\u0002\u0010\n\u001a\u00020\u000bH\u0007\u00f8\u0001\u0000\u00a2\u0006\u0004\u0008\u000c\u0010\r\u001a\u0082\u0001\u0010\u0000\u001a\u0008\u0012\u0004\u0012\u00020\u00020\u0001\"\u0004\u0008\u0000\u0010\u000e*\u0008\u0012\u0004\u0012\u0002H\u000e0\u000f2*\u0008\n\u0010\u0010\u001a$\u0012\n\u0012\u0008\u0012\u0004\u0012\u0002H\u000e0\u0012\u0012\n\u0012\u0008\u0012\u0004\u0012\u00020\u00020\u00130\u0011\u00a2\u0006\u0002\u0008\u0014\u00a2\u0006\u0002\u0008\u00152\u0008\u0008\u0002\u0010\n\u001a\u00020\u000b2&\u0010\u0016\u001a\"\u0012\u0013\u0012\u0011H\u000e\u00a2\u0006\u000c\u0008\u0017\u0012\u0008\u0008\u0018\u0012\u0004\u0008\u0008(\u0019\u0012\u0004\u0012\u00020\u00020\u0011\u00a2\u0006\u0002\u0008\u0014H\u0087\u0008\u00a2\u0006\u0002\u0010\u001a\u0082\u0002\u0007\n\u0005\u0008\u00a1\u001e0\u0001\u00a8\u0006\u001b"
     }
     d2 = {
         "animateColor",
@@ -88,14 +88,6 @@
             ">;"
         }
     .end annotation
-
-    const-string v0, "<this>"
-
-    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string/jumbo v0, "targetValueByState"
-
-    invoke-static {p3, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
     const v0, -0x739d657f
 
@@ -235,7 +227,7 @@
     .line 74
     invoke-interface {p4, p5}, Landroidx/compose/runtime/Composer;->startReplaceableGroup(I)V
 
-    const-string p5, "CC(animateValue)P(3,2)857@34142L32,858@34197L31,859@34253L23,861@34289L89:Transition.kt#pdpnli"
+    const-string p5, "CC(animateValue)P(3,2)1082@42932L32,1083@42987L31,1084@43043L23,1086@43079L89:Transition.kt#pdpnli"
 
     invoke-static {p4, p5}, Landroidx/compose/runtime/ComposerKt;->sourceInformation(Landroidx/compose/runtime/Composer;Ljava/lang/String;)V
 
@@ -344,34 +336,22 @@
 
     move/from16 v0, p8
 
-    const-string v1, "$this$animateColor"
-
-    move-object v2, p0
-
-    invoke-static {p0, v1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string v1, "animationSpec"
-
-    move-object v4, p5
-
-    invoke-static {p5, v1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
     const v1, 0x715da90d
 
     invoke-interface {v9, v1}, Landroidx/compose/runtime/Composer;->startReplaceableGroup(I)V
 
-    const-string v3, "C(animateColor)P(1:c#ui.graphics.Color,3:c#ui.graphics.Color)102@4596L72,105@4680L72:Transition.kt#xbi5r1"
+    const-string v2, "C(animateColor)P(1:c#ui.graphics.Color,3:c#ui.graphics.Color)102@4596L72,105@4680L72:Transition.kt#xbi5r1"
 
-    invoke-static {v9, v3}, Landroidx/compose/runtime/ComposerKt;->sourceInformation(Landroidx/compose/runtime/Composer;Ljava/lang/String;)V
+    invoke-static {v9, v2}, Landroidx/compose/runtime/ComposerKt;->sourceInformation(Landroidx/compose/runtime/Composer;Ljava/lang/String;)V
 
-    and-int/lit8 v3, p9, 0x8
+    and-int/lit8 v2, p9, 0x8
 
-    if-eqz v3, :cond_0
+    if-eqz v2, :cond_0
 
     .line 101
-    const-string v3, "ColorAnimation"
+    const-string v2, "ColorAnimation"
 
-    move-object v5, v3
+    move-object v5, v2
 
     goto :goto_0
 
@@ -381,16 +361,16 @@
     :goto_0
     invoke-static {}, Landroidx/compose/runtime/ComposerKt;->isTraceInProgress()Z
 
-    move-result v3
+    move-result v2
 
-    if-eqz v3, :cond_1
+    if-eqz v2, :cond_1
 
-    const/4 v3, -0x1
+    const/4 v2, -0x1
 
-    const-string v6, "androidx.compose.animation.animateColor (Transition.kt:96)"
+    const-string v3, "androidx.compose.animation.animateColor (Transition.kt:101)"
 
     .line 102
-    invoke-static {v1, v0, v3, v6}, Landroidx/compose/runtime/ComposerKt;->traceEventStart(IIILjava/lang/String;)V
+    invoke-static {v1, v0, v2, v3}, Landroidx/compose/runtime/ComposerKt;->traceEventStart(IIILjava/lang/String;)V
 
     :cond_1
     const v1, -0x1d58f75c
@@ -408,13 +388,13 @@
     move-result-object v1
 
     .line 139
-    sget-object v3, Landroidx/compose/runtime/Composer;->Companion:Landroidx/compose/runtime/Composer$Companion;
+    sget-object v2, Landroidx/compose/runtime/Composer;->Companion:Landroidx/compose/runtime/Composer$Companion;
 
-    invoke-virtual {v3}, Landroidx/compose/runtime/Composer$Companion;->getEmpty()Ljava/lang/Object;
+    invoke-virtual {v2}, Landroidx/compose/runtime/Composer$Companion;->getEmpty()Ljava/lang/Object;
 
-    move-result-object v3
+    move-result-object v2
 
-    if-ne v1, v3, :cond_2
+    if-ne v1, v2, :cond_2
 
     .line 104
     sget-object v1, Landroidx/compose/ui/graphics/Color;->Companion:Landroidx/compose/ui/graphics/Color$Companion;
@@ -425,9 +405,9 @@
 
     invoke-static {p3, p4}, Landroidx/compose/ui/graphics/Color;->getColorSpace-impl(J)Landroidx/compose/ui/graphics/colorspace/ColorSpace;
 
-    move-result-object v3
+    move-result-object v2
 
-    invoke-interface {v1, v3}, Lkotlin/jvm/functions/Function1;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-interface {v1, v2}, Lkotlin/jvm/functions/Function1;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v1
 
@@ -452,49 +432,47 @@
 
     invoke-static {p3, p4}, Landroidx/compose/ui/graphics/Color;->box-impl(J)Landroidx/compose/ui/graphics/Color;
 
-    move-result-object v6
+    move-result-object v2
 
-    sget v7, Landroidx/compose/animation/core/InfiniteTransition;->$stable:I
+    sget v4, Landroidx/compose/animation/core/InfiniteTransition;->$stable:I
 
-    or-int/lit16 v7, v7, 0x1000
+    or-int/lit16 v4, v4, 0x1000
 
-    and-int/lit8 v8, v0, 0xe
+    and-int/lit8 v6, v0, 0xe
 
-    or-int/2addr v7, v8
+    or-int/2addr v4, v6
 
-    and-int/lit8 v8, v0, 0x70
+    and-int/lit8 v6, v0, 0x70
 
-    or-int/2addr v7, v8
+    or-int/2addr v4, v6
 
-    and-int/lit16 v8, v0, 0x380
+    and-int/lit16 v6, v0, 0x380
 
-    or-int/2addr v7, v8
+    or-int/2addr v4, v6
 
-    sget v8, Landroidx/compose/animation/core/InfiniteRepeatableSpec;->$stable:I
+    sget v6, Landroidx/compose/animation/core/InfiniteRepeatableSpec;->$stable:I
 
-    shl-int/lit8 v8, v8, 0xc
+    shl-int/lit8 v6, v6, 0xc
 
-    or-int/2addr v7, v8
+    or-int/2addr v4, v6
 
     shl-int/lit8 v0, v0, 0x3
 
-    const v8, 0xe000
+    const v6, 0xe000
 
-    and-int/2addr v8, v0
+    and-int/2addr v6, v0
 
-    or-int/2addr v7, v8
+    or-int/2addr v4, v6
 
-    const/high16 v8, 0x70000
+    const/high16 v6, 0x70000
 
-    and-int/2addr v0, v8
+    and-int/2addr v0, v6
 
-    or-int/2addr v7, v0
+    or-int v7, v4, v0
 
     const/4 v8, 0x0
 
     move-object v0, p0
-
-    move-object v2, v6
 
     move-object v4, p5
 
@@ -529,38 +507,26 @@
 
     move/from16 v0, p7
 
-    const-string v1, "$this$animateColor"
-
-    move-object v2, p0
-
-    invoke-static {p0, v1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string v1, "animationSpec"
-
-    move-object/from16 v5, p5
-
-    invoke-static {v5, v1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
     const v1, 0x537b369a
 
     invoke-interface {v10, v1}, Landroidx/compose/runtime/Composer;->startReplaceableGroup(I)V
 
-    const-string v3, "C(animateColor)P(1:c#ui.graphics.Color,2:c#ui.graphics.Color)117@5040L143:Transition.kt#xbi5r1"
+    const-string v2, "C(animateColor)P(1:c#ui.graphics.Color,2:c#ui.graphics.Color)117@5040L143:Transition.kt#xbi5r1"
 
-    invoke-static {v10, v3}, Landroidx/compose/runtime/ComposerKt;->sourceInformation(Landroidx/compose/runtime/Composer;Ljava/lang/String;)V
+    invoke-static {v10, v2}, Landroidx/compose/runtime/ComposerKt;->sourceInformation(Landroidx/compose/runtime/Composer;Ljava/lang/String;)V
 
     invoke-static {}, Landroidx/compose/runtime/ComposerKt;->isTraceInProgress()Z
 
-    move-result v3
+    move-result v2
 
-    if-eqz v3, :cond_0
+    if-eqz v2, :cond_0
 
-    const/4 v3, -0x1
+    const/4 v2, -0x1
 
-    const-string v4, "androidx.compose.animation.animateColor (Transition.kt:113)"
+    const-string v3, "androidx.compose.animation.animateColor (Transition.kt:117)"
 
     .line 118
-    invoke-static {v1, v0, v3, v4}, Landroidx/compose/runtime/ComposerKt;->traceEventStart(IIILjava/lang/String;)V
+    invoke-static {v1, v0, v2, v3}, Landroidx/compose/runtime/ComposerKt;->traceEventStart(IIILjava/lang/String;)V
 
     .line 122
     :cond_0
@@ -568,23 +534,23 @@
 
     or-int/lit16 v1, v1, 0x6000
 
-    and-int/lit8 v3, v0, 0xe
+    and-int/lit8 v2, v0, 0xe
 
-    or-int/2addr v1, v3
+    or-int/2addr v1, v2
 
-    and-int/lit8 v3, v0, 0x70
+    and-int/lit8 v2, v0, 0x70
 
-    or-int/2addr v1, v3
+    or-int/2addr v1, v2
 
-    and-int/lit16 v3, v0, 0x380
+    and-int/lit16 v2, v0, 0x380
 
-    or-int/2addr v1, v3
+    or-int/2addr v1, v2
 
-    sget v3, Landroidx/compose/animation/core/InfiniteRepeatableSpec;->$stable:I
+    sget v2, Landroidx/compose/animation/core/InfiniteRepeatableSpec;->$stable:I
 
-    shl-int/lit8 v3, v3, 0x9
+    shl-int/lit8 v2, v2, 0x9
 
-    or-int/2addr v1, v3
+    or-int/2addr v1, v2
 
     and-int/lit16 v0, v0, 0x1c00
 

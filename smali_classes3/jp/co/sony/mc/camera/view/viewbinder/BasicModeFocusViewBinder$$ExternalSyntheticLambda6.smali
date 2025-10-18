@@ -3,7 +3,7 @@
 .source "D8$$SyntheticClass"
 
 # interfaces
-.implements Landroid/widget/CompoundButton$OnCheckedChangeListener;
+.implements Lkotlin/jvm/functions/Function1;
 
 
 # instance fields
@@ -24,13 +24,17 @@
 
 
 # virtual methods
-.method public final onCheckedChanged(Landroid/widget/CompoundButton;Z)V
+.method public final invoke(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
 
     .line 0
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/viewbinder/BasicModeFocusViewBinder$$ExternalSyntheticLambda6;->f$0:Ljp/co/sony/mc/camera/view/viewbinder/BasicModeFocusViewBinder;
 
-    invoke-static {p0, p1, p2}, Ljp/co/sony/mc/camera/view/viewbinder/BasicModeFocusViewBinder;->$r8$lambda$iGfAq-xRXsWiO7oDZnAiVrp77g8(Ljp/co/sony/mc/camera/view/viewbinder/BasicModeFocusViewBinder;Landroid/widget/CompoundButton;Z)V
+    check-cast p1, Ljp/co/sony/mc/camera/view/uistate/BasicModeMenuType;
 
-    return-void
+    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/view/viewbinder/BasicModeFocusViewBinder;->$r8$lambda$b2aMKjc6bkuKiZyYQqxZ4VXAkxw(Ljp/co/sony/mc/camera/view/viewbinder/BasicModeFocusViewBinder;Ljp/co/sony/mc/camera/view/uistate/BasicModeMenuType;)Lkotlin/Unit;
+
+    move-result-object p0
+
+    return-object p0
 .end method

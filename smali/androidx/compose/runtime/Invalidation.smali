@@ -58,7 +58,7 @@
 
 # direct methods
 .method public constructor <init>(Landroidx/compose/runtime/RecomposeScopeImpl;ILandroidx/compose/runtime/collection/IdentityArraySet;)V
-    .locals 1
+    .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -70,20 +70,16 @@
         }
     .end annotation
 
-    const-string v0, "scope"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 221
+    .line 219
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 225
+    .line 223
     iput-object p1, p0, Landroidx/compose/runtime/Invalidation;->scope:Landroidx/compose/runtime/RecomposeScopeImpl;
 
-    .line 230
+    .line 228
     iput p2, p0, Landroidx/compose/runtime/Invalidation;->location:I
 
-    .line 238
+    .line 236
     iput-object p3, p0, Landroidx/compose/runtime/Invalidation;->instances:Landroidx/compose/runtime/collection/IdentityArraySet;
 
     return-void
@@ -102,7 +98,7 @@
         }
     .end annotation
 
-    .line 238
+    .line 236
     iget-object p0, p0, Landroidx/compose/runtime/Invalidation;->instances:Landroidx/compose/runtime/collection/IdentityArraySet;
 
     return-object p0
@@ -111,7 +107,7 @@
 .method public final getLocation()I
     .locals 0
 
-    .line 230
+    .line 228
     iget p0, p0, Landroidx/compose/runtime/Invalidation;->location:I
 
     return p0
@@ -120,7 +116,7 @@
 .method public final getScope()Landroidx/compose/runtime/RecomposeScopeImpl;
     .locals 0
 
-    .line 225
+    .line 223
     iget-object p0, p0, Landroidx/compose/runtime/Invalidation;->scope:Landroidx/compose/runtime/RecomposeScopeImpl;
 
     return-object p0
@@ -129,7 +125,7 @@
 .method public final isInvalid()Z
     .locals 1
 
-    .line 240
+    .line 238
     iget-object v0, p0, Landroidx/compose/runtime/Invalidation;->scope:Landroidx/compose/runtime/RecomposeScopeImpl;
 
     iget-object p0, p0, Landroidx/compose/runtime/Invalidation;->instances:Landroidx/compose/runtime/collection/IdentityArraySet;
@@ -152,7 +148,7 @@
         }
     .end annotation
 
-    .line 238
+    .line 236
     iput-object p1, p0, Landroidx/compose/runtime/Invalidation;->instances:Landroidx/compose/runtime/collection/IdentityArraySet;
 
     return-void

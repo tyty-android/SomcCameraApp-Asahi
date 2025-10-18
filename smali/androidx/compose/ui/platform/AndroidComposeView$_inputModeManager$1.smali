@@ -70,7 +70,7 @@
 .method public bridge synthetic invoke(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
 
-    .line 431
+    .line 478
     check-cast p1, Landroidx/compose/ui/input/InputMode;
 
     invoke-virtual {p1}, Landroidx/compose/ui/input/InputMode;->unbox-impl()I
@@ -87,7 +87,7 @@
 .method public final invoke-iuPiT84(I)Ljava/lang/Boolean;
     .locals 1
 
-    .line 435
+    .line 482
     sget-object v0, Landroidx/compose/ui/input/InputMode;->Companion:Landroidx/compose/ui/input/InputMode$Companion;
 
     invoke-virtual {v0}, Landroidx/compose/ui/input/InputMode$Companion;->getTouch-aOaMEAU()I
@@ -108,7 +108,7 @@
 
     goto :goto_0
 
-    .line 439
+    .line 486
     :cond_0
     sget-object v0, Landroidx/compose/ui/input/InputMode;->Companion:Landroidx/compose/ui/input/InputMode$Companion;
 
@@ -146,7 +146,7 @@
     :cond_2
     const/4 p0, 0x0
 
-    .line 441
+    .line 488
     :goto_0
     invoke-static {p0}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 

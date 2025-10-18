@@ -42,7 +42,7 @@
 .method static constructor <clinit>()V
     .locals 2
 
-    .line 102
+    .line 103
     new-instance v0, Landroidx/compose/ui/layout/HorizontalAlignmentLine;
 
     sget-object v1, Landroidx/compose/ui/layout/AlignmentLineKt$FirstBaseline$1;->INSTANCE:Landroidx/compose/ui/layout/AlignmentLineKt$FirstBaseline$1;
@@ -53,7 +53,7 @@
 
     sput-object v0, Landroidx/compose/ui/layout/AlignmentLineKt;->FirstBaseline:Landroidx/compose/ui/layout/HorizontalAlignmentLine;
 
-    .line 107
+    .line 109
     new-instance v0, Landroidx/compose/ui/layout/HorizontalAlignmentLine;
 
     sget-object v1, Landroidx/compose/ui/layout/AlignmentLineKt$LastBaseline$1;->INSTANCE:Landroidx/compose/ui/layout/AlignmentLineKt$LastBaseline$1;
@@ -70,7 +70,7 @@
 .method public static final getFirstBaseline()Landroidx/compose/ui/layout/HorizontalAlignmentLine;
     .locals 1
 
-    .line 102
+    .line 103
     sget-object v0, Landroidx/compose/ui/layout/AlignmentLineKt;->FirstBaseline:Landroidx/compose/ui/layout/HorizontalAlignmentLine;
 
     return-object v0
@@ -79,18 +79,14 @@
 .method public static final getLastBaseline()Landroidx/compose/ui/layout/HorizontalAlignmentLine;
     .locals 1
 
-    .line 107
+    .line 109
     sget-object v0, Landroidx/compose/ui/layout/AlignmentLineKt;->LastBaseline:Landroidx/compose/ui/layout/HorizontalAlignmentLine;
 
     return-object v0
 .end method
 
 .method public static final merge(Landroidx/compose/ui/layout/AlignmentLine;II)I
-    .locals 1
-
-    const-string v0, "<this>"
-
-    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+    .locals 0
 
     .line 71
     invoke-virtual {p0}, Landroidx/compose/ui/layout/AlignmentLine;->getMerger$ui_release()Lkotlin/jvm/functions/Function2;

@@ -21,7 +21,7 @@
 .method constructor <init>()V
     .locals 0
 
-    .line 2460
+    .line 2525
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -42,8 +42,10 @@
         }
     .end annotation
 
-    .line 2464
-    invoke-static {}, Ljp/co/sony/mc/camera/configuration/parameters/VideoHdr;->getDefault()Ljp/co/sony/mc/camera/configuration/parameters/VideoHdr;
+    const/16 p0, 0x50
+
+    .line 2529
+    invoke-static {p0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object p0
 

@@ -65,29 +65,29 @@
 
     const/4 v0, 0x2
 
-    .line 239
+    .line 238
     new-array v0, v0, [Ljava/lang/Class;
 
-    const-class v1, Landroid/app/Application;
+    const/4 v1, 0x0
 
-    const/4 v2, 0x0
+    const-class v2, Landroid/app/Application;
 
-    aput-object v1, v0, v2
+    aput-object v2, v0, v1
 
-    const-class v1, Landroidx/lifecycle/SavedStateHandle;
+    const/4 v1, 0x1
 
-    const/4 v2, 0x1
+    const-class v2, Landroidx/lifecycle/SavedStateHandle;
 
-    aput-object v1, v0, v2
+    aput-object v2, v0, v1
 
-    .line 238
+    .line 237
     invoke-static {v0}, Lkotlin/collections/CollectionsKt;->listOf([Ljava/lang/Object;)Ljava/util/List;
 
     move-result-object v0
 
     sput-object v0, Landroidx/lifecycle/SavedStateViewModelFactoryKt;->ANDROID_VIEWMODEL_SIGNATURE:Ljava/util/List;
 
-    .line 242
+    .line 241
     const-class v0, Landroidx/lifecycle/SavedStateHandle;
 
     invoke-static {v0}, Lkotlin/collections/CollectionsKt;->listOf(Ljava/lang/Object;)Ljava/util/List;
@@ -143,7 +143,7 @@
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 250
+    .line 249
     invoke-virtual {p0}, Ljava/lang/Class;->getConstructors()[Ljava/lang/reflect/Constructor;
 
     move-result-object v0
@@ -161,7 +161,7 @@
 
     aget-object v3, v0, v2
 
-    .line 251
+    .line 250
     invoke-virtual {v3}, Ljava/lang/reflect/Constructor;->getParameterTypes()[Ljava/lang/Class;
 
     move-result-object v4
@@ -176,21 +176,21 @@
 
     move-result-object v4
 
-    .line 252
+    .line 251
     invoke-static {p1, v4}, Lkotlin/jvm/internal/Intrinsics;->areEqual(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v5
 
     if-eqz v5, :cond_0
 
-    .line 254
+    .line 253
     const-string p0, "null cannot be cast to non-null type java.lang.reflect.Constructor<T of androidx.lifecycle.SavedStateViewModelFactoryKt.findMatchingConstructor>"
 
     invoke-static {v3, p0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;Ljava/lang/String;)V
 
     return-object v3
 
-    .line 256
+    .line 255
     :cond_0
     invoke-interface {p1}, Ljava/util/List;->size()I
 
@@ -214,11 +214,11 @@
 
     goto :goto_1
 
-    .line 257
+    .line 256
     :cond_1
     new-instance v0, Ljava/lang/UnsupportedOperationException;
 
-    .line 258
+    .line 257
     new-instance v1, Ljava/lang/StringBuilder;
 
     const-string v2, "Class "
@@ -247,7 +247,7 @@
 
     move-result-object p0
 
-    .line 257
+    .line 256
     invoke-direct {v0, p0}, Ljava/lang/UnsupportedOperationException;-><init>(Ljava/lang/String;)V
 
     throw v0
@@ -292,7 +292,7 @@
 
     invoke-static {p2, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 226
+    .line 225
     :try_start_0
     array-length v0, p2
 
@@ -315,10 +315,10 @@
     :catch_0
     move-exception p1
 
-    .line 232
+    .line 231
     new-instance p2, Ljava/lang/RuntimeException;
 
-    .line 233
+    .line 232
     new-instance v0, Ljava/lang/StringBuilder;
 
     const-string v1, "An exception happened in constructor of "
@@ -337,7 +337,7 @@
 
     move-result-object p1
 
-    .line 232
+    .line 231
     invoke-direct {p2, p0, p1}, Ljava/lang/RuntimeException;-><init>(Ljava/lang/String;Ljava/lang/Throwable;)V
 
     throw p2
@@ -345,7 +345,7 @@
     :catch_1
     move-exception p1
 
-    .line 230
+    .line 229
     new-instance p2, Ljava/lang/RuntimeException;
 
     new-instance v0, Ljava/lang/StringBuilder;
@@ -377,7 +377,7 @@
     :catch_2
     move-exception p1
 
-    .line 228
+    .line 227
     new-instance p2, Ljava/lang/RuntimeException;
 
     new-instance v0, Ljava/lang/StringBuilder;

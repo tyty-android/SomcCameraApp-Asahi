@@ -26,7 +26,7 @@
 
     check-cast p2, Landroidx/compose/ui/node/LayoutNode;
 
-    invoke-static {p1, p2}, Landroidx/compose/ui/node/LayoutNode;->$r8$lambda$wJgOUNQagmfWy3XqULyC2NpX4tA(Landroidx/compose/ui/node/LayoutNode;Landroidx/compose/ui/node/LayoutNode;)I
+    invoke-static {p1, p2}, Landroidx/compose/ui/node/LayoutNode;->$r8$lambda$sRgkQXY3YeKQJ3LSwfhu7YPHyX0(Landroidx/compose/ui/node/LayoutNode;Landroidx/compose/ui/node/LayoutNode;)I
 
     move-result p0
 

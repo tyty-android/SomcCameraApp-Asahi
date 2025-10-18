@@ -11,16 +11,28 @@
 .method static constructor <clinit>()V
     .locals 3
 
-    .line 45
-    const-string v0, "EEE, dd-MMM-yy HH:mm:ss zzz"
+    const/4 v0, 0x3
 
-    const-string v1, "EEE MMM d HH:mm:ss yyyy"
+    .line 45
+    new-array v0, v0, [Ljava/lang/String;
+
+    const/4 v1, 0x0
 
     const-string v2, "EEE, dd MMM yyyy HH:mm:ss zzz"
 
-    filled-new-array {v2, v0, v1}, [Ljava/lang/String;
+    aput-object v2, v0, v1
 
-    move-result-object v0
+    const/4 v1, 0x1
+
+    const-string v2, "EEE, dd-MMM-yy HH:mm:ss zzz"
+
+    aput-object v2, v0, v1
+
+    const/4 v1, 0x2
+
+    const-string v2, "EEE MMM d HH:mm:ss yyyy"
+
+    aput-object v2, v0, v1
 
     sput-object v0, Lorg/apache/http/impl/cookie/RFC6265StrictSpec;->DATE_PATTERNS:[Ljava/lang/String;
 

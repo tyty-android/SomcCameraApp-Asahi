@@ -302,7 +302,8 @@
     .line 150
     invoke-virtual {p2}, Landroid/content/res/TypedArray;->recycle()V
 
-    if-eqz v0, :cond_3
+    :cond_3
+    if-eqz v0, :cond_4
 
     .line 154
     iget-object p2, p0, Landroidx/viewpager/widget/PagerTitleStrip;->mPrevText:Landroid/widget/TextView;
@@ -322,7 +323,7 @@
     goto :goto_0
 
     .line 158
-    :cond_3
+    :cond_4
     iget-object p2, p0, Landroidx/viewpager/widget/PagerTitleStrip;->mPrevText:Landroid/widget/TextView;
 
     invoke-virtual {p2}, Landroid/widget/TextView;->setSingleLine()V

@@ -33,8 +33,6 @@
 
 .field public static final enum READ_IMAGES_VIDEOS:Ljp/co/sony/mc/camera/DataConsentActivity$PermissionGroup;
 
-.field public static final enum STORAGE:Ljp/co/sony/mc/camera/DataConsentActivity$PermissionGroup;
-
 
 # instance fields
 .field mPermissionDescriptionId:I
@@ -44,7 +42,7 @@
 
 # direct methods
 .method private static synthetic $values()[Ljp/co/sony/mc/camera/DataConsentActivity$PermissionGroup;
-    .locals 5
+    .locals 4
 
     .line 359
     sget-object v0, Ljp/co/sony/mc/camera/DataConsentActivity$PermissionGroup;->CAMERA:Ljp/co/sony/mc/camera/DataConsentActivity$PermissionGroup;
@@ -55,9 +53,7 @@
 
     sget-object v3, Ljp/co/sony/mc/camera/DataConsentActivity$PermissionGroup;->READ_AUDIO_SOUND:Ljp/co/sony/mc/camera/DataConsentActivity$PermissionGroup;
 
-    sget-object v4, Ljp/co/sony/mc/camera/DataConsentActivity$PermissionGroup;->STORAGE:Ljp/co/sony/mc/camera/DataConsentActivity$PermissionGroup;
-
-    filled-new-array {v0, v1, v2, v3, v4}, [Ljp/co/sony/mc/camera/DataConsentActivity$PermissionGroup;
+    filled-new-array {v0, v1, v2, v3}, [Ljp/co/sony/mc/camera/DataConsentActivity$PermissionGroup;
 
     move-result-object v0
 
@@ -86,7 +82,7 @@
 
     const-string v3, "android.permission-group.CAMERA"
 
-    const v4, 0x7f1103a2
+    const v4, 0x7f1103d6
 
     invoke-direct {v0, v1, v2, v3, v4}, Ljp/co/sony/mc/camera/DataConsentActivity$PermissionGroup;-><init>(Ljava/lang/String;ILjava/lang/String;I)V
 
@@ -114,7 +110,7 @@
 
     const-string v3, "android.permission-group.MICROPHONE"
 
-    const v4, 0x7f1103a4
+    const v4, 0x7f1103d8
 
     invoke-direct {v0, v1, v2, v3, v4}, Ljp/co/sony/mc/camera/DataConsentActivity$PermissionGroup;-><init>(Ljava/lang/String;ILjava/lang/String;I)V
 
@@ -132,21 +128,6 @@
     invoke-direct {v0, v3, v1, v2, v4}, Ljp/co/sony/mc/camera/DataConsentActivity$PermissionGroup;-><init>(Ljava/lang/String;ILjava/lang/String;I)V
 
     sput-object v0, Ljp/co/sony/mc/camera/DataConsentActivity$PermissionGroup;->READ_AUDIO_SOUND:Ljp/co/sony/mc/camera/DataConsentActivity$PermissionGroup;
-
-    .line 372
-    new-instance v0, Ljp/co/sony/mc/camera/DataConsentActivity$PermissionGroup;
-
-    const-string v1, "android.permission-group.STORAGE"
-
-    const v2, 0x7f1103a8
-
-    const-string v3, "STORAGE"
-
-    const/4 v4, 0x4
-
-    invoke-direct {v0, v3, v4, v1, v2}, Ljp/co/sony/mc/camera/DataConsentActivity$PermissionGroup;-><init>(Ljava/lang/String;ILjava/lang/String;I)V
-
-    sput-object v0, Ljp/co/sony/mc/camera/DataConsentActivity$PermissionGroup;->STORAGE:Ljp/co/sony/mc/camera/DataConsentActivity$PermissionGroup;
 
     .line 359
     invoke-static {}, Ljp/co/sony/mc/camera/DataConsentActivity$PermissionGroup;->$values()[Ljp/co/sony/mc/camera/DataConsentActivity$PermissionGroup;
@@ -168,46 +149,65 @@
         }
     .end annotation
 
-    .line 380
+    .line 377
     invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
-    .line 381
+    .line 378
     iput-object p3, p0, Ljp/co/sony/mc/camera/DataConsentActivity$PermissionGroup;->mPermissionName:Ljava/lang/String;
 
-    .line 382
+    .line 379
     iput p4, p0, Ljp/co/sony/mc/camera/DataConsentActivity$PermissionGroup;->mPermissionDescriptionId:I
 
     return-void
 .end method
 
 .method private getPermissionGroupLabel(Landroid/content/Context;)Ljava/lang/String;
-    .locals 5
+    .locals 7
 
     const-string v0, "getPermissionGroupLabel label :"
 
-    .line 386
+    .line 383
     sget-boolean v1, Ljp/co/sony/mc/camera/util/CamLog;->VERBOSE:Z
+
+    const/4 v2, 0x0
+
+    const/4 v3, 0x1
 
     if-eqz v1, :cond_0
 
-    const-string v1, "getPermissionGroupLabel() start"
+    new-array v1, v3, [Ljava/lang/String;
 
-    filled-new-array {v1}, [Ljava/lang/String;
+    const-string v4, "getPermissionGroupLabel() start"
 
-    move-result-object v1
+    aput-object v4, v1, v2
 
     invoke-static {v1}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
-    .line 388
+    .line 385
     :cond_0
     const-string v1, ""
 
+    .line 386
+    sget-object v4, Ljp/co/sony/mc/camera/DataConsentActivity$PermissionGroup;->READ_IMAGES_VIDEOS:Ljp/co/sony/mc/camera/DataConsentActivity$PermissionGroup;
+
+    if-ne p0, v4, :cond_1
+
+    const p0, 0x7f1103e0
+
+    .line 387
+    invoke-virtual {p1, p0}, Landroid/content/Context;->getString(I)Ljava/lang/String;
+
+    move-result-object p0
+
+    goto :goto_1
+
     .line 389
-    sget-object v2, Ljp/co/sony/mc/camera/DataConsentActivity$PermissionGroup;->READ_IMAGES_VIDEOS:Ljp/co/sony/mc/camera/DataConsentActivity$PermissionGroup;
+    :cond_1
+    sget-object v4, Ljp/co/sony/mc/camera/DataConsentActivity$PermissionGroup;->READ_AUDIO_SOUND:Ljp/co/sony/mc/camera/DataConsentActivity$PermissionGroup;
 
-    if-ne p0, v2, :cond_1
+    if-ne p0, v4, :cond_2
 
-    const p0, 0x7f1103ac
+    const p0, 0x7f1103df
 
     .line 390
     invoke-virtual {p1, p0}, Landroid/content/Context;->getString(I)Ljava/lang/String;
@@ -216,76 +216,59 @@
 
     goto :goto_1
 
-    .line 392
-    :cond_1
-    sget-object v2, Ljp/co/sony/mc/camera/DataConsentActivity$PermissionGroup;->READ_AUDIO_SOUND:Ljp/co/sony/mc/camera/DataConsentActivity$PermissionGroup;
-
-    if-ne p0, v2, :cond_2
-
-    const p0, 0x7f1103ab
-
-    .line 393
-    invoke-virtual {p1, p0}, Landroid/content/Context;->getString(I)Ljava/lang/String;
-
-    move-result-object p0
-
-    goto :goto_1
-
-    .line 397
+    .line 394
     :cond_2
     :try_start_0
     invoke-virtual {p1}, Landroid/content/Context;->getPackageManager()Landroid/content/pm/PackageManager;
 
-    move-result-object v2
+    move-result-object v4
 
-    iget-object v3, p0, Ljp/co/sony/mc/camera/DataConsentActivity$PermissionGroup;->mPermissionName:Ljava/lang/String;
+    iget-object v5, p0, Ljp/co/sony/mc/camera/DataConsentActivity$PermissionGroup;->mPermissionName:Ljava/lang/String;
 
-    const/16 v4, 0x80
+    const/16 v6, 0x80
 
-    .line 398
-    invoke-virtual {v2, v3, v4}, Landroid/content/pm/PackageManager;->getPermissionGroupInfo(Ljava/lang/String;I)Landroid/content/pm/PermissionGroupInfo;
+    .line 395
+    invoke-virtual {v4, v5, v6}, Landroid/content/pm/PackageManager;->getPermissionGroupInfo(Ljava/lang/String;I)Landroid/content/pm/PermissionGroupInfo;
 
-    move-result-object v2
+    move-result-object v4
 
-    if-eqz v2, :cond_3
+    if-eqz v4, :cond_3
 
-    .line 400
+    .line 397
     invoke-virtual {p1}, Landroid/content/Context;->getPackageManager()Landroid/content/pm/PackageManager;
 
     move-result-object p1
 
-    invoke-virtual {v2, p1}, Landroid/content/pm/PermissionGroupInfo;->loadLabel(Landroid/content/pm/PackageManager;)Ljava/lang/CharSequence;
+    invoke-virtual {v4, p1}, Landroid/content/pm/PermissionGroupInfo;->loadLabel(Landroid/content/pm/PackageManager;)Ljava/lang/CharSequence;
 
     move-result-object p1
 
-    .line 401
+    .line 398
     invoke-static {p1}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
-    move-result v2
+    move-result v4
 
-    if-nez v2, :cond_3
+    if-nez v4, :cond_3
 
-    .line 402
+    .line 399
     invoke-interface {p1}, Ljava/lang/CharSequence;->toString()Ljava/lang/String;
 
     move-result-object v1
 
-    .line 403
+    .line 400
     sget-boolean p1, Ljp/co/sony/mc/camera/util/CamLog;->VERBOSE:Z
 
     if-eqz p1, :cond_3
 
-    const/4 p1, 0x1
+    new-array p1, v3, [Ljava/lang/String;
 
-    new-array p1, p1, [Ljava/lang/String;
+    new-instance v4, Ljava/lang/StringBuilder;
 
-    new-instance v2, Ljava/lang/StringBuilder;
-
-    invoke-direct {v2, v0}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+    invoke-direct {v4, v0}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
     iget-object p0, p0, Ljp/co/sony/mc/camera/DataConsentActivity$PermissionGroup;->mPermissionName:Ljava/lang/String;
 
-    invoke-virtual {v2, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v4, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object p0
 
@@ -293,9 +276,7 @@
 
     move-result-object p0
 
-    const/4 v0, 0x0
-
-    aput-object p0, p1, v0
+    aput-object p0, p1, v2
 
     invoke-static {p1}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
     :try_end_0
@@ -306,14 +287,16 @@
     :catch_0
     move-exception p0
 
-    .line 408
-    new-instance p1, Ljava/lang/StringBuilder;
+    .line 405
+    new-array p1, v3, [Ljava/lang/String;
 
-    const-string v0, "getPermissionGroupLabel(): "
+    new-instance v0, Ljava/lang/StringBuilder;
 
-    invoke-direct {p1, v0}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+    const-string v4, "getPermissionGroupLabel(): "
 
-    invoke-virtual {p1, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+    invoke-direct {v0, v4}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+
+    invoke-virtual {v0, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
     move-result-object p0
 
@@ -321,27 +304,25 @@
 
     move-result-object p0
 
-    filled-new-array {p0}, [Ljava/lang/String;
+    aput-object p0, p1, v2
 
-    move-result-object p0
-
-    invoke-static {p0}, Ljp/co/sony/mc/camera/util/CamLog;->e([Ljava/lang/String;)V
+    invoke-static {p1}, Ljp/co/sony/mc/camera/util/CamLog;->e([Ljava/lang/String;)V
 
     :cond_3
     :goto_0
     move-object p0, v1
 
-    .line 412
+    .line 409
     :goto_1
     sget-boolean p1, Ljp/co/sony/mc/camera/util/CamLog;->VERBOSE:Z
 
     if-eqz p1, :cond_4
 
-    const-string p1, "getPermissionGroupLabel() end"
+    new-array p1, v3, [Ljava/lang/String;
 
-    filled-new-array {p1}, [Ljava/lang/String;
+    const-string v0, "getPermissionGroupLabel() end"
 
-    move-result-object p1
+    aput-object v0, p1, v2
 
     invoke-static {p1}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 

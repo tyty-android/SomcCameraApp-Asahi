@@ -55,7 +55,7 @@
 .end method
 
 .method public constructor <init>()V
-    .locals 4
+    .locals 5
 
     .line 29
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -72,16 +72,22 @@
 
     iput-object v2, p0, Landroidx/constraintlayout/core/motion/utils/TimeCycleSplineSet;->mTimePoints:[I
 
-    const/4 v2, 0x3
+    const/4 v2, 0x2
 
     .line 34
-    filled-new-array {v1, v2}, [I
+    new-array v2, v2, [I
 
-    move-result-object v1
+    const/4 v3, 0x1
 
-    sget-object v3, Ljava/lang/Float;->TYPE:Ljava/lang/Class;
+    const/4 v4, 0x3
 
-    invoke-static {v3, v1}, Ljava/lang/reflect/Array;->newInstance(Ljava/lang/Class;[I)Ljava/lang/Object;
+    aput v4, v2, v3
+
+    aput v1, v2, v0
+
+    sget-object v1, Ljava/lang/Float;->TYPE:Ljava/lang/Class;
+
+    invoke-static {v1, v2}, Ljava/lang/reflect/Array;->newInstance(Ljava/lang/Class;[I)Ljava/lang/Object;
 
     move-result-object v1
 
@@ -90,7 +96,7 @@
     iput-object v1, p0, Landroidx/constraintlayout/core/motion/utils/TimeCycleSplineSet;->mValues:[[F
 
     .line 37
-    new-array v1, v2, [F
+    new-array v1, v4, [F
 
     iput-object v1, p0, Landroidx/constraintlayout/core/motion/utils/TimeCycleSplineSet;->mCache:[F
 
@@ -386,93 +392,95 @@
     :cond_3
     new-array v0, v1, [D
 
-    const/4 v2, 0x3
+    const/4 v2, 0x2
 
     .line 193
-    filled-new-array {v1, v2}, [I
+    new-array v5, v2, [I
 
-    move-result-object v1
+    const/4 v6, 0x3
 
-    sget-object v2, Ljava/lang/Double;->TYPE:Ljava/lang/Class;
+    aput v6, v5, v3
 
-    invoke-static {v2, v1}, Ljava/lang/reflect/Array;->newInstance(Ljava/lang/Class;[I)Ljava/lang/Object;
+    aput v1, v5, v4
+
+    sget-object v1, Ljava/lang/Double;->TYPE:Ljava/lang/Class;
+
+    invoke-static {v1, v5}, Ljava/lang/reflect/Array;->newInstance(Ljava/lang/Class;[I)Ljava/lang/Object;
 
     move-result-object v1
 
     check-cast v1, [[D
 
-    move v2, v4
+    move v5, v4
 
-    move v5, v2
+    move v6, v5
 
     .line 196
     :goto_1
-    iget v6, p0, Landroidx/constraintlayout/core/motion/utils/TimeCycleSplineSet;->count:I
+    iget v7, p0, Landroidx/constraintlayout/core/motion/utils/TimeCycleSplineSet;->count:I
 
-    if-ge v2, v6, :cond_5
+    if-ge v5, v7, :cond_5
 
-    if-lez v2, :cond_4
+    if-lez v5, :cond_4
 
     .line 197
-    iget-object v6, p0, Landroidx/constraintlayout/core/motion/utils/TimeCycleSplineSet;->mTimePoints:[I
+    iget-object v7, p0, Landroidx/constraintlayout/core/motion/utils/TimeCycleSplineSet;->mTimePoints:[I
 
-    aget v7, v6, v2
+    aget v8, v7, v5
 
-    add-int/lit8 v8, v2, -0x1
+    add-int/lit8 v9, v5, -0x1
 
-    aget v6, v6, v8
+    aget v7, v7, v9
 
-    if-ne v7, v6, :cond_4
+    if-ne v8, v7, :cond_4
 
     goto :goto_2
 
     .line 200
     :cond_4
-    iget-object v6, p0, Landroidx/constraintlayout/core/motion/utils/TimeCycleSplineSet;->mTimePoints:[I
+    iget-object v7, p0, Landroidx/constraintlayout/core/motion/utils/TimeCycleSplineSet;->mTimePoints:[I
 
-    aget v6, v6, v2
+    aget v7, v7, v5
 
-    int-to-double v6, v6
+    int-to-double v7, v7
 
-    const-wide v8, 0x3f847ae147ae147bL    # 0.01
+    const-wide v9, 0x3f847ae147ae147bL    # 0.01
 
-    mul-double/2addr v6, v8
+    mul-double/2addr v7, v9
 
-    aput-wide v6, v0, v5
+    aput-wide v7, v0, v6
 
     .line 201
-    aget-object v6, v1, v5
+    aget-object v7, v1, v6
 
-    iget-object v7, p0, Landroidx/constraintlayout/core/motion/utils/TimeCycleSplineSet;->mValues:[[F
+    iget-object v8, p0, Landroidx/constraintlayout/core/motion/utils/TimeCycleSplineSet;->mValues:[[F
 
-    aget-object v7, v7, v2
+    aget-object v8, v8, v5
 
-    aget v8, v7, v4
+    aget v9, v8, v4
 
-    float-to-double v8, v8
+    float-to-double v9, v9
 
-    aput-wide v8, v6, v4
+    aput-wide v9, v7, v4
 
     .line 202
-    aget v8, v7, v3
+    aget v9, v8, v3
+
+    float-to-double v9, v9
+
+    aput-wide v9, v7, v3
+
+    .line 203
+    aget v8, v8, v2
 
     float-to-double v8, v8
 
-    aput-wide v8, v6, v3
+    aput-wide v8, v7, v2
 
-    const/4 v8, 0x2
-
-    .line 203
-    aget v7, v7, v8
-
-    float-to-double v9, v7
-
-    aput-wide v9, v6, v8
-
-    add-int/lit8 v5, v5, 0x1
+    add-int/lit8 v6, v6, 0x1
 
     :goto_2
-    add-int/lit8 v2, v2, 0x1
+    add-int/lit8 v5, v5, 0x1
 
     goto :goto_1
 

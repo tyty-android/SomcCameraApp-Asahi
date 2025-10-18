@@ -46,7 +46,7 @@
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 22
+    .line 23
     invoke-direct {p0}, Lkotlin/collections/ShortIterator;-><init>()V
 
     iput-object p1, p0, Lkotlin/jvm/internal/ArrayShortIterator;->array:[S
@@ -59,7 +59,7 @@
 .method public hasNext()Z
     .locals 1
 
-    .line 24
+    .line 25
     iget v0, p0, Lkotlin/jvm/internal/ArrayShortIterator;->index:I
 
     iget-object p0, p0, Lkotlin/jvm/internal/ArrayShortIterator;->array:[S
@@ -82,7 +82,7 @@
 .method public nextShort()S
     .locals 3
 
-    .line 25
+    .line 26
     :try_start_0
     iget-object v0, p0, Lkotlin/jvm/internal/ArrayShortIterator;->array:[S
 

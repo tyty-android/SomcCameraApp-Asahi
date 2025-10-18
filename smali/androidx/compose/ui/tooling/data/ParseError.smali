@@ -1,6 +1,6 @@
 .class final Landroidx/compose/ui/tooling/data/ParseError;
 .super Ljava/lang/Exception;
-.source "SlotTree.kt"
+.source "SlotTree.jvm.kt"
 
 
 # annotations
@@ -29,7 +29,7 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 258
+    .line 260
     invoke-direct {p0}, Ljava/lang/Exception;-><init>()V
 
     return-void

@@ -50,7 +50,7 @@
 .method private static synthetic $values()[Ljp/co/sony/mc/camera/storage/CameraStorageManager$UpdateRequestReason;
     .locals 10
 
-    .line 62
+    .line 63
     sget-object v0, Ljp/co/sony/mc/camera/storage/CameraStorageManager$UpdateRequestReason;->APP_LAUNCH:Ljp/co/sony/mc/camera/storage/CameraStorageManager$UpdateRequestReason;
 
     sget-object v1, Ljp/co/sony/mc/camera/storage/CameraStorageManager$UpdateRequestReason;->APP_LAUNCH_WITH_UNTRUSTED:Ljp/co/sony/mc/camera/storage/CameraStorageManager$UpdateRequestReason;
@@ -81,7 +81,7 @@
 .method static constructor <clinit>()V
     .locals 3
 
-    .line 63
+    .line 64
     new-instance v0, Ljp/co/sony/mc/camera/storage/CameraStorageManager$UpdateRequestReason;
 
     const-string v1, "APP_LAUNCH"
@@ -92,7 +92,7 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/storage/CameraStorageManager$UpdateRequestReason;->APP_LAUNCH:Ljp/co/sony/mc/camera/storage/CameraStorageManager$UpdateRequestReason;
 
-    .line 64
+    .line 65
     new-instance v0, Ljp/co/sony/mc/camera/storage/CameraStorageManager$UpdateRequestReason;
 
     const-string v1, "APP_LAUNCH_WITH_UNTRUSTED"
@@ -103,7 +103,7 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/storage/CameraStorageManager$UpdateRequestReason;->APP_LAUNCH_WITH_UNTRUSTED:Ljp/co/sony/mc/camera/storage/CameraStorageManager$UpdateRequestReason;
 
-    .line 65
+    .line 66
     new-instance v0, Ljp/co/sony/mc/camera/storage/CameraStorageManager$UpdateRequestReason;
 
     const-string v1, "APP_CLOSE"
@@ -114,7 +114,7 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/storage/CameraStorageManager$UpdateRequestReason;->APP_CLOSE:Ljp/co/sony/mc/camera/storage/CameraStorageManager$UpdateRequestReason;
 
-    .line 66
+    .line 67
     new-instance v0, Ljp/co/sony/mc/camera/storage/CameraStorageManager$UpdateRequestReason;
 
     const-string v1, "PERIODIC_UPDATE"
@@ -125,7 +125,7 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/storage/CameraStorageManager$UpdateRequestReason;->PERIODIC_UPDATE:Ljp/co/sony/mc/camera/storage/CameraStorageManager$UpdateRequestReason;
 
-    .line 67
+    .line 68
     new-instance v0, Ljp/co/sony/mc/camera/storage/CameraStorageManager$UpdateRequestReason;
 
     const-string v1, "PHOTO_STORING_COMPLETED"
@@ -136,7 +136,7 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/storage/CameraStorageManager$UpdateRequestReason;->PHOTO_STORING_COMPLETED:Ljp/co/sony/mc/camera/storage/CameraStorageManager$UpdateRequestReason;
 
-    .line 68
+    .line 69
     new-instance v0, Ljp/co/sony/mc/camera/storage/CameraStorageManager$UpdateRequestReason;
 
     const-string v1, "VIDEO_STORING_COMPLETED"
@@ -147,7 +147,7 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/storage/CameraStorageManager$UpdateRequestReason;->VIDEO_STORING_COMPLETED:Ljp/co/sony/mc/camera/storage/CameraStorageManager$UpdateRequestReason;
 
-    .line 69
+    .line 70
     new-instance v0, Ljp/co/sony/mc/camera/storage/CameraStorageManager$UpdateRequestReason;
 
     const-string v1, "STORING_FAILED"
@@ -158,7 +158,7 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/storage/CameraStorageManager$UpdateRequestReason;->STORING_FAILED:Ljp/co/sony/mc/camera/storage/CameraStorageManager$UpdateRequestReason;
 
-    .line 70
+    .line 71
     new-instance v0, Ljp/co/sony/mc/camera/storage/CameraStorageManager$UpdateRequestReason;
 
     const-string v1, "RECEIVE_STORAGE_MOUNTED"
@@ -169,7 +169,7 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/storage/CameraStorageManager$UpdateRequestReason;->RECEIVE_STORAGE_MOUNTED:Ljp/co/sony/mc/camera/storage/CameraStorageManager$UpdateRequestReason;
 
-    .line 71
+    .line 72
     new-instance v0, Ljp/co/sony/mc/camera/storage/CameraStorageManager$UpdateRequestReason;
 
     const-string v1, "RECEIVE_STORAGE_EJECTED"
@@ -180,7 +180,7 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/storage/CameraStorageManager$UpdateRequestReason;->RECEIVE_STORAGE_EJECTED:Ljp/co/sony/mc/camera/storage/CameraStorageManager$UpdateRequestReason;
 
-    .line 72
+    .line 73
     new-instance v0, Ljp/co/sony/mc/camera/storage/CameraStorageManager$UpdateRequestReason;
 
     const-string v1, "RECEIVE_OTHER_ACTION"
@@ -191,7 +191,7 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/storage/CameraStorageManager$UpdateRequestReason;->RECEIVE_OTHER_ACTION:Ljp/co/sony/mc/camera/storage/CameraStorageManager$UpdateRequestReason;
 
-    .line 62
+    .line 63
     invoke-static {}, Ljp/co/sony/mc/camera/storage/CameraStorageManager$UpdateRequestReason;->$values()[Ljp/co/sony/mc/camera/storage/CameraStorageManager$UpdateRequestReason;
 
     move-result-object v0
@@ -209,7 +209,7 @@
         }
     .end annotation
 
-    .line 62
+    .line 63
     invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
     return-void
@@ -218,7 +218,7 @@
 .method public static valueOf(Ljava/lang/String;)Ljp/co/sony/mc/camera/storage/CameraStorageManager$UpdateRequestReason;
     .locals 1
 
-    .line 62
+    .line 63
     const-class v0, Ljp/co/sony/mc/camera/storage/CameraStorageManager$UpdateRequestReason;
 
     invoke-static {v0, p0}, Ljava/lang/Enum;->valueOf(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
@@ -233,7 +233,7 @@
 .method public static values()[Ljp/co/sony/mc/camera/storage/CameraStorageManager$UpdateRequestReason;
     .locals 1
 
-    .line 62
+    .line 63
     sget-object v0, Ljp/co/sony/mc/camera/storage/CameraStorageManager$UpdateRequestReason;->$VALUES:[Ljp/co/sony/mc/camera/storage/CameraStorageManager$UpdateRequestReason;
 
     invoke-virtual {v0}, [Ljp/co/sony/mc/camera/storage/CameraStorageManager$UpdateRequestReason;->clone()Ljava/lang/Object;

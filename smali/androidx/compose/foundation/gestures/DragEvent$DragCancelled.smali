@@ -57,7 +57,7 @@
 
     const/4 v0, 0x0
 
-    .line 574
+    .line 671
     invoke-direct {p0, v0}, Landroidx/compose/foundation/gestures/DragEvent;-><init>(Lkotlin/jvm/internal/DefaultConstructorMarker;)V
 
     return-void

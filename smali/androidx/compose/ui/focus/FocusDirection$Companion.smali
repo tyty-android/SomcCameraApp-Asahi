@@ -15,7 +15,7 @@
 
 .annotation runtime Lkotlin/Metadata;
     d1 = {
-        "\u0000\u0014\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u001a\u0008\u0086\u0003\u0018\u00002\u00020\u0001B\u0007\u0008\u0002\u00a2\u0006\u0002\u0010\u0002R\u001c\u0010\u0003\u001a\u00020\u0004\u00f8\u0001\u0000\u00f8\u0001\u0001\u00f8\u0001\u0002\u00a2\u0006\n\n\u0002\u0010\u0007\u001a\u0004\u0008\u0005\u0010\u0006R\'\u0010\u0008\u001a\u00020\u00048GX\u0087\u0004\u00f8\u0001\u0000\u00f8\u0001\u0001\u00f8\u0001\u0002\u00a2\u0006\u0010\n\u0002\u0010\u0007\u0012\u0004\u0008\t\u0010\u0002\u001a\u0004\u0008\n\u0010\u0006R\'\u0010\u000b\u001a\u00020\u00048GX\u0087\u0004\u00f8\u0001\u0000\u00f8\u0001\u0001\u00f8\u0001\u0002\u00a2\u0006\u0010\n\u0002\u0010\u0007\u0012\u0004\u0008\u000c\u0010\u0002\u001a\u0004\u0008\r\u0010\u0006R\'\u0010\u000e\u001a\u00020\u00048GX\u0087\u0004\u00f8\u0001\u0000\u00f8\u0001\u0001\u00f8\u0001\u0002\u00a2\u0006\u0010\n\u0002\u0010\u0007\u0012\u0004\u0008\u000f\u0010\u0002\u001a\u0004\u0008\u0010\u0010\u0006R\u001c\u0010\u0011\u001a\u00020\u0004\u00f8\u0001\u0000\u00f8\u0001\u0001\u00f8\u0001\u0002\u00a2\u0006\n\n\u0002\u0010\u0007\u001a\u0004\u0008\u0012\u0010\u0006R\u001c\u0010\u0013\u001a\u00020\u0004\u00f8\u0001\u0000\u00f8\u0001\u0001\u00f8\u0001\u0002\u00a2\u0006\n\n\u0002\u0010\u0007\u001a\u0004\u0008\u0014\u0010\u0006R\'\u0010\u0015\u001a\u00020\u00048GX\u0087\u0004\u00f8\u0001\u0000\u00f8\u0001\u0001\u00f8\u0001\u0002\u00a2\u0006\u0010\n\u0002\u0010\u0007\u0012\u0004\u0008\u0016\u0010\u0002\u001a\u0004\u0008\u0017\u0010\u0006R\u001c\u0010\u0018\u001a\u00020\u0004\u00f8\u0001\u0000\u00f8\u0001\u0001\u00f8\u0001\u0002\u00a2\u0006\n\n\u0002\u0010\u0007\u001a\u0004\u0008\u0019\u0010\u0006R\u001c\u0010\u001a\u001a\u00020\u0004\u00f8\u0001\u0000\u00f8\u0001\u0001\u00f8\u0001\u0002\u00a2\u0006\n\n\u0002\u0010\u0007\u001a\u0004\u0008\u001b\u0010\u0006R\u001c\u0010\u001c\u001a\u00020\u0004\u00f8\u0001\u0000\u00f8\u0001\u0001\u00f8\u0001\u0002\u00a2\u0006\n\n\u0002\u0010\u0007\u001a\u0004\u0008\u001d\u0010\u0006\u0082\u0002\u000f\n\u0002\u0008\u0019\n\u0005\u0008\u00a1\u001e0\u0001\n\u0002\u0008!\u00a8\u0006\u001e"
+        "\u0000\u0014\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0014\u0008\u0086\u0003\u0018\u00002\u00020\u0001B\u0007\u0008\u0002\u00a2\u0006\u0002\u0010\u0002R\u0019\u0010\u0003\u001a\u00020\u0004\u00f8\u0001\u0000\u00f8\u0001\u0001\u00a2\u0006\n\n\u0002\u0010\u0007\u001a\u0004\u0008\u0005\u0010\u0006R$\u0010\u0008\u001a\u00020\u00048GX\u0087\u0004\u00f8\u0001\u0000\u00f8\u0001\u0001\u00a2\u0006\u0010\n\u0002\u0010\u0007\u0012\u0004\u0008\t\u0010\u0002\u001a\u0004\u0008\n\u0010\u0006R$\u0010\u000b\u001a\u00020\u00048GX\u0087\u0004\u00f8\u0001\u0000\u00f8\u0001\u0001\u00a2\u0006\u0010\n\u0002\u0010\u0007\u0012\u0004\u0008\u000c\u0010\u0002\u001a\u0004\u0008\r\u0010\u0006R\u0019\u0010\u000e\u001a\u00020\u0004\u00f8\u0001\u0000\u00f8\u0001\u0001\u00a2\u0006\n\n\u0002\u0010\u0007\u001a\u0004\u0008\u000f\u0010\u0006R\u0019\u0010\u0010\u001a\u00020\u0004\u00f8\u0001\u0000\u00f8\u0001\u0001\u00a2\u0006\n\n\u0002\u0010\u0007\u001a\u0004\u0008\u0011\u0010\u0006R\u0019\u0010\u0012\u001a\u00020\u0004\u00f8\u0001\u0000\u00f8\u0001\u0001\u00a2\u0006\n\n\u0002\u0010\u0007\u001a\u0004\u0008\u0013\u0010\u0006R\u0019\u0010\u0014\u001a\u00020\u0004\u00f8\u0001\u0000\u00f8\u0001\u0001\u00a2\u0006\n\n\u0002\u0010\u0007\u001a\u0004\u0008\u0015\u0010\u0006R\u0019\u0010\u0016\u001a\u00020\u0004\u00f8\u0001\u0000\u00f8\u0001\u0001\u00a2\u0006\n\n\u0002\u0010\u0007\u001a\u0004\u0008\u0017\u0010\u0006\u0082\u0002\u000b\n\u0005\u0008\u00a1\u001e0\u0001\n\u0002\u0008!\u00a8\u0006\u0018"
     }
     d2 = {
         "Landroidx/compose/ui/focus/FocusDirection$Companion;",
@@ -32,16 +32,10 @@
         "Exit",
         "getExit-dhqQ-8s$annotations",
         "getExit-dhqQ-8s",
-        "In",
-        "getIn-dhqQ-8s$annotations",
-        "getIn-dhqQ-8s",
         "Left",
         "getLeft-dhqQ-8s",
         "Next",
         "getNext-dhqQ-8s",
-        "Out",
-        "getOut-dhqQ-8s$annotations",
-        "getOut-dhqQ-8s",
         "Previous",
         "getPrevious-dhqQ-8s",
         "Right",
@@ -90,38 +84,6 @@
     return-void
 .end method
 
-.method public static synthetic getIn-dhqQ-8s$annotations()V
-    .locals 0
-    .annotation runtime Lkotlin/Deprecated;
-        level = .enum Lkotlin/DeprecationLevel;->WARNING:Lkotlin/DeprecationLevel;
-        message = "Use FocusDirection.Enter instead."
-        replaceWith = .subannotation Lkotlin/ReplaceWith;
-            expression = "Enter"
-            imports = {
-                "androidx.compose.ui.focus.FocusDirection.Companion.Enter"
-            }
-        .end subannotation
-    .end annotation
-
-    return-void
-.end method
-
-.method public static synthetic getOut-dhqQ-8s$annotations()V
-    .locals 0
-    .annotation runtime Lkotlin/Deprecated;
-        level = .enum Lkotlin/DeprecationLevel;->WARNING:Lkotlin/DeprecationLevel;
-        message = "Use FocusDirection.Exit instead."
-        replaceWith = .subannotation Lkotlin/ReplaceWith;
-            expression = "Exit"
-            imports = {
-                "androidx.compose.ui.focus.FocusDirection.Companion.Exit"
-            }
-        .end subannotation
-    .end annotation
-
-    return-void
-.end method
-
 
 # virtual methods
 .method public final getDown-dhqQ-8s()I
@@ -157,17 +119,6 @@
     return p0
 .end method
 
-.method public final getIn-dhqQ-8s()I
-    .locals 0
-
-    .line 125
-    invoke-static {}, Landroidx/compose/ui/focus/FocusDirection;->access$getIn$cp()I
-
-    move-result p0
-
-    return p0
-.end method
-
 .method public final getLeft-dhqQ-8s()I
     .locals 0
 
@@ -184,17 +135,6 @@
 
     .line 53
     invoke-static {}, Landroidx/compose/ui/focus/FocusDirection;->access$getNext$cp()I
-
-    move-result p0
-
-    return p0
-.end method
-
-.method public final getOut-dhqQ-8s()I
-    .locals 0
-
-    .line 139
-    invoke-static {}, Landroidx/compose/ui/focus/FocusDirection;->access$getOut$cp()I
 
     move-result p0
 

@@ -138,10 +138,6 @@
         }
     .end annotation
 
-    const-string v0, "it"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
     const-string v0, "C144@5570L75:MovableContent.kt#9igjgp"
 
     invoke-static {p2, v0}, Landroidx/compose/runtime/ComposerKt;->sourceInformation(Landroidx/compose/runtime/Composer;Ljava/lang/String;)V
@@ -154,7 +150,7 @@
 
     const/4 v0, -0x1
 
-    const-string v1, "androidx.compose.runtime.movableContentOf.<anonymous> (MovableContent.kt:143)"
+    const-string v1, "androidx.compose.runtime.movableContentOf.<anonymous> (MovableContent.kt:144)"
 
     const v2, 0x6fd65975
 

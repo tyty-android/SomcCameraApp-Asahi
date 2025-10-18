@@ -132,8 +132,58 @@
 
 
 # virtual methods
-.method validateSpec()V
-    .locals 0
+.method getIndicatorTrackGapSizeDegree()I
+    .locals 5
 
-    return-void
+    .line 110
+    iget v0, p0, Lcom/google/android/material/progressindicator/CircularProgressIndicatorSpec;->indicatorTrackGapSize:I
+
+    if-nez v0, :cond_0
+
+    const/4 p0, 0x0
+
+    return p0
+
+    .line 113
+    :cond_0
+    iget v0, p0, Lcom/google/android/material/progressindicator/CircularProgressIndicatorSpec;->indicatorSize:I
+
+    iget v1, p0, Lcom/google/android/material/progressindicator/CircularProgressIndicatorSpec;->indicatorInset:I
+
+    mul-int/lit8 v1, v1, 0x2
+
+    sub-int/2addr v0, v1
+
+    iget v1, p0, Lcom/google/android/material/progressindicator/CircularProgressIndicatorSpec;->trackThickness:I
+
+    sub-int/2addr v0, v1
+
+    const-wide v1, 0x400921fb54442d18L    # Math.PI
+
+    int-to-double v3, v0
+
+    mul-double/2addr v3, v1
+
+    .line 115
+    iget v0, p0, Lcom/google/android/material/progressindicator/CircularProgressIndicatorSpec;->indicatorTrackGapSize:I
+
+    iget p0, p0, Lcom/google/android/material/progressindicator/CircularProgressIndicatorSpec;->trackCornerRadius:I
+
+    add-int/2addr v0, p0
+
+    int-to-double v0, v0
+
+    div-double/2addr v3, v0
+
+    const-wide v0, 0x4076800000000000L    # 360.0
+
+    div-double/2addr v0, v3
+
+    invoke-static {v0, v1}, Ljava/lang/Math;->round(D)J
+
+    move-result-wide v0
+
+    long-to-int p0, v0
+
+    return p0
 .end method

@@ -103,7 +103,7 @@
 .end method
 
 .method private changeTo(Ljp/co/sony/mc/camera/device/PrepareSnapshotChecker$State;)V
-    .locals 2
+    .locals 3
 
     .line 299
     iget-object v0, p0, Ljp/co/sony/mc/camera/device/PrepareSnapshotChecker;->mState:Ljp/co/sony/mc/camera/device/PrepareSnapshotChecker$State;
@@ -115,43 +115,47 @@
 
     if-eqz v0, :cond_0
 
-    new-instance v0, Ljava/lang/StringBuilder;
+    const/4 v0, 0x1
 
-    const-string v1, "invoke current:"
+    new-array v0, v0, [Ljava/lang/String;
 
-    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+    new-instance v1, Ljava/lang/StringBuilder;
 
-    iget-object v1, p0, Ljp/co/sony/mc/camera/device/PrepareSnapshotChecker;->mState:Ljp/co/sony/mc/camera/device/PrepareSnapshotChecker$State;
+    const-string v2, "invoke current:"
 
-    invoke-virtual {v1}, Ljp/co/sony/mc/camera/device/PrepareSnapshotChecker$State;->name()Ljava/lang/String;
+    invoke-direct {v1, v2}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+
+    iget-object v2, p0, Ljp/co/sony/mc/camera/device/PrepareSnapshotChecker;->mState:Ljp/co/sony/mc/camera/device/PrepareSnapshotChecker$State;
+
+    invoke-virtual {v2}, Ljp/co/sony/mc/camera/device/PrepareSnapshotChecker$State;->name()Ljava/lang/String;
+
+    move-result-object v2
+
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v1
 
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    const-string v2, ", to:"
 
-    move-result-object v0
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    const-string v1, ", to:"
-
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v0
+    move-result-object v1
 
     invoke-virtual {p1}, Ljp/co/sony/mc/camera/device/PrepareSnapshotChecker$State;->name()Ljava/lang/String;
 
+    move-result-object v2
+
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
     move-result-object v1
 
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    move-result-object v0
+    move-result-object v1
 
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    const/4 v2, 0x0
 
-    move-result-object v0
-
-    filled-new-array {v0}, [Ljava/lang/String;
-
-    move-result-object v0
+    aput-object v1, v0, v2
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
@@ -909,16 +913,18 @@
 
     move-result v6
 
-    const/4 v7, 0x1
+    const/4 v7, 0x0
+
+    const/4 v8, 0x1
 
     if-nez v6, :cond_3
 
     const-string v6, "display-on"
 
-    iget-object v8, v1, Ljp/co/sony/mc/camera/device/PrepareSnapshotChecker;->mFlashMode:Ljava/lang/String;
+    iget-object v9, v1, Ljp/co/sony/mc/camera/device/PrepareSnapshotChecker;->mFlashMode:Ljava/lang/String;
 
     .line 252
-    invoke-virtual {v6, v8}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+    invoke-virtual {v6, v9}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v6
 
@@ -930,139 +936,140 @@
     :cond_0
     const-string v6, "off"
 
-    iget-object v8, v1, Ljp/co/sony/mc/camera/device/PrepareSnapshotChecker;->mFlashMode:Ljava/lang/String;
+    iget-object v9, v1, Ljp/co/sony/mc/camera/device/PrepareSnapshotChecker;->mFlashMode:Ljava/lang/String;
 
-    invoke-virtual {v6, v8}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+    invoke-virtual {v6, v9}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v6
-
-    const/4 v8, 0x0
 
     if-eqz v6, :cond_2
 
     :cond_1
-    move v7, v8
+    move v6, v7
 
-    goto :goto_0
+    goto :goto_1
 
     :cond_2
     const/4 v6, 0x4
 
     if-ne v6, v0, :cond_1
 
-    .line 260
     :cond_3
     :goto_0
-    sget-boolean v6, Ljp/co/sony/mc/camera/util/CamLog;->DEBUG:Z
+    move v6, v8
 
-    if-eqz v6, :cond_4
+    .line 260
+    :goto_1
+    sget-boolean v9, Ljp/co/sony/mc/camera/util/CamLog;->DEBUG:Z
+
+    if-eqz v9, :cond_4
 
     .line 261
-    new-instance v6, Ljava/lang/StringBuilder;
+    new-instance v9, Ljava/lang/StringBuilder;
 
-    const-string v8, "afState["
+    const-string v10, "afState["
 
-    invoke-direct {v6, v8}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+    invoke-direct {v9, v10}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
-    move v8, p1
+    move v10, p1
 
     .line 263
-    invoke-virtual {v6, p1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+    invoke-virtual {v9, p1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
     .line 264
-    const-string v8, " ], aeState["
+    const-string v10, " ], aeState["
 
-    invoke-virtual {v6, v8}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v9, v10}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     .line 265
-    invoke-virtual {v6, p2}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+    invoke-virtual {v9, p2}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
     .line 266
     const-string v0, " ], startPoint["
 
-    invoke-virtual {v6, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v9, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    move-object/from16 v8, p3
+    move-object/from16 v10, p3
 
     .line 267
-    invoke-virtual {v6, v8}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+    invoke-virtual {v9, v10}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
     .line 268
     const-string v0, " ], duration["
 
-    invoke-virtual {v6, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v9, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     .line 269
-    invoke-virtual {v6, v2, v3}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
+    invoke-virtual {v9, v2, v3}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
 
     .line 270
     const-string v0, " ], burstType["
 
-    invoke-virtual {v6, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v9, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    move/from16 v9, p6
+    move/from16 v11, p6
 
     .line 271
-    invoke-virtual {v6, v9}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+    invoke-virtual {v9, v11}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
     .line 272
     const-string v0, " ], afSuccess["
 
-    invoke-virtual {v6, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v9, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     .line 273
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/device/PrepareSnapshotChecker;->isAfSuccess()Z
 
     move-result v0
 
-    invoke-virtual {v6, v0}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
+    invoke-virtual {v9, v0}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
 
     .line 274
     const-string v0, " ], previewLatency["
 
-    invoke-virtual {v6, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v9, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     .line 275
-    invoke-virtual {v6, v4, v5}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
+    invoke-virtual {v9, v4, v5}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
 
     .line 276
     const-string v0, " ]"
 
-    invoke-virtual {v6, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v9, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     .line 277
-    invoke-virtual {v6}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    new-array v0, v8, [Ljava/lang/String;
 
-    move-result-object v0
+    invoke-virtual {v9}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    filled-new-array {v0}, [Ljava/lang/String;
+    move-result-object v8
 
-    move-result-object v0
+    aput-object v8, v0, v7
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
-    goto :goto_1
+    goto :goto_2
 
     :cond_4
-    move-object/from16 v8, p3
+    move-object/from16 v10, p3
 
-    move/from16 v9, p6
+    move/from16 v11, p6
 
-    :goto_1
-    const-wide/32 v10, 0xf4240
+    :goto_2
+    const-wide/32 v7, 0xf4240
 
     .line 280
-    div-long/2addr v2, v10
+    div-long/2addr v2, v7
 
-    long-to-int v6, v2
+    long-to-int v9, v2
 
     .line 281
-    div-long v2, v4, v10
+    div-long v2, v4, v7
 
-    long-to-int v10, v2
+    long-to-int v7, v2
 
     .line 283
-    iget-object v11, v1, Ljp/co/sony/mc/camera/device/PrepareSnapshotChecker;->mHandler:Landroid/os/Handler;
+    iget-object v8, v1, Ljp/co/sony/mc/camera/device/PrepareSnapshotChecker;->mHandler:Landroid/os/Handler;
 
     new-instance v12, Ljp/co/sony/mc/camera/device/PrepareSnapshotChecker$1;
 
@@ -1070,19 +1077,19 @@
 
     move-object v1, p0
 
-    move v2, v7
+    move v2, v6
 
     move-object/from16 v3, p3
 
-    move v4, v6
+    move v4, v9
 
     move/from16 v5, p6
 
-    move v6, v10
+    move v6, v7
 
     invoke-direct/range {v0 .. v6}, Ljp/co/sony/mc/camera/device/PrepareSnapshotChecker$1;-><init>(Ljp/co/sony/mc/camera/device/PrepareSnapshotChecker;ZLjp/co/sony/mc/camera/device/CameraDeviceHandler$CaptureStartPoint;III)V
 
-    invoke-virtual {v11, v12}, Landroid/os/Handler;->post(Ljava/lang/Runnable;)Z
+    invoke-virtual {v8, v12}, Landroid/os/Handler;->post(Ljava/lang/Runnable;)Z
 
     return-void
 .end method

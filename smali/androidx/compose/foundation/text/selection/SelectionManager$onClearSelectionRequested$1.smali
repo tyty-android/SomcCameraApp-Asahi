@@ -53,7 +53,7 @@
     f = "SelectionManager.kt"
     i = {}
     l = {
-        0x27a
+        0x29f
     }
     m = "invokeSuspend"
     n = {}
@@ -188,7 +188,7 @@
 
     move-result-object v0
 
-    .line 634
+    .line 671
     iget v1, p0, Landroidx/compose/foundation/text/selection/SelectionManager$onClearSelectionRequested$1;->label:I
 
     const/4 v2, 0x1

@@ -21,7 +21,7 @@
 .method constructor <init>()V
     .locals 0
 
-    .line 954
+    .line 957
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -46,13 +46,13 @@
         }
     .end annotation
 
-    .line 958
+    .line 961
     check-cast p1, Ljp/co/sony/mc/camera/setting/CommonSettings;
 
-    .line 959
-    check-cast p3, Ljp/co/sony/mc/camera/configuration/parameters/RemoteControl;
+    .line 962
+    check-cast p3, Ljp/co/sony/mc/camera/configuration/parameters/DisplayMode;
 
-    invoke-static {p1, p3}, Ljp/co/sony/mc/camera/setting/CommonSettings;->-$$Nest$msetRemoteControl(Ljp/co/sony/mc/camera/setting/CommonSettings;Ljp/co/sony/mc/camera/configuration/parameters/RemoteControl;)Z
+    invoke-static {p1, p3}, Ljp/co/sony/mc/camera/setting/CommonSettings;->-$$Nest$msetDisplayMode(Ljp/co/sony/mc/camera/setting/CommonSettings;Ljp/co/sony/mc/camera/configuration/parameters/DisplayMode;)Z
 
     move-result p0
 

@@ -66,7 +66,7 @@
 .method public final invoke()Landroidx/compose/ui/layout/LayoutCoordinates;
     .locals 0
 
-    .line 120
+    .line 58
     iget-object p0, p0, Landroidx/compose/ui/layout/LookaheadScopeKt$LookaheadScope$2$2$1;->$this_set:Landroidx/compose/ui/node/LayoutNode;
 
     invoke-virtual {p0}, Landroidx/compose/ui/node/LayoutNode;->getParent$ui_release()Landroidx/compose/ui/node/LayoutNode;
@@ -89,7 +89,7 @@
 .method public bridge synthetic invoke()Ljava/lang/Object;
     .locals 0
 
-    .line 119
+    .line 57
     invoke-virtual {p0}, Landroidx/compose/ui/layout/LookaheadScopeKt$LookaheadScope$2$2$1;->invoke()Landroidx/compose/ui/layout/LayoutCoordinates;
 
     move-result-object p0

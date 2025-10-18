@@ -24,7 +24,7 @@
 .method constructor <init>(Landroidx/emoji2/text/EmojiCompat;)V
     .locals 0
 
-    .line 1698
+    .line 1703
     invoke-direct {p0, p1}, Landroidx/emoji2/text/EmojiCompat$CompatInternal;-><init>(Landroidx/emoji2/text/EmojiCompat;)V
 
     return-void
@@ -35,7 +35,7 @@
 .method getAssetSignature()Ljava/lang/String;
     .locals 0
 
-    .line 1783
+    .line 1788
     iget-object p0, p0, Landroidx/emoji2/text/EmojiCompat$CompatInternal19;->mMetadataRepo:Landroidx/emoji2/text/MetadataRepo;
 
     invoke-virtual {p0}, Landroidx/emoji2/text/MetadataRepo;->getMetadataList()Landroidx/emoji2/text/flatbuffer/MetadataList;
@@ -48,7 +48,7 @@
 
     if-nez p0, :cond_0
 
-    .line 1784
+    .line 1789
     const-string p0, ""
 
     :cond_0
@@ -58,7 +58,7 @@
 .method getEmojiEnd(Ljava/lang/CharSequence;I)I
     .locals 0
 
-    .line 1766
+    .line 1771
     iget-object p0, p0, Landroidx/emoji2/text/EmojiCompat$CompatInternal19;->mProcessor:Landroidx/emoji2/text/EmojiProcessor;
 
     invoke-virtual {p0, p1, p2}, Landroidx/emoji2/text/EmojiProcessor;->getEmojiEnd(Ljava/lang/CharSequence;I)I
@@ -71,7 +71,7 @@
 .method public getEmojiMatch(Ljava/lang/CharSequence;I)I
     .locals 0
 
-    .line 1756
+    .line 1761
     iget-object p0, p0, Landroidx/emoji2/text/EmojiCompat$CompatInternal19;->mProcessor:Landroidx/emoji2/text/EmojiProcessor;
 
     invoke-virtual {p0, p1, p2}, Landroidx/emoji2/text/EmojiProcessor;->getEmojiMatch(Ljava/lang/CharSequence;I)I
@@ -84,7 +84,7 @@
 .method getEmojiStart(Ljava/lang/CharSequence;I)I
     .locals 0
 
-    .line 1761
+    .line 1766
     iget-object p0, p0, Landroidx/emoji2/text/EmojiCompat$CompatInternal19;->mProcessor:Landroidx/emoji2/text/EmojiProcessor;
 
     invoke-virtual {p0, p1, p2}, Landroidx/emoji2/text/EmojiProcessor;->getEmojiStart(Ljava/lang/CharSequence;I)I
@@ -97,7 +97,7 @@
 .method hasEmojiGlyph(Ljava/lang/CharSequence;)Z
     .locals 0
 
-    .line 1745
+    .line 1750
     iget-object p0, p0, Landroidx/emoji2/text/EmojiCompat$CompatInternal19;->mProcessor:Landroidx/emoji2/text/EmojiProcessor;
 
     invoke-virtual {p0, p1}, Landroidx/emoji2/text/EmojiProcessor;->getEmojiMatch(Ljava/lang/CharSequence;)I
@@ -120,7 +120,7 @@
 .method hasEmojiGlyph(Ljava/lang/CharSequence;I)Z
     .locals 0
 
-    .line 1750
+    .line 1755
     iget-object p0, p0, Landroidx/emoji2/text/EmojiCompat$CompatInternal19;->mProcessor:Landroidx/emoji2/text/EmojiProcessor;
 
     invoke-virtual {p0, p1, p2}, Landroidx/emoji2/text/EmojiProcessor;->getEmojiMatch(Ljava/lang/CharSequence;I)I
@@ -143,13 +143,13 @@
 .method loadMetadata()V
     .locals 2
 
-    .line 1704
+    .line 1709
     :try_start_0
     new-instance v0, Landroidx/emoji2/text/EmojiCompat$CompatInternal19$1;
 
     invoke-direct {v0, p0}, Landroidx/emoji2/text/EmojiCompat$CompatInternal19$1;-><init>(Landroidx/emoji2/text/EmojiCompat$CompatInternal19;)V
 
-    .line 1715
+    .line 1720
     iget-object v1, p0, Landroidx/emoji2/text/EmojiCompat$CompatInternal19;->mEmojiCompat:Landroidx/emoji2/text/EmojiCompat;
 
     iget-object v1, v1, Landroidx/emoji2/text/EmojiCompat;->mMetadataLoader:Landroidx/emoji2/text/EmojiCompat$MetadataRepoLoader;
@@ -163,7 +163,7 @@
     :catchall_0
     move-exception v0
 
-    .line 1717
+    .line 1722
     iget-object p0, p0, Landroidx/emoji2/text/EmojiCompat$CompatInternal19;->mEmojiCompat:Landroidx/emoji2/text/EmojiCompat;
 
     invoke-virtual {p0, v0}, Landroidx/emoji2/text/EmojiCompat;->onMetadataLoadFailed(Ljava/lang/Throwable;)V
@@ -177,7 +177,7 @@
 
     if-nez p1, :cond_0
 
-    .line 1725
+    .line 1730
     iget-object p0, p0, Landroidx/emoji2/text/EmojiCompat$CompatInternal19;->mEmojiCompat:Landroidx/emoji2/text/EmojiCompat;
 
     new-instance p1, Ljava/lang/IllegalArgumentException;
@@ -190,25 +190,25 @@
 
     return-void
 
-    .line 1730
+    .line 1735
     :cond_0
     iput-object p1, p0, Landroidx/emoji2/text/EmojiCompat$CompatInternal19;->mMetadataRepo:Landroidx/emoji2/text/MetadataRepo;
 
-    .line 1731
+    .line 1736
     new-instance p1, Landroidx/emoji2/text/EmojiProcessor;
 
     iget-object v2, p0, Landroidx/emoji2/text/EmojiCompat$CompatInternal19;->mMetadataRepo:Landroidx/emoji2/text/MetadataRepo;
 
     iget-object v0, p0, Landroidx/emoji2/text/EmojiCompat$CompatInternal19;->mEmojiCompat:Landroidx/emoji2/text/EmojiCompat;
 
-    .line 1733
+    .line 1738
     invoke-static {v0}, Landroidx/emoji2/text/EmojiCompat;->access$000(Landroidx/emoji2/text/EmojiCompat;)Landroidx/emoji2/text/EmojiCompat$SpanFactory;
 
     move-result-object v3
 
     iget-object v0, p0, Landroidx/emoji2/text/EmojiCompat$CompatInternal19;->mEmojiCompat:Landroidx/emoji2/text/EmojiCompat;
 
-    .line 1734
+    .line 1739
     invoke-static {v0}, Landroidx/emoji2/text/EmojiCompat;->access$100(Landroidx/emoji2/text/EmojiCompat;)Landroidx/emoji2/text/EmojiCompat$GlyphChecker;
 
     move-result-object v4
@@ -221,7 +221,7 @@
 
     iget-object v6, v0, Landroidx/emoji2/text/EmojiCompat;->mEmojiAsDefaultStyleExceptions:[I
 
-    .line 1737
+    .line 1742
     invoke-static {}, Landroidx/emoji2/text/EmojiExclusions;->getEmojiExclusions()Ljava/util/Set;
 
     move-result-object v7
@@ -232,7 +232,7 @@
 
     iput-object p1, p0, Landroidx/emoji2/text/EmojiCompat$CompatInternal19;->mProcessor:Landroidx/emoji2/text/EmojiProcessor;
 
-    .line 1740
+    .line 1745
     iget-object p0, p0, Landroidx/emoji2/text/EmojiCompat$CompatInternal19;->mEmojiCompat:Landroidx/emoji2/text/EmojiCompat;
 
     invoke-virtual {p0}, Landroidx/emoji2/text/EmojiCompat;->onMetadataLoadSuccess()V
@@ -243,7 +243,7 @@
 .method process(Ljava/lang/CharSequence;IIIZ)Ljava/lang/CharSequence;
     .locals 6
 
-    .line 1772
+    .line 1777
     iget-object v0, p0, Landroidx/emoji2/text/EmojiCompat$CompatInternal19;->mProcessor:Landroidx/emoji2/text/EmojiProcessor;
 
     move-object v1, p1
@@ -266,7 +266,7 @@
 .method updateEditorInfoAttrs(Landroid/view/inputmethod/EditorInfo;)V
     .locals 3
 
-    .line 1777
+    .line 1782
     iget-object v0, p1, Landroid/view/inputmethod/EditorInfo;->extras:Landroid/os/Bundle;
 
     iget-object v1, p0, Landroidx/emoji2/text/EmojiCompat$CompatInternal19;->mMetadataRepo:Landroidx/emoji2/text/MetadataRepo;
@@ -279,7 +279,7 @@
 
     invoke-virtual {v0, v2, v1}, Landroid/os/Bundle;->putInt(Ljava/lang/String;I)V
 
-    .line 1778
+    .line 1783
     iget-object p1, p1, Landroid/view/inputmethod/EditorInfo;->extras:Landroid/os/Bundle;
 
     iget-object p0, p0, Landroidx/emoji2/text/EmojiCompat$CompatInternal19;->mEmojiCompat:Landroidx/emoji2/text/EmojiCompat;

@@ -5,7 +5,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/SourceDebugExtension;
-    value = "SMAP\nLayoutTreeConsistencyChecker.kt\nKotlin\n*S Kotlin\n*F\n+ 1 LayoutTreeConsistencyChecker.kt\nandroidx/compose/ui/node/LayoutTreeConsistencyChecker\n+ 2 ListUtils.kt\nandroidx/compose/ui/util/ListUtilsKt\n*L\n1#1,142:1\n33#2,6:143\n116#2,2:149\n33#2,6:151\n118#2:157\n116#2,2:158\n33#2,6:160\n118#2:166\n33#2,6:167\n*S KotlinDebug\n*F\n+ 1 LayoutTreeConsistencyChecker.kt\nandroidx/compose/ui/node/LayoutTreeConsistencyChecker\n*L\n44#1:143,6\n59#1:149,2\n59#1:151,6\n59#1:157\n83#1:158,2\n83#1:160,6\n83#1:166\n135#1:167,6\n*E\n"
+    value = "SMAP\nLayoutTreeConsistencyChecker.kt\nKotlin\n*S Kotlin\n*F\n+ 1 LayoutTreeConsistencyChecker.kt\nandroidx/compose/ui/node/LayoutTreeConsistencyChecker\n+ 2 ListUtils.kt\nandroidx/compose/ui/util/ListUtilsKt\n*L\n1#1,143:1\n33#2,6:144\n116#2,2:150\n33#2,6:152\n118#2:158\n116#2,2:159\n33#2,6:161\n118#2:167\n33#2,6:168\n*S KotlinDebug\n*F\n+ 1 LayoutTreeConsistencyChecker.kt\nandroidx/compose/ui/node/LayoutTreeConsistencyChecker\n*L\n44#1:144,6\n59#1:150,2\n59#1:152,6\n59#1:158\n84#1:159,2\n84#1:161,6\n84#1:167\n136#1:168,6\n*E\n"
 .end annotation
 
 .annotation runtime Lkotlin/Metadata;
@@ -44,6 +44,10 @@
 .end annotation
 
 
+# static fields
+.field public static final $stable:I = 0x8
+
+
 # instance fields
 .field private final postponedMeasureRequests:Ljava/util/List;
     .annotation system Ldalvik/annotation/Signature;
@@ -61,8 +65,14 @@
 
 
 # direct methods
+.method static constructor <clinit>()V
+    .locals 0
+
+    return-void
+.end method
+
 .method public constructor <init>(Landroidx/compose/ui/node/LayoutNode;Landroidx/compose/ui/node/DepthSortedSetsForDifferentPasses;Ljava/util/List;)V
-    .locals 1
+    .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -73,18 +83,6 @@
             ">;)V"
         }
     .end annotation
-
-    const-string v0, "root"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string v0, "relayoutNodes"
-
-    invoke-static {p2, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string v0, "postponedMeasureRequests"
-
-    invoke-static {p3, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 27
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -162,7 +160,7 @@
 
     iget-object v3, p0, Landroidx/compose/ui/node/LayoutTreeConsistencyChecker;->postponedMeasureRequests:Ljava/util/List;
 
-    .line 152
+    .line 153
     invoke-interface {v3}, Ljava/util/List;->size()I
 
     move-result v6
@@ -172,12 +170,12 @@
     :goto_1
     if-ge v7, v6, :cond_3
 
-    .line 153
+    .line 154
     invoke-interface {v3, v7}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
     move-result-object v8
 
-    .line 150
+    .line 151
     move-object v9, v8
 
     check-cast v9, Landroidx/compose/ui/node/MeasureAndLayoutDelegate$PostponedRequest;
@@ -231,9 +229,18 @@
 
     if-nez p0, :cond_7
 
+    .line 68
+    invoke-virtual {p1}, Landroidx/compose/ui/node/LayoutNode;->getLayoutState$ui_release()Landroidx/compose/ui/node/LayoutNode$LayoutState;
+
+    move-result-object p0
+
+    sget-object p1, Landroidx/compose/ui/node/LayoutNode$LayoutState;->LookaheadMeasuring:Landroidx/compose/ui/node/LayoutNode$LayoutState;
+
+    if-eq p0, p1, :cond_7
+
     if-eqz v0, :cond_5
 
-    .line 68
+    .line 69
     invoke-virtual {v0}, Landroidx/compose/ui/node/LayoutNode;->getMeasurePending$ui_release()Z
 
     move-result p0
@@ -245,7 +252,7 @@
     :cond_5
     if-eqz v0, :cond_6
 
-    .line 69
+    .line 70
     invoke-virtual {v0}, Landroidx/compose/ui/node/LayoutNode;->getLookaheadMeasurePending$ui_release()Z
 
     move-result p0
@@ -254,7 +261,7 @@
 
     goto :goto_3
 
-    .line 70
+    .line 71
     :cond_6
     sget-object p0, Landroidx/compose/ui/node/LayoutNode$LayoutState;->Measuring:Landroidx/compose/ui/node/LayoutNode$LayoutState;
 
@@ -267,7 +274,7 @@
     :cond_8
     return v4
 
-    .line 72
+    .line 73
     :cond_9
     invoke-virtual {p1}, Landroidx/compose/ui/node/LayoutNode;->getLayoutPending$ui_release()Z
 
@@ -275,7 +282,7 @@
 
     if-eqz v3, :cond_c
 
-    .line 73
+    .line 74
     iget-object p0, p0, Landroidx/compose/ui/node/LayoutTreeConsistencyChecker;->relayoutNodes:Landroidx/compose/ui/node/DepthSortedSetsForDifferentPasses;
 
     invoke-virtual {p0, p1}, Landroidx/compose/ui/node/DepthSortedSetsForDifferentPasses;->contains(Landroidx/compose/ui/node/LayoutNode;)Z
@@ -286,26 +293,26 @@
 
     if-eqz v0, :cond_a
 
-    .line 75
+    .line 76
     invoke-virtual {v0}, Landroidx/compose/ui/node/LayoutNode;->getMeasurePending$ui_release()Z
 
     move-result p0
 
     if-nez p0, :cond_a
 
-    .line 76
+    .line 77
     invoke-virtual {v0}, Landroidx/compose/ui/node/LayoutNode;->getLayoutPending$ui_release()Z
 
     move-result p0
 
     if-nez p0, :cond_a
 
-    .line 77
+    .line 78
     sget-object p0, Landroidx/compose/ui/node/LayoutNode$LayoutState;->Measuring:Landroidx/compose/ui/node/LayoutNode$LayoutState;
 
     if-eq v2, p0, :cond_a
 
-    .line 78
+    .line 79
     sget-object p0, Landroidx/compose/ui/node/LayoutNode$LayoutState;->LayingOut:Landroidx/compose/ui/node/LayoutNode$LayoutState;
 
     if-ne v2, p0, :cond_b
@@ -316,7 +323,7 @@
     :cond_b
     return v4
 
-    .line 81
+    .line 82
     :cond_c
     invoke-virtual {p1}, Landroidx/compose/ui/node/LayoutNode;->isPlacedInLookahead()Ljava/lang/Boolean;
 
@@ -332,7 +339,7 @@
 
     if-eqz v3, :cond_16
 
-    .line 82
+    .line 83
     invoke-virtual {p1}, Landroidx/compose/ui/node/LayoutNode;->getLookaheadMeasurePending$ui_release()Z
 
     move-result v3
@@ -341,7 +348,7 @@
 
     iget-object v3, p0, Landroidx/compose/ui/node/LayoutTreeConsistencyChecker;->postponedMeasureRequests:Ljava/util/List;
 
-    .line 161
+    .line 162
     invoke-interface {v3}, Ljava/util/List;->size()I
 
     move-result v6
@@ -351,17 +358,17 @@
     :goto_4
     if-ge v7, v6, :cond_e
 
-    .line 162
+    .line 163
     invoke-interface {v3, v7}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
     move-result-object v8
 
-    .line 159
+    .line 160
     move-object v9, v8
 
     check-cast v9, Landroidx/compose/ui/node/MeasureAndLayoutDelegate$PostponedRequest;
 
-    .line 83
+    .line 84
     invoke-virtual {v9}, Landroidx/compose/ui/node/MeasureAndLayoutDelegate$PostponedRequest;->getNode()Landroidx/compose/ui/node/LayoutNode;
 
     move-result-object v10
@@ -393,7 +400,7 @@
 
     return v5
 
-    .line 90
+    .line 91
     :cond_f
     invoke-virtual {p1}, Landroidx/compose/ui/node/LayoutNode;->getLookaheadMeasurePending$ui_release()Z
 
@@ -401,7 +408,7 @@
 
     if-eqz v1, :cond_13
 
-    .line 91
+    .line 92
     iget-object p0, p0, Landroidx/compose/ui/node/LayoutTreeConsistencyChecker;->relayoutNodes:Landroidx/compose/ui/node/DepthSortedSetsForDifferentPasses;
 
     invoke-virtual {p0, p1, v5}, Landroidx/compose/ui/node/DepthSortedSetsForDifferentPasses;->contains(Landroidx/compose/ui/node/LayoutNode;Z)Z
@@ -412,7 +419,7 @@
 
     if-eqz v0, :cond_10
 
-    .line 92
+    .line 93
     invoke-virtual {v0}, Landroidx/compose/ui/node/LayoutNode;->getLookaheadMeasurePending$ui_release()Z
 
     move-result p0
@@ -421,7 +428,7 @@
 
     goto :goto_6
 
-    .line 93
+    .line 94
     :cond_10
     sget-object p0, Landroidx/compose/ui/node/LayoutNode$LayoutState;->LookaheadMeasuring:Landroidx/compose/ui/node/LayoutNode$LayoutState;
 
@@ -429,7 +436,7 @@
 
     if-eqz v0, :cond_12
 
-    .line 94
+    .line 95
     invoke-virtual {v0}, Landroidx/compose/ui/node/LayoutNode;->getMeasurePending$ui_release()Z
 
     move-result p0
@@ -453,7 +460,7 @@
     :cond_12
     return v4
 
-    .line 96
+    .line 97
     :cond_13
     invoke-virtual {p1}, Landroidx/compose/ui/node/LayoutNode;->getLookaheadLayoutPending$ui_release()Z
 
@@ -461,7 +468,7 @@
 
     if-eqz v1, :cond_16
 
-    .line 97
+    .line 98
     iget-object p0, p0, Landroidx/compose/ui/node/LayoutTreeConsistencyChecker;->relayoutNodes:Landroidx/compose/ui/node/DepthSortedSetsForDifferentPasses;
 
     invoke-virtual {p0, p1, v5}, Landroidx/compose/ui/node/DepthSortedSetsForDifferentPasses;->contains(Landroidx/compose/ui/node/LayoutNode;Z)Z
@@ -472,31 +479,31 @@
 
     if-eqz v0, :cond_14
 
-    .line 99
+    .line 100
     invoke-virtual {v0}, Landroidx/compose/ui/node/LayoutNode;->getLookaheadMeasurePending$ui_release()Z
 
     move-result p0
 
     if-nez p0, :cond_14
 
-    .line 100
+    .line 101
     invoke-virtual {v0}, Landroidx/compose/ui/node/LayoutNode;->getLookaheadLayoutPending$ui_release()Z
 
     move-result p0
 
     if-nez p0, :cond_14
 
-    .line 101
+    .line 102
     sget-object p0, Landroidx/compose/ui/node/LayoutNode$LayoutState;->LookaheadMeasuring:Landroidx/compose/ui/node/LayoutNode$LayoutState;
 
     if-eq v2, p0, :cond_14
 
-    .line 102
+    .line 103
     sget-object p0, Landroidx/compose/ui/node/LayoutNode$LayoutState;->LookaheadLayingOut:Landroidx/compose/ui/node/LayoutNode$LayoutState;
 
     if-eq v2, p0, :cond_14
 
-    .line 103
+    .line 104
     invoke-virtual {v0}, Landroidx/compose/ui/node/LayoutNode;->getLayoutPending$ui_release()Z
 
     move-result p0
@@ -543,7 +550,7 @@
 
     move-result-object p1
 
-    .line 144
+    .line 145
     invoke-interface {p1}, Ljava/util/List;->size()I
 
     move-result v0
@@ -553,12 +560,12 @@
     :goto_0
     if-ge v2, v0, :cond_2
 
-    .line 145
+    .line 146
     invoke-interface {p1, v2}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
     move-result-object v3
 
-    .line 146
+    .line 147
     check-cast v3, Landroidx/compose/ui/node/LayoutNode;
 
     .line 45
@@ -584,12 +591,12 @@
 .method private final logTree()Ljava/lang/String;
     .locals 3
 
-    .line 124
+    .line 125
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
 
-    .line 137
+    .line 138
     const-string v1, "Tree state:"
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
@@ -610,21 +617,17 @@
 
     invoke-static {v1, v2}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 138
+    .line 139
     iget-object v1, p0, Landroidx/compose/ui/node/LayoutTreeConsistencyChecker;->root:Landroidx/compose/ui/node/LayoutNode;
 
     const/4 v2, 0x0
 
     invoke-static {p0, v0, v1, v2}, Landroidx/compose/ui/node/LayoutTreeConsistencyChecker;->logTree$printSubTree(Landroidx/compose/ui/node/LayoutTreeConsistencyChecker;Ljava/lang/StringBuilder;Landroidx/compose/ui/node/LayoutNode;I)V
 
-    .line 139
+    .line 140
     invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object p0
-
-    const-string/jumbo v0, "stringBuilder.toString()"
-
-    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
 
     return-object p0
 .end method
@@ -632,12 +635,12 @@
 .method private static final logTree$printSubTree(Landroidx/compose/ui/node/LayoutTreeConsistencyChecker;Ljava/lang/StringBuilder;Landroidx/compose/ui/node/LayoutNode;I)V
     .locals 4
 
-    .line 127
+    .line 128
     invoke-direct {p0, p2}, Landroidx/compose/ui/node/LayoutTreeConsistencyChecker;->nodeToString(Landroidx/compose/ui/node/LayoutNode;)Ljava/lang/String;
 
     move-result-object v0
 
-    .line 128
+    .line 129
     move-object v1, v0
 
     check-cast v1, Ljava/lang/CharSequence;
@@ -655,7 +658,7 @@
     :goto_0
     if-ge v1, p3, :cond_0
 
-    .line 130
+    .line 131
     const-string v3, ".."
 
     invoke-virtual {p1, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
@@ -664,7 +667,7 @@
 
     goto :goto_0
 
-    .line 132
+    .line 133
     :cond_0
     invoke-virtual {p1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -686,13 +689,13 @@
 
     add-int/lit8 p3, p3, 0x1
 
-    .line 135
+    .line 136
     :cond_1
     invoke-virtual {p2}, Landroidx/compose/ui/node/LayoutNode;->getChildren$ui_release()Ljava/util/List;
 
     move-result-object p2
 
-    .line 168
+    .line 169
     invoke-interface {p2}, Ljava/util/List;->size()I
 
     move-result v0
@@ -700,15 +703,15 @@
     :goto_1
     if-ge v2, v0, :cond_2
 
-    .line 169
+    .line 170
     invoke-interface {p2, v2}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
     move-result-object v1
 
-    .line 170
+    .line 171
     check-cast v1, Landroidx/compose/ui/node/LayoutNode;
 
-    .line 135
+    .line 136
     invoke-static {p0, p1, v1, p3}, Landroidx/compose/ui/node/LayoutTreeConsistencyChecker;->logTree$printSubTree(Landroidx/compose/ui/node/LayoutTreeConsistencyChecker;Ljava/lang/StringBuilder;Landroidx/compose/ui/node/LayoutNode;I)V
 
     add-int/lit8 v2, v2, 0x1
@@ -722,15 +725,15 @@
 .method private final nodeToString(Landroidx/compose/ui/node/LayoutNode;)Ljava/lang/String;
     .locals 4
 
-    .line 110
+    .line 111
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
 
-    .line 111
+    .line 112
     invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
-    .line 112
+    .line 113
     new-instance v1, Ljava/lang/StringBuilder;
 
     const-string v2, "["
@@ -757,7 +760,7 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 113
+    .line 114
     invoke-virtual {p1}, Landroidx/compose/ui/node/LayoutNode;->isPlaced()Z
 
     move-result v1
@@ -768,7 +771,7 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 114
+    .line 115
     :cond_0
     new-instance v1, Ljava/lang/StringBuilder;
 
@@ -794,28 +797,23 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 115
+    .line 116
     invoke-direct {p0, p1}, Landroidx/compose/ui/node/LayoutTreeConsistencyChecker;->consistentLayoutState(Landroidx/compose/ui/node/LayoutNode;)Z
 
     move-result p0
 
     if-nez p0, :cond_1
 
-    .line 116
+    .line 117
     const-string p0, "[INCONSISTENT]"
 
     invoke-virtual {v0, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 118
+    .line 119
     :cond_1
     invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object p0
-
-    .line 110
-    const-string/jumbo p1, "with(StringBuilder()) {\n\u2026     toString()\n        }"
-
-    invoke-static {p0, p1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
 
     return-object p0
 .end method

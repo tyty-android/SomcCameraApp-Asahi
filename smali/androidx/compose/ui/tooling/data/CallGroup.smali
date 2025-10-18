@@ -1,6 +1,6 @@
 .class public final Landroidx/compose/ui/tooling/data/CallGroup;
 .super Landroidx/compose/ui/tooling/data/Group;
-.source "SlotTree.kt"
+.source "SlotTree.jvm.kt"
 
 
 # annotations
@@ -67,7 +67,7 @@
 .end method
 
 .method public constructor <init>(Ljava/lang/Object;Ljava/lang/String;Landroidx/compose/ui/unit/IntRect;Landroidx/compose/ui/tooling/data/SourceLocation;Ljava/lang/Object;Ljava/util/List;Ljava/util/Collection;Ljava/util/Collection;Z)V
-    .locals 12
+    .locals 10
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -90,51 +90,33 @@
         }
     .end annotation
 
-    move-object/from16 v0, p6
+    const/4 v9, 0x0
 
-    const-string v1, "box"
+    move-object v0, p0
 
-    move-object v7, p3
+    move-object v1, p1
 
-    invoke-static {p3, v1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+    move-object v2, p2
 
-    const-string v1, "parameters"
+    move-object v3, p4
 
-    invoke-static {v0, v1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+    move-object v4, p5
 
-    const-string v1, "data"
+    move-object v5, p3
 
-    move-object/from16 v8, p7
+    move-object/from16 v6, p7
 
-    invoke-static {v8, v1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+    move-object/from16 v7, p8
 
-    const-string v1, "children"
+    move/from16 v8, p9
 
-    move-object/from16 v9, p8
+    .line 154
+    invoke-direct/range {v0 .. v9}, Landroidx/compose/ui/tooling/data/Group;-><init>(Ljava/lang/Object;Ljava/lang/String;Landroidx/compose/ui/tooling/data/SourceLocation;Ljava/lang/Object;Landroidx/compose/ui/unit/IntRect;Ljava/util/Collection;Ljava/util/Collection;ZLkotlin/jvm/internal/DefaultConstructorMarker;)V
 
-    invoke-static {v9, v1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+    move-object/from16 v1, p6
 
-    const/4 v11, 0x0
-
-    move-object v2, p0
-
-    move-object v3, p1
-
-    move-object v4, p2
-
-    move-object/from16 v5, p4
-
-    move-object/from16 v6, p5
-
-    move/from16 v10, p9
-
-    .line 152
-    invoke-direct/range {v2 .. v11}, Landroidx/compose/ui/tooling/data/Group;-><init>(Ljava/lang/Object;Ljava/lang/String;Landroidx/compose/ui/tooling/data/SourceLocation;Ljava/lang/Object;Landroidx/compose/ui/unit/IntRect;Ljava/util/Collection;Ljava/util/Collection;ZLkotlin/jvm/internal/DefaultConstructorMarker;)V
-
-    move-object v1, p0
-
-    .line 148
-    iput-object v0, v1, Landroidx/compose/ui/tooling/data/CallGroup;->parameters:Ljava/util/List;
+    .line 150
+    iput-object v1, v0, Landroidx/compose/ui/tooling/data/CallGroup;->parameters:Ljava/util/List;
 
     return-void
 .end method
@@ -152,7 +134,7 @@
         }
     .end annotation
 
-    .line 148
+    .line 150
     iget-object p0, p0, Landroidx/compose/ui/tooling/data/CallGroup;->parameters:Ljava/util/List;
 
     return-object p0

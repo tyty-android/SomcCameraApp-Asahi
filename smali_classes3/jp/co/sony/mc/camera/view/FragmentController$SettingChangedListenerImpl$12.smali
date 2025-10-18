@@ -25,7 +25,7 @@
 .method constructor <init>(Ljp/co/sony/mc/camera/view/FragmentController$SettingChangedListenerImpl;)V
     .locals 0
 
-    .line 5296
+    .line 5470
     iput-object p1, p0, Ljp/co/sony/mc/camera/view/FragmentController$SettingChangedListenerImpl$12;->this$1:Ljp/co/sony/mc/camera/view/FragmentController$SettingChangedListenerImpl;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -38,7 +38,7 @@
 .method public run()V
     .locals 2
 
-    .line 5299
+    .line 5473
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/FragmentController$SettingChangedListenerImpl$12;->this$1:Ljp/co/sony/mc/camera/view/FragmentController$SettingChangedListenerImpl;
 
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/FragmentController$SettingChangedListenerImpl;->this$0:Ljp/co/sony/mc/camera/view/FragmentController;
@@ -47,7 +47,7 @@
 
     move-result-object p0
 
-    .line 5300
+    .line 5474
     invoke-static {}, Ljp/co/sony/mc/camera/setting/CameraProSetting;->getInstance()Ljp/co/sony/mc/camera/setting/CameraProSetting;
 
     move-result-object v0
@@ -60,15 +60,15 @@
 
     check-cast v0, Ljp/co/sony/mc/camera/configuration/parameters/StreamingAudioMute;
 
-    .line 5301
+    .line 5475
     invoke-virtual {v0}, Ljp/co/sony/mc/camera/configuration/parameters/StreamingAudioMute;->getBooleanValue()Z
 
     move-result v0
 
-    .line 5299
+    .line 5473
     invoke-virtual {p0, v0}, Ljp/co/sony/mc/camera/view/fragment/ExternalDisplayFragment;->setMuteStatus(Z)V
 
-    .line 5303
+    .line 5477
     new-instance p0, Ljp/co/sony/mc/camera/idd/event/IddSettingEvent;
 
     invoke-direct {p0}, Ljp/co/sony/mc/camera/idd/event/IddSettingEvent;-><init>()V
@@ -81,12 +81,12 @@
 
     sget-object v0, Ljp/co/sony/mc/camera/setting/CommonSettings;->STREAMING_AUDIO_MUTE:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
 
-    .line 5304
+    .line 5478
     invoke-virtual {p0, v0}, Ljp/co/sony/mc/camera/idd/event/IddSettingEvent;->setting(Ljp/co/sony/mc/camera/setting/SettingKey$Key;)Ljp/co/sony/mc/camera/idd/event/IddSettingEvent;
 
     move-result-object p0
 
-    .line 5305
+    .line 5479
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/idd/event/IddSettingEvent;->send()V
 
     return-void

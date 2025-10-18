@@ -99,10 +99,6 @@
 .method public final invoke(Landroidx/compose/foundation/text/selection/TextFieldPreparedSelection;)V
     .locals 3
 
-    const-string v0, "$this$commandExecutionContext"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
     .line 107
     iget-object v0, p0, Landroidx/compose/foundation/text/TextFieldKeyInput$process$2;->$command:Landroidx/compose/foundation/text/KeyCommand;
 
@@ -735,8 +731,6 @@
     :cond_3
     :goto_0
     return-void
-
-    nop
 
     :pswitch_data_0
     .packed-switch 0x1

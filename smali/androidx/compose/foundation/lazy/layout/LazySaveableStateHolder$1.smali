@@ -68,11 +68,7 @@
 
 # virtual methods
 .method public final invoke(Ljava/lang/Object;)Ljava/lang/Boolean;
-    .locals 1
-
-    const-string v0, "it"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+    .locals 0
 
     .line 64
     iget-object p0, p0, Landroidx/compose/foundation/lazy/layout/LazySaveableStateHolder$1;->$parentRegistry:Landroidx/compose/runtime/saveable/SaveableStateRegistry;

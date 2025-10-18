@@ -21,7 +21,7 @@
 .method constructor <init>()V
     .locals 0
 
-    .line 823
+    .line 876
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -42,11 +42,11 @@
         }
     .end annotation
 
-    .line 827
+    .line 880
     check-cast p1, Ljp/co/sony/mc/camera/setting/CameraSettings;
 
-    .line 828
-    invoke-static {p1}, Ljp/co/sony/mc/camera/setting/CameraSettings;->-$$Nest$mgetVideoStabilizer(Ljp/co/sony/mc/camera/setting/CameraSettings;)Ljp/co/sony/mc/camera/configuration/parameters/VideoStabilizer;
+    .line 881
+    invoke-static {p1}, Ljp/co/sony/mc/camera/setting/CameraSettings;->-$$Nest$mgetExtendFps(Ljp/co/sony/mc/camera/setting/CameraSettings;)Ljp/co/sony/mc/camera/configuration/parameters/ExtendFps;
 
     move-result-object p0
 

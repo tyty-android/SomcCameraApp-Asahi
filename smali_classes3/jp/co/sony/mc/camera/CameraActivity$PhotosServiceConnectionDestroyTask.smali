@@ -25,7 +25,7 @@
 .method private constructor <init>(Ljp/co/sony/mc/camera/CameraActivity;)V
     .locals 0
 
-    .line 1614
+    .line 1657
     iput-object p1, p0, Ljp/co/sony/mc/camera/CameraActivity$PhotosServiceConnectionDestroyTask;->this$0:Ljp/co/sony/mc/camera/CameraActivity;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -46,7 +46,7 @@
 .method public run()V
     .locals 2
 
-    .line 1617
+    .line 1660
     iget-object v0, p0, Ljp/co/sony/mc/camera/CameraActivity$PhotosServiceConnectionDestroyTask;->this$0:Ljp/co/sony/mc/camera/CameraActivity;
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/CameraActivity;->-$$Nest$fgetmBackgroundWorkLock(Ljp/co/sony/mc/camera/CameraActivity;)Ljava/lang/Object;
@@ -55,7 +55,7 @@
 
     monitor-enter v0
 
-    .line 1618
+    .line 1661
     :try_start_0
     iget-object p0, p0, Ljp/co/sony/mc/camera/CameraActivity$PhotosServiceConnectionDestroyTask;->this$0:Ljp/co/sony/mc/camera/CameraActivity;
 
@@ -63,7 +63,7 @@
 
     invoke-static {p0, v1}, Ljp/co/sony/mc/camera/CameraActivity;->-$$Nest$fputmPhotosServiceConnection(Ljp/co/sony/mc/camera/CameraActivity;Ljp/co/sony/mc/camera/systemmonitor/PhotosServiceConnection;)V
 
-    .line 1619
+    .line 1662
     monitor-exit v0
 
     return-void

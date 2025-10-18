@@ -82,7 +82,7 @@
 .method public bridge synthetic invoke(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
     .locals 2
 
-    .line 381
+    .line 413
     check-cast p1, Landroidx/compose/runtime/saveable/SaverScope;
 
     check-cast p2, Landroidx/compose/ui/geometry/Offset;
@@ -101,11 +101,7 @@
 .method public final invoke-Uv8p0NA(Landroidx/compose/runtime/saveable/SaverScope;J)Ljava/lang/Object;
     .locals 1
 
-    const-string p0, "$this$Saver"
-
-    invoke-static {p1, p0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 383
+    .line 415
     sget-object p0, Landroidx/compose/ui/geometry/Offset;->Companion:Landroidx/compose/ui/geometry/Offset$Companion;
 
     invoke-virtual {p0}, Landroidx/compose/ui/geometry/Offset$Companion;->getUnspecified-F1C5BW0()J
@@ -120,7 +116,7 @@
 
     if-eqz p0, :cond_0
 
-    .line 384
+    .line 416
     invoke-static {p1}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
     move-result-object p0
@@ -132,7 +128,7 @@
     :cond_0
     const/4 p0, 0x2
 
-    .line 386
+    .line 418
     new-array p0, p0, [Ljava/lang/Float;
 
     invoke-static {p2, p3}, Landroidx/compose/ui/geometry/Offset;->getX-impl(J)F

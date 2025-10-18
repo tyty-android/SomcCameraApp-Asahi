@@ -1,6 +1,6 @@
 .class final Landroidx/compose/ui/tooling/PreviewActivity$setParameterizedContent$1$1;
 .super Lkotlin/jvm/internal/Lambda;
-.source "PreviewActivity.kt"
+.source "PreviewActivity.android.kt"
 
 # interfaces
 .implements Lkotlin/jvm/functions/Function2;
@@ -96,7 +96,7 @@
 
     move/from16 v1, p2
 
-    const-string v2, "C123@5168L273:PreviewActivity.kt#hevd2p"
+    const-string v2, "C123@5188L273:PreviewActivity.android.kt#hevd2p"
 
     move-object/from16 v14, p1
 
@@ -134,16 +134,16 @@
 
     const/4 v2, -0x1
 
-    const-string v3, "androidx.compose.ui.tooling.PreviewActivity.setParameterizedContent.<anonymous>.<anonymous> (PreviewActivity.kt:122)"
+    const-string v3, "androidx.compose.ui.tooling.PreviewActivity.setParameterizedContent.<anonymous>.<anonymous> (PreviewActivity.android.kt:123)"
 
-    const v4, 0x7f69a7c6
+    const v4, 0x392326a5
 
     invoke-static {v4, v1, v2, v3}, Landroidx/compose/runtime/ComposerKt;->traceEventStart(IIILjava/lang/String;)V
 
     :cond_2
-    sget-object v1, Landroidx/compose/ui/tooling/ComposableSingletons$PreviewActivityKt;->INSTANCE:Landroidx/compose/ui/tooling/ComposableSingletons$PreviewActivityKt;
+    sget-object v1, Landroidx/compose/ui/tooling/ComposableSingletons$PreviewActivity_androidKt;->INSTANCE:Landroidx/compose/ui/tooling/ComposableSingletons$PreviewActivity_androidKt;
 
-    invoke-virtual {v1}, Landroidx/compose/ui/tooling/ComposableSingletons$PreviewActivityKt;->getLambda-1$ui_tooling_release()Lkotlin/jvm/functions/Function2;
+    invoke-virtual {v1}, Landroidx/compose/ui/tooling/ComposableSingletons$PreviewActivity_androidKt;->getLambda-1$ui_tooling_release()Lkotlin/jvm/functions/Function2;
 
     move-result-object v3
 

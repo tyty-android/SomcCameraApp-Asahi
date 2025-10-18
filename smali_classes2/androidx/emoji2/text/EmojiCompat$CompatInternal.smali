@@ -22,10 +22,10 @@
 .method constructor <init>(Landroidx/emoji2/text/EmojiCompat;)V
     .locals 0
 
-    .line 1633
+    .line 1638
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 1634
+    .line 1639
     iput-object p1, p0, Landroidx/emoji2/text/EmojiCompat$CompatInternal;->mEmojiCompat:Landroidx/emoji2/text/EmojiCompat;
 
     return-void
@@ -36,7 +36,7 @@
 .method getAssetSignature()Ljava/lang/String;
     .locals 0
 
-    .line 1674
+    .line 1679
     const-string p0, ""
 
     return-object p0
@@ -85,7 +85,7 @@
 .method loadMetadata()V
     .locals 0
 
-    .line 1639
+    .line 1644
     iget-object p0, p0, Landroidx/emoji2/text/EmojiCompat$CompatInternal;->mEmojiCompat:Landroidx/emoji2/text/EmojiCompat;
 
     invoke-virtual {p0}, Landroidx/emoji2/text/EmojiCompat;->onMetadataLoadSuccess()V

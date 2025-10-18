@@ -18,7 +18,7 @@
 .method constructor <init>()V
     .locals 0
 
-    .line 40
+    .line 41
     invoke-direct {p0}, Ljava/io/Reader;-><init>()V
 
     return-void
@@ -29,7 +29,7 @@
 .method public close()V
     .locals 0
 
-    .line 45
+    .line 49
     new-instance p0, Ljava/lang/AssertionError;
 
     invoke-direct {p0}, Ljava/lang/AssertionError;-><init>()V
@@ -40,7 +40,7 @@
 .method public read([CII)I
     .locals 0
 
-    .line 42
+    .line 44
     new-instance p0, Ljava/lang/AssertionError;
 
     invoke-direct {p0}, Ljava/lang/AssertionError;-><init>()V

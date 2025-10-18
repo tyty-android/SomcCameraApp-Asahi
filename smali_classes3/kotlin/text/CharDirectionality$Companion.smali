@@ -92,7 +92,7 @@
 .method public final valueOf(I)Lkotlin/text/CharDirectionality;
     .locals 2
 
-    .line 120
+    .line 121
     invoke-direct {p0}, Lkotlin/text/CharDirectionality$Companion;->getDirectionalityMap()Ljava/util/Map;
 
     move-result-object p0

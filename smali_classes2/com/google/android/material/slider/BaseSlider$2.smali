@@ -22,7 +22,7 @@
 .method constructor <init>(Lcom/google/android/material/slider/BaseSlider;)V
     .locals 0
 
-    .line 2248
+    .line 2685
     iput-object p1, p0, Lcom/google/android/material/slider/BaseSlider$2;->this$0:Lcom/google/android/material/slider/BaseSlider;
 
     invoke-direct {p0}, Landroid/animation/AnimatorListenerAdapter;-><init>()V
@@ -35,17 +35,17 @@
 .method public onAnimationEnd(Landroid/animation/Animator;)V
     .locals 1
 
-    .line 2251
+    .line 2688
     invoke-super {p0, p1}, Landroid/animation/AnimatorListenerAdapter;->onAnimationEnd(Landroid/animation/Animator;)V
 
-    .line 2252
+    .line 2689
     iget-object p1, p0, Lcom/google/android/material/slider/BaseSlider$2;->this$0:Lcom/google/android/material/slider/BaseSlider;
 
     invoke-static {p1}, Lcom/google/android/material/internal/ViewUtils;->getContentViewOverlay(Landroid/view/View;)Lcom/google/android/material/internal/ViewOverlayImpl;
 
     move-result-object p1
 
-    .line 2253
+    .line 2690
     iget-object p0, p0, Lcom/google/android/material/slider/BaseSlider$2;->this$0:Lcom/google/android/material/slider/BaseSlider;
 
     invoke-static {p0}, Lcom/google/android/material/slider/BaseSlider;->access$000(Lcom/google/android/material/slider/BaseSlider;)Ljava/util/List;
@@ -69,7 +69,7 @@
 
     check-cast v0, Lcom/google/android/material/tooltip/TooltipDrawable;
 
-    .line 2254
+    .line 2691
     invoke-interface {p1, v0}, Lcom/google/android/material/internal/ViewOverlayImpl;->remove(Landroid/graphics/drawable/Drawable;)V
 
     goto :goto_0

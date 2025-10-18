@@ -5,7 +5,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Landroidx/compose/foundation/gestures/DragGestureDetectorKt;->awaitPointerSlopOrCancellation-wtdNQyU(Landroidx/compose/ui/input/pointer/AwaitPointerEventScope;JILandroidx/compose/foundation/gestures/PointerDirectionConfig;ZLkotlin/jvm/functions/Function2;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+    value = Landroidx/compose/foundation/gestures/DragGestureDetectorKt;->awaitPointerSlopOrCancellation-pn7EDYM(Landroidx/compose/ui/input/pointer/AwaitPointerEventScope;JILandroidx/compose/foundation/gestures/PointerDirectionConfig;Lkotlin/jvm/functions/Function2;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -14,7 +14,7 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/SourceDebugExtension;
-    value = "SMAP\nDragGestureDetector.kt\nKotlin\n*S Kotlin\n*F\n+ 1 DragGestureDetector.kt\nandroidx/compose/foundation/gestures/DragGestureDetectorKt$awaitPointerSlopOrCancellation$1\n*L\n1#1,873:1\n*E\n"
+    value = "SMAP\nDragGestureDetector.kt\nKotlin\n*S Kotlin\n*F\n+ 1 DragGestureDetector.kt\nandroidx/compose/foundation/gestures/DragGestureDetectorKt$awaitPointerSlopOrCancellation$1\n*L\n1#1,875:1\n*E\n"
 .end annotation
 
 .annotation runtime Lkotlin/Metadata;
@@ -37,10 +37,6 @@
         0x0,
         0x0,
         0x0,
-        0x0,
-        0x0,
-        0x1,
-        0x1,
         0x1,
         0x1,
         0x1,
@@ -50,47 +46,39 @@
         0x1
     }
     l = {
-        0x2a2,
-        0x2c4
+        0x29b,
+        0x2b5
     }
-    m = "awaitPointerSlopOrCancellation-wtdNQyU"
+    m = "awaitPointerSlopOrCancellation-pn7EDYM"
     n = {
-        "$this$awaitPointerSlopOrCancellation_u2dwtdNQyU",
+        "$this$awaitPointerSlopOrCancellation_u2dpn7EDYM",
         "pointerDirectionConfig",
         "onPointerSlopReached",
         "pointer",
-        "triggerOnMainAxisSlop",
         "touchSlop",
-        "totalMainPositionChange",
-        "totalCrossPositionChange",
-        "$this$awaitPointerSlopOrCancellation_u2dwtdNQyU",
+        "totalPositionChange",
+        "$this$awaitPointerSlopOrCancellation_u2dpn7EDYM",
         "pointerDirectionConfig",
         "onPointerSlopReached",
         "pointer",
         "dragEvent",
-        "triggerOnMainAxisSlop",
         "touchSlop",
-        "totalMainPositionChange",
-        "totalCrossPositionChange"
+        "totalPositionChange"
     }
     s = {
         "L$0",
         "L$1",
         "L$2",
         "L$3",
-        "Z$0",
         "F$0",
-        "F$1",
-        "F$2",
+        "J$0",
         "L$0",
         "L$1",
         "L$2",
         "L$3",
         "L$4",
-        "Z$0",
         "F$0",
-        "F$1",
-        "F$2"
+        "J$0"
     }
 .end annotation
 
@@ -98,9 +86,7 @@
 # instance fields
 .field F$0:F
 
-.field F$1:F
-
-.field F$2:F
+.field J$0:J
 
 .field L$0:Ljava/lang/Object;
 
@@ -111,8 +97,6 @@
 .field L$3:Ljava/lang/Object;
 
 .field L$4:Ljava/lang/Object;
-
-.field Z$0:Z
 
 .field label:I
 
@@ -140,7 +124,7 @@
 
 # virtual methods
 .method public final invokeSuspend(Ljava/lang/Object;)Ljava/lang/Object;
-    .locals 8
+    .locals 7
 
     iput-object p1, p0, Landroidx/compose/foundation/gestures/DragGestureDetectorKt$awaitPointerSlopOrCancellation$1;->result:Ljava/lang/Object;
 
@@ -152,11 +136,11 @@
 
     iput p1, p0, Landroidx/compose/foundation/gestures/DragGestureDetectorKt$awaitPointerSlopOrCancellation$1;->label:I
 
-    const/4 v6, 0x0
+    const/4 v5, 0x0
 
-    move-object v7, p0
+    move-object v6, p0
 
-    check-cast v7, Lkotlin/coroutines/Continuation;
+    check-cast v6, Lkotlin/coroutines/Continuation;
 
     const/4 v0, 0x0
 
@@ -166,9 +150,7 @@
 
     const/4 v4, 0x0
 
-    const/4 v5, 0x0
-
-    invoke-static/range {v0 .. v7}, Landroidx/compose/foundation/gestures/DragGestureDetectorKt;->awaitPointerSlopOrCancellation-wtdNQyU(Landroidx/compose/ui/input/pointer/AwaitPointerEventScope;JILandroidx/compose/foundation/gestures/PointerDirectionConfig;ZLkotlin/jvm/functions/Function2;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+    invoke-static/range {v0 .. v6}, Landroidx/compose/foundation/gestures/DragGestureDetectorKt;->awaitPointerSlopOrCancellation-pn7EDYM(Landroidx/compose/ui/input/pointer/AwaitPointerEventScope;JILandroidx/compose/foundation/gestures/PointerDirectionConfig;Lkotlin/jvm/functions/Function2;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
 
     move-result-object p0
 

@@ -48,10 +48,6 @@
 
 
 # instance fields
-.field final synthetic $$changed:I
-
-.field final synthetic $$dirty:I
-
 .field final synthetic $content:Lkotlin/jvm/functions/Function3;
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -69,7 +65,7 @@
 
 
 # direct methods
-.method constructor <init>(Lkotlin/jvm/functions/Function3;Landroidx/compose/foundation/layout/RowScope;II)V
+.method constructor <init>(Lkotlin/jvm/functions/Function3;Landroidx/compose/foundation/layout/RowScope;)V
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -84,17 +80,13 @@
             "Lkotlin/Unit;",
             ">;",
             "Landroidx/compose/foundation/layout/RowScope;",
-            "II)V"
+            ")V"
         }
     .end annotation
 
     iput-object p1, p0, Landroidx/compose/material/BadgeKt$Badge$1$1;->$content:Lkotlin/jvm/functions/Function3;
 
     iput-object p2, p0, Landroidx/compose/material/BadgeKt$Badge$1$1;->$this_Row:Landroidx/compose/foundation/layout/RowScope;
-
-    iput p3, p0, Landroidx/compose/material/BadgeKt$Badge$1$1;->$$changed:I
-
-    iput p4, p0, Landroidx/compose/material/BadgeKt$Badge$1$1;->$$dirty:I
 
     const/4 p1, 0x2
 
@@ -108,7 +100,7 @@
 .method public bridge synthetic invoke(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
 
-    .line 157
+    .line 158
     check-cast p1, Landroidx/compose/runtime/Composer;
 
     check-cast p2, Ljava/lang/Number;
@@ -133,7 +125,7 @@
 
     move/from16 v2, p2
 
-    const-string v3, "C157@6099L10,158@6171L114:Badge.kt#jmzs0o"
+    const-string v3, "C158@6149L10,159@6221L114:Badge.kt#jmzs0o"
 
     invoke-static {v1, v3}, Landroidx/compose/runtime/ComposerKt;->sourceInformation(Landroidx/compose/runtime/Composer;Ljava/lang/String;)V
 
@@ -143,7 +135,7 @@
 
     if-ne v3, v4, :cond_1
 
-    .line 158
+    .line 159
     invoke-interface/range {p1 .. p1}, Landroidx/compose/runtime/Composer;->getSkipping()Z
 
     move-result v3
@@ -152,13 +144,13 @@
 
     goto :goto_0
 
-    .line 162
+    .line 163
     :cond_0
     invoke-interface/range {p1 .. p1}, Landroidx/compose/runtime/Composer;->skipToGroupEnd()V
 
     goto :goto_1
 
-    .line 158
+    .line 159
     :cond_1
     :goto_0
     invoke-static {}, Landroidx/compose/runtime/ComposerKt;->isTraceInProgress()Z
@@ -169,7 +161,7 @@
 
     const/4 v3, -0x1
 
-    const-string v4, "androidx.compose.material.Badge.<anonymous>.<anonymous> (Badge.kt:156)"
+    const-string v4, "androidx.compose.material.Badge.<anonymous>.<anonymous> (Badge.kt:158)"
 
     const v5, 0x6a5db695
 
@@ -242,22 +234,18 @@
 
     const/16 v32, 0x0
 
-    invoke-static/range {v3 .. v34}, Landroidx/compose/ui/text/TextStyle;->copy-v2rsoow$default(Landroidx/compose/ui/text/TextStyle;JJLandroidx/compose/ui/text/font/FontWeight;Landroidx/compose/ui/text/font/FontStyle;Landroidx/compose/ui/text/font/FontSynthesis;Landroidx/compose/ui/text/font/FontFamily;Ljava/lang/String;JLandroidx/compose/ui/text/style/BaselineShift;Landroidx/compose/ui/text/style/TextGeometricTransform;Landroidx/compose/ui/text/intl/LocaleList;JLandroidx/compose/ui/text/style/TextDecoration;Landroidx/compose/ui/graphics/Shadow;Landroidx/compose/ui/graphics/drawscope/DrawStyle;Landroidx/compose/ui/text/style/TextAlign;Landroidx/compose/ui/text/style/TextDirection;JLandroidx/compose/ui/text/style/TextIndent;Landroidx/compose/ui/text/PlatformTextStyle;Landroidx/compose/ui/text/style/LineHeightStyle;Landroidx/compose/ui/text/style/LineBreak;Landroidx/compose/ui/text/style/Hyphens;Landroidx/compose/ui/text/style/TextMotion;ILjava/lang/Object;)Landroidx/compose/ui/text/TextStyle;
+    invoke-static/range {v3 .. v34}, Landroidx/compose/ui/text/TextStyle;->copy-p1EtxEg$default(Landroidx/compose/ui/text/TextStyle;JJLandroidx/compose/ui/text/font/FontWeight;Landroidx/compose/ui/text/font/FontStyle;Landroidx/compose/ui/text/font/FontSynthesis;Landroidx/compose/ui/text/font/FontFamily;Ljava/lang/String;JLandroidx/compose/ui/text/style/BaselineShift;Landroidx/compose/ui/text/style/TextGeometricTransform;Landroidx/compose/ui/text/intl/LocaleList;JLandroidx/compose/ui/text/style/TextDecoration;Landroidx/compose/ui/graphics/Shadow;Landroidx/compose/ui/graphics/drawscope/DrawStyle;IIJLandroidx/compose/ui/text/style/TextIndent;Landroidx/compose/ui/text/PlatformTextStyle;Landroidx/compose/ui/text/style/LineHeightStyle;IILandroidx/compose/ui/text/style/TextMotion;ILjava/lang/Object;)Landroidx/compose/ui/text/TextStyle;
 
     move-result-object v2
 
-    .line 161
+    .line 162
     new-instance v3, Landroidx/compose/material/BadgeKt$Badge$1$1$1;
 
     iget-object v4, v0, Landroidx/compose/material/BadgeKt$Badge$1$1;->$content:Lkotlin/jvm/functions/Function3;
 
-    iget-object v5, v0, Landroidx/compose/material/BadgeKt$Badge$1$1;->$this_Row:Landroidx/compose/foundation/layout/RowScope;
+    iget-object v0, v0, Landroidx/compose/material/BadgeKt$Badge$1$1;->$this_Row:Landroidx/compose/foundation/layout/RowScope;
 
-    iget v6, v0, Landroidx/compose/material/BadgeKt$Badge$1$1;->$$changed:I
-
-    iget v0, v0, Landroidx/compose/material/BadgeKt$Badge$1$1;->$$dirty:I
-
-    invoke-direct {v3, v4, v5, v6, v0}, Landroidx/compose/material/BadgeKt$Badge$1$1$1;-><init>(Lkotlin/jvm/functions/Function3;Landroidx/compose/foundation/layout/RowScope;II)V
+    invoke-direct {v3, v4, v0}, Landroidx/compose/material/BadgeKt$Badge$1$1$1;-><init>(Lkotlin/jvm/functions/Function3;Landroidx/compose/foundation/layout/RowScope;)V
 
     const v0, 0x368c28c6
 
@@ -271,7 +259,7 @@
 
     const/16 v3, 0x30
 
-    .line 159
+    .line 160
     invoke-static {v2, v0, v1, v3}, Landroidx/compose/material/TextKt;->ProvideTextStyle(Landroidx/compose/ui/text/TextStyle;Lkotlin/jvm/functions/Function2;Landroidx/compose/runtime/Composer;I)V
 
     invoke-static {}, Landroidx/compose/runtime/ComposerKt;->isTraceInProgress()Z

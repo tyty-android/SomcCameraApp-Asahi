@@ -25,7 +25,7 @@
 .method private constructor <init>(Ljp/co/sony/mc/camera/CameraActivity;)V
     .locals 0
 
-    .line 919
+    .line 932
     iput-object p1, p0, Ljp/co/sony/mc/camera/CameraActivity$ThermalAlertReceiverCreateTask;->this$0:Ljp/co/sony/mc/camera/CameraActivity;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -46,7 +46,7 @@
 .method public run()V
     .locals 4
 
-    .line 922
+    .line 935
     iget-object v0, p0, Ljp/co/sony/mc/camera/CameraActivity$ThermalAlertReceiverCreateTask;->this$0:Ljp/co/sony/mc/camera/CameraActivity;
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/CameraActivity;->-$$Nest$fgetmBackgroundWorkLock(Ljp/co/sony/mc/camera/CameraActivity;)Ljava/lang/Object;
@@ -55,7 +55,7 @@
 
     monitor-enter v0
 
-    .line 923
+    .line 936
     :try_start_0
     iget-object v1, p0, Ljp/co/sony/mc/camera/CameraActivity$ThermalAlertReceiverCreateTask;->this$0:Ljp/co/sony/mc/camera/CameraActivity;
 
@@ -65,7 +65,7 @@
 
     if-nez v1, :cond_0
 
-    .line 924
+    .line 937
     iget-object v1, p0, Ljp/co/sony/mc/camera/CameraActivity$ThermalAlertReceiverCreateTask;->this$0:Ljp/co/sony/mc/camera/CameraActivity;
 
     new-instance v2, Ljp/co/sony/mc/camera/systemmonitor/ThermalAlertReceiver;
@@ -80,7 +80,7 @@
 
     invoke-static {v1, v2}, Ljp/co/sony/mc/camera/CameraActivity;->-$$Nest$fputmThermalAlertReceiver(Ljp/co/sony/mc/camera/CameraActivity;Ljp/co/sony/mc/camera/systemmonitor/ThermalAlertReceiver;)V
 
-    .line 927
+    .line 940
     :cond_0
     monitor-exit v0
 

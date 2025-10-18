@@ -26,15 +26,15 @@
 .method constructor <init>(Landroid/content/Context;Landroid/view/View;)V
     .locals 0
 
-    .line 135
+    .line 137
     invoke-direct {p0, p2}, Landroidx/recyclerview/widget/RecyclerView$ViewHolder;-><init>(Landroid/view/View;)V
 
-    .line 136
+    .line 138
     iput-object p1, p0, Ljp/co/sony/mc/camera/view/addon/AddonAdapter$AddonViewHolder;->mContext:Landroid/content/Context;
 
-    const p1, 0x7f090052
+    const p1, 0x7f09004e
 
-    .line 137
+    .line 139
     invoke-virtual {p2, p1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
     move-result-object p1
@@ -43,9 +43,9 @@
 
     iput-object p1, p0, Ljp/co/sony/mc/camera/view/addon/AddonAdapter$AddonViewHolder;->textView:Landroid/widget/TextView;
 
-    const p1, 0x7f090051
+    const p1, 0x7f09004d
 
-    .line 138
+    .line 140
     invoke-virtual {p2, p1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
     move-result-object p1

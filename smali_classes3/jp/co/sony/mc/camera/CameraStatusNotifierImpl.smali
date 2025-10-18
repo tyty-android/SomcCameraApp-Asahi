@@ -13,6 +13,8 @@
 
 .field private mAutoFlashListener:Ljp/co/sony/mc/camera/CameraStatusNotifier$AutoFlashListener;
 
+.field private mAutoFramingObjectTrackingListener:Ljp/co/sony/mc/camera/CameraStatusNotifier$AutoFramingObjectTrackingListener;
+
 .field private mAutoHdrListener:Ljp/co/sony/mc/camera/CameraStatusNotifier$AutoHdrListener;
 
 .field private mBokehResultListener:Ljp/co/sony/mc/camera/CameraStatusNotifier$BokehResultListener;
@@ -30,6 +32,8 @@
 .field private mFocusDistanceListener:Ljp/co/sony/mc/camera/CameraStatusNotifier$FocusDistanceListener;
 
 .field private mFocusMagnificationResultListener:Ljp/co/sony/mc/camera/CameraStatusNotifier$FocusMagnificationResultListener;
+
+.field private mFramingAssistCroppedPositionListener:Ljp/co/sony/mc/camera/CameraStatusNotifier$FramingAssistCroppedPositionListener;
 
 .field private mHandShutterDetectionListener:Ljp/co/sony/mc/camera/CameraStatusNotifier$HandShutterDetectionListener;
 
@@ -50,7 +54,7 @@
 .method constructor <init>()V
     .locals 0
 
-    .line 36
+    .line 39
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -61,12 +65,12 @@
 .method public notifyAperture(F)V
     .locals 0
 
-    .line 156
+    .line 168
     iget-object p0, p0, Ljp/co/sony/mc/camera/CameraStatusNotifierImpl;->mApertureDetectListener:Ljp/co/sony/mc/camera/CameraStatusNotifier$ApertureDetectListener;
 
     if-eqz p0, :cond_0
 
-    .line 157
+    .line 169
     invoke-interface {p0, p1}, Ljp/co/sony/mc/camera/CameraStatusNotifier$ApertureDetectListener;->onApertureDetected(F)V
 
     :cond_0
@@ -76,12 +80,12 @@
 .method public notifyAutoFlash(Z)V
     .locals 0
 
-    .line 187
+    .line 199
     iget-object p0, p0, Ljp/co/sony/mc/camera/CameraStatusNotifierImpl;->mAutoFlashListener:Ljp/co/sony/mc/camera/CameraStatusNotifier$AutoFlashListener;
 
     if-eqz p0, :cond_0
 
-    .line 188
+    .line 200
     invoke-interface {p0, p1}, Ljp/co/sony/mc/camera/CameraStatusNotifier$AutoFlashListener;->onAutoFlashChanged(Z)V
 
     :cond_0
@@ -91,12 +95,12 @@
 .method public notifyAutoHdr(Z)V
     .locals 0
 
-    .line 193
+    .line 205
     iget-object p0, p0, Ljp/co/sony/mc/camera/CameraStatusNotifierImpl;->mAutoHdrListener:Ljp/co/sony/mc/camera/CameraStatusNotifier$AutoHdrListener;
 
     if-eqz p0, :cond_0
 
-    .line 194
+    .line 206
     invoke-interface {p0, p1}, Ljp/co/sony/mc/camera/CameraStatusNotifier$AutoHdrListener;->onAutoHdrChanged(Z)V
 
     :cond_0
@@ -106,12 +110,12 @@
 .method public notifyBokehResult(Ljp/co/sony/mc/camera/device/CaptureResultNotifier$BokehResult;)V
     .locals 1
 
-    .line 138
+    .line 150
     iget-object p0, p0, Ljp/co/sony/mc/camera/CameraStatusNotifierImpl;->mBokehResultListener:Ljp/co/sony/mc/camera/CameraStatusNotifier$BokehResultListener;
 
     if-eqz p0, :cond_0
 
-    .line 139
+    .line 151
     invoke-virtual {p1}, Ljp/co/sony/mc/camera/device/CaptureResultNotifier$BokehResult;->getStatus()I
 
     move-result v0
@@ -129,12 +133,12 @@
 .method public notifyBurstQueueingCountUpdated(I)V
     .locals 0
 
-    .line 231
+    .line 243
     iget-object p0, p0, Ljp/co/sony/mc/camera/CameraStatusNotifierImpl;->mBurstQueueingCountUpdatedListener:Ljp/co/sony/mc/camera/CameraStatusNotifier$BurstQueueingCountUpdatedListener;
 
     if-eqz p0, :cond_0
 
-    .line 232
+    .line 244
     invoke-interface {p0, p1}, Ljp/co/sony/mc/camera/CameraStatusNotifier$BurstQueueingCountUpdatedListener;->onBurstQueueingCountUpdated(I)V
 
     :cond_0
@@ -144,12 +148,12 @@
 .method public notifyCropRegionChanged(Landroid/graphics/Rect;)V
     .locals 0
 
-    .line 199
+    .line 211
     iget-object p0, p0, Ljp/co/sony/mc/camera/CameraStatusNotifierImpl;->mCropRegionListener:Ljp/co/sony/mc/camera/CameraStatusNotifier$CropRegionListener;
 
     if-eqz p0, :cond_0
 
-    .line 200
+    .line 212
     invoke-interface {p0, p1}, Ljp/co/sony/mc/camera/CameraStatusNotifier$CropRegionListener;->onCropRegionChanged(Landroid/graphics/Rect;)V
 
     :cond_0
@@ -159,17 +163,17 @@
 .method public notifyDetectedFace(Ljp/co/sony/mc/camera/device/CaptureResultNotifier$FaceDetectionResult;ZZ)V
     .locals 1
 
-    .line 117
+    .line 129
     iget-object v0, p0, Ljp/co/sony/mc/camera/CameraStatusNotifierImpl;->mFaceDetectListener:Ljp/co/sony/mc/camera/CameraStatusNotifier$FaceDetectListener;
 
     if-eqz v0, :cond_0
 
-    .line 118
+    .line 130
     new-instance v0, Ljp/co/sony/mc/camera/CameraStatusNotifier$DetectedFace;
 
     invoke-direct {v0, p1}, Ljp/co/sony/mc/camera/CameraStatusNotifier$DetectedFace;-><init>(Ljp/co/sony/mc/camera/device/CaptureResultNotifier$FaceDetectionResult;)V
 
-    .line 119
+    .line 131
     iget-object p0, p0, Ljp/co/sony/mc/camera/CameraStatusNotifierImpl;->mFaceDetectListener:Ljp/co/sony/mc/camera/CameraStatusNotifier$FaceDetectListener;
 
     invoke-interface {p0, v0, p2, p3}, Ljp/co/sony/mc/camera/CameraStatusNotifier$FaceDetectListener;->onFaceDetected(Ljp/co/sony/mc/camera/CameraStatusNotifier$DetectedFace;ZZ)V
@@ -181,12 +185,12 @@
 .method public notifyDeviceError()V
     .locals 0
 
-    .line 144
+    .line 156
     iget-object p0, p0, Ljp/co/sony/mc/camera/CameraStatusNotifierImpl;->mDeviceListener:Ljp/co/sony/mc/camera/CameraStatusNotifier$DeviceListener;
 
     if-eqz p0, :cond_0
 
-    .line 145
+    .line 157
     invoke-interface {p0}, Ljp/co/sony/mc/camera/CameraStatusNotifier$DeviceListener;->onDeviceError()V
 
     :cond_0
@@ -196,12 +200,12 @@
 .method public notifyFallbackStateChanged(ZZ)V
     .locals 0
 
-    .line 243
+    .line 255
     iget-object p0, p0, Ljp/co/sony/mc/camera/CameraStatusNotifierImpl;->mFallbackStateListener:Ljp/co/sony/mc/camera/CameraStatusNotifier$FallbackStateListener;
 
     if-eqz p0, :cond_0
 
-    .line 244
+    .line 256
     invoke-interface {p0, p1, p2}, Ljp/co/sony/mc/camera/CameraStatusNotifier$FallbackStateListener;->onFallbackStateChanged(ZZ)V
 
     :cond_0
@@ -211,12 +215,12 @@
 .method public notifyHandSignsDetectionResult(Ljp/co/sony/mc/camera/CameraStatusNotifier$HandDetectionResult;)V
     .locals 0
 
-    .line 225
+    .line 237
     iget-object p0, p0, Ljp/co/sony/mc/camera/CameraStatusNotifierImpl;->mHandShutterDetectionListener:Ljp/co/sony/mc/camera/CameraStatusNotifier$HandShutterDetectionListener;
 
     if-eqz p0, :cond_0
 
-    .line 226
+    .line 238
     invoke-interface {p0, p1}, Ljp/co/sony/mc/camera/CameraStatusNotifier$HandShutterDetectionListener;->onDetected(Ljp/co/sony/mc/camera/CameraStatusNotifier$HandDetectionResult;)V
 
     :cond_0
@@ -226,12 +230,12 @@
 .method public notifyHistogram(Ljp/co/sony/mc/camera/device/CaptureResultNotifier$HistogramResult;)V
     .locals 0
 
-    .line 181
+    .line 193
     iget-object p0, p0, Ljp/co/sony/mc/camera/CameraStatusNotifierImpl;->mHistogramUpdateListener:Ljp/co/sony/mc/camera/CameraStatusNotifier$HistogramUpdateListener;
 
     if-eqz p0, :cond_0
 
-    .line 182
+    .line 194
     invoke-interface {p0, p1}, Ljp/co/sony/mc/camera/CameraStatusNotifier$HistogramUpdateListener;->onHistogramChanged(Ljp/co/sony/mc/camera/device/CaptureResultNotifier$HistogramResult;)V
 
     :cond_0
@@ -241,12 +245,12 @@
 .method public notifyLowLightStateChanged(Z)V
     .locals 0
 
-    .line 237
+    .line 249
     iget-object p0, p0, Ljp/co/sony/mc/camera/CameraStatusNotifierImpl;->mLowLightStateListener:Ljp/co/sony/mc/camera/CameraStatusNotifier$LowLightStateListener;
 
     if-eqz p0, :cond_0
 
-    .line 238
+    .line 250
     invoke-interface {p0, p1}, Ljp/co/sony/mc/camera/CameraStatusNotifier$LowLightStateListener;->onLowLightStateChanged(Z)V
 
     :cond_0
@@ -256,12 +260,12 @@
 .method public notifyPoseRotationResult(Ljp/co/sony/mc/camera/device/CaptureResultNotifier$PoseRotationResult;Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;)V
     .locals 0
 
-    .line 206
+    .line 218
     iget-object p0, p0, Ljp/co/sony/mc/camera/CameraStatusNotifierImpl;->mPoseRotationResultListener:Ljp/co/sony/mc/camera/CameraStatusNotifier$PoseRotationResultListener;
 
     if-eqz p0, :cond_0
 
-    .line 208
+    .line 220
     invoke-virtual {p2}, Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;->getCameraInfo()Ljp/co/sony/mc/camera/device/CameraInfo;
 
     move-result-object p2
@@ -270,7 +274,7 @@
 
     move-result-object p2
 
-    .line 207
+    .line 219
     invoke-interface {p0, p1, p2}, Ljp/co/sony/mc/camera/CameraStatusNotifier$PoseRotationResultListener;->onPoseRotationResultChanged(Ljp/co/sony/mc/camera/device/CaptureResultNotifier$PoseRotationResult;Ljava/lang/String;)V
 
     :cond_0
@@ -280,12 +284,12 @@
 .method public notifyQrDetectionResult(Ljava/lang/String;)V
     .locals 0
 
-    .line 213
+    .line 225
     iget-object p0, p0, Ljp/co/sony/mc/camera/CameraStatusNotifierImpl;->mQrCodeDetectListener:Ljp/co/sony/mc/camera/CameraStatusNotifier$QrCodeDetectListener;
 
     if-eqz p0, :cond_0
 
-    .line 214
+    .line 226
     invoke-interface {p0, p1}, Ljp/co/sony/mc/camera/CameraStatusNotifier$QrCodeDetectListener;->onDetected(Ljava/lang/String;)V
 
     :cond_0
@@ -295,12 +299,12 @@
 .method public notifyRecordingProgress(I)V
     .locals 0
 
-    .line 219
+    .line 231
     iget-object p0, p0, Ljp/co/sony/mc/camera/CameraStatusNotifierImpl;->mRecordingProgressListener:Ljp/co/sony/mc/camera/CameraStatusNotifier$RecordingProgressListener;
 
     if-eqz p0, :cond_0
 
-    .line 220
+    .line 232
     invoke-interface {p0, p1}, Ljp/co/sony/mc/camera/CameraStatusNotifier$RecordingProgressListener;->onRecordingProgress(I)V
 
     :cond_0
@@ -310,12 +314,12 @@
 .method public notifySsIsoEv(JII)V
     .locals 0
 
-    .line 150
+    .line 162
     iget-object p0, p0, Ljp/co/sony/mc/camera/CameraStatusNotifierImpl;->mSsIsoEvDetectListener:Ljp/co/sony/mc/camera/CameraStatusNotifier$SsIsoEvDetectListener;
 
     if-eqz p0, :cond_0
 
-    .line 151
+    .line 163
     invoke-interface {p0, p1, p2, p3, p4}, Ljp/co/sony/mc/camera/CameraStatusNotifier$SsIsoEvDetectListener;->onSsIsoEvDetected(JII)V
 
     :cond_0
@@ -325,12 +329,12 @@
 .method public notifyStartedFaceDetection()V
     .locals 0
 
-    .line 132
+    .line 144
     iget-object p0, p0, Ljp/co/sony/mc/camera/CameraStatusNotifierImpl;->mFaceDetectListener:Ljp/co/sony/mc/camera/CameraStatusNotifier$FaceDetectListener;
 
     if-eqz p0, :cond_0
 
-    .line 133
+    .line 145
     invoke-interface {p0}, Ljp/co/sony/mc/camera/CameraStatusNotifier$FaceDetectListener;->onFaceDetectStarted()V
 
     :cond_0
@@ -340,14 +344,14 @@
 .method public notifyStoppedFaceDetection()V
     .locals 0
 
-    .line 124
+    .line 136
     iget-object p0, p0, Ljp/co/sony/mc/camera/CameraStatusNotifierImpl;->mFaceDetectListener:Ljp/co/sony/mc/camera/CameraStatusNotifier$FaceDetectListener;
 
     if-eqz p0, :cond_0
 
     if-eqz p0, :cond_0
 
-    .line 126
+    .line 138
     invoke-interface {p0}, Ljp/co/sony/mc/camera/CameraStatusNotifier$FaceDetectListener;->onFaceDetectStopped()V
 
     :cond_0
@@ -357,13 +361,28 @@
 .method public onAeAwbLockStateChanged(ZZ)V
     .locals 0
 
-    .line 175
+    .line 187
     iget-object p0, p0, Ljp/co/sony/mc/camera/CameraStatusNotifierImpl;->mAeAwbLockStateListener:Ljp/co/sony/mc/camera/CameraStatusNotifier$AeAwbLockStateListener;
 
     if-eqz p0, :cond_0
 
-    .line 176
+    .line 188
     invoke-interface {p0, p1, p2}, Ljp/co/sony/mc/camera/CameraStatusNotifier$AeAwbLockStateListener;->onAeAwbLockStateChanged(ZZ)V
+
+    :cond_0
+    return-void
+.end method
+
+.method public onAutoFramingObjectTrackResultChanged(Z)V
+    .locals 0
+
+    .line 261
+    iget-object p0, p0, Ljp/co/sony/mc/camera/CameraStatusNotifierImpl;->mAutoFramingObjectTrackingListener:Ljp/co/sony/mc/camera/CameraStatusNotifier$AutoFramingObjectTrackingListener;
+
+    if-eqz p0, :cond_0
+
+    .line 262
+    invoke-interface {p0, p1}, Ljp/co/sony/mc/camera/CameraStatusNotifier$AutoFramingObjectTrackingListener;->onTrackResultChanged(Z)V
 
     :cond_0
     return-void
@@ -372,12 +391,12 @@
 .method public onFocusDistanceChanged(F)V
     .locals 0
 
-    .line 162
+    .line 174
     iget-object p0, p0, Ljp/co/sony/mc/camera/CameraStatusNotifierImpl;->mFocusDistanceListener:Ljp/co/sony/mc/camera/CameraStatusNotifier$FocusDistanceListener;
 
     if-eqz p0, :cond_0
 
-    .line 163
+    .line 175
     invoke-interface {p0, p1}, Ljp/co/sony/mc/camera/CameraStatusNotifier$FocusDistanceListener;->onFocusDistanceChanged(F)V
 
     :cond_0
@@ -387,13 +406,28 @@
 .method public onFocusMagnificationResultChanged(Ljp/co/sony/mc/camera/device/CaptureResultNotifier$FocusMagnificationResult;)V
     .locals 0
 
-    .line 169
+    .line 181
     iget-object p0, p0, Ljp/co/sony/mc/camera/CameraStatusNotifierImpl;->mFocusMagnificationResultListener:Ljp/co/sony/mc/camera/CameraStatusNotifier$FocusMagnificationResultListener;
 
     if-eqz p0, :cond_0
 
-    .line 170
+    .line 182
     invoke-interface {p0, p1}, Ljp/co/sony/mc/camera/CameraStatusNotifier$FocusMagnificationResultListener;->onFocusMagnificationResultChanged(Ljp/co/sony/mc/camera/device/CaptureResultNotifier$FocusMagnificationResult;)V
+
+    :cond_0
+    return-void
+.end method
+
+.method public onFramingAssistCroppedPositionChanged(Ljp/co/sony/mc/camera/device/CaptureResultNotifier$FramingAssistCroppedPosition;)V
+    .locals 0
+
+    .line 267
+    iget-object p0, p0, Ljp/co/sony/mc/camera/CameraStatusNotifierImpl;->mFramingAssistCroppedPositionListener:Ljp/co/sony/mc/camera/CameraStatusNotifier$FramingAssistCroppedPositionListener;
+
+    if-eqz p0, :cond_0
+
+    .line 268
+    invoke-interface {p0, p1}, Ljp/co/sony/mc/camera/CameraStatusNotifier$FramingAssistCroppedPositionListener;->onCroppedPositionChanged(Ljp/co/sony/mc/camera/device/CaptureResultNotifier$FramingAssistCroppedPosition;)V
 
     :cond_0
     return-void
@@ -402,7 +436,7 @@
 .method public setAeAwbLockStateListener(Ljp/co/sony/mc/camera/CameraStatusNotifier$AeAwbLockStateListener;)V
     .locals 0
 
-    .line 68
+    .line 71
     iput-object p1, p0, Ljp/co/sony/mc/camera/CameraStatusNotifierImpl;->mAeAwbLockStateListener:Ljp/co/sony/mc/camera/CameraStatusNotifier$AeAwbLockStateListener;
 
     return-void
@@ -411,7 +445,7 @@
 .method public setApertureDetectListener(Ljp/co/sony/mc/camera/CameraStatusNotifier$ApertureDetectListener;)V
     .locals 0
 
-    .line 56
+    .line 59
     iput-object p1, p0, Ljp/co/sony/mc/camera/CameraStatusNotifierImpl;->mApertureDetectListener:Ljp/co/sony/mc/camera/CameraStatusNotifier$ApertureDetectListener;
 
     return-void
@@ -420,8 +454,17 @@
 .method public setAutoFlashListener(Ljp/co/sony/mc/camera/CameraStatusNotifier$AutoFlashListener;)V
     .locals 0
 
-    .line 76
+    .line 79
     iput-object p1, p0, Ljp/co/sony/mc/camera/CameraStatusNotifierImpl;->mAutoFlashListener:Ljp/co/sony/mc/camera/CameraStatusNotifier$AutoFlashListener;
+
+    return-void
+.end method
+
+.method public setAutoFramingObjectTrackingListener(Ljp/co/sony/mc/camera/CameraStatusNotifier$AutoFramingObjectTrackingListener;)V
+    .locals 0
+
+    .line 119
+    iput-object p1, p0, Ljp/co/sony/mc/camera/CameraStatusNotifierImpl;->mAutoFramingObjectTrackingListener:Ljp/co/sony/mc/camera/CameraStatusNotifier$AutoFramingObjectTrackingListener;
 
     return-void
 .end method
@@ -429,7 +472,7 @@
 .method public setAutoHdrListener(Ljp/co/sony/mc/camera/CameraStatusNotifier$AutoHdrListener;)V
     .locals 0
 
-    .line 80
+    .line 83
     iput-object p1, p0, Ljp/co/sony/mc/camera/CameraStatusNotifierImpl;->mAutoHdrListener:Ljp/co/sony/mc/camera/CameraStatusNotifier$AutoHdrListener;
 
     return-void
@@ -438,7 +481,7 @@
 .method public setBokehResultListener(Ljp/co/sony/mc/camera/CameraStatusNotifier$BokehResultListener;)V
     .locals 0
 
-    .line 44
+    .line 47
     iput-object p1, p0, Ljp/co/sony/mc/camera/CameraStatusNotifierImpl;->mBokehResultListener:Ljp/co/sony/mc/camera/CameraStatusNotifier$BokehResultListener;
 
     return-void
@@ -447,7 +490,7 @@
 .method public setBurstQueueingCountUpdatedListener(Ljp/co/sony/mc/camera/CameraStatusNotifier$BurstQueueingCountUpdatedListener;)V
     .locals 0
 
-    .line 104
+    .line 107
     iput-object p1, p0, Ljp/co/sony/mc/camera/CameraStatusNotifierImpl;->mBurstQueueingCountUpdatedListener:Ljp/co/sony/mc/camera/CameraStatusNotifier$BurstQueueingCountUpdatedListener;
 
     return-void
@@ -456,7 +499,7 @@
 .method public setCropRegionListener(Ljp/co/sony/mc/camera/CameraStatusNotifier$CropRegionListener;)V
     .locals 0
 
-    .line 84
+    .line 87
     iput-object p1, p0, Ljp/co/sony/mc/camera/CameraStatusNotifierImpl;->mCropRegionListener:Ljp/co/sony/mc/camera/CameraStatusNotifier$CropRegionListener;
 
     return-void
@@ -465,7 +508,7 @@
 .method public setDeviceListener(Ljp/co/sony/mc/camera/CameraStatusNotifier$DeviceListener;)V
     .locals 0
 
-    .line 48
+    .line 51
     iput-object p1, p0, Ljp/co/sony/mc/camera/CameraStatusNotifierImpl;->mDeviceListener:Ljp/co/sony/mc/camera/CameraStatusNotifier$DeviceListener;
 
     return-void
@@ -474,7 +517,7 @@
 .method public setFaceDetectListener(Ljp/co/sony/mc/camera/CameraStatusNotifier$FaceDetectListener;)V
     .locals 0
 
-    .line 40
+    .line 43
     iput-object p1, p0, Ljp/co/sony/mc/camera/CameraStatusNotifierImpl;->mFaceDetectListener:Ljp/co/sony/mc/camera/CameraStatusNotifier$FaceDetectListener;
 
     return-void
@@ -483,7 +526,7 @@
 .method public setFallbackStateListener(Ljp/co/sony/mc/camera/CameraStatusNotifier$FallbackStateListener;)V
     .locals 0
 
-    .line 112
+    .line 115
     iput-object p1, p0, Ljp/co/sony/mc/camera/CameraStatusNotifierImpl;->mFallbackStateListener:Ljp/co/sony/mc/camera/CameraStatusNotifier$FallbackStateListener;
 
     return-void
@@ -492,7 +535,7 @@
 .method public setFocusDistanceListener(Ljp/co/sony/mc/camera/CameraStatusNotifier$FocusDistanceListener;)V
     .locals 0
 
-    .line 60
+    .line 63
     iput-object p1, p0, Ljp/co/sony/mc/camera/CameraStatusNotifierImpl;->mFocusDistanceListener:Ljp/co/sony/mc/camera/CameraStatusNotifier$FocusDistanceListener;
 
     return-void
@@ -501,8 +544,17 @@
 .method public setFocusMagnificationResultListener(Ljp/co/sony/mc/camera/CameraStatusNotifier$FocusMagnificationResultListener;)V
     .locals 0
 
-    .line 64
+    .line 67
     iput-object p1, p0, Ljp/co/sony/mc/camera/CameraStatusNotifierImpl;->mFocusMagnificationResultListener:Ljp/co/sony/mc/camera/CameraStatusNotifier$FocusMagnificationResultListener;
+
+    return-void
+.end method
+
+.method public setFramngAssistCroppedPositionListener(Ljp/co/sony/mc/camera/CameraStatusNotifier$FramingAssistCroppedPositionListener;)V
+    .locals 0
+
+    .line 124
+    iput-object p1, p0, Ljp/co/sony/mc/camera/CameraStatusNotifierImpl;->mFramingAssistCroppedPositionListener:Ljp/co/sony/mc/camera/CameraStatusNotifier$FramingAssistCroppedPositionListener;
 
     return-void
 .end method
@@ -510,7 +562,7 @@
 .method public setHandShutterDetectionListener(Ljp/co/sony/mc/camera/CameraStatusNotifier$HandShutterDetectionListener;)V
     .locals 0
 
-    .line 100
+    .line 103
     iput-object p1, p0, Ljp/co/sony/mc/camera/CameraStatusNotifierImpl;->mHandShutterDetectionListener:Ljp/co/sony/mc/camera/CameraStatusNotifier$HandShutterDetectionListener;
 
     return-void
@@ -519,7 +571,7 @@
 .method public setHistogramUpdateListener(Ljp/co/sony/mc/camera/CameraStatusNotifier$HistogramUpdateListener;)V
     .locals 0
 
-    .line 72
+    .line 75
     iput-object p1, p0, Ljp/co/sony/mc/camera/CameraStatusNotifierImpl;->mHistogramUpdateListener:Ljp/co/sony/mc/camera/CameraStatusNotifier$HistogramUpdateListener;
 
     return-void
@@ -528,7 +580,7 @@
 .method public setLowLightStateListener(Ljp/co/sony/mc/camera/CameraStatusNotifier$LowLightStateListener;)V
     .locals 0
 
-    .line 108
+    .line 111
     iput-object p1, p0, Ljp/co/sony/mc/camera/CameraStatusNotifierImpl;->mLowLightStateListener:Ljp/co/sony/mc/camera/CameraStatusNotifier$LowLightStateListener;
 
     return-void
@@ -537,7 +589,7 @@
 .method public setPoseRotationResultListener(Ljp/co/sony/mc/camera/CameraStatusNotifier$PoseRotationResultListener;)V
     .locals 0
 
-    .line 88
+    .line 91
     iput-object p1, p0, Ljp/co/sony/mc/camera/CameraStatusNotifierImpl;->mPoseRotationResultListener:Ljp/co/sony/mc/camera/CameraStatusNotifier$PoseRotationResultListener;
 
     return-void
@@ -546,7 +598,7 @@
 .method public setQrCodeDetectListener(Ljp/co/sony/mc/camera/CameraStatusNotifier$QrCodeDetectListener;)V
     .locals 0
 
-    .line 92
+    .line 95
     iput-object p1, p0, Ljp/co/sony/mc/camera/CameraStatusNotifierImpl;->mQrCodeDetectListener:Ljp/co/sony/mc/camera/CameraStatusNotifier$QrCodeDetectListener;
 
     return-void
@@ -555,7 +607,7 @@
 .method public setRecordingProgressListener(Ljp/co/sony/mc/camera/CameraStatusNotifier$RecordingProgressListener;)V
     .locals 0
 
-    .line 96
+    .line 99
     iput-object p1, p0, Ljp/co/sony/mc/camera/CameraStatusNotifierImpl;->mRecordingProgressListener:Ljp/co/sony/mc/camera/CameraStatusNotifier$RecordingProgressListener;
 
     return-void
@@ -564,7 +616,7 @@
 .method public setSsIsoEvDetectListener(Ljp/co/sony/mc/camera/CameraStatusNotifier$SsIsoEvDetectListener;)V
     .locals 0
 
-    .line 52
+    .line 55
     iput-object p1, p0, Ljp/co/sony/mc/camera/CameraStatusNotifierImpl;->mSsIsoEvDetectListener:Ljp/co/sony/mc/camera/CameraStatusNotifier$SsIsoEvDetectListener;
 
     return-void

@@ -3,7 +3,7 @@
 .source "D8$$SyntheticClass"
 
 # interfaces
-.implements Landroid/view/View$OnClickListener;
+.implements Landroid/view/accessibility/AccessibilityManager$TouchExplorationStateChangeListener;
 
 
 # instance fields
@@ -24,13 +24,13 @@
 
 
 # virtual methods
-.method public final onClick(Landroid/view/View;)V
+.method public final onTouchExplorationStateChanged(Z)V
     .locals 0
 
     .line 0
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/setting/quicksetting/QuickSettingItemView$$ExternalSyntheticLambda1;->f$0:Ljp/co/sony/mc/camera/view/setting/quicksetting/QuickSettingItemView;
 
-    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/view/setting/quicksetting/QuickSettingItemView;->$r8$lambda$R0AAMdXuJGRqUdm_x6sAP_w_pTk(Ljp/co/sony/mc/camera/view/setting/quicksetting/QuickSettingItemView;Landroid/view/View;)V
+    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/view/setting/quicksetting/QuickSettingItemView;->$r8$lambda$DxCTSsByaeo2eh9EEwdISLLdN_Y(Ljp/co/sony/mc/camera/view/setting/quicksetting/QuickSettingItemView;Z)V
 
     return-void
 .end method

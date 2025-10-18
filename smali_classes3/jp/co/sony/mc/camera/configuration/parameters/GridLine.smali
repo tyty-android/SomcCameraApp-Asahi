@@ -26,7 +26,7 @@
 
 .field public static final TAG:Ljava/lang/String; = "GridLine"
 
-.field private static final sParameterTextId:I = 0x7f11026a
+.field private static final sParameterTextId:I = 0x7f11028e
 
 
 # instance fields
@@ -57,9 +57,9 @@
     .line 15
     new-instance v0, Ljp/co/sony/mc/camera/configuration/parameters/GridLine;
 
-    const v1, 0x7f080205
+    const v1, 0x7f080213
 
-    const v2, 0x7f1103bf
+    const v2, 0x7f1103f4
 
     const-string v3, "ON"
 
@@ -72,9 +72,9 @@
     .line 18
     new-instance v0, Ljp/co/sony/mc/camera/configuration/parameters/GridLine;
 
-    const v1, 0x7f080204
+    const v1, 0x7f080212
 
-    const v2, 0x7f1103be
+    const v2, 0x7f1103f3
 
     const-string v3, "OFF"
 

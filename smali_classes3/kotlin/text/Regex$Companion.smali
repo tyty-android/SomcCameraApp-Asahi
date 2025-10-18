@@ -46,7 +46,7 @@
 .method private constructor <init>()V
     .locals 0
 
-    .line 315
+    .line 316
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -63,7 +63,7 @@
 .method public static final synthetic access$ensureUnicodeCase(Lkotlin/text/Regex$Companion;I)I
     .locals 0
 
-    .line 315
+    .line 316
     invoke-direct {p0, p1}, Lkotlin/text/Regex$Companion;->ensureUnicodeCase(I)I
 
     move-result p0
@@ -93,12 +93,12 @@
 
     invoke-static {p1, p0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 326
+    .line 327
     invoke-static {p1}, Ljava/util/regex/Pattern;->quote(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object p0
 
-    const-string p1, "quote(literal)"
+    const-string p1, "quote(...)"
 
     invoke-static {p0, p1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
 
@@ -112,12 +112,12 @@
 
     invoke-static {p1, p0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 332
+    .line 333
     invoke-static {p1}, Ljava/util/regex/Matcher;->quoteReplacement(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object p0
 
-    const-string p1, "quoteReplacement(literal)"
+    const-string p1, "quoteReplacement(...)"
 
     invoke-static {p0, p1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
 
@@ -133,7 +133,7 @@
 
     new-instance p0, Lkotlin/text/Regex;
 
-    .line 320
+    .line 321
     sget-object v0, Lkotlin/text/RegexOption;->LITERAL:Lkotlin/text/RegexOption;
 
     invoke-direct {p0, p1, v0}, Lkotlin/text/Regex;-><init>(Ljava/lang/String;Lkotlin/text/RegexOption;)V

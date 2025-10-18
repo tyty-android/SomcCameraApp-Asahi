@@ -1,6 +1,6 @@
 .class public final Landroidx/lifecycle/SingleGeneratedAdapterObserver;
 .super Ljava/lang/Object;
-.source "SingleGeneratedAdapterObserver.kt"
+.source "SingleGeneratedAdapterObserver.jvm.kt"
 
 # interfaces
 .implements Landroidx/lifecycle/LifecycleEventObserver;

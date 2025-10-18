@@ -179,51 +179,39 @@
         }
     .end annotation
 
-    const-string v0, "name"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string v0, "clipPathData"
-
-    invoke-static {p9, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string v0, "children"
-
-    invoke-static {p10, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
     const/4 v0, 0x0
 
-    .line 500
+    .line 511
     invoke-direct {p0, v0}, Landroidx/compose/ui/graphics/vector/VectorNode;-><init>(Lkotlin/jvm/internal/DefaultConstructorMarker;)V
 
-    .line 453
+    .line 464
     iput-object p1, p0, Landroidx/compose/ui/graphics/vector/VectorGroup;->name:Ljava/lang/String;
 
-    .line 458
+    .line 469
     iput p2, p0, Landroidx/compose/ui/graphics/vector/VectorGroup;->rotation:F
 
-    .line 463
+    .line 474
     iput p3, p0, Landroidx/compose/ui/graphics/vector/VectorGroup;->pivotX:F
 
-    .line 468
+    .line 479
     iput p4, p0, Landroidx/compose/ui/graphics/vector/VectorGroup;->pivotY:F
 
-    .line 473
+    .line 484
     iput p5, p0, Landroidx/compose/ui/graphics/vector/VectorGroup;->scaleX:F
 
-    .line 478
+    .line 489
     iput p6, p0, Landroidx/compose/ui/graphics/vector/VectorGroup;->scaleY:F
 
-    .line 483
+    .line 494
     iput p7, p0, Landroidx/compose/ui/graphics/vector/VectorGroup;->translationX:F
 
-    .line 488
+    .line 499
     iput p8, p0, Landroidx/compose/ui/graphics/vector/VectorGroup;->translationY:F
 
-    .line 493
+    .line 504
     iput-object p9, p0, Landroidx/compose/ui/graphics/vector/VectorGroup;->clipPathData:Ljava/util/List;
 
-    .line 499
+    .line 510
     iput-object p10, p0, Landroidx/compose/ui/graphics/vector/VectorGroup;->children:Ljava/util/List;
 
     return-void
@@ -238,7 +226,7 @@
 
     if-eqz v1, :cond_0
 
-    .line 453
+    .line 464
     const-string v1, ""
 
     goto :goto_0
@@ -335,7 +323,7 @@
 
     if-eqz v9, :cond_8
 
-    .line 493
+    .line 504
     invoke-static {}, Landroidx/compose/ui/graphics/vector/VectorKt;->getEmptyPath()Ljava/util/List;
 
     move-result-object v9
@@ -350,7 +338,7 @@
 
     if-eqz v0, :cond_9
 
-    .line 499
+    .line 510
     invoke-static {}, Lkotlin/collections/CollectionsKt;->emptyList()Ljava/util/List;
 
     move-result-object v0
@@ -381,7 +369,7 @@
 
     move-object/from16 p10, v0
 
-    .line 449
+    .line 460
     invoke-direct/range {p0 .. p10}, Landroidx/compose/ui/graphics/vector/VectorGroup;-><init>(Ljava/lang/String;FFFFFFFLjava/util/List;Ljava/util/List;)V
 
     return-void
@@ -390,7 +378,7 @@
 .method public static final synthetic access$getChildren$p(Landroidx/compose/ui/graphics/vector/VectorGroup;)Ljava/util/List;
     .locals 0
 
-    .line 448
+    .line 459
     iget-object p0, p0, Landroidx/compose/ui/graphics/vector/VectorGroup;->children:Ljava/util/List;
 
     return-object p0
@@ -412,14 +400,14 @@
 
     if-eqz p1, :cond_5
 
-    .line 522
+    .line 533
     instance-of v2, p1, Landroidx/compose/ui/graphics/vector/VectorGroup;
 
     if-nez v2, :cond_1
 
     goto :goto_0
 
-    .line 524
+    .line 535
     :cond_1
     iget-object v2, p0, Landroidx/compose/ui/graphics/vector/VectorGroup;->name:Ljava/lang/String;
 
@@ -435,7 +423,7 @@
 
     return v1
 
-    .line 525
+    .line 536
     :cond_2
     iget v2, p0, Landroidx/compose/ui/graphics/vector/VectorGroup;->rotation:F
 
@@ -445,7 +433,7 @@
 
     if-nez v2, :cond_5
 
-    .line 526
+    .line 537
     iget v2, p0, Landroidx/compose/ui/graphics/vector/VectorGroup;->pivotX:F
 
     iget v3, p1, Landroidx/compose/ui/graphics/vector/VectorGroup;->pivotX:F
@@ -454,7 +442,7 @@
 
     if-nez v2, :cond_5
 
-    .line 527
+    .line 538
     iget v2, p0, Landroidx/compose/ui/graphics/vector/VectorGroup;->pivotY:F
 
     iget v3, p1, Landroidx/compose/ui/graphics/vector/VectorGroup;->pivotY:F
@@ -463,7 +451,7 @@
 
     if-nez v2, :cond_5
 
-    .line 528
+    .line 539
     iget v2, p0, Landroidx/compose/ui/graphics/vector/VectorGroup;->scaleX:F
 
     iget v3, p1, Landroidx/compose/ui/graphics/vector/VectorGroup;->scaleX:F
@@ -472,7 +460,7 @@
 
     if-nez v2, :cond_5
 
-    .line 529
+    .line 540
     iget v2, p0, Landroidx/compose/ui/graphics/vector/VectorGroup;->scaleY:F
 
     iget v3, p1, Landroidx/compose/ui/graphics/vector/VectorGroup;->scaleY:F
@@ -481,7 +469,7 @@
 
     if-nez v2, :cond_5
 
-    .line 530
+    .line 541
     iget v2, p0, Landroidx/compose/ui/graphics/vector/VectorGroup;->translationX:F
 
     iget v3, p1, Landroidx/compose/ui/graphics/vector/VectorGroup;->translationX:F
@@ -490,7 +478,7 @@
 
     if-nez v2, :cond_5
 
-    .line 531
+    .line 542
     iget v2, p0, Landroidx/compose/ui/graphics/vector/VectorGroup;->translationY:F
 
     iget v3, p1, Landroidx/compose/ui/graphics/vector/VectorGroup;->translationY:F
@@ -499,7 +487,7 @@
 
     if-nez v2, :cond_5
 
-    .line 532
+    .line 543
     iget-object v2, p0, Landroidx/compose/ui/graphics/vector/VectorGroup;->clipPathData:Ljava/util/List;
 
     iget-object v3, p1, Landroidx/compose/ui/graphics/vector/VectorGroup;->clipPathData:Ljava/util/List;
@@ -512,7 +500,7 @@
 
     return v1
 
-    .line 533
+    .line 544
     :cond_3
     iget-object p0, p0, Landroidx/compose/ui/graphics/vector/VectorGroup;->children:Ljava/util/List;
 
@@ -537,7 +525,7 @@
 .method public final get(I)Landroidx/compose/ui/graphics/vector/VectorNode;
     .locals 0
 
-    .line 506
+    .line 517
     iget-object p0, p0, Landroidx/compose/ui/graphics/vector/VectorGroup;->children:Ljava/util/List;
 
     invoke-interface {p0, p1}, Ljava/util/List;->get(I)Ljava/lang/Object;
@@ -560,7 +548,7 @@
         }
     .end annotation
 
-    .line 493
+    .line 504
     iget-object p0, p0, Landroidx/compose/ui/graphics/vector/VectorGroup;->clipPathData:Ljava/util/List;
 
     return-object p0
@@ -569,7 +557,7 @@
 .method public final getName()Ljava/lang/String;
     .locals 0
 
-    .line 453
+    .line 464
     iget-object p0, p0, Landroidx/compose/ui/graphics/vector/VectorGroup;->name:Ljava/lang/String;
 
     return-object p0
@@ -578,7 +566,7 @@
 .method public final getPivotX()F
     .locals 0
 
-    .line 463
+    .line 474
     iget p0, p0, Landroidx/compose/ui/graphics/vector/VectorGroup;->pivotX:F
 
     return p0
@@ -587,7 +575,7 @@
 .method public final getPivotY()F
     .locals 0
 
-    .line 468
+    .line 479
     iget p0, p0, Landroidx/compose/ui/graphics/vector/VectorGroup;->pivotY:F
 
     return p0
@@ -596,7 +584,7 @@
 .method public final getRotation()F
     .locals 0
 
-    .line 458
+    .line 469
     iget p0, p0, Landroidx/compose/ui/graphics/vector/VectorGroup;->rotation:F
 
     return p0
@@ -605,7 +593,7 @@
 .method public final getScaleX()F
     .locals 0
 
-    .line 473
+    .line 484
     iget p0, p0, Landroidx/compose/ui/graphics/vector/VectorGroup;->scaleX:F
 
     return p0
@@ -614,7 +602,7 @@
 .method public final getScaleY()F
     .locals 0
 
-    .line 478
+    .line 489
     iget p0, p0, Landroidx/compose/ui/graphics/vector/VectorGroup;->scaleY:F
 
     return p0
@@ -623,7 +611,7 @@
 .method public final getSize()I
     .locals 0
 
-    .line 503
+    .line 514
     iget-object p0, p0, Landroidx/compose/ui/graphics/vector/VectorGroup;->children:Ljava/util/List;
 
     invoke-interface {p0}, Ljava/util/List;->size()I
@@ -636,7 +624,7 @@
 .method public final getTranslationX()F
     .locals 0
 
-    .line 483
+    .line 494
     iget p0, p0, Landroidx/compose/ui/graphics/vector/VectorGroup;->translationX:F
 
     return p0
@@ -645,7 +633,7 @@
 .method public final getTranslationY()F
     .locals 0
 
-    .line 488
+    .line 499
     iget p0, p0, Landroidx/compose/ui/graphics/vector/VectorGroup;->translationY:F
 
     return p0
@@ -654,7 +642,7 @@
 .method public hashCode()I
     .locals 2
 
-    .line 539
+    .line 550
     iget-object v0, p0, Landroidx/compose/ui/graphics/vector/VectorGroup;->name:Ljava/lang/String;
 
     invoke-virtual {v0}, Ljava/lang/String;->hashCode()I
@@ -663,7 +651,7 @@
 
     mul-int/lit8 v0, v0, 0x1f
 
-    .line 540
+    .line 551
     iget v1, p0, Landroidx/compose/ui/graphics/vector/VectorGroup;->rotation:F
 
     invoke-static {v1}, Ljava/lang/Float;->hashCode(F)I
@@ -674,7 +662,7 @@
 
     mul-int/lit8 v0, v0, 0x1f
 
-    .line 541
+    .line 552
     iget v1, p0, Landroidx/compose/ui/graphics/vector/VectorGroup;->pivotX:F
 
     invoke-static {v1}, Ljava/lang/Float;->hashCode(F)I
@@ -685,7 +673,7 @@
 
     mul-int/lit8 v0, v0, 0x1f
 
-    .line 542
+    .line 553
     iget v1, p0, Landroidx/compose/ui/graphics/vector/VectorGroup;->pivotY:F
 
     invoke-static {v1}, Ljava/lang/Float;->hashCode(F)I
@@ -696,7 +684,7 @@
 
     mul-int/lit8 v0, v0, 0x1f
 
-    .line 543
+    .line 554
     iget v1, p0, Landroidx/compose/ui/graphics/vector/VectorGroup;->scaleX:F
 
     invoke-static {v1}, Ljava/lang/Float;->hashCode(F)I
@@ -707,7 +695,7 @@
 
     mul-int/lit8 v0, v0, 0x1f
 
-    .line 544
+    .line 555
     iget v1, p0, Landroidx/compose/ui/graphics/vector/VectorGroup;->scaleY:F
 
     invoke-static {v1}, Ljava/lang/Float;->hashCode(F)I
@@ -718,7 +706,7 @@
 
     mul-int/lit8 v0, v0, 0x1f
 
-    .line 545
+    .line 556
     iget v1, p0, Landroidx/compose/ui/graphics/vector/VectorGroup;->translationX:F
 
     invoke-static {v1}, Ljava/lang/Float;->hashCode(F)I
@@ -729,7 +717,7 @@
 
     mul-int/lit8 v0, v0, 0x1f
 
-    .line 546
+    .line 557
     iget v1, p0, Landroidx/compose/ui/graphics/vector/VectorGroup;->translationY:F
 
     invoke-static {v1}, Ljava/lang/Float;->hashCode(F)I
@@ -740,7 +728,7 @@
 
     mul-int/lit8 v0, v0, 0x1f
 
-    .line 547
+    .line 558
     iget-object v1, p0, Landroidx/compose/ui/graphics/vector/VectorGroup;->clipPathData:Ljava/util/List;
 
     invoke-virtual {v1}, Ljava/lang/Object;->hashCode()I
@@ -751,7 +739,7 @@
 
     mul-int/lit8 v0, v0, 0x1f
 
-    .line 548
+    .line 559
     iget-object p0, p0, Landroidx/compose/ui/graphics/vector/VectorGroup;->children:Ljava/util/List;
 
     invoke-virtual {p0}, Ljava/lang/Object;->hashCode()I
@@ -774,7 +762,7 @@
         }
     .end annotation
 
-    .line 510
+    .line 521
     new-instance v0, Landroidx/compose/ui/graphics/vector/VectorGroup$iterator$1;
 
     invoke-direct {v0, p0}, Landroidx/compose/ui/graphics/vector/VectorGroup$iterator$1;-><init>(Landroidx/compose/ui/graphics/vector/VectorGroup;)V

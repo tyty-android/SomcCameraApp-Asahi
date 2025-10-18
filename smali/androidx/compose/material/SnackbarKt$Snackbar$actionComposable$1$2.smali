@@ -71,7 +71,7 @@
 .method public bridge synthetic invoke(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
 
-    .line 168
+    .line 169
     check-cast p1, Landroidx/compose/foundation/layout/RowScope;
 
     check-cast p2, Landroidx/compose/runtime/Composer;
@@ -94,13 +94,7 @@
 
     move/from16 v0, p3
 
-    const-string v1, "$this$TextButton"
-
-    move-object/from16 v2, p1
-
-    invoke-static {v2, v1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string v1, "C167@7704L17:Snackbar.kt#jmzs0o"
+    const-string v1, "C168@7746L17:Snackbar.kt#jmzs0o"
 
     move-object/from16 v15, p2
 
@@ -112,7 +106,7 @@
 
     if-ne v1, v2, :cond_1
 
-    .line 168
+    .line 169
     invoke-interface/range {p2 .. p2}, Landroidx/compose/runtime/Composer;->getSkipping()Z
 
     move-result v1
@@ -136,7 +130,7 @@
 
     const/4 v1, -0x1
 
-    const-string v2, "androidx.compose.material.Snackbar.<anonymous>.<anonymous> (Snackbar.kt:167)"
+    const-string v2, "androidx.compose.material.Snackbar.<anonymous>.<anonymous> (Snackbar.kt:168)"
 
     const v3, -0x3761b3ed
 

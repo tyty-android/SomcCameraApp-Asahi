@@ -340,7 +340,7 @@
 
     check-cast v1, Landroid/view/ViewGroup;
 
-    const v2, 0x7f090056
+    const v2, 0x7f090052
 
     .line 150
     invoke-virtual {v1, v2}, Landroid/view/ViewGroup;->findViewById(I)Landroid/view/View;
@@ -349,7 +349,7 @@
 
     check-cast v2, Landroid/widget/TextView;
 
-    const v4, 0x7f090367
+    const v4, 0x7f090374
 
     .line 151
     invoke-virtual {v1, v4}, Landroid/view/ViewGroup;->findViewById(I)Landroid/view/View;
@@ -363,7 +363,7 @@
 
     if-ne p1, v5, :cond_0
 
-    const v5, 0x7f11039d
+    const v5, 0x7f1103d1
 
     .line 154
     invoke-virtual {v2, v5}, Landroid/widget/TextView;->setText(I)V
@@ -383,7 +383,7 @@
 
     if-ne p1, v3, :cond_1
 
-    const v3, 0x7f1101c3
+    const v3, 0x7f1101c6
 
     .line 157
     invoke-virtual {p0, v3}, Ljp/co/sony/mc/camera/DataConsentActivity;->getString(I)Ljava/lang/String;
@@ -417,7 +417,7 @@
 
     invoke-direct {v3}, Ljava/lang/StringBuilder;-><init>()V
 
-    const v4, 0x7f110183
+    const v4, 0x7f110186
 
     invoke-virtual {p0, v4}, Ljp/co/sony/mc/camera/DataConsentActivity;->getString(I)Ljava/lang/String;
 
@@ -433,7 +433,7 @@
 
     move-result-object v3
 
-    const v4, 0x7f11010b
+    const v4, 0x7f11010c
 
     .line 163
     invoke-virtual {p0, v4}, Ljp/co/sony/mc/camera/DataConsentActivity;->getString(I)Ljava/lang/String;

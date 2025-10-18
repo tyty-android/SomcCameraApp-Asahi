@@ -44,20 +44,20 @@
 .method public constructor <init>()V
     .locals 2
 
-    .line 2172
+    .line 2177
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     const/4 v0, -0x1
 
-    .line 2161
+    .line 2166
     iput v0, p0, Lcom/google/android/material/tabs/TabLayout$Tab;->position:I
 
     const/4 v1, 0x1
 
-    .line 2163
+    .line 2168
     iput v1, p0, Lcom/google/android/material/tabs/TabLayout$Tab;->labelVisibilityMode:I
 
-    .line 2169
+    .line 2174
     iput v0, p0, Lcom/google/android/material/tabs/TabLayout$Tab;->id:I
 
     return-void
@@ -66,7 +66,7 @@
 .method static synthetic access$000(Lcom/google/android/material/tabs/TabLayout$Tab;)I
     .locals 0
 
-    .line 2145
+    .line 2150
     iget p0, p0, Lcom/google/android/material/tabs/TabLayout$Tab;->id:I
 
     return p0
@@ -75,7 +75,7 @@
 .method static synthetic access$1500(Lcom/google/android/material/tabs/TabLayout$Tab;)I
     .locals 0
 
-    .line 2145
+    .line 2150
     iget p0, p0, Lcom/google/android/material/tabs/TabLayout$Tab;->labelVisibilityMode:I
 
     return p0
@@ -84,7 +84,7 @@
 .method static synthetic access$300(Lcom/google/android/material/tabs/TabLayout$Tab;)Ljava/lang/CharSequence;
     .locals 0
 
-    .line 2145
+    .line 2150
     iget-object p0, p0, Lcom/google/android/material/tabs/TabLayout$Tab;->contentDesc:Ljava/lang/CharSequence;
 
     return-object p0
@@ -93,7 +93,7 @@
 .method static synthetic access$400(Lcom/google/android/material/tabs/TabLayout$Tab;)Ljava/lang/CharSequence;
     .locals 0
 
-    .line 2145
+    .line 2150
     iget-object p0, p0, Lcom/google/android/material/tabs/TabLayout$Tab;->text:Ljava/lang/CharSequence;
 
     return-object p0
@@ -104,7 +104,7 @@
 .method public getBadge()Lcom/google/android/material/badge/BadgeDrawable;
     .locals 0
 
-    .line 2400
+    .line 2405
     iget-object p0, p0, Lcom/google/android/material/tabs/TabLayout$Tab;->view:Lcom/google/android/material/tabs/TabLayout$TabView;
 
     invoke-static {p0}, Lcom/google/android/material/tabs/TabLayout$TabView;->access$1000(Lcom/google/android/material/tabs/TabLayout$TabView;)Lcom/google/android/material/badge/BadgeDrawable;
@@ -117,7 +117,7 @@
 .method public getContentDescription()Ljava/lang/CharSequence;
     .locals 0
 
-    .line 2508
+    .line 2513
     iget-object p0, p0, Lcom/google/android/material/tabs/TabLayout$Tab;->view:Lcom/google/android/material/tabs/TabLayout$TabView;
 
     if-nez p0, :cond_0
@@ -138,7 +138,7 @@
 .method public getCustomView()Landroid/view/View;
     .locals 0
 
-    .line 2225
+    .line 2230
     iget-object p0, p0, Lcom/google/android/material/tabs/TabLayout$Tab;->customView:Landroid/view/View;
 
     return-object p0
@@ -147,7 +147,7 @@
 .method public getIcon()Landroid/graphics/drawable/Drawable;
     .locals 0
 
-    .line 2273
+    .line 2278
     iget-object p0, p0, Lcom/google/android/material/tabs/TabLayout$Tab;->icon:Landroid/graphics/drawable/Drawable;
 
     return-object p0
@@ -156,7 +156,7 @@
 .method public getId()I
     .locals 0
 
-    .line 2214
+    .line 2219
     iget p0, p0, Lcom/google/android/material/tabs/TabLayout$Tab;->id:I
 
     return p0
@@ -165,7 +165,7 @@
 .method public getOrCreateBadge()Lcom/google/android/material/badge/BadgeDrawable;
     .locals 0
 
-    .line 2383
+    .line 2388
     iget-object p0, p0, Lcom/google/android/material/tabs/TabLayout$Tab;->view:Lcom/google/android/material/tabs/TabLayout$TabView;
 
     invoke-static {p0}, Lcom/google/android/material/tabs/TabLayout$TabView;->access$800(Lcom/google/android/material/tabs/TabLayout$TabView;)Lcom/google/android/material/badge/BadgeDrawable;
@@ -178,7 +178,7 @@
 .method public getPosition()I
     .locals 0
 
-    .line 2283
+    .line 2288
     iget p0, p0, Lcom/google/android/material/tabs/TabLayout$Tab;->position:I
 
     return p0
@@ -187,7 +187,7 @@
 .method public getTabLabelVisibility()I
     .locals 0
 
-    .line 2442
+    .line 2447
     iget p0, p0, Lcom/google/android/material/tabs/TabLayout$Tab;->labelVisibilityMode:I
 
     return p0
@@ -196,7 +196,7 @@
 .method public getTag()Ljava/lang/Object;
     .locals 0
 
-    .line 2179
+    .line 2184
     iget-object p0, p0, Lcom/google/android/material/tabs/TabLayout$Tab;->tag:Ljava/lang/Object;
 
     return-object p0
@@ -205,7 +205,7 @@
 .method public getText()Ljava/lang/CharSequence;
     .locals 0
 
-    .line 2297
+    .line 2302
     iget-object p0, p0, Lcom/google/android/material/tabs/TabLayout$Tab;->text:Ljava/lang/CharSequence;
 
     return-object p0
@@ -214,12 +214,12 @@
 .method public isSelected()Z
     .locals 2
 
-    .line 2455
+    .line 2460
     iget-object v0, p0, Lcom/google/android/material/tabs/TabLayout$Tab;->parent:Lcom/google/android/material/tabs/TabLayout;
 
     if-eqz v0, :cond_1
 
-    .line 2458
+    .line 2463
     invoke-virtual {v0}, Lcom/google/android/material/tabs/TabLayout;->getSelectedTabPosition()I
 
     move-result v0
@@ -228,7 +228,7 @@
 
     if-eq v0, v1, :cond_0
 
-    .line 2459
+    .line 2464
     iget p0, p0, Lcom/google/android/material/tabs/TabLayout$Tab;->position:I
 
     if-ne v0, p0, :cond_0
@@ -243,7 +243,7 @@
     :goto_0
     return p0
 
-    .line 2456
+    .line 2461
     :cond_1
     new-instance p0, Ljava/lang/IllegalArgumentException;
 
@@ -257,7 +257,7 @@
 .method public removeBadge()V
     .locals 0
 
-    .line 2391
+    .line 2396
     iget-object p0, p0, Lcom/google/android/material/tabs/TabLayout$Tab;->view:Lcom/google/android/material/tabs/TabLayout$TabView;
 
     invoke-static {p0}, Lcom/google/android/material/tabs/TabLayout$TabView;->access$900(Lcom/google/android/material/tabs/TabLayout$TabView;)V
@@ -270,33 +270,33 @@
 
     const/4 v0, 0x0
 
-    .line 2518
+    .line 2523
     iput-object v0, p0, Lcom/google/android/material/tabs/TabLayout$Tab;->parent:Lcom/google/android/material/tabs/TabLayout;
 
-    .line 2519
+    .line 2524
     iput-object v0, p0, Lcom/google/android/material/tabs/TabLayout$Tab;->view:Lcom/google/android/material/tabs/TabLayout$TabView;
 
-    .line 2520
+    .line 2525
     iput-object v0, p0, Lcom/google/android/material/tabs/TabLayout$Tab;->tag:Ljava/lang/Object;
 
-    .line 2521
+    .line 2526
     iput-object v0, p0, Lcom/google/android/material/tabs/TabLayout$Tab;->icon:Landroid/graphics/drawable/Drawable;
 
     const/4 v1, -0x1
 
-    .line 2522
+    .line 2527
     iput v1, p0, Lcom/google/android/material/tabs/TabLayout$Tab;->id:I
 
-    .line 2523
+    .line 2528
     iput-object v0, p0, Lcom/google/android/material/tabs/TabLayout$Tab;->text:Ljava/lang/CharSequence;
 
-    .line 2524
+    .line 2529
     iput-object v0, p0, Lcom/google/android/material/tabs/TabLayout$Tab;->contentDesc:Ljava/lang/CharSequence;
 
-    .line 2525
+    .line 2530
     iput v1, p0, Lcom/google/android/material/tabs/TabLayout$Tab;->position:I
 
-    .line 2526
+    .line 2531
     iput-object v0, p0, Lcom/google/android/material/tabs/TabLayout$Tab;->customView:Landroid/view/View;
 
     return-void
@@ -305,17 +305,17 @@
 .method public select()V
     .locals 1
 
-    .line 2447
+    .line 2452
     iget-object v0, p0, Lcom/google/android/material/tabs/TabLayout$Tab;->parent:Lcom/google/android/material/tabs/TabLayout;
 
     if-eqz v0, :cond_0
 
-    .line 2450
+    .line 2455
     invoke-virtual {v0, p0}, Lcom/google/android/material/tabs/TabLayout;->selectTab(Lcom/google/android/material/tabs/TabLayout$Tab;)V
 
     return-void
 
-    .line 2448
+    .line 2453
     :cond_0
     new-instance p0, Ljava/lang/IllegalArgumentException;
 
@@ -329,12 +329,12 @@
 .method public setContentDescription(I)Lcom/google/android/material/tabs/TabLayout$Tab;
     .locals 1
 
-    .line 2474
+    .line 2479
     iget-object v0, p0, Lcom/google/android/material/tabs/TabLayout$Tab;->parent:Lcom/google/android/material/tabs/TabLayout;
 
     if-eqz v0, :cond_0
 
-    .line 2477
+    .line 2482
     invoke-virtual {v0}, Lcom/google/android/material/tabs/TabLayout;->getResources()Landroid/content/res/Resources;
 
     move-result-object v0
@@ -349,7 +349,7 @@
 
     return-object p0
 
-    .line 2475
+    .line 2480
     :cond_0
     new-instance p0, Ljava/lang/IllegalArgumentException;
 
@@ -363,10 +363,10 @@
 .method public setContentDescription(Ljava/lang/CharSequence;)Lcom/google/android/material/tabs/TabLayout$Tab;
     .locals 0
 
-    .line 2492
+    .line 2497
     iput-object p1, p0, Lcom/google/android/material/tabs/TabLayout$Tab;->contentDesc:Ljava/lang/CharSequence;
 
-    .line 2493
+    .line 2498
     invoke-virtual {p0}, Lcom/google/android/material/tabs/TabLayout$Tab;->updateView()V
 
     return-object p0
@@ -375,7 +375,7 @@
 .method public setCustomView(I)Lcom/google/android/material/tabs/TabLayout$Tab;
     .locals 3
 
-    .line 2262
+    .line 2267
     iget-object v0, p0, Lcom/google/android/material/tabs/TabLayout$Tab;->view:Lcom/google/android/material/tabs/TabLayout$TabView;
 
     invoke-virtual {v0}, Lcom/google/android/material/tabs/TabLayout$TabView;->getContext()Landroid/content/Context;
@@ -386,7 +386,7 @@
 
     move-result-object v0
 
-    .line 2263
+    .line 2268
     iget-object v1, p0, Lcom/google/android/material/tabs/TabLayout$Tab;->view:Lcom/google/android/material/tabs/TabLayout$TabView;
 
     const/4 v2, 0x0
@@ -405,10 +405,10 @@
 .method public setCustomView(Landroid/view/View;)Lcom/google/android/material/tabs/TabLayout$Tab;
     .locals 0
 
-    .line 2242
+    .line 2247
     iput-object p1, p0, Lcom/google/android/material/tabs/TabLayout$Tab;->customView:Landroid/view/View;
 
-    .line 2243
+    .line 2248
     invoke-virtual {p0}, Lcom/google/android/material/tabs/TabLayout$Tab;->updateView()V
 
     return-object p0
@@ -417,12 +417,12 @@
 .method public setIcon(I)Lcom/google/android/material/tabs/TabLayout$Tab;
     .locals 1
 
-    .line 2332
+    .line 2337
     iget-object v0, p0, Lcom/google/android/material/tabs/TabLayout$Tab;->parent:Lcom/google/android/material/tabs/TabLayout;
 
     if-eqz v0, :cond_0
 
-    .line 2335
+    .line 2340
     invoke-virtual {v0}, Lcom/google/android/material/tabs/TabLayout;->getContext()Landroid/content/Context;
 
     move-result-object v0
@@ -437,7 +437,7 @@
 
     return-object p0
 
-    .line 2333
+    .line 2338
     :cond_0
     new-instance p0, Ljava/lang/IllegalArgumentException;
 
@@ -451,10 +451,10 @@
 .method public setIcon(Landroid/graphics/drawable/Drawable;)Lcom/google/android/material/tabs/TabLayout$Tab;
     .locals 2
 
-    .line 2309
+    .line 2314
     iput-object p1, p0, Lcom/google/android/material/tabs/TabLayout$Tab;->icon:Landroid/graphics/drawable/Drawable;
 
-    .line 2310
+    .line 2315
     iget-object p1, p0, Lcom/google/android/material/tabs/TabLayout$Tab;->parent:Lcom/google/android/material/tabs/TabLayout;
 
     iget p1, p1, Lcom/google/android/material/tabs/TabLayout;->tabGravity:I
@@ -471,24 +471,24 @@
 
     if-ne p1, v1, :cond_1
 
-    .line 2311
+    .line 2316
     :cond_0
     iget-object p1, p0, Lcom/google/android/material/tabs/TabLayout$Tab;->parent:Lcom/google/android/material/tabs/TabLayout;
 
     invoke-virtual {p1, v0}, Lcom/google/android/material/tabs/TabLayout;->updateTabViews(Z)V
 
-    .line 2313
+    .line 2318
     :cond_1
     invoke-virtual {p0}, Lcom/google/android/material/tabs/TabLayout$Tab;->updateView()V
 
-    .line 2314
+    .line 2319
     sget-boolean p1, Lcom/google/android/material/badge/BadgeUtils;->USE_COMPAT_PARENT:Z
 
     if-eqz p1, :cond_2
 
     iget-object p1, p0, Lcom/google/android/material/tabs/TabLayout$Tab;->view:Lcom/google/android/material/tabs/TabLayout$TabView;
 
-    .line 2315
+    .line 2320
     invoke-static {p1}, Lcom/google/android/material/tabs/TabLayout$TabView;->access$600(Lcom/google/android/material/tabs/TabLayout$TabView;)Z
 
     move-result p1
@@ -497,7 +497,7 @@
 
     iget-object p1, p0, Lcom/google/android/material/tabs/TabLayout$Tab;->view:Lcom/google/android/material/tabs/TabLayout$TabView;
 
-    .line 2316
+    .line 2321
     invoke-static {p1}, Lcom/google/android/material/tabs/TabLayout$TabView;->access$700(Lcom/google/android/material/tabs/TabLayout$TabView;)Lcom/google/android/material/badge/BadgeDrawable;
 
     move-result-object p1
@@ -508,7 +508,7 @@
 
     if-eqz p1, :cond_2
 
-    .line 2318
+    .line 2323
     iget-object p1, p0, Lcom/google/android/material/tabs/TabLayout$Tab;->view:Lcom/google/android/material/tabs/TabLayout$TabView;
 
     invoke-virtual {p1}, Lcom/google/android/material/tabs/TabLayout$TabView;->invalidate()V
@@ -520,15 +520,15 @@
 .method public setId(I)Lcom/google/android/material/tabs/TabLayout$Tab;
     .locals 1
 
-    .line 2205
+    .line 2210
     iput p1, p0, Lcom/google/android/material/tabs/TabLayout$Tab;->id:I
 
-    .line 2206
+    .line 2211
     iget-object v0, p0, Lcom/google/android/material/tabs/TabLayout$Tab;->view:Lcom/google/android/material/tabs/TabLayout$TabView;
 
     if-eqz v0, :cond_0
 
-    .line 2207
+    .line 2212
     invoke-virtual {v0, p1}, Lcom/google/android/material/tabs/TabLayout$TabView;->setId(I)V
 
     :cond_0
@@ -538,7 +538,7 @@
 .method setPosition(I)V
     .locals 0
 
-    .line 2287
+    .line 2292
     iput p1, p0, Lcom/google/android/material/tabs/TabLayout$Tab;->position:I
 
     return-void
@@ -547,10 +547,10 @@
 .method public setTabLabelVisibility(I)Lcom/google/android/material/tabs/TabLayout$Tab;
     .locals 2
 
-    .line 2419
+    .line 2424
     iput p1, p0, Lcom/google/android/material/tabs/TabLayout$Tab;->labelVisibilityMode:I
 
-    .line 2420
+    .line 2425
     iget-object p1, p0, Lcom/google/android/material/tabs/TabLayout$Tab;->parent:Lcom/google/android/material/tabs/TabLayout;
 
     iget p1, p1, Lcom/google/android/material/tabs/TabLayout;->tabGravity:I
@@ -567,24 +567,24 @@
 
     if-ne p1, v1, :cond_1
 
-    .line 2421
+    .line 2426
     :cond_0
     iget-object p1, p0, Lcom/google/android/material/tabs/TabLayout$Tab;->parent:Lcom/google/android/material/tabs/TabLayout;
 
     invoke-virtual {p1, v0}, Lcom/google/android/material/tabs/TabLayout;->updateTabViews(Z)V
 
-    .line 2423
+    .line 2428
     :cond_1
     invoke-virtual {p0}, Lcom/google/android/material/tabs/TabLayout$Tab;->updateView()V
 
-    .line 2424
+    .line 2429
     sget-boolean p1, Lcom/google/android/material/badge/BadgeUtils;->USE_COMPAT_PARENT:Z
 
     if-eqz p1, :cond_2
 
     iget-object p1, p0, Lcom/google/android/material/tabs/TabLayout$Tab;->view:Lcom/google/android/material/tabs/TabLayout$TabView;
 
-    .line 2425
+    .line 2430
     invoke-static {p1}, Lcom/google/android/material/tabs/TabLayout$TabView;->access$600(Lcom/google/android/material/tabs/TabLayout$TabView;)Z
 
     move-result p1
@@ -593,7 +593,7 @@
 
     iget-object p1, p0, Lcom/google/android/material/tabs/TabLayout$Tab;->view:Lcom/google/android/material/tabs/TabLayout$TabView;
 
-    .line 2426
+    .line 2431
     invoke-static {p1}, Lcom/google/android/material/tabs/TabLayout$TabView;->access$700(Lcom/google/android/material/tabs/TabLayout$TabView;)Lcom/google/android/material/badge/BadgeDrawable;
 
     move-result-object p1
@@ -604,7 +604,7 @@
 
     if-eqz p1, :cond_2
 
-    .line 2428
+    .line 2433
     iget-object p1, p0, Lcom/google/android/material/tabs/TabLayout$Tab;->view:Lcom/google/android/material/tabs/TabLayout$TabView;
 
     invoke-virtual {p1}, Lcom/google/android/material/tabs/TabLayout$TabView;->invalidate()V
@@ -616,7 +616,7 @@
 .method public setTag(Ljava/lang/Object;)Lcom/google/android/material/tabs/TabLayout$Tab;
     .locals 0
 
-    .line 2191
+    .line 2196
     iput-object p1, p0, Lcom/google/android/material/tabs/TabLayout$Tab;->tag:Ljava/lang/Object;
 
     return-object p0
@@ -625,12 +625,12 @@
 .method public setText(I)Lcom/google/android/material/tabs/TabLayout$Tab;
     .locals 1
 
-    .line 2369
+    .line 2374
     iget-object v0, p0, Lcom/google/android/material/tabs/TabLayout$Tab;->parent:Lcom/google/android/material/tabs/TabLayout;
 
     if-eqz v0, :cond_0
 
-    .line 2372
+    .line 2377
     invoke-virtual {v0}, Lcom/google/android/material/tabs/TabLayout;->getResources()Landroid/content/res/Resources;
 
     move-result-object v0
@@ -645,7 +645,7 @@
 
     return-object p0
 
-    .line 2370
+    .line 2375
     :cond_0
     new-instance p0, Ljava/lang/IllegalArgumentException;
 
@@ -659,7 +659,7 @@
 .method public setText(Ljava/lang/CharSequence;)Lcom/google/android/material/tabs/TabLayout$Tab;
     .locals 1
 
-    .line 2348
+    .line 2353
     iget-object v0, p0, Lcom/google/android/material/tabs/TabLayout$Tab;->contentDesc:Ljava/lang/CharSequence;
 
     invoke-static {v0}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
@@ -674,16 +674,16 @@
 
     if-nez v0, :cond_0
 
-    .line 2351
+    .line 2356
     iget-object v0, p0, Lcom/google/android/material/tabs/TabLayout$Tab;->view:Lcom/google/android/material/tabs/TabLayout$TabView;
 
     invoke-virtual {v0, p1}, Lcom/google/android/material/tabs/TabLayout$TabView;->setContentDescription(Ljava/lang/CharSequence;)V
 
-    .line 2354
+    .line 2359
     :cond_0
     iput-object p1, p0, Lcom/google/android/material/tabs/TabLayout$Tab;->text:Ljava/lang/CharSequence;
 
-    .line 2355
+    .line 2360
     invoke-virtual {p0}, Lcom/google/android/material/tabs/TabLayout$Tab;->updateView()V
 
     return-object p0
@@ -692,12 +692,12 @@
 .method updateView()V
     .locals 0
 
-    .line 2512
+    .line 2517
     iget-object p0, p0, Lcom/google/android/material/tabs/TabLayout$Tab;->view:Lcom/google/android/material/tabs/TabLayout$TabView;
 
     if-eqz p0, :cond_0
 
-    .line 2513
+    .line 2518
     invoke-virtual {p0}, Lcom/google/android/material/tabs/TabLayout$TabView;->update()V
 
     :cond_0

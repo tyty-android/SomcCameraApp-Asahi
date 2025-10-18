@@ -55,15 +55,15 @@
     .line 19
     new-instance v6, Ljp/co/sony/mc/camera/configuration/parameters/Peaking;
 
-    const v4, 0x7f1103bf
+    const v4, 0x7f1103f4
 
-    const v5, 0x7f11043a
+    const v5, 0x7f11046f
 
     const-string v1, "ON"
 
     const/4 v2, 0x0
 
-    const v3, 0x7f080266
+    const v3, 0x7f08027d
 
     move-object v0, v6
 
@@ -74,15 +74,15 @@
     .line 23
     new-instance v0, Ljp/co/sony/mc/camera/configuration/parameters/Peaking;
 
-    const v11, 0x7f1103be
+    const v11, 0x7f1103f3
 
-    const v12, 0x7f110439
+    const v12, 0x7f11046e
 
     const-string v8, "OFF"
 
     const/4 v9, 0x1
 
-    const v10, 0x7f080263
+    const v10, 0x7f08027a
 
     move-object v7, v0
 

@@ -1,6 +1,6 @@
 .class public final Landroidx/compose/runtime/reflect/ComposableInfo;
 .super Ljava/lang/Object;
-.source "ComposableMethod.kt"
+.source "ComposableMethod.jvm.kt"
 
 
 # annotations
@@ -45,6 +45,10 @@
 .end annotation
 
 
+# static fields
+.field public static final $stable:I
+
+
 # instance fields
 .field private final changedParams:I
 
@@ -56,22 +60,28 @@
 
 
 # direct methods
+.method static constructor <clinit>()V
+    .locals 0
+
+    return-void
+.end method
+
 .method public constructor <init>(ZIII)V
     .locals 0
 
-    .line 45
+    .line 47
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 46
+    .line 48
     iput-boolean p1, p0, Landroidx/compose/runtime/reflect/ComposableInfo;->isComposable:Z
 
-    .line 47
+    .line 49
     iput p2, p0, Landroidx/compose/runtime/reflect/ComposableInfo;->realParamsCount:I
 
-    .line 48
+    .line 50
     iput p3, p0, Landroidx/compose/runtime/reflect/ComposableInfo;->changedParams:I
 
-    .line 49
+    .line 51
     iput p4, p0, Landroidx/compose/runtime/reflect/ComposableInfo;->defaultParams:I
 
     return-void
@@ -222,7 +232,7 @@
 .method public final getChangedParams()I
     .locals 0
 
-    .line 48
+    .line 50
     iget p0, p0, Landroidx/compose/runtime/reflect/ComposableInfo;->changedParams:I
 
     return p0
@@ -231,7 +241,7 @@
 .method public final getDefaultParams()I
     .locals 0
 
-    .line 49
+    .line 51
     iget p0, p0, Landroidx/compose/runtime/reflect/ComposableInfo;->defaultParams:I
 
     return p0
@@ -240,7 +250,7 @@
 .method public final getRealParamsCount()I
     .locals 0
 
-    .line 47
+    .line 49
     iget p0, p0, Landroidx/compose/runtime/reflect/ComposableInfo;->realParamsCount:I
 
     return p0
@@ -251,11 +261,10 @@
 
     iget-boolean v0, p0, Landroidx/compose/runtime/reflect/ComposableInfo;->isComposable:Z
 
-    if-eqz v0, :cond_0
+    invoke-static {v0}, Ljava/lang/Boolean;->hashCode(Z)I
 
-    const/4 v0, 0x1
+    move-result v0
 
-    :cond_0
     mul-int/lit8 v0, v0, 0x1f
 
     iget v1, p0, Landroidx/compose/runtime/reflect/ComposableInfo;->realParamsCount:I
@@ -292,7 +301,7 @@
 .method public final isComposable()Z
     .locals 0
 
-    .line 46
+    .line 48
     iget-boolean p0, p0, Landroidx/compose/runtime/reflect/ComposableInfo;->isComposable:Z
 
     return p0

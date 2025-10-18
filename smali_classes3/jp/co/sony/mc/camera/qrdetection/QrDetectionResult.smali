@@ -18,7 +18,7 @@
 
 .annotation runtime Lkotlin/Metadata;
     d1 = {
-        "\u0000h\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0010\u000e\n\u0000\n\u0002\u0010\t\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0006\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0002\n\u0002\u0008\u0004\n\u0002\u0010\u000b\n\u0002\u0008\u0008\n\u0002\u0018\u0002\n\u0002\u0008\u0004\n\u0002\u0018\u0002\n\u0002\u0008\u0003\u0008\u0007\u0018\u00002\u00020\u0001:\u000212B\u0015\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\u0006\u0010\u0004\u001a\u00020\u0005\u00a2\u0006\u0002\u0010\u0006J\u0010\u0010\u001c\u001a\u00020\u001d2\u0006\u0010\u001e\u001a\u00020\u0012H\u0002J\u0006\u0010\u001f\u001a\u00020\u001dJ\u0006\u0010 \u001a\u00020\u001dJ\u0010\u0010 \u001a\u00020\u001d2\u0006\u0010\u001e\u001a\u00020\u0012H\u0002J\u0012\u0010!\u001a\u00020\"2\u0008\u0010\u0002\u001a\u0004\u0018\u00010\u0003H\u0002J\u0008\u0010#\u001a\u00020\"H\u0002J\u0008\u0010$\u001a\u00020\"H\u0002J\u0008\u0010%\u001a\u00020\"H\u0002J\u0006\u0010&\u001a\u00020\u001dJ\u0010\u0010\'\u001a\u00020\u001d2\u0006\u0010\u001e\u001a\u00020\u0012H\u0002J\u0008\u0010(\u001a\u00020\u001dH\u0002J\u0010\u0010)\u001a\u00020\u001d2\u0006\u0010*\u001a\u00020+H\u0002J\u0016\u0010,\u001a\u00020\"2\u0006\u0010\u0002\u001a\u00020\u00032\u0006\u0010-\u001a\u00020\u0008J\u0012\u0010.\u001a\u00020\u001d2\u0008\u0010/\u001a\u0004\u0018\u000100H\u0002R\u000e\u0010\u0007\u001a\u00020\u0008X\u0082D\u00a2\u0006\u0002\n\u0000R\u000e\u0010\t\u001a\u00020\nX\u0082D\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u000b\u001a\u00020\u0003X\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u000c\u001a\u00020\rX\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u0016\u0010\u000e\u001a\n \u0010*\u0004\u0018\u00010\u000f0\u000fX\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u001c\u0010\u0011\u001a\u0004\u0018\u00010\u0012X\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\u0008\u0013\u0010\u0014\"\u0004\u0008\u0015\u0010\u0016R\u000e\u0010\u0017\u001a\u00020\u0005X\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u0018\u001a\u00020\u0019X\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u001a\u001a\u00020\u001bX\u0082\u0004\u00a2\u0006\u0002\n\u0000\u00a8\u00063"
+        "\u0000f\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0003\n\u0002\u0010\u000e\n\u0000\n\u0002\u0010\t\n\u0002\u0008\u0003\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0003\n\u0002\u0018\u0002\n\u0002\u0008\u0005\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0010\u000b\n\u0002\u0008\u0004\n\u0002\u0018\u0002\n\u0002\u0008\u000b\n\u0002\u0018\u0002\n\u0002\u0008\u0003\u0008\u0007\u0018\u00002\u00020\u0001:\u000234B\u0017\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\u0006\u0010\u0004\u001a\u00020\u0005\u00a2\u0006\u0004\u0008\u0006\u0010\u0007J\u0006\u0010\u001e\u001a\u00020\u001fJ\u0008\u0010 \u001a\u00020!H\u0002J\u0008\u0010\"\u001a\u00020\u001fH\u0002J\u0006\u0010#\u001a\u00020\u001fJ\u0010\u0010$\u001a\u00020\u001f2\u0006\u0010%\u001a\u00020&H\u0002J\u0006\u0010\'\u001a\u00020\u001fJ\u0010\u0010\'\u001a\u00020\u001f2\u0006\u0010(\u001a\u00020\u0017H\u0002J\u0016\u0010)\u001a\u00020!2\u0006\u0010\u0002\u001a\u00020\u00032\u0006\u0010*\u001a\u00020\tJ\u0010\u0010+\u001a\u00020\u001f2\u0006\u0010(\u001a\u00020\u0017H\u0002J\u0008\u0010,\u001a\u00020!H\u0002J\u0010\u0010-\u001a\u00020\u001f2\u0006\u0010(\u001a\u00020\u0017H\u0002J\u0008\u0010.\u001a\u00020!H\u0002J\u0012\u0010/\u001a\u00020!2\u0008\u0010\u0002\u001a\u0004\u0018\u00010\u0003H\u0002J\u0012\u00100\u001a\u00020\u001f2\u0008\u00101\u001a\u0004\u0018\u000102H\u0002R\u000e\u0010\u0008\u001a\u00020\tX\u0082D\u00a2\u0006\u0002\n\u0000R\u000e\u0010\n\u001a\u00020\u000bX\u0082D\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u000c\u001a\u00020\u0003X\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u000e\u0010\r\u001a\u00020\u0005X\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u000e\u001a\u00020\u000fX\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u0010\u001a\u00020\u0011X\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u0018\u0010\u0012\u001a\n \u0014*\u0004\u0018\u00010\u00130\u0013X\u0082\u0004\u00a2\u0006\u0004\n\u0002\u0010\u0015R\u001c\u0010\u0016\u001a\u0004\u0018\u00010\u0017X\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\u0008\u0018\u0010\u0019\"\u0004\u0008\u001a\u0010\u001bR\u000e\u0010\u001c\u001a\u00020\u001dX\u0082\u0004\u00a2\u0006\u0002\n\u0000\u00a8\u00065"
     }
     d2 = {
         "Ljp/co/sony/mc/camera/qrdetection/QrDetectionResult;",
@@ -27,57 +27,59 @@
         "Landroid/content/Context;",
         "scanner",
         "Ljp/co/sony/mc/camera/qrdetection/QrCodeScanner;",
+        "<init>",
         "(Landroid/content/Context;Ljp/co/sony/mc/camera/qrdetection/QrCodeScanner;)V",
         "CTA_PACKAGE",
         "",
         "START_QR_DETECT_DELAY_MILLIS",
         "",
         "mContext",
+        "mQrCodeScanner",
+        "mWifiManager",
+        "Landroid/net/wifi/WifiManager;",
         "mHandler",
         "Landroid/os/Handler;",
         "mMessageSettings",
         "Ljp/co/sony/mc/camera/setting/MessageSettings;",
         "kotlin.jvm.PlatformType",
+        "Ljp/co/sony/mc/camera/setting/MessageSettings;",
         "mParsedResult",
         "Ljp/co/sony/mc/camera/qrdetection/QrDetectionResult$ParsedResult;",
         "getMParsedResult",
         "()Ljp/co/sony/mc/camera/qrdetection/QrDetectionResult$ParsedResult;",
         "setMParsedResult",
         "(Ljp/co/sony/mc/camera/qrdetection/QrDetectionResult$ParsedResult;)V",
-        "mQrCodeScanner",
         "mStartQrDetectorTasks",
         "Ljava/lang/Runnable;",
-        "mWifiManager",
-        "Landroid/net/wifi/WifiManager;",
-        "connectWifiNetwork",
-        "",
-        "parsedResult",
-        "handleResult",
-        "handleWifiResult",
-        "isCtaPackageInstalled",
-        "",
-        "isCtaWifi",
-        "isScreenLocked",
-        "isWifiSettingOn",
         "notifyQrDetect",
-        "openUrl",
+        "",
+        "isScreenLocked",
+        "",
         "requestDismissKeyguard",
+        "handleResult",
         "showQrWifiDialog",
         "id",
         "Ljp/co/sony/mc/camera/view/messagedialog/DialogId;",
+        "handleWifiResult",
+        "parsedResult",
         "startCommissioning",
         "qrCodeString",
+        "connectWifiNetwork",
+        "isWifiSettingOn",
+        "openUrl",
+        "isCtaWifi",
+        "isCtaPackageInstalled",
         "updateNetwork",
         "config",
         "Landroid/net/wifi/WifiConfiguration;",
-        "ParsedResult",
         "ParsedResultType",
+        "ParsedResult",
         "SomcCamera_release"
     }
     k = 0x1
     mv = {
-        0x1,
-        0x9,
+        0x2,
+        0x0,
         0x0
     }
     xi = 0x30
@@ -474,7 +476,7 @@
 
     move-result-object v0
 
-    const-string/jumbo v1, "this as java.lang.String).toUpperCase(Locale.ROOT)"
+    const-string/jumbo v1, "toUpperCase(...)"
 
     invoke-static {v0, v1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
 
@@ -490,7 +492,7 @@
 
     move-result v0
 
-    const-string/jumbo v2, "this as java.lang.String).substring(startIndex)"
+    const-string/jumbo v2, "substring(...)"
 
     if-eqz v0, :cond_1
 
@@ -600,13 +602,15 @@
 
     goto :goto_1
 
-    .line 183
     :catch_0
-    const-string p0, "openURL ActivityNotFoundException "
+    const/4 p0, 0x1
 
-    filled-new-array {p0}, [Ljava/lang/String;
+    .line 183
+    new-array p0, p0, [Ljava/lang/String;
 
-    move-result-object p0
+    const-string p1, "openURL ActivityNotFoundException "
+
+    aput-object p1, p0, v3
 
     invoke-static {p0}, Ljp/co/sony/mc/camera/util/CamLog;->e([Ljava/lang/String;)V
 
@@ -667,7 +671,7 @@
 .end method
 
 .method private final updateNetwork(Landroid/net/wifi/WifiConfiguration;)V
-    .locals 2
+    .locals 3
 
     .line 208
     iget-object v0, p0, Ljp/co/sony/mc/camera/qrdetection/QrDetectionResult;->mWifiManager:Landroid/net/wifi/WifiManager;
@@ -676,14 +680,16 @@
 
     move-result p1
 
-    if-ltz p1, :cond_1
-
-    .line 210
-    iget-object v0, p0, Ljp/co/sony/mc/camera/qrdetection/QrDetectionResult;->mWifiManager:Landroid/net/wifi/WifiManager;
+    const/4 v0, 0x0
 
     const/4 v1, 0x1
 
-    invoke-virtual {v0, p1, v1}, Landroid/net/wifi/WifiManager;->enableNetwork(IZ)Z
+    if-ltz p1, :cond_1
+
+    .line 210
+    iget-object v2, p0, Ljp/co/sony/mc/camera/qrdetection/QrDetectionResult;->mWifiManager:Landroid/net/wifi/WifiManager;
+
+    invoke-virtual {v2, p1, v1}, Landroid/net/wifi/WifiManager;->enableNetwork(IZ)Z
 
     move-result p1
 
@@ -698,11 +704,11 @@
 
     .line 213
     :cond_0
-    const-string p0, "CameraNotificationManager enableNetwork error"
+    new-array p0, v1, [Ljava/lang/String;
 
-    filled-new-array {p0}, [Ljava/lang/String;
+    const-string p1, "CameraNotificationManager enableNetwork error"
 
-    move-result-object p0
+    aput-object p1, p0, v0
 
     invoke-static {p0}, Ljp/co/sony/mc/camera/util/CamLog;->e([Ljava/lang/String;)V
 
@@ -710,11 +716,11 @@
 
     .line 216
     :cond_1
-    const-string p0, "CameraNotificationManager  networkId error"
+    new-array p0, v1, [Ljava/lang/String;
 
-    filled-new-array {p0}, [Ljava/lang/String;
+    const-string p1, "CameraNotificationManager  networkId error"
 
-    move-result-object p0
+    aput-object p1, p0, v0
 
     invoke-static {p0}, Ljp/co/sony/mc/camera/util/CamLog;->e([Ljava/lang/String;)V
 

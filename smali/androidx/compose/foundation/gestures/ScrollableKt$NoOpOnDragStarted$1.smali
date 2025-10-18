@@ -141,7 +141,7 @@
 
     invoke-static {}, Lkotlin/coroutines/intrinsics/IntrinsicsKt;->getCOROUTINE_SUSPENDED()Ljava/lang/Object;
 
-    .line 296
+    .line 654
     iget p0, p0, Landroidx/compose/foundation/gestures/ScrollableKt$NoOpOnDragStarted$1;->label:I
 
     if-nez p0, :cond_0

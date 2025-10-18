@@ -84,7 +84,7 @@
 
 # virtual methods
 .method public final invoke(Ljava/util/List;)Ljava/lang/Boolean;
-    .locals 1
+    .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -94,11 +94,7 @@
         }
     .end annotation
 
-    const-string v0, "it"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 119
+    .line 124
     iget-object p0, p0, Landroidx/compose/runtime/snapshots/SnapshotStateList$retainAll$1;->$elements:Ljava/util/Collection;
 
     invoke-interface {p1, p0}, Ljava/util/List;->retainAll(Ljava/util/Collection;)Z
@@ -115,7 +111,7 @@
 .method public bridge synthetic invoke(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
 
-    .line 119
+    .line 124
     check-cast p1, Ljava/util/List;
 
     invoke-virtual {p0, p1}, Landroidx/compose/runtime/snapshots/SnapshotStateList$retainAll$1;->invoke(Ljava/util/List;)Ljava/lang/Boolean;

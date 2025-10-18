@@ -21,7 +21,7 @@
 .method constructor <init>()V
     .locals 0
 
-    .line 907
+    .line 961
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -42,11 +42,11 @@
         }
     .end annotation
 
-    .line 911
+    .line 965
     check-cast p1, Ljp/co/sony/mc/camera/setting/CameraSettings;
 
-    .line 912
-    invoke-static {p1}, Ljp/co/sony/mc/camera/setting/CameraSettings;->-$$Nest$mgetWbExtensionData(Ljp/co/sony/mc/camera/setting/CameraSettings;)Ljp/co/sony/mc/camera/configuration/parameters/WbExtensionData;
+    .line 966
+    invoke-static {p1}, Ljp/co/sony/mc/camera/setting/CameraSettings;->-$$Nest$mgetAwbPriority(Ljp/co/sony/mc/camera/setting/CameraSettings;)Ljp/co/sony/mc/camera/configuration/parameters/AwbPriority;
 
     move-result-object p0
 

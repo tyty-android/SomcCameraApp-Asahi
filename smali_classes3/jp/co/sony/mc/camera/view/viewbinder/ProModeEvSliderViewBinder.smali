@@ -9,7 +9,7 @@
 # annotations
 .annotation runtime Lkotlin/Metadata;
     d1 = {
-        "\u0000T\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000b\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0003\n\u0002\u0010\u0002\n\u0002\u0008\u0003\n\u0002\u0010\u0008\n\u0002\u0008\u0002\u0008\u0007\u0018\u00002\u00020\u0001B=\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\u0006\u0010\u0004\u001a\u00020\u0005\u0012\u0006\u0010\u0006\u001a\u00020\u0007\u0012\u0006\u0010\u0008\u001a\u00020\t\u0012\u0006\u0010\n\u001a\u00020\u000b\u0012\u0006\u0010\u000c\u001a\u00020\r\u0012\u0006\u0010\u000e\u001a\u00020\u000f\u00a2\u0006\u0002\u0010\u0010J\u0010\u0010\u0017\u001a\u00020\u00182\u0006\u0010\u0019\u001a\u00020\u0014H\u0016J\u0010\u0010\u001a\u001a\u00020\u00182\u0006\u0010\u001b\u001a\u00020\u001cH\u0002J\u0010\u0010\u001d\u001a\u00020\u00182\u0006\u0010\u000e\u001a\u00020\u000fH\u0002R\u000e\u0010\u0002\u001a\u00020\u0003X\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u0006\u001a\u00020\u0007X\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u000c\u001a\u00020\rX\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u0011\u001a\u00020\u0012X\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u000e\u001a\u00020\u000fX\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u0014\u0010\u0013\u001a\u00020\u00148BX\u0082\u0004\u00a2\u0006\u0006\u001a\u0004\u0008\u0015\u0010\u0016R\u000e\u0010\n\u001a\u00020\u000bX\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u0004\u001a\u00020\u0005X\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u0008\u001a\u00020\tX\u0082\u0004\u00a2\u0006\u0002\n\u0000\u00a8\u0006\u001e"
+        "\u0000R\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000b\n\u0002\u0008\u0003\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0003\n\u0002\u0010\u0002\n\u0002\u0008\u0004\n\u0002\u0010\u0008\n\u0000\u0008\u0007\u0018\u00002\u00020\u0001B?\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\u0006\u0010\u0004\u001a\u00020\u0005\u0012\u0006\u0010\u0006\u001a\u00020\u0007\u0012\u0006\u0010\u0008\u001a\u00020\t\u0012\u0006\u0010\n\u001a\u00020\u000b\u0012\u0006\u0010\u000c\u001a\u00020\r\u0012\u0006\u0010\u000e\u001a\u00020\u000f\u00a2\u0006\u0004\u0008\u0010\u0010\u0011J\u0010\u0010\u0018\u001a\u00020\u00192\u0006\u0010\u001a\u001a\u00020\u0015H\u0016J\u0010\u0010\u001b\u001a\u00020\u00192\u0006\u0010\u000e\u001a\u00020\u000fH\u0002J\u0010\u0010\u001c\u001a\u00020\u00192\u0006\u0010\u001d\u001a\u00020\u001eH\u0002R\u000e\u0010\u0002\u001a\u00020\u0003X\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u0004\u001a\u00020\u0005X\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u0006\u001a\u00020\u0007X\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u0008\u001a\u00020\tX\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u000e\u0010\n\u001a\u00020\u000bX\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u000c\u001a\u00020\rX\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u000e\u001a\u00020\u000fX\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u0012\u001a\u00020\u0013X\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u0014\u0010\u0014\u001a\u00020\u00158BX\u0082\u0004\u00a2\u0006\u0006\u001a\u0004\u0008\u0016\u0010\u0017\u00a8\u0006\u001f"
     }
     d2 = {
         "Ljp/co/sony/mc/camera/view/viewbinder/ProModeEvSliderViewBinder;",
@@ -28,6 +28,7 @@
         "Ljp/co/sony/mc/camera/view/viewmodel/CameraStatusModel;",
         "isFn",
         "",
+        "<init>",
         "(Ljp/co/sony/mc/camera/databinding/FragmentProModeEvSliderBinding;Ljp/co/sony/mc/camera/view/uistate/ProModeBottomPaneUiState;Ljp/co/sony/mc/camera/view/viewmodel/CameraSettingsModel;Ljp/co/sony/mc/camera/view/uistate/ProModeCommonUiState;Ljp/co/sony/mc/camera/view/viewmodel/OrientationViewModel;Ljp/co/sony/mc/camera/view/viewmodel/CameraStatusModel;Z)V",
         "context",
         "Landroid/content/Context;",
@@ -38,16 +39,16 @@
         "onCreate",
         "",
         "owner",
+        "setupEvSettingsMenu",
         "setEvByProgress",
         "progress",
         "",
-        "setupEvSettingsMenu",
         "SomcCamera_release"
     }
     k = 0x1
     mv = {
-        0x1,
-        0x9,
+        0x2,
+        0x0,
         0x0
     }
     xi = 0x30
@@ -77,30 +78,100 @@
 
 
 # direct methods
-.method public static synthetic $r8$lambda$Db2fOEsqBI64dMTNpeCiO9aZdm4(Ljp/co/sony/mc/camera/view/viewbinder/ProModeEvSliderViewBinder;Ljp/co/sony/mc/camera/view/widget/EvSlider;Landroid/view/View;)V
+.method public static synthetic $r8$lambda$08DWFbTWLYc5uIlXUtB0tO-v5bU(ZLjp/co/sony/mc/camera/configuration/parameters/Ev;)Lkotlin/Pair;
     .locals 0
 
-    invoke-static {p0, p1, p2}, Ljp/co/sony/mc/camera/view/viewbinder/ProModeEvSliderViewBinder;->setupEvSettingsMenu$lambda$2(Ljp/co/sony/mc/camera/view/viewbinder/ProModeEvSliderViewBinder;Ljp/co/sony/mc/camera/view/widget/EvSlider;Landroid/view/View;)V
+    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/view/viewbinder/ProModeEvSliderViewBinder;->onCreate$lambda$2(ZLjp/co/sony/mc/camera/configuration/parameters/Ev;)Lkotlin/Pair;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method public static synthetic $r8$lambda$1XjQ4hPBZIgM45VN5M1BkcBYk0U(Ljp/co/sony/mc/camera/view/viewbinder/ProModeEvSliderViewBinder;Ljp/co/sony/mc/camera/view/widget/EvSlider;Landroid/view/View;)V
+    .locals 0
+
+    invoke-static {p0, p1, p2}, Ljp/co/sony/mc/camera/view/viewbinder/ProModeEvSliderViewBinder;->setupEvSettingsMenu$lambda$8(Ljp/co/sony/mc/camera/view/viewbinder/ProModeEvSliderViewBinder;Ljp/co/sony/mc/camera/view/widget/EvSlider;Landroid/view/View;)V
 
     return-void
 .end method
 
-.method public static synthetic $r8$lambda$a-JnyxSK3yuBHhzBhbzCz5p3ZQY(Ljp/co/sony/mc/camera/view/viewbinder/ProModeEvSliderViewBinder;Ljp/co/sony/mc/camera/view/widget/EvSlider;Landroid/view/View;)V
+.method public static synthetic $r8$lambda$5Q60fW7tLaEDO_wH08ROb026en4(Ljp/co/sony/mc/camera/view/viewbinder/ProModeEvSliderViewBinder;Ljava/lang/Boolean;)Lkotlin/Unit;
     .locals 0
 
-    invoke-static {p0, p1, p2}, Ljp/co/sony/mc/camera/view/viewbinder/ProModeEvSliderViewBinder;->setupEvSettingsMenu$lambda$1(Ljp/co/sony/mc/camera/view/viewbinder/ProModeEvSliderViewBinder;Ljp/co/sony/mc/camera/view/widget/EvSlider;Landroid/view/View;)V
+    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/view/viewbinder/ProModeEvSliderViewBinder;->onCreate$lambda$5(Ljp/co/sony/mc/camera/view/viewbinder/ProModeEvSliderViewBinder;Ljava/lang/Boolean;)Lkotlin/Unit;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method public static synthetic $r8$lambda$5UI0pvwjUjGxeQm3O8Z9M_boNyc(Ljp/co/sony/mc/camera/view/viewbinder/ProModeEvSliderViewBinder;Lkotlin/Pair;)Lkotlin/Unit;
+    .locals 0
+
+    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/view/viewbinder/ProModeEvSliderViewBinder;->onCreate$lambda$3(Ljp/co/sony/mc/camera/view/viewbinder/ProModeEvSliderViewBinder;Lkotlin/Pair;)Lkotlin/Unit;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method public static synthetic $r8$lambda$Chl2rMuICknF6En8HTIs2KVj0mg(Ljp/co/sony/mc/camera/view/viewbinder/ProModeEvSliderViewBinder;Ljava/lang/Integer;)Lkotlin/Unit;
+    .locals 0
+
+    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/view/viewbinder/ProModeEvSliderViewBinder;->onCreate$lambda$1(Ljp/co/sony/mc/camera/view/viewbinder/ProModeEvSliderViewBinder;Ljava/lang/Integer;)Lkotlin/Unit;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method public static synthetic $r8$lambda$G9fFGWUAgpyyq90Ziiyizx_6efo(Ljp/co/sony/mc/camera/view/viewbinder/ProModeEvSliderViewBinder;Ljp/co/sony/mc/camera/view/orientation/LayoutOrientation;)Lkotlin/Unit;
+    .locals 0
+
+    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/view/viewbinder/ProModeEvSliderViewBinder;->setupEvSettingsMenu$lambda$7(Ljp/co/sony/mc/camera/view/viewbinder/ProModeEvSliderViewBinder;Ljp/co/sony/mc/camera/view/orientation/LayoutOrientation;)Lkotlin/Unit;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method public static synthetic $r8$lambda$Ol2kUc52NYruu4Mc9-7Uvlkvx-k(Ljp/co/sony/mc/camera/view/viewbinder/ProModeEvSliderViewBinder;Ljp/co/sony/mc/camera/view/widget/EvSlider;Landroid/view/View;)V
+    .locals 0
+
+    invoke-static {p0, p1, p2}, Ljp/co/sony/mc/camera/view/viewbinder/ProModeEvSliderViewBinder;->setupEvSettingsMenu$lambda$9(Ljp/co/sony/mc/camera/view/viewbinder/ProModeEvSliderViewBinder;Ljp/co/sony/mc/camera/view/widget/EvSlider;Landroid/view/View;)V
 
     return-void
 .end method
 
-.method public static synthetic $r8$lambda$t3C0Oi3FT1m6Uua8Oru3N4knlDo(Ljp/co/sony/mc/camera/view/widget/EvSlider;Landroid/view/View;Landroid/view/MotionEvent;)Z
+.method public static synthetic $r8$lambda$_6Fq-8OKeXFUoBhdZBQXFDVf-Oo(Ljp/co/sony/mc/camera/view/viewbinder/ProModeEvSliderViewBinder;[Ljp/co/sony/mc/camera/configuration/parameters/Ev;)Lkotlin/Unit;
     .locals 0
 
-    invoke-static {p0, p1, p2}, Ljp/co/sony/mc/camera/view/viewbinder/ProModeEvSliderViewBinder;->setupEvSettingsMenu$lambda$0(Ljp/co/sony/mc/camera/view/widget/EvSlider;Landroid/view/View;Landroid/view/MotionEvent;)Z
+    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/view/viewbinder/ProModeEvSliderViewBinder;->onCreate$lambda$0(Ljp/co/sony/mc/camera/view/viewbinder/ProModeEvSliderViewBinder;[Ljp/co/sony/mc/camera/configuration/parameters/Ev;)Lkotlin/Unit;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method public static synthetic $r8$lambda$rRIRYQkfiFKuUKTx2sWmo8laXZE(Ljp/co/sony/mc/camera/view/widget/EvSlider;Landroid/view/View;Landroid/view/MotionEvent;)Z
+    .locals 0
+
+    invoke-static {p0, p1, p2}, Ljp/co/sony/mc/camera/view/viewbinder/ProModeEvSliderViewBinder;->setupEvSettingsMenu$lambda$6(Ljp/co/sony/mc/camera/view/widget/EvSlider;Landroid/view/View;Landroid/view/MotionEvent;)Z
 
     move-result p0
 
     return p0
+.end method
+
+.method public static synthetic $r8$lambda$y8hr0kbpmBN7Ucj7-5wyY8vJ5qU(Ljp/co/sony/mc/camera/view/viewbinder/ProModeEvSliderViewBinder;Ljp/co/sony/mc/camera/configuration/parameters/Ev;)Lkotlin/Unit;
+    .locals 0
+
+    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/view/viewbinder/ProModeEvSliderViewBinder;->onCreate$lambda$4(Ljp/co/sony/mc/camera/view/viewbinder/ProModeEvSliderViewBinder;Ljp/co/sony/mc/camera/configuration/parameters/Ev;)Lkotlin/Unit;
+
+    move-result-object p0
+
+    return-object p0
 .end method
 
 .method static constructor <clinit>()V
@@ -234,15 +305,6 @@
     return-object p0
 .end method
 
-.method public static final synthetic access$getProModeCommonUiState$p(Ljp/co/sony/mc/camera/view/viewbinder/ProModeEvSliderViewBinder;)Ljp/co/sony/mc/camera/view/uistate/ProModeCommonUiState;
-    .locals 0
-
-    .line 35
-    iget-object p0, p0, Ljp/co/sony/mc/camera/view/viewbinder/ProModeEvSliderViewBinder;->proModeCommonUiState:Ljp/co/sony/mc/camera/view/uistate/ProModeCommonUiState;
-
-    return-object p0
-.end method
-
 .method public static final synthetic access$setEvByProgress(Ljp/co/sony/mc/camera/view/viewbinder/ProModeEvSliderViewBinder;I)V
     .locals 0
 
@@ -263,6 +325,234 @@
     move-result-object p0
 
     invoke-static {p0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;)V
+
+    return-object p0
+.end method
+
+.method private static final onCreate$lambda$0(Ljp/co/sony/mc/camera/view/viewbinder/ProModeEvSliderViewBinder;[Ljp/co/sony/mc/camera/configuration/parameters/Ev;)Lkotlin/Unit;
+    .locals 2
+
+    const-string/jumbo v0, "this$0"
+
+    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 56
+    iget-object v0, p0, Ljp/co/sony/mc/camera/view/viewbinder/ProModeEvSliderViewBinder;->binding:Ljp/co/sony/mc/camera/databinding/FragmentProModeEvSliderBinding;
+
+    iget-object v0, v0, Ljp/co/sony/mc/camera/databinding/FragmentProModeEvSliderBinding;->slider:Ljp/co/sony/mc/camera/view/widget/EvSlider;
+
+    array-length v1, p1
+
+    div-int/lit8 v1, v1, 0x2
+
+    invoke-virtual {v0, v1}, Ljp/co/sony/mc/camera/view/widget/EvSlider;->setMax(I)V
+
+    .line 57
+    iget-object p0, p0, Ljp/co/sony/mc/camera/view/viewbinder/ProModeEvSliderViewBinder;->binding:Ljp/co/sony/mc/camera/databinding/FragmentProModeEvSliderBinding;
+
+    iget-object p0, p0, Ljp/co/sony/mc/camera/databinding/FragmentProModeEvSliderBinding;->slider:Ljp/co/sony/mc/camera/view/widget/EvSlider;
+
+    array-length p1, p1
+
+    neg-int p1, p1
+
+    div-int/lit8 p1, p1, 0x2
+
+    invoke-virtual {p0, p1}, Ljp/co/sony/mc/camera/view/widget/EvSlider;->setMin(I)V
+
+    .line 58
+    sget-object p0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
+
+    return-object p0
+.end method
+
+.method private static final onCreate$lambda$1(Ljp/co/sony/mc/camera/view/viewbinder/ProModeEvSliderViewBinder;Ljava/lang/Integer;)Lkotlin/Unit;
+    .locals 1
+
+    const-string/jumbo v0, "this$0"
+
+    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 61
+    iget-object p0, p0, Ljp/co/sony/mc/camera/view/viewbinder/ProModeEvSliderViewBinder;->binding:Ljp/co/sony/mc/camera/databinding/FragmentProModeEvSliderBinding;
+
+    iget-object p0, p0, Ljp/co/sony/mc/camera/databinding/FragmentProModeEvSliderBinding;->slider:Ljp/co/sony/mc/camera/view/widget/EvSlider;
+
+    invoke-virtual {p1}, Ljava/lang/Integer;->intValue()I
+
+    move-result p1
+
+    invoke-virtual {p0, p1}, Ljp/co/sony/mc/camera/view/widget/EvSlider;->setProgress(I)V
+
+    .line 62
+    sget-object p0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
+
+    return-object p0
+.end method
+
+.method private static final onCreate$lambda$2(ZLjp/co/sony/mc/camera/configuration/parameters/Ev;)Lkotlin/Pair;
+    .locals 1
+
+    .line 68
+    new-instance v0, Lkotlin/Pair;
+
+    invoke-static {p0}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
+
+    move-result-object p0
+
+    invoke-direct {v0, p0, p1}, Lkotlin/Pair;-><init>(Ljava/lang/Object;Ljava/lang/Object;)V
+
+    return-object v0
+.end method
+
+.method private static final onCreate$lambda$3(Ljp/co/sony/mc/camera/view/viewbinder/ProModeEvSliderViewBinder;Lkotlin/Pair;)Lkotlin/Unit;
+    .locals 1
+
+    const-string/jumbo v0, "this$0"
+
+    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 69
+    invoke-virtual {p1}, Lkotlin/Pair;->component1()Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, Ljava/lang/Boolean;
+
+    invoke-virtual {v0}, Ljava/lang/Boolean;->booleanValue()Z
+
+    move-result v0
+
+    invoke-virtual {p1}, Lkotlin/Pair;->component2()Ljava/lang/Object;
+
+    move-result-object p1
+
+    check-cast p1, Ljp/co/sony/mc/camera/configuration/parameters/Ev;
+
+    if-eqz v0, :cond_0
+
+    .line 71
+    iget-object v0, p0, Ljp/co/sony/mc/camera/view/viewbinder/ProModeEvSliderViewBinder;->proModeCommonUiState:Ljp/co/sony/mc/camera/view/uistate/ProModeCommonUiState;
+
+    iget-object p0, p0, Ljp/co/sony/mc/camera/view/viewbinder/ProModeEvSliderViewBinder;->context:Landroid/content/Context;
+
+    invoke-virtual {p1}, Ljp/co/sony/mc/camera/configuration/parameters/Ev;->getTextId()I
+
+    move-result p1
+
+    invoke-virtual {p0, p1}, Landroid/content/Context;->getString(I)Ljava/lang/String;
+
+    move-result-object p0
+
+    const-string p1, "getString(...)"
+
+    invoke-static {p0, p1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
+
+    invoke-virtual {v0, p0}, Ljp/co/sony/mc/camera/view/uistate/ProModeCommonUiState;->setFnItemLabelValueText(Ljava/lang/String;)V
+
+    .line 73
+    :cond_0
+    sget-object p0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
+
+    return-object p0
+.end method
+
+.method private static final onCreate$lambda$4(Ljp/co/sony/mc/camera/view/viewbinder/ProModeEvSliderViewBinder;Ljp/co/sony/mc/camera/configuration/parameters/Ev;)Lkotlin/Unit;
+    .locals 3
+
+    const-string/jumbo v0, "this$0"
+
+    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 76
+    iget-object v0, p0, Ljp/co/sony/mc/camera/view/viewbinder/ProModeEvSliderViewBinder;->binding:Ljp/co/sony/mc/camera/databinding/FragmentProModeEvSliderBinding;
+
+    iget-object v0, v0, Ljp/co/sony/mc/camera/databinding/FragmentProModeEvSliderBinding;->title:Ljp/co/sony/mc/camera/view/widget/OutlineTextView;
+
+    iget-object v1, p0, Ljp/co/sony/mc/camera/view/viewbinder/ProModeEvSliderViewBinder;->context:Landroid/content/Context;
+
+    const v2, 0x7f11009c
+
+    invoke-virtual {v1, v2}, Landroid/content/Context;->getString(I)Ljava/lang/String;
+
+    move-result-object v1
+
+    .line 78
+    iget-object p0, p0, Ljp/co/sony/mc/camera/view/viewbinder/ProModeEvSliderViewBinder;->context:Landroid/content/Context;
+
+    invoke-virtual {p1}, Ljp/co/sony/mc/camera/configuration/parameters/Ev;->getTextId()I
+
+    move-result p1
+
+    invoke-virtual {p0, p1}, Landroid/content/Context;->getString(I)Ljava/lang/String;
+
+    move-result-object p0
+
+    new-instance p1, Ljava/lang/StringBuilder;
+
+    invoke-direct {p1}, Ljava/lang/StringBuilder;-><init>()V
+
+    invoke-virtual {p1, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object p1
+
+    invoke-virtual {p1, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object p0
+
+    invoke-virtual {p0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object p0
+
+    check-cast p0, Ljava/lang/CharSequence;
+
+    .line 76
+    invoke-virtual {v0, p0}, Ljp/co/sony/mc/camera/view/widget/OutlineTextView;->setContentDescription(Ljava/lang/CharSequence;)V
+
+    .line 79
+    sget-object p0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
+
+    return-object p0
+.end method
+
+.method private static final onCreate$lambda$5(Ljp/co/sony/mc/camera/view/viewbinder/ProModeEvSliderViewBinder;Ljava/lang/Boolean;)Lkotlin/Unit;
+    .locals 1
+
+    const-string/jumbo v0, "this$0"
+
+    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 82
+    invoke-virtual {p1}, Ljava/lang/Boolean;->booleanValue()Z
+
+    move-result p1
+
+    if-eqz p1, :cond_0
+
+    .line 83
+    iget-object p1, p0, Ljp/co/sony/mc/camera/view/viewbinder/ProModeEvSliderViewBinder;->binding:Ljp/co/sony/mc/camera/databinding/FragmentProModeEvSliderBinding;
+
+    invoke-virtual {p1}, Ljp/co/sony/mc/camera/databinding/FragmentProModeEvSliderBinding;->getRoot()Landroid/view/View;
+
+    move-result-object p1
+
+    invoke-virtual {p1}, Landroid/view/View;->getViewTreeObserver()Landroid/view/ViewTreeObserver;
+
+    move-result-object p1
+
+    .line 84
+    new-instance v0, Ljp/co/sony/mc/camera/view/viewbinder/ProModeEvSliderViewBinder$onCreate$6$1;
+
+    invoke-direct {v0, p0}, Ljp/co/sony/mc/camera/view/viewbinder/ProModeEvSliderViewBinder$onCreate$6$1;-><init>(Ljp/co/sony/mc/camera/view/viewbinder/ProModeEvSliderViewBinder;)V
+
+    check-cast v0, Landroid/view/ViewTreeObserver$OnGlobalLayoutListener;
+
+    .line 83
+    invoke-virtual {p1, v0}, Landroid/view/ViewTreeObserver;->addOnGlobalLayoutListener(Landroid/view/ViewTreeObserver$OnGlobalLayoutListener;)V
+
+    .line 94
+    :cond_0
+    sget-object p0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
 
     return-object p0
 .end method
@@ -430,11 +720,9 @@
 
     move-result-object v1
 
-    new-instance v2, Ljp/co/sony/mc/camera/view/viewbinder/ProModeEvSliderViewBinder$setupEvSettingsMenu$4;
+    new-instance v2, Ljp/co/sony/mc/camera/view/viewbinder/ProModeEvSliderViewBinder$$ExternalSyntheticLambda1;
 
-    invoke-direct {v2, p0}, Ljp/co/sony/mc/camera/view/viewbinder/ProModeEvSliderViewBinder$setupEvSettingsMenu$4;-><init>(Ljp/co/sony/mc/camera/view/viewbinder/ProModeEvSliderViewBinder;)V
-
-    check-cast v2, Lkotlin/jvm/functions/Function1;
+    invoke-direct {v2, p0}, Ljp/co/sony/mc/camera/view/viewbinder/ProModeEvSliderViewBinder$$ExternalSyntheticLambda1;-><init>(Ljp/co/sony/mc/camera/view/viewbinder/ProModeEvSliderViewBinder;)V
 
     new-instance v3, Ljp/co/sony/mc/camera/view/viewbinder/ProModeEvSliderViewBinder$sam$androidx_lifecycle_Observer$0;
 
@@ -449,9 +737,9 @@
 
     iget-object p1, p1, Ljp/co/sony/mc/camera/databinding/FragmentProModeEvSliderBinding;->minus:Landroid/widget/ImageButton;
 
-    new-instance v1, Ljp/co/sony/mc/camera/view/viewbinder/ProModeEvSliderViewBinder$$ExternalSyntheticLambda1;
+    new-instance v1, Ljp/co/sony/mc/camera/view/viewbinder/ProModeEvSliderViewBinder$$ExternalSyntheticLambda2;
 
-    invoke-direct {v1, p0, v0}, Ljp/co/sony/mc/camera/view/viewbinder/ProModeEvSliderViewBinder$$ExternalSyntheticLambda1;-><init>(Ljp/co/sony/mc/camera/view/viewbinder/ProModeEvSliderViewBinder;Ljp/co/sony/mc/camera/view/widget/EvSlider;)V
+    invoke-direct {v1, p0, v0}, Ljp/co/sony/mc/camera/view/viewbinder/ProModeEvSliderViewBinder$$ExternalSyntheticLambda2;-><init>(Ljp/co/sony/mc/camera/view/viewbinder/ProModeEvSliderViewBinder;Ljp/co/sony/mc/camera/view/widget/EvSlider;)V
 
     invoke-virtual {p1, v1}, Landroid/widget/ImageButton;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
@@ -460,16 +748,16 @@
 
     iget-object p1, p1, Ljp/co/sony/mc/camera/databinding/FragmentProModeEvSliderBinding;->plus:Landroid/widget/ImageButton;
 
-    new-instance v1, Ljp/co/sony/mc/camera/view/viewbinder/ProModeEvSliderViewBinder$$ExternalSyntheticLambda2;
+    new-instance v1, Ljp/co/sony/mc/camera/view/viewbinder/ProModeEvSliderViewBinder$$ExternalSyntheticLambda3;
 
-    invoke-direct {v1, p0, v0}, Ljp/co/sony/mc/camera/view/viewbinder/ProModeEvSliderViewBinder$$ExternalSyntheticLambda2;-><init>(Ljp/co/sony/mc/camera/view/viewbinder/ProModeEvSliderViewBinder;Ljp/co/sony/mc/camera/view/widget/EvSlider;)V
+    invoke-direct {v1, p0, v0}, Ljp/co/sony/mc/camera/view/viewbinder/ProModeEvSliderViewBinder$$ExternalSyntheticLambda3;-><init>(Ljp/co/sony/mc/camera/view/viewbinder/ProModeEvSliderViewBinder;Ljp/co/sony/mc/camera/view/widget/EvSlider;)V
 
     invoke-virtual {p1, v1}, Landroid/widget/ImageButton;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     return-void
 .end method
 
-.method private static final setupEvSettingsMenu$lambda$0(Ljp/co/sony/mc/camera/view/widget/EvSlider;Landroid/view/View;Landroid/view/MotionEvent;)Z
+.method private static final setupEvSettingsMenu$lambda$6(Ljp/co/sony/mc/camera/view/widget/EvSlider;Landroid/view/View;Landroid/view/MotionEvent;)Z
     .locals 0
 
     const-string p1, "$slider"
@@ -484,7 +772,62 @@
     return p0
 .end method
 
-.method private static final setupEvSettingsMenu$lambda$1(Ljp/co/sony/mc/camera/view/viewbinder/ProModeEvSliderViewBinder;Ljp/co/sony/mc/camera/view/widget/EvSlider;Landroid/view/View;)V
+.method private static final setupEvSettingsMenu$lambda$7(Ljp/co/sony/mc/camera/view/viewbinder/ProModeEvSliderViewBinder;Ljp/co/sony/mc/camera/view/orientation/LayoutOrientation;)Lkotlin/Unit;
+    .locals 2
+
+    const-string/jumbo v0, "this$0"
+
+    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 144
+    iget-object v0, p0, Ljp/co/sony/mc/camera/view/viewbinder/ProModeEvSliderViewBinder;->binding:Ljp/co/sony/mc/camera/databinding/FragmentProModeEvSliderBinding;
+
+    iget-object v0, v0, Ljp/co/sony/mc/camera/databinding/FragmentProModeEvSliderBinding;->slider:Ljp/co/sony/mc/camera/view/widget/EvSlider;
+
+    invoke-static {p1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;)V
+
+    invoke-virtual {v0, p1}, Ljp/co/sony/mc/camera/view/widget/EvSlider;->setUiOrientation(Ljp/co/sony/mc/camera/view/orientation/LayoutOrientation;)V
+
+    .line 145
+    iget-object v0, p0, Ljp/co/sony/mc/camera/view/viewbinder/ProModeEvSliderViewBinder;->binding:Ljp/co/sony/mc/camera/databinding/FragmentProModeEvSliderBinding;
+
+    iget-object v0, v0, Ljp/co/sony/mc/camera/databinding/FragmentProModeEvSliderBinding;->minus:Landroid/widget/ImageButton;
+
+    invoke-static {p1}, Ljp/co/sony/mc/camera/view/orientation/LayoutOrientationKt;->toRotation(Ljp/co/sony/mc/camera/view/orientation/LayoutOrientation;)F
+
+    move-result v1
+
+    invoke-virtual {v0, v1}, Landroid/widget/ImageButton;->setRotation(F)V
+
+    .line 146
+    iget-object v0, p0, Ljp/co/sony/mc/camera/view/viewbinder/ProModeEvSliderViewBinder;->binding:Ljp/co/sony/mc/camera/databinding/FragmentProModeEvSliderBinding;
+
+    iget-object v0, v0, Ljp/co/sony/mc/camera/databinding/FragmentProModeEvSliderBinding;->plus:Landroid/widget/ImageButton;
+
+    invoke-static {p1}, Ljp/co/sony/mc/camera/view/orientation/LayoutOrientationKt;->toRotation(Ljp/co/sony/mc/camera/view/orientation/LayoutOrientation;)F
+
+    move-result v1
+
+    invoke-virtual {v0, v1}, Landroid/widget/ImageButton;->setRotation(F)V
+
+    .line 147
+    iget-object p0, p0, Ljp/co/sony/mc/camera/view/viewbinder/ProModeEvSliderViewBinder;->binding:Ljp/co/sony/mc/camera/databinding/FragmentProModeEvSliderBinding;
+
+    iget-object p0, p0, Ljp/co/sony/mc/camera/databinding/FragmentProModeEvSliderBinding;->title:Ljp/co/sony/mc/camera/view/widget/OutlineTextView;
+
+    invoke-static {p1}, Ljp/co/sony/mc/camera/view/orientation/LayoutOrientationKt;->toRotation(Ljp/co/sony/mc/camera/view/orientation/LayoutOrientation;)F
+
+    move-result p1
+
+    invoke-virtual {p0, p1}, Ljp/co/sony/mc/camera/view/widget/OutlineTextView;->setRotation(F)V
+
+    .line 148
+    sget-object p0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
+
+    return-object p0
+.end method
+
+.method private static final setupEvSettingsMenu$lambda$8(Ljp/co/sony/mc/camera/view/viewbinder/ProModeEvSliderViewBinder;Ljp/co/sony/mc/camera/view/widget/EvSlider;Landroid/view/View;)V
     .locals 2
 
     const-string/jumbo p2, "this$0"
@@ -553,7 +896,7 @@
     return-void
 .end method
 
-.method private static final setupEvSettingsMenu$lambda$2(Ljp/co/sony/mc/camera/view/viewbinder/ProModeEvSliderViewBinder;Ljp/co/sony/mc/camera/view/widget/EvSlider;Landroid/view/View;)V
+.method private static final setupEvSettingsMenu$lambda$9(Ljp/co/sony/mc/camera/view/viewbinder/ProModeEvSliderViewBinder;Ljp/co/sony/mc/camera/view/widget/EvSlider;Landroid/view/View;)V
     .locals 2
 
     const-string/jumbo p2, "this$0"
@@ -647,11 +990,9 @@
 
     move-result-object v0
 
-    new-instance v1, Ljp/co/sony/mc/camera/view/viewbinder/ProModeEvSliderViewBinder$onCreate$1;
+    new-instance v1, Ljp/co/sony/mc/camera/view/viewbinder/ProModeEvSliderViewBinder$$ExternalSyntheticLambda4;
 
-    invoke-direct {v1, p0}, Ljp/co/sony/mc/camera/view/viewbinder/ProModeEvSliderViewBinder$onCreate$1;-><init>(Ljp/co/sony/mc/camera/view/viewbinder/ProModeEvSliderViewBinder;)V
-
-    check-cast v1, Lkotlin/jvm/functions/Function1;
+    invoke-direct {v1, p0}, Ljp/co/sony/mc/camera/view/viewbinder/ProModeEvSliderViewBinder$$ExternalSyntheticLambda4;-><init>(Ljp/co/sony/mc/camera/view/viewbinder/ProModeEvSliderViewBinder;)V
 
     new-instance v2, Ljp/co/sony/mc/camera/view/viewbinder/ProModeEvSliderViewBinder$sam$androidx_lifecycle_Observer$0;
 
@@ -672,11 +1013,9 @@
 
     move-result-object v0
 
-    new-instance v1, Ljp/co/sony/mc/camera/view/viewbinder/ProModeEvSliderViewBinder$onCreate$2;
+    new-instance v1, Ljp/co/sony/mc/camera/view/viewbinder/ProModeEvSliderViewBinder$$ExternalSyntheticLambda5;
 
-    invoke-direct {v1, p0}, Ljp/co/sony/mc/camera/view/viewbinder/ProModeEvSliderViewBinder$onCreate$2;-><init>(Ljp/co/sony/mc/camera/view/viewbinder/ProModeEvSliderViewBinder;)V
-
-    check-cast v1, Lkotlin/jvm/functions/Function1;
+    invoke-direct {v1, p0}, Ljp/co/sony/mc/camera/view/viewbinder/ProModeEvSliderViewBinder$$ExternalSyntheticLambda5;-><init>(Ljp/co/sony/mc/camera/view/viewbinder/ProModeEvSliderViewBinder;)V
 
     new-instance v2, Ljp/co/sony/mc/camera/view/viewbinder/ProModeEvSliderViewBinder$sam$androidx_lifecycle_Observer$0;
 
@@ -703,11 +1042,11 @@
 
     move-result-object v1
 
+    new-instance v2, Ljp/co/sony/mc/camera/view/viewbinder/ProModeEvSliderViewBinder$$ExternalSyntheticLambda6;
+
+    invoke-direct {v2}, Ljp/co/sony/mc/camera/view/viewbinder/ProModeEvSliderViewBinder$$ExternalSyntheticLambda6;-><init>()V
+
     .line 64
-    sget-object v2, Ljp/co/sony/mc/camera/view/viewbinder/ProModeEvSliderViewBinder$onCreate$3;->INSTANCE:Ljp/co/sony/mc/camera/view/viewbinder/ProModeEvSliderViewBinder$onCreate$3;
-
-    check-cast v2, Lkotlin/jvm/functions/Function2;
-
     invoke-virtual {p1, v0, v1, v2}, Ljp/co/sony/mc/camera/view/viewmodel/LiveDataMediators;->notNulls(Landroidx/lifecycle/LiveData;Landroidx/lifecycle/LiveData;Lkotlin/jvm/functions/Function2;)Landroidx/lifecycle/LiveData;
 
     move-result-object p1
@@ -717,11 +1056,9 @@
 
     move-result-object v0
 
-    new-instance v1, Ljp/co/sony/mc/camera/view/viewbinder/ProModeEvSliderViewBinder$onCreate$4;
+    new-instance v1, Ljp/co/sony/mc/camera/view/viewbinder/ProModeEvSliderViewBinder$$ExternalSyntheticLambda7;
 
-    invoke-direct {v1, p0}, Ljp/co/sony/mc/camera/view/viewbinder/ProModeEvSliderViewBinder$onCreate$4;-><init>(Ljp/co/sony/mc/camera/view/viewbinder/ProModeEvSliderViewBinder;)V
-
-    check-cast v1, Lkotlin/jvm/functions/Function1;
+    invoke-direct {v1, p0}, Ljp/co/sony/mc/camera/view/viewbinder/ProModeEvSliderViewBinder$$ExternalSyntheticLambda7;-><init>(Ljp/co/sony/mc/camera/view/viewbinder/ProModeEvSliderViewBinder;)V
 
     new-instance v2, Ljp/co/sony/mc/camera/view/viewbinder/ProModeEvSliderViewBinder$sam$androidx_lifecycle_Observer$0;
 
@@ -742,11 +1079,9 @@
 
     move-result-object v0
 
-    new-instance v1, Ljp/co/sony/mc/camera/view/viewbinder/ProModeEvSliderViewBinder$onCreate$5;
+    new-instance v1, Ljp/co/sony/mc/camera/view/viewbinder/ProModeEvSliderViewBinder$$ExternalSyntheticLambda8;
 
-    invoke-direct {v1, p0}, Ljp/co/sony/mc/camera/view/viewbinder/ProModeEvSliderViewBinder$onCreate$5;-><init>(Ljp/co/sony/mc/camera/view/viewbinder/ProModeEvSliderViewBinder;)V
-
-    check-cast v1, Lkotlin/jvm/functions/Function1;
+    invoke-direct {v1, p0}, Ljp/co/sony/mc/camera/view/viewbinder/ProModeEvSliderViewBinder$$ExternalSyntheticLambda8;-><init>(Ljp/co/sony/mc/camera/view/viewbinder/ProModeEvSliderViewBinder;)V
 
     new-instance v2, Ljp/co/sony/mc/camera/view/viewbinder/ProModeEvSliderViewBinder$sam$androidx_lifecycle_Observer$0;
 
@@ -767,11 +1102,9 @@
 
     move-result-object v0
 
-    new-instance v1, Ljp/co/sony/mc/camera/view/viewbinder/ProModeEvSliderViewBinder$onCreate$6;
+    new-instance v1, Ljp/co/sony/mc/camera/view/viewbinder/ProModeEvSliderViewBinder$$ExternalSyntheticLambda9;
 
-    invoke-direct {v1, p0}, Ljp/co/sony/mc/camera/view/viewbinder/ProModeEvSliderViewBinder$onCreate$6;-><init>(Ljp/co/sony/mc/camera/view/viewbinder/ProModeEvSliderViewBinder;)V
-
-    check-cast v1, Lkotlin/jvm/functions/Function1;
+    invoke-direct {v1, p0}, Ljp/co/sony/mc/camera/view/viewbinder/ProModeEvSliderViewBinder$$ExternalSyntheticLambda9;-><init>(Ljp/co/sony/mc/camera/view/viewbinder/ProModeEvSliderViewBinder;)V
 
     new-instance p0, Ljp/co/sony/mc/camera/view/viewbinder/ProModeEvSliderViewBinder$sam$androidx_lifecycle_Observer$0;
 

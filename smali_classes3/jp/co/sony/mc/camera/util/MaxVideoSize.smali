@@ -32,7 +32,7 @@
 .end method
 
 .method public static create(Ljp/co/sony/mc/camera/configuration/Configurations;Ljp/co/sony/mc/camera/recorder/RecordingProfile;Ljp/co/sony/mc/camera/storage/Storage;Ljp/co/sony/mc/camera/storage/Storage$StorageType;)Ljp/co/sony/mc/camera/util/MaxVideoSize;
-    .locals 2
+    .locals 3
 
     .line 79
     invoke-static {p2, p3}, Ljp/co/sony/mc/camera/util/RecordingUtil;->getRecordableSizeKBytes(Ljp/co/sony/mc/camera/storage/Storage;Ljp/co/sony/mc/camera/storage/Storage$StorageType;)J
@@ -56,70 +56,74 @@
 
     if-eqz p1, :cond_0
 
+    const/4 p1, 0x1
+
     .line 83
-    new-instance p1, Ljava/lang/StringBuilder;
+    new-array v0, p1, [Ljava/lang/String;
 
-    const-string v0, "Recordable storage size(kbytes): "
+    new-instance v1, Ljava/lang/StringBuilder;
 
-    invoke-direct {p1, v0}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+    const-string v2, "Recordable storage size(kbytes): "
 
-    invoke-virtual {p1, p2, p3}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
+    invoke-direct {v1, v2}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
-    move-result-object p1
+    invoke-virtual {v1, p2, p3}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
 
-    invoke-virtual {p1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    move-result-object p2
 
-    move-result-object p1
+    invoke-virtual {p2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    filled-new-array {p1}, [Ljava/lang/String;
+    move-result-object p2
 
-    move-result-object p1
+    const/4 p3, 0x0
 
-    invoke-static {p1}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
+    aput-object p2, v0, p3
+
+    invoke-static {v0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
     .line 84
-    new-instance p1, Ljava/lang/StringBuilder;
+    new-array p2, p1, [Ljava/lang/String;
 
-    const-string p2, "Modified max size(bytes): "
+    new-instance v0, Ljava/lang/StringBuilder;
 
-    invoke-direct {p1, p2}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+    const-string v1, "Modified max size(bytes): "
 
-    iget-wide p2, p0, Ljp/co/sony/mc/camera/util/MaxVideoSize;->mMaxFileSizeBytes:J
+    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
-    invoke-virtual {p1, p2, p3}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
+    iget-wide v1, p0, Ljp/co/sony/mc/camera/util/MaxVideoSize;->mMaxFileSizeBytes:J
 
-    move-result-object p1
+    invoke-virtual {v0, v1, v2}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
 
-    invoke-virtual {p1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    move-result-object v0
 
-    move-result-object p1
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    filled-new-array {p1}, [Ljava/lang/String;
+    move-result-object v0
 
-    move-result-object p1
+    aput-object v0, p2, p3
 
-    invoke-static {p1}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
+    invoke-static {p2}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
     .line 85
-    new-instance p1, Ljava/lang/StringBuilder;
+    new-array p1, p1, [Ljava/lang/String;
 
-    const-string p2, "Modified max duration(millisecs): "
+    new-instance p2, Ljava/lang/StringBuilder;
 
-    invoke-direct {p1, p2}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+    const-string v0, "Modified max duration(millisecs): "
 
-    iget-wide p2, p0, Ljp/co/sony/mc/camera/util/MaxVideoSize;->mMaxDurationMillis:J
+    invoke-direct {p2, v0}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
-    invoke-virtual {p1, p2, p3}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
+    iget-wide v0, p0, Ljp/co/sony/mc/camera/util/MaxVideoSize;->mMaxDurationMillis:J
 
-    move-result-object p1
+    invoke-virtual {p2, v0, v1}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
 
-    invoke-virtual {p1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    move-result-object p2
 
-    move-result-object p1
+    invoke-virtual {p2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    filled-new-array {p1}, [Ljava/lang/String;
+    move-result-object p2
 
-    move-result-object p1
+    aput-object p2, p1, p3
 
     invoke-static {p1}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
@@ -182,45 +186,49 @@
 
     if-eqz v8, :cond_0
 
+    const/4 v8, 0x1
+
     .line 109
-    new-instance v8, Ljava/lang/StringBuilder;
+    new-array v9, v8, [Ljava/lang/String;
 
-    const-string v9, "Config Max duration: "
+    new-instance v10, Ljava/lang/StringBuilder;
 
-    invoke-direct {v8, v9}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+    const-string v11, "Config Max duration: "
 
-    invoke-virtual {v8, v4, v5}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
+    invoke-direct {v10, v11}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
-    move-result-object v8
+    invoke-virtual {v10, v4, v5}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v8}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    move-result-object v10
 
-    move-result-object v8
+    invoke-virtual {v10}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    filled-new-array {v8}, [Ljava/lang/String;
+    move-result-object v10
 
-    move-result-object v8
+    const/4 v11, 0x0
 
-    invoke-static {v8}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
+    aput-object v10, v9, v11
+
+    invoke-static {v9}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
     .line 110
-    new-instance v8, Ljava/lang/StringBuilder;
+    new-array v8, v8, [Ljava/lang/String;
 
-    const-string v9, "Config Max size: "
+    new-instance v9, Ljava/lang/StringBuilder;
 
-    invoke-direct {v8, v9}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+    const-string v10, "Config Max size: "
 
-    invoke-virtual {v8, v6, v7}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
+    invoke-direct {v9, v10}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
-    move-result-object v8
+    invoke-virtual {v9, v6, v7}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v8}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    move-result-object v9
 
-    move-result-object v8
+    invoke-virtual {v9}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    filled-new-array {v8}, [Ljava/lang/String;
+    move-result-object v9
 
-    move-result-object v8
+    aput-object v9, v8, v11
 
     invoke-static {v8}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
@@ -330,7 +338,7 @@
 .end method
 
 .method private static createQualityLowMaxVideoSize(Ljp/co/sony/mc/camera/configuration/Configurations;Ljp/co/sony/mc/camera/recorder/RecordingProfile;J)Ljp/co/sony/mc/camera/util/MaxVideoSize;
-    .locals 8
+    .locals 10
 
     .line 146
     new-instance v0, Ljp/co/sony/mc/camera/util/MaxVideoSize;
@@ -349,60 +357,64 @@
     .line 151
     sget-boolean v5, Ljp/co/sony/mc/camera/util/CamLog;->VERBOSE:Z
 
+    const/4 v6, 0x0
+
+    const/4 v7, 0x1
+
     if-eqz v5, :cond_0
 
     .line 152
-    new-instance v5, Ljava/lang/StringBuilder;
+    new-array v5, v7, [Ljava/lang/String;
 
-    const-string v6, "Max size: "
+    new-instance v8, Ljava/lang/StringBuilder;
 
-    invoke-direct {v5, v6}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+    const-string v9, "Max size: "
 
-    invoke-virtual {v5, v1, v2}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
+    invoke-direct {v8, v9}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
-    move-result-object v5
+    invoke-virtual {v8, v1, v2}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v5}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    move-result-object v8
 
-    move-result-object v5
+    invoke-virtual {v8}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    filled-new-array {v5}, [Ljava/lang/String;
+    move-result-object v8
 
-    move-result-object v5
+    aput-object v8, v5, v6
 
     invoke-static {v5}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
     .line 153
-    new-instance v5, Ljava/lang/StringBuilder;
+    new-array v5, v7, [Ljava/lang/String;
 
-    const-string v6, "Config Max size: "
+    new-instance v8, Ljava/lang/StringBuilder;
 
-    invoke-direct {v5, v6}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+    const-string v9, "Config Max size: "
 
-    invoke-virtual {v5, v3, v4}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
+    invoke-direct {v8, v9}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
-    move-result-object v5
+    invoke-virtual {v8, v3, v4}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v5}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    move-result-object v8
 
-    move-result-object v5
+    invoke-virtual {v8}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    filled-new-array {v5}, [Ljava/lang/String;
+    move-result-object v8
 
-    move-result-object v5
+    aput-object v8, v5, v6
 
     invoke-static {v5}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
     :cond_0
-    const-wide/16 v5, 0x0
+    const-wide/16 v8, 0x0
 
-    cmp-long v7, v3, v5
+    cmp-long v5, v3, v8
 
-    if-lez v7, :cond_1
+    if-lez v5, :cond_1
 
-    cmp-long v7, v3, v1
+    cmp-long v5, v3, v1
 
-    if-gez v7, :cond_1
+    if-gez v5, :cond_1
 
     .line 157
     invoke-direct {v0, v3, v4}, Ljp/co/sony/mc/camera/util/MaxVideoSize;->setMaxFileSizeBytes(J)V
@@ -435,49 +447,49 @@
     if-eqz p0, :cond_2
 
     .line 167
-    new-instance p0, Ljava/lang/StringBuilder;
+    new-array p0, v7, [Ljava/lang/String;
 
-    const-string v3, "Max duration: "
+    new-instance v3, Ljava/lang/StringBuilder;
 
-    invoke-direct {p0, v3}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+    const-string v4, "Max duration: "
 
-    invoke-virtual {p0, p2, p3}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
+    invoke-direct {v3, v4}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
-    move-result-object p0
+    invoke-virtual {v3, p2, p3}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
 
-    invoke-virtual {p0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    move-result-object v3
 
-    move-result-object p0
+    invoke-virtual {v3}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    filled-new-array {p0}, [Ljava/lang/String;
+    move-result-object v3
 
-    move-result-object p0
+    aput-object v3, p0, v6
 
     invoke-static {p0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
     .line 168
-    new-instance p0, Ljava/lang/StringBuilder;
+    new-array p0, v7, [Ljava/lang/String;
 
-    const-string v3, "Config Max duration: "
+    new-instance v3, Ljava/lang/StringBuilder;
 
-    invoke-direct {p0, v3}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+    const-string v4, "Config Max duration: "
 
-    invoke-virtual {p0, v1, v2}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
+    invoke-direct {v3, v4}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
-    move-result-object p0
+    invoke-virtual {v3, v1, v2}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
 
-    invoke-virtual {p0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    move-result-object v3
 
-    move-result-object p0
+    invoke-virtual {v3}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    filled-new-array {p0}, [Ljava/lang/String;
+    move-result-object v3
 
-    move-result-object p0
+    aput-object v3, p0, v6
 
     invoke-static {p0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
     :cond_2
-    cmp-long p0, v1, v5
+    cmp-long p0, v1, v8
 
     if-lez p0, :cond_3
 
@@ -501,20 +513,20 @@
     if-eqz p2, :cond_4
 
     .line 181
-    const-string p2, "Quality Low Max duration: 2147483647"
+    new-array p2, v7, [Ljava/lang/String;
 
-    filled-new-array {p2}, [Ljava/lang/String;
+    const-string p3, "Quality Low Max duration: 2147483647"
 
-    move-result-object p2
+    aput-object p3, p2, v6
 
     invoke-static {p2}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
     .line 182
-    const-string p2, "Quality Low Max size: 300000"
+    new-array p2, v7, [Ljava/lang/String;
 
-    filled-new-array {p2}, [Ljava/lang/String;
+    const-string p3, "Quality Low Max size: 300000"
 
-    move-result-object p2
+    aput-object p3, p2, v6
 
     invoke-static {p2}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
@@ -562,7 +574,7 @@
 .end method
 
 .method private static getDurationFromSizeInMillis(Ljp/co/sony/mc/camera/recorder/RecordingProfile;J)J
-    .locals 6
+    .locals 7
 
     .line 62
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/recorder/RecordingProfile;->getAverageFileSize()J
@@ -595,45 +607,49 @@
 
     if-eqz p2, :cond_0
 
+    const/4 p2, 0x1
+
     .line 68
-    new-instance p2, Ljava/lang/StringBuilder;
+    new-array v4, p2, [Ljava/lang/String;
 
-    const-string/jumbo v4, "sizePerSecond(Byte): "
+    new-instance v5, Ljava/lang/StringBuilder;
 
-    invoke-direct {p2, v4}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+    const-string/jumbo v6, "sizePerSecond(Byte): "
 
-    invoke-virtual {p2, v0, v1}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
+    invoke-direct {v5, v6}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
-    move-result-object p2
+    invoke-virtual {v5, v0, v1}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
 
-    invoke-virtual {p2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    move-result-object v0
 
-    move-result-object p2
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    filled-new-array {p2}, [Ljava/lang/String;
+    move-result-object v0
 
-    move-result-object p2
+    const/4 v1, 0x0
 
-    invoke-static {p2}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
+    aput-object v0, v4, v1
+
+    invoke-static {v4}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
     .line 69
-    new-instance p2, Ljava/lang/StringBuilder;
+    new-array p2, p2, [Ljava/lang/String;
 
-    const-string v0, "durationInSecond(sec): "
+    new-instance v0, Ljava/lang/StringBuilder;
 
-    invoke-direct {p2, v0}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+    const-string v4, "durationInSecond(sec): "
 
-    invoke-virtual {p2, p0, p1}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
+    invoke-direct {v0, v4}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
-    move-result-object p2
+    invoke-virtual {v0, p0, p1}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
 
-    invoke-virtual {p2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    move-result-object v0
 
-    move-result-object p2
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    filled-new-array {p2}, [Ljava/lang/String;
+    move-result-object v0
 
-    move-result-object p2
+    aput-object v0, p2, v1
 
     invoke-static {p2}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 

@@ -27,7 +27,7 @@
 .method constructor <init>(Lcom/google/android/material/navigation/NavigationBarItemView;I)V
     .locals 0
 
-    .line 311
+    .line 315
     iput-object p1, p0, Lcom/google/android/material/navigation/NavigationBarItemView$2;->this$0:Lcom/google/android/material/navigation/NavigationBarItemView;
 
     iput p2, p0, Lcom/google/android/material/navigation/NavigationBarItemView$2;->val$width:I
@@ -42,7 +42,7 @@
 .method public run()V
     .locals 1
 
-    .line 314
+    .line 318
     iget-object v0, p0, Lcom/google/android/material/navigation/NavigationBarItemView$2;->this$0:Lcom/google/android/material/navigation/NavigationBarItemView;
 
     iget p0, p0, Lcom/google/android/material/navigation/NavigationBarItemView$2;->val$width:I

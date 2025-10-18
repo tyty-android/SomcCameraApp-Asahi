@@ -25,7 +25,7 @@
     k = 0x1
     mv = {
         0x1,
-        0x6,
+        0x8,
         0x0
     }
     xi = 0x30
@@ -40,7 +40,7 @@
 .method public constructor <init>(Lkotlinx/coroutines/DisposableHandle;)V
     .locals 0
 
-    .line 389
+    .line 382
     invoke-direct {p0}, Lkotlinx/coroutines/CancelHandler;-><init>()V
 
     iput-object p1, p0, Lkotlinx/coroutines/DisposeOnCancel;->handle:Lkotlinx/coroutines/DisposableHandle;
@@ -53,7 +53,7 @@
 .method public bridge synthetic invoke(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
 
-    .line 389
+    .line 382
     check-cast p1, Ljava/lang/Throwable;
 
     invoke-virtual {p0, p1}, Lkotlinx/coroutines/DisposeOnCancel;->invoke(Ljava/lang/Throwable;)V
@@ -66,7 +66,7 @@
 .method public invoke(Ljava/lang/Throwable;)V
     .locals 0
 
-    .line 390
+    .line 383
     iget-object p0, p0, Lkotlinx/coroutines/DisposeOnCancel;->handle:Lkotlinx/coroutines/DisposableHandle;
 
     invoke-interface {p0}, Lkotlinx/coroutines/DisposableHandle;->dispose()V
@@ -77,7 +77,7 @@
 .method public toString()Ljava/lang/String;
     .locals 2
 
-    .line 391
+    .line 384
     new-instance v0, Ljava/lang/StringBuilder;
 
     const-string v1, "DisposeOnCancel["

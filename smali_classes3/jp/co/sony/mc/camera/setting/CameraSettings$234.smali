@@ -21,7 +21,7 @@
 .method constructor <init>()V
     .locals 0
 
-    .line 2512
+    .line 2564
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -42,20 +42,8 @@
         }
     .end annotation
 
-    .line 2516
-    check-cast p1, Ljp/co/sony/mc/camera/setting/CameraSettings;
-
-    .line 2517
-    invoke-static {p1}, Ljp/co/sony/mc/camera/setting/CameraSettings;->-$$Nest$fgetmCapturingMode(Ljp/co/sony/mc/camera/setting/CameraSettings;)Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
-
-    move-result-object p0
-
-    invoke-virtual {p0}, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->getLayoutMode()Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
-
-    move-result-object p0
-
-    .line 2518
-    invoke-static {p0}, Ljp/co/sony/mc/camera/configuration/parameters/ExtendFps;->getDefaultValue(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;)Ljp/co/sony/mc/camera/configuration/parameters/ExtendFps;
+    .line 2568
+    invoke-static {}, Ljp/co/sony/mc/camera/configuration/parameters/SelfTimer;->getDefaultValue()Ljp/co/sony/mc/camera/configuration/parameters/SelfTimer;
 
     move-result-object p0
 

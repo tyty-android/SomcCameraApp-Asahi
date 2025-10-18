@@ -18,7 +18,7 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 410
+    .line 412
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -36,7 +36,7 @@
 
     const/4 p0, 0x1
 
-    .line 422
+    .line 424
     new-array p0, p0, [Landroidx/core/provider/FontsContractCompat$FontInfo;
 
     const/4 v0, 0x0
@@ -62,7 +62,7 @@
 
     const/4 p0, 0x0
 
-    .line 415
+    .line 417
     invoke-static {p1, p0, p2}, Landroidx/core/provider/FontsContractCompat;->fetchFonts(Landroid/content/Context;Landroid/os/CancellationSignal;Landroidx/core/provider/FontRequest;)Landroidx/core/provider/FontsContractCompat$FontFamilyResult;
 
     move-result-object p0
@@ -73,7 +73,7 @@
 .method public registerObserver(Landroid/content/Context;Landroid/net/Uri;Landroid/database/ContentObserver;)V
     .locals 0
 
-    .line 429
+    .line 431
     invoke-virtual {p1}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object p0
@@ -88,7 +88,7 @@
 .method public unregisterObserver(Landroid/content/Context;Landroid/database/ContentObserver;)V
     .locals 0
 
-    .line 436
+    .line 438
     invoke-virtual {p1}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object p0

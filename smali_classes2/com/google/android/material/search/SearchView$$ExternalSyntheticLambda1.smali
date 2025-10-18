@@ -3,7 +3,7 @@
 .source "D8$$SyntheticClass"
 
 # interfaces
-.implements Ljava/lang/Runnable;
+.implements Landroid/view/View$OnClickListener;
 
 
 # instance fields
@@ -24,13 +24,13 @@
 
 
 # virtual methods
-.method public final run()V
+.method public final onClick(Landroid/view/View;)V
     .locals 0
 
     .line 0
     iget-object p0, p0, Lcom/google/android/material/search/SearchView$$ExternalSyntheticLambda1;->f$0:Lcom/google/android/material/search/SearchView;
 
-    invoke-virtual {p0}, Lcom/google/android/material/search/SearchView;->lambda$requestFocusAndShowKeyboard$8$com-google-android-material-search-SearchView()V
+    invoke-virtual {p0, p1}, Lcom/google/android/material/search/SearchView;->lambda$setUpClearButton$2$com-google-android-material-search-SearchView(Landroid/view/View;)V
 
     return-void
 .end method

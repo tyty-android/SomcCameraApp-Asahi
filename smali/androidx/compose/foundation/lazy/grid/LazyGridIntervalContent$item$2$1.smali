@@ -114,10 +114,6 @@
 .method public final invoke-_-orMbw(Landroidx/compose/foundation/lazy/grid/LazyGridItemSpanScope;I)J
     .locals 0
 
-    const-string p2, "$this$null"
-
-    invoke-static {p1, p2}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
     .line 48
     iget-object p0, p0, Landroidx/compose/foundation/lazy/grid/LazyGridIntervalContent$item$2$1;->$span:Lkotlin/jvm/functions/Function1;
 

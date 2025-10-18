@@ -1,6 +1,6 @@
 .class final Landroidx/compose/ui/tooling/animation/PreviewAnimationClock$trackTransition$1;
 .super Lkotlin/jvm/internal/Lambda;
-.source "PreviewAnimationClock.kt"
+.source "PreviewAnimationClock.android.kt"
 
 # interfaces
 .implements Lkotlin/jvm/functions/Function1;
@@ -100,14 +100,10 @@
 .method public final invoke(Ljava/lang/Object;)V
     .locals 3
 
-    const-string v0, "it"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
     .line 112
     iget-object p1, p0, Landroidx/compose/ui/tooling/animation/PreviewAnimationClock$trackTransition$1;->$animation:Landroidx/compose/animation/core/Transition;
 
-    invoke-static {p1}, Landroidx/compose/ui/tooling/animation/TransitionComposeAnimationKt;->parse(Landroidx/compose/animation/core/Transition;)Landroidx/compose/ui/tooling/animation/TransitionComposeAnimation;
+    invoke-static {p1}, Landroidx/compose/ui/tooling/animation/TransitionComposeAnimation_androidKt;->parse(Landroidx/compose/animation/core/Transition;)Landroidx/compose/ui/tooling/animation/TransitionComposeAnimation;
 
     move-result-object p1
 
@@ -135,6 +131,19 @@
 
     invoke-virtual {p0, p1}, Landroidx/compose/ui/tooling/animation/PreviewAnimationClock;->notifySubscribe(Landroidx/compose/animation/tooling/ComposeAnimation;)V
 
+    return-void
+
+    .line 119
     :cond_0
+    iget-object p1, p0, Landroidx/compose/ui/tooling/animation/PreviewAnimationClock$trackTransition$1;->this$0:Landroidx/compose/ui/tooling/animation/PreviewAnimationClock;
+
+    iget-object p0, p0, Landroidx/compose/ui/tooling/animation/PreviewAnimationClock$trackTransition$1;->$animation:Landroidx/compose/animation/core/Transition;
+
+    invoke-virtual {p0}, Landroidx/compose/animation/core/Transition;->getLabel()Ljava/lang/String;
+
+    move-result-object p0
+
+    invoke-static {p1, p0}, Landroidx/compose/ui/tooling/animation/PreviewAnimationClock;->access$createUnsupported(Landroidx/compose/ui/tooling/animation/PreviewAnimationClock;Ljava/lang/String;)V
+
     return-void
 .end method

@@ -22,7 +22,7 @@
 .method static constructor <clinit>()V
     .locals 3
 
-    .line 287
+    .line 279
     invoke-static {}, Ljp/co/sony/mc/camera/configuration/parameters/DriveMode;->values()[Ljp/co/sony/mc/camera/configuration/parameters/DriveMode;
 
     move-result-object v0

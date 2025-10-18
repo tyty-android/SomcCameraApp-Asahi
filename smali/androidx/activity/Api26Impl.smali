@@ -50,7 +50,7 @@
 .method private constructor <init>()V
     .locals 0
 
-    .line 103
+    .line 101
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -61,30 +61,22 @@
 .method public final setPipParamsSourceRectHint(Landroid/app/Activity;Landroid/graphics/Rect;)V
     .locals 0
 
-    const-string p0, "activity"
-
-    invoke-static {p1, p0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string p0, "hint"
-
-    invoke-static {p2, p0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 107
+    .line 105
     new-instance p0, Landroid/app/PictureInPictureParams$Builder;
 
     invoke-direct {p0}, Landroid/app/PictureInPictureParams$Builder;-><init>()V
 
-    .line 108
+    .line 106
     invoke-virtual {p0, p2}, Landroid/app/PictureInPictureParams$Builder;->setSourceRectHint(Landroid/graphics/Rect;)Landroid/app/PictureInPictureParams$Builder;
 
     move-result-object p0
 
-    .line 109
+    .line 107
     invoke-virtual {p0}, Landroid/app/PictureInPictureParams$Builder;->build()Landroid/app/PictureInPictureParams;
 
     move-result-object p0
 
-    .line 106
+    .line 104
     invoke-virtual {p1, p0}, Landroid/app/Activity;->setPictureInPictureParams(Landroid/app/PictureInPictureParams;)V
 
     return-void

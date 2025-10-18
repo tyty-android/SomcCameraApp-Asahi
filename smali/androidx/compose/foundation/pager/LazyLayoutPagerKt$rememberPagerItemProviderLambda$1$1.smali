@@ -50,7 +50,7 @@
 .method public get()Ljava/lang/Object;
     .locals 0
 
-    .line 255
+    .line 264
     iget-object p0, p0, Landroidx/compose/foundation/pager/LazyLayoutPagerKt$rememberPagerItemProviderLambda$1$1;->receiver:Ljava/lang/Object;
 
     check-cast p0, Landroidx/compose/runtime/State;

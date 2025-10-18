@@ -32,6 +32,11 @@
     .end annotation
 .end field
 
+.field protected mCaptureControlUiState:Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState;
+    .annotation runtime Landroidx/databinding/Bindable;
+    .end annotation
+.end field
+
 .field protected mLensUiState:Ljp/co/sony/mc/camera/view/uistate/LensUiState;
     .annotation runtime Landroidx/databinding/Bindable;
     .end annotation
@@ -64,37 +69,37 @@
 .method protected constructor <init>(Ljava/lang/Object;Landroid/view/View;ILandroid/view/View;Landroid/view/View;Ljp/co/sony/mc/camera/view/widget/TransparentAreaImageView;Landroid/widget/ListView;Landroid/view/View;Landroid/widget/TextView;Landroid/widget/FrameLayout;Landroid/widget/FrameLayout;Landroid/widget/Space;Ljp/co/sony/mc/camera/view/widget/FlingLimitedHorizontalScrollView;)V
     .locals 0
 
-    .line 86
+    .line 90
     invoke-direct {p0, p1, p2, p3}, Landroidx/databinding/ViewDataBinding;-><init>(Ljava/lang/Object;Landroid/view/View;I)V
 
-    .line 87
+    .line 91
     iput-object p4, p0, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeSeamlessBinding;->background:Landroid/view/View;
 
-    .line 88
+    .line 92
     iput-object p5, p0, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeSeamlessBinding;->controlView:Landroid/view/View;
 
-    .line 89
+    .line 93
     iput-object p6, p0, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeSeamlessBinding;->line:Ljp/co/sony/mc/camera/view/widget/TransparentAreaImageView;
 
-    .line 90
+    .line 94
     iput-object p7, p0, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeSeamlessBinding;->listviewForTalkback:Landroid/widget/ListView;
 
-    .line 91
+    .line 95
     iput-object p8, p0, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeSeamlessBinding;->mainCircle:Landroid/view/View;
 
-    .line 92
+    .line 96
     iput-object p9, p0, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeSeamlessBinding;->mainLabel:Landroid/widget/TextView;
 
-    .line 93
+    .line 97
     iput-object p10, p0, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeSeamlessBinding;->rootContainer:Landroid/widget/FrameLayout;
 
-    .line 94
+    .line 98
     iput-object p11, p0, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeSeamlessBinding;->scrollContent:Landroid/widget/FrameLayout;
 
-    .line 95
+    .line 99
     iput-object p12, p0, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeSeamlessBinding;->scrollContentSpace:Landroid/widget/Space;
 
-    .line 96
+    .line 100
     iput-object p13, p0, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeSeamlessBinding;->scrollView:Ljp/co/sony/mc/camera/view/widget/FlingLimitedHorizontalScrollView;
 
     return-void
@@ -103,7 +108,7 @@
 .method public static bind(Landroid/view/View;)Ljp/co/sony/mc/camera/databinding/FragmentBasicModeSeamlessBinding;
     .locals 1
 
-    .line 190
+    .line 202
     invoke-static {}, Landroidx/databinding/DataBindingUtil;->getDefaultComponent()Landroidx/databinding/DataBindingComponent;
 
     move-result-object v0
@@ -122,7 +127,7 @@
 
     const v0, 0x7f0c0069
 
-    .line 203
+    .line 215
     invoke-static {p1, p0, v0}, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeSeamlessBinding;->bind(Ljava/lang/Object;Landroid/view/View;I)Landroidx/databinding/ViewDataBinding;
 
     move-result-object p0
@@ -135,7 +140,7 @@
 .method public static inflate(Landroid/view/LayoutInflater;)Ljp/co/sony/mc/camera/databinding/FragmentBasicModeSeamlessBinding;
     .locals 1
 
-    .line 172
+    .line 184
     invoke-static {}, Landroidx/databinding/DataBindingUtil;->getDefaultComponent()Landroidx/databinding/DataBindingComponent;
 
     move-result-object v0
@@ -150,7 +155,7 @@
 .method public static inflate(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Z)Ljp/co/sony/mc/camera/databinding/FragmentBasicModeSeamlessBinding;
     .locals 1
 
-    .line 153
+    .line 165
     invoke-static {}, Landroidx/databinding/DataBindingUtil;->getDefaultComponent()Landroidx/databinding/DataBindingComponent;
 
     move-result-object v0
@@ -169,7 +174,7 @@
 
     const v0, 0x7f0c0069
 
-    .line 167
+    .line 179
     invoke-static {p0, v0, p1, p2, p3}, Landroidx/databinding/ViewDataBinding;->inflateInternal(Landroid/view/LayoutInflater;ILandroid/view/ViewGroup;ZLjava/lang/Object;)Landroidx/databinding/ViewDataBinding;
 
     move-result-object p0
@@ -190,7 +195,7 @@
 
     const v2, 0x7f0c0069
 
-    .line 186
+    .line 198
     invoke-static {p0, v2, v0, v1, p1}, Landroidx/databinding/ViewDataBinding;->inflateInternal(Landroid/view/LayoutInflater;ILandroid/view/ViewGroup;ZLjava/lang/Object;)Landroidx/databinding/ViewDataBinding;
 
     move-result-object p0
@@ -205,7 +210,7 @@
 .method public getBasicModeCommonUiState()Ljp/co/sony/mc/camera/view/uistate/BasicModeCommonUiState;
     .locals 0
 
-    .line 147
+    .line 151
     iget-object p0, p0, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeSeamlessBinding;->mBasicModeCommonUiState:Ljp/co/sony/mc/camera/view/uistate/BasicModeCommonUiState;
 
     return-object p0
@@ -214,7 +219,7 @@
 .method public getBasicModeTopPaneUiState()Ljp/co/sony/mc/camera/view/uistate/BasicModeTopPaneUiState;
     .locals 0
 
-    .line 118
+    .line 122
     iget-object p0, p0, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeSeamlessBinding;->mBasicModeTopPaneUiState:Ljp/co/sony/mc/camera/view/uistate/BasicModeTopPaneUiState;
 
     return-object p0
@@ -223,7 +228,7 @@
 .method public getCameraSettingsModel()Ljp/co/sony/mc/camera/view/viewmodel/CameraSettingsModel;
     .locals 0
 
-    .line 132
+    .line 136
     iget-object p0, p0, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeSeamlessBinding;->mCameraSettingsModel:Ljp/co/sony/mc/camera/view/viewmodel/CameraSettingsModel;
 
     return-object p0
@@ -232,8 +237,17 @@
 .method public getCameraStatusModel()Ljp/co/sony/mc/camera/view/viewmodel/CameraStatusModel;
     .locals 0
 
-    .line 125
+    .line 129
     iget-object p0, p0, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeSeamlessBinding;->mCameraStatusModel:Ljp/co/sony/mc/camera/view/viewmodel/CameraStatusModel;
+
+    return-object p0
+.end method
+
+.method public getCaptureControlUiState()Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState;
+    .locals 0
+
+    .line 159
+    iget-object p0, p0, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeSeamlessBinding;->mCaptureControlUiState:Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState;
 
     return-object p0
 .end method
@@ -241,7 +255,7 @@
 .method public getLensUiState()Ljp/co/sony/mc/camera/view/uistate/LensUiState;
     .locals 0
 
-    .line 110
+    .line 114
     iget-object p0, p0, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeSeamlessBinding;->mLensUiState:Ljp/co/sony/mc/camera/view/uistate/LensUiState;
 
     return-object p0
@@ -250,7 +264,7 @@
 .method public getOrientationViewModel()Ljp/co/sony/mc/camera/view/viewmodel/OrientationViewModel;
     .locals 0
 
-    .line 139
+    .line 143
     iget-object p0, p0, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeSeamlessBinding;->mOrientationViewModel:Ljp/co/sony/mc/camera/view/viewmodel/OrientationViewModel;
 
     return-object p0
@@ -259,7 +273,7 @@
 .method public getSinglelensModel()Ljp/co/sony/mc/camera/view/uistate/SingleLensViewModel;
     .locals 0
 
-    .line 103
+    .line 107
     iget-object p0, p0, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeSeamlessBinding;->mSinglelensModel:Ljp/co/sony/mc/camera/view/uistate/SingleLensViewModel;
 
     return-object p0
@@ -275,6 +289,9 @@
 .end method
 
 .method public abstract setCameraStatusModel(Ljp/co/sony/mc/camera/view/viewmodel/CameraStatusModel;)V
+.end method
+
+.method public abstract setCaptureControlUiState(Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState;)V
 .end method
 
 .method public abstract setLensUiState(Ljp/co/sony/mc/camera/view/uistate/LensUiState;)V

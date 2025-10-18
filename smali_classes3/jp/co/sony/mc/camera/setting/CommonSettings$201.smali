@@ -21,7 +21,7 @@
 .method constructor <init>()V
     .locals 0
 
-    .line 1838
+    .line 1844
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -42,8 +42,8 @@
         }
     .end annotation
 
-    .line 1842
-    invoke-static {}, Ljp/co/sony/mc/camera/configuration/parameters/StreamingAudioMute;->getDefaultValue()Ljp/co/sony/mc/camera/configuration/parameters/StreamingAudioMute;
+    .line 1848
+    invoke-static {}, Ljp/co/sony/mc/camera/configuration/parameters/FacebookGroupId;->getDefaultValue()Ljava/lang/String;
 
     move-result-object p0
 

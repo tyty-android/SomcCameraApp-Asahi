@@ -21,7 +21,7 @@
 .method constructor <init>()V
     .locals 0
 
-    .line 1498
+    .line 1555
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -46,13 +46,13 @@
         }
     .end annotation
 
-    .line 1502
+    .line 1559
     check-cast p1, Ljp/co/sony/mc/camera/setting/CameraSettings;
 
-    .line 1503
-    check-cast p3, Ljp/co/sony/mc/camera/configuration/parameters/SemiAutoMode;
+    .line 1560
+    check-cast p3, Ljp/co/sony/mc/camera/configuration/parameters/Mic;
 
-    invoke-virtual {p1, p3}, Ljp/co/sony/mc/camera/setting/CameraSettings;->setSemiAutoMode(Ljp/co/sony/mc/camera/configuration/parameters/SemiAutoMode;)Z
+    invoke-static {p1, p3}, Ljp/co/sony/mc/camera/setting/CameraSettings;->-$$Nest$msetMic(Ljp/co/sony/mc/camera/setting/CameraSettings;Ljp/co/sony/mc/camera/configuration/parameters/Mic;)Z
 
     move-result p0
 

@@ -10,7 +10,7 @@
 
 .annotation runtime Lkotlin/Metadata;
     d1 = {
-        "\u0000L\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0010\u000e\n\u0000\n\u0002\u0010\u0007\n\u0002\u0008\u0007\n\u0002\u0010 \n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0004\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0005\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0007\u001a\u0085\u0001\u0010\u0000\u001a\u00020\u00012\u0008\u0008\u0002\u0010\u0002\u001a\u00020\u00032\u0008\u0008\u0002\u0010\u0004\u001a\u00020\u00052\u0008\u0008\u0002\u0010\u0006\u001a\u00020\u00052\u0008\u0008\u0002\u0010\u0007\u001a\u00020\u00052\u0008\u0008\u0002\u0010\u0008\u001a\u00020\u00052\u0008\u0008\u0002\u0010\t\u001a\u00020\u00052\u0008\u0008\u0002\u0010\n\u001a\u00020\u00052\u0008\u0008\u0002\u0010\u000b\u001a\u00020\u00052\u000e\u0008\u0002\u0010\u000c\u001a\u0008\u0012\u0004\u0012\u00020\u000e0\r2\u0016\u0010\u000f\u001a\u0012\u0012\u0004\u0012\u00020\u00010\u0010\u00a2\u0006\u0002\u0008\u0011\u00a2\u0006\u0002\u0008\u0012H\u0007\u00a2\u0006\u0002\u0010\u0013\u001a\u00a9\u0001\u0010\u0014\u001a\u00020\u00012\u000c\u0010\u0015\u001a\u0008\u0012\u0004\u0012\u00020\u000e0\r2\u0008\u0008\u0002\u0010\u0016\u001a\u00020\u00172\u0008\u0008\u0002\u0010\u0002\u001a\u00020\u00032\n\u0008\u0002\u0010\u0018\u001a\u0004\u0018\u00010\u00192\u0008\u0008\u0002\u0010\u001a\u001a\u00020\u00052\n\u0008\u0002\u0010\u001b\u001a\u0004\u0018\u00010\u00192\u0008\u0008\u0002\u0010\u001c\u001a\u00020\u00052\u0008\u0008\u0002\u0010\u001d\u001a\u00020\u00052\u0008\u0008\u0002\u0010\u001e\u001a\u00020\u001f2\u0008\u0008\u0002\u0010 \u001a\u00020!2\u0008\u0008\u0002\u0010\"\u001a\u00020\u00052\u0008\u0008\u0002\u0010#\u001a\u00020\u00052\u0008\u0008\u0002\u0010$\u001a\u00020\u00052\u0008\u0008\u0002\u0010%\u001a\u00020\u0005H\u0007\u00f8\u0001\u0000\u00f8\u0001\u0001\u00a2\u0006\u0004\u0008&\u0010\'\u0082\u0002\u000b\n\u0005\u0008\u00a1\u001e0\u0001\n\u0002\u0008\u0019\u00a8\u0006("
+        "\u0000L\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0010\u000e\n\u0000\n\u0002\u0010\u0007\n\u0002\u0008\u0007\n\u0002\u0010 \n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0004\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0005\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0007\u001a\u0085\u0001\u0010\u0000\u001a\u00020\u00012\u0008\u0008\u0002\u0010\u0002\u001a\u00020\u00032\u0008\u0008\u0002\u0010\u0004\u001a\u00020\u00052\u0008\u0008\u0002\u0010\u0006\u001a\u00020\u00052\u0008\u0008\u0002\u0010\u0007\u001a\u00020\u00052\u0008\u0008\u0002\u0010\u0008\u001a\u00020\u00052\u0008\u0008\u0002\u0010\t\u001a\u00020\u00052\u0008\u0008\u0002\u0010\n\u001a\u00020\u00052\u0008\u0008\u0002\u0010\u000b\u001a\u00020\u00052\u000e\u0008\u0002\u0010\u000c\u001a\u0008\u0012\u0004\u0012\u00020\u000e0\r2\u0016\u0010\u000f\u001a\u0012\u0012\u0004\u0012\u00020\u00010\u0010\u00a2\u0006\u0002\u0008\u0011\u00a2\u0006\u0002\u0008\u0012H\u0007\u00a2\u0006\u0002\u0010\u0013\u001a\u00a6\u0001\u0010\u0014\u001a\u00020\u00012\u000c\u0010\u0015\u001a\u0008\u0012\u0004\u0012\u00020\u000e0\r2\u0008\u0008\u0002\u0010\u0016\u001a\u00020\u00172\u0008\u0008\u0002\u0010\u0002\u001a\u00020\u00032\n\u0008\u0002\u0010\u0018\u001a\u0004\u0018\u00010\u00192\u0008\u0008\u0002\u0010\u001a\u001a\u00020\u00052\n\u0008\u0002\u0010\u001b\u001a\u0004\u0018\u00010\u00192\u0008\u0008\u0002\u0010\u001c\u001a\u00020\u00052\u0008\u0008\u0002\u0010\u001d\u001a\u00020\u00052\u0008\u0008\u0002\u0010\u001e\u001a\u00020\u001f2\u0008\u0008\u0002\u0010 \u001a\u00020!2\u0008\u0008\u0002\u0010\"\u001a\u00020\u00052\u0008\u0008\u0002\u0010#\u001a\u00020\u00052\u0008\u0008\u0002\u0010$\u001a\u00020\u00052\u0008\u0008\u0002\u0010%\u001a\u00020\u0005H\u0007\u00f8\u0001\u0000\u00a2\u0006\u0004\u0008&\u0010\'\u0082\u0002\u0007\n\u0005\u0008\u00a1\u001e0\u0001\u00a8\u0006("
     }
     d2 = {
         "Group",
@@ -94,10 +94,6 @@
     move/from16 v11, p11
 
     move/from16 v12, p12
-
-    const-string v0, "content"
-
-    invoke-static {v10, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
     const v0, -0xcb87eca
 
@@ -649,7 +645,7 @@
 
     const/4 v3, -0x1
 
-    const-string v8, "androidx.compose.ui.graphics.vector.Group (VectorCompose.kt:46)"
+    const-string v8, "androidx.compose.ui.graphics.vector.Group (VectorCompose.kt:57)"
 
     const v11, -0xcb87eca
 
@@ -851,11 +847,8 @@
 
     move-result-object v14
 
-    if-nez v14, :cond_2e
+    if-eqz v14, :cond_2e
 
-    goto :goto_20
-
-    :cond_2e
     new-instance v15, Landroidx/compose/ui/graphics/vector/VectorComposeKt$Group$4;
 
     move-object v0, v15
@@ -878,7 +871,7 @@
 
     invoke-interface {v14, v15}, Landroidx/compose/runtime/ScopeUpdateScope;->updateScope(Lkotlin/jvm/functions/Function2;)V
 
-    :goto_20
+    :cond_2e
     return-void
 .end method
 
@@ -901,96 +894,94 @@
         }
     .end annotation
 
-    move-object/from16 v1, p0
-
     move/from16 v15, p17
-
-    const-string v0, "pathData"
-
-    invoke-static {v1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
     const v0, -0x581c9f1e
 
-    move-object/from16 v2, p14
+    move-object/from16 v1, p14
 
     .line 115
-    invoke-interface {v2, v0}, Landroidx/compose/runtime/Composer;->startRestartGroup(I)Landroidx/compose/runtime/Composer;
+    invoke-interface {v1, v0}, Landroidx/compose/runtime/Composer;->startRestartGroup(I)Landroidx/compose/runtime/Composer;
 
-    move-result-object v2
+    move-result-object v1
 
-    const-string v3, "C(Path)P(3,4:c#ui.graphics.PathFillType,2!4,10,7:c#ui.graphics.StrokeCap,8:c#ui.graphics.StrokeJoin!1,13)115@5068L876:VectorCompose.kt#huu6hf"
+    const-string v2, "C(Path)P(3,4:c#ui.graphics.PathFillType,2!4,10,7:c#ui.graphics.StrokeCap,8:c#ui.graphics.StrokeJoin!1,13)115@5068L876:VectorCompose.kt#huu6hf"
 
-    invoke-static {v2, v3}, Landroidx/compose/runtime/ComposerKt;->sourceInformation(Landroidx/compose/runtime/Composer;Ljava/lang/String;)V
+    invoke-static {v1, v2}, Landroidx/compose/runtime/ComposerKt;->sourceInformation(Landroidx/compose/runtime/Composer;Ljava/lang/String;)V
 
-    and-int/lit8 v3, v15, 0x2
+    and-int/lit8 v2, v15, 0x2
 
-    if-eqz v3, :cond_0
+    if-eqz v2, :cond_0
 
     .line 102
     invoke-static {}, Landroidx/compose/ui/graphics/vector/VectorKt;->getDefaultFillType()I
 
-    move-result v3
+    move-result v2
 
     goto :goto_0
 
     :cond_0
-    move/from16 v3, p1
+    move/from16 v2, p1
 
     :goto_0
-    and-int/lit8 v4, v15, 0x4
+    and-int/lit8 v3, v15, 0x4
 
-    if-eqz v4, :cond_1
+    if-eqz v3, :cond_1
 
     .line 103
-    const-string v4, ""
+    const-string v3, ""
 
     goto :goto_1
 
     :cond_1
-    move-object/from16 v4, p2
+    move-object/from16 v3, p2
 
     :goto_1
-    and-int/lit8 v5, v15, 0x8
+    and-int/lit8 v4, v15, 0x8
 
-    const/4 v6, 0x0
+    const/4 v5, 0x0
 
-    if-eqz v5, :cond_2
+    if-eqz v4, :cond_2
 
-    move-object v5, v6
+    move-object v4, v5
 
     goto :goto_2
 
     :cond_2
-    move-object/from16 v5, p3
+    move-object/from16 v4, p3
 
     :goto_2
-    and-int/lit8 v7, v15, 0x10
-
-    if-eqz v7, :cond_3
+    and-int/lit8 v6, v15, 0x10
 
     const/high16 v7, 0x3f800000    # 1.0f
+
+    if-eqz v6, :cond_3
+
+    move v6, v7
 
     goto :goto_3
 
     :cond_3
-    move/from16 v7, p4
+    move/from16 v6, p4
 
     :goto_3
-    and-int/lit8 v9, v15, 0x20
+    and-int/lit8 v8, v15, 0x20
 
-    if-eqz v9, :cond_4
+    if-eqz v8, :cond_4
+
+    move-object v8, v5
 
     goto :goto_4
 
     :cond_4
-    move-object/from16 v6, p5
+    move-object/from16 v8, p5
 
     :goto_4
-    and-int/lit8 v9, v15, 0x40
+    and-int/lit8 v5, v15, 0x40
 
-    if-eqz v9, :cond_5
+    if-eqz v5, :cond_5
 
-    const/high16 v9, 0x3f800000    # 1.0f
+    move v9, v7
 
     goto :goto_5
 
@@ -998,28 +989,30 @@
     move/from16 v9, p6
 
     :goto_5
-    and-int/lit16 v10, v15, 0x80
+    and-int/lit16 v5, v15, 0x80
 
-    const/4 v11, 0x0
+    const/4 v10, 0x0
 
-    if-eqz v10, :cond_6
+    if-eqz v5, :cond_6
 
-    move v10, v11
+    move v11, v10
 
     goto :goto_6
 
     :cond_6
-    move/from16 v10, p7
+    move/from16 v11, p7
 
     :goto_6
-    and-int/lit16 v12, v15, 0x100
+    and-int/lit16 v5, v15, 0x100
 
-    if-eqz v12, :cond_7
+    if-eqz v5, :cond_7
 
     .line 109
     invoke-static {}, Landroidx/compose/ui/graphics/vector/VectorKt;->getDefaultStrokeLineCap()I
 
-    move-result v12
+    move-result v5
+
+    move v12, v5
 
     goto :goto_7
 
@@ -1027,14 +1020,16 @@
     move/from16 v12, p8
 
     :goto_7
-    and-int/lit16 v13, v15, 0x200
+    and-int/lit16 v5, v15, 0x200
 
-    if-eqz v13, :cond_8
+    if-eqz v5, :cond_8
 
     .line 110
     invoke-static {}, Landroidx/compose/ui/graphics/vector/VectorKt;->getDefaultStrokeLineJoin()I
 
-    move-result v13
+    move-result v5
+
+    move v13, v5
 
     goto :goto_8
 
@@ -1042,11 +1037,13 @@
     move/from16 v13, p9
 
     :goto_8
-    and-int/lit16 v14, v15, 0x400
+    and-int/lit16 v5, v15, 0x400
 
-    if-eqz v14, :cond_9
+    if-eqz v5, :cond_9
 
-    const/high16 v14, 0x40800000    # 4.0f
+    const/high16 v5, 0x40800000    # 4.0f
+
+    move v14, v5
 
     goto :goto_9
 
@@ -1054,11 +1051,11 @@
     move/from16 v14, p10
 
     :goto_9
-    and-int/lit16 v8, v15, 0x800
+    and-int/lit16 v5, v15, 0x800
 
-    if-eqz v8, :cond_a
+    if-eqz v5, :cond_a
 
-    move/from16 v16, v11
+    move/from16 v16, v10
 
     goto :goto_a
 
@@ -1066,11 +1063,11 @@
     move/from16 v16, p11
 
     :goto_a
-    and-int/lit16 v8, v15, 0x1000
+    and-int/lit16 v5, v15, 0x1000
 
-    if-eqz v8, :cond_b
+    if-eqz v5, :cond_b
 
-    const/high16 v17, 0x3f800000    # 1.0f
+    move/from16 v17, v7
 
     goto :goto_b
 
@@ -1078,11 +1075,11 @@
     move/from16 v17, p12
 
     :goto_b
-    and-int/lit16 v8, v15, 0x2000
+    and-int/lit16 v5, v15, 0x2000
 
-    if-eqz v8, :cond_c
+    if-eqz v5, :cond_c
 
-    move/from16 v18, v11
+    move/from16 v18, v10
 
     goto :goto_c
 
@@ -1093,25 +1090,25 @@
     :goto_c
     invoke-static {}, Landroidx/compose/runtime/ComposerKt;->isTraceInProgress()Z
 
-    move-result v8
+    move-result v5
 
-    if-eqz v8, :cond_d
+    if-eqz v5, :cond_d
 
-    const-string v8, "androidx.compose.ui.graphics.vector.Path (VectorCompose.kt:99)"
+    const-string v5, "androidx.compose.ui.graphics.vector.Path (VectorCompose.kt:114)"
 
-    move/from16 v11, p15
+    move/from16 v10, p15
 
-    move/from16 v15, p16
+    move/from16 v7, p16
 
     .line 115
-    invoke-static {v0, v11, v15, v8}, Landroidx/compose/runtime/ComposerKt;->traceEventStart(IIILjava/lang/String;)V
+    invoke-static {v0, v10, v7, v5}, Landroidx/compose/runtime/ComposerKt;->traceEventStart(IIILjava/lang/String;)V
 
     goto :goto_d
 
     :cond_d
-    move/from16 v11, p15
+    move/from16 v10, p15
 
-    move/from16 v15, p16
+    move/from16 v7, p16
 
     .line 116
     :goto_d
@@ -1119,201 +1116,203 @@
 
     check-cast v0, Lkotlin/jvm/functions/Function0;
 
-    const v8, 0x7076b8d0
+    const v5, 0x7076b8d0
 
-    invoke-interface {v2, v8}, Landroidx/compose/runtime/Composer;->startReplaceableGroup(I)V
+    invoke-interface {v1, v5}, Landroidx/compose/runtime/Composer;->startReplaceableGroup(I)V
 
-    const-string v8, "CC(ComposeNode):Composables.kt#9igjgp"
+    const-string v5, "CC(ComposeNode):Composables.kt#9igjgp"
 
-    invoke-static {v2, v8}, Landroidx/compose/runtime/ComposerKt;->sourceInformation(Landroidx/compose/runtime/Composer;Ljava/lang/String;)V
+    invoke-static {v1, v5}, Landroidx/compose/runtime/ComposerKt;->sourceInformation(Landroidx/compose/runtime/Composer;Ljava/lang/String;)V
 
     .line 177
-    invoke-interface {v2}, Landroidx/compose/runtime/Composer;->getApplier()Landroidx/compose/runtime/Applier;
+    invoke-interface {v1}, Landroidx/compose/runtime/Composer;->getApplier()Landroidx/compose/runtime/Applier;
 
-    move-result-object v8
+    move-result-object v5
 
-    instance-of v8, v8, Landroidx/compose/ui/graphics/vector/VectorApplier;
+    instance-of v5, v5, Landroidx/compose/ui/graphics/vector/VectorApplier;
 
-    if-nez v8, :cond_e
+    if-nez v5, :cond_e
 
     invoke-static {}, Landroidx/compose/runtime/ComposablesKt;->invalidApplier()V
 
     .line 178
     :cond_e
-    invoke-interface {v2}, Landroidx/compose/runtime/Composer;->startNode()V
+    invoke-interface {v1}, Landroidx/compose/runtime/Composer;->startNode()V
 
     .line 179
-    invoke-interface {v2}, Landroidx/compose/runtime/Composer;->getInserting()Z
+    invoke-interface {v1}, Landroidx/compose/runtime/Composer;->getInserting()Z
 
-    move-result v8
+    move-result v5
 
-    if-eqz v8, :cond_f
+    if-eqz v5, :cond_f
 
     .line 180
-    new-instance v8, Landroidx/compose/ui/graphics/vector/VectorComposeKt$Path-9cdaXJ4$$inlined$ComposeNode$1;
+    new-instance v5, Landroidx/compose/ui/graphics/vector/VectorComposeKt$Path-9cdaXJ4$$inlined$ComposeNode$1;
 
-    invoke-direct {v8, v0}, Landroidx/compose/ui/graphics/vector/VectorComposeKt$Path-9cdaXJ4$$inlined$ComposeNode$1;-><init>(Lkotlin/jvm/functions/Function0;)V
+    invoke-direct {v5, v0}, Landroidx/compose/ui/graphics/vector/VectorComposeKt$Path-9cdaXJ4$$inlined$ComposeNode$1;-><init>(Lkotlin/jvm/functions/Function0;)V
 
-    check-cast v8, Lkotlin/jvm/functions/Function0;
+    check-cast v5, Lkotlin/jvm/functions/Function0;
 
-    invoke-interface {v2, v8}, Landroidx/compose/runtime/Composer;->createNode(Lkotlin/jvm/functions/Function0;)V
+    invoke-interface {v1, v5}, Landroidx/compose/runtime/Composer;->createNode(Lkotlin/jvm/functions/Function0;)V
 
     goto :goto_e
 
     .line 182
     :cond_f
-    invoke-interface {v2}, Landroidx/compose/runtime/Composer;->useNode()V
+    invoke-interface {v1}, Landroidx/compose/runtime/Composer;->useNode()V
 
     .line 184
     :goto_e
-    invoke-static {v2}, Landroidx/compose/runtime/Updater;->constructor-impl(Landroidx/compose/runtime/Composer;)Landroidx/compose/runtime/Composer;
+    invoke-static {v1}, Landroidx/compose/runtime/Updater;->constructor-impl(Landroidx/compose/runtime/Composer;)Landroidx/compose/runtime/Composer;
 
     move-result-object v0
 
     .line 119
-    sget-object v8, Landroidx/compose/ui/graphics/vector/VectorComposeKt$Path$2$1;->INSTANCE:Landroidx/compose/ui/graphics/vector/VectorComposeKt$Path$2$1;
+    sget-object v5, Landroidx/compose/ui/graphics/vector/VectorComposeKt$Path$2$1;->INSTANCE:Landroidx/compose/ui/graphics/vector/VectorComposeKt$Path$2$1;
 
-    check-cast v8, Lkotlin/jvm/functions/Function2;
+    check-cast v5, Lkotlin/jvm/functions/Function2;
 
-    invoke-static {v0, v4, v8}, Landroidx/compose/runtime/Updater;->set-impl(Landroidx/compose/runtime/Composer;Ljava/lang/Object;Lkotlin/jvm/functions/Function2;)V
+    invoke-static {v0, v3, v5}, Landroidx/compose/runtime/Updater;->set-impl(Landroidx/compose/runtime/Composer;Ljava/lang/Object;Lkotlin/jvm/functions/Function2;)V
 
     .line 120
-    sget-object v8, Landroidx/compose/ui/graphics/vector/VectorComposeKt$Path$2$2;->INSTANCE:Landroidx/compose/ui/graphics/vector/VectorComposeKt$Path$2$2;
+    sget-object v5, Landroidx/compose/ui/graphics/vector/VectorComposeKt$Path$2$2;->INSTANCE:Landroidx/compose/ui/graphics/vector/VectorComposeKt$Path$2$2;
 
-    check-cast v8, Lkotlin/jvm/functions/Function2;
+    check-cast v5, Lkotlin/jvm/functions/Function2;
 
-    invoke-static {v0, v1, v8}, Landroidx/compose/runtime/Updater;->set-impl(Landroidx/compose/runtime/Composer;Ljava/lang/Object;Lkotlin/jvm/functions/Function2;)V
+    move-object/from16 v7, p0
+
+    invoke-static {v0, v7, v5}, Landroidx/compose/runtime/Updater;->set-impl(Landroidx/compose/runtime/Composer;Ljava/lang/Object;Lkotlin/jvm/functions/Function2;)V
 
     .line 121
-    invoke-static {v3}, Landroidx/compose/ui/graphics/PathFillType;->box-impl(I)Landroidx/compose/ui/graphics/PathFillType;
+    invoke-static {v2}, Landroidx/compose/ui/graphics/PathFillType;->box-impl(I)Landroidx/compose/ui/graphics/PathFillType;
 
-    move-result-object v8
+    move-result-object v5
 
     sget-object v19, Landroidx/compose/ui/graphics/vector/VectorComposeKt$Path$2$3;->INSTANCE:Landroidx/compose/ui/graphics/vector/VectorComposeKt$Path$2$3;
 
-    move-object/from16 v1, v19
+    move-object/from16 v7, v19
 
-    check-cast v1, Lkotlin/jvm/functions/Function2;
+    check-cast v7, Lkotlin/jvm/functions/Function2;
 
-    invoke-static {v0, v8, v1}, Landroidx/compose/runtime/Updater;->set-impl(Landroidx/compose/runtime/Composer;Ljava/lang/Object;Lkotlin/jvm/functions/Function2;)V
+    invoke-static {v0, v5, v7}, Landroidx/compose/runtime/Updater;->set-impl(Landroidx/compose/runtime/Composer;Ljava/lang/Object;Lkotlin/jvm/functions/Function2;)V
 
     .line 122
-    sget-object v1, Landroidx/compose/ui/graphics/vector/VectorComposeKt$Path$2$4;->INSTANCE:Landroidx/compose/ui/graphics/vector/VectorComposeKt$Path$2$4;
+    sget-object v5, Landroidx/compose/ui/graphics/vector/VectorComposeKt$Path$2$4;->INSTANCE:Landroidx/compose/ui/graphics/vector/VectorComposeKt$Path$2$4;
 
-    check-cast v1, Lkotlin/jvm/functions/Function2;
+    check-cast v5, Lkotlin/jvm/functions/Function2;
 
-    invoke-static {v0, v5, v1}, Landroidx/compose/runtime/Updater;->set-impl(Landroidx/compose/runtime/Composer;Ljava/lang/Object;Lkotlin/jvm/functions/Function2;)V
+    invoke-static {v0, v4, v5}, Landroidx/compose/runtime/Updater;->set-impl(Landroidx/compose/runtime/Composer;Ljava/lang/Object;Lkotlin/jvm/functions/Function2;)V
 
     .line 123
-    invoke-static {v7}, Ljava/lang/Float;->valueOf(F)Ljava/lang/Float;
+    invoke-static {v6}, Ljava/lang/Float;->valueOf(F)Ljava/lang/Float;
 
-    move-result-object v1
+    move-result-object v5
 
-    sget-object v8, Landroidx/compose/ui/graphics/vector/VectorComposeKt$Path$2$5;->INSTANCE:Landroidx/compose/ui/graphics/vector/VectorComposeKt$Path$2$5;
+    sget-object v7, Landroidx/compose/ui/graphics/vector/VectorComposeKt$Path$2$5;->INSTANCE:Landroidx/compose/ui/graphics/vector/VectorComposeKt$Path$2$5;
 
-    check-cast v8, Lkotlin/jvm/functions/Function2;
+    check-cast v7, Lkotlin/jvm/functions/Function2;
 
-    invoke-static {v0, v1, v8}, Landroidx/compose/runtime/Updater;->set-impl(Landroidx/compose/runtime/Composer;Ljava/lang/Object;Lkotlin/jvm/functions/Function2;)V
+    invoke-static {v0, v5, v7}, Landroidx/compose/runtime/Updater;->set-impl(Landroidx/compose/runtime/Composer;Ljava/lang/Object;Lkotlin/jvm/functions/Function2;)V
 
     .line 124
-    sget-object v1, Landroidx/compose/ui/graphics/vector/VectorComposeKt$Path$2$6;->INSTANCE:Landroidx/compose/ui/graphics/vector/VectorComposeKt$Path$2$6;
+    sget-object v5, Landroidx/compose/ui/graphics/vector/VectorComposeKt$Path$2$6;->INSTANCE:Landroidx/compose/ui/graphics/vector/VectorComposeKt$Path$2$6;
 
-    check-cast v1, Lkotlin/jvm/functions/Function2;
+    check-cast v5, Lkotlin/jvm/functions/Function2;
 
-    invoke-static {v0, v6, v1}, Landroidx/compose/runtime/Updater;->set-impl(Landroidx/compose/runtime/Composer;Ljava/lang/Object;Lkotlin/jvm/functions/Function2;)V
+    invoke-static {v0, v8, v5}, Landroidx/compose/runtime/Updater;->set-impl(Landroidx/compose/runtime/Composer;Ljava/lang/Object;Lkotlin/jvm/functions/Function2;)V
 
     .line 125
     invoke-static {v9}, Ljava/lang/Float;->valueOf(F)Ljava/lang/Float;
 
-    move-result-object v1
+    move-result-object v5
 
-    sget-object v8, Landroidx/compose/ui/graphics/vector/VectorComposeKt$Path$2$7;->INSTANCE:Landroidx/compose/ui/graphics/vector/VectorComposeKt$Path$2$7;
+    sget-object v7, Landroidx/compose/ui/graphics/vector/VectorComposeKt$Path$2$7;->INSTANCE:Landroidx/compose/ui/graphics/vector/VectorComposeKt$Path$2$7;
 
-    check-cast v8, Lkotlin/jvm/functions/Function2;
+    check-cast v7, Lkotlin/jvm/functions/Function2;
 
-    invoke-static {v0, v1, v8}, Landroidx/compose/runtime/Updater;->set-impl(Landroidx/compose/runtime/Composer;Ljava/lang/Object;Lkotlin/jvm/functions/Function2;)V
+    invoke-static {v0, v5, v7}, Landroidx/compose/runtime/Updater;->set-impl(Landroidx/compose/runtime/Composer;Ljava/lang/Object;Lkotlin/jvm/functions/Function2;)V
 
     .line 126
-    invoke-static {v10}, Ljava/lang/Float;->valueOf(F)Ljava/lang/Float;
+    invoke-static {v11}, Ljava/lang/Float;->valueOf(F)Ljava/lang/Float;
 
-    move-result-object v1
+    move-result-object v5
 
-    sget-object v8, Landroidx/compose/ui/graphics/vector/VectorComposeKt$Path$2$8;->INSTANCE:Landroidx/compose/ui/graphics/vector/VectorComposeKt$Path$2$8;
+    sget-object v7, Landroidx/compose/ui/graphics/vector/VectorComposeKt$Path$2$8;->INSTANCE:Landroidx/compose/ui/graphics/vector/VectorComposeKt$Path$2$8;
 
-    check-cast v8, Lkotlin/jvm/functions/Function2;
+    check-cast v7, Lkotlin/jvm/functions/Function2;
 
-    invoke-static {v0, v1, v8}, Landroidx/compose/runtime/Updater;->set-impl(Landroidx/compose/runtime/Composer;Ljava/lang/Object;Lkotlin/jvm/functions/Function2;)V
+    invoke-static {v0, v5, v7}, Landroidx/compose/runtime/Updater;->set-impl(Landroidx/compose/runtime/Composer;Ljava/lang/Object;Lkotlin/jvm/functions/Function2;)V
 
     .line 127
     invoke-static {v13}, Landroidx/compose/ui/graphics/StrokeJoin;->box-impl(I)Landroidx/compose/ui/graphics/StrokeJoin;
 
-    move-result-object v1
+    move-result-object v5
 
-    sget-object v8, Landroidx/compose/ui/graphics/vector/VectorComposeKt$Path$2$9;->INSTANCE:Landroidx/compose/ui/graphics/vector/VectorComposeKt$Path$2$9;
+    sget-object v7, Landroidx/compose/ui/graphics/vector/VectorComposeKt$Path$2$9;->INSTANCE:Landroidx/compose/ui/graphics/vector/VectorComposeKt$Path$2$9;
 
-    check-cast v8, Lkotlin/jvm/functions/Function2;
+    check-cast v7, Lkotlin/jvm/functions/Function2;
 
-    invoke-static {v0, v1, v8}, Landroidx/compose/runtime/Updater;->set-impl(Landroidx/compose/runtime/Composer;Ljava/lang/Object;Lkotlin/jvm/functions/Function2;)V
+    invoke-static {v0, v5, v7}, Landroidx/compose/runtime/Updater;->set-impl(Landroidx/compose/runtime/Composer;Ljava/lang/Object;Lkotlin/jvm/functions/Function2;)V
 
     .line 128
     invoke-static {v12}, Landroidx/compose/ui/graphics/StrokeCap;->box-impl(I)Landroidx/compose/ui/graphics/StrokeCap;
 
-    move-result-object v1
+    move-result-object v5
 
-    sget-object v8, Landroidx/compose/ui/graphics/vector/VectorComposeKt$Path$2$10;->INSTANCE:Landroidx/compose/ui/graphics/vector/VectorComposeKt$Path$2$10;
+    sget-object v7, Landroidx/compose/ui/graphics/vector/VectorComposeKt$Path$2$10;->INSTANCE:Landroidx/compose/ui/graphics/vector/VectorComposeKt$Path$2$10;
 
-    check-cast v8, Lkotlin/jvm/functions/Function2;
+    check-cast v7, Lkotlin/jvm/functions/Function2;
 
-    invoke-static {v0, v1, v8}, Landroidx/compose/runtime/Updater;->set-impl(Landroidx/compose/runtime/Composer;Ljava/lang/Object;Lkotlin/jvm/functions/Function2;)V
+    invoke-static {v0, v5, v7}, Landroidx/compose/runtime/Updater;->set-impl(Landroidx/compose/runtime/Composer;Ljava/lang/Object;Lkotlin/jvm/functions/Function2;)V
 
     .line 129
     invoke-static {v14}, Ljava/lang/Float;->valueOf(F)Ljava/lang/Float;
 
-    move-result-object v1
+    move-result-object v5
 
-    sget-object v8, Landroidx/compose/ui/graphics/vector/VectorComposeKt$Path$2$11;->INSTANCE:Landroidx/compose/ui/graphics/vector/VectorComposeKt$Path$2$11;
+    sget-object v7, Landroidx/compose/ui/graphics/vector/VectorComposeKt$Path$2$11;->INSTANCE:Landroidx/compose/ui/graphics/vector/VectorComposeKt$Path$2$11;
 
-    check-cast v8, Lkotlin/jvm/functions/Function2;
+    check-cast v7, Lkotlin/jvm/functions/Function2;
 
-    invoke-static {v0, v1, v8}, Landroidx/compose/runtime/Updater;->set-impl(Landroidx/compose/runtime/Composer;Ljava/lang/Object;Lkotlin/jvm/functions/Function2;)V
+    invoke-static {v0, v5, v7}, Landroidx/compose/runtime/Updater;->set-impl(Landroidx/compose/runtime/Composer;Ljava/lang/Object;Lkotlin/jvm/functions/Function2;)V
 
     .line 130
     invoke-static/range {v16 .. v16}, Ljava/lang/Float;->valueOf(F)Ljava/lang/Float;
 
-    move-result-object v1
+    move-result-object v5
 
-    sget-object v8, Landroidx/compose/ui/graphics/vector/VectorComposeKt$Path$2$12;->INSTANCE:Landroidx/compose/ui/graphics/vector/VectorComposeKt$Path$2$12;
+    sget-object v7, Landroidx/compose/ui/graphics/vector/VectorComposeKt$Path$2$12;->INSTANCE:Landroidx/compose/ui/graphics/vector/VectorComposeKt$Path$2$12;
 
-    check-cast v8, Lkotlin/jvm/functions/Function2;
+    check-cast v7, Lkotlin/jvm/functions/Function2;
 
-    invoke-static {v0, v1, v8}, Landroidx/compose/runtime/Updater;->set-impl(Landroidx/compose/runtime/Composer;Ljava/lang/Object;Lkotlin/jvm/functions/Function2;)V
+    invoke-static {v0, v5, v7}, Landroidx/compose/runtime/Updater;->set-impl(Landroidx/compose/runtime/Composer;Ljava/lang/Object;Lkotlin/jvm/functions/Function2;)V
 
     .line 131
     invoke-static/range {v17 .. v17}, Ljava/lang/Float;->valueOf(F)Ljava/lang/Float;
 
-    move-result-object v1
+    move-result-object v5
 
-    sget-object v8, Landroidx/compose/ui/graphics/vector/VectorComposeKt$Path$2$13;->INSTANCE:Landroidx/compose/ui/graphics/vector/VectorComposeKt$Path$2$13;
+    sget-object v7, Landroidx/compose/ui/graphics/vector/VectorComposeKt$Path$2$13;->INSTANCE:Landroidx/compose/ui/graphics/vector/VectorComposeKt$Path$2$13;
 
-    check-cast v8, Lkotlin/jvm/functions/Function2;
+    check-cast v7, Lkotlin/jvm/functions/Function2;
 
-    invoke-static {v0, v1, v8}, Landroidx/compose/runtime/Updater;->set-impl(Landroidx/compose/runtime/Composer;Ljava/lang/Object;Lkotlin/jvm/functions/Function2;)V
+    invoke-static {v0, v5, v7}, Landroidx/compose/runtime/Updater;->set-impl(Landroidx/compose/runtime/Composer;Ljava/lang/Object;Lkotlin/jvm/functions/Function2;)V
 
     .line 132
     invoke-static/range {v18 .. v18}, Ljava/lang/Float;->valueOf(F)Ljava/lang/Float;
 
-    move-result-object v1
+    move-result-object v5
 
-    sget-object v8, Landroidx/compose/ui/graphics/vector/VectorComposeKt$Path$2$14;->INSTANCE:Landroidx/compose/ui/graphics/vector/VectorComposeKt$Path$2$14;
+    sget-object v7, Landroidx/compose/ui/graphics/vector/VectorComposeKt$Path$2$14;->INSTANCE:Landroidx/compose/ui/graphics/vector/VectorComposeKt$Path$2$14;
 
-    check-cast v8, Lkotlin/jvm/functions/Function2;
+    check-cast v7, Lkotlin/jvm/functions/Function2;
 
-    invoke-static {v0, v1, v8}, Landroidx/compose/runtime/Updater;->set-impl(Landroidx/compose/runtime/Composer;Ljava/lang/Object;Lkotlin/jvm/functions/Function2;)V
+    invoke-static {v0, v5, v7}, Landroidx/compose/runtime/Updater;->set-impl(Landroidx/compose/runtime/Composer;Ljava/lang/Object;Lkotlin/jvm/functions/Function2;)V
 
     .line 185
-    invoke-interface {v2}, Landroidx/compose/runtime/Composer;->endNode()V
+    invoke-interface {v1}, Landroidx/compose/runtime/Composer;->endNode()V
 
-    invoke-interface {v2}, Landroidx/compose/runtime/Composer;->endReplaceableGroup()V
+    invoke-interface {v1}, Landroidx/compose/runtime/Composer;->endReplaceableGroup()V
 
     .line 186
     invoke-static {}, Landroidx/compose/runtime/ComposerKt;->isTraceInProgress()Z
@@ -1325,48 +1324,43 @@
     invoke-static {}, Landroidx/compose/runtime/ComposerKt;->traceEventEnd()V
 
     :cond_10
-    invoke-interface {v2}, Landroidx/compose/runtime/Composer;->endRestartGroup()Landroidx/compose/runtime/ScopeUpdateScope;
+    invoke-interface {v1}, Landroidx/compose/runtime/Composer;->endRestartGroup()Landroidx/compose/runtime/ScopeUpdateScope;
 
-    move-result-object v8
+    move-result-object v7
 
-    if-nez v8, :cond_11
+    if-eqz v7, :cond_11
 
-    goto :goto_f
-
-    :cond_11
     new-instance v19, Landroidx/compose/ui/graphics/vector/VectorComposeKt$Path$3;
 
     move-object/from16 v0, v19
 
     move-object/from16 v1, p0
 
-    move v2, v3
+    move v5, v6
 
-    move-object v3, v4
+    move-object v6, v8
 
-    move-object v4, v5
-
-    move v5, v7
+    move-object v8, v7
 
     move v7, v9
 
     move-object v9, v8
 
-    move v8, v10
+    move v8, v11
 
-    move-object v10, v9
+    move-object v11, v9
 
     move v9, v12
 
-    move-object v12, v10
-
     move v10, v13
+
+    move-object v13, v11
 
     move v11, v14
 
-    move-object v14, v12
-
     move/from16 v12, v16
+
+    move-object v14, v13
 
     move/from16 v13, v17
 
@@ -1390,6 +1384,6 @@
 
     invoke-interface {v1, v0}, Landroidx/compose/runtime/ScopeUpdateScope;->updateScope(Lkotlin/jvm/functions/Function2;)V
 
-    :goto_f
+    :cond_11
     return-void
 .end method

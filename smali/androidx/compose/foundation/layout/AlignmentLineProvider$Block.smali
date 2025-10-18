@@ -88,13 +88,9 @@
         }
     .end annotation
 
-    const-string v0, "lineProviderBlock"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
     const/4 v0, 0x0
 
-    .line 836
+    .line 839
     invoke-direct {p0, v0}, Landroidx/compose/foundation/layout/AlignmentLineProvider;-><init>(Lkotlin/jvm/internal/DefaultConstructorMarker;)V
 
     iput-object p1, p0, Landroidx/compose/foundation/layout/AlignmentLineProvider$Block;->lineProviderBlock:Lkotlin/jvm/functions/Function1;
@@ -122,13 +118,9 @@
 
 # virtual methods
 .method public calculateAlignmentLinePosition(Landroidx/compose/ui/layout/Placeable;)I
-    .locals 1
+    .locals 0
 
-    const-string v0, "placeable"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 840
+    .line 843
     iget-object p0, p0, Landroidx/compose/foundation/layout/AlignmentLineProvider$Block;->lineProviderBlock:Lkotlin/jvm/functions/Function1;
 
     invoke-interface {p0, p1}, Lkotlin/jvm/functions/Function1;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
@@ -174,10 +166,6 @@
             "Landroidx/compose/foundation/layout/AlignmentLineProvider$Block;"
         }
     .end annotation
-
-    const-string p0, "lineProviderBlock"
-
-    invoke-static {p1, p0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
     new-instance p0, Landroidx/compose/foundation/layout/AlignmentLineProvider$Block;
 
@@ -235,7 +223,7 @@
         }
     .end annotation
 
-    .line 836
+    .line 839
     iget-object p0, p0, Landroidx/compose/foundation/layout/AlignmentLineProvider$Block;->lineProviderBlock:Lkotlin/jvm/functions/Function1;
 
     return-object p0

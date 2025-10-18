@@ -31,7 +31,7 @@
         0x0
     }
     l = {
-        0x36c
+        0x36e
     }
     m = "awaitHorizontalDragOrCancellation-rnUCldI"
     n = {

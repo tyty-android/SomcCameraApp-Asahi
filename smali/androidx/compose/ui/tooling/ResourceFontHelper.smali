@@ -1,6 +1,6 @@
 .class final Landroidx/compose/ui/tooling/ResourceFontHelper;
 .super Ljava/lang/Object;
-.source "LayoutlibFontResourceLoader.kt"
+.source "LayoutlibFontResourceLoader.android.kt"
 
 
 # annotations
@@ -61,14 +61,6 @@
 .method public final load(Landroid/content/Context;Landroidx/compose/ui/text/font/ResourceFont;)Landroid/graphics/Typeface;
     .locals 0
 
-    const-string p0, "context"
-
-    invoke-static {p1, p0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string p0, "font"
-
-    invoke-static {p2, p0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
     .line 49
     invoke-virtual {p1}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
 
@@ -81,10 +73,6 @@
     invoke-virtual {p0, p1}, Landroid/content/res/Resources;->getFont(I)Landroid/graphics/Typeface;
 
     move-result-object p0
-
-    const-string p1, "context.resources.getFont(font.resId)"
-
-    invoke-static {p0, p1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
 
     return-object p0
 .end method

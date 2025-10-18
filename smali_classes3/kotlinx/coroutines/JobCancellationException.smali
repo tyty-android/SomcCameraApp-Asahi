@@ -50,7 +50,7 @@
     k = 0x1
     mv = {
         0x1,
-        0x6,
+        0x8,
         0x0
     }
     xi = 0x30
@@ -217,10 +217,6 @@
 
     .line 77
     new-array v0, v0, [Ljava/lang/StackTraceElement;
-
-    check-cast v0, [Ljava/lang/Object;
-
-    check-cast v0, [Ljava/lang/StackTraceElement;
 
     .line 44
     invoke-virtual {p0, v0}, Lkotlinx/coroutines/JobCancellationException;->setStackTrace([Ljava/lang/StackTraceElement;)V

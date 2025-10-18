@@ -38,18 +38,18 @@
 .method constructor <init>(I)V
     .locals 1
 
-    .line 949
+    .line 950
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     const/4 v0, -0x1
 
-    .line 945
+    .line 946
     iput v0, p0, Landroidx/emoji2/text/EmojiProcessor$EmojiProcessLookupCallback;->start:I
 
-    .line 947
+    .line 948
     iput v0, p0, Landroidx/emoji2/text/EmojiProcessor$EmojiProcessLookupCallback;->end:I
 
-    .line 950
+    .line 951
     iput p1, p0, Landroidx/emoji2/text/EmojiProcessor$EmojiProcessLookupCallback;->mOffset:I
 
     return-void
@@ -66,7 +66,7 @@
 .method public bridge synthetic getResult()Ljava/lang/Object;
     .locals 0
 
-    .line 941
+    .line 942
     invoke-virtual {p0}, Landroidx/emoji2/text/EmojiProcessor$EmojiProcessLookupCallback;->getResult()Landroidx/emoji2/text/EmojiProcessor$EmojiProcessLookupCallback;
 
     move-result-object p0
@@ -77,7 +77,7 @@
 .method public handleEmoji(Ljava/lang/CharSequence;IILandroidx/emoji2/text/TypefaceEmojiRasterizer;)Z
     .locals 0
 
-    .line 956
+    .line 957
     iget p1, p0, Landroidx/emoji2/text/EmojiProcessor$EmojiProcessLookupCallback;->mOffset:I
 
     const/4 p4, 0x0
@@ -86,10 +86,10 @@
 
     if-ge p1, p3, :cond_0
 
-    .line 957
+    .line 958
     iput p2, p0, Landroidx/emoji2/text/EmojiProcessor$EmojiProcessLookupCallback;->start:I
 
-    .line 958
+    .line 959
     iput p3, p0, Landroidx/emoji2/text/EmojiProcessor$EmojiProcessLookupCallback;->end:I
 
     return p4

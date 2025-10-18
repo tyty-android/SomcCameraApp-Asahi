@@ -62,6 +62,8 @@
     <string name="switch_role">Chave</string>
     <string name="tab">Guia</string>
     <string name="template_percent">%1$d%%</string>
+    <string name="tooltip_description">dica</string>
+    <string name="tooltip_label">mostrar dica</string>
     <string name="v7_preference_off">DESATIVADO</string>
     <string name="v7_preference_on">ATIVADO</string>
 </resources>

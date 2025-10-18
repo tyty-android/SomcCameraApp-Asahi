@@ -384,7 +384,7 @@
 .end method
 
 .method public static translateKeyCode(I)Ljp/co/sony/mc/camera/util/KeyEventTranslator$TranslatedKeyCode;
-    .locals 3
+    .locals 4
 
     const/4 v0, 0x4
 
@@ -474,22 +474,24 @@
 
     if-eq v1, v2, :cond_5
 
-    const/4 v2, 0x2
+    const/4 v3, 0x2
 
-    if-eq v1, v2, :cond_4
+    if-eq v1, v3, :cond_4
 
-    const/4 v2, 0x3
+    const/4 v3, 0x3
 
-    if-eq v1, v2, :cond_2
+    if-eq v1, v3, :cond_2
 
     if-eq v1, v0, :cond_1
 
     .line 157
-    const-string v0, "Volume key parameter is invalid state."
+    new-array v0, v2, [Ljava/lang/String;
 
-    filled-new-array {v0}, [Ljava/lang/String;
+    const/4 v1, 0x0
 
-    move-result-object v0
+    const-string v2, "Volume key parameter is invalid state."
+
+    aput-object v2, v0, v1
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/util/CamLog;->e([Ljava/lang/String;)V
 
@@ -605,8 +607,6 @@
 
     :goto_0
     return-object p0
-
-    nop
 
     :pswitch_data_0
     .packed-switch 0x13

@@ -61,7 +61,7 @@
     .line 16
     new-instance v0, Ljp/co/sony/mc/camera/configuration/parameters/DispCustom;
 
-    const v1, 0x7f11017c
+    const v1, 0x7f11017f
 
     const-string v2, "HEADER"
 
@@ -78,7 +78,7 @@
 
     const/4 v1, 0x1
 
-    const v2, 0x7f11017b
+    const v2, 0x7f11017e
 
     const-string v3, "LEVEL"
 
@@ -91,7 +91,7 @@
 
     const/4 v1, 0x2
 
-    const v2, 0x7f11017a
+    const v2, 0x7f11017d
 
     const-string v3, "HISTOGRAM"
 
@@ -104,7 +104,7 @@
 
     const/4 v1, 0x3
 
-    const v2, 0x7f110178
+    const v2, 0x7f11017b
 
     const-string v3, "AUDIO"
 

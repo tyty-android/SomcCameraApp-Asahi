@@ -176,14 +176,14 @@
 
     invoke-static {}, Lkotlin/coroutines/intrinsics/IntrinsicsKt;->getCOROUTINE_SUSPENDED()Ljava/lang/Object;
 
-    .line 245
+    .line 270
     iget v0, p0, Landroidx/compose/foundation/lazy/LazyListState$scrollToItem$2;->label:I
 
     if-nez v0, :cond_0
 
     invoke-static {p1}, Lkotlin/ResultKt;->throwOnFailure(Ljava/lang/Object;)V
 
-    .line 246
+    .line 271
     iget-object p1, p0, Landroidx/compose/foundation/lazy/LazyListState$scrollToItem$2;->this$0:Landroidx/compose/foundation/lazy/LazyListState;
 
     iget v0, p0, Landroidx/compose/foundation/lazy/LazyListState$scrollToItem$2;->$index:I
@@ -192,12 +192,12 @@
 
     invoke-virtual {p1, v0, p0}, Landroidx/compose/foundation/lazy/LazyListState;->snapToItemIndexInternal$foundation_release(II)V
 
-    .line 247
+    .line 272
     sget-object p0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
 
     return-object p0
 
-    .line 245
+    .line 270
     :cond_0
     new-instance p0, Ljava/lang/IllegalStateException;
 

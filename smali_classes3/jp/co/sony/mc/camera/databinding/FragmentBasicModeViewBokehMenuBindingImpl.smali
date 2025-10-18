@@ -503,7 +503,7 @@
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    const/4 p1, 0x6
+    const/4 p1, 0x7
 
     .line 95
     invoke-virtual {p0, p1}, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeViewBokehMenuBindingImpl;->notifyPropertyChanged(I)V
@@ -549,7 +549,7 @@
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    const/16 p1, 0x13
+    const/16 p1, 0x16
 
     .line 87
     invoke-virtual {p0, p1}, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeViewBokehMenuBindingImpl;->notifyPropertyChanged(I)V
@@ -574,7 +574,7 @@
 .method public setVariable(ILjava/lang/Object;)Z
     .locals 1
 
-    const/16 v0, 0x13
+    const/16 v0, 0x16
 
     if-ne v0, p1, :cond_0
 
@@ -586,7 +586,7 @@
     goto :goto_0
 
     :cond_0
-    const/4 v0, 0x6
+    const/4 v0, 0x7
 
     if-ne v0, p1, :cond_1
 

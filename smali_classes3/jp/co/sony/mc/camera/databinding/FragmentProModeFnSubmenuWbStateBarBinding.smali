@@ -20,15 +20,20 @@
     .end annotation
 .end field
 
+.field protected mViewFinderUiState:Ljp/co/sony/mc/camera/view/uistate/ViewFinderUiState;
+    .annotation runtime Landroidx/databinding/Bindable;
+    .end annotation
+.end field
+
 .field public final setBtn:Landroid/widget/Button;
 
 .field public final temperature:Landroid/widget/TextView;
 
 .field public final wbLabelContainer:Landroid/widget/LinearLayout;
 
-.field public final wbLabelTitle:Ljp/co/sony/mc/camera/view/widget/OutlineTextView;
+.field public final wbLabelTitle:Ljp/co/sony/mc/camera/view/widget/PenetrableOutlineTextView;
 
-.field public final wbLabelValue:Ljp/co/sony/mc/camera/view/widget/OutlineTextView;
+.field public final wbLabelValue:Ljp/co/sony/mc/camera/view/widget/PenetrableOutlineTextView;
 
 .field public final whiteBalanceCustomAb:Landroid/widget/TextView;
 
@@ -36,40 +41,40 @@
 
 
 # direct methods
-.method protected constructor <init>(Ljava/lang/Object;Landroid/view/View;ILjp/co/sony/mc/camera/view/widget/FitDisplayOrientationFrameLayout;Landroidx/constraintlayout/widget/ConstraintLayout;Landroid/widget/ImageButton;Landroid/widget/Button;Landroid/widget/TextView;Landroid/widget/LinearLayout;Ljp/co/sony/mc/camera/view/widget/OutlineTextView;Ljp/co/sony/mc/camera/view/widget/OutlineTextView;Landroid/widget/TextView;Landroid/widget/TextView;)V
+.method protected constructor <init>(Ljava/lang/Object;Landroid/view/View;ILjp/co/sony/mc/camera/view/widget/FitDisplayOrientationFrameLayout;Landroidx/constraintlayout/widget/ConstraintLayout;Landroid/widget/ImageButton;Landroid/widget/Button;Landroid/widget/TextView;Landroid/widget/LinearLayout;Ljp/co/sony/mc/camera/view/widget/PenetrableOutlineTextView;Ljp/co/sony/mc/camera/view/widget/PenetrableOutlineTextView;Landroid/widget/TextView;Landroid/widget/TextView;)V
     .locals 0
 
-    .line 67
+    .line 71
     invoke-direct {p0, p1, p2, p3}, Landroidx/databinding/ViewDataBinding;-><init>(Ljava/lang/Object;Landroid/view/View;I)V
 
-    .line 68
+    .line 72
     iput-object p4, p0, Ljp/co/sony/mc/camera/databinding/FragmentProModeFnSubmenuWbStateBarBinding;->abgmLayout:Ljp/co/sony/mc/camera/view/widget/FitDisplayOrientationFrameLayout;
 
-    .line 69
+    .line 73
     iput-object p5, p0, Ljp/co/sony/mc/camera/databinding/FragmentProModeFnSubmenuWbStateBarBinding;->abgmText:Landroidx/constraintlayout/widget/ConstraintLayout;
 
-    .line 70
+    .line 74
     iput-object p6, p0, Ljp/co/sony/mc/camera/databinding/FragmentProModeFnSubmenuWbStateBarBinding;->close:Landroid/widget/ImageButton;
 
-    .line 71
+    .line 75
     iput-object p7, p0, Ljp/co/sony/mc/camera/databinding/FragmentProModeFnSubmenuWbStateBarBinding;->setBtn:Landroid/widget/Button;
 
-    .line 72
+    .line 76
     iput-object p8, p0, Ljp/co/sony/mc/camera/databinding/FragmentProModeFnSubmenuWbStateBarBinding;->temperature:Landroid/widget/TextView;
 
-    .line 73
+    .line 77
     iput-object p9, p0, Ljp/co/sony/mc/camera/databinding/FragmentProModeFnSubmenuWbStateBarBinding;->wbLabelContainer:Landroid/widget/LinearLayout;
 
-    .line 74
-    iput-object p10, p0, Ljp/co/sony/mc/camera/databinding/FragmentProModeFnSubmenuWbStateBarBinding;->wbLabelTitle:Ljp/co/sony/mc/camera/view/widget/OutlineTextView;
+    .line 78
+    iput-object p10, p0, Ljp/co/sony/mc/camera/databinding/FragmentProModeFnSubmenuWbStateBarBinding;->wbLabelTitle:Ljp/co/sony/mc/camera/view/widget/PenetrableOutlineTextView;
 
-    .line 75
-    iput-object p11, p0, Ljp/co/sony/mc/camera/databinding/FragmentProModeFnSubmenuWbStateBarBinding;->wbLabelValue:Ljp/co/sony/mc/camera/view/widget/OutlineTextView;
+    .line 79
+    iput-object p11, p0, Ljp/co/sony/mc/camera/databinding/FragmentProModeFnSubmenuWbStateBarBinding;->wbLabelValue:Ljp/co/sony/mc/camera/view/widget/PenetrableOutlineTextView;
 
-    .line 76
+    .line 80
     iput-object p12, p0, Ljp/co/sony/mc/camera/databinding/FragmentProModeFnSubmenuWbStateBarBinding;->whiteBalanceCustomAb:Landroid/widget/TextView;
 
-    .line 77
+    .line 81
     iput-object p13, p0, Ljp/co/sony/mc/camera/databinding/FragmentProModeFnSubmenuWbStateBarBinding;->whiteBalanceCustomGm:Landroid/widget/TextView;
 
     return-void
@@ -78,7 +83,7 @@
 .method public static bind(Landroid/view/View;)Ljp/co/sony/mc/camera/databinding/FragmentProModeFnSubmenuWbStateBarBinding;
     .locals 1
 
-    .line 135
+    .line 146
     invoke-static {}, Landroidx/databinding/DataBindingUtil;->getDefaultComponent()Landroidx/databinding/DataBindingComponent;
 
     move-result-object v0
@@ -97,7 +102,7 @@
 
     const v0, 0x7f0c00aa
 
-    .line 148
+    .line 159
     invoke-static {p1, p0, v0}, Ljp/co/sony/mc/camera/databinding/FragmentProModeFnSubmenuWbStateBarBinding;->bind(Ljava/lang/Object;Landroid/view/View;I)Landroidx/databinding/ViewDataBinding;
 
     move-result-object p0
@@ -110,7 +115,7 @@
 .method public static inflate(Landroid/view/LayoutInflater;)Ljp/co/sony/mc/camera/databinding/FragmentProModeFnSubmenuWbStateBarBinding;
     .locals 1
 
-    .line 117
+    .line 128
     invoke-static {}, Landroidx/databinding/DataBindingUtil;->getDefaultComponent()Landroidx/databinding/DataBindingComponent;
 
     move-result-object v0
@@ -125,7 +130,7 @@
 .method public static inflate(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Z)Ljp/co/sony/mc/camera/databinding/FragmentProModeFnSubmenuWbStateBarBinding;
     .locals 1
 
-    .line 97
+    .line 108
     invoke-static {}, Landroidx/databinding/DataBindingUtil;->getDefaultComponent()Landroidx/databinding/DataBindingComponent;
 
     move-result-object v0
@@ -144,7 +149,7 @@
 
     const v0, 0x7f0c00aa
 
-    .line 111
+    .line 122
     invoke-static {p0, v0, p1, p2, p3}, Landroidx/databinding/ViewDataBinding;->inflateInternal(Landroid/view/LayoutInflater;ILandroid/view/ViewGroup;ZLjava/lang/Object;)Landroidx/databinding/ViewDataBinding;
 
     move-result-object p0
@@ -165,7 +170,7 @@
 
     const v2, 0x7f0c00aa
 
-    .line 131
+    .line 142
     invoke-static {p0, v2, v0, v1, p1}, Landroidx/databinding/ViewDataBinding;->inflateInternal(Landroid/view/LayoutInflater;ILandroid/view/ViewGroup;ZLjava/lang/Object;)Landroidx/databinding/ViewDataBinding;
 
     move-result-object p0
@@ -180,7 +185,7 @@
 .method public getCameraStatusModel()Ljp/co/sony/mc/camera/view/viewmodel/CameraStatusModel;
     .locals 0
 
-    .line 91
+    .line 95
     iget-object p0, p0, Ljp/co/sony/mc/camera/databinding/FragmentProModeFnSubmenuWbStateBarBinding;->mCameraStatusModel:Ljp/co/sony/mc/camera/view/viewmodel/CameraStatusModel;
 
     return-object p0
@@ -189,8 +194,17 @@
 .method public getProModeCommonUiState()Ljp/co/sony/mc/camera/view/uistate/ProModeCommonUiState;
     .locals 0
 
-    .line 84
+    .line 88
     iget-object p0, p0, Ljp/co/sony/mc/camera/databinding/FragmentProModeFnSubmenuWbStateBarBinding;->mProModeCommonUiState:Ljp/co/sony/mc/camera/view/uistate/ProModeCommonUiState;
+
+    return-object p0
+.end method
+
+.method public getViewFinderUiState()Ljp/co/sony/mc/camera/view/uistate/ViewFinderUiState;
+    .locals 0
+
+    .line 102
+    iget-object p0, p0, Ljp/co/sony/mc/camera/databinding/FragmentProModeFnSubmenuWbStateBarBinding;->mViewFinderUiState:Ljp/co/sony/mc/camera/view/uistate/ViewFinderUiState;
 
     return-object p0
 .end method
@@ -199,4 +213,7 @@
 .end method
 
 .method public abstract setProModeCommonUiState(Ljp/co/sony/mc/camera/view/uistate/ProModeCommonUiState;)V
+.end method
+
+.method public abstract setViewFinderUiState(Ljp/co/sony/mc/camera/view/uistate/ViewFinderUiState;)V
 .end method

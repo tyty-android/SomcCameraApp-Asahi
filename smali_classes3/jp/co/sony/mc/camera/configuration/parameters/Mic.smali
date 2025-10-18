@@ -63,17 +63,17 @@
     .line 21
     new-instance v7, Ljp/co/sony/mc/camera/configuration/parameters/Mic;
 
-    const v5, 0x7f110300
+    const v5, 0x7f11032d
 
-    const v6, 0x7f08033d
+    const v6, 0x7f08035b
 
     const-string v1, "LR"
 
     const/4 v2, 0x0
 
-    const v3, 0x7f080252
+    const v3, 0x7f080260
 
-    const v4, 0x7f110306
+    const v4, 0x7f110333
 
     move-object v0, v7
 
@@ -84,17 +84,17 @@
     .line 26
     new-instance v0, Ljp/co/sony/mc/camera/configuration/parameters/Mic;
 
-    const v13, 0x7f110301
+    const v13, 0x7f11032e
 
-    const v14, 0x7f080340
+    const v14, 0x7f08035e
 
     const-string v9, "REAR"
 
     const/4 v10, 0x1
 
-    const v11, 0x7f080253
+    const v11, 0x7f080261
 
-    const v12, 0x7f11030a
+    const v12, 0x7f110337
 
     move-object v8, v0
 
@@ -113,9 +113,9 @@
 
     const/4 v3, 0x2
 
-    const v4, 0x7f080253
+    const v4, 0x7f080261
 
-    const v5, 0x7f110309
+    const v5, 0x7f110336
 
     move-object v1, v0
 

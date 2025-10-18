@@ -5,7 +5,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/SourceDebugExtension;
-    value = "SMAP\nLayoutModifierNode.kt\nKotlin\n*S Kotlin\n*F\n+ 1 LayoutModifierNode.kt\nandroidx/compose/ui/node/LayoutModifierNodeKt\n+ 2 NodeKind.kt\nandroidx/compose/ui/node/Nodes\n*L\n1#1,302:1\n72#2:303\n*S KotlinDebug\n*F\n+ 1 LayoutModifierNode.kt\nandroidx/compose/ui/node/LayoutModifierNodeKt\n*L\n142#1:303\n*E\n"
+    value = "SMAP\nLayoutModifierNode.kt\nKotlin\n*S Kotlin\n*F\n+ 1 LayoutModifierNode.kt\nandroidx/compose/ui/node/LayoutModifierNodeKt\n+ 2 NodeKind.kt\nandroidx/compose/ui/node/Nodes\n*L\n1#1,309:1\n72#2:310\n*S KotlinDebug\n*F\n+ 1 LayoutModifierNode.kt\nandroidx/compose/ui/node/LayoutModifierNodeKt\n*L\n145#1:310\n*E\n"
 .end annotation
 
 .annotation runtime Lkotlin/Metadata;
@@ -36,21 +36,17 @@
 .method public static final invalidateLayer(Landroidx/compose/ui/node/LayoutModifierNode;)V
     .locals 1
 
-    const-string v0, "<this>"
-
-    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 142
+    .line 145
     check-cast p0, Landroidx/compose/ui/node/DelegatableNode;
 
     const/4 v0, 0x2
 
-    .line 303
+    .line 310
     invoke-static {v0}, Landroidx/compose/ui/node/NodeKind;->constructor-impl(I)I
 
     move-result v0
 
-    .line 142
+    .line 145
     invoke-static {p0, v0}, Landroidx/compose/ui/node/DelegatableNodeKt;->requireCoordinator-64DMado(Landroidx/compose/ui/node/DelegatableNode;I)Landroidx/compose/ui/node/NodeCoordinator;
 
     move-result-object p0
@@ -61,13 +57,9 @@
 .end method
 
 .method public static final invalidateMeasurement(Landroidx/compose/ui/node/LayoutModifierNode;)V
-    .locals 1
+    .locals 0
 
-    const-string v0, "<this>"
-
-    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 154
+    .line 157
     check-cast p0, Landroidx/compose/ui/node/DelegatableNode;
 
     invoke-static {p0}, Landroidx/compose/ui/node/DelegatableNodeKt;->requireLayoutNode(Landroidx/compose/ui/node/DelegatableNode;)Landroidx/compose/ui/node/LayoutNode;
@@ -82,11 +74,7 @@
 .method public static final invalidatePlacement(Landroidx/compose/ui/node/LayoutModifierNode;)V
     .locals 3
 
-    const-string v0, "<this>"
-
-    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 148
+    .line 151
     check-cast p0, Landroidx/compose/ui/node/DelegatableNode;
 
     invoke-static {p0}, Landroidx/compose/ui/node/DelegatableNodeKt;->requireLayoutNode(Landroidx/compose/ui/node/DelegatableNode;)Landroidx/compose/ui/node/LayoutNode;
@@ -105,13 +93,9 @@
 .end method
 
 .method public static final remeasureSync(Landroidx/compose/ui/node/LayoutModifierNode;)V
-    .locals 1
+    .locals 0
 
-    const-string v0, "<this>"
-
-    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 135
+    .line 138
     check-cast p0, Landroidx/compose/ui/node/DelegatableNode;
 
     invoke-static {p0}, Landroidx/compose/ui/node/DelegatableNodeKt;->requireLayoutNode(Landroidx/compose/ui/node/DelegatableNode;)Landroidx/compose/ui/node/LayoutNode;
@@ -126,11 +110,7 @@
 .method public static final requestRemeasure(Landroidx/compose/ui/node/LayoutModifierNode;)V
     .locals 3
 
-    const-string v0, "<this>"
-
-    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 156
+    .line 159
     check-cast p0, Landroidx/compose/ui/node/DelegatableNode;
 
     invoke-static {p0}, Landroidx/compose/ui/node/DelegatableNodeKt;->requireLayoutNode(Landroidx/compose/ui/node/DelegatableNode;)Landroidx/compose/ui/node/LayoutNode;

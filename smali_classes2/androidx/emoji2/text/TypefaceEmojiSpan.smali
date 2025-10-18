@@ -29,7 +29,7 @@
 
     const/4 v1, 0x0
 
-    if-eqz v0, :cond_6
+    if-eqz v0, :cond_5
 
     .line 105
     check-cast p1, Landroid/text/Spanned;
@@ -46,7 +46,7 @@
     .line 107
     array-length p2, p1
 
-    if-eqz p2, :cond_4
+    if-eqz p2, :cond_3
 
     array-length p2, p1
 
@@ -84,72 +84,66 @@
     :goto_0
     array-length p0, p1
 
-    if-ge p3, p0, :cond_3
+    if-ge p3, p0, :cond_2
 
     .line 125
     aget-object p0, p1, p3
 
-    instance-of p4, p0, Landroid/text/style/MetricAffectingSpan;
-
-    if-nez p4, :cond_2
-
-    .line 127
     invoke-virtual {p0, p2}, Landroid/text/style/CharacterStyle;->updateDrawState(Landroid/text/TextPaint;)V
 
-    :cond_2
     add-int/lit8 p3, p3, 0x1
 
     goto :goto_0
 
-    :cond_3
+    :cond_2
     return-object p2
 
     .line 108
-    :cond_4
+    :cond_3
     :goto_1
     instance-of p0, p4, Landroid/text/TextPaint;
 
-    if-eqz p0, :cond_5
+    if-eqz p0, :cond_4
 
     .line 110
     check-cast p4, Landroid/text/TextPaint;
 
     return-object p4
 
-    :cond_5
+    :cond_4
     return-object v1
 
-    .line 132
-    :cond_6
+    .line 129
+    :cond_5
     instance-of p0, p4, Landroid/text/TextPaint;
 
-    if-eqz p0, :cond_7
+    if-eqz p0, :cond_6
 
-    .line 134
+    .line 131
     check-cast p4, Landroid/text/TextPaint;
 
     return-object p4
 
-    :cond_7
+    :cond_6
     return-object v1
 .end method
 
 .method private static getDebugPaint()Landroid/graphics/Paint;
     .locals 2
 
-    .line 144
+    .line 141
     sget-object v0, Landroidx/emoji2/text/TypefaceEmojiSpan;->sDebugPaint:Landroid/graphics/Paint;
 
     if-nez v0, :cond_0
 
-    .line 145
+    .line 142
     new-instance v0, Landroid/text/TextPaint;
 
     invoke-direct {v0}, Landroid/text/TextPaint;-><init>()V
 
     sput-object v0, Landroidx/emoji2/text/TypefaceEmojiSpan;->sDebugPaint:Landroid/graphics/Paint;
 
-    .line 146
+    .line 143
     invoke-static {}, Landroidx/emoji2/text/EmojiCompat;->get()Landroidx/emoji2/text/EmojiCompat;
 
     move-result-object v1
@@ -160,14 +154,14 @@
 
     invoke-virtual {v0, v1}, Landroid/graphics/Paint;->setColor(I)V
 
-    .line 147
+    .line 144
     sget-object v0, Landroidx/emoji2/text/TypefaceEmojiSpan;->sDebugPaint:Landroid/graphics/Paint;
 
     sget-object v1, Landroid/graphics/Paint$Style;->FILL:Landroid/graphics/Paint$Style;
 
     invoke-virtual {v0, v1}, Landroid/graphics/Paint;->setStyle(Landroid/graphics/Paint$Style;)V
 
-    .line 149
+    .line 146
     :cond_0
     sget-object v0, Landroidx/emoji2/text/TypefaceEmojiSpan;->sDebugPaint:Landroid/graphics/Paint;
 

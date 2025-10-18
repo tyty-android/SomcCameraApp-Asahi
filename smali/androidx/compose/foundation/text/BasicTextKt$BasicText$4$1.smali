@@ -87,7 +87,7 @@
 .method public bridge synthetic invoke()Ljava/lang/Object;
     .locals 0
 
-    .line 245
+    .line 256
     invoke-virtual {p0}, Landroidx/compose/foundation/text/BasicTextKt$BasicText$4$1;->invoke()Ljava/util/List;
 
     move-result-object p0
@@ -106,7 +106,7 @@
         }
     .end annotation
 
-    .line 245
+    .line 256
     iget-object p0, p0, Landroidx/compose/foundation/text/BasicTextKt$BasicText$4$1;->$measuredPlaceholderPositions:Landroidx/compose/runtime/MutableState;
 
     invoke-interface {p0}, Landroidx/compose/runtime/MutableState;->getValue()Ljava/lang/Object;

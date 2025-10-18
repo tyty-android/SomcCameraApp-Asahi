@@ -10,7 +10,7 @@
 
 .annotation runtime Lkotlin/Metadata;
     d1 = {
-        "\u0000$\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000b\n\u0002\u0008\u0003\n\u0002\u0018\u0002\n\u0002\u0008\u0004\u001a5\u0010\u0000\u001a\u00020\u0001*\u00020\u00012\u0006\u0010\u0002\u001a\u00020\u00032\u0008\u0008\u0002\u0010\u0004\u001a\u00020\u00052\u0008\u0008\u0002\u0010\u0006\u001a\u00020\u0007H\u0007\u00f8\u0001\u0000\u00f8\u0001\u0001\u00a2\u0006\u0004\u0008\u0008\u0010\t\u001aI\u0010\u0000\u001a\u00020\u0001*\u00020\u00012\u0006\u0010\u0002\u001a\u00020\u00032\u0008\u0008\u0002\u0010\u0004\u001a\u00020\u00052\u0008\u0008\u0002\u0010\u0006\u001a\u00020\u00072\u0008\u0008\u0002\u0010\n\u001a\u00020\u000b2\u0008\u0008\u0002\u0010\u000c\u001a\u00020\u000bH\u0007\u00f8\u0001\u0000\u00f8\u0001\u0001\u00a2\u0006\u0004\u0008\r\u0010\u000e\u0082\u0002\u000b\n\u0005\u0008\u00a1\u001e0\u0001\n\u0002\u0008\u0019\u00a8\u0006\u000f"
+        "\u0000$\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000b\n\u0002\u0008\u0003\n\u0002\u0018\u0002\n\u0002\u0008\u0004\u001a2\u0010\u0000\u001a\u00020\u0001*\u00020\u00012\u0006\u0010\u0002\u001a\u00020\u00032\u0008\u0008\u0002\u0010\u0004\u001a\u00020\u00052\u0008\u0008\u0002\u0010\u0006\u001a\u00020\u0007H\u0007\u00f8\u0001\u0000\u00a2\u0006\u0004\u0008\u0008\u0010\t\u001aF\u0010\u0000\u001a\u00020\u0001*\u00020\u00012\u0006\u0010\u0002\u001a\u00020\u00032\u0008\u0008\u0002\u0010\u0004\u001a\u00020\u00052\u0008\u0008\u0002\u0010\u0006\u001a\u00020\u00072\u0008\u0008\u0002\u0010\n\u001a\u00020\u000b2\u0008\u0008\u0002\u0010\u000c\u001a\u00020\u000bH\u0007\u00f8\u0001\u0000\u00a2\u0006\u0004\u0008\r\u0010\u000e\u0082\u0002\u0007\n\u0005\u0008\u00a1\u001e0\u0001\u00a8\u0006\u000f"
     }
     d2 = {
         "shadow",
@@ -42,110 +42,108 @@
 
 # direct methods
 .method public static final shadow-s4CzXII(Landroidx/compose/ui/Modifier;FLandroidx/compose/ui/graphics/Shape;ZJJ)Landroidx/compose/ui/Modifier;
-    .locals 14
+    .locals 12
 
-    move-object v0, p0
+    const/4 v0, 0x0
 
-    const-string v1, "$this$shadow"
-
-    invoke-static {p0, v1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string/jumbo v1, "shape"
-
-    move-object/from16 v10, p2
-
-    invoke-static {v10, v1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const/4 v1, 0x0
-
-    int-to-float v1, v1
+    int-to-float v0, v0
 
     .line 125
-    invoke-static {v1}, Landroidx/compose/ui/unit/Dp;->constructor-impl(F)F
+    invoke-static {v0}, Landroidx/compose/ui/unit/Dp;->constructor-impl(F)F
 
-    move-result v1
+    move-result v0
 
-    move v11, p1
+    move v9, p1
 
     .line 101
-    invoke-static {p1, v1}, Landroidx/compose/ui/unit/Dp;->compareTo-0680j_4(FF)I
+    invoke-static {p1, v0}, Landroidx/compose/ui/unit/Dp;->compareTo-0680j_4(FF)I
 
-    move-result v1
+    move-result v0
 
-    if-gtz v1, :cond_0
+    if-gtz v0, :cond_1
 
-    if-eqz p3, :cond_2
-
-    .line 126
-    :cond_0
-    invoke-static {}, Landroidx/compose/ui/platform/InspectableValueKt;->isDebugInspectorInfoEnabled()Z
-
-    move-result v1
-
-    if-eqz v1, :cond_1
-
-    new-instance v1, Landroidx/compose/ui/draw/ShadowKt$shadow-s4CzXII$$inlined$debugInspectorInfo$1;
-
-    move-object v2, v1
-
-    move v3, p1
-
-    move-object/from16 v4, p2
-
-    move/from16 v5, p3
-
-    move-wide/from16 v6, p4
-
-    move-wide/from16 v8, p6
-
-    invoke-direct/range {v2 .. v9}, Landroidx/compose/ui/draw/ShadowKt$shadow-s4CzXII$$inlined$debugInspectorInfo$1;-><init>(FLandroidx/compose/ui/graphics/Shape;ZJJ)V
-
-    check-cast v1, Lkotlin/jvm/functions/Function1;
+    if-eqz p3, :cond_0
 
     goto :goto_0
 
+    :cond_0
+    move-object v0, p0
+
+    goto :goto_2
+
+    .line 126
     :cond_1
-    invoke-static {}, Landroidx/compose/ui/platform/InspectableValueKt;->getNoInspectorInfo()Lkotlin/jvm/functions/Function1;
-
-    move-result-object v1
-
-    .line 127
     :goto_0
-    sget-object v2, Landroidx/compose/ui/Modifier;->Companion:Landroidx/compose/ui/Modifier$Companion;
+    invoke-static {}, Landroidx/compose/ui/platform/InspectableValueKt;->isDebugInspectorInfoEnabled()Z
 
-    move-object v12, v2
+    move-result v0
 
-    check-cast v12, Landroidx/compose/ui/Modifier;
+    if-eqz v0, :cond_2
 
-    .line 112
-    new-instance v13, Landroidx/compose/ui/draw/ShadowKt$shadow$2$1;
+    new-instance v0, Landroidx/compose/ui/draw/ShadowKt$shadow-s4CzXII$$inlined$debugInspectorInfo$1;
 
-    move-object v2, v13
+    move-object v1, v0
 
-    move v3, p1
+    move v2, p1
 
-    move-object/from16 v4, p2
+    move-object v3, p2
 
-    move/from16 v5, p3
+    move v4, p3
 
-    move-wide/from16 v6, p4
+    move-wide/from16 v5, p4
 
-    move-wide/from16 v8, p6
+    move-wide/from16 v7, p6
 
-    invoke-direct/range {v2 .. v9}, Landroidx/compose/ui/draw/ShadowKt$shadow$2$1;-><init>(FLandroidx/compose/ui/graphics/Shape;ZJJ)V
+    invoke-direct/range {v1 .. v8}, Landroidx/compose/ui/draw/ShadowKt$shadow-s4CzXII$$inlined$debugInspectorInfo$1;-><init>(FLandroidx/compose/ui/graphics/Shape;ZJJ)V
 
-    check-cast v13, Lkotlin/jvm/functions/Function1;
+    check-cast v0, Lkotlin/jvm/functions/Function1;
 
-    invoke-static {v12, v13}, Landroidx/compose/ui/graphics/GraphicsLayerModifierKt;->graphicsLayer(Landroidx/compose/ui/Modifier;Lkotlin/jvm/functions/Function1;)Landroidx/compose/ui/Modifier;
+    goto :goto_1
 
-    move-result-object v2
-
-    .line 127
-    invoke-static {p0, v1, v2}, Landroidx/compose/ui/platform/InspectableValueKt;->inspectableWrapper(Landroidx/compose/ui/Modifier;Lkotlin/jvm/functions/Function1;Landroidx/compose/ui/Modifier;)Landroidx/compose/ui/Modifier;
+    :cond_2
+    invoke-static {}, Landroidx/compose/ui/platform/InspectableValueKt;->getNoInspectorInfo()Lkotlin/jvm/functions/Function1;
 
     move-result-object v0
 
-    :cond_2
+    .line 127
+    :goto_1
+    sget-object v1, Landroidx/compose/ui/Modifier;->Companion:Landroidx/compose/ui/Modifier$Companion;
+
+    move-object v10, v1
+
+    check-cast v10, Landroidx/compose/ui/Modifier;
+
+    .line 112
+    new-instance v11, Landroidx/compose/ui/draw/ShadowKt$shadow$2$1;
+
+    move-object v1, v11
+
+    move v2, p1
+
+    move-object v3, p2
+
+    move v4, p3
+
+    move-wide/from16 v5, p4
+
+    move-wide/from16 v7, p6
+
+    invoke-direct/range {v1 .. v8}, Landroidx/compose/ui/draw/ShadowKt$shadow$2$1;-><init>(FLandroidx/compose/ui/graphics/Shape;ZJJ)V
+
+    check-cast v11, Lkotlin/jvm/functions/Function1;
+
+    invoke-static {v10, v11}, Landroidx/compose/ui/graphics/GraphicsLayerModifierKt;->graphicsLayer(Landroidx/compose/ui/Modifier;Lkotlin/jvm/functions/Function1;)Landroidx/compose/ui/Modifier;
+
+    move-result-object v1
+
+    move-object v2, p0
+
+    .line 127
+    invoke-static {p0, v0, v1}, Landroidx/compose/ui/platform/InspectableValueKt;->inspectableWrapper(Landroidx/compose/ui/Modifier;Lkotlin/jvm/functions/Function1;Landroidx/compose/ui/Modifier;)Landroidx/compose/ui/Modifier;
+
+    move-result-object v0
+
+    :goto_2
     return-object v0
 .end method
 
@@ -251,7 +249,7 @@
 .end method
 
 .method public static final synthetic shadow-ziNgDLE(Landroidx/compose/ui/Modifier;FLandroidx/compose/ui/graphics/Shape;Z)Landroidx/compose/ui/Modifier;
-    .locals 9
+    .locals 8
     .annotation runtime Lkotlin/Deprecated;
         level = .enum Lkotlin/DeprecationLevel;->HIDDEN:Lkotlin/DeprecationLevel;
         message = "Replace with shadow which accepts ambientColor and spotColor parameters"
@@ -263,34 +261,26 @@
         .end subannotation
     .end annotation
 
-    const-string v0, "$this$shadow"
-
-    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string/jumbo v0, "shape"
-
-    invoke-static {p2, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
     .line 69
     invoke-static {}, Landroidx/compose/ui/graphics/GraphicsLayerScopeKt;->getDefaultShadowColor()J
 
-    move-result-wide v5
+    move-result-wide v4
 
     .line 70
     invoke-static {}, Landroidx/compose/ui/graphics/GraphicsLayerScopeKt;->getDefaultShadowColor()J
 
-    move-result-wide v7
+    move-result-wide v6
 
-    move-object v1, p0
+    move-object v0, p0
 
-    move v2, p1
+    move v1, p1
 
-    move-object v3, p2
+    move-object v2, p2
 
-    move v4, p3
+    move v3, p3
 
     .line 65
-    invoke-static/range {v1 .. v8}, Landroidx/compose/ui/draw/ShadowKt;->shadow-s4CzXII(Landroidx/compose/ui/Modifier;FLandroidx/compose/ui/graphics/Shape;ZJJ)Landroidx/compose/ui/Modifier;
+    invoke-static/range {v0 .. v7}, Landroidx/compose/ui/draw/ShadowKt;->shadow-s4CzXII(Landroidx/compose/ui/Modifier;FLandroidx/compose/ui/graphics/Shape;ZJJ)Landroidx/compose/ui/Modifier;
 
     move-result-object p0
 

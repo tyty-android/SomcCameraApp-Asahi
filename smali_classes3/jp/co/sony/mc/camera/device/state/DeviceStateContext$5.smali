@@ -34,7 +34,7 @@
         }
     .end annotation
 
-    .line 3433
+    .line 3517
     iput-object p1, p0, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$5;->this$0:Ljp/co/sony/mc/camera/device/state/DeviceStateContext;
 
     iput-object p2, p0, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$5;->val$processAdapter:Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CaptureProcessAdapter;
@@ -51,7 +51,7 @@
 .method public run()V
     .locals 2
 
-    .line 3436
+    .line 3520
     iget-object v0, p0, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$5;->this$0:Ljp/co/sony/mc/camera/device/state/DeviceStateContext;
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/device/state/DeviceStateContext;->-$$Nest$fgetmCaptureProcessQueue(Ljp/co/sony/mc/camera/device/state/DeviceStateContext;)Ljava/util/Deque;
@@ -66,7 +66,7 @@
 
     if-nez v0, :cond_0
 
-    .line 3437
+    .line 3521
     iget-object v0, p0, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$5;->this$0:Ljp/co/sony/mc/camera/device/state/DeviceStateContext;
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/device/state/DeviceStateContext;->-$$Nest$fgetmCaptureProcessQueue(Ljp/co/sony/mc/camera/device/state/DeviceStateContext;)Ljava/util/Deque;
@@ -77,7 +77,7 @@
 
     invoke-interface {v0, v1}, Ljava/util/Deque;->add(Ljava/lang/Object;)Z
 
-    .line 3438
+    .line 3522
     iget-object v0, p0, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$5;->val$processAdapter:Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CaptureProcessAdapter;
 
     iget p0, p0, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$5;->val$captureId:I

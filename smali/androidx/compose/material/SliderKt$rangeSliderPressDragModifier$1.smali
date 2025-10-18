@@ -53,7 +53,7 @@
     f = "Slider.kt"
     i = {}
     l = {
-        0x3d7
+        0x3db
     }
     m = "invokeSuspend"
     n = {}
@@ -277,7 +277,7 @@
 
     move-result-object v0
 
-    .line 975
+    .line 979
     iget v1, p0, Landroidx/compose/material/SliderKt$rangeSliderPressDragModifier$1;->label:I
 
     const/4 v2, 0x1
@@ -308,30 +308,30 @@
 
     check-cast v4, Landroidx/compose/ui/input/pointer/PointerInputScope;
 
-    .line 976
+    .line 980
     new-instance p1, Landroidx/compose/material/RangeSliderLogic;
 
-    .line 977
+    .line 981
     iget-object v6, p0, Landroidx/compose/material/SliderKt$rangeSliderPressDragModifier$1;->$startInteractionSource:Landroidx/compose/foundation/interaction/MutableInteractionSource;
 
-    .line 978
+    .line 982
     iget-object v7, p0, Landroidx/compose/material/SliderKt$rangeSliderPressDragModifier$1;->$endInteractionSource:Landroidx/compose/foundation/interaction/MutableInteractionSource;
 
-    .line 979
+    .line 983
     iget-object v8, p0, Landroidx/compose/material/SliderKt$rangeSliderPressDragModifier$1;->$rawOffsetStart:Landroidx/compose/runtime/State;
 
-    .line 980
+    .line 984
     iget-object v9, p0, Landroidx/compose/material/SliderKt$rangeSliderPressDragModifier$1;->$rawOffsetEnd:Landroidx/compose/runtime/State;
 
-    .line 981
+    .line 985
     iget-object v10, p0, Landroidx/compose/material/SliderKt$rangeSliderPressDragModifier$1;->$onDrag:Landroidx/compose/runtime/State;
 
     move-object v5, p1
 
-    .line 976
+    .line 980
     invoke-direct/range {v5 .. v10}, Landroidx/compose/material/RangeSliderLogic;-><init>(Landroidx/compose/foundation/interaction/MutableInteractionSource;Landroidx/compose/foundation/interaction/MutableInteractionSource;Landroidx/compose/runtime/State;Landroidx/compose/runtime/State;Landroidx/compose/runtime/State;)V
 
-    .line 983
+    .line 987
     new-instance v1, Landroidx/compose/material/SliderKt$rangeSliderPressDragModifier$1$1;
 
     iget-boolean v5, p0, Landroidx/compose/material/SliderKt$rangeSliderPressDragModifier$1;->$isRtl:Z
@@ -370,7 +370,7 @@
 
     return-object v0
 
-    .line 1035
+    .line 1039
     :cond_2
     :goto_0
     sget-object p0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;

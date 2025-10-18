@@ -11,12 +11,12 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/SourceDebugExtension;
-    value = "SMAP\nMatrix.kt\nKotlin\n*S Kotlin\n*F\n+ 1 Matrix.kt\nandroidx/compose/ui/graphics/Matrix\n*L\n1#1,440:1\n39#1:441\n39#1:442\n39#1:443\n42#1,2:444\n42#1,2:446\n42#1,2:448\n42#1,2:450\n42#1,2:452\n42#1,2:454\n42#1,2:456\n42#1,2:458\n42#1,2:460\n42#1,2:462\n42#1,2:464\n42#1,2:466\n42#1,2:468\n42#1,2:470\n42#1,2:472\n42#1,2:474\n39#1:476\n39#1:477\n39#1:478\n39#1:479\n39#1:480\n39#1:481\n39#1:482\n39#1:483\n39#1:484\n39#1:485\n39#1:486\n39#1:487\n39#1:488\n39#1:489\n39#1:490\n39#1:491\n39#1:492\n39#1:493\n39#1:494\n39#1:495\n42#1,2:496\n42#1,2:498\n42#1,2:500\n42#1,2:502\n42#1,2:504\n42#1,2:506\n42#1,2:508\n42#1,2:510\n42#1,2:512\n42#1,2:514\n42#1,2:516\n42#1,2:518\n42#1,2:520\n42#1,2:522\n42#1,2:524\n42#1,2:526\n42#1,2:528\n39#1:530\n39#1:531\n39#1:532\n39#1:533\n39#1:534\n39#1:535\n39#1:536\n39#1:537\n42#1,2:538\n42#1,2:540\n42#1,2:542\n42#1,2:544\n42#1,2:546\n42#1,2:548\n42#1,2:550\n42#1,2:552\n39#1:554\n39#1:555\n39#1:556\n39#1:557\n39#1:558\n39#1:559\n39#1:560\n39#1:561\n42#1,2:562\n42#1,2:564\n42#1,2:566\n42#1,2:568\n42#1,2:570\n42#1,2:572\n42#1,2:574\n42#1,2:576\n39#1:578\n39#1:579\n39#1:580\n39#1:581\n39#1:582\n39#1:583\n39#1:584\n39#1:585\n42#1,2:586\n42#1,2:588\n42#1,2:590\n42#1,2:592\n42#1,2:594\n42#1,2:596\n42#1,2:598\n42#1,2:600\n39#1,5:602\n39#1,5:607\n39#1,5:612\n39#1,5:617\n39#1,5:622\n39#1,5:627\n39#1,5:632\n39#1,5:637\n39#1,5:642\n39#1,5:647\n39#1,5:652\n39#1,5:657\n39#1:662\n39#1:663\n39#1:664\n39#1:665\n39#1:666\n39#1:667\n39#1:668\n39#1:669\n39#1:670\n39#1:671\n39#1:672\n39#1:673\n39#1:674\n39#1:675\n39#1:676\n39#1:677\n42#1,2:678\n42#1,2:680\n42#1,2:682\n42#1,2:684\n*S KotlinDebug\n*F\n+ 1 Matrix.kt\nandroidx/compose/ui/graphics/Matrix\n*L\n51#1:441\n56#1:442\n57#1:443\n112#1:444,2\n113#1:446,2\n114#1:448,2\n115#1:450,2\n116#1:452,2\n117#1:454,2\n118#1:456,2\n119#1:458,2\n120#1:460,2\n121#1:462,2\n122#1:464,2\n123#1:466,2\n124#1:468,2\n125#1:470,2\n126#1:472,2\n127#1:474,2\n132#1:476\n133#1:477\n134#1:478\n135#1:479\n143#1:480\n144#1:481\n145#1:482\n146#1:483\n147#1:484\n148#1:485\n149#1:486\n150#1:487\n151#1:488\n152#1:489\n153#1:490\n154#1:491\n155#1:492\n156#1:493\n157#1:494\n158#1:495\n177#1:496,2\n178#1:498,2\n179#1:500,2\n180#1:502,2\n181#1:504,2\n182#1:506,2\n183#1:508,2\n184#1:510,2\n185#1:512,2\n186#1:514,2\n187#1:516,2\n188#1:518,2\n189#1:520,2\n190#1:522,2\n191#1:524,2\n192#1:526,2\n201#1:528,2\n220#1:530\n221#1:531\n225#1:532\n226#1:533\n230#1:534\n231#1:535\n235#1:536\n236#1:537\n240#1:538,2\n241#1:540,2\n242#1:542,2\n243#1:544,2\n244#1:546,2\n245#1:548,2\n246#1:550,2\n247#1:552,2\n257#1:554\n258#1:555\n262#1:556\n263#1:557\n267#1:558\n268#1:559\n272#1:560\n273#1:561\n277#1:562,2\n278#1:564,2\n279#1:566,2\n280#1:568,2\n281#1:570,2\n282#1:572,2\n283#1:574,2\n284#1:576,2\n294#1:578\n295#1:579\n299#1:580\n300#1:581\n304#1:582\n305#1:583\n309#1:584\n310#1:585\n314#1:586,2\n315#1:588,2\n316#1:590,2\n317#1:592,2\n318#1:594,2\n319#1:596,2\n320#1:598,2\n321#1:600,2\n326#1:602,5\n327#1:607,5\n328#1:612,5\n329#1:617,5\n330#1:622,5\n331#1:627,5\n332#1:632,5\n333#1:637,5\n334#1:642,5\n335#1:647,5\n336#1:652,5\n337#1:657,5\n342#1:662\n343#1:663\n344#1:664\n345#1:665\n346#1:666\n347#1:667\n348#1:668\n349#1:669\n350#1:670\n351#1:671\n352#1:672\n353#1:673\n354#1:674\n355#1:675\n356#1:676\n357#1:677\n358#1:678,2\n359#1:680,2\n360#1:682,2\n361#1:684,2\n*E\n"
+    value = "SMAP\nMatrix.kt\nKotlin\n*S Kotlin\n*F\n+ 1 Matrix.kt\nandroidx/compose/ui/graphics/Matrix\n*L\n1#1,441:1\n39#1:442\n39#1:443\n39#1:444\n42#1,2:445\n42#1,2:447\n42#1,2:449\n42#1,2:451\n42#1,2:453\n42#1,2:455\n42#1,2:457\n42#1,2:459\n42#1,2:461\n42#1,2:463\n42#1,2:465\n42#1,2:467\n42#1,2:469\n42#1,2:471\n42#1,2:473\n42#1,2:475\n39#1:477\n39#1:478\n39#1:479\n39#1:480\n39#1:481\n39#1:482\n39#1:483\n39#1:484\n39#1:485\n39#1:486\n39#1:487\n39#1:488\n39#1:489\n39#1:490\n39#1:491\n39#1:492\n39#1:493\n39#1:494\n39#1:495\n39#1:496\n42#1,2:497\n42#1,2:499\n42#1,2:501\n42#1,2:503\n42#1,2:505\n42#1,2:507\n42#1,2:509\n42#1,2:511\n42#1,2:513\n42#1,2:515\n42#1,2:517\n42#1,2:519\n42#1,2:521\n42#1,2:523\n42#1,2:525\n42#1,2:527\n42#1,2:529\n39#1:531\n39#1:532\n39#1:533\n39#1:534\n39#1:535\n39#1:536\n39#1:537\n39#1:538\n42#1,2:539\n42#1,2:541\n42#1,2:543\n42#1,2:545\n42#1,2:547\n42#1,2:549\n42#1,2:551\n42#1,2:553\n39#1:555\n39#1:556\n39#1:557\n39#1:558\n39#1:559\n39#1:560\n39#1:561\n39#1:562\n42#1,2:563\n42#1,2:565\n42#1,2:567\n42#1,2:569\n42#1,2:571\n42#1,2:573\n42#1,2:575\n42#1,2:577\n39#1:579\n39#1:580\n39#1:581\n39#1:582\n39#1:583\n39#1:584\n39#1:585\n39#1:586\n42#1,2:587\n42#1,2:589\n42#1,2:591\n42#1,2:593\n42#1,2:595\n42#1,2:597\n42#1,2:599\n42#1,2:601\n39#1,5:603\n39#1,5:608\n39#1,5:613\n39#1,5:618\n39#1,5:623\n39#1,5:628\n39#1,5:633\n39#1,5:638\n39#1,5:643\n39#1,5:648\n39#1,5:653\n39#1,5:658\n39#1:663\n39#1:664\n39#1:665\n39#1:666\n39#1:667\n39#1:668\n39#1:669\n39#1:670\n39#1:671\n39#1:672\n39#1:673\n39#1:674\n39#1:675\n39#1:676\n39#1:677\n39#1:678\n42#1,2:679\n42#1,2:681\n42#1,2:683\n42#1,2:685\n*S KotlinDebug\n*F\n+ 1 Matrix.kt\nandroidx/compose/ui/graphics/Matrix\n*L\n51#1:442\n56#1:443\n57#1:444\n112#1:445,2\n113#1:447,2\n114#1:449,2\n115#1:451,2\n116#1:453,2\n117#1:455,2\n118#1:457,2\n119#1:459,2\n120#1:461,2\n121#1:463,2\n122#1:465,2\n123#1:467,2\n124#1:469,2\n125#1:471,2\n126#1:473,2\n127#1:475,2\n132#1:477\n133#1:478\n134#1:479\n135#1:480\n143#1:481\n144#1:482\n145#1:483\n146#1:484\n147#1:485\n148#1:486\n149#1:487\n150#1:488\n151#1:489\n152#1:490\n153#1:491\n154#1:492\n155#1:493\n156#1:494\n157#1:495\n158#1:496\n177#1:497,2\n178#1:499,2\n179#1:501,2\n180#1:503,2\n181#1:505,2\n182#1:507,2\n183#1:509,2\n184#1:511,2\n185#1:513,2\n186#1:515,2\n187#1:517,2\n188#1:519,2\n189#1:521,2\n190#1:523,2\n191#1:525,2\n192#1:527,2\n201#1:529,2\n220#1:531\n221#1:532\n225#1:533\n226#1:534\n230#1:535\n231#1:536\n235#1:537\n236#1:538\n240#1:539,2\n241#1:541,2\n242#1:543,2\n243#1:545,2\n244#1:547,2\n245#1:549,2\n246#1:551,2\n247#1:553,2\n257#1:555\n258#1:556\n262#1:557\n263#1:558\n267#1:559\n268#1:560\n272#1:561\n273#1:562\n277#1:563,2\n278#1:565,2\n279#1:567,2\n280#1:569,2\n281#1:571,2\n282#1:573,2\n283#1:575,2\n284#1:577,2\n294#1:579\n295#1:580\n299#1:581\n300#1:582\n304#1:583\n305#1:584\n309#1:585\n310#1:586\n314#1:587,2\n315#1:589,2\n316#1:591,2\n317#1:593,2\n318#1:595,2\n319#1:597,2\n320#1:599,2\n321#1:601,2\n326#1:603,5\n327#1:608,5\n328#1:613,5\n329#1:618,5\n330#1:623,5\n331#1:628,5\n332#1:633,5\n333#1:638,5\n334#1:643,5\n335#1:648,5\n336#1:653,5\n337#1:658,5\n342#1:663\n343#1:664\n344#1:665\n345#1:666\n346#1:667\n347#1:668\n348#1:669\n349#1:670\n350#1:671\n351#1:672\n352#1:673\n353#1:674\n354#1:675\n355#1:676\n356#1:677\n357#1:678\n358#1:679,2\n359#1:681,2\n360#1:683,2\n361#1:685,2\n*E\n"
 .end annotation
 
 .annotation runtime Lkotlin/Metadata;
     d1 = {
-        "\u0000P\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0010\u0014\n\u0002\u0008\u0005\n\u0002\u0010\u000b\n\u0002\u0008\u0004\n\u0002\u0010\u0007\n\u0000\n\u0002\u0010\u0008\n\u0002\u0008\u0007\n\u0002\u0010\u0002\n\u0002\u0008\u0004\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0003\n\u0002\u0018\u0002\n\u0002\u0008\u001d\n\u0002\u0010\u000e\n\u0002\u0008\u0006\u0008\u0087@\u0018\u0000 G2\u00020\u0001:\u0001GB\u0014\u0012\u0008\u0008\u0002\u0010\u0002\u001a\u00020\u0003\u00f8\u0001\u0000\u00a2\u0006\u0004\u0008\u0004\u0010\u0005J\u001a\u0010\u0008\u001a\u00020\t2\u0008\u0010\n\u001a\u0004\u0018\u00010\u0001H\u00d6\u0003\u00a2\u0006\u0004\u0008\u000b\u0010\u000cJ \u0010\r\u001a\u00020\u000e2\u0006\u0010\u000f\u001a\u00020\u00102\u0006\u0010\u0011\u001a\u00020\u0010H\u0086\n\u00a2\u0006\u0004\u0008\u0012\u0010\u0013J\u0010\u0010\u0014\u001a\u00020\u0010H\u00d6\u0001\u00a2\u0006\u0004\u0008\u0015\u0010\u0016J\r\u0010\u0017\u001a\u00020\u0018\u00a2\u0006\u0004\u0008\u0019\u0010\u001aJ\u0015\u0010\u001b\u001a\u00020\u00182\u0006\u0010\u001c\u001a\u00020\u001d\u00a2\u0006\u0004\u0008\u001e\u0010\u001fJ\u001b\u0010\u001b\u001a\u00020 2\u0006\u0010!\u001a\u00020 \u00f8\u0001\u0001\u00f8\u0001\u0000\u00a2\u0006\u0004\u0008\"\u0010#J\u0015\u0010\u001b\u001a\u00020$2\u0006\u0010\u001c\u001a\u00020$\u00a2\u0006\u0004\u0008\u001e\u0010%J\r\u0010&\u001a\u00020\u0018\u00a2\u0006\u0004\u0008\'\u0010\u001aJ\u0015\u0010(\u001a\u00020\u00182\u0006\u0010)\u001a\u00020\u000e\u00a2\u0006\u0004\u0008*\u0010+J\u0015\u0010,\u001a\u00020\u00182\u0006\u0010)\u001a\u00020\u000e\u00a2\u0006\u0004\u0008-\u0010+J\u0015\u0010.\u001a\u00020\u00182\u0006\u0010)\u001a\u00020\u000e\u00a2\u0006\u0004\u0008/\u0010+J+\u00100\u001a\u00020\u00182\u0008\u0008\u0002\u00101\u001a\u00020\u000e2\u0008\u0008\u0002\u00102\u001a\u00020\u000e2\u0008\u0008\u0002\u00103\u001a\u00020\u000e\u00a2\u0006\u0004\u00084\u00105J(\u00106\u001a\u00020\u00182\u0006\u0010\u000f\u001a\u00020\u00102\u0006\u0010\u0011\u001a\u00020\u00102\u0006\u00107\u001a\u00020\u000eH\u0086\n\u00a2\u0006\u0004\u00088\u00109J\u001b\u0010:\u001a\u00020\u00182\u0006\u0010;\u001a\u00020\u0000\u00f8\u0001\u0001\u00f8\u0001\u0000\u00a2\u0006\u0004\u0008<\u0010=J\u001e\u0010>\u001a\u00020\u00182\u0006\u0010?\u001a\u00020\u0000H\u0086\u0002\u00f8\u0001\u0001\u00f8\u0001\u0000\u00a2\u0006\u0004\u0008@\u0010=J\u000f\u0010A\u001a\u00020BH\u0016\u00a2\u0006\u0004\u0008C\u0010DJ+\u0010E\u001a\u00020\u00182\u0008\u0008\u0002\u00101\u001a\u00020\u000e2\u0008\u0008\u0002\u00102\u001a\u00020\u000e2\u0008\u0008\u0002\u00103\u001a\u00020\u000e\u00a2\u0006\u0004\u0008F\u00105R\u0011\u0010\u0002\u001a\u00020\u0003\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\u0006\u0010\u0007\u0088\u0001\u0002\u00f8\u0001\u0000\u0082\u0002\u000b\n\u0002\u0008\u0019\n\u0005\u0008\u00a1\u001e0\u0001\u00a8\u0006H"
+        "\u0000P\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0010\u0014\n\u0002\u0008\u0005\n\u0002\u0010\u000b\n\u0002\u0008\u0004\n\u0002\u0010\u0007\n\u0000\n\u0002\u0010\u0008\n\u0002\u0008\u0007\n\u0002\u0010\u0002\n\u0002\u0008\u0004\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0003\n\u0002\u0018\u0002\n\u0002\u0008\u001d\n\u0002\u0010\u000e\n\u0002\u0008\u0006\u0008\u0087@\u0018\u0000 G2\u00020\u0001:\u0001GB\u0011\u0012\u0008\u0008\u0002\u0010\u0002\u001a\u00020\u0003\u00a2\u0006\u0004\u0008\u0004\u0010\u0005J\u001a\u0010\u0008\u001a\u00020\t2\u0008\u0010\n\u001a\u0004\u0018\u00010\u0001H\u00d6\u0003\u00a2\u0006\u0004\u0008\u000b\u0010\u000cJ \u0010\r\u001a\u00020\u000e2\u0006\u0010\u000f\u001a\u00020\u00102\u0006\u0010\u0011\u001a\u00020\u0010H\u0086\n\u00a2\u0006\u0004\u0008\u0012\u0010\u0013J\u0010\u0010\u0014\u001a\u00020\u0010H\u00d6\u0001\u00a2\u0006\u0004\u0008\u0015\u0010\u0016J\r\u0010\u0017\u001a\u00020\u0018\u00a2\u0006\u0004\u0008\u0019\u0010\u001aJ\u0015\u0010\u001b\u001a\u00020\u00182\u0006\u0010\u001c\u001a\u00020\u001d\u00a2\u0006\u0004\u0008\u001e\u0010\u001fJ\u0018\u0010\u001b\u001a\u00020 2\u0006\u0010!\u001a\u00020 \u00f8\u0001\u0000\u00a2\u0006\u0004\u0008\"\u0010#J\u0015\u0010\u001b\u001a\u00020$2\u0006\u0010\u001c\u001a\u00020$\u00a2\u0006\u0004\u0008\u001e\u0010%J\r\u0010&\u001a\u00020\u0018\u00a2\u0006\u0004\u0008\'\u0010\u001aJ\u0015\u0010(\u001a\u00020\u00182\u0006\u0010)\u001a\u00020\u000e\u00a2\u0006\u0004\u0008*\u0010+J\u0015\u0010,\u001a\u00020\u00182\u0006\u0010)\u001a\u00020\u000e\u00a2\u0006\u0004\u0008-\u0010+J\u0015\u0010.\u001a\u00020\u00182\u0006\u0010)\u001a\u00020\u000e\u00a2\u0006\u0004\u0008/\u0010+J+\u00100\u001a\u00020\u00182\u0008\u0008\u0002\u00101\u001a\u00020\u000e2\u0008\u0008\u0002\u00102\u001a\u00020\u000e2\u0008\u0008\u0002\u00103\u001a\u00020\u000e\u00a2\u0006\u0004\u00084\u00105J(\u00106\u001a\u00020\u00182\u0006\u0010\u000f\u001a\u00020\u00102\u0006\u0010\u0011\u001a\u00020\u00102\u0006\u00107\u001a\u00020\u000eH\u0086\n\u00a2\u0006\u0004\u00088\u00109J\u0018\u0010:\u001a\u00020\u00182\u0006\u0010;\u001a\u00020\u0000\u00f8\u0001\u0000\u00a2\u0006\u0004\u0008<\u0010=J\u001b\u0010>\u001a\u00020\u00182\u0006\u0010?\u001a\u00020\u0000H\u0086\u0002\u00f8\u0001\u0000\u00a2\u0006\u0004\u0008@\u0010=J\u000f\u0010A\u001a\u00020BH\u0016\u00a2\u0006\u0004\u0008C\u0010DJ+\u0010E\u001a\u00020\u00182\u0008\u0008\u0002\u00101\u001a\u00020\u000e2\u0008\u0008\u0002\u00102\u001a\u00020\u000e2\u0008\u0008\u0002\u00103\u001a\u00020\u000e\u00a2\u0006\u0004\u0008F\u00105R\u0011\u0010\u0002\u001a\u00020\u0003\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\u0006\u0010\u0007\u0088\u0001\u0002\u0082\u0002\u0007\n\u0005\u0008\u00a1\u001e0\u0001\u00a8\u0006H"
     }
     d2 = {
         "Landroidx/compose/ui/graphics/Matrix;",
@@ -173,28 +173,93 @@
 .end method
 
 .method public static constructor-impl([F)[F
-    .locals 1
-
-    const-string/jumbo v0, "values"
-
-    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+    .locals 0
 
     return-object p0
 .end method
 
 .method public static synthetic constructor-impl$default([FILkotlin/jvm/internal/DefaultConstructorMarker;)[F
-    .locals 0
+    .locals 1
 
-    and-int/lit8 p1, p1, 0x1
+    const/4 p2, 0x1
+
+    and-int/2addr p1, p2
 
     if-eqz p1, :cond_0
 
     const/16 p0, 0x10
 
-    .line 36
+    .line 33
     new-array p0, p0, [F
 
-    fill-array-data p0, :array_0
+    const/4 p1, 0x0
+
+    const/high16 v0, 0x3f800000    # 1.0f
+
+    aput v0, p0, p1
+
+    const/4 p1, 0x0
+
+    aput p1, p0, p2
+
+    const/4 p2, 0x2
+
+    aput p1, p0, p2
+
+    const/4 p2, 0x3
+
+    aput p1, p0, p2
+
+    const/4 p2, 0x4
+
+    .line 34
+    aput p1, p0, p2
+
+    const/4 p2, 0x5
+
+    aput v0, p0, p2
+
+    const/4 p2, 0x6
+
+    aput p1, p0, p2
+
+    const/4 p2, 0x7
+
+    aput p1, p0, p2
+
+    const/16 p2, 0x8
+
+    .line 35
+    aput p1, p0, p2
+
+    const/16 p2, 0x9
+
+    aput p1, p0, p2
+
+    const/16 p2, 0xa
+
+    aput v0, p0, p2
+
+    const/16 p2, 0xb
+
+    aput p1, p0, p2
+
+    const/16 p2, 0xc
+
+    .line 36
+    aput p1, p0, p2
+
+    const/16 p2, 0xd
+
+    aput p1, p0, p2
+
+    const/16 p2, 0xe
+
+    aput p1, p0, p2
+
+    const/16 p1, 0xf
+
+    aput v0, p0, p1
 
     .line 31
     :cond_0
@@ -203,26 +268,6 @@
     move-result-object p0
 
     return-object p0
-
-    :array_0
-    .array-data 4
-        0x3f800000    # 1.0f
-        0x0
-        0x0
-        0x0
-        0x0
-        0x3f800000    # 1.0f
-        0x0
-        0x0
-        0x0
-        0x0
-        0x3f800000    # 1.0f
-        0x0
-        0x0
-        0x0
-        0x0
-        0x3f800000    # 1.0f
-    .end array-data
 .end method
 
 .method public static equals-impl([FLjava/lang/Object;)Z
@@ -295,82 +340,82 @@
 
     const/4 v0, 0x0
 
-    .line 480
+    .line 481
     aget v1, p0, v0
 
     const/4 v2, 0x1
 
-    .line 481
+    .line 482
     aget v3, p0, v2
 
     const/4 v4, 0x2
 
-    .line 482
+    .line 483
     aget v5, p0, v4
 
     const/4 v6, 0x3
 
-    .line 483
+    .line 484
     aget v7, p0, v6
 
     const/4 v8, 0x4
 
-    .line 484
+    .line 485
     aget v9, p0, v8
 
     const/4 v10, 0x5
 
-    .line 485
+    .line 486
     aget v11, p0, v10
 
     const/4 v12, 0x6
 
-    .line 486
+    .line 487
     aget v13, p0, v12
 
     const/4 v14, 0x7
 
-    .line 487
+    .line 488
     aget v15, p0, v14
 
     const/16 v16, 0x8
 
-    .line 488
+    .line 489
     aget v14, p0, v16
 
     const/16 v17, 0x9
 
-    .line 489
+    .line 490
     aget v12, p0, v17
 
     const/16 v18, 0xa
 
-    .line 490
+    .line 491
     aget v19, p0, v18
 
     const/16 v20, 0xb
 
-    .line 491
+    .line 492
     aget v21, p0, v20
 
     const/16 v22, 0xc
 
-    .line 492
+    .line 493
     aget v10, p0, v22
 
     const/16 v23, 0xd
 
-    .line 493
+    .line 494
     aget v24, p0, v23
 
     const/16 v25, 0xe
 
-    .line 494
+    .line 495
     aget v26, p0, v25
 
     const/16 v27, 0xf
 
-    .line 495
+    .line 496
     aget v28, p0, v27
 
     mul-float v29, v1, v11
@@ -492,7 +537,7 @@
 
     mul-float v41, v41, v42
 
-    .line 496
+    .line 497
     aput v41, p0, v0
 
     neg-float v0, v3
@@ -509,7 +554,7 @@
 
     mul-float v0, v0, v42
 
-    .line 498
+    .line 499
     aput v0, p0, v2
 
     mul-float v0, v24, v34
@@ -524,7 +569,7 @@
 
     mul-float v0, v0, v42
 
-    .line 500
+    .line 501
     aput v0, p0, v4
 
     neg-float v0, v12
@@ -541,7 +586,7 @@
 
     mul-float v0, v0, v42
 
-    .line 502
+    .line 503
     aput v0, p0, v6
 
     neg-float v0, v9
@@ -558,7 +603,7 @@
 
     mul-float v2, v2, v42
 
-    .line 504
+    .line 505
     aput v2, p0, v8
 
     mul-float v40, v40, v1
@@ -575,7 +620,7 @@
 
     const/4 v2, 0x5
 
-    .line 506
+    .line 507
     aput v40, p0, v2
 
     neg-float v2, v10
@@ -594,7 +639,7 @@
 
     const/4 v6, 0x6
 
-    .line 508
+    .line 509
     aput v4, p0, v6
 
     mul-float v34, v34, v14
@@ -611,7 +656,7 @@
 
     const/4 v4, 0x7
 
-    .line 510
+    .line 511
     aput v34, p0, v4
 
     mul-float v9, v9, v39
@@ -626,7 +671,7 @@
 
     mul-float v9, v9, v42
 
-    .line 512
+    .line 513
     aput v9, p0, v16
 
     neg-float v4, v1
@@ -643,7 +688,7 @@
 
     mul-float v4, v4, v42
 
-    .line 514
+    .line 515
     aput v4, p0, v17
 
     mul-float v10, v10, v33
@@ -658,7 +703,7 @@
 
     mul-float v10, v10, v42
 
-    .line 516
+    .line 517
     aput v10, p0, v18
 
     neg-float v4, v14
@@ -675,7 +720,7 @@
 
     mul-float v4, v4, v42
 
-    .line 518
+    .line 519
     aput v4, p0, v20
 
     mul-float v0, v0, v38
@@ -690,7 +735,7 @@
 
     mul-float v0, v0, v42
 
-    .line 520
+    .line 521
     aput v0, p0, v22
 
     mul-float v1, v1, v38
@@ -705,7 +750,7 @@
 
     mul-float v1, v1, v42
 
-    .line 522
+    .line 523
     aput v1, p0, v23
 
     mul-float v2, v2, v32
@@ -720,7 +765,7 @@
 
     mul-float v2, v2, v42
 
-    .line 524
+    .line 525
     aput v2, p0, v25
 
     mul-float v14, v14, v32
@@ -735,7 +780,7 @@
 
     mul-float v14, v14, v42
 
-    .line 526
+    .line 527
     aput v14, p0, v27
 
     return-void
@@ -756,7 +801,7 @@
 
     const/4 p2, 0x3
 
-    .line 441
+    .line 442
     aget p2, p0, p2
 
     mul-float/2addr p2, v0
@@ -802,7 +847,7 @@
     :goto_0
     const/4 p2, 0x0
 
-    .line 442
+    .line 443
     aget p2, p0, p2
 
     mul-float/2addr p2, v0
@@ -823,7 +868,7 @@
 
     mul-float/2addr p2, v2
 
-    .line 443
+    .line 444
     aget v1, p0, v1
 
     mul-float/2addr v1, v0
@@ -854,10 +899,6 @@
 
 .method public static final map-impl([FLandroidx/compose/ui/geometry/Rect;)Landroidx/compose/ui/geometry/Rect;
     .locals 11
-
-    const-string v0, "rect"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 65
     invoke-virtual {p1}, Landroidx/compose/ui/geometry/Rect;->getLeft()F
@@ -1053,10 +1094,6 @@
 
 .method public static final map-impl([FLandroidx/compose/ui/geometry/MutableRect;)V
     .locals 10
-
-    const-string v0, "rect"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 81
     invoke-virtual {p1}, Landroidx/compose/ui/geometry/MutableRect;->getLeft()F
@@ -1284,7 +1321,7 @@
 
     add-int/2addr v5, v1
 
-    .line 528
+    .line 529
     aput v4, p0, v5
 
     add-int/lit8 v3, v3, 0x1
@@ -1331,12 +1368,12 @@
 
     const/4 v1, 0x1
 
-    .line 530
+    .line 531
     aget v3, p0, v1
 
     const/4 v4, 0x2
 
-    .line 531
+    .line 532
     aget v5, p0, v4
 
     mul-float v6, v3, v2
@@ -1353,12 +1390,12 @@
 
     const/4 v5, 0x5
 
-    .line 532
+    .line 533
     aget v7, p0, v5
 
     const/4 v8, 0x6
 
-    .line 533
+    .line 534
     aget v9, p0, v8
 
     mul-float v10, v7, v2
@@ -1375,12 +1412,12 @@
 
     const/16 v9, 0x9
 
-    .line 534
+    .line 535
     aget v11, p0, v9
 
     const/16 v12, 0xa
 
-    .line 535
+    .line 536
     aget v13, p0, v12
 
     mul-float v14, v11, v2
@@ -1397,12 +1434,12 @@
 
     const/16 v13, 0xd
 
-    .line 536
+    .line 537
     aget v15, p0, v13
 
     const/16 v16, 0xe
 
-    .line 537
+    .line 538
     aget v17, p0, v16
 
     mul-float v18, v15, v2
@@ -1417,28 +1454,28 @@
 
     add-float v15, v15, v17
 
-    .line 538
+    .line 539
     aput v6, p0, v1
 
-    .line 540
+    .line 541
     aput v3, p0, v4
 
-    .line 542
+    .line 543
     aput v10, p0, v5
 
-    .line 544
+    .line 545
     aput v7, p0, v8
 
-    .line 546
+    .line 547
     aput v14, p0, v9
 
-    .line 548
+    .line 549
     aput v11, p0, v12
 
-    .line 550
+    .line 551
     aput v18, p0, v13
 
-    .line 552
+    .line 553
     aput v15, p0, v16
 
     return-void
@@ -1475,12 +1512,12 @@
 
     const/4 v1, 0x0
 
-    .line 554
+    .line 555
     aget v3, p0, v1
 
     const/4 v4, 0x2
 
-    .line 555
+    .line 556
     aget v5, p0, v4
 
     mul-float v6, v3, v2
@@ -1499,12 +1536,12 @@
 
     const/4 v5, 0x4
 
-    .line 556
+    .line 557
     aget v7, p0, v5
 
     const/4 v8, 0x6
 
-    .line 557
+    .line 558
     aget v9, p0, v8
 
     mul-float v10, v7, v2
@@ -1523,12 +1560,12 @@
 
     const/16 v9, 0x8
 
-    .line 558
+    .line 559
     aget v11, p0, v9
 
     const/16 v12, 0xa
 
-    .line 559
+    .line 560
     aget v13, p0, v12
 
     mul-float v14, v11, v2
@@ -1547,12 +1584,12 @@
 
     const/16 v13, 0xc
 
-    .line 560
+    .line 561
     aget v15, p0, v13
 
     const/16 v16, 0xe
 
-    .line 561
+    .line 562
     aget v17, p0, v16
 
     mul-float v18, v15, v2
@@ -1569,28 +1606,28 @@
 
     add-float v15, v15, v17
 
-    .line 562
+    .line 563
     aput v6, p0, v1
 
-    .line 564
+    .line 565
     aput v3, p0, v4
 
-    .line 566
+    .line 567
     aput v10, p0, v5
 
-    .line 568
+    .line 569
     aput v7, p0, v8
 
-    .line 570
+    .line 571
     aput v14, p0, v9
 
-    .line 572
+    .line 573
     aput v11, p0, v12
 
-    .line 574
+    .line 575
     aput v18, p0, v13
 
-    .line 576
+    .line 577
     aput v15, p0, v16
 
     return-void
@@ -1627,12 +1664,12 @@
 
     const/4 v1, 0x0
 
-    .line 578
+    .line 579
     aget v3, p0, v1
 
     const/4 v4, 0x4
 
-    .line 579
+    .line 580
     aget v5, p0, v4
 
     mul-float v6, v2, v3
@@ -1651,12 +1688,12 @@
 
     const/4 v5, 0x1
 
-    .line 580
+    .line 581
     aget v8, p0, v5
 
     const/4 v9, 0x5
 
-    .line 581
+    .line 582
     aget v10, p0, v9
 
     mul-float v11, v2, v8
@@ -1673,12 +1710,12 @@
 
     const/4 v10, 0x2
 
-    .line 582
+    .line 583
     aget v12, p0, v10
 
     const/4 v13, 0x6
 
-    .line 583
+    .line 584
     aget v14, p0, v13
 
     mul-float v15, v2, v12
@@ -1695,12 +1732,12 @@
 
     const/4 v14, 0x3
 
-    .line 584
+    .line 585
     aget v16, p0, v14
 
     const/16 v17, 0x7
 
-    .line 585
+    .line 586
     aget v18, p0, v17
 
     mul-float v19, v2, v16
@@ -1715,28 +1752,28 @@
 
     add-float/2addr v7, v2
 
-    .line 586
+    .line 587
     aput v6, p0, v1
 
-    .line 588
+    .line 589
     aput v11, p0, v5
 
-    .line 590
+    .line 591
     aput v15, p0, v10
 
-    .line 592
+    .line 593
     aput v19, p0, v14
 
-    .line 594
+    .line 595
     aput v3, p0, v4
 
-    .line 596
+    .line 597
     aput v8, p0, v9
 
-    .line 598
+    .line 599
     aput v12, p0, v13
 
-    .line 600
+    .line 601
     aput v7, p0, v17
 
     return-void
@@ -1747,122 +1784,122 @@
 
     const/4 v0, 0x0
 
-    .line 602
+    .line 603
     aget v1, p0, v0
 
     mul-float/2addr v1, p1
 
-    .line 605
+    .line 606
     aput v1, p0, v0
 
     const/4 v0, 0x1
 
-    .line 607
+    .line 608
     aget v1, p0, v0
 
     mul-float/2addr v1, p1
 
-    .line 610
+    .line 611
     aput v1, p0, v0
 
     const/4 v0, 0x2
 
-    .line 612
+    .line 613
     aget v1, p0, v0
 
     mul-float/2addr v1, p1
 
-    .line 615
+    .line 616
     aput v1, p0, v0
 
     const/4 v0, 0x3
 
-    .line 617
+    .line 618
     aget v1, p0, v0
 
     mul-float/2addr v1, p1
 
-    .line 620
+    .line 621
     aput v1, p0, v0
 
     const/4 p1, 0x4
 
-    .line 622
+    .line 623
     aget v0, p0, p1
 
     mul-float/2addr v0, p2
 
-    .line 625
+    .line 626
     aput v0, p0, p1
 
     const/4 p1, 0x5
 
-    .line 627
+    .line 628
     aget v0, p0, p1
 
     mul-float/2addr v0, p2
 
-    .line 630
+    .line 631
     aput v0, p0, p1
 
     const/4 p1, 0x6
 
-    .line 632
+    .line 633
     aget v0, p0, p1
 
     mul-float/2addr v0, p2
 
-    .line 635
+    .line 636
     aput v0, p0, p1
 
     const/4 p1, 0x7
 
-    .line 637
+    .line 638
     aget v0, p0, p1
 
     mul-float/2addr v0, p2
 
-    .line 640
+    .line 641
     aput v0, p0, p1
 
     const/16 p1, 0x8
 
-    .line 642
+    .line 643
     aget p2, p0, p1
 
     mul-float/2addr p2, p3
 
-    .line 645
+    .line 646
     aput p2, p0, p1
 
     const/16 p1, 0x9
 
-    .line 647
+    .line 648
     aget p2, p0, p1
 
     mul-float/2addr p2, p3
 
-    .line 650
+    .line 651
     aput p2, p0, p1
 
     const/16 p1, 0xa
 
-    .line 652
+    .line 653
     aget p2, p0, p1
 
     mul-float/2addr p2, p3
 
-    .line 655
+    .line 656
     aput p2, p0, p1
 
     const/16 p1, 0xb
 
-    .line 657
+    .line 658
     aget p2, p0, p1
 
     mul-float/2addr p2, p3
 
-    .line 660
+    .line 661
     aput p2, p0, p1
 
     return-void
@@ -1916,10 +1953,6 @@
 .method public static final setFrom-58bKbWc([F[F)V
     .locals 2
 
-    const-string v0, "matrix"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
     const/4 v0, 0x0
 
     :goto_0
@@ -1946,10 +1979,6 @@
     move-object/from16 v0, p0
 
     move-object/from16 v1, p1
-
-    const-string v2, "m"
-
-    invoke-static {v1, v2}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
     const/4 v2, 0x0
 
@@ -2039,76 +2068,76 @@
 
     move-result v1
 
-    .line 444
+    .line 445
     aput v3, v0, v2
 
-    .line 446
+    .line 447
     aput v5, v0, v4
 
-    .line 448
+    .line 449
     aput v7, v0, v6
 
-    .line 450
+    .line 451
     aput v9, v0, v8
 
     const/4 v2, 0x4
 
-    .line 452
+    .line 453
     aput v10, v0, v2
 
     const/4 v2, 0x5
 
-    .line 454
+    .line 455
     aput v11, v0, v2
 
     const/4 v2, 0x6
 
-    .line 456
+    .line 457
     aput v12, v0, v2
 
     const/4 v2, 0x7
 
-    .line 458
+    .line 459
     aput v13, v0, v2
 
     const/16 v2, 0x8
 
-    .line 460
+    .line 461
     aput v14, v0, v2
 
     const/16 v2, 0x9
 
-    .line 462
+    .line 463
     aput v15, v0, v2
 
     const/16 v2, 0xa
 
-    .line 464
+    .line 465
     aput v16, v0, v2
 
     const/16 v2, 0xb
 
-    .line 466
+    .line 467
     aput v17, v0, v2
 
     const/16 v2, 0xc
 
-    .line 468
+    .line 469
     aput v18, v0, v2
 
     const/16 v2, 0xd
 
-    .line 470
+    .line 471
     aput v19, v0, v2
 
     const/16 v2, 0xe
 
-    .line 472
+    .line 473
     aput v20, v0, v2
 
     const/16 v2, 0xf
 
-    .line 474
+    .line 475
     aput v1, v0, v2
 
     return-void
@@ -2126,7 +2155,7 @@
 
     const/4 v1, 0x0
 
-    .line 476
+    .line 477
     aget v1, p0, v1
 
     .line 131
@@ -2142,7 +2171,7 @@
 
     const/4 v3, 0x1
 
-    .line 476
+    .line 477
     aget v3, p0, v3
 
     .line 131
@@ -2156,7 +2185,7 @@
 
     const/4 v3, 0x2
 
-    .line 476
+    .line 477
     aget v3, p0, v3
 
     .line 131
@@ -2170,7 +2199,7 @@
 
     const/4 v3, 0x3
 
-    .line 476
+    .line 477
     aget v3, p0, v3
 
     .line 131
@@ -2186,7 +2215,7 @@
 
     const/4 v4, 0x4
 
-    .line 477
+    .line 478
     aget v4, p0, v4
 
     .line 131
@@ -2200,7 +2229,7 @@
 
     const/4 v4, 0x5
 
-    .line 477
+    .line 478
     aget v4, p0, v4
 
     .line 131
@@ -2214,7 +2243,7 @@
 
     const/4 v4, 0x6
 
-    .line 477
+    .line 478
     aget v4, p0, v4
 
     .line 131
@@ -2228,7 +2257,7 @@
 
     const/4 v4, 0x7
 
-    .line 477
+    .line 478
     aget v4, p0, v4
 
     .line 131
@@ -2242,7 +2271,7 @@
 
     const/16 v4, 0x8
 
-    .line 478
+    .line 479
     aget v4, p0, v4
 
     .line 131
@@ -2256,7 +2285,7 @@
 
     const/16 v4, 0x9
 
-    .line 478
+    .line 479
     aget v4, p0, v4
 
     .line 131
@@ -2270,7 +2299,7 @@
 
     const/16 v4, 0xa
 
-    .line 478
+    .line 479
     aget v4, p0, v4
 
     .line 131
@@ -2282,7 +2311,7 @@
 
     const/16 v1, 0xb
 
-    .line 478
+    .line 479
     aget v1, p0, v1
 
     .line 131
@@ -2296,7 +2325,7 @@
 
     const/16 v3, 0xc
 
-    .line 479
+    .line 480
     aget v3, p0, v3
 
     .line 131
@@ -2310,7 +2339,7 @@
 
     const/16 v3, 0xd
 
-    .line 479
+    .line 480
     aget v3, p0, v3
 
     .line 131
@@ -2324,7 +2353,7 @@
 
     const/16 v3, 0xe
 
-    .line 479
+    .line 480
     aget v3, p0, v3
 
     .line 131
@@ -2338,7 +2367,7 @@
 
     const/16 v2, 0xf
 
-    .line 479
+    .line 480
     aget p0, p0, v2
 
     .line 131
@@ -2369,14 +2398,14 @@
 
     const/4 v0, 0x0
 
-    .line 662
+    .line 663
     aget v0, p0, v0
 
     mul-float/2addr v0, p1
 
     const/4 v1, 0x4
 
-    .line 663
+    .line 664
     aget v1, p0, v1
 
     mul-float/2addr v1, p2
@@ -2385,7 +2414,7 @@
 
     const/16 v1, 0x8
 
-    .line 664
+    .line 665
     aget v1, p0, v1
 
     mul-float/2addr v1, p3
@@ -2394,21 +2423,21 @@
 
     const/16 v1, 0xc
 
-    .line 665
+    .line 666
     aget v2, p0, v1
 
     add-float/2addr v0, v2
 
     const/4 v2, 0x1
 
-    .line 666
+    .line 667
     aget v2, p0, v2
 
     mul-float/2addr v2, p1
 
     const/4 v3, 0x5
 
-    .line 667
+    .line 668
     aget v3, p0, v3
 
     mul-float/2addr v3, p2
@@ -2417,7 +2446,7 @@
 
     const/16 v3, 0x9
 
-    .line 668
+    .line 669
     aget v3, p0, v3
 
     mul-float/2addr v3, p3
@@ -2426,21 +2455,21 @@
 
     const/16 v3, 0xd
 
-    .line 669
+    .line 670
     aget v4, p0, v3
 
     add-float/2addr v2, v4
 
     const/4 v4, 0x2
 
-    .line 670
+    .line 671
     aget v4, p0, v4
 
     mul-float/2addr v4, p1
 
     const/4 v5, 0x6
 
-    .line 671
+    .line 672
     aget v5, p0, v5
 
     mul-float/2addr v5, p2
@@ -2449,7 +2478,7 @@
 
     const/16 v5, 0xa
 
-    .line 672
+    .line 673
     aget v5, p0, v5
 
     mul-float/2addr v5, p3
@@ -2458,21 +2487,21 @@
 
     const/16 v5, 0xe
 
-    .line 673
+    .line 674
     aget v6, p0, v5
 
     add-float/2addr v4, v6
 
     const/4 v6, 0x3
 
-    .line 674
+    .line 675
     aget v6, p0, v6
 
     mul-float/2addr v6, p1
 
     const/4 p1, 0x7
 
-    .line 675
+    .line 676
     aget p1, p0, p1
 
     mul-float/2addr p1, p2
@@ -2481,7 +2510,7 @@
 
     const/16 p1, 0xb
 
-    .line 676
+    .line 677
     aget p1, p0, p1
 
     mul-float/2addr p1, p3
@@ -2490,21 +2519,21 @@
 
     const/16 p1, 0xf
 
-    .line 677
+    .line 678
     aget p2, p0, p1
 
     add-float/2addr v6, p2
 
-    .line 678
+    .line 679
     aput v0, p0, v1
 
-    .line 680
+    .line 681
     aput v2, p0, v3
 
-    .line 682
+    .line 683
     aput v4, p0, v5
 
-    .line 684
+    .line 685
     aput v6, p0, p1
 
     return-void

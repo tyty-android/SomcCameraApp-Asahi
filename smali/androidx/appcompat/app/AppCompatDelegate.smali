@@ -706,7 +706,7 @@
     .line 714
     const-string p0, "AppCompatDelegate"
 
-    const-string/jumbo v0, "setDefaultNightMode() called with an unknown mode"
+    const-string v0, "setDefaultNightMode() called with an unknown mode"
 
     invoke-static {p0, v0}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 

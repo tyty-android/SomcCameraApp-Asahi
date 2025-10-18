@@ -3,15 +3,17 @@
 .source "D8$$SyntheticClass"
 
 # interfaces
-.implements Landroid/view/View$OnLayoutChangeListener;
+.implements Landroid/view/View$OnClickListener;
 
 
 # instance fields
 .field public final synthetic f$0:Ljp/co/sony/mc/camera/view/fragment/MoreModeSelectionFragment;
 
+.field public final synthetic f$1:Ljp/co/sony/mc/camera/view/viewmodel/CapturingUiMode;
+
 
 # direct methods
-.method public synthetic constructor <init>(Ljp/co/sony/mc/camera/view/fragment/MoreModeSelectionFragment;)V
+.method public synthetic constructor <init>(Ljp/co/sony/mc/camera/view/fragment/MoreModeSelectionFragment;Ljp/co/sony/mc/camera/view/viewmodel/CapturingUiMode;)V
     .locals 0
 
     .line 0
@@ -19,38 +21,22 @@
 
     iput-object p1, p0, Ljp/co/sony/mc/camera/view/fragment/MoreModeSelectionFragment$$ExternalSyntheticLambda1;->f$0:Ljp/co/sony/mc/camera/view/fragment/MoreModeSelectionFragment;
 
+    iput-object p2, p0, Ljp/co/sony/mc/camera/view/fragment/MoreModeSelectionFragment$$ExternalSyntheticLambda1;->f$1:Ljp/co/sony/mc/camera/view/viewmodel/CapturingUiMode;
+
     return-void
 .end method
 
 
 # virtual methods
-.method public final onLayoutChange(Landroid/view/View;IIIIIIII)V
-    .locals 10
+.method public final onClick(Landroid/view/View;)V
+    .locals 1
 
     .line 0
-    move-object v0, p0
+    iget-object v0, p0, Ljp/co/sony/mc/camera/view/fragment/MoreModeSelectionFragment$$ExternalSyntheticLambda1;->f$0:Ljp/co/sony/mc/camera/view/fragment/MoreModeSelectionFragment;
 
-    iget-object v0, v0, Ljp/co/sony/mc/camera/view/fragment/MoreModeSelectionFragment$$ExternalSyntheticLambda1;->f$0:Ljp/co/sony/mc/camera/view/fragment/MoreModeSelectionFragment;
+    iget-object p0, p0, Ljp/co/sony/mc/camera/view/fragment/MoreModeSelectionFragment$$ExternalSyntheticLambda1;->f$1:Ljp/co/sony/mc/camera/view/viewmodel/CapturingUiMode;
 
-    move-object v1, p1
-
-    move v2, p2
-
-    move v3, p3
-
-    move v4, p4
-
-    move v5, p5
-
-    move/from16 v6, p6
-
-    move/from16 v7, p7
-
-    move/from16 v8, p8
-
-    move/from16 v9, p9
-
-    invoke-static/range {v0 .. v9}, Ljp/co/sony/mc/camera/view/fragment/MoreModeSelectionFragment;->$r8$lambda$hw0B7ubBlDOYK_6o4A4medig7zQ(Ljp/co/sony/mc/camera/view/fragment/MoreModeSelectionFragment;Landroid/view/View;IIIIIIII)V
+    invoke-static {v0, p0, p1}, Ljp/co/sony/mc/camera/view/fragment/MoreModeSelectionFragment;->$r8$lambda$mj93QHvbYAOVnnq20b26YoQij8U(Ljp/co/sony/mc/camera/view/fragment/MoreModeSelectionFragment;Ljp/co/sony/mc/camera/view/viewmodel/CapturingUiMode;Landroid/view/View;)V
 
     return-void
 .end method

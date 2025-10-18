@@ -48,12 +48,12 @@
 .method public constructor <init>(Ljp/co/sony/mc/camera/view/EventProcedure;)V
     .locals 1
 
-    .line 898
+    .line 919
     iput-object p1, p0, Ljp/co/sony/mc/camera/view/EventProcedure$JumpZoomProcedure;->this$0:Ljp/co/sony/mc/camera/view/EventProcedure;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 901
+    .line 922
     new-instance p1, Ljp/co/sony/mc/camera/view/EventProcedure$VariableUserEventTicker;
 
     const/4 v0, 0x0
@@ -68,7 +68,7 @@
 .method private performJumpZooming()V
     .locals 4
 
-    .line 953
+    .line 974
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/EventProcedure$JumpZoomProcedure;->this$0:Ljp/co/sony/mc/camera/view/EventProcedure;
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/view/EventProcedure;->-$$Nest$fgetmFragmentController(Ljp/co/sony/mc/camera/view/EventProcedure;)Ljp/co/sony/mc/camera/view/FragmentController;
@@ -83,7 +83,7 @@
 
     return-void
 
-    .line 957
+    .line 978
     :cond_0
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/EventProcedure$JumpZoomProcedure;->mVariableIndex:Ljp/co/sony/mc/camera/view/angle/VariableIndex;
 
@@ -91,7 +91,7 @@
 
     move-result v0
 
-    .line 958
+    .line 979
     iget-object v1, p0, Ljp/co/sony/mc/camera/view/EventProcedure$JumpZoomProcedure;->this$0:Ljp/co/sony/mc/camera/view/EventProcedure;
 
     invoke-static {v1}, Ljp/co/sony/mc/camera/view/EventProcedure;->-$$Nest$fgetmFragmentController(Ljp/co/sony/mc/camera/view/EventProcedure;)Ljp/co/sony/mc/camera/view/FragmentController;
@@ -104,7 +104,7 @@
 
     if-eqz v1, :cond_2
 
-    .line 961
+    .line 982
     iget-object v1, p0, Ljp/co/sony/mc/camera/view/EventProcedure$JumpZoomProcedure;->mVariableIndexCalculator:Ljp/co/sony/mc/camera/view/angle/VariableIndex$Calculator;
 
     iget-object v2, p0, Ljp/co/sony/mc/camera/view/EventProcedure$JumpZoomProcedure;->mVariableIndex:Ljp/co/sony/mc/camera/view/angle/VariableIndex;
@@ -125,14 +125,14 @@
 
     iput-object v1, p0, Ljp/co/sony/mc/camera/view/EventProcedure$JumpZoomProcedure;->mVariableIndex:Ljp/co/sony/mc/camera/view/angle/VariableIndex;
 
-    .line 962
+    .line 983
     invoke-virtual {v1}, Ljp/co/sony/mc/camera/view/angle/VariableIndex;->getIndex()I
 
     move-result v1
 
     if-eq v0, v1, :cond_1
 
-    .line 964
+    .line 985
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/EventProcedure$JumpZoomProcedure;->this$0:Ljp/co/sony/mc/camera/view/EventProcedure;
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/view/EventProcedure;->-$$Nest$fgetmFragmentController(Ljp/co/sony/mc/camera/view/EventProcedure;)Ljp/co/sony/mc/camera/view/FragmentController;
@@ -147,7 +147,7 @@
 
     invoke-virtual {v0, v1}, Ljp/co/sony/mc/camera/view/FragmentController;->setZoomStep(I)V
 
-    .line 966
+    .line 987
     :cond_1
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/EventProcedure$JumpZoomProcedure;->mVariableIndex:Ljp/co/sony/mc/camera/view/angle/VariableIndex;
 
@@ -159,12 +159,12 @@
 
     if-ne v0, v1, :cond_3
 
-    .line 967
+    .line 988
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/view/EventProcedure$JumpZoomProcedure;->stopZooming()V
 
     goto :goto_0
 
-    .line 971
+    .line 992
     :cond_2
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/EventProcedure$JumpZoomProcedure;->this$0:Ljp/co/sony/mc/camera/view/EventProcedure;
 
@@ -176,7 +176,7 @@
 
     invoke-virtual {v0, v1}, Ljp/co/sony/mc/camera/view/FragmentController;->showFakeCover(Z)V
 
-    .line 972
+    .line 993
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/EventProcedure$JumpZoomProcedure;->this$0:Ljp/co/sony/mc/camera/view/EventProcedure;
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/view/EventProcedure;->-$$Nest$fgetmFragmentController(Ljp/co/sony/mc/camera/view/EventProcedure;)Ljp/co/sony/mc/camera/view/FragmentController;
@@ -187,7 +187,7 @@
 
     invoke-virtual {v0, v1}, Ljp/co/sony/mc/camera/view/FragmentController;->setZoomStep(I)V
 
-    .line 973
+    .line 994
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/view/EventProcedure$JumpZoomProcedure;->stopZooming()V
 
     :cond_3
@@ -198,7 +198,7 @@
 .method private prepareZooming(II)Z
     .locals 9
 
-    .line 919
+    .line 940
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/EventProcedure$JumpZoomProcedure;->this$0:Ljp/co/sony/mc/camera/view/EventProcedure;
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/view/EventProcedure;->-$$Nest$fgetmFragmentController(Ljp/co/sony/mc/camera/view/EventProcedure;)Ljp/co/sony/mc/camera/view/FragmentController;
@@ -213,7 +213,7 @@
 
     if-eqz v0, :cond_1
 
-    .line 920
+    .line 941
     new-instance v0, Ljp/co/sony/mc/camera/view/angle/JumpZoomStepCalculator;
 
     const/4 v2, 0x1
@@ -227,20 +227,20 @@
 
     iput-object v0, p0, Ljp/co/sony/mc/camera/view/EventProcedure$JumpZoomProcedure;->mVariableIndexCalculator:Ljp/co/sony/mc/camera/view/angle/VariableIndex$Calculator;
 
-    .line 921
+    .line 942
     new-instance v0, Ljp/co/sony/mc/camera/view/angle/VariableIndex;
 
-    .line 922
+    .line 943
     invoke-static {p1, p2}, Ljava/lang/Math;->max(II)I
 
     move-result v4
 
-    .line 923
+    .line 944
     invoke-static {p1, p2}, Ljava/lang/Math;->min(II)I
 
     move-result v5
 
-    .line 924
+    .line 945
     invoke-static {}, Ljp/co/sony/mc/camera/setting/CameraProSetting;->getInstance()Ljp/co/sony/mc/camera/setting/CameraProSetting;
 
     move-result-object p1
@@ -271,14 +271,14 @@
 
     iput-object v0, p0, Ljp/co/sony/mc/camera/view/EventProcedure$JumpZoomProcedure;->mVariableIndex:Ljp/co/sony/mc/camera/view/angle/VariableIndex;
 
-    .line 928
+    .line 949
     invoke-virtual {v0}, Ljp/co/sony/mc/camera/view/angle/VariableIndex;->getIndex()I
 
     move-result p1
 
     iput p1, p0, Ljp/co/sony/mc/camera/view/EventProcedure$JumpZoomProcedure;->mInitialZoomStep:I
 
-    .line 929
+    .line 950
     iput p2, p0, Ljp/co/sony/mc/camera/view/EventProcedure$JumpZoomProcedure;->mStopZoomStep:I
 
     return v2
@@ -290,7 +290,7 @@
 .method private startZooming()V
     .locals 2
 
-    .line 936
+    .line 957
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/EventProcedure$JumpZoomProcedure;->this$0:Ljp/co/sony/mc/camera/view/EventProcedure;
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/view/EventProcedure;->-$$Nest$fgetmFragmentController(Ljp/co/sony/mc/camera/view/EventProcedure;)Ljp/co/sony/mc/camera/view/FragmentController;
@@ -305,16 +305,16 @@
 
     return-void
 
-    .line 940
+    .line 961
     :cond_0
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/EventProcedure$JumpZoomProcedure;->mOnJumpZoomListener:Ljp/co/sony/mc/camera/view/EventProcedure$onJumpZoomListener;
 
     if-eqz v0, :cond_1
 
-    .line 941
+    .line 962
     invoke-interface {v0}, Ljp/co/sony/mc/camera/view/EventProcedure$onJumpZoomListener;->onJumpZoomStart()V
 
-    .line 943
+    .line 964
     :cond_1
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/EventProcedure$JumpZoomProcedure;->mEventTicker:Ljp/co/sony/mc/camera/view/EventProcedure$VariableUserEventTicker;
 
@@ -334,14 +334,14 @@
 .method public onJumpZoom(II)V
     .locals 0
 
-    .line 909
+    .line 930
     invoke-direct {p0, p1, p2}, Ljp/co/sony/mc/camera/view/EventProcedure$JumpZoomProcedure;->prepareZooming(II)Z
 
     move-result p1
 
     if-eqz p1, :cond_0
 
-    .line 910
+    .line 931
     invoke-direct {p0}, Ljp/co/sony/mc/camera/view/EventProcedure$JumpZoomProcedure;->startZooming()V
 
     :cond_0
@@ -351,7 +351,7 @@
 .method public registerJumpZoomListener(Ljp/co/sony/mc/camera/view/EventProcedure$onJumpZoomListener;)V
     .locals 0
 
-    .line 915
+    .line 936
     iput-object p1, p0, Ljp/co/sony/mc/camera/view/EventProcedure$JumpZoomProcedure;->mOnJumpZoomListener:Ljp/co/sony/mc/camera/view/EventProcedure$onJumpZoomListener;
 
     return-void
@@ -360,7 +360,7 @@
 .method public stopZooming()V
     .locals 2
 
-    .line 979
+    .line 1000
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/EventProcedure$JumpZoomProcedure;->this$0:Ljp/co/sony/mc/camera/view/EventProcedure;
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/view/EventProcedure;->-$$Nest$fgetmFragmentController(Ljp/co/sony/mc/camera/view/EventProcedure;)Ljp/co/sony/mc/camera/view/FragmentController;
@@ -375,27 +375,27 @@
 
     return-void
 
-    .line 983
+    .line 1004
     :cond_0
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/EventProcedure$JumpZoomProcedure;->mEventTicker:Ljp/co/sony/mc/camera/view/EventProcedure$VariableUserEventTicker;
 
     invoke-virtual {v0}, Ljp/co/sony/mc/camera/view/EventProcedure$VariableUserEventTicker;->stop()V
 
-    .line 984
+    .line 1005
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/EventProcedure$JumpZoomProcedure;->mOnJumpZoomListener:Ljp/co/sony/mc/camera/view/EventProcedure$onJumpZoomListener;
 
     if-eqz v0, :cond_1
 
-    .line 985
+    .line 1006
     invoke-interface {v0}, Ljp/co/sony/mc/camera/view/EventProcedure$onJumpZoomListener;->onJumpZoomEnd()V
 
-    .line 988
+    .line 1009
     :cond_1
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/EventProcedure$JumpZoomProcedure;->mVariableIndex:Ljp/co/sony/mc/camera/view/angle/VariableIndex;
 
     if-eqz v0, :cond_2
 
-    .line 989
+    .line 1010
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/EventProcedure$JumpZoomProcedure;->this$0:Ljp/co/sony/mc/camera/view/EventProcedure;
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/view/EventProcedure;->-$$Nest$fgetmFragmentController(Ljp/co/sony/mc/camera/view/EventProcedure;)Ljp/co/sony/mc/camera/view/FragmentController;
@@ -404,7 +404,7 @@
 
     invoke-virtual {v0}, Ljp/co/sony/mc/camera/view/FragmentController;->finishZoom()V
 
-    .line 991
+    .line 1012
     iget v0, p0, Ljp/co/sony/mc/camera/view/EventProcedure$JumpZoomProcedure;->mInitialZoomStep:I
 
     iget-object v1, p0, Ljp/co/sony/mc/camera/view/EventProcedure$JumpZoomProcedure;->mVariableIndex:Ljp/co/sony/mc/camera/view/angle/VariableIndex;
@@ -421,23 +421,23 @@
 
     move-result-object v0
 
-    .line 992
+    .line 1013
     invoke-virtual {v0}, Ljp/co/sony/mc/camera/view/FragmentController;->isInRecording()Z
 
     move-result v0
 
     if-eqz v0, :cond_2
 
-    .line 993
+    .line 1014
     sget-object v0, Ljp/co/sony/mc/camera/idd/event/IddRecordingEvent;->Context:Ljp/co/sony/mc/camera/idd/event/IddRecordingEvent$Context;
 
     invoke-virtual {v0}, Ljp/co/sony/mc/camera/idd/event/IddRecordingEvent$Context;->getEnv()Ljp/co/sony/mc/camera/idd/value/IddEnvironment;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Ljp/co/sony/mc/camera/idd/value/IddEnvironment;->IncrementCountZoomInRecording()V
+    invoke-virtual {v0}, Ljp/co/sony/mc/camera/idd/value/IddEnvironment;->incrementCountZoomInRecording()V
 
-    .line 994
+    .line 1015
     sget-object v0, Ljp/co/sony/mc/camera/idd/event/IddStreamingFinishedEvent;->Context:Ljp/co/sony/mc/camera/idd/event/IddStreamingFinishedEvent$Context;
 
     invoke-virtual {v0}, Ljp/co/sony/mc/camera/idd/event/IddStreamingFinishedEvent$Context;->getEnv()Ljp/co/sony/mc/camera/idd/value/IddCameraAppStreamEnvironment;
@@ -449,15 +449,15 @@
     :cond_2
     const/4 v0, 0x0
 
-    .line 997
+    .line 1018
     iput-object v0, p0, Ljp/co/sony/mc/camera/view/EventProcedure$JumpZoomProcedure;->mVariableIndex:Ljp/co/sony/mc/camera/view/angle/VariableIndex;
 
-    .line 998
+    .line 1019
     iput-object v0, p0, Ljp/co/sony/mc/camera/view/EventProcedure$JumpZoomProcedure;->mVariableIndexCalculator:Ljp/co/sony/mc/camera/view/angle/VariableIndex$Calculator;
 
     const/4 v0, 0x0
 
-    .line 999
+    .line 1020
     iput v0, p0, Ljp/co/sony/mc/camera/view/EventProcedure$JumpZoomProcedure;->mStopZoomStep:I
 
     return-void

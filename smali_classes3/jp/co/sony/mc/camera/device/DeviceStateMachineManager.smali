@@ -89,24 +89,138 @@
 
 # virtual methods
 .method createDeviceStateMachine(Ljp/co/sony/mc/camera/device/CameraDeviceHandler$CameraSessionId;Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;Ljp/co/sony/mc/camera/device/state/IDeviceStateMachineCallback;)Ljp/co/sony/mc/camera/device/DeviceStateMachine;
-    .locals 11
+    .locals 15
 
-    const-string v0, "Session["
+    move-object v0, p0
 
-    const-string v1, "CameraAccess_"
+    move-object/from16 v1, p1
+
+    const-string v2, "Session["
+
+    const-string v3, "CameraAccess_"
 
     .line 68
-    sget-boolean v2, Ljp/co/sony/mc/camera/util/CamLog;->DEBUG:Z
+    sget-boolean v4, Ljp/co/sony/mc/camera/util/CamLog;->DEBUG:Z
 
-    if-eqz v2, :cond_0
+    const/4 v5, 0x0
 
-    new-instance v2, Ljava/lang/StringBuilder;
+    const/4 v6, 0x1
 
-    const-string v3, "Initialize DeviceState. create sessionID:"
+    if-eqz v4, :cond_0
 
-    invoke-direct {v2, v3}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+    new-array v4, v6, [Ljava/lang/String;
 
-    invoke-virtual {v2, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+    new-instance v7, Ljava/lang/StringBuilder;
+
+    const-string v8, "Initialize DeviceState. create sessionID:"
+
+    invoke-direct {v7, v8}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+
+    invoke-virtual {v7, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    move-result-object v7
+
+    invoke-virtual {v7}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v7
+
+    aput-object v7, v4, v5
+
+    invoke-static {v4}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
+
+    .line 71
+    :cond_0
+    iget-object v4, v0, Ljp/co/sony/mc/camera/device/DeviceStateMachineManager;->mActiveCameraSessionListLock:Ljava/lang/Object;
+
+    monitor-enter v4
+
+    .line 73
+    :try_start_0
+    new-instance v7, Landroid/os/HandlerThread;
+
+    new-instance v8, Ljava/lang/StringBuilder;
+
+    invoke-direct {v8, v3}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+
+    .line 74
+    invoke-virtual/range {p1 .. p1}, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$CameraSessionId;->toString()Ljava/lang/String;
+
+    move-result-object v3
+
+    invoke-virtual {v8, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v3
+
+    invoke-virtual {v3}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v3
+
+    const/16 v8, 0xa
+
+    invoke-direct {v7, v3, v8}, Landroid/os/HandlerThread;-><init>(Ljava/lang/String;I)V
+
+    .line 75
+    invoke-virtual {v7}, Landroid/os/HandlerThread;->start()V
+
+    .line 76
+    new-instance v12, Landroid/os/Handler;
+
+    invoke-virtual {v7}, Landroid/os/HandlerThread;->getLooper()Landroid/os/Looper;
+
+    move-result-object v3
+
+    invoke-direct {v12, v3}, Landroid/os/Handler;-><init>(Landroid/os/Looper;)V
+
+    .line 78
+    iget-object v3, v0, Ljp/co/sony/mc/camera/device/DeviceStateMachineManager;->mActiveCameraSessionList:Ljava/util/LinkedList;
+
+    invoke-virtual {v3}, Ljava/util/LinkedList;->size()I
+
+    move-result v3
+
+    if-lez v3, :cond_1
+
+    move v3, v6
+
+    goto :goto_0
+
+    :cond_1
+    move v3, v5
+
+    :goto_0
+    if-eqz v3, :cond_2
+
+    .line 80
+    new-array v6, v6, [Ljava/lang/String;
+
+    new-instance v7, Ljava/lang/StringBuilder;
+
+    invoke-direct {v7, v2}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+
+    invoke-virtual {v7, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    move-result-object v2
+
+    const-string v7, "] is pending to open due to active session["
+
+    invoke-virtual {v2, v7}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v2
+
+    iget-object v7, v0, Ljp/co/sony/mc/camera/device/DeviceStateMachineManager;->mActiveCameraSessionList:Ljava/util/LinkedList;
+
+    .line 81
+    invoke-virtual {v7}, Ljava/util/LinkedList;->getFirst()Ljava/lang/Object;
+
+    move-result-object v7
+
+    invoke-virtual {v2, v7}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    move-result-object v2
+
+    const-string v7, "] exists."
+
+    invoke-virtual {v2, v7}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v2
 
@@ -114,186 +228,68 @@
 
     move-result-object v2
 
-    filled-new-array {v2}, [Ljava/lang/String;
-
-    move-result-object v2
-
-    invoke-static {v2}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
-
-    .line 71
-    :cond_0
-    iget-object v2, p0, Ljp/co/sony/mc/camera/device/DeviceStateMachineManager;->mActiveCameraSessionListLock:Ljava/lang/Object;
-
-    monitor-enter v2
-
-    .line 73
-    :try_start_0
-    new-instance v3, Landroid/os/HandlerThread;
-
-    new-instance v4, Ljava/lang/StringBuilder;
-
-    invoke-direct {v4, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
-
-    .line 74
-    invoke-virtual {p1}, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$CameraSessionId;->toString()Ljava/lang/String;
-
-    move-result-object v1
-
-    invoke-virtual {v4, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v1
-
-    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v1
-
-    const/16 v4, 0xa
-
-    invoke-direct {v3, v1, v4}, Landroid/os/HandlerThread;-><init>(Ljava/lang/String;I)V
-
-    .line 75
-    invoke-virtual {v3}, Landroid/os/HandlerThread;->start()V
-
-    .line 76
-    new-instance v8, Landroid/os/Handler;
-
-    invoke-virtual {v3}, Landroid/os/HandlerThread;->getLooper()Landroid/os/Looper;
-
-    move-result-object v1
-
-    invoke-direct {v8, v1}, Landroid/os/Handler;-><init>(Landroid/os/Looper;)V
-
-    .line 78
-    iget-object v1, p0, Ljp/co/sony/mc/camera/device/DeviceStateMachineManager;->mActiveCameraSessionList:Ljava/util/LinkedList;
-
-    invoke-virtual {v1}, Ljava/util/LinkedList;->size()I
-
-    move-result v1
-
-    const/4 v3, 0x1
-
-    const/4 v4, 0x0
-
-    if-lez v1, :cond_1
-
-    move v1, v3
-
-    goto :goto_0
-
-    :cond_1
-    move v1, v4
-
-    :goto_0
-    if-eqz v1, :cond_2
+    aput-object v2, v6, v5
 
     .line 80
-    new-array v5, v3, [Ljava/lang/String;
-
-    new-instance v6, Ljava/lang/StringBuilder;
-
-    invoke-direct {v6, v0}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
-
-    invoke-virtual {v6, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
-
-    move-result-object v0
-
-    const-string v6, "] is pending to open due to active session["
-
-    invoke-virtual {v0, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v0
-
-    iget-object v6, p0, Ljp/co/sony/mc/camera/device/DeviceStateMachineManager;->mActiveCameraSessionList:Ljava/util/LinkedList;
-
-    .line 81
-    invoke-virtual {v6}, Ljava/util/LinkedList;->getFirst()Ljava/lang/Object;
-
-    move-result-object v6
-
-    invoke-virtual {v0, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
-
-    move-result-object v0
-
-    const-string v6, "] exists."
-
-    invoke-virtual {v0, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v0
-
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v0
-
-    aput-object v0, v5, v4
-
-    .line 80
-    invoke-static {v5}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
+    invoke-static {v6}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
     .line 85
     :cond_2
-    new-instance v0, Ljp/co/sony/mc/camera/device/DeviceStateMachine;
+    new-instance v2, Ljp/co/sony/mc/camera/device/DeviceStateMachine;
 
-    iget-object v6, p0, Ljp/co/sony/mc/camera/device/DeviceStateMachineManager;->mApplicationContext:Landroid/content/Context;
+    iget-object v10, v0, Ljp/co/sony/mc/camera/device/DeviceStateMachineManager;->mApplicationContext:Landroid/content/Context;
 
-    iget-object v7, p0, Ljp/co/sony/mc/camera/device/DeviceStateMachineManager;->mCameraDeviceHandler:Ljp/co/sony/mc/camera/device/CameraDeviceHandler$CameraDeviceHandlerInquirer;
+    iget-object v11, v0, Ljp/co/sony/mc/camera/device/DeviceStateMachineManager;->mCameraDeviceHandler:Ljp/co/sony/mc/camera/device/CameraDeviceHandler$CameraDeviceHandlerInquirer;
 
-    iget-object v9, p0, Ljp/co/sony/mc/camera/device/DeviceStateMachineManager;->mUiThreadHandler:Landroid/os/Handler;
+    iget-object v13, v0, Ljp/co/sony/mc/camera/device/DeviceStateMachineManager;->mUiThreadHandler:Landroid/os/Handler;
 
-    new-instance v10, Ljp/co/sony/mc/camera/device/DeviceStateMachineManager$DeviceStateMachineLifeCycleCallback;
+    new-instance v14, Ljp/co/sony/mc/camera/device/DeviceStateMachineManager$DeviceStateMachineLifeCycleCallback;
 
     const/4 v5, 0x0
 
-    invoke-direct {v10, p0, v5}, Ljp/co/sony/mc/camera/device/DeviceStateMachineManager$DeviceStateMachineLifeCycleCallback;-><init>(Ljp/co/sony/mc/camera/device/DeviceStateMachineManager;Ljp/co/sony/mc/camera/device/DeviceStateMachineManager$DeviceStateMachineLifeCycleCallback-IA;)V
+    invoke-direct {v14, p0, v5}, Ljp/co/sony/mc/camera/device/DeviceStateMachineManager$DeviceStateMachineLifeCycleCallback;-><init>(Ljp/co/sony/mc/camera/device/DeviceStateMachineManager;Ljp/co/sony/mc/camera/device/DeviceStateMachineManager$DeviceStateMachineLifeCycleCallback-IA;)V
 
-    move-object v5, v0
+    move-object v9, v2
 
-    invoke-direct/range {v5 .. v10}, Ljp/co/sony/mc/camera/device/DeviceStateMachine;-><init>(Landroid/content/Context;Ljp/co/sony/mc/camera/device/CameraDeviceHandler$CameraDeviceHandlerInquirer;Landroid/os/Handler;Landroid/os/Handler;Ljp/co/sony/mc/camera/device/DeviceStateMachine$IDeviceStateMachineLifeCycle;)V
+    invoke-direct/range {v9 .. v14}, Ljp/co/sony/mc/camera/device/DeviceStateMachine;-><init>(Landroid/content/Context;Ljp/co/sony/mc/camera/device/CameraDeviceHandler$CameraDeviceHandlerInquirer;Landroid/os/Handler;Landroid/os/Handler;Ljp/co/sony/mc/camera/device/DeviceStateMachine$IDeviceStateMachineLifeCycle;)V
 
     .line 92
-    iget-object p0, p0, Ljp/co/sony/mc/camera/device/DeviceStateMachineManager;->mActiveCameraSessionList:Ljava/util/LinkedList;
+    iget-object v0, v0, Ljp/co/sony/mc/camera/device/DeviceStateMachineManager;->mActiveCameraSessionList:Ljava/util/LinkedList;
 
-    invoke-virtual {p0, p1}, Ljava/util/LinkedList;->offer(Ljava/lang/Object;)Z
+    invoke-virtual {v0, v1}, Ljava/util/LinkedList;->offer(Ljava/lang/Object;)Z
 
     .line 95
-    sget-object p0, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->EVENT_INITIALIZE:Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
-
-    const/4 v5, 0x4
-
-    new-array v5, v5, [Ljava/lang/Object;
-
-    aput-object p1, v5, v4
-
-    aput-object p2, v5, v3
+    sget-object v0, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->EVENT_INITIALIZE:Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
 
     .line 99
-    invoke-static {v1}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
+    invoke-static {v3}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
-    move-result-object p1
+    move-result-object v3
 
-    const/4 p2, 0x2
+    move-object/from16 v5, p2
 
-    aput-object p1, v5, p2
+    move-object/from16 v6, p3
 
-    const/4 p1, 0x3
+    filled-new-array {v1, v5, v3, v6}, [Ljava/lang/Object;
 
-    aput-object p3, v5, p1
+    move-result-object v1
 
     .line 95
-    invoke-virtual {v0, p0, v5}, Ljp/co/sony/mc/camera/device/DeviceStateMachine;->sendEvent(Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;[Ljava/lang/Object;)V
+    invoke-virtual {v2, v0, v1}, Ljp/co/sony/mc/camera/device/DeviceStateMachine;->sendEvent(Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;[Ljava/lang/Object;)V
 
     .line 101
-    monitor-exit v2
+    monitor-exit v4
 
-    return-object v0
+    return-object v2
 
     :catchall_0
-    move-exception p0
+    move-exception v0
 
-    monitor-exit v2
+    monitor-exit v4
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    throw p0
+    throw v0
 .end method
 
 .method removeActiveCameraSession(Ljp/co/sony/mc/camera/device/CameraDeviceHandler$CameraSessionId;)Z

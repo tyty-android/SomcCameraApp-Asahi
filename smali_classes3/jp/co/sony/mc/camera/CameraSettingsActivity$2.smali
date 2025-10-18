@@ -25,7 +25,7 @@
 .method constructor <init>(Ljp/co/sony/mc/camera/CameraSettingsActivity;)V
     .locals 0
 
-    .line 485
+    .line 487
     iput-object p1, p0, Ljp/co/sony/mc/camera/CameraSettingsActivity$2;->this$0:Ljp/co/sony/mc/camera/CameraSettingsActivity;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -38,7 +38,7 @@
 .method public run()V
     .locals 0
 
-    .line 489
+    .line 491
     iget-object p0, p0, Ljp/co/sony/mc/camera/CameraSettingsActivity$2;->this$0:Ljp/co/sony/mc/camera/CameraSettingsActivity;
 
     invoke-static {p0}, Ljp/co/sony/mc/camera/CameraSettingsActivity;->-$$Nest$mreInitGeoTag(Ljp/co/sony/mc/camera/CameraSettingsActivity;)V

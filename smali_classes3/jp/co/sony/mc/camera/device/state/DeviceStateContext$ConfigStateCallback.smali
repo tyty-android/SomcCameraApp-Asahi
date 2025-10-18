@@ -22,7 +22,7 @@
 .method private constructor <init>(Ljp/co/sony/mc/camera/device/state/DeviceStateContext;)V
     .locals 0
 
-    .line 2787
+    .line 2863
     iput-object p1, p0, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$ConfigStateCallback;->this$0:Ljp/co/sony/mc/camera/device/state/DeviceStateContext;
 
     invoke-direct {p0}, Landroid/hardware/camera2/CameraCaptureSession$StateCallback;-><init>()V
@@ -41,32 +41,36 @@
 
 # virtual methods
 .method public onClosed(Landroid/hardware/camera2/CameraCaptureSession;)V
-    .locals 0
+    .locals 2
 
-    .line 2824
+    .line 2900
     sget-boolean p0, Ljp/co/sony/mc/camera/util/CamLog;->DEBUG:Z
+
+    const/4 p1, 0x0
+
+    const/4 v0, 0x1
 
     if-eqz p0, :cond_0
 
-    const-string p0, "CameraCaptureSession#onClosed [IN]"
+    new-array p0, v0, [Ljava/lang/String;
 
-    filled-new-array {p0}, [Ljava/lang/String;
+    const-string v1, "CameraCaptureSession#onClosed [IN]"
 
-    move-result-object p0
+    aput-object v1, p0, p1
 
     invoke-static {p0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
-    .line 2825
+    .line 2901
     :cond_0
     sget-boolean p0, Ljp/co/sony/mc/camera/util/CamLog;->DEBUG:Z
 
     if-eqz p0, :cond_1
 
-    const-string p0, "CameraCaptureSession#onClosed [OUT]"
+    new-array p0, v0, [Ljava/lang/String;
 
-    filled-new-array {p0}, [Ljava/lang/String;
+    const-string v0, "CameraCaptureSession#onClosed [OUT]"
 
-    move-result-object p0
+    aput-object v0, p0, p1
 
     invoke-static {p0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
@@ -75,50 +79,54 @@
 .end method
 
 .method public onConfigureFailed(Landroid/hardware/camera2/CameraCaptureSession;)V
-    .locals 1
+    .locals 3
 
-    .line 2809
+    .line 2885
     sget-boolean p1, Ljp/co/sony/mc/camera/util/CamLog;->DEBUG:Z
+
+    const/4 v0, 0x0
+
+    const/4 v1, 0x1
 
     if-eqz p1, :cond_0
 
-    const-string p1, "CameraCaptureSession#onConfigureFailed [IN]"
+    new-array p1, v1, [Ljava/lang/String;
 
-    filled-new-array {p1}, [Ljava/lang/String;
+    const-string v2, "CameraCaptureSession#onConfigureFailed [IN]"
 
-    move-result-object p1
+    aput-object v2, p1, v0
 
     invoke-static {p1}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
     :cond_0
     const/4 p1, 0x0
 
-    .line 2812
+    .line 2888
     filled-new-array {p1}, [Ljava/lang/Object;
 
     move-result-object p1
 
-    .line 2813
+    .line 2889
     iget-object p0, p0, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$ConfigStateCallback;->this$0:Ljp/co/sony/mc/camera/device/state/DeviceStateContext;
 
     invoke-static {p0}, Ljp/co/sony/mc/camera/device/state/DeviceStateContext;->-$$Nest$fgetmDeviceStateMachine(Ljp/co/sony/mc/camera/device/state/DeviceStateContext;)Ljp/co/sony/mc/camera/device/DeviceStateMachine;
 
     move-result-object p0
 
-    sget-object v0, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->EVENT_ON_CAPTURE_SESSION_CONFIGURED:Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
+    sget-object v2, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->EVENT_ON_CAPTURE_SESSION_CONFIGURED:Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
 
-    invoke-virtual {p0, v0, p1}, Ljp/co/sony/mc/camera/device/DeviceStateMachine;->sendEvent(Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;[Ljava/lang/Object;)V
+    invoke-virtual {p0, v2, p1}, Ljp/co/sony/mc/camera/device/DeviceStateMachine;->sendEvent(Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;[Ljava/lang/Object;)V
 
-    .line 2816
+    .line 2892
     sget-boolean p0, Ljp/co/sony/mc/camera/util/CamLog;->DEBUG:Z
 
     if-eqz p0, :cond_1
 
-    const-string p0, "CameraCaptureSession#onConfigureFailed [OUT]"
+    new-array p0, v1, [Ljava/lang/String;
 
-    filled-new-array {p0}, [Ljava/lang/String;
+    const-string p1, "CameraCaptureSession#onConfigureFailed [OUT]"
 
-    move-result-object p0
+    aput-object p1, p0, v0
 
     invoke-static {p0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
@@ -127,28 +135,32 @@
 .end method
 
 .method public onConfigured(Landroid/hardware/camera2/CameraCaptureSession;)V
-    .locals 1
+    .locals 4
 
-    .line 2793
+    .line 2869
     sget-boolean v0, Ljp/co/sony/mc/camera/util/CamLog;->DEBUG:Z
+
+    const/4 v1, 0x0
+
+    const/4 v2, 0x1
 
     if-eqz v0, :cond_0
 
-    const-string v0, "CameraCaptureSession#onConfigured [IN]"
+    new-array v0, v2, [Ljava/lang/String;
 
-    filled-new-array {v0}, [Ljava/lang/String;
+    const-string v3, "CameraCaptureSession#onConfigured [IN]"
 
-    move-result-object v0
+    aput-object v3, v0, v1
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
-    .line 2794
+    .line 2870
     :cond_0
     sget-object v0, Ljp/co/sony/mc/camera/util/PerfLog;->ON_CONFIGURED:Ljp/co/sony/mc/camera/util/PerfLog;
 
     invoke-virtual {v0}, Ljp/co/sony/mc/camera/util/PerfLog;->begin()V
 
-    .line 2797
+    .line 2873
     iget-object p0, p0, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$ConfigStateCallback;->this$0:Ljp/co/sony/mc/camera/device/state/DeviceStateContext;
 
     invoke-static {p0}, Ljp/co/sony/mc/camera/device/state/DeviceStateContext;->-$$Nest$fgetmDeviceStateMachine(Ljp/co/sony/mc/camera/device/state/DeviceStateContext;)Ljp/co/sony/mc/camera/device/DeviceStateMachine;
@@ -163,21 +175,21 @@
 
     invoke-virtual {p0, v0, p1}, Ljp/co/sony/mc/camera/device/DeviceStateMachine;->sendEvent(Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;[Ljava/lang/Object;)V
 
-    .line 2800
+    .line 2876
     sget-object p0, Ljp/co/sony/mc/camera/util/PerfLog;->ON_CONFIGURED:Ljp/co/sony/mc/camera/util/PerfLog;
 
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/util/PerfLog;->end()V
 
-    .line 2801
+    .line 2877
     sget-boolean p0, Ljp/co/sony/mc/camera/util/CamLog;->DEBUG:Z
 
     if-eqz p0, :cond_1
 
-    const-string p0, "CameraCaptureSession#onConfigured [OUT]"
+    new-array p0, v2, [Ljava/lang/String;
 
-    filled-new-array {p0}, [Ljava/lang/String;
+    const-string p1, "CameraCaptureSession#onConfigured [OUT]"
 
-    move-result-object p0
+    aput-object p1, p0, v1
 
     invoke-static {p0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
@@ -186,22 +198,26 @@
 .end method
 
 .method public onReady(Landroid/hardware/camera2/CameraCaptureSession;)V
-    .locals 1
+    .locals 3
 
-    .line 2833
+    .line 2909
     sget-boolean p1, Ljp/co/sony/mc/camera/util/CamLog;->DEBUG:Z
+
+    const/4 v0, 0x1
+
+    const/4 v1, 0x0
 
     if-eqz p1, :cond_0
 
-    const-string p1, "CameraCaptureSession#onReady [IN]"
+    new-array p1, v0, [Ljava/lang/String;
 
-    filled-new-array {p1}, [Ljava/lang/String;
+    const-string v2, "CameraCaptureSession#onReady [IN]"
 
-    move-result-object p1
+    aput-object v2, p1, v1
 
     invoke-static {p1}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
-    .line 2835
+    .line 2911
     :cond_0
     iget-object p1, p0, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$ConfigStateCallback;->this$0:Ljp/co/sony/mc/camera/device/state/DeviceStateContext;
 
@@ -213,7 +229,7 @@
 
     if-eqz p1, :cond_1
 
-    .line 2836
+    .line 2912
     iget-object p0, p0, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$ConfigStateCallback;->this$0:Ljp/co/sony/mc/camera/device/state/DeviceStateContext;
 
     invoke-static {p0}, Ljp/co/sony/mc/camera/device/state/DeviceStateContext;->-$$Nest$fgetmDeviceStateMachine(Ljp/co/sony/mc/camera/device/state/DeviceStateContext;)Ljp/co/sony/mc/camera/device/DeviceStateMachine;
@@ -222,23 +238,21 @@
 
     sget-object p1, Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;->EVENT_ON_CAPTURE_SESSION_READY:Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;
 
-    const/4 v0, 0x0
+    new-array v2, v1, [Ljava/lang/Object;
 
-    new-array v0, v0, [Ljava/lang/Object;
+    invoke-virtual {p0, p1, v2}, Ljp/co/sony/mc/camera/device/DeviceStateMachine;->sendEvent(Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;[Ljava/lang/Object;)V
 
-    invoke-virtual {p0, p1, v0}, Ljp/co/sony/mc/camera/device/DeviceStateMachine;->sendEvent(Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;[Ljava/lang/Object;)V
-
-    .line 2839
+    .line 2915
     :cond_1
     sget-boolean p0, Ljp/co/sony/mc/camera/util/CamLog;->DEBUG:Z
 
     if-eqz p0, :cond_2
 
-    const-string p0, "CameraCaptureSession#onReady [OUT]"
+    new-array p0, v0, [Ljava/lang/String;
 
-    filled-new-array {p0}, [Ljava/lang/String;
+    const-string p1, "CameraCaptureSession#onReady [OUT]"
 
-    move-result-object p0
+    aput-object p1, p0, v1
 
     invoke-static {p0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 

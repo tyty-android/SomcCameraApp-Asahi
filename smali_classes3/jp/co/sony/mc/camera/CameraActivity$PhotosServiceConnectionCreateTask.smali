@@ -25,7 +25,7 @@
 .method private constructor <init>(Ljp/co/sony/mc/camera/CameraActivity;)V
     .locals 0
 
-    .line 945
+    .line 958
     iput-object p1, p0, Ljp/co/sony/mc/camera/CameraActivity$PhotosServiceConnectionCreateTask;->this$0:Ljp/co/sony/mc/camera/CameraActivity;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -46,7 +46,7 @@
 .method public run()V
     .locals 3
 
-    .line 948
+    .line 961
     iget-object v0, p0, Ljp/co/sony/mc/camera/CameraActivity$PhotosServiceConnectionCreateTask;->this$0:Ljp/co/sony/mc/camera/CameraActivity;
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/CameraActivity;->-$$Nest$fgetmBackgroundWorkLock(Ljp/co/sony/mc/camera/CameraActivity;)Ljava/lang/Object;
@@ -55,7 +55,7 @@
 
     monitor-enter v0
 
-    .line 949
+    .line 962
     :try_start_0
     iget-object v1, p0, Ljp/co/sony/mc/camera/CameraActivity$PhotosServiceConnectionCreateTask;->this$0:Ljp/co/sony/mc/camera/CameraActivity;
 
@@ -65,7 +65,7 @@
 
     if-nez v1, :cond_0
 
-    .line 950
+    .line 963
     iget-object v1, p0, Ljp/co/sony/mc/camera/CameraActivity$PhotosServiceConnectionCreateTask;->this$0:Ljp/co/sony/mc/camera/CameraActivity;
 
     new-instance v2, Ljp/co/sony/mc/camera/systemmonitor/PhotosServiceConnection;
@@ -80,7 +80,7 @@
 
     invoke-static {v1, v2}, Ljp/co/sony/mc/camera/CameraActivity;->-$$Nest$fputmPhotosServiceConnection(Ljp/co/sony/mc/camera/CameraActivity;Ljp/co/sony/mc/camera/systemmonitor/PhotosServiceConnection;)V
 
-    .line 952
+    .line 965
     :cond_0
     monitor-exit v0
 

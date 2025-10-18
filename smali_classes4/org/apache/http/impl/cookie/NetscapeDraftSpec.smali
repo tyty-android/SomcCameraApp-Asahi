@@ -24,7 +24,7 @@
 .end method
 
 .method public constructor <init>([Ljava/lang/String;)V
-    .locals 3
+    .locals 5
 
     const/4 v0, 0x5
 
@@ -43,25 +43,25 @@
 
     invoke-direct {v1}, Lorg/apache/http/impl/cookie/NetscapeDomainHandler;-><init>()V
 
-    const/4 v2, 0x1
+    const/4 v3, 0x1
 
-    aput-object v1, v0, v2
+    aput-object v1, v0, v3
 
     new-instance v1, Lorg/apache/http/impl/cookie/BasicSecureHandler;
 
     invoke-direct {v1}, Lorg/apache/http/impl/cookie/BasicSecureHandler;-><init>()V
 
-    const/4 v2, 0x2
+    const/4 v4, 0x2
 
-    aput-object v1, v0, v2
+    aput-object v1, v0, v4
 
     new-instance v1, Lorg/apache/http/impl/cookie/BasicCommentHandler;
 
     invoke-direct {v1}, Lorg/apache/http/impl/cookie/BasicCommentHandler;-><init>()V
 
-    const/4 v2, 0x3
+    const/4 v4, 0x3
 
-    aput-object v1, v0, v2
+    aput-object v1, v0, v4
 
     new-instance v1, Lorg/apache/http/impl/cookie/BasicExpiresHandler;
 
@@ -76,11 +76,11 @@
     goto :goto_0
 
     :cond_0
-    const-string p1, "EEE, dd-MMM-yy HH:mm:ss z"
+    new-array p1, v3, [Ljava/lang/String;
 
-    filled-new-array {p1}, [Ljava/lang/String;
+    const-string v3, "EEE, dd-MMM-yy HH:mm:ss z"
 
-    move-result-object p1
+    aput-object v3, p1, v2
 
     :goto_0
     invoke-direct {v1, p1}, Lorg/apache/http/impl/cookie/BasicExpiresHandler;-><init>([Ljava/lang/String;)V
@@ -335,19 +335,19 @@
 
     invoke-direct {v3, v2, p1}, Lorg/apache/http/message/ParserCursor;-><init>(II)V
 
-    .line 134
     :goto_0
+    const/4 p1, 0x1
+
+    .line 134
+    new-array p1, p1, [Lorg/apache/http/HeaderElement;
+
     invoke-virtual {v0, v1, v3}, Lorg/apache/http/impl/cookie/NetscapeDraftHeaderParser;->parseHeader(Lorg/apache/http/util/CharArrayBuffer;Lorg/apache/http/message/ParserCursor;)Lorg/apache/http/HeaderElement;
 
-    move-result-object p1
+    move-result-object v0
 
-    const/4 v0, 0x1
+    aput-object v0, p1, v2
 
-    new-array v0, v0, [Lorg/apache/http/HeaderElement;
-
-    aput-object p1, v0, v2
-
-    invoke-virtual {p0, v0, p2}, Lorg/apache/http/impl/cookie/NetscapeDraftSpec;->parse([Lorg/apache/http/HeaderElement;Lorg/apache/http/cookie/CookieOrigin;)Ljava/util/List;
+    invoke-virtual {p0, p1, p2}, Lorg/apache/http/impl/cookie/NetscapeDraftSpec;->parse([Lorg/apache/http/HeaderElement;Lorg/apache/http/cookie/CookieOrigin;)Ljava/util/List;
 
     move-result-object p0
 

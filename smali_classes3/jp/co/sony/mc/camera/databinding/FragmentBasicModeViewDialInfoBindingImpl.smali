@@ -26,39 +26,25 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeViewDialInfoBindingImpl;->sViewsWithIds:Landroid/util/SparseIntArray;
 
-    const v1, 0x7f0900a3
+    const v1, 0x7f0900a4
 
-    const/4 v2, 0x1
+    const/4 v2, 0x3
 
     .line 17
     invoke-virtual {v0, v1, v2}, Landroid/util/SparseIntArray;->put(II)V
 
-    const v1, 0x7f09025b
+    const v1, 0x7f090258
 
-    const/4 v2, 0x2
+    const/4 v2, 0x4
 
     .line 18
     invoke-virtual {v0, v1, v2}, Landroid/util/SparseIntArray;->put(II)V
 
-    const v1, 0x7f090259
-
-    const/4 v2, 0x3
-
-    .line 19
-    invoke-virtual {v0, v1, v2}, Landroid/util/SparseIntArray;->put(II)V
-
-    const v1, 0x7f090257
-
-    const/4 v2, 0x4
-
-    .line 20
-    invoke-virtual {v0, v1, v2}, Landroid/util/SparseIntArray;->put(II)V
-
-    const v1, 0x7f090253
+    const v1, 0x7f090254
 
     const/4 v2, 0x5
 
-    .line 21
+    .line 19
     invoke-virtual {v0, v1, v2}, Landroid/util/SparseIntArray;->put(II)V
 
     return-void
@@ -67,7 +53,7 @@
 .method public constructor <init>(Landroidx/databinding/DataBindingComponent;Landroid/view/View;)V
     .locals 3
 
-    .line 32
+    .line 30
     sget-object v0, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeViewDialInfoBindingImpl;->sIncludes:Landroidx/databinding/ViewDataBinding$IncludedLayouts;
 
     sget-object v1, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeViewDialInfoBindingImpl;->sViewsWithIds:Landroid/util/SparseIntArray;
@@ -86,16 +72,16 @@
 .method private constructor <init>(Landroidx/databinding/DataBindingComponent;Landroid/view/View;[Ljava/lang/Object;)V
     .locals 10
 
-    const/4 v0, 0x1
+    const/4 v0, 0x3
 
-    .line 35
+    .line 33
     aget-object v0, p3, v0
 
     move-object v5, v0
 
     check-cast v5, Landroid/view/View;
 
-    const/4 v0, 0x5
+    const/4 v0, 0x2
 
     aget-object v0, p3, v0
 
@@ -103,7 +89,7 @@
 
     check-cast v6, Landroid/widget/TextView;
 
-    const/4 v0, 0x4
+    const/4 v0, 0x5
 
     aget-object v0, p3, v0
 
@@ -111,7 +97,7 @@
 
     check-cast v7, Landroid/widget/ImageView;
 
-    const/4 v0, 0x3
+    const/4 v0, 0x1
 
     aget-object v0, p3, v0
 
@@ -119,7 +105,7 @@
 
     check-cast v8, Landroid/widget/TextView;
 
-    const/4 v0, 0x2
+    const/4 v0, 0x4
 
     aget-object v0, p3, v0
 
@@ -127,7 +113,7 @@
 
     check-cast v9, Landroid/widget/HorizontalScrollView;
 
-    const/4 v4, 0x0
+    const/4 v4, 0x1
 
     move-object v1, p0
 
@@ -139,8 +125,20 @@
 
     const-wide/16 v0, -0x1
 
-    .line 92
+    .line 155
     iput-wide v0, p0, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeViewDialInfoBindingImpl;->mDirtyFlags:J
+
+    .line 40
+    iget-object p1, p0, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeViewDialInfoBindingImpl;->infoDescription:Landroid/widget/TextView;
+
+    const/4 v0, 0x0
+
+    invoke-virtual {p1, v0}, Landroid/widget/TextView;->setTag(Ljava/lang/Object;)V
+
+    .line 41
+    iget-object p1, p0, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeViewDialInfoBindingImpl;->infoTitle:Landroid/widget/TextView;
+
+    invoke-virtual {p1, v0}, Landroid/widget/TextView;->setTag(Ljava/lang/Object;)V
 
     const/4 p1, 0x0
 
@@ -151,10 +149,8 @@
 
     iput-object p1, p0, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeViewDialInfoBindingImpl;->mboundView0:Landroidx/constraintlayout/widget/ConstraintLayout;
 
-    const/4 p3, 0x0
-
     .line 43
-    invoke-virtual {p1, p3}, Landroidx/constraintlayout/widget/ConstraintLayout;->setTag(Ljava/lang/Object;)V
+    invoke-virtual {p1, v0}, Landroidx/constraintlayout/widget/ConstraintLayout;->setTag(Ljava/lang/Object;)V
 
     .line 44
     invoke-virtual {p0, p2}, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeViewDialInfoBindingImpl;->setRootTag(Landroid/view/View;)V
@@ -165,31 +161,172 @@
     return-void
 .end method
 
+.method private onChangeViewFinderUiStateIsViewFinderItemClickable(Landroidx/lifecycle/LiveData;I)Z
+    .locals 2
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Landroidx/lifecycle/LiveData<",
+            "Ljava/lang/Boolean;",
+            ">;I)Z"
+        }
+    .end annotation
+
+    if-nez p2, :cond_0
+
+    .line 98
+    monitor-enter p0
+
+    .line 99
+    :try_start_0
+    iget-wide p1, p0, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeViewDialInfoBindingImpl;->mDirtyFlags:J
+
+    const-wide/16 v0, 0x1
+
+    or-long/2addr p1, v0
+
+    iput-wide p1, p0, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeViewDialInfoBindingImpl;->mDirtyFlags:J
+
+    .line 100
+    monitor-exit p0
+
+    const/4 p0, 0x1
+
+    return p0
+
+    :catchall_0
+    move-exception p1
+
+    monitor-exit p0
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    throw p1
+
+    :cond_0
+    const/4 p0, 0x0
+
+    return p0
+.end method
+
 
 # virtual methods
 .method protected executeBindings()V
-    .locals 2
+    .locals 8
 
-    .line 83
+    .line 109
     monitor-enter p0
 
-    const-wide/16 v0, 0x0
-
-    .line 85
+    .line 110
     :try_start_0
-    iput-wide v0, p0, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeViewDialInfoBindingImpl;->mDirtyFlags:J
+    iget-wide v0, p0, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeViewDialInfoBindingImpl;->mDirtyFlags:J
 
-    .line 86
+    const-wide/16 v2, 0x0
+
+    .line 111
+    iput-wide v2, p0, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeViewDialInfoBindingImpl;->mDirtyFlags:J
+
+    .line 112
     monitor-exit p0
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
+    .line 114
+    iget-object v4, p0, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeViewDialInfoBindingImpl;->mViewFinderUiState:Ljp/co/sony/mc/camera/view/uistate/ViewFinderUiState;
+
+    const-wide/16 v5, 0x7
+
+    and-long/2addr v5, v0
+
+    cmp-long v5, v5, v2
+
+    const/4 v6, 0x0
+
+    if-eqz v5, :cond_2
+
+    const/4 v7, 0x0
+
+    if-eqz v4, :cond_0
+
+    .line 124
+    invoke-virtual {v4}, Ljp/co/sony/mc/camera/view/uistate/ViewFinderUiState;->isViewFinderItemClickable()Landroidx/lifecycle/LiveData;
+
+    move-result-object v4
+
+    goto :goto_0
+
+    :cond_0
+    move-object v4, v7
+
+    .line 126
+    :goto_0
+    invoke-virtual {p0, v6, v4}, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeViewDialInfoBindingImpl;->updateLiveDataRegistration(ILandroidx/lifecycle/LiveData;)Z
+
+    if-eqz v4, :cond_1
+
+    .line 131
+    invoke-virtual {v4}, Landroidx/lifecycle/LiveData;->getValue()Ljava/lang/Object;
+
+    move-result-object v4
+
+    move-object v7, v4
+
+    check-cast v7, Ljava/lang/Boolean;
+
+    .line 136
+    :cond_1
+    invoke-static {v7}, Landroidx/databinding/ViewDataBinding;->safeUnbox(Ljava/lang/Boolean;)Z
+
+    move-result v4
+
+    goto :goto_1
+
+    :cond_2
+    move v4, v6
+
+    :goto_1
+    if-eqz v5, :cond_3
+
+    .line 142
+    iget-object v5, p0, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeViewDialInfoBindingImpl;->infoDescription:Landroid/widget/TextView;
+
+    invoke-virtual {v5, v4}, Landroid/widget/TextView;->setClickable(Z)V
+
+    .line 143
+    iget-object v5, p0, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeViewDialInfoBindingImpl;->infoTitle:Landroid/widget/TextView;
+
+    invoke-virtual {v5, v4}, Landroid/widget/TextView;->setClickable(Z)V
+
+    :cond_3
+    const-wide/16 v4, 0x4
+
+    and-long/2addr v0, v4
+
+    cmp-long v0, v0, v2
+
+    if-eqz v0, :cond_4
+
+    .line 148
+    iget-object v0, p0, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeViewDialInfoBindingImpl;->infoDescription:Landroid/widget/TextView;
+
+    invoke-static {v0, v6}, Ljp/co/sony/mc/camera/view/viewbinder/BindingAdapters;->setAccessibilityClickable(Landroid/view/View;Z)V
+
+    .line 149
+    iget-object p0, p0, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeViewDialInfoBindingImpl;->infoTitle:Landroid/widget/TextView;
+
+    invoke-static {p0, v6}, Ljp/co/sony/mc/camera/view/viewbinder/BindingAdapters;->setAccessibilityClickable(Landroid/view/View;Z)V
+
+    :cond_4
     return-void
 
     :catchall_0
     move-exception v0
 
+    .line 112
+    :try_start_1
     monitor-exit p0
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+    :try_end_1
+    .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
     throw v0
 .end method
@@ -241,7 +378,7 @@
     .line 51
     monitor-enter p0
 
-    const-wide/16 v0, 0x1
+    const-wide/16 v0, 0x4
 
     .line 52
     :try_start_0
@@ -272,15 +409,88 @@
 .method protected onFieldChange(ILjava/lang/Object;I)Z
     .locals 0
 
+    if-eqz p1, :cond_0
+
     const/4 p0, 0x0
+
+    return p0
+
+    .line 92
+    :cond_0
+    check-cast p2, Landroidx/lifecycle/LiveData;
+
+    invoke-direct {p0, p2, p3}, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeViewDialInfoBindingImpl;->onChangeViewFinderUiStateIsViewFinderItemClickable(Landroidx/lifecycle/LiveData;I)Z
+
+    move-result p0
 
     return p0
 .end method
 
 .method public setVariable(ILjava/lang/Object;)Z
-    .locals 0
+    .locals 1
+
+    const/16 v0, 0x25
+
+    if-ne v0, p1, :cond_0
+
+    .line 71
+    check-cast p2, Ljp/co/sony/mc/camera/view/uistate/ViewFinderUiState;
+
+    invoke-virtual {p0, p2}, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeViewDialInfoBindingImpl;->setViewFinderUiState(Ljp/co/sony/mc/camera/view/uistate/ViewFinderUiState;)V
 
     const/4 p0, 0x1
 
+    goto :goto_0
+
+    :cond_0
+    const/4 p0, 0x0
+
+    :goto_0
     return p0
+.end method
+
+.method public setViewFinderUiState(Ljp/co/sony/mc/camera/view/uistate/ViewFinderUiState;)V
+    .locals 4
+
+    .line 80
+    iput-object p1, p0, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeViewDialInfoBindingImpl;->mViewFinderUiState:Ljp/co/sony/mc/camera/view/uistate/ViewFinderUiState;
+
+    .line 81
+    monitor-enter p0
+
+    .line 82
+    :try_start_0
+    iget-wide v0, p0, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeViewDialInfoBindingImpl;->mDirtyFlags:J
+
+    const-wide/16 v2, 0x2
+
+    or-long/2addr v0, v2
+
+    iput-wide v0, p0, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeViewDialInfoBindingImpl;->mDirtyFlags:J
+
+    .line 83
+    monitor-exit p0
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    const/16 p1, 0x25
+
+    .line 84
+    invoke-virtual {p0, p1}, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeViewDialInfoBindingImpl;->notifyPropertyChanged(I)V
+
+    .line 85
+    invoke-super {p0}, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeViewDialInfoBinding;->requestRebind()V
+
+    return-void
+
+    :catchall_0
+    move-exception p1
+
+    .line 83
+    :try_start_1
+    monitor-exit p0
+    :try_end_1
+    .catchall {:try_start_1 .. :try_end_1} :catchall_0
+
+    throw p1
 .end method

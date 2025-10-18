@@ -205,7 +205,7 @@
 
 
 # virtual methods
-.method public final equals(Ljava/lang/Object;)Z
+.method public equals(Ljava/lang/Object;)Z
     .locals 4
 
     const/4 v0, 0x1
@@ -260,7 +260,7 @@
     return v2
 .end method
 
-.method public final getDefaultPort()I
+.method public getDefaultPort()I
     .locals 0
 
     .line 149
@@ -269,7 +269,7 @@
     return p0
 .end method
 
-.method public final getName()Ljava/lang/String;
+.method public getName()Ljava/lang/String;
     .locals 0
 
     .line 192
@@ -278,7 +278,7 @@
     return-object p0
 .end method
 
-.method public final getSchemeSocketFactory()Lorg/apache/http/conn/scheme/SchemeSocketFactory;
+.method public getSchemeSocketFactory()Lorg/apache/http/conn/scheme/SchemeSocketFactory;
     .locals 0
 
     .line 183
@@ -287,7 +287,7 @@
     return-object p0
 .end method
 
-.method public final getSocketFactory()Lorg/apache/http/conn/scheme/SocketFactory;
+.method public getSocketFactory()Lorg/apache/http/conn/scheme/SocketFactory;
     .locals 2
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
@@ -364,7 +364,7 @@
     return p0
 .end method
 
-.method public final isLayered()Z
+.method public isLayered()Z
     .locals 0
 
     .line 202
@@ -373,7 +373,7 @@
     return p0
 .end method
 
-.method public final resolvePort(I)I
+.method public resolvePort(I)I
     .locals 0
 
     if-gtz p1, :cond_0
@@ -385,7 +385,7 @@
     return p1
 .end method
 
-.method public final toString()Ljava/lang/String;
+.method public toString()Ljava/lang/String;
     .locals 2
 
     .line 225

@@ -107,20 +107,16 @@
 .method public final invoke(Landroidx/compose/material/ModalBottomSheetValue;)Landroidx/compose/material/ModalBottomSheetState;
     .locals 2
 
-    const-string v0, "it"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 389
+    .line 380
     iget-object v0, p0, Landroidx/compose/material/ModalBottomSheetState$Companion$Saver$4;->$animationSpec:Landroidx/compose/animation/core/AnimationSpec;
 
-    .line 391
+    .line 382
     iget-object v1, p0, Landroidx/compose/material/ModalBottomSheetState$Companion$Saver$4;->$confirmValueChange:Lkotlin/jvm/functions/Function1;
 
-    .line 390
+    .line 381
     iget-boolean p0, p0, Landroidx/compose/material/ModalBottomSheetState$Companion$Saver$4;->$skipHalfExpanded:Z
 
-    .line 387
+    .line 378
     invoke-static {p1, v0, v1, p0}, Landroidx/compose/material/ModalBottomSheetKt;->ModalBottomSheetState(Landroidx/compose/material/ModalBottomSheetValue;Landroidx/compose/animation/core/AnimationSpec;Lkotlin/jvm/functions/Function1;Z)Landroidx/compose/material/ModalBottomSheetState;
 
     move-result-object p0
@@ -131,7 +127,7 @@
 .method public bridge synthetic invoke(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
 
-    .line 384
+    .line 375
     check-cast p1, Landroidx/compose/material/ModalBottomSheetValue;
 
     invoke-virtual {p0, p1}, Landroidx/compose/material/ModalBottomSheetState$Companion$Saver$4;->invoke(Landroidx/compose/material/ModalBottomSheetValue;)Landroidx/compose/material/ModalBottomSheetState;

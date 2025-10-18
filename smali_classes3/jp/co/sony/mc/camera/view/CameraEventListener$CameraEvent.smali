@@ -23,11 +23,12 @@
 
 .annotation runtime Lkotlin/Metadata;
     d1 = {
-        "\u0000\u000c\n\u0002\u0018\u0002\n\u0002\u0010\u0010\n\u0002\u0008\u0010\u0008\u0086\u0081\u0002\u0018\u00002\u0008\u0012\u0004\u0012\u00020\u00000\u0001B\u0007\u0008\u0002\u00a2\u0006\u0002\u0010\u0002j\u0002\u0008\u0003j\u0002\u0008\u0004j\u0002\u0008\u0005j\u0002\u0008\u0006j\u0002\u0008\u0007j\u0002\u0008\u0008j\u0002\u0008\tj\u0002\u0008\nj\u0002\u0008\u000bj\u0002\u0008\u000cj\u0002\u0008\rj\u0002\u0008\u000ej\u0002\u0008\u000fj\u0002\u0008\u0010\u00a8\u0006\u0011"
+        "\u0000\u000c\n\u0002\u0018\u0002\n\u0002\u0010\u0010\n\u0002\u0008\u0011\u0008\u0086\u0081\u0002\u0018\u00002\u0008\u0012\u0004\u0012\u00020\u00000\u0001B\t\u0008\u0002\u00a2\u0006\u0004\u0008\u0002\u0010\u0003j\u0002\u0008\u0004j\u0002\u0008\u0005j\u0002\u0008\u0006j\u0002\u0008\u0007j\u0002\u0008\u0008j\u0002\u0008\tj\u0002\u0008\nj\u0002\u0008\u000bj\u0002\u0008\u000cj\u0002\u0008\rj\u0002\u0008\u000ej\u0002\u0008\u000fj\u0002\u0008\u0010j\u0002\u0008\u0011\u00a8\u0006\u0012"
     }
     d2 = {
         "Ljp/co/sony/mc/camera/view/CameraEventListener$CameraEvent;",
         "",
+        "<init>",
         "(Ljava/lang/String;I)V",
         "INIT",
         "OPEN_STARTED",
@@ -47,8 +48,8 @@
     }
     k = 0x1
     mv = {
-        0x1,
-        0x9,
+        0x2,
+        0x0,
         0x0
     }
     xi = 0x30
@@ -131,7 +132,7 @@
 .method static constructor <clinit>()V
     .locals 3
 
-    .line 23
+    .line 24
     new-instance v0, Ljp/co/sony/mc/camera/view/CameraEventListener$CameraEvent;
 
     const-string v1, "INIT"
@@ -142,7 +143,7 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/view/CameraEventListener$CameraEvent;->INIT:Ljp/co/sony/mc/camera/view/CameraEventListener$CameraEvent;
 
-    .line 24
+    .line 25
     new-instance v0, Ljp/co/sony/mc/camera/view/CameraEventListener$CameraEvent;
 
     const-string v1, "OPEN_STARTED"
@@ -153,7 +154,7 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/view/CameraEventListener$CameraEvent;->OPEN_STARTED:Ljp/co/sony/mc/camera/view/CameraEventListener$CameraEvent;
 
-    .line 25
+    .line 26
     new-instance v0, Ljp/co/sony/mc/camera/view/CameraEventListener$CameraEvent;
 
     const-string v1, "PREVIEW_STARTED"
@@ -164,7 +165,7 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/view/CameraEventListener$CameraEvent;->PREVIEW_STARTED:Ljp/co/sony/mc/camera/view/CameraEventListener$CameraEvent;
 
-    .line 26
+    .line 27
     new-instance v0, Ljp/co/sony/mc/camera/view/CameraEventListener$CameraEvent;
 
     const-string v1, "CAPTURE_PREPARED"
@@ -175,7 +176,7 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/view/CameraEventListener$CameraEvent;->CAPTURE_PREPARED:Ljp/co/sony/mc/camera/view/CameraEventListener$CameraEvent;
 
-    .line 27
+    .line 28
     new-instance v0, Ljp/co/sony/mc/camera/view/CameraEventListener$CameraEvent;
 
     const-string v1, "AF_ON_SWITCH_STARTED"
@@ -186,7 +187,7 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/view/CameraEventListener$CameraEvent;->AF_ON_SWITCH_STARTED:Ljp/co/sony/mc/camera/view/CameraEventListener$CameraEvent;
 
-    .line 28
+    .line 29
     new-instance v0, Ljp/co/sony/mc/camera/view/CameraEventListener$CameraEvent;
 
     const-string v1, "AF_ON_SWITCHED"
@@ -197,7 +198,7 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/view/CameraEventListener$CameraEvent;->AF_ON_SWITCHED:Ljp/co/sony/mc/camera/view/CameraEventListener$CameraEvent;
 
-    .line 29
+    .line 30
     new-instance v0, Ljp/co/sony/mc/camera/view/CameraEventListener$CameraEvent;
 
     const-string v1, "CAPTURE_STARTED"
@@ -208,7 +209,7 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/view/CameraEventListener$CameraEvent;->CAPTURE_STARTED:Ljp/co/sony/mc/camera/view/CameraEventListener$CameraEvent;
 
-    .line 30
+    .line 31
     new-instance v0, Ljp/co/sony/mc/camera/view/CameraEventListener$CameraEvent;
 
     const-string v1, "BURST_STARTED"
@@ -219,7 +220,7 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/view/CameraEventListener$CameraEvent;->BURST_STARTED:Ljp/co/sony/mc/camera/view/CameraEventListener$CameraEvent;
 
-    .line 31
+    .line 32
     new-instance v0, Ljp/co/sony/mc/camera/view/CameraEventListener$CameraEvent;
 
     const-string v1, "SELFTIMER_STARTED"
@@ -230,7 +231,7 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/view/CameraEventListener$CameraEvent;->SELFTIMER_STARTED:Ljp/co/sony/mc/camera/view/CameraEventListener$CameraEvent;
 
-    .line 32
+    .line 33
     new-instance v0, Ljp/co/sony/mc/camera/view/CameraEventListener$CameraEvent;
 
     const-string v1, "RECORDING_STARTED"
@@ -241,7 +242,7 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/view/CameraEventListener$CameraEvent;->RECORDING_STARTED:Ljp/co/sony/mc/camera/view/CameraEventListener$CameraEvent;
 
-    .line 33
+    .line 34
     new-instance v0, Ljp/co/sony/mc/camera/view/CameraEventListener$CameraEvent;
 
     const-string v1, "RECORDING_RESUMED"
@@ -252,7 +253,7 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/view/CameraEventListener$CameraEvent;->RECORDING_RESUMED:Ljp/co/sony/mc/camera/view/CameraEventListener$CameraEvent;
 
-    .line 34
+    .line 35
     new-instance v0, Ljp/co/sony/mc/camera/view/CameraEventListener$CameraEvent;
 
     const-string v1, "RECORDING_PAUSED"
@@ -263,7 +264,7 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/view/CameraEventListener$CameraEvent;->RECORDING_PAUSED:Ljp/co/sony/mc/camera/view/CameraEventListener$CameraEvent;
 
-    .line 35
+    .line 36
     new-instance v0, Ljp/co/sony/mc/camera/view/CameraEventListener$CameraEvent;
 
     const-string v1, "RECORDING_STOPPED"
@@ -274,7 +275,7 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/view/CameraEventListener$CameraEvent;->RECORDING_STOPPED:Ljp/co/sony/mc/camera/view/CameraEventListener$CameraEvent;
 
-    .line 36
+    .line 37
     new-instance v0, Ljp/co/sony/mc/camera/view/CameraEventListener$CameraEvent;
 
     const-string v1, "FOCUS_MAGNIFICATION_SWITCH_STARTED"
@@ -310,7 +311,7 @@
         }
     .end annotation
 
-    .line 22
+    .line 23
     invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
     return-void
@@ -341,6 +342,7 @@
 
     move-result-object p0
 
+    .line 38
     check-cast p0, Ljp/co/sony/mc/camera/view/CameraEventListener$CameraEvent;
 
     return-object p0
@@ -351,10 +353,11 @@
 
     sget-object v0, Ljp/co/sony/mc/camera/view/CameraEventListener$CameraEvent;->$VALUES:[Ljp/co/sony/mc/camera/view/CameraEventListener$CameraEvent;
 
-    invoke-virtual {v0}, [Ljava/lang/Object;->clone()Ljava/lang/Object;
+    invoke-virtual {v0}, Ljava/lang/Object;->clone()Ljava/lang/Object;
 
     move-result-object v0
 
+    .line 38
     check-cast v0, [Ljp/co/sony/mc/camera/view/CameraEventListener$CameraEvent;
 
     return-object v0

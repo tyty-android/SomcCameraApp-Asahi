@@ -29,26 +29,54 @@
 
 # direct methods
 .method static constructor <clinit>()V
-    .locals 7
+    .locals 3
+
+    const/4 v0, 0x7
 
     .line 68
-    const-string v5, "PUT"
+    new-array v0, v0, [Ljava/lang/String;
 
-    const-string v6, "TRACE"
+    const/4 v1, 0x0
 
-    const-string v0, "DELETE"
+    const-string v2, "DELETE"
 
-    const-string v1, "GET"
+    aput-object v2, v0, v1
+
+    const/4 v1, 0x1
+
+    const-string v2, "GET"
+
+    aput-object v2, v0, v1
+
+    const/4 v1, 0x2
 
     const-string v2, "HEAD"
 
-    const-string v3, "OPTIONS"
+    aput-object v2, v0, v1
 
-    const-string v4, "POST"
+    const/4 v1, 0x3
 
-    filled-new-array/range {v0 .. v6}, [Ljava/lang/String;
+    const-string v2, "OPTIONS"
 
-    move-result-object v0
+    aput-object v2, v0, v1
+
+    const/4 v1, 0x4
+
+    const-string v2, "POST"
+
+    aput-object v2, v0, v1
+
+    const/4 v1, 0x5
+
+    const-string v2, "PUT"
+
+    aput-object v2, v0, v1
+
+    const/4 v1, 0x6
+
+    const-string v2, "TRACE"
+
+    aput-object v2, v0, v1
 
     sput-object v0, Lcom/google/api/client/http/javanet/NetHttpTransport;->SUPPORTED_METHODS:[Ljava/lang/String;
 

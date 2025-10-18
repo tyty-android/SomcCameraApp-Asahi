@@ -50,6 +50,10 @@
 .end annotation
 
 
+# static fields
+.field public static final $stable:I = 0x8
+
+
 # instance fields
 .field private final font:Landroidx/compose/ui/text/font/Font;
 
@@ -57,14 +61,16 @@
 
 
 # direct methods
+.method static constructor <clinit>()V
+    .locals 0
+
+    return-void
+.end method
+
 .method public constructor <init>(Landroidx/compose/ui/text/font/Font;Ljava/lang/Object;)V
-    .locals 1
+    .locals 0
 
-    const-string v0, "font"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 345
+    .line 349
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     iput-object p1, p0, Landroidx/compose/ui/text/font/AsyncTypefaceCache$Key;->font:Landroidx/compose/ui/text/font/Font;
@@ -118,10 +124,6 @@
 
 .method public final copy(Landroidx/compose/ui/text/font/Font;Ljava/lang/Object;)Landroidx/compose/ui/text/font/AsyncTypefaceCache$Key;
     .locals 0
-
-    const-string p0, "font"
-
-    invoke-static {p1, p0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
     new-instance p0, Landroidx/compose/ui/text/font/AsyncTypefaceCache$Key;
 
@@ -183,7 +185,7 @@
 .method public final getFont()Landroidx/compose/ui/text/font/Font;
     .locals 0
 
-    .line 345
+    .line 349
     iget-object p0, p0, Landroidx/compose/ui/text/font/AsyncTypefaceCache$Key;->font:Landroidx/compose/ui/text/font/Font;
 
     return-object p0
@@ -192,7 +194,7 @@
 .method public final getLoaderKey()Ljava/lang/Object;
     .locals 0
 
-    .line 345
+    .line 349
     iget-object p0, p0, Landroidx/compose/ui/text/font/AsyncTypefaceCache$Key;->loaderKey:Ljava/lang/Object;
 
     return-object p0

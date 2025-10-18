@@ -22,7 +22,7 @@
 .method constructor <init>(Ljava/lang/reflect/Method;)V
     .locals 0
 
-    .line 75
+    .line 91
     iput-object p1, p0, Lcom/google/gson/internal/ReflectionAccessFilterHelper$AccessChecker$1;->val$canAccessMethod:Ljava/lang/reflect/Method;
 
     const/4 p1, 0x0
@@ -37,7 +37,7 @@
 .method public canAccess(Ljava/lang/reflect/AccessibleObject;Ljava/lang/Object;)Z
     .locals 0
 
-    .line 78
+    .line 95
     :try_start_0
     iget-object p0, p0, Lcom/google/gson/internal/ReflectionAccessFilterHelper$AccessChecker$1;->val$canAccessMethod:Ljava/lang/reflect/Method;
 
@@ -62,7 +62,7 @@
     :catch_0
     move-exception p0
 
-    .line 80
+    .line 97
     new-instance p1, Ljava/lang/RuntimeException;
 
     const-string p2, "Failed invoking canAccess"

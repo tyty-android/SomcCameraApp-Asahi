@@ -27,14 +27,14 @@
         "",
         "displayId",
         "",
-        "onDisplayChanged",
         "onDisplayRemoved",
+        "onDisplayChanged",
         "SomcCamera_release"
     }
     k = 0x1
     mv = {
-        0x1,
-        0x9,
+        0x2,
+        0x0,
         0x0
     }
     xi = 0x30

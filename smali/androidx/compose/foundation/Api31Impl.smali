@@ -1,6 +1,6 @@
 .class final Landroidx/compose/foundation/Api31Impl;
 .super Ljava/lang/Object;
-.source "EdgeEffectCompat.kt"
+.source "EdgeEffectCompat.android.kt"
 
 
 # annotations
@@ -67,10 +67,6 @@
 .method public final create(Landroid/content/Context;Landroid/util/AttributeSet;)Landroid/widget/EdgeEffect;
     .locals 0
 
-    const-string p0, "context"
-
-    invoke-static {p1, p0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
     .line 128
     :try_start_0
     new-instance p0, Landroid/widget/EdgeEffect;
@@ -94,10 +90,6 @@
 .method public final getDistance(Landroid/widget/EdgeEffect;)F
     .locals 0
 
-    const-string p0, "edgeEffect"
-
-    invoke-static {p1, p0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
     .line 151
     :try_start_0
     invoke-virtual {p1}, Landroid/widget/EdgeEffect;->getDistance()F
@@ -117,10 +109,6 @@
 
 .method public final onPullDistance(Landroid/widget/EdgeEffect;FF)F
     .locals 0
-
-    const-string p0, "edgeEffect"
-
-    invoke-static {p1, p0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 141
     :try_start_0

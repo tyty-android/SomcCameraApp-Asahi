@@ -29,7 +29,7 @@
 .method private constructor <init>()V
     .locals 0
 
-    .line 36
+    .line 39
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -38,7 +38,7 @@
 .method public static getAutofillId(Landroid/view/View;)Landroidx/compose/ui/platform/coreshims/AutofillIdCompat;
     .locals 0
 
-    .line 150
+    .line 153
     invoke-static {p0}, Landroidx/compose/ui/platform/coreshims/ViewCompatShims$Api26Impl;->getAutofillId(Landroid/view/View;)Landroid/view/autofill/AutofillId;
 
     move-result-object p0
@@ -53,7 +53,7 @@
 .method public static getContentCaptureSession(Landroid/view/View;)Landroidx/compose/ui/platform/coreshims/ContentCaptureSessionCompat;
     .locals 1
 
-    .line 121
+    .line 124
     invoke-static {p0}, Landroidx/compose/ui/platform/coreshims/ViewCompatShims$Api29Impl;->getContentCaptureSession(Landroid/view/View;)Landroid/view/contentcapture/ContentCaptureSession;
 
     move-result-object v0
@@ -64,7 +64,7 @@
 
     return-object p0
 
-    .line 125
+    .line 128
     :cond_0
     invoke-static {v0, p0}, Landroidx/compose/ui/platform/coreshims/ContentCaptureSessionCompat;->toContentCaptureSessionCompat(Landroid/view/contentcapture/ContentCaptureSession;Landroid/view/View;)Landroidx/compose/ui/platform/coreshims/ContentCaptureSessionCompat;
 
@@ -76,7 +76,7 @@
 .method public static setImportantForContentCapture(Landroid/view/View;I)V
     .locals 0
 
-    .line 100
+    .line 103
     invoke-static {p0, p1}, Landroidx/compose/ui/platform/coreshims/ViewCompatShims$Api30Impl;->setImportantForContentCapture(Landroid/view/View;I)V
 
     return-void

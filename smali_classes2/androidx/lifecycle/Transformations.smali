@@ -52,59 +52,64 @@
 
     invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 179
-    new-instance v0, Landroidx/lifecycle/MediatorLiveData;
+    .line 190
+    new-instance v0, Lkotlin/jvm/internal/Ref$BooleanRef;
 
-    invoke-direct {v0}, Landroidx/lifecycle/MediatorLiveData;-><init>()V
+    invoke-direct {v0}, Lkotlin/jvm/internal/Ref$BooleanRef;-><init>()V
 
-    .line 180
-    new-instance v1, Lkotlin/jvm/internal/Ref$BooleanRef;
+    const/4 v1, 0x1
 
-    invoke-direct {v1}, Lkotlin/jvm/internal/Ref$BooleanRef;-><init>()V
+    iput-boolean v1, v0, Lkotlin/jvm/internal/Ref$BooleanRef;->element:Z
 
-    const/4 v2, 0x1
-
-    iput-boolean v2, v1, Lkotlin/jvm/internal/Ref$BooleanRef;->element:Z
-
-    .line 181
+    .line 191
     invoke-virtual {p0}, Landroidx/lifecycle/LiveData;->isInitialized()Z
 
-    move-result v2
+    move-result v1
 
-    if-eqz v2, :cond_0
+    if-eqz v1, :cond_0
 
-    .line 182
+    const/4 v1, 0x0
+
+    .line 192
+    iput-boolean v1, v0, Lkotlin/jvm/internal/Ref$BooleanRef;->element:Z
+
+    .line 193
+    new-instance v1, Landroidx/lifecycle/MediatorLiveData;
+
     invoke-virtual {p0}, Landroidx/lifecycle/LiveData;->getValue()Ljava/lang/Object;
 
     move-result-object v2
 
-    invoke-virtual {v0, v2}, Landroidx/lifecycle/MediatorLiveData;->setValue(Ljava/lang/Object;)V
+    invoke-direct {v1, v2}, Landroidx/lifecycle/MediatorLiveData;-><init>(Ljava/lang/Object;)V
 
-    const/4 v2, 0x0
+    goto :goto_0
 
-    .line 183
-    iput-boolean v2, v1, Lkotlin/jvm/internal/Ref$BooleanRef;->element:Z
-
-    .line 185
+    .line 195
     :cond_0
+    new-instance v1, Landroidx/lifecycle/MediatorLiveData;
+
+    invoke-direct {v1}, Landroidx/lifecycle/MediatorLiveData;-><init>()V
+
+    .line 197
+    :goto_0
     new-instance v2, Landroidx/lifecycle/Transformations$distinctUntilChanged$1;
 
-    invoke-direct {v2, v0, v1}, Landroidx/lifecycle/Transformations$distinctUntilChanged$1;-><init>(Landroidx/lifecycle/MediatorLiveData;Lkotlin/jvm/internal/Ref$BooleanRef;)V
+    invoke-direct {v2, v1, v0}, Landroidx/lifecycle/Transformations$distinctUntilChanged$1;-><init>(Landroidx/lifecycle/MediatorLiveData;Lkotlin/jvm/internal/Ref$BooleanRef;)V
 
     check-cast v2, Lkotlin/jvm/functions/Function1;
 
-    new-instance v1, Landroidx/lifecycle/Transformations$sam$androidx_lifecycle_Observer$0;
+    new-instance v0, Landroidx/lifecycle/Transformations$sam$androidx_lifecycle_Observer$0;
 
-    invoke-direct {v1, v2}, Landroidx/lifecycle/Transformations$sam$androidx_lifecycle_Observer$0;-><init>(Lkotlin/jvm/functions/Function1;)V
+    invoke-direct {v0, v2}, Landroidx/lifecycle/Transformations$sam$androidx_lifecycle_Observer$0;-><init>(Lkotlin/jvm/functions/Function1;)V
 
-    check-cast v1, Landroidx/lifecycle/Observer;
+    check-cast v0, Landroidx/lifecycle/Observer;
 
-    invoke-virtual {v0, p0, v1}, Landroidx/lifecycle/MediatorLiveData;->addSource(Landroidx/lifecycle/LiveData;Landroidx/lifecycle/Observer;)V
+    invoke-virtual {v1, p0, v0}, Landroidx/lifecycle/MediatorLiveData;->addSource(Landroidx/lifecycle/LiveData;Landroidx/lifecycle/Observer;)V
 
-    .line 195
-    check-cast v0, Landroidx/lifecycle/LiveData;
+    .line 207
+    check-cast v1, Landroidx/lifecycle/LiveData;
 
-    return-object v0
+    return-object v1
 .end method
 
 .method public static final synthetic map(Landroidx/lifecycle/LiveData;Landroidx/arch/core/util/Function;)Landroidx/lifecycle/LiveData;
@@ -122,12 +127,12 @@
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 64
+    .line 69
     new-instance v0, Landroidx/lifecycle/MediatorLiveData;
 
     invoke-direct {v0}, Landroidx/lifecycle/MediatorLiveData;-><init>()V
 
-    .line 65
+    .line 70
     new-instance v1, Landroidx/lifecycle/Transformations$map$2;
 
     invoke-direct {v1, v0, p1}, Landroidx/lifecycle/Transformations$map$2;-><init>(Landroidx/lifecycle/MediatorLiveData;Landroidx/arch/core/util/Function;)V
@@ -142,7 +147,7 @@
 
     invoke-virtual {v0, p0, p1}, Landroidx/lifecycle/MediatorLiveData;->addSource(Landroidx/lifecycle/LiveData;Landroidx/lifecycle/Observer;)V
 
-    .line 66
+    .line 71
     check-cast v0, Landroidx/lifecycle/LiveData;
 
     return-object v0
@@ -174,12 +179,36 @@
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 51
+    .line 52
+    invoke-virtual {p0}, Landroidx/lifecycle/LiveData;->isInitialized()Z
+
+    move-result v0
+
+    if-eqz v0, :cond_0
+
+    .line 53
+    new-instance v0, Landroidx/lifecycle/MediatorLiveData;
+
+    invoke-virtual {p0}, Landroidx/lifecycle/LiveData;->getValue()Ljava/lang/Object;
+
+    move-result-object v1
+
+    invoke-interface {p1, v1}, Lkotlin/jvm/functions/Function1;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object v1
+
+    invoke-direct {v0, v1}, Landroidx/lifecycle/MediatorLiveData;-><init>(Ljava/lang/Object;)V
+
+    goto :goto_0
+
+    .line 55
+    :cond_0
     new-instance v0, Landroidx/lifecycle/MediatorLiveData;
 
     invoke-direct {v0}, Landroidx/lifecycle/MediatorLiveData;-><init>()V
 
-    .line 52
+    .line 57
+    :goto_0
     new-instance v1, Landroidx/lifecycle/Transformations$map$1;
 
     invoke-direct {v1, v0, p1}, Landroidx/lifecycle/Transformations$map$1;-><init>(Landroidx/lifecycle/MediatorLiveData;Lkotlin/jvm/functions/Function1;)V
@@ -194,7 +223,7 @@
 
     invoke-virtual {v0, p0, p1}, Landroidx/lifecycle/MediatorLiveData;->addSource(Landroidx/lifecycle/LiveData;Landroidx/lifecycle/Observer;)V
 
-    .line 53
+    .line 58
     check-cast v0, Landroidx/lifecycle/LiveData;
 
     return-object v0
@@ -215,12 +244,12 @@
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 148
+    .line 159
     new-instance v0, Landroidx/lifecycle/MediatorLiveData;
 
     invoke-direct {v0}, Landroidx/lifecycle/MediatorLiveData;-><init>()V
 
-    .line 149
+    .line 160
     new-instance v1, Landroidx/lifecycle/Transformations$switchMap$2;
 
     invoke-direct {v1, p1, v0}, Landroidx/lifecycle/Transformations$switchMap$2;-><init>(Landroidx/arch/core/util/Function;Landroidx/lifecycle/MediatorLiveData;)V
@@ -229,14 +258,14 @@
 
     invoke-virtual {v0, p0, v1}, Landroidx/lifecycle/MediatorLiveData;->addSource(Landroidx/lifecycle/LiveData;Landroidx/lifecycle/Observer;)V
 
-    .line 166
+    .line 177
     check-cast v0, Landroidx/lifecycle/LiveData;
 
     return-object v0
 .end method
 
 .method public static final switchMap(Landroidx/lifecycle/LiveData;Lkotlin/jvm/functions/Function1;)Landroidx/lifecycle/LiveData;
-    .locals 2
+    .locals 3
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<X:",
@@ -263,22 +292,81 @@
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 119
-    new-instance v0, Landroidx/lifecycle/MediatorLiveData;
+    .line 125
+    new-instance v0, Lkotlin/jvm/internal/Ref$ObjectRef;
 
-    invoke-direct {v0}, Landroidx/lifecycle/MediatorLiveData;-><init>()V
+    invoke-direct {v0}, Lkotlin/jvm/internal/Ref$ObjectRef;-><init>()V
 
-    .line 120
+    .line 126
+    invoke-virtual {p0}, Landroidx/lifecycle/LiveData;->isInitialized()Z
+
+    move-result v1
+
+    if-eqz v1, :cond_1
+
+    .line 127
+    invoke-virtual {p0}, Landroidx/lifecycle/LiveData;->getValue()Ljava/lang/Object;
+
+    move-result-object v1
+
+    invoke-interface {p1, v1}, Lkotlin/jvm/functions/Function1;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object v1
+
+    check-cast v1, Landroidx/lifecycle/LiveData;
+
+    if-eqz v1, :cond_0
+
+    .line 128
+    invoke-virtual {v1}, Landroidx/lifecycle/LiveData;->isInitialized()Z
+
+    move-result v2
+
+    if-eqz v2, :cond_0
+
+    .line 129
+    new-instance v2, Landroidx/lifecycle/MediatorLiveData;
+
+    invoke-virtual {v1}, Landroidx/lifecycle/LiveData;->getValue()Ljava/lang/Object;
+
+    move-result-object v1
+
+    invoke-direct {v2, v1}, Landroidx/lifecycle/MediatorLiveData;-><init>(Ljava/lang/Object;)V
+
+    goto :goto_0
+
+    .line 131
+    :cond_0
+    new-instance v2, Landroidx/lifecycle/MediatorLiveData;
+
+    invoke-direct {v2}, Landroidx/lifecycle/MediatorLiveData;-><init>()V
+
+    goto :goto_0
+
+    .line 134
+    :cond_1
+    new-instance v2, Landroidx/lifecycle/MediatorLiveData;
+
+    invoke-direct {v2}, Landroidx/lifecycle/MediatorLiveData;-><init>()V
+
+    .line 136
+    :goto_0
     new-instance v1, Landroidx/lifecycle/Transformations$switchMap$1;
 
-    invoke-direct {v1, p1, v0}, Landroidx/lifecycle/Transformations$switchMap$1;-><init>(Lkotlin/jvm/functions/Function1;Landroidx/lifecycle/MediatorLiveData;)V
+    invoke-direct {v1, p1, v0, v2}, Landroidx/lifecycle/Transformations$switchMap$1;-><init>(Lkotlin/jvm/functions/Function1;Lkotlin/jvm/internal/Ref$ObjectRef;Landroidx/lifecycle/MediatorLiveData;)V
 
-    check-cast v1, Landroidx/lifecycle/Observer;
+    check-cast v1, Lkotlin/jvm/functions/Function1;
 
-    invoke-virtual {v0, p0, v1}, Landroidx/lifecycle/MediatorLiveData;->addSource(Landroidx/lifecycle/LiveData;Landroidx/lifecycle/Observer;)V
+    new-instance p1, Landroidx/lifecycle/Transformations$sam$androidx_lifecycle_Observer$0;
 
-    .line 137
-    check-cast v0, Landroidx/lifecycle/LiveData;
+    invoke-direct {p1, v1}, Landroidx/lifecycle/Transformations$sam$androidx_lifecycle_Observer$0;-><init>(Lkotlin/jvm/functions/Function1;)V
 
-    return-object v0
+    check-cast p1, Landroidx/lifecycle/Observer;
+
+    invoke-virtual {v2, p0, p1}, Landroidx/lifecycle/MediatorLiveData;->addSource(Landroidx/lifecycle/LiveData;Landroidx/lifecycle/Observer;)V
+
+    .line 148
+    check-cast v2, Landroidx/lifecycle/LiveData;
+
+    return-object v2
 .end method

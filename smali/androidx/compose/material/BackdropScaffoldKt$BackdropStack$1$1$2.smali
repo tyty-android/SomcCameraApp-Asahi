@@ -27,7 +27,7 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/SourceDebugExtension;
-    value = "SMAP\nBackdropScaffold.kt\nKotlin\n*S Kotlin\n*F\n+ 1 BackdropScaffold.kt\nandroidx/compose/material/BackdropScaffoldKt$BackdropStack$1$1$2\n+ 2 ListUtils.kt\nandroidx/compose/ui/util/ListUtilsKt\n*L\n1#1,522:1\n33#2,6:523\n*S KotlinDebug\n*F\n+ 1 BackdropScaffold.kt\nandroidx/compose/material/BackdropScaffoldKt$BackdropStack$1$1$2\n*L\n479#1:523,6\n*E\n"
+    value = "SMAP\nBackdropScaffold.kt\nKotlin\n*S Kotlin\n*F\n+ 1 BackdropScaffold.kt\nandroidx/compose/material/BackdropScaffoldKt$BackdropStack$1$1$2\n+ 2 ListUtils.kt\nandroidx/compose/ui/util/ListUtilsKt\n*L\n1#1,524:1\n33#2,6:525\n*S KotlinDebug\n*F\n+ 1 BackdropScaffold.kt\nandroidx/compose/material/BackdropScaffoldKt$BackdropStack$1$1$2\n*L\n481#1:525,6\n*E\n"
 .end annotation
 
 .annotation runtime Lkotlin/Metadata;
@@ -94,7 +94,7 @@
 .method public bridge synthetic invoke(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
 
-    .line 477
+    .line 479
     check-cast p1, Landroidx/compose/ui/layout/Placeable$PlacementScope;
 
     invoke-virtual {p0, p1}, Landroidx/compose/material/BackdropScaffoldKt$BackdropStack$1$1$2;->invoke(Landroidx/compose/ui/layout/Placeable$PlacementScope;)V
@@ -107,31 +107,27 @@
 .method public final invoke(Landroidx/compose/ui/layout/Placeable$PlacementScope;)V
     .locals 10
 
-    const-string v0, "$this$layout"
+    .line 480
+    iget-object v1, p0, Landroidx/compose/material/BackdropScaffoldKt$BackdropStack$1$1$2;->$backLayerPlaceable:Landroidx/compose/ui/layout/Placeable;
 
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+    const/4 v5, 0x4
 
-    .line 478
-    iget-object v2, p0, Landroidx/compose/material/BackdropScaffoldKt$BackdropStack$1$1$2;->$backLayerPlaceable:Landroidx/compose/ui/layout/Placeable;
+    const/4 v6, 0x0
 
-    const/4 v6, 0x4
-
-    const/4 v7, 0x0
+    const/4 v2, 0x0
 
     const/4 v3, 0x0
 
     const/4 v4, 0x0
 
-    const/4 v5, 0x0
+    move-object v0, p1
 
-    move-object v1, p1
+    invoke-static/range {v0 .. v6}, Landroidx/compose/ui/layout/Placeable$PlacementScope;->placeRelative$default(Landroidx/compose/ui/layout/Placeable$PlacementScope;Landroidx/compose/ui/layout/Placeable;IIFILjava/lang/Object;)V
 
-    invoke-static/range {v1 .. v7}, Landroidx/compose/ui/layout/Placeable$PlacementScope;->placeRelative$default(Landroidx/compose/ui/layout/Placeable$PlacementScope;Landroidx/compose/ui/layout/Placeable;IIFILjava/lang/Object;)V
-
-    .line 479
+    .line 481
     iget-object p0, p0, Landroidx/compose/material/BackdropScaffoldKt$BackdropStack$1$1$2;->$placeables:Ljava/util/List;
 
-    .line 524
+    .line 526
     invoke-interface {p0}, Ljava/util/List;->size()I
 
     move-result v0
@@ -141,12 +137,12 @@
     :goto_0
     if-ge v1, v0, :cond_0
 
-    .line 525
+    .line 527
     invoke-interface {p0, v1}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
     move-result-object v2
 
-    .line 526
+    .line 528
     move-object v4, v2
 
     check-cast v4, Landroidx/compose/ui/layout/Placeable;
@@ -163,7 +159,7 @@
 
     move-object v3, p1
 
-    .line 479
+    .line 481
     invoke-static/range {v3 .. v9}, Landroidx/compose/ui/layout/Placeable$PlacementScope;->placeRelative$default(Landroidx/compose/ui/layout/Placeable$PlacementScope;Landroidx/compose/ui/layout/Placeable;IIFILjava/lang/Object;)V
 
     add-int/lit8 v1, v1, 0x1

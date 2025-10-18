@@ -5,7 +5,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/SourceDebugExtension;
-    value = "SMAP\nRegex.kt\nKotlin\n*S Kotlin\n*F\n+ 1 Regex.kt\nkotlin/text/RegexKt\n+ 2 _Collections.kt\nkotlin/collections/CollectionsKt___CollectionsKt\n*L\n1#1,396:1\n1789#2,3:397\n*S KotlinDebug\n*F\n+ 1 Regex.kt\nkotlin/text/RegexKt\n*L\n19#1:397,3\n*E\n"
+    value = "SMAP\nRegex.kt\nKotlin\n*S Kotlin\n*F\n+ 1 Regex.kt\nkotlin/text/RegexKt\n+ 2 _Collections.kt\nkotlin/collections/CollectionsKt___CollectionsKt\n*L\n1#1,397:1\n1797#2,3:398\n*S KotlinDebug\n*F\n+ 1 Regex.kt\nkotlin/text/RegexKt\n*L\n19#1:398,3\n*E\n"
 .end annotation
 
 .annotation runtime Lkotlin/Metadata;
@@ -104,7 +104,7 @@
 .method private static final findNext(Ljava/util/regex/Matcher;ILjava/lang/CharSequence;)Lkotlin/text/MatchResult;
     .locals 0
 
-    .line 342
+    .line 343
     invoke-virtual {p0, p1}, Ljava/util/regex/Matcher;->find(I)Z
 
     move-result p1
@@ -144,6 +144,7 @@
 
     const/4 v0, 0x4
 
+    .line 22
     const-string v1, "T"
 
     invoke-static {v0, v1}, Lkotlin/jvm/internal/Intrinsics;->reifiedOperationMarker(ILjava/lang/String;)V
@@ -154,7 +155,6 @@
 
     check-cast v1, Ljava/lang/Class;
 
-    .line 22
     invoke-static {v0}, Ljava/util/EnumSet;->allOf(Ljava/lang/Class;)Ljava/util/EnumSet;
 
     move-result-object v0
@@ -164,9 +164,7 @@
     check-cast v1, Ljava/util/EnumSet;
 
     .line 23
-    const-string v1, "fromInt$lambda$1"
-
-    invoke-static {v0, v1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;)V
 
     move-object v1, v0
 
@@ -189,7 +187,7 @@
 
     move-result-object p0
 
-    const-string/jumbo v0, "unmodifiableSet(EnumSet.\u2026mask == it.value }\n    })"
+    const-string/jumbo v0, "unmodifiableSet(...)"
 
     invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
 
@@ -203,7 +201,7 @@
 .method private static final matchEntire(Ljava/util/regex/Matcher;Ljava/lang/CharSequence;)Lkotlin/text/MatchResult;
     .locals 1
 
-    .line 346
+    .line 347
     invoke-virtual {p0}, Ljava/util/regex/Matcher;->matches()Z
 
     move-result v0
@@ -230,7 +228,7 @@
 .method private static final range(Ljava/util/regex/MatchResult;)Lkotlin/ranges/IntRange;
     .locals 1
 
-    .line 394
+    .line 395
     invoke-interface {p0}, Ljava/util/regex/MatchResult;->start()I
 
     move-result v0
@@ -249,7 +247,7 @@
 .method private static final range(Ljava/util/regex/MatchResult;I)Lkotlin/ranges/IntRange;
     .locals 1
 
-    .line 395
+    .line 396
     invoke-interface {p0, p1}, Ljava/util/regex/MatchResult;->start(I)I
 
     move-result v0
@@ -277,7 +275,7 @@
         }
     .end annotation
 
-    .line 398
+    .line 399
     invoke-interface {p0}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
 
     move-result-object p0

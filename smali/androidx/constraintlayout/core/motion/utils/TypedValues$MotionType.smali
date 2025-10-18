@@ -74,38 +74,90 @@
 
 # direct methods
 .method static constructor <clinit>()V
-    .locals 13
+    .locals 3
+
+    const/16 v0, 0xd
 
     .line 549
-    const-string v11, "QuantizeInterpolatorType"
+    new-array v0, v0, [Ljava/lang/String;
 
-    const-string v12, "QuantizeInterpolatorID"
+    const/4 v1, 0x0
 
-    const-string v0, "Stagger"
+    const-string v2, "Stagger"
 
-    const-string v1, "PathRotate"
+    aput-object v2, v0, v1
+
+    const/4 v1, 0x1
+
+    const-string v2, "PathRotate"
+
+    aput-object v2, v0, v1
+
+    const/4 v1, 0x2
 
     const-string v2, "QuantizeMotionPhase"
 
-    const-string v3, "TransitionEasing"
+    aput-object v2, v0, v1
 
-    const-string v4, "QuantizeInterpolator"
+    const/4 v1, 0x3
 
-    const-string v5, "AnimateRelativeTo"
+    const-string v2, "TransitionEasing"
 
-    const-string v6, "AnimateCircleAngleTo"
+    aput-object v2, v0, v1
 
-    const-string v7, "PathMotionArc"
+    const/4 v1, 0x4
 
-    const-string v8, "DrawPath"
+    const-string v2, "QuantizeInterpolator"
 
-    const-string v9, "PolarRelativeTo"
+    aput-object v2, v0, v1
 
-    const-string v10, "QuantizeMotionSteps"
+    const/4 v1, 0x5
 
-    filled-new-array/range {v0 .. v12}, [Ljava/lang/String;
+    const-string v2, "AnimateRelativeTo"
 
-    move-result-object v0
+    aput-object v2, v0, v1
+
+    const/4 v1, 0x6
+
+    const-string v2, "AnimateCircleAngleTo"
+
+    aput-object v2, v0, v1
+
+    const/4 v1, 0x7
+
+    const-string v2, "PathMotionArc"
+
+    aput-object v2, v0, v1
+
+    const/16 v1, 0x8
+
+    const-string v2, "DrawPath"
+
+    aput-object v2, v0, v1
+
+    const/16 v1, 0x9
+
+    const-string v2, "PolarRelativeTo"
+
+    aput-object v2, v0, v1
+
+    const/16 v1, 0xa
+
+    const-string v2, "QuantizeMotionSteps"
+
+    aput-object v2, v0, v1
+
+    const/16 v1, 0xb
+
+    const-string v2, "QuantizeInterpolatorType"
+
+    aput-object v2, v0, v1
+
+    const/16 v1, 0xc
+
+    const-string v2, "QuantizeInterpolatorID"
+
+    aput-object v2, v0, v1
 
     sput-object v0, Landroidx/constraintlayout/core/motion/utils/TypedValues$MotionType;->KEY_WORDS:[Ljava/lang/String;
 

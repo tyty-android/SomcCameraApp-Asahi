@@ -79,7 +79,7 @@
 .method public bridge synthetic invoke(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
 
-    .line 312
+    .line 333
     invoke-virtual {p0, p1}, Landroidx/compose/ui/text/SaversKt$BaselineShiftSaver$2;->invoke-jTk7eUs(Ljava/lang/Object;)Landroidx/compose/ui/text/style/BaselineShift;
 
     move-result-object p0
@@ -90,11 +90,11 @@
 .method public final invoke-jTk7eUs(Ljava/lang/Object;)Landroidx/compose/ui/text/style/BaselineShift;
     .locals 0
 
-    const-string p0, "it"
+    .line 336
+    const-string p0, "null cannot be cast to non-null type kotlin.Float"
 
-    invoke-static {p1, p0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, p0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 315
     check-cast p1, Ljava/lang/Float;
 
     invoke-virtual {p1}, Ljava/lang/Float;->floatValue()F

@@ -53,7 +53,7 @@
     f = "TabRow.kt"
     i = {}
     l = {
-        0x1db
+        0x1df
     }
     m = "invokeSuspend"
     n = {}
@@ -174,7 +174,7 @@
 
     move-result-object v0
 
-    .line 474
+    .line 478
     iget v1, p0, Landroidx/compose/material/ScrollableTabData$onLaidOut$1$1;->label:I
 
     const/4 v2, 0x1
@@ -199,17 +199,17 @@
     :cond_1
     invoke-static {p1}, Lkotlin/ResultKt;->throwOnFailure(Ljava/lang/Object;)V
 
-    .line 475
+    .line 479
     iget-object p1, p0, Landroidx/compose/material/ScrollableTabData$onLaidOut$1$1;->this$0:Landroidx/compose/material/ScrollableTabData;
 
     invoke-static {p1}, Landroidx/compose/material/ScrollableTabData;->access$getScrollState$p(Landroidx/compose/material/ScrollableTabData;)Landroidx/compose/foundation/ScrollState;
 
     move-result-object p1
 
-    .line 476
+    .line 480
     iget v1, p0, Landroidx/compose/material/ScrollableTabData$onLaidOut$1$1;->$calculatedOffset:I
 
-    .line 477
+    .line 481
     invoke-static {}, Landroidx/compose/material/TabRowKt;->access$getScrollableTabRowScrollSpec$p()Landroidx/compose/animation/core/AnimationSpec;
 
     move-result-object v3
@@ -218,7 +218,7 @@
 
     check-cast v4, Lkotlin/coroutines/Continuation;
 
-    .line 475
+    .line 479
     iput v2, p0, Landroidx/compose/material/ScrollableTabData$onLaidOut$1$1;->label:I
 
     invoke-virtual {p1, v1, v3, v4}, Landroidx/compose/foundation/ScrollState;->animateScrollTo(ILandroidx/compose/animation/core/AnimationSpec;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
@@ -229,7 +229,7 @@
 
     return-object v0
 
-    .line 479
+    .line 483
     :cond_2
     :goto_0
     sget-object p0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;

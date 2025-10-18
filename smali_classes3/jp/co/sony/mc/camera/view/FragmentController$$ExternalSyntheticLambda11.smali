@@ -36,7 +36,7 @@
 
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/FragmentController$$ExternalSyntheticLambda11;->f$1:Ljp/co/sony/mc/camera/rtmp/ValidationCheckResultCode;
 
-    invoke-static {v0, p0}, Ljp/co/sony/mc/camera/view/FragmentController;->$r8$lambda$tsoLAoY5momt-4bbWNBa_7j00F8(Ljp/co/sony/mc/camera/view/FragmentController;Ljp/co/sony/mc/camera/rtmp/ValidationCheckResultCode;)V
+    invoke-static {v0, p0}, Ljp/co/sony/mc/camera/view/FragmentController;->$r8$lambda$zKhOVRpDmQe7-qCXO5hy2reI7wM(Ljp/co/sony/mc/camera/view/FragmentController;Ljp/co/sony/mc/camera/rtmp/ValidationCheckResultCode;)V
 
     return-void
 .end method

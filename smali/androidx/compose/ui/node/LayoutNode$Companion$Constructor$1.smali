@@ -76,7 +76,7 @@
 .method public final invoke()Landroidx/compose/ui/node/LayoutNode;
     .locals 3
 
-    .line 1370
+    .line 1385
     new-instance p0, Landroidx/compose/ui/node/LayoutNode;
 
     const/4 v0, 0x3
@@ -93,7 +93,7 @@
 .method public bridge synthetic invoke()Ljava/lang/Object;
     .locals 0
 
-    .line 1370
+    .line 1385
     invoke-virtual {p0}, Landroidx/compose/ui/node/LayoutNode$Companion$Constructor$1;->invoke()Landroidx/compose/ui/node/LayoutNode;
 
     move-result-object p0

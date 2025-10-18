@@ -18,7 +18,7 @@
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 0
 
-    .line 504
+    .line 509
     invoke-direct {p0, p1}, Lcom/google/android/material/snackbar/BaseTransientBottomBar$SnackbarBaseLayout;-><init>(Landroid/content/Context;)V
 
     return-void
@@ -27,7 +27,7 @@
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 0
 
-    .line 508
+    .line 513
     invoke-direct {p0, p1, p2}, Lcom/google/android/material/snackbar/BaseTransientBottomBar$SnackbarBaseLayout;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
     return-void
@@ -38,15 +38,15 @@
 .method protected onMeasure(II)V
     .locals 5
 
-    .line 513
+    .line 518
     invoke-super {p0, p1, p2}, Lcom/google/android/material/snackbar/BaseTransientBottomBar$SnackbarBaseLayout;->onMeasure(II)V
 
-    .line 518
+    .line 523
     invoke-virtual {p0}, Lcom/google/android/material/snackbar/Snackbar$SnackbarLayout;->getChildCount()I
 
     move-result p1
 
-    .line 519
+    .line 524
     invoke-virtual {p0}, Lcom/google/android/material/snackbar/Snackbar$SnackbarLayout;->getMeasuredWidth()I
 
     move-result p2
@@ -68,12 +68,12 @@
     :goto_0
     if-ge v0, p1, :cond_1
 
-    .line 521
+    .line 526
     invoke-virtual {p0, v0}, Lcom/google/android/material/snackbar/Snackbar$SnackbarLayout;->getChildAt(I)Landroid/view/View;
 
     move-result-object v1
 
-    .line 522
+    .line 527
     invoke-virtual {v1}, Landroid/view/View;->getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
 
     move-result-object v2
@@ -86,12 +86,12 @@
 
     const/high16 v2, 0x40000000    # 2.0f
 
-    .line 524
+    .line 529
     invoke-static {p2, v2}, Landroid/view/View$MeasureSpec;->makeMeasureSpec(II)I
 
     move-result v3
 
-    .line 525
+    .line 530
     invoke-virtual {v1}, Landroid/view/View;->getMeasuredHeight()I
 
     move-result v4
@@ -100,7 +100,7 @@
 
     move-result v2
 
-    .line 523
+    .line 528
     invoke-virtual {v1, v3, v2}, Landroid/view/View;->measure(II)V
 
     :cond_0
@@ -115,7 +115,7 @@
 .method public bridge synthetic setBackground(Landroid/graphics/drawable/Drawable;)V
     .locals 0
 
-    .line 501
+    .line 506
     invoke-super {p0, p1}, Lcom/google/android/material/snackbar/BaseTransientBottomBar$SnackbarBaseLayout;->setBackground(Landroid/graphics/drawable/Drawable;)V
 
     return-void
@@ -124,7 +124,7 @@
 .method public bridge synthetic setBackgroundDrawable(Landroid/graphics/drawable/Drawable;)V
     .locals 0
 
-    .line 501
+    .line 506
     invoke-super {p0, p1}, Lcom/google/android/material/snackbar/BaseTransientBottomBar$SnackbarBaseLayout;->setBackgroundDrawable(Landroid/graphics/drawable/Drawable;)V
 
     return-void
@@ -133,7 +133,7 @@
 .method public bridge synthetic setBackgroundTintList(Landroid/content/res/ColorStateList;)V
     .locals 0
 
-    .line 501
+    .line 506
     invoke-super {p0, p1}, Lcom/google/android/material/snackbar/BaseTransientBottomBar$SnackbarBaseLayout;->setBackgroundTintList(Landroid/content/res/ColorStateList;)V
 
     return-void
@@ -142,7 +142,7 @@
 .method public bridge synthetic setBackgroundTintMode(Landroid/graphics/PorterDuff$Mode;)V
     .locals 0
 
-    .line 501
+    .line 506
     invoke-super {p0, p1}, Lcom/google/android/material/snackbar/BaseTransientBottomBar$SnackbarBaseLayout;->setBackgroundTintMode(Landroid/graphics/PorterDuff$Mode;)V
 
     return-void
@@ -151,7 +151,7 @@
 .method public bridge synthetic setLayoutParams(Landroid/view/ViewGroup$LayoutParams;)V
     .locals 0
 
-    .line 501
+    .line 506
     invoke-super {p0, p1}, Lcom/google/android/material/snackbar/BaseTransientBottomBar$SnackbarBaseLayout;->setLayoutParams(Landroid/view/ViewGroup$LayoutParams;)V
 
     return-void
@@ -160,7 +160,7 @@
 .method public bridge synthetic setOnClickListener(Landroid/view/View$OnClickListener;)V
     .locals 0
 
-    .line 501
+    .line 506
     invoke-super {p0, p1}, Lcom/google/android/material/snackbar/BaseTransientBottomBar$SnackbarBaseLayout;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     return-void

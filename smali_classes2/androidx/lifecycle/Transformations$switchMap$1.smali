@@ -1,9 +1,9 @@
-.class public final Landroidx/lifecycle/Transformations$switchMap$1;
-.super Ljava/lang/Object;
+.class final Landroidx/lifecycle/Transformations$switchMap$1;
+.super Lkotlin/jvm/internal/Lambda;
 .source "Transformations.kt"
 
 # interfaces
-.implements Landroidx/lifecycle/Observer;
+.implements Lkotlin/jvm/functions/Function1;
 
 
 # annotations
@@ -12,38 +12,34 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0x19
+    accessFlags = 0x18
     name = null
 .end annotation
 
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Ljava/lang/Object;",
-        "Landroidx/lifecycle/Observer<",
-        "TX;>;"
+        "Lkotlin/jvm/internal/Lambda;",
+        "Lkotlin/jvm/functions/Function1<",
+        "TX;",
+        "Lkotlin/Unit;",
+        ">;"
     }
 .end annotation
 
 .annotation runtime Lkotlin/Metadata;
     d1 = {
-        "\u0000\u001b\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0005\n\u0002\u0010\u0002\n\u0002\u0008\u0003*\u0001\u0000\u0008\n\u0018\u00002\u0008\u0012\u0004\u0012\u00028\u00000\u0001J\u0015\u0010\u0008\u001a\u00020\t2\u0006\u0010\n\u001a\u00028\u0000H\u0016\u00a2\u0006\u0002\u0010\u000bR\"\u0010\u0002\u001a\n\u0012\u0004\u0012\u00028\u0001\u0018\u00010\u0003X\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\u0008\u0004\u0010\u0005\"\u0004\u0008\u0006\u0010\u0007\u00a8\u0006\u000c"
+        "\u0000\n\n\u0000\n\u0002\u0010\u0002\n\u0002\u0008\u0005\u0010\u0000\u001a\u00020\u0001\"\u0004\u0008\u0000\u0010\u0002\"\u0004\u0008\u0001\u0010\u00032\u0006\u0010\u0004\u001a\u0002H\u0002H\n\u00a2\u0006\u0004\u0008\u0005\u0010\u0006"
     }
     d2 = {
-        "androidx/lifecycle/Transformations$switchMap$1",
-        "Landroidx/lifecycle/Observer;",
-        "liveData",
-        "Landroidx/lifecycle/LiveData;",
-        "getLiveData",
-        "()Landroidx/lifecycle/LiveData;",
-        "setLiveData",
-        "(Landroidx/lifecycle/LiveData;)V",
-        "onChanged",
+        "<anonymous>",
         "",
+        "X",
+        "Y",
         "value",
-        "(Ljava/lang/Object;)V",
-        "lifecycle-livedata_release"
+        "invoke",
+        "(Ljava/lang/Object;)V"
     }
-    k = 0x1
+    k = 0x3
     mv = {
         0x1,
         0x8,
@@ -54,6 +50,16 @@
 
 
 # instance fields
+.field final synthetic $liveData:Lkotlin/jvm/internal/Ref$ObjectRef;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Lkotlin/jvm/internal/Ref$ObjectRef<",
+            "Landroidx/lifecycle/LiveData<",
+            "TY;>;>;"
+        }
+    .end annotation
+.end field
+
 .field final synthetic $result:Landroidx/lifecycle/MediatorLiveData;
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -74,24 +80,18 @@
     .end annotation
 .end field
 
-.field private liveData:Landroidx/lifecycle/LiveData;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Landroidx/lifecycle/LiveData<",
-            "TY;>;"
-        }
-    .end annotation
-.end field
-
 
 # direct methods
-.method constructor <init>(Lkotlin/jvm/functions/Function1;Landroidx/lifecycle/MediatorLiveData;)V
+.method constructor <init>(Lkotlin/jvm/functions/Function1;Lkotlin/jvm/internal/Ref$ObjectRef;Landroidx/lifecycle/MediatorLiveData;)V
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
             "Lkotlin/jvm/functions/Function1<",
             "TX;",
+            "Landroidx/lifecycle/LiveData<",
+            "TY;>;>;",
+            "Lkotlin/jvm/internal/Ref$ObjectRef<",
             "Landroidx/lifecycle/LiveData<",
             "TY;>;>;",
             "Landroidx/lifecycle/MediatorLiveData<",
@@ -101,33 +101,31 @@
 
     iput-object p1, p0, Landroidx/lifecycle/Transformations$switchMap$1;->$transform:Lkotlin/jvm/functions/Function1;
 
-    iput-object p2, p0, Landroidx/lifecycle/Transformations$switchMap$1;->$result:Landroidx/lifecycle/MediatorLiveData;
+    iput-object p2, p0, Landroidx/lifecycle/Transformations$switchMap$1;->$liveData:Lkotlin/jvm/internal/Ref$ObjectRef;
 
-    .line 120
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    iput-object p3, p0, Landroidx/lifecycle/Transformations$switchMap$1;->$result:Landroidx/lifecycle/MediatorLiveData;
+
+    const/4 p1, 0x1
+
+    invoke-direct {p0, p1}, Lkotlin/jvm/internal/Lambda;-><init>(I)V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final getLiveData()Landroidx/lifecycle/LiveData;
+.method public bridge synthetic invoke(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "()",
-            "Landroidx/lifecycle/LiveData<",
-            "TY;>;"
-        }
-    .end annotation
 
-    .line 121
-    iget-object p0, p0, Landroidx/lifecycle/Transformations$switchMap$1;->liveData:Landroidx/lifecycle/LiveData;
+    .line 136
+    invoke-virtual {p0, p1}, Landroidx/lifecycle/Transformations$switchMap$1;->invoke(Ljava/lang/Object;)V
+
+    sget-object p0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
 
     return-object p0
 .end method
 
-.method public onChanged(Ljava/lang/Object;)V
+.method public final invoke(Ljava/lang/Object;)V
     .locals 2
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -135,7 +133,7 @@
         }
     .end annotation
 
-    .line 124
+    .line 137
     iget-object v0, p0, Landroidx/lifecycle/Transformations$switchMap$1;->$transform:Lkotlin/jvm/functions/Function1;
 
     invoke-interface {v0, p1}, Lkotlin/jvm/functions/Function1;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
@@ -144,39 +142,62 @@
 
     check-cast p1, Landroidx/lifecycle/LiveData;
 
-    .line 125
-    iget-object v0, p0, Landroidx/lifecycle/Transformations$switchMap$1;->liveData:Landroidx/lifecycle/LiveData;
+    .line 138
+    iget-object v0, p0, Landroidx/lifecycle/Transformations$switchMap$1;->$liveData:Lkotlin/jvm/internal/Ref$ObjectRef;
 
-    if-ne v0, p1, :cond_0
+    iget-object v0, v0, Lkotlin/jvm/internal/Ref$ObjectRef;->element:Ljava/lang/Object;
 
-    return-void
+    if-eq v0, p1, :cond_1
 
+    .line 139
+    iget-object v0, p0, Landroidx/lifecycle/Transformations$switchMap$1;->$liveData:Lkotlin/jvm/internal/Ref$ObjectRef;
+
+    iget-object v0, v0, Lkotlin/jvm/internal/Ref$ObjectRef;->element:Ljava/lang/Object;
+
+    if-eqz v0, :cond_0
+
+    .line 140
+    iget-object v0, p0, Landroidx/lifecycle/Transformations$switchMap$1;->$result:Landroidx/lifecycle/MediatorLiveData;
+
+    iget-object v1, p0, Landroidx/lifecycle/Transformations$switchMap$1;->$liveData:Lkotlin/jvm/internal/Ref$ObjectRef;
+
+    iget-object v1, v1, Lkotlin/jvm/internal/Ref$ObjectRef;->element:Ljava/lang/Object;
+
+    invoke-static {v1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;)V
+
+    check-cast v1, Landroidx/lifecycle/LiveData;
+
+    invoke-virtual {v0, v1}, Landroidx/lifecycle/MediatorLiveData;->removeSource(Landroidx/lifecycle/LiveData;)V
+
+    .line 142
     :cond_0
-    if-eqz v0, :cond_1
+    iget-object v0, p0, Landroidx/lifecycle/Transformations$switchMap$1;->$liveData:Lkotlin/jvm/internal/Ref$ObjectRef;
 
-    .line 129
-    iget-object v1, p0, Landroidx/lifecycle/Transformations$switchMap$1;->$result:Landroidx/lifecycle/MediatorLiveData;
+    iput-object p1, v0, Lkotlin/jvm/internal/Ref$ObjectRef;->element:Ljava/lang/Object;
+
+    .line 143
+    iget-object p1, p0, Landroidx/lifecycle/Transformations$switchMap$1;->$liveData:Lkotlin/jvm/internal/Ref$ObjectRef;
+
+    iget-object p1, p1, Lkotlin/jvm/internal/Ref$ObjectRef;->element:Ljava/lang/Object;
+
+    if-eqz p1, :cond_1
+
+    .line 144
+    iget-object p1, p0, Landroidx/lifecycle/Transformations$switchMap$1;->$result:Landroidx/lifecycle/MediatorLiveData;
+
+    iget-object v0, p0, Landroidx/lifecycle/Transformations$switchMap$1;->$liveData:Lkotlin/jvm/internal/Ref$ObjectRef;
+
+    iget-object v0, v0, Lkotlin/jvm/internal/Ref$ObjectRef;->element:Ljava/lang/Object;
 
     invoke-static {v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;)V
 
-    invoke-virtual {v1, v0}, Landroidx/lifecycle/MediatorLiveData;->removeSource(Landroidx/lifecycle/LiveData;)V
+    check-cast v0, Landroidx/lifecycle/LiveData;
 
-    .line 131
-    :cond_1
-    iput-object p1, p0, Landroidx/lifecycle/Transformations$switchMap$1;->liveData:Landroidx/lifecycle/LiveData;
-
-    if-eqz p1, :cond_2
-
-    .line 133
-    iget-object v0, p0, Landroidx/lifecycle/Transformations$switchMap$1;->$result:Landroidx/lifecycle/MediatorLiveData;
-
-    invoke-static {p1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;)V
-
-    new-instance v1, Landroidx/lifecycle/Transformations$switchMap$1$onChanged$1;
+    new-instance v1, Landroidx/lifecycle/Transformations$switchMap$1$1;
 
     iget-object p0, p0, Landroidx/lifecycle/Transformations$switchMap$1;->$result:Landroidx/lifecycle/MediatorLiveData;
 
-    invoke-direct {v1, p0}, Landroidx/lifecycle/Transformations$switchMap$1$onChanged$1;-><init>(Landroidx/lifecycle/MediatorLiveData;)V
+    invoke-direct {v1, p0}, Landroidx/lifecycle/Transformations$switchMap$1$1;-><init>(Landroidx/lifecycle/MediatorLiveData;)V
 
     check-cast v1, Lkotlin/jvm/functions/Function1;
 
@@ -186,24 +207,8 @@
 
     check-cast p0, Landroidx/lifecycle/Observer;
 
-    invoke-virtual {v0, p1, p0}, Landroidx/lifecycle/MediatorLiveData;->addSource(Landroidx/lifecycle/LiveData;Landroidx/lifecycle/Observer;)V
+    invoke-virtual {p1, v0, p0}, Landroidx/lifecycle/MediatorLiveData;->addSource(Landroidx/lifecycle/LiveData;Landroidx/lifecycle/Observer;)V
 
-    :cond_2
-    return-void
-.end method
-
-.method public final setLiveData(Landroidx/lifecycle/LiveData;)V
-    .locals 0
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(",
-            "Landroidx/lifecycle/LiveData<",
-            "TY;>;)V"
-        }
-    .end annotation
-
-    .line 121
-    iput-object p1, p0, Landroidx/lifecycle/Transformations$switchMap$1;->liveData:Landroidx/lifecycle/LiveData;
-
+    :cond_1
     return-void
 .end method

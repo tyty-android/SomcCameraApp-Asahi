@@ -30,10 +30,6 @@
 .method public static final ShaderBrush(Landroid/graphics/Shader;)Landroidx/compose/ui/graphics/ShaderBrush;
     .locals 1
 
-    const-string/jumbo v0, "shader"
-
-    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
     .line 633
     new-instance v0, Landroidx/compose/ui/graphics/BrushKt$ShaderBrush$1;
 

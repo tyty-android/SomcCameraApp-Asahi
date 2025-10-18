@@ -30,7 +30,7 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/SourceDebugExtension;
-    value = "SMAP\nMutableVector.kt\nKotlin\n*S Kotlin\n*F\n+ 1 MutableVector.kt\nandroidx/compose/runtime/collection/MutableVector$MutableVectorList\n+ 2 MutableVector.kt\nandroidx/compose/runtime/collection/MutableVector\n*L\n1#1,1194:1\n523#2:1195\n*S KotlinDebug\n*F\n+ 1 MutableVector.kt\nandroidx/compose/runtime/collection/MutableVector$MutableVectorList\n*L\n941#1:1195\n*E\n"
+    value = "SMAP\nMutableVector.kt\nKotlin\n*S Kotlin\n*F\n+ 1 MutableVector.kt\nandroidx/compose/runtime/collection/MutableVector$MutableVectorList\n+ 2 MutableVector.kt\nandroidx/compose/runtime/collection/MutableVector\n*L\n1#1,1220:1\n523#2:1221\n*S KotlinDebug\n*F\n+ 1 MutableVector.kt\nandroidx/compose/runtime/collection/MutableVector$MutableVectorList\n*L\n967#1:1221\n*E\n"
 .end annotation
 
 .annotation runtime Lkotlin/Metadata;
@@ -105,7 +105,7 @@
 
 # direct methods
 .method public constructor <init>(Landroidx/compose/runtime/collection/MutableVector;)V
-    .locals 1
+    .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -114,11 +114,7 @@
         }
     .end annotation
 
-    const-string/jumbo v0, "vector"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 931
+    .line 957
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     iput-object p1, p0, Landroidx/compose/runtime/collection/MutableVector$MutableVectorList;->vector:Landroidx/compose/runtime/collection/MutableVector;
@@ -136,7 +132,7 @@
         }
     .end annotation
 
-    .line 954
+    .line 980
     iget-object p0, p0, Landroidx/compose/runtime/collection/MutableVector$MutableVectorList;->vector:Landroidx/compose/runtime/collection/MutableVector;
 
     invoke-virtual {p0, p1, p2}, Landroidx/compose/runtime/collection/MutableVector;->add(ILjava/lang/Object;)V
@@ -152,7 +148,7 @@
         }
     .end annotation
 
-    .line 952
+    .line 978
     iget-object p0, p0, Landroidx/compose/runtime/collection/MutableVector$MutableVectorList;->vector:Landroidx/compose/runtime/collection/MutableVector;
 
     invoke-virtual {p0, p1}, Landroidx/compose/runtime/collection/MutableVector;->add(Ljava/lang/Object;)Z
@@ -163,7 +159,7 @@
 .end method
 
 .method public addAll(ILjava/util/Collection;)Z
-    .locals 1
+    .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(I",
@@ -172,11 +168,7 @@
         }
     .end annotation
 
-    const-string v0, "elements"
-
-    invoke-static {p2, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 957
+    .line 983
     iget-object p0, p0, Landroidx/compose/runtime/collection/MutableVector$MutableVectorList;->vector:Landroidx/compose/runtime/collection/MutableVector;
 
     invoke-virtual {p0, p1, p2}, Landroidx/compose/runtime/collection/MutableVector;->addAll(ILjava/util/Collection;)Z
@@ -187,7 +179,7 @@
 .end method
 
 .method public addAll(Ljava/util/Collection;)Z
-    .locals 1
+    .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -196,11 +188,7 @@
         }
     .end annotation
 
-    const-string v0, "elements"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 959
+    .line 985
     iget-object p0, p0, Landroidx/compose/runtime/collection/MutableVector$MutableVectorList;->vector:Landroidx/compose/runtime/collection/MutableVector;
 
     invoke-virtual {p0, p1}, Landroidx/compose/runtime/collection/MutableVector;->addAll(Ljava/util/Collection;)Z
@@ -213,7 +201,7 @@
 .method public clear()V
     .locals 0
 
-    .line 961
+    .line 987
     iget-object p0, p0, Landroidx/compose/runtime/collection/MutableVector$MutableVectorList;->vector:Landroidx/compose/runtime/collection/MutableVector;
 
     invoke-virtual {p0}, Landroidx/compose/runtime/collection/MutableVector;->clear()V
@@ -224,7 +212,7 @@
 .method public contains(Ljava/lang/Object;)Z
     .locals 0
 
-    .line 935
+    .line 961
     iget-object p0, p0, Landroidx/compose/runtime/collection/MutableVector$MutableVectorList;->vector:Landroidx/compose/runtime/collection/MutableVector;
 
     invoke-virtual {p0, p1}, Landroidx/compose/runtime/collection/MutableVector;->contains(Ljava/lang/Object;)Z
@@ -235,7 +223,7 @@
 .end method
 
 .method public containsAll(Ljava/util/Collection;)Z
-    .locals 1
+    .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -246,11 +234,7 @@
         }
     .end annotation
 
-    const-string v0, "elements"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 937
+    .line 963
     iget-object p0, p0, Landroidx/compose/runtime/collection/MutableVector$MutableVectorList;->vector:Landroidx/compose/runtime/collection/MutableVector;
 
     invoke-virtual {p0, p1}, Landroidx/compose/runtime/collection/MutableVector;->containsAll(Ljava/util/Collection;)Z
@@ -268,17 +252,17 @@
         }
     .end annotation
 
-    .line 940
+    .line 966
     move-object v0, p0
 
     check-cast v0, Ljava/util/List;
 
     invoke-static {v0, p1}, Landroidx/compose/runtime/collection/MutableVectorKt;->access$checkIndex(Ljava/util/List;I)V
 
-    .line 941
+    .line 967
     iget-object p0, p0, Landroidx/compose/runtime/collection/MutableVector$MutableVectorList;->vector:Landroidx/compose/runtime/collection/MutableVector;
 
-    .line 1195
+    .line 1221
     invoke-virtual {p0}, Landroidx/compose/runtime/collection/MutableVector;->getContent()[Ljava/lang/Object;
 
     move-result-object p0
@@ -291,7 +275,7 @@
 .method public getSize()I
     .locals 0
 
-    .line 933
+    .line 959
     iget-object p0, p0, Landroidx/compose/runtime/collection/MutableVector$MutableVectorList;->vector:Landroidx/compose/runtime/collection/MutableVector;
 
     invoke-virtual {p0}, Landroidx/compose/runtime/collection/MutableVector;->getSize()I
@@ -304,7 +288,7 @@
 .method public indexOf(Ljava/lang/Object;)I
     .locals 0
 
-    .line 944
+    .line 970
     iget-object p0, p0, Landroidx/compose/runtime/collection/MutableVector$MutableVectorList;->vector:Landroidx/compose/runtime/collection/MutableVector;
 
     invoke-virtual {p0, p1}, Landroidx/compose/runtime/collection/MutableVector;->indexOf(Ljava/lang/Object;)I
@@ -317,7 +301,7 @@
 .method public isEmpty()Z
     .locals 0
 
-    .line 946
+    .line 972
     iget-object p0, p0, Landroidx/compose/runtime/collection/MutableVector$MutableVectorList;->vector:Landroidx/compose/runtime/collection/MutableVector;
 
     invoke-virtual {p0}, Landroidx/compose/runtime/collection/MutableVector;->isEmpty()Z
@@ -337,7 +321,7 @@
         }
     .end annotation
 
-    .line 948
+    .line 974
     new-instance v0, Landroidx/compose/runtime/collection/MutableVector$VectorListIterator;
 
     check-cast p0, Ljava/util/List;
@@ -354,7 +338,7 @@
 .method public lastIndexOf(Ljava/lang/Object;)I
     .locals 0
 
-    .line 950
+    .line 976
     iget-object p0, p0, Landroidx/compose/runtime/collection/MutableVector$MutableVectorList;->vector:Landroidx/compose/runtime/collection/MutableVector;
 
     invoke-virtual {p0, p1}, Landroidx/compose/runtime/collection/MutableVector;->lastIndexOf(Ljava/lang/Object;)I
@@ -374,7 +358,7 @@
         }
     .end annotation
 
-    .line 963
+    .line 989
     new-instance v0, Landroidx/compose/runtime/collection/MutableVector$VectorListIterator;
 
     check-cast p0, Ljava/util/List;
@@ -398,7 +382,7 @@
         }
     .end annotation
 
-    .line 966
+    .line 992
     new-instance v0, Landroidx/compose/runtime/collection/MutableVector$VectorListIterator;
 
     check-cast p0, Ljava/util/List;
@@ -418,7 +402,7 @@
         }
     .end annotation
 
-    .line 931
+    .line 957
     invoke-virtual {p0, p1}, Landroidx/compose/runtime/collection/MutableVector$MutableVectorList;->removeAt(I)Ljava/lang/Object;
 
     move-result-object p0
@@ -429,7 +413,7 @@
 .method public remove(Ljava/lang/Object;)Z
     .locals 0
 
-    .line 968
+    .line 994
     iget-object p0, p0, Landroidx/compose/runtime/collection/MutableVector$MutableVectorList;->vector:Landroidx/compose/runtime/collection/MutableVector;
 
     invoke-virtual {p0, p1}, Landroidx/compose/runtime/collection/MutableVector;->remove(Ljava/lang/Object;)Z
@@ -440,7 +424,7 @@
 .end method
 
 .method public removeAll(Ljava/util/Collection;)Z
-    .locals 1
+    .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -451,11 +435,7 @@
         }
     .end annotation
 
-    const-string v0, "elements"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 970
+    .line 996
     iget-object p0, p0, Landroidx/compose/runtime/collection/MutableVector$MutableVectorList;->vector:Landroidx/compose/runtime/collection/MutableVector;
 
     invoke-virtual {p0, p1}, Landroidx/compose/runtime/collection/MutableVector;->removeAll(Ljava/util/Collection;)Z
@@ -473,14 +453,14 @@
         }
     .end annotation
 
-    .line 973
+    .line 999
     move-object v0, p0
 
     check-cast v0, Ljava/util/List;
 
     invoke-static {v0, p1}, Landroidx/compose/runtime/collection/MutableVectorKt;->access$checkIndex(Ljava/util/List;I)V
 
-    .line 974
+    .line 1000
     iget-object p0, p0, Landroidx/compose/runtime/collection/MutableVector$MutableVectorList;->vector:Landroidx/compose/runtime/collection/MutableVector;
 
     invoke-virtual {p0, p1}, Landroidx/compose/runtime/collection/MutableVector;->removeAt(I)Ljava/lang/Object;
@@ -491,7 +471,7 @@
 .end method
 
 .method public retainAll(Ljava/util/Collection;)Z
-    .locals 1
+    .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -502,11 +482,7 @@
         }
     .end annotation
 
-    const-string v0, "elements"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 977
+    .line 1003
     iget-object p0, p0, Landroidx/compose/runtime/collection/MutableVector$MutableVectorList;->vector:Landroidx/compose/runtime/collection/MutableVector;
 
     invoke-virtual {p0, p1}, Landroidx/compose/runtime/collection/MutableVector;->retainAll(Ljava/util/Collection;)Z
@@ -524,14 +500,14 @@
         }
     .end annotation
 
-    .line 980
+    .line 1006
     move-object v0, p0
 
     check-cast v0, Ljava/util/List;
 
     invoke-static {v0, p1}, Landroidx/compose/runtime/collection/MutableVectorKt;->access$checkIndex(Ljava/util/List;I)V
 
-    .line 981
+    .line 1007
     iget-object p0, p0, Landroidx/compose/runtime/collection/MutableVector$MutableVectorList;->vector:Landroidx/compose/runtime/collection/MutableVector;
 
     invoke-virtual {p0, p1, p2}, Landroidx/compose/runtime/collection/MutableVector;->set(ILjava/lang/Object;)Ljava/lang/Object;
@@ -544,7 +520,7 @@
 .method public final bridge size()I
     .locals 0
 
-    .line 931
+    .line 957
     invoke-virtual {p0}, Landroidx/compose/runtime/collection/MutableVector$MutableVectorList;->getSize()I
 
     move-result p0
@@ -562,12 +538,12 @@
         }
     .end annotation
 
-    .line 985
+    .line 1011
     check-cast p0, Ljava/util/List;
 
     invoke-static {p0, p1, p2}, Landroidx/compose/runtime/collection/MutableVectorKt;->access$checkSubIndex(Ljava/util/List;II)V
 
-    .line 986
+    .line 1012
     new-instance v0, Landroidx/compose/runtime/collection/MutableVector$SubList;
 
     invoke-direct {v0, p0, p1, p2}, Landroidx/compose/runtime/collection/MutableVector$SubList;-><init>(Ljava/util/List;II)V
@@ -590,7 +566,7 @@
 .end method
 
 .method public toArray([Ljava/lang/Object;)[Ljava/lang/Object;
-    .locals 1
+    .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<T:",
@@ -598,10 +574,6 @@
             ">([TT;)[TT;"
         }
     .end annotation
-
-    const-string v0, "array"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
     check-cast p0, Ljava/util/Collection;
 

@@ -277,7 +277,7 @@
     .line 81
     iget-object v3, p0, Ljp/co/sony/mc/camera/view/DisplayFlashController;->mRootView:Landroid/view/View;
 
-    const v4, 0x7f090184
+    const v4, 0x7f090180
 
     invoke-virtual {v3, v4}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 

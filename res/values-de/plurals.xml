@@ -4,20 +4,4 @@
         <item quantity="other">%d neue Benachrichtigungen</item>
         <item quantity="one">%d neue Benachrichtigung</item>
     </plurals>
-    <plurals name="mv_minute_remaining_txt">
-        <item quantity="other">%1$d Min. übrig</item>
-        <item quantity="one">1 Min. übrig</item>
-    </plurals>
-    <plurals name="mv_minute_txt">
-        <item quantity="other">%1$d Minuten</item>
-        <item quantity="one">1 Minute</item>
-    </plurals>
-    <plurals name="mv_second_remaining_txt">
-        <item quantity="other">%1$d Sek. übrig</item>
-        <item quantity="one">1 Sek. übrig</item>
-    </plurals>
-    <plurals name="mv_second_txt">
-        <item quantity="other">%1$d Sekunden</item>
-        <item quantity="one">1 Sekunde</item>
-    </plurals>
 </resources>

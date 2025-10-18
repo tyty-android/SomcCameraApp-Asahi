@@ -32,7 +32,7 @@
         }
     .end annotation
 
-    .line 680
+    .line 692
     iput-object p1, p0, Ljp/co/sony/mc/camera/view/FragmentController$6;->this$0:Ljp/co/sony/mc/camera/view/FragmentController;
 
     iput-object p2, p0, Ljp/co/sony/mc/camera/view/FragmentController$6;->val$settingsHolder:Ljp/co/sony/mc/camera/setting/CameraSettingsHolder;
@@ -47,7 +47,7 @@
 .method public run()V
     .locals 1
 
-    .line 683
+    .line 695
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/FragmentController$6;->this$0:Ljp/co/sony/mc/camera/view/FragmentController;
 
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/FragmentController$6;->val$settingsHolder:Ljp/co/sony/mc/camera/setting/CameraSettingsHolder;

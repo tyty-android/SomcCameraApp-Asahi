@@ -68,11 +68,7 @@
 .end method
 
 .method public constructor <init>(Landroidx/compose/ui/text/AnnotatedString;I)V
-    .locals 1
-
-    const-string v0, "annotatedString"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+    .locals 0
 
     .line 44
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -89,28 +85,24 @@
 .method public constructor <init>(Ljava/lang/String;I)V
     .locals 7
 
-    const-string/jumbo v0, "text"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
     .line 58
-    new-instance v0, Landroidx/compose/ui/text/AnnotatedString;
+    new-instance v6, Landroidx/compose/ui/text/AnnotatedString;
 
-    const/4 v5, 0x6
+    const/4 v4, 0x6
 
-    const/4 v6, 0x0
+    const/4 v5, 0x0
+
+    const/4 v2, 0x0
 
     const/4 v3, 0x0
 
-    const/4 v4, 0x0
+    move-object v0, v6
 
-    move-object v1, v0
+    move-object v1, p1
 
-    move-object v2, p1
+    invoke-direct/range {v0 .. v5}, Landroidx/compose/ui/text/AnnotatedString;-><init>(Ljava/lang/String;Ljava/util/List;Ljava/util/List;ILkotlin/jvm/internal/DefaultConstructorMarker;)V
 
-    invoke-direct/range {v1 .. v6}, Landroidx/compose/ui/text/AnnotatedString;-><init>(Ljava/lang/String;Ljava/util/List;Ljava/util/List;ILkotlin/jvm/internal/DefaultConstructorMarker;)V
-
-    invoke-direct {p0, v0, p2}, Landroidx/compose/ui/text/input/CommitTextCommand;-><init>(Landroidx/compose/ui/text/AnnotatedString;I)V
+    invoke-direct {p0, v6, p2}, Landroidx/compose/ui/text/input/CommitTextCommand;-><init>(Landroidx/compose/ui/text/AnnotatedString;I)V
 
     return-void
 .end method
@@ -119,10 +111,6 @@
 # virtual methods
 .method public applyTo(Landroidx/compose/ui/text/input/EditingBuffer;)V
     .locals 3
-
-    const-string v0, "buffer"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 65
     invoke-virtual {p1}, Landroidx/compose/ui/text/input/EditingBuffer;->hasComposition$ui_text_release()Z

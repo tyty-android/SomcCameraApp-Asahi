@@ -31,7 +31,7 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/SourceDebugExtension;
-    value = "SMAP\nRecomposer.kt\nKotlin\n*S Kotlin\n*F\n+ 1 Recomposer.kt\nandroidx/compose/runtime/Recomposer$recompositionRunner$2$unregisterApplyObserver$1\n+ 2 ActualJvm.jvm.kt\nandroidx/compose/runtime/ActualJvm_jvmKt\n*L\n1#1,1502:1\n70#2:1503\n*S KotlinDebug\n*F\n+ 1 Recomposer.kt\nandroidx/compose/runtime/Recomposer$recompositionRunner$2$unregisterApplyObserver$1\n*L\n928#1:1503\n*E\n"
+    value = "SMAP\nRecomposer.kt\nKotlin\n*S Kotlin\n*F\n+ 1 Recomposer.kt\nandroidx/compose/runtime/Recomposer$recompositionRunner$2$unregisterApplyObserver$1\n+ 2 ActualJvm.jvm.kt\nandroidx/compose/runtime/ActualJvm_jvmKt\n+ 3 IdentityArraySet.kt\nandroidx/compose/runtime/collection/IdentityArraySetKt\n+ 4 IdentityArraySet.kt\nandroidx/compose/runtime/collection/IdentityArraySet\n+ 5 StateObjectImpl.kt\nandroidx/compose/runtime/snapshots/ReaderKind$Companion\n+ 6 _Collections.kt\nkotlin/collections/CollectionsKt___CollectionsKt\n*L\n1#1,1564:1\n82#2:1565\n396#3,2:1566\n399#3:1575\n401#3:1578\n108#4,5:1568\n114#4:1574\n50#5:1573\n1855#6,2:1576\n*S KotlinDebug\n*F\n+ 1 Recomposer.kt\nandroidx/compose/runtime/Recomposer$recompositionRunner$2$unregisterApplyObserver$1\n*L\n977#1:1565\n979#1:1566,2\n979#1:1575\n979#1:1578\n979#1:1568,5\n979#1:1574\n982#1:1573\n979#1:1576,2\n*E\n"
 .end annotation
 
 .annotation runtime Lkotlin/Metadata;
@@ -80,7 +80,7 @@
 .method public bridge synthetic invoke(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
 
-    .line 927
+    .line 976
     check-cast p1, Ljava/util/Set;
 
     check-cast p2, Landroidx/compose/runtime/snapshots/Snapshot;
@@ -93,7 +93,7 @@
 .end method
 
 .method public final invoke(Ljava/util/Set;Landroidx/compose/runtime/snapshots/Snapshot;)V
-    .locals 2
+    .locals 6
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -106,15 +106,7 @@
         }
     .end annotation
 
-    const-string v0, "changed"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string v0, "<anonymous parameter 1>"
-
-    invoke-static {p2, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 928
+    .line 977
     iget-object p2, p0, Landroidx/compose/runtime/Recomposer$recompositionRunner$2$unregisterApplyObserver$1;->this$0:Landroidx/compose/runtime/Recomposer;
 
     invoke-static {p2}, Landroidx/compose/runtime/Recomposer;->access$getStateLock$p(Landroidx/compose/runtime/Recomposer;)Ljava/lang/Object;
@@ -123,10 +115,10 @@
 
     iget-object p0, p0, Landroidx/compose/runtime/Recomposer$recompositionRunner$2$unregisterApplyObserver$1;->this$0:Landroidx/compose/runtime/Recomposer;
 
-    .line 1503
+    .line 1565
     monitor-enter p2
 
-    .line 929
+    .line 978
     :try_start_0
     invoke-static {p0}, Landroidx/compose/runtime/Recomposer;->access$get_state$p(Landroidx/compose/runtime/Recomposer;)Lkotlinx/coroutines/flow/MutableStateFlow;
 
@@ -146,41 +138,160 @@
 
     move-result v0
 
-    if-ltz v0, :cond_0
+    if-ltz v0, :cond_4
 
-    .line 930
-    invoke-static {p0}, Landroidx/compose/runtime/Recomposer;->access$getSnapshotInvalidations$p(Landroidx/compose/runtime/Recomposer;)Landroidx/compose/runtime/collection/IdentityArraySet;
+    .line 1566
+    instance-of v0, p1, Landroidx/compose/runtime/collection/IdentityArraySet;
+
+    const/4 v1, 0x1
+
+    if-eqz v0, :cond_1
+
+    .line 1567
+    check-cast p1, Landroidx/compose/runtime/collection/IdentityArraySet;
+
+    .line 1569
+    invoke-virtual {p1}, Landroidx/compose/runtime/collection/IdentityArraySet;->getValues()[Ljava/lang/Object;
 
     move-result-object v0
 
-    check-cast p1, Ljava/util/Collection;
+    .line 1570
+    invoke-virtual {p1}, Landroidx/compose/runtime/collection/IdentityArraySet;->size()I
 
-    invoke-virtual {v0, p1}, Landroidx/compose/runtime/collection/IdentityArraySet;->addAll(Ljava/util/Collection;)V
+    move-result p1
 
-    .line 931
+    const/4 v2, 0x0
+
+    :goto_0
+    if-ge v2, p1, :cond_3
+
+    .line 1572
+    aget-object v3, v0, v2
+
+    const-string v4, "null cannot be cast to non-null type T of androidx.compose.runtime.collection.IdentityArraySet"
+
+    invoke-static {v3, v4}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 981
+    instance-of v4, v3, Landroidx/compose/runtime/snapshots/StateObjectImpl;
+
+    if-eqz v4, :cond_0
+
+    .line 982
+    move-object v4, v3
+
+    check-cast v4, Landroidx/compose/runtime/snapshots/StateObjectImpl;
+
+    sget-object v5, Landroidx/compose/runtime/snapshots/ReaderKind;->Companion:Landroidx/compose/runtime/snapshots/ReaderKind$Companion;
+
+    .line 1573
+    invoke-static {v1}, Landroidx/compose/runtime/snapshots/ReaderKind;->constructor-impl(I)I
+
+    move-result v5
+
+    .line 982
+    invoke-virtual {v4, v5}, Landroidx/compose/runtime/snapshots/StateObjectImpl;->isReadIn-h_f27i8$runtime_release(I)Z
+
+    move-result v4
+
+    if-nez v4, :cond_0
+
+    goto :goto_1
+
+    .line 987
+    :cond_0
+    invoke-static {p0}, Landroidx/compose/runtime/Recomposer;->access$getSnapshotInvalidations$p(Landroidx/compose/runtime/Recomposer;)Landroidx/compose/runtime/collection/IdentityArraySet;
+
+    move-result-object v4
+
+    invoke-virtual {v4, v3}, Landroidx/compose/runtime/collection/IdentityArraySet;->add(Ljava/lang/Object;)Z
+
+    :goto_1
+    add-int/lit8 v2, v2, 0x1
+
+    goto :goto_0
+
+    .line 1575
+    :cond_1
+    check-cast p1, Ljava/lang/Iterable;
+
+    .line 1576
+    invoke-interface {p1}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
+
+    move-result-object p1
+
+    :goto_2
+    invoke-interface {p1}, Ljava/util/Iterator;->hasNext()Z
+
+    move-result v0
+
+    if-eqz v0, :cond_3
+
+    invoke-interface {p1}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+
+    move-result-object v0
+
+    .line 981
+    instance-of v2, v0, Landroidx/compose/runtime/snapshots/StateObjectImpl;
+
+    if-eqz v2, :cond_2
+
+    .line 982
+    move-object v2, v0
+
+    check-cast v2, Landroidx/compose/runtime/snapshots/StateObjectImpl;
+
+    sget-object v3, Landroidx/compose/runtime/snapshots/ReaderKind;->Companion:Landroidx/compose/runtime/snapshots/ReaderKind$Companion;
+
+    .line 1573
+    invoke-static {v1}, Landroidx/compose/runtime/snapshots/ReaderKind;->constructor-impl(I)I
+
+    move-result v3
+
+    .line 982
+    invoke-virtual {v2, v3}, Landroidx/compose/runtime/snapshots/StateObjectImpl;->isReadIn-h_f27i8$runtime_release(I)Z
+
+    move-result v2
+
+    if-nez v2, :cond_2
+
+    goto :goto_2
+
+    .line 987
+    :cond_2
+    invoke-static {p0}, Landroidx/compose/runtime/Recomposer;->access$getSnapshotInvalidations$p(Landroidx/compose/runtime/Recomposer;)Landroidx/compose/runtime/collection/IdentityArraySet;
+
+    move-result-object v2
+
+    invoke-virtual {v2, v0}, Landroidx/compose/runtime/collection/IdentityArraySet;->add(Ljava/lang/Object;)Z
+
+    goto :goto_2
+
+    .line 989
+    :cond_3
     invoke-static {p0}, Landroidx/compose/runtime/Recomposer;->access$deriveStateLocked(Landroidx/compose/runtime/Recomposer;)Lkotlinx/coroutines/CancellableContinuation;
 
     move-result-object p0
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    goto :goto_0
+    goto :goto_3
 
-    :cond_0
+    :cond_4
     const/4 p0, 0x0
 
-    .line 1503
-    :goto_0
+    .line 1565
+    :goto_3
     monitor-exit p2
 
-    if-eqz p0, :cond_1
+    if-eqz p0, :cond_5
 
-    .line 928
+    .line 977
     check-cast p0, Lkotlin/coroutines/Continuation;
 
     sget-object p1, Lkotlin/Result;->Companion:Lkotlin/Result$Companion;
 
-    .line 933
+    .line 991
     sget-object p1, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
 
     invoke-static {p1}, Lkotlin/Result;->constructor-impl(Ljava/lang/Object;)Ljava/lang/Object;
@@ -189,13 +300,13 @@
 
     invoke-interface {p0, p1}, Lkotlin/coroutines/Continuation;->resumeWith(Ljava/lang/Object;)V
 
-    :cond_1
+    :cond_5
     return-void
 
     :catchall_0
     move-exception p0
 
-    .line 1503
+    .line 1565
     monitor-exit p2
 
     throw p0

@@ -15,7 +15,7 @@
 
     move-result-wide v0
 
-    const-wide/high16 v3, 0x4044000000000000L    # 40.0
+    const-wide/high16 v3, 0x4042000000000000L    # 36.0
 
     invoke-static {v0, v1, v3, v4}, Lcom/google/android/material/color/utilities/TonalPalette;->fromHueAndChroma(DD)Lcom/google/android/material/color/utilities/TonalPalette;
 

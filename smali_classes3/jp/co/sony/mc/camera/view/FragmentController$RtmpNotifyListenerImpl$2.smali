@@ -32,7 +32,7 @@
         }
     .end annotation
 
-    .line 5119
+    .line 5297
     iput-object p1, p0, Ljp/co/sony/mc/camera/view/FragmentController$RtmpNotifyListenerImpl$2;->this$1:Ljp/co/sony/mc/camera/view/FragmentController$RtmpNotifyListenerImpl;
 
     iput-wide p2, p0, Ljp/co/sony/mc/camera/view/FragmentController$RtmpNotifyListenerImpl$2;->val$bitrate:J
@@ -47,7 +47,7 @@
 .method public run()V
     .locals 3
 
-    .line 5122
+    .line 5300
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/FragmentController$RtmpNotifyListenerImpl$2;->this$1:Ljp/co/sony/mc/camera/view/FragmentController$RtmpNotifyListenerImpl;
 
     iget-object v0, v0, Ljp/co/sony/mc/camera/view/FragmentController$RtmpNotifyListenerImpl;->this$0:Ljp/co/sony/mc/camera/view/FragmentController;
@@ -66,10 +66,10 @@
 
     iget-wide v1, p0, Ljp/co/sony/mc/camera/view/FragmentController$RtmpNotifyListenerImpl$2;->val$bitrate:J
 
-    .line 5123
+    .line 5301
     invoke-virtual {v0, v1, v2}, Ljp/co/sony/mc/camera/view/uistate/IndicatorUiState;->onUpdateBitrate(J)V
 
-    .line 5124
+    .line 5302
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/FragmentController$RtmpNotifyListenerImpl$2;->this$1:Ljp/co/sony/mc/camera/view/FragmentController$RtmpNotifyListenerImpl;
 
     iget-object v0, v0, Ljp/co/sony/mc/camera/view/FragmentController$RtmpNotifyListenerImpl;->this$0:Ljp/co/sony/mc/camera/view/FragmentController;

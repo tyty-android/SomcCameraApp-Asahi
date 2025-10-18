@@ -21,7 +21,7 @@
 .method constructor <init>()V
     .locals 0
 
-    .line 1505
+    .line 1508
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -42,8 +42,18 @@
         }
     .end annotation
 
-    .line 1509
-    sget-object p0, Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;->WIDE:Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;
+    .line 1512
+    check-cast p1, Ljp/co/sony/mc/camera/setting/CommonSettings;
+
+    .line 1513
+    invoke-virtual {p1}, Ljp/co/sony/mc/camera/setting/CommonSettings;->getCapturingMode()Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
+
+    move-result-object p0
+
+    .line 1514
+    invoke-virtual {p0}, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->getDefaultCameraId()Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;
+
+    move-result-object p0
 
     return-object p0
 .end method

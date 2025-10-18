@@ -50,7 +50,7 @@
 .method private constructor <init>()V
     .locals 0
 
-    .line 1886
+    .line 2055
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -61,16 +61,12 @@
 .method public final setPointerIcon(Landroid/view/View;Landroidx/compose/ui/input/pointer/PointerIcon;)V
     .locals 0
 
-    const-string/jumbo p0, "view"
-
-    invoke-static {p1, p0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 1892
+    .line 2061
     instance-of p0, p2, Landroidx/compose/ui/input/pointer/AndroidPointerIcon;
 
     if-eqz p0, :cond_0
 
-    .line 1893
+    .line 2062
     check-cast p2, Landroidx/compose/ui/input/pointer/AndroidPointerIcon;
 
     invoke-virtual {p2}, Landroidx/compose/ui/input/pointer/AndroidPointerIcon;->getPointerIcon()Landroid/view/PointerIcon;
@@ -79,13 +75,13 @@
 
     goto :goto_0
 
-    .line 1895
+    .line 2064
     :cond_0
     instance-of p0, p2, Landroidx/compose/ui/input/pointer/AndroidPointerIconType;
 
     if-eqz p0, :cond_1
 
-    .line 1896
+    .line 2065
     invoke-virtual {p1}, Landroid/view/View;->getContext()Landroid/content/Context;
 
     move-result-object p0
@@ -100,13 +96,9 @@
 
     move-result-object p0
 
-    const-string p2, "getSystemIcon(view.context, icon.type)"
-
-    invoke-static {p0, p2}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
-
     goto :goto_0
 
-    .line 1900
+    .line 2069
     :cond_1
     invoke-virtual {p1}, Landroid/view/View;->getContext()Landroid/content/Context;
 
@@ -114,16 +106,12 @@
 
     const/16 p2, 0x3e8
 
-    .line 1899
+    .line 2068
     invoke-static {p0, p2}, Landroid/view/PointerIcon;->getSystemIcon(Landroid/content/Context;I)Landroid/view/PointerIcon;
 
     move-result-object p0
 
-    const-string p2, "getSystemIcon(\n         \u2026DEFAULT\n                )"
-
-    invoke-static {p0, p2}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 1905
+    .line 2074
     :goto_0
     invoke-virtual {p1}, Landroid/view/View;->getPointerIcon()Landroid/view/PointerIcon;
 
@@ -135,7 +123,7 @@
 
     if-nez p2, :cond_2
 
-    .line 1906
+    .line 2075
     invoke-virtual {p1, p0}, Landroid/view/View;->setPointerIcon(Landroid/view/PointerIcon;)V
 
     :cond_2

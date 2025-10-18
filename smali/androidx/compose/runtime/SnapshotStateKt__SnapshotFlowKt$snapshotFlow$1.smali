@@ -32,7 +32,7 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/SourceDebugExtension;
-    value = "SMAP\nSnapshotFlow.kt\nKotlin\n*S Kotlin\n*F\n+ 1 SnapshotFlow.kt\nandroidx/compose/runtime/SnapshotStateKt__SnapshotFlowKt$snapshotFlow$1\n+ 2 Snapshot.kt\nandroidx/compose/runtime/snapshots/Snapshot\n*L\n1#1,173:1\n129#2,5:174\n129#2,5:179\n*S KotlinDebug\n*F\n+ 1 SnapshotFlow.kt\nandroidx/compose/runtime/SnapshotStateKt__SnapshotFlowKt$snapshotFlow$1\n*L\n128#1:174,5\n151#1:179,5\n*E\n"
+    value = "SMAP\nSnapshotFlow.kt\nKotlin\n*S Kotlin\n*F\n+ 1 SnapshotFlow.kt\nandroidx/compose/runtime/SnapshotStateKt__SnapshotFlowKt$snapshotFlow$1\n+ 2 Snapshot.kt\nandroidx/compose/runtime/snapshots/Snapshot\n*L\n1#1,181:1\n129#2,5:182\n129#2,5:187\n*S KotlinDebug\n*F\n+ 1 SnapshotFlow.kt\nandroidx/compose/runtime/SnapshotStateKt__SnapshotFlowKt$snapshotFlow$1\n*L\n139#1:182,5\n162#1:187,5\n*E\n"
 .end annotation
 
 .annotation runtime Lkotlin/Metadata;
@@ -79,9 +79,9 @@
         0x2
     }
     l = {
-        0x85,
-        0x89,
-        0x9f
+        0x90,
+        0x94,
+        0xaa
     }
     m = "invokeSuspend"
     n = {
@@ -263,11 +263,11 @@
     .line 111
     iget v1, p0, Landroidx/compose/runtime/SnapshotStateKt__SnapshotFlowKt$snapshotFlow$1;->label:I
 
-    const/4 v2, 0x0
+    const/4 v2, 0x3
 
-    const/4 v3, 0x3
+    const/4 v3, 0x2
 
-    const/4 v4, 0x2
+    const/4 v4, 0x0
 
     const/4 v5, 0x1
 
@@ -275,9 +275,9 @@
 
     if-eq v1, v5, :cond_2
 
-    if-eq v1, v4, :cond_1
+    if-eq v1, v3, :cond_1
 
-    if-ne v1, v3, :cond_0
+    if-ne v1, v2, :cond_0
 
     iget-object v1, p0, Landroidx/compose/runtime/SnapshotStateKt__SnapshotFlowKt$snapshotFlow$1;->L$5:Ljava/lang/Object;
 
@@ -295,7 +295,7 @@
 
     iget-object v9, p0, Landroidx/compose/runtime/SnapshotStateKt__SnapshotFlowKt$snapshotFlow$1;->L$1:Ljava/lang/Object;
 
-    check-cast v9, Ljava/util/Set;
+    check-cast v9, Landroidx/collection/MutableScatterSet;
 
     iget-object v10, p0, Landroidx/compose/runtime/SnapshotStateKt__SnapshotFlowKt$snapshotFlow$1;->L$0:Ljava/lang/Object;
 
@@ -337,7 +337,7 @@
 
     iget-object v10, p0, Landroidx/compose/runtime/SnapshotStateKt__SnapshotFlowKt$snapshotFlow$1;->L$1:Ljava/lang/Object;
 
-    check-cast v10, Ljava/util/Set;
+    check-cast v10, Landroidx/collection/MutableScatterSet;
 
     iget-object v11, p0, Landroidx/compose/runtime/SnapshotStateKt__SnapshotFlowKt$snapshotFlow$1;->L$0:Ljava/lang/Object;
 
@@ -374,7 +374,7 @@
 
     iget-object v9, p0, Landroidx/compose/runtime/SnapshotStateKt__SnapshotFlowKt$snapshotFlow$1;->L$1:Ljava/lang/Object;
 
-    check-cast v9, Ljava/util/Set;
+    check-cast v9, Landroidx/collection/MutableScatterSet;
 
     iget-object v10, p0, Landroidx/compose/runtime/SnapshotStateKt__SnapshotFlowKt$snapshotFlow$1;->L$0:Ljava/lang/Object;
 
@@ -392,35 +392,31 @@
     check-cast v10, Lkotlinx/coroutines/flow/FlowCollector;
 
     .line 113
-    new-instance p1, Ljava/util/LinkedHashSet;
+    new-instance v9, Landroidx/collection/MutableScatterSet;
 
-    invoke-direct {p1}, Ljava/util/LinkedHashSet;-><init>()V
+    const/4 p1, 0x0
 
-    move-object v9, p1
-
-    check-cast v9, Ljava/util/Set;
+    invoke-direct {v9, v4, v5, p1}, Landroidx/collection/MutableScatterSet;-><init>(IILkotlin/jvm/internal/DefaultConstructorMarker;)V
 
     .line 114
-    new-instance p1, Landroidx/compose/runtime/SnapshotStateKt__SnapshotFlowKt$snapshotFlow$1$readObserver$1;
+    new-instance v1, Landroidx/compose/runtime/SnapshotStateKt__SnapshotFlowKt$snapshotFlow$1$readObserver$1;
 
-    invoke-direct {p1, v9}, Landroidx/compose/runtime/SnapshotStateKt__SnapshotFlowKt$snapshotFlow$1$readObserver$1;-><init>(Ljava/util/Set;)V
+    invoke-direct {v1, v9}, Landroidx/compose/runtime/SnapshotStateKt__SnapshotFlowKt$snapshotFlow$1$readObserver$1;-><init>(Landroidx/collection/MutableScatterSet;)V
 
-    move-object v8, p1
+    move-object v8, v1
 
     check-cast v8, Lkotlin/jvm/functions/Function1;
 
-    const p1, 0x7fffffff
+    const v1, 0x7fffffff
 
-    const/4 v1, 0x6
+    const/4 v6, 0x6
 
-    const/4 v6, 0x0
-
-    .line 117
-    invoke-static {p1, v6, v6, v1, v6}, Lkotlinx/coroutines/channels/ChannelKt;->Channel$default(ILkotlinx/coroutines/channels/BufferOverflow;Lkotlin/jvm/functions/Function1;ILjava/lang/Object;)Lkotlinx/coroutines/channels/Channel;
+    .line 122
+    invoke-static {v1, p1, p1, v6, p1}, Lkotlinx/coroutines/channels/ChannelKt;->Channel$default(ILkotlinx/coroutines/channels/BufferOverflow;Lkotlin/jvm/functions/Function1;ILjava/lang/Object;)Lkotlinx/coroutines/channels/Channel;
 
     move-result-object v7
 
-    .line 121
+    .line 126
     sget-object p1, Landroidx/compose/runtime/snapshots/Snapshot;->Companion:Landroidx/compose/runtime/snapshots/Snapshot$Companion;
 
     new-instance v1, Landroidx/compose/runtime/SnapshotStateKt__SnapshotFlowKt$snapshotFlow$1$unregisterApplyObserver$1;
@@ -433,7 +429,7 @@
 
     move-result-object v6
 
-    .line 126
+    .line 137
     :try_start_2
     sget-object p1, Landroidx/compose/runtime/snapshots/Snapshot;->Companion:Landroidx/compose/runtime/snapshots/Snapshot$Companion;
 
@@ -445,7 +441,7 @@
     :try_end_2
     .catchall {:try_start_2 .. :try_end_2} :catchall_5
 
-    .line 174
+    .line 182
     :try_start_3
     invoke-virtual {p1}, Landroidx/compose/runtime/snapshots/Snapshot;->makeCurrent()Landroidx/compose/runtime/snapshots/Snapshot;
 
@@ -453,7 +449,7 @@
     :try_end_3
     .catchall {:try_start_3 .. :try_end_3} :catchall_4
 
-    .line 176
+    .line 184
     :try_start_4
     invoke-interface {v1}, Lkotlin/jvm/functions/Function0;->invoke()Ljava/lang/Object;
 
@@ -461,17 +457,17 @@
     :try_end_4
     .catchall {:try_start_4 .. :try_end_4} :catchall_3
 
-    .line 178
+    .line 186
     :try_start_5
     invoke-virtual {p1, v11}, Landroidx/compose/runtime/snapshots/Snapshot;->restoreCurrent(Landroidx/compose/runtime/snapshots/Snapshot;)V
     :try_end_5
     .catchall {:try_start_5 .. :try_end_5} :catchall_4
 
-    .line 130
+    .line 141
     :try_start_6
     invoke-virtual {p1}, Landroidx/compose/runtime/snapshots/Snapshot;->dispose()V
 
-    .line 133
+    .line 144
     move-object p1, p0
 
     check-cast p1, Lkotlin/coroutines/Continuation;
@@ -498,7 +494,7 @@
 
     return-object v0
 
-    .line 137
+    .line 148
     :cond_4
     :goto_1
     move-object p1, p0
@@ -517,9 +513,9 @@
 
     iput-object v1, p0, Landroidx/compose/runtime/SnapshotStateKt__SnapshotFlowKt$snapshotFlow$1;->L$5:Ljava/lang/Object;
 
-    iput v2, p0, Landroidx/compose/runtime/SnapshotStateKt__SnapshotFlowKt$snapshotFlow$1;->I$0:I
+    iput v4, p0, Landroidx/compose/runtime/SnapshotStateKt__SnapshotFlowKt$snapshotFlow$1;->I$0:I
 
-    iput v4, p0, Landroidx/compose/runtime/SnapshotStateKt__SnapshotFlowKt$snapshotFlow$1;->label:I
+    iput v3, p0, Landroidx/compose/runtime/SnapshotStateKt__SnapshotFlowKt$snapshotFlow$1;->label:I
 
     invoke-interface {v7, p1}, Lkotlinx/coroutines/channels/Channel;->receive(Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
 
@@ -544,7 +540,7 @@
 
     move-object v6, v1
 
-    move v1, v2
+    move v1, v4
 
     .line 111
     :goto_2
@@ -554,8 +550,8 @@
     :cond_6
     if-nez v1, :cond_8
 
-    .line 143
-    invoke-static {v10, p1}, Landroidx/compose/runtime/SnapshotStateKt__SnapshotFlowKt;->access$intersects(Ljava/util/Set;Ljava/util/Set;)Z
+    .line 154
+    invoke-static {v10, p1}, Landroidx/compose/runtime/SnapshotStateKt__SnapshotFlowKt;->access$intersects(Landroidx/collection/MutableScatterSet;Ljava/util/Set;)Z
 
     move-result p1
 
@@ -564,7 +560,7 @@
     goto :goto_3
 
     :cond_7
-    move v1, v2
+    move v1, v4
 
     goto :goto_4
 
@@ -572,7 +568,7 @@
     :goto_3
     move v1, v5
 
-    .line 144
+    .line 155
     :goto_4
     invoke-interface {v8}, Lkotlinx/coroutines/channels/Channel;->tryReceive-PtdJZtk()Ljava/lang/Object;
 
@@ -588,10 +584,10 @@
 
     if-eqz v1, :cond_9
 
-    .line 148
-    invoke-interface {v10}, Ljava/util/Set;->clear()V
+    .line 159
+    invoke-virtual {v10}, Landroidx/collection/MutableScatterSet;->clear()V
 
-    .line 149
+    .line 160
     sget-object p1, Landroidx/compose/runtime/snapshots/Snapshot;->Companion:Landroidx/compose/runtime/snapshots/Snapshot$Companion;
 
     invoke-virtual {p1, v9}, Landroidx/compose/runtime/snapshots/Snapshot$Companion;->takeSnapshot(Lkotlin/jvm/functions/Function1;)Landroidx/compose/runtime/snapshots/Snapshot;
@@ -602,7 +598,7 @@
     :try_end_7
     .catchall {:try_start_7 .. :try_end_7} :catchall_0
 
-    .line 179
+    .line 187
     :try_start_8
     invoke-virtual {p1}, Landroidx/compose/runtime/snapshots/Snapshot;->makeCurrent()Landroidx/compose/runtime/snapshots/Snapshot;
 
@@ -610,7 +606,7 @@
     :try_end_8
     .catchall {:try_start_8 .. :try_end_8} :catchall_2
 
-    .line 181
+    .line 189
     :try_start_9
     invoke-interface {v1}, Lkotlin/jvm/functions/Function0;->invoke()Ljava/lang/Object;
 
@@ -618,24 +614,24 @@
     :try_end_9
     .catchall {:try_start_9 .. :try_end_9} :catchall_1
 
-    .line 183
+    .line 191
     :try_start_a
     invoke-virtual {p1, v12}, Landroidx/compose/runtime/snapshots/Snapshot;->restoreCurrent(Landroidx/compose/runtime/snapshots/Snapshot;)V
     :try_end_a
     .catchall {:try_start_a .. :try_end_a} :catchall_2
 
-    .line 153
+    .line 164
     :try_start_b
     invoke-virtual {p1}, Landroidx/compose/runtime/snapshots/Snapshot;->dispose()V
 
-    .line 157
+    .line 168
     invoke-static {v1, v6}, Lkotlin/jvm/internal/Intrinsics;->areEqual(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result p1
 
     if-nez p1, :cond_9
 
-    .line 159
+    .line 170
     move-object p1, p0
 
     check-cast p1, Lkotlin/coroutines/Continuation;
@@ -652,7 +648,7 @@
 
     iput-object v1, p0, Landroidx/compose/runtime/SnapshotStateKt__SnapshotFlowKt$snapshotFlow$1;->L$5:Ljava/lang/Object;
 
-    iput v3, p0, Landroidx/compose/runtime/SnapshotStateKt__SnapshotFlowKt$snapshotFlow$1;->label:I
+    iput v2, p0, Landroidx/compose/runtime/SnapshotStateKt__SnapshotFlowKt$snapshotFlow$1;->label:I
 
     invoke-interface {v11, v1, p1}, Lkotlinx/coroutines/flow/FlowCollector;->emit(Ljava/lang/Object;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
 
@@ -667,7 +663,7 @@
     :catchall_1
     move-exception p0
 
-    .line 183
+    .line 191
     :try_start_c
     invoke-virtual {p1, v12}, Landroidx/compose/runtime/snapshots/Snapshot;->restoreCurrent(Landroidx/compose/runtime/snapshots/Snapshot;)V
 
@@ -678,7 +674,7 @@
     :catchall_2
     move-exception p0
 
-    .line 153
+    .line 164
     :try_start_d
     invoke-virtual {p1}, Landroidx/compose/runtime/snapshots/Snapshot;->dispose()V
 
@@ -705,7 +701,7 @@
     :catchall_3
     move-exception p0
 
-    .line 178
+    .line 186
     :try_start_e
     invoke-virtual {p1, v11}, Landroidx/compose/runtime/snapshots/Snapshot;->restoreCurrent(Landroidx/compose/runtime/snapshots/Snapshot;)V
 
@@ -716,7 +712,7 @@
     :catchall_4
     move-exception p0
 
-    .line 130
+    .line 141
     :try_start_f
     invoke-virtual {p1}, Landroidx/compose/runtime/snapshots/Snapshot;->dispose()V
 
@@ -727,7 +723,7 @@
     :catchall_5
     move-exception p0
 
-    .line 164
+    .line 175
     :goto_5
     invoke-interface {v6}, Landroidx/compose/runtime/snapshots/ObserverHandle;->dispose()V
 

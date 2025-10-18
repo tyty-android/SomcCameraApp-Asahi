@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Landroidx/compose/material/AppBarKt;->AppBar-celAv9A(JJFLandroidx/compose/foundation/layout/PaddingValues;Landroidx/compose/ui/graphics/Shape;Landroidx/compose/ui/Modifier;Lkotlin/jvm/functions/Function3;Landroidx/compose/runtime/Composer;II)V
+    value = Landroidx/compose/material/AppBarKt;->AppBar-HkEspTQ(JJFLandroidx/compose/foundation/layout/PaddingValues;Landroidx/compose/ui/graphics/Shape;Landroidx/compose/foundation/layout/WindowInsets;Landroidx/compose/ui/Modifier;Lkotlin/jvm/functions/Function3;Landroidx/compose/runtime/Composer;II)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -48,8 +48,6 @@
 
 
 # instance fields
-.field final synthetic $$dirty:I
-
 .field final synthetic $content:Lkotlin/jvm/functions/Function3;
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -65,13 +63,16 @@
 
 .field final synthetic $contentPadding:Landroidx/compose/foundation/layout/PaddingValues;
 
+.field final synthetic $windowInsets:Landroidx/compose/foundation/layout/WindowInsets;
+
 
 # direct methods
-.method constructor <init>(Landroidx/compose/foundation/layout/PaddingValues;Lkotlin/jvm/functions/Function3;I)V
+.method constructor <init>(Landroidx/compose/foundation/layout/WindowInsets;Landroidx/compose/foundation/layout/PaddingValues;Lkotlin/jvm/functions/Function3;)V
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
+            "Landroidx/compose/foundation/layout/WindowInsets;",
             "Landroidx/compose/foundation/layout/PaddingValues;",
             "Lkotlin/jvm/functions/Function3<",
             "-",
@@ -81,15 +82,15 @@
             "-",
             "Ljava/lang/Integer;",
             "Lkotlin/Unit;",
-            ">;I)V"
+            ">;)V"
         }
     .end annotation
 
-    iput-object p1, p0, Landroidx/compose/material/AppBarKt$AppBar$1;->$contentPadding:Landroidx/compose/foundation/layout/PaddingValues;
+    iput-object p1, p0, Landroidx/compose/material/AppBarKt$AppBar$1;->$windowInsets:Landroidx/compose/foundation/layout/WindowInsets;
 
-    iput-object p2, p0, Landroidx/compose/material/AppBarKt$AppBar$1;->$content:Lkotlin/jvm/functions/Function3;
+    iput-object p2, p0, Landroidx/compose/material/AppBarKt$AppBar$1;->$contentPadding:Landroidx/compose/foundation/layout/PaddingValues;
 
-    iput p3, p0, Landroidx/compose/material/AppBarKt$AppBar$1;->$$dirty:I
+    iput-object p3, p0, Landroidx/compose/material/AppBarKt$AppBar$1;->$content:Lkotlin/jvm/functions/Function3;
 
     const/4 p1, 0x2
 
@@ -103,7 +104,7 @@
 .method public bridge synthetic invoke(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
 
-    .line 520
+    .line 727
     check-cast p1, Landroidx/compose/runtime/Composer;
 
     check-cast p2, Ljava/lang/Number;
@@ -120,9 +121,9 @@
 .end method
 
 .method public final invoke(Landroidx/compose/runtime/Composer;I)V
-    .locals 4
+    .locals 3
 
-    const-string v0, "C520@22586L6,520@22521L400:AppBar.kt#jmzs0o"
+    const-string v0, "C727@31825L6,727@31760L476:AppBar.kt#jmzs0o"
 
     invoke-static {p1, v0}, Landroidx/compose/runtime/ComposerKt;->sourceInformation(Landroidx/compose/runtime/Composer;Ljava/lang/String;)V
 
@@ -132,7 +133,7 @@
 
     if-ne v0, v1, :cond_1
 
-    .line 521
+    .line 728
     invoke-interface {p1}, Landroidx/compose/runtime/Composer;->getSkipping()Z
 
     move-result v0
@@ -141,13 +142,13 @@
 
     goto :goto_0
 
-    .line 530
+    .line 739
     :cond_0
     invoke-interface {p1}, Landroidx/compose/runtime/Composer;->skipToGroupEnd()V
 
     goto :goto_1
 
-    .line 521
+    .line 728
     :cond_1
     :goto_0
     invoke-static {}, Landroidx/compose/runtime/ComposerKt;->isTraceInProgress()Z
@@ -158,9 +159,9 @@
 
     const/4 v0, -0x1
 
-    const-string v1, "androidx.compose.material.AppBar.<anonymous> (AppBar.kt:519)"
+    const-string v1, "androidx.compose.material.AppBar.<anonymous> (AppBar.kt:727)"
 
-    const v2, -0x3d437250
+    const v2, 0xcb64a1a
 
     invoke-static {v2, p2, v0, v1}, Landroidx/compose/runtime/ComposerKt;->traceEventStart(IIILjava/lang/String;)V
 
@@ -185,35 +186,31 @@
 
     move-result-object p2
 
-    const/4 v0, 0x1
+    new-instance v0, Landroidx/compose/material/AppBarKt$AppBar$1$1;
 
-    new-array v1, v0, [Landroidx/compose/runtime/ProvidedValue;
-
-    const/4 v2, 0x0
-
-    aput-object p2, v1, v2
-
-    new-instance p2, Landroidx/compose/material/AppBarKt$AppBar$1$1;
+    iget-object v1, p0, Landroidx/compose/material/AppBarKt$AppBar$1;->$windowInsets:Landroidx/compose/foundation/layout/WindowInsets;
 
     iget-object v2, p0, Landroidx/compose/material/AppBarKt$AppBar$1;->$contentPadding:Landroidx/compose/foundation/layout/PaddingValues;
 
-    iget-object v3, p0, Landroidx/compose/material/AppBarKt$AppBar$1;->$content:Lkotlin/jvm/functions/Function3;
+    iget-object p0, p0, Landroidx/compose/material/AppBarKt$AppBar$1;->$content:Lkotlin/jvm/functions/Function3;
 
-    iget p0, p0, Landroidx/compose/material/AppBarKt$AppBar$1;->$$dirty:I
+    invoke-direct {v0, v1, v2, p0}, Landroidx/compose/material/AppBarKt$AppBar$1$1;-><init>(Landroidx/compose/foundation/layout/WindowInsets;Landroidx/compose/foundation/layout/PaddingValues;Lkotlin/jvm/functions/Function3;)V
 
-    invoke-direct {p2, v2, v3, p0}, Landroidx/compose/material/AppBarKt$AppBar$1$1;-><init>(Landroidx/compose/foundation/layout/PaddingValues;Lkotlin/jvm/functions/Function3;I)V
+    const p0, 0x23c83d5a
 
-    const p0, 0x4d405270
+    const/4 v1, 0x1
 
-    invoke-static {p1, p0, v0, p2}, Landroidx/compose/runtime/internal/ComposableLambdaKt;->composableLambda(Landroidx/compose/runtime/Composer;IZLjava/lang/Object;)Landroidx/compose/runtime/internal/ComposableLambda;
+    invoke-static {p1, p0, v1, v0}, Landroidx/compose/runtime/internal/ComposableLambdaKt;->composableLambda(Landroidx/compose/runtime/Composer;IZLjava/lang/Object;)Landroidx/compose/runtime/internal/ComposableLambda;
 
     move-result-object p0
 
     check-cast p0, Lkotlin/jvm/functions/Function2;
 
-    const/16 p2, 0x38
+    sget v0, Landroidx/compose/runtime/ProvidedValue;->$stable:I
 
-    invoke-static {v1, p0, p1, p2}, Landroidx/compose/runtime/CompositionLocalKt;->CompositionLocalProvider([Landroidx/compose/runtime/ProvidedValue;Lkotlin/jvm/functions/Function2;Landroidx/compose/runtime/Composer;I)V
+    or-int/lit8 v0, v0, 0x30
+
+    invoke-static {p2, p0, p1, v0}, Landroidx/compose/runtime/CompositionLocalKt;->CompositionLocalProvider(Landroidx/compose/runtime/ProvidedValue;Lkotlin/jvm/functions/Function2;Landroidx/compose/runtime/Composer;I)V
 
     invoke-static {}, Landroidx/compose/runtime/ComposerKt;->isTraceInProgress()Z
 

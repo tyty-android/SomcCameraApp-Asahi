@@ -21,7 +21,7 @@
 .method constructor <init>()V
     .locals 0
 
-    .line 875
+    .line 928
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -42,11 +42,11 @@
         }
     .end annotation
 
-    .line 879
+    .line 932
     check-cast p1, Ljp/co/sony/mc/camera/setting/CameraSettings;
 
-    .line 880
-    invoke-static {p1}, Ljp/co/sony/mc/camera/setting/CameraSettings;->-$$Nest$mgetAutoFocusLock(Ljp/co/sony/mc/camera/setting/CameraSettings;)Ljp/co/sony/mc/camera/configuration/parameters/AutoFocusLock;
+    .line 933
+    invoke-static {p1}, Ljp/co/sony/mc/camera/setting/CameraSettings;->-$$Nest$mgetFaceDetection(Ljp/co/sony/mc/camera/setting/CameraSettings;)Ljp/co/sony/mc/camera/configuration/parameters/FaceDetection;
 
     move-result-object p0
 

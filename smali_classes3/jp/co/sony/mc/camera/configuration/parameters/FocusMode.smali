@@ -95,9 +95,9 @@
 
     const/4 v2, 0x0
 
-    const v3, 0x7f0801e6
+    const v3, 0x7f0801eb
 
-    const v4, 0x7f110250
+    const v4, 0x7f110254
 
     const-string v5, "af-s"
 
@@ -120,9 +120,9 @@
 
     const/4 v12, 0x1
 
-    const v13, 0x7f0801e3
+    const v13, 0x7f0801e8
 
-    const v14, 0x7f11024e
+    const v14, 0x7f110252
 
     const-string v15, "af-c"
 
@@ -170,9 +170,9 @@
 
     const/4 v12, 0x3
 
-    const v13, 0x7f0801e9
+    const v13, 0x7f0801ee
 
-    const v14, 0x7f110254
+    const v14, 0x7f110258
 
     const-string v15, "af-s"
 
@@ -292,23 +292,23 @@
 .method public static getDefaultValue(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;)Ljp/co/sony/mc/camera/configuration/parameters/FocusMode;
     .locals 1
 
-    .line 227
+    .line 220
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->isMacro()Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
-    .line 228
+    .line 221
     sget-object v0, Ljp/co/sony/mc/camera/configuration/parameters/FocusMode;->MF:Ljp/co/sony/mc/camera/configuration/parameters/FocusMode;
 
     goto :goto_0
 
-    .line 230
+    .line 223
     :cond_0
     sget-object v0, Ljp/co/sony/mc/camera/configuration/parameters/FocusMode;->AF_C:Ljp/co/sony/mc/camera/configuration/parameters/FocusMode;
 
-    .line 232
+    .line 225
     :goto_0
     invoke-static {p0, p1}, Ljp/co/sony/mc/camera/configuration/parameters/FocusMode;->getOptions(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;)[Ljp/co/sony/mc/camera/configuration/parameters/FocusMode;
 
@@ -326,7 +326,7 @@
 
     return-object v0
 
-    .line 235
+    .line 228
     :cond_1
     sget-object p0, Ljp/co/sony/mc/camera/configuration/parameters/FocusMode;->FIXED:Ljp/co/sony/mc/camera/configuration/parameters/FocusMode;
 
@@ -336,17 +336,17 @@
 .method public static getOptions(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;)[Ljp/co/sony/mc/camera/configuration/parameters/FocusMode;
     .locals 7
 
-    .line 182
+    .line 175
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
-    .line 184
+    .line 177
     invoke-static {p1}, Ljp/co/sony/mc/camera/util/capability/PlatformCapability;->getCameraCapability(Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;)Ljp/co/sony/mc/camera/util/capability/CameraCapabilityList;
 
     move-result-object p1
 
-    .line 185
+    .line 178
     iget-object p1, p1, Ljp/co/sony/mc/camera/util/capability/CameraCapabilityList;->FOCUS_MODE:Ljp/co/sony/mc/camera/util/capability/CapabilityItem;
 
     invoke-virtual {p1}, Ljp/co/sony/mc/camera/util/capability/CapabilityItem;->get()Ljava/lang/Object;
@@ -355,7 +355,7 @@
 
     check-cast p1, Ljava/util/List;
 
-    .line 186
+    .line 179
     invoke-interface {p1}, Ljava/util/List;->isEmpty()Z
 
     move-result v1
@@ -364,7 +364,7 @@
 
     if-nez v1, :cond_5
 
-    .line 188
+    .line 181
     invoke-static {}, Ljp/co/sony/mc/camera/configuration/parameters/FocusMode;->values()[Ljp/co/sony/mc/camera/configuration/parameters/FocusMode;
 
     move-result-object v1
@@ -378,7 +378,7 @@
 
     aget-object v5, v1, v4
 
-    .line 190
+    .line 183
     sget-object v6, Ljp/co/sony/mc/camera/configuration/parameters/FocusMode;->APP_SUPPORT_MODES:Ljava/util/List;
 
     invoke-interface {v6, v5}, Ljava/util/List;->contains(Ljava/lang/Object;)Z
@@ -389,7 +389,7 @@
 
     goto :goto_1
 
-    .line 195
+    .line 188
     :cond_0
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->isHighResolution()Z
 
@@ -412,7 +412,7 @@
 
     goto :goto_1
 
-    .line 201
+    .line 194
     :cond_2
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->isProVideo()Z
 
@@ -429,7 +429,7 @@
     :cond_3
     const/4 v6, 0x1
 
-    .line 206
+    .line 199
     invoke-virtual {v5, v6}, Ljp/co/sony/mc/camera/configuration/parameters/FocusMode;->getAfModeValue(Z)Ljava/lang/String;
 
     move-result-object v6
@@ -440,7 +440,7 @@
 
     if-eqz v6, :cond_4
 
-    .line 207
+    .line 200
     invoke-virtual {v5, v2}, Ljp/co/sony/mc/camera/configuration/parameters/FocusMode;->getAfModeValue(Z)Ljava/lang/String;
 
     move-result-object v6
@@ -451,7 +451,7 @@
 
     if-eqz v6, :cond_4
 
-    .line 208
+    .line 201
     invoke-interface {v0, v5}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
     :cond_4
@@ -460,7 +460,7 @@
 
     goto :goto_0
 
-    .line 212
+    .line 205
     :cond_5
     new-array p0, v2, [Ljp/co/sony/mc/camera/configuration/parameters/FocusMode;
 
@@ -476,7 +476,7 @@
 .method public static isSupportedValue(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;Ljp/co/sony/mc/camera/configuration/parameters/FocusMode;)Z
     .locals 3
 
-    .line 217
+    .line 210
     invoke-static {p0, p1}, Ljp/co/sony/mc/camera/configuration/parameters/FocusMode;->getOptions(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;)[Ljp/co/sony/mc/camera/configuration/parameters/FocusMode;
 
     move-result-object p0
@@ -640,32 +640,5 @@
 
     const/4 p0, 0x1
 
-    return p0
-.end method
-
-.method public isFocusSoundEnabled()Z
-    .locals 1
-
-    .line 178
-    sget-object v0, Ljp/co/sony/mc/camera/configuration/parameters/FocusMode;->AF_S:Ljp/co/sony/mc/camera/configuration/parameters/FocusMode;
-
-    if-eq p0, v0, :cond_1
-
-    sget-object v0, Ljp/co/sony/mc/camera/configuration/parameters/FocusMode;->AF_C:Ljp/co/sony/mc/camera/configuration/parameters/FocusMode;
-
-    if-ne p0, v0, :cond_0
-
-    goto :goto_0
-
-    :cond_0
-    const/4 p0, 0x0
-
-    goto :goto_1
-
-    :cond_1
-    :goto_0
-    const/4 p0, 0x1
-
-    :goto_1
     return p0
 .end method

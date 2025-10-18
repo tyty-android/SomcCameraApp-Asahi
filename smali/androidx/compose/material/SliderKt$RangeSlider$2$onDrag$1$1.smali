@@ -148,7 +148,7 @@
 .method public bridge synthetic invoke(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
 
-    .line 375
+    .line 378
     check-cast p1, Ljava/lang/Boolean;
 
     invoke-virtual {p1}, Ljava/lang/Boolean;->booleanValue()Z
@@ -173,7 +173,7 @@
 
     if-eqz p1, :cond_0
 
-    .line 377
+    .line 380
     iget-object p1, p0, Landroidx/compose/material/SliderKt$RangeSlider$2$onDrag$1$1;->$rawOffsetStart:Landroidx/compose/runtime/MutableFloatState;
 
     invoke-interface {p1}, Landroidx/compose/runtime/MutableFloatState;->getFloatValue()F
@@ -184,7 +184,7 @@
 
     invoke-interface {p1, v0}, Landroidx/compose/runtime/MutableFloatState;->setFloatValue(F)V
 
-    .line 378
+    .line 381
     iget-object p1, p0, Landroidx/compose/material/SliderKt$RangeSlider$2$onDrag$1$1;->$rawOffsetEnd:Landroidx/compose/runtime/MutableFloatState;
 
     iget-object p2, p0, Landroidx/compose/material/SliderKt$RangeSlider$2$onDrag$1$1;->$valueRange:Lkotlin/ranges/ClosedFloatingPointRange;
@@ -211,14 +211,14 @@
 
     invoke-interface {p1, p2}, Landroidx/compose/runtime/MutableFloatState;->setFloatValue(F)V
 
-    .line 379
+    .line 382
     iget-object p1, p0, Landroidx/compose/material/SliderKt$RangeSlider$2$onDrag$1$1;->$rawOffsetEnd:Landroidx/compose/runtime/MutableFloatState;
 
     invoke-interface {p1}, Landroidx/compose/runtime/MutableFloatState;->getFloatValue()F
 
     move-result p1
 
-    .line 380
+    .line 383
     iget-object p2, p0, Landroidx/compose/material/SliderKt$RangeSlider$2$onDrag$1$1;->$rawOffsetStart:Landroidx/compose/runtime/MutableFloatState;
 
     invoke-interface {p2}, Landroidx/compose/runtime/MutableFloatState;->getFloatValue()F
@@ -233,14 +233,14 @@
 
     move-result p2
 
-    .line 381
+    .line 384
     invoke-static {p2, p1}, Lkotlin/ranges/RangesKt;->rangeTo(FF)Lkotlin/ranges/ClosedFloatingPointRange;
 
     move-result-object p1
 
     goto :goto_0
 
-    .line 383
+    .line 386
     :cond_0
     iget-object p1, p0, Landroidx/compose/material/SliderKt$RangeSlider$2$onDrag$1$1;->$rawOffsetEnd:Landroidx/compose/runtime/MutableFloatState;
 
@@ -252,7 +252,7 @@
 
     invoke-interface {p1, v0}, Landroidx/compose/runtime/MutableFloatState;->setFloatValue(F)V
 
-    .line 384
+    .line 387
     iget-object p1, p0, Landroidx/compose/material/SliderKt$RangeSlider$2$onDrag$1$1;->$rawOffsetStart:Landroidx/compose/runtime/MutableFloatState;
 
     iget-object p2, p0, Landroidx/compose/material/SliderKt$RangeSlider$2$onDrag$1$1;->$valueRange:Lkotlin/ranges/ClosedFloatingPointRange;
@@ -279,14 +279,14 @@
 
     invoke-interface {p1, p2}, Landroidx/compose/runtime/MutableFloatState;->setFloatValue(F)V
 
-    .line 385
+    .line 388
     iget-object p1, p0, Landroidx/compose/material/SliderKt$RangeSlider$2$onDrag$1$1;->$rawOffsetStart:Landroidx/compose/runtime/MutableFloatState;
 
     invoke-interface {p1}, Landroidx/compose/runtime/MutableFloatState;->getFloatValue()F
 
     move-result p1
 
-    .line 386
+    .line 389
     iget-object p2, p0, Landroidx/compose/material/SliderKt$RangeSlider$2$onDrag$1$1;->$rawOffsetEnd:Landroidx/compose/runtime/MutableFloatState;
 
     invoke-interface {p2}, Landroidx/compose/runtime/MutableFloatState;->getFloatValue()F
@@ -301,12 +301,12 @@
 
     move-result p2
 
-    .line 387
+    .line 390
     invoke-static {p1, p2}, Lkotlin/ranges/RangesKt;->rangeTo(FF)Lkotlin/ranges/ClosedFloatingPointRange;
 
     move-result-object p1
 
-    .line 390
+    .line 393
     :goto_0
     iget-object p2, p0, Landroidx/compose/material/SliderKt$RangeSlider$2$onDrag$1$1;->$onValueChangeState:Landroidx/compose/runtime/State;
 

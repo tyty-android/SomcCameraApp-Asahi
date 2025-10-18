@@ -24,7 +24,7 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/SourceDebugExtension;
-    value = "SMAP\nJobSupport.kt\nKotlin\n*S Kotlin\n*F\n+ 1 JobSupport.kt\nkotlinx/coroutines/JobSupport$AwaitContinuation\n+ 2 fake.kt\nkotlin/jvm/internal/FakeKt\n*L\n1#1,1479:1\n1#2:1480\n*E\n"
+    value = "SMAP\nJobSupport.kt\nKotlin\n*S Kotlin\n*F\n+ 1 JobSupport.kt\nkotlinx/coroutines/JobSupport$AwaitContinuation\n+ 2 fake.kt\nkotlin/jvm/internal/FakeKt\n*L\n1#1,1454:1\n1#2:1455\n*E\n"
 .end annotation
 
 .annotation runtime Lkotlin/Metadata;
@@ -51,7 +51,7 @@
     k = 0x1
     mv = {
         0x1,
-        0x6,
+        0x8,
         0x0
     }
     xi = 0x30
@@ -77,10 +77,10 @@
 
     const/4 v0, 0x1
 
-    .line 1162
+    .line 1166
     invoke-direct {p0, p1, v0}, Lkotlinx/coroutines/CancellableContinuationImpl;-><init>(Lkotlin/coroutines/Continuation;I)V
 
-    .line 1161
+    .line 1165
     iput-object p2, p0, Lkotlinx/coroutines/JobSupport$AwaitContinuation;->job:Lkotlinx/coroutines/JobSupport;
 
     return-void
@@ -91,14 +91,14 @@
 .method public getContinuationCancellationCause(Lkotlinx/coroutines/Job;)Ljava/lang/Throwable;
     .locals 1
 
-    .line 1164
+    .line 1168
     iget-object p0, p0, Lkotlinx/coroutines/JobSupport$AwaitContinuation;->job:Lkotlinx/coroutines/JobSupport;
 
     invoke-virtual {p0}, Lkotlinx/coroutines/JobSupport;->getState$kotlinx_coroutines_core()Ljava/lang/Object;
 
     move-result-object p0
 
-    .line 1169
+    .line 1173
     instance-of v0, p0, Lkotlinx/coroutines/JobSupport$Finishing;
 
     if-eqz v0, :cond_0
@@ -115,7 +115,7 @@
 
     return-object v0
 
-    .line 1170
+    .line 1174
     :cond_0
     instance-of v0, p0, Lkotlinx/coroutines/CompletedExceptionally;
 
@@ -127,7 +127,7 @@
 
     return-object p0
 
-    .line 1171
+    .line 1175
     :cond_1
     invoke-interface {p1}, Lkotlinx/coroutines/Job;->getCancellationException()Ljava/util/concurrent/CancellationException;
 
@@ -141,7 +141,7 @@
 .method protected nameString()Ljava/lang/String;
     .locals 0
 
-    .line 1175
+    .line 1179
     const-string p0, "AwaitContinuation"
 
     return-object p0

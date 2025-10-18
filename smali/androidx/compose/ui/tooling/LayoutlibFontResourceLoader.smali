@@ -1,6 +1,6 @@
 .class public final Landroidx/compose/ui/tooling/LayoutlibFontResourceLoader;
 .super Ljava/lang/Object;
-.source "LayoutlibFontResourceLoader.kt"
+.source "LayoutlibFontResourceLoader.android.kt"
 
 # interfaces
 .implements Landroidx/compose/ui/text/font/Font$ResourceLoader;
@@ -33,17 +33,23 @@
 .end annotation
 
 
+# static fields
+.field public static final $stable:I = 0x8
+
+
 # instance fields
 .field private final context:Landroid/content/Context;
 
 
 # direct methods
+.method static constructor <clinit>()V
+    .locals 0
+
+    return-void
+.end method
+
 .method public constructor <init>(Landroid/content/Context;)V
-    .locals 1
-
-    const-string v0, "context"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+    .locals 0
 
     .line 30
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -65,10 +71,6 @@
             imports = {}
         .end subannotation
     .end annotation
-
-    const-string v0, "font"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 37
     instance-of v0, p1, Landroidx/compose/ui/text/font/ResourceFont;

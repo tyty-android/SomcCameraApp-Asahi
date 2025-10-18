@@ -3,7 +3,7 @@
 .source "D8$$SyntheticClass"
 
 # interfaces
-.implements Ljp/co/sony/mc/camera/view/widget/PressButton$OnPressButtonEventListener;
+.implements Lkotlin/jvm/functions/Function1;
 
 
 # instance fields
@@ -24,13 +24,17 @@
 
 
 # virtual methods
-.method public final onPress(Landroid/view/View;Z)V
+.method public final invoke(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
 
     .line 0
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/viewbinder/ProModeMfSliderViewBinder$$ExternalSyntheticLambda4;->f$0:Ljp/co/sony/mc/camera/view/viewbinder/ProModeMfSliderViewBinder;
 
-    invoke-static {p0, p1, p2}, Ljp/co/sony/mc/camera/view/viewbinder/ProModeMfSliderViewBinder;->$r8$lambda$_BLvZgUcZUMjeN2J_HJ4Ea-Jl64(Ljp/co/sony/mc/camera/view/viewbinder/ProModeMfSliderViewBinder;Landroid/view/View;Z)V
+    check-cast p1, Ljava/lang/Integer;
 
-    return-void
+    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/view/viewbinder/ProModeMfSliderViewBinder;->$r8$lambda$hCQYBdo8ufFdurOOKRSsf2_j-1I(Ljp/co/sony/mc/camera/view/viewbinder/ProModeMfSliderViewBinder;Ljava/lang/Integer;)Lkotlin/Unit;
+
+    move-result-object p0
+
+    return-object p0
 .end method

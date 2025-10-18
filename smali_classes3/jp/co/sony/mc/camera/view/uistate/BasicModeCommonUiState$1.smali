@@ -32,7 +32,7 @@
 
 .annotation runtime Lkotlin/Metadata;
     d1 = {
-        "\u0000\n\n\u0000\n\u0002\u0010\u0002\n\u0002\u0018\u0002\u0010\u0000\u001a\u00020\u0001*\u00020\u0002H\u008a@"
+        "\u0000\n\n\u0000\n\u0002\u0010\u0002\n\u0002\u0018\u0002\u0010\u0000\u001a\u00020\u0001*\u00020\u0002H\n"
     }
     d2 = {
         "<anonymous>",
@@ -41,8 +41,8 @@
     }
     k = 0x3
     mv = {
-        0x1,
-        0x9,
+        0x2,
+        0x0,
         0x0
     }
     xi = 0x30
@@ -53,7 +53,7 @@
     f = "BasicModeCommonUiState.kt"
     i = {}
     l = {
-        0x6f
+        0x69
     }
     m = "invokeSuspend"
     n = {}
@@ -167,7 +167,7 @@
 
     move-result-object v0
 
-    .line 109
+    .line 103
     iget v1, p0, Ljp/co/sony/mc/camera/view/uistate/BasicModeCommonUiState$1;->label:I
 
     const/4 v2, 0x1
@@ -192,7 +192,7 @@
     :cond_1
     invoke-static {p1}, Lkotlin/ResultKt;->throwOnFailure(Ljava/lang/Object;)V
 
-    .line 110
+    .line 104
     iget-object p1, p0, Ljp/co/sony/mc/camera/view/uistate/BasicModeCommonUiState$1;->this$0:Ljp/co/sony/mc/camera/view/uistate/BasicModeCommonUiState;
 
     invoke-static {p1}, Ljp/co/sony/mc/camera/view/uistate/BasicModeCommonUiState;->access$getCameraSettingsModel$p(Ljp/co/sony/mc/camera/view/uistate/BasicModeCommonUiState;)Ljp/co/sony/mc/camera/view/viewmodel/CameraSettingsModel;
@@ -203,7 +203,7 @@
 
     move-result-object p1
 
-    .line 111
+    .line 105
     invoke-static {p1}, Landroidx/lifecycle/Transformations;->distinctUntilChanged(Landroidx/lifecycle/LiveData;)Landroidx/lifecycle/LiveData;
 
     move-result-object p1
@@ -236,7 +236,7 @@
 
     return-object v0
 
-    .line 114
+    .line 108
     :cond_2
     :goto_0
     sget-object p0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;

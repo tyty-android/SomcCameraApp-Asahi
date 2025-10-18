@@ -90,7 +90,7 @@
 .method public final invoke()Landroidx/compose/material/DrawerState;
     .locals 2
 
-    .line 457
+    .line 451
     new-instance v0, Landroidx/compose/material/DrawerState;
 
     iget-object v1, p0, Landroidx/compose/material/DrawerKt$rememberDrawerState$2$1;->$initialValue:Landroidx/compose/material/DrawerValue;
@@ -105,7 +105,7 @@
 .method public bridge synthetic invoke()Ljava/lang/Object;
     .locals 0
 
-    .line 456
+    .line 450
     invoke-virtual {p0}, Landroidx/compose/material/DrawerKt$rememberDrawerState$2$1;->invoke()Landroidx/compose/material/DrawerState;
 
     move-result-object p0

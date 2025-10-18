@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Landroidx/compose/material/BottomSheetScaffoldKt;->BottomSheetScaffold-bGncdBI(Lkotlin/jvm/functions/Function3;Landroidx/compose/ui/Modifier;Landroidx/compose/material/BottomSheetScaffoldState;Lkotlin/jvm/functions/Function2;Lkotlin/jvm/functions/Function3;Lkotlin/jvm/functions/Function2;IZLandroidx/compose/ui/graphics/Shape;FJJFLkotlin/jvm/functions/Function3;ZLandroidx/compose/ui/graphics/Shape;FJJJJJLkotlin/jvm/functions/Function3;Landroidx/compose/runtime/Composer;IIII)V
+    value = Landroidx/compose/material/BottomSheetScaffoldKt;->BottomSheetScaffold-HnlDQGw(Lkotlin/jvm/functions/Function3;Landroidx/compose/ui/Modifier;Landroidx/compose/material/BottomSheetScaffoldState;Lkotlin/jvm/functions/Function2;Lkotlin/jvm/functions/Function3;Lkotlin/jvm/functions/Function2;IZLandroidx/compose/ui/graphics/Shape;FJJFJJLkotlin/jvm/functions/Function3;Landroidx/compose/runtime/Composer;III)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -43,8 +43,6 @@
 
 .field final synthetic $$changed1:I
 
-.field final synthetic $$changed2:I
-
 .field final synthetic $$default:I
 
 .field final synthetic $backgroundColor:J
@@ -63,31 +61,6 @@
 .end field
 
 .field final synthetic $contentColor:J
-
-.field final synthetic $drawerBackgroundColor:J
-
-.field final synthetic $drawerContent:Lkotlin/jvm/functions/Function3;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Lkotlin/jvm/functions/Function3<",
-            "Landroidx/compose/foundation/layout/ColumnScope;",
-            "Landroidx/compose/runtime/Composer;",
-            "Ljava/lang/Integer;",
-            "Lkotlin/Unit;",
-            ">;"
-        }
-    .end annotation
-.end field
-
-.field final synthetic $drawerContentColor:J
-
-.field final synthetic $drawerElevation:F
-
-.field final synthetic $drawerGesturesEnabled:Z
-
-.field final synthetic $drawerScrimColor:J
-
-.field final synthetic $drawerShape:Landroidx/compose/ui/graphics/Shape;
 
 .field final synthetic $floatingActionButton:Lkotlin/jvm/functions/Function2;
     .annotation system Ldalvik/annotation/Signature;
@@ -159,7 +132,7 @@
 
 
 # direct methods
-.method constructor <init>(Lkotlin/jvm/functions/Function3;Landroidx/compose/ui/Modifier;Landroidx/compose/material/BottomSheetScaffoldState;Lkotlin/jvm/functions/Function2;Lkotlin/jvm/functions/Function3;Lkotlin/jvm/functions/Function2;IZLandroidx/compose/ui/graphics/Shape;FJJFLkotlin/jvm/functions/Function3;ZLandroidx/compose/ui/graphics/Shape;FJJJJJLkotlin/jvm/functions/Function3;IIII)V
+.method constructor <init>(Lkotlin/jvm/functions/Function3;Landroidx/compose/ui/Modifier;Landroidx/compose/material/BottomSheetScaffoldState;Lkotlin/jvm/functions/Function2;Lkotlin/jvm/functions/Function3;Lkotlin/jvm/functions/Function2;IZLandroidx/compose/ui/graphics/Shape;FJJFJJLkotlin/jvm/functions/Function3;III)V
     .locals 3
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -199,18 +172,7 @@
             "Lkotlin/Unit;",
             ">;IZ",
             "Landroidx/compose/ui/graphics/Shape;",
-            "FJJF",
-            "Lkotlin/jvm/functions/Function3<",
-            "-",
-            "Landroidx/compose/foundation/layout/ColumnScope;",
-            "-",
-            "Landroidx/compose/runtime/Composer;",
-            "-",
-            "Ljava/lang/Integer;",
-            "Lkotlin/Unit;",
-            ">;Z",
-            "Landroidx/compose/ui/graphics/Shape;",
-            "FJJJJJ",
+            "FJJFJJ",
             "Lkotlin/jvm/functions/Function3<",
             "-",
             "Landroidx/compose/foundation/layout/PaddingValues;",
@@ -219,7 +181,7 @@
             "-",
             "Ljava/lang/Integer;",
             "Lkotlin/Unit;",
-            ">;IIII)V"
+            ">;III)V"
         }
     .end annotation
 
@@ -277,59 +239,27 @@
 
     iput v1, v0, Landroidx/compose/material/BottomSheetScaffoldKt$BottomSheetScaffold$3;->$sheetPeekHeight:F
 
-    move-object/from16 v1, p16
-
-    iput-object v1, v0, Landroidx/compose/material/BottomSheetScaffoldKt$BottomSheetScaffold$3;->$drawerContent:Lkotlin/jvm/functions/Function3;
-
-    move/from16 v1, p17
-
-    iput-boolean v1, v0, Landroidx/compose/material/BottomSheetScaffoldKt$BottomSheetScaffold$3;->$drawerGesturesEnabled:Z
-
-    move-object/from16 v1, p18
-
-    iput-object v1, v0, Landroidx/compose/material/BottomSheetScaffoldKt$BottomSheetScaffold$3;->$drawerShape:Landroidx/compose/ui/graphics/Shape;
-
-    move/from16 v1, p19
-
-    iput v1, v0, Landroidx/compose/material/BottomSheetScaffoldKt$BottomSheetScaffold$3;->$drawerElevation:F
-
-    move-wide/from16 v1, p20
-
-    iput-wide v1, v0, Landroidx/compose/material/BottomSheetScaffoldKt$BottomSheetScaffold$3;->$drawerBackgroundColor:J
-
-    move-wide/from16 v1, p22
-
-    iput-wide v1, v0, Landroidx/compose/material/BottomSheetScaffoldKt$BottomSheetScaffold$3;->$drawerContentColor:J
-
-    move-wide/from16 v1, p24
-
-    iput-wide v1, v0, Landroidx/compose/material/BottomSheetScaffoldKt$BottomSheetScaffold$3;->$drawerScrimColor:J
-
-    move-wide/from16 v1, p26
+    move-wide/from16 v1, p16
 
     iput-wide v1, v0, Landroidx/compose/material/BottomSheetScaffoldKt$BottomSheetScaffold$3;->$backgroundColor:J
 
-    move-wide/from16 v1, p28
+    move-wide/from16 v1, p18
 
     iput-wide v1, v0, Landroidx/compose/material/BottomSheetScaffoldKt$BottomSheetScaffold$3;->$contentColor:J
 
-    move-object/from16 v1, p30
+    move-object/from16 v1, p20
 
     iput-object v1, v0, Landroidx/compose/material/BottomSheetScaffoldKt$BottomSheetScaffold$3;->$content:Lkotlin/jvm/functions/Function3;
 
-    move/from16 v1, p31
+    move/from16 v1, p21
 
     iput v1, v0, Landroidx/compose/material/BottomSheetScaffoldKt$BottomSheetScaffold$3;->$$changed:I
 
-    move/from16 v1, p32
+    move/from16 v1, p22
 
     iput v1, v0, Landroidx/compose/material/BottomSheetScaffoldKt$BottomSheetScaffold$3;->$$changed1:I
 
-    move/from16 v1, p33
-
-    iput v1, v0, Landroidx/compose/material/BottomSheetScaffoldKt$BottomSheetScaffold$3;->$$changed2:I
-
-    move/from16 v1, p34
+    move/from16 v1, p23
 
     iput v1, v0, Landroidx/compose/material/BottomSheetScaffoldKt$BottomSheetScaffold$3;->$$default:I
 
@@ -361,11 +291,11 @@
 .end method
 
 .method public final invoke(Landroidx/compose/runtime/Composer;I)V
-    .locals 36
+    .locals 25
 
     move-object/from16 v0, p0
 
-    move-object/from16 v31, p1
+    move-object/from16 v21, p1
 
     iget-object v1, v0, Landroidx/compose/material/BottomSheetScaffoldKt$BottomSheetScaffold$3;->$sheetContent:Lkotlin/jvm/functions/Function3;
 
@@ -395,47 +325,19 @@
 
     move-object/from16 p1, v1
 
-    iget-object v1, v0, Landroidx/compose/material/BottomSheetScaffoldKt$BottomSheetScaffold$3;->$drawerContent:Lkotlin/jvm/functions/Function3;
-
-    move-object/from16 v16, v1
-
-    iget-boolean v1, v0, Landroidx/compose/material/BottomSheetScaffoldKt$BottomSheetScaffold$3;->$drawerGesturesEnabled:Z
-
-    move/from16 v17, v1
-
-    iget-object v1, v0, Landroidx/compose/material/BottomSheetScaffoldKt$BottomSheetScaffold$3;->$drawerShape:Landroidx/compose/ui/graphics/Shape;
-
-    move-object/from16 v18, v1
-
-    iget v1, v0, Landroidx/compose/material/BottomSheetScaffoldKt$BottomSheetScaffold$3;->$drawerElevation:F
-
-    move/from16 v19, v1
-
     move-object/from16 p2, v2
-
-    iget-wide v1, v0, Landroidx/compose/material/BottomSheetScaffoldKt$BottomSheetScaffold$3;->$drawerBackgroundColor:J
-
-    move-wide/from16 v20, v1
-
-    iget-wide v1, v0, Landroidx/compose/material/BottomSheetScaffoldKt$BottomSheetScaffold$3;->$drawerContentColor:J
-
-    move-wide/from16 v22, v1
-
-    iget-wide v1, v0, Landroidx/compose/material/BottomSheetScaffoldKt$BottomSheetScaffold$3;->$drawerScrimColor:J
-
-    move-wide/from16 v24, v1
 
     iget-wide v1, v0, Landroidx/compose/material/BottomSheetScaffoldKt$BottomSheetScaffold$3;->$backgroundColor:J
 
-    move-wide/from16 v26, v1
+    move-wide/from16 v16, v1
 
     iget-wide v1, v0, Landroidx/compose/material/BottomSheetScaffoldKt$BottomSheetScaffold$3;->$contentColor:J
 
-    move-wide/from16 v28, v1
+    move-wide/from16 v18, v1
 
     iget-object v1, v0, Landroidx/compose/material/BottomSheetScaffoldKt$BottomSheetScaffold$3;->$content:Lkotlin/jvm/functions/Function3;
 
-    move-object/from16 v30, v1
+    move-object/from16 v20, v1
 
     iget v1, v0, Landroidx/compose/material/BottomSheetScaffoldKt$BottomSheetScaffold$3;->$$changed:I
 
@@ -443,29 +345,23 @@
 
     invoke-static {v1}, Landroidx/compose/runtime/RecomposeScopeImplKt;->updateChangedFlags(I)I
 
-    move-result v32
+    move-result v22
 
     iget v1, v0, Landroidx/compose/material/BottomSheetScaffoldKt$BottomSheetScaffold$3;->$$changed1:I
 
     invoke-static {v1}, Landroidx/compose/runtime/RecomposeScopeImplKt;->updateChangedFlags(I)I
 
-    move-result v33
-
-    iget v1, v0, Landroidx/compose/material/BottomSheetScaffoldKt$BottomSheetScaffold$3;->$$changed2:I
-
-    invoke-static {v1}, Landroidx/compose/runtime/RecomposeScopeImplKt;->updateChangedFlags(I)I
-
-    move-result v34
+    move-result v23
 
     iget v0, v0, Landroidx/compose/material/BottomSheetScaffoldKt$BottomSheetScaffold$3;->$$default:I
 
-    move/from16 v35, v0
+    move/from16 v24, v0
 
     move-object/from16 v1, p1
 
     move-object/from16 v2, p2
 
-    invoke-static/range {v1 .. v35}, Landroidx/compose/material/BottomSheetScaffoldKt;->BottomSheetScaffold-bGncdBI(Lkotlin/jvm/functions/Function3;Landroidx/compose/ui/Modifier;Landroidx/compose/material/BottomSheetScaffoldState;Lkotlin/jvm/functions/Function2;Lkotlin/jvm/functions/Function3;Lkotlin/jvm/functions/Function2;IZLandroidx/compose/ui/graphics/Shape;FJJFLkotlin/jvm/functions/Function3;ZLandroidx/compose/ui/graphics/Shape;FJJJJJLkotlin/jvm/functions/Function3;Landroidx/compose/runtime/Composer;IIII)V
+    invoke-static/range {v1 .. v24}, Landroidx/compose/material/BottomSheetScaffoldKt;->BottomSheetScaffold-HnlDQGw(Lkotlin/jvm/functions/Function3;Landroidx/compose/ui/Modifier;Landroidx/compose/material/BottomSheetScaffoldState;Lkotlin/jvm/functions/Function2;Lkotlin/jvm/functions/Function3;Lkotlin/jvm/functions/Function2;IZLandroidx/compose/ui/graphics/Shape;FJJFJJLkotlin/jvm/functions/Function3;Landroidx/compose/runtime/Composer;III)V
 
     return-void
 .end method

@@ -88,11 +88,7 @@
 .method public final invoke(Landroidx/compose/material/DrawerValue;)Landroidx/compose/material/DrawerState;
     .locals 1
 
-    const-string v0, "it"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 249
+    .line 248
     new-instance v0, Landroidx/compose/material/DrawerState;
 
     iget-object p0, p0, Landroidx/compose/material/DrawerState$Companion$Saver$2;->$confirmStateChange:Lkotlin/jvm/functions/Function1;
@@ -105,7 +101,7 @@
 .method public bridge synthetic invoke(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
 
-    .line 247
+    .line 246
     check-cast p1, Landroidx/compose/material/DrawerValue;
 
     invoke-virtual {p0, p1}, Landroidx/compose/material/DrawerState$Companion$Saver$2;->invoke(Landroidx/compose/material/DrawerValue;)Landroidx/compose/material/DrawerState;

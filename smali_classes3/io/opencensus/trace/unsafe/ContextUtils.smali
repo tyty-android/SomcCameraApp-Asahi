@@ -3,6 +3,11 @@
 .source "ContextUtils.java"
 
 
+# annotations
+.annotation runtime Ljava/lang/Deprecated;
+.end annotation
+
+
 # static fields
 .field private static final CONTEXT_SPAN_KEY:Lio/grpc/Context$Key;
     .annotation system Ldalvik/annotation/Signature;
@@ -19,10 +24,10 @@
 .method static constructor <clinit>()V
     .locals 1
 
-    .line 41
+    .line 43
     const-string v0, "opencensus-trace-span-key"
 
-    .line 42
+    .line 44
     invoke-static {v0}, Lio/grpc/Context;->key(Ljava/lang/String;)Lio/grpc/Context$Key;
 
     move-result-object v0
@@ -35,7 +40,7 @@
 .method private constructor <init>()V
     .locals 0
 
-    .line 38
+    .line 40
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -44,7 +49,7 @@
 .method public static getValue(Lio/grpc/Context;)Lio/opencensus/trace/Span;
     .locals 2
 
-    .line 65
+    .line 67
     sget-object v0, Lio/opencensus/trace/unsafe/ContextUtils;->CONTEXT_SPAN_KEY:Lio/grpc/Context$Key;
 
     const-string v1, "context"
@@ -63,7 +68,7 @@
 
     if-nez p0, :cond_0
 
-    .line 66
+    .line 68
     sget-object p0, Lio/opencensus/trace/BlankSpan;->INSTANCE:Lio/opencensus/trace/BlankSpan;
 
     :cond_0
@@ -77,7 +82,7 @@
         .end annotation
     .end param
 
-    .line 53
+    .line 55
     const-string v0, "context"
 
     invoke-static {p0, v0}, Lio/opencensus/internal/Utils;->checkNotNull(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;

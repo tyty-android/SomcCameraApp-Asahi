@@ -257,7 +257,7 @@
 .end method
 
 .method public getSummary()Ljava/lang/CharSequence;
-    .locals 4
+    .locals 2
 
     .line 165
     invoke-virtual {p0}, Landroidx/preference/ListPreference;->getSummaryProvider()Landroidx/preference/Preference$SummaryProvider;
@@ -296,21 +296,17 @@
     return-object v1
 
     :cond_1
-    const/4 v2, 0x1
-
-    .line 173
-    new-array v2, v2, [Ljava/lang/Object;
-
     if-nez v0, :cond_2
 
+    .line 173
     const-string v0, ""
 
     :cond_2
-    const/4 v3, 0x0
+    filled-new-array {v0}, [Ljava/lang/Object;
 
-    aput-object v0, v2, v3
+    move-result-object v0
 
-    invoke-static {p0, v2}, Ljava/lang/String;->format(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
+    invoke-static {p0, v0}, Ljava/lang/String;->format(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
 
     move-result-object p0
 

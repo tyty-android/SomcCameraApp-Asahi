@@ -53,7 +53,7 @@
     f = "Slider.kt"
     i = {}
     l = {
-        0x3d8
+        0x3dc
     }
     m = "invokeSuspend"
     n = {}
@@ -278,7 +278,7 @@
 
     move-result-object v0
 
-    .line 983
+    .line 987
     iget v1, p0, Landroidx/compose/material/SliderKt$rangeSliderPressDragModifier$1$1;->label:I
 
     const/4 v2, 0x1
@@ -309,7 +309,7 @@
 
     check-cast v8, Lkotlinx/coroutines/CoroutineScope;
 
-    .line 984
+    .line 988
     iget-object p1, p0, Landroidx/compose/material/SliderKt$rangeSliderPressDragModifier$1$1;->$$this$pointerInput:Landroidx/compose/ui/input/pointer/PointerInputScope;
 
     new-instance v1, Landroidx/compose/material/SliderKt$rangeSliderPressDragModifier$1$1$1;
@@ -350,7 +350,7 @@
 
     return-object v0
 
-    .line 1034
+    .line 1038
     :cond_2
     :goto_0
     sget-object p0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;

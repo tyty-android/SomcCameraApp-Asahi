@@ -21,7 +21,7 @@
 .method constructor <init>()V
     .locals 0
 
-    .line 479
+    .line 482
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -42,10 +42,10 @@
         }
     .end annotation
 
-    .line 482
+    .line 485
     check-cast p1, Ljp/co/sony/mc/camera/setting/CommonSettings;
 
-    .line 483
+    .line 486
     invoke-static {p1}, Ljp/co/sony/mc/camera/setting/CommonSettings;->-$$Nest$mgetStreamingPrivacyPolicy(Ljp/co/sony/mc/camera/setting/CommonSettings;)Ljp/co/sony/mc/camera/configuration/parameters/StreamingPrivacyPolicy;
 
     move-result-object p0

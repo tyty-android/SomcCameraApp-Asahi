@@ -55,7 +55,7 @@
         0x0
     }
     l = {
-        0x158
+        0x15b
     }
     m = "invokeSuspend"
     n = {
@@ -190,7 +190,7 @@
 
     move-result-object v0
 
-    .line 342
+    .line 345
     iget v1, p0, Landroidx/compose/ui/input/pointer/PointerInteropFilter_androidKt$motionEventSpy$1$1;->label:I
 
     const/4 v2, 0x1
@@ -225,7 +225,7 @@
 
     move-object v1, p1
 
-    .line 344
+    .line 347
     :cond_2
     :goto_0
     sget-object p1, Landroidx/compose/ui/input/pointer/PointerEventPass;->Initial:Landroidx/compose/ui/input/pointer/PointerEventPass;
@@ -246,12 +246,12 @@
 
     return-object v0
 
-    .line 342
+    .line 345
     :cond_3
     :goto_1
     check-cast p1, Landroidx/compose/ui/input/pointer/PointerEvent;
 
-    .line 345
+    .line 348
     invoke-virtual {p1}, Landroidx/compose/ui/input/pointer/PointerEvent;->getMotionEvent$ui_release()Landroid/view/MotionEvent;
 
     move-result-object p1

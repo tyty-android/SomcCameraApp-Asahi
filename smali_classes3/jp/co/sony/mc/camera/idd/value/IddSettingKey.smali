@@ -20,11 +20,12 @@
 
 .annotation runtime Lkotlin/Metadata;
     d1 = {
-        "\u0000\u000c\n\u0002\u0018\u0002\n\u0002\u0010\u0010\n\u0002\u0008S\u0008\u0086\u0081\u0002\u0018\u0000 S2\u0008\u0012\u0004\u0012\u00020\u00000\u0001:\u0001SB\u0007\u0008\u0002\u00a2\u0006\u0002\u0010\u0002j\u0002\u0008\u0003j\u0002\u0008\u0004j\u0002\u0008\u0005j\u0002\u0008\u0006j\u0002\u0008\u0007j\u0002\u0008\u0008j\u0002\u0008\tj\u0002\u0008\nj\u0002\u0008\u000bj\u0002\u0008\u000cj\u0002\u0008\rj\u0002\u0008\u000ej\u0002\u0008\u000fj\u0002\u0008\u0010j\u0002\u0008\u0011j\u0002\u0008\u0012j\u0002\u0008\u0013j\u0002\u0008\u0014j\u0002\u0008\u0015j\u0002\u0008\u0016j\u0002\u0008\u0017j\u0002\u0008\u0018j\u0002\u0008\u0019j\u0002\u0008\u001aj\u0002\u0008\u001bj\u0002\u0008\u001cj\u0002\u0008\u001dj\u0002\u0008\u001ej\u0002\u0008\u001fj\u0002\u0008 j\u0002\u0008!j\u0002\u0008\"j\u0002\u0008#j\u0002\u0008$j\u0002\u0008%j\u0002\u0008&j\u0002\u0008\'j\u0002\u0008(j\u0002\u0008)j\u0002\u0008*j\u0002\u0008+j\u0002\u0008,j\u0002\u0008-j\u0002\u0008.j\u0002\u0008/j\u0002\u00080j\u0002\u00081j\u0002\u00082j\u0002\u00083j\u0002\u00084j\u0002\u00085j\u0002\u00086j\u0002\u00087j\u0002\u00088j\u0002\u00089j\u0002\u0008:j\u0002\u0008;j\u0002\u0008<j\u0002\u0008=j\u0002\u0008>j\u0002\u0008?j\u0002\u0008@j\u0002\u0008Aj\u0002\u0008Bj\u0002\u0008Cj\u0002\u0008Dj\u0002\u0008Ej\u0002\u0008Fj\u0002\u0008Gj\u0002\u0008Hj\u0002\u0008Ij\u0002\u0008Jj\u0002\u0008Kj\u0002\u0008Lj\u0002\u0008Mj\u0002\u0008Nj\u0002\u0008Oj\u0002\u0008Pj\u0002\u0008Qj\u0002\u0008R\u00a8\u0006T"
+        "\u0000\u000c\n\u0002\u0018\u0002\n\u0002\u0010\u0010\n\u0002\u0008\\\u0008\u0086\u0081\u0002\u0018\u0000 \\2\u0008\u0012\u0004\u0012\u00020\u00000\u0001:\u0001\\B\t\u0008\u0002\u00a2\u0006\u0004\u0008\u0002\u0010\u0003j\u0002\u0008\u0004j\u0002\u0008\u0005j\u0002\u0008\u0006j\u0002\u0008\u0007j\u0002\u0008\u0008j\u0002\u0008\tj\u0002\u0008\nj\u0002\u0008\u000bj\u0002\u0008\u000cj\u0002\u0008\rj\u0002\u0008\u000ej\u0002\u0008\u000fj\u0002\u0008\u0010j\u0002\u0008\u0011j\u0002\u0008\u0012j\u0002\u0008\u0013j\u0002\u0008\u0014j\u0002\u0008\u0015j\u0002\u0008\u0016j\u0002\u0008\u0017j\u0002\u0008\u0018j\u0002\u0008\u0019j\u0002\u0008\u001aj\u0002\u0008\u001bj\u0002\u0008\u001cj\u0002\u0008\u001dj\u0002\u0008\u001ej\u0002\u0008\u001fj\u0002\u0008 j\u0002\u0008!j\u0002\u0008\"j\u0002\u0008#j\u0002\u0008$j\u0002\u0008%j\u0002\u0008&j\u0002\u0008\'j\u0002\u0008(j\u0002\u0008)j\u0002\u0008*j\u0002\u0008+j\u0002\u0008,j\u0002\u0008-j\u0002\u0008.j\u0002\u0008/j\u0002\u00080j\u0002\u00081j\u0002\u00082j\u0002\u00083j\u0002\u00084j\u0002\u00085j\u0002\u00086j\u0002\u00087j\u0002\u00088j\u0002\u00089j\u0002\u0008:j\u0002\u0008;j\u0002\u0008<j\u0002\u0008=j\u0002\u0008>j\u0002\u0008?j\u0002\u0008@j\u0002\u0008Aj\u0002\u0008Bj\u0002\u0008Cj\u0002\u0008Dj\u0002\u0008Ej\u0002\u0008Fj\u0002\u0008Gj\u0002\u0008Hj\u0002\u0008Ij\u0002\u0008Jj\u0002\u0008Kj\u0002\u0008Lj\u0002\u0008Mj\u0002\u0008Nj\u0002\u0008Oj\u0002\u0008Pj\u0002\u0008Qj\u0002\u0008Rj\u0002\u0008Sj\u0002\u0008Tj\u0002\u0008Uj\u0002\u0008Vj\u0002\u0008Wj\u0002\u0008Xj\u0002\u0008Yj\u0002\u0008Zj\u0002\u0008[\u00a8\u0006]"
     }
     d2 = {
         "Ljp/co/sony/mc/camera/idd/value/IddSettingKey;",
         "",
+        "<init>",
         "(Ljava/lang/String;I)V",
         "ACCESSARY_FLIP",
         "AEL",
@@ -106,13 +107,21 @@
         "TOUCH_TRACKING",
         "VIDEO_BACKLIGHT_COLLECTION",
         "MANUAL_FOCUS",
+        "AUTO_FRAMING_ORIENTATION",
+        "AFR_SHORTCUT",
+        "FRAMING_ASSIST",
+        "FRAMING_ASSIST_METHOD",
+        "LEVEL_METER",
+        "SAVE_FULL_SCREEN_VIDEO",
+        "ULTRA_HDR",
+        "VOLUME_DISTORTION_CORRECTION",
         "Companion",
         "SomcCamera_release"
     }
     k = 0x1
     mv = {
-        0x1,
-        0x9,
+        0x2,
+        0x0,
         0x0
     }
     xi = 0x30
@@ -130,6 +139,8 @@
 
 .field public static final enum AEL:Ljp/co/sony/mc/camera/idd/value/IddSettingKey;
 
+.field public static final enum AFR_SHORTCUT:Ljp/co/sony/mc/camera/idd/value/IddSettingKey;
+
 .field public static final enum AF_ON:Ljp/co/sony/mc/camera/idd/value/IddSettingKey;
 
 .field public static final enum AMBER_BLUE:Ljp/co/sony/mc/camera/idd/value/IddSettingKey;
@@ -139,6 +150,8 @@
 .field public static final enum ASPECT_RATIO:Ljp/co/sony/mc/camera/idd/value/IddSettingKey;
 
 .field public static final enum AUDIO_SIGNALS:Ljp/co/sony/mc/camera/idd/value/IddSettingKey;
+
+.field public static final enum AUTO_FRAMING_ORIENTATION:Ljp/co/sony/mc/camera/idd/value/IddSettingKey;
 
 .field public static final enum BOKEH:Ljp/co/sony/mc/camera/idd/value/IddSettingKey;
 
@@ -182,6 +195,10 @@
 
 .field public static final enum FOCUS_UI:Ljp/co/sony/mc/camera/idd/value/IddSettingKey;
 
+.field public static final enum FRAMING_ASSIST:Ljp/co/sony/mc/camera/idd/value/IddSettingKey;
+
+.field public static final enum FRAMING_ASSIST_METHOD:Ljp/co/sony/mc/camera/idd/value/IddSettingKey;
+
 .field public static final enum GEO_TAG:Ljp/co/sony/mc/camera/idd/value/IddSettingKey;
 
 .field public static final enum GRID_LINE:Ljp/co/sony/mc/camera/idd/value/IddSettingKey;
@@ -205,6 +222,8 @@
 .field public static final enum LENS_CORRECTION:Ljp/co/sony/mc/camera/idd/value/IddSettingKey;
 
 .field public static final enum LEVEL_CALIBRATION:Ljp/co/sony/mc/camera/idd/value/IddSettingKey;
+
+.field public static final enum LEVEL_METER:Ljp/co/sony/mc/camera/idd/value/IddSettingKey;
 
 .field public static final enum LOCK:Ljp/co/sony/mc/camera/idd/value/IddSettingKey;
 
@@ -240,6 +259,8 @@
 
 .field public static final enum RESOLUTION:Ljp/co/sony/mc/camera/idd/value/IddSettingKey;
 
+.field public static final enum SAVE_FULL_SCREEN_VIDEO:Ljp/co/sony/mc/camera/idd/value/IddSettingKey;
+
 .field public static final enum SELF_TIMER:Ljp/co/sony/mc/camera/idd/value/IddSettingKey;
 
 .field public static final enum SHARPEN_FACES:Ljp/co/sony/mc/camera/idd/value/IddSettingKey;
@@ -266,6 +287,8 @@
 
 .field public static final enum TOUCH_TRACKING:Ljp/co/sony/mc/camera/idd/value/IddSettingKey;
 
+.field public static final enum ULTRA_HDR:Ljp/co/sony/mc/camera/idd/value/IddSettingKey;
+
 .field public static final enum VIDEO_BACKLIGHT_COLLECTION:Ljp/co/sony/mc/camera/idd/value/IddSettingKey;
 
 .field public static final enum VIDEO_FPS:Ljp/co/sony/mc/camera/idd/value/IddSettingKey;
@@ -278,6 +301,8 @@
 
 .field public static final enum VIDEO_STABILIZER:Ljp/co/sony/mc/camera/idd/value/IddSettingKey;
 
+.field public static final enum VOLUME_DISTORTION_CORRECTION:Ljp/co/sony/mc/camera/idd/value/IddSettingKey;
+
 .field public static final enum VOLUME_KEY:Ljp/co/sony/mc/camera/idd/value/IddSettingKey;
 
 .field public static final enum WHITE_BALANCE:Ljp/co/sony/mc/camera/idd/value/IddSettingKey;
@@ -289,7 +314,7 @@
 
 # direct methods
 .method private static final synthetic $values()[Ljp/co/sony/mc/camera/idd/value/IddSettingKey;
-    .locals 80
+    .locals 88
 
     sget-object v0, Ljp/co/sony/mc/camera/idd/value/IddSettingKey;->ACCESSARY_FLIP:Ljp/co/sony/mc/camera/idd/value/IddSettingKey;
 
@@ -451,7 +476,23 @@
 
     sget-object v79, Ljp/co/sony/mc/camera/idd/value/IddSettingKey;->MANUAL_FOCUS:Ljp/co/sony/mc/camera/idd/value/IddSettingKey;
 
-    filled-new-array/range {v0 .. v79}, [Ljp/co/sony/mc/camera/idd/value/IddSettingKey;
+    sget-object v80, Ljp/co/sony/mc/camera/idd/value/IddSettingKey;->AUTO_FRAMING_ORIENTATION:Ljp/co/sony/mc/camera/idd/value/IddSettingKey;
+
+    sget-object v81, Ljp/co/sony/mc/camera/idd/value/IddSettingKey;->AFR_SHORTCUT:Ljp/co/sony/mc/camera/idd/value/IddSettingKey;
+
+    sget-object v82, Ljp/co/sony/mc/camera/idd/value/IddSettingKey;->FRAMING_ASSIST:Ljp/co/sony/mc/camera/idd/value/IddSettingKey;
+
+    sget-object v83, Ljp/co/sony/mc/camera/idd/value/IddSettingKey;->FRAMING_ASSIST_METHOD:Ljp/co/sony/mc/camera/idd/value/IddSettingKey;
+
+    sget-object v84, Ljp/co/sony/mc/camera/idd/value/IddSettingKey;->LEVEL_METER:Ljp/co/sony/mc/camera/idd/value/IddSettingKey;
+
+    sget-object v85, Ljp/co/sony/mc/camera/idd/value/IddSettingKey;->SAVE_FULL_SCREEN_VIDEO:Ljp/co/sony/mc/camera/idd/value/IddSettingKey;
+
+    sget-object v86, Ljp/co/sony/mc/camera/idd/value/IddSettingKey;->ULTRA_HDR:Ljp/co/sony/mc/camera/idd/value/IddSettingKey;
+
+    sget-object v87, Ljp/co/sony/mc/camera/idd/value/IddSettingKey;->VOLUME_DISTORTION_CORRECTION:Ljp/co/sony/mc/camera/idd/value/IddSettingKey;
+
+    filled-new-array/range {v0 .. v87}, [Ljp/co/sony/mc/camera/idd/value/IddSettingKey;
 
     move-result-object v0
 
@@ -1341,6 +1382,94 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/idd/value/IddSettingKey;->MANUAL_FOCUS:Ljp/co/sony/mc/camera/idd/value/IddSettingKey;
 
+    .line 92
+    new-instance v0, Ljp/co/sony/mc/camera/idd/value/IddSettingKey;
+
+    const-string v1, "AUTO_FRAMING_ORIENTATION"
+
+    const/16 v2, 0x50
+
+    invoke-direct {v0, v1, v2}, Ljp/co/sony/mc/camera/idd/value/IddSettingKey;-><init>(Ljava/lang/String;I)V
+
+    sput-object v0, Ljp/co/sony/mc/camera/idd/value/IddSettingKey;->AUTO_FRAMING_ORIENTATION:Ljp/co/sony/mc/camera/idd/value/IddSettingKey;
+
+    .line 93
+    new-instance v0, Ljp/co/sony/mc/camera/idd/value/IddSettingKey;
+
+    const-string v1, "AFR_SHORTCUT"
+
+    const/16 v2, 0x51
+
+    invoke-direct {v0, v1, v2}, Ljp/co/sony/mc/camera/idd/value/IddSettingKey;-><init>(Ljava/lang/String;I)V
+
+    sput-object v0, Ljp/co/sony/mc/camera/idd/value/IddSettingKey;->AFR_SHORTCUT:Ljp/co/sony/mc/camera/idd/value/IddSettingKey;
+
+    .line 94
+    new-instance v0, Ljp/co/sony/mc/camera/idd/value/IddSettingKey;
+
+    const-string v1, "FRAMING_ASSIST"
+
+    const/16 v2, 0x52
+
+    invoke-direct {v0, v1, v2}, Ljp/co/sony/mc/camera/idd/value/IddSettingKey;-><init>(Ljava/lang/String;I)V
+
+    sput-object v0, Ljp/co/sony/mc/camera/idd/value/IddSettingKey;->FRAMING_ASSIST:Ljp/co/sony/mc/camera/idd/value/IddSettingKey;
+
+    .line 95
+    new-instance v0, Ljp/co/sony/mc/camera/idd/value/IddSettingKey;
+
+    const-string v1, "FRAMING_ASSIST_METHOD"
+
+    const/16 v2, 0x53
+
+    invoke-direct {v0, v1, v2}, Ljp/co/sony/mc/camera/idd/value/IddSettingKey;-><init>(Ljava/lang/String;I)V
+
+    sput-object v0, Ljp/co/sony/mc/camera/idd/value/IddSettingKey;->FRAMING_ASSIST_METHOD:Ljp/co/sony/mc/camera/idd/value/IddSettingKey;
+
+    .line 96
+    new-instance v0, Ljp/co/sony/mc/camera/idd/value/IddSettingKey;
+
+    const-string v1, "LEVEL_METER"
+
+    const/16 v2, 0x54
+
+    invoke-direct {v0, v1, v2}, Ljp/co/sony/mc/camera/idd/value/IddSettingKey;-><init>(Ljava/lang/String;I)V
+
+    sput-object v0, Ljp/co/sony/mc/camera/idd/value/IddSettingKey;->LEVEL_METER:Ljp/co/sony/mc/camera/idd/value/IddSettingKey;
+
+    .line 97
+    new-instance v0, Ljp/co/sony/mc/camera/idd/value/IddSettingKey;
+
+    const-string v1, "SAVE_FULL_SCREEN_VIDEO"
+
+    const/16 v2, 0x55
+
+    invoke-direct {v0, v1, v2}, Ljp/co/sony/mc/camera/idd/value/IddSettingKey;-><init>(Ljava/lang/String;I)V
+
+    sput-object v0, Ljp/co/sony/mc/camera/idd/value/IddSettingKey;->SAVE_FULL_SCREEN_VIDEO:Ljp/co/sony/mc/camera/idd/value/IddSettingKey;
+
+    .line 98
+    new-instance v0, Ljp/co/sony/mc/camera/idd/value/IddSettingKey;
+
+    const-string v1, "ULTRA_HDR"
+
+    const/16 v2, 0x56
+
+    invoke-direct {v0, v1, v2}, Ljp/co/sony/mc/camera/idd/value/IddSettingKey;-><init>(Ljava/lang/String;I)V
+
+    sput-object v0, Ljp/co/sony/mc/camera/idd/value/IddSettingKey;->ULTRA_HDR:Ljp/co/sony/mc/camera/idd/value/IddSettingKey;
+
+    .line 99
+    new-instance v0, Ljp/co/sony/mc/camera/idd/value/IddSettingKey;
+
+    const-string v1, "VOLUME_DISTORTION_CORRECTION"
+
+    const/16 v2, 0x57
+
+    invoke-direct {v0, v1, v2}, Ljp/co/sony/mc/camera/idd/value/IddSettingKey;-><init>(Ljava/lang/String;I)V
+
+    sput-object v0, Ljp/co/sony/mc/camera/idd/value/IddSettingKey;->VOLUME_DISTORTION_CORRECTION:Ljp/co/sony/mc/camera/idd/value/IddSettingKey;
+
     invoke-static {}, Ljp/co/sony/mc/camera/idd/value/IddSettingKey;->$values()[Ljp/co/sony/mc/camera/idd/value/IddSettingKey;
 
     move-result-object v0
@@ -1405,6 +1534,7 @@
 
     move-result-object p0
 
+    .line 191
     check-cast p0, Ljp/co/sony/mc/camera/idd/value/IddSettingKey;
 
     return-object p0
@@ -1415,10 +1545,11 @@
 
     sget-object v0, Ljp/co/sony/mc/camera/idd/value/IddSettingKey;->$VALUES:[Ljp/co/sony/mc/camera/idd/value/IddSettingKey;
 
-    invoke-virtual {v0}, [Ljava/lang/Object;->clone()Ljava/lang/Object;
+    invoke-virtual {v0}, Ljava/lang/Object;->clone()Ljava/lang/Object;
 
     move-result-object v0
 
+    .line 191
     check-cast v0, [Ljp/co/sony/mc/camera/idd/value/IddSettingKey;
 
     return-object v0

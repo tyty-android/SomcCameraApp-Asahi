@@ -30,7 +30,7 @@
     .line 0
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/FragmentController$$ExternalSyntheticLambda1;->f$0:Ljp/co/sony/mc/camera/view/FragmentController;
 
-    invoke-static {p0}, Ljp/co/sony/mc/camera/view/FragmentController;->$r8$lambda$Z4uNBuxvMtMs_SCkGBpCPAn2rHU(Ljp/co/sony/mc/camera/view/FragmentController;)V
+    invoke-static {p0}, Ljp/co/sony/mc/camera/view/FragmentController;->$r8$lambda$dw01J8SUwWrWey6eTZz-jcwrpls(Ljp/co/sony/mc/camera/view/FragmentController;)V
 
     return-void
 .end method

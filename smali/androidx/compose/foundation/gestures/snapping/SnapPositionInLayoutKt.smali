@@ -6,12 +6,11 @@
 # annotations
 .annotation runtime Lkotlin/Metadata;
     d1 = {
-        "\u0000\u001a\n\u0000\n\u0002\u0010\u0007\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0008\n\u0002\u0008\u0006\n\u0002\u0018\u0002\n\u0000\u001aD\u0010\u0000\u001a\u00020\u0001*\u00020\u00022\u0006\u0010\u0003\u001a\u00020\u00042\u0006\u0010\u0005\u001a\u00020\u00042\u0006\u0010\u0006\u001a\u00020\u00042\u0006\u0010\u0007\u001a\u00020\u00042\u0006\u0010\u0008\u001a\u00020\u00042\u0006\u0010\t\u001a\u00020\u00042\u0006\u0010\n\u001a\u00020\u000bH\u0000\u00a8\u0006\u000c"
+        "\u0000\u0016\n\u0000\n\u0002\u0010\u0007\n\u0000\n\u0002\u0010\u0008\n\u0002\u0008\u0006\n\u0002\u0018\u0002\n\u0000\u001a@\u0010\u0000\u001a\u00020\u00012\u0006\u0010\u0002\u001a\u00020\u00032\u0006\u0010\u0004\u001a\u00020\u00032\u0006\u0010\u0005\u001a\u00020\u00032\u0006\u0010\u0006\u001a\u00020\u00032\u0006\u0010\u0007\u001a\u00020\u00032\u0006\u0010\u0008\u001a\u00020\u00032\u0006\u0010\t\u001a\u00020\nH\u0000\u00a8\u0006\u000b"
     }
     d2 = {
         "calculateDistanceToDesiredSnapPosition",
         "",
-        "Landroidx/compose/ui/unit/Density;",
         "mainAxisViewPortSize",
         "",
         "beforeContentPadding",
@@ -34,29 +33,29 @@
 
 
 # direct methods
-.method public static final calculateDistanceToDesiredSnapPosition(Landroidx/compose/ui/unit/Density;IIIIIILandroidx/compose/foundation/gestures/snapping/SnapPositionInLayout;)F
-    .locals 1
+.method public static final calculateDistanceToDesiredSnapPosition(IIIIIILandroidx/compose/foundation/gestures/snapping/SnapPositionInLayout;)F
+    .locals 6
 
-    const-string v0, "<this>"
+    move-object v0, p6
 
-    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+    move v1, p0
 
-    const-string/jumbo v0, "snapPositionInLayout"
+    move v2, p3
 
-    invoke-static {p7, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+    move v3, p1
 
-    sub-int/2addr p1, p2
+    move v4, p2
 
-    sub-int/2addr p1, p3
+    move v5, p5
 
-    .line 57
-    invoke-interface {p7, p0, p1, p4, p6}, Landroidx/compose/foundation/gestures/snapping/SnapPositionInLayout;->position(Landroidx/compose/ui/unit/Density;III)I
+    .line 73
+    invoke-interface/range {v0 .. v5}, Landroidx/compose/foundation/gestures/snapping/SnapPositionInLayout;->position(IIIII)I
 
     move-result p0
 
     int-to-float p0, p0
 
-    int-to-float p1, p5
+    int-to-float p1, p4
 
     sub-float/2addr p1, p0
 

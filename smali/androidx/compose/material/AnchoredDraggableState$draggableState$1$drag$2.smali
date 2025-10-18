@@ -21,10 +21,8 @@
         "Lkotlin/coroutines/jvm/internal/SuspendLambda;",
         "Lkotlin/jvm/functions/Function3<",
         "Landroidx/compose/material/AnchoredDragScope;",
-        "Ljava/util/Map<",
-        "TT;+",
-        "Ljava/lang/Float;",
-        ">;",
+        "Landroidx/compose/material/DraggableAnchors<",
+        "TT;>;",
         "Lkotlin/coroutines/Continuation<",
         "-",
         "Lkotlin/Unit;",
@@ -35,12 +33,12 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/SourceDebugExtension;
-    value = "SMAP\nAnchoredDraggable.kt\nKotlin\n*S Kotlin\n*F\n+ 1 AnchoredDraggable.kt\nandroidx/compose/material/AnchoredDraggableState$draggableState$1$drag$2\n+ 2 fake.kt\nkotlin/jvm/internal/FakeKt\n*L\n1#1,710:1\n1#2:711\n*E\n"
+    value = "SMAP\nAnchoredDraggable.kt\nKotlin\n*S Kotlin\n*F\n+ 1 AnchoredDraggable.kt\nandroidx/compose/material/AnchoredDraggableState$draggableState$1$drag$2\n+ 2 fake.kt\nkotlin/jvm/internal/FakeKt\n*L\n1#1,791:1\n1#2:792\n*E\n"
 .end annotation
 
 .annotation runtime Lkotlin/Metadata;
     d1 = {
-        "\u0000\u0016\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010$\n\u0002\u0010\u0007\u0010\u0000\u001a\u00020\u0001\"\u0004\u0008\u0000\u0010\u0002*\u00020\u00032\u0012\u0010\u0004\u001a\u000e\u0012\u0004\u0012\u0002H\u0002\u0012\u0004\u0012\u00020\u00060\u0005H\u008a@"
+        "\u0000\u0012\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\u0010\u0000\u001a\u00020\u0001\"\u0004\u0008\u0000\u0010\u0002*\u00020\u00032\u000c\u0010\u0004\u001a\u0008\u0012\u0004\u0012\u0002H\u00020\u0005H\u008a@"
     }
     d2 = {
         "<anonymous>",
@@ -48,8 +46,7 @@
         "T",
         "Landroidx/compose/material/AnchoredDragScope;",
         "it",
-        "",
-        ""
+        "Landroidx/compose/material/DraggableAnchors;"
     }
     k = 0x3
     mv = {
@@ -65,7 +62,7 @@
     f = "AnchoredDraggable.kt"
     i = {}
     l = {
-        0x96
+        0x11a
     }
     m = "invokeSuspend"
     n = {}
@@ -139,16 +136,14 @@
 
 
 # virtual methods
-.method public final invoke(Landroidx/compose/material/AnchoredDragScope;Ljava/util/Map;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+.method public final invoke(Landroidx/compose/material/AnchoredDragScope;Landroidx/compose/material/DraggableAnchors;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
             "Landroidx/compose/material/AnchoredDragScope;",
-            "Ljava/util/Map<",
-            "TT;",
-            "Ljava/lang/Float;",
-            ">;",
+            "Landroidx/compose/material/DraggableAnchors<",
+            "TT;>;",
             "Lkotlin/coroutines/Continuation<",
             "-",
             "Lkotlin/Unit;",
@@ -179,11 +174,11 @@
 
     check-cast p1, Landroidx/compose/material/AnchoredDragScope;
 
-    check-cast p2, Ljava/util/Map;
+    check-cast p2, Landroidx/compose/material/DraggableAnchors;
 
     check-cast p3, Lkotlin/coroutines/Continuation;
 
-    invoke-virtual {p0, p1, p2, p3}, Landroidx/compose/material/AnchoredDraggableState$draggableState$1$drag$2;->invoke(Landroidx/compose/material/AnchoredDragScope;Ljava/util/Map;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+    invoke-virtual {p0, p1, p2, p3}, Landroidx/compose/material/AnchoredDraggableState$draggableState$1$drag$2;->invoke(Landroidx/compose/material/AnchoredDragScope;Landroidx/compose/material/DraggableAnchors;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
 
     move-result-object p0
 
@@ -197,7 +192,7 @@
 
     move-result-object v0
 
-    .line 149
+    .line 281
     iget v1, p0, Landroidx/compose/material/AnchoredDraggableState$draggableState$1$drag$2;->label:I
 
     const/4 v2, 0x1
@@ -222,7 +217,7 @@
     :cond_1
     invoke-static {p1}, Lkotlin/ResultKt;->throwOnFailure(Ljava/lang/Object;)V
 
-    .line 150
+    .line 282
     iget-object p1, p0, Landroidx/compose/material/AnchoredDraggableState$draggableState$1$drag$2;->this$0:Landroidx/compose/material/AnchoredDraggableState$draggableState$1;
 
     invoke-static {p1}, Landroidx/compose/material/AnchoredDraggableState$draggableState$1;->access$getDragScope$p(Landroidx/compose/material/AnchoredDraggableState$draggableState$1;)Landroidx/compose/material/AnchoredDraggableState$draggableState$1$dragScope$1;
@@ -241,7 +236,7 @@
 
     return-object v0
 
-    .line 151
+    .line 283
     :cond_2
     :goto_0
     sget-object p0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;

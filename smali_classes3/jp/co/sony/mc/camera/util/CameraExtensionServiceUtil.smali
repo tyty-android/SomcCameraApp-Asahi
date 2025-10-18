@@ -286,11 +286,13 @@
 
     if-eqz p0, :cond_1
 
-    const-string p0, "bind Camera extension service succeed"
+    new-array p0, v1, [Ljava/lang/String;
 
-    filled-new-array {p0}, [Ljava/lang/String;
+    const/4 v0, 0x0
 
-    move-result-object p0
+    const-string v1, "bind Camera extension service succeed"
+
+    aput-object v1, p0, v0
 
     invoke-static {p0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
@@ -308,7 +310,7 @@
 .end method
 
 .method private stopService()V
-    .locals 2
+    .locals 4
 
     .line 72
     iget-boolean v0, p0, Ljp/co/sony/mc/camera/util/CameraExtensionServiceUtil;->mShouldUnbind:Z
@@ -323,26 +325,28 @@
     .line 74
     invoke-static {}, Ljp/co/sony/mc/camera/CameraApplication;->getContext()Landroid/content/Context;
 
-    move-result-object v0
-
-    .line 75
-    sget-boolean v1, Ljp/co/sony/mc/camera/util/CamLog;->DEBUG:Z
-
-    if-eqz v1, :cond_0
-
-    const-string/jumbo v1, "unbindService Camera extension service"
-
-    filled-new-array {v1}, [Ljava/lang/String;
-
     move-result-object v1
 
-    invoke-static {v1}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
+    .line 75
+    sget-boolean v2, Ljp/co/sony/mc/camera/util/CamLog;->DEBUG:Z
+
+    if-eqz v2, :cond_0
+
+    const/4 v2, 0x1
+
+    new-array v2, v2, [Ljava/lang/String;
+
+    const-string/jumbo v3, "unbindService Camera extension service"
+
+    aput-object v3, v2, v0
+
+    invoke-static {v2}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
     .line 76
     :cond_0
-    iget-object v1, p0, Ljp/co/sony/mc/camera/util/CameraExtensionServiceUtil;->mServiceConnection:Ljp/co/sony/mc/camera/util/CameraExtensionServiceUtil$ServiceConnectionCallback;
+    iget-object v0, p0, Ljp/co/sony/mc/camera/util/CameraExtensionServiceUtil;->mServiceConnection:Ljp/co/sony/mc/camera/util/CameraExtensionServiceUtil$ServiceConnectionCallback;
 
-    invoke-virtual {v0, v1}, Landroid/content/Context;->unbindService(Landroid/content/ServiceConnection;)V
+    invoke-virtual {v1, v0}, Landroid/content/Context;->unbindService(Landroid/content/ServiceConnection;)V
 
     const/4 v0, 0x0
 

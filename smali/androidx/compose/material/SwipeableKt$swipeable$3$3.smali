@@ -54,7 +54,7 @@
     f = "Swipeable.kt"
     i = {}
     l = {
-        0x25f
+        0x268
     }
     m = "invokeSuspend"
     n = {}
@@ -236,7 +236,7 @@
 
     move-result-object v0
 
-    .line 65535
+    .line 604
     iget v1, p0, Landroidx/compose/material/SwipeableKt$swipeable$3$3;->label:I
 
     const/4 v2, 0x1
@@ -261,28 +261,28 @@
     :cond_1
     invoke-static {p1}, Lkotlin/ResultKt;->throwOnFailure(Ljava/lang/Object;)V
 
-    .line 596
+    .line 605
     iget-object p1, p0, Landroidx/compose/material/SwipeableKt$swipeable$3$3;->$state:Landroidx/compose/material/SwipeableState;
 
     invoke-virtual {p1}, Landroidx/compose/material/SwipeableState;->getAnchors$material_release()Ljava/util/Map;
 
     move-result-object p1
 
-    .line 597
+    .line 606
     iget-object v1, p0, Landroidx/compose/material/SwipeableKt$swipeable$3$3;->$state:Landroidx/compose/material/SwipeableState;
 
     iget-object v3, p0, Landroidx/compose/material/SwipeableKt$swipeable$3$3;->$anchors:Ljava/util/Map;
 
     invoke-virtual {v1, v3}, Landroidx/compose/material/SwipeableState;->setAnchors$material_release(Ljava/util/Map;)V
 
-    .line 598
+    .line 607
     iget-object v1, p0, Landroidx/compose/material/SwipeableKt$swipeable$3$3;->$state:Landroidx/compose/material/SwipeableState;
 
     iget-object v3, p0, Landroidx/compose/material/SwipeableKt$swipeable$3$3;->$resistance:Landroidx/compose/material/ResistanceConfig;
 
     invoke-virtual {v1, v3}, Landroidx/compose/material/SwipeableState;->setResistance$material_release(Landroidx/compose/material/ResistanceConfig;)V
 
-    .line 599
+    .line 608
     iget-object v1, p0, Landroidx/compose/material/SwipeableKt$swipeable$3$3;->$state:Landroidx/compose/material/SwipeableState;
 
     new-instance v3, Landroidx/compose/material/SwipeableKt$swipeable$3$3$1;
@@ -299,21 +299,21 @@
 
     invoke-virtual {v1, v3}, Landroidx/compose/material/SwipeableState;->setThresholds$material_release(Lkotlin/jvm/functions/Function2;)V
 
-    .line 604
+    .line 613
     iget-object v1, p0, Landroidx/compose/material/SwipeableKt$swipeable$3$3;->$density:Landroidx/compose/ui/unit/Density;
 
     iget-object v3, p0, Landroidx/compose/material/SwipeableKt$swipeable$3$3;->$state:Landroidx/compose/material/SwipeableState;
 
     iget v4, p0, Landroidx/compose/material/SwipeableKt$swipeable$3$3;->$velocityThreshold:F
 
-    .line 605
+    .line 614
     invoke-interface {v1, v4}, Landroidx/compose/ui/unit/Density;->toPx-0680j_4(F)F
 
     move-result v1
 
     invoke-virtual {v3, v1}, Landroidx/compose/material/SwipeableState;->setVelocityThreshold$material_release(F)V
 
-    .line 607
+    .line 616
     iget-object v1, p0, Landroidx/compose/material/SwipeableKt$swipeable$3$3;->$state:Landroidx/compose/material/SwipeableState;
 
     iget-object v3, p0, Landroidx/compose/material/SwipeableKt$swipeable$3$3;->$anchors:Ljava/util/Map;
@@ -332,7 +332,7 @@
 
     return-object v0
 
-    .line 608
+    .line 617
     :cond_2
     :goto_0
     sget-object p0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;

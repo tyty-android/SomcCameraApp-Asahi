@@ -11,10 +11,10 @@
 .method public constructor <init>(Ljava/lang/reflect/Field;)V
     .locals 0
 
-    .line 44
+    .line 43
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 45
+    .line 44
     invoke-static {p1}, Ljava/util/Objects;->requireNonNull(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p1
@@ -40,7 +40,7 @@
         }
     .end annotation
 
-    .line 110
+    .line 117
     iget-object p0, p0, Lcom/google/gson/FieldAttributes;->field:Ljava/lang/reflect/Field;
 
     invoke-virtual {p0, p1}, Ljava/lang/reflect/Field;->getAnnotation(Ljava/lang/Class;)Ljava/lang/annotation/Annotation;
@@ -61,7 +61,7 @@
         }
     .end annotation
 
-    .line 120
+    .line 127
     iget-object p0, p0, Lcom/google/gson/FieldAttributes;->field:Ljava/lang/reflect/Field;
 
     invoke-virtual {p0}, Ljava/lang/reflect/Field;->getAnnotations()[Ljava/lang/annotation/Annotation;
@@ -85,7 +85,7 @@
         }
     .end annotation
 
-    .line 99
+    .line 106
     iget-object p0, p0, Lcom/google/gson/FieldAttributes;->field:Ljava/lang/reflect/Field;
 
     invoke-virtual {p0}, Ljava/lang/reflect/Field;->getType()Ljava/lang/Class;
@@ -98,7 +98,7 @@
 .method public getDeclaredType()Ljava/lang/reflect/Type;
     .locals 0
 
-    .line 79
+    .line 85
     iget-object p0, p0, Lcom/google/gson/FieldAttributes;->field:Ljava/lang/reflect/Field;
 
     invoke-virtual {p0}, Ljava/lang/reflect/Field;->getGenericType()Ljava/lang/reflect/Type;
@@ -118,7 +118,7 @@
         }
     .end annotation
 
-    .line 52
+    .line 53
     iget-object p0, p0, Lcom/google/gson/FieldAttributes;->field:Ljava/lang/reflect/Field;
 
     invoke-virtual {p0}, Ljava/lang/reflect/Field;->getDeclaringClass()Ljava/lang/Class;
@@ -131,7 +131,7 @@
 .method public getName()Ljava/lang/String;
     .locals 0
 
-    .line 59
+    .line 62
     iget-object p0, p0, Lcom/google/gson/FieldAttributes;->field:Ljava/lang/reflect/Field;
 
     invoke-virtual {p0}, Ljava/lang/reflect/Field;->getName()Ljava/lang/String;
@@ -144,7 +144,7 @@
 .method public hasModifier(I)Z
     .locals 0
 
-    .line 134
+    .line 142
     iget-object p0, p0, Lcom/google/gson/FieldAttributes;->field:Ljava/lang/reflect/Field;
 
     invoke-virtual {p0}, Ljava/lang/reflect/Field;->getModifiers()I
@@ -169,7 +169,7 @@
 .method public toString()Ljava/lang/String;
     .locals 0
 
-    .line 139
+    .line 147
     iget-object p0, p0, Lcom/google/gson/FieldAttributes;->field:Ljava/lang/reflect/Field;
 
     invoke-virtual {p0}, Ljava/lang/reflect/Field;->toString()Ljava/lang/String;

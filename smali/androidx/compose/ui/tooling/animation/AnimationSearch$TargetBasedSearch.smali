@@ -1,6 +1,6 @@
 .class public final Landroidx/compose/ui/tooling/animation/AnimationSearch$TargetBasedSearch;
 .super Landroidx/compose/ui/tooling/animation/AnimationSearch$RememberSearch;
-.source "AnimationSearch.kt"
+.source "AnimationSearch.android.kt"
 
 
 # annotations
@@ -70,11 +70,7 @@
         }
     .end annotation
 
-    const-string/jumbo v0, "trackAnimation"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 189
+    .line 209
     const-class v0, Landroidx/compose/animation/core/TargetBasedAnimation;
 
     invoke-static {v0}, Lkotlin/jvm/internal/Reflection;->getOrCreateKotlinClass(Ljava/lang/Class;)Lkotlin/reflect/KClass;

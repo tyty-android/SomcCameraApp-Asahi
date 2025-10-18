@@ -88,7 +88,7 @@
 .method public bridge synthetic invoke(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 2
 
-    .line 435
+    .line 649
     check-cast p1, Ljava/lang/Number;
 
     invoke-virtual {p1}, Ljava/lang/Number;->longValue()J
@@ -105,7 +105,7 @@
 .method public final invoke(J)V
     .locals 1
 
-    .line 439
+    .line 653
     iget-object v0, p0, Landroidx/compose/animation/core/Transition$animateTo$1$1$1;->this$0:Landroidx/compose/animation/core/Transition;
 
     invoke-virtual {v0}, Landroidx/compose/animation/core/Transition;->isSeeking()Z
@@ -114,7 +114,7 @@
 
     if-nez v0, :cond_0
 
-    .line 440
+    .line 654
     iget-object v0, p0, Landroidx/compose/animation/core/Transition$animateTo$1$1$1;->this$0:Landroidx/compose/animation/core/Transition;
 
     iget p0, p0, Landroidx/compose/animation/core/Transition$animateTo$1$1$1;->$durationScale:F

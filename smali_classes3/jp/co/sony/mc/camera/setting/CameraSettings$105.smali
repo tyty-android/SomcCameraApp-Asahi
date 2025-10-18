@@ -21,7 +21,7 @@
 .method constructor <init>()V
     .locals 0
 
-    .line 1402
+    .line 1458
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -46,13 +46,13 @@
         }
     .end annotation
 
-    .line 1406
+    .line 1462
     check-cast p1, Ljp/co/sony/mc/camera/setting/CameraSettings;
 
-    .line 1407
-    check-cast p3, Ljp/co/sony/mc/camera/configuration/parameters/ExtendFps;
+    .line 1463
+    check-cast p3, Ljp/co/sony/mc/camera/configuration/parameters/HandShutter;
 
-    invoke-static {p1, p3}, Ljp/co/sony/mc/camera/setting/CameraSettings;->-$$Nest$msetExtendFps(Ljp/co/sony/mc/camera/setting/CameraSettings;Ljp/co/sony/mc/camera/configuration/parameters/ExtendFps;)Z
+    invoke-static {p1, p3}, Ljp/co/sony/mc/camera/setting/CameraSettings;->-$$Nest$msetHandShutter(Ljp/co/sony/mc/camera/setting/CameraSettings;Ljp/co/sony/mc/camera/configuration/parameters/HandShutter;)Z
 
     move-result p0
 

@@ -32,8 +32,8 @@
     }
     k = 0x1
     mv = {
-        0x1,
-        0x9,
+        0x2,
+        0x0,
         0x0
     }
     xi = 0x30
@@ -71,7 +71,7 @@
 
     iput-object p2, p0, Ljp/co/sony/mc/camera/util/AccessibilityUtil$watchFocused$1$1;->$onFocused:Lkotlin/jvm/functions/Function0;
 
-    .line 58
+    .line 82
     invoke-direct {p0}, Landroid/view/View$AccessibilityDelegate;-><init>()V
 
     return-void
@@ -94,7 +94,7 @@
 
     invoke-static {p3, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 64
+    .line 88
     invoke-virtual {p3}, Landroid/view/accessibility/AccessibilityEvent;->getEventType()I
 
     move-result v0
@@ -103,19 +103,19 @@
 
     if-ne v0, v1, :cond_0
 
-    .line 66
+    .line 90
     iget-object v0, p0, Ljp/co/sony/mc/camera/util/AccessibilityUtil$watchFocused$1$1;->$it:Landroid/view/View;
 
     const/4 v1, 0x0
 
     invoke-virtual {v0, v1}, Landroid/view/View;->setAccessibilityDelegate(Landroid/view/View$AccessibilityDelegate;)V
 
-    .line 69
+    .line 93
     iget-object v0, p0, Ljp/co/sony/mc/camera/util/AccessibilityUtil$watchFocused$1$1;->$onFocused:Lkotlin/jvm/functions/Function0;
 
     invoke-interface {v0}, Lkotlin/jvm/functions/Function0;->invoke()Ljava/lang/Object;
 
-    .line 71
+    .line 95
     :cond_0
     invoke-super {p0, p1, p2, p3}, Landroid/view/View$AccessibilityDelegate;->onRequestSendAccessibilityEvent(Landroid/view/ViewGroup;Landroid/view/View;Landroid/view/accessibility/AccessibilityEvent;)Z
 

@@ -17,7 +17,7 @@
 
 # direct methods
 .method static constructor <clinit>()V
-    .locals 6
+    .locals 7
 
     .line 15
     new-instance v0, Landroidx/databinding/ViewDataBinding$IncludedLayouts;
@@ -28,40 +28,50 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/databinding/FragmentStreamingModeQuickSettingBindingImpl;->sIncludes:Landroidx/databinding/ViewDataBinding$IncludedLayouts;
 
-    .line 16
-    const-string v1, "fragment_streaming_mode_youtube"
+    const/4 v1, 0x3
 
-    const-string v2, "fragment_streaming_mode_rtmp"
+    .line 16
+    new-array v1, v1, [Ljava/lang/String;
+
+    const/4 v2, 0x0
 
     const-string v3, "fragment_streaming_mode_video_quality"
 
-    filled-new-array {v3, v1, v2}, [Ljava/lang/String;
+    aput-object v3, v1, v2
 
-    move-result-object v1
+    const/4 v2, 0x1
 
-    const/4 v2, 0x6
+    const-string v3, "fragment_streaming_mode_youtube"
 
-    const/4 v3, 0x7
+    aput-object v3, v1, v2
 
-    const/4 v4, 0x5
+    const-string v2, "fragment_streaming_mode_rtmp"
 
-    filled-new-array {v4, v2, v3}, [I
+    const/4 v3, 0x2
+
+    aput-object v2, v1, v3
+
+    const/4 v2, 0x7
+
+    const/16 v4, 0x8
+
+    const/4 v5, 0x6
+
+    filled-new-array {v5, v2, v4}, [I
 
     move-result-object v2
 
-    const v3, 0x7f0c00c2
+    const v4, 0x7f0c00c2
 
-    const v4, 0x7f0c00c0
+    const v5, 0x7f0c00c0
 
-    const v5, 0x7f0c00c1
+    const v6, 0x7f0c00c1
 
-    filled-new-array {v5, v3, v4}, [I
+    filled-new-array {v6, v4, v5}, [I
 
-    move-result-object v3
+    move-result-object v4
 
-    const/4 v4, 0x2
-
-    invoke-virtual {v0, v4, v1, v2, v3}, Landroidx/databinding/ViewDataBinding$IncludedLayouts;->setIncludes(I[Ljava/lang/String;[I[I)V
+    invoke-virtual {v0, v3, v1, v2, v4}, Landroidx/databinding/ViewDataBinding$IncludedLayouts;->setIncludes(I[Ljava/lang/String;[I[I)V
 
     .line 22
     new-instance v0, Landroid/util/SparseIntArray;
@@ -70,32 +80,25 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/databinding/FragmentStreamingModeQuickSettingBindingImpl;->sViewsWithIds:Landroid/util/SparseIntArray;
 
-    const v1, 0x7f09012d
-
-    const/16 v2, 0x8
-
-    .line 23
-    invoke-virtual {v0, v1, v2}, Landroid/util/SparseIntArray;->put(II)V
-
-    const v1, 0x7f090338
+    const v1, 0x7f090337
 
     const/16 v2, 0x9
 
-    .line 24
+    .line 23
     invoke-virtual {v0, v1, v2}, Landroid/util/SparseIntArray;->put(II)V
 
     const v1, 0x7f09012c
 
     const/16 v2, 0xa
 
-    .line 25
+    .line 24
     invoke-virtual {v0, v1, v2}, Landroid/util/SparseIntArray;->put(II)V
 
-    const v1, 0x7f0900f7
+    const v1, 0x7f0900f4
 
     const/16 v2, 0xb
 
-    .line 26
+    .line 25
     invoke-virtual {v0, v1, v2}, Landroid/util/SparseIntArray;->put(II)V
 
     return-void
@@ -104,7 +107,7 @@
 .method public constructor <init>(Landroidx/databinding/DataBindingComponent;Landroid/view/View;)V
     .locals 3
 
-    .line 37
+    .line 36
     sget-object v0, Ljp/co/sony/mc/camera/databinding/FragmentStreamingModeQuickSettingBindingImpl;->sIncludes:Landroidx/databinding/ViewDataBinding$IncludedLayouts;
 
     sget-object v1, Ljp/co/sony/mc/camera/databinding/FragmentStreamingModeQuickSettingBindingImpl;->sViewsWithIds:Landroid/util/SparseIntArray;
@@ -127,7 +130,7 @@
 
     const/16 v0, 0xb
 
-    .line 40
+    .line 39
     aget-object v0, p3, v0
 
     move-object v4, v0
@@ -142,7 +145,7 @@
 
     check-cast v5, Ljp/co/sony/mc/camera/view/setting/quicksetting/QuickSettingItemView;
 
-    const/16 v0, 0x8
+    const/4 v0, 0x3
 
     aget-object v0, p3, v0
 
@@ -166,7 +169,7 @@
 
     check-cast v8, Ljp/co/sony/mc/camera/view/setting/quicksetting/QuickSettingItemView;
 
-    const/4 v0, 0x7
+    const/16 v0, 0x8
 
     aget-object v0, p3, v0
 
@@ -182,7 +185,7 @@
 
     check-cast v10, Landroid/widget/ScrollView;
 
-    const/4 v0, 0x5
+    const/4 v0, 0x6
 
     aget-object v0, p3, v0
 
@@ -190,7 +193,7 @@
 
     check-cast v11, Ljp/co/sony/mc/camera/databinding/FragmentStreamingModeVideoQualityBinding;
 
-    const/4 v0, 0x4
+    const/4 v0, 0x5
 
     aget-object v0, p3, v0
 
@@ -198,7 +201,7 @@
 
     check-cast v12, Landroidx/recyclerview/widget/RecyclerView;
 
-    const/4 v0, 0x3
+    const/4 v0, 0x4
 
     aget-object v0, p3, v0
 
@@ -206,7 +209,7 @@
 
     check-cast v13, Landroid/view/View;
 
-    const/4 v0, 0x6
+    const/4 v0, 0x7
 
     aget-object v0, p3, v0
 
@@ -214,7 +217,7 @@
 
     check-cast v14, Ljp/co/sony/mc/camera/databinding/FragmentStreamingModeYoutubeBinding;
 
-    const/16 v3, 0x8
+    const/16 v3, 0x9
 
     move-object/from16 v0, p0
 
@@ -226,13 +229,18 @@
 
     const-wide/16 v0, -0x1
 
-    .line 420
+    .line 476
     iput-wide v0, v15, Ljp/co/sony/mc/camera/databinding/FragmentStreamingModeQuickSettingBindingImpl;->mDirtyFlags:J
+
+    .line 52
+    iget-object v0, v15, Ljp/co/sony/mc/camera/databinding/FragmentStreamingModeQuickSettingBindingImpl;->connectSetting:Landroid/widget/TextView;
+
+    const/4 v1, 0x0
+
+    invoke-virtual {v0, v1}, Landroid/widget/TextView;->setTag(Ljava/lang/Object;)V
 
     .line 53
     iget-object v0, v15, Ljp/co/sony/mc/camera/databinding/FragmentStreamingModeQuickSettingBindingImpl;->container:Ljp/co/sony/mc/camera/view/widget/CustomConstraintLayout;
-
-    const/4 v1, 0x0
 
     invoke-virtual {v0, v1}, Ljp/co/sony/mc/camera/view/widget/CustomConstraintLayout;->setTag(Ljava/lang/Object;)V
 
@@ -302,20 +310,20 @@
 
     if-nez p2, :cond_0
 
-    .line 229
+    .line 251
     monitor-enter p0
 
-    .line 230
+    .line 252
     :try_start_0
     iget-wide p1, p0, Ljp/co/sony/mc/camera/databinding/FragmentStreamingModeQuickSettingBindingImpl;->mDirtyFlags:J
 
-    const-wide/16 v0, 0x20
+    const-wide/16 v0, 0x40
 
     or-long/2addr p1, v0
 
     iput-wide p1, p0, Ljp/co/sony/mc/camera/databinding/FragmentStreamingModeQuickSettingBindingImpl;->mDirtyFlags:J
 
-    .line 231
+    .line 253
     monitor-exit p0
 
     const/4 p0, 0x1
@@ -350,10 +358,10 @@
 
     if-nez p2, :cond_0
 
-    .line 211
+    .line 224
     monitor-enter p0
 
-    .line 212
+    .line 225
     :try_start_0
     iget-wide p1, p0, Ljp/co/sony/mc/camera/databinding/FragmentStreamingModeQuickSettingBindingImpl;->mDirtyFlags:J
 
@@ -363,7 +371,7 @@
 
     iput-wide p1, p0, Ljp/co/sony/mc/camera/databinding/FragmentStreamingModeQuickSettingBindingImpl;->mDirtyFlags:J
 
-    .line 213
+    .line 226
     monitor-exit p0
 
     const/4 p0, 0x1
@@ -398,20 +406,20 @@
 
     if-nez p2, :cond_0
 
-    .line 238
+    .line 260
     monitor-enter p0
 
-    .line 239
+    .line 261
     :try_start_0
     iget-wide p1, p0, Ljp/co/sony/mc/camera/databinding/FragmentStreamingModeQuickSettingBindingImpl;->mDirtyFlags:J
 
-    const-wide/16 v0, 0x40
+    const-wide/16 v0, 0x80
 
     or-long/2addr p1, v0
 
     iput-wide p1, p0, Ljp/co/sony/mc/camera/databinding/FragmentStreamingModeQuickSettingBindingImpl;->mDirtyFlags:J
 
-    .line 240
+    .line 262
     monitor-exit p0
 
     const/4 p0, 0x1
@@ -438,20 +446,20 @@
 
     if-nez p2, :cond_0
 
-    .line 220
+    .line 242
     monitor-enter p0
 
-    .line 221
+    .line 243
     :try_start_0
     iget-wide p1, p0, Ljp/co/sony/mc/camera/databinding/FragmentStreamingModeQuickSettingBindingImpl;->mDirtyFlags:J
 
-    const-wide/16 v0, 0x10
+    const-wide/16 v0, 0x20
 
     or-long/2addr p1, v0
 
     iput-wide p1, p0, Ljp/co/sony/mc/camera/databinding/FragmentStreamingModeQuickSettingBindingImpl;->mDirtyFlags:J
 
-    .line 222
+    .line 244
     monitor-exit p0
 
     const/4 p0, 0x1
@@ -486,10 +494,10 @@
 
     if-nez p2, :cond_0
 
-    .line 202
+    .line 215
     monitor-enter p0
 
-    .line 203
+    .line 216
     :try_start_0
     iget-wide p1, p0, Ljp/co/sony/mc/camera/databinding/FragmentStreamingModeQuickSettingBindingImpl;->mDirtyFlags:J
 
@@ -499,7 +507,7 @@
 
     iput-wide p1, p0, Ljp/co/sony/mc/camera/databinding/FragmentStreamingModeQuickSettingBindingImpl;->mDirtyFlags:J
 
-    .line 204
+    .line 217
     monitor-exit p0
 
     const/4 p0, 0x1
@@ -534,10 +542,10 @@
 
     if-nez p2, :cond_0
 
-    .line 184
+    .line 197
     monitor-enter p0
 
-    .line 185
+    .line 198
     :try_start_0
     iget-wide p1, p0, Ljp/co/sony/mc/camera/databinding/FragmentStreamingModeQuickSettingBindingImpl;->mDirtyFlags:J
 
@@ -547,7 +555,7 @@
 
     iput-wide p1, p0, Ljp/co/sony/mc/camera/databinding/FragmentStreamingModeQuickSettingBindingImpl;->mDirtyFlags:J
 
-    .line 186
+    .line 199
     monitor-exit p0
 
     const/4 p0, 0x1
@@ -574,10 +582,10 @@
 
     if-nez p2, :cond_0
 
-    .line 193
+    .line 206
     monitor-enter p0
 
-    .line 194
+    .line 207
     :try_start_0
     iget-wide p1, p0, Ljp/co/sony/mc/camera/databinding/FragmentStreamingModeQuickSettingBindingImpl;->mDirtyFlags:J
 
@@ -587,7 +595,55 @@
 
     iput-wide p1, p0, Ljp/co/sony/mc/camera/databinding/FragmentStreamingModeQuickSettingBindingImpl;->mDirtyFlags:J
 
-    .line 195
+    .line 208
+    monitor-exit p0
+
+    const/4 p0, 0x1
+
+    return p0
+
+    :catchall_0
+    move-exception p1
+
+    monitor-exit p0
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    throw p1
+
+    :cond_0
+    const/4 p0, 0x0
+
+    return p0
+.end method
+
+.method private onChangeViewFinderUiStateIsViewFinderItemClickable(Landroidx/lifecycle/LiveData;I)Z
+    .locals 2
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Landroidx/lifecycle/LiveData<",
+            "Ljava/lang/Boolean;",
+            ">;I)Z"
+        }
+    .end annotation
+
+    if-nez p2, :cond_0
+
+    .line 233
+    monitor-enter p0
+
+    .line 234
+    :try_start_0
+    iget-wide p1, p0, Ljp/co/sony/mc/camera/databinding/FragmentStreamingModeQuickSettingBindingImpl;->mDirtyFlags:J
+
+    const-wide/16 v0, 0x10
+
+    or-long/2addr p1, v0
+
+    iput-wide p1, p0, Ljp/co/sony/mc/camera/databinding/FragmentStreamingModeQuickSettingBindingImpl;->mDirtyFlags:J
+
+    .line 235
     monitor-exit p0
 
     const/4 p0, 0x1
@@ -614,20 +670,20 @@
 
     if-nez p2, :cond_0
 
-    .line 247
+    .line 269
     monitor-enter p0
 
-    .line 248
+    .line 270
     :try_start_0
     iget-wide p1, p0, Ljp/co/sony/mc/camera/databinding/FragmentStreamingModeQuickSettingBindingImpl;->mDirtyFlags:J
 
-    const-wide/16 v0, 0x80
+    const-wide/16 v0, 0x100
 
     or-long/2addr p1, v0
 
     iput-wide p1, p0, Ljp/co/sony/mc/camera/databinding/FragmentStreamingModeQuickSettingBindingImpl;->mDirtyFlags:J
 
-    .line 249
+    .line 271
     monitor-exit p0
 
     const/4 p0, 0x1
@@ -652,107 +708,110 @@
 
 # virtual methods
 .method protected executeBindings()V
-    .locals 25
+    .locals 27
 
     move-object/from16 v1, p0
 
-    .line 258
+    .line 280
     monitor-enter p0
 
-    .line 259
+    .line 281
     :try_start_0
     iget-wide v2, v1, Ljp/co/sony/mc/camera/databinding/FragmentStreamingModeQuickSettingBindingImpl;->mDirtyFlags:J
 
     const-wide/16 v4, 0x0
 
-    .line 260
+    .line 282
     iput-wide v4, v1, Ljp/co/sony/mc/camera/databinding/FragmentStreamingModeQuickSettingBindingImpl;->mDirtyFlags:J
 
-    .line 261
+    .line 283
     monitor-exit p0
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 262
+    .line 284
     iget-object v0, v1, Ljp/co/sony/mc/camera/databinding/FragmentStreamingModeQuickSettingBindingImpl;->mStreamingUiState:Ljp/co/sony/mc/camera/view/uistate/StreamingUiState;
 
-    .line 264
+    .line 286
     iget-object v6, v1, Ljp/co/sony/mc/camera/databinding/FragmentStreamingModeQuickSettingBindingImpl;->mOrientationViewModel:Ljp/co/sony/mc/camera/view/viewmodel/OrientationViewModel;
 
-    .line 272
-    iget-object v7, v1, Ljp/co/sony/mc/camera/databinding/FragmentStreamingModeQuickSettingBindingImpl;->mBasicModeQuickSettingUiState:Ljp/co/sony/mc/camera/view/uistate/BasicModeQuickSettingUiState;
+    .line 287
+    iget-object v7, v1, Ljp/co/sony/mc/camera/databinding/FragmentStreamingModeQuickSettingBindingImpl;->mViewFinderUiState:Ljp/co/sony/mc/camera/view/uistate/ViewFinderUiState;
 
-    const-wide/16 v8, 0x2105
+    .line 296
+    iget-object v8, v1, Ljp/co/sony/mc/camera/databinding/FragmentStreamingModeQuickSettingBindingImpl;->mBasicModeQuickSettingUiState:Ljp/co/sony/mc/camera/view/uistate/BasicModeQuickSettingUiState;
 
-    and-long/2addr v8, v2
+    const-wide/32 v9, 0x8205
 
-    cmp-long v8, v8, v4
+    and-long/2addr v9, v2
 
-    const-wide/16 v9, 0x2104
+    cmp-long v9, v9, v4
 
-    const-wide/16 v11, 0x2101
+    const-wide/32 v10, 0x8204
 
-    const/4 v13, 0x0
+    const-wide/32 v12, 0x8201
 
-    if-eqz v8, :cond_6
+    const/4 v14, 0x0
 
-    and-long v15, v2, v11
+    if-eqz v9, :cond_6
 
-    cmp-long v8, v15, v4
+    and-long v16, v2, v12
 
-    if-eqz v8, :cond_2
+    cmp-long v9, v16, v4
+
+    if-eqz v9, :cond_2
 
     if-eqz v0, :cond_0
 
-    .line 289
+    .line 315
     invoke-virtual {v0}, Ljp/co/sony/mc/camera/view/uistate/StreamingUiState;->isRtmpItemInvisible()Landroidx/lifecycle/LiveData;
 
-    move-result-object v8
+    move-result-object v9
 
     goto :goto_0
 
     :cond_0
-    const/4 v8, 0x0
+    const/4 v9, 0x0
 
-    .line 291
+    .line 317
     :goto_0
-    invoke-virtual {v1, v13, v8}, Ljp/co/sony/mc/camera/databinding/FragmentStreamingModeQuickSettingBindingImpl;->updateLiveDataRegistration(ILandroidx/lifecycle/LiveData;)Z
+    invoke-virtual {v1, v14, v9}, Ljp/co/sony/mc/camera/databinding/FragmentStreamingModeQuickSettingBindingImpl;->updateLiveDataRegistration(ILandroidx/lifecycle/LiveData;)Z
 
-    if-eqz v8, :cond_1
+    if-eqz v9, :cond_1
 
-    .line 296
-    invoke-virtual {v8}, Landroidx/lifecycle/LiveData;->getValue()Ljava/lang/Object;
+    .line 322
+    invoke-virtual {v9}, Landroidx/lifecycle/LiveData;->getValue()Ljava/lang/Object;
 
-    move-result-object v8
+    move-result-object v9
 
-    check-cast v8, Ljava/lang/Boolean;
+    check-cast v9, Ljava/lang/Boolean;
 
     goto :goto_1
 
     :cond_1
-    const/4 v8, 0x0
+    const/4 v9, 0x0
 
-    .line 301
+    .line 327
     :goto_1
-    invoke-static {v8}, Landroidx/databinding/ViewDataBinding;->safeUnbox(Ljava/lang/Boolean;)Z
+    invoke-static {v9}, Landroidx/databinding/ViewDataBinding;->safeUnbox(Ljava/lang/Boolean;)Z
 
-    move-result v8
+    move-result v9
 
     goto :goto_2
 
     :cond_2
-    move v8, v13
+    move v9, v14
 
     :goto_2
-    and-long v15, v2, v9
+    and-long v16, v2, v10
 
-    cmp-long v15, v15, v4
+    cmp-long v16, v16, v4
 
-    if-eqz v15, :cond_5
+    if-eqz v16, :cond_5
 
     if-eqz v0, :cond_3
 
-    .line 307
+    .line 333
     invoke-virtual {v0}, Ljp/co/sony/mc/camera/view/uistate/StreamingUiState;->isLoginInvisible()Landroidx/lifecycle/LiveData;
 
     move-result-object v0
@@ -765,12 +824,12 @@
     :goto_3
     const/4 v15, 0x2
 
-    .line 309
+    .line 335
     invoke-virtual {v1, v15, v0}, Ljp/co/sony/mc/camera/databinding/FragmentStreamingModeQuickSettingBindingImpl;->updateLiveDataRegistration(ILandroidx/lifecycle/LiveData;)Z
 
     if-eqz v0, :cond_4
 
-    .line 314
+    .line 340
     invoke-virtual {v0}, Landroidx/lifecycle/LiveData;->getValue()Ljava/lang/Object;
 
     move-result-object v0
@@ -782,7 +841,7 @@
     :cond_4
     const/4 v0, 0x0
 
-    .line 319
+    .line 345
     :goto_4
     invoke-static {v0}, Landroidx/databinding/ViewDataBinding;->safeUnbox(Ljava/lang/Boolean;)Z
 
@@ -791,27 +850,27 @@
     goto :goto_5
 
     :cond_5
-    move v0, v13
+    move v0, v14
 
     goto :goto_5
 
     :cond_6
-    move v0, v13
+    move v0, v14
 
-    move v8, v0
+    move v9, v0
 
     :goto_5
-    const-wide/16 v15, 0x2240
+    const-wide/32 v17, 0x8480
 
-    and-long/2addr v15, v2
+    and-long v17, v2, v17
 
-    cmp-long v15, v15, v4
+    cmp-long v15, v17, v4
 
     if-eqz v15, :cond_8
 
     if-eqz v6, :cond_7
 
-    .line 328
+    .line 354
     invoke-virtual {v6}, Ljp/co/sony/mc/camera/view/viewmodel/OrientationViewModel;->getLayoutOrientation()Landroidx/lifecycle/LiveData;
 
     move-result-object v6
@@ -822,14 +881,14 @@
     const/4 v6, 0x0
 
     :goto_6
-    const/4 v13, 0x6
+    const/4 v10, 0x7
 
-    .line 330
-    invoke-virtual {v1, v13, v6}, Ljp/co/sony/mc/camera/databinding/FragmentStreamingModeQuickSettingBindingImpl;->updateLiveDataRegistration(ILandroidx/lifecycle/LiveData;)Z
+    .line 356
+    invoke-virtual {v1, v10, v6}, Ljp/co/sony/mc/camera/databinding/FragmentStreamingModeQuickSettingBindingImpl;->updateLiveDataRegistration(ILandroidx/lifecycle/LiveData;)Z
 
     if-eqz v6, :cond_8
 
-    .line 335
+    .line 361
     invoke-virtual {v6}, Landroidx/lifecycle/LiveData;->getValue()Ljava/lang/Object;
 
     move-result-object v6
@@ -842,212 +901,280 @@
     const/4 v6, 0x0
 
     :goto_7
-    const-wide/16 v17, 0x2828
+    const-wide/32 v10, 0x8810
 
-    and-long v17, v2, v17
+    and-long/2addr v10, v2
 
-    cmp-long v13, v17, v4
+    cmp-long v10, v10, v4
 
-    const-wide/16 v17, 0x2808
-
-    const-wide/16 v19, 0x2820
-
-    if-eqz v13, :cond_f
-
-    and-long v21, v2, v17
-
-    cmp-long v13, v21, v4
-
-    if-eqz v13, :cond_b
+    if-eqz v10, :cond_b
 
     if-eqz v7, :cond_9
 
-    .line 345
-    invoke-virtual {v7}, Ljp/co/sony/mc/camera/view/uistate/BasicModeQuickSettingUiState;->getVideoQualitySelectorVisible()Landroidx/lifecycle/LiveData;
+    .line 370
+    invoke-virtual {v7}, Ljp/co/sony/mc/camera/view/uistate/ViewFinderUiState;->isViewFinderItemClickable()Landroidx/lifecycle/LiveData;
 
-    move-result-object v13
+    move-result-object v7
 
     goto :goto_8
 
     :cond_9
-    const/4 v13, 0x0
-
-    :goto_8
-    const/4 v14, 0x3
-
-    .line 347
-    invoke-virtual {v1, v14, v13}, Ljp/co/sony/mc/camera/databinding/FragmentStreamingModeQuickSettingBindingImpl;->updateLiveDataRegistration(ILandroidx/lifecycle/LiveData;)Z
-
-    if-eqz v13, :cond_a
-
-    .line 352
-    invoke-virtual {v13}, Landroidx/lifecycle/LiveData;->getValue()Ljava/lang/Object;
-
-    move-result-object v13
-
-    check-cast v13, Ljava/lang/Boolean;
-
-    goto :goto_9
-
-    :cond_a
-    const/4 v13, 0x0
-
-    .line 357
-    :goto_9
-    invoke-static {v13}, Landroidx/databinding/ViewDataBinding;->safeUnbox(Ljava/lang/Boolean;)Z
-
-    move-result v13
-
-    xor-int/lit8 v14, v13, 0x1
-
-    .line 365
-    invoke-static {v14}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
-
-    move-result-object v14
-
-    invoke-static {v14}, Landroidx/databinding/ViewDataBinding;->safeUnbox(Ljava/lang/Boolean;)Z
-
-    move-result v14
-
-    goto :goto_a
-
-    :cond_b
-    const/4 v13, 0x0
-
-    const/4 v14, 0x0
-
-    :goto_a
-    and-long v22, v2, v19
-
-    cmp-long v22, v22, v4
-
-    if-eqz v22, :cond_e
-
-    if-eqz v7, :cond_c
-
-    .line 371
-    invoke-virtual {v7}, Ljp/co/sony/mc/camera/view/uistate/BasicModeQuickSettingUiState;->getStreamingQuickSettingVisible()Landroidx/lifecycle/LiveData;
-
-    move-result-object v7
-
-    goto :goto_b
-
-    :cond_c
     const/4 v7, 0x0
 
-    :goto_b
-    const/4 v9, 0x5
+    :goto_8
+    const/4 v11, 0x4
 
-    .line 373
-    invoke-virtual {v1, v9, v7}, Ljp/co/sony/mc/camera/databinding/FragmentStreamingModeQuickSettingBindingImpl;->updateLiveDataRegistration(ILandroidx/lifecycle/LiveData;)Z
+    .line 372
+    invoke-virtual {v1, v11, v7}, Ljp/co/sony/mc/camera/databinding/FragmentStreamingModeQuickSettingBindingImpl;->updateLiveDataRegistration(ILandroidx/lifecycle/LiveData;)Z
 
-    if-eqz v7, :cond_d
+    if-eqz v7, :cond_a
 
-    .line 378
+    .line 377
     invoke-virtual {v7}, Landroidx/lifecycle/LiveData;->getValue()Ljava/lang/Object;
 
     move-result-object v7
 
     check-cast v7, Ljava/lang/Boolean;
 
-    move-object/from16 v21, v7
+    goto :goto_9
+
+    :cond_a
+    const/4 v7, 0x0
+
+    .line 382
+    :goto_9
+    invoke-static {v7}, Landroidx/databinding/ViewDataBinding;->safeUnbox(Ljava/lang/Boolean;)Z
+
+    move-result v7
+
+    goto :goto_a
+
+    :cond_b
+    move v7, v14
+
+    :goto_a
+    const-wide/32 v19, 0xa048
+
+    and-long v19, v2, v19
+
+    cmp-long v11, v19, v4
+
+    const-wide/32 v19, 0xa040
+
+    const-wide/32 v21, 0xa008
+
+    if-eqz v11, :cond_12
+
+    and-long v23, v2, v21
+
+    cmp-long v11, v23, v4
+
+    if-eqz v11, :cond_e
+
+    if-eqz v8, :cond_c
+
+    .line 391
+    invoke-virtual {v8}, Ljp/co/sony/mc/camera/view/uistate/BasicModeQuickSettingUiState;->getVideoQualitySelectorVisible()Landroidx/lifecycle/LiveData;
+
+    move-result-object v11
+
+    goto :goto_b
+
+    :cond_c
+    const/4 v11, 0x0
+
+    :goto_b
+    const/4 v12, 0x3
+
+    .line 393
+    invoke-virtual {v1, v12, v11}, Ljp/co/sony/mc/camera/databinding/FragmentStreamingModeQuickSettingBindingImpl;->updateLiveDataRegistration(ILandroidx/lifecycle/LiveData;)Z
+
+    if-eqz v11, :cond_d
+
+    .line 398
+    invoke-virtual {v11}, Landroidx/lifecycle/LiveData;->getValue()Ljava/lang/Object;
+
+    move-result-object v11
+
+    check-cast v11, Ljava/lang/Boolean;
 
     goto :goto_c
 
     :cond_d
-    const/16 v21, 0x0
+    const/4 v11, 0x0
 
-    .line 383
+    .line 403
     :goto_c
-    invoke-static/range {v21 .. v21}, Landroidx/databinding/ViewDataBinding;->safeUnbox(Ljava/lang/Boolean;)Z
+    invoke-static {v11}, Landroidx/databinding/ViewDataBinding;->safeUnbox(Ljava/lang/Boolean;)Z
 
-    move-result v7
+    move-result v11
 
-    move/from16 v24, v13
+    xor-int/lit8 v12, v11, 0x1
 
-    move v13, v7
+    .line 411
+    invoke-static {v12}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
-    move/from16 v7, v24
+    move-result-object v12
+
+    invoke-static {v12}, Landroidx/databinding/ViewDataBinding;->safeUnbox(Ljava/lang/Boolean;)Z
+
+    move-result v12
 
     goto :goto_d
 
     :cond_e
-    move v7, v13
+    move v11, v14
 
-    const/4 v13, 0x0
-
-    goto :goto_d
-
-    :cond_f
-    const/4 v7, 0x0
-
-    const/4 v13, 0x0
-
-    const/4 v14, 0x0
+    move v12, v11
 
     :goto_d
-    and-long v9, v2, v19
+    and-long v25, v2, v19
 
-    cmp-long v9, v9, v4
+    cmp-long v13, v25, v4
 
-    if-eqz v9, :cond_10
+    if-eqz v13, :cond_11
 
-    .line 390
-    iget-object v9, v1, Ljp/co/sony/mc/camera/databinding/FragmentStreamingModeQuickSettingBindingImpl;->mboundView0:Landroidx/constraintlayout/widget/ConstraintLayout;
+    if-eqz v8, :cond_f
 
-    invoke-static {v9, v13}, Ljp/co/sony/mc/camera/view/viewbinder/BindingAdapters;->setVisible(Landroid/view/View;Z)V
+    .line 417
+    invoke-virtual {v8}, Ljp/co/sony/mc/camera/view/uistate/BasicModeQuickSettingUiState;->getStreamingQuickSettingVisible()Landroidx/lifecycle/LiveData;
+
+    move-result-object v8
+
+    goto :goto_e
+
+    :cond_f
+    const/4 v8, 0x0
+
+    :goto_e
+    const/4 v13, 0x6
+
+    .line 419
+    invoke-virtual {v1, v13, v8}, Ljp/co/sony/mc/camera/databinding/FragmentStreamingModeQuickSettingBindingImpl;->updateLiveDataRegistration(ILandroidx/lifecycle/LiveData;)Z
+
+    if-eqz v8, :cond_10
+
+    .line 424
+    invoke-virtual {v8}, Landroidx/lifecycle/LiveData;->getValue()Ljava/lang/Object;
+
+    move-result-object v8
+
+    check-cast v8, Ljava/lang/Boolean;
+
+    move-object/from16 v16, v8
+
+    goto :goto_f
 
     :cond_10
-    and-long v9, v2, v11
+    const/16 v16, 0x0
 
-    cmp-long v9, v9, v4
+    .line 429
+    :goto_f
+    invoke-static/range {v16 .. v16}, Landroidx/databinding/ViewDataBinding;->safeUnbox(Ljava/lang/Boolean;)Z
 
-    if-eqz v9, :cond_11
+    move-result v8
 
-    .line 395
-    iget-object v9, v1, Ljp/co/sony/mc/camera/databinding/FragmentStreamingModeQuickSettingBindingImpl;->rtmp:Ljp/co/sony/mc/camera/databinding/FragmentStreamingModeRtmpBinding;
-
-    invoke-virtual {v9}, Ljp/co/sony/mc/camera/databinding/FragmentStreamingModeRtmpBinding;->getRoot()Landroid/view/View;
-
-    move-result-object v9
-
-    invoke-static {v9, v8}, Ljp/co/sony/mc/camera/view/viewbinder/BindingAdapters;->setGone(Landroid/view/View;Z)V
+    goto :goto_10
 
     :cond_11
-    if-eqz v15, :cond_12
+    move v8, v14
 
-    .line 400
-    iget-object v8, v1, Ljp/co/sony/mc/camera/databinding/FragmentStreamingModeQuickSettingBindingImpl;->scrollView:Landroid/widget/ScrollView;
-
-    invoke-static {v8, v6}, Ljp/co/sony/mc/camera/view/viewbinder/BindingAdapters;->setOrientation(Landroid/view/View;Ljp/co/sony/mc/camera/view/orientation/LayoutOrientation;)V
+    goto :goto_10
 
     :cond_12
-    and-long v8, v2, v17
+    move v8, v14
 
-    cmp-long v6, v8, v4
+    move v11, v8
 
-    if-eqz v6, :cond_13
+    move v12, v11
 
-    .line 405
-    iget-object v6, v1, Ljp/co/sony/mc/camera/databinding/FragmentStreamingModeQuickSettingBindingImpl;->videoQualitySelector:Landroidx/recyclerview/widget/RecyclerView;
+    :goto_10
+    if-eqz v10, :cond_13
 
-    invoke-static {v6, v7}, Ljp/co/sony/mc/camera/view/viewbinder/BindingAdapters;->setVisible(Landroid/view/View;Z)V
+    .line 436
+    iget-object v10, v1, Ljp/co/sony/mc/camera/databinding/FragmentStreamingModeQuickSettingBindingImpl;->connectSetting:Landroid/widget/TextView;
 
-    .line 406
-    iget-object v6, v1, Ljp/co/sony/mc/camera/databinding/FragmentStreamingModeQuickSettingBindingImpl;->videoQualitySelectorContainer:Landroid/view/View;
-
-    invoke-static {v6, v14}, Ljp/co/sony/mc/camera/view/viewbinder/BindingAdapters;->setGone(Landroid/view/View;Z)V
+    invoke-virtual {v10, v7}, Landroid/widget/TextView;->setClickable(Z)V
 
     :cond_13
-    const-wide/16 v6, 0x2104
+    const-wide/32 v25, 0x8000
+
+    and-long v25, v2, v25
+
+    cmp-long v7, v25, v4
+
+    if-eqz v7, :cond_14
+
+    .line 441
+    iget-object v7, v1, Ljp/co/sony/mc/camera/databinding/FragmentStreamingModeQuickSettingBindingImpl;->connectSetting:Landroid/widget/TextView;
+
+    invoke-static {v7, v14}, Ljp/co/sony/mc/camera/view/viewbinder/BindingAdapters;->setAccessibilityClickable(Landroid/view/View;Z)V
+
+    :cond_14
+    and-long v13, v2, v19
+
+    cmp-long v7, v13, v4
+
+    if-eqz v7, :cond_15
+
+    .line 446
+    iget-object v7, v1, Ljp/co/sony/mc/camera/databinding/FragmentStreamingModeQuickSettingBindingImpl;->mboundView0:Landroidx/constraintlayout/widget/ConstraintLayout;
+
+    invoke-static {v7, v8}, Ljp/co/sony/mc/camera/view/viewbinder/BindingAdapters;->setVisible(Landroid/view/View;Z)V
+
+    :cond_15
+    const-wide/32 v7, 0x8201
+
+    and-long/2addr v7, v2
+
+    cmp-long v7, v7, v4
+
+    if-eqz v7, :cond_16
+
+    .line 451
+    iget-object v7, v1, Ljp/co/sony/mc/camera/databinding/FragmentStreamingModeQuickSettingBindingImpl;->rtmp:Ljp/co/sony/mc/camera/databinding/FragmentStreamingModeRtmpBinding;
+
+    invoke-virtual {v7}, Ljp/co/sony/mc/camera/databinding/FragmentStreamingModeRtmpBinding;->getRoot()Landroid/view/View;
+
+    move-result-object v7
+
+    invoke-static {v7, v9}, Ljp/co/sony/mc/camera/view/viewbinder/BindingAdapters;->setGone(Landroid/view/View;Z)V
+
+    :cond_16
+    if-eqz v15, :cond_17
+
+    .line 456
+    iget-object v7, v1, Ljp/co/sony/mc/camera/databinding/FragmentStreamingModeQuickSettingBindingImpl;->scrollView:Landroid/widget/ScrollView;
+
+    invoke-static {v7, v6}, Ljp/co/sony/mc/camera/view/viewbinder/BindingAdapters;->setOrientation(Landroid/view/View;Ljp/co/sony/mc/camera/view/orientation/LayoutOrientation;)V
+
+    :cond_17
+    and-long v6, v2, v21
+
+    cmp-long v6, v6, v4
+
+    if-eqz v6, :cond_18
+
+    .line 461
+    iget-object v6, v1, Ljp/co/sony/mc/camera/databinding/FragmentStreamingModeQuickSettingBindingImpl;->videoQualitySelector:Landroidx/recyclerview/widget/RecyclerView;
+
+    invoke-static {v6, v11}, Ljp/co/sony/mc/camera/view/viewbinder/BindingAdapters;->setVisible(Landroid/view/View;Z)V
+
+    .line 462
+    iget-object v6, v1, Ljp/co/sony/mc/camera/databinding/FragmentStreamingModeQuickSettingBindingImpl;->videoQualitySelectorContainer:Landroid/view/View;
+
+    invoke-static {v6, v12}, Ljp/co/sony/mc/camera/view/viewbinder/BindingAdapters;->setGone(Landroid/view/View;Z)V
+
+    :cond_18
+    const-wide/32 v6, 0x8204
 
     and-long/2addr v2, v6
 
     cmp-long v2, v2, v4
 
-    if-eqz v2, :cond_14
+    if-eqz v2, :cond_19
 
-    .line 411
+    .line 467
     iget-object v2, v1, Ljp/co/sony/mc/camera/databinding/FragmentStreamingModeQuickSettingBindingImpl;->youtube:Ljp/co/sony/mc/camera/databinding/FragmentStreamingModeYoutubeBinding;
 
     invoke-virtual {v2}, Ljp/co/sony/mc/camera/databinding/FragmentStreamingModeYoutubeBinding;->getRoot()Landroid/view/View;
@@ -1056,18 +1183,18 @@
 
     invoke-static {v2, v0}, Ljp/co/sony/mc/camera/view/viewbinder/BindingAdapters;->setGone(Landroid/view/View;Z)V
 
-    .line 413
-    :cond_14
+    .line 469
+    :cond_19
     iget-object v0, v1, Ljp/co/sony/mc/camera/databinding/FragmentStreamingModeQuickSettingBindingImpl;->videoQuality:Ljp/co/sony/mc/camera/databinding/FragmentStreamingModeVideoQualityBinding;
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/databinding/FragmentStreamingModeQuickSettingBindingImpl;->executeBindingsOn(Landroidx/databinding/ViewDataBinding;)V
 
-    .line 414
+    .line 470
     iget-object v0, v1, Ljp/co/sony/mc/camera/databinding/FragmentStreamingModeQuickSettingBindingImpl;->youtube:Ljp/co/sony/mc/camera/databinding/FragmentStreamingModeYoutubeBinding;
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/databinding/FragmentStreamingModeQuickSettingBindingImpl;->executeBindingsOn(Landroidx/databinding/ViewDataBinding;)V
 
-    .line 415
+    .line 471
     iget-object v0, v1, Ljp/co/sony/mc/camera/databinding/FragmentStreamingModeQuickSettingBindingImpl;->rtmp:Ljp/co/sony/mc/camera/databinding/FragmentStreamingModeRtmpBinding;
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/databinding/FragmentStreamingModeQuickSettingBindingImpl;->executeBindingsOn(Landroidx/databinding/ViewDataBinding;)V
@@ -1077,7 +1204,7 @@
     :catchall_0
     move-exception v0
 
-    .line 261
+    .line 283
     :try_start_1
     monitor-exit p0
     :try_end_1
@@ -1173,7 +1300,7 @@
     .line 69
     monitor-enter p0
 
-    const-wide/16 v0, 0x2000
+    const-wide/32 v0, 0x8000
 
     .line 70
     :try_start_0
@@ -1225,7 +1352,7 @@
 
     return p0
 
-    .line 178
+    .line 191
     :pswitch_0
     check-cast p2, Ljp/co/sony/mc/camera/databinding/FragmentStreamingModeYoutubeBinding;
 
@@ -1235,7 +1362,7 @@
 
     return p0
 
-    .line 176
+    .line 189
     :pswitch_1
     check-cast p2, Landroidx/lifecycle/LiveData;
 
@@ -1245,7 +1372,7 @@
 
     return p0
 
-    .line 174
+    .line 187
     :pswitch_2
     check-cast p2, Landroidx/lifecycle/LiveData;
 
@@ -1255,7 +1382,7 @@
 
     return p0
 
-    .line 172
+    .line 185
     :pswitch_3
     check-cast p2, Ljp/co/sony/mc/camera/databinding/FragmentStreamingModeRtmpBinding;
 
@@ -1265,8 +1392,18 @@
 
     return p0
 
-    .line 170
+    .line 183
     :pswitch_4
+    check-cast p2, Landroidx/lifecycle/LiveData;
+
+    invoke-direct {p0, p2, p3}, Ljp/co/sony/mc/camera/databinding/FragmentStreamingModeQuickSettingBindingImpl;->onChangeViewFinderUiStateIsViewFinderItemClickable(Landroidx/lifecycle/LiveData;I)Z
+
+    move-result p0
+
+    return p0
+
+    .line 181
+    :pswitch_5
     check-cast p2, Landroidx/lifecycle/LiveData;
 
     invoke-direct {p0, p2, p3}, Ljp/co/sony/mc/camera/databinding/FragmentStreamingModeQuickSettingBindingImpl;->onChangeBasicModeQuickSettingUiStateVideoQualitySelectorVisible(Landroidx/lifecycle/LiveData;I)Z
@@ -1275,8 +1412,8 @@
 
     return p0
 
-    .line 168
-    :pswitch_5
+    .line 179
+    :pswitch_6
     check-cast p2, Landroidx/lifecycle/LiveData;
 
     invoke-direct {p0, p2, p3}, Ljp/co/sony/mc/camera/databinding/FragmentStreamingModeQuickSettingBindingImpl;->onChangeStreamingUiStateIsLoginInvisible(Landroidx/lifecycle/LiveData;I)Z
@@ -1285,8 +1422,8 @@
 
     return p0
 
-    .line 166
-    :pswitch_6
+    .line 177
+    :pswitch_7
     check-cast p2, Ljp/co/sony/mc/camera/databinding/FragmentStreamingModeVideoQualityBinding;
 
     invoke-direct {p0, p2, p3}, Ljp/co/sony/mc/camera/databinding/FragmentStreamingModeQuickSettingBindingImpl;->onChangeVideoQuality(Ljp/co/sony/mc/camera/databinding/FragmentStreamingModeVideoQualityBinding;I)Z
@@ -1295,8 +1432,8 @@
 
     return p0
 
-    .line 164
-    :pswitch_7
+    .line 175
+    :pswitch_8
     check-cast p2, Landroidx/lifecycle/LiveData;
 
     invoke-direct {p0, p2, p3}, Ljp/co/sony/mc/camera/databinding/FragmentStreamingModeQuickSettingBindingImpl;->onChangeStreamingUiStateIsRtmpItemInvisible(Landroidx/lifecycle/LiveData;I)Z
@@ -1305,10 +1442,9 @@
 
     return p0
 
-    nop
-
     :pswitch_data_0
     .packed-switch 0x0
+        :pswitch_8
         :pswitch_7
         :pswitch_6
         :pswitch_5
@@ -1323,7 +1459,7 @@
 .method public setBasicModeCommonUiState(Ljp/co/sony/mc/camera/view/uistate/BasicModeCommonUiState;)V
     .locals 0
 
-    .line 138
+    .line 149
     iput-object p1, p0, Ljp/co/sony/mc/camera/databinding/FragmentStreamingModeQuickSettingBindingImpl;->mBasicModeCommonUiState:Ljp/co/sony/mc/camera/view/uistate/BasicModeCommonUiState;
 
     return-void
@@ -1332,8 +1468,263 @@
 .method public setBasicModeQuickSettingUiState(Ljp/co/sony/mc/camera/view/uistate/BasicModeQuickSettingUiState;)V
     .locals 4
 
-    .line 141
+    .line 152
     iput-object p1, p0, Ljp/co/sony/mc/camera/databinding/FragmentStreamingModeQuickSettingBindingImpl;->mBasicModeQuickSettingUiState:Ljp/co/sony/mc/camera/view/uistate/BasicModeQuickSettingUiState;
+
+    .line 153
+    monitor-enter p0
+
+    .line 154
+    :try_start_0
+    iget-wide v0, p0, Ljp/co/sony/mc/camera/databinding/FragmentStreamingModeQuickSettingBindingImpl;->mDirtyFlags:J
+
+    const-wide/16 v2, 0x2000
+
+    or-long/2addr v0, v2
+
+    iput-wide v0, p0, Ljp/co/sony/mc/camera/databinding/FragmentStreamingModeQuickSettingBindingImpl;->mDirtyFlags:J
+
+    .line 155
+    monitor-exit p0
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    const/4 p1, 0x5
+
+    .line 156
+    invoke-virtual {p0, p1}, Ljp/co/sony/mc/camera/databinding/FragmentStreamingModeQuickSettingBindingImpl;->notifyPropertyChanged(I)V
+
+    .line 157
+    invoke-super {p0}, Ljp/co/sony/mc/camera/databinding/FragmentStreamingModeQuickSettingBinding;->requestRebind()V
+
+    return-void
+
+    :catchall_0
+    move-exception p1
+
+    .line 155
+    :try_start_1
+    monitor-exit p0
+    :try_end_1
+    .catchall {:try_start_1 .. :try_end_1} :catchall_0
+
+    throw p1
+.end method
+
+.method public setCameraSettingsModel(Ljp/co/sony/mc/camera/view/viewmodel/CameraSettingsModel;)V
+    .locals 0
+
+    .line 160
+    iput-object p1, p0, Ljp/co/sony/mc/camera/databinding/FragmentStreamingModeQuickSettingBindingImpl;->mCameraSettingsModel:Ljp/co/sony/mc/camera/view/viewmodel/CameraSettingsModel;
+
+    return-void
+.end method
+
+.method public setLifecycleOwner(Landroidx/lifecycle/LifecycleOwner;)V
+    .locals 1
+
+    .line 165
+    invoke-super {p0, p1}, Ljp/co/sony/mc/camera/databinding/FragmentStreamingModeQuickSettingBinding;->setLifecycleOwner(Landroidx/lifecycle/LifecycleOwner;)V
+
+    .line 166
+    iget-object v0, p0, Ljp/co/sony/mc/camera/databinding/FragmentStreamingModeQuickSettingBindingImpl;->videoQuality:Ljp/co/sony/mc/camera/databinding/FragmentStreamingModeVideoQualityBinding;
+
+    invoke-virtual {v0, p1}, Ljp/co/sony/mc/camera/databinding/FragmentStreamingModeVideoQualityBinding;->setLifecycleOwner(Landroidx/lifecycle/LifecycleOwner;)V
+
+    .line 167
+    iget-object v0, p0, Ljp/co/sony/mc/camera/databinding/FragmentStreamingModeQuickSettingBindingImpl;->youtube:Ljp/co/sony/mc/camera/databinding/FragmentStreamingModeYoutubeBinding;
+
+    invoke-virtual {v0, p1}, Ljp/co/sony/mc/camera/databinding/FragmentStreamingModeYoutubeBinding;->setLifecycleOwner(Landroidx/lifecycle/LifecycleOwner;)V
+
+    .line 168
+    iget-object p0, p0, Ljp/co/sony/mc/camera/databinding/FragmentStreamingModeQuickSettingBindingImpl;->rtmp:Ljp/co/sony/mc/camera/databinding/FragmentStreamingModeRtmpBinding;
+
+    invoke-virtual {p0, p1}, Ljp/co/sony/mc/camera/databinding/FragmentStreamingModeRtmpBinding;->setLifecycleOwner(Landroidx/lifecycle/LifecycleOwner;)V
+
+    return-void
+.end method
+
+.method public setOrientationViewModel(Ljp/co/sony/mc/camera/view/viewmodel/OrientationViewModel;)V
+    .locals 4
+
+    .line 133
+    iput-object p1, p0, Ljp/co/sony/mc/camera/databinding/FragmentStreamingModeQuickSettingBindingImpl;->mOrientationViewModel:Ljp/co/sony/mc/camera/view/viewmodel/OrientationViewModel;
+
+    .line 134
+    monitor-enter p0
+
+    .line 135
+    :try_start_0
+    iget-wide v0, p0, Ljp/co/sony/mc/camera/databinding/FragmentStreamingModeQuickSettingBindingImpl;->mDirtyFlags:J
+
+    const-wide/16 v2, 0x400
+
+    or-long/2addr v0, v2
+
+    iput-wide v0, p0, Ljp/co/sony/mc/camera/databinding/FragmentStreamingModeQuickSettingBindingImpl;->mDirtyFlags:J
+
+    .line 136
+    monitor-exit p0
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    const/16 p1, 0x16
+
+    .line 137
+    invoke-virtual {p0, p1}, Ljp/co/sony/mc/camera/databinding/FragmentStreamingModeQuickSettingBindingImpl;->notifyPropertyChanged(I)V
+
+    .line 138
+    invoke-super {p0}, Ljp/co/sony/mc/camera/databinding/FragmentStreamingModeQuickSettingBinding;->requestRebind()V
+
+    return-void
+
+    :catchall_0
+    move-exception p1
+
+    .line 136
+    :try_start_1
+    monitor-exit p0
+    :try_end_1
+    .catchall {:try_start_1 .. :try_end_1} :catchall_0
+
+    throw p1
+.end method
+
+.method public setStreamingUiState(Ljp/co/sony/mc/camera/view/uistate/StreamingUiState;)V
+    .locals 4
+
+    .line 125
+    iput-object p1, p0, Ljp/co/sony/mc/camera/databinding/FragmentStreamingModeQuickSettingBindingImpl;->mStreamingUiState:Ljp/co/sony/mc/camera/view/uistate/StreamingUiState;
+
+    .line 126
+    monitor-enter p0
+
+    .line 127
+    :try_start_0
+    iget-wide v0, p0, Ljp/co/sony/mc/camera/databinding/FragmentStreamingModeQuickSettingBindingImpl;->mDirtyFlags:J
+
+    const-wide/16 v2, 0x200
+
+    or-long/2addr v0, v2
+
+    iput-wide v0, p0, Ljp/co/sony/mc/camera/databinding/FragmentStreamingModeQuickSettingBindingImpl;->mDirtyFlags:J
+
+    .line 128
+    monitor-exit p0
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    const/16 p1, 0x20
+
+    .line 129
+    invoke-virtual {p0, p1}, Ljp/co/sony/mc/camera/databinding/FragmentStreamingModeQuickSettingBindingImpl;->notifyPropertyChanged(I)V
+
+    .line 130
+    invoke-super {p0}, Ljp/co/sony/mc/camera/databinding/FragmentStreamingModeQuickSettingBinding;->requestRebind()V
+
+    return-void
+
+    :catchall_0
+    move-exception p1
+
+    .line 128
+    :try_start_1
+    monitor-exit p0
+    :try_end_1
+    .catchall {:try_start_1 .. :try_end_1} :catchall_0
+
+    throw p1
+.end method
+
+.method public setVariable(ILjava/lang/Object;)Z
+    .locals 1
+
+    const/16 v0, 0x20
+
+    if-ne v0, p1, :cond_0
+
+    .line 101
+    check-cast p2, Ljp/co/sony/mc/camera/view/uistate/StreamingUiState;
+
+    invoke-virtual {p0, p2}, Ljp/co/sony/mc/camera/databinding/FragmentStreamingModeQuickSettingBindingImpl;->setStreamingUiState(Ljp/co/sony/mc/camera/view/uistate/StreamingUiState;)V
+
+    goto :goto_0
+
+    :cond_0
+    const/16 v0, 0x16
+
+    if-ne v0, p1, :cond_1
+
+    .line 104
+    check-cast p2, Ljp/co/sony/mc/camera/view/viewmodel/OrientationViewModel;
+
+    invoke-virtual {p0, p2}, Ljp/co/sony/mc/camera/databinding/FragmentStreamingModeQuickSettingBindingImpl;->setOrientationViewModel(Ljp/co/sony/mc/camera/view/viewmodel/OrientationViewModel;)V
+
+    goto :goto_0
+
+    :cond_1
+    const/16 v0, 0x25
+
+    if-ne v0, p1, :cond_2
+
+    .line 107
+    check-cast p2, Ljp/co/sony/mc/camera/view/uistate/ViewFinderUiState;
+
+    invoke-virtual {p0, p2}, Ljp/co/sony/mc/camera/databinding/FragmentStreamingModeQuickSettingBindingImpl;->setViewFinderUiState(Ljp/co/sony/mc/camera/view/uistate/ViewFinderUiState;)V
+
+    goto :goto_0
+
+    :cond_2
+    const/4 v0, 0x4
+
+    if-ne v0, p1, :cond_3
+
+    .line 110
+    check-cast p2, Ljp/co/sony/mc/camera/view/uistate/BasicModeCommonUiState;
+
+    invoke-virtual {p0, p2}, Ljp/co/sony/mc/camera/databinding/FragmentStreamingModeQuickSettingBindingImpl;->setBasicModeCommonUiState(Ljp/co/sony/mc/camera/view/uistate/BasicModeCommonUiState;)V
+
+    goto :goto_0
+
+    :cond_3
+    const/4 v0, 0x5
+
+    if-ne v0, p1, :cond_4
+
+    .line 113
+    check-cast p2, Ljp/co/sony/mc/camera/view/uistate/BasicModeQuickSettingUiState;
+
+    invoke-virtual {p0, p2}, Ljp/co/sony/mc/camera/databinding/FragmentStreamingModeQuickSettingBindingImpl;->setBasicModeQuickSettingUiState(Ljp/co/sony/mc/camera/view/uistate/BasicModeQuickSettingUiState;)V
+
+    goto :goto_0
+
+    :cond_4
+    const/16 v0, 0x8
+
+    if-ne v0, p1, :cond_5
+
+    .line 116
+    check-cast p2, Ljp/co/sony/mc/camera/view/viewmodel/CameraSettingsModel;
+
+    invoke-virtual {p0, p2}, Ljp/co/sony/mc/camera/databinding/FragmentStreamingModeQuickSettingBindingImpl;->setCameraSettingsModel(Ljp/co/sony/mc/camera/view/viewmodel/CameraSettingsModel;)V
+
+    :goto_0
+    const/4 p0, 0x1
+
+    goto :goto_1
+
+    :cond_5
+    const/4 p0, 0x0
+
+    :goto_1
+    return p0
+.end method
+
+.method public setViewFinderUiState(Ljp/co/sony/mc/camera/view/uistate/ViewFinderUiState;)V
+    .locals 4
+
+    .line 141
+    iput-object p1, p0, Ljp/co/sony/mc/camera/databinding/FragmentStreamingModeQuickSettingBindingImpl;->mViewFinderUiState:Ljp/co/sony/mc/camera/view/uistate/ViewFinderUiState;
 
     .line 142
     monitor-enter p0
@@ -1353,7 +1744,7 @@
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    const/4 p1, 0x4
+    const/16 p1, 0x25
 
     .line 145
     invoke-virtual {p0, p1}, Ljp/co/sony/mc/camera/databinding/FragmentStreamingModeQuickSettingBindingImpl;->notifyPropertyChanged(I)V
@@ -1373,201 +1764,4 @@
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
     throw p1
-.end method
-
-.method public setCameraSettingsModel(Ljp/co/sony/mc/camera/view/viewmodel/CameraSettingsModel;)V
-    .locals 0
-
-    .line 149
-    iput-object p1, p0, Ljp/co/sony/mc/camera/databinding/FragmentStreamingModeQuickSettingBindingImpl;->mCameraSettingsModel:Ljp/co/sony/mc/camera/view/viewmodel/CameraSettingsModel;
-
-    return-void
-.end method
-
-.method public setLifecycleOwner(Landroidx/lifecycle/LifecycleOwner;)V
-    .locals 1
-
-    .line 154
-    invoke-super {p0, p1}, Ljp/co/sony/mc/camera/databinding/FragmentStreamingModeQuickSettingBinding;->setLifecycleOwner(Landroidx/lifecycle/LifecycleOwner;)V
-
-    .line 155
-    iget-object v0, p0, Ljp/co/sony/mc/camera/databinding/FragmentStreamingModeQuickSettingBindingImpl;->videoQuality:Ljp/co/sony/mc/camera/databinding/FragmentStreamingModeVideoQualityBinding;
-
-    invoke-virtual {v0, p1}, Ljp/co/sony/mc/camera/databinding/FragmentStreamingModeVideoQualityBinding;->setLifecycleOwner(Landroidx/lifecycle/LifecycleOwner;)V
-
-    .line 156
-    iget-object v0, p0, Ljp/co/sony/mc/camera/databinding/FragmentStreamingModeQuickSettingBindingImpl;->youtube:Ljp/co/sony/mc/camera/databinding/FragmentStreamingModeYoutubeBinding;
-
-    invoke-virtual {v0, p1}, Ljp/co/sony/mc/camera/databinding/FragmentStreamingModeYoutubeBinding;->setLifecycleOwner(Landroidx/lifecycle/LifecycleOwner;)V
-
-    .line 157
-    iget-object p0, p0, Ljp/co/sony/mc/camera/databinding/FragmentStreamingModeQuickSettingBindingImpl;->rtmp:Ljp/co/sony/mc/camera/databinding/FragmentStreamingModeRtmpBinding;
-
-    invoke-virtual {p0, p1}, Ljp/co/sony/mc/camera/databinding/FragmentStreamingModeRtmpBinding;->setLifecycleOwner(Landroidx/lifecycle/LifecycleOwner;)V
-
-    return-void
-.end method
-
-.method public setOrientationViewModel(Ljp/co/sony/mc/camera/view/viewmodel/OrientationViewModel;)V
-    .locals 4
-
-    .line 130
-    iput-object p1, p0, Ljp/co/sony/mc/camera/databinding/FragmentStreamingModeQuickSettingBindingImpl;->mOrientationViewModel:Ljp/co/sony/mc/camera/view/viewmodel/OrientationViewModel;
-
-    .line 131
-    monitor-enter p0
-
-    .line 132
-    :try_start_0
-    iget-wide v0, p0, Ljp/co/sony/mc/camera/databinding/FragmentStreamingModeQuickSettingBindingImpl;->mDirtyFlags:J
-
-    const-wide/16 v2, 0x200
-
-    or-long/2addr v0, v2
-
-    iput-wide v0, p0, Ljp/co/sony/mc/camera/databinding/FragmentStreamingModeQuickSettingBindingImpl;->mDirtyFlags:J
-
-    .line 133
-    monitor-exit p0
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
-
-    const/16 p1, 0x13
-
-    .line 134
-    invoke-virtual {p0, p1}, Ljp/co/sony/mc/camera/databinding/FragmentStreamingModeQuickSettingBindingImpl;->notifyPropertyChanged(I)V
-
-    .line 135
-    invoke-super {p0}, Ljp/co/sony/mc/camera/databinding/FragmentStreamingModeQuickSettingBinding;->requestRebind()V
-
-    return-void
-
-    :catchall_0
-    move-exception p1
-
-    .line 133
-    :try_start_1
-    monitor-exit p0
-    :try_end_1
-    .catchall {:try_start_1 .. :try_end_1} :catchall_0
-
-    throw p1
-.end method
-
-.method public setStreamingUiState(Ljp/co/sony/mc/camera/view/uistate/StreamingUiState;)V
-    .locals 4
-
-    .line 122
-    iput-object p1, p0, Ljp/co/sony/mc/camera/databinding/FragmentStreamingModeQuickSettingBindingImpl;->mStreamingUiState:Ljp/co/sony/mc/camera/view/uistate/StreamingUiState;
-
-    .line 123
-    monitor-enter p0
-
-    .line 124
-    :try_start_0
-    iget-wide v0, p0, Ljp/co/sony/mc/camera/databinding/FragmentStreamingModeQuickSettingBindingImpl;->mDirtyFlags:J
-
-    const-wide/16 v2, 0x100
-
-    or-long/2addr v0, v2
-
-    iput-wide v0, p0, Ljp/co/sony/mc/camera/databinding/FragmentStreamingModeQuickSettingBindingImpl;->mDirtyFlags:J
-
-    .line 125
-    monitor-exit p0
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
-
-    const/16 p1, 0x1e
-
-    .line 126
-    invoke-virtual {p0, p1}, Ljp/co/sony/mc/camera/databinding/FragmentStreamingModeQuickSettingBindingImpl;->notifyPropertyChanged(I)V
-
-    .line 127
-    invoke-super {p0}, Ljp/co/sony/mc/camera/databinding/FragmentStreamingModeQuickSettingBinding;->requestRebind()V
-
-    return-void
-
-    :catchall_0
-    move-exception p1
-
-    .line 125
-    :try_start_1
-    monitor-exit p0
-    :try_end_1
-    .catchall {:try_start_1 .. :try_end_1} :catchall_0
-
-    throw p1
-.end method
-
-.method public setVariable(ILjava/lang/Object;)Z
-    .locals 1
-
-    const/16 v0, 0x1e
-
-    if-ne v0, p1, :cond_0
-
-    .line 101
-    check-cast p2, Ljp/co/sony/mc/camera/view/uistate/StreamingUiState;
-
-    invoke-virtual {p0, p2}, Ljp/co/sony/mc/camera/databinding/FragmentStreamingModeQuickSettingBindingImpl;->setStreamingUiState(Ljp/co/sony/mc/camera/view/uistate/StreamingUiState;)V
-
-    goto :goto_0
-
-    :cond_0
-    const/16 v0, 0x13
-
-    if-ne v0, p1, :cond_1
-
-    .line 104
-    check-cast p2, Ljp/co/sony/mc/camera/view/viewmodel/OrientationViewModel;
-
-    invoke-virtual {p0, p2}, Ljp/co/sony/mc/camera/databinding/FragmentStreamingModeQuickSettingBindingImpl;->setOrientationViewModel(Ljp/co/sony/mc/camera/view/viewmodel/OrientationViewModel;)V
-
-    goto :goto_0
-
-    :cond_1
-    const/4 v0, 0x3
-
-    if-ne v0, p1, :cond_2
-
-    .line 107
-    check-cast p2, Ljp/co/sony/mc/camera/view/uistate/BasicModeCommonUiState;
-
-    invoke-virtual {p0, p2}, Ljp/co/sony/mc/camera/databinding/FragmentStreamingModeQuickSettingBindingImpl;->setBasicModeCommonUiState(Ljp/co/sony/mc/camera/view/uistate/BasicModeCommonUiState;)V
-
-    goto :goto_0
-
-    :cond_2
-    const/4 v0, 0x4
-
-    if-ne v0, p1, :cond_3
-
-    .line 110
-    check-cast p2, Ljp/co/sony/mc/camera/view/uistate/BasicModeQuickSettingUiState;
-
-    invoke-virtual {p0, p2}, Ljp/co/sony/mc/camera/databinding/FragmentStreamingModeQuickSettingBindingImpl;->setBasicModeQuickSettingUiState(Ljp/co/sony/mc/camera/view/uistate/BasicModeQuickSettingUiState;)V
-
-    goto :goto_0
-
-    :cond_3
-    const/4 v0, 0x7
-
-    if-ne v0, p1, :cond_4
-
-    .line 113
-    check-cast p2, Ljp/co/sony/mc/camera/view/viewmodel/CameraSettingsModel;
-
-    invoke-virtual {p0, p2}, Ljp/co/sony/mc/camera/databinding/FragmentStreamingModeQuickSettingBindingImpl;->setCameraSettingsModel(Ljp/co/sony/mc/camera/view/viewmodel/CameraSettingsModel;)V
-
-    :goto_0
-    const/4 p0, 0x1
-
-    goto :goto_1
-
-    :cond_4
-    const/4 p0, 0x0
-
-    :goto_1
-    return p0
 .end method

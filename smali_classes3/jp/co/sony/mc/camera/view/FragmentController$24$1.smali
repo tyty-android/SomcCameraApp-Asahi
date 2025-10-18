@@ -25,7 +25,7 @@
 .method constructor <init>(Ljp/co/sony/mc/camera/view/FragmentController$24;)V
     .locals 0
 
-    .line 9158
+    .line 9443
     iput-object p1, p0, Ljp/co/sony/mc/camera/view/FragmentController$24$1;->this$1:Ljp/co/sony/mc/camera/view/FragmentController$24;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -38,7 +38,7 @@
 .method public run()V
     .locals 0
 
-    .line 9161
+    .line 9446
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/FragmentController$24$1;->this$1:Ljp/co/sony/mc/camera/view/FragmentController$24;
 
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/FragmentController$24;->this$0:Ljp/co/sony/mc/camera/view/FragmentController;

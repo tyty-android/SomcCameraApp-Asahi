@@ -54,7 +54,7 @@
 .end method
 
 .method private static addFontWeightStyle(Ljava/lang/Object;Ljava/lang/String;IZ)Z
-    .locals 3
+    .locals 1
 
     .line 135
     invoke-static {}, Landroidx/core/graphics/TypefaceCompatApi21Impl;->init()V
@@ -63,33 +63,21 @@
     :try_start_0
     sget-object v0, Landroidx/core/graphics/TypefaceCompatApi21Impl;->sAddFontWeightStyle:Ljava/lang/reflect/Method;
 
-    const/4 v1, 0x3
-
-    new-array v1, v1, [Ljava/lang/Object;
-
-    const/4 v2, 0x0
-
-    aput-object p1, v1, v2
-
     .line 138
     invoke-static {p2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
-    move-result-object p1
-
-    const/4 p2, 0x1
-
-    aput-object p1, v1, p2
+    move-result-object p2
 
     invoke-static {p3}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
+    move-result-object p3
+
+    filled-new-array {p1, p2, p3}, [Ljava/lang/Object;
+
     move-result-object p1
 
-    const/4 p2, 0x2
-
-    aput-object p1, v1, p2
-
     .line 137
-    invoke-virtual {v0, p0, v1}, Ljava/lang/reflect/Method;->invoke(Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v0, p0, p1}, Ljava/lang/reflect/Method;->invoke(Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p0
 

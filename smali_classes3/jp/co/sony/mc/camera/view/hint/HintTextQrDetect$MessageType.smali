@@ -37,6 +37,8 @@
 
 
 # instance fields
+.field private final mDisplayLocation:Ljp/co/sony/mc/camera/view/hint/HintTextContent$DisplayLocation;
+
 .field private final mIsToast:Z
 
 .field private final mLeftButtonResourceId:I
@@ -74,6 +76,14 @@
     move-result-object v0
 
     return-object v0
+.end method
+
+.method static bridge synthetic -$$Nest$fgetmDisplayLocation(Ljp/co/sony/mc/camera/view/hint/HintTextQrDetect$MessageType;)Ljp/co/sony/mc/camera/view/hint/HintTextContent$DisplayLocation;
+    .locals 0
+
+    iget-object p0, p0, Ljp/co/sony/mc/camera/view/hint/HintTextQrDetect$MessageType;->mDisplayLocation:Ljp/co/sony/mc/camera/view/hint/HintTextContent$DisplayLocation;
+
+    return-object p0
 .end method
 
 .method static bridge synthetic -$$Nest$fgetmIsToast(Ljp/co/sony/mc/camera/view/hint/HintTextQrDetect$MessageType;)Z
@@ -149,16 +159,18 @@
 .end method
 
 .method static constructor <clinit>()V
-    .locals 23
+    .locals 25
 
     .line 22
-    new-instance v11, Ljp/co/sony/mc/camera/view/hint/HintTextQrDetect$MessageType;
+    new-instance v12, Ljp/co/sony/mc/camera/view/hint/HintTextQrDetect$MessageType;
 
     sget-object v7, Ljp/co/sony/mc/camera/view/hint/HintTextContent$MessageWrapType;->FORCE_WRAP:Ljp/co/sony/mc/camera/view/hint/HintTextContent$MessageWrapType;
 
     sget-object v9, Ljp/co/sony/mc/camera/view/hint/HintTextContent$HintPriority;->HIGHEST:Ljp/co/sony/mc/camera/view/hint/HintTextContent$HintPriority;
 
     const/4 v10, 0x1
+
+    sget-object v11, Ljp/co/sony/mc/camera/view/hint/HintTextContent$DisplayLocation;->BOTTOM:Ljp/co/sony/mc/camera/view/hint/HintTextContent$DisplayLocation;
 
     const-string v1, "QR_DETECT_RESULT_URL"
 
@@ -172,44 +184,46 @@
 
     const v6, 0x800013
 
-    const v8, 0x7f080108
+    const v8, 0x7f08010d
 
-    move-object v0, v11
+    move-object v0, v12
 
-    invoke-direct/range {v0 .. v10}, Ljp/co/sony/mc/camera/view/hint/HintTextQrDetect$MessageType;-><init>(Ljava/lang/String;IILjava/lang/String;IILjp/co/sony/mc/camera/view/hint/HintTextContent$MessageWrapType;ILjp/co/sony/mc/camera/view/hint/HintTextContent$HintPriority;Z)V
+    invoke-direct/range {v0 .. v11}, Ljp/co/sony/mc/camera/view/hint/HintTextQrDetect$MessageType;-><init>(Ljava/lang/String;IILjava/lang/String;IILjp/co/sony/mc/camera/view/hint/HintTextContent$MessageWrapType;ILjp/co/sony/mc/camera/view/hint/HintTextContent$HintPriority;ZLjp/co/sony/mc/camera/view/hint/HintTextContent$DisplayLocation;)V
 
-    sput-object v11, Ljp/co/sony/mc/camera/view/hint/HintTextQrDetect$MessageType;->QR_DETECT_RESULT_URL:Ljp/co/sony/mc/camera/view/hint/HintTextQrDetect$MessageType;
+    sput-object v12, Ljp/co/sony/mc/camera/view/hint/HintTextQrDetect$MessageType;->QR_DETECT_RESULT_URL:Ljp/co/sony/mc/camera/view/hint/HintTextQrDetect$MessageType;
 
-    .line 31
+    .line 32
     new-instance v0, Ljp/co/sony/mc/camera/view/hint/HintTextQrDetect$MessageType;
 
-    sget-object v19, Ljp/co/sony/mc/camera/view/hint/HintTextContent$MessageWrapType;->FORCE_WRAP:Ljp/co/sony/mc/camera/view/hint/HintTextContent$MessageWrapType;
+    sget-object v20, Ljp/co/sony/mc/camera/view/hint/HintTextContent$MessageWrapType;->FORCE_WRAP:Ljp/co/sony/mc/camera/view/hint/HintTextContent$MessageWrapType;
 
-    sget-object v21, Ljp/co/sony/mc/camera/view/hint/HintTextContent$HintPriority;->HIGHEST:Ljp/co/sony/mc/camera/view/hint/HintTextContent$HintPriority;
+    sget-object v22, Ljp/co/sony/mc/camera/view/hint/HintTextContent$HintPriority;->HIGHEST:Ljp/co/sony/mc/camera/view/hint/HintTextContent$HintPriority;
 
-    const/16 v22, 0x1
+    const/16 v23, 0x1
 
-    const-string v13, "QR_DETECT_RESULT_WIFI"
+    sget-object v24, Ljp/co/sony/mc/camera/view/hint/HintTextContent$DisplayLocation;->BOTTOM:Ljp/co/sony/mc/camera/view/hint/HintTextContent$DisplayLocation;
 
-    const/4 v14, 0x1
+    const-string v14, "QR_DETECT_RESULT_WIFI"
 
-    const/4 v15, -0x1
+    const/4 v15, 0x1
 
-    const/16 v16, 0x0
+    const/16 v16, -0x1
 
-    const/16 v17, 0x2
+    const/16 v17, 0x0
 
-    const v18, 0x800013
+    const/16 v18, 0x2
 
-    const v20, 0x7f080108
+    const v19, 0x800013
 
-    move-object v12, v0
+    const v21, 0x7f08010d
 
-    invoke-direct/range {v12 .. v22}, Ljp/co/sony/mc/camera/view/hint/HintTextQrDetect$MessageType;-><init>(Ljava/lang/String;IILjava/lang/String;IILjp/co/sony/mc/camera/view/hint/HintTextContent$MessageWrapType;ILjp/co/sony/mc/camera/view/hint/HintTextContent$HintPriority;Z)V
+    move-object v13, v0
+
+    invoke-direct/range {v13 .. v24}, Ljp/co/sony/mc/camera/view/hint/HintTextQrDetect$MessageType;-><init>(Ljava/lang/String;IILjava/lang/String;IILjp/co/sony/mc/camera/view/hint/HintTextContent$MessageWrapType;ILjp/co/sony/mc/camera/view/hint/HintTextContent$HintPriority;ZLjp/co/sony/mc/camera/view/hint/HintTextContent$DisplayLocation;)V
 
     sput-object v0, Ljp/co/sony/mc/camera/view/hint/HintTextQrDetect$MessageType;->QR_DETECT_RESULT_WIFI:Ljp/co/sony/mc/camera/view/hint/HintTextQrDetect$MessageType;
 
-    .line 40
+    .line 42
     new-instance v0, Ljp/co/sony/mc/camera/view/hint/HintTextQrDetect$MessageType;
 
     sget-object v8, Ljp/co/sony/mc/camera/view/hint/HintTextContent$MessageWrapType;->WORD_WRAP:Ljp/co/sony/mc/camera/view/hint/HintTextContent$MessageWrapType;
@@ -218,11 +232,13 @@
 
     const/4 v11, 0x1
 
+    sget-object v12, Ljp/co/sony/mc/camera/view/hint/HintTextContent$DisplayLocation;->BOTTOM:Ljp/co/sony/mc/camera/view/hint/HintTextContent$DisplayLocation;
+
     const-string v2, "QR_DETECT_CONNECT_MATTER"
 
     const/4 v3, 0x2
 
-    const v4, 0x7f11033e
+    const v4, 0x7f110370
 
     const/4 v5, 0x0
 
@@ -230,51 +246,55 @@
 
     const v7, 0x800013
 
-    const v9, 0x7f080108
+    const v9, 0x7f08010d
 
     move-object v1, v0
 
-    invoke-direct/range {v1 .. v11}, Ljp/co/sony/mc/camera/view/hint/HintTextQrDetect$MessageType;-><init>(Ljava/lang/String;IILjava/lang/String;IILjp/co/sony/mc/camera/view/hint/HintTextContent$MessageWrapType;ILjp/co/sony/mc/camera/view/hint/HintTextContent$HintPriority;Z)V
+    invoke-direct/range {v1 .. v12}, Ljp/co/sony/mc/camera/view/hint/HintTextQrDetect$MessageType;-><init>(Ljava/lang/String;IILjava/lang/String;IILjp/co/sony/mc/camera/view/hint/HintTextContent$MessageWrapType;ILjp/co/sony/mc/camera/view/hint/HintTextContent$HintPriority;ZLjp/co/sony/mc/camera/view/hint/HintTextContent$DisplayLocation;)V
 
     sput-object v0, Ljp/co/sony/mc/camera/view/hint/HintTextQrDetect$MessageType;->QR_DETECT_CONNECT_MATTER:Ljp/co/sony/mc/camera/view/hint/HintTextQrDetect$MessageType;
 
-    .line 49
+    .line 52
     new-instance v0, Ljp/co/sony/mc/camera/view/hint/HintTextQrDetect$MessageType;
 
-    sget-object v19, Ljp/co/sony/mc/camera/view/hint/HintTextContent$MessageWrapType;->WORD_WRAP:Ljp/co/sony/mc/camera/view/hint/HintTextContent$MessageWrapType;
+    sget-object v20, Ljp/co/sony/mc/camera/view/hint/HintTextContent$MessageWrapType;->WORD_WRAP:Ljp/co/sony/mc/camera/view/hint/HintTextContent$MessageWrapType;
 
-    sget-object v21, Ljp/co/sony/mc/camera/view/hint/HintTextContent$HintPriority;->HIGHEST:Ljp/co/sony/mc/camera/view/hint/HintTextContent$HintPriority;
+    sget-object v22, Ljp/co/sony/mc/camera/view/hint/HintTextContent$HintPriority;->HIGHEST:Ljp/co/sony/mc/camera/view/hint/HintTextContent$HintPriority;
 
-    const-string v13, "QR_DETECT_RESULT_OTHER"
+    sget-object v24, Ljp/co/sony/mc/camera/view/hint/HintTextContent$DisplayLocation;->BOTTOM:Ljp/co/sony/mc/camera/view/hint/HintTextContent$DisplayLocation;
 
-    const/4 v14, 0x3
+    const-string v14, "QR_DETECT_RESULT_OTHER"
 
-    const v15, 0x7f11033f
+    const/4 v15, 0x3
 
-    const/16 v17, 0x1
+    const v16, 0x7f110371
 
-    move-object v12, v0
+    const/16 v18, 0x1
 
-    invoke-direct/range {v12 .. v22}, Ljp/co/sony/mc/camera/view/hint/HintTextQrDetect$MessageType;-><init>(Ljava/lang/String;IILjava/lang/String;IILjp/co/sony/mc/camera/view/hint/HintTextContent$MessageWrapType;ILjp/co/sony/mc/camera/view/hint/HintTextContent$HintPriority;Z)V
+    move-object v13, v0
+
+    invoke-direct/range {v13 .. v24}, Ljp/co/sony/mc/camera/view/hint/HintTextQrDetect$MessageType;-><init>(Ljava/lang/String;IILjava/lang/String;IILjp/co/sony/mc/camera/view/hint/HintTextContent$MessageWrapType;ILjp/co/sony/mc/camera/view/hint/HintTextContent$HintPriority;ZLjp/co/sony/mc/camera/view/hint/HintTextContent$DisplayLocation;)V
 
     sput-object v0, Ljp/co/sony/mc/camera/view/hint/HintTextQrDetect$MessageType;->QR_DETECT_RESULT_OTHER:Ljp/co/sony/mc/camera/view/hint/HintTextQrDetect$MessageType;
 
-    .line 58
+    .line 62
     new-instance v0, Ljp/co/sony/mc/camera/view/hint/HintTextQrDetect$MessageType;
 
     sget-object v8, Ljp/co/sony/mc/camera/view/hint/HintTextContent$MessageWrapType;->WORD_WRAP:Ljp/co/sony/mc/camera/view/hint/HintTextContent$MessageWrapType;
 
     sget-object v10, Ljp/co/sony/mc/camera/view/hint/HintTextContent$HintPriority;->HIGHEST:Ljp/co/sony/mc/camera/view/hint/HintTextContent$HintPriority;
 
+    sget-object v12, Ljp/co/sony/mc/camera/view/hint/HintTextContent$DisplayLocation;->BOTTOM:Ljp/co/sony/mc/camera/view/hint/HintTextContent$DisplayLocation;
+
     const-string v2, "QR_DETECT_CANNOT_CONNECT_WIFI"
 
     const/4 v3, 0x4
 
-    const v4, 0x7f110341
+    const v4, 0x7f110373
 
     move-object v1, v0
 
-    invoke-direct/range {v1 .. v11}, Ljp/co/sony/mc/camera/view/hint/HintTextQrDetect$MessageType;-><init>(Ljava/lang/String;IILjava/lang/String;IILjp/co/sony/mc/camera/view/hint/HintTextContent$MessageWrapType;ILjp/co/sony/mc/camera/view/hint/HintTextContent$HintPriority;Z)V
+    invoke-direct/range {v1 .. v12}, Ljp/co/sony/mc/camera/view/hint/HintTextQrDetect$MessageType;-><init>(Ljava/lang/String;IILjava/lang/String;IILjp/co/sony/mc/camera/view/hint/HintTextContent$MessageWrapType;ILjp/co/sony/mc/camera/view/hint/HintTextContent$HintPriority;ZLjp/co/sony/mc/camera/view/hint/HintTextContent$DisplayLocation;)V
 
     sput-object v0, Ljp/co/sony/mc/camera/view/hint/HintTextQrDetect$MessageType;->QR_DETECT_CANNOT_CONNECT_WIFI:Ljp/co/sony/mc/camera/view/hint/HintTextQrDetect$MessageType;
 
@@ -288,7 +308,7 @@
     return-void
 .end method
 
-.method private constructor <init>(Ljava/lang/String;IILjava/lang/String;IILjp/co/sony/mc/camera/view/hint/HintTextContent$MessageWrapType;ILjp/co/sony/mc/camera/view/hint/HintTextContent$HintPriority;Z)V
+.method private constructor <init>(Ljava/lang/String;IILjava/lang/String;IILjp/co/sony/mc/camera/view/hint/HintTextContent$MessageWrapType;ILjp/co/sony/mc/camera/view/hint/HintTextContent$HintPriority;ZLjp/co/sony/mc/camera/view/hint/HintTextContent$DisplayLocation;)V
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -298,36 +318,41 @@
             "Ljp/co/sony/mc/camera/view/hint/HintTextContent$MessageWrapType;",
             "I",
             "Ljp/co/sony/mc/camera/view/hint/HintTextContent$HintPriority;",
-            "Z)V"
+            "Z",
+            "Ljp/co/sony/mc/camera/view/hint/HintTextContent$DisplayLocation;",
+            ")V"
         }
     .end annotation
 
-    .line 80
+    .line 86
     invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
-    .line 81
+    .line 87
     iput p3, p0, Ljp/co/sony/mc/camera/view/hint/HintTextQrDetect$MessageType;->mMessageResourceId:I
 
-    .line 82
+    .line 88
     iput-object p4, p0, Ljp/co/sony/mc/camera/view/hint/HintTextQrDetect$MessageType;->mMessageString:Ljava/lang/String;
 
-    .line 83
+    .line 89
     iput p5, p0, Ljp/co/sony/mc/camera/view/hint/HintTextQrDetect$MessageType;->mMessageLines:I
 
-    .line 84
+    .line 90
     iput p6, p0, Ljp/co/sony/mc/camera/view/hint/HintTextQrDetect$MessageType;->mMessageGravity:I
 
-    .line 85
+    .line 91
     iput-object p7, p0, Ljp/co/sony/mc/camera/view/hint/HintTextQrDetect$MessageType;->mWrapType:Ljp/co/sony/mc/camera/view/hint/HintTextContent$MessageWrapType;
 
-    .line 86
+    .line 92
     iput p8, p0, Ljp/co/sony/mc/camera/view/hint/HintTextQrDetect$MessageType;->mLeftButtonResourceId:I
 
-    .line 87
+    .line 93
     iput-object p9, p0, Ljp/co/sony/mc/camera/view/hint/HintTextQrDetect$MessageType;->mPriority:Ljp/co/sony/mc/camera/view/hint/HintTextContent$HintPriority;
 
-    .line 88
+    .line 94
     iput-boolean p10, p0, Ljp/co/sony/mc/camera/view/hint/HintTextQrDetect$MessageType;->mIsToast:Z
+
+    .line 95
+    iput-object p11, p0, Ljp/co/sony/mc/camera/view/hint/HintTextQrDetect$MessageType;->mDisplayLocation:Ljp/co/sony/mc/camera/view/hint/HintTextContent$DisplayLocation;
 
     return-void
 .end method

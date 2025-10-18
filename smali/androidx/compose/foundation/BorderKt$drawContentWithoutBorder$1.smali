@@ -78,7 +78,7 @@
 .method public bridge synthetic invoke(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
 
-    .line 437
+    .line 441
     check-cast p1, Landroidx/compose/ui/graphics/drawscope/ContentDrawScope;
 
     invoke-virtual {p0, p1}, Landroidx/compose/foundation/BorderKt$drawContentWithoutBorder$1;->invoke(Landroidx/compose/ui/graphics/drawscope/ContentDrawScope;)V
@@ -91,11 +91,7 @@
 .method public final invoke(Landroidx/compose/ui/graphics/drawscope/ContentDrawScope;)V
     .locals 0
 
-    const-string p0, "$this$onDrawWithContent"
-
-    invoke-static {p1, p0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 438
+    .line 442
     invoke-interface {p1}, Landroidx/compose/ui/graphics/drawscope/ContentDrawScope;->drawContent()V
 
     return-void

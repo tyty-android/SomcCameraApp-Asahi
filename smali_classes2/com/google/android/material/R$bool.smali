@@ -18,7 +18,7 @@
 
 .field public static final abc_config_actionMenuItemAllCaps:I = 0x7f050001
 
-.field public static final mtrl_btn_textappearance_all_caps:I = 0x7f050006
+.field public static final mtrl_btn_textappearance_all_caps:I = 0x7f050005
 
 
 # direct methods

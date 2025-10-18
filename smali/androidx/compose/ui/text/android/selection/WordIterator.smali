@@ -59,6 +59,8 @@
 
 
 # static fields
+.field public static final $stable:I
+
 .field public static final Companion:Landroidx/compose/ui/text/android/selection/WordIterator$Companion;
 
 .field private static final WINDOW_WIDTH:I = 0x32
@@ -86,15 +88,15 @@
 
     sput-object v0, Landroidx/compose/ui/text/android/selection/WordIterator;->Companion:Landroidx/compose/ui/text/android/selection/WordIterator$Companion;
 
+    const/16 v0, 0x8
+
+    sput v0, Landroidx/compose/ui/text/android/selection/WordIterator;->$stable:I
+
     return-void
 .end method
 
 .method public constructor <init>(Ljava/lang/CharSequence;IILjava/util/Locale;)V
     .locals 2
-
-    const-string v0, "charSequence"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 35
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -124,10 +126,6 @@
     invoke-static {p4}, Ljava/text/BreakIterator;->getWordInstance(Ljava/util/Locale;)Ljava/text/BreakIterator;
 
     move-result-object p4
-
-    const-string v0, "getWordInstance(locale)"
-
-    invoke-static {p4, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
 
     iput-object p4, p0, Landroidx/compose/ui/text/android/selection/WordIterator;->iterator:Ljava/text/BreakIterator;
 

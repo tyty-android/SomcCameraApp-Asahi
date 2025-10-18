@@ -14,72 +14,69 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/SourceDebugExtension;
-    value = "SMAP\nProModeCameraSettingsFunctionCustomFragment.kt\nKotlin\n*S Kotlin\n*F\n+ 1 ProModeCameraSettingsFunctionCustomFragment.kt\njp/co/sony/mc/camera/view/setting/fragment/ProModeCameraSettingsFunctionCustomFragment\n+ 2 _Collections.kt\nkotlin/collections/CollectionsKt___CollectionsKt\n*L\n1#1,536:1\n766#2:537\n857#2,2:538\n766#2:540\n857#2,2:541\n766#2:543\n857#2,2:544\n766#2:546\n857#2,2:547\n766#2:549\n857#2,2:550\n766#2:552\n857#2,2:553\n766#2:555\n857#2,2:556\n766#2:558\n857#2,2:559\n*S KotlinDebug\n*F\n+ 1 ProModeCameraSettingsFunctionCustomFragment.kt\njp/co/sony/mc/camera/view/setting/fragment/ProModeCameraSettingsFunctionCustomFragment\n*L\n107#1:537\n107#1:538,2\n123#1:540\n123#1:541,2\n136#1:543\n136#1:544,2\n145#1:546\n145#1:547,2\n165#1:549\n165#1:550,2\n179#1:552\n179#1:553,2\n191#1:555\n191#1:556,2\n200#1:558\n200#1:559,2\n*E\n"
+    value = "SMAP\nProModeCameraSettingsFunctionCustomFragment.kt\nKotlin\n*S Kotlin\n*F\n+ 1 ProModeCameraSettingsFunctionCustomFragment.kt\njp/co/sony/mc/camera/view/setting/fragment/ProModeCameraSettingsFunctionCustomFragment\n+ 2 _Collections.kt\nkotlin/collections/CollectionsKt___CollectionsKt\n*L\n1#1,536:1\n774#2:537\n865#2,2:538\n774#2:540\n865#2,2:541\n774#2:543\n865#2,2:544\n774#2:546\n865#2,2:547\n774#2:549\n865#2,2:550\n774#2:552\n865#2,2:553\n774#2:555\n865#2,2:556\n774#2:558\n865#2,2:559\n*S KotlinDebug\n*F\n+ 1 ProModeCameraSettingsFunctionCustomFragment.kt\njp/co/sony/mc/camera/view/setting/fragment/ProModeCameraSettingsFunctionCustomFragment\n*L\n107#1:537\n107#1:538,2\n123#1:540\n123#1:541,2\n136#1:543\n136#1:544,2\n145#1:546\n145#1:547,2\n165#1:549\n165#1:550,2\n179#1:552\n179#1:553,2\n191#1:555\n191#1:556,2\n200#1:558\n200#1:559,2\n*E\n"
 .end annotation
 
 .annotation runtime Lkotlin/Metadata;
     d1 = {
-        "\u0000\u009a\u0001\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0008\n\u0000\n\u0002\u0010!\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010 \n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0005\n\u0002\u0018\u0002\n\u0002\u0008\u0006\n\u0002\u0018\u0002\n\u0002\u0008\u0008\n\u0002\u0018\u0002\n\u0002\u0008\u0003\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0003\n\u0002\u0010\u000b\n\u0002\u0008\u0003\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0002\n\u0002\u0008\n\u0008\u0007\u0018\u0000 I2\u00020\u0001:\u0004HIJKB\u0005\u00a2\u0006\u0002\u0010\u0002J\u0008\u00105\u001a\u00020\u000eH\u0002J\u0008\u00106\u001a\u00020\u000eH\u0002J\u0008\u00107\u001a\u000208H\u0002J\u0008\u00109\u001a\u000208H\u0002J&\u0010:\u001a\u0004\u0018\u00010.2\u0006\u0010;\u001a\u00020<2\u0008\u0010=\u001a\u0004\u0018\u00010>2\u0008\u0010?\u001a\u0004\u0018\u00010@H\u0016J\u0008\u0010A\u001a\u00020BH\u0016J\u0008\u0010C\u001a\u00020BH\u0016J\u0008\u0010D\u001a\u00020BH\u0016J\u0008\u0010E\u001a\u00020BH\u0002J\u0010\u0010F\u001a\u00020B2\u0006\u0010G\u001a\u000208H\u0002R\u000e\u0010\u0003\u001a\u00020\u0004X\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u0005\u001a\u00020\u0006X\u0082.\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u0007\u001a\u00020\u0008X\u0082.\u00a2\u0006\u0002\n\u0000R\u000e\u0010\t\u001a\u00020\nX\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u000b\u001a\u00020\u000cX\u0082.\u00a2\u0006\u0002\n\u0000R\u000e\u0010\r\u001a\u00020\u000eX\u0082\u000e\u00a2\u0006\u0002\n\u0000R\u0014\u0010\u000f\u001a\u0008\u0012\u0004\u0012\u00020\u00110\u0010X\u0082.\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u0012\u001a\u00020\u0013X\u0082.\u00a2\u0006\u0002\n\u0000R\u0014\u0010\u0014\u001a\u0008\u0012\u0004\u0012\u00020\u00160\u0015X\u0082.\u00a2\u0006\u0002\n\u0000R\u001b\u0010\u0017\u001a\u00020\u00188BX\u0082\u0084\u0002\u00a2\u0006\u000c\n\u0004\u0008\u001b\u0010\u001c\u001a\u0004\u0008\u0019\u0010\u001aR\u0010\u0010\u001d\u001a\u0004\u0018\u00010\u001eX\u0082\u000e\u00a2\u0006\u0002\n\u0000R\u001a\u0010\u001f\u001a\u0008\u0012\u0004\u0012\u00020\u00160\u00158BX\u0082\u0004\u00a2\u0006\u0006\u001a\u0004\u0008 \u0010!R\u001a\u0010\"\u001a\u0008\u0012\u0004\u0012\u00020\u00160\u00158BX\u0082\u0004\u00a2\u0006\u0006\u001a\u0004\u0008#\u0010!R#\u0010$\u001a\n &*\u0004\u0018\u00010%0%8BX\u0082\u0084\u0002\u00a2\u0006\u000c\n\u0004\u0008)\u0010\u001c\u001a\u0004\u0008\'\u0010(R\u0014\u0010*\u001a\u00020\u000e8BX\u0082\u0004\u00a2\u0006\u0006\u001a\u0004\u0008+\u0010,R\u000e\u0010-\u001a\u00020.X\u0082.\u00a2\u0006\u0002\n\u0000R\u0014\u0010/\u001a\u00020\u000e8BX\u0082\u0004\u00a2\u0006\u0006\u001a\u0004\u00080\u0010,R\u000e\u00101\u001a\u000202X\u0082.\u00a2\u0006\u0002\n\u0000R\u0016\u00103\u001a\n &*\u0004\u0018\u00010404X\u0082\u0004\u00a2\u0006\u0002\n\u0000\u00a8\u0006L"
+        "\u0000\u0098\u0001\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0003\n\u0002\u0010!\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010 \n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0003\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0005\n\u0002\u0010\u0008\n\u0002\u0008\u000b\n\u0002\u0018\u0002\n\u0002\u0008\u0005\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0002\n\u0002\u0008\u0005\n\u0002\u0010\u000b\n\u0002\u0008\t\u0008\u0007\u0018\u0000 J2\u00020\u0001:\u0004JKLMB\t\u0008\u0007\u00a2\u0006\u0004\u0008\u0002\u0010\u0003J&\u00107\u001a\u0004\u0018\u00010\u00112\u0006\u00108\u001a\u0002092\u0008\u0010:\u001a\u0004\u0018\u00010;2\u0008\u0010<\u001a\u0004\u0018\u00010=H\u0016J\u0008\u0010>\u001a\u00020?H\u0016J\u0008\u0010@\u001a\u00020?H\u0016J\u0008\u0010A\u001a\u00020?H\u0016J\u0008\u0010B\u001a\u00020?H\u0002J\u0010\u0010C\u001a\u00020?2\u0006\u0010D\u001a\u00020EH\u0002J\u0008\u0010F\u001a\u00020\'H\u0002J\u0008\u0010G\u001a\u00020EH\u0002J\u0008\u0010H\u001a\u00020EH\u0002J\u0008\u0010I\u001a\u00020\'H\u0002R\u0014\u0010\u0004\u001a\u0008\u0012\u0004\u0012\u00020\u00060\u0005X\u0082.\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u0007\u001a\u00020\u0008X\u0082.\u00a2\u0006\u0002\n\u0000R\u000e\u0010\t\u001a\u00020\nX\u0082.\u00a2\u0006\u0002\n\u0000R\u0014\u0010\u000b\u001a\u0008\u0012\u0004\u0012\u00020\r0\u000cX\u0082.\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u000e\u001a\u00020\u000fX\u0082.\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u0010\u001a\u00020\u0011X\u0082.\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u0012\u001a\u00020\u0013X\u0082.\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u0014\u001a\u00020\u0015X\u0082.\u00a2\u0006\u0002\n\u0000R\u0018\u0010\u0016\u001a\n \u0018*\u0004\u0018\u00010\u00170\u0017X\u0082\u0004\u00a2\u0006\u0004\n\u0002\u0010\u0019R\u000e\u0010\u001a\u001a\u00020\u001bX\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u001c\u001a\u00020\u001dX\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u0010\u0010\u001e\u001a\u0004\u0018\u00010\u001fX\u0082\u000e\u00a2\u0006\u0002\n\u0000R#\u0010 \u001a\n \u0018*\u0004\u0018\u00010!0!8BX\u0082\u0084\u0002\u00a2\u0006\u000c\n\u0004\u0008$\u0010%\u001a\u0004\u0008\"\u0010#R\u000e\u0010&\u001a\u00020\'X\u0082\u000e\u00a2\u0006\u0002\n\u0000R\u0014\u0010(\u001a\u00020\'8BX\u0082\u0004\u00a2\u0006\u0006\u001a\u0004\u0008)\u0010*R\u0014\u0010+\u001a\u00020\'8BX\u0082\u0004\u00a2\u0006\u0006\u001a\u0004\u0008,\u0010*R\u001a\u0010-\u001a\u0008\u0012\u0004\u0012\u00020\r0\u000c8BX\u0082\u0004\u00a2\u0006\u0006\u001a\u0004\u0008.\u0010/R\u001a\u00100\u001a\u0008\u0012\u0004\u0012\u00020\r0\u000c8BX\u0082\u0004\u00a2\u0006\u0006\u001a\u0004\u00081\u0010/R\u001b\u00102\u001a\u0002038BX\u0082\u0084\u0002\u00a2\u0006\u000c\n\u0004\u00086\u0010%\u001a\u0004\u00084\u00105\u00a8\u0006N"
     }
     d2 = {
         "Ljp/co/sony/mc/camera/view/setting/fragment/ProModeCameraSettingsFunctionCustomFragment;",
         "Landroidx/fragment/app/Fragment;",
+        "<init>",
         "()V",
-        "checker",
-        "Ljp/co/sony/mc/camera/setting/SettingAppearanceChecker;",
-        "description",
-        "Landroid/widget/TextView;",
-        "descriptionBottomCover",
-        "Landroid/widget/FrameLayout;",
-        "descriptionGlobalLayoutListener",
-        "Landroid/view/ViewTreeObserver$OnGlobalLayoutListener;",
-        "fnItemAdapter",
-        "Ljp/co/sony/mc/camera/view/setting/fragment/FnItemAdapter;",
-        "fnItemSelectIndex",
-        "",
         "fnList",
         "",
         "Ljp/co/sony/mc/camera/configuration/parameters/FunctionCustom;",
+        "fnItemAdapter",
+        "Ljp/co/sony/mc/camera/view/setting/fragment/FnItemAdapter;",
         "functionCustomAdapter",
         "Ljp/co/sony/mc/camera/view/setting/fragment/ProModeCameraSettingsFunctionCustomFragment$FunctionCustomAdapter;",
         "functionCustomGroup",
         "",
         "Ljp/co/sony/mc/camera/view/setting/fragment/ProModeCameraSettingsFunctionCustomFragment$Category;",
-        "mItemTouchHelper",
-        "Landroidx/recyclerview/widget/ItemTouchHelper;",
-        "getMItemTouchHelper",
-        "()Landroidx/recyclerview/widget/ItemTouchHelper;",
-        "mItemTouchHelper$delegate",
-        "Lkotlin/Lazy;",
+        "selectListView",
+        "Landroid/widget/ExpandableListView;",
+        "selectListCover",
+        "Landroid/view/View;",
+        "description",
+        "Landroid/widget/TextView;",
+        "descriptionBottomCover",
+        "Landroid/widget/FrameLayout;",
+        "setting",
+        "Ljp/co/sony/mc/camera/setting/CameraProSetting;",
+        "kotlin.jvm.PlatformType",
+        "Ljp/co/sony/mc/camera/setting/CameraProSetting;",
+        "checker",
+        "Ljp/co/sony/mc/camera/setting/SettingAppearanceChecker;",
+        "descriptionGlobalLayoutListener",
+        "Landroid/view/ViewTreeObserver$OnGlobalLayoutListener;",
         "onItemDraggingListener",
         "Ljp/co/sony/mc/camera/view/setting/fragment/ProModeCameraSettingsFunctionCustomFragment$OnItemDraggingListener;",
+        "refreshAnimation",
+        "Landroid/view/animation/Animation;",
+        "getRefreshAnimation",
+        "()Landroid/view/animation/Animation;",
+        "refreshAnimation$delegate",
+        "Lkotlin/Lazy;",
+        "fnItemSelectIndex",
+        "",
+        "selectListGroupIndex",
+        "getSelectListGroupIndex",
+        "()I",
+        "selectListChildIndex",
+        "getSelectListChildIndex",
         "proPhotoCustomGroup",
         "getProPhotoCustomGroup",
         "()Ljava/util/List;",
         "proVideoCustomGroup",
         "getProVideoCustomGroup",
-        "refreshAnimation",
-        "Landroid/view/animation/Animation;",
-        "kotlin.jvm.PlatformType",
-        "getRefreshAnimation",
-        "()Landroid/view/animation/Animation;",
-        "refreshAnimation$delegate",
-        "selectListChildIndex",
-        "getSelectListChildIndex",
-        "()I",
-        "selectListCover",
-        "Landroid/view/View;",
-        "selectListGroupIndex",
-        "getSelectListGroupIndex",
-        "selectListView",
-        "Landroid/widget/ExpandableListView;",
-        "setting",
-        "Ljp/co/sony/mc/camera/setting/CameraProSetting;",
-        "getDescriptionTextHeight",
-        "getScrollPosition",
-        "isDescriptionScrollable",
-        "",
-        "isDescriptionScrolledBottom",
+        "mItemTouchHelper",
+        "Landroidx/recyclerview/widget/ItemTouchHelper;",
+        "getMItemTouchHelper",
+        "()Landroidx/recyclerview/widget/ItemTouchHelper;",
+        "mItemTouchHelper$delegate",
         "onCreateView",
         "inflater",
         "Landroid/view/LayoutInflater;",
@@ -87,23 +84,28 @@
         "Landroid/view/ViewGroup;",
         "savedInstanceState",
         "Landroid/os/Bundle;",
-        "onDestroyView",
+        "onResume",
         "",
         "onPause",
-        "onResume",
+        "onDestroyView",
         "updateFnList",
         "updateSelectList",
         "needScroll",
-        "Category",
+        "",
+        "getDescriptionTextHeight",
+        "isDescriptionScrollable",
+        "isDescriptionScrolledBottom",
+        "getScrollPosition",
         "Companion",
+        "Category",
         "FunctionCustomAdapter",
         "OnItemDraggingListener",
         "SomcCamera_release"
     }
     k = 0x1
     mv = {
-        0x1,
-        0x9,
+        0x2,
+        0x0,
         0x0
     }
     xi = 0x30
@@ -165,46 +167,66 @@
 
 
 # direct methods
-.method public static synthetic $r8$lambda$791CYDu0JV783CtlcoZE6YolwZU(Ljp/co/sony/mc/camera/view/setting/fragment/ProModeCameraSettingsFunctionCustomFragment;Landroid/widget/ExpandableListView;Landroid/view/View;IIJ)Z
+.method public static synthetic $r8$lambda$DbbkEJ7fsg_6E7Dq8YrrwzcvFJE(Ljp/co/sony/mc/camera/view/setting/fragment/ProModeCameraSettingsFunctionCustomFragment;Landroid/view/View;IIII)V
     .locals 0
 
-    invoke-static/range {p0 .. p6}, Ljp/co/sony/mc/camera/view/setting/fragment/ProModeCameraSettingsFunctionCustomFragment;->onCreateView$lambda$12(Ljp/co/sony/mc/camera/view/setting/fragment/ProModeCameraSettingsFunctionCustomFragment;Landroid/widget/ExpandableListView;Landroid/view/View;IIJ)Z
+    invoke-static/range {p0 .. p5}, Ljp/co/sony/mc/camera/view/setting/fragment/ProModeCameraSettingsFunctionCustomFragment;->onCreateView$lambda$11(Ljp/co/sony/mc/camera/view/setting/fragment/ProModeCameraSettingsFunctionCustomFragment;Landroid/view/View;IIII)V
+
+    return-void
+.end method
+
+.method public static synthetic $r8$lambda$Iex_dEBAnH8yErBZCyaMeJkcLx0(Ljp/co/sony/mc/camera/view/setting/fragment/ProModeCameraSettingsFunctionCustomFragment;Landroid/widget/ExpandableListView;Landroid/view/View;IIJ)Z
+    .locals 0
+
+    invoke-static/range {p0 .. p6}, Ljp/co/sony/mc/camera/view/setting/fragment/ProModeCameraSettingsFunctionCustomFragment;->onCreateView$lambda$14(Ljp/co/sony/mc/camera/view/setting/fragment/ProModeCameraSettingsFunctionCustomFragment;Landroid/widget/ExpandableListView;Landroid/view/View;IIJ)Z
 
     move-result p0
 
     return p0
 .end method
 
-.method public static synthetic $r8$lambda$X1mvscHRK8Xyfj_aQUD2RrGa4Gc(Ljp/co/sony/mc/camera/view/setting/fragment/ProModeCameraSettingsFunctionCustomFragment;Landroid/view/View;IIII)V
+.method public static synthetic $r8$lambda$PcPItW9erYrdhgSM-g_vtPTAA1A(Landroid/widget/ExpandableListView;Landroid/view/View;IJ)Z
     .locals 0
 
-    invoke-static/range {p0 .. p5}, Ljp/co/sony/mc/camera/view/setting/fragment/ProModeCameraSettingsFunctionCustomFragment;->onCreateView$lambda$9(Ljp/co/sony/mc/camera/view/setting/fragment/ProModeCameraSettingsFunctionCustomFragment;Landroid/view/View;IIII)V
-
-    return-void
-.end method
-
-.method public static synthetic $r8$lambda$gmvxYf3sbJdTwo--IuRmDSNJajk(Ljp/co/sony/mc/camera/view/setting/fragment/ProModeCameraSettingsFunctionCustomFragment;Ljp/co/sony/mc/camera/configuration/parameters/FunctionCustom;I)V
-    .locals 0
-
-    invoke-static {p0, p1, p2}, Ljp/co/sony/mc/camera/view/setting/fragment/ProModeCameraSettingsFunctionCustomFragment;->onCreateView$lambda$13(Ljp/co/sony/mc/camera/view/setting/fragment/ProModeCameraSettingsFunctionCustomFragment;Ljp/co/sony/mc/camera/configuration/parameters/FunctionCustom;I)V
-
-    return-void
-.end method
-
-.method public static synthetic $r8$lambda$kEwjVH7vDnAc0Ow4vwbnt_AR3Ok(Landroid/widget/ExpandableListView;Landroid/view/View;IJ)Z
-    .locals 0
-
-    invoke-static {p0, p1, p2, p3, p4}, Ljp/co/sony/mc/camera/view/setting/fragment/ProModeCameraSettingsFunctionCustomFragment;->onCreateView$lambda$11(Landroid/widget/ExpandableListView;Landroid/view/View;IJ)Z
+    invoke-static {p0, p1, p2, p3, p4}, Ljp/co/sony/mc/camera/view/setting/fragment/ProModeCameraSettingsFunctionCustomFragment;->onCreateView$lambda$13(Landroid/widget/ExpandableListView;Landroid/view/View;IJ)Z
 
     move-result p0
 
     return p0
 .end method
 
-.method public static synthetic $r8$lambda$t7xdfVb438nvsrQvDSkbuUuw2YM(Ljp/co/sony/mc/camera/view/setting/fragment/ProModeCameraSettingsFunctionCustomFragment;Landroid/view/View;)V
+.method public static synthetic $r8$lambda$WnpUTHaisPAXFL6yX7ZReN77AAQ(Ljp/co/sony/mc/camera/view/setting/fragment/ProModeCameraSettingsFunctionCustomFragment;Ljp/co/sony/mc/camera/configuration/parameters/FunctionCustom;I)V
     .locals 0
 
-    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/view/setting/fragment/ProModeCameraSettingsFunctionCustomFragment;->onCreateView$lambda$10(Ljp/co/sony/mc/camera/view/setting/fragment/ProModeCameraSettingsFunctionCustomFragment;Landroid/view/View;)V
+    invoke-static {p0, p1, p2}, Ljp/co/sony/mc/camera/view/setting/fragment/ProModeCameraSettingsFunctionCustomFragment;->onCreateView$lambda$15(Ljp/co/sony/mc/camera/view/setting/fragment/ProModeCameraSettingsFunctionCustomFragment;Ljp/co/sony/mc/camera/configuration/parameters/FunctionCustom;I)V
+
+    return-void
+.end method
+
+.method public static synthetic $r8$lambda$bVMnWwYNla1NhjjkKmLXNWN1Ebw(Ljp/co/sony/mc/camera/view/setting/fragment/ProModeCameraSettingsFunctionCustomFragment;)Landroid/view/animation/Animation;
+    .locals 0
+
+    invoke-static {p0}, Ljp/co/sony/mc/camera/view/setting/fragment/ProModeCameraSettingsFunctionCustomFragment;->refreshAnimation_delegate$lambda$1(Ljp/co/sony/mc/camera/view/setting/fragment/ProModeCameraSettingsFunctionCustomFragment;)Landroid/view/animation/Animation;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method public static synthetic $r8$lambda$m9jj_bNc04azlZfG1A3uyI7U5i0(Ljp/co/sony/mc/camera/view/setting/fragment/ProModeCameraSettingsFunctionCustomFragment;)Landroidx/recyclerview/widget/ItemTouchHelper;
+    .locals 0
+
+    invoke-static {p0}, Ljp/co/sony/mc/camera/view/setting/fragment/ProModeCameraSettingsFunctionCustomFragment;->mItemTouchHelper_delegate$lambda$10(Ljp/co/sony/mc/camera/view/setting/fragment/ProModeCameraSettingsFunctionCustomFragment;)Landroidx/recyclerview/widget/ItemTouchHelper;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method public static synthetic $r8$lambda$pOa77tc45eL201SbAaNwZpllx1o(Ljp/co/sony/mc/camera/view/setting/fragment/ProModeCameraSettingsFunctionCustomFragment;Landroid/view/View;)V
+    .locals 0
+
+    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/view/setting/fragment/ProModeCameraSettingsFunctionCustomFragment;->onCreateView$lambda$12(Ljp/co/sony/mc/camera/view/setting/fragment/ProModeCameraSettingsFunctionCustomFragment;Landroid/view/View;)V
 
     return-void
 .end method
@@ -267,11 +289,9 @@
     iput-object v0, p0, Ljp/co/sony/mc/camera/view/setting/fragment/ProModeCameraSettingsFunctionCustomFragment;->descriptionGlobalLayoutListener:Landroid/view/ViewTreeObserver$OnGlobalLayoutListener;
 
     .line 66
-    new-instance v0, Ljp/co/sony/mc/camera/view/setting/fragment/ProModeCameraSettingsFunctionCustomFragment$refreshAnimation$2;
+    new-instance v0, Ljp/co/sony/mc/camera/view/setting/fragment/ProModeCameraSettingsFunctionCustomFragment$$ExternalSyntheticLambda1;
 
-    invoke-direct {v0, p0}, Ljp/co/sony/mc/camera/view/setting/fragment/ProModeCameraSettingsFunctionCustomFragment$refreshAnimation$2;-><init>(Ljp/co/sony/mc/camera/view/setting/fragment/ProModeCameraSettingsFunctionCustomFragment;)V
-
-    check-cast v0, Lkotlin/jvm/functions/Function0;
+    invoke-direct {v0, p0}, Ljp/co/sony/mc/camera/view/setting/fragment/ProModeCameraSettingsFunctionCustomFragment$$ExternalSyntheticLambda1;-><init>(Ljp/co/sony/mc/camera/view/setting/fragment/ProModeCameraSettingsFunctionCustomFragment;)V
 
     invoke-static {v0}, Lkotlin/LazyKt;->lazy(Lkotlin/jvm/functions/Function0;)Lkotlin/Lazy;
 
@@ -280,11 +300,9 @@
     iput-object v0, p0, Ljp/co/sony/mc/camera/view/setting/fragment/ProModeCameraSettingsFunctionCustomFragment;->refreshAnimation$delegate:Lkotlin/Lazy;
 
     .line 210
-    new-instance v0, Ljp/co/sony/mc/camera/view/setting/fragment/ProModeCameraSettingsFunctionCustomFragment$mItemTouchHelper$2;
+    new-instance v0, Ljp/co/sony/mc/camera/view/setting/fragment/ProModeCameraSettingsFunctionCustomFragment$$ExternalSyntheticLambda2;
 
-    invoke-direct {v0, p0}, Ljp/co/sony/mc/camera/view/setting/fragment/ProModeCameraSettingsFunctionCustomFragment$mItemTouchHelper$2;-><init>(Ljp/co/sony/mc/camera/view/setting/fragment/ProModeCameraSettingsFunctionCustomFragment;)V
-
-    check-cast v0, Lkotlin/jvm/functions/Function0;
+    invoke-direct {v0, p0}, Ljp/co/sony/mc/camera/view/setting/fragment/ProModeCameraSettingsFunctionCustomFragment$$ExternalSyntheticLambda2;-><init>(Ljp/co/sony/mc/camera/view/setting/fragment/ProModeCameraSettingsFunctionCustomFragment;)V
 
     invoke-static {v0}, Lkotlin/LazyKt;->lazy(Lkotlin/jvm/functions/Function0;)Lkotlin/Lazy;
 
@@ -531,327 +549,369 @@
     const/4 v0, 0x5
 
     .line 95
-    new-array v0, v0, [Ljp/co/sony/mc/camera/view/setting/fragment/ProModeCameraSettingsFunctionCustomFragment$Category;
+    new-array v1, v0, [Ljp/co/sony/mc/camera/view/setting/fragment/ProModeCameraSettingsFunctionCustomFragment$Category;
 
-    new-instance v1, Ljp/co/sony/mc/camera/view/setting/fragment/ProModeCameraSettingsFunctionCustomFragment$Category;
+    new-instance v2, Ljp/co/sony/mc/camera/view/setting/fragment/ProModeCameraSettingsFunctionCustomFragment$Category;
 
     .line 98
-    sget-object v2, Ljp/co/sony/mc/camera/configuration/parameters/FunctionCustom;->NO_ASSIGN:Ljp/co/sony/mc/camera/configuration/parameters/FunctionCustom;
+    sget-object v3, Ljp/co/sony/mc/camera/configuration/parameters/FunctionCustom;->NO_ASSIGN:Ljp/co/sony/mc/camera/configuration/parameters/FunctionCustom;
 
     .line 97
-    invoke-static {v2}, Lkotlin/collections/CollectionsKt;->listOf(Ljava/lang/Object;)Ljava/util/List;
-
-    move-result-object v2
-
-    const/4 v3, -0x1
-
-    .line 95
-    invoke-direct {v1, v3, v2}, Ljp/co/sony/mc/camera/view/setting/fragment/ProModeCameraSettingsFunctionCustomFragment$Category;-><init>(ILjava/util/List;)V
-
-    const/4 v2, 0x0
-
-    aput-object v1, v0, v2
-
-    .line 104
-    sget-object v1, Ljp/co/sony/mc/camera/configuration/parameters/FunctionCustom;->PHOTO_FORMAT:Ljp/co/sony/mc/camera/configuration/parameters/FunctionCustom;
-
-    .line 105
-    sget-object v2, Ljp/co/sony/mc/camera/configuration/parameters/FunctionCustom;->ASPECT_RATIO:Ljp/co/sony/mc/camera/configuration/parameters/FunctionCustom;
-
-    .line 106
-    sget-object v3, Ljp/co/sony/mc/camera/configuration/parameters/FunctionCustom;->DRIVE_MODE:Ljp/co/sony/mc/camera/configuration/parameters/FunctionCustom;
-
-    filled-new-array {v1, v2, v3}, [Ljp/co/sony/mc/camera/configuration/parameters/FunctionCustom;
-
-    move-result-object v1
-
-    .line 103
-    invoke-static {v1}, Lkotlin/collections/CollectionsKt;->listOf([Ljava/lang/Object;)Ljava/util/List;
-
-    move-result-object v1
-
-    check-cast v1, Ljava/lang/Iterable;
-
-    .line 537
-    new-instance v2, Ljava/util/ArrayList;
-
-    invoke-direct {v2}, Ljava/util/ArrayList;-><init>()V
-
-    check-cast v2, Ljava/util/Collection;
-
-    .line 538
-    invoke-interface {v1}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
-
-    move-result-object v1
-
-    :cond_0
-    :goto_0
-    invoke-interface {v1}, Ljava/util/Iterator;->hasNext()Z
-
-    move-result v3
-
-    const-string v4, "getCustomSettingKey(...)"
-
-    if-eqz v3, :cond_1
-
-    invoke-interface {v1}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+    invoke-static {v3}, Lkotlin/collections/CollectionsKt;->listOf(Ljava/lang/Object;)Ljava/util/List;
 
     move-result-object v3
 
-    move-object v5, v3
+    const/4 v4, -0x1
 
-    check-cast v5, Ljp/co/sony/mc/camera/configuration/parameters/FunctionCustom;
+    .line 95
+    invoke-direct {v2, v4, v3}, Ljp/co/sony/mc/camera/view/setting/fragment/ProModeCameraSettingsFunctionCustomFragment$Category;-><init>(ILjava/util/List;)V
 
-    .line 108
-    iget-object v6, p0, Ljp/co/sony/mc/camera/view/setting/fragment/ProModeCameraSettingsFunctionCustomFragment;->checker:Ljp/co/sony/mc/camera/setting/SettingAppearanceChecker;
+    const/4 v3, 0x0
 
-    invoke-virtual {v5}, Ljp/co/sony/mc/camera/configuration/parameters/FunctionCustom;->getCustomSettingKey()Ljp/co/sony/mc/camera/setting/SettingKey$Key;
+    aput-object v2, v1, v3
 
-    move-result-object v5
+    const/4 v2, 0x3
 
-    invoke-static {v5, v4}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
+    .line 104
+    new-array v4, v2, [Ljp/co/sony/mc/camera/configuration/parameters/FunctionCustom;
 
-    invoke-virtual {v6, v5}, Ljp/co/sony/mc/camera/setting/SettingAppearanceChecker;->checkKey(Ljp/co/sony/mc/camera/setting/SettingKey$Key;)Ljp/co/sony/mc/camera/setting/SettingAppearance;
+    sget-object v5, Ljp/co/sony/mc/camera/configuration/parameters/FunctionCustom;->PHOTO_FORMAT:Ljp/co/sony/mc/camera/configuration/parameters/FunctionCustom;
+
+    aput-object v5, v4, v3
+
+    .line 105
+    sget-object v5, Ljp/co/sony/mc/camera/configuration/parameters/FunctionCustom;->ASPECT_RATIO:Ljp/co/sony/mc/camera/configuration/parameters/FunctionCustom;
+
+    const/4 v6, 0x1
+
+    aput-object v5, v4, v6
+
+    .line 106
+    sget-object v5, Ljp/co/sony/mc/camera/configuration/parameters/FunctionCustom;->DRIVE_MODE:Ljp/co/sony/mc/camera/configuration/parameters/FunctionCustom;
+
+    const/4 v7, 0x2
+
+    aput-object v5, v4, v7
+
+    .line 103
+    invoke-static {v4}, Lkotlin/collections/CollectionsKt;->listOf([Ljava/lang/Object;)Ljava/util/List;
 
     move-result-object v4
 
-    sget-object v5, Ljp/co/sony/mc/camera/setting/SettingAppearance;->INVISIBLE:Ljp/co/sony/mc/camera/setting/SettingAppearance;
+    check-cast v4, Ljava/lang/Iterable;
 
-    if-eq v4, v5, :cond_0
+    .line 537
+    new-instance v5, Ljava/util/ArrayList;
+
+    invoke-direct {v5}, Ljava/util/ArrayList;-><init>()V
+
+    check-cast v5, Ljava/util/Collection;
 
     .line 538
-    invoke-interface {v2, v3}, Ljava/util/Collection;->add(Ljava/lang/Object;)Z
+    invoke-interface {v4}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
+
+    move-result-object v4
+
+    :cond_0
+    :goto_0
+    invoke-interface {v4}, Ljava/util/Iterator;->hasNext()Z
+
+    move-result v8
+
+    const-string v9, "getCustomSettingKey(...)"
+
+    if-eqz v8, :cond_1
+
+    invoke-interface {v4}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+
+    move-result-object v8
+
+    move-object v10, v8
+
+    check-cast v10, Ljp/co/sony/mc/camera/configuration/parameters/FunctionCustom;
+
+    .line 108
+    iget-object v11, p0, Ljp/co/sony/mc/camera/view/setting/fragment/ProModeCameraSettingsFunctionCustomFragment;->checker:Ljp/co/sony/mc/camera/setting/SettingAppearanceChecker;
+
+    invoke-virtual {v10}, Ljp/co/sony/mc/camera/configuration/parameters/FunctionCustom;->getCustomSettingKey()Ljp/co/sony/mc/camera/setting/SettingKey$Key;
+
+    move-result-object v10
+
+    invoke-static {v10, v9}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
+
+    invoke-virtual {v11, v10}, Ljp/co/sony/mc/camera/setting/SettingAppearanceChecker;->checkKey(Ljp/co/sony/mc/camera/setting/SettingKey$Key;)Ljp/co/sony/mc/camera/setting/SettingAppearance;
+
+    move-result-object v9
+
+    sget-object v10, Ljp/co/sony/mc/camera/setting/SettingAppearance;->INVISIBLE:Ljp/co/sony/mc/camera/setting/SettingAppearance;
+
+    if-eq v9, v10, :cond_0
+
+    .line 538
+    invoke-interface {v5, v8}, Ljava/util/Collection;->add(Ljava/lang/Object;)Z
 
     goto :goto_0
 
     .line 539
     :cond_1
-    check-cast v2, Ljava/util/List;
+    check-cast v5, Ljava/util/List;
 
     .line 101
-    new-instance v1, Ljp/co/sony/mc/camera/view/setting/fragment/ProModeCameraSettingsFunctionCustomFragment$Category;
+    new-instance v4, Ljp/co/sony/mc/camera/view/setting/fragment/ProModeCameraSettingsFunctionCustomFragment$Category;
 
-    const v3, 0x7f1102f9
+    const v8, 0x7f110326
 
-    invoke-direct {v1, v3, v2}, Ljp/co/sony/mc/camera/view/setting/fragment/ProModeCameraSettingsFunctionCustomFragment$Category;-><init>(ILjava/util/List;)V
+    invoke-direct {v4, v8, v5}, Ljp/co/sony/mc/camera/view/setting/fragment/ProModeCameraSettingsFunctionCustomFragment$Category;-><init>(ILjava/util/List;)V
 
-    const/4 v2, 0x1
+    aput-object v4, v1, v6
 
-    aput-object v1, v0, v2
+    const/16 v4, 0x9
 
     .line 114
+    new-array v4, v4, [Ljp/co/sony/mc/camera/configuration/parameters/FunctionCustom;
+
     sget-object v5, Ljp/co/sony/mc/camera/configuration/parameters/FunctionCustom;->COLOR_TONE_PROFILE:Ljp/co/sony/mc/camera/configuration/parameters/FunctionCustom;
 
+    aput-object v5, v4, v3
+
     .line 115
-    sget-object v6, Ljp/co/sony/mc/camera/configuration/parameters/FunctionCustom;->METERING:Ljp/co/sony/mc/camera/configuration/parameters/FunctionCustom;
+    sget-object v5, Ljp/co/sony/mc/camera/configuration/parameters/FunctionCustom;->METERING:Ljp/co/sony/mc/camera/configuration/parameters/FunctionCustom;
+
+    aput-object v5, v4, v6
 
     .line 116
-    sget-object v7, Ljp/co/sony/mc/camera/configuration/parameters/FunctionCustom;->FLASH:Ljp/co/sony/mc/camera/configuration/parameters/FunctionCustom;
+    sget-object v5, Ljp/co/sony/mc/camera/configuration/parameters/FunctionCustom;->FLASH:Ljp/co/sony/mc/camera/configuration/parameters/FunctionCustom;
+
+    aput-object v5, v4, v7
 
     .line 117
-    sget-object v8, Ljp/co/sony/mc/camera/configuration/parameters/FunctionCustom;->HDR:Ljp/co/sony/mc/camera/configuration/parameters/FunctionCustom;
+    sget-object v5, Ljp/co/sony/mc/camera/configuration/parameters/FunctionCustom;->HDR:Ljp/co/sony/mc/camera/configuration/parameters/FunctionCustom;
+
+    aput-object v5, v4, v2
 
     .line 118
-    sget-object v9, Ljp/co/sony/mc/camera/configuration/parameters/FunctionCustom;->SOFT_SKIN:Ljp/co/sony/mc/camera/configuration/parameters/FunctionCustom;
+    sget-object v5, Ljp/co/sony/mc/camera/configuration/parameters/FunctionCustom;->SOFT_SKIN:Ljp/co/sony/mc/camera/configuration/parameters/FunctionCustom;
+
+    const/4 v8, 0x4
+
+    aput-object v5, v4, v8
 
     .line 119
-    sget-object v10, Ljp/co/sony/mc/camera/configuration/parameters/FunctionCustom;->WB:Ljp/co/sony/mc/camera/configuration/parameters/FunctionCustom;
+    sget-object v5, Ljp/co/sony/mc/camera/configuration/parameters/FunctionCustom;->WB:Ljp/co/sony/mc/camera/configuration/parameters/FunctionCustom;
+
+    aput-object v5, v4, v0
 
     .line 120
-    sget-object v11, Ljp/co/sony/mc/camera/configuration/parameters/FunctionCustom;->EV:Ljp/co/sony/mc/camera/configuration/parameters/FunctionCustom;
+    sget-object v5, Ljp/co/sony/mc/camera/configuration/parameters/FunctionCustom;->EV:Ljp/co/sony/mc/camera/configuration/parameters/FunctionCustom;
+
+    const/4 v10, 0x6
+
+    aput-object v5, v4, v10
+
+    const/4 v5, 0x7
 
     .line 121
-    sget-object v12, Ljp/co/sony/mc/camera/configuration/parameters/FunctionCustom;->ISO:Ljp/co/sony/mc/camera/configuration/parameters/FunctionCustom;
+    sget-object v11, Ljp/co/sony/mc/camera/configuration/parameters/FunctionCustom;->ISO:Ljp/co/sony/mc/camera/configuration/parameters/FunctionCustom;
+
+    aput-object v11, v4, v5
+
+    const/16 v5, 0x8
 
     .line 122
-    sget-object v13, Ljp/co/sony/mc/camera/configuration/parameters/FunctionCustom;->COMPUTATIONAL_MODE:Ljp/co/sony/mc/camera/configuration/parameters/FunctionCustom;
+    sget-object v11, Ljp/co/sony/mc/camera/configuration/parameters/FunctionCustom;->COMPUTATIONAL_MODE:Ljp/co/sony/mc/camera/configuration/parameters/FunctionCustom;
 
-    filled-new-array/range {v5 .. v13}, [Ljp/co/sony/mc/camera/configuration/parameters/FunctionCustom;
-
-    move-result-object v1
+    aput-object v11, v4, v5
 
     .line 113
-    invoke-static {v1}, Lkotlin/collections/CollectionsKt;->listOf([Ljava/lang/Object;)Ljava/util/List;
+    invoke-static {v4}, Lkotlin/collections/CollectionsKt;->listOf([Ljava/lang/Object;)Ljava/util/List;
 
-    move-result-object v1
+    move-result-object v4
 
-    check-cast v1, Ljava/lang/Iterable;
+    check-cast v4, Ljava/lang/Iterable;
 
     .line 540
-    new-instance v2, Ljava/util/ArrayList;
+    new-instance v5, Ljava/util/ArrayList;
 
-    invoke-direct {v2}, Ljava/util/ArrayList;-><init>()V
+    invoke-direct {v5}, Ljava/util/ArrayList;-><init>()V
 
-    check-cast v2, Ljava/util/Collection;
+    check-cast v5, Ljava/util/Collection;
 
     .line 541
-    invoke-interface {v1}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
+    invoke-interface {v4}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
 
-    move-result-object v1
+    move-result-object v4
 
     :cond_2
     :goto_1
-    invoke-interface {v1}, Ljava/util/Iterator;->hasNext()Z
+    invoke-interface {v4}, Ljava/util/Iterator;->hasNext()Z
 
-    move-result v3
+    move-result v11
 
-    if-eqz v3, :cond_3
+    if-eqz v11, :cond_3
 
-    invoke-interface {v1}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+    invoke-interface {v4}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
-    move-result-object v3
+    move-result-object v11
 
-    move-object v5, v3
+    move-object v12, v11
 
-    check-cast v5, Ljp/co/sony/mc/camera/configuration/parameters/FunctionCustom;
+    check-cast v12, Ljp/co/sony/mc/camera/configuration/parameters/FunctionCustom;
 
     .line 124
-    iget-object v6, p0, Ljp/co/sony/mc/camera/view/setting/fragment/ProModeCameraSettingsFunctionCustomFragment;->checker:Ljp/co/sony/mc/camera/setting/SettingAppearanceChecker;
+    iget-object v13, p0, Ljp/co/sony/mc/camera/view/setting/fragment/ProModeCameraSettingsFunctionCustomFragment;->checker:Ljp/co/sony/mc/camera/setting/SettingAppearanceChecker;
 
-    invoke-virtual {v5}, Ljp/co/sony/mc/camera/configuration/parameters/FunctionCustom;->getCustomSettingKey()Ljp/co/sony/mc/camera/setting/SettingKey$Key;
+    invoke-virtual {v12}, Ljp/co/sony/mc/camera/configuration/parameters/FunctionCustom;->getCustomSettingKey()Ljp/co/sony/mc/camera/setting/SettingKey$Key;
 
-    move-result-object v5
+    move-result-object v12
 
-    invoke-static {v5, v4}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v12, v9}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
 
-    invoke-virtual {v6, v5}, Ljp/co/sony/mc/camera/setting/SettingAppearanceChecker;->checkKey(Ljp/co/sony/mc/camera/setting/SettingKey$Key;)Ljp/co/sony/mc/camera/setting/SettingAppearance;
+    invoke-virtual {v13, v12}, Ljp/co/sony/mc/camera/setting/SettingAppearanceChecker;->checkKey(Ljp/co/sony/mc/camera/setting/SettingKey$Key;)Ljp/co/sony/mc/camera/setting/SettingAppearance;
 
-    move-result-object v5
+    move-result-object v12
 
-    sget-object v6, Ljp/co/sony/mc/camera/setting/SettingAppearance;->INVISIBLE:Ljp/co/sony/mc/camera/setting/SettingAppearance;
+    sget-object v13, Ljp/co/sony/mc/camera/setting/SettingAppearance;->INVISIBLE:Ljp/co/sony/mc/camera/setting/SettingAppearance;
 
-    if-eq v5, v6, :cond_2
+    if-eq v12, v13, :cond_2
 
     .line 541
-    invoke-interface {v2, v3}, Ljava/util/Collection;->add(Ljava/lang/Object;)Z
+    invoke-interface {v5, v11}, Ljava/util/Collection;->add(Ljava/lang/Object;)Z
 
     goto :goto_1
 
     .line 542
     :cond_3
-    check-cast v2, Ljava/util/List;
+    check-cast v5, Ljava/util/List;
 
     .line 111
-    new-instance v1, Ljp/co/sony/mc/camera/view/setting/fragment/ProModeCameraSettingsFunctionCustomFragment$Category;
+    new-instance v4, Ljp/co/sony/mc/camera/view/setting/fragment/ProModeCameraSettingsFunctionCustomFragment$Category;
 
-    const v3, 0x7f1102f6
+    const v11, 0x7f110323
 
-    invoke-direct {v1, v3, v2}, Ljp/co/sony/mc/camera/view/setting/fragment/ProModeCameraSettingsFunctionCustomFragment$Category;-><init>(ILjava/util/List;)V
+    invoke-direct {v4, v11, v5}, Ljp/co/sony/mc/camera/view/setting/fragment/ProModeCameraSettingsFunctionCustomFragment$Category;-><init>(ILjava/util/List;)V
 
-    const/4 v2, 0x2
-
-    aput-object v1, v0, v2
+    aput-object v4, v1, v7
 
     .line 130
+    new-array v4, v10, [Ljp/co/sony/mc/camera/configuration/parameters/FunctionCustom;
+
     sget-object v5, Ljp/co/sony/mc/camera/configuration/parameters/FunctionCustom;->FOCUS_MODE:Ljp/co/sony/mc/camera/configuration/parameters/FunctionCustom;
 
+    aput-object v5, v4, v3
+
     .line 131
-    sget-object v6, Ljp/co/sony/mc/camera/configuration/parameters/FunctionCustom;->FOCUS_AREA:Ljp/co/sony/mc/camera/configuration/parameters/FunctionCustom;
+    sget-object v5, Ljp/co/sony/mc/camera/configuration/parameters/FunctionCustom;->FOCUS_AREA:Ljp/co/sony/mc/camera/configuration/parameters/FunctionCustom;
+
+    aput-object v5, v4, v6
 
     .line 132
-    sget-object v7, Ljp/co/sony/mc/camera/configuration/parameters/FunctionCustom;->FOCUS_FRAME_COLOR:Ljp/co/sony/mc/camera/configuration/parameters/FunctionCustom;
+    sget-object v5, Ljp/co/sony/mc/camera/configuration/parameters/FunctionCustom;->FOCUS_FRAME_COLOR:Ljp/co/sony/mc/camera/configuration/parameters/FunctionCustom;
+
+    aput-object v5, v4, v7
 
     .line 133
-    sget-object v8, Ljp/co/sony/mc/camera/configuration/parameters/FunctionCustom;->TOUCH_TO_ADJUST:Ljp/co/sony/mc/camera/configuration/parameters/FunctionCustom;
+    sget-object v5, Ljp/co/sony/mc/camera/configuration/parameters/FunctionCustom;->TOUCH_TO_ADJUST:Ljp/co/sony/mc/camera/configuration/parameters/FunctionCustom;
+
+    aput-object v5, v4, v2
 
     .line 134
-    sget-object v9, Ljp/co/sony/mc/camera/configuration/parameters/FunctionCustom;->FACE_DETECTION:Ljp/co/sony/mc/camera/configuration/parameters/FunctionCustom;
+    sget-object v5, Ljp/co/sony/mc/camera/configuration/parameters/FunctionCustom;->FACE_DETECTION:Ljp/co/sony/mc/camera/configuration/parameters/FunctionCustom;
+
+    aput-object v5, v4, v8
 
     .line 135
-    sget-object v10, Ljp/co/sony/mc/camera/configuration/parameters/FunctionCustom;->PEAKING:Ljp/co/sony/mc/camera/configuration/parameters/FunctionCustom;
+    sget-object v5, Ljp/co/sony/mc/camera/configuration/parameters/FunctionCustom;->PEAKING:Ljp/co/sony/mc/camera/configuration/parameters/FunctionCustom;
 
-    filled-new-array/range {v5 .. v10}, [Ljp/co/sony/mc/camera/configuration/parameters/FunctionCustom;
-
-    move-result-object v1
+    aput-object v5, v4, v0
 
     .line 129
-    invoke-static {v1}, Lkotlin/collections/CollectionsKt;->listOf([Ljava/lang/Object;)Ljava/util/List;
+    invoke-static {v4}, Lkotlin/collections/CollectionsKt;->listOf([Ljava/lang/Object;)Ljava/util/List;
 
-    move-result-object v1
+    move-result-object v0
 
-    check-cast v1, Ljava/lang/Iterable;
+    check-cast v0, Ljava/lang/Iterable;
 
     .line 543
-    new-instance v2, Ljava/util/ArrayList;
+    new-instance v4, Ljava/util/ArrayList;
 
-    invoke-direct {v2}, Ljava/util/ArrayList;-><init>()V
+    invoke-direct {v4}, Ljava/util/ArrayList;-><init>()V
 
-    check-cast v2, Ljava/util/Collection;
+    check-cast v4, Ljava/util/Collection;
 
     .line 544
-    invoke-interface {v1}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
+    invoke-interface {v0}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
 
-    move-result-object v1
+    move-result-object v0
 
     :cond_4
     :goto_2
-    invoke-interface {v1}, Ljava/util/Iterator;->hasNext()Z
+    invoke-interface {v0}, Ljava/util/Iterator;->hasNext()Z
 
-    move-result v3
+    move-result v5
 
-    if-eqz v3, :cond_5
+    if-eqz v5, :cond_5
 
-    invoke-interface {v1}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+    invoke-interface {v0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
-    move-result-object v3
+    move-result-object v5
 
-    move-object v5, v3
+    move-object v10, v5
 
-    check-cast v5, Ljp/co/sony/mc/camera/configuration/parameters/FunctionCustom;
+    check-cast v10, Ljp/co/sony/mc/camera/configuration/parameters/FunctionCustom;
 
     .line 137
-    iget-object v6, p0, Ljp/co/sony/mc/camera/view/setting/fragment/ProModeCameraSettingsFunctionCustomFragment;->checker:Ljp/co/sony/mc/camera/setting/SettingAppearanceChecker;
+    iget-object v11, p0, Ljp/co/sony/mc/camera/view/setting/fragment/ProModeCameraSettingsFunctionCustomFragment;->checker:Ljp/co/sony/mc/camera/setting/SettingAppearanceChecker;
 
-    invoke-virtual {v5}, Ljp/co/sony/mc/camera/configuration/parameters/FunctionCustom;->getCustomSettingKey()Ljp/co/sony/mc/camera/setting/SettingKey$Key;
+    invoke-virtual {v10}, Ljp/co/sony/mc/camera/configuration/parameters/FunctionCustom;->getCustomSettingKey()Ljp/co/sony/mc/camera/setting/SettingKey$Key;
 
-    move-result-object v5
+    move-result-object v10
 
-    invoke-static {v5, v4}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v10, v9}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
 
-    invoke-virtual {v6, v5}, Ljp/co/sony/mc/camera/setting/SettingAppearanceChecker;->checkKey(Ljp/co/sony/mc/camera/setting/SettingKey$Key;)Ljp/co/sony/mc/camera/setting/SettingAppearance;
+    invoke-virtual {v11, v10}, Ljp/co/sony/mc/camera/setting/SettingAppearanceChecker;->checkKey(Ljp/co/sony/mc/camera/setting/SettingKey$Key;)Ljp/co/sony/mc/camera/setting/SettingAppearance;
 
-    move-result-object v5
+    move-result-object v10
 
-    sget-object v6, Ljp/co/sony/mc/camera/setting/SettingAppearance;->INVISIBLE:Ljp/co/sony/mc/camera/setting/SettingAppearance;
+    sget-object v11, Ljp/co/sony/mc/camera/setting/SettingAppearance;->INVISIBLE:Ljp/co/sony/mc/camera/setting/SettingAppearance;
 
-    if-eq v5, v6, :cond_4
+    if-eq v10, v11, :cond_4
 
     .line 544
-    invoke-interface {v2, v3}, Ljava/util/Collection;->add(Ljava/lang/Object;)Z
+    invoke-interface {v4, v5}, Ljava/util/Collection;->add(Ljava/lang/Object;)Z
 
     goto :goto_2
 
     .line 545
     :cond_5
-    check-cast v2, Ljava/util/List;
+    check-cast v4, Ljava/util/List;
 
     .line 127
-    new-instance v1, Ljp/co/sony/mc/camera/view/setting/fragment/ProModeCameraSettingsFunctionCustomFragment$Category;
+    new-instance v0, Ljp/co/sony/mc/camera/view/setting/fragment/ProModeCameraSettingsFunctionCustomFragment$Category;
 
-    const v3, 0x7f1102f7
+    const v5, 0x7f110324
 
-    invoke-direct {v1, v3, v2}, Ljp/co/sony/mc/camera/view/setting/fragment/ProModeCameraSettingsFunctionCustomFragment$Category;-><init>(ILjava/util/List;)V
+    invoke-direct {v0, v5, v4}, Ljp/co/sony/mc/camera/view/setting/fragment/ProModeCameraSettingsFunctionCustomFragment$Category;-><init>(ILjava/util/List;)V
 
-    const/4 v2, 0x3
-
-    aput-object v1, v0, v2
+    aput-object v0, v1, v2
 
     .line 143
-    sget-object v1, Ljp/co/sony/mc/camera/configuration/parameters/FunctionCustom;->GRID_LINE:Ljp/co/sony/mc/camera/configuration/parameters/FunctionCustom;
+    new-array v0, v7, [Ljp/co/sony/mc/camera/configuration/parameters/FunctionCustom;
+
+    sget-object v2, Ljp/co/sony/mc/camera/configuration/parameters/FunctionCustom;->GRID_LINE:Ljp/co/sony/mc/camera/configuration/parameters/FunctionCustom;
+
+    aput-object v2, v0, v3
 
     .line 144
     sget-object v2, Ljp/co/sony/mc/camera/configuration/parameters/FunctionCustom;->AUDIO_SIGNAL:Ljp/co/sony/mc/camera/configuration/parameters/FunctionCustom;
 
-    filled-new-array {v1, v2}, [Ljp/co/sony/mc/camera/configuration/parameters/FunctionCustom;
-
-    move-result-object v1
+    aput-object v2, v0, v6
 
     .line 142
-    invoke-static {v1}, Lkotlin/collections/CollectionsKt;->listOf([Ljava/lang/Object;)Ljava/util/List;
+    invoke-static {v0}, Lkotlin/collections/CollectionsKt;->listOf([Ljava/lang/Object;)Ljava/util/List;
 
-    move-result-object v1
+    move-result-object v0
 
-    check-cast v1, Ljava/lang/Iterable;
+    check-cast v0, Ljava/lang/Iterable;
 
     .line 546
     new-instance v2, Ljava/util/ArrayList;
@@ -861,42 +921,42 @@
     check-cast v2, Ljava/util/Collection;
 
     .line 547
-    invoke-interface {v1}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
+    invoke-interface {v0}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
 
-    move-result-object v1
+    move-result-object v0
 
     :cond_6
     :goto_3
-    invoke-interface {v1}, Ljava/util/Iterator;->hasNext()Z
+    invoke-interface {v0}, Ljava/util/Iterator;->hasNext()Z
 
     move-result v3
 
     if-eqz v3, :cond_7
 
-    invoke-interface {v1}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+    invoke-interface {v0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
     move-result-object v3
 
-    move-object v5, v3
+    move-object v4, v3
 
-    check-cast v5, Ljp/co/sony/mc/camera/configuration/parameters/FunctionCustom;
+    check-cast v4, Ljp/co/sony/mc/camera/configuration/parameters/FunctionCustom;
 
     .line 146
-    iget-object v6, p0, Ljp/co/sony/mc/camera/view/setting/fragment/ProModeCameraSettingsFunctionCustomFragment;->checker:Ljp/co/sony/mc/camera/setting/SettingAppearanceChecker;
+    iget-object v5, p0, Ljp/co/sony/mc/camera/view/setting/fragment/ProModeCameraSettingsFunctionCustomFragment;->checker:Ljp/co/sony/mc/camera/setting/SettingAppearanceChecker;
 
-    invoke-virtual {v5}, Ljp/co/sony/mc/camera/configuration/parameters/FunctionCustom;->getCustomSettingKey()Ljp/co/sony/mc/camera/setting/SettingKey$Key;
+    invoke-virtual {v4}, Ljp/co/sony/mc/camera/configuration/parameters/FunctionCustom;->getCustomSettingKey()Ljp/co/sony/mc/camera/setting/SettingKey$Key;
 
-    move-result-object v5
+    move-result-object v4
 
-    invoke-static {v5, v4}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v4, v9}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
 
-    invoke-virtual {v6, v5}, Ljp/co/sony/mc/camera/setting/SettingAppearanceChecker;->checkKey(Ljp/co/sony/mc/camera/setting/SettingKey$Key;)Ljp/co/sony/mc/camera/setting/SettingAppearance;
+    invoke-virtual {v5, v4}, Ljp/co/sony/mc/camera/setting/SettingAppearanceChecker;->checkKey(Ljp/co/sony/mc/camera/setting/SettingKey$Key;)Ljp/co/sony/mc/camera/setting/SettingAppearance;
 
-    move-result-object v5
+    move-result-object v4
 
-    sget-object v6, Ljp/co/sony/mc/camera/setting/SettingAppearance;->INVISIBLE:Ljp/co/sony/mc/camera/setting/SettingAppearance;
+    sget-object v5, Ljp/co/sony/mc/camera/setting/SettingAppearance;->INVISIBLE:Ljp/co/sony/mc/camera/setting/SettingAppearance;
 
-    if-eq v5, v6, :cond_6
+    if-eq v4, v5, :cond_6
 
     .line 547
     invoke-interface {v2, v3}, Ljava/util/Collection;->add(Ljava/lang/Object;)Z
@@ -910,16 +970,14 @@
     .line 140
     new-instance p0, Ljp/co/sony/mc/camera/view/setting/fragment/ProModeCameraSettingsFunctionCustomFragment$Category;
 
-    const v1, 0x7f1102f8
+    const v0, 0x7f110325
 
-    invoke-direct {p0, v1, v2}, Ljp/co/sony/mc/camera/view/setting/fragment/ProModeCameraSettingsFunctionCustomFragment$Category;-><init>(ILjava/util/List;)V
+    invoke-direct {p0, v0, v2}, Ljp/co/sony/mc/camera/view/setting/fragment/ProModeCameraSettingsFunctionCustomFragment$Category;-><init>(ILjava/util/List;)V
 
-    const/4 v1, 0x4
-
-    aput-object p0, v0, v1
+    aput-object p0, v1, v8
 
     .line 94
-    invoke-static {v0}, Lkotlin/collections/CollectionsKt;->listOf([Ljava/lang/Object;)Ljava/util/List;
+    invoke-static {v1}, Lkotlin/collections/CollectionsKt;->listOf([Ljava/lang/Object;)Ljava/util/List;
 
     move-result-object p0
 
@@ -927,7 +985,7 @@
 .end method
 
 .method private final getProVideoCustomGroup()Ljava/util/List;
-    .locals 12
+    .locals 13
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()",
@@ -940,347 +998,381 @@
     const/4 v0, 0x5
 
     .line 152
-    new-array v0, v0, [Ljp/co/sony/mc/camera/view/setting/fragment/ProModeCameraSettingsFunctionCustomFragment$Category;
+    new-array v1, v0, [Ljp/co/sony/mc/camera/view/setting/fragment/ProModeCameraSettingsFunctionCustomFragment$Category;
 
-    new-instance v1, Ljp/co/sony/mc/camera/view/setting/fragment/ProModeCameraSettingsFunctionCustomFragment$Category;
+    new-instance v2, Ljp/co/sony/mc/camera/view/setting/fragment/ProModeCameraSettingsFunctionCustomFragment$Category;
 
     .line 155
-    sget-object v2, Ljp/co/sony/mc/camera/configuration/parameters/FunctionCustom;->NO_ASSIGN:Ljp/co/sony/mc/camera/configuration/parameters/FunctionCustom;
+    sget-object v3, Ljp/co/sony/mc/camera/configuration/parameters/FunctionCustom;->NO_ASSIGN:Ljp/co/sony/mc/camera/configuration/parameters/FunctionCustom;
 
     .line 154
-    invoke-static {v2}, Lkotlin/collections/CollectionsKt;->listOf(Ljava/lang/Object;)Ljava/util/List;
-
-    move-result-object v2
-
-    const/4 v3, -0x1
-
-    .line 152
-    invoke-direct {v1, v3, v2}, Ljp/co/sony/mc/camera/view/setting/fragment/ProModeCameraSettingsFunctionCustomFragment$Category;-><init>(ILjava/util/List;)V
-
-    const/4 v2, 0x0
-
-    aput-object v1, v0, v2
-
-    .line 161
-    sget-object v1, Ljp/co/sony/mc/camera/configuration/parameters/FunctionCustom;->VIDEO_SIZE:Ljp/co/sony/mc/camera/configuration/parameters/FunctionCustom;
-
-    .line 162
-    sget-object v2, Ljp/co/sony/mc/camera/configuration/parameters/FunctionCustom;->VIDEO_FPS:Ljp/co/sony/mc/camera/configuration/parameters/FunctionCustom;
-
-    .line 163
-    sget-object v3, Ljp/co/sony/mc/camera/configuration/parameters/FunctionCustom;->VIDEO_STABILIZER:Ljp/co/sony/mc/camera/configuration/parameters/FunctionCustom;
-
-    .line 164
-    sget-object v4, Ljp/co/sony/mc/camera/configuration/parameters/FunctionCustom;->MIC:Ljp/co/sony/mc/camera/configuration/parameters/FunctionCustom;
-
-    filled-new-array {v1, v2, v3, v4}, [Ljp/co/sony/mc/camera/configuration/parameters/FunctionCustom;
-
-    move-result-object v1
-
-    .line 160
-    invoke-static {v1}, Lkotlin/collections/CollectionsKt;->listOf([Ljava/lang/Object;)Ljava/util/List;
-
-    move-result-object v1
-
-    check-cast v1, Ljava/lang/Iterable;
-
-    .line 549
-    new-instance v2, Ljava/util/ArrayList;
-
-    invoke-direct {v2}, Ljava/util/ArrayList;-><init>()V
-
-    check-cast v2, Ljava/util/Collection;
-
-    .line 550
-    invoke-interface {v1}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
-
-    move-result-object v1
-
-    :cond_0
-    :goto_0
-    invoke-interface {v1}, Ljava/util/Iterator;->hasNext()Z
-
-    move-result v3
-
-    const-string v4, "getCustomSettingKey(...)"
-
-    if-eqz v3, :cond_1
-
-    invoke-interface {v1}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+    invoke-static {v3}, Lkotlin/collections/CollectionsKt;->listOf(Ljava/lang/Object;)Ljava/util/List;
 
     move-result-object v3
 
-    move-object v5, v3
+    const/4 v4, -0x1
 
-    check-cast v5, Ljp/co/sony/mc/camera/configuration/parameters/FunctionCustom;
+    .line 152
+    invoke-direct {v2, v4, v3}, Ljp/co/sony/mc/camera/view/setting/fragment/ProModeCameraSettingsFunctionCustomFragment$Category;-><init>(ILjava/util/List;)V
 
-    .line 166
-    iget-object v6, p0, Ljp/co/sony/mc/camera/view/setting/fragment/ProModeCameraSettingsFunctionCustomFragment;->checker:Ljp/co/sony/mc/camera/setting/SettingAppearanceChecker;
+    const/4 v3, 0x0
 
-    invoke-virtual {v5}, Ljp/co/sony/mc/camera/configuration/parameters/FunctionCustom;->getCustomSettingKey()Ljp/co/sony/mc/camera/setting/SettingKey$Key;
+    aput-object v2, v1, v3
 
-    move-result-object v5
+    const/4 v2, 0x4
 
-    invoke-static {v5, v4}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
+    .line 161
+    new-array v4, v2, [Ljp/co/sony/mc/camera/configuration/parameters/FunctionCustom;
 
-    invoke-virtual {v6, v5}, Ljp/co/sony/mc/camera/setting/SettingAppearanceChecker;->checkKey(Ljp/co/sony/mc/camera/setting/SettingKey$Key;)Ljp/co/sony/mc/camera/setting/SettingAppearance;
+    sget-object v5, Ljp/co/sony/mc/camera/configuration/parameters/FunctionCustom;->VIDEO_SIZE:Ljp/co/sony/mc/camera/configuration/parameters/FunctionCustom;
+
+    aput-object v5, v4, v3
+
+    .line 162
+    sget-object v5, Ljp/co/sony/mc/camera/configuration/parameters/FunctionCustom;->VIDEO_FPS:Ljp/co/sony/mc/camera/configuration/parameters/FunctionCustom;
+
+    const/4 v6, 0x1
+
+    aput-object v5, v4, v6
+
+    .line 163
+    sget-object v5, Ljp/co/sony/mc/camera/configuration/parameters/FunctionCustom;->VIDEO_STABILIZER:Ljp/co/sony/mc/camera/configuration/parameters/FunctionCustom;
+
+    const/4 v7, 0x2
+
+    aput-object v5, v4, v7
+
+    .line 164
+    sget-object v5, Ljp/co/sony/mc/camera/configuration/parameters/FunctionCustom;->MIC:Ljp/co/sony/mc/camera/configuration/parameters/FunctionCustom;
+
+    const/4 v8, 0x3
+
+    aput-object v5, v4, v8
+
+    .line 160
+    invoke-static {v4}, Lkotlin/collections/CollectionsKt;->listOf([Ljava/lang/Object;)Ljava/util/List;
 
     move-result-object v4
 
-    sget-object v5, Ljp/co/sony/mc/camera/setting/SettingAppearance;->INVISIBLE:Ljp/co/sony/mc/camera/setting/SettingAppearance;
+    check-cast v4, Ljava/lang/Iterable;
 
-    if-eq v4, v5, :cond_0
+    .line 549
+    new-instance v5, Ljava/util/ArrayList;
+
+    invoke-direct {v5}, Ljava/util/ArrayList;-><init>()V
+
+    check-cast v5, Ljava/util/Collection;
 
     .line 550
-    invoke-interface {v2, v3}, Ljava/util/Collection;->add(Ljava/lang/Object;)Z
+    invoke-interface {v4}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
+
+    move-result-object v4
+
+    :cond_0
+    :goto_0
+    invoke-interface {v4}, Ljava/util/Iterator;->hasNext()Z
+
+    move-result v9
+
+    const-string v10, "getCustomSettingKey(...)"
+
+    if-eqz v9, :cond_1
+
+    invoke-interface {v4}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+
+    move-result-object v9
+
+    move-object v11, v9
+
+    check-cast v11, Ljp/co/sony/mc/camera/configuration/parameters/FunctionCustom;
+
+    .line 166
+    iget-object v12, p0, Ljp/co/sony/mc/camera/view/setting/fragment/ProModeCameraSettingsFunctionCustomFragment;->checker:Ljp/co/sony/mc/camera/setting/SettingAppearanceChecker;
+
+    invoke-virtual {v11}, Ljp/co/sony/mc/camera/configuration/parameters/FunctionCustom;->getCustomSettingKey()Ljp/co/sony/mc/camera/setting/SettingKey$Key;
+
+    move-result-object v11
+
+    invoke-static {v11, v10}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
+
+    invoke-virtual {v12, v11}, Ljp/co/sony/mc/camera/setting/SettingAppearanceChecker;->checkKey(Ljp/co/sony/mc/camera/setting/SettingKey$Key;)Ljp/co/sony/mc/camera/setting/SettingAppearance;
+
+    move-result-object v10
+
+    sget-object v11, Ljp/co/sony/mc/camera/setting/SettingAppearance;->INVISIBLE:Ljp/co/sony/mc/camera/setting/SettingAppearance;
+
+    if-eq v10, v11, :cond_0
+
+    .line 550
+    invoke-interface {v5, v9}, Ljava/util/Collection;->add(Ljava/lang/Object;)Z
 
     goto :goto_0
 
     .line 551
     :cond_1
-    check-cast v2, Ljava/util/List;
+    check-cast v5, Ljava/util/List;
 
     .line 158
-    new-instance v1, Ljp/co/sony/mc/camera/view/setting/fragment/ProModeCameraSettingsFunctionCustomFragment$Category;
+    new-instance v4, Ljp/co/sony/mc/camera/view/setting/fragment/ProModeCameraSettingsFunctionCustomFragment$Category;
 
-    const v3, 0x7f1102f9
+    const v9, 0x7f110326
 
-    invoke-direct {v1, v3, v2}, Ljp/co/sony/mc/camera/view/setting/fragment/ProModeCameraSettingsFunctionCustomFragment$Category;-><init>(ILjava/util/List;)V
+    invoke-direct {v4, v9, v5}, Ljp/co/sony/mc/camera/view/setting/fragment/ProModeCameraSettingsFunctionCustomFragment$Category;-><init>(ILjava/util/List;)V
 
-    const/4 v2, 0x1
+    aput-object v4, v1, v6
 
-    aput-object v1, v0, v2
+    const/4 v4, 0x7
 
     .line 172
+    new-array v4, v4, [Ljp/co/sony/mc/camera/configuration/parameters/FunctionCustom;
+
     sget-object v5, Ljp/co/sony/mc/camera/configuration/parameters/FunctionCustom;->COLOR_TONE_PROFILE:Ljp/co/sony/mc/camera/configuration/parameters/FunctionCustom;
 
+    aput-object v5, v4, v3
+
     .line 173
-    sget-object v6, Ljp/co/sony/mc/camera/configuration/parameters/FunctionCustom;->WB:Ljp/co/sony/mc/camera/configuration/parameters/FunctionCustom;
+    sget-object v5, Ljp/co/sony/mc/camera/configuration/parameters/FunctionCustom;->WB:Ljp/co/sony/mc/camera/configuration/parameters/FunctionCustom;
+
+    aput-object v5, v4, v6
 
     .line 174
-    sget-object v7, Ljp/co/sony/mc/camera/configuration/parameters/FunctionCustom;->EV:Ljp/co/sony/mc/camera/configuration/parameters/FunctionCustom;
+    sget-object v5, Ljp/co/sony/mc/camera/configuration/parameters/FunctionCustom;->EV:Ljp/co/sony/mc/camera/configuration/parameters/FunctionCustom;
+
+    aput-object v5, v4, v7
 
     .line 175
-    sget-object v8, Ljp/co/sony/mc/camera/configuration/parameters/FunctionCustom;->ISO:Ljp/co/sony/mc/camera/configuration/parameters/FunctionCustom;
+    sget-object v5, Ljp/co/sony/mc/camera/configuration/parameters/FunctionCustom;->ISO:Ljp/co/sony/mc/camera/configuration/parameters/FunctionCustom;
+
+    aput-object v5, v4, v8
 
     .line 176
-    sget-object v9, Ljp/co/sony/mc/camera/configuration/parameters/FunctionCustom;->VIDEO_HDR:Ljp/co/sony/mc/camera/configuration/parameters/FunctionCustom;
+    sget-object v5, Ljp/co/sony/mc/camera/configuration/parameters/FunctionCustom;->VIDEO_HDR:Ljp/co/sony/mc/camera/configuration/parameters/FunctionCustom;
+
+    aput-object v5, v4, v2
 
     .line 177
-    sget-object v10, Ljp/co/sony/mc/camera/configuration/parameters/FunctionCustom;->VIDEO_MF_HDR:Ljp/co/sony/mc/camera/configuration/parameters/FunctionCustom;
+    sget-object v5, Ljp/co/sony/mc/camera/configuration/parameters/FunctionCustom;->VIDEO_MF_HDR:Ljp/co/sony/mc/camera/configuration/parameters/FunctionCustom;
+
+    aput-object v5, v4, v0
+
+    const/4 v5, 0x6
 
     .line 178
-    sget-object v11, Ljp/co/sony/mc/camera/configuration/parameters/FunctionCustom;->PHOTO_LIGHT:Ljp/co/sony/mc/camera/configuration/parameters/FunctionCustom;
+    sget-object v9, Ljp/co/sony/mc/camera/configuration/parameters/FunctionCustom;->PHOTO_LIGHT:Ljp/co/sony/mc/camera/configuration/parameters/FunctionCustom;
 
-    filled-new-array/range {v5 .. v11}, [Ljp/co/sony/mc/camera/configuration/parameters/FunctionCustom;
-
-    move-result-object v1
+    aput-object v9, v4, v5
 
     .line 171
-    invoke-static {v1}, Lkotlin/collections/CollectionsKt;->listOf([Ljava/lang/Object;)Ljava/util/List;
+    invoke-static {v4}, Lkotlin/collections/CollectionsKt;->listOf([Ljava/lang/Object;)Ljava/util/List;
 
-    move-result-object v1
+    move-result-object v4
 
-    check-cast v1, Ljava/lang/Iterable;
+    check-cast v4, Ljava/lang/Iterable;
 
     .line 552
-    new-instance v2, Ljava/util/ArrayList;
+    new-instance v5, Ljava/util/ArrayList;
 
-    invoke-direct {v2}, Ljava/util/ArrayList;-><init>()V
+    invoke-direct {v5}, Ljava/util/ArrayList;-><init>()V
 
-    check-cast v2, Ljava/util/Collection;
+    check-cast v5, Ljava/util/Collection;
 
     .line 553
-    invoke-interface {v1}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
+    invoke-interface {v4}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
 
-    move-result-object v1
+    move-result-object v4
 
     :cond_2
     :goto_1
-    invoke-interface {v1}, Ljava/util/Iterator;->hasNext()Z
+    invoke-interface {v4}, Ljava/util/Iterator;->hasNext()Z
 
-    move-result v3
+    move-result v9
 
-    if-eqz v3, :cond_3
+    if-eqz v9, :cond_3
 
-    invoke-interface {v1}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+    invoke-interface {v4}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
-    move-result-object v3
+    move-result-object v9
 
-    move-object v5, v3
+    move-object v11, v9
 
-    check-cast v5, Ljp/co/sony/mc/camera/configuration/parameters/FunctionCustom;
+    check-cast v11, Ljp/co/sony/mc/camera/configuration/parameters/FunctionCustom;
 
     .line 180
-    iget-object v6, p0, Ljp/co/sony/mc/camera/view/setting/fragment/ProModeCameraSettingsFunctionCustomFragment;->checker:Ljp/co/sony/mc/camera/setting/SettingAppearanceChecker;
+    iget-object v12, p0, Ljp/co/sony/mc/camera/view/setting/fragment/ProModeCameraSettingsFunctionCustomFragment;->checker:Ljp/co/sony/mc/camera/setting/SettingAppearanceChecker;
 
-    invoke-virtual {v5}, Ljp/co/sony/mc/camera/configuration/parameters/FunctionCustom;->getCustomSettingKey()Ljp/co/sony/mc/camera/setting/SettingKey$Key;
+    invoke-virtual {v11}, Ljp/co/sony/mc/camera/configuration/parameters/FunctionCustom;->getCustomSettingKey()Ljp/co/sony/mc/camera/setting/SettingKey$Key;
 
-    move-result-object v5
+    move-result-object v11
 
-    invoke-static {v5, v4}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v11, v10}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
 
-    invoke-virtual {v6, v5}, Ljp/co/sony/mc/camera/setting/SettingAppearanceChecker;->checkKey(Ljp/co/sony/mc/camera/setting/SettingKey$Key;)Ljp/co/sony/mc/camera/setting/SettingAppearance;
+    invoke-virtual {v12, v11}, Ljp/co/sony/mc/camera/setting/SettingAppearanceChecker;->checkKey(Ljp/co/sony/mc/camera/setting/SettingKey$Key;)Ljp/co/sony/mc/camera/setting/SettingAppearance;
 
-    move-result-object v5
+    move-result-object v11
 
-    sget-object v6, Ljp/co/sony/mc/camera/setting/SettingAppearance;->INVISIBLE:Ljp/co/sony/mc/camera/setting/SettingAppearance;
+    sget-object v12, Ljp/co/sony/mc/camera/setting/SettingAppearance;->INVISIBLE:Ljp/co/sony/mc/camera/setting/SettingAppearance;
 
-    if-eq v5, v6, :cond_2
+    if-eq v11, v12, :cond_2
 
     .line 553
-    invoke-interface {v2, v3}, Ljava/util/Collection;->add(Ljava/lang/Object;)Z
+    invoke-interface {v5, v9}, Ljava/util/Collection;->add(Ljava/lang/Object;)Z
 
     goto :goto_1
 
     .line 554
     :cond_3
-    check-cast v2, Ljava/util/List;
+    check-cast v5, Ljava/util/List;
 
     .line 169
-    new-instance v1, Ljp/co/sony/mc/camera/view/setting/fragment/ProModeCameraSettingsFunctionCustomFragment$Category;
+    new-instance v4, Ljp/co/sony/mc/camera/view/setting/fragment/ProModeCameraSettingsFunctionCustomFragment$Category;
 
-    const v3, 0x7f1102f6
+    const v9, 0x7f110323
 
-    invoke-direct {v1, v3, v2}, Ljp/co/sony/mc/camera/view/setting/fragment/ProModeCameraSettingsFunctionCustomFragment$Category;-><init>(ILjava/util/List;)V
+    invoke-direct {v4, v9, v5}, Ljp/co/sony/mc/camera/view/setting/fragment/ProModeCameraSettingsFunctionCustomFragment$Category;-><init>(ILjava/util/List;)V
 
-    const/4 v2, 0x2
-
-    aput-object v1, v0, v2
+    aput-object v4, v1, v7
 
     .line 186
-    sget-object v1, Ljp/co/sony/mc/camera/configuration/parameters/FunctionCustom;->FOCUS_MODE:Ljp/co/sony/mc/camera/configuration/parameters/FunctionCustom;
+    new-array v0, v0, [Ljp/co/sony/mc/camera/configuration/parameters/FunctionCustom;
+
+    sget-object v4, Ljp/co/sony/mc/camera/configuration/parameters/FunctionCustom;->FOCUS_MODE:Ljp/co/sony/mc/camera/configuration/parameters/FunctionCustom;
+
+    aput-object v4, v0, v3
 
     .line 187
-    sget-object v2, Ljp/co/sony/mc/camera/configuration/parameters/FunctionCustom;->FACE_DETECTION:Ljp/co/sony/mc/camera/configuration/parameters/FunctionCustom;
+    sget-object v4, Ljp/co/sony/mc/camera/configuration/parameters/FunctionCustom;->FACE_DETECTION:Ljp/co/sony/mc/camera/configuration/parameters/FunctionCustom;
+
+    aput-object v4, v0, v6
 
     .line 188
-    sget-object v3, Ljp/co/sony/mc/camera/configuration/parameters/FunctionCustom;->PRODUCT_SHOWCASE:Ljp/co/sony/mc/camera/configuration/parameters/FunctionCustom;
+    sget-object v4, Ljp/co/sony/mc/camera/configuration/parameters/FunctionCustom;->PRODUCT_SHOWCASE:Ljp/co/sony/mc/camera/configuration/parameters/FunctionCustom;
+
+    aput-object v4, v0, v7
 
     .line 189
-    sget-object v5, Ljp/co/sony/mc/camera/configuration/parameters/FunctionCustom;->TOUCH_TO_ADJUST:Ljp/co/sony/mc/camera/configuration/parameters/FunctionCustom;
+    sget-object v4, Ljp/co/sony/mc/camera/configuration/parameters/FunctionCustom;->TOUCH_TO_ADJUST:Ljp/co/sony/mc/camera/configuration/parameters/FunctionCustom;
+
+    aput-object v4, v0, v8
 
     .line 190
-    sget-object v6, Ljp/co/sony/mc/camera/configuration/parameters/FunctionCustom;->PEAKING:Ljp/co/sony/mc/camera/configuration/parameters/FunctionCustom;
+    sget-object v4, Ljp/co/sony/mc/camera/configuration/parameters/FunctionCustom;->PEAKING:Ljp/co/sony/mc/camera/configuration/parameters/FunctionCustom;
 
-    filled-new-array {v1, v2, v3, v5, v6}, [Ljp/co/sony/mc/camera/configuration/parameters/FunctionCustom;
-
-    move-result-object v1
+    aput-object v4, v0, v2
 
     .line 185
-    invoke-static {v1}, Lkotlin/collections/CollectionsKt;->listOf([Ljava/lang/Object;)Ljava/util/List;
+    invoke-static {v0}, Lkotlin/collections/CollectionsKt;->listOf([Ljava/lang/Object;)Ljava/util/List;
 
-    move-result-object v1
+    move-result-object v0
 
-    check-cast v1, Ljava/lang/Iterable;
+    check-cast v0, Ljava/lang/Iterable;
 
     .line 555
-    new-instance v2, Ljava/util/ArrayList;
+    new-instance v4, Ljava/util/ArrayList;
 
-    invoke-direct {v2}, Ljava/util/ArrayList;-><init>()V
+    invoke-direct {v4}, Ljava/util/ArrayList;-><init>()V
 
-    check-cast v2, Ljava/util/Collection;
+    check-cast v4, Ljava/util/Collection;
 
     .line 556
-    invoke-interface {v1}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
+    invoke-interface {v0}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
 
-    move-result-object v1
+    move-result-object v0
 
     :cond_4
     :goto_2
-    invoke-interface {v1}, Ljava/util/Iterator;->hasNext()Z
+    invoke-interface {v0}, Ljava/util/Iterator;->hasNext()Z
 
-    move-result v3
+    move-result v5
 
-    if-eqz v3, :cond_5
+    if-eqz v5, :cond_5
 
-    invoke-interface {v1}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+    invoke-interface {v0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
-    move-result-object v3
+    move-result-object v5
 
-    move-object v5, v3
+    move-object v9, v5
 
-    check-cast v5, Ljp/co/sony/mc/camera/configuration/parameters/FunctionCustom;
+    check-cast v9, Ljp/co/sony/mc/camera/configuration/parameters/FunctionCustom;
 
     .line 192
-    iget-object v6, p0, Ljp/co/sony/mc/camera/view/setting/fragment/ProModeCameraSettingsFunctionCustomFragment;->checker:Ljp/co/sony/mc/camera/setting/SettingAppearanceChecker;
+    iget-object v11, p0, Ljp/co/sony/mc/camera/view/setting/fragment/ProModeCameraSettingsFunctionCustomFragment;->checker:Ljp/co/sony/mc/camera/setting/SettingAppearanceChecker;
 
-    invoke-virtual {v5}, Ljp/co/sony/mc/camera/configuration/parameters/FunctionCustom;->getCustomSettingKey()Ljp/co/sony/mc/camera/setting/SettingKey$Key;
+    invoke-virtual {v9}, Ljp/co/sony/mc/camera/configuration/parameters/FunctionCustom;->getCustomSettingKey()Ljp/co/sony/mc/camera/setting/SettingKey$Key;
 
-    move-result-object v5
+    move-result-object v9
 
-    invoke-static {v5, v4}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v9, v10}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
 
-    invoke-virtual {v6, v5}, Ljp/co/sony/mc/camera/setting/SettingAppearanceChecker;->checkKey(Ljp/co/sony/mc/camera/setting/SettingKey$Key;)Ljp/co/sony/mc/camera/setting/SettingAppearance;
+    invoke-virtual {v11, v9}, Ljp/co/sony/mc/camera/setting/SettingAppearanceChecker;->checkKey(Ljp/co/sony/mc/camera/setting/SettingKey$Key;)Ljp/co/sony/mc/camera/setting/SettingAppearance;
 
-    move-result-object v5
+    move-result-object v9
 
-    sget-object v6, Ljp/co/sony/mc/camera/setting/SettingAppearance;->INVISIBLE:Ljp/co/sony/mc/camera/setting/SettingAppearance;
+    sget-object v11, Ljp/co/sony/mc/camera/setting/SettingAppearance;->INVISIBLE:Ljp/co/sony/mc/camera/setting/SettingAppearance;
 
-    if-eq v5, v6, :cond_4
+    if-eq v9, v11, :cond_4
 
     .line 556
-    invoke-interface {v2, v3}, Ljava/util/Collection;->add(Ljava/lang/Object;)Z
+    invoke-interface {v4, v5}, Ljava/util/Collection;->add(Ljava/lang/Object;)Z
 
     goto :goto_2
 
     .line 557
     :cond_5
-    check-cast v2, Ljava/util/List;
+    check-cast v4, Ljava/util/List;
 
     .line 183
-    new-instance v1, Ljp/co/sony/mc/camera/view/setting/fragment/ProModeCameraSettingsFunctionCustomFragment$Category;
+    new-instance v0, Ljp/co/sony/mc/camera/view/setting/fragment/ProModeCameraSettingsFunctionCustomFragment$Category;
 
-    const v3, 0x7f1102f7
+    const v5, 0x7f110324
 
-    invoke-direct {v1, v3, v2}, Ljp/co/sony/mc/camera/view/setting/fragment/ProModeCameraSettingsFunctionCustomFragment$Category;-><init>(ILjava/util/List;)V
+    invoke-direct {v0, v5, v4}, Ljp/co/sony/mc/camera/view/setting/fragment/ProModeCameraSettingsFunctionCustomFragment$Category;-><init>(ILjava/util/List;)V
 
-    const/4 v2, 0x3
-
-    aput-object v1, v0, v2
+    aput-object v0, v1, v8
 
     .line 198
-    sget-object v1, Ljp/co/sony/mc/camera/configuration/parameters/FunctionCustom;->GRID_LINE:Ljp/co/sony/mc/camera/configuration/parameters/FunctionCustom;
+    new-array v0, v7, [Ljp/co/sony/mc/camera/configuration/parameters/FunctionCustom;
+
+    sget-object v4, Ljp/co/sony/mc/camera/configuration/parameters/FunctionCustom;->GRID_LINE:Ljp/co/sony/mc/camera/configuration/parameters/FunctionCustom;
+
+    aput-object v4, v0, v3
 
     .line 199
-    sget-object v2, Ljp/co/sony/mc/camera/configuration/parameters/FunctionCustom;->AUDIO_SIGNAL:Ljp/co/sony/mc/camera/configuration/parameters/FunctionCustom;
+    sget-object v3, Ljp/co/sony/mc/camera/configuration/parameters/FunctionCustom;->AUDIO_SIGNAL:Ljp/co/sony/mc/camera/configuration/parameters/FunctionCustom;
 
-    filled-new-array {v1, v2}, [Ljp/co/sony/mc/camera/configuration/parameters/FunctionCustom;
-
-    move-result-object v1
+    aput-object v3, v0, v6
 
     .line 197
-    invoke-static {v1}, Lkotlin/collections/CollectionsKt;->listOf([Ljava/lang/Object;)Ljava/util/List;
+    invoke-static {v0}, Lkotlin/collections/CollectionsKt;->listOf([Ljava/lang/Object;)Ljava/util/List;
 
-    move-result-object v1
+    move-result-object v0
 
-    check-cast v1, Ljava/lang/Iterable;
+    check-cast v0, Ljava/lang/Iterable;
 
     .line 558
-    new-instance v2, Ljava/util/ArrayList;
+    new-instance v3, Ljava/util/ArrayList;
 
-    invoke-direct {v2}, Ljava/util/ArrayList;-><init>()V
+    invoke-direct {v3}, Ljava/util/ArrayList;-><init>()V
 
-    check-cast v2, Ljava/util/Collection;
+    check-cast v3, Ljava/util/Collection;
 
     .line 559
-    invoke-interface {v1}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
+    invoke-interface {v0}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
 
-    move-result-object v1
+    move-result-object v0
 
     :cond_6
     :goto_3
-    invoke-interface {v1}, Ljava/util/Iterator;->hasNext()Z
+    invoke-interface {v0}, Ljava/util/Iterator;->hasNext()Z
 
-    move-result v3
+    move-result v4
 
-    if-eqz v3, :cond_7
+    if-eqz v4, :cond_7
 
-    invoke-interface {v1}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+    invoke-interface {v0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
-    move-result-object v3
+    move-result-object v4
 
-    move-object v5, v3
+    move-object v5, v4
 
     check-cast v5, Ljp/co/sony/mc/camera/configuration/parameters/FunctionCustom;
 
@@ -1291,7 +1383,7 @@
 
     move-result-object v5
 
-    invoke-static {v5, v4}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v5, v10}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
 
     invoke-virtual {v6, v5}, Ljp/co/sony/mc/camera/setting/SettingAppearanceChecker;->checkKey(Ljp/co/sony/mc/camera/setting/SettingKey$Key;)Ljp/co/sony/mc/camera/setting/SettingAppearance;
 
@@ -1302,27 +1394,25 @@
     if-eq v5, v6, :cond_6
 
     .line 559
-    invoke-interface {v2, v3}, Ljava/util/Collection;->add(Ljava/lang/Object;)Z
+    invoke-interface {v3, v4}, Ljava/util/Collection;->add(Ljava/lang/Object;)Z
 
     goto :goto_3
 
     .line 560
     :cond_7
-    check-cast v2, Ljava/util/List;
+    check-cast v3, Ljava/util/List;
 
     .line 195
     new-instance p0, Ljp/co/sony/mc/camera/view/setting/fragment/ProModeCameraSettingsFunctionCustomFragment$Category;
 
-    const v1, 0x7f1102f8
+    const v0, 0x7f110325
 
-    invoke-direct {p0, v1, v2}, Ljp/co/sony/mc/camera/view/setting/fragment/ProModeCameraSettingsFunctionCustomFragment$Category;-><init>(ILjava/util/List;)V
+    invoke-direct {p0, v0, v3}, Ljp/co/sony/mc/camera/view/setting/fragment/ProModeCameraSettingsFunctionCustomFragment$Category;-><init>(ILjava/util/List;)V
 
-    const/4 v1, 0x4
-
-    aput-object p0, v0, v1
+    aput-object p0, v1, v2
 
     .line 151
-    invoke-static {v0}, Lkotlin/collections/CollectionsKt;->listOf([Ljava/lang/Object;)Ljava/util/List;
+    invoke-static {v1}, Lkotlin/collections/CollectionsKt;->listOf([Ljava/lang/Object;)Ljava/util/List;
 
     move-result-object p0
 
@@ -1443,7 +1533,9 @@
     move-object v2, v1
 
     :cond_1
-    invoke-interface {v2}, Ljava/util/List;->size()I
+    check-cast v2, Ljava/util/Collection;
+
+    invoke-interface {v2}, Ljava/util/Collection;->size()I
 
     move-result v2
 
@@ -1474,7 +1566,9 @@
 
     move-result-object v6
 
-    invoke-interface {v6}, Ljava/util/List;->size()I
+    check-cast v6, Ljava/util/Collection;
+
+    invoke-interface {v6}, Ljava/util/Collection;->size()I
 
     move-result v6
 
@@ -1564,7 +1658,9 @@
     move-object v2, v1
 
     :cond_1
-    invoke-interface {v2}, Ljava/util/List;->size()I
+    check-cast v2, Ljava/util/Collection;
+
+    invoke-interface {v2}, Ljava/util/Collection;->size()I
 
     move-result v2
 
@@ -1773,108 +1869,28 @@
     return p0
 .end method
 
-.method private static final onCreateView$lambda$10(Ljp/co/sony/mc/camera/view/setting/fragment/ProModeCameraSettingsFunctionCustomFragment;Landroid/view/View;)V
-    .locals 0
+.method private static final mItemTouchHelper_delegate$lambda$10(Ljp/co/sony/mc/camera/view/setting/fragment/ProModeCameraSettingsFunctionCustomFragment;)Landroidx/recyclerview/widget/ItemTouchHelper;
+    .locals 2
 
-    const-string/jumbo p1, "this$0"
+    const-string/jumbo v0, "this$0"
 
-    invoke-static {p0, p1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 319
-    invoke-virtual {p0}, Ljp/co/sony/mc/camera/view/setting/fragment/ProModeCameraSettingsFunctionCustomFragment;->getActivity()Landroidx/fragment/app/FragmentActivity;
+    .line 211
+    new-instance v0, Landroidx/recyclerview/widget/ItemTouchHelper;
 
-    move-result-object p0
+    new-instance v1, Ljp/co/sony/mc/camera/view/setting/fragment/ProModeCameraSettingsFunctionCustomFragment$mItemTouchHelper$2$1;
 
-    if-eqz p0, :cond_0
+    invoke-direct {v1, p0}, Ljp/co/sony/mc/camera/view/setting/fragment/ProModeCameraSettingsFunctionCustomFragment$mItemTouchHelper$2$1;-><init>(Ljp/co/sony/mc/camera/view/setting/fragment/ProModeCameraSettingsFunctionCustomFragment;)V
 
-    invoke-virtual {p0}, Landroidx/fragment/app/FragmentActivity;->onBackPressed()V
+    check-cast v1, Landroidx/recyclerview/widget/ItemTouchHelper$Callback;
 
-    :cond_0
-    return-void
+    invoke-direct {v0, v1}, Landroidx/recyclerview/widget/ItemTouchHelper;-><init>(Landroidx/recyclerview/widget/ItemTouchHelper$Callback;)V
+
+    return-object v0
 .end method
 
-.method private static final onCreateView$lambda$11(Landroid/widget/ExpandableListView;Landroid/view/View;IJ)Z
-    .locals 0
-
-    const/4 p0, 0x1
-
-    return p0
-.end method
-
-.method private static final onCreateView$lambda$12(Ljp/co/sony/mc/camera/view/setting/fragment/ProModeCameraSettingsFunctionCustomFragment;Landroid/widget/ExpandableListView;Landroid/view/View;IIJ)Z
-    .locals 0
-
-    const-string/jumbo p2, "this$0"
-
-    invoke-static {p0, p2}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 336
-    invoke-virtual {p1}, Landroid/widget/ExpandableListView;->getExpandableListAdapter()Landroid/widget/ExpandableListAdapter;
-
-    move-result-object p1
-
-    .line 337
-    invoke-interface {p1, p3, p4}, Landroid/widget/ExpandableListAdapter;->getChild(II)Ljava/lang/Object;
-
-    move-result-object p1
-
-    const-string p2, "null cannot be cast to non-null type jp.co.sony.mc.camera.configuration.parameters.FunctionCustom"
-
-    invoke-static {p1, p2}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;Ljava/lang/String;)V
-
-    check-cast p1, Ljp/co/sony/mc/camera/configuration/parameters/FunctionCustom;
-
-    .line 338
-    iget-object p2, p0, Ljp/co/sony/mc/camera/view/setting/fragment/ProModeCameraSettingsFunctionCustomFragment;->fnList:Ljava/util/List;
-
-    if-nez p2, :cond_0
-
-    const-string p2, "fnList"
-
-    invoke-static {p2}, Lkotlin/jvm/internal/Intrinsics;->throwUninitializedPropertyAccessException(Ljava/lang/String;)V
-
-    const/4 p2, 0x0
-
-    :cond_0
-    iget p3, p0, Ljp/co/sony/mc/camera/view/setting/fragment/ProModeCameraSettingsFunctionCustomFragment;->fnItemSelectIndex:I
-
-    invoke-interface {p2, p3, p1}, Ljava/util/List;->set(ILjava/lang/Object;)Ljava/lang/Object;
-
-    .line 339
-    invoke-direct {p0}, Ljp/co/sony/mc/camera/view/setting/fragment/ProModeCameraSettingsFunctionCustomFragment;->updateFnList()V
-
-    const/4 p1, 0x0
-
-    .line 340
-    invoke-direct {p0, p1}, Ljp/co/sony/mc/camera/view/setting/fragment/ProModeCameraSettingsFunctionCustomFragment;->updateSelectList(Z)V
-
-    const/4 p0, 0x1
-
-    return p0
-.end method
-
-.method private static final onCreateView$lambda$13(Ljp/co/sony/mc/camera/view/setting/fragment/ProModeCameraSettingsFunctionCustomFragment;Ljp/co/sony/mc/camera/configuration/parameters/FunctionCustom;I)V
-    .locals 0
-
-    const-string/jumbo p1, "this$0"
-
-    invoke-static {p0, p1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 346
-    iput p2, p0, Ljp/co/sony/mc/camera/view/setting/fragment/ProModeCameraSettingsFunctionCustomFragment;->fnItemSelectIndex:I
-
-    .line 347
-    invoke-direct {p0}, Ljp/co/sony/mc/camera/view/setting/fragment/ProModeCameraSettingsFunctionCustomFragment;->updateFnList()V
-
-    const/4 p1, 0x1
-
-    .line 348
-    invoke-direct {p0, p1}, Ljp/co/sony/mc/camera/view/setting/fragment/ProModeCameraSettingsFunctionCustomFragment;->updateSelectList(Z)V
-
-    return-void
-.end method
-
-.method private static final onCreateView$lambda$9(Ljp/co/sony/mc/camera/view/setting/fragment/ProModeCameraSettingsFunctionCustomFragment;Landroid/view/View;IIII)V
+.method private static final onCreateView$lambda$11(Ljp/co/sony/mc/camera/view/setting/fragment/ProModeCameraSettingsFunctionCustomFragment;Landroid/view/View;IIII)V
     .locals 0
 
     const-string/jumbo p1, "this$0"
@@ -1931,6 +1947,128 @@
 
     :goto_2
     return-void
+.end method
+
+.method private static final onCreateView$lambda$12(Ljp/co/sony/mc/camera/view/setting/fragment/ProModeCameraSettingsFunctionCustomFragment;Landroid/view/View;)V
+    .locals 0
+
+    const-string/jumbo p1, "this$0"
+
+    invoke-static {p0, p1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 319
+    invoke-virtual {p0}, Ljp/co/sony/mc/camera/view/setting/fragment/ProModeCameraSettingsFunctionCustomFragment;->getActivity()Landroidx/fragment/app/FragmentActivity;
+
+    move-result-object p0
+
+    if-eqz p0, :cond_0
+
+    invoke-virtual {p0}, Landroidx/fragment/app/FragmentActivity;->onBackPressed()V
+
+    :cond_0
+    return-void
+.end method
+
+.method private static final onCreateView$lambda$13(Landroid/widget/ExpandableListView;Landroid/view/View;IJ)Z
+    .locals 0
+
+    const/4 p0, 0x1
+
+    return p0
+.end method
+
+.method private static final onCreateView$lambda$14(Ljp/co/sony/mc/camera/view/setting/fragment/ProModeCameraSettingsFunctionCustomFragment;Landroid/widget/ExpandableListView;Landroid/view/View;IIJ)Z
+    .locals 0
+
+    const-string/jumbo p2, "this$0"
+
+    invoke-static {p0, p2}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 336
+    invoke-virtual {p1}, Landroid/widget/ExpandableListView;->getExpandableListAdapter()Landroid/widget/ExpandableListAdapter;
+
+    move-result-object p1
+
+    .line 337
+    invoke-interface {p1, p3, p4}, Landroid/widget/ExpandableListAdapter;->getChild(II)Ljava/lang/Object;
+
+    move-result-object p1
+
+    const-string p2, "null cannot be cast to non-null type jp.co.sony.mc.camera.configuration.parameters.FunctionCustom"
+
+    invoke-static {p1, p2}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;Ljava/lang/String;)V
+
+    check-cast p1, Ljp/co/sony/mc/camera/configuration/parameters/FunctionCustom;
+
+    .line 338
+    iget-object p2, p0, Ljp/co/sony/mc/camera/view/setting/fragment/ProModeCameraSettingsFunctionCustomFragment;->fnList:Ljava/util/List;
+
+    if-nez p2, :cond_0
+
+    const-string p2, "fnList"
+
+    invoke-static {p2}, Lkotlin/jvm/internal/Intrinsics;->throwUninitializedPropertyAccessException(Ljava/lang/String;)V
+
+    const/4 p2, 0x0
+
+    :cond_0
+    iget p3, p0, Ljp/co/sony/mc/camera/view/setting/fragment/ProModeCameraSettingsFunctionCustomFragment;->fnItemSelectIndex:I
+
+    invoke-interface {p2, p3, p1}, Ljava/util/List;->set(ILjava/lang/Object;)Ljava/lang/Object;
+
+    .line 339
+    invoke-direct {p0}, Ljp/co/sony/mc/camera/view/setting/fragment/ProModeCameraSettingsFunctionCustomFragment;->updateFnList()V
+
+    const/4 p1, 0x0
+
+    .line 340
+    invoke-direct {p0, p1}, Ljp/co/sony/mc/camera/view/setting/fragment/ProModeCameraSettingsFunctionCustomFragment;->updateSelectList(Z)V
+
+    const/4 p0, 0x1
+
+    return p0
+.end method
+
+.method private static final onCreateView$lambda$15(Ljp/co/sony/mc/camera/view/setting/fragment/ProModeCameraSettingsFunctionCustomFragment;Ljp/co/sony/mc/camera/configuration/parameters/FunctionCustom;I)V
+    .locals 0
+
+    const-string/jumbo p1, "this$0"
+
+    invoke-static {p0, p1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 346
+    iput p2, p0, Ljp/co/sony/mc/camera/view/setting/fragment/ProModeCameraSettingsFunctionCustomFragment;->fnItemSelectIndex:I
+
+    .line 347
+    invoke-direct {p0}, Ljp/co/sony/mc/camera/view/setting/fragment/ProModeCameraSettingsFunctionCustomFragment;->updateFnList()V
+
+    const/4 p1, 0x1
+
+    .line 348
+    invoke-direct {p0, p1}, Ljp/co/sony/mc/camera/view/setting/fragment/ProModeCameraSettingsFunctionCustomFragment;->updateSelectList(Z)V
+
+    return-void
+.end method
+
+.method private static final refreshAnimation_delegate$lambda$1(Ljp/co/sony/mc/camera/view/setting/fragment/ProModeCameraSettingsFunctionCustomFragment;)Landroid/view/animation/Animation;
+    .locals 1
+
+    const-string/jumbo v0, "this$0"
+
+    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 67
+    invoke-virtual {p0}, Ljp/co/sony/mc/camera/view/setting/fragment/ProModeCameraSettingsFunctionCustomFragment;->getContext()Landroid/content/Context;
+
+    move-result-object p0
+
+    const v0, 0x7f010029
+
+    invoke-static {p0, v0}, Landroid/view/animation/AnimationUtils;->loadAnimation(Landroid/content/Context;I)Landroid/view/animation/Animation;
+
+    move-result-object p0
+
+    return-object p0
 .end method
 
 .method private final updateFnList()V
@@ -2179,10 +2317,6 @@
 
     move-result-object p3
 
-    const-string v0, "getFunctionCustomList(...)"
-
-    invoke-static {p3, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
-
     iput-object p3, p0, Ljp/co/sony/mc/camera/view/setting/fragment/ProModeCameraSettingsFunctionCustomFragment;->fnList:Ljava/util/List;
 
     const p3, 0x7f0c00be
@@ -2194,7 +2328,7 @@
 
     move-result-object p1
 
-    const p2, 0x7f090172
+    const p2, 0x7f0904a9
 
     .line 292
     invoke-virtual {p1, p2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
@@ -2203,7 +2337,7 @@
 
     check-cast p2, Landroid/widget/TextView;
 
-    const p3, 0x7f09016e
+    const p3, 0x7f0900a3
 
     .line 293
     invoke-virtual {p1, p3}, Landroid/view/View;->findViewById(I)Landroid/view/View;
@@ -2212,7 +2346,7 @@
 
     check-cast p3, Landroid/widget/ImageButton;
 
-    const v1, 0x7f0901e6
+    const v1, 0x7f0901e3
 
     .line 294
     invoke-virtual {p1, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
@@ -2221,29 +2355,23 @@
 
     check-cast v1, Landroidx/recyclerview/widget/RecyclerView;
 
-    const v2, 0x7f090162
+    const v2, 0x7f090161
 
     .line 295
     invoke-virtual {p1, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
     move-result-object v2
 
-    const-string v3, "findViewById(...)"
-
-    invoke-static {v2, v3}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
-
     check-cast v2, Landroid/widget/TextView;
 
     iput-object v2, p0, Ljp/co/sony/mc/camera/view/setting/fragment/ProModeCameraSettingsFunctionCustomFragment;->description:Landroid/widget/TextView;
 
-    const v2, 0x7f090164
+    const v2, 0x7f090163
 
     .line 296
     invoke-virtual {p1, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
     move-result-object v2
-
-    invoke-static {v2, v3}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
 
     check-cast v2, Landroid/widget/FrameLayout;
 
@@ -2252,92 +2380,88 @@
     .line 297
     iget-object v2, p0, Ljp/co/sony/mc/camera/view/setting/fragment/ProModeCameraSettingsFunctionCustomFragment;->description:Landroid/widget/TextView;
 
-    const-string v4, "description"
+    const-string v3, "description"
 
-    const/4 v5, 0x0
+    const/4 v4, 0x0
 
     if-nez v2, :cond_0
 
-    invoke-static {v4}, Lkotlin/jvm/internal/Intrinsics;->throwUninitializedPropertyAccessException(Ljava/lang/String;)V
+    invoke-static {v3}, Lkotlin/jvm/internal/Intrinsics;->throwUninitializedPropertyAccessException(Ljava/lang/String;)V
 
-    move-object v2, v5
+    move-object v2, v4
 
     :cond_0
     invoke-static {}, Landroid/text/method/ScrollingMovementMethod;->getInstance()Landroid/text/method/MovementMethod;
 
-    move-result-object v6
+    move-result-object v5
 
-    invoke-virtual {v2, v6}, Landroid/widget/TextView;->setMovementMethod(Landroid/text/method/MovementMethod;)V
+    invoke-virtual {v2, v5}, Landroid/widget/TextView;->setMovementMethod(Landroid/text/method/MovementMethod;)V
 
     .line 298
     iget-object v2, p0, Ljp/co/sony/mc/camera/view/setting/fragment/ProModeCameraSettingsFunctionCustomFragment;->description:Landroid/widget/TextView;
 
     if-nez v2, :cond_1
 
-    invoke-static {v4}, Lkotlin/jvm/internal/Intrinsics;->throwUninitializedPropertyAccessException(Ljava/lang/String;)V
+    invoke-static {v3}, Lkotlin/jvm/internal/Intrinsics;->throwUninitializedPropertyAccessException(Ljava/lang/String;)V
 
-    move-object v2, v5
+    move-object v2, v4
 
     :cond_1
     check-cast v2, Landroid/view/View;
 
-    invoke-static {v2}, Ljp/co/sony/mc/camera/util/ViewExtensionsKt;->removeAccessibilityClickable(Landroid/view/View;)V
+    invoke-static {v2, v0}, Ljp/co/sony/mc/camera/view/viewbinder/BindingAdapters;->setAccessibilityClickable(Landroid/view/View;Z)V
 
     .line 299
     iget-object v2, p0, Ljp/co/sony/mc/camera/view/setting/fragment/ProModeCameraSettingsFunctionCustomFragment;->description:Landroid/widget/TextView;
 
     if-nez v2, :cond_2
 
-    invoke-static {v4}, Lkotlin/jvm/internal/Intrinsics;->throwUninitializedPropertyAccessException(Ljava/lang/String;)V
+    invoke-static {v3}, Lkotlin/jvm/internal/Intrinsics;->throwUninitializedPropertyAccessException(Ljava/lang/String;)V
 
-    move-object v2, v5
+    move-object v2, v4
 
     :cond_2
     invoke-virtual {v2}, Landroid/widget/TextView;->getViewTreeObserver()Landroid/view/ViewTreeObserver;
 
     move-result-object v2
 
-    iget-object v6, p0, Ljp/co/sony/mc/camera/view/setting/fragment/ProModeCameraSettingsFunctionCustomFragment;->descriptionGlobalLayoutListener:Landroid/view/ViewTreeObserver$OnGlobalLayoutListener;
+    iget-object v5, p0, Ljp/co/sony/mc/camera/view/setting/fragment/ProModeCameraSettingsFunctionCustomFragment;->descriptionGlobalLayoutListener:Landroid/view/ViewTreeObserver$OnGlobalLayoutListener;
 
-    invoke-virtual {v2, v6}, Landroid/view/ViewTreeObserver;->addOnGlobalLayoutListener(Landroid/view/ViewTreeObserver$OnGlobalLayoutListener;)V
+    invoke-virtual {v2, v5}, Landroid/view/ViewTreeObserver;->addOnGlobalLayoutListener(Landroid/view/ViewTreeObserver$OnGlobalLayoutListener;)V
 
     .line 300
     iget-object v2, p0, Ljp/co/sony/mc/camera/view/setting/fragment/ProModeCameraSettingsFunctionCustomFragment;->description:Landroid/widget/TextView;
 
     if-nez v2, :cond_3
 
-    invoke-static {v4}, Lkotlin/jvm/internal/Intrinsics;->throwUninitializedPropertyAccessException(Ljava/lang/String;)V
+    invoke-static {v3}, Lkotlin/jvm/internal/Intrinsics;->throwUninitializedPropertyAccessException(Ljava/lang/String;)V
 
-    move-object v2, v5
+    move-object v2, v4
 
     :cond_3
-    new-instance v4, Ljp/co/sony/mc/camera/view/setting/fragment/ProModeCameraSettingsFunctionCustomFragment$$ExternalSyntheticLambda1;
+    new-instance v3, Ljp/co/sony/mc/camera/view/setting/fragment/ProModeCameraSettingsFunctionCustomFragment$$ExternalSyntheticLambda3;
 
-    invoke-direct {v4, p0}, Ljp/co/sony/mc/camera/view/setting/fragment/ProModeCameraSettingsFunctionCustomFragment$$ExternalSyntheticLambda1;-><init>(Ljp/co/sony/mc/camera/view/setting/fragment/ProModeCameraSettingsFunctionCustomFragment;)V
+    invoke-direct {v3, p0}, Ljp/co/sony/mc/camera/view/setting/fragment/ProModeCameraSettingsFunctionCustomFragment$$ExternalSyntheticLambda3;-><init>(Ljp/co/sony/mc/camera/view/setting/fragment/ProModeCameraSettingsFunctionCustomFragment;)V
 
-    invoke-virtual {v2, v4}, Landroid/widget/TextView;->setOnScrollChangeListener(Landroid/view/View$OnScrollChangeListener;)V
+    invoke-virtual {v2, v3}, Landroid/widget/TextView;->setOnScrollChangeListener(Landroid/view/View$OnScrollChangeListener;)V
 
-    const v2, 0x7f090410
+    const v2, 0x7f090401
 
     .line 307
     invoke-virtual {p1, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
     move-result-object v2
 
-    invoke-static {v2, v3}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
-
     check-cast v2, Landroid/widget/ExpandableListView;
 
     iput-object v2, p0, Ljp/co/sony/mc/camera/view/setting/fragment/ProModeCameraSettingsFunctionCustomFragment;->selectListView:Landroid/widget/ExpandableListView;
 
-    const v2, 0x7f09029d
+    const v2, 0x7f090299
 
     .line 308
     invoke-virtual {p1, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
     move-result-object v2
-
-    invoke-static {v2, v3}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
 
     iput-object v2, p0, Ljp/co/sony/mc/camera/view/setting/fragment/ProModeCameraSettingsFunctionCustomFragment;->selectListCover:Landroid/view/View;
 
@@ -2362,7 +2486,7 @@
 
     move-result-object v2
 
-    const v3, 0x7f1102ee
+    const v3, 0x7f11031b
 
     invoke-virtual {v2, v3}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -2376,7 +2500,7 @@
 
     move-result-object v2
 
-    const v3, 0x7f1102f0
+    const v3, 0x7f11031d
 
     invoke-virtual {v2, v3}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -2392,16 +2516,16 @@
     move-result-object v3
 
     .line 317
-    sget-object v4, Ljp/co/sony/mc/camera/setting/CommonSettings;->FUNCTION_CUSTOM:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
+    sget-object v5, Ljp/co/sony/mc/camera/setting/CommonSettings;->FUNCTION_CUSTOM:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
 
-    check-cast v4, Ljp/co/sony/mc/camera/setting/SettingKey$Key;
+    check-cast v5, Ljp/co/sony/mc/camera/setting/SettingKey$Key;
 
-    invoke-static {v4}, Ljp/co/sony/mc/camera/view/setting/settingitem/CameraSettingResource;->getTitleTextId(Ljp/co/sony/mc/camera/setting/SettingKey$Key;)I
+    invoke-static {v5}, Ljp/co/sony/mc/camera/view/setting/settingitem/CameraSettingResource;->getTitleTextId(Ljp/co/sony/mc/camera/setting/SettingKey$Key;)I
 
-    move-result v4
+    move-result v5
 
     .line 316
-    invoke-virtual {v3, v4}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
+    invoke-virtual {v3, v5}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
     move-result-object v3
 
@@ -2409,10 +2533,10 @@
 
     move-result-object v3
 
-    const/4 v4, 0x1
+    const/4 v5, 0x1
 
     .line 310
-    invoke-static {v3, v4}, Ljava/util/Arrays;->copyOf([Ljava/lang/Object;I)[Ljava/lang/Object;
+    invoke-static {v3, v5}, Ljava/util/Arrays;->copyOf([Ljava/lang/Object;I)[Ljava/lang/Object;
 
     move-result-object v3
 
@@ -2420,7 +2544,7 @@
 
     move-result-object v2
 
-    const-string v3, "format(format, *args)"
+    const-string v3, "format(...)"
 
     invoke-static {v2, v3}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
 
@@ -2429,9 +2553,9 @@
     invoke-virtual {p2, v2}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
     .line 319
-    new-instance p2, Ljp/co/sony/mc/camera/view/setting/fragment/ProModeCameraSettingsFunctionCustomFragment$$ExternalSyntheticLambda2;
+    new-instance p2, Ljp/co/sony/mc/camera/view/setting/fragment/ProModeCameraSettingsFunctionCustomFragment$$ExternalSyntheticLambda4;
 
-    invoke-direct {p2, p0}, Ljp/co/sony/mc/camera/view/setting/fragment/ProModeCameraSettingsFunctionCustomFragment$$ExternalSyntheticLambda2;-><init>(Ljp/co/sony/mc/camera/view/setting/fragment/ProModeCameraSettingsFunctionCustomFragment;)V
+    invoke-direct {p2, p0}, Ljp/co/sony/mc/camera/view/setting/fragment/ProModeCameraSettingsFunctionCustomFragment$$ExternalSyntheticLambda4;-><init>(Ljp/co/sony/mc/camera/view/setting/fragment/ProModeCameraSettingsFunctionCustomFragment;)V
 
     invoke-virtual {p3, p2}, Landroid/widget/ImageButton;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
@@ -2484,7 +2608,7 @@
 
     invoke-static {v2}, Lkotlin/jvm/internal/Intrinsics;->throwUninitializedPropertyAccessException(Ljava/lang/String;)V
 
-    move-object v2, v5
+    move-object v2, v4
 
     .line 326
     :cond_6
@@ -2510,7 +2634,7 @@
 
     invoke-static {p3}, Lkotlin/jvm/internal/Intrinsics;->throwUninitializedPropertyAccessException(Ljava/lang/String;)V
 
-    move-object p2, v5
+    move-object p2, v4
 
     :cond_7
     iget-object v2, p0, Ljp/co/sony/mc/camera/view/setting/fragment/ProModeCameraSettingsFunctionCustomFragment;->functionCustomAdapter:Ljp/co/sony/mc/camera/view/setting/fragment/ProModeCameraSettingsFunctionCustomFragment$FunctionCustomAdapter;
@@ -2521,7 +2645,7 @@
 
     invoke-static {v2}, Lkotlin/jvm/internal/Intrinsics;->throwUninitializedPropertyAccessException(Ljava/lang/String;)V
 
-    move-object v2, v5
+    move-object v2, v4
 
     :cond_8
     check-cast v2, Landroid/widget/ExpandableListAdapter;
@@ -2535,7 +2659,7 @@
 
     invoke-static {p3}, Lkotlin/jvm/internal/Intrinsics;->throwUninitializedPropertyAccessException(Ljava/lang/String;)V
 
-    move-object p2, v5
+    move-object p2, v4
 
     :cond_9
     invoke-virtual {p2}, Landroid/widget/ExpandableListView;->getExpandableListAdapter()Landroid/widget/ExpandableListAdapter;
@@ -2558,7 +2682,7 @@
 
     invoke-static {p3}, Lkotlin/jvm/internal/Intrinsics;->throwUninitializedPropertyAccessException(Ljava/lang/String;)V
 
-    move-object v3, v5
+    move-object v3, v4
 
     :cond_a
     invoke-virtual {v3, v2}, Landroid/widget/ExpandableListView;->expandGroup(I)Z
@@ -2575,7 +2699,7 @@
 
     invoke-static {p3}, Lkotlin/jvm/internal/Intrinsics;->throwUninitializedPropertyAccessException(Ljava/lang/String;)V
 
-    move-object p2, v5
+    move-object p2, v4
 
     :cond_c
     invoke-direct {p0}, Ljp/co/sony/mc/camera/view/setting/fragment/ProModeCameraSettingsFunctionCustomFragment;->getSelectListGroupIndex()I
@@ -2586,7 +2710,7 @@
 
     move-result v3
 
-    invoke-virtual {p2, v2, v3, v4}, Landroid/widget/ExpandableListView;->setSelectedChild(IIZ)Z
+    invoke-virtual {p2, v2, v3, v5}, Landroid/widget/ExpandableListView;->setSelectedChild(IIZ)Z
 
     .line 332
     iget-object p2, p0, Ljp/co/sony/mc/camera/view/setting/fragment/ProModeCameraSettingsFunctionCustomFragment;->selectListView:Landroid/widget/ExpandableListView;
@@ -2595,12 +2719,12 @@
 
     invoke-static {p3}, Lkotlin/jvm/internal/Intrinsics;->throwUninitializedPropertyAccessException(Ljava/lang/String;)V
 
-    move-object p2, v5
+    move-object p2, v4
 
     :cond_d
-    new-instance v2, Ljp/co/sony/mc/camera/view/setting/fragment/ProModeCameraSettingsFunctionCustomFragment$$ExternalSyntheticLambda3;
+    new-instance v2, Ljp/co/sony/mc/camera/view/setting/fragment/ProModeCameraSettingsFunctionCustomFragment$$ExternalSyntheticLambda5;
 
-    invoke-direct {v2}, Ljp/co/sony/mc/camera/view/setting/fragment/ProModeCameraSettingsFunctionCustomFragment$$ExternalSyntheticLambda3;-><init>()V
+    invoke-direct {v2}, Ljp/co/sony/mc/camera/view/setting/fragment/ProModeCameraSettingsFunctionCustomFragment$$ExternalSyntheticLambda5;-><init>()V
 
     invoke-virtual {p2, v2}, Landroid/widget/ExpandableListView;->setOnGroupClickListener(Landroid/widget/ExpandableListView$OnGroupClickListener;)V
 
@@ -2611,12 +2735,12 @@
 
     invoke-static {p3}, Lkotlin/jvm/internal/Intrinsics;->throwUninitializedPropertyAccessException(Ljava/lang/String;)V
 
-    move-object p2, v5
+    move-object p2, v4
 
     :cond_e
-    new-instance p3, Ljp/co/sony/mc/camera/view/setting/fragment/ProModeCameraSettingsFunctionCustomFragment$$ExternalSyntheticLambda4;
+    new-instance p3, Ljp/co/sony/mc/camera/view/setting/fragment/ProModeCameraSettingsFunctionCustomFragment$$ExternalSyntheticLambda6;
 
-    invoke-direct {p3, p0}, Ljp/co/sony/mc/camera/view/setting/fragment/ProModeCameraSettingsFunctionCustomFragment$$ExternalSyntheticLambda4;-><init>(Ljp/co/sony/mc/camera/view/setting/fragment/ProModeCameraSettingsFunctionCustomFragment;)V
+    invoke-direct {p3, p0}, Ljp/co/sony/mc/camera/view/setting/fragment/ProModeCameraSettingsFunctionCustomFragment$$ExternalSyntheticLambda6;-><init>(Ljp/co/sony/mc/camera/view/setting/fragment/ProModeCameraSettingsFunctionCustomFragment;)V
 
     invoke-virtual {p2, p3}, Landroid/widget/ExpandableListView;->setOnChildClickListener(Landroid/widget/ExpandableListView$OnChildClickListener;)V
 
@@ -2631,7 +2755,7 @@
 
     invoke-static {p3}, Lkotlin/jvm/internal/Intrinsics;->throwUninitializedPropertyAccessException(Ljava/lang/String;)V
 
-    move-object p3, v5
+    move-object p3, v4
 
     :cond_f
     iget v2, p0, Ljp/co/sony/mc/camera/view/setting/fragment/ProModeCameraSettingsFunctionCustomFragment;->fnItemSelectIndex:I
@@ -2641,9 +2765,9 @@
     iput-object p2, p0, Ljp/co/sony/mc/camera/view/setting/fragment/ProModeCameraSettingsFunctionCustomFragment;->fnItemAdapter:Ljp/co/sony/mc/camera/view/setting/fragment/FnItemAdapter;
 
     .line 345
-    new-instance p3, Ljp/co/sony/mc/camera/view/setting/fragment/ProModeCameraSettingsFunctionCustomFragment$$ExternalSyntheticLambda5;
+    new-instance p3, Ljp/co/sony/mc/camera/view/setting/fragment/ProModeCameraSettingsFunctionCustomFragment$$ExternalSyntheticLambda7;
 
-    invoke-direct {p3, p0}, Ljp/co/sony/mc/camera/view/setting/fragment/ProModeCameraSettingsFunctionCustomFragment$$ExternalSyntheticLambda5;-><init>(Ljp/co/sony/mc/camera/view/setting/fragment/ProModeCameraSettingsFunctionCustomFragment;)V
+    invoke-direct {p3, p0}, Ljp/co/sony/mc/camera/view/setting/fragment/ProModeCameraSettingsFunctionCustomFragment$$ExternalSyntheticLambda7;-><init>(Ljp/co/sony/mc/camera/view/setting/fragment/ProModeCameraSettingsFunctionCustomFragment;)V
 
     invoke-virtual {p2, p3}, Ljp/co/sony/mc/camera/view/setting/fragment/FnItemAdapter;->setOnFnItemClickListener(Ljp/co/sony/mc/camera/view/setting/fragment/FnItemAdapter$OnFnItemClickListener;)V
 
@@ -2659,19 +2783,19 @@
     goto :goto_3
 
     :cond_10
-    move-object v5, p2
+    move-object v4, p2
 
     :goto_3
-    check-cast v5, Landroidx/recyclerview/widget/RecyclerView$Adapter;
+    check-cast v4, Landroidx/recyclerview/widget/RecyclerView$Adapter;
 
-    invoke-virtual {v1, v5}, Landroidx/recyclerview/widget/RecyclerView;->setAdapter(Landroidx/recyclerview/widget/RecyclerView$Adapter;)V
+    invoke-virtual {v1, v4}, Landroidx/recyclerview/widget/RecyclerView;->setAdapter(Landroidx/recyclerview/widget/RecyclerView$Adapter;)V
 
     .line 352
     invoke-virtual {v1}, Landroidx/recyclerview/widget/RecyclerView;->getResources()Landroid/content/res/Resources;
 
     move-result-object p2
 
-    const p3, 0x7f070622
+    const p3, 0x7f0706a2
 
     invoke-virtual {p2, p3}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
@@ -2719,7 +2843,7 @@
 
     move-result p2
 
-    if-ne p2, v4, :cond_11
+    if-ne p2, v5, :cond_11
 
     .line 358
     invoke-virtual {v1}, Landroidx/recyclerview/widget/RecyclerView;->getResources()Landroid/content/res/Resources;
@@ -2780,7 +2904,7 @@
 
     move-result v0
 
-    const v3, 0x7f09044a
+    const v3, 0x7f09043a
 
     invoke-virtual {p2, v0, v4, v3, v2}, Landroidx/constraintlayout/widget/ConstraintSet;->connect(IIII)V
 

@@ -21,7 +21,7 @@
 .method constructor <init>()V
     .locals 0
 
-    .line 40
+    .line 42
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -44,7 +44,7 @@
         }
     .end annotation
 
-    .line 43
+    .line 46
     invoke-virtual {p2}, Lcom/google/gson/reflect/TypeToken;->getRawType()Ljava/lang/Class;
 
     move-result-object p0
@@ -55,7 +55,7 @@
 
     if-ne p0, p1, :cond_0
 
-    .line 44
+    .line 47
     new-instance p0, Lcom/google/gson/internal/sql/SqlDateTypeAdapter;
 
     invoke-direct {p0, p2}, Lcom/google/gson/internal/sql/SqlDateTypeAdapter;-><init>(Lcom/google/gson/internal/sql/SqlDateTypeAdapter$1;)V

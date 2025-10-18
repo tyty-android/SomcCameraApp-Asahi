@@ -36,10 +36,10 @@
 .method private constructor <init>()V
     .locals 2
 
-    .line 5729
+    .line 5989
     invoke-direct {p0}, Ljava/util/concurrent/ConcurrentLinkedDeque;-><init>()V
 
-    .line 5730
+    .line 5990
     new-instance v0, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$CapturingSchemeQueue$CaptureRequestQueue$CaptureTimeoutTimer;
 
     const/4 v1, 0x0
@@ -64,7 +64,7 @@
 .method public bridge synthetic add(Ljava/lang/Object;)Z
     .locals 0
 
-    .line 5698
+    .line 5958
     check-cast p1, Ljp/co/sony/mc/camera/storage/RequestFactory$PhotoSavingRequestBuilder;
 
     invoke-virtual {p0, p1}, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$CapturingSchemeQueue$CaptureRequestQueue;->add(Ljp/co/sony/mc/camera/storage/RequestFactory$PhotoSavingRequestBuilder;)Z
@@ -77,12 +77,12 @@
 .method public add(Ljp/co/sony/mc/camera/storage/RequestFactory$PhotoSavingRequestBuilder;)Z
     .locals 1
 
-    .line 5734
+    .line 5994
     iget-object v0, p0, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$CapturingSchemeQueue$CaptureRequestQueue;->mCaptureTimeoutTimer:Ljp/co/sony/mc/camera/device/CameraDeviceHandler$CapturingSchemeQueue$CaptureRequestQueue$CaptureTimeoutTimer;
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$CapturingSchemeQueue$CaptureRequestQueue$CaptureTimeoutTimer;->-$$Nest$mstart(Ljp/co/sony/mc/camera/device/CameraDeviceHandler$CapturingSchemeQueue$CaptureRequestQueue$CaptureTimeoutTimer;)V
 
-    .line 5735
+    .line 5995
     invoke-super {p0, p1}, Ljava/util/concurrent/ConcurrentLinkedDeque;->add(Ljava/lang/Object;)Z
 
     move-result p0
@@ -93,10 +93,10 @@
 .method public clear()V
     .locals 0
 
-    .line 5757
+    .line 6017
     invoke-super {p0}, Ljava/util/concurrent/ConcurrentLinkedDeque;->clear()V
 
-    .line 5758
+    .line 6018
     iget-object p0, p0, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$CapturingSchemeQueue$CaptureRequestQueue;->mCaptureTimeoutTimer:Ljp/co/sony/mc/camera/device/CameraDeviceHandler$CapturingSchemeQueue$CaptureRequestQueue$CaptureTimeoutTimer;
 
     invoke-static {p0}, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$CapturingSchemeQueue$CaptureRequestQueue$CaptureTimeoutTimer;->-$$Nest$mstop(Ljp/co/sony/mc/camera/device/CameraDeviceHandler$CapturingSchemeQueue$CaptureRequestQueue$CaptureTimeoutTimer;)V
@@ -107,7 +107,7 @@
 .method public bridge synthetic poll()Ljava/lang/Object;
     .locals 0
 
-    .line 5698
+    .line 5958
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$CapturingSchemeQueue$CaptureRequestQueue;->poll()Ljp/co/sony/mc/camera/storage/RequestFactory$PhotoSavingRequestBuilder;
 
     move-result-object p0
@@ -118,26 +118,26 @@
 .method public poll()Ljp/co/sony/mc/camera/storage/RequestFactory$PhotoSavingRequestBuilder;
     .locals 2
 
-    .line 5739
+    .line 5999
     invoke-super {p0}, Ljava/util/concurrent/ConcurrentLinkedDeque;->poll()Ljava/lang/Object;
 
     move-result-object v0
 
     check-cast v0, Ljp/co/sony/mc/camera/storage/RequestFactory$PhotoSavingRequestBuilder;
 
-    .line 5740
+    .line 6000
     iget-object v1, p0, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$CapturingSchemeQueue$CaptureRequestQueue;->mCaptureTimeoutTimer:Ljp/co/sony/mc/camera/device/CameraDeviceHandler$CapturingSchemeQueue$CaptureRequestQueue$CaptureTimeoutTimer;
 
     invoke-static {v1}, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$CapturingSchemeQueue$CaptureRequestQueue$CaptureTimeoutTimer;->-$$Nest$mstop(Ljp/co/sony/mc/camera/device/CameraDeviceHandler$CapturingSchemeQueue$CaptureRequestQueue$CaptureTimeoutTimer;)V
 
-    .line 5741
+    .line 6001
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$CapturingSchemeQueue$CaptureRequestQueue;->size()I
 
     move-result v1
 
     if-lez v1, :cond_0
 
-    .line 5742
+    .line 6002
     iget-object p0, p0, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$CapturingSchemeQueue$CaptureRequestQueue;->mCaptureTimeoutTimer:Ljp/co/sony/mc/camera/device/CameraDeviceHandler$CapturingSchemeQueue$CaptureRequestQueue$CaptureTimeoutTimer;
 
     invoke-static {p0}, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$CapturingSchemeQueue$CaptureRequestQueue$CaptureTimeoutTimer;->-$$Nest$mstart(Ljp/co/sony/mc/camera/device/CameraDeviceHandler$CapturingSchemeQueue$CaptureRequestQueue$CaptureTimeoutTimer;)V
@@ -149,7 +149,7 @@
 .method public bridge synthetic removeLast()Ljava/lang/Object;
     .locals 0
 
-    .line 5698
+    .line 5958
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$CapturingSchemeQueue$CaptureRequestQueue;->removeLast()Ljp/co/sony/mc/camera/storage/RequestFactory$PhotoSavingRequestBuilder;
 
     move-result-object p0
@@ -160,26 +160,26 @@
 .method public removeLast()Ljp/co/sony/mc/camera/storage/RequestFactory$PhotoSavingRequestBuilder;
     .locals 2
 
-    .line 5748
+    .line 6008
     invoke-super {p0}, Ljava/util/concurrent/ConcurrentLinkedDeque;->removeLast()Ljava/lang/Object;
 
     move-result-object v0
 
     check-cast v0, Ljp/co/sony/mc/camera/storage/RequestFactory$PhotoSavingRequestBuilder;
 
-    .line 5749
+    .line 6009
     iget-object v1, p0, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$CapturingSchemeQueue$CaptureRequestQueue;->mCaptureTimeoutTimer:Ljp/co/sony/mc/camera/device/CameraDeviceHandler$CapturingSchemeQueue$CaptureRequestQueue$CaptureTimeoutTimer;
 
     invoke-static {v1}, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$CapturingSchemeQueue$CaptureRequestQueue$CaptureTimeoutTimer;->-$$Nest$mstop(Ljp/co/sony/mc/camera/device/CameraDeviceHandler$CapturingSchemeQueue$CaptureRequestQueue$CaptureTimeoutTimer;)V
 
-    .line 5750
+    .line 6010
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$CapturingSchemeQueue$CaptureRequestQueue;->size()I
 
     move-result v1
 
     if-lez v1, :cond_0
 
-    .line 5751
+    .line 6011
     iget-object p0, p0, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$CapturingSchemeQueue$CaptureRequestQueue;->mCaptureTimeoutTimer:Ljp/co/sony/mc/camera/device/CameraDeviceHandler$CapturingSchemeQueue$CaptureRequestQueue$CaptureTimeoutTimer;
 
     invoke-static {p0}, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$CapturingSchemeQueue$CaptureRequestQueue$CaptureTimeoutTimer;->-$$Nest$mstart(Ljp/co/sony/mc/camera/device/CameraDeviceHandler$CapturingSchemeQueue$CaptureRequestQueue$CaptureTimeoutTimer;)V

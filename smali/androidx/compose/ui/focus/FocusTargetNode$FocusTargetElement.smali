@@ -55,6 +55,8 @@
 
 
 # static fields
+.field public static final $stable:I
+
 .field public static final INSTANCE:Landroidx/compose/ui/focus/FocusTargetNode$FocusTargetElement;
 
 
@@ -74,7 +76,7 @@
 .method private constructor <init>()V
     .locals 0
 
-    .line 185
+    .line 207
     invoke-direct {p0}, Landroidx/compose/ui/node/ModifierNodeElement;-><init>()V
 
     return-void
@@ -85,7 +87,7 @@
 .method public bridge synthetic create()Landroidx/compose/ui/Modifier$Node;
     .locals 0
 
-    .line 185
+    .line 207
     invoke-virtual {p0}, Landroidx/compose/ui/focus/FocusTargetNode$FocusTargetElement;->create()Landroidx/compose/ui/focus/FocusTargetNode;
 
     move-result-object p0
@@ -98,7 +100,7 @@
 .method public create()Landroidx/compose/ui/focus/FocusTargetNode;
     .locals 0
 
-    .line 186
+    .line 208
     new-instance p0, Landroidx/compose/ui/focus/FocusTargetNode;
 
     invoke-direct {p0}, Landroidx/compose/ui/focus/FocusTargetNode;-><init>()V
@@ -133,11 +135,7 @@
 .method public inspectableProperties(Landroidx/compose/ui/platform/InspectorInfo;)V
     .locals 0
 
-    const-string p0, "<this>"
-
-    invoke-static {p1, p0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 191
+    .line 213
     const-string p0, "focusTarget"
 
     invoke-virtual {p1, p0}, Landroidx/compose/ui/platform/InspectorInfo;->setName(Ljava/lang/String;)V
@@ -148,7 +146,7 @@
 .method public bridge synthetic update(Landroidx/compose/ui/Modifier$Node;)V
     .locals 0
 
-    .line 185
+    .line 207
     check-cast p1, Landroidx/compose/ui/focus/FocusTargetNode;
 
     invoke-virtual {p0, p1}, Landroidx/compose/ui/focus/FocusTargetNode$FocusTargetElement;->update(Landroidx/compose/ui/focus/FocusTargetNode;)V
@@ -158,10 +156,6 @@
 
 .method public update(Landroidx/compose/ui/focus/FocusTargetNode;)V
     .locals 0
-
-    const-string p0, "node"
-
-    invoke-static {p1, p0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
     return-void
 .end method

@@ -21,7 +21,7 @@
 .method constructor <init>()V
     .locals 0
 
-    .line 2710
+    .line 2735
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -42,10 +42,8 @@
         }
     .end annotation
 
-    .line 2714
-    invoke-static {}, Ljp/co/sony/mc/camera/configuration/parameters/WindNoiseReduction;->getDefaultValue()Ljp/co/sony/mc/camera/configuration/parameters/WindNoiseReduction;
-
-    move-result-object p0
+    .line 2739
+    sget-object p0, Ljp/co/sony/mc/camera/configuration/parameters/TouchCapture;->OFF:Ljp/co/sony/mc/camera/configuration/parameters/TouchCapture;
 
     return-object p0
 .end method

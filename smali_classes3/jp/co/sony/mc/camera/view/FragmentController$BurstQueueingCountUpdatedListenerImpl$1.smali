@@ -32,7 +32,7 @@
         }
     .end annotation
 
-    .line 7947
+    .line 8223
     iput-object p1, p0, Ljp/co/sony/mc/camera/view/FragmentController$BurstQueueingCountUpdatedListenerImpl$1;->this$0:Ljp/co/sony/mc/camera/view/FragmentController$BurstQueueingCountUpdatedListenerImpl;
 
     iput p2, p0, Ljp/co/sony/mc/camera/view/FragmentController$BurstQueueingCountUpdatedListenerImpl$1;->val$queueingCount:I
@@ -47,7 +47,7 @@
 .method public run()V
     .locals 1
 
-    .line 7950
+    .line 8226
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/FragmentController$BurstQueueingCountUpdatedListenerImpl$1;->this$0:Ljp/co/sony/mc/camera/view/FragmentController$BurstQueueingCountUpdatedListenerImpl;
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/view/FragmentController$BurstQueueingCountUpdatedListenerImpl;->-$$Nest$fgetmController(Ljp/co/sony/mc/camera/view/FragmentController$BurstQueueingCountUpdatedListenerImpl;)Ljp/co/sony/mc/camera/view/FragmentController;

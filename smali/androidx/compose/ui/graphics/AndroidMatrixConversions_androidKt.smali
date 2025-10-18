@@ -10,7 +10,7 @@
 
 .annotation runtime Lkotlin/Metadata;
     d1 = {
-        "\u0000\u0014\n\u0000\n\u0002\u0010\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0005\u001a\u001f\u0010\u0000\u001a\u00020\u0001*\u00020\u00022\u0006\u0010\u0003\u001a\u00020\u0004\u00f8\u0001\u0000\u00f8\u0001\u0001\u00a2\u0006\u0004\u0008\u0005\u0010\u0006\u001a\u001f\u0010\u0000\u001a\u00020\u0001*\u00020\u00042\u0006\u0010\u0003\u001a\u00020\u0002\u00f8\u0001\u0000\u00f8\u0001\u0001\u00a2\u0006\u0004\u0008\u0007\u0010\u0008\u0082\u0002\u000b\n\u0005\u0008\u00a1\u001e0\u0001\n\u0002\u0008\u0019\u00a8\u0006\t"
+        "\u0000\u0014\n\u0000\n\u0002\u0010\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0005\u001a\u001c\u0010\u0000\u001a\u00020\u0001*\u00020\u00022\u0006\u0010\u0003\u001a\u00020\u0004\u00f8\u0001\u0000\u00a2\u0006\u0004\u0008\u0005\u0010\u0006\u001a\u001c\u0010\u0000\u001a\u00020\u0001*\u00020\u00042\u0006\u0010\u0003\u001a\u00020\u0002\u00f8\u0001\u0000\u00a2\u0006\u0004\u0008\u0007\u0010\u0008\u0082\u0002\u0007\n\u0005\u0008\u00a1\u001e0\u0001\u00a8\u0006\t"
     }
     d2 = {
         "setFrom",
@@ -36,188 +36,176 @@
 
 # direct methods
 .method public static final setFrom-EL8BTi8(Landroid/graphics/Matrix;[F)V
-    .locals 23
+    .locals 21
 
-    move-object/from16 v0, p1
-
-    const-string v1, "$this$setFrom"
-
-    move-object/from16 v2, p0
-
-    invoke-static {v2, v1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string v1, "matrix"
-
-    invoke-static {v0, v1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const/4 v1, 0x2
+    const/4 v0, 0x2
 
     .line 113
-    aget v3, v0, v1
+    aget v1, p1, v0
 
-    const/4 v4, 0x0
+    const/4 v2, 0x0
 
-    cmpg-float v5, v3, v4
+    cmpg-float v3, v1, v2
+
+    if-nez v3, :cond_0
+
+    const/4 v3, 0x6
+
+    .line 114
+    aget v4, p1, v3
+
+    cmpg-float v5, v4, v2
 
     if-nez v5, :cond_0
 
-    const/4 v5, 0x6
-
-    .line 114
-    aget v6, v0, v5
-
-    cmpg-float v7, v6, v4
-
-    if-nez v7, :cond_0
-
-    const/16 v7, 0xa
+    const/16 v5, 0xa
 
     .line 115
-    aget v7, v0, v7
+    aget v5, p1, v5
 
-    const/high16 v8, 0x3f800000    # 1.0f
+    const/high16 v6, 0x3f800000    # 1.0f
 
-    cmpg-float v7, v7, v8
+    cmpg-float v5, v5, v6
 
-    if-nez v7, :cond_0
+    if-nez v5, :cond_0
 
-    const/16 v7, 0xe
+    const/16 v5, 0xe
 
     .line 116
-    aget v7, v0, v7
+    aget v5, p1, v5
 
-    cmpg-float v7, v7, v4
+    cmpg-float v5, v5, v2
+
+    if-nez v5, :cond_0
+
+    const/16 v5, 0x8
+
+    .line 117
+    aget v6, p1, v5
+
+    cmpg-float v7, v6, v2
 
     if-nez v7, :cond_0
 
-    const/16 v7, 0x8
-
-    .line 117
-    aget v8, v0, v7
-
-    cmpg-float v9, v8, v4
-
-    if-nez v9, :cond_0
-
-    const/16 v9, 0x9
+    const/16 v7, 0x9
 
     .line 118
-    aget v9, v0, v9
+    aget v7, p1, v7
 
-    cmpg-float v9, v9, v4
+    cmpg-float v7, v7, v2
 
-    if-nez v9, :cond_0
+    if-nez v7, :cond_0
 
-    const/16 v9, 0xb
+    const/16 v7, 0xb
 
     .line 119
-    aget v9, v0, v9
+    aget v7, p1, v7
 
-    cmpg-float v4, v9, v4
+    cmpg-float v2, v7, v2
 
-    if-nez v4, :cond_0
+    if-nez v2, :cond_0
 
-    const/4 v4, 0x0
+    const/4 v2, 0x0
 
     .line 73
-    aget v9, v0, v4
+    aget v7, p1, v2
 
-    const/4 v10, 0x1
+    const/4 v8, 0x1
 
     .line 74
-    aget v11, v0, v10
+    aget v9, p1, v8
 
-    const/4 v12, 0x3
+    const/4 v10, 0x3
 
     .line 76
-    aget v13, v0, v12
+    aget v11, p1, v10
 
-    const/4 v14, 0x4
+    const/4 v12, 0x4
 
     .line 77
-    aget v15, v0, v14
+    aget v13, p1, v12
 
-    const/16 v16, 0x5
+    const/4 v14, 0x5
 
     .line 78
-    aget v17, v0, v16
+    aget v15, p1, v14
 
-    const/16 v18, 0x7
+    const/16 v16, 0x7
 
     .line 80
-    aget v19, v0, v18
+    aget v17, p1, v16
 
-    const/16 v20, 0xc
+    const/16 v18, 0xc
 
     .line 83
-    aget v20, v0, v20
+    aget v18, p1, v18
 
-    const/16 v21, 0xd
+    const/16 v19, 0xd
 
     .line 84
-    aget v21, v0, v21
+    aget v19, p1, v19
 
-    const/16 v22, 0xf
+    const/16 v20, 0xf
 
     .line 85
-    aget v22, v0, v22
+    aget v20, p1, v20
 
     .line 89
-    aput v9, v0, v4
+    aput v7, p1, v2
 
     .line 90
-    aput v15, v0, v10
+    aput v13, p1, v8
 
     .line 91
-    aput v20, v0, v1
+    aput v18, p1, v0
 
     .line 92
-    aput v11, v0, v12
+    aput v9, p1, v10
 
     .line 93
-    aput v17, v0, v14
+    aput v15, p1, v12
 
     .line 94
-    aput v21, v0, v16
+    aput v19, p1, v14
 
     .line 95
-    aput v13, v0, v5
+    aput v11, p1, v3
 
     .line 96
-    aput v19, v0, v18
+    aput v17, p1, v16
 
     .line 97
-    aput v22, v0, v7
+    aput v20, p1, v5
 
     .line 99
     invoke-virtual/range {p0 .. p1}, Landroid/graphics/Matrix;->setValues([F)V
 
     .line 102
-    aput v9, v0, v4
+    aput v7, p1, v2
 
     .line 103
-    aput v11, v0, v10
+    aput v9, p1, v8
 
     .line 104
-    aput v3, v0, v1
+    aput v1, p1, v0
 
     .line 105
-    aput v13, v0, v12
+    aput v11, p1, v10
 
     .line 106
-    aput v15, v0, v14
+    aput v13, p1, v12
 
     .line 107
-    aput v17, v0, v16
+    aput v15, p1, v14
 
     .line 108
-    aput v6, v0, v5
+    aput v4, p1, v3
 
     .line 109
-    aput v19, v0, v18
+    aput v17, p1, v16
 
     .line 110
-    aput v8, v0, v7
+    aput v6, p1, v5
 
     return-void
 
@@ -242,14 +230,6 @@
     move-object/from16 v0, p0
 
     move-object/from16 v1, p1
-
-    const-string v2, "$this$setFrom"
-
-    invoke-static {v0, v2}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string v2, "matrix"
-
-    invoke-static {v1, v2}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 24
     invoke-virtual {v1, v0}, Landroid/graphics/Matrix;->getValues([F)V

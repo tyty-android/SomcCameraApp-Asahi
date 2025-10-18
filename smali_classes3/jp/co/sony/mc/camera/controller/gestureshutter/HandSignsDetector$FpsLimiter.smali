@@ -64,7 +64,7 @@
 .end method
 
 .method private logFps(J)V
-    .locals 4
+    .locals 6
 
     .line 90
     iget-wide v0, p0, Ljp/co/sony/mc/camera/controller/gestureshutter/HandSignsDetector$FpsLimiter;->mFpsDetectStartTime:J
@@ -72,6 +72,8 @@
     const-wide/16 v2, 0x0
 
     cmp-long v2, v0, v2
+
+    const/4 v3, 0x1
 
     if-nez v2, :cond_0
 
@@ -83,63 +85,63 @@
     :cond_0
     sub-long v0, p1, v0
 
-    const-wide/16 v2, 0xbb8
+    const-wide/16 v4, 0xbb8
 
-    cmp-long v0, v0, v2
+    cmp-long v0, v0, v4
 
     if-ltz v0, :cond_1
 
     .line 94
-    new-instance v0, Ljava/lang/StringBuilder;
+    new-array v0, v3, [Ljava/lang/String;
 
-    const-string v1, "Detect FPS = "
+    new-instance v1, Ljava/lang/StringBuilder;
 
-    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+    const-string v2, "Detect FPS = "
 
-    iget v1, p0, Ljp/co/sony/mc/camera/controller/gestureshutter/HandSignsDetector$FpsLimiter;->mFrames:I
+    invoke-direct {v1, v2}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
-    int-to-float v1, v1
+    iget v2, p0, Ljp/co/sony/mc/camera/controller/gestureshutter/HandSignsDetector$FpsLimiter;->mFrames:I
 
-    const/high16 v2, 0x447a0000    # 1000.0f
+    int-to-float v2, v2
 
-    mul-float/2addr v1, v2
+    const/high16 v4, 0x447a0000    # 1000.0f
 
-    iget-wide v2, p0, Ljp/co/sony/mc/camera/controller/gestureshutter/HandSignsDetector$FpsLimiter;->mFpsDetectStartTime:J
+    mul-float/2addr v2, v4
 
-    sub-long v2, p1, v2
+    iget-wide v4, p0, Ljp/co/sony/mc/camera/controller/gestureshutter/HandSignsDetector$FpsLimiter;->mFpsDetectStartTime:J
 
-    long-to-float v2, v2
+    sub-long v4, p1, v4
 
-    div-float/2addr v1, v2
+    long-to-float v4, v4
 
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(F)Ljava/lang/StringBuilder;
+    div-float/2addr v2, v4
 
-    move-result-object v0
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(F)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    move-result-object v1
 
-    move-result-object v0
+    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    filled-new-array {v0}, [Ljava/lang/String;
+    move-result-object v1
 
-    move-result-object v0
+    const/4 v2, 0x0
+
+    aput-object v1, v0, v2
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
     .line 96
     iput-wide p1, p0, Ljp/co/sony/mc/camera/controller/gestureshutter/HandSignsDetector$FpsLimiter;->mFpsDetectStartTime:J
 
-    const/4 p1, 0x0
-
     .line 97
-    iput p1, p0, Ljp/co/sony/mc/camera/controller/gestureshutter/HandSignsDetector$FpsLimiter;->mFrames:I
+    iput v2, p0, Ljp/co/sony/mc/camera/controller/gestureshutter/HandSignsDetector$FpsLimiter;->mFrames:I
 
     .line 99
     :cond_1
     :goto_0
     iget p1, p0, Ljp/co/sony/mc/camera/controller/gestureshutter/HandSignsDetector$FpsLimiter;->mFrames:I
 
-    add-int/lit8 p1, p1, 0x1
+    add-int/2addr p1, v3
 
     iput p1, p0, Ljp/co/sony/mc/camera/controller/gestureshutter/HandSignsDetector$FpsLimiter;->mFrames:I
 

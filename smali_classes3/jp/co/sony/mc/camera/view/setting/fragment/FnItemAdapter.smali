@@ -223,7 +223,7 @@
 
     move-result-object v0
 
-    const v2, 0x7f1100ed
+    const v2, 0x7f1100ee
 
     invoke-virtual {v0, v2}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -237,7 +237,7 @@
     .line 114
     iget-object p2, p1, Ljp/co/sony/mc/camera/view/setting/fragment/FnItemAdapter$FnItemViewHolder;->itemView:Landroid/view/View;
 
-    const v2, 0x7f0603a3
+    const v2, 0x7f0603bb
 
     invoke-virtual {p2, v2}, Landroid/view/View;->setBackgroundResource(I)V
 
@@ -277,7 +277,7 @@
     :cond_1
     iget-object p0, p1, Ljp/co/sony/mc/camera/view/setting/fragment/FnItemAdapter$FnItemViewHolder;->itemView:Landroid/view/View;
 
-    const p2, 0x7f060392
+    const p2, 0x7f0603aa
 
     invoke-virtual {p0, p2}, Landroid/view/View;->setBackgroundResource(I)V
 
@@ -360,7 +360,7 @@
 
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/setting/fragment/FnItemAdapter$FnItemViewHolder;->itemView:Landroid/view/View;
 
-    const v0, 0x7f060392
+    const v0, 0x7f0603aa
 
     invoke-virtual {p0, v0}, Landroid/view/View;->setBackgroundResource(I)V
 

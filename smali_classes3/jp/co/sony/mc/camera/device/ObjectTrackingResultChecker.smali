@@ -161,115 +161,115 @@
 
     check-cast p1, [I
 
+    const/4 v1, 0x0
+
     if-eqz p1, :cond_5
 
     .line 71
-    sget-boolean v1, Ljp/co/sony/mc/camera/util/CamLog;->VERBOSE:Z
+    sget-boolean v2, Ljp/co/sony/mc/camera/util/CamLog;->VERBOSE:Z
 
-    const/4 v2, 0x4
+    const/4 v3, 0x4
 
-    const/4 v3, 0x3
+    const/4 v4, 0x3
 
-    const/4 v4, 0x2
+    const/4 v5, 0x2
 
-    const/4 v5, 0x0
-
-    if-eqz v1, :cond_3
+    if-eqz v2, :cond_3
 
     .line 72
-    new-instance v1, Ljava/lang/StringBuilder;
+    new-array v2, v0, [Ljava/lang/String;
 
-    const-string v6, "Object select area: left="
+    new-instance v6, Ljava/lang/StringBuilder;
 
-    invoke-direct {v1, v6}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+    const-string v7, "Object select area: left="
 
-    aget v6, p1, v5
+    invoke-direct {v6, v7}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
-    invoke-virtual {v1, v6}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+    aget v7, p1, v1
 
-    move-result-object v1
+    invoke-virtual {v6, v7}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
-    const-string v6, ", top="
+    move-result-object v6
 
-    invoke-virtual {v1, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    const-string v7, ", top="
 
-    move-result-object v1
+    invoke-virtual {v6, v7}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    aget v6, p1, v0
-
-    invoke-virtual {v1, v6}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
-
-    move-result-object v1
-
-    const-string v6, ", right="
-
-    invoke-virtual {v1, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v1
-
-    aget v6, p1, v4
-
-    invoke-virtual {v1, v6}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
-
-    move-result-object v1
-
-    const-string v6, ", bottom="
-
-    invoke-virtual {v1, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v1
-
-    aget v6, p1, v3
-
-    invoke-virtual {v1, v6}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
-
-    move-result-object v1
-
-    const-string v6, ", lost="
-
-    invoke-virtual {v1, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v1
-
-    aget v6, p1, v2
-
-    invoke-virtual {v1, v6}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
-
-    move-result-object v1
-
-    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v1
-
-    filled-new-array {v1}, [Ljava/lang/String;
-
-    move-result-object v1
-
-    invoke-static {v1}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
-
-    .line 79
-    :cond_3
-    new-instance v1, Landroid/graphics/Rect;
-
-    aget v6, p1, v5
+    move-result-object v6
 
     aget v7, p1, v0
 
+    invoke-virtual {v6, v7}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    move-result-object v6
+
+    const-string v7, ", right="
+
+    invoke-virtual {v6, v7}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v6
+
+    aget v7, p1, v5
+
+    invoke-virtual {v6, v7}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    move-result-object v6
+
+    const-string v7, ", bottom="
+
+    invoke-virtual {v6, v7}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v6
+
+    aget v7, p1, v4
+
+    invoke-virtual {v6, v7}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    move-result-object v6
+
+    const-string v7, ", lost="
+
+    invoke-virtual {v6, v7}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v6
+
+    aget v7, p1, v3
+
+    invoke-virtual {v6, v7}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    move-result-object v6
+
+    invoke-virtual {v6}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v6
+
+    aput-object v6, v2, v1
+
+    invoke-static {v2}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
+
+    .line 79
+    :cond_3
+    new-instance v2, Landroid/graphics/Rect;
+
+    aget v6, p1, v1
+
+    aget v7, p1, v0
+
+    aget v5, p1, v5
+
     aget v4, p1, v4
 
-    aget v3, p1, v3
-
-    invoke-direct {v1, v6, v7, v4, v3}, Landroid/graphics/Rect;-><init>(IIII)V
+    invoke-direct {v2, v6, v7, v5, v4}, Landroid/graphics/Rect;-><init>(IIII)V
 
     .line 84
-    aget p1, p1, v2
+    aget p1, p1, v3
 
     if-ne p1, v0, :cond_4
 
     goto :goto_1
 
     :cond_4
-    move v0, v5
+    move v0, v1
 
     goto :goto_1
 
@@ -280,19 +280,19 @@
     if-eqz p1, :cond_6
 
     .line 87
-    const-string p1, "Object select area: none."
+    new-array p1, v0, [Ljava/lang/String;
 
-    filled-new-array {p1}, [Ljava/lang/String;
+    const-string v2, "Object select area: none."
 
-    move-result-object p1
+    aput-object v2, p1, v1
 
     invoke-static {p1}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
     .line 90
     :cond_6
-    new-instance v1, Landroid/graphics/Rect;
+    new-instance v2, Landroid/graphics/Rect;
 
-    invoke-direct {v1}, Landroid/graphics/Rect;-><init>()V
+    invoke-direct {v2}, Landroid/graphics/Rect;-><init>()V
 
     .line 94
     :goto_1
@@ -316,7 +316,7 @@
     .line 98
     new-instance p2, Ljp/co/sony/mc/camera/device/CaptureResultNotifier$ObjectTrackingResult;
 
-    invoke-direct {p2, v1, v0}, Ljp/co/sony/mc/camera/device/CaptureResultNotifier$ObjectTrackingResult;-><init>(Landroid/graphics/Rect;Z)V
+    invoke-direct {p2, v2, v0}, Ljp/co/sony/mc/camera/device/CaptureResultNotifier$ObjectTrackingResult;-><init>(Landroid/graphics/Rect;Z)V
 
     .line 100
     iget-object v0, p0, Ljp/co/sony/mc/camera/device/ObjectTrackingResultChecker;->mHandler:Landroid/os/Handler;

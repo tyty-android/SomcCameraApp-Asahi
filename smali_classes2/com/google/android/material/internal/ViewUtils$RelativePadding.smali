@@ -28,19 +28,19 @@
 .method public constructor <init>(IIII)V
     .locals 0
 
-    .line 203
+    .line 222
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 204
+    .line 223
     iput p1, p0, Lcom/google/android/material/internal/ViewUtils$RelativePadding;->start:I
 
-    .line 205
+    .line 224
     iput p2, p0, Lcom/google/android/material/internal/ViewUtils$RelativePadding;->top:I
 
-    .line 206
+    .line 225
     iput p3, p0, Lcom/google/android/material/internal/ViewUtils$RelativePadding;->end:I
 
-    .line 207
+    .line 226
     iput p4, p0, Lcom/google/android/material/internal/ViewUtils$RelativePadding;->bottom:I
 
     return-void
@@ -49,25 +49,25 @@
 .method public constructor <init>(Lcom/google/android/material/internal/ViewUtils$RelativePadding;)V
     .locals 1
 
-    .line 210
+    .line 229
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 211
+    .line 230
     iget v0, p1, Lcom/google/android/material/internal/ViewUtils$RelativePadding;->start:I
 
     iput v0, p0, Lcom/google/android/material/internal/ViewUtils$RelativePadding;->start:I
 
-    .line 212
+    .line 231
     iget v0, p1, Lcom/google/android/material/internal/ViewUtils$RelativePadding;->top:I
 
     iput v0, p0, Lcom/google/android/material/internal/ViewUtils$RelativePadding;->top:I
 
-    .line 213
+    .line 232
     iget v0, p1, Lcom/google/android/material/internal/ViewUtils$RelativePadding;->end:I
 
     iput v0, p0, Lcom/google/android/material/internal/ViewUtils$RelativePadding;->end:I
 
-    .line 214
+    .line 233
     iget p1, p1, Lcom/google/android/material/internal/ViewUtils$RelativePadding;->bottom:I
 
     iput p1, p0, Lcom/google/android/material/internal/ViewUtils$RelativePadding;->bottom:I
@@ -80,7 +80,7 @@
 .method public applyToView(Landroid/view/View;)V
     .locals 3
 
-    .line 219
+    .line 238
     iget v0, p0, Lcom/google/android/material/internal/ViewUtils$RelativePadding;->start:I
 
     iget v1, p0, Lcom/google/android/material/internal/ViewUtils$RelativePadding;->top:I

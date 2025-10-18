@@ -5,7 +5,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/SourceDebugExtension;
-    value = "SMAP\nIndent.kt\nKotlin\n*S Kotlin\n*F\n+ 1 Indent.kt\nkotlin/text/StringsKt__IndentKt\n+ 2 fake.kt\nkotlin/jvm/internal/FakeKt\n+ 3 _Collections.kt\nkotlin/collections/CollectionsKt___CollectionsKt\n+ 4 _Strings.kt\nkotlin/text/StringsKt___StringsKt\n*L\n1#1,123:1\n113#1,2:125\n115#1,4:140\n120#1,2:153\n113#1,2:162\n115#1,4:177\n120#1,2:184\n1#2:124\n1#2:150\n1#2:181\n1#2:205\n1569#3,11:127\n1864#3,2:138\n1866#3:151\n1580#3:152\n766#3:155\n857#3,2:156\n1549#3:158\n1620#3,3:159\n1569#3,11:164\n1864#3,2:175\n1866#3:182\n1580#3:183\n1569#3,11:192\n1864#3,2:203\n1866#3:206\n1580#3:207\n151#4,6:144\n151#4,6:186\n*S KotlinDebug\n*F\n+ 1 Indent.kt\nkotlin/text/StringsKt__IndentKt\n*L\n38#1:125,2\n38#1:140,4\n38#1:153,2\n78#1:162,2\n78#1:177,4\n78#1:184,2\n38#1:150\n78#1:181\n114#1:205\n38#1:127,11\n38#1:138,2\n38#1:151\n38#1:152\n74#1:155\n74#1:156,2\n75#1:158\n75#1:159,3\n78#1:164,11\n78#1:175,2\n78#1:182\n78#1:183\n114#1:192,11\n114#1:203,2\n114#1:206\n114#1:207\n39#1:144,6\n101#1:186,6\n*E\n"
+    value = "SMAP\nIndent.kt\nKotlin\n*S Kotlin\n*F\n+ 1 Indent.kt\nkotlin/text/StringsKt__IndentKt\n+ 2 fake.kt\nkotlin/jvm/internal/FakeKt\n+ 3 _Collections.kt\nkotlin/collections/CollectionsKt___CollectionsKt\n+ 4 _Strings.kt\nkotlin/text/StringsKt___StringsKt\n*L\n1#1,123:1\n113#1,2:125\n115#1,4:140\n120#1,2:153\n113#1,2:162\n115#1,4:177\n120#1,2:184\n1#2:124\n1#2:150\n1#2:181\n1#2:205\n1577#3,11:127\n1872#3,2:138\n1874#3:151\n1588#3:152\n774#3:155\n865#3,2:156\n1557#3:158\n1628#3,3:159\n1577#3,11:164\n1872#3,2:175\n1874#3:182\n1588#3:183\n1577#3,11:192\n1872#3,2:203\n1874#3:206\n1588#3:207\n158#4,6:144\n158#4,6:186\n*S KotlinDebug\n*F\n+ 1 Indent.kt\nkotlin/text/StringsKt__IndentKt\n*L\n38#1:125,2\n38#1:140,4\n38#1:153,2\n78#1:162,2\n78#1:177,4\n78#1:184,2\n38#1:150\n78#1:181\n114#1:205\n38#1:127,11\n38#1:138,2\n38#1:151\n38#1:152\n74#1:155\n74#1:156,2\n75#1:158\n75#1:159,3\n78#1:164,11\n78#1:175,2\n78#1:182\n78#1:183\n114#1:192,11\n114#1:203,2\n114#1:206\n114#1:207\n39#1:144,6\n101#1:186,6\n*E\n"
 .end annotation
 
 .annotation runtime Lkotlin/Metadata;
@@ -275,84 +275,108 @@
 
     const/4 v2, 0x0
 
+    move v3, v2
+
     :goto_0
     invoke-interface {p0}, Ljava/util/Iterator;->hasNext()Z
 
-    move-result v3
+    move-result v4
 
-    if-eqz v3, :cond_6
+    if-eqz v4, :cond_7
 
     invoke-interface {p0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
-    move-result-object v3
+    move-result-object v4
 
-    add-int/lit8 v4, v2, 0x1
+    add-int/lit8 v5, v3, 0x1
 
-    if-gez v2, :cond_0
+    if-gez v3, :cond_1
+
+    const/4 v6, 0x3
+
+    const/4 v7, 0x1
+
+    invoke-static {v7, v6, v2}, Lkotlin/internal/PlatformImplementationsKt;->apiVersionIsAtLeast(III)Z
+
+    move-result v6
+
+    if-eqz v6, :cond_0
 
     invoke-static {}, Lkotlin/collections/CollectionsKt;->throwIndexOverflow()V
 
-    .line 202
+    goto :goto_1
+
     :cond_0
-    check-cast v3, Ljava/lang/String;
+    new-instance p0, Ljava/lang/ArithmeticException;
 
-    if-eqz v2, :cond_1
+    const-string p1, "Index overflow has happened."
 
-    if-ne v2, v0, :cond_2
+    invoke-direct {p0, p1}, Ljava/lang/ArithmeticException;-><init>(Ljava/lang/String;)V
+
+    throw p0
+
+    .line 202
+    :cond_1
+    :goto_1
+    check-cast v4, Ljava/lang/String;
+
+    if-eqz v3, :cond_2
+
+    if-ne v3, v0, :cond_3
 
     .line 115
-    :cond_1
-    move-object v2, v3
+    :cond_2
+    move-object v3, v4
 
-    check-cast v2, Ljava/lang/CharSequence;
+    check-cast v3, Ljava/lang/CharSequence;
 
-    invoke-static {v2}, Lkotlin/text/StringsKt;->isBlank(Ljava/lang/CharSequence;)Z
+    invoke-static {v3}, Lkotlin/text/StringsKt;->isBlank(Ljava/lang/CharSequence;)Z
 
-    move-result v2
+    move-result v3
 
-    if-eqz v2, :cond_2
+    if-eqz v3, :cond_3
 
-    const/4 v3, 0x0
+    const/4 v4, 0x0
 
-    goto :goto_1
+    goto :goto_2
 
     .line 118
-    :cond_2
-    invoke-interface {p3, v3}, Lkotlin/jvm/functions/Function1;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
-
-    move-result-object v2
-
-    check-cast v2, Ljava/lang/String;
-
-    if-eqz v2, :cond_4
-
-    invoke-interface {p2, v2}, Lkotlin/jvm/functions/Function1;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
-
-    move-result-object v2
-
-    check-cast v2, Ljava/lang/String;
-
-    if-nez v2, :cond_3
-
-    goto :goto_1
-
     :cond_3
-    move-object v3, v2
+    invoke-interface {p3, v4}, Lkotlin/jvm/functions/Function1;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
 
-    :cond_4
-    :goto_1
+    move-result-object v3
+
+    check-cast v3, Ljava/lang/String;
+
     if-eqz v3, :cond_5
 
-    .line 202
-    invoke-interface {v1, v3}, Ljava/util/Collection;->add(Ljava/lang/Object;)Z
+    invoke-interface {p2, v3}, Lkotlin/jvm/functions/Function1;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object v3
+
+    check-cast v3, Ljava/lang/String;
+
+    if-nez v3, :cond_4
+
+    goto :goto_2
+
+    :cond_4
+    move-object v4, v3
 
     :cond_5
-    move v2, v4
+    :goto_2
+    if-eqz v4, :cond_6
+
+    .line 202
+    invoke-interface {v1, v4}, Ljava/util/Collection;->add(Ljava/lang/Object;)Z
+
+    :cond_6
+    move v3, v5
 
     goto :goto_0
 
     .line 207
-    :cond_6
+    :cond_7
     check-cast v1, Ljava/util/List;
 
     .line 192
@@ -401,7 +425,7 @@
     move-result-object p0
 
     .line 120
-    const-string p1, "mapIndexedNotNull { inde\u2026\"\\n\")\n        .toString()"
+    const-string/jumbo p1, "toString(...)"
 
     invoke-static {p0, p1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
 
@@ -726,7 +750,7 @@
     move-result-object v0
 
     .line 184
-    const-string v1, "mapIndexedNotNull { inde\u2026\"\\n\")\n        .toString()"
+    const-string/jumbo v1, "toString(...)"
 
     invoke-static {v0, v1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
 
@@ -973,7 +997,7 @@
 
     move-result-object v15
 
-    const-string/jumbo v0, "this as java.lang.String).substring(startIndex)"
+    const-string/jumbo v0, "substring(...)"
 
     invoke-static {v15, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
 
@@ -1057,7 +1081,7 @@
     move-result-object v0
 
     .line 153
-    const-string v1, "mapIndexedNotNull { inde\u2026\"\\n\")\n        .toString()"
+    const-string/jumbo v1, "toString(...)"
 
     invoke-static {v0, v1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
 

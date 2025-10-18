@@ -5,7 +5,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/SourceDebugExtension;
-    value = "SMAP\nPathParser.kt\nKotlin\n*S Kotlin\n*F\n+ 1 PathParser.kt\nandroidx/compose/ui/graphics/vector/PathParserKt\n+ 2 ListUtils.kt\nandroidx/compose/ui/util/ListUtilsKt\n*L\n1#1,553:1\n552#1:560\n33#2,6:554\n*S KotlinDebug\n*F\n+ 1 PathParser.kt\nandroidx/compose/ui/graphics/vector/PathParserKt\n*L\n405#1:560\n174#1:554,6\n*E\n"
+    value = "SMAP\nPathParser.kt\nKotlin\n*S Kotlin\n*F\n+ 1 PathParser.kt\nandroidx/compose/ui/graphics/vector/PathParserKt\n+ 2 ListUtils.kt\nandroidx/compose/ui/util/ListUtilsKt\n*L\n1#1,555:1\n554#1:562\n33#2,6:556\n*S KotlinDebug\n*F\n+ 1 PathParser.kt\nandroidx/compose/ui/graphics/vector/PathParserKt\n*L\n407#1:562\n176#1:556,6\n*E\n"
 .end annotation
 
 .annotation runtime Lkotlin/Metadata;
@@ -89,7 +89,7 @@
 
     div-double/2addr v4, v6
 
-    .line 505
+    .line 507
     invoke-static {v4, v5}, Ljava/lang/Math;->abs(D)D
 
     move-result-wide v4
@@ -100,22 +100,22 @@
 
     double-to-int v4, v4
 
-    .line 508
+    .line 510
     invoke-static/range {p13 .. p14}, Ljava/lang/Math;->cos(D)D
 
     move-result-wide v5
 
-    .line 509
+    .line 511
     invoke-static/range {p13 .. p14}, Ljava/lang/Math;->sin(D)D
 
     move-result-wide v7
 
-    .line 510
+    .line 512
     invoke-static/range {p15 .. p16}, Ljava/lang/Math;->cos(D)D
 
     move-result-wide v9
 
-    .line 511
+    .line 513
     invoke-static/range {p15 .. p16}, Ljava/lang/Math;->sin(D)D
 
     move-result-wide v11
@@ -165,12 +165,12 @@
 
     add-double v29, v23, v9
 
-    .line 518
+    .line 520
     invoke-static/range {v29 .. v30}, Ljava/lang/Math;->sin(D)D
 
     move-result-wide v31
 
-    .line 519
+    .line 521
     invoke-static/range {v29 .. v30}, Ljava/lang/Math;->cos(D)D
 
     move-result-wide v33
@@ -221,12 +221,12 @@
 
     div-double v6, v23, v6
 
-    .line 524
+    .line 526
     invoke-static {v6, v7}, Ljava/lang/Math;->tan(D)D
 
     move-result-wide v6
 
-    .line 525
+    .line 527
     invoke-static/range {v23 .. v24}, Ljava/lang/Math;->sin(D)D
 
     move-result-wide v23
@@ -309,7 +309,7 @@
 
     move/from16 v47, v9
 
-    .line 535
+    .line 537
     invoke-interface/range {v41 .. v47}, Landroidx/compose/ui/graphics/Path;->cubicTo(FFFFFF)V
 
     add-int/lit8 v11, v11, 0x1
@@ -363,12 +363,12 @@
 
     mul-double v16, v0, v2
 
-    .line 407
+    .line 409
     invoke-static/range {v16 .. v17}, Ljava/lang/Math;->cos(D)D
 
     move-result-wide v3
 
-    .line 408
+    .line 410
     invoke-static/range {v16 .. v17}, Ljava/lang/Math;->sin(D)D
 
     move-result-wide v7
@@ -452,7 +452,7 @@
 
     if-gez v2, :cond_1
 
-    .line 428
+    .line 430
     invoke-static {v5, v6}, Ljava/lang/Math;->sqrt(D)D
 
     move-result-wide v0
@@ -485,12 +485,12 @@
 
     move/from16 v16, p16
 
-    .line 429
+    .line 431
     invoke-static/range {v0 .. v16}, Landroidx/compose/ui/graphics/vector/PathParserKt;->drawArc(Landroidx/compose/ui/graphics/Path;DDDDDDDZZ)V
 
     return-void
 
-    .line 435
+    .line 437
     :cond_1
     invoke-static/range {v28 .. v29}, Ljava/lang/Math;->sqrt(D)D
 
@@ -522,7 +522,7 @@
 
     sub-double v0, v0, v22
 
-    .line 448
+    .line 450
     invoke-static {v9, v10, v0, v1}, Ljava/lang/Math;->atan2(DD)D
 
     move-result-wide v18
@@ -531,7 +531,7 @@
 
     sub-double v11, v11, v22
 
-    .line 450
+    .line 452
     invoke-static {v13, v14, v11, v12}, Ljava/lang/Math;->atan2(DD)D
 
     move-result-wide v0
@@ -599,7 +599,7 @@
 
     move-wide/from16 v17, v20
 
-    .line 467
+    .line 469
     invoke-static/range {v0 .. v18}, Landroidx/compose/ui/graphics/vector/PathParserKt;->arcToBezier(Landroidx/compose/ui/graphics/Path;DDDDDDDDD)V
 
     return-void
@@ -633,26 +633,18 @@
 
     move-object/from16 v14, p1
 
-    const-string v1, "<this>"
-
-    invoke-static {v0, v1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string/jumbo v1, "target"
-
-    invoke-static {v14, v1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 160
+    .line 162
     invoke-interface/range {p1 .. p1}, Landroidx/compose/ui/graphics/Path;->getFillType-Rg-k1Os()I
 
     move-result v1
 
-    .line 161
+    .line 163
     invoke-interface/range {p1 .. p1}, Landroidx/compose/ui/graphics/Path;->rewind()V
 
-    .line 162
+    .line 164
     invoke-interface {v14, v1}, Landroidx/compose/ui/graphics/Path;->setFillType-oQ8Xj4U(I)V
 
-    .line 173
+    .line 175
     invoke-interface/range {p0 .. p0}, Ljava/util/List;->isEmpty()Z
 
     move-result v1
@@ -673,7 +665,7 @@
     :goto_0
     check-cast v1, Landroidx/compose/ui/graphics/vector/PathNode;
 
-    .line 555
+    .line 557
     invoke-interface/range {p0 .. p0}, Ljava/util/List;->size()I
 
     move-result v15
@@ -697,25 +689,25 @@
     :goto_1
     if-ge v13, v15, :cond_18
 
-    .line 556
+    .line 558
     invoke-interface {v0, v13}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
     move-result-object v4
 
-    .line 557
+    .line 559
     move-object v7, v4
 
     check-cast v7, Landroidx/compose/ui/graphics/vector/PathNode;
 
-    .line 176
+    .line 178
     instance-of v4, v7, Landroidx/compose/ui/graphics/vector/PathNode$Close;
 
     if-eqz v4, :cond_1
 
-    .line 181
+    .line 183
     invoke-interface/range {p1 .. p1}, Landroidx/compose/ui/graphics/Path;->close()V
 
-    .line 182
+    .line 184
     invoke-interface {v14, v10, v11}, Landroidx/compose/ui/graphics/Path;->moveTo(FF)V
 
     move-object/from16 v19, v7
@@ -737,13 +729,13 @@
 
     goto/16 :goto_b
 
-    .line 185
+    .line 187
     :cond_1
     instance-of v4, v7, Landroidx/compose/ui/graphics/vector/PathNode$RelativeMoveTo;
 
     if-eqz v4, :cond_2
 
-    .line 186
+    .line 188
     move-object v1, v7
 
     check-cast v1, Landroidx/compose/ui/graphics/vector/PathNode$RelativeMoveTo;
@@ -754,14 +746,14 @@
 
     add-float/2addr v8, v4
 
-    .line 187
+    .line 189
     invoke-virtual {v1}, Landroidx/compose/ui/graphics/vector/PathNode$RelativeMoveTo;->getDy()F
 
     move-result v4
 
     add-float/2addr v9, v4
 
-    .line 188
+    .line 190
     invoke-virtual {v1}, Landroidx/compose/ui/graphics/vector/PathNode$RelativeMoveTo;->getDx()F
 
     move-result v4
@@ -780,13 +772,13 @@
 
     goto :goto_2
 
-    .line 193
+    .line 195
     :cond_2
     instance-of v4, v7, Landroidx/compose/ui/graphics/vector/PathNode$MoveTo;
 
     if-eqz v4, :cond_3
 
-    .line 194
+    .line 196
     move-object v1, v7
 
     check-cast v1, Landroidx/compose/ui/graphics/vector/PathNode$MoveTo;
@@ -795,12 +787,12 @@
 
     move-result v4
 
-    .line 195
+    .line 197
     invoke-virtual {v1}, Landroidx/compose/ui/graphics/vector/PathNode$MoveTo;->getY()F
 
     move-result v5
 
-    .line 196
+    .line 198
     invoke-virtual {v1}, Landroidx/compose/ui/graphics/vector/PathNode$MoveTo;->getX()F
 
     move-result v6
@@ -824,13 +816,13 @@
 
     goto :goto_2
 
-    .line 201
+    .line 203
     :cond_3
     instance-of v4, v7, Landroidx/compose/ui/graphics/vector/PathNode$RelativeLineTo;
 
     if-eqz v4, :cond_4
 
-    .line 202
+    .line 204
     move-object v1, v7
 
     check-cast v1, Landroidx/compose/ui/graphics/vector/PathNode$RelativeLineTo;
@@ -845,14 +837,14 @@
 
     invoke-interface {v14, v4, v5}, Landroidx/compose/ui/graphics/Path;->relativeLineTo(FF)V
 
-    .line 203
+    .line 205
     invoke-virtual {v1}, Landroidx/compose/ui/graphics/vector/PathNode$RelativeLineTo;->getDx()F
 
     move-result v4
 
     add-float/2addr v8, v4
 
-    .line 204
+    .line 206
     invoke-virtual {v1}, Landroidx/compose/ui/graphics/vector/PathNode$RelativeLineTo;->getDy()F
 
     move-result v1
@@ -862,13 +854,13 @@
 
     goto :goto_3
 
-    .line 207
+    .line 209
     :cond_4
     instance-of v4, v7, Landroidx/compose/ui/graphics/vector/PathNode$LineTo;
 
     if-eqz v4, :cond_5
 
-    .line 208
+    .line 210
     move-object v1, v7
 
     check-cast v1, Landroidx/compose/ui/graphics/vector/PathNode$LineTo;
@@ -883,12 +875,12 @@
 
     invoke-interface {v14, v4, v5}, Landroidx/compose/ui/graphics/Path;->lineTo(FF)V
 
-    .line 209
+    .line 211
     invoke-virtual {v1}, Landroidx/compose/ui/graphics/vector/PathNode$LineTo;->getX()F
 
     move-result v4
 
-    .line 210
+    .line 212
     invoke-virtual {v1}, Landroidx/compose/ui/graphics/vector/PathNode$LineTo;->getY()F
 
     move-result v1
@@ -899,13 +891,13 @@
 
     goto :goto_3
 
-    .line 213
+    .line 215
     :cond_5
     instance-of v4, v7, Landroidx/compose/ui/graphics/vector/PathNode$RelativeHorizontalTo;
 
     if-eqz v4, :cond_6
 
-    .line 214
+    .line 216
     move-object v1, v7
 
     check-cast v1, Landroidx/compose/ui/graphics/vector/PathNode$RelativeHorizontalTo;
@@ -916,7 +908,7 @@
 
     invoke-interface {v14, v4, v12}, Landroidx/compose/ui/graphics/Path;->relativeLineTo(FF)V
 
-    .line 215
+    .line 217
     invoke-virtual {v1}, Landroidx/compose/ui/graphics/vector/PathNode$RelativeHorizontalTo;->getDx()F
 
     move-result v1
@@ -925,13 +917,13 @@
 
     goto :goto_3
 
-    .line 218
+    .line 220
     :cond_6
     instance-of v4, v7, Landroidx/compose/ui/graphics/vector/PathNode$HorizontalTo;
 
     if-eqz v4, :cond_7
 
-    .line 219
+    .line 221
     move-object v1, v7
 
     check-cast v1, Landroidx/compose/ui/graphics/vector/PathNode$HorizontalTo;
@@ -942,7 +934,7 @@
 
     invoke-interface {v14, v4, v9}, Landroidx/compose/ui/graphics/Path;->lineTo(FF)V
 
-    .line 220
+    .line 222
     invoke-virtual {v1}, Landroidx/compose/ui/graphics/vector/PathNode$HorizontalTo;->getX()F
 
     move-result v1
@@ -951,13 +943,13 @@
 
     goto :goto_3
 
-    .line 223
+    .line 225
     :cond_7
     instance-of v4, v7, Landroidx/compose/ui/graphics/vector/PathNode$RelativeVerticalTo;
 
     if-eqz v4, :cond_8
 
-    .line 224
+    .line 226
     move-object v1, v7
 
     check-cast v1, Landroidx/compose/ui/graphics/vector/PathNode$RelativeVerticalTo;
@@ -968,20 +960,20 @@
 
     invoke-interface {v14, v12, v4}, Landroidx/compose/ui/graphics/Path;->relativeLineTo(FF)V
 
-    .line 225
+    .line 227
     invoke-virtual {v1}, Landroidx/compose/ui/graphics/vector/PathNode$RelativeVerticalTo;->getDy()F
 
     move-result v1
 
     goto :goto_4
 
-    .line 228
+    .line 230
     :cond_8
     instance-of v4, v7, Landroidx/compose/ui/graphics/vector/PathNode$VerticalTo;
 
     if-eqz v4, :cond_9
 
-    .line 229
+    .line 231
     move-object v1, v7
 
     check-cast v1, Landroidx/compose/ui/graphics/vector/PathNode$VerticalTo;
@@ -992,7 +984,7 @@
 
     invoke-interface {v14, v8, v4}, Landroidx/compose/ui/graphics/Path;->lineTo(FF)V
 
-    .line 230
+    .line 232
     invoke-virtual {v1}, Landroidx/compose/ui/graphics/vector/PathNode$VerticalTo;->getY()F
 
     move-result v1
@@ -1001,13 +993,13 @@
 
     goto/16 :goto_3
 
-    .line 233
+    .line 235
     :cond_9
     instance-of v4, v7, Landroidx/compose/ui/graphics/vector/PathNode$RelativeCurveTo;
 
     if-eqz v4, :cond_a
 
-    .line 235
+    .line 237
     move-object/from16 v16, v7
 
     check-cast v16, Landroidx/compose/ui/graphics/vector/PathNode$RelativeCurveTo;
@@ -1020,7 +1012,7 @@
 
     move-result v3
 
-    .line 236
+    .line 238
     invoke-virtual/range {v16 .. v16}, Landroidx/compose/ui/graphics/vector/PathNode$RelativeCurveTo;->getDx2()F
 
     move-result v4
@@ -1029,7 +1021,7 @@
 
     move-result v5
 
-    .line 237
+    .line 239
     invoke-virtual/range {v16 .. v16}, Landroidx/compose/ui/graphics/vector/PathNode$RelativeCurveTo;->getDx3()F
 
     move-result v6
@@ -1044,31 +1036,31 @@
 
     move/from16 v7, v17
 
-    .line 234
+    .line 236
     invoke-interface/range {v1 .. v7}, Landroidx/compose/ui/graphics/Path;->relativeCubicTo(FFFFFF)V
 
-    .line 239
+    .line 241
     invoke-virtual/range {v16 .. v16}, Landroidx/compose/ui/graphics/vector/PathNode$RelativeCurveTo;->getDx2()F
 
     move-result v1
 
     add-float/2addr v1, v8
 
-    .line 240
+    .line 242
     invoke-virtual/range {v16 .. v16}, Landroidx/compose/ui/graphics/vector/PathNode$RelativeCurveTo;->getDy2()F
 
     move-result v2
 
     add-float/2addr v2, v9
 
-    .line 241
+    .line 243
     invoke-virtual/range {v16 .. v16}, Landroidx/compose/ui/graphics/vector/PathNode$RelativeCurveTo;->getDx3()F
 
     move-result v3
 
     add-float/2addr v8, v3
 
-    .line 242
+    .line 244
     invoke-virtual/range {v16 .. v16}, Landroidx/compose/ui/graphics/vector/PathNode$RelativeCurveTo;->getDy3()F
 
     move-result v3
@@ -1094,12 +1086,12 @@
     :cond_a
     move-object v0, v7
 
-    .line 245
+    .line 247
     instance-of v4, v0, Landroidx/compose/ui/graphics/vector/PathNode$CurveTo;
 
     if-eqz v4, :cond_b
 
-    .line 247
+    .line 249
     move-object v8, v0
 
     check-cast v8, Landroidx/compose/ui/graphics/vector/PathNode$CurveTo;
@@ -1112,7 +1104,7 @@
 
     move-result v3
 
-    .line 248
+    .line 250
     invoke-virtual {v8}, Landroidx/compose/ui/graphics/vector/PathNode$CurveTo;->getX2()F
 
     move-result v4
@@ -1121,7 +1113,7 @@
 
     move-result v5
 
-    .line 249
+    .line 251
     invoke-virtual {v8}, Landroidx/compose/ui/graphics/vector/PathNode$CurveTo;->getX3()F
 
     move-result v6
@@ -1132,25 +1124,25 @@
 
     move-object/from16 v1, p1
 
-    .line 246
+    .line 248
     invoke-interface/range {v1 .. v7}, Landroidx/compose/ui/graphics/Path;->cubicTo(FFFFFF)V
 
-    .line 251
+    .line 253
     invoke-virtual {v8}, Landroidx/compose/ui/graphics/vector/PathNode$CurveTo;->getX2()F
 
     move-result v1
 
-    .line 252
+    .line 254
     invoke-virtual {v8}, Landroidx/compose/ui/graphics/vector/PathNode$CurveTo;->getY2()F
 
     move-result v2
 
-    .line 253
+    .line 255
     invoke-virtual {v8}, Landroidx/compose/ui/graphics/vector/PathNode$CurveTo;->getX3()F
 
     move-result v3
 
-    .line 254
+    .line 256
     invoke-virtual {v8}, Landroidx/compose/ui/graphics/vector/PathNode$CurveTo;->getY3()F
 
     move-result v4
@@ -1172,13 +1164,13 @@
 
     goto :goto_6
 
-    .line 257
+    .line 259
     :cond_b
     instance-of v4, v0, Landroidx/compose/ui/graphics/vector/PathNode$RelativeReflectiveCurveTo;
 
     if-eqz v4, :cond_d
 
-    .line 258
+    .line 260
     invoke-virtual {v1}, Landroidx/compose/ui/graphics/vector/PathNode;->isCurve()Z
 
     move-result v1
@@ -1200,7 +1192,7 @@
 
     move v3, v2
 
-    .line 267
+    .line 269
     :goto_8
     move-object/from16 v16, v0
 
@@ -1214,7 +1206,7 @@
 
     move-result v5
 
-    .line 268
+    .line 270
     invoke-virtual/range {v16 .. v16}, Landroidx/compose/ui/graphics/vector/PathNode$RelativeReflectiveCurveTo;->getDx2()F
 
     move-result v6
@@ -1225,38 +1217,38 @@
 
     move-object/from16 v1, p1
 
-    .line 265
+    .line 267
     invoke-interface/range {v1 .. v7}, Landroidx/compose/ui/graphics/Path;->relativeCubicTo(FFFFFF)V
 
-    .line 270
+    .line 272
     invoke-virtual/range {v16 .. v16}, Landroidx/compose/ui/graphics/vector/PathNode$RelativeReflectiveCurveTo;->getDx1()F
 
     move-result v1
 
     add-float/2addr v1, v8
 
-    .line 271
+    .line 273
     invoke-virtual/range {v16 .. v16}, Landroidx/compose/ui/graphics/vector/PathNode$RelativeReflectiveCurveTo;->getDy1()F
 
     move-result v2
 
     add-float/2addr v2, v9
 
-    .line 272
+    .line 274
     invoke-virtual/range {v16 .. v16}, Landroidx/compose/ui/graphics/vector/PathNode$RelativeReflectiveCurveTo;->getDx2()F
 
     move-result v3
 
     add-float/2addr v8, v3
 
-    .line 273
+    .line 275
     invoke-virtual/range {v16 .. v16}, Landroidx/compose/ui/graphics/vector/PathNode$RelativeReflectiveCurveTo;->getDy2()F
 
     move-result v3
 
     goto/16 :goto_5
 
-    .line 276
+    .line 278
     :cond_d
     instance-of v4, v0, Landroidx/compose/ui/graphics/vector/PathNode$ReflectiveCurveTo;
 
@@ -1264,7 +1256,7 @@
 
     if-eqz v4, :cond_f
 
-    .line 277
+    .line 279
     invoke-virtual {v1}, Landroidx/compose/ui/graphics/vector/PathNode;->isCurve()Z
 
     move-result v1
@@ -1292,7 +1284,7 @@
 
     move v3, v9
 
-    .line 286
+    .line 288
     :goto_9
     move-object v8, v0
 
@@ -1316,38 +1308,38 @@
 
     move-object/from16 v1, p1
 
-    .line 284
+    .line 286
     invoke-interface/range {v1 .. v7}, Landroidx/compose/ui/graphics/Path;->cubicTo(FFFFFF)V
 
-    .line 288
+    .line 290
     invoke-virtual {v8}, Landroidx/compose/ui/graphics/vector/PathNode$ReflectiveCurveTo;->getX1()F
 
     move-result v1
 
-    .line 289
+    .line 291
     invoke-virtual {v8}, Landroidx/compose/ui/graphics/vector/PathNode$ReflectiveCurveTo;->getY1()F
 
     move-result v2
 
-    .line 290
+    .line 292
     invoke-virtual {v8}, Landroidx/compose/ui/graphics/vector/PathNode$ReflectiveCurveTo;->getX2()F
 
     move-result v3
 
-    .line 291
+    .line 293
     invoke-virtual {v8}, Landroidx/compose/ui/graphics/vector/PathNode$ReflectiveCurveTo;->getY2()F
 
     move-result v4
 
     goto/16 :goto_7
 
-    .line 294
+    .line 296
     :cond_f
     instance-of v4, v0, Landroidx/compose/ui/graphics/vector/PathNode$RelativeQuadTo;
 
     if-eqz v4, :cond_10
 
-    .line 295
+    .line 297
     move-object v7, v0
 
     check-cast v7, Landroidx/compose/ui/graphics/vector/PathNode$RelativeQuadTo;
@@ -1370,41 +1362,41 @@
 
     invoke-interface {v14, v1, v2, v3, v4}, Landroidx/compose/ui/graphics/Path;->relativeQuadraticBezierTo(FFFF)V
 
-    .line 296
+    .line 298
     invoke-virtual {v7}, Landroidx/compose/ui/graphics/vector/PathNode$RelativeQuadTo;->getDx1()F
 
     move-result v1
 
     add-float/2addr v1, v8
 
-    .line 297
+    .line 299
     invoke-virtual {v7}, Landroidx/compose/ui/graphics/vector/PathNode$RelativeQuadTo;->getDy1()F
 
     move-result v2
 
     add-float/2addr v2, v9
 
-    .line 298
+    .line 300
     invoke-virtual {v7}, Landroidx/compose/ui/graphics/vector/PathNode$RelativeQuadTo;->getDx2()F
 
     move-result v3
 
     add-float/2addr v8, v3
 
-    .line 299
+    .line 301
     invoke-virtual {v7}, Landroidx/compose/ui/graphics/vector/PathNode$RelativeQuadTo;->getDy2()F
 
     move-result v3
 
     goto/16 :goto_5
 
-    .line 302
+    .line 304
     :cond_10
     instance-of v4, v0, Landroidx/compose/ui/graphics/vector/PathNode$QuadTo;
 
     if-eqz v4, :cond_11
 
-    .line 303
+    .line 305
     move-object v7, v0
 
     check-cast v7, Landroidx/compose/ui/graphics/vector/PathNode$QuadTo;
@@ -1427,35 +1419,35 @@
 
     invoke-interface {v14, v1, v2, v3, v4}, Landroidx/compose/ui/graphics/Path;->quadraticBezierTo(FFFF)V
 
-    .line 304
+    .line 306
     invoke-virtual {v7}, Landroidx/compose/ui/graphics/vector/PathNode$QuadTo;->getX1()F
 
     move-result v1
 
-    .line 305
+    .line 307
     invoke-virtual {v7}, Landroidx/compose/ui/graphics/vector/PathNode$QuadTo;->getY1()F
 
     move-result v2
 
-    .line 306
+    .line 308
     invoke-virtual {v7}, Landroidx/compose/ui/graphics/vector/PathNode$QuadTo;->getX2()F
 
     move-result v3
 
-    .line 307
+    .line 309
     invoke-virtual {v7}, Landroidx/compose/ui/graphics/vector/PathNode$QuadTo;->getY2()F
 
     move-result v4
 
     goto/16 :goto_7
 
-    .line 310
+    .line 312
     :cond_11
     instance-of v4, v0, Landroidx/compose/ui/graphics/vector/PathNode$RelativeReflectiveQuadTo;
 
     if-eqz v4, :cond_13
 
-    .line 311
+    .line 313
     invoke-virtual {v1}, Landroidx/compose/ui/graphics/vector/PathNode;->isQuad()Z
 
     move-result v1
@@ -1473,7 +1465,7 @@
 
     move v2, v1
 
-    .line 320
+    .line 322
     :goto_a
     move-object v7, v0
 
@@ -1487,34 +1479,34 @@
 
     move-result v4
 
-    .line 318
+    .line 320
     invoke-interface {v14, v1, v2, v3, v4}, Landroidx/compose/ui/graphics/Path;->relativeQuadraticBezierTo(FFFF)V
 
     add-float/2addr v1, v8
 
     add-float/2addr v2, v9
 
-    .line 324
+    .line 326
     invoke-virtual {v7}, Landroidx/compose/ui/graphics/vector/PathNode$RelativeReflectiveQuadTo;->getDx()F
 
     move-result v3
 
     add-float/2addr v8, v3
 
-    .line 325
+    .line 327
     invoke-virtual {v7}, Landroidx/compose/ui/graphics/vector/PathNode$RelativeReflectiveQuadTo;->getDy()F
 
     move-result v3
 
     goto/16 :goto_5
 
-    .line 328
+    .line 330
     :cond_13
     instance-of v4, v0, Landroidx/compose/ui/graphics/vector/PathNode$ReflectiveQuadTo;
 
     if-eqz v4, :cond_15
 
-    .line 329
+    .line 331
     invoke-virtual {v1}, Landroidx/compose/ui/graphics/vector/PathNode;->isQuad()Z
 
     move-result v1
@@ -1531,7 +1523,7 @@
 
     sub-float v9, v1, v3
 
-    .line 338
+    .line 340
     :cond_14
     move-object v7, v0
 
@@ -1545,15 +1537,15 @@
 
     move-result v2
 
-    .line 336
+    .line 338
     invoke-interface {v14, v8, v9, v1, v2}, Landroidx/compose/ui/graphics/Path;->quadraticBezierTo(FFFF)V
 
-    .line 342
+    .line 344
     invoke-virtual {v7}, Landroidx/compose/ui/graphics/vector/PathNode$ReflectiveQuadTo;->getX()F
 
     move-result v1
 
-    .line 343
+    .line 345
     invoke-virtual {v7}, Landroidx/compose/ui/graphics/vector/PathNode$ReflectiveQuadTo;->getY()F
 
     move-result v2
@@ -1576,13 +1568,13 @@
 
     goto/16 :goto_b
 
-    .line 346
+    .line 348
     :cond_15
     instance-of v1, v0, Landroidx/compose/ui/graphics/vector/PathNode$RelativeArcTo;
 
     if-eqz v1, :cond_16
 
-    .line 347
+    .line 349
     move-object v1, v0
 
     check-cast v1, Landroidx/compose/ui/graphics/vector/PathNode$RelativeArcTo;
@@ -1593,7 +1585,7 @@
 
     add-float v6, v2, v8
 
-    .line 348
+    .line 350
     invoke-virtual {v1}, Landroidx/compose/ui/graphics/vector/PathNode$RelativeArcTo;->getArcStartDy()F
 
     move-result v2
@@ -1616,7 +1608,7 @@
 
     float-to-double v8, v0
 
-    .line 355
+    .line 357
     invoke-virtual {v1}, Landroidx/compose/ui/graphics/vector/PathNode$RelativeArcTo;->getHorizontalEllipseRadius()F
 
     move-result v12
@@ -1631,7 +1623,7 @@
 
     move/from16 v20, v17
 
-    .line 356
+    .line 358
     invoke-virtual {v1}, Landroidx/compose/ui/graphics/vector/PathNode$RelativeArcTo;->getVerticalEllipseRadius()F
 
     move-result v12
@@ -1646,7 +1638,7 @@
 
     move/from16 v24, v0
 
-    .line 357
+    .line 359
     invoke-virtual {v1}, Landroidx/compose/ui/graphics/vector/PathNode$RelativeArcTo;->getTheta()F
 
     move-result v0
@@ -1657,19 +1649,19 @@
 
     move/from16 v0, v16
 
-    .line 358
+    .line 360
     invoke-virtual {v1}, Landroidx/compose/ui/graphics/vector/PathNode$RelativeArcTo;->isMoreThanHalf()Z
 
     move-result v16
 
-    .line 359
+    .line 361
     invoke-virtual {v1}, Landroidx/compose/ui/graphics/vector/PathNode$RelativeArcTo;->isPositiveArc()Z
 
     move-result v17
 
     move-object/from16 v1, p1
 
-    .line 349
+    .line 351
     invoke-static/range {v1 .. v17}, Landroidx/compose/ui/graphics/vector/PathParserKt;->drawArc(Landroidx/compose/ui/graphics/Path;DDDDDDDZZ)V
 
     move/from16 v2, v18
@@ -1699,7 +1691,7 @@
 
     move v0, v15
 
-    .line 367
+    .line 369
     instance-of v4, v1, Landroidx/compose/ui/graphics/vector/PathNode$ArcTo;
 
     if-eqz v4, :cond_17
@@ -1708,7 +1700,7 @@
 
     float-to-double v4, v9
 
-    .line 372
+    .line 374
     move-object/from16 v18, v1
 
     check-cast v18, Landroidx/compose/ui/graphics/vector/PathNode$ArcTo;
@@ -1719,40 +1711,40 @@
 
     float-to-double v6, v6
 
-    .line 373
+    .line 375
     invoke-virtual/range {v18 .. v18}, Landroidx/compose/ui/graphics/vector/PathNode$ArcTo;->getArcStartY()F
 
     move-result v8
 
     float-to-double v8, v8
 
-    .line 374
+    .line 376
     invoke-virtual/range {v18 .. v18}, Landroidx/compose/ui/graphics/vector/PathNode$ArcTo;->getHorizontalEllipseRadius()F
 
     move-result v10
 
     float-to-double v10, v10
 
-    .line 375
+    .line 377
     invoke-virtual/range {v18 .. v18}, Landroidx/compose/ui/graphics/vector/PathNode$ArcTo;->getVerticalEllipseRadius()F
 
     move-result v12
 
     float-to-double v12, v12
 
-    .line 376
+    .line 378
     invoke-virtual/range {v18 .. v18}, Landroidx/compose/ui/graphics/vector/PathNode$ArcTo;->getTheta()F
 
     move-result v14
 
     float-to-double v14, v14
 
-    .line 377
+    .line 379
     invoke-virtual/range {v18 .. v18}, Landroidx/compose/ui/graphics/vector/PathNode$ArcTo;->isMoreThanHalf()Z
 
     move-result v16
 
-    .line 378
+    .line 380
     invoke-virtual/range {v18 .. v18}, Landroidx/compose/ui/graphics/vector/PathNode$ArcTo;->isPositiveArc()Z
 
     move-result v17
@@ -1761,15 +1753,15 @@
 
     move-object/from16 v1, p1
 
-    .line 368
+    .line 370
     invoke-static/range {v1 .. v17}, Landroidx/compose/ui/graphics/vector/PathParserKt;->drawArc(Landroidx/compose/ui/graphics/Path;DDDDDDDZZ)V
 
-    .line 380
+    .line 382
     invoke-virtual/range {v18 .. v18}, Landroidx/compose/ui/graphics/vector/PathNode$ArcTo;->getArcStartX()F
 
     move-result v1
 
-    .line 381
+    .line 383
     invoke-virtual/range {v18 .. v18}, Landroidx/compose/ui/graphics/vector/PathNode$ArcTo;->getArcStartY()F
 
     move-result v2
@@ -1821,7 +1813,7 @@
 
     if-eqz p2, :cond_0
 
-    .line 158
+    .line 160
     invoke-static {}, Landroidx/compose/ui/graphics/AndroidPath_androidKt;->Path()Landroidx/compose/ui/graphics/Path;
 
     move-result-object p1

@@ -33,7 +33,7 @@
 .method static constructor <clinit>()V
     .locals 1
 
-    .line 15
+    .line 31
     new-instance v0, Lcom/google/gson/internal/sql/SqlTimestampTypeAdapter$1;
 
     invoke-direct {v0}, Lcom/google/gson/internal/sql/SqlTimestampTypeAdapter$1;-><init>()V
@@ -54,10 +54,10 @@
         }
     .end annotation
 
-    .line 29
+    .line 47
     invoke-direct {p0}, Lcom/google/gson/TypeAdapter;-><init>()V
 
-    .line 30
+    .line 48
     iput-object p1, p0, Lcom/google/gson/internal/sql/SqlTimestampTypeAdapter;->dateTypeAdapter:Lcom/google/gson/TypeAdapter;
 
     return-void
@@ -66,7 +66,7 @@
 .method synthetic constructor <init>(Lcom/google/gson/TypeAdapter;Lcom/google/gson/internal/sql/SqlTimestampTypeAdapter$1;)V
     .locals 0
 
-    .line 14
+    .line 30
     invoke-direct {p0, p1}, Lcom/google/gson/internal/sql/SqlTimestampTypeAdapter;-><init>(Lcom/google/gson/TypeAdapter;)V
 
     return-void
@@ -82,7 +82,7 @@
         }
     .end annotation
 
-    .line 14
+    .line 29
     invoke-virtual {p0, p1}, Lcom/google/gson/internal/sql/SqlTimestampTypeAdapter;->read(Lcom/google/gson/stream/JsonReader;)Ljava/sql/Timestamp;
 
     move-result-object p0
@@ -98,7 +98,7 @@
         }
     .end annotation
 
-    .line 35
+    .line 53
     iget-object p0, p0, Lcom/google/gson/internal/sql/SqlTimestampTypeAdapter;->dateTypeAdapter:Lcom/google/gson/TypeAdapter;
 
     invoke-virtual {p0, p1}, Lcom/google/gson/TypeAdapter;->read(Lcom/google/gson/stream/JsonReader;)Ljava/lang/Object;
@@ -109,7 +109,7 @@
 
     if-eqz p0, :cond_0
 
-    .line 36
+    .line 54
     new-instance p1, Ljava/sql/Timestamp;
 
     invoke-virtual {p0}, Ljava/util/Date;->getTime()J
@@ -135,7 +135,7 @@
         }
     .end annotation
 
-    .line 14
+    .line 29
     check-cast p2, Ljava/sql/Timestamp;
 
     invoke-virtual {p0, p1, p2}, Lcom/google/gson/internal/sql/SqlTimestampTypeAdapter;->write(Lcom/google/gson/stream/JsonWriter;Ljava/sql/Timestamp;)V
@@ -151,7 +151,7 @@
         }
     .end annotation
 
-    .line 41
+    .line 59
     iget-object p0, p0, Lcom/google/gson/internal/sql/SqlTimestampTypeAdapter;->dateTypeAdapter:Lcom/google/gson/TypeAdapter;
 
     invoke-virtual {p0, p1, p2}, Lcom/google/gson/TypeAdapter;->write(Lcom/google/gson/stream/JsonWriter;Ljava/lang/Object;)V

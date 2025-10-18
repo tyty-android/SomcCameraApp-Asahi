@@ -96,7 +96,7 @@
 .method public constructor <init>(JJJ)V
     .locals 2
 
-    .line 139
+    .line 140
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     const-wide/16 v0, 0x0
@@ -111,22 +111,22 @@
 
     if-eqz v0, :cond_0
 
-    .line 154
+    .line 155
     iput-wide p1, p0, Lkotlin/ranges/LongProgression;->first:J
 
-    .line 159
+    .line 160
     invoke-static/range {p1 .. p6}, Lkotlin/internal/ProgressionUtilKt;->getProgressionLastElement(JJJ)J
 
     move-result-wide p1
 
     iput-wide p1, p0, Lkotlin/ranges/LongProgression;->last:J
 
-    .line 164
+    .line 165
     iput-wide p5, p0, Lkotlin/ranges/LongProgression;->step:J
 
     return-void
 
-    .line 148
+    .line 149
     :cond_0
     new-instance p0, Ljava/lang/IllegalArgumentException;
 
@@ -136,7 +136,7 @@
 
     throw p0
 
-    .line 147
+    .line 148
     :cond_1
     new-instance p0, Ljava/lang/IllegalArgumentException;
 
@@ -152,7 +152,7 @@
 .method public equals(Ljava/lang/Object;)Z
     .locals 4
 
-    .line 177
+    .line 178
     instance-of v0, p1, Lkotlin/ranges/LongProgression;
 
     if-eqz v0, :cond_2
@@ -173,7 +173,7 @@
 
     if-nez v0, :cond_1
 
-    .line 178
+    .line 179
     :cond_0
     iget-wide v0, p0, Lkotlin/ranges/LongProgression;->first:J
 
@@ -216,7 +216,7 @@
 .method public final getFirst()J
     .locals 2
 
-    .line 154
+    .line 155
     iget-wide v0, p0, Lkotlin/ranges/LongProgression;->first:J
 
     return-wide v0
@@ -225,7 +225,7 @@
 .method public final getLast()J
     .locals 2
 
-    .line 159
+    .line 160
     iget-wide v0, p0, Lkotlin/ranges/LongProgression;->last:J
 
     return-wide v0
@@ -234,7 +234,7 @@
 .method public final getStep()J
     .locals 2
 
-    .line 164
+    .line 165
     iget-wide v0, p0, Lkotlin/ranges/LongProgression;->step:J
 
     return-wide v0
@@ -243,7 +243,7 @@
 .method public hashCode()I
     .locals 9
 
-    .line 181
+    .line 182
     invoke-virtual {p0}, Lkotlin/ranges/LongProgression;->isEmpty()Z
 
     move-result v0
@@ -296,7 +296,7 @@
 .method public isEmpty()Z
     .locals 7
 
-    .line 174
+    .line 175
     iget-wide v0, p0, Lkotlin/ranges/LongProgression;->step:J
 
     const-wide/16 v2, 0x0
@@ -334,7 +334,7 @@
 .method public bridge synthetic iterator()Ljava/util/Iterator;
     .locals 0
 
-    .line 139
+    .line 140
     invoke-virtual {p0}, Lkotlin/ranges/LongProgression;->iterator()Lkotlin/collections/LongIterator;
 
     move-result-object p0
@@ -347,7 +347,7 @@
 .method public iterator()Lkotlin/collections/LongIterator;
     .locals 8
 
-    .line 166
+    .line 167
     new-instance v7, Lkotlin/ranges/LongProgressionIterator;
 
     iget-wide v1, p0, Lkotlin/ranges/LongProgression;->first:J
@@ -368,7 +368,7 @@
 .method public toString()Ljava/lang/String;
     .locals 4
 
-    .line 183
+    .line 184
     iget-wide v0, p0, Lkotlin/ranges/LongProgression;->step:J
 
     const-wide/16 v2, 0x0

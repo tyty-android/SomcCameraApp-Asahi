@@ -109,11 +109,7 @@
         }
     .end annotation
 
-    const-string v0, "$this$animate"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 601
+    .line 579
     iget-object v0, p0, Landroidx/compose/animation/AnimatedContentTransitionScopeImpl$SizeModifier$measure$size$1;->this$0:Landroidx/compose/animation/AnimatedContentTransitionScopeImpl;
 
     invoke-virtual {v0}, Landroidx/compose/animation/AnimatedContentTransitionScopeImpl;->getTargetSizeMap$animation_release()Ljava/util/Map;
@@ -151,7 +147,7 @@
 
     move-result-wide v0
 
-    .line 602
+    .line 580
     :goto_0
     iget-object v2, p0, Landroidx/compose/animation/AnimatedContentTransitionScopeImpl$SizeModifier$measure$size$1;->this$0:Landroidx/compose/animation/AnimatedContentTransitionScopeImpl;
 
@@ -190,7 +186,7 @@
 
     move-result-wide v2
 
-    .line 604
+    .line 581
     :goto_1
     iget-object p0, p0, Landroidx/compose/animation/AnimatedContentTransitionScopeImpl$SizeModifier$measure$size$1;->this$1:Landroidx/compose/animation/AnimatedContentTransitionScopeImpl$SizeModifier;
 
@@ -232,7 +228,7 @@
 .method public bridge synthetic invoke(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
 
-    .line 599
+    .line 577
     check-cast p1, Landroidx/compose/animation/core/Transition$Segment;
 
     invoke-virtual {p0, p1}, Landroidx/compose/animation/AnimatedContentTransitionScopeImpl$SizeModifier$measure$size$1;->invoke(Landroidx/compose/animation/core/Transition$Segment;)Landroidx/compose/animation/core/FiniteAnimationSpec;

@@ -73,7 +73,7 @@
 .end method
 
 .method public constructor <init>(Lkotlin/jvm/functions/Function0;Lkotlin/jvm/functions/Function0;Z)V
-    .locals 1
+    .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -86,24 +86,16 @@
         }
     .end annotation
 
-    const-string/jumbo v0, "value"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string v0, "maxValue"
-
-    invoke-static {p2, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 594
+    .line 683
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 595
+    .line 684
     iput-object p1, p0, Landroidx/compose/ui/semantics/ScrollAxisRange;->value:Lkotlin/jvm/functions/Function0;
 
-    .line 596
+    .line 685
     iput-object p2, p0, Landroidx/compose/ui/semantics/ScrollAxisRange;->maxValue:Lkotlin/jvm/functions/Function0;
 
-    .line 597
+    .line 686
     iput-boolean p3, p0, Landroidx/compose/ui/semantics/ScrollAxisRange;->reverseScrolling:Z
 
     return-void
@@ -118,7 +110,7 @@
 
     const/4 p3, 0x0
 
-    .line 594
+    .line 683
     :cond_0
     invoke-direct {p0, p1, p2, p3}, Landroidx/compose/ui/semantics/ScrollAxisRange;-><init>(Lkotlin/jvm/functions/Function0;Lkotlin/jvm/functions/Function0;Z)V
 
@@ -138,7 +130,7 @@
         }
     .end annotation
 
-    .line 596
+    .line 685
     iget-object p0, p0, Landroidx/compose/ui/semantics/ScrollAxisRange;->maxValue:Lkotlin/jvm/functions/Function0;
 
     return-object p0
@@ -147,7 +139,7 @@
 .method public final getReverseScrolling()Z
     .locals 0
 
-    .line 597
+    .line 686
     iget-boolean p0, p0, Landroidx/compose/ui/semantics/ScrollAxisRange;->reverseScrolling:Z
 
     return p0
@@ -164,7 +156,7 @@
         }
     .end annotation
 
-    .line 595
+    .line 684
     iget-object p0, p0, Landroidx/compose/ui/semantics/ScrollAxisRange;->value:Lkotlin/jvm/functions/Function0;
 
     return-object p0
@@ -173,7 +165,7 @@
 .method public toString()Ljava/lang/String;
     .locals 2
 
-    .line 600
+    .line 689
     new-instance v0, Ljava/lang/StringBuilder;
 
     const-string v1, "ScrollAxisRange(value="
@@ -224,10 +216,10 @@
 
     move-result-object v0
 
-    .line 601
+    .line 690
     iget-boolean p0, p0, Landroidx/compose/ui/semantics/ScrollAxisRange;->reverseScrolling:Z
 
-    .line 600
+    .line 689
     invoke-virtual {v0, p0}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
 
     move-result-object p0

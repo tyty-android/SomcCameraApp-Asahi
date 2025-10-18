@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Landroidx/compose/material/AppBarKt;->AppBar-celAv9A(JJFLandroidx/compose/foundation/layout/PaddingValues;Landroidx/compose/ui/graphics/Shape;Landroidx/compose/ui/Modifier;Lkotlin/jvm/functions/Function3;Landroidx/compose/runtime/Composer;II)V
+    value = Landroidx/compose/material/AppBarKt;->AppBar-HkEspTQ(JJFLandroidx/compose/foundation/layout/PaddingValues;Landroidx/compose/ui/graphics/Shape;Landroidx/compose/foundation/layout/WindowInsets;Landroidx/compose/ui/Modifier;Lkotlin/jvm/functions/Function3;Landroidx/compose/runtime/Composer;II)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -68,15 +68,18 @@
 
 .field final synthetic $shape:Landroidx/compose/ui/graphics/Shape;
 
+.field final synthetic $windowInsets:Landroidx/compose/foundation/layout/WindowInsets;
+
 
 # direct methods
-.method constructor <init>(JJFLandroidx/compose/foundation/layout/PaddingValues;Landroidx/compose/ui/graphics/Shape;Landroidx/compose/ui/Modifier;Lkotlin/jvm/functions/Function3;II)V
+.method constructor <init>(JJFLandroidx/compose/foundation/layout/PaddingValues;Landroidx/compose/ui/graphics/Shape;Landroidx/compose/foundation/layout/WindowInsets;Landroidx/compose/ui/Modifier;Lkotlin/jvm/functions/Function3;II)V
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(JJF",
             "Landroidx/compose/foundation/layout/PaddingValues;",
             "Landroidx/compose/ui/graphics/Shape;",
+            "Landroidx/compose/foundation/layout/WindowInsets;",
             "Landroidx/compose/ui/Modifier;",
             "Lkotlin/jvm/functions/Function3<",
             "-",
@@ -100,13 +103,15 @@
 
     iput-object p7, p0, Landroidx/compose/material/AppBarKt$AppBar$2;->$shape:Landroidx/compose/ui/graphics/Shape;
 
-    iput-object p8, p0, Landroidx/compose/material/AppBarKt$AppBar$2;->$modifier:Landroidx/compose/ui/Modifier;
+    iput-object p8, p0, Landroidx/compose/material/AppBarKt$AppBar$2;->$windowInsets:Landroidx/compose/foundation/layout/WindowInsets;
 
-    iput-object p9, p0, Landroidx/compose/material/AppBarKt$AppBar$2;->$content:Lkotlin/jvm/functions/Function3;
+    iput-object p9, p0, Landroidx/compose/material/AppBarKt$AppBar$2;->$modifier:Landroidx/compose/ui/Modifier;
 
-    iput p10, p0, Landroidx/compose/material/AppBarKt$AppBar$2;->$$changed:I
+    iput-object p10, p0, Landroidx/compose/material/AppBarKt$AppBar$2;->$content:Lkotlin/jvm/functions/Function3;
 
-    iput p11, p0, Landroidx/compose/material/AppBarKt$AppBar$2;->$$default:I
+    iput p11, p0, Landroidx/compose/material/AppBarKt$AppBar$2;->$$changed:I
+
+    iput p12, p0, Landroidx/compose/material/AppBarKt$AppBar$2;->$$default:I
 
     const/4 p1, 0x2
 
@@ -136,7 +141,7 @@
 .end method
 
 .method public final invoke(Landroidx/compose/runtime/Composer;I)V
-    .locals 12
+    .locals 13
 
     iget-wide v0, p0, Landroidx/compose/material/AppBarKt$AppBar$2;->$backgroundColor:J
 
@@ -148,9 +153,11 @@
 
     iget-object v6, p0, Landroidx/compose/material/AppBarKt$AppBar$2;->$shape:Landroidx/compose/ui/graphics/Shape;
 
-    iget-object v7, p0, Landroidx/compose/material/AppBarKt$AppBar$2;->$modifier:Landroidx/compose/ui/Modifier;
+    iget-object v7, p0, Landroidx/compose/material/AppBarKt$AppBar$2;->$windowInsets:Landroidx/compose/foundation/layout/WindowInsets;
 
-    iget-object v8, p0, Landroidx/compose/material/AppBarKt$AppBar$2;->$content:Lkotlin/jvm/functions/Function3;
+    iget-object v8, p0, Landroidx/compose/material/AppBarKt$AppBar$2;->$modifier:Landroidx/compose/ui/Modifier;
+
+    iget-object v9, p0, Landroidx/compose/material/AppBarKt$AppBar$2;->$content:Lkotlin/jvm/functions/Function3;
 
     iget p2, p0, Landroidx/compose/material/AppBarKt$AppBar$2;->$$changed:I
 
@@ -158,13 +165,13 @@
 
     invoke-static {p2}, Landroidx/compose/runtime/RecomposeScopeImplKt;->updateChangedFlags(I)I
 
-    move-result v10
+    move-result v11
 
-    iget v11, p0, Landroidx/compose/material/AppBarKt$AppBar$2;->$$default:I
+    iget v12, p0, Landroidx/compose/material/AppBarKt$AppBar$2;->$$default:I
 
-    move-object v9, p1
+    move-object v10, p1
 
-    invoke-static/range {v0 .. v11}, Landroidx/compose/material/AppBarKt;->access$AppBar-celAv9A(JJFLandroidx/compose/foundation/layout/PaddingValues;Landroidx/compose/ui/graphics/Shape;Landroidx/compose/ui/Modifier;Lkotlin/jvm/functions/Function3;Landroidx/compose/runtime/Composer;II)V
+    invoke-static/range {v0 .. v12}, Landroidx/compose/material/AppBarKt;->access$AppBar-HkEspTQ(JJFLandroidx/compose/foundation/layout/PaddingValues;Landroidx/compose/ui/graphics/Shape;Landroidx/compose/foundation/layout/WindowInsets;Landroidx/compose/ui/Modifier;Lkotlin/jvm/functions/Function3;Landroidx/compose/runtime/Composer;II)V
 
     return-void
 .end method

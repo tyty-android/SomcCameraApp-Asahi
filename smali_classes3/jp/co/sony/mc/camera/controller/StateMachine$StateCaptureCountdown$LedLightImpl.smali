@@ -25,7 +25,7 @@
 .method private constructor <init>(Ljp/co/sony/mc/camera/controller/StateMachine$StateCaptureCountdown;)V
     .locals 0
 
-    .line 3360
+    .line 3387
     iput-object p1, p0, Ljp/co/sony/mc/camera/controller/StateMachine$StateCaptureCountdown$LedLightImpl;->this$1:Ljp/co/sony/mc/camera/controller/StateMachine$StateCaptureCountdown;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -46,7 +46,7 @@
 .method public turnOff()V
     .locals 1
 
-    .line 3369
+    .line 3396
     iget-object p0, p0, Ljp/co/sony/mc/camera/controller/StateMachine$StateCaptureCountdown$LedLightImpl;->this$1:Ljp/co/sony/mc/camera/controller/StateMachine$StateCaptureCountdown;
 
     iget-object p0, p0, Ljp/co/sony/mc/camera/controller/StateMachine$StateCaptureCountdown;->this$0:Ljp/co/sony/mc/camera/controller/StateMachine;
@@ -65,7 +65,7 @@
 .method public turnOn()V
     .locals 1
 
-    .line 3364
+    .line 3391
     iget-object p0, p0, Ljp/co/sony/mc/camera/controller/StateMachine$StateCaptureCountdown$LedLightImpl;->this$1:Ljp/co/sony/mc/camera/controller/StateMachine$StateCaptureCountdown;
 
     iget-object p0, p0, Ljp/co/sony/mc/camera/controller/StateMachine$StateCaptureCountdown;->this$0:Ljp/co/sony/mc/camera/controller/StateMachine;

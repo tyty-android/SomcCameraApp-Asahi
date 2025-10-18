@@ -45,7 +45,7 @@
 
 # virtual methods
 .method public run()V
-    .locals 1
+    .locals 2
 
     .line 78
     iget-object v0, p0, Ljp/co/sony/mc/camera/device/HistogramResultChecker$1;->this$0:Ljp/co/sony/mc/camera/device/HistogramResultChecker;
@@ -72,11 +72,15 @@
 
     if-eqz p0, :cond_0
 
-    const-string p0, "check() X"
+    const/4 p0, 0x1
 
-    filled-new-array {p0}, [Ljava/lang/String;
+    new-array p0, p0, [Ljava/lang/String;
 
-    move-result-object p0
+    const/4 v0, 0x0
+
+    const-string v1, "check() X"
+
+    aput-object v1, p0, v0
 
     invoke-static {p0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 

@@ -53,8 +53,8 @@
     f = "AndroidViewHolder.android.kt"
     i = {}
     l = {
-        0x20a,
-        0x20f
+        0x230,
+        0x235
     }
     m = "invokeSuspend"
     n = {}
@@ -185,7 +185,7 @@
 
     move-result-object v0
 
-    .line 520
+    .line 558
     iget v1, p0, Landroidx/compose/ui/viewinterop/AndroidViewHolder$onNestedFling$1;->label:I
 
     const/4 v2, 0x2
@@ -218,33 +218,33 @@
     :cond_2
     invoke-static {p1}, Lkotlin/ResultKt;->throwOnFailure(Ljava/lang/Object;)V
 
-    .line 521
+    .line 559
     iget-boolean p1, p0, Landroidx/compose/ui/viewinterop/AndroidViewHolder$onNestedFling$1;->$consumed:Z
 
     if-nez p1, :cond_3
 
-    .line 522
+    .line 560
     iget-object p1, p0, Landroidx/compose/ui/viewinterop/AndroidViewHolder$onNestedFling$1;->this$0:Landroidx/compose/ui/viewinterop/AndroidViewHolder;
 
     invoke-static {p1}, Landroidx/compose/ui/viewinterop/AndroidViewHolder;->access$getDispatcher$p(Landroidx/compose/ui/viewinterop/AndroidViewHolder;)Landroidx/compose/ui/input/nestedscroll/NestedScrollDispatcher;
 
     move-result-object v4
 
-    .line 523
+    .line 561
     sget-object p1, Landroidx/compose/ui/unit/Velocity;->Companion:Landroidx/compose/ui/unit/Velocity$Companion;
 
     invoke-virtual {p1}, Landroidx/compose/ui/unit/Velocity$Companion;->getZero-9UxMQ8M()J
 
     move-result-wide v5
 
-    .line 524
+    .line 562
     iget-wide v7, p0, Landroidx/compose/ui/viewinterop/AndroidViewHolder$onNestedFling$1;->$viewVelocity:J
 
     move-object v9, p0
 
     check-cast v9, Lkotlin/coroutines/Continuation;
 
-    .line 522
+    .line 560
     iput v3, p0, Landroidx/compose/ui/viewinterop/AndroidViewHolder$onNestedFling$1;->label:I
 
     invoke-virtual/range {v4 .. v9}, Landroidx/compose/ui/input/nestedscroll/NestedScrollDispatcher;->dispatchPostFling-RZ2iAVY(JJLkotlin/coroutines/Continuation;)Ljava/lang/Object;
@@ -255,7 +255,7 @@
 
     return-object v0
 
-    .line 527
+    .line 565
     :cond_3
     iget-object p1, p0, Landroidx/compose/ui/viewinterop/AndroidViewHolder$onNestedFling$1;->this$0:Landroidx/compose/ui/viewinterop/AndroidViewHolder;
 
@@ -263,10 +263,10 @@
 
     move-result-object v3
 
-    .line 528
+    .line 566
     iget-wide v4, p0, Landroidx/compose/ui/viewinterop/AndroidViewHolder$onNestedFling$1;->$viewVelocity:J
 
-    .line 529
+    .line 567
     sget-object p1, Landroidx/compose/ui/unit/Velocity;->Companion:Landroidx/compose/ui/unit/Velocity$Companion;
 
     invoke-virtual {p1}, Landroidx/compose/ui/unit/Velocity$Companion;->getZero-9UxMQ8M()J
@@ -277,7 +277,7 @@
 
     check-cast v8, Lkotlin/coroutines/Continuation;
 
-    .line 527
+    .line 565
     iput v2, p0, Landroidx/compose/ui/viewinterop/AndroidViewHolder$onNestedFling$1;->label:I
 
     invoke-virtual/range {v3 .. v8}, Landroidx/compose/ui/input/nestedscroll/NestedScrollDispatcher;->dispatchPostFling-RZ2iAVY(JJLkotlin/coroutines/Continuation;)Ljava/lang/Object;
@@ -288,7 +288,7 @@
 
     return-object v0
 
-    .line 532
+    .line 570
     :cond_4
     :goto_1
     sget-object p0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;

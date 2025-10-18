@@ -57,11 +57,11 @@
         0x2
     }
     l = {
-        0x12b,
-        0x12d,
-        0x134,
+        0x133,
         0x135,
-        0x13e
+        0x13c,
+        0x13d,
+        0x146
     }
     m = "invokeSuspend"
     n = {
@@ -233,7 +233,7 @@
 
     move-result-object v1
 
-    .line 290
+    .line 298
     iget v2, v0, Landroidx/compose/foundation/ClickableKt$handlePressInteraction$2;->label:I
 
     const/4 v3, 0x5
@@ -313,7 +313,7 @@
 
     check-cast v9, Lkotlinx/coroutines/CoroutineScope;
 
-    .line 291
+    .line 299
     new-instance v2, Landroidx/compose/foundation/ClickableKt$handlePressInteraction$2$delayJob$1;
 
     iget-object v11, v0, Landroidx/compose/foundation/ClickableKt$handlePressInteraction$2;->$delayPressInteraction:Lkotlin/jvm/functions/Function0;
@@ -346,7 +346,7 @@
 
     move-result-object v2
 
-    .line 299
+    .line 307
     iget-object v9, v0, Landroidx/compose/foundation/ClickableKt$handlePressInteraction$2;->$this_handlePressInteraction:Landroidx/compose/foundation/gestures/PressGestureScope;
 
     move-object v10, v0
@@ -373,14 +373,14 @@
 
     move-result v7
 
-    .line 300
+    .line 308
     invoke-interface {v2}, Lkotlinx/coroutines/Job;->isActive()Z
 
     move-result v9
 
     if-eqz v9, :cond_9
 
-    .line 301
+    .line 309
     move-object v3, v0
 
     check-cast v3, Lkotlin/coroutines/Continuation;
@@ -405,19 +405,19 @@
     :goto_2
     if-eqz v2, :cond_b
 
-    .line 306
+    .line 314
     new-instance v2, Landroidx/compose/foundation/interaction/PressInteraction$Press;
 
     iget-wide v6, v0, Landroidx/compose/foundation/ClickableKt$handlePressInteraction$2;->$pressPoint:J
 
     invoke-direct {v2, v6, v7, v8}, Landroidx/compose/foundation/interaction/PressInteraction$Press;-><init>(JLkotlin/jvm/internal/DefaultConstructorMarker;)V
 
-    .line 307
+    .line 315
     new-instance v3, Landroidx/compose/foundation/interaction/PressInteraction$Release;
 
     invoke-direct {v3, v2}, Landroidx/compose/foundation/interaction/PressInteraction$Release;-><init>(Landroidx/compose/foundation/interaction/PressInteraction$Press;)V
 
-    .line 308
+    .line 316
     iget-object v6, v0, Landroidx/compose/foundation/ClickableKt$handlePressInteraction$2;->$interactionSource:Landroidx/compose/foundation/interaction/MutableInteractionSource;
 
     check-cast v2, Landroidx/compose/foundation/interaction/Interaction;
@@ -441,7 +441,7 @@
     :cond_8
     move-object v2, v3
 
-    .line 309
+    .line 317
     :goto_3
     iget-object v3, v0, Landroidx/compose/foundation/ClickableKt$handlePressInteraction$2;->$interactionSource:Landroidx/compose/foundation/interaction/MutableInteractionSource;
 
@@ -463,7 +463,7 @@
 
     return-object v1
 
-    .line 312
+    .line 320
     :cond_9
     iget-object v2, v0, Landroidx/compose/foundation/ClickableKt$handlePressInteraction$2;->$interactionData:Landroidx/compose/foundation/AbstractClickableNode$InteractionData;
 
@@ -477,7 +477,7 @@
 
     if-eqz v7, :cond_a
 
-    .line 314
+    .line 322
     new-instance v5, Landroidx/compose/foundation/interaction/PressInteraction$Release;
 
     invoke-direct {v5, v2}, Landroidx/compose/foundation/interaction/PressInteraction$Release;-><init>(Landroidx/compose/foundation/interaction/PressInteraction$Press;)V
@@ -486,7 +486,7 @@
 
     goto :goto_4
 
-    .line 316
+    .line 324
     :cond_a
     new-instance v5, Landroidx/compose/foundation/interaction/PressInteraction$Cancel;
 
@@ -494,7 +494,7 @@
 
     check-cast v5, Landroidx/compose/foundation/interaction/PressInteraction;
 
-    .line 318
+    .line 326
     :goto_4
     check-cast v5, Landroidx/compose/foundation/interaction/Interaction;
 
@@ -510,14 +510,14 @@
 
     return-object v1
 
-    .line 321
+    .line 329
     :cond_b
     :goto_5
     iget-object v0, v0, Landroidx/compose/foundation/ClickableKt$handlePressInteraction$2;->$interactionData:Landroidx/compose/foundation/AbstractClickableNode$InteractionData;
 
     invoke-virtual {v0, v8}, Landroidx/compose/foundation/AbstractClickableNode$InteractionData;->setPressInteraction(Landroidx/compose/foundation/interaction/PressInteraction$Press;)V
 
-    .line 322
+    .line 330
     sget-object v0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
 
     return-object v0

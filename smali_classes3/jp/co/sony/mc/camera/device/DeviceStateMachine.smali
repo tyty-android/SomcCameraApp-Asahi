@@ -50,17 +50,17 @@
 .method public constructor <init>(Landroid/content/Context;Ljp/co/sony/mc/camera/device/CameraDeviceHandler$CameraDeviceHandlerInquirer;Landroid/os/Handler;Landroid/os/Handler;Ljp/co/sony/mc/camera/device/DeviceStateMachine$IDeviceStateMachineLifeCycle;)V
     .locals 8
 
-    .line 163
+    .line 169
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 164
+    .line 170
     new-instance v0, Ljp/co/sony/mc/camera/device/state/DeviceStateNone;
 
     invoke-direct {v0}, Ljp/co/sony/mc/camera/device/state/DeviceStateNone;-><init>()V
 
     iput-object v0, p0, Ljp/co/sony/mc/camera/device/DeviceStateMachine;->mCurrentState:Ljp/co/sony/mc/camera/device/state/DeviceState;
 
-    .line 165
+    .line 171
     new-instance v0, Ljp/co/sony/mc/camera/device/state/DeviceStateContext;
 
     move-object v1, v0
@@ -85,9 +85,9 @@
 .end method
 
 .method private changeTo(Ljp/co/sony/mc/camera/device/state/DeviceState;)V
-    .locals 2
+    .locals 3
 
-    .line 488
+    .line 514
     iget-object v0, p0, Ljp/co/sony/mc/camera/device/DeviceStateMachine;->mDeviceStateContext:Ljp/co/sony/mc/camera/device/state/DeviceStateContext;
 
     invoke-virtual {v0}, Ljp/co/sony/mc/camera/device/state/DeviceStateContext;->isSwitchLensDuringStreaming()Z
@@ -96,7 +96,7 @@
 
     if-nez v0, :cond_1
 
-    .line 489
+    .line 515
     iget-object v0, p0, Ljp/co/sony/mc/camera/device/DeviceStateMachine;->mCurrentState:Ljp/co/sony/mc/camera/device/state/DeviceState;
 
     invoke-virtual {v0, p1}, Ljp/co/sony/mc/camera/device/state/DeviceState;->equalsState(Ljp/co/sony/mc/camera/device/state/DeviceState;)Z
@@ -112,7 +112,7 @@
     :cond_0
     return-void
 
-    .line 495
+    .line 521
     :cond_1
     iget-object v0, p0, Ljp/co/sony/mc/camera/device/DeviceStateMachine;->mCurrentState:Ljp/co/sony/mc/camera/device/state/DeviceState;
 
@@ -124,59 +124,63 @@
 
     return-void
 
-    .line 501
     :cond_2
-    new-instance v0, Ljava/lang/StringBuilder;
+    const/4 v0, 0x1
 
-    const-string v1, "changed state from:"
+    .line 527
+    new-array v0, v0, [Ljava/lang/String;
 
-    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+    new-instance v1, Ljava/lang/StringBuilder;
 
-    iget-object v1, p0, Ljp/co/sony/mc/camera/device/DeviceStateMachine;->mCurrentState:Ljp/co/sony/mc/camera/device/state/DeviceState;
+    const-string v2, "changed state from:"
 
-    invoke-virtual {v1}, Ljp/co/sony/mc/camera/device/state/DeviceState;->getName()Ljava/lang/String;
+    invoke-direct {v1, v2}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+
+    iget-object v2, p0, Ljp/co/sony/mc/camera/device/DeviceStateMachine;->mCurrentState:Ljp/co/sony/mc/camera/device/state/DeviceState;
+
+    invoke-virtual {v2}, Ljp/co/sony/mc/camera/device/state/DeviceState;->getName()Ljava/lang/String;
+
+    move-result-object v2
+
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v1
 
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    const-string v2, ", to:"
 
-    move-result-object v0
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    const-string v1, ", to:"
-
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v0
+    move-result-object v1
 
     invoke-virtual {p1}, Ljp/co/sony/mc/camera/device/state/DeviceState;->getName()Ljava/lang/String;
 
+    move-result-object v2
+
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
     move-result-object v1
 
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    move-result-object v0
+    move-result-object v1
 
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    const/4 v2, 0x0
 
-    move-result-object v0
-
-    filled-new-array {v0}, [Ljava/lang/String;
-
-    move-result-object v0
+    aput-object v1, v0, v2
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
-    .line 502
+    .line 528
     iget-object v0, p0, Ljp/co/sony/mc/camera/device/DeviceStateMachine;->mCurrentState:Ljp/co/sony/mc/camera/device/state/DeviceState;
 
     iget-object v1, p0, Ljp/co/sony/mc/camera/device/DeviceStateMachine;->mDeviceStateContext:Ljp/co/sony/mc/camera/device/state/DeviceStateContext;
 
     invoke-virtual {v0, v1}, Ljp/co/sony/mc/camera/device/state/DeviceState;->exit(Ljp/co/sony/mc/camera/device/state/DeviceStateContext;)V
 
-    .line 503
+    .line 529
     iput-object p1, p0, Ljp/co/sony/mc/camera/device/DeviceStateMachine;->mCurrentState:Ljp/co/sony/mc/camera/device/state/DeviceState;
 
-    .line 504
+    .line 530
     iget-object p0, p0, Ljp/co/sony/mc/camera/device/DeviceStateMachine;->mDeviceStateContext:Ljp/co/sony/mc/camera/device/state/DeviceStateContext;
 
     invoke-virtual {p1, p0}, Ljp/co/sony/mc/camera/device/state/DeviceState;->entry(Ljp/co/sony/mc/camera/device/state/DeviceStateContext;)V
@@ -189,7 +193,7 @@
 .method public getDeviceThreadhandler()Landroid/os/Handler;
     .locals 0
 
-    .line 176
+    .line 182
     iget-object p0, p0, Ljp/co/sony/mc/camera/device/DeviceStateMachine;->mDeviceStateContext:Ljp/co/sony/mc/camera/device/state/DeviceStateContext;
 
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/device/state/DeviceStateContext;->getDeviceThreadHandler()Landroid/os/Handler;
@@ -202,7 +206,7 @@
 .method public varargs sendEvent(Ljp/co/sony/mc/camera/device/DeviceStateMachine$DeviceTransitterEvent;[Ljava/lang/Object;)V
     .locals 2
 
-    .line 190
+    .line 196
     iget-object v0, p0, Ljp/co/sony/mc/camera/device/DeviceStateMachine;->mDeviceStateContext:Ljp/co/sony/mc/camera/device/state/DeviceStateContext;
 
     new-instance v1, Ljp/co/sony/mc/camera/device/DeviceStateMachine$1;

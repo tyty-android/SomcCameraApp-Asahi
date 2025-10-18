@@ -34,10 +34,6 @@
 
 .field public static final selftimer_4sec:I = 0x7f100009
 
-.field public static final ttml_template_for_srt_post:I = 0x7f10000a
-
-.field public static final ttml_template_for_srt_pre:I = 0x7f10000b
-
 
 # direct methods
 .method private constructor <init>()V

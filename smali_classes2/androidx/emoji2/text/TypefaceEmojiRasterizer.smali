@@ -41,7 +41,7 @@
 .method static constructor <clinit>()V
     .locals 1
 
-    .line 85
+    .line 89
     new-instance v0, Ljava/lang/ThreadLocal;
 
     invoke-direct {v0}, Ljava/lang/ThreadLocal;-><init>()V
@@ -54,18 +54,18 @@
 .method constructor <init>(Landroidx/emoji2/text/MetadataRepo;I)V
     .locals 1
 
-    .line 110
+    .line 115
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     const/4 v0, 0x0
 
-    .line 104
+    .line 108
     iput v0, p0, Landroidx/emoji2/text/TypefaceEmojiRasterizer;->mCache:I
 
-    .line 111
+    .line 116
     iput-object p1, p0, Landroidx/emoji2/text/TypefaceEmojiRasterizer;->mMetadataRepo:Landroidx/emoji2/text/MetadataRepo;
 
-    .line 112
+    .line 117
     iput p2, p0, Landroidx/emoji2/text/TypefaceEmojiRasterizer;->mIndex:I
 
     return-void
@@ -74,7 +74,7 @@
 .method private getMetadataItem()Landroidx/emoji2/text/flatbuffer/MetadataItem;
     .locals 2
 
-    .line 149
+    .line 154
     sget-object v0, Landroidx/emoji2/text/TypefaceEmojiRasterizer;->sMetadataItem:Ljava/lang/ThreadLocal;
 
     invoke-virtual {v0}, Ljava/lang/ThreadLocal;->get()Ljava/lang/Object;
@@ -85,15 +85,15 @@
 
     if-nez v1, :cond_0
 
-    .line 151
+    .line 156
     new-instance v1, Landroidx/emoji2/text/flatbuffer/MetadataItem;
 
     invoke-direct {v1}, Landroidx/emoji2/text/flatbuffer/MetadataItem;-><init>()V
 
-    .line 152
+    .line 157
     invoke-virtual {v0, v1}, Ljava/lang/ThreadLocal;->set(Ljava/lang/Object;)V
 
-    .line 162
+    .line 167
     :cond_0
     iget-object v0, p0, Landroidx/emoji2/text/TypefaceEmojiRasterizer;->mMetadataRepo:Landroidx/emoji2/text/MetadataRepo;
 
@@ -113,27 +113,27 @@
 .method public draw(Landroid/graphics/Canvas;FFLandroid/graphics/Paint;)V
     .locals 9
 
-    .line 125
+    .line 130
     iget-object v0, p0, Landroidx/emoji2/text/TypefaceEmojiRasterizer;->mMetadataRepo:Landroidx/emoji2/text/MetadataRepo;
 
     invoke-virtual {v0}, Landroidx/emoji2/text/MetadataRepo;->getTypeface()Landroid/graphics/Typeface;
 
     move-result-object v0
 
-    .line 126
+    .line 131
     invoke-virtual {p4}, Landroid/graphics/Paint;->getTypeface()Landroid/graphics/Typeface;
 
     move-result-object v1
 
-    .line 127
+    .line 132
     invoke-virtual {p4, v0}, Landroid/graphics/Paint;->setTypeface(Landroid/graphics/Typeface;)Landroid/graphics/Typeface;
 
-    .line 132
+    .line 137
     iget v0, p0, Landroidx/emoji2/text/TypefaceEmojiRasterizer;->mIndex:I
 
     mul-int/lit8 v4, v0, 0x2
 
-    .line 133
+    .line 138
     iget-object p0, p0, Landroidx/emoji2/text/TypefaceEmojiRasterizer;->mMetadataRepo:Landroidx/emoji2/text/MetadataRepo;
 
     invoke-virtual {p0}, Landroidx/emoji2/text/MetadataRepo;->getEmojiCharArray()[C
@@ -152,7 +152,7 @@
 
     invoke-virtual/range {v2 .. v8}, Landroid/graphics/Canvas;->drawText([CIIFFLandroid/graphics/Paint;)V
 
-    .line 134
+    .line 139
     invoke-virtual {p4, v1}, Landroid/graphics/Paint;->setTypeface(Landroid/graphics/Typeface;)Landroid/graphics/Typeface;
 
     return-void
@@ -161,7 +161,7 @@
 .method public getCodepointAt(I)I
     .locals 0
 
-    .line 295
+    .line 306
     invoke-direct {p0}, Landroidx/emoji2/text/TypefaceEmojiRasterizer;->getMetadataItem()Landroidx/emoji2/text/flatbuffer/MetadataItem;
 
     move-result-object p0
@@ -176,7 +176,7 @@
 .method public getCodepointsLength()I
     .locals 0
 
-    .line 302
+    .line 313
     invoke-direct {p0}, Landroidx/emoji2/text/TypefaceEmojiRasterizer;->getMetadataItem()Landroidx/emoji2/text/flatbuffer/MetadataItem;
 
     move-result-object p0
@@ -191,7 +191,7 @@
 .method public getCompatAdded()S
     .locals 0
 
-    .line 195
+    .line 202
     invoke-direct {p0}, Landroidx/emoji2/text/TypefaceEmojiRasterizer;->getMetadataItem()Landroidx/emoji2/text/flatbuffer/MetadataItem;
 
     move-result-object p0
@@ -206,7 +206,7 @@
 .method public getHasGlyph()I
     .locals 0
 
-    .line 219
+    .line 228
     iget p0, p0, Landroidx/emoji2/text/TypefaceEmojiRasterizer;->mCache:I
 
     and-int/lit8 p0, p0, 0x3
@@ -217,7 +217,7 @@
 .method public getHeight()I
     .locals 0
 
-    .line 187
+    .line 193
     invoke-direct {p0}, Landroidx/emoji2/text/TypefaceEmojiRasterizer;->getMetadataItem()Landroidx/emoji2/text/flatbuffer/MetadataItem;
 
     move-result-object p0
@@ -232,7 +232,7 @@
 .method public getId()I
     .locals 0
 
-    .line 173
+    .line 179
     invoke-direct {p0}, Landroidx/emoji2/text/TypefaceEmojiRasterizer;->getMetadataItem()Landroidx/emoji2/text/flatbuffer/MetadataItem;
 
     move-result-object p0
@@ -247,7 +247,7 @@
 .method public getSdkAdded()S
     .locals 0
 
-    .line 203
+    .line 211
     invoke-direct {p0}, Landroidx/emoji2/text/TypefaceEmojiRasterizer;->getMetadataItem()Landroidx/emoji2/text/flatbuffer/MetadataItem;
 
     move-result-object p0
@@ -262,7 +262,7 @@
 .method public getTypeface()Landroid/graphics/Typeface;
     .locals 0
 
-    .line 142
+    .line 147
     iget-object p0, p0, Landroidx/emoji2/text/TypefaceEmojiRasterizer;->mMetadataRepo:Landroidx/emoji2/text/MetadataRepo;
 
     invoke-virtual {p0}, Landroidx/emoji2/text/MetadataRepo;->getTypeface()Landroid/graphics/Typeface;
@@ -275,7 +275,7 @@
 .method public getWidth()I
     .locals 0
 
-    .line 180
+    .line 186
     invoke-direct {p0}, Landroidx/emoji2/text/TypefaceEmojiRasterizer;->getMetadataItem()Landroidx/emoji2/text/flatbuffer/MetadataItem;
 
     move-result-object p0
@@ -290,7 +290,7 @@
 .method public isDefaultEmoji()Z
     .locals 0
 
-    .line 286
+    .line 297
     invoke-direct {p0}, Landroidx/emoji2/text/TypefaceEmojiRasterizer;->getMetadataItem()Landroidx/emoji2/text/flatbuffer/MetadataItem;
 
     move-result-object p0
@@ -305,7 +305,7 @@
 .method public isPreferredSystemRender()Z
     .locals 0
 
-    .line 278
+    .line 289
     iget p0, p0, Landroidx/emoji2/text/TypefaceEmojiRasterizer;->mCache:I
 
     and-int/lit8 p0, p0, 0x4
@@ -326,7 +326,7 @@
 .method public resetHasGlyphCache()V
     .locals 1
 
-    .line 231
+    .line 240
     invoke-virtual {p0}, Landroidx/emoji2/text/TypefaceEmojiRasterizer;->isPreferredSystemRender()Z
 
     move-result v0
@@ -335,7 +335,7 @@
 
     const/4 v0, 0x4
 
-    .line 233
+    .line 242
     iput v0, p0, Landroidx/emoji2/text/TypefaceEmojiRasterizer;->mCache:I
 
     goto :goto_0
@@ -343,7 +343,7 @@
     :cond_0
     const/4 v0, 0x0
 
-    .line 235
+    .line 244
     iput v0, p0, Landroidx/emoji2/text/TypefaceEmojiRasterizer;->mCache:I
 
     :goto_0
@@ -353,7 +353,7 @@
 .method public setExclusion(Z)V
     .locals 1
 
-    .line 264
+    .line 275
     invoke-virtual {p0}, Landroidx/emoji2/text/TypefaceEmojiRasterizer;->getHasGlyph()I
 
     move-result v0
@@ -362,12 +362,12 @@
 
     or-int/lit8 p1, v0, 0x4
 
-    .line 266
+    .line 277
     iput p1, p0, Landroidx/emoji2/text/TypefaceEmojiRasterizer;->mCache:I
 
     goto :goto_0
 
-    .line 268
+    .line 279
     :cond_0
     iput v0, p0, Landroidx/emoji2/text/TypefaceEmojiRasterizer;->mCache:I
 
@@ -378,7 +378,7 @@
 .method public setHasGlyph(Z)V
     .locals 1
 
-    .line 248
+    .line 258
     iget v0, p0, Landroidx/emoji2/text/TypefaceEmojiRasterizer;->mCache:I
 
     and-int/lit8 v0, v0, 0x4
@@ -392,7 +392,7 @@
     :cond_0
     or-int/lit8 p1, v0, 0x1
 
-    .line 254
+    .line 264
     :goto_0
     iput p1, p0, Landroidx/emoji2/text/TypefaceEmojiRasterizer;->mCache:I
 
@@ -402,24 +402,24 @@
 .method public toString()Ljava/lang/String;
     .locals 4
 
-    .line 308
+    .line 319
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
 
-    .line 309
+    .line 320
     invoke-super {p0}, Ljava/lang/Object;->toString()Ljava/lang/String;
 
     move-result-object v1
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 310
+    .line 321
     const-string v1, ", id:"
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 311
+    .line 322
     invoke-virtual {p0}, Landroidx/emoji2/text/TypefaceEmojiRasterizer;->getId()I
 
     move-result v1
@@ -430,12 +430,12 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 312
+    .line 323
     const-string v1, ", codepoints:"
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 313
+    .line 324
     invoke-virtual {p0}, Landroidx/emoji2/text/TypefaceEmojiRasterizer;->getCodepointsLength()I
 
     move-result v1
@@ -445,7 +445,7 @@
     :goto_0
     if-ge v2, v1, :cond_0
 
-    .line 315
+    .line 326
     invoke-virtual {p0, v2}, Landroidx/emoji2/text/TypefaceEmojiRasterizer;->getCodepointAt(I)I
 
     move-result v3
@@ -456,7 +456,7 @@
 
     invoke-virtual {v0, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 316
+    .line 327
     const-string v3, " "
 
     invoke-virtual {v0, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
@@ -465,7 +465,7 @@
 
     goto :goto_0
 
-    .line 318
+    .line 329
     :cond_0
     invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 

@@ -17,83 +17,147 @@
 
 # direct methods
 .method static constructor <clinit>()V
-    .locals 16
+    .locals 6
 
     .line 15
     new-instance v0, Landroidx/databinding/ViewDataBinding$IncludedLayouts;
 
-    const/16 v1, 0x11
+    const/16 v1, 0x13
 
     invoke-direct {v0, v1}, Landroidx/databinding/ViewDataBinding$IncludedLayouts;-><init>(I)V
 
     sput-object v0, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeMainBindingImpl;->sIncludes:Landroidx/databinding/ViewDataBinding$IncludedLayouts;
 
+    const/16 v1, 0x10
+
     .line 16
-    const-string v14, "fragment_basic_mode_thumbnail_picker"
+    new-array v2, v1, [Ljava/lang/String;
 
-    const-string/jumbo v15, "stream_live_chat"
-
-    const-string v2, "fragment_basic_mode_top_pane"
-
-    const-string v3, "fragment_basic_mode_indicator"
-
-    const-string v4, "fragment_basic_mode_finder_items"
-
-    const-string/jumbo v5, "zoom_hint_text"
-
-    const-string v6, "fragment_basic_mode_ss_focus_entrance"
-
-    const-string v7, "fragment_basic_manual_menu"
-
-    const-string v8, "fragment_basic_mode_tele_macro"
-
-    const-string v9, "fragment_basic_mode_quick_setting"
-
-    const-string v10, "fragment_streaming_mode_quick_setting"
-
-    const-string v11, "fragment_basic_mode_submenu"
-
-    const-string v12, "fragment_basic_mode_bottom_pane"
-
-    const-string v13, "fragment_basic_mode_capture_state"
-
-    filled-new-array/range {v2 .. v15}, [Ljava/lang/String;
-
-    move-result-object v1
-
-    const/16 v2, 0xe
-
-    new-array v3, v2, [I
-
-    fill-array-data v3, :array_0
-
-    new-array v2, v2, [I
-
-    fill-array-data v2, :array_1
+    const-string v3, "fragment_basic_mode_top_pane"
 
     const/4 v4, 0x0
 
-    invoke-virtual {v0, v4, v1, v3, v2}, Landroidx/databinding/ViewDataBinding$IncludedLayouts;->setIncludes(I[Ljava/lang/String;[I[I)V
+    aput-object v3, v2, v4
 
-    .line 33
+    const/4 v3, 0x1
+
+    const-string v5, "fragment_basic_mode_indicator"
+
+    aput-object v5, v2, v3
+
+    const/4 v3, 0x2
+
+    const-string v5, "fragment_basic_mode_finder_items"
+
+    aput-object v5, v2, v3
+
+    const/4 v3, 0x3
+
+    const-string/jumbo v5, "zoom_hint_text"
+
+    aput-object v5, v2, v3
+
+    const/4 v3, 0x4
+
+    const-string v5, "fragment_basic_mode_ss_focus_entrance"
+
+    aput-object v5, v2, v3
+
+    const/4 v3, 0x5
+
+    const-string v5, "fragment_basic_manual_menu"
+
+    aput-object v5, v2, v3
+
+    const/4 v3, 0x6
+
+    const-string v5, "fragment_basic_mode_tele_macro"
+
+    aput-object v5, v2, v3
+
+    const/4 v3, 0x7
+
+    const-string v5, "fragment_basic_mode_quick_setting"
+
+    aput-object v5, v2, v3
+
+    const/16 v3, 0x8
+
+    const-string v5, "fragment_streaming_mode_quick_setting"
+
+    aput-object v5, v2, v3
+
+    const/16 v3, 0x9
+
+    const-string v5, "fragment_basic_mode_submenu"
+
+    aput-object v5, v2, v3
+
+    const/16 v3, 0xa
+
+    const-string v5, "fragment_basic_mode_bottom_pane"
+
+    aput-object v5, v2, v3
+
+    const/16 v3, 0xb
+
+    const-string v5, "fragment_basic_mode_capture_state"
+
+    aput-object v5, v2, v3
+
+    const/16 v3, 0xc
+
+    const-string v5, "fragment_basic_mode_thumbnail_picker"
+
+    aput-object v5, v2, v3
+
+    const/16 v3, 0xd
+
+    const-string/jumbo v5, "stream_live_chat"
+
+    aput-object v5, v2, v3
+
+    const/16 v3, 0xe
+
+    const-string/jumbo v5, "tutorial_dialog"
+
+    aput-object v5, v2, v3
+
+    const/16 v3, 0xf
+
+    const-string v5, "dialog_mode_restricted_in_high_temperature"
+
+    aput-object v5, v2, v3
+
+    new-array v3, v1, [I
+
+    fill-array-data v3, :array_0
+
+    new-array v1, v1, [I
+
+    fill-array-data v1, :array_1
+
+    invoke-virtual {v0, v4, v2, v3, v1}, Landroidx/databinding/ViewDataBinding$IncludedLayouts;->setIncludes(I[Ljava/lang/String;[I[I)V
+
+    .line 35
     new-instance v0, Landroid/util/SparseIntArray;
 
     invoke-direct {v0}, Landroid/util/SparseIntArray;-><init>()V
 
     sput-object v0, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeMainBindingImpl;->sViewsWithIds:Landroid/util/SparseIntArray;
 
-    const v1, 0x7f0901d2
+    const v1, 0x7f0901cf
 
-    const/16 v2, 0xf
+    const/16 v2, 0x11
 
-    .line 34
+    .line 36
     invoke-virtual {v0, v1, v2}, Landroid/util/SparseIntArray;->put(II)V
 
-    const v1, 0x7f0901d3
+    const v1, 0x7f0901d0
 
-    const/16 v2, 0x10
+    const/16 v2, 0x12
 
-    .line 35
+    .line 37
     invoke-virtual {v0, v1, v2}, Landroid/util/SparseIntArray;->put(II)V
 
     return-void
@@ -116,6 +180,8 @@
         0xc
         0xd
         0xe
+        0xf
+        0x10
     .end array-data
 
     :array_1
@@ -123,7 +189,7 @@
         0x7f0c0077
         0x7f0c0065
         0x7f0c0064
-        0x7f0c0160
+        0x7f0c0151
         0x7f0c0072
         0x7f0c0061
         0x7f0c0074
@@ -133,19 +199,21 @@
         0x7f0c0062
         0x7f0c0063
         0x7f0c0075
-        0x7f0c014e
+        0x7f0c013e
+        0x7f0c0143
+        0x7f0c0056
     .end array-data
 .end method
 
 .method public constructor <init>(Landroidx/databinding/DataBindingComponent;Landroid/view/View;)V
     .locals 3
 
-    .line 46
+    .line 48
     sget-object v0, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeMainBindingImpl;->sIncludes:Landroidx/databinding/ViewDataBinding$IncludedLayouts;
 
     sget-object v1, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeMainBindingImpl;->sViewsWithIds:Landroid/util/SparseIntArray;
 
-    const/16 v2, 0x11
+    const/16 v2, 0x13
 
     invoke-static {p1, p2, v2, v0, v1}, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeMainBindingImpl;->mapBindings(Landroidx/databinding/DataBindingComponent;Landroid/view/View;ILandroidx/databinding/ViewDataBinding$IncludedLayouts;Landroid/util/SparseIntArray;)[Ljava/lang/Object;
 
@@ -157,7 +225,7 @@
 .end method
 
 .method private constructor <init>(Landroidx/databinding/DataBindingComponent;Landroid/view/View;[Ljava/lang/Object;)V
-    .locals 21
+    .locals 23
 
     move-object/from16 v3, p0
 
@@ -169,7 +237,7 @@
 
     const/4 v4, 0x3
 
-    .line 49
+    .line 51
     aget-object v4, p3, v4
 
     check-cast v4, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeFinderItemsBinding;
@@ -204,122 +272,139 @@
 
     check-cast v9, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeThumbnailPickerBinding;
 
-    const/16 v10, 0xf
+    const/16 v10, 0x10
 
     aget-object v10, p3, v10
 
-    check-cast v10, Landroid/widget/Space;
+    check-cast v10, Ljp/co/sony/mc/camera/databinding/DialogModeRestrictedInHighTemperatureBinding;
 
-    const/16 v11, 0x10
+    const/16 v11, 0x11
 
     aget-object v11, p3, v11
 
     check-cast v11, Landroid/widget/Space;
 
-    const/4 v12, 0x2
+    const/16 v12, 0x12
 
     aget-object v12, p3, v12
 
-    check-cast v12, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeIndicatorBinding;
+    check-cast v12, Landroid/widget/Space;
 
-    const/4 v13, 0x6
+    const/4 v13, 0x2
 
     aget-object v13, p3, v13
 
-    check-cast v13, Ljp/co/sony/mc/camera/databinding/FragmentBasicManualMenuBinding;
+    check-cast v13, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeIndicatorBinding;
 
-    const/16 v14, 0x8
+    const/4 v14, 0x6
 
     aget-object v14, p3, v14
 
-    check-cast v14, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeQuickSettingBinding;
+    check-cast v14, Ljp/co/sony/mc/camera/databinding/FragmentBasicManualMenuBinding;
 
-    const/16 v15, 0xe
+    const/16 v15, 0x8
 
     aget-object v15, p3, v15
 
-    check-cast v15, Ljp/co/sony/mc/camera/databinding/StreamLiveChatBinding;
+    check-cast v15, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeQuickSettingBinding;
 
-    const/16 v16, 0x9
+    const/16 v16, 0xe
 
     aget-object v16, p3, v16
 
-    check-cast v16, Ljp/co/sony/mc/camera/databinding/FragmentStreamingModeQuickSettingBinding;
+    check-cast v16, Ljp/co/sony/mc/camera/databinding/StreamLiveChatBinding;
 
-    const/16 v17, 0xa
+    const/16 v17, 0x9
 
     aget-object v17, p3, v17
 
-    check-cast v17, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeSubmenuBinding;
+    check-cast v17, Ljp/co/sony/mc/camera/databinding/FragmentStreamingModeQuickSettingBinding;
 
-    const/16 v18, 0x7
+    const/16 v18, 0xa
 
     aget-object v18, p3, v18
 
-    check-cast v18, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeTeleMacroBinding;
+    check-cast v18, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeSubmenuBinding;
 
-    const/16 v19, 0x1
+    const/16 v19, 0x7
 
     aget-object v19, p3, v19
 
-    check-cast v19, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeTopPaneBinding;
+    check-cast v19, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeTeleMacroBinding;
 
-    const/16 v20, 0xe
+    const/16 v20, 0x1
 
-    move/from16 v3, v20
+    aget-object v20, p3, v20
 
-    invoke-direct/range {v0 .. v19}, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeMainBinding;-><init>(Ljava/lang/Object;Landroid/view/View;ILjp/co/sony/mc/camera/databinding/FragmentBasicModeFinderItemsBinding;Ljp/co/sony/mc/camera/databinding/FragmentBasicModeSsFocusEntranceBinding;Ljp/co/sony/mc/camera/databinding/ZoomHintTextBinding;Ljp/co/sony/mc/camera/databinding/FragmentBasicModeBottomPaneBinding;Ljp/co/sony/mc/camera/databinding/FragmentBasicModeCaptureStateBinding;Ljp/co/sony/mc/camera/databinding/FragmentBasicModeThumbnailPickerBinding;Landroid/widget/Space;Landroid/widget/Space;Ljp/co/sony/mc/camera/databinding/FragmentBasicModeIndicatorBinding;Ljp/co/sony/mc/camera/databinding/FragmentBasicManualMenuBinding;Ljp/co/sony/mc/camera/databinding/FragmentBasicModeQuickSettingBinding;Ljp/co/sony/mc/camera/databinding/StreamLiveChatBinding;Ljp/co/sony/mc/camera/databinding/FragmentStreamingModeQuickSettingBinding;Ljp/co/sony/mc/camera/databinding/FragmentBasicModeSubmenuBinding;Ljp/co/sony/mc/camera/databinding/FragmentBasicModeTeleMacroBinding;Ljp/co/sony/mc/camera/databinding/FragmentBasicModeTopPaneBinding;)V
+    check-cast v20, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeTopPaneBinding;
+
+    const/16 v21, 0xf
+
+    aget-object v21, p3, v21
+
+    check-cast v21, Ljp/co/sony/mc/camera/databinding/TutorialDialogBinding;
+
+    const/16 v22, 0x10
+
+    move/from16 v3, v22
+
+    invoke-direct/range {v0 .. v21}, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeMainBinding;-><init>(Ljava/lang/Object;Landroid/view/View;ILjp/co/sony/mc/camera/databinding/FragmentBasicModeFinderItemsBinding;Ljp/co/sony/mc/camera/databinding/FragmentBasicModeSsFocusEntranceBinding;Ljp/co/sony/mc/camera/databinding/ZoomHintTextBinding;Ljp/co/sony/mc/camera/databinding/FragmentBasicModeBottomPaneBinding;Ljp/co/sony/mc/camera/databinding/FragmentBasicModeCaptureStateBinding;Ljp/co/sony/mc/camera/databinding/FragmentBasicModeThumbnailPickerBinding;Ljp/co/sony/mc/camera/databinding/DialogModeRestrictedInHighTemperatureBinding;Landroid/widget/Space;Landroid/widget/Space;Ljp/co/sony/mc/camera/databinding/FragmentBasicModeIndicatorBinding;Ljp/co/sony/mc/camera/databinding/FragmentBasicManualMenuBinding;Ljp/co/sony/mc/camera/databinding/FragmentBasicModeQuickSettingBinding;Ljp/co/sony/mc/camera/databinding/StreamLiveChatBinding;Ljp/co/sony/mc/camera/databinding/FragmentStreamingModeQuickSettingBinding;Ljp/co/sony/mc/camera/databinding/FragmentBasicModeSubmenuBinding;Ljp/co/sony/mc/camera/databinding/FragmentBasicModeTeleMacroBinding;Ljp/co/sony/mc/camera/databinding/FragmentBasicModeTopPaneBinding;Ljp/co/sony/mc/camera/databinding/TutorialDialogBinding;)V
 
     const-wide/16 v0, -0x1
 
     move-object/from16 v2, p0
 
-    .line 374
+    .line 414
     iput-wide v0, v2, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeMainBindingImpl;->mDirtyFlags:J
 
-    .line 67
+    .line 71
     iget-object v0, v2, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeMainBindingImpl;->basicFinderOverlay:Ljp/co/sony/mc/camera/databinding/FragmentBasicModeFinderItemsBinding;
 
     invoke-virtual {v2, v0}, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeMainBindingImpl;->setContainedBinding(Landroidx/databinding/ViewDataBinding;)V
 
-    .line 68
+    .line 72
     iget-object v0, v2, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeMainBindingImpl;->basicModeSsFocusEntrance:Ljp/co/sony/mc/camera/databinding/FragmentBasicModeSsFocusEntranceBinding;
 
     invoke-virtual {v2, v0}, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeMainBindingImpl;->setContainedBinding(Landroidx/databinding/ViewDataBinding;)V
 
-    .line 69
+    .line 73
     iget-object v0, v2, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeMainBindingImpl;->basicModeZoomHintText:Ljp/co/sony/mc/camera/databinding/ZoomHintTextBinding;
 
     invoke-virtual {v2, v0}, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeMainBindingImpl;->setContainedBinding(Landroidx/databinding/ViewDataBinding;)V
 
-    .line 70
+    .line 74
     iget-object v0, v2, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeMainBindingImpl;->bottomPane:Ljp/co/sony/mc/camera/databinding/FragmentBasicModeBottomPaneBinding;
 
     invoke-virtual {v2, v0}, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeMainBindingImpl;->setContainedBinding(Landroidx/databinding/ViewDataBinding;)V
 
-    .line 71
+    .line 75
     iget-object v0, v2, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeMainBindingImpl;->captureProgressOverlay:Ljp/co/sony/mc/camera/databinding/FragmentBasicModeCaptureStateBinding;
 
     invoke-virtual {v2, v0}, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeMainBindingImpl;->setContainedBinding(Landroidx/databinding/ViewDataBinding;)V
 
-    .line 72
+    .line 76
     iget-object v0, v2, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeMainBindingImpl;->colorToneProfileOverlay:Ljp/co/sony/mc/camera/databinding/FragmentBasicModeThumbnailPickerBinding;
 
     invoke-virtual {v2, v0}, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeMainBindingImpl;->setContainedBinding(Landroidx/databinding/ViewDataBinding;)V
 
-    .line 73
+    .line 77
+    iget-object v0, v2, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeMainBindingImpl;->dialogModeRestrictedInHighTemperature:Ljp/co/sony/mc/camera/databinding/DialogModeRestrictedInHighTemperatureBinding;
+
+    invoke-virtual {v2, v0}, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeMainBindingImpl;->setContainedBinding(Landroidx/databinding/ViewDataBinding;)V
+
+    .line 78
     iget-object v0, v2, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeMainBindingImpl;->indicator:Ljp/co/sony/mc/camera/databinding/FragmentBasicModeIndicatorBinding;
 
     invoke-virtual {v2, v0}, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeMainBindingImpl;->setContainedBinding(Landroidx/databinding/ViewDataBinding;)V
 
-    .line 74
+    .line 79
     iget-object v0, v2, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeMainBindingImpl;->manualMenu:Ljp/co/sony/mc/camera/databinding/FragmentBasicManualMenuBinding;
 
     invoke-virtual {v2, v0}, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeMainBindingImpl;->setContainedBinding(Landroidx/databinding/ViewDataBinding;)V
 
     const/4 v0, 0x0
 
-    .line 75
+    .line 80
     aget-object v0, p3, v0
 
     check-cast v0, Ljp/co/sony/mc/camera/view/widget/CustomConstraintLayout;
@@ -328,45 +413,50 @@
 
     const/4 v1, 0x0
 
-    .line 76
+    .line 81
     invoke-virtual {v0, v1}, Ljp/co/sony/mc/camera/view/widget/CustomConstraintLayout;->setTag(Ljava/lang/Object;)V
 
-    .line 77
+    .line 82
     iget-object v0, v2, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeMainBindingImpl;->quickSetting:Ljp/co/sony/mc/camera/databinding/FragmentBasicModeQuickSettingBinding;
 
     invoke-virtual {v2, v0}, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeMainBindingImpl;->setContainedBinding(Landroidx/databinding/ViewDataBinding;)V
 
-    .line 78
+    .line 83
     iget-object v0, v2, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeMainBindingImpl;->streamLiveChat:Ljp/co/sony/mc/camera/databinding/StreamLiveChatBinding;
 
     invoke-virtual {v2, v0}, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeMainBindingImpl;->setContainedBinding(Landroidx/databinding/ViewDataBinding;)V
 
-    .line 79
+    .line 84
     iget-object v0, v2, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeMainBindingImpl;->streamingQuickSetting:Ljp/co/sony/mc/camera/databinding/FragmentStreamingModeQuickSettingBinding;
 
     invoke-virtual {v2, v0}, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeMainBindingImpl;->setContainedBinding(Landroidx/databinding/ViewDataBinding;)V
 
-    .line 80
+    .line 85
     iget-object v0, v2, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeMainBindingImpl;->submenuOverlay:Ljp/co/sony/mc/camera/databinding/FragmentBasicModeSubmenuBinding;
 
     invoke-virtual {v2, v0}, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeMainBindingImpl;->setContainedBinding(Landroidx/databinding/ViewDataBinding;)V
 
-    .line 81
+    .line 86
     iget-object v0, v2, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeMainBindingImpl;->teleMacro:Ljp/co/sony/mc/camera/databinding/FragmentBasicModeTeleMacroBinding;
 
     invoke-virtual {v2, v0}, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeMainBindingImpl;->setContainedBinding(Landroidx/databinding/ViewDataBinding;)V
 
-    .line 82
+    .line 87
     iget-object v0, v2, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeMainBindingImpl;->topPane:Ljp/co/sony/mc/camera/databinding/FragmentBasicModeTopPaneBinding;
+
+    invoke-virtual {v2, v0}, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeMainBindingImpl;->setContainedBinding(Landroidx/databinding/ViewDataBinding;)V
+
+    .line 88
+    iget-object v0, v2, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeMainBindingImpl;->tutorialDialog:Ljp/co/sony/mc/camera/databinding/TutorialDialogBinding;
 
     invoke-virtual {v2, v0}, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeMainBindingImpl;->setContainedBinding(Landroidx/databinding/ViewDataBinding;)V
 
     move-object/from16 v0, p2
 
-    .line 83
+    .line 89
     invoke-virtual {v2, v0}, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeMainBindingImpl;->setRootTag(Landroid/view/View;)V
 
-    .line 85
+    .line 91
     invoke-virtual/range {p0 .. p0}, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeMainBindingImpl;->invalidateAll()V
 
     return-void
@@ -377,10 +467,10 @@
 
     if-nez p2, :cond_0
 
-    .line 259
+    .line 279
     monitor-enter p0
 
-    .line 260
+    .line 280
     :try_start_0
     iget-wide p1, p0, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeMainBindingImpl;->mDirtyFlags:J
 
@@ -390,7 +480,7 @@
 
     iput-wide p1, p0, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeMainBindingImpl;->mDirtyFlags:J
 
-    .line 261
+    .line 281
     monitor-exit p0
 
     const/4 p0, 0x1
@@ -417,10 +507,10 @@
 
     if-nez p2, :cond_0
 
-    .line 268
+    .line 288
     monitor-enter p0
 
-    .line 269
+    .line 289
     :try_start_0
     iget-wide p1, p0, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeMainBindingImpl;->mDirtyFlags:J
 
@@ -430,7 +520,7 @@
 
     iput-wide p1, p0, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeMainBindingImpl;->mDirtyFlags:J
 
-    .line 270
+    .line 290
     monitor-exit p0
 
     const/4 p0, 0x1
@@ -457,10 +547,10 @@
 
     if-nez p2, :cond_0
 
-    .line 232
+    .line 252
     monitor-enter p0
 
-    .line 233
+    .line 253
     :try_start_0
     iget-wide p1, p0, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeMainBindingImpl;->mDirtyFlags:J
 
@@ -470,7 +560,7 @@
 
     iput-wide p1, p0, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeMainBindingImpl;->mDirtyFlags:J
 
-    .line 234
+    .line 254
     monitor-exit p0
 
     const/4 p0, 0x1
@@ -497,10 +587,10 @@
 
     if-nez p2, :cond_0
 
-    .line 295
+    .line 315
     monitor-enter p0
 
-    .line 296
+    .line 316
     :try_start_0
     iget-wide p1, p0, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeMainBindingImpl;->mDirtyFlags:J
 
@@ -510,7 +600,7 @@
 
     iput-wide p1, p0, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeMainBindingImpl;->mDirtyFlags:J
 
-    .line 297
+    .line 317
     monitor-exit p0
 
     const/4 p0, 0x1
@@ -537,10 +627,10 @@
 
     if-nez p2, :cond_0
 
-    .line 241
+    .line 261
     monitor-enter p0
 
-    .line 242
+    .line 262
     :try_start_0
     iget-wide p1, p0, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeMainBindingImpl;->mDirtyFlags:J
 
@@ -550,7 +640,7 @@
 
     iput-wide p1, p0, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeMainBindingImpl;->mDirtyFlags:J
 
-    .line 243
+    .line 263
     monitor-exit p0
 
     const/4 p0, 0x1
@@ -577,10 +667,10 @@
 
     if-nez p2, :cond_0
 
-    .line 313
+    .line 333
     monitor-enter p0
 
-    .line 314
+    .line 334
     :try_start_0
     iget-wide p1, p0, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeMainBindingImpl;->mDirtyFlags:J
 
@@ -590,7 +680,47 @@
 
     iput-wide p1, p0, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeMainBindingImpl;->mDirtyFlags:J
 
-    .line 315
+    .line 335
+    monitor-exit p0
+
+    const/4 p0, 0x1
+
+    return p0
+
+    :catchall_0
+    move-exception p1
+
+    monitor-exit p0
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    throw p1
+
+    :cond_0
+    const/4 p0, 0x0
+
+    return p0
+.end method
+
+.method private onChangeDialogModeRestrictedInHighTemperature(Ljp/co/sony/mc/camera/databinding/DialogModeRestrictedInHighTemperatureBinding;I)Z
+    .locals 2
+
+    if-nez p2, :cond_0
+
+    .line 342
+    monitor-enter p0
+
+    .line 343
+    :try_start_0
+    iget-wide p1, p0, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeMainBindingImpl;->mDirtyFlags:J
+
+    const-wide/16 v0, 0x800
+
+    or-long/2addr p1, v0
+
+    iput-wide p1, p0, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeMainBindingImpl;->mDirtyFlags:J
+
+    .line 344
     monitor-exit p0
 
     const/4 p0, 0x1
@@ -617,10 +747,10 @@
 
     if-nez p2, :cond_0
 
-    .line 223
+    .line 243
     monitor-enter p0
 
-    .line 224
+    .line 244
     :try_start_0
     iget-wide p1, p0, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeMainBindingImpl;->mDirtyFlags:J
 
@@ -630,7 +760,7 @@
 
     iput-wide p1, p0, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeMainBindingImpl;->mDirtyFlags:J
 
-    .line 225
+    .line 245
     monitor-exit p0
 
     const/4 p0, 0x1
@@ -657,20 +787,20 @@
 
     if-nez p2, :cond_0
 
-    .line 331
+    .line 369
     monitor-enter p0
 
-    .line 332
+    .line 370
     :try_start_0
     iget-wide p1, p0, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeMainBindingImpl;->mDirtyFlags:J
 
-    const-wide/16 v0, 0x1000
+    const-wide/16 v0, 0x4000
 
     or-long/2addr p1, v0
 
     iput-wide p1, p0, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeMainBindingImpl;->mDirtyFlags:J
 
-    .line 333
+    .line 371
     monitor-exit p0
 
     const/4 p0, 0x1
@@ -697,10 +827,10 @@
 
     if-nez p2, :cond_0
 
-    .line 250
+    .line 270
     monitor-enter p0
 
-    .line 251
+    .line 271
     :try_start_0
     iget-wide p1, p0, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeMainBindingImpl;->mDirtyFlags:J
 
@@ -710,7 +840,7 @@
 
     iput-wide p1, p0, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeMainBindingImpl;->mDirtyFlags:J
 
-    .line 252
+    .line 272
     monitor-exit p0
 
     const/4 p0, 0x1
@@ -737,20 +867,20 @@
 
     if-nez p2, :cond_0
 
-    .line 322
+    .line 360
     monitor-enter p0
 
-    .line 323
+    .line 361
     :try_start_0
     iget-wide p1, p0, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeMainBindingImpl;->mDirtyFlags:J
 
-    const-wide/16 v0, 0x800
+    const-wide/16 v0, 0x2000
 
     or-long/2addr p1, v0
 
     iput-wide p1, p0, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeMainBindingImpl;->mDirtyFlags:J
 
-    .line 324
+    .line 362
     monitor-exit p0
 
     const/4 p0, 0x1
@@ -777,10 +907,10 @@
 
     if-nez p2, :cond_0
 
-    .line 277
+    .line 297
     monitor-enter p0
 
-    .line 278
+    .line 298
     :try_start_0
     iget-wide p1, p0, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeMainBindingImpl;->mDirtyFlags:J
 
@@ -790,7 +920,7 @@
 
     iput-wide p1, p0, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeMainBindingImpl;->mDirtyFlags:J
 
-    .line 279
+    .line 299
     monitor-exit p0
 
     const/4 p0, 0x1
@@ -817,20 +947,20 @@
 
     if-nez p2, :cond_0
 
-    .line 340
+    .line 378
     monitor-enter p0
 
-    .line 341
+    .line 379
     :try_start_0
     iget-wide p1, p0, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeMainBindingImpl;->mDirtyFlags:J
 
-    const-wide/16 v0, 0x2000
+    const-wide/32 v0, 0x8000
 
     or-long/2addr p1, v0
 
     iput-wide p1, p0, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeMainBindingImpl;->mDirtyFlags:J
 
-    .line 342
+    .line 380
     monitor-exit p0
 
     const/4 p0, 0x1
@@ -857,10 +987,10 @@
 
     if-nez p2, :cond_0
 
-    .line 304
+    .line 324
     monitor-enter p0
 
-    .line 305
+    .line 325
     :try_start_0
     iget-wide p1, p0, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeMainBindingImpl;->mDirtyFlags:J
 
@@ -870,7 +1000,7 @@
 
     iput-wide p1, p0, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeMainBindingImpl;->mDirtyFlags:J
 
-    .line 306
+    .line 326
     monitor-exit p0
 
     const/4 p0, 0x1
@@ -897,10 +1027,10 @@
 
     if-nez p2, :cond_0
 
-    .line 286
+    .line 306
     monitor-enter p0
 
-    .line 287
+    .line 307
     :try_start_0
     iget-wide p1, p0, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeMainBindingImpl;->mDirtyFlags:J
 
@@ -910,7 +1040,47 @@
 
     iput-wide p1, p0, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeMainBindingImpl;->mDirtyFlags:J
 
-    .line 288
+    .line 308
+    monitor-exit p0
+
+    const/4 p0, 0x1
+
+    return p0
+
+    :catchall_0
+    move-exception p1
+
+    monitor-exit p0
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    throw p1
+
+    :cond_0
+    const/4 p0, 0x0
+
+    return p0
+.end method
+
+.method private onChangeTutorialDialog(Ljp/co/sony/mc/camera/databinding/TutorialDialogBinding;I)Z
+    .locals 2
+
+    if-nez p2, :cond_0
+
+    .line 351
+    monitor-enter p0
+
+    .line 352
+    :try_start_0
+    iget-wide p1, p0, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeMainBindingImpl;->mDirtyFlags:J
+
+    const-wide/16 v0, 0x1000
+
+    or-long/2addr p1, v0
+
+    iput-wide p1, p0, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeMainBindingImpl;->mDirtyFlags:J
+
+    .line 353
     monitor-exit p0
 
     const/4 p0, 0x1
@@ -937,87 +1107,97 @@
 .method protected executeBindings()V
     .locals 2
 
-    .line 351
+    .line 389
     monitor-enter p0
 
     const-wide/16 v0, 0x0
 
-    .line 353
+    .line 391
     :try_start_0
     iput-wide v0, p0, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeMainBindingImpl;->mDirtyFlags:J
 
-    .line 354
+    .line 392
     monitor-exit p0
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 356
+    .line 394
     iget-object v0, p0, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeMainBindingImpl;->topPane:Ljp/co/sony/mc/camera/databinding/FragmentBasicModeTopPaneBinding;
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeMainBindingImpl;->executeBindingsOn(Landroidx/databinding/ViewDataBinding;)V
 
-    .line 357
+    .line 395
     iget-object v0, p0, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeMainBindingImpl;->indicator:Ljp/co/sony/mc/camera/databinding/FragmentBasicModeIndicatorBinding;
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeMainBindingImpl;->executeBindingsOn(Landroidx/databinding/ViewDataBinding;)V
 
-    .line 358
+    .line 396
     iget-object v0, p0, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeMainBindingImpl;->basicFinderOverlay:Ljp/co/sony/mc/camera/databinding/FragmentBasicModeFinderItemsBinding;
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeMainBindingImpl;->executeBindingsOn(Landroidx/databinding/ViewDataBinding;)V
 
-    .line 359
+    .line 397
     iget-object v0, p0, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeMainBindingImpl;->basicModeZoomHintText:Ljp/co/sony/mc/camera/databinding/ZoomHintTextBinding;
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeMainBindingImpl;->executeBindingsOn(Landroidx/databinding/ViewDataBinding;)V
 
-    .line 360
+    .line 398
     iget-object v0, p0, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeMainBindingImpl;->basicModeSsFocusEntrance:Ljp/co/sony/mc/camera/databinding/FragmentBasicModeSsFocusEntranceBinding;
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeMainBindingImpl;->executeBindingsOn(Landroidx/databinding/ViewDataBinding;)V
 
-    .line 361
+    .line 399
     iget-object v0, p0, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeMainBindingImpl;->manualMenu:Ljp/co/sony/mc/camera/databinding/FragmentBasicManualMenuBinding;
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeMainBindingImpl;->executeBindingsOn(Landroidx/databinding/ViewDataBinding;)V
 
-    .line 362
+    .line 400
     iget-object v0, p0, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeMainBindingImpl;->teleMacro:Ljp/co/sony/mc/camera/databinding/FragmentBasicModeTeleMacroBinding;
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeMainBindingImpl;->executeBindingsOn(Landroidx/databinding/ViewDataBinding;)V
 
-    .line 363
+    .line 401
     iget-object v0, p0, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeMainBindingImpl;->quickSetting:Ljp/co/sony/mc/camera/databinding/FragmentBasicModeQuickSettingBinding;
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeMainBindingImpl;->executeBindingsOn(Landroidx/databinding/ViewDataBinding;)V
 
-    .line 364
+    .line 402
     iget-object v0, p0, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeMainBindingImpl;->streamingQuickSetting:Ljp/co/sony/mc/camera/databinding/FragmentStreamingModeQuickSettingBinding;
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeMainBindingImpl;->executeBindingsOn(Landroidx/databinding/ViewDataBinding;)V
 
-    .line 365
+    .line 403
     iget-object v0, p0, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeMainBindingImpl;->submenuOverlay:Ljp/co/sony/mc/camera/databinding/FragmentBasicModeSubmenuBinding;
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeMainBindingImpl;->executeBindingsOn(Landroidx/databinding/ViewDataBinding;)V
 
-    .line 366
+    .line 404
     iget-object v0, p0, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeMainBindingImpl;->bottomPane:Ljp/co/sony/mc/camera/databinding/FragmentBasicModeBottomPaneBinding;
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeMainBindingImpl;->executeBindingsOn(Landroidx/databinding/ViewDataBinding;)V
 
-    .line 367
+    .line 405
     iget-object v0, p0, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeMainBindingImpl;->captureProgressOverlay:Ljp/co/sony/mc/camera/databinding/FragmentBasicModeCaptureStateBinding;
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeMainBindingImpl;->executeBindingsOn(Landroidx/databinding/ViewDataBinding;)V
 
-    .line 368
+    .line 406
     iget-object v0, p0, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeMainBindingImpl;->colorToneProfileOverlay:Ljp/co/sony/mc/camera/databinding/FragmentBasicModeThumbnailPickerBinding;
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeMainBindingImpl;->executeBindingsOn(Landroidx/databinding/ViewDataBinding;)V
 
-    .line 369
-    iget-object p0, p0, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeMainBindingImpl;->streamLiveChat:Ljp/co/sony/mc/camera/databinding/StreamLiveChatBinding;
+    .line 407
+    iget-object v0, p0, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeMainBindingImpl;->streamLiveChat:Ljp/co/sony/mc/camera/databinding/StreamLiveChatBinding;
+
+    invoke-static {v0}, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeMainBindingImpl;->executeBindingsOn(Landroidx/databinding/ViewDataBinding;)V
+
+    .line 408
+    iget-object v0, p0, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeMainBindingImpl;->tutorialDialog:Ljp/co/sony/mc/camera/databinding/TutorialDialogBinding;
+
+    invoke-static {v0}, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeMainBindingImpl;->executeBindingsOn(Landroidx/databinding/ViewDataBinding;)V
+
+    .line 409
+    iget-object p0, p0, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeMainBindingImpl;->dialogModeRestrictedInHighTemperature:Ljp/co/sony/mc/camera/databinding/DialogModeRestrictedInHighTemperatureBinding;
 
     invoke-static {p0}, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeMainBindingImpl;->executeBindingsOn(Landroidx/databinding/ViewDataBinding;)V
 
@@ -1026,7 +1206,7 @@
     :catchall_0
     move-exception v0
 
-    .line 354
+    .line 392
     :try_start_1
     monitor-exit p0
     :try_end_1
@@ -1038,10 +1218,10 @@
 .method public hasPendingBindings()Z
     .locals 4
 
-    .line 112
+    .line 120
     monitor-enter p0
 
-    .line 113
+    .line 121
     :try_start_0
     iget-wide v0, p0, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeMainBindingImpl;->mDirtyFlags:J
 
@@ -1053,18 +1233,18 @@
 
     if-eqz v0, :cond_0
 
-    .line 114
+    .line 122
     monitor-exit p0
 
     return v1
 
-    .line 116
+    .line 124
     :cond_0
     monitor-exit p0
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 117
+    .line 125
     iget-object v0, p0, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeMainBindingImpl;->topPane:Ljp/co/sony/mc/camera/databinding/FragmentBasicModeTopPaneBinding;
 
     invoke-virtual {v0}, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeTopPaneBinding;->hasPendingBindings()Z
@@ -1075,7 +1255,7 @@
 
     return v1
 
-    .line 120
+    .line 128
     :cond_1
     iget-object v0, p0, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeMainBindingImpl;->indicator:Ljp/co/sony/mc/camera/databinding/FragmentBasicModeIndicatorBinding;
 
@@ -1087,7 +1267,7 @@
 
     return v1
 
-    .line 123
+    .line 131
     :cond_2
     iget-object v0, p0, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeMainBindingImpl;->basicFinderOverlay:Ljp/co/sony/mc/camera/databinding/FragmentBasicModeFinderItemsBinding;
 
@@ -1099,7 +1279,7 @@
 
     return v1
 
-    .line 126
+    .line 134
     :cond_3
     iget-object v0, p0, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeMainBindingImpl;->basicModeZoomHintText:Ljp/co/sony/mc/camera/databinding/ZoomHintTextBinding;
 
@@ -1111,7 +1291,7 @@
 
     return v1
 
-    .line 129
+    .line 137
     :cond_4
     iget-object v0, p0, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeMainBindingImpl;->basicModeSsFocusEntrance:Ljp/co/sony/mc/camera/databinding/FragmentBasicModeSsFocusEntranceBinding;
 
@@ -1123,7 +1303,7 @@
 
     return v1
 
-    .line 132
+    .line 140
     :cond_5
     iget-object v0, p0, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeMainBindingImpl;->manualMenu:Ljp/co/sony/mc/camera/databinding/FragmentBasicManualMenuBinding;
 
@@ -1135,7 +1315,7 @@
 
     return v1
 
-    .line 135
+    .line 143
     :cond_6
     iget-object v0, p0, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeMainBindingImpl;->teleMacro:Ljp/co/sony/mc/camera/databinding/FragmentBasicModeTeleMacroBinding;
 
@@ -1147,7 +1327,7 @@
 
     return v1
 
-    .line 138
+    .line 146
     :cond_7
     iget-object v0, p0, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeMainBindingImpl;->quickSetting:Ljp/co/sony/mc/camera/databinding/FragmentBasicModeQuickSettingBinding;
 
@@ -1159,7 +1339,7 @@
 
     return v1
 
-    .line 141
+    .line 149
     :cond_8
     iget-object v0, p0, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeMainBindingImpl;->streamingQuickSetting:Ljp/co/sony/mc/camera/databinding/FragmentStreamingModeQuickSettingBinding;
 
@@ -1171,7 +1351,7 @@
 
     return v1
 
-    .line 144
+    .line 152
     :cond_9
     iget-object v0, p0, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeMainBindingImpl;->submenuOverlay:Ljp/co/sony/mc/camera/databinding/FragmentBasicModeSubmenuBinding;
 
@@ -1183,7 +1363,7 @@
 
     return v1
 
-    .line 147
+    .line 155
     :cond_a
     iget-object v0, p0, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeMainBindingImpl;->bottomPane:Ljp/co/sony/mc/camera/databinding/FragmentBasicModeBottomPaneBinding;
 
@@ -1195,7 +1375,7 @@
 
     return v1
 
-    .line 150
+    .line 158
     :cond_b
     iget-object v0, p0, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeMainBindingImpl;->captureProgressOverlay:Ljp/co/sony/mc/camera/databinding/FragmentBasicModeCaptureStateBinding;
 
@@ -1207,7 +1387,7 @@
 
     return v1
 
-    .line 153
+    .line 161
     :cond_c
     iget-object v0, p0, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeMainBindingImpl;->colorToneProfileOverlay:Ljp/co/sony/mc/camera/databinding/FragmentBasicModeThumbnailPickerBinding;
 
@@ -1219,19 +1399,43 @@
 
     return v1
 
-    .line 156
+    .line 164
     :cond_d
-    iget-object p0, p0, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeMainBindingImpl;->streamLiveChat:Ljp/co/sony/mc/camera/databinding/StreamLiveChatBinding;
+    iget-object v0, p0, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeMainBindingImpl;->streamLiveChat:Ljp/co/sony/mc/camera/databinding/StreamLiveChatBinding;
 
-    invoke-virtual {p0}, Ljp/co/sony/mc/camera/databinding/StreamLiveChatBinding;->hasPendingBindings()Z
+    invoke-virtual {v0}, Ljp/co/sony/mc/camera/databinding/StreamLiveChatBinding;->hasPendingBindings()Z
 
-    move-result p0
+    move-result v0
 
-    if-eqz p0, :cond_e
+    if-eqz v0, :cond_e
 
     return v1
 
+    .line 167
     :cond_e
+    iget-object v0, p0, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeMainBindingImpl;->tutorialDialog:Ljp/co/sony/mc/camera/databinding/TutorialDialogBinding;
+
+    invoke-virtual {v0}, Ljp/co/sony/mc/camera/databinding/TutorialDialogBinding;->hasPendingBindings()Z
+
+    move-result v0
+
+    if-eqz v0, :cond_f
+
+    return v1
+
+    .line 170
+    :cond_f
+    iget-object p0, p0, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeMainBindingImpl;->dialogModeRestrictedInHighTemperature:Ljp/co/sony/mc/camera/databinding/DialogModeRestrictedInHighTemperatureBinding;
+
+    invoke-virtual {p0}, Ljp/co/sony/mc/camera/databinding/DialogModeRestrictedInHighTemperatureBinding;->hasPendingBindings()Z
+
+    move-result p0
+
+    if-eqz p0, :cond_10
+
+    return v1
+
+    :cond_10
     const/4 p0, 0x0
 
     return p0
@@ -1239,7 +1443,7 @@
     :catchall_0
     move-exception v0
 
-    .line 116
+    .line 124
     :try_start_1
     monitor-exit p0
     :try_end_1
@@ -1251,91 +1455,101 @@
 .method public invalidateAll()V
     .locals 2
 
-    .line 90
+    .line 96
     monitor-enter p0
 
-    const-wide/16 v0, 0x4000
+    const-wide/32 v0, 0x10000
 
-    .line 91
+    .line 97
     :try_start_0
     iput-wide v0, p0, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeMainBindingImpl;->mDirtyFlags:J
 
-    .line 92
+    .line 98
     monitor-exit p0
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 93
+    .line 99
     iget-object v0, p0, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeMainBindingImpl;->topPane:Ljp/co/sony/mc/camera/databinding/FragmentBasicModeTopPaneBinding;
 
     invoke-virtual {v0}, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeTopPaneBinding;->invalidateAll()V
 
-    .line 94
+    .line 100
     iget-object v0, p0, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeMainBindingImpl;->indicator:Ljp/co/sony/mc/camera/databinding/FragmentBasicModeIndicatorBinding;
 
     invoke-virtual {v0}, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeIndicatorBinding;->invalidateAll()V
 
-    .line 95
+    .line 101
     iget-object v0, p0, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeMainBindingImpl;->basicFinderOverlay:Ljp/co/sony/mc/camera/databinding/FragmentBasicModeFinderItemsBinding;
 
     invoke-virtual {v0}, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeFinderItemsBinding;->invalidateAll()V
 
-    .line 96
+    .line 102
     iget-object v0, p0, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeMainBindingImpl;->basicModeZoomHintText:Ljp/co/sony/mc/camera/databinding/ZoomHintTextBinding;
 
     invoke-virtual {v0}, Ljp/co/sony/mc/camera/databinding/ZoomHintTextBinding;->invalidateAll()V
 
-    .line 97
+    .line 103
     iget-object v0, p0, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeMainBindingImpl;->basicModeSsFocusEntrance:Ljp/co/sony/mc/camera/databinding/FragmentBasicModeSsFocusEntranceBinding;
 
     invoke-virtual {v0}, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeSsFocusEntranceBinding;->invalidateAll()V
 
-    .line 98
+    .line 104
     iget-object v0, p0, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeMainBindingImpl;->manualMenu:Ljp/co/sony/mc/camera/databinding/FragmentBasicManualMenuBinding;
 
     invoke-virtual {v0}, Ljp/co/sony/mc/camera/databinding/FragmentBasicManualMenuBinding;->invalidateAll()V
 
-    .line 99
+    .line 105
     iget-object v0, p0, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeMainBindingImpl;->teleMacro:Ljp/co/sony/mc/camera/databinding/FragmentBasicModeTeleMacroBinding;
 
     invoke-virtual {v0}, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeTeleMacroBinding;->invalidateAll()V
 
-    .line 100
+    .line 106
     iget-object v0, p0, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeMainBindingImpl;->quickSetting:Ljp/co/sony/mc/camera/databinding/FragmentBasicModeQuickSettingBinding;
 
     invoke-virtual {v0}, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeQuickSettingBinding;->invalidateAll()V
 
-    .line 101
+    .line 107
     iget-object v0, p0, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeMainBindingImpl;->streamingQuickSetting:Ljp/co/sony/mc/camera/databinding/FragmentStreamingModeQuickSettingBinding;
 
     invoke-virtual {v0}, Ljp/co/sony/mc/camera/databinding/FragmentStreamingModeQuickSettingBinding;->invalidateAll()V
 
-    .line 102
+    .line 108
     iget-object v0, p0, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeMainBindingImpl;->submenuOverlay:Ljp/co/sony/mc/camera/databinding/FragmentBasicModeSubmenuBinding;
 
     invoke-virtual {v0}, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeSubmenuBinding;->invalidateAll()V
 
-    .line 103
+    .line 109
     iget-object v0, p0, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeMainBindingImpl;->bottomPane:Ljp/co/sony/mc/camera/databinding/FragmentBasicModeBottomPaneBinding;
 
     invoke-virtual {v0}, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeBottomPaneBinding;->invalidateAll()V
 
-    .line 104
+    .line 110
     iget-object v0, p0, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeMainBindingImpl;->captureProgressOverlay:Ljp/co/sony/mc/camera/databinding/FragmentBasicModeCaptureStateBinding;
 
     invoke-virtual {v0}, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeCaptureStateBinding;->invalidateAll()V
 
-    .line 105
+    .line 111
     iget-object v0, p0, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeMainBindingImpl;->colorToneProfileOverlay:Ljp/co/sony/mc/camera/databinding/FragmentBasicModeThumbnailPickerBinding;
 
     invoke-virtual {v0}, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeThumbnailPickerBinding;->invalidateAll()V
 
-    .line 106
+    .line 112
     iget-object v0, p0, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeMainBindingImpl;->streamLiveChat:Ljp/co/sony/mc/camera/databinding/StreamLiveChatBinding;
 
     invoke-virtual {v0}, Ljp/co/sony/mc/camera/databinding/StreamLiveChatBinding;->invalidateAll()V
 
-    .line 107
+    .line 113
+    iget-object v0, p0, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeMainBindingImpl;->tutorialDialog:Ljp/co/sony/mc/camera/databinding/TutorialDialogBinding;
+
+    invoke-virtual {v0}, Ljp/co/sony/mc/camera/databinding/TutorialDialogBinding;->invalidateAll()V
+
+    .line 114
+    iget-object v0, p0, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeMainBindingImpl;->dialogModeRestrictedInHighTemperature:Ljp/co/sony/mc/camera/databinding/DialogModeRestrictedInHighTemperatureBinding;
+
+    invoke-virtual {v0}, Ljp/co/sony/mc/camera/databinding/DialogModeRestrictedInHighTemperatureBinding;->invalidateAll()V
+
+    .line 115
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeMainBindingImpl;->requestRebind()V
 
     return-void
@@ -1343,7 +1557,7 @@
     :catchall_0
     move-exception v0
 
-    .line 92
+    .line 98
     :try_start_1
     monitor-exit p0
     :try_end_1
@@ -1361,7 +1575,7 @@
 
     return p0
 
-    .line 217
+    .line 237
     :pswitch_0
     check-cast p2, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeSubmenuBinding;
 
@@ -1371,7 +1585,7 @@
 
     return p0
 
-    .line 215
+    .line 235
     :pswitch_1
     check-cast p2, Ljp/co/sony/mc/camera/databinding/FragmentBasicManualMenuBinding;
 
@@ -1381,7 +1595,7 @@
 
     return p0
 
-    .line 213
+    .line 233
     :pswitch_2
     check-cast p2, Ljp/co/sony/mc/camera/databinding/StreamLiveChatBinding;
 
@@ -1391,8 +1605,28 @@
 
     return p0
 
-    .line 211
+    .line 231
     :pswitch_3
+    check-cast p2, Ljp/co/sony/mc/camera/databinding/TutorialDialogBinding;
+
+    invoke-direct {p0, p2, p3}, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeMainBindingImpl;->onChangeTutorialDialog(Ljp/co/sony/mc/camera/databinding/TutorialDialogBinding;I)Z
+
+    move-result p0
+
+    return p0
+
+    .line 229
+    :pswitch_4
+    check-cast p2, Ljp/co/sony/mc/camera/databinding/DialogModeRestrictedInHighTemperatureBinding;
+
+    invoke-direct {p0, p2, p3}, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeMainBindingImpl;->onChangeDialogModeRestrictedInHighTemperature(Ljp/co/sony/mc/camera/databinding/DialogModeRestrictedInHighTemperatureBinding;I)Z
+
+    move-result p0
+
+    return p0
+
+    .line 227
+    :pswitch_5
     check-cast p2, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeThumbnailPickerBinding;
 
     invoke-direct {p0, p2, p3}, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeMainBindingImpl;->onChangeColorToneProfileOverlay(Ljp/co/sony/mc/camera/databinding/FragmentBasicModeThumbnailPickerBinding;I)Z
@@ -1401,8 +1635,8 @@
 
     return p0
 
-    .line 209
-    :pswitch_4
+    .line 225
+    :pswitch_6
     check-cast p2, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeTeleMacroBinding;
 
     invoke-direct {p0, p2, p3}, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeMainBindingImpl;->onChangeTeleMacro(Ljp/co/sony/mc/camera/databinding/FragmentBasicModeTeleMacroBinding;I)Z
@@ -1411,8 +1645,8 @@
 
     return p0
 
-    .line 207
-    :pswitch_5
+    .line 223
+    :pswitch_7
     check-cast p2, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeBottomPaneBinding;
 
     invoke-direct {p0, p2, p3}, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeMainBindingImpl;->onChangeBottomPane(Ljp/co/sony/mc/camera/databinding/FragmentBasicModeBottomPaneBinding;I)Z
@@ -1421,8 +1655,8 @@
 
     return p0
 
-    .line 205
-    :pswitch_6
+    .line 221
+    :pswitch_8
     check-cast p2, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeTopPaneBinding;
 
     invoke-direct {p0, p2, p3}, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeMainBindingImpl;->onChangeTopPane(Ljp/co/sony/mc/camera/databinding/FragmentBasicModeTopPaneBinding;I)Z
@@ -1431,8 +1665,8 @@
 
     return p0
 
-    .line 203
-    :pswitch_7
+    .line 219
+    :pswitch_9
     check-cast p2, Ljp/co/sony/mc/camera/databinding/FragmentStreamingModeQuickSettingBinding;
 
     invoke-direct {p0, p2, p3}, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeMainBindingImpl;->onChangeStreamingQuickSetting(Ljp/co/sony/mc/camera/databinding/FragmentStreamingModeQuickSettingBinding;I)Z
@@ -1441,8 +1675,8 @@
 
     return p0
 
-    .line 201
-    :pswitch_8
+    .line 217
+    :pswitch_a
     check-cast p2, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeSsFocusEntranceBinding;
 
     invoke-direct {p0, p2, p3}, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeMainBindingImpl;->onChangeBasicModeSsFocusEntrance(Ljp/co/sony/mc/camera/databinding/FragmentBasicModeSsFocusEntranceBinding;I)Z
@@ -1451,8 +1685,8 @@
 
     return p0
 
-    .line 199
-    :pswitch_9
+    .line 215
+    :pswitch_b
     check-cast p2, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeFinderItemsBinding;
 
     invoke-direct {p0, p2, p3}, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeMainBindingImpl;->onChangeBasicFinderOverlay(Ljp/co/sony/mc/camera/databinding/FragmentBasicModeFinderItemsBinding;I)Z
@@ -1461,8 +1695,8 @@
 
     return p0
 
-    .line 197
-    :pswitch_a
+    .line 213
+    :pswitch_c
     check-cast p2, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeQuickSettingBinding;
 
     invoke-direct {p0, p2, p3}, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeMainBindingImpl;->onChangeQuickSetting(Ljp/co/sony/mc/camera/databinding/FragmentBasicModeQuickSettingBinding;I)Z
@@ -1471,8 +1705,8 @@
 
     return p0
 
-    .line 195
-    :pswitch_b
+    .line 211
+    :pswitch_d
     check-cast p2, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeCaptureStateBinding;
 
     invoke-direct {p0, p2, p3}, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeMainBindingImpl;->onChangeCaptureProgressOverlay(Ljp/co/sony/mc/camera/databinding/FragmentBasicModeCaptureStateBinding;I)Z
@@ -1481,8 +1715,8 @@
 
     return p0
 
-    .line 193
-    :pswitch_c
+    .line 209
+    :pswitch_e
     check-cast p2, Ljp/co/sony/mc/camera/databinding/ZoomHintTextBinding;
 
     invoke-direct {p0, p2, p3}, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeMainBindingImpl;->onChangeBasicModeZoomHintText(Ljp/co/sony/mc/camera/databinding/ZoomHintTextBinding;I)Z
@@ -1491,8 +1725,8 @@
 
     return p0
 
-    .line 191
-    :pswitch_d
+    .line 207
+    :pswitch_f
     check-cast p2, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeIndicatorBinding;
 
     invoke-direct {p0, p2, p3}, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeMainBindingImpl;->onChangeIndicator(Ljp/co/sony/mc/camera/databinding/FragmentBasicModeIndicatorBinding;I)Z
@@ -1505,6 +1739,8 @@
 
     :pswitch_data_0
     .packed-switch 0x0
+        :pswitch_f
+        :pswitch_e
         :pswitch_d
         :pswitch_c
         :pswitch_b
@@ -1525,78 +1761,88 @@
 .method public setLifecycleOwner(Landroidx/lifecycle/LifecycleOwner;)V
     .locals 1
 
-    .line 170
+    .line 184
     invoke-super {p0, p1}, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeMainBinding;->setLifecycleOwner(Landroidx/lifecycle/LifecycleOwner;)V
 
-    .line 171
+    .line 185
     iget-object v0, p0, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeMainBindingImpl;->topPane:Ljp/co/sony/mc/camera/databinding/FragmentBasicModeTopPaneBinding;
 
     invoke-virtual {v0, p1}, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeTopPaneBinding;->setLifecycleOwner(Landroidx/lifecycle/LifecycleOwner;)V
 
-    .line 172
+    .line 186
     iget-object v0, p0, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeMainBindingImpl;->indicator:Ljp/co/sony/mc/camera/databinding/FragmentBasicModeIndicatorBinding;
 
     invoke-virtual {v0, p1}, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeIndicatorBinding;->setLifecycleOwner(Landroidx/lifecycle/LifecycleOwner;)V
 
-    .line 173
+    .line 187
     iget-object v0, p0, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeMainBindingImpl;->basicFinderOverlay:Ljp/co/sony/mc/camera/databinding/FragmentBasicModeFinderItemsBinding;
 
     invoke-virtual {v0, p1}, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeFinderItemsBinding;->setLifecycleOwner(Landroidx/lifecycle/LifecycleOwner;)V
 
-    .line 174
+    .line 188
     iget-object v0, p0, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeMainBindingImpl;->basicModeZoomHintText:Ljp/co/sony/mc/camera/databinding/ZoomHintTextBinding;
 
     invoke-virtual {v0, p1}, Ljp/co/sony/mc/camera/databinding/ZoomHintTextBinding;->setLifecycleOwner(Landroidx/lifecycle/LifecycleOwner;)V
 
-    .line 175
+    .line 189
     iget-object v0, p0, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeMainBindingImpl;->basicModeSsFocusEntrance:Ljp/co/sony/mc/camera/databinding/FragmentBasicModeSsFocusEntranceBinding;
 
     invoke-virtual {v0, p1}, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeSsFocusEntranceBinding;->setLifecycleOwner(Landroidx/lifecycle/LifecycleOwner;)V
 
-    .line 176
+    .line 190
     iget-object v0, p0, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeMainBindingImpl;->manualMenu:Ljp/co/sony/mc/camera/databinding/FragmentBasicManualMenuBinding;
 
     invoke-virtual {v0, p1}, Ljp/co/sony/mc/camera/databinding/FragmentBasicManualMenuBinding;->setLifecycleOwner(Landroidx/lifecycle/LifecycleOwner;)V
 
-    .line 177
+    .line 191
     iget-object v0, p0, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeMainBindingImpl;->teleMacro:Ljp/co/sony/mc/camera/databinding/FragmentBasicModeTeleMacroBinding;
 
     invoke-virtual {v0, p1}, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeTeleMacroBinding;->setLifecycleOwner(Landroidx/lifecycle/LifecycleOwner;)V
 
-    .line 178
+    .line 192
     iget-object v0, p0, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeMainBindingImpl;->quickSetting:Ljp/co/sony/mc/camera/databinding/FragmentBasicModeQuickSettingBinding;
 
     invoke-virtual {v0, p1}, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeQuickSettingBinding;->setLifecycleOwner(Landroidx/lifecycle/LifecycleOwner;)V
 
-    .line 179
+    .line 193
     iget-object v0, p0, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeMainBindingImpl;->streamingQuickSetting:Ljp/co/sony/mc/camera/databinding/FragmentStreamingModeQuickSettingBinding;
 
     invoke-virtual {v0, p1}, Ljp/co/sony/mc/camera/databinding/FragmentStreamingModeQuickSettingBinding;->setLifecycleOwner(Landroidx/lifecycle/LifecycleOwner;)V
 
-    .line 180
+    .line 194
     iget-object v0, p0, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeMainBindingImpl;->submenuOverlay:Ljp/co/sony/mc/camera/databinding/FragmentBasicModeSubmenuBinding;
 
     invoke-virtual {v0, p1}, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeSubmenuBinding;->setLifecycleOwner(Landroidx/lifecycle/LifecycleOwner;)V
 
-    .line 181
+    .line 195
     iget-object v0, p0, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeMainBindingImpl;->bottomPane:Ljp/co/sony/mc/camera/databinding/FragmentBasicModeBottomPaneBinding;
 
     invoke-virtual {v0, p1}, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeBottomPaneBinding;->setLifecycleOwner(Landroidx/lifecycle/LifecycleOwner;)V
 
-    .line 182
+    .line 196
     iget-object v0, p0, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeMainBindingImpl;->captureProgressOverlay:Ljp/co/sony/mc/camera/databinding/FragmentBasicModeCaptureStateBinding;
 
     invoke-virtual {v0, p1}, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeCaptureStateBinding;->setLifecycleOwner(Landroidx/lifecycle/LifecycleOwner;)V
 
-    .line 183
+    .line 197
     iget-object v0, p0, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeMainBindingImpl;->colorToneProfileOverlay:Ljp/co/sony/mc/camera/databinding/FragmentBasicModeThumbnailPickerBinding;
 
     invoke-virtual {v0, p1}, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeThumbnailPickerBinding;->setLifecycleOwner(Landroidx/lifecycle/LifecycleOwner;)V
 
-    .line 184
-    iget-object p0, p0, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeMainBindingImpl;->streamLiveChat:Ljp/co/sony/mc/camera/databinding/StreamLiveChatBinding;
+    .line 198
+    iget-object v0, p0, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeMainBindingImpl;->streamLiveChat:Ljp/co/sony/mc/camera/databinding/StreamLiveChatBinding;
 
-    invoke-virtual {p0, p1}, Ljp/co/sony/mc/camera/databinding/StreamLiveChatBinding;->setLifecycleOwner(Landroidx/lifecycle/LifecycleOwner;)V
+    invoke-virtual {v0, p1}, Ljp/co/sony/mc/camera/databinding/StreamLiveChatBinding;->setLifecycleOwner(Landroidx/lifecycle/LifecycleOwner;)V
+
+    .line 199
+    iget-object v0, p0, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeMainBindingImpl;->tutorialDialog:Ljp/co/sony/mc/camera/databinding/TutorialDialogBinding;
+
+    invoke-virtual {v0, p1}, Ljp/co/sony/mc/camera/databinding/TutorialDialogBinding;->setLifecycleOwner(Landroidx/lifecycle/LifecycleOwner;)V
+
+    .line 200
+    iget-object p0, p0, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeMainBindingImpl;->dialogModeRestrictedInHighTemperature:Ljp/co/sony/mc/camera/databinding/DialogModeRestrictedInHighTemperatureBinding;
+
+    invoke-virtual {p0, p1}, Ljp/co/sony/mc/camera/databinding/DialogModeRestrictedInHighTemperatureBinding;->setLifecycleOwner(Landroidx/lifecycle/LifecycleOwner;)V
 
     return-void
 .end method

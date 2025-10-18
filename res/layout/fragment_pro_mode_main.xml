@@ -31,5 +31,5 @@
     <include android:id="@id/wb_fn_submenu" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/fragment_pro_mode_fn_submenu_wb" />
     <include android:id="@id/pro_mode_capturing_mode_menu" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/pro_mode_capturing_mode_menu_margin" android:layout_marginStart="@dimen/pro_mode_capturing_mode_menu_margin" binding:layout_constraintStart_toStartOf="parent" binding:layout_constraintTop_toBottomOf="@id/top_pane" layout="@layout/fragment_pro_mode_capturing_mode_list" />
     <include android:id="@id/pro_mode_capturing_mode_menu_info" android:layout_width="fill_parent" android:layout_height="fill_parent" layout="@layout/fragment_pro_mode_capturing_mode_info_list" />
-    <include android:id="@id/pro_mode_first_in_dialog" android:layout_width="fill_parent" android:layout_height="fill_parent" layout="@layout/pro_mode_first_in_dialog" />
+    <include android:id="@id/tutorial_dialog" android:layout_width="fill_parent" android:layout_height="fill_parent" layout="@layout/tutorial_dialog" />
 </jp.co.sony.mc.camera.view.widget.CustomConstraintLayout>

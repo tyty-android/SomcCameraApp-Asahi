@@ -5,12 +5,12 @@
 
 # annotations
 .annotation system Ldalvik/annotation/SourceDebugExtension;
-    value = "SMAP\nProgressIndicator.kt\nKotlin\n*S Kotlin\n*F\n+ 1 ProgressIndicator.kt\nandroidx/compose/material/ProgressIndicatorKt\n+ 2 Composables.kt\nandroidx/compose/runtime/ComposablesKt\n+ 3 Composer.kt\nandroidx/compose/runtime/ComposerKt\n+ 4 CompositionLocal.kt\nandroidx/compose/runtime/CompositionLocal\n+ 5 Dp.kt\nandroidx/compose/ui/unit/Dp\n+ 6 SnapshotState.kt\nandroidx/compose/runtime/SnapshotStateKt__SnapshotStateKt\n+ 7 Dp.kt\nandroidx/compose/ui/unit/DpKt\n*L\n1#1,587:1\n83#2,3:588\n83#2,3:597\n1097#3,6:591\n1097#3,6:600\n76#4:606\n76#4:607\n75#5,7:608\n81#6:615\n81#6:616\n81#6:617\n81#6:618\n81#6:619\n81#6:620\n81#6:621\n81#6:622\n154#7:623\n154#7:624\n*S KotlinDebug\n*F\n+ 1 ProgressIndicator.kt\nandroidx/compose/material/ProgressIndicatorKt\n*L\n86#1:588,3\n165#1:597,3\n86#1:591,6\n165#1:600,6\n296#1:606\n334#1:607\n512#1:608,7\n117#1:615\n128#1:616\n139#1:617\n150#1:618\n340#1:619\n352#1:620\n363#1:621\n375#1:622\n530#1:623\n534#1:624\n*E\n"
+    value = "SMAP\nProgressIndicator.kt\nKotlin\n*S Kotlin\n*F\n+ 1 ProgressIndicator.kt\nandroidx/compose/material/ProgressIndicatorKt\n+ 2 Dp.kt\nandroidx/compose/ui/unit/DpKt\n+ 3 Composer.kt\nandroidx/compose/runtime/ComposerKt\n+ 4 CompositionLocal.kt\nandroidx/compose/runtime/CompositionLocal\n+ 5 Dp.kt\nandroidx/compose/ui/unit/Dp\n+ 6 SnapshotState.kt\nandroidx/compose/runtime/SnapshotStateKt__SnapshotStateKt\n*L\n1#1,619:1\n154#2:620\n154#2:650\n154#2:651\n1116#3,6:621\n1116#3,6:627\n74#4:633\n74#4:634\n75#5,7:635\n81#6:642\n81#6:643\n81#6:644\n81#6:645\n81#6:646\n81#6:647\n81#6:648\n81#6:649\n*S KotlinDebug\n*F\n+ 1 ProgressIndicator.kt\nandroidx/compose/material/ProgressIndicatorKt\n*L\n57#1:620\n562#1:650\n566#1:651\n117#1:621,6\n197#1:627,6\n328#1:633\n366#1:634\n544#1:635,7\n148#1:642\n159#1:643\n170#1:644\n181#1:645\n372#1:646\n384#1:647\n395#1:648\n407#1:649\n*E\n"
 .end annotation
 
 .annotation runtime Lkotlin/Metadata;
     d1 = {
-        "\u0000J\n\u0000\n\u0002\u0010\u0007\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0010\u0008\n\u0002\u0008\u0016\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0005\n\u0002\u0018\u0002\n\u0002\u0008\u0011\n\u0002\u0018\u0002\n\u0002\u0008\u0003\n\u0002\u0018\u0002\n\u0002\u0008\u001a\u001a3\u0010\u001e\u001a\u00020\u001f2\u0008\u0008\u0002\u0010 \u001a\u00020!2\u0008\u0008\u0002\u0010\"\u001a\u00020#2\u0008\u0008\u0002\u0010$\u001a\u00020\u0005H\u0007\u00f8\u0001\u0001\u00f8\u0001\u0000\u00a2\u0006\u0004\u0008%\u0010&\u001aG\u0010\u001e\u001a\u00020\u001f2\u0008\u0008\u0002\u0010 \u001a\u00020!2\u0008\u0008\u0002\u0010\"\u001a\u00020#2\u0008\u0008\u0002\u0010$\u001a\u00020\u00052\u0008\u0008\u0002\u0010\'\u001a\u00020#2\u0008\u0008\u0002\u0010(\u001a\u00020)H\u0007\u00f8\u0001\u0001\u00f8\u0001\u0000\u00a2\u0006\u0004\u0008*\u0010+\u001a;\u0010\u001e\u001a\u00020\u001f2\u0006\u0010,\u001a\u00020\u00012\u0008\u0008\u0002\u0010 \u001a\u00020!2\u0008\u0008\u0002\u0010\"\u001a\u00020#2\u0008\u0008\u0002\u0010$\u001a\u00020\u0005H\u0007\u00f8\u0001\u0001\u00f8\u0001\u0000\u00a2\u0006\u0004\u0008-\u0010.\u001aO\u0010\u001e\u001a\u00020\u001f2\u0006\u0010,\u001a\u00020\u00012\u0008\u0008\u0002\u0010 \u001a\u00020!2\u0008\u0008\u0002\u0010\"\u001a\u00020#2\u0008\u0008\u0002\u0010$\u001a\u00020\u00052\u0008\u0008\u0002\u0010\'\u001a\u00020#2\u0008\u0008\u0002\u0010(\u001a\u00020)H\u0007\u00f8\u0001\u0001\u00f8\u0001\u0000\u00a2\u0006\u0004\u0008/\u00100\u001a3\u00101\u001a\u00020\u001f2\u0008\u0008\u0002\u0010 \u001a\u00020!2\u0008\u0008\u0002\u0010\"\u001a\u00020#2\u0008\u0008\u0002\u0010\'\u001a\u00020#H\u0007\u00f8\u0001\u0001\u00f8\u0001\u0000\u00a2\u0006\u0004\u00082\u00103\u001a=\u00101\u001a\u00020\u001f2\u0008\u0008\u0002\u0010 \u001a\u00020!2\u0008\u0008\u0002\u0010\"\u001a\u00020#2\u0008\u0008\u0002\u0010\'\u001a\u00020#2\u0008\u0008\u0002\u0010(\u001a\u00020)H\u0007\u00f8\u0001\u0001\u00f8\u0001\u0000\u00a2\u0006\u0004\u00084\u00105\u001a;\u00101\u001a\u00020\u001f2\u0006\u0010,\u001a\u00020\u00012\u0008\u0008\u0002\u0010 \u001a\u00020!2\u0008\u0008\u0002\u0010\"\u001a\u00020#2\u0008\u0008\u0002\u0010\'\u001a\u00020#H\u0007\u00f8\u0001\u0001\u00f8\u0001\u0000\u00a2\u0006\u0004\u00086\u00107\u001aE\u00101\u001a\u00020\u001f2\u0006\u0010,\u001a\u00020\u00012\u0008\u0008\u0002\u0010 \u001a\u00020!2\u0008\u0008\u0002\u0010\"\u001a\u00020#2\u0008\u0008\u0002\u0010\'\u001a\u00020#2\u0008\u0008\u0002\u0010(\u001a\u00020)H\u0007\u00f8\u0001\u0001\u00f8\u0001\u0000\u00a2\u0006\u0004\u00088\u00109\u001a9\u0010:\u001a\u00020\u001f*\u00020;2\u0006\u0010<\u001a\u00020\u00012\u0006\u0010=\u001a\u00020\u00012\u0006\u0010\"\u001a\u00020#2\u0006\u0010>\u001a\u00020?H\u0002\u00f8\u0001\u0001\u00f8\u0001\u0000\u00a2\u0006\u0004\u0008@\u0010A\u001a)\u0010B\u001a\u00020\u001f*\u00020;2\u0006\u0010\"\u001a\u00020#2\u0006\u0010>\u001a\u00020?H\u0002\u00f8\u0001\u0001\u00f8\u0001\u0000\u00a2\u0006\u0004\u0008C\u0010D\u001a9\u0010E\u001a\u00020\u001f*\u00020;2\u0006\u0010<\u001a\u00020\u00012\u0006\u0010=\u001a\u00020\u00012\u0006\u0010\"\u001a\u00020#2\u0006\u0010>\u001a\u00020?H\u0002\u00f8\u0001\u0001\u00f8\u0001\u0000\u00a2\u0006\u0004\u0008F\u0010A\u001aA\u0010G\u001a\u00020\u001f*\u00020;2\u0006\u0010<\u001a\u00020\u00012\u0006\u0010$\u001a\u00020\u00052\u0006\u0010=\u001a\u00020\u00012\u0006\u0010\"\u001a\u00020#2\u0006\u0010>\u001a\u00020?H\u0002\u00f8\u0001\u0001\u00f8\u0001\u0000\u00a2\u0006\u0004\u0008H\u0010I\u001aA\u0010J\u001a\u00020\u001f*\u00020;2\u0006\u0010K\u001a\u00020\u00012\u0006\u0010L\u001a\u00020\u00012\u0006\u0010\"\u001a\u00020#2\u0006\u0010$\u001a\u00020\u00012\u0006\u0010(\u001a\u00020)H\u0002\u00f8\u0001\u0001\u00f8\u0001\u0000\u00a2\u0006\u0004\u0008M\u0010N\u001a1\u0010O\u001a\u00020\u001f*\u00020;2\u0006\u0010\"\u001a\u00020#2\u0006\u0010$\u001a\u00020\u00012\u0006\u0010(\u001a\u00020)H\u0002\u00f8\u0001\u0001\u00f8\u0001\u0000\u00a2\u0006\u0004\u0008P\u0010Q\"\u000e\u0010\u0000\u001a\u00020\u0001X\u0082T\u00a2\u0006\u0002\n\u0000\"\u000e\u0010\u0002\u001a\u00020\u0003X\u0082\u0004\u00a2\u0006\u0002\n\u0000\"\u0013\u0010\u0004\u001a\u00020\u0005X\u0082\u0004\u00f8\u0001\u0000\u00a2\u0006\u0004\n\u0002\u0010\u0006\"\u000e\u0010\u0007\u001a\u00020\u0008X\u0082T\u00a2\u0006\u0002\n\u0000\"\u000e\u0010\t\u001a\u00020\u0008X\u0082T\u00a2\u0006\u0002\n\u0000\"\u000e\u0010\n\u001a\u00020\u0003X\u0082\u0004\u00a2\u0006\u0002\n\u0000\"\u000e\u0010\u000b\u001a\u00020\u0008X\u0082T\u00a2\u0006\u0002\n\u0000\"\u000e\u0010\u000c\u001a\u00020\u0008X\u0082T\u00a2\u0006\u0002\n\u0000\"\u000e\u0010\r\u001a\u00020\u0003X\u0082\u0004\u00a2\u0006\u0002\n\u0000\"\u000e\u0010\u000e\u001a\u00020\u0008X\u0082T\u00a2\u0006\u0002\n\u0000\"\u000e\u0010\u000f\u001a\u00020\u0008X\u0082T\u00a2\u0006\u0002\n\u0000\"\u000e\u0010\u0010\u001a\u00020\u0001X\u0082T\u00a2\u0006\u0002\n\u0000\"\u000e\u0010\u0011\u001a\u00020\u0008X\u0082T\u00a2\u0006\u0002\n\u0000\"\u0013\u0010\u0012\u001a\u00020\u0005X\u0082\u0004\u00f8\u0001\u0000\u00a2\u0006\u0004\n\u0002\u0010\u0006\"\u0013\u0010\u0013\u001a\u00020\u0005X\u0082\u0004\u00f8\u0001\u0000\u00a2\u0006\u0004\n\u0002\u0010\u0006\"\u000e\u0010\u0014\u001a\u00020\u0001X\u0082T\u00a2\u0006\u0002\n\u0000\"\u000e\u0010\u0015\u001a\u00020\u0008X\u0082T\u00a2\u0006\u0002\n\u0000\"\u000e\u0010\u0016\u001a\u00020\u0008X\u0082T\u00a2\u0006\u0002\n\u0000\"\u000e\u0010\u0017\u001a\u00020\u0008X\u0082T\u00a2\u0006\u0002\n\u0000\"\u000e\u0010\u0018\u001a\u00020\u0008X\u0082T\u00a2\u0006\u0002\n\u0000\"\u000e\u0010\u0019\u001a\u00020\u0003X\u0082\u0004\u00a2\u0006\u0002\n\u0000\"\u000e\u0010\u001a\u001a\u00020\u0008X\u0082T\u00a2\u0006\u0002\n\u0000\"\u000e\u0010\u001b\u001a\u00020\u0008X\u0082T\u00a2\u0006\u0002\n\u0000\"\u000e\u0010\u001c\u001a\u00020\u0003X\u0082\u0004\u00a2\u0006\u0002\n\u0000\"\u000e\u0010\u001d\u001a\u00020\u0001X\u0082T\u00a2\u0006\u0002\n\u0000\u0082\u0002\u000b\n\u0002\u0008\u0019\n\u0005\u0008\u00a1\u001e0\u0001\u00a8\u0006R\u00b2\u0006\n\u0010S\u001a\u00020\u0001X\u008a\u0084\u0002\u00b2\u0006\n\u0010T\u001a\u00020\u0001X\u008a\u0084\u0002\u00b2\u0006\n\u0010U\u001a\u00020\u0001X\u008a\u0084\u0002\u00b2\u0006\n\u0010V\u001a\u00020\u0001X\u008a\u0084\u0002\u00b2\u0006\n\u0010W\u001a\u00020\u0008X\u008a\u0084\u0002\u00b2\u0006\n\u0010X\u001a\u00020\u0001X\u008a\u0084\u0002\u00b2\u0006\n\u0010Y\u001a\u00020\u0001X\u008a\u0084\u0002\u00b2\u0006\n\u0010<\u001a\u00020\u0001X\u008a\u0084\u0002"
+        "\u0000J\n\u0000\n\u0002\u0010\u0007\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0010\u0008\n\u0002\u0008\u0016\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0005\n\u0002\u0018\u0002\n\u0002\u0008\u0011\n\u0002\u0018\u0002\n\u0002\u0008\u0003\n\u0002\u0018\u0002\n\u0002\u0008\u001b\u001a0\u0010\u001e\u001a\u00020\u001f2\u0008\u0008\u0002\u0010 \u001a\u00020!2\u0008\u0008\u0002\u0010\"\u001a\u00020#2\u0008\u0008\u0002\u0010$\u001a\u00020\u0005H\u0007\u00f8\u0001\u0000\u00a2\u0006\u0004\u0008%\u0010&\u001aD\u0010\u001e\u001a\u00020\u001f2\u0008\u0008\u0002\u0010 \u001a\u00020!2\u0008\u0008\u0002\u0010\"\u001a\u00020#2\u0008\u0008\u0002\u0010$\u001a\u00020\u00052\u0008\u0008\u0002\u0010\'\u001a\u00020#2\u0008\u0008\u0002\u0010(\u001a\u00020)H\u0007\u00f8\u0001\u0000\u00a2\u0006\u0004\u0008*\u0010+\u001a8\u0010\u001e\u001a\u00020\u001f2\u0006\u0010,\u001a\u00020\u00012\u0008\u0008\u0002\u0010 \u001a\u00020!2\u0008\u0008\u0002\u0010\"\u001a\u00020#2\u0008\u0008\u0002\u0010$\u001a\u00020\u0005H\u0007\u00f8\u0001\u0000\u00a2\u0006\u0004\u0008-\u0010.\u001aN\u0010\u001e\u001a\u00020\u001f2\u0008\u0008\u0001\u0010,\u001a\u00020\u00012\u0008\u0008\u0002\u0010 \u001a\u00020!2\u0008\u0008\u0002\u0010\"\u001a\u00020#2\u0008\u0008\u0002\u0010$\u001a\u00020\u00052\u0008\u0008\u0002\u0010\'\u001a\u00020#2\u0008\u0008\u0002\u0010(\u001a\u00020)H\u0007\u00f8\u0001\u0000\u00a2\u0006\u0004\u0008/\u00100\u001a0\u00101\u001a\u00020\u001f2\u0008\u0008\u0002\u0010 \u001a\u00020!2\u0008\u0008\u0002\u0010\"\u001a\u00020#2\u0008\u0008\u0002\u0010\'\u001a\u00020#H\u0007\u00f8\u0001\u0000\u00a2\u0006\u0004\u00082\u00103\u001a:\u00101\u001a\u00020\u001f2\u0008\u0008\u0002\u0010 \u001a\u00020!2\u0008\u0008\u0002\u0010\"\u001a\u00020#2\u0008\u0008\u0002\u0010\'\u001a\u00020#2\u0008\u0008\u0002\u0010(\u001a\u00020)H\u0007\u00f8\u0001\u0000\u00a2\u0006\u0004\u00084\u00105\u001a8\u00101\u001a\u00020\u001f2\u0006\u0010,\u001a\u00020\u00012\u0008\u0008\u0002\u0010 \u001a\u00020!2\u0008\u0008\u0002\u0010\"\u001a\u00020#2\u0008\u0008\u0002\u0010\'\u001a\u00020#H\u0007\u00f8\u0001\u0000\u00a2\u0006\u0004\u00086\u00107\u001aD\u00101\u001a\u00020\u001f2\u0008\u0008\u0001\u0010,\u001a\u00020\u00012\u0008\u0008\u0002\u0010 \u001a\u00020!2\u0008\u0008\u0002\u0010\"\u001a\u00020#2\u0008\u0008\u0002\u0010\'\u001a\u00020#2\u0008\u0008\u0002\u0010(\u001a\u00020)H\u0007\u00f8\u0001\u0000\u00a2\u0006\u0004\u00088\u00109\u001a6\u0010:\u001a\u00020\u001f*\u00020;2\u0006\u0010<\u001a\u00020\u00012\u0006\u0010=\u001a\u00020\u00012\u0006\u0010\"\u001a\u00020#2\u0006\u0010>\u001a\u00020?H\u0002\u00f8\u0001\u0000\u00a2\u0006\u0004\u0008@\u0010A\u001a&\u0010B\u001a\u00020\u001f*\u00020;2\u0006\u0010\"\u001a\u00020#2\u0006\u0010>\u001a\u00020?H\u0002\u00f8\u0001\u0000\u00a2\u0006\u0004\u0008C\u0010D\u001a6\u0010E\u001a\u00020\u001f*\u00020;2\u0006\u0010<\u001a\u00020\u00012\u0006\u0010=\u001a\u00020\u00012\u0006\u0010\"\u001a\u00020#2\u0006\u0010>\u001a\u00020?H\u0002\u00f8\u0001\u0000\u00a2\u0006\u0004\u0008F\u0010A\u001a>\u0010G\u001a\u00020\u001f*\u00020;2\u0006\u0010<\u001a\u00020\u00012\u0006\u0010$\u001a\u00020\u00052\u0006\u0010=\u001a\u00020\u00012\u0006\u0010\"\u001a\u00020#2\u0006\u0010>\u001a\u00020?H\u0002\u00f8\u0001\u0000\u00a2\u0006\u0004\u0008H\u0010I\u001a>\u0010J\u001a\u00020\u001f*\u00020;2\u0006\u0010K\u001a\u00020\u00012\u0006\u0010L\u001a\u00020\u00012\u0006\u0010\"\u001a\u00020#2\u0006\u0010$\u001a\u00020\u00012\u0006\u0010(\u001a\u00020)H\u0002\u00f8\u0001\u0000\u00a2\u0006\u0004\u0008M\u0010N\u001a.\u0010O\u001a\u00020\u001f*\u00020;2\u0006\u0010\"\u001a\u00020#2\u0006\u0010$\u001a\u00020\u00012\u0006\u0010(\u001a\u00020)H\u0002\u00f8\u0001\u0000\u00a2\u0006\u0004\u0008P\u0010Q\u001a\u000c\u0010R\u001a\u00020!*\u00020!H\u0000\"\u000e\u0010\u0000\u001a\u00020\u0001X\u0082T\u00a2\u0006\u0002\n\u0000\"\u000e\u0010\u0002\u001a\u00020\u0003X\u0082\u0004\u00a2\u0006\u0002\n\u0000\"\u0010\u0010\u0004\u001a\u00020\u0005X\u0082\u0004\u00a2\u0006\u0004\n\u0002\u0010\u0006\"\u000e\u0010\u0007\u001a\u00020\u0008X\u0082T\u00a2\u0006\u0002\n\u0000\"\u000e\u0010\t\u001a\u00020\u0008X\u0082T\u00a2\u0006\u0002\n\u0000\"\u000e\u0010\n\u001a\u00020\u0003X\u0082\u0004\u00a2\u0006\u0002\n\u0000\"\u000e\u0010\u000b\u001a\u00020\u0008X\u0082T\u00a2\u0006\u0002\n\u0000\"\u000e\u0010\u000c\u001a\u00020\u0008X\u0082T\u00a2\u0006\u0002\n\u0000\"\u000e\u0010\r\u001a\u00020\u0003X\u0082\u0004\u00a2\u0006\u0002\n\u0000\"\u000e\u0010\u000e\u001a\u00020\u0008X\u0082T\u00a2\u0006\u0002\n\u0000\"\u000e\u0010\u000f\u001a\u00020\u0008X\u0082T\u00a2\u0006\u0002\n\u0000\"\u000e\u0010\u0010\u001a\u00020\u0001X\u0082T\u00a2\u0006\u0002\n\u0000\"\u000e\u0010\u0011\u001a\u00020\u0008X\u0082T\u00a2\u0006\u0002\n\u0000\"\u0010\u0010\u0012\u001a\u00020\u0005X\u0082\u0004\u00a2\u0006\u0004\n\u0002\u0010\u0006\"\u0010\u0010\u0013\u001a\u00020\u0005X\u0082\u0004\u00a2\u0006\u0004\n\u0002\u0010\u0006\"\u000e\u0010\u0014\u001a\u00020\u0001X\u0082T\u00a2\u0006\u0002\n\u0000\"\u000e\u0010\u0015\u001a\u00020\u0008X\u0082T\u00a2\u0006\u0002\n\u0000\"\u000e\u0010\u0016\u001a\u00020\u0008X\u0082T\u00a2\u0006\u0002\n\u0000\"\u000e\u0010\u0017\u001a\u00020\u0008X\u0082T\u00a2\u0006\u0002\n\u0000\"\u000e\u0010\u0018\u001a\u00020\u0008X\u0082T\u00a2\u0006\u0002\n\u0000\"\u000e\u0010\u0019\u001a\u00020\u0003X\u0082\u0004\u00a2\u0006\u0002\n\u0000\"\u000e\u0010\u001a\u001a\u00020\u0008X\u0082T\u00a2\u0006\u0002\n\u0000\"\u000e\u0010\u001b\u001a\u00020\u0008X\u0082T\u00a2\u0006\u0002\n\u0000\"\u000e\u0010\u001c\u001a\u00020\u0003X\u0082\u0004\u00a2\u0006\u0002\n\u0000\"\u000e\u0010\u001d\u001a\u00020\u0001X\u0082T\u00a2\u0006\u0002\n\u0000\u0082\u0002\u0007\n\u0005\u0008\u00a1\u001e0\u0001\u00a8\u0006S\u00b2\u0006\n\u0010T\u001a\u00020\u0001X\u008a\u0084\u0002\u00b2\u0006\n\u0010U\u001a\u00020\u0001X\u008a\u0084\u0002\u00b2\u0006\n\u0010V\u001a\u00020\u0001X\u008a\u0084\u0002\u00b2\u0006\n\u0010W\u001a\u00020\u0001X\u008a\u0084\u0002\u00b2\u0006\n\u0010X\u001a\u00020\u0008X\u008a\u0084\u0002\u00b2\u0006\n\u0010Y\u001a\u00020\u0001X\u008a\u0084\u0002\u00b2\u0006\n\u0010Z\u001a\u00020\u0001X\u008a\u0084\u0002\u00b2\u0006\n\u0010<\u001a\u00020\u0001X\u008a\u0084\u0002"
     }
     d2 = {
         "BaseRotationAngle",
@@ -95,6 +95,7 @@
         "drawLinearIndicatorBackground",
         "drawLinearIndicatorBackground-AZGd3zU",
         "(Landroidx/compose/ui/graphics/drawscope/DrawScope;JFI)V",
+        "increaseSemanticsBounds",
         "material_release",
         "firstLineHead",
         "firstLineTail",
@@ -170,7 +171,7 @@
 .method static constructor <clinit>()V
     .locals 7
 
-    .line 529
+    .line 561
     sget-object v0, Landroidx/compose/material/ProgressIndicatorDefaults;->INSTANCE:Landroidx/compose/material/ProgressIndicatorDefaults;
 
     invoke-virtual {v0}, Landroidx/compose/material/ProgressIndicatorDefaults;->getStrokeWidth-D9Ej5fM()F
@@ -183,27 +184,27 @@
 
     int-to-float v0, v0
 
-    .line 623
+    .line 650
     invoke-static {v0}, Landroidx/compose/ui/unit/Dp;->constructor-impl(F)F
 
     move-result v0
 
-    .line 530
+    .line 562
     sput v0, Landroidx/compose/material/ProgressIndicatorKt;->LinearIndicatorWidth:F
 
     const/16 v0, 0x28
 
     int-to-float v0, v0
 
-    .line 624
+    .line 651
     invoke-static {v0}, Landroidx/compose/ui/unit/Dp;->constructor-impl(F)F
 
     move-result v0
 
-    .line 534
+    .line 566
     sput v0, Landroidx/compose/material/ProgressIndicatorKt;->CircularIndicatorDiameter:F
 
-    .line 552
+    .line 584
     new-instance v0, Landroidx/compose/animation/core/CubicBezierEasing;
 
     const v1, 0x3e4ccccd    # 0.2f
@@ -218,7 +219,7 @@
 
     sput-object v0, Landroidx/compose/material/ProgressIndicatorKt;->FirstLineHeadEasing:Landroidx/compose/animation/core/CubicBezierEasing;
 
-    .line 553
+    .line 585
     new-instance v0, Landroidx/compose/animation/core/CubicBezierEasing;
 
     const v3, 0x3ecccccd    # 0.4f
@@ -227,7 +228,7 @@
 
     sput-object v0, Landroidx/compose/material/ProgressIndicatorKt;->FirstLineTailEasing:Landroidx/compose/animation/core/CubicBezierEasing;
 
-    .line 554
+    .line 586
     new-instance v0, Landroidx/compose/animation/core/CubicBezierEasing;
 
     const v5, 0x3f266666    # 0.65f
@@ -236,7 +237,7 @@
 
     sput-object v0, Landroidx/compose/material/ProgressIndicatorKt;->SecondLineHeadEasing:Landroidx/compose/animation/core/CubicBezierEasing;
 
-    .line 555
+    .line 587
     new-instance v0, Landroidx/compose/animation/core/CubicBezierEasing;
 
     const v5, 0x3dcccccd    # 0.1f
@@ -247,7 +248,7 @@
 
     sput-object v0, Landroidx/compose/material/ProgressIndicatorKt;->SecondLineTailEasing:Landroidx/compose/animation/core/CubicBezierEasing;
 
-    .line 586
+    .line 618
     new-instance v0, Landroidx/compose/animation/core/CubicBezierEasing;
 
     invoke-direct {v0, v3, v2, v1, v4}, Landroidx/compose/animation/core/CubicBezierEasing;-><init>(FFFF)V
@@ -268,12 +269,12 @@
 
     move-object/from16 v2, p8
 
-    .line 294
+    .line 326
     invoke-interface {v2, v0}, Landroidx/compose/runtime/Composer;->startRestartGroup(I)Landroidx/compose/runtime/Composer;
 
     move-result-object v2
 
-    const-string v3, "C(CircularProgressIndicator)P(3,2,1:c#ui.graphics.Color,5:c#ui.unit.Dp,0:c#ui.graphics.Color,4:c#ui.graphics.StrokeCap)289@11632L6,*295@11891L7,298@11972L375:ProgressIndicator.kt#jmzs0o"
+    const-string v3, "C(CircularProgressIndicator)P(3,2,1:c#ui.graphics.Color,5:c#ui.unit.Dp,0:c#ui.graphics.Color,4:c#ui.graphics.StrokeCap)321@13100L6,*327@13359L7,330@13440L375:ProgressIndicator.kt#jmzs0o"
 
     invoke-static {v2, v3}, Landroidx/compose/runtime/ComposerKt;->sourceInformation(Landroidx/compose/runtime/Composer;Ljava/lang/String;)V
 
@@ -502,154 +503,178 @@
     :goto_e
     const v15, 0x5b6db
 
-    and-int/2addr v3, v15
+    and-int/2addr v15, v3
 
-    const v15, 0x12492
+    const v0, 0x12492
 
-    if-ne v3, v15, :cond_14
+    if-ne v15, v0, :cond_13
 
     invoke-interface {v2}, Landroidx/compose/runtime/Composer;->getSkipping()Z
 
-    move-result v3
+    move-result v0
 
-    if-nez v3, :cond_12
+    if-nez v0, :cond_12
 
     goto :goto_10
 
-    .line 310
+    .line 342
     :cond_12
     invoke-interface {v2}, Landroidx/compose/runtime/Composer;->skipToGroupEnd()V
 
-    :cond_13
-    :goto_f
     move-wide v3, v6
 
     move-wide v6, v12
 
+    :goto_f
     move v8, v14
 
-    goto/16 :goto_13
+    goto/16 :goto_14
 
-    .line 294
-    :cond_14
+    .line 326
+    :cond_13
     :goto_10
     invoke-interface {v2}, Landroidx/compose/runtime/Composer;->startDefaults()V
 
-    and-int/lit8 v3, v9, 0x1
+    and-int/lit8 v0, v9, 0x1
 
-    if-eqz v3, :cond_16
+    const v15, -0x70001
+
+    if-eqz v0, :cond_17
 
     invoke-interface {v2}, Landroidx/compose/runtime/Composer;->getDefaultsInvalid()Z
 
-    move-result v3
+    move-result v0
 
-    if-eqz v3, :cond_15
+    if-eqz v0, :cond_14
 
     goto :goto_11
 
-    .line 293
-    :cond_15
+    .line 325
+    :cond_14
     invoke-interface {v2}, Landroidx/compose/runtime/Composer;->skipToGroupEnd()V
 
-    goto :goto_12
+    and-int/lit8 v0, p10, 0x4
+
+    if-eqz v0, :cond_15
+
+    and-int/lit16 v3, v3, -0x381
+
+    :cond_15
+    and-int/lit8 v0, p10, 0x20
+
+    if-eqz v0, :cond_16
+
+    and-int/2addr v3, v15
 
     :cond_16
-    :goto_11
-    if-eqz v4, :cond_17
+    move-wide v11, v12
 
-    .line 289
-    sget-object v3, Landroidx/compose/ui/Modifier;->Companion:Landroidx/compose/ui/Modifier$Companion;
-
-    check-cast v3, Landroidx/compose/ui/Modifier;
-
-    move-object v5, v3
+    goto :goto_13
 
     :cond_17
-    and-int/lit8 v3, p10, 0x4
+    :goto_11
+    if-eqz v4, :cond_18
 
-    if-eqz v3, :cond_18
+    .line 321
+    sget-object v0, Landroidx/compose/ui/Modifier;->Companion:Landroidx/compose/ui/Modifier$Companion;
 
-    .line 290
-    sget-object v3, Landroidx/compose/material/MaterialTheme;->INSTANCE:Landroidx/compose/material/MaterialTheme;
+    check-cast v0, Landroidx/compose/ui/Modifier;
+
+    move-object v5, v0
+
+    :cond_18
+    and-int/lit8 v0, p10, 0x4
+
+    if-eqz v0, :cond_19
+
+    .line 322
+    sget-object v0, Landroidx/compose/material/MaterialTheme;->INSTANCE:Landroidx/compose/material/MaterialTheme;
 
     const/4 v4, 0x6
 
-    invoke-virtual {v3, v2, v4}, Landroidx/compose/material/MaterialTheme;->getColors(Landroidx/compose/runtime/Composer;I)Landroidx/compose/material/Colors;
+    invoke-virtual {v0, v2, v4}, Landroidx/compose/material/MaterialTheme;->getColors(Landroidx/compose/runtime/Composer;I)Landroidx/compose/material/Colors;
 
-    move-result-object v3
+    move-result-object v0
 
-    invoke-virtual {v3}, Landroidx/compose/material/Colors;->getPrimary-0d7_KjU()J
+    invoke-virtual {v0}, Landroidx/compose/material/Colors;->getPrimary-0d7_KjU()J
 
-    move-result-wide v3
+    move-result-wide v6
 
-    move-wide v6, v3
-
-    :cond_18
-    if-eqz v8, :cond_19
-
-    .line 291
-    sget-object v3, Landroidx/compose/material/ProgressIndicatorDefaults;->INSTANCE:Landroidx/compose/material/ProgressIndicatorDefaults;
-
-    invoke-virtual {v3}, Landroidx/compose/material/ProgressIndicatorDefaults;->getStrokeWidth-D9Ej5fM()F
-
-    move-result v3
-
-    move v10, v3
+    and-int/lit16 v3, v3, -0x381
 
     :cond_19
-    if-eqz v11, :cond_1a
+    if-eqz v8, :cond_1a
 
-    .line 292
-    sget-object v3, Landroidx/compose/ui/graphics/Color;->Companion:Landroidx/compose/ui/graphics/Color$Companion;
+    .line 323
+    sget-object v0, Landroidx/compose/material/ProgressIndicatorDefaults;->INSTANCE:Landroidx/compose/material/ProgressIndicatorDefaults;
 
-    invoke-virtual {v3}, Landroidx/compose/ui/graphics/Color$Companion;->getTransparent-0d7_KjU()J
+    invoke-virtual {v0}, Landroidx/compose/material/ProgressIndicatorDefaults;->getStrokeWidth-D9Ej5fM()F
 
-    move-result-wide v3
+    move-result v0
 
-    move-wide v12, v3
+    move v10, v0
 
     :cond_1a
-    and-int/lit8 v3, p10, 0x20
+    if-eqz v11, :cond_1b
 
-    if-eqz v3, :cond_1b
+    .line 324
+    sget-object v0, Landroidx/compose/ui/graphics/Color;->Companion:Landroidx/compose/ui/graphics/Color$Companion;
 
-    .line 293
-    sget-object v3, Landroidx/compose/ui/graphics/StrokeCap;->Companion:Landroidx/compose/ui/graphics/StrokeCap$Companion;
+    invoke-virtual {v0}, Landroidx/compose/ui/graphics/Color$Companion;->getTransparent-0d7_KjU()J
 
-    invoke-virtual {v3}, Landroidx/compose/ui/graphics/StrokeCap$Companion;->getButt-KaPHkGw()I
+    move-result-wide v11
 
-    move-result v3
-
-    move v14, v3
+    goto :goto_12
 
     :cond_1b
+    move-wide v11, v12
+
     :goto_12
+    and-int/lit8 v0, p10, 0x20
+
+    if-eqz v0, :cond_1c
+
+    .line 325
+    sget-object v0, Landroidx/compose/ui/graphics/StrokeCap;->Companion:Landroidx/compose/ui/graphics/StrokeCap$Companion;
+
+    invoke-virtual {v0}, Landroidx/compose/ui/graphics/StrokeCap$Companion;->getButt-KaPHkGw()I
+
+    move-result v0
+
+    and-int/2addr v3, v15
+
+    move v14, v0
+
+    :cond_1c
+    :goto_13
     invoke-interface {v2}, Landroidx/compose/runtime/Composer;->endDefaults()V
 
     invoke-static {}, Landroidx/compose/runtime/ComposerKt;->isTraceInProgress()Z
 
-    move-result v3
+    move-result v0
 
-    if-eqz v3, :cond_1c
+    if-eqz v0, :cond_1d
 
-    const/4 v3, -0x1
+    const/4 v0, -0x1
 
-    const-string v4, "androidx.compose.material.CircularProgressIndicator (ProgressIndicator.kt:285)"
+    const-string v4, "androidx.compose.material.CircularProgressIndicator (ProgressIndicator.kt:325)"
 
-    .line 294
-    invoke-static {v0, v9, v3, v4}, Landroidx/compose/runtime/ComposerKt;->traceEventStart(IIILjava/lang/String;)V
+    const v8, 0x681b4850
 
-    :cond_1c
+    .line 326
+    invoke-static {v8, v3, v0, v4}, Landroidx/compose/runtime/ComposerKt;->traceEventStart(IIILjava/lang/String;)V
+
+    :cond_1d
     const/4 v0, 0x0
 
     const/high16 v3, 0x3f800000    # 1.0f
 
-    .line 295
+    .line 327
     invoke-static {v1, v0, v3}, Lkotlin/ranges/RangesKt;->coerceIn(FFF)F
 
     move-result v0
 
-    .line 296
+    .line 328
     invoke-static {}, Landroidx/compose/ui/platform/CompositionLocalsKt;->getLocalDensity()Landroidx/compose/runtime/ProvidableCompositionLocal;
 
     move-result-object v3
@@ -660,7 +685,7 @@
 
     const-string v8, "CC:CompositionLocal.kt#9igjgp"
 
-    .line 606
+    .line 633
     invoke-static {v2, v4, v8}, Landroidx/compose/runtime/ComposerKt;->sourceInformationMarkerStart(Landroidx/compose/runtime/Composer;ILjava/lang/String;)V
 
     invoke-interface {v2, v3}, Landroidx/compose/runtime/Composer;->consume(Landroidx/compose/runtime/CompositionLocal;)Ljava/lang/Object;
@@ -669,10 +694,10 @@
 
     invoke-static {v2}, Landroidx/compose/runtime/ComposerKt;->sourceInformationMarkerEnd(Landroidx/compose/runtime/Composer;)V
 
-    .line 296
+    .line 328
     check-cast v3, Landroidx/compose/ui/unit/Density;
 
-    .line 297
+    .line 329
     new-instance v4, Landroidx/compose/ui/graphics/drawscope/Stroke;
 
     invoke-interface {v3, v10}, Landroidx/compose/ui/unit/Density;->toPx-0680j_4(F)F
@@ -681,7 +706,7 @@
 
     const/16 v8, 0x1a
 
-    const/4 v11, 0x0
+    const/4 v13, 0x0
 
     const/4 v15, 0x0
 
@@ -703,7 +728,7 @@
 
     move/from16 p7, v8
 
-    move-object/from16 p8, v11
+    move-object/from16 p8, v13
 
     invoke-direct/range {p1 .. p8}, Landroidx/compose/ui/graphics/drawscope/Stroke;-><init>(FFIILandroidx/compose/ui/graphics/PathEffect;ILkotlin/jvm/internal/DefaultConstructorMarker;)V
 
@@ -717,7 +742,7 @@
 
     move/from16 p2, v0
 
-    move-object/from16 p3, v11
+    move-object/from16 p3, v13
 
     move/from16 p4, v15
 
@@ -725,24 +750,24 @@
 
     move-object/from16 p6, v8
 
-    .line 301
+    .line 333
     invoke-static/range {p1 .. p6}, Landroidx/compose/foundation/ProgressSemanticsKt;->progressSemantics$default(Landroidx/compose/ui/Modifier;FLkotlin/ranges/ClosedFloatingPointRange;IILjava/lang/Object;)Landroidx/compose/ui/Modifier;
 
     move-result-object v3
 
-    .line 302
+    .line 334
     sget v8, Landroidx/compose/material/ProgressIndicatorKt;->CircularIndicatorDiameter:F
 
     invoke-static {v3, v8}, Landroidx/compose/foundation/layout/SizeKt;->size-3ABfNKs(Landroidx/compose/ui/Modifier;F)Landroidx/compose/ui/Modifier;
 
     move-result-object v3
 
-    .line 299
+    .line 331
     new-instance v8, Landroidx/compose/material/ProgressIndicatorKt$CircularProgressIndicator$1;
 
     move-object/from16 p1, v8
 
-    move-wide/from16 p3, v12
+    move-wide/from16 p3, v11
 
     move-object/from16 p5, v4
 
@@ -760,23 +785,25 @@
 
     move-result v0
 
-    if-eqz v0, :cond_13
+    if-eqz v0, :cond_1e
 
     invoke-static {}, Landroidx/compose/runtime/ComposerKt;->traceEventEnd()V
 
+    :cond_1e
+    move-wide v3, v6
+
+    move-wide v6, v11
+
     goto/16 :goto_f
 
-    .line 310
-    :goto_13
+    .line 342
+    :goto_14
     invoke-interface {v2}, Landroidx/compose/runtime/Composer;->endRestartGroup()Landroidx/compose/runtime/ScopeUpdateScope;
 
     move-result-object v11
 
-    if-nez v11, :cond_1d
+    if-eqz v11, :cond_1f
 
-    goto :goto_14
-
-    :cond_1d
     new-instance v12, Landroidx/compose/material/ProgressIndicatorKt$CircularProgressIndicator$2;
 
     move-object v0, v12
@@ -797,12 +824,12 @@
 
     invoke-interface {v11, v12}, Landroidx/compose/runtime/ScopeUpdateScope;->updateScope(Lkotlin/jvm/functions/Function2;)V
 
-    :goto_14
+    :cond_1f
     return-void
 .end method
 
 .method public static final CircularProgressIndicator-LxG7B9w(Landroidx/compose/ui/Modifier;JFJILandroidx/compose/runtime/Composer;II)V
-    .locals 24
+    .locals 23
 
     move/from16 v8, p8
 
@@ -810,18 +837,16 @@
 
     move-object/from16 v1, p7
 
-    .line 333
+    .line 365
     invoke-interface {v1, v0}, Landroidx/compose/runtime/Composer;->startRestartGroup(I)Landroidx/compose/runtime/Composer;
 
     move-result-object v1
 
-    const-string v2, "C(CircularProgressIndicator)P(2,1:c#ui.graphics.Color,4:c#ui.unit.Dp,0:c#ui.graphics.Color,3:c#ui.graphics.StrokeCap)328@13340L6,*333@13549L7,337@13648L28,339@13806L278,351@14199L230,362@14547L345,374@14927L354,385@15286L647:ProgressIndicator.kt#jmzs0o"
+    const-string v2, "C(CircularProgressIndicator)P(2,1:c#ui.graphics.Color,4:c#ui.unit.Dp,0:c#ui.graphics.Color,3:c#ui.graphics.StrokeCap)360@14808L6,*365@15017L7,369@15116L28,371@15274L278,383@15667L230,394@16015L346,406@16396L355,417@16756L647:ProgressIndicator.kt#jmzs0o"
 
     invoke-static {v1, v2}, Landroidx/compose/runtime/ComposerKt;->sourceInformation(Landroidx/compose/runtime/Composer;Ljava/lang/String;)V
 
     and-int/lit8 v2, p9, 0x1
-
-    const/4 v3, 0x2
 
     if-eqz v2, :cond_0
 
@@ -851,7 +876,7 @@
     goto :goto_0
 
     :cond_1
-    move v5, v3
+    const/4 v5, 0x2
 
     :goto_0
     or-int/2addr v5, v8
@@ -1014,27 +1039,27 @@
     :goto_b
     const v15, 0xb6db
 
-    and-int/2addr v5, v15
+    and-int/2addr v15, v5
 
-    const/16 v15, 0x2492
+    const/16 v3, 0x2492
 
-    if-ne v5, v15, :cond_10
+    if-ne v15, v3, :cond_10
 
     invoke-interface {v1}, Landroidx/compose/runtime/Composer;->getSkipping()Z
 
-    move-result v5
+    move-result v3
 
-    if-nez v5, :cond_f
+    if-nez v3, :cond_f
 
     goto :goto_c
 
-    .line 402
+    .line 434
     :cond_f
     invoke-interface {v1}, Landroidx/compose/runtime/Composer;->skipToGroupEnd()V
 
     move-wide v2, v6
 
-    move/from16 v23, v10
+    move/from16 v22, v10
 
     move-wide v5, v12
 
@@ -1042,132 +1067,156 @@
 
     goto/16 :goto_10
 
-    .line 333
+    .line 365
     :cond_10
     :goto_c
     invoke-interface {v1}, Landroidx/compose/runtime/Composer;->startDefaults()V
 
-    and-int/lit8 v5, v8, 0x1
+    and-int/lit8 v3, v8, 0x1
 
-    if-eqz v5, :cond_13
+    const v15, -0xe001
+
+    if-eqz v3, :cond_15
 
     invoke-interface {v1}, Landroidx/compose/runtime/Composer;->getDefaultsInvalid()Z
 
-    move-result v5
+    move-result v3
 
-    if-eqz v5, :cond_11
+    if-eqz v3, :cond_11
 
     goto :goto_d
 
-    .line 332
+    .line 364
     :cond_11
     invoke-interface {v1}, Landroidx/compose/runtime/Composer;->skipToGroupEnd()V
 
-    move-object v2, v4
+    and-int/lit8 v2, p9, 0x2
+
+    if-eqz v2, :cond_12
+
+    and-int/lit8 v5, v5, -0x71
 
     :cond_12
-    move v4, v10
+    and-int/lit8 v2, p9, 0x10
 
-    move-wide/from16 v20, v12
+    if-eqz v2, :cond_13
 
-    move v5, v14
+    and-int/2addr v5, v15
+
+    :cond_13
+    move-object v2, v4
+
+    :cond_14
+    move v9, v5
+
+    move v3, v10
+
+    move-wide v4, v12
+
+    move/from16 v20, v14
 
     goto :goto_f
 
-    :cond_13
+    :cond_15
     :goto_d
-    if-eqz v2, :cond_14
+    if-eqz v2, :cond_16
 
-    .line 328
+    .line 360
     sget-object v2, Landroidx/compose/ui/Modifier;->Companion:Landroidx/compose/ui/Modifier$Companion;
 
     check-cast v2, Landroidx/compose/ui/Modifier;
 
     goto :goto_e
 
-    :cond_14
+    :cond_16
     move-object v2, v4
 
     :goto_e
-    and-int/lit8 v4, p9, 0x2
+    and-int/lit8 v3, p9, 0x2
 
-    if-eqz v4, :cond_15
+    if-eqz v3, :cond_17
 
-    .line 329
-    sget-object v4, Landroidx/compose/material/MaterialTheme;->INSTANCE:Landroidx/compose/material/MaterialTheme;
+    .line 361
+    sget-object v3, Landroidx/compose/material/MaterialTheme;->INSTANCE:Landroidx/compose/material/MaterialTheme;
 
-    const/4 v5, 0x6
+    const/4 v4, 0x6
 
-    invoke-virtual {v4, v1, v5}, Landroidx/compose/material/MaterialTheme;->getColors(Landroidx/compose/runtime/Composer;I)Landroidx/compose/material/Colors;
+    invoke-virtual {v3, v1, v4}, Landroidx/compose/material/MaterialTheme;->getColors(Landroidx/compose/runtime/Composer;I)Landroidx/compose/material/Colors;
 
-    move-result-object v4
+    move-result-object v3
 
-    invoke-virtual {v4}, Landroidx/compose/material/Colors;->getPrimary-0d7_KjU()J
+    invoke-virtual {v3}, Landroidx/compose/material/Colors;->getPrimary-0d7_KjU()J
 
-    move-result-wide v4
+    move-result-wide v3
 
-    move-wide v6, v4
+    and-int/lit8 v5, v5, -0x71
 
-    :cond_15
-    if-eqz v9, :cond_16
-
-    .line 330
-    sget-object v4, Landroidx/compose/material/ProgressIndicatorDefaults;->INSTANCE:Landroidx/compose/material/ProgressIndicatorDefaults;
-
-    invoke-virtual {v4}, Landroidx/compose/material/ProgressIndicatorDefaults;->getStrokeWidth-D9Ej5fM()F
-
-    move-result v4
-
-    move v10, v4
-
-    :cond_16
-    if-eqz v11, :cond_17
-
-    .line 331
-    sget-object v4, Landroidx/compose/ui/graphics/Color;->Companion:Landroidx/compose/ui/graphics/Color$Companion;
-
-    invoke-virtual {v4}, Landroidx/compose/ui/graphics/Color$Companion;->getTransparent-0d7_KjU()J
-
-    move-result-wide v4
-
-    move-wide v12, v4
+    move-wide v6, v3
 
     :cond_17
-    and-int/lit8 v4, p9, 0x10
+    if-eqz v9, :cond_18
 
-    if-eqz v4, :cond_12
+    .line 362
+    sget-object v3, Landroidx/compose/material/ProgressIndicatorDefaults;->INSTANCE:Landroidx/compose/material/ProgressIndicatorDefaults;
 
-    .line 332
-    sget-object v4, Landroidx/compose/ui/graphics/StrokeCap;->Companion:Landroidx/compose/ui/graphics/StrokeCap$Companion;
+    invoke-virtual {v3}, Landroidx/compose/material/ProgressIndicatorDefaults;->getStrokeWidth-D9Ej5fM()F
 
-    invoke-virtual {v4}, Landroidx/compose/ui/graphics/StrokeCap$Companion;->getSquare-KaPHkGw()I
+    move-result v3
 
-    move-result v4
+    move v10, v3
 
-    move v5, v4
+    :cond_18
+    if-eqz v11, :cond_19
 
-    move v4, v10
+    .line 363
+    sget-object v3, Landroidx/compose/ui/graphics/Color;->Companion:Landroidx/compose/ui/graphics/Color$Companion;
 
-    move-wide/from16 v20, v12
+    invoke-virtual {v3}, Landroidx/compose/ui/graphics/Color$Companion;->getTransparent-0d7_KjU()J
+
+    move-result-wide v3
+
+    move-wide v12, v3
+
+    :cond_19
+    and-int/lit8 v3, p9, 0x10
+
+    if-eqz v3, :cond_14
+
+    .line 364
+    sget-object v3, Landroidx/compose/ui/graphics/StrokeCap;->Companion:Landroidx/compose/ui/graphics/StrokeCap$Companion;
+
+    invoke-virtual {v3}, Landroidx/compose/ui/graphics/StrokeCap$Companion;->getSquare-KaPHkGw()I
+
+    move-result v3
+
+    and-int/2addr v5, v15
+
+    move/from16 v20, v3
+
+    move v9, v5
+
+    move v3, v10
+
+    move-wide v4, v12
 
     :goto_f
     invoke-interface {v1}, Landroidx/compose/runtime/Composer;->endDefaults()V
 
     invoke-static {}, Landroidx/compose/runtime/ComposerKt;->isTraceInProgress()Z
 
-    move-result v9
+    move-result v10
 
-    if-eqz v9, :cond_18
+    if-eqz v10, :cond_1a
 
-    const/4 v9, -0x1
+    const/4 v10, -0x1
 
-    const-string v10, "androidx.compose.material.CircularProgressIndicator (ProgressIndicator.kt:326)"
+    const-string v11, "androidx.compose.material.CircularProgressIndicator (ProgressIndicator.kt:364)"
 
-    .line 333
-    invoke-static {v0, v8, v9, v10}, Landroidx/compose/runtime/ComposerKt;->traceEventStart(IIILjava/lang/String;)V
+    .line 365
+    invoke-static {v0, v9, v10, v11}, Landroidx/compose/runtime/ComposerKt;->traceEventStart(IIILjava/lang/String;)V
 
-    .line 334
-    :cond_18
+    .line 366
+    :cond_1a
     invoke-static {}, Landroidx/compose/ui/platform/CompositionLocalsKt;->getLocalDensity()Landroidx/compose/runtime/ProvidableCompositionLocal;
 
     move-result-object v0
@@ -1178,7 +1227,7 @@
 
     const-string v10, "CC:CompositionLocal.kt#9igjgp"
 
-    .line 607
+    .line 634
     invoke-static {v1, v9, v10}, Landroidx/compose/runtime/ComposerKt;->sourceInformationMarkerStart(Landroidx/compose/runtime/Composer;ILjava/lang/String;)V
 
     invoke-interface {v1, v0}, Landroidx/compose/runtime/Composer;->consume(Landroidx/compose/runtime/CompositionLocal;)Ljava/lang/Object;
@@ -1187,43 +1236,31 @@
 
     invoke-static {v1}, Landroidx/compose/runtime/ComposerKt;->sourceInformationMarkerEnd(Landroidx/compose/runtime/Composer;)V
 
-    .line 334
+    .line 366
     check-cast v0, Landroidx/compose/ui/unit/Density;
 
-    .line 335
+    .line 367
     new-instance v18, Landroidx/compose/ui/graphics/drawscope/Stroke;
 
-    invoke-interface {v0, v4}, Landroidx/compose/ui/unit/Density;->toPx-0680j_4(F)F
+    invoke-interface {v0, v3}, Landroidx/compose/ui/unit/Density;->toPx-0680j_4(F)F
 
-    move-result v0
+    move-result v10
 
-    const/16 v9, 0x1a
+    const/16 v15, 0x1a
 
-    const/4 v10, 0x0
+    const/16 v16, 0x0
 
     const/4 v11, 0x0
 
-    const/4 v12, 0x0
-
     const/4 v13, 0x0
 
-    move-object/from16 p0, v18
+    const/4 v14, 0x0
 
-    move/from16 p1, v0
+    move-object/from16 v9, v18
 
-    move/from16 p2, v11
+    move/from16 v12, v20
 
-    move/from16 p3, v5
-
-    move/from16 p4, v12
-
-    move-object/from16 p5, v13
-
-    move/from16 p6, v9
-
-    move-object/from16 p7, v10
-
-    invoke-direct/range {p0 .. p7}, Landroidx/compose/ui/graphics/drawscope/Stroke;-><init>(FFIILandroidx/compose/ui/graphics/PathEffect;ILkotlin/jvm/internal/DefaultConstructorMarker;)V
+    invoke-direct/range {v9 .. v16}, Landroidx/compose/ui/graphics/drawscope/Stroke;-><init>(FFIILandroidx/compose/ui/graphics/PathEffect;ILkotlin/jvm/internal/DefaultConstructorMarker;)V
 
     const/4 v0, 0x0
 
@@ -1231,24 +1268,24 @@
 
     const/4 v9, 0x1
 
-    .line 338
+    .line 370
     invoke-static {v0, v1, v15, v9}, Landroidx/compose/animation/core/InfiniteTransitionKt;->rememberInfiniteTransition(Ljava/lang/String;Landroidx/compose/runtime/Composer;II)Landroidx/compose/animation/core/InfiniteTransition;
 
     move-result-object v19
 
-    .line 341
+    .line 373
     invoke-static {v15}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object v10
 
     const/4 v9, 0x5
 
-    .line 342
+    .line 374
     invoke-static {v9}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object v11
 
-    .line 343
+    .line 375
     sget-object v9, Lkotlin/jvm/internal/IntCompanionObject;->INSTANCE:Lkotlin/jvm/internal/IntCompanionObject;
 
     invoke-static {v9}, Landroidx/compose/animation/core/VectorConvertersKt;->getVectorConverter(Lkotlin/jvm/internal/IntCompanionObject;)Landroidx/compose/animation/core/TwoWayConverter;
@@ -1257,13 +1294,15 @@
 
     const/16 v9, 0x1a04
 
-    .line 347
+    .line 379
     invoke-static {}, Landroidx/compose/animation/core/EasingKt;->getLinearEasing()Landroidx/compose/animation/core/Easing;
 
     move-result-object v13
 
-    .line 345
-    invoke-static {v9, v15, v13, v3, v0}, Landroidx/compose/animation/core/AnimationSpecKt;->tween$default(IILandroidx/compose/animation/core/Easing;ILjava/lang/Object;)Landroidx/compose/animation/core/TweenSpec;
+    const/4 v14, 0x2
+
+    .line 377
+    invoke-static {v9, v15, v13, v14, v0}, Landroidx/compose/animation/core/AnimationSpecKt;->tween$default(IILandroidx/compose/animation/core/Easing;ILjava/lang/Object;)Landroidx/compose/animation/core/TweenSpec;
 
     move-result-object v9
 
@@ -1273,21 +1312,19 @@
 
     const/4 v14, 0x0
 
-    const/16 v16, 0x0
-
-    const-wide/16 v22, 0x0
+    const-wide/16 v21, 0x0
 
     move-object/from16 p0, v9
 
     move-object/from16 p1, v16
 
-    move-wide/from16 p2, v22
+    move-wide/from16 p2, v21
 
     move/from16 p4, v13
 
     move-object/from16 p5, v14
 
-    .line 344
+    .line 376
     invoke-static/range {p0 .. p5}, Landroidx/compose/animation/core/AnimationSpecKt;->infiniteRepeatable-9IiC70o$default(Landroidx/compose/animation/core/DurationBasedAnimationSpec;Landroidx/compose/animation/core/RepeatMode;JILjava/lang/Object;)Landroidx/compose/animation/core/InfiniteRepeatableSpec;
 
     move-result-object v13
@@ -1310,315 +1347,306 @@
 
     move-object v15, v1
 
-    .line 340
+    .line 372
     invoke-static/range {v9 .. v17}, Landroidx/compose/animation/core/InfiniteTransitionKt;->animateValue(Landroidx/compose/animation/core/InfiniteTransition;Ljava/lang/Object;Ljava/lang/Object;Landroidx/compose/animation/core/TwoWayConverter;Landroidx/compose/animation/core/InfiniteRepeatableSpec;Ljava/lang/String;Landroidx/compose/runtime/Composer;II)Landroidx/compose/runtime/State;
 
     move-result-object v16
 
     const/16 v9, 0x534
 
-    .line 358
+    .line 390
     invoke-static {}, Landroidx/compose/animation/core/EasingKt;->getLinearEasing()Landroidx/compose/animation/core/Easing;
 
     move-result-object v10
 
+    const/4 v11, 0x2
+
     const/4 v14, 0x0
 
-    .line 356
-    invoke-static {v9, v14, v10, v3, v0}, Landroidx/compose/animation/core/AnimationSpecKt;->tween$default(IILandroidx/compose/animation/core/Easing;ILjava/lang/Object;)Landroidx/compose/animation/core/TweenSpec;
+    .line 388
+    invoke-static {v9, v14, v10, v11, v0}, Landroidx/compose/animation/core/AnimationSpecKt;->tween$default(IILandroidx/compose/animation/core/Easing;ILjava/lang/Object;)Landroidx/compose/animation/core/TweenSpec;
 
     move-result-object v0
 
     check-cast v0, Landroidx/compose/animation/core/DurationBasedAnimationSpec;
 
-    const/4 v3, 0x6
-
-    const/4 v9, 0x0
+    const/4 v9, 0x6
 
     const/4 v10, 0x0
 
-    const-wide/16 v11, 0x0
+    const/4 v11, 0x0
+
+    const-wide/16 v12, 0x0
 
     move-object/from16 p0, v0
 
-    move-object/from16 p1, v10
+    move-object/from16 p1, v11
 
-    move-wide/from16 p2, v11
+    move-wide/from16 p2, v12
 
-    move/from16 p4, v3
+    move/from16 p4, v9
 
-    move-object/from16 p5, v9
+    move-object/from16 p5, v10
 
-    .line 355
+    .line 387
     invoke-static/range {p0 .. p5}, Landroidx/compose/animation/core/AnimationSpecKt;->infiniteRepeatable-9IiC70o$default(Landroidx/compose/animation/core/DurationBasedAnimationSpec;Landroidx/compose/animation/core/RepeatMode;JILjava/lang/Object;)Landroidx/compose/animation/core/InfiniteRepeatableSpec;
 
     move-result-object v0
 
-    sget v3, Landroidx/compose/animation/core/InfiniteTransition;->$stable:I
+    sget v9, Landroidx/compose/animation/core/InfiniteTransition;->$stable:I
 
-    or-int/lit16 v3, v3, 0x1b0
+    or-int/lit16 v9, v9, 0x1b0
 
-    sget v9, Landroidx/compose/animation/core/InfiniteRepeatableSpec;->$stable:I
+    sget v10, Landroidx/compose/animation/core/InfiniteRepeatableSpec;->$stable:I
 
-    shl-int/lit8 v9, v9, 0x9
+    shl-int/lit8 v10, v10, 0x9
 
-    or-int/2addr v3, v9
+    or-int/2addr v9, v10
 
-    const/16 v9, 0x8
+    const/16 v10, 0x8
 
-    const/4 v10, 0x0
+    const/4 v11, 0x0
 
-    const/high16 v11, 0x438f0000    # 286.0f
+    const/high16 v12, 0x438f0000    # 286.0f
+
+    const/4 v13, 0x0
+
+    move-object/from16 p0, v19
+
+    move/from16 p1, v11
+
+    move/from16 p2, v12
+
+    move-object/from16 p3, v0
+
+    move-object/from16 p4, v13
+
+    move-object/from16 p5, v1
+
+    move/from16 p6, v9
+
+    move/from16 p7, v10
+
+    .line 384
+    invoke-static/range {p0 .. p7}, Landroidx/compose/animation/core/InfiniteTransitionKt;->animateFloat(Landroidx/compose/animation/core/InfiniteTransition;FFLandroidx/compose/animation/core/InfiniteRepeatableSpec;Ljava/lang/String;Landroidx/compose/runtime/Composer;II)Landroidx/compose/runtime/State;
+
+    move-result-object v0
+
+    .line 399
+    sget-object v9, Landroidx/compose/material/ProgressIndicatorKt$CircularProgressIndicator$endAngle$2;->INSTANCE:Landroidx/compose/material/ProgressIndicatorKt$CircularProgressIndicator$endAngle$2;
+
+    check-cast v9, Lkotlin/jvm/functions/Function1;
+
+    invoke-static {v9}, Landroidx/compose/animation/core/AnimationSpecKt;->keyframes(Lkotlin/jvm/functions/Function1;)Landroidx/compose/animation/core/KeyframesSpec;
+
+    move-result-object v9
+
+    check-cast v9, Landroidx/compose/animation/core/DurationBasedAnimationSpec;
+
+    const/4 v10, 0x6
+
+    const/4 v11, 0x0
+
+    const/4 v12, 0x0
+
+    move-object/from16 p0, v9
+
+    move-object/from16 p1, v12
+
+    move-wide/from16 p2, v21
+
+    move/from16 p4, v10
+
+    move-object/from16 p5, v11
+
+    .line 398
+    invoke-static/range {p0 .. p5}, Landroidx/compose/animation/core/AnimationSpecKt;->infiniteRepeatable-9IiC70o$default(Landroidx/compose/animation/core/DurationBasedAnimationSpec;Landroidx/compose/animation/core/RepeatMode;JILjava/lang/Object;)Landroidx/compose/animation/core/InfiniteRepeatableSpec;
+
+    move-result-object v9
+
+    sget v10, Landroidx/compose/animation/core/InfiniteTransition;->$stable:I
+
+    or-int/lit16 v10, v10, 0x1b0
+
+    sget v11, Landroidx/compose/animation/core/InfiniteRepeatableSpec;->$stable:I
+
+    shl-int/lit8 v11, v11, 0x9
+
+    or-int/2addr v10, v11
+
+    const/16 v11, 0x8
+
+    const/4 v12, 0x0
+
+    const/high16 v13, 0x43910000    # 290.0f
+
+    const/4 v15, 0x0
+
+    move-object/from16 p0, v19
+
+    move/from16 p1, v12
+
+    move/from16 p2, v13
+
+    move-object/from16 p3, v9
+
+    move-object/from16 p4, v15
+
+    move-object/from16 p5, v1
+
+    move/from16 p6, v10
+
+    move/from16 p7, v11
+
+    .line 395
+    invoke-static/range {p0 .. p7}, Landroidx/compose/animation/core/InfiniteTransitionKt;->animateFloat(Landroidx/compose/animation/core/InfiniteTransition;FFLandroidx/compose/animation/core/InfiniteRepeatableSpec;Ljava/lang/String;Landroidx/compose/runtime/Composer;II)Landroidx/compose/runtime/State;
+
+    move-result-object v17
+
+    .line 411
+    sget-object v9, Landroidx/compose/material/ProgressIndicatorKt$CircularProgressIndicator$startAngle$2;->INSTANCE:Landroidx/compose/material/ProgressIndicatorKt$CircularProgressIndicator$startAngle$2;
+
+    check-cast v9, Lkotlin/jvm/functions/Function1;
+
+    invoke-static {v9}, Landroidx/compose/animation/core/AnimationSpecKt;->keyframes(Lkotlin/jvm/functions/Function1;)Landroidx/compose/animation/core/KeyframesSpec;
+
+    move-result-object v9
+
+    check-cast v9, Landroidx/compose/animation/core/DurationBasedAnimationSpec;
+
+    const/4 v10, 0x6
+
+    const/4 v11, 0x0
+
+    const/4 v12, 0x0
+
+    move-object/from16 p0, v9
+
+    move-object/from16 p1, v12
+
+    move-wide/from16 p2, v21
+
+    move/from16 p4, v10
+
+    move-object/from16 p5, v11
+
+    .line 410
+    invoke-static/range {p0 .. p5}, Landroidx/compose/animation/core/AnimationSpecKt;->infiniteRepeatable-9IiC70o$default(Landroidx/compose/animation/core/DurationBasedAnimationSpec;Landroidx/compose/animation/core/RepeatMode;JILjava/lang/Object;)Landroidx/compose/animation/core/InfiniteRepeatableSpec;
+
+    move-result-object v9
+
+    sget v10, Landroidx/compose/animation/core/InfiniteTransition;->$stable:I
+
+    or-int/lit16 v10, v10, 0x1b0
+
+    sget v11, Landroidx/compose/animation/core/InfiniteRepeatableSpec;->$stable:I
+
+    shl-int/lit8 v11, v11, 0x9
+
+    or-int/2addr v10, v11
+
+    const/16 v11, 0x8
 
     const/4 v12, 0x0
 
     move-object/from16 p0, v19
 
-    move/from16 p1, v10
+    move/from16 p1, v12
 
-    move/from16 p2, v11
+    move/from16 p2, v13
 
-    move-object/from16 p3, v0
+    move-object/from16 p3, v9
 
-    move-object/from16 p4, v12
-
-    move-object/from16 p5, v1
-
-    move/from16 p6, v3
-
-    move/from16 p7, v9
-
-    .line 352
-    invoke-static/range {p0 .. p7}, Landroidx/compose/animation/core/InfiniteTransitionKt;->animateFloat(Landroidx/compose/animation/core/InfiniteTransition;FFLandroidx/compose/animation/core/InfiniteRepeatableSpec;Ljava/lang/String;Landroidx/compose/runtime/Composer;II)Landroidx/compose/runtime/State;
-
-    move-result-object v0
-
-    .line 367
-    sget-object v3, Landroidx/compose/material/ProgressIndicatorKt$CircularProgressIndicator$endAngle$2;->INSTANCE:Landroidx/compose/material/ProgressIndicatorKt$CircularProgressIndicator$endAngle$2;
-
-    check-cast v3, Lkotlin/jvm/functions/Function1;
-
-    invoke-static {v3}, Landroidx/compose/animation/core/AnimationSpecKt;->keyframes(Lkotlin/jvm/functions/Function1;)Landroidx/compose/animation/core/KeyframesSpec;
-
-    move-result-object v3
-
-    check-cast v3, Landroidx/compose/animation/core/DurationBasedAnimationSpec;
-
-    const/4 v9, 0x6
-
-    const/4 v10, 0x0
-
-    const/4 v11, 0x0
-
-    const-wide/16 v12, 0x0
-
-    move-object/from16 p0, v3
-
-    move-object/from16 p1, v11
-
-    move-wide/from16 p2, v12
-
-    move/from16 p4, v9
-
-    move-object/from16 p5, v10
-
-    .line 366
-    invoke-static/range {p0 .. p5}, Landroidx/compose/animation/core/AnimationSpecKt;->infiniteRepeatable-9IiC70o$default(Landroidx/compose/animation/core/DurationBasedAnimationSpec;Landroidx/compose/animation/core/RepeatMode;JILjava/lang/Object;)Landroidx/compose/animation/core/InfiniteRepeatableSpec;
-
-    move-result-object v3
-
-    sget v9, Landroidx/compose/animation/core/InfiniteTransition;->$stable:I
-
-    or-int/lit16 v9, v9, 0x1b0
-
-    sget v10, Landroidx/compose/animation/core/InfiniteRepeatableSpec;->$stable:I
-
-    shl-int/lit8 v10, v10, 0x9
-
-    or-int/2addr v9, v10
-
-    const/16 v10, 0x8
-
-    const/4 v11, 0x0
-
-    const/high16 v12, 0x43910000    # 290.0f
-
-    const/4 v13, 0x0
-
-    move-object/from16 p0, v19
-
-    move/from16 p1, v11
-
-    move/from16 p2, v12
-
-    move-object/from16 p3, v3
-
-    move-object/from16 p4, v13
+    move-object/from16 p4, v15
 
     move-object/from16 p5, v1
 
-    move/from16 p6, v9
+    move/from16 p6, v10
 
-    move/from16 p7, v10
+    move/from16 p7, v11
 
-    .line 363
+    .line 407
     invoke-static/range {p0 .. p7}, Landroidx/compose/animation/core/InfiniteTransitionKt;->animateFloat(Landroidx/compose/animation/core/InfiniteTransition;FFLandroidx/compose/animation/core/InfiniteRepeatableSpec;Ljava/lang/String;Landroidx/compose/runtime/Composer;II)Landroidx/compose/runtime/State;
 
-    move-result-object v17
+    move-result-object v19
 
-    .line 379
-    sget-object v3, Landroidx/compose/material/ProgressIndicatorKt$CircularProgressIndicator$startAngle$2;->INSTANCE:Landroidx/compose/material/ProgressIndicatorKt$CircularProgressIndicator$startAngle$2;
-
-    check-cast v3, Lkotlin/jvm/functions/Function1;
-
-    invoke-static {v3}, Landroidx/compose/animation/core/AnimationSpecKt;->keyframes(Lkotlin/jvm/functions/Function1;)Landroidx/compose/animation/core/KeyframesSpec;
-
-    move-result-object v3
-
-    check-cast v3, Landroidx/compose/animation/core/DurationBasedAnimationSpec;
-
-    const/4 v9, 0x6
-
-    const/4 v10, 0x0
-
-    const/4 v11, 0x0
-
-    const-wide/16 v12, 0x0
-
-    move-object/from16 p0, v3
-
-    move-object/from16 p1, v11
-
-    move-wide/from16 p2, v12
-
-    move/from16 p4, v9
-
-    move-object/from16 p5, v10
-
-    .line 378
-    invoke-static/range {p0 .. p5}, Landroidx/compose/animation/core/AnimationSpecKt;->infiniteRepeatable-9IiC70o$default(Landroidx/compose/animation/core/DurationBasedAnimationSpec;Landroidx/compose/animation/core/RepeatMode;JILjava/lang/Object;)Landroidx/compose/animation/core/InfiniteRepeatableSpec;
-
-    move-result-object v3
-
-    sget v9, Landroidx/compose/animation/core/InfiniteTransition;->$stable:I
-
-    or-int/lit16 v9, v9, 0x1b0
-
-    sget v10, Landroidx/compose/animation/core/InfiniteRepeatableSpec;->$stable:I
-
-    shl-int/lit8 v10, v10, 0x9
-
-    or-int/2addr v9, v10
-
-    const/16 v10, 0x8
-
-    const/4 v11, 0x0
-
-    const/high16 v12, 0x43910000    # 290.0f
-
-    const/4 v13, 0x0
-
-    move-object/from16 p0, v19
-
-    move/from16 p1, v11
-
-    move/from16 p2, v12
-
-    move-object/from16 p3, v3
-
-    move-object/from16 p4, v13
-
-    move-object/from16 p5, v1
-
-    move/from16 p6, v9
-
-    move/from16 p7, v10
-
-    .line 375
-    invoke-static/range {p0 .. p7}, Landroidx/compose/animation/core/InfiniteTransitionKt;->animateFloat(Landroidx/compose/animation/core/InfiniteTransition;FFLandroidx/compose/animation/core/InfiniteRepeatableSpec;Ljava/lang/String;Landroidx/compose/runtime/Composer;II)Landroidx/compose/runtime/State;
-
-    move-result-object v3
-
-    .line 388
+    .line 420
     invoke-static {v2}, Landroidx/compose/foundation/ProgressSemanticsKt;->progressSemantics(Landroidx/compose/ui/Modifier;)Landroidx/compose/ui/Modifier;
 
     move-result-object v9
 
-    .line 389
+    .line 421
     sget v10, Landroidx/compose/material/ProgressIndicatorKt;->CircularIndicatorDiameter:F
 
     invoke-static {v9, v10}, Landroidx/compose/foundation/layout/SizeKt;->size-3ABfNKs(Landroidx/compose/ui/Modifier;F)Landroidx/compose/ui/Modifier;
 
     move-result-object v15
 
-    .line 386
-    new-instance v22, Landroidx/compose/material/ProgressIndicatorKt$CircularProgressIndicator$3;
+    .line 418
+    new-instance v21, Landroidx/compose/material/ProgressIndicatorKt$CircularProgressIndicator$3;
 
-    move-object/from16 v9, v22
+    move-object/from16 v9, v21
 
-    move-wide/from16 v10, v20
+    move-wide v10, v4
 
     move-object/from16 v12, v18
 
-    move v13, v4
+    move v13, v3
 
     move-object/from16 p0, v2
 
-    move/from16 v23, v4
+    move/from16 v22, v3
 
-    move v4, v14
+    move v3, v14
 
     move-object v2, v15
 
     move-wide v14, v6
 
-    move-object/from16 v18, v3
+    move-object/from16 v18, v19
 
     move-object/from16 v19, v0
 
     invoke-direct/range {v9 .. v19}, Landroidx/compose/material/ProgressIndicatorKt$CircularProgressIndicator$3;-><init>(JLandroidx/compose/ui/graphics/drawscope/Stroke;FJLandroidx/compose/runtime/State;Landroidx/compose/runtime/State;Landroidx/compose/runtime/State;Landroidx/compose/runtime/State;)V
 
-    move-object/from16 v0, v22
+    move-object/from16 v0, v21
 
     check-cast v0, Lkotlin/jvm/functions/Function1;
 
-    invoke-static {v2, v0, v1, v4}, Landroidx/compose/foundation/CanvasKt;->Canvas(Landroidx/compose/ui/Modifier;Lkotlin/jvm/functions/Function1;Landroidx/compose/runtime/Composer;I)V
+    invoke-static {v2, v0, v1, v3}, Landroidx/compose/foundation/CanvasKt;->Canvas(Landroidx/compose/ui/Modifier;Lkotlin/jvm/functions/Function1;Landroidx/compose/runtime/Composer;I)V
 
     invoke-static {}, Landroidx/compose/runtime/ComposerKt;->isTraceInProgress()Z
 
     move-result v0
 
-    if-eqz v0, :cond_19
+    if-eqz v0, :cond_1b
 
     invoke-static {}, Landroidx/compose/runtime/ComposerKt;->traceEventEnd()V
 
-    :cond_19
-    move-object/from16 v4, p0
-
+    :cond_1b
     move-wide v2, v6
 
-    move v7, v5
+    move/from16 v7, v20
 
-    move-wide/from16 v5, v20
+    move-wide v5, v4
 
-    .line 402
+    move-object/from16 v4, p0
+
+    .line 434
     :goto_10
     invoke-interface {v1}, Landroidx/compose/runtime/Composer;->endRestartGroup()Landroidx/compose/runtime/ScopeUpdateScope;
 
     move-result-object v10
 
-    if-nez v10, :cond_1a
+    if-eqz v10, :cond_1c
 
-    goto :goto_11
-
-    :cond_1a
     new-instance v11, Landroidx/compose/material/ProgressIndicatorKt$CircularProgressIndicator$4;
 
     move-object v0, v11
 
     move-object v1, v4
 
-    move/from16 v4, v23
+    move/from16 v4, v22
 
     move/from16 v8, p8
 
@@ -1630,7 +1658,7 @@
 
     invoke-interface {v10, v11}, Landroidx/compose/runtime/ScopeUpdateScope;->updateScope(Lkotlin/jvm/functions/Function2;)V
 
-    :goto_11
+    :cond_1c
     return-void
 .end method
 
@@ -1647,12 +1675,12 @@
 
     move-object/from16 v1, p5
 
-    .line 411
+    .line 443
     invoke-interface {v1, v0}, Landroidx/compose/runtime/Composer;->startRestartGroup(I)Landroidx/compose/runtime/Composer;
 
     move-result-object v1
 
-    const-string v2, "C(CircularProgressIndicator)P(2,1,0:c#ui.graphics.Color,3:c#ui.unit.Dp)408@16153L6,410@16233L157:ProgressIndicator.kt#jmzs0o"
+    const-string v2, "C(CircularProgressIndicator)P(2,1,0:c#ui.graphics.Color,3:c#ui.unit.Dp)440@17623L6,442@17703L157:ProgressIndicator.kt#jmzs0o"
 
     invoke-static {v1, v2}, Landroidx/compose/runtime/ComposerKt;->sourceInformation(Landroidx/compose/runtime/Composer;Ljava/lang/String;)V
 
@@ -1824,7 +1852,7 @@
 
     goto :goto_a
 
-    .line 418
+    .line 450
     :cond_c
     invoke-interface {v1}, Landroidx/compose/runtime/Composer;->skipToGroupEnd()V
 
@@ -1836,7 +1864,7 @@
 
     goto/16 :goto_e
 
-    .line 411
+    .line 443
     :cond_d
     :goto_a
     invoke-interface {v1}, Landroidx/compose/runtime/Composer;->startDefaults()V
@@ -1853,7 +1881,7 @@
 
     goto :goto_b
 
-    .line 410
+    .line 442
     :cond_e
     invoke-interface {v1}, Landroidx/compose/runtime/Composer;->skipToGroupEnd()V
 
@@ -1877,7 +1905,7 @@
     :goto_b
     if-eqz v4, :cond_12
 
-    .line 408
+    .line 440
     sget-object v4, Landroidx/compose/ui/Modifier;->Companion:Landroidx/compose/ui/Modifier$Companion;
 
     check-cast v4, Landroidx/compose/ui/Modifier;
@@ -1892,7 +1920,7 @@
 
     if-eqz v5, :cond_13
 
-    .line 409
+    .line 441
     sget-object v5, Landroidx/compose/material/MaterialTheme;->INSTANCE:Landroidx/compose/material/MaterialTheme;
 
     const/4 v7, 0x6
@@ -1910,7 +1938,7 @@
     :cond_13
     if-eqz v9, :cond_10
 
-    .line 410
+    .line 442
     sget-object v5, Landroidx/compose/material/ProgressIndicatorDefaults;->INSTANCE:Landroidx/compose/material/ProgressIndicatorDefaults;
 
     invoke-virtual {v5}, Landroidx/compose/material/ProgressIndicatorDefaults;->getStrokeWidth-D9Ej5fM()F
@@ -1930,12 +1958,12 @@
 
     const/4 v7, -0x1
 
-    const-string v8, "androidx.compose.material.CircularProgressIndicator (ProgressIndicator.kt:405)"
+    const-string v8, "androidx.compose.material.CircularProgressIndicator (ProgressIndicator.kt:442)"
 
-    .line 411
+    .line 443
     invoke-static {v0, v3, v7, v8}, Landroidx/compose/runtime/ComposerKt;->traceEventStart(IIILjava/lang/String;)V
 
-    .line 416
+    .line 448
     :cond_14
     sget-object v0, Landroidx/compose/ui/graphics/Color;->Companion:Landroidx/compose/ui/graphics/Color$Companion;
 
@@ -1943,7 +1971,7 @@
 
     move-result-wide v12
 
-    .line 417
+    .line 449
     sget-object v0, Landroidx/compose/ui/graphics/StrokeCap;->Companion:Landroidx/compose/ui/graphics/StrokeCap$Companion;
 
     invoke-virtual {v0}, Landroidx/compose/ui/graphics/StrokeCap$Companion;->getButt-KaPHkGw()I
@@ -1978,7 +2006,7 @@
 
     move-object v15, v1
 
-    .line 411
+    .line 443
     invoke-static/range {v7 .. v17}, Landroidx/compose/material/ProgressIndicatorKt;->CircularProgressIndicator-DUhRLBM(FLandroidx/compose/ui/Modifier;JFJILandroidx/compose/runtime/Composer;II)V
 
     invoke-static {}, Landroidx/compose/runtime/ComposerKt;->isTraceInProgress()Z
@@ -1989,18 +2017,15 @@
 
     invoke-static {}, Landroidx/compose/runtime/ComposerKt;->traceEventEnd()V
 
-    .line 418
+    .line 450
     :cond_15
     :goto_e
     invoke-interface {v1}, Landroidx/compose/runtime/Composer;->endRestartGroup()Landroidx/compose/runtime/ScopeUpdateScope;
 
     move-result-object v8
 
-    if-nez v8, :cond_16
+    if-eqz v8, :cond_16
 
-    goto :goto_f
-
-    :cond_16
     new-instance v9, Landroidx/compose/material/ProgressIndicatorKt$CircularProgressIndicator$5;
 
     move-object v0, v9
@@ -2021,7 +2046,7 @@
 
     invoke-interface {v8, v9}, Landroidx/compose/runtime/ScopeUpdateScope;->updateScope(Lkotlin/jvm/functions/Function2;)V
 
-    :goto_f
+    :cond_16
     return-void
 .end method
 
@@ -2038,12 +2063,12 @@
 
     move-object/from16 v1, p4
 
-    .line 426
+    .line 458
     invoke-interface {v1, v0}, Landroidx/compose/runtime/Composer;->startRestartGroup(I)Landroidx/compose/runtime/Composer;
 
     move-result-object v1
 
-    const-string v2, "C(CircularProgressIndicator)P(1,0:c#ui.graphics.Color,2:c#ui.unit.Dp)423@16587L6,425@16667L145:ProgressIndicator.kt#jmzs0o"
+    const-string v2, "C(CircularProgressIndicator)P(1,0:c#ui.graphics.Color,2:c#ui.unit.Dp)455@18057L6,457@18137L145:ProgressIndicator.kt#jmzs0o"
 
     invoke-static {v1, v2}, Landroidx/compose/runtime/ComposerKt;->sourceInformation(Landroidx/compose/runtime/Composer;Ljava/lang/String;)V
 
@@ -2177,7 +2202,7 @@
 
     goto :goto_7
 
-    .line 432
+    .line 464
     :cond_9
     invoke-interface {v1}, Landroidx/compose/runtime/Composer;->skipToGroupEnd()V
 
@@ -2187,7 +2212,7 @@
 
     goto/16 :goto_c
 
-    .line 426
+    .line 458
     :cond_a
     :goto_7
     invoke-interface {v1}, Landroidx/compose/runtime/Composer;->startDefaults()V
@@ -2204,7 +2229,7 @@
 
     goto :goto_9
 
-    .line 425
+    .line 457
     :cond_b
     invoke-interface {v1}, Landroidx/compose/runtime/Composer;->skipToGroupEnd()V
 
@@ -2233,7 +2258,7 @@
     :goto_9
     if-eqz v2, :cond_f
 
-    .line 423
+    .line 455
     sget-object v2, Landroidx/compose/ui/Modifier;->Companion:Landroidx/compose/ui/Modifier$Companion;
 
     check-cast v2, Landroidx/compose/ui/Modifier;
@@ -2248,7 +2273,7 @@
 
     if-eqz v3, :cond_10
 
-    .line 424
+    .line 456
     sget-object v3, Landroidx/compose/material/MaterialTheme;->INSTANCE:Landroidx/compose/material/MaterialTheme;
 
     const/4 v6, 0x6
@@ -2266,7 +2291,7 @@
     :cond_10
     if-eqz v8, :cond_d
 
-    .line 425
+    .line 457
     sget-object v3, Landroidx/compose/material/ProgressIndicatorDefaults;->INSTANCE:Landroidx/compose/material/ProgressIndicatorDefaults;
 
     invoke-virtual {v3}, Landroidx/compose/material/ProgressIndicatorDefaults;->getStrokeWidth-D9Ej5fM()F
@@ -2288,12 +2313,12 @@
 
     const/4 v7, -0x1
 
-    const-string v8, "androidx.compose.material.CircularProgressIndicator (ProgressIndicator.kt:421)"
+    const-string v8, "androidx.compose.material.CircularProgressIndicator (ProgressIndicator.kt:457)"
 
-    .line 426
+    .line 458
     invoke-static {v0, v6, v7, v8}, Landroidx/compose/runtime/ComposerKt;->traceEventStart(IIILjava/lang/String;)V
 
-    .line 430
+    .line 462
     :cond_11
     sget-object v0, Landroidx/compose/ui/graphics/Color;->Companion:Landroidx/compose/ui/graphics/Color$Companion;
 
@@ -2301,7 +2326,7 @@
 
     move-result-wide v10
 
-    .line 431
+    .line 463
     sget-object v0, Landroidx/compose/ui/graphics/StrokeCap;->Companion:Landroidx/compose/ui/graphics/StrokeCap$Companion;
 
     invoke-virtual {v0}, Landroidx/compose/ui/graphics/StrokeCap$Companion;->getSquare-KaPHkGw()I
@@ -2330,7 +2355,7 @@
 
     move-object v13, v1
 
-    .line 426
+    .line 458
     invoke-static/range {v6 .. v15}, Landroidx/compose/material/ProgressIndicatorKt;->CircularProgressIndicator-LxG7B9w(Landroidx/compose/ui/Modifier;JFJILandroidx/compose/runtime/Composer;II)V
 
     invoke-static {}, Landroidx/compose/runtime/ComposerKt;->isTraceInProgress()Z
@@ -2344,17 +2369,14 @@
     :cond_12
     move/from16 v9, v16
 
-    .line 432
+    .line 464
     :goto_c
     invoke-interface {v1}, Landroidx/compose/runtime/Composer;->endRestartGroup()Landroidx/compose/runtime/ScopeUpdateScope;
 
     move-result-object v7
 
-    if-nez v7, :cond_13
+    if-eqz v7, :cond_13
 
-    goto :goto_d
-
-    :cond_13
     new-instance v8, Landroidx/compose/material/ProgressIndicatorKt$CircularProgressIndicator$6;
 
     move-object v0, v8
@@ -2375,7 +2397,7 @@
 
     invoke-interface {v7, v8}, Landroidx/compose/runtime/ScopeUpdateScope;->updateScope(Lkotlin/jvm/functions/Function2;)V
 
-    :goto_d
+    :cond_13
     return-void
 .end method
 
@@ -2390,7 +2412,7 @@
         }
     .end annotation
 
-    .line 621
+    .line 648
     invoke-interface {p0}, Landroidx/compose/runtime/State;->getValue()Ljava/lang/Object;
 
     move-result-object p0
@@ -2415,7 +2437,7 @@
         }
     .end annotation
 
-    .line 622
+    .line 649
     invoke-interface {p0}, Landroidx/compose/runtime/State;->getValue()Ljava/lang/Object;
 
     move-result-object p0
@@ -2440,7 +2462,7 @@
         }
     .end annotation
 
-    .line 619
+    .line 646
     invoke-interface {p0}, Landroidx/compose/runtime/State;->getValue()Ljava/lang/Object;
 
     move-result-object p0
@@ -2465,7 +2487,7 @@
         }
     .end annotation
 
-    .line 620
+    .line 647
     invoke-interface {p0}, Landroidx/compose/runtime/State;->getValue()Ljava/lang/Object;
 
     move-result-object p0
@@ -2480,7 +2502,7 @@
 .end method
 
 .method public static final LinearProgressIndicator-2cYBFYY(Landroidx/compose/ui/Modifier;JJILandroidx/compose/runtime/Composer;II)V
-    .locals 21
+    .locals 23
 
     move/from16 v7, p7
 
@@ -2488,12 +2510,12 @@
 
     move-object/from16 v1, p6
 
-    .line 112
+    .line 143
     invoke-interface {v1, v0}, Landroidx/compose/runtime/Composer;->startRestartGroup(I)Landroidx/compose/runtime/Composer;
 
     move-result-object v1
 
-    const-string v2, "C(LinearProgressIndicator)P(2,1:c#ui.graphics.Color,0:c#ui.graphics.Color,3:c#ui.graphics.StrokeCap)108@5031L6,112@5200L28,116@5482L319,127@5846L319,138@6211L323,149@6580L323,164@7035L624,160@6908L751:ProgressIndicator.kt#jmzs0o"
+    const-string v2, "C(LinearProgressIndicator)P(2,1:c#ui.graphics.Color,0:c#ui.graphics.Color,3:c#ui.graphics.StrokeCap)139@6460L6,143@6629L28,147@6911L320,158@7276L320,169@7642L324,180@8012L324,191@8341L790:ProgressIndicator.kt#jmzs0o"
 
     invoke-static {v1, v2}, Landroidx/compose/runtime/ComposerKt;->sourceInformation(Landroidx/compose/runtime/Composer;Ljava/lang/String;)V
 
@@ -2645,94 +2667,116 @@
     move/from16 v10, p5
 
     :goto_7
-    and-int/lit16 v4, v4, 0x16db
+    and-int/lit16 v11, v4, 0x16db
 
-    const/16 v11, 0x492
+    const/16 v12, 0x492
 
-    if-ne v4, v11, :cond_d
+    if-ne v11, v12, :cond_d
 
     invoke-interface {v1}, Landroidx/compose/runtime/Composer;->getSkipping()Z
 
-    move-result v4
+    move-result v11
 
-    if-nez v4, :cond_c
+    if-nez v11, :cond_c
 
     goto :goto_8
 
-    .line 187
+    .line 219
     :cond_c
     invoke-interface {v1}, Landroidx/compose/runtime/Composer;->skipToGroupEnd()V
 
-    goto/16 :goto_11
+    move-wide/from16 v19, v5
 
-    .line 112
+    move-wide v4, v8
+
+    move v6, v10
+
+    goto/16 :goto_f
+
+    .line 143
     :cond_d
     :goto_8
     invoke-interface {v1}, Landroidx/compose/runtime/Composer;->startDefaults()V
 
-    and-int/lit8 v4, v7, 0x1
+    and-int/lit8 v11, v7, 0x1
 
-    if-eqz v4, :cond_f
+    if-eqz v11, :cond_12
 
     invoke-interface {v1}, Landroidx/compose/runtime/Composer;->getDefaultsInvalid()Z
 
-    move-result v4
+    move-result v11
 
-    if-eqz v4, :cond_e
+    if-eqz v11, :cond_e
 
     goto :goto_9
 
-    .line 111
+    .line 142
     :cond_e
     invoke-interface {v1}, Landroidx/compose/runtime/Composer;->skipToGroupEnd()V
 
-    move-object v2, v3
+    and-int/lit8 v2, p8, 0x2
 
-    move-wide v3, v5
+    if-eqz v2, :cond_f
 
-    goto :goto_c
+    and-int/lit8 v4, v4, -0x71
 
     :cond_f
-    :goto_9
+    and-int/lit8 v2, p8, 0x4
+
     if-eqz v2, :cond_10
 
-    .line 108
+    and-int/lit16 v4, v4, -0x381
+
+    :cond_10
+    and-int/lit8 v2, p8, 0x8
+
+    if-eqz v2, :cond_11
+
+    and-int/lit16 v4, v4, -0x1c01
+
+    :cond_11
+    move-object v2, v3
+
+    goto :goto_b
+
+    :cond_12
+    :goto_9
+    if-eqz v2, :cond_13
+
+    .line 139
     sget-object v2, Landroidx/compose/ui/Modifier;->Companion:Landroidx/compose/ui/Modifier$Companion;
 
     check-cast v2, Landroidx/compose/ui/Modifier;
 
     goto :goto_a
 
-    :cond_10
+    :cond_13
     move-object v2, v3
 
     :goto_a
     and-int/lit8 v3, p8, 0x2
 
-    if-eqz v3, :cond_11
+    if-eqz v3, :cond_14
 
-    .line 109
+    .line 140
     sget-object v3, Landroidx/compose/material/MaterialTheme;->INSTANCE:Landroidx/compose/material/MaterialTheme;
 
-    const/4 v4, 0x6
+    const/4 v5, 0x6
 
-    invoke-virtual {v3, v1, v4}, Landroidx/compose/material/MaterialTheme;->getColors(Landroidx/compose/runtime/Composer;I)Landroidx/compose/material/Colors;
+    invoke-virtual {v3, v1, v5}, Landroidx/compose/material/MaterialTheme;->getColors(Landroidx/compose/runtime/Composer;I)Landroidx/compose/material/Colors;
 
     move-result-object v3
 
     invoke-virtual {v3}, Landroidx/compose/material/Colors;->getPrimary-0d7_KjU()J
 
-    move-result-wide v3
+    move-result-wide v5
 
-    goto :goto_b
+    and-int/lit8 v4, v4, -0x71
 
-    :cond_11
-    move-wide v3, v5
+    :cond_14
+    and-int/lit8 v3, p8, 0x4
 
-    :goto_b
-    and-int/lit8 v5, p8, 0x4
-
-    if-eqz v5, :cond_12
+    if-eqz v3, :cond_15
 
     const/16 v17, 0xe
 
@@ -2746,68 +2790,74 @@
 
     const/16 v16, 0x0
 
-    move-wide v11, v3
+    move-wide v11, v5
 
-    .line 110
+    .line 141
     invoke-static/range {v11 .. v18}, Landroidx/compose/ui/graphics/Color;->copy-wmQWz5c$default(JFFFFILjava/lang/Object;)J
 
-    move-result-wide v5
+    move-result-wide v8
 
-    move-wide v8, v5
+    and-int/lit16 v3, v4, -0x381
 
-    :cond_12
-    and-int/lit8 v5, p8, 0x8
+    move v4, v3
 
-    if-eqz v5, :cond_13
+    :cond_15
+    and-int/lit8 v3, p8, 0x8
 
-    .line 111
-    sget-object v5, Landroidx/compose/ui/graphics/StrokeCap;->Companion:Landroidx/compose/ui/graphics/StrokeCap$Companion;
+    if-eqz v3, :cond_16
 
-    invoke-virtual {v5}, Landroidx/compose/ui/graphics/StrokeCap$Companion;->getButt-KaPHkGw()I
+    .line 142
+    sget-object v3, Landroidx/compose/ui/graphics/StrokeCap;->Companion:Landroidx/compose/ui/graphics/StrokeCap$Companion;
 
-    move-result v5
+    invoke-virtual {v3}, Landroidx/compose/ui/graphics/StrokeCap$Companion;->getButt-KaPHkGw()I
 
-    move/from16 v18, v5
+    move-result v3
 
-    move-wide v5, v8
+    and-int/lit16 v4, v4, -0x1c01
 
-    goto :goto_d
+    move v15, v3
 
-    :cond_13
+    goto :goto_c
+
+    :cond_16
+    :goto_b
+    move v15, v10
+
     :goto_c
-    move-wide v5, v8
+    move-wide/from16 v21, v8
 
-    move/from16 v18, v10
+    move v8, v4
 
-    :goto_d
+    move-wide/from16 v3, v21
+
     invoke-interface {v1}, Landroidx/compose/runtime/Composer;->endDefaults()V
 
     invoke-static {}, Landroidx/compose/runtime/ComposerKt;->isTraceInProgress()Z
 
-    move-result v8
+    move-result v9
 
-    if-eqz v8, :cond_14
+    if-eqz v9, :cond_17
 
-    const/4 v8, -0x1
+    const/4 v9, -0x1
 
-    const-string v9, "androidx.compose.material.LinearProgressIndicator (ProgressIndicator.kt:106)"
+    const-string v10, "androidx.compose.material.LinearProgressIndicator (ProgressIndicator.kt:142)"
 
-    .line 112
-    invoke-static {v0, v7, v8, v9}, Landroidx/compose/runtime/ComposerKt;->traceEventStart(IIILjava/lang/String;)V
+    .line 143
+    invoke-static {v0, v8, v9, v10}, Landroidx/compose/runtime/ComposerKt;->traceEventStart(IIILjava/lang/String;)V
 
-    :cond_14
+    :cond_17
     const/4 v0, 0x0
 
-    const/4 v15, 0x0
+    const/4 v14, 0x0
 
     const/4 v8, 0x1
 
-    .line 113
-    invoke-static {v0, v1, v15, v8}, Landroidx/compose/animation/core/InfiniteTransitionKt;->rememberInfiniteTransition(Ljava/lang/String;Landroidx/compose/runtime/Composer;II)Landroidx/compose/animation/core/InfiniteTransition;
+    .line 144
+    invoke-static {v0, v1, v14, v8}, Landroidx/compose/animation/core/InfiniteTransitionKt;->rememberInfiniteTransition(Ljava/lang/String;Landroidx/compose/runtime/Composer;II)Landroidx/compose/animation/core/InfiniteTransition;
 
     move-result-object v0
 
-    .line 121
+    .line 152
     sget-object v8, Landroidx/compose/material/ProgressIndicatorKt$LinearProgressIndicator$firstLineHead$2;->INSTANCE:Landroidx/compose/material/ProgressIndicatorKt$LinearProgressIndicator$firstLineHead$2;
 
     check-cast v8, Lkotlin/jvm/functions/Function1;
@@ -2836,7 +2886,7 @@
 
     move-object/from16 p5, v10
 
-    .line 120
+    .line 151
     invoke-static/range {p0 .. p5}, Landroidx/compose/animation/core/AnimationSpecKt;->infiniteRepeatable-9IiC70o$default(Landroidx/compose/animation/core/DurationBasedAnimationSpec;Landroidx/compose/animation/core/RepeatMode;JILjava/lang/Object;)Landroidx/compose/animation/core/InfiniteRepeatableSpec;
 
     move-result-object v11
@@ -2849,9 +2899,9 @@
 
     shl-int/lit8 v9, v9, 0x9
 
-    or-int v14, v8, v9
+    or-int v16, v8, v9
 
-    const/16 v16, 0x8
+    const/16 v17, 0x8
 
     const/4 v9, 0x0
 
@@ -2863,16 +2913,18 @@
 
     move-object v13, v1
 
+    move/from16 v14, v16
+
     move v7, v15
 
-    move/from16 v15, v16
+    move/from16 v15, v17
 
-    .line 117
+    .line 148
     invoke-static/range {v8 .. v15}, Landroidx/compose/animation/core/InfiniteTransitionKt;->animateFloat(Landroidx/compose/animation/core/InfiniteTransition;FFLandroidx/compose/animation/core/InfiniteRepeatableSpec;Ljava/lang/String;Landroidx/compose/runtime/Composer;II)Landroidx/compose/runtime/State;
 
-    move-result-object v16
+    move-result-object v15
 
-    .line 132
+    .line 163
     sget-object v8, Landroidx/compose/material/ProgressIndicatorKt$LinearProgressIndicator$firstLineTail$2;->INSTANCE:Landroidx/compose/material/ProgressIndicatorKt$LinearProgressIndicator$firstLineTail$2;
 
     check-cast v8, Lkotlin/jvm/functions/Function1;
@@ -2901,8 +2953,67 @@
 
     move-object/from16 p5, v10
 
-    .line 131
+    .line 162
     invoke-static/range {p0 .. p5}, Landroidx/compose/animation/core/AnimationSpecKt;->infiniteRepeatable-9IiC70o$default(Landroidx/compose/animation/core/DurationBasedAnimationSpec;Landroidx/compose/animation/core/RepeatMode;JILjava/lang/Object;)Landroidx/compose/animation/core/InfiniteRepeatableSpec;
+
+    move-result-object v11
+
+    sget v8, Landroidx/compose/animation/core/InfiniteTransition;->$stable:I
+
+    or-int/lit16 v8, v8, 0x1b0
+
+    sget v9, Landroidx/compose/animation/core/InfiniteRepeatableSpec;->$stable:I
+
+    shl-int/lit8 v9, v9, 0x9
+
+    or-int v14, v8, v9
+
+    const/16 v16, 0x8
+
+    const/4 v9, 0x0
+
+    const/high16 v10, 0x3f800000    # 1.0f
+
+    const/4 v12, 0x0
+
+    move-object v8, v0
+
+    move-object v13, v1
+
+    move-wide/from16 p0, v5
+
+    move-object v5, v15
+
+    move/from16 v15, v16
+
+    .line 159
+    invoke-static/range {v8 .. v15}, Landroidx/compose/animation/core/InfiniteTransitionKt;->animateFloat(Landroidx/compose/animation/core/InfiniteTransition;FFLandroidx/compose/animation/core/InfiniteRepeatableSpec;Ljava/lang/String;Landroidx/compose/runtime/Composer;II)Landroidx/compose/runtime/State;
+
+    move-result-object v6
+
+    .line 174
+    sget-object v8, Landroidx/compose/material/ProgressIndicatorKt$LinearProgressIndicator$secondLineHead$2;->INSTANCE:Landroidx/compose/material/ProgressIndicatorKt$LinearProgressIndicator$secondLineHead$2;
+
+    check-cast v8, Lkotlin/jvm/functions/Function1;
+
+    invoke-static {v8}, Landroidx/compose/animation/core/AnimationSpecKt;->keyframes(Lkotlin/jvm/functions/Function1;)Landroidx/compose/animation/core/KeyframesSpec;
+
+    move-result-object v8
+
+    move-object v9, v8
+
+    check-cast v9, Landroidx/compose/animation/core/DurationBasedAnimationSpec;
+
+    const/4 v13, 0x6
+
+    const/4 v14, 0x0
+
+    const/4 v10, 0x0
+
+    const-wide/16 v11, 0x0
+
+    .line 173
+    invoke-static/range {v9 .. v14}, Landroidx/compose/animation/core/AnimationSpecKt;->infiniteRepeatable-9IiC70o$default(Landroidx/compose/animation/core/DurationBasedAnimationSpec;Landroidx/compose/animation/core/RepeatMode;JILjava/lang/Object;)Landroidx/compose/animation/core/InfiniteRepeatableSpec;
 
     move-result-object v11
 
@@ -2928,71 +3039,12 @@
 
     move-object v13, v1
 
-    .line 128
+    .line 170
     invoke-static/range {v8 .. v15}, Landroidx/compose/animation/core/InfiniteTransitionKt;->animateFloat(Landroidx/compose/animation/core/InfiniteTransition;FFLandroidx/compose/animation/core/InfiniteRepeatableSpec;Ljava/lang/String;Landroidx/compose/runtime/Composer;II)Landroidx/compose/runtime/State;
 
-    move-result-object v17
+    move-result-object v15
 
-    .line 143
-    sget-object v8, Landroidx/compose/material/ProgressIndicatorKt$LinearProgressIndicator$secondLineHead$2;->INSTANCE:Landroidx/compose/material/ProgressIndicatorKt$LinearProgressIndicator$secondLineHead$2;
-
-    check-cast v8, Lkotlin/jvm/functions/Function1;
-
-    invoke-static {v8}, Landroidx/compose/animation/core/AnimationSpecKt;->keyframes(Lkotlin/jvm/functions/Function1;)Landroidx/compose/animation/core/KeyframesSpec;
-
-    move-result-object v8
-
-    check-cast v8, Landroidx/compose/animation/core/DurationBasedAnimationSpec;
-
-    const/4 v9, 0x6
-
-    const/4 v10, 0x0
-
-    const/4 v11, 0x0
-
-    const-wide/16 v12, 0x0
-
-    move-object/from16 p0, v8
-
-    move-object/from16 p1, v11
-
-    move-wide/from16 p2, v12
-
-    move/from16 p4, v9
-
-    move-object/from16 p5, v10
-
-    .line 142
-    invoke-static/range {p0 .. p5}, Landroidx/compose/animation/core/AnimationSpecKt;->infiniteRepeatable-9IiC70o$default(Landroidx/compose/animation/core/DurationBasedAnimationSpec;Landroidx/compose/animation/core/RepeatMode;JILjava/lang/Object;)Landroidx/compose/animation/core/InfiniteRepeatableSpec;
-
-    move-result-object v11
-
-    sget v8, Landroidx/compose/animation/core/InfiniteTransition;->$stable:I
-
-    or-int/lit16 v8, v8, 0x1b0
-
-    sget v9, Landroidx/compose/animation/core/InfiniteRepeatableSpec;->$stable:I
-
-    shl-int/lit8 v9, v9, 0x9
-
-    or-int v14, v8, v9
-
-    const/4 v9, 0x0
-
-    const/high16 v10, 0x3f800000    # 1.0f
-
-    const/4 v12, 0x0
-
-    move-object v8, v0
-
-    move-object v13, v1
-
-    .line 139
-    invoke-static/range {v8 .. v15}, Landroidx/compose/animation/core/InfiniteTransitionKt;->animateFloat(Landroidx/compose/animation/core/InfiniteTransition;FFLandroidx/compose/animation/core/InfiniteRepeatableSpec;Ljava/lang/String;Landroidx/compose/runtime/Composer;II)Landroidx/compose/runtime/State;
-
-    move-result-object v19
-
-    .line 154
+    .line 185
     sget-object v8, Landroidx/compose/material/ProgressIndicatorKt$LinearProgressIndicator$secondLineTail$2;->INSTANCE:Landroidx/compose/material/ProgressIndicatorKt$LinearProgressIndicator$secondLineTail$2;
 
     check-cast v8, Lkotlin/jvm/functions/Function1;
@@ -3001,28 +3053,20 @@
 
     move-result-object v8
 
-    check-cast v8, Landroidx/compose/animation/core/DurationBasedAnimationSpec;
+    move-object v9, v8
 
-    const/4 v9, 0x6
+    check-cast v9, Landroidx/compose/animation/core/DurationBasedAnimationSpec;
+
+    const/4 v13, 0x6
+
+    const/4 v14, 0x0
 
     const/4 v10, 0x0
 
-    const/4 v11, 0x0
+    const-wide/16 v11, 0x0
 
-    const-wide/16 v12, 0x0
-
-    move-object/from16 p0, v8
-
-    move-object/from16 p1, v11
-
-    move-wide/from16 p2, v12
-
-    move/from16 p4, v9
-
-    move-object/from16 p5, v10
-
-    .line 153
-    invoke-static/range {p0 .. p5}, Landroidx/compose/animation/core/AnimationSpecKt;->infiniteRepeatable-9IiC70o$default(Landroidx/compose/animation/core/DurationBasedAnimationSpec;Landroidx/compose/animation/core/RepeatMode;JILjava/lang/Object;)Landroidx/compose/animation/core/InfiniteRepeatableSpec;
+    .line 184
+    invoke-static/range {v9 .. v14}, Landroidx/compose/animation/core/AnimationSpecKt;->infiniteRepeatable-9IiC70o$default(Landroidx/compose/animation/core/DurationBasedAnimationSpec;Landroidx/compose/animation/core/RepeatMode;JILjava/lang/Object;)Landroidx/compose/animation/core/InfiniteRepeatableSpec;
 
     move-result-object v11
 
@@ -3046,194 +3090,184 @@
 
     move-object v13, v1
 
-    .line 150
+    move-object v0, v15
+
+    move/from16 v15, v16
+
+    .line 181
     invoke-static/range {v8 .. v15}, Landroidx/compose/animation/core/InfiniteTransitionKt;->animateFloat(Landroidx/compose/animation/core/InfiniteTransition;FFLandroidx/compose/animation/core/InfiniteRepeatableSpec;Ljava/lang/String;Landroidx/compose/runtime/Composer;II)Landroidx/compose/runtime/State;
 
-    move-result-object v0
+    move-result-object v15
 
-    .line 163
-    invoke-static {v2}, Landroidx/compose/foundation/ProgressSemanticsKt;->progressSemantics(Landroidx/compose/ui/Modifier;)Landroidx/compose/ui/Modifier;
+    .line 194
+    invoke-static {v2}, Landroidx/compose/material/ProgressIndicatorKt;->increaseSemanticsBounds(Landroidx/compose/ui/Modifier;)Landroidx/compose/ui/Modifier;
 
     move-result-object v8
 
-    .line 164
+    .line 195
+    invoke-static {v8}, Landroidx/compose/foundation/ProgressSemanticsKt;->progressSemantics(Landroidx/compose/ui/Modifier;)Landroidx/compose/ui/Modifier;
+
+    move-result-object v8
+
+    .line 196
     sget v9, Landroidx/compose/material/ProgressIndicatorKt;->LinearIndicatorWidth:F
 
     sget v10, Landroidx/compose/material/ProgressIndicatorKt;->LinearIndicatorHeight:F
 
     invoke-static {v8, v9, v10}, Landroidx/compose/foundation/layout/SizeKt;->size-VpY3zN4(Landroidx/compose/ui/Modifier;FF)Landroidx/compose/ui/Modifier;
 
-    move-result-object v15
+    move-result-object v14
 
-    .line 165
-    invoke-static {v5, v6}, Landroidx/compose/ui/graphics/Color;->box-impl(J)Landroidx/compose/ui/graphics/Color;
+    const v8, -0x15f91981
 
-    move-result-object v8
+    invoke-interface {v1, v8}, Landroidx/compose/runtime/Composer;->startReplaceableGroup(I)V
 
-    invoke-static/range {v18 .. v18}, Landroidx/compose/ui/graphics/StrokeCap;->box-impl(I)Landroidx/compose/ui/graphics/StrokeCap;
+    invoke-interface {v1, v3, v4}, Landroidx/compose/runtime/Composer;->changed(J)Z
+
+    move-result v8
+
+    invoke-interface {v1, v7}, Landroidx/compose/runtime/Composer;->changed(I)Z
+
+    move-result v9
+
+    or-int/2addr v8, v9
+
+    invoke-interface {v1, v5}, Landroidx/compose/runtime/Composer;->changed(Ljava/lang/Object;)Z
+
+    move-result v9
+
+    or-int/2addr v8, v9
+
+    invoke-interface {v1, v6}, Landroidx/compose/runtime/Composer;->changed(Ljava/lang/Object;)Z
+
+    move-result v9
+
+    or-int/2addr v8, v9
+
+    move-wide/from16 v12, p0
+
+    invoke-interface {v1, v12, v13}, Landroidx/compose/runtime/Composer;->changed(J)Z
+
+    move-result v9
+
+    or-int/2addr v8, v9
+
+    invoke-interface {v1, v0}, Landroidx/compose/runtime/Composer;->changed(Ljava/lang/Object;)Z
+
+    move-result v9
+
+    or-int/2addr v8, v9
+
+    invoke-interface {v1, v15}, Landroidx/compose/runtime/Composer;->changed(Ljava/lang/Object;)Z
+
+    move-result v9
+
+    or-int/2addr v8, v9
+
+    .line 627
+    invoke-interface {v1}, Landroidx/compose/runtime/Composer;->rememberedValue()Ljava/lang/Object;
 
     move-result-object v9
 
-    invoke-static {v3, v4}, Landroidx/compose/ui/graphics/Color;->box-impl(J)Landroidx/compose/ui/graphics/Color;
+    if-nez v8, :cond_19
 
-    move-result-object v10
+    .line 628
+    sget-object v8, Landroidx/compose/runtime/Composer;->Companion:Landroidx/compose/runtime/Composer$Companion;
 
-    move-object/from16 p0, v8
-
-    move-object/from16 p1, v9
-
-    move-object/from16 p2, v16
-
-    move-object/from16 p3, v17
-
-    move-object/from16 p4, v10
-
-    move-object/from16 p5, v19
-
-    move-object/from16 p6, v0
-
-    filled-new-array/range {p0 .. p6}, [Ljava/lang/Object;
+    invoke-virtual {v8}, Landroidx/compose/runtime/Composer$Companion;->getEmpty()Ljava/lang/Object;
 
     move-result-object v8
 
-    const v9, -0x21de6e89
+    if-ne v9, v8, :cond_18
 
-    invoke-interface {v1, v9}, Landroidx/compose/runtime/Composer;->startReplaceableGroup(I)V
+    goto :goto_d
 
-    const-string v9, "CC(remember)P(1):Composables.kt#9igjgp"
+    :cond_18
+    move-object/from16 p0, v2
 
-    invoke-static {v1, v9}, Landroidx/compose/runtime/ComposerKt;->sourceInformation(Landroidx/compose/runtime/Composer;Ljava/lang/String;)V
+    move-wide/from16 v19, v12
 
-    move v9, v7
-
-    move v10, v9
-
-    :goto_e
-    const/4 v11, 0x7
-
-    if-ge v9, v11, :cond_15
-
-    .line 598
-    aget-object v11, v8, v9
-
-    invoke-interface {v1, v11}, Landroidx/compose/runtime/Composer;->changed(Ljava/lang/Object;)Z
-
-    move-result v11
-
-    or-int/2addr v10, v11
-
-    add-int/lit8 v9, v9, 0x1
+    move-object v2, v14
 
     goto :goto_e
 
-    .line 600
-    :cond_15
-    invoke-interface {v1}, Landroidx/compose/runtime/Composer;->rememberedValue()Ljava/lang/Object;
+    .line 197
+    :cond_19
+    :goto_d
+    new-instance v18, Landroidx/compose/material/ProgressIndicatorKt$LinearProgressIndicator$3$1;
 
-    move-result-object v8
+    move-object/from16 v8, v18
 
-    if-nez v10, :cond_17
+    move-wide v9, v3
 
-    .line 601
-    sget-object v9, Landroidx/compose/runtime/Composer;->Companion:Landroidx/compose/runtime/Composer$Companion;
+    move v11, v7
 
-    invoke-virtual {v9}, Landroidx/compose/runtime/Composer$Companion;->getEmpty()Ljava/lang/Object;
-
-    move-result-object v9
-
-    if-ne v8, v9, :cond_16
-
-    goto :goto_f
-
-    :cond_16
-    move-object/from16 p0, v2
-
-    move-object v2, v15
-
-    goto :goto_10
-
-    .line 165
-    :cond_17
-    :goto_f
-    new-instance v20, Landroidx/compose/material/ProgressIndicatorKt$LinearProgressIndicator$3$1;
-
-    move-object/from16 v8, v20
-
-    move-wide v9, v5
-
-    move/from16 v11, v18
-
-    move-wide v12, v3
-
-    move-object/from16 v14, v16
+    move-wide/from16 v19, v12
 
     move-object/from16 p0, v2
 
-    move-object v2, v15
+    move-object v2, v14
 
-    move-object/from16 v15, v17
+    move-object v14, v5
 
-    move-object/from16 v16, v19
+    move-object v5, v15
 
-    move-object/from16 v17, v0
+    move-object v15, v6
+
+    move-object/from16 v16, v0
+
+    move-object/from16 v17, v5
 
     invoke-direct/range {v8 .. v17}, Landroidx/compose/material/ProgressIndicatorKt$LinearProgressIndicator$3$1;-><init>(JIJLandroidx/compose/runtime/State;Landroidx/compose/runtime/State;Landroidx/compose/runtime/State;Landroidx/compose/runtime/State;)V
 
-    move-object/from16 v8, v20
+    move-object/from16 v9, v18
 
-    check-cast v8, Lkotlin/jvm/functions/Function1;
+    check-cast v9, Lkotlin/jvm/functions/Function1;
 
-    .line 603
-    invoke-interface {v1, v8}, Landroidx/compose/runtime/Composer;->updateRememberedValue(Ljava/lang/Object;)V
+    .line 630
+    invoke-interface {v1, v9}, Landroidx/compose/runtime/Composer;->updateRememberedValue(Ljava/lang/Object;)V
 
-    .line 599
-    :goto_10
+    .line 197
+    :goto_e
+    check-cast v9, Lkotlin/jvm/functions/Function1;
+
     invoke-interface {v1}, Landroidx/compose/runtime/Composer;->endReplaceableGroup()V
 
-    check-cast v8, Lkotlin/jvm/functions/Function1;
+    const/4 v0, 0x0
 
-    .line 161
-    invoke-static {v2, v8, v1, v7}, Landroidx/compose/foundation/CanvasKt;->Canvas(Landroidx/compose/ui/Modifier;Lkotlin/jvm/functions/Function1;Landroidx/compose/runtime/Composer;I)V
+    .line 192
+    invoke-static {v2, v9, v1, v0}, Landroidx/compose/foundation/CanvasKt;->Canvas(Landroidx/compose/ui/Modifier;Lkotlin/jvm/functions/Function1;Landroidx/compose/runtime/Composer;I)V
 
     invoke-static {}, Landroidx/compose/runtime/ComposerKt;->isTraceInProgress()Z
 
     move-result v0
 
-    if-eqz v0, :cond_18
+    if-eqz v0, :cond_1a
 
     invoke-static {}, Landroidx/compose/runtime/ComposerKt;->traceEventEnd()V
 
-    :cond_18
-    move-wide v8, v5
+    :cond_1a
+    move-wide v4, v3
 
-    move/from16 v10, v18
-
-    move-wide v5, v3
+    move v6, v7
 
     move-object/from16 v3, p0
 
-    .line 187
-    :goto_11
+    .line 219
+    :goto_f
     invoke-interface {v1}, Landroidx/compose/runtime/Composer;->endRestartGroup()Landroidx/compose/runtime/ScopeUpdateScope;
 
-    move-result-object v11
+    move-result-object v9
 
-    if-nez v11, :cond_19
+    if-eqz v9, :cond_1b
 
-    goto :goto_12
+    new-instance v10, Landroidx/compose/material/ProgressIndicatorKt$LinearProgressIndicator$4;
 
-    :cond_19
-    new-instance v12, Landroidx/compose/material/ProgressIndicatorKt$LinearProgressIndicator$4;
-
-    move-object v0, v12
+    move-object v0, v10
 
     move-object v1, v3
 
-    move-wide v2, v5
-
-    move-wide v4, v8
-
-    move v6, v10
+    move-wide/from16 v2, v19
 
     move/from16 v7, p7
 
@@ -3241,11 +3275,11 @@
 
     invoke-direct/range {v0 .. v8}, Landroidx/compose/material/ProgressIndicatorKt$LinearProgressIndicator$4;-><init>(Landroidx/compose/ui/Modifier;JJIII)V
 
-    check-cast v12, Lkotlin/jvm/functions/Function2;
+    check-cast v10, Lkotlin/jvm/functions/Function2;
 
-    invoke-interface {v11, v12}, Landroidx/compose/runtime/ScopeUpdateScope;->updateScope(Lkotlin/jvm/functions/Function2;)V
+    invoke-interface {v9, v10}, Landroidx/compose/runtime/ScopeUpdateScope;->updateScope(Lkotlin/jvm/functions/Function2;)V
 
-    :goto_12
+    :cond_1b
     return-void
 .end method
 
@@ -3262,12 +3296,12 @@
 
     move-object/from16 v1, p5
 
-    .line 210
+    .line 242
     invoke-interface {v1, v0}, Landroidx/compose/runtime/Composer;->startRestartGroup(I)Landroidx/compose/runtime/Composer;
 
     move-result-object v1
 
-    const-string v2, "C(LinearProgressIndicator)P(2,1:c#ui.graphics.Color,0:c#ui.graphics.Color)207@8286L6,209@8382L104:ProgressIndicator.kt#jmzs0o"
+    const-string v2, "C(LinearProgressIndicator)P(2,1:c#ui.graphics.Color,0:c#ui.graphics.Color)239@9758L6,241@9854L104:ProgressIndicator.kt#jmzs0o"
 
     invoke-static {v1, v2}, Landroidx/compose/runtime/ComposerKt;->sourceInformation(Landroidx/compose/runtime/Composer;Ljava/lang/String;)V
 
@@ -3392,7 +3426,7 @@
 
     goto :goto_6
 
-    .line 215
+    .line 247
     :cond_7
     invoke-interface {v1}, Landroidx/compose/runtime/Composer;->skipToGroupEnd()V
 
@@ -3402,7 +3436,7 @@
 
     goto/16 :goto_a
 
-    .line 210
+    .line 242
     :cond_8
     :goto_6
     invoke-interface {v1}, Landroidx/compose/runtime/Composer;->startDefaults()V
@@ -3419,7 +3453,7 @@
 
     goto :goto_7
 
-    .line 209
+    .line 241
     :cond_9
     invoke-interface {v1}, Landroidx/compose/runtime/Composer;->skipToGroupEnd()V
 
@@ -3445,7 +3479,7 @@
     :goto_7
     if-eqz v2, :cond_d
 
-    .line 207
+    .line 239
     sget-object v2, Landroidx/compose/ui/Modifier;->Companion:Landroidx/compose/ui/Modifier$Companion;
 
     check-cast v2, Landroidx/compose/ui/Modifier;
@@ -3460,7 +3494,7 @@
 
     if-eqz v3, :cond_e
 
-    .line 208
+    .line 240
     sget-object v3, Landroidx/compose/material/MaterialTheme;->INSTANCE:Landroidx/compose/material/MaterialTheme;
 
     const/4 v5, 0x6
@@ -3494,7 +3528,7 @@
 
     move-wide v9, v7
 
-    .line 209
+    .line 241
     invoke-static/range {v9 .. v16}, Landroidx/compose/ui/graphics/Color;->copy-wmQWz5c$default(JFFFFILjava/lang/Object;)J
 
     move-result-wide v9
@@ -3519,12 +3553,12 @@
 
     const/4 v7, -0x1
 
-    const-string v8, "androidx.compose.material.LinearProgressIndicator (ProgressIndicator.kt:205)"
+    const-string v8, "androidx.compose.material.LinearProgressIndicator (ProgressIndicator.kt:241)"
 
-    .line 210
+    .line 242
     invoke-static {v0, v5, v7, v8}, Landroidx/compose/runtime/ComposerKt;->traceEventStart(IIILjava/lang/String;)V
 
-    .line 214
+    .line 246
     :cond_10
     sget-object v0, Landroidx/compose/ui/graphics/StrokeCap;->Companion:Landroidx/compose/ui/graphics/StrokeCap$Companion;
 
@@ -3552,7 +3586,7 @@
 
     move-object v13, v1
 
-    .line 210
+    .line 242
     invoke-static/range {v7 .. v15}, Landroidx/compose/material/ProgressIndicatorKt;->LinearProgressIndicator-2cYBFYY(Landroidx/compose/ui/Modifier;JJILandroidx/compose/runtime/Composer;II)V
 
     invoke-static {}, Landroidx/compose/runtime/ComposerKt;->isTraceInProgress()Z
@@ -3566,17 +3600,14 @@
     :cond_11
     move-wide/from16 v9, v16
 
-    .line 215
+    .line 247
     :goto_a
     invoke-interface {v1}, Landroidx/compose/runtime/Composer;->endRestartGroup()Landroidx/compose/runtime/ScopeUpdateScope;
 
     move-result-object v8
 
-    if-nez v8, :cond_12
+    if-eqz v8, :cond_12
 
-    goto :goto_b
-
-    :cond_12
     new-instance v11, Landroidx/compose/material/ProgressIndicatorKt$LinearProgressIndicator$6;
 
     move-object v0, v11
@@ -3597,12 +3628,12 @@
 
     invoke-interface {v8, v11}, Landroidx/compose/runtime/ScopeUpdateScope;->updateScope(Lkotlin/jvm/functions/Function2;)V
 
-    :goto_b
+    :cond_12
     return-void
 .end method
 
 .method public static final LinearProgressIndicator-_5eSR-E(FLandroidx/compose/ui/Modifier;JJILandroidx/compose/runtime/Composer;II)V
-    .locals 19
+    .locals 22
 
     move/from16 v1, p0
 
@@ -3612,18 +3643,16 @@
 
     move-object/from16 v2, p7
 
-    .line 80
+    .line 110
     invoke-interface {v2, v0}, Landroidx/compose/runtime/Composer;->startRestartGroup(I)Landroidx/compose/runtime/Composer;
 
     move-result-object v2
 
-    const-string v3, "C(LinearProgressIndicator)P(3,2,1:c#ui.graphics.Color,0:c#ui.graphics.Color,4:c#ui.graphics.StrokeCap)76@3573L6,85@3911L204,81@3769L346:ProgressIndicator.kt#jmzs0o"
+    const-string v3, "C(LinearProgressIndicator)P(3,2,1:c#ui.graphics.Color,0:c#ui.graphics.Color,4:c#ui.graphics.StrokeCap)106@4963L6,111@5159L385:ProgressIndicator.kt#jmzs0o"
 
     invoke-static {v2, v3}, Landroidx/compose/runtime/ComposerKt;->sourceInformation(Landroidx/compose/runtime/Composer;Ljava/lang/String;)V
 
     and-int/lit8 v3, p9, 0x1
-
-    const/4 v4, 0x4
 
     if-eqz v3, :cond_0
 
@@ -3642,7 +3671,7 @@
 
     if-eqz v3, :cond_1
 
-    move v3, v4
+    const/4 v3, 0x4
 
     goto :goto_0
 
@@ -3658,297 +3687,342 @@
     move v3, v8
 
     :goto_1
-    and-int/lit8 v5, p9, 0x2
+    and-int/lit8 v4, p9, 0x2
 
-    if-eqz v5, :cond_3
+    if-eqz v4, :cond_3
 
     or-int/lit8 v3, v3, 0x30
 
     goto :goto_3
 
     :cond_3
-    and-int/lit8 v6, v8, 0x70
+    and-int/lit8 v5, v8, 0x70
 
-    if-nez v6, :cond_5
+    if-nez v5, :cond_5
 
-    move-object/from16 v6, p1
+    move-object/from16 v5, p1
 
-    invoke-interface {v2, v6}, Landroidx/compose/runtime/Composer;->changed(Ljava/lang/Object;)Z
+    invoke-interface {v2, v5}, Landroidx/compose/runtime/Composer;->changed(Ljava/lang/Object;)Z
 
-    move-result v7
+    move-result v6
 
-    if-eqz v7, :cond_4
+    if-eqz v6, :cond_4
 
-    const/16 v7, 0x20
+    const/16 v6, 0x20
 
     goto :goto_2
 
     :cond_4
-    const/16 v7, 0x10
+    const/16 v6, 0x10
 
     :goto_2
-    or-int/2addr v3, v7
+    or-int/2addr v3, v6
 
     goto :goto_4
 
     :cond_5
     :goto_3
-    move-object/from16 v6, p1
+    move-object/from16 v5, p1
 
     :goto_4
-    and-int/lit16 v7, v8, 0x380
+    and-int/lit16 v6, v8, 0x380
 
-    if-nez v7, :cond_7
+    if-nez v6, :cond_8
 
-    and-int/lit8 v7, p9, 0x4
+    and-int/lit8 v6, p9, 0x4
 
-    move-wide/from16 v9, p2
+    if-nez v6, :cond_6
 
-    if-nez v7, :cond_6
+    move-wide/from16 v6, p2
 
-    invoke-interface {v2, v9, v10}, Landroidx/compose/runtime/Composer;->changed(J)Z
+    invoke-interface {v2, v6, v7}, Landroidx/compose/runtime/Composer;->changed(J)Z
 
-    move-result v7
+    move-result v9
 
-    if-eqz v7, :cond_6
+    if-eqz v9, :cond_7
 
-    const/16 v7, 0x100
+    const/16 v9, 0x100
 
     goto :goto_5
 
     :cond_6
-    const/16 v7, 0x80
+    move-wide/from16 v6, p2
+
+    :cond_7
+    const/16 v9, 0x80
 
     :goto_5
-    or-int/2addr v3, v7
+    or-int/2addr v3, v9
 
     goto :goto_6
 
-    :cond_7
-    move-wide/from16 v9, p2
+    :cond_8
+    move-wide/from16 v6, p2
 
     :goto_6
-    and-int/lit16 v7, v8, 0x1c00
+    and-int/lit16 v9, v8, 0x1c00
 
-    if-nez v7, :cond_9
+    if-nez v9, :cond_b
 
-    and-int/lit8 v7, p9, 0x8
+    and-int/lit8 v9, p9, 0x8
 
-    move-wide/from16 v11, p4
+    if-nez v9, :cond_9
 
-    if-nez v7, :cond_8
+    move-wide/from16 v9, p4
 
-    invoke-interface {v2, v11, v12}, Landroidx/compose/runtime/Composer;->changed(J)Z
+    invoke-interface {v2, v9, v10}, Landroidx/compose/runtime/Composer;->changed(J)Z
 
-    move-result v7
+    move-result v11
 
-    if-eqz v7, :cond_8
+    if-eqz v11, :cond_a
 
-    const/16 v7, 0x800
+    const/16 v11, 0x800
 
     goto :goto_7
 
-    :cond_8
-    const/16 v7, 0x400
+    :cond_9
+    move-wide/from16 v9, p4
+
+    :cond_a
+    const/16 v11, 0x400
 
     :goto_7
-    or-int/2addr v3, v7
+    or-int/2addr v3, v11
 
     goto :goto_8
 
-    :cond_9
-    move-wide/from16 v11, p4
+    :cond_b
+    move-wide/from16 v9, p4
 
     :goto_8
-    const v7, 0xe000
+    const v11, 0xe000
 
-    and-int/2addr v7, v8
+    and-int/2addr v11, v8
 
-    if-nez v7, :cond_c
+    if-nez v11, :cond_e
 
-    and-int/lit8 v7, p9, 0x10
+    and-int/lit8 v11, p9, 0x10
 
-    if-nez v7, :cond_a
+    if-nez v11, :cond_c
 
-    move/from16 v7, p6
+    move/from16 v11, p6
 
-    invoke-interface {v2, v7}, Landroidx/compose/runtime/Composer;->changed(I)Z
+    invoke-interface {v2, v11}, Landroidx/compose/runtime/Composer;->changed(I)Z
 
-    move-result v13
+    move-result v12
 
-    if-eqz v13, :cond_b
+    if-eqz v12, :cond_d
 
-    const/16 v13, 0x4000
+    const/16 v12, 0x4000
 
     goto :goto_9
 
-    :cond_a
-    move/from16 v7, p6
+    :cond_c
+    move/from16 v11, p6
 
-    :cond_b
-    const/16 v13, 0x2000
+    :cond_d
+    const/16 v12, 0x2000
 
     :goto_9
-    or-int/2addr v3, v13
+    or-int/2addr v3, v12
 
     goto :goto_a
 
-    :cond_c
-    move/from16 v7, p6
+    :cond_e
+    move/from16 v11, p6
 
     :goto_a
-    const v13, 0xb6db
+    const v12, 0xb6db
 
-    and-int/2addr v3, v13
+    and-int/2addr v12, v3
 
     const/16 v13, 0x2492
 
-    if-ne v3, v13, :cond_f
+    if-ne v12, v13, :cond_10
 
     invoke-interface {v2}, Landroidx/compose/runtime/Composer;->getSkipping()Z
 
-    move-result v3
+    move-result v12
 
-    if-nez v3, :cond_d
+    if-nez v12, :cond_f
 
-    goto :goto_c
+    goto :goto_b
 
-    .line 91
-    :cond_d
+    .line 122
+    :cond_f
     invoke-interface {v2}, Landroidx/compose/runtime/Composer;->skipToGroupEnd()V
 
-    :cond_e
+    move-object v4, v5
+
+    goto/16 :goto_f
+
+    .line 110
+    :cond_10
     :goto_b
-    move-wide v3, v9
-
-    goto/16 :goto_10
-
-    .line 80
-    :cond_f
-    :goto_c
     invoke-interface {v2}, Landroidx/compose/runtime/Composer;->startDefaults()V
 
-    and-int/lit8 v3, v8, 0x1
+    and-int/lit8 v12, v8, 0x1
 
-    if-eqz v3, :cond_11
+    const v13, -0xe001
+
+    if-eqz v12, :cond_15
 
     invoke-interface {v2}, Landroidx/compose/runtime/Composer;->getDefaultsInvalid()Z
 
-    move-result v3
+    move-result v12
 
-    if-eqz v3, :cond_10
+    if-eqz v12, :cond_11
 
-    goto :goto_d
+    goto :goto_c
 
-    .line 79
-    :cond_10
+    .line 109
+    :cond_11
     invoke-interface {v2}, Landroidx/compose/runtime/Composer;->skipToGroupEnd()V
+
+    and-int/lit8 v4, p9, 0x4
+
+    if-eqz v4, :cond_12
+
+    and-int/lit16 v3, v3, -0x381
+
+    :cond_12
+    and-int/lit8 v4, p9, 0x8
+
+    if-eqz v4, :cond_13
+
+    and-int/lit16 v3, v3, -0x1c01
+
+    :cond_13
+    and-int/lit8 v4, p9, 0x10
+
+    if-eqz v4, :cond_14
+
+    and-int/2addr v3, v13
+
+    :cond_14
+    move-object v4, v5
 
     goto :goto_e
 
-    :cond_11
+    :cond_15
+    :goto_c
+    if-eqz v4, :cond_16
+
+    .line 106
+    sget-object v4, Landroidx/compose/ui/Modifier;->Companion:Landroidx/compose/ui/Modifier$Companion;
+
+    check-cast v4, Landroidx/compose/ui/Modifier;
+
+    goto :goto_d
+
+    :cond_16
+    move-object v4, v5
+
     :goto_d
-    if-eqz v5, :cond_12
+    and-int/lit8 v5, p9, 0x4
 
-    .line 76
-    sget-object v3, Landroidx/compose/ui/Modifier;->Companion:Landroidx/compose/ui/Modifier$Companion;
+    if-eqz v5, :cond_17
 
-    check-cast v3, Landroidx/compose/ui/Modifier;
+    .line 107
+    sget-object v5, Landroidx/compose/material/MaterialTheme;->INSTANCE:Landroidx/compose/material/MaterialTheme;
 
-    move-object v6, v3
+    const/4 v6, 0x6
 
-    :cond_12
-    and-int/lit8 v3, p9, 0x4
+    invoke-virtual {v5, v2, v6}, Landroidx/compose/material/MaterialTheme;->getColors(Landroidx/compose/runtime/Composer;I)Landroidx/compose/material/Colors;
 
-    if-eqz v3, :cond_13
+    move-result-object v5
 
-    .line 77
-    sget-object v3, Landroidx/compose/material/MaterialTheme;->INSTANCE:Landroidx/compose/material/MaterialTheme;
+    invoke-virtual {v5}, Landroidx/compose/material/Colors;->getPrimary-0d7_KjU()J
 
-    const/4 v5, 0x6
+    move-result-wide v5
 
-    invoke-virtual {v3, v2, v5}, Landroidx/compose/material/MaterialTheme;->getColors(Landroidx/compose/runtime/Composer;I)Landroidx/compose/material/Colors;
+    and-int/lit16 v3, v3, -0x381
 
-    move-result-object v3
+    move-wide v6, v5
 
-    invoke-virtual {v3}, Landroidx/compose/material/Colors;->getPrimary-0d7_KjU()J
+    :cond_17
+    and-int/lit8 v5, p9, 0x8
 
-    move-result-wide v9
+    if-eqz v5, :cond_18
 
-    :cond_13
-    and-int/lit8 v3, p9, 0x8
+    const/16 v20, 0xe
 
-    if-eqz v3, :cond_14
+    const/16 v21, 0x0
 
-    const/16 v17, 0xe
+    const v16, 0x3e75c28f    # 0.24f
+
+    const/16 v17, 0x0
 
     const/16 v18, 0x0
 
-    const v13, 0x3e75c28f    # 0.24f
+    const/16 v19, 0x0
 
-    const/4 v14, 0x0
+    move-wide v14, v6
 
-    const/4 v15, 0x0
+    .line 108
+    invoke-static/range {v14 .. v21}, Landroidx/compose/ui/graphics/Color;->copy-wmQWz5c$default(JFFFFILjava/lang/Object;)J
 
-    const/16 v16, 0x0
+    move-result-wide v9
 
-    move-wide v11, v9
+    and-int/lit16 v3, v3, -0x1c01
 
-    .line 78
-    invoke-static/range {v11 .. v18}, Landroidx/compose/ui/graphics/Color;->copy-wmQWz5c$default(JFFFFILjava/lang/Object;)J
+    :cond_18
+    and-int/lit8 v5, p9, 0x10
 
-    move-result-wide v11
+    if-eqz v5, :cond_19
 
-    :cond_14
-    and-int/lit8 v3, p9, 0x10
+    .line 109
+    sget-object v5, Landroidx/compose/ui/graphics/StrokeCap;->Companion:Landroidx/compose/ui/graphics/StrokeCap$Companion;
 
-    if-eqz v3, :cond_15
+    invoke-virtual {v5}, Landroidx/compose/ui/graphics/StrokeCap$Companion;->getButt-KaPHkGw()I
 
-    .line 79
-    sget-object v3, Landroidx/compose/ui/graphics/StrokeCap;->Companion:Landroidx/compose/ui/graphics/StrokeCap$Companion;
+    move-result v5
 
-    invoke-virtual {v3}, Landroidx/compose/ui/graphics/StrokeCap$Companion;->getButt-KaPHkGw()I
+    and-int/2addr v3, v13
 
-    move-result v3
+    move v11, v5
 
-    move v7, v3
-
-    :cond_15
+    :cond_19
     :goto_e
     invoke-interface {v2}, Landroidx/compose/runtime/Composer;->endDefaults()V
 
     invoke-static {}, Landroidx/compose/runtime/ComposerKt;->isTraceInProgress()Z
 
-    move-result v3
+    move-result v5
 
-    if-eqz v3, :cond_16
+    if-eqz v5, :cond_1a
 
-    const/4 v3, -0x1
+    const/4 v5, -0x1
 
-    const-string v5, "androidx.compose.material.LinearProgressIndicator (ProgressIndicator.kt:72)"
+    const-string v12, "androidx.compose.material.LinearProgressIndicator (ProgressIndicator.kt:109)"
 
-    .line 80
-    invoke-static {v0, v8, v3, v5}, Landroidx/compose/runtime/ComposerKt;->traceEventStart(IIILjava/lang/String;)V
+    .line 110
+    invoke-static {v0, v3, v5, v12}, Landroidx/compose/runtime/ComposerKt;->traceEventStart(IIILjava/lang/String;)V
 
-    :cond_16
+    :cond_1a
     const/4 v0, 0x0
 
     const/high16 v3, 0x3f800000    # 1.0f
 
-    .line 81
+    .line 111
     invoke-static {v1, v0, v3}, Lkotlin/ranges/RangesKt;->coerceIn(FFF)F
 
     move-result v0
 
-    const/4 v3, 0x6
+    .line 114
+    invoke-static {v4}, Landroidx/compose/material/ProgressIndicatorKt;->increaseSemanticsBounds(Landroidx/compose/ui/Modifier;)Landroidx/compose/ui/Modifier;
 
-    const/4 v5, 0x0
+    move-result-object v3
+
+    const/4 v5, 0x6
+
+    const/4 v12, 0x0
 
     const/4 v13, 0x0
 
     const/4 v14, 0x0
 
-    move-object/from16 p1, v6
+    move-object/from16 p1, v3
 
     move/from16 p2, v0
 
@@ -3956,154 +4030,130 @@
 
     move/from16 p4, v14
 
-    move/from16 p5, v3
+    move/from16 p5, v5
 
-    move-object/from16 p6, v5
+    move-object/from16 p6, v12
 
-    .line 84
+    .line 115
     invoke-static/range {p1 .. p6}, Landroidx/compose/foundation/ProgressSemanticsKt;->progressSemantics$default(Landroidx/compose/ui/Modifier;FLkotlin/ranges/ClosedFloatingPointRange;IILjava/lang/Object;)Landroidx/compose/ui/Modifier;
 
     move-result-object v3
 
-    .line 85
+    .line 116
     sget v5, Landroidx/compose/material/ProgressIndicatorKt;->LinearIndicatorWidth:F
 
-    sget v13, Landroidx/compose/material/ProgressIndicatorKt;->LinearIndicatorHeight:F
+    sget v12, Landroidx/compose/material/ProgressIndicatorKt;->LinearIndicatorHeight:F
 
-    invoke-static {v3, v5, v13}, Landroidx/compose/foundation/layout/SizeKt;->size-VpY3zN4(Landroidx/compose/ui/Modifier;FF)Landroidx/compose/ui/Modifier;
+    invoke-static {v3, v5, v12}, Landroidx/compose/foundation/layout/SizeKt;->size-VpY3zN4(Landroidx/compose/ui/Modifier;FF)Landroidx/compose/ui/Modifier;
 
     move-result-object v3
 
-    .line 86
-    invoke-static {v11, v12}, Landroidx/compose/ui/graphics/Color;->box-impl(J)Landroidx/compose/ui/graphics/Color;
+    const v5, -0x15f925e0
 
-    move-result-object v5
+    invoke-interface {v2, v5}, Landroidx/compose/runtime/Composer;->startReplaceableGroup(I)V
 
-    invoke-static {v7}, Landroidx/compose/ui/graphics/StrokeCap;->box-impl(I)Landroidx/compose/ui/graphics/StrokeCap;
+    invoke-interface {v2, v9, v10}, Landroidx/compose/runtime/Composer;->changed(J)Z
 
-    move-result-object v13
+    move-result v5
 
-    invoke-static {v0}, Ljava/lang/Float;->valueOf(F)Ljava/lang/Float;
+    invoke-interface {v2, v11}, Landroidx/compose/runtime/Composer;->changed(I)Z
 
-    move-result-object v14
+    move-result v12
 
-    invoke-static {v9, v10}, Landroidx/compose/ui/graphics/Color;->box-impl(J)Landroidx/compose/ui/graphics/Color;
+    or-int/2addr v5, v12
 
-    move-result-object v15
+    invoke-interface {v2, v0}, Landroidx/compose/runtime/Composer;->changed(F)Z
 
-    filled-new-array {v5, v13, v14, v15}, [Ljava/lang/Object;
+    move-result v12
 
-    move-result-object v5
+    or-int/2addr v5, v12
 
-    const v13, -0x21de6e89
+    invoke-interface {v2, v6, v7}, Landroidx/compose/runtime/Composer;->changed(J)Z
 
-    invoke-interface {v2, v13}, Landroidx/compose/runtime/Composer;->startReplaceableGroup(I)V
+    move-result v12
 
-    const-string v13, "CC(remember)P(1):Composables.kt#9igjgp"
+    or-int/2addr v5, v12
 
-    invoke-static {v2, v13}, Landroidx/compose/runtime/ComposerKt;->sourceInformation(Landroidx/compose/runtime/Composer;Ljava/lang/String;)V
-
-    const/4 v13, 0x0
-
-    move v14, v13
-
-    move v15, v14
-
-    :goto_f
-    if-ge v14, v4, :cond_17
-
-    .line 589
-    aget-object v4, v5, v14
-
-    invoke-interface {v2, v4}, Landroidx/compose/runtime/Composer;->changed(Ljava/lang/Object;)Z
-
-    move-result v4
-
-    or-int/2addr v15, v4
-
-    add-int/lit8 v14, v14, 0x1
-
-    const/4 v4, 0x4
-
-    goto :goto_f
-
-    .line 591
-    :cond_17
+    .line 621
     invoke-interface {v2}, Landroidx/compose/runtime/Composer;->rememberedValue()Ljava/lang/Object;
 
-    move-result-object v4
+    move-result-object v12
 
-    if-nez v15, :cond_18
+    if-nez v5, :cond_1b
 
-    .line 592
+    .line 622
     sget-object v5, Landroidx/compose/runtime/Composer;->Companion:Landroidx/compose/runtime/Composer$Companion;
 
     invoke-virtual {v5}, Landroidx/compose/runtime/Composer$Companion;->getEmpty()Ljava/lang/Object;
 
     move-result-object v5
 
-    if-ne v4, v5, :cond_19
+    if-ne v12, v5, :cond_1c
 
-    .line 86
-    :cond_18
-    new-instance v4, Landroidx/compose/material/ProgressIndicatorKt$LinearProgressIndicator$1$1;
+    .line 117
+    :cond_1b
+    new-instance v5, Landroidx/compose/material/ProgressIndicatorKt$LinearProgressIndicator$1$1;
 
-    move-object/from16 p1, v4
+    move-object/from16 p1, v5
 
-    move-wide/from16 p2, v11
+    move-wide/from16 p2, v9
 
-    move/from16 p4, v7
+    move/from16 p4, v11
 
     move/from16 p5, v0
 
-    move-wide/from16 p6, v9
+    move-wide/from16 p6, v6
 
     invoke-direct/range {p1 .. p7}, Landroidx/compose/material/ProgressIndicatorKt$LinearProgressIndicator$1$1;-><init>(JIFJ)V
 
-    check-cast v4, Lkotlin/jvm/functions/Function1;
+    move-object v12, v5
 
-    .line 594
-    invoke-interface {v2, v4}, Landroidx/compose/runtime/Composer;->updateRememberedValue(Ljava/lang/Object;)V
+    check-cast v12, Lkotlin/jvm/functions/Function1;
 
-    .line 590
-    :cond_19
+    .line 624
+    invoke-interface {v2, v12}, Landroidx/compose/runtime/Composer;->updateRememberedValue(Ljava/lang/Object;)V
+
+    .line 117
+    :cond_1c
+    check-cast v12, Lkotlin/jvm/functions/Function1;
+
     invoke-interface {v2}, Landroidx/compose/runtime/Composer;->endReplaceableGroup()V
 
-    check-cast v4, Lkotlin/jvm/functions/Function1;
+    const/4 v0, 0x0
 
-    .line 82
-    invoke-static {v3, v4, v2, v13}, Landroidx/compose/foundation/CanvasKt;->Canvas(Landroidx/compose/ui/Modifier;Lkotlin/jvm/functions/Function1;Landroidx/compose/runtime/Composer;I)V
+    .line 112
+    invoke-static {v3, v12, v2, v0}, Landroidx/compose/foundation/CanvasKt;->Canvas(Landroidx/compose/ui/Modifier;Lkotlin/jvm/functions/Function1;Landroidx/compose/runtime/Composer;I)V
 
     invoke-static {}, Landroidx/compose/runtime/ComposerKt;->isTraceInProgress()Z
 
     move-result v0
 
-    if-eqz v0, :cond_e
+    if-eqz v0, :cond_1d
 
     invoke-static {}, Landroidx/compose/runtime/ComposerKt;->traceEventEnd()V
 
-    goto/16 :goto_b
-
-    .line 91
-    :goto_10
+    .line 122
+    :cond_1d
+    :goto_f
     invoke-interface {v2}, Landroidx/compose/runtime/Composer;->endRestartGroup()Landroidx/compose/runtime/ScopeUpdateScope;
 
-    move-result-object v10
+    move-result-object v12
 
-    if-nez v10, :cond_1a
+    if-eqz v12, :cond_1e
 
-    goto :goto_11
-
-    :cond_1a
     new-instance v13, Landroidx/compose/material/ProgressIndicatorKt$LinearProgressIndicator$2;
 
     move-object v0, v13
 
     move/from16 v1, p0
 
-    move-object v2, v6
+    move-object v2, v4
 
-    move-wide v5, v11
+    move-wide v3, v6
+
+    move-wide v5, v9
+
+    move v7, v11
 
     move/from16 v8, p8
 
@@ -4113,9 +4163,9 @@
 
     check-cast v13, Lkotlin/jvm/functions/Function2;
 
-    invoke-interface {v10, v13}, Landroidx/compose/runtime/ScopeUpdateScope;->updateScope(Lkotlin/jvm/functions/Function2;)V
+    invoke-interface {v12, v13}, Landroidx/compose/runtime/ScopeUpdateScope;->updateScope(Lkotlin/jvm/functions/Function2;)V
 
-    :goto_11
+    :cond_1e
     return-void
 .end method
 
@@ -4132,12 +4182,12 @@
 
     move-object/from16 v1, p6
 
-    .line 196
+    .line 228
     invoke-interface {v1, v0}, Landroidx/compose/runtime/Composer;->startRestartGroup(I)Landroidx/compose/runtime/Composer;
 
     move-result-object v1
 
-    const-string v2, "C(LinearProgressIndicator)P(3,2,1:c#ui.graphics.Color,0:c#ui.graphics.Color)193@7877L6,195@7973L118:ProgressIndicator.kt#jmzs0o"
+    const-string v2, "C(LinearProgressIndicator)P(3,2,1:c#ui.graphics.Color,0:c#ui.graphics.Color)225@9349L6,227@9445L118:ProgressIndicator.kt#jmzs0o"
 
     invoke-static {v1, v2}, Landroidx/compose/runtime/ComposerKt;->sourceInformation(Landroidx/compose/runtime/Composer;Ljava/lang/String;)V
 
@@ -4300,7 +4350,7 @@
 
     goto :goto_9
 
-    .line 202
+    .line 234
     :cond_a
     invoke-interface {v1}, Landroidx/compose/runtime/Composer;->skipToGroupEnd()V
 
@@ -4310,7 +4360,7 @@
 
     goto/16 :goto_f
 
-    .line 196
+    .line 228
     :cond_b
     :goto_9
     invoke-interface {v1}, Landroidx/compose/runtime/Composer;->startDefaults()V
@@ -4327,7 +4377,7 @@
 
     goto :goto_a
 
-    .line 195
+    .line 227
     :cond_c
     invoke-interface {v1}, Landroidx/compose/runtime/Composer;->skipToGroupEnd()V
 
@@ -4355,7 +4405,7 @@
     :goto_a
     if-eqz v4, :cond_10
 
-    .line 193
+    .line 225
     sget-object v4, Landroidx/compose/ui/Modifier;->Companion:Landroidx/compose/ui/Modifier$Companion;
 
     check-cast v4, Landroidx/compose/ui/Modifier;
@@ -4370,7 +4420,7 @@
 
     if-eqz v5, :cond_11
 
-    .line 194
+    .line 226
     sget-object v5, Landroidx/compose/material/MaterialTheme;->INSTANCE:Landroidx/compose/material/MaterialTheme;
 
     const/4 v6, 0x6
@@ -4409,7 +4459,7 @@
 
     move-wide v8, v5
 
-    .line 195
+    .line 227
     invoke-static/range {v8 .. v15}, Landroidx/compose/ui/graphics/Color;->copy-wmQWz5c$default(JFFFFILjava/lang/Object;)J
 
     move-result-wide v8
@@ -4435,12 +4485,12 @@
 
     const/4 v8, -0x1
 
-    const-string v9, "androidx.compose.material.LinearProgressIndicator (ProgressIndicator.kt:190)"
+    const-string v9, "androidx.compose.material.LinearProgressIndicator (ProgressIndicator.kt:227)"
 
-    .line 196
+    .line 228
     invoke-static {v0, v3, v8, v9}, Landroidx/compose/runtime/ComposerKt;->traceEventStart(IIILjava/lang/String;)V
 
-    .line 201
+    .line 233
     :cond_13
     sget-object v0, Landroidx/compose/ui/graphics/StrokeCap;->Companion:Landroidx/compose/ui/graphics/StrokeCap$Companion;
 
@@ -4474,7 +4524,7 @@
 
     move-object v15, v1
 
-    .line 196
+    .line 228
     invoke-static/range {v8 .. v17}, Landroidx/compose/material/ProgressIndicatorKt;->LinearProgressIndicator-_5eSR-E(FLandroidx/compose/ui/Modifier;JJILandroidx/compose/runtime/Composer;II)V
 
     invoke-static {}, Landroidx/compose/runtime/ComposerKt;->isTraceInProgress()Z
@@ -4490,17 +4540,14 @@
 
     move-wide/from16 v5, v18
 
-    .line 202
+    .line 234
     :goto_f
     invoke-interface {v1}, Landroidx/compose/runtime/Composer;->endRestartGroup()Landroidx/compose/runtime/ScopeUpdateScope;
 
     move-result-object v10
 
-    if-nez v10, :cond_15
+    if-eqz v10, :cond_15
 
-    goto :goto_10
-
-    :cond_15
     new-instance v11, Landroidx/compose/material/ProgressIndicatorKt$LinearProgressIndicator$5;
 
     move-object v0, v11
@@ -4521,7 +4568,7 @@
 
     invoke-interface {v10, v11}, Landroidx/compose/runtime/ScopeUpdateScope;->updateScope(Lkotlin/jvm/functions/Function2;)V
 
-    :goto_10
+    :cond_15
     return-void
 .end method
 
@@ -4536,7 +4583,7 @@
         }
     .end annotation
 
-    .line 615
+    .line 642
     invoke-interface {p0}, Landroidx/compose/runtime/State;->getValue()Ljava/lang/Object;
 
     move-result-object p0
@@ -4561,7 +4608,7 @@
         }
     .end annotation
 
-    .line 616
+    .line 643
     invoke-interface {p0}, Landroidx/compose/runtime/State;->getValue()Ljava/lang/Object;
 
     move-result-object p0
@@ -4586,7 +4633,7 @@
         }
     .end annotation
 
-    .line 617
+    .line 644
     invoke-interface {p0}, Landroidx/compose/runtime/State;->getValue()Ljava/lang/Object;
 
     move-result-object p0
@@ -4611,7 +4658,7 @@
         }
     .end annotation
 
-    .line 618
+    .line 645
     invoke-interface {p0}, Landroidx/compose/runtime/State;->getValue()Ljava/lang/Object;
 
     move-result-object p0
@@ -4806,7 +4853,7 @@
 .method private static final drawCircularIndicator-42QJj7c(Landroidx/compose/ui/graphics/drawscope/DrawScope;FFJLandroidx/compose/ui/graphics/drawscope/Stroke;)V
     .locals 19
 
-    .line 442
+    .line 474
     invoke-virtual/range {p5 .. p5}, Landroidx/compose/ui/graphics/drawscope/Stroke;->getWidth()F
 
     move-result v0
@@ -4817,7 +4864,7 @@
 
     div-float/2addr v0, v1
 
-    .line 443
+    .line 475
     invoke-interface/range {p0 .. p0}, Landroidx/compose/ui/graphics/drawscope/DrawScope;->getSize-NH-jbRc()J
 
     move-result-wide v2
@@ -4830,17 +4877,17 @@
 
     sub-float/2addr v2, v1
 
-    .line 449
+    .line 481
     invoke-static {v0, v0}, Landroidx/compose/ui/geometry/OffsetKt;->Offset(FF)J
 
     move-result-wide v9
 
-    .line 450
+    .line 482
     invoke-static {v2, v2}, Landroidx/compose/ui/geometry/SizeKt;->Size(FF)J
 
     move-result-wide v11
 
-    .line 451
+    .line 483
     move-object/from16 v14, p5
 
     check-cast v14, Landroidx/compose/ui/graphics/drawscope/DrawStyle;
@@ -4865,7 +4912,7 @@
 
     move/from16 v7, p2
 
-    .line 444
+    .line 476
     invoke-static/range {v3 .. v18}, Landroidx/compose/ui/graphics/drawscope/DrawScope;->drawArc-yD3GUKo$default(Landroidx/compose/ui/graphics/drawscope/DrawScope;JFFZJJFLandroidx/compose/ui/graphics/drawscope/DrawStyle;Landroidx/compose/ui/graphics/ColorFilter;IILjava/lang/Object;)V
 
     return-void
@@ -4884,7 +4931,7 @@
 
     move-object v5, p3
 
-    .line 458
+    .line 490
     invoke-static/range {v0 .. v5}, Landroidx/compose/material/ProgressIndicatorKt;->drawCircularIndicator-42QJj7c(Landroidx/compose/ui/graphics/drawscope/DrawScope;FFJLandroidx/compose/ui/graphics/drawscope/Stroke;)V
 
     return-void
@@ -4893,7 +4940,7 @@
 .method private static final drawDeterminateCircularIndicator-42QJj7c(Landroidx/compose/ui/graphics/drawscope/DrawScope;FFJLandroidx/compose/ui/graphics/drawscope/Stroke;)V
     .locals 0
 
-    .line 497
+    .line 529
     invoke-static/range {p0 .. p5}, Landroidx/compose/material/ProgressIndicatorKt;->drawCircularIndicator-42QJj7c(Landroidx/compose/ui/graphics/drawscope/DrawScope;FFJLandroidx/compose/ui/graphics/drawscope/Stroke;)V
 
     return-void
@@ -4902,7 +4949,7 @@
 .method private static final drawIndeterminateCircularIndicator-hrjfTZI(Landroidx/compose/ui/graphics/drawscope/DrawScope;FFFJLandroidx/compose/ui/graphics/drawscope/Stroke;)V
     .locals 6
 
-    .line 506
+    .line 538
     invoke-virtual {p6}, Landroidx/compose/ui/graphics/drawscope/Stroke;->getCap-KaPHkGw()I
 
     move-result v0
@@ -4923,7 +4970,7 @@
 
     goto :goto_0
 
-    .line 512
+    .line 544
     :cond_0
     sget v0, Landroidx/compose/material/ProgressIndicatorKt;->CircularIndicatorDiameter:F
 
@@ -4933,7 +4980,7 @@
 
     div-float/2addr v0, v1
 
-    .line 608
+    .line 635
     invoke-static {v0}, Landroidx/compose/ui/unit/Dp;->constructor-impl(F)F
 
     move-result v0
@@ -4953,7 +5000,7 @@
 
     const p1, 0x3dcccccd    # 0.1f
 
-    .line 521
+    .line 553
     invoke-static {p3, p1}, Ljava/lang/Math;->max(FF)F
 
     move-result v2
@@ -4964,7 +5011,7 @@
 
     move-object v5, p6
 
-    .line 523
+    .line 555
     invoke-static/range {v0 .. v5}, Landroidx/compose/material/ProgressIndicatorKt;->drawCircularIndicator-42QJj7c(Landroidx/compose/ui/graphics/drawscope/DrawScope;FFJLandroidx/compose/ui/graphics/drawscope/Stroke;)V
 
     return-void
@@ -4973,7 +5020,7 @@
 .method private static final drawLinearIndicator-qYKTg0g(Landroidx/compose/ui/graphics/drawscope/DrawScope;FFJFI)V
     .locals 22
 
-    .line 224
+    .line 256
     invoke-interface/range {p0 .. p0}, Landroidx/compose/ui/graphics/drawscope/DrawScope;->getSize-NH-jbRc()J
 
     move-result-wide v0
@@ -4982,7 +5029,7 @@
 
     move-result v0
 
-    .line 225
+    .line 257
     invoke-interface/range {p0 .. p0}, Landroidx/compose/ui/graphics/drawscope/DrawScope;->getSize-NH-jbRc()J
 
     move-result-wide v1
@@ -4997,7 +5044,7 @@
 
     div-float v3, v1, v2
 
-    .line 229
+    .line 261
     invoke-interface/range {p0 .. p0}, Landroidx/compose/ui/graphics/drawscope/DrawScope;->getLayoutDirection()Landroidx/compose/ui/unit/LayoutDirection;
 
     move-result-object v4
@@ -5040,7 +5087,7 @@
     :goto_2
     mul-float/2addr v5, v0
 
-    .line 234
+    .line 266
     sget-object v4, Landroidx/compose/ui/graphics/StrokeCap;->Companion:Landroidx/compose/ui/graphics/StrokeCap$Companion;
 
     invoke-virtual {v4}, Landroidx/compose/ui/graphics/StrokeCap$Companion;->getButt-KaPHkGw()I
@@ -5066,12 +5113,12 @@
 
     sub-float/2addr v0, v1
 
-    .line 240
+    .line 272
     invoke-static {v1, v0}, Lkotlin/ranges/RangesKt;->rangeTo(FF)Lkotlin/ranges/ClosedFloatingPointRange;
 
     move-result-object v0
 
-    .line 241
+    .line 273
     invoke-static {v6}, Ljava/lang/Float;->valueOf(F)Ljava/lang/Float;
 
     move-result-object v1
@@ -5088,7 +5135,7 @@
 
     move-result v1
 
-    .line 242
+    .line 274
     invoke-static {v5}, Ljava/lang/Float;->valueOf(F)Ljava/lang/Float;
 
     move-result-object v2
@@ -5107,7 +5154,7 @@
 
     sub-float v2, p2, p1
 
-    .line 244
+    .line 276
     invoke-static {v2}, Ljava/lang/Math;->abs(F)F
 
     move-result v2
@@ -5118,12 +5165,12 @@
 
     if-lez v2, :cond_5
 
-    .line 248
+    .line 280
     invoke-static {v1, v3}, Landroidx/compose/ui/geometry/OffsetKt;->Offset(FF)J
 
     move-result-wide v10
 
-    .line 249
+    .line 281
     invoke-static {v0, v3}, Landroidx/compose/ui/geometry/OffsetKt;->Offset(FF)J
 
     move-result-wide v12
@@ -5148,12 +5195,12 @@
 
     move/from16 v15, p6
 
-    .line 246
+    .line 278
     invoke-static/range {v7 .. v21}, Landroidx/compose/ui/graphics/drawscope/DrawScope;->drawLine-NGM6Ib0$default(Landroidx/compose/ui/graphics/drawscope/DrawScope;JJJFILandroidx/compose/ui/graphics/PathEffect;FLandroidx/compose/ui/graphics/ColorFilter;IILjava/lang/Object;)V
 
     goto :goto_4
 
-    .line 236
+    .line 268
     :cond_4
     :goto_3
     invoke-static {v6, v3}, Landroidx/compose/ui/geometry/OffsetKt;->Offset(FF)J
@@ -5206,8 +5253,54 @@
 
     move v6, p4
 
-    .line 261
+    .line 293
     invoke-static/range {v0 .. v6}, Landroidx/compose/material/ProgressIndicatorKt;->drawLinearIndicator-qYKTg0g(Landroidx/compose/ui/graphics/drawscope/DrawScope;FFJFI)V
 
     return-void
+.end method
+
+.method public static final increaseSemanticsBounds(Landroidx/compose/ui/Modifier;)Landroidx/compose/ui/Modifier;
+    .locals 4
+
+    const/16 v0, 0xa
+
+    int-to-float v0, v0
+
+    .line 620
+    invoke-static {v0}, Landroidx/compose/ui/unit/Dp;->constructor-impl(F)F
+
+    move-result v0
+
+    .line 59
+    new-instance v1, Landroidx/compose/material/ProgressIndicatorKt$increaseSemanticsBounds$1;
+
+    invoke-direct {v1, v0}, Landroidx/compose/material/ProgressIndicatorKt$increaseSemanticsBounds$1;-><init>(F)V
+
+    check-cast v1, Lkotlin/jvm/functions/Function3;
+
+    invoke-static {p0, v1}, Landroidx/compose/ui/layout/LayoutModifierKt;->layout(Landroidx/compose/ui/Modifier;Lkotlin/jvm/functions/Function3;)Landroidx/compose/ui/Modifier;
+
+    move-result-object p0
+
+    .line 77
+    sget-object v1, Landroidx/compose/material/ProgressIndicatorKt$increaseSemanticsBounds$2;->INSTANCE:Landroidx/compose/material/ProgressIndicatorKt$increaseSemanticsBounds$2;
+
+    check-cast v1, Lkotlin/jvm/functions/Function1;
+
+    const/4 v2, 0x1
+
+    invoke-static {p0, v2, v1}, Landroidx/compose/ui/semantics/SemanticsModifierKt;->semantics(Landroidx/compose/ui/Modifier;ZLkotlin/jvm/functions/Function1;)Landroidx/compose/ui/Modifier;
+
+    move-result-object p0
+
+    const/4 v1, 0x0
+
+    const/4 v3, 0x0
+
+    .line 78
+    invoke-static {p0, v1, v0, v2, v3}, Landroidx/compose/foundation/layout/PaddingKt;->padding-VpY3zN4$default(Landroidx/compose/ui/Modifier;FFILjava/lang/Object;)Landroidx/compose/ui/Modifier;
+
+    move-result-object p0
+
+    return-object p0
 .end method

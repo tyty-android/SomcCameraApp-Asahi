@@ -65,11 +65,11 @@
 
 .field final synthetic $p6:Ljava/lang/Object;
 
+.field final synthetic $p7:Ljava/lang/Object;
+
 .field final synthetic $p8:Ljava/lang/Object;
 
 .field final synthetic $p9:Ljava/lang/Object;
-
-.field final synthetic $param7:Ljava/lang/Object;
 
 .field final synthetic this$0:Landroidx/compose/runtime/internal/ComposableLambdaImpl;
 
@@ -92,7 +92,7 @@
 
     iput-object p7, p0, Landroidx/compose/runtime/internal/ComposableLambdaImpl$invoke$9;->$p6:Ljava/lang/Object;
 
-    iput-object p8, p0, Landroidx/compose/runtime/internal/ComposableLambdaImpl$invoke$9;->$param7:Ljava/lang/Object;
+    iput-object p8, p0, Landroidx/compose/runtime/internal/ComposableLambdaImpl$invoke$9;->$p7:Ljava/lang/Object;
 
     iput-object p9, p0, Landroidx/compose/runtime/internal/ComposableLambdaImpl$invoke$9;->$p8:Ljava/lang/Object;
 
@@ -112,7 +112,7 @@
 .method public bridge synthetic invoke(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
 
-    .line 418
+    .line 425
     check-cast p1, Landroidx/compose/runtime/Composer;
 
     check-cast p2, Ljava/lang/Number;
@@ -131,11 +131,7 @@
 .method public final invoke(Landroidx/compose/runtime/Composer;I)V
     .locals 12
 
-    const-string p2, "nc"
-
-    invoke-static {p1, p2}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 419
+    .line 426
     iget-object v0, p0, Landroidx/compose/runtime/internal/ComposableLambdaImpl$invoke$9;->this$0:Landroidx/compose/runtime/internal/ComposableLambdaImpl;
 
     iget-object v1, p0, Landroidx/compose/runtime/internal/ComposableLambdaImpl$invoke$9;->$p1:Ljava/lang/Object;
@@ -150,7 +146,7 @@
 
     iget-object v6, p0, Landroidx/compose/runtime/internal/ComposableLambdaImpl$invoke$9;->$p6:Ljava/lang/Object;
 
-    iget-object v7, p0, Landroidx/compose/runtime/internal/ComposableLambdaImpl$invoke$9;->$param7:Ljava/lang/Object;
+    iget-object v7, p0, Landroidx/compose/runtime/internal/ComposableLambdaImpl$invoke$9;->$p7:Ljava/lang/Object;
 
     iget-object v8, p0, Landroidx/compose/runtime/internal/ComposableLambdaImpl$invoke$9;->$p8:Ljava/lang/Object;
 

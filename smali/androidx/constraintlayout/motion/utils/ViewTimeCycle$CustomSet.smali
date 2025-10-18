@@ -393,7 +393,7 @@
 .end method
 
 .method public setup(I)V
-    .locals 13
+    .locals 14
     .annotation system Ldalvik/annotation/MethodParameters;
         accessFlags = {
             0x0
@@ -440,14 +440,20 @@
 
     iput-object v5, p0, Landroidx/constraintlayout/motion/utils/ViewTimeCycle$CustomSet;->mCache:[F
 
+    const/4 v5, 0x2
+
     .line 232
-    filled-new-array {v0, v4}, [I
+    new-array v5, v5, [I
 
-    move-result-object v4
+    const/4 v6, 0x1
 
-    sget-object v5, Ljava/lang/Double;->TYPE:Ljava/lang/Class;
+    aput v4, v5, v6
 
-    invoke-static {v5, v4}, Ljava/lang/reflect/Array;->newInstance(Ljava/lang/Class;[I)Ljava/lang/Object;
+    aput v0, v5, v2
+
+    sget-object v4, Ljava/lang/Double;->TYPE:Ljava/lang/Class;
+
+    invoke-static {v4, v5}, Ljava/lang/reflect/Array;->newInstance(Ljava/lang/Class;[I)Ljava/lang/Object;
 
     move-result-object v4
 
@@ -459,87 +465,85 @@
     if-ge v5, v0, :cond_1
 
     .line 234
-    iget-object v6, p0, Landroidx/constraintlayout/motion/utils/ViewTimeCycle$CustomSet;->mConstraintAttributeList:Landroid/util/SparseArray;
-
-    invoke-virtual {v6, v5}, Landroid/util/SparseArray;->keyAt(I)I
-
-    move-result v6
-
-    .line 235
     iget-object v7, p0, Landroidx/constraintlayout/motion/utils/ViewTimeCycle$CustomSet;->mConstraintAttributeList:Landroid/util/SparseArray;
 
-    invoke-virtual {v7, v5}, Landroid/util/SparseArray;->valueAt(I)Ljava/lang/Object;
+    invoke-virtual {v7, v5}, Landroid/util/SparseArray;->keyAt(I)I
 
-    move-result-object v7
+    move-result v7
 
-    check-cast v7, Landroidx/constraintlayout/widget/ConstraintAttribute;
-
-    .line 236
-    iget-object v8, p0, Landroidx/constraintlayout/motion/utils/ViewTimeCycle$CustomSet;->mWaveProperties:Landroid/util/SparseArray;
+    .line 235
+    iget-object v8, p0, Landroidx/constraintlayout/motion/utils/ViewTimeCycle$CustomSet;->mConstraintAttributeList:Landroid/util/SparseArray;
 
     invoke-virtual {v8, v5}, Landroid/util/SparseArray;->valueAt(I)Ljava/lang/Object;
 
     move-result-object v8
 
-    check-cast v8, [F
+    check-cast v8, Landroidx/constraintlayout/widget/ConstraintAttribute;
 
-    int-to-double v9, v6
+    .line 236
+    iget-object v9, p0, Landroidx/constraintlayout/motion/utils/ViewTimeCycle$CustomSet;->mWaveProperties:Landroid/util/SparseArray;
 
-    const-wide v11, 0x3f847ae147ae147bL    # 0.01
+    invoke-virtual {v9, v5}, Landroid/util/SparseArray;->valueAt(I)Ljava/lang/Object;
 
-    mul-double/2addr v9, v11
+    move-result-object v9
+
+    check-cast v9, [F
+
+    int-to-double v10, v7
+
+    const-wide v12, 0x3f847ae147ae147bL    # 0.01
+
+    mul-double/2addr v10, v12
 
     .line 237
-    aput-wide v9, v3, v5
+    aput-wide v10, v3, v5
 
     .line 238
-    iget-object v6, p0, Landroidx/constraintlayout/motion/utils/ViewTimeCycle$CustomSet;->mTempValues:[F
+    iget-object v7, p0, Landroidx/constraintlayout/motion/utils/ViewTimeCycle$CustomSet;->mTempValues:[F
 
-    invoke-virtual {v7, v6}, Landroidx/constraintlayout/widget/ConstraintAttribute;->getValuesToInterpolate([F)V
+    invoke-virtual {v8, v7}, Landroidx/constraintlayout/widget/ConstraintAttribute;->getValuesToInterpolate([F)V
 
-    move v6, v2
+    move v7, v2
 
     .line 239
     :goto_1
-    iget-object v7, p0, Landroidx/constraintlayout/motion/utils/ViewTimeCycle$CustomSet;->mTempValues:[F
+    iget-object v8, p0, Landroidx/constraintlayout/motion/utils/ViewTimeCycle$CustomSet;->mTempValues:[F
 
-    array-length v9, v7
+    array-length v10, v8
 
-    if-ge v6, v9, :cond_0
+    if-ge v7, v10, :cond_0
 
     .line 240
-    aget-object v9, v4, v5
+    aget-object v10, v4, v5
 
-    aget v7, v7, v6
+    aget v8, v8, v7
 
-    float-to-double v10, v7
+    float-to-double v11, v8
 
-    aput-wide v10, v9, v6
+    aput-wide v11, v10, v7
 
-    add-int/lit8 v6, v6, 0x1
+    add-int/lit8 v7, v7, 0x1
 
     goto :goto_1
 
     .line 242
     :cond_0
-    aget-object v6, v4, v5
+    aget-object v7, v4, v5
 
-    aget v7, v8, v2
+    aget v8, v9, v2
 
-    float-to-double v9, v7
+    float-to-double v10, v8
 
-    aput-wide v9, v6, v1
+    aput-wide v10, v7, v1
 
-    const/4 v7, 0x1
-
-    add-int/lit8 v9, v1, 0x1
+    add-int/lit8 v8, v1, 0x1
 
     .line 243
-    aget v7, v8, v7
+    aget v9, v9, v6
 
-    float-to-double v7, v7
+    float-to-double v9, v9
 
-    aput-wide v7, v6, v9
+    aput-wide v9, v7, v8
 
     add-int/lit8 v5, v5, 0x1
 

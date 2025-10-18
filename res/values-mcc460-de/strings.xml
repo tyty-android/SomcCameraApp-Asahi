@@ -19,5 +19,4 @@ Bitte WLAN in den EINSTELLUNGEN einschalten."</string>
     <string name="camera_strings_runtime_permission_rationale_network_cta_txt">"Diese App verwendet WLAN und mobile Daten, um Benutzerdaten (z. B. aufgezeichnete Bilder/Videos, Sprachdaten, Kontoinformationen der verwendeten Dienste usw.) an das Internet zu senden.
 Beachten Sie, dass in Abhängigkeit vom Vertrag mit Ihrem Netzbetreiber oder internetdienstanbieter möglicherweise Gebühren für Daten anfallen."</string>
     <string name="camera_strings_streaming_error_wifi_disconnected_txt">Keine WLAN-Verbindung</string>
-    <string name="mv_wireless_network_txt">WLAN/mob. Daten zu verw.</string>
 </resources>

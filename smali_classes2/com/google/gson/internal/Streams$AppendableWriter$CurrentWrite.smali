@@ -27,7 +27,7 @@
 .method private constructor <init>()V
     .locals 0
 
-    .line 126
+    .line 125
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -36,7 +36,7 @@
 .method synthetic constructor <init>(Lcom/google/gson/internal/Streams$1;)V
     .locals 0
 
-    .line 126
+    .line 125
     invoke-direct {p0}, Lcom/google/gson/internal/Streams$AppendableWriter$CurrentWrite;-><init>()V
 
     return-void
@@ -47,7 +47,7 @@
 .method public charAt(I)C
     .locals 0
 
-    .line 139
+    .line 141
     iget-object p0, p0, Lcom/google/gson/internal/Streams$AppendableWriter$CurrentWrite;->chars:[C
 
     aget-char p0, p0, p1
@@ -69,12 +69,12 @@
 .method setChars([C)V
     .locals 0
 
-    .line 131
+    .line 130
     iput-object p1, p0, Lcom/google/gson/internal/Streams$AppendableWriter$CurrentWrite;->chars:[C
 
     const/4 p1, 0x0
 
-    .line 132
+    .line 131
     iput-object p1, p0, Lcom/google/gson/internal/Streams$AppendableWriter$CurrentWrite;->cachedString:Ljava/lang/String;
 
     return-void
@@ -83,7 +83,7 @@
 .method public subSequence(II)Ljava/lang/CharSequence;
     .locals 1
 
-    .line 142
+    .line 146
     new-instance v0, Ljava/lang/String;
 
     iget-object p0, p0, Lcom/google/gson/internal/Streams$AppendableWriter$CurrentWrite;->chars:[C
@@ -98,12 +98,12 @@
 .method public toString()Ljava/lang/String;
     .locals 2
 
-    .line 147
+    .line 152
     iget-object v0, p0, Lcom/google/gson/internal/Streams$AppendableWriter$CurrentWrite;->cachedString:Ljava/lang/String;
 
     if-nez v0, :cond_0
 
-    .line 148
+    .line 153
     new-instance v0, Ljava/lang/String;
 
     iget-object v1, p0, Lcom/google/gson/internal/Streams$AppendableWriter$CurrentWrite;->chars:[C
@@ -112,7 +112,7 @@
 
     iput-object v0, p0, Lcom/google/gson/internal/Streams$AppendableWriter$CurrentWrite;->cachedString:Ljava/lang/String;
 
-    .line 150
+    .line 155
     :cond_0
     iget-object p0, p0, Lcom/google/gson/internal/Streams$AppendableWriter$CurrentWrite;->cachedString:Ljava/lang/String;
 

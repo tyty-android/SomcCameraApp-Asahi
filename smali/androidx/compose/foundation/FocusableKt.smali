@@ -5,7 +5,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/SourceDebugExtension;
-    value = "SMAP\nFocusable.kt\nKotlin\n*S Kotlin\n*F\n+ 1 Focusable.kt\nandroidx/compose/foundation/FocusableKt\n+ 2 InspectableValue.kt\nandroidx/compose/ui/platform/InspectableValueKt\n*L\n1#1,372:1\n146#2:373\n135#2:374\n*S KotlinDebug\n*F\n+ 1 Focusable.kt\nandroidx/compose/foundation/FocusableKt\n*L\n125#1:373\n113#1:374\n*E\n"
+    value = "SMAP\nFocusable.kt\nKotlin\n*S Kotlin\n*F\n+ 1 Focusable.kt\nandroidx/compose/foundation/FocusableKt\n+ 2 InspectableValue.kt\nandroidx/compose/ui/platform/InspectableValueKt\n*L\n1#1,374:1\n146#2:375\n135#2:376\n*S KotlinDebug\n*F\n+ 1 Focusable.kt\nandroidx/compose/foundation/FocusableKt\n*L\n126#1:375\n114#1:376\n*E\n"
 .end annotation
 
 .annotation runtime Lkotlin/Metadata;
@@ -48,10 +48,10 @@
 .method static constructor <clinit>()V
     .locals 2
 
-    .line 112
+    .line 113
     new-instance v0, Landroidx/compose/ui/platform/InspectableModifier;
 
-    .line 374
+    .line 376
     invoke-static {}, Landroidx/compose/ui/platform/InspectableValueKt;->isDebugInspectorInfoEnabled()Z
 
     move-result v1
@@ -71,13 +71,13 @@
 
     move-result-object v1
 
-    .line 112
+    .line 113
     :goto_0
     invoke-direct {v0, v1}, Landroidx/compose/ui/platform/InspectableModifier;-><init>(Lkotlin/jvm/functions/Function1;)V
 
     sput-object v0, Landroidx/compose/foundation/FocusableKt;->focusGroupInspectorInfo:Landroidx/compose/ui/platform/InspectableModifier;
 
-    .line 137
+    .line 138
     new-instance v0, Landroidx/compose/foundation/FocusableKt$FocusableInNonTouchModeElement$1;
 
     invoke-direct {v0}, Landroidx/compose/foundation/FocusableKt$FocusableInNonTouchModeElement$1;-><init>()V
@@ -90,11 +90,7 @@
 .method public static final focusGroup(Landroidx/compose/ui/Modifier;)Landroidx/compose/ui/Modifier;
     .locals 1
 
-    const-string v0, "<this>"
-
-    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 107
+    .line 108
     sget-object v0, Landroidx/compose/foundation/FocusableKt;->focusGroupInspectorInfo:Landroidx/compose/ui/platform/InspectableModifier;
 
     check-cast v0, Landroidx/compose/ui/Modifier;
@@ -103,7 +99,7 @@
 
     move-result-object p0
 
-    .line 108
+    .line 109
     sget-object v0, Landroidx/compose/foundation/FocusableKt$focusGroup$1;->INSTANCE:Landroidx/compose/foundation/FocusableKt$focusGroup$1;
 
     check-cast v0, Lkotlin/jvm/functions/Function1;
@@ -112,7 +108,7 @@
 
     move-result-object p0
 
-    .line 109
+    .line 110
     invoke-static {p0}, Landroidx/compose/ui/focus/FocusModifierKt;->focusTarget(Landroidx/compose/ui/Modifier;)Landroidx/compose/ui/Modifier;
 
     move-result-object p0
@@ -121,35 +117,31 @@
 .end method
 
 .method public static final focusable(Landroidx/compose/ui/Modifier;ZLandroidx/compose/foundation/interaction/MutableInteractionSource;)Landroidx/compose/ui/Modifier;
-    .locals 1
-
-    const-string v0, "<this>"
-
-    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+    .locals 0
 
     if-eqz p1, :cond_0
 
-    .line 75
+    .line 76
     new-instance p1, Landroidx/compose/foundation/FocusableElement;
 
     invoke-direct {p1, p2}, Landroidx/compose/foundation/FocusableElement;-><init>(Landroidx/compose/foundation/interaction/MutableInteractionSource;)V
 
     check-cast p1, Landroidx/compose/ui/Modifier;
 
-    .line 77
+    .line 78
     invoke-static {p1}, Landroidx/compose/ui/focus/FocusModifierKt;->focusTarget(Landroidx/compose/ui/Modifier;)Landroidx/compose/ui/Modifier;
 
     move-result-object p1
 
     goto :goto_0
 
-    .line 79
+    .line 80
     :cond_0
     sget-object p1, Landroidx/compose/ui/Modifier;->Companion:Landroidx/compose/ui/Modifier$Companion;
 
     check-cast p1, Landroidx/compose/ui/Modifier;
 
-    .line 73
+    .line 74
     :goto_0
     invoke-interface {p0, p1}, Landroidx/compose/ui/Modifier;->then(Landroidx/compose/ui/Modifier;)Landroidx/compose/ui/Modifier;
 
@@ -174,7 +166,7 @@
 
     const/4 p2, 0x0
 
-    .line 70
+    .line 71
     :cond_1
     invoke-static {p0, p1, p2}, Landroidx/compose/foundation/FocusableKt;->focusable(Landroidx/compose/ui/Modifier;ZLandroidx/compose/foundation/interaction/MutableInteractionSource;)Landroidx/compose/ui/Modifier;
 
@@ -186,26 +178,22 @@
 .method public static final focusableInNonTouchMode(Landroidx/compose/ui/Modifier;ZLandroidx/compose/foundation/interaction/MutableInteractionSource;)Landroidx/compose/ui/Modifier;
     .locals 3
 
-    const-string v0, "<this>"
-
-    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 125
+    .line 126
     new-instance v0, Landroidx/compose/foundation/FocusableKt$focusableInNonTouchMode$1;
 
     invoke-direct {v0, p1, p2}, Landroidx/compose/foundation/FocusableKt$focusableInNonTouchMode$1;-><init>(ZLandroidx/compose/foundation/interaction/MutableInteractionSource;)V
 
     check-cast v0, Lkotlin/jvm/functions/Function1;
 
-    .line 373
+    .line 375
     sget-object v1, Landroidx/compose/ui/Modifier;->Companion:Landroidx/compose/ui/Modifier$Companion;
 
     check-cast v1, Landroidx/compose/ui/Modifier;
 
-    .line 131
+    .line 132
     sget-object v1, Landroidx/compose/ui/Modifier;->Companion:Landroidx/compose/ui/Modifier$Companion;
 
-    .line 132
+    .line 133
     sget-object v2, Landroidx/compose/foundation/FocusableKt;->FocusableInNonTouchModeElement:Landroidx/compose/foundation/FocusableKt$FocusableInNonTouchModeElement$1;
 
     check-cast v2, Landroidx/compose/ui/Modifier;
@@ -214,12 +202,12 @@
 
     move-result-object v1
 
-    .line 133
+    .line 134
     invoke-static {v1, p1, p2}, Landroidx/compose/foundation/FocusableKt;->focusable(Landroidx/compose/ui/Modifier;ZLandroidx/compose/foundation/interaction/MutableInteractionSource;)Landroidx/compose/ui/Modifier;
 
     move-result-object p1
 
-    .line 373
+    .line 375
     invoke-static {p0, v0, p1}, Landroidx/compose/ui/platform/InspectableValueKt;->inspectableWrapper(Landroidx/compose/ui/Modifier;Lkotlin/jvm/functions/Function1;Landroidx/compose/ui/Modifier;)Landroidx/compose/ui/Modifier;
 
     move-result-object p0

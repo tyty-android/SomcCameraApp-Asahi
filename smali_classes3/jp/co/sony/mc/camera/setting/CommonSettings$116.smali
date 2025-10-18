@@ -21,7 +21,7 @@
 .method constructor <init>()V
     .locals 0
 
-    .line 1232
+    .line 1236
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -42,8 +42,21 @@
         }
     .end annotation
 
-    .line 1236
-    invoke-static {}, Ljp/co/sony/mc/camera/configuration/parameters/FunctionCustom;->getOptions()[Ljp/co/sony/mc/camera/configuration/parameters/FunctionCustom;
+    .line 1240
+    check-cast p1, Ljp/co/sony/mc/camera/setting/CommonSettings;
+
+    .line 1241
+    invoke-static {p1}, Ljp/co/sony/mc/camera/setting/CommonSettings;->-$$Nest$fgetmCameraId(Ljp/co/sony/mc/camera/setting/CommonSettings;)Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;
+
+    move-result-object p0
+
+    .line 1242
+    invoke-static {p0}, Ljp/co/sony/mc/camera/util/capability/PlatformCapability;->isForceSound(Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;)Z
+
+    move-result p0
+
+    .line 1241
+    invoke-static {p0}, Ljp/co/sony/mc/camera/configuration/parameters/ShutterSound;->getOptions(Z)[Ljp/co/sony/mc/camera/configuration/parameters/ShutterSound;
 
     move-result-object p0
 

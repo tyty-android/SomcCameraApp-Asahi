@@ -21,7 +21,7 @@
 .method constructor <init>()V
     .locals 0
 
-    .line 1216
+    .line 1222
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -42,21 +42,8 @@
         }
     .end annotation
 
-    .line 1220
-    check-cast p1, Ljp/co/sony/mc/camera/setting/CommonSettings;
-
-    .line 1221
-    invoke-static {p1}, Ljp/co/sony/mc/camera/setting/CommonSettings;->-$$Nest$fgetmCameraId(Ljp/co/sony/mc/camera/setting/CommonSettings;)Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;
-
-    move-result-object p0
-
-    .line 1222
-    invoke-static {p0}, Ljp/co/sony/mc/camera/util/capability/PlatformCapability;->isForceSound(Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;)Z
-
-    move-result p0
-
-    .line 1221
-    invoke-static {p0}, Ljp/co/sony/mc/camera/configuration/parameters/ShutterSound;->getOptions(Z)[Ljp/co/sony/mc/camera/configuration/parameters/ShutterSound;
+    .line 1226
+    invoke-static {}, Ljp/co/sony/mc/camera/configuration/parameters/FastCapture;->values()[Ljp/co/sony/mc/camera/configuration/parameters/FastCapture;
 
     move-result-object p0
 

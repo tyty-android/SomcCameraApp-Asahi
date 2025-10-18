@@ -49,11 +49,15 @@
 
     if-eqz p1, :cond_0
 
-    const-string p1, "OnClickNegativeListener onClick()"
+    const/4 p1, 0x1
 
-    filled-new-array {p1}, [Ljava/lang/String;
+    new-array p1, p1, [Ljava/lang/String;
 
-    move-result-object p1
+    const/4 p2, 0x0
+
+    const-string v0, "OnClickNegativeListener onClick()"
+
+    aput-object v0, p1, p2
 
     invoke-static {p1}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 

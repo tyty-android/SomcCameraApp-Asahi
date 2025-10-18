@@ -15,12 +15,12 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/SourceDebugExtension;
-    value = "SMAP\nAnnotatedString.kt\nKotlin\n*S Kotlin\n*F\n+ 1 AnnotatedString.kt\nandroidx/compose/ui/text/AnnotatedString\n+ 2 _Collections.kt\nkotlin/collections/CollectionsKt___CollectionsKt\n+ 3 ListUtils.kt\nandroidx/compose/ui/util/ListUtilsKt\n+ 4 fake.kt\nkotlin/jvm/internal/FakeKt\n+ 5 TempListUtils.kt\nandroidx/compose/ui/text/TempListUtilsKt\n*L\n1#1,1126:1\n1045#2:1127\n33#3,6:1128\n33#3,4:1138\n38#3:1144\n101#3,2:1146\n33#3,6:1148\n103#3:1154\n33#3,4:1158\n38#3:1164\n33#3,4:1169\n38#3:1175\n33#3,4:1180\n38#3:1186\n1#4:1134\n35#5,3:1135\n38#5,2:1142\n40#5:1145\n35#5,3:1155\n38#5,2:1162\n40#5:1165\n35#5,3:1166\n38#5,2:1173\n40#5:1176\n35#5,3:1177\n38#5,2:1184\n40#5:1187\n*S KotlinDebug\n*F\n+ 1 AnnotatedString.kt\nandroidx/compose/ui/text/AnnotatedString\n*L\n86#1:1127\n86#1:1128,6\n159#1:1138,4\n159#1:1144\n167#1:1146,2\n167#1:1148,6\n167#1:1154\n182#1:1158,4\n182#1:1164\n197#1:1169,4\n197#1:1175\n213#1:1180,4\n213#1:1186\n159#1:1135,3\n159#1:1142,2\n159#1:1145\n182#1:1155,3\n182#1:1162,2\n182#1:1165\n197#1:1166,3\n197#1:1173,2\n197#1:1176\n213#1:1177,3\n213#1:1184,2\n213#1:1187\n*E\n"
+    value = "SMAP\nAnnotatedString.kt\nKotlin\n*S Kotlin\n*F\n+ 1 AnnotatedString.kt\nandroidx/compose/ui/text/AnnotatedString\n+ 2 _Collections.kt\nkotlin/collections/CollectionsKt___CollectionsKt\n+ 3 ListUtils.kt\nandroidx/compose/ui/util/ListUtilsKt\n+ 4 fake.kt\nkotlin/jvm/internal/FakeKt\n*L\n1#1,1128:1\n1045#2:1129\n33#3,6:1130\n235#3,3:1137\n33#3,4:1140\n238#3,2:1144\n38#3:1146\n240#3:1147\n101#3,2:1148\n33#3,6:1150\n103#3:1156\n235#3,3:1157\n33#3,4:1160\n238#3,2:1164\n38#3:1166\n240#3:1167\n235#3,3:1168\n33#3,4:1171\n238#3,2:1175\n38#3:1177\n240#3:1178\n235#3,3:1179\n33#3,4:1182\n238#3,2:1186\n38#3:1188\n240#3:1189\n1#4:1136\n*S KotlinDebug\n*F\n+ 1 AnnotatedString.kt\nandroidx/compose/ui/text/AnnotatedString\n*L\n87#1:1129\n87#1:1130,6\n160#1:1137,3\n160#1:1140,4\n160#1:1144,2\n160#1:1146\n160#1:1147\n168#1:1148,2\n168#1:1150,6\n168#1:1156\n183#1:1157,3\n183#1:1160,4\n183#1:1164,2\n183#1:1166\n183#1:1167\n198#1:1168,3\n198#1:1171,4\n198#1:1175,2\n198#1:1177\n198#1:1178\n214#1:1179,3\n214#1:1182,4\n214#1:1186,2\n214#1:1188\n214#1:1189\n*E\n"
 .end annotation
 
 .annotation runtime Lkotlin/Metadata;
     d1 = {
-        "\u0000\\\n\u0002\u0018\u0002\n\u0002\u0010\r\n\u0000\n\u0002\u0010\u000e\n\u0000\n\u0002\u0010 \n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0004\n\u0002\u0010\u0000\n\u0002\u0008\u0004\n\u0002\u0010\u0008\n\u0002\u0008\t\n\u0002\u0010\u000b\n\u0002\u0008\u0002\n\u0002\u0010\u000c\n\u0002\u0008\u0006\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0005\n\u0002\u0018\u0002\n\u0002\u0008\u0008\u0008\u0007\u0018\u00002\u00020\u0001:\u000256B;\u0008\u0016\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\u0014\u0008\u0002\u0010\u0004\u001a\u000e\u0012\n\u0012\u0008\u0012\u0004\u0012\u00020\u00070\u00060\u0005\u0012\u0014\u0008\u0002\u0010\u0008\u001a\u000e\u0012\n\u0012\u0008\u0012\u0004\u0012\u00020\t0\u00060\u0005\u00a2\u0006\u0002\u0010\nBY\u0008\u0000\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\u0016\u0008\u0002\u0010\u000b\u001a\u0010\u0012\n\u0012\u0008\u0012\u0004\u0012\u00020\u00070\u0006\u0018\u00010\u0005\u0012\u0016\u0008\u0002\u0010\u000c\u001a\u0010\u0012\n\u0012\u0008\u0012\u0004\u0012\u00020\t0\u0006\u0018\u00010\u0005\u0012\u0018\u0008\u0002\u0010\r\u001a\u0012\u0012\u000c\u0012\n\u0012\u0006\u0008\u0001\u0012\u00020\u000e0\u0006\u0018\u00010\u0005\u00a2\u0006\u0002\u0010\u000fJ\u0013\u0010\u001c\u001a\u00020\u001d2\u0008\u0010\u001e\u001a\u0004\u0018\u00010\u000eH\u0096\u0002J\u0011\u0010\u001f\u001a\u00020 2\u0006\u0010!\u001a\u00020\u0013H\u0096\u0002J\"\u0010\"\u001a\u000e\u0012\n\u0012\u0008\u0012\u0004\u0012\u00020\u00030\u00060\u00052\u0006\u0010#\u001a\u00020\u00132\u0006\u0010$\u001a\u00020\u0013J*\u0010\"\u001a\u000e\u0012\n\u0012\u0008\u0012\u0004\u0012\u00020\u00030\u00060\u00052\u0006\u0010%\u001a\u00020\u00032\u0006\u0010#\u001a\u00020\u00132\u0006\u0010$\u001a\u00020\u0013J\"\u0010&\u001a\u000e\u0012\n\u0012\u0008\u0012\u0004\u0012\u00020\'0\u00060\u00052\u0006\u0010#\u001a\u00020\u00132\u0006\u0010$\u001a\u00020\u0013J$\u0010(\u001a\u000e\u0012\n\u0012\u0008\u0012\u0004\u0012\u00020)0\u00060\u00052\u0006\u0010#\u001a\u00020\u00132\u0006\u0010$\u001a\u00020\u0013H\u0007J\u001e\u0010*\u001a\u00020\u001d2\u0006\u0010%\u001a\u00020\u00032\u0006\u0010#\u001a\u00020\u00132\u0006\u0010$\u001a\u00020\u0013J\u0008\u0010+\u001a\u00020\u0013H\u0016J\u0011\u0010,\u001a\u00020\u00002\u0006\u0010\u001e\u001a\u00020\u0000H\u0087\u0002J\u001b\u0010-\u001a\u00020\u00002\u0006\u0010.\u001a\u00020/\u00f8\u0001\u0000\u00f8\u0001\u0001\u00a2\u0006\u0004\u00080\u00101J\u0018\u0010-\u001a\u00020\u00002\u0006\u00102\u001a\u00020\u00132\u0006\u00103\u001a\u00020\u0013H\u0016J\u0008\u00104\u001a\u00020\u0003H\u0016R$\u0010\r\u001a\u0012\u0012\u000c\u0012\n\u0012\u0006\u0008\u0001\u0012\u00020\u000e0\u0006\u0018\u00010\u0005X\u0080\u0004\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\u0010\u0010\u0011R\u0014\u0010\u0012\u001a\u00020\u00138VX\u0096\u0004\u00a2\u0006\u0006\u001a\u0004\u0008\u0014\u0010\u0015R\u001d\u0010\u0008\u001a\u000e\u0012\n\u0012\u0008\u0012\u0004\u0012\u00020\t0\u00060\u00058F\u00a2\u0006\u0006\u001a\u0004\u0008\u0016\u0010\u0011R\"\u0010\u000c\u001a\u0010\u0012\n\u0012\u0008\u0012\u0004\u0012\u00020\t0\u0006\u0018\u00010\u0005X\u0080\u0004\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\u0017\u0010\u0011R\u001d\u0010\u0004\u001a\u000e\u0012\n\u0012\u0008\u0012\u0004\u0012\u00020\u00070\u00060\u00058F\u00a2\u0006\u0006\u001a\u0004\u0008\u0018\u0010\u0011R\"\u0010\u000b\u001a\u0010\u0012\n\u0012\u0008\u0012\u0004\u0012\u00020\u00070\u0006\u0018\u00010\u0005X\u0080\u0004\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\u0019\u0010\u0011R\u0011\u0010\u0002\u001a\u00020\u0003\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\u001a\u0010\u001b\u0082\u0002\u000b\n\u0005\u0008\u00a1\u001e0\u0001\n\u0002\u0008\u0019\u00a8\u00067"
+        "\u0000\\\n\u0002\u0018\u0002\n\u0002\u0010\r\n\u0000\n\u0002\u0010\u000e\n\u0000\n\u0002\u0010 \n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0004\n\u0002\u0010\u0000\n\u0002\u0008\u0004\n\u0002\u0010\u0008\n\u0002\u0008\t\n\u0002\u0010\u000b\n\u0002\u0008\u0002\n\u0002\u0010\u000c\n\u0002\u0008\u0006\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0005\n\u0002\u0018\u0002\n\u0002\u0008\u0008\u0008\u0007\u0018\u00002\u00020\u0001:\u000256B;\u0008\u0016\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\u0014\u0008\u0002\u0010\u0004\u001a\u000e\u0012\n\u0012\u0008\u0012\u0004\u0012\u00020\u00070\u00060\u0005\u0012\u0014\u0008\u0002\u0010\u0008\u001a\u000e\u0012\n\u0012\u0008\u0012\u0004\u0012\u00020\t0\u00060\u0005\u00a2\u0006\u0002\u0010\nBY\u0008\u0000\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\u0016\u0008\u0002\u0010\u000b\u001a\u0010\u0012\n\u0012\u0008\u0012\u0004\u0012\u00020\u00070\u0006\u0018\u00010\u0005\u0012\u0016\u0008\u0002\u0010\u000c\u001a\u0010\u0012\n\u0012\u0008\u0012\u0004\u0012\u00020\t0\u0006\u0018\u00010\u0005\u0012\u0018\u0008\u0002\u0010\r\u001a\u0012\u0012\u000c\u0012\n\u0012\u0006\u0008\u0001\u0012\u00020\u000e0\u0006\u0018\u00010\u0005\u00a2\u0006\u0002\u0010\u000fJ\u0013\u0010\u001c\u001a\u00020\u001d2\u0008\u0010\u001e\u001a\u0004\u0018\u00010\u000eH\u0096\u0002J\u0011\u0010\u001f\u001a\u00020 2\u0006\u0010!\u001a\u00020\u0013H\u0096\u0002J\"\u0010\"\u001a\u000e\u0012\n\u0012\u0008\u0012\u0004\u0012\u00020\u00030\u00060\u00052\u0006\u0010#\u001a\u00020\u00132\u0006\u0010$\u001a\u00020\u0013J*\u0010\"\u001a\u000e\u0012\n\u0012\u0008\u0012\u0004\u0012\u00020\u00030\u00060\u00052\u0006\u0010%\u001a\u00020\u00032\u0006\u0010#\u001a\u00020\u00132\u0006\u0010$\u001a\u00020\u0013J\"\u0010&\u001a\u000e\u0012\n\u0012\u0008\u0012\u0004\u0012\u00020\'0\u00060\u00052\u0006\u0010#\u001a\u00020\u00132\u0006\u0010$\u001a\u00020\u0013J$\u0010(\u001a\u000e\u0012\n\u0012\u0008\u0012\u0004\u0012\u00020)0\u00060\u00052\u0006\u0010#\u001a\u00020\u00132\u0006\u0010$\u001a\u00020\u0013H\u0007J\u001e\u0010*\u001a\u00020\u001d2\u0006\u0010%\u001a\u00020\u00032\u0006\u0010#\u001a\u00020\u00132\u0006\u0010$\u001a\u00020\u0013J\u0008\u0010+\u001a\u00020\u0013H\u0016J\u0011\u0010,\u001a\u00020\u00002\u0006\u0010\u001e\u001a\u00020\u0000H\u0087\u0002J\u0018\u0010-\u001a\u00020\u00002\u0006\u0010.\u001a\u00020/\u00f8\u0001\u0000\u00a2\u0006\u0004\u00080\u00101J\u0018\u0010-\u001a\u00020\u00002\u0006\u00102\u001a\u00020\u00132\u0006\u00103\u001a\u00020\u0013H\u0016J\u0008\u00104\u001a\u00020\u0003H\u0016R$\u0010\r\u001a\u0012\u0012\u000c\u0012\n\u0012\u0006\u0008\u0001\u0012\u00020\u000e0\u0006\u0018\u00010\u0005X\u0080\u0004\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\u0010\u0010\u0011R\u0014\u0010\u0012\u001a\u00020\u00138VX\u0096\u0004\u00a2\u0006\u0006\u001a\u0004\u0008\u0014\u0010\u0015R\u001d\u0010\u0008\u001a\u000e\u0012\n\u0012\u0008\u0012\u0004\u0012\u00020\t0\u00060\u00058F\u00a2\u0006\u0006\u001a\u0004\u0008\u0016\u0010\u0011R\"\u0010\u000c\u001a\u0010\u0012\n\u0012\u0008\u0012\u0004\u0012\u00020\t0\u0006\u0018\u00010\u0005X\u0080\u0004\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\u0017\u0010\u0011R\u001d\u0010\u0004\u001a\u000e\u0012\n\u0012\u0008\u0012\u0004\u0012\u00020\u00070\u00060\u00058F\u00a2\u0006\u0006\u001a\u0004\u0008\u0018\u0010\u0011R\"\u0010\u000b\u001a\u0010\u0012\n\u0012\u0008\u0012\u0004\u0012\u00020\u00070\u0006\u0018\u00010\u0005X\u0080\u0004\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\u0019\u0010\u0011R\u0011\u0010\u0002\u001a\u00020\u0003\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\u001a\u0010\u001b\u0082\u0002\u0007\n\u0005\u0008\u00a1\u001e0\u0001\u00a8\u00067"
     }
     d2 = {
         "Landroidx/compose/ui/text/AnnotatedString;",
@@ -156,19 +156,7 @@
         }
     .end annotation
 
-    const-string/jumbo v0, "text"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string/jumbo v0, "spanStyles"
-
-    invoke-static {p2, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string v0, "paragraphStyles"
-
-    invoke-static {p3, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 78
+    .line 79
     check-cast p2, Ljava/util/Collection;
 
     invoke-interface {p2}, Ljava/util/Collection;->isEmpty()Z
@@ -184,7 +172,7 @@
     :cond_0
     check-cast p2, Ljava/util/List;
 
-    .line 79
+    .line 80
     check-cast p3, Ljava/util/Collection;
 
     invoke-interface {p3}, Ljava/util/Collection;->isEmpty()Z
@@ -198,7 +186,7 @@
     :cond_1
     check-cast p3, Ljava/util/List;
 
-    .line 76
+    .line 77
     invoke-direct {p0, p1, p2, p3, v1}, Landroidx/compose/ui/text/AnnotatedString;-><init>(Ljava/lang/String;Ljava/util/List;Ljava/util/List;Ljava/util/List;)V
 
     return-void
@@ -211,7 +199,7 @@
 
     if-eqz p5, :cond_0
 
-    .line 74
+    .line 75
     invoke-static {}, Lkotlin/collections/CollectionsKt;->emptyList()Ljava/util/List;
 
     move-result-object p2
@@ -221,12 +209,12 @@
 
     if-eqz p4, :cond_1
 
-    .line 75
+    .line 76
     invoke-static {}, Lkotlin/collections/CollectionsKt;->emptyList()Ljava/util/List;
 
     move-result-object p3
 
-    .line 72
+    .line 73
     :cond_1
     invoke-direct {p0, p1, p2, p3}, Landroidx/compose/ui/text/AnnotatedString;-><init>(Ljava/lang/String;Ljava/util/List;Ljava/util/List;)V
 
@@ -256,31 +244,27 @@
         }
     .end annotation
 
-    const-string/jumbo v0, "text"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 32
+    .line 33
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 34
+    .line 35
     iput-object p1, p0, Landroidx/compose/ui/text/AnnotatedString;->text:Ljava/lang/String;
 
-    .line 35
+    .line 36
     iput-object p2, p0, Landroidx/compose/ui/text/AnnotatedString;->spanStylesOrNull:Ljava/util/List;
 
-    .line 36
+    .line 37
     iput-object p3, p0, Landroidx/compose/ui/text/AnnotatedString;->paragraphStylesOrNull:Ljava/util/List;
 
-    .line 37
+    .line 38
     iput-object p4, p0, Landroidx/compose/ui/text/AnnotatedString;->annotations:Ljava/util/List;
 
     if-eqz p3, :cond_2
 
-    .line 86
+    .line 87
     check-cast p3, Ljava/lang/Iterable;
 
-    .line 1127
+    .line 1129
     new-instance p1, Landroidx/compose/ui/text/AnnotatedString$special$$inlined$sortedBy$1;
 
     invoke-direct {p1}, Landroidx/compose/ui/text/AnnotatedString$special$$inlined$sortedBy$1;-><init>()V
@@ -293,7 +277,7 @@
 
     if-eqz p1, :cond_2
 
-    .line 1129
+    .line 1131
     invoke-interface {p1}, Ljava/util/List;->size()I
 
     move-result p2
@@ -305,22 +289,22 @@
     :goto_0
     if-ge p4, p2, :cond_2
 
-    .line 1130
+    .line 1132
     invoke-interface {p1, p4}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
     move-result-object v0
 
-    .line 1131
+    .line 1133
     check-cast v0, Landroidx/compose/ui/text/AnnotatedString$Range;
 
-    .line 87
+    .line 88
     invoke-virtual {v0}, Landroidx/compose/ui/text/AnnotatedString$Range;->getStart()I
 
     move-result v1
 
     if-lt v1, p3, :cond_1
 
-    .line 90
+    .line 91
     invoke-virtual {v0}, Landroidx/compose/ui/text/AnnotatedString$Range;->getEnd()I
 
     move-result p3
@@ -333,7 +317,7 @@
 
     if-gt p3, v1, :cond_0
 
-    .line 94
+    .line 95
     invoke-virtual {v0}, Landroidx/compose/ui/text/AnnotatedString$Range;->getEnd()I
 
     move-result p3
@@ -342,7 +326,7 @@
 
     goto :goto_0
 
-    .line 91
+    .line 92
     :cond_0
     new-instance p0, Ljava/lang/StringBuilder;
 
@@ -382,7 +366,7 @@
 
     move-result-object p0
 
-    .line 90
+    .line 91
     new-instance p1, Ljava/lang/IllegalArgumentException;
 
     invoke-virtual {p0}, Ljava/lang/Object;->toString()Ljava/lang/String;
@@ -393,7 +377,7 @@
 
     throw p1
 
-    .line 87
+    .line 88
     :cond_1
     new-instance p0, Ljava/lang/IllegalArgumentException;
 
@@ -436,7 +420,7 @@
 
     move-object p4, v0
 
-    .line 33
+    .line 34
     :cond_2
     invoke-direct {p0, p1, p2, p3, p4}, Landroidx/compose/ui/text/AnnotatedString;-><init>(Ljava/lang/String;Ljava/util/List;Ljava/util/List;Ljava/util/List;)V
 
@@ -448,7 +432,7 @@
 .method public final bridge charAt(I)C
     .locals 0
 
-    .line 32
+    .line 33
     invoke-virtual {p0, p1}, Landroidx/compose/ui/text/AnnotatedString;->get(I)C
 
     move-result p0
@@ -465,7 +449,7 @@
 
     return v0
 
-    .line 219
+    .line 220
     :cond_0
     instance-of v1, p1, Landroidx/compose/ui/text/AnnotatedString;
 
@@ -475,7 +459,7 @@
 
     return v2
 
-    .line 220
+    .line 221
     :cond_1
     iget-object v1, p0, Landroidx/compose/ui/text/AnnotatedString;->text:Ljava/lang/String;
 
@@ -491,7 +475,7 @@
 
     return v2
 
-    .line 221
+    .line 222
     :cond_2
     iget-object v1, p0, Landroidx/compose/ui/text/AnnotatedString;->spanStylesOrNull:Ljava/util/List;
 
@@ -505,7 +489,7 @@
 
     return v2
 
-    .line 222
+    .line 223
     :cond_3
     iget-object v1, p0, Landroidx/compose/ui/text/AnnotatedString;->paragraphStylesOrNull:Ljava/util/List;
 
@@ -519,7 +503,7 @@
 
     return v2
 
-    .line 223
+    .line 224
     :cond_4
     iget-object p0, p0, Landroidx/compose/ui/text/AnnotatedString;->annotations:Ljava/util/List;
 
@@ -540,7 +524,7 @@
 .method public get(I)C
     .locals 0
 
-    .line 101
+    .line 102
     iget-object p0, p0, Landroidx/compose/ui/text/AnnotatedString;->text:Ljava/lang/String;
 
     invoke-virtual {p0, p1}, Ljava/lang/String;->charAt(I)C
@@ -563,7 +547,7 @@
         }
     .end annotation
 
-    .line 37
+    .line 38
     iget-object p0, p0, Landroidx/compose/ui/text/AnnotatedString;->annotations:Ljava/util/List;
 
     return-object p0
@@ -572,7 +556,7 @@
 .method public getLength()I
     .locals 0
 
-    .line 99
+    .line 100
     iget-object p0, p0, Landroidx/compose/ui/text/AnnotatedString;->text:Ljava/lang/String;
 
     invoke-virtual {p0}, Ljava/lang/String;->length()I
@@ -594,7 +578,7 @@
         }
     .end annotation
 
-    .line 50
+    .line 51
     iget-object p0, p0, Landroidx/compose/ui/text/AnnotatedString;->paragraphStylesOrNull:Ljava/util/List;
 
     if-nez p0, :cond_0
@@ -619,7 +603,7 @@
         }
     .end annotation
 
-    .line 36
+    .line 37
     iget-object p0, p0, Landroidx/compose/ui/text/AnnotatedString;->paragraphStylesOrNull:Ljava/util/List;
 
     return-object p0
@@ -637,7 +621,7 @@
         }
     .end annotation
 
-    .line 44
+    .line 45
     iget-object p0, p0, Landroidx/compose/ui/text/AnnotatedString;->spanStylesOrNull:Ljava/util/List;
 
     if-nez p0, :cond_0
@@ -662,7 +646,7 @@
         }
     .end annotation
 
-    .line 35
+    .line 36
     iget-object p0, p0, Landroidx/compose/ui/text/AnnotatedString;->spanStylesOrNull:Ljava/util/List;
 
     return-object p0
@@ -680,12 +664,12 @@
         }
     .end annotation
 
-    .line 182
+    .line 183
     iget-object p0, p0, Landroidx/compose/ui/text/AnnotatedString;->annotations:Ljava/util/List;
 
     if-eqz p0, :cond_2
 
-    .line 1156
+    .line 1158
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-interface {p0}, Ljava/util/List;->size()I
@@ -694,7 +678,7 @@
 
     invoke-direct {v0, v1}, Ljava/util/ArrayList;-><init>(I)V
 
-    .line 1159
+    .line 1161
     invoke-interface {p0}, Ljava/util/List;->size()I
 
     move-result v1
@@ -704,17 +688,17 @@
     :goto_0
     if-ge v2, v1, :cond_1
 
-    .line 1160
+    .line 1162
     invoke-interface {p0, v2}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
     move-result-object v3
 
-    .line 1162
+    .line 1164
     move-object v4, v3
 
     check-cast v4, Landroidx/compose/ui/text/AnnotatedString$Range;
 
-    .line 183
+    .line 184
     invoke-virtual {v4}, Landroidx/compose/ui/text/AnnotatedString$Range;->getItem()Ljava/lang/Object;
 
     move-result-object v5
@@ -737,7 +721,7 @@
 
     if-eqz v4, :cond_0
 
-    .line 1162
+    .line 1164
     move-object v4, v0
 
     check-cast v4, Ljava/util/Collection;
@@ -749,19 +733,19 @@
 
     goto :goto_0
 
-    .line 1165
+    .line 1167
     :cond_1
     check-cast v0, Ljava/util/List;
 
     goto :goto_1
 
-    .line 184
+    .line 185
     :cond_2
     invoke-static {}, Lkotlin/collections/CollectionsKt;->emptyList()Ljava/util/List;
 
     move-result-object v0
 
-    .line 182
+    .line 183
     :goto_1
     const-string p0, "null cannot be cast to non-null type kotlin.collections.List<androidx.compose.ui.text.AnnotatedString.Range<kotlin.String>>"
 
@@ -784,16 +768,12 @@
         }
     .end annotation
 
-    const-string/jumbo v0, "tag"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 159
+    .line 160
     iget-object p0, p0, Landroidx/compose/ui/text/AnnotatedString;->annotations:Ljava/util/List;
 
     if-eqz p0, :cond_2
 
-    .line 1136
+    .line 1138
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-interface {p0}, Ljava/util/List;->size()I
@@ -802,7 +782,7 @@
 
     invoke-direct {v0, v1}, Ljava/util/ArrayList;-><init>(I)V
 
-    .line 1139
+    .line 1141
     invoke-interface {p0}, Ljava/util/List;->size()I
 
     move-result v1
@@ -812,17 +792,17 @@
     :goto_0
     if-ge v2, v1, :cond_1
 
-    .line 1140
+    .line 1142
     invoke-interface {p0, v2}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
     move-result-object v3
 
-    .line 1142
+    .line 1144
     move-object v4, v3
 
     check-cast v4, Landroidx/compose/ui/text/AnnotatedString$Range;
 
-    .line 160
+    .line 161
     invoke-virtual {v4}, Landroidx/compose/ui/text/AnnotatedString$Range;->getItem()Ljava/lang/Object;
 
     move-result-object v5
@@ -855,7 +835,7 @@
 
     if-eqz v4, :cond_0
 
-    .line 1142
+    .line 1144
     move-object v4, v0
 
     check-cast v4, Ljava/util/Collection;
@@ -867,19 +847,19 @@
 
     goto :goto_0
 
-    .line 1145
+    .line 1147
     :cond_1
     check-cast v0, Ljava/util/List;
 
     goto :goto_1
 
-    .line 161
+    .line 162
     :cond_2
     invoke-static {}, Lkotlin/collections/CollectionsKt;->emptyList()Ljava/util/List;
 
     move-result-object v0
 
-    .line 159
+    .line 160
     :goto_1
     const-string p0, "null cannot be cast to non-null type kotlin.collections.List<androidx.compose.ui.text.AnnotatedString.Range<kotlin.String>>"
 
@@ -891,7 +871,7 @@
 .method public final getText()Ljava/lang/String;
     .locals 0
 
-    .line 34
+    .line 35
     iget-object p0, p0, Landroidx/compose/ui/text/AnnotatedString;->text:Ljava/lang/String;
 
     return-object p0
@@ -909,12 +889,12 @@
         }
     .end annotation
 
-    .line 197
+    .line 198
     iget-object p0, p0, Landroidx/compose/ui/text/AnnotatedString;->annotations:Ljava/util/List;
 
     if-eqz p0, :cond_2
 
-    .line 1167
+    .line 1169
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-interface {p0}, Ljava/util/List;->size()I
@@ -923,7 +903,7 @@
 
     invoke-direct {v0, v1}, Ljava/util/ArrayList;-><init>(I)V
 
-    .line 1170
+    .line 1172
     invoke-interface {p0}, Ljava/util/List;->size()I
 
     move-result v1
@@ -933,17 +913,17 @@
     :goto_0
     if-ge v2, v1, :cond_1
 
-    .line 1171
+    .line 1173
     invoke-interface {p0, v2}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
     move-result-object v3
 
-    .line 1173
+    .line 1175
     move-object v4, v3
 
     check-cast v4, Landroidx/compose/ui/text/AnnotatedString$Range;
 
-    .line 198
+    .line 199
     invoke-virtual {v4}, Landroidx/compose/ui/text/AnnotatedString$Range;->getItem()Ljava/lang/Object;
 
     move-result-object v5
@@ -966,7 +946,7 @@
 
     if-eqz v4, :cond_0
 
-    .line 1173
+    .line 1175
     move-object v4, v0
 
     check-cast v4, Ljava/util/Collection;
@@ -978,19 +958,19 @@
 
     goto :goto_0
 
-    .line 1176
+    .line 1178
     :cond_1
     check-cast v0, Ljava/util/List;
 
     goto :goto_1
 
-    .line 199
+    .line 200
     :cond_2
     invoke-static {}, Lkotlin/collections/CollectionsKt;->emptyList()Ljava/util/List;
 
     move-result-object v0
 
-    .line 197
+    .line 198
     :goto_1
     const-string p0, "null cannot be cast to non-null type kotlin.collections.List<androidx.compose.ui.text.AnnotatedString.Range<androidx.compose.ui.text.TtsAnnotation>>"
 
@@ -1011,12 +991,12 @@
         }
     .end annotation
 
-    .line 213
+    .line 214
     iget-object p0, p0, Landroidx/compose/ui/text/AnnotatedString;->annotations:Ljava/util/List;
 
     if-eqz p0, :cond_2
 
-    .line 1178
+    .line 1180
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-interface {p0}, Ljava/util/List;->size()I
@@ -1025,7 +1005,7 @@
 
     invoke-direct {v0, v1}, Ljava/util/ArrayList;-><init>(I)V
 
-    .line 1181
+    .line 1183
     invoke-interface {p0}, Ljava/util/List;->size()I
 
     move-result v1
@@ -1035,17 +1015,17 @@
     :goto_0
     if-ge v2, v1, :cond_1
 
-    .line 1182
+    .line 1184
     invoke-interface {p0, v2}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
     move-result-object v3
 
-    .line 1184
+    .line 1186
     move-object v4, v3
 
     check-cast v4, Landroidx/compose/ui/text/AnnotatedString$Range;
 
-    .line 214
+    .line 215
     invoke-virtual {v4}, Landroidx/compose/ui/text/AnnotatedString$Range;->getItem()Ljava/lang/Object;
 
     move-result-object v5
@@ -1068,7 +1048,7 @@
 
     if-eqz v4, :cond_0
 
-    .line 1184
+    .line 1186
     move-object v4, v0
 
     check-cast v4, Ljava/util/Collection;
@@ -1080,19 +1060,19 @@
 
     goto :goto_0
 
-    .line 1187
+    .line 1189
     :cond_1
     check-cast v0, Ljava/util/List;
 
     goto :goto_1
 
-    .line 215
+    .line 216
     :cond_2
     invoke-static {}, Lkotlin/collections/CollectionsKt;->emptyList()Ljava/util/List;
 
     move-result-object v0
 
-    .line 213
+    .line 214
     :goto_1
     const-string p0, "null cannot be cast to non-null type kotlin.collections.List<androidx.compose.ui.text.AnnotatedString.Range<androidx.compose.ui.text.UrlAnnotation>>"
 
@@ -1104,18 +1084,14 @@
 .method public final hasStringAnnotations(Ljava/lang/String;II)Z
     .locals 5
 
-    const-string/jumbo v0, "tag"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 167
+    .line 168
     iget-object p0, p0, Landroidx/compose/ui/text/AnnotatedString;->annotations:Ljava/util/List;
 
     const/4 v0, 0x0
 
     if-eqz p0, :cond_1
 
-    .line 1149
+    .line 1151
     invoke-interface {p0}, Ljava/util/List;->size()I
 
     move-result v1
@@ -1125,15 +1101,15 @@
     :goto_0
     if-ge v2, v1, :cond_1
 
-    .line 1150
+    .line 1152
     invoke-interface {p0, v2}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
     move-result-object v3
 
-    .line 1147
+    .line 1149
     check-cast v3, Landroidx/compose/ui/text/AnnotatedString$Range;
 
-    .line 168
+    .line 169
     invoke-virtual {v3}, Landroidx/compose/ui/text/AnnotatedString$Range;->getItem()Ljava/lang/Object;
 
     move-result-object v4
@@ -1185,7 +1161,7 @@
 .method public hashCode()I
     .locals 3
 
-    .line 228
+    .line 229
     iget-object v0, p0, Landroidx/compose/ui/text/AnnotatedString;->text:Ljava/lang/String;
 
     invoke-virtual {v0}, Ljava/lang/String;->hashCode()I
@@ -1194,7 +1170,7 @@
 
     mul-int/lit8 v0, v0, 0x1f
 
-    .line 229
+    .line 230
     iget-object v1, p0, Landroidx/compose/ui/text/AnnotatedString;->spanStylesOrNull:Ljava/util/List;
 
     const/4 v2, 0x0
@@ -1215,7 +1191,7 @@
 
     mul-int/lit8 v0, v0, 0x1f
 
-    .line 230
+    .line 231
     iget-object v1, p0, Landroidx/compose/ui/text/AnnotatedString;->paragraphStylesOrNull:Ljava/util/List;
 
     if-eqz v1, :cond_1
@@ -1234,7 +1210,7 @@
 
     mul-int/lit8 v0, v0, 0x1f
 
-    .line 231
+    .line 232
     iget-object p0, p0, Landroidx/compose/ui/text/AnnotatedString;->annotations:Ljava/util/List;
 
     if-eqz p0, :cond_2
@@ -1252,7 +1228,7 @@
 .method public final bridge length()I
     .locals 0
 
-    .line 32
+    .line 33
     invoke-virtual {p0}, Landroidx/compose/ui/text/AnnotatedString;->getLength()I
 
     move-result p0
@@ -1263,19 +1239,15 @@
 .method public final plus(Landroidx/compose/ui/text/AnnotatedString;)Landroidx/compose/ui/text/AnnotatedString;
     .locals 1
 
-    const-string v0, "other"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 137
+    .line 138
     new-instance v0, Landroidx/compose/ui/text/AnnotatedString$Builder;
 
     invoke-direct {v0, p0}, Landroidx/compose/ui/text/AnnotatedString$Builder;-><init>(Landroidx/compose/ui/text/AnnotatedString;)V
 
-    .line 138
+    .line 139
     invoke-virtual {v0, p1}, Landroidx/compose/ui/text/AnnotatedString$Builder;->append(Landroidx/compose/ui/text/AnnotatedString;)V
 
-    .line 139
+    .line 140
     invoke-virtual {v0}, Landroidx/compose/ui/text/AnnotatedString$Builder;->toAnnotatedString()Landroidx/compose/ui/text/AnnotatedString;
 
     move-result-object p0
@@ -1290,7 +1262,7 @@
 
     if-nez p1, :cond_0
 
-    .line 114
+    .line 115
     iget-object v0, p0, Landroidx/compose/ui/text/AnnotatedString;->text:Ljava/lang/String;
 
     invoke-virtual {v0}, Ljava/lang/String;->length()I
@@ -1301,7 +1273,7 @@
 
     return-object p0
 
-    .line 115
+    .line 116
     :cond_0
     iget-object v0, p0, Landroidx/compose/ui/text/AnnotatedString;->text:Ljava/lang/String;
 
@@ -1313,36 +1285,36 @@
 
     invoke-static {v0, v1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 116
+    .line 117
     new-instance v1, Landroidx/compose/ui/text/AnnotatedString;
 
-    .line 118
+    .line 119
     iget-object v2, p0, Landroidx/compose/ui/text/AnnotatedString;->spanStylesOrNull:Ljava/util/List;
 
     invoke-static {v2, p1, p2}, Landroidx/compose/ui/text/AnnotatedStringKt;->access$filterRanges(Ljava/util/List;II)Ljava/util/List;
 
     move-result-object v2
 
-    .line 119
+    .line 120
     iget-object v3, p0, Landroidx/compose/ui/text/AnnotatedString;->paragraphStylesOrNull:Ljava/util/List;
 
     invoke-static {v3, p1, p2}, Landroidx/compose/ui/text/AnnotatedStringKt;->access$filterRanges(Ljava/util/List;II)Ljava/util/List;
 
     move-result-object v3
 
-    .line 120
+    .line 121
     iget-object p0, p0, Landroidx/compose/ui/text/AnnotatedString;->annotations:Ljava/util/List;
 
     invoke-static {p0, p1, p2}, Landroidx/compose/ui/text/AnnotatedStringKt;->access$filterRanges(Ljava/util/List;II)Ljava/util/List;
 
     move-result-object p0
 
-    .line 116
+    .line 117
     invoke-direct {v1, v0, v2, v3, p0}, Landroidx/compose/ui/text/AnnotatedString;-><init>(Ljava/lang/String;Ljava/util/List;Ljava/util/List;Ljava/util/List;)V
 
     return-object v1
 
-    .line 112
+    .line 113
     :cond_1
     new-instance p0, Ljava/lang/StringBuilder;
 
@@ -1374,7 +1346,7 @@
 
     move-result-object p0
 
-    .line 111
+    .line 112
     new-instance p1, Ljava/lang/IllegalArgumentException;
 
     invoke-virtual {p0}, Ljava/lang/Object;->toString()Ljava/lang/String;
@@ -1389,7 +1361,7 @@
 .method public bridge synthetic subSequence(II)Ljava/lang/CharSequence;
     .locals 0
 
-    .line 32
+    .line 33
     invoke-virtual {p0, p1, p2}, Landroidx/compose/ui/text/AnnotatedString;->subSequence(II)Landroidx/compose/ui/text/AnnotatedString;
 
     move-result-object p0
@@ -1402,7 +1374,7 @@
 .method public final subSequence-5zc-tL8(J)Landroidx/compose/ui/text/AnnotatedString;
     .locals 1
 
-    .line 132
+    .line 133
     invoke-static {p1, p2}, Landroidx/compose/ui/text/TextRange;->getMin-impl(J)I
 
     move-result v0
@@ -1421,7 +1393,7 @@
 .method public toString()Ljava/lang/String;
     .locals 0
 
-    .line 238
+    .line 239
     iget-object p0, p0, Landroidx/compose/ui/text/AnnotatedString;->text:Ljava/lang/String;
 
     return-object p0

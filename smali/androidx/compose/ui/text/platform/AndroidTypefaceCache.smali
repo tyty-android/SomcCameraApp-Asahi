@@ -5,7 +5,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/SourceDebugExtension;
-    value = "SMAP\nAndroidFontListTypeface.android.kt\nKotlin\n*S Kotlin\n*F\n+ 1 AndroidFontListTypeface.android.kt\nandroidx/compose/ui/text/platform/AndroidTypefaceCache\n+ 2 fake.kt\nkotlin/jvm/internal/FakeKt\n*L\n1#1,173:1\n1#2:174\n*E\n"
+    value = "SMAP\nAndroidFontListTypeface.android.kt\nKotlin\n*S Kotlin\n*F\n+ 1 AndroidFontListTypeface.android.kt\nandroidx/compose/ui/text/platform/AndroidTypefaceCache\n+ 2 fake.kt\nkotlin/jvm/internal/FakeKt\n*L\n1#1,174:1\n1#2:175\n*E\n"
 .end annotation
 
 .annotation runtime Lkotlin/Deprecated;
@@ -43,6 +43,8 @@
 
 
 # static fields
+.field public static final $stable:I
+
 .field public static final INSTANCE:Landroidx/compose/ui/text/platform/AndroidTypefaceCache;
 
 .field private static final cache:Landroidx/collection/LruCache;
@@ -67,7 +69,7 @@
 
     sput-object v0, Landroidx/compose/ui/text/platform/AndroidTypefaceCache;->INSTANCE:Landroidx/compose/ui/text/platform/AndroidTypefaceCache;
 
-    .line 112
+    .line 113
     new-instance v0, Landroidx/collection/LruCache;
 
     const/16 v1, 0x10
@@ -76,13 +78,17 @@
 
     sput-object v0, Landroidx/compose/ui/text/platform/AndroidTypefaceCache;->cache:Landroidx/collection/LruCache;
 
+    const/16 v0, 0x8
+
+    sput v0, Landroidx/compose/ui/text/platform/AndroidTypefaceCache;->$stable:I
+
     return-void
 .end method
 
 .method private constructor <init>()V
     .locals 0
 
-    .line 108
+    .line 109
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -93,25 +99,17 @@
 .method public final getKey(Landroid/content/Context;Landroidx/compose/ui/text/font/Font;)Ljava/lang/String;
     .locals 1
 
-    const-string p0, "context"
-
-    invoke-static {p1, p0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string p0, "font"
-
-    invoke-static {p2, p0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 148
+    .line 149
     instance-of p0, p2, Landroidx/compose/ui/text/font/ResourceFont;
 
     if-eqz p0, :cond_1
 
-    .line 149
+    .line 150
     new-instance p0, Landroid/util/TypedValue;
 
     invoke-direct {p0}, Landroid/util/TypedValue;-><init>()V
 
-    .line 150
+    .line 151
     invoke-virtual {p1}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
 
     move-result-object p1
@@ -126,7 +124,7 @@
 
     invoke-virtual {p1, p2, p0, v0}, Landroid/content/res/Resources;->getValue(ILandroid/util/TypedValue;Z)V
 
-    .line 151
+    .line 152
     new-instance p1, Ljava/lang/StringBuilder;
 
     const-string p2, "res:"
@@ -159,7 +157,7 @@
 
     goto :goto_1
 
-    .line 153
+    .line 154
     :cond_1
     instance-of p0, p2, Landroidx/compose/ui/text/font/AndroidPreloadedFont;
 
@@ -174,7 +172,7 @@
     :goto_1
     return-object p0
 
-    .line 154
+    .line 155
     :cond_2
     new-instance p0, Ljava/lang/IllegalArgumentException;
 
@@ -200,22 +198,14 @@
 .method public final getOrCreate(Landroid/content/Context;Landroidx/compose/ui/text/font/Font;)Landroid/graphics/Typeface;
     .locals 2
 
-    const-string v0, "context"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string v0, "font"
-
-    invoke-static {p2, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 120
+    .line 121
     invoke-virtual {p0, p1, p2}, Landroidx/compose/ui/text/platform/AndroidTypefaceCache;->getKey(Landroid/content/Context;Landroidx/compose/ui/text/font/Font;)Ljava/lang/String;
 
     move-result-object p0
 
     if-eqz p0, :cond_0
 
-    .line 123
+    .line 124
     sget-object v0, Landroidx/compose/ui/text/platform/AndroidTypefaceCache;->cache:Landroidx/collection/LruCache;
 
     invoke-virtual {v0, p0}, Landroidx/collection/LruCache;->get(Ljava/lang/Object;)Ljava/lang/Object;
@@ -226,19 +216,15 @@
 
     if-eqz v0, :cond_0
 
-    const-string p0, "it"
-
-    invoke-static {v0, p0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
-
     return-object v0
 
-    .line 127
+    .line 128
     :cond_0
     instance-of v0, p2, Landroidx/compose/ui/text/font/ResourceFont;
 
     if-eqz v0, :cond_1
 
-    .line 130
+    .line 131
     sget-object v0, Landroidx/compose/ui/text/platform/AndroidResourceFontLoaderHelper;->INSTANCE:Landroidx/compose/ui/text/platform/AndroidResourceFontLoaderHelper;
 
     move-object v1, p2
@@ -255,7 +241,7 @@
 
     goto :goto_0
 
-    .line 134
+    .line 135
     :cond_1
     instance-of v0, p2, Landroidx/compose/ui/text/font/AndroidFont;
 
@@ -278,7 +264,7 @@
 
     if-eqz p0, :cond_2
 
-    .line 138
+    .line 139
     sget-object p2, Landroidx/compose/ui/text/platform/AndroidTypefaceCache;->cache:Landroidx/collection/LruCache;
 
     invoke-virtual {p2, p0, p1}, Landroidx/collection/LruCache;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
@@ -290,7 +276,7 @@
     :cond_2
     return-object p1
 
-    .line 136
+    .line 137
     :cond_3
     new-instance p0, Ljava/lang/IllegalArgumentException;
 
@@ -312,7 +298,7 @@
 
     throw p0
 
-    .line 135
+    .line 136
     :cond_4
     new-instance p0, Ljava/lang/IllegalArgumentException;
 

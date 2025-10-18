@@ -1,6 +1,6 @@
 .class public final Landroidx/compose/ui/tooling/animation/clock/AnimateXAsStateClock;
 .super Ljava/lang/Object;
-.source "AnimateXAsStateClock.kt"
+.source "AnimateXAsStateClock.android.kt"
 
 # interfaces
 .implements Landroidx/compose/ui/tooling/animation/clock/ComposeAnimationClock;
@@ -83,6 +83,10 @@
 .end annotation
 
 
+# static fields
+.field public static final $stable:I = 0x8
+
+
 # instance fields
 .field private final animation:Landroidx/compose/ui/tooling/animation/AnimateXAsStateComposeAnimation;
     .annotation system Ldalvik/annotation/Signature;
@@ -123,6 +127,12 @@
 
 
 # direct methods
+.method static constructor <clinit>()V
+    .locals 0
+
+    return-void
+.end method
+
 .method public constructor <init>(Landroidx/compose/ui/tooling/animation/AnimateXAsStateComposeAnimation;)V
     .locals 2
     .annotation system Ldalvik/annotation/Signature;
@@ -132,10 +142,6 @@
             "TT;TV;>;)V"
         }
     .end annotation
-
-    const-string v0, "animation"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 29
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -394,7 +400,7 @@
 
     move-result-wide v0
 
-    invoke-static {v0, v1}, Landroidx/compose/ui/tooling/animation/clock/UtilsKt;->nanosToMillis(J)J
+    invoke-static {v0, v1}, Landroidx/compose/ui/tooling/animation/clock/Utils_androidKt;->nanosToMillis(J)J
 
     move-result-wide v0
 
@@ -411,7 +417,7 @@
 
     move-result-wide v0
 
-    invoke-static {v0, v1}, Landroidx/compose/ui/tooling/animation/clock/UtilsKt;->nanosToMillis(J)J
+    invoke-static {v0, v1}, Landroidx/compose/ui/tooling/animation/clock/Utils_androidKt;->nanosToMillis(J)J
 
     move-result-wide v0
 
@@ -481,7 +487,7 @@
     move-result-object p0
 
     .line 72
-    invoke-static {v0, v1, p0, p1, p2}, Landroidx/compose/ui/tooling/animation/clock/UtilsKt;->createTransitionInfo(Landroidx/compose/animation/core/Animation;Ljava/lang/String;Landroidx/compose/animation/core/AnimationSpec;J)Landroidx/compose/animation/tooling/TransitionInfo;
+    invoke-static {v0, v1, p0, p1, p2}, Landroidx/compose/ui/tooling/animation/clock/Utils_androidKt;->createTransitionInfo(Landroidx/compose/animation/core/Animation;Ljava/lang/String;Landroidx/compose/animation/core/AnimationSpec;J)Landroidx/compose/animation/tooling/TransitionInfo;
 
     move-result-object p0
 
@@ -523,10 +529,6 @@
         }
     .end annotation
 
-    const-string/jumbo v0, "value"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
     .line 39
     iput-object p1, p0, Landroidx/compose/ui/tooling/animation/clock/AnimateXAsStateClock;->state:Landroidx/compose/ui/tooling/animation/states/TargetState;
 
@@ -548,14 +550,10 @@
 .method public setStateParameters(Ljava/lang/Object;Ljava/lang/Object;)V
     .locals 1
 
-    const-string v0, "par1"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
     .line 53
     iget-object v0, p0, Landroidx/compose/ui/tooling/animation/clock/AnimateXAsStateClock;->currentValue:Ljava/lang/Object;
 
-    invoke-static {v0, p1, p2}, Landroidx/compose/ui/tooling/animation/clock/UtilsKt;->parseParametersToValue(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Landroidx/compose/ui/tooling/animation/states/TargetState;
+    invoke-static {v0, p1, p2}, Landroidx/compose/ui/tooling/animation/clock/Utils_androidKt;->parseParametersToValue(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Landroidx/compose/ui/tooling/animation/states/TargetState;
 
     move-result-object p1
 

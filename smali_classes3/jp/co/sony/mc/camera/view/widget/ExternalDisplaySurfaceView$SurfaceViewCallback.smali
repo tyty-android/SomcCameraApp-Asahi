@@ -18,30 +18,31 @@
 
 .annotation runtime Lkotlin/Metadata;
     d1 = {
-        "\u0000(\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0010\u000b\n\u0000\n\u0002\u0010\u0008\n\u0002\u0008\u0002\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0004\u0008\u0082\u0004\u0018\u00002\u00020\u0001B\u0005\u00a2\u0006\u0002\u0010\u0002J\u0018\u0010\u0003\u001a\u00020\u00042\u0006\u0010\u0005\u001a\u00020\u00062\u0006\u0010\u0007\u001a\u00020\u0006H\u0002J(\u0010\u0008\u001a\u00020\t2\u0006\u0010\n\u001a\u00020\u000b2\u0006\u0010\u000c\u001a\u00020\u00062\u0006\u0010\u0005\u001a\u00020\u00062\u0006\u0010\u0007\u001a\u00020\u0006H\u0016J\u0010\u0010\r\u001a\u00020\t2\u0006\u0010\n\u001a\u00020\u000bH\u0016J\u0010\u0010\u000e\u001a\u00020\t2\u0006\u0010\n\u001a\u00020\u000bH\u0016\u00a8\u0006\u000f"
+        "\u0000(\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0003\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0010\u0008\n\u0002\u0008\u0004\n\u0002\u0010\u000b\n\u0000\u0008\u0082\u0004\u0018\u00002\u00020\u0001B\u0007\u00a2\u0006\u0004\u0008\u0002\u0010\u0003J\u0010\u0010\u0004\u001a\u00020\u00052\u0006\u0010\u0006\u001a\u00020\u0007H\u0016J(\u0010\u0008\u001a\u00020\u00052\u0006\u0010\u0006\u001a\u00020\u00072\u0006\u0010\t\u001a\u00020\n2\u0006\u0010\u000b\u001a\u00020\n2\u0006\u0010\u000c\u001a\u00020\nH\u0016J\u0010\u0010\r\u001a\u00020\u00052\u0006\u0010\u0006\u001a\u00020\u0007H\u0016J\u0018\u0010\u000e\u001a\u00020\u000f2\u0006\u0010\u000b\u001a\u00020\n2\u0006\u0010\u000c\u001a\u00020\nH\u0002\u00a8\u0006\u0010"
     }
     d2 = {
         "Ljp/co/sony/mc/camera/view/widget/ExternalDisplaySurfaceView$SurfaceViewCallback;",
         "Landroid/view/SurfaceHolder$Callback;",
+        "<init>",
         "(Ljp/co/sony/mc/camera/view/widget/ExternalDisplaySurfaceView;)V",
-        "isInvalidSurfaceSize",
-        "",
-        "width",
-        "",
-        "height",
-        "surfaceChanged",
+        "surfaceCreated",
         "",
         "holder",
         "Landroid/view/SurfaceHolder;",
+        "surfaceChanged",
         "format",
-        "surfaceCreated",
+        "",
+        "width",
+        "height",
         "surfaceDestroyed",
+        "isInvalidSurfaceSize",
+        "",
         "SomcCamera_release"
     }
     k = 0x1
     mv = {
-        0x1,
-        0x9,
+        0x2,
+        0x0,
         0x0
     }
     xi = 0x30
@@ -70,7 +71,7 @@
 .end method
 
 .method private final isInvalidSurfaceSize(II)Z
-    .locals 3
+    .locals 5
 
     .line 372
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/widget/ExternalDisplaySurfaceView$SurfaceViewCallback;->this$0:Ljp/co/sony/mc/camera/view/widget/ExternalDisplaySurfaceView;
@@ -79,20 +80,22 @@
 
     move-result v0
 
-    const/4 v1, 0x1
+    const/4 v1, 0x0
+
+    const/4 v2, 0x1
 
     if-eqz v0, :cond_0
 
     .line 373
-    const-string p0, "Surface view has been destroyed"
+    new-array p0, v2, [Ljava/lang/String;
 
-    filled-new-array {p0}, [Ljava/lang/String;
+    const-string p1, "Surface view has been destroyed"
 
-    move-result-object p0
+    aput-object p1, p0, v1
 
     invoke-static {p0}, Ljp/co/sony/mc/camera/util/CamLog;->w([Ljava/lang/String;)V
 
-    return v1
+    return v2
 
     .line 376
     :cond_0
@@ -111,41 +114,42 @@
     move-result v0
 
     .line 377
-    const-string v2, " actual = "
+    const-string v3, " actual = "
 
     if-eq p1, v0, :cond_1
 
+    .line 378
+    new-array p0, v2, [Ljava/lang/String;
+
     .line 379
-    new-instance p0, Ljava/lang/StringBuilder;
+    new-instance p2, Ljava/lang/StringBuilder;
 
-    const-string p2, "Surface width is not matched: expected = "
+    const-string v4, "Surface width is not matched: expected = "
 
-    invoke-direct {p0, p2}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+    invoke-direct {p2, v4}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
-    invoke-virtual {p0, v0}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+    invoke-virtual {p2, v0}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
-    move-result-object p0
+    move-result-object p2
 
-    invoke-virtual {p0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {p2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    move-result-object p0
+    move-result-object p2
 
-    invoke-virtual {p0, p1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+    invoke-virtual {p2, p1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
-    move-result-object p0
+    move-result-object p1
 
-    invoke-virtual {p0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-virtual {p1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    move-result-object p0
+    move-result-object p1
 
-    filled-new-array {p0}, [Ljava/lang/String;
-
-    move-result-object p0
+    aput-object p1, p0, v1
 
     .line 378
     invoke-static {p0}, Ljp/co/sony/mc/camera/util/CamLog;->w([Ljava/lang/String;)V
 
-    return v1
+    return v2
 
     .line 382
     :cond_1
@@ -165,18 +169,21 @@
 
     if-eq p2, p0, :cond_2
 
+    .line 384
+    new-array p1, v2, [Ljava/lang/String;
+
     .line 385
-    new-instance p1, Ljava/lang/StringBuilder;
+    new-instance v0, Ljava/lang/StringBuilder;
 
-    const-string v0, "Surface height is not matched: expected = "
+    const-string v4, "Surface height is not matched: expected = "
 
-    invoke-direct {p1, v0}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+    invoke-direct {v0, v4}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
-    invoke-virtual {p1, p0}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+    invoke-virtual {v0, p0}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
     move-result-object p0
 
-    invoke-virtual {p0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {p0, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object p0
 
@@ -188,25 +195,21 @@
 
     move-result-object p0
 
-    filled-new-array {p0}, [Ljava/lang/String;
-
-    move-result-object p0
+    aput-object p0, p1, v1
 
     .line 384
-    invoke-static {p0}, Ljp/co/sony/mc/camera/util/CamLog;->w([Ljava/lang/String;)V
+    invoke-static {p1}, Ljp/co/sony/mc/camera/util/CamLog;->w([Ljava/lang/String;)V
 
-    return v1
+    return v2
 
     :cond_2
-    const/4 p0, 0x0
-
-    return p0
+    return v1
 .end method
 
 
 # virtual methods
 .method public surfaceChanged(Landroid/view/SurfaceHolder;III)V
-    .locals 0
+    .locals 3
 
     const-string p2, "holder"
 
@@ -215,42 +218,46 @@
     .line 353
     sget-boolean p1, Ljp/co/sony/mc/camera/util/CamLog;->DEBUG:Z
 
+    const/4 p2, 0x0
+
+    const/4 v0, 0x1
+
     if-eqz p1, :cond_0
 
+    new-array p1, v0, [Ljava/lang/String;
+
     .line 355
-    new-instance p1, Ljava/lang/StringBuilder;
+    new-instance v1, Ljava/lang/StringBuilder;
 
-    const-string/jumbo p2, "surfaceChanged("
+    const-string/jumbo v2, "surfaceChanged("
 
-    invoke-direct {p1, p2}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+    invoke-direct {v1, v2}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
-    invoke-virtual {p1, p3}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+    invoke-virtual {v1, p3}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
-    move-result-object p1
+    move-result-object v1
 
-    const-string p2, ","
+    const-string v2, ","
 
-    invoke-virtual {p1, p2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    move-result-object p1
+    move-result-object v1
 
-    invoke-virtual {p1, p4}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+    invoke-virtual {v1, p4}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
-    move-result-object p1
+    move-result-object v1
 
-    const-string p2, ") : E"
+    const-string v2, ") : E"
 
-    invoke-virtual {p1, p2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    move-result-object p1
+    move-result-object v1
 
-    invoke-virtual {p1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    move-result-object p1
+    move-result-object v1
 
-    filled-new-array {p1}, [Ljava/lang/String;
-
-    move-result-object p1
+    aput-object v1, p1, p2
 
     .line 353
     invoke-static {p1}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
@@ -280,11 +287,11 @@
 
     if-eqz p0, :cond_2
 
-    const-string/jumbo p0, "surfaceChanged() : X"
+    new-array p0, v0, [Ljava/lang/String;
 
-    filled-new-array {p0}, [Ljava/lang/String;
+    const-string/jumbo p1, "surfaceChanged() : X"
 
-    move-result-object p0
+    aput-object p1, p0, p2
 
     invoke-static {p0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
@@ -293,7 +300,7 @@
 .end method
 
 .method public surfaceCreated(Landroid/view/SurfaceHolder;)V
-    .locals 4
+    .locals 7
 
     const-string v0, "holder"
 
@@ -307,51 +314,55 @@
     .line 341
     sget-boolean v0, Ljp/co/sony/mc/camera/util/CamLog;->DEBUG:Z
 
+    const/4 v1, 0x0
+
+    const/4 v2, 0x1
+
     if-eqz v0, :cond_0
+
+    new-array v0, v2, [Ljava/lang/String;
 
     .line 342
     invoke-virtual {p1}, Landroid/graphics/Rect;->width()I
 
-    move-result v0
+    move-result v3
 
     .line 343
     invoke-virtual {p1}, Landroid/graphics/Rect;->height()I
 
-    move-result v1
+    move-result v4
 
-    new-instance v2, Ljava/lang/StringBuilder;
+    new-instance v5, Ljava/lang/StringBuilder;
 
-    const-string/jumbo v3, "surfaceCreated("
+    const-string/jumbo v6, "surfaceCreated("
 
-    invoke-direct {v2, v3}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+    invoke-direct {v5, v6}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
-    invoke-virtual {v2, v0}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+    invoke-virtual {v5, v3}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
-    move-result-object v0
+    move-result-object v3
 
-    const-string v2, ","
+    const-string v5, ","
 
-    invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v3, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    move-result-object v0
+    move-result-object v3
 
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+    invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
-    move-result-object v0
+    move-result-object v3
 
-    const-string v1, ") : E"
+    const-string v4, ") : E"
 
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    move-result-object v0
+    move-result-object v3
 
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-virtual {v3}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    move-result-object v0
+    move-result-object v3
 
-    filled-new-array {v0}, [Ljava/lang/String;
-
-    move-result-object v0
+    aput-object v3, v0, v1
 
     .line 341
     invoke-static {v0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
@@ -364,9 +375,9 @@
 
     invoke-virtual {p1}, Landroid/graphics/Rect;->height()I
 
-    move-result v1
+    move-result v3
 
-    invoke-direct {p0, v0, v1}, Ljp/co/sony/mc/camera/view/widget/ExternalDisplaySurfaceView$SurfaceViewCallback;->isInvalidSurfaceSize(II)Z
+    invoke-direct {p0, v0, v3}, Ljp/co/sony/mc/camera/view/widget/ExternalDisplaySurfaceView$SurfaceViewCallback;->isInvalidSurfaceSize(II)Z
 
     move-result v0
 
@@ -378,9 +389,7 @@
     :cond_1
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/widget/ExternalDisplaySurfaceView$SurfaceViewCallback;->this$0:Ljp/co/sony/mc/camera/view/widget/ExternalDisplaySurfaceView;
 
-    const/4 v1, 0x1
-
-    invoke-static {v0, v1}, Ljp/co/sony/mc/camera/view/widget/ExternalDisplaySurfaceView;->access$setSurfaceAvailability(Ljp/co/sony/mc/camera/view/widget/ExternalDisplaySurfaceView;Z)V
+    invoke-static {v0, v2}, Ljp/co/sony/mc/camera/view/widget/ExternalDisplaySurfaceView;->access$setSurfaceAvailability(Ljp/co/sony/mc/camera/view/widget/ExternalDisplaySurfaceView;Z)V
 
     .line 348
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/widget/ExternalDisplaySurfaceView$SurfaceViewCallback;->this$0:Ljp/co/sony/mc/camera/view/widget/ExternalDisplaySurfaceView;
@@ -389,13 +398,13 @@
 
     invoke-virtual {p1}, Landroid/graphics/Rect;->width()I
 
-    move-result v1
+    move-result v3
 
     invoke-virtual {p1}, Landroid/graphics/Rect;->height()I
 
     move-result p1
 
-    invoke-direct {v0, v1, p1}, Landroid/util/Size;-><init>(II)V
+    invoke-direct {v0, v3, p1}, Landroid/util/Size;-><init>(II)V
 
     invoke-static {p0, v0}, Ljp/co/sony/mc/camera/view/widget/ExternalDisplaySurfaceView;->access$setSurfaceSize$p(Ljp/co/sony/mc/camera/view/widget/ExternalDisplaySurfaceView;Landroid/util/Size;)V
 
@@ -404,11 +413,11 @@
 
     if-eqz p0, :cond_2
 
-    const-string/jumbo p0, "surfaceCreated() : X"
+    new-array p0, v2, [Ljava/lang/String;
 
-    filled-new-array {p0}, [Ljava/lang/String;
+    const-string/jumbo p1, "surfaceCreated() : X"
 
-    move-result-object p0
+    aput-object p1, p0, v1
 
     invoke-static {p0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
@@ -417,7 +426,7 @@
 .end method
 
 .method public surfaceDestroyed(Landroid/view/SurfaceHolder;)V
-    .locals 1
+    .locals 3
 
     const-string v0, "holder"
 
@@ -426,13 +435,17 @@
     .line 364
     sget-boolean p1, Ljp/co/sony/mc/camera/util/CamLog;->DEBUG:Z
 
+    const/4 v0, 0x1
+
+    const/4 v1, 0x0
+
     if-eqz p1, :cond_0
 
-    const-string/jumbo p1, "surfaceDestroyed() : E"
+    new-array p1, v0, [Ljava/lang/String;
 
-    filled-new-array {p1}, [Ljava/lang/String;
+    const-string/jumbo v2, "surfaceDestroyed() : E"
 
-    move-result-object p1
+    aput-object v2, p1, v1
 
     invoke-static {p1}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
@@ -440,16 +453,14 @@
     :cond_0
     iget-object p1, p0, Ljp/co/sony/mc/camera/view/widget/ExternalDisplaySurfaceView$SurfaceViewCallback;->this$0:Ljp/co/sony/mc/camera/view/widget/ExternalDisplaySurfaceView;
 
-    const/4 v0, 0x0
-
-    invoke-static {p1, v0}, Ljp/co/sony/mc/camera/view/widget/ExternalDisplaySurfaceView;->access$setSurfaceAvailability(Ljp/co/sony/mc/camera/view/widget/ExternalDisplaySurfaceView;Z)V
+    invoke-static {p1, v1}, Ljp/co/sony/mc/camera/view/widget/ExternalDisplaySurfaceView;->access$setSurfaceAvailability(Ljp/co/sony/mc/camera/view/widget/ExternalDisplaySurfaceView;Z)V
 
     .line 366
     iget-object p1, p0, Ljp/co/sony/mc/camera/view/widget/ExternalDisplaySurfaceView$SurfaceViewCallback;->this$0:Ljp/co/sony/mc/camera/view/widget/ExternalDisplaySurfaceView;
 
-    const/4 v0, 0x0
+    const/4 v2, 0x0
 
-    invoke-static {p1, v0}, Ljp/co/sony/mc/camera/view/widget/ExternalDisplaySurfaceView;->access$setSurfaceSize$p(Ljp/co/sony/mc/camera/view/widget/ExternalDisplaySurfaceView;Landroid/util/Size;)V
+    invoke-static {p1, v2}, Ljp/co/sony/mc/camera/view/widget/ExternalDisplaySurfaceView;->access$setSurfaceSize$p(Ljp/co/sony/mc/camera/view/widget/ExternalDisplaySurfaceView;Landroid/util/Size;)V
 
     .line 367
     iget-object p1, p0, Ljp/co/sony/mc/camera/view/widget/ExternalDisplaySurfaceView$SurfaceViewCallback;->this$0:Ljp/co/sony/mc/camera/view/widget/ExternalDisplaySurfaceView;
@@ -469,11 +480,11 @@
 
     if-eqz p0, :cond_1
 
-    const-string/jumbo p0, "surfaceDestroyed() : X"
+    new-array p0, v0, [Ljava/lang/String;
 
-    filled-new-array {p0}, [Ljava/lang/String;
+    const-string/jumbo p1, "surfaceDestroyed() : X"
 
-    move-result-object p0
+    aput-object p1, p0, v1
 
     invoke-static {p0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 

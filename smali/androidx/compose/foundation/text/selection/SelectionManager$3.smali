@@ -3,7 +3,7 @@
 .source "SelectionManager.kt"
 
 # interfaces
-.implements Lkotlin/jvm/functions/Function1;
+.implements Lkotlin/jvm/functions/Function2;
 
 
 # annotations
@@ -19,7 +19,8 @@
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lkotlin/jvm/internal/Lambda;",
-        "Lkotlin/jvm/functions/Function1<",
+        "Lkotlin/jvm/functions/Function2<",
+        "Ljava/lang/Boolean;",
         "Ljava/lang/Long;",
         "Lkotlin/Unit;",
         ">;"
@@ -28,10 +29,12 @@
 
 .annotation runtime Lkotlin/Metadata;
     d1 = {
-        "\u0000\u000e\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0010\t\n\u0000\u0010\u0000\u001a\u00020\u00012\u0006\u0010\u0002\u001a\u00020\u0003H\n\u00a2\u0006\u0002\u0008\u0004"
+        "\u0000\u0014\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0010\u000b\n\u0000\n\u0002\u0010\t\n\u0000\u0010\u0000\u001a\u00020\u00012\u0006\u0010\u0002\u001a\u00020\u00032\u0006\u0010\u0004\u001a\u00020\u0005H\n\u00a2\u0006\u0002\u0008\u0006"
     }
     d2 = {
         "<anonymous>",
+        "",
+        "isInTouchMode",
         "",
         "selectableId",
         "",
@@ -57,7 +60,7 @@
 
     iput-object p1, p0, Landroidx/compose/foundation/text/selection/SelectionManager$3;->this$0:Landroidx/compose/foundation/text/selection/SelectionManager;
 
-    const/4 p1, 0x1
+    const/4 p1, 0x2
 
     invoke-direct {p0, p1}, Lkotlin/jvm/internal/Lambda;-><init>(I)V
 
@@ -66,84 +69,95 @@
 
 
 # virtual methods
-.method public bridge synthetic invoke(Ljava/lang/Object;)Ljava/lang/Object;
+.method public bridge synthetic invoke(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
     .locals 2
 
-    .line 235
-    check-cast p1, Ljava/lang/Number;
+    .line 274
+    check-cast p1, Ljava/lang/Boolean;
 
-    invoke-virtual {p1}, Ljava/lang/Number;->longValue()J
+    invoke-virtual {p1}, Ljava/lang/Boolean;->booleanValue()Z
+
+    move-result p1
+
+    check-cast p2, Ljava/lang/Number;
+
+    invoke-virtual {p2}, Ljava/lang/Number;->longValue()J
 
     move-result-wide v0
 
-    invoke-virtual {p0, v0, v1}, Landroidx/compose/foundation/text/selection/SelectionManager$3;->invoke(J)V
+    invoke-virtual {p0, p1, v0, v1}, Landroidx/compose/foundation/text/selection/SelectionManager$3;->invoke(ZJ)V
 
     sget-object p0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
 
     return-object p0
 .end method
 
-.method public final invoke(J)V
+.method public final invoke(ZJ)V
     .locals 2
 
-    .line 237
+    .line 276
     iget-object v0, p0, Landroidx/compose/foundation/text/selection/SelectionManager$3;->this$0:Landroidx/compose/foundation/text/selection/SelectionManager;
 
-    .line 239
+    .line 278
     invoke-virtual {v0}, Landroidx/compose/foundation/text/selection/SelectionManager;->getSelection()Landroidx/compose/foundation/text/selection/Selection;
 
     move-result-object v1
 
-    .line 237
-    invoke-virtual {v0, p1, p2, v1}, Landroidx/compose/foundation/text/selection/SelectionManager;->selectAll$foundation_release(JLandroidx/compose/foundation/text/selection/Selection;)Lkotlin/Pair;
-
-    move-result-object p1
-
-    invoke-virtual {p1}, Lkotlin/Pair;->component1()Ljava/lang/Object;
+    .line 276
+    invoke-virtual {v0, p2, p3, v1}, Landroidx/compose/foundation/text/selection/SelectionManager;->selectAll$foundation_release(JLandroidx/compose/foundation/text/selection/Selection;)Lkotlin/Pair;
 
     move-result-object p2
 
-    check-cast p2, Landroidx/compose/foundation/text/selection/Selection;
+    invoke-virtual {p2}, Lkotlin/Pair;->component1()Ljava/lang/Object;
 
-    invoke-virtual {p1}, Lkotlin/Pair;->component2()Ljava/lang/Object;
+    move-result-object p3
 
-    move-result-object p1
+    check-cast p3, Landroidx/compose/foundation/text/selection/Selection;
 
-    check-cast p1, Ljava/util/Map;
+    invoke-virtual {p2}, Lkotlin/Pair;->component2()Ljava/lang/Object;
 
-    .line 241
+    move-result-object p2
+
+    check-cast p2, Ljava/util/Map;
+
+    .line 280
     iget-object v0, p0, Landroidx/compose/foundation/text/selection/SelectionManager$3;->this$0:Landroidx/compose/foundation/text/selection/SelectionManager;
 
     invoke-virtual {v0}, Landroidx/compose/foundation/text/selection/SelectionManager;->getSelection()Landroidx/compose/foundation/text/selection/Selection;
 
     move-result-object v0
 
-    invoke-static {p2, v0}, Lkotlin/jvm/internal/Intrinsics;->areEqual(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {p3, v0}, Lkotlin/jvm/internal/Intrinsics;->areEqual(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v0
 
     if-nez v0, :cond_0
 
-    .line 242
+    .line 281
     iget-object v0, p0, Landroidx/compose/foundation/text/selection/SelectionManager$3;->this$0:Landroidx/compose/foundation/text/selection/SelectionManager;
 
     invoke-static {v0}, Landroidx/compose/foundation/text/selection/SelectionManager;->access$getSelectionRegistrar$p(Landroidx/compose/foundation/text/selection/SelectionManager;)Landroidx/compose/foundation/text/selection/SelectionRegistrarImpl;
 
     move-result-object v0
 
-    invoke-virtual {v0, p1}, Landroidx/compose/foundation/text/selection/SelectionRegistrarImpl;->setSubselections(Ljava/util/Map;)V
+    invoke-virtual {v0, p2}, Landroidx/compose/foundation/text/selection/SelectionRegistrarImpl;->setSubselections(Ljava/util/Map;)V
 
-    .line 243
-    iget-object p1, p0, Landroidx/compose/foundation/text/selection/SelectionManager$3;->this$0:Landroidx/compose/foundation/text/selection/SelectionManager;
+    .line 282
+    iget-object p2, p0, Landroidx/compose/foundation/text/selection/SelectionManager$3;->this$0:Landroidx/compose/foundation/text/selection/SelectionManager;
 
-    invoke-virtual {p1}, Landroidx/compose/foundation/text/selection/SelectionManager;->getOnSelectionChange()Lkotlin/jvm/functions/Function1;
+    invoke-virtual {p2}, Landroidx/compose/foundation/text/selection/SelectionManager;->getOnSelectionChange()Lkotlin/jvm/functions/Function1;
 
-    move-result-object p1
+    move-result-object p2
 
-    invoke-interface {p1, p2}, Lkotlin/jvm/functions/Function1;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-interface {p2, p3}, Lkotlin/jvm/functions/Function1;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 246
+    .line 285
     :cond_0
+    iget-object p2, p0, Landroidx/compose/foundation/text/selection/SelectionManager$3;->this$0:Landroidx/compose/foundation/text/selection/SelectionManager;
+
+    invoke-virtual {p2, p1}, Landroidx/compose/foundation/text/selection/SelectionManager;->setInTouchMode(Z)V
+
+    .line 286
     iget-object p1, p0, Landroidx/compose/foundation/text/selection/SelectionManager$3;->this$0:Landroidx/compose/foundation/text/selection/SelectionManager;
 
     invoke-virtual {p1}, Landroidx/compose/foundation/text/selection/SelectionManager;->getFocusRequester()Landroidx/compose/ui/focus/FocusRequester;
@@ -152,10 +166,12 @@
 
     invoke-virtual {p1}, Landroidx/compose/ui/focus/FocusRequester;->requestFocus()V
 
-    .line 247
+    .line 287
     iget-object p0, p0, Landroidx/compose/foundation/text/selection/SelectionManager$3;->this$0:Landroidx/compose/foundation/text/selection/SelectionManager;
 
-    invoke-virtual {p0}, Landroidx/compose/foundation/text/selection/SelectionManager;->hideSelectionToolbar$foundation_release()V
+    const/4 p1, 0x0
+
+    invoke-virtual {p0, p1}, Landroidx/compose/foundation/text/selection/SelectionManager;->setShowToolbar$foundation_release(Z)V
 
     return-void
 .end method

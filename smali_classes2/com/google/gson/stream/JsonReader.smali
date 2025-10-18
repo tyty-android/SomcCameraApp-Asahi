@@ -69,8 +69,6 @@
 
 .field private final in:Ljava/io/Reader;
 
-.field private lenient:Z
-
 .field private limit:I
 
 .field private lineNumber:I
@@ -95,12 +93,14 @@
 
 .field private stackSize:I
 
+.field private strictness:Lcom/google/gson/Strictness;
+
 
 # direct methods
 .method static constructor <clinit>()V
     .locals 1
 
-    .line 1685
+    .line 1796
     new-instance v0, Lcom/google/gson/stream/JsonReader$1;
 
     invoke-direct {v0}, Lcom/google/gson/stream/JsonReader$1;-><init>()V
@@ -113,63 +113,65 @@
 .method public constructor <init>(Ljava/io/Reader;)V
     .locals 4
 
-    .line 290
+    .line 311
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 252
+    sget-object v0, Lcom/google/gson/Strictness;->LEGACY_STRICT:Lcom/google/gson/Strictness;
+
+    iput-object v0, p0, Lcom/google/gson/stream/JsonReader;->strictness:Lcom/google/gson/Strictness;
+
+    const/16 v0, 0x400
+
+    .line 261
+    new-array v0, v0, [C
+
+    iput-object v0, p0, Lcom/google/gson/stream/JsonReader;->buffer:[C
 
     const/4 v0, 0x0
 
-    .line 230
-    iput-boolean v0, p0, Lcom/google/gson/stream/JsonReader;->lenient:Z
-
-    const/16 v1, 0x400
-
-    .line 239
-    new-array v1, v1, [C
-
-    iput-object v1, p0, Lcom/google/gson/stream/JsonReader;->buffer:[C
-
-    .line 240
+    .line 263
     iput v0, p0, Lcom/google/gson/stream/JsonReader;->pos:I
 
-    .line 241
+    .line 264
     iput v0, p0, Lcom/google/gson/stream/JsonReader;->limit:I
 
-    .line 243
+    .line 266
     iput v0, p0, Lcom/google/gson/stream/JsonReader;->lineNumber:I
 
-    .line 244
+    .line 267
     iput v0, p0, Lcom/google/gson/stream/JsonReader;->lineStart:I
 
-    .line 246
+    .line 269
     iput v0, p0, Lcom/google/gson/stream/JsonReader;->peeked:I
 
     const/16 v1, 0x20
 
-    .line 270
+    .line 292
     new-array v2, v1, [I
 
     iput-object v2, p0, Lcom/google/gson/stream/JsonReader;->stack:[I
 
     const/4 v3, 0x1
 
-    .line 273
+    .line 296
     iput v3, p0, Lcom/google/gson/stream/JsonReader;->stackSize:I
 
     const/4 v3, 0x6
 
     aput v3, v2, v0
 
-    .line 284
+    .line 307
     new-array v0, v1, [Ljava/lang/String;
 
     iput-object v0, p0, Lcom/google/gson/stream/JsonReader;->pathNames:[Ljava/lang/String;
 
-    .line 285
+    .line 308
     new-array v0, v1, [I
 
     iput-object v0, p0, Lcom/google/gson/stream/JsonReader;->pathIndices:[I
 
-    .line 291
+    .line 312
     const-string v0, "in == null"
 
     invoke-static {p1, v0}, Ljava/util/Objects;->requireNonNull(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
@@ -183,26 +185,44 @@
     return-void
 .end method
 
-.method private checkLenient()V
-    .locals 1
+.method static synthetic access$000(Lcom/google/gson/stream/JsonReader;Ljava/lang/String;)Ljava/lang/IllegalStateException;
+    .locals 0
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
         }
     .end annotation
 
-    .line 1464
-    iget-boolean v0, p0, Lcom/google/gson/stream/JsonReader;->lenient:Z
+    .line 211
+    invoke-direct {p0, p1}, Lcom/google/gson/stream/JsonReader;->unexpectedTokenError(Ljava/lang/String;)Ljava/lang/IllegalStateException;
 
-    if-eqz v0, :cond_0
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method private checkLenient()V
+    .locals 2
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Lcom/google/gson/stream/MalformedJsonException;
+        }
+    .end annotation
+
+    .line 1549
+    iget-object v0, p0, Lcom/google/gson/stream/JsonReader;->strictness:Lcom/google/gson/Strictness;
+
+    sget-object v1, Lcom/google/gson/Strictness;->LENIENT:Lcom/google/gson/Strictness;
+
+    if-ne v0, v1, :cond_0
 
     return-void
 
-    .line 1465
+    .line 1550
     :cond_0
-    const-string v0, "Use JsonReader.setLenient(true) to accept malformed JSON"
+    const-string v0, "Use JsonReader.setStrictness(Strictness.LENIENT) to accept malformed JSON"
 
-    invoke-direct {p0, v0}, Lcom/google/gson/stream/JsonReader;->syntaxError(Ljava/lang/String;)Ljava/io/IOException;
+    invoke-direct {p0, v0}, Lcom/google/gson/stream/JsonReader;->syntaxError(Ljava/lang/String;)Lcom/google/gson/stream/MalformedJsonException;
 
     move-result-object p0
 
@@ -219,10 +239,10 @@
 
     const/4 v0, 0x1
 
-    .line 1667
+    .line 1774
     invoke-direct {p0, v0}, Lcom/google/gson/stream/JsonReader;->nextNonWhitespace(Z)I
 
-    .line 1668
+    .line 1775
     iget v0, p0, Lcom/google/gson/stream/JsonReader;->pos:I
 
     add-int/lit8 v1, v0, -0x1
@@ -231,7 +251,7 @@
 
     add-int/lit8 v0, v0, 0x4
 
-    .line 1670
+    .line 1777
     iget v1, p0, Lcom/google/gson/stream/JsonReader;->limit:I
 
     const/4 v2, 0x5
@@ -246,14 +266,14 @@
 
     return-void
 
-    .line 1674
+    .line 1781
     :cond_0
     iget v0, p0, Lcom/google/gson/stream/JsonReader;->pos:I
 
-    .line 1675
+    .line 1782
     iget-object v1, p0, Lcom/google/gson/stream/JsonReader;->buffer:[C
 
-    .line 1676
+    .line 1783
     aget-char v3, v1, v0
 
     const/16 v4, 0x29
@@ -297,7 +317,7 @@
     :cond_1
     add-int/2addr v0, v2
 
-    .line 1681
+    .line 1792
     iput v0, p0, Lcom/google/gson/stream/JsonReader;->pos:I
 
     :cond_2
@@ -313,10 +333,10 @@
         }
     .end annotation
 
-    .line 1340
+    .line 1426
     iget-object v0, p0, Lcom/google/gson/stream/JsonReader;->buffer:[C
 
-    .line 1341
+    .line 1427
     iget v1, p0, Lcom/google/gson/stream/JsonReader;->lineStart:I
 
     iget v2, p0, Lcom/google/gson/stream/JsonReader;->pos:I
@@ -325,7 +345,7 @@
 
     iput v1, p0, Lcom/google/gson/stream/JsonReader;->lineStart:I
 
-    .line 1342
+    .line 1428
     iget v1, p0, Lcom/google/gson/stream/JsonReader;->limit:I
 
     const/4 v3, 0x0
@@ -334,23 +354,23 @@
 
     sub-int/2addr v1, v2
 
-    .line 1343
+    .line 1429
     iput v1, p0, Lcom/google/gson/stream/JsonReader;->limit:I
 
-    .line 1344
+    .line 1430
     invoke-static {v0, v2, v0, v3, v1}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
 
     goto :goto_0
 
-    .line 1346
+    .line 1432
     :cond_0
     iput v3, p0, Lcom/google/gson/stream/JsonReader;->limit:I
 
-    .line 1349
+    .line 1435
     :goto_0
     iput v3, p0, Lcom/google/gson/stream/JsonReader;->pos:I
 
-    .line 1351
+    .line 1437
     :cond_1
     iget-object v1, p0, Lcom/google/gson/stream/JsonReader;->in:Ljava/io/Reader;
 
@@ -368,14 +388,14 @@
 
     if-eq v1, v2, :cond_3
 
-    .line 1352
+    .line 1438
     iget v2, p0, Lcom/google/gson/stream/JsonReader;->limit:I
 
     add-int/2addr v2, v1
 
     iput v2, p0, Lcom/google/gson/stream/JsonReader;->limit:I
 
-    .line 1355
+    .line 1441
     iget v1, p0, Lcom/google/gson/stream/JsonReader;->lineNumber:I
 
     const/4 v4, 0x1
@@ -394,7 +414,7 @@
 
     if-ne v5, v6, :cond_2
 
-    .line 1356
+    .line 1442
     iget v5, p0, Lcom/google/gson/stream/JsonReader;->pos:I
 
     add-int/2addr v5, v4
@@ -403,7 +423,7 @@
 
     add-int/lit8 v1, v1, 0x1
 
-    .line 1357
+    .line 1443
     iput v1, p0, Lcom/google/gson/stream/JsonReader;->lineStart:I
 
     add-int/lit8 p1, p1, 0x1
@@ -418,9 +438,9 @@
 .end method
 
 .method private getPath(Z)Ljava/lang/String;
-    .locals 5
+    .locals 4
 
-    .line 1520
+    .line 1606
     new-instance v0, Ljava/lang/StringBuilder;
 
     const-string v1, "$"
@@ -429,77 +449,78 @@
 
     const/4 v1, 0x0
 
-    .line 1521
+    .line 1607
     :goto_0
     iget v2, p0, Lcom/google/gson/stream/JsonReader;->stackSize:I
 
-    if-ge v1, v2, :cond_4
+    if-ge v1, v2, :cond_2
 
-    .line 1522
+    .line 1608
     iget-object v3, p0, Lcom/google/gson/stream/JsonReader;->stack:[I
 
     aget v3, v3, v1
 
-    const/4 v4, 0x1
+    packed-switch v3, :pswitch_data_0
 
-    if-eq v3, v4, :cond_1
+    .line 1632
+    new-instance p0, Ljava/lang/AssertionError;
 
-    const/4 v4, 0x2
+    new-instance p1, Ljava/lang/StringBuilder;
 
-    if-eq v3, v4, :cond_1
+    const-string v0, "Unknown scope value: "
 
-    const/4 v2, 0x3
+    invoke-direct {p1, v0}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
-    if-eq v3, v2, :cond_0
+    invoke-virtual {p1, v3}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
-    const/4 v2, 0x4
+    move-result-object p1
 
-    if-eq v3, v2, :cond_0
+    invoke-virtual {p1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    const/4 v2, 0x5
+    move-result-object p1
 
-    if-eq v3, v2, :cond_0
+    invoke-direct {p0, p1}, Ljava/lang/AssertionError;-><init>(Ljava/lang/Object;)V
 
-    goto :goto_1
+    throw p0
 
-    :cond_0
+    :pswitch_0
     const/16 v2, 0x2e
 
-    .line 1535
+    .line 1622
     invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
 
-    .line 1536
+    .line 1623
     iget-object v2, p0, Lcom/google/gson/stream/JsonReader;->pathNames:[Ljava/lang/String;
 
     aget-object v2, v2, v1
 
-    if-eqz v2, :cond_3
+    if-eqz v2, :cond_1
 
-    .line 1537
+    .line 1624
     invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     goto :goto_1
 
-    .line 1525
-    :cond_1
+    .line 1612
+    :pswitch_1
     iget-object v3, p0, Lcom/google/gson/stream/JsonReader;->pathIndices:[I
 
     aget v3, v3, v1
 
-    if-eqz p1, :cond_2
+    if-eqz p1, :cond_0
 
-    if-lez v3, :cond_2
+    if-lez v3, :cond_0
 
     add-int/lit8 v2, v2, -0x1
 
-    if-ne v1, v2, :cond_2
+    if-ne v1, v2, :cond_0
 
     add-int/lit8 v3, v3, -0x1
 
-    :cond_2
+    :cond_0
     const/16 v2, 0x5b
 
-    .line 1530
+    .line 1617
     invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
 
     move-result-object v2
@@ -512,19 +533,32 @@
 
     invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
 
-    :cond_3
+    :cond_1
     :goto_1
+    :pswitch_2
     add-int/lit8 v1, v1, 0x1
 
     goto :goto_0
 
-    .line 1546
-    :cond_4
+    .line 1635
+    :cond_2
     invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object p0
 
     return-object p0
+
+    :pswitch_data_0
+    .packed-switch 0x1
+        :pswitch_1
+        :pswitch_1
+        :pswitch_0
+        :pswitch_0
+        :pswitch_0
+        :pswitch_2
+        :pswitch_2
+        :pswitch_2
+    .end packed-switch
 .end method
 
 .method private isLiteral(C)Z
@@ -593,7 +627,7 @@
 
     return p0
 
-    .line 763
+    .line 847
     :cond_0
     :pswitch_0
     invoke-direct {p0}, Lcom/google/gson/stream/JsonReader;->checkLenient()V
@@ -620,13 +654,13 @@
         }
     .end annotation
 
-    .line 1383
+    .line 1468
     iget-object v0, p0, Lcom/google/gson/stream/JsonReader;->buffer:[C
 
-    .line 1384
+    .line 1469
     iget v1, p0, Lcom/google/gson/stream/JsonReader;->pos:I
 
-    .line 1385
+    .line 1470
     iget v2, p0, Lcom/google/gson/stream/JsonReader;->limit:I
 
     :goto_0
@@ -634,10 +668,10 @@
 
     if-ne v1, v2, :cond_2
 
-    .line 1388
+    .line 1473
     iput v1, p0, Lcom/google/gson/stream/JsonReader;->pos:I
 
-    .line 1389
+    .line 1474
     invoke-direct {p0, v3}, Lcom/google/gson/stream/JsonReader;->fillBuffer(I)Z
 
     move-result v1
@@ -650,7 +684,7 @@
 
     return p0
 
-    .line 1457
+    .line 1542
     :cond_0
     new-instance p1, Ljava/io/EOFException;
 
@@ -676,31 +710,31 @@
 
     throw p1
 
-    .line 1392
+    .line 1477
     :cond_1
     iget v1, p0, Lcom/google/gson/stream/JsonReader;->pos:I
 
-    .line 1393
+    .line 1478
     iget v2, p0, Lcom/google/gson/stream/JsonReader;->limit:I
 
     :cond_2
     add-int/lit8 v4, v1, 0x1
 
-    .line 1396
+    .line 1481
     aget-char v5, v0, v1
 
     const/16 v6, 0xa
 
     if-ne v5, v6, :cond_3
 
-    .line 1398
+    .line 1483
     iget v1, p0, Lcom/google/gson/stream/JsonReader;->lineNumber:I
 
     add-int/2addr v1, v3
 
     iput v1, p0, Lcom/google/gson/stream/JsonReader;->lineNumber:I
 
-    .line 1399
+    .line 1484
     iput v4, p0, Lcom/google/gson/stream/JsonReader;->lineStart:I
 
     goto/16 :goto_1
@@ -725,22 +759,22 @@
 
     if-ne v5, v6, :cond_9
 
-    .line 1406
+    .line 1491
     iput v4, p0, Lcom/google/gson/stream/JsonReader;->pos:I
 
     const/4 v7, 0x2
 
     if-ne v4, v2, :cond_5
 
-    .line 1408
+    .line 1493
     iput v1, p0, Lcom/google/gson/stream/JsonReader;->pos:I
 
-    .line 1409
+    .line 1494
     invoke-direct {p0, v7}, Lcom/google/gson/stream/JsonReader;->fillBuffer(I)Z
 
     move-result v1
 
-    .line 1410
+    .line 1495
     iget v2, p0, Lcom/google/gson/stream/JsonReader;->pos:I
 
     add-int/2addr v2, v3
@@ -751,11 +785,11 @@
 
     return v5
 
-    .line 1416
+    .line 1501
     :cond_5
     invoke-direct {p0}, Lcom/google/gson/stream/JsonReader;->checkLenient()V
 
-    .line 1417
+    .line 1502
     iget v1, p0, Lcom/google/gson/stream/JsonReader;->pos:I
 
     aget-char v2, v0, v1
@@ -771,16 +805,16 @@
     :cond_6
     add-int/lit8 v1, v1, 0x1
 
-    .line 1431
+    .line 1516
     iput v1, p0, Lcom/google/gson/stream/JsonReader;->pos:I
 
-    .line 1432
+    .line 1517
     invoke-direct {p0}, Lcom/google/gson/stream/JsonReader;->skipToEndOfLine()V
 
-    .line 1433
+    .line 1518
     iget v1, p0, Lcom/google/gson/stream/JsonReader;->pos:I
 
-    .line 1434
+    .line 1519
     iget v2, p0, Lcom/google/gson/stream/JsonReader;->limit:I
 
     goto :goto_0
@@ -788,10 +822,10 @@
     :cond_7
     add-int/lit8 v1, v1, 0x1
 
-    .line 1421
+    .line 1506
     iput v1, p0, Lcom/google/gson/stream/JsonReader;->pos:I
 
-    .line 1422
+    .line 1507
     const-string v1, "*/"
 
     invoke-direct {p0, v1}, Lcom/google/gson/stream/JsonReader;->skipTo(Ljava/lang/String;)Z
@@ -800,21 +834,21 @@
 
     if-eqz v1, :cond_8
 
-    .line 1425
+    .line 1510
     iget v1, p0, Lcom/google/gson/stream/JsonReader;->pos:I
 
     add-int/2addr v1, v7
 
-    .line 1426
+    .line 1511
     iget v2, p0, Lcom/google/gson/stream/JsonReader;->limit:I
 
     goto/16 :goto_0
 
-    .line 1423
+    .line 1508
     :cond_8
     const-string p1, "Unterminated comment"
 
-    invoke-direct {p0, p1}, Lcom/google/gson/stream/JsonReader;->syntaxError(Ljava/lang/String;)Ljava/io/IOException;
+    invoke-direct {p0, p1}, Lcom/google/gson/stream/JsonReader;->syntaxError(Ljava/lang/String;)Lcom/google/gson/stream/MalformedJsonException;
 
     move-result-object p0
 
@@ -825,24 +859,24 @@
 
     if-ne v5, v1, :cond_a
 
-    .line 1441
+    .line 1526
     iput v4, p0, Lcom/google/gson/stream/JsonReader;->pos:I
 
-    .line 1447
+    .line 1532
     invoke-direct {p0}, Lcom/google/gson/stream/JsonReader;->checkLenient()V
 
-    .line 1448
+    .line 1533
     invoke-direct {p0}, Lcom/google/gson/stream/JsonReader;->skipToEndOfLine()V
 
-    .line 1449
+    .line 1534
     iget v1, p0, Lcom/google/gson/stream/JsonReader;->pos:I
 
-    .line 1450
+    .line 1535
     iget v2, p0, Lcom/google/gson/stream/JsonReader;->limit:I
 
     goto/16 :goto_0
 
-    .line 1452
+    .line 1537
     :cond_a
     iput v4, p0, Lcom/google/gson/stream/JsonReader;->pos:I
 
@@ -856,23 +890,23 @@
 .end method
 
 .method private nextQuotedValue(C)Ljava/lang/String;
-    .locals 9
+    .locals 10
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
         }
     .end annotation
 
-    .line 1000
+    .line 1071
     iget-object v0, p0, Lcom/google/gson/stream/JsonReader;->buffer:[C
 
     const/4 v1, 0x0
 
-    .line 1003
+    .line 1074
     :goto_0
     iget v2, p0, Lcom/google/gson/stream/JsonReader;->pos:I
 
-    .line 1004
+    .line 1075
     iget v3, p0, Lcom/google/gson/stream/JsonReader;->limit:I
 
     :goto_1
@@ -885,59 +919,84 @@
 
     const/4 v6, 0x1
 
-    if-ge v2, v4, :cond_5
+    if-ge v2, v4, :cond_7
 
     add-int/lit8 v7, v2, 0x1
 
-    .line 1008
+    .line 1079
     aget-char v2, v0, v2
 
-    if-ne v2, p1, :cond_1
+    .line 1083
+    iget-object v8, p0, Lcom/google/gson/stream/JsonReader;->strictness:Lcom/google/gson/Strictness;
 
-    .line 1011
+    sget-object v9, Lcom/google/gson/Strictness;->STRICT:Lcom/google/gson/Strictness;
+
+    if-ne v8, v9, :cond_1
+
+    const/16 v8, 0x20
+
+    if-lt v2, v8, :cond_0
+
+    goto :goto_3
+
+    .line 1084
+    :cond_0
+    const-string p1, "Unescaped control characters (\\u0000-\\u001F) are not allowed in strict mode"
+
+    invoke-direct {p0, p1}, Lcom/google/gson/stream/JsonReader;->syntaxError(Ljava/lang/String;)Lcom/google/gson/stream/MalformedJsonException;
+
+    move-result-object p0
+
+    throw p0
+
+    :cond_1
+    :goto_3
+    if-ne v2, p1, :cond_3
+
+    .line 1087
     iput v7, p0, Lcom/google/gson/stream/JsonReader;->pos:I
 
     sub-int/2addr v7, v3
 
     sub-int/2addr v7, v6
 
-    if-nez v1, :cond_0
+    if-nez v1, :cond_2
 
-    .line 1014
+    .line 1090
     new-instance p0, Ljava/lang/String;
 
     invoke-direct {p0, v0, v3, v7}, Ljava/lang/String;-><init>([CII)V
 
     return-object p0
 
-    .line 1016
-    :cond_0
+    .line 1092
+    :cond_2
     invoke-virtual {v1, v0, v3, v7}, Ljava/lang/StringBuilder;->append([CII)Ljava/lang/StringBuilder;
 
-    .line 1017
+    .line 1093
     invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object p0
 
     return-object p0
 
-    :cond_1
+    :cond_3
     const/16 v8, 0x5c
 
-    if-ne v2, v8, :cond_3
+    if-ne v2, v8, :cond_5
 
-    .line 1020
+    .line 1096
     iput v7, p0, Lcom/google/gson/stream/JsonReader;->pos:I
 
     sub-int/2addr v7, v3
 
     add-int/lit8 v2, v7, -0x1
 
-    if-nez v1, :cond_2
+    if-nez v1, :cond_4
 
     mul-int/lit8 v7, v7, 0x2
 
-    .line 1024
+    .line 1100
     new-instance v1, Ljava/lang/StringBuilder;
 
     invoke-static {v7, v5}, Ljava/lang/Math;->max(II)I
@@ -946,53 +1005,53 @@
 
     invoke-direct {v1, v4}, Ljava/lang/StringBuilder;-><init>(I)V
 
-    .line 1026
-    :cond_2
+    .line 1102
+    :cond_4
     invoke-virtual {v1, v0, v3, v2}, Ljava/lang/StringBuilder;->append([CII)Ljava/lang/StringBuilder;
 
-    .line 1027
+    .line 1103
     invoke-direct {p0}, Lcom/google/gson/stream/JsonReader;->readEscapeCharacter()C
 
     move-result v2
 
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
 
-    .line 1028
+    .line 1104
     iget v2, p0, Lcom/google/gson/stream/JsonReader;->pos:I
 
-    .line 1029
+    .line 1105
     iget v3, p0, Lcom/google/gson/stream/JsonReader;->limit:I
 
     goto :goto_1
 
-    :cond_3
+    :cond_5
     const/16 v5, 0xa
 
-    if-ne v2, v5, :cond_4
+    if-ne v2, v5, :cond_6
 
-    .line 1032
+    .line 1108
     iget v2, p0, Lcom/google/gson/stream/JsonReader;->lineNumber:I
 
     add-int/2addr v2, v6
 
     iput v2, p0, Lcom/google/gson/stream/JsonReader;->lineNumber:I
 
-    .line 1033
+    .line 1109
     iput v7, p0, Lcom/google/gson/stream/JsonReader;->lineStart:I
 
-    :cond_4
+    :cond_6
     move v2, v7
 
     goto :goto_2
 
-    :cond_5
-    if-nez v1, :cond_6
+    :cond_7
+    if-nez v1, :cond_8
 
     sub-int v1, v2, v3
 
     mul-int/lit8 v1, v1, 0x2
 
-    .line 1039
+    .line 1115
     new-instance v4, Ljava/lang/StringBuilder;
 
     invoke-static {v1, v5}, Ljava/lang/Math;->max(II)I
@@ -1003,29 +1062,29 @@
 
     move-object v1, v4
 
-    :cond_6
+    :cond_8
     sub-int v4, v2, v3
 
-    .line 1041
+    .line 1117
     invoke-virtual {v1, v0, v3, v4}, Ljava/lang/StringBuilder;->append([CII)Ljava/lang/StringBuilder;
 
-    .line 1042
+    .line 1118
     iput v2, p0, Lcom/google/gson/stream/JsonReader;->pos:I
 
-    .line 1043
+    .line 1119
     invoke-direct {p0, v6}, Lcom/google/gson/stream/JsonReader;->fillBuffer(I)Z
 
     move-result v2
 
-    if-eqz v2, :cond_7
+    if-eqz v2, :cond_9
 
-    goto :goto_0
+    goto/16 :goto_0
 
-    .line 1044
-    :cond_7
+    .line 1120
+    :cond_9
     const-string p1, "Unterminated string"
 
-    invoke-direct {p0, p1}, Lcom/google/gson/stream/JsonReader;->syntaxError(Ljava/lang/String;)Ljava/io/IOException;
+    invoke-direct {p0, p1}, Lcom/google/gson/stream/JsonReader;->syntaxError(Ljava/lang/String;)Lcom/google/gson/stream/MalformedJsonException;
 
     move-result-object p0
 
@@ -1047,7 +1106,7 @@
     :cond_0
     move v2, v1
 
-    .line 1059
+    .line 1133
     :goto_0
     iget v3, p0, Lcom/google/gson/stream/JsonReader;->pos:I
 
@@ -1057,7 +1116,7 @@
 
     if-ge v4, v5, :cond_2
 
-    .line 1060
+    .line 1134
     iget-object v4, p0, Lcom/google/gson/stream/JsonReader;->buffer:[C
 
     add-int/2addr v3, v2
@@ -1122,14 +1181,14 @@
 
     goto :goto_0
 
-    .line 1066
+    .line 1140
     :cond_1
     :pswitch_0
     invoke-direct {p0}, Lcom/google/gson/stream/JsonReader;->checkLenient()V
 
     goto :goto_1
 
-    .line 1083
+    .line 1159
     :cond_2
     iget-object v3, p0, Lcom/google/gson/stream/JsonReader;->buffer:[C
 
@@ -1139,7 +1198,7 @@
 
     add-int/lit8 v3, v2, 0x1
 
-    .line 1084
+    .line 1160
     invoke-direct {p0, v3}, Lcom/google/gson/stream/JsonReader;->fillBuffer(I)Z
 
     move-result v3
@@ -1158,7 +1217,7 @@
     :cond_4
     if-nez v0, :cond_5
 
-    .line 1093
+    .line 1169
     new-instance v0, Ljava/lang/StringBuilder;
 
     const/16 v3, 0x10
@@ -1169,7 +1228,7 @@
 
     invoke-direct {v0, v3}, Ljava/lang/StringBuilder;-><init>(I)V
 
-    .line 1095
+    .line 1171
     :cond_5
     iget-object v3, p0, Lcom/google/gson/stream/JsonReader;->buffer:[C
 
@@ -1177,7 +1236,7 @@
 
     invoke-virtual {v0, v3, v4, v2}, Ljava/lang/StringBuilder;->append([CII)Ljava/lang/StringBuilder;
 
-    .line 1096
+    .line 1172
     iget v3, p0, Lcom/google/gson/stream/JsonReader;->pos:I
 
     add-int/2addr v3, v2
@@ -1186,7 +1245,7 @@
 
     const/4 v2, 0x1
 
-    .line 1098
+    .line 1174
     invoke-direct {p0, v2}, Lcom/google/gson/stream/JsonReader;->fillBuffer(I)Z
 
     move-result v2
@@ -1196,7 +1255,7 @@
     :goto_2
     if-nez v0, :cond_6
 
-    .line 1103
+    .line 1180
     new-instance v0, Ljava/lang/String;
 
     iget-object v2, p0, Lcom/google/gson/stream/JsonReader;->buffer:[C
@@ -1220,7 +1279,7 @@
 
     move-result-object v0
 
-    .line 1104
+    .line 1181
     :goto_3
     iget v2, p0, Lcom/google/gson/stream/JsonReader;->pos:I
 
@@ -1239,14 +1298,14 @@
 .end method
 
 .method private peekKeyword()I
-    .locals 8
+    .locals 9
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
         }
     .end annotation
 
-    .line 608
+    .line 682
     iget-object v0, p0, Lcom/google/gson/stream/JsonReader;->buffer:[C
 
     iget v1, p0, Lcom/google/gson/stream/JsonReader;->pos:I
@@ -1290,7 +1349,7 @@
     :cond_2
     return v2
 
-    .line 623
+    .line 699
     :cond_3
     :goto_0
     const-string v0, "null"
@@ -1301,7 +1360,7 @@
 
     goto :goto_3
 
-    .line 619
+    .line 695
     :cond_4
     :goto_1
     const-string v0, "false"
@@ -1312,7 +1371,7 @@
 
     goto :goto_3
 
-    .line 615
+    .line 691
     :cond_5
     :goto_2
     const-string v0, "true"
@@ -1321,111 +1380,131 @@
 
     const/4 v3, 0x5
 
-    .line 629
+    .line 705
     :goto_3
-    invoke-virtual {v0}, Ljava/lang/String;->length()I
+    iget-object v4, p0, Lcom/google/gson/stream/JsonReader;->strictness:Lcom/google/gson/Strictness;
 
-    move-result v4
+    sget-object v5, Lcom/google/gson/Strictness;->STRICT:Lcom/google/gson/Strictness;
 
-    const/4 v5, 0x1
+    if-eq v4, v5, :cond_6
 
-    :goto_4
-    if-ge v5, v4, :cond_8
-
-    .line 631
-    iget v6, p0, Lcom/google/gson/stream/JsonReader;->pos:I
-
-    add-int/2addr v6, v5
-
-    iget v7, p0, Lcom/google/gson/stream/JsonReader;->limit:I
-
-    if-lt v6, v7, :cond_6
-
-    add-int/lit8 v6, v5, 0x1
-
-    invoke-direct {p0, v6}, Lcom/google/gson/stream/JsonReader;->fillBuffer(I)Z
-
-    move-result v6
-
-    if-nez v6, :cond_6
-
-    return v2
-
-    .line 634
-    :cond_6
-    iget-object v6, p0, Lcom/google/gson/stream/JsonReader;->buffer:[C
-
-    iget v7, p0, Lcom/google/gson/stream/JsonReader;->pos:I
-
-    add-int/2addr v7, v5
-
-    aget-char v6, v6, v7
-
-    .line 635
-    invoke-virtual {v0, v5}, Ljava/lang/String;->charAt(I)C
-
-    move-result v7
-
-    if-eq v6, v7, :cond_7
-
-    invoke-virtual {v1, v5}, Ljava/lang/String;->charAt(I)C
-
-    move-result v7
-
-    if-eq v6, v7, :cond_7
-
-    return v2
-
-    :cond_7
-    add-int/lit8 v5, v5, 0x1
+    const/4 v4, 0x1
 
     goto :goto_4
 
-    .line 640
+    :cond_6
+    move v4, v2
+
+    .line 708
+    :goto_4
+    invoke-virtual {v0}, Ljava/lang/String;->length()I
+
+    move-result v5
+
+    move v6, v2
+
+    :goto_5
+    if-ge v6, v5, :cond_a
+
+    .line 710
+    iget v7, p0, Lcom/google/gson/stream/JsonReader;->pos:I
+
+    add-int/2addr v7, v6
+
+    iget v8, p0, Lcom/google/gson/stream/JsonReader;->limit:I
+
+    if-lt v7, v8, :cond_7
+
+    add-int/lit8 v7, v6, 0x1
+
+    invoke-direct {p0, v7}, Lcom/google/gson/stream/JsonReader;->fillBuffer(I)Z
+
+    move-result v7
+
+    if-nez v7, :cond_7
+
+    return v2
+
+    .line 713
+    :cond_7
+    iget-object v7, p0, Lcom/google/gson/stream/JsonReader;->buffer:[C
+
+    iget v8, p0, Lcom/google/gson/stream/JsonReader;->pos:I
+
+    add-int/2addr v8, v6
+
+    aget-char v7, v7, v8
+
+    .line 714
+    invoke-virtual {v0, v6}, Ljava/lang/String;->charAt(I)C
+
+    move-result v8
+
+    if-eq v7, v8, :cond_9
+
+    if-eqz v4, :cond_8
+
+    invoke-virtual {v1, v6}, Ljava/lang/String;->charAt(I)C
+
+    move-result v8
+
+    if-ne v7, v8, :cond_8
+
+    goto :goto_6
+
     :cond_8
+    return v2
+
+    :cond_9
+    :goto_6
+    add-int/lit8 v6, v6, 0x1
+
+    goto :goto_5
+
+    .line 720
+    :cond_a
     iget v0, p0, Lcom/google/gson/stream/JsonReader;->pos:I
 
-    add-int/2addr v0, v4
+    add-int/2addr v0, v5
 
     iget v1, p0, Lcom/google/gson/stream/JsonReader;->limit:I
 
-    if-lt v0, v1, :cond_9
+    if-lt v0, v1, :cond_b
 
-    add-int/lit8 v0, v4, 0x1
+    add-int/lit8 v0, v5, 0x1
 
     invoke-direct {p0, v0}, Lcom/google/gson/stream/JsonReader;->fillBuffer(I)Z
 
     move-result v0
 
-    if-eqz v0, :cond_a
+    if-eqz v0, :cond_c
 
-    :cond_9
+    :cond_b
     iget-object v0, p0, Lcom/google/gson/stream/JsonReader;->buffer:[C
 
     iget v1, p0, Lcom/google/gson/stream/JsonReader;->pos:I
 
-    add-int/2addr v1, v4
+    add-int/2addr v1, v5
 
     aget-char v0, v0, v1
 
-    .line 641
     invoke-direct {p0, v0}, Lcom/google/gson/stream/JsonReader;->isLiteral(C)Z
 
     move-result v0
 
-    if-eqz v0, :cond_a
+    if-eqz v0, :cond_c
 
     return v2
 
-    .line 646
-    :cond_a
+    .line 725
+    :cond_c
     iget v0, p0, Lcom/google/gson/stream/JsonReader;->pos:I
 
-    add-int/2addr v0, v4
+    add-int/2addr v0, v5
 
     iput v0, p0, Lcom/google/gson/stream/JsonReader;->pos:I
 
-    .line 647
+    .line 726
     iput v3, p0, Lcom/google/gson/stream/JsonReader;->peeked:I
 
     return v3
@@ -1441,13 +1520,13 @@
 
     move-object/from16 v0, p0
 
-    .line 652
+    .line 731
     iget-object v1, v0, Lcom/google/gson/stream/JsonReader;->buffer:[C
 
-    .line 653
+    .line 732
     iget v2, v0, Lcom/google/gson/stream/JsonReader;->pos:I
 
-    .line 654
+    .line 733
     iget v3, v0, Lcom/google/gson/stream/JsonReader;->limit:I
 
     const/4 v6, 0x0
@@ -1471,7 +1550,7 @@
 
     if-ne v14, v3, :cond_2
 
-    .line 666
+    .line 745
     array-length v2, v1
 
     if-ne v8, v2, :cond_0
@@ -1481,7 +1560,7 @@
     :cond_0
     add-int/lit8 v2, v8, 0x1
 
-    .line 671
+    .line 750
     invoke-direct {v0, v2}, Lcom/google/gson/stream/JsonReader;->fillBuffer(I)Z
 
     move-result v2
@@ -1490,17 +1569,17 @@
 
     goto/16 :goto_7
 
-    .line 674
+    .line 753
     :cond_1
     iget v2, v0, Lcom/google/gson/stream/JsonReader;->pos:I
 
-    .line 675
+    .line 754
     iget v3, v0, Lcom/google/gson/stream/JsonReader;->limit:I
 
     :cond_2
     add-int v14, v2, v8
 
-    .line 678
+    .line 757
     aget-char v14, v1, v14
 
     const/16 v6, 0x2b
@@ -1640,7 +1719,7 @@
 
     goto/16 :goto_c
 
-    .line 715
+    .line 794
     :cond_d
     :goto_6
     invoke-direct {v0, v14}, Lcom/google/gson/stream/JsonReader;->isLiteral(C)Z
@@ -1679,11 +1758,11 @@
     :cond_10
     neg-long v11, v11
 
-    .line 743
+    .line 826
     :goto_8
     iput-wide v11, v0, Lcom/google/gson/stream/JsonReader;->peekedLong:J
 
-    .line 744
+    .line 827
     iget v1, v0, Lcom/google/gson/stream/JsonReader;->pos:I
 
     add-int/2addr v1, v8
@@ -1692,7 +1771,7 @@
 
     const/16 v1, 0xf
 
-    .line 745
+    .line 828
     iput v1, v0, Lcom/google/gson/stream/JsonReader;->peeked:I
 
     return v1
@@ -1715,14 +1794,14 @@
 
     return v6
 
-    .line 748
+    .line 832
     :cond_13
     :goto_9
     iput v8, v0, Lcom/google/gson/stream/JsonReader;->peekedNumberLength:I
 
     const/16 v1, 0x10
 
-    .line 749
+    .line 833
     iput v1, v0, Lcom/google/gson/stream/JsonReader;->peeked:I
 
     return v1
@@ -1813,7 +1892,7 @@
 .method private push(I)V
     .locals 3
 
-    .line 1325
+    .line 1412
     iget v0, p0, Lcom/google/gson/stream/JsonReader;->stackSize:I
 
     iget-object v1, p0, Lcom/google/gson/stream/JsonReader;->stack:[I
@@ -1824,14 +1903,14 @@
 
     mul-int/lit8 v0, v0, 0x2
 
-    .line 1327
+    .line 1414
     invoke-static {v1, v0}, Ljava/util/Arrays;->copyOf([II)[I
 
     move-result-object v1
 
     iput-object v1, p0, Lcom/google/gson/stream/JsonReader;->stack:[I
 
-    .line 1328
+    .line 1415
     iget-object v1, p0, Lcom/google/gson/stream/JsonReader;->pathIndices:[I
 
     invoke-static {v1, v0}, Ljava/util/Arrays;->copyOf([II)[I
@@ -1840,7 +1919,7 @@
 
     iput-object v1, p0, Lcom/google/gson/stream/JsonReader;->pathIndices:[I
 
-    .line 1329
+    .line 1416
     iget-object v1, p0, Lcom/google/gson/stream/JsonReader;->pathNames:[Ljava/lang/String;
 
     invoke-static {v1, v0}, Ljava/util/Arrays;->copyOf([Ljava/lang/Object;I)[Ljava/lang/Object;
@@ -1851,7 +1930,7 @@
 
     iput-object v0, p0, Lcom/google/gson/stream/JsonReader;->pathNames:[Ljava/lang/String;
 
-    .line 1331
+    .line 1418
     :cond_0
     iget-object v0, p0, Lcom/google/gson/stream/JsonReader;->stack:[I
 
@@ -1874,7 +1953,7 @@
         }
     .end annotation
 
-    .line 1595
+    .line 1683
     iget v0, p0, Lcom/google/gson/stream/JsonReader;->pos:I
 
     iget v1, p0, Lcom/google/gson/stream/JsonReader;->limit:I
@@ -1893,15 +1972,15 @@
 
     goto :goto_0
 
-    .line 1596
+    .line 1684
     :cond_0
-    invoke-direct {p0, v2}, Lcom/google/gson/stream/JsonReader;->syntaxError(Ljava/lang/String;)Ljava/io/IOException;
+    invoke-direct {p0, v2}, Lcom/google/gson/stream/JsonReader;->syntaxError(Ljava/lang/String;)Lcom/google/gson/stream/MalformedJsonException;
 
     move-result-object p0
 
     throw p0
 
-    .line 1599
+    .line 1687
     :cond_1
     :goto_0
     iget-object v0, p0, Lcom/google/gson/stream/JsonReader;->buffer:[C
@@ -1914,13 +1993,13 @@
 
     aget-char v0, v0, v1
 
-    const/16 v5, 0xa
+    const/16 v4, 0xa
 
-    if-eq v0, v5, :cond_e
+    if-eq v0, v4, :cond_e
 
     const/16 v3, 0x22
 
-    if-eq v0, v3, :cond_f
+    if-eq v0, v3, :cond_10
 
     const/16 v3, 0x27
 
@@ -1928,11 +2007,11 @@
 
     const/16 v3, 0x2f
 
-    if-eq v0, v3, :cond_f
+    if-eq v0, v3, :cond_10
 
     const/16 v3, 0x5c
 
-    if-eq v0, v3, :cond_f
+    if-eq v0, v3, :cond_10
 
     const/16 v3, 0x62
 
@@ -1942,9 +2021,9 @@
 
     if-eq v0, v3, :cond_c
 
-    const/16 v4, 0x6e
+    const/16 v5, 0x6e
 
-    if-eq v0, v4, :cond_b
+    if-eq v0, v5, :cond_b
 
     const/16 v4, 0x72
 
@@ -1960,7 +2039,7 @@
 
     add-int/lit8 v1, v1, 0x5
 
-    .line 1602
+    .line 1690
     iget v0, p0, Lcom/google/gson/stream/JsonReader;->limit:I
 
     const/4 v4, 0x4
@@ -1975,15 +2054,15 @@
 
     goto :goto_1
 
-    .line 1603
+    .line 1691
     :cond_2
-    invoke-direct {p0, v2}, Lcom/google/gson/stream/JsonReader;->syntaxError(Ljava/lang/String;)Ljava/io/IOException;
+    invoke-direct {p0, v2}, Lcom/google/gson/stream/JsonReader;->syntaxError(Ljava/lang/String;)Lcom/google/gson/stream/MalformedJsonException;
 
     move-result-object p0
 
     throw p0
 
-    .line 1607
+    .line 1695
     :cond_3
     :goto_1
     iget v0, p0, Lcom/google/gson/stream/JsonReader;->pos:I
@@ -1995,14 +2074,12 @@
     :goto_2
     if-ge v0, v1, :cond_7
 
-    .line 1608
+    .line 1696
     iget-object v5, p0, Lcom/google/gson/stream/JsonReader;->buffer:[C
 
     aget-char v5, v5, v0
 
     shl-int/lit8 v2, v2, 0x4
-
-    int-to-char v2, v2
 
     const/16 v6, 0x30
 
@@ -2016,8 +2093,6 @@
 
     :goto_3
     add-int/2addr v2, v5
-
-    int-to-char v2, v2
 
     goto :goto_4
 
@@ -2050,29 +2125,29 @@
 
     goto :goto_2
 
-    .line 1617
+    .line 1705
     :cond_6
-    new-instance v0, Ljava/lang/NumberFormatException;
+    new-instance v0, Ljava/lang/String;
 
-    new-instance v1, Ljava/lang/String;
+    iget-object v1, p0, Lcom/google/gson/stream/JsonReader;->buffer:[C
 
-    iget-object v2, p0, Lcom/google/gson/stream/JsonReader;->buffer:[C
+    iget v2, p0, Lcom/google/gson/stream/JsonReader;->pos:I
 
-    iget p0, p0, Lcom/google/gson/stream/JsonReader;->pos:I
+    invoke-direct {v0, v1, v2, v4}, Ljava/lang/String;-><init>([CII)V
 
-    invoke-direct {v1, v2, p0, v4}, Ljava/lang/String;-><init>([CII)V
+    const-string v1, "Malformed Unicode escape \\u"
 
-    const-string p0, "\\u"
+    invoke-virtual {v1, v0}, Ljava/lang/String;->concat(Ljava/lang/String;)Ljava/lang/String;
 
-    invoke-virtual {p0, v1}, Ljava/lang/String;->concat(Ljava/lang/String;)Ljava/lang/String;
+    move-result-object v0
+
+    invoke-direct {p0, v0}, Lcom/google/gson/stream/JsonReader;->syntaxError(Ljava/lang/String;)Lcom/google/gson/stream/MalformedJsonException;
 
     move-result-object p0
 
-    invoke-direct {v0, p0}, Ljava/lang/NumberFormatException;-><init>(Ljava/lang/String;)V
+    throw p0
 
-    throw v0
-
-    .line 1620
+    .line 1708
     :cond_7
     iget v0, p0, Lcom/google/gson/stream/JsonReader;->pos:I
 
@@ -2080,13 +2155,15 @@
 
     iput v0, p0, Lcom/google/gson/stream/JsonReader;->pos:I
 
-    return v2
+    int-to-char p0, v2
 
-    .line 1650
+    return p0
+
+    .line 1744
     :cond_8
     const-string v0, "Invalid escape sequence"
 
-    invoke-direct {p0, v0}, Lcom/google/gson/stream/JsonReader;->syntaxError(Ljava/lang/String;)Ljava/io/IOException;
+    invoke-direct {p0, v0}, Lcom/google/gson/stream/JsonReader;->syntaxError(Ljava/lang/String;)Lcom/google/gson/stream/MalformedJsonException;
 
     move-result-object p0
 
@@ -2103,7 +2180,7 @@
     return p0
 
     :cond_b
-    return v5
+    return v4
 
     :cond_c
     const/16 p0, 0xc
@@ -2115,19 +2192,56 @@
 
     return p0
 
-    .line 1639
+    .line 1727
     :cond_e
+    iget-object v1, p0, Lcom/google/gson/stream/JsonReader;->strictness:Lcom/google/gson/Strictness;
+
+    sget-object v2, Lcom/google/gson/Strictness;->STRICT:Lcom/google/gson/Strictness;
+
+    if-eq v1, v2, :cond_12
+
+    .line 1730
     iget v1, p0, Lcom/google/gson/stream/JsonReader;->lineNumber:I
 
     add-int/2addr v1, v3
 
     iput v1, p0, Lcom/google/gson/stream/JsonReader;->lineNumber:I
 
-    .line 1640
-    iput v4, p0, Lcom/google/gson/stream/JsonReader;->lineStart:I
+    .line 1731
+    iget v1, p0, Lcom/google/gson/stream/JsonReader;->pos:I
 
+    iput v1, p0, Lcom/google/gson/stream/JsonReader;->lineStart:I
+
+    .line 1735
     :cond_f
+    iget-object v1, p0, Lcom/google/gson/stream/JsonReader;->strictness:Lcom/google/gson/Strictness;
+
+    sget-object v2, Lcom/google/gson/Strictness;->STRICT:Lcom/google/gson/Strictness;
+
+    if-eq v1, v2, :cond_11
+
+    :cond_10
     return v0
+
+    .line 1736
+    :cond_11
+    const-string v0, "Invalid escaped character \"\'\" in strict mode"
+
+    invoke-direct {p0, v0}, Lcom/google/gson/stream/JsonReader;->syntaxError(Ljava/lang/String;)Lcom/google/gson/stream/MalformedJsonException;
+
+    move-result-object p0
+
+    throw p0
+
+    .line 1728
+    :cond_12
+    const-string v0, "Cannot escape a newline character in strict mode"
+
+    invoke-direct {p0, v0}, Lcom/google/gson/stream/JsonReader;->syntaxError(Ljava/lang/String;)Lcom/google/gson/stream/MalformedJsonException;
+
+    move-result-object p0
+
+    throw p0
 .end method
 
 .method private skipQuotedValue(C)V
@@ -2138,14 +2252,14 @@
         }
     .end annotation
 
-    .line 1110
+    .line 1187
     iget-object v0, p0, Lcom/google/gson/stream/JsonReader;->buffer:[C
 
-    .line 1112
+    .line 1189
     :goto_0
     iget v1, p0, Lcom/google/gson/stream/JsonReader;->pos:I
 
-    .line 1113
+    .line 1190
     iget v2, p0, Lcom/google/gson/stream/JsonReader;->limit:I
 
     :goto_1
@@ -2155,12 +2269,12 @@
 
     add-int/lit8 v4, v1, 0x1
 
-    .line 1116
+    .line 1193
     aget-char v1, v0, v1
 
     if-ne v1, p1, :cond_0
 
-    .line 1118
+    .line 1195
     iput v4, p0, Lcom/google/gson/stream/JsonReader;->pos:I
 
     return-void
@@ -2170,16 +2284,16 @@
 
     if-ne v1, v5, :cond_1
 
-    .line 1121
+    .line 1198
     iput v4, p0, Lcom/google/gson/stream/JsonReader;->pos:I
 
-    .line 1122
+    .line 1199
     invoke-direct {p0}, Lcom/google/gson/stream/JsonReader;->readEscapeCharacter()C
 
-    .line 1123
+    .line 1200
     iget v1, p0, Lcom/google/gson/stream/JsonReader;->pos:I
 
-    .line 1124
+    .line 1201
     iget v2, p0, Lcom/google/gson/stream/JsonReader;->limit:I
 
     goto :goto_1
@@ -2189,14 +2303,14 @@
 
     if-ne v1, v5, :cond_2
 
-    .line 1126
+    .line 1203
     iget v1, p0, Lcom/google/gson/stream/JsonReader;->lineNumber:I
 
     add-int/2addr v1, v3
 
     iput v1, p0, Lcom/google/gson/stream/JsonReader;->lineNumber:I
 
-    .line 1127
+    .line 1204
     iput v4, p0, Lcom/google/gson/stream/JsonReader;->lineStart:I
 
     :cond_2
@@ -2204,11 +2318,11 @@
 
     goto :goto_1
 
-    .line 1130
+    .line 1207
     :cond_3
     iput v1, p0, Lcom/google/gson/stream/JsonReader;->pos:I
 
-    .line 1131
+    .line 1208
     invoke-direct {p0, v3}, Lcom/google/gson/stream/JsonReader;->fillBuffer(I)Z
 
     move-result v1
@@ -2217,11 +2331,11 @@
 
     goto :goto_0
 
-    .line 1132
+    .line 1209
     :cond_4
     const-string p1, "Unterminated string"
 
-    invoke-direct {p0, p1}, Lcom/google/gson/stream/JsonReader;->syntaxError(Ljava/lang/String;)Ljava/io/IOException;
+    invoke-direct {p0, p1}, Lcom/google/gson/stream/JsonReader;->syntaxError(Ljava/lang/String;)Lcom/google/gson/stream/MalformedJsonException;
 
     move-result-object p0
 
@@ -2236,12 +2350,12 @@
         }
     .end annotation
 
-    .line 1491
+    .line 1576
     invoke-virtual {p1}, Ljava/lang/String;->length()I
 
     move-result v0
 
-    .line 1493
+    .line 1578
     :goto_0
     iget v1, p0, Lcom/google/gson/stream/JsonReader;->pos:I
 
@@ -2264,7 +2378,7 @@
     :cond_0
     return v3
 
-    .line 1494
+    .line 1579
     :cond_1
     :goto_1
     iget-object v1, p0, Lcom/google/gson/stream/JsonReader;->buffer:[C
@@ -2279,7 +2393,7 @@
 
     if-ne v1, v4, :cond_2
 
-    .line 1495
+    .line 1580
     iget v1, p0, Lcom/google/gson/stream/JsonReader;->lineNumber:I
 
     add-int/2addr v1, v5
@@ -2288,7 +2402,7 @@
 
     add-int/lit8 v2, v2, 0x1
 
-    .line 1496
+    .line 1581
     iput v2, p0, Lcom/google/gson/stream/JsonReader;->lineStart:I
 
     goto :goto_3
@@ -2297,7 +2411,7 @@
     :goto_2
     if-ge v3, v0, :cond_4
 
-    .line 1500
+    .line 1585
     iget-object v1, p0, Lcom/google/gson/stream/JsonReader;->buffer:[C
 
     iget v2, p0, Lcom/google/gson/stream/JsonReader;->pos:I
@@ -2312,7 +2426,7 @@
 
     if-eq v1, v2, :cond_3
 
-    .line 1493
+    .line 1578
     :goto_3
     iget v1, p0, Lcom/google/gson/stream/JsonReader;->pos:I
 
@@ -2339,7 +2453,7 @@
         }
     .end annotation
 
-    .line 1475
+    .line 1560
     :cond_0
     iget v0, p0, Lcom/google/gson/stream/JsonReader;->pos:I
 
@@ -2355,7 +2469,7 @@
 
     if-eqz v0, :cond_3
 
-    .line 1476
+    .line 1561
     :cond_1
     iget-object v0, p0, Lcom/google/gson/stream/JsonReader;->buffer:[C
 
@@ -2371,14 +2485,14 @@
 
     if-ne v0, v1, :cond_2
 
-    .line 1478
+    .line 1563
     iget v0, p0, Lcom/google/gson/stream/JsonReader;->lineNumber:I
 
     add-int/2addr v0, v2
 
     iput v0, p0, Lcom/google/gson/stream/JsonReader;->lineNumber:I
 
-    .line 1479
+    .line 1564
     iput v3, p0, Lcom/google/gson/stream/JsonReader;->lineStart:I
 
     goto :goto_0
@@ -2404,7 +2518,7 @@
     :cond_0
     const/4 v0, 0x0
 
-    .line 1139
+    .line 1216
     :goto_0
     iget v1, p0, Lcom/google/gson/stream/JsonReader;->pos:I
 
@@ -2414,7 +2528,7 @@
 
     if-ge v2, v3, :cond_3
 
-    .line 1140
+    .line 1217
     iget-object v2, p0, Lcom/google/gson/stream/JsonReader;->buffer:[C
 
     add-int/2addr v1, v0
@@ -2479,12 +2593,12 @@
 
     goto :goto_0
 
-    .line 1146
+    .line 1223
     :cond_1
     :pswitch_0
     invoke-direct {p0}, Lcom/google/gson/stream/JsonReader;->checkLenient()V
 
-    .line 1158
+    .line 1235
     :cond_2
     :pswitch_1
     iget v1, p0, Lcom/google/gson/stream/JsonReader;->pos:I
@@ -2498,12 +2612,12 @@
     :cond_3
     add-int/2addr v1, v0
 
-    .line 1162
+    .line 1241
     iput v1, p0, Lcom/google/gson/stream/JsonReader;->pos:I
 
     const/4 v0, 0x1
 
-    .line 1163
+    .line 1242
     invoke-direct {p0, v0}, Lcom/google/gson/stream/JsonReader;->fillBuffer(I)Z
 
     move-result v0
@@ -2520,15 +2634,15 @@
     .end packed-switch
 .end method
 
-.method private syntaxError(Ljava/lang/String;)Ljava/io/IOException;
+.method private syntaxError(Ljava/lang/String;)Lcom/google/gson/stream/MalformedJsonException;
     .locals 2
     .annotation system Ldalvik/annotation/Throws;
         value = {
-            Ljava/io/IOException;
+            Lcom/google/gson/stream/MalformedJsonException;
         }
     .end annotation
 
-    .line 1659
+    .line 1753
     new-instance v0, Lcom/google/gson/stream/MalformedJsonException;
 
     new-instance v1, Ljava/lang/StringBuilder;
@@ -2539,11 +2653,28 @@
 
     move-result-object p1
 
+    .line 1754
     invoke-virtual {p0}, Lcom/google/gson/stream/JsonReader;->locationString()Ljava/lang/String;
 
     move-result-object p0
 
     invoke-virtual {p1, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object p0
+
+    const-string p1, "\nSee "
+
+    invoke-virtual {p0, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object p0
+
+    const-string p1, "malformed-json"
+
+    invoke-static {p1}, Lcom/google/gson/internal/TroubleshootingGuide;->createUrl(Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object p1
+
+    invoke-virtual {p0, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object p0
 
@@ -2556,6 +2687,93 @@
     throw v0
 .end method
 
+.method private unexpectedTokenError(Ljava/lang/String;)Ljava/lang/IllegalStateException;
+    .locals 4
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/io/IOException;
+        }
+    .end annotation
+
+    .line 1758
+    invoke-virtual {p0}, Lcom/google/gson/stream/JsonReader;->peek()Lcom/google/gson/stream/JsonToken;
+
+    move-result-object v0
+
+    .line 1760
+    sget-object v1, Lcom/google/gson/stream/JsonToken;->NULL:Lcom/google/gson/stream/JsonToken;
+
+    if-ne v0, v1, :cond_0
+
+    const-string v0, "adapter-not-null-safe"
+
+    goto :goto_0
+
+    :cond_0
+    const-string v0, "unexpected-json-structure"
+
+    .line 1761
+    :goto_0
+    new-instance v1, Ljava/lang/IllegalStateException;
+
+    new-instance v2, Ljava/lang/StringBuilder;
+
+    const-string v3, "Expected "
+
+    invoke-direct {v2, v3}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+
+    invoke-virtual {v2, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object p1
+
+    const-string v2, " but was "
+
+    invoke-virtual {p1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object p1
+
+    .line 1765
+    invoke-virtual {p0}, Lcom/google/gson/stream/JsonReader;->peek()Lcom/google/gson/stream/JsonToken;
+
+    move-result-object v2
+
+    invoke-virtual {p1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    move-result-object p1
+
+    .line 1766
+    invoke-virtual {p0}, Lcom/google/gson/stream/JsonReader;->locationString()Ljava/lang/String;
+
+    move-result-object p0
+
+    invoke-virtual {p1, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object p0
+
+    const-string p1, "\nSee "
+
+    invoke-virtual {p0, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object p0
+
+    .line 1768
+    invoke-static {v0}, Lcom/google/gson/internal/TroubleshootingGuide;->createUrl(Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object p1
+
+    invoke-virtual {p0, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object p0
+
+    invoke-virtual {p0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object p0
+
+    invoke-direct {v1, p0}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
+
+    return-object v1
+.end method
+
 
 # virtual methods
 .method public beginArray()V
@@ -2566,12 +2784,12 @@
         }
     .end annotation
 
-    .line 349
+    .line 421
     iget v0, p0, Lcom/google/gson/stream/JsonReader;->peeked:I
 
     if-nez v0, :cond_0
 
-    .line 351
+    .line 423
     invoke-virtual {p0}, Lcom/google/gson/stream/JsonReader;->doPeek()I
 
     move-result v0
@@ -2583,10 +2801,10 @@
 
     const/4 v0, 0x1
 
-    .line 354
+    .line 426
     invoke-direct {p0, v0}, Lcom/google/gson/stream/JsonReader;->push(I)V
 
-    .line 355
+    .line 427
     iget-object v1, p0, Lcom/google/gson/stream/JsonReader;->pathIndices:[I
 
     iget v2, p0, Lcom/google/gson/stream/JsonReader;->stackSize:I
@@ -2597,60 +2815,36 @@
 
     aput v0, v1, v2
 
-    .line 356
+    .line 428
     iput v0, p0, Lcom/google/gson/stream/JsonReader;->peeked:I
 
     return-void
 
-    .line 358
+    .line 430
     :cond_1
-    new-instance v0, Ljava/lang/IllegalStateException;
+    const-string v0, "BEGIN_ARRAY"
 
-    new-instance v1, Ljava/lang/StringBuilder;
-
-    const-string v2, "Expected BEGIN_ARRAY but was "
-
-    invoke-direct {v1, v2}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
-
-    invoke-virtual {p0}, Lcom/google/gson/stream/JsonReader;->peek()Lcom/google/gson/stream/JsonToken;
-
-    move-result-object v2
-
-    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
-
-    move-result-object v1
-
-    invoke-virtual {p0}, Lcom/google/gson/stream/JsonReader;->locationString()Ljava/lang/String;
+    invoke-direct {p0, v0}, Lcom/google/gson/stream/JsonReader;->unexpectedTokenError(Ljava/lang/String;)Ljava/lang/IllegalStateException;
 
     move-result-object p0
 
-    invoke-virtual {v1, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object p0
-
-    invoke-virtual {p0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object p0
-
-    invoke-direct {v0, p0}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
-
-    throw v0
+    throw p0
 .end method
 
 .method public beginObject()V
-    .locals 3
+    .locals 2
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
         }
     .end annotation
 
-    .line 385
+    .line 461
     iget v0, p0, Lcom/google/gson/stream/JsonReader;->peeked:I
 
     if-nez v0, :cond_0
 
-    .line 387
+    .line 463
     invoke-virtual {p0}, Lcom/google/gson/stream/JsonReader;->doPeek()I
 
     move-result v0
@@ -2662,49 +2856,25 @@
 
     const/4 v0, 0x3
 
-    .line 390
+    .line 466
     invoke-direct {p0, v0}, Lcom/google/gson/stream/JsonReader;->push(I)V
 
     const/4 v0, 0x0
 
-    .line 391
+    .line 467
     iput v0, p0, Lcom/google/gson/stream/JsonReader;->peeked:I
 
     return-void
 
-    .line 393
+    .line 469
     :cond_1
-    new-instance v0, Ljava/lang/IllegalStateException;
+    const-string v0, "BEGIN_OBJECT"
 
-    new-instance v1, Ljava/lang/StringBuilder;
-
-    const-string v2, "Expected BEGIN_OBJECT but was "
-
-    invoke-direct {v1, v2}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
-
-    invoke-virtual {p0}, Lcom/google/gson/stream/JsonReader;->peek()Lcom/google/gson/stream/JsonToken;
-
-    move-result-object v2
-
-    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
-
-    move-result-object v1
-
-    invoke-virtual {p0}, Lcom/google/gson/stream/JsonReader;->locationString()Ljava/lang/String;
+    invoke-direct {p0, v0}, Lcom/google/gson/stream/JsonReader;->unexpectedTokenError(Ljava/lang/String;)Ljava/lang/IllegalStateException;
 
     move-result-object p0
 
-    invoke-virtual {v1, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object p0
-
-    invoke-virtual {p0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object p0
-
-    invoke-direct {v0, p0}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
-
-    throw v0
+    throw p0
 .end method
 
 .method public close()V
@@ -2717,10 +2887,10 @@
 
     const/4 v0, 0x0
 
-    .line 1230
+    .line 1312
     iput v0, p0, Lcom/google/gson/stream/JsonReader;->peeked:I
 
-    .line 1231
+    .line 1313
     iget-object v1, p0, Lcom/google/gson/stream/JsonReader;->stack:[I
 
     const/16 v2, 0x8
@@ -2729,10 +2899,10 @@
 
     const/4 v0, 0x1
 
-    .line 1232
+    .line 1314
     iput v0, p0, Lcom/google/gson/stream/JsonReader;->stackSize:I
 
-    .line 1233
+    .line 1315
     iget-object p0, p0, Lcom/google/gson/stream/JsonReader;->in:Ljava/io/Reader;
 
     invoke-virtual {p0}, Ljava/io/Reader;->close()V
@@ -2748,7 +2918,7 @@
         }
     .end annotation
 
-    .line 471
+    .line 545
     iget-object v0, p0, Lcom/google/gson/stream/JsonReader;->stack:[I
 
     iget v1, p0, Lcom/google/gson/stream/JsonReader;->stackSize:I
@@ -2783,7 +2953,7 @@
 
     sub-int/2addr v1, v13
 
-    .line 473
+    .line 547
     aput v12, v0, v1
 
     goto/16 :goto_0
@@ -2791,7 +2961,7 @@
     :cond_0
     if-ne v2, v12, :cond_3
 
-    .line 476
+    .line 550
     invoke-direct {p0, v13}, Lcom/google/gson/stream/JsonReader;->nextNonWhitespace(Z)I
 
     move-result v0
@@ -2802,26 +2972,26 @@
 
     if-ne v0, v6, :cond_1
 
-    .line 479
+    .line 553
     iput v11, p0, Lcom/google/gson/stream/JsonReader;->peeked:I
 
     return v11
 
-    .line 485
+    .line 559
     :cond_1
     const-string v0, "Unterminated array"
 
-    invoke-direct {p0, v0}, Lcom/google/gson/stream/JsonReader;->syntaxError(Ljava/lang/String;)Ljava/io/IOException;
+    invoke-direct {p0, v0}, Lcom/google/gson/stream/JsonReader;->syntaxError(Ljava/lang/String;)Lcom/google/gson/stream/MalformedJsonException;
 
     move-result-object p0
 
     throw p0
 
-    .line 481
+    .line 555
     :cond_2
     invoke-direct {p0}, Lcom/google/gson/stream/JsonReader;->checkLenient()V
 
-    goto :goto_0
+    goto/16 :goto_0
 
     :cond_3
     const/4 v14, 0x5
@@ -2837,10 +3007,10 @@
 
     sub-int/2addr v1, v13
 
-    .line 526
+    .line 600
     aput v14, v0, v1
 
-    .line 528
+    .line 602
     invoke-direct {p0, v13}, Lcom/google/gson/stream/JsonReader;->nextNonWhitespace(Z)I
 
     move-result v0
@@ -2853,10 +3023,10 @@
 
     if-ne v0, v1, :cond_6
 
-    .line 533
+    .line 607
     invoke-direct {p0}, Lcom/google/gson/stream/JsonReader;->checkLenient()V
 
-    .line 534
+    .line 608
     iget v0, p0, Lcom/google/gson/stream/JsonReader;->pos:I
 
     iget v1, p0, Lcom/google/gson/stream/JsonReader;->limit:I
@@ -2882,16 +3052,16 @@
 
     add-int/2addr v1, v13
 
-    .line 535
+    .line 609
     iput v1, p0, Lcom/google/gson/stream/JsonReader;->pos:I
 
     goto :goto_0
 
-    .line 539
+    .line 613
     :cond_6
     const-string v0, "Expected \':\'"
 
-    invoke-direct {p0, v0}, Lcom/google/gson/stream/JsonReader;->syntaxError(Ljava/lang/String;)Ljava/io/IOException;
+    invoke-direct {p0, v0}, Lcom/google/gson/stream/JsonReader;->syntaxError(Ljava/lang/String;)Lcom/google/gson/stream/MalformedJsonException;
 
     move-result-object p0
 
@@ -2902,15 +3072,17 @@
 
     if-ne v2, v0, :cond_9
 
-    .line 542
-    iget-boolean v0, p0, Lcom/google/gson/stream/JsonReader;->lenient:Z
+    .line 616
+    iget-object v0, p0, Lcom/google/gson/stream/JsonReader;->strictness:Lcom/google/gson/Strictness;
 
-    if-eqz v0, :cond_8
+    sget-object v1, Lcom/google/gson/Strictness;->LENIENT:Lcom/google/gson/Strictness;
 
-    .line 543
+    if-ne v0, v1, :cond_8
+
+    .line 617
     invoke-direct {p0}, Lcom/google/gson/stream/JsonReader;->consumeNonExecutePrefix()V
 
-    .line 545
+    .line 619
     :cond_8
     iget-object v0, p0, Lcom/google/gson/stream/JsonReader;->stack:[I
 
@@ -2927,7 +3099,7 @@
 
     const/4 v0, 0x0
 
-    .line 547
+    .line 621
     invoke-direct {p0, v0}, Lcom/google/gson/stream/JsonReader;->nextNonWhitespace(Z)I
 
     move-result v0
@@ -2938,16 +3110,16 @@
 
     const/16 v0, 0x11
 
-    .line 549
+    .line 623
     iput v0, p0, Lcom/google/gson/stream/JsonReader;->peeked:I
 
     return v0
 
-    .line 551
+    .line 625
     :cond_a
     invoke-direct {p0}, Lcom/google/gson/stream/JsonReader;->checkLenient()V
 
-    .line 552
+    .line 626
     iget v0, p0, Lcom/google/gson/stream/JsonReader;->pos:I
 
     sub-int/2addr v0, v13
@@ -2959,7 +3131,7 @@
     :cond_b
     if-eq v2, v3, :cond_18
 
-    .line 558
+    .line 632
     :cond_c
     :goto_0
     invoke-direct {p0, v13}, Lcom/google/gson/stream/JsonReader;->nextNonWhitespace(Z)I
@@ -2984,14 +3156,14 @@
 
     if-eq v0, v1, :cond_10
 
-    .line 585
+    .line 659
     iget v0, p0, Lcom/google/gson/stream/JsonReader;->pos:I
 
     sub-int/2addr v0, v13
 
     iput v0, p0, Lcom/google/gson/stream/JsonReader;->pos:I
 
-    .line 588
+    .line 662
     invoke-direct {p0}, Lcom/google/gson/stream/JsonReader;->peekKeyword()I
 
     move-result v0
@@ -3000,7 +3172,7 @@
 
     return v0
 
-    .line 593
+    .line 667
     :cond_d
     invoke-direct {p0}, Lcom/google/gson/stream/JsonReader;->peekNumber()I
 
@@ -3010,7 +3182,7 @@
 
     return v0
 
-    .line 598
+    .line 672
     :cond_e
     iget-object v0, p0, Lcom/google/gson/stream/JsonReader;->buffer:[C
 
@@ -3024,27 +3196,27 @@
 
     if-eqz v0, :cond_f
 
-    .line 602
+    .line 676
     invoke-direct {p0}, Lcom/google/gson/stream/JsonReader;->checkLenient()V
 
     const/16 v0, 0xa
 
-    .line 603
+    .line 677
     iput v0, p0, Lcom/google/gson/stream/JsonReader;->peeked:I
 
     return v0
 
-    .line 599
+    .line 673
     :cond_f
     const-string v0, "Expected value"
 
-    invoke-direct {p0, v0}, Lcom/google/gson/stream/JsonReader;->syntaxError(Ljava/lang/String;)Ljava/io/IOException;
+    invoke-direct {p0, v0}, Lcom/google/gson/stream/JsonReader;->syntaxError(Ljava/lang/String;)Lcom/google/gson/stream/MalformedJsonException;
 
     move-result-object p0
 
     throw p0
 
-    .line 583
+    .line 657
     :cond_10
     iput v13, p0, Lcom/google/gson/stream/JsonReader;->peeked:I
 
@@ -3053,12 +3225,12 @@
     :cond_11
     if-ne v2, v13, :cond_13
 
-    .line 562
+    .line 636
     iput v11, p0, Lcom/google/gson/stream/JsonReader;->peeked:I
 
     return v11
 
-    .line 581
+    .line 655
     :cond_12
     iput v7, p0, Lcom/google/gson/stream/JsonReader;->peeked:I
 
@@ -3071,38 +3243,38 @@
 
     goto :goto_1
 
-    .line 573
+    .line 647
     :cond_14
     const-string v0, "Unexpected value"
 
-    invoke-direct {p0, v0}, Lcom/google/gson/stream/JsonReader;->syntaxError(Ljava/lang/String;)Ljava/io/IOException;
+    invoke-direct {p0, v0}, Lcom/google/gson/stream/JsonReader;->syntaxError(Ljava/lang/String;)Lcom/google/gson/stream/MalformedJsonException;
 
     move-result-object p0
 
     throw p0
 
-    .line 569
+    .line 643
     :cond_15
     :goto_1
     invoke-direct {p0}, Lcom/google/gson/stream/JsonReader;->checkLenient()V
 
-    .line 570
+    .line 644
     iget v0, p0, Lcom/google/gson/stream/JsonReader;->pos:I
 
     sub-int/2addr v0, v13
 
     iput v0, p0, Lcom/google/gson/stream/JsonReader;->pos:I
 
-    .line 571
+    .line 645
     iput v8, p0, Lcom/google/gson/stream/JsonReader;->peeked:I
 
     return v8
 
-    .line 576
+    .line 650
     :cond_16
     invoke-direct {p0}, Lcom/google/gson/stream/JsonReader;->checkLenient()V
 
-    .line 577
+    .line 651
     iput v3, p0, Lcom/google/gson/stream/JsonReader;->peeked:I
 
     return v3
@@ -3110,12 +3282,12 @@
     :cond_17
     const/16 v0, 0x9
 
-    .line 579
+    .line 653
     iput v0, p0, Lcom/google/gson/stream/JsonReader;->peeked:I
 
     return v0
 
-    .line 555
+    .line 629
     :cond_18
     new-instance p0, Ljava/lang/IllegalStateException;
 
@@ -3129,14 +3301,14 @@
     :goto_2
     sub-int/2addr v1, v13
 
-    .line 488
+    .line 562
     aput v11, v0, v1
 
     const/16 v0, 0x7d
 
     if-ne v2, v14, :cond_1c
 
-    .line 491
+    .line 565
     invoke-direct {p0, v13}, Lcom/google/gson/stream/JsonReader;->nextNonWhitespace(Z)I
 
     move-result v1
@@ -3147,26 +3319,26 @@
 
     if-ne v1, v0, :cond_1a
 
-    .line 494
+    .line 568
     iput v12, p0, Lcom/google/gson/stream/JsonReader;->peeked:I
 
     return v12
 
-    .line 500
+    .line 574
     :cond_1a
     const-string v0, "Unterminated object"
 
-    invoke-direct {p0, v0}, Lcom/google/gson/stream/JsonReader;->syntaxError(Ljava/lang/String;)Ljava/io/IOException;
+    invoke-direct {p0, v0}, Lcom/google/gson/stream/JsonReader;->syntaxError(Ljava/lang/String;)Lcom/google/gson/stream/MalformedJsonException;
 
     move-result-object p0
 
     throw p0
 
-    .line 496
+    .line 570
     :cond_1b
     invoke-direct {p0}, Lcom/google/gson/stream/JsonReader;->checkLenient()V
 
-    .line 503
+    .line 577
     :cond_1c
     invoke-direct {p0, v13}, Lcom/google/gson/stream/JsonReader;->nextNonWhitespace(Z)I
 
@@ -3176,15 +3348,15 @@
 
     if-eq v1, v4, :cond_20
 
-    .line 504
+    .line 578
     const-string v3, "Expected name"
 
     if-eq v1, v0, :cond_1e
 
-    .line 517
+    .line 591
     invoke-direct {p0}, Lcom/google/gson/stream/JsonReader;->checkLenient()V
 
-    .line 518
+    .line 592
     iget v0, p0, Lcom/google/gson/stream/JsonReader;->pos:I
 
     sub-int/2addr v0, v13
@@ -3193,7 +3365,7 @@
 
     int-to-char v0, v1
 
-    .line 519
+    .line 593
     invoke-direct {p0, v0}, Lcom/google/gson/stream/JsonReader;->isLiteral(C)Z
 
     move-result v0
@@ -3202,14 +3374,14 @@
 
     const/16 v0, 0xe
 
-    .line 520
+    .line 594
     iput v0, p0, Lcom/google/gson/stream/JsonReader;->peeked:I
 
     return v0
 
-    .line 522
+    .line 596
     :cond_1d
-    invoke-direct {p0, v3}, Lcom/google/gson/stream/JsonReader;->syntaxError(Ljava/lang/String;)Ljava/io/IOException;
+    invoke-direct {p0, v3}, Lcom/google/gson/stream/JsonReader;->syntaxError(Ljava/lang/String;)Lcom/google/gson/stream/MalformedJsonException;
 
     move-result-object p0
 
@@ -3218,26 +3390,26 @@
     :cond_1e
     if-eq v2, v14, :cond_1f
 
-    .line 512
+    .line 586
     iput v12, p0, Lcom/google/gson/stream/JsonReader;->peeked:I
 
     return v12
 
-    .line 514
+    .line 588
     :cond_1f
-    invoke-direct {p0, v3}, Lcom/google/gson/stream/JsonReader;->syntaxError(Ljava/lang/String;)Ljava/io/IOException;
+    invoke-direct {p0, v3}, Lcom/google/gson/stream/JsonReader;->syntaxError(Ljava/lang/String;)Lcom/google/gson/stream/MalformedJsonException;
 
     move-result-object p0
 
     throw p0
 
-    .line 508
+    .line 582
     :cond_20
     invoke-direct {p0}, Lcom/google/gson/stream/JsonReader;->checkLenient()V
 
     const/16 v0, 0xc
 
-    .line 509
+    .line 583
     iput v0, p0, Lcom/google/gson/stream/JsonReader;->peeked:I
 
     return v0
@@ -3245,7 +3417,7 @@
     :cond_21
     const/16 v0, 0xd
 
-    .line 506
+    .line 580
     iput v0, p0, Lcom/google/gson/stream/JsonReader;->peeked:I
 
     return v0
@@ -3259,12 +3431,12 @@
         }
     .end annotation
 
-    .line 367
+    .line 441
     iget v0, p0, Lcom/google/gson/stream/JsonReader;->peeked:I
 
     if-nez v0, :cond_0
 
-    .line 369
+    .line 443
     invoke-virtual {p0}, Lcom/google/gson/stream/JsonReader;->doPeek()I
 
     move-result v0
@@ -3274,14 +3446,14 @@
 
     if-ne v0, v1, :cond_1
 
-    .line 372
+    .line 446
     iget v0, p0, Lcom/google/gson/stream/JsonReader;->stackSize:I
 
     add-int/lit8 v1, v0, -0x1
 
     iput v1, p0, Lcom/google/gson/stream/JsonReader;->stackSize:I
 
-    .line 373
+    .line 447
     iget-object v1, p0, Lcom/google/gson/stream/JsonReader;->pathIndices:[I
 
     add-int/lit8 v0, v0, -0x2
@@ -3294,44 +3466,20 @@
 
     const/4 v0, 0x0
 
-    .line 374
+    .line 448
     iput v0, p0, Lcom/google/gson/stream/JsonReader;->peeked:I
 
     return-void
 
-    .line 376
+    .line 450
     :cond_1
-    new-instance v0, Ljava/lang/IllegalStateException;
+    const-string v0, "END_ARRAY"
 
-    new-instance v1, Ljava/lang/StringBuilder;
-
-    const-string v2, "Expected END_ARRAY but was "
-
-    invoke-direct {v1, v2}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
-
-    invoke-virtual {p0}, Lcom/google/gson/stream/JsonReader;->peek()Lcom/google/gson/stream/JsonToken;
-
-    move-result-object v2
-
-    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
-
-    move-result-object v1
-
-    invoke-virtual {p0}, Lcom/google/gson/stream/JsonReader;->locationString()Ljava/lang/String;
+    invoke-direct {p0, v0}, Lcom/google/gson/stream/JsonReader;->unexpectedTokenError(Ljava/lang/String;)Ljava/lang/IllegalStateException;
 
     move-result-object p0
 
-    invoke-virtual {v1, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object p0
-
-    invoke-virtual {p0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object p0
-
-    invoke-direct {v0, p0}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
-
-    throw v0
+    throw p0
 .end method
 
 .method public endObject()V
@@ -3342,12 +3490,12 @@
         }
     .end annotation
 
-    .line 402
+    .line 480
     iget v0, p0, Lcom/google/gson/stream/JsonReader;->peeked:I
 
     if-nez v0, :cond_0
 
-    .line 404
+    .line 482
     invoke-virtual {p0}, Lcom/google/gson/stream/JsonReader;->doPeek()I
 
     move-result v0
@@ -3357,21 +3505,21 @@
 
     if-ne v0, v1, :cond_1
 
-    .line 407
+    .line 485
     iget v0, p0, Lcom/google/gson/stream/JsonReader;->stackSize:I
 
     add-int/lit8 v2, v0, -0x1
 
     iput v2, p0, Lcom/google/gson/stream/JsonReader;->stackSize:I
 
-    .line 408
+    .line 486
     iget-object v3, p0, Lcom/google/gson/stream/JsonReader;->pathNames:[Ljava/lang/String;
 
     const/4 v4, 0x0
 
     aput-object v4, v3, v2
 
-    .line 409
+    .line 487
     iget-object v2, p0, Lcom/google/gson/stream/JsonReader;->pathIndices:[I
 
     sub-int/2addr v0, v1
@@ -3384,44 +3532,20 @@
 
     const/4 v0, 0x0
 
-    .line 410
+    .line 488
     iput v0, p0, Lcom/google/gson/stream/JsonReader;->peeked:I
 
     return-void
 
-    .line 412
+    .line 490
     :cond_1
-    new-instance v0, Ljava/lang/IllegalStateException;
+    const-string v0, "END_OBJECT"
 
-    new-instance v1, Ljava/lang/StringBuilder;
-
-    const-string v2, "Expected END_OBJECT but was "
-
-    invoke-direct {v1, v2}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
-
-    invoke-virtual {p0}, Lcom/google/gson/stream/JsonReader;->peek()Lcom/google/gson/stream/JsonToken;
-
-    move-result-object v2
-
-    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
-
-    move-result-object v1
-
-    invoke-virtual {p0}, Lcom/google/gson/stream/JsonReader;->locationString()Ljava/lang/String;
+    invoke-direct {p0, v0}, Lcom/google/gson/stream/JsonReader;->unexpectedTokenError(Ljava/lang/String;)Ljava/lang/IllegalStateException;
 
     move-result-object p0
 
-    invoke-virtual {v1, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object p0
-
-    invoke-virtual {p0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object p0
-
-    invoke-direct {v0, p0}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
-
-    throw v0
+    throw p0
 .end method
 
 .method public getPath()Ljava/lang/String;
@@ -3429,7 +3553,7 @@
 
     const/4 v0, 0x0
 
-    .line 1581
+    .line 1653
     invoke-direct {p0, v0}, Lcom/google/gson/stream/JsonReader;->getPath(Z)Ljava/lang/String;
 
     move-result-object p0
@@ -3442,10 +3566,19 @@
 
     const/4 v0, 0x1
 
-    .line 1563
+    .line 1671
     invoke-direct {p0, v0}, Lcom/google/gson/stream/JsonReader;->getPath(Z)Ljava/lang/String;
 
     move-result-object p0
+
+    return-object p0
+.end method
+
+.method public final getStrictness()Lcom/google/gson/Strictness;
+    .locals 0
+
+    .line 411
+    iget-object p0, p0, Lcom/google/gson/stream/JsonReader;->strictness:Lcom/google/gson/Strictness;
 
     return-object p0
 .end method
@@ -3458,12 +3591,12 @@
         }
     .end annotation
 
-    .line 420
+    .line 496
     iget v0, p0, Lcom/google/gson/stream/JsonReader;->peeked:I
 
     if-nez v0, :cond_0
 
-    .line 422
+    .line 498
     invoke-virtual {p0}, Lcom/google/gson/stream/JsonReader;->doPeek()I
 
     move-result v0
@@ -3493,23 +3626,35 @@
 .end method
 
 .method public final isLenient()Z
-    .locals 0
+    .locals 1
 
-    .line 341
-    iget-boolean p0, p0, Lcom/google/gson/stream/JsonReader;->lenient:Z
+    .line 342
+    iget-object p0, p0, Lcom/google/gson/stream/JsonReader;->strictness:Lcom/google/gson/Strictness;
 
+    sget-object v0, Lcom/google/gson/Strictness;->LENIENT:Lcom/google/gson/Strictness;
+
+    if-ne p0, v0, :cond_0
+
+    const/4 p0, 0x1
+
+    goto :goto_0
+
+    :cond_0
+    const/4 p0, 0x0
+
+    :goto_0
     return p0
 .end method
 
 .method locationString()Ljava/lang/String;
     .locals 4
 
-    .line 1514
+    .line 1600
     iget v0, p0, Lcom/google/gson/stream/JsonReader;->lineNumber:I
 
     add-int/lit8 v0, v0, 0x1
 
-    .line 1515
+    .line 1601
     iget v1, p0, Lcom/google/gson/stream/JsonReader;->pos:I
 
     iget v2, p0, Lcom/google/gson/stream/JsonReader;->lineStart:I
@@ -3518,7 +3663,7 @@
 
     add-int/lit8 v1, v1, 0x1
 
-    .line 1516
+    .line 1602
     new-instance v2, Ljava/lang/StringBuilder;
 
     const-string v3, " at line "
@@ -3568,12 +3713,12 @@
         }
     .end annotation
 
-    .line 851
+    .line 930
     iget v0, p0, Lcom/google/gson/stream/JsonReader;->peeked:I
 
     if-nez v0, :cond_0
 
-    .line 853
+    .line 932
     invoke-virtual {p0}, Lcom/google/gson/stream/JsonReader;->doPeek()I
 
     move-result v0
@@ -3587,10 +3732,10 @@
 
     if-ne v0, v1, :cond_1
 
-    .line 856
+    .line 935
     iput v2, p0, Lcom/google/gson/stream/JsonReader;->peeked:I
 
-    .line 857
+    .line 936
     iget-object v0, p0, Lcom/google/gson/stream/JsonReader;->pathIndices:[I
 
     iget p0, p0, Lcom/google/gson/stream/JsonReader;->stackSize:I
@@ -3610,10 +3755,10 @@
 
     if-ne v0, v1, :cond_2
 
-    .line 860
+    .line 939
     iput v2, p0, Lcom/google/gson/stream/JsonReader;->peeked:I
 
-    .line 861
+    .line 940
     iget-object v0, p0, Lcom/google/gson/stream/JsonReader;->pathIndices:[I
 
     iget p0, p0, Lcom/google/gson/stream/JsonReader;->stackSize:I
@@ -3628,39 +3773,15 @@
 
     return v2
 
-    .line 864
+    .line 943
     :cond_2
-    new-instance v0, Ljava/lang/IllegalStateException;
+    const-string v0, "a boolean"
 
-    new-instance v1, Ljava/lang/StringBuilder;
-
-    const-string v2, "Expected a boolean but was "
-
-    invoke-direct {v1, v2}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
-
-    invoke-virtual {p0}, Lcom/google/gson/stream/JsonReader;->peek()Lcom/google/gson/stream/JsonToken;
-
-    move-result-object v2
-
-    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
-
-    move-result-object v1
-
-    invoke-virtual {p0}, Lcom/google/gson/stream/JsonReader;->locationString()Ljava/lang/String;
+    invoke-direct {p0, v0}, Lcom/google/gson/stream/JsonReader;->unexpectedTokenError(Ljava/lang/String;)Ljava/lang/IllegalStateException;
 
     move-result-object p0
 
-    invoke-virtual {v1, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object p0
-
-    invoke-virtual {p0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object p0
-
-    invoke-direct {v0, p0}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
-
-    throw v0
+    throw p0
 .end method
 
 .method public nextDouble()D
@@ -3671,12 +3792,12 @@
         }
     .end annotation
 
-    .line 899
+    .line 975
     iget v0, p0, Lcom/google/gson/stream/JsonReader;->peeked:I
 
     if-nez v0, :cond_0
 
-    .line 901
+    .line 977
     invoke-virtual {p0}, Lcom/google/gson/stream/JsonReader;->doPeek()I
 
     move-result v0
@@ -3688,10 +3809,10 @@
 
     if-ne v0, v1, :cond_1
 
-    .line 905
+    .line 981
     iput v2, p0, Lcom/google/gson/stream/JsonReader;->peeked:I
 
-    .line 906
+    .line 982
     iget-object v0, p0, Lcom/google/gson/stream/JsonReader;->pathIndices:[I
 
     iget v1, p0, Lcom/google/gson/stream/JsonReader;->stackSize:I
@@ -3704,7 +3825,7 @@
 
     aput v2, v0, v1
 
-    .line 907
+    .line 983
     iget-wide v0, p0, Lcom/google/gson/stream/JsonReader;->peekedLong:J
 
     long-to-double v0, v0
@@ -3718,7 +3839,7 @@
 
     if-ne v0, v1, :cond_2
 
-    .line 911
+    .line 987
     new-instance v0, Ljava/lang/String;
 
     iget-object v1, p0, Lcom/google/gson/stream/JsonReader;->buffer:[C
@@ -3731,7 +3852,7 @@
 
     iput-object v0, p0, Lcom/google/gson/stream/JsonReader;->peekedString:Ljava/lang/String;
 
-    .line 912
+    .line 988
     iget v0, p0, Lcom/google/gson/stream/JsonReader;->pos:I
 
     iget v1, p0, Lcom/google/gson/stream/JsonReader;->peekedNumberLength:I
@@ -3758,7 +3879,7 @@
 
     if-ne v0, v1, :cond_4
 
-    .line 916
+    .line 992
     invoke-direct {p0}, Lcom/google/gson/stream/JsonReader;->nextUnquotedValue()Ljava/lang/String;
 
     move-result-object v0
@@ -3772,39 +3893,15 @@
 
     goto :goto_2
 
-    .line 918
+    .line 994
     :cond_5
-    new-instance v0, Ljava/lang/IllegalStateException;
+    const-string v0, "a double"
 
-    new-instance v1, Ljava/lang/StringBuilder;
-
-    const-string v2, "Expected a double but was "
-
-    invoke-direct {v1, v2}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
-
-    invoke-virtual {p0}, Lcom/google/gson/stream/JsonReader;->peek()Lcom/google/gson/stream/JsonToken;
-
-    move-result-object v2
-
-    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
-
-    move-result-object v1
-
-    invoke-virtual {p0}, Lcom/google/gson/stream/JsonReader;->locationString()Ljava/lang/String;
+    invoke-direct {p0, v0}, Lcom/google/gson/stream/JsonReader;->unexpectedTokenError(Ljava/lang/String;)Ljava/lang/IllegalStateException;
 
     move-result-object p0
 
-    invoke-virtual {v1, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object p0
-
-    invoke-virtual {p0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object p0
-
-    invoke-direct {v0, p0}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
-
-    throw v0
+    throw p0
 
     :cond_6
     :goto_0
@@ -3817,7 +3914,7 @@
     :cond_7
     const/16 v0, 0x22
 
-    .line 914
+    .line 990
     :goto_1
     invoke-direct {p0, v0}, Lcom/google/gson/stream/JsonReader;->nextQuotedValue(C)Ljava/lang/String;
 
@@ -3825,21 +3922,23 @@
 
     iput-object v0, p0, Lcom/google/gson/stream/JsonReader;->peekedString:Ljava/lang/String;
 
-    .line 921
+    .line 997
     :goto_2
     iput v3, p0, Lcom/google/gson/stream/JsonReader;->peeked:I
 
-    .line 922
+    .line 998
     iget-object v0, p0, Lcom/google/gson/stream/JsonReader;->peekedString:Ljava/lang/String;
 
     invoke-static {v0}, Ljava/lang/Double;->parseDouble(Ljava/lang/String;)D
 
     move-result-wide v0
 
-    .line 923
-    iget-boolean v3, p0, Lcom/google/gson/stream/JsonReader;->lenient:Z
+    .line 999
+    iget-object v3, p0, Lcom/google/gson/stream/JsonReader;->strictness:Lcom/google/gson/Strictness;
 
-    if-nez v3, :cond_9
+    sget-object v4, Lcom/google/gson/Strictness;->LENIENT:Lcom/google/gson/Strictness;
+
+    if-eq v3, v4, :cond_9
 
     invoke-static {v0, v1}, Ljava/lang/Double;->isNaN(D)Z
 
@@ -3855,48 +3954,39 @@
 
     goto :goto_3
 
-    .line 924
+    .line 1000
     :cond_8
-    new-instance v2, Lcom/google/gson/stream/MalformedJsonException;
+    new-instance v2, Ljava/lang/StringBuilder;
 
-    new-instance v3, Ljava/lang/StringBuilder;
+    const-string v3, "JSON forbids NaN and infinities: "
 
-    const-string v4, "JSON forbids NaN and infinities: "
+    invoke-direct {v2, v3}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
-    invoke-direct {v3, v4}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
-
-    invoke-virtual {v3, v0, v1}, Ljava/lang/StringBuilder;->append(D)Ljava/lang/StringBuilder;
+    invoke-virtual {v2, v0, v1}, Ljava/lang/StringBuilder;->append(D)Ljava/lang/StringBuilder;
 
     move-result-object v0
 
-    .line 925
-    invoke-virtual {p0}, Lcom/google/gson/stream/JsonReader;->locationString()Ljava/lang/String;
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v0
+
+    invoke-direct {p0, v0}, Lcom/google/gson/stream/JsonReader;->syntaxError(Ljava/lang/String;)Lcom/google/gson/stream/MalformedJsonException;
 
     move-result-object p0
 
-    invoke-virtual {v0, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object p0
-
-    invoke-virtual {p0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object p0
-
-    invoke-direct {v2, p0}, Lcom/google/gson/stream/MalformedJsonException;-><init>(Ljava/lang/String;)V
-
-    throw v2
+    throw p0
 
     :cond_9
     :goto_3
     const/4 v3, 0x0
 
-    .line 927
+    .line 1002
     iput-object v3, p0, Lcom/google/gson/stream/JsonReader;->peekedString:Ljava/lang/String;
 
-    .line 928
+    .line 1003
     iput v2, p0, Lcom/google/gson/stream/JsonReader;->peeked:I
 
-    .line 929
+    .line 1004
     iget-object v2, p0, Lcom/google/gson/stream/JsonReader;->pathIndices:[I
 
     iget p0, p0, Lcom/google/gson/stream/JsonReader;->stackSize:I
@@ -3920,12 +4010,12 @@
         }
     .end annotation
 
-    .line 1177
+    .line 1255
     iget v0, p0, Lcom/google/gson/stream/JsonReader;->peeked:I
 
     if-nez v0, :cond_0
 
-    .line 1179
+    .line 1257
     invoke-virtual {p0}, Lcom/google/gson/stream/JsonReader;->doPeek()I
 
     move-result v0
@@ -3933,14 +4023,14 @@
     :cond_0
     const/16 v1, 0xf
 
-    .line 1183
+    .line 1261
     const-string v2, "Expected an int but was "
 
     const/4 v3, 0x0
 
     if-ne v0, v1, :cond_2
 
-    .line 1184
+    .line 1262
     iget-wide v0, p0, Lcom/google/gson/stream/JsonReader;->peekedLong:J
 
     long-to-int v4, v0
@@ -3951,10 +4041,10 @@
 
     if-nez v0, :cond_1
 
-    .line 1188
+    .line 1266
     iput v3, p0, Lcom/google/gson/stream/JsonReader;->peeked:I
 
-    .line 1189
+    .line 1267
     iget-object v0, p0, Lcom/google/gson/stream/JsonReader;->pathIndices:[I
 
     iget p0, p0, Lcom/google/gson/stream/JsonReader;->stackSize:I
@@ -3969,7 +4059,7 @@
 
     return v4
 
-    .line 1186
+    .line 1264
     :cond_1
     new-instance v0, Ljava/lang/NumberFormatException;
 
@@ -4004,7 +4094,7 @@
 
     if-ne v0, v1, :cond_3
 
-    .line 1194
+    .line 1272
     new-instance v0, Ljava/lang/String;
 
     iget-object v1, p0, Lcom/google/gson/stream/JsonReader;->buffer:[C
@@ -4017,7 +4107,7 @@
 
     iput-object v0, p0, Lcom/google/gson/stream/JsonReader;->peekedString:Ljava/lang/String;
 
-    .line 1195
+    .line 1273
     iget v0, p0, Lcom/google/gson/stream/JsonReader;->pos:I
 
     iget v1, p0, Lcom/google/gson/stream/JsonReader;->peekedNumberLength:I
@@ -4043,43 +4133,21 @@
 
     goto :goto_0
 
-    .line 1211
+    .line 1289
     :cond_4
-    new-instance v0, Ljava/lang/IllegalStateException;
+    const-string v0, "an int"
 
-    new-instance v1, Ljava/lang/StringBuilder;
-
-    invoke-direct {v1, v2}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
-
-    invoke-virtual {p0}, Lcom/google/gson/stream/JsonReader;->peek()Lcom/google/gson/stream/JsonToken;
-
-    move-result-object v2
-
-    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
-
-    move-result-object v1
-
-    invoke-virtual {p0}, Lcom/google/gson/stream/JsonReader;->locationString()Ljava/lang/String;
+    invoke-direct {p0, v0}, Lcom/google/gson/stream/JsonReader;->unexpectedTokenError(Ljava/lang/String;)Ljava/lang/IllegalStateException;
 
     move-result-object p0
 
-    invoke-virtual {v1, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object p0
-
-    invoke-virtual {p0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object p0
-
-    invoke-direct {v0, p0}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
-
-    throw v0
+    throw p0
 
     :cond_5
     :goto_0
     if-ne v0, v1, :cond_6
 
-    .line 1198
+    .line 1276
     invoke-direct {p0}, Lcom/google/gson/stream/JsonReader;->nextUnquotedValue()Ljava/lang/String;
 
     move-result-object v0
@@ -4098,7 +4166,7 @@
     :cond_7
     const/16 v0, 0x22
 
-    .line 1200
+    .line 1278
     :goto_1
     invoke-direct {p0, v0}, Lcom/google/gson/stream/JsonReader;->nextQuotedValue(C)Ljava/lang/String;
 
@@ -4106,7 +4174,7 @@
 
     iput-object v0, p0, Lcom/google/gson/stream/JsonReader;->peekedString:Ljava/lang/String;
 
-    .line 1203
+    .line 1281
     :goto_2
     :try_start_0
     iget-object v0, p0, Lcom/google/gson/stream/JsonReader;->peekedString:Ljava/lang/String;
@@ -4115,10 +4183,10 @@
 
     move-result v0
 
-    .line 1204
+    .line 1282
     iput v3, p0, Lcom/google/gson/stream/JsonReader;->peeked:I
 
-    .line 1205
+    .line 1283
     iget-object v1, p0, Lcom/google/gson/stream/JsonReader;->pathIndices:[I
 
     iget v4, p0, Lcom/google/gson/stream/JsonReader;->stackSize:I
@@ -4139,10 +4207,10 @@
     :goto_3
     const/16 v0, 0xb
 
-    .line 1214
+    .line 1292
     iput v0, p0, Lcom/google/gson/stream/JsonReader;->peeked:I
 
-    .line 1215
+    .line 1293
     iget-object v0, p0, Lcom/google/gson/stream/JsonReader;->peekedString:Ljava/lang/String;
 
     invoke-static {v0}, Ljava/lang/Double;->parseDouble(Ljava/lang/String;)D
@@ -4159,13 +4227,13 @@
 
     const/4 v0, 0x0
 
-    .line 1220
+    .line 1298
     iput-object v0, p0, Lcom/google/gson/stream/JsonReader;->peekedString:Ljava/lang/String;
 
-    .line 1221
+    .line 1299
     iput v3, p0, Lcom/google/gson/stream/JsonReader;->peeked:I
 
-    .line 1222
+    .line 1300
     iget-object v0, p0, Lcom/google/gson/stream/JsonReader;->pathIndices:[I
 
     iget p0, p0, Lcom/google/gson/stream/JsonReader;->stackSize:I
@@ -4180,7 +4248,7 @@
 
     return v4
 
-    .line 1218
+    .line 1296
     :cond_8
     new-instance v0, Ljava/lang/NumberFormatException;
 
@@ -4212,19 +4280,19 @@
 .end method
 
 .method public nextLong()J
-    .locals 8
+    .locals 7
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
         }
     .end annotation
 
-    .line 944
+    .line 1018
     iget v0, p0, Lcom/google/gson/stream/JsonReader;->peeked:I
 
     if-nez v0, :cond_0
 
-    .line 946
+    .line 1020
     invoke-virtual {p0}, Lcom/google/gson/stream/JsonReader;->doPeek()I
 
     move-result v0
@@ -4236,10 +4304,10 @@
 
     if-ne v0, v1, :cond_1
 
-    .line 950
+    .line 1024
     iput v2, p0, Lcom/google/gson/stream/JsonReader;->peeked:I
 
-    .line 951
+    .line 1025
     iget-object v0, p0, Lcom/google/gson/stream/JsonReader;->pathIndices:[I
 
     iget v1, p0, Lcom/google/gson/stream/JsonReader;->stackSize:I
@@ -4252,7 +4320,7 @@
 
     aput v2, v0, v1
 
-    .line 952
+    .line 1026
     iget-wide v0, p0, Lcom/google/gson/stream/JsonReader;->peekedLong:J
 
     return-wide v0
@@ -4260,25 +4328,22 @@
     :cond_1
     const/16 v1, 0x10
 
-    .line 955
-    const-string v3, "Expected a long but was "
-
     if-ne v0, v1, :cond_2
 
-    .line 956
+    .line 1030
     new-instance v0, Ljava/lang/String;
 
     iget-object v1, p0, Lcom/google/gson/stream/JsonReader;->buffer:[C
 
-    iget v4, p0, Lcom/google/gson/stream/JsonReader;->pos:I
+    iget v3, p0, Lcom/google/gson/stream/JsonReader;->pos:I
 
-    iget v5, p0, Lcom/google/gson/stream/JsonReader;->peekedNumberLength:I
+    iget v4, p0, Lcom/google/gson/stream/JsonReader;->peekedNumberLength:I
 
-    invoke-direct {v0, v1, v4, v5}, Ljava/lang/String;-><init>([CII)V
+    invoke-direct {v0, v1, v3, v4}, Ljava/lang/String;-><init>([CII)V
 
     iput-object v0, p0, Lcom/google/gson/stream/JsonReader;->peekedString:Ljava/lang/String;
 
-    .line 957
+    .line 1031
     iget v0, p0, Lcom/google/gson/stream/JsonReader;->pos:I
 
     iget v1, p0, Lcom/google/gson/stream/JsonReader;->peekedNumberLength:I
@@ -4292,55 +4357,33 @@
     :cond_2
     const/16 v1, 0xa
 
-    const/16 v4, 0x8
+    const/16 v3, 0x8
+
+    if-eq v0, v3, :cond_4
+
+    const/16 v4, 0x9
 
     if-eq v0, v4, :cond_4
-
-    const/16 v5, 0x9
-
-    if-eq v0, v5, :cond_4
 
     if-ne v0, v1, :cond_3
 
     goto :goto_0
 
-    .line 973
+    .line 1047
     :cond_3
-    new-instance v0, Ljava/lang/IllegalStateException;
+    const-string v0, "a long"
 
-    new-instance v1, Ljava/lang/StringBuilder;
-
-    invoke-direct {v1, v3}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
-
-    invoke-virtual {p0}, Lcom/google/gson/stream/JsonReader;->peek()Lcom/google/gson/stream/JsonToken;
-
-    move-result-object v2
-
-    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
-
-    move-result-object v1
-
-    invoke-virtual {p0}, Lcom/google/gson/stream/JsonReader;->locationString()Ljava/lang/String;
+    invoke-direct {p0, v0}, Lcom/google/gson/stream/JsonReader;->unexpectedTokenError(Ljava/lang/String;)Ljava/lang/IllegalStateException;
 
     move-result-object p0
 
-    invoke-virtual {v1, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object p0
-
-    invoke-virtual {p0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object p0
-
-    invoke-direct {v0, p0}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
-
-    throw v0
+    throw p0
 
     :cond_4
     :goto_0
     if-ne v0, v1, :cond_5
 
-    .line 960
+    .line 1034
     invoke-direct {p0}, Lcom/google/gson/stream/JsonReader;->nextUnquotedValue()Ljava/lang/String;
 
     move-result-object v0
@@ -4350,7 +4393,7 @@
     goto :goto_2
 
     :cond_5
-    if-ne v0, v4, :cond_6
+    if-ne v0, v3, :cond_6
 
     const/16 v0, 0x27
 
@@ -4359,7 +4402,7 @@
     :cond_6
     const/16 v0, 0x22
 
-    .line 962
+    .line 1036
     :goto_1
     invoke-direct {p0, v0}, Lcom/google/gson/stream/JsonReader;->nextQuotedValue(C)Ljava/lang/String;
 
@@ -4367,7 +4410,7 @@
 
     iput-object v0, p0, Lcom/google/gson/stream/JsonReader;->peekedString:Ljava/lang/String;
 
-    .line 965
+    .line 1039
     :goto_2
     :try_start_0
     iget-object v0, p0, Lcom/google/gson/stream/JsonReader;->peekedString:Ljava/lang/String;
@@ -4376,21 +4419,21 @@
 
     move-result-wide v0
 
-    .line 966
+    .line 1040
     iput v2, p0, Lcom/google/gson/stream/JsonReader;->peeked:I
 
-    .line 967
-    iget-object v4, p0, Lcom/google/gson/stream/JsonReader;->pathIndices:[I
+    .line 1041
+    iget-object v3, p0, Lcom/google/gson/stream/JsonReader;->pathIndices:[I
 
-    iget v5, p0, Lcom/google/gson/stream/JsonReader;->stackSize:I
+    iget v4, p0, Lcom/google/gson/stream/JsonReader;->stackSize:I
 
-    add-int/lit8 v5, v5, -0x1
+    add-int/lit8 v4, v4, -0x1
 
-    aget v6, v4, v5
+    aget v5, v3, v4
 
-    add-int/lit8 v6, v6, 0x1
+    add-int/lit8 v5, v5, 0x1
 
-    aput v6, v4, v5
+    aput v5, v3, v4
     :try_end_0
     .catch Ljava/lang/NumberFormatException; {:try_start_0 .. :try_end_0} :catch_0
 
@@ -4400,33 +4443,33 @@
     :goto_3
     const/16 v0, 0xb
 
-    .line 976
+    .line 1050
     iput v0, p0, Lcom/google/gson/stream/JsonReader;->peeked:I
 
-    .line 977
+    .line 1051
     iget-object v0, p0, Lcom/google/gson/stream/JsonReader;->peekedString:Ljava/lang/String;
 
     invoke-static {v0}, Ljava/lang/Double;->parseDouble(Ljava/lang/String;)D
 
     move-result-wide v0
 
-    double-to-long v4, v0
+    double-to-long v3, v0
 
-    long-to-double v6, v4
+    long-to-double v5, v3
 
-    cmpl-double v0, v6, v0
+    cmpl-double v0, v5, v0
 
     if-nez v0, :cond_7
 
     const/4 v0, 0x0
 
-    .line 982
+    .line 1056
     iput-object v0, p0, Lcom/google/gson/stream/JsonReader;->peekedString:Ljava/lang/String;
 
-    .line 983
+    .line 1057
     iput v2, p0, Lcom/google/gson/stream/JsonReader;->peeked:I
 
-    .line 984
+    .line 1058
     iget-object v0, p0, Lcom/google/gson/stream/JsonReader;->pathIndices:[I
 
     iget p0, p0, Lcom/google/gson/stream/JsonReader;->stackSize:I
@@ -4439,15 +4482,17 @@
 
     aput v1, v0, p0
 
-    return-wide v4
+    return-wide v3
 
-    .line 980
+    .line 1054
     :cond_7
     new-instance v0, Ljava/lang/NumberFormatException;
 
     new-instance v1, Ljava/lang/StringBuilder;
 
-    invoke-direct {v1, v3}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+    const-string v2, "Expected a long but was "
+
+    invoke-direct {v1, v2}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
     iget-object v2, p0, Lcom/google/gson/stream/JsonReader;->peekedString:Ljava/lang/String;
 
@@ -4473,19 +4518,19 @@
 .end method
 
 .method public nextName()Ljava/lang/String;
-    .locals 3
+    .locals 2
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
         }
     .end annotation
 
-    .line 788
+    .line 871
     iget v0, p0, Lcom/google/gson/stream/JsonReader;->peeked:I
 
     if-nez v0, :cond_0
 
-    .line 790
+    .line 873
     invoke-virtual {p0}, Lcom/google/gson/stream/JsonReader;->doPeek()I
 
     move-result v0
@@ -4495,7 +4540,7 @@
 
     if-ne v0, v1, :cond_1
 
-    .line 794
+    .line 877
     invoke-direct {p0}, Lcom/google/gson/stream/JsonReader;->nextUnquotedValue()Ljava/lang/String;
 
     move-result-object v0
@@ -4509,7 +4554,7 @@
 
     const/16 v0, 0x27
 
-    .line 796
+    .line 879
     invoke-direct {p0, v0}, Lcom/google/gson/stream/JsonReader;->nextQuotedValue(C)Ljava/lang/String;
 
     move-result-object v0
@@ -4523,7 +4568,7 @@
 
     const/16 v0, 0x22
 
-    .line 798
+    .line 881
     invoke-direct {p0, v0}, Lcom/google/gson/stream/JsonReader;->nextQuotedValue(C)Ljava/lang/String;
 
     move-result-object v0
@@ -4531,10 +4576,10 @@
     :goto_0
     const/4 v1, 0x0
 
-    .line 802
+    .line 885
     iput v1, p0, Lcom/google/gson/stream/JsonReader;->peeked:I
 
-    .line 803
+    .line 886
     iget-object v1, p0, Lcom/google/gson/stream/JsonReader;->pathNames:[Ljava/lang/String;
 
     iget p0, p0, Lcom/google/gson/stream/JsonReader;->stackSize:I
@@ -4545,55 +4590,31 @@
 
     return-object v0
 
-    .line 800
+    .line 883
     :cond_3
-    new-instance v0, Ljava/lang/IllegalStateException;
+    const-string v0, "a name"
 
-    new-instance v1, Ljava/lang/StringBuilder;
-
-    const-string v2, "Expected a name but was "
-
-    invoke-direct {v1, v2}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
-
-    invoke-virtual {p0}, Lcom/google/gson/stream/JsonReader;->peek()Lcom/google/gson/stream/JsonToken;
-
-    move-result-object v2
-
-    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
-
-    move-result-object v1
-
-    invoke-virtual {p0}, Lcom/google/gson/stream/JsonReader;->locationString()Ljava/lang/String;
+    invoke-direct {p0, v0}, Lcom/google/gson/stream/JsonReader;->unexpectedTokenError(Ljava/lang/String;)Ljava/lang/IllegalStateException;
 
     move-result-object p0
 
-    invoke-virtual {v1, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object p0
-
-    invoke-virtual {p0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object p0
-
-    invoke-direct {v0, p0}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
-
-    throw v0
+    throw p0
 .end method
 
 .method public nextNull()V
-    .locals 3
+    .locals 2
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
         }
     .end annotation
 
-    .line 875
+    .line 952
     iget v0, p0, Lcom/google/gson/stream/JsonReader;->peeked:I
 
     if-nez v0, :cond_0
 
-    .line 877
+    .line 954
     invoke-virtual {p0}, Lcom/google/gson/stream/JsonReader;->doPeek()I
 
     move-result v0
@@ -4605,10 +4626,10 @@
 
     const/4 v0, 0x0
 
-    .line 880
+    .line 957
     iput v0, p0, Lcom/google/gson/stream/JsonReader;->peeked:I
 
-    .line 881
+    .line 958
     iget-object v0, p0, Lcom/google/gson/stream/JsonReader;->pathIndices:[I
 
     iget p0, p0, Lcom/google/gson/stream/JsonReader;->stackSize:I
@@ -4623,39 +4644,15 @@
 
     return-void
 
-    .line 883
+    .line 960
     :cond_1
-    new-instance v0, Ljava/lang/IllegalStateException;
+    const-string v0, "null"
 
-    new-instance v1, Ljava/lang/StringBuilder;
-
-    const-string v2, "Expected null but was "
-
-    invoke-direct {v1, v2}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
-
-    invoke-virtual {p0}, Lcom/google/gson/stream/JsonReader;->peek()Lcom/google/gson/stream/JsonToken;
-
-    move-result-object v2
-
-    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
-
-    move-result-object v1
-
-    invoke-virtual {p0}, Lcom/google/gson/stream/JsonReader;->locationString()Ljava/lang/String;
+    invoke-direct {p0, v0}, Lcom/google/gson/stream/JsonReader;->unexpectedTokenError(Ljava/lang/String;)Ljava/lang/IllegalStateException;
 
     move-result-object p0
 
-    invoke-virtual {v1, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object p0
-
-    invoke-virtual {p0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object p0
-
-    invoke-direct {v0, p0}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
-
-    throw v0
+    throw p0
 .end method
 
 .method public nextString()Ljava/lang/String;
@@ -4666,12 +4663,12 @@
         }
     .end annotation
 
-    .line 816
+    .line 897
     iget v0, p0, Lcom/google/gson/stream/JsonReader;->peeked:I
 
     if-nez v0, :cond_0
 
-    .line 818
+    .line 899
     invoke-virtual {p0}, Lcom/google/gson/stream/JsonReader;->doPeek()I
 
     move-result v0
@@ -4681,7 +4678,7 @@
 
     if-ne v0, v1, :cond_1
 
-    .line 822
+    .line 903
     invoke-direct {p0}, Lcom/google/gson/stream/JsonReader;->nextUnquotedValue()Ljava/lang/String;
 
     move-result-object v0
@@ -4695,7 +4692,7 @@
 
     const/16 v0, 0x27
 
-    .line 824
+    .line 905
     invoke-direct {p0, v0}, Lcom/google/gson/stream/JsonReader;->nextQuotedValue(C)Ljava/lang/String;
 
     move-result-object v0
@@ -4709,7 +4706,7 @@
 
     const/16 v0, 0x22
 
-    .line 826
+    .line 907
     invoke-direct {p0, v0}, Lcom/google/gson/stream/JsonReader;->nextQuotedValue(C)Ljava/lang/String;
 
     move-result-object v0
@@ -4721,12 +4718,12 @@
 
     if-ne v0, v1, :cond_4
 
-    .line 828
+    .line 909
     iget-object v0, p0, Lcom/google/gson/stream/JsonReader;->peekedString:Ljava/lang/String;
 
     const/4 v1, 0x0
 
-    .line 829
+    .line 910
     iput-object v1, p0, Lcom/google/gson/stream/JsonReader;->peekedString:Ljava/lang/String;
 
     goto :goto_0
@@ -4736,7 +4733,7 @@
 
     if-ne v0, v1, :cond_5
 
-    .line 831
+    .line 912
     iget-wide v0, p0, Lcom/google/gson/stream/JsonReader;->peekedLong:J
 
     invoke-static {v0, v1}, Ljava/lang/Long;->toString(J)Ljava/lang/String;
@@ -4750,7 +4747,7 @@
 
     if-ne v0, v1, :cond_6
 
-    .line 833
+    .line 914
     new-instance v0, Ljava/lang/String;
 
     iget-object v1, p0, Lcom/google/gson/stream/JsonReader;->buffer:[C
@@ -4761,7 +4758,7 @@
 
     invoke-direct {v0, v1, v2, v3}, Ljava/lang/String;-><init>([CII)V
 
-    .line 834
+    .line 915
     iget v1, p0, Lcom/google/gson/stream/JsonReader;->pos:I
 
     iget v2, p0, Lcom/google/gson/stream/JsonReader;->peekedNumberLength:I
@@ -4773,10 +4770,10 @@
     :goto_0
     const/4 v1, 0x0
 
-    .line 838
+    .line 919
     iput v1, p0, Lcom/google/gson/stream/JsonReader;->peeked:I
 
-    .line 839
+    .line 920
     iget-object v1, p0, Lcom/google/gson/stream/JsonReader;->pathIndices:[I
 
     iget p0, p0, Lcom/google/gson/stream/JsonReader;->stackSize:I
@@ -4791,39 +4788,15 @@
 
     return-object v0
 
-    .line 836
+    .line 917
     :cond_6
-    new-instance v0, Ljava/lang/IllegalStateException;
+    const-string v0, "a string"
 
-    new-instance v1, Ljava/lang/StringBuilder;
-
-    const-string v2, "Expected a string but was "
-
-    invoke-direct {v1, v2}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
-
-    invoke-virtual {p0}, Lcom/google/gson/stream/JsonReader;->peek()Lcom/google/gson/stream/JsonToken;
-
-    move-result-object v2
-
-    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
-
-    move-result-object v1
-
-    invoke-virtual {p0}, Lcom/google/gson/stream/JsonReader;->locationString()Ljava/lang/String;
+    invoke-direct {p0, v0}, Lcom/google/gson/stream/JsonReader;->unexpectedTokenError(Ljava/lang/String;)Ljava/lang/IllegalStateException;
 
     move-result-object p0
 
-    invoke-virtual {v1, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object p0
-
-    invoke-virtual {p0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object p0
-
-    invoke-direct {v0, p0}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
-
-    throw v0
+    throw p0
 .end method
 
 .method public peek()Lcom/google/gson/stream/JsonToken;
@@ -4834,12 +4807,12 @@
         }
     .end annotation
 
-    .line 431
+    .line 505
     iget v0, p0, Lcom/google/gson/stream/JsonReader;->peeked:I
 
     if-nez v0, :cond_0
 
-    .line 433
+    .line 507
     invoke-virtual {p0}, Lcom/google/gson/stream/JsonReader;->doPeek()I
 
     move-result v0
@@ -4847,68 +4820,68 @@
     :cond_0
     packed-switch v0, :pswitch_data_0
 
-    .line 465
+    .line 539
     new-instance p0, Ljava/lang/AssertionError;
 
     invoke-direct {p0}, Ljava/lang/AssertionError;-><init>()V
 
     throw p0
 
-    .line 463
+    .line 537
     :pswitch_0
     sget-object p0, Lcom/google/gson/stream/JsonToken;->END_DOCUMENT:Lcom/google/gson/stream/JsonToken;
 
     return-object p0
 
-    .line 461
+    .line 535
     :pswitch_1
     sget-object p0, Lcom/google/gson/stream/JsonToken;->NUMBER:Lcom/google/gson/stream/JsonToken;
 
     return-object p0
 
-    .line 448
+    .line 522
     :pswitch_2
     sget-object p0, Lcom/google/gson/stream/JsonToken;->NAME:Lcom/google/gson/stream/JsonToken;
 
     return-object p0
 
-    .line 458
+    .line 532
     :pswitch_3
     sget-object p0, Lcom/google/gson/stream/JsonToken;->STRING:Lcom/google/gson/stream/JsonToken;
 
     return-object p0
 
-    .line 453
+    .line 527
     :pswitch_4
     sget-object p0, Lcom/google/gson/stream/JsonToken;->NULL:Lcom/google/gson/stream/JsonToken;
 
     return-object p0
 
-    .line 451
+    .line 525
     :pswitch_5
     sget-object p0, Lcom/google/gson/stream/JsonToken;->BOOLEAN:Lcom/google/gson/stream/JsonToken;
 
     return-object p0
 
-    .line 444
+    .line 518
     :pswitch_6
     sget-object p0, Lcom/google/gson/stream/JsonToken;->END_ARRAY:Lcom/google/gson/stream/JsonToken;
 
     return-object p0
 
-    .line 442
+    .line 516
     :pswitch_7
     sget-object p0, Lcom/google/gson/stream/JsonToken;->BEGIN_ARRAY:Lcom/google/gson/stream/JsonToken;
 
     return-object p0
 
-    .line 440
+    .line 514
     :pswitch_8
     sget-object p0, Lcom/google/gson/stream/JsonToken;->END_OBJECT:Lcom/google/gson/stream/JsonToken;
 
     return-object p0
 
-    .line 438
+    .line 512
     :pswitch_9
     sget-object p0, Lcom/google/gson/stream/JsonToken;->BEGIN_OBJECT:Lcom/google/gson/stream/JsonToken;
 
@@ -4940,9 +4913,33 @@
 
 .method public final setLenient(Z)V
     .locals 0
+    .annotation runtime Ljava/lang/Deprecated;
+    .end annotation
 
-    .line 334
-    iput-boolean p1, p0, Lcom/google/gson/stream/JsonReader;->lenient:Z
+    if-eqz p1, :cond_0
+
+    .line 333
+    sget-object p1, Lcom/google/gson/Strictness;->LENIENT:Lcom/google/gson/Strictness;
+
+    goto :goto_0
+
+    :cond_0
+    sget-object p1, Lcom/google/gson/Strictness;->LEGACY_STRICT:Lcom/google/gson/Strictness;
+
+    :goto_0
+    invoke-virtual {p0, p1}, Lcom/google/gson/stream/JsonReader;->setStrictness(Lcom/google/gson/Strictness;)V
+
+    return-void
+.end method
+
+.method public final setStrictness(Lcom/google/gson/Strictness;)V
+    .locals 0
+
+    .line 400
+    invoke-static {p1}, Ljava/util/Objects;->requireNonNull(Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 401
+    iput-object p1, p0, Lcom/google/gson/stream/JsonReader;->strictness:Lcom/google/gson/Strictness;
 
     return-void
 .end method
@@ -4959,13 +4956,13 @@
 
     move v1, v0
 
-    .line 1254
+    .line 1337
     :cond_0
     iget v2, p0, Lcom/google/gson/stream/JsonReader;->peeked:I
 
     if-nez v2, :cond_1
 
-    .line 1256
+    .line 1339
     invoke-virtual {p0}, Lcom/google/gson/stream/JsonReader;->doPeek()I
 
     move-result v2
@@ -4975,7 +4972,7 @@
 
     const/16 v4, 0x27
 
-    .line 1259
+    .line 1342
     const-string v5, "<skipped>"
 
     const/4 v6, 0x1
@@ -4988,7 +4985,7 @@
     :pswitch_1
     return-void
 
-    .line 1311
+    .line 1396
     :pswitch_2
     iget v2, p0, Lcom/google/gson/stream/JsonReader;->pos:I
 
@@ -5000,13 +4997,13 @@
 
     goto :goto_2
 
-    .line 1290
+    .line 1375
     :pswitch_3
     invoke-direct {p0}, Lcom/google/gson/stream/JsonReader;->skipUnquotedValue()V
 
     if-nez v1, :cond_3
 
-    .line 1293
+    .line 1378
     iget-object v2, p0, Lcom/google/gson/stream/JsonReader;->pathNames:[Ljava/lang/String;
 
     iget v3, p0, Lcom/google/gson/stream/JsonReader;->stackSize:I
@@ -5017,13 +5014,13 @@
 
     goto :goto_2
 
-    .line 1304
+    .line 1389
     :pswitch_4
     invoke-direct {p0, v3}, Lcom/google/gson/stream/JsonReader;->skipQuotedValue(C)V
 
     if-nez v1, :cond_3
 
-    .line 1307
+    .line 1392
     iget-object v2, p0, Lcom/google/gson/stream/JsonReader;->pathNames:[Ljava/lang/String;
 
     iget v3, p0, Lcom/google/gson/stream/JsonReader;->stackSize:I
@@ -5034,13 +5031,13 @@
 
     goto :goto_2
 
-    .line 1297
+    .line 1382
     :pswitch_5
     invoke-direct {p0, v4}, Lcom/google/gson/stream/JsonReader;->skipQuotedValue(C)V
 
     if-nez v1, :cond_3
 
-    .line 1300
+    .line 1385
     iget-object v2, p0, Lcom/google/gson/stream/JsonReader;->pathNames:[Ljava/lang/String;
 
     iget v3, p0, Lcom/google/gson/stream/JsonReader;->stackSize:I
@@ -5051,25 +5048,25 @@
 
     goto :goto_2
 
-    .line 1281
+    .line 1366
     :pswitch_6
     invoke-direct {p0}, Lcom/google/gson/stream/JsonReader;->skipUnquotedValue()V
 
     goto :goto_2
 
-    .line 1287
+    .line 1372
     :pswitch_7
     invoke-direct {p0, v3}, Lcom/google/gson/stream/JsonReader;->skipQuotedValue(C)V
 
     goto :goto_2
 
-    .line 1284
+    .line 1369
     :pswitch_8
     invoke-direct {p0, v4}, Lcom/google/gson/stream/JsonReader;->skipQuotedValue(C)V
 
     goto :goto_2
 
-    .line 1269
+    .line 1352
     :pswitch_9
     iget v2, p0, Lcom/google/gson/stream/JsonReader;->stackSize:I
 
@@ -5082,7 +5079,7 @@
 
     goto :goto_2
 
-    .line 1261
+    .line 1344
     :pswitch_a
     invoke-direct {p0, v6}, Lcom/google/gson/stream/JsonReader;->push(I)V
 
@@ -5091,7 +5088,7 @@
     :pswitch_b
     if-nez v1, :cond_2
 
-    .line 1275
+    .line 1360
     iget-object v2, p0, Lcom/google/gson/stream/JsonReader;->pathNames:[Ljava/lang/String;
 
     iget v3, p0, Lcom/google/gson/stream/JsonReader;->stackSize:I
@@ -5102,7 +5099,7 @@
 
     aput-object v4, v2, v3
 
-    .line 1277
+    .line 1362
     :cond_2
     iget v2, p0, Lcom/google/gson/stream/JsonReader;->stackSize:I
 
@@ -5115,20 +5112,20 @@
     :pswitch_c
     const/4 v2, 0x3
 
-    .line 1265
+    .line 1348
     invoke-direct {p0, v2}, Lcom/google/gson/stream/JsonReader;->push(I)V
 
     :goto_1
     add-int/lit8 v1, v1, 0x1
 
-    .line 1318
+    .line 1405
     :cond_3
     :goto_2
     iput v0, p0, Lcom/google/gson/stream/JsonReader;->peeked:I
 
     if-gtz v1, :cond_0
 
-    .line 1321
+    .line 1408
     iget-object v0, p0, Lcom/google/gson/stream/JsonReader;->pathIndices:[I
 
     iget p0, p0, Lcom/google/gson/stream/JsonReader;->stackSize:I
@@ -5168,7 +5165,7 @@
 .method public toString()Ljava/lang/String;
     .locals 2
 
-    .line 1510
+    .line 1596
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V

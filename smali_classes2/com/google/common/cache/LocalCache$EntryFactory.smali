@@ -79,7 +79,7 @@
 .end method
 
 .method static constructor <clinit>()V
-    .locals 16
+    .locals 10
 
     .line 436
     new-instance v0, Lcom/google/common/cache/LocalCache$EntryFactory$1;
@@ -95,111 +95,93 @@
     .line 443
     new-instance v1, Lcom/google/common/cache/LocalCache$EntryFactory$2;
 
-    const-string v3, "STRONG_ACCESS"
+    const-string v2, "STRONG_ACCESS"
 
-    const/4 v4, 0x1
+    const/4 v3, 0x1
 
-    invoke-direct {v1, v3, v4}, Lcom/google/common/cache/LocalCache$EntryFactory$2;-><init>(Ljava/lang/String;I)V
+    invoke-direct {v1, v2, v3}, Lcom/google/common/cache/LocalCache$EntryFactory$2;-><init>(Ljava/lang/String;I)V
 
     sput-object v1, Lcom/google/common/cache/LocalCache$EntryFactory;->STRONG_ACCESS:Lcom/google/common/cache/LocalCache$EntryFactory;
 
     .line 458
-    new-instance v3, Lcom/google/common/cache/LocalCache$EntryFactory$3;
+    new-instance v2, Lcom/google/common/cache/LocalCache$EntryFactory$3;
 
-    const-string v5, "STRONG_WRITE"
+    const-string v3, "STRONG_WRITE"
 
-    const/4 v6, 0x2
+    const/4 v4, 0x2
 
-    invoke-direct {v3, v5, v6}, Lcom/google/common/cache/LocalCache$EntryFactory$3;-><init>(Ljava/lang/String;I)V
+    invoke-direct {v2, v3, v4}, Lcom/google/common/cache/LocalCache$EntryFactory$3;-><init>(Ljava/lang/String;I)V
 
-    sput-object v3, Lcom/google/common/cache/LocalCache$EntryFactory;->STRONG_WRITE:Lcom/google/common/cache/LocalCache$EntryFactory;
+    sput-object v2, Lcom/google/common/cache/LocalCache$EntryFactory;->STRONG_WRITE:Lcom/google/common/cache/LocalCache$EntryFactory;
 
     .line 473
-    new-instance v5, Lcom/google/common/cache/LocalCache$EntryFactory$4;
+    new-instance v3, Lcom/google/common/cache/LocalCache$EntryFactory$4;
 
-    const-string v7, "STRONG_ACCESS_WRITE"
+    const-string v4, "STRONG_ACCESS_WRITE"
 
-    const/4 v8, 0x3
+    const/4 v5, 0x3
 
-    invoke-direct {v5, v7, v8}, Lcom/google/common/cache/LocalCache$EntryFactory$4;-><init>(Ljava/lang/String;I)V
+    invoke-direct {v3, v4, v5}, Lcom/google/common/cache/LocalCache$EntryFactory$4;-><init>(Ljava/lang/String;I)V
 
-    sput-object v5, Lcom/google/common/cache/LocalCache$EntryFactory;->STRONG_ACCESS_WRITE:Lcom/google/common/cache/LocalCache$EntryFactory;
+    sput-object v3, Lcom/google/common/cache/LocalCache$EntryFactory;->STRONG_ACCESS_WRITE:Lcom/google/common/cache/LocalCache$EntryFactory;
 
     .line 489
-    new-instance v7, Lcom/google/common/cache/LocalCache$EntryFactory$5;
+    new-instance v4, Lcom/google/common/cache/LocalCache$EntryFactory$5;
 
-    const-string v9, "WEAK"
+    const-string v5, "WEAK"
 
-    const/4 v10, 0x4
+    const/4 v6, 0x4
 
-    invoke-direct {v7, v9, v10}, Lcom/google/common/cache/LocalCache$EntryFactory$5;-><init>(Ljava/lang/String;I)V
+    invoke-direct {v4, v5, v6}, Lcom/google/common/cache/LocalCache$EntryFactory$5;-><init>(Ljava/lang/String;I)V
 
-    sput-object v7, Lcom/google/common/cache/LocalCache$EntryFactory;->WEAK:Lcom/google/common/cache/LocalCache$EntryFactory;
+    sput-object v4, Lcom/google/common/cache/LocalCache$EntryFactory;->WEAK:Lcom/google/common/cache/LocalCache$EntryFactory;
 
     .line 496
-    new-instance v9, Lcom/google/common/cache/LocalCache$EntryFactory$6;
+    new-instance v5, Lcom/google/common/cache/LocalCache$EntryFactory$6;
 
-    const-string v11, "WEAK_ACCESS"
+    const-string v6, "WEAK_ACCESS"
 
-    const/4 v12, 0x5
+    const/4 v7, 0x5
 
-    invoke-direct {v9, v11, v12}, Lcom/google/common/cache/LocalCache$EntryFactory$6;-><init>(Ljava/lang/String;I)V
+    invoke-direct {v5, v6, v7}, Lcom/google/common/cache/LocalCache$EntryFactory$6;-><init>(Ljava/lang/String;I)V
 
-    sput-object v9, Lcom/google/common/cache/LocalCache$EntryFactory;->WEAK_ACCESS:Lcom/google/common/cache/LocalCache$EntryFactory;
+    sput-object v5, Lcom/google/common/cache/LocalCache$EntryFactory;->WEAK_ACCESS:Lcom/google/common/cache/LocalCache$EntryFactory;
 
     .line 511
-    new-instance v11, Lcom/google/common/cache/LocalCache$EntryFactory$7;
+    new-instance v6, Lcom/google/common/cache/LocalCache$EntryFactory$7;
 
-    const-string v13, "WEAK_WRITE"
+    const-string v7, "WEAK_WRITE"
 
-    const/4 v14, 0x6
+    const/4 v8, 0x6
 
-    invoke-direct {v11, v13, v14}, Lcom/google/common/cache/LocalCache$EntryFactory$7;-><init>(Ljava/lang/String;I)V
+    invoke-direct {v6, v7, v8}, Lcom/google/common/cache/LocalCache$EntryFactory$7;-><init>(Ljava/lang/String;I)V
 
-    sput-object v11, Lcom/google/common/cache/LocalCache$EntryFactory;->WEAK_WRITE:Lcom/google/common/cache/LocalCache$EntryFactory;
+    sput-object v6, Lcom/google/common/cache/LocalCache$EntryFactory;->WEAK_WRITE:Lcom/google/common/cache/LocalCache$EntryFactory;
 
     .line 526
-    new-instance v13, Lcom/google/common/cache/LocalCache$EntryFactory$8;
+    new-instance v7, Lcom/google/common/cache/LocalCache$EntryFactory$8;
 
-    const-string v15, "WEAK_ACCESS_WRITE"
+    const-string v8, "WEAK_ACCESS_WRITE"
 
-    const/4 v14, 0x7
+    const/4 v9, 0x7
 
-    invoke-direct {v13, v15, v14}, Lcom/google/common/cache/LocalCache$EntryFactory$8;-><init>(Ljava/lang/String;I)V
+    invoke-direct {v7, v8, v9}, Lcom/google/common/cache/LocalCache$EntryFactory$8;-><init>(Ljava/lang/String;I)V
 
-    sput-object v13, Lcom/google/common/cache/LocalCache$EntryFactory;->WEAK_ACCESS_WRITE:Lcom/google/common/cache/LocalCache$EntryFactory;
+    sput-object v7, Lcom/google/common/cache/LocalCache$EntryFactory;->WEAK_ACCESS_WRITE:Lcom/google/common/cache/LocalCache$EntryFactory;
 
     .line 435
     invoke-static {}, Lcom/google/common/cache/LocalCache$EntryFactory;->$values()[Lcom/google/common/cache/LocalCache$EntryFactory;
 
-    move-result-object v15
+    move-result-object v8
 
-    sput-object v15, Lcom/google/common/cache/LocalCache$EntryFactory;->$VALUES:[Lcom/google/common/cache/LocalCache$EntryFactory;
-
-    const/16 v15, 0x8
+    sput-object v8, Lcom/google/common/cache/LocalCache$EntryFactory;->$VALUES:[Lcom/google/common/cache/LocalCache$EntryFactory;
 
     .line 550
-    new-array v15, v15, [Lcom/google/common/cache/LocalCache$EntryFactory;
+    filled-new-array/range {v0 .. v7}, [Lcom/google/common/cache/LocalCache$EntryFactory;
 
-    aput-object v0, v15, v2
+    move-result-object v0
 
-    aput-object v1, v15, v4
-
-    aput-object v3, v15, v6
-
-    aput-object v5, v15, v8
-
-    aput-object v7, v15, v10
-
-    aput-object v9, v15, v12
-
-    const/4 v0, 0x6
-
-    aput-object v11, v15, v0
-
-    aput-object v13, v15, v14
-
-    sput-object v15, Lcom/google/common/cache/LocalCache$EntryFactory;->factories:[Lcom/google/common/cache/LocalCache$EntryFactory;
+    sput-object v0, Lcom/google/common/cache/LocalCache$EntryFactory;->factories:[Lcom/google/common/cache/LocalCache$EntryFactory;
 
     return-void
 .end method

@@ -6,29 +6,21 @@
 # annotations
 .annotation runtime Lkotlin/Metadata;
     d1 = {
-        "\u0000\"\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0007\n\u0002\u0018\u0002\n\u0002\u0008\u0004\n\u0002\u0010\u0008\n\u0002\u0008\u0007\n\u0002\u0010\u0000\n\u0002\u0008\u0002\u001a\u0010\u0010\u0015\u001a\u0004\u0018\u00010\u0016*\u0004\u0018\u00010\u0016H\u0000\u001a\u0010\u0010\u0017\u001a\u0004\u0018\u00010\u0016*\u0004\u0018\u00010\u0016H\u0000\"\u0016\u0010\u0000\u001a\u00020\u00018\u0002X\u0083\u0004\u00a2\u0006\u0008\n\u0000\u0012\u0004\u0008\u0002\u0010\u0003\"\u0016\u0010\u0004\u001a\u00020\u00018\u0002X\u0083\u0004\u00a2\u0006\u0008\n\u0000\u0012\u0004\u0008\u0005\u0010\u0003\"\u0016\u0010\u0006\u001a\u00020\u00018\u0000X\u0081\u0004\u00a2\u0006\u0008\n\u0000\u0012\u0004\u0008\u0007\u0010\u0003\"\u0016\u0010\u0008\u001a\u00020\t8\u0002X\u0083\u0004\u00a2\u0006\u0008\n\u0000\u0012\u0004\u0008\n\u0010\u0003\"\u0016\u0010\u000b\u001a\u00020\t8\u0002X\u0083\u0004\u00a2\u0006\u0008\n\u0000\u0012\u0004\u0008\u000c\u0010\u0003\"\u000e\u0010\r\u001a\u00020\u000eX\u0082T\u00a2\u0006\u0002\n\u0000\"\u000e\u0010\u000f\u001a\u00020\u000eX\u0082T\u00a2\u0006\u0002\n\u0000\"\u0016\u0010\u0010\u001a\u00020\u00018\u0002X\u0083\u0004\u00a2\u0006\u0008\n\u0000\u0012\u0004\u0008\u0011\u0010\u0003\"\u0016\u0010\u0012\u001a\u00020\u00018\u0002X\u0083\u0004\u00a2\u0006\u0008\n\u0000\u0012\u0004\u0008\u0013\u0010\u0003\"\u000e\u0010\u0014\u001a\u00020\u000eX\u0082T\u00a2\u0006\u0002\n\u0000\u00a8\u0006\u0018"
+        "\u0000\"\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0003\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0010\u0008\n\u0002\u0008\u0005\n\u0002\u0010\u0000\n\u0002\u0008\u0002\u001a\u0010\u0010\r\u001a\u0004\u0018\u00010\u000e*\u0004\u0018\u00010\u000eH\u0000\u001a\u0010\u0010\u000f\u001a\u0004\u0018\u00010\u000e*\u0004\u0018\u00010\u000eH\u0000\"\u000e\u0010\u0000\u001a\u00020\u0001X\u0082\u0004\u00a2\u0006\u0002\n\u0000\"\u000e\u0010\u0002\u001a\u00020\u0001X\u0082\u0004\u00a2\u0006\u0002\n\u0000\"\u0010\u0010\u0003\u001a\u00020\u00018\u0000X\u0081\u0004\u00a2\u0006\u0002\n\u0000\"\u000e\u0010\u0004\u001a\u00020\u0005X\u0082\u0004\u00a2\u0006\u0002\n\u0000\"\u000e\u0010\u0006\u001a\u00020\u0005X\u0082\u0004\u00a2\u0006\u0002\n\u0000\"\u000e\u0010\u0007\u001a\u00020\u0008X\u0082T\u00a2\u0006\u0002\n\u0000\"\u000e\u0010\t\u001a\u00020\u0008X\u0082T\u00a2\u0006\u0002\n\u0000\"\u000e\u0010\n\u001a\u00020\u0001X\u0082\u0004\u00a2\u0006\u0002\n\u0000\"\u000e\u0010\u000b\u001a\u00020\u0001X\u0082\u0004\u00a2\u0006\u0002\n\u0000\"\u000e\u0010\u000c\u001a\u00020\u0008X\u0082T\u00a2\u0006\u0002\n\u0000\u00a8\u0006\u0010"
     }
     d2 = {
         "COMPLETING_ALREADY",
         "Lkotlinx/coroutines/internal/Symbol;",
-        "getCOMPLETING_ALREADY$annotations",
-        "()V",
         "COMPLETING_RETRY",
-        "getCOMPLETING_RETRY$annotations",
         "COMPLETING_WAITING_CHILDREN",
-        "getCOMPLETING_WAITING_CHILDREN$annotations",
         "EMPTY_ACTIVE",
         "Lkotlinx/coroutines/Empty;",
-        "getEMPTY_ACTIVE$annotations",
         "EMPTY_NEW",
-        "getEMPTY_NEW$annotations",
         "FALSE",
         "",
         "RETRY",
         "SEALED",
-        "getSEALED$annotations",
         "TOO_LATE_TO_CANCEL",
-        "getTOO_LATE_TO_CANCEL$annotations",
         "TRUE",
         "boxIncomplete",
         "",
@@ -38,7 +30,7 @@
     k = 0x2
     mv = {
         0x1,
-        0x6,
+        0x8,
         0x0
     }
     xi = 0x30
@@ -71,7 +63,7 @@
 .method static constructor <clinit>()V
     .locals 2
 
-    .line 1290
+    .line 1289
     new-instance v0, Lkotlinx/coroutines/internal/Symbol;
 
     const-string v1, "COMPLETING_ALREADY"
@@ -80,7 +72,7 @@
 
     sput-object v0, Lkotlinx/coroutines/JobSupportKt;->COMPLETING_ALREADY:Lkotlinx/coroutines/internal/Symbol;
 
-    .line 1293
+    .line 1291
     new-instance v0, Lkotlinx/coroutines/internal/Symbol;
 
     const-string v1, "COMPLETING_WAITING_CHILDREN"
@@ -89,7 +81,7 @@
 
     sput-object v0, Lkotlinx/coroutines/JobSupportKt;->COMPLETING_WAITING_CHILDREN:Lkotlinx/coroutines/internal/Symbol;
 
-    .line 1295
+    .line 1292
     new-instance v0, Lkotlinx/coroutines/internal/Symbol;
 
     const-string v1, "COMPLETING_RETRY"
@@ -98,7 +90,7 @@
 
     sput-object v0, Lkotlinx/coroutines/JobSupportKt;->COMPLETING_RETRY:Lkotlinx/coroutines/internal/Symbol;
 
-    .line 1297
+    .line 1293
     new-instance v0, Lkotlinx/coroutines/internal/Symbol;
 
     const-string v1, "TOO_LATE_TO_CANCEL"
@@ -107,7 +99,7 @@
 
     sput-object v0, Lkotlinx/coroutines/JobSupportKt;->TOO_LATE_TO_CANCEL:Lkotlinx/coroutines/internal/Symbol;
 
-    .line 1304
+    .line 1299
     new-instance v0, Lkotlinx/coroutines/internal/Symbol;
 
     const-string v1, "SEALED"
@@ -116,7 +108,7 @@
 
     sput-object v0, Lkotlinx/coroutines/JobSupportKt;->SEALED:Lkotlinx/coroutines/internal/Symbol;
 
-    .line 1306
+    .line 1300
     new-instance v0, Lkotlinx/coroutines/Empty;
 
     const/4 v1, 0x0
@@ -125,7 +117,7 @@
 
     sput-object v0, Lkotlinx/coroutines/JobSupportKt;->EMPTY_NEW:Lkotlinx/coroutines/Empty;
 
-    .line 1308
+    .line 1301
     new-instance v0, Lkotlinx/coroutines/Empty;
 
     const/4 v1, 0x1
@@ -209,48 +201,6 @@
 
     :cond_0
     return-object p0
-.end method
-
-.method private static synthetic getCOMPLETING_ALREADY$annotations()V
-    .locals 0
-
-    return-void
-.end method
-
-.method private static synthetic getCOMPLETING_RETRY$annotations()V
-    .locals 0
-
-    return-void
-.end method
-
-.method public static synthetic getCOMPLETING_WAITING_CHILDREN$annotations()V
-    .locals 0
-
-    return-void
-.end method
-
-.method private static synthetic getEMPTY_ACTIVE$annotations()V
-    .locals 0
-
-    return-void
-.end method
-
-.method private static synthetic getEMPTY_NEW$annotations()V
-    .locals 0
-
-    return-void
-.end method
-
-.method private static synthetic getSEALED$annotations()V
-    .locals 0
-
-    return-void
-.end method
-
-.method private static synthetic getTOO_LATE_TO_CANCEL$annotations()V
-    .locals 0
-
-    return-void
 .end method
 
 .method public static final unboxState(Ljava/lang/Object;)Ljava/lang/Object;

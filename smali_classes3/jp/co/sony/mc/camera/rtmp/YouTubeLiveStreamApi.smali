@@ -16,70 +16,71 @@
 
 .annotation runtime Lkotlin/Metadata;
     d1 = {
-        "\u0000\u008c\u0001\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0010\u000e\n\u0002\u0008\u0007\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0010\u0002\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0003\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0003\u0008\u0007\u0018\u0000 62\u00020\u0001:\u00016B\r\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u00a2\u0006\u0002\u0010\u0004J\u000e\u0010\u001a\u001a\u00020\t2\u0006\u0010\u001b\u001a\u00020\u001cJ\u000e\u0010\u001d\u001a\u00020\u001e2\u0006\u0010\u001f\u001a\u00020\u0011J\u0012\u0010 \u001a\u0004\u0018\u00010!2\u0006\u0010\"\u001a\u00020\u0011H\u0002J\u0016\u0010#\u001a\u00020$2\u0006\u0010%\u001a\u00020\t2\u0006\u0010&\u001a\u00020\'J\u001e\u0010(\u001a\u00020$2\u0006\u0010)\u001a\u00020\u00112\u0006\u0010*\u001a\u00020+2\u0006\u0010&\u001a\u00020,J\u0008\u0010-\u001a\u00020$H\u0002J\u000e\u0010.\u001a\u00020$2\u0006\u0010&\u001a\u00020/J!\u00100\u001a\u00020$2\u0006\u0010)\u001a\u00020\u00112\u0006\u0010&\u001a\u000201H\u0086@\u00f8\u0001\u0000\u00a2\u0006\u0002\u00102J\u000e\u00103\u001a\u00020$2\u0006\u0010&\u001a\u000204J\u0006\u00105\u001a\u00020$R\u000e\u0010\u0005\u001a\u00020\u0006X\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u001e\u0010\u0007\u001a\u0012\u0012\u0004\u0012\u00020\t0\u0008j\u0008\u0012\u0004\u0012\u00020\t`\nX\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u000b\u001a\u00020\u000cX\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u000e\u0010\r\u001a\u00020\u000eX\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u000f\u001a\u00020\u0001X\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u001c\u0010\u0010\u001a\u0004\u0018\u00010\u0011X\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\u0008\u0012\u0010\u0013\"\u0004\u0008\u0014\u0010\u0015R\u0016\u0010\u0016\u001a\n \u0017*\u0004\u0018\u00010\u00110\u0011X\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u0018\u001a\u00020\u0019X\u0082.\u00a2\u0006\u0002\n\u0000\u0082\u0002\u0004\n\u0002\u0008\u0019\u00a8\u00067"
+        "\u0000\u0088\u0001\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0003\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000e\n\u0002\u0008\u0003\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0006\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0002\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0003\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0004\u0008\u0007\u0018\u0000 72\u00020\u0001:\u00017B\u000f\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u00a2\u0006\u0004\u0008\u0004\u0010\u0005J\u0006\u0010\u001b\u001a\u00020\u001cJ\u000e\u0010\u001d\u001a\u00020\u001c2\u0006\u0010\u001e\u001a\u00020\u001fJ\u000e\u0010 \u001a\u00020\u00132\u0006\u0010!\u001a\u00020\"J\u0016\u0010#\u001a\u00020\u001c2\u0006\u0010$\u001a\u00020\u00132\u0006\u0010\u001e\u001a\u00020%J\u001e\u0010&\u001a\u00020\u001c2\u0006\u0010\'\u001a\u00020\u000b2\u0006\u0010\u001e\u001a\u00020(H\u0086@\u00a2\u0006\u0002\u0010)J\u001e\u0010*\u001a\u00020\u001c2\u0006\u0010\'\u001a\u00020\u000b2\u0006\u0010+\u001a\u00020,2\u0006\u0010\u001e\u001a\u00020-J\u000e\u0010.\u001a\u00020\u001c2\u0006\u0010\u001e\u001a\u00020/J\u000e\u00100\u001a\u0002012\u0006\u00102\u001a\u00020\u000bJ\u0012\u00103\u001a\u0004\u0018\u0001042\u0006\u00105\u001a\u00020\u000bH\u0002J\u0008\u00106\u001a\u00020\u001cH\u0002R\u000e\u0010\u0006\u001a\u00020\u0007X\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u0008\u001a\u00020\tX\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u0018\u0010\n\u001a\n \u000c*\u0004\u0018\u00010\u000b0\u000bX\u0082\u0004\u00a2\u0006\u0004\n\u0002\u0010\rR\u000e\u0010\u000e\u001a\u00020\u000fX\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u0010\u001a\u00020\u0001X\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u0014\u0010\u0011\u001a\u0008\u0012\u0004\u0012\u00020\u00130\u0012X\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u001c\u0010\u0014\u001a\u0004\u0018\u00010\u000bX\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\u0008\u0015\u0010\u0016\"\u0004\u0008\u0017\u0010\u0018R\u000e\u0010\u0019\u001a\u00020\u001aX\u0082.\u00a2\u0006\u0002\n\u0000\u00a8\u00068"
     }
     d2 = {
         "Ljp/co/sony/mc/camera/rtmp/YouTubeLiveStreamApi;",
         "",
         "context",
         "Landroid/content/Context;",
+        "<init>",
         "(Landroid/content/Context;)V",
-        "activity",
-        "Landroid/app/Activity;",
-        "eventList",
-        "Ljava/util/ArrayList;",
-        "Ljp/co/sony/mc/camera/rtmp/YouTubeEventData;",
-        "Lkotlin/collections/ArrayList;",
         "httpTransport",
         "Lcom/google/api/client/http/javanet/NetHttpTransport;",
         "jsonFactory",
         "Lcom/google/api/client/json/gson/GsonFactory;",
-        "lockRequest",
-        "nextToken",
+        "packageName",
         "",
+        "kotlin.jvm.PlatformType",
+        "Ljava/lang/String;",
+        "activity",
+        "Landroid/app/Activity;",
+        "lockRequest",
+        "eventList",
+        "Ljava/util/ArrayList;",
+        "Ljp/co/sony/mc/camera/rtmp/YouTubeEventData;",
+        "nextToken",
         "getNextToken",
         "()Ljava/lang/String;",
         "setNextToken",
         "(Ljava/lang/String;)V",
-        "packageName",
-        "kotlin.jvm.PlatformType",
         "youtube",
         "Lcom/google/api/services/youtube/YouTube;",
+        "updateYoutubeAccount",
+        "",
+        "requestLiveEvent",
+        "callback",
+        "Ljp/co/sony/mc/camera/rtmp/LiveEventRequestCallback;",
         "addLiveBroadcast",
         "liveBroadcast",
         "Lcom/google/api/services/youtube/model/LiveBroadcast;",
+        "getYouTubeEventDetailData",
+        "eventData",
+        "Ljp/co/sony/mc/camera/rtmp/LiveEventDetailDataRequestCallback;",
+        "requestLiveChat",
+        "liveChatId",
+        "Ljp/co/sony/mc/camera/rtmp/YoutubeLiveChatRequestCallback;",
+        "(Ljava/lang/String;Ljp/co/sony/mc/camera/rtmp/YoutubeLiveChatRequestCallback;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;",
+        "insertLiveChatBans",
+        "banDataInf",
+        "Ljp/co/sony/mc/camera/rtmp/YouTubeLiveChatBanData;",
+        "Ljp/co/sony/mc/camera/rtmp/YouTubeLiveChatBanCallback;",
+        "requestChannelName",
+        "Ljp/co/sony/mc/camera/rtmp/YouTubeChannelNameRequestCallback;",
         "checkYouTubeLiveEventStatus",
         "Ljp/co/sony/mc/camera/rtmp/ValidationCheckResultCode;",
         "targetId",
         "fetchIngestionInfo",
         "Lcom/google/api/services/youtube/model/IngestionInfo;",
         "streamId",
-        "getYouTubeEventDetailData",
-        "",
-        "eventData",
-        "callback",
-        "Ljp/co/sony/mc/camera/rtmp/LiveEventDetailDataRequestCallback;",
-        "insertLiveChatBans",
-        "liveChatId",
-        "banDataInf",
-        "Ljp/co/sony/mc/camera/rtmp/YouTubeLiveChatBanData;",
-        "Ljp/co/sony/mc/camera/rtmp/YouTubeLiveChatBanCallback;",
         "refreshAccessTokenIfNeeded",
-        "requestChannelName",
-        "Ljp/co/sony/mc/camera/rtmp/YouTubeChannelNameRequestCallback;",
-        "requestLiveChat",
-        "Ljp/co/sony/mc/camera/rtmp/YoutubeLiveChatRequestCallback;",
-        "(Ljava/lang/String;Ljp/co/sony/mc/camera/rtmp/YoutubeLiveChatRequestCallback;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;",
-        "requestLiveEvent",
-        "Ljp/co/sony/mc/camera/rtmp/LiveEventRequestCallback;",
-        "updateYoutubeAccount",
         "Companion",
         "SomcCamera_release"
     }
     k = 0x1
     mv = {
-        0x1,
-        0x9,
+        0x2,
+        0x0,
         0x0
     }
     xi = 0x30
@@ -202,7 +203,7 @@
 .end method
 
 .method static constructor <clinit>()V
-    .locals 3
+    .locals 7
 
     new-instance v0, Ljp/co/sony/mc/camera/rtmp/YouTubeLiveStreamApi$Companion;
 
@@ -216,16 +217,28 @@
 
     sput v0, Ljp/co/sony/mc/camera/rtmp/YouTubeLiveStreamApi;->$stable:I
 
+    const/4 v0, 0x3
+
     .line 33
-    const-string/jumbo v0, "snippet"
+    new-array v1, v0, [Ljava/lang/String;
 
-    const-string/jumbo v1, "status"
+    const/4 v2, 0x0
 
-    const-string v2, "contentDetails"
+    const-string/jumbo v3, "snippet"
 
-    filled-new-array {v0, v1, v2}, [Ljava/lang/String;
+    aput-object v3, v1, v2
 
-    move-result-object v1
+    const-string/jumbo v4, "status"
+
+    const/4 v5, 0x1
+
+    aput-object v4, v1, v5
+
+    const/4 v4, 0x2
+
+    const-string v6, "contentDetails"
+
+    aput-object v6, v1, v4
 
     invoke-static {v1}, Lkotlin/collections/CollectionsKt;->mutableListOf([Ljava/lang/Object;)Ljava/util/List;
 
@@ -234,11 +247,15 @@
     sput-object v1, Ljp/co/sony/mc/camera/rtmp/YouTubeLiveStreamApi;->BROADCAST_REQUEST_PART:Ljava/util/List;
 
     .line 38
+    new-array v0, v0, [Ljava/lang/String;
+
+    aput-object v3, v0, v2
+
     const-string v1, "cdn"
 
-    filled-new-array {v0, v1, v2}, [Ljava/lang/String;
+    aput-object v1, v0, v5
 
-    move-result-object v0
+    aput-object v6, v0, v4
 
     invoke-static {v0}, Lkotlin/collections/CollectionsKt;->mutableListOf([Ljava/lang/Object;)Ljava/util/List;
 
@@ -247,11 +264,11 @@
     sput-object v0, Ljp/co/sony/mc/camera/rtmp/YouTubeLiveStreamApi;->STREAM_REQUEST_PART:Ljava/util/List;
 
     .line 39
-    const-string v0, "id"
+    new-array v0, v5, [Ljava/lang/String;
 
-    filled-new-array {v0}, [Ljava/lang/String;
+    const-string v1, "id"
 
-    move-result-object v0
+    aput-object v1, v0, v2
 
     invoke-static {v0}, Lkotlin/collections/CollectionsKt;->mutableListOf([Ljava/lang/Object;)Ljava/util/List;
 
@@ -333,7 +350,7 @@
 .end method
 
 .method private final fetchIngestionInfo(Ljava/lang/String;)Lcom/google/api/services/youtube/model/IngestionInfo;
-    .locals 3
+    .locals 5
 
     .line 432
     invoke-direct {p0}, Ljp/co/sony/mc/camera/rtmp/YouTubeLiveStreamApi;->refreshAccessTokenIfNeeded()V
@@ -356,28 +373,32 @@
 
     move-result-object p0
 
-    const-string v1, "cdn"
+    const/4 v1, 0x1
 
-    filled-new-array {v1}, [Ljava/lang/String;
+    new-array v2, v1, [Ljava/lang/String;
 
-    move-result-object v1
+    const-string v3, "cdn"
 
-    invoke-static {v1}, Lkotlin/collections/CollectionsKt;->arrayListOf([Ljava/lang/Object;)Ljava/util/ArrayList;
+    const/4 v4, 0x0
 
-    move-result-object v1
+    aput-object v3, v2, v4
 
-    check-cast v1, Ljava/util/List;
+    invoke-static {v2}, Lkotlin/collections/CollectionsKt;->arrayListOf([Ljava/lang/Object;)Ljava/util/ArrayList;
 
-    invoke-virtual {p0, v1}, Lcom/google/api/services/youtube/YouTube$LiveStreams;->list(Ljava/util/List;)Lcom/google/api/services/youtube/YouTube$LiveStreams$List;
+    move-result-object v2
+
+    check-cast v2, Ljava/util/List;
+
+    invoke-virtual {p0, v2}, Lcom/google/api/services/youtube/YouTube$LiveStreams;->list(Ljava/util/List;)Lcom/google/api/services/youtube/YouTube$LiveStreams$List;
 
     move-result-object p0
 
     .line 434
-    filled-new-array {p1}, [Ljava/lang/String;
+    new-array v1, v1, [Ljava/lang/String;
 
-    move-result-object p1
+    aput-object p1, v1, v4
 
-    invoke-static {p1}, Lkotlin/collections/CollectionsKt;->arrayListOf([Ljava/lang/Object;)Ljava/util/ArrayList;
+    invoke-static {v1}, Lkotlin/collections/CollectionsKt;->arrayListOf([Ljava/lang/Object;)Ljava/util/ArrayList;
 
     move-result-object p1
 
@@ -404,35 +425,33 @@
 
     if-nez p1, :cond_2
 
-    const/4 p1, 0x0
+    invoke-interface {p0, v4}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
-    invoke-interface {p0, p1}, Ljava/util/List;->get(I)Ljava/lang/Object;
+    move-result-object p1
 
-    move-result-object v1
+    check-cast p1, Lcom/google/api/services/youtube/model/LiveStream;
 
-    check-cast v1, Lcom/google/api/services/youtube/model/LiveStream;
+    invoke-virtual {p1}, Lcom/google/api/services/youtube/model/LiveStream;->getCdn()Lcom/google/api/services/youtube/model/CdnSettings;
 
-    invoke-virtual {v1}, Lcom/google/api/services/youtube/model/LiveStream;->getCdn()Lcom/google/api/services/youtube/model/CdnSettings;
+    move-result-object p1
 
-    move-result-object v1
+    invoke-virtual {p1}, Lcom/google/api/services/youtube/model/CdnSettings;->getIngestionType()Ljava/lang/String;
 
-    invoke-virtual {v1}, Lcom/google/api/services/youtube/model/CdnSettings;->getIngestionType()Ljava/lang/String;
+    move-result-object p1
 
-    move-result-object v1
+    const-string v1, "rtmp"
 
-    const-string v2, "rtmp"
+    invoke-virtual {p1, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
-    invoke-virtual {v1, v2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+    move-result p1
 
-    move-result v1
-
-    if-nez v1, :cond_1
+    if-nez p1, :cond_1
 
     goto :goto_0
 
     .line 442
     :cond_1
-    invoke-interface {p0, p1}, Ljava/util/List;->get(I)Ljava/lang/Object;
+    invoke-interface {p0, v4}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
     move-result-object p0
 
@@ -488,17 +507,8 @@
 
     move-result-object p1
 
-    goto :goto_0
+    if-eqz p1, :cond_0
 
-    :cond_0
-    const/4 p1, 0x0
-
-    :goto_0
-    if-nez p1, :cond_1
-
-    goto :goto_1
-
-    :cond_1
     new-instance v0, Ljava/lang/StringBuilder;
 
     const-string v1, "Bearer "
@@ -515,7 +525,7 @@
 
     invoke-virtual {p1, p0}, Lcom/google/api/client/http/HttpHeaders;->setAuthorization(Ljava/lang/String;)Lcom/google/api/client/http/HttpHeaders;
 
-    :goto_1
+    :cond_0
     return-void
 .end method
 
@@ -812,30 +822,30 @@
     const/4 v1, 0x1
 
     .line 378
-    new-array v1, v1, [Ljava/lang/String;
+    new-array v2, v1, [Ljava/lang/String;
 
-    const-string/jumbo v2, "status"
+    const-string/jumbo v3, "status"
 
-    const/4 v3, 0x0
+    const/4 v4, 0x0
 
-    aput-object v2, v1, v3
+    aput-object v3, v2, v4
 
-    invoke-static {v1}, Lkotlin/collections/CollectionsKt;->arrayListOf([Ljava/lang/Object;)Ljava/util/ArrayList;
+    invoke-static {v2}, Lkotlin/collections/CollectionsKt;->arrayListOf([Ljava/lang/Object;)Ljava/util/ArrayList;
 
-    move-result-object v1
+    move-result-object v2
 
-    check-cast v1, Ljava/util/List;
+    check-cast v2, Ljava/util/List;
 
-    invoke-virtual {p0, v1}, Lcom/google/api/services/youtube/YouTube$LiveBroadcasts;->list(Ljava/util/List;)Lcom/google/api/services/youtube/YouTube$LiveBroadcasts$List;
+    invoke-virtual {p0, v2}, Lcom/google/api/services/youtube/YouTube$LiveBroadcasts;->list(Ljava/util/List;)Lcom/google/api/services/youtube/YouTube$LiveBroadcasts$List;
 
     move-result-object p0
 
     .line 379
-    filled-new-array {p1}, [Ljava/lang/String;
+    new-array v1, v1, [Ljava/lang/String;
 
-    move-result-object p1
+    aput-object p1, v1, v4
 
-    invoke-static {p1}, Lkotlin/collections/CollectionsKt;->mutableListOf([Ljava/lang/Object;)Ljava/util/List;
+    invoke-static {v1}, Lkotlin/collections/CollectionsKt;->mutableListOf([Ljava/lang/Object;)Ljava/util/List;
 
     move-result-object p1
 
@@ -860,10 +870,6 @@
 
     move-result-object v1
 
-    const-string v2, "execute(...)"
-
-    invoke-static {v1, v2}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
-
     check-cast v1, Lcom/google/api/services/youtube/model/LiveBroadcastListResponse;
     :try_end_1
     .catch Lcom/google/api/client/googleapis/json/GoogleJsonResponseException; {:try_start_1 .. :try_end_1} :catch_2
@@ -880,9 +886,9 @@
     .line 407
     invoke-interface {v2}, Ljava/util/List;->isEmpty()Z
 
-    move-result v4
+    move-result v3
 
-    if-eqz v4, :cond_2
+    if-eqz v3, :cond_2
 
     .line 408
     sget-object p0, Ljp/co/sony/mc/camera/rtmp/ValidationCheckResultCode;->RESULT_STREAM_INVALID:Ljp/co/sony/mc/camera/rtmp/ValidationCheckResultCode;
@@ -903,18 +909,18 @@
     :cond_3
     invoke-interface {v2}, Ljava/util/Iterator;->hasNext()Z
 
-    move-result v4
+    move-result v3
 
-    if-eqz v4, :cond_4
+    if-eqz v3, :cond_4
 
     invoke-interface {v2}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
-    move-result-object v4
+    move-result-object v3
 
-    check-cast v4, Lcom/google/api/services/youtube/model/LiveBroadcast;
+    check-cast v3, Lcom/google/api/services/youtube/model/LiveBroadcast;
 
     .line 413
-    invoke-virtual {v4}, Lcom/google/api/services/youtube/model/LiveBroadcast;->getStatus()Lcom/google/api/services/youtube/model/LiveBroadcastStatus;
+    invoke-virtual {v3}, Lcom/google/api/services/youtube/model/LiveBroadcast;->getStatus()Lcom/google/api/services/youtube/model/LiveBroadcastStatus;
 
     move-result-object v5
 
@@ -931,21 +937,21 @@
     if-nez v5, :cond_3
 
     .line 414
-    invoke-virtual {v4}, Lcom/google/api/services/youtube/model/LiveBroadcast;->getStatus()Lcom/google/api/services/youtube/model/LiveBroadcastStatus;
+    invoke-virtual {v3}, Lcom/google/api/services/youtube/model/LiveBroadcast;->getStatus()Lcom/google/api/services/youtube/model/LiveBroadcastStatus;
 
-    move-result-object v4
+    move-result-object v3
 
-    invoke-virtual {v4}, Lcom/google/api/services/youtube/model/LiveBroadcastStatus;->getLifeCycleStatus()Ljava/lang/String;
+    invoke-virtual {v3}, Lcom/google/api/services/youtube/model/LiveBroadcastStatus;->getLifeCycleStatus()Ljava/lang/String;
 
-    move-result-object v4
+    move-result-object v3
 
     const-string v5, "revoked"
 
-    invoke-virtual {v4, v5}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+    invoke-virtual {v3, v5}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
-    move-result v4
+    move-result v3
 
-    if-nez v4, :cond_3
+    if-nez v3, :cond_3
 
     .line 417
     sget-object p0, Ljp/co/sony/mc/camera/rtmp/ValidationCheckResultCode;->RESULT_STREAM_VALID:Ljp/co/sony/mc/camera/rtmp/ValidationCheckResultCode;
@@ -1056,7 +1062,7 @@
 
     move-result-object p0
 
-    invoke-interface {p0, v3}, Ljava/util/List;->get(I)Ljava/lang/Object;
+    invoke-interface {p0, v4}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
     move-result-object p0
 
@@ -1239,7 +1245,7 @@
 .end method
 
 .method public final insertLiveChatBans(Ljava/lang/String;Ljp/co/sony/mc/camera/rtmp/YouTubeLiveChatBanData;Ljp/co/sony/mc/camera/rtmp/YouTubeLiveChatBanCallback;)V
-    .locals 6
+    .locals 8
 
     const-string v0, "liveChatId"
 
@@ -1253,27 +1259,31 @@
 
     invoke-static {p3, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
+    const/4 v0, 0x0
+
+    const/4 v1, 0x1
+
     .line 310
     :try_start_0
     invoke-direct {p0}, Ljp/co/sony/mc/camera/rtmp/YouTubeLiveStreamApi;->refreshAccessTokenIfNeeded()V
 
     .line 311
-    new-instance v0, Lcom/google/api/services/youtube/model/LiveChatBan;
+    new-instance v2, Lcom/google/api/services/youtube/model/LiveChatBan;
 
-    invoke-direct {v0}, Lcom/google/api/services/youtube/model/LiveChatBan;-><init>()V
+    invoke-direct {v2}, Lcom/google/api/services/youtube/model/LiveChatBan;-><init>()V
 
     .line 312
-    new-instance v1, Lcom/google/api/services/youtube/model/LiveChatBanSnippet;
+    new-instance v3, Lcom/google/api/services/youtube/model/LiveChatBanSnippet;
 
-    invoke-direct {v1}, Lcom/google/api/services/youtube/model/LiveChatBanSnippet;-><init>()V
+    invoke-direct {v3}, Lcom/google/api/services/youtube/model/LiveChatBanSnippet;-><init>()V
 
     .line 313
-    invoke-virtual {v1, p1}, Lcom/google/api/services/youtube/model/LiveChatBanSnippet;->setLiveChatId(Ljava/lang/String;)Lcom/google/api/services/youtube/model/LiveChatBanSnippet;
+    invoke-virtual {v3, p1}, Lcom/google/api/services/youtube/model/LiveChatBanSnippet;->setLiveChatId(Ljava/lang/String;)Lcom/google/api/services/youtube/model/LiveChatBanSnippet;
 
     .line 314
     const-string p1, "permanent"
 
-    invoke-virtual {v1, p1}, Lcom/google/api/services/youtube/model/LiveChatBanSnippet;->setType(Ljava/lang/String;)Lcom/google/api/services/youtube/model/LiveChatBanSnippet;
+    invoke-virtual {v3, p1}, Lcom/google/api/services/youtube/model/LiveChatBanSnippet;->setType(Ljava/lang/String;)Lcom/google/api/services/youtube/model/LiveChatBanSnippet;
 
     .line 315
     new-instance p1, Lcom/google/api/services/youtube/model/ChannelProfileDetails;
@@ -1283,15 +1293,15 @@
     .line 316
     invoke-virtual {p2}, Ljp/co/sony/mc/camera/rtmp/YouTubeLiveChatBanData;->getChannelId()Ljava/lang/String;
 
-    move-result-object v2
+    move-result-object v4
 
-    invoke-virtual {p1, v2}, Lcom/google/api/services/youtube/model/ChannelProfileDetails;->setChannelId(Ljava/lang/String;)Lcom/google/api/services/youtube/model/ChannelProfileDetails;
+    invoke-virtual {p1, v4}, Lcom/google/api/services/youtube/model/ChannelProfileDetails;->setChannelId(Ljava/lang/String;)Lcom/google/api/services/youtube/model/ChannelProfileDetails;
 
     .line 315
-    invoke-virtual {v1, p1}, Lcom/google/api/services/youtube/model/LiveChatBanSnippet;->setBannedUserDetails(Lcom/google/api/services/youtube/model/ChannelProfileDetails;)Lcom/google/api/services/youtube/model/LiveChatBanSnippet;
+    invoke-virtual {v3, p1}, Lcom/google/api/services/youtube/model/LiveChatBanSnippet;->setBannedUserDetails(Lcom/google/api/services/youtube/model/ChannelProfileDetails;)Lcom/google/api/services/youtube/model/LiveChatBanSnippet;
 
     .line 312
-    invoke-virtual {v0, v1}, Lcom/google/api/services/youtube/model/LiveChatBan;->setSnippet(Lcom/google/api/services/youtube/model/LiveChatBanSnippet;)Lcom/google/api/services/youtube/model/LiveChatBan;
+    invoke-virtual {v2, v3}, Lcom/google/api/services/youtube/model/LiveChatBan;->setSnippet(Lcom/google/api/services/youtube/model/LiveChatBanSnippet;)Lcom/google/api/services/youtube/model/LiveChatBan;
 
     .line 321
     new-instance p1, Lcom/google/api/services/youtube/YouTube$LiveChatBans;
@@ -1315,7 +1325,7 @@
 
     move-result-object p0
 
-    invoke-virtual {p1, p0, v0}, Lcom/google/api/services/youtube/YouTube$LiveChatBans;->insert(Ljava/util/List;Lcom/google/api/services/youtube/model/LiveChatBan;)Lcom/google/api/services/youtube/YouTube$LiveChatBans$Insert;
+    invoke-virtual {p1, p0, v2}, Lcom/google/api/services/youtube/YouTube$LiveChatBans;->insert(Ljava/util/List;Lcom/google/api/services/youtube/model/LiveChatBan;)Lcom/google/api/services/youtube/YouTube$LiveChatBans$Insert;
 
     move-result-object p0
 
@@ -1328,26 +1338,26 @@
     .line 322
     new-instance p1, Ljp/co/sony/mc/camera/rtmp/YouTubeLiveChatBanData;
 
-    const/4 v4, 0x7
+    const/4 v6, 0x7
 
-    const/4 v5, 0x0
-
-    const/4 v1, 0x0
-
-    const/4 v2, 0x0
+    const/4 v7, 0x0
 
     const/4 v3, 0x0
 
-    move-object v0, p1
+    const/4 v4, 0x0
 
-    invoke-direct/range {v0 .. v5}, Ljp/co/sony/mc/camera/rtmp/YouTubeLiveChatBanData;-><init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ILkotlin/jvm/internal/DefaultConstructorMarker;)V
+    const/4 v5, 0x0
+
+    move-object v2, p1
+
+    invoke-direct/range {v2 .. v7}, Ljp/co/sony/mc/camera/rtmp/YouTubeLiveChatBanData;-><init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ILkotlin/jvm/internal/DefaultConstructorMarker;)V
 
     .line 325
     invoke-virtual {p0}, Lcom/google/api/services/youtube/model/LiveChatBan;->getId()Ljava/lang/String;
 
-    move-result-object v0
+    move-result-object v2
 
-    invoke-virtual {p1, v0}, Ljp/co/sony/mc/camera/rtmp/YouTubeLiveChatBanData;->setBanId(Ljava/lang/String;)V
+    invoke-virtual {p1, v2}, Ljp/co/sony/mc/camera/rtmp/YouTubeLiveChatBanData;->setBanId(Ljava/lang/String;)V
 
     .line 326
     invoke-virtual {p0}, Lcom/google/api/services/youtube/model/LiveChatBan;->getSnippet()Lcom/google/api/services/youtube/model/LiveChatBanSnippet;
@@ -1383,17 +1393,19 @@
     move-exception p0
 
     .line 335
+    new-array p1, v1, [Ljava/lang/String;
+
     invoke-virtual {p0}, Ljava/io/IOException;->getMessage()Ljava/lang/String;
 
     move-result-object p0
 
-    new-instance p1, Ljava/lang/StringBuilder;
+    new-instance p2, Ljava/lang/StringBuilder;
 
-    const-string p2, "IOException:"
+    const-string v1, "IOException:"
 
-    invoke-direct {p1, p2}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+    invoke-direct {p2, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
-    invoke-virtual {p1, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {p2, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object p0
 
@@ -1401,11 +1413,9 @@
 
     move-result-object p0
 
-    filled-new-array {p0}, [Ljava/lang/String;
+    aput-object p0, p1, v0
 
-    move-result-object p0
-
-    invoke-static {p0}, Ljp/co/sony/mc/camera/util/CamLog;->e([Ljava/lang/String;)V
+    invoke-static {p1}, Ljp/co/sony/mc/camera/util/CamLog;->e([Ljava/lang/String;)V
 
     .line 336
     invoke-interface {p3}, Ljp/co/sony/mc/camera/rtmp/YouTubeLiveChatBanCallback;->onFailure()V
@@ -1416,17 +1426,19 @@
     move-exception p0
 
     .line 332
+    new-array p1, v1, [Ljava/lang/String;
+
     invoke-virtual {p0}, Lcom/google/api/client/googleapis/json/GoogleJsonResponseException;->getMessage()Ljava/lang/String;
 
     move-result-object p0
 
-    new-instance p1, Ljava/lang/StringBuilder;
+    new-instance p2, Ljava/lang/StringBuilder;
 
-    const-string p2, "GoogleJsonResponseException:"
+    const-string v1, "GoogleJsonResponseException:"
 
-    invoke-direct {p1, p2}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+    invoke-direct {p2, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
-    invoke-virtual {p1, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {p2, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object p0
 
@@ -1434,11 +1446,9 @@
 
     move-result-object p0
 
-    filled-new-array {p0}, [Ljava/lang/String;
+    aput-object p0, p1, v0
 
-    move-result-object p0
-
-    invoke-static {p0}, Ljp/co/sony/mc/camera/util/CamLog;->e([Ljava/lang/String;)V
+    invoke-static {p1}, Ljp/co/sony/mc/camera/util/CamLog;->e([Ljava/lang/String;)V
 
     .line 333
     invoke-interface {p3}, Ljp/co/sony/mc/camera/rtmp/YouTubeLiveChatBanCallback;->onFailure()V
@@ -1651,11 +1661,13 @@
     .line 229
     iget v5, v3, Ljp/co/sony/mc/camera/rtmp/YouTubeLiveStreamApi$requestLiveChat$1;->label:I
 
-    const/4 v6, 0x1
+    const/4 v6, 0x0
+
+    const/4 v7, 0x1
 
     if-eqz v5, :cond_2
 
-    if-ne v5, v6, :cond_1
+    if-ne v5, v7, :cond_1
 
     iget-object v0, v3, Ljp/co/sony/mc/camera/rtmp/YouTubeLiveStreamApi$requestLiveChat$1;->L$0:Ljava/lang/Object;
 
@@ -1697,7 +1709,7 @@
     .line 236
     iget-object v5, v0, Ljp/co/sony/mc/camera/rtmp/YouTubeLiveStreamApi;->youtube:Lcom/google/api/services/youtube/YouTube;
 
-    const/4 v7, 0x0
+    const/4 v8, 0x0
 
     if-nez v5, :cond_3
 
@@ -1705,54 +1717,52 @@
 
     invoke-static {v5}, Lkotlin/jvm/internal/Intrinsics;->throwUninitializedPropertyAccessException(Ljava/lang/String;)V
 
-    move-object v5, v7
+    move-object v5, v8
 
     :cond_3
     invoke-virtual {v5}, Lcom/google/api/services/youtube/YouTube;->liveChatMessages()Lcom/google/api/services/youtube/YouTube$LiveChatMessages;
 
     move-result-object v5
 
-    const/4 v8, 0x2
+    const/4 v9, 0x2
 
     .line 237
-    new-array v8, v8, [Ljava/lang/String;
+    new-array v9, v9, [Ljava/lang/String;
 
-    const-string/jumbo v9, "snippet"
+    const-string/jumbo v10, "snippet"
 
-    const/4 v10, 0x0
+    aput-object v10, v9, v6
 
-    aput-object v9, v8, v10
+    const-string v10, "authorDetails"
 
-    const-string v9, "authorDetails"
+    aput-object v10, v9, v7
 
-    aput-object v9, v8, v6
+    invoke-static {v9}, Lkotlin/collections/CollectionsKt;->listOf([Ljava/lang/Object;)Ljava/util/List;
 
-    invoke-static {v8}, Lkotlin/collections/CollectionsKt;->listOf([Ljava/lang/Object;)Ljava/util/List;
+    move-result-object v9
 
-    move-result-object v8
+    move-object/from16 v10, p1
 
-    move-object/from16 v9, p1
-
-    invoke-virtual {v5, v9, v8}, Lcom/google/api/services/youtube/YouTube$LiveChatMessages;->list(Ljava/lang/String;Ljava/util/List;)Lcom/google/api/services/youtube/YouTube$LiveChatMessages$List;
+    invoke-virtual {v5, v10, v9}, Lcom/google/api/services/youtube/YouTube$LiveChatMessages;->list(Ljava/lang/String;Ljava/util/List;)Lcom/google/api/services/youtube/YouTube$LiveChatMessages$List;
 
     move-result-object v5
 
     .line 239
-    iget-object v8, v0, Ljp/co/sony/mc/camera/rtmp/YouTubeLiveStreamApi;->nextToken:Ljava/lang/String;
+    iget-object v9, v0, Ljp/co/sony/mc/camera/rtmp/YouTubeLiveStreamApi;->nextToken:Ljava/lang/String;
 
-    if-eqz v8, :cond_4
+    if-eqz v9, :cond_4
 
-    invoke-virtual {v5, v8}, Lcom/google/api/services/youtube/YouTube$LiveChatMessages$List;->setPageToken(Ljava/lang/String;)Lcom/google/api/services/youtube/YouTube$LiveChatMessages$List;
+    invoke-virtual {v5, v9}, Lcom/google/api/services/youtube/YouTube$LiveChatMessages$List;->setPageToken(Ljava/lang/String;)Lcom/google/api/services/youtube/YouTube$LiveChatMessages$List;
 
     :cond_4
-    const-wide/16 v8, 0x7d0
+    const-wide/16 v9, 0x7d0
 
     .line 240
-    invoke-static {v8, v9}, Lkotlin/coroutines/jvm/internal/Boxing;->boxLong(J)Ljava/lang/Long;
+    invoke-static {v9, v10}, Lkotlin/coroutines/jvm/internal/Boxing;->boxLong(J)Ljava/lang/Long;
 
-    move-result-object v8
+    move-result-object v9
 
-    invoke-virtual {v5, v8}, Lcom/google/api/services/youtube/YouTube$LiveChatMessages$List;->setMaxResults(Ljava/lang/Long;)Lcom/google/api/services/youtube/YouTube$LiveChatMessages$List;
+    invoke-virtual {v5, v9}, Lcom/google/api/services/youtube/YouTube$LiveChatMessages$List;->setMaxResults(Ljava/lang/Long;)Lcom/google/api/services/youtube/YouTube$LiveChatMessages$List;
 
     .line 241
     invoke-virtual {v5}, Lcom/google/api/services/youtube/YouTube$LiveChatMessages$List;->execute()Ljava/lang/Object;
@@ -1764,26 +1774,20 @@
     .line 243
     invoke-virtual {v5}, Lcom/google/api/services/youtube/model/LiveChatMessageListResponse;->getNextPageToken()Ljava/lang/String;
 
-    move-result-object v8
+    move-result-object v9
 
-    iput-object v8, v0, Ljp/co/sony/mc/camera/rtmp/YouTubeLiveStreamApi;->nextToken:Ljava/lang/String;
+    iput-object v9, v0, Ljp/co/sony/mc/camera/rtmp/YouTubeLiveStreamApi;->nextToken:Ljava/lang/String;
 
     .line 244
     invoke-virtual {v5}, Lcom/google/api/services/youtube/model/LiveChatMessageListResponse;->getPollingIntervalMillis()Ljava/lang/Long;
 
-    move-result-object v8
+    move-result-object v9
 
-    const-string v9, "getPollingIntervalMillis(...)"
+    invoke-virtual {v9}, Ljava/lang/Long;->longValue()J
 
-    invoke-static {v8, v9}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
+    move-result-wide v9
 
-    check-cast v8, Ljava/lang/Number;
-
-    invoke-virtual {v8}, Ljava/lang/Number;->longValue()J
-
-    move-result-wide v8
-
-    sput-wide v8, Ljp/co/sony/mc/camera/rtmp/YouTubeLiveStreamApi;->pollingInterval:J
+    sput-wide v9, Ljp/co/sony/mc/camera/rtmp/YouTubeLiveStreamApi;->pollingInterval:J
 
     .line 246
     invoke-virtual {v5}, Lcom/google/api/services/youtube/model/LiveChatMessageListResponse;->getItems()Ljava/util/List;
@@ -1800,38 +1804,38 @@
     :goto_1
     invoke-interface {v5}, Ljava/util/Iterator;->hasNext()Z
 
-    move-result v8
+    move-result v9
 
-    if-eqz v8, :cond_e
+    if-eqz v9, :cond_e
 
     invoke-interface {v5}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
-    move-result-object v8
+    move-result-object v9
 
-    check-cast v8, Lcom/google/api/services/youtube/model/LiveChatMessage;
+    check-cast v9, Lcom/google/api/services/youtube/model/LiveChatMessage;
 
     .line 248
-    invoke-virtual {v8}, Lcom/google/api/services/youtube/model/LiveChatMessage;->getSnippet()Lcom/google/api/services/youtube/model/LiveChatMessageSnippet;
+    invoke-virtual {v9}, Lcom/google/api/services/youtube/model/LiveChatMessage;->getSnippet()Lcom/google/api/services/youtube/model/LiveChatMessageSnippet;
 
-    move-result-object v9
+    move-result-object v10
 
-    invoke-virtual {v9}, Lcom/google/api/services/youtube/model/LiveChatMessageSnippet;->getType()Ljava/lang/String;
+    invoke-virtual {v10}, Lcom/google/api/services/youtube/model/LiveChatMessageSnippet;->getType()Ljava/lang/String;
 
-    move-result-object v9
+    move-result-object v10
 
     const-string/jumbo v11, "userBannedEvent"
 
-    invoke-static {v9, v11}, Lkotlin/jvm/internal/Intrinsics;->areEqual(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v10, v11}, Lkotlin/jvm/internal/Intrinsics;->areEqual(Ljava/lang/Object;Ljava/lang/Object;)Z
 
-    move-result v9
+    move-result v10
 
-    if-eqz v9, :cond_5
+    if-eqz v10, :cond_5
 
     goto :goto_1
 
     .line 252
     :cond_5
-    new-instance v9, Ljp/co/sony/mc/camera/rtmp/YouTubeLiveChatData;
+    new-instance v10, Ljp/co/sony/mc/camera/rtmp/YouTubeLiveChatData;
 
     const/16 v25, 0x1fff
 
@@ -1863,19 +1867,19 @@
 
     const/16 v24, 0x0
 
-    move-object v11, v9
+    move-object v11, v10
 
     invoke-direct/range {v11 .. v26}, Ljp/co/sony/mc/camera/rtmp/YouTubeLiveChatData;-><init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljp/co/sony/mc/camera/view/util/UiText;ZZZLjp/co/sony/mc/camera/rtmp/YouTubeLiveChatData$SuperChatData;Ljp/co/sony/mc/camera/rtmp/YouTubeLiveChatData$SuperStickerData;Ljava/lang/String;ZILkotlin/jvm/internal/DefaultConstructorMarker;)V
 
     .line 253
-    invoke-virtual {v8}, Lcom/google/api/services/youtube/model/LiveChatMessage;->getId()Ljava/lang/String;
+    invoke-virtual {v9}, Lcom/google/api/services/youtube/model/LiveChatMessage;->getId()Ljava/lang/String;
 
     move-result-object v11
 
-    invoke-virtual {v9, v11}, Ljp/co/sony/mc/camera/rtmp/YouTubeLiveChatData;->setMessageId(Ljava/lang/String;)V
+    invoke-virtual {v10, v11}, Ljp/co/sony/mc/camera/rtmp/YouTubeLiveChatData;->setMessageId(Ljava/lang/String;)V
 
     .line 254
-    invoke-virtual {v8}, Lcom/google/api/services/youtube/model/LiveChatMessage;->getSnippet()Lcom/google/api/services/youtube/model/LiveChatMessageSnippet;
+    invoke-virtual {v9}, Lcom/google/api/services/youtube/model/LiveChatMessage;->getSnippet()Lcom/google/api/services/youtube/model/LiveChatMessageSnippet;
 
     move-result-object v11
 
@@ -1883,10 +1887,10 @@
 
     move-result-object v11
 
-    invoke-virtual {v9, v11}, Ljp/co/sony/mc/camera/rtmp/YouTubeLiveChatData;->setChannelId(Ljava/lang/String;)V
+    invoke-virtual {v10, v11}, Ljp/co/sony/mc/camera/rtmp/YouTubeLiveChatData;->setChannelId(Ljava/lang/String;)V
 
     .line 255
-    invoke-virtual {v8}, Lcom/google/api/services/youtube/model/LiveChatMessage;->getSnippet()Lcom/google/api/services/youtube/model/LiveChatMessageSnippet;
+    invoke-virtual {v9}, Lcom/google/api/services/youtube/model/LiveChatMessage;->getSnippet()Lcom/google/api/services/youtube/model/LiveChatMessageSnippet;
 
     move-result-object v11
 
@@ -1894,10 +1898,10 @@
 
     move-result-object v11
 
-    invoke-virtual {v9, v11}, Ljp/co/sony/mc/camera/rtmp/YouTubeLiveChatData;->setType(Ljava/lang/String;)V
+    invoke-virtual {v10, v11}, Ljp/co/sony/mc/camera/rtmp/YouTubeLiveChatData;->setType(Ljava/lang/String;)V
 
     .line 256
-    invoke-virtual {v9}, Ljp/co/sony/mc/camera/rtmp/YouTubeLiveChatData;->getType()Ljava/lang/String;
+    invoke-virtual {v10}, Ljp/co/sony/mc/camera/rtmp/YouTubeLiveChatData;->getType()Ljava/lang/String;
 
     move-result-object v11
 
@@ -1922,7 +1926,7 @@
     new-instance v11, Ljp/co/sony/mc/camera/rtmp/YouTubeLiveChatData$SuperChatData;
 
     .line 259
-    invoke-virtual {v8}, Lcom/google/api/services/youtube/model/LiveChatMessage;->getSnippet()Lcom/google/api/services/youtube/model/LiveChatMessageSnippet;
+    invoke-virtual {v9}, Lcom/google/api/services/youtube/model/LiveChatMessage;->getSnippet()Lcom/google/api/services/youtube/model/LiveChatMessageSnippet;
 
     move-result-object v12
 
@@ -1939,13 +1943,11 @@
     goto :goto_2
 
     :cond_6
-    invoke-static {v12}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;)V
-
     move-object v14, v12
 
     .line 260
     :goto_2
-    invoke-virtual {v8}, Lcom/google/api/services/youtube/model/LiveChatMessage;->getSnippet()Lcom/google/api/services/youtube/model/LiveChatMessageSnippet;
+    invoke-virtual {v9}, Lcom/google/api/services/youtube/model/LiveChatMessage;->getSnippet()Lcom/google/api/services/youtube/model/LiveChatMessageSnippet;
 
     move-result-object v12
 
@@ -1962,13 +1964,11 @@
     goto :goto_3
 
     :cond_7
-    invoke-static {v12}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;)V
-
     move-object v13, v12
 
     .line 261
     :goto_3
-    invoke-virtual {v8}, Lcom/google/api/services/youtube/model/LiveChatMessage;->getSnippet()Lcom/google/api/services/youtube/model/LiveChatMessageSnippet;
+    invoke-virtual {v9}, Lcom/google/api/services/youtube/model/LiveChatMessage;->getSnippet()Lcom/google/api/services/youtube/model/LiveChatMessageSnippet;
 
     move-result-object v12
 
@@ -1983,7 +1983,7 @@
     .line 258
     invoke-direct {v11, v14, v13, v12}, Ljp/co/sony/mc/camera/rtmp/YouTubeLiveChatData$SuperChatData;-><init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Long;)V
 
-    invoke-virtual {v9, v11}, Ljp/co/sony/mc/camera/rtmp/YouTubeLiveChatData;->setSuperChatData(Ljp/co/sony/mc/camera/rtmp/YouTubeLiveChatData$SuperChatData;)V
+    invoke-virtual {v10, v11}, Ljp/co/sony/mc/camera/rtmp/YouTubeLiveChatData;->setSuperChatData(Ljp/co/sony/mc/camera/rtmp/YouTubeLiveChatData$SuperChatData;)V
 
     goto :goto_6
 
@@ -2001,7 +2001,7 @@
     new-instance v11, Ljp/co/sony/mc/camera/rtmp/YouTubeLiveChatData$SuperStickerData;
 
     .line 266
-    invoke-virtual {v8}, Lcom/google/api/services/youtube/model/LiveChatMessage;->getSnippet()Lcom/google/api/services/youtube/model/LiveChatMessageSnippet;
+    invoke-virtual {v9}, Lcom/google/api/services/youtube/model/LiveChatMessage;->getSnippet()Lcom/google/api/services/youtube/model/LiveChatMessageSnippet;
 
     move-result-object v12
 
@@ -2026,7 +2026,7 @@
 
     .line 268
     :goto_4
-    invoke-virtual {v8}, Lcom/google/api/services/youtube/model/LiveChatMessage;->getSnippet()Lcom/google/api/services/youtube/model/LiveChatMessageSnippet;
+    invoke-virtual {v9}, Lcom/google/api/services/youtube/model/LiveChatMessage;->getSnippet()Lcom/google/api/services/youtube/model/LiveChatMessageSnippet;
 
     move-result-object v12
 
@@ -2043,13 +2043,11 @@
     goto :goto_5
 
     :cond_a
-    invoke-static {v12}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;)V
-
     move-object v14, v12
 
     .line 269
     :goto_5
-    invoke-virtual {v8}, Lcom/google/api/services/youtube/model/LiveChatMessage;->getSnippet()Lcom/google/api/services/youtube/model/LiveChatMessageSnippet;
+    invoke-virtual {v9}, Lcom/google/api/services/youtube/model/LiveChatMessage;->getSnippet()Lcom/google/api/services/youtube/model/LiveChatMessageSnippet;
 
     move-result-object v12
 
@@ -2064,12 +2062,12 @@
     .line 265
     invoke-direct {v11, v13, v14, v12}, Ljp/co/sony/mc/camera/rtmp/YouTubeLiveChatData$SuperStickerData;-><init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Long;)V
 
-    invoke-virtual {v9, v11}, Ljp/co/sony/mc/camera/rtmp/YouTubeLiveChatData;->setSuperStickerData(Ljp/co/sony/mc/camera/rtmp/YouTubeLiveChatData$SuperStickerData;)V
+    invoke-virtual {v10, v11}, Ljp/co/sony/mc/camera/rtmp/YouTubeLiveChatData;->setSuperStickerData(Ljp/co/sony/mc/camera/rtmp/YouTubeLiveChatData$SuperStickerData;)V
 
     .line 273
     :cond_b
     :goto_6
-    invoke-virtual {v8}, Lcom/google/api/services/youtube/model/LiveChatMessage;->getAuthorDetails()Lcom/google/api/services/youtube/model/LiveChatMessageAuthorDetails;
+    invoke-virtual {v9}, Lcom/google/api/services/youtube/model/LiveChatMessage;->getAuthorDetails()Lcom/google/api/services/youtube/model/LiveChatMessageAuthorDetails;
 
     move-result-object v11
 
@@ -2077,10 +2075,10 @@
 
     move-result-object v11
 
-    invoke-virtual {v9, v11}, Ljp/co/sony/mc/camera/rtmp/YouTubeLiveChatData;->setDisplayName(Ljava/lang/String;)V
+    invoke-virtual {v10, v11}, Ljp/co/sony/mc/camera/rtmp/YouTubeLiveChatData;->setDisplayName(Ljava/lang/String;)V
 
     .line 274
-    invoke-virtual {v8}, Lcom/google/api/services/youtube/model/LiveChatMessage;->getAuthorDetails()Lcom/google/api/services/youtube/model/LiveChatMessageAuthorDetails;
+    invoke-virtual {v9}, Lcom/google/api/services/youtube/model/LiveChatMessage;->getAuthorDetails()Lcom/google/api/services/youtube/model/LiveChatMessageAuthorDetails;
 
     move-result-object v11
 
@@ -2088,10 +2086,10 @@
 
     move-result-object v11
 
-    invoke-virtual {v9, v11}, Ljp/co/sony/mc/camera/rtmp/YouTubeLiveChatData;->setUserImageUrl(Ljava/lang/String;)V
+    invoke-virtual {v10, v11}, Ljp/co/sony/mc/camera/rtmp/YouTubeLiveChatData;->setUserImageUrl(Ljava/lang/String;)V
 
     .line 275
-    invoke-virtual {v8}, Lcom/google/api/services/youtube/model/LiveChatMessage;->getAuthorDetails()Lcom/google/api/services/youtube/model/LiveChatMessageAuthorDetails;
+    invoke-virtual {v9}, Lcom/google/api/services/youtube/model/LiveChatMessage;->getAuthorDetails()Lcom/google/api/services/youtube/model/LiveChatMessageAuthorDetails;
 
     move-result-object v11
 
@@ -2099,18 +2097,14 @@
 
     move-result-object v11
 
-    const-string v12, "getIsChatOwner(...)"
-
-    invoke-static {v11, v12}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
-
     invoke-virtual {v11}, Ljava/lang/Boolean;->booleanValue()Z
 
     move-result v11
 
-    invoke-virtual {v9, v11}, Ljp/co/sony/mc/camera/rtmp/YouTubeLiveChatData;->setChatOwner(Z)V
+    invoke-virtual {v10, v11}, Ljp/co/sony/mc/camera/rtmp/YouTubeLiveChatData;->setChatOwner(Z)V
 
     .line 276
-    invoke-virtual {v8}, Lcom/google/api/services/youtube/model/LiveChatMessage;->getAuthorDetails()Lcom/google/api/services/youtube/model/LiveChatMessageAuthorDetails;
+    invoke-virtual {v9}, Lcom/google/api/services/youtube/model/LiveChatMessage;->getAuthorDetails()Lcom/google/api/services/youtube/model/LiveChatMessageAuthorDetails;
 
     move-result-object v11
 
@@ -2118,18 +2112,14 @@
 
     move-result-object v11
 
-    const-string v12, "getIsChatModerator(...)"
-
-    invoke-static {v11, v12}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
-
     invoke-virtual {v11}, Ljava/lang/Boolean;->booleanValue()Z
 
     move-result v11
 
-    invoke-virtual {v9, v11}, Ljp/co/sony/mc/camera/rtmp/YouTubeLiveChatData;->setChatModerator(Z)V
+    invoke-virtual {v10, v11}, Ljp/co/sony/mc/camera/rtmp/YouTubeLiveChatData;->setChatModerator(Z)V
 
     .line 277
-    invoke-virtual {v8}, Lcom/google/api/services/youtube/model/LiveChatMessage;->getAuthorDetails()Lcom/google/api/services/youtube/model/LiveChatMessageAuthorDetails;
+    invoke-virtual {v9}, Lcom/google/api/services/youtube/model/LiveChatMessage;->getAuthorDetails()Lcom/google/api/services/youtube/model/LiveChatMessageAuthorDetails;
 
     move-result-object v11
 
@@ -2137,20 +2127,16 @@
 
     move-result-object v11
 
-    const-string v12, "getIsChatSponsor(...)"
-
-    invoke-static {v11, v12}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
-
     invoke-virtual {v11}, Ljava/lang/Boolean;->booleanValue()Z
 
     move-result v11
 
-    invoke-virtual {v9, v11}, Ljp/co/sony/mc/camera/rtmp/YouTubeLiveChatData;->setChatSponsor(Z)V
+    invoke-virtual {v10, v11}, Ljp/co/sony/mc/camera/rtmp/YouTubeLiveChatData;->setChatSponsor(Z)V
 
     .line 278
     new-instance v11, Ljp/co/sony/mc/camera/view/util/UiText$DynamicString;
 
-    invoke-virtual {v8}, Lcom/google/api/services/youtube/model/LiveChatMessage;->getSnippet()Lcom/google/api/services/youtube/model/LiveChatMessageSnippet;
+    invoke-virtual {v9}, Lcom/google/api/services/youtube/model/LiveChatMessage;->getSnippet()Lcom/google/api/services/youtube/model/LiveChatMessageSnippet;
 
     move-result-object v12
 
@@ -2162,32 +2148,32 @@
 
     check-cast v11, Ljp/co/sony/mc/camera/view/util/UiText;
 
-    invoke-virtual {v9, v11}, Ljp/co/sony/mc/camera/rtmp/YouTubeLiveChatData;->setChatMessage(Ljp/co/sony/mc/camera/view/util/UiText;)V
+    invoke-virtual {v10, v11}, Ljp/co/sony/mc/camera/rtmp/YouTubeLiveChatData;->setChatMessage(Ljp/co/sony/mc/camera/view/util/UiText;)V
 
     .line 279
-    invoke-virtual {v8}, Lcom/google/api/services/youtube/model/LiveChatMessage;->getSnippet()Lcom/google/api/services/youtube/model/LiveChatMessageSnippet;
+    invoke-virtual {v9}, Lcom/google/api/services/youtube/model/LiveChatMessage;->getSnippet()Lcom/google/api/services/youtube/model/LiveChatMessageSnippet;
 
-    move-result-object v8
+    move-result-object v9
 
-    invoke-virtual {v8}, Lcom/google/api/services/youtube/model/LiveChatMessageSnippet;->getPublishedAt()Lcom/google/api/client/util/DateTime;
+    invoke-virtual {v9}, Lcom/google/api/services/youtube/model/LiveChatMessageSnippet;->getPublishedAt()Lcom/google/api/client/util/DateTime;
 
-    move-result-object v8
+    move-result-object v9
 
-    invoke-virtual {v8}, Lcom/google/api/client/util/DateTime;->toString()Ljava/lang/String;
+    invoke-virtual {v9}, Lcom/google/api/client/util/DateTime;->toString()Ljava/lang/String;
 
-    move-result-object v8
+    move-result-object v9
 
-    invoke-virtual {v9, v8}, Ljp/co/sony/mc/camera/rtmp/YouTubeLiveChatData;->setPublishedAt(Ljava/lang/String;)V
+    invoke-virtual {v10, v9}, Ljp/co/sony/mc/camera/rtmp/YouTubeLiveChatData;->setPublishedAt(Ljava/lang/String;)V
 
     .line 281
-    sget-boolean v8, Ljp/co/sony/mc/camera/util/CamLog;->DEBUG:Z
+    sget-boolean v9, Ljp/co/sony/mc/camera/util/CamLog;->DEBUG:Z
 
-    if-eqz v8, :cond_d
+    if-eqz v9, :cond_d
 
     .line 282
-    new-array v8, v6, [Ljava/lang/String;
+    new-array v9, v7, [Ljava/lang/String;
 
-    invoke-virtual {v9}, Ljp/co/sony/mc/camera/rtmp/YouTubeLiveChatData;->getDisplayName()Ljava/lang/String;
+    invoke-virtual {v10}, Ljp/co/sony/mc/camera/rtmp/YouTubeLiveChatData;->getDisplayName()Ljava/lang/String;
 
     move-result-object v11
 
@@ -2209,14 +2195,14 @@
 
     move-result-object v11
 
-    aput-object v11, v8, v10
+    aput-object v11, v9, v6
 
-    invoke-static {v8}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
+    invoke-static {v9}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
     .line 283
-    new-array v8, v6, [Ljava/lang/String;
+    new-array v9, v7, [Ljava/lang/String;
 
-    invoke-virtual {v9}, Ljp/co/sony/mc/camera/rtmp/YouTubeLiveChatData;->getUserImageUrl()Ljava/lang/String;
+    invoke-virtual {v10}, Ljp/co/sony/mc/camera/rtmp/YouTubeLiveChatData;->getUserImageUrl()Ljava/lang/String;
 
     move-result-object v11
 
@@ -2238,14 +2224,14 @@
 
     move-result-object v11
 
-    aput-object v11, v8, v10
+    aput-object v11, v9, v6
 
-    invoke-static {v8}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
+    invoke-static {v9}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
     .line 284
-    new-array v8, v6, [Ljava/lang/String;
+    new-array v9, v7, [Ljava/lang/String;
 
-    invoke-virtual {v9}, Ljp/co/sony/mc/camera/rtmp/YouTubeLiveChatData;->getChatMessage()Ljp/co/sony/mc/camera/view/util/UiText;
+    invoke-virtual {v10}, Ljp/co/sony/mc/camera/rtmp/YouTubeLiveChatData;->getChatMessage()Ljp/co/sony/mc/camera/view/util/UiText;
 
     move-result-object v11
 
@@ -2262,7 +2248,7 @@
     goto :goto_7
 
     :cond_c
-    move-object v11, v7
+    move-object v11, v8
 
     :goto_7
     new-instance v12, Ljava/lang/StringBuilder;
@@ -2283,14 +2269,14 @@
 
     move-result-object v11
 
-    aput-object v11, v8, v10
+    aput-object v11, v9, v6
 
-    invoke-static {v8}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
+    invoke-static {v9}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
     .line 285
-    new-array v8, v6, [Ljava/lang/String;
+    new-array v9, v7, [Ljava/lang/String;
 
-    invoke-virtual {v9}, Ljp/co/sony/mc/camera/rtmp/YouTubeLiveChatData;->isChatModerator()Z
+    invoke-virtual {v10}, Ljp/co/sony/mc/camera/rtmp/YouTubeLiveChatData;->isChatModerator()Z
 
     move-result v11
 
@@ -2312,14 +2298,14 @@
 
     move-result-object v11
 
-    aput-object v11, v8, v10
+    aput-object v11, v9, v6
 
-    invoke-static {v8}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
+    invoke-static {v9}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
     .line 286
-    new-array v8, v6, [Ljava/lang/String;
+    new-array v9, v7, [Ljava/lang/String;
 
-    invoke-virtual {v9}, Ljp/co/sony/mc/camera/rtmp/YouTubeLiveChatData;->isChatSponsor()Z
+    invoke-virtual {v10}, Ljp/co/sony/mc/camera/rtmp/YouTubeLiveChatData;->isChatSponsor()Z
 
     move-result v11
 
@@ -2341,13 +2327,13 @@
 
     move-result-object v11
 
-    aput-object v11, v8, v10
+    aput-object v11, v9, v6
 
-    invoke-static {v8}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
+    invoke-static {v9}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
     .line 289
     :cond_d
-    invoke-interface {v2, v9}, Ljava/util/List;->add(Ljava/lang/Object;)Z
+    invoke-interface {v2, v10}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
     goto/16 :goto_1
 
@@ -2355,7 +2341,7 @@
     :cond_e
     iput-object v1, v3, Ljp/co/sony/mc/camera/rtmp/YouTubeLiveStreamApi$requestLiveChat$1;->L$0:Ljava/lang/Object;
 
-    iput v6, v3, Ljp/co/sony/mc/camera/rtmp/YouTubeLiveStreamApi$requestLiveChat$1;->label:I
+    iput v7, v3, Ljp/co/sony/mc/camera/rtmp/YouTubeLiveStreamApi$requestLiveChat$1;->label:I
 
     invoke-interface {v1, v2, v3}, Ljp/co/sony/mc/camera/rtmp/YoutubeLiveChatRequestCallback;->onSuccess(Ljava/util/List;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
 
@@ -2379,17 +2365,19 @@
     move-exception v0
 
     .line 298
+    new-array v2, v7, [Ljava/lang/String;
+
     invoke-virtual {v0}, Ljava/io/IOException;->getMessage()Ljava/lang/String;
 
     move-result-object v0
 
-    new-instance v2, Ljava/lang/StringBuilder;
+    new-instance v3, Ljava/lang/StringBuilder;
 
-    const-string v3, "IOException:"
+    const-string v4, "IOException:"
 
-    invoke-direct {v2, v3}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+    invoke-direct {v3, v4}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
-    invoke-virtual {v2, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v3, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v0
 
@@ -2397,11 +2385,9 @@
 
     move-result-object v0
 
-    filled-new-array {v0}, [Ljava/lang/String;
+    aput-object v0, v2, v6
 
-    move-result-object v0
-
-    invoke-static {v0}, Ljp/co/sony/mc/camera/util/CamLog;->e([Ljava/lang/String;)V
+    invoke-static {v2}, Ljp/co/sony/mc/camera/util/CamLog;->e([Ljava/lang/String;)V
 
     .line 299
     sget-object v0, Ljp/co/sony/mc/camera/rtmp/ErrCode;->ERROR_DATA_IO:Ljp/co/sony/mc/camera/rtmp/ErrCode;
@@ -2417,27 +2403,27 @@
     move-exception v0
 
     .line 294
+    new-array v2, v7, [Ljava/lang/String;
+
     invoke-virtual {v0}, Lcom/google/api/client/googleapis/json/GoogleJsonResponseException;->getMessage()Ljava/lang/String;
 
-    move-result-object v2
+    move-result-object v3
 
-    new-instance v3, Ljava/lang/StringBuilder;
+    new-instance v4, Ljava/lang/StringBuilder;
 
-    const-string v4, "GoogleJsonResponseException:"
+    const-string v5, "GoogleJsonResponseException:"
 
-    invoke-direct {v3, v4}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+    invoke-direct {v4, v5}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
-    invoke-virtual {v3, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v4, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    move-result-object v2
+    move-result-object v3
 
-    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-virtual {v3}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    move-result-object v2
+    move-result-object v3
 
-    filled-new-array {v2}, [Ljava/lang/String;
-
-    move-result-object v2
+    aput-object v3, v2, v6
 
     invoke-static {v2}, Ljp/co/sony/mc/camera/util/CamLog;->e([Ljava/lang/String;)V
 
@@ -2576,10 +2562,6 @@
     invoke-virtual {v3}, Lcom/google/api/services/youtube/YouTube$LiveBroadcasts$List;->execute()Ljava/lang/Object;
 
     move-result-object v7
-
-    const-string v8, "execute(...)"
-
-    invoke-static {v7, v8}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
 
     check-cast v7, Lcom/google/api/services/youtube/model/LiveBroadcastListResponse;
     :try_end_1
@@ -2911,10 +2893,6 @@
     invoke-virtual {v0}, Lcom/google/api/services/youtube/YouTube$Builder;->build()Lcom/google/api/services/youtube/YouTube;
 
     move-result-object v0
-
-    const-string v1, "build(...)"
-
-    invoke-static {v0, v1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 82
     iput-object v0, p0, Ljp/co/sony/mc/camera/rtmp/YouTubeLiveStreamApi;->youtube:Lcom/google/api/services/youtube/YouTube;

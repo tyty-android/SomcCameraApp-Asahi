@@ -9,6 +9,7 @@
 # annotations
 .annotation system Ldalvik/annotation/AnnotationDefault;
     value = .subannotation Lorg/jetbrains/annotations/Contract;
+        mutates = ""
         pure = false
         value = ""
     .end subannotation
@@ -23,12 +24,16 @@
 
 .annotation runtime Ljava/lang/annotation/Target;
     value = {
-        .enum Ljava/lang/annotation/ElementType;->METHOD:Ljava/lang/annotation/ElementType;
+        .enum Ljava/lang/annotation/ElementType;->METHOD:Ljava/lang/annotation/ElementType;,
+        .enum Ljava/lang/annotation/ElementType;->CONSTRUCTOR:Ljava/lang/annotation/ElementType;
     }
 .end annotation
 
 
 # virtual methods
+.method public abstract mutates()Ljava/lang/String;
+.end method
+
 .method public abstract pure()Z
 .end method
 

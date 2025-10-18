@@ -58,11 +58,7 @@
 .end method
 
 .method public constructor <init>(Ljava/lang/String;Ljava/lang/Object;)V
-    .locals 1
-
-    const-string v0, "name"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+    .locals 0
 
     .line 63
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -118,10 +114,6 @@
 
 .method public final copy(Ljava/lang/String;Ljava/lang/Object;)Landroidx/compose/ui/platform/ValueElement;
     .locals 0
-
-    const-string p0, "name"
-
-    invoke-static {p1, p0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
     new-instance p0, Landroidx/compose/ui/platform/ValueElement;
 

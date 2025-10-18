@@ -13,9 +13,9 @@
 
 
 # instance fields
-.field private final mCallback13:Landroid/view/View$OnClickListener;
+.field private final mCallback3:Landroid/view/View$OnClickListener;
 
-.field private final mCallback14:Landroid/view/View$OnClickListener;
+.field private final mCallback4:Landroid/view/View$OnClickListener;
 
 .field private mDirtyFlags:J
 
@@ -181,16 +181,16 @@
     .line 54
     new-instance p2, Ljp/co/sony/mc/camera/generated/callback/OnClickListener;
 
-    invoke-direct {p2, p0, v0}, Ljp/co/sony/mc/camera/generated/callback/OnClickListener;-><init>(Ljp/co/sony/mc/camera/generated/callback/OnClickListener$Listener;I)V
-
-    iput-object p2, p0, Ljp/co/sony/mc/camera/databinding/FragmentStreamingModeRtmpBindingImpl;->mCallback14:Landroid/view/View$OnClickListener;
-
-    .line 55
-    new-instance p2, Ljp/co/sony/mc/camera/generated/callback/OnClickListener;
-
     invoke-direct {p2, p0, p1}, Ljp/co/sony/mc/camera/generated/callback/OnClickListener;-><init>(Ljp/co/sony/mc/camera/generated/callback/OnClickListener$Listener;I)V
 
-    iput-object p2, p0, Ljp/co/sony/mc/camera/databinding/FragmentStreamingModeRtmpBindingImpl;->mCallback13:Landroid/view/View$OnClickListener;
+    iput-object p2, p0, Ljp/co/sony/mc/camera/databinding/FragmentStreamingModeRtmpBindingImpl;->mCallback3:Landroid/view/View$OnClickListener;
+
+    .line 55
+    new-instance p1, Ljp/co/sony/mc/camera/generated/callback/OnClickListener;
+
+    invoke-direct {p1, p0, v0}, Ljp/co/sony/mc/camera/generated/callback/OnClickListener;-><init>(Ljp/co/sony/mc/camera/generated/callback/OnClickListener$Listener;I)V
+
+    iput-object p1, p0, Ljp/co/sony/mc/camera/databinding/FragmentStreamingModeRtmpBindingImpl;->mCallback4:Landroid/view/View$OnClickListener;
 
     .line 56
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/databinding/FragmentStreamingModeRtmpBindingImpl;->invalidateAll()V
@@ -213,24 +213,24 @@
 
     goto :goto_0
 
-    .line 134
+    .line 151
     :cond_0
     iget-object p0, p0, Ljp/co/sony/mc/camera/databinding/FragmentStreamingModeRtmpBindingImpl;->mStreamingUiState:Ljp/co/sony/mc/camera/view/uistate/StreamingUiState;
 
     if-eqz p0, :cond_2
 
-    .line 144
+    .line 161
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/view/uistate/StreamingUiState;->execRtmpStreamKey()V
 
     goto :goto_0
 
-    .line 151
+    .line 134
     :cond_1
     iget-object p0, p0, Ljp/co/sony/mc/camera/databinding/FragmentStreamingModeRtmpBindingImpl;->mStreamingUiState:Ljp/co/sony/mc/camera/view/uistate/StreamingUiState;
 
     if-eqz p0, :cond_2
 
-    .line 161
+    .line 144
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/view/uistate/StreamingUiState;->execRtmpStreamUrl()V
 
     :cond_2
@@ -272,14 +272,14 @@
     .line 123
     iget-object v0, p0, Ljp/co/sony/mc/camera/databinding/FragmentStreamingModeRtmpBindingImpl;->mboundView1:Landroid/widget/LinearLayout;
 
-    iget-object v1, p0, Ljp/co/sony/mc/camera/databinding/FragmentStreamingModeRtmpBindingImpl;->mCallback13:Landroid/view/View$OnClickListener;
+    iget-object v1, p0, Ljp/co/sony/mc/camera/databinding/FragmentStreamingModeRtmpBindingImpl;->mCallback3:Landroid/view/View$OnClickListener;
 
     invoke-virtual {v0, v1}, Landroid/widget/LinearLayout;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     .line 124
     iget-object v0, p0, Ljp/co/sony/mc/camera/databinding/FragmentStreamingModeRtmpBindingImpl;->mboundView2:Landroid/widget/LinearLayout;
 
-    iget-object p0, p0, Ljp/co/sony/mc/camera/databinding/FragmentStreamingModeRtmpBindingImpl;->mCallback14:Landroid/view/View$OnClickListener;
+    iget-object p0, p0, Ljp/co/sony/mc/camera/databinding/FragmentStreamingModeRtmpBindingImpl;->mCallback4:Landroid/view/View$OnClickListener;
 
     invoke-virtual {v0, p0}, Landroid/widget/LinearLayout;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
@@ -414,7 +414,7 @@
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    const/16 p1, 0x1e
+    const/16 p1, 0x20
 
     .line 97
     invoke-virtual {p0, p1}, Ljp/co/sony/mc/camera/databinding/FragmentStreamingModeRtmpBindingImpl;->notifyPropertyChanged(I)V
@@ -439,7 +439,7 @@
 .method public setVariable(ILjava/lang/Object;)Z
     .locals 1
 
-    const/16 v0, 0x1e
+    const/16 v0, 0x20
 
     if-ne v0, p1, :cond_0
 
@@ -451,7 +451,7 @@
     goto :goto_0
 
     :cond_0
-    const/4 v0, 0x4
+    const/4 v0, 0x5
 
     if-ne v0, p1, :cond_1
 

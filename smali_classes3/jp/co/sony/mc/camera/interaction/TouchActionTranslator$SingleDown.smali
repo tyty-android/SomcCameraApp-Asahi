@@ -25,7 +25,7 @@
 .method private constructor <init>(Ljp/co/sony/mc/camera/interaction/TouchActionTranslator;)V
     .locals 0
 
-    .line 321
+    .line 228
     iput-object p1, p0, Ljp/co/sony/mc/camera/interaction/TouchActionTranslator$SingleDown;->this$0:Ljp/co/sony/mc/camera/interaction/TouchActionTranslator;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -46,7 +46,7 @@
 .method public handleMotionEvent(Landroid/view/MotionEvent;)V
     .locals 6
 
-    .line 324
+    .line 231
     invoke-virtual {p1}, Landroid/view/MotionEvent;->getActionMasked()I
 
     move-result v0
@@ -73,7 +73,7 @@
 
     return-void
 
-    .line 346
+    .line 253
     :cond_0
     invoke-virtual {p1}, Landroid/view/MotionEvent;->getPointerCount()I
 
@@ -83,7 +83,7 @@
 
     return-void
 
-    .line 349
+    .line 256
     :cond_1
     iget-object v0, p0, Ljp/co/sony/mc/camera/interaction/TouchActionTranslator$SingleDown;->this$0:Ljp/co/sony/mc/camera/interaction/TouchActionTranslator;
 
@@ -93,7 +93,7 @@
 
     new-instance v4, Landroid/graphics/Point;
 
-    .line 350
+    .line 257
     invoke-virtual {p1, v1}, Landroid/view/MotionEvent;->getX(I)F
 
     move-result v5
@@ -110,7 +110,7 @@
 
     new-instance v1, Landroid/graphics/Point;
 
-    .line 351
+    .line 258
     invoke-virtual {p1, v3}, Landroid/view/MotionEvent;->getX(I)F
 
     move-result v5
@@ -125,10 +125,10 @@
 
     invoke-direct {v1, v5, p1}, Landroid/graphics/Point;-><init>(II)V
 
-    .line 349
+    .line 256
     invoke-interface {v0, v4, v1}, Ljp/co/sony/mc/camera/interaction/TouchActionTranslator$TouchActionListener;->onDoubleTouched(Landroid/graphics/Point;Landroid/graphics/Point;)V
 
-    .line 352
+    .line 259
     iget-object p1, p0, Ljp/co/sony/mc/camera/interaction/TouchActionTranslator$SingleDown;->this$0:Ljp/co/sony/mc/camera/interaction/TouchActionTranslator;
 
     new-instance v0, Ljp/co/sony/mc/camera/interaction/TouchActionTranslator$DoubleDown;
@@ -141,7 +141,7 @@
 
     return-void
 
-    .line 341
+    .line 248
     :cond_2
     iget-object p1, p0, Ljp/co/sony/mc/camera/interaction/TouchActionTranslator$SingleDown;->this$0:Ljp/co/sony/mc/camera/interaction/TouchActionTranslator;
 
@@ -151,7 +151,7 @@
 
     invoke-interface {p1}, Ljp/co/sony/mc/camera/interaction/TouchActionTranslator$TouchActionListener;->onSingleCanceled()V
 
-    .line 342
+    .line 249
     iget-object p1, p0, Ljp/co/sony/mc/camera/interaction/TouchActionTranslator$SingleDown;->this$0:Ljp/co/sony/mc/camera/interaction/TouchActionTranslator;
 
     new-instance v0, Ljp/co/sony/mc/camera/interaction/TouchActionTranslator$Idle;
@@ -164,7 +164,7 @@
 
     return-void
 
-    .line 327
+    .line 234
     :cond_3
     iget-object p1, p0, Ljp/co/sony/mc/camera/interaction/TouchActionTranslator$SingleDown;->this$0:Ljp/co/sony/mc/camera/interaction/TouchActionTranslator;
 
@@ -178,7 +178,7 @@
 
     return-void
 
-    .line 331
+    .line 238
     :cond_4
     iget-object v0, p0, Ljp/co/sony/mc/camera/interaction/TouchActionTranslator$SingleDown;->this$0:Ljp/co/sony/mc/camera/interaction/TouchActionTranslator;
 
@@ -188,7 +188,7 @@
 
     if-eqz v0, :cond_5
 
-    .line 332
+    .line 239
     iget-object v0, p0, Ljp/co/sony/mc/camera/interaction/TouchActionTranslator$SingleDown;->this$0:Ljp/co/sony/mc/camera/interaction/TouchActionTranslator;
 
     new-instance v1, Ljp/co/sony/mc/camera/interaction/TouchActionTranslator$SingleWaitRelease;
@@ -205,7 +205,7 @@
 
     goto :goto_0
 
-    .line 334
+    .line 241
     :cond_5
     iget-object v0, p0, Ljp/co/sony/mc/camera/interaction/TouchActionTranslator$SingleDown;->this$0:Ljp/co/sony/mc/camera/interaction/TouchActionTranslator;
 
@@ -215,7 +215,7 @@
 
     new-instance v3, Landroid/graphics/Point;
 
-    .line 335
+    .line 242
     invoke-virtual {p1, v1}, Landroid/view/MotionEvent;->getX(I)F
 
     move-result v4
@@ -230,10 +230,10 @@
 
     invoke-direct {v3, v4, p1}, Landroid/graphics/Point;-><init>(II)V
 
-    .line 334
+    .line 241
     invoke-interface {v0, v3}, Ljp/co/sony/mc/camera/interaction/TouchActionTranslator$TouchActionListener;->onSingleReleased(Landroid/graphics/Point;)V
 
-    .line 336
+    .line 243
     iget-object p1, p0, Ljp/co/sony/mc/camera/interaction/TouchActionTranslator$SingleDown;->this$0:Ljp/co/sony/mc/camera/interaction/TouchActionTranslator;
 
     new-instance v0, Ljp/co/sony/mc/camera/interaction/TouchActionTranslator$Idle;

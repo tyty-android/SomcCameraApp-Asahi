@@ -167,7 +167,7 @@
 .end method
 
 .method private static create(J)Landroid/graphics/Typeface;
-    .locals 3
+    .locals 2
 
     const/4 v0, 0x0
 
@@ -175,19 +175,15 @@
     :try_start_0
     sget-object v1, Landroidx/core/graphics/WeightTypefaceApi26;->sConstructor:Ljava/lang/reflect/Constructor;
 
-    const/4 v2, 0x1
-
-    new-array v2, v2, [Ljava/lang/Object;
-
     invoke-static {p0, p1}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
 
     move-result-object p0
 
-    const/4 p1, 0x0
+    filled-new-array {p0}, [Ljava/lang/Object;
 
-    aput-object p0, v2, p1
+    move-result-object p0
 
-    invoke-virtual {v1, v2}, Ljava/lang/reflect/Constructor;->newInstance([Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v1, p0}, Ljava/lang/reflect/Constructor;->newInstance([Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p0
 
@@ -347,45 +343,33 @@
 .end method
 
 .method private static nativeCreateFromTypefaceWithExactStyle(JIZ)J
-    .locals 2
+    .locals 1
 
     .line 138
     :try_start_0
     sget-object v0, Landroidx/core/graphics/WeightTypefaceApi26;->sNativeCreateFromTypefaceWithExactStyle:Ljava/lang/reflect/Method;
 
-    const/4 v1, 0x3
-
-    new-array v1, v1, [Ljava/lang/Object;
-
     invoke-static {p0, p1}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
+
+    move-result-object p0
+
+    .line 139
+    invoke-static {p2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object p1
+
+    invoke-static {p3}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
+
+    move-result-object p2
+
+    filled-new-array {p0, p1, p2}, [Ljava/lang/Object;
 
     move-result-object p0
 
     const/4 p1, 0x0
 
-    aput-object p0, v1, p1
-
-    .line 139
-    invoke-static {p2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
-
-    move-result-object p0
-
-    const/4 p1, 0x1
-
-    aput-object p0, v1, p1
-
-    invoke-static {p3}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
-
-    move-result-object p0
-
-    const/4 p1, 0x2
-
-    aput-object p0, v1, p1
-
-    const/4 p0, 0x0
-
     .line 138
-    invoke-virtual {v0, p0, v1}, Ljava/lang/reflect/Method;->invoke(Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v0, p1, p0}, Ljava/lang/reflect/Method;->invoke(Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p0
 

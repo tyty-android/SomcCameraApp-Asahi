@@ -76,7 +76,7 @@
 .method public final invoke()Landroidx/compose/ui/platform/ViewConfiguration;
     .locals 0
 
-    .line 173
+    .line 165
     const-string p0, "LocalViewConfiguration"
 
     invoke-static {p0}, Landroidx/compose/ui/platform/CompositionLocalsKt;->access$noLocalProvidedFor(Ljava/lang/String;)Ljava/lang/Void;
@@ -91,7 +91,7 @@
 .method public bridge synthetic invoke()Ljava/lang/Object;
     .locals 0
 
-    .line 172
+    .line 164
     invoke-virtual {p0}, Landroidx/compose/ui/platform/CompositionLocalsKt$LocalViewConfiguration$1;->invoke()Landroidx/compose/ui/platform/ViewConfiguration;
 
     move-result-object p0

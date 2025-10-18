@@ -25,8 +25,8 @@
     }
     k = 0x2
     mv = {
-        0x1,
-        0x9,
+        0x2,
+        0x0,
         0x0
     }
     xi = 0x30
@@ -126,7 +126,6 @@
 
     goto :goto_0
 
-    .line 48
     :cond_0
     new-instance p0, Lkotlin/NoWhenBranchMatchedException;
 

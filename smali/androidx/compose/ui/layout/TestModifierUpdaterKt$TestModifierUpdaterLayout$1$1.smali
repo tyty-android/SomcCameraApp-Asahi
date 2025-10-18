@@ -87,7 +87,7 @@
 .method public bridge synthetic invoke(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
 
-    .line 60
+    .line 61
     check-cast p1, Landroidx/compose/ui/node/LayoutNode;
 
     invoke-virtual {p0, p1}, Landroidx/compose/ui/layout/TestModifierUpdaterKt$TestModifierUpdaterLayout$1$1;->invoke(Landroidx/compose/ui/node/LayoutNode;)V
@@ -100,11 +100,7 @@
 .method public final invoke(Landroidx/compose/ui/node/LayoutNode;)V
     .locals 1
 
-    const-string v0, "$this$init"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 60
+    .line 61
     iget-object p0, p0, Landroidx/compose/ui/layout/TestModifierUpdaterKt$TestModifierUpdaterLayout$1$1;->$onAttached:Lkotlin/jvm/functions/Function1;
 
     new-instance v0, Landroidx/compose/ui/layout/TestModifierUpdater;

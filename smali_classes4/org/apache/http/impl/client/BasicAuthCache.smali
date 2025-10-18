@@ -77,7 +77,7 @@
 .method public clear()V
     .locals 0
 
-    .line 156
+    .line 154
     iget-object p0, p0, Lorg/apache/http/impl/client/BasicAuthCache;->map:Ljava/util/Map;
 
     invoke-interface {p0}, Ljava/util/Map;->clear()V
@@ -86,7 +86,7 @@
 .end method
 
 .method public get(Lorg/apache/http/HttpHost;)Lorg/apache/http/auth/AuthScheme;
-    .locals 2
+    .locals 1
 
     .line 124
     const-string v0, "HTTP host"
@@ -106,27 +106,25 @@
 
     check-cast p1, [B
 
-    const/4 v0, 0x0
-
-    if-eqz p1, :cond_1
+    if-eqz p1, :cond_0
 
     .line 128
     :try_start_0
-    new-instance v1, Ljava/io/ByteArrayInputStream;
+    new-instance v0, Ljava/io/ByteArrayInputStream;
 
-    invoke-direct {v1, p1}, Ljava/io/ByteArrayInputStream;-><init>([B)V
+    invoke-direct {v0, p1}, Ljava/io/ByteArrayInputStream;-><init>([B)V
 
     .line 129
     new-instance p1, Ljava/io/ObjectInputStream;
 
-    invoke-direct {p1, v1}, Ljava/io/ObjectInputStream;-><init>(Ljava/io/InputStream;)V
+    invoke-direct {p1, v0}, Ljava/io/ObjectInputStream;-><init>(Ljava/io/InputStream;)V
 
     .line 130
     invoke-virtual {p1}, Ljava/io/ObjectInputStream;->readObject()Ljava/lang/Object;
 
-    move-result-object v1
+    move-result-object v0
 
-    check-cast v1, Lorg/apache/http/auth/AuthScheme;
+    check-cast v0, Lorg/apache/http/auth/AuthScheme;
 
     .line 131
     invoke-virtual {p1}, Ljava/io/ObjectInputStream;->close()V
@@ -134,51 +132,53 @@
     .catch Ljava/io/IOException; {:try_start_0 .. :try_end_0} :catch_1
     .catch Ljava/lang/ClassNotFoundException; {:try_start_0 .. :try_end_0} :catch_0
 
-    return-object v1
+    return-object v0
 
     :catch_0
     move-exception p1
 
+    .line 138
+    iget-object v0, p0, Lorg/apache/http/impl/client/BasicAuthCache;->log:Lorg/apache/commons/logging/Log;
+
+    invoke-interface {v0}, Lorg/apache/commons/logging/Log;->isWarnEnabled()Z
+
+    move-result v0
+
+    if-eqz v0, :cond_0
+
     .line 139
-    iget-object v1, p0, Lorg/apache/http/impl/client/BasicAuthCache;->log:Lorg/apache/commons/logging/Log;
-
-    invoke-interface {v1}, Lorg/apache/commons/logging/Log;->isWarnEnabled()Z
-
-    move-result v1
-
-    if-eqz v1, :cond_0
-
-    .line 140
     iget-object p0, p0, Lorg/apache/http/impl/client/BasicAuthCache;->log:Lorg/apache/commons/logging/Log;
 
-    const-string v1, "Unexpected error while de-serializing auth scheme"
+    const-string v0, "Unexpected error while de-serializing auth scheme"
 
-    invoke-interface {p0, v1, p1}, Lorg/apache/commons/logging/Log;->warn(Ljava/lang/Object;Ljava/lang/Throwable;)V
+    invoke-interface {p0, v0, p1}, Lorg/apache/commons/logging/Log;->warn(Ljava/lang/Object;Ljava/lang/Throwable;)V
 
-    :cond_0
-    return-object v0
+    goto :goto_0
 
     :catch_1
     move-exception p1
 
     .line 134
-    iget-object v1, p0, Lorg/apache/http/impl/client/BasicAuthCache;->log:Lorg/apache/commons/logging/Log;
+    iget-object v0, p0, Lorg/apache/http/impl/client/BasicAuthCache;->log:Lorg/apache/commons/logging/Log;
 
-    invoke-interface {v1}, Lorg/apache/commons/logging/Log;->isWarnEnabled()Z
+    invoke-interface {v0}, Lorg/apache/commons/logging/Log;->isWarnEnabled()Z
 
-    move-result v1
+    move-result v0
 
-    if-eqz v1, :cond_1
+    if-eqz v0, :cond_0
 
     .line 135
     iget-object p0, p0, Lorg/apache/http/impl/client/BasicAuthCache;->log:Lorg/apache/commons/logging/Log;
 
-    const-string v1, "Unexpected I/O error while de-serializing auth scheme"
+    const-string v0, "Unexpected I/O error while de-serializing auth scheme"
 
-    invoke-interface {p0, v1, p1}, Lorg/apache/commons/logging/Log;->warn(Ljava/lang/Object;Ljava/lang/Throwable;)V
+    invoke-interface {p0, v0, p1}, Lorg/apache/commons/logging/Log;->warn(Ljava/lang/Object;Ljava/lang/Throwable;)V
 
-    :cond_1
-    return-object v0
+    :cond_0
+    :goto_0
+    const/4 p0, 0x0
+
+    return-object p0
 .end method
 
 .method protected getKey(Lorg/apache/http/HttpHost;)Lorg/apache/http/HttpHost;
@@ -341,12 +341,12 @@
 .method public remove(Lorg/apache/http/HttpHost;)V
     .locals 1
 
-    .line 150
+    .line 148
     const-string v0, "HTTP host"
 
     invoke-static {p1, v0}, Lorg/apache/http/util/Args;->notNull(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
 
-    .line 151
+    .line 149
     iget-object v0, p0, Lorg/apache/http/impl/client/BasicAuthCache;->map:Ljava/util/Map;
 
     invoke-virtual {p0, p1}, Lorg/apache/http/impl/client/BasicAuthCache;->getKey(Lorg/apache/http/HttpHost;)Lorg/apache/http/HttpHost;
@@ -361,7 +361,7 @@
 .method public toString()Ljava/lang/String;
     .locals 0
 
-    .line 161
+    .line 159
     iget-object p0, p0, Lorg/apache/http/impl/client/BasicAuthCache;->map:Ljava/util/Map;
 
     invoke-virtual {p0}, Ljava/lang/Object;->toString()Ljava/lang/String;

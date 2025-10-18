@@ -57,7 +57,7 @@
     .line 27
     new-instance v6, Ljp/co/sony/mc/camera/configuration/parameters/FrontSoftSkin;
 
-    const v4, 0x7f1103bf
+    const v4, 0x7f1103f4
 
     const/high16 v5, 0x3f000000    # 0.5f
 
@@ -76,7 +76,7 @@
     .line 31
     new-instance v0, Ljp/co/sony/mc/camera/configuration/parameters/FrontSoftSkin;
 
-    const v11, 0x7f1103be
+    const v11, 0x7f1103f3
 
     const/4 v12, 0x0
 
@@ -142,7 +142,7 @@
 
     move-result-object p0
 
-    const v0, 0x7f1104d8
+    const v0, 0x7f11050c
 
     .line 124
     invoke-virtual {p0, v0}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
@@ -192,7 +192,7 @@
 
     move-result-object p0
 
-    const p1, 0x7f1104d8
+    const p1, 0x7f11050c
 
     invoke-virtual {p0, p1}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 

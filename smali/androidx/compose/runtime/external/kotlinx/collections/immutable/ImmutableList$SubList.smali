@@ -81,7 +81,7 @@
 
 # direct methods
 .method public constructor <init>(Landroidx/compose/runtime/external/kotlinx/collections/immutable/ImmutableList;II)V
-    .locals 1
+    .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -89,10 +89,6 @@
             "+TE;>;II)V"
         }
     .end annotation
-
-    const-string/jumbo v0, "source"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 32
     invoke-direct {p0}, Lkotlin/collections/AbstractList;-><init>()V

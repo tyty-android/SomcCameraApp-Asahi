@@ -3,7 +3,7 @@
 .source "D8$$SyntheticClass"
 
 # interfaces
-.implements Landroid/view/View$OnClickListener;
+.implements Lkotlin/jvm/functions/Function0;
 
 
 # instance fields
@@ -24,13 +24,15 @@
 
 
 # virtual methods
-.method public final onClick(Landroid/view/View;)V
+.method public final invoke()Ljava/lang/Object;
     .locals 0
 
     .line 0
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/memoryrecall/fragment/MemoryRecallFragment$$ExternalSyntheticLambda0;->f$0:Ljp/co/sony/mc/camera/view/memoryrecall/fragment/MemoryRecallFragment;
 
-    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/view/memoryrecall/fragment/MemoryRecallFragment;->$r8$lambda$jYkLwgBFI5L6oOaDmif-BNyB13U(Ljp/co/sony/mc/camera/view/memoryrecall/fragment/MemoryRecallFragment;Landroid/view/View;)V
+    invoke-static {p0}, Ljp/co/sony/mc/camera/view/memoryrecall/fragment/MemoryRecallFragment;->$r8$lambda$nu5qDkdbsx0wK9dSzQFaeJknbj0(Ljp/co/sony/mc/camera/view/memoryrecall/fragment/MemoryRecallFragment;)Lkotlin/Unit;
 
-    return-void
+    move-result-object p0
+
+    return-object p0
 .end method

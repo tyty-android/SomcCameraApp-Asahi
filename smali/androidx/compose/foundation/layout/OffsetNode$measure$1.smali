@@ -87,14 +87,12 @@
 .end method
 
 .method public final invoke(Landroidx/compose/ui/layout/Placeable$PlacementScope;)V
-    .locals 9
+    .locals 16
 
-    const-string v1, "$this$layout"
-
-    invoke-static {p1, v1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+    move-object/from16 v0, p0
 
     .line 193
-    iget-object v1, p0, Landroidx/compose/foundation/layout/OffsetNode$measure$1;->this$0:Landroidx/compose/foundation/layout/OffsetNode;
+    iget-object v1, v0, Landroidx/compose/foundation/layout/OffsetNode$measure$1;->this$0:Landroidx/compose/foundation/layout/OffsetNode;
 
     invoke-virtual {v1}, Landroidx/compose/foundation/layout/OffsetNode;->getRtlAware()Z
 
@@ -103,23 +101,23 @@
     if-eqz v1, :cond_0
 
     .line 194
-    iget-object v3, p0, Landroidx/compose/foundation/layout/OffsetNode$measure$1;->$placeable:Landroidx/compose/ui/layout/Placeable;
+    iget-object v3, v0, Landroidx/compose/foundation/layout/OffsetNode$measure$1;->$placeable:Landroidx/compose/ui/layout/Placeable;
 
-    iget-object v1, p0, Landroidx/compose/foundation/layout/OffsetNode$measure$1;->$this_measure:Landroidx/compose/ui/layout/MeasureScope;
+    iget-object v1, v0, Landroidx/compose/foundation/layout/OffsetNode$measure$1;->$this_measure:Landroidx/compose/ui/layout/MeasureScope;
 
-    iget-object v4, p0, Landroidx/compose/foundation/layout/OffsetNode$measure$1;->this$0:Landroidx/compose/foundation/layout/OffsetNode;
+    iget-object v2, v0, Landroidx/compose/foundation/layout/OffsetNode$measure$1;->this$0:Landroidx/compose/foundation/layout/OffsetNode;
 
-    invoke-virtual {v4}, Landroidx/compose/foundation/layout/OffsetNode;->getX-D9Ej5fM()F
+    invoke-virtual {v2}, Landroidx/compose/foundation/layout/OffsetNode;->getX-D9Ej5fM()F
+
+    move-result v2
+
+    invoke-interface {v1, v2}, Landroidx/compose/ui/layout/MeasureScope;->roundToPx-0680j_4(F)I
 
     move-result v4
 
-    invoke-interface {v1, v4}, Landroidx/compose/ui/layout/MeasureScope;->roundToPx-0680j_4(F)I
+    iget-object v1, v0, Landroidx/compose/foundation/layout/OffsetNode$measure$1;->$this_measure:Landroidx/compose/ui/layout/MeasureScope;
 
-    move-result v4
-
-    iget-object v1, p0, Landroidx/compose/foundation/layout/OffsetNode$measure$1;->$this_measure:Landroidx/compose/ui/layout/MeasureScope;
-
-    iget-object v0, p0, Landroidx/compose/foundation/layout/OffsetNode$measure$1;->this$0:Landroidx/compose/foundation/layout/OffsetNode;
+    iget-object v0, v0, Landroidx/compose/foundation/layout/OffsetNode$measure$1;->this$0:Landroidx/compose/foundation/layout/OffsetNode;
 
     invoke-virtual {v0}, Landroidx/compose/foundation/layout/OffsetNode;->getY-D9Ej5fM()F
 
@@ -135,7 +133,7 @@
 
     const/4 v6, 0x0
 
-    move-object v2, p1
+    move-object/from16 v2, p1
 
     invoke-static/range {v2 .. v8}, Landroidx/compose/ui/layout/Placeable$PlacementScope;->placeRelative$default(Landroidx/compose/ui/layout/Placeable$PlacementScope;Landroidx/compose/ui/layout/Placeable;IIFILjava/lang/Object;)V
 
@@ -143,23 +141,23 @@
 
     .line 196
     :cond_0
-    iget-object v3, p0, Landroidx/compose/foundation/layout/OffsetNode$measure$1;->$placeable:Landroidx/compose/ui/layout/Placeable;
+    iget-object v10, v0, Landroidx/compose/foundation/layout/OffsetNode$measure$1;->$placeable:Landroidx/compose/ui/layout/Placeable;
 
-    iget-object v1, p0, Landroidx/compose/foundation/layout/OffsetNode$measure$1;->$this_measure:Landroidx/compose/ui/layout/MeasureScope;
+    iget-object v1, v0, Landroidx/compose/foundation/layout/OffsetNode$measure$1;->$this_measure:Landroidx/compose/ui/layout/MeasureScope;
 
-    iget-object v4, p0, Landroidx/compose/foundation/layout/OffsetNode$measure$1;->this$0:Landroidx/compose/foundation/layout/OffsetNode;
+    iget-object v2, v0, Landroidx/compose/foundation/layout/OffsetNode$measure$1;->this$0:Landroidx/compose/foundation/layout/OffsetNode;
 
-    invoke-virtual {v4}, Landroidx/compose/foundation/layout/OffsetNode;->getX-D9Ej5fM()F
+    invoke-virtual {v2}, Landroidx/compose/foundation/layout/OffsetNode;->getX-D9Ej5fM()F
 
-    move-result v4
+    move-result v2
 
-    invoke-interface {v1, v4}, Landroidx/compose/ui/layout/MeasureScope;->roundToPx-0680j_4(F)I
+    invoke-interface {v1, v2}, Landroidx/compose/ui/layout/MeasureScope;->roundToPx-0680j_4(F)I
 
-    move-result v4
+    move-result v11
 
-    iget-object v1, p0, Landroidx/compose/foundation/layout/OffsetNode$measure$1;->$this_measure:Landroidx/compose/ui/layout/MeasureScope;
+    iget-object v1, v0, Landroidx/compose/foundation/layout/OffsetNode$measure$1;->$this_measure:Landroidx/compose/ui/layout/MeasureScope;
 
-    iget-object v0, p0, Landroidx/compose/foundation/layout/OffsetNode$measure$1;->this$0:Landroidx/compose/foundation/layout/OffsetNode;
+    iget-object v0, v0, Landroidx/compose/foundation/layout/OffsetNode$measure$1;->this$0:Landroidx/compose/foundation/layout/OffsetNode;
 
     invoke-virtual {v0}, Landroidx/compose/foundation/layout/OffsetNode;->getY-D9Ej5fM()F
 
@@ -167,17 +165,17 @@
 
     invoke-interface {v1, v0}, Landroidx/compose/ui/layout/MeasureScope;->roundToPx-0680j_4(F)I
 
-    move-result v5
+    move-result v12
 
-    const/4 v7, 0x4
+    const/4 v14, 0x4
 
-    const/4 v8, 0x0
+    const/4 v15, 0x0
 
-    const/4 v6, 0x0
+    const/4 v13, 0x0
 
-    move-object v2, p1
+    move-object/from16 v9, p1
 
-    invoke-static/range {v2 .. v8}, Landroidx/compose/ui/layout/Placeable$PlacementScope;->place$default(Landroidx/compose/ui/layout/Placeable$PlacementScope;Landroidx/compose/ui/layout/Placeable;IIFILjava/lang/Object;)V
+    invoke-static/range {v9 .. v15}, Landroidx/compose/ui/layout/Placeable$PlacementScope;->place$default(Landroidx/compose/ui/layout/Placeable$PlacementScope;Landroidx/compose/ui/layout/Placeable;IIFILjava/lang/Object;)V
 
     :goto_0
     return-void

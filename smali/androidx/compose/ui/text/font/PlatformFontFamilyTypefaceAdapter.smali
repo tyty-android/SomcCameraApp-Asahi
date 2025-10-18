@@ -41,11 +41,21 @@
 .end annotation
 
 
+# static fields
+.field public static final $stable:I = 0x8
+
+
 # instance fields
 .field private final platformTypefaceResolver:Landroidx/compose/ui/text/font/PlatformTypefaces;
 
 
 # direct methods
+.method static constructor <clinit>()V
+    .locals 0
+
+    return-void
+.end method
+
 .method public constructor <init>()V
     .locals 1
 
@@ -53,7 +63,7 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 24
-    invoke-static {}, Landroidx/compose/ui/text/font/PlatformTypefacesKt;->PlatformTypefaces()Landroidx/compose/ui/text/font/PlatformTypefaces;
+    invoke-static {}, Landroidx/compose/ui/text/font/PlatformTypefaces_androidKt;->PlatformTypefaces()Landroidx/compose/ui/text/font/PlatformTypefaces;
 
     move-result-object v0
 
@@ -65,7 +75,7 @@
 
 # virtual methods
 .method public resolve(Landroidx/compose/ui/text/font/TypefaceRequest;Landroidx/compose/ui/text/font/PlatformFontLoader;Lkotlin/jvm/functions/Function1;Lkotlin/jvm/functions/Function1;)Landroidx/compose/ui/text/font/TypefaceResult;
-    .locals 1
+    .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -86,40 +96,26 @@
         }
     .end annotation
 
-    const-string/jumbo v0, "typefaceRequest"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string v0, "platformFontLoader"
-
-    invoke-static {p2, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string p2, "onAsyncCompletion"
-
-    invoke-static {p3, p2}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string p2, "createDefaultTypeface"
-
-    invoke-static {p4, p2}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
     .line 32
     invoke-virtual {p1}, Landroidx/compose/ui/text/font/TypefaceRequest;->getFontFamily()Landroidx/compose/ui/text/font/FontFamily;
 
     move-result-object p2
 
-    const/4 p3, 0x0
-
     if-nez p2, :cond_0
+
+    const/4 p3, 0x1
 
     goto :goto_0
 
     .line 33
     :cond_0
-    instance-of p4, p2, Landroidx/compose/ui/text/font/DefaultFontFamily;
-
-    if-eqz p4, :cond_1
+    instance-of p3, p2, Landroidx/compose/ui/text/font/DefaultFontFamily;
 
     :goto_0
+    const/4 p4, 0x0
+
+    if-eqz p3, :cond_1
+
     iget-object p0, p0, Landroidx/compose/ui/text/font/PlatformFontFamilyTypefaceAdapter;->platformTypefaceResolver:Landroidx/compose/ui/text/font/PlatformTypefaces;
 
     .line 34
@@ -141,9 +137,9 @@
 
     .line 37
     :cond_1
-    instance-of p4, p2, Landroidx/compose/ui/text/font/GenericFontFamily;
+    instance-of p3, p2, Landroidx/compose/ui/text/font/GenericFontFamily;
 
-    if-eqz p4, :cond_2
+    if-eqz p3, :cond_2
 
     iget-object p0, p0, Landroidx/compose/ui/text/font/PlatformFontFamilyTypefaceAdapter;->platformTypefaceResolver:Landroidx/compose/ui/text/font/PlatformTypefaces;
 
@@ -157,7 +153,7 @@
     .line 39
     invoke-virtual {p1}, Landroidx/compose/ui/text/font/TypefaceRequest;->getFontWeight()Landroidx/compose/ui/text/font/FontWeight;
 
-    move-result-object p4
+    move-result-object p3
 
     .line 40
     invoke-virtual {p1}, Landroidx/compose/ui/text/font/TypefaceRequest;->getFontStyle-_-LCdwA()I
@@ -165,7 +161,7 @@
     move-result p1
 
     .line 37
-    invoke-interface {p0, p2, p4, p1}, Landroidx/compose/ui/text/font/PlatformTypefaces;->createNamed-RetOiIg(Landroidx/compose/ui/text/font/GenericFontFamily;Landroidx/compose/ui/text/font/FontWeight;I)Landroid/graphics/Typeface;
+    invoke-interface {p0, p2, p3, p1}, Landroidx/compose/ui/text/font/PlatformTypefaces;->createNamed-RetOiIg(Landroidx/compose/ui/text/font/GenericFontFamily;Landroidx/compose/ui/text/font/FontWeight;I)Landroid/graphics/Typeface;
 
     move-result-object p0
 
@@ -202,7 +198,7 @@
     .line 45
     invoke-virtual {p1}, Landroidx/compose/ui/text/font/TypefaceRequest;->getFontStyle-_-LCdwA()I
 
-    move-result p4
+    move-result p3
 
     .line 46
     invoke-virtual {p1}, Landroidx/compose/ui/text/font/TypefaceRequest;->getFontSynthesis-GVVA2EU()I
@@ -210,7 +206,7 @@
     move-result p1
 
     .line 43
-    invoke-interface {p0, p2, p4, p1}, Landroidx/compose/ui/text/platform/AndroidTypeface;->getNativeTypeface-PYhJU0U(Landroidx/compose/ui/text/font/FontWeight;II)Landroid/graphics/Typeface;
+    invoke-interface {p0, p2, p3, p1}, Landroidx/compose/ui/text/platform/AndroidTypeface;->getNativeTypeface-PYhJU0U(Landroidx/compose/ui/text/font/FontWeight;II)Landroid/graphics/Typeface;
 
     move-result-object p0
 
@@ -220,14 +216,14 @@
 
     const/4 p2, 0x0
 
-    const/4 p4, 0x2
+    const/4 p3, 0x2
 
-    invoke-direct {p1, p0, p2, p4, p3}, Landroidx/compose/ui/text/font/TypefaceResult$Immutable;-><init>(Ljava/lang/Object;ZILkotlin/jvm/internal/DefaultConstructorMarker;)V
+    invoke-direct {p1, p0, p2, p3, p4}, Landroidx/compose/ui/text/font/TypefaceResult$Immutable;-><init>(Ljava/lang/Object;ZILkotlin/jvm/internal/DefaultConstructorMarker;)V
 
     check-cast p1, Landroidx/compose/ui/text/font/TypefaceResult;
 
     return-object p1
 
     :cond_3
-    return-object p3
+    return-object p4
 .end method

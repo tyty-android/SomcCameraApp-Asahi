@@ -49,10 +49,10 @@
 .method public constructor <init>()V
     .locals 1
 
-    .line 356
+    .line 357
     invoke-direct {p0}, Landroidx/compose/ui/Modifier$Node;-><init>()V
 
-    .line 358
+    .line 359
     new-instance v0, Landroidx/compose/ui/semantics/SemanticsConfiguration;
 
     invoke-direct {v0}, Landroidx/compose/ui/semantics/SemanticsConfiguration;-><init>()V
@@ -67,16 +67,12 @@
 .method public applySemantics(Landroidx/compose/ui/semantics/SemanticsPropertyReceiver;)V
     .locals 2
 
-    const-string v0, "<this>"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 367
+    .line 368
     iget-boolean v0, p0, Landroidx/compose/foundation/FocusableSemanticsNode;->isFocused:Z
 
     invoke-static {p1, v0}, Landroidx/compose/ui/semantics/SemanticsPropertiesKt;->setFocused(Landroidx/compose/ui/semantics/SemanticsPropertyReceiver;Z)V
 
-    .line 368
+    .line 369
     new-instance v0, Landroidx/compose/foundation/FocusableSemanticsNode$applySemantics$1;
 
     invoke-direct {v0, p0}, Landroidx/compose/foundation/FocusableSemanticsNode$applySemantics$1;-><init>(Landroidx/compose/foundation/FocusableSemanticsNode;)V
@@ -95,7 +91,7 @@
 .method public final setFocus(Z)V
     .locals 0
 
-    .line 363
+    .line 364
     iput-boolean p1, p0, Landroidx/compose/foundation/FocusableSemanticsNode;->isFocused:Z
 
     return-void

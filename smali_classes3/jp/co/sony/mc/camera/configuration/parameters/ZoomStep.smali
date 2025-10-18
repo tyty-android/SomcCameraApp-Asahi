@@ -76,7 +76,7 @@
 
     int-to-float p0, p0
 
-    .line 149
+    .line 150
     sget v0, Ljp/co/sony/mc/camera/configuration/parameters/ZoomStep;->ZOOM_MAGNIFICATION_COEFFICIENT:F
 
     mul-float/2addr p0, v0
@@ -99,7 +99,7 @@
 .method private static calcZoomStep(D)D
     .locals 2
 
-    .line 145
+    .line 146
     invoke-static {p0, p1}, Ljava/lang/Math;->log10(D)D
 
     move-result-wide p0
@@ -120,7 +120,7 @@
 .method public static getMaxZoomStep(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;FZLjp/co/sony/mc/camera/configuration/parameters/VideoMfHdr;Z)I
     .locals 4
 
-    .line 69
+    .line 70
     invoke-virtual {p4}, Ljp/co/sony/mc/camera/configuration/parameters/VideoMfHdr;->getBooleanValue()Z
 
     move-result v0
@@ -129,7 +129,7 @@
 
     if-eqz v0, :cond_0
 
-    .line 70
+    .line 71
     invoke-static {p1}, Ljp/co/sony/mc/camera/util/capability/PlatformCapability;->isHybridZoomSupported(Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;)Z
 
     move-result v0
@@ -138,7 +138,7 @@
 
     sget-object v0, Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;->TELE:Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;
 
-    .line 71
+    .line 72
     invoke-static {v0}, Ljp/co/sony/mc/camera/util/capability/PlatformCapability;->isCameraSupported(Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;)Z
 
     move-result v0
@@ -146,18 +146,13 @@
     if-nez v0, :cond_0
 
     .line 73
-    invoke-virtual {p0}, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->isProVideo()Z
-
-    move-result v0
-
-    .line 72
-    invoke-static {p1, v1, p4, p5, v0}, Ljp/co/sony/mc/camera/util/capability/CameraSensorInfo;->getMaxZoomRatio(Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;ZLjp/co/sony/mc/camera/configuration/parameters/VideoMfHdr;ZZ)F
+    invoke-static {p0, p1, v1, p4, p5}, Ljp/co/sony/mc/camera/util/capability/CameraSensorInfo;->getMaxZoomRatio(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;ZLjp/co/sony/mc/camera/configuration/parameters/VideoMfHdr;Z)F
 
     move-result v0
 
     goto :goto_0
 
-    .line 75
+    .line 76
     :cond_0
     invoke-static {p1}, Ljp/co/sony/mc/camera/util/capability/PlatformCapability;->getMaxZoomRatio(Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;)F
 
@@ -166,7 +161,7 @@
     :goto_0
     float-to-double v2, v0
 
-    .line 77
+    .line 78
     invoke-static {v2, v3}, Ljp/co/sony/mc/camera/configuration/parameters/ZoomStep;->calcZoomStep(D)D
 
     move-result-wide v2
@@ -177,7 +172,7 @@
 
     double-to-int v0, v2
 
-    .line 79
+    .line 80
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->isBasicLayoutMode()Z
 
     move-result v2
@@ -186,7 +181,7 @@
 
     sget-object v2, Ljp/co/sony/mc/camera/debug/DebugParameterUtils;->INSTANCE:Ljp/co/sony/mc/camera/debug/DebugParameterUtils;
 
-    .line 80
+    .line 81
     invoke-static {}, Ljp/co/sony/mc/camera/CameraApplication;->getContext()Landroid/content/Context;
 
     move-result-object v3
@@ -199,7 +194,7 @@
 
     return v0
 
-    .line 84
+    .line 85
     :cond_1
     invoke-static {p0, p1, p2, p4, p5}, Ljp/co/sony/mc/camera/configuration/parameters/ZoomRatio;->getMaxZoomRatio(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;FLjp/co/sony/mc/camera/configuration/parameters/VideoMfHdr;Z)F
 
@@ -207,21 +202,39 @@
 
     if-eqz p3, :cond_3
 
-    .line 87
-    invoke-static {p1, p4, p5}, Ljp/co/sony/mc/camera/util/capability/PlatformCapability;->isOpticalZoomSupported(Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;Ljp/co/sony/mc/camera/configuration/parameters/VideoMfHdr;Z)Z
+    .line 89
+    invoke-virtual {p0}, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->isAutoFraming()Z
+
+    move-result p3
+
+    invoke-virtual {p0}, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->isGimbal()Z
+
+    move-result v0
+
+    .line 88
+    invoke-static {p1, p4, p5, p3, v0}, Ljp/co/sony/mc/camera/util/capability/PlatformCapability;->isOpticalZoomSupported(Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;Ljp/co/sony/mc/camera/configuration/parameters/VideoMfHdr;ZZZ)Z
+
+    move-result p3
+
+    if-eqz p3, :cond_2
+
+    .line 91
+    invoke-virtual {p0}, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->isAutoFraming()Z
+
+    move-result p2
+
+    invoke-virtual {p0}, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->isGimbal()Z
 
     move-result p0
 
-    if-eqz p0, :cond_2
-
-    .line 88
-    invoke-static {p1, p4, p5}, Ljp/co/sony/mc/camera/util/capability/PlatformCapability;->getOpticalZoomRatioRange(Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;Ljp/co/sony/mc/camera/configuration/parameters/VideoMfHdr;Z)Ljava/util/List;
+    .line 90
+    invoke-static {p1, p4, p5, p2, p0}, Ljp/co/sony/mc/camera/util/capability/PlatformCapability;->getOpticalZoomRatioRange(Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;Ljp/co/sony/mc/camera/configuration/parameters/VideoMfHdr;ZZZ)Ljava/util/List;
 
     move-result-object p0
 
     const/4 p1, 0x0
 
-    .line 89
+    .line 91
     invoke-interface {p0, p1}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
     move-result-object p0
@@ -238,21 +251,21 @@
 
     move-result p0
 
-    .line 88
+    .line 90
     invoke-static {p0}, Ljp/co/sony/mc/camera/configuration/parameters/ZoomStep;->getZoomStep(F)I
 
     move-result p0
 
     return p0
 
-    .line 92
+    .line 94
     :cond_2
     invoke-static {p1, p2}, Ljp/co/sony/mc/camera/configuration/parameters/ZoomRatio;->isInHybridZoomRange(Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;F)Z
 
-    move-result p0
+    move-result p2
 
-    .line 91
-    invoke-static {p1, p0, p4, p5}, Ljp/co/sony/mc/camera/configuration/parameters/ZoomRatio;->getMinZoomRatio(Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;ZLjp/co/sony/mc/camera/configuration/parameters/VideoMfHdr;Z)F
+    .line 93
+    invoke-static {p0, p1, p2, p4, p5}, Ljp/co/sony/mc/camera/configuration/parameters/ZoomRatio;->getMinZoomRatio(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;ZLjp/co/sony/mc/camera/configuration/parameters/VideoMfHdr;Z)F
 
     move-result p0
 
@@ -262,7 +275,7 @@
 
     return p0
 
-    .line 95
+    .line 96
     :cond_3
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->isMacro()Z
 
@@ -270,7 +283,7 @@
 
     if-eqz p3, :cond_4
 
-    .line 96
+    .line 97
     invoke-static {p1}, Ljp/co/sony/mc/camera/util/capability/PlatformCapability;->getMacroModeZoomRatioRange(Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;)Landroid/util/Range;
 
     move-result-object p0
@@ -291,13 +304,13 @@
 
     return p0
 
-    .line 98
+    .line 99
     :cond_4
     sget-object p3, Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;->TELE_PHYSICAL:Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;
 
     if-eq p1, p3, :cond_8
 
-    .line 99
+    .line 100
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->isProVideo()Z
 
     move-result p0
@@ -312,7 +325,7 @@
 
     goto :goto_2
 
-    .line 101
+    .line 102
     :cond_5
     sget-object p0, Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;->BACK:Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;
 
@@ -324,7 +337,7 @@
 
     sget-object p0, Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;->TELE:Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;
 
-    .line 103
+    .line 104
     invoke-static {p0}, Ljp/co/sony/mc/camera/util/capability/PlatformCapability;->isCameraSupported(Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;)Z
 
     move-result p0
@@ -333,7 +346,7 @@
 
     sget-object p0, Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;->WIDE:Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;
 
-    .line 104
+    .line 105
     invoke-static {p0, p2}, Ljp/co/sony/mc/camera/configuration/parameters/ZoomRatio;->isInHybridZoomRange(Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;F)Z
 
     move-result p0
@@ -342,7 +355,7 @@
 
     goto :goto_1
 
-    .line 108
+    .line 109
     :cond_6
     invoke-static {v0}, Ljp/co/sony/mc/camera/configuration/parameters/ZoomStep;->getZoomStep(F)I
 
@@ -352,7 +365,7 @@
 
     return p0
 
-    .line 106
+    .line 107
     :cond_7
     :goto_1
     invoke-static {v0}, Ljp/co/sony/mc/camera/configuration/parameters/ZoomStep;->getZoomStep(F)I
@@ -361,7 +374,7 @@
 
     return p0
 
-    .line 100
+    .line 101
     :cond_8
     :goto_2
     invoke-static {v0}, Ljp/co/sony/mc/camera/configuration/parameters/ZoomStep;->getZoomStep(F)I
@@ -373,26 +386,44 @@
     return p0
 .end method
 
-.method public static getMinZoomStep(Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;ZZZLjp/co/sony/mc/camera/configuration/parameters/VideoMfHdr;Z)I
-    .locals 0
+.method public static getMinZoomStep(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;ZZLjp/co/sony/mc/camera/configuration/parameters/VideoMfHdr;Z)I
+    .locals 1
 
-    if-eqz p1, :cond_0
-
-    .line 49
-    invoke-static {p0, p4, p5}, Ljp/co/sony/mc/camera/util/capability/PlatformCapability;->isOpticalZoomSupported(Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;Ljp/co/sony/mc/camera/configuration/parameters/VideoMfHdr;Z)Z
-
-    move-result p1
-
-    if-eqz p1, :cond_0
+    if-eqz p2, :cond_0
 
     .line 50
-    invoke-static {p0, p4, p5}, Ljp/co/sony/mc/camera/util/capability/PlatformCapability;->getOpticalZoomRatioRange(Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;Ljp/co/sony/mc/camera/configuration/parameters/VideoMfHdr;Z)Ljava/util/List;
+    invoke-virtual {p0}, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->isAutoFraming()Z
+
+    move-result p2
+
+    invoke-virtual {p0}, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->isGimbal()Z
+
+    move-result v0
+
+    .line 49
+    invoke-static {p1, p4, p5, p2, v0}, Ljp/co/sony/mc/camera/util/capability/PlatformCapability;->isOpticalZoomSupported(Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;Ljp/co/sony/mc/camera/configuration/parameters/VideoMfHdr;ZZZ)Z
+
+    move-result p2
+
+    if-eqz p2, :cond_0
+
+    .line 52
+    invoke-virtual {p0}, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->isAutoFraming()Z
+
+    move-result p2
+
+    invoke-virtual {p0}, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->isGimbal()Z
+
+    move-result p0
+
+    .line 51
+    invoke-static {p1, p4, p5, p2, p0}, Ljp/co/sony/mc/camera/util/capability/PlatformCapability;->getOpticalZoomRatioRange(Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;Ljp/co/sony/mc/camera/configuration/parameters/VideoMfHdr;ZZZ)Ljava/util/List;
 
     move-result-object p0
 
     const/4 p1, 0x0
 
-    .line 51
+    .line 52
     invoke-interface {p0, p1}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
     move-result-object p0
@@ -409,18 +440,23 @@
 
     move-result p0
 
-    .line 50
+    .line 51
     invoke-static {p0}, Ljp/co/sony/mc/camera/configuration/parameters/ZoomStep;->getZoomStep(F)I
 
     move-result p0
 
     return p0
 
-    :cond_0
-    if-eqz p3, :cond_1
-
     .line 53
-    invoke-static {p0}, Ljp/co/sony/mc/camera/util/capability/PlatformCapability;->getMacroModeZoomRatioRange(Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;)Landroid/util/Range;
+    :cond_0
+    invoke-virtual {p0}, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->isMacro()Z
+
+    move-result p2
+
+    if-eqz p2, :cond_1
+
+    .line 54
+    invoke-static {p1}, Ljp/co/sony/mc/camera/util/capability/PlatformCapability;->getMacroModeZoomRatioRange(Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;)Landroid/util/Range;
 
     move-result-object p0
 
@@ -440,9 +476,9 @@
 
     return p0
 
-    .line 55
+    .line 56
     :cond_1
-    invoke-static {p0, p2, p4, p5}, Ljp/co/sony/mc/camera/configuration/parameters/ZoomRatio;->getMinZoomRatio(Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;ZLjp/co/sony/mc/camera/configuration/parameters/VideoMfHdr;Z)F
+    invoke-static {p0, p1, p3, p4, p5}, Ljp/co/sony/mc/camera/configuration/parameters/ZoomRatio;->getMinZoomRatio(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;ZLjp/co/sony/mc/camera/configuration/parameters/VideoMfHdr;Z)F
 
     move-result p0
 
@@ -465,28 +501,28 @@
         }
     .end annotation
 
-    .line 197
+    .line 199
     sget-object v0, Ljp/co/sony/mc/camera/configuration/parameters/ZoomStep;->OPTICAL_ZOOM_STEP_MAP:Ljava/util/HashMap;
 
     if-nez v0, :cond_1
 
-    .line 198
+    .line 200
     sget-object v0, Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;->BACK:Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;
 
     sget-object v1, Ljp/co/sony/mc/camera/configuration/parameters/VideoMfHdr;->MF_HDR_OFF:Ljp/co/sony/mc/camera/configuration/parameters/VideoMfHdr;
 
     const/4 v2, 0x0
 
-    invoke-static {v0, v1, v2}, Ljp/co/sony/mc/camera/util/capability/PlatformCapability;->getSwitchPointZoomRatio(Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;Ljp/co/sony/mc/camera/configuration/parameters/VideoMfHdr;Z)Ljava/util/List;
+    invoke-static {v0, v1, v2, v2, v2}, Ljp/co/sony/mc/camera/util/capability/PlatformCapability;->getSwitchPointZoomRatio(Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;Ljp/co/sony/mc/camera/configuration/parameters/VideoMfHdr;ZZZ)Ljava/util/List;
 
     move-result-object v0
 
-    .line 200
+    .line 202
     new-instance v1, Ljava/util/HashMap;
 
     invoke-direct {v1}, Ljava/util/HashMap;-><init>()V
 
-    .line 201
+    .line 203
     invoke-interface {v0}, Ljava/util/List;->iterator()Ljava/util/Iterator;
 
     move-result-object v0
@@ -504,7 +540,7 @@
 
     check-cast v2, Ljava/lang/Float;
 
-    .line 202
+    .line 204
     invoke-virtual {v2}, Ljava/lang/Float;->floatValue()F
 
     move-result v3
@@ -521,11 +557,11 @@
 
     goto :goto_0
 
-    .line 204
+    .line 206
     :cond_0
     sput-object v1, Ljp/co/sony/mc/camera/configuration/parameters/ZoomStep;->OPTICAL_ZOOM_STEP_MAP:Ljava/util/HashMap;
 
-    .line 207
+    .line 209
     :cond_1
     sget-object v0, Ljp/co/sony/mc/camera/configuration/parameters/ZoomStep;->OPTICAL_ZOOM_STEP_MAP:Ljava/util/HashMap;
 
@@ -535,12 +571,12 @@
 .method public static getZoomRatio(I)F
     .locals 2
 
-    .line 119
+    .line 120
     invoke-static {}, Ljp/co/sony/mc/camera/configuration/parameters/ZoomStep;->getOpticalZoomStepMap()Ljava/util/HashMap;
 
     move-result-object v0
 
-    .line 120
+    .line 121
     invoke-static {p0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object v1
@@ -551,7 +587,7 @@
 
     if-eqz v1, :cond_0
 
-    .line 121
+    .line 122
     invoke-static {p0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object p0
@@ -568,7 +604,7 @@
 
     return p0
 
-    .line 123
+    .line 124
     :cond_0
     invoke-static {p0}, Ljp/co/sony/mc/camera/configuration/parameters/ZoomStep;->calcRatio(I)D
 
@@ -582,54 +618,49 @@
 .method public static getZoomRatioLabel(Ljava/lang/Float;Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;ZLjp/co/sony/mc/camera/configuration/parameters/VideoMfHdr;)Ljava/lang/String;
     .locals 3
 
-    .line 159
+    .line 160
     invoke-virtual {p1}, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->isPro()Z
 
     move-result v0
 
     if-eqz v0, :cond_3
 
-    .line 160
+    .line 162
     invoke-virtual {p0}, Ljava/lang/Float;->floatValue()F
 
     move-result v0
 
-    invoke-static {p2, v0, p4, p1, p3}, Ljp/co/sony/mc/camera/configuration/parameters/ZoomRatio;->convertToDisplayRatio(Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;FLjp/co/sony/mc/camera/configuration/parameters/VideoMfHdr;Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Z)F
+    .line 161
+    invoke-static {p1, p2, v0, p4, p3}, Ljp/co/sony/mc/camera/configuration/parameters/ZoomRatio;->convertToDisplayRatio(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;FLjp/co/sony/mc/camera/configuration/parameters/VideoMfHdr;Z)F
 
     move-result v0
 
-    .line 162
+    .line 163
     sget-object v1, Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;->WIDE:Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;
 
     const/high16 v2, 0x3f800000    # 1.0f
 
-    .line 163
-    invoke-virtual {p1}, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->isProVideo()Z
+    invoke-static {p1, v1, v2, p4, p3}, Ljp/co/sony/mc/camera/util/capability/CameraSensorInfo;->getMinFocalLengthFromZoomRatio(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;FLjp/co/sony/mc/camera/configuration/parameters/VideoMfHdr;Z)I
 
-    move-result p1
+    move-result v1
 
-    .line 162
-    invoke-static {v1, v2, p4, p3, p1}, Ljp/co/sony/mc/camera/util/capability/CameraSensorInfo;->getMinFocalLengthFromZoomRatio(Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;FLjp/co/sony/mc/camera/configuration/parameters/VideoMfHdr;ZZ)I
+    int-to-float v1, v1
 
-    move-result p1
+    .line 174
+    sget-object v2, Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;->TELE:Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;
 
-    int-to-float p1, p1
+    if-eq p2, v2, :cond_1
 
-    .line 173
-    sget-object v1, Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;->TELE:Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;
+    sget-object v2, Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;->TELE_PHYSICAL:Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;
 
-    if-eq p2, v1, :cond_1
-
-    sget-object v1, Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;->TELE_PHYSICAL:Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;
-
-    if-ne p2, v1, :cond_0
+    if-ne p2, v2, :cond_0
 
     goto :goto_0
 
     :cond_0
-    mul-float/2addr v0, p1
+    mul-float/2addr v0, v1
 
-    .line 183
+    .line 185
     invoke-static {v0}, Ljava/lang/Math;->round(F)I
 
     move-result p0
@@ -640,45 +671,54 @@
 
     return-object p0
 
-    .line 176
+    .line 178
     :cond_1
     :goto_0
-    invoke-static {p2, p4, p3}, Ljp/co/sony/mc/camera/util/capability/PlatformCapability;->getOpticalZoomRatioRange(Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;Ljp/co/sony/mc/camera/configuration/parameters/VideoMfHdr;Z)Ljava/util/List;
+    invoke-virtual {p1}, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->isAutoFraming()Z
 
-    move-result-object p2
+    move-result v2
+
+    invoke-virtual {p1}, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->isGimbal()Z
+
+    move-result p1
 
     .line 177
+    invoke-static {p2, p4, p3, v2, p1}, Ljp/co/sony/mc/camera/util/capability/PlatformCapability;->getOpticalZoomRatioRange(Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;Ljp/co/sony/mc/camera/configuration/parameters/VideoMfHdr;ZZZ)Ljava/util/List;
+
+    move-result-object p1
+
+    .line 179
     invoke-virtual {p0}, Ljava/lang/Float;->floatValue()F
 
     move-result p0
 
-    const/4 p3, 0x0
+    const/4 p2, 0x0
 
-    invoke-interface {p2, p3}, Ljava/util/List;->get(I)Ljava/lang/Object;
+    invoke-interface {p1, p2}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
-    move-result-object p2
+    move-result-object p1
 
-    check-cast p2, Landroid/util/Range;
+    check-cast p1, Landroid/util/Range;
 
-    invoke-virtual {p2}, Landroid/util/Range;->getUpper()Ljava/lang/Comparable;
+    invoke-virtual {p1}, Landroid/util/Range;->getUpper()Ljava/lang/Comparable;
 
-    move-result-object p2
+    move-result-object p1
 
-    check-cast p2, Ljava/lang/Float;
+    check-cast p1, Ljava/lang/Float;
 
-    invoke-virtual {p2}, Ljava/lang/Float;->floatValue()F
+    invoke-virtual {p1}, Ljava/lang/Float;->floatValue()F
 
-    move-result p2
+    move-result p1
 
-    cmpl-float p0, p0, p2
+    cmpl-float p0, p0, p1
 
     if-lez p0, :cond_2
 
-    mul-float/2addr v0, p1
+    mul-float/2addr v0, v1
 
     float-to-double p0, v0
 
-    .line 178
+    .line 180
     invoke-static {p0, p1}, Ljava/lang/Math;->floor(D)D
 
     move-result-wide p0
@@ -692,9 +732,9 @@
     return-object p0
 
     :cond_2
-    mul-float/2addr v0, p1
+    mul-float/2addr v0, v1
 
-    .line 180
+    .line 182
     invoke-static {v0}, Ljava/lang/Math;->round(F)I
 
     move-result p0
@@ -705,7 +745,7 @@
 
     return-object p0
 
-    .line 185
+    .line 187
     :cond_3
     invoke-virtual {p1}, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->isMacro()Z
 
@@ -713,7 +753,7 @@
 
     if-eqz v0, :cond_4
 
-    .line 187
+    .line 189
     invoke-static {p2}, Ljp/co/sony/mc/camera/util/capability/PlatformCapability;->getMacroModeZoomRatioRange(Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;)Landroid/util/Range;
 
     move-result-object v0
@@ -729,18 +769,13 @@
     move-result v0
 
     .line 188
-    invoke-virtual {p1}, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->isProVideo()Z
-
-    move-result p1
-
-    .line 186
-    invoke-static {p2, v0, p4, p3, p1}, Ljp/co/sony/mc/camera/util/capability/CameraSensorInfo;->getMinFocalLengthFromZoomRatio(Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;FLjp/co/sony/mc/camera/configuration/parameters/VideoMfHdr;ZZ)I
+    invoke-static {p1, p2, v0, p4, p3}, Ljp/co/sony/mc/camera/util/capability/CameraSensorInfo;->getMinFocalLengthFromZoomRatio(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;FLjp/co/sony/mc/camera/configuration/parameters/VideoMfHdr;Z)I
 
     move-result p1
 
     int-to-float p1, p1
 
-    .line 189
+    .line 191
     invoke-virtual {p0}, Ljava/lang/Float;->floatValue()F
 
     move-result p0
@@ -757,17 +792,17 @@
 
     return-object p0
 
-    .line 191
+    .line 193
     :cond_4
     sget-object v0, Ljava/util/Locale;->US:Ljava/util/Locale;
 
-    .line 192
+    .line 194
     invoke-virtual {p0}, Ljava/lang/Float;->floatValue()F
 
     move-result p0
 
-    .line 191
-    invoke-static {p2, p0, p4, p1, p3}, Ljp/co/sony/mc/camera/configuration/parameters/ZoomRatio;->convertToDisplayRatio(Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;FLjp/co/sony/mc/camera/configuration/parameters/VideoMfHdr;Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Z)F
+    .line 193
+    invoke-static {p1, p2, p0, p4, p3}, Ljp/co/sony/mc/camera/configuration/parameters/ZoomRatio;->convertToDisplayRatio(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;FLjp/co/sony/mc/camera/configuration/parameters/VideoMfHdr;Z)F
 
     move-result p0
 
@@ -793,7 +828,7 @@
 
     float-to-double v0, p0
 
-    .line 141
+    .line 142
     invoke-static {v0, v1}, Ljp/co/sony/mc/camera/configuration/parameters/ZoomStep;->calcZoomStep(D)D
 
     move-result-wide v0
@@ -812,7 +847,7 @@
 
     float-to-double v0, p0
 
-    .line 132
+    .line 133
     invoke-static {v0, v1}, Ljp/co/sony/mc/camera/configuration/parameters/ZoomStep;->calcZoomStep(D)D
 
     move-result-wide v0

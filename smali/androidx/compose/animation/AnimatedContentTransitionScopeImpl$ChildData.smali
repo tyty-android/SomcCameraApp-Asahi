@@ -52,15 +52,25 @@
 .end annotation
 
 
+# static fields
+.field public static final $stable:I
+
+
 # instance fields
 .field private isTarget:Z
 
 
 # direct methods
+.method static constructor <clinit>()V
+    .locals 0
+
+    return-void
+.end method
+
 .method public constructor <init>(Z)V
     .locals 0
 
-    .line 582
+    .line 563
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     iput-boolean p1, p0, Landroidx/compose/animation/AnimatedContentTransitionScopeImpl$ChildData;->isTarget:Z
@@ -143,18 +153,17 @@
 
     iget-boolean p0, p0, Landroidx/compose/animation/AnimatedContentTransitionScopeImpl$ChildData;->isTarget:Z
 
-    if-eqz p0, :cond_0
+    invoke-static {p0}, Ljava/lang/Boolean;->hashCode(Z)I
 
-    const/4 p0, 0x1
+    move-result p0
 
-    :cond_0
     return p0
 .end method
 
 .method public final isTarget()Z
     .locals 0
 
-    .line 582
+    .line 563
     iget-boolean p0, p0, Landroidx/compose/animation/AnimatedContentTransitionScopeImpl$ChildData;->isTarget:Z
 
     return p0
@@ -163,17 +172,13 @@
 .method public modifyParentData(Landroidx/compose/ui/unit/Density;Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
 
-    const-string p2, "<this>"
-
-    invoke-static {p1, p2}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
     return-object p0
 .end method
 
 .method public final setTarget(Z)V
     .locals 0
 
-    .line 582
+    .line 563
     iput-boolean p1, p0, Landroidx/compose/animation/AnimatedContentTransitionScopeImpl$ChildData;->isTarget:Z
 
     return-void

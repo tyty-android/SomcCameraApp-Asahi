@@ -72,7 +72,7 @@
 .method public bridge synthetic invoke(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
 
-    .line 808
+    .line 812
     check-cast p1, Landroidx/compose/ui/input/pointer/PointerInputChange;
 
     check-cast p2, Ljava/lang/Number;
@@ -89,16 +89,12 @@
 .end method
 
 .method public final invoke(Landroidx/compose/ui/input/pointer/PointerInputChange;F)V
-    .locals 1
+    .locals 0
 
-    const-string v0, "pointerInput"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 809
+    .line 813
     invoke-virtual {p1}, Landroidx/compose/ui/input/pointer/PointerInputChange;->consume()V
 
-    .line 810
+    .line 814
     iget-object p0, p0, Landroidx/compose/material/SliderKt$awaitSlop$postPointerSlop$1;->$initialDelta:Lkotlin/jvm/internal/Ref$FloatRef;
 
     iput p2, p0, Lkotlin/jvm/internal/Ref$FloatRef;->element:F

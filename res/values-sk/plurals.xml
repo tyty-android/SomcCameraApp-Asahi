@@ -6,20 +6,4 @@
         <item quantity="few">%d nové upozornenia</item>
         <item quantity="many">%d new notifications</item>
     </plurals>
-    <plurals name="mv_minute_remaining_txt">
-        <item quantity="other">Zostáva %1$d min.</item>
-        <item quantity="one">Zostáva 1 min.</item>
-    </plurals>
-    <plurals name="mv_minute_txt">
-        <item quantity="other">%1$d min</item>
-        <item quantity="one">1 minúta</item>
-    </plurals>
-    <plurals name="mv_second_remaining_txt">
-        <item quantity="other">Zostáva %1$d s</item>
-        <item quantity="one">Zostáva 1 s</item>
-    </plurals>
-    <plurals name="mv_second_txt">
-        <item quantity="other">%1$d s</item>
-        <item quantity="one">1 sekunda</item>
-    </plurals>
 </resources>

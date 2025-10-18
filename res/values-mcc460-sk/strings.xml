@@ -19,5 +19,4 @@ Môžete ho zapnúť v NASTAVENIACH."</string>
     <string name="camera_strings_runtime_permission_rationale_network_cta_txt">"Táto aplikácia využíva sieť WLAN a mobilné dáta na odosielanie údajov používateľa (t. j. nahraných fotografií/videí, hlasových dát, informácií o účte používaných služieb atď.) na internet.
 Upozorňujeme, že v závislosti od zmluvy s mobilným operátorom alebo poskytovateľom internetových služieb vám môžu byť účtované poplatky za dáta."</string>
     <string name="camera_strings_streaming_error_wifi_disconnected_txt">Chýba pripojenie WLAN</string>
-    <string name="mv_wireless_network_txt">Použiť WLAN a mobilné dáta</string>
 </resources>

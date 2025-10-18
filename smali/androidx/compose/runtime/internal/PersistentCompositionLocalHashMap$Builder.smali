@@ -78,18 +78,14 @@
 .method public constructor <init>(Landroidx/compose/runtime/internal/PersistentCompositionLocalHashMap;)V
     .locals 1
 
-    const-string v0, "map"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 47
+    .line 58
     move-object v0, p1
 
     check-cast v0, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableMap/PersistentHashMap;
 
     invoke-direct {p0, v0}, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableMap/PersistentHashMapBuilder;-><init>(Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableMap/PersistentHashMap;)V
 
-    .line 46
+    .line 57
     iput-object p1, p0, Landroidx/compose/runtime/internal/PersistentCompositionLocalHashMap$Builder;->map:Landroidx/compose/runtime/internal/PersistentCompositionLocalHashMap;
 
     return-void
@@ -100,7 +96,7 @@
 .method public bridge synthetic build()Landroidx/compose/runtime/PersistentCompositionLocalMap;
     .locals 0
 
-    .line 45
+    .line 56
     invoke-virtual {p0}, Landroidx/compose/runtime/internal/PersistentCompositionLocalHashMap$Builder;->build()Landroidx/compose/runtime/internal/PersistentCompositionLocalHashMap;
 
     move-result-object p0
@@ -113,7 +109,7 @@
 .method public bridge synthetic build()Landroidx/compose/runtime/external/kotlinx/collections/immutable/PersistentMap;
     .locals 0
 
-    .line 45
+    .line 56
     invoke-virtual {p0}, Landroidx/compose/runtime/internal/PersistentCompositionLocalHashMap$Builder;->build()Landroidx/compose/runtime/internal/PersistentCompositionLocalHashMap;
 
     move-result-object p0
@@ -126,7 +122,7 @@
 .method public bridge synthetic build()Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableMap/PersistentHashMap;
     .locals 0
 
-    .line 45
+    .line 56
     invoke-virtual {p0}, Landroidx/compose/runtime/internal/PersistentCompositionLocalHashMap$Builder;->build()Landroidx/compose/runtime/internal/PersistentCompositionLocalHashMap;
 
     move-result-object p0
@@ -139,7 +135,7 @@
 .method public build()Landroidx/compose/runtime/internal/PersistentCompositionLocalHashMap;
     .locals 3
 
-    .line 50
+    .line 61
     invoke-virtual {p0}, Landroidx/compose/runtime/internal/PersistentCompositionLocalHashMap$Builder;->getNode$runtime_release()Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableMap/TrieNode;
 
     move-result-object v0
@@ -152,12 +148,12 @@
 
     if-ne v0, v1, :cond_0
 
-    .line 51
+    .line 62
     iget-object v0, p0, Landroidx/compose/runtime/internal/PersistentCompositionLocalHashMap$Builder;->map:Landroidx/compose/runtime/internal/PersistentCompositionLocalHashMap;
 
     goto :goto_0
 
-    .line 53
+    .line 64
     :cond_0
     new-instance v0, Landroidx/compose/runtime/external/kotlinx/collections/immutable/internal/MutabilityOwnership;
 
@@ -165,7 +161,7 @@
 
     invoke-virtual {p0, v0}, Landroidx/compose/runtime/internal/PersistentCompositionLocalHashMap$Builder;->setOwnership(Landroidx/compose/runtime/external/kotlinx/collections/immutable/internal/MutabilityOwnership;)V
 
-    .line 54
+    .line 65
     new-instance v0, Landroidx/compose/runtime/internal/PersistentCompositionLocalHashMap;
 
     invoke-virtual {p0}, Landroidx/compose/runtime/internal/PersistentCompositionLocalHashMap$Builder;->getNode$runtime_release()Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableMap/TrieNode;
@@ -178,7 +174,7 @@
 
     invoke-direct {v0, v1, v2}, Landroidx/compose/runtime/internal/PersistentCompositionLocalHashMap;-><init>(Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableMap/TrieNode;I)V
 
-    .line 50
+    .line 61
     :goto_0
     iput-object v0, p0, Landroidx/compose/runtime/internal/PersistentCompositionLocalHashMap$Builder;->map:Landroidx/compose/runtime/internal/PersistentCompositionLocalHashMap;
 
@@ -196,7 +192,7 @@
         }
     .end annotation
 
-    .line 45
+    .line 56
     invoke-super {p0, p1}, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableMap/PersistentHashMapBuilder;->containsKey(Ljava/lang/Object;)Z
 
     move-result p0
@@ -207,7 +203,7 @@
 .method public final bridge containsKey(Ljava/lang/Object;)Z
     .locals 1
 
-    .line 45
+    .line 56
     instance-of v0, p1, Landroidx/compose/runtime/CompositionLocal;
 
     if-nez v0, :cond_0
@@ -238,7 +234,7 @@
         }
     .end annotation
 
-    .line 45
+    .line 56
     invoke-super {p0, p1}, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableMap/PersistentHashMapBuilder;->containsValue(Ljava/lang/Object;)Z
 
     move-result p0
@@ -249,7 +245,7 @@
 .method public final bridge containsValue(Ljava/lang/Object;)Z
     .locals 1
 
-    .line 45
+    .line 56
     instance-of v0, p1, Landroidx/compose/runtime/State;
 
     if-nez v0, :cond_0
@@ -282,7 +278,7 @@
         }
     .end annotation
 
-    .line 45
+    .line 56
     invoke-super {p0, p1}, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableMap/PersistentHashMapBuilder;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p0
@@ -305,7 +301,7 @@
         }
     .end annotation
 
-    .line 45
+    .line 56
     instance-of v0, p1, Landroidx/compose/runtime/CompositionLocal;
 
     if-nez v0, :cond_0
@@ -327,7 +323,7 @@
 .method public final bridge synthetic get(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 1
 
-    .line 45
+    .line 56
     instance-of v0, p1, Landroidx/compose/runtime/CompositionLocal;
 
     if-nez v0, :cond_0
@@ -349,7 +345,7 @@
 .method public final getMap$runtime_release()Landroidx/compose/runtime/internal/PersistentCompositionLocalHashMap;
     .locals 0
 
-    .line 46
+    .line 57
     iget-object p0, p0, Landroidx/compose/runtime/internal/PersistentCompositionLocalHashMap$Builder;->map:Landroidx/compose/runtime/internal/PersistentCompositionLocalHashMap;
 
     return-object p0
@@ -373,7 +369,7 @@
         }
     .end annotation
 
-    .line 45
+    .line 56
     invoke-super {p0, p1, p2}, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableMap/PersistentHashMapBuilder;->getOrDefault(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p0
@@ -386,7 +382,7 @@
 .method public final bridge getOrDefault(Ljava/lang/Object;Landroidx/compose/runtime/State;)Landroidx/compose/runtime/State;
     .locals 1
 
-    .line 45
+    .line 56
     instance-of v0, p1, Landroidx/compose/runtime/CompositionLocal;
 
     if-nez v0, :cond_0
@@ -406,7 +402,7 @@
 .method public final bridge synthetic getOrDefault(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
     .locals 1
 
-    .line 45
+    .line 56
     instance-of v0, p1, Landroidx/compose/runtime/CompositionLocal;
 
     if-nez v0, :cond_0
@@ -439,7 +435,7 @@
         }
     .end annotation
 
-    .line 45
+    .line 56
     invoke-super {p0, p1}, Landroidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableMap/PersistentHashMapBuilder;->remove(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p0
@@ -462,7 +458,7 @@
         }
     .end annotation
 
-    .line 45
+    .line 56
     instance-of v0, p1, Landroidx/compose/runtime/CompositionLocal;
 
     if-nez v0, :cond_0
@@ -484,7 +480,7 @@
 .method public final bridge synthetic remove(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 1
 
-    .line 45
+    .line 56
     instance-of v0, p1, Landroidx/compose/runtime/CompositionLocal;
 
     if-nez v0, :cond_0
@@ -504,13 +500,9 @@
 .end method
 
 .method public final setMap$runtime_release(Landroidx/compose/runtime/internal/PersistentCompositionLocalHashMap;)V
-    .locals 1
+    .locals 0
 
-    const-string v0, "<set-?>"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 46
+    .line 57
     iput-object p1, p0, Landroidx/compose/runtime/internal/PersistentCompositionLocalHashMap$Builder;->map:Landroidx/compose/runtime/internal/PersistentCompositionLocalHashMap;
 
     return-void

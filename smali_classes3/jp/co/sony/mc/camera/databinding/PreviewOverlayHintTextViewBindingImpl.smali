@@ -276,7 +276,7 @@
 .method public setVariable(ILjava/lang/Object;)Z
     .locals 1
 
-    const/4 v0, 0x7
+    const/16 v0, 0x8
 
     if-ne v0, p1, :cond_0
 
@@ -288,7 +288,7 @@
     goto :goto_0
 
     :cond_0
-    const/16 v0, 0x13
+    const/16 v0, 0x16
 
     if-ne v0, p1, :cond_1
 
@@ -300,7 +300,7 @@
     goto :goto_0
 
     :cond_1
-    const/16 v0, 0x22
+    const/16 v0, 0x25
 
     if-ne v0, p1, :cond_2
 
@@ -312,7 +312,7 @@
     goto :goto_0
 
     :cond_2
-    const/16 v0, 0x19
+    const/16 v0, 0x1b
 
     if-ne v0, p1, :cond_3
 

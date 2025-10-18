@@ -31,7 +31,7 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/SourceDebugExtension;
-    value = "SMAP\nLazyLayoutPager.kt\nKotlin\n*S Kotlin\n*F\n+ 1 LazyLayoutPager.kt\nandroidx/compose/foundation/pager/LazyLayoutPagerKt$dragDirectionDetector$1$1$1\n+ 2 ListUtils.kt\nandroidx/compose/ui/util/ListUtilsKt\n*L\n1#1,282:1\n86#2,2:283\n33#2,6:285\n88#2:291\n*S KotlinDebug\n*F\n+ 1 LazyLayoutPager.kt\nandroidx/compose/foundation/pager/LazyLayoutPagerKt$dragDirectionDetector$1$1$1\n*L\n272#1:283,2\n272#1:285,6\n272#1:291\n*E\n"
+    value = "SMAP\nLazyLayoutPager.kt\nKotlin\n*S Kotlin\n*F\n+ 1 LazyLayoutPager.kt\nandroidx/compose/foundation/pager/LazyLayoutPagerKt$dragDirectionDetector$1$1$1\n+ 2 ListUtils.kt\nandroidx/compose/ui/util/ListUtilsKt\n*L\n1#1,328:1\n86#2,2:329\n33#2,6:331\n88#2:337\n*S KotlinDebug\n*F\n+ 1 LazyLayoutPager.kt\nandroidx/compose/foundation/pager/LazyLayoutPagerKt$dragDirectionDetector$1$1$1\n*L\n282#1:329,2\n282#1:331,6\n282#1:337\n*E\n"
 .end annotation
 
 .annotation runtime Lkotlin/Metadata;
@@ -62,8 +62,8 @@
         0x1
     }
     l = {
-        0x10c,
-        0x10f
+        0x115,
+        0x119
     }
     m = "invokeSuspend"
     n = {
@@ -195,7 +195,7 @@
 
     move-result-object v0
 
-    .line 266
+    .line 275
     iget v1, p0, Landroidx/compose/foundation/pager/LazyLayoutPagerKt$dragDirectionDetector$1$1$1;->label:I
 
     const/4 v2, 0x2
@@ -253,7 +253,7 @@
 
     check-cast v1, Landroidx/compose/ui/input/pointer/AwaitPointerEventScope;
 
-    .line 268
+    .line 277
     sget-object p1, Landroidx/compose/ui/input/pointer/PointerEventPass;->Initial:Landroidx/compose/ui/input/pointer/PointerEventPass;
 
     move-object v5, p0
@@ -272,10 +272,21 @@
 
     return-object v0
 
-    .line 266
+    .line 275
     :cond_3
     :goto_0
     check-cast p1, Landroidx/compose/ui/input/pointer/PointerInputChange;
+
+    .line 279
+    iget-object v4, p0, Landroidx/compose/foundation/pager/LazyLayoutPagerKt$dragDirectionDetector$1$1$1;->$state:Landroidx/compose/foundation/pager/PagerState;
+
+    sget-object v5, Landroidx/compose/ui/geometry/Offset;->Companion:Landroidx/compose/ui/geometry/Offset$Companion;
+
+    invoke-virtual {v5}, Landroidx/compose/ui/geometry/Offset$Companion;->getZero-F1C5BW0()J
+
+    move-result-wide v5
+
+    invoke-virtual {v4, v5, v6}, Landroidx/compose/foundation/pager/PagerState;->setUpDownDifference-k-4lQ0M$foundation_release(J)V
 
     const/4 v4, 0x0
 
@@ -288,7 +299,7 @@
     :goto_1
     if-nez v1, :cond_7
 
-    .line 271
+    .line 281
     sget-object p1, Landroidx/compose/ui/input/pointer/PointerEventPass;->Initial:Landroidx/compose/ui/input/pointer/PointerEventPass;
 
     move-object v6, p0
@@ -311,17 +322,17 @@
 
     return-object v0
 
-    .line 266
+    .line 275
     :cond_4
     :goto_2
     check-cast p1, Landroidx/compose/ui/input/pointer/PointerEvent;
 
-    .line 272
+    .line 282
     invoke-virtual {p1}, Landroidx/compose/ui/input/pointer/PointerEvent;->getChanges()Ljava/util/List;
 
     move-result-object v6
 
-    .line 286
+    .line 332
     invoke-interface {v6}, Ljava/util/List;->size()I
 
     move-result v7
@@ -331,15 +342,15 @@
     :goto_3
     if-ge v8, v7, :cond_6
 
-    .line 287
+    .line 333
     invoke-interface {v6, v8}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
     move-result-object v9
 
-    .line 284
+    .line 330
     check-cast v9, Landroidx/compose/ui/input/pointer/PointerInputChange;
 
-    .line 272
+    .line 282
     invoke-static {v9}, Landroidx/compose/ui/input/pointer/PointerEventKt;->changedToUp(Landroidx/compose/ui/input/pointer/PointerInputChange;)Z
 
     move-result v9
@@ -353,7 +364,7 @@
 
     goto :goto_3
 
-    .line 274
+    .line 284
     :cond_6
     invoke-virtual {p1}, Landroidx/compose/ui/input/pointer/PointerEvent;->getChanges()Ljava/util/List;
 
@@ -369,7 +380,7 @@
 
     goto :goto_1
 
-    .line 278
+    .line 288
     :cond_7
     iget-object p0, p0, Landroidx/compose/foundation/pager/LazyLayoutPagerKt$dragDirectionDetector$1$1$1;->$state:Landroidx/compose/foundation/pager/PagerState;
 
@@ -387,7 +398,7 @@
 
     invoke-virtual {p0, v0, v1}, Landroidx/compose/foundation/pager/PagerState;->setUpDownDifference-k-4lQ0M$foundation_release(J)V
 
-    .line 279
+    .line 289
     sget-object p0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
 
     return-object p0

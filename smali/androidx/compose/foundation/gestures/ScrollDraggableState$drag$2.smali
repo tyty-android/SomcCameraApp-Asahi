@@ -53,7 +53,7 @@
     f = "Scrollable.kt"
     i = {}
     l = {
-        0x216
+        0x37e
     }
     m = "invokeSuspend"
     n = {}
@@ -200,7 +200,7 @@
 
     move-result-object v0
 
-    .line 532
+    .line 892
     iget v1, p0, Landroidx/compose/foundation/gestures/ScrollDraggableState$drag$2;->label:I
 
     const/4 v2, 0x1
@@ -229,12 +229,12 @@
 
     check-cast p1, Landroidx/compose/foundation/gestures/ScrollScope;
 
-    .line 533
+    .line 893
     iget-object v1, p0, Landroidx/compose/foundation/gestures/ScrollDraggableState$drag$2;->this$0:Landroidx/compose/foundation/gestures/ScrollDraggableState;
 
     invoke-virtual {v1, p1}, Landroidx/compose/foundation/gestures/ScrollDraggableState;->setLatestScrollScope(Landroidx/compose/foundation/gestures/ScrollScope;)V
 
-    .line 534
+    .line 894
     iget-object p1, p0, Landroidx/compose/foundation/gestures/ScrollDraggableState$drag$2;->$block:Lkotlin/jvm/functions/Function2;
 
     iget-object v1, p0, Landroidx/compose/foundation/gestures/ScrollDraggableState$drag$2;->this$0:Landroidx/compose/foundation/gestures/ScrollDraggableState;
@@ -249,7 +249,7 @@
 
     return-object v0
 
-    .line 535
+    .line 895
     :cond_2
     :goto_0
     sget-object p0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;

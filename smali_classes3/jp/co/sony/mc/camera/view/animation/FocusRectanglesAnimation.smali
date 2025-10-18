@@ -75,13 +75,13 @@
     .line 66
     new-instance p1, Ljp/co/sony/mc/camera/view/animation/FocusRectanglesAnimation$AnimationConfig;
 
-    const v4, 0x7f1104ef
+    const v4, 0x7f11051e
 
     const v5, 0x7f0a000c
 
-    const v2, 0x7f07032f
+    const v2, 0x7f070360
 
-    const v3, 0x7f07032e
+    const v3, 0x7f07035f
 
     move-object v0, p1
 
@@ -94,13 +94,13 @@
     .line 72
     new-instance p1, Ljp/co/sony/mc/camera/view/animation/FocusRectanglesAnimation$AnimationConfig;
 
-    const v10, 0x7f1104f0
+    const v10, 0x7f11051f
 
     const v11, 0x7f0a000c
 
-    const v8, 0x7f07032f
+    const v8, 0x7f070360
 
-    const v9, 0x7f07032e
+    const v9, 0x7f07035f
 
     move-object v6, p1
 
@@ -113,11 +113,11 @@
     .line 78
     new-instance p1, Ljp/co/sony/mc/camera/view/animation/FocusRectanglesAnimation$AnimationConfig;
 
-    const v4, 0x7f1104ee
+    const v4, 0x7f11051d
 
-    const v2, 0x7f07032d
+    const v2, 0x7f07035e
 
-    const v3, 0x7f07032c
+    const v3, 0x7f07035d
 
     move-object v0, p1
 
@@ -480,7 +480,7 @@
 .method public playAfFocusInAnimationSingle(Landroid/view/View;)V
     .locals 1
 
-    const v0, 0x7f080096
+    const v0, 0x7f08008e
 
     .line 94
     invoke-virtual {p0, p1, v0}, Ljp/co/sony/mc/camera/view/animation/FocusRectanglesAnimation;->startFocusAnimation(Landroid/view/View;I)V

@@ -467,11 +467,7 @@
 
 # virtual methods
 .method public compareTo(Landroidx/compose/ui/text/font/FontWeight;)I
-    .locals 1
-
-    const-string v0, "other"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+    .locals 0
 
     .line 113
     iget p0, p0, Landroidx/compose/ui/text/font/FontWeight;->weight:I

@@ -1,6 +1,6 @@
 .class final Landroidx/compose/material/ExposedDropdownMenuBoxScope$ExposedDropdownMenu$1;
 .super Lkotlin/jvm/internal/Lambda;
-.source "ExposedDropdownMenu.kt"
+.source "ExposedDropdownMenu.android.kt"
 
 # interfaces
 .implements Lkotlin/jvm/functions/Function2;
@@ -48,8 +48,6 @@
 
 
 # instance fields
-.field final synthetic $$dirty:I
-
 .field final synthetic $content:Lkotlin/jvm/functions/Function3;
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -91,7 +89,7 @@
 
 
 # direct methods
-.method constructor <init>(Landroidx/compose/animation/core/MutableTransitionState;Landroidx/compose/runtime/MutableState;Landroidx/compose/foundation/ScrollState;Landroidx/compose/material/ExposedDropdownMenuBoxScope;Landroidx/compose/ui/Modifier;Lkotlin/jvm/functions/Function3;I)V
+.method constructor <init>(Landroidx/compose/animation/core/MutableTransitionState;Landroidx/compose/runtime/MutableState;Landroidx/compose/foundation/ScrollState;Landroidx/compose/material/ExposedDropdownMenuBoxScope;Landroidx/compose/ui/Modifier;Lkotlin/jvm/functions/Function3;)V
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -113,7 +111,7 @@
             "-",
             "Ljava/lang/Integer;",
             "Lkotlin/Unit;",
-            ">;I)V"
+            ">;)V"
         }
     .end annotation
 
@@ -128,8 +126,6 @@
     iput-object p5, p0, Landroidx/compose/material/ExposedDropdownMenuBoxScope$ExposedDropdownMenu$1;->$modifier:Landroidx/compose/ui/Modifier;
 
     iput-object p6, p0, Landroidx/compose/material/ExposedDropdownMenuBoxScope$ExposedDropdownMenu$1;->$content:Lkotlin/jvm/functions/Function3;
-
-    iput p7, p0, Landroidx/compose/material/ExposedDropdownMenuBoxScope$ExposedDropdownMenu$1;->$$dirty:I
 
     const/4 p1, 0x2
 
@@ -162,7 +158,7 @@
 .method public final invoke(Landroidx/compose/runtime/Composer;I)V
     .locals 11
 
-    const-string v0, "C265@10397L304:ExposedDropdownMenu.kt#jmzs0o"
+    const-string v0, "C265@10397L304:ExposedDropdownMenu.android.kt#jmzs0o"
 
     invoke-static {p1, v0}, Landroidx/compose/runtime/ComposerKt;->sourceInformation(Landroidx/compose/runtime/Composer;Ljava/lang/String;)V
 
@@ -198,9 +194,9 @@
 
     const/4 v0, -0x1
 
-    const-string v1, "androidx.compose.material.ExposedDropdownMenuBoxScope.ExposedDropdownMenu.<anonymous> (ExposedDropdownMenu.kt:264)"
+    const-string v1, "androidx.compose.material.ExposedDropdownMenuBoxScope.ExposedDropdownMenu.<anonymous> (ExposedDropdownMenu.android.kt:265)"
 
-    const v2, -0x45922651
+    const v2, 0x3baf5f8e
 
     invoke-static {v2, p2, v0, v1}, Landroidx/compose/runtime/ComposerKt;->traceEventStart(IIILjava/lang/String;)V
 
@@ -232,23 +228,9 @@
     .line 271
     iget-object v7, p0, Landroidx/compose/material/ExposedDropdownMenuBoxScope$ExposedDropdownMenu$1;->$content:Lkotlin/jvm/functions/Function3;
 
-    sget p2, Landroidx/compose/animation/core/MutableTransitionState;->$stable:I
+    sget p0, Landroidx/compose/animation/core/MutableTransitionState;->$stable:I
 
-    or-int/lit8 p2, p2, 0x30
-
-    iget p0, p0, Landroidx/compose/material/ExposedDropdownMenuBoxScope$ExposedDropdownMenu$1;->$$dirty:I
-
-    shr-int/lit8 v0, p0, 0x3
-
-    and-int/lit16 v0, v0, 0x380
-
-    or-int/2addr p2, v0
-
-    const v0, 0xe000
-
-    and-int/2addr p0, v0
-
-    or-int v9, p2, p0
+    or-int/lit8 v9, p0, 0x30
 
     const/4 v10, 0x0
 

@@ -29,15 +29,15 @@
 .method public constructor <init>(Ljp/co/sony/mc/camera/view/FragmentController$ModeAndCameraSwitchCallbackImpl;Ljp/co/sony/mc/camera/view/FragmentController;Ljp/co/sony/mc/camera/CameraAccessor;)V
     .locals 0
 
-    .line 7120
+    .line 7369
     iput-object p1, p0, Ljp/co/sony/mc/camera/view/FragmentController$ModeAndCameraSwitchCallbackImpl$FocusActionListenerImpl;->this$0:Ljp/co/sony/mc/camera/view/FragmentController$ModeAndCameraSwitchCallbackImpl;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 7121
+    .line 7370
     iput-object p2, p0, Ljp/co/sony/mc/camera/view/FragmentController$ModeAndCameraSwitchCallbackImpl$FocusActionListenerImpl;->mController:Ljp/co/sony/mc/camera/view/FragmentController;
 
-    .line 7122
+    .line 7371
     invoke-static {p2}, Ljp/co/sony/mc/camera/view/FragmentController;->-$$Nest$fgetmCameraAccessor(Ljp/co/sony/mc/camera/view/FragmentController;)Ljp/co/sony/mc/camera/CameraAccessor;
 
     move-result-object p1
@@ -50,12 +50,12 @@
 .method private isTouchAeEnabled()Z
     .locals 2
 
-    .line 7207
+    .line 7453
     invoke-static {}, Ljp/co/sony/mc/camera/setting/CameraProSetting;->getInstance()Ljp/co/sony/mc/camera/setting/CameraProSetting;
 
     move-result-object p0
 
-    .line 7208
+    .line 7454
     sget-object v0, Ljp/co/sony/mc/camera/setting/CameraSettings;->TOUCH_INTENTION:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
 
     invoke-virtual {p0, v0}, Ljp/co/sony/mc/camera/setting/CameraProSetting;->get(Ljp/co/sony/mc/camera/setting/SettingKey$Key;)Ljava/lang/Object;
@@ -64,12 +64,12 @@
 
     check-cast v0, Ljp/co/sony/mc/camera/configuration/parameters/TouchIntention;
 
-    .line 7209
+    .line 7455
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/setting/CameraProSetting;->getCurrentCameraId()Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;
 
     move-result-object p0
 
-    .line 7210
+    .line 7456
     sget-object v1, Ljp/co/sony/mc/camera/configuration/parameters/TouchIntention;->FOCUS_AND_EXPOSURE:Ljp/co/sony/mc/camera/configuration/parameters/TouchIntention;
 
     if-eq v0, v1, :cond_0
@@ -78,7 +78,7 @@
 
     if-ne v0, v1, :cond_1
 
-    .line 7212
+    .line 7458
     :cond_0
     invoke-static {p0}, Ljp/co/sony/mc/camera/util/capability/PlatformCapability;->isTouchAeSupported(Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;)Z
 
@@ -102,7 +102,7 @@
 .method public onCancelButtonClicked()V
     .locals 0
 
-    .line 7178
+    .line 7424
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/FragmentController$ModeAndCameraSwitchCallbackImpl$FocusActionListenerImpl;->mController:Ljp/co/sony/mc/camera/view/FragmentController;
 
     invoke-static {p0}, Ljp/co/sony/mc/camera/view/FragmentController;->-$$Nest$mstopObjectTracking(Ljp/co/sony/mc/camera/view/FragmentController;)V
@@ -119,57 +119,33 @@
 .method public onFaceSelected(Landroid/graphics/Point;)V
     .locals 2
 
-    .line 7146
+    .line 7395
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/FragmentController$ModeAndCameraSwitchCallbackImpl$FocusActionListenerImpl;->mCameraAccessor:Ljp/co/sony/mc/camera/CameraAccessor;
 
     invoke-interface {v0, p1}, Ljp/co/sony/mc/camera/CameraAccessor;->selectFace(Landroid/graphics/Point;)V
 
-    .line 7147
+    .line 7396
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/FragmentController$ModeAndCameraSwitchCallbackImpl$FocusActionListenerImpl;->mController:Ljp/co/sony/mc/camera/view/FragmentController;
 
-    const-class v1, Ljp/co/sony/mc/camera/view/viewmodel/CameraViewModel;
-
-    invoke-static {v0, v1}, Ljp/co/sony/mc/camera/view/FragmentController;->-$$Nest$mrequireViewModel(Ljp/co/sony/mc/camera/view/FragmentController;Ljava/lang/Class;)Landroidx/lifecycle/ViewModel;
+    invoke-static {v0}, Ljp/co/sony/mc/camera/view/FragmentController;->-$$Nest$fgetmCameraEventNotifier(Ljp/co/sony/mc/camera/view/FragmentController;)Ljp/co/sony/mc/camera/view/CameraEventListener;
 
     move-result-object v0
 
-    check-cast v0, Ljp/co/sony/mc/camera/view/viewmodel/CameraViewModel;
+    invoke-interface {v0, p1}, Ljp/co/sony/mc/camera/view/CameraEventListener;->onFaceSelected(Landroid/graphics/Point;)V
 
-    .line 7148
-    invoke-virtual {v0}, Ljp/co/sony/mc/camera/view/viewmodel/CameraViewModel;->getViewFinderUiState()Ljp/co/sony/mc/camera/view/uistate/ViewFinderUiState;
-
-    move-result-object v0
-
-    .line 7149
-    iget-object v1, p0, Ljp/co/sony/mc/camera/view/FragmentController$ModeAndCameraSwitchCallbackImpl$FocusActionListenerImpl;->mController:Ljp/co/sony/mc/camera/view/FragmentController;
-
-    invoke-static {v1}, Ljp/co/sony/mc/camera/view/FragmentController;->-$$Nest$fgetmCameraEventNotifier(Ljp/co/sony/mc/camera/view/FragmentController;)Ljp/co/sony/mc/camera/view/CameraEventListener;
-
-    move-result-object v1
-
-    .line 7150
-    invoke-virtual {v0, p1}, Ljp/co/sony/mc/camera/view/uistate/ViewFinderUiState;->isTouchedInActiveFacingRect(Landroid/graphics/Point;)Z
-
-    move-result p1
-
-    xor-int/lit8 p1, p1, 0x1
-
-    .line 7149
-    invoke-interface {v1, p1}, Ljp/co/sony/mc/camera/view/CameraEventListener;->onSelectedFaceChanged(Z)V
-
-    .line 7152
+    .line 7398
     invoke-static {}, Ljp/co/sony/mc/camera/setting/CameraProSetting;->getInstance()Ljp/co/sony/mc/camera/setting/CameraProSetting;
 
     move-result-object p1
 
-    .line 7153
+    .line 7399
     invoke-direct {p0}, Ljp/co/sony/mc/camera/view/FragmentController$ModeAndCameraSwitchCallbackImpl$FocusActionListenerImpl;->isTouchAeEnabled()Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
-    .line 7154
+    .line 7400
     sget-object v0, Ljp/co/sony/mc/camera/setting/CameraSettings;->METERING:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
 
     invoke-virtual {p1, v0}, Ljp/co/sony/mc/camera/setting/CameraProSetting;->get(Ljp/co/sony/mc/camera/setting/SettingKey$Key;)Ljava/lang/Object;
@@ -178,12 +154,12 @@
 
     check-cast p1, Ljp/co/sony/mc/camera/configuration/parameters/Metering;
 
-    .line 7155
+    .line 7401
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
-    .line 7156
+    .line 7402
     sget-object v1, Ljp/co/sony/mc/camera/setting/CameraSettings;->METERING:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
 
     invoke-static {v1, p1}, Landroid/util/Pair;->create(Ljava/lang/Object;Ljava/lang/Object;)Landroid/util/Pair;
@@ -192,7 +168,7 @@
 
     invoke-virtual {v0, p1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
-    .line 7158
+    .line 7404
     invoke-static {}, Ljp/co/sony/mc/camera/setting/CameraProSetting;->getInstance()Ljp/co/sony/mc/camera/setting/CameraProSetting;
 
     move-result-object p1
@@ -201,12 +177,12 @@
 
     move-result-object p1
 
-    .line 7159
+    .line 7405
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
-    .line 7160
+    .line 7406
     sget-object v1, Ljp/co/sony/mc/camera/setting/CameraSettings;->METERING:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
 
     invoke-virtual {v1}, Ljp/co/sony/mc/camera/setting/CameraSettings$Key;->getName()Ljava/lang/String;
@@ -215,7 +191,7 @@
 
     invoke-virtual {v0, v1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
-    .line 7161
+    .line 7407
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/FragmentController$ModeAndCameraSwitchCallbackImpl$FocusActionListenerImpl;->mCameraAccessor:Ljp/co/sony/mc/camera/CameraAccessor;
 
     const/4 v1, 0x0
@@ -229,7 +205,7 @@
 .method public onFaceTouched()V
     .locals 2
 
-    .line 7197
+    .line 7443
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/FragmentController$ModeAndCameraSwitchCallbackImpl$FocusActionListenerImpl;->mController:Ljp/co/sony/mc/camera/view/FragmentController;
 
     const-class v0, Ljp/co/sony/mc/camera/view/viewmodel/CameraViewModel;
@@ -240,12 +216,12 @@
 
     check-cast p0, Ljp/co/sony/mc/camera/view/viewmodel/CameraViewModel;
 
-    .line 7198
+    .line 7444
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/view/viewmodel/CameraViewModel;->getViewFinderUiState()Ljp/co/sony/mc/camera/view/uistate/ViewFinderUiState;
 
     move-result-object v0
 
-    .line 7199
+    .line 7445
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/view/viewmodel/CameraViewModel;->getCameraSettingsModel()Ljp/co/sony/mc/camera/view/viewmodel/CameraSettingsModel;
 
     move-result-object p0
@@ -266,7 +242,7 @@
 
     if-nez p0, :cond_2
 
-    .line 7201
+    .line 7447
     invoke-virtual {v0}, Ljp/co/sony/mc/camera/view/uistate/ViewFinderUiState;->getBasicManualLayoutVisibility()Landroidx/lifecycle/LiveData;
 
     move-result-object p0
@@ -283,7 +259,7 @@
 
     if-eqz p0, :cond_1
 
-    .line 7202
+    .line 7448
     invoke-virtual {v0}, Ljp/co/sony/mc/camera/view/uistate/ViewFinderUiState;->getItemAlpha()Landroidx/lifecycle/LiveData;
 
     move-result-object p0
@@ -315,7 +291,7 @@
     :goto_0
     const/4 p0, 0x1
 
-    .line 7200
+    .line 7446
     :goto_1
     invoke-virtual {v0, p0}, Ljp/co/sony/mc/camera/view/uistate/ViewFinderUiState;->onTouchAdjustStateChange(Z)V
 
@@ -338,7 +314,7 @@
 .method public onTouchFocusCleared()V
     .locals 4
 
-    .line 7167
+    .line 7413
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/FragmentController$ModeAndCameraSwitchCallbackImpl$FocusActionListenerImpl;->mController:Ljp/co/sony/mc/camera/view/FragmentController;
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/view/FragmentController;->-$$Nest$fgetmYuvFrameDrawModeController(Ljp/co/sony/mc/camera/view/FragmentController;)Ljp/co/sony/mc/camera/view/FragmentController$YuvFrameDrawModeController;
@@ -347,12 +323,12 @@
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/view/FragmentController$YuvFrameDrawModeController;->-$$Nest$monClearTouchFocus(Ljp/co/sony/mc/camera/view/FragmentController$YuvFrameDrawModeController;)V
 
-    .line 7168
+    .line 7414
     invoke-static {}, Ljp/co/sony/mc/camera/setting/CameraProSetting;->getInstance()Ljp/co/sony/mc/camera/setting/CameraProSetting;
 
     move-result-object v0
 
-    .line 7169
+    .line 7415
     sget-object v1, Ljp/co/sony/mc/camera/setting/CameraSettings;->FOCUS_AREA:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
 
     invoke-virtual {v0, v1}, Ljp/co/sony/mc/camera/setting/CameraProSetting;->get(Ljp/co/sony/mc/camera/setting/SettingKey$Key;)Ljava/lang/Object;
@@ -361,7 +337,7 @@
 
     check-cast v1, Ljp/co/sony/mc/camera/configuration/parameters/FocusArea;
 
-    .line 7170
+    .line 7416
     sget-object v2, Ljp/co/sony/mc/camera/setting/CameraSettings;->METERING:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
 
     invoke-virtual {v0, v2}, Ljp/co/sony/mc/camera/setting/CameraProSetting;->get(Ljp/co/sony/mc/camera/setting/SettingKey$Key;)Ljava/lang/Object;
@@ -370,22 +346,22 @@
 
     check-cast v0, Ljp/co/sony/mc/camera/configuration/parameters/Metering;
 
-    .line 7171
+    .line 7417
     iget-object v2, p0, Ljp/co/sony/mc/camera/view/FragmentController$ModeAndCameraSwitchCallbackImpl$FocusActionListenerImpl;->mController:Ljp/co/sony/mc/camera/view/FragmentController;
 
     invoke-static {v2}, Ljp/co/sony/mc/camera/view/FragmentController;->-$$Nest$fgetmCameraAccessor(Ljp/co/sony/mc/camera/view/FragmentController;)Ljp/co/sony/mc/camera/CameraAccessor;
 
     move-result-object v2
 
-    .line 7172
+    .line 7418
     invoke-direct {p0}, Ljp/co/sony/mc/camera/view/FragmentController$ModeAndCameraSwitchCallbackImpl$FocusActionListenerImpl;->isTouchAeEnabled()Z
 
     move-result v3
 
-    .line 7171
+    .line 7417
     invoke-interface {v2, v1, v0, v3}, Ljp/co/sony/mc/camera/CameraAccessor;->clearTouchFocus(Ljp/co/sony/mc/camera/configuration/parameters/FocusArea;Ljp/co/sony/mc/camera/configuration/parameters/Metering;Z)V
 
-    .line 7173
+    .line 7419
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/FragmentController$ModeAndCameraSwitchCallbackImpl$FocusActionListenerImpl;->mController:Ljp/co/sony/mc/camera/view/FragmentController;
 
     const/4 v0, 0x0
@@ -398,7 +374,7 @@
 .method public onTouchFocusVisibilityChanged(Z)V
     .locals 1
 
-    .line 7183
+    .line 7429
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/FragmentController$ModeAndCameraSwitchCallbackImpl$FocusActionListenerImpl;->mController:Ljp/co/sony/mc/camera/view/FragmentController;
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/view/FragmentController;->-$$Nest$misObjectTrackingAfterS1(Ljp/co/sony/mc/camera/view/FragmentController;)Z
@@ -409,7 +385,7 @@
 
     if-eqz p1, :cond_0
 
-    .line 7184
+    .line 7430
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/FragmentController$ModeAndCameraSwitchCallbackImpl$FocusActionListenerImpl;->mController:Ljp/co/sony/mc/camera/view/FragmentController;
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/view/FragmentController;->-$$Nest$fgetmYuvFrameDrawModeController(Ljp/co/sony/mc/camera/view/FragmentController;)Ljp/co/sony/mc/camera/view/FragmentController$YuvFrameDrawModeController;
@@ -420,7 +396,7 @@
 
     goto :goto_0
 
-    .line 7185
+    .line 7431
     :cond_0
     invoke-static {}, Ljp/co/sony/mc/camera/setting/CameraProSetting;->getInstance()Ljp/co/sony/mc/camera/setting/CameraProSetting;
 
@@ -438,20 +414,20 @@
 
     if-eqz p1, :cond_1
 
-    .line 7187
+    .line 7433
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/FragmentController$ModeAndCameraSwitchCallbackImpl$FocusActionListenerImpl;->mCameraAccessor:Ljp/co/sony/mc/camera/CameraAccessor;
 
     invoke-interface {v0}, Ljp/co/sony/mc/camera/CameraAccessor;->stopFaceDetection()V
 
     goto :goto_0
 
-    .line 7189
+    .line 7435
     :cond_1
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/FragmentController$ModeAndCameraSwitchCallbackImpl$FocusActionListenerImpl;->mController:Ljp/co/sony/mc/camera/view/FragmentController;
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/view/FragmentController;->-$$Nest$mswitchFaceDetection(Ljp/co/sony/mc/camera/view/FragmentController;)V
 
-    .line 7192
+    .line 7438
     :cond_2
     :goto_0
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/FragmentController$ModeAndCameraSwitchCallbackImpl$FocusActionListenerImpl;->mController:Ljp/co/sony/mc/camera/view/FragmentController;

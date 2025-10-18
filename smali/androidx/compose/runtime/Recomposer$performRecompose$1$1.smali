@@ -26,7 +26,7 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/SourceDebugExtension;
-    value = "SMAP\nRecomposer.kt\nKotlin\n*S Kotlin\n*F\n+ 1 Recomposer.kt\nandroidx/compose/runtime/Recomposer$performRecompose$1$1\n+ 2 IdentityArraySet.kt\nandroidx/compose/runtime/collection/IdentityArraySet\n*L\n1#1,1502:1\n108#2,7:1503\n*S KotlinDebug\n*F\n+ 1 Recomposer.kt\nandroidx/compose/runtime/Recomposer$performRecompose$1$1\n*L\n1094#1:1503,7\n*E\n"
+    value = "SMAP\nRecomposer.kt\nKotlin\n*S Kotlin\n*F\n+ 1 Recomposer.kt\nandroidx/compose/runtime/Recomposer$performRecompose$1$1\n+ 2 IdentityArraySet.kt\nandroidx/compose/runtime/collection/IdentityArraySet\n*L\n1#1,1564:1\n108#2,7:1565\n*S KotlinDebug\n*F\n+ 1 Recomposer.kt\nandroidx/compose/runtime/Recomposer$performRecompose$1$1\n*L\n1152#1:1565,7\n*E\n"
 .end annotation
 
 .annotation runtime Lkotlin/Metadata;
@@ -92,7 +92,7 @@
 .method public bridge synthetic invoke()Ljava/lang/Object;
     .locals 0
 
-    .line 1093
+    .line 1151
     invoke-virtual {p0}, Landroidx/compose/runtime/Recomposer$performRecompose$1$1;->invoke()V
 
     sget-object p0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
@@ -103,17 +103,17 @@
 .method public final invoke()V
     .locals 5
 
-    .line 1094
+    .line 1152
     iget-object v0, p0, Landroidx/compose/runtime/Recomposer$performRecompose$1$1;->$modifiedValues:Landroidx/compose/runtime/collection/IdentityArraySet;
 
     iget-object p0, p0, Landroidx/compose/runtime/Recomposer$performRecompose$1$1;->$composition:Landroidx/compose/runtime/ControlledComposition;
 
-    .line 1504
+    .line 1566
     invoke-virtual {v0}, Landroidx/compose/runtime/collection/IdentityArraySet;->getValues()[Ljava/lang/Object;
 
     move-result-object v1
 
-    .line 1505
+    .line 1567
     invoke-virtual {v0}, Landroidx/compose/runtime/collection/IdentityArraySet;->size()I
 
     move-result v0
@@ -123,14 +123,14 @@
     :goto_0
     if-ge v2, v0, :cond_0
 
-    .line 1507
+    .line 1569
     aget-object v3, v1, v2
 
     const-string v4, "null cannot be cast to non-null type T of androidx.compose.runtime.collection.IdentityArraySet"
 
     invoke-static {v3, v4}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 1094
+    .line 1152
     invoke-interface {p0, v3}, Landroidx/compose/runtime/ControlledComposition;->recordWriteOf(Ljava/lang/Object;)V
 
     add-int/lit8 v2, v2, 0x1

@@ -21,7 +21,7 @@
 .method constructor <init>()V
     .locals 0
 
-    .line 923
+    .line 977
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -42,11 +42,11 @@
         }
     .end annotation
 
-    .line 927
+    .line 981
     check-cast p1, Ljp/co/sony/mc/camera/setting/CameraSettings;
 
-    .line 928
-    invoke-virtual {p1}, Ljp/co/sony/mc/camera/setting/CameraSettings;->getBrightness()Ljava/lang/Integer;
+    .line 982
+    invoke-virtual {p1}, Ljp/co/sony/mc/camera/setting/CameraSettings;->getSemiAutoMode()Ljp/co/sony/mc/camera/configuration/parameters/SemiAutoMode;
 
     move-result-object p0
 

@@ -4,20 +4,4 @@
         <item quantity="other">%d жаңа хабарландыру</item>
         <item quantity="one">%d жаңа хабарландыру</item>
     </plurals>
-    <plurals name="mv_minute_remaining_txt">
-        <item quantity="other">%1$d минут қалды</item>
-        <item quantity="one">1 минут қалды</item>
-    </plurals>
-    <plurals name="mv_minute_txt">
-        <item quantity="other">%1$d минут</item>
-        <item quantity="one">1 минут</item>
-    </plurals>
-    <plurals name="mv_second_remaining_txt">
-        <item quantity="other">%1$d секунд қалды</item>
-        <item quantity="one">1 секунд қалды</item>
-    </plurals>
-    <plurals name="mv_second_txt">
-        <item quantity="other">%1$d секунд</item>
-        <item quantity="one">1 секунд</item>
-    </plurals>
 </resources>

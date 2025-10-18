@@ -5,7 +5,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/SourceDebugExtension;
-    value = "SMAP\nMaterialTheme.kt\nKotlin\n*S Kotlin\n*F\n+ 1 MaterialTheme.kt\nandroidx/compose/material/MaterialThemeKt\n+ 2 Composables.kt\nandroidx/compose/runtime/ComposablesKt\n+ 3 Composer.kt\nandroidx/compose/runtime/ComposerKt\n+ 4 fake.kt\nkotlin/jvm/internal/FakeKt\n*L\n1#1,139:1\n25#2:140\n1097#3,6:141\n1#4:147\n*S KotlinDebug\n*F\n+ 1 MaterialTheme.kt\nandroidx/compose/material/MaterialThemeKt\n*L\n65#1:140\n65#1:141,6\n*E\n"
+    value = "SMAP\nMaterialTheme.kt\nKotlin\n*S Kotlin\n*F\n+ 1 MaterialTheme.kt\nandroidx/compose/material/MaterialThemeKt\n+ 2 Composables.kt\nandroidx/compose/runtime/ComposablesKt\n+ 3 Composer.kt\nandroidx/compose/runtime/ComposerKt\n+ 4 fake.kt\nkotlin/jvm/internal/FakeKt\n*L\n1#1,139:1\n25#2:140\n1116#3,6:141\n1#4:147\n*S KotlinDebug\n*F\n+ 1 MaterialTheme.kt\nandroidx/compose/material/MaterialThemeKt\n*L\n65#1:140\n65#1:141,6\n*E\n"
 .end annotation
 
 .annotation runtime Lkotlin/Metadata;
@@ -39,7 +39,7 @@
 
 # direct methods
 .method public static final MaterialTheme(Landroidx/compose/material/Colors;Landroidx/compose/material/Typography;Landroidx/compose/material/Shapes;Lkotlin/jvm/functions/Function2;Landroidx/compose/runtime/Composer;II)V
-    .locals 44
+    .locals 43
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -61,10 +61,6 @@
     move-object/from16 v4, p3
 
     move/from16 v5, p5
-
-    const-string v0, "content"
-
-    invoke-static {v4, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
     const v0, -0x3521f1f7    # -7276292.5f
 
@@ -331,8 +327,6 @@
     and-int/lit16 v6, v6, -0x381
 
     :cond_14
-    move v10, v6
-
     move-object v12, v7
 
     move-object v11, v8
@@ -341,16 +335,16 @@
 
     invoke-static {}, Landroidx/compose/runtime/ComposerKt;->isTraceInProgress()Z
 
-    move-result v6
+    move-result v7
 
-    if-eqz v6, :cond_15
+    if-eqz v7, :cond_15
 
-    const/4 v6, -0x1
+    const/4 v7, -0x1
 
-    const-string v7, "androidx.compose.material.MaterialTheme (MaterialTheme.kt:58)"
+    const-string v8, "androidx.compose.material.MaterialTheme (MaterialTheme.kt:63)"
 
     .line 64
-    invoke-static {v0, v10, v6, v7}, Landroidx/compose/runtime/ComposerKt;->traceEventStart(IIILjava/lang/String;)V
+    invoke-static {v0, v6, v7, v8}, Landroidx/compose/runtime/ComposerKt;->traceEventStart(IIILjava/lang/String;)V
 
     :cond_15
     const v0, -0x1d58f75c
@@ -435,8 +429,6 @@
 
     const-wide/16 v8, 0x0
 
-    move/from16 v43, v10
-
     move-object v10, v1
 
     move-object v3, v11
@@ -459,119 +451,115 @@
 
     move-result-object v8
 
+    const/4 v9, 0x7
+
     .line 73
+    new-array v9, v9, [Landroidx/compose/runtime/ProvidedValue;
+
     invoke-static {}, Landroidx/compose/material/ColorsKt;->getLocalColors()Landroidx/compose/runtime/ProvidableCompositionLocal;
 
-    move-result-object v9
+    move-result-object v10
 
-    invoke-virtual {v9, v0}, Landroidx/compose/runtime/ProvidableCompositionLocal;->provides(Ljava/lang/Object;)Landroidx/compose/runtime/ProvidedValue;
+    invoke-virtual {v10, v0}, Landroidx/compose/runtime/ProvidableCompositionLocal;->provides(Ljava/lang/Object;)Landroidx/compose/runtime/ProvidedValue;
 
     move-result-object v0
+
+    aput-object v0, v9, v7
 
     .line 74
     invoke-static {}, Landroidx/compose/material/ContentAlphaKt;->getLocalContentAlpha()Landroidx/compose/runtime/ProvidableCompositionLocal;
 
-    move-result-object v9
+    move-result-object v0
 
-    sget-object v10, Landroidx/compose/material/ContentAlpha;->INSTANCE:Landroidx/compose/material/ContentAlpha;
+    sget-object v7, Landroidx/compose/material/ContentAlpha;->INSTANCE:Landroidx/compose/material/ContentAlpha;
 
-    invoke-virtual {v10, v1, v14}, Landroidx/compose/material/ContentAlpha;->getHigh(Landroidx/compose/runtime/Composer;I)F
+    invoke-virtual {v7, v1, v14}, Landroidx/compose/material/ContentAlpha;->getHigh(Landroidx/compose/runtime/Composer;I)F
 
-    move-result v10
+    move-result v7
 
-    invoke-static {v10}, Ljava/lang/Float;->valueOf(F)Ljava/lang/Float;
+    invoke-static {v7}, Ljava/lang/Float;->valueOf(F)Ljava/lang/Float;
 
-    move-result-object v10
+    move-result-object v7
 
-    invoke-virtual {v9, v10}, Landroidx/compose/runtime/ProvidableCompositionLocal;->provides(Ljava/lang/Object;)Landroidx/compose/runtime/ProvidedValue;
+    invoke-virtual {v0, v7}, Landroidx/compose/runtime/ProvidableCompositionLocal;->provides(Ljava/lang/Object;)Landroidx/compose/runtime/ProvidedValue;
 
-    move-result-object v9
+    move-result-object v0
+
+    const/4 v7, 0x1
+
+    aput-object v0, v9, v7
 
     .line 75
     invoke-static {}, Landroidx/compose/foundation/IndicationKt;->getLocalIndication()Landroidx/compose/runtime/ProvidableCompositionLocal;
 
-    move-result-object v10
+    move-result-object v0
 
-    invoke-virtual {v10, v6}, Landroidx/compose/runtime/ProvidableCompositionLocal;->provides(Ljava/lang/Object;)Landroidx/compose/runtime/ProvidedValue;
+    invoke-virtual {v0, v6}, Landroidx/compose/runtime/ProvidableCompositionLocal;->provides(Ljava/lang/Object;)Landroidx/compose/runtime/ProvidedValue;
 
-    move-result-object v6
+    move-result-object v0
+
+    aput-object v0, v9, v13
 
     .line 76
     invoke-static {}, Landroidx/compose/material/ripple/RippleThemeKt;->getLocalRippleTheme()Landroidx/compose/runtime/ProvidableCompositionLocal;
 
-    move-result-object v10
+    move-result-object v0
 
-    sget-object v11, Landroidx/compose/material/MaterialRippleTheme;->INSTANCE:Landroidx/compose/material/MaterialRippleTheme;
+    sget-object v6, Landroidx/compose/material/MaterialRippleTheme;->INSTANCE:Landroidx/compose/material/MaterialRippleTheme;
 
-    invoke-virtual {v10, v11}, Landroidx/compose/runtime/ProvidableCompositionLocal;->provides(Ljava/lang/Object;)Landroidx/compose/runtime/ProvidedValue;
+    invoke-virtual {v0, v6}, Landroidx/compose/runtime/ProvidableCompositionLocal;->provides(Ljava/lang/Object;)Landroidx/compose/runtime/ProvidedValue;
 
-    move-result-object v10
+    move-result-object v0
+
+    const/4 v6, 0x3
+
+    aput-object v0, v9, v6
 
     .line 77
     invoke-static {}, Landroidx/compose/material/ShapesKt;->getLocalShapes()Landroidx/compose/runtime/ProvidableCompositionLocal;
 
-    move-result-object v11
+    move-result-object v0
 
-    invoke-virtual {v11, v3}, Landroidx/compose/runtime/ProvidableCompositionLocal;->provides(Ljava/lang/Object;)Landroidx/compose/runtime/ProvidedValue;
+    invoke-virtual {v0, v3}, Landroidx/compose/runtime/ProvidableCompositionLocal;->provides(Ljava/lang/Object;)Landroidx/compose/runtime/ProvidedValue;
 
-    move-result-object v11
+    move-result-object v0
+
+    const/4 v6, 0x4
+
+    aput-object v0, v9, v6
 
     .line 78
     invoke-static {}, Landroidx/compose/foundation/text/selection/TextSelectionColorsKt;->getLocalTextSelectionColors()Landroidx/compose/runtime/ProvidableCompositionLocal;
 
-    move-result-object v12
+    move-result-object v0
 
-    invoke-virtual {v12, v8}, Landroidx/compose/runtime/ProvidableCompositionLocal;->provides(Ljava/lang/Object;)Landroidx/compose/runtime/ProvidedValue;
+    invoke-virtual {v0, v8}, Landroidx/compose/runtime/ProvidableCompositionLocal;->provides(Ljava/lang/Object;)Landroidx/compose/runtime/ProvidedValue;
 
-    move-result-object v8
+    move-result-object v0
+
+    const/4 v6, 0x5
+
+    aput-object v0, v9, v6
 
     .line 79
     invoke-static {}, Landroidx/compose/material/TypographyKt;->getLocalTypography()Landroidx/compose/runtime/ProvidableCompositionLocal;
 
-    move-result-object v12
+    move-result-object v0
 
-    invoke-virtual {v12, v15}, Landroidx/compose/runtime/ProvidableCompositionLocal;->provides(Ljava/lang/Object;)Landroidx/compose/runtime/ProvidedValue;
+    invoke-virtual {v0, v15}, Landroidx/compose/runtime/ProvidableCompositionLocal;->provides(Ljava/lang/Object;)Landroidx/compose/runtime/ProvidedValue;
 
-    move-result-object v12
+    move-result-object v0
 
-    const/4 v14, 0x7
-
-    new-array v14, v14, [Landroidx/compose/runtime/ProvidedValue;
-
-    aput-object v0, v14, v7
-
-    const/4 v0, 0x1
-
-    aput-object v9, v14, v0
-
-    aput-object v6, v14, v13
-
-    const/4 v6, 0x3
-
-    aput-object v10, v14, v6
-
-    const/4 v6, 0x4
-
-    aput-object v11, v14, v6
-
-    const/4 v6, 0x5
-
-    aput-object v8, v14, v6
-
-    const/4 v6, 0x6
-
-    aput-object v12, v14, v6
+    aput-object v0, v9, v14
 
     .line 80
-    new-instance v6, Landroidx/compose/material/MaterialThemeKt$MaterialTheme$1;
+    new-instance v0, Landroidx/compose/material/MaterialThemeKt$MaterialTheme$1;
 
-    move/from16 v7, v43
+    invoke-direct {v0, v15, v4}, Landroidx/compose/material/MaterialThemeKt$MaterialTheme$1;-><init>(Landroidx/compose/material/Typography;Lkotlin/jvm/functions/Function2;)V
 
-    invoke-direct {v6, v15, v4, v7}, Landroidx/compose/material/MaterialThemeKt$MaterialTheme$1;-><init>(Landroidx/compose/material/Typography;Lkotlin/jvm/functions/Function2;I)V
+    const v6, -0x67b7dd37
 
-    const v7, -0x67b7dd37
-
-    invoke-static {v1, v7, v0, v6}, Landroidx/compose/runtime/internal/ComposableLambdaKt;->composableLambda(Landroidx/compose/runtime/Composer;IZLjava/lang/Object;)Landroidx/compose/runtime/internal/ComposableLambda;
+    invoke-static {v1, v6, v7, v0}, Landroidx/compose/runtime/internal/ComposableLambdaKt;->composableLambda(Landroidx/compose/runtime/Composer;IZLjava/lang/Object;)Landroidx/compose/runtime/internal/ComposableLambda;
 
     move-result-object v0
 
@@ -580,7 +568,7 @@
     const/16 v6, 0x38
 
     .line 72
-    invoke-static {v14, v0, v1, v6}, Landroidx/compose/runtime/CompositionLocalKt;->CompositionLocalProvider([Landroidx/compose/runtime/ProvidedValue;Lkotlin/jvm/functions/Function2;Landroidx/compose/runtime/Composer;I)V
+    invoke-static {v9, v0, v1, v6}, Landroidx/compose/runtime/CompositionLocalKt;->CompositionLocalProvider([Landroidx/compose/runtime/ProvidedValue;Lkotlin/jvm/functions/Function2;Landroidx/compose/runtime/Composer;I)V
 
     invoke-static {}, Landroidx/compose/runtime/ComposerKt;->isTraceInProgress()Z
 
@@ -597,11 +585,8 @@
 
     move-result-object v7
 
-    if-nez v7, :cond_18
+    if-eqz v7, :cond_18
 
-    goto :goto_c
-
-    :cond_18
     new-instance v8, Landroidx/compose/material/MaterialThemeKt$MaterialTheme$2;
 
     move-object v0, v8
@@ -622,6 +607,6 @@
 
     invoke-interface {v7, v8}, Landroidx/compose/runtime/ScopeUpdateScope;->updateScope(Lkotlin/jvm/functions/Function2;)V
 
-    :goto_c
+    :cond_18
     return-void
 .end method

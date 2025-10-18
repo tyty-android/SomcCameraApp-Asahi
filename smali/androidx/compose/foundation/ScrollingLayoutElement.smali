@@ -1,4 +1,4 @@
-.class final Landroidx/compose/foundation/ScrollingLayoutElement;
+.class public final Landroidx/compose/foundation/ScrollingLayoutElement;
 .super Landroidx/compose/ui/node/ModifierNodeElement;
 .source "Scroll.kt"
 
@@ -14,7 +14,7 @@
 
 .annotation runtime Lkotlin/Metadata;
     d1 = {
-        "\u00006\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000b\n\u0002\u0008\u0008\n\u0002\u0010\u0000\n\u0000\n\u0002\u0010\u0008\n\u0000\n\u0002\u0010\u0002\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0000\u0008\u0002\u0018\u00002\u0008\u0012\u0004\u0012\u00020\u00020\u0001B\u001d\u0012\u0006\u0010\u0003\u001a\u00020\u0004\u0012\u0006\u0010\u0005\u001a\u00020\u0006\u0012\u0006\u0010\u0007\u001a\u00020\u0006\u00a2\u0006\u0002\u0010\u0008J\u0008\u0010\u000c\u001a\u00020\u0002H\u0016J\u0013\u0010\r\u001a\u00020\u00062\u0008\u0010\u000e\u001a\u0004\u0018\u00010\u000fH\u0096\u0002J\u0008\u0010\u0010\u001a\u00020\u0011H\u0016J\u0010\u0010\u0012\u001a\u00020\u00132\u0006\u0010\u0014\u001a\u00020\u0002H\u0016J\u000c\u0010\u0015\u001a\u00020\u0013*\u00020\u0016H\u0016R\u0011\u0010\u0005\u001a\u00020\u0006\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\u0005\u0010\tR\u0011\u0010\u0007\u001a\u00020\u0006\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\u0007\u0010\tR\u0011\u0010\u0003\u001a\u00020\u0004\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\n\u0010\u000b\u00a8\u0006\u0017"
+        "\u00006\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000b\n\u0002\u0008\u0008\n\u0002\u0010\u0000\n\u0000\n\u0002\u0010\u0008\n\u0000\n\u0002\u0010\u0002\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0000\u0008\u0000\u0018\u00002\u0008\u0012\u0004\u0012\u00020\u00020\u0001B\u001d\u0012\u0006\u0010\u0003\u001a\u00020\u0004\u0012\u0006\u0010\u0005\u001a\u00020\u0006\u0012\u0006\u0010\u0007\u001a\u00020\u0006\u00a2\u0006\u0002\u0010\u0008J\u0008\u0010\u000c\u001a\u00020\u0002H\u0016J\u0013\u0010\r\u001a\u00020\u00062\u0008\u0010\u000e\u001a\u0004\u0018\u00010\u000fH\u0096\u0002J\u0008\u0010\u0010\u001a\u00020\u0011H\u0016J\u0010\u0010\u0012\u001a\u00020\u00132\u0006\u0010\u0014\u001a\u00020\u0002H\u0016J\u000c\u0010\u0015\u001a\u00020\u0013*\u00020\u0016H\u0016R\u0011\u0010\u0005\u001a\u00020\u0006\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\u0005\u0010\tR\u0011\u0010\u0007\u001a\u00020\u0006\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\u0007\u0010\tR\u0011\u0010\u0003\u001a\u00020\u0004\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\n\u0010\u000b\u00a8\u0006\u0017"
     }
     d2 = {
         "Landroidx/compose/foundation/ScrollingLayoutElement;",
@@ -52,6 +52,10 @@
 .end annotation
 
 
+# static fields
+.field public static final $stable:I
+
+
 # instance fields
 .field private final isReversed:Z
 
@@ -61,23 +65,25 @@
 
 
 # direct methods
+.method static constructor <clinit>()V
+    .locals 0
+
+    return-void
+.end method
+
 .method public constructor <init>(Landroidx/compose/foundation/ScrollState;ZZ)V
-    .locals 1
+    .locals 0
 
-    const-string v0, "scrollState"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 334
+    .line 339
     invoke-direct {p0}, Landroidx/compose/ui/node/ModifierNodeElement;-><init>()V
 
-    .line 331
+    .line 336
     iput-object p1, p0, Landroidx/compose/foundation/ScrollingLayoutElement;->scrollState:Landroidx/compose/foundation/ScrollState;
 
-    .line 332
+    .line 337
     iput-boolean p2, p0, Landroidx/compose/foundation/ScrollingLayoutElement;->isReversed:Z
 
-    .line 333
+    .line 338
     iput-boolean p3, p0, Landroidx/compose/foundation/ScrollingLayoutElement;->isVertical:Z
 
     return-void
@@ -88,19 +94,19 @@
 .method public create()Landroidx/compose/foundation/ScrollingLayoutNode;
     .locals 3
 
-    .line 336
+    .line 341
     new-instance v0, Landroidx/compose/foundation/ScrollingLayoutNode;
 
-    .line 337
+    .line 342
     iget-object v1, p0, Landroidx/compose/foundation/ScrollingLayoutElement;->scrollState:Landroidx/compose/foundation/ScrollState;
 
-    .line 338
+    .line 343
     iget-boolean v2, p0, Landroidx/compose/foundation/ScrollingLayoutElement;->isReversed:Z
 
-    .line 339
+    .line 344
     iget-boolean p0, p0, Landroidx/compose/foundation/ScrollingLayoutElement;->isVertical:Z
 
-    .line 336
+    .line 341
     invoke-direct {v0, v1, v2, p0}, Landroidx/compose/foundation/ScrollingLayoutNode;-><init>(Landroidx/compose/foundation/ScrollState;ZZ)V
 
     return-object v0
@@ -109,7 +115,7 @@
 .method public bridge synthetic create()Landroidx/compose/ui/Modifier$Node;
     .locals 0
 
-    .line 330
+    .line 335
     invoke-virtual {p0}, Landroidx/compose/foundation/ScrollingLayoutElement;->create()Landroidx/compose/foundation/ScrollingLayoutNode;
 
     move-result-object p0
@@ -122,7 +128,7 @@
 .method public equals(Ljava/lang/Object;)Z
     .locals 3
 
-    .line 357
+    .line 362
     instance-of v0, p1, Landroidx/compose/foundation/ScrollingLayoutElement;
 
     const/4 v1, 0x0
@@ -131,7 +137,7 @@
 
     return v1
 
-    .line 358
+    .line 363
     :cond_0
     iget-object v0, p0, Landroidx/compose/foundation/ScrollingLayoutElement;->scrollState:Landroidx/compose/foundation/ScrollState;
 
@@ -145,14 +151,14 @@
 
     if-eqz v0, :cond_1
 
-    .line 359
+    .line 364
     iget-boolean v0, p0, Landroidx/compose/foundation/ScrollingLayoutElement;->isReversed:Z
 
     iget-boolean v2, p1, Landroidx/compose/foundation/ScrollingLayoutElement;->isReversed:Z
 
     if-ne v0, v2, :cond_1
 
-    .line 360
+    .line 365
     iget-boolean p0, p0, Landroidx/compose/foundation/ScrollingLayoutElement;->isVertical:Z
 
     iget-boolean p1, p1, Landroidx/compose/foundation/ScrollingLayoutElement;->isVertical:Z
@@ -168,7 +174,7 @@
 .method public final getScrollState()Landroidx/compose/foundation/ScrollState;
     .locals 0
 
-    .line 331
+    .line 336
     iget-object p0, p0, Landroidx/compose/foundation/ScrollingLayoutElement;->scrollState:Landroidx/compose/foundation/ScrollState;
 
     return-object p0
@@ -177,7 +183,7 @@
 .method public hashCode()I
     .locals 2
 
-    .line 350
+    .line 355
     iget-object v0, p0, Landroidx/compose/foundation/ScrollingLayoutElement;->scrollState:Landroidx/compose/foundation/ScrollState;
 
     invoke-virtual {v0}, Landroidx/compose/foundation/ScrollState;->hashCode()I
@@ -186,7 +192,7 @@
 
     mul-int/lit8 v0, v0, 0x1f
 
-    .line 351
+    .line 356
     iget-boolean v1, p0, Landroidx/compose/foundation/ScrollingLayoutElement;->isReversed:Z
 
     invoke-static {v1}, Ljava/lang/Boolean;->hashCode(Z)I
@@ -197,7 +203,7 @@
 
     mul-int/lit8 v0, v0, 0x1f
 
-    .line 352
+    .line 357
     iget-boolean p0, p0, Landroidx/compose/foundation/ScrollingLayoutElement;->isVertical:Z
 
     invoke-static {p0}, Ljava/lang/Boolean;->hashCode(Z)I
@@ -212,16 +218,12 @@
 .method public inspectableProperties(Landroidx/compose/ui/platform/InspectorInfo;)V
     .locals 3
 
-    const-string v0, "<this>"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 364
+    .line 369
     const-string v0, "layoutInScroll"
 
     invoke-virtual {p1, v0}, Landroidx/compose/ui/platform/InspectorInfo;->setName(Ljava/lang/String;)V
 
-    .line 365
+    .line 370
     invoke-virtual {p1}, Landroidx/compose/ui/platform/InspectorInfo;->getProperties()Landroidx/compose/ui/platform/ValueElementSequence;
 
     move-result-object v0
@@ -232,7 +234,7 @@
 
     invoke-virtual {v0, v1, v2}, Landroidx/compose/ui/platform/ValueElementSequence;->set(Ljava/lang/String;Ljava/lang/Object;)V
 
-    .line 366
+    .line 371
     invoke-virtual {p1}, Landroidx/compose/ui/platform/InspectorInfo;->getProperties()Landroidx/compose/ui/platform/ValueElementSequence;
 
     move-result-object v0
@@ -247,7 +249,7 @@
 
     invoke-virtual {v0, v2, v1}, Landroidx/compose/ui/platform/ValueElementSequence;->set(Ljava/lang/String;Ljava/lang/Object;)V
 
-    .line 367
+    .line 372
     invoke-virtual {p1}, Landroidx/compose/ui/platform/InspectorInfo;->getProperties()Landroidx/compose/ui/platform/ValueElementSequence;
 
     move-result-object p1
@@ -268,7 +270,7 @@
 .method public final isReversed()Z
     .locals 0
 
-    .line 332
+    .line 337
     iget-boolean p0, p0, Landroidx/compose/foundation/ScrollingLayoutElement;->isReversed:Z
 
     return p0
@@ -277,7 +279,7 @@
 .method public final isVertical()Z
     .locals 0
 
-    .line 333
+    .line 338
     iget-boolean p0, p0, Landroidx/compose/foundation/ScrollingLayoutElement;->isVertical:Z
 
     return p0
@@ -286,21 +288,17 @@
 .method public update(Landroidx/compose/foundation/ScrollingLayoutNode;)V
     .locals 1
 
-    const-string v0, "node"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 344
+    .line 349
     iget-object v0, p0, Landroidx/compose/foundation/ScrollingLayoutElement;->scrollState:Landroidx/compose/foundation/ScrollState;
 
     invoke-virtual {p1, v0}, Landroidx/compose/foundation/ScrollingLayoutNode;->setScrollerState(Landroidx/compose/foundation/ScrollState;)V
 
-    .line 345
+    .line 350
     iget-boolean v0, p0, Landroidx/compose/foundation/ScrollingLayoutElement;->isReversed:Z
 
     invoke-virtual {p1, v0}, Landroidx/compose/foundation/ScrollingLayoutNode;->setReversed(Z)V
 
-    .line 346
+    .line 351
     iget-boolean p0, p0, Landroidx/compose/foundation/ScrollingLayoutElement;->isVertical:Z
 
     invoke-virtual {p1, p0}, Landroidx/compose/foundation/ScrollingLayoutNode;->setVertical(Z)V
@@ -311,7 +309,7 @@
 .method public bridge synthetic update(Landroidx/compose/ui/Modifier$Node;)V
     .locals 0
 
-    .line 330
+    .line 335
     check-cast p1, Landroidx/compose/foundation/ScrollingLayoutNode;
 
     invoke-virtual {p0, p1}, Landroidx/compose/foundation/ScrollingLayoutElement;->update(Landroidx/compose/foundation/ScrollingLayoutNode;)V

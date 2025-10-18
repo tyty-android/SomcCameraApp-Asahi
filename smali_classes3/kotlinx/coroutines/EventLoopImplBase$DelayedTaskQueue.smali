@@ -37,7 +37,7 @@
     k = 0x1
     mv = {
         0x1,
-        0x6,
+        0x8,
         0x0
     }
     xi = 0x30
@@ -52,10 +52,10 @@
 .method public constructor <init>(J)V
     .locals 0
 
-    .line 529
+    .line 522
     invoke-direct {p0}, Lkotlinx/coroutines/internal/ThreadSafeHeap;-><init>()V
 
-    .line 528
+    .line 521
     iput-wide p1, p0, Lkotlinx/coroutines/EventLoopImplBase$DelayedTaskQueue;->timeNow:J
 
     return-void

@@ -1,6 +1,6 @@
 .class final Landroidx/compose/material/ExposedDropdownMenuDefaults$TrailingIcon$1;
 .super Lkotlin/jvm/internal/Lambda;
-.source "ExposedDropdownMenu.kt"
+.source "ExposedDropdownMenu.android.kt"
 
 # interfaces
 .implements Lkotlin/jvm/functions/Function0;

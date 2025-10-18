@@ -41,7 +41,7 @@
 .method private constructor <init>()V
     .locals 0
 
-    .line 49
+    .line 50
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -60,7 +60,7 @@
 .method public final getEMPTY()Lkotlin/ranges/ULongRange;
     .locals 0
 
-    .line 51
+    .line 52
     invoke-static {}, Lkotlin/ranges/ULongRange;->access$getEMPTY$cp()Lkotlin/ranges/ULongRange;
 
     move-result-object p0

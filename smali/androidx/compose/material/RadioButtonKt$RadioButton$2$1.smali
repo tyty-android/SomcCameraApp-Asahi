@@ -120,10 +120,6 @@
 
     move-object/from16 v13, p1
 
-    const-string v1, "$this$Canvas"
-
-    invoke-static {v13, v1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
     .line 118
     invoke-static {}, Landroidx/compose/material/RadioButtonKt;->access$getRadioStrokeWidth$p()F
 

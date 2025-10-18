@@ -79,7 +79,7 @@
 .method static constructor <clinit>()V
     .locals 3
 
-    .line 71
+    .line 67
     new-instance v0, Landroidx/compose/ui/text/input/TextInputServiceAndroid$TextInputCommand;
 
     const-string v1, "StartInput"
@@ -90,7 +90,7 @@
 
     sput-object v0, Landroidx/compose/ui/text/input/TextInputServiceAndroid$TextInputCommand;->StartInput:Landroidx/compose/ui/text/input/TextInputServiceAndroid$TextInputCommand;
 
-    .line 72
+    .line 68
     new-instance v0, Landroidx/compose/ui/text/input/TextInputServiceAndroid$TextInputCommand;
 
     const-string v1, "StopInput"
@@ -101,7 +101,7 @@
 
     sput-object v0, Landroidx/compose/ui/text/input/TextInputServiceAndroid$TextInputCommand;->StopInput:Landroidx/compose/ui/text/input/TextInputServiceAndroid$TextInputCommand;
 
-    .line 73
+    .line 69
     new-instance v0, Landroidx/compose/ui/text/input/TextInputServiceAndroid$TextInputCommand;
 
     const-string v1, "ShowKeyboard"
@@ -112,7 +112,7 @@
 
     sput-object v0, Landroidx/compose/ui/text/input/TextInputServiceAndroid$TextInputCommand;->ShowKeyboard:Landroidx/compose/ui/text/input/TextInputServiceAndroid$TextInputCommand;
 
-    .line 74
+    .line 70
     new-instance v0, Landroidx/compose/ui/text/input/TextInputServiceAndroid$TextInputCommand;
 
     const-string v1, "HideKeyboard"
@@ -140,7 +140,7 @@
         }
     .end annotation
 
-    .line 70
+    .line 66
     invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
     return-void

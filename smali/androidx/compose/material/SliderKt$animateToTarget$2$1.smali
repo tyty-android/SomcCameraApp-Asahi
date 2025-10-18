@@ -77,7 +77,7 @@
 .method public bridge synthetic invoke(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
 
-    .line 955
+    .line 959
     check-cast p1, Landroidx/compose/animation/core/Animatable;
 
     invoke-virtual {p0, p1}, Landroidx/compose/material/SliderKt$animateToTarget$2$1;->invoke(Landroidx/compose/animation/core/Animatable;)V
@@ -99,11 +99,7 @@
         }
     .end annotation
 
-    const-string v0, "$this$animateTo"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 956
+    .line 960
     iget-object v0, p0, Landroidx/compose/material/SliderKt$animateToTarget$2$1;->$$this$drag:Landroidx/compose/foundation/gestures/DragScope;
 
     invoke-virtual {p1}, Landroidx/compose/animation/core/Animatable;->getValue()Ljava/lang/Object;
@@ -124,7 +120,7 @@
 
     invoke-interface {v0, v1}, Landroidx/compose/foundation/gestures/DragScope;->dragBy(F)V
 
-    .line 957
+    .line 961
     iget-object p0, p0, Landroidx/compose/material/SliderKt$animateToTarget$2$1;->$latestValue:Lkotlin/jvm/internal/Ref$FloatRef;
 
     invoke-virtual {p1}, Landroidx/compose/animation/core/Animatable;->getValue()Ljava/lang/Object;

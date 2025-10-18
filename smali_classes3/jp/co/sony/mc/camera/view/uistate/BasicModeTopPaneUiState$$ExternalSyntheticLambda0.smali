@@ -3,34 +3,40 @@
 .source "D8$$SyntheticClass"
 
 # interfaces
-.implements Landroid/animation/ValueAnimator$AnimatorUpdateListener;
-
-
-# instance fields
-.field public final synthetic f$0:Ljp/co/sony/mc/camera/view/uistate/BasicModeTopPaneUiState;
+.implements Lkotlin/jvm/functions/Function2;
 
 
 # direct methods
-.method public synthetic constructor <init>(Ljp/co/sony/mc/camera/view/uistate/BasicModeTopPaneUiState;)V
+.method public synthetic constructor <init>()V
     .locals 0
 
     .line 0
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    iput-object p1, p0, Ljp/co/sony/mc/camera/view/uistate/BasicModeTopPaneUiState$$ExternalSyntheticLambda0;->f$0:Ljp/co/sony/mc/camera/view/uistate/BasicModeTopPaneUiState;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final onAnimationUpdate(Landroid/animation/ValueAnimator;)V
+.method public final invoke(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
 
     .line 0
-    iget-object p0, p0, Ljp/co/sony/mc/camera/view/uistate/BasicModeTopPaneUiState$$ExternalSyntheticLambda0;->f$0:Ljp/co/sony/mc/camera/view/uistate/BasicModeTopPaneUiState;
+    check-cast p1, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
-    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/view/uistate/BasicModeTopPaneUiState;->$r8$lambda$o18nnm79gkwjSBiH5wgQZ4Z1i6Q(Ljp/co/sony/mc/camera/view/uistate/BasicModeTopPaneUiState;Landroid/animation/ValueAnimator;)V
+    check-cast p2, Ljava/lang/Boolean;
 
-    return-void
+    invoke-virtual {p2}, Ljava/lang/Boolean;->booleanValue()Z
+
+    move-result p0
+
+    invoke-static {p1, p0}, Ljp/co/sony/mc/camera/view/uistate/BasicModeTopPaneUiState;->$r8$lambda$xo78iPQ6YzOpr2c32GBmn0wJpZY(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Z)Z
+
+    move-result p0
+
+    invoke-static {p0}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
+
+    move-result-object p0
+
+    return-object p0
 .end method

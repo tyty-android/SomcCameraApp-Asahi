@@ -34,7 +34,7 @@
         }
     .end annotation
 
-    .line 5150
+    .line 5328
     iput-object p1, p0, Ljp/co/sony/mc/camera/view/FragmentController$NetworkStateListenerImpl$1;->this$1:Ljp/co/sony/mc/camera/view/FragmentController$NetworkStateListenerImpl;
 
     iput-object p2, p0, Ljp/co/sony/mc/camera/view/FragmentController$NetworkStateListenerImpl$1;->val$networkState:Ljp/co/sony/mc/camera/rtmp/NetworkManager$NetworkState;
@@ -51,7 +51,7 @@
 .method public run()V
     .locals 3
 
-    .line 5153
+    .line 5331
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/FragmentController$NetworkStateListenerImpl$1;->this$1:Ljp/co/sony/mc/camera/view/FragmentController$NetworkStateListenerImpl;
 
     iget-object v0, v0, Ljp/co/sony/mc/camera/view/FragmentController$NetworkStateListenerImpl;->this$0:Ljp/co/sony/mc/camera/view/FragmentController;
@@ -72,10 +72,10 @@
 
     iget-object v2, p0, Ljp/co/sony/mc/camera/view/FragmentController$NetworkStateListenerImpl$1;->val$connectLevel:Ljp/co/sony/mc/camera/rtmp/NetworkManager$ConnectLevel;
 
-    .line 5154
+    .line 5332
     invoke-virtual {v0, v1, v2}, Ljp/co/sony/mc/camera/view/uistate/IndicatorUiState;->onConnectStateChanged(Ljp/co/sony/mc/camera/rtmp/NetworkManager$NetworkState;Ljp/co/sony/mc/camera/rtmp/NetworkManager$ConnectLevel;)V
 
-    .line 5155
+    .line 5333
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/FragmentController$NetworkStateListenerImpl$1;->this$1:Ljp/co/sony/mc/camera/view/FragmentController$NetworkStateListenerImpl;
 
     iget-object v0, v0, Ljp/co/sony/mc/camera/view/FragmentController$NetworkStateListenerImpl;->this$0:Ljp/co/sony/mc/camera/view/FragmentController;

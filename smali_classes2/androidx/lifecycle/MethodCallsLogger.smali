@@ -1,6 +1,6 @@
 .class public Landroidx/lifecycle/MethodCallsLogger;
 .super Ljava/lang/Object;
-.source "MethodCallsLogger.kt"
+.source "MethodCallsLogger.jvm.kt"
 
 
 # annotations
@@ -49,10 +49,10 @@
 .method public constructor <init>()V
     .locals 1
 
-    .line 23
+    .line 20
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 25
+    .line 22
     new-instance v0, Ljava/util/HashMap;
 
     invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
@@ -73,7 +73,7 @@
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 32
+    .line 26
     iget-object v0, p0, Landroidx/lifecycle/MethodCallsLogger;->calledMethods:Ljava/util/Map;
 
     invoke-interface {v0, p1}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
@@ -86,7 +86,7 @@
 
     if-eqz v0, :cond_0
 
-    .line 33
+    .line 27
     invoke-virtual {v0}, Ljava/lang/Integer;->intValue()I
 
     move-result v0
@@ -105,7 +105,7 @@
 
     move v1, v3
 
-    .line 35
+    .line 29
     :cond_1
     iget-object p0, p0, Landroidx/lifecycle/MethodCallsLogger;->calledMethods:Ljava/util/Map;
 

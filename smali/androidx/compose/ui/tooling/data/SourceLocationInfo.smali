@@ -1,6 +1,6 @@
 .class final Landroidx/compose/ui/tooling/data/SourceLocationInfo;
 .super Ljava/lang/Object;
-.source "SlotTree.kt"
+.source "SlotTree.jvm.kt"
 
 
 # annotations
@@ -45,7 +45,7 @@
 .method public constructor <init>(Ljava/lang/Integer;Ljava/lang/Integer;Ljava/lang/Integer;)V
     .locals 0
 
-    .line 202
+    .line 204
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     iput-object p1, p0, Landroidx/compose/ui/tooling/data/SourceLocationInfo;->lineNumber:Ljava/lang/Integer;
@@ -62,7 +62,7 @@
 .method public final getLength()Ljava/lang/Integer;
     .locals 0
 
-    .line 202
+    .line 204
     iget-object p0, p0, Landroidx/compose/ui/tooling/data/SourceLocationInfo;->length:Ljava/lang/Integer;
 
     return-object p0
@@ -71,7 +71,7 @@
 .method public final getLineNumber()Ljava/lang/Integer;
     .locals 0
 
-    .line 202
+    .line 204
     iget-object p0, p0, Landroidx/compose/ui/tooling/data/SourceLocationInfo;->lineNumber:Ljava/lang/Integer;
 
     return-object p0
@@ -80,7 +80,7 @@
 .method public final getOffset()Ljava/lang/Integer;
     .locals 0
 
-    .line 202
+    .line 204
     iget-object p0, p0, Landroidx/compose/ui/tooling/data/SourceLocationInfo;->offset:Ljava/lang/Integer;
 
     return-object p0

@@ -21,7 +21,7 @@
 .method constructor <init>()V
     .locals 0
 
-    .line 763
+    .line 816
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -42,11 +42,11 @@
         }
     .end annotation
 
-    .line 767
+    .line 820
     check-cast p1, Ljp/co/sony/mc/camera/setting/CameraSettings;
 
-    .line 768
-    invoke-static {p1}, Ljp/co/sony/mc/camera/setting/CameraSettings;->-$$Nest$mgetTouchIntention(Ljp/co/sony/mc/camera/setting/CameraSettings;)Ljp/co/sony/mc/camera/configuration/parameters/TouchIntention;
+    .line 821
+    invoke-static {p1}, Ljp/co/sony/mc/camera/setting/CameraSettings;->-$$Nest$mgetTouchCapture(Ljp/co/sony/mc/camera/setting/CameraSettings;)Ljp/co/sony/mc/camera/configuration/parameters/TouchCapture;
 
     move-result-object p0
 

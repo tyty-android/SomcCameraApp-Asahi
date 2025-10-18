@@ -1,6 +1,6 @@
 .class final Landroidx/compose/foundation/text/selection/ClicksCounter;
 .super Ljava/lang/Object;
-.source "TextSelectionMouseDetector.kt"
+.source "SelectionGestures.kt"
 
 
 # annotations
@@ -56,16 +56,12 @@
 
 # direct methods
 .method public constructor <init>(Landroidx/compose/ui/platform/ViewConfiguration;)V
-    .locals 1
+    .locals 0
 
-    const-string/jumbo v0, "viewConfiguration"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 53
+    .line 195
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 54
+    .line 196
     iput-object p1, p0, Landroidx/compose/foundation/text/selection/ClicksCounter;->viewConfiguration:Landroidx/compose/ui/platform/ViewConfiguration;
 
     return-void
@@ -76,7 +72,7 @@
 .method public final getClicks()I
     .locals 0
 
-    .line 56
+    .line 198
     iget p0, p0, Landroidx/compose/foundation/text/selection/ClicksCounter;->clicks:I
 
     return p0
@@ -85,7 +81,7 @@
 .method public final getPrevClick()Landroidx/compose/ui/input/pointer/PointerInputChange;
     .locals 0
 
-    .line 57
+    .line 199
     iget-object p0, p0, Landroidx/compose/foundation/text/selection/ClicksCounter;->prevClick:Landroidx/compose/ui/input/pointer/PointerInputChange;
 
     return-object p0
@@ -94,15 +90,7 @@
 .method public final positionIsTolerable(Landroidx/compose/ui/input/pointer/PointerInputChange;Landroidx/compose/ui/input/pointer/PointerInputChange;)Z
     .locals 2
 
-    const-string p0, "prevClick"
-
-    invoke-static {p1, p0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string p0, "newClick"
-
-    invoke-static {p2, p0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 78
+    .line 219
     invoke-virtual {p2}, Landroidx/compose/ui/input/pointer/PointerInputChange;->getPosition-F1C5BW0()J
 
     move-result-wide v0
@@ -115,7 +103,6 @@
 
     move-result-wide p0
 
-    .line 79
     invoke-static {p0, p1}, Landroidx/compose/ui/geometry/Offset;->getDistance-impl(J)F
 
     move-result p0
@@ -142,7 +129,7 @@
 .method public final setClicks(I)V
     .locals 0
 
-    .line 56
+    .line 198
     iput p1, p0, Landroidx/compose/foundation/text/selection/ClicksCounter;->clicks:I
 
     return-void
@@ -151,7 +138,7 @@
 .method public final setPrevClick(Landroidx/compose/ui/input/pointer/PointerInputChange;)V
     .locals 0
 
-    .line 57
+    .line 199
     iput-object p1, p0, Landroidx/compose/foundation/text/selection/ClicksCounter;->prevClick:Landroidx/compose/ui/input/pointer/PointerInputChange;
 
     return-void
@@ -160,15 +147,7 @@
 .method public final timeIsTolerable(Landroidx/compose/ui/input/pointer/PointerInputChange;Landroidx/compose/ui/input/pointer/PointerInputChange;)Z
     .locals 2
 
-    const-string v0, "prevClick"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string v0, "newClick"
-
-    invoke-static {p2, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 73
+    .line 216
     invoke-virtual {p2}, Landroidx/compose/ui/input/pointer/PointerInputChange;->getUptimeMillis()J
 
     move-result-wide v0
@@ -179,7 +158,6 @@
 
     sub-long/2addr v0, p1
 
-    .line 74
     iget-object p0, p0, Landroidx/compose/foundation/text/selection/ClicksCounter;->viewConfiguration:Landroidx/compose/ui/platform/ViewConfiguration;
 
     invoke-interface {p0}, Landroidx/compose/ui/platform/ViewConfiguration;->getDoubleTapTimeoutMillis()J
@@ -204,14 +182,10 @@
 .method public final update(Landroidx/compose/ui/input/pointer/PointerEvent;)V
     .locals 3
 
-    const-string v0, "event"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 59
+    .line 202
     iget-object v0, p0, Landroidx/compose/foundation/text/selection/ClicksCounter;->prevClick:Landroidx/compose/ui/input/pointer/PointerInputChange;
 
-    .line 60
+    .line 203
     invoke-virtual {p1}, Landroidx/compose/ui/input/pointer/PointerEvent;->getChanges()Ljava/util/List;
 
     move-result-object p1
@@ -228,21 +202,21 @@
 
     if-eqz v0, :cond_0
 
-    .line 62
+    .line 205
     invoke-virtual {p0, v0, p1}, Landroidx/compose/foundation/text/selection/ClicksCounter;->timeIsTolerable(Landroidx/compose/ui/input/pointer/PointerInputChange;Landroidx/compose/ui/input/pointer/PointerInputChange;)Z
 
     move-result v2
 
     if-eqz v2, :cond_0
 
-    .line 63
+    .line 206
     invoke-virtual {p0, v0, p1}, Landroidx/compose/foundation/text/selection/ClicksCounter;->positionIsTolerable(Landroidx/compose/ui/input/pointer/PointerInputChange;Landroidx/compose/ui/input/pointer/PointerInputChange;)Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
-    .line 65
+    .line 208
     iget v0, p0, Landroidx/compose/foundation/text/selection/ClicksCounter;->clicks:I
 
     add-int/2addr v0, v1
@@ -251,11 +225,11 @@
 
     goto :goto_0
 
-    .line 67
+    .line 210
     :cond_0
     iput v1, p0, Landroidx/compose/foundation/text/selection/ClicksCounter;->clicks:I
 
-    .line 69
+    .line 212
     :goto_0
     iput-object p1, p0, Landroidx/compose/foundation/text/selection/ClicksCounter;->prevClick:Landroidx/compose/ui/input/pointer/PointerInputChange;
 

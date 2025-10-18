@@ -36,7 +36,7 @@
 .method private static synthetic $values()[Ljp/co/sony/mc/camera/device/CameraDeviceHandler$CaptureStartPoint;
     .locals 3
 
-    .line 208
+    .line 214
     sget-object v0, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$CaptureStartPoint;->ALREADY_DONE:Ljp/co/sony/mc/camera/device/CameraDeviceHandler$CaptureStartPoint;
 
     sget-object v1, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$CaptureStartPoint;->ON_REQUEST:Ljp/co/sony/mc/camera/device/CameraDeviceHandler$CaptureStartPoint;
@@ -53,7 +53,7 @@
 .method static constructor <clinit>()V
     .locals 3
 
-    .line 209
+    .line 215
     new-instance v0, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$CaptureStartPoint;
 
     const-string v1, "ALREADY_DONE"
@@ -64,7 +64,7 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$CaptureStartPoint;->ALREADY_DONE:Ljp/co/sony/mc/camera/device/CameraDeviceHandler$CaptureStartPoint;
 
-    .line 210
+    .line 216
     new-instance v0, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$CaptureStartPoint;
 
     const-string v1, "ON_REQUEST"
@@ -75,7 +75,7 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$CaptureStartPoint;->ON_REQUEST:Ljp/co/sony/mc/camera/device/CameraDeviceHandler$CaptureStartPoint;
 
-    .line 211
+    .line 217
     new-instance v0, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$CaptureStartPoint;
 
     const-string v1, "INVALID"
@@ -86,7 +86,7 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$CaptureStartPoint;->INVALID:Ljp/co/sony/mc/camera/device/CameraDeviceHandler$CaptureStartPoint;
 
-    .line 208
+    .line 214
     invoke-static {}, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$CaptureStartPoint;->$values()[Ljp/co/sony/mc/camera/device/CameraDeviceHandler$CaptureStartPoint;
 
     move-result-object v0
@@ -104,7 +104,7 @@
         }
     .end annotation
 
-    .line 208
+    .line 214
     invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
     return-void
@@ -113,7 +113,7 @@
 .method public static valueOf(Ljava/lang/String;)Ljp/co/sony/mc/camera/device/CameraDeviceHandler$CaptureStartPoint;
     .locals 1
 
-    .line 208
+    .line 214
     const-class v0, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$CaptureStartPoint;
 
     invoke-static {v0, p0}, Ljava/lang/Enum;->valueOf(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
@@ -128,7 +128,7 @@
 .method public static values()[Ljp/co/sony/mc/camera/device/CameraDeviceHandler$CaptureStartPoint;
     .locals 1
 
-    .line 208
+    .line 214
     sget-object v0, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$CaptureStartPoint;->$VALUES:[Ljp/co/sony/mc/camera/device/CameraDeviceHandler$CaptureStartPoint;
 
     invoke-virtual {v0}, [Ljp/co/sony/mc/camera/device/CameraDeviceHandler$CaptureStartPoint;->clone()Ljava/lang/Object;

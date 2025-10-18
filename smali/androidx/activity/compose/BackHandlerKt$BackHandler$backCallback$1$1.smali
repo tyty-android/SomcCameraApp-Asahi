@@ -14,7 +14,17 @@
 .end annotation
 
 .annotation runtime Lkotlin/Metadata;
-    k = 0x3
+    d1 = {
+        "\u0000\u0011\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0002\n\u0000*\u0001\u0000\u0008\n\u0018\u00002\u00020\u0001J\u0008\u0010\u0002\u001a\u00020\u0003H\u0016\u00a8\u0006\u0004"
+    }
+    d2 = {
+        "androidx/activity/compose/BackHandlerKt$BackHandler$backCallback$1$1",
+        "Landroidx/activity/OnBackPressedCallback;",
+        "handleOnBackPressed",
+        "",
+        "activity-compose_release"
+    }
+    k = 0x1
     mv = {
         0x1,
         0x8,

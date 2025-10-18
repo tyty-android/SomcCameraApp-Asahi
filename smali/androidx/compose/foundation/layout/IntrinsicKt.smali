@@ -4,10 +4,8 @@
 
 
 # annotations
-.annotation system Ldalvik/annotation/MemberClasses;
-    value = {
-        Landroidx/compose/foundation/layout/IntrinsicKt$WhenMappings;
-    }
+.annotation system Ldalvik/annotation/SourceDebugExtension;
+    value = "SMAP\nIntrinsic.kt\nKotlin\n*S Kotlin\n*F\n+ 1 Intrinsic.kt\nandroidx/compose/foundation/layout/IntrinsicKt\n+ 2 InspectableValue.kt\nandroidx/compose/ui/platform/InspectableValueKt\n*L\n1#1,285:1\n135#2:286\n135#2:287\n135#2:288\n135#2:289\n*S KotlinDebug\n*F\n+ 1 Intrinsic.kt\nandroidx/compose/foundation/layout/IntrinsicKt\n*L\n52#1:286\n76#1:287\n98#1:288\n120#1:289\n*E\n"
 .end annotation
 
 .annotation runtime Lkotlin/Metadata;
@@ -36,241 +34,165 @@
 
 # direct methods
 .method public static final height(Landroidx/compose/ui/Modifier;Landroidx/compose/foundation/layout/IntrinsicSize;)Landroidx/compose/ui/Modifier;
-    .locals 1
+    .locals 3
 
-    const-string v0, "<this>"
+    .line 73
+    new-instance v0, Landroidx/compose/foundation/layout/IntrinsicHeightElement;
 
-    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+    .line 287
+    invoke-static {}, Landroidx/compose/ui/platform/InspectableValueKt;->isDebugInspectorInfoEnabled()Z
 
-    const-string v0, "intrinsicSize"
+    move-result v1
 
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+    if-eqz v1, :cond_0
 
-    .line 66
-    sget-object v0, Landroidx/compose/foundation/layout/IntrinsicKt$WhenMappings;->$EnumSwitchMapping$0:[I
+    new-instance v1, Landroidx/compose/foundation/layout/IntrinsicKt$height$$inlined$debugInspectorInfo$1;
 
-    invoke-virtual {p1}, Landroidx/compose/foundation/layout/IntrinsicSize;->ordinal()I
+    invoke-direct {v1, p1}, Landroidx/compose/foundation/layout/IntrinsicKt$height$$inlined$debugInspectorInfo$1;-><init>(Landroidx/compose/foundation/layout/IntrinsicSize;)V
 
-    move-result p1
-
-    aget p1, v0, p1
-
-    const/4 v0, 0x1
-
-    if-eq p1, v0, :cond_1
-
-    const/4 v0, 0x2
-
-    if-ne p1, v0, :cond_0
-
-    .line 68
-    sget-object p1, Landroidx/compose/foundation/layout/MaxIntrinsicHeightModifier;->INSTANCE:Landroidx/compose/foundation/layout/MaxIntrinsicHeightModifier;
-
-    check-cast p1, Landroidx/compose/ui/Modifier;
-
-    invoke-interface {p0, p1}, Landroidx/compose/ui/Modifier;->then(Landroidx/compose/ui/Modifier;)Landroidx/compose/ui/Modifier;
-
-    move-result-object p0
+    check-cast v1, Lkotlin/jvm/functions/Function1;
 
     goto :goto_0
 
     :cond_0
-    new-instance p0, Lkotlin/NoWhenBranchMatchedException;
+    invoke-static {}, Landroidx/compose/ui/platform/InspectableValueKt;->getNoInspectorInfo()Lkotlin/jvm/functions/Function1;
 
-    invoke-direct {p0}, Lkotlin/NoWhenBranchMatchedException;-><init>()V
+    move-result-object v1
 
-    throw p0
+    :goto_0
+    const/4 v2, 0x1
 
-    .line 67
-    :cond_1
-    sget-object p1, Landroidx/compose/foundation/layout/MinIntrinsicHeightModifier;->INSTANCE:Landroidx/compose/foundation/layout/MinIntrinsicHeightModifier;
+    .line 73
+    invoke-direct {v0, p1, v2, v1}, Landroidx/compose/foundation/layout/IntrinsicHeightElement;-><init>(Landroidx/compose/foundation/layout/IntrinsicSize;ZLkotlin/jvm/functions/Function1;)V
 
-    check-cast p1, Landroidx/compose/ui/Modifier;
+    check-cast v0, Landroidx/compose/ui/Modifier;
 
-    invoke-interface {p0, p1}, Landroidx/compose/ui/Modifier;->then(Landroidx/compose/ui/Modifier;)Landroidx/compose/ui/Modifier;
+    invoke-interface {p0, v0}, Landroidx/compose/ui/Modifier;->then(Landroidx/compose/ui/Modifier;)Landroidx/compose/ui/Modifier;
 
     move-result-object p0
 
-    :goto_0
     return-object p0
 .end method
 
 .method public static final requiredHeight(Landroidx/compose/ui/Modifier;Landroidx/compose/foundation/layout/IntrinsicSize;)Landroidx/compose/ui/Modifier;
-    .locals 1
+    .locals 3
 
-    const-string v0, "<this>"
+    .line 117
+    new-instance v0, Landroidx/compose/foundation/layout/IntrinsicHeightElement;
 
-    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+    .line 289
+    invoke-static {}, Landroidx/compose/ui/platform/InspectableValueKt;->isDebugInspectorInfoEnabled()Z
 
-    const-string v0, "intrinsicSize"
+    move-result v1
 
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+    if-eqz v1, :cond_0
 
-    .line 102
-    sget-object v0, Landroidx/compose/foundation/layout/IntrinsicKt$WhenMappings;->$EnumSwitchMapping$0:[I
+    new-instance v1, Landroidx/compose/foundation/layout/IntrinsicKt$requiredHeight$$inlined$debugInspectorInfo$1;
 
-    invoke-virtual {p1}, Landroidx/compose/foundation/layout/IntrinsicSize;->ordinal()I
+    invoke-direct {v1, p1}, Landroidx/compose/foundation/layout/IntrinsicKt$requiredHeight$$inlined$debugInspectorInfo$1;-><init>(Landroidx/compose/foundation/layout/IntrinsicSize;)V
 
-    move-result p1
-
-    aget p1, v0, p1
-
-    const/4 v0, 0x1
-
-    if-eq p1, v0, :cond_1
-
-    const/4 v0, 0x2
-
-    if-ne p1, v0, :cond_0
-
-    .line 104
-    sget-object p1, Landroidx/compose/foundation/layout/RequiredMaxIntrinsicHeightModifier;->INSTANCE:Landroidx/compose/foundation/layout/RequiredMaxIntrinsicHeightModifier;
-
-    check-cast p1, Landroidx/compose/ui/Modifier;
-
-    invoke-interface {p0, p1}, Landroidx/compose/ui/Modifier;->then(Landroidx/compose/ui/Modifier;)Landroidx/compose/ui/Modifier;
-
-    move-result-object p0
+    check-cast v1, Lkotlin/jvm/functions/Function1;
 
     goto :goto_0
 
     :cond_0
-    new-instance p0, Lkotlin/NoWhenBranchMatchedException;
+    invoke-static {}, Landroidx/compose/ui/platform/InspectableValueKt;->getNoInspectorInfo()Lkotlin/jvm/functions/Function1;
 
-    invoke-direct {p0}, Lkotlin/NoWhenBranchMatchedException;-><init>()V
+    move-result-object v1
 
-    throw p0
+    :goto_0
+    const/4 v2, 0x0
 
-    .line 103
-    :cond_1
-    sget-object p1, Landroidx/compose/foundation/layout/RequiredMinIntrinsicHeightModifier;->INSTANCE:Landroidx/compose/foundation/layout/RequiredMinIntrinsicHeightModifier;
+    .line 117
+    invoke-direct {v0, p1, v2, v1}, Landroidx/compose/foundation/layout/IntrinsicHeightElement;-><init>(Landroidx/compose/foundation/layout/IntrinsicSize;ZLkotlin/jvm/functions/Function1;)V
 
-    check-cast p1, Landroidx/compose/ui/Modifier;
+    check-cast v0, Landroidx/compose/ui/Modifier;
 
-    invoke-interface {p0, p1}, Landroidx/compose/ui/Modifier;->then(Landroidx/compose/ui/Modifier;)Landroidx/compose/ui/Modifier;
+    invoke-interface {p0, v0}, Landroidx/compose/ui/Modifier;->then(Landroidx/compose/ui/Modifier;)Landroidx/compose/ui/Modifier;
 
     move-result-object p0
 
-    :goto_0
     return-object p0
 .end method
 
 .method public static final requiredWidth(Landroidx/compose/ui/Modifier;Landroidx/compose/foundation/layout/IntrinsicSize;)Landroidx/compose/ui/Modifier;
-    .locals 1
+    .locals 3
 
-    const-string v0, "<this>"
+    .line 95
+    new-instance v0, Landroidx/compose/foundation/layout/IntrinsicWidthElement;
 
-    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+    .line 288
+    invoke-static {}, Landroidx/compose/ui/platform/InspectableValueKt;->isDebugInspectorInfoEnabled()Z
 
-    const-string v0, "intrinsicSize"
+    move-result v1
 
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+    if-eqz v1, :cond_0
 
-    .line 84
-    sget-object v0, Landroidx/compose/foundation/layout/IntrinsicKt$WhenMappings;->$EnumSwitchMapping$0:[I
+    new-instance v1, Landroidx/compose/foundation/layout/IntrinsicKt$requiredWidth$$inlined$debugInspectorInfo$1;
 
-    invoke-virtual {p1}, Landroidx/compose/foundation/layout/IntrinsicSize;->ordinal()I
+    invoke-direct {v1, p1}, Landroidx/compose/foundation/layout/IntrinsicKt$requiredWidth$$inlined$debugInspectorInfo$1;-><init>(Landroidx/compose/foundation/layout/IntrinsicSize;)V
 
-    move-result p1
-
-    aget p1, v0, p1
-
-    const/4 v0, 0x1
-
-    if-eq p1, v0, :cond_1
-
-    const/4 v0, 0x2
-
-    if-ne p1, v0, :cond_0
-
-    .line 86
-    sget-object p1, Landroidx/compose/foundation/layout/RequiredMaxIntrinsicWidthModifier;->INSTANCE:Landroidx/compose/foundation/layout/RequiredMaxIntrinsicWidthModifier;
-
-    check-cast p1, Landroidx/compose/ui/Modifier;
-
-    invoke-interface {p0, p1}, Landroidx/compose/ui/Modifier;->then(Landroidx/compose/ui/Modifier;)Landroidx/compose/ui/Modifier;
-
-    move-result-object p0
+    check-cast v1, Lkotlin/jvm/functions/Function1;
 
     goto :goto_0
 
     :cond_0
-    new-instance p0, Lkotlin/NoWhenBranchMatchedException;
+    invoke-static {}, Landroidx/compose/ui/platform/InspectableValueKt;->getNoInspectorInfo()Lkotlin/jvm/functions/Function1;
 
-    invoke-direct {p0}, Lkotlin/NoWhenBranchMatchedException;-><init>()V
+    move-result-object v1
 
-    throw p0
+    :goto_0
+    const/4 v2, 0x0
 
-    .line 85
-    :cond_1
-    sget-object p1, Landroidx/compose/foundation/layout/RequiredMinIntrinsicWidthModifier;->INSTANCE:Landroidx/compose/foundation/layout/RequiredMinIntrinsicWidthModifier;
+    .line 95
+    invoke-direct {v0, p1, v2, v1}, Landroidx/compose/foundation/layout/IntrinsicWidthElement;-><init>(Landroidx/compose/foundation/layout/IntrinsicSize;ZLkotlin/jvm/functions/Function1;)V
 
-    check-cast p1, Landroidx/compose/ui/Modifier;
+    check-cast v0, Landroidx/compose/ui/Modifier;
 
-    invoke-interface {p0, p1}, Landroidx/compose/ui/Modifier;->then(Landroidx/compose/ui/Modifier;)Landroidx/compose/ui/Modifier;
+    invoke-interface {p0, v0}, Landroidx/compose/ui/Modifier;->then(Landroidx/compose/ui/Modifier;)Landroidx/compose/ui/Modifier;
 
     move-result-object p0
 
-    :goto_0
     return-object p0
 .end method
 
 .method public static final width(Landroidx/compose/ui/Modifier;Landroidx/compose/foundation/layout/IntrinsicSize;)Landroidx/compose/ui/Modifier;
-    .locals 1
+    .locals 3
 
-    const-string v0, "<this>"
+    .line 49
+    new-instance v0, Landroidx/compose/foundation/layout/IntrinsicWidthElement;
 
-    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+    .line 286
+    invoke-static {}, Landroidx/compose/ui/platform/InspectableValueKt;->isDebugInspectorInfoEnabled()Z
 
-    const-string v0, "intrinsicSize"
+    move-result v1
 
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+    if-eqz v1, :cond_0
 
-    .line 46
-    sget-object v0, Landroidx/compose/foundation/layout/IntrinsicKt$WhenMappings;->$EnumSwitchMapping$0:[I
+    new-instance v1, Landroidx/compose/foundation/layout/IntrinsicKt$width$$inlined$debugInspectorInfo$1;
 
-    invoke-virtual {p1}, Landroidx/compose/foundation/layout/IntrinsicSize;->ordinal()I
+    invoke-direct {v1, p1}, Landroidx/compose/foundation/layout/IntrinsicKt$width$$inlined$debugInspectorInfo$1;-><init>(Landroidx/compose/foundation/layout/IntrinsicSize;)V
 
-    move-result p1
-
-    aget p1, v0, p1
-
-    const/4 v0, 0x1
-
-    if-eq p1, v0, :cond_1
-
-    const/4 v0, 0x2
-
-    if-ne p1, v0, :cond_0
-
-    .line 48
-    sget-object p1, Landroidx/compose/foundation/layout/MaxIntrinsicWidthModifier;->INSTANCE:Landroidx/compose/foundation/layout/MaxIntrinsicWidthModifier;
-
-    check-cast p1, Landroidx/compose/ui/Modifier;
-
-    invoke-interface {p0, p1}, Landroidx/compose/ui/Modifier;->then(Landroidx/compose/ui/Modifier;)Landroidx/compose/ui/Modifier;
-
-    move-result-object p0
+    check-cast v1, Lkotlin/jvm/functions/Function1;
 
     goto :goto_0
 
     :cond_0
-    new-instance p0, Lkotlin/NoWhenBranchMatchedException;
+    invoke-static {}, Landroidx/compose/ui/platform/InspectableValueKt;->getNoInspectorInfo()Lkotlin/jvm/functions/Function1;
 
-    invoke-direct {p0}, Lkotlin/NoWhenBranchMatchedException;-><init>()V
+    move-result-object v1
 
-    throw p0
+    :goto_0
+    const/4 v2, 0x1
 
-    .line 47
-    :cond_1
-    sget-object p1, Landroidx/compose/foundation/layout/MinIntrinsicWidthModifier;->INSTANCE:Landroidx/compose/foundation/layout/MinIntrinsicWidthModifier;
+    .line 49
+    invoke-direct {v0, p1, v2, v1}, Landroidx/compose/foundation/layout/IntrinsicWidthElement;-><init>(Landroidx/compose/foundation/layout/IntrinsicSize;ZLkotlin/jvm/functions/Function1;)V
 
-    check-cast p1, Landroidx/compose/ui/Modifier;
+    check-cast v0, Landroidx/compose/ui/Modifier;
 
-    invoke-interface {p0, p1}, Landroidx/compose/ui/Modifier;->then(Landroidx/compose/ui/Modifier;)Landroidx/compose/ui/Modifier;
+    invoke-interface {p0, v0}, Landroidx/compose/ui/Modifier;->then(Landroidx/compose/ui/Modifier;)Landroidx/compose/ui/Modifier;
 
     move-result-object p0
 
-    :goto_0
     return-object p0
 .end method

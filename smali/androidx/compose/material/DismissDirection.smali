@@ -60,7 +60,7 @@
 .method static constructor <clinit>()V
     .locals 3
 
-    .line 51
+    .line 52
     new-instance v0, Landroidx/compose/material/DismissDirection;
 
     const-string v1, "StartToEnd"
@@ -71,7 +71,7 @@
 
     sput-object v0, Landroidx/compose/material/DismissDirection;->StartToEnd:Landroidx/compose/material/DismissDirection;
 
-    .line 56
+    .line 57
     new-instance v0, Landroidx/compose/material/DismissDirection;
 
     const-string v1, "EndToStart"
@@ -99,7 +99,7 @@
         }
     .end annotation
 
-    .line 47
+    .line 48
     invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
     return-void

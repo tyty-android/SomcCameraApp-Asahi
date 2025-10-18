@@ -62,6 +62,16 @@
 
 
 # direct methods
+.method public static synthetic $r8$lambda$vXWQ89TxHQ24MnxQcigE5jRzS1E(Landroidx/compose/runtime/saveable/SaveableStateRegistry;)Landroid/os/Bundle;
+    .locals 0
+
+    invoke-static {p0}, Landroidx/compose/ui/platform/DisposableSaveableStateRegistry_androidKt;->DisposableSaveableStateRegistry$lambda$0(Landroidx/compose/runtime/saveable/SaveableStateRegistry;)Landroid/os/Bundle;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
 .method static constructor <clinit>()V
     .locals 3
 
@@ -70,47 +80,47 @@
     .line 160
     new-array v0, v0, [Ljava/lang/Class;
 
-    const-class v1, Ljava/io/Serializable;
+    const/4 v1, 0x0
 
-    const/4 v2, 0x0
+    const-class v2, Ljava/io/Serializable;
 
-    aput-object v1, v0, v2
+    aput-object v2, v0, v1
 
-    const-class v1, Landroid/os/Parcelable;
+    const/4 v1, 0x1
 
-    const/4 v2, 0x1
+    const-class v2, Landroid/os/Parcelable;
 
-    aput-object v1, v0, v2
+    aput-object v2, v0, v1
 
-    const-class v1, Ljava/lang/String;
+    const/4 v1, 0x2
 
-    const/4 v2, 0x2
+    const-class v2, Ljava/lang/String;
 
-    aput-object v1, v0, v2
+    aput-object v2, v0, v1
 
-    const-class v1, Landroid/util/SparseArray;
+    const/4 v1, 0x3
 
-    const/4 v2, 0x3
+    const-class v2, Landroid/util/SparseArray;
 
-    aput-object v1, v0, v2
+    aput-object v2, v0, v1
 
-    const-class v1, Landroid/os/Binder;
+    const/4 v1, 0x4
 
-    const/4 v2, 0x4
+    const-class v2, Landroid/os/Binder;
 
-    aput-object v1, v0, v2
+    aput-object v2, v0, v1
 
-    const-class v1, Landroid/util/Size;
+    const/4 v1, 0x5
 
-    const/4 v2, 0x5
+    const-class v2, Landroid/util/Size;
 
-    aput-object v1, v0, v2
+    aput-object v2, v0, v1
 
-    const-class v1, Landroid/util/SizeF;
+    const/4 v1, 0x6
 
-    const/4 v2, 0x6
+    const-class v2, Landroid/util/SizeF;
 
-    aput-object v1, v0, v2
+    aput-object v2, v0, v1
 
     .line 159
     sput-object v0, Landroidx/compose/ui/platform/DisposableSaveableStateRegistry_androidKt;->AcceptableClasses:[Ljava/lang/Class;
@@ -120,14 +130,6 @@
 
 .method public static final DisposableSaveableStateRegistry(Landroid/view/View;Landroidx/savedstate/SavedStateRegistryOwner;)Landroidx/compose/ui/platform/DisposableSaveableStateRegistry;
     .locals 2
-
-    const-string/jumbo v0, "view"
-
-    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string v0, "owner"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 51
     invoke-virtual {p0}, Landroid/view/View;->getParent()Landroid/view/ViewParent;
@@ -181,14 +183,6 @@
 
 .method public static final DisposableSaveableStateRegistry(Ljava/lang/String;Landroidx/savedstate/SavedStateRegistryOwner;)Landroidx/compose/ui/platform/DisposableSaveableStateRegistry;
     .locals 4
-
-    const-string v0, "id"
-
-    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string v0, "savedStateRegistryOwner"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 72
     new-instance v0, Ljava/lang/StringBuilder;
@@ -253,11 +247,9 @@
 
     .line 82
     :try_start_0
-    new-instance v1, Landroidx/compose/ui/platform/DisposableSaveableStateRegistry_androidKt$DisposableSaveableStateRegistry$registered$1;
+    new-instance v1, Landroidx/compose/ui/platform/DisposableSaveableStateRegistry_androidKt$$ExternalSyntheticLambda0;
 
-    invoke-direct {v1, v0}, Landroidx/compose/ui/platform/DisposableSaveableStateRegistry_androidKt$DisposableSaveableStateRegistry$registered$1;-><init>(Landroidx/compose/runtime/saveable/SaveableStateRegistry;)V
-
-    check-cast v1, Landroidx/savedstate/SavedStateRegistry$SavedStateProvider;
+    invoke-direct {v1, v0}, Landroidx/compose/ui/platform/DisposableSaveableStateRegistry_androidKt$$ExternalSyntheticLambda0;-><init>(Landroidx/compose/runtime/saveable/SaveableStateRegistry;)V
 
     invoke-virtual {p1, p0, v1}, Landroidx/savedstate/SavedStateRegistry;->registerSavedStateProvider(Ljava/lang/String;Landroidx/savedstate/SavedStateRegistry$SavedStateProvider;)V
     :try_end_0
@@ -285,6 +277,21 @@
     return-object v2
 .end method
 
+.method private static final DisposableSaveableStateRegistry$lambda$0(Landroidx/compose/runtime/saveable/SaveableStateRegistry;)Landroid/os/Bundle;
+    .locals 0
+
+    .line 83
+    invoke-interface {p0}, Landroidx/compose/runtime/saveable/SaveableStateRegistry;->performSave()Ljava/util/Map;
+
+    move-result-object p0
+
+    invoke-static {p0}, Landroidx/compose/ui/platform/DisposableSaveableStateRegistry_androidKt;->toBundle(Ljava/util/Map;)Landroid/os/Bundle;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
 .method public static final synthetic access$canBeSavedToBundle(Ljava/lang/Object;)Z
     .locals 0
 
@@ -294,17 +301,6 @@
     move-result p0
 
     return p0
-.end method
-
-.method public static final synthetic access$toBundle(Ljava/util/Map;)Landroid/os/Bundle;
-    .locals 0
-
-    .line 1
-    invoke-static {p0}, Landroidx/compose/ui/platform/DisposableSaveableStateRegistry_androidKt;->toBundle(Ljava/util/Map;)Landroid/os/Bundle;
-
-    move-result-object p0
-
-    return-object p0
 .end method
 
 .method private static final canBeSavedToBundle(Ljava/lang/Object;)Z
@@ -533,10 +529,6 @@
 
     move-result-object v1
 
-    const-string/jumbo v2, "this.keySet()"
-
-    invoke-static {v1, v2}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
-
     check-cast v1, Ljava/lang/Iterable;
 
     .line 191
@@ -567,10 +559,6 @@
     invoke-static {v3, v4}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 174
-    const-string v4, "key"
-
-    invoke-static {v2, v4}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
-
     invoke-interface {v0, v2, v3}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     goto :goto_0

@@ -51,17 +51,17 @@
 .method public constructor <init>()V
     .locals 1
 
-    .line 73
+    .line 74
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 74
+    .line 75
     new-instance v0, Ljava/util/LinkedHashSet;
 
     invoke-direct {v0}, Ljava/util/LinkedHashSet;-><init>()V
 
     iput-object v0, p0, Lorg/apache/http/conn/ssl/SSLContextBuilder;->keymanagers:Ljava/util/Set;
 
-    .line 75
+    .line 76
     new-instance v0, Ljava/util/LinkedHashSet;
 
     invoke-direct {v0}, Ljava/util/LinkedHashSet;-><init>()V
@@ -82,7 +82,7 @@
         }
     .end annotation
 
-    .line 162
+    .line 159
     iget-object v0, p0, Lorg/apache/http/conn/ssl/SSLContextBuilder;->protocol:Ljava/lang/String;
 
     if-eqz v0, :cond_0
@@ -97,7 +97,7 @@
 
     move-result-object v0
 
-    .line 164
+    .line 161
     iget-object v1, p0, Lorg/apache/http/conn/ssl/SSLContextBuilder;->keymanagers:Ljava/util/Set;
 
     invoke-interface {v1}, Ljava/util/Set;->isEmpty()Z
@@ -170,14 +170,14 @@
 
     const/4 v0, 0x0
 
-    .line 131
+    .line 130
     invoke-virtual {p0, p1, p2, v0}, Lorg/apache/http/conn/ssl/SSLContextBuilder;->loadKeyMaterial(Ljava/security/KeyStore;[CLorg/apache/http/conn/ssl/PrivateKeyStrategy;)Lorg/apache/http/conn/ssl/SSLContextBuilder;
 
     return-object p0
 .end method
 
 .method public loadKeyMaterial(Ljava/security/KeyStore;[CLorg/apache/http/conn/ssl/PrivateKeyStrategy;)Lorg/apache/http/conn/ssl/SSLContextBuilder;
-    .locals 3
+    .locals 2
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/security/NoSuchAlgorithmException;,
@@ -186,7 +186,7 @@
         }
     .end annotation
 
-    .line 140
+    .line 139
     invoke-static {}, Ljavax/net/ssl/KeyManagerFactory;->getDefaultAlgorithm()Ljava/lang/String;
 
     move-result-object v0
@@ -195,67 +195,53 @@
 
     move-result-object v0
 
-    .line 142
+    .line 141
     invoke-virtual {v0, p1, p2}, Ljavax/net/ssl/KeyManagerFactory;->init(Ljava/security/KeyStore;[C)V
 
-    .line 143
+    .line 142
     invoke-virtual {v0}, Ljavax/net/ssl/KeyManagerFactory;->getKeyManagers()[Ljavax/net/ssl/KeyManager;
 
     move-result-object p1
 
     if-eqz p1, :cond_2
 
-    const/4 p2, 0x0
-
     if-eqz p3, :cond_1
 
-    move v0, p2
+    const/4 p2, 0x0
+
+    .line 145
+    :goto_0
+    array-length v0, p1
+
+    if-ge p2, v0, :cond_1
 
     .line 146
-    :goto_0
-    array-length v1, p1
-
-    if-ge v0, v1, :cond_1
+    aget-object v0, p1, p2
 
     .line 147
-    aget-object v1, p1, v0
+    instance-of v1, v0, Ljavax/net/ssl/X509KeyManager;
+
+    if-eqz v1, :cond_0
 
     .line 148
-    instance-of v2, v1, Ljavax/net/ssl/X509KeyManager;
+    new-instance v1, Lorg/apache/http/conn/ssl/SSLContextBuilder$KeyManagerDelegate;
 
-    if-eqz v2, :cond_0
+    check-cast v0, Ljavax/net/ssl/X509KeyManager;
 
-    .line 149
-    new-instance v2, Lorg/apache/http/conn/ssl/SSLContextBuilder$KeyManagerDelegate;
+    invoke-direct {v1, v0, p3}, Lorg/apache/http/conn/ssl/SSLContextBuilder$KeyManagerDelegate;-><init>(Ljavax/net/ssl/X509KeyManager;Lorg/apache/http/conn/ssl/PrivateKeyStrategy;)V
 
-    check-cast v1, Ljavax/net/ssl/X509KeyManager;
-
-    invoke-direct {v2, v1, p3}, Lorg/apache/http/conn/ssl/SSLContextBuilder$KeyManagerDelegate;-><init>(Ljavax/net/ssl/X509KeyManager;Lorg/apache/http/conn/ssl/PrivateKeyStrategy;)V
-
-    aput-object v2, p1, v0
+    aput-object v1, p1, p2
 
     :cond_0
-    add-int/lit8 v0, v0, 0x1
+    add-int/lit8 p2, p2, 0x1
 
     goto :goto_0
 
-    .line 154
+    .line 153
     :cond_1
-    array-length p3, p1
+    iget-object p2, p0, Lorg/apache/http/conn/ssl/SSLContextBuilder;->keymanagers:Ljava/util/Set;
 
-    :goto_1
-    if-ge p2, p3, :cond_2
-
-    aget-object v0, p1, p2
-
-    .line 155
-    iget-object v1, p0, Lorg/apache/http/conn/ssl/SSLContextBuilder;->keymanagers:Ljava/util/Set;
-
-    invoke-interface {v1, v0}, Ljava/util/Set;->add(Ljava/lang/Object;)Z
-
-    add-int/lit8 p2, p2, 0x1
-
-    goto :goto_1
+    invoke-static {p2, p1}, Ljava/util/Collections;->addAll(Ljava/util/Collection;[Ljava/lang/Object;)Z
 
     :cond_2
     return-object p0
@@ -272,7 +258,7 @@
 
     const/4 v0, 0x0
 
-    .line 124
+    .line 123
     invoke-virtual {p0, p1, v0}, Lorg/apache/http/conn/ssl/SSLContextBuilder;->loadTrustMaterial(Ljava/security/KeyStore;Lorg/apache/http/conn/ssl/TrustStrategy;)Lorg/apache/http/conn/ssl/SSLContextBuilder;
 
     move-result-object p0
@@ -281,7 +267,7 @@
 .end method
 
 .method public loadTrustMaterial(Ljava/security/KeyStore;Lorg/apache/http/conn/ssl/TrustStrategy;)Lorg/apache/http/conn/ssl/SSLContextBuilder;
-    .locals 4
+    .locals 3
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/security/NoSuchAlgorithmException;,
@@ -289,7 +275,7 @@
         }
     .end annotation
 
-    .line 101
+    .line 102
     invoke-static {}, Ljavax/net/ssl/TrustManagerFactory;->getDefaultAlgorithm()Ljava/lang/String;
 
     move-result-object v0
@@ -298,67 +284,53 @@
 
     move-result-object v0
 
-    .line 103
+    .line 104
     invoke-virtual {v0, p1}, Ljavax/net/ssl/TrustManagerFactory;->init(Ljava/security/KeyStore;)V
 
-    .line 104
+    .line 105
     invoke-virtual {v0}, Ljavax/net/ssl/TrustManagerFactory;->getTrustManagers()[Ljavax/net/ssl/TrustManager;
 
     move-result-object p1
 
     if-eqz p1, :cond_2
 
-    const/4 v0, 0x0
-
     if-eqz p2, :cond_1
 
-    move v1, v0
-
-    .line 107
-    :goto_0
-    array-length v2, p1
-
-    if-ge v1, v2, :cond_1
+    const/4 v0, 0x0
 
     .line 108
-    aget-object v2, p1, v1
+    :goto_0
+    array-length v1, p1
+
+    if-ge v0, v1, :cond_1
 
     .line 109
-    instance-of v3, v2, Ljavax/net/ssl/X509TrustManager;
-
-    if-eqz v3, :cond_0
+    aget-object v1, p1, v0
 
     .line 110
-    new-instance v3, Lorg/apache/http/conn/ssl/SSLContextBuilder$TrustManagerDelegate;
+    instance-of v2, v1, Ljavax/net/ssl/X509TrustManager;
 
-    check-cast v2, Ljavax/net/ssl/X509TrustManager;
+    if-eqz v2, :cond_0
 
-    invoke-direct {v3, v2, p2}, Lorg/apache/http/conn/ssl/SSLContextBuilder$TrustManagerDelegate;-><init>(Ljavax/net/ssl/X509TrustManager;Lorg/apache/http/conn/ssl/TrustStrategy;)V
+    .line 111
+    new-instance v2, Lorg/apache/http/conn/ssl/SSLContextBuilder$TrustManagerDelegate;
 
-    aput-object v3, p1, v1
+    check-cast v1, Ljavax/net/ssl/X509TrustManager;
+
+    invoke-direct {v2, v1, p2}, Lorg/apache/http/conn/ssl/SSLContextBuilder$TrustManagerDelegate;-><init>(Ljavax/net/ssl/X509TrustManager;Lorg/apache/http/conn/ssl/TrustStrategy;)V
+
+    aput-object v2, p1, v0
 
     :cond_0
-    add-int/lit8 v1, v1, 0x1
+    add-int/lit8 v0, v0, 0x1
 
     goto :goto_0
 
-    .line 115
-    :cond_1
-    array-length p2, p1
-
-    :goto_1
-    if-ge v0, p2, :cond_2
-
-    aget-object v1, p1, v0
-
     .line 116
-    iget-object v2, p0, Lorg/apache/http/conn/ssl/SSLContextBuilder;->trustmanagers:Ljava/util/Set;
+    :cond_1
+    iget-object p2, p0, Lorg/apache/http/conn/ssl/SSLContextBuilder;->trustmanagers:Ljava/util/Set;
 
-    invoke-interface {v2, v1}, Ljava/util/Set;->add(Ljava/lang/Object;)Z
-
-    add-int/lit8 v0, v0, 0x1
-
-    goto :goto_1
+    invoke-static {p2, p1}, Ljava/util/Collections;->addAll(Ljava/util/Collection;[Ljava/lang/Object;)Z
 
     :cond_2
     return-object p0
@@ -367,7 +339,7 @@
 .method public setSecureRandom(Ljava/security/SecureRandom;)Lorg/apache/http/conn/ssl/SSLContextBuilder;
     .locals 0
 
-    .line 94
+    .line 95
     iput-object p1, p0, Lorg/apache/http/conn/ssl/SSLContextBuilder;->secureRandom:Ljava/security/SecureRandom;
 
     return-object p0
@@ -376,7 +348,7 @@
 .method public useProtocol(Ljava/lang/String;)Lorg/apache/http/conn/ssl/SSLContextBuilder;
     .locals 0
 
-    .line 89
+    .line 90
     iput-object p1, p0, Lorg/apache/http/conn/ssl/SSLContextBuilder;->protocol:Ljava/lang/String;
 
     return-object p0
@@ -385,7 +357,7 @@
 .method public useSSL()Lorg/apache/http/conn/ssl/SSLContextBuilder;
     .locals 1
 
-    .line 84
+    .line 85
     const-string v0, "SSL"
 
     iput-object v0, p0, Lorg/apache/http/conn/ssl/SSLContextBuilder;->protocol:Ljava/lang/String;
@@ -396,7 +368,7 @@
 .method public useTLS()Lorg/apache/http/conn/ssl/SSLContextBuilder;
     .locals 1
 
-    .line 79
+    .line 80
     const-string v0, "TLS"
 
     iput-object v0, p0, Lorg/apache/http/conn/ssl/SSLContextBuilder;->protocol:Ljava/lang/String;

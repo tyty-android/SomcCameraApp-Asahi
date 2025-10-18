@@ -76,7 +76,7 @@
 .method public bridge synthetic invoke()Ljava/lang/Object;
     .locals 0
 
-    .line 329
+    .line 331
     invoke-virtual {p0}, Landroidx/compose/ui/window/AndroidPopup_androidKt$LocalPopupTestTag$1;->invoke()Ljava/lang/String;
 
     move-result-object p0
@@ -87,7 +87,7 @@
 .method public final invoke()Ljava/lang/String;
     .locals 0
 
-    .line 329
+    .line 331
     const-string p0, "DEFAULT_TEST_TAG"
 
     return-object p0

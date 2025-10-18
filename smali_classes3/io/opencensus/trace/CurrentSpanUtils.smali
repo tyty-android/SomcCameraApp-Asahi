@@ -26,7 +26,7 @@
 .method static synthetic access$300(Lio/opencensus/trace/Span;Ljava/lang/Throwable;)V
     .locals 0
 
-    .line 26
+    .line 25
     invoke-static {p0, p1}, Lio/opencensus/trace/CurrentSpanUtils;->setErrorStatus(Lio/opencensus/trace/Span;Ljava/lang/Throwable;)V
 
     return-void
@@ -38,11 +38,11 @@
     .end annotation
 
     .line 37
-    invoke-static {}, Lio/grpc/Context;->current()Lio/grpc/Context;
+    invoke-static {}, Lio/opencensus/trace/unsafe/ContextHandleUtils;->currentContext()Lio/opencensus/trace/ContextHandle;
 
     move-result-object v0
 
-    invoke-static {v0}, Lio/opencensus/trace/unsafe/ContextUtils;->getValue(Lio/grpc/Context;)Lio/opencensus/trace/Span;
+    invoke-static {v0}, Lio/opencensus/trace/unsafe/ContextHandleUtils;->getValue(Lio/opencensus/trace/ContextHandle;)Lio/opencensus/trace/Span;
 
     move-result-object v0
 
@@ -52,10 +52,10 @@
 .method private static setErrorStatus(Lio/opencensus/trace/Span;Ljava/lang/Throwable;)V
     .locals 2
 
-    .line 174
+    .line 180
     sget-object v0, Lio/opencensus/trace/Status;->UNKNOWN:Lio/opencensus/trace/Status;
 
-    .line 176
+    .line 182
     invoke-virtual {p1}, Ljava/lang/Throwable;->getMessage()Ljava/lang/String;
 
     move-result-object v1
@@ -77,13 +77,13 @@
 
     move-result-object p1
 
-    .line 175
+    .line 181
     :goto_0
     invoke-virtual {v0, p1}, Lio/opencensus/trace/Status;->withDescription(Ljava/lang/String;)Lio/opencensus/trace/Status;
 
     move-result-object p1
 
-    .line 174
+    .line 180
     invoke-virtual {p0, p1}, Lio/opencensus/trace/Span;->setStatus(Lio/opencensus/trace/Status;)V
 
     return-void

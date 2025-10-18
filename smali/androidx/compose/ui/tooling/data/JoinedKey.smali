@@ -1,6 +1,6 @@
 .class public final Landroidx/compose/ui/tooling/data/JoinedKey;
 .super Ljava/lang/Object;
-.source "SlotTree.kt"
+.source "SlotTree.jvm.kt"
 
 
 # annotations
@@ -59,10 +59,10 @@
 .method public constructor <init>(Ljava/lang/Object;Ljava/lang/Object;)V
     .locals 0
 
-    .line 186
+    .line 188
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 187
+    .line 189
     iput-object p1, p0, Landroidx/compose/ui/tooling/data/JoinedKey;->left:Ljava/lang/Object;
 
     iput-object p2, p0, Landroidx/compose/ui/tooling/data/JoinedKey;->right:Ljava/lang/Object;
@@ -175,7 +175,7 @@
 .method public final getLeft()Ljava/lang/Object;
     .locals 0
 
-    .line 187
+    .line 189
     iget-object p0, p0, Landroidx/compose/ui/tooling/data/JoinedKey;->left:Ljava/lang/Object;
 
     return-object p0
@@ -184,7 +184,7 @@
 .method public final getRight()Ljava/lang/Object;
     .locals 0
 
-    .line 187
+    .line 189
     iget-object p0, p0, Landroidx/compose/ui/tooling/data/JoinedKey;->right:Ljava/lang/Object;
 
     return-object p0

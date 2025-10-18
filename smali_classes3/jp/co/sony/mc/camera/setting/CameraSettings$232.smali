@@ -21,7 +21,7 @@
 .method constructor <init>()V
     .locals 0
 
-    .line 2484
+    .line 2548
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -42,44 +42,19 @@
         }
     .end annotation
 
-    .line 2488
+    .line 2552
     check-cast p1, Ljp/co/sony/mc/camera/setting/CameraSettings;
 
-    .line 2489
-    invoke-static {p1}, Ljp/co/sony/mc/camera/setting/CameraSettings;->-$$Nest$fgetmVideoSize(Ljp/co/sony/mc/camera/setting/CameraSettings;)Ljp/co/sony/mc/camera/configuration/parameters/VideoSize;
-
-    move-result-object p0
-
-    if-eqz p0, :cond_0
-
-    .line 2490
-    invoke-static {p1}, Ljp/co/sony/mc/camera/setting/CameraSettings;->-$$Nest$fgetmVideoSize(Ljp/co/sony/mc/camera/setting/CameraSettings;)Ljp/co/sony/mc/camera/configuration/parameters/VideoSize;
-
-    move-result-object p0
-
-    goto :goto_0
-
-    .line 2491
-    :cond_0
-    sget-object p0, Ljp/co/sony/mc/camera/setting/CameraSettings;->VIDEO_SIZE:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
-
-    invoke-virtual {p1, p0}, Ljp/co/sony/mc/camera/setting/CameraSettings;->getDefaultValue(Ljp/co/sony/mc/camera/setting/SettingKey$Key;)Ljava/lang/Object;
-
-    move-result-object p0
-
-    check-cast p0, Ljp/co/sony/mc/camera/configuration/parameters/VideoSize;
-
-    .line 2492
-    :goto_0
+    .line 2553
     invoke-static {p1}, Ljp/co/sony/mc/camera/setting/CameraSettings;->-$$Nest$fgetmCapturingMode(Ljp/co/sony/mc/camera/setting/CameraSettings;)Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
-    move-result-object p2
+    move-result-object p0
 
     invoke-static {p1}, Ljp/co/sony/mc/camera/setting/CameraSettings;->-$$Nest$fgetmCameraId(Ljp/co/sony/mc/camera/setting/CameraSettings;)Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;
 
     move-result-object p1
 
-    invoke-static {p2, p1, p0}, Ljp/co/sony/mc/camera/configuration/parameters/VideoFps;->getDefaultValue(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;Ljp/co/sony/mc/camera/configuration/parameters/VideoSize;)Ljp/co/sony/mc/camera/configuration/parameters/VideoFps;
+    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/configuration/parameters/VolumeDistortionCorrection;->getDefaultValue(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;)Ljp/co/sony/mc/camera/configuration/parameters/VolumeDistortionCorrection;
 
     move-result-object p0
 

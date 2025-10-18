@@ -46,7 +46,7 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 59
+    .line 60
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -57,7 +57,7 @@
 .method public final next()Ljava/lang/Double;
     .locals 2
 
-    .line 60
+    .line 61
     invoke-virtual {p0}, Lkotlin/collections/DoubleIterator;->nextDouble()D
 
     move-result-wide v0
@@ -72,7 +72,7 @@
 .method public bridge synthetic next()Ljava/lang/Object;
     .locals 2
 
-    .line 59
+    .line 60
     invoke-virtual {p0}, Lkotlin/collections/DoubleIterator;->nextDouble()D
 
     move-result-wide v0

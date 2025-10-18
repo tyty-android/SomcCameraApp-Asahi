@@ -61,19 +61,23 @@
 .end method
 
 .method private notifyContentLoaded(ILjp/co/sony/mc/camera/view/contentsview/ContentLoader$DataLoadResult;)V
-    .locals 2
+    .locals 4
 
     .line 260
     sget-boolean v0, Ljp/co/sony/mc/camera/util/CamLog;->VERBOSE:Z
 
+    const/4 v1, 0x0
+
+    const/4 v2, 0x1
+
     if-eqz v0, :cond_0
 
     .line 261
-    const-string v0, "notifyContentLoaded() has been called."
+    new-array v0, v2, [Ljava/lang/String;
 
-    filled-new-array {v0}, [Ljava/lang/String;
+    const-string v3, "notifyContentLoaded() has been called."
 
-    move-result-object v0
+    aput-object v3, v0, v1
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
@@ -85,21 +89,17 @@
 
     if-eqz p2, :cond_1
 
-    const/4 v1, 0x1
-
     .line 266
-    iput v1, v0, Landroid/os/Message;->what:I
+    iput v2, v0, Landroid/os/Message;->what:I
 
     .line 267
     iput-object p2, v0, Landroid/os/Message;->obj:Ljava/lang/Object;
 
     goto :goto_0
 
-    :cond_1
-    const/4 p2, 0x0
-
     .line 269
-    iput p2, v0, Landroid/os/Message;->what:I
+    :cond_1
+    iput v1, v0, Landroid/os/Message;->what:I
 
     .line 271
     :goto_0
@@ -150,11 +150,13 @@
     if-eqz v0, :cond_1
 
     .line 238
-    const-string v0, "handleMessage for content creation."
+    new-array v0, v1, [Ljava/lang/String;
 
-    filled-new-array {v0}, [Ljava/lang/String;
+    const/4 v1, 0x0
 
-    move-result-object v0
+    const-string v2, "handleMessage for content creation."
+
+    aput-object v2, v0, v1
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 

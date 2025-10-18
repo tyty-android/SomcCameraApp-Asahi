@@ -46,11 +46,7 @@
 
 # direct methods
 .method public constructor <init>(Landroidx/compose/ui/focus/FocusRequester;)V
-    .locals 1
-
-    const-string v0, "focusRequester"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+    .locals 0
 
     .line 70
     invoke-direct {p0}, Landroidx/compose/ui/Modifier$Node;-><init>()V
@@ -111,11 +107,7 @@
 .end method
 
 .method public final setFocusRequester(Landroidx/compose/ui/focus/FocusRequester;)V
-    .locals 1
-
-    const-string v0, "<set-?>"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+    .locals 0
 
     .line 69
     iput-object p1, p0, Landroidx/compose/ui/focus/FocusRequesterNode;->focusRequester:Landroidx/compose/ui/focus/FocusRequester;

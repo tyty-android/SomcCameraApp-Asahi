@@ -573,9 +573,11 @@
 .end method
 
 .method private isValidResults([Landroid/hardware/camera2/params/Face;[I)Z
-    .locals 1
+    .locals 2
 
-    const/4 p0, 0x0
+    const/4 p0, 0x1
+
+    const/4 v0, 0x0
 
     if-eqz p1, :cond_3
 
@@ -592,9 +594,9 @@
     .line 193
     array-length p1, p2
 
-    const/4 v0, 0x5
+    const/4 v1, 0x5
 
-    if-eq p1, v0, :cond_2
+    if-eq p1, v1, :cond_2
 
     .line 194
     sget-boolean p1, Ljp/co/sony/mc/camera/util/CamLog;->VERBOSE:Z
@@ -602,11 +604,13 @@
     if-eqz p1, :cond_1
 
     .line 195
+    new-array p0, p0, [Ljava/lang/String;
+
     new-instance p1, Ljava/lang/StringBuilder;
 
-    const-string v0, "Face select area is invalid: Face select area num: "
+    const-string v1, "Face select area is invalid: Face select area num: "
 
-    invoke-direct {p1, v0}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+    invoke-direct {p1, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
     array-length p2, p2
 
@@ -618,18 +622,14 @@
 
     move-result-object p1
 
-    filled-new-array {p1}, [Ljava/lang/String;
+    aput-object p1, p0, v0
 
-    move-result-object p1
-
-    invoke-static {p1}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
+    invoke-static {p0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
     :cond_1
-    return p0
+    return v0
 
     :cond_2
-    const/4 p0, 0x1
-
     return p0
 
     .line 186
@@ -640,16 +640,16 @@
     if-eqz p1, :cond_4
 
     .line 187
+    new-array p0, p0, [Ljava/lang/String;
+
     const-string p1, "No face data."
 
-    filled-new-array {p1}, [Ljava/lang/String;
+    aput-object p1, p0, v0
 
-    move-result-object p1
-
-    invoke-static {p1}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
+    invoke-static {p0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
     :cond_4
-    return p0
+    return v0
 .end method
 
 
@@ -769,73 +769,73 @@
     if-eqz v4, :cond_1
 
     .line 79
-    new-instance v4, Ljava/lang/StringBuilder;
+    new-array v4, v13, [Ljava/lang/String;
 
-    const-string v6, "Select area: "
+    new-instance v6, Ljava/lang/StringBuilder;
 
-    invoke-direct {v4, v6}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+    const-string v7, "Select area: "
 
-    aget v6, v3, v12
+    invoke-direct {v6, v7}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
-    invoke-virtual {v4, v6}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+    aget v7, v3, v12
 
-    move-result-object v4
+    invoke-virtual {v6, v7}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
-    const-string v6, ", "
+    move-result-object v6
 
-    invoke-virtual {v4, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    const-string v7, ", "
 
-    move-result-object v4
+    invoke-virtual {v6, v7}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    aget v6, v3, v13
+    move-result-object v6
 
-    invoke-virtual {v4, v6}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+    aget v7, v3, v13
 
-    move-result-object v4
+    invoke-virtual {v6, v7}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
-    const-string v6, ", "
+    move-result-object v6
 
-    invoke-virtual {v4, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    const-string v7, ", "
 
-    move-result-object v4
+    invoke-virtual {v6, v7}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    aget v6, v3, v15
+    move-result-object v6
 
-    invoke-virtual {v4, v6}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+    aget v7, v3, v15
 
-    move-result-object v4
+    invoke-virtual {v6, v7}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
-    const-string v6, ", "
+    move-result-object v6
 
-    invoke-virtual {v4, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    const-string v7, ", "
 
-    move-result-object v4
+    invoke-virtual {v6, v7}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    aget v6, v3, v14
+    move-result-object v6
 
-    invoke-virtual {v4, v6}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+    aget v7, v3, v14
 
-    move-result-object v4
+    invoke-virtual {v6, v7}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
-    const-string v6, ", "
+    move-result-object v6
 
-    invoke-virtual {v4, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    const-string v7, ", "
 
-    move-result-object v4
+    invoke-virtual {v6, v7}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    aget v6, v3, v5
+    move-result-object v6
 
-    invoke-virtual {v4, v6}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+    aget v7, v3, v5
 
-    move-result-object v4
+    invoke-virtual {v6, v7}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v4}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    move-result-object v6
 
-    move-result-object v4
+    invoke-virtual {v6}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    filled-new-array {v4}, [Ljava/lang/String;
+    move-result-object v6
 
-    move-result-object v4
+    aput-object v6, v4, v12
 
     invoke-static {v4}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
@@ -934,27 +934,27 @@
     if-eqz v4, :cond_5
 
     .line 98
-    new-instance v4, Ljava/lang/StringBuilder;
+    new-array v4, v13, [Ljava/lang/String;
 
-    const-string v5, "Face rectangle: "
+    new-instance v5, Ljava/lang/StringBuilder;
 
-    invoke-direct {v4, v5}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+    const-string v6, "Face rectangle: "
+
+    invoke-direct {v5, v6}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
     invoke-virtual {v7}, Landroid/graphics/Rect;->toShortString()Ljava/lang/String;
 
+    move-result-object v6
+
+    invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
     move-result-object v5
 
-    invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v5}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    move-result-object v4
+    move-result-object v5
 
-    invoke-virtual {v4}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v4
-
-    filled-new-array {v4}, [Ljava/lang/String;
-
-    move-result-object v4
+    aput-object v5, v4, v12
 
     invoke-static {v4}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
@@ -1132,11 +1132,11 @@
     if-eqz v2, :cond_e
 
     .line 146
-    const-string v2, "Faces are lost."
+    new-array v2, v13, [Ljava/lang/String;
 
-    filled-new-array {v2}, [Ljava/lang/String;
+    const-string v3, "Faces are lost."
 
-    move-result-object v2
+    aput-object v3, v2, v12
 
     invoke-static {v2}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
@@ -1171,23 +1171,23 @@
     if-eqz v2, :cond_10
 
     .line 158
-    new-instance v2, Ljava/lang/StringBuilder;
+    new-array v2, v13, [Ljava/lang/String;
 
-    const-string v3, "Detected Faces: "
+    new-instance v3, Ljava/lang/StringBuilder;
 
-    invoke-direct {v2, v3}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+    const-string v4, "Detected Faces: "
 
-    invoke-virtual {v2, v10}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+    invoke-direct {v3, v4}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
-    move-result-object v2
+    invoke-virtual {v3, v10}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    move-result-object v3
 
-    move-result-object v2
+    invoke-virtual {v3}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    filled-new-array {v2}, [Ljava/lang/String;
+    move-result-object v3
 
-    move-result-object v2
+    aput-object v3, v2, v12
 
     invoke-static {v2}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 

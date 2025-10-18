@@ -38,7 +38,7 @@
 .method private static synthetic $values()[Ljp/co/sony/mc/camera/controller/StateMachine$ThermalState;
     .locals 4
 
-    .line 849
+    .line 851
     sget-object v0, Ljp/co/sony/mc/camera/controller/StateMachine$ThermalState;->NORMAL:Ljp/co/sony/mc/camera/controller/StateMachine$ThermalState;
 
     sget-object v1, Ljp/co/sony/mc/camera/controller/StateMachine$ThermalState;->WARNING:Ljp/co/sony/mc/camera/controller/StateMachine$ThermalState;
@@ -57,7 +57,7 @@
 .method static constructor <clinit>()V
     .locals 3
 
-    .line 850
+    .line 852
     new-instance v0, Ljp/co/sony/mc/camera/controller/StateMachine$ThermalState;
 
     const-string v1, "NORMAL"
@@ -68,7 +68,7 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/controller/StateMachine$ThermalState;->NORMAL:Ljp/co/sony/mc/camera/controller/StateMachine$ThermalState;
 
-    .line 851
+    .line 853
     new-instance v0, Ljp/co/sony/mc/camera/controller/StateMachine$ThermalState;
 
     const-string v1, "WARNING"
@@ -79,7 +79,7 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/controller/StateMachine$ThermalState;->WARNING:Ljp/co/sony/mc/camera/controller/StateMachine$ThermalState;
 
-    .line 852
+    .line 854
     new-instance v0, Ljp/co/sony/mc/camera/controller/StateMachine$ThermalState;
 
     const-string v1, "WARNING_EXTRA"
@@ -90,7 +90,7 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/controller/StateMachine$ThermalState;->WARNING_EXTRA:Ljp/co/sony/mc/camera/controller/StateMachine$ThermalState;
 
-    .line 853
+    .line 855
     new-instance v0, Ljp/co/sony/mc/camera/controller/StateMachine$ThermalState;
 
     const-string v1, "CRITICAL"
@@ -101,7 +101,7 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/controller/StateMachine$ThermalState;->CRITICAL:Ljp/co/sony/mc/camera/controller/StateMachine$ThermalState;
 
-    .line 849
+    .line 851
     invoke-static {}, Ljp/co/sony/mc/camera/controller/StateMachine$ThermalState;->$values()[Ljp/co/sony/mc/camera/controller/StateMachine$ThermalState;
 
     move-result-object v0
@@ -119,7 +119,7 @@
         }
     .end annotation
 
-    .line 849
+    .line 851
     invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
     return-void
@@ -128,7 +128,7 @@
 .method public static valueOf(Ljava/lang/String;)Ljp/co/sony/mc/camera/controller/StateMachine$ThermalState;
     .locals 1
 
-    .line 849
+    .line 851
     const-class v0, Ljp/co/sony/mc/camera/controller/StateMachine$ThermalState;
 
     invoke-static {v0, p0}, Ljava/lang/Enum;->valueOf(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
@@ -143,7 +143,7 @@
 .method public static values()[Ljp/co/sony/mc/camera/controller/StateMachine$ThermalState;
     .locals 1
 
-    .line 849
+    .line 851
     sget-object v0, Ljp/co/sony/mc/camera/controller/StateMachine$ThermalState;->$VALUES:[Ljp/co/sony/mc/camera/controller/StateMachine$ThermalState;
 
     invoke-virtual {v0}, [Ljp/co/sony/mc/camera/controller/StateMachine$ThermalState;->clone()Ljava/lang/Object;

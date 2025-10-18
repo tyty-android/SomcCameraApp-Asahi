@@ -81,7 +81,7 @@
 .end method
 
 .method public constructor <init>(Ljp/co/sony/mc/camera/configuration/parameters/UserSettingValue;)V
-    .locals 2
+    .locals 3
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TT;)V"
@@ -93,12 +93,16 @@
 
     if-nez p1, :cond_0
 
+    const/4 v0, 0x1
+
     .line 52
-    const-string v0, "Create UserSettingValueHolder with null default value "
+    new-array v0, v0, [Ljava/lang/String;
 
-    filled-new-array {v0}, [Ljava/lang/String;
+    const/4 v1, 0x0
 
-    move-result-object v0
+    const-string v2, "Create UserSettingValueHolder with null default value "
+
+    aput-object v2, v0, v1
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 

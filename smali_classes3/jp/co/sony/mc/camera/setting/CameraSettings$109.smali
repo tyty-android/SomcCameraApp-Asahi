@@ -21,7 +21,7 @@
 .method constructor <init>()V
     .locals 0
 
-    .line 1434
+    .line 1490
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -46,13 +46,13 @@
         }
     .end annotation
 
-    .line 1438
+    .line 1494
     check-cast p1, Ljp/co/sony/mc/camera/setting/CameraSettings;
 
-    .line 1439
-    check-cast p3, Ljava/lang/Float;
+    .line 1495
+    check-cast p3, Ljp/co/sony/mc/camera/configuration/parameters/TouchCapture;
 
-    invoke-static {p1, p3}, Ljp/co/sony/mc/camera/setting/CameraSettings;->-$$Nest$msetZoomRatio(Ljp/co/sony/mc/camera/setting/CameraSettings;Ljava/lang/Float;)Z
+    invoke-static {p1, p3}, Ljp/co/sony/mc/camera/setting/CameraSettings;->-$$Nest$msetTouchCapture(Ljp/co/sony/mc/camera/setting/CameraSettings;Ljp/co/sony/mc/camera/configuration/parameters/TouchCapture;)Z
 
     move-result p0
 

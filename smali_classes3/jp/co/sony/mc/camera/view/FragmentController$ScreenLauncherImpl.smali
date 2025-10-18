@@ -27,12 +27,12 @@
 .method public constructor <init>(Ljp/co/sony/mc/camera/view/FragmentController;Ljp/co/sony/mc/camera/view/FragmentController;)V
     .locals 0
 
-    .line 6580
+    .line 6828
     iput-object p1, p0, Ljp/co/sony/mc/camera/view/FragmentController$ScreenLauncherImpl;->this$0:Ljp/co/sony/mc/camera/view/FragmentController;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 6581
+    .line 6829
     iput-object p2, p0, Ljp/co/sony/mc/camera/view/FragmentController$ScreenLauncherImpl;->mController:Ljp/co/sony/mc/camera/view/FragmentController;
 
     return-void
@@ -43,7 +43,7 @@
 .method public launchCameraSettings(Ljp/co/sony/mc/camera/setting/SettingKey$Key;)V
     .locals 1
 
-    .line 6591
+    .line 6839
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/FragmentController$ScreenLauncherImpl;->mController:Ljp/co/sony/mc/camera/view/FragmentController;
 
     const/4 v0, 0x0
@@ -56,7 +56,7 @@
 .method public launchGoogleLensActivity()V
     .locals 0
 
-    .line 6596
+    .line 6844
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/FragmentController$ScreenLauncherImpl;->mController:Ljp/co/sony/mc/camera/view/FragmentController;
 
     invoke-static {p0}, Ljp/co/sony/mc/camera/view/FragmentController;->-$$Nest$mlaunchGoogleLensActivity(Ljp/co/sony/mc/camera/view/FragmentController;)V
@@ -67,7 +67,7 @@
 .method public launchMemoryRecall()V
     .locals 0
 
-    .line 6586
+    .line 6834
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/FragmentController$ScreenLauncherImpl;->mController:Ljp/co/sony/mc/camera/view/FragmentController;
 
     invoke-static {p0}, Ljp/co/sony/mc/camera/view/FragmentController;->-$$Nest$mlaunchMemoryRecall(Ljp/co/sony/mc/camera/view/FragmentController;)V

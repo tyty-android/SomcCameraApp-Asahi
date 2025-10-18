@@ -45,6 +45,10 @@
 .end annotation
 
 
+# static fields
+.field public static final $stable:I = 0x8
+
+
 # instance fields
 .field private fill:Z
 
@@ -52,16 +56,22 @@
 
 
 # direct methods
+.method static constructor <clinit>()V
+    .locals 0
+
+    return-void
+.end method
+
 .method public constructor <init>(FZ)V
     .locals 0
 
-    .line 669
+    .line 672
     invoke-direct {p0}, Landroidx/compose/ui/Modifier$Node;-><init>()V
 
-    .line 667
+    .line 670
     iput p1, p0, Landroidx/compose/foundation/layout/LayoutWeightNode;->weight:F
 
-    .line 668
+    .line 671
     iput-boolean p2, p0, Landroidx/compose/foundation/layout/LayoutWeightNode;->fill:Z
 
     return-void
@@ -72,7 +82,7 @@
 .method public final getFill()Z
     .locals 0
 
-    .line 668
+    .line 671
     iget-boolean p0, p0, Landroidx/compose/foundation/layout/LayoutWeightNode;->fill:Z
 
     return p0
@@ -81,7 +91,7 @@
 .method public final getWeight()F
     .locals 0
 
-    .line 667
+    .line 670
     iget p0, p0, Landroidx/compose/foundation/layout/LayoutWeightNode;->weight:F
 
     return p0
@@ -90,11 +100,7 @@
 .method public modifyParentData(Landroidx/compose/ui/unit/Density;Ljava/lang/Object;)Landroidx/compose/foundation/layout/RowColumnParentData;
     .locals 6
 
-    const-string v0, "<this>"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 671
+    .line 674
     instance-of p1, p2, Landroidx/compose/foundation/layout/RowColumnParentData;
 
     if-eqz p1, :cond_0
@@ -125,13 +131,13 @@
 
     invoke-direct/range {v0 .. v5}, Landroidx/compose/foundation/layout/RowColumnParentData;-><init>(FZLandroidx/compose/foundation/layout/CrossAxisAlignment;ILkotlin/jvm/internal/DefaultConstructorMarker;)V
 
-    .line 672
+    .line 675
     :cond_1
     iget p1, p0, Landroidx/compose/foundation/layout/LayoutWeightNode;->weight:F
 
     invoke-virtual {p2, p1}, Landroidx/compose/foundation/layout/RowColumnParentData;->setWeight(F)V
 
-    .line 673
+    .line 676
     iget-boolean p0, p0, Landroidx/compose/foundation/layout/LayoutWeightNode;->fill:Z
 
     invoke-virtual {p2, p0}, Landroidx/compose/foundation/layout/RowColumnParentData;->setFill(Z)V
@@ -142,7 +148,7 @@
 .method public bridge synthetic modifyParentData(Landroidx/compose/ui/unit/Density;Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
 
-    .line 666
+    .line 669
     invoke-virtual {p0, p1, p2}, Landroidx/compose/foundation/layout/LayoutWeightNode;->modifyParentData(Landroidx/compose/ui/unit/Density;Ljava/lang/Object;)Landroidx/compose/foundation/layout/RowColumnParentData;
 
     move-result-object p0
@@ -153,7 +159,7 @@
 .method public final setFill(Z)V
     .locals 0
 
-    .line 668
+    .line 671
     iput-boolean p1, p0, Landroidx/compose/foundation/layout/LayoutWeightNode;->fill:Z
 
     return-void
@@ -162,7 +168,7 @@
 .method public final setWeight(F)V
     .locals 0
 
-    .line 667
+    .line 670
     iput p1, p0, Landroidx/compose/foundation/layout/LayoutWeightNode;->weight:F
 
     return-void

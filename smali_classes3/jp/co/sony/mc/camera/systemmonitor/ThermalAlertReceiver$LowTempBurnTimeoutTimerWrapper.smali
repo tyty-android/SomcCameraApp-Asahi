@@ -36,19 +36,19 @@
 .method private constructor <init>(Ljp/co/sony/mc/camera/systemmonitor/ThermalAlertReceiver;)V
     .locals 2
 
-    .line 475
+    .line 487
     iput-object p1, p0, Ljp/co/sony/mc/camera/systemmonitor/ThermalAlertReceiver$LowTempBurnTimeoutTimerWrapper;->this$0:Ljp/co/sony/mc/camera/systemmonitor/ThermalAlertReceiver;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     const/4 p1, 0x0
 
-    .line 464
+    .line 476
     iput-object p1, p0, Ljp/co/sony/mc/camera/systemmonitor/ThermalAlertReceiver$LowTempBurnTimeoutTimerWrapper;->mTimer:Ljava/util/Timer;
 
     const-wide/16 v0, -0x1
 
-    .line 470
+    .line 482
     iput-wide v0, p0, Ljp/co/sony/mc/camera/systemmonitor/ThermalAlertReceiver$LowTempBurnTimeoutTimerWrapper;->mTimerToBeExpiredTimeMillis:J
 
     return-void
@@ -65,7 +65,7 @@
 .method private getRemainedTimeMillis()J
     .locals 6
 
-    .line 480
+    .line 492
     iget-wide v0, p0, Ljp/co/sony/mc/camera/systemmonitor/ThermalAlertReceiver$LowTempBurnTimeoutTimerWrapper;->mTimerToBeExpiredTimeMillis:J
 
     const-wide/16 v2, -0x1
@@ -76,7 +76,7 @@
 
     return-wide v2
 
-    .line 486
+    .line 498
     :cond_0
     invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
 
@@ -105,7 +105,7 @@
 
     const/4 v0, 0x1
 
-    .line 529
+    .line 541
     :try_start_0
     new-array v1, v0, [Ljava/lang/String;
 
@@ -117,32 +117,32 @@
 
     invoke-static {v1}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
-    .line 531
+    .line 543
     iget-object v1, p0, Ljp/co/sony/mc/camera/systemmonitor/ThermalAlertReceiver$LowTempBurnTimeoutTimerWrapper;->mTimer:Ljava/util/Timer;
 
     if-eqz v1, :cond_0
 
-    .line 532
+    .line 544
     invoke-virtual {v1}, Ljava/util/Timer;->cancel()V
 
-    .line 533
+    .line 545
     iget-object v0, p0, Ljp/co/sony/mc/camera/systemmonitor/ThermalAlertReceiver$LowTempBurnTimeoutTimerWrapper;->mTimer:Ljava/util/Timer;
 
     invoke-virtual {v0}, Ljava/util/Timer;->purge()I
 
     const/4 v0, 0x0
 
-    .line 534
+    .line 546
     iput-object v0, p0, Ljp/co/sony/mc/camera/systemmonitor/ThermalAlertReceiver$LowTempBurnTimeoutTimerWrapper;->mTimer:Ljava/util/Timer;
 
     const-wide/16 v0, -0x1
 
-    .line 536
+    .line 548
     iput-wide v0, p0, Ljp/co/sony/mc/camera/systemmonitor/ThermalAlertReceiver$LowTempBurnTimeoutTimerWrapper;->mTimerToBeExpiredTimeMillis:J
 
     goto :goto_0
 
-    .line 538
+    .line 550
     :cond_0
     new-array v0, v0, [Ljava/lang/String;
 
@@ -154,7 +154,7 @@
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 540
+    .line 552
     :goto_0
     monitor-exit p0
 
@@ -177,7 +177,7 @@
 
     const/4 v1, 0x1
 
-    .line 502
+    .line 514
     :try_start_0
     new-array v2, v1, [Ljava/lang/String;
 
@@ -199,7 +199,7 @@
 
     invoke-static {v2}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
-    .line 504
+    .line 516
     invoke-direct {p0}, Ljp/co/sony/mc/camera/systemmonitor/ThermalAlertReceiver$LowTempBurnTimeoutTimerWrapper;->getRemainedTimeMillis()J
 
     move-result-wide v4
@@ -214,7 +214,7 @@
 
     if-gez v0, :cond_0
 
-    .line 509
+    .line 521
     new-array p1, v1, [Ljava/lang/String;
 
     const-string p2, "Current timer is valid."
@@ -225,24 +225,24 @@
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 510
+    .line 522
     monitor-exit p0
 
     return-void
 
-    .line 515
+    .line 527
     :cond_0
     :try_start_1
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/systemmonitor/ThermalAlertReceiver$LowTempBurnTimeoutTimerWrapper;->cancel()V
 
-    .line 518
+    .line 530
     new-instance v0, Ljava/util/Timer;
 
     invoke-direct {v0, v1}, Ljava/util/Timer;-><init>(Z)V
 
     iput-object v0, p0, Ljp/co/sony/mc/camera/systemmonitor/ThermalAlertReceiver$LowTempBurnTimeoutTimerWrapper;->mTimer:Ljava/util/Timer;
 
-    .line 520
+    .line 532
     new-instance v1, Ljp/co/sony/mc/camera/systemmonitor/ThermalAlertReceiver$LowTempBurnTimeoutTimerWrapper$LowTempBurnTimerTask;
 
     const/4 v2, 0x0
@@ -251,7 +251,7 @@
 
     invoke-virtual {v0, v1, p1, p2}, Ljava/util/Timer;->schedule(Ljava/util/TimerTask;J)V
 
-    .line 522
+    .line 534
     invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
 
     move-result-wide v0
@@ -262,7 +262,7 @@
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
-    .line 523
+    .line 535
     monitor-exit p0
 
     return-void

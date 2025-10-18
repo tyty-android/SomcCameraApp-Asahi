@@ -83,7 +83,7 @@
 .method public bridge synthetic invoke()Ljava/lang/Object;
     .locals 2
 
-    .line 68
+    .line 67
     invoke-virtual {p0}, Landroidx/compose/foundation/text/selection/SelectionMagnifierKt$animatedSelectionMagnifier$1$1$1;->invoke-F1C5BW0()J
 
     move-result-wide v0
@@ -98,7 +98,7 @@
 .method public final invoke-F1C5BW0()J
     .locals 2
 
-    .line 68
+    .line 67
     iget-object p0, p0, Landroidx/compose/foundation/text/selection/SelectionMagnifierKt$animatedSelectionMagnifier$1$1$1;->$animatedCenter$delegate:Landroidx/compose/runtime/State;
 
     invoke-static {p0}, Landroidx/compose/foundation/text/selection/SelectionMagnifierKt$animatedSelectionMagnifier$1;->access$invoke$lambda$0(Landroidx/compose/runtime/State;)J

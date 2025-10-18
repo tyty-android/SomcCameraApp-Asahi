@@ -9,7 +9,7 @@
 # annotations
 .annotation runtime Lkotlin/Metadata;
     d1 = {
-        "\u0000<\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0007\n\u0002\u0010\u000b\n\u0000\n\u0002\u0010\u0000\n\u0000\n\u0002\u0010\u0008\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0004\n\u0002\u0010\u000e\n\u0000\u0008\u0003\u0018\u00002\u00020\u0001B\u0018\u0012\u0006\u0010\u0002\u001a\u00020\u0001\u0012\u0006\u0010\u0003\u001a\u00020\u0004\u00f8\u0001\u0000\u00a2\u0006\u0002\u0010\u0005J\u0013\u0010\u000b\u001a\u00020\u000c2\u0008\u0010\r\u001a\u0004\u0018\u00010\u000eH\u0096\u0002J\u0010\u0010\u000f\u001a\u00020\u00102\u0006\u0010\u0011\u001a\u00020\u0012H\u0016J\u0018\u0010\u0013\u001a\u00020\u00102\u0006\u0010\u0011\u001a\u00020\u00122\u0006\u0010\u0014\u001a\u00020\u0015H\u0016J\u0018\u0010\u0016\u001a\u00020\u00102\u0006\u0010\u0011\u001a\u00020\u00122\u0006\u0010\u0014\u001a\u00020\u0015H\u0016J\u0010\u0010\u0017\u001a\u00020\u00102\u0006\u0010\u0011\u001a\u00020\u0012H\u0016J\u0008\u0010\u0018\u001a\u00020\u0010H\u0016J\u0008\u0010\u0019\u001a\u00020\u001aH\u0016R\u0011\u0010\u0002\u001a\u00020\u0001\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\u0006\u0010\u0007R\u001c\u0010\u0003\u001a\u00020\u0004\u00f8\u0001\u0000\u00f8\u0001\u0001\u00f8\u0001\u0002\u00a2\u0006\n\n\u0002\u0010\n\u001a\u0004\u0008\u0008\u0010\t\u0082\u0002\u000f\n\u0002\u0008\u0019\n\u0005\u0008\u00a1\u001e0\u0001\n\u0002\u0008!\u00a8\u0006\u001b"
+        "\u0000<\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0007\n\u0002\u0010\u000b\n\u0000\n\u0002\u0010\u0000\n\u0000\n\u0002\u0010\u0008\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0004\n\u0002\u0010\u000e\n\u0000\u0008\u0003\u0018\u00002\u00020\u0001B\u0015\u0012\u0006\u0010\u0002\u001a\u00020\u0001\u0012\u0006\u0010\u0003\u001a\u00020\u0004\u00a2\u0006\u0002\u0010\u0005J\u0013\u0010\u000b\u001a\u00020\u000c2\u0008\u0010\r\u001a\u0004\u0018\u00010\u000eH\u0096\u0002J\u0010\u0010\u000f\u001a\u00020\u00102\u0006\u0010\u0011\u001a\u00020\u0012H\u0016J\u0018\u0010\u0013\u001a\u00020\u00102\u0006\u0010\u0011\u001a\u00020\u00122\u0006\u0010\u0014\u001a\u00020\u0015H\u0016J\u0018\u0010\u0016\u001a\u00020\u00102\u0006\u0010\u0011\u001a\u00020\u00122\u0006\u0010\u0014\u001a\u00020\u0015H\u0016J\u0010\u0010\u0017\u001a\u00020\u00102\u0006\u0010\u0011\u001a\u00020\u0012H\u0016J\u0008\u0010\u0018\u001a\u00020\u0010H\u0016J\u0008\u0010\u0019\u001a\u00020\u001aH\u0016R\u0011\u0010\u0002\u001a\u00020\u0001\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\u0006\u0010\u0007R\u0019\u0010\u0003\u001a\u00020\u0004\u00f8\u0001\u0000\u00f8\u0001\u0001\u00a2\u0006\n\n\u0002\u0010\n\u001a\u0004\u0008\u0008\u0010\t\u0082\u0002\u000b\n\u0005\u0008\u00a1\u001e0\u0001\n\u0002\u0008!\u00a8\u0006\u001b"
     }
     d2 = {
         "Landroidx/compose/foundation/layout/LimitInsets;",
@@ -59,19 +59,15 @@
 
 # direct methods
 .method private constructor <init>(Landroidx/compose/foundation/layout/WindowInsets;I)V
-    .locals 1
-
-    const-string v0, "insets"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 574
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    .locals 0
 
     .line 576
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 578
     iput-object p1, p0, Landroidx/compose/foundation/layout/LimitInsets;->insets:Landroidx/compose/foundation/layout/WindowInsets;
 
-    .line 577
+    .line 579
     iput p2, p0, Landroidx/compose/foundation/layout/LimitInsets;->sides:I
 
     return-void
@@ -96,7 +92,7 @@
 
     return v0
 
-    .line 617
+    .line 619
     :cond_0
     instance-of v1, p1, Landroidx/compose/foundation/layout/LimitInsets;
 
@@ -106,7 +102,7 @@
 
     return v2
 
-    .line 620
+    .line 622
     :cond_1
     iget-object v1, p0, Landroidx/compose/foundation/layout/LimitInsets;->insets:Landroidx/compose/foundation/layout/WindowInsets;
 
@@ -120,7 +116,7 @@
 
     if-eqz v1, :cond_2
 
-    .line 621
+    .line 623
     iget p0, p0, Landroidx/compose/foundation/layout/LimitInsets;->sides:I
 
     iget p1, p1, Landroidx/compose/foundation/layout/LimitInsets;->sides:I
@@ -143,11 +139,7 @@
 .method public getBottom(Landroidx/compose/ui/unit/Density;)I
     .locals 2
 
-    const-string v0, "density"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 611
+    .line 613
     iget v0, p0, Landroidx/compose/foundation/layout/LimitInsets;->sides:I
 
     sget-object v1, Landroidx/compose/foundation/layout/WindowInsetsSides;->Companion:Landroidx/compose/foundation/layout/WindowInsetsSides$Companion;
@@ -180,7 +172,7 @@
 .method public final getInsets()Landroidx/compose/foundation/layout/WindowInsets;
     .locals 0
 
-    .line 576
+    .line 578
     iget-object p0, p0, Landroidx/compose/foundation/layout/LimitInsets;->insets:Landroidx/compose/foundation/layout/WindowInsets;
 
     return-object p0
@@ -189,20 +181,12 @@
 .method public getLeft(Landroidx/compose/ui/unit/Density;Landroidx/compose/ui/unit/LayoutDirection;)I
     .locals 2
 
-    const-string v0, "density"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string v0, "layoutDirection"
-
-    invoke-static {p2, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 580
+    .line 582
     sget-object v0, Landroidx/compose/ui/unit/LayoutDirection;->Ltr:Landroidx/compose/ui/unit/LayoutDirection;
 
     if-ne p2, v0, :cond_0
 
-    .line 581
+    .line 583
     sget-object v0, Landroidx/compose/foundation/layout/WindowInsetsSides;->Companion:Landroidx/compose/foundation/layout/WindowInsetsSides$Companion;
 
     invoke-virtual {v0}, Landroidx/compose/foundation/layout/WindowInsetsSides$Companion;->getAllowLeftInLtr-JoeWqyM$foundation_layout_release()I
@@ -211,7 +195,7 @@
 
     goto :goto_0
 
-    .line 583
+    .line 585
     :cond_0
     sget-object v0, Landroidx/compose/foundation/layout/WindowInsetsSides;->Companion:Landroidx/compose/foundation/layout/WindowInsetsSides$Companion;
 
@@ -219,7 +203,7 @@
 
     move-result v0
 
-    .line 585
+    .line 587
     :goto_0
     iget v1, p0, Landroidx/compose/foundation/layout/LimitInsets;->sides:I
 
@@ -229,7 +213,7 @@
 
     if-eqz v0, :cond_1
 
-    .line 587
+    .line 589
     iget-object p0, p0, Landroidx/compose/foundation/layout/LimitInsets;->insets:Landroidx/compose/foundation/layout/WindowInsets;
 
     invoke-interface {p0, p1, p2}, Landroidx/compose/foundation/layout/WindowInsets;->getLeft(Landroidx/compose/ui/unit/Density;Landroidx/compose/ui/unit/LayoutDirection;)I
@@ -248,20 +232,12 @@
 .method public getRight(Landroidx/compose/ui/unit/Density;Landroidx/compose/ui/unit/LayoutDirection;)I
     .locals 2
 
-    const-string v0, "density"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string v0, "layoutDirection"
-
-    invoke-static {p2, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 597
+    .line 599
     sget-object v0, Landroidx/compose/ui/unit/LayoutDirection;->Ltr:Landroidx/compose/ui/unit/LayoutDirection;
 
     if-ne p2, v0, :cond_0
 
-    .line 598
+    .line 600
     sget-object v0, Landroidx/compose/foundation/layout/WindowInsetsSides;->Companion:Landroidx/compose/foundation/layout/WindowInsetsSides$Companion;
 
     invoke-virtual {v0}, Landroidx/compose/foundation/layout/WindowInsetsSides$Companion;->getAllowRightInLtr-JoeWqyM$foundation_layout_release()I
@@ -270,7 +246,7 @@
 
     goto :goto_0
 
-    .line 600
+    .line 602
     :cond_0
     sget-object v0, Landroidx/compose/foundation/layout/WindowInsetsSides;->Companion:Landroidx/compose/foundation/layout/WindowInsetsSides$Companion;
 
@@ -278,7 +254,7 @@
 
     move-result v0
 
-    .line 602
+    .line 604
     :goto_0
     iget v1, p0, Landroidx/compose/foundation/layout/LimitInsets;->sides:I
 
@@ -288,7 +264,7 @@
 
     if-eqz v0, :cond_1
 
-    .line 604
+    .line 606
     iget-object p0, p0, Landroidx/compose/foundation/layout/LimitInsets;->insets:Landroidx/compose/foundation/layout/WindowInsets;
 
     invoke-interface {p0, p1, p2}, Landroidx/compose/foundation/layout/WindowInsets;->getRight(Landroidx/compose/ui/unit/Density;Landroidx/compose/ui/unit/LayoutDirection;)I
@@ -307,7 +283,7 @@
 .method public final getSides-JoeWqyM()I
     .locals 0
 
-    .line 577
+    .line 579
     iget p0, p0, Landroidx/compose/foundation/layout/LimitInsets;->sides:I
 
     return p0
@@ -316,11 +292,7 @@
 .method public getTop(Landroidx/compose/ui/unit/Density;)I
     .locals 2
 
-    const-string v0, "density"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 594
+    .line 596
     iget v0, p0, Landroidx/compose/foundation/layout/LimitInsets;->sides:I
 
     sget-object v1, Landroidx/compose/foundation/layout/WindowInsetsSides;->Companion:Landroidx/compose/foundation/layout/WindowInsetsSides$Companion;
@@ -353,7 +325,7 @@
 .method public hashCode()I
     .locals 1
 
-    .line 625
+    .line 627
     iget-object v0, p0, Landroidx/compose/foundation/layout/LimitInsets;->insets:Landroidx/compose/foundation/layout/WindowInsets;
 
     invoke-virtual {v0}, Ljava/lang/Object;->hashCode()I
@@ -362,7 +334,7 @@
 
     mul-int/lit8 v0, v0, 0x1f
 
-    .line 626
+    .line 628
     iget p0, p0, Landroidx/compose/foundation/layout/LimitInsets;->sides:I
 
     invoke-static {p0}, Landroidx/compose/foundation/layout/WindowInsetsSides;->hashCode-impl(I)I
@@ -377,7 +349,7 @@
 .method public toString()Ljava/lang/String;
     .locals 2
 
-    .line 630
+    .line 632
     new-instance v0, Ljava/lang/StringBuilder;
 
     const-string v1, "("

@@ -18,7 +18,7 @@
 .method private constructor <init>()V
     .locals 0
 
-    .line 173
+    .line 222
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -27,7 +27,7 @@
 .method synthetic constructor <init>(Lcom/google/gson/internal/reflect/ReflectionHelper$1;)V
     .locals 0
 
-    .line 173
+    .line 222
     invoke-direct {p0}, Lcom/google/gson/internal/reflect/ReflectionHelper$RecordHelper;-><init>()V
 
     return-void

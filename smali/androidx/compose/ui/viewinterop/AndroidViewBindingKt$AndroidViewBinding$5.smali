@@ -99,10 +99,6 @@
 .method public final invoke(Landroid/content/Context;)Landroid/view/View;
     .locals 2
 
-    const-string v0, "context"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
     .line 176
     iget-object v0, p0, Landroidx/compose/ui/viewinterop/AndroidViewBindingKt$AndroidViewBinding$5;->$parentFragment:Landroidx/fragment/app/Fragment;
 
@@ -122,10 +118,6 @@
     .line 177
     :cond_1
     iget-object p0, p0, Landroidx/compose/ui/viewinterop/AndroidViewBindingKt$AndroidViewBinding$5;->$factory:Lkotlin/jvm/functions/Function3;
-
-    const-string v1, "inflater"
-
-    invoke-static {v0, v1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
 
     new-instance v1, Landroid/widget/FrameLayout;
 
@@ -149,10 +141,6 @@
     move-result-object p1
 
     .line 179
-    const-string v0, "invoke$lambda$0"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
-
     invoke-static {p1, p0}, Landroidx/compose/ui/viewinterop/AndroidViewBindingKt;->access$setBinding(Landroid/view/View;Landroidx/viewbinding/ViewBinding;)V
 
     return-object p1

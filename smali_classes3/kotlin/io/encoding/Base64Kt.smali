@@ -5,12 +5,12 @@
 
 # annotations
 .annotation system Ldalvik/annotation/SourceDebugExtension;
-    value = "SMAP\nBase64.kt\nKotlin\n*S Kotlin\n*F\n+ 1 Base64.kt\nkotlin/io/encoding/Base64Kt\n+ 2 _Arrays.kt\nkotlin/collections/ArraysKt___ArraysKt\n*L\n1#1,649:1\n13384#2,3:650\n13384#2,3:653\n*S KotlinDebug\n*F\n+ 1 Base64.kt\nkotlin/io/encoding/Base64Kt\n*L\n584#1:650,3\n603#1:653,3\n*E\n"
+    value = "SMAP\nBase64.kt\nKotlin\n*S Kotlin\n*F\n+ 1 Base64.kt\nkotlin/io/encoding/Base64Kt\n+ 2 _Arrays.kt\nkotlin/collections/ArraysKt___ArraysKt\n*L\n1#1,643:1\n13421#2,3:644\n13421#2,3:647\n*S KotlinDebug\n*F\n+ 1 Base64.kt\nkotlin/io/encoding/Base64Kt\n*L\n580#1:644,3\n597#1:647,3\n*E\n"
 .end annotation
 
 .annotation runtime Lkotlin/Metadata;
     d1 = {
-        "\u0000\u001e\n\u0000\n\u0002\u0010\u0015\n\u0002\u0008\u0003\n\u0002\u0010\u0012\n\u0002\u0008\u0006\n\u0002\u0010\u000b\n\u0000\n\u0002\u0010\u0008\n\u0000\u001a\u0010\u0010\u000b\u001a\u00020\u000c2\u0006\u0010\r\u001a\u00020\u000eH\u0001\"\u0016\u0010\u0000\u001a\u00020\u00018\u0002X\u0083\u0004\u00a2\u0006\u0008\n\u0000\u0012\u0004\u0008\u0002\u0010\u0003\"\u0016\u0010\u0004\u001a\u00020\u00058\u0002X\u0083\u0004\u00a2\u0006\u0008\n\u0000\u0012\u0004\u0008\u0006\u0010\u0003\"\u0016\u0010\u0007\u001a\u00020\u00018\u0002X\u0083\u0004\u00a2\u0006\u0008\n\u0000\u0012\u0004\u0008\u0008\u0010\u0003\"\u0016\u0010\t\u001a\u00020\u00058\u0002X\u0083\u0004\u00a2\u0006\u0008\n\u0000\u0012\u0004\u0008\n\u0010\u0003\u00a8\u0006\u000f"
+        "\u0000\u001e\n\u0000\n\u0002\u0010\u0015\n\u0002\u0008\u0003\n\u0002\u0010\u0012\n\u0002\u0008\u0004\n\u0002\u0010\u000b\n\u0000\n\u0002\u0010\u0008\n\u0000\u001a\u0010\u0010\t\u001a\u00020\n2\u0006\u0010\u000b\u001a\u00020\u000cH\u0001\"\u0016\u0010\u0000\u001a\u00020\u00018\u0002X\u0083\u0004\u00a2\u0006\u0008\n\u0000\u0012\u0004\u0008\u0002\u0010\u0003\"\u000e\u0010\u0004\u001a\u00020\u0005X\u0082\u0004\u00a2\u0006\u0002\n\u0000\"\u0016\u0010\u0006\u001a\u00020\u00018\u0002X\u0083\u0004\u00a2\u0006\u0008\n\u0000\u0012\u0004\u0008\u0007\u0010\u0003\"\u000e\u0010\u0008\u001a\u00020\u0005X\u0082\u0004\u00a2\u0006\u0002\n\u0000\u00a8\u0006\r"
     }
     d2 = {
         "base64DecodeMap",
@@ -19,11 +19,9 @@
         "()V",
         "base64EncodeMap",
         "",
-        "getBase64EncodeMap$annotations",
         "base64UrlDecodeMap",
         "getBase64UrlDecodeMap$annotations",
         "base64UrlEncodeMap",
-        "getBase64UrlEncodeMap$annotations",
         "isInMimeAlphabet",
         "",
         "symbol",
@@ -56,17 +54,17 @@
 
     const/16 v0, 0x40
 
-    .line 576
+    .line 573
     new-array v0, v0, [B
 
     fill-array-data v0, :array_0
 
-    .line 572
+    .line 569
     sput-object v0, Lkotlin/io/encoding/Base64Kt;->base64EncodeMap:[B
 
     const/16 v1, 0x100
 
-    .line 581
+    .line 577
     new-array v1, v1, [I
 
     const/4 v6, 0x6
@@ -81,17 +79,17 @@
 
     move-object v2, v1
 
-    .line 582
+    .line 578
     invoke-static/range {v2 .. v7}, Lkotlin/collections/ArraysKt;->fill$default([IIIIILjava/lang/Object;)V
 
     const/16 v2, 0x3d
 
     const/4 v3, -0x2
 
-    .line 583
+    .line 579
     aput v3, v1, v2
 
-    .line 651
+    .line 645
     array-length v2, v0
 
     const/4 v3, 0x0
@@ -107,7 +105,7 @@
 
     add-int/lit8 v7, v5, 0x1
 
-    .line 585
+    .line 581
     aput v5, v1, v6
 
     add-int/lit8 v4, v4, 0x1
@@ -116,23 +114,23 @@
 
     goto :goto_0
 
-    .line 581
+    .line 577
     :cond_0
     sput-object v1, Lkotlin/io/encoding/Base64Kt;->base64DecodeMap:[I
 
     const/16 v0, 0x40
 
-    .line 595
+    .line 590
     new-array v0, v0, [B
 
     fill-array-data v0, :array_1
 
-    .line 591
+    .line 586
     sput-object v0, Lkotlin/io/encoding/Base64Kt;->base64UrlEncodeMap:[B
 
     const/16 v1, 0x100
 
-    .line 600
+    .line 594
     new-array v1, v1, [I
 
     const/4 v8, 0x6
@@ -147,17 +145,17 @@
 
     move-object v4, v1
 
-    .line 601
+    .line 595
     invoke-static/range {v4 .. v9}, Lkotlin/collections/ArraysKt;->fill$default([IIIIILjava/lang/Object;)V
 
     const/16 v2, 0x3d
 
     const/4 v4, -0x2
 
-    .line 602
+    .line 596
     aput v4, v1, v2
 
-    .line 654
+    .line 648
     array-length v2, v0
 
     move v4, v3
@@ -169,7 +167,7 @@
 
     add-int/lit8 v6, v4, 0x1
 
-    .line 604
+    .line 598
     aput v4, v1, v5
 
     add-int/lit8 v3, v3, 0x1
@@ -178,7 +176,7 @@
 
     goto :goto_1
 
-    .line 600
+    .line 594
     :cond_1
     sput-object v1, Lkotlin/io/encoding/Base64Kt;->base64UrlDecodeMap:[I
 
@@ -365,19 +363,7 @@
     return-void
 .end method
 
-.method private static synthetic getBase64EncodeMap$annotations()V
-    .locals 0
-
-    return-void
-.end method
-
 .method private static synthetic getBase64UrlDecodeMap$annotations()V
-    .locals 0
-
-    return-void
-.end method
-
-.method private static synthetic getBase64UrlEncodeMap$annotations()V
     .locals 0
 
     return-void
@@ -388,7 +374,7 @@
 
     if-ltz p0, :cond_0
 
-    .line 612
+    .line 606
     sget-object v0, Lkotlin/io/encoding/Base64Kt;->base64DecodeMap:[I
 
     array-length v1, v0

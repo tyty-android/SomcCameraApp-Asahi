@@ -67,7 +67,7 @@
 .method public final invoke()Ljava/lang/Integer;
     .locals 2
 
-    .line 324
+    .line 347
     iget-object v0, p0, Landroidx/compose/foundation/pager/PagerState$targetPage$2;->this$0:Landroidx/compose/foundation/pager/PagerState;
 
     invoke-virtual {v0}, Landroidx/compose/foundation/pager/PagerState;->isScrollInProgress()Z
@@ -76,7 +76,7 @@
 
     if-nez v0, :cond_0
 
-    .line 325
+    .line 348
     iget-object v0, p0, Landroidx/compose/foundation/pager/PagerState$targetPage$2;->this$0:Landroidx/compose/foundation/pager/PagerState;
 
     invoke-virtual {v0}, Landroidx/compose/foundation/pager/PagerState;->getCurrentPage()I
@@ -85,11 +85,11 @@
 
     goto :goto_0
 
-    .line 326
+    .line 349
     :cond_0
     iget-object v0, p0, Landroidx/compose/foundation/pager/PagerState$targetPage$2;->this$0:Landroidx/compose/foundation/pager/PagerState;
 
-    invoke-static {v0}, Landroidx/compose/foundation/pager/PagerState;->access$getAnimationTargetPage(Landroidx/compose/foundation/pager/PagerState;)I
+    invoke-static {v0}, Landroidx/compose/foundation/pager/PagerState;->access$getProgrammaticScrollTargetPage(Landroidx/compose/foundation/pager/PagerState;)I
 
     move-result v0
 
@@ -97,16 +97,16 @@
 
     if-eq v0, v1, :cond_1
 
-    .line 327
+    .line 350
     iget-object v0, p0, Landroidx/compose/foundation/pager/PagerState$targetPage$2;->this$0:Landroidx/compose/foundation/pager/PagerState;
 
-    invoke-static {v0}, Landroidx/compose/foundation/pager/PagerState;->access$getAnimationTargetPage(Landroidx/compose/foundation/pager/PagerState;)I
+    invoke-static {v0}, Landroidx/compose/foundation/pager/PagerState;->access$getProgrammaticScrollTargetPage(Landroidx/compose/foundation/pager/PagerState;)I
 
     move-result v0
 
     goto :goto_0
 
-    .line 328
+    .line 351
     :cond_1
     iget-object v0, p0, Landroidx/compose/foundation/pager/PagerState$targetPage$2;->this$0:Landroidx/compose/foundation/pager/PagerState;
 
@@ -118,9 +118,9 @@
 
     cmpg-float v0, v0, v1
 
-    if-nez v0, :cond_3
+    if-nez v0, :cond_4
 
-    .line 330
+    .line 353
     iget-object v0, p0, Landroidx/compose/foundation/pager/PagerState$targetPage$2;->this$0:Landroidx/compose/foundation/pager/PagerState;
 
     invoke-virtual {v0}, Landroidx/compose/foundation/pager/PagerState;->getCurrentPageOffsetFraction()F
@@ -133,7 +133,7 @@
 
     iget-object v1, p0, Landroidx/compose/foundation/pager/PagerState$targetPage$2;->this$0:Landroidx/compose/foundation/pager/PagerState;
 
-    invoke-static {v1}, Landroidx/compose/foundation/pager/PagerState;->access$getPositionThresholdFraction(Landroidx/compose/foundation/pager/PagerState;)F
+    invoke-virtual {v1}, Landroidx/compose/foundation/pager/PagerState;->getPositionThresholdFraction$foundation_release()F
 
     move-result v1
 
@@ -143,43 +143,50 @@
 
     cmpl-float v0, v0, v1
 
-    if-ltz v0, :cond_2
+    if-ltz v0, :cond_3
 
-    .line 331
+    .line 354
     iget-object v0, p0, Landroidx/compose/foundation/pager/PagerState$targetPage$2;->this$0:Landroidx/compose/foundation/pager/PagerState;
 
-    invoke-virtual {v0}, Landroidx/compose/foundation/pager/PagerState;->getCurrentPage()I
+    invoke-static {v0}, Landroidx/compose/foundation/pager/PagerState;->access$isScrollingForward(Landroidx/compose/foundation/pager/PagerState;)Z
 
     move-result v0
 
-    iget-object v1, p0, Landroidx/compose/foundation/pager/PagerState$targetPage$2;->this$0:Landroidx/compose/foundation/pager/PagerState;
+    if-eqz v0, :cond_2
 
-    invoke-virtual {v1}, Landroidx/compose/foundation/pager/PagerState;->getCurrentPageOffsetFraction()F
+    .line 355
+    iget-object v0, p0, Landroidx/compose/foundation/pager/PagerState$targetPage$2;->this$0:Landroidx/compose/foundation/pager/PagerState;
 
-    move-result v1
+    invoke-virtual {v0}, Landroidx/compose/foundation/pager/PagerState;->getFirstVisiblePage$foundation_release()I
 
-    invoke-static {v1}, Ljava/lang/Math;->signum(F)F
+    move-result v0
 
-    move-result v1
-
-    float-to-int v1, v1
-
-    add-int/2addr v0, v1
+    add-int/lit8 v0, v0, 0x1
 
     goto :goto_0
 
-    .line 333
+    .line 357
     :cond_2
     iget-object v0, p0, Landroidx/compose/foundation/pager/PagerState$targetPage$2;->this$0:Landroidx/compose/foundation/pager/PagerState;
 
+    invoke-virtual {v0}, Landroidx/compose/foundation/pager/PagerState;->getFirstVisiblePage$foundation_release()I
+
+    move-result v0
+
+    goto :goto_0
+
+    .line 360
+    :cond_3
+    iget-object v0, p0, Landroidx/compose/foundation/pager/PagerState$targetPage$2;->this$0:Landroidx/compose/foundation/pager/PagerState;
+
     invoke-virtual {v0}, Landroidx/compose/foundation/pager/PagerState;->getCurrentPage()I
 
     move-result v0
 
     goto :goto_0
 
-    .line 337
-    :cond_3
+    .line 364
+    :cond_4
     iget-object v0, p0, Landroidx/compose/foundation/pager/PagerState$targetPage$2;->this$0:Landroidx/compose/foundation/pager/PagerState;
 
     invoke-virtual {v0}, Landroidx/compose/foundation/pager/PagerState;->getSnapRemainingScrollOffset$foundation_release()F
@@ -188,7 +195,7 @@
 
     iget-object v1, p0, Landroidx/compose/foundation/pager/PagerState$targetPage$2;->this$0:Landroidx/compose/foundation/pager/PagerState;
 
-    invoke-static {v1}, Landroidx/compose/foundation/pager/PagerState;->access$getPageAvailableSpace(Landroidx/compose/foundation/pager/PagerState;)I
+    invoke-virtual {v1}, Landroidx/compose/foundation/pager/PagerState;->getPageSizeWithSpacing$foundation_release()I
 
     move-result v1
 
@@ -196,7 +203,7 @@
 
     div-float/2addr v0, v1
 
-    .line 338
+    .line 365
     iget-object v1, p0, Landroidx/compose/foundation/pager/PagerState$targetPage$2;->this$0:Landroidx/compose/foundation/pager/PagerState;
 
     invoke-virtual {v1}, Landroidx/compose/foundation/pager/PagerState;->getCurrentPage()I
@@ -209,7 +216,7 @@
 
     add-int/2addr v0, v1
 
-    .line 340
+    .line 367
     :goto_0
     iget-object p0, p0, Landroidx/compose/foundation/pager/PagerState$targetPage$2;->this$0:Landroidx/compose/foundation/pager/PagerState;
 
@@ -227,7 +234,7 @@
 .method public bridge synthetic invoke()Ljava/lang/Object;
     .locals 0
 
-    .line 323
+    .line 346
     invoke-virtual {p0}, Landroidx/compose/foundation/pager/PagerState$targetPage$2;->invoke()Ljava/lang/Integer;
 
     move-result-object p0

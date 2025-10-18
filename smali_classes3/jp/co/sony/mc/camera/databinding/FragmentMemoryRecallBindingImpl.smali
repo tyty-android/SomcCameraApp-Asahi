@@ -26,42 +26,42 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/databinding/FragmentMemoryRecallBindingImpl;->sViewsWithIds:Landroid/util/SparseIntArray;
 
-    const v1, 0x7f090223
+    const v1, 0x7f090220
 
     const/4 v2, 0x2
 
     .line 17
     invoke-virtual {v0, v1, v2}, Landroid/util/SparseIntArray;->put(II)V
 
-    const v1, 0x7f090225
+    const v1, 0x7f090222
 
     const/4 v2, 0x3
 
     .line 18
     invoke-virtual {v0, v1, v2}, Landroid/util/SparseIntArray;->put(II)V
 
-    const v1, 0x7f090224
+    const v1, 0x7f090221
 
     const/4 v2, 0x4
 
     .line 19
     invoke-virtual {v0, v1, v2}, Landroid/util/SparseIntArray;->put(II)V
 
-    const v1, 0x7f0902e9
+    const v1, 0x7f0902e2
 
     const/4 v2, 0x5
 
     .line 20
     invoke-virtual {v0, v1, v2}, Landroid/util/SparseIntArray;->put(II)V
 
-    const v1, 0x7f0902cf
+    const v1, 0x7f0902c8
 
     const/4 v2, 0x6
 
     .line 21
     invoke-virtual {v0, v1, v2}, Landroid/util/SparseIntArray;->put(II)V
 
-    const v1, 0x7f0902d0
+    const v1, 0x7f0902c9
 
     const/4 v2, 0x7
 
@@ -366,7 +366,7 @@
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    const/16 p1, 0xd
+    const/16 p1, 0xf
 
     .line 88
     invoke-virtual {p0, p1}, Ljp/co/sony/mc/camera/databinding/FragmentMemoryRecallBindingImpl;->notifyPropertyChanged(I)V
@@ -391,7 +391,7 @@
 .method public setVariable(ILjava/lang/Object;)Z
     .locals 1
 
-    const/16 v0, 0xd
+    const/16 v0, 0xf
 
     if-ne v0, p1, :cond_0
 

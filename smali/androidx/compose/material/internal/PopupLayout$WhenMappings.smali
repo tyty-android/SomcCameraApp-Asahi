@@ -1,6 +1,6 @@
 .class public final synthetic Landroidx/compose/material/internal/PopupLayout$WhenMappings;
 .super Ljava/lang/Object;
-.source "ExposedDropdownMenuPopup.kt"
+.source "ExposedDropdownMenuPopup.android.kt"
 
 
 # annotations

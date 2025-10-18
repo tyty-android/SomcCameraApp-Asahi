@@ -363,7 +363,7 @@
 
     move-result-object p0
 
-    const-string/jumbo v0, "singletonMap(pair.first, pair.second)"
+    const-string/jumbo v0, "singletonMap(...)"
 
     invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
 
@@ -522,7 +522,7 @@
 
     move-result-object p0
 
-    const-string/jumbo v0, "with(entries.iterator().\u2026ingletonMap(key, value) }"
+    const-string/jumbo v0, "with(...)"
 
     invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
 

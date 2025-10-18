@@ -77,7 +77,7 @@
     .line 25
     new-instance v6, Ljp/co/sony/mc/camera/configuration/parameters/Metering;
 
-    const v4, 0x7f1102fd
+    const v4, 0x7f11032a
 
     const-string v5, "multi"
 
@@ -85,7 +85,7 @@
 
     const/4 v2, 0x0
 
-    const v3, 0x7f080248
+    const v3, 0x7f080256
 
     move-object v0, v6
 
@@ -96,7 +96,7 @@
     .line 29
     new-instance v0, Ljp/co/sony/mc/camera/configuration/parameters/Metering;
 
-    const v11, 0x7f1102fc
+    const v11, 0x7f110329
 
     const-string v12, "center-weighted"
 
@@ -104,7 +104,7 @@
 
     const/4 v9, 0x1
 
-    const v10, 0x7f080245
+    const v10, 0x7f080253
 
     move-object v7, v0
 
@@ -115,7 +115,7 @@
     .line 33
     new-instance v0, Ljp/co/sony/mc/camera/configuration/parameters/Metering;
 
-    const v5, 0x7f1102fe
+    const v5, 0x7f11032b
 
     const-string/jumbo v6, "spot"
 
@@ -123,7 +123,7 @@
 
     const/4 v3, 0x2
 
-    const v4, 0x7f08024b
+    const v4, 0x7f080259
 
     move-object v1, v0
 

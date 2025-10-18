@@ -3,46 +3,32 @@
 .source "D8$$SyntheticClass"
 
 # interfaces
-.implements Landroid/view/PixelCopy$OnPixelCopyFinishedListener;
-
-
-# instance fields
-.field public final synthetic f$0:Ljp/co/sony/mc/camera/view/fragment/ViewFinderFragment;
-
-.field public final synthetic f$1:Landroid/graphics/Bitmap;
-
-.field public final synthetic f$2:Ljp/co/sony/mc/camera/view/uistate/PreviewCoverState$FakeRequested;
+.implements Lkotlin/jvm/functions/Function2;
 
 
 # direct methods
-.method public synthetic constructor <init>(Ljp/co/sony/mc/camera/view/fragment/ViewFinderFragment;Landroid/graphics/Bitmap;Ljp/co/sony/mc/camera/view/uistate/PreviewCoverState$FakeRequested;)V
+.method public synthetic constructor <init>()V
     .locals 0
 
     .line 0
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    iput-object p1, p0, Ljp/co/sony/mc/camera/view/fragment/ViewFinderFragment$$ExternalSyntheticLambda23;->f$0:Ljp/co/sony/mc/camera/view/fragment/ViewFinderFragment;
-
-    iput-object p2, p0, Ljp/co/sony/mc/camera/view/fragment/ViewFinderFragment$$ExternalSyntheticLambda23;->f$1:Landroid/graphics/Bitmap;
-
-    iput-object p3, p0, Ljp/co/sony/mc/camera/view/fragment/ViewFinderFragment$$ExternalSyntheticLambda23;->f$2:Ljp/co/sony/mc/camera/view/uistate/PreviewCoverState$FakeRequested;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final onPixelCopyFinished(I)V
-    .locals 2
+.method public final invoke(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 0
 
     .line 0
-    iget-object v0, p0, Ljp/co/sony/mc/camera/view/fragment/ViewFinderFragment$$ExternalSyntheticLambda23;->f$0:Ljp/co/sony/mc/camera/view/fragment/ViewFinderFragment;
+    check-cast p1, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
-    iget-object v1, p0, Ljp/co/sony/mc/camera/view/fragment/ViewFinderFragment$$ExternalSyntheticLambda23;->f$1:Landroid/graphics/Bitmap;
+    check-cast p2, Ljava/lang/Boolean;
 
-    iget-object p0, p0, Ljp/co/sony/mc/camera/view/fragment/ViewFinderFragment$$ExternalSyntheticLambda23;->f$2:Ljp/co/sony/mc/camera/view/uistate/PreviewCoverState$FakeRequested;
+    invoke-static {p1, p2}, Ljp/co/sony/mc/camera/view/fragment/ViewFinderFragment;->$r8$lambda$sdmzlD14_atRVXXWobXkD81EkRQ(Ljava/lang/Object;Ljava/lang/Object;)Lkotlin/Pair;
 
-    invoke-static {v0, v1, p0, p1}, Ljp/co/sony/mc/camera/view/fragment/ViewFinderFragment;->$r8$lambda$O41u9y5gQhQAIjooyJpB1knS89w(Ljp/co/sony/mc/camera/view/fragment/ViewFinderFragment;Landroid/graphics/Bitmap;Ljp/co/sony/mc/camera/view/uistate/PreviewCoverState$FakeRequested;I)V
+    move-result-object p0
 
-    return-void
+    return-object p0
 .end method

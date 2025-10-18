@@ -57,6 +57,8 @@
 
 
 # static fields
+.field public static final $stable:I
+
 .field public static final INSTANCE:Landroidx/compose/ui/node/NodeMeasuringIntrinsics;
 
 
@@ -76,7 +78,7 @@
 .method private constructor <init>()V
     .locals 0
 
-    .line 158
+    .line 161
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -87,28 +89,16 @@
 .method public final maxHeight$ui_release(Landroidx/compose/ui/node/NodeMeasuringIntrinsics$MeasureBlock;Landroidx/compose/ui/layout/IntrinsicMeasureScope;Landroidx/compose/ui/layout/IntrinsicMeasurable;I)I
     .locals 8
 
-    const-string p0, "measureBlock"
-
-    invoke-static {p1, p0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string p0, "intrinsicMeasureScope"
-
-    invoke-static {p2, p0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string p0, "intrinsicMeasurable"
-
-    invoke-static {p3, p0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 231
+    .line 234
     new-instance p0, Landroidx/compose/ui/node/NodeMeasuringIntrinsics$DefaultIntrinsicMeasurable;
 
-    .line 233
+    .line 236
     sget-object v0, Landroidx/compose/ui/node/NodeMeasuringIntrinsics$IntrinsicMinMax;->Max:Landroidx/compose/ui/node/NodeMeasuringIntrinsics$IntrinsicMinMax;
 
-    .line 234
+    .line 237
     sget-object v1, Landroidx/compose/ui/node/NodeMeasuringIntrinsics$IntrinsicWidthHeight;->Height:Landroidx/compose/ui/node/NodeMeasuringIntrinsics$IntrinsicWidthHeight;
 
-    .line 231
+    .line 234
     invoke-direct {p0, p3, v0, v1}, Landroidx/compose/ui/node/NodeMeasuringIntrinsics$DefaultIntrinsicMeasurable;-><init>(Landroidx/compose/ui/layout/IntrinsicMeasurable;Landroidx/compose/ui/node/NodeMeasuringIntrinsics$IntrinsicMinMax;Landroidx/compose/ui/node/NodeMeasuringIntrinsics$IntrinsicWidthHeight;)V
 
     const/16 v6, 0xd
@@ -123,12 +113,12 @@
 
     move v3, p4
 
-    .line 236
+    .line 239
     invoke-static/range {v2 .. v7}, Landroidx/compose/ui/unit/ConstraintsKt;->Constraints$default(IIIIILjava/lang/Object;)J
 
     move-result-wide p3
 
-    .line 238
+    .line 241
     new-instance v0, Landroidx/compose/ui/layout/IntrinsicsMeasureScope;
 
     invoke-interface {p2}, Landroidx/compose/ui/layout/IntrinsicMeasureScope;->getLayoutDirection()Landroidx/compose/ui/unit/LayoutDirection;
@@ -139,14 +129,14 @@
 
     check-cast v0, Landroidx/compose/ui/layout/MeasureScope;
 
-    .line 239
+    .line 242
     check-cast p0, Landroidx/compose/ui/layout/Measurable;
 
     invoke-interface {p1, v0, p0, p3, p4}, Landroidx/compose/ui/node/NodeMeasuringIntrinsics$MeasureBlock;->measure-3p2s80s(Landroidx/compose/ui/layout/MeasureScope;Landroidx/compose/ui/layout/Measurable;J)Landroidx/compose/ui/layout/MeasureResult;
 
     move-result-object p0
 
-    .line 241
+    .line 244
     invoke-interface {p0}, Landroidx/compose/ui/layout/MeasureResult;->getHeight()I
 
     move-result p0
@@ -157,28 +147,16 @@
 .method public final maxWidth$ui_release(Landroidx/compose/ui/node/NodeMeasuringIntrinsics$MeasureBlock;Landroidx/compose/ui/layout/IntrinsicMeasureScope;Landroidx/compose/ui/layout/IntrinsicMeasurable;I)I
     .locals 8
 
-    const-string p0, "measureBlock"
-
-    invoke-static {p1, p0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string p0, "intrinsicMeasureScope"
-
-    invoke-static {p2, p0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string p0, "intrinsicMeasurable"
-
-    invoke-static {p3, p0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 212
+    .line 215
     new-instance p0, Landroidx/compose/ui/node/NodeMeasuringIntrinsics$DefaultIntrinsicMeasurable;
 
-    .line 214
+    .line 217
     sget-object v0, Landroidx/compose/ui/node/NodeMeasuringIntrinsics$IntrinsicMinMax;->Max:Landroidx/compose/ui/node/NodeMeasuringIntrinsics$IntrinsicMinMax;
 
-    .line 215
+    .line 218
     sget-object v1, Landroidx/compose/ui/node/NodeMeasuringIntrinsics$IntrinsicWidthHeight;->Width:Landroidx/compose/ui/node/NodeMeasuringIntrinsics$IntrinsicWidthHeight;
 
-    .line 212
+    .line 215
     invoke-direct {p0, p3, v0, v1}, Landroidx/compose/ui/node/NodeMeasuringIntrinsics$DefaultIntrinsicMeasurable;-><init>(Landroidx/compose/ui/layout/IntrinsicMeasurable;Landroidx/compose/ui/node/NodeMeasuringIntrinsics$IntrinsicMinMax;Landroidx/compose/ui/node/NodeMeasuringIntrinsics$IntrinsicWidthHeight;)V
 
     const/4 v6, 0x7
@@ -193,12 +171,12 @@
 
     move v5, p4
 
-    .line 217
+    .line 220
     invoke-static/range {v2 .. v7}, Landroidx/compose/ui/unit/ConstraintsKt;->Constraints$default(IIIIILjava/lang/Object;)J
 
     move-result-wide p3
 
-    .line 219
+    .line 222
     new-instance v0, Landroidx/compose/ui/layout/IntrinsicsMeasureScope;
 
     invoke-interface {p2}, Landroidx/compose/ui/layout/IntrinsicMeasureScope;->getLayoutDirection()Landroidx/compose/ui/unit/LayoutDirection;
@@ -209,14 +187,14 @@
 
     check-cast v0, Landroidx/compose/ui/layout/MeasureScope;
 
-    .line 220
+    .line 223
     check-cast p0, Landroidx/compose/ui/layout/Measurable;
 
     invoke-interface {p1, v0, p0, p3, p4}, Landroidx/compose/ui/node/NodeMeasuringIntrinsics$MeasureBlock;->measure-3p2s80s(Landroidx/compose/ui/layout/MeasureScope;Landroidx/compose/ui/layout/Measurable;J)Landroidx/compose/ui/layout/MeasureResult;
 
     move-result-object p0
 
-    .line 222
+    .line 225
     invoke-interface {p0}, Landroidx/compose/ui/layout/MeasureResult;->getWidth()I
 
     move-result p0
@@ -227,28 +205,16 @@
 .method public final minHeight$ui_release(Landroidx/compose/ui/node/NodeMeasuringIntrinsics$MeasureBlock;Landroidx/compose/ui/layout/IntrinsicMeasureScope;Landroidx/compose/ui/layout/IntrinsicMeasurable;I)I
     .locals 8
 
-    const-string p0, "measureBlock"
-
-    invoke-static {p1, p0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string p0, "intrinsicMeasureScope"
-
-    invoke-static {p2, p0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string p0, "intrinsicMeasurable"
-
-    invoke-static {p3, p0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 193
+    .line 196
     new-instance p0, Landroidx/compose/ui/node/NodeMeasuringIntrinsics$DefaultIntrinsicMeasurable;
 
-    .line 195
+    .line 198
     sget-object v0, Landroidx/compose/ui/node/NodeMeasuringIntrinsics$IntrinsicMinMax;->Min:Landroidx/compose/ui/node/NodeMeasuringIntrinsics$IntrinsicMinMax;
 
-    .line 196
+    .line 199
     sget-object v1, Landroidx/compose/ui/node/NodeMeasuringIntrinsics$IntrinsicWidthHeight;->Height:Landroidx/compose/ui/node/NodeMeasuringIntrinsics$IntrinsicWidthHeight;
 
-    .line 193
+    .line 196
     invoke-direct {p0, p3, v0, v1}, Landroidx/compose/ui/node/NodeMeasuringIntrinsics$DefaultIntrinsicMeasurable;-><init>(Landroidx/compose/ui/layout/IntrinsicMeasurable;Landroidx/compose/ui/node/NodeMeasuringIntrinsics$IntrinsicMinMax;Landroidx/compose/ui/node/NodeMeasuringIntrinsics$IntrinsicWidthHeight;)V
 
     const/16 v6, 0xd
@@ -263,12 +229,12 @@
 
     move v3, p4
 
-    .line 198
+    .line 201
     invoke-static/range {v2 .. v7}, Landroidx/compose/ui/unit/ConstraintsKt;->Constraints$default(IIIIILjava/lang/Object;)J
 
     move-result-wide p3
 
-    .line 200
+    .line 203
     new-instance v0, Landroidx/compose/ui/layout/IntrinsicsMeasureScope;
 
     invoke-interface {p2}, Landroidx/compose/ui/layout/IntrinsicMeasureScope;->getLayoutDirection()Landroidx/compose/ui/unit/LayoutDirection;
@@ -279,14 +245,14 @@
 
     check-cast v0, Landroidx/compose/ui/layout/MeasureScope;
 
-    .line 201
+    .line 204
     check-cast p0, Landroidx/compose/ui/layout/Measurable;
 
     invoke-interface {p1, v0, p0, p3, p4}, Landroidx/compose/ui/node/NodeMeasuringIntrinsics$MeasureBlock;->measure-3p2s80s(Landroidx/compose/ui/layout/MeasureScope;Landroidx/compose/ui/layout/Measurable;J)Landroidx/compose/ui/layout/MeasureResult;
 
     move-result-object p0
 
-    .line 203
+    .line 206
     invoke-interface {p0}, Landroidx/compose/ui/layout/MeasureResult;->getHeight()I
 
     move-result p0
@@ -297,28 +263,16 @@
 .method public final minWidth$ui_release(Landroidx/compose/ui/node/NodeMeasuringIntrinsics$MeasureBlock;Landroidx/compose/ui/layout/IntrinsicMeasureScope;Landroidx/compose/ui/layout/IntrinsicMeasurable;I)I
     .locals 8
 
-    const-string p0, "measureBlock"
-
-    invoke-static {p1, p0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string p0, "intrinsicMeasureScope"
-
-    invoke-static {p2, p0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string p0, "intrinsicMeasurable"
-
-    invoke-static {p3, p0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 170
+    .line 173
     new-instance p0, Landroidx/compose/ui/node/NodeMeasuringIntrinsics$DefaultIntrinsicMeasurable;
 
-    .line 172
+    .line 175
     sget-object v0, Landroidx/compose/ui/node/NodeMeasuringIntrinsics$IntrinsicMinMax;->Min:Landroidx/compose/ui/node/NodeMeasuringIntrinsics$IntrinsicMinMax;
 
-    .line 173
+    .line 176
     sget-object v1, Landroidx/compose/ui/node/NodeMeasuringIntrinsics$IntrinsicWidthHeight;->Width:Landroidx/compose/ui/node/NodeMeasuringIntrinsics$IntrinsicWidthHeight;
 
-    .line 170
+    .line 173
     invoke-direct {p0, p3, v0, v1}, Landroidx/compose/ui/node/NodeMeasuringIntrinsics$DefaultIntrinsicMeasurable;-><init>(Landroidx/compose/ui/layout/IntrinsicMeasurable;Landroidx/compose/ui/node/NodeMeasuringIntrinsics$IntrinsicMinMax;Landroidx/compose/ui/node/NodeMeasuringIntrinsics$IntrinsicWidthHeight;)V
 
     const/4 v6, 0x7
@@ -333,32 +287,32 @@
 
     move v5, p4
 
-    .line 175
+    .line 178
     invoke-static/range {v2 .. v7}, Landroidx/compose/ui/unit/ConstraintsKt;->Constraints$default(IIIIILjava/lang/Object;)J
 
     move-result-wide p3
 
-    .line 178
+    .line 181
     new-instance v0, Landroidx/compose/ui/layout/IntrinsicsMeasureScope;
 
-    .line 180
+    .line 183
     invoke-interface {p2}, Landroidx/compose/ui/layout/IntrinsicMeasureScope;->getLayoutDirection()Landroidx/compose/ui/unit/LayoutDirection;
 
     move-result-object v1
 
-    .line 178
+    .line 181
     invoke-direct {v0, p2, v1}, Landroidx/compose/ui/layout/IntrinsicsMeasureScope;-><init>(Landroidx/compose/ui/layout/IntrinsicMeasureScope;Landroidx/compose/ui/unit/LayoutDirection;)V
 
     check-cast v0, Landroidx/compose/ui/layout/MeasureScope;
 
-    .line 181
+    .line 184
     check-cast p0, Landroidx/compose/ui/layout/Measurable;
 
     invoke-interface {p1, v0, p0, p3, p4}, Landroidx/compose/ui/node/NodeMeasuringIntrinsics$MeasureBlock;->measure-3p2s80s(Landroidx/compose/ui/layout/MeasureScope;Landroidx/compose/ui/layout/Measurable;J)Landroidx/compose/ui/layout/MeasureResult;
 
     move-result-object p0
 
-    .line 184
+    .line 187
     invoke-interface {p0}, Landroidx/compose/ui/layout/MeasureResult;->getWidth()I
 
     move-result p0

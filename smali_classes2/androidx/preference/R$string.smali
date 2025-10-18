@@ -14,19 +14,19 @@
 
 
 # static fields
-.field public static final copy:I = 0x7f1104bc
+.field public static final copy:I = 0x7f1104ef
 
-.field public static final expand_button_title:I = 0x7f1104e2
+.field public static final expand_button_title:I = 0x7f110511
 
-.field public static final not_set:I = 0x7f1105f3
+.field public static final not_set:I = 0x7f11059e
 
-.field public static final preference_copied:I = 0x7f110616
+.field public static final preference_copied:I = 0x7f1105a6
 
-.field public static final summary_collapsed_preference_list:I = 0x7f11062a
+.field public static final summary_collapsed_preference_list:I = 0x7f1105b1
 
-.field public static final v7_preference_off:I = 0x7f110633
+.field public static final v7_preference_off:I = 0x7f1105b8
 
-.field public static final v7_preference_on:I = 0x7f110634
+.field public static final v7_preference_on:I = 0x7f1105b9
 
 
 # direct methods

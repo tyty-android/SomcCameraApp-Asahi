@@ -219,7 +219,7 @@
     return-object p0
 .end method
 
-.method public final isSecure(Ljava/net/Socket;)Z
+.method public isSecure(Ljava/net/Socket;)Z
     .locals 0
     .annotation system Ldalvik/annotation/Throws;
         value = {

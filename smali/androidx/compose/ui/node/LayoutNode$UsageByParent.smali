@@ -74,7 +74,7 @@
 .method static constructor <clinit>()V
     .locals 3
 
-    .line 1437
+    .line 1452
     new-instance v0, Landroidx/compose/ui/node/LayoutNode$UsageByParent;
 
     const-string v1, "InMeasureBlock"
@@ -85,7 +85,7 @@
 
     sput-object v0, Landroidx/compose/ui/node/LayoutNode$UsageByParent;->InMeasureBlock:Landroidx/compose/ui/node/LayoutNode$UsageByParent;
 
-    .line 1438
+    .line 1453
     new-instance v0, Landroidx/compose/ui/node/LayoutNode$UsageByParent;
 
     const-string v1, "InLayoutBlock"
@@ -96,7 +96,7 @@
 
     sput-object v0, Landroidx/compose/ui/node/LayoutNode$UsageByParent;->InLayoutBlock:Landroidx/compose/ui/node/LayoutNode$UsageByParent;
 
-    .line 1439
+    .line 1454
     new-instance v0, Landroidx/compose/ui/node/LayoutNode$UsageByParent;
 
     const-string v1, "NotUsed"
@@ -124,7 +124,7 @@
         }
     .end annotation
 
-    .line 1436
+    .line 1451
     invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
     return-void

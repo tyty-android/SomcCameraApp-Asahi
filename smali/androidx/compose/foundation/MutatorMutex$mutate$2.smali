@@ -29,7 +29,7 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/SourceDebugExtension;
-    value = "SMAP\nMutatorMutex.kt\nKotlin\n*S Kotlin\n*F\n+ 1 MutatorMutex.kt\nandroidx/compose/foundation/MutatorMutex$mutate$2\n+ 2 Mutex.kt\nkotlinx/coroutines/sync/MutexKt\n*L\n1#1,180:1\n107#2,10:181\n*S KotlinDebug\n*F\n+ 1 MutatorMutex.kt\nandroidx/compose/foundation/MutatorMutex$mutate$2\n*L\n130#1:181,10\n*E\n"
+    value = "SMAP\nMutatorMutex.kt\nKotlin\n*S Kotlin\n*F\n+ 1 MutatorMutex.kt\nandroidx/compose/foundation/MutatorMutex$mutate$2\n+ 2 Mutex.kt\nkotlinx/coroutines/sync/MutexKt\n*L\n1#1,214:1\n120#2,10:215\n*S KotlinDebug\n*F\n+ 1 MutatorMutex.kt\nandroidx/compose/foundation/MutatorMutex$mutate$2\n*L\n130#1:215,10\n*E\n"
 .end annotation
 
 .annotation runtime Lkotlin/Metadata;
@@ -60,7 +60,7 @@
         0x1
     }
     l = {
-        0xba,
+        0xdc,
         0x84
     }
     m = "invokeSuspend"
@@ -345,7 +345,7 @@
 
     iget-object v6, p0, Landroidx/compose/foundation/MutatorMutex$mutate$2;->this$0:Landroidx/compose/foundation/MutatorMutex;
 
-    .line 186
+    .line 220
     move-object v7, p0
 
     check-cast v7, Lkotlin/coroutines/Continuation;
@@ -416,7 +416,7 @@
     :try_end_2
     .catchall {:try_start_2 .. :try_end_2} :catchall_2
 
-    .line 190
+    .line 224
     invoke-interface {v1, v4}, Lkotlinx/coroutines/sync/Mutex;->unlock(Ljava/lang/Object;)V
 
     return-object p1
@@ -450,7 +450,7 @@
     :catchall_2
     move-exception p0
 
-    .line 190
+    .line 224
     invoke-interface {v1, v4}, Lkotlinx/coroutines/sync/Mutex;->unlock(Ljava/lang/Object;)V
 
     throw p0

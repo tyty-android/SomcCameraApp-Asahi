@@ -18,7 +18,7 @@
 .method private constructor <init>()V
     .locals 0
 
-    .line 5722
+    .line 5982
     invoke-direct {p0}, Ljava/util/TimerTask;-><init>()V
 
     return-void
@@ -37,7 +37,7 @@
 .method public run()V
     .locals 1
 
-    .line 5724
+    .line 5984
     new-instance p0, Ljava/lang/RuntimeException;
 
     const-string v0, "Failed to request capture"

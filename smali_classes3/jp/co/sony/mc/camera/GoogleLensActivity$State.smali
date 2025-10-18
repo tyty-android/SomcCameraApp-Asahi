@@ -36,7 +36,7 @@
 .method private static synthetic $values()[Ljp/co/sony/mc/camera/GoogleLensActivity$State;
     .locals 3
 
-    .line 54
+    .line 52
     sget-object v0, Ljp/co/sony/mc/camera/GoogleLensActivity$State;->READY:Ljp/co/sony/mc/camera/GoogleLensActivity$State;
 
     sget-object v1, Ljp/co/sony/mc/camera/GoogleLensActivity$State;->KEYGUARD:Ljp/co/sony/mc/camera/GoogleLensActivity$State;
@@ -53,7 +53,7 @@
 .method static constructor <clinit>()V
     .locals 3
 
-    .line 58
+    .line 56
     new-instance v0, Ljp/co/sony/mc/camera/GoogleLensActivity$State;
 
     const-string v1, "READY"
@@ -64,7 +64,7 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/GoogleLensActivity$State;->READY:Ljp/co/sony/mc/camera/GoogleLensActivity$State;
 
-    .line 62
+    .line 60
     new-instance v0, Ljp/co/sony/mc/camera/GoogleLensActivity$State;
 
     const-string v1, "KEYGUARD"
@@ -75,7 +75,7 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/GoogleLensActivity$State;->KEYGUARD:Ljp/co/sony/mc/camera/GoogleLensActivity$State;
 
-    .line 66
+    .line 64
     new-instance v0, Ljp/co/sony/mc/camera/GoogleLensActivity$State;
 
     const-string v1, "DONE"
@@ -86,7 +86,7 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/GoogleLensActivity$State;->DONE:Ljp/co/sony/mc/camera/GoogleLensActivity$State;
 
-    .line 54
+    .line 52
     invoke-static {}, Ljp/co/sony/mc/camera/GoogleLensActivity$State;->$values()[Ljp/co/sony/mc/camera/GoogleLensActivity$State;
 
     move-result-object v0
@@ -104,7 +104,7 @@
         }
     .end annotation
 
-    .line 54
+    .line 52
     invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
     return-void
@@ -113,7 +113,7 @@
 .method public static valueOf(Ljava/lang/String;)Ljp/co/sony/mc/camera/GoogleLensActivity$State;
     .locals 1
 
-    .line 54
+    .line 52
     const-class v0, Ljp/co/sony/mc/camera/GoogleLensActivity$State;
 
     invoke-static {v0, p0}, Ljava/lang/Enum;->valueOf(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
@@ -128,7 +128,7 @@
 .method public static values()[Ljp/co/sony/mc/camera/GoogleLensActivity$State;
     .locals 1
 
-    .line 54
+    .line 52
     sget-object v0, Ljp/co/sony/mc/camera/GoogleLensActivity$State;->$VALUES:[Ljp/co/sony/mc/camera/GoogleLensActivity$State;
 
     invoke-virtual {v0}, [Ljp/co/sony/mc/camera/GoogleLensActivity$State;->clone()Ljava/lang/Object;

@@ -76,7 +76,7 @@
 .method public final invoke()Landroidx/compose/ui/platform/WindowInfo;
     .locals 0
 
-    .line 180
+    .line 172
     const-string p0, "LocalWindowInfo"
 
     invoke-static {p0}, Landroidx/compose/ui/platform/CompositionLocalsKt;->access$noLocalProvidedFor(Ljava/lang/String;)Ljava/lang/Void;
@@ -91,7 +91,7 @@
 .method public bridge synthetic invoke()Ljava/lang/Object;
     .locals 0
 
-    .line 179
+    .line 171
     invoke-virtual {p0}, Landroidx/compose/ui/platform/CompositionLocalsKt$LocalWindowInfo$1;->invoke()Landroidx/compose/ui/platform/WindowInfo;
 
     move-result-object p0

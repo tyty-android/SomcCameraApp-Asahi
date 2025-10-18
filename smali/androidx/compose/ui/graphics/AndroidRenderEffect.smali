@@ -37,10 +37,6 @@
 .method public constructor <init>(Landroid/graphics/RenderEffect;)V
     .locals 1
 
-    const-string v0, "androidRenderEffect"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
     const/4 v0, 0x0
 
     .line 51

@@ -30,7 +30,7 @@
     .line 0
     iget-object p0, p0, Landroidx/compose/ui/platform/AndroidComposeViewAccessibilityDelegateCompat$$ExternalSyntheticLambda2;->f$0:Landroidx/compose/ui/platform/AndroidComposeViewAccessibilityDelegateCompat;
 
-    invoke-static {p0}, Landroidx/compose/ui/platform/AndroidComposeViewAccessibilityDelegateCompat;->$r8$lambda$0PO_xNItE6xbiWBC9wBwiTebXhY(Landroidx/compose/ui/platform/AndroidComposeViewAccessibilityDelegateCompat;)V
+    invoke-static {p0}, Landroidx/compose/ui/platform/AndroidComposeViewAccessibilityDelegateCompat;->$r8$lambda$CZAjA4a8ePLF9FU4Ia6Vf_-igrw(Landroidx/compose/ui/platform/AndroidComposeViewAccessibilityDelegateCompat;)V
 
     return-void
 .end method

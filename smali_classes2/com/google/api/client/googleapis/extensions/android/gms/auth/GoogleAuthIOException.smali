@@ -11,10 +11,10 @@
 .method public constructor <init>(Lcom/google/android/gms/auth/GoogleAuthException;)V
     .locals 0
 
-    .line 41
+    .line 38
     invoke-direct {p0}, Ljava/io/IOException;-><init>()V
 
-    .line 42
+    .line 39
     invoke-static {p1}, Lcom/google/api/client/util/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p1
@@ -31,7 +31,7 @@
 .method public getCause()Lcom/google/android/gms/auth/GoogleAuthException;
     .locals 0
 
-    .line 47
+    .line 44
     invoke-super {p0}, Ljava/io/IOException;->getCause()Ljava/lang/Throwable;
 
     move-result-object p0
@@ -44,7 +44,7 @@
 .method public bridge synthetic getCause()Ljava/lang/Throwable;
     .locals 0
 
-    .line 32
+    .line 29
     invoke-virtual {p0}, Lcom/google/api/client/googleapis/extensions/android/gms/auth/GoogleAuthIOException;->getCause()Lcom/google/android/gms/auth/GoogleAuthException;
 
     move-result-object p0

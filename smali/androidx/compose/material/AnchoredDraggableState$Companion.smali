@@ -53,7 +53,7 @@
 .method private constructor <init>()V
     .locals 0
 
-    .line 495
+    .line 633
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -97,23 +97,7 @@
         }
     .end annotation
 
-    const-string p0, "animationSpec"
-
-    invoke-static {p1, p0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string p0, "confirmValueChange"
-
-    invoke-static {p2, p0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string p0, "positionalThreshold"
-
-    invoke-static {p3, p0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string/jumbo p0, "velocityThreshold"
-
-    invoke-static {p4, p0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 505
+    .line 643
     sget-object p0, Landroidx/compose/material/AnchoredDraggableState$Companion$Saver$1;->INSTANCE:Landroidx/compose/material/AnchoredDraggableState$Companion$Saver$1;
 
     check-cast p0, Lkotlin/jvm/functions/Function2;

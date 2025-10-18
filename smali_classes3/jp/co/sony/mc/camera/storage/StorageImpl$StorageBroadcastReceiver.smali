@@ -39,7 +39,7 @@
 .end method
 
 .method private notifyStorageStatusChanged(Ljp/co/sony/mc/camera/storage/Storage$StorageType;Ljava/lang/String;Ljava/lang/String;)V
-    .locals 2
+    .locals 4
 
     .line 112
     invoke-static {}, Ljp/co/sony/mc/camera/storage/StorageUtil;->getMountableStorageTypes()Ljava/util/List;
@@ -54,6 +54,10 @@
     invoke-interface {v0}, Ljava/util/Iterator;->hasNext()Z
 
     move-result v1
+
+    const/4 v2, 0x0
+
+    const/4 v3, 0x1
 
     if-eqz v1, :cond_3
 
@@ -90,9 +94,7 @@
 
     move-result-object p3
 
-    const/4 v0, 0x1
-
-    invoke-virtual {p3, p1, v0}, Ljp/co/sony/mc/camera/storage/StorageController;->checkAndNotifyStateChanged(Ljp/co/sony/mc/camera/storage/Storage$StorageType;Z)V
+    invoke-virtual {p3, p1, v3}, Ljp/co/sony/mc/camera/storage/StorageController;->checkAndNotifyStateChanged(Ljp/co/sony/mc/camera/storage/Storage$StorageType;Z)V
 
     .line 125
     :cond_1
@@ -117,11 +119,11 @@
 
     .line 129
     :cond_2
-    const-string p0, "onReceive: storage is not activated."
+    new-array p0, v3, [Ljava/lang/String;
 
-    filled-new-array {p0}, [Ljava/lang/String;
+    const-string p1, "onReceive: storage is not activated."
 
-    move-result-object p0
+    aput-object p1, p0, v2
 
     invoke-static {p0}, Ljp/co/sony/mc/camera/util/CamLog;->i([Ljava/lang/String;)V
 
@@ -129,33 +131,33 @@
 
     .line 132
     :cond_3
-    new-instance p0, Ljava/lang/StringBuilder;
+    new-array p0, v3, [Ljava/lang/String;
 
-    const-string p1, "StorageType is not mountable. action = "
+    new-instance p1, Ljava/lang/StringBuilder;
 
-    invoke-direct {p0, p1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+    const-string v0, "StorageType is not mountable. action = "
 
-    invoke-virtual {p0, p2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-direct {p1, v0}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
-    move-result-object p0
+    invoke-virtual {p1, p2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    const-string p1, " path="
+    move-result-object p1
 
-    invoke-virtual {p0, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    const-string p2, " path="
 
-    move-result-object p0
+    invoke-virtual {p1, p2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {p0, p3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    move-result-object p1
 
-    move-result-object p0
+    invoke-virtual {p1, p3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {p0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    move-result-object p1
 
-    move-result-object p0
+    invoke-virtual {p1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    filled-new-array {p0}, [Ljava/lang/String;
+    move-result-object p1
 
-    move-result-object p0
+    aput-object p1, p0, v2
 
     invoke-static {p0}, Ljp/co/sony/mc/camera/util/CamLog;->i([Ljava/lang/String;)V
 
@@ -200,44 +202,48 @@
 
     move-result-object p1
 
+    const/4 p2, 0x1
+
     .line 94
-    new-instance p2, Ljava/lang/StringBuilder;
+    new-array p2, p2, [Ljava/lang/String;
 
-    const-string v2, "Action = "
+    new-instance v2, Ljava/lang/StringBuilder;
 
-    invoke-direct {p2, v2}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+    const-string v3, "Action = "
 
-    invoke-virtual {p2, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-direct {v2, v3}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
-    move-result-object p2
+    invoke-virtual {v2, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    const-string v2, ", Type = "
+    move-result-object v2
 
-    invoke-virtual {p2, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    const-string v3, ", Type = "
 
-    move-result-object p2
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {p2, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+    move-result-object v2
 
-    move-result-object p2
+    invoke-virtual {v2, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
-    const-string v2, ", Path = "
+    move-result-object v2
 
-    invoke-virtual {p2, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    const-string v3, ", Path = "
 
-    move-result-object p2
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {p2, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    move-result-object v2
 
-    move-result-object p2
+    invoke-virtual {v2, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {p2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    move-result-object v2
 
-    move-result-object p2
+    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    filled-new-array {p2}, [Ljava/lang/String;
+    move-result-object v2
 
-    move-result-object p2
+    const/4 v3, 0x0
+
+    aput-object v2, p2, v3
 
     invoke-static {p2}, Ljp/co/sony/mc/camera/util/CamLog;->i([Ljava/lang/String;)V
 

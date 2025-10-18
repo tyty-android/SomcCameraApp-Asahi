@@ -25,7 +25,7 @@
 .method constructor <init>(Ljp/co/sony/mc/camera/view/HorizontalLevelMeterView;)V
     .locals 0
 
-    .line 301
+    .line 323
     iput-object p1, p0, Ljp/co/sony/mc/camera/view/HorizontalLevelMeterView$3;->this$0:Ljp/co/sony/mc/camera/view/HorizontalLevelMeterView;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -44,7 +44,7 @@
 .method public onAnimationEnd(Landroid/animation/Animator;)V
     .locals 1
 
-    .line 309
+    .line 331
     iget-object p1, p0, Ljp/co/sony/mc/camera/view/HorizontalLevelMeterView$3;->this$0:Ljp/co/sony/mc/camera/view/HorizontalLevelMeterView;
 
     invoke-static {p1}, Ljp/co/sony/mc/camera/view/HorizontalLevelMeterView;->-$$Nest$fgetmBaseLine(Ljp/co/sony/mc/camera/view/HorizontalLevelMeterView;)Landroid/widget/ImageView;
@@ -77,7 +77,7 @@
 
     if-nez p1, :cond_1
 
-    .line 310
+    .line 332
     :cond_0
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/HorizontalLevelMeterView$3;->this$0:Ljp/co/sony/mc/camera/view/HorizontalLevelMeterView;
 

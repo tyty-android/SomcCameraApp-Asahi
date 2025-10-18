@@ -5,12 +5,12 @@
 
 # annotations
 .annotation system Ldalvik/annotation/SourceDebugExtension;
-    value = "SMAP\nLazyStaggeredGridMeasure.kt\nKotlin\n*S Kotlin\n*F\n+ 1 LazyStaggeredGridMeasure.kt\nandroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridMeasureKt\n+ 2 Snapshot.kt\nandroidx/compose/runtime/snapshots/Snapshot$Companion\n+ 3 Snapshot.kt\nandroidx/compose/runtime/snapshots/Snapshot\n+ 4 LazyStaggeredGridMeasure.kt\nandroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridMeasureContext\n+ 5 LazyStaggeredGridMeasure.kt\nandroidx/compose/foundation/lazy/staggeredgrid/SpanRange\n+ 6 InlineClassHelper.kt\nandroidx/compose/ui/util/InlineClassHelperKt\n+ 7 _Arrays.kt\nkotlin/collections/ArraysKt___ArraysKt\n+ 8 ListUtils.kt\nandroidx/compose/ui/util/ListUtilsKt\n+ 9 fake.kt\nkotlin/jvm/internal/FakeKt\n*L\n1#1,1158:1\n50#1,9:1169\n72#1,4:1178\n912#1:1195\n913#1,3:1200\n72#1,4:1203\n72#1,4:1207\n72#1,4:1211\n912#1:1222\n913#1,3:1227\n72#1,4:1238\n72#1,4:1242\n912#1:1263\n913#1,3:1268\n72#1,4:1273\n72#1,4:1279\n72#1,4:1283\n912#1:1304\n913#1,3:1309\n72#1,4:1312\n72#1,4:1316\n972#1,4:1320\n72#1,4:1324\n72#1,4:1328\n885#1,3:1332\n888#1:1339\n889#1,9:1342\n899#1:1352\n885#1,3:1353\n888#1:1360\n889#1,9:1363\n899#1:1373\n72#1,4:1374\n60#1:1382\n945#1,11:1386\n912#1:1397\n913#1,3:1402\n912#1:1415\n913#1,3:1420\n495#2,4:1159\n500#2:1168\n129#3,5:1163\n234#4:1182\n231#4:1183\n231#4:1189\n234#4:1215\n231#4:1216\n231#4:1232\n234#4:1250\n231#4:1251\n231#4:1257\n234#4:1291\n231#4:1292\n231#4:1298\n908#5:1184\n907#5:1185\n906#5:1187\n908#5:1190\n907#5:1191\n906#5:1193\n906#5:1196\n907#5:1198\n908#5:1217\n907#5:1218\n906#5:1220\n906#5:1223\n907#5:1225\n906#5:1230\n908#5:1233\n907#5:1234\n906#5:1236\n908#5:1252\n907#5:1253\n906#5:1255\n908#5:1258\n907#5:1259\n906#5:1261\n906#5:1264\n907#5:1266\n906#5:1271\n908#5:1293\n907#5:1294\n906#5:1296\n908#5:1299\n907#5:1300\n906#5:1302\n906#5:1305\n907#5:1307\n906#5:1398\n907#5:1400\n906#5:1411\n907#5:1413\n906#5:1416\n907#5:1418\n62#6:1186\n55#6:1188\n62#6:1192\n55#6:1194\n55#6:1197\n62#6:1199\n62#6:1219\n55#6:1221\n55#6:1224\n62#6:1226\n55#6:1231\n62#6:1235\n55#6:1237\n62#6:1254\n55#6:1256\n62#6:1260\n55#6:1262\n55#6:1265\n62#6:1267\n55#6:1272\n62#6:1295\n55#6:1297\n62#6:1301\n55#6:1303\n55#6:1306\n62#6:1308\n55#6:1399\n62#6:1401\n55#6:1412\n62#6:1414\n55#6:1417\n62#6:1419\n12774#7,2:1246\n12541#7,2:1248\n12774#7,2:1277\n12583#7,2:1287\n12774#7,2:1289\n12583#7,2:1340\n12583#7,2:1361\n12774#7,2:1378\n12583#7,2:1380\n12744#7,2:1384\n33#8,4:1335\n38#8:1351\n33#8,4:1356\n38#8:1372\n33#8,6:1405\n1#9:1383\n*S KotlinDebug\n*F\n+ 1 LazyStaggeredGridMeasure.kt\nandroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridMeasureKt\n*L\n244#1:1169,9\n302#1:1178,4\n347#1:1195\n347#1:1200,3\n353#1:1203,4\n395#1:1207,4\n433#1:1211,4\n461#1:1222\n461#1:1227,3\n478#1:1238,4\n481#1:1242,4\n514#1:1263\n514#1:1268,3\n532#1:1273,4\n554#1:1279,4\n557#1:1283,4\n621#1:1304\n621#1:1309,3\n659#1:1312,4\n662#1:1316,4\n679#1:1320,4\n683#1:1324,4\n705#1:1328,4\n735#1:1332,3\n735#1:1339\n735#1:1342,9\n735#1:1352\n764#1:1353,3\n764#1:1360\n764#1:1363,9\n764#1:1373\n794#1:1374,4\n244#1:1382\n850#1:1386,11\n873#1:1397\n873#1:1402,3\n925#1:1415\n925#1:1420,3\n111#1:1159,4\n111#1:1168\n111#1:1163,5\n339#1:1182\n339#1:1183\n346#1:1189\n459#1:1215\n459#1:1216\n471#1:1232\n505#1:1250\n505#1:1251\n509#1:1257\n613#1:1291\n613#1:1292\n620#1:1298\n339#1:1184\n339#1:1185\n339#1:1187\n346#1:1190\n346#1:1191\n346#1:1193\n347#1:1196\n347#1:1198\n459#1:1217\n459#1:1218\n459#1:1220\n461#1:1223\n461#1:1225\n467#1:1230\n471#1:1233\n471#1:1234\n471#1:1236\n505#1:1252\n505#1:1253\n505#1:1255\n509#1:1258\n509#1:1259\n509#1:1261\n514#1:1264\n514#1:1266\n524#1:1271\n613#1:1293\n613#1:1294\n613#1:1296\n620#1:1299\n620#1:1300\n620#1:1302\n621#1:1305\n621#1:1307\n873#1:1398\n873#1:1400\n912#1:1411\n912#1:1413\n925#1:1416\n925#1:1418\n339#1:1186\n339#1:1188\n346#1:1192\n346#1:1194\n347#1:1197\n347#1:1199\n459#1:1219\n459#1:1221\n461#1:1224\n461#1:1226\n467#1:1231\n471#1:1235\n471#1:1237\n505#1:1254\n505#1:1256\n509#1:1260\n509#1:1262\n514#1:1265\n514#1:1267\n524#1:1272\n613#1:1295\n613#1:1297\n620#1:1301\n620#1:1303\n621#1:1306\n621#1:1308\n873#1:1399\n873#1:1401\n912#1:1412\n912#1:1414\n925#1:1417\n925#1:1419\n490#1:1246,2\n493#1:1248,2\n550#1:1277,2\n564#1:1287,2\n572#1:1289,2\n748#1:1340,2\n780#1:1361,2\n813#1:1378,2\n814#1:1380,2\n848#1:1384,2\n735#1:1335,4\n735#1:1351\n764#1:1356,4\n764#1:1372\n887#1:1405,6\n*E\n"
+    value = "SMAP\nLazyStaggeredGridMeasure.kt\nKotlin\n*S Kotlin\n*F\n+ 1 LazyStaggeredGridMeasure.kt\nandroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridMeasureKt\n+ 2 Snapshot.kt\nandroidx/compose/runtime/snapshots/Snapshot$Companion\n+ 3 Snapshot.kt\nandroidx/compose/runtime/snapshots/Snapshot\n+ 4 LazyStaggeredGridMeasure.kt\nandroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridMeasureContext\n+ 5 LazyStaggeredGridMeasure.kt\nandroidx/compose/foundation/lazy/staggeredgrid/SpanRange\n+ 6 InlineClassHelper.kt\nandroidx/compose/ui/util/InlineClassHelperKt\n+ 7 _Arrays.kt\nkotlin/collections/ArraysKt___ArraysKt\n+ 8 ListUtils.kt\nandroidx/compose/ui/util/ListUtilsKt\n+ 9 fake.kt\nkotlin/jvm/internal/FakeKt\n*L\n1#1,1225:1\n51#1,9:1236\n73#1,4:1245\n957#1:1262\n958#1,3:1267\n73#1,4:1270\n73#1,4:1274\n73#1,4:1278\n957#1:1289\n958#1,3:1294\n73#1,4:1305\n73#1,4:1309\n957#1:1330\n958#1,3:1335\n73#1,4:1340\n73#1,4:1346\n73#1,4:1350\n957#1:1371\n958#1,3:1376\n73#1,4:1379\n73#1,4:1383\n1017#1,4:1387\n73#1,4:1391\n73#1,4:1395\n926#1,3:1399\n944#1:1402\n929#1:1407\n930#1,9:1410\n945#1:1426\n940#1:1427\n926#1,3:1428\n944#1:1431\n929#1:1436\n930#1,9:1439\n945#1:1455\n940#1:1456\n73#1,4:1457\n61#1:1465\n990#1,11:1469\n957#1:1480\n958#1,3:1485\n944#1:1488\n945#1:1501\n957#1:1530\n958#1,3:1535\n495#2,4:1226\n500#2:1235\n129#3,5:1230\n239#4:1249\n236#4:1250\n236#4:1256\n239#4:1282\n236#4:1283\n236#4:1299\n239#4:1317\n236#4:1318\n236#4:1324\n239#4:1358\n236#4:1359\n236#4:1365\n953#5:1251\n952#5:1252\n951#5:1254\n953#5:1257\n952#5:1258\n951#5:1260\n951#5:1263\n952#5:1265\n953#5:1284\n952#5:1285\n951#5:1287\n951#5:1290\n952#5:1292\n951#5:1297\n953#5:1300\n952#5:1301\n951#5:1303\n953#5:1319\n952#5:1320\n951#5:1322\n953#5:1325\n952#5:1326\n951#5:1328\n951#5:1331\n952#5:1333\n951#5:1338\n953#5:1360\n952#5:1361\n951#5:1363\n953#5:1366\n952#5:1367\n951#5:1369\n951#5:1372\n952#5:1374\n951#5:1481\n952#5:1483\n951#5:1526\n952#5:1528\n951#5:1531\n952#5:1533\n62#6:1253\n55#6:1255\n62#6:1259\n55#6:1261\n55#6:1264\n62#6:1266\n62#6:1286\n55#6:1288\n55#6:1291\n62#6:1293\n55#6:1298\n62#6:1302\n55#6:1304\n62#6:1321\n55#6:1323\n62#6:1327\n55#6:1329\n55#6:1332\n62#6:1334\n55#6:1339\n62#6:1362\n55#6:1364\n62#6:1368\n55#6:1370\n55#6:1373\n62#6:1375\n55#6:1482\n62#6:1484\n55#6:1527\n62#6:1529\n55#6:1532\n62#6:1534\n12774#7,2:1313\n12541#7,2:1315\n12774#7,2:1344\n12583#7,2:1354\n12774#7,2:1356\n12583#7,2:1408\n12583#7,2:1437\n12774#7,2:1461\n12583#7,2:1463\n12744#7,2:1467\n51#8,4:1403\n56#8:1419\n33#8,6:1420\n51#8,4:1432\n56#8:1448\n33#8,6:1449\n51#8,6:1489\n33#8,6:1495\n51#8,6:1502\n33#8,6:1508\n51#8,6:1514\n33#8,6:1520\n1#9:1466\n*S KotlinDebug\n*F\n+ 1 LazyStaggeredGridMeasure.kt\nandroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridMeasureKt\n*L\n249#1:1236,9\n312#1:1245,4\n357#1:1262\n357#1:1267,3\n369#1:1270,4\n411#1:1274,4\n450#1:1278,4\n478#1:1289\n478#1:1294,3\n502#1:1305,4\n505#1:1309,4\n538#1:1330\n538#1:1335,3\n559#1:1340,4\n582#1:1346,4\n585#1:1350,4\n657#1:1371\n657#1:1376,3\n695#1:1379,4\n698#1:1383,4\n715#1:1387,4\n719#1:1391,4\n741#1:1395,4\n771#1:1399,3\n771#1:1402\n771#1:1407\n771#1:1410,9\n771#1:1426\n771#1:1427\n801#1:1428,3\n801#1:1431\n801#1:1436\n801#1:1439,9\n801#1:1455\n801#1:1456\n832#1:1457,4\n249#1:1465\n890#1:1469,11\n913#1:1480\n913#1:1485,3\n928#1:1488\n928#1:1501\n970#1:1530\n970#1:1535,3\n114#1:1226,4\n114#1:1235\n114#1:1230,5\n349#1:1249\n349#1:1250\n356#1:1256\n476#1:1282\n476#1:1283\n495#1:1299\n529#1:1317\n529#1:1318\n533#1:1324\n649#1:1358\n649#1:1359\n656#1:1365\n349#1:1251\n349#1:1252\n349#1:1254\n356#1:1257\n356#1:1258\n356#1:1260\n357#1:1263\n357#1:1265\n476#1:1284\n476#1:1285\n476#1:1287\n478#1:1290\n478#1:1292\n486#1:1297\n495#1:1300\n495#1:1301\n495#1:1303\n529#1:1319\n529#1:1320\n529#1:1322\n533#1:1325\n533#1:1326\n533#1:1328\n538#1:1331\n538#1:1333\n550#1:1338\n649#1:1360\n649#1:1361\n649#1:1363\n656#1:1366\n656#1:1367\n656#1:1369\n657#1:1372\n657#1:1374\n913#1:1481\n913#1:1483\n957#1:1526\n957#1:1528\n970#1:1531\n970#1:1533\n349#1:1253\n349#1:1255\n356#1:1259\n356#1:1261\n357#1:1264\n357#1:1266\n476#1:1286\n476#1:1288\n478#1:1291\n478#1:1293\n486#1:1298\n495#1:1302\n495#1:1304\n529#1:1321\n529#1:1323\n533#1:1327\n533#1:1329\n538#1:1332\n538#1:1334\n550#1:1339\n649#1:1362\n649#1:1364\n656#1:1368\n656#1:1370\n657#1:1373\n657#1:1375\n913#1:1482\n913#1:1484\n957#1:1527\n957#1:1529\n970#1:1532\n970#1:1534\n514#1:1313,2\n517#1:1315,2\n578#1:1344,2\n592#1:1354,2\n600#1:1356,2\n784#1:1408,2\n817#1:1437,2\n850#1:1461,2\n851#1:1463,2\n888#1:1467,2\n771#1:1403,4\n771#1:1419\n771#1:1420,6\n801#1:1432,4\n801#1:1448\n801#1:1449,6\n928#1:1489,6\n928#1:1495,6\n944#1:1502,6\n944#1:1508,6\n944#1:1514,6\n944#1:1520,6\n*E\n"
 .end annotation
 
 .annotation runtime Lkotlin/Metadata;
     d1 = {
-        "\u0000\u0090\u0001\n\u0000\n\u0002\u0010\u000b\n\u0000\n\u0002\u0010\u0008\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0010\u000e\n\u0002\u0008\u0003\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0010 \n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0004\n\u0002\u0010\u0011\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0015\n\u0002\u0008\u000b\n\u0002\u0018\u0002\n\u0002\u0008\u000c\n\u0002\u0018\u0002\n\u0002\u0008\u0006\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0003\n\u0002\u0018\u0002\n\u0002\u0008\n\u001a\u0017\u0010\u0004\u001a\u00020\u00052\u000c\u0010\u0006\u001a\u0008\u0012\u0004\u0012\u00020\u00080\u0007H\u0082\u0008\u001a5\u0010\t\u001a\u0002H\n\"\u0004\u0008\u0000\u0010\n2\u0006\u0010\u000b\u001a\u00020\u000c2\u0017\u0010\r\u001a\u0013\u0012\u0004\u0012\u00020\u000c\u0012\u0004\u0012\u0002H\n0\u000e\u00a2\u0006\u0002\u0008\u000fH\u0083\u0008\u00a2\u0006\u0002\u0010\u0010\u001aJ\u0010\u0011\u001a\u0008\u0012\u0004\u0012\u00020\u00130\u0012*\u00020\u00142\u0012\u0010\u0015\u001a\u000e\u0012\u0004\u0012\u00020\u0013\u0012\u0004\u0012\u00020\u00050\u000e2!\u0010\u0016\u001a\u001d\u0012\u0013\u0012\u00110\u0003\u00a2\u0006\u000c\u0008\u0017\u0012\u0008\u0008\u0018\u0012\u0004\u0008\u0008(\u0019\u0012\u0004\u0012\u00020\u00010\u000eH\u0083\u0008\u001a;\u0010\u001a\u001a\u0008\u0012\u0004\u0012\u00020\u00130\u0012*\u00020\u00142\u0012\u0010\u001b\u001a\u000e\u0012\n\u0012\u0008\u0012\u0004\u0012\u00020\u00130\u001d0\u001c2\u0006\u0010\u001e\u001a\u00020\u001f2\u0006\u0010 \u001a\u00020\u0003H\u0002\u00a2\u0006\u0002\u0010!\u001a\u001d\u0010\"\u001a\u00020\u0008*\u000e\u0012\n\u0012\u0008\u0012\u0004\u0012\u00020\u00130\u001d0\u001cH\u0002\u00a2\u0006\u0002\u0010#\u001a\u001c\u0010$\u001a\u00020\u0005*\u00020\u00142\u0006\u0010%\u001a\u00020\u001f2\u0006\u0010&\u001a\u00020\u0003H\u0002\u001a\u001c\u0010\'\u001a\u00020\u0003*\u00020\u00142\u0006\u0010(\u001a\u00020\u00032\u0006\u0010)\u001a\u00020\u0003H\u0002\u001a.\u0010*\u001a\u00020\u0005*\u00020+2\u0012\u0010\r\u001a\u000e\u0012\u0004\u0012\u00020\u0003\u0012\u0004\u0012\u00020\u00050\u000eH\u0082\u0008\u00f8\u0001\u0000\u00f8\u0001\u0001\u00a2\u0006\u0004\u0008,\u0010-\u001a\u000c\u0010.\u001a\u00020\u0003*\u00020\u001fH\u0002\u001a2\u0010/\u001a\u00020\u0003\"\u0004\u0008\u0000\u0010\n*\u0008\u0012\u0004\u0012\u0002H\n0\u001c2\u0012\u0010\r\u001a\u000e\u0012\u0004\u0012\u0002H\n\u0012\u0004\u0012\u00020\u00030\u000eH\u0082\u0008\u00a2\u0006\u0002\u00100\u001a\u0016\u00101\u001a\u00020\u0003*\u00020\u001f2\u0008\u0008\u0002\u00102\u001a\u00020\u0003H\u0000\u001a!\u00103\u001a\u00020\u0003*\u00020\u001f2\u0006\u00104\u001a\u00020+H\u0002\u00f8\u0001\u0000\u00f8\u0001\u0001\u00a2\u0006\u0004\u00085\u00106\u001a,\u00107\u001a\u000208*\u00020\u00142\u0006\u00109\u001a\u00020\u00032\u0006\u0010:\u001a\u00020\u001f2\u0006\u0010;\u001a\u00020\u001f2\u0006\u0010<\u001a\u00020\u0001H\u0003\u001a\u007f\u0010=\u001a\u000208*\u00020\u000c2\u0006\u0010>\u001a\u00020?2\u000c\u0010@\u001a\u0008\u0012\u0004\u0012\u00020\u00030\u00122\u0006\u0010A\u001a\u00020B2\u0006\u0010C\u001a\u00020D2\u0006\u0010E\u001a\u00020F2\u0006\u0010G\u001a\u00020\u00012\u0006\u0010H\u001a\u00020\u00012\u0006\u0010I\u001a\u00020J2\u0006\u0010K\u001a\u00020\u00032\u0006\u0010L\u001a\u00020\u00032\u0006\u0010M\u001a\u00020\u00032\u0006\u0010N\u001a\u00020\u0003H\u0001\u00f8\u0001\u0000\u00f8\u0001\u0001\u00a2\u0006\u0004\u0008O\u0010P\u001a\u0014\u0010Q\u001a\u00020\u0005*\u00020\u001f2\u0006\u0010R\u001a\u00020\u0003H\u0002\u001a!\u0010S\u001a\u00020\u001f*\u00020\u001f2\u0012\u0010\r\u001a\u000e\u0012\u0004\u0012\u00020\u0003\u0012\u0004\u0012\u00020\u00030\u000eH\u0082\u0008\"\u000e\u0010\u0000\u001a\u00020\u0001X\u0082T\u00a2\u0006\u0002\n\u0000\"\u000e\u0010\u0002\u001a\u00020\u0003X\u0082T\u00a2\u0006\u0002\n\u0000\u0082\u0002\u000b\n\u0005\u0008\u00a1\u001e0\u0001\n\u0002\u0008\u0019\u00a8\u0006T"
+        "\u0000\u0098\u0001\n\u0000\n\u0002\u0010\u000b\n\u0000\n\u0002\u0010\u0008\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0010\u000e\n\u0002\u0008\u0003\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0010 \n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0005\n\u0002\u0010\u0011\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0015\n\u0002\u0008\u000e\n\u0002\u0018\u0002\n\u0002\u0008\u000c\n\u0002\u0018\u0002\n\u0002\u0008\u0006\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0003\n\u0002\u0018\u0002\n\u0002\u0008\u0005\n\u0002\u0018\u0002\n\u0002\u0008\u0006\u001a\u0017\u0010\u0004\u001a\u00020\u00052\u000c\u0010\u0006\u001a\u0008\u0012\u0004\u0012\u00020\u00080\u0007H\u0082\u0008\u001a5\u0010\t\u001a\u0002H\n\"\u0004\u0008\u0000\u0010\n2\u0006\u0010\u000b\u001a\u00020\u000c2\u0017\u0010\r\u001a\u0013\u0012\u0004\u0012\u00020\u000c\u0012\u0004\u0012\u0002H\n0\u000e\u00a2\u0006\u0002\u0008\u000fH\u0083\u0008\u00a2\u0006\u0002\u0010\u0010\u001aR\u0010\u0011\u001a\u0008\u0012\u0004\u0012\u00020\u00130\u0012*\u00020\u00142\u0012\u0010\u0015\u001a\u000e\u0012\u0004\u0012\u00020\u0013\u0012\u0004\u0012\u00020\u00050\u000e2!\u0010\u0016\u001a\u001d\u0012\u0013\u0012\u00110\u0003\u00a2\u0006\u000c\u0008\u0017\u0012\u0008\u0008\u0018\u0012\u0004\u0008\u0008(\u0019\u0012\u0004\u0012\u00020\u00010\u000e2\u0006\u0010\u001a\u001a\u00020\u0001H\u0083\u0008\u001a;\u0010\u001b\u001a\u0008\u0012\u0004\u0012\u00020\u00130\u0012*\u00020\u00142\u0012\u0010\u001c\u001a\u000e\u0012\n\u0012\u0008\u0012\u0004\u0012\u00020\u00130\u001e0\u001d2\u0006\u0010\u001f\u001a\u00020 2\u0006\u0010!\u001a\u00020\u0003H\u0002\u00a2\u0006\u0002\u0010\"\u001a\u001d\u0010#\u001a\u00020\u0008*\u000e\u0012\n\u0012\u0008\u0012\u0004\u0012\u00020\u00130\u001e0\u001dH\u0002\u00a2\u0006\u0002\u0010$\u001a\u001c\u0010%\u001a\u00020\u0005*\u00020\u00142\u0006\u0010&\u001a\u00020 2\u0006\u0010\'\u001a\u00020\u0003H\u0002\u001a7\u0010(\u001a\u00020\u0005\"\u0004\u0008\u0000\u0010\n*\u0008\u0012\u0004\u0012\u0002H\n0\u00122\u0008\u0008\u0002\u0010)\u001a\u00020\u00012\u0012\u0010*\u001a\u000e\u0012\u0004\u0012\u0002H\n\u0012\u0004\u0012\u00020\u00050\u000eH\u0082\u0008\u001a\u001c\u0010+\u001a\u00020\u0003*\u00020\u00142\u0006\u0010,\u001a\u00020\u00032\u0006\u0010-\u001a\u00020\u0003H\u0002\u001a+\u0010.\u001a\u00020\u0005*\u00020/2\u0012\u0010\r\u001a\u000e\u0012\u0004\u0012\u00020\u0003\u0012\u0004\u0012\u00020\u00050\u000eH\u0082\u0008\u00f8\u0001\u0000\u00a2\u0006\u0004\u00080\u00101\u001a\u000c\u00102\u001a\u00020\u0003*\u00020 H\u0002\u001a2\u00103\u001a\u00020\u0003\"\u0004\u0008\u0000\u0010\n*\u0008\u0012\u0004\u0012\u0002H\n0\u001d2\u0012\u0010\r\u001a\u000e\u0012\u0004\u0012\u0002H\n\u0012\u0004\u0012\u00020\u00030\u000eH\u0082\u0008\u00a2\u0006\u0002\u00104\u001a\u0016\u00105\u001a\u00020\u0003*\u00020 2\u0008\u0008\u0002\u00106\u001a\u00020\u0003H\u0000\u001a\u001e\u00107\u001a\u00020\u0003*\u00020 2\u0006\u00108\u001a\u00020/H\u0002\u00f8\u0001\u0000\u00a2\u0006\u0004\u00089\u0010:\u001a,\u0010;\u001a\u00020<*\u00020\u00142\u0006\u0010=\u001a\u00020\u00032\u0006\u0010>\u001a\u00020 2\u0006\u0010?\u001a\u00020 2\u0006\u0010@\u001a\u00020\u0001H\u0003\u001a\u0084\u0001\u0010A\u001a\u00020<*\u00020\u000c2\u0006\u0010B\u001a\u00020C2\u000c\u0010D\u001a\u0008\u0012\u0004\u0012\u00020\u00030\u00122\u0006\u0010E\u001a\u00020F2\u0006\u0010G\u001a\u00020H2\u0006\u0010I\u001a\u00020J2\u0006\u0010K\u001a\u00020\u00012\u0006\u0010L\u001a\u00020\u00012\u0006\u0010M\u001a\u00020N2\u0006\u0010O\u001a\u00020\u00032\u0006\u0010P\u001a\u00020\u00032\u0006\u0010Q\u001a\u00020\u00032\u0006\u0010R\u001a\u00020\u00032\u0006\u0010S\u001a\u00020TH\u0001\u00f8\u0001\u0000\u00a2\u0006\u0004\u0008U\u0010V\u001a\u0014\u0010W\u001a\u00020\u0005*\u00020 2\u0006\u0010X\u001a\u00020\u0003H\u0002\u001a!\u0010Y\u001a\u00020 *\u00020 2\u0012\u0010\r\u001a\u000e\u0012\u0004\u0012\u00020\u0003\u0012\u0004\u0012\u00020\u00030\u000eH\u0082\u0008\"\u000e\u0010\u0000\u001a\u00020\u0001X\u0082T\u00a2\u0006\u0002\n\u0000\"\u000e\u0010\u0002\u001a\u00020\u0003X\u0082T\u00a2\u0006\u0002\n\u0000\u0082\u0002\u0007\n\u0005\u0008\u00a1\u001e0\u0001\u00a8\u0006Z"
     }
     d2 = {
         "DebugLoggingEnabled",
@@ -39,6 +39,7 @@
         "Lkotlin/ParameterName;",
         "name",
         "itemIndex",
+        "beforeVisibleBounds",
         "calculateVisibleItems",
         "measuredItems",
         "",
@@ -52,6 +53,9 @@
         "ensureIndicesInRange",
         "indices",
         "itemCount",
+        "fastForEach",
+        "reverse",
+        "action",
         "findPreviousItemIndex",
         "item",
         "lane",
@@ -92,8 +96,10 @@
         "mainAxisSpacing",
         "beforeContentPadding",
         "afterContentPadding",
-        "measureStaggeredGrid-dSVRQoE",
-        "(Landroidx/compose/foundation/lazy/layout/LazyLayoutMeasureScope;Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridState;Ljava/util/List;Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridItemProvider;Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridSlots;JZZJIIII)Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridMeasureResult;",
+        "coroutineScope",
+        "Lkotlinx/coroutines/CoroutineScope;",
+        "measureStaggeredGrid-sdzDtKU",
+        "(Landroidx/compose/foundation/lazy/layout/LazyLayoutMeasureScope;Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridState;Ljava/util/List;Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridItemProvider;Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridSlots;JZZJIIIILkotlinx/coroutines/CoroutineScope;)Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridMeasureResult;",
         "offsetBy",
         "delta",
         "transform",
@@ -116,8 +122,8 @@
 
 
 # direct methods
-.method private static final calculateExtraItems(Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridMeasureContext;Lkotlin/jvm/functions/Function1;Lkotlin/jvm/functions/Function1;)Ljava/util/List;
-    .locals 9
+.method private static final calculateExtraItems(Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridMeasureContext;Lkotlin/jvm/functions/Function1;Lkotlin/jvm/functions/Function1;Z)Ljava/util/List;
+    .locals 8
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -131,109 +137,198 @@
             "-",
             "Ljava/lang/Integer;",
             "Ljava/lang/Boolean;",
-            ">;)",
+            ">;Z)",
             "Ljava/util/List<",
             "Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridMeasuredItem;",
             ">;"
         }
     .end annotation
 
-    .line 887
+    .line 928
     invoke-virtual {p0}, Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridMeasureContext;->getPinnedItems()Ljava/util/List;
 
     move-result-object v0
 
-    .line 1406
-    invoke-interface {v0}, Ljava/util/List;->size()I
-
-    move-result v1
+    const/4 v1, 0x0
 
     const/4 v2, 0x0
 
-    const/4 v3, 0x0
+    if-eqz p3, :cond_3
 
-    move v4, v3
+    .line 1490
+    invoke-interface {v0}, Ljava/util/List;->size()I
+
+    move-result p3
+
+    add-int/lit8 p3, p3, -0x1
+
+    if-ltz p3, :cond_6
 
     :goto_0
-    if-ge v4, v1, :cond_2
+    add-int/lit8 v3, p3, -0x1
 
-    .line 1407
-    invoke-interface {v0, v4}, Ljava/util/List;->get(I)Ljava/lang/Object;
+    .line 1491
+    invoke-interface {v0, p3}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
-    move-result-object v5
+    move-result-object p3
 
-    .line 1408
-    check-cast v5, Ljava/lang/Number;
+    .line 1492
+    check-cast p3, Ljava/lang/Number;
 
-    invoke-virtual {v5}, Ljava/lang/Number;->intValue()I
+    invoke-virtual {p3}, Ljava/lang/Number;->intValue()I
 
-    move-result v5
+    move-result p3
 
-    .line 888
-    invoke-static {v5}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+    .line 929
+    invoke-static {p3}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
-    move-result-object v6
+    move-result-object v4
 
-    invoke-interface {p2, v6}, Lkotlin/jvm/functions/Function1;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-interface {p2, v4}, Lkotlin/jvm/functions/Function1;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
 
-    move-result-object v6
+    move-result-object v4
 
-    check-cast v6, Ljava/lang/Boolean;
+    check-cast v4, Ljava/lang/Boolean;
 
-    invoke-virtual {v6}, Ljava/lang/Boolean;->booleanValue()Z
+    invoke-virtual {v4}, Ljava/lang/Boolean;->booleanValue()Z
 
-    move-result v6
+    move-result v4
 
-    if-eqz v6, :cond_1
+    if-eqz v4, :cond_1
 
-    .line 889
+    .line 930
     invoke-virtual {p0}, Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridMeasureContext;->getItemProvider()Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridItemProvider;
 
-    move-result-object v6
+    move-result-object v4
 
-    invoke-virtual {p0, v6, v5, v3}, Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridMeasureContext;->getSpanRange-lOCCd4c(Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridItemProvider;II)J
+    invoke-virtual {p0, v4, p3, v1}, Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridMeasureContext;->getSpanRange-lOCCd4c(Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridItemProvider;II)J
 
-    move-result-wide v6
+    move-result-wide v4
 
     if-nez v2, :cond_0
 
-    .line 891
+    .line 932
     new-instance v2, Ljava/util/ArrayList;
 
     invoke-direct {v2}, Ljava/util/ArrayList;-><init>()V
 
     check-cast v2, Ljava/util/List;
 
-    .line 893
+    .line 934
     :cond_0
     invoke-virtual {p0}, Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridMeasureContext;->getMeasuredItemProvider()Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridMeasureProvider;
 
-    move-result-object v8
+    move-result-object v6
 
-    invoke-virtual {v8, v5, v6, v7}, Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridMeasureProvider;->getAndMeasure-jy6DScQ(IJ)Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridMeasuredItem;
+    invoke-virtual {v6, p3, v4, v5}, Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridMeasureProvider;->getAndMeasure-jy6DScQ(IJ)Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridMeasuredItem;
 
-    move-result-object v5
+    move-result-object p3
 
-    .line 894
-    invoke-interface {p1, v5}, Lkotlin/jvm/functions/Function1;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
+    .line 935
+    invoke-interface {p1, p3}, Lkotlin/jvm/functions/Function1;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 895
-    invoke-interface {v2, v5}, Ljava/util/List;->add(Ljava/lang/Object;)Z
+    .line 936
+    invoke-interface {v2, p3}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
     :cond_1
-    add-int/lit8 v4, v4, 0x1
+    if-gez v3, :cond_2
+
+    goto :goto_2
+
+    :cond_2
+    move p3, v3
 
     goto :goto_0
 
-    :cond_2
-    if-nez v2, :cond_3
+    .line 1496
+    :cond_3
+    invoke-interface {v0}, Ljava/util/List;->size()I
 
-    .line 899
+    move-result p3
+
+    move v3, v1
+
+    :goto_1
+    if-ge v3, p3, :cond_6
+
+    .line 1497
+    invoke-interface {v0, v3}, Ljava/util/List;->get(I)Ljava/lang/Object;
+
+    move-result-object v4
+
+    .line 1498
+    check-cast v4, Ljava/lang/Number;
+
+    invoke-virtual {v4}, Ljava/lang/Number;->intValue()I
+
+    move-result v4
+
+    .line 929
+    invoke-static {v4}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v5
+
+    invoke-interface {p2, v5}, Lkotlin/jvm/functions/Function1;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object v5
+
+    check-cast v5, Ljava/lang/Boolean;
+
+    invoke-virtual {v5}, Ljava/lang/Boolean;->booleanValue()Z
+
+    move-result v5
+
+    if-eqz v5, :cond_5
+
+    .line 930
+    invoke-virtual {p0}, Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridMeasureContext;->getItemProvider()Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridItemProvider;
+
+    move-result-object v5
+
+    invoke-virtual {p0, v5, v4, v1}, Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridMeasureContext;->getSpanRange-lOCCd4c(Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridItemProvider;II)J
+
+    move-result-wide v5
+
+    if-nez v2, :cond_4
+
+    .line 932
+    new-instance v2, Ljava/util/ArrayList;
+
+    invoke-direct {v2}, Ljava/util/ArrayList;-><init>()V
+
+    check-cast v2, Ljava/util/List;
+
+    .line 934
+    :cond_4
+    invoke-virtual {p0}, Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridMeasureContext;->getMeasuredItemProvider()Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridMeasureProvider;
+
+    move-result-object v7
+
+    invoke-virtual {v7, v4, v5, v6}, Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridMeasureProvider;->getAndMeasure-jy6DScQ(IJ)Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridMeasuredItem;
+
+    move-result-object v4
+
+    .line 935
+    invoke-interface {p1, v4}, Lkotlin/jvm/functions/Function1;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 936
+    invoke-interface {v2, v4}, Ljava/util/List;->add(Ljava/lang/Object;)Z
+
+    :cond_5
+    add-int/lit8 v3, v3, 0x1
+
+    goto :goto_1
+
+    :cond_6
+    :goto_2
+    if-nez v2, :cond_7
+
+    .line 940
     invoke-static {}, Lkotlin/collections/CollectionsKt;->emptyList()Ljava/util/List;
 
     move-result-object v2
 
-    :cond_3
+    :cond_7
     return-object v2
 .end method
 
@@ -253,7 +348,7 @@
         }
     .end annotation
 
-    .line 846
+    .line 886
     array-length v0, p1
 
     const/4 v1, 0x0
@@ -277,13 +372,13 @@
 
     goto :goto_0
 
-    .line 845
+    .line 885
     :cond_0
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0, v3}, Ljava/util/ArrayList;-><init>(I)V
 
-    .line 1384
+    .line 1467
     :cond_1
     :goto_1
     array-length v2, p1
@@ -295,7 +390,7 @@
 
     aget-object v4, p1, v3
 
-    .line 848
+    .line 888
     check-cast v4, Ljava/util/Collection;
 
     invoke-interface {v4}, Ljava/util/Collection;->isEmpty()Z
@@ -306,7 +401,7 @@
 
     if-eqz v4, :cond_7
 
-    .line 1388
+    .line 1471
     array-length v2, p1
 
     const v3, 0x7fffffff
@@ -320,10 +415,10 @@
     :goto_3
     if-ge v5, v2, :cond_4
 
-    .line 1389
+    .line 1472
     aget-object v7, p1, v5
 
-    .line 851
+    .line 891
     invoke-virtual {v7}, Lkotlin/collections/ArrayDeque;->firstOrNull()Ljava/lang/Object;
 
     move-result-object v7
@@ -353,7 +448,7 @@
 
     goto :goto_3
 
-    .line 853
+    .line 893
     :cond_4
     aget-object v2, p1, v4
 
@@ -363,7 +458,7 @@
 
     check-cast v2, Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridMeasuredItem;
 
-    .line 855
+    .line 895
     invoke-virtual {v2}, Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridMeasuredItem;->getLane()I
 
     move-result v3
@@ -372,7 +467,7 @@
 
     goto :goto_1
 
-    .line 859
+    .line 899
     :cond_5
     invoke-virtual {v2}, Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridMeasuredItem;->getLane()I
 
@@ -386,12 +481,12 @@
 
     move-result-wide v5
 
-    .line 860
+    .line 900
     invoke-static {p2, v5, v6}, Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridMeasureKt;->maxInRange-jy6DScQ([IJ)I
 
     move-result v3
 
-    .line 861
+    .line 901
     invoke-virtual {p0}, Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridMeasureContext;->getResolvedSlots()Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridSlots;
 
     move-result-object v7
@@ -402,7 +497,7 @@
 
     aget v4, v7, v4
 
-    .line 863
+    .line 903
     invoke-virtual {v2}, Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridMeasuredItem;->getPlaceablesCount()I
 
     move-result v7
@@ -411,11 +506,11 @@
 
     goto :goto_1
 
-    .line 867
+    .line 907
     :cond_6
     invoke-virtual {v2, v3, v4, p3}, Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridMeasuredItem;->position(III)V
 
-    .line 872
+    .line 912
     move-object v4, v0
 
     check-cast v4, Ljava/util/Collection;
@@ -437,7 +532,7 @@
     :goto_5
     if-ge v4, v5, :cond_1
 
-    .line 874
+    .line 914
     invoke-virtual {v2}, Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridMeasuredItem;->getSizeWithSpacings()I
 
     move-result v6
@@ -455,7 +550,7 @@
 
     goto/16 :goto_2
 
-    .line 877
+    .line 917
     :cond_8
     check-cast v0, Ljava/util/List;
 
@@ -488,7 +583,7 @@
         }
     .end annotation
 
-    .line 68
+    .line 69
     const-string p0, ""
 
     return-object p0
@@ -497,7 +592,7 @@
 .method private static final ensureIndicesInRange(Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridMeasureContext;[II)V
     .locals 4
 
-    .line 983
+    .line 1028
     array-length v0, p1
 
     add-int/lit8 v0, v0, -0x1
@@ -507,7 +602,7 @@
     :goto_0
     add-int/lit8 v1, v0, -0x1
 
-    .line 984
+    .line 1029
     :goto_1
     aget v2, p1, v0
 
@@ -527,13 +622,13 @@
 
     goto :goto_2
 
-    .line 987
+    .line 1032
     :cond_0
     aget v2, p1, v0
 
     if-ltz v2, :cond_1
 
-    .line 989
+    .line 1034
     invoke-virtual {p0}, Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridMeasureContext;->getItemProvider()Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridItemProvider;
 
     move-result-object v2
@@ -546,7 +641,7 @@
 
     if-nez v2, :cond_1
 
-    .line 990
+    .line 1035
     invoke-virtual {p0}, Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridMeasureContext;->getLaneInfo()Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridLaneInfo;
 
     move-result-object v2
@@ -565,7 +660,7 @@
 
     goto :goto_0
 
-    .line 985
+    .line 1030
     :cond_3
     :goto_2
     aget v2, p1, v0
@@ -583,10 +678,154 @@
     return-void
 .end method
 
+.method private static final fastForEach(Ljava/util/List;ZLkotlin/jvm/functions/Function1;)V
+    .locals 2
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "<T:",
+            "Ljava/lang/Object;",
+            ">(",
+            "Ljava/util/List<",
+            "+TT;>;Z",
+            "Lkotlin/jvm/functions/Function1<",
+            "-TT;",
+            "Lkotlin/Unit;",
+            ">;)V"
+        }
+    .end annotation
+
+    if-eqz p1, :cond_1
+
+    .line 1503
+    invoke-interface {p0}, Ljava/util/List;->size()I
+
+    move-result p1
+
+    add-int/lit8 p1, p1, -0x1
+
+    if-ltz p1, :cond_2
+
+    :goto_0
+    add-int/lit8 v0, p1, -0x1
+
+    .line 1504
+    invoke-interface {p0, p1}, Ljava/util/List;->get(I)Ljava/lang/Object;
+
+    move-result-object p1
+
+    .line 1505
+    invoke-interface {p2, p1}, Lkotlin/jvm/functions/Function1;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
+
+    if-gez v0, :cond_0
+
+    goto :goto_2
+
+    :cond_0
+    move p1, v0
+
+    goto :goto_0
+
+    .line 1509
+    :cond_1
+    invoke-interface {p0}, Ljava/util/List;->size()I
+
+    move-result p1
+
+    const/4 v0, 0x0
+
+    :goto_1
+    if-ge v0, p1, :cond_2
+
+    .line 1510
+    invoke-interface {p0, v0}, Ljava/util/List;->get(I)Ljava/lang/Object;
+
+    move-result-object v1
+
+    .line 1511
+    invoke-interface {p2, v1}, Lkotlin/jvm/functions/Function1;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
+
+    add-int/lit8 v0, v0, 0x1
+
+    goto :goto_1
+
+    :cond_2
+    :goto_2
+    return-void
+.end method
+
+.method static synthetic fastForEach$default(Ljava/util/List;ZLkotlin/jvm/functions/Function1;ILjava/lang/Object;)V
+    .locals 0
+
+    and-int/lit8 p3, p3, 0x1
+
+    const/4 p4, 0x0
+
+    if-eqz p3, :cond_0
+
+    move p1, p4
+
+    :cond_0
+    if-eqz p1, :cond_2
+
+    .line 1515
+    invoke-interface {p0}, Ljava/util/List;->size()I
+
+    move-result p1
+
+    add-int/lit8 p1, p1, -0x1
+
+    if-ltz p1, :cond_3
+
+    :goto_0
+    add-int/lit8 p3, p1, -0x1
+
+    .line 1516
+    invoke-interface {p0, p1}, Ljava/util/List;->get(I)Ljava/lang/Object;
+
+    move-result-object p1
+
+    .line 1517
+    invoke-interface {p2, p1}, Lkotlin/jvm/functions/Function1;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
+
+    if-gez p3, :cond_1
+
+    goto :goto_2
+
+    :cond_1
+    move p1, p3
+
+    goto :goto_0
+
+    .line 1521
+    :cond_2
+    invoke-interface {p0}, Ljava/util/List;->size()I
+
+    move-result p1
+
+    :goto_1
+    if-ge p4, p1, :cond_3
+
+    .line 1522
+    invoke-interface {p0, p4}, Ljava/util/List;->get(I)Ljava/lang/Object;
+
+    move-result-object p3
+
+    .line 1523
+    invoke-interface {p2, p3}, Lkotlin/jvm/functions/Function1;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
+
+    add-int/lit8 p4, p4, 0x1
+
+    goto :goto_1
+
+    :cond_3
+    :goto_2
+    return-void
+.end method
+
 .method private static final findPreviousItemIndex(Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridMeasureContext;II)I
     .locals 0
 
-    .line 997
+    .line 1042
     invoke-virtual {p0}, Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridMeasureContext;->getLaneInfo()Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridLaneInfo;
 
     move-result-object p0
@@ -626,7 +865,7 @@
     :goto_0
     if-ge v0, p0, :cond_0
 
-    .line 913
+    .line 958
     invoke-static {v0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object p1
@@ -644,7 +883,7 @@
 .method private static final indexOfMaxValue([I)I
     .locals 5
 
-    .line 961
+    .line 1006
     array-length v0, p0
 
     const/4 v1, -0x1
@@ -656,7 +895,7 @@
     :goto_0
     if-ge v3, v0, :cond_1
 
-    .line 962
+    .line 1007
     aget v4, p0, v3
 
     if-ge v2, v4, :cond_0
@@ -688,7 +927,7 @@
         }
     .end annotation
 
-    .line 947
+    .line 992
     array-length v0, p0
 
     const/4 v1, -0x1
@@ -700,7 +939,7 @@
     :goto_0
     if-ge v3, v0, :cond_1
 
-    .line 948
+    .line 993
     aget-object v4, p0, v3
 
     invoke-interface {p1, v4}, Lkotlin/jvm/functions/Function1;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
@@ -731,11 +970,7 @@
 .method public static final indexOfMinValue([II)I
     .locals 6
 
-    const-string v0, "<this>"
-
-    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 934
+    .line 979
     array-length v0, p0
 
     const/4 v1, -0x1
@@ -749,7 +984,7 @@
 
     add-int/lit8 v4, p1, 0x1
 
-    .line 935
+    .line 980
     aget v5, p0, v3
 
     if-gt v4, v5, :cond_0
@@ -778,7 +1013,7 @@
 
     const/high16 p1, -0x80000000
 
-    .line 931
+    .line 976
     :cond_0
     invoke-static {p0, p1}, Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridMeasureKt;->indexOfMinValue([II)I
 
@@ -807,7 +1042,7 @@
     :goto_0
     if-ge v0, p1, :cond_0
 
-    .line 926
+    .line 971
     aget v1, p0, v0
 
     invoke-static {p2, v1}, Ljava/lang/Math;->max(II)I
@@ -823,7 +1058,7 @@
 .end method
 
 .method private static final measure(Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridMeasureContext;I[I[IZ)Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridMeasureResult;
-    .locals 38
+    .locals 37
 
     move-object/from16 v0, p0
 
@@ -833,12 +1068,12 @@
 
     move-object/from16 v3, p3
 
-    .line 244
+    .line 249
     invoke-virtual/range {p0 .. p0}, Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridMeasureContext;->getMeasureScope()Landroidx/compose/foundation/lazy/layout/LazyLayoutMeasureScope;
 
     move-result-object v4
 
-    .line 245
+    .line 250
     invoke-virtual/range {p0 .. p0}, Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridMeasureContext;->getItemProvider()Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridItemProvider;
 
     move-result-object v5
@@ -847,18 +1082,18 @@
 
     move-result v15
 
-    if-lez v15, :cond_56
+    if-lez v15, :cond_63
 
-    .line 247
+    .line 252
     invoke-virtual/range {p0 .. p0}, Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridMeasureContext;->getLaneCount()I
 
     move-result v5
 
     if-nez v5, :cond_0
 
-    goto/16 :goto_3f
+    goto/16 :goto_4d
 
-    .line 270
+    .line 275
     :cond_0
     array-length v5, v2
 
@@ -870,7 +1105,7 @@
 
     invoke-static {v7, v5}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 271
+    .line 276
     array-length v2, v3
 
     invoke-static {v3, v2}, Ljava/util/Arrays;->copyOf([II)[I
@@ -879,15 +1114,15 @@
 
     invoke-static {v8, v5}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 274
+    .line 284
     invoke-static {v0, v7, v15}, Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridMeasureKt;->ensureIndicesInRange(Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridMeasureContext;[II)V
 
     neg-int v2, v1
 
-    .line 278
+    .line 288
     invoke-static {v8, v2}, Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridMeasureKt;->offsetBy([II)V
 
-    .line 281
+    .line 291
     invoke-virtual/range {p0 .. p0}, Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridMeasureContext;->getLaneCount()I
 
     move-result v6
@@ -899,7 +1134,7 @@
     :goto_0
     if-ge v2, v6, :cond_1
 
-    .line 282
+    .line 292
     new-instance v3, Lkotlin/collections/ArrayDeque;
 
     const/16 v11, 0x10
@@ -912,7 +1147,7 @@
 
     goto :goto_0
 
-    .line 287
+    .line 297
     :cond_1
     invoke-virtual/range {p0 .. p0}, Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridMeasureContext;->getBeforeContentPadding()I
 
@@ -922,201 +1157,233 @@
 
     invoke-static {v8, v2}, Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridMeasureKt;->offsetBy([II)V
 
-    .line 311
-    :cond_2
-    invoke-static {v7, v8, v0}, Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridMeasureKt;->measure$lambda$38$hasSpaceBeforeFirst([I[ILandroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridMeasureContext;)Z
-
-    move-result v2
-
-    if-eqz v2, :cond_9
-
-    .line 315
-    invoke-static {v7}, Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridMeasureKt;->indexOfMaxValue([I)I
-
-    move-result v2
-
-    .line 316
-    aget v14, v7, v2
+    const/4 v2, 0x0
 
     .line 321
-    array-length v10, v8
-
-    const/4 v3, 0x0
-
     :goto_1
-    if-ge v3, v10, :cond_4
-
-    .line 323
-    aget v11, v7, v3
-
-    aget v12, v7, v2
-
-    if-eq v11, v12, :cond_3
-
-    .line 324
-    aget v11, v8, v3
-
-    aget v12, v8, v2
-
-    if-ge v11, v12, :cond_3
-
-    .line 328
-    aput v12, v8, v3
-
-    :cond_3
-    add-int/lit8 v3, v3, 0x1
-
-    goto :goto_1
-
-    .line 332
-    :cond_4
-    invoke-static {v0, v14, v2}, Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridMeasureKt;->findPreviousItemIndex(Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridMeasureContext;II)I
+    invoke-static {v7, v8, v0}, Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridMeasureKt;->measure$lambda$38$hasSpaceBeforeFirst([I[ILandroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridMeasureContext;)Z
 
     move-result v3
 
-    if-gez v3, :cond_5
+    if-eqz v3, :cond_a
 
-    goto :goto_6
+    .line 325
+    invoke-static {v7}, Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridMeasureKt;->indexOfMaxValue([I)I
+
+    move-result v3
+
+    .line 326
+    aget v10, v7, v3
+
+    .line 331
+    array-length v14, v8
+
+    const/4 v11, 0x0
+
+    :goto_2
+    if-ge v11, v14, :cond_3
+
+    .line 333
+    aget v12, v7, v11
+
+    aget v13, v7, v3
+
+    if-eq v12, v13, :cond_2
+
+    .line 334
+    aget v12, v8, v11
+
+    aget v13, v8, v3
+
+    if-ge v12, v13, :cond_2
 
     .line 338
-    :cond_5
-    invoke-virtual/range {p0 .. p0}, Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridMeasureContext;->getItemProvider()Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridItemProvider;
+    aput v13, v8, v11
 
-    move-result-object v10
-
-    invoke-virtual {v0, v10, v3, v2}, Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridMeasureContext;->getSpanRange-lOCCd4c(Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridItemProvider;II)J
-
-    move-result-wide v10
-
-    .line 339
-    invoke-virtual/range {p0 .. p0}, Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridMeasureContext;->getLaneInfo()Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridLaneInfo;
-
-    move-result-object v2
-
-    const-wide v12, 0xffffffffL
-
-    and-long/2addr v12, v10
-
-    long-to-int v12, v12
-
-    const/16 v13, 0x20
-
-    shr-long v13, v10, v13
-
-    long-to-int v13, v13
-
-    sub-int v14, v12, v13
-
-    move/from16 v17, v13
-
-    const/4 v13, 0x1
-
-    if-eq v14, v13, :cond_6
-
-    const/4 v13, -0x2
+    :cond_2
+    add-int/lit8 v11, v11, 0x1
 
     goto :goto_2
 
-    :cond_6
-    move/from16 v13, v17
+    .line 342
+    :cond_3
+    invoke-static {v0, v10, v3}, Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridMeasureKt;->findPreviousItemIndex(Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridMeasureContext;II)I
 
-    :goto_2
-    invoke-virtual {v2, v3, v13}, Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridLaneInfo;->setLane(II)V
+    move-result v10
 
-    .line 340
+    if-gez v10, :cond_4
+
+    move/from16 p2, v2
+
+    move/from16 v24, v15
+
+    goto/16 :goto_7
+
+    .line 348
+    :cond_4
+    invoke-virtual/range {p0 .. p0}, Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridMeasureContext;->getItemProvider()Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridItemProvider;
+
+    move-result-object v11
+
+    invoke-virtual {v0, v11, v10, v3}, Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridMeasureContext;->getSpanRange-lOCCd4c(Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridItemProvider;II)J
+
+    move-result-wide v11
+
+    .line 349
+    invoke-virtual/range {p0 .. p0}, Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridMeasureContext;->getLaneInfo()Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridLaneInfo;
+
+    move-result-object v3
+
+    const-wide v13, 0xffffffffL
+
+    and-long/2addr v13, v11
+
+    long-to-int v13, v13
+
+    move/from16 v24, v15
+
+    const/16 v14, 0x20
+
+    shr-long v14, v11, v14
+
+    long-to-int v14, v14
+
+    sub-int v15, v13, v14
+
+    move/from16 p2, v2
+
+    const/4 v2, 0x1
+
+    if-eq v15, v2, :cond_5
+
+    const/4 v2, -0x2
+
+    goto :goto_3
+
+    :cond_5
+    move v2, v14
+
+    :goto_3
+    invoke-virtual {v3, v10, v2}, Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridLaneInfo;->setLane(II)V
+
+    .line 350
     invoke-virtual/range {p0 .. p0}, Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridMeasureContext;->getMeasuredItemProvider()Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridMeasureProvider;
 
     move-result-object v2
 
-    invoke-virtual {v2, v3, v10, v11}, Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridMeasureProvider;->getAndMeasure-jy6DScQ(IJ)Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridMeasuredItem;
+    invoke-virtual {v2, v10, v11, v12}, Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridMeasureProvider;->getAndMeasure-jy6DScQ(IJ)Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridMeasuredItem;
 
     move-result-object v2
 
-    .line 345
-    invoke-static {v8, v10, v11}, Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridMeasureKt;->maxInRange-jy6DScQ([IJ)I
+    .line 355
+    invoke-static {v8, v11, v12}, Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridMeasureKt;->maxInRange-jy6DScQ([IJ)I
 
-    move-result v10
+    move-result v3
 
     const/4 v11, 0x1
 
-    if-eq v14, v11, :cond_7
+    if-eq v15, v11, :cond_6
 
-    .line 346
+    .line 356
     invoke-virtual/range {p0 .. p0}, Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridMeasureContext;->getLaneInfo()Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridLaneInfo;
 
     move-result-object v11
 
-    invoke-virtual {v11, v3}, Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridLaneInfo;->getGaps(I)[I
+    invoke-virtual {v11, v10}, Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridLaneInfo;->getGaps(I)[I
 
     move-result-object v11
 
-    goto :goto_3
+    goto :goto_4
 
-    :cond_7
+    :cond_6
     const/4 v11, 0x0
 
-    :goto_3
-    move/from16 v13, v17
-
     :goto_4
-    if-ge v13, v12, :cond_2
+    move/from16 v12, p2
 
-    .line 348
-    aput v3, v7, v13
-
-    if-nez v11, :cond_8
-
-    const/4 v14, 0x0
-
-    goto :goto_5
-
-    .line 349
-    :cond_8
-    aget v14, v11, v13
-
-    .line 350
     :goto_5
+    if-ge v14, v13, :cond_9
+
+    .line 358
+    aput v10, v7, v14
+
+    if-nez v11, :cond_7
+
+    const/4 v15, 0x0
+
+    goto :goto_6
+
+    .line 359
+    :cond_7
+    aget v15, v11, v14
+
+    .line 360
+    :goto_6
     invoke-virtual {v2}, Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridMeasuredItem;->getSizeWithSpacings()I
 
     move-result v16
 
-    add-int v16, v10, v16
+    add-int v16, v3, v16
 
-    add-int v16, v16, v14
+    add-int v16, v16, v15
 
-    aput v16, v8, v13
+    .line 361
+    aput v16, v8, v14
 
-    add-int/lit8 v13, v13, 0x1
+    .line 364
+    invoke-virtual/range {p0 .. p0}, Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridMeasureContext;->getMainAxisAvailableSize()I
 
-    goto :goto_4
+    move-result v15
+
+    add-int v15, v15, v16
+
+    if-gtz v15, :cond_8
+
+    const/4 v12, 0x1
+
+    :cond_8
+    add-int/lit8 v14, v14, 0x1
+
+    goto :goto_5
 
     :cond_9
-    const/4 v2, -0x1
+    move v2, v12
 
-    .line 388
-    :goto_6
+    move/from16 v15, v24
+
+    goto/16 :goto_1
+
+    :cond_a
+    move/from16 p2, v2
+
+    move/from16 v24, v15
+
+    const/4 v3, -0x1
+
+    .line 404
+    :goto_7
     invoke-virtual/range {p0 .. p0}, Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridMeasureContext;->getBeforeContentPadding()I
 
-    move-result v3
+    move-result v2
 
-    neg-int v3, v3
+    neg-int v2, v2
 
     const/4 v10, 0x0
 
-    .line 392
+    .line 408
     aget v11, v8, v10
 
-    if-ge v11, v3, :cond_a
+    if-ge v11, v2, :cond_b
 
     add-int/2addr v1, v11
 
-    sub-int v11, v3, v11
+    sub-int v11, v2, v11
 
-    .line 394
+    .line 410
     invoke-static {v8, v11}, Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridMeasureKt;->offsetBy([II)V
 
-    .line 401
-    :cond_a
+    .line 417
+    :cond_b
     invoke-virtual/range {p0 .. p0}, Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridMeasureContext;->getBeforeContentPadding()I
 
     move-result v11
@@ -1125,41 +1392,41 @@
 
     const/4 v11, -0x1
 
-    if-ne v2, v11, :cond_b
+    if-ne v3, v11, :cond_c
 
-    .line 404
+    .line 420
     invoke-static {v7, v10}, Lkotlin/collections/ArraysKt;->indexOf([II)I
 
-    move-result v2
+    move-result v3
 
-    :cond_b
-    if-eq v2, v11, :cond_e
+    :cond_c
+    if-eq v3, v11, :cond_f
 
-    .line 409
-    invoke-static {v7, v0, v8, v2}, Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridMeasureKt;->measure$lambda$38$misalignedStart([ILandroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridMeasureContext;[II)Z
+    .line 425
+    invoke-static {v7, v0, v8, v3}, Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridMeasureKt;->measure$lambda$38$misalignedStart([ILandroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridMeasureContext;[II)Z
 
     move-result v10
 
-    if-eqz v10, :cond_e
+    if-eqz v10, :cond_f
 
-    if-eqz p4, :cond_e
+    if-eqz p4, :cond_f
 
-    .line 410
+    .line 426
     invoke-virtual/range {p0 .. p0}, Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridMeasureContext;->getLaneInfo()Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridLaneInfo;
 
-    move-result-object v3
+    move-result-object v2
 
-    invoke-virtual {v3}, Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridLaneInfo;->reset()V
+    invoke-virtual {v2}, Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridLaneInfo;->reset()V
 
-    .line 413
-    array-length v3, v7
+    .line 429
+    array-length v2, v7
 
-    new-array v4, v3, [I
+    new-array v4, v2, [I
 
     const/4 v5, 0x0
 
-    :goto_7
-    if-ge v5, v3, :cond_c
+    :goto_8
+    if-ge v5, v2, :cond_d
 
     aput v11, v4, v5
 
@@ -1167,2170 +1434,2315 @@
 
     const/4 v11, -0x1
 
-    goto :goto_7
+    goto :goto_8
 
-    .line 414
-    :cond_c
-    array-length v3, v8
+    .line 430
+    :cond_d
+    array-length v2, v8
 
-    new-array v5, v3, [I
+    new-array v5, v2, [I
 
     const/4 v6, 0x0
 
-    :goto_8
-    if-ge v6, v3, :cond_d
+    :goto_9
+    if-ge v6, v2, :cond_e
 
-    .line 415
-    aget v7, v8, v2
+    .line 431
+    aget v7, v8, v3
 
     aput v7, v5, v6
 
     add-int/lit8 v6, v6, 0x1
 
-    goto :goto_8
+    goto :goto_9
 
-    :cond_d
+    :cond_e
     const/4 v6, 0x0
 
-    .line 411
+    .line 427
     invoke-static {v0, v1, v4, v5, v6}, Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridMeasureKt;->measure(Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridMeasureContext;I[I[IZ)Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridMeasureResult;
 
     move-result-object v0
 
     return-object v0
 
-    .line 426
-    :cond_e
-    array-length v2, v7
+    .line 442
+    :cond_f
+    array-length v3, v7
 
-    invoke-static {v7, v2}, Ljava/util/Arrays;->copyOf([II)[I
+    invoke-static {v7, v3}, Ljava/util/Arrays;->copyOf([II)[I
 
     move-result-object v10
 
     invoke-static {v10, v5}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 427
+    .line 443
     array-length v11, v8
 
     new-array v12, v11, [I
 
-    const/4 v2, 0x0
+    const/4 v3, 0x0
 
-    :goto_9
-    if-ge v2, v11, :cond_f
+    :goto_a
+    if-ge v3, v11, :cond_10
 
-    .line 428
-    aget v13, v8, v2
+    .line 444
+    aget v13, v8, v3
 
     neg-int v13, v13
 
-    aput v13, v12, v2
+    aput v13, v12, v3
 
-    add-int/lit8 v2, v2, 0x1
+    add-int/lit8 v3, v3, 0x1
 
-    goto :goto_9
+    goto :goto_a
 
-    .line 431
-    :cond_f
+    .line 447
+    :cond_10
+    invoke-virtual/range {p0 .. p0}, Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridMeasureContext;->getMainAxisSpacing()I
+
+    move-result v3
+
+    add-int v13, v2, v3
+
+    .line 448
     invoke-virtual/range {p0 .. p0}, Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridMeasureContext;->getMainAxisAvailableSize()I
 
-    move-result v2
+    move-result v3
 
     invoke-virtual/range {p0 .. p0}, Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridMeasureContext;->getAfterContentPadding()I
 
-    move-result v13
+    move-result v14
 
-    add-int/2addr v2, v13
-
-    const/4 v13, 0x0
-
-    invoke-static {v2, v13}, Lkotlin/ranges/RangesKt;->coerceAtLeast(II)I
-
-    move-result v2
-
-    move-object/from16 v23, v4
-
-    const/4 v4, 0x1
+    add-int/2addr v3, v14
 
     const/4 v14, 0x0
 
-    .line 443
-    invoke-static {v10, v13, v4, v14}, Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridMeasureKt;->indexOfMinValue$default([IIILjava/lang/Object;)I
+    invoke-static {v3, v14}, Lkotlin/ranges/RangesKt;->coerceAtLeast(II)I
 
-    move-result v24
+    move-result v3
 
-    move/from16 v13, v24
+    move/from16 p3, v2
 
-    const/4 v4, 0x0
+    const/4 v2, 0x1
 
-    :goto_a
+    const/4 v15, 0x0
+
+    .line 460
+    invoke-static {v10, v14, v2, v15}, Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridMeasureKt;->indexOfMinValue$default([IIILjava/lang/Object;)I
+
+    move-result v25
+
+    move/from16 p1, p2
+
+    move/from16 v15, v25
+
+    const/4 v2, 0x0
+
     const/4 v14, -0x1
 
-    if-eq v13, v14, :cond_15
+    :goto_b
+    if-eq v15, v14, :cond_16
 
-    .line 444
+    .line 461
     invoke-virtual/range {p0 .. p0}, Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridMeasureContext;->getLaneCount()I
 
     move-result v14
 
-    if-ge v4, v14, :cond_15
+    if-ge v2, v14, :cond_16
 
-    .line 445
-    aget v14, v10, v13
+    .line 462
+    aget v14, v10, v15
 
-    .line 448
+    .line 465
     invoke-static {v10, v14}, Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridMeasureKt;->indexOfMinValue([II)I
 
-    move-result v24
+    move-result v25
 
-    add-int/lit8 v4, v4, 0x1
+    add-int/lit8 v2, v2, 0x1
 
-    if-ltz v14, :cond_13
+    move/from16 p2, v2
 
-    move/from16 p1, v4
+    if-ltz v14, :cond_15
 
-    .line 453
+    .line 470
     invoke-virtual/range {p0 .. p0}, Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridMeasureContext;->getItemProvider()Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridItemProvider;
 
-    move-result-object v4
+    move-result-object v2
 
-    move-object/from16 v25, v5
+    move-object/from16 v26, v4
 
-    invoke-virtual {v0, v4, v14, v13}, Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridMeasureContext;->getSpanRange-lOCCd4c(Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridItemProvider;II)J
+    move-object/from16 v27, v5
+
+    invoke-virtual {v0, v2, v14, v15}, Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridMeasureContext;->getSpanRange-lOCCd4c(Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridItemProvider;II)J
 
     move-result-wide v4
 
-    .line 454
+    .line 471
     invoke-virtual/range {p0 .. p0}, Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridMeasureContext;->getMeasuredItemProvider()Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridMeasureProvider;
 
-    move-result-object v13
+    move-result-object v2
 
-    invoke-virtual {v13, v14, v4, v5}, Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridMeasureProvider;->getAndMeasure-jy6DScQ(IJ)Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridMeasuredItem;
+    invoke-virtual {v2, v14, v4, v5}, Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridMeasureProvider;->getAndMeasure-jy6DScQ(IJ)Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridMeasuredItem;
 
-    move-result-object v13
+    move-result-object v2
 
-    move/from16 v26, v1
+    .line 476
+    invoke-virtual/range {p0 .. p0}, Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridMeasureContext;->getLaneInfo()Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridLaneInfo;
 
-    .line 459
+    move-result-object v15
+
+    move/from16 v28, v1
+
+    const-wide v22, 0xffffffffL
+
+    and-long v0, v4, v22
+
+    long-to-int v0, v0
+
+    move-object/from16 v29, v7
+
+    move-object/from16 v30, v8
+
+    const/16 v1, 0x20
+
+    shr-long v7, v4, v1
+
+    long-to-int v1, v7
+
+    sub-int v7, v0, v1
+
+    const/4 v8, 0x1
+
+    if-eq v7, v8, :cond_11
+
+    const/4 v8, -0x2
+
+    goto :goto_c
+
+    :cond_11
+    move v8, v1
+
+    :goto_c
+    invoke-virtual {v15, v14, v8}, Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridLaneInfo;->setLane(II)V
+
+    .line 477
+    invoke-static {v12, v4, v5}, Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridMeasureKt;->maxInRange-jy6DScQ([IJ)I
+
+    move-result v4
+
+    move v5, v1
+
+    :goto_d
+    if-ge v5, v0, :cond_12
+
+    .line 479
+    invoke-virtual {v2}, Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridMeasuredItem;->getSizeWithSpacings()I
+
+    move-result v8
+
+    add-int/2addr v8, v4
+
+    aput v8, v12, v5
+
+    .line 480
+    aput v14, v10, v5
+
+    .line 481
+    aget-object v8, v9, v5
+
+    invoke-virtual {v8, v2}, Lkotlin/collections/ArrayDeque;->addLast(Ljava/lang/Object;)V
+
+    add-int/lit8 v5, v5, 0x1
+
+    goto :goto_d
+
+    :cond_12
+    if-ge v4, v13, :cond_13
+
+    .line 486
+    aget v0, v12, v1
+
+    if-gt v0, v13, :cond_13
+
+    const/4 v0, 0x0
+
+    .line 491
+    invoke-virtual {v2, v0}, Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridMeasuredItem;->setVisible(Z)V
+
+    const/4 v0, 0x1
+
+    goto :goto_e
+
+    :cond_13
+    move/from16 v0, p1
+
+    :goto_e
+    const/4 v1, 0x1
+
+    if-eq v7, v1, :cond_14
+
+    .line 498
+    invoke-virtual/range {p0 .. p0}, Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridMeasureContext;->getLaneCount()I
+
+    move-result v2
+
+    goto :goto_f
+
+    :cond_14
+    move/from16 v2, p2
+
+    :goto_f
+    move/from16 p1, v0
+
+    move/from16 v15, v25
+
+    move-object/from16 v4, v26
+
+    move-object/from16 v5, v27
+
+    move/from16 v1, v28
+
+    move-object/from16 v7, v29
+
+    move-object/from16 v8, v30
+
+    const/4 v14, -0x1
+
+    move-object/from16 v0, p0
+
+    goto/16 :goto_b
+
+    :cond_15
+    const/4 v14, -0x1
+
+    move-object/from16 v0, p0
+
+    move/from16 v15, v25
+
+    goto/16 :goto_b
+
+    :cond_16
+    move/from16 v28, v1
+
+    move-object/from16 v26, v4
+
+    move-object/from16 v27, v5
+
+    move-object/from16 v29, v7
+
+    move-object/from16 v30, v8
+
+    :goto_10
+    const/4 v0, 0x0
+
+    :goto_11
+    if-ge v0, v11, :cond_19
+
+    .line 1313
+    aget v1, v12, v0
+
+    if-lt v1, v3, :cond_18
+
+    if-gtz v1, :cond_17
+
+    goto :goto_12
+
+    :cond_17
+    add-int/lit8 v0, v0, 0x1
+
+    goto :goto_11
+
+    :cond_18
+    :goto_12
+    const/4 v0, 0x0
+
+    const/4 v1, 0x1
+
+    const/4 v2, 0x0
+
+    goto :goto_14
+
+    :cond_19
+    const/4 v0, 0x0
+
+    :goto_13
+    if-ge v0, v6, :cond_18
+
+    .line 1315
+    aget-object v1, v9, v0
+
+    .line 517
+    invoke-virtual {v1}, Lkotlin/collections/ArrayDeque;->isEmpty()Z
+
+    move-result v1
+
+    if-nez v1, :cond_1a
+
+    move/from16 v15, v24
+
+    const/4 v1, 0x1
+
+    goto :goto_15
+
+    :cond_1a
+    add-int/lit8 v0, v0, 0x1
+
+    goto :goto_13
+
+    .line 519
+    :goto_14
+    invoke-static {v12, v2, v1, v0}, Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridMeasureKt;->indexOfMinValue$default([IIILjava/lang/Object;)I
+
+    move-result v4
+
+    .line 520
+    invoke-static {v10}, Lkotlin/collections/ArraysKt;->maxOrThrow([I)I
+
+    move-result v0
+
+    add-int/2addr v0, v1
+
+    move/from16 v15, v24
+
+    if-lt v0, v15, :cond_5c
+
+    :goto_15
+    const/4 v0, 0x0
+
+    :goto_16
+    if-ge v0, v6, :cond_1f
+
+    .line 565
+    aget-object v2, v9, v0
+
+    .line 567
+    :goto_17
+    invoke-virtual {v2}, Lkotlin/collections/ArrayDeque;->size()I
+
+    move-result v4
+
+    if-le v4, v1, :cond_1d
+
+    invoke-virtual {v2}, Lkotlin/collections/ArrayDeque;->first()Ljava/lang/Object;
+
+    move-result-object v4
+
+    check-cast v4, Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridMeasuredItem;
+
+    invoke-virtual {v4}, Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridMeasuredItem;->isVisible()Z
+
+    move-result v4
+
+    if-nez v4, :cond_1d
+
+    .line 568
+    invoke-virtual {v2}, Lkotlin/collections/ArrayDeque;->removeFirst()Ljava/lang/Object;
+
+    move-result-object v4
+
+    check-cast v4, Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridMeasuredItem;
+
+    .line 569
+    invoke-virtual {v4}, Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridMeasuredItem;->getSpan()I
+
+    move-result v5
+
+    if-eq v5, v1, :cond_1b
+
     invoke-virtual/range {p0 .. p0}, Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridMeasureContext;->getLaneInfo()Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridLaneInfo;
 
     move-result-object v1
 
-    move-object/from16 v27, v7
-
-    move-object/from16 v28, v8
-
-    const-wide v21, 0xffffffffL
-
-    and-long v7, v4, v21
-
-    long-to-int v7, v7
-
-    move/from16 p3, v2
-
-    move/from16 v29, v3
-
-    const/16 v8, 0x20
-
-    shr-long v2, v4, v8
-
-    long-to-int v2, v2
-
-    sub-int v3, v7, v2
-
-    const/4 v8, 0x1
-
-    if-eq v3, v8, :cond_10
-
-    const/4 v8, -0x2
-
-    goto :goto_b
-
-    :cond_10
-    move v8, v2
-
-    :goto_b
-    invoke-virtual {v1, v14, v8}, Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridLaneInfo;->setLane(II)V
-
-    .line 460
-    invoke-static {v12, v4, v5}, Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridMeasureKt;->maxInRange-jy6DScQ([IJ)I
-
-    move-result v1
-
-    invoke-virtual {v13}, Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridMeasuredItem;->getSizeWithSpacings()I
-
-    move-result v4
-
-    add-int/2addr v1, v4
-
-    move v4, v2
-
-    :goto_c
-    if-ge v4, v7, :cond_11
-
-    .line 462
-    aput v1, v12, v4
-
-    .line 463
-    aput v14, v10, v4
-
-    .line 464
-    aget-object v5, v9, v4
-
-    invoke-virtual {v5, v13}, Lkotlin/collections/ArrayDeque;->addLast(Ljava/lang/Object;)V
-
-    add-int/lit8 v4, v4, 0x1
-
-    goto :goto_c
-
-    .line 467
-    :cond_11
-    aget v1, v12, v2
-
-    invoke-virtual/range {p0 .. p0}, Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridMeasureContext;->getMainAxisSpacing()I
-
-    move-result v2
-
-    add-int v2, v29, v2
-
-    if-gt v1, v2, :cond_12
-
-    const/4 v1, 0x0
-
-    .line 468
-    invoke-virtual {v13, v1}, Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridMeasuredItem;->setVisible(Z)V
-
-    :cond_12
-    const/4 v1, 0x1
-
-    if-eq v3, v1, :cond_14
-
-    .line 474
-    invoke-virtual/range {p0 .. p0}, Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridMeasureContext;->getLaneCount()I
-
-    move-result v4
-
-    goto :goto_d
-
-    :cond_13
-    move/from16 v26, v1
-
-    move/from16 p3, v2
-
-    move/from16 v29, v3
-
-    move/from16 p1, v4
-
-    move-object/from16 v25, v5
-
-    move-object/from16 v27, v7
-
-    move-object/from16 v28, v8
-
-    :cond_14
-    move/from16 v4, p1
-
-    :goto_d
-    move/from16 v2, p3
-
-    move/from16 v13, v24
-
-    move-object/from16 v5, v25
-
-    move/from16 v1, v26
-
-    move-object/from16 v7, v27
-
-    move-object/from16 v8, v28
-
-    move/from16 v3, v29
-
-    goto/16 :goto_a
-
-    :cond_15
-    move/from16 v26, v1
-
-    move/from16 p3, v2
-
-    move/from16 v29, v3
-
-    move-object/from16 v25, v5
-
-    move-object/from16 v27, v7
-
-    move-object/from16 v28, v8
-
-    :goto_e
-    const/4 v1, 0x0
-
-    :goto_f
-    if-ge v1, v11, :cond_18
-
-    .line 1246
-    aget v2, v12, v1
-
-    move/from16 v3, p3
-
-    if-lt v2, v3, :cond_17
-
-    if-gtz v2, :cond_16
-
-    goto :goto_10
-
-    :cond_16
-    add-int/lit8 v1, v1, 0x1
-
-    move/from16 p3, v3
-
-    goto :goto_f
-
-    :cond_17
-    :goto_10
-    const/4 v1, 0x0
-
-    const/4 v2, 0x1
-
-    const/4 v4, 0x0
-
-    goto :goto_12
-
-    :cond_18
-    move/from16 v3, p3
-
-    const/4 v1, 0x0
-
-    :goto_11
-    if-ge v1, v6, :cond_17
-
-    .line 1248
-    aget-object v2, v9, v1
-
-    .line 493
-    invoke-virtual {v2}, Lkotlin/collections/ArrayDeque;->isEmpty()Z
-
-    move-result v2
-
-    if-nez v2, :cond_19
-
-    const/4 v2, 0x1
-
-    goto :goto_13
-
-    :cond_19
-    add-int/lit8 v1, v1, 0x1
-
-    goto :goto_11
-
-    .line 495
-    :goto_12
-    invoke-static {v12, v4, v2, v1}, Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridMeasureKt;->indexOfMinValue$default([IIILjava/lang/Object;)I
+    invoke-virtual {v4}, Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridMeasuredItem;->getIndex()I
 
     move-result v5
 
-    .line 496
-    invoke-static {v10}, Lkotlin/collections/ArraysKt;->maxOrThrow([I)I
+    invoke-virtual {v1, v5}, Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridLaneInfo;->getGaps(I)[I
 
-    move-result v1
-
-    add-int/2addr v1, v2
-
-    if-lt v1, v15, :cond_4f
-
-    :goto_13
-    const/4 v1, 0x0
-
-    :goto_14
-    if-ge v1, v6, :cond_1e
-
-    .line 538
-    aget-object v4, v9, v1
-
-    .line 540
-    :goto_15
-    invoke-virtual {v4}, Lkotlin/collections/ArrayDeque;->size()I
-
-    move-result v5
-
-    if-le v5, v2, :cond_1c
-
-    invoke-virtual {v4}, Lkotlin/collections/ArrayDeque;->first()Ljava/lang/Object;
-
-    move-result-object v5
-
-    check-cast v5, Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridMeasuredItem;
-
-    invoke-virtual {v5}, Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridMeasuredItem;->isVisible()Z
-
-    move-result v5
-
-    if-nez v5, :cond_1c
-
-    .line 541
-    invoke-virtual {v4}, Lkotlin/collections/ArrayDeque;->removeFirst()Ljava/lang/Object;
-
-    move-result-object v5
-
-    check-cast v5, Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridMeasuredItem;
-
-    .line 542
-    invoke-virtual {v5}, Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridMeasuredItem;->getSpan()I
-
-    move-result v7
-
-    if-eq v7, v2, :cond_1a
-
-    invoke-virtual/range {p0 .. p0}, Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridMeasureContext;->getLaneInfo()Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridLaneInfo;
-
-    move-result-object v2
-
-    invoke-virtual {v5}, Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridMeasuredItem;->getIndex()I
-
-    move-result v7
-
-    invoke-virtual {v2, v7}, Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridLaneInfo;->getGaps(I)[I
-
-    move-result-object v2
-
-    goto :goto_16
-
-    :cond_1a
-    const/4 v2, 0x0
-
-    .line 543
-    :goto_16
-    aget v7, v28, v1
-
-    .line 544
-    invoke-virtual {v5}, Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridMeasuredItem;->getSizeWithSpacings()I
-
-    move-result v5
-
-    if-nez v2, :cond_1b
-
-    const/4 v2, 0x0
-
-    goto :goto_17
-
-    :cond_1b
-    aget v2, v2, v1
-
-    :goto_17
-    add-int/2addr v5, v2
-
-    sub-int/2addr v7, v5
-
-    .line 543
-    aput v7, v28, v1
-
-    const/4 v2, 0x1
-
-    goto :goto_15
-
-    .line 547
-    :cond_1c
-    invoke-virtual {v4}, Lkotlin/collections/ArrayDeque;->firstOrNull()Ljava/lang/Object;
-
-    move-result-object v2
-
-    check-cast v2, Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridMeasuredItem;
-
-    if-eqz v2, :cond_1d
-
-    invoke-virtual {v2}, Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridMeasuredItem;->getIndex()I
-
-    move-result v2
+    move-result-object v1
 
     goto :goto_18
 
-    :cond_1d
-    const/4 v2, -0x1
-
-    :goto_18
-    aput v2, v27, v1
-
-    add-int/lit8 v1, v1, 0x1
-
-    const/4 v2, 0x1
-
-    goto :goto_14
-
-    .line 1277
-    :cond_1e
-    array-length v1, v10
-
-    const/4 v2, 0x0
-
-    :goto_19
-    if-ge v2, v1, :cond_20
-
-    aget v4, v10, v2
-
-    add-int/lit8 v5, v15, -0x1
-
-    if-ne v4, v5, :cond_1f
-
-    .line 551
-    invoke-virtual/range {p0 .. p0}, Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridMeasureContext;->getMainAxisSpacing()I
-
-    move-result v1
-
-    neg-int v1, v1
-
-    invoke-static {v12, v1}, Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridMeasureKt;->offsetBy([II)V
-
-    goto :goto_1a
-
-    :cond_1f
-    add-int/lit8 v2, v2, 0x1
-
-    goto :goto_19
-
-    :cond_20
-    :goto_1a
+    :cond_1b
     const/4 v1, 0x0
 
-    :goto_1b
-    if-ge v1, v11, :cond_22
+    .line 570
+    :goto_18
+    aget v5, v30, v0
 
-    .line 1287
-    aget v2, v12, v1
-
-    .line 564
-    invoke-virtual/range {p0 .. p0}, Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridMeasureContext;->getMainAxisAvailableSize()I
+    .line 571
+    invoke-virtual {v4}, Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridMeasuredItem;->getSizeWithSpacings()I
 
     move-result v4
 
-    if-ge v2, v4, :cond_21
+    if-nez v1, :cond_1c
 
+    const/4 v1, 0x0
+
+    goto :goto_19
+
+    :cond_1c
+    aget v1, v1, v0
+
+    :goto_19
+    add-int/2addr v4, v1
+
+    sub-int/2addr v5, v4
+
+    .line 570
+    aput v5, v30, v0
+
+    const/4 v1, 0x1
+
+    goto :goto_17
+
+    .line 574
+    :cond_1d
+    invoke-virtual {v2}, Lkotlin/collections/ArrayDeque;->firstOrNull()Ljava/lang/Object;
+
+    move-result-object v1
+
+    check-cast v1, Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridMeasuredItem;
+
+    if-eqz v1, :cond_1e
+
+    invoke-virtual {v1}, Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridMeasuredItem;->getIndex()I
+
+    move-result v1
+
+    goto :goto_1a
+
+    :cond_1e
+    const/4 v1, -0x1
+
+    :goto_1a
+    aput v1, v29, v0
+
+    add-int/lit8 v0, v0, 0x1
+
+    const/4 v1, 0x1
+
+    goto :goto_16
+
+    .line 1344
+    :cond_1f
+    array-length v0, v10
+
+    const/4 v1, 0x0
+
+    :goto_1b
+    if-ge v1, v0, :cond_21
+
+    aget v2, v10, v1
+
+    add-int/lit8 v4, v15, -0x1
+
+    if-ne v2, v4, :cond_20
+
+    .line 579
+    invoke-virtual/range {p0 .. p0}, Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridMeasureContext;->getMainAxisSpacing()I
+
+    move-result v0
+
+    neg-int v0, v0
+
+    invoke-static {v12, v0}, Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridMeasureKt;->offsetBy([II)V
+
+    goto :goto_1c
+
+    :cond_20
     add-int/lit8 v1, v1, 0x1
 
     goto :goto_1b
 
     :cond_21
-    move-object/from16 p1, v10
+    :goto_1c
+    const/4 v0, 0x0
 
-    move/from16 v24, v11
+    :goto_1d
+    if-ge v0, v11, :cond_23
 
-    move/from16 v1, v26
+    .line 1354
+    aget v1, v12, v0
 
-    move-object/from16 v8, v27
-
-    move-object/from16 v4, v28
-
-    const/4 v14, 0x0
-
-    move/from16 v26, v15
-
-    goto/16 :goto_24
-
-    .line 565
-    :cond_22
-    invoke-static {v12}, Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridMeasureKt;->indexOfMaxValue([I)I
-
-    move-result v1
-
-    .line 566
+    .line 592
     invoke-virtual/range {p0 .. p0}, Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridMeasureContext;->getMainAxisAvailableSize()I
 
     move-result v2
 
-    aget v1, v12, v1
+    if-ge v1, v2, :cond_22
 
-    sub-int/2addr v2, v1
+    add-int/lit8 v0, v0, 0x1
 
-    neg-int v1, v2
+    goto :goto_1d
 
-    move-object/from16 v4, v28
+    :cond_22
+    move-object/from16 v8, p0
 
-    .line 567
-    invoke-static {v4, v1}, Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridMeasureKt;->offsetBy([II)V
+    move/from16 p2, v3
 
-    .line 568
-    invoke-static {v12, v2}, Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridMeasureKt;->offsetBy([II)V
+    move-object/from16 v24, v10
 
-    const/4 v1, 0x0
+    move/from16 v25, v11
 
-    .line 1289
-    :goto_1c
-    array-length v5, v4
+    move/from16 v1, v28
 
-    const/4 v7, 0x0
+    move-object/from16 v7, v29
 
-    :goto_1d
-    if-ge v7, v5, :cond_30
+    move-object/from16 v5, v30
 
-    aget v8, v4, v7
+    const/4 v10, 0x0
 
-    .line 572
-    invoke-virtual/range {p0 .. p0}, Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridMeasureContext;->getBeforeContentPadding()I
+    goto/16 :goto_2b
 
-    move-result v13
-
-    if-ge v8, v13, :cond_2f
-
-    const/4 v8, 0x0
-
-    const/4 v13, 0x1
-
-    const/4 v14, 0x0
-
-    .line 578
-    invoke-static {v4, v14, v13, v8}, Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridMeasureKt;->indexOfMinValue$default([IIILjava/lang/Object;)I
-
-    move-result v5
-
-    .line 580
-    invoke-static/range {v27 .. v27}, Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridMeasureKt;->indexOfMaxValue([I)I
-
-    move-result v7
-
-    if-eq v5, v7, :cond_23
-
-    const/4 v1, 0x1
-
-    .line 588
+    .line 593
     :cond_23
-    aget v7, v27, v5
+    invoke-static {v12}, Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridMeasureKt;->indexOfMaxValue([I)I
 
-    const/4 v8, -0x1
+    move-result v0
 
-    if-ne v7, v8, :cond_24
-
-    move v7, v15
-
-    .line 595
-    :cond_24
-    invoke-static {v0, v7, v5}, Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridMeasureKt;->findPreviousItemIndex(Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridMeasureContext;II)I
-
-    move-result v7
-
-    if-gez v7, :cond_29
-
-    move-object/from16 v8, v27
-
-    if-nez v1, :cond_25
-
-    .line 598
-    invoke-static {v8, v0, v4, v5}, Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridMeasureKt;->measure$lambda$38$misalignedStart([ILandroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridMeasureContext;[II)Z
-
-    move-result v7
-
-    if-eqz v7, :cond_28
-
-    :cond_25
-    if-eqz p4, :cond_28
-
-    .line 599
-    invoke-virtual/range {p0 .. p0}, Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridMeasureContext;->getLaneInfo()Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridLaneInfo;
-
-    move-result-object v1
-
-    invoke-virtual {v1}, Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridLaneInfo;->reset()V
-
-    .line 602
-    array-length v1, v8
-
-    new-array v2, v1, [I
-
-    const/4 v3, 0x0
-
-    :goto_1e
-    if-ge v3, v1, :cond_26
-
-    const/4 v6, -0x1
-
-    aput v6, v2, v3
-
-    add-int/lit8 v3, v3, 0x1
-
-    goto :goto_1e
-
-    .line 603
-    :cond_26
-    array-length v1, v4
-
-    new-array v3, v1, [I
-
-    const/4 v6, 0x0
-
-    :goto_1f
-    if-ge v6, v1, :cond_27
-
-    .line 604
-    aget v7, v4, v5
-
-    aput v7, v3, v6
-
-    add-int/lit8 v6, v6, 0x1
-
-    goto :goto_1f
-
-    :cond_27
-    move/from16 v13, v26
-
-    const/4 v6, 0x0
-
-    .line 600
-    invoke-static {v0, v13, v2, v3, v6}, Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridMeasureKt;->measure(Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridMeasureContext;I[I[IZ)Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridMeasureResult;
-
-    move-result-object v0
-
-    return-object v0
-
-    :cond_28
-    move/from16 v13, v26
-
-    move/from16 p3, v2
-
-    move-object/from16 p1, v10
-
-    move/from16 v24, v11
-
-    goto/16 :goto_23
-
-    :cond_29
-    move/from16 v13, v26
-
-    move-object/from16 v8, v27
-
-    .line 612
-    invoke-virtual/range {p0 .. p0}, Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridMeasureContext;->getItemProvider()Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridItemProvider;
-
-    move-result-object v14
-
-    move-object/from16 p1, v10
-
-    move/from16 v24, v11
-
-    invoke-virtual {v0, v14, v7, v5}, Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridMeasureContext;->getSpanRange-lOCCd4c(Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridItemProvider;II)J
-
-    move-result-wide v10
-
-    .line 613
-    invoke-virtual/range {p0 .. p0}, Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridMeasureContext;->getLaneInfo()Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridLaneInfo;
-
-    move-result-object v5
-
-    move/from16 v26, v15
-
-    const-wide v21, 0xffffffffL
-
-    and-long v14, v10, v21
-
-    long-to-int v14, v14
-
-    move/from16 v27, v1
-
-    move/from16 p3, v2
-
-    const/16 v15, 0x20
-
-    shr-long v1, v10, v15
-
-    long-to-int v1, v1
-
-    sub-int v2, v14, v1
-
-    const/4 v15, 0x1
-
-    if-eq v2, v15, :cond_2a
-
-    const/4 v15, -0x2
-
-    goto :goto_20
-
-    :cond_2a
-    move v15, v1
-
-    :goto_20
-    invoke-virtual {v5, v7, v15}, Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridLaneInfo;->setLane(II)V
-
-    .line 614
-    invoke-virtual/range {p0 .. p0}, Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridMeasureContext;->getMeasuredItemProvider()Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridMeasureProvider;
-
-    move-result-object v5
-
-    invoke-virtual {v5, v7, v10, v11}, Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridMeasureProvider;->getAndMeasure-jy6DScQ(IJ)Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridMeasuredItem;
-
-    move-result-object v5
-
-    .line 619
-    invoke-static {v4, v10, v11}, Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridMeasureKt;->maxInRange-jy6DScQ([IJ)I
-
-    move-result v10
-
-    const/4 v11, 0x1
-
-    if-eq v2, v11, :cond_2b
-
-    .line 620
-    invoke-virtual/range {p0 .. p0}, Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridMeasureContext;->getLaneInfo()Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridLaneInfo;
-
-    move-result-object v2
-
-    invoke-virtual {v2, v7}, Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridLaneInfo;->getGaps(I)[I
-
-    move-result-object v2
-
-    goto :goto_21
-
-    :cond_2b
-    const/4 v2, 0x0
-
-    :goto_21
-    if-ge v1, v14, :cond_2e
-
-    .line 622
-    aget v11, v4, v1
-
-    if-eq v11, v10, :cond_2c
-
-    const/16 v27, 0x1
-
-    .line 628
-    :cond_2c
-    aget-object v11, v9, v1
-
-    invoke-virtual {v11, v5}, Lkotlin/collections/ArrayDeque;->addFirst(Ljava/lang/Object;)V
-
-    .line 629
-    aput v7, v8, v1
-
-    if-nez v2, :cond_2d
-
-    const/4 v11, 0x0
-
-    goto :goto_22
-
-    .line 630
-    :cond_2d
-    aget v11, v2, v1
-
-    .line 631
-    :goto_22
-    invoke-virtual {v5}, Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridMeasuredItem;->getSizeWithSpacings()I
-
-    move-result v15
-
-    add-int/2addr v15, v10
-
-    add-int/2addr v15, v11
-
-    aput v15, v4, v1
-
-    add-int/lit8 v1, v1, 0x1
-
-    goto :goto_21
-
-    :cond_2e
-    move-object/from16 v10, p1
-
-    move/from16 v2, p3
-
-    move/from16 v11, v24
-
-    move/from16 v15, v26
-
-    move/from16 v1, v27
-
-    move-object/from16 v27, v8
-
-    move/from16 v26, v13
-
-    goto/16 :goto_1c
-
-    :cond_2f
-    move/from16 p3, v2
-
-    move-object/from16 p1, v10
-
-    move/from16 v24, v11
-
-    move/from16 v13, v26
-
-    move-object/from16 v8, v27
-
-    move/from16 v26, v15
-
-    add-int/lit8 v7, v7, 0x1
-
-    move/from16 v26, v13
-
-    goto/16 :goto_1d
-
-    :cond_30
-    move/from16 p3, v2
-
-    move-object/from16 p1, v10
-
-    move/from16 v24, v11
-
-    move/from16 v13, v26
-
-    move-object/from16 v8, v27
-
-    :goto_23
-    move/from16 v26, v15
-
-    if-eqz v1, :cond_31
-
-    if-eqz p4, :cond_31
-
-    .line 639
-    invoke-virtual/range {p0 .. p0}, Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridMeasureContext;->getLaneInfo()Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridLaneInfo;
-
-    move-result-object v1
-
-    invoke-virtual {v1}, Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridLaneInfo;->reset()V
-
-    const/4 v1, 0x0
-
-    .line 640
-    invoke-static {v0, v13, v8, v4, v1}, Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridMeasureKt;->measure(Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridMeasureContext;I[I[IZ)Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridMeasureResult;
-
-    move-result-object v0
-
-    return-object v0
-
-    :cond_31
-    const/4 v1, 0x0
-
-    add-int v2, v13, p3
-
-    const/4 v5, 0x1
-
-    const/4 v14, 0x0
-
-    .line 650
-    invoke-static {v4, v1, v5, v14}, Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridMeasureKt;->indexOfMinValue$default([IIILjava/lang/Object;)I
-
-    move-result v7
-
-    .line 651
-    aget v1, v4, v7
-
-    if-gez v1, :cond_32
-
-    add-int/2addr v2, v1
-
-    .line 654
-    invoke-static {v12, v1}, Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridMeasureKt;->offsetBy([II)V
-
-    neg-int v1, v1
-
-    .line 655
-    invoke-static {v4, v1}, Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridMeasureKt;->offsetBy([II)V
-
-    :cond_32
-    move v1, v2
-
-    .line 671
-    :goto_24
-    invoke-virtual/range {p0 .. p0}, Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridMeasureContext;->getState()Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridState;
-
-    move-result-object v2
-
-    invoke-virtual {v2}, Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridState;->getScrollToBeConsumed$foundation_release()F
-
-    move-result v2
-
-    invoke-static {v2}, Lkotlin/math/MathKt;->roundToInt(F)I
-
-    move-result v2
-
-    invoke-static {v2}, Lkotlin/math/MathKt;->getSign(I)I
-
-    move-result v2
-
-    invoke-static {v1}, Lkotlin/math/MathKt;->getSign(I)I
-
-    move-result v5
-
-    if-ne v2, v5, :cond_33
-
-    .line 672
-    invoke-virtual/range {p0 .. p0}, Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridMeasureContext;->getState()Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridState;
-
-    move-result-object v2
-
-    invoke-virtual {v2}, Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridState;->getScrollToBeConsumed$foundation_release()F
-
-    move-result v2
-
-    invoke-static {v2}, Lkotlin/math/MathKt;->roundToInt(F)I
-
-    move-result v2
-
-    invoke-static {v2}, Ljava/lang/Math;->abs(I)I
-
-    move-result v2
-
-    invoke-static {v1}, Ljava/lang/Math;->abs(I)I
-
-    move-result v5
-
-    if-lt v2, v5, :cond_33
-
-    int-to-float v1, v1
-
-    goto :goto_25
-
-    .line 676
-    :cond_33
-    invoke-virtual/range {p0 .. p0}, Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridMeasureContext;->getState()Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridState;
-
-    move-result-object v1
-
-    invoke-virtual {v1}, Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridState;->getScrollToBeConsumed$foundation_release()F
+    .line 594
+    invoke-virtual/range {p0 .. p0}, Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridMeasureContext;->getMainAxisAvailableSize()I
 
     move-result v1
 
-    .line 679
-    :goto_25
-    array-length v2, v4
+    aget v0, v12, v0
 
-    invoke-static {v4, v2}, Ljava/util/Arrays;->copyOf([II)[I
+    sub-int/2addr v1, v0
 
-    move-result-object v2
+    neg-int v0, v1
 
-    move-object/from16 v7, v25
+    move-object/from16 v5, v30
 
-    invoke-static {v2, v7}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
+    .line 595
+    invoke-static {v5, v0}, Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridMeasureKt;->offsetBy([II)V
 
-    .line 1320
-    array-length v5, v2
+    .line 596
+    invoke-static {v12, v1}, Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridMeasureKt;->offsetBy([II)V
+
+    const/4 v0, 0x0
+
+    .line 1356
+    :goto_1e
+    array-length v2, v5
+
+    const/4 v4, 0x0
+
+    :goto_1f
+    if-ge v4, v2, :cond_35
+
+    aget v7, v5, v4
+
+    .line 600
+    invoke-virtual/range {p0 .. p0}, Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridMeasureContext;->getBeforeContentPadding()I
+
+    move-result v8
+
+    if-ge v7, v8, :cond_24
+
+    const/4 v7, 0x1
+
+    goto :goto_20
+
+    :cond_24
+    const/4 v7, 0x0
+
+    :goto_20
+    if-eqz v7, :cond_34
 
     const/4 v7, 0x0
 
-    :goto_26
-    if-ge v7, v5, :cond_34
+    const/4 v8, 0x1
 
-    .line 1321
-    aget v10, v2, v7
+    const/4 v13, 0x0
 
-    neg-int v10, v10
+    .line 606
+    invoke-static {v5, v13, v8, v7}, Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridMeasureKt;->indexOfMinValue$default([IIILjava/lang/Object;)I
 
-    aput v10, v2, v7
+    move-result v2
 
-    add-int/lit8 v7, v7, 0x1
+    .line 607
+    invoke-static/range {v29 .. v29}, Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridMeasureKt;->indexOfMaxValue([I)I
+
+    move-result v4
+
+    if-eq v2, v4, :cond_26
+
+    .line 610
+    aget v7, v5, v2
+
+    aget v8, v5, v4
+
+    if-ne v7, v8, :cond_25
+
+    move v2, v4
+
+    goto :goto_21
+
+    :cond_25
+    const/4 v0, 0x1
+
+    .line 624
+    :cond_26
+    :goto_21
+    aget v4, v29, v2
+
+    const/4 v7, -0x1
+
+    if-ne v4, v7, :cond_27
+
+    move-object/from16 v8, p0
+
+    move v4, v15
+
+    goto :goto_22
+
+    :cond_27
+    move-object/from16 v8, p0
+
+    .line 631
+    :goto_22
+    invoke-static {v8, v4, v2}, Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridMeasureKt;->findPreviousItemIndex(Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridMeasureContext;II)I
+
+    move-result v4
+
+    if-gez v4, :cond_2c
+
+    move-object/from16 v7, v29
+
+    if-nez v0, :cond_28
+
+    .line 634
+    invoke-static {v7, v8, v5, v2}, Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridMeasureKt;->measure$lambda$38$misalignedStart([ILandroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridMeasureContext;[II)Z
+
+    move-result v4
+
+    if-eqz v4, :cond_2b
+
+    :cond_28
+    if-eqz p4, :cond_2b
+
+    .line 635
+    invoke-virtual/range {p0 .. p0}, Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridMeasureContext;->getLaneInfo()Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridLaneInfo;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridLaneInfo;->reset()V
+
+    .line 638
+    array-length v0, v7
+
+    new-array v1, v0, [I
+
+    const/4 v3, 0x0
+
+    :goto_23
+    if-ge v3, v0, :cond_29
+
+    const/4 v4, -0x1
+
+    aput v4, v1, v3
+
+    add-int/lit8 v3, v3, 0x1
+
+    goto :goto_23
+
+    .line 639
+    :cond_29
+    array-length v0, v5
+
+    new-array v3, v0, [I
+
+    const/4 v4, 0x0
+
+    :goto_24
+    if-ge v4, v0, :cond_2a
+
+    .line 640
+    aget v6, v5, v2
+
+    aput v6, v3, v4
+
+    add-int/lit8 v4, v4, 0x1
+
+    goto :goto_24
+
+    :cond_2a
+    move/from16 v14, v28
+
+    const/4 v4, 0x0
+
+    .line 636
+    invoke-static {v8, v14, v1, v3, v4}, Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridMeasureKt;->measure(Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridMeasureContext;I[I[IZ)Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridMeasureResult;
+
+    move-result-object v0
+
+    return-object v0
+
+    :cond_2b
+    move/from16 v14, v28
+
+    move/from16 v28, v1
+
+    move/from16 p2, v3
+
+    move-object/from16 v24, v10
+
+    move/from16 v25, v11
+
+    goto/16 :goto_2a
+
+    :cond_2c
+    move/from16 v14, v28
+
+    move-object/from16 v7, v29
+
+    .line 648
+    invoke-virtual/range {p0 .. p0}, Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridMeasureContext;->getItemProvider()Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridItemProvider;
+
+    move-result-object v13
+
+    move/from16 p2, v3
+
+    invoke-virtual {v8, v13, v4, v2}, Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridMeasureContext;->getSpanRange-lOCCd4c(Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridItemProvider;II)J
+
+    move-result-wide v2
+
+    .line 649
+    invoke-virtual/range {p0 .. p0}, Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridMeasureContext;->getLaneInfo()Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridLaneInfo;
+
+    move-result-object v13
+
+    move-object/from16 v24, v10
+
+    move/from16 v25, v11
+
+    const-wide v22, 0xffffffffL
+
+    and-long v10, v2, v22
+
+    long-to-int v10, v10
+
+    move/from16 v29, v0
+
+    move/from16 v28, v1
+
+    const/16 v11, 0x20
+
+    shr-long v0, v2, v11
+
+    long-to-int v0, v0
+
+    sub-int v1, v10, v0
+
+    const/4 v11, 0x1
+
+    if-eq v1, v11, :cond_2d
+
+    move/from16 v20, v11
+
+    goto :goto_25
+
+    :cond_2d
+    const/16 v20, 0x0
+
+    :goto_25
+    if-eqz v20, :cond_2e
+
+    const/4 v11, -0x2
 
     goto :goto_26
 
-    .line 684
+    :cond_2e
+    move v11, v0
+
+    :goto_26
+    invoke-virtual {v13, v4, v11}, Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridLaneInfo;->setLane(II)V
+
+    .line 650
+    invoke-virtual/range {p0 .. p0}, Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridMeasureContext;->getMeasuredItemProvider()Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridMeasureProvider;
+
+    move-result-object v11
+
+    invoke-virtual {v11, v4, v2, v3}, Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridMeasureProvider;->getAndMeasure-jy6DScQ(IJ)Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridMeasuredItem;
+
+    move-result-object v11
+
+    .line 655
+    invoke-static {v5, v2, v3}, Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridMeasureKt;->maxInRange-jy6DScQ([IJ)I
+
+    move-result v2
+
+    const/4 v3, 0x1
+
+    if-eq v1, v3, :cond_2f
+
+    const/4 v1, 0x1
+
+    goto :goto_27
+
+    :cond_2f
+    const/4 v1, 0x0
+
+    :goto_27
+    if-eqz v1, :cond_30
+
+    .line 656
+    invoke-virtual/range {p0 .. p0}, Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridMeasureContext;->getLaneInfo()Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridLaneInfo;
+
+    move-result-object v1
+
+    invoke-virtual {v1, v4}, Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridLaneInfo;->getGaps(I)[I
+
+    move-result-object v1
+
+    goto :goto_28
+
+    :cond_30
+    const/4 v1, 0x0
+
+    :goto_28
+    if-ge v0, v10, :cond_33
+
+    .line 658
+    aget v3, v5, v0
+
+    if-eq v3, v2, :cond_31
+
+    const/16 v29, 0x1
+
+    .line 664
+    :cond_31
+    aget-object v3, v9, v0
+
+    invoke-virtual {v3, v11}, Lkotlin/collections/ArrayDeque;->addFirst(Ljava/lang/Object;)V
+
+    .line 665
+    aput v4, v7, v0
+
+    if-nez v1, :cond_32
+
+    const/4 v3, 0x0
+
+    goto :goto_29
+
+    .line 666
+    :cond_32
+    aget v3, v1, v0
+
+    .line 667
+    :goto_29
+    invoke-virtual {v11}, Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridMeasuredItem;->getSizeWithSpacings()I
+
+    move-result v13
+
+    add-int/2addr v13, v2
+
+    add-int/2addr v13, v3
+
+    aput v13, v5, v0
+
+    add-int/lit8 v0, v0, 0x1
+
+    goto :goto_28
+
+    :cond_33
+    move/from16 v3, p2
+
+    move-object/from16 v10, v24
+
+    move/from16 v11, v25
+
+    move/from16 v1, v28
+
+    move/from16 v0, v29
+
+    move-object/from16 v29, v7
+
+    move/from16 v28, v14
+
+    goto/16 :goto_1e
+
     :cond_34
+    move-object/from16 v8, p0
+
+    move/from16 p2, v3
+
+    move-object/from16 v24, v10
+
+    move/from16 v25, v11
+
+    move/from16 v14, v28
+
+    move-object/from16 v7, v29
+
+    move/from16 v28, v1
+
+    add-int/lit8 v4, v4, 0x1
+
+    move/from16 v28, v14
+
+    goto/16 :goto_1f
+
+    :cond_35
+    move-object/from16 v8, p0
+
+    move/from16 p2, v3
+
+    move-object/from16 v24, v10
+
+    move/from16 v25, v11
+
+    move/from16 v14, v28
+
+    move-object/from16 v7, v29
+
+    move/from16 v28, v1
+
+    :goto_2a
+    if-eqz v0, :cond_36
+
+    if-eqz p4, :cond_36
+
+    .line 675
+    invoke-virtual/range {p0 .. p0}, Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridMeasureContext;->getLaneInfo()Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridLaneInfo;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridLaneInfo;->reset()V
+
+    const/4 v0, 0x0
+
+    .line 676
+    invoke-static {v8, v14, v7, v5, v0}, Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridMeasureKt;->measure(Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridMeasureContext;I[I[IZ)Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridMeasureResult;
+
+    move-result-object v0
+
+    return-object v0
+
+    :cond_36
+    const/4 v0, 0x0
+
+    add-int v1, v14, v28
+
+    const/4 v2, 0x1
+
+    const/4 v10, 0x0
+
+    .line 686
+    invoke-static {v5, v0, v2, v10}, Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridMeasureKt;->indexOfMinValue$default([IIILjava/lang/Object;)I
+
+    move-result v3
+
+    .line 687
+    aget v0, v5, v3
+
+    if-gez v0, :cond_37
+
+    add-int/2addr v1, v0
+
+    .line 690
+    invoke-static {v12, v0}, Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridMeasureKt;->offsetBy([II)V
+
+    neg-int v0, v0
+
+    .line 691
+    invoke-static {v5, v0}, Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridMeasureKt;->offsetBy([II)V
+
+    .line 707
+    :cond_37
+    :goto_2b
+    invoke-virtual/range {p0 .. p0}, Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridMeasureContext;->getState()Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridState;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridState;->getScrollToBeConsumed$foundation_release()F
+
+    move-result v0
+
+    invoke-static {v0}, Lkotlin/math/MathKt;->roundToInt(F)I
+
+    move-result v0
+
+    invoke-static {v0}, Lkotlin/math/MathKt;->getSign(I)I
+
+    move-result v0
+
+    invoke-static {v1}, Lkotlin/math/MathKt;->getSign(I)I
+
+    move-result v2
+
+    if-ne v0, v2, :cond_38
+
+    .line 708
+    invoke-virtual/range {p0 .. p0}, Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridMeasureContext;->getState()Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridState;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridState;->getScrollToBeConsumed$foundation_release()F
+
+    move-result v0
+
+    invoke-static {v0}, Lkotlin/math/MathKt;->roundToInt(F)I
+
+    move-result v0
+
+    invoke-static {v0}, Ljava/lang/Math;->abs(I)I
+
+    move-result v0
+
+    invoke-static {v1}, Ljava/lang/Math;->abs(I)I
+
+    move-result v2
+
+    if-lt v0, v2, :cond_38
+
+    int-to-float v0, v1
+
+    goto :goto_2c
+
+    .line 712
+    :cond_38
+    invoke-virtual/range {p0 .. p0}, Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridMeasureContext;->getState()Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridState;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridState;->getScrollToBeConsumed$foundation_release()F
+
+    move-result v0
+
+    .line 715
+    :goto_2c
+    array-length v1, v5
+
+    invoke-static {v5, v1}, Ljava/util/Arrays;->copyOf([II)[I
+
+    move-result-object v1
+
+    move-object/from16 v11, v27
+
+    invoke-static {v1, v11}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 1387
+    array-length v2, v1
+
+    const/4 v3, 0x0
+
+    :goto_2d
+    if-ge v3, v2, :cond_39
+
+    .line 1388
+    aget v4, v1, v3
+
+    neg-int v4, v4
+
+    aput v4, v1, v3
+
+    add-int/lit8 v3, v3, 0x1
+
+    goto :goto_2d
+
+    .line 720
+    :cond_39
     invoke-virtual/range {p0 .. p0}, Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridMeasureContext;->getBeforeContentPadding()I
 
-    move-result v5
+    move-result v2
 
     invoke-virtual/range {p0 .. p0}, Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridMeasureContext;->getMainAxisSpacing()I
 
-    move-result v7
+    move-result v3
 
-    if-le v5, v7, :cond_37
+    if-le v2, v3, :cond_3c
 
-    const/4 v5, 0x0
+    const/4 v2, 0x0
 
-    :goto_27
-    if-ge v5, v6, :cond_37
+    :goto_2e
+    if-ge v2, v6, :cond_3c
 
-    .line 686
-    aget-object v7, v9, v5
+    .line 722
+    aget-object v3, v9, v2
 
-    .line 687
-    invoke-virtual {v7}, Lkotlin/collections/ArrayDeque;->size()I
+    .line 723
+    invoke-virtual {v3}, Lkotlin/collections/ArrayDeque;->size()I
 
-    move-result v10
+    move-result v4
 
     const/4 v11, 0x0
 
-    :goto_28
-    if-ge v11, v10, :cond_36
+    :goto_2f
+    if-ge v11, v4, :cond_3b
 
-    .line 688
-    invoke-virtual {v7, v11}, Lkotlin/collections/ArrayDeque;->get(I)Ljava/lang/Object;
+    .line 724
+    invoke-virtual {v3, v11}, Lkotlin/collections/ArrayDeque;->get(I)Ljava/lang/Object;
 
     move-result-object v13
 
     check-cast v13, Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridMeasuredItem;
 
-    .line 689
+    .line 725
     invoke-virtual/range {p0 .. p0}, Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridMeasureContext;->getLaneInfo()Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridLaneInfo;
-
-    move-result-object v15
-
-    invoke-virtual {v13}, Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridMeasuredItem;->getIndex()I
-
-    move-result v14
-
-    invoke-virtual {v15, v14}, Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridLaneInfo;->getGaps(I)[I
 
     move-result-object v14
 
-    .line 690
+    invoke-virtual {v13}, Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridMeasuredItem;->getIndex()I
+
+    move-result v10
+
+    invoke-virtual {v14, v10}, Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridLaneInfo;->getGaps(I)[I
+
+    move-result-object v10
+
+    .line 726
     invoke-virtual {v13}, Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridMeasuredItem;->getSizeWithSpacings()I
 
     move-result v13
 
-    if-nez v14, :cond_35
+    if-nez v10, :cond_3a
 
-    const/4 v14, 0x0
+    const/4 v10, 0x0
 
-    goto :goto_29
+    goto :goto_30
 
-    :cond_35
-    aget v14, v14, v5
+    :cond_3a
+    aget v10, v10, v2
 
-    :goto_29
-    add-int/2addr v13, v14
+    :goto_30
+    add-int/2addr v13, v10
 
-    .line 692
-    move-object v14, v7
+    .line 728
+    move-object v10, v3
 
-    check-cast v14, Ljava/util/List;
+    check-cast v10, Ljava/util/List;
 
-    invoke-static {v14}, Lkotlin/collections/CollectionsKt;->getLastIndex(Ljava/util/List;)I
-
-    move-result v14
-
-    if-eq v11, v14, :cond_36
-
-    .line 693
-    aget v14, v4, v5
-
-    if-eqz v14, :cond_36
-
-    if-lt v14, v13, :cond_36
-
-    sub-int/2addr v14, v13
-
-    .line 696
-    aput v14, v4, v5
-
-    add-int/lit8 v11, v11, 0x1
-
-    .line 697
-    invoke-virtual {v7, v11}, Lkotlin/collections/ArrayDeque;->get(I)Ljava/lang/Object;
-
-    move-result-object v13
-
-    check-cast v13, Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridMeasuredItem;
-
-    invoke-virtual {v13}, Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridMeasuredItem;->getIndex()I
-
-    move-result v13
-
-    aput v13, v8, v5
-
-    const/4 v14, 0x0
-
-    goto :goto_28
-
-    :cond_36
-    add-int/lit8 v5, v5, 0x1
-
-    const/4 v14, 0x0
-
-    goto :goto_27
-
-    .line 714
-    :cond_37
-    invoke-virtual/range {p0 .. p0}, Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridMeasureContext;->getBeforeContentPadding()I
-
-    move-result v5
-
-    invoke-virtual/range {p0 .. p0}, Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridMeasureContext;->getAfterContentPadding()I
-
-    move-result v6
-
-    add-int/2addr v5, v6
-
-    .line 715
-    invoke-virtual/range {p0 .. p0}, Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridMeasureContext;->isVertical()Z
-
-    move-result v6
-
-    if-eqz v6, :cond_38
-
-    .line 716
-    invoke-virtual/range {p0 .. p0}, Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridMeasureContext;->getConstraints-msEJaDk()J
-
-    move-result-wide v6
-
-    invoke-static {v6, v7}, Landroidx/compose/ui/unit/Constraints;->getMaxWidth-impl(J)I
-
-    move-result v6
-
-    goto :goto_2a
-
-    .line 718
-    :cond_38
-    invoke-virtual/range {p0 .. p0}, Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridMeasureContext;->getConstraints-msEJaDk()J
-
-    move-result-wide v6
-
-    invoke-static {v12}, Lkotlin/collections/ArraysKt;->maxOrThrow([I)I
+    invoke-static {v10}, Lkotlin/collections/CollectionsKt;->getLastIndex(Ljava/util/List;)I
 
     move-result v10
 
-    add-int/2addr v10, v5
+    if-eq v11, v10, :cond_3b
 
-    invoke-static {v6, v7, v10}, Landroidx/compose/ui/unit/ConstraintsKt;->constrainWidth-K40F9xA(JI)I
+    .line 729
+    aget v10, v5, v2
+
+    if-eqz v10, :cond_3b
+
+    if-lt v10, v13, :cond_3b
+
+    sub-int/2addr v10, v13
+
+    .line 732
+    aput v10, v5, v2
+
+    add-int/lit8 v11, v11, 0x1
+
+    .line 733
+    invoke-virtual {v3, v11}, Lkotlin/collections/ArrayDeque;->get(I)Ljava/lang/Object;
+
+    move-result-object v10
+
+    check-cast v10, Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridMeasuredItem;
+
+    invoke-virtual {v10}, Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridMeasuredItem;->getIndex()I
+
+    move-result v10
+
+    aput v10, v7, v2
+
+    const/4 v10, 0x0
+
+    goto :goto_2f
+
+    :cond_3b
+    add-int/lit8 v2, v2, 0x1
+
+    const/4 v10, 0x0
+
+    goto :goto_2e
+
+    .line 750
+    :cond_3c
+    invoke-virtual/range {p0 .. p0}, Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridMeasureContext;->getBeforeContentPadding()I
+
+    move-result v2
+
+    invoke-virtual/range {p0 .. p0}, Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridMeasureContext;->getAfterContentPadding()I
+
+    move-result v3
+
+    add-int/2addr v2, v3
+
+    .line 751
+    invoke-virtual/range {p0 .. p0}, Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridMeasureContext;->isVertical()Z
+
+    move-result v3
+
+    if-eqz v3, :cond_3d
+
+    .line 752
+    invoke-virtual/range {p0 .. p0}, Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridMeasureContext;->getConstraints-msEJaDk()J
+
+    move-result-wide v3
+
+    invoke-static {v3, v4}, Landroidx/compose/ui/unit/Constraints;->getMaxWidth-impl(J)I
+
+    move-result v3
+
+    goto :goto_31
+
+    .line 754
+    :cond_3d
+    invoke-virtual/range {p0 .. p0}, Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridMeasureContext;->getConstraints-msEJaDk()J
+
+    move-result-wide v3
+
+    invoke-static {v12}, Lkotlin/collections/ArraysKt;->maxOrThrow([I)I
 
     move-result v6
 
-    .line 720
-    :goto_2a
+    add-int/2addr v6, v2
+
+    invoke-static {v3, v4, v6}, Landroidx/compose/ui/unit/ConstraintsKt;->constrainWidth-K40F9xA(JI)I
+
+    move-result v3
+
+    .line 756
+    :goto_31
     invoke-virtual/range {p0 .. p0}, Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridMeasureContext;->isVertical()Z
 
-    move-result v7
+    move-result v4
 
-    if-eqz v7, :cond_39
+    if-eqz v4, :cond_3e
 
-    .line 721
+    .line 757
     invoke-virtual/range {p0 .. p0}, Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridMeasureContext;->getConstraints-msEJaDk()J
 
     move-result-wide v10
 
     invoke-static {v12}, Lkotlin/collections/ArraysKt;->maxOrThrow([I)I
 
-    move-result v7
+    move-result v4
 
-    add-int/2addr v7, v5
+    add-int/2addr v4, v2
 
-    invoke-static {v10, v11, v7}, Landroidx/compose/ui/unit/ConstraintsKt;->constrainHeight-K40F9xA(JI)I
+    invoke-static {v10, v11, v4}, Landroidx/compose/ui/unit/ConstraintsKt;->constrainHeight-K40F9xA(JI)I
 
-    move-result v5
+    move-result v2
 
-    goto :goto_2b
+    goto :goto_32
 
-    .line 723
-    :cond_39
+    .line 759
+    :cond_3e
     invoke-virtual/range {p0 .. p0}, Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridMeasureContext;->getConstraints-msEJaDk()J
 
     move-result-wide v10
 
     invoke-static {v10, v11}, Landroidx/compose/ui/unit/Constraints;->getMaxHeight-impl(J)I
 
-    move-result v5
+    move-result v2
 
-    .line 727
-    :goto_2b
+    .line 763
+    :goto_32
     invoke-virtual/range {p0 .. p0}, Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridMeasureContext;->isVertical()Z
 
-    move-result v7
+    move-result v4
 
-    if-eqz v7, :cond_3a
+    if-eqz v4, :cond_3f
 
-    move v7, v5
+    move v4, v2
 
-    goto :goto_2c
+    goto :goto_33
 
-    :cond_3a
-    move v7, v6
+    :cond_3f
+    move v4, v3
 
-    :goto_2c
+    :goto_33
     invoke-virtual/range {p0 .. p0}, Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridMeasureContext;->getMainAxisAvailableSize()I
 
-    move-result v10
+    move-result v6
 
-    invoke-static {v7, v10}, Ljava/lang/Math;->min(II)I
+    invoke-static {v4, v6}, Ljava/lang/Math;->min(II)I
 
-    move-result v7
+    move-result v4
 
-    .line 731
+    .line 767
     invoke-virtual/range {p0 .. p0}, Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridMeasureContext;->getBeforeContentPadding()I
 
-    move-result v10
+    move-result v6
 
-    sub-int/2addr v7, v10
+    sub-int/2addr v4, v6
 
     invoke-virtual/range {p0 .. p0}, Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridMeasureContext;->getAfterContentPadding()I
 
-    move-result v10
+    move-result v6
 
-    add-int/2addr v7, v10
+    add-int/2addr v4, v6
 
-    const/4 v10, 0x0
+    const/4 v6, 0x0
 
-    .line 734
-    aget v11, v2, v10
+    .line 770
+    aget v10, v1, v6
 
-    .line 1334
+    .line 1401
     invoke-virtual/range {p0 .. p0}, Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridMeasureContext;->getPinnedItems()Ljava/util/List;
 
-    move-result-object v10
+    move-result-object v6
 
-    .line 1336
-    invoke-interface {v10}, Ljava/util/List;->size()I
+    .line 1404
+    invoke-interface {v6}, Ljava/util/List;->size()I
 
-    move-result v13
+    move-result v11
 
-    const/4 v14, 0x0
+    const/4 v13, -0x1
 
-    const/4 v15, 0x0
+    add-int/2addr v11, v13
 
-    :goto_2d
-    if-ge v15, v13, :cond_3f
-
-    .line 1337
-    invoke-interface {v10, v15}, Ljava/util/List;->get(I)Ljava/lang/Object;
-
-    move-result-object v20
-
-    .line 1338
-    check-cast v20, Ljava/lang/Number;
-
-    move-object/from16 p3, v10
-
-    invoke-virtual/range {v20 .. v20}, Ljava/lang/Number;->intValue()I
-
-    move-result v10
-
-    move/from16 p4, v13
-
-    .line 745
-    invoke-virtual/range {p0 .. p0}, Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridMeasureContext;->getLaneInfo()Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridLaneInfo;
-
-    move-result-object v13
-
-    invoke-virtual {v13, v10}, Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridLaneInfo;->getLane(I)I
-
-    move-result v13
-
-    move/from16 v25, v3
-
-    const/4 v3, -0x2
-
-    if-eq v13, v3, :cond_3b
-
-    const/4 v3, -0x1
-
-    if-eq v13, v3, :cond_3b
-
-    .line 751
-    aget v3, v8, v13
-
-    if-le v3, v10, :cond_3c
-
-    goto :goto_2f
-
-    .line 1340
-    :cond_3b
-    array-length v3, v8
+    if-ltz v11, :cond_48
 
     const/4 v13, 0x0
 
-    :goto_2e
-    if-ge v13, v3, :cond_3d
+    :goto_34
+    add-int/lit8 v14, v11, -0x1
 
-    move/from16 v20, v3
-
-    aget v3, v8, v13
-
-    if-le v3, v10, :cond_3c
-
-    add-int/lit8 v13, v13, 0x1
-
-    move/from16 v3, v20
-
-    goto :goto_2e
-
-    :cond_3c
-    move-object/from16 v28, v4
-
-    const/4 v4, 0x0
-
-    goto :goto_30
-
-    .line 1342
-    :cond_3d
-    :goto_2f
-    invoke-virtual/range {p0 .. p0}, Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridMeasureContext;->getItemProvider()Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridItemProvider;
-
-    move-result-object v3
-
-    move-object/from16 v28, v4
-
-    const/4 v13, 0x0
-
-    invoke-virtual {v0, v3, v10, v13}, Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridMeasureContext;->getSpanRange-lOCCd4c(Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridItemProvider;II)J
-
-    move-result-wide v3
-
-    if-nez v14, :cond_3e
-
-    .line 1344
-    new-instance v14, Ljava/util/ArrayList;
-
-    invoke-direct {v14}, Ljava/util/ArrayList;-><init>()V
-
-    check-cast v14, Ljava/util/List;
-
-    .line 1346
-    :cond_3e
-    invoke-virtual/range {p0 .. p0}, Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridMeasureContext;->getMeasuredItemProvider()Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridMeasureProvider;
-
-    move-result-object v13
-
-    invoke-virtual {v13, v10, v3, v4}, Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridMeasureProvider;->getAndMeasure-jy6DScQ(IJ)Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridMeasuredItem;
-
-    move-result-object v3
-
-    .line 737
-    invoke-virtual {v3}, Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridMeasuredItem;->getSizeWithSpacings()I
-
-    move-result v4
-
-    sub-int/2addr v11, v4
-
-    const/4 v4, 0x0
-
-    .line 738
-    invoke-virtual {v3, v11, v4, v7}, Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridMeasuredItem;->position(III)V
-
-    .line 1348
-    invoke-interface {v14, v3}, Ljava/util/List;->add(Ljava/lang/Object;)Z
-
-    :goto_30
-    add-int/lit8 v15, v15, 0x1
-
-    move-object/from16 v10, p3
-
-    move/from16 v13, p4
-
-    move/from16 v3, v25
-
-    move-object/from16 v4, v28
-
-    goto :goto_2d
-
-    :cond_3f
-    move/from16 v25, v3
-
-    move-object/from16 v28, v4
-
-    const/4 v4, 0x0
-
-    if-nez v14, :cond_40
-
-    .line 1352
-    invoke-static {}, Lkotlin/collections/CollectionsKt;->emptyList()Ljava/util/List;
-
-    move-result-object v14
-
-    .line 757
-    :cond_40
-    invoke-static {v0, v9, v2, v7}, Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridMeasureKt;->calculateVisibleItems(Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridMeasureContext;[Lkotlin/collections/ArrayDeque;[II)Ljava/util/List;
-
-    move-result-object v15
-
-    .line 763
-    aget v2, v2, v4
-
-    .line 1355
-    invoke-virtual/range {p0 .. p0}, Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridMeasureContext;->getPinnedItems()Ljava/util/List;
-
-    move-result-object v3
-
-    .line 1357
-    invoke-interface {v3}, Ljava/util/List;->size()I
-
-    move-result v4
-
-    const/4 v9, 0x0
-
-    const/4 v10, 0x0
-
-    :goto_31
-    if-ge v10, v4, :cond_47
-
-    .line 1358
-    invoke-interface {v3, v10}, Ljava/util/List;->get(I)Ljava/lang/Object;
+    .line 1405
+    invoke-interface {v6, v11}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
     move-result-object v11
 
-    .line 1359
+    .line 1406
     check-cast v11, Ljava/lang/Number;
 
     invoke-virtual {v11}, Ljava/lang/Number;->intValue()I
 
     move-result v11
 
-    move/from16 v13, v26
+    move-object/from16 p4, v6
 
-    if-lt v11, v13, :cond_41
-
-    move-object/from16 p3, v3
-
-    move/from16 p4, v4
-
-    move/from16 v26, v13
-
-    move-object/from16 v3, p1
-
-    goto :goto_33
-
-    :cond_41
-    move-object/from16 p3, v3
-
-    .line 777
+    .line 781
     invoke-virtual/range {p0 .. p0}, Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridMeasureContext;->getLaneInfo()Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridLaneInfo;
 
-    move-result-object v3
+    move-result-object v6
 
-    invoke-virtual {v3, v11}, Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridLaneInfo;->getLane(I)I
+    invoke-virtual {v6, v11}, Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridLaneInfo;->getLane(I)I
 
-    move-result v3
+    move-result v6
 
-    move/from16 p4, v4
+    move-object/from16 v36, v5
 
-    const/4 v4, -0x2
+    const/4 v5, -0x2
 
-    if-eq v3, v4, :cond_43
+    if-eq v6, v5, :cond_42
 
-    const/4 v4, -0x1
+    const/4 v5, -0x1
 
-    if-eq v3, v4, :cond_43
+    if-eq v6, v5, :cond_42
 
-    .line 783
-    aget v3, p1, v3
+    .line 787
+    aget v5, v7, v6
 
-    if-ge v3, v11, :cond_42
+    if-le v5, v11, :cond_41
 
-    move-object/from16 v3, p1
-
-    move/from16 v26, v13
-
-    goto :goto_34
-
-    :cond_42
-    move-object/from16 v3, p1
-
-    move/from16 v26, v13
-
-    goto :goto_33
-
-    :cond_43
-    move-object/from16 v3, p1
-
-    .line 1361
-    array-length v4, v3
-
-    move/from16 v26, v13
-
-    const/4 v13, 0x0
-
-    :goto_32
-    if-ge v13, v4, :cond_45
-
-    move/from16 v20, v4
-
-    aget v4, v3, v13
-
-    if-ge v4, v11, :cond_44
-
-    add-int/lit8 v13, v13, 0x1
-
-    move/from16 v4, v20
-
-    goto :goto_32
-
-    :cond_44
-    :goto_33
-    move-object/from16 p1, v3
-
-    goto :goto_35
-
-    .line 1363
-    :cond_45
-    :goto_34
-    invoke-virtual/range {p0 .. p0}, Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridMeasureContext;->getItemProvider()Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridItemProvider;
-
-    move-result-object v4
-
-    move-object/from16 p1, v3
-
-    const/4 v13, 0x0
-
-    invoke-virtual {v0, v4, v11, v13}, Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridMeasureContext;->getSpanRange-lOCCd4c(Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridItemProvider;II)J
-
-    move-result-wide v3
-
-    if-nez v9, :cond_46
-
-    .line 1365
-    new-instance v9, Ljava/util/ArrayList;
-
-    invoke-direct {v9}, Ljava/util/ArrayList;-><init>()V
-
-    check-cast v9, Ljava/util/List;
-
-    .line 1367
-    :cond_46
-    invoke-virtual/range {p0 .. p0}, Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridMeasureContext;->getMeasuredItemProvider()Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridMeasureProvider;
-
-    move-result-object v0
-
-    invoke-virtual {v0, v11, v3, v4}, Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridMeasureProvider;->getAndMeasure-jy6DScQ(IJ)Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridMeasuredItem;
-
-    move-result-object v0
-
-    .line 766
-    invoke-virtual {v0, v2, v13, v7}, Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridMeasuredItem;->position(III)V
-
-    .line 771
-    invoke-virtual {v0}, Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridMeasuredItem;->getSizeWithSpacings()I
-
-    move-result v3
-
-    add-int/2addr v2, v3
-
-    .line 1369
-    invoke-interface {v9, v0}, Ljava/util/List;->add(Ljava/lang/Object;)Z
-
-    :goto_35
-    add-int/lit8 v10, v10, 0x1
-
-    move-object/from16 v0, p0
-
-    move-object/from16 v3, p3
-
-    move/from16 v4, p4
-
-    goto :goto_31
-
-    :cond_47
-    if-nez v9, :cond_48
-
-    .line 1373
-    invoke-static {}, Lkotlin/collections/CollectionsKt;->emptyList()Ljava/util/List;
-
-    move-result-object v9
-
-    .line 789
-    :cond_48
-    new-instance v0, Ljava/util/ArrayList;
-
-    invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
-
-    check-cast v0, Ljava/util/List;
-
-    .line 790
-    check-cast v14, Ljava/util/Collection;
-
-    invoke-interface {v0, v14}, Ljava/util/List;->addAll(Ljava/util/Collection;)Z
-
-    .line 791
-    move-object v2, v15
-
-    check-cast v2, Ljava/util/Collection;
-
-    invoke-interface {v0, v2}, Ljava/util/List;->addAll(Ljava/util/Collection;)Z
-
-    .line 792
-    check-cast v9, Ljava/util/Collection;
-
-    invoke-interface {v0, v9}, Ljava/util/List;->addAll(Ljava/util/Collection;)Z
-
-    .line 798
-    invoke-virtual/range {p0 .. p0}, Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridMeasureContext;->getState()Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridState;
-
-    move-result-object v2
-
-    invoke-virtual {v2}, Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridState;->getPlacementAnimator$foundation_release()Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridItemPlacementAnimator;
-
-    move-result-object v30
-
-    float-to-int v2, v1
-
-    .line 803
-    invoke-virtual/range {p0 .. p0}, Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridMeasureContext;->getMeasuredItemProvider()Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridMeasureProvider;
-
-    move-result-object v35
-
-    .line 804
-    invoke-virtual/range {p0 .. p0}, Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridMeasureContext;->isVertical()Z
-
-    move-result v36
-
-    .line 805
-    invoke-virtual/range {p0 .. p0}, Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridMeasureContext;->getLaneCount()I
-
-    move-result v37
-
-    move/from16 v31, v2
-
-    move/from16 v32, v6
-
-    move/from16 v33, v5
-
-    move-object/from16 v34, v0
-
-    .line 798
-    invoke-virtual/range {v30 .. v37}, Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridItemPlacementAnimator;->onMeasured(IIILjava/util/List;Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridMeasureProvider;ZI)V
-
-    const/4 v2, 0x0
-
-    .line 811
-    aget v3, v8, v2
-
-    if-nez v3, :cond_4a
-
-    aget v3, v28, v2
-
-    if-lez v3, :cond_49
-
-    goto :goto_36
-
-    :cond_49
-    const/4 v2, 0x0
-
-    goto :goto_37
-
-    :cond_4a
-    :goto_36
-    const/4 v2, 0x1
-
-    :goto_37
-    move/from16 v3, v24
-
-    const/4 v10, 0x0
-
-    :goto_38
-    if-ge v10, v3, :cond_4c
-
-    .line 1378
-    aget v4, v12, v10
-
-    .line 813
-    invoke-virtual/range {p0 .. p0}, Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridMeasureContext;->getMainAxisAvailableSize()I
-
-    move-result v7
-
-    if-le v4, v7, :cond_4b
-
-    goto :goto_3a
-
-    :cond_4b
-    add-int/lit8 v10, v10, 0x1
+    :cond_40
+    const/4 v5, 0x1
 
     goto :goto_38
 
-    :cond_4c
-    move-object/from16 v4, p1
+    :cond_41
+    :goto_35
+    const/4 v5, 0x0
 
-    .line 1380
-    array-length v3, v4
+    goto :goto_38
 
-    const/4 v10, 0x0
+    .line 1408
+    :cond_42
+    array-length v5, v7
 
-    :goto_39
-    if-ge v10, v3, :cond_4e
+    const/4 v6, 0x0
 
-    aget v7, v4, v10
+    :goto_36
+    if-ge v6, v5, :cond_40
 
-    add-int/lit8 v9, v26, -0x1
+    move/from16 v21, v5
 
-    if-ge v7, v9, :cond_4d
+    aget v5, v7, v6
 
-    add-int/lit8 v10, v10, 0x1
+    if-le v5, v11, :cond_43
+
+    const/4 v5, 0x1
+
+    goto :goto_37
+
+    :cond_43
+    const/4 v5, 0x0
+
+    :goto_37
+    if-nez v5, :cond_44
+
+    goto :goto_35
+
+    :cond_44
+    add-int/lit8 v6, v6, 0x1
+
+    move/from16 v5, v21
+
+    goto :goto_36
+
+    :goto_38
+    if-eqz v5, :cond_46
+
+    .line 1410
+    invoke-virtual/range {p0 .. p0}, Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridMeasureContext;->getItemProvider()Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridItemProvider;
+
+    move-result-object v5
+
+    move/from16 v22, v2
+
+    move/from16 v21, v3
+
+    const/4 v6, 0x0
+
+    invoke-virtual {v8, v5, v11, v6}, Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridMeasureContext;->getSpanRange-lOCCd4c(Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridItemProvider;II)J
+
+    move-result-wide v2
+
+    if-nez v13, :cond_45
+
+    .line 1412
+    new-instance v5, Ljava/util/ArrayList;
+
+    invoke-direct {v5}, Ljava/util/ArrayList;-><init>()V
+
+    move-object v13, v5
+
+    check-cast v13, Ljava/util/List;
+
+    .line 1414
+    :cond_45
+    invoke-virtual/range {p0 .. p0}, Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridMeasureContext;->getMeasuredItemProvider()Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridMeasureProvider;
+
+    move-result-object v5
+
+    invoke-virtual {v5, v11, v2, v3}, Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridMeasureProvider;->getAndMeasure-jy6DScQ(IJ)Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridMeasuredItem;
+
+    move-result-object v2
+
+    .line 773
+    invoke-virtual {v2}, Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridMeasuredItem;->getSizeWithSpacings()I
+
+    move-result v3
+
+    sub-int/2addr v10, v3
+
+    .line 774
+    invoke-virtual {v2, v10, v6, v4}, Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridMeasuredItem;->position(III)V
+
+    .line 1416
+    invoke-interface {v13, v2}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
     goto :goto_39
 
-    :cond_4d
-    const/4 v11, 0x0
+    :cond_46
+    move/from16 v22, v2
 
-    goto :goto_3b
+    move/from16 v21, v3
 
-    :cond_4e
+    :goto_39
+    if-gez v14, :cond_47
+
+    goto :goto_3a
+
+    :cond_47
+    move-object/from16 v6, p4
+
+    move v11, v14
+
+    move/from16 v3, v21
+
+    move/from16 v2, v22
+
+    move-object/from16 v5, v36
+
+    goto :goto_34
+
+    :cond_48
+    move/from16 v22, v2
+
+    move/from16 v21, v3
+
+    move-object/from16 v36, v5
+
+    const/4 v13, 0x0
+
     :goto_3a
-    const/4 v11, 0x1
+    if-nez v13, :cond_49
+
+    .line 1427
+    invoke-static {}, Lkotlin/collections/CollectionsKt;->emptyList()Ljava/util/List;
+
+    move-result-object v13
+
+    .line 794
+    :cond_49
+    invoke-static {v8, v9, v1, v4}, Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridMeasureKt;->calculateVisibleItems(Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridMeasureContext;[Lkotlin/collections/ArrayDeque;[II)Ljava/util/List;
+
+    move-result-object v2
+
+    const/4 v3, 0x0
+
+    .line 800
+    aget v1, v1, v3
+
+    .line 1430
+    invoke-virtual/range {p0 .. p0}, Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridMeasureContext;->getPinnedItems()Ljava/util/List;
+
+    move-result-object v3
+
+    .line 1450
+    invoke-interface {v3}, Ljava/util/List;->size()I
+
+    move-result v5
+
+    const/4 v10, 0x0
+
+    const/4 v14, 0x0
+
+    :goto_3b
+    if-ge v10, v5, :cond_52
+
+    .line 1451
+    invoke-interface {v3, v10}, Ljava/util/List;->get(I)Ljava/lang/Object;
+
+    move-result-object v6
+
+    .line 1452
+    check-cast v6, Ljava/lang/Number;
+
+    invoke-virtual {v6}, Ljava/lang/Number;->intValue()I
+
+    move-result v6
+
+    if-lt v6, v15, :cond_4b
+
+    :cond_4a
+    move-object/from16 p4, v3
+
+    move/from16 v23, v5
+
+    move-object/from16 v9, v24
+
+    :goto_3c
+    const/4 v3, 0x0
+
+    goto :goto_40
+
+    .line 814
+    :cond_4b
+    invoke-virtual/range {p0 .. p0}, Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridMeasureContext;->getLaneInfo()Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridLaneInfo;
+
+    move-result-object v9
+
+    invoke-virtual {v9, v6}, Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridLaneInfo;->getLane(I)I
+
+    move-result v9
+
+    const/4 v11, -0x2
+
+    if-eq v9, v11, :cond_4c
+
+    const/4 v11, -0x1
+
+    if-eq v9, v11, :cond_4c
 
     .line 820
-    :goto_3b
-    move-object/from16 v30, v23
+    aget v9, v24, v9
 
-    check-cast v30, Landroidx/compose/ui/layout/MeasureScope;
+    if-ge v9, v6, :cond_4a
+
+    move-object/from16 p4, v3
+
+    move/from16 v23, v5
+
+    move-object/from16 v9, v24
+
+    :goto_3d
+    const/4 v3, 0x1
+
+    goto :goto_40
+
+    :cond_4c
+    move-object/from16 v9, v24
+
+    .line 1437
+    array-length v11, v9
+
+    move-object/from16 p4, v3
+
+    const/4 v3, 0x0
+
+    :goto_3e
+    if-ge v3, v11, :cond_4f
+
+    move/from16 v23, v5
+
+    aget v5, v9, v3
+
+    if-ge v5, v6, :cond_4d
+
+    const/4 v5, 0x1
+
+    goto :goto_3f
+
+    :cond_4d
+    const/4 v5, 0x0
+
+    :goto_3f
+    if-nez v5, :cond_4e
+
+    goto :goto_3c
+
+    :cond_4e
+    add-int/lit8 v3, v3, 0x1
+
+    move/from16 v5, v23
+
+    goto :goto_3e
+
+    :cond_4f
+    move/from16 v23, v5
+
+    goto :goto_3d
+
+    :goto_40
+    if-eqz v3, :cond_51
+
+    .line 1439
+    invoke-virtual/range {p0 .. p0}, Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridMeasureContext;->getItemProvider()Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridItemProvider;
+
+    move-result-object v3
+
+    move-object/from16 v24, v12
+
+    const/4 v5, 0x0
+
+    invoke-virtual {v8, v3, v6, v5}, Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridMeasureContext;->getSpanRange-lOCCd4c(Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridItemProvider;II)J
+
+    move-result-wide v11
+
+    if-nez v14, :cond_50
+
+    .line 1441
+    new-instance v3, Ljava/util/ArrayList;
+
+    invoke-direct {v3}, Ljava/util/ArrayList;-><init>()V
+
+    move-object v14, v3
+
+    check-cast v14, Ljava/util/List;
+
+    .line 1443
+    :cond_50
+    invoke-virtual/range {p0 .. p0}, Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridMeasureContext;->getMeasuredItemProvider()Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridMeasureProvider;
+
+    move-result-object v3
+
+    invoke-virtual {v3, v6, v11, v12}, Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridMeasureProvider;->getAndMeasure-jy6DScQ(IJ)Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridMeasuredItem;
+
+    move-result-object v3
+
+    .line 803
+    invoke-virtual {v3, v1, v5, v4}, Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridMeasuredItem;->position(III)V
+
+    .line 808
+    invoke-virtual {v3}, Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridMeasuredItem;->getSizeWithSpacings()I
+
+    move-result v5
+
+    add-int/2addr v1, v5
+
+    .line 1445
+    invoke-interface {v14, v3}, Ljava/util/List;->add(Ljava/lang/Object;)Z
+
+    goto :goto_41
+
+    :cond_51
+    move-object/from16 v24, v12
+
+    :goto_41
+    add-int/lit8 v10, v10, 0x1
+
+    move-object/from16 v3, p4
+
+    move/from16 v5, v23
+
+    move-object/from16 v12, v24
+
+    move-object/from16 v24, v9
+
+    goto/16 :goto_3b
+
+    :cond_52
+    move-object/from16 v9, v24
+
+    move-object/from16 v24, v12
+
+    if-nez v14, :cond_53
+
+    .line 1456
+    invoke-static {}, Lkotlin/collections/CollectionsKt;->emptyList()Ljava/util/List;
+
+    move-result-object v14
+
+    .line 827
+    :cond_53
+    new-instance v1, Ljava/util/ArrayList;
+
+    invoke-direct {v1}, Ljava/util/ArrayList;-><init>()V
+
+    check-cast v1, Ljava/util/List;
+
+    .line 828
+    check-cast v13, Ljava/util/Collection;
+
+    invoke-interface {v1, v13}, Ljava/util/List;->addAll(Ljava/util/Collection;)Z
+
+    .line 829
+    move-object v3, v2
+
+    check-cast v3, Ljava/util/Collection;
+
+    invoke-interface {v1, v3}, Ljava/util/List;->addAll(Ljava/util/Collection;)Z
+
+    .line 830
+    check-cast v14, Ljava/util/Collection;
+
+    invoke-interface {v1, v14}, Ljava/util/List;->addAll(Ljava/util/Collection;)Z
+
+    .line 836
+    invoke-virtual/range {p0 .. p0}, Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridMeasureContext;->getState()Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridState;
+
+    move-result-object v3
+
+    invoke-virtual {v3}, Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridState;->getPlacementAnimator$foundation_release()Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridItemPlacementAnimator;
+
+    move-result-object v27
+
+    float-to-int v3, v0
+
+    .line 841
+    invoke-virtual/range {p0 .. p0}, Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridMeasureContext;->getMeasuredItemProvider()Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridMeasureProvider;
+
+    move-result-object v32
+
+    .line 842
+    invoke-virtual/range {p0 .. p0}, Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridMeasureContext;->isVertical()Z
+
+    move-result v33
+
+    .line 843
+    invoke-virtual/range {p0 .. p0}, Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridMeasureContext;->getLaneCount()I
+
+    move-result v34
+
+    .line 844
+    invoke-virtual/range {p0 .. p0}, Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridMeasureContext;->getCoroutineScope()Lkotlinx/coroutines/CoroutineScope;
+
+    move-result-object v35
+
+    move/from16 v28, v3
+
+    move/from16 v29, v21
+
+    move/from16 v30, v22
+
+    move-object/from16 v31, v1
+
+    .line 836
+    invoke-virtual/range {v27 .. v35}, Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridItemPlacementAnimator;->onMeasured(IIILjava/util/List;Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridMeasureProvider;ZILkotlinx/coroutines/CoroutineScope;)V
+
+    move/from16 v5, v25
+
+    const/4 v10, 0x0
+
+    :goto_42
+    if-ge v10, v5, :cond_56
+
+    .line 1461
+    aget v3, v24, v10
+
+    .line 850
+    invoke-virtual/range {p0 .. p0}, Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridMeasureContext;->getMainAxisAvailableSize()I
+
+    move-result v4
+
+    if-le v3, v4, :cond_54
+
+    const/4 v3, 0x1
+
+    goto :goto_43
+
+    :cond_54
+    const/4 v3, 0x0
+
+    :goto_43
+    if-eqz v3, :cond_55
+
+    const/4 v3, 0x1
+
+    goto :goto_44
+
+    :cond_55
+    add-int/lit8 v10, v10, 0x1
+
+    goto :goto_42
+
+    :cond_56
+    const/4 v3, 0x0
+
+    :goto_44
+    if-nez v3, :cond_5b
+
+    .line 1463
+    array-length v3, v9
+
+    const/4 v10, 0x0
+
+    :goto_45
+    if-ge v10, v3, :cond_59
+
+    aget v4, v9, v10
+
+    add-int/lit8 v5, v15, -0x1
+
+    if-ge v4, v5, :cond_57
+
+    const/4 v4, 0x1
+
+    goto :goto_46
+
+    :cond_57
+    const/4 v4, 0x0
+
+    :goto_46
+    if-nez v4, :cond_58
+
+    const/4 v3, 0x0
+
+    goto :goto_47
+
+    :cond_58
+    add-int/lit8 v10, v10, 0x1
+
+    goto :goto_45
+
+    :cond_59
+    const/4 v3, 0x1
+
+    :goto_47
+    if-eqz v3, :cond_5a
+
+    goto :goto_48
+
+    :cond_5a
+    const/4 v11, 0x0
+
+    goto :goto_49
+
+    :cond_5b
+    :goto_48
+    const/4 v11, 0x1
+
+    .line 857
+    :goto_49
+    move-object/from16 v27, v26
+
+    check-cast v27, Landroidx/compose/ui/layout/MeasureScope;
 
     new-instance v3, Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridMeasureKt$measure$1$29;
 
-    move-object/from16 v14, p0
+    invoke-direct {v3, v1, v8}, Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridMeasureKt$measure$1$29;-><init>(Ljava/util/List;Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridMeasureContext;)V
 
-    invoke-direct {v3, v0, v14}, Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridMeasureKt$measure$1$29;-><init>(Ljava/util/List;Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridMeasureContext;)V
+    move-object/from16 v31, v3
 
-    move-object/from16 v34, v3
+    check-cast v31, Lkotlin/jvm/functions/Function1;
 
-    check-cast v34, Lkotlin/jvm/functions/Function1;
-
-    const/16 v35, 0x4
-
-    const/16 v36, 0x0
+    const/16 v32, 0x4
 
     const/16 v33, 0x0
 
-    move/from16 v31, v6
+    const/16 v30, 0x0
 
-    move/from16 v32, v5
+    move/from16 v28, v21
 
-    invoke-static/range {v30 .. v36}, Landroidx/compose/ui/layout/MeasureScope;->layout$default(Landroidx/compose/ui/layout/MeasureScope;IILjava/util/Map;Lkotlin/jvm/functions/Function1;ILjava/lang/Object;)Landroidx/compose/ui/layout/MeasureResult;
+    move/from16 v29, v22
+
+    invoke-static/range {v27 .. v33}, Landroidx/compose/ui/layout/MeasureScope;->layout$default(Landroidx/compose/ui/layout/MeasureScope;IILjava/util/Map;Lkotlin/jvm/functions/Function1;ILjava/lang/Object;)Landroidx/compose/ui/layout/MeasureResult;
 
     move-result-object v10
 
-    .line 827
+    .line 866
     invoke-virtual/range {p0 .. p0}, Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridMeasureContext;->isVertical()Z
 
-    move-result v13
+    move-result v12
 
-    move/from16 v0, v26
+    move/from16 v3, v21
 
-    .line 830
-    invoke-static {v6, v5}, Landroidx/compose/ui/unit/IntSizeKt;->IntSize(II)J
+    move/from16 v1, v22
+
+    .line 870
+    invoke-static {v3, v1}, Landroidx/compose/ui/unit/IntSizeKt;->IntSize(II)J
 
     move-result-wide v16
 
-    .line 833
+    .line 873
     invoke-virtual/range {p0 .. p0}, Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridMeasureContext;->getBeforeContentPadding()I
 
     move-result v20
 
-    .line 834
+    .line 874
     invoke-virtual/range {p0 .. p0}, Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridMeasureContext;->getAfterContentPadding()I
 
     move-result v21
 
-    .line 835
+    .line 875
     invoke-virtual/range {p0 .. p0}, Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridMeasureContext;->getMainAxisSpacing()I
 
     move-result v22
 
-    .line 816
-    new-instance v3, Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridMeasureResult;
+    .line 853
+    new-instance v1, Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridMeasureResult;
 
-    move-object v6, v3
+    move-object v6, v1
 
     const/16 v23, 0x0
 
-    move-object v7, v8
+    move-object/from16 v8, v36
 
-    move-object/from16 v8, v28
+    move v9, v0
 
-    move v9, v1
+    move/from16 v13, p1
 
-    move v12, v2
+    move v14, v15
 
-    move v14, v0
+    move-object v15, v2
 
-    move/from16 v18, v29
+    move/from16 v18, p3
 
-    move/from16 v19, v25
+    move/from16 v19, p2
 
     invoke-direct/range {v6 .. v23}, Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridMeasureResult;-><init>([I[IFLandroidx/compose/ui/layout/MeasureResult;ZZZILjava/util/List;JIIIIILkotlin/jvm/internal/DefaultConstructorMarker;)V
 
-    return-object v3
+    return-object v1
 
-    :cond_4f
-    move-object v14, v0
+    :cond_5c
+    move-object/from16 v8, p0
 
-    move-object v4, v10
+    move/from16 p2, v3
 
-    move v0, v15
+    move-object v1, v10
 
-    move-object/from16 v7, v25
+    move v5, v11
 
-    move/from16 v13, v26
+    move-object/from16 v24, v12
 
-    move-object/from16 v8, v27
+    move-object/from16 v10, v27
 
-    move/from16 v25, v3
+    move/from16 v14, v28
 
-    move v3, v11
+    move-object/from16 v7, v29
 
-    .line 503
+    move-object/from16 v36, v30
+
+    const/4 v11, -0x2
+
+    .line 527
     invoke-virtual/range {p0 .. p0}, Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridMeasureContext;->getItemProvider()Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridItemProvider;
 
     move-result-object v2
 
-    invoke-virtual {v14, v2, v1, v5}, Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridMeasureContext;->getSpanRange-lOCCd4c(Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridItemProvider;II)J
+    invoke-virtual {v8, v2, v0, v4}, Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridMeasureContext;->getSpanRange-lOCCd4c(Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridItemProvider;II)J
 
-    move-result-wide v10
+    move-result-wide v2
 
-    .line 505
+    .line 529
     invoke-virtual/range {p0 .. p0}, Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridMeasureContext;->getLaneInfo()Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridLaneInfo;
 
-    move-result-object v2
+    move-result-object v4
 
-    move v15, v6
+    const-wide v22, 0xffffffffL
 
-    const-wide v21, 0xffffffffL
+    and-long v11, v2, v22
 
-    and-long v5, v10, v21
+    long-to-int v11, v11
+
+    move/from16 v25, v5
+
+    move/from16 v21, v6
+
+    const/16 v12, 0x20
+
+    shr-long v5, v2, v12
 
     long-to-int v5, v5
 
-    move-object/from16 v20, v7
+    sub-int v6, v11, v5
 
-    const/16 v6, 0x20
+    const/4 v12, 0x1
 
-    shr-long v7, v10, v6
+    if-eq v6, v12, :cond_5d
 
-    long-to-int v7, v7
+    const/4 v12, -0x2
 
-    sub-int v8, v5, v7
+    goto :goto_4a
 
-    const/4 v6, 0x1
+    :cond_5d
+    move v12, v5
 
-    if-eq v8, v6, :cond_50
+    :goto_4a
+    invoke-virtual {v4, v0, v12}, Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridLaneInfo;->setLane(II)V
 
-    const/4 v6, -0x2
-
-    goto :goto_3c
-
-    :cond_50
-    move v6, v7
-
-    :goto_3c
-    invoke-virtual {v2, v1, v6}, Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridLaneInfo;->setLane(II)V
-
-    .line 506
+    .line 530
     invoke-virtual/range {p0 .. p0}, Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridMeasureContext;->getMeasuredItemProvider()Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridMeasureProvider;
 
-    move-result-object v2
+    move-result-object v4
 
-    invoke-virtual {v2, v1, v10, v11}, Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridMeasureProvider;->getAndMeasure-jy6DScQ(IJ)Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridMeasuredItem;
+    invoke-virtual {v4, v0, v2, v3}, Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridMeasureProvider;->getAndMeasure-jy6DScQ(IJ)Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridMeasuredItem;
 
-    move-result-object v2
+    move-result-object v4
 
-    .line 508
-    invoke-static {v12, v10, v11}, Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridMeasureKt;->maxInRange-jy6DScQ([IJ)I
+    move-object/from16 v12, v24
 
-    move-result v6
+    .line 532
+    invoke-static {v12, v2, v3}, Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridMeasureKt;->maxInRange-jy6DScQ([IJ)I
 
-    const/4 v10, 0x1
+    move-result v2
 
-    if-eq v8, v10, :cond_51
+    const/4 v3, 0x1
 
-    .line 510
+    if-eq v6, v3, :cond_5e
+
+    .line 534
     invoke-virtual/range {p0 .. p0}, Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridMeasureContext;->getLaneInfo()Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridLaneInfo;
 
-    move-result-object v8
+    move-result-object v6
 
-    invoke-virtual {v8, v1}, Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridLaneInfo;->getGaps(I)[I
+    invoke-virtual {v6, v0}, Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridLaneInfo;->getGaps(I)[I
 
-    move-result-object v8
+    move-result-object v6
 
-    if-nez v8, :cond_52
+    if-nez v6, :cond_5f
 
     invoke-virtual/range {p0 .. p0}, Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridMeasureContext;->getLaneCount()I
 
-    move-result v8
+    move-result v6
 
-    new-array v8, v8, [I
+    new-array v6, v6, [I
 
-    goto :goto_3d
+    goto :goto_4b
 
-    :cond_51
-    const/4 v8, 0x0
+    :cond_5e
+    const/4 v6, 0x0
 
-    :cond_52
-    :goto_3d
-    move v11, v7
+    :cond_5f
+    :goto_4b
+    move v3, v5
 
-    :goto_3e
-    if-ge v11, v5, :cond_54
+    :goto_4c
+    if-ge v3, v11, :cond_61
 
-    if-eqz v8, :cond_53
+    if-eqz v6, :cond_60
 
-    .line 516
-    aget v19, v12, v11
+    .line 540
+    aget v24, v12, v3
 
-    sub-int v19, v6, v19
+    sub-int v24, v2, v24
 
-    aput v19, v8, v11
+    aput v24, v6, v3
 
-    .line 518
-    :cond_53
-    aput v1, v4, v11
+    .line 542
+    :cond_60
+    aput v0, v1, v3
 
-    .line 519
-    invoke-virtual {v2}, Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridMeasuredItem;->getSizeWithSpacings()I
+    .line 543
+    invoke-virtual {v4}, Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridMeasuredItem;->getSizeWithSpacings()I
 
-    move-result v19
+    move-result v24
 
-    add-int v19, v6, v19
+    add-int v24, v2, v24
 
-    aput v19, v12, v11
+    aput v24, v12, v3
 
-    .line 520
-    aget-object v10, v9, v11
+    move-object/from16 v24, v1
 
-    invoke-virtual {v10, v2}, Lkotlin/collections/ArrayDeque;->addLast(Ljava/lang/Object;)V
+    .line 544
+    aget-object v1, v9, v3
 
-    add-int/lit8 v11, v11, 0x1
+    invoke-virtual {v1, v4}, Lkotlin/collections/ArrayDeque;->addLast(Ljava/lang/Object;)V
 
-    const/4 v10, 0x1
+    add-int/lit8 v3, v3, 0x1
 
-    goto :goto_3e
+    move-object/from16 v1, v24
 
-    .line 522
-    :cond_54
+    goto :goto_4c
+
+    :cond_61
+    move-object/from16 v24, v1
+
+    .line 546
     invoke-virtual/range {p0 .. p0}, Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridMeasureContext;->getLaneInfo()Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridLaneInfo;
 
-    move-result-object v5
+    move-result-object v1
 
-    invoke-virtual {v5, v1, v8}, Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridLaneInfo;->setGaps(I[I)V
+    invoke-virtual {v1, v0, v6}, Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridLaneInfo;->setGaps(I[I)V
 
-    .line 524
-    aget v1, v12, v7
+    if-ge v2, v13, :cond_62
 
-    invoke-virtual/range {p0 .. p0}, Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridMeasureContext;->getMainAxisSpacing()I
+    .line 550
+    aget v0, v12, v5
 
-    move-result v5
+    if-gt v0, v13, :cond_62
 
-    add-int v5, v29, v5
+    const/4 v0, 0x0
 
-    if-gt v1, v5, :cond_55
+    .line 555
+    invoke-virtual {v4, v0}, Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridMeasuredItem;->setVisible(Z)V
 
-    const/4 v1, 0x0
+    :cond_62
+    move/from16 v3, p2
 
-    .line 528
-    invoke-virtual {v2, v1}, Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridMeasuredItem;->setVisible(Z)V
+    move-object/from16 v29, v7
 
-    :cond_55
-    move v11, v3
+    move-object/from16 v27, v10
 
-    move-object v10, v4
+    move/from16 v28, v14
 
-    move/from16 v26, v13
+    move/from16 v6, v21
 
-    move v6, v15
+    move-object/from16 v10, v24
 
-    move/from16 p3, v25
+    move/from16 v11, v25
 
-    move v15, v0
+    move-object/from16 v30, v36
 
-    move-object v0, v14
+    move/from16 v24, v15
 
-    move-object/from16 v25, v20
+    goto/16 :goto_10
 
-    goto/16 :goto_e
+    :cond_63
+    :goto_4d
+    move-object v8, v0
 
-    :cond_56
-    :goto_3f
-    move-object v14, v0
+    move-object/from16 v26, v4
 
-    move-object/from16 v23, v4
+    .line 257
+    move-object/from16 v28, v26
 
-    move v0, v15
-
-    .line 252
-    move-object/from16 v30, v23
-
-    check-cast v30, Landroidx/compose/ui/layout/MeasureScope;
+    check-cast v28, Landroidx/compose/ui/layout/MeasureScope;
 
     invoke-virtual/range {p0 .. p0}, Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridMeasureContext;->getConstraints-msEJaDk()J
 
-    move-result-wide v3
+    move-result-wide v0
 
-    invoke-static {v3, v4}, Landroidx/compose/ui/unit/Constraints;->getMinWidth-impl(J)I
+    invoke-static {v0, v1}, Landroidx/compose/ui/unit/Constraints;->getMinWidth-impl(J)I
 
-    move-result v31
+    move-result v29
 
     invoke-virtual/range {p0 .. p0}, Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridMeasureContext;->getConstraints-msEJaDk()J
 
-    move-result-wide v3
+    move-result-wide v0
 
-    invoke-static {v3, v4}, Landroidx/compose/ui/unit/Constraints;->getMinHeight-impl(J)I
+    invoke-static {v0, v1}, Landroidx/compose/ui/unit/Constraints;->getMinHeight-impl(J)I
 
-    move-result v32
+    move-result v30
 
-    sget-object v1, Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridMeasureKt$measure$1$1;->INSTANCE:Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridMeasureKt$measure$1$1;
+    sget-object v0, Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridMeasureKt$measure$1$1;->INSTANCE:Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridMeasureKt$measure$1$1;
 
-    move-object/from16 v34, v1
+    move-object/from16 v32, v0
 
-    check-cast v34, Lkotlin/jvm/functions/Function1;
+    check-cast v32, Lkotlin/jvm/functions/Function1;
 
-    const/16 v35, 0x4
+    const/16 v33, 0x4
 
-    const/16 v36, 0x0
+    const/16 v34, 0x0
 
-    const/16 v33, 0x0
+    const/16 v31, 0x0
 
-    invoke-static/range {v30 .. v36}, Landroidx/compose/ui/layout/MeasureScope;->layout$default(Landroidx/compose/ui/layout/MeasureScope;IILjava/util/Map;Lkotlin/jvm/functions/Function1;ILjava/lang/Object;)Landroidx/compose/ui/layout/MeasureResult;
+    invoke-static/range {v28 .. v34}, Landroidx/compose/ui/layout/MeasureScope;->layout$default(Landroidx/compose/ui/layout/MeasureScope;IILjava/util/Map;Lkotlin/jvm/functions/Function1;ILjava/lang/Object;)Landroidx/compose/ui/layout/MeasureResult;
 
     move-result-object v5
 
-    .line 255
+    .line 259
     invoke-virtual/range {p0 .. p0}, Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridMeasureContext;->isVertical()Z
 
-    move-result v8
+    move-result v7
 
-    .line 256
+    .line 260
     invoke-static {}, Lkotlin/collections/CollectionsKt;->emptyList()Ljava/util/List;
 
     move-result-object v10
 
-    .line 258
+    .line 263
     invoke-virtual/range {p0 .. p0}, Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridMeasureContext;->getConstraints-msEJaDk()J
 
-    move-result-wide v3
+    move-result-wide v0
 
-    invoke-static {v3, v4}, Landroidx/compose/ui/unit/Constraints;->getMinWidth-impl(J)I
+    invoke-static {v0, v1}, Landroidx/compose/ui/unit/Constraints;->getMinWidth-impl(J)I
 
-    move-result v1
+    move-result v0
 
     invoke-virtual/range {p0 .. p0}, Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridMeasureContext;->getConstraints-msEJaDk()J
-
-    move-result-wide v3
-
-    invoke-static {v3, v4}, Landroidx/compose/ui/unit/Constraints;->getMinHeight-impl(J)I
-
-    move-result v3
-
-    invoke-static {v1, v3}, Landroidx/compose/ui/unit/IntSizeKt;->IntSize(II)J
 
     move-result-wide v11
 
-    .line 259
+    invoke-static {v11, v12}, Landroidx/compose/ui/unit/Constraints;->getMinHeight-impl(J)I
+
+    move-result v1
+
+    invoke-static {v0, v1}, Landroidx/compose/ui/unit/IntSizeKt;->IntSize(II)J
+
+    move-result-wide v11
+
+    .line 264
     invoke-virtual/range {p0 .. p0}, Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridMeasureContext;->getBeforeContentPadding()I
 
-    move-result v1
+    move-result v0
 
-    neg-int v13, v1
+    neg-int v13, v0
 
-    .line 260
+    .line 265
     invoke-virtual/range {p0 .. p0}, Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridMeasureContext;->getMainAxisAvailableSize()I
 
-    move-result v1
+    move-result v0
 
     invoke-virtual/range {p0 .. p0}, Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridMeasureContext;->getAfterContentPadding()I
 
-    move-result v3
+    move-result v1
 
-    add-int/2addr v1, v3
+    add-int v14, v0, v1
 
-    move v14, v1
-
-    .line 261
+    .line 266
     invoke-virtual/range {p0 .. p0}, Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridMeasureContext;->getBeforeContentPadding()I
 
-    move-result v15
+    move-result v0
 
-    .line 262
+    move v9, v15
+
+    move v15, v0
+
+    .line 267
     invoke-virtual/range {p0 .. p0}, Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridMeasureContext;->getAfterContentPadding()I
 
     move-result v16
 
-    .line 263
+    .line 268
     invoke-virtual/range {p0 .. p0}, Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridMeasureContext;->getMainAxisSpacing()I
 
     move-result v17
 
-    .line 248
-    new-instance v19, Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridMeasureResult;
+    .line 253
+    new-instance v0, Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridMeasureResult;
 
-    move-object/from16 v1, v19
+    move-object v1, v0
 
-    const/4 v7, 0x0
+    const/4 v8, 0x0
 
     const/16 v18, 0x0
 
@@ -3342,17 +3754,15 @@
 
     move-object/from16 v3, p3
 
-    move v9, v0
-
     invoke-direct/range {v1 .. v18}, Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridMeasureResult;-><init>([I[IFLandroidx/compose/ui/layout/MeasureResult;ZZZILjava/util/List;JIIIIILkotlin/jvm/internal/DefaultConstructorMarker;)V
 
-    return-object v19
+    return-object v0
 .end method
 
 .method private static final measure$lambda$38$hasSpaceBeforeFirst([I[ILandroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridMeasureContext;)Z
     .locals 6
 
-    .line 290
+    .line 300
     array-length v0, p0
 
     const/4 v1, 0x0
@@ -3362,13 +3772,13 @@
     :goto_0
     if-ge v2, v0, :cond_1
 
-    .line 291
+    .line 301
     aget v3, p0, v2
 
-    .line 292
+    .line 302
     aget v4, p1, v2
 
-    .line 294
+    .line 304
     invoke-virtual {p2}, Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridMeasureContext;->getMainAxisSpacing()I
 
     move-result v5
@@ -3399,7 +3809,7 @@
 .method private static final measure$lambda$38$misalignedStart([ILandroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridMeasureContext;[II)Z
     .locals 7
 
-    .line 362
+    .line 378
     array-length v0, p0
 
     const/4 v1, 0x0
@@ -3413,7 +3823,7 @@
 
     if-ge v2, v0, :cond_1
 
-    .line 364
+    .line 380
     aget v5, p0, v2
 
     invoke-static {p1, v5, v2}, Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridMeasureKt;->findPreviousItemIndex(Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridMeasureContext;II)I
@@ -3422,7 +3832,7 @@
 
     if-ne v5, v3, :cond_0
 
-    .line 365
+    .line 381
     aget v3, p2, v2
 
     aget v5, p2, p3
@@ -3436,7 +3846,7 @@
 
     goto :goto_0
 
-    .line 372
+    .line 388
     :cond_1
     array-length v0, p0
 
@@ -3445,7 +3855,7 @@
     :goto_1
     if-ge v2, v0, :cond_3
 
-    .line 374
+    .line 390
     aget v5, p0, v2
 
     invoke-static {p1, v5, v2}, Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridMeasureKt;->findPreviousItemIndex(Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridMeasureContext;II)I
@@ -3454,7 +3864,7 @@
 
     if-eq v5, v3, :cond_2
 
-    .line 375
+    .line 391
     aget v5, p2, v2
 
     aget v6, p2, p3
@@ -3468,7 +3878,7 @@
 
     goto :goto_1
 
-    .line 383
+    .line 399
     :cond_3
     invoke-virtual {p1}, Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridMeasureContext;->getLaneInfo()Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridLaneInfo;
 
@@ -3492,8 +3902,8 @@
     return v1
 .end method
 
-.method public static final measureStaggeredGrid-dSVRQoE(Landroidx/compose/foundation/lazy/layout/LazyLayoutMeasureScope;Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridState;Ljava/util/List;Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridItemProvider;Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridSlots;JZZJIIII)Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridMeasureResult;
-    .locals 20
+.method public static final measureStaggeredGrid-sdzDtKU(Landroidx/compose/foundation/lazy/layout/LazyLayoutMeasureScope;Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridState;Ljava/util/List;Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridItemProvider;Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridSlots;JZZJIIIILkotlinx/coroutines/CoroutineScope;)Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridMeasureResult;
+    .locals 19
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -3504,14 +3914,12 @@
             ">;",
             "Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridItemProvider;",
             "Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridSlots;",
-            "JZZJIIII)",
+            "JZZJIIII",
+            "Lkotlinx/coroutines/CoroutineScope;",
+            ")",
             "Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridMeasureResult;"
         }
     .end annotation
-
-    move-object/from16 v0, p1
-
-    move-object/from16 v1, p3
 
     move-object/from16 v9, p0
 
@@ -3539,70 +3947,36 @@
 
     move/from16 v14, p14
 
-    move-object/from16 v18, v2
+    move-object/from16 v17, p15
 
-    const-string v2, "$this$measureStaggeredGrid"
+    .line 94
+    new-instance v0, Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridMeasureContext;
 
-    move-object/from16 v19, v3
+    move-object v1, v0
 
-    move-object/from16 v3, p0
+    const/16 v18, 0x0
 
-    invoke-static {v3, v2}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-direct/range {v1 .. v18}, Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridMeasureContext;-><init>(Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridState;Ljava/util/List;Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridItemProvider;Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridSlots;JZLandroidx/compose/foundation/lazy/layout/LazyLayoutMeasureScope;IJIIZILkotlinx/coroutines/CoroutineScope;Lkotlin/jvm/internal/DefaultConstructorMarker;)V
 
-    const-string/jumbo v2, "state"
-
-    invoke-static {v0, v2}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string v2, "pinnedItems"
-
-    move-object/from16 v3, p2
-
-    invoke-static {v3, v2}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string v2, "itemProvider"
-
-    invoke-static {v1, v2}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string v2, "resolvedSlots"
-
-    move-object/from16 v3, p4
-
-    invoke-static {v3, v2}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 92
-    new-instance v2, Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridMeasureContext;
-
-    move-object v1, v2
-
-    const/16 v17, 0x0
-
-    move-object/from16 p0, v2
-
-    move-object/from16 v2, v18
-
-    move-object/from16 v3, v19
-
-    invoke-direct/range {v1 .. v17}, Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridMeasureContext;-><init>(Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridState;Ljava/util/List;Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridItemProvider;Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridSlots;JZLandroidx/compose/foundation/lazy/layout/LazyLayoutMeasureScope;IJIIZILkotlin/jvm/internal/DefaultConstructorMarker;)V
-
-    .line 108
+    .line 111
     new-instance v1, Lkotlin/jvm/internal/Ref$ObjectRef;
 
     invoke-direct {v1}, Lkotlin/jvm/internal/Ref$ObjectRef;-><init>()V
 
-    .line 109
+    .line 112
     new-instance v2, Lkotlin/jvm/internal/Ref$ObjectRef;
 
     invoke-direct {v2}, Lkotlin/jvm/internal/Ref$ObjectRef;-><init>()V
 
-    .line 111
+    .line 114
     sget-object v3, Landroidx/compose/runtime/snapshots/Snapshot;->Companion:Landroidx/compose/runtime/snapshots/Snapshot$Companion;
 
-    .line 1160
+    .line 1227
     invoke-virtual {v3}, Landroidx/compose/runtime/snapshots/Snapshot$Companion;->createNonObservableSnapshot()Landroidx/compose/runtime/snapshots/Snapshot;
 
     move-result-object v3
 
-    .line 1163
+    .line 1230
     :try_start_0
     invoke-virtual {v3}, Landroidx/compose/runtime/snapshots/Snapshot;->makeCurrent()Landroidx/compose/runtime/snapshots/Snapshot;
 
@@ -3610,13 +3984,13 @@
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_1
 
-    .line 115
+    .line 118
     :try_start_1
     move-object/from16 v5, p3
 
     check-cast v5, Landroidx/compose/foundation/lazy/layout/LazyLayoutItemProvider;
 
-    .line 116
+    .line 119
     invoke-virtual/range {p1 .. p1}, Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridState;->getScrollPosition$foundation_release()Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridScrollPosition;
 
     move-result-object v6
@@ -3625,208 +3999,208 @@
 
     move-result-object v6
 
-    .line 114
-    invoke-virtual {v0, v5, v6}, Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridState;->updateScrollPositionIfTheFirstItemWasMoved$foundation_release(Landroidx/compose/foundation/lazy/layout/LazyLayoutItemProvider;[I)[I
+    move-object/from16 v7, p1
+
+    .line 117
+    invoke-virtual {v7, v5, v6}, Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridState;->updateScrollPositionIfTheFirstItemWasMoved$foundation_release(Landroidx/compose/foundation/lazy/layout/LazyLayoutItemProvider;[I)[I
 
     move-result-object v5
 
-    .line 118
+    .line 121
     invoke-virtual/range {p1 .. p1}, Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridState;->getScrollPosition$foundation_release()Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridScrollPosition;
 
     move-result-object v6
 
-    invoke-virtual {v6}, Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridScrollPosition;->getOffsets()[I
+    invoke-virtual {v6}, Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridScrollPosition;->getScrollOffsets()[I
 
     move-result-object v6
 
-    .line 121
-    array-length v7, v5
+    .line 124
+    array-length v8, v5
 
-    invoke-virtual/range {p0 .. p0}, Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridMeasureContext;->getLaneCount()I
+    invoke-virtual {v0}, Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridMeasureContext;->getLaneCount()I
 
-    move-result v8
+    move-result v9
 
-    const/4 v9, 0x1
+    const/4 v10, 0x1
 
-    const/4 v10, 0x0
+    const/4 v11, 0x0
 
-    if-ne v7, v8, :cond_0
+    if-ne v8, v9, :cond_0
 
     goto :goto_2
 
-    .line 126
+    .line 129
     :cond_0
-    invoke-virtual/range {p0 .. p0}, Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridMeasureContext;->getLaneInfo()Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridLaneInfo;
+    invoke-virtual {v0}, Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridMeasureContext;->getLaneInfo()Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridLaneInfo;
 
-    move-result-object v7
+    move-result-object v8
 
-    invoke-virtual {v7}, Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridLaneInfo;->reset()V
+    invoke-virtual {v8}, Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridLaneInfo;->reset()V
 
-    .line 127
-    invoke-virtual/range {p0 .. p0}, Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridMeasureContext;->getLaneCount()I
+    .line 130
+    invoke-virtual {v0}, Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridMeasureContext;->getLaneCount()I
 
-    move-result v7
+    move-result v8
 
-    new-array v8, v7, [I
+    new-array v9, v8, [I
 
-    move v11, v10
+    move v12, v11
 
     :goto_0
-    if-ge v11, v7, :cond_3
+    if-ge v12, v8, :cond_3
 
-    .line 131
-    array-length v12, v5
+    .line 134
+    array-length v13, v5
 
-    if-ge v11, v12, :cond_1
+    if-ge v12, v13, :cond_1
 
-    aget v12, v5, v11
+    aget v13, v5, v12
 
-    const/4 v13, -0x1
+    const/4 v14, -0x1
 
-    if-eq v12, v13, :cond_1
+    if-eq v13, v14, :cond_1
 
     goto :goto_1
 
     :cond_1
-    if-nez v11, :cond_2
+    if-nez v12, :cond_2
 
-    move v12, v10
+    move v13, v11
 
     goto :goto_1
 
-    .line 138
+    .line 141
     :cond_2
-    invoke-static {v10, v11}, Landroidx/compose/foundation/lazy/staggeredgrid/SpanRange;->constructor-impl(II)J
+    invoke-static {v11, v12}, Landroidx/compose/foundation/lazy/staggeredgrid/SpanRange;->constructor-impl(II)J
 
-    move-result-wide v12
+    move-result-wide v13
 
-    invoke-static {v8, v12, v13}, Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridMeasureKt;->maxInRange-jy6DScQ([IJ)I
+    invoke-static {v9, v13, v14}, Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridMeasureKt;->maxInRange-jy6DScQ([IJ)I
 
-    move-result v12
+    move-result v13
 
-    add-int/2addr v12, v9
+    add-int/2addr v13, v10
 
     :goto_1
-    aput v12, v8, v11
+    aput v13, v9, v12
 
-    .line 142
-    invoke-virtual/range {p0 .. p0}, Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridMeasureContext;->getLaneInfo()Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridLaneInfo;
+    .line 145
+    invoke-virtual {v0}, Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridMeasureContext;->getLaneInfo()Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridLaneInfo;
 
-    move-result-object v12
+    move-result-object v13
 
-    aget v13, v8, v11
+    aget v14, v9, v12
 
-    invoke-virtual {v12, v13, v11}, Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridLaneInfo;->setLane(II)V
+    invoke-virtual {v13, v14, v12}, Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridLaneInfo;->setLane(II)V
 
-    add-int/lit8 v11, v11, 0x1
+    add-int/lit8 v12, v12, 0x1
 
     goto :goto_0
 
     :cond_3
-    move-object v5, v8
+    move-object v5, v9
 
-    .line 120
+    .line 123
     :goto_2
     iput-object v5, v1, Lkotlin/jvm/internal/Ref$ObjectRef;->element:Ljava/lang/Object;
 
-    .line 147
+    .line 150
     array-length v5, v6
 
-    invoke-virtual/range {p0 .. p0}, Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridMeasureContext;->getLaneCount()I
+    invoke-virtual {v0}, Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridMeasureContext;->getLaneCount()I
 
-    move-result v7
+    move-result v8
 
-    if-ne v5, v7, :cond_4
+    if-ne v5, v8, :cond_4
 
     goto :goto_5
 
-    .line 152
+    .line 155
     :cond_4
-    invoke-virtual/range {p0 .. p0}, Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridMeasureContext;->getLaneCount()I
+    invoke-virtual {v0}, Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridMeasureContext;->getLaneCount()I
 
     move-result v5
 
-    new-array v7, v5, [I
+    new-array v8, v5, [I
 
-    move v8, v10
+    move v9, v11
 
     :goto_3
-    if-ge v8, v5, :cond_7
+    if-ge v9, v5, :cond_7
 
-    .line 155
-    array-length v11, v6
+    .line 158
+    array-length v12, v6
 
-    if-ge v8, v11, :cond_5
+    if-ge v9, v12, :cond_5
 
-    .line 156
-    aget v11, v6, v8
+    .line 159
+    aget v12, v6, v9
 
     goto :goto_4
 
     :cond_5
-    if-nez v8, :cond_6
+    if-nez v9, :cond_6
 
-    move v11, v10
+    move v12, v11
 
     goto :goto_4
 
     :cond_6
-    add-int/lit8 v11, v8, -0x1
+    add-int/lit8 v12, v9, -0x1
 
-    .line 158
-    aget v11, v7, v11
+    .line 161
+    aget v12, v8, v12
 
     :goto_4
-    aput v11, v7, v8
+    aput v12, v8, v9
 
-    add-int/lit8 v8, v8, 0x1
+    add-int/lit8 v9, v9, 0x1
 
     goto :goto_3
 
     :cond_7
-    move-object v6, v7
+    move-object v6, v8
 
-    .line 146
+    .line 149
     :goto_5
     iput-object v6, v2, Lkotlin/jvm/internal/Ref$ObjectRef;->element:Ljava/lang/Object;
 
-    .line 163
+    .line 166
     sget-object v5, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
-    .line 1167
+    .line 1234
     :try_start_2
     invoke-virtual {v3, v4}, Landroidx/compose/runtime/snapshots/Snapshot;->restoreCurrent(Landroidx/compose/runtime/snapshots/Snapshot;)V
     :try_end_2
     .catchall {:try_start_2 .. :try_end_2} :catchall_1
 
-    .line 1168
+    .line 1235
     invoke-virtual {v3}, Landroidx/compose/runtime/snapshots/Snapshot;->dispose()V
 
-    .line 166
+    .line 169
     invoke-virtual/range {p1 .. p1}, Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridState;->getScrollToBeConsumed$foundation_release()F
 
-    move-result v0
+    move-result v3
 
-    invoke-static {v0}, Lkotlin/math/MathKt;->roundToInt(F)I
+    invoke-static {v3}, Lkotlin/math/MathKt;->roundToInt(F)I
 
-    move-result v0
+    move-result v3
 
-    .line 167
+    .line 170
     iget-object v1, v1, Lkotlin/jvm/internal/Ref$ObjectRef;->element:Ljava/lang/Object;
 
     check-cast v1, [I
 
-    .line 168
+    .line 171
     iget-object v2, v2, Lkotlin/jvm/internal/Ref$ObjectRef;->element:Ljava/lang/Object;
 
     check-cast v2, [I
 
-    move-object/from16 v3, p0
-
-    .line 165
-    invoke-static {v3, v0, v1, v2, v9}, Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridMeasureKt;->measure(Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridMeasureContext;I[I[IZ)Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridMeasureResult;
+    .line 168
+    invoke-static {v0, v3, v1, v2, v10}, Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridMeasureKt;->measure(Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridMeasureContext;I[I[IZ)Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridMeasureResult;
 
     move-result-object v0
 
@@ -3835,7 +4209,7 @@
     :catchall_0
     move-exception v0
 
-    .line 1167
+    .line 1234
     :try_start_3
     invoke-virtual {v3, v4}, Landroidx/compose/runtime/snapshots/Snapshot;->restoreCurrent(Landroidx/compose/runtime/snapshots/Snapshot;)V
 
@@ -3846,7 +4220,7 @@
     :catchall_1
     move-exception v0
 
-    .line 1168
+    .line 1235
     invoke-virtual {v3}, Landroidx/compose/runtime/snapshots/Snapshot;->dispose()V
 
     throw v0
@@ -3855,7 +4229,7 @@
 .method private static final offsetBy([II)V
     .locals 3
 
-    .line 918
+    .line 963
     array-length v0, p0
 
     const/4 v1, 0x0
@@ -3863,7 +4237,7 @@
     :goto_0
     if-ge v1, v0, :cond_0
 
-    .line 919
+    .line 964
     aget v2, p0, v1
 
     add-int/2addr v2, p1
@@ -3891,7 +4265,7 @@
         }
     .end annotation
 
-    .line 972
+    .line 1017
     array-length v0, p0
 
     const/4 v1, 0x0
@@ -3899,7 +4273,7 @@
     :goto_0
     if-ge v1, v0, :cond_0
 
-    .line 973
+    .line 1018
     aget v2, p0, v1
 
     invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
@@ -3941,7 +4315,7 @@
         }
     .end annotation
 
-    .line 58
+    .line 59
     invoke-interface {p1, p0}, Lkotlin/jvm/functions/Function1;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p0

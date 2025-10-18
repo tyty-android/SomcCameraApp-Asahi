@@ -6,7 +6,7 @@
 # annotations
 .annotation runtime Lkotlin/Metadata;
     d1 = {
-        "\u0000`\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0010\u0007\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0006\n\u0002\u0018\u0002\n\u0002\u0008\u0005\n\u0002\u0010\u000b\n\u0002\u0008\u0003\n\u0002\u0010\u0000\n\u0000\n\u0002\u0010\u0008\n\u0000\n\u0002\u0010\u000e\n\u0002\u0008\u0004\n\u0002\u0010\u0002\n\u0002\u0018\u0002\n\u0000\u0018\u00002\u00020\u0001B$\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\u0008\u0008\u0002\u0010\u0004\u001a\u00020\u0005\u0012\u0008\u0008\u0002\u0010\u0006\u001a\u00020\u0007\u00f8\u0001\u0000\u00a2\u0006\u0002\u0010\u0008J\u0010\u0010\u001a\u001a\u00020\u001b2\u0006\u0010\t\u001a\u00020\nH\u0014J\u0012\u0010\u001c\u001a\u00020\u001b2\u0008\u0010\u000b\u001a\u0004\u0018\u00010\u000cH\u0014J\u0013\u0010\u001d\u001a\u00020\u001b2\u0008\u0010\u001e\u001a\u0004\u0018\u00010\u001fH\u0096\u0002J\u0008\u0010 \u001a\u00020!H\u0016J\u0008\u0010\"\u001a\u00020#H\u0016J%\u0010$\u001a\u00020\u00072\u0006\u0010\u0004\u001a\u00020\u00052\u0006\u0010\u0006\u001a\u00020\u0007H\u0002\u00f8\u0001\u0001\u00f8\u0001\u0000\u00a2\u0006\u0004\u0008%\u0010&J\u000c\u0010\'\u001a\u00020(*\u00020)H\u0014R\u000e\u0010\t\u001a\u00020\nX\u0082\u000e\u00a2\u0006\u0002\n\u0000R\u0010\u0010\u000b\u001a\u0004\u0018\u00010\u000cX\u0082\u000e\u00a2\u0006\u0002\n\u0000R%\u0010\r\u001a\u00020\u000eX\u0080\u000e\u00f8\u0001\u0000\u00f8\u0001\u0001\u00f8\u0001\u0002\u00a2\u0006\u0010\n\u0002\u0010\u0013\u001a\u0004\u0008\u000f\u0010\u0010\"\u0004\u0008\u0011\u0010\u0012R\u000e\u0010\u0002\u001a\u00020\u0003X\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u001d\u0010\u0014\u001a\u00020\u00158VX\u0096\u0004\u00f8\u0001\u0000\u00f8\u0001\u0001\u00f8\u0001\u0002\u00a2\u0006\u0006\u001a\u0004\u0008\u0016\u0010\u0017R\u0019\u0010\u0018\u001a\u00020\u0007X\u0082\u0004\u00f8\u0001\u0000\u00f8\u0001\u0001\u00f8\u0001\u0002\u00a2\u0006\u0004\n\u0002\u0010\u0019R\u0019\u0010\u0004\u001a\u00020\u0005X\u0082\u0004\u00f8\u0001\u0000\u00f8\u0001\u0001\u00f8\u0001\u0002\u00a2\u0006\u0004\n\u0002\u0010\u0019R\u0019\u0010\u0006\u001a\u00020\u0007X\u0082\u0004\u00f8\u0001\u0000\u00f8\u0001\u0001\u00f8\u0001\u0002\u00a2\u0006\u0004\n\u0002\u0010\u0019\u0082\u0002\u000f\n\u0002\u0008\u0019\n\u0005\u0008\u00a1\u001e0\u0001\n\u0002\u0008!\u00a8\u0006*"
+        "\u0000`\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0010\u0007\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0006\n\u0002\u0018\u0002\n\u0002\u0008\u0005\n\u0002\u0010\u000b\n\u0002\u0008\u0003\n\u0002\u0010\u0000\n\u0000\n\u0002\u0010\u0008\n\u0000\n\u0002\u0010\u000e\n\u0002\u0008\u0004\n\u0002\u0010\u0002\n\u0002\u0018\u0002\n\u0000\u0018\u00002\u00020\u0001B!\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\u0008\u0008\u0002\u0010\u0004\u001a\u00020\u0005\u0012\u0008\u0008\u0002\u0010\u0006\u001a\u00020\u0007\u00a2\u0006\u0002\u0010\u0008J\u0010\u0010\u001a\u001a\u00020\u001b2\u0006\u0010\t\u001a\u00020\nH\u0014J\u0012\u0010\u001c\u001a\u00020\u001b2\u0008\u0010\u000b\u001a\u0004\u0018\u00010\u000cH\u0014J\u0013\u0010\u001d\u001a\u00020\u001b2\u0008\u0010\u001e\u001a\u0004\u0018\u00010\u001fH\u0096\u0002J\u0008\u0010 \u001a\u00020!H\u0016J\u0008\u0010\"\u001a\u00020#H\u0016J\"\u0010$\u001a\u00020\u00072\u0006\u0010\u0004\u001a\u00020\u00052\u0006\u0010\u0006\u001a\u00020\u0007H\u0002\u00f8\u0001\u0000\u00a2\u0006\u0004\u0008%\u0010&J\u000c\u0010\'\u001a\u00020(*\u00020)H\u0014R\u000e\u0010\t\u001a\u00020\nX\u0082\u000e\u00a2\u0006\u0002\n\u0000R\u0010\u0010\u000b\u001a\u0004\u0018\u00010\u000cX\u0082\u000e\u00a2\u0006\u0002\n\u0000R\"\u0010\r\u001a\u00020\u000eX\u0080\u000e\u00f8\u0001\u0000\u00f8\u0001\u0001\u00a2\u0006\u0010\n\u0002\u0010\u0013\u001a\u0004\u0008\u000f\u0010\u0010\"\u0004\u0008\u0011\u0010\u0012R\u000e\u0010\u0002\u001a\u00020\u0003X\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u001a\u0010\u0014\u001a\u00020\u00158VX\u0096\u0004\u00f8\u0001\u0000\u00f8\u0001\u0001\u00a2\u0006\u0006\u001a\u0004\u0008\u0016\u0010\u0017R\u0016\u0010\u0018\u001a\u00020\u0007X\u0082\u0004\u00f8\u0001\u0000\u00f8\u0001\u0001\u00a2\u0006\u0004\n\u0002\u0010\u0019R\u0016\u0010\u0004\u001a\u00020\u0005X\u0082\u0004\u00f8\u0001\u0000\u00f8\u0001\u0001\u00a2\u0006\u0004\n\u0002\u0010\u0019R\u0016\u0010\u0006\u001a\u00020\u0007X\u0082\u0004\u00f8\u0001\u0000\u00f8\u0001\u0001\u00a2\u0006\u0004\n\u0002\u0010\u0019\u0082\u0002\u000b\n\u0005\u0008\u00a1\u001e0\u0001\n\u0002\u0008!\u00a8\u0006*"
     }
     d2 = {
         "Landroidx/compose/ui/graphics/painter/BitmapPainter;",
@@ -81,11 +81,7 @@
 
 # direct methods
 .method private constructor <init>(Landroidx/compose/ui/graphics/ImageBitmap;JJ)V
-    .locals 1
-
-    const-string v0, "image"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+    .locals 0
 
     .line 75
     invoke-direct {p0}, Landroidx/compose/ui/graphics/painter/Painter;-><init>()V
@@ -183,35 +179,35 @@
 .method private final validateSize-N5eqBDc(JJ)J
     .locals 1
 
-    .line 124
+    .line 125
     invoke-static {p1, p2}, Landroidx/compose/ui/unit/IntOffset;->getX-impl(J)I
 
     move-result v0
 
     if-ltz v0, :cond_0
 
-    .line 125
+    .line 126
     invoke-static {p1, p2}, Landroidx/compose/ui/unit/IntOffset;->getY-impl(J)I
 
     move-result p1
 
     if-ltz p1, :cond_0
 
-    .line 126
+    .line 127
     invoke-static {p3, p4}, Landroidx/compose/ui/unit/IntSize;->getWidth-impl(J)I
 
     move-result p1
 
     if-ltz p1, :cond_0
 
-    .line 127
+    .line 128
     invoke-static {p3, p4}, Landroidx/compose/ui/unit/IntSize;->getHeight-impl(J)I
 
     move-result p1
 
     if-ltz p1, :cond_0
 
-    .line 128
+    .line 129
     invoke-static {p3, p4}, Landroidx/compose/ui/unit/IntSize;->getWidth-impl(J)I
 
     move-result p1
@@ -224,7 +220,7 @@
 
     if-gt p1, p2, :cond_0
 
-    .line 129
+    .line 130
     invoke-static {p3, p4}, Landroidx/compose/ui/unit/IntSize;->getHeight-impl(J)I
 
     move-result p1
@@ -286,7 +282,7 @@
 
     return v0
 
-    .line 136
+    .line 137
     :cond_0
     instance-of v1, p1, Landroidx/compose/ui/graphics/painter/BitmapPainter;
 
@@ -296,7 +292,7 @@
 
     return v2
 
-    .line 138
+    .line 139
     :cond_1
     iget-object v1, p0, Landroidx/compose/ui/graphics/painter/BitmapPainter;->image:Landroidx/compose/ui/graphics/ImageBitmap;
 
@@ -312,7 +308,7 @@
 
     return v2
 
-    .line 139
+    .line 140
     :cond_2
     iget-wide v3, p0, Landroidx/compose/ui/graphics/painter/BitmapPainter;->srcOffset:J
 
@@ -326,7 +322,7 @@
 
     return v2
 
-    .line 140
+    .line 141
     :cond_3
     iget-wide v3, p0, Landroidx/compose/ui/graphics/painter/BitmapPainter;->srcSize:J
 
@@ -340,7 +336,7 @@
 
     return v2
 
-    .line 141
+    .line 142
     :cond_4
     iget p0, p0, Landroidx/compose/ui/graphics/painter/BitmapPainter;->filterQuality:I
 
@@ -383,7 +379,7 @@
 .method public hashCode()I
     .locals 3
 
-    .line 146
+    .line 147
     iget-object v0, p0, Landroidx/compose/ui/graphics/painter/BitmapPainter;->image:Landroidx/compose/ui/graphics/ImageBitmap;
 
     invoke-virtual {v0}, Ljava/lang/Object;->hashCode()I
@@ -392,7 +388,7 @@
 
     mul-int/lit8 v0, v0, 0x1f
 
-    .line 147
+    .line 148
     iget-wide v1, p0, Landroidx/compose/ui/graphics/painter/BitmapPainter;->srcOffset:J
 
     invoke-static {v1, v2}, Landroidx/compose/ui/unit/IntOffset;->hashCode-impl(J)I
@@ -403,7 +399,7 @@
 
     mul-int/lit8 v0, v0, 0x1f
 
-    .line 148
+    .line 149
     iget-wide v1, p0, Landroidx/compose/ui/graphics/painter/BitmapPainter;->srcSize:J
 
     invoke-static {v1, v2}, Landroidx/compose/ui/unit/IntSize;->hashCode-impl(J)I
@@ -414,7 +410,7 @@
 
     mul-int/lit8 v0, v0, 0x1f
 
-    .line 149
+    .line 150
     iget p0, p0, Landroidx/compose/ui/graphics/painter/BitmapPainter;->filterQuality:I
 
     invoke-static {p0}, Landroidx/compose/ui/graphics/FilterQuality;->hashCode-impl(I)I
@@ -433,12 +429,6 @@
 
     move-object/from16 v1, p1
 
-    const-string v2, "<this>"
-
-    move-object/from16 v7, p1
-
-    invoke-static {v7, v2}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
     .line 94
     iget-object v2, v0, Landroidx/compose/ui/graphics/painter/BitmapPainter;->image:Landroidx/compose/ui/graphics/ImageBitmap;
 
@@ -451,22 +441,9 @@
     .line 98
     invoke-interface/range {p1 .. p1}, Landroidx/compose/ui/graphics/drawscope/DrawScope;->getSize-NH-jbRc()J
 
-    move-result-wide v8
+    move-result-wide v7
 
-    invoke-static {v8, v9}, Landroidx/compose/ui/geometry/Size;->getWidth-impl(J)F
-
-    move-result v8
-
-    invoke-static {v8}, Lkotlin/math/MathKt;->roundToInt(F)I
-
-    move-result v8
-
-    .line 99
-    invoke-interface/range {p1 .. p1}, Landroidx/compose/ui/graphics/drawscope/DrawScope;->getSize-NH-jbRc()J
-
-    move-result-wide v9
-
-    invoke-static {v9, v10}, Landroidx/compose/ui/geometry/Size;->getHeight-impl(J)F
+    invoke-static {v7, v8}, Landroidx/compose/ui/geometry/Size;->getWidth-impl(J)F
 
     move-result v7
 
@@ -474,8 +451,21 @@
 
     move-result v7
 
+    .line 99
+    invoke-interface/range {p1 .. p1}, Landroidx/compose/ui/graphics/drawscope/DrawScope;->getSize-NH-jbRc()J
+
+    move-result-wide v8
+
+    invoke-static {v8, v9}, Landroidx/compose/ui/geometry/Size;->getHeight-impl(J)F
+
+    move-result v8
+
+    invoke-static {v8}, Lkotlin/math/MathKt;->roundToInt(F)I
+
+    move-result v8
+
     .line 97
-    invoke-static {v8, v7}, Landroidx/compose/ui/unit/IntSizeKt;->IntSize(II)J
+    invoke-static {v7, v8}, Landroidx/compose/ui/unit/IntSizeKt;->IntSize(II)J
 
     move-result-wide v9
 
@@ -516,7 +506,7 @@
 .method public toString()Ljava/lang/String;
     .locals 3
 
-    .line 154
+    .line 155
     new-instance v0, Ljava/lang/StringBuilder;
 
     const-string v1, "BitmapPainter(image="
@@ -567,10 +557,10 @@
 
     move-result-object v0
 
-    .line 155
+    .line 156
     iget p0, p0, Landroidx/compose/ui/graphics/painter/BitmapPainter;->filterQuality:I
 
-    .line 154
+    .line 155
     invoke-static {p0}, Landroidx/compose/ui/graphics/FilterQuality;->toString-impl(I)Ljava/lang/String;
 
     move-result-object p0

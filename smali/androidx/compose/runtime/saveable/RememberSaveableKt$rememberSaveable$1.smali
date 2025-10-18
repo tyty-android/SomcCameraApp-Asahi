@@ -3,7 +3,7 @@
 .source "RememberSaveable.kt"
 
 # interfaces
-.implements Lkotlin/jvm/functions/Function1;
+.implements Lkotlin/jvm/functions/Function0;
 
 
 # annotations
@@ -19,27 +19,21 @@
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lkotlin/jvm/internal/Lambda;",
-        "Lkotlin/jvm/functions/Function1<",
-        "Landroidx/compose/runtime/DisposableEffectScope;",
-        "Landroidx/compose/runtime/DisposableEffectResult;",
+        "Lkotlin/jvm/functions/Function0<",
+        "Lkotlin/Unit;",
         ">;"
     }
 .end annotation
 
-.annotation system Ldalvik/annotation/SourceDebugExtension;
-    value = "SMAP\nRememberSaveable.kt\nKotlin\n*S Kotlin\n*F\n+ 1 RememberSaveable.kt\nandroidx/compose/runtime/saveable/RememberSaveableKt$rememberSaveable$1\n+ 2 Effects.kt\nandroidx/compose/runtime/DisposableEffectScope\n*L\n1#1,200:1\n63#2,5:201\n*S KotlinDebug\n*F\n+ 1 RememberSaveable.kt\nandroidx/compose/runtime/saveable/RememberSaveableKt$rememberSaveable$1\n*L\n107#1:201,5\n*E\n"
-.end annotation
-
 .annotation runtime Lkotlin/Metadata;
     d1 = {
-        "\u0000\u0012\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0000\n\u0002\u0018\u0002\n\u0000\u0010\u0000\u001a\u00020\u0001\"\u0008\u0008\u0000\u0010\u0002*\u00020\u0003*\u00020\u0004H\n\u00a2\u0006\u0002\u0008\u0005"
+        "\u0000\u000e\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0010\u0000\n\u0000\u0010\u0000\u001a\u00020\u0001\"\u0008\u0008\u0000\u0010\u0002*\u00020\u0003H\n\u00a2\u0006\u0002\u0008\u0004"
     }
     d2 = {
         "<anonymous>",
-        "Landroidx/compose/runtime/DisposableEffectResult;",
+        "",
         "T",
         "",
-        "Landroidx/compose/runtime/DisposableEffectScope;",
         "invoke"
     }
     k = 0x3
@@ -55,58 +49,72 @@
 # instance fields
 .field final synthetic $finalKey:Ljava/lang/String;
 
-.field final synthetic $registry:Landroidx/compose/runtime/saveable/SaveableStateRegistry;
-
-.field final synthetic $saverState:Landroidx/compose/runtime/State;
+.field final synthetic $holder:Landroidx/compose/runtime/saveable/SaveableHolder;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Landroidx/compose/runtime/State<",
-            "Landroidx/compose/runtime/saveable/Saver<",
-            "TT;",
-            "Ljava/lang/Object;",
-            ">;>;"
+            "Landroidx/compose/runtime/saveable/SaveableHolder<",
+            "TT;>;"
         }
     .end annotation
 .end field
 
-.field final synthetic $valueState:Landroidx/compose/runtime/State;
+.field final synthetic $inputs:[Ljava/lang/Object;
+
+.field final synthetic $registry:Landroidx/compose/runtime/saveable/SaveableStateRegistry;
+
+.field final synthetic $saver:Landroidx/compose/runtime/saveable/Saver;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Landroidx/compose/runtime/State<",
-            "TT;>;"
+            "Landroidx/compose/runtime/saveable/Saver<",
+            "TT;+",
+            "Ljava/lang/Object;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field final synthetic $value:Ljava/lang/Object;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "TT;"
         }
     .end annotation
 .end field
 
 
 # direct methods
-.method constructor <init>(Landroidx/compose/runtime/saveable/SaveableStateRegistry;Ljava/lang/String;Landroidx/compose/runtime/State;Landroidx/compose/runtime/State;)V
+.method constructor <init>(Landroidx/compose/runtime/saveable/SaveableHolder;Landroidx/compose/runtime/saveable/Saver;Landroidx/compose/runtime/saveable/SaveableStateRegistry;Ljava/lang/String;Ljava/lang/Object;[Ljava/lang/Object;)V
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
+            "Landroidx/compose/runtime/saveable/SaveableHolder<",
+            "TT;>;",
+            "Landroidx/compose/runtime/saveable/Saver<",
+            "TT;+",
+            "Ljava/lang/Object;",
+            ">;",
             "Landroidx/compose/runtime/saveable/SaveableStateRegistry;",
             "Ljava/lang/String;",
-            "Landroidx/compose/runtime/State<",
-            "+",
-            "Landroidx/compose/runtime/saveable/Saver<",
-            "TT;",
+            "TT;[",
             "Ljava/lang/Object;",
-            ">;>;",
-            "Landroidx/compose/runtime/State<",
-            "+TT;>;)V"
+            ")V"
         }
     .end annotation
 
-    iput-object p1, p0, Landroidx/compose/runtime/saveable/RememberSaveableKt$rememberSaveable$1;->$registry:Landroidx/compose/runtime/saveable/SaveableStateRegistry;
+    iput-object p1, p0, Landroidx/compose/runtime/saveable/RememberSaveableKt$rememberSaveable$1;->$holder:Landroidx/compose/runtime/saveable/SaveableHolder;
 
-    iput-object p2, p0, Landroidx/compose/runtime/saveable/RememberSaveableKt$rememberSaveable$1;->$finalKey:Ljava/lang/String;
+    iput-object p2, p0, Landroidx/compose/runtime/saveable/RememberSaveableKt$rememberSaveable$1;->$saver:Landroidx/compose/runtime/saveable/Saver;
 
-    iput-object p3, p0, Landroidx/compose/runtime/saveable/RememberSaveableKt$rememberSaveable$1;->$saverState:Landroidx/compose/runtime/State;
+    iput-object p3, p0, Landroidx/compose/runtime/saveable/RememberSaveableKt$rememberSaveable$1;->$registry:Landroidx/compose/runtime/saveable/SaveableStateRegistry;
 
-    iput-object p4, p0, Landroidx/compose/runtime/saveable/RememberSaveableKt$rememberSaveable$1;->$valueState:Landroidx/compose/runtime/State;
+    iput-object p4, p0, Landroidx/compose/runtime/saveable/RememberSaveableKt$rememberSaveable$1;->$finalKey:Ljava/lang/String;
 
-    const/4 p1, 0x1
+    iput-object p5, p0, Landroidx/compose/runtime/saveable/RememberSaveableKt$rememberSaveable$1;->$value:Ljava/lang/Object;
+
+    iput-object p6, p0, Landroidx/compose/runtime/saveable/RememberSaveableKt$rememberSaveable$1;->$inputs:[Ljava/lang/Object;
+
+    const/4 p1, 0x0
 
     invoke-direct {p0, p1}, Lkotlin/jvm/internal/Lambda;-><init>(I)V
 
@@ -115,63 +123,34 @@
 
 
 # virtual methods
-.method public final invoke(Landroidx/compose/runtime/DisposableEffectScope;)Landroidx/compose/runtime/DisposableEffectResult;
-    .locals 3
+.method public bridge synthetic invoke()Ljava/lang/Object;
+    .locals 0
 
-    const-string v0, "$this$DisposableEffect"
+    .line 94
+    invoke-virtual {p0}, Landroidx/compose/runtime/saveable/RememberSaveableKt$rememberSaveable$1;->invoke()V
 
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+    sget-object p0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
 
-    .line 100
-    new-instance p1, Landroidx/compose/runtime/saveable/RememberSaveableKt$rememberSaveable$1$valueProvider$1;
+    return-object p0
+.end method
 
-    iget-object v0, p0, Landroidx/compose/runtime/saveable/RememberSaveableKt$rememberSaveable$1;->$saverState:Landroidx/compose/runtime/State;
+.method public final invoke()V
+    .locals 6
 
-    iget-object v1, p0, Landroidx/compose/runtime/saveable/RememberSaveableKt$rememberSaveable$1;->$valueState:Landroidx/compose/runtime/State;
+    .line 95
+    iget-object v0, p0, Landroidx/compose/runtime/saveable/RememberSaveableKt$rememberSaveable$1;->$holder:Landroidx/compose/runtime/saveable/SaveableHolder;
+
+    iget-object v1, p0, Landroidx/compose/runtime/saveable/RememberSaveableKt$rememberSaveable$1;->$saver:Landroidx/compose/runtime/saveable/Saver;
 
     iget-object v2, p0, Landroidx/compose/runtime/saveable/RememberSaveableKt$rememberSaveable$1;->$registry:Landroidx/compose/runtime/saveable/SaveableStateRegistry;
 
-    invoke-direct {p1, v0, v1, v2}, Landroidx/compose/runtime/saveable/RememberSaveableKt$rememberSaveable$1$valueProvider$1;-><init>(Landroidx/compose/runtime/State;Landroidx/compose/runtime/State;Landroidx/compose/runtime/saveable/SaveableStateRegistry;)V
+    iget-object v3, p0, Landroidx/compose/runtime/saveable/RememberSaveableKt$rememberSaveable$1;->$finalKey:Ljava/lang/String;
 
-    check-cast p1, Lkotlin/jvm/functions/Function0;
+    iget-object v4, p0, Landroidx/compose/runtime/saveable/RememberSaveableKt$rememberSaveable$1;->$value:Ljava/lang/Object;
 
-    .line 105
-    iget-object v0, p0, Landroidx/compose/runtime/saveable/RememberSaveableKt$rememberSaveable$1;->$registry:Landroidx/compose/runtime/saveable/SaveableStateRegistry;
+    iget-object v5, p0, Landroidx/compose/runtime/saveable/RememberSaveableKt$rememberSaveable$1;->$inputs:[Ljava/lang/Object;
 
-    invoke-interface {p1}, Lkotlin/jvm/functions/Function0;->invoke()Ljava/lang/Object;
+    invoke-virtual/range {v0 .. v5}, Landroidx/compose/runtime/saveable/SaveableHolder;->update(Landroidx/compose/runtime/saveable/Saver;Landroidx/compose/runtime/saveable/SaveableStateRegistry;Ljava/lang/String;Ljava/lang/Object;[Ljava/lang/Object;)V
 
-    move-result-object v1
-
-    invoke-static {v0, v1}, Landroidx/compose/runtime/saveable/RememberSaveableKt;->access$requireCanBeSaved(Landroidx/compose/runtime/saveable/SaveableStateRegistry;Ljava/lang/Object;)V
-
-    .line 106
-    iget-object v0, p0, Landroidx/compose/runtime/saveable/RememberSaveableKt$rememberSaveable$1;->$registry:Landroidx/compose/runtime/saveable/SaveableStateRegistry;
-
-    iget-object p0, p0, Landroidx/compose/runtime/saveable/RememberSaveableKt$rememberSaveable$1;->$finalKey:Ljava/lang/String;
-
-    invoke-interface {v0, p0, p1}, Landroidx/compose/runtime/saveable/SaveableStateRegistry;->registerProvider(Ljava/lang/String;Lkotlin/jvm/functions/Function0;)Landroidx/compose/runtime/saveable/SaveableStateRegistry$Entry;
-
-    move-result-object p0
-
-    .line 201
-    new-instance p1, Landroidx/compose/runtime/saveable/RememberSaveableKt$rememberSaveable$1$invoke$$inlined$onDispose$1;
-
-    invoke-direct {p1, p0}, Landroidx/compose/runtime/saveable/RememberSaveableKt$rememberSaveable$1$invoke$$inlined$onDispose$1;-><init>(Landroidx/compose/runtime/saveable/SaveableStateRegistry$Entry;)V
-
-    check-cast p1, Landroidx/compose/runtime/DisposableEffectResult;
-
-    return-object p1
-.end method
-
-.method public bridge synthetic invoke(Ljava/lang/Object;)Ljava/lang/Object;
-    .locals 0
-
-    .line 99
-    check-cast p1, Landroidx/compose/runtime/DisposableEffectScope;
-
-    invoke-virtual {p0, p1}, Landroidx/compose/runtime/saveable/RememberSaveableKt$rememberSaveable$1;->invoke(Landroidx/compose/runtime/DisposableEffectScope;)Landroidx/compose/runtime/DisposableEffectResult;
-
-    move-result-object p0
-
-    return-object p0
+    return-void
 .end method

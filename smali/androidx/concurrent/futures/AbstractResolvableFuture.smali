@@ -1930,7 +1930,7 @@
     .line 1015
     new-instance v1, Ljava/lang/StringBuilder;
 
-    const-string/jumbo v2, "setFuture=["
+    const-string v2, "setFuture=["
 
     invoke-direct {v1, v2}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 

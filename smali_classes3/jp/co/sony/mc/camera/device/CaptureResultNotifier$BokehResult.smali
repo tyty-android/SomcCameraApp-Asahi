@@ -24,7 +24,7 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 662
+    .line 669
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -33,13 +33,13 @@
 .method public constructor <init>(II)V
     .locals 0
 
-    .line 665
+    .line 672
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 666
+    .line 673
     iput p1, p0, Ljp/co/sony/mc/camera/device/CaptureResultNotifier$BokehResult;->mStatus:I
 
-    .line 667
+    .line 674
     iput p2, p0, Ljp/co/sony/mc/camera/device/CaptureResultNotifier$BokehResult;->mQuality:I
 
     return-void
@@ -50,7 +50,7 @@
 .method public getQuality()I
     .locals 0
 
-    .line 675
+    .line 682
     iget p0, p0, Ljp/co/sony/mc/camera/device/CaptureResultNotifier$BokehResult;->mQuality:I
 
     return p0
@@ -59,7 +59,7 @@
 .method public getStatus()I
     .locals 0
 
-    .line 671
+    .line 678
     iget p0, p0, Ljp/co/sony/mc/camera/device/CaptureResultNotifier$BokehResult;->mStatus:I
 
     return p0

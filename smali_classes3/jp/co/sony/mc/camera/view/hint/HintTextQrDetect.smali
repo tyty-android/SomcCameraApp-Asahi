@@ -29,15 +29,15 @@
 .method public constructor <init>(Ljp/co/sony/mc/camera/view/hint/HintTextQrDetect$MessageType;)V
     .locals 0
 
-    .line 98
+    .line 105
     invoke-direct {p0}, Ljp/co/sony/mc/camera/view/hint/HintTextContent;-><init>()V
 
-    .line 99
+    .line 106
     iput-object p1, p0, Ljp/co/sony/mc/camera/view/hint/HintTextQrDetect;->mType:Ljp/co/sony/mc/camera/view/hint/HintTextQrDetect$MessageType;
 
     const/4 p1, 0x0
 
-    .line 100
+    .line 107
     iput-boolean p1, p0, Ljp/co/sony/mc/camera/view/hint/HintTextQrDetect;->mTransparentBackground:Z
 
     return-void
@@ -46,7 +46,7 @@
 .method public static createTag(Ljp/co/sony/mc/camera/view/hint/HintTextQrDetect$MessageType;)Ljava/lang/String;
     .locals 2
 
-    .line 179
+    .line 191
     new-instance v0, Ljava/lang/StringBuilder;
 
     const-string v1, "HintTextQrDetect:"
@@ -66,6 +66,19 @@
 
 
 # virtual methods
+.method public getDisplayLocation()Ljp/co/sony/mc/camera/view/hint/HintTextContent$DisplayLocation;
+    .locals 0
+
+    .line 171
+    iget-object p0, p0, Ljp/co/sony/mc/camera/view/hint/HintTextQrDetect;->mType:Ljp/co/sony/mc/camera/view/hint/HintTextQrDetect$MessageType;
+
+    invoke-static {p0}, Ljp/co/sony/mc/camera/view/hint/HintTextQrDetect$MessageType;->-$$Nest$fgetmDisplayLocation(Ljp/co/sony/mc/camera/view/hint/HintTextQrDetect$MessageType;)Ljp/co/sony/mc/camera/view/hint/HintTextContent$DisplayLocation;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
 .method public getFadeDuration()I
     .locals 0
 
@@ -77,7 +90,7 @@
 .method public getLeftButtonListener()Landroid/view/View$OnClickListener;
     .locals 0
 
-    .line 175
+    .line 187
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/hint/HintTextQrDetect;->mLeftButtonListener:Landroid/view/View$OnClickListener;
 
     return-object p0
@@ -86,7 +99,7 @@
 .method public getLeftButtonResourceId()I
     .locals 0
 
-    .line 159
+    .line 166
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/hint/HintTextQrDetect;->mType:Ljp/co/sony/mc/camera/view/hint/HintTextQrDetect$MessageType;
 
     invoke-static {p0}, Ljp/co/sony/mc/camera/view/hint/HintTextQrDetect$MessageType;->-$$Nest$fgetmLeftButtonResourceId(Ljp/co/sony/mc/camera/view/hint/HintTextQrDetect$MessageType;)I
@@ -99,7 +112,7 @@
 .method public getMessageGravity()I
     .locals 0
 
-    .line 149
+    .line 156
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/hint/HintTextQrDetect;->mType:Ljp/co/sony/mc/camera/view/hint/HintTextQrDetect$MessageType;
 
     invoke-static {p0}, Ljp/co/sony/mc/camera/view/hint/HintTextQrDetect$MessageType;->-$$Nest$fgetmMessageGravity(Ljp/co/sony/mc/camera/view/hint/HintTextQrDetect$MessageType;)I
@@ -112,7 +125,7 @@
 .method public getMessageLines()I
     .locals 0
 
-    .line 144
+    .line 151
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/hint/HintTextQrDetect;->mType:Ljp/co/sony/mc/camera/view/hint/HintTextQrDetect$MessageType;
 
     invoke-static {p0}, Ljp/co/sony/mc/camera/view/hint/HintTextQrDetect$MessageType;->-$$Nest$fgetmMessageLines(Ljp/co/sony/mc/camera/view/hint/HintTextQrDetect$MessageType;)I
@@ -125,7 +138,7 @@
 .method public getMessageListener()Landroid/view/View$OnClickListener;
     .locals 0
 
-    .line 167
+    .line 179
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/hint/HintTextQrDetect;->mMessageListener:Landroid/view/View$OnClickListener;
 
     return-object p0
@@ -134,7 +147,7 @@
 .method public getMessageString()Ljava/lang/String;
     .locals 2
 
-    .line 134
+    .line 141
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/hint/HintTextQrDetect;->mType:Ljp/co/sony/mc/camera/view/hint/HintTextQrDetect$MessageType;
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/view/hint/HintTextQrDetect$MessageType;->-$$Nest$fgetmMessageResourceId(Ljp/co/sony/mc/camera/view/hint/HintTextQrDetect$MessageType;)I
@@ -145,7 +158,7 @@
 
     if-eq v0, v1, :cond_0
 
-    .line 135
+    .line 142
     invoke-static {}, Ljp/co/sony/mc/camera/CameraApplication;->getContext()Landroid/content/Context;
 
     move-result-object v0
@@ -166,7 +179,7 @@
 
     return-object p0
 
-    .line 138
+    .line 145
     :cond_0
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/hint/HintTextQrDetect;->mType:Ljp/co/sony/mc/camera/view/hint/HintTextQrDetect$MessageType;
 
@@ -180,7 +193,7 @@
 .method public getMessageType()Ljp/co/sony/mc/camera/view/hint/HintTextQrDetect$MessageType;
     .locals 0
 
-    .line 183
+    .line 195
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/hint/HintTextQrDetect;->mType:Ljp/co/sony/mc/camera/view/hint/HintTextQrDetect$MessageType;
 
     return-object p0
@@ -189,7 +202,7 @@
 .method public getMessageWrapType()Ljp/co/sony/mc/camera/view/hint/HintTextContent$MessageWrapType;
     .locals 0
 
-    .line 154
+    .line 161
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/hint/HintTextQrDetect;->mType:Ljp/co/sony/mc/camera/view/hint/HintTextQrDetect$MessageType;
 
     invoke-static {p0}, Ljp/co/sony/mc/camera/view/hint/HintTextQrDetect$MessageType;->-$$Nest$fgetmWrapType(Ljp/co/sony/mc/camera/view/hint/HintTextQrDetect$MessageType;)Ljp/co/sony/mc/camera/view/hint/HintTextContent$MessageWrapType;
@@ -202,7 +215,7 @@
 .method public getPriority()Ljp/co/sony/mc/camera/view/hint/HintTextContent$HintPriority;
     .locals 0
 
-    .line 125
+    .line 132
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/hint/HintTextQrDetect;->mType:Ljp/co/sony/mc/camera/view/hint/HintTextQrDetect$MessageType;
 
     invoke-static {p0}, Ljp/co/sony/mc/camera/view/hint/HintTextQrDetect$MessageType;->-$$Nest$fgetmPriority(Ljp/co/sony/mc/camera/view/hint/HintTextQrDetect$MessageType;)Ljp/co/sony/mc/camera/view/hint/HintTextContent$HintPriority;
@@ -215,7 +228,7 @@
 .method public getTag()Ljava/lang/String;
     .locals 0
 
-    .line 105
+    .line 112
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/hint/HintTextQrDetect;->mType:Ljp/co/sony/mc/camera/view/hint/HintTextQrDetect$MessageType;
 
     invoke-static {p0}, Ljp/co/sony/mc/camera/view/hint/HintTextQrDetect;->createTag(Ljp/co/sony/mc/camera/view/hint/HintTextQrDetect$MessageType;)Ljava/lang/String;
@@ -236,7 +249,7 @@
 .method public isToast()Z
     .locals 0
 
-    .line 110
+    .line 117
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/hint/HintTextQrDetect;->mType:Ljp/co/sony/mc/camera/view/hint/HintTextQrDetect$MessageType;
 
     invoke-static {p0}, Ljp/co/sony/mc/camera/view/hint/HintTextQrDetect$MessageType;->-$$Nest$fgetmIsToast(Ljp/co/sony/mc/camera/view/hint/HintTextQrDetect$MessageType;)Z
@@ -249,7 +262,7 @@
 .method public setLeftButtonListener(Landroid/view/View$OnClickListener;)V
     .locals 0
 
-    .line 171
+    .line 183
     iput-object p1, p0, Ljp/co/sony/mc/camera/view/hint/HintTextQrDetect;->mLeftButtonListener:Landroid/view/View$OnClickListener;
 
     return-void
@@ -258,7 +271,7 @@
 .method public setMessageListener(Landroid/view/View$OnClickListener;)V
     .locals 0
 
-    .line 163
+    .line 175
     iput-object p1, p0, Ljp/co/sony/mc/camera/view/hint/HintTextQrDetect;->mMessageListener:Landroid/view/View$OnClickListener;
 
     return-void
@@ -267,7 +280,7 @@
 .method public setMessageString(Ljava/lang/String;)V
     .locals 0
 
-    .line 129
+    .line 136
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/hint/HintTextQrDetect;->mType:Ljp/co/sony/mc/camera/view/hint/HintTextQrDetect$MessageType;
 
     invoke-static {p0, p1}, Ljp/co/sony/mc/camera/view/hint/HintTextQrDetect$MessageType;->-$$Nest$fputmMessageString(Ljp/co/sony/mc/camera/view/hint/HintTextQrDetect$MessageType;Ljava/lang/String;)V

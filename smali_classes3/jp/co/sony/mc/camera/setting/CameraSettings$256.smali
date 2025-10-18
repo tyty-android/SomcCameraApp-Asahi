@@ -21,7 +21,7 @@
 .method constructor <init>()V
     .locals 0
 
-    .line 2724
+    .line 2751
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -42,8 +42,10 @@
         }
     .end annotation
 
-    .line 2728
-    sget-object p0, Ljp/co/sony/mc/camera/configuration/parameters/PhotoLight;->OFF:Ljp/co/sony/mc/camera/configuration/parameters/PhotoLight;
+    .line 2755
+    invoke-static {}, Ljp/co/sony/mc/camera/configuration/parameters/VideoHdr;->getDefault()Ljp/co/sony/mc/camera/configuration/parameters/VideoHdr;
+
+    move-result-object p0
 
     return-object p0
 .end method

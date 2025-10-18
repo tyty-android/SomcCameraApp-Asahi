@@ -25,7 +25,7 @@
 .method private constructor <init>(Ljp/co/sony/mc/camera/device/state/DeviceStateContext;)V
     .locals 0
 
-    .line 3119
+    .line 3195
     iput-object p1, p0, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$OnFaceDetectionCallback;->this$0:Ljp/co/sony/mc/camera/device/state/DeviceStateContext;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -46,7 +46,7 @@
 .method public onFaceDetection(Ljp/co/sony/mc/camera/device/CaptureResultNotifier$FaceDetectionResult;ZZZ)V
     .locals 9
 
-    .line 3126
+    .line 3202
     iget-object v0, p0, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$OnFaceDetectionCallback;->this$0:Ljp/co/sony/mc/camera/device/state/DeviceStateContext;
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/device/state/DeviceStateContext;->-$$Nest$fgetmCaptureResultCheckerLock(Ljp/co/sony/mc/camera/device/state/DeviceStateContext;)Ljava/lang/Object;
@@ -55,7 +55,7 @@
 
     monitor-enter v0
 
-    .line 3127
+    .line 3203
     :try_start_0
     iget-object v1, p0, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$OnFaceDetectionCallback;->this$0:Ljp/co/sony/mc/camera/device/state/DeviceStateContext;
 
@@ -67,7 +67,7 @@
 
     if-nez v1, :cond_1
 
-    .line 3128
+    .line 3204
     sget-boolean p0, Ljp/co/sony/mc/camera/util/CamLog;->DEBUG:Z
 
     if-eqz p0, :cond_0
@@ -82,19 +82,19 @@
 
     invoke-static {p0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
-    .line 3129
+    .line 3205
     :cond_0
     monitor-exit v0
 
     return-void
 
-    .line 3131
+    .line 3207
     :cond_1
     monitor-exit v0
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 3133
+    .line 3209
     iget-object v0, p0, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$OnFaceDetectionCallback;->this$0:Ljp/co/sony/mc/camera/device/state/DeviceStateContext;
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/device/state/DeviceStateContext;->-$$Nest$fgetmVideoRecorder(Ljp/co/sony/mc/camera/device/state/DeviceStateContext;)Ljp/co/sony/mc/camera/recorder/RecorderController;
@@ -116,7 +116,7 @@
     :cond_2
     move v7, v2
 
-    .line 3134
+    .line 3210
     iget-object p0, p0, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$OnFaceDetectionCallback;->this$0:Ljp/co/sony/mc/camera/device/state/DeviceStateContext;
 
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/device/state/DeviceStateContext;->getCameraDeviceHandlerCallback()Ljp/co/sony/mc/camera/device/state/IDeviceStateMachineCallback;
@@ -138,7 +138,7 @@
     :catchall_0
     move-exception p0
 
-    .line 3131
+    .line 3207
     :try_start_1
     monitor-exit v0
     :try_end_1

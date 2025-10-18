@@ -468,18 +468,22 @@
 .end method
 
 .method public onRectTouchLongPress(Landroid/view/View;Landroid/view/MotionEvent;)V
-    .locals 0
+    .locals 3
 
     .line 2193
     sget-boolean p2, Ljp/co/sony/mc/camera/util/CamLog;->VERBOSE:Z
 
+    const/4 v0, 0x1
+
     if-eqz p2, :cond_0
 
-    const-string p2, "onRectTouchLongPress."
+    new-array p2, v0, [Ljava/lang/String;
 
-    filled-new-array {p2}, [Ljava/lang/String;
+    const/4 v1, 0x0
 
-    move-result-object p2
+    const-string v2, "onRectTouchLongPress."
+
+    aput-object v2, p2, v1
 
     invoke-static {p2}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
@@ -507,11 +511,9 @@
 
     goto :goto_0
 
-    :cond_1
-    const/4 p2, 0x1
-
     .line 2199
-    invoke-virtual {p1, p2}, Landroid/view/View;->setPressed(Z)V
+    :cond_1
+    invoke-virtual {p1, v0}, Landroid/view/View;->setPressed(Z)V
 
     .line 2201
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/focus/FocusRectangles$OnFaceRectTouchListener;->this$0:Ljp/co/sony/mc/camera/view/focus/FocusRectangles;

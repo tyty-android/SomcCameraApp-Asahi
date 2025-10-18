@@ -81,11 +81,7 @@
 .method public final invoke(Landroidx/compose/ui/layout/IntrinsicMeasurable;I)Ljava/lang/Integer;
     .locals 0
 
-    const-string p0, "$this$intrinsicSize"
-
-    invoke-static {p1, p0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 501
+    .line 502
     invoke-interface {p1, p2}, Landroidx/compose/ui/layout/IntrinsicMeasurable;->maxIntrinsicHeight(I)I
 
     move-result p0
@@ -100,7 +96,7 @@
 .method public bridge synthetic invoke(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
 
-    .line 498
+    .line 499
     check-cast p1, Landroidx/compose/ui/layout/IntrinsicMeasurable;
 
     check-cast p2, Ljava/lang/Number;

@@ -1,6 +1,6 @@
 .class public final Landroidx/compose/ui/tooling/animation/clock/AnimatedVisibilityClock;
 .super Ljava/lang/Object;
-.source "AnimatedVisibilityClock.kt"
+.source "AnimatedVisibilityClock.android.kt"
 
 # interfaces
 .implements Landroidx/compose/ui/tooling/animation/clock/ComposeAnimationClock;
@@ -18,12 +18,12 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/SourceDebugExtension;
-    value = "SMAP\nAnimatedVisibilityClock.kt\nKotlin\n*S Kotlin\n*F\n+ 1 AnimatedVisibilityClock.kt\nandroidx/compose/ui/tooling/animation/clock/AnimatedVisibilityClock\n+ 2 _Collections.kt\nkotlin/collections/CollectionsKt___CollectionsKt\n+ 3 fake.kt\nkotlin/jvm/internal/FakeKt\n*L\n1#1,86:1\n1549#2:87\n1620#2,3:88\n1045#2:91\n766#2:92\n857#2,2:93\n1603#2,9:95\n1855#2:104\n1856#2:106\n1612#2:107\n1045#2:108\n766#2:109\n857#2,2:110\n1#3:105\n*S KotlinDebug\n*F\n+ 1 AnimatedVisibilityClock.kt\nandroidx/compose/ui/tooling/animation/clock/AnimatedVisibilityClock\n*L\n68#1:87\n68#1:88,3\n70#1:91\n70#1:92\n70#1:93,2\n77#1:95,9\n77#1:104\n77#1:106\n77#1:107\n79#1:108\n79#1:109\n79#1:110,2\n77#1:105\n*E\n"
+    value = "SMAP\nAnimatedVisibilityClock.android.kt\nKotlin\n*S Kotlin\n*F\n+ 1 AnimatedVisibilityClock.android.kt\nandroidx/compose/ui/tooling/animation/clock/AnimatedVisibilityClock\n+ 2 _Collections.kt\nkotlin/collections/CollectionsKt___CollectionsKt\n+ 3 fake.kt\nkotlin/jvm/internal/FakeKt\n*L\n1#1,87:1\n1549#2:88\n1620#2,3:89\n1045#2:92\n766#2:93\n857#2,2:94\n1603#2,9:96\n1855#2:105\n1856#2:107\n1612#2:108\n1045#2:109\n766#2:110\n857#2,2:111\n1#3:106\n*S KotlinDebug\n*F\n+ 1 AnimatedVisibilityClock.android.kt\nandroidx/compose/ui/tooling/animation/clock/AnimatedVisibilityClock\n*L\n68#1:88\n68#1:89,3\n70#1:92\n70#1:93\n70#1:94,2\n77#1:96,9\n77#1:105\n77#1:107\n77#1:108\n79#1:109\n79#1:110\n79#1:111,2\n77#1:106\n*E\n"
 .end annotation
 
 .annotation runtime Lkotlin/Metadata;
     d1 = {
-        "\u0000J\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u000c\n\u0002\u0010 \n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\t\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0010\u0002\n\u0002\u0008\u0003\n\u0002\u0010\u0000\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0002\u0010\u000b\n\u0002\u0008\u0003\u0008\u0000\u0018\u00002\u000e\u0012\u0004\u0012\u00020\u0002\u0012\u0004\u0012\u00020\u00030\u0001B\r\u0012\u0006\u0010\u0004\u001a\u00020\u0002\u00a2\u0006\u0002\u0010\u0005J\u000e\u0010\u000f\u001a\u0008\u0012\u0004\u0012\u00020\u00110\u0010H\u0016J\u0008\u0010\u0012\u001a\u00020\u0013H\u0016J\u0008\u0010\u0014\u001a\u00020\u0013H\u0016J\u0016\u0010\u0015\u001a\u0008\u0012\u0004\u0012\u00020\u00160\u00102\u0006\u0010\u0017\u001a\u00020\u0013H\u0016J\u0010\u0010\u0018\u001a\u00020\u00192\u0006\u0010\u001a\u001a\u00020\u0013H\u0016J\u001a\u0010\u001b\u001a\u00020\u00192\u0006\u0010\u001c\u001a\u00020\u001d2\u0008\u0010\u001e\u001a\u0004\u0018\u00010\u001dH\u0016J%\u0010\u001f\u001a\u000e\u0012\u0004\u0012\u00020!\u0012\u0004\u0012\u00020!0 *\u00020\u0003H\u0002\u00f8\u0001\u0001\u00f8\u0001\u0000\u00a2\u0006\u0004\u0008\"\u0010#R\u0014\u0010\u0004\u001a\u00020\u0002X\u0096\u0004\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\u0006\u0010\u0007R/\u0010\t\u001a\u00020\u00032\u0006\u0010\u0008\u001a\u00020\u0003@VX\u0096\u000e\u00f8\u0001\u0000\u00f8\u0001\u0001\u00f8\u0001\u0002\u00a2\u0006\u0010\n\u0002\u0010\u000e\u001a\u0004\u0008\n\u0010\u000b\"\u0004\u0008\u000c\u0010\r\u00f8\u0001\u0000\u0082\u0002\u000f\n\u0002\u0008\u0019\n\u0005\u0008\u00a1\u001e0\u0001\n\u0002\u0008!\u00a8\u0006$"
+        "\u0000J\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u000c\n\u0002\u0010 \n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\t\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0010\u0002\n\u0002\u0008\u0003\n\u0002\u0010\u0000\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0002\u0010\u000b\n\u0002\u0008\u0003\u0008\u0000\u0018\u00002\u000e\u0012\u0004\u0012\u00020\u0002\u0012\u0004\u0012\u00020\u00030\u0001B\r\u0012\u0006\u0010\u0004\u001a\u00020\u0002\u00a2\u0006\u0002\u0010\u0005J\u000e\u0010\u000f\u001a\u0008\u0012\u0004\u0012\u00020\u00110\u0010H\u0016J\u0008\u0010\u0012\u001a\u00020\u0013H\u0016J\u0008\u0010\u0014\u001a\u00020\u0013H\u0016J\u0016\u0010\u0015\u001a\u0008\u0012\u0004\u0012\u00020\u00160\u00102\u0006\u0010\u0017\u001a\u00020\u0013H\u0016J\u0010\u0010\u0018\u001a\u00020\u00192\u0006\u0010\u001a\u001a\u00020\u0013H\u0016J\u001a\u0010\u001b\u001a\u00020\u00192\u0006\u0010\u001c\u001a\u00020\u001d2\u0008\u0010\u001e\u001a\u0004\u0018\u00010\u001dH\u0016J\"\u0010\u001f\u001a\u000e\u0012\u0004\u0012\u00020!\u0012\u0004\u0012\u00020!0 *\u00020\u0003H\u0002\u00f8\u0001\u0000\u00a2\u0006\u0004\u0008\"\u0010#R\u0014\u0010\u0004\u001a\u00020\u0002X\u0096\u0004\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\u0006\u0010\u0007R,\u0010\t\u001a\u00020\u00032\u0006\u0010\u0008\u001a\u00020\u0003@VX\u0096\u000e\u00f8\u0001\u0000\u00f8\u0001\u0001\u00a2\u0006\u0010\n\u0002\u0010\u000e\u001a\u0004\u0008\n\u0010\u000b\"\u0004\u0008\u000c\u0010\r\u0082\u0002\u000b\n\u0005\u0008\u00a1\u001e0\u0001\n\u0002\u0008!\u00a8\u0006$"
     }
     d2 = {
         "Landroidx/compose/ui/tooling/animation/clock/AnimatedVisibilityClock;",
@@ -74,6 +74,10 @@
 .end annotation
 
 
+# static fields
+.field public static final $stable:I = 0x8
+
+
 # instance fields
 .field private final animation:Landroidx/compose/ui/tooling/animation/AnimatedVisibilityComposeAnimation;
 
@@ -81,12 +85,14 @@
 
 
 # direct methods
+.method static constructor <clinit>()V
+    .locals 0
+
+    return-void
+.end method
+
 .method public constructor <init>(Landroidx/compose/ui/tooling/animation/AnimatedVisibilityComposeAnimation;)V
-    .locals 1
-
-    const-string v0, "animation"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+    .locals 0
 
     .line 33
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -217,20 +223,20 @@
     if-eqz p0, :cond_5
 
     .line 77
-    invoke-static {p0}, Landroidx/compose/ui/tooling/animation/clock/UtilsKt;->allAnimations(Landroidx/compose/animation/core/Transition;)Ljava/util/List;
+    invoke-static {p0}, Landroidx/compose/ui/tooling/animation/clock/Utils_androidKt;->allAnimations(Landroidx/compose/animation/core/Transition;)Ljava/util/List;
 
     move-result-object p0
 
     check-cast p0, Ljava/lang/Iterable;
 
-    .line 95
+    .line 96
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
     check-cast v0, Ljava/util/Collection;
 
-    .line 104
+    .line 105
     invoke-interface {p0}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
 
     move-result-object p0
@@ -247,7 +253,7 @@
 
     move-result-object v1
 
-    .line 103
+    .line 104
     check-cast v1, Landroidx/compose/animation/core/Transition$TransitionAnimationState;
 
     .line 78
@@ -275,19 +281,19 @@
     :goto_1
     if-eqz v1, :cond_0
 
-    .line 103
+    .line 104
     invoke-interface {v0, v1}, Ljava/util/Collection;->add(Ljava/lang/Object;)Z
 
     goto :goto_0
 
-    .line 107
+    .line 108
     :cond_2
     check-cast v0, Ljava/util/List;
 
-    .line 95
+    .line 96
     check-cast v0, Ljava/lang/Iterable;
 
-    .line 108
+    .line 109
     new-instance p0, Landroidx/compose/ui/tooling/animation/clock/AnimatedVisibilityClock$getAnimatedProperties$lambda$8$$inlined$sortedBy$1;
 
     invoke-direct {p0}, Landroidx/compose/ui/tooling/animation/clock/AnimatedVisibilityClock$getAnimatedProperties$lambda$8$$inlined$sortedBy$1;-><init>()V
@@ -300,14 +306,14 @@
 
     check-cast p0, Ljava/lang/Iterable;
 
-    .line 109
+    .line 110
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
     check-cast v0, Ljava/util/Collection;
 
-    .line 110
+    .line 111
     invoke-interface {p0}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
 
     move-result-object p0
@@ -329,7 +335,7 @@
     check-cast v2, Landroidx/compose/animation/tooling/ComposeAnimatedProperty;
 
     .line 79
-    invoke-static {}, Landroidx/compose/ui/tooling/animation/clock/UtilsKt;->getIGNORE_TRANSITIONS()Ljava/util/List;
+    invoke-static {}, Landroidx/compose/ui/tooling/animation/clock/Utils_androidKt;->getIGNORE_TRANSITIONS()Ljava/util/List;
 
     move-result-object v3
 
@@ -345,12 +351,12 @@
 
     if-eqz v2, :cond_3
 
-    .line 110
+    .line 111
     invoke-interface {v0, v1}, Ljava/util/Collection;->add(Ljava/lang/Object;)Z
 
     goto :goto_2
 
-    .line 111
+    .line 112
     :cond_4
     check-cast v0, Ljava/util/List;
 
@@ -405,7 +411,7 @@
 
     move-result-wide v0
 
-    invoke-static {v0, v1}, Landroidx/compose/ui/tooling/animation/clock/UtilsKt;->nanosToMillis(J)J
+    invoke-static {v0, v1}, Landroidx/compose/ui/tooling/animation/clock/Utils_androidKt;->nanosToMillis(J)J
 
     move-result-wide v0
 
@@ -435,7 +441,7 @@
 
     move-result-wide v0
 
-    invoke-static {v0, v1}, Landroidx/compose/ui/tooling/animation/clock/UtilsKt;->nanosToMillis(J)J
+    invoke-static {v0, v1}, Landroidx/compose/ui/tooling/animation/clock/Utils_androidKt;->nanosToMillis(J)J
 
     move-result-wide v0
 
@@ -494,13 +500,13 @@
     if-eqz p0, :cond_3
 
     .line 68
-    invoke-static {p0}, Landroidx/compose/ui/tooling/animation/clock/UtilsKt;->allAnimations(Landroidx/compose/animation/core/Transition;)Ljava/util/List;
+    invoke-static {p0}, Landroidx/compose/ui/tooling/animation/clock/Utils_androidKt;->allAnimations(Landroidx/compose/animation/core/Transition;)Ljava/util/List;
 
     move-result-object p0
 
     check-cast p0, Ljava/lang/Iterable;
 
-    .line 87
+    .line 88
     new-instance v0, Ljava/util/ArrayList;
 
     const/16 v1, 0xa
@@ -513,7 +519,7 @@
 
     check-cast v0, Ljava/util/Collection;
 
-    .line 88
+    .line 89
     invoke-interface {p0}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
 
     move-result-object p0
@@ -529,27 +535,27 @@
 
     move-result-object v1
 
-    .line 89
+    .line 90
     check-cast v1, Landroidx/compose/animation/core/Transition$TransitionAnimationState;
 
     .line 69
-    invoke-static {v1, p1, p2}, Landroidx/compose/ui/tooling/animation/clock/UtilsKt;->createTransitionInfo(Landroidx/compose/animation/core/Transition$TransitionAnimationState;J)Landroidx/compose/animation/tooling/TransitionInfo;
+    invoke-static {v1, p1, p2}, Landroidx/compose/ui/tooling/animation/clock/Utils_androidKt;->createTransitionInfo(Landroidx/compose/animation/core/Transition$TransitionAnimationState;J)Landroidx/compose/animation/tooling/TransitionInfo;
 
     move-result-object v1
 
-    .line 89
+    .line 90
     invoke-interface {v0, v1}, Ljava/util/Collection;->add(Ljava/lang/Object;)Z
 
     goto :goto_0
 
-    .line 90
+    .line 91
     :cond_0
     check-cast v0, Ljava/util/List;
 
-    .line 87
+    .line 88
     check-cast v0, Ljava/lang/Iterable;
 
-    .line 91
+    .line 92
     new-instance p0, Landroidx/compose/ui/tooling/animation/clock/AnimatedVisibilityClock$getTransitions$lambda$4$$inlined$sortedBy$1;
 
     invoke-direct {p0}, Landroidx/compose/ui/tooling/animation/clock/AnimatedVisibilityClock$getTransitions$lambda$4$$inlined$sortedBy$1;-><init>()V
@@ -562,14 +568,14 @@
 
     check-cast p0, Ljava/lang/Iterable;
 
-    .line 92
+    .line 93
     new-instance p1, Ljava/util/ArrayList;
 
     invoke-direct {p1}, Ljava/util/ArrayList;-><init>()V
 
     check-cast p1, Ljava/util/Collection;
 
-    .line 93
+    .line 94
     invoke-interface {p0}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
 
     move-result-object p0
@@ -591,7 +597,7 @@
     check-cast v0, Landroidx/compose/animation/tooling/TransitionInfo;
 
     .line 70
-    invoke-static {}, Landroidx/compose/ui/tooling/animation/clock/UtilsKt;->getIGNORE_TRANSITIONS()Ljava/util/List;
+    invoke-static {}, Landroidx/compose/ui/tooling/animation/clock/Utils_androidKt;->getIGNORE_TRANSITIONS()Ljava/util/List;
 
     move-result-object v1
 
@@ -607,12 +613,12 @@
 
     if-eqz v0, :cond_1
 
-    .line 93
+    .line 94
     invoke-interface {p1, p2}, Ljava/util/Collection;->add(Ljava/lang/Object;)Z
 
     goto :goto_1
 
-    .line 94
+    .line 95
     :cond_2
     check-cast p1, Ljava/util/List;
 
@@ -700,10 +706,6 @@
 .method public setState-7IW2chM(Ljava/lang/String;)V
     .locals 2
 
-    const-string/jumbo v0, "value"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
     .line 43
     iput-object p1, p0, Landroidx/compose/ui/tooling/animation/clock/AnimatedVisibilityClock;->state:Ljava/lang/String;
 
@@ -718,11 +720,11 @@
 .method public setStateParameters(Ljava/lang/Object;Ljava/lang/Object;)V
     .locals 0
 
-    const-string p2, "par1"
-
-    invoke-static {p1, p2}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
     .line 48
+    const-string p2, "null cannot be cast to non-null type androidx.compose.ui.tooling.animation.states.AnimatedVisibilityState"
+
+    invoke-static {p1, p2}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;Ljava/lang/String;)V
+
     check-cast p1, Landroidx/compose/ui/tooling/animation/states/AnimatedVisibilityState;
 
     invoke-virtual {p1}, Landroidx/compose/ui/tooling/animation/states/AnimatedVisibilityState;->unbox-impl()Ljava/lang/String;

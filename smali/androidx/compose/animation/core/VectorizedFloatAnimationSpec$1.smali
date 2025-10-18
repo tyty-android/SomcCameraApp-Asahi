@@ -49,7 +49,7 @@
 
     iput-object p1, p0, Landroidx/compose/animation/core/VectorizedFloatAnimationSpec$1;->$anim:Landroidx/compose/animation/core/FloatAnimationSpec;
 
-    .line 743
+    .line 748
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -60,7 +60,7 @@
 .method public get(I)Landroidx/compose/animation/core/FloatAnimationSpec;
     .locals 0
 
-    .line 745
+    .line 750
     iget-object p0, p0, Landroidx/compose/animation/core/VectorizedFloatAnimationSpec$1;->$anim:Landroidx/compose/animation/core/FloatAnimationSpec;
 
     return-object p0

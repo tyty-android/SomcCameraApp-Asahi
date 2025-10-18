@@ -4,9 +4,15 @@
 
 
 # annotations
+.annotation system Ldalvik/annotation/MemberClasses;
+    value = {
+        Ljp/co/sony/mc/camera/view/uistate/FlashUiState$WhenMappings;
+    }
+.end annotation
+
 .annotation runtime Lkotlin/Metadata;
     d1 = {
-        "\u0000B\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0002\u0010\u0008\n\u0002\u0008\u0003\n\u0002\u0010\u000b\n\u0002\u0008\u000c\n\u0002\u0018\u0002\n\u0002\u0008\t\n\u0002\u0010\u0002\n\u0002\u0008\u0003\u0008\u0007\u0018\u00002\u00020\u0001B\u001d\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\u0006\u0010\u0004\u001a\u00020\u0005\u0012\u0006\u0010\u0006\u001a\u00020\u0007\u00a2\u0006\u0002\u0010\u0008J\u0006\u0010%\u001a\u00020&J\u0006\u0010\'\u001a\u00020&J\u0006\u0010(\u001a\u00020&R\u000e\u0010\u0004\u001a\u00020\u0005X\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u0002\u001a\u00020\u0003X\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u0017\u0010\t\u001a\u0008\u0012\u0004\u0012\u00020\u000b0\n\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\u000c\u0010\rR\u0017\u0010\u000e\u001a\u0008\u0012\u0004\u0012\u00020\u000f0\n\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\u0010\u0010\rR\u0017\u0010\u0011\u001a\u0008\u0012\u0004\u0012\u00020\u000b0\n\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\u0012\u0010\rR\u0017\u0010\u0013\u001a\u0008\u0012\u0004\u0012\u00020\u000f0\n\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\u0014\u0010\rR\u0017\u0010\u0015\u001a\u0008\u0012\u0004\u0012\u00020\u000f0\n\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\u0015\u0010\rR\u0017\u0010\u0016\u001a\u0008\u0012\u0004\u0012\u00020\u000f0\n\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\u0016\u0010\rR\u0017\u0010\u0017\u001a\u0008\u0012\u0004\u0012\u00020\u000f0\n\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\u0017\u0010\rR\u0017\u0010\u0018\u001a\u0008\u0012\u0004\u0012\u00020\u000f0\n\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\u0018\u0010\rR\u0017\u0010\u0019\u001a\u0008\u0012\u0004\u0012\u00020\u000f0\n\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\u0019\u0010\rR\u0017\u0010\u001a\u001a\u0008\u0012\u0004\u0012\u00020\u000f0\n\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\u001a\u0010\rR\u001c\u0010\u001b\u001a\u0004\u0018\u00010\u001cX\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\u0008\u001d\u0010\u001e\"\u0004\u0008\u001f\u0010 R\u0017\u0010!\u001a\u0008\u0012\u0004\u0012\u00020\u000f0\n\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\"\u0010\rR\u0017\u0010#\u001a\u0008\u0012\u0004\u0012\u00020\u000b0\n\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008$\u0010\rR\u000e\u0010\u0006\u001a\u00020\u0007X\u0082\u0004\u00a2\u0006\u0002\n\u0000\u00a8\u0006)"
+        "\u0000B\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0003\n\u0002\u0018\u0002\n\u0002\u0008\u0005\n\u0002\u0018\u0002\n\u0002\u0010\u0008\n\u0002\u0008\u0003\n\u0002\u0010\u000b\n\u0002\u0008\u0004\n\u0002\u0010\u0002\n\u0002\u0008\u000f\u0008\u0007\u0018\u00002\u00020\u0001B\u001f\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\u0006\u0010\u0004\u001a\u00020\u0005\u0012\u0006\u0010\u0006\u001a\u00020\u0007\u00a2\u0006\u0004\u0008\u0008\u0010\tJ\u0006\u0010\u001a\u001a\u00020\u001bJ\u0006\u0010\"\u001a\u00020\u001bJ\u0006\u0010)\u001a\u00020\u001bR\u000e\u0010\u0002\u001a\u00020\u0003X\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u0004\u001a\u00020\u0005X\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u0006\u001a\u00020\u0007X\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u001c\u0010\n\u001a\u0004\u0018\u00010\u000bX\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\u0008\u000c\u0010\r\"\u0004\u0008\u000e\u0010\u000fR\u0017\u0010\u0010\u001a\u0008\u0012\u0004\u0012\u00020\u00120\u0011\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\u0013\u0010\u0014R\u0017\u0010\u0015\u001a\u0008\u0012\u0004\u0012\u00020\u00160\u0011\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\u0015\u0010\u0014R\u0017\u0010\u0017\u001a\u0008\u0012\u0004\u0012\u00020\u00160\u0011\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\u0017\u0010\u0014R\u0017\u0010\u0018\u001a\u0008\u0012\u0004\u0012\u00020\u00160\u0011\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\u0019\u0010\u0014R\u0017\u0010\u001c\u001a\u0008\u0012\u0004\u0012\u00020\u00120\u0011\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\u001d\u0010\u0014R\u0017\u0010\u001e\u001a\u0008\u0012\u0004\u0012\u00020\u00160\u0011\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\u001e\u0010\u0014R\u0017\u0010\u001f\u001a\u0008\u0012\u0004\u0012\u00020\u00160\u0011\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\u001f\u0010\u0014R\u0017\u0010 \u001a\u0008\u0012\u0004\u0012\u00020\u00160\u0011\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008!\u0010\u0014R\u0017\u0010#\u001a\u0008\u0012\u0004\u0012\u00020\u00120\u0011\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008$\u0010\u0014R\u0017\u0010%\u001a\u0008\u0012\u0004\u0012\u00020\u00160\u0011\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008%\u0010\u0014R\u0017\u0010&\u001a\u0008\u0012\u0004\u0012\u00020\u00160\u0011\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008&\u0010\u0014R\u0017\u0010\'\u001a\u0008\u0012\u0004\u0012\u00020\u00160\u0011\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008(\u0010\u0014\u00a8\u0006*"
     }
     d2 = {
         "Ljp/co/sony/mc/camera/view/uistate/FlashUiState;",
@@ -17,45 +23,46 @@
         "Ljp/co/sony/mc/camera/view/viewmodel/CameraSettingsModel;",
         "proModeCommonUiState",
         "Ljp/co/sony/mc/camera/view/uistate/ProModeCommonUiState;",
+        "<init>",
         "(Ljp/co/sony/mc/camera/view/viewmodel/CameraStatusModel;Ljp/co/sony/mc/camera/view/viewmodel/CameraSettingsModel;Ljp/co/sony/mc/camera/view/uistate/ProModeCommonUiState;)V",
-        "displayFlashModeButtonSrc",
-        "Landroidx/lifecycle/LiveData;",
-        "",
-        "getDisplayFlashModeButtonSrc",
-        "()Landroidx/lifecycle/LiveData;",
-        "displayFlashModeButtonVisible",
-        "",
-        "getDisplayFlashModeButtonVisible",
-        "flashModeButtonSrc",
-        "getFlashModeButtonSrc",
-        "flashModeButtonVisible",
-        "getFlashModeButtonVisible",
-        "isDisplayFlashModeButtonClickable",
-        "isDisplayFlashModeButtonEnabled",
-        "isFlashModeButtonClickable",
-        "isFlashModeButtonEnabled",
-        "isPhotoLightButtonClickable",
-        "isPhotoLightButtonEnabled",
         "operator",
         "Ljp/co/sony/mc/camera/view/CameraOperator;",
         "getOperator",
         "()Ljp/co/sony/mc/camera/view/CameraOperator;",
         "setOperator",
         "(Ljp/co/sony/mc/camera/view/CameraOperator;)V",
-        "photoLightButtonVisible",
-        "getPhotoLightButtonVisible",
+        "flashModeButtonSrc",
+        "Landroidx/lifecycle/LiveData;",
+        "",
+        "getFlashModeButtonSrc",
+        "()Landroidx/lifecycle/LiveData;",
+        "isFlashModeButtonEnabled",
+        "",
+        "isFlashModeButtonClickable",
+        "flashModeButtonVisible",
+        "getFlashModeButtonVisible",
+        "toggleFlashMode",
+        "",
+        "displayFlashModeButtonSrc",
+        "getDisplayFlashModeButtonSrc",
+        "isDisplayFlashModeButtonEnabled",
+        "isDisplayFlashModeButtonClickable",
+        "displayFlashModeButtonVisible",
+        "getDisplayFlashModeButtonVisible",
+        "toggleDisplayFlashMode",
         "photoLightModeButtonSrc",
         "getPhotoLightModeButtonSrc",
-        "toggleDisplayFlashMode",
-        "",
-        "toggleFlashMode",
+        "isPhotoLightButtonEnabled",
+        "isPhotoLightButtonClickable",
+        "photoLightButtonVisible",
+        "getPhotoLightButtonVisible",
         "togglePhotoLightMode",
         "SomcCamera_release"
     }
     k = 0x1
     mv = {
-        0x1,
-        0x9,
+        0x2,
+        0x0,
         0x0
     }
     xi = 0x30
@@ -197,6 +204,96 @@
 
 
 # direct methods
+.method public static synthetic $r8$lambda$3empMgPQ8lfTNzrq2PBLwHJk-2o(Ljp/co/sony/mc/camera/configuration/parameters/DisplayFlash;Ljava/lang/Boolean;)I
+    .locals 0
+
+    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/view/uistate/FlashUiState;->displayFlashModeButtonSrc$lambda$3(Ljp/co/sony/mc/camera/configuration/parameters/DisplayFlash;Ljava/lang/Boolean;)I
+
+    move-result p0
+
+    return p0
+.end method
+
+.method public static synthetic $r8$lambda$DchofpA04-4bho_xBKgaubIhMF8(Ljp/co/sony/mc/camera/setting/SettingAppearance;)Z
+    .locals 0
+
+    invoke-static {p0}, Ljp/co/sony/mc/camera/view/uistate/FlashUiState;->photoLightButtonVisible$lambda$8(Ljp/co/sony/mc/camera/setting/SettingAppearance;)Z
+
+    move-result p0
+
+    return p0
+.end method
+
+.method public static synthetic $r8$lambda$ZURxCr7Kk7LdG2TTVzEpCi-qMGs(ZZ)Z
+    .locals 0
+
+    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/view/uistate/FlashUiState;->isPhotoLightButtonClickable$lambda$7(ZZ)Z
+
+    move-result p0
+
+    return p0
+.end method
+
+.method public static synthetic $r8$lambda$gS8d1ulsrwGF2fV8N4vH4GoKf-A(Ljp/co/sony/mc/camera/configuration/parameters/PhotoLight;)I
+    .locals 0
+
+    invoke-static {p0}, Ljp/co/sony/mc/camera/view/uistate/FlashUiState;->photoLightModeButtonSrc$lambda$5(Ljp/co/sony/mc/camera/configuration/parameters/PhotoLight;)I
+
+    move-result p0
+
+    return p0
+.end method
+
+.method public static synthetic $r8$lambda$hBd56w4sZw6wQTahfYQ3vKquhOY(ZLjp/co/sony/mc/camera/configuration/parameters/DriveMode;Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Ljava/lang/Boolean;ZZ)Z
+    .locals 0
+
+    invoke-static/range {p0 .. p6}, Ljp/co/sony/mc/camera/view/uistate/FlashUiState;->isFlashModeButtonEnabled$lambda$1(ZLjp/co/sony/mc/camera/configuration/parameters/DriveMode;Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Ljava/lang/Boolean;ZZ)Z
+
+    move-result p0
+
+    return p0
+.end method
+
+.method public static synthetic $r8$lambda$kiyTzwNkJFFRxsOIAjg2Vdo57Vo(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Ljp/co/sony/mc/camera/setting/SettingAppearance;)Z
+    .locals 0
+
+    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/view/uistate/FlashUiState;->displayFlashModeButtonVisible$lambda$4(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Ljp/co/sony/mc/camera/setting/SettingAppearance;)Z
+
+    move-result p0
+
+    return p0
+.end method
+
+.method public static synthetic $r8$lambda$n3RzOzIn4LT5qMulWONfhl_pJPk(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Ljp/co/sony/mc/camera/setting/SettingAppearance;)Z
+    .locals 0
+
+    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/view/uistate/FlashUiState;->flashModeButtonVisible$lambda$2(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Ljp/co/sony/mc/camera/setting/SettingAppearance;)Z
+
+    move-result p0
+
+    return p0
+.end method
+
+.method public static synthetic $r8$lambda$qEKwnc-iCjVZBE8QO3XdbGzR8lE(Ljp/co/sony/mc/camera/configuration/parameters/Flash;Ljava/lang/Boolean;)I
+    .locals 0
+
+    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/view/uistate/FlashUiState;->flashModeButtonSrc$lambda$0(Ljp/co/sony/mc/camera/configuration/parameters/Flash;Ljava/lang/Boolean;)I
+
+    move-result p0
+
+    return p0
+.end method
+
+.method public static synthetic $r8$lambda$sBF9OWxuTAjYEn_pNCARbhuYLCY(ZZZZ)Z
+    .locals 0
+
+    invoke-static {p0, p1, p2, p3}, Ljp/co/sony/mc/camera/view/uistate/FlashUiState;->isPhotoLightButtonEnabled$lambda$6(ZZZZ)Z
+
+    move-result p0
+
+    return p0
+.end method
+
 .method static constructor <clinit>()V
     .locals 0
 
@@ -243,11 +340,11 @@
 
     move-result-object v2
 
+    new-instance v3, Ljp/co/sony/mc/camera/view/uistate/FlashUiState$$ExternalSyntheticLambda0;
+
+    invoke-direct {v3}, Ljp/co/sony/mc/camera/view/uistate/FlashUiState$$ExternalSyntheticLambda0;-><init>()V
+
     .line 36
-    sget-object v3, Ljp/co/sony/mc/camera/view/uistate/FlashUiState$flashModeButtonSrc$1;->INSTANCE:Ljp/co/sony/mc/camera/view/uistate/FlashUiState$flashModeButtonSrc$1;
-
-    check-cast v3, Lkotlin/jvm/functions/Function2;
-
     invoke-virtual {v0, v1, v2, v3}, Ljp/co/sony/mc/camera/view/viewmodel/LiveDataMediators;->notNulls(Landroidx/lifecycle/LiveData;Landroidx/lifecycle/LiveData;Lkotlin/jvm/functions/Function2;)Landroidx/lifecycle/LiveData;
 
     move-result-object v0
@@ -296,13 +393,11 @@
 
     move-result-object v8
 
+    new-instance v9, Ljp/co/sony/mc/camera/view/uistate/FlashUiState$$ExternalSyntheticLambda1;
+
+    invoke-direct {v9}, Ljp/co/sony/mc/camera/view/uistate/FlashUiState$$ExternalSyntheticLambda1;-><init>()V
+
     .line 54
-    sget-object v0, Ljp/co/sony/mc/camera/view/uistate/FlashUiState$isFlashModeButtonEnabled$1;->INSTANCE:Ljp/co/sony/mc/camera/view/uistate/FlashUiState$isFlashModeButtonEnabled$1;
-
-    move-object v9, v0
-
-    check-cast v9, Lkotlin/jvm/functions/Function7;
-
     invoke-virtual/range {v1 .. v9}, Ljp/co/sony/mc/camera/view/viewmodel/LiveDataMediators;->notNulls(Landroidx/lifecycle/LiveData;Landroidx/lifecycle/LiveData;Landroidx/lifecycle/LiveData;Landroidx/lifecycle/LiveData;Landroidx/lifecycle/LiveData;Landroidx/lifecycle/LiveData;Landroidx/lifecycle/LiveData;Lkotlin/jvm/functions/Function7;)Landroidx/lifecycle/LiveData;
 
     move-result-object v0
@@ -331,11 +426,11 @@
 
     check-cast v2, Landroidx/lifecycle/LiveData;
 
+    new-instance v3, Ljp/co/sony/mc/camera/view/uistate/FlashUiState$$ExternalSyntheticLambda2;
+
+    invoke-direct {v3}, Ljp/co/sony/mc/camera/view/uistate/FlashUiState$$ExternalSyntheticLambda2;-><init>()V
+
     .line 70
-    sget-object v3, Ljp/co/sony/mc/camera/view/uistate/FlashUiState$flashModeButtonVisible$1;->INSTANCE:Ljp/co/sony/mc/camera/view/uistate/FlashUiState$flashModeButtonVisible$1;
-
-    check-cast v3, Lkotlin/jvm/functions/Function2;
-
     invoke-virtual {v0, v1, v2, v3}, Ljp/co/sony/mc/camera/view/viewmodel/LiveDataMediators;->notNulls(Landroidx/lifecycle/LiveData;Landroidx/lifecycle/LiveData;Lkotlin/jvm/functions/Function2;)Landroidx/lifecycle/LiveData;
 
     move-result-object v0
@@ -355,11 +450,11 @@
 
     move-result-object v2
 
+    new-instance v3, Ljp/co/sony/mc/camera/view/uistate/FlashUiState$$ExternalSyntheticLambda3;
+
+    invoke-direct {v3}, Ljp/co/sony/mc/camera/view/uistate/FlashUiState$$ExternalSyntheticLambda3;-><init>()V
+
     .line 97
-    sget-object v3, Ljp/co/sony/mc/camera/view/uistate/FlashUiState$displayFlashModeButtonSrc$1;->INSTANCE:Ljp/co/sony/mc/camera/view/uistate/FlashUiState$displayFlashModeButtonSrc$1;
-
-    check-cast v3, Lkotlin/jvm/functions/Function2;
-
     invoke-virtual {v0, v1, v2, v3}, Ljp/co/sony/mc/camera/view/viewmodel/LiveDataMediators;->notNulls(Landroidx/lifecycle/LiveData;Landroidx/lifecycle/LiveData;Lkotlin/jvm/functions/Function2;)Landroidx/lifecycle/LiveData;
 
     move-result-object v0
@@ -395,25 +490,25 @@
 
     check-cast v2, Landroidx/lifecycle/LiveData;
 
+    new-instance v3, Ljp/co/sony/mc/camera/view/uistate/FlashUiState$$ExternalSyntheticLambda4;
+
+    invoke-direct {v3}, Ljp/co/sony/mc/camera/view/uistate/FlashUiState$$ExternalSyntheticLambda4;-><init>()V
+
     .line 116
-    sget-object v3, Ljp/co/sony/mc/camera/view/uistate/FlashUiState$displayFlashModeButtonVisible$1;->INSTANCE:Ljp/co/sony/mc/camera/view/uistate/FlashUiState$displayFlashModeButtonVisible$1;
-
-    check-cast v3, Lkotlin/jvm/functions/Function2;
-
     invoke-virtual {v0, v1, v2, v3}, Ljp/co/sony/mc/camera/view/viewmodel/LiveDataMediators;->notNulls(Landroidx/lifecycle/LiveData;Landroidx/lifecycle/LiveData;Lkotlin/jvm/functions/Function2;)Landroidx/lifecycle/LiveData;
 
     move-result-object v0
 
     iput-object v0, p0, Ljp/co/sony/mc/camera/view/uistate/FlashUiState;->displayFlashModeButtonVisible:Landroidx/lifecycle/LiveData;
 
-    .line 132
+    .line 135
     invoke-virtual {p2}, Ljp/co/sony/mc/camera/view/viewmodel/CameraSettingsModel;->getPhotoLight()Landroidx/lifecycle/LiveData;
 
     move-result-object v0
 
-    sget-object v1, Ljp/co/sony/mc/camera/view/uistate/FlashUiState$photoLightModeButtonSrc$1;->INSTANCE:Ljp/co/sony/mc/camera/view/uistate/FlashUiState$photoLightModeButtonSrc$1;
+    new-instance v1, Ljp/co/sony/mc/camera/view/uistate/FlashUiState$$ExternalSyntheticLambda5;
 
-    check-cast v1, Lkotlin/jvm/functions/Function1;
+    invoke-direct {v1}, Ljp/co/sony/mc/camera/view/uistate/FlashUiState$$ExternalSyntheticLambda5;-><init>()V
 
     invoke-static {v0, v1}, Landroidx/lifecycle/Transformations;->map(Landroidx/lifecycle/LiveData;Lkotlin/jvm/functions/Function1;)Landroidx/lifecycle/LiveData;
 
@@ -421,76 +516,74 @@
 
     iput-object v0, p0, Ljp/co/sony/mc/camera/view/uistate/FlashUiState;->photoLightModeButtonSrc:Landroidx/lifecycle/LiveData;
 
-    .line 139
+    .line 142
     sget-object v1, Ljp/co/sony/mc/camera/view/viewmodel/LiveDataMediators;->INSTANCE:Ljp/co/sony/mc/camera/view/viewmodel/LiveDataMediators;
 
-    .line 140
+    .line 143
     invoke-virtual {p1}, Ljp/co/sony/mc/camera/view/viewmodel/CameraStatusModel;->getPreviewing()Landroidx/lifecycle/LiveData;
 
     move-result-object v2
 
-    .line 141
+    .line 144
     invoke-virtual {p1}, Ljp/co/sony/mc/camera/view/viewmodel/CameraStatusModel;->getRecording()Landroidx/lifecycle/LiveData;
 
     move-result-object v3
 
-    .line 142
+    .line 145
     invoke-virtual {p3}, Ljp/co/sony/mc/camera/view/uistate/ProModeCommonUiState;->isAnyFnMenuOpened()Landroidx/lifecycle/LiveData;
 
     move-result-object v4
 
-    .line 143
+    .line 146
     invoke-virtual {p3}, Ljp/co/sony/mc/camera/view/uistate/ProModeCommonUiState;->isFocusMagMenuOpened()Landroidx/lifecycle/LiveData;
 
     move-result-object v5
 
-    .line 139
-    sget-object p3, Ljp/co/sony/mc/camera/view/uistate/FlashUiState$isPhotoLightButtonEnabled$1;->INSTANCE:Ljp/co/sony/mc/camera/view/uistate/FlashUiState$isPhotoLightButtonEnabled$1;
+    new-instance v6, Ljp/co/sony/mc/camera/view/uistate/FlashUiState$$ExternalSyntheticLambda6;
 
-    move-object v6, p3
+    invoke-direct {v6}, Ljp/co/sony/mc/camera/view/uistate/FlashUiState$$ExternalSyntheticLambda6;-><init>()V
 
-    check-cast v6, Lkotlin/jvm/functions/Function4;
-
+    .line 142
     invoke-virtual/range {v1 .. v6}, Ljp/co/sony/mc/camera/view/viewmodel/LiveDataMediators;->notNulls(Landroidx/lifecycle/LiveData;Landroidx/lifecycle/LiveData;Landroidx/lifecycle/LiveData;Landroidx/lifecycle/LiveData;Lkotlin/jvm/functions/Function4;)Landroidx/lifecycle/LiveData;
 
     move-result-object p3
 
     iput-object p3, p0, Ljp/co/sony/mc/camera/view/uistate/FlashUiState;->isPhotoLightButtonEnabled:Landroidx/lifecycle/LiveData;
 
-    .line 147
+    .line 150
     sget-object p3, Ljp/co/sony/mc/camera/view/viewmodel/LiveDataMediators;->INSTANCE:Ljp/co/sony/mc/camera/view/viewmodel/LiveDataMediators;
 
-    .line 148
+    .line 151
     invoke-virtual {p1}, Ljp/co/sony/mc/camera/view/viewmodel/CameraStatusModel;->getReady()Landroidx/lifecycle/LiveData;
 
     move-result-object v0
 
-    .line 149
+    .line 152
     invoke-virtual {p1}, Ljp/co/sony/mc/camera/view/viewmodel/CameraStatusModel;->getRecording()Landroidx/lifecycle/LiveData;
 
     move-result-object p1
 
-    .line 147
-    sget-object v1, Ljp/co/sony/mc/camera/view/uistate/FlashUiState$isPhotoLightButtonClickable$1;->INSTANCE:Ljp/co/sony/mc/camera/view/uistate/FlashUiState$isPhotoLightButtonClickable$1;
+    new-instance v1, Ljp/co/sony/mc/camera/view/uistate/FlashUiState$$ExternalSyntheticLambda7;
 
-    check-cast v1, Lkotlin/jvm/functions/Function2;
+    invoke-direct {v1}, Ljp/co/sony/mc/camera/view/uistate/FlashUiState$$ExternalSyntheticLambda7;-><init>()V
 
+    .line 150
     invoke-virtual {p3, v0, p1, v1}, Ljp/co/sony/mc/camera/view/viewmodel/LiveDataMediators;->notNulls(Landroidx/lifecycle/LiveData;Landroidx/lifecycle/LiveData;Lkotlin/jvm/functions/Function2;)Landroidx/lifecycle/LiveData;
 
     move-result-object p1
 
     iput-object p1, p0, Ljp/co/sony/mc/camera/view/uistate/FlashUiState;->isPhotoLightButtonClickable:Landroidx/lifecycle/LiveData;
 
-    .line 153
+    .line 156
     invoke-virtual {p2}, Ljp/co/sony/mc/camera/view/viewmodel/CameraSettingsModel;->getPhotoLightAppearance()Landroidx/lifecycle/MediatorLiveData;
 
     move-result-object p1
 
     check-cast p1, Landroidx/lifecycle/LiveData;
 
-    sget-object p2, Ljp/co/sony/mc/camera/view/uistate/FlashUiState$photoLightButtonVisible$1;->INSTANCE:Ljp/co/sony/mc/camera/view/uistate/FlashUiState$photoLightButtonVisible$1;
+    new-instance p2, Ljp/co/sony/mc/camera/view/uistate/FlashUiState$$ExternalSyntheticLambda8;
 
-    check-cast p2, Lkotlin/jvm/functions/Function1;
+    invoke-direct {p2}, Ljp/co/sony/mc/camera/view/uistate/FlashUiState$$ExternalSyntheticLambda8;-><init>()V
 
     invoke-static {p1, p2}, Landroidx/lifecycle/Transformations;->map(Landroidx/lifecycle/LiveData;Lkotlin/jvm/functions/Function1;)Landroidx/lifecycle/LiveData;
 
@@ -499,6 +592,334 @@
     iput-object p1, p0, Ljp/co/sony/mc/camera/view/uistate/FlashUiState;->photoLightButtonVisible:Landroidx/lifecycle/LiveData;
 
     return-void
+.end method
+
+.method private static final displayFlashModeButtonSrc$lambda$3(Ljp/co/sony/mc/camera/configuration/parameters/DisplayFlash;Ljava/lang/Boolean;)I
+    .locals 1
+
+    if-nez p0, :cond_0
+
+    const/4 p0, -0x1
+
+    goto :goto_0
+
+    .line 101
+    :cond_0
+    sget-object v0, Ljp/co/sony/mc/camera/view/uistate/FlashUiState$WhenMappings;->$EnumSwitchMapping$1:[I
+
+    invoke-virtual {p0}, Ljp/co/sony/mc/camera/configuration/parameters/DisplayFlash;->ordinal()I
+
+    move-result p0
+
+    aget p0, v0, p0
+
+    :goto_0
+    const/4 v0, 0x1
+
+    if-eq p0, v0, :cond_2
+
+    const/4 p1, 0x2
+
+    if-eq p0, p1, :cond_1
+
+    const p0, 0x7f080198
+
+    goto :goto_1
+
+    :cond_1
+    const p0, 0x7f080185
+
+    goto :goto_1
+
+    .line 102
+    :cond_2
+    invoke-virtual {p1}, Ljava/lang/Boolean;->booleanValue()Z
+
+    move-result p0
+
+    if-eqz p0, :cond_3
+
+    const p0, 0x7f080181
+
+    goto :goto_1
+
+    :cond_3
+    const p0, 0x7f080180
+
+    :goto_1
+    return p0
+.end method
+
+.method private static final displayFlashModeButtonVisible$lambda$4(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Ljp/co/sony/mc/camera/setting/SettingAppearance;)Z
+    .locals 0
+
+    .line 120
+    invoke-virtual {p0}, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->isQuickRecord()Z
+
+    move-result p0
+
+    if-nez p0, :cond_0
+
+    sget-object p0, Ljp/co/sony/mc/camera/setting/SettingAppearance;->INVISIBLE:Ljp/co/sony/mc/camera/setting/SettingAppearance;
+
+    if-eq p1, p0, :cond_0
+
+    const/4 p0, 0x1
+
+    goto :goto_0
+
+    :cond_0
+    const/4 p0, 0x0
+
+    :goto_0
+    return p0
+.end method
+
+.method private static final flashModeButtonSrc$lambda$0(Ljp/co/sony/mc/camera/configuration/parameters/Flash;Ljava/lang/Boolean;)I
+    .locals 1
+
+    if-nez p0, :cond_0
+
+    const/4 p0, -0x1
+
+    goto :goto_0
+
+    .line 40
+    :cond_0
+    sget-object v0, Ljp/co/sony/mc/camera/view/uistate/FlashUiState$WhenMappings;->$EnumSwitchMapping$0:[I
+
+    invoke-virtual {p0}, Ljp/co/sony/mc/camera/configuration/parameters/Flash;->ordinal()I
+
+    move-result p0
+
+    aget p0, v0, p0
+
+    :goto_0
+    const/4 v0, 0x1
+
+    if-eq p0, v0, :cond_3
+
+    const/4 p1, 0x2
+
+    if-eq p0, p1, :cond_2
+
+    const/4 p1, 0x3
+
+    if-eq p0, p1, :cond_1
+
+    const p0, 0x7f080198
+
+    goto :goto_1
+
+    :cond_1
+    const p0, 0x7f08019f
+
+    goto :goto_1
+
+    :cond_2
+    const p0, 0x7f080185
+
+    goto :goto_1
+
+    .line 41
+    :cond_3
+    invoke-virtual {p1}, Ljava/lang/Boolean;->booleanValue()Z
+
+    move-result p0
+
+    if-eqz p0, :cond_4
+
+    const p0, 0x7f080181
+
+    goto :goto_1
+
+    :cond_4
+    const p0, 0x7f080180
+
+    :goto_1
+    return p0
+.end method
+
+.method private static final flashModeButtonVisible$lambda$2(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Ljp/co/sony/mc/camera/setting/SettingAppearance;)Z
+    .locals 0
+
+    .line 74
+    invoke-virtual {p0}, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->isQuickRecord()Z
+
+    move-result p0
+
+    if-nez p0, :cond_0
+
+    sget-object p0, Ljp/co/sony/mc/camera/setting/SettingAppearance;->INVISIBLE:Ljp/co/sony/mc/camera/setting/SettingAppearance;
+
+    if-eq p1, p0, :cond_0
+
+    const/4 p0, 0x1
+
+    goto :goto_0
+
+    :cond_0
+    const/4 p0, 0x0
+
+    :goto_0
+    return p0
+.end method
+
+.method private static final isFlashModeButtonEnabled$lambda$1(ZLjp/co/sony/mc/camera/configuration/parameters/DriveMode;Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Ljava/lang/Boolean;ZZ)Z
+    .locals 0
+
+    if-eqz p0, :cond_1
+
+    .line 64
+    invoke-virtual {p1}, Ljp/co/sony/mc/camera/configuration/parameters/DriveMode;->isBurstMode()Z
+
+    move-result p0
+
+    if-nez p0, :cond_1
+
+    invoke-virtual {p2}, Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;->isLongExposure()Z
+
+    move-result p0
+
+    if-nez p0, :cond_1
+
+    .line 65
+    invoke-virtual {p3}, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->isBokehPhoto()Z
+
+    move-result p0
+
+    if-eqz p0, :cond_0
+
+    invoke-virtual {p4}, Ljava/lang/Boolean;->booleanValue()Z
+
+    move-result p0
+
+    if-nez p0, :cond_1
+
+    :cond_0
+    if-nez p5, :cond_1
+
+    if-nez p6, :cond_1
+
+    const/4 p0, 0x1
+
+    goto :goto_0
+
+    :cond_1
+    const/4 p0, 0x0
+
+    :goto_0
+    return p0
+.end method
+
+.method private static final isPhotoLightButtonClickable$lambda$7(ZZ)Z
+    .locals 0
+
+    if-nez p0, :cond_1
+
+    if-eqz p1, :cond_0
+
+    goto :goto_0
+
+    :cond_0
+    const/4 p0, 0x0
+
+    goto :goto_1
+
+    :cond_1
+    :goto_0
+    const/4 p0, 0x1
+
+    :goto_1
+    return p0
+.end method
+
+.method private static final isPhotoLightButtonEnabled$lambda$6(ZZZZ)Z
+    .locals 0
+
+    if-nez p0, :cond_0
+
+    if-eqz p1, :cond_1
+
+    :cond_0
+    if-nez p2, :cond_1
+
+    if-nez p3, :cond_1
+
+    const/4 p0, 0x1
+
+    goto :goto_0
+
+    :cond_1
+    const/4 p0, 0x0
+
+    :goto_0
+    return p0
+.end method
+
+.method private static final photoLightButtonVisible$lambda$8(Ljp/co/sony/mc/camera/setting/SettingAppearance;)Z
+    .locals 1
+
+    .line 157
+    sget-object v0, Ljp/co/sony/mc/camera/setting/SettingAppearance;->INVISIBLE:Ljp/co/sony/mc/camera/setting/SettingAppearance;
+
+    if-eq p0, v0, :cond_0
+
+    const/4 p0, 0x1
+
+    goto :goto_0
+
+    :cond_0
+    const/4 p0, 0x0
+
+    :goto_0
+    return p0
+.end method
+
+.method private static final photoLightModeButtonSrc$lambda$5(Ljp/co/sony/mc/camera/configuration/parameters/PhotoLight;)I
+    .locals 1
+
+    if-nez p0, :cond_0
+
+    const/4 p0, -0x1
+
+    goto :goto_0
+
+    .line 136
+    :cond_0
+    sget-object v0, Ljp/co/sony/mc/camera/view/uistate/FlashUiState$WhenMappings;->$EnumSwitchMapping$2:[I
+
+    invoke-virtual {p0}, Ljp/co/sony/mc/camera/configuration/parameters/PhotoLight;->ordinal()I
+
+    move-result p0
+
+    aget p0, v0, p0
+
+    :goto_0
+    const/4 v0, 0x1
+
+    if-eq p0, v0, :cond_2
+
+    const/4 v0, 0x2
+
+    if-ne p0, v0, :cond_1
+
+    const p0, 0x7f08019d
+
+    goto :goto_1
+
+    :cond_1
+    new-instance p0, Lkotlin/NoWhenBranchMatchedException;
+
+    invoke-direct {p0}, Lkotlin/NoWhenBranchMatchedException;-><init>()V
+
+    throw p0
+
+    :cond_2
+    const p0, 0x7f08019f
+
+    :goto_1
+    return p0
 .end method
 
 
@@ -591,7 +1012,7 @@
         }
     .end annotation
 
-    .line 153
+    .line 156
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/uistate/FlashUiState;->photoLightButtonVisible:Landroidx/lifecycle/LiveData;
 
     return-object p0
@@ -608,7 +1029,7 @@
         }
     .end annotation
 
-    .line 132
+    .line 135
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/uistate/FlashUiState;->photoLightModeButtonSrc:Landroidx/lifecycle/LiveData;
 
     return-object p0
@@ -693,7 +1114,7 @@
         }
     .end annotation
 
-    .line 147
+    .line 150
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/uistate/FlashUiState;->isPhotoLightButtonClickable:Landroidx/lifecycle/LiveData;
 
     return-object p0
@@ -710,7 +1131,7 @@
         }
     .end annotation
 
-    .line 139
+    .line 142
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/uistate/FlashUiState;->isPhotoLightButtonEnabled:Landroidx/lifecycle/LiveData;
 
     return-object p0
@@ -726,7 +1147,7 @@
 .end method
 
 .method public final toggleDisplayFlashMode()V
-    .locals 2
+    .locals 11
 
     .line 124
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/uistate/FlashUiState;->cameraSettingsModel:Ljp/co/sony/mc/camera/view/viewmodel/CameraSettingsModel;
@@ -772,8 +1193,53 @@
 
     invoke-interface {p0, v0, v1}, Ljp/co/sony/mc/camera/view/CameraOperator;->setSetting(Ljp/co/sony/mc/camera/setting/SettingKey$Key;Ljava/lang/Object;)V
 
+    .line 129
     :cond_1
     :goto_0
+    new-instance p0, Ljp/co/sony/mc/camera/idd/event/IddSettingEvent;
+
+    const/16 v9, 0x3f
+
+    const/4 v10, 0x0
+
+    const/4 v3, 0x0
+
+    const/4 v4, 0x0
+
+    const/4 v5, 0x0
+
+    const/4 v6, 0x0
+
+    const/4 v7, 0x0
+
+    const/4 v8, 0x0
+
+    move-object v2, p0
+
+    invoke-direct/range {v2 .. v10}, Ljp/co/sony/mc/camera/idd/event/IddSettingEvent;-><init>(Ljava/lang/String;Ljp/co/sony/mc/camera/idd/value/IddLauncher;Ljp/co/sony/mc/camera/idd/value/IddMode;Ljp/co/sony/mc/camera/idd/value/IddSettingKey;Ljp/co/sony/mc/camera/idd/value/IddSettingValue;Ljp/co/sony/mc/camera/idd/value/IddUserControl;ILkotlin/jvm/internal/DefaultConstructorMarker;)V
+
+    sget-object v0, Ljp/co/sony/mc/camera/idd/value/IddUserControl;->HEADER:Ljp/co/sony/mc/camera/idd/value/IddUserControl;
+
+    invoke-virtual {p0, v0}, Ljp/co/sony/mc/camera/idd/event/IddSettingEvent;->changeLocation(Ljp/co/sony/mc/camera/idd/value/IddUserControl;)Ljp/co/sony/mc/camera/idd/event/IddSettingEvent;
+
+    move-result-object p0
+
+    .line 130
+    sget-object v0, Ljp/co/sony/mc/camera/setting/CameraSettings;->DISPLAY_FLASH:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
+
+    const-string v1, "DISPLAY_FLASH"
+
+    invoke-static {v0, v1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
+
+    check-cast v0, Ljp/co/sony/mc/camera/setting/SettingKey$Key;
+
+    invoke-virtual {p0, v0}, Ljp/co/sony/mc/camera/idd/event/IddSettingEvent;->setting(Ljp/co/sony/mc/camera/setting/SettingKey$Key;)Ljp/co/sony/mc/camera/idd/event/IddSettingEvent;
+
+    move-result-object p0
+
+    .line 131
+    invoke-virtual {p0}, Ljp/co/sony/mc/camera/idd/event/IddSettingEvent;->send()V
+
     return-void
 .end method
 
@@ -932,7 +1398,7 @@
 
     move-object v2, p0
 
-    invoke-direct/range {v2 .. v10}, Ljp/co/sony/mc/camera/idd/event/IddSettingEvent;-><init>(Ljava/lang/String;Ljp/co/sony/mc/camera/idd/value/IddLauncher;Ljp/co/sony/mc/camera/idd/value/IddMode;Ljp/co/sony/mc/camera/idd/value/IddSetting;Ljp/co/sony/mc/camera/idd/value/IddSettingKey;Ljp/co/sony/mc/camera/idd/value/IddUserControl;ILkotlin/jvm/internal/DefaultConstructorMarker;)V
+    invoke-direct/range {v2 .. v10}, Ljp/co/sony/mc/camera/idd/event/IddSettingEvent;-><init>(Ljava/lang/String;Ljp/co/sony/mc/camera/idd/value/IddLauncher;Ljp/co/sony/mc/camera/idd/value/IddMode;Ljp/co/sony/mc/camera/idd/value/IddSettingKey;Ljp/co/sony/mc/camera/idd/value/IddSettingValue;Ljp/co/sony/mc/camera/idd/value/IddUserControl;ILkotlin/jvm/internal/DefaultConstructorMarker;)V
 
     sget-object v0, Ljp/co/sony/mc/camera/idd/value/IddUserControl;->HEADER:Ljp/co/sony/mc/camera/idd/value/IddUserControl;
 
@@ -960,9 +1426,9 @@
 .end method
 
 .method public final togglePhotoLightMode()V
-    .locals 2
+    .locals 11
 
-    .line 158
+    .line 161
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/uistate/FlashUiState;->cameraSettingsModel:Ljp/co/sony/mc/camera/view/viewmodel/CameraSettingsModel;
 
     invoke-virtual {v0}, Ljp/co/sony/mc/camera/view/viewmodel/CameraSettingsModel;->getPhotoLightAppearance()Landroidx/lifecycle/MediatorLiveData;
@@ -977,7 +1443,7 @@
 
     if-eq v0, v1, :cond_1
 
-    .line 159
+    .line 162
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/uistate/FlashUiState;->cameraSettingsModel:Ljp/co/sony/mc/camera/view/viewmodel/CameraSettingsModel;
 
     invoke-virtual {v0}, Ljp/co/sony/mc/camera/view/viewmodel/CameraSettingsModel;->getPhotoLight()Landroidx/lifecycle/LiveData;
@@ -992,7 +1458,7 @@
 
     if-ne v0, v1, :cond_0
 
-    .line 160
+    .line 163
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/uistate/FlashUiState;->operator:Ljp/co/sony/mc/camera/view/CameraOperator;
 
     if-eqz p0, :cond_1
@@ -1007,7 +1473,7 @@
 
     goto :goto_0
 
-    .line 162
+    .line 165
     :cond_0
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/uistate/FlashUiState;->operator:Ljp/co/sony/mc/camera/view/CameraOperator;
 
@@ -1021,7 +1487,52 @@
 
     invoke-interface {p0, v0, v1}, Ljp/co/sony/mc/camera/view/CameraOperator;->setSetting(Ljp/co/sony/mc/camera/setting/SettingKey$Key;Ljava/lang/Object;)V
 
+    .line 168
     :cond_1
     :goto_0
+    new-instance p0, Ljp/co/sony/mc/camera/idd/event/IddSettingEvent;
+
+    const/16 v9, 0x3f
+
+    const/4 v10, 0x0
+
+    const/4 v3, 0x0
+
+    const/4 v4, 0x0
+
+    const/4 v5, 0x0
+
+    const/4 v6, 0x0
+
+    const/4 v7, 0x0
+
+    const/4 v8, 0x0
+
+    move-object v2, p0
+
+    invoke-direct/range {v2 .. v10}, Ljp/co/sony/mc/camera/idd/event/IddSettingEvent;-><init>(Ljava/lang/String;Ljp/co/sony/mc/camera/idd/value/IddLauncher;Ljp/co/sony/mc/camera/idd/value/IddMode;Ljp/co/sony/mc/camera/idd/value/IddSettingKey;Ljp/co/sony/mc/camera/idd/value/IddSettingValue;Ljp/co/sony/mc/camera/idd/value/IddUserControl;ILkotlin/jvm/internal/DefaultConstructorMarker;)V
+
+    sget-object v0, Ljp/co/sony/mc/camera/idd/value/IddUserControl;->HEADER:Ljp/co/sony/mc/camera/idd/value/IddUserControl;
+
+    invoke-virtual {p0, v0}, Ljp/co/sony/mc/camera/idd/event/IddSettingEvent;->changeLocation(Ljp/co/sony/mc/camera/idd/value/IddUserControl;)Ljp/co/sony/mc/camera/idd/event/IddSettingEvent;
+
+    move-result-object p0
+
+    .line 169
+    sget-object v0, Ljp/co/sony/mc/camera/setting/CameraSettings;->PHOTO_LIGHT:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
+
+    const-string v1, "PHOTO_LIGHT"
+
+    invoke-static {v0, v1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
+
+    check-cast v0, Ljp/co/sony/mc/camera/setting/SettingKey$Key;
+
+    invoke-virtual {p0, v0}, Ljp/co/sony/mc/camera/idd/event/IddSettingEvent;->setting(Ljp/co/sony/mc/camera/setting/SettingKey$Key;)Ljp/co/sony/mc/camera/idd/event/IddSettingEvent;
+
+    move-result-object p0
+
+    .line 170
+    invoke-virtual {p0}, Ljp/co/sony/mc/camera/idd/event/IddSettingEvent;->send()V
+
     return-void
 .end method

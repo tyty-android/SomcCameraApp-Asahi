@@ -51,6 +51,8 @@
 
 
 # instance fields
+.field final synthetic $normalizedTarget:Ljava/nio/file/Path;
+
 .field final synthetic $onError:Lkotlin/jvm/functions/Function3;
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -64,17 +66,30 @@
     .end annotation
 .end field
 
+.field final synthetic $stack:Ljava/util/ArrayList;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljava/util/ArrayList<",
+            "Ljava/nio/file/Path;",
+            ">;"
+        }
+    .end annotation
+.end field
+
 .field final synthetic $target:Ljava/nio/file/Path;
 
 .field final synthetic $this_copyToRecursively:Ljava/nio/file/Path;
 
 
 # direct methods
-.method constructor <init>(Lkotlin/jvm/functions/Function3;Ljava/nio/file/Path;Ljava/nio/file/Path;)V
+.method constructor <init>(Ljava/util/ArrayList;Lkotlin/jvm/functions/Function3;Ljava/nio/file/Path;Ljava/nio/file/Path;Ljava/nio/file/Path;)V
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
+            "Ljava/util/ArrayList<",
+            "Ljava/nio/file/Path;",
+            ">;",
             "Lkotlin/jvm/functions/Function3<",
             "-",
             "Ljava/nio/file/Path;",
@@ -87,15 +102,20 @@
             ">;",
             "Ljava/nio/file/Path;",
             "Ljava/nio/file/Path;",
+            "Ljava/nio/file/Path;",
             ")V"
         }
     .end annotation
 
-    iput-object p1, p0, Lkotlin/io/path/PathsKt__PathRecursiveFunctionsKt$copyToRecursively$5$4;->$onError:Lkotlin/jvm/functions/Function3;
+    iput-object p1, p0, Lkotlin/io/path/PathsKt__PathRecursiveFunctionsKt$copyToRecursively$5$4;->$stack:Ljava/util/ArrayList;
 
-    iput-object p2, p0, Lkotlin/io/path/PathsKt__PathRecursiveFunctionsKt$copyToRecursively$5$4;->$this_copyToRecursively:Ljava/nio/file/Path;
+    iput-object p2, p0, Lkotlin/io/path/PathsKt__PathRecursiveFunctionsKt$copyToRecursively$5$4;->$onError:Lkotlin/jvm/functions/Function3;
 
-    iput-object p3, p0, Lkotlin/io/path/PathsKt__PathRecursiveFunctionsKt$copyToRecursively$5$4;->$target:Ljava/nio/file/Path;
+    iput-object p3, p0, Lkotlin/io/path/PathsKt__PathRecursiveFunctionsKt$copyToRecursively$5$4;->$this_copyToRecursively:Ljava/nio/file/Path;
+
+    iput-object p4, p0, Lkotlin/io/path/PathsKt__PathRecursiveFunctionsKt$copyToRecursively$5$4;->$target:Ljava/nio/file/Path;
+
+    iput-object p5, p0, Lkotlin/io/path/PathsKt__PathRecursiveFunctionsKt$copyToRecursively$5$4;->$normalizedTarget:Ljava/nio/file/Path;
 
     const/4 p1, 0x2
 
@@ -109,7 +129,7 @@
 .method public bridge synthetic invoke(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
 
-    .line 203
+    .line 242
     check-cast p1, Ljava/nio/file/Path;
 
     check-cast p2, Ljava/io/IOException;
@@ -122,30 +142,43 @@
 .end method
 
 .method public final invoke(Ljava/nio/file/Path;Ljava/io/IOException;)Ljava/nio/file/FileVisitResult;
-    .locals 2
+    .locals 6
 
     const-string v0, "directory"
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
+    .line 243
+    iget-object v0, p0, Lkotlin/io/path/PathsKt__PathRecursiveFunctionsKt$copyToRecursively$5$4;->$stack:Ljava/util/ArrayList;
+
+    check-cast v0, Ljava/util/List;
+
+    invoke-static {v0}, Lkotlin/collections/CollectionsKt;->removeLast(Ljava/util/List;)Ljava/lang/Object;
+
     if-nez p2, :cond_0
 
-    .line 205
+    .line 245
     sget-object p0, Ljava/nio/file/FileVisitResult;->CONTINUE:Ljava/nio/file/FileVisitResult;
 
     goto :goto_0
 
-    .line 207
+    .line 247
     :cond_0
     iget-object v0, p0, Lkotlin/io/path/PathsKt__PathRecursiveFunctionsKt$copyToRecursively$5$4;->$onError:Lkotlin/jvm/functions/Function3;
 
     iget-object v1, p0, Lkotlin/io/path/PathsKt__PathRecursiveFunctionsKt$copyToRecursively$5$4;->$this_copyToRecursively:Ljava/nio/file/Path;
 
-    iget-object p0, p0, Lkotlin/io/path/PathsKt__PathRecursiveFunctionsKt$copyToRecursively$5$4;->$target:Ljava/nio/file/Path;
+    iget-object v2, p0, Lkotlin/io/path/PathsKt__PathRecursiveFunctionsKt$copyToRecursively$5$4;->$target:Ljava/nio/file/Path;
 
-    check-cast p2, Ljava/lang/Exception;
+    iget-object v3, p0, Lkotlin/io/path/PathsKt__PathRecursiveFunctionsKt$copyToRecursively$5$4;->$normalizedTarget:Ljava/nio/file/Path;
 
-    invoke-static {v0, v1, p0, p1, p2}, Lkotlin/io/path/PathsKt__PathRecursiveFunctionsKt;->access$copyToRecursively$error(Lkotlin/jvm/functions/Function3;Ljava/nio/file/Path;Ljava/nio/file/Path;Ljava/nio/file/Path;Ljava/lang/Exception;)Ljava/nio/file/FileVisitResult;
+    move-object v5, p2
+
+    check-cast v5, Ljava/lang/Exception;
+
+    move-object v4, p1
+
+    invoke-static/range {v0 .. v5}, Lkotlin/io/path/PathsKt__PathRecursiveFunctionsKt;->access$copyToRecursively$error(Lkotlin/jvm/functions/Function3;Ljava/nio/file/Path;Ljava/nio/file/Path;Ljava/nio/file/Path;Ljava/nio/file/Path;Ljava/lang/Exception;)Ljava/nio/file/FileVisitResult;
 
     move-result-object p0
 

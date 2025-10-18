@@ -30,16 +30,24 @@
 
 # direct methods
 .method static constructor <clinit>()V
-    .locals 2
+    .locals 3
+
+    const/4 v0, 0x2
 
     .line 679
-    const-string v0, "defaultDuration"
+    new-array v0, v0, [Ljava/lang/String;
 
-    const-string v1, "layoutDuringTransition"
+    const/4 v1, 0x0
 
-    filled-new-array {v0, v1}, [Ljava/lang/String;
+    const-string v2, "defaultDuration"
 
-    move-result-object v0
+    aput-object v2, v0, v1
+
+    const/4 v1, 0x1
+
+    const-string v2, "layoutDuringTransition"
+
+    aput-object v2, v0, v1
 
     sput-object v0, Landroidx/constraintlayout/core/motion/utils/TypedValues$MotionScene;->KEY_WORDS:[Ljava/lang/String;
 

@@ -71,7 +71,7 @@
 .end method
 
 .method public constructor <init>(Lkotlin/jvm/functions/Function3;)V
-    .locals 1
+    .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -85,14 +85,10 @@
         }
     .end annotation
 
-    const-string v0, "content"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 308
+    .line 306
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 309
+    .line 307
     iput-object p1, p0, Landroidx/compose/runtime/MovableContent;->content:Lkotlin/jvm/functions/Function3;
 
     return-void
@@ -114,7 +110,7 @@
         }
     .end annotation
 
-    .line 309
+    .line 307
     iget-object p0, p0, Landroidx/compose/runtime/MovableContent;->content:Lkotlin/jvm/functions/Function3;
 
     return-object p0

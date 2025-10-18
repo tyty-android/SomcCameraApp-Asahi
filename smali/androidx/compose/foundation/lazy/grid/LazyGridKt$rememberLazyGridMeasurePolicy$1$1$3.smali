@@ -105,14 +105,10 @@
         }
     .end annotation
 
-    const-string v0, "placement"
-
-    invoke-static {p3, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 363
+    .line 364
     iget-object v0, p0, Landroidx/compose/foundation/lazy/grid/LazyGridKt$rememberLazyGridMeasurePolicy$1$1$3;->$this_null:Landroidx/compose/foundation/lazy/layout/LazyLayoutMeasureScope;
 
-    .line 364
+    .line 365
     iget-wide v1, p0, Landroidx/compose/foundation/lazy/grid/LazyGridKt$rememberLazyGridMeasurePolicy$1$1$3;->$containerConstraints:J
 
     iget v3, p0, Landroidx/compose/foundation/lazy/grid/LazyGridKt$rememberLazyGridMeasurePolicy$1$1$3;->$totalHorizontalPadding:I
@@ -123,7 +119,7 @@
 
     move-result p1
 
-    .line 365
+    .line 366
     iget-wide v1, p0, Landroidx/compose/foundation/lazy/grid/LazyGridKt$rememberLazyGridMeasurePolicy$1$1$3;->$containerConstraints:J
 
     iget p0, p0, Landroidx/compose/foundation/lazy/grid/LazyGridKt$rememberLazyGridMeasurePolicy$1$1$3;->$totalVerticalPadding:I
@@ -134,12 +130,12 @@
 
     move-result p0
 
-    .line 366
+    .line 367
     invoke-static {}, Lkotlin/collections/MapsKt;->emptyMap()Ljava/util/Map;
 
     move-result-object p2
 
-    .line 363
+    .line 364
     invoke-interface {v0, p1, p0, p2, p3}, Landroidx/compose/foundation/lazy/layout/LazyLayoutMeasureScope;->layout(IILjava/util/Map;Lkotlin/jvm/functions/Function1;)Landroidx/compose/ui/layout/MeasureResult;
 
     move-result-object p0
@@ -150,7 +146,7 @@
 .method public bridge synthetic invoke(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
 
-    .line 342
+    .line 341
     check-cast p1, Ljava/lang/Number;
 
     invoke-virtual {p1}, Ljava/lang/Number;->intValue()I

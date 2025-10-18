@@ -33,7 +33,7 @@
 .method constructor <init>(Landroidx/activity/result/ActivityResultRegistry;Ljava/lang/String;Landroidx/activity/result/contract/ActivityResultContract;)V
     .locals 0
 
-    .line 234
+    .line 232
     iput-object p1, p0, Landroidx/activity/result/ActivityResultRegistry$3;->this$0:Landroidx/activity/result/ActivityResultRegistry;
 
     iput-object p2, p0, Landroidx/activity/result/ActivityResultRegistry$3;->val$key:Ljava/lang/String;
@@ -57,7 +57,7 @@
         }
     .end annotation
 
-    .line 261
+    .line 259
     iget-object p0, p0, Landroidx/activity/result/ActivityResultRegistry$3;->val$contract:Landroidx/activity/result/contract/ActivityResultContract;
 
     return-object p0
@@ -73,7 +73,7 @@
         }
     .end annotation
 
-    .line 237
+    .line 235
     iget-object v0, p0, Landroidx/activity/result/ActivityResultRegistry$3;->this$0:Landroidx/activity/result/ActivityResultRegistry;
 
     iget-object v0, v0, Landroidx/activity/result/ActivityResultRegistry;->mKeyToRc:Ljava/util/Map;
@@ -88,7 +88,7 @@
 
     if-eqz v0, :cond_0
 
-    .line 244
+    .line 242
     iget-object v1, p0, Landroidx/activity/result/ActivityResultRegistry$3;->this$0:Landroidx/activity/result/ActivityResultRegistry;
 
     iget-object v1, v1, Landroidx/activity/result/ActivityResultRegistry;->mLaunchedKeys:Ljava/util/ArrayList;
@@ -97,7 +97,7 @@
 
     invoke-virtual {v1, v2}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
-    .line 246
+    .line 244
     :try_start_0
     iget-object v1, p0, Landroidx/activity/result/ActivityResultRegistry$3;->this$0:Landroidx/activity/result/ActivityResultRegistry;
 
@@ -116,7 +116,7 @@
     :catch_0
     move-exception p1
 
-    .line 248
+    .line 246
     iget-object p2, p0, Landroidx/activity/result/ActivityResultRegistry$3;->this$0:Landroidx/activity/result/ActivityResultRegistry;
 
     iget-object p2, p2, Landroidx/activity/result/ActivityResultRegistry;->mLaunchedKeys:Ljava/util/ArrayList;
@@ -125,10 +125,10 @@
 
     invoke-virtual {p2, p0}, Ljava/util/ArrayList;->remove(Ljava/lang/Object;)Z
 
-    .line 249
+    .line 247
     throw p1
 
-    .line 239
+    .line 237
     :cond_0
     new-instance p2, Ljava/lang/IllegalStateException;
 
@@ -172,7 +172,7 @@
 .method public unregister()V
     .locals 1
 
-    .line 255
+    .line 253
     iget-object v0, p0, Landroidx/activity/result/ActivityResultRegistry$3;->this$0:Landroidx/activity/result/ActivityResultRegistry;
 
     iget-object p0, p0, Landroidx/activity/result/ActivityResultRegistry$3;->val$key:Ljava/lang/String;

@@ -16,8 +16,8 @@
 .annotation runtime Lkotlin/Metadata;
     k = 0x3
     mv = {
-        0x1,
-        0x9,
+        0x2,
+        0x0,
         0x0
     }
     xi = 0x30
@@ -82,6 +82,20 @@
     .catch Ljava/lang/NoSuchFieldError; {:try_start_2 .. :try_end_2} :catch_2
 
     :catch_2
+    :try_start_3
+    sget-object v1, Ljp/co/sony/mc/camera/view/UserEventKind;->PINCH_ZOOM_UP:Ljp/co/sony/mc/camera/view/UserEventKind;
+
+    invoke-virtual {v1}, Ljp/co/sony/mc/camera/view/UserEventKind;->ordinal()I
+
+    move-result v1
+
+    const/4 v2, 0x4
+
+    aput v2, v0, v1
+    :try_end_3
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_3 .. :try_end_3} :catch_3
+
+    :catch_3
     sput-object v0, Ljp/co/sony/mc/camera/view/UserEventState$SettingChange$WhenMappings;->$EnumSwitchMapping$0:[I
 
     return-void

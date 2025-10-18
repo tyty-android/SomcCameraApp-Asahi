@@ -154,7 +154,7 @@
 .end method
 
 .method private constructor <init>(Ljava/lang/String;ILjava/lang/String;I)V
-    .locals 0
+    .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -166,14 +166,22 @@
     .line 328
     invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
+    const/4 p1, 0x2
+
     .line 320
-    const-string p1, "/product/media/audio/ui/"
+    new-array p1, p1, [Ljava/lang/String;
 
-    const-string p2, "/system/media/audio/ui/"
+    const/4 p2, 0x0
 
-    filled-new-array {p1, p2}, [Ljava/lang/String;
+    const-string v0, "/product/media/audio/ui/"
 
-    move-result-object p1
+    aput-object v0, p1, p2
+
+    const/4 p2, 0x1
+
+    const-string v0, "/system/media/audio/ui/"
+
+    aput-object v0, p1, p2
 
     iput-object p1, p0, Ljp/co/sony/mc/camera/device/CameraActionSound$Type;->SOUND_DIRS:[Ljava/lang/String;
 

@@ -55,6 +55,10 @@
 .end annotation
 
 
+# static fields
+.field public static final $stable:I = 0x8
+
+
 # instance fields
 .field private final sparseArray:Landroid/util/SparseArray;
     .annotation system Ldalvik/annotation/Signature;
@@ -67,10 +71,16 @@
 
 
 # direct methods
+.method static constructor <clinit>()V
+    .locals 0
+
+    return-void
+.end method
+
 .method public constructor <init>(I)V
     .locals 1
 
-    .line 24
+    .line 25
     new-instance v0, Landroid/util/SparseArray;
 
     invoke-direct {v0, p1}, Landroid/util/SparseArray;-><init>(I)V
@@ -89,7 +99,7 @@
 
     const/16 p1, 0xa
 
-    .line 24
+    .line 25
     :cond_0
     invoke-direct {p0, p1}, Landroidx/compose/runtime/collection/IntMap;-><init>(I)V
 
@@ -120,7 +130,7 @@
 .method public final clear()V
     .locals 0
 
-    .line 56
+    .line 57
     iget-object p0, p0, Landroidx/compose/runtime/collection/IntMap;->sparseArray:Landroid/util/SparseArray;
 
     invoke-virtual {p0}, Landroid/util/SparseArray;->clear()V
@@ -131,7 +141,7 @@
 .method public final contains(I)Z
     .locals 0
 
-    .line 29
+    .line 30
     iget-object p0, p0, Landroidx/compose/runtime/collection/IntMap;->sparseArray:Landroid/util/SparseArray;
 
     invoke-virtual {p0, p1}, Landroid/util/SparseArray;->indexOfKey(I)I
@@ -159,7 +169,7 @@
         }
     .end annotation
 
-    .line 34
+    .line 35
     iget-object p0, p0, Landroidx/compose/runtime/collection/IntMap;->sparseArray:Landroid/util/SparseArray;
 
     invoke-virtual {p0, p1}, Landroid/util/SparseArray;->get(I)Ljava/lang/Object;
@@ -177,7 +187,7 @@
         }
     .end annotation
 
-    .line 39
+    .line 40
     iget-object p0, p0, Landroidx/compose/runtime/collection/IntMap;->sparseArray:Landroid/util/SparseArray;
 
     invoke-virtual {p0, p1, p2}, Landroid/util/SparseArray;->get(ILjava/lang/Object;)Ljava/lang/Object;
@@ -190,7 +200,7 @@
 .method public final getSize()I
     .locals 0
 
-    .line 62
+    .line 63
     iget-object p0, p0, Landroidx/compose/runtime/collection/IntMap;->sparseArray:Landroid/util/SparseArray;
 
     invoke-virtual {p0}, Landroid/util/SparseArray;->size()I
@@ -203,7 +213,7 @@
 .method public final remove(I)V
     .locals 0
 
-    .line 51
+    .line 52
     iget-object p0, p0, Landroidx/compose/runtime/collection/IntMap;->sparseArray:Landroid/util/SparseArray;
 
     invoke-virtual {p0, p1}, Landroid/util/SparseArray;->remove(I)V
@@ -219,7 +229,7 @@
         }
     .end annotation
 
-    .line 44
+    .line 45
     iget-object p0, p0, Landroidx/compose/runtime/collection/IntMap;->sparseArray:Landroid/util/SparseArray;
 
     invoke-virtual {p0, p1, p2}, Landroid/util/SparseArray;->put(ILjava/lang/Object;)V

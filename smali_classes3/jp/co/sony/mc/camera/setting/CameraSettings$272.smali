@@ -21,7 +21,7 @@
 .method constructor <init>()V
     .locals 0
 
-    .line 2851
+    .line 2940
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -42,24 +42,15 @@
         }
     .end annotation
 
-    .line 2855
+    .line 2944
     check-cast p1, Ljp/co/sony/mc/camera/setting/CameraSettings;
 
-    .line 2856
-    invoke-static {p1}, Ljp/co/sony/mc/camera/setting/CameraSettings;->-$$Nest$fgetmCapturingMode(Ljp/co/sony/mc/camera/setting/CameraSettings;)Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
-
-    move-result-object p0
-
-    invoke-virtual {p0}, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->getLayoutMode()Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
-
-    move-result-object p0
-
-    .line 2857
+    .line 2945
     invoke-static {p1}, Ljp/co/sony/mc/camera/setting/CameraSettings;->-$$Nest$fgetmCameraId(Ljp/co/sony/mc/camera/setting/CameraSettings;)Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;
 
-    move-result-object p1
+    move-result-object p0
 
-    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/configuration/parameters/MacroMode;->getDefaultValue(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;)Ljp/co/sony/mc/camera/configuration/parameters/MacroMode;
+    invoke-static {p0}, Ljp/co/sony/mc/camera/configuration/parameters/WbExtensionData;->getDefaultExtensionValue(Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;)Ljp/co/sony/mc/camera/configuration/parameters/WbExtensionData;
 
     move-result-object p0
 

@@ -18,5 +18,8 @@
 
 
 # virtual methods
+.method public abstract activityDestroyed()V
+.end method
+
 .method public abstract viewCreated(Landroid/view/View;)V
 .end method

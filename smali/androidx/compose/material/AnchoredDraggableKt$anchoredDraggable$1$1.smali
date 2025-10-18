@@ -54,7 +54,7 @@
     f = "AnchoredDraggable.kt"
     i = {}
     l = {
-        0x52
+        0xb0
     }
     m = "invokeSuspend"
     n = {}
@@ -182,7 +182,7 @@
 
     move-result-object v0
 
-    .line 82
+    .line 176
     iget v1, p0, Landroidx/compose/material/AnchoredDraggableKt$anchoredDraggable$1$1;->label:I
 
     const/4 v2, 0x1

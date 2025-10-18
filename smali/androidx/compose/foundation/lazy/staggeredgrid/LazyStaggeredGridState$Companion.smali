@@ -42,7 +42,7 @@
 .method private constructor <init>()V
     .locals 0
 
-    .line 488
+    .line 507
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -70,7 +70,7 @@
         }
     .end annotation
 
-    .line 492
+    .line 511
     invoke-static {}, Landroidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridState;->access$getSaver$cp()Landroidx/compose/runtime/saveable/Saver;
 
     move-result-object p0

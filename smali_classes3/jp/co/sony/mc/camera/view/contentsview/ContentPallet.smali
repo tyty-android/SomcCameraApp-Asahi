@@ -158,7 +158,7 @@
 .method disableClick()V
     .locals 3
 
-    const v0, 0x7f09013c
+    const v0, 0x7f09013e
 
     .line 219
     invoke-virtual {p0, v0}, Ljp/co/sony/mc/camera/view/contentsview/ContentPallet;->findViewById(I)Landroid/view/View;
@@ -178,7 +178,7 @@
 
     invoke-virtual {v0, v1}, Landroid/view/View;->setEnabled(Z)V
 
-    const v0, 0x7f090139
+    const v0, 0x7f09013b
 
     .line 221
     invoke-virtual {p0, v0}, Ljp/co/sony/mc/camera/view/contentsview/ContentPallet;->findViewById(I)Landroid/view/View;
@@ -193,7 +193,7 @@
 .method enableClick()V
     .locals 3
 
-    const v0, 0x7f09013c
+    const v0, 0x7f09013e
 
     .line 213
     invoke-virtual {p0, v0}, Ljp/co/sony/mc/camera/view/contentsview/ContentPallet;->findViewById(I)Landroid/view/View;
@@ -213,7 +213,7 @@
 
     invoke-virtual {v0, v1}, Landroid/view/View;->setEnabled(Z)V
 
-    const v0, 0x7f090139
+    const v0, 0x7f09013b
 
     .line 215
     invoke-virtual {p0, v0}, Ljp/co/sony/mc/camera/view/contentsview/ContentPallet;->findViewById(I)Landroid/view/View;
@@ -263,31 +263,35 @@
 .end method
 
 .method initialize(ILjp/co/sony/mc/camera/view/contentsview/ContentPallet$ThumbnailStateListener;)V
-    .locals 2
+    .locals 3
 
     .line 96
     sget-boolean v0, Ljp/co/sony/mc/camera/util/CamLog;->VERBOSE:Z
 
     if-eqz v0, :cond_0
 
+    const/4 v0, 0x1
+
     .line 97
-    new-instance v0, Ljava/lang/StringBuilder;
+    new-array v0, v0, [Ljava/lang/String;
 
-    const-string/jumbo v1, "setRequestId() has been called. id = "
+    new-instance v1, Ljava/lang/StringBuilder;
 
-    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+    const-string/jumbo v2, "setRequestId() has been called. id = "
 
-    invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+    invoke-direct {v1, v2}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
-    move-result-object v0
+    invoke-virtual {v1, p1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    move-result-object v1
 
-    move-result-object v0
+    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    filled-new-array {v0}, [Ljava/lang/String;
+    move-result-object v1
 
-    move-result-object v0
+    const/4 v2, 0x0
+
+    aput-object v1, v0, v2
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
@@ -298,7 +302,7 @@
     .line 99
     iput-object p2, p0, Ljp/co/sony/mc/camera/view/contentsview/ContentPallet;->mThumbnailStateListener:Ljp/co/sony/mc/camera/view/contentsview/ContentPallet$ThumbnailStateListener;
 
-    const p1, 0x7f09013c
+    const p1, 0x7f09013e
 
     .line 100
     invoke-virtual {p0, p1}, Ljp/co/sony/mc/camera/view/contentsview/ContentPallet;->findViewById(I)Landroid/view/View;
@@ -314,7 +318,7 @@
 
     move-result-object p2
 
-    const v0, 0x7f0903ab
+    const v0, 0x7f0903a9
 
     invoke-virtual {p2, v0}, Landroid/view/View;->setNextFocusLeftId(I)V
 
@@ -323,7 +327,7 @@
 
     move-result-object p0
 
-    const p1, 0x7f090304
+    const p1, 0x7f0902f9
 
     invoke-virtual {p0, p1}, Landroid/view/View;->setNextFocusDownId(I)V
 
@@ -333,7 +337,7 @@
 .method public isProvisionalContent()Z
     .locals 1
 
-    const v0, 0x7f09013a
+    const v0, 0x7f09013c
 
     .line 256
     invoke-virtual {p0, v0}, Ljp/co/sony/mc/camera/view/contentsview/ContentPallet;->findViewById(I)Landroid/view/View;
@@ -409,7 +413,7 @@
     iput-object v1, p0, Ljp/co/sony/mc/camera/view/contentsview/ContentPallet;->mContent:Ljp/co/sony/mc/camera/view/contentsview/contents/Content;
 
     :cond_1
-    const v0, 0x7f09013c
+    const v0, 0x7f09013e
 
     .line 113
     invoke-virtual {p0, v0}, Ljp/co/sony/mc/camera/view/contentsview/ContentPallet;->findViewById(I)Landroid/view/View;
@@ -427,40 +431,44 @@
     .line 132
     sget-boolean v0, Ljp/co/sony/mc/camera/util/CamLog;->VERBOSE:Z
 
+    const/4 v1, 0x1
+
+    const/4 v2, 0x0
+
     if-eqz v0, :cond_0
 
-    const-string v0, "set() has been called."
+    new-array v0, v1, [Ljava/lang/String;
 
-    filled-new-array {v0}, [Ljava/lang/String;
+    const-string v3, "set() has been called."
 
-    move-result-object v0
+    aput-object v3, v0, v2
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
     .line 133
     :cond_0
-    new-instance v0, Ljava/lang/StringBuilder;
+    new-array v0, v1, [Ljava/lang/String;
 
-    const-string v1, "KeyTimestamp THUMBNAIL_SHOW currentElapsedRealtimeNanos = "
+    new-instance v1, Ljava/lang/StringBuilder;
 
-    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+    const-string v3, "KeyTimestamp THUMBNAIL_SHOW currentElapsedRealtimeNanos = "
+
+    invoke-direct {v1, v3}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
     .line 134
     invoke-static {}, Landroid/os/SystemClock;->elapsedRealtimeNanos()J
 
-    move-result-wide v1
+    move-result-wide v3
 
-    invoke-virtual {v0, v1, v2}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
+    invoke-virtual {v1, v3, v4}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
 
-    move-result-object v0
+    move-result-object v1
 
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    move-result-object v0
+    move-result-object v1
 
-    filled-new-array {v0}, [Ljava/lang/String;
-
-    move-result-object v0
+    aput-object v1, v0, v2
 
     .line 133
     invoke-static {v0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
@@ -468,7 +476,7 @@
     .line 136
     iput-object p1, p0, Ljp/co/sony/mc/camera/view/contentsview/ContentPallet;->mContent:Ljp/co/sony/mc/camera/view/contentsview/contents/Content;
 
-    const v0, 0x7f090139
+    const v0, 0x7f09013b
 
     .line 139
     invoke-virtual {p0, v0}, Ljp/co/sony/mc/camera/view/contentsview/ContentPallet;->findViewById(I)Landroid/view/View;
@@ -482,12 +490,12 @@
     .line 140
     invoke-virtual {v0, v1}, Landroid/widget/ProgressBar;->setVisibility(I)V
 
-    const/4 v2, 0x0
+    const/4 v3, 0x0
 
     .line 141
-    invoke-virtual {v0, v2}, Landroid/widget/ProgressBar;->setOnClickListener(Landroid/view/View$OnClickListener;)V
+    invoke-virtual {v0, v3}, Landroid/widget/ProgressBar;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
-    const v0, 0x7f09013a
+    const v0, 0x7f09013c
 
     .line 144
     invoke-virtual {p0, v0}, Ljp/co/sony/mc/camera/view/contentsview/ContentPallet;->findViewById(I)Landroid/view/View;
@@ -499,9 +507,7 @@
     .line 145
     iput-object p2, p0, Ljp/co/sony/mc/camera/view/contentsview/ContentPallet;->mThumbnail:Landroid/graphics/Bitmap;
 
-    const/16 v2, 0xd
-
-    const/4 v3, 0x0
+    const/16 v3, 0xd
 
     if-eqz p2, :cond_1
 
@@ -532,7 +538,7 @@
     .line 151
     sget-object p2, Ljp/co/sony/mc/camera/idd/event/IddThumbnailTransitedEvent;->Context:Ljp/co/sony/mc/camera/idd/event/IddThumbnailTransitedEvent$Context;
 
-    invoke-virtual {p2, v3}, Ljp/co/sony/mc/camera/idd/event/IddThumbnailTransitedEvent$Context;->setThumbnailStatus(Z)V
+    invoke-virtual {p2, v2}, Ljp/co/sony/mc/camera/idd/event/IddThumbnailTransitedEvent$Context;->setThumbnailStatus(Z)V
 
     goto :goto_0
 
@@ -548,7 +554,7 @@
     invoke-direct {p2, v4}, Landroid/widget/RelativeLayout$LayoutParams;-><init>(Landroid/view/ViewGroup$LayoutParams;)V
 
     .line 156
-    invoke-virtual {p2, v2}, Landroid/widget/RelativeLayout$LayoutParams;->addRule(I)V
+    invoke-virtual {p2, v3}, Landroid/widget/RelativeLayout$LayoutParams;->addRule(I)V
 
     .line 158
     new-instance v4, Landroid/widget/ImageView;
@@ -565,7 +571,7 @@
     .line 160
     invoke-virtual {p0, v4}, Ljp/co/sony/mc/camera/view/contentsview/ContentPallet;->addView(Landroid/view/View;)V
 
-    const p2, 0x7f0802dd
+    const p2, 0x7f0802f3
 
     .line 161
     invoke-virtual {v4, p2}, Landroid/widget/ImageView;->setImageResource(I)V
@@ -614,7 +620,7 @@
 
     check-cast v4, Landroid/widget/RelativeLayout$LayoutParams;
 
-    invoke-virtual {v4, v2}, Landroid/widget/RelativeLayout$LayoutParams;->addRule(I)V
+    invoke-virtual {v4, v3}, Landroid/widget/RelativeLayout$LayoutParams;->addRule(I)V
 
     .line 171
     invoke-virtual {p1}, Ljp/co/sony/mc/camera/view/contentsview/contents/Content;->getPlayIconResourceId()I
@@ -624,16 +630,16 @@
     invoke-virtual {p2, p1}, Landroid/widget/ImageView;->setImageResource(I)V
 
     :cond_3
-    const p1, 0x7f09013c
+    const p1, 0x7f09013e
 
     .line 175
     invoke-virtual {p0, p1}, Ljp/co/sony/mc/camera/view/contentsview/ContentPallet;->findViewById(I)Landroid/view/View;
 
     move-result-object p1
 
-    invoke-virtual {p1, v3}, Landroid/view/View;->setVisibility(I)V
+    invoke-virtual {p1, v2}, Landroid/view/View;->setVisibility(I)V
 
-    const p1, 0x7f09013b
+    const p1, 0x7f09013d
 
     .line 178
     invoke-virtual {p0, p1}, Ljp/co/sony/mc/camera/view/contentsview/ContentPallet;->findViewById(I)Landroid/view/View;
@@ -645,7 +651,7 @@
     if-eqz p1, :cond_4
 
     .line 180
-    invoke-virtual {p1, v3}, Landroid/widget/ImageView;->setVisibility(I)V
+    invoke-virtual {p1, v2}, Landroid/widget/ImageView;->setVisibility(I)V
 
     .line 184
     :cond_4
@@ -686,7 +692,7 @@
 .method public setProvisionalContent()V
     .locals 4
 
-    const v0, 0x7f09013a
+    const v0, 0x7f09013c
 
     .line 205
     invoke-virtual {p0, v0}, Ljp/co/sony/mc/camera/view/contentsview/ContentPallet;->findViewById(I)Landroid/view/View;
@@ -703,7 +709,7 @@
 
     move-result-object v2
 
-    const v3, 0x7f060417
+    const v3, 0x7f060425
 
     invoke-virtual {v2, v3}, Landroid/content/Context;->getColor(I)I
 
@@ -714,7 +720,7 @@
     .line 206
     invoke-virtual {v0, v1}, Landroid/widget/ImageView;->setImageDrawable(Landroid/graphics/drawable/Drawable;)V
 
-    const v0, 0x7f09013c
+    const v0, 0x7f09013e
 
     .line 209
     invoke-virtual {p0, v0}, Ljp/co/sony/mc/camera/view/contentsview/ContentPallet;->findViewById(I)Landroid/view/View;
@@ -729,21 +735,25 @@
 .end method
 
 .method public setTemporaryThumbnail(Landroid/graphics/Bitmap;)V
-    .locals 2
+    .locals 3
 
     .line 266
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/view/contentsview/ContentPallet;->hasContent()Z
 
     move-result v0
 
+    const/4 v1, 0x1
+
+    const/4 v2, 0x0
+
     if-eqz v0, :cond_0
 
     .line 267
-    const-string p0, "There is content already; No need to show temporary thumbnail."
+    new-array p0, v1, [Ljava/lang/String;
 
-    filled-new-array {p0}, [Ljava/lang/String;
+    const-string p1, "There is content already; No need to show temporary thumbnail."
 
-    move-result-object p0
+    aput-object p1, p0, v2
 
     invoke-static {p0}, Ljp/co/sony/mc/camera/util/CamLog;->v([Ljava/lang/String;)V
 
@@ -755,7 +765,7 @@
 
     invoke-virtual {v0}, Ljp/co/sony/mc/camera/util/PerfLog;->transit()V
 
-    const v0, 0x7f09013d
+    const v0, 0x7f09013f
 
     .line 271
     invoke-virtual {p0, v0}, Ljp/co/sony/mc/camera/view/contentsview/ContentPallet;->findViewById(I)Landroid/view/View;
@@ -767,18 +777,16 @@
     .line 272
     invoke-virtual {v0, p1}, Landroid/widget/ImageView;->setImageBitmap(Landroid/graphics/Bitmap;)V
 
-    const v0, 0x7f09013c
+    const v0, 0x7f09013e
 
     .line 275
     invoke-virtual {p0, v0}, Ljp/co/sony/mc/camera/view/contentsview/ContentPallet;->findViewById(I)Landroid/view/View;
 
     move-result-object v0
 
-    const/4 v1, 0x0
+    invoke-virtual {v0, v2}, Landroid/view/View;->setVisibility(I)V
 
-    invoke-virtual {v0, v1}, Landroid/view/View;->setVisibility(I)V
-
-    const v0, 0x7f09013b
+    const v0, 0x7f09013d
 
     .line 278
     invoke-virtual {p0, v0}, Ljp/co/sony/mc/camera/view/contentsview/ContentPallet;->findViewById(I)Landroid/view/View;
@@ -790,7 +798,7 @@
     if-eqz v0, :cond_1
 
     .line 280
-    invoke-virtual {v0, v1}, Landroid/widget/ImageView;->setVisibility(I)V
+    invoke-virtual {v0, v2}, Landroid/widget/ImageView;->setVisibility(I)V
 
     .line 283
     :cond_1
@@ -804,9 +812,7 @@
     .line 285
     sget-object p0, Ljp/co/sony/mc/camera/idd/event/IddThumbnailTransitedEvent;->Context:Ljp/co/sony/mc/camera/idd/event/IddThumbnailTransitedEvent$Context;
 
-    const/4 p1, 0x1
-
-    invoke-virtual {p0, p1}, Ljp/co/sony/mc/camera/idd/event/IddThumbnailTransitedEvent$Context;->setThumbnailStatus(Z)V
+    invoke-virtual {p0, v1}, Ljp/co/sony/mc/camera/idd/event/IddThumbnailTransitedEvent$Context;->setThumbnailStatus(Z)V
 
     return-void
 .end method

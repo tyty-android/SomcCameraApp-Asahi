@@ -165,7 +165,7 @@
 
     move-object v3, v2
 
-    .line 111
+    .line 110
     :cond_1
     :goto_1
     invoke-virtual {v0}, Ljava/io/BufferedReader;->readLine()Ljava/lang/String;
@@ -174,7 +174,7 @@
 
     if-eqz v4, :cond_d
 
-    .line 112
+    .line 111
     invoke-virtual {v4}, Ljava/lang/String;->isEmpty()Z
 
     move-result v5
@@ -183,7 +183,7 @@
 
     goto :goto_1
 
-    .line 115
+    .line 114
     :cond_2
     const-string v5, "//"
 
@@ -195,7 +195,7 @@
 
     if-nez v1, :cond_4
 
-    .line 118
+    .line 117
     const-string v5, "===BEGIN ICANN DOMAINS==="
 
     invoke-virtual {v4, v5}, Ljava/lang/String;->contains(Ljava/lang/CharSequence;)Z
@@ -204,12 +204,12 @@
 
     if-eqz v5, :cond_3
 
-    .line 119
+    .line 118
     sget-object v1, Lorg/apache/http/conn/util/DomainType;->ICANN:Lorg/apache/http/conn/util/DomainType;
 
     goto :goto_1
 
-    .line 120
+    .line 119
     :cond_3
     const-string v5, "===BEGIN PRIVATE DOMAINS==="
 
@@ -219,12 +219,12 @@
 
     if-eqz v4, :cond_1
 
-    .line 121
+    .line 120
     sget-object v1, Lorg/apache/http/conn/util/DomainType;->PRIVATE:Lorg/apache/http/conn/util/DomainType;
 
     goto :goto_1
 
-    .line 124
+    .line 123
     :cond_4
     const-string v5, "===END ICANN DOMAINS==="
 
@@ -245,7 +245,7 @@
     :cond_5
     if-eqz v2, :cond_0
 
-    .line 126
+    .line 125
     new-instance v4, Lorg/apache/http/conn/util/PublicSuffixList;
 
     invoke-direct {v4, v1, v2, v3}, Lorg/apache/http/conn/util/PublicSuffixList;-><init>(Lorg/apache/http/conn/util/DomainType;Ljava/util/List;Ljava/util/List;)V
@@ -259,7 +259,7 @@
 
     goto :goto_1
 
-    .line 140
+    .line 139
     :cond_7
     const-string v5, "."
 
@@ -271,12 +271,12 @@
 
     if-eqz v5, :cond_8
 
-    .line 141
+    .line 140
     invoke-virtual {v4, v6}, Ljava/lang/String;->substring(I)Ljava/lang/String;
 
     move-result-object v4
 
-    .line 144
+    .line 143
     :cond_8
     const-string v5, "!"
 
@@ -286,7 +286,7 @@
 
     if-eqz v5, :cond_9
 
-    .line 146
+    .line 145
     invoke-virtual {v4, v6}, Ljava/lang/String;->substring(I)Ljava/lang/String;
 
     move-result-object v4
@@ -296,12 +296,12 @@
 
     if-nez v3, :cond_a
 
-    .line 151
+    .line 150
     new-instance v3, Ljava/util/ArrayList;
 
     invoke-direct {v3}, Ljava/util/ArrayList;-><init>()V
 
-    .line 153
+    .line 152
     :cond_a
     invoke-interface {v3, v4}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
@@ -310,12 +310,12 @@
     :cond_b
     if-nez v2, :cond_c
 
-    .line 156
+    .line 155
     new-instance v2, Ljava/util/ArrayList;
 
     invoke-direct {v2}, Ljava/util/ArrayList;-><init>()V
 
-    .line 158
+    .line 157
     :cond_c
     invoke-interface {v2, v4}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 

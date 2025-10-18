@@ -1,6 +1,6 @@
-.class public Landroidx/compose/ui/tooling/animation/AnimationSearch$Search;
+.class public abstract Landroidx/compose/ui/tooling/animation/AnimationSearch$Search;
 .super Ljava/lang/Object;
-.source "AnimationSearch.kt"
+.source "AnimationSearch.android.kt"
 
 
 # annotations
@@ -9,7 +9,7 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0x9
+    accessFlags = 0x409
     name = "Search"
 .end annotation
 
@@ -23,12 +23,12 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/SourceDebugExtension;
-    value = "SMAP\nAnimationSearch.kt\nKotlin\n*S Kotlin\n*F\n+ 1 AnimationSearch.kt\nandroidx/compose/ui/tooling/animation/AnimationSearch$Search\n+ 2 _Collections.kt\nkotlin/collections/CollectionsKt___CollectionsKt\n*L\n1#1,340:1\n1855#2,2:341\n*S KotlinDebug\n*F\n+ 1 AnimationSearch.kt\nandroidx/compose/ui/tooling/animation/AnimationSearch$Search\n*L\n166#1:341,2\n*E\n"
+    value = "SMAP\nAnimationSearch.android.kt\nKotlin\n*S Kotlin\n*F\n+ 1 AnimationSearch.android.kt\nandroidx/compose/ui/tooling/animation/AnimationSearch$Search\n+ 2 _Collections.kt\nkotlin/collections/CollectionsKt___CollectionsKt\n*L\n1#1,457:1\n1747#2,3:458\n1855#2,2:461\n*S KotlinDebug\n*F\n+ 1 AnimationSearch.android.kt\nandroidx/compose/ui/tooling/animation/AnimationSearch$Search\n*L\n164#1:458,3\n181#1:461,2\n*E\n"
 .end annotation
 
 .annotation runtime Lkotlin/Metadata;
     d1 = {
-        "\u00002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0000\n\u0000\n\u0002\u0018\u0002\n\u0002\u0010\u0002\n\u0002\u0008\u0002\n\u0002\u0010#\n\u0002\u0008\u0004\n\u0002\u0010\u001e\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000b\n\u0002\u0008\u0002\u0008\u0017\u0018\u0000*\u0008\u0008\u0000\u0010\u0001*\u00020\u00022\u00020\u0002B\u0019\u0012\u0012\u0010\u0003\u001a\u000e\u0012\u0004\u0012\u00028\u0000\u0012\u0004\u0012\u00020\u00050\u0004\u00a2\u0006\u0002\u0010\u0006J\u0016\u0010\u000b\u001a\u00020\u00052\u000c\u0010\u000c\u001a\u0008\u0012\u0004\u0012\u00020\u000e0\rH\u0016J\u0006\u0010\u000f\u001a\u00020\u0010J\u0006\u0010\u0011\u001a\u00020\u0005R\u0017\u0010\u0007\u001a\u0008\u0012\u0004\u0012\u00028\u00000\u0008\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\t\u0010\nR\u001a\u0010\u0003\u001a\u000e\u0012\u0004\u0012\u00028\u0000\u0012\u0004\u0012\u00020\u00050\u0004X\u0082\u0004\u00a2\u0006\u0002\n\u0000\u00a8\u0006\u0012"
+        "\u00002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0000\n\u0000\n\u0002\u0018\u0002\n\u0002\u0010\u0002\n\u0002\u0008\u0002\n\u0002\u0010#\n\u0002\u0008\u0004\n\u0002\u0010\u001e\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000b\n\u0002\u0008\u0004\u0008\'\u0018\u0000*\u0008\u0008\u0000\u0010\u0001*\u00020\u00022\u00020\u0002B\u0019\u0012\u0012\u0010\u0003\u001a\u000e\u0012\u0004\u0012\u00028\u0000\u0012\u0004\u0012\u00020\u00050\u0004\u00a2\u0006\u0002\u0010\u0006J\u0016\u0010\u000b\u001a\u00020\u00052\u000c\u0010\u000c\u001a\u0008\u0012\u0004\u0012\u00020\u000e0\rH\u0016J\u0010\u0010\u000f\u001a\u00020\u00102\u0006\u0010\u0011\u001a\u00020\u000eH&J\u0014\u0010\u0012\u001a\u00020\u00102\u000c\u0010\u000c\u001a\u0008\u0012\u0004\u0012\u00020\u000e0\rJ\u0006\u0010\u0013\u001a\u00020\u0005R\u0017\u0010\u0007\u001a\u0008\u0012\u0004\u0012\u00028\u00000\u0008\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\t\u0010\nR\u001a\u0010\u0003\u001a\u000e\u0012\u0004\u0012\u00028\u0000\u0012\u0004\u0012\u00020\u00050\u0004X\u0082\u0004\u00a2\u0006\u0002\n\u0000\u00a8\u0006\u0014"
     }
     d2 = {
         "Landroidx/compose/ui/tooling/animation/AnimationSearch$Search;",
@@ -43,11 +43,13 @@
         "getAnimations",
         "()Ljava/util/Set;",
         "addAnimations",
-        "groupsWithLocation",
+        "groups",
         "",
         "Landroidx/compose/ui/tooling/data/Group;",
-        "hasAnimations",
+        "hasAnimation",
         "",
+        "group",
+        "hasAnimations",
         "track",
         "ui-tooling_release"
     }
@@ -95,7 +97,7 @@
 .end method
 
 .method public constructor <init>(Lkotlin/jvm/functions/Function1;)V
-    .locals 1
+    .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -106,16 +108,12 @@
         }
     .end annotation
 
-    const-string/jumbo v0, "trackAnimation"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 159
+    .line 161
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     iput-object p1, p0, Landroidx/compose/ui/tooling/animation/AnimationSearch$Search;->trackAnimation:Lkotlin/jvm/functions/Function1;
 
-    .line 160
+    .line 169
     new-instance p1, Ljava/util/LinkedHashSet;
 
     invoke-direct {p1}, Ljava/util/LinkedHashSet;-><init>()V
@@ -141,10 +139,6 @@
         }
     .end annotation
 
-    const-string p0, "groupsWithLocation"
-
-    invoke-static {p1, p0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
     return-void
 .end method
 
@@ -158,33 +152,86 @@
         }
     .end annotation
 
-    .line 160
+    .line 169
     iget-object p0, p0, Landroidx/compose/ui/tooling/animation/AnimationSearch$Search;->animations:Ljava/util/Set;
 
     return-object p0
 .end method
 
-.method public final hasAnimations()Z
-    .locals 0
+.method public abstract hasAnimation(Landroidx/compose/ui/tooling/data/Group;)Z
+.end method
 
-    .line 162
-    iget-object p0, p0, Landroidx/compose/ui/tooling/animation/AnimationSearch$Search;->animations:Ljava/util/Set;
+.method public final hasAnimations(Ljava/util/Collection;)Z
+    .locals 2
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Ljava/util/Collection<",
+            "+",
+            "Landroidx/compose/ui/tooling/data/Group;",
+            ">;)Z"
+        }
+    .end annotation
 
-    check-cast p0, Ljava/util/Collection;
+    .line 164
+    check-cast p1, Ljava/lang/Iterable;
 
-    invoke-interface {p0}, Ljava/util/Collection;->isEmpty()Z
+    .line 458
+    instance-of v0, p1, Ljava/util/Collection;
 
-    move-result p0
+    const/4 v1, 0x0
 
-    xor-int/lit8 p0, p0, 0x1
+    if-eqz v0, :cond_0
 
-    return p0
+    move-object v0, p1
+
+    check-cast v0, Ljava/util/Collection;
+
+    invoke-interface {v0}, Ljava/util/Collection;->isEmpty()Z
+
+    move-result v0
+
+    if-eqz v0, :cond_0
+
+    goto :goto_0
+
+    .line 459
+    :cond_0
+    invoke-interface {p1}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
+
+    move-result-object p1
+
+    :cond_1
+    invoke-interface {p1}, Ljava/util/Iterator;->hasNext()Z
+
+    move-result v0
+
+    if-eqz v0, :cond_2
+
+    invoke-interface {p1}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, Landroidx/compose/ui/tooling/data/Group;
+
+    .line 164
+    invoke-virtual {p0, v0}, Landroidx/compose/ui/tooling/animation/AnimationSearch$Search;->hasAnimation(Landroidx/compose/ui/tooling/data/Group;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_1
+
+    const/4 v1, 0x1
+
+    :cond_2
+    :goto_0
+    return v1
 .end method
 
 .method public final track()V
     .locals 2
 
-    .line 166
+    .line 181
     iget-object v0, p0, Landroidx/compose/ui/tooling/animation/AnimationSearch$Search;->animations:Ljava/util/Set;
 
     check-cast v0, Ljava/lang/Iterable;
@@ -197,7 +244,7 @@
 
     iget-object p0, p0, Landroidx/compose/ui/tooling/animation/AnimationSearch$Search;->trackAnimation:Lkotlin/jvm/functions/Function1;
 
-    .line 341
+    .line 461
     invoke-interface {v0}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
 
     move-result-object v0

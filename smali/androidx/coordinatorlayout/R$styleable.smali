@@ -123,9 +123,9 @@
 .method public static constructor <clinit>()V
     .locals 5
 
-    const v0, 0x7f040035
+    const v0, 0x7f040036
 
-    const v1, 0x7f04028d
+    const v1, 0x7f040298
 
     const v2, 0x10101a5
 
@@ -139,9 +139,9 @@
 
     sput-object v0, Landroidx/coordinatorlayout/R$styleable;->ColorStateListItem:[I
 
-    const v0, 0x7f04028c
+    const v0, 0x7f040297
 
-    const v1, 0x7f040440
+    const v1, 0x7f04044f
 
     filled-new-array {v0, v1}, [I
 
@@ -192,23 +192,23 @@
     :array_0
     .array-data 4
         0x10100b3
-        0x7f040297
-        0x7f040298
-        0x7f040299
-        0x7f0402ca
-        0x7f0402d4
-        0x7f0402d5
+        0x7f0402a3
+        0x7f0402a4
+        0x7f0402a5
+        0x7f0402d6
+        0x7f0402e0
+        0x7f0402e1
     .end array-data
 
     :array_1
     .array-data 4
-        0x7f04021f
-        0x7f040220
-        0x7f040221
-        0x7f040222
-        0x7f040223
-        0x7f040224
-        0x7f040225
+        0x7f040228
+        0x7f040229
+        0x7f04022a
+        0x7f04022b
+        0x7f04022c
+        0x7f04022d
+        0x7f04022e
     .end array-data
 
     :array_2
@@ -218,11 +218,11 @@
         0x101053f
         0x101056f
         0x1010570
-        0x7f04021d
         0x7f040226
-        0x7f040227
-        0x7f040228
-        0x7f040513
+        0x7f04022f
+        0x7f040230
+        0x7f040231
+        0x7f040526
     .end array-data
 
     :array_3

@@ -98,7 +98,7 @@
 .method public final invoke(I)Ljava/lang/Boolean;
     .locals 8
 
-    .line 110
+    .line 94
     iget-object v0, p0, Landroidx/compose/foundation/lazy/layout/LazyLayoutSemanticsKt$lazyLayoutSemantics$1$scrollToIndexAction$1;->$itemProviderLambda:Lkotlin/jvm/functions/Function0;
 
     invoke-interface {v0}, Lkotlin/jvm/functions/Function0;->invoke()Ljava/lang/Object;
@@ -109,14 +109,14 @@
 
     if-ltz p1, :cond_0
 
-    .line 111
+    .line 95
     invoke-interface {v0}, Landroidx/compose/foundation/lazy/layout/LazyLayoutItemProvider;->getItemCount()I
 
     move-result v1
 
     if-ge p1, v1, :cond_0
 
-    .line 115
+    .line 99
     iget-object v2, p0, Landroidx/compose/foundation/lazy/layout/LazyLayoutSemanticsKt$lazyLayoutSemantics$1$scrollToIndexAction$1;->$coroutineScope:Lkotlinx/coroutines/CoroutineScope;
 
     new-instance v0, Landroidx/compose/foundation/lazy/layout/LazyLayoutSemanticsKt$lazyLayoutSemantics$1$scrollToIndexAction$1$2;
@@ -143,14 +143,14 @@
 
     const/4 p0, 0x1
 
-    .line 118
+    .line 102
     invoke-static {p0}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
     move-result-object p0
 
     return-object p0
 
-    .line 112
+    .line 96
     :cond_0
     new-instance p0, Ljava/lang/StringBuilder;
 
@@ -168,12 +168,12 @@
 
     move-result-object p0
 
-    .line 113
+    .line 97
     invoke-interface {v0}, Landroidx/compose/foundation/lazy/layout/LazyLayoutItemProvider;->getItemCount()I
 
     move-result p1
 
-    .line 112
+    .line 96
     invoke-virtual {p0, p1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
     move-result-object p0
@@ -188,7 +188,7 @@
 
     move-result-object p0
 
-    .line 111
+    .line 95
     new-instance p1, Ljava/lang/IllegalArgumentException;
 
     invoke-virtual {p0}, Ljava/lang/Object;->toString()Ljava/lang/String;
@@ -203,7 +203,7 @@
 .method public bridge synthetic invoke(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
 
-    .line 108
+    .line 92
     check-cast p1, Ljava/lang/Number;
 
     invoke-virtual {p1}, Ljava/lang/Number;->intValue()I

@@ -15,16 +15,40 @@
 .method private constructor <init>()V
     .locals 0
 
-    .line 32
+    .line 31
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
 .end method
 
+.method private static getManufacturer()Ljava/lang/String;
+    .locals 2
+
+    .line 57
+    sget-object v0, Landroid/os/Build;->MANUFACTURER:Ljava/lang/String;
+
+    if-eqz v0, :cond_0
+
+    .line 59
+    sget-object v1, Ljava/util/Locale;->ENGLISH:Ljava/util/Locale;
+
+    invoke-virtual {v0, v1}, Ljava/lang/String;->toLowerCase(Ljava/util/Locale;)Ljava/lang/String;
+
+    move-result-object v0
+
+    return-object v0
+
+    .line 61
+    :cond_0
+    const-string v0, ""
+
+    return-object v0
+.end method
+
 .method public static isDateInputKeyboardMissingSeparatorCharacters()Z
     .locals 1
 
-    .line 53
+    .line 52
     invoke-static {}, Lcom/google/android/material/internal/ManufacturerUtils;->isLGEDevice()Z
 
     move-result v0
@@ -55,12 +79,8 @@
 .method public static isLGEDevice()Z
     .locals 2
 
-    .line 41
-    sget-object v0, Landroid/os/Build;->MANUFACTURER:Ljava/lang/String;
-
-    sget-object v1, Ljava/util/Locale;->ENGLISH:Ljava/util/Locale;
-
-    invoke-virtual {v0, v1}, Ljava/lang/String;->toLowerCase(Ljava/util/Locale;)Ljava/lang/String;
+    .line 40
+    invoke-static {}, Lcom/google/android/material/internal/ManufacturerUtils;->getManufacturer()Ljava/lang/String;
 
     move-result-object v0
 
@@ -76,12 +96,8 @@
 .method public static isMeizuDevice()Z
     .locals 2
 
-    .line 36
-    sget-object v0, Landroid/os/Build;->MANUFACTURER:Ljava/lang/String;
-
-    sget-object v1, Ljava/util/Locale;->ENGLISH:Ljava/util/Locale;
-
-    invoke-virtual {v0, v1}, Ljava/lang/String;->toLowerCase(Ljava/util/Locale;)Ljava/lang/String;
+    .line 35
+    invoke-static {}, Lcom/google/android/material/internal/ManufacturerUtils;->getManufacturer()Ljava/lang/String;
 
     move-result-object v0
 
@@ -97,12 +113,8 @@
 .method public static isSamsungDevice()Z
     .locals 2
 
-    .line 46
-    sget-object v0, Landroid/os/Build;->MANUFACTURER:Ljava/lang/String;
-
-    sget-object v1, Ljava/util/Locale;->ENGLISH:Ljava/util/Locale;
-
-    invoke-virtual {v0, v1}, Ljava/lang/String;->toLowerCase(Ljava/util/Locale;)Ljava/lang/String;
+    .line 45
+    invoke-static {}, Lcom/google/android/material/internal/ManufacturerUtils;->getManufacturer()Ljava/lang/String;
 
     move-result-object v0
 

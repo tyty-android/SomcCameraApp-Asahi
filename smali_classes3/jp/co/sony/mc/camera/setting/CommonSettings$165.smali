@@ -21,7 +21,7 @@
 .method constructor <init>()V
     .locals 0
 
-    .line 1584
+    .line 1590
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -42,8 +42,10 @@
         }
     .end annotation
 
-    .line 1588
-    sget-object p0, Ljp/co/sony/mc/camera/configuration/parameters/Tips;->DUMMY_OFF:Ljp/co/sony/mc/camera/configuration/parameters/Tips;
+    .line 1594
+    invoke-static {}, Ljp/co/sony/mc/camera/configuration/parameters/VolumeKey;->getDefault()Ljp/co/sony/mc/camera/configuration/parameters/VolumeKey;
+
+    move-result-object p0
 
     return-object p0
 .end method

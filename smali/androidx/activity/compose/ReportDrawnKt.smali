@@ -115,10 +115,6 @@
         }
     .end annotation
 
-    const-string v0, "block"
-
-    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
     const v0, 0x38584e28
 
     .line 169
@@ -219,10 +215,6 @@
             "I)V"
         }
     .end annotation
-
-    const-string v0, "predicate"
-
-    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
     const v0, -0x7a04927a
 

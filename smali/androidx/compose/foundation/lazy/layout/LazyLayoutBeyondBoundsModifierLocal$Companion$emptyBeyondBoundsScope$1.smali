@@ -47,7 +47,7 @@
 .method constructor <init>()V
     .locals 0
 
-    .line 48
+    .line 79
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -58,7 +58,7 @@
 .method public getHasMoreContent()Z
     .locals 0
 
-    .line 49
+    .line 80
     iget-boolean p0, p0, Landroidx/compose/foundation/lazy/layout/LazyLayoutBeyondBoundsModifierLocal$Companion$emptyBeyondBoundsScope$1;->hasMoreContent:Z
 
     return p0

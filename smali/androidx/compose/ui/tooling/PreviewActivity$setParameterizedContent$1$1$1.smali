@@ -1,6 +1,6 @@
 .class final Landroidx/compose/ui/tooling/PreviewActivity$setParameterizedContent$1$1$1;
 .super Lkotlin/jvm/internal/Lambda;
-.source "PreviewActivity.kt"
+.source "PreviewActivity.android.kt"
 
 # interfaces
 .implements Lkotlin/jvm/functions/Function0;

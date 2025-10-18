@@ -30,7 +30,7 @@
     .line 0
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/setting/fragment/BasicModeSecondarySettingsFragment$$ExternalSyntheticLambda0;->f$0:Ljp/co/sony/mc/camera/view/setting/fragment/BasicModeSecondarySettingsFragment;
 
-    invoke-static {p0}, Ljp/co/sony/mc/camera/view/setting/fragment/BasicModeSecondarySettingsFragment;->$r8$lambda$d3b8CqQKqTT6n7sAOa31GjQNNiU(Ljp/co/sony/mc/camera/view/setting/fragment/BasicModeSecondarySettingsFragment;)V
+    invoke-static {p0}, Ljp/co/sony/mc/camera/view/setting/fragment/BasicModeSecondarySettingsFragment;->$r8$lambda$xq3FfoiBDYMiouCtq94u-fXFBUM(Ljp/co/sony/mc/camera/view/setting/fragment/BasicModeSecondarySettingsFragment;)V
 
     return-void
 .end method

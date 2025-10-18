@@ -194,7 +194,7 @@
 .end method
 
 .method public onCreateDialog(Landroid/os/Bundle;)Landroid/app/Dialog;
-    .locals 8
+    .locals 10
 
     .line 56
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/view/setting/fragment/SettingMessageDialogFragment;->getArguments()Landroid/os/Bundle;
@@ -218,81 +218,85 @@
 
     if-eqz p1, :cond_0
 
+    const/4 p1, 0x1
+
     .line 59
-    new-instance p1, Ljava/lang/StringBuilder;
+    new-array p1, p1, [Ljava/lang/String;
 
-    const-string v0, "create setting message dialog : "
+    new-instance v0, Ljava/lang/StringBuilder;
 
-    invoke-direct {p1, v0}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+    const-string v1, "create setting message dialog : "
 
-    iget-object v0, p0, Ljp/co/sony/mc/camera/view/setting/fragment/SettingMessageDialogFragment;->mRequest:Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogRequest;
+    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
-    iget-object v0, v0, Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogRequest;->mDialogId:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
+    iget-object v1, p0, Ljp/co/sony/mc/camera/view/setting/fragment/SettingMessageDialogFragment;->mRequest:Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogRequest;
 
-    invoke-virtual {p1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+    iget-object v1, v1, Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogRequest;->mDialogId:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
 
-    move-result-object p1
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {p1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    move-result-object v0
 
-    move-result-object p1
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    filled-new-array {p1}, [Ljava/lang/String;
+    move-result-object v0
 
-    move-result-object p1
+    const/4 v1, 0x0
+
+    aput-object v0, p1, v1
 
     invoke-static {p1}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
     .line 62
     :cond_0
-    new-instance v3, Ljp/co/sony/mc/camera/view/setting/fragment/SettingMessageDialogFragment$OnClickPositiveListener;
+    new-instance v5, Ljp/co/sony/mc/camera/view/setting/fragment/SettingMessageDialogFragment$OnClickPositiveListener;
 
     iget-object p1, p0, Ljp/co/sony/mc/camera/view/setting/fragment/SettingMessageDialogFragment;->mRequest:Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogRequest;
 
-    invoke-direct {v3, p1, p0}, Ljp/co/sony/mc/camera/view/setting/fragment/SettingMessageDialogFragment$OnClickPositiveListener;-><init>(Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogRequest;Ljp/co/sony/mc/camera/view/setting/fragment/SettingMessageDialogFragment;)V
+    invoke-direct {v5, p1, p0}, Ljp/co/sony/mc/camera/view/setting/fragment/SettingMessageDialogFragment$OnClickPositiveListener;-><init>(Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogRequest;Ljp/co/sony/mc/camera/view/setting/fragment/SettingMessageDialogFragment;)V
 
     .line 64
-    new-instance v4, Ljp/co/sony/mc/camera/view/setting/fragment/SettingMessageDialogFragment$OnClickNegativeListener;
+    new-instance v6, Ljp/co/sony/mc/camera/view/setting/fragment/SettingMessageDialogFragment$OnClickNegativeListener;
 
     iget-object p1, p0, Ljp/co/sony/mc/camera/view/setting/fragment/SettingMessageDialogFragment;->mRequest:Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogRequest;
 
-    invoke-direct {v4, p1, p0}, Ljp/co/sony/mc/camera/view/setting/fragment/SettingMessageDialogFragment$OnClickNegativeListener;-><init>(Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogRequest;Ljp/co/sony/mc/camera/view/setting/fragment/SettingMessageDialogFragment;)V
+    invoke-direct {v6, p1, p0}, Ljp/co/sony/mc/camera/view/setting/fragment/SettingMessageDialogFragment$OnClickNegativeListener;-><init>(Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogRequest;Ljp/co/sony/mc/camera/view/setting/fragment/SettingMessageDialogFragment;)V
 
     .line 66
-    new-instance v5, Ljp/co/sony/mc/camera/view/setting/fragment/SettingMessageDialogFragment$OnCancelListener;
+    new-instance v7, Ljp/co/sony/mc/camera/view/setting/fragment/SettingMessageDialogFragment$OnCancelListener;
 
     iget-object p1, p0, Ljp/co/sony/mc/camera/view/setting/fragment/SettingMessageDialogFragment;->mRequest:Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogRequest;
 
-    invoke-direct {v5, p1, p0}, Ljp/co/sony/mc/camera/view/setting/fragment/SettingMessageDialogFragment$OnCancelListener;-><init>(Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogRequest;Ljp/co/sony/mc/camera/view/setting/fragment/SettingMessageDialogFragment;)V
+    invoke-direct {v7, p1, p0}, Ljp/co/sony/mc/camera/view/setting/fragment/SettingMessageDialogFragment$OnCancelListener;-><init>(Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogRequest;Ljp/co/sony/mc/camera/view/setting/fragment/SettingMessageDialogFragment;)V
 
     .line 67
-    new-instance v6, Ljp/co/sony/mc/camera/view/setting/fragment/SettingMessageDialogFragment$OnDismissListener;
+    new-instance v8, Ljp/co/sony/mc/camera/view/setting/fragment/SettingMessageDialogFragment$OnDismissListener;
 
-    invoke-direct {v6}, Ljp/co/sony/mc/camera/view/setting/fragment/SettingMessageDialogFragment$OnDismissListener;-><init>()V
+    invoke-direct {v8}, Ljp/co/sony/mc/camera/view/setting/fragment/SettingMessageDialogFragment$OnDismissListener;-><init>()V
 
     .line 68
-    new-instance v7, Ljp/co/sony/mc/camera/view/setting/fragment/SettingMessageDialogFragment$OnCheckStateConfirmedListener;
+    new-instance v9, Ljp/co/sony/mc/camera/view/setting/fragment/SettingMessageDialogFragment$OnCheckStateConfirmedListener;
 
     iget-object p1, p0, Ljp/co/sony/mc/camera/view/setting/fragment/SettingMessageDialogFragment;->mRequest:Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogRequest;
 
-    invoke-direct {v7, p1, p0}, Ljp/co/sony/mc/camera/view/setting/fragment/SettingMessageDialogFragment$OnCheckStateConfirmedListener;-><init>(Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogRequest;Ljp/co/sony/mc/camera/view/setting/fragment/SettingMessageDialogFragment;)V
+    invoke-direct {v9, p1, p0}, Ljp/co/sony/mc/camera/view/setting/fragment/SettingMessageDialogFragment$OnCheckStateConfirmedListener;-><init>(Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogRequest;Ljp/co/sony/mc/camera/view/setting/fragment/SettingMessageDialogFragment;)V
 
     .line 71
-    new-instance v0, Ljp/co/sony/mc/camera/view/messagedialog/SettingMessageDialogBuilder;
+    new-instance v2, Ljp/co/sony/mc/camera/view/messagedialog/SettingMessageDialogBuilder;
 
-    invoke-direct {v0}, Ljp/co/sony/mc/camera/view/messagedialog/SettingMessageDialogBuilder;-><init>()V
+    invoke-direct {v2}, Ljp/co/sony/mc/camera/view/messagedialog/SettingMessageDialogBuilder;-><init>()V
 
-    iput-object v0, p0, Ljp/co/sony/mc/camera/view/setting/fragment/SettingMessageDialogFragment;->mBuilder:Ljp/co/sony/mc/camera/view/messagedialog/SettingMessageDialogBuilder;
+    iput-object v2, p0, Ljp/co/sony/mc/camera/view/setting/fragment/SettingMessageDialogFragment;->mBuilder:Ljp/co/sony/mc/camera/view/messagedialog/SettingMessageDialogBuilder;
 
     .line 73
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/view/setting/fragment/SettingMessageDialogFragment;->getActivity()Landroidx/fragment/app/FragmentActivity;
 
-    move-result-object v1
+    move-result-object v3
 
-    iget-object v2, p0, Ljp/co/sony/mc/camera/view/setting/fragment/SettingMessageDialogFragment;->mRequest:Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogRequest;
+    iget-object v4, p0, Ljp/co/sony/mc/camera/view/setting/fragment/SettingMessageDialogFragment;->mRequest:Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogRequest;
 
     .line 72
-    invoke-virtual/range {v0 .. v7}, Ljp/co/sony/mc/camera/view/messagedialog/SettingMessageDialogBuilder;->create(Landroid/content/Context;Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogRequest;Landroid/content/DialogInterface$OnClickListener;Landroid/content/DialogInterface$OnClickListener;Landroid/content/DialogInterface$OnCancelListener;Landroid/content/DialogInterface$OnDismissListener;Ljp/co/sony/mc/camera/view/messagedialog/SettingMessageDialogBuilder$OnCheckStateConfirmedListener;)Landroid/app/AlertDialog;
+    invoke-virtual/range {v2 .. v9}, Ljp/co/sony/mc/camera/view/messagedialog/SettingMessageDialogBuilder;->create(Landroid/content/Context;Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogRequest;Landroid/content/DialogInterface$OnClickListener;Landroid/content/DialogInterface$OnClickListener;Landroid/content/DialogInterface$OnCancelListener;Landroid/content/DialogInterface$OnDismissListener;Ljp/co/sony/mc/camera/view/messagedialog/SettingMessageDialogBuilder$OnCheckStateConfirmedListener;)Landroid/app/AlertDialog;
 
     move-result-object p0
 

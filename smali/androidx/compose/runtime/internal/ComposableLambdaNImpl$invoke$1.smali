@@ -103,10 +103,6 @@
 .method public final invoke(Landroidx/compose/runtime/Composer;I)V
     .locals 7
 
-    const-string p2, "nc"
-
-    invoke-static {p1, p2}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
     .line 122
     iget-object p2, p0, Landroidx/compose/runtime/internal/ComposableLambdaNImpl$invoke$1;->$args:[Ljava/lang/Object;
 

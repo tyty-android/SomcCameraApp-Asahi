@@ -6,7 +6,7 @@
 # annotations
 .annotation runtime Lkotlin/Metadata;
     d1 = {
-        "\u0000\u0010\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0003\u001a!\u0010\u0000\u001a\u00020\u0001*\u00020\u00012\u0006\u0010\u0002\u001a\u00020\u0003H\u0002\u00f8\u0001\u0000\u00f8\u0001\u0001\u00a2\u0006\u0004\u0008\u0004\u0010\u0005\u0082\u0002\u000b\n\u0005\u0008\u00a1\u001e0\u0001\n\u0002\u0008\u0019\u00a8\u0006\u0006"
+        "\u0000\u0010\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0003\u001a\u001e\u0010\u0000\u001a\u00020\u0001*\u00020\u00012\u0006\u0010\u0002\u001a\u00020\u0003H\u0002\u00f8\u0001\u0000\u00a2\u0006\u0004\u0008\u0004\u0010\u0005\u0082\u0002\u0007\n\u0005\u0008\u00a1\u001e0\u0001\u00a8\u0006\u0006"
     }
     d2 = {
         "coerceIn",
@@ -42,7 +42,7 @@
 .method private static final coerceIn-3MmeM6k(JLandroidx/compose/ui/geometry/Rect;)J
     .locals 3
 
-    .line 115
+    .line 117
     invoke-static {p0, p1}, Landroidx/compose/ui/geometry/Offset;->getX-impl(J)F
 
     move-result v0
@@ -61,7 +61,7 @@
 
     goto :goto_0
 
-    .line 116
+    .line 118
     :cond_0
     invoke-static {p0, p1}, Landroidx/compose/ui/geometry/Offset;->getX-impl(J)F
 
@@ -81,13 +81,13 @@
 
     goto :goto_0
 
-    .line 117
+    .line 119
     :cond_1
     invoke-static {p0, p1}, Landroidx/compose/ui/geometry/Offset;->getX-impl(J)F
 
     move-result v0
 
-    .line 120
+    .line 122
     :goto_0
     invoke-static {p0, p1}, Landroidx/compose/ui/geometry/Offset;->getY-impl(J)F
 
@@ -107,7 +107,7 @@
 
     goto :goto_1
 
-    .line 121
+    .line 123
     :cond_2
     invoke-static {p0, p1}, Landroidx/compose/ui/geometry/Offset;->getY-impl(J)F
 
@@ -127,13 +127,13 @@
 
     goto :goto_1
 
-    .line 122
+    .line 124
     :cond_3
     invoke-static {p0, p1}, Landroidx/compose/ui/geometry/Offset;->getY-impl(J)F
 
     move-result p0
 
-    .line 124
+    .line 126
     :goto_1
     invoke-static {v0, p0}, Landroidx/compose/ui/geometry/OffsetKt;->Offset(FF)J
 

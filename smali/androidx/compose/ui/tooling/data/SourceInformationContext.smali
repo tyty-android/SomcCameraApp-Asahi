@@ -1,6 +1,6 @@
 .class final Landroidx/compose/ui/tooling/data/SourceInformationContext;
 .super Ljava/lang/Object;
-.source "SlotTree.kt"
+.source "SlotTree.jvm.kt"
 
 
 # annotations
@@ -92,7 +92,7 @@
 
 # direct methods
 .method public constructor <init>(Ljava/lang/String;Ljava/lang/String;ILjava/util/List;ILjava/util/List;ZZ)V
-    .locals 1
+    .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -108,35 +108,31 @@
         }
     .end annotation
 
-    const-string v0, "locations"
-
-    invoke-static {p4, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 204
+    .line 206
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 206
+    .line 208
     iput-object p1, p0, Landroidx/compose/ui/tooling/data/SourceInformationContext;->name:Ljava/lang/String;
 
-    .line 207
+    .line 209
     iput-object p2, p0, Landroidx/compose/ui/tooling/data/SourceInformationContext;->sourceFile:Ljava/lang/String;
 
-    .line 208
+    .line 210
     iput p3, p0, Landroidx/compose/ui/tooling/data/SourceInformationContext;->packageHash:I
 
-    .line 209
+    .line 211
     iput-object p4, p0, Landroidx/compose/ui/tooling/data/SourceInformationContext;->locations:Ljava/util/List;
 
-    .line 210
+    .line 212
     iput p5, p0, Landroidx/compose/ui/tooling/data/SourceInformationContext;->repeatOffset:I
 
-    .line 211
+    .line 213
     iput-object p6, p0, Landroidx/compose/ui/tooling/data/SourceInformationContext;->parameters:Ljava/util/List;
 
-    .line 212
+    .line 214
     iput-boolean p7, p0, Landroidx/compose/ui/tooling/data/SourceInformationContext;->isCall:Z
 
-    .line 213
+    .line 215
     iput-boolean p8, p0, Landroidx/compose/ui/tooling/data/SourceInformationContext;->isInline:Z
 
     return-void
@@ -155,7 +151,7 @@
         }
     .end annotation
 
-    .line 209
+    .line 211
     iget-object p0, p0, Landroidx/compose/ui/tooling/data/SourceInformationContext;->locations:Ljava/util/List;
 
     return-object p0
@@ -164,7 +160,7 @@
 .method public final getName()Ljava/lang/String;
     .locals 0
 
-    .line 206
+    .line 208
     iget-object p0, p0, Landroidx/compose/ui/tooling/data/SourceInformationContext;->name:Ljava/lang/String;
 
     return-object p0
@@ -173,7 +169,7 @@
 .method public final getPackageHash()I
     .locals 0
 
-    .line 208
+    .line 210
     iget p0, p0, Landroidx/compose/ui/tooling/data/SourceInformationContext;->packageHash:I
 
     return p0
@@ -190,7 +186,7 @@
         }
     .end annotation
 
-    .line 211
+    .line 213
     iget-object p0, p0, Landroidx/compose/ui/tooling/data/SourceInformationContext;->parameters:Ljava/util/List;
 
     return-object p0
@@ -199,7 +195,7 @@
 .method public final getRepeatOffset()I
     .locals 0
 
-    .line 210
+    .line 212
     iget p0, p0, Landroidx/compose/ui/tooling/data/SourceInformationContext;->repeatOffset:I
 
     return p0
@@ -208,7 +204,7 @@
 .method public final getSourceFile()Ljava/lang/String;
     .locals 0
 
-    .line 207
+    .line 209
     iget-object p0, p0, Landroidx/compose/ui/tooling/data/SourceInformationContext;->sourceFile:Ljava/lang/String;
 
     return-object p0
@@ -217,7 +213,7 @@
 .method public final isCall()Z
     .locals 0
 
-    .line 212
+    .line 214
     iget-boolean p0, p0, Landroidx/compose/ui/tooling/data/SourceInformationContext;->isCall:Z
 
     return p0
@@ -226,7 +222,7 @@
 .method public final isInline()Z
     .locals 0
 
-    .line 213
+    .line 215
     iget-boolean p0, p0, Landroidx/compose/ui/tooling/data/SourceInformationContext;->isInline:Z
 
     return p0
@@ -235,7 +231,7 @@
 .method public final nextSourceLocation()Landroidx/compose/ui/tooling/data/SourceLocation;
     .locals 8
 
-    .line 218
+    .line 220
     iget v0, p0, Landroidx/compose/ui/tooling/data/SourceInformationContext;->nextLocation:I
 
     iget-object v1, p0, Landroidx/compose/ui/tooling/data/SourceInformationContext;->locations:Ljava/util/List;
@@ -250,10 +246,10 @@
 
     if-ltz v0, :cond_0
 
-    .line 219
+    .line 221
     iput v0, p0, Landroidx/compose/ui/tooling/data/SourceInformationContext;->nextLocation:I
 
-    .line 221
+    .line 223
     :cond_0
     iget v0, p0, Landroidx/compose/ui/tooling/data/SourceInformationContext;->nextLocation:I
 
@@ -265,7 +261,7 @@
 
     if-ge v0, v1, :cond_4
 
-    .line 222
+    .line 224
     iget-object v0, p0, Landroidx/compose/ui/tooling/data/SourceInformationContext;->locations:Ljava/util/List;
 
     iget v1, p0, Landroidx/compose/ui/tooling/data/SourceInformationContext;->nextLocation:I
@@ -280,10 +276,10 @@
 
     check-cast v0, Landroidx/compose/ui/tooling/data/SourceLocationInfo;
 
-    .line 223
+    .line 225
     new-instance v7, Landroidx/compose/ui/tooling/data/SourceLocation;
 
-    .line 224
+    .line 226
     invoke-virtual {v0}, Landroidx/compose/ui/tooling/data/SourceLocationInfo;->getLineNumber()Ljava/lang/Integer;
 
     move-result-object v1
@@ -303,7 +299,7 @@
     :cond_1
     move v3, v2
 
-    .line 225
+    .line 227
     :goto_0
     invoke-virtual {v0}, Landroidx/compose/ui/tooling/data/SourceLocationInfo;->getOffset()Ljava/lang/Integer;
 
@@ -322,7 +318,7 @@
     :cond_2
     move v4, v2
 
-    .line 226
+    .line 228
     :goto_1
     invoke-virtual {v0}, Landroidx/compose/ui/tooling/data/SourceLocationInfo;->getLength()Ljava/lang/Integer;
 
@@ -339,11 +335,11 @@
     :cond_3
     move v0, v2
 
-    .line 227
+    .line 229
     :goto_2
     iget-object v5, p0, Landroidx/compose/ui/tooling/data/SourceInformationContext;->sourceFile:Ljava/lang/String;
 
-    .line 228
+    .line 230
     iget v6, p0, Landroidx/compose/ui/tooling/data/SourceInformationContext;->packageHash:I
 
     move-object v1, v7
@@ -354,7 +350,7 @@
 
     move v4, v0
 
-    .line 223
+    .line 225
     invoke-direct/range {v1 .. v6}, Landroidx/compose/ui/tooling/data/SourceLocation;-><init>(IIILjava/lang/String;I)V
 
     return-object v7
@@ -368,7 +364,7 @@
 .method public final sourceLocation(ILandroidx/compose/ui/tooling/data/SourceInformationContext;)Landroidx/compose/ui/tooling/data/SourceLocation;
     .locals 8
 
-    .line 236
+    .line 238
     iget-object v0, p0, Landroidx/compose/ui/tooling/data/SourceInformationContext;->locations:Ljava/util/List;
 
     invoke-interface {v0}, Ljava/util/List;->size()I
@@ -389,7 +385,7 @@
 
     if-ge v0, v1, :cond_0
 
-    .line 238
+    .line 240
     iget v0, p0, Landroidx/compose/ui/tooling/data/SourceInformationContext;->repeatOffset:I
 
     sub-int/2addr p1, v0
@@ -408,7 +404,7 @@
 
     add-int/2addr p1, v1
 
-    .line 240
+    .line 242
     :cond_0
     iget-object v0, p0, Landroidx/compose/ui/tooling/data/SourceInformationContext;->locations:Ljava/util/List;
 
@@ -420,7 +416,7 @@
 
     if-ge p1, v0, :cond_9
 
-    .line 241
+    .line 243
     iget-object v0, p0, Landroidx/compose/ui/tooling/data/SourceInformationContext;->locations:Ljava/util/List;
 
     invoke-interface {v0, p1}, Ljava/util/List;->get(I)Ljava/lang/Object;
@@ -429,10 +425,10 @@
 
     check-cast p1, Landroidx/compose/ui/tooling/data/SourceLocationInfo;
 
-    .line 242
+    .line 244
     new-instance v0, Landroidx/compose/ui/tooling/data/SourceLocation;
 
-    .line 243
+    .line 245
     invoke-virtual {p1}, Landroidx/compose/ui/tooling/data/SourceLocationInfo;->getLineNumber()Ljava/lang/Integer;
 
     move-result-object v2
@@ -452,7 +448,7 @@
     :cond_1
     move v4, v3
 
-    .line 244
+    .line 246
     :goto_0
     invoke-virtual {p1}, Landroidx/compose/ui/tooling/data/SourceLocationInfo;->getOffset()Ljava/lang/Integer;
 
@@ -471,7 +467,7 @@
     :cond_2
     move v5, v3
 
-    .line 245
+    .line 247
     :goto_1
     invoke-virtual {p1}, Landroidx/compose/ui/tooling/data/SourceLocationInfo;->getLength()Ljava/lang/Integer;
 
@@ -488,7 +484,7 @@
     :cond_3
     move p1, v3
 
-    .line 246
+    .line 248
     :goto_2
     iget-object v2, p0, Landroidx/compose/ui/tooling/data/SourceInformationContext;->sourceFile:Ljava/lang/String;
 
@@ -513,7 +509,7 @@
 
     if-eqz p2, :cond_7
 
-    .line 247
+    .line 249
     iget p0, p2, Landroidx/compose/ui/tooling/data/SourceInformationContext;->packageHash:I
 
     goto :goto_4
@@ -549,7 +545,7 @@
 
     move v5, p1
 
-    .line 242
+    .line 244
     invoke-direct/range {v2 .. v7}, Landroidx/compose/ui/tooling/data/SourceLocation;-><init>(IIILjava/lang/String;I)V
 
     return-object v0

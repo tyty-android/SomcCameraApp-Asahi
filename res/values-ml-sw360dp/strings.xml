@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <string name="mv_settings_sbt_back_color_txt">പശ്ചാത്തല നിറം</string>
-    <string name="mv_settings_sbt_header_custom_usage_txt">ക്രമീകരണം ഇച്ഛാനുസൃതമാക്കുക</string>
-    <string name="mv_settings_sbt_sample_message_txt">സബ്. പ്രിവ്യൂ ഇമേജ്</string>
-    <string name="mvp_accessibility_ffw_0.5_icn">സാധാരണ. പകുതി വേഗത. പ്ലേ ചെ.</string>
-</resources>

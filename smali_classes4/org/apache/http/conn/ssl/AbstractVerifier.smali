@@ -21,40 +21,96 @@
 
 # direct methods
 .method static constructor <clinit>()V
-    .locals 14
+    .locals 3
+
+    const/16 v0, 0xe
 
     .line 63
-    const-string v12, "or"
+    new-array v0, v0, [Ljava/lang/String;
 
-    const-string v13, "org"
+    const/4 v1, 0x0
 
-    const-string v0, "ac"
+    const-string v2, "ac"
 
-    const-string v1, "co"
+    aput-object v2, v0, v1
+
+    const/4 v1, 0x1
+
+    const-string v2, "co"
+
+    aput-object v2, v0, v1
+
+    const/4 v1, 0x2
 
     const-string v2, "com"
 
-    const-string v3, "ed"
+    aput-object v2, v0, v1
 
-    const-string v4, "edu"
+    const/4 v1, 0x3
 
-    const-string v5, "go"
+    const-string v2, "ed"
 
-    const-string v6, "gouv"
+    aput-object v2, v0, v1
 
-    const-string v7, "gov"
+    const/4 v1, 0x4
 
-    const-string v8, "info"
+    const-string v2, "edu"
 
-    const-string v9, "lg"
+    aput-object v2, v0, v1
 
-    const-string v10, "ne"
+    const/4 v1, 0x5
 
-    const-string v11, "net"
+    const-string v2, "go"
 
-    filled-new-array/range {v0 .. v13}, [Ljava/lang/String;
+    aput-object v2, v0, v1
 
-    move-result-object v0
+    const/4 v1, 0x6
+
+    const-string v2, "gouv"
+
+    aput-object v2, v0, v1
+
+    const/4 v1, 0x7
+
+    const-string v2, "gov"
+
+    aput-object v2, v0, v1
+
+    const/16 v1, 0x8
+
+    const-string v2, "info"
+
+    aput-object v2, v0, v1
+
+    const/16 v1, 0x9
+
+    const-string v2, "lg"
+
+    aput-object v2, v0, v1
+
+    const/16 v1, 0xa
+
+    const-string v2, "ne"
+
+    aput-object v2, v0, v1
+
+    const/16 v1, 0xb
+
+    const-string v2, "net"
+
+    aput-object v2, v0, v1
+
+    const/16 v1, 0xc
+
+    const-string v2, "or"
+
+    aput-object v2, v0, v1
+
+    const/16 v1, 0xd
+
+    const-string v2, "org"
+
+    aput-object v2, v0, v1
 
     sput-object v0, Lorg/apache/http/conn/ssl/AbstractVerifier;->BAD_COUNTRY_2LDS:[Ljava/lang/String;
 
@@ -137,7 +193,7 @@
 .end method
 
 .method public static getCNs(Ljava/security/cert/X509Certificate;)[Ljava/lang/String;
-    .locals 1
+    .locals 3
 
     .line 233
     invoke-virtual {p0}, Ljava/security/cert/X509Certificate;->getSubjectX500Principal()Ljavax/security/auth/x500/X500Principal;
@@ -158,12 +214,18 @@
 
     if-eqz p0, :cond_0
 
-    .line 236
-    filled-new-array {p0}, [Ljava/lang/String;
+    const/4 v1, 0x1
 
-    move-result-object v0
+    .line 236
+    new-array v1, v1, [Ljava/lang/String;
+
+    const/4 v2, 0x0
+
+    aput-object p0, v1, v2
     :try_end_0
     .catch Ljavax/net/ssl/SSLException; {:try_start_0 .. :try_end_0} :catch_0
+
+    move-object v0, v1
 
     :catch_0
     :cond_0
@@ -289,7 +351,7 @@
 
     const/4 v3, 0x3
 
-    if-lt v2, v3, :cond_5
+    if-lt v2, v3, :cond_6
 
     aget-object v2, v1, v0
 
@@ -299,7 +361,7 @@
 
     move-result v2
 
-    if-eqz v2, :cond_5
+    if-eqz v2, :cond_6
 
     if-eqz p2, :cond_1
 
@@ -307,7 +369,7 @@
 
     move-result v2
 
-    if-eqz v2, :cond_5
+    if-eqz v2, :cond_6
 
     .line 207
     :cond_1
@@ -320,7 +382,7 @@
 
     const/4 v3, 0x1
 
-    if-le v2, v3, :cond_2
+    if-le v2, v3, :cond_3
 
     .line 209
     invoke-virtual {v1}, Ljava/lang/String;->length()I
@@ -356,18 +418,25 @@
 
     move-result v2
 
-    if-eqz v2, :cond_4
+    if-eqz v2, :cond_2
 
     invoke-virtual {v4, v1}, Ljava/lang/String;->endsWith(Ljava/lang/String;)Z
 
     move-result v1
 
-    if-eqz v1, :cond_4
+    if-eqz v1, :cond_2
+
+    move v1, v3
+
+    goto :goto_0
+
+    :cond_2
+    move v1, v0
 
     goto :goto_0
 
     .line 214
-    :cond_2
+    :cond_3
     invoke-virtual {p1, v3}, Ljava/lang/String;->substring(I)Ljava/lang/String;
 
     move-result-object v1
@@ -376,10 +445,10 @@
 
     move-result v1
 
-    if-eqz v1, :cond_4
-
     :goto_0
-    if-eqz p2, :cond_3
+    if-eqz v1, :cond_5
+
+    if-eqz p2, :cond_4
 
     .line 216
     invoke-static {p0}, Lorg/apache/http/conn/ssl/AbstractVerifier;->countDots(Ljava/lang/String;)I
@@ -390,16 +459,16 @@
 
     move-result p1
 
-    if-ne p0, p1, :cond_4
-
-    :cond_3
-    move v0, v3
+    if-ne p0, p1, :cond_5
 
     :cond_4
+    move v0, v3
+
+    :cond_5
     return v0
 
     .line 218
-    :cond_5
+    :cond_6
     invoke-virtual {p0, p1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result p0
@@ -586,37 +655,43 @@
 
     if-eqz p2, :cond_5
 
-    .line 153
-    filled-new-array {p2}, [Ljava/lang/String;
+    const/4 v2, 0x1
 
-    move-result-object p2
+    .line 153
+    new-array v2, v2, [Ljava/lang/String;
+
+    const/4 v3, 0x0
+
+    aput-object p2, v2, v3
 
     goto :goto_3
 
     :cond_5
-    move-object p2, v0
+    move-object v2, v0
 
     :goto_3
     invoke-interface {v1}, Ljava/util/List;->isEmpty()Z
 
-    move-result v2
+    move-result p2
 
-    if-nez v2, :cond_6
+    if-nez p2, :cond_6
 
     invoke-interface {v1}, Ljava/util/List;->size()I
 
-    move-result v0
+    move-result p2
 
-    new-array v0, v0, [Ljava/lang/String;
+    new-array p2, p2, [Ljava/lang/String;
 
-    invoke-interface {v1, v0}, Ljava/util/List;->toArray([Ljava/lang/Object;)[Ljava/lang/Object;
+    invoke-interface {v1, p2}, Ljava/util/List;->toArray([Ljava/lang/Object;)[Ljava/lang/Object;
 
-    move-result-object v0
+    move-result-object p2
+
+    move-object v0, p2
 
     check-cast v0, [Ljava/lang/String;
 
     :cond_6
-    invoke-virtual {p0, p1, p2, v0}, Lorg/apache/http/conn/ssl/AbstractVerifier;->verify(Ljava/lang/String;[Ljava/lang/String;[Ljava/lang/String;)V
+    invoke-virtual {p0, p1, v2, v0}, Lorg/apache/http/conn/ssl/AbstractVerifier;->verify(Ljava/lang/String;[Ljava/lang/String;[Ljava/lang/String;)V
 
     return-void
 .end method

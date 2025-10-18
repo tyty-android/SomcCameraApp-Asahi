@@ -96,7 +96,7 @@
 .method private static getComplexUnit(Landroid/util/TypedValue;)I
     .locals 0
 
-    .line 246
+    .line 253
     invoke-virtual {p0}, Landroid/util/TypedValue;->getComplexUnit()I
 
     move-result p0
@@ -202,10 +202,27 @@
     return-object p0
 .end method
 
+.method public static getFontScale(Landroid/content/Context;)F
+    .locals 0
+
+    .line 202
+    invoke-virtual {p0}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
+
+    move-result-object p0
+
+    invoke-virtual {p0}, Landroid/content/res/Resources;->getConfiguration()Landroid/content/res/Configuration;
+
+    move-result-object p0
+
+    iget p0, p0, Landroid/content/res/Configuration;->fontScale:F
+
+    return p0
+.end method
+
 .method static getIndexWithValue(Landroid/content/res/TypedArray;II)I
     .locals 0
 
-    .line 259
+    .line 266
     invoke-virtual {p0, p1}, Landroid/content/res/TypedArray;->hasValue(I)Z
 
     move-result p0
@@ -257,7 +274,7 @@
 
     return p2
 
-    .line 215
+    .line 222
     :cond_0
     sget-object v0, Lcom/google/android/material/R$styleable;->TextAppearance:[I
 
@@ -265,26 +282,26 @@
 
     move-result-object p1
 
-    .line 216
+    .line 223
     new-instance v0, Landroid/util/TypedValue;
 
     invoke-direct {v0}, Landroid/util/TypedValue;-><init>()V
 
-    .line 217
+    .line 224
     sget v1, Lcom/google/android/material/R$styleable;->TextAppearance_android_textSize:I
 
     invoke-virtual {p1, v1, v0}, Landroid/content/res/TypedArray;->getValue(ILandroid/util/TypedValue;)Z
 
     move-result v1
 
-    .line 218
+    .line 225
     invoke-virtual {p1}, Landroid/content/res/TypedArray;->recycle()V
 
     if-nez v1, :cond_1
 
     return p2
 
-    .line 226
+    .line 233
     :cond_1
     invoke-static {v0}, Lcom/google/android/material/resources/MaterialResources;->getComplexUnit(Landroid/util/TypedValue;)I
 
@@ -294,10 +311,10 @@
 
     if-ne p1, p2, :cond_2
 
-    .line 229
+    .line 236
     iget p1, v0, Landroid/util/TypedValue;->data:I
 
-    .line 230
+    .line 237
     invoke-static {p1}, Landroid/util/TypedValue;->complexToFloat(I)F
 
     move-result p1
@@ -314,18 +331,18 @@
 
     mul-float/2addr p1, p0
 
-    .line 229
+    .line 236
     invoke-static {p1}, Ljava/lang/Math;->round(F)I
 
     move-result p0
 
     return p0
 
-    .line 234
+    .line 241
     :cond_2
     iget p1, v0, Landroid/util/TypedValue;->data:I
 
-    .line 235
+    .line 242
     invoke-virtual {p0}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
 
     move-result-object p0
@@ -334,7 +351,7 @@
 
     move-result-object p0
 
-    .line 234
+    .line 241
     invoke-static {p1, p0}, Landroid/util/TypedValue;->complexToDimensionPixelSize(ILandroid/util/DisplayMetrics;)I
 
     move-result p0

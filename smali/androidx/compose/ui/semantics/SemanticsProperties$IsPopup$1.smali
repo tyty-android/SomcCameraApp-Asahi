@@ -81,7 +81,7 @@
 .method public bridge synthetic invoke(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
 
-    .line 151
+    .line 149
     check-cast p1, Lkotlin/Unit;
 
     check-cast p2, Lkotlin/Unit;
@@ -95,10 +95,6 @@
 
 .method public final invoke(Lkotlin/Unit;Lkotlin/Unit;)Lkotlin/Unit;
     .locals 0
-
-    const-string p0, "<anonymous parameter 1>"
-
-    invoke-static {p2, p0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 152
     new-instance p0, Ljava/lang/IllegalStateException;

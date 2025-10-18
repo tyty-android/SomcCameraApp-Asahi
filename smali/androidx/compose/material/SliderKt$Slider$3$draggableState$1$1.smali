@@ -126,7 +126,7 @@
 .method public bridge synthetic invoke(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
 
-    .line 198
+    .line 201
     check-cast p1, Ljava/lang/Number;
 
     invoke-virtual {p1}, Ljava/lang/Number;->floatValue()F
@@ -143,7 +143,7 @@
 .method public final invoke(F)V
     .locals 3
 
-    .line 199
+    .line 202
     iget-object v0, p0, Landroidx/compose/material/SliderKt$Slider$3$draggableState$1$1;->$rawOffset:Landroidx/compose/runtime/MutableFloatState;
 
     invoke-interface {v0}, Landroidx/compose/runtime/MutableFloatState;->getFloatValue()F
@@ -162,14 +162,14 @@
 
     invoke-interface {v0, v1}, Landroidx/compose/runtime/MutableFloatState;->setFloatValue(F)V
 
-    .line 200
+    .line 203
     iget-object p1, p0, Landroidx/compose/material/SliderKt$Slider$3$draggableState$1$1;->$pressOffset:Landroidx/compose/runtime/MutableFloatState;
 
     const/4 v0, 0x0
 
     invoke-interface {p1, v0}, Landroidx/compose/runtime/MutableFloatState;->setFloatValue(F)V
 
-    .line 201
+    .line 204
     iget-object p1, p0, Landroidx/compose/material/SliderKt$Slider$3$draggableState$1$1;->$rawOffset:Landroidx/compose/runtime/MutableFloatState;
 
     invoke-interface {p1}, Landroidx/compose/runtime/MutableFloatState;->getFloatValue()F
@@ -188,7 +188,7 @@
 
     move-result p1
 
-    .line 202
+    .line 205
     iget-object v0, p0, Landroidx/compose/material/SliderKt$Slider$3$draggableState$1$1;->$onValueChangeState:Landroidx/compose/runtime/State;
 
     invoke-interface {v0}, Landroidx/compose/runtime/State;->getValue()Ljava/lang/Object;

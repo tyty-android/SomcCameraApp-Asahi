@@ -19,5 +19,4 @@ Ota WLAN käyttöön ASETUKSISSA."</string>
     <string name="camera_strings_runtime_permission_rationale_network_cta_txt">"Sovellus käyttää WLAN-yhteyttä ja mobiilidataa käyttäjätietojen (esim. tallennetut kuvat/videot, äänitiedot, käytettyjen palveluiden tilitiedot jne.) lähettämiseen Internetiin.
 Huomaa, että verkko-operaattorisi tai internet-palveluntarjoajasi voi veloittaa datankäytöstä sopimuksestasi riippuen."</string>
     <string name="camera_strings_streaming_error_wifi_disconnected_txt">Ei WLAN-yhteyttä</string>
-    <string name="mv_wireless_network_txt">Käytä WLANä ja mobiilidataa</string>
 </resources>

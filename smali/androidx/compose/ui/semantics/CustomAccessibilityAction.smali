@@ -64,7 +64,7 @@
 .end method
 
 .method public constructor <init>(Ljava/lang/String;Lkotlin/jvm/functions/Function0;)V
-    .locals 1
+    .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -75,15 +75,7 @@
         }
     .end annotation
 
-    const-string v0, "label"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string v0, "action"
-
-    invoke-static {p2, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 480
+    .line 569
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     iput-object p1, p0, Landroidx/compose/ui/semantics/CustomAccessibilityAction;->label:Ljava/lang/String;
@@ -104,7 +96,7 @@
 
     return v0
 
-    .line 483
+    .line 572
     :cond_0
     instance-of v1, p1, Landroidx/compose/ui/semantics/CustomAccessibilityAction;
 
@@ -114,7 +106,7 @@
 
     return v2
 
-    .line 485
+    .line 574
     :cond_1
     iget-object v1, p0, Landroidx/compose/ui/semantics/CustomAccessibilityAction;->label:Ljava/lang/String;
 
@@ -130,7 +122,7 @@
 
     return v2
 
-    .line 486
+    .line 575
     :cond_2
     iget-object p0, p0, Landroidx/compose/ui/semantics/CustomAccessibilityAction;->action:Lkotlin/jvm/functions/Function0;
 
@@ -159,7 +151,7 @@
         }
     .end annotation
 
-    .line 480
+    .line 569
     iget-object p0, p0, Landroidx/compose/ui/semantics/CustomAccessibilityAction;->action:Lkotlin/jvm/functions/Function0;
 
     return-object p0
@@ -168,7 +160,7 @@
 .method public final getLabel()Ljava/lang/String;
     .locals 0
 
-    .line 480
+    .line 569
     iget-object p0, p0, Landroidx/compose/ui/semantics/CustomAccessibilityAction;->label:Ljava/lang/String;
 
     return-object p0
@@ -177,7 +169,7 @@
 .method public hashCode()I
     .locals 1
 
-    .line 492
+    .line 581
     iget-object v0, p0, Landroidx/compose/ui/semantics/CustomAccessibilityAction;->label:Ljava/lang/String;
 
     invoke-virtual {v0}, Ljava/lang/String;->hashCode()I
@@ -186,7 +178,7 @@
 
     mul-int/lit8 v0, v0, 0x1f
 
-    .line 493
+    .line 582
     iget-object p0, p0, Landroidx/compose/ui/semantics/CustomAccessibilityAction;->action:Lkotlin/jvm/functions/Function0;
 
     invoke-virtual {p0}, Ljava/lang/Object;->hashCode()I
@@ -201,7 +193,7 @@
 .method public toString()Ljava/lang/String;
     .locals 2
 
-    .line 498
+    .line 587
     new-instance v0, Ljava/lang/StringBuilder;
 
     const-string v1, "CustomAccessibilityAction(label="

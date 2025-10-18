@@ -292,6 +292,16 @@
     .end annotation
 .end field
 
+.field public static final MODE_CUSTOM_EXTENSION_DATA:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljp/co/sony/mc/camera/setting/CommonSettings$Key<",
+            "Ljp/co/sony/mc/camera/configuration/parameters/ModeCustomExtensionData;",
+            ">;"
+        }
+    .end annotation
+.end field
+
 .field public static final NETWORK_USAGE:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -612,10 +622,6 @@
 
 .field private mAppPauseTimeMillis:J
 
-.field private mBasicModeFocusDisplay:Ljp/co/sony/mc/camera/configuration/parameters/BasicModeFocusDisplay;
-
-.field private mBasicModeShutterSpeedDisplay:Ljp/co/sony/mc/camera/configuration/parameters/BasicModeShutterSpeedDisplay;
-
 .field private mCalibration:Ljava/lang/Float;
 
 .field private mCameraId:Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;
@@ -663,6 +669,8 @@
 .field private mLastProVideoCapturingMode:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
 .field private mMemoryRecallData:Ljp/co/sony/mc/camera/configuration/parameters/MemoryRecallData;
+
+.field private mModeCustomExtensionData:Ljp/co/sony/mc/camera/configuration/parameters/ModeCustomExtensionData;
 
 .field private mNetworkUsage:Ljp/co/sony/mc/camera/configuration/parameters/NetworkUsage;
 
@@ -898,6 +906,16 @@
     .locals 0
 
     invoke-direct {p0}, Ljp/co/sony/mc/camera/setting/CommonSettings;->getMemoryRecallData()Ljp/co/sony/mc/camera/configuration/parameters/MemoryRecallData;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method static bridge synthetic -$$Nest$mgetModeCustomExtensionData(Ljp/co/sony/mc/camera/setting/CommonSettings;)Ljp/co/sony/mc/camera/configuration/parameters/ModeCustomExtensionData;
+    .locals 0
+
+    invoke-direct {p0}, Ljp/co/sony/mc/camera/setting/CommonSettings;->getModeCustomExtensionData()Ljp/co/sony/mc/camera/configuration/parameters/ModeCustomExtensionData;
 
     move-result-object p0
 
@@ -1314,6 +1332,16 @@
     return p0
 .end method
 
+.method static bridge synthetic -$$Nest$msetModeCustomExtensionData(Ljp/co/sony/mc/camera/setting/CommonSettings;Ljp/co/sony/mc/camera/configuration/parameters/ModeCustomExtensionData;)Z
+    .locals 0
+
+    invoke-direct {p0, p1}, Ljp/co/sony/mc/camera/setting/CommonSettings;->setModeCustomExtensionData(Ljp/co/sony/mc/camera/configuration/parameters/ModeCustomExtensionData;)Z
+
+    move-result p0
+
+    return p0
+.end method
+
 .method static bridge synthetic -$$Nest$msetNetworkUsage(Ljp/co/sony/mc/camera/setting/CommonSettings;Ljp/co/sony/mc/camera/configuration/parameters/NetworkUsage;)Z
     .locals 0
 
@@ -1545,9 +1573,9 @@
 .end method
 
 .method static constructor <clinit>()V
-    .locals 57
+    .locals 58
 
-    .line 82
+    .line 81
     new-instance v0, Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
 
     const-string v1, "SETTING_VERSION"
@@ -1558,7 +1586,7 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/setting/CommonSettings;->SETTING_VERSION:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
 
-    .line 86
+    .line 85
     new-instance v1, Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
 
     const-string v2, "FINGER_PRINT"
@@ -1569,7 +1597,7 @@
 
     sput-object v1, Ljp/co/sony/mc/camera/setting/CommonSettings;->FINGER_PRINT:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
 
-    .line 90
+    .line 89
     new-instance v1, Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
 
     const-string v2, "LEVEL_CALIBRATION_OFFSET"
@@ -1580,7 +1608,7 @@
 
     sput-object v1, Ljp/co/sony/mc/camera/setting/CommonSettings;->LEVEL_CALIBRATION_OFFSET:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
 
-    .line 99
+    .line 98
     new-instance v2, Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
 
     const-string v3, "CAPTURING_MODE"
@@ -1591,7 +1619,7 @@
 
     sput-object v2, Ljp/co/sony/mc/camera/setting/CommonSettings;->CAPTURING_MODE:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
 
-    .line 107
+    .line 106
     new-instance v3, Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
 
     const-string v4, "LAST_CAPTURING_MODE"
@@ -1602,7 +1630,7 @@
 
     sput-object v3, Ljp/co/sony/mc/camera/setting/CommonSettings;->LAST_CAPTURING_MODE:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
 
-    .line 111
+    .line 110
     new-instance v4, Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
 
     const-string v5, "CAMERA_ID"
@@ -1613,7 +1641,7 @@
 
     sput-object v4, Ljp/co/sony/mc/camera/setting/CommonSettings;->CAMERA_ID:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
 
-    .line 119
+    .line 118
     new-instance v5, Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
 
     const-string v6, "LAST_CAMERA_ID"
@@ -1624,7 +1652,7 @@
 
     sput-object v5, Ljp/co/sony/mc/camera/setting/CommonSettings;->LAST_CAMERA_ID:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
 
-    .line 123
+    .line 122
     new-instance v6, Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
 
     const-string v7, "MEMORY_RECALL_DATA"
@@ -1635,7 +1663,7 @@
 
     sput-object v6, Ljp/co/sony/mc/camera/setting/CommonSettings;->MEMORY_RECALL_DATA:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
 
-    .line 127
+    .line 126
     new-instance v7, Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
 
     const-string v8, "CAMERA_ID_ON_MR"
@@ -1646,7 +1674,7 @@
 
     sput-object v7, Ljp/co/sony/mc/camera/setting/CommonSettings;->CAMERA_ID_ON_MR:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
 
-    .line 133
+    .line 132
     new-instance v8, Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
 
     const-string v9, "GEOTAG"
@@ -1657,7 +1685,7 @@
 
     sput-object v8, Ljp/co/sony/mc/camera/setting/CommonSettings;->GEOTAG:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
 
-    .line 137
+    .line 136
     new-instance v9, Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
 
     const-string v10, "GRID_LINE"
@@ -1668,7 +1696,7 @@
 
     sput-object v9, Ljp/co/sony/mc/camera/setting/CommonSettings;->GRID_LINE:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
 
-    .line 141
+    .line 140
     new-instance v10, Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
 
     const-string v11, "HORIZONTAL_LEVEL_METER"
@@ -1679,7 +1707,7 @@
 
     sput-object v10, Ljp/co/sony/mc/camera/setting/CommonSettings;->HORIZONTAL_LEVEL_METER:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
 
-    .line 146
+    .line 145
     new-instance v11, Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
 
     const-string v12, "QUICK_LAUNCH"
@@ -1690,7 +1718,7 @@
 
     sput-object v11, Ljp/co/sony/mc/camera/setting/CommonSettings;->QUICK_LAUNCH:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
 
-    .line 150
+    .line 149
     new-instance v12, Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
 
     const-string v13, "SAVE_DESTINATION"
@@ -1701,7 +1729,7 @@
 
     sput-object v12, Ljp/co/sony/mc/camera/setting/CommonSettings;->SAVE_DESTINATION:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
 
-    .line 154
+    .line 153
     new-instance v13, Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
 
     const-string v14, "SHUTTER_SOUND"
@@ -1712,7 +1740,7 @@
 
     sput-object v13, Ljp/co/sony/mc/camera/setting/CommonSettings;->SHUTTER_SOUND:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
 
-    .line 158
+    .line 157
     new-instance v14, Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
 
     const-string v15, "VOLUME_KEY"
@@ -1725,7 +1753,7 @@
 
     sput-object v14, Ljp/co/sony/mc/camera/setting/CommonSettings;->VOLUME_KEY:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
 
-    .line 162
+    .line 161
     new-instance v0, Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
 
     const-string v15, "FUNCTION_CUSTOM"
@@ -1738,7 +1766,7 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/setting/CommonSettings;->FUNCTION_CUSTOM:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
 
-    .line 166
+    .line 165
     new-instance v1, Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
 
     const-string v15, "TIPS"
@@ -1751,7 +1779,7 @@
 
     sput-object v1, Ljp/co/sony/mc/camera/setting/CommonSettings;->TIPS:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
 
-    .line 170
+    .line 169
     new-instance v0, Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
 
     const-string v15, "ACCESSIBILITY"
@@ -1764,7 +1792,7 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/setting/CommonSettings;->ACCESSIBILITY:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
 
-    .line 174
+    .line 173
     new-instance v1, Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
 
     const-string v15, "SOFTWARE_LICENSE"
@@ -1777,7 +1805,7 @@
 
     sput-object v1, Ljp/co/sony/mc/camera/setting/CommonSettings;->SOFTWARE_LICENSE:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
 
-    .line 178
+    .line 177
     new-instance v0, Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
 
     const-string v15, "STREAMING_NOTES_ON_USE"
@@ -1790,7 +1818,7 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/setting/CommonSettings;->STREAMING_NOTES_ON_USE:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
 
-    .line 182
+    .line 181
     new-instance v1, Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
 
     const-string v15, "PRIVACY_POLICY"
@@ -1803,7 +1831,7 @@
 
     sput-object v1, Ljp/co/sony/mc/camera/setting/CommonSettings;->PRIVACY_POLICY:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
 
-    .line 186
+    .line 185
     new-instance v0, Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
 
     const-string v15, "STREAMING_PRIVACY_POLICY"
@@ -1816,7 +1844,7 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/setting/CommonSettings;->STREAMING_PRIVACY_POLICY:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
 
-    .line 190
+    .line 189
     new-instance v1, Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
 
     const-string v15, "RESET_SETTINGS"
@@ -1829,7 +1857,7 @@
 
     sput-object v1, Ljp/co/sony/mc/camera/setting/CommonSettings;->RESET_SETTINGS:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
 
-    .line 194
+    .line 193
     new-instance v0, Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
 
     const-string v15, "MEMORY_RECALL"
@@ -1842,7 +1870,7 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/setting/CommonSettings;->MEMORY_RECALL:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
 
-    .line 200
+    .line 199
     new-instance v1, Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
 
     const-string v15, "DISP_CUSTOM"
@@ -1855,7 +1883,7 @@
 
     sput-object v1, Ljp/co/sony/mc/camera/setting/CommonSettings;->DISP_CUSTOM:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
 
-    .line 205
+    .line 204
     new-instance v0, Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
 
     const-string v15, "DISP_CUSTOM_EXTENSION_DATA"
@@ -1868,7 +1896,7 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/setting/CommonSettings;->DISP_CUSTOM_EXTENSION_DATA:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
 
-    .line 209
+    .line 208
     new-instance v1, Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
 
     const-string v15, "PRO_VIDEO_DISP_CUSTOM_EXTENSION_DATA"
@@ -1881,7 +1909,7 @@
 
     sput-object v1, Ljp/co/sony/mc/camera/setting/CommonSettings;->PRO_VIDEO_DISP_CUSTOM_EXTENSION_DATA:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
 
-    .line 214
+    .line 213
     new-instance v0, Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
 
     const-string v15, "DISPLAY_MODE"
@@ -1894,7 +1922,7 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/setting/CommonSettings;->DISPLAY_MODE:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
 
-    .line 218
+    .line 217
     new-instance v1, Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
 
     const-string v15, "REMOTE_CONTROL"
@@ -1907,7 +1935,7 @@
 
     sput-object v1, Ljp/co/sony/mc/camera/setting/CommonSettings;->REMOTE_CONTROL:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
 
-    .line 222
+    .line 221
     new-instance v0, Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
 
     const-string v15, "REMOTE_BUTTON_CUSTOM"
@@ -1920,7 +1948,7 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/setting/CommonSettings;->REMOTE_BUTTON_CUSTOM:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
 
-    .line 226
+    .line 225
     new-instance v1, Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
 
     const-string v15, "HAPTIC_FEEDBACK"
@@ -1933,7 +1961,7 @@
 
     sput-object v1, Ljp/co/sony/mc/camera/setting/CommonSettings;->HAPTIC_FEEDBACK:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
 
-    .line 230
+    .line 229
     new-instance v0, Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
 
     const-string v15, "ENDURANCE_MODE"
@@ -1946,7 +1974,7 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/setting/CommonSettings;->ENDURANCE_MODE:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
 
-    .line 234
+    .line 233
     new-instance v1, Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
 
     const-string v15, "DISP_FLIP"
@@ -1959,7 +1987,7 @@
 
     sput-object v1, Ljp/co/sony/mc/camera/setting/CommonSettings;->DISP_FLIP:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
 
-    .line 238
+    .line 237
     new-instance v0, Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
 
     const-string v15, "LAST_BACK_VIDEO_FPS"
@@ -1972,7 +2000,7 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/setting/CommonSettings;->LAST_BACK_VIDEO_FPS:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
 
-    .line 242
+    .line 241
     new-instance v1, Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
 
     const-string v15, "CONNECT_TO_MODE"
@@ -1985,7 +2013,7 @@
 
     sput-object v1, Ljp/co/sony/mc/camera/setting/CommonSettings;->STREAMING_CONNECT_MODE:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
 
-    .line 246
+    .line 245
     new-instance v0, Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
 
     const-string v15, "RTMP_STREAM_URL"
@@ -1998,7 +2026,7 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/setting/CommonSettings;->RTMP_STREAM_URL:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
 
-    .line 250
+    .line 249
     new-instance v1, Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
 
     const-string v15, "RTMP_STREAM_KEY"
@@ -2011,7 +2039,7 @@
 
     sput-object v1, Ljp/co/sony/mc/camera/setting/CommonSettings;->RTMP_STREAM_KEY:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
 
-    .line 254
+    .line 253
     new-instance v0, Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
 
     const-string v15, "YOUTUBE_STREAM_URL"
@@ -2024,7 +2052,7 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/setting/CommonSettings;->YOUTUBE_STREAM_URL:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
 
-    .line 258
+    .line 257
     new-instance v1, Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
 
     const-string v15, "YOUTUBE_STREAM_KEY"
@@ -2037,7 +2065,7 @@
 
     sput-object v1, Ljp/co/sony/mc/camera/setting/CommonSettings;->YOUTUBE_STREAM_KEY:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
 
-    .line 262
+    .line 261
     new-instance v0, Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
 
     const-string v15, "YOUTUBE_STREAM_ID_KEY"
@@ -2050,7 +2078,7 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/setting/CommonSettings;->YOUTUBE_STREAM_ID_KEY:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
 
-    .line 266
+    .line 265
     new-instance v1, Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
 
     const-string v15, "YOUTUBE_LIVE_CHAT_ID_KEY"
@@ -2063,7 +2091,7 @@
 
     sput-object v1, Ljp/co/sony/mc/camera/setting/CommonSettings;->YOUTUBE_LIVE_CHAT_ID_KEY:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
 
-    .line 270
+    .line 269
     new-instance v0, Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
 
     const-string v15, "YOUTUBE_LIVE_ID"
@@ -2076,7 +2104,7 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/setting/CommonSettings;->YOUTUBE_LIVE_ID:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
 
-    .line 274
+    .line 273
     new-instance v1, Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
 
     const-string v15, "YOUTUBE_ACCOUNT"
@@ -2089,7 +2117,7 @@
 
     sput-object v1, Ljp/co/sony/mc/camera/setting/CommonSettings;->YOUTUBE_ACCOUNT:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
 
-    .line 278
+    .line 277
     new-instance v0, Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
 
     const-string v15, "YOUTUBE_LIVE_EVENT"
@@ -2102,7 +2130,7 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/setting/CommonSettings;->YOUTUBE_LIVE_EVENT:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
 
-    .line 282
+    .line 281
     new-instance v1, Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
 
     const-string v15, "YOUTUBE_AUTHORIZATION_STATE"
@@ -2115,7 +2143,7 @@
 
     sput-object v1, Ljp/co/sony/mc/camera/setting/CommonSettings;->YOUTUBE_AUTHORIZATION_STATE:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
 
-    .line 286
+    .line 285
     new-instance v0, Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
 
     const-string v15, "FACEBOOK_ACCOUNT"
@@ -2128,7 +2156,7 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/setting/CommonSettings;->FACEBOOK_ACCOUNT:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
 
-    .line 290
+    .line 289
     new-instance v1, Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
 
     const-string v15, "FACEBOOK_LIVE_VIDEO_ID"
@@ -2141,7 +2169,7 @@
 
     sput-object v1, Ljp/co/sony/mc/camera/setting/CommonSettings;->FACEBOOK_LIVE_VIDEO_ID:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
 
-    .line 294
+    .line 293
     new-instance v0, Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
 
     const-string v15, "FACEBOOK_LIVE_SELECT"
@@ -2154,7 +2182,7 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/setting/CommonSettings;->FACEBOOK_LIVE_SELECT:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
 
-    .line 298
+    .line 297
     new-instance v1, Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
 
     const-string v15, "FACEBOOK_LIVE_TYPE"
@@ -2167,7 +2195,7 @@
 
     sput-object v1, Ljp/co/sony/mc/camera/setting/CommonSettings;->FACEBOOK_LIVE_TYPE:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
 
-    .line 302
+    .line 301
     new-instance v0, Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
 
     const-string v15, "FACEBOOK_GROUP_ID"
@@ -2180,7 +2208,7 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/setting/CommonSettings;->FACEBOOK_GROUP_ID:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
 
-    .line 306
+    .line 305
     new-instance v1, Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
 
     const-string v15, "NETWORK_USAGE"
@@ -2193,7 +2221,7 @@
 
     sput-object v1, Ljp/co/sony/mc/camera/setting/CommonSettings;->NETWORK_USAGE:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
 
-    .line 310
+    .line 309
     new-instance v0, Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
 
     const-string v15, "STREAMING_AUDIO_MUTE"
@@ -2206,7 +2234,7 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/setting/CommonSettings;->STREAMING_AUDIO_MUTE:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
 
-    .line 315
+    .line 314
     new-instance v1, Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
 
     const-string v15, "LAST_PRO_CAPTURING_MODE"
@@ -2219,7 +2247,7 @@
 
     sput-object v1, Ljp/co/sony/mc/camera/setting/CommonSettings;->LAST_PRO_CAPTURING_MODE:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
 
-    .line 319
+    .line 318
     new-instance v0, Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
 
     const-string v15, "LAST_PRO_VIDEO_CAPTURING_MODE"
@@ -2232,1770 +2260,1814 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/setting/CommonSettings;->LAST_PRO_VIDEO_CAPTURING_MODE:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
 
-    .line 323
-    new-instance v1, Ljava/util/HashMap;
+    .line 322
+    new-instance v1, Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
 
-    invoke-direct {v1}, Ljava/util/HashMap;-><init>()V
+    const-string v15, "MODE_CUSTOM_EXTENSION_DATA"
 
-    sput-object v1, Ljp/co/sony/mc/camera/setting/CommonSettings;->sGetCommandMap:Ljava/util/HashMap;
+    move-object/from16 v56, v0
 
-    .line 325
+    const-class v0, Ljp/co/sony/mc/camera/configuration/parameters/ModeCustomExtensionData;
+
+    invoke-direct {v1, v15, v0}, Ljp/co/sony/mc/camera/setting/CommonSettings$Key;-><init>(Ljava/lang/String;Ljava/lang/Class;)V
+
+    sput-object v1, Ljp/co/sony/mc/camera/setting/CommonSettings;->MODE_CUSTOM_EXTENSION_DATA:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
+
+    .line 326
+    new-instance v0, Ljava/util/HashMap;
+
+    invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
+
+    sput-object v0, Ljp/co/sony/mc/camera/setting/CommonSettings;->sGetCommandMap:Ljava/util/HashMap;
+
+    .line 328
     new-instance v15, Ljp/co/sony/mc/camera/setting/CommonSettings$1;
 
     invoke-direct {v15}, Ljp/co/sony/mc/camera/setting/CommonSettings$1;-><init>()V
 
-    invoke-virtual {v1, v2, v15}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v0, v2, v15}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 334
+    .line 337
     new-instance v15, Ljp/co/sony/mc/camera/setting/CommonSettings$2;
 
     invoke-direct {v15}, Ljp/co/sony/mc/camera/setting/CommonSettings$2;-><init>()V
 
-    invoke-virtual {v1, v4, v15}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v0, v4, v15}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 343
+    .line 346
     new-instance v15, Ljp/co/sony/mc/camera/setting/CommonSettings$3;
 
     invoke-direct {v15}, Ljp/co/sony/mc/camera/setting/CommonSettings$3;-><init>()V
 
-    invoke-virtual {v1, v6, v15}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v0, v6, v15}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 352
+    .line 355
     new-instance v15, Ljp/co/sony/mc/camera/setting/CommonSettings$4;
 
     invoke-direct {v15}, Ljp/co/sony/mc/camera/setting/CommonSettings$4;-><init>()V
 
-    invoke-virtual {v1, v7, v15}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v0, v7, v15}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 361
+    .line 364
     new-instance v15, Ljp/co/sony/mc/camera/setting/CommonSettings$5;
 
     invoke-direct {v15}, Ljp/co/sony/mc/camera/setting/CommonSettings$5;-><init>()V
 
-    invoke-virtual {v1, v3, v15}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v0, v3, v15}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 370
+    .line 373
     new-instance v15, Ljp/co/sony/mc/camera/setting/CommonSettings$6;
 
     invoke-direct {v15}, Ljp/co/sony/mc/camera/setting/CommonSettings$6;-><init>()V
 
-    invoke-virtual {v1, v5, v15}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v0, v5, v15}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 378
+    .line 381
     new-instance v15, Ljp/co/sony/mc/camera/setting/CommonSettings$7;
 
     invoke-direct {v15}, Ljp/co/sony/mc/camera/setting/CommonSettings$7;-><init>()V
 
-    invoke-virtual {v1, v8, v15}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v0, v8, v15}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 387
+    .line 390
     new-instance v15, Ljp/co/sony/mc/camera/setting/CommonSettings$8;
 
     invoke-direct {v15}, Ljp/co/sony/mc/camera/setting/CommonSettings$8;-><init>()V
 
-    invoke-virtual {v1, v9, v15}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v0, v9, v15}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 396
+    .line 399
     new-instance v15, Ljp/co/sony/mc/camera/setting/CommonSettings$9;
 
     invoke-direct {v15}, Ljp/co/sony/mc/camera/setting/CommonSettings$9;-><init>()V
 
-    invoke-virtual {v1, v10, v15}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v0, v10, v15}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 404
+    .line 407
     new-instance v15, Ljp/co/sony/mc/camera/setting/CommonSettings$10;
 
     invoke-direct {v15}, Ljp/co/sony/mc/camera/setting/CommonSettings$10;-><init>()V
 
-    invoke-virtual {v1, v11, v15}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v0, v11, v15}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 413
+    .line 416
     new-instance v15, Ljp/co/sony/mc/camera/setting/CommonSettings$11;
 
     invoke-direct {v15}, Ljp/co/sony/mc/camera/setting/CommonSettings$11;-><init>()V
 
-    invoke-virtual {v1, v12, v15}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v0, v12, v15}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 422
+    .line 425
     new-instance v15, Ljp/co/sony/mc/camera/setting/CommonSettings$12;
 
     invoke-direct {v15}, Ljp/co/sony/mc/camera/setting/CommonSettings$12;-><init>()V
 
-    invoke-virtual {v1, v13, v15}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v0, v13, v15}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 431
+    .line 434
     new-instance v15, Ljp/co/sony/mc/camera/setting/CommonSettings$13;
 
     invoke-direct {v15}, Ljp/co/sony/mc/camera/setting/CommonSettings$13;-><init>()V
 
-    invoke-virtual {v1, v14, v15}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v0, v14, v15}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 440
+    .line 443
     new-instance v15, Ljp/co/sony/mc/camera/setting/CommonSettings$14;
 
     invoke-direct {v15}, Ljp/co/sony/mc/camera/setting/CommonSettings$14;-><init>()V
 
-    move-object/from16 v56, v14
+    move-object/from16 v57, v14
 
     move-object/from16 v14, v18
 
-    invoke-virtual {v1, v14, v15}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v0, v14, v15}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 447
+    .line 450
     new-instance v15, Ljp/co/sony/mc/camera/setting/CommonSettings$15;
 
     invoke-direct {v15}, Ljp/co/sony/mc/camera/setting/CommonSettings$15;-><init>()V
 
     move-object/from16 v14, v19
 
-    invoke-virtual {v1, v14, v15}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v0, v14, v15}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 453
+    .line 456
     new-instance v15, Ljp/co/sony/mc/camera/setting/CommonSettings$16;
 
     invoke-direct {v15}, Ljp/co/sony/mc/camera/setting/CommonSettings$16;-><init>()V
 
     move-object/from16 v14, v20
 
-    invoke-virtual {v1, v14, v15}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v0, v14, v15}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 459
+    .line 462
     new-instance v15, Ljp/co/sony/mc/camera/setting/CommonSettings$17;
 
     invoke-direct {v15}, Ljp/co/sony/mc/camera/setting/CommonSettings$17;-><init>()V
 
     move-object/from16 v14, v21
 
-    invoke-virtual {v1, v14, v15}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v0, v14, v15}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 465
+    .line 468
     new-instance v15, Ljp/co/sony/mc/camera/setting/CommonSettings$18;
 
     invoke-direct {v15}, Ljp/co/sony/mc/camera/setting/CommonSettings$18;-><init>()V
 
     move-object/from16 v14, v22
 
-    invoke-virtual {v1, v14, v15}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v0, v14, v15}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 472
+    .line 475
     new-instance v15, Ljp/co/sony/mc/camera/setting/CommonSettings$19;
 
     invoke-direct {v15}, Ljp/co/sony/mc/camera/setting/CommonSettings$19;-><init>()V
 
     move-object/from16 v14, v23
 
-    invoke-virtual {v1, v14, v15}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v0, v14, v15}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 479
+    .line 482
     new-instance v15, Ljp/co/sony/mc/camera/setting/CommonSettings$20;
 
     invoke-direct {v15}, Ljp/co/sony/mc/camera/setting/CommonSettings$20;-><init>()V
 
     move-object/from16 v14, v24
 
-    invoke-virtual {v1, v14, v15}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v0, v14, v15}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 486
+    .line 489
     new-instance v15, Ljp/co/sony/mc/camera/setting/CommonSettings$21;
 
     invoke-direct {v15}, Ljp/co/sony/mc/camera/setting/CommonSettings$21;-><init>()V
 
     move-object/from16 v14, v25
 
-    invoke-virtual {v1, v14, v15}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v0, v14, v15}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 492
+    .line 495
     new-instance v15, Ljp/co/sony/mc/camera/setting/CommonSettings$22;
 
     invoke-direct {v15}, Ljp/co/sony/mc/camera/setting/CommonSettings$22;-><init>()V
 
     move-object/from16 v14, v17
 
-    invoke-virtual {v1, v14, v15}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v0, v14, v15}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 499
+    .line 502
     new-instance v15, Ljp/co/sony/mc/camera/setting/CommonSettings$23;
 
     invoke-direct {v15}, Ljp/co/sony/mc/camera/setting/CommonSettings$23;-><init>()V
 
     move-object/from16 v14, v26
 
-    invoke-virtual {v1, v14, v15}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v0, v14, v15}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 505
+    .line 508
     new-instance v15, Ljp/co/sony/mc/camera/setting/CommonSettings$24;
 
     invoke-direct {v15}, Ljp/co/sony/mc/camera/setting/CommonSettings$24;-><init>()V
 
     move-object/from16 v14, v27
 
-    invoke-virtual {v1, v14, v15}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v0, v14, v15}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 511
+    .line 514
     new-instance v15, Ljp/co/sony/mc/camera/setting/CommonSettings$25;
 
     invoke-direct {v15}, Ljp/co/sony/mc/camera/setting/CommonSettings$25;-><init>()V
 
     move-object/from16 v14, v28
 
-    invoke-virtual {v1, v14, v15}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v0, v14, v15}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 518
+    .line 521
     new-instance v15, Ljp/co/sony/mc/camera/setting/CommonSettings$26;
 
     invoke-direct {v15}, Ljp/co/sony/mc/camera/setting/CommonSettings$26;-><init>()V
 
     move-object/from16 v14, v29
 
-    invoke-virtual {v1, v14, v15}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v0, v14, v15}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 525
+    .line 528
     new-instance v15, Ljp/co/sony/mc/camera/setting/CommonSettings$27;
 
     invoke-direct {v15}, Ljp/co/sony/mc/camera/setting/CommonSettings$27;-><init>()V
 
     move-object/from16 v14, v30
 
-    invoke-virtual {v1, v14, v15}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v0, v14, v15}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 533
+    .line 536
     new-instance v15, Ljp/co/sony/mc/camera/setting/CommonSettings$28;
 
     invoke-direct {v15}, Ljp/co/sony/mc/camera/setting/CommonSettings$28;-><init>()V
 
     move-object/from16 v14, v31
 
-    invoke-virtual {v1, v14, v15}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v0, v14, v15}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 541
+    .line 544
     new-instance v15, Ljp/co/sony/mc/camera/setting/CommonSettings$29;
 
     invoke-direct {v15}, Ljp/co/sony/mc/camera/setting/CommonSettings$29;-><init>()V
 
     move-object/from16 v14, v32
 
-    invoke-virtual {v1, v14, v15}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v0, v14, v15}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 549
+    .line 552
     new-instance v15, Ljp/co/sony/mc/camera/setting/CommonSettings$30;
 
     invoke-direct {v15}, Ljp/co/sony/mc/camera/setting/CommonSettings$30;-><init>()V
 
     move-object/from16 v14, v33
 
-    invoke-virtual {v1, v14, v15}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v0, v14, v15}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 556
+    .line 559
     new-instance v15, Ljp/co/sony/mc/camera/setting/CommonSettings$31;
 
     invoke-direct {v15}, Ljp/co/sony/mc/camera/setting/CommonSettings$31;-><init>()V
 
     move-object/from16 v14, v34
 
-    invoke-virtual {v1, v14, v15}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v0, v14, v15}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 564
+    .line 567
     new-instance v15, Ljp/co/sony/mc/camera/setting/CommonSettings$32;
 
     invoke-direct {v15}, Ljp/co/sony/mc/camera/setting/CommonSettings$32;-><init>()V
 
     move-object/from16 v14, v35
 
-    invoke-virtual {v1, v14, v15}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v0, v14, v15}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 572
+    .line 575
     new-instance v15, Ljp/co/sony/mc/camera/setting/CommonSettings$33;
 
     invoke-direct {v15}, Ljp/co/sony/mc/camera/setting/CommonSettings$33;-><init>()V
 
     move-object/from16 v14, v36
 
-    invoke-virtual {v1, v14, v15}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v0, v14, v15}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 580
+    .line 583
     new-instance v15, Ljp/co/sony/mc/camera/setting/CommonSettings$34;
 
     invoke-direct {v15}, Ljp/co/sony/mc/camera/setting/CommonSettings$34;-><init>()V
 
     move-object/from16 v14, v37
 
-    invoke-virtual {v1, v14, v15}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v0, v14, v15}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 588
+    .line 591
     new-instance v15, Ljp/co/sony/mc/camera/setting/CommonSettings$35;
 
     invoke-direct {v15}, Ljp/co/sony/mc/camera/setting/CommonSettings$35;-><init>()V
 
     move-object/from16 v14, v38
 
-    invoke-virtual {v1, v14, v15}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v0, v14, v15}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 596
+    .line 599
     new-instance v15, Ljp/co/sony/mc/camera/setting/CommonSettings$36;
 
     invoke-direct {v15}, Ljp/co/sony/mc/camera/setting/CommonSettings$36;-><init>()V
 
     move-object/from16 v14, v39
 
-    invoke-virtual {v1, v14, v15}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v0, v14, v15}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 604
+    .line 607
     new-instance v15, Ljp/co/sony/mc/camera/setting/CommonSettings$37;
 
     invoke-direct {v15}, Ljp/co/sony/mc/camera/setting/CommonSettings$37;-><init>()V
 
     move-object/from16 v14, v40
 
-    invoke-virtual {v1, v14, v15}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v0, v14, v15}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 612
+    .line 615
     new-instance v15, Ljp/co/sony/mc/camera/setting/CommonSettings$38;
 
     invoke-direct {v15}, Ljp/co/sony/mc/camera/setting/CommonSettings$38;-><init>()V
 
     move-object/from16 v14, v41
 
-    invoke-virtual {v1, v14, v15}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v0, v14, v15}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 620
+    .line 623
     new-instance v15, Ljp/co/sony/mc/camera/setting/CommonSettings$39;
 
     invoke-direct {v15}, Ljp/co/sony/mc/camera/setting/CommonSettings$39;-><init>()V
 
     move-object/from16 v14, v42
 
-    invoke-virtual {v1, v14, v15}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v0, v14, v15}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 628
+    .line 631
     new-instance v15, Ljp/co/sony/mc/camera/setting/CommonSettings$40;
 
     invoke-direct {v15}, Ljp/co/sony/mc/camera/setting/CommonSettings$40;-><init>()V
 
     move-object/from16 v14, v43
 
-    invoke-virtual {v1, v14, v15}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v0, v14, v15}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 636
+    .line 639
     new-instance v15, Ljp/co/sony/mc/camera/setting/CommonSettings$41;
 
     invoke-direct {v15}, Ljp/co/sony/mc/camera/setting/CommonSettings$41;-><init>()V
 
     move-object/from16 v14, v44
 
-    invoke-virtual {v1, v14, v15}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v0, v14, v15}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 644
+    .line 647
     new-instance v15, Ljp/co/sony/mc/camera/setting/CommonSettings$42;
 
     invoke-direct {v15}, Ljp/co/sony/mc/camera/setting/CommonSettings$42;-><init>()V
 
     move-object/from16 v14, v45
 
-    invoke-virtual {v1, v14, v15}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v0, v14, v15}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 652
+    .line 655
     new-instance v15, Ljp/co/sony/mc/camera/setting/CommonSettings$43;
 
     invoke-direct {v15}, Ljp/co/sony/mc/camera/setting/CommonSettings$43;-><init>()V
 
     move-object/from16 v14, v46
 
-    invoke-virtual {v1, v14, v15}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v0, v14, v15}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 660
+    .line 663
     new-instance v15, Ljp/co/sony/mc/camera/setting/CommonSettings$44;
 
     invoke-direct {v15}, Ljp/co/sony/mc/camera/setting/CommonSettings$44;-><init>()V
 
     move-object/from16 v14, v47
 
-    invoke-virtual {v1, v14, v15}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v0, v14, v15}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 668
+    .line 671
     new-instance v15, Ljp/co/sony/mc/camera/setting/CommonSettings$45;
 
     invoke-direct {v15}, Ljp/co/sony/mc/camera/setting/CommonSettings$45;-><init>()V
 
     move-object/from16 v14, v48
 
-    invoke-virtual {v1, v14, v15}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v0, v14, v15}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 676
+    .line 679
     new-instance v15, Ljp/co/sony/mc/camera/setting/CommonSettings$46;
 
     invoke-direct {v15}, Ljp/co/sony/mc/camera/setting/CommonSettings$46;-><init>()V
 
     move-object/from16 v14, v49
 
-    invoke-virtual {v1, v14, v15}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v0, v14, v15}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 684
+    .line 687
     new-instance v15, Ljp/co/sony/mc/camera/setting/CommonSettings$47;
 
     invoke-direct {v15}, Ljp/co/sony/mc/camera/setting/CommonSettings$47;-><init>()V
 
     move-object/from16 v14, v50
 
-    invoke-virtual {v1, v14, v15}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v0, v14, v15}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 692
+    .line 695
     new-instance v15, Ljp/co/sony/mc/camera/setting/CommonSettings$48;
 
     invoke-direct {v15}, Ljp/co/sony/mc/camera/setting/CommonSettings$48;-><init>()V
 
     move-object/from16 v14, v51
 
-    invoke-virtual {v1, v14, v15}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v0, v14, v15}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 700
+    .line 703
     new-instance v15, Ljp/co/sony/mc/camera/setting/CommonSettings$49;
 
     invoke-direct {v15}, Ljp/co/sony/mc/camera/setting/CommonSettings$49;-><init>()V
 
     move-object/from16 v14, v52
 
-    invoke-virtual {v1, v14, v15}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v0, v14, v15}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 708
+    .line 711
     new-instance v15, Ljp/co/sony/mc/camera/setting/CommonSettings$50;
 
     invoke-direct {v15}, Ljp/co/sony/mc/camera/setting/CommonSettings$50;-><init>()V
 
     move-object/from16 v14, v53
 
-    invoke-virtual {v1, v14, v15}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v0, v14, v15}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 716
+    .line 719
     new-instance v15, Ljp/co/sony/mc/camera/setting/CommonSettings$51;
 
     invoke-direct {v15}, Ljp/co/sony/mc/camera/setting/CommonSettings$51;-><init>()V
 
     move-object/from16 v14, v54
 
-    invoke-virtual {v1, v14, v15}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v0, v14, v15}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 724
+    .line 727
     new-instance v15, Ljp/co/sony/mc/camera/setting/CommonSettings$52;
 
     invoke-direct {v15}, Ljp/co/sony/mc/camera/setting/CommonSettings$52;-><init>()V
 
     move-object/from16 v14, v55
 
-    invoke-virtual {v1, v14, v15}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v0, v14, v15}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 732
+    .line 735
     new-instance v15, Ljp/co/sony/mc/camera/setting/CommonSettings$53;
 
     invoke-direct {v15}, Ljp/co/sony/mc/camera/setting/CommonSettings$53;-><init>()V
 
-    invoke-virtual {v1, v0, v15}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    move-object/from16 v14, v56
 
-    .line 742
-    new-instance v1, Ljava/util/HashMap;
+    invoke-virtual {v0, v14, v15}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    invoke-direct {v1}, Ljava/util/HashMap;-><init>()V
-
-    sput-object v1, Ljp/co/sony/mc/camera/setting/CommonSettings;->sSetCommandMap:Ljava/util/HashMap;
-
-    .line 744
+    .line 743
     new-instance v15, Ljp/co/sony/mc/camera/setting/CommonSettings$54;
 
     invoke-direct {v15}, Ljp/co/sony/mc/camera/setting/CommonSettings$54;-><init>()V
 
-    invoke-virtual {v1, v2, v15}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v0, v1, v15}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 752
+    .line 753
+    new-instance v0, Ljava/util/HashMap;
+
+    invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
+
+    sput-object v0, Ljp/co/sony/mc/camera/setting/CommonSettings;->sSetCommandMap:Ljava/util/HashMap;
+
+    .line 755
     new-instance v15, Ljp/co/sony/mc/camera/setting/CommonSettings$55;
 
     invoke-direct {v15}, Ljp/co/sony/mc/camera/setting/CommonSettings$55;-><init>()V
 
-    invoke-virtual {v1, v4, v15}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v0, v2, v15}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 760
+    .line 763
     new-instance v15, Ljp/co/sony/mc/camera/setting/CommonSettings$56;
 
     invoke-direct {v15}, Ljp/co/sony/mc/camera/setting/CommonSettings$56;-><init>()V
 
-    invoke-virtual {v1, v6, v15}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v0, v4, v15}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 768
+    .line 771
     new-instance v15, Ljp/co/sony/mc/camera/setting/CommonSettings$57;
 
     invoke-direct {v15}, Ljp/co/sony/mc/camera/setting/CommonSettings$57;-><init>()V
 
-    invoke-virtual {v1, v7, v15}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v0, v6, v15}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 776
+    .line 779
     new-instance v15, Ljp/co/sony/mc/camera/setting/CommonSettings$58;
 
     invoke-direct {v15}, Ljp/co/sony/mc/camera/setting/CommonSettings$58;-><init>()V
 
-    invoke-virtual {v1, v3, v15}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v0, v7, v15}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 784
+    .line 787
     new-instance v15, Ljp/co/sony/mc/camera/setting/CommonSettings$59;
 
     invoke-direct {v15}, Ljp/co/sony/mc/camera/setting/CommonSettings$59;-><init>()V
 
-    invoke-virtual {v1, v5, v15}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v0, v3, v15}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 792
+    .line 795
     new-instance v15, Ljp/co/sony/mc/camera/setting/CommonSettings$60;
 
     invoke-direct {v15}, Ljp/co/sony/mc/camera/setting/CommonSettings$60;-><init>()V
 
-    invoke-virtual {v1, v8, v15}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v0, v5, v15}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 800
+    .line 803
     new-instance v15, Ljp/co/sony/mc/camera/setting/CommonSettings$61;
 
     invoke-direct {v15}, Ljp/co/sony/mc/camera/setting/CommonSettings$61;-><init>()V
 
-    invoke-virtual {v1, v9, v15}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v0, v8, v15}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 808
+    .line 811
     new-instance v15, Ljp/co/sony/mc/camera/setting/CommonSettings$62;
 
     invoke-direct {v15}, Ljp/co/sony/mc/camera/setting/CommonSettings$62;-><init>()V
 
-    invoke-virtual {v1, v10, v15}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v0, v9, v15}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 815
+    .line 819
     new-instance v15, Ljp/co/sony/mc/camera/setting/CommonSettings$63;
 
     invoke-direct {v15}, Ljp/co/sony/mc/camera/setting/CommonSettings$63;-><init>()V
 
-    invoke-virtual {v1, v11, v15}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v0, v10, v15}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 823
+    .line 826
     new-instance v15, Ljp/co/sony/mc/camera/setting/CommonSettings$64;
 
     invoke-direct {v15}, Ljp/co/sony/mc/camera/setting/CommonSettings$64;-><init>()V
 
-    invoke-virtual {v1, v12, v15}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v0, v11, v15}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 831
+    .line 834
     new-instance v15, Ljp/co/sony/mc/camera/setting/CommonSettings$65;
 
     invoke-direct {v15}, Ljp/co/sony/mc/camera/setting/CommonSettings$65;-><init>()V
 
-    invoke-virtual {v1, v13, v15}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v0, v12, v15}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 839
+    .line 842
     new-instance v15, Ljp/co/sony/mc/camera/setting/CommonSettings$66;
 
     invoke-direct {v15}, Ljp/co/sony/mc/camera/setting/CommonSettings$66;-><init>()V
 
-    move-object/from16 v55, v5
+    invoke-virtual {v0, v13, v15}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    move-object/from16 v5, v56
-
-    invoke-virtual {v1, v5, v15}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
-
-    .line 847
+    .line 850
     new-instance v15, Ljp/co/sony/mc/camera/setting/CommonSettings$67;
 
     invoke-direct {v15}, Ljp/co/sony/mc/camera/setting/CommonSettings$67;-><init>()V
 
-    move-object/from16 v56, v3
+    move-object/from16 v56, v5
 
-    move-object/from16 v3, v18
+    move-object/from16 v5, v57
 
-    invoke-virtual {v1, v3, v15}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v0, v5, v15}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 854
+    .line 858
     new-instance v15, Ljp/co/sony/mc/camera/setting/CommonSettings$68;
 
     invoke-direct {v15}, Ljp/co/sony/mc/camera/setting/CommonSettings$68;-><init>()V
+
+    move-object/from16 v57, v3
+
+    move-object/from16 v3, v18
+
+    invoke-virtual {v0, v3, v15}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 865
+    new-instance v15, Ljp/co/sony/mc/camera/setting/CommonSettings$69;
+
+    invoke-direct {v15}, Ljp/co/sony/mc/camera/setting/CommonSettings$69;-><init>()V
 
     move-object/from16 v18, v7
 
     move-object/from16 v7, v19
 
-    invoke-virtual {v1, v7, v15}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v0, v7, v15}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 861
-    new-instance v15, Ljp/co/sony/mc/camera/setting/CommonSettings$69;
+    .line 872
+    new-instance v15, Ljp/co/sony/mc/camera/setting/CommonSettings$70;
 
-    invoke-direct {v15}, Ljp/co/sony/mc/camera/setting/CommonSettings$69;-><init>()V
+    invoke-direct {v15}, Ljp/co/sony/mc/camera/setting/CommonSettings$70;-><init>()V
 
     move-object/from16 v19, v6
 
     move-object/from16 v6, v20
 
-    invoke-virtual {v1, v6, v15}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v0, v6, v15}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 868
-    new-instance v15, Ljp/co/sony/mc/camera/setting/CommonSettings$70;
-
-    invoke-direct {v15}, Ljp/co/sony/mc/camera/setting/CommonSettings$70;-><init>()V
-
-    move-object/from16 v6, v21
-
-    invoke-virtual {v1, v6, v15}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
-
-    .line 875
+    .line 879
     new-instance v15, Ljp/co/sony/mc/camera/setting/CommonSettings$71;
 
     invoke-direct {v15}, Ljp/co/sony/mc/camera/setting/CommonSettings$71;-><init>()V
 
-    move-object/from16 v6, v22
+    move-object/from16 v6, v21
 
-    invoke-virtual {v1, v6, v15}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v0, v6, v15}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 883
+    .line 886
     new-instance v15, Ljp/co/sony/mc/camera/setting/CommonSettings$72;
 
     invoke-direct {v15}, Ljp/co/sony/mc/camera/setting/CommonSettings$72;-><init>()V
 
-    move-object/from16 v6, v23
+    move-object/from16 v6, v22
 
-    invoke-virtual {v1, v6, v15}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v0, v6, v15}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 891
+    .line 894
     new-instance v15, Ljp/co/sony/mc/camera/setting/CommonSettings$73;
 
     invoke-direct {v15}, Ljp/co/sony/mc/camera/setting/CommonSettings$73;-><init>()V
 
-    move-object/from16 v6, v24
+    move-object/from16 v6, v23
 
-    invoke-virtual {v1, v6, v15}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v0, v6, v15}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 899
+    .line 902
     new-instance v15, Ljp/co/sony/mc/camera/setting/CommonSettings$74;
 
     invoke-direct {v15}, Ljp/co/sony/mc/camera/setting/CommonSettings$74;-><init>()V
 
-    move-object/from16 v6, v25
+    move-object/from16 v6, v24
 
-    invoke-virtual {v1, v6, v15}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v0, v6, v15}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 906
+    .line 910
     new-instance v15, Ljp/co/sony/mc/camera/setting/CommonSettings$75;
 
     invoke-direct {v15}, Ljp/co/sony/mc/camera/setting/CommonSettings$75;-><init>()V
 
-    move-object/from16 v6, v17
+    move-object/from16 v6, v25
 
-    invoke-virtual {v1, v6, v15}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v0, v6, v15}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 914
+    .line 917
     new-instance v15, Ljp/co/sony/mc/camera/setting/CommonSettings$76;
 
     invoke-direct {v15}, Ljp/co/sony/mc/camera/setting/CommonSettings$76;-><init>()V
 
-    move-object/from16 v6, v26
+    move-object/from16 v6, v17
 
-    invoke-virtual {v1, v6, v15}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v0, v6, v15}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 921
+    .line 925
     new-instance v15, Ljp/co/sony/mc/camera/setting/CommonSettings$77;
 
     invoke-direct {v15}, Ljp/co/sony/mc/camera/setting/CommonSettings$77;-><init>()V
 
-    move-object/from16 v6, v27
+    move-object/from16 v6, v26
 
-    invoke-virtual {v1, v6, v15}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v0, v6, v15}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 928
+    .line 932
     new-instance v15, Ljp/co/sony/mc/camera/setting/CommonSettings$78;
 
     invoke-direct {v15}, Ljp/co/sony/mc/camera/setting/CommonSettings$78;-><init>()V
 
-    move-object/from16 v6, v28
+    move-object/from16 v6, v27
 
-    invoke-virtual {v1, v6, v15}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v0, v6, v15}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 937
+    .line 939
     new-instance v15, Ljp/co/sony/mc/camera/setting/CommonSettings$79;
 
     invoke-direct {v15}, Ljp/co/sony/mc/camera/setting/CommonSettings$79;-><init>()V
 
-    move-object/from16 v6, v29
+    move-object/from16 v6, v28
 
-    invoke-virtual {v1, v6, v15}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v0, v6, v15}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 946
+    .line 948
     new-instance v15, Ljp/co/sony/mc/camera/setting/CommonSettings$80;
 
     invoke-direct {v15}, Ljp/co/sony/mc/camera/setting/CommonSettings$80;-><init>()V
 
-    move-object/from16 v6, v30
+    move-object/from16 v6, v29
 
-    invoke-virtual {v1, v6, v15}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v0, v6, v15}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 954
+    .line 957
     new-instance v15, Ljp/co/sony/mc/camera/setting/CommonSettings$81;
 
     invoke-direct {v15}, Ljp/co/sony/mc/camera/setting/CommonSettings$81;-><init>()V
 
-    move-object/from16 v6, v31
+    move-object/from16 v6, v30
 
-    invoke-virtual {v1, v6, v15}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v0, v6, v15}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 962
+    .line 965
     new-instance v15, Ljp/co/sony/mc/camera/setting/CommonSettings$82;
 
     invoke-direct {v15}, Ljp/co/sony/mc/camera/setting/CommonSettings$82;-><init>()V
 
-    move-object/from16 v6, v32
+    move-object/from16 v6, v31
 
-    invoke-virtual {v1, v6, v15}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v0, v6, v15}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 970
+    .line 973
     new-instance v15, Ljp/co/sony/mc/camera/setting/CommonSettings$83;
 
     invoke-direct {v15}, Ljp/co/sony/mc/camera/setting/CommonSettings$83;-><init>()V
 
-    move-object/from16 v6, v33
+    move-object/from16 v6, v32
 
-    invoke-virtual {v1, v6, v15}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v0, v6, v15}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 978
+    .line 981
     new-instance v15, Ljp/co/sony/mc/camera/setting/CommonSettings$84;
 
     invoke-direct {v15}, Ljp/co/sony/mc/camera/setting/CommonSettings$84;-><init>()V
 
-    move-object/from16 v6, v34
+    move-object/from16 v6, v33
 
-    invoke-virtual {v1, v6, v15}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v0, v6, v15}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 986
+    .line 989
     new-instance v15, Ljp/co/sony/mc/camera/setting/CommonSettings$85;
 
     invoke-direct {v15}, Ljp/co/sony/mc/camera/setting/CommonSettings$85;-><init>()V
 
-    move-object/from16 v6, v35
+    move-object/from16 v6, v34
 
-    invoke-virtual {v1, v6, v15}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v0, v6, v15}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 994
+    .line 997
     new-instance v15, Ljp/co/sony/mc/camera/setting/CommonSettings$86;
 
     invoke-direct {v15}, Ljp/co/sony/mc/camera/setting/CommonSettings$86;-><init>()V
 
-    move-object/from16 v6, v36
+    move-object/from16 v6, v35
 
-    invoke-virtual {v1, v6, v15}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v0, v6, v15}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 1002
+    .line 1005
     new-instance v15, Ljp/co/sony/mc/camera/setting/CommonSettings$87;
 
     invoke-direct {v15}, Ljp/co/sony/mc/camera/setting/CommonSettings$87;-><init>()V
 
-    move-object/from16 v6, v37
+    move-object/from16 v6, v36
 
-    invoke-virtual {v1, v6, v15}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v0, v6, v15}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 1010
+    .line 1013
     new-instance v15, Ljp/co/sony/mc/camera/setting/CommonSettings$88;
 
     invoke-direct {v15}, Ljp/co/sony/mc/camera/setting/CommonSettings$88;-><init>()V
 
-    move-object/from16 v6, v38
+    move-object/from16 v6, v37
 
-    invoke-virtual {v1, v6, v15}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v0, v6, v15}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 1018
+    .line 1021
     new-instance v15, Ljp/co/sony/mc/camera/setting/CommonSettings$89;
 
     invoke-direct {v15}, Ljp/co/sony/mc/camera/setting/CommonSettings$89;-><init>()V
 
-    move-object/from16 v6, v39
+    move-object/from16 v6, v38
 
-    invoke-virtual {v1, v6, v15}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v0, v6, v15}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 1026
+    .line 1029
     new-instance v15, Ljp/co/sony/mc/camera/setting/CommonSettings$90;
 
     invoke-direct {v15}, Ljp/co/sony/mc/camera/setting/CommonSettings$90;-><init>()V
 
-    move-object/from16 v6, v40
+    move-object/from16 v6, v39
 
-    invoke-virtual {v1, v6, v15}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v0, v6, v15}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 1034
+    .line 1037
     new-instance v15, Ljp/co/sony/mc/camera/setting/CommonSettings$91;
 
     invoke-direct {v15}, Ljp/co/sony/mc/camera/setting/CommonSettings$91;-><init>()V
 
-    move-object/from16 v6, v41
+    move-object/from16 v6, v40
 
-    invoke-virtual {v1, v6, v15}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v0, v6, v15}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 1042
+    .line 1045
     new-instance v15, Ljp/co/sony/mc/camera/setting/CommonSettings$92;
 
     invoke-direct {v15}, Ljp/co/sony/mc/camera/setting/CommonSettings$92;-><init>()V
 
-    move-object/from16 v6, v42
+    move-object/from16 v6, v41
 
-    invoke-virtual {v1, v6, v15}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v0, v6, v15}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 1050
+    .line 1053
     new-instance v15, Ljp/co/sony/mc/camera/setting/CommonSettings$93;
 
     invoke-direct {v15}, Ljp/co/sony/mc/camera/setting/CommonSettings$93;-><init>()V
 
-    move-object/from16 v6, v43
+    move-object/from16 v6, v42
 
-    invoke-virtual {v1, v6, v15}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v0, v6, v15}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 1058
+    .line 1061
     new-instance v15, Ljp/co/sony/mc/camera/setting/CommonSettings$94;
 
     invoke-direct {v15}, Ljp/co/sony/mc/camera/setting/CommonSettings$94;-><init>()V
 
-    move-object/from16 v6, v44
+    move-object/from16 v6, v43
 
-    invoke-virtual {v1, v6, v15}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v0, v6, v15}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 1066
+    .line 1069
     new-instance v15, Ljp/co/sony/mc/camera/setting/CommonSettings$95;
 
     invoke-direct {v15}, Ljp/co/sony/mc/camera/setting/CommonSettings$95;-><init>()V
 
-    move-object/from16 v6, v45
+    move-object/from16 v6, v44
 
-    invoke-virtual {v1, v6, v15}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v0, v6, v15}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 1074
+    .line 1077
     new-instance v15, Ljp/co/sony/mc/camera/setting/CommonSettings$96;
 
     invoke-direct {v15}, Ljp/co/sony/mc/camera/setting/CommonSettings$96;-><init>()V
 
-    move-object/from16 v6, v46
+    move-object/from16 v6, v45
 
-    invoke-virtual {v1, v6, v15}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v0, v6, v15}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 1082
+    .line 1085
     new-instance v15, Ljp/co/sony/mc/camera/setting/CommonSettings$97;
 
     invoke-direct {v15}, Ljp/co/sony/mc/camera/setting/CommonSettings$97;-><init>()V
 
-    move-object/from16 v6, v47
+    move-object/from16 v6, v46
 
-    invoke-virtual {v1, v6, v15}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v0, v6, v15}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 1090
+    .line 1093
     new-instance v15, Ljp/co/sony/mc/camera/setting/CommonSettings$98;
 
     invoke-direct {v15}, Ljp/co/sony/mc/camera/setting/CommonSettings$98;-><init>()V
 
-    move-object/from16 v6, v48
+    move-object/from16 v6, v47
 
-    invoke-virtual {v1, v6, v15}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v0, v6, v15}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 1098
+    .line 1101
     new-instance v15, Ljp/co/sony/mc/camera/setting/CommonSettings$99;
 
     invoke-direct {v15}, Ljp/co/sony/mc/camera/setting/CommonSettings$99;-><init>()V
 
-    move-object/from16 v6, v49
+    move-object/from16 v6, v48
 
-    invoke-virtual {v1, v6, v15}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v0, v6, v15}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 1106
+    .line 1109
     new-instance v15, Ljp/co/sony/mc/camera/setting/CommonSettings$100;
 
     invoke-direct {v15}, Ljp/co/sony/mc/camera/setting/CommonSettings$100;-><init>()V
 
-    move-object/from16 v6, v50
+    move-object/from16 v6, v49
 
-    invoke-virtual {v1, v6, v15}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v0, v6, v15}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 1114
+    .line 1117
     new-instance v15, Ljp/co/sony/mc/camera/setting/CommonSettings$101;
 
     invoke-direct {v15}, Ljp/co/sony/mc/camera/setting/CommonSettings$101;-><init>()V
 
-    move-object/from16 v6, v51
+    move-object/from16 v6, v50
 
-    invoke-virtual {v1, v6, v15}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v0, v6, v15}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 1122
+    .line 1125
     new-instance v15, Ljp/co/sony/mc/camera/setting/CommonSettings$102;
 
     invoke-direct {v15}, Ljp/co/sony/mc/camera/setting/CommonSettings$102;-><init>()V
 
-    move-object/from16 v6, v52
+    move-object/from16 v6, v51
 
-    invoke-virtual {v1, v6, v15}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v0, v6, v15}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 1130
+    .line 1133
     new-instance v15, Ljp/co/sony/mc/camera/setting/CommonSettings$103;
 
     invoke-direct {v15}, Ljp/co/sony/mc/camera/setting/CommonSettings$103;-><init>()V
 
-    move-object/from16 v6, v53
+    move-object/from16 v6, v52
 
-    invoke-virtual {v1, v6, v15}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v0, v6, v15}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 1138
+    .line 1141
     new-instance v15, Ljp/co/sony/mc/camera/setting/CommonSettings$104;
 
     invoke-direct {v15}, Ljp/co/sony/mc/camera/setting/CommonSettings$104;-><init>()V
 
-    move-object/from16 v6, v54
+    move-object/from16 v6, v53
 
-    invoke-virtual {v1, v6, v15}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v0, v6, v15}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 1146
+    .line 1149
     new-instance v15, Ljp/co/sony/mc/camera/setting/CommonSettings$105;
 
     invoke-direct {v15}, Ljp/co/sony/mc/camera/setting/CommonSettings$105;-><init>()V
 
-    invoke-virtual {v1, v14, v15}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    move-object/from16 v6, v54
 
-    .line 1154
+    invoke-virtual {v0, v6, v15}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 1157
     new-instance v15, Ljp/co/sony/mc/camera/setting/CommonSettings$106;
 
     invoke-direct {v15}, Ljp/co/sony/mc/camera/setting/CommonSettings$106;-><init>()V
 
-    invoke-virtual {v1, v0, v15}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    move-object/from16 v6, v55
 
-    .line 1164
-    new-instance v1, Ljava/util/HashMap;
+    invoke-virtual {v0, v6, v15}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    invoke-direct {v1}, Ljava/util/HashMap;-><init>()V
-
-    sput-object v1, Ljp/co/sony/mc/camera/setting/CommonSettings;->sGetOptionsCommandMap:Ljava/util/HashMap;
-
-    .line 1167
+    .line 1165
     new-instance v15, Ljp/co/sony/mc/camera/setting/CommonSettings$107;
 
     invoke-direct {v15}, Ljp/co/sony/mc/camera/setting/CommonSettings$107;-><init>()V
 
-    invoke-virtual {v1, v2, v15}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v0, v14, v15}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 1174
+    .line 1173
     new-instance v15, Ljp/co/sony/mc/camera/setting/CommonSettings$108;
 
     invoke-direct {v15}, Ljp/co/sony/mc/camera/setting/CommonSettings$108;-><init>()V
 
-    invoke-virtual {v1, v4, v15}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v0, v1, v15}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 1181
+    .line 1184
+    new-instance v0, Ljava/util/HashMap;
+
+    invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
+
+    sput-object v0, Ljp/co/sony/mc/camera/setting/CommonSettings;->sGetOptionsCommandMap:Ljava/util/HashMap;
+
+    .line 1187
     new-instance v15, Ljp/co/sony/mc/camera/setting/CommonSettings$109;
 
     invoke-direct {v15}, Ljp/co/sony/mc/camera/setting/CommonSettings$109;-><init>()V
 
-    invoke-virtual {v1, v8, v15}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v0, v2, v15}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 1188
+    .line 1194
     new-instance v15, Ljp/co/sony/mc/camera/setting/CommonSettings$110;
 
     invoke-direct {v15}, Ljp/co/sony/mc/camera/setting/CommonSettings$110;-><init>()V
 
-    invoke-virtual {v1, v9, v15}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v0, v4, v15}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 1195
+    .line 1201
     new-instance v15, Ljp/co/sony/mc/camera/setting/CommonSettings$111;
 
     invoke-direct {v15}, Ljp/co/sony/mc/camera/setting/CommonSettings$111;-><init>()V
 
-    invoke-virtual {v1, v10, v15}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v0, v8, v15}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 1202
+    .line 1208
     new-instance v15, Ljp/co/sony/mc/camera/setting/CommonSettings$112;
 
     invoke-direct {v15}, Ljp/co/sony/mc/camera/setting/CommonSettings$112;-><init>()V
 
-    invoke-virtual {v1, v11, v15}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v0, v9, v15}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 1209
+    .line 1215
     new-instance v15, Ljp/co/sony/mc/camera/setting/CommonSettings$113;
 
     invoke-direct {v15}, Ljp/co/sony/mc/camera/setting/CommonSettings$113;-><init>()V
 
-    invoke-virtual {v1, v12, v15}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v0, v10, v15}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 1216
+    .line 1222
     new-instance v15, Ljp/co/sony/mc/camera/setting/CommonSettings$114;
 
     invoke-direct {v15}, Ljp/co/sony/mc/camera/setting/CommonSettings$114;-><init>()V
 
-    invoke-virtual {v1, v13, v15}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v0, v11, v15}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 1225
+    .line 1229
     new-instance v15, Ljp/co/sony/mc/camera/setting/CommonSettings$115;
 
     invoke-direct {v15}, Ljp/co/sony/mc/camera/setting/CommonSettings$115;-><init>()V
 
-    invoke-virtual {v1, v5, v15}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v0, v12, v15}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 1232
+    .line 1236
     new-instance v15, Ljp/co/sony/mc/camera/setting/CommonSettings$116;
 
     invoke-direct {v15}, Ljp/co/sony/mc/camera/setting/CommonSettings$116;-><init>()V
 
-    invoke-virtual {v1, v3, v15}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v0, v13, v15}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 1239
+    .line 1245
     new-instance v15, Ljp/co/sony/mc/camera/setting/CommonSettings$117;
 
     invoke-direct {v15}, Ljp/co/sony/mc/camera/setting/CommonSettings$117;-><init>()V
 
-    invoke-virtual {v1, v7, v15}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v0, v5, v15}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 1246
+    .line 1252
     new-instance v15, Ljp/co/sony/mc/camera/setting/CommonSettings$118;
 
     invoke-direct {v15}, Ljp/co/sony/mc/camera/setting/CommonSettings$118;-><init>()V
 
-    move-object/from16 v54, v0
+    invoke-virtual {v0, v3, v15}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    move-object/from16 v0, v20
-
-    invoke-virtual {v1, v0, v15}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
-
-    .line 1253
+    .line 1259
     new-instance v15, Ljp/co/sony/mc/camera/setting/CommonSettings$119;
 
     invoke-direct {v15}, Ljp/co/sony/mc/camera/setting/CommonSettings$119;-><init>()V
+
+    invoke-virtual {v0, v7, v15}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 1266
+    new-instance v15, Ljp/co/sony/mc/camera/setting/CommonSettings$120;
+
+    invoke-direct {v15}, Ljp/co/sony/mc/camera/setting/CommonSettings$120;-><init>()V
+
+    move-object/from16 v55, v1
+
+    move-object/from16 v1, v20
+
+    invoke-virtual {v0, v1, v15}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 1273
+    new-instance v15, Ljp/co/sony/mc/camera/setting/CommonSettings$121;
+
+    invoke-direct {v15}, Ljp/co/sony/mc/camera/setting/CommonSettings$121;-><init>()V
 
     move-object/from16 v20, v14
 
     move-object/from16 v14, v27
 
-    invoke-virtual {v1, v14, v15}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v0, v14, v15}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 1260
-    new-instance v15, Ljp/co/sony/mc/camera/setting/CommonSettings$120;
-
-    invoke-direct {v15}, Ljp/co/sony/mc/camera/setting/CommonSettings$120;-><init>()V
-
-    move-object/from16 v14, v21
-
-    invoke-virtual {v1, v14, v15}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
-
-    .line 1267
-    new-instance v15, Ljp/co/sony/mc/camera/setting/CommonSettings$121;
-
-    invoke-direct {v15}, Ljp/co/sony/mc/camera/setting/CommonSettings$121;-><init>()V
-
-    move-object/from16 v14, v22
-
-    invoke-virtual {v1, v14, v15}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
-
-    .line 1274
+    .line 1280
     new-instance v15, Ljp/co/sony/mc/camera/setting/CommonSettings$122;
 
     invoke-direct {v15}, Ljp/co/sony/mc/camera/setting/CommonSettings$122;-><init>()V
 
-    move-object/from16 v14, v23
+    move-object/from16 v27, v6
 
-    invoke-virtual {v1, v14, v15}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    move-object/from16 v6, v21
 
-    .line 1281
+    invoke-virtual {v0, v6, v15}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 1287
     new-instance v15, Ljp/co/sony/mc/camera/setting/CommonSettings$123;
 
     invoke-direct {v15}, Ljp/co/sony/mc/camera/setting/CommonSettings$123;-><init>()V
 
-    move-object/from16 v14, v24
+    move-object/from16 v21, v14
 
-    invoke-virtual {v1, v14, v15}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    move-object/from16 v14, v22
 
-    .line 1288
+    invoke-virtual {v0, v14, v15}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 1294
     new-instance v15, Ljp/co/sony/mc/camera/setting/CommonSettings$124;
 
     invoke-direct {v15}, Ljp/co/sony/mc/camera/setting/CommonSettings$124;-><init>()V
 
-    move-object/from16 v14, v25
+    move-object/from16 v14, v23
 
-    invoke-virtual {v1, v14, v15}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v0, v14, v15}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 1295
+    .line 1301
     new-instance v15, Ljp/co/sony/mc/camera/setting/CommonSettings$125;
 
     invoke-direct {v15}, Ljp/co/sony/mc/camera/setting/CommonSettings$125;-><init>()V
 
-    move-object/from16 v14, v26
+    move-object/from16 v14, v24
 
-    invoke-virtual {v1, v14, v15}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v0, v14, v15}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 1302
+    .line 1308
     new-instance v15, Ljp/co/sony/mc/camera/setting/CommonSettings$126;
 
     invoke-direct {v15}, Ljp/co/sony/mc/camera/setting/CommonSettings$126;-><init>()V
 
-    move-object/from16 v14, v30
+    move-object/from16 v14, v25
 
-    invoke-virtual {v1, v14, v15}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v0, v14, v15}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 1309
+    .line 1315
     new-instance v15, Ljp/co/sony/mc/camera/setting/CommonSettings$127;
 
     invoke-direct {v15}, Ljp/co/sony/mc/camera/setting/CommonSettings$127;-><init>()V
 
-    move-object/from16 v14, v31
+    move-object/from16 v14, v26
 
-    invoke-virtual {v1, v14, v15}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v0, v14, v15}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 1316
+    .line 1322
     new-instance v15, Ljp/co/sony/mc/camera/setting/CommonSettings$128;
 
     invoke-direct {v15}, Ljp/co/sony/mc/camera/setting/CommonSettings$128;-><init>()V
 
-    move-object/from16 v14, v32
+    move-object/from16 v14, v30
 
-    invoke-virtual {v1, v14, v15}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v0, v14, v15}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 1323
+    .line 1329
     new-instance v15, Ljp/co/sony/mc/camera/setting/CommonSettings$129;
 
     invoke-direct {v15}, Ljp/co/sony/mc/camera/setting/CommonSettings$129;-><init>()V
 
-    move-object/from16 v14, v33
+    move-object/from16 v14, v31
 
-    invoke-virtual {v1, v14, v15}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v0, v14, v15}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 1329
+    .line 1336
     new-instance v15, Ljp/co/sony/mc/camera/setting/CommonSettings$130;
 
     invoke-direct {v15}, Ljp/co/sony/mc/camera/setting/CommonSettings$130;-><init>()V
 
-    move-object/from16 v14, v34
+    move-object/from16 v14, v32
 
-    invoke-virtual {v1, v14, v15}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v0, v14, v15}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 1336
+    .line 1343
     new-instance v15, Ljp/co/sony/mc/camera/setting/CommonSettings$131;
 
     invoke-direct {v15}, Ljp/co/sony/mc/camera/setting/CommonSettings$131;-><init>()V
 
-    move-object/from16 v14, v35
+    move-object/from16 v14, v33
 
-    invoke-virtual {v1, v14, v15}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v0, v14, v15}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 1343
+    .line 1349
     new-instance v15, Ljp/co/sony/mc/camera/setting/CommonSettings$132;
 
     invoke-direct {v15}, Ljp/co/sony/mc/camera/setting/CommonSettings$132;-><init>()V
 
-    move-object/from16 v14, v37
+    move-object/from16 v14, v34
 
-    invoke-virtual {v1, v14, v15}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v0, v14, v15}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 1350
+    .line 1356
     new-instance v15, Ljp/co/sony/mc/camera/setting/CommonSettings$133;
 
     invoke-direct {v15}, Ljp/co/sony/mc/camera/setting/CommonSettings$133;-><init>()V
 
-    move-object/from16 v14, v38
+    move-object/from16 v14, v35
 
-    invoke-virtual {v1, v14, v15}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v0, v14, v15}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 1357
+    .line 1363
     new-instance v15, Ljp/co/sony/mc/camera/setting/CommonSettings$134;
 
     invoke-direct {v15}, Ljp/co/sony/mc/camera/setting/CommonSettings$134;-><init>()V
 
-    move-object/from16 v14, v39
+    move-object/from16 v14, v37
 
-    invoke-virtual {v1, v14, v15}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v0, v14, v15}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 1364
+    .line 1370
     new-instance v15, Ljp/co/sony/mc/camera/setting/CommonSettings$135;
 
     invoke-direct {v15}, Ljp/co/sony/mc/camera/setting/CommonSettings$135;-><init>()V
 
-    move-object/from16 v14, v40
+    move-object/from16 v14, v38
 
-    invoke-virtual {v1, v14, v15}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v0, v14, v15}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 1371
+    .line 1377
     new-instance v15, Ljp/co/sony/mc/camera/setting/CommonSettings$136;
 
     invoke-direct {v15}, Ljp/co/sony/mc/camera/setting/CommonSettings$136;-><init>()V
 
-    move-object/from16 v14, v41
+    move-object/from16 v14, v39
 
-    invoke-virtual {v1, v14, v15}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v0, v14, v15}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 1378
+    .line 1384
     new-instance v15, Ljp/co/sony/mc/camera/setting/CommonSettings$137;
 
     invoke-direct {v15}, Ljp/co/sony/mc/camera/setting/CommonSettings$137;-><init>()V
 
-    move-object/from16 v14, v42
+    move-object/from16 v14, v40
 
-    invoke-virtual {v1, v14, v15}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v0, v14, v15}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 1385
+    .line 1391
     new-instance v15, Ljp/co/sony/mc/camera/setting/CommonSettings$138;
 
     invoke-direct {v15}, Ljp/co/sony/mc/camera/setting/CommonSettings$138;-><init>()V
 
-    move-object/from16 v14, v43
+    move-object/from16 v14, v41
 
-    invoke-virtual {v1, v14, v15}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v0, v14, v15}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 1392
+    .line 1398
     new-instance v15, Ljp/co/sony/mc/camera/setting/CommonSettings$139;
 
     invoke-direct {v15}, Ljp/co/sony/mc/camera/setting/CommonSettings$139;-><init>()V
 
-    move-object/from16 v14, v44
+    move-object/from16 v14, v42
 
-    invoke-virtual {v1, v14, v15}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v0, v14, v15}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 1399
+    .line 1405
     new-instance v15, Ljp/co/sony/mc/camera/setting/CommonSettings$140;
 
     invoke-direct {v15}, Ljp/co/sony/mc/camera/setting/CommonSettings$140;-><init>()V
 
-    move-object/from16 v14, v45
+    move-object/from16 v14, v43
 
-    invoke-virtual {v1, v14, v15}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v0, v14, v15}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 1406
+    .line 1412
     new-instance v15, Ljp/co/sony/mc/camera/setting/CommonSettings$141;
 
     invoke-direct {v15}, Ljp/co/sony/mc/camera/setting/CommonSettings$141;-><init>()V
 
-    move-object/from16 v14, v46
+    move-object/from16 v14, v44
 
-    invoke-virtual {v1, v14, v15}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v0, v14, v15}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 1413
+    .line 1419
     new-instance v15, Ljp/co/sony/mc/camera/setting/CommonSettings$142;
 
     invoke-direct {v15}, Ljp/co/sony/mc/camera/setting/CommonSettings$142;-><init>()V
 
-    move-object/from16 v14, v47
+    move-object/from16 v14, v45
 
-    invoke-virtual {v1, v14, v15}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v0, v14, v15}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 1420
+    .line 1426
     new-instance v15, Ljp/co/sony/mc/camera/setting/CommonSettings$143;
 
     invoke-direct {v15}, Ljp/co/sony/mc/camera/setting/CommonSettings$143;-><init>()V
 
-    move-object/from16 v14, v48
+    move-object/from16 v14, v46
 
-    invoke-virtual {v1, v14, v15}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v0, v14, v15}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 1427
+    .line 1433
     new-instance v15, Ljp/co/sony/mc/camera/setting/CommonSettings$144;
 
     invoke-direct {v15}, Ljp/co/sony/mc/camera/setting/CommonSettings$144;-><init>()V
 
-    move-object/from16 v14, v49
+    move-object/from16 v14, v47
 
-    invoke-virtual {v1, v14, v15}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v0, v14, v15}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 1434
+    .line 1440
     new-instance v15, Ljp/co/sony/mc/camera/setting/CommonSettings$145;
 
     invoke-direct {v15}, Ljp/co/sony/mc/camera/setting/CommonSettings$145;-><init>()V
 
-    move-object/from16 v14, v50
+    move-object/from16 v14, v48
 
-    invoke-virtual {v1, v14, v15}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v0, v14, v15}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 1441
+    .line 1447
     new-instance v15, Ljp/co/sony/mc/camera/setting/CommonSettings$146;
 
     invoke-direct {v15}, Ljp/co/sony/mc/camera/setting/CommonSettings$146;-><init>()V
 
-    move-object/from16 v14, v51
+    move-object/from16 v14, v49
 
-    invoke-virtual {v1, v14, v15}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v0, v14, v15}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 1448
+    .line 1454
     new-instance v15, Ljp/co/sony/mc/camera/setting/CommonSettings$147;
 
     invoke-direct {v15}, Ljp/co/sony/mc/camera/setting/CommonSettings$147;-><init>()V
 
-    move-object/from16 v14, v52
+    move-object/from16 v14, v50
 
-    invoke-virtual {v1, v14, v15}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v0, v14, v15}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 1455
+    .line 1461
     new-instance v15, Ljp/co/sony/mc/camera/setting/CommonSettings$148;
 
     invoke-direct {v15}, Ljp/co/sony/mc/camera/setting/CommonSettings$148;-><init>()V
 
-    move-object/from16 v14, v53
+    move-object/from16 v14, v51
 
-    invoke-virtual {v1, v14, v15}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v0, v14, v15}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 1462
+    .line 1468
     new-instance v15, Ljp/co/sony/mc/camera/setting/CommonSettings$149;
 
     invoke-direct {v15}, Ljp/co/sony/mc/camera/setting/CommonSettings$149;-><init>()V
 
-    invoke-virtual {v1, v6, v15}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    move-object/from16 v14, v52
 
-    .line 1471
-    new-instance v1, Ljava/util/HashMap;
+    invoke-virtual {v0, v14, v15}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    invoke-direct {v1}, Ljava/util/HashMap;-><init>()V
-
-    sput-object v1, Ljp/co/sony/mc/camera/setting/CommonSettings;->sGetDefaultCommandMap:Ljava/util/HashMap;
-
-    .line 1474
+    .line 1475
     new-instance v15, Ljp/co/sony/mc/camera/setting/CommonSettings$150;
 
     invoke-direct {v15}, Ljp/co/sony/mc/camera/setting/CommonSettings$150;-><init>()V
 
-    move-object/from16 v53, v6
+    move-object/from16 v14, v53
 
-    move-object/from16 v6, v16
+    invoke-virtual {v0, v14, v15}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    invoke-virtual {v1, v6, v15}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    .line 1482
+    new-instance v15, Ljp/co/sony/mc/camera/setting/CommonSettings$151;
 
-    .line 1481
-    new-instance v6, Ljp/co/sony/mc/camera/setting/CommonSettings$151;
+    invoke-direct {v15}, Ljp/co/sony/mc/camera/setting/CommonSettings$151;-><init>()V
 
-    invoke-direct {v6}, Ljp/co/sony/mc/camera/setting/CommonSettings$151;-><init>()V
+    move-object/from16 v14, v54
 
-    invoke-virtual {v1, v2, v6}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v0, v14, v15}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 1488
-    new-instance v2, Ljp/co/sony/mc/camera/setting/CommonSettings$152;
+    .line 1491
+    new-instance v0, Ljava/util/HashMap;
 
-    invoke-direct {v2}, Ljp/co/sony/mc/camera/setting/CommonSettings$152;-><init>()V
+    invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
 
-    invoke-virtual {v1, v4, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    sput-object v0, Ljp/co/sony/mc/camera/setting/CommonSettings;->sGetDefaultCommandMap:Ljava/util/HashMap;
 
-    .line 1497
-    new-instance v2, Ljp/co/sony/mc/camera/setting/CommonSettings$153;
+    .line 1494
+    new-instance v15, Ljp/co/sony/mc/camera/setting/CommonSettings$152;
 
-    invoke-direct {v2}, Ljp/co/sony/mc/camera/setting/CommonSettings$153;-><init>()V
+    invoke-direct {v15}, Ljp/co/sony/mc/camera/setting/CommonSettings$152;-><init>()V
 
-    move-object/from16 v4, v19
+    move-object/from16 v14, v16
 
-    invoke-virtual {v1, v4, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v0, v14, v15}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 1505
+    .line 1501
+    new-instance v14, Ljp/co/sony/mc/camera/setting/CommonSettings$153;
+
+    invoke-direct {v14}, Ljp/co/sony/mc/camera/setting/CommonSettings$153;-><init>()V
+
+    invoke-virtual {v0, v2, v14}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 1508
     new-instance v2, Ljp/co/sony/mc/camera/setting/CommonSettings$154;
 
     invoke-direct {v2}, Ljp/co/sony/mc/camera/setting/CommonSettings$154;-><init>()V
 
-    move-object/from16 v4, v18
+    invoke-virtual {v0, v4, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    invoke-virtual {v1, v4, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
-
-    .line 1512
+    .line 1517
     new-instance v2, Ljp/co/sony/mc/camera/setting/CommonSettings$155;
 
     invoke-direct {v2}, Ljp/co/sony/mc/camera/setting/CommonSettings$155;-><init>()V
 
-    move-object/from16 v4, v56
+    move-object/from16 v4, v19
 
-    invoke-virtual {v1, v4, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v0, v4, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 1519
+    .line 1525
     new-instance v2, Ljp/co/sony/mc/camera/setting/CommonSettings$156;
 
     invoke-direct {v2}, Ljp/co/sony/mc/camera/setting/CommonSettings$156;-><init>()V
 
-    move-object/from16 v4, v55
+    move-object/from16 v4, v18
 
-    invoke-virtual {v1, v4, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v0, v4, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 1528
+    .line 1532
     new-instance v2, Ljp/co/sony/mc/camera/setting/CommonSettings$157;
 
     invoke-direct {v2}, Ljp/co/sony/mc/camera/setting/CommonSettings$157;-><init>()V
 
-    invoke-virtual {v1, v8, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    move-object/from16 v4, v57
 
-    .line 1535
+    invoke-virtual {v0, v4, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 1539
     new-instance v2, Ljp/co/sony/mc/camera/setting/CommonSettings$158;
 
     invoke-direct {v2}, Ljp/co/sony/mc/camera/setting/CommonSettings$158;-><init>()V
 
-    invoke-virtual {v1, v9, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    move-object/from16 v4, v56
 
-    .line 1542
+    invoke-virtual {v0, v4, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 1548
     new-instance v2, Ljp/co/sony/mc/camera/setting/CommonSettings$159;
 
     invoke-direct {v2}, Ljp/co/sony/mc/camera/setting/CommonSettings$159;-><init>()V
 
-    invoke-virtual {v1, v10, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v0, v8, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 1549
+    .line 1555
     new-instance v2, Ljp/co/sony/mc/camera/setting/CommonSettings$160;
 
     invoke-direct {v2}, Ljp/co/sony/mc/camera/setting/CommonSettings$160;-><init>()V
 
-    invoke-virtual {v1, v11, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v0, v9, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 1556
+    .line 1562
     new-instance v2, Ljp/co/sony/mc/camera/setting/CommonSettings$161;
 
     invoke-direct {v2}, Ljp/co/sony/mc/camera/setting/CommonSettings$161;-><init>()V
 
-    invoke-virtual {v1, v12, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v0, v10, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 1563
+    .line 1569
     new-instance v2, Ljp/co/sony/mc/camera/setting/CommonSettings$162;
 
     invoke-direct {v2}, Ljp/co/sony/mc/camera/setting/CommonSettings$162;-><init>()V
 
-    invoke-virtual {v1, v13, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v0, v11, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 1570
+    .line 1576
     new-instance v2, Ljp/co/sony/mc/camera/setting/CommonSettings$163;
 
     invoke-direct {v2}, Ljp/co/sony/mc/camera/setting/CommonSettings$163;-><init>()V
 
-    invoke-virtual {v1, v5, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v0, v12, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 1577
+    .line 1583
     new-instance v2, Ljp/co/sony/mc/camera/setting/CommonSettings$164;
 
     invoke-direct {v2}, Ljp/co/sony/mc/camera/setting/CommonSettings$164;-><init>()V
 
-    invoke-virtual {v1, v3, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v0, v13, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 1584
+    .line 1590
     new-instance v2, Ljp/co/sony/mc/camera/setting/CommonSettings$165;
 
     invoke-direct {v2}, Ljp/co/sony/mc/camera/setting/CommonSettings$165;-><init>()V
 
-    invoke-virtual {v1, v7, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v0, v5, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 1591
+    .line 1597
     new-instance v2, Ljp/co/sony/mc/camera/setting/CommonSettings$166;
 
     invoke-direct {v2}, Ljp/co/sony/mc/camera/setting/CommonSettings$166;-><init>()V
 
-    invoke-virtual {v1, v0, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v0, v3, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 1598
-    new-instance v0, Ljp/co/sony/mc/camera/setting/CommonSettings$167;
+    .line 1604
+    new-instance v2, Ljp/co/sony/mc/camera/setting/CommonSettings$167;
 
-    invoke-direct {v0}, Ljp/co/sony/mc/camera/setting/CommonSettings$167;-><init>()V
+    invoke-direct {v2}, Ljp/co/sony/mc/camera/setting/CommonSettings$167;-><init>()V
 
-    move-object/from16 v2, v21
+    invoke-virtual {v0, v7, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    invoke-virtual {v1, v2, v0}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    .line 1611
+    new-instance v2, Ljp/co/sony/mc/camera/setting/CommonSettings$168;
 
-    .line 1605
-    new-instance v0, Ljp/co/sony/mc/camera/setting/CommonSettings$168;
+    invoke-direct {v2}, Ljp/co/sony/mc/camera/setting/CommonSettings$168;-><init>()V
 
-    invoke-direct {v0}, Ljp/co/sony/mc/camera/setting/CommonSettings$168;-><init>()V
+    invoke-virtual {v0, v1, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 1618
+    new-instance v1, Ljp/co/sony/mc/camera/setting/CommonSettings$169;
+
+    invoke-direct {v1}, Ljp/co/sony/mc/camera/setting/CommonSettings$169;-><init>()V
+
+    invoke-virtual {v0, v6, v1}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 1625
+    new-instance v1, Ljp/co/sony/mc/camera/setting/CommonSettings$170;
+
+    invoke-direct {v1}, Ljp/co/sony/mc/camera/setting/CommonSettings$170;-><init>()V
 
     move-object/from16 v2, v22
 
-    invoke-virtual {v1, v2, v0}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v0, v2, v1}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 1612
-    new-instance v0, Ljp/co/sony/mc/camera/setting/CommonSettings$169;
+    .line 1632
+    new-instance v1, Ljp/co/sony/mc/camera/setting/CommonSettings$171;
 
-    invoke-direct {v0}, Ljp/co/sony/mc/camera/setting/CommonSettings$169;-><init>()V
+    invoke-direct {v1}, Ljp/co/sony/mc/camera/setting/CommonSettings$171;-><init>()V
 
     move-object/from16 v2, v23
 
-    invoke-virtual {v1, v2, v0}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v0, v2, v1}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 1619
-    new-instance v0, Ljp/co/sony/mc/camera/setting/CommonSettings$170;
+    .line 1639
+    new-instance v1, Ljp/co/sony/mc/camera/setting/CommonSettings$172;
 
-    invoke-direct {v0}, Ljp/co/sony/mc/camera/setting/CommonSettings$170;-><init>()V
+    invoke-direct {v1}, Ljp/co/sony/mc/camera/setting/CommonSettings$172;-><init>()V
 
     move-object/from16 v2, v24
 
-    invoke-virtual {v1, v2, v0}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v0, v2, v1}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 1626
-    new-instance v0, Ljp/co/sony/mc/camera/setting/CommonSettings$171;
+    .line 1646
+    new-instance v1, Ljp/co/sony/mc/camera/setting/CommonSettings$173;
 
-    invoke-direct {v0}, Ljp/co/sony/mc/camera/setting/CommonSettings$171;-><init>()V
+    invoke-direct {v1}, Ljp/co/sony/mc/camera/setting/CommonSettings$173;-><init>()V
 
     move-object/from16 v2, v25
 
-    invoke-virtual {v1, v2, v0}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v0, v2, v1}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 1633
-    new-instance v0, Ljp/co/sony/mc/camera/setting/CommonSettings$172;
+    .line 1653
+    new-instance v1, Ljp/co/sony/mc/camera/setting/CommonSettings$174;
 
-    invoke-direct {v0}, Ljp/co/sony/mc/camera/setting/CommonSettings$172;-><init>()V
+    invoke-direct {v1}, Ljp/co/sony/mc/camera/setting/CommonSettings$174;-><init>()V
 
     move-object/from16 v2, v17
 
-    invoke-virtual {v1, v2, v0}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v0, v2, v1}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 1640
-    new-instance v0, Ljp/co/sony/mc/camera/setting/CommonSettings$173;
+    .line 1660
+    new-instance v1, Ljp/co/sony/mc/camera/setting/CommonSettings$175;
 
-    invoke-direct {v0}, Ljp/co/sony/mc/camera/setting/CommonSettings$173;-><init>()V
+    invoke-direct {v1}, Ljp/co/sony/mc/camera/setting/CommonSettings$175;-><init>()V
 
     move-object/from16 v2, v26
 
-    invoke-virtual {v1, v2, v0}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v0, v2, v1}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 1647
-    new-instance v0, Ljp/co/sony/mc/camera/setting/CommonSettings$174;
+    .line 1667
+    new-instance v1, Ljp/co/sony/mc/camera/setting/CommonSettings$176;
 
-    invoke-direct {v0}, Ljp/co/sony/mc/camera/setting/CommonSettings$174;-><init>()V
+    invoke-direct {v1}, Ljp/co/sony/mc/camera/setting/CommonSettings$176;-><init>()V
 
-    move-object/from16 v2, v27
+    move-object/from16 v2, v21
 
-    invoke-virtual {v1, v2, v0}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v0, v2, v1}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 1654
-    new-instance v0, Ljp/co/sony/mc/camera/setting/CommonSettings$175;
+    .line 1674
+    new-instance v1, Ljp/co/sony/mc/camera/setting/CommonSettings$177;
 
-    invoke-direct {v0}, Ljp/co/sony/mc/camera/setting/CommonSettings$175;-><init>()V
+    invoke-direct {v1}, Ljp/co/sony/mc/camera/setting/CommonSettings$177;-><init>()V
 
     move-object/from16 v2, v28
 
-    invoke-virtual {v1, v2, v0}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v0, v2, v1}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 1662
-    new-instance v0, Ljp/co/sony/mc/camera/setting/CommonSettings$176;
+    .line 1682
+    new-instance v1, Ljp/co/sony/mc/camera/setting/CommonSettings$178;
 
-    invoke-direct {v0}, Ljp/co/sony/mc/camera/setting/CommonSettings$176;-><init>()V
+    invoke-direct {v1}, Ljp/co/sony/mc/camera/setting/CommonSettings$178;-><init>()V
 
     move-object/from16 v2, v29
 
-    invoke-virtual {v1, v2, v0}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v0, v2, v1}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 1670
-    new-instance v0, Ljp/co/sony/mc/camera/setting/CommonSettings$177;
+    .line 1690
+    new-instance v1, Ljp/co/sony/mc/camera/setting/CommonSettings$179;
 
-    invoke-direct {v0}, Ljp/co/sony/mc/camera/setting/CommonSettings$177;-><init>()V
+    invoke-direct {v1}, Ljp/co/sony/mc/camera/setting/CommonSettings$179;-><init>()V
 
     move-object/from16 v2, v30
 
-    invoke-virtual {v1, v2, v0}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v0, v2, v1}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 1677
-    new-instance v0, Ljp/co/sony/mc/camera/setting/CommonSettings$178;
+    .line 1697
+    new-instance v1, Ljp/co/sony/mc/camera/setting/CommonSettings$180;
 
-    invoke-direct {v0}, Ljp/co/sony/mc/camera/setting/CommonSettings$178;-><init>()V
+    invoke-direct {v1}, Ljp/co/sony/mc/camera/setting/CommonSettings$180;-><init>()V
 
     move-object/from16 v2, v31
 
-    invoke-virtual {v1, v2, v0}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v0, v2, v1}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 1684
-    new-instance v0, Ljp/co/sony/mc/camera/setting/CommonSettings$179;
+    .line 1704
+    new-instance v1, Ljp/co/sony/mc/camera/setting/CommonSettings$181;
 
-    invoke-direct {v0}, Ljp/co/sony/mc/camera/setting/CommonSettings$179;-><init>()V
+    invoke-direct {v1}, Ljp/co/sony/mc/camera/setting/CommonSettings$181;-><init>()V
 
     move-object/from16 v2, v32
 
-    invoke-virtual {v1, v2, v0}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v0, v2, v1}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 1691
-    new-instance v0, Ljp/co/sony/mc/camera/setting/CommonSettings$180;
+    .line 1711
+    new-instance v1, Ljp/co/sony/mc/camera/setting/CommonSettings$182;
 
-    invoke-direct {v0}, Ljp/co/sony/mc/camera/setting/CommonSettings$180;-><init>()V
+    invoke-direct {v1}, Ljp/co/sony/mc/camera/setting/CommonSettings$182;-><init>()V
 
     move-object/from16 v2, v33
 
-    invoke-virtual {v1, v2, v0}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v0, v2, v1}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 1698
-    new-instance v0, Ljp/co/sony/mc/camera/setting/CommonSettings$181;
+    .line 1718
+    new-instance v1, Ljp/co/sony/mc/camera/setting/CommonSettings$183;
 
-    invoke-direct {v0}, Ljp/co/sony/mc/camera/setting/CommonSettings$181;-><init>()V
+    invoke-direct {v1}, Ljp/co/sony/mc/camera/setting/CommonSettings$183;-><init>()V
 
     move-object/from16 v2, v34
 
-    invoke-virtual {v1, v2, v0}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v0, v2, v1}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 1705
-    new-instance v0, Ljp/co/sony/mc/camera/setting/CommonSettings$182;
+    .line 1725
+    new-instance v1, Ljp/co/sony/mc/camera/setting/CommonSettings$184;
 
-    invoke-direct {v0}, Ljp/co/sony/mc/camera/setting/CommonSettings$182;-><init>()V
+    invoke-direct {v1}, Ljp/co/sony/mc/camera/setting/CommonSettings$184;-><init>()V
 
     move-object/from16 v2, v35
 
-    invoke-virtual {v1, v2, v0}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v0, v2, v1}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 1712
-    new-instance v0, Ljp/co/sony/mc/camera/setting/CommonSettings$183;
+    .line 1732
+    new-instance v1, Ljp/co/sony/mc/camera/setting/CommonSettings$185;
 
-    invoke-direct {v0}, Ljp/co/sony/mc/camera/setting/CommonSettings$183;-><init>()V
+    invoke-direct {v1}, Ljp/co/sony/mc/camera/setting/CommonSettings$185;-><init>()V
 
     move-object/from16 v2, v36
 
-    invoke-virtual {v1, v2, v0}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v0, v2, v1}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 1719
-    new-instance v0, Ljp/co/sony/mc/camera/setting/CommonSettings$184;
+    .line 1739
+    new-instance v1, Ljp/co/sony/mc/camera/setting/CommonSettings$186;
 
-    invoke-direct {v0}, Ljp/co/sony/mc/camera/setting/CommonSettings$184;-><init>()V
+    invoke-direct {v1}, Ljp/co/sony/mc/camera/setting/CommonSettings$186;-><init>()V
 
     move-object/from16 v2, v37
 
-    invoke-virtual {v1, v2, v0}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v0, v2, v1}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 1726
-    new-instance v0, Ljp/co/sony/mc/camera/setting/CommonSettings$185;
+    .line 1746
+    new-instance v1, Ljp/co/sony/mc/camera/setting/CommonSettings$187;
 
-    invoke-direct {v0}, Ljp/co/sony/mc/camera/setting/CommonSettings$185;-><init>()V
+    invoke-direct {v1}, Ljp/co/sony/mc/camera/setting/CommonSettings$187;-><init>()V
 
     move-object/from16 v2, v38
 
-    invoke-virtual {v1, v2, v0}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v0, v2, v1}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 1733
-    new-instance v0, Ljp/co/sony/mc/camera/setting/CommonSettings$186;
+    .line 1753
+    new-instance v1, Ljp/co/sony/mc/camera/setting/CommonSettings$188;
 
-    invoke-direct {v0}, Ljp/co/sony/mc/camera/setting/CommonSettings$186;-><init>()V
+    invoke-direct {v1}, Ljp/co/sony/mc/camera/setting/CommonSettings$188;-><init>()V
 
     move-object/from16 v2, v39
 
-    invoke-virtual {v1, v2, v0}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v0, v2, v1}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 1740
-    new-instance v0, Ljp/co/sony/mc/camera/setting/CommonSettings$187;
+    .line 1760
+    new-instance v1, Ljp/co/sony/mc/camera/setting/CommonSettings$189;
 
-    invoke-direct {v0}, Ljp/co/sony/mc/camera/setting/CommonSettings$187;-><init>()V
+    invoke-direct {v1}, Ljp/co/sony/mc/camera/setting/CommonSettings$189;-><init>()V
 
     move-object/from16 v2, v40
 
-    invoke-virtual {v1, v2, v0}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v0, v2, v1}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 1747
-    new-instance v0, Ljp/co/sony/mc/camera/setting/CommonSettings$188;
+    .line 1767
+    new-instance v1, Ljp/co/sony/mc/camera/setting/CommonSettings$190;
 
-    invoke-direct {v0}, Ljp/co/sony/mc/camera/setting/CommonSettings$188;-><init>()V
+    invoke-direct {v1}, Ljp/co/sony/mc/camera/setting/CommonSettings$190;-><init>()V
 
     move-object/from16 v2, v41
 
-    invoke-virtual {v1, v2, v0}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v0, v2, v1}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 1754
-    new-instance v0, Ljp/co/sony/mc/camera/setting/CommonSettings$189;
+    .line 1774
+    new-instance v1, Ljp/co/sony/mc/camera/setting/CommonSettings$191;
 
-    invoke-direct {v0}, Ljp/co/sony/mc/camera/setting/CommonSettings$189;-><init>()V
+    invoke-direct {v1}, Ljp/co/sony/mc/camera/setting/CommonSettings$191;-><init>()V
 
     move-object/from16 v2, v42
 
-    invoke-virtual {v1, v2, v0}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v0, v2, v1}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 1761
-    new-instance v0, Ljp/co/sony/mc/camera/setting/CommonSettings$190;
+    .line 1781
+    new-instance v1, Ljp/co/sony/mc/camera/setting/CommonSettings$192;
 
-    invoke-direct {v0}, Ljp/co/sony/mc/camera/setting/CommonSettings$190;-><init>()V
+    invoke-direct {v1}, Ljp/co/sony/mc/camera/setting/CommonSettings$192;-><init>()V
 
     move-object/from16 v2, v43
 
-    invoke-virtual {v1, v2, v0}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v0, v2, v1}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 1768
-    new-instance v0, Ljp/co/sony/mc/camera/setting/CommonSettings$191;
+    .line 1788
+    new-instance v1, Ljp/co/sony/mc/camera/setting/CommonSettings$193;
 
-    invoke-direct {v0}, Ljp/co/sony/mc/camera/setting/CommonSettings$191;-><init>()V
+    invoke-direct {v1}, Ljp/co/sony/mc/camera/setting/CommonSettings$193;-><init>()V
 
     move-object/from16 v2, v44
 
-    invoke-virtual {v1, v2, v0}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v0, v2, v1}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 1775
-    new-instance v0, Ljp/co/sony/mc/camera/setting/CommonSettings$192;
+    .line 1795
+    new-instance v1, Ljp/co/sony/mc/camera/setting/CommonSettings$194;
 
-    invoke-direct {v0}, Ljp/co/sony/mc/camera/setting/CommonSettings$192;-><init>()V
+    invoke-direct {v1}, Ljp/co/sony/mc/camera/setting/CommonSettings$194;-><init>()V
 
     move-object/from16 v2, v45
 
-    invoke-virtual {v1, v2, v0}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v0, v2, v1}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 1782
-    new-instance v0, Ljp/co/sony/mc/camera/setting/CommonSettings$193;
+    .line 1802
+    new-instance v1, Ljp/co/sony/mc/camera/setting/CommonSettings$195;
 
-    invoke-direct {v0}, Ljp/co/sony/mc/camera/setting/CommonSettings$193;-><init>()V
+    invoke-direct {v1}, Ljp/co/sony/mc/camera/setting/CommonSettings$195;-><init>()V
 
     move-object/from16 v2, v46
 
-    invoke-virtual {v1, v2, v0}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v0, v2, v1}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 1789
-    new-instance v0, Ljp/co/sony/mc/camera/setting/CommonSettings$194;
+    .line 1809
+    new-instance v1, Ljp/co/sony/mc/camera/setting/CommonSettings$196;
 
-    invoke-direct {v0}, Ljp/co/sony/mc/camera/setting/CommonSettings$194;-><init>()V
+    invoke-direct {v1}, Ljp/co/sony/mc/camera/setting/CommonSettings$196;-><init>()V
 
     move-object/from16 v2, v47
 
-    invoke-virtual {v1, v2, v0}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v0, v2, v1}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 1796
-    new-instance v0, Ljp/co/sony/mc/camera/setting/CommonSettings$195;
+    .line 1816
+    new-instance v1, Ljp/co/sony/mc/camera/setting/CommonSettings$197;
 
-    invoke-direct {v0}, Ljp/co/sony/mc/camera/setting/CommonSettings$195;-><init>()V
+    invoke-direct {v1}, Ljp/co/sony/mc/camera/setting/CommonSettings$197;-><init>()V
 
     move-object/from16 v2, v48
 
-    invoke-virtual {v1, v2, v0}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v0, v2, v1}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 1803
-    new-instance v0, Ljp/co/sony/mc/camera/setting/CommonSettings$196;
+    .line 1823
+    new-instance v1, Ljp/co/sony/mc/camera/setting/CommonSettings$198;
 
-    invoke-direct {v0}, Ljp/co/sony/mc/camera/setting/CommonSettings$196;-><init>()V
+    invoke-direct {v1}, Ljp/co/sony/mc/camera/setting/CommonSettings$198;-><init>()V
 
     move-object/from16 v2, v49
 
-    invoke-virtual {v1, v2, v0}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v0, v2, v1}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 1810
-    new-instance v0, Ljp/co/sony/mc/camera/setting/CommonSettings$197;
+    .line 1830
+    new-instance v1, Ljp/co/sony/mc/camera/setting/CommonSettings$199;
 
-    invoke-direct {v0}, Ljp/co/sony/mc/camera/setting/CommonSettings$197;-><init>()V
+    invoke-direct {v1}, Ljp/co/sony/mc/camera/setting/CommonSettings$199;-><init>()V
 
     move-object/from16 v2, v50
 
-    invoke-virtual {v1, v2, v0}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v0, v2, v1}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 1817
-    new-instance v0, Ljp/co/sony/mc/camera/setting/CommonSettings$198;
+    .line 1837
+    new-instance v1, Ljp/co/sony/mc/camera/setting/CommonSettings$200;
 
-    invoke-direct {v0}, Ljp/co/sony/mc/camera/setting/CommonSettings$198;-><init>()V
+    invoke-direct {v1}, Ljp/co/sony/mc/camera/setting/CommonSettings$200;-><init>()V
 
     move-object/from16 v2, v51
 
-    invoke-virtual {v1, v2, v0}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v0, v2, v1}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 1824
-    new-instance v0, Ljp/co/sony/mc/camera/setting/CommonSettings$199;
+    .line 1844
+    new-instance v1, Ljp/co/sony/mc/camera/setting/CommonSettings$201;
 
-    invoke-direct {v0}, Ljp/co/sony/mc/camera/setting/CommonSettings$199;-><init>()V
+    invoke-direct {v1}, Ljp/co/sony/mc/camera/setting/CommonSettings$201;-><init>()V
 
     move-object/from16 v2, v52
 
-    invoke-virtual {v1, v2, v0}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v0, v2, v1}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 1831
-    new-instance v0, Ljp/co/sony/mc/camera/setting/CommonSettings$200;
+    .line 1851
+    new-instance v1, Ljp/co/sony/mc/camera/setting/CommonSettings$202;
 
-    invoke-direct {v0}, Ljp/co/sony/mc/camera/setting/CommonSettings$200;-><init>()V
-
-    invoke-virtual {v1, v14, v0}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
-
-    .line 1838
-    new-instance v0, Ljp/co/sony/mc/camera/setting/CommonSettings$201;
-
-    invoke-direct {v0}, Ljp/co/sony/mc/camera/setting/CommonSettings$201;-><init>()V
+    invoke-direct {v1}, Ljp/co/sony/mc/camera/setting/CommonSettings$202;-><init>()V
 
     move-object/from16 v2, v53
 
-    invoke-virtual {v1, v2, v0}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v0, v2, v1}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 1845
-    new-instance v0, Ljp/co/sony/mc/camera/setting/CommonSettings$202;
+    .line 1858
+    new-instance v1, Ljp/co/sony/mc/camera/setting/CommonSettings$203;
 
-    invoke-direct {v0}, Ljp/co/sony/mc/camera/setting/CommonSettings$202;-><init>()V
-
-    move-object/from16 v2, v20
-
-    invoke-virtual {v1, v2, v0}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
-
-    .line 1852
-    new-instance v0, Ljp/co/sony/mc/camera/setting/CommonSettings$203;
-
-    invoke-direct {v0}, Ljp/co/sony/mc/camera/setting/CommonSettings$203;-><init>()V
+    invoke-direct {v1}, Ljp/co/sony/mc/camera/setting/CommonSettings$203;-><init>()V
 
     move-object/from16 v2, v54
 
-    invoke-virtual {v1, v2, v0}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v0, v2, v1}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 1865
+    new-instance v1, Ljp/co/sony/mc/camera/setting/CommonSettings$204;
+
+    invoke-direct {v1}, Ljp/co/sony/mc/camera/setting/CommonSettings$204;-><init>()V
+
+    move-object/from16 v2, v27
+
+    invoke-virtual {v0, v2, v1}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 1872
+    new-instance v1, Ljp/co/sony/mc/camera/setting/CommonSettings$205;
+
+    invoke-direct {v1}, Ljp/co/sony/mc/camera/setting/CommonSettings$205;-><init>()V
+
+    move-object/from16 v2, v20
+
+    invoke-virtual {v0, v2, v1}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 1879
+    new-instance v1, Ljp/co/sony/mc/camera/setting/CommonSettings$206;
+
+    invoke-direct {v1}, Ljp/co/sony/mc/camera/setting/CommonSettings$206;-><init>()V
+
+    move-object/from16 v2, v55
+
+    invoke-virtual {v0, v2, v1}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     return-void
 .end method
@@ -4003,34 +4075,34 @@
 .method constructor <init>()V
     .locals 4
 
-    .line 1967
+    .line 1992
     invoke-direct {p0}, Ljp/co/sony/mc/camera/setting/SettingsBase;-><init>()V
 
     const-wide/high16 v0, -0x8000000000000000L
 
-    .line 1879
+    .line 1906
     iput-wide v0, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mAppPauseTimeMillis:J
 
     const/4 v0, 0x1
 
-    .line 1881
+    .line 1908
     iput-boolean v0, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mIsFirstTimeLaunch:Z
 
-    .line 1968
+    .line 1993
     new-instance v1, Ljp/co/sony/mc/camera/setting/SecureSetting;
 
     invoke-direct {v1}, Ljp/co/sony/mc/camera/setting/SecureSetting;-><init>()V
 
     iput-object v1, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mSecureSetting:Ljp/co/sony/mc/camera/setting/SecureSetting;
 
-    .line 1969
+    .line 1994
     new-instance v1, Ljp/co/sony/mc/camera/setting/CameraProPreferences;
 
     invoke-static {}, Ljp/co/sony/mc/camera/CameraApplication;->getContext()Landroid/content/Context;
 
     move-result-object v2
 
-    .line 1970
+    .line 1995
     invoke-static {}, Ljp/co/sony/mc/camera/setting/CameraProPreferences;->getCommonPreferencesName()Ljava/lang/String;
 
     move-result-object v3
@@ -4039,7 +4111,7 @@
 
     iput-object v1, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mPreferences:Ljp/co/sony/mc/camera/setting/CameraProPreferences;
 
-    .line 1972
+    .line 1997
     invoke-static {}, Ljp/co/sony/mc/camera/CameraApplication;->getContext()Landroid/content/Context;
 
     move-result-object p0
@@ -4052,12 +4124,12 @@
 .method private getCameraId()Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;
     .locals 1
 
-    .line 2345
+    .line 2374
     iget-object v0, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mCameraId:Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;
 
     if-nez v0, :cond_0
 
-    .line 2346
+    .line 2375
     sget-object v0, Ljp/co/sony/mc/camera/setting/CommonSettings;->CAMERA_ID:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
 
     invoke-virtual {p0, v0}, Ljp/co/sony/mc/camera/setting/CommonSettings;->getDefaultValue(Ljp/co/sony/mc/camera/setting/SettingKey$Key;)Ljava/lang/Object;
@@ -4068,7 +4140,7 @@
 
     iput-object v0, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mCameraId:Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;
 
-    .line 2348
+    .line 2377
     :cond_0
     iget-object p0, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mCameraId:Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;
 
@@ -4078,12 +4150,12 @@
 .method private getCameraIdOnMr()Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;
     .locals 1
 
-    .line 2377
+    .line 2406
     iget-object v0, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mCameraIdOnMr:Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;
 
     if-nez v0, :cond_0
 
-    .line 2378
+    .line 2407
     sget-object v0, Ljp/co/sony/mc/camera/setting/CommonSettings;->CAMERA_ID_ON_MR:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
 
     invoke-virtual {p0, v0}, Ljp/co/sony/mc/camera/setting/CommonSettings;->getDefaultValue(Ljp/co/sony/mc/camera/setting/SettingKey$Key;)Ljava/lang/Object;
@@ -4094,7 +4166,7 @@
 
     iput-object v0, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mCameraIdOnMr:Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;
 
-    .line 2380
+    .line 2409
     :cond_0
     iget-object p0, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mCameraIdOnMr:Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;
 
@@ -4104,12 +4176,12 @@
 .method private getConnectToMode()Ljp/co/sony/mc/camera/configuration/parameters/StreamingConnectMode;
     .locals 3
 
-    .line 2694
+    .line 2727
     iget-object v0, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mStreamingConnectMode:Ljp/co/sony/mc/camera/configuration/parameters/StreamingConnectMode;
 
     if-nez v0, :cond_0
 
-    .line 2695
+    .line 2728
     iget-object v0, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mPreferences:Ljp/co/sony/mc/camera/setting/CameraProPreferences;
 
     sget-object v1, Ljp/co/sony/mc/camera/setting/CommonSettings;->STREAMING_CONNECT_MODE:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
@@ -4128,7 +4200,7 @@
 
     iput-object v0, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mStreamingConnectMode:Ljp/co/sony/mc/camera/configuration/parameters/StreamingConnectMode;
 
-    .line 2697
+    .line 2730
     :cond_0
     iget-object p0, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mStreamingConnectMode:Ljp/co/sony/mc/camera/configuration/parameters/StreamingConnectMode;
 
@@ -4138,12 +4210,12 @@
 .method private getDisplayMode()Ljp/co/sony/mc/camera/configuration/parameters/DisplayMode;
     .locals 3
 
-    .line 2610
+    .line 2643
     iget-object v0, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mDisplayMode:Ljp/co/sony/mc/camera/configuration/parameters/DisplayMode;
 
     if-nez v0, :cond_0
 
-    .line 2611
+    .line 2644
     iget-object v0, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mPreferences:Ljp/co/sony/mc/camera/setting/CameraProPreferences;
 
     sget-object v1, Ljp/co/sony/mc/camera/setting/CommonSettings;->DISPLAY_MODE:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
@@ -4162,7 +4234,7 @@
 
     iput-object v0, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mDisplayMode:Ljp/co/sony/mc/camera/configuration/parameters/DisplayMode;
 
-    .line 2613
+    .line 2646
     :cond_0
     iget-object p0, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mDisplayMode:Ljp/co/sony/mc/camera/configuration/parameters/DisplayMode;
 
@@ -4172,12 +4244,12 @@
 .method private getEnduranceMode()Ljp/co/sony/mc/camera/configuration/parameters/EnduranceMode;
     .locals 3
 
-    .line 2678
+    .line 2711
     iget-object v0, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mEnduranceMode:Ljp/co/sony/mc/camera/configuration/parameters/EnduranceMode;
 
     if-nez v0, :cond_0
 
-    .line 2679
+    .line 2712
     iget-object v0, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mPreferences:Ljp/co/sony/mc/camera/setting/CameraProPreferences;
 
     sget-object v1, Ljp/co/sony/mc/camera/setting/CommonSettings;->ENDURANCE_MODE:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
@@ -4196,7 +4268,7 @@
 
     iput-object v0, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mEnduranceMode:Ljp/co/sony/mc/camera/configuration/parameters/EnduranceMode;
 
-    .line 2681
+    .line 2714
     :cond_0
     iget-object p0, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mEnduranceMode:Ljp/co/sony/mc/camera/configuration/parameters/EnduranceMode;
 
@@ -4206,12 +4278,12 @@
 .method private getFacebookAccount()Ljava/lang/String;
     .locals 3
 
-    .line 3166
+    .line 3199
     iget-object v0, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mFacebookAccount:Ljava/lang/String;
 
     if-nez v0, :cond_1
 
-    .line 3167
+    .line 3200
     sget-object v0, Ljp/co/sony/mc/camera/setting/CommonSettings;->FACEBOOK_ACCOUNT:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
 
     invoke-virtual {p0, v0}, Ljp/co/sony/mc/camera/setting/CommonSettings;->getDefaultValue(Ljp/co/sony/mc/camera/setting/SettingKey$Key;)Ljava/lang/Object;
@@ -4220,7 +4292,7 @@
 
     check-cast v1, Ljava/lang/String;
 
-    .line 3168
+    .line 3201
     iget-object v2, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mPreferences:Ljp/co/sony/mc/camera/setting/CameraProPreferences;
 
     invoke-virtual {v2, v0, v1}, Ljp/co/sony/mc/camera/setting/CameraProPreferences;->get(Ljp/co/sony/mc/camera/setting/SettingKey$Key;Ljava/lang/Object;)Ljava/lang/Object;
@@ -4229,7 +4301,7 @@
 
     check-cast v0, Ljava/lang/String;
 
-    .line 3170
+    .line 3203
     :try_start_0
     invoke-virtual {v0, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
@@ -4237,7 +4309,7 @@
 
     if-nez v2, :cond_0
 
-    .line 3172
+    .line 3205
     invoke-static {v0}, Ljp/co/sony/mc/camera/util/AppDataCryptoUtility;->decrypt(Ljava/lang/String;)Ljava/io/Serializable;
 
     move-result-object v0
@@ -4248,7 +4320,7 @@
 
     goto :goto_0
 
-    .line 3174
+    .line 3207
     :cond_0
     iput-object v1, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mFacebookAccount:Ljava/lang/String;
     :try_end_0
@@ -4256,19 +4328,23 @@
 
     goto :goto_0
 
-    .line 3178
     :catch_0
-    const-string p0, "getFacebookAccount() decrypt: Exception"
+    const/4 p0, 0x1
 
-    filled-new-array {p0}, [Ljava/lang/String;
+    .line 3211
+    new-array p0, p0, [Ljava/lang/String;
 
-    move-result-object p0
+    const/4 v0, 0x0
+
+    const-string v2, "getFacebookAccount() decrypt: Exception"
+
+    aput-object v2, p0, v0
 
     invoke-static {p0}, Ljp/co/sony/mc/camera/util/CamLog;->e([Ljava/lang/String;)V
 
     return-object v1
 
-    .line 3183
+    .line 3216
     :cond_1
     :goto_0
     iget-object p0, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mFacebookAccount:Ljava/lang/String;
@@ -4279,12 +4355,12 @@
 .method private getFacebookGroupId()Ljava/lang/String;
     .locals 3
 
-    .line 3321
+    .line 3354
     iget-object v0, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mFacebookGroupId:Ljava/lang/String;
 
     if-nez v0, :cond_1
 
-    .line 3322
+    .line 3355
     sget-object v0, Ljp/co/sony/mc/camera/setting/CommonSettings;->FACEBOOK_GROUP_ID:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
 
     invoke-virtual {p0, v0}, Ljp/co/sony/mc/camera/setting/CommonSettings;->getDefaultValue(Ljp/co/sony/mc/camera/setting/SettingKey$Key;)Ljava/lang/Object;
@@ -4293,7 +4369,7 @@
 
     check-cast v1, Ljava/lang/String;
 
-    .line 3323
+    .line 3356
     iget-object v2, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mPreferences:Ljp/co/sony/mc/camera/setting/CameraProPreferences;
 
     invoke-virtual {v2, v0, v1}, Ljp/co/sony/mc/camera/setting/CameraProPreferences;->get(Ljp/co/sony/mc/camera/setting/SettingKey$Key;Ljava/lang/Object;)Ljava/lang/Object;
@@ -4302,7 +4378,7 @@
 
     check-cast v0, Ljava/lang/String;
 
-    .line 3325
+    .line 3358
     :try_start_0
     invoke-virtual {v0, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
@@ -4310,7 +4386,7 @@
 
     if-nez v2, :cond_0
 
-    .line 3327
+    .line 3360
     invoke-static {v0}, Ljp/co/sony/mc/camera/util/AppDataCryptoUtility;->decrypt(Ljava/lang/String;)Ljava/io/Serializable;
 
     move-result-object v0
@@ -4321,7 +4397,7 @@
 
     goto :goto_0
 
-    .line 3329
+    .line 3362
     :cond_0
     iput-object v1, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mFacebookGroupId:Ljava/lang/String;
     :try_end_0
@@ -4329,19 +4405,23 @@
 
     goto :goto_0
 
-    .line 3333
     :catch_0
-    const-string p0, "getFacebookGroupId() decrypt: Exception"
+    const/4 p0, 0x1
 
-    filled-new-array {p0}, [Ljava/lang/String;
+    .line 3366
+    new-array p0, p0, [Ljava/lang/String;
 
-    move-result-object p0
+    const/4 v0, 0x0
+
+    const-string v2, "getFacebookGroupId() decrypt: Exception"
+
+    aput-object v2, p0, v0
 
     invoke-static {p0}, Ljp/co/sony/mc/camera/util/CamLog;->e([Ljava/lang/String;)V
 
     return-object v1
 
-    .line 3338
+    .line 3371
     :cond_1
     :goto_0
     iget-object p0, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mFacebookGroupId:Ljava/lang/String;
@@ -4352,12 +4432,12 @@
 .method private getFacebookLiveSelect()Ljava/lang/String;
     .locals 3
 
-    .line 3259
+    .line 3292
     iget-object v0, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mFacebookLiveSelect:Ljava/lang/String;
 
     if-nez v0, :cond_1
 
-    .line 3260
+    .line 3293
     sget-object v0, Ljp/co/sony/mc/camera/setting/CommonSettings;->FACEBOOK_LIVE_SELECT:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
 
     invoke-virtual {p0, v0}, Ljp/co/sony/mc/camera/setting/CommonSettings;->getDefaultValue(Ljp/co/sony/mc/camera/setting/SettingKey$Key;)Ljava/lang/Object;
@@ -4366,7 +4446,7 @@
 
     check-cast v1, Ljava/lang/String;
 
-    .line 3261
+    .line 3294
     iget-object v2, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mPreferences:Ljp/co/sony/mc/camera/setting/CameraProPreferences;
 
     invoke-virtual {v2, v0, v1}, Ljp/co/sony/mc/camera/setting/CameraProPreferences;->get(Ljp/co/sony/mc/camera/setting/SettingKey$Key;Ljava/lang/Object;)Ljava/lang/Object;
@@ -4375,7 +4455,7 @@
 
     check-cast v0, Ljava/lang/String;
 
-    .line 3263
+    .line 3296
     :try_start_0
     invoke-virtual {v0, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
@@ -4383,7 +4463,7 @@
 
     if-nez v2, :cond_0
 
-    .line 3265
+    .line 3298
     invoke-static {v0}, Ljp/co/sony/mc/camera/util/AppDataCryptoUtility;->decrypt(Ljava/lang/String;)Ljava/io/Serializable;
 
     move-result-object v0
@@ -4394,7 +4474,7 @@
 
     goto :goto_0
 
-    .line 3267
+    .line 3300
     :cond_0
     iput-object v1, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mFacebookLiveSelect:Ljava/lang/String;
     :try_end_0
@@ -4402,19 +4482,23 @@
 
     goto :goto_0
 
-    .line 3271
     :catch_0
-    const-string p0, "getFacebookLiveSelect() decrypt: Exception"
+    const/4 p0, 0x1
 
-    filled-new-array {p0}, [Ljava/lang/String;
+    .line 3304
+    new-array p0, p0, [Ljava/lang/String;
 
-    move-result-object p0
+    const/4 v0, 0x0
+
+    const-string v2, "getFacebookLiveSelect() decrypt: Exception"
+
+    aput-object v2, p0, v0
 
     invoke-static {p0}, Ljp/co/sony/mc/camera/util/CamLog;->e([Ljava/lang/String;)V
 
     return-object v1
 
-    .line 3276
+    .line 3309
     :cond_1
     :goto_0
     iget-object p0, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mFacebookLiveSelect:Ljava/lang/String;
@@ -4425,12 +4509,12 @@
 .method private getFacebookLiveType()Ljp/co/sony/mc/camera/configuration/parameters/FacebookLiveType;
     .locals 3
 
-    .line 3305
+    .line 3338
     iget-object v0, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mFacebookLiveType:Ljp/co/sony/mc/camera/configuration/parameters/FacebookLiveType;
 
     if-nez v0, :cond_0
 
-    .line 3306
+    .line 3339
     iget-object v0, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mPreferences:Ljp/co/sony/mc/camera/setting/CameraProPreferences;
 
     sget-object v1, Ljp/co/sony/mc/camera/setting/CommonSettings;->FACEBOOK_LIVE_TYPE:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
@@ -4449,7 +4533,7 @@
 
     iput-object v0, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mFacebookLiveType:Ljp/co/sony/mc/camera/configuration/parameters/FacebookLiveType;
 
-    .line 3308
+    .line 3341
     :cond_0
     iget-object p0, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mFacebookLiveType:Ljp/co/sony/mc/camera/configuration/parameters/FacebookLiveType;
 
@@ -4459,12 +4543,12 @@
 .method private getFacebookLiveVideoId()Ljava/lang/String;
     .locals 3
 
-    .line 3211
+    .line 3244
     iget-object v0, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mFacebookLiveVideoId:Ljava/lang/String;
 
     if-nez v0, :cond_1
 
-    .line 3212
+    .line 3245
     sget-object v0, Ljp/co/sony/mc/camera/setting/CommonSettings;->FACEBOOK_LIVE_VIDEO_ID:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
 
     invoke-virtual {p0, v0}, Ljp/co/sony/mc/camera/setting/CommonSettings;->getDefaultValue(Ljp/co/sony/mc/camera/setting/SettingKey$Key;)Ljava/lang/Object;
@@ -4473,17 +4557,17 @@
 
     check-cast v1, Ljava/lang/String;
 
-    .line 3213
+    .line 3246
     iget-object v2, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mPreferences:Ljp/co/sony/mc/camera/setting/CameraProPreferences;
 
-    .line 3214
+    .line 3247
     invoke-virtual {v2, v0, v1}, Ljp/co/sony/mc/camera/setting/CameraProPreferences;->get(Ljp/co/sony/mc/camera/setting/SettingKey$Key;Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v0
 
     check-cast v0, Ljava/lang/String;
 
-    .line 3216
+    .line 3249
     :try_start_0
     invoke-virtual {v0, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
@@ -4491,7 +4575,7 @@
 
     if-nez v2, :cond_0
 
-    .line 3218
+    .line 3251
     invoke-static {v0}, Ljp/co/sony/mc/camera/util/AppDataCryptoUtility;->decrypt(Ljava/lang/String;)Ljava/io/Serializable;
 
     move-result-object v0
@@ -4502,7 +4586,7 @@
 
     goto :goto_0
 
-    .line 3220
+    .line 3253
     :cond_0
     iput-object v1, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mFacebookLiveVideoId:Ljava/lang/String;
     :try_end_0
@@ -4510,19 +4594,23 @@
 
     goto :goto_0
 
-    .line 3224
     :catch_0
-    const-string p0, "getFacebookLiveVideoId() decrypt: Exception"
+    const/4 p0, 0x1
 
-    filled-new-array {p0}, [Ljava/lang/String;
+    .line 3257
+    new-array p0, p0, [Ljava/lang/String;
 
-    move-result-object p0
+    const/4 v0, 0x0
+
+    const-string v2, "getFacebookLiveVideoId() decrypt: Exception"
+
+    aput-object v2, p0, v0
 
     invoke-static {p0}, Ljp/co/sony/mc/camera/util/CamLog;->e([Ljava/lang/String;)V
 
     return-object v1
 
-    .line 3229
+    .line 3262
     :cond_1
     :goto_0
     iget-object p0, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mFacebookLiveVideoId:Ljava/lang/String;
@@ -4533,12 +4621,12 @@
 .method private getGeotag()Ljp/co/sony/mc/camera/configuration/parameters/Geotag;
     .locals 3
 
-    .line 2423
+    .line 2452
     iget-object v0, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mGeotag:Ljp/co/sony/mc/camera/configuration/parameters/Geotag;
 
     if-nez v0, :cond_0
 
-    .line 2424
+    .line 2453
     iget-object v0, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mPreferences:Ljp/co/sony/mc/camera/setting/CameraProPreferences;
 
     sget-object v1, Ljp/co/sony/mc/camera/setting/CommonSettings;->GEOTAG:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
@@ -4557,7 +4645,7 @@
 
     iput-object v0, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mGeotag:Ljp/co/sony/mc/camera/configuration/parameters/Geotag;
 
-    .line 2426
+    .line 2455
     :cond_0
     iget-object p0, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mGeotag:Ljp/co/sony/mc/camera/configuration/parameters/Geotag;
 
@@ -4567,12 +4655,12 @@
 .method private getGridLine()Ljp/co/sony/mc/camera/configuration/parameters/GridLine;
     .locals 3
 
-    .line 2439
+    .line 2468
     iget-object v0, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mGridLine:Ljp/co/sony/mc/camera/configuration/parameters/GridLine;
 
     if-nez v0, :cond_0
 
-    .line 2440
+    .line 2469
     iget-object v0, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mPreferences:Ljp/co/sony/mc/camera/setting/CameraProPreferences;
 
     sget-object v1, Ljp/co/sony/mc/camera/setting/CommonSettings;->GRID_LINE:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
@@ -4591,7 +4679,7 @@
 
     iput-object v0, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mGridLine:Ljp/co/sony/mc/camera/configuration/parameters/GridLine;
 
-    .line 2442
+    .line 2471
     :cond_0
     iget-object p0, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mGridLine:Ljp/co/sony/mc/camera/configuration/parameters/GridLine;
 
@@ -4601,12 +4689,12 @@
 .method private getHapticFeedback()Ljp/co/sony/mc/camera/configuration/parameters/HapticFeedback;
     .locals 3
 
-    .line 2662
+    .line 2695
     iget-object v0, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mHapticFeedback:Ljp/co/sony/mc/camera/configuration/parameters/HapticFeedback;
 
     if-nez v0, :cond_0
 
-    .line 2663
+    .line 2696
     iget-object v0, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mPreferences:Ljp/co/sony/mc/camera/setting/CameraProPreferences;
 
     sget-object v1, Ljp/co/sony/mc/camera/setting/CommonSettings;->HAPTIC_FEEDBACK:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
@@ -4625,7 +4713,7 @@
 
     iput-object v0, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mHapticFeedback:Ljp/co/sony/mc/camera/configuration/parameters/HapticFeedback;
 
-    .line 2665
+    .line 2698
     :cond_0
     iget-object p0, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mHapticFeedback:Ljp/co/sony/mc/camera/configuration/parameters/HapticFeedback;
 
@@ -4635,12 +4723,12 @@
 .method private getLastCameraId()Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;
     .locals 1
 
-    .line 2408
+    .line 2437
     iget-object v0, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mLastCameraId:Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;
 
     if-nez v0, :cond_0
 
-    .line 2409
+    .line 2438
     sget-object v0, Ljp/co/sony/mc/camera/setting/CommonSettings;->LAST_CAMERA_ID:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
 
     invoke-virtual {p0, v0}, Ljp/co/sony/mc/camera/setting/CommonSettings;->getDefaultValue(Ljp/co/sony/mc/camera/setting/SettingKey$Key;)Ljava/lang/Object;
@@ -4651,7 +4739,7 @@
 
     iput-object v0, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mLastCameraId:Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;
 
-    .line 2411
+    .line 2440
     :cond_0
     iget-object p0, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mLastCameraId:Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;
 
@@ -4661,12 +4749,12 @@
 .method private getLastCapturingMode()Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
     .locals 1
 
-    .line 2393
+    .line 2422
     iget-object v0, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mLastCapturingMode:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
     if-nez v0, :cond_0
 
-    .line 2394
+    .line 2423
     sget-object v0, Ljp/co/sony/mc/camera/setting/CommonSettings;->LAST_CAPTURING_MODE:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
 
     invoke-virtual {p0, v0}, Ljp/co/sony/mc/camera/setting/CommonSettings;->getDefaultValue(Ljp/co/sony/mc/camera/setting/SettingKey$Key;)Ljava/lang/Object;
@@ -4677,7 +4765,7 @@
 
     iput-object v0, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mLastCapturingMode:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
-    .line 2396
+    .line 2425
     :cond_0
     iget-object p0, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mLastCapturingMode:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
@@ -4687,12 +4775,12 @@
 .method private getLastProPhotoCapturingMode()Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
     .locals 3
 
-    .line 3398
+    .line 3431
     iget-object v0, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mLastProPhotoCapturingMode:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
     if-nez v0, :cond_0
 
-    .line 3399
+    .line 3432
     sget-object v0, Ljp/co/sony/mc/camera/setting/CommonSettings;->LAST_PRO_CAPTURING_MODE:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
 
     invoke-virtual {p0, v0}, Ljp/co/sony/mc/camera/setting/CommonSettings;->getDefaultValue(Ljp/co/sony/mc/camera/setting/SettingKey$Key;)Ljava/lang/Object;
@@ -4701,7 +4789,7 @@
 
     check-cast v1, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
-    .line 3400
+    .line 3433
     iget-object v2, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mPreferences:Ljp/co/sony/mc/camera/setting/CameraProPreferences;
 
     invoke-virtual {v2, v0, v1}, Ljp/co/sony/mc/camera/setting/CameraProPreferences;->get(Ljp/co/sony/mc/camera/setting/SettingKey$Key;Ljava/lang/Object;)Ljava/lang/Object;
@@ -4712,7 +4800,7 @@
 
     iput-object v0, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mLastProPhotoCapturingMode:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
-    .line 3403
+    .line 3436
     :cond_0
     iget-object p0, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mLastProPhotoCapturingMode:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
@@ -4722,12 +4810,12 @@
 .method private getLastProVideoCapturingMode()Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
     .locals 3
 
-    .line 3416
+    .line 3449
     iget-object v0, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mLastProVideoCapturingMode:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
     if-nez v0, :cond_0
 
-    .line 3417
+    .line 3450
     sget-object v0, Ljp/co/sony/mc/camera/setting/CommonSettings;->LAST_PRO_VIDEO_CAPTURING_MODE:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
 
     invoke-virtual {p0, v0}, Ljp/co/sony/mc/camera/setting/CommonSettings;->getDefaultValue(Ljp/co/sony/mc/camera/setting/SettingKey$Key;)Ljava/lang/Object;
@@ -4736,7 +4824,7 @@
 
     check-cast v1, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
-    .line 3418
+    .line 3451
     iget-object v2, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mPreferences:Ljp/co/sony/mc/camera/setting/CameraProPreferences;
 
     invoke-virtual {v2, v0, v1}, Ljp/co/sony/mc/camera/setting/CameraProPreferences;->get(Ljp/co/sony/mc/camera/setting/SettingKey$Key;Ljava/lang/Object;)Ljava/lang/Object;
@@ -4747,7 +4835,7 @@
 
     iput-object v0, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mLastProVideoCapturingMode:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
-    .line 3421
+    .line 3454
     :cond_0
     iget-object p0, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mLastProVideoCapturingMode:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
@@ -4757,24 +4845,24 @@
 .method private getMemoryRecallData()Ljp/co/sony/mc/camera/configuration/parameters/MemoryRecallData;
     .locals 3
 
-    .line 2360
+    .line 2389
     iget-object v0, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mMemoryRecallData:Ljp/co/sony/mc/camera/configuration/parameters/MemoryRecallData;
 
     if-nez v0, :cond_0
 
-    .line 2361
+    .line 2390
     iget-object v0, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mPreferences:Ljp/co/sony/mc/camera/setting/CameraProPreferences;
 
     sget-object v1, Ljp/co/sony/mc/camera/setting/CommonSettings;->MEMORY_RECALL_DATA:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
 
-    .line 2362
+    .line 2391
     invoke-virtual {p0, v1}, Ljp/co/sony/mc/camera/setting/CommonSettings;->getDefaultValue(Ljp/co/sony/mc/camera/setting/SettingKey$Key;)Ljava/lang/Object;
 
     move-result-object v2
 
     check-cast v2, Ljp/co/sony/mc/camera/configuration/parameters/MemoryRecallData;
 
-    .line 2361
+    .line 2390
     invoke-virtual {v0, v1, v2}, Ljp/co/sony/mc/camera/setting/CameraProPreferences;->get(Ljp/co/sony/mc/camera/setting/SettingKey$Key;Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v0
@@ -4783,9 +4871,44 @@
 
     iput-object v0, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mMemoryRecallData:Ljp/co/sony/mc/camera/configuration/parameters/MemoryRecallData;
 
-    .line 2364
+    .line 2393
     :cond_0
     iget-object p0, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mMemoryRecallData:Ljp/co/sony/mc/camera/configuration/parameters/MemoryRecallData;
+
+    return-object p0
+.end method
+
+.method private getModeCustomExtensionData()Ljp/co/sony/mc/camera/configuration/parameters/ModeCustomExtensionData;
+    .locals 3
+
+    .line 3467
+    iget-object v0, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mModeCustomExtensionData:Ljp/co/sony/mc/camera/configuration/parameters/ModeCustomExtensionData;
+
+    if-nez v0, :cond_0
+
+    .line 3468
+    sget-object v0, Ljp/co/sony/mc/camera/setting/CommonSettings;->MODE_CUSTOM_EXTENSION_DATA:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
+
+    invoke-virtual {p0, v0}, Ljp/co/sony/mc/camera/setting/CommonSettings;->getDefaultValue(Ljp/co/sony/mc/camera/setting/SettingKey$Key;)Ljava/lang/Object;
+
+    move-result-object v1
+
+    check-cast v1, Ljp/co/sony/mc/camera/configuration/parameters/ModeCustomExtensionData;
+
+    .line 3469
+    iget-object v2, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mPreferences:Ljp/co/sony/mc/camera/setting/CameraProPreferences;
+
+    invoke-virtual {v2, v0, v1}, Ljp/co/sony/mc/camera/setting/CameraProPreferences;->get(Ljp/co/sony/mc/camera/setting/SettingKey$Key;Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, Ljp/co/sony/mc/camera/configuration/parameters/ModeCustomExtensionData;
+
+    iput-object v0, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mModeCustomExtensionData:Ljp/co/sony/mc/camera/configuration/parameters/ModeCustomExtensionData;
+
+    .line 3471
+    :cond_0
+    iget-object p0, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mModeCustomExtensionData:Ljp/co/sony/mc/camera/configuration/parameters/ModeCustomExtensionData;
 
     return-object p0
 .end method
@@ -4793,12 +4916,12 @@
 .method private getNetworkUsage()Ljp/co/sony/mc/camera/configuration/parameters/NetworkUsage;
     .locals 3
 
-    .line 3366
+    .line 3399
     iget-object v0, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mNetworkUsage:Ljp/co/sony/mc/camera/configuration/parameters/NetworkUsage;
 
     if-nez v0, :cond_0
 
-    .line 3367
+    .line 3400
     iget-object v0, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mPreferences:Ljp/co/sony/mc/camera/setting/CameraProPreferences;
 
     sget-object v1, Ljp/co/sony/mc/camera/setting/CommonSettings;->NETWORK_USAGE:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
@@ -4817,7 +4940,7 @@
 
     iput-object v0, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mNetworkUsage:Ljp/co/sony/mc/camera/configuration/parameters/NetworkUsage;
 
-    .line 3369
+    .line 3402
     :cond_0
     iget-object p0, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mNetworkUsage:Ljp/co/sony/mc/camera/configuration/parameters/NetworkUsage;
 
@@ -4827,12 +4950,12 @@
 .method private getPrivacyPolicy()Ljp/co/sony/mc/camera/configuration/parameters/PrivacyPolicy;
     .locals 3
 
-    .line 2537
+    .line 2570
     iget-object v0, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mPrivacyPolicy:Ljp/co/sony/mc/camera/configuration/parameters/PrivacyPolicy;
 
     if-nez v0, :cond_0
 
-    .line 2538
+    .line 2571
     iget-object v0, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mPreferences:Ljp/co/sony/mc/camera/setting/CameraProPreferences;
 
     sget-object v1, Ljp/co/sony/mc/camera/setting/CommonSettings;->PRIVACY_POLICY:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
@@ -4851,7 +4974,7 @@
 
     iput-object v0, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mPrivacyPolicy:Ljp/co/sony/mc/camera/configuration/parameters/PrivacyPolicy;
 
-    .line 2540
+    .line 2573
     :cond_0
     iget-object p0, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mPrivacyPolicy:Ljp/co/sony/mc/camera/configuration/parameters/PrivacyPolicy;
 
@@ -4861,24 +4984,24 @@
 .method private getProPhotoDispCustomExtensionData()Ljp/co/sony/mc/camera/configuration/parameters/DispCustomExtensionData;
     .locals 3
 
-    .line 2571
+    .line 2604
     iget-object v0, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mProPhotoDispCustomExtensionData:Ljp/co/sony/mc/camera/configuration/parameters/DispCustomExtensionData;
 
     if-nez v0, :cond_0
 
-    .line 2572
+    .line 2605
     iget-object v0, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mPreferences:Ljp/co/sony/mc/camera/setting/CameraProPreferences;
 
     sget-object v1, Ljp/co/sony/mc/camera/setting/CommonSettings;->DISP_CUSTOM_EXTENSION_DATA:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
 
-    .line 2573
+    .line 2606
     invoke-virtual {p0, v1}, Ljp/co/sony/mc/camera/setting/CommonSettings;->getDefaultValue(Ljp/co/sony/mc/camera/setting/SettingKey$Key;)Ljava/lang/Object;
 
     move-result-object v2
 
     check-cast v2, Ljp/co/sony/mc/camera/configuration/parameters/DispCustomExtensionData;
 
-    .line 2572
+    .line 2605
     invoke-virtual {v0, v1, v2}, Ljp/co/sony/mc/camera/setting/CameraProPreferences;->get(Ljp/co/sony/mc/camera/setting/SettingKey$Key;Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v0
@@ -4887,7 +5010,7 @@
 
     iput-object v0, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mProPhotoDispCustomExtensionData:Ljp/co/sony/mc/camera/configuration/parameters/DispCustomExtensionData;
 
-    .line 2575
+    .line 2608
     :cond_0
     iget-object p0, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mProPhotoDispCustomExtensionData:Ljp/co/sony/mc/camera/configuration/parameters/DispCustomExtensionData;
 
@@ -4897,24 +5020,24 @@
 .method private getProVideoDispCustomExtensionData()Ljp/co/sony/mc/camera/configuration/parameters/DispCustomExtensionData;
     .locals 3
 
-    .line 2590
+    .line 2623
     iget-object v0, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mProVideoDispCustomExtensionData:Ljp/co/sony/mc/camera/configuration/parameters/DispCustomExtensionData;
 
     if-nez v0, :cond_0
 
-    .line 2591
+    .line 2624
     iget-object v0, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mPreferences:Ljp/co/sony/mc/camera/setting/CameraProPreferences;
 
     sget-object v1, Ljp/co/sony/mc/camera/setting/CommonSettings;->PRO_VIDEO_DISP_CUSTOM_EXTENSION_DATA:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
 
-    .line 2593
+    .line 2626
     invoke-virtual {p0, v1}, Ljp/co/sony/mc/camera/setting/CommonSettings;->getDefaultValue(Ljp/co/sony/mc/camera/setting/SettingKey$Key;)Ljava/lang/Object;
 
     move-result-object v2
 
     check-cast v2, Ljp/co/sony/mc/camera/configuration/parameters/DispCustomExtensionData;
 
-    .line 2592
+    .line 2625
     invoke-virtual {v0, v1, v2}, Ljp/co/sony/mc/camera/setting/CameraProPreferences;->get(Ljp/co/sony/mc/camera/setting/SettingKey$Key;Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v0
@@ -4923,7 +5046,7 @@
 
     iput-object v0, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mProVideoDispCustomExtensionData:Ljp/co/sony/mc/camera/configuration/parameters/DispCustomExtensionData;
 
-    .line 2595
+    .line 2628
     :cond_0
     iget-object p0, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mProVideoDispCustomExtensionData:Ljp/co/sony/mc/camera/configuration/parameters/DispCustomExtensionData;
 
@@ -4933,7 +5056,7 @@
 .method private getQuickLaunch()Ljp/co/sony/mc/camera/configuration/parameters/FastCapture;
     .locals 2
 
-    .line 2455
+    .line 2484
     iget-object v0, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mSecureSetting:Ljp/co/sony/mc/camera/setting/SecureSetting;
 
     const-string v1, "camera_long_press_gesture_disabled"
@@ -4942,7 +5065,7 @@
 
     move-result-object v0
 
-    .line 2456
+    .line 2485
     invoke-static {v0}, Ljp/co/sony/mc/camera/configuration/parameters/FastCapture;->fromSecureValue(Ljava/lang/String;)Ljp/co/sony/mc/camera/configuration/parameters/FastCapture;
 
     move-result-object v0
@@ -4951,7 +5074,7 @@
 
     goto :goto_0
 
-    .line 2457
+    .line 2486
     :cond_0
     sget-object v0, Ljp/co/sony/mc/camera/setting/CommonSettings;->QUICK_LAUNCH:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
 
@@ -4970,24 +5093,24 @@
 .method private getRemoteButtonCustom()Ljp/co/sony/mc/camera/configuration/parameters/RemoteButtonCustom;
     .locals 3
 
-    .line 2645
+    .line 2678
     iget-object v0, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mRemoteButtonCustom:Ljp/co/sony/mc/camera/configuration/parameters/RemoteButtonCustom;
 
     if-nez v0, :cond_0
 
-    .line 2646
+    .line 2679
     iget-object v0, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mPreferences:Ljp/co/sony/mc/camera/setting/CameraProPreferences;
 
     sget-object v1, Ljp/co/sony/mc/camera/setting/CommonSettings;->REMOTE_BUTTON_CUSTOM:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
 
-    .line 2647
+    .line 2680
     invoke-virtual {p0, v1}, Ljp/co/sony/mc/camera/setting/CommonSettings;->getDefaultValue(Ljp/co/sony/mc/camera/setting/SettingKey$Key;)Ljava/lang/Object;
 
     move-result-object v2
 
     check-cast v2, Ljp/co/sony/mc/camera/configuration/parameters/RemoteButtonCustom;
 
-    .line 2646
+    .line 2679
     invoke-virtual {v0, v1, v2}, Ljp/co/sony/mc/camera/setting/CameraProPreferences;->get(Ljp/co/sony/mc/camera/setting/SettingKey$Key;Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v0
@@ -4996,7 +5119,7 @@
 
     iput-object v0, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mRemoteButtonCustom:Ljp/co/sony/mc/camera/configuration/parameters/RemoteButtonCustom;
 
-    .line 2649
+    .line 2682
     :cond_0
     iget-object p0, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mRemoteButtonCustom:Ljp/co/sony/mc/camera/configuration/parameters/RemoteButtonCustom;
 
@@ -5006,12 +5129,12 @@
 .method private getRemoteControl()Ljp/co/sony/mc/camera/configuration/parameters/RemoteControl;
     .locals 3
 
-    .line 2626
+    .line 2659
     iget-object v0, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mRemoteControl:Ljp/co/sony/mc/camera/configuration/parameters/RemoteControl;
 
     if-nez v0, :cond_0
 
-    .line 2627
+    .line 2660
     iget-object v0, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mPreferences:Ljp/co/sony/mc/camera/setting/CameraProPreferences;
 
     sget-object v1, Ljp/co/sony/mc/camera/setting/CommonSettings;->REMOTE_CONTROL:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
@@ -5030,7 +5153,7 @@
 
     iput-object v0, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mRemoteControl:Ljp/co/sony/mc/camera/configuration/parameters/RemoteControl;
 
-    .line 2629
+    .line 2662
     :cond_0
     iget-object p0, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mRemoteControl:Ljp/co/sony/mc/camera/configuration/parameters/RemoteControl;
 
@@ -5040,12 +5163,12 @@
 .method private getRtmpStreamKey()Ljava/lang/String;
     .locals 3
 
-    .line 2756
+    .line 2789
     iget-object v0, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mRtmpStreamKey:Ljava/lang/String;
 
     if-nez v0, :cond_1
 
-    .line 2757
+    .line 2790
     sget-object v0, Ljp/co/sony/mc/camera/setting/CommonSettings;->RTMP_STREAM_KEY:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
 
     invoke-virtual {p0, v0}, Ljp/co/sony/mc/camera/setting/CommonSettings;->getDefaultValue(Ljp/co/sony/mc/camera/setting/SettingKey$Key;)Ljava/lang/Object;
@@ -5054,7 +5177,7 @@
 
     check-cast v1, Ljava/lang/String;
 
-    .line 2758
+    .line 2791
     iget-object v2, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mPreferences:Ljp/co/sony/mc/camera/setting/CameraProPreferences;
 
     invoke-virtual {v2, v0, v1}, Ljp/co/sony/mc/camera/setting/CameraProPreferences;->get(Ljp/co/sony/mc/camera/setting/SettingKey$Key;Ljava/lang/Object;)Ljava/lang/Object;
@@ -5063,7 +5186,7 @@
 
     check-cast v0, Ljava/lang/String;
 
-    .line 2760
+    .line 2793
     :try_start_0
     invoke-virtual {v0, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
@@ -5071,7 +5194,7 @@
 
     if-nez v2, :cond_0
 
-    .line 2761
+    .line 2794
     invoke-static {v0}, Ljp/co/sony/mc/camera/util/AppDataCryptoUtility;->decrypt(Ljava/lang/String;)Ljava/io/Serializable;
 
     move-result-object v0
@@ -5082,7 +5205,7 @@
 
     goto :goto_0
 
-    .line 2763
+    .line 2796
     :cond_0
     iput-object v1, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mRtmpStreamKey:Ljava/lang/String;
     :try_end_0
@@ -5090,19 +5213,23 @@
 
     goto :goto_0
 
-    .line 2767
     :catch_0
-    const-string p0, "getRtmpStreamKey() decrypt: Exception"
+    const/4 p0, 0x1
 
-    filled-new-array {p0}, [Ljava/lang/String;
+    .line 2800
+    new-array p0, p0, [Ljava/lang/String;
 
-    move-result-object p0
+    const/4 v0, 0x0
+
+    const-string v2, "getRtmpStreamKey() decrypt: Exception"
+
+    aput-object v2, p0, v0
 
     invoke-static {p0}, Ljp/co/sony/mc/camera/util/CamLog;->e([Ljava/lang/String;)V
 
     return-object v1
 
-    .line 2772
+    .line 2805
     :cond_1
     :goto_0
     iget-object p0, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mRtmpStreamKey:Ljava/lang/String;
@@ -5113,12 +5240,12 @@
 .method private getRtmpStreamUrl()Ljava/lang/String;
     .locals 3
 
-    .line 2710
+    .line 2743
     iget-object v0, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mRtmpStreamUrl:Ljava/lang/String;
 
     if-nez v0, :cond_1
 
-    .line 2711
+    .line 2744
     sget-object v0, Ljp/co/sony/mc/camera/setting/CommonSettings;->RTMP_STREAM_URL:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
 
     invoke-virtual {p0, v0}, Ljp/co/sony/mc/camera/setting/CommonSettings;->getDefaultValue(Ljp/co/sony/mc/camera/setting/SettingKey$Key;)Ljava/lang/Object;
@@ -5127,7 +5254,7 @@
 
     check-cast v1, Ljava/lang/String;
 
-    .line 2712
+    .line 2745
     iget-object v2, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mPreferences:Ljp/co/sony/mc/camera/setting/CameraProPreferences;
 
     invoke-virtual {v2, v0, v1}, Ljp/co/sony/mc/camera/setting/CameraProPreferences;->get(Ljp/co/sony/mc/camera/setting/SettingKey$Key;Ljava/lang/Object;)Ljava/lang/Object;
@@ -5136,7 +5263,7 @@
 
     check-cast v0, Ljava/lang/String;
 
-    .line 2716
+    .line 2749
     :try_start_0
     invoke-virtual {v0, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
@@ -5144,7 +5271,7 @@
 
     if-nez v2, :cond_0
 
-    .line 2717
+    .line 2750
     invoke-static {v0}, Ljp/co/sony/mc/camera/util/AppDataCryptoUtility;->decrypt(Ljava/lang/String;)Ljava/io/Serializable;
 
     move-result-object v0
@@ -5155,7 +5282,7 @@
 
     goto :goto_0
 
-    .line 2719
+    .line 2752
     :cond_0
     iput-object v1, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mRtmpStreamUrl:Ljava/lang/String;
     :try_end_0
@@ -5163,19 +5290,23 @@
 
     goto :goto_0
 
-    .line 2723
     :catch_0
-    const-string p0, "getRtmpStreamUrl() decrypt: Exception"
+    const/4 p0, 0x1
 
-    filled-new-array {p0}, [Ljava/lang/String;
+    .line 2756
+    new-array p0, p0, [Ljava/lang/String;
 
-    move-result-object p0
+    const/4 v0, 0x0
+
+    const-string v2, "getRtmpStreamUrl() decrypt: Exception"
+
+    aput-object v2, p0, v0
 
     invoke-static {p0}, Ljp/co/sony/mc/camera/util/CamLog;->e([Ljava/lang/String;)V
 
     return-object v1
 
-    .line 2728
+    .line 2761
     :cond_1
     :goto_0
     iget-object p0, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mRtmpStreamUrl:Ljava/lang/String;
@@ -5186,22 +5317,41 @@
 .method private getSaveDestination()Ljp/co/sony/mc/camera/configuration/parameters/DestinationToSave;
     .locals 3
 
-    .line 2472
+    .line 2501
+    invoke-virtual {p0}, Ljp/co/sony/mc/camera/setting/CommonSettings;->getCapturingMode()Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->isAutoFraming()Z
+
+    move-result v0
+
+    if-eqz v0, :cond_0
+
+    .line 2502
+    sget-object p0, Ljp/co/sony/mc/camera/configuration/parameters/DestinationToSave;->EMMC:Ljp/co/sony/mc/camera/configuration/parameters/DestinationToSave;
+
+    return-object p0
+
+    .line 2504
+    :cond_0
     iget-object v0, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mSaveDestination:Ljp/co/sony/mc/camera/configuration/parameters/DestinationToSave;
 
-    if-nez v0, :cond_0
+    if-nez v0, :cond_1
 
-    .line 2473
+    .line 2505
     iget-object v0, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mPreferences:Ljp/co/sony/mc/camera/setting/CameraProPreferences;
 
     sget-object v1, Ljp/co/sony/mc/camera/setting/CommonSettings;->SAVE_DESTINATION:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
 
+    .line 2506
     invoke-virtual {p0, v1}, Ljp/co/sony/mc/camera/setting/CommonSettings;->getDefaultValue(Ljp/co/sony/mc/camera/setting/SettingKey$Key;)Ljava/lang/Object;
 
     move-result-object v2
 
     check-cast v2, Ljp/co/sony/mc/camera/configuration/parameters/DestinationToSave;
 
+    .line 2505
     invoke-virtual {v0, v1, v2}, Ljp/co/sony/mc/camera/setting/CameraProPreferences;->get(Ljp/co/sony/mc/camera/setting/SettingKey$Key;Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v0
@@ -5210,8 +5360,8 @@
 
     iput-object v0, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mSaveDestination:Ljp/co/sony/mc/camera/configuration/parameters/DestinationToSave;
 
-    .line 2475
-    :cond_0
+    .line 2508
+    :cond_1
     iget-object p0, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mSaveDestination:Ljp/co/sony/mc/camera/configuration/parameters/DestinationToSave;
 
     return-object p0
@@ -5220,12 +5370,12 @@
 .method private getShutterSound()Ljp/co/sony/mc/camera/configuration/parameters/ShutterSound;
     .locals 3
 
-    .line 2488
+    .line 2521
     iget-object v0, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mShutterSound:Ljp/co/sony/mc/camera/configuration/parameters/ShutterSound;
 
     if-nez v0, :cond_0
 
-    .line 2489
+    .line 2522
     iget-object v0, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mPreferences:Ljp/co/sony/mc/camera/setting/CameraProPreferences;
 
     sget-object v1, Ljp/co/sony/mc/camera/setting/CommonSettings;->SHUTTER_SOUND:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
@@ -5244,7 +5394,7 @@
 
     iput-object v0, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mShutterSound:Ljp/co/sony/mc/camera/configuration/parameters/ShutterSound;
 
-    .line 2491
+    .line 2524
     :cond_0
     iget-object p0, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mShutterSound:Ljp/co/sony/mc/camera/configuration/parameters/ShutterSound;
 
@@ -5254,12 +5404,12 @@
 .method private getStreamingAudioMute()Ljp/co/sony/mc/camera/configuration/parameters/StreamingAudioMute;
     .locals 3
 
-    .line 3382
+    .line 3415
     iget-object v0, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mStreamingAudioMute:Ljp/co/sony/mc/camera/configuration/parameters/StreamingAudioMute;
 
     if-nez v0, :cond_0
 
-    .line 3383
+    .line 3416
     iget-object v0, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mPreferences:Ljp/co/sony/mc/camera/setting/CameraProPreferences;
 
     sget-object v1, Ljp/co/sony/mc/camera/setting/CommonSettings;->STREAMING_AUDIO_MUTE:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
@@ -5278,7 +5428,7 @@
 
     iput-object v0, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mStreamingAudioMute:Ljp/co/sony/mc/camera/configuration/parameters/StreamingAudioMute;
 
-    .line 3385
+    .line 3418
     :cond_0
     iget-object p0, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mStreamingAudioMute:Ljp/co/sony/mc/camera/configuration/parameters/StreamingAudioMute;
 
@@ -5288,17 +5438,17 @@
 .method private getStreamingNotesOnUse()Ljp/co/sony/mc/camera/configuration/parameters/StreamingNotesOnUse;
     .locals 3
 
-    .line 2520
+    .line 2553
     iget-object v0, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mStreamingNotesOnUse:Ljp/co/sony/mc/camera/configuration/parameters/StreamingNotesOnUse;
 
     if-nez v0, :cond_0
 
-    .line 2521
+    .line 2554
     iget-object v0, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mPreferences:Ljp/co/sony/mc/camera/setting/CameraProPreferences;
 
     sget-object v1, Ljp/co/sony/mc/camera/setting/CommonSettings;->STREAMING_NOTES_ON_USE:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
 
-    .line 2522
+    .line 2555
     invoke-virtual {p0, v1}, Ljp/co/sony/mc/camera/setting/CommonSettings;->getDefaultValue(Ljp/co/sony/mc/camera/setting/SettingKey$Key;)Ljava/lang/Object;
 
     move-result-object v2
@@ -5313,7 +5463,7 @@
 
     iput-object v0, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mStreamingNotesOnUse:Ljp/co/sony/mc/camera/configuration/parameters/StreamingNotesOnUse;
 
-    .line 2524
+    .line 2557
     :cond_0
     iget-object p0, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mStreamingNotesOnUse:Ljp/co/sony/mc/camera/configuration/parameters/StreamingNotesOnUse;
 
@@ -5323,24 +5473,24 @@
 .method private getStreamingPrivacyPolicy()Ljp/co/sony/mc/camera/configuration/parameters/StreamingPrivacyPolicy;
     .locals 3
 
-    .line 2553
+    .line 2586
     iget-object v0, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mStreamingPrivacyPolicy:Ljp/co/sony/mc/camera/configuration/parameters/StreamingPrivacyPolicy;
 
     if-nez v0, :cond_0
 
-    .line 2554
+    .line 2587
     iget-object v0, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mPreferences:Ljp/co/sony/mc/camera/setting/CameraProPreferences;
 
     sget-object v1, Ljp/co/sony/mc/camera/setting/CommonSettings;->STREAMING_PRIVACY_POLICY:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
 
-    .line 2555
+    .line 2588
     invoke-virtual {p0, v1}, Ljp/co/sony/mc/camera/setting/CommonSettings;->getDefaultValue(Ljp/co/sony/mc/camera/setting/SettingKey$Key;)Ljava/lang/Object;
 
     move-result-object v2
 
     check-cast v2, Ljp/co/sony/mc/camera/configuration/parameters/StreamingPrivacyPolicy;
 
-    .line 2554
+    .line 2587
     invoke-virtual {v0, v1, v2}, Ljp/co/sony/mc/camera/setting/CameraProPreferences;->get(Ljp/co/sony/mc/camera/setting/SettingKey$Key;Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v0
@@ -5349,7 +5499,7 @@
 
     iput-object v0, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mStreamingPrivacyPolicy:Ljp/co/sony/mc/camera/configuration/parameters/StreamingPrivacyPolicy;
 
-    .line 2557
+    .line 2590
     :cond_0
     iget-object p0, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mStreamingPrivacyPolicy:Ljp/co/sony/mc/camera/configuration/parameters/StreamingPrivacyPolicy;
 
@@ -5359,12 +5509,12 @@
 .method private getVolumeKey()Ljp/co/sony/mc/camera/configuration/parameters/VolumeKey;
     .locals 3
 
-    .line 2504
+    .line 2537
     iget-object v0, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mVolumeKey:Ljp/co/sony/mc/camera/configuration/parameters/VolumeKey;
 
     if-nez v0, :cond_0
 
-    .line 2505
+    .line 2538
     iget-object v0, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mPreferences:Ljp/co/sony/mc/camera/setting/CameraProPreferences;
 
     sget-object v1, Ljp/co/sony/mc/camera/setting/CommonSettings;->VOLUME_KEY:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
@@ -5383,7 +5533,7 @@
 
     iput-object v0, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mVolumeKey:Ljp/co/sony/mc/camera/configuration/parameters/VolumeKey;
 
-    .line 2507
+    .line 2540
     :cond_0
     iget-object p0, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mVolumeKey:Ljp/co/sony/mc/camera/configuration/parameters/VolumeKey;
 
@@ -5393,12 +5543,12 @@
 .method private getYoutubeAccount()Ljava/lang/String;
     .locals 3
 
-    .line 3029
+    .line 3062
     iget-object v0, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mYoutubeAccount:Ljava/lang/String;
 
     if-nez v0, :cond_1
 
-    .line 3030
+    .line 3063
     sget-object v0, Ljp/co/sony/mc/camera/setting/CommonSettings;->YOUTUBE_ACCOUNT:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
 
     invoke-virtual {p0, v0}, Ljp/co/sony/mc/camera/setting/CommonSettings;->getDefaultValue(Ljp/co/sony/mc/camera/setting/SettingKey$Key;)Ljava/lang/Object;
@@ -5407,7 +5557,7 @@
 
     check-cast v1, Ljava/lang/String;
 
-    .line 3031
+    .line 3064
     iget-object v2, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mPreferences:Ljp/co/sony/mc/camera/setting/CameraProPreferences;
 
     invoke-virtual {v2, v0, v1}, Ljp/co/sony/mc/camera/setting/CameraProPreferences;->get(Ljp/co/sony/mc/camera/setting/SettingKey$Key;Ljava/lang/Object;)Ljava/lang/Object;
@@ -5416,7 +5566,7 @@
 
     check-cast v0, Ljava/lang/String;
 
-    .line 3033
+    .line 3066
     :try_start_0
     invoke-virtual {v0, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
@@ -5424,7 +5574,7 @@
 
     if-nez v2, :cond_0
 
-    .line 3034
+    .line 3067
     invoke-static {v0}, Ljp/co/sony/mc/camera/util/AppDataCryptoUtility;->decrypt(Ljava/lang/String;)Ljava/io/Serializable;
 
     move-result-object v0
@@ -5435,7 +5585,7 @@
 
     goto :goto_0
 
-    .line 3036
+    .line 3069
     :cond_0
     iput-object v1, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mYoutubeAccount:Ljava/lang/String;
     :try_end_0
@@ -5443,19 +5593,23 @@
 
     goto :goto_0
 
-    .line 3040
     :catch_0
-    const-string p0, "getYoutubeAccount() decrypt: Exception"
+    const/4 p0, 0x1
 
-    filled-new-array {p0}, [Ljava/lang/String;
+    .line 3073
+    new-array p0, p0, [Ljava/lang/String;
 
-    move-result-object p0
+    const/4 v0, 0x0
+
+    const-string v2, "getYoutubeAccount() decrypt: Exception"
+
+    aput-object v2, p0, v0
 
     invoke-static {p0}, Ljp/co/sony/mc/camera/util/CamLog;->e([Ljava/lang/String;)V
 
     return-object v1
 
-    .line 3045
+    .line 3078
     :cond_1
     :goto_0
     iget-object p0, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mYoutubeAccount:Ljava/lang/String;
@@ -5466,12 +5620,12 @@
 .method private getYoutubeAuthorizationState()Ljava/lang/String;
     .locals 3
 
-    .line 3118
+    .line 3151
     iget-object v0, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mYoutubeAuthorizationState:Ljava/lang/String;
 
     if-nez v0, :cond_1
 
-    .line 3119
+    .line 3152
     sget-object v0, Ljp/co/sony/mc/camera/setting/CommonSettings;->YOUTUBE_AUTHORIZATION_STATE:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
 
     invoke-virtual {p0, v0}, Ljp/co/sony/mc/camera/setting/CommonSettings;->getDefaultValue(Ljp/co/sony/mc/camera/setting/SettingKey$Key;)Ljava/lang/Object;
@@ -5480,17 +5634,17 @@
 
     check-cast v1, Ljava/lang/String;
 
-    .line 3120
+    .line 3153
     iget-object v2, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mPreferences:Ljp/co/sony/mc/camera/setting/CameraProPreferences;
 
-    .line 3121
+    .line 3154
     invoke-virtual {v2, v0, v1}, Ljp/co/sony/mc/camera/setting/CameraProPreferences;->get(Ljp/co/sony/mc/camera/setting/SettingKey$Key;Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v0
 
     check-cast v0, Ljava/lang/String;
 
-    .line 3123
+    .line 3156
     :try_start_0
     invoke-virtual {v0, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
@@ -5498,7 +5652,7 @@
 
     if-nez v2, :cond_0
 
-    .line 3125
+    .line 3158
     invoke-static {v0}, Ljp/co/sony/mc/camera/util/AppDataCryptoUtility;->decrypt(Ljava/lang/String;)Ljava/io/Serializable;
 
     move-result-object v0
@@ -5509,7 +5663,7 @@
 
     goto :goto_0
 
-    .line 3127
+    .line 3160
     :cond_0
     iput-object v1, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mYoutubeAuthorizationState:Ljava/lang/String;
     :try_end_0
@@ -5517,19 +5671,23 @@
 
     goto :goto_0
 
-    .line 3131
     :catch_0
-    const-string p0, "getYoutubeAuthorizationState() decrypt: Exception"
+    const/4 p0, 0x1
 
-    filled-new-array {p0}, [Ljava/lang/String;
+    .line 3164
+    new-array p0, p0, [Ljava/lang/String;
 
-    move-result-object p0
+    const/4 v0, 0x0
+
+    const-string v2, "getYoutubeAuthorizationState() decrypt: Exception"
+
+    aput-object v2, p0, v0
 
     invoke-static {p0}, Ljp/co/sony/mc/camera/util/CamLog;->e([Ljava/lang/String;)V
 
     return-object v1
 
-    .line 3136
+    .line 3169
     :cond_1
     :goto_0
     iget-object p0, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mYoutubeAuthorizationState:Ljava/lang/String;
@@ -5540,12 +5698,12 @@
 .method private getYoutubeLiveChatIdKey()Ljava/lang/String;
     .locals 3
 
-    .line 2937
+    .line 2970
     iget-object v0, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mYoutubeLiveChatIdKey:Ljava/lang/String;
 
     if-nez v0, :cond_1
 
-    .line 2938
+    .line 2971
     sget-object v0, Ljp/co/sony/mc/camera/setting/CommonSettings;->YOUTUBE_LIVE_CHAT_ID_KEY:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
 
     invoke-virtual {p0, v0}, Ljp/co/sony/mc/camera/setting/CommonSettings;->getDefaultValue(Ljp/co/sony/mc/camera/setting/SettingKey$Key;)Ljava/lang/Object;
@@ -5554,17 +5712,17 @@
 
     check-cast v1, Ljava/lang/String;
 
-    .line 2939
+    .line 2972
     iget-object v2, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mPreferences:Ljp/co/sony/mc/camera/setting/CameraProPreferences;
 
-    .line 2940
+    .line 2973
     invoke-virtual {v2, v0, v1}, Ljp/co/sony/mc/camera/setting/CameraProPreferences;->get(Ljp/co/sony/mc/camera/setting/SettingKey$Key;Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v0
 
     check-cast v0, Ljava/lang/String;
 
-    .line 2942
+    .line 2975
     :try_start_0
     invoke-virtual {v0, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
@@ -5572,7 +5730,7 @@
 
     if-nez v2, :cond_0
 
-    .line 2944
+    .line 2977
     invoke-static {v0}, Ljp/co/sony/mc/camera/util/AppDataCryptoUtility;->decrypt(Ljava/lang/String;)Ljava/io/Serializable;
 
     move-result-object v0
@@ -5583,7 +5741,7 @@
 
     goto :goto_0
 
-    .line 2946
+    .line 2979
     :cond_0
     iput-object v1, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mYoutubeLiveChatIdKey:Ljava/lang/String;
     :try_end_0
@@ -5591,19 +5749,23 @@
 
     goto :goto_0
 
-    .line 2950
     :catch_0
-    const-string p0, "getYoutubeLiveChatIdKey() decrypt: Exception"
+    const/4 p0, 0x1
 
-    filled-new-array {p0}, [Ljava/lang/String;
+    .line 2983
+    new-array p0, p0, [Ljava/lang/String;
 
-    move-result-object p0
+    const/4 v0, 0x0
+
+    const-string v2, "getYoutubeLiveChatIdKey() decrypt: Exception"
+
+    aput-object v2, p0, v0
 
     invoke-static {p0}, Ljp/co/sony/mc/camera/util/CamLog;->e([Ljava/lang/String;)V
 
     return-object v1
 
-    .line 2955
+    .line 2988
     :cond_1
     :goto_0
     iget-object p0, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mYoutubeLiveChatIdKey:Ljava/lang/String;
@@ -5614,12 +5776,12 @@
 .method private getYoutubeLiveEvent()Ljava/lang/String;
     .locals 3
 
-    .line 3073
+    .line 3106
     iget-object v0, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mYoutubeLiveEvent:Ljava/lang/String;
 
     if-nez v0, :cond_1
 
-    .line 3074
+    .line 3107
     sget-object v0, Ljp/co/sony/mc/camera/setting/CommonSettings;->YOUTUBE_LIVE_EVENT:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
 
     invoke-virtual {p0, v0}, Ljp/co/sony/mc/camera/setting/CommonSettings;->getDefaultValue(Ljp/co/sony/mc/camera/setting/SettingKey$Key;)Ljava/lang/Object;
@@ -5628,7 +5790,7 @@
 
     check-cast v1, Ljava/lang/String;
 
-    .line 3075
+    .line 3108
     iget-object v2, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mPreferences:Ljp/co/sony/mc/camera/setting/CameraProPreferences;
 
     invoke-virtual {v2, v0, v1}, Ljp/co/sony/mc/camera/setting/CameraProPreferences;->get(Ljp/co/sony/mc/camera/setting/SettingKey$Key;Ljava/lang/Object;)Ljava/lang/Object;
@@ -5637,7 +5799,7 @@
 
     check-cast v0, Ljava/lang/String;
 
-    .line 3077
+    .line 3110
     :try_start_0
     invoke-virtual {v0, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
@@ -5645,7 +5807,7 @@
 
     if-nez v2, :cond_0
 
-    .line 3079
+    .line 3112
     invoke-static {v0}, Ljp/co/sony/mc/camera/util/AppDataCryptoUtility;->decrypt(Ljava/lang/String;)Ljava/io/Serializable;
 
     move-result-object v0
@@ -5656,7 +5818,7 @@
 
     goto :goto_0
 
-    .line 3081
+    .line 3114
     :cond_0
     iput-object v1, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mYoutubeLiveEvent:Ljava/lang/String;
     :try_end_0
@@ -5664,19 +5826,23 @@
 
     goto :goto_0
 
-    .line 3085
     :catch_0
-    const-string p0, "getYoutubeLiveEvent() decrypt: Exception"
+    const/4 p0, 0x1
 
-    filled-new-array {p0}, [Ljava/lang/String;
+    .line 3118
+    new-array p0, p0, [Ljava/lang/String;
 
-    move-result-object p0
+    const/4 v0, 0x0
+
+    const-string v2, "getYoutubeLiveEvent() decrypt: Exception"
+
+    aput-object v2, p0, v0
 
     invoke-static {p0}, Ljp/co/sony/mc/camera/util/CamLog;->e([Ljava/lang/String;)V
 
     return-object v1
 
-    .line 3090
+    .line 3123
     :cond_1
     :goto_0
     iget-object p0, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mYoutubeLiveEvent:Ljava/lang/String;
@@ -5687,12 +5853,12 @@
 .method private getYoutubeLiveId()Ljava/lang/String;
     .locals 3
 
-    .line 2985
+    .line 3018
     iget-object v0, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mYoutubeLiveId:Ljava/lang/String;
 
     if-nez v0, :cond_1
 
-    .line 2986
+    .line 3019
     sget-object v0, Ljp/co/sony/mc/camera/setting/CommonSettings;->YOUTUBE_LIVE_ID:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
 
     invoke-virtual {p0, v0}, Ljp/co/sony/mc/camera/setting/CommonSettings;->getDefaultValue(Ljp/co/sony/mc/camera/setting/SettingKey$Key;)Ljava/lang/Object;
@@ -5701,7 +5867,7 @@
 
     check-cast v1, Ljava/lang/String;
 
-    .line 2987
+    .line 3020
     iget-object v2, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mPreferences:Ljp/co/sony/mc/camera/setting/CameraProPreferences;
 
     invoke-virtual {v2, v0, v1}, Ljp/co/sony/mc/camera/setting/CameraProPreferences;->get(Ljp/co/sony/mc/camera/setting/SettingKey$Key;Ljava/lang/Object;)Ljava/lang/Object;
@@ -5710,7 +5876,7 @@
 
     check-cast v0, Ljava/lang/String;
 
-    .line 2989
+    .line 3022
     :try_start_0
     invoke-virtual {v0, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
@@ -5718,7 +5884,7 @@
 
     if-nez v2, :cond_0
 
-    .line 2990
+    .line 3023
     invoke-static {v0}, Ljp/co/sony/mc/camera/util/AppDataCryptoUtility;->decrypt(Ljava/lang/String;)Ljava/io/Serializable;
 
     move-result-object v0
@@ -5729,7 +5895,7 @@
 
     goto :goto_0
 
-    .line 2992
+    .line 3025
     :cond_0
     iput-object v1, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mYoutubeLiveId:Ljava/lang/String;
     :try_end_0
@@ -5737,19 +5903,23 @@
 
     goto :goto_0
 
-    .line 2996
     :catch_0
-    const-string p0, "getYoutubeLiveId() decrypt: Exception"
+    const/4 p0, 0x1
 
-    filled-new-array {p0}, [Ljava/lang/String;
+    .line 3029
+    new-array p0, p0, [Ljava/lang/String;
 
-    move-result-object p0
+    const/4 v0, 0x0
+
+    const-string v2, "getYoutubeLiveId() decrypt: Exception"
+
+    aput-object v2, p0, v0
 
     invoke-static {p0}, Ljp/co/sony/mc/camera/util/CamLog;->e([Ljava/lang/String;)V
 
     return-object v1
 
-    .line 3001
+    .line 3034
     :cond_1
     :goto_0
     iget-object p0, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mYoutubeLiveId:Ljava/lang/String;
@@ -5760,12 +5930,12 @@
 .method private getYoutubeStreamIdKey()Ljava/lang/String;
     .locals 3
 
-    .line 2890
+    .line 2923
     iget-object v0, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mYoutubeStreamIdKey:Ljava/lang/String;
 
     if-nez v0, :cond_1
 
-    .line 2891
+    .line 2924
     sget-object v0, Ljp/co/sony/mc/camera/setting/CommonSettings;->YOUTUBE_STREAM_ID_KEY:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
 
     invoke-virtual {p0, v0}, Ljp/co/sony/mc/camera/setting/CommonSettings;->getDefaultValue(Ljp/co/sony/mc/camera/setting/SettingKey$Key;)Ljava/lang/Object;
@@ -5774,17 +5944,17 @@
 
     check-cast v1, Ljava/lang/String;
 
-    .line 2892
+    .line 2925
     iget-object v2, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mPreferences:Ljp/co/sony/mc/camera/setting/CameraProPreferences;
 
-    .line 2893
+    .line 2926
     invoke-virtual {v2, v0, v1}, Ljp/co/sony/mc/camera/setting/CameraProPreferences;->get(Ljp/co/sony/mc/camera/setting/SettingKey$Key;Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v0
 
     check-cast v0, Ljava/lang/String;
 
-    .line 2895
+    .line 2928
     :try_start_0
     invoke-virtual {v0, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
@@ -5792,7 +5962,7 @@
 
     if-nez v2, :cond_0
 
-    .line 2897
+    .line 2930
     invoke-static {v0}, Ljp/co/sony/mc/camera/util/AppDataCryptoUtility;->decrypt(Ljava/lang/String;)Ljava/io/Serializable;
 
     move-result-object v0
@@ -5803,7 +5973,7 @@
 
     goto :goto_0
 
-    .line 2899
+    .line 2932
     :cond_0
     iput-object v1, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mYoutubeStreamIdKey:Ljava/lang/String;
     :try_end_0
@@ -5811,19 +5981,23 @@
 
     goto :goto_0
 
-    .line 2903
     :catch_0
-    const-string p0, "getYoutubeStreamIdKey() decrypt: Exception"
+    const/4 p0, 0x1
 
-    filled-new-array {p0}, [Ljava/lang/String;
+    .line 2936
+    new-array p0, p0, [Ljava/lang/String;
 
-    move-result-object p0
+    const/4 v0, 0x0
+
+    const-string v2, "getYoutubeStreamIdKey() decrypt: Exception"
+
+    aput-object v2, p0, v0
 
     invoke-static {p0}, Ljp/co/sony/mc/camera/util/CamLog;->e([Ljava/lang/String;)V
 
     return-object v1
 
-    .line 2908
+    .line 2941
     :cond_1
     :goto_0
     iget-object p0, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mYoutubeStreamIdKey:Ljava/lang/String;
@@ -5834,12 +6008,12 @@
 .method private getYoutubeStreamKey()Ljava/lang/String;
     .locals 3
 
-    .line 2845
+    .line 2878
     iget-object v0, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mYoutubeStreamKey:Ljava/lang/String;
 
     if-nez v0, :cond_1
 
-    .line 2846
+    .line 2879
     sget-object v0, Ljp/co/sony/mc/camera/setting/CommonSettings;->YOUTUBE_STREAM_KEY:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
 
     invoke-virtual {p0, v0}, Ljp/co/sony/mc/camera/setting/CommonSettings;->getDefaultValue(Ljp/co/sony/mc/camera/setting/SettingKey$Key;)Ljava/lang/Object;
@@ -5848,7 +6022,7 @@
 
     check-cast v1, Ljava/lang/String;
 
-    .line 2847
+    .line 2880
     iget-object v2, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mPreferences:Ljp/co/sony/mc/camera/setting/CameraProPreferences;
 
     invoke-virtual {v2, v0, v1}, Ljp/co/sony/mc/camera/setting/CameraProPreferences;->get(Ljp/co/sony/mc/camera/setting/SettingKey$Key;Ljava/lang/Object;)Ljava/lang/Object;
@@ -5857,7 +6031,7 @@
 
     check-cast v0, Ljava/lang/String;
 
-    .line 2849
+    .line 2882
     :try_start_0
     invoke-virtual {v0, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
@@ -5865,7 +6039,7 @@
 
     if-nez v2, :cond_0
 
-    .line 2851
+    .line 2884
     invoke-static {v0}, Ljp/co/sony/mc/camera/util/AppDataCryptoUtility;->decrypt(Ljava/lang/String;)Ljava/io/Serializable;
 
     move-result-object v0
@@ -5876,7 +6050,7 @@
 
     goto :goto_0
 
-    .line 2853
+    .line 2886
     :cond_0
     iput-object v1, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mYoutubeStreamKey:Ljava/lang/String;
     :try_end_0
@@ -5884,19 +6058,23 @@
 
     goto :goto_0
 
-    .line 2857
     :catch_0
-    const-string p0, "getYoutubeStreamKey() decrypt: Exception"
+    const/4 p0, 0x1
 
-    filled-new-array {p0}, [Ljava/lang/String;
+    .line 2890
+    new-array p0, p0, [Ljava/lang/String;
 
-    move-result-object p0
+    const/4 v0, 0x0
+
+    const-string v2, "getYoutubeStreamKey() decrypt: Exception"
+
+    aput-object v2, p0, v0
 
     invoke-static {p0}, Ljp/co/sony/mc/camera/util/CamLog;->e([Ljava/lang/String;)V
 
     return-object v1
 
-    .line 2862
+    .line 2895
     :cond_1
     :goto_0
     iget-object p0, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mYoutubeStreamKey:Ljava/lang/String;
@@ -5907,12 +6085,12 @@
 .method private getYoutubeStreamUrl()Ljava/lang/String;
     .locals 3
 
-    .line 2800
+    .line 2833
     iget-object v0, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mYoutubeStreamUrl:Ljava/lang/String;
 
     if-nez v0, :cond_1
 
-    .line 2801
+    .line 2834
     sget-object v0, Ljp/co/sony/mc/camera/setting/CommonSettings;->YOUTUBE_STREAM_URL:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
 
     invoke-virtual {p0, v0}, Ljp/co/sony/mc/camera/setting/CommonSettings;->getDefaultValue(Ljp/co/sony/mc/camera/setting/SettingKey$Key;)Ljava/lang/Object;
@@ -5921,7 +6099,7 @@
 
     check-cast v1, Ljava/lang/String;
 
-    .line 2802
+    .line 2835
     iget-object v2, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mPreferences:Ljp/co/sony/mc/camera/setting/CameraProPreferences;
 
     invoke-virtual {v2, v0, v1}, Ljp/co/sony/mc/camera/setting/CameraProPreferences;->get(Ljp/co/sony/mc/camera/setting/SettingKey$Key;Ljava/lang/Object;)Ljava/lang/Object;
@@ -5930,7 +6108,7 @@
 
     check-cast v0, Ljava/lang/String;
 
-    .line 2804
+    .line 2837
     :try_start_0
     invoke-virtual {v0, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
@@ -5938,7 +6116,7 @@
 
     if-nez v2, :cond_0
 
-    .line 2806
+    .line 2839
     invoke-static {v0}, Ljp/co/sony/mc/camera/util/AppDataCryptoUtility;->decrypt(Ljava/lang/String;)Ljava/io/Serializable;
 
     move-result-object v0
@@ -5949,7 +6127,7 @@
 
     goto :goto_0
 
-    .line 2808
+    .line 2841
     :cond_0
     iput-object v1, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mYoutubeStreamUrl:Ljava/lang/String;
     :try_end_0
@@ -5957,19 +6135,23 @@
 
     goto :goto_0
 
-    .line 2812
     :catch_0
-    const-string p0, "getYoutubeStreamUrl() decrypt: Exception"
+    const/4 p0, 0x1
 
-    filled-new-array {p0}, [Ljava/lang/String;
+    .line 2845
+    new-array p0, p0, [Ljava/lang/String;
 
-    move-result-object p0
+    const/4 v0, 0x0
+
+    const-string v2, "getYoutubeStreamUrl() decrypt: Exception"
+
+    aput-object v2, p0, v0
 
     invoke-static {p0}, Ljp/co/sony/mc/camera/util/CamLog;->w([Ljava/lang/String;)V
 
     return-object v1
 
-    .line 2817
+    .line 2850
     :cond_1
     :goto_0
     iget-object p0, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mYoutubeStreamUrl:Ljava/lang/String;
@@ -5997,13 +6179,13 @@
 
     return-void
 
-    .line 3440
+    .line 3490
     :cond_0
     invoke-interface {p3}, Ljava/util/Map;->entrySet()Ljava/util/Set;
 
     move-result-object p3
 
-    .line 3439
+    .line 3489
     invoke-interface {p3}, Ljava/util/Set;->iterator()Ljava/util/Iterator;
 
     move-result-object p3
@@ -6022,7 +6204,7 @@
 
     check-cast v0, Ljava/util/Map$Entry;
 
-    .line 3441
+    .line 3491
     invoke-interface {v0}, Ljava/util/Map$Entry;->getValue()Ljava/lang/Object;
 
     move-result-object v1
@@ -6031,10 +6213,10 @@
 
     if-eqz v1, :cond_1
 
-    .line 3443
-    new-instance v2, Ljp/co/sony/mc/camera/setting/CommonSettings$204;
+    .line 3493
+    new-instance v2, Ljp/co/sony/mc/camera/setting/CommonSettings$207;
 
-    invoke-direct {v2, p0, v0, p1, p2}, Ljp/co/sony/mc/camera/setting/CommonSettings$204;-><init>(Ljp/co/sony/mc/camera/setting/CommonSettings;Ljava/util/Map$Entry;Ljp/co/sony/mc/camera/setting/SettingKey$Key;Ljava/lang/Object;)V
+    invoke-direct {v2, p0, v0, p1, p2}, Ljp/co/sony/mc/camera/setting/CommonSettings$207;-><init>(Ljp/co/sony/mc/camera/setting/CommonSettings;Ljava/util/Map$Entry;Ljp/co/sony/mc/camera/setting/SettingKey$Key;Ljava/lang/Object;)V
 
     invoke-virtual {v1, v2}, Landroid/os/Handler;->post(Ljava/lang/Runnable;)Z
 
@@ -6047,7 +6229,7 @@
 .method private setCameraId(Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;)Z
     .locals 1
 
-    .line 2352
+    .line 2381
     iget-object v0, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mCameraId:Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;
 
     if-eq v0, p1, :cond_0
@@ -6062,7 +6244,7 @@
     :goto_0
     if-eqz v0, :cond_1
 
-    .line 2354
+    .line 2383
     iput-object p1, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mCameraId:Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;
 
     :cond_1
@@ -6072,7 +6254,7 @@
 .method private setCameraIdOnMr(Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;)Z
     .locals 1
 
-    .line 2385
+    .line 2414
     iget-object v0, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mCameraIdOnMr:Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;
 
     if-eq v0, p1, :cond_0
@@ -6087,7 +6269,7 @@
     :goto_0
     if-eqz v0, :cond_1
 
-    .line 2387
+    .line 2416
     iput-object p1, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mCameraIdOnMr:Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;
 
     :cond_1
@@ -6097,7 +6279,7 @@
 .method private setConnectToMode(Ljp/co/sony/mc/camera/configuration/parameters/StreamingConnectMode;)Z
     .locals 2
 
-    .line 2701
+    .line 2734
     iget-object v0, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mStreamingConnectMode:Ljp/co/sony/mc/camera/configuration/parameters/StreamingConnectMode;
 
     if-eq v0, p1, :cond_0
@@ -6112,10 +6294,10 @@
     :goto_0
     if-eqz v0, :cond_1
 
-    .line 2703
+    .line 2736
     iput-object p1, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mStreamingConnectMode:Ljp/co/sony/mc/camera/configuration/parameters/StreamingConnectMode;
 
-    .line 2704
+    .line 2737
     iget-object p0, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mPreferences:Ljp/co/sony/mc/camera/setting/CameraProPreferences;
 
     sget-object v1, Ljp/co/sony/mc/camera/setting/CommonSettings;->STREAMING_CONNECT_MODE:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
@@ -6129,7 +6311,7 @@
 .method private setDisplayMode(Ljp/co/sony/mc/camera/configuration/parameters/DisplayMode;)Z
     .locals 2
 
-    .line 2617
+    .line 2650
     iget-object v0, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mDisplayMode:Ljp/co/sony/mc/camera/configuration/parameters/DisplayMode;
 
     if-eq v0, p1, :cond_0
@@ -6144,10 +6326,10 @@
     :goto_0
     if-eqz v0, :cond_1
 
-    .line 2619
+    .line 2652
     iput-object p1, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mDisplayMode:Ljp/co/sony/mc/camera/configuration/parameters/DisplayMode;
 
-    .line 2620
+    .line 2653
     iget-object p0, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mPreferences:Ljp/co/sony/mc/camera/setting/CameraProPreferences;
 
     sget-object v1, Ljp/co/sony/mc/camera/setting/CommonSettings;->DISPLAY_MODE:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
@@ -6161,7 +6343,7 @@
 .method private setEnduranceMode(Ljp/co/sony/mc/camera/configuration/parameters/EnduranceMode;)Z
     .locals 2
 
-    .line 2685
+    .line 2718
     iget-object v0, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mEnduranceMode:Ljp/co/sony/mc/camera/configuration/parameters/EnduranceMode;
 
     if-eq v0, p1, :cond_0
@@ -6176,10 +6358,10 @@
     :goto_0
     if-eqz v0, :cond_1
 
-    .line 2687
+    .line 2720
     iput-object p1, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mEnduranceMode:Ljp/co/sony/mc/camera/configuration/parameters/EnduranceMode;
 
-    .line 2688
+    .line 2721
     iget-object p0, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mPreferences:Ljp/co/sony/mc/camera/setting/CameraProPreferences;
 
     sget-object v1, Ljp/co/sony/mc/camera/setting/CommonSettings;->ENDURANCE_MODE:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
@@ -6191,181 +6373,229 @@
 .end method
 
 .method private setFacebookAccount(Ljava/lang/String;)Z
-    .locals 2
+    .locals 4
 
-    const/4 v0, 0x0
-
-    .line 3190
-    :try_start_0
-    iget-object v1, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mFacebookAccount:Ljava/lang/String;
-
-    if-eqz v1, :cond_0
-
-    invoke-virtual {v1, p1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    move-result v1
-
-    if-nez v1, :cond_1
-
-    :cond_0
     const/4 v0, 0x1
 
-    :cond_1
-    if-eqz v0, :cond_2
+    const/4 v1, 0x0
 
-    .line 3192
+    .line 3223
+    :try_start_0
+    iget-object v2, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mFacebookAccount:Ljava/lang/String;
+
+    if-eqz v2, :cond_1
+
+    invoke-virtual {v2, p1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v2
+    :try_end_0
+    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
+
+    if-nez v2, :cond_0
+
+    goto :goto_0
+
+    :cond_0
+    move v2, v1
+
+    goto :goto_1
+
+    :cond_1
+    :goto_0
+    move v2, v0
+
+    :goto_1
+    if-eqz v2, :cond_2
+
+    .line 3225
+    :try_start_1
     iput-object p1, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mFacebookAccount:Ljava/lang/String;
 
-    .line 3195
+    .line 3228
     invoke-static {p1}, Ljp/co/sony/mc/camera/util/AppDataCryptoUtility;->encrypt(Ljava/io/Serializable;)Ljava/lang/String;
 
     move-result-object p1
 
-    .line 3200
+    .line 3233
     iget-object p0, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mPreferences:Ljp/co/sony/mc/camera/setting/CameraProPreferences;
 
-    sget-object v1, Ljp/co/sony/mc/camera/setting/CommonSettings;->FACEBOOK_ACCOUNT:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
+    sget-object v3, Ljp/co/sony/mc/camera/setting/CommonSettings;->FACEBOOK_ACCOUNT:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
 
-    invoke-virtual {p0, v1, p1}, Ljp/co/sony/mc/camera/setting/CameraProPreferences;->set(Ljp/co/sony/mc/camera/setting/SettingKey$Key;Ljava/lang/Object;)V
-    :try_end_0
-    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
+    invoke-virtual {p0, v3, p1}, Ljp/co/sony/mc/camera/setting/CameraProPreferences;->set(Ljp/co/sony/mc/camera/setting/SettingKey$Key;Ljava/lang/Object;)V
+    :try_end_1
+    .catch Ljava/lang/Exception; {:try_start_1 .. :try_end_1} :catch_1
 
-    goto :goto_0
+    goto :goto_2
 
-    .line 3204
     :catch_0
-    const-string/jumbo p0, "setFacebookAccount() encrypt: Exception"
+    move v2, v1
 
-    filled-new-array {p0}, [Ljava/lang/String;
+    .line 3237
+    :catch_1
+    new-array p0, v0, [Ljava/lang/String;
 
-    move-result-object p0
+    const-string p1, "setFacebookAccount() encrypt: Exception"
+
+    aput-object p1, p0, v1
 
     invoke-static {p0}, Ljp/co/sony/mc/camera/util/CamLog;->e([Ljava/lang/String;)V
 
     :cond_2
-    :goto_0
-    return v0
+    :goto_2
+    return v2
 .end method
 
 .method private setFacebookGroupId(Ljava/lang/String;)Z
-    .locals 2
+    .locals 4
 
-    const/4 v0, 0x0
-
-    .line 3345
-    :try_start_0
-    iget-object v1, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mFacebookGroupId:Ljava/lang/String;
-
-    if-eqz v1, :cond_0
-
-    invoke-virtual {v1, p1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    move-result v1
-
-    if-nez v1, :cond_1
-
-    :cond_0
     const/4 v0, 0x1
 
-    :cond_1
-    if-eqz v0, :cond_2
+    const/4 v1, 0x0
 
-    .line 3347
+    .line 3378
+    :try_start_0
+    iget-object v2, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mFacebookGroupId:Ljava/lang/String;
+
+    if-eqz v2, :cond_1
+
+    invoke-virtual {v2, p1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v2
+    :try_end_0
+    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
+
+    if-nez v2, :cond_0
+
+    goto :goto_0
+
+    :cond_0
+    move v2, v1
+
+    goto :goto_1
+
+    :cond_1
+    :goto_0
+    move v2, v0
+
+    :goto_1
+    if-eqz v2, :cond_2
+
+    .line 3380
+    :try_start_1
     iput-object p1, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mFacebookGroupId:Ljava/lang/String;
 
-    .line 3350
+    .line 3383
     invoke-static {p1}, Ljp/co/sony/mc/camera/util/AppDataCryptoUtility;->encrypt(Ljava/io/Serializable;)Ljava/lang/String;
 
     move-result-object p1
 
-    .line 3355
+    .line 3388
     iget-object p0, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mPreferences:Ljp/co/sony/mc/camera/setting/CameraProPreferences;
 
-    sget-object v1, Ljp/co/sony/mc/camera/setting/CommonSettings;->FACEBOOK_GROUP_ID:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
+    sget-object v3, Ljp/co/sony/mc/camera/setting/CommonSettings;->FACEBOOK_GROUP_ID:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
 
-    invoke-virtual {p0, v1, p1}, Ljp/co/sony/mc/camera/setting/CameraProPreferences;->set(Ljp/co/sony/mc/camera/setting/SettingKey$Key;Ljava/lang/Object;)V
-    :try_end_0
-    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
+    invoke-virtual {p0, v3, p1}, Ljp/co/sony/mc/camera/setting/CameraProPreferences;->set(Ljp/co/sony/mc/camera/setting/SettingKey$Key;Ljava/lang/Object;)V
+    :try_end_1
+    .catch Ljava/lang/Exception; {:try_start_1 .. :try_end_1} :catch_1
 
-    goto :goto_0
+    goto :goto_2
 
-    .line 3359
     :catch_0
-    const-string/jumbo p0, "setYoutubeGroupId() encrypt: Exception"
+    move v2, v1
 
-    filled-new-array {p0}, [Ljava/lang/String;
+    .line 3392
+    :catch_1
+    new-array p0, v0, [Ljava/lang/String;
 
-    move-result-object p0
+    const-string/jumbo p1, "setYoutubeGroupId() encrypt: Exception"
+
+    aput-object p1, p0, v1
 
     invoke-static {p0}, Ljp/co/sony/mc/camera/util/CamLog;->e([Ljava/lang/String;)V
 
     :cond_2
-    :goto_0
-    return v0
+    :goto_2
+    return v2
 .end method
 
 .method private setFacebookLiveSelect(Ljava/lang/String;)Z
-    .locals 2
+    .locals 4
 
-    const/4 v0, 0x0
-
-    .line 3283
-    :try_start_0
-    iget-object v1, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mFacebookLiveSelect:Ljava/lang/String;
-
-    if-eqz v1, :cond_0
-
-    .line 3284
-    invoke-virtual {v1, p1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    move-result v1
-
-    if-nez v1, :cond_1
-
-    :cond_0
     const/4 v0, 0x1
 
-    :cond_1
-    if-eqz v0, :cond_2
+    const/4 v1, 0x0
 
-    .line 3286
+    .line 3316
+    :try_start_0
+    iget-object v2, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mFacebookLiveSelect:Ljava/lang/String;
+
+    if-eqz v2, :cond_1
+
+    .line 3317
+    invoke-virtual {v2, p1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v2
+    :try_end_0
+    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
+
+    if-nez v2, :cond_0
+
+    goto :goto_0
+
+    :cond_0
+    move v2, v1
+
+    goto :goto_1
+
+    :cond_1
+    :goto_0
+    move v2, v0
+
+    :goto_1
+    if-eqz v2, :cond_2
+
+    .line 3319
+    :try_start_1
     iput-object p1, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mFacebookLiveSelect:Ljava/lang/String;
 
-    .line 3289
+    .line 3322
     invoke-static {p1}, Ljp/co/sony/mc/camera/util/AppDataCryptoUtility;->encrypt(Ljava/io/Serializable;)Ljava/lang/String;
 
     move-result-object p1
 
-    .line 3294
+    .line 3327
     iget-object p0, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mPreferences:Ljp/co/sony/mc/camera/setting/CameraProPreferences;
 
-    sget-object v1, Ljp/co/sony/mc/camera/setting/CommonSettings;->FACEBOOK_LIVE_SELECT:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
+    sget-object v3, Ljp/co/sony/mc/camera/setting/CommonSettings;->FACEBOOK_LIVE_SELECT:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
 
-    invoke-virtual {p0, v1, p1}, Ljp/co/sony/mc/camera/setting/CameraProPreferences;->set(Ljp/co/sony/mc/camera/setting/SettingKey$Key;Ljava/lang/Object;)V
-    :try_end_0
-    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
+    invoke-virtual {p0, v3, p1}, Ljp/co/sony/mc/camera/setting/CameraProPreferences;->set(Ljp/co/sony/mc/camera/setting/SettingKey$Key;Ljava/lang/Object;)V
+    :try_end_1
+    .catch Ljava/lang/Exception; {:try_start_1 .. :try_end_1} :catch_1
 
-    goto :goto_0
+    goto :goto_2
 
-    .line 3298
     :catch_0
-    const-string/jumbo p0, "setYoutubeLiveSelect() encrypt: Exception"
+    move v2, v1
 
-    filled-new-array {p0}, [Ljava/lang/String;
+    .line 3331
+    :catch_1
+    new-array p0, v0, [Ljava/lang/String;
 
-    move-result-object p0
+    const-string/jumbo p1, "setYoutubeLiveSelect() encrypt: Exception"
+
+    aput-object p1, p0, v1
 
     invoke-static {p0}, Ljp/co/sony/mc/camera/util/CamLog;->e([Ljava/lang/String;)V
 
     :cond_2
-    :goto_0
-    return v0
+    :goto_2
+    return v2
 .end method
 
 .method private setFacebookLiveType(Ljp/co/sony/mc/camera/configuration/parameters/FacebookLiveType;)Z
     .locals 2
 
-    .line 3312
+    .line 3345
     iget-object v0, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mFacebookLiveType:Ljp/co/sony/mc/camera/configuration/parameters/FacebookLiveType;
 
     if-eq v0, p1, :cond_0
@@ -6380,10 +6610,10 @@
     :goto_0
     if-eqz v0, :cond_1
 
-    .line 3314
+    .line 3347
     iput-object p1, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mFacebookLiveType:Ljp/co/sony/mc/camera/configuration/parameters/FacebookLiveType;
 
-    .line 3315
+    .line 3348
     iget-object p0, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mPreferences:Ljp/co/sony/mc/camera/setting/CameraProPreferences;
 
     sget-object v1, Ljp/co/sony/mc/camera/setting/CommonSettings;->FACEBOOK_LIVE_TYPE:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
@@ -6395,67 +6625,83 @@
 .end method
 
 .method private setFacebookLiveVideoId(Ljava/lang/String;)Z
-    .locals 2
+    .locals 4
 
-    const/4 v0, 0x0
-
-    .line 3236
-    :try_start_0
-    iget-object v1, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mFacebookLiveVideoId:Ljava/lang/String;
-
-    if-eqz v1, :cond_0
-
-    .line 3237
-    invoke-virtual {v1, p1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    move-result v1
-
-    if-nez v1, :cond_1
-
-    :cond_0
     const/4 v0, 0x1
 
-    :cond_1
-    if-eqz v0, :cond_2
+    const/4 v1, 0x0
 
-    .line 3239
+    .line 3269
+    :try_start_0
+    iget-object v2, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mFacebookLiveVideoId:Ljava/lang/String;
+
+    if-eqz v2, :cond_1
+
+    .line 3270
+    invoke-virtual {v2, p1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v2
+    :try_end_0
+    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
+
+    if-nez v2, :cond_0
+
+    goto :goto_0
+
+    :cond_0
+    move v2, v1
+
+    goto :goto_1
+
+    :cond_1
+    :goto_0
+    move v2, v0
+
+    :goto_1
+    if-eqz v2, :cond_2
+
+    .line 3272
+    :try_start_1
     iput-object p1, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mFacebookLiveVideoId:Ljava/lang/String;
 
-    .line 3243
+    .line 3276
     invoke-static {p1}, Ljp/co/sony/mc/camera/util/AppDataCryptoUtility;->encrypt(Ljava/io/Serializable;)Ljava/lang/String;
 
     move-result-object p1
 
-    .line 3248
+    .line 3281
     iget-object p0, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mPreferences:Ljp/co/sony/mc/camera/setting/CameraProPreferences;
 
-    sget-object v1, Ljp/co/sony/mc/camera/setting/CommonSettings;->FACEBOOK_LIVE_VIDEO_ID:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
+    sget-object v3, Ljp/co/sony/mc/camera/setting/CommonSettings;->FACEBOOK_LIVE_VIDEO_ID:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
 
-    invoke-virtual {p0, v1, p1}, Ljp/co/sony/mc/camera/setting/CameraProPreferences;->set(Ljp/co/sony/mc/camera/setting/SettingKey$Key;Ljava/lang/Object;)V
-    :try_end_0
-    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
+    invoke-virtual {p0, v3, p1}, Ljp/co/sony/mc/camera/setting/CameraProPreferences;->set(Ljp/co/sony/mc/camera/setting/SettingKey$Key;Ljava/lang/Object;)V
+    :try_end_1
+    .catch Ljava/lang/Exception; {:try_start_1 .. :try_end_1} :catch_1
 
-    goto :goto_0
+    goto :goto_2
 
-    .line 3252
     :catch_0
-    const-string/jumbo p0, "setYoutubeLiveVideoId() encrypt: Exception"
+    move v2, v1
 
-    filled-new-array {p0}, [Ljava/lang/String;
+    .line 3285
+    :catch_1
+    new-array p0, v0, [Ljava/lang/String;
 
-    move-result-object p0
+    const-string/jumbo p1, "setYoutubeLiveVideoId() encrypt: Exception"
+
+    aput-object p1, p0, v1
 
     invoke-static {p0}, Ljp/co/sony/mc/camera/util/CamLog;->e([Ljava/lang/String;)V
 
     :cond_2
-    :goto_0
-    return v0
+    :goto_2
+    return v2
 .end method
 
 .method private setGeotag(Ljp/co/sony/mc/camera/configuration/parameters/Geotag;)Z
     .locals 2
 
-    .line 2430
+    .line 2459
     iget-object v0, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mGeotag:Ljp/co/sony/mc/camera/configuration/parameters/Geotag;
 
     if-eq v0, p1, :cond_0
@@ -6470,10 +6716,10 @@
     :goto_0
     if-eqz v0, :cond_1
 
-    .line 2432
+    .line 2461
     iput-object p1, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mGeotag:Ljp/co/sony/mc/camera/configuration/parameters/Geotag;
 
-    .line 2433
+    .line 2462
     iget-object p0, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mPreferences:Ljp/co/sony/mc/camera/setting/CameraProPreferences;
 
     sget-object v1, Ljp/co/sony/mc/camera/setting/CommonSettings;->GEOTAG:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
@@ -6487,7 +6733,7 @@
 .method private setGridLine(Ljp/co/sony/mc/camera/configuration/parameters/GridLine;)Z
     .locals 2
 
-    .line 2446
+    .line 2475
     iget-object v0, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mGridLine:Ljp/co/sony/mc/camera/configuration/parameters/GridLine;
 
     if-eq v0, p1, :cond_0
@@ -6502,10 +6748,10 @@
     :goto_0
     if-eqz v0, :cond_1
 
-    .line 2448
+    .line 2477
     iput-object p1, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mGridLine:Ljp/co/sony/mc/camera/configuration/parameters/GridLine;
 
-    .line 2449
+    .line 2478
     iget-object p0, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mPreferences:Ljp/co/sony/mc/camera/setting/CameraProPreferences;
 
     sget-object v1, Ljp/co/sony/mc/camera/setting/CommonSettings;->GRID_LINE:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
@@ -6519,7 +6765,7 @@
 .method private setHapticFeedback(Ljp/co/sony/mc/camera/configuration/parameters/HapticFeedback;)Z
     .locals 2
 
-    .line 2669
+    .line 2702
     iget-object v0, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mHapticFeedback:Ljp/co/sony/mc/camera/configuration/parameters/HapticFeedback;
 
     if-eq v0, p1, :cond_0
@@ -6534,10 +6780,10 @@
     :goto_0
     if-eqz v0, :cond_1
 
-    .line 2671
+    .line 2704
     iput-object p1, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mHapticFeedback:Ljp/co/sony/mc/camera/configuration/parameters/HapticFeedback;
 
-    .line 2672
+    .line 2705
     iget-object p0, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mPreferences:Ljp/co/sony/mc/camera/setting/CameraProPreferences;
 
     sget-object v1, Ljp/co/sony/mc/camera/setting/CommonSettings;->HAPTIC_FEEDBACK:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
@@ -6551,7 +6797,7 @@
 .method private setLastCameraId(Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;)Z
     .locals 1
 
-    .line 2415
+    .line 2444
     iget-object v0, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mLastCameraId:Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;
 
     if-eq v0, p1, :cond_0
@@ -6566,7 +6812,7 @@
     :goto_0
     if-eqz v0, :cond_1
 
-    .line 2417
+    .line 2446
     iput-object p1, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mLastCameraId:Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;
 
     :cond_1
@@ -6576,7 +6822,7 @@
 .method private setLastCapturingMode(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;)Z
     .locals 1
 
-    .line 2400
+    .line 2429
     iget-object v0, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mLastCapturingMode:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
     if-eq v0, p1, :cond_0
@@ -6591,7 +6837,7 @@
     :goto_0
     if-eqz v0, :cond_1
 
-    .line 2402
+    .line 2431
     iput-object p1, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mLastCapturingMode:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
     :cond_1
@@ -6601,7 +6847,7 @@
 .method private setLastProPhotoCapturingMode(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;)Z
     .locals 2
 
-    .line 3407
+    .line 3440
     iget-object v0, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mLastProPhotoCapturingMode:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
     if-eq v0, p1, :cond_0
@@ -6616,10 +6862,10 @@
     :goto_0
     if-eqz v0, :cond_1
 
-    .line 3409
+    .line 3442
     iput-object p1, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mLastProPhotoCapturingMode:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
-    .line 3410
+    .line 3443
     iget-object p0, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mPreferences:Ljp/co/sony/mc/camera/setting/CameraProPreferences;
 
     sget-object v1, Ljp/co/sony/mc/camera/setting/CommonSettings;->LAST_PRO_CAPTURING_MODE:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
@@ -6633,7 +6879,7 @@
 .method private setLastProVideoCapturingMode(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;)Z
     .locals 2
 
-    .line 3425
+    .line 3458
     iget-object v0, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mLastProVideoCapturingMode:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
     if-eq v0, p1, :cond_0
@@ -6648,10 +6894,10 @@
     :goto_0
     if-eqz v0, :cond_1
 
-    .line 3427
+    .line 3460
     iput-object p1, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mLastProVideoCapturingMode:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
-    .line 3428
+    .line 3461
     iget-object p0, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mPreferences:Ljp/co/sony/mc/camera/setting/CameraProPreferences;
 
     sget-object v1, Ljp/co/sony/mc/camera/setting/CommonSettings;->LAST_PRO_VIDEO_CAPTURING_MODE:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
@@ -6665,7 +6911,7 @@
 .method private setMemoryRecallData(Ljp/co/sony/mc/camera/configuration/parameters/MemoryRecallData;)Z
     .locals 2
 
-    .line 2368
+    .line 2397
     iget-object v0, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mMemoryRecallData:Ljp/co/sony/mc/camera/configuration/parameters/MemoryRecallData;
 
     invoke-virtual {v0, p1}, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
@@ -6676,10 +6922,10 @@
 
     if-eqz v0, :cond_0
 
-    .line 2370
+    .line 2399
     iput-object p1, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mMemoryRecallData:Ljp/co/sony/mc/camera/configuration/parameters/MemoryRecallData;
 
-    .line 2371
+    .line 2400
     iget-object p1, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mPreferences:Ljp/co/sony/mc/camera/setting/CameraProPreferences;
 
     sget-object v1, Ljp/co/sony/mc/camera/setting/CommonSettings;->MEMORY_RECALL_DATA:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
@@ -6692,10 +6938,38 @@
     return v0
 .end method
 
+.method private setModeCustomExtensionData(Ljp/co/sony/mc/camera/configuration/parameters/ModeCustomExtensionData;)Z
+    .locals 2
+
+    .line 3475
+    iget-object v0, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mModeCustomExtensionData:Ljp/co/sony/mc/camera/configuration/parameters/ModeCustomExtensionData;
+
+    invoke-static {v0, p1}, Ljava/util/Objects;->equals(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    move-result v0
+
+    xor-int/lit8 v0, v0, 0x1
+
+    if-eqz v0, :cond_0
+
+    .line 3477
+    iput-object p1, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mModeCustomExtensionData:Ljp/co/sony/mc/camera/configuration/parameters/ModeCustomExtensionData;
+
+    .line 3478
+    iget-object p0, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mPreferences:Ljp/co/sony/mc/camera/setting/CameraProPreferences;
+
+    sget-object v1, Ljp/co/sony/mc/camera/setting/CommonSettings;->MODE_CUSTOM_EXTENSION_DATA:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
+
+    invoke-virtual {p0, v1, p1}, Ljp/co/sony/mc/camera/setting/CameraProPreferences;->set(Ljp/co/sony/mc/camera/setting/SettingKey$Key;Ljava/lang/Object;)V
+
+    :cond_0
+    return v0
+.end method
+
 .method private setNetworkUsage(Ljp/co/sony/mc/camera/configuration/parameters/NetworkUsage;)Z
     .locals 2
 
-    .line 3373
+    .line 3406
     iget-object v0, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mNetworkUsage:Ljp/co/sony/mc/camera/configuration/parameters/NetworkUsage;
 
     if-eq v0, p1, :cond_0
@@ -6710,10 +6984,10 @@
     :goto_0
     if-eqz v0, :cond_1
 
-    .line 3375
+    .line 3408
     iput-object p1, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mNetworkUsage:Ljp/co/sony/mc/camera/configuration/parameters/NetworkUsage;
 
-    .line 3376
+    .line 3409
     iget-object p0, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mPreferences:Ljp/co/sony/mc/camera/setting/CameraProPreferences;
 
     sget-object v1, Ljp/co/sony/mc/camera/setting/CommonSettings;->NETWORK_USAGE:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
@@ -6727,7 +7001,7 @@
 .method private setPrivacyPolicy(Ljp/co/sony/mc/camera/configuration/parameters/PrivacyPolicy;)Z
     .locals 2
 
-    .line 2544
+    .line 2577
     iget-object v0, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mPrivacyPolicy:Ljp/co/sony/mc/camera/configuration/parameters/PrivacyPolicy;
 
     if-eq v0, p1, :cond_0
@@ -6742,10 +7016,10 @@
     :goto_0
     if-eqz v0, :cond_1
 
-    .line 2546
+    .line 2579
     iput-object p1, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mPrivacyPolicy:Ljp/co/sony/mc/camera/configuration/parameters/PrivacyPolicy;
 
-    .line 2547
+    .line 2580
     iget-object p0, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mPreferences:Ljp/co/sony/mc/camera/setting/CameraProPreferences;
 
     sget-object v1, Ljp/co/sony/mc/camera/setting/CommonSettings;->PRIVACY_POLICY:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
@@ -6759,7 +7033,7 @@
 .method private setProPhotoDispCustomExtensionData(Ljp/co/sony/mc/camera/configuration/parameters/DispCustomExtensionData;)Z
     .locals 2
 
-    .line 2580
+    .line 2613
     iget-object v0, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mProPhotoDispCustomExtensionData:Ljp/co/sony/mc/camera/configuration/parameters/DispCustomExtensionData;
 
     invoke-static {v0, p1}, Ljava/util/Objects;->equals(Ljava/lang/Object;Ljava/lang/Object;)Z
@@ -6770,10 +7044,10 @@
 
     if-eqz v0, :cond_0
 
-    .line 2583
+    .line 2616
     iput-object p1, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mProPhotoDispCustomExtensionData:Ljp/co/sony/mc/camera/configuration/parameters/DispCustomExtensionData;
 
-    .line 2584
+    .line 2617
     iget-object p0, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mPreferences:Ljp/co/sony/mc/camera/setting/CameraProPreferences;
 
     sget-object v1, Ljp/co/sony/mc/camera/setting/CommonSettings;->DISP_CUSTOM_EXTENSION_DATA:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
@@ -6787,7 +7061,7 @@
 .method private setProVideoDispCustomExtensionData(Ljp/co/sony/mc/camera/configuration/parameters/DispCustomExtensionData;)Z
     .locals 2
 
-    .line 2600
+    .line 2633
     iget-object v0, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mProVideoDispCustomExtensionData:Ljp/co/sony/mc/camera/configuration/parameters/DispCustomExtensionData;
 
     invoke-static {v0, p1}, Ljava/util/Objects;->equals(Ljava/lang/Object;Ljava/lang/Object;)Z
@@ -6798,10 +7072,10 @@
 
     if-eqz v0, :cond_0
 
-    .line 2603
+    .line 2636
     iput-object p1, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mProVideoDispCustomExtensionData:Ljp/co/sony/mc/camera/configuration/parameters/DispCustomExtensionData;
 
-    .line 2604
+    .line 2637
     iget-object p0, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mPreferences:Ljp/co/sony/mc/camera/setting/CameraProPreferences;
 
     sget-object v1, Ljp/co/sony/mc/camera/setting/CommonSettings;->PRO_VIDEO_DISP_CUSTOM_EXTENSION_DATA:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
@@ -6815,7 +7089,7 @@
 .method private setQuickLaunch(Ljp/co/sony/mc/camera/configuration/parameters/FastCapture;)Z
     .locals 2
 
-    .line 2462
+    .line 2491
     invoke-static {}, Ljp/co/sony/mc/camera/observer/CameraKeyStatusObserver;->isCameraKeyDisabledByOtherApp()Z
 
     move-result v0
@@ -6824,7 +7098,7 @@
 
     if-nez v0, :cond_1
 
-    .line 2463
+    .line 2492
     invoke-direct {p0}, Ljp/co/sony/mc/camera/setting/CommonSettings;->getQuickLaunch()Ljp/co/sony/mc/camera/configuration/parameters/FastCapture;
 
     move-result-object v0
@@ -6835,18 +7109,18 @@
 
     move v1, v0
 
-    .line 2464
+    .line 2493
     :cond_0
     iget-object p0, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mSecureSetting:Ljp/co/sony/mc/camera/setting/SecureSetting;
 
     const-string v0, "camera_long_press_gesture_disabled"
 
-    .line 2465
+    .line 2494
     invoke-virtual {p1}, Ljp/co/sony/mc/camera/configuration/parameters/FastCapture;->getSecureValue()Ljava/lang/String;
 
     move-result-object p1
 
-    .line 2464
+    .line 2493
     invoke-virtual {p0, v0, p1}, Ljp/co/sony/mc/camera/setting/SecureSetting;->set(Ljava/lang/String;Ljava/lang/String;)V
 
     :cond_1
@@ -6856,7 +7130,7 @@
 .method private setRemoteButtonCustom(Ljp/co/sony/mc/camera/configuration/parameters/RemoteButtonCustom;)Z
     .locals 2
 
-    .line 2653
+    .line 2686
     iget-object v0, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mRemoteButtonCustom:Ljp/co/sony/mc/camera/configuration/parameters/RemoteButtonCustom;
 
     if-eq v0, p1, :cond_0
@@ -6871,10 +7145,10 @@
     :goto_0
     if-eqz v0, :cond_1
 
-    .line 2655
+    .line 2688
     iput-object p1, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mRemoteButtonCustom:Ljp/co/sony/mc/camera/configuration/parameters/RemoteButtonCustom;
 
-    .line 2656
+    .line 2689
     iget-object p0, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mPreferences:Ljp/co/sony/mc/camera/setting/CameraProPreferences;
 
     sget-object v1, Ljp/co/sony/mc/camera/setting/CommonSettings;->REMOTE_BUTTON_CUSTOM:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
@@ -6888,7 +7162,7 @@
 .method private setRemoteControl(Ljp/co/sony/mc/camera/configuration/parameters/RemoteControl;)Z
     .locals 3
 
-    .line 2633
+    .line 2666
     iget-object v0, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mRemoteControl:Ljp/co/sony/mc/camera/configuration/parameters/RemoteControl;
 
     if-eq v0, p1, :cond_0
@@ -6903,22 +7177,22 @@
     :goto_0
     if-eqz v0, :cond_1
 
-    .line 2635
+    .line 2668
     iput-object p1, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mRemoteControl:Ljp/co/sony/mc/camera/configuration/parameters/RemoteControl;
 
-    .line 2636
+    .line 2669
     iget-object v1, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mPreferences:Ljp/co/sony/mc/camera/setting/CameraProPreferences;
 
     sget-object v2, Ljp/co/sony/mc/camera/setting/CommonSettings;->REMOTE_CONTROL:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
 
     invoke-virtual {v1, v2, p1}, Ljp/co/sony/mc/camera/setting/CameraProPreferences;->set(Ljp/co/sony/mc/camera/setting/SettingKey$Key;Ljava/lang/Object;)V
 
-    .line 2637
+    .line 2670
     sget-object v1, Ljp/co/sony/mc/camera/configuration/parameters/RemoteControl;->OFF:Ljp/co/sony/mc/camera/configuration/parameters/RemoteControl;
 
     if-ne p1, v1, :cond_1
 
-    .line 2638
+    .line 2671
     sget-object p1, Ljp/co/sony/mc/camera/configuration/parameters/EnduranceMode;->OFF:Ljp/co/sony/mc/camera/configuration/parameters/EnduranceMode;
 
     invoke-direct {p0, p1}, Ljp/co/sony/mc/camera/setting/CommonSettings;->setEnduranceMode(Ljp/co/sony/mc/camera/configuration/parameters/EnduranceMode;)Z
@@ -6928,123 +7202,155 @@
 .end method
 
 .method private setRtmpStreamKey(Ljava/lang/String;)Z
-    .locals 2
+    .locals 4
 
-    const/4 v0, 0x0
-
-    .line 2779
-    :try_start_0
-    iget-object v1, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mRtmpStreamKey:Ljava/lang/String;
-
-    if-eqz v1, :cond_0
-
-    invoke-virtual {v1, p1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    move-result v1
-
-    if-nez v1, :cond_1
-
-    :cond_0
     const/4 v0, 0x1
 
-    :cond_1
-    if-eqz v0, :cond_2
+    const/4 v1, 0x0
 
-    .line 2781
+    .line 2812
+    :try_start_0
+    iget-object v2, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mRtmpStreamKey:Ljava/lang/String;
+
+    if-eqz v2, :cond_1
+
+    invoke-virtual {v2, p1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v2
+    :try_end_0
+    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
+
+    if-nez v2, :cond_0
+
+    goto :goto_0
+
+    :cond_0
+    move v2, v1
+
+    goto :goto_1
+
+    :cond_1
+    :goto_0
+    move v2, v0
+
+    :goto_1
+    if-eqz v2, :cond_2
+
+    .line 2814
+    :try_start_1
     iput-object p1, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mRtmpStreamKey:Ljava/lang/String;
 
-    .line 2784
+    .line 2817
     invoke-static {p1}, Ljp/co/sony/mc/camera/util/AppDataCryptoUtility;->encrypt(Ljava/io/Serializable;)Ljava/lang/String;
 
     move-result-object p1
 
-    .line 2789
+    .line 2822
     iget-object p0, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mPreferences:Ljp/co/sony/mc/camera/setting/CameraProPreferences;
 
-    sget-object v1, Ljp/co/sony/mc/camera/setting/CommonSettings;->RTMP_STREAM_KEY:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
+    sget-object v3, Ljp/co/sony/mc/camera/setting/CommonSettings;->RTMP_STREAM_KEY:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
 
-    invoke-virtual {p0, v1, p1}, Ljp/co/sony/mc/camera/setting/CameraProPreferences;->set(Ljp/co/sony/mc/camera/setting/SettingKey$Key;Ljava/lang/Object;)V
-    :try_end_0
-    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
+    invoke-virtual {p0, v3, p1}, Ljp/co/sony/mc/camera/setting/CameraProPreferences;->set(Ljp/co/sony/mc/camera/setting/SettingKey$Key;Ljava/lang/Object;)V
+    :try_end_1
+    .catch Ljava/lang/Exception; {:try_start_1 .. :try_end_1} :catch_1
 
-    goto :goto_0
+    goto :goto_2
 
-    .line 2793
     :catch_0
-    const-string/jumbo p0, "setRtmpStreamKey() encrypt: Exception"
+    move v2, v1
 
-    filled-new-array {p0}, [Ljava/lang/String;
+    .line 2826
+    :catch_1
+    new-array p0, v0, [Ljava/lang/String;
 
-    move-result-object p0
+    const-string/jumbo p1, "setRtmpStreamKey() encrypt: Exception"
+
+    aput-object p1, p0, v1
 
     invoke-static {p0}, Ljp/co/sony/mc/camera/util/CamLog;->e([Ljava/lang/String;)V
 
     :cond_2
-    :goto_0
-    return v0
+    :goto_2
+    return v2
 .end method
 
 .method private setRtmpStreamUrl(Ljava/lang/String;)Z
-    .locals 2
+    .locals 4
 
-    const/4 v0, 0x0
-
-    .line 2735
-    :try_start_0
-    iget-object v1, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mRtmpStreamUrl:Ljava/lang/String;
-
-    if-eqz v1, :cond_0
-
-    invoke-virtual {v1, p1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    move-result v1
-
-    if-nez v1, :cond_1
-
-    :cond_0
     const/4 v0, 0x1
 
-    :cond_1
-    if-eqz v0, :cond_2
+    const/4 v1, 0x0
 
-    .line 2737
+    .line 2768
+    :try_start_0
+    iget-object v2, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mRtmpStreamUrl:Ljava/lang/String;
+
+    if-eqz v2, :cond_1
+
+    invoke-virtual {v2, p1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v2
+    :try_end_0
+    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
+
+    if-nez v2, :cond_0
+
+    goto :goto_0
+
+    :cond_0
+    move v2, v1
+
+    goto :goto_1
+
+    :cond_1
+    :goto_0
+    move v2, v0
+
+    :goto_1
+    if-eqz v2, :cond_2
+
+    .line 2770
+    :try_start_1
     iput-object p1, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mRtmpStreamUrl:Ljava/lang/String;
 
-    .line 2740
+    .line 2773
     invoke-static {p1}, Ljp/co/sony/mc/camera/util/AppDataCryptoUtility;->encrypt(Ljava/io/Serializable;)Ljava/lang/String;
 
     move-result-object p1
 
-    .line 2745
+    .line 2778
     iget-object p0, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mPreferences:Ljp/co/sony/mc/camera/setting/CameraProPreferences;
 
-    sget-object v1, Ljp/co/sony/mc/camera/setting/CommonSettings;->RTMP_STREAM_URL:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
+    sget-object v3, Ljp/co/sony/mc/camera/setting/CommonSettings;->RTMP_STREAM_URL:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
 
-    invoke-virtual {p0, v1, p1}, Ljp/co/sony/mc/camera/setting/CameraProPreferences;->set(Ljp/co/sony/mc/camera/setting/SettingKey$Key;Ljava/lang/Object;)V
-    :try_end_0
-    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
+    invoke-virtual {p0, v3, p1}, Ljp/co/sony/mc/camera/setting/CameraProPreferences;->set(Ljp/co/sony/mc/camera/setting/SettingKey$Key;Ljava/lang/Object;)V
+    :try_end_1
+    .catch Ljava/lang/Exception; {:try_start_1 .. :try_end_1} :catch_1
 
-    goto :goto_0
+    goto :goto_2
 
-    .line 2749
     :catch_0
-    const-string/jumbo p0, "setRtmpStreamUrl() encrypt: Exception"
+    move v2, v1
 
-    filled-new-array {p0}, [Ljava/lang/String;
+    .line 2782
+    :catch_1
+    new-array p0, v0, [Ljava/lang/String;
 
-    move-result-object p0
+    const-string/jumbo p1, "setRtmpStreamUrl() encrypt: Exception"
+
+    aput-object p1, p0, v1
 
     invoke-static {p0}, Ljp/co/sony/mc/camera/util/CamLog;->e([Ljava/lang/String;)V
 
     :cond_2
-    :goto_0
-    return v0
+    :goto_2
+    return v2
 .end method
 
 .method private setSaveDestination(Ljp/co/sony/mc/camera/configuration/parameters/DestinationToSave;)Z
     .locals 2
 
-    .line 2479
+    .line 2512
     iget-object v0, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mSaveDestination:Ljp/co/sony/mc/camera/configuration/parameters/DestinationToSave;
 
     if-eq v0, p1, :cond_0
@@ -7059,10 +7365,10 @@
     :goto_0
     if-eqz v0, :cond_1
 
-    .line 2481
+    .line 2514
     iput-object p1, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mSaveDestination:Ljp/co/sony/mc/camera/configuration/parameters/DestinationToSave;
 
-    .line 2482
+    .line 2515
     iget-object p0, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mPreferences:Ljp/co/sony/mc/camera/setting/CameraProPreferences;
 
     sget-object v1, Ljp/co/sony/mc/camera/setting/CommonSettings;->SAVE_DESTINATION:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
@@ -7076,7 +7382,7 @@
 .method private setShutterSound(Ljp/co/sony/mc/camera/configuration/parameters/ShutterSound;)Z
     .locals 2
 
-    .line 2495
+    .line 2528
     iget-object v0, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mShutterSound:Ljp/co/sony/mc/camera/configuration/parameters/ShutterSound;
 
     if-eq v0, p1, :cond_0
@@ -7091,10 +7397,10 @@
     :goto_0
     if-eqz v0, :cond_1
 
-    .line 2497
+    .line 2530
     iput-object p1, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mShutterSound:Ljp/co/sony/mc/camera/configuration/parameters/ShutterSound;
 
-    .line 2498
+    .line 2531
     iget-object p0, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mPreferences:Ljp/co/sony/mc/camera/setting/CameraProPreferences;
 
     sget-object v1, Ljp/co/sony/mc/camera/setting/CommonSettings;->SHUTTER_SOUND:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
@@ -7108,7 +7414,7 @@
 .method private setStreamingAudioMute(Ljp/co/sony/mc/camera/configuration/parameters/StreamingAudioMute;)Z
     .locals 2
 
-    .line 3389
+    .line 3422
     iget-object v0, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mStreamingAudioMute:Ljp/co/sony/mc/camera/configuration/parameters/StreamingAudioMute;
 
     if-eq v0, p1, :cond_0
@@ -7123,10 +7429,10 @@
     :goto_0
     if-eqz v0, :cond_1
 
-    .line 3391
+    .line 3424
     iput-object p1, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mStreamingAudioMute:Ljp/co/sony/mc/camera/configuration/parameters/StreamingAudioMute;
 
-    .line 3392
+    .line 3425
     iget-object p0, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mPreferences:Ljp/co/sony/mc/camera/setting/CameraProPreferences;
 
     sget-object v1, Ljp/co/sony/mc/camera/setting/CommonSettings;->STREAMING_AUDIO_MUTE:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
@@ -7140,7 +7446,7 @@
 .method private setStreamingNotesOnUse(Ljp/co/sony/mc/camera/configuration/parameters/StreamingNotesOnUse;)Z
     .locals 2
 
-    .line 2528
+    .line 2561
     iget-object v0, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mStreamingNotesOnUse:Ljp/co/sony/mc/camera/configuration/parameters/StreamingNotesOnUse;
 
     if-eq v0, p1, :cond_0
@@ -7155,10 +7461,10 @@
     :goto_0
     if-eqz v0, :cond_1
 
-    .line 2530
+    .line 2563
     iput-object p1, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mStreamingNotesOnUse:Ljp/co/sony/mc/camera/configuration/parameters/StreamingNotesOnUse;
 
-    .line 2531
+    .line 2564
     iget-object p0, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mPreferences:Ljp/co/sony/mc/camera/setting/CameraProPreferences;
 
     sget-object v1, Ljp/co/sony/mc/camera/setting/CommonSettings;->STREAMING_NOTES_ON_USE:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
@@ -7172,7 +7478,7 @@
 .method private setStreamingPrivacyPolicy(Ljp/co/sony/mc/camera/configuration/parameters/StreamingPrivacyPolicy;)Z
     .locals 2
 
-    .line 2562
+    .line 2595
     iget-object v0, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mStreamingPrivacyPolicy:Ljp/co/sony/mc/camera/configuration/parameters/StreamingPrivacyPolicy;
 
     if-eq v0, p1, :cond_0
@@ -7187,10 +7493,10 @@
     :goto_0
     if-eqz v0, :cond_1
 
-    .line 2564
+    .line 2597
     iput-object p1, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mStreamingPrivacyPolicy:Ljp/co/sony/mc/camera/configuration/parameters/StreamingPrivacyPolicy;
 
-    .line 2565
+    .line 2598
     iget-object p0, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mPreferences:Ljp/co/sony/mc/camera/setting/CameraProPreferences;
 
     sget-object v1, Ljp/co/sony/mc/camera/setting/CommonSettings;->STREAMING_PRIVACY_POLICY:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
@@ -7204,7 +7510,7 @@
 .method private setVolumeKey(Ljp/co/sony/mc/camera/configuration/parameters/VolumeKey;)Z
     .locals 2
 
-    .line 2511
+    .line 2544
     iget-object v0, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mVolumeKey:Ljp/co/sony/mc/camera/configuration/parameters/VolumeKey;
 
     if-eq v0, p1, :cond_0
@@ -7219,10 +7525,10 @@
     :goto_0
     if-eqz v0, :cond_1
 
-    .line 2513
+    .line 2546
     iput-object p1, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mVolumeKey:Ljp/co/sony/mc/camera/configuration/parameters/VolumeKey;
 
-    .line 2514
+    .line 2547
     iget-object p0, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mPreferences:Ljp/co/sony/mc/camera/setting/CameraProPreferences;
 
     sget-object v1, Ljp/co/sony/mc/camera/setting/CommonSettings;->VOLUME_KEY:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
@@ -7234,462 +7540,590 @@
 .end method
 
 .method private setYoutubeAccount(Ljava/lang/String;)Z
-    .locals 2
+    .locals 4
 
-    const/4 v0, 0x0
-
-    .line 3052
-    :try_start_0
-    iget-object v1, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mYoutubeAccount:Ljava/lang/String;
-
-    if-eqz v1, :cond_0
-
-    invoke-virtual {v1, p1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    move-result v1
-
-    if-nez v1, :cond_1
-
-    :cond_0
     const/4 v0, 0x1
 
-    :cond_1
-    if-eqz v0, :cond_2
+    const/4 v1, 0x0
 
-    .line 3054
+    .line 3085
+    :try_start_0
+    iget-object v2, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mYoutubeAccount:Ljava/lang/String;
+
+    if-eqz v2, :cond_1
+
+    invoke-virtual {v2, p1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v2
+    :try_end_0
+    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
+
+    if-nez v2, :cond_0
+
+    goto :goto_0
+
+    :cond_0
+    move v2, v1
+
+    goto :goto_1
+
+    :cond_1
+    :goto_0
+    move v2, v0
+
+    :goto_1
+    if-eqz v2, :cond_2
+
+    .line 3087
+    :try_start_1
     iput-object p1, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mYoutubeAccount:Ljava/lang/String;
 
-    .line 3057
+    .line 3090
     invoke-static {p1}, Ljp/co/sony/mc/camera/util/AppDataCryptoUtility;->encrypt(Ljava/io/Serializable;)Ljava/lang/String;
 
     move-result-object p1
 
-    .line 3062
+    .line 3095
     iget-object p0, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mPreferences:Ljp/co/sony/mc/camera/setting/CameraProPreferences;
 
-    sget-object v1, Ljp/co/sony/mc/camera/setting/CommonSettings;->YOUTUBE_ACCOUNT:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
+    sget-object v3, Ljp/co/sony/mc/camera/setting/CommonSettings;->YOUTUBE_ACCOUNT:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
 
-    invoke-virtual {p0, v1, p1}, Ljp/co/sony/mc/camera/setting/CameraProPreferences;->set(Ljp/co/sony/mc/camera/setting/SettingKey$Key;Ljava/lang/Object;)V
-    :try_end_0
-    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
+    invoke-virtual {p0, v3, p1}, Ljp/co/sony/mc/camera/setting/CameraProPreferences;->set(Ljp/co/sony/mc/camera/setting/SettingKey$Key;Ljava/lang/Object;)V
+    :try_end_1
+    .catch Ljava/lang/Exception; {:try_start_1 .. :try_end_1} :catch_1
 
-    goto :goto_0
+    goto :goto_2
 
-    .line 3066
     :catch_0
-    const-string/jumbo p0, "setYoutubeAccount() encrypt: Exception"
+    move v2, v1
 
-    filled-new-array {p0}, [Ljava/lang/String;
+    .line 3099
+    :catch_1
+    new-array p0, v0, [Ljava/lang/String;
 
-    move-result-object p0
+    const-string/jumbo p1, "setYoutubeAccount() encrypt: Exception"
+
+    aput-object p1, p0, v1
 
     invoke-static {p0}, Ljp/co/sony/mc/camera/util/CamLog;->e([Ljava/lang/String;)V
 
     :cond_2
-    :goto_0
-    return v0
+    :goto_2
+    return v2
 .end method
 
 .method private setYoutubeAuthorizationState(Ljava/lang/String;)Z
-    .locals 2
+    .locals 4
 
-    const/4 v0, 0x0
-
-    .line 3143
-    :try_start_0
-    iget-object v1, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mYoutubeAuthorizationState:Ljava/lang/String;
-
-    if-eqz v1, :cond_0
-
-    .line 3144
-    invoke-virtual {v1, p1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    move-result v1
-
-    if-nez v1, :cond_1
-
-    :cond_0
     const/4 v0, 0x1
 
-    :cond_1
-    if-eqz v0, :cond_2
+    const/4 v1, 0x0
 
-    .line 3146
+    .line 3176
+    :try_start_0
+    iget-object v2, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mYoutubeAuthorizationState:Ljava/lang/String;
+
+    if-eqz v2, :cond_1
+
+    .line 3177
+    invoke-virtual {v2, p1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v2
+    :try_end_0
+    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
+
+    if-nez v2, :cond_0
+
+    goto :goto_0
+
+    :cond_0
+    move v2, v1
+
+    goto :goto_1
+
+    :cond_1
+    :goto_0
+    move v2, v0
+
+    :goto_1
+    if-eqz v2, :cond_2
+
+    .line 3179
+    :try_start_1
     iput-object p1, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mYoutubeAuthorizationState:Ljava/lang/String;
 
-    .line 3150
+    .line 3183
     invoke-static {p1}, Ljp/co/sony/mc/camera/util/AppDataCryptoUtility;->encrypt(Ljava/io/Serializable;)Ljava/lang/String;
 
     move-result-object p1
 
-    .line 3155
+    .line 3188
     iget-object p0, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mPreferences:Ljp/co/sony/mc/camera/setting/CameraProPreferences;
 
-    sget-object v1, Ljp/co/sony/mc/camera/setting/CommonSettings;->YOUTUBE_AUTHORIZATION_STATE:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
+    sget-object v3, Ljp/co/sony/mc/camera/setting/CommonSettings;->YOUTUBE_AUTHORIZATION_STATE:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
 
-    invoke-virtual {p0, v1, p1}, Ljp/co/sony/mc/camera/setting/CameraProPreferences;->set(Ljp/co/sony/mc/camera/setting/SettingKey$Key;Ljava/lang/Object;)V
-    :try_end_0
-    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
+    invoke-virtual {p0, v3, p1}, Ljp/co/sony/mc/camera/setting/CameraProPreferences;->set(Ljp/co/sony/mc/camera/setting/SettingKey$Key;Ljava/lang/Object;)V
+    :try_end_1
+    .catch Ljava/lang/Exception; {:try_start_1 .. :try_end_1} :catch_1
 
-    goto :goto_0
+    goto :goto_2
 
-    .line 3159
     :catch_0
-    const-string/jumbo p0, "setYoutubeAuthorizationState() encrypt: Exception"
+    move v2, v1
 
-    filled-new-array {p0}, [Ljava/lang/String;
+    .line 3192
+    :catch_1
+    new-array p0, v0, [Ljava/lang/String;
 
-    move-result-object p0
+    const-string/jumbo p1, "setYoutubeAuthorizationState() encrypt: Exception"
+
+    aput-object p1, p0, v1
 
     invoke-static {p0}, Ljp/co/sony/mc/camera/util/CamLog;->e([Ljava/lang/String;)V
 
     :cond_2
-    :goto_0
-    return v0
+    :goto_2
+    return v2
 .end method
 
 .method private setYoutubeLiveChatIdKey(Ljava/lang/String;)Z
-    .locals 2
+    .locals 4
 
-    const/4 v0, 0x0
-
-    .line 2962
-    :try_start_0
-    iget-object v1, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mYoutubeLiveChatIdKey:Ljava/lang/String;
-
-    if-eqz v1, :cond_0
-
-    .line 2963
-    invoke-virtual {v1, p1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    move-result v1
-
-    if-nez v1, :cond_1
-
-    :cond_0
     const/4 v0, 0x1
 
-    :cond_1
-    if-eqz v0, :cond_2
+    const/4 v1, 0x0
 
-    .line 2965
+    .line 2995
+    :try_start_0
+    iget-object v2, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mYoutubeLiveChatIdKey:Ljava/lang/String;
+
+    if-eqz v2, :cond_1
+
+    .line 2996
+    invoke-virtual {v2, p1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v2
+    :try_end_0
+    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
+
+    if-nez v2, :cond_0
+
+    goto :goto_0
+
+    :cond_0
+    move v2, v1
+
+    goto :goto_1
+
+    :cond_1
+    :goto_0
+    move v2, v0
+
+    :goto_1
+    if-eqz v2, :cond_2
+
+    .line 2998
+    :try_start_1
     iput-object p1, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mYoutubeLiveChatIdKey:Ljava/lang/String;
 
-    .line 2969
+    .line 3002
     invoke-static {p1}, Ljp/co/sony/mc/camera/util/AppDataCryptoUtility;->encrypt(Ljava/io/Serializable;)Ljava/lang/String;
 
     move-result-object p1
 
-    .line 2974
+    .line 3007
     iget-object p0, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mPreferences:Ljp/co/sony/mc/camera/setting/CameraProPreferences;
 
-    sget-object v1, Ljp/co/sony/mc/camera/setting/CommonSettings;->YOUTUBE_LIVE_CHAT_ID_KEY:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
+    sget-object v3, Ljp/co/sony/mc/camera/setting/CommonSettings;->YOUTUBE_LIVE_CHAT_ID_KEY:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
 
-    invoke-virtual {p0, v1, p1}, Ljp/co/sony/mc/camera/setting/CameraProPreferences;->set(Ljp/co/sony/mc/camera/setting/SettingKey$Key;Ljava/lang/Object;)V
-    :try_end_0
-    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
+    invoke-virtual {p0, v3, p1}, Ljp/co/sony/mc/camera/setting/CameraProPreferences;->set(Ljp/co/sony/mc/camera/setting/SettingKey$Key;Ljava/lang/Object;)V
+    :try_end_1
+    .catch Ljava/lang/Exception; {:try_start_1 .. :try_end_1} :catch_1
 
-    goto :goto_0
+    goto :goto_2
 
-    .line 2978
     :catch_0
-    const-string/jumbo p0, "setYoutubeStreamIdKey() encrypt: Exception"
+    move v2, v1
 
-    filled-new-array {p0}, [Ljava/lang/String;
+    .line 3011
+    :catch_1
+    new-array p0, v0, [Ljava/lang/String;
 
-    move-result-object p0
+    const-string/jumbo p1, "setYoutubeStreamIdKey() encrypt: Exception"
+
+    aput-object p1, p0, v1
 
     invoke-static {p0}, Ljp/co/sony/mc/camera/util/CamLog;->e([Ljava/lang/String;)V
 
     :cond_2
-    :goto_0
-    return v0
+    :goto_2
+    return v2
 .end method
 
 .method private setYoutubeLiveEvent(Ljava/lang/String;)Z
-    .locals 2
+    .locals 4
 
-    const/4 v0, 0x0
-
-    .line 3097
-    :try_start_0
-    iget-object v1, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mYoutubeLiveEvent:Ljava/lang/String;
-
-    if-eqz v1, :cond_0
-
-    invoke-virtual {v1, p1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    move-result v1
-
-    if-nez v1, :cond_1
-
-    :cond_0
     const/4 v0, 0x1
 
-    :cond_1
-    if-eqz v0, :cond_2
+    const/4 v1, 0x0
 
-    .line 3099
+    .line 3130
+    :try_start_0
+    iget-object v2, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mYoutubeLiveEvent:Ljava/lang/String;
+
+    if-eqz v2, :cond_1
+
+    invoke-virtual {v2, p1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v2
+    :try_end_0
+    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
+
+    if-nez v2, :cond_0
+
+    goto :goto_0
+
+    :cond_0
+    move v2, v1
+
+    goto :goto_1
+
+    :cond_1
+    :goto_0
+    move v2, v0
+
+    :goto_1
+    if-eqz v2, :cond_2
+
+    .line 3132
+    :try_start_1
     iput-object p1, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mYoutubeLiveEvent:Ljava/lang/String;
 
-    .line 3102
+    .line 3135
     invoke-static {p1}, Ljp/co/sony/mc/camera/util/AppDataCryptoUtility;->encrypt(Ljava/io/Serializable;)Ljava/lang/String;
 
     move-result-object p1
 
-    .line 3107
+    .line 3140
     iget-object p0, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mPreferences:Ljp/co/sony/mc/camera/setting/CameraProPreferences;
 
-    sget-object v1, Ljp/co/sony/mc/camera/setting/CommonSettings;->YOUTUBE_LIVE_EVENT:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
+    sget-object v3, Ljp/co/sony/mc/camera/setting/CommonSettings;->YOUTUBE_LIVE_EVENT:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
 
-    invoke-virtual {p0, v1, p1}, Ljp/co/sony/mc/camera/setting/CameraProPreferences;->set(Ljp/co/sony/mc/camera/setting/SettingKey$Key;Ljava/lang/Object;)V
-    :try_end_0
-    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
+    invoke-virtual {p0, v3, p1}, Ljp/co/sony/mc/camera/setting/CameraProPreferences;->set(Ljp/co/sony/mc/camera/setting/SettingKey$Key;Ljava/lang/Object;)V
+    :try_end_1
+    .catch Ljava/lang/Exception; {:try_start_1 .. :try_end_1} :catch_1
 
-    goto :goto_0
+    goto :goto_2
 
-    .line 3111
     :catch_0
-    const-string/jumbo p0, "setYoutubeLiveEvent() encrypt: Exception"
+    move v2, v1
 
-    filled-new-array {p0}, [Ljava/lang/String;
+    .line 3144
+    :catch_1
+    new-array p0, v0, [Ljava/lang/String;
 
-    move-result-object p0
+    const-string/jumbo p1, "setYoutubeLiveEvent() encrypt: Exception"
+
+    aput-object p1, p0, v1
 
     invoke-static {p0}, Ljp/co/sony/mc/camera/util/CamLog;->e([Ljava/lang/String;)V
 
     :cond_2
-    :goto_0
-    return v0
+    :goto_2
+    return v2
 .end method
 
 .method private setYoutubeLiveId(Ljava/lang/String;)Z
-    .locals 2
+    .locals 4
 
-    const/4 v0, 0x0
-
-    .line 3008
-    :try_start_0
-    iget-object v1, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mYoutubeLiveId:Ljava/lang/String;
-
-    if-eqz v1, :cond_0
-
-    invoke-virtual {v1, p1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    move-result v1
-
-    if-nez v1, :cond_1
-
-    :cond_0
     const/4 v0, 0x1
 
-    :cond_1
-    if-eqz v0, :cond_2
+    const/4 v1, 0x0
 
-    .line 3010
+    .line 3041
+    :try_start_0
+    iget-object v2, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mYoutubeLiveId:Ljava/lang/String;
+
+    if-eqz v2, :cond_1
+
+    invoke-virtual {v2, p1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v2
+    :try_end_0
+    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
+
+    if-nez v2, :cond_0
+
+    goto :goto_0
+
+    :cond_0
+    move v2, v1
+
+    goto :goto_1
+
+    :cond_1
+    :goto_0
+    move v2, v0
+
+    :goto_1
+    if-eqz v2, :cond_2
+
+    .line 3043
+    :try_start_1
     iput-object p1, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mYoutubeLiveId:Ljava/lang/String;
 
-    .line 3013
+    .line 3046
     invoke-static {p1}, Ljp/co/sony/mc/camera/util/AppDataCryptoUtility;->encrypt(Ljava/io/Serializable;)Ljava/lang/String;
 
     move-result-object p1
 
-    .line 3018
+    .line 3051
     iget-object p0, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mPreferences:Ljp/co/sony/mc/camera/setting/CameraProPreferences;
 
-    sget-object v1, Ljp/co/sony/mc/camera/setting/CommonSettings;->YOUTUBE_LIVE_ID:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
+    sget-object v3, Ljp/co/sony/mc/camera/setting/CommonSettings;->YOUTUBE_LIVE_ID:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
 
-    invoke-virtual {p0, v1, p1}, Ljp/co/sony/mc/camera/setting/CameraProPreferences;->set(Ljp/co/sony/mc/camera/setting/SettingKey$Key;Ljava/lang/Object;)V
-    :try_end_0
-    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
+    invoke-virtual {p0, v3, p1}, Ljp/co/sony/mc/camera/setting/CameraProPreferences;->set(Ljp/co/sony/mc/camera/setting/SettingKey$Key;Ljava/lang/Object;)V
+    :try_end_1
+    .catch Ljava/lang/Exception; {:try_start_1 .. :try_end_1} :catch_1
 
-    goto :goto_0
+    goto :goto_2
 
-    .line 3022
     :catch_0
-    const-string/jumbo p0, "setYoutubeLiveId() encrypt: Exception"
+    move v2, v1
 
-    filled-new-array {p0}, [Ljava/lang/String;
+    .line 3055
+    :catch_1
+    new-array p0, v0, [Ljava/lang/String;
 
-    move-result-object p0
+    const-string/jumbo p1, "setYoutubeLiveId() encrypt: Exception"
+
+    aput-object p1, p0, v1
 
     invoke-static {p0}, Ljp/co/sony/mc/camera/util/CamLog;->e([Ljava/lang/String;)V
 
     :cond_2
-    :goto_0
-    return v0
+    :goto_2
+    return v2
 .end method
 
 .method private setYoutubeStreamIdKey(Ljava/lang/String;)Z
-    .locals 2
+    .locals 4
 
-    const/4 v0, 0x0
-
-    .line 2915
-    :try_start_0
-    iget-object v1, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mYoutubeStreamIdKey:Ljava/lang/String;
-
-    if-eqz v1, :cond_0
-
-    .line 2916
-    invoke-virtual {v1, p1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    move-result v1
-
-    if-nez v1, :cond_1
-
-    :cond_0
     const/4 v0, 0x1
 
-    :cond_1
-    if-eqz v0, :cond_2
+    const/4 v1, 0x0
 
-    .line 2918
+    .line 2948
+    :try_start_0
+    iget-object v2, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mYoutubeStreamIdKey:Ljava/lang/String;
+
+    if-eqz v2, :cond_1
+
+    .line 2949
+    invoke-virtual {v2, p1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v2
+    :try_end_0
+    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
+
+    if-nez v2, :cond_0
+
+    goto :goto_0
+
+    :cond_0
+    move v2, v1
+
+    goto :goto_1
+
+    :cond_1
+    :goto_0
+    move v2, v0
+
+    :goto_1
+    if-eqz v2, :cond_2
+
+    .line 2951
+    :try_start_1
     iput-object p1, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mYoutubeStreamIdKey:Ljava/lang/String;
 
-    .line 2921
+    .line 2954
     invoke-static {p1}, Ljp/co/sony/mc/camera/util/AppDataCryptoUtility;->encrypt(Ljava/io/Serializable;)Ljava/lang/String;
 
     move-result-object p1
 
-    .line 2926
+    .line 2959
     iget-object p0, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mPreferences:Ljp/co/sony/mc/camera/setting/CameraProPreferences;
 
-    sget-object v1, Ljp/co/sony/mc/camera/setting/CommonSettings;->YOUTUBE_STREAM_ID_KEY:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
+    sget-object v3, Ljp/co/sony/mc/camera/setting/CommonSettings;->YOUTUBE_STREAM_ID_KEY:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
 
-    invoke-virtual {p0, v1, p1}, Ljp/co/sony/mc/camera/setting/CameraProPreferences;->set(Ljp/co/sony/mc/camera/setting/SettingKey$Key;Ljava/lang/Object;)V
-    :try_end_0
-    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
+    invoke-virtual {p0, v3, p1}, Ljp/co/sony/mc/camera/setting/CameraProPreferences;->set(Ljp/co/sony/mc/camera/setting/SettingKey$Key;Ljava/lang/Object;)V
+    :try_end_1
+    .catch Ljava/lang/Exception; {:try_start_1 .. :try_end_1} :catch_1
 
-    goto :goto_0
+    goto :goto_2
 
-    .line 2930
     :catch_0
-    const-string/jumbo p0, "setYoutubeStreamIdKey() encrypt: Exception"
+    move v2, v1
 
-    filled-new-array {p0}, [Ljava/lang/String;
+    .line 2963
+    :catch_1
+    new-array p0, v0, [Ljava/lang/String;
 
-    move-result-object p0
+    const-string/jumbo p1, "setYoutubeStreamIdKey() encrypt: Exception"
+
+    aput-object p1, p0, v1
 
     invoke-static {p0}, Ljp/co/sony/mc/camera/util/CamLog;->e([Ljava/lang/String;)V
 
     :cond_2
-    :goto_0
-    return v0
+    :goto_2
+    return v2
 .end method
 
 .method private setYoutubeStreamKey(Ljava/lang/String;)Z
-    .locals 2
+    .locals 4
 
-    const/4 v0, 0x0
-
-    .line 2869
-    :try_start_0
-    iget-object v1, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mYoutubeStreamKey:Ljava/lang/String;
-
-    if-eqz v1, :cond_0
-
-    invoke-virtual {v1, p1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    move-result v1
-
-    if-nez v1, :cond_1
-
-    :cond_0
     const/4 v0, 0x1
 
-    :cond_1
-    if-eqz v0, :cond_2
+    const/4 v1, 0x0
 
-    .line 2871
+    .line 2902
+    :try_start_0
+    iget-object v2, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mYoutubeStreamKey:Ljava/lang/String;
+
+    if-eqz v2, :cond_1
+
+    invoke-virtual {v2, p1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v2
+    :try_end_0
+    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
+
+    if-nez v2, :cond_0
+
+    goto :goto_0
+
+    :cond_0
+    move v2, v1
+
+    goto :goto_1
+
+    :cond_1
+    :goto_0
+    move v2, v0
+
+    :goto_1
+    if-eqz v2, :cond_2
+
+    .line 2904
+    :try_start_1
     iput-object p1, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mYoutubeStreamKey:Ljava/lang/String;
 
-    .line 2874
+    .line 2907
     invoke-static {p1}, Ljp/co/sony/mc/camera/util/AppDataCryptoUtility;->encrypt(Ljava/io/Serializable;)Ljava/lang/String;
 
     move-result-object p1
 
-    .line 2879
+    .line 2912
     iget-object p0, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mPreferences:Ljp/co/sony/mc/camera/setting/CameraProPreferences;
 
-    sget-object v1, Ljp/co/sony/mc/camera/setting/CommonSettings;->YOUTUBE_STREAM_KEY:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
+    sget-object v3, Ljp/co/sony/mc/camera/setting/CommonSettings;->YOUTUBE_STREAM_KEY:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
 
-    invoke-virtual {p0, v1, p1}, Ljp/co/sony/mc/camera/setting/CameraProPreferences;->set(Ljp/co/sony/mc/camera/setting/SettingKey$Key;Ljava/lang/Object;)V
-    :try_end_0
-    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
+    invoke-virtual {p0, v3, p1}, Ljp/co/sony/mc/camera/setting/CameraProPreferences;->set(Ljp/co/sony/mc/camera/setting/SettingKey$Key;Ljava/lang/Object;)V
+    :try_end_1
+    .catch Ljava/lang/Exception; {:try_start_1 .. :try_end_1} :catch_1
 
-    goto :goto_0
+    goto :goto_2
 
-    .line 2883
     :catch_0
-    const-string/jumbo p0, "setYoutubeStreamKey() encrypt: Exception"
+    move v2, v1
 
-    filled-new-array {p0}, [Ljava/lang/String;
+    .line 2916
+    :catch_1
+    new-array p0, v0, [Ljava/lang/String;
 
-    move-result-object p0
+    const-string/jumbo p1, "setYoutubeStreamKey() encrypt: Exception"
+
+    aput-object p1, p0, v1
 
     invoke-static {p0}, Ljp/co/sony/mc/camera/util/CamLog;->e([Ljava/lang/String;)V
 
     :cond_2
-    :goto_0
-    return v0
+    :goto_2
+    return v2
 .end method
 
 .method private setYoutubeStreamUrl(Ljava/lang/String;)Z
-    .locals 2
+    .locals 4
 
-    const/4 v0, 0x0
-
-    .line 2824
-    :try_start_0
-    iget-object v1, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mYoutubeStreamUrl:Ljava/lang/String;
-
-    if-eqz v1, :cond_0
-
-    invoke-virtual {v1, p1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    move-result v1
-
-    if-nez v1, :cond_1
-
-    :cond_0
     const/4 v0, 0x1
 
-    :cond_1
-    if-eqz v0, :cond_2
+    const/4 v1, 0x0
 
-    .line 2826
+    .line 2857
+    :try_start_0
+    iget-object v2, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mYoutubeStreamUrl:Ljava/lang/String;
+
+    if-eqz v2, :cond_1
+
+    invoke-virtual {v2, p1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v2
+    :try_end_0
+    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
+
+    if-nez v2, :cond_0
+
+    goto :goto_0
+
+    :cond_0
+    move v2, v1
+
+    goto :goto_1
+
+    :cond_1
+    :goto_0
+    move v2, v0
+
+    :goto_1
+    if-eqz v2, :cond_2
+
+    .line 2859
+    :try_start_1
     iput-object p1, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mYoutubeStreamUrl:Ljava/lang/String;
 
-    .line 2829
+    .line 2862
     invoke-static {p1}, Ljp/co/sony/mc/camera/util/AppDataCryptoUtility;->encrypt(Ljava/io/Serializable;)Ljava/lang/String;
 
     move-result-object p1
 
-    .line 2834
+    .line 2867
     iget-object p0, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mPreferences:Ljp/co/sony/mc/camera/setting/CameraProPreferences;
 
-    sget-object v1, Ljp/co/sony/mc/camera/setting/CommonSettings;->YOUTUBE_STREAM_URL:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
+    sget-object v3, Ljp/co/sony/mc/camera/setting/CommonSettings;->YOUTUBE_STREAM_URL:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
 
-    invoke-virtual {p0, v1, p1}, Ljp/co/sony/mc/camera/setting/CameraProPreferences;->set(Ljp/co/sony/mc/camera/setting/SettingKey$Key;Ljava/lang/Object;)V
-    :try_end_0
-    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
+    invoke-virtual {p0, v3, p1}, Ljp/co/sony/mc/camera/setting/CameraProPreferences;->set(Ljp/co/sony/mc/camera/setting/SettingKey$Key;Ljava/lang/Object;)V
+    :try_end_1
+    .catch Ljava/lang/Exception; {:try_start_1 .. :try_end_1} :catch_1
 
-    goto :goto_0
+    goto :goto_2
 
-    .line 2838
     :catch_0
-    const-string/jumbo p0, "setYoutubeStreamUrl() encrypt: Exception"
+    move v2, v1
 
-    filled-new-array {p0}, [Ljava/lang/String;
+    .line 2871
+    :catch_1
+    new-array p0, v0, [Ljava/lang/String;
 
-    move-result-object p0
+    const-string/jumbo p1, "setYoutubeStreamUrl() encrypt: Exception"
+
+    aput-object p1, p0, v1
 
     invoke-static {p0}, Ljp/co/sony/mc/camera/util/CamLog;->e([Ljava/lang/String;)V
 
     :cond_2
-    :goto_0
-    return v0
+    :goto_2
+    return v2
 .end method
 
 
@@ -7697,7 +8131,7 @@
 .method apply()V
     .locals 0
 
-    .line 2007
+    .line 2032
     iget-object p0, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mPreferences:Ljp/co/sony/mc/camera/setting/CameraProPreferences;
 
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/setting/CameraProPreferences;->apply()V
@@ -7708,12 +8142,12 @@
 .method getCapturingMode()Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
     .locals 1
 
-    .line 2297
+    .line 2326
     iget-object v0, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mCapturingMode:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
     if-nez v0, :cond_0
 
-    .line 2298
+    .line 2327
     sget-object v0, Ljp/co/sony/mc/camera/setting/CommonSettings;->CAPTURING_MODE:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
 
     invoke-virtual {p0, v0}, Ljp/co/sony/mc/camera/setting/CommonSettings;->getDefaultValue(Ljp/co/sony/mc/camera/setting/SettingKey$Key;)Ljava/lang/Object;
@@ -7724,7 +8158,7 @@
 
     iput-object v0, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mCapturingMode:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
-    .line 2300
+    .line 2329
     :cond_0
     iget-object p0, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mCapturingMode:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
@@ -7744,7 +8178,7 @@
         }
     .end annotation
 
-    .line 1992
+    .line 2017
     sget-object p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->sGetDefaultCommandMap:Ljava/util/HashMap;
 
     invoke-virtual {p0, p1}, Ljava/util/HashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
@@ -7759,12 +8193,12 @@
 .method getDispFlip()Ljp/co/sony/mc/camera/configuration/parameters/DisplayFlip;
     .locals 3
 
-    .line 2312
+    .line 2341
     iget-object v0, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mDisplayFlip:Ljp/co/sony/mc/camera/configuration/parameters/DisplayFlip;
 
     if-nez v0, :cond_0
 
-    .line 2313
+    .line 2342
     iget-object v0, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mPreferences:Ljp/co/sony/mc/camera/setting/CameraProPreferences;
 
     sget-object v1, Ljp/co/sony/mc/camera/setting/CommonSettings;->DISP_FLIP:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
@@ -7783,7 +8217,7 @@
 
     iput-object v0, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mDisplayFlip:Ljp/co/sony/mc/camera/configuration/parameters/DisplayFlip;
 
-    .line 2315
+    .line 2344
     :cond_0
     iget-object p0, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mDisplayFlip:Ljp/co/sony/mc/camera/configuration/parameters/DisplayFlip;
 
@@ -7793,12 +8227,12 @@
 .method getFingerPrint()Ljava/lang/String;
     .locals 3
 
-    .line 2261
+    .line 2290
     iget-object v0, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mFingerPrint:Ljava/lang/String;
 
     if-nez v0, :cond_0
 
-    .line 2262
+    .line 2291
     iget-object v0, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mPreferences:Ljp/co/sony/mc/camera/setting/CameraProPreferences;
 
     sget-object v1, Ljp/co/sony/mc/camera/setting/CommonSettings;->FINGER_PRINT:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
@@ -7813,7 +8247,7 @@
 
     iput-object v0, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mFingerPrint:Ljava/lang/String;
 
-    .line 2264
+    .line 2293
     :cond_0
     iget-object p0, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mFingerPrint:Ljava/lang/String;
 
@@ -7833,7 +8267,7 @@
         }
     .end annotation
 
-    .line 1977
+    .line 2002
     sget-object p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->sGetCommandMap:Ljava/util/HashMap;
 
     invoke-virtual {p0, p1}, Ljava/util/HashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
@@ -7858,7 +8292,7 @@
         }
     .end annotation
 
-    .line 1987
+    .line 2012
     sget-object p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->sGetOptionsCommandMap:Ljava/util/HashMap;
 
     invoke-virtual {p0, p1}, Ljava/util/HashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
@@ -7873,24 +8307,24 @@
 .method getLastBackVideoFps()Ljp/co/sony/mc/camera/configuration/parameters/LastBackVideoFps;
     .locals 3
 
-    .line 2328
+    .line 2357
     iget-object v0, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mLastBackVideoFps:Ljp/co/sony/mc/camera/configuration/parameters/LastBackVideoFps;
 
     if-nez v0, :cond_0
 
-    .line 2329
+    .line 2358
     iget-object v0, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mPreferences:Ljp/co/sony/mc/camera/setting/CameraProPreferences;
 
     sget-object v1, Ljp/co/sony/mc/camera/setting/CommonSettings;->LAST_BACK_VIDEO_FPS:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
 
-    .line 2330
+    .line 2359
     invoke-virtual {p0, v1}, Ljp/co/sony/mc/camera/setting/CommonSettings;->getDefaultValue(Ljp/co/sony/mc/camera/setting/SettingKey$Key;)Ljava/lang/Object;
 
     move-result-object v2
 
     check-cast v2, Ljp/co/sony/mc/camera/configuration/parameters/LastBackVideoFps;
 
-    .line 2329
+    .line 2358
     invoke-virtual {v0, v1, v2}, Ljp/co/sony/mc/camera/setting/CameraProPreferences;->get(Ljp/co/sony/mc/camera/setting/SettingKey$Key;Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v0
@@ -7899,7 +8333,7 @@
 
     iput-object v0, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mLastBackVideoFps:Ljp/co/sony/mc/camera/configuration/parameters/LastBackVideoFps;
 
-    .line 2332
+    .line 2361
     :cond_0
     iget-object p0, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mLastBackVideoFps:Ljp/co/sony/mc/camera/configuration/parameters/LastBackVideoFps;
 
@@ -7909,12 +8343,12 @@
 .method getLevelCalibration()Ljava/lang/Float;
     .locals 3
 
-    .line 2281
+    .line 2310
     iget-object v0, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mCalibration:Ljava/lang/Float;
 
     if-nez v0, :cond_0
 
-    .line 2282
+    .line 2311
     iget-object v0, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mPreferences:Ljp/co/sony/mc/camera/setting/CameraProPreferences;
 
     sget-object v1, Ljp/co/sony/mc/camera/setting/CommonSettings;->LEVEL_CALIBRATION_OFFSET:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
@@ -7933,7 +8367,7 @@
 
     iput-object v0, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mCalibration:Ljava/lang/Float;
 
-    .line 2284
+    .line 2313
     :cond_0
     iget-object p0, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mCalibration:Ljava/lang/Float;
 
@@ -7952,12 +8386,12 @@
         }
     .end annotation
 
-    .line 2217
+    .line 2246
     iget-object v0, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mCapturingMode:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
     if-nez v0, :cond_0
 
-    .line 2218
+    .line 2247
     sget-object v0, Ljp/co/sony/mc/camera/setting/CommonSettings;->CAPTURING_MODE:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
 
     invoke-virtual {p0, v0}, Ljp/co/sony/mc/camera/setting/CommonSettings;->getDefaultValue(Ljp/co/sony/mc/camera/setting/SettingKey$Key;)Ljava/lang/Object;
@@ -7968,13 +8402,13 @@
 
     iput-object v0, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mCapturingMode:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
-    .line 2220
+    .line 2249
     :cond_0
     iget-object v0, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mCameraId:Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;
 
     if-nez v0, :cond_1
 
-    .line 2221
+    .line 2250
     sget-object v0, Ljp/co/sony/mc/camera/setting/CommonSettings;->CAMERA_ID:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
 
     invoke-virtual {p0, v0}, Ljp/co/sony/mc/camera/setting/CommonSettings;->getDefaultValue(Ljp/co/sony/mc/camera/setting/SettingKey$Key;)Ljava/lang/Object;
@@ -7985,7 +8419,7 @@
 
     iput-object v0, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mCameraId:Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;
 
-    .line 2223
+    .line 2252
     :cond_1
     new-instance v0, Landroid/util/Pair;
 
@@ -8011,7 +8445,7 @@
         }
     .end annotation
 
-    .line 1982
+    .line 2007
     sget-object p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->sSetCommandMap:Ljava/util/HashMap;
 
     invoke-virtual {p0, p1}, Ljava/util/HashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
@@ -8026,12 +8460,12 @@
 .method getSettingVersion()Ljava/lang/Integer;
     .locals 4
 
-    .line 2241
+    .line 2270
     iget-object v0, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mSettingVersionCode:Ljava/lang/Integer;
 
     if-nez v0, :cond_0
 
-    .line 2243
+    .line 2272
     iget-object v0, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mPreferences:Ljp/co/sony/mc/camera/setting/CameraProPreferences;
 
     sget-object v1, Ljp/co/sony/mc/camera/setting/CommonSettings;->SETTING_VERSION:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
@@ -8050,17 +8484,17 @@
 
     if-eqz v0, :cond_0
 
-    .line 2244
+    .line 2273
     invoke-virtual {v0}, Ljava/lang/Integer;->intValue()I
 
     move-result v1
 
     if-eq v1, v2, :cond_0
 
-    .line 2245
+    .line 2274
     iput-object v0, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mSettingVersionCode:Ljava/lang/Integer;
 
-    .line 2248
+    .line 2277
     :cond_0
     iget-object p0, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mSettingVersionCode:Ljava/lang/Integer;
 
@@ -8068,27 +8502,31 @@
 .end method
 
 .method loadAll()V
-    .locals 4
+    .locals 7
 
-    .line 2016
+    .line 2041
     invoke-static {}, Landroid/os/SystemClock;->uptimeMillis()J
 
     move-result-wide v0
 
-    .line 2017
+    .line 2042
     sget-boolean v2, Ljp/co/sony/mc/camera/util/CamLog;->DEBUG:Z
+
+    const/4 v3, 0x0
+
+    const/4 v4, 0x1
 
     if-eqz v2, :cond_0
 
-    const-string v2, "E"
+    new-array v2, v4, [Ljava/lang/String;
 
-    filled-new-array {v2}, [Ljava/lang/String;
+    const-string v5, "E"
 
-    move-result-object v2
+    aput-object v5, v2, v3
 
     invoke-static {v2}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
-    .line 2018
+    .line 2043
     :cond_0
     iget-object p0, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mPreferences:Ljp/co/sony/mc/camera/setting/CameraProPreferences;
 
@@ -8096,7 +8534,7 @@
 
     move-result-object p0
 
-    .line 2019
+    .line 2044
     invoke-interface {p0}, Ljava/util/Map;->entrySet()Ljava/util/Set;
 
     move-result-object p0
@@ -8118,47 +8556,47 @@
 
     check-cast v2, Ljava/util/Map$Entry;
 
-    .line 2020
+    .line 2045
     invoke-interface {v2}, Ljava/util/Map$Entry;->getValue()Ljava/lang/Object;
 
     goto :goto_0
 
-    .line 2030
+    .line 2055
     :cond_1
     invoke-static {}, Landroid/os/SystemClock;->uptimeMillis()J
 
-    move-result-wide v2
+    move-result-wide v5
 
-    sub-long/2addr v2, v0
+    sub-long/2addr v5, v0
 
-    .line 2031
+    .line 2056
     sget-boolean p0, Ljp/co/sony/mc/camera/util/CamLog;->DEBUG:Z
 
     if-eqz p0, :cond_2
 
-    new-instance p0, Ljava/lang/StringBuilder;
+    new-array p0, v4, [Ljava/lang/String;
 
-    const-string v0, "X: elapsed time "
+    new-instance v0, Ljava/lang/StringBuilder;
 
-    invoke-direct {p0, v0}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+    const-string v1, "X: elapsed time "
 
-    invoke-virtual {p0, v2, v3}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
+    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
-    move-result-object p0
+    invoke-virtual {v0, v5, v6}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
 
-    const-string v0, " ms"
+    move-result-object v0
 
-    invoke-virtual {p0, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    const-string v1, " ms"
 
-    move-result-object p0
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {p0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    move-result-object v0
 
-    move-result-object p0
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    filled-new-array {p0}, [Ljava/lang/String;
+    move-result-object v0
 
-    move-result-object p0
+    aput-object v0, p0, v3
 
     invoke-static {p0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
@@ -8171,10 +8609,10 @@
 
     const/4 v0, 0x0
 
-    .line 2276
+    .line 2305
     iput-object v0, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mFingerPrint:Ljava/lang/String;
 
-    .line 2277
+    .line 2306
     iget-object p0, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mPreferences:Ljp/co/sony/mc/camera/setting/CameraProPreferences;
 
     sget-object v0, Ljp/co/sony/mc/camera/setting/CommonSettings;->FINGER_PRINT:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
@@ -8200,14 +8638,14 @@
         }
     .end annotation
 
-    .line 1998
+    .line 2023
     invoke-super {p0, p1, p2, p3}, Ljp/co/sony/mc/camera/setting/SettingsBase;->set(Ljp/co/sony/mc/camera/setting/SettingKey$Key;Ljava/lang/Object;Ljava/util/Map;)Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
-    .line 2000
+    .line 2025
     invoke-direct {p0, p1, p2, p3}, Ljp/co/sony/mc/camera/setting/CommonSettings;->onSettingChanged(Ljp/co/sony/mc/camera/setting/SettingKey$Key;Ljava/lang/Object;Ljava/util/Map;)V
 
     const/4 p0, 0x1
@@ -8223,7 +8661,7 @@
 .method setCapturingMode(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;)Z
     .locals 1
 
-    .line 2304
+    .line 2333
     iget-object v0, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mCapturingMode:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
     if-eq v0, p1, :cond_0
@@ -8238,7 +8676,7 @@
     :goto_0
     if-eqz v0, :cond_1
 
-    .line 2306
+    .line 2335
     iput-object p1, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mCapturingMode:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
     :cond_1
@@ -8250,12 +8688,12 @@
 
     if-nez p1, :cond_0
 
-    .line 2036
+    .line 2061
     iget-object v0, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mCapturingMode:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
     if-nez v0, :cond_1
 
-    .line 2037
+    .line 2062
     :cond_0
     sget-object v0, Ljp/co/sony/mc/camera/setting/CommonSettings;->CAPTURING_MODE:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
 
@@ -8270,12 +8708,12 @@
     :cond_1
     if-nez p1, :cond_2
 
-    .line 2039
+    .line 2064
     iget-object v0, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mLastCapturingMode:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
     if-nez v0, :cond_3
 
-    .line 2040
+    .line 2065
     :cond_2
     sget-object v0, Ljp/co/sony/mc/camera/setting/CommonSettings;->LAST_CAPTURING_MODE:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
 
@@ -8290,12 +8728,12 @@
     :cond_3
     if-nez p1, :cond_4
 
-    .line 2042
+    .line 2067
     iget-object v0, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mCameraId:Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;
 
     if-nez v0, :cond_5
 
-    .line 2043
+    .line 2068
     :cond_4
     sget-object v0, Ljp/co/sony/mc/camera/setting/CommonSettings;->CAMERA_ID:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
 
@@ -8310,12 +8748,12 @@
     :cond_5
     if-nez p1, :cond_6
 
-    .line 2045
+    .line 2070
     iget-object v0, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mLastCameraId:Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;
 
     if-nez v0, :cond_7
 
-    .line 2046
+    .line 2071
     :cond_6
     sget-object v0, Ljp/co/sony/mc/camera/setting/CommonSettings;->LAST_CAMERA_ID:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
 
@@ -8330,12 +8768,12 @@
     :cond_7
     if-nez p1, :cond_8
 
-    .line 2048
+    .line 2073
     iget-object v0, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mMemoryRecallData:Ljp/co/sony/mc/camera/configuration/parameters/MemoryRecallData;
 
     if-nez v0, :cond_9
 
-    .line 2049
+    .line 2074
     :cond_8
     sget-object v0, Ljp/co/sony/mc/camera/setting/CommonSettings;->MEMORY_RECALL_DATA:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
 
@@ -8347,7 +8785,7 @@
 
     iput-object v1, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mMemoryRecallData:Ljp/co/sony/mc/camera/configuration/parameters/MemoryRecallData;
 
-    .line 2050
+    .line 2075
     iget-object v1, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mPreferences:Ljp/co/sony/mc/camera/setting/CameraProPreferences;
 
     iget-object v2, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mMemoryRecallData:Ljp/co/sony/mc/camera/configuration/parameters/MemoryRecallData;
@@ -8357,12 +8795,12 @@
     :cond_9
     if-nez p1, :cond_a
 
-    .line 2052
+    .line 2077
     iget-object v0, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mCameraIdOnMr:Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;
 
     if-nez v0, :cond_b
 
-    .line 2053
+    .line 2078
     :cond_a
     sget-object v0, Ljp/co/sony/mc/camera/setting/CommonSettings;->CAMERA_ID_ON_MR:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
 
@@ -8374,13 +8812,13 @@
 
     iput-object v0, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mCameraIdOnMr:Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;
 
-    .line 2057
+    .line 2082
     :cond_b
     iget-object v0, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mGeotag:Ljp/co/sony/mc/camera/configuration/parameters/Geotag;
 
     if-nez v0, :cond_c
 
-    .line 2058
+    .line 2083
     sget-object v0, Ljp/co/sony/mc/camera/setting/CommonSettings;->GEOTAG:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
 
     invoke-virtual {p0, v0}, Ljp/co/sony/mc/camera/setting/CommonSettings;->getDefaultValue(Ljp/co/sony/mc/camera/setting/SettingKey$Key;)Ljava/lang/Object;
@@ -8391,7 +8829,7 @@
 
     iput-object v1, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mGeotag:Ljp/co/sony/mc/camera/configuration/parameters/Geotag;
 
-    .line 2059
+    .line 2084
     iget-object v1, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mPreferences:Ljp/co/sony/mc/camera/setting/CameraProPreferences;
 
     iget-object v2, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mGeotag:Ljp/co/sony/mc/camera/configuration/parameters/Geotag;
@@ -8401,12 +8839,12 @@
     :cond_c
     if-nez p1, :cond_d
 
-    .line 2061
+    .line 2086
     iget-object v0, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mGridLine:Ljp/co/sony/mc/camera/configuration/parameters/GridLine;
 
     if-nez v0, :cond_e
 
-    .line 2062
+    .line 2087
     :cond_d
     sget-object v0, Ljp/co/sony/mc/camera/setting/CommonSettings;->GRID_LINE:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
 
@@ -8418,7 +8856,7 @@
 
     iput-object v1, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mGridLine:Ljp/co/sony/mc/camera/configuration/parameters/GridLine;
 
-    .line 2063
+    .line 2088
     iget-object v1, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mPreferences:Ljp/co/sony/mc/camera/setting/CameraProPreferences;
 
     iget-object v2, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mGridLine:Ljp/co/sony/mc/camera/configuration/parameters/GridLine;
@@ -8428,7 +8866,7 @@
     :cond_e
     if-eqz p1, :cond_f
 
-    .line 2066
+    .line 2091
     sget-object v0, Ljp/co/sony/mc/camera/setting/CommonSettings;->QUICK_LAUNCH:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
 
     invoke-virtual {p0, v0}, Ljp/co/sony/mc/camera/setting/CommonSettings;->getDefaultValue(Ljp/co/sony/mc/camera/setting/SettingKey$Key;)Ljava/lang/Object;
@@ -8442,12 +8880,12 @@
     :cond_f
     if-nez p1, :cond_10
 
-    .line 2068
+    .line 2093
     iget-object v0, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mSaveDestination:Ljp/co/sony/mc/camera/configuration/parameters/DestinationToSave;
 
     if-nez v0, :cond_11
 
-    .line 2069
+    .line 2094
     :cond_10
     sget-object v0, Ljp/co/sony/mc/camera/setting/CommonSettings;->SAVE_DESTINATION:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
 
@@ -8459,7 +8897,7 @@
 
     iput-object v1, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mSaveDestination:Ljp/co/sony/mc/camera/configuration/parameters/DestinationToSave;
 
-    .line 2070
+    .line 2095
     iget-object v1, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mPreferences:Ljp/co/sony/mc/camera/setting/CameraProPreferences;
 
     iget-object v2, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mSaveDestination:Ljp/co/sony/mc/camera/configuration/parameters/DestinationToSave;
@@ -8469,12 +8907,12 @@
     :cond_11
     if-nez p1, :cond_12
 
-    .line 2072
+    .line 2097
     iget-object v0, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mShutterSound:Ljp/co/sony/mc/camera/configuration/parameters/ShutterSound;
 
     if-nez v0, :cond_13
 
-    .line 2073
+    .line 2098
     :cond_12
     sget-object v0, Ljp/co/sony/mc/camera/setting/CommonSettings;->SHUTTER_SOUND:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
 
@@ -8486,7 +8924,7 @@
 
     iput-object v1, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mShutterSound:Ljp/co/sony/mc/camera/configuration/parameters/ShutterSound;
 
-    .line 2074
+    .line 2099
     iget-object v1, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mPreferences:Ljp/co/sony/mc/camera/setting/CameraProPreferences;
 
     iget-object v2, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mShutterSound:Ljp/co/sony/mc/camera/configuration/parameters/ShutterSound;
@@ -8496,12 +8934,12 @@
     :cond_13
     if-nez p1, :cond_14
 
-    .line 2076
+    .line 2101
     iget-object v0, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mVolumeKey:Ljp/co/sony/mc/camera/configuration/parameters/VolumeKey;
 
     if-nez v0, :cond_15
 
-    .line 2077
+    .line 2102
     :cond_14
     sget-object v0, Ljp/co/sony/mc/camera/setting/CommonSettings;->VOLUME_KEY:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
 
@@ -8513,7 +8951,7 @@
 
     iput-object v1, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mVolumeKey:Ljp/co/sony/mc/camera/configuration/parameters/VolumeKey;
 
-    .line 2078
+    .line 2103
     iget-object v1, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mPreferences:Ljp/co/sony/mc/camera/setting/CameraProPreferences;
 
     iget-object v2, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mVolumeKey:Ljp/co/sony/mc/camera/configuration/parameters/VolumeKey;
@@ -8523,12 +8961,12 @@
     :cond_15
     if-nez p1, :cond_16
 
-    .line 2080
+    .line 2105
     iget-object v0, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mStreamingNotesOnUse:Ljp/co/sony/mc/camera/configuration/parameters/StreamingNotesOnUse;
 
     if-nez v0, :cond_17
 
-    .line 2081
+    .line 2106
     :cond_16
     sget-object v0, Ljp/co/sony/mc/camera/setting/CommonSettings;->STREAMING_NOTES_ON_USE:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
 
@@ -8540,7 +8978,7 @@
 
     iput-object v1, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mStreamingNotesOnUse:Ljp/co/sony/mc/camera/configuration/parameters/StreamingNotesOnUse;
 
-    .line 2082
+    .line 2107
     iget-object v1, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mPreferences:Ljp/co/sony/mc/camera/setting/CameraProPreferences;
 
     iget-object v2, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mStreamingNotesOnUse:Ljp/co/sony/mc/camera/configuration/parameters/StreamingNotesOnUse;
@@ -8550,12 +8988,12 @@
     :cond_17
     if-nez p1, :cond_18
 
-    .line 2084
+    .line 2109
     iget-object v0, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mPrivacyPolicy:Ljp/co/sony/mc/camera/configuration/parameters/PrivacyPolicy;
 
     if-nez v0, :cond_19
 
-    .line 2085
+    .line 2110
     :cond_18
     sget-object v0, Ljp/co/sony/mc/camera/setting/CommonSettings;->PRIVACY_POLICY:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
 
@@ -8567,7 +9005,7 @@
 
     iput-object v1, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mPrivacyPolicy:Ljp/co/sony/mc/camera/configuration/parameters/PrivacyPolicy;
 
-    .line 2086
+    .line 2111
     iget-object v1, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mPreferences:Ljp/co/sony/mc/camera/setting/CameraProPreferences;
 
     iget-object v2, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mPrivacyPolicy:Ljp/co/sony/mc/camera/configuration/parameters/PrivacyPolicy;
@@ -8577,12 +9015,12 @@
     :cond_19
     if-nez p1, :cond_1a
 
-    .line 2088
+    .line 2113
     iget-object v0, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mStreamingPrivacyPolicy:Ljp/co/sony/mc/camera/configuration/parameters/StreamingPrivacyPolicy;
 
     if-nez v0, :cond_1b
 
-    .line 2089
+    .line 2114
     :cond_1a
     sget-object v0, Ljp/co/sony/mc/camera/setting/CommonSettings;->STREAMING_PRIVACY_POLICY:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
 
@@ -8594,7 +9032,7 @@
 
     iput-object v1, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mStreamingPrivacyPolicy:Ljp/co/sony/mc/camera/configuration/parameters/StreamingPrivacyPolicy;
 
-    .line 2090
+    .line 2115
     iget-object v1, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mPreferences:Ljp/co/sony/mc/camera/setting/CameraProPreferences;
 
     iget-object v2, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mStreamingPrivacyPolicy:Ljp/co/sony/mc/camera/configuration/parameters/StreamingPrivacyPolicy;
@@ -8604,12 +9042,12 @@
     :cond_1b
     if-nez p1, :cond_1c
 
-    .line 2092
+    .line 2117
     iget-object v0, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mCalibration:Ljava/lang/Float;
 
     if-nez v0, :cond_1d
 
-    .line 2093
+    .line 2118
     :cond_1c
     sget-object v0, Ljp/co/sony/mc/camera/setting/CommonSettings;->LEVEL_CALIBRATION_OFFSET:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
 
@@ -8621,7 +9059,7 @@
 
     iput-object v1, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mCalibration:Ljava/lang/Float;
 
-    .line 2094
+    .line 2119
     iget-object v1, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mPreferences:Ljp/co/sony/mc/camera/setting/CameraProPreferences;
 
     iget-object v2, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mCalibration:Ljava/lang/Float;
@@ -8631,12 +9069,12 @@
     :cond_1d
     if-nez p1, :cond_1e
 
-    .line 2096
+    .line 2121
     iget-object v0, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mProPhotoDispCustomExtensionData:Ljp/co/sony/mc/camera/configuration/parameters/DispCustomExtensionData;
 
     if-nez v0, :cond_1f
 
-    .line 2097
+    .line 2122
     :cond_1e
     sget-object v0, Ljp/co/sony/mc/camera/setting/CommonSettings;->DISP_CUSTOM_EXTENSION_DATA:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
 
@@ -8648,7 +9086,7 @@
 
     iput-object v1, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mProPhotoDispCustomExtensionData:Ljp/co/sony/mc/camera/configuration/parameters/DispCustomExtensionData;
 
-    .line 2098
+    .line 2123
     iget-object v1, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mPreferences:Ljp/co/sony/mc/camera/setting/CameraProPreferences;
 
     iget-object v2, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mProPhotoDispCustomExtensionData:Ljp/co/sony/mc/camera/configuration/parameters/DispCustomExtensionData;
@@ -8658,16 +9096,16 @@
     :cond_1f
     if-nez p1, :cond_20
 
-    .line 2100
+    .line 2125
     iget-object v0, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mProVideoDispCustomExtensionData:Ljp/co/sony/mc/camera/configuration/parameters/DispCustomExtensionData;
 
     if-nez v0, :cond_21
 
-    .line 2101
+    .line 2126
     :cond_20
     sget-object v0, Ljp/co/sony/mc/camera/setting/CommonSettings;->PRO_VIDEO_DISP_CUSTOM_EXTENSION_DATA:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
 
-    .line 2102
+    .line 2127
     invoke-virtual {p0, v0}, Ljp/co/sony/mc/camera/setting/CommonSettings;->getDefaultValue(Ljp/co/sony/mc/camera/setting/SettingKey$Key;)Ljava/lang/Object;
 
     move-result-object v1
@@ -8676,7 +9114,7 @@
 
     iput-object v1, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mProVideoDispCustomExtensionData:Ljp/co/sony/mc/camera/configuration/parameters/DispCustomExtensionData;
 
-    .line 2103
+    .line 2128
     iget-object v1, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mPreferences:Ljp/co/sony/mc/camera/setting/CameraProPreferences;
 
     iget-object v2, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mProVideoDispCustomExtensionData:Ljp/co/sony/mc/camera/configuration/parameters/DispCustomExtensionData;
@@ -8686,12 +9124,12 @@
     :cond_21
     if-nez p1, :cond_22
 
-    .line 2106
+    .line 2131
     iget-object v0, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mDisplayMode:Ljp/co/sony/mc/camera/configuration/parameters/DisplayMode;
 
     if-nez v0, :cond_23
 
-    .line 2107
+    .line 2132
     :cond_22
     sget-object v0, Ljp/co/sony/mc/camera/setting/CommonSettings;->DISPLAY_MODE:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
 
@@ -8703,7 +9141,7 @@
 
     iput-object v1, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mDisplayMode:Ljp/co/sony/mc/camera/configuration/parameters/DisplayMode;
 
-    .line 2108
+    .line 2133
     iget-object v1, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mPreferences:Ljp/co/sony/mc/camera/setting/CameraProPreferences;
 
     iget-object v2, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mDisplayMode:Ljp/co/sony/mc/camera/configuration/parameters/DisplayMode;
@@ -8713,12 +9151,12 @@
     :cond_23
     if-nez p1, :cond_24
 
-    .line 2110
+    .line 2135
     iget-object v0, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mRemoteControl:Ljp/co/sony/mc/camera/configuration/parameters/RemoteControl;
 
     if-nez v0, :cond_25
 
-    .line 2111
+    .line 2136
     :cond_24
     sget-object v0, Ljp/co/sony/mc/camera/setting/CommonSettings;->REMOTE_CONTROL:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
 
@@ -8730,7 +9168,7 @@
 
     iput-object v1, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mRemoteControl:Ljp/co/sony/mc/camera/configuration/parameters/RemoteControl;
 
-    .line 2112
+    .line 2137
     iget-object v1, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mPreferences:Ljp/co/sony/mc/camera/setting/CameraProPreferences;
 
     iget-object v2, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mRemoteControl:Ljp/co/sony/mc/camera/configuration/parameters/RemoteControl;
@@ -8740,12 +9178,12 @@
     :cond_25
     if-nez p1, :cond_26
 
-    .line 2114
+    .line 2139
     iget-object v0, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mRemoteButtonCustom:Ljp/co/sony/mc/camera/configuration/parameters/RemoteButtonCustom;
 
     if-nez v0, :cond_27
 
-    .line 2115
+    .line 2140
     :cond_26
     sget-object v0, Ljp/co/sony/mc/camera/setting/CommonSettings;->REMOTE_BUTTON_CUSTOM:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
 
@@ -8757,7 +9195,7 @@
 
     iput-object v1, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mRemoteButtonCustom:Ljp/co/sony/mc/camera/configuration/parameters/RemoteButtonCustom;
 
-    .line 2116
+    .line 2141
     iget-object v1, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mPreferences:Ljp/co/sony/mc/camera/setting/CameraProPreferences;
 
     iget-object v2, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mRemoteButtonCustom:Ljp/co/sony/mc/camera/configuration/parameters/RemoteButtonCustom;
@@ -8767,12 +9205,12 @@
     :cond_27
     if-nez p1, :cond_28
 
-    .line 2118
+    .line 2143
     iget-object v0, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mHapticFeedback:Ljp/co/sony/mc/camera/configuration/parameters/HapticFeedback;
 
     if-nez v0, :cond_29
 
-    .line 2119
+    .line 2144
     :cond_28
     sget-object v0, Ljp/co/sony/mc/camera/setting/CommonSettings;->HAPTIC_FEEDBACK:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
 
@@ -8784,7 +9222,7 @@
 
     iput-object v1, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mHapticFeedback:Ljp/co/sony/mc/camera/configuration/parameters/HapticFeedback;
 
-    .line 2120
+    .line 2145
     iget-object v1, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mPreferences:Ljp/co/sony/mc/camera/setting/CameraProPreferences;
 
     iget-object v2, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mHapticFeedback:Ljp/co/sony/mc/camera/configuration/parameters/HapticFeedback;
@@ -8794,12 +9232,12 @@
     :cond_29
     if-nez p1, :cond_2a
 
-    .line 2122
+    .line 2147
     iget-object v0, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mEnduranceMode:Ljp/co/sony/mc/camera/configuration/parameters/EnduranceMode;
 
     if-nez v0, :cond_2b
 
-    .line 2123
+    .line 2148
     :cond_2a
     sget-object v0, Ljp/co/sony/mc/camera/setting/CommonSettings;->ENDURANCE_MODE:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
 
@@ -8811,7 +9249,7 @@
 
     iput-object v1, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mEnduranceMode:Ljp/co/sony/mc/camera/configuration/parameters/EnduranceMode;
 
-    .line 2124
+    .line 2149
     iget-object v1, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mPreferences:Ljp/co/sony/mc/camera/setting/CameraProPreferences;
 
     iget-object v2, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mEnduranceMode:Ljp/co/sony/mc/camera/configuration/parameters/EnduranceMode;
@@ -8821,12 +9259,12 @@
     :cond_2b
     if-nez p1, :cond_2c
 
-    .line 2126
+    .line 2151
     iget-object v0, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mDisplayFlip:Ljp/co/sony/mc/camera/configuration/parameters/DisplayFlip;
 
     if-nez v0, :cond_2d
 
-    .line 2127
+    .line 2152
     :cond_2c
     sget-object v0, Ljp/co/sony/mc/camera/setting/CommonSettings;->DISP_FLIP:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
 
@@ -8838,7 +9276,7 @@
 
     iput-object v1, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mDisplayFlip:Ljp/co/sony/mc/camera/configuration/parameters/DisplayFlip;
 
-    .line 2128
+    .line 2153
     iget-object v1, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mPreferences:Ljp/co/sony/mc/camera/setting/CameraProPreferences;
 
     iget-object v2, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mDisplayFlip:Ljp/co/sony/mc/camera/configuration/parameters/DisplayFlip;
@@ -8848,12 +9286,12 @@
     :cond_2d
     if-nez p1, :cond_2e
 
-    .line 2130
+    .line 2155
     iget-object v0, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mLastBackVideoFps:Ljp/co/sony/mc/camera/configuration/parameters/LastBackVideoFps;
 
     if-nez v0, :cond_2f
 
-    .line 2131
+    .line 2156
     :cond_2e
     sget-object v0, Ljp/co/sony/mc/camera/setting/CommonSettings;->LAST_BACK_VIDEO_FPS:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
 
@@ -8865,7 +9303,7 @@
 
     iput-object v1, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mLastBackVideoFps:Ljp/co/sony/mc/camera/configuration/parameters/LastBackVideoFps;
 
-    .line 2132
+    .line 2157
     iget-object v1, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mPreferences:Ljp/co/sony/mc/camera/setting/CameraProPreferences;
 
     iget-object v2, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mLastBackVideoFps:Ljp/co/sony/mc/camera/configuration/parameters/LastBackVideoFps;
@@ -8875,12 +9313,12 @@
     :cond_2f
     if-nez p1, :cond_30
 
-    .line 2134
+    .line 2159
     iget-object v0, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mStreamingConnectMode:Ljp/co/sony/mc/camera/configuration/parameters/StreamingConnectMode;
 
     if-nez v0, :cond_31
 
-    .line 2135
+    .line 2160
     :cond_30
     invoke-static {}, Ljp/co/sony/mc/camera/configuration/parameters/StreamingConnectMode;->getDefaultValue()Ljp/co/sony/mc/camera/configuration/parameters/StreamingConnectMode;
 
@@ -8888,7 +9326,7 @@
 
     iput-object v0, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mStreamingConnectMode:Ljp/co/sony/mc/camera/configuration/parameters/StreamingConnectMode;
 
-    .line 2136
+    .line 2161
     iget-object v0, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mPreferences:Ljp/co/sony/mc/camera/setting/CameraProPreferences;
 
     sget-object v1, Ljp/co/sony/mc/camera/setting/CommonSettings;->STREAMING_CONNECT_MODE:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
@@ -8900,12 +9338,12 @@
     :cond_31
     if-nez p1, :cond_32
 
-    .line 2138
+    .line 2163
     iget-object v0, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mRtmpStreamUrl:Ljava/lang/String;
 
     if-nez v0, :cond_33
 
-    .line 2139
+    .line 2164
     :cond_32
     invoke-static {}, Ljp/co/sony/mc/camera/configuration/parameters/RtmpStreamUrl;->getDefaultValue()Ljava/lang/String;
 
@@ -8913,7 +9351,7 @@
 
     iput-object v0, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mRtmpStreamUrl:Ljava/lang/String;
 
-    .line 2140
+    .line 2165
     iget-object v0, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mPreferences:Ljp/co/sony/mc/camera/setting/CameraProPreferences;
 
     sget-object v1, Ljp/co/sony/mc/camera/setting/CommonSettings;->RTMP_STREAM_URL:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
@@ -8925,12 +9363,12 @@
     :cond_33
     if-nez p1, :cond_34
 
-    .line 2142
+    .line 2167
     iget-object v0, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mRtmpStreamKey:Ljava/lang/String;
 
     if-nez v0, :cond_35
 
-    .line 2143
+    .line 2168
     :cond_34
     invoke-static {}, Ljp/co/sony/mc/camera/configuration/parameters/RtmpStreamKey;->getDefaultValue()Ljava/lang/String;
 
@@ -8938,7 +9376,7 @@
 
     iput-object v0, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mRtmpStreamKey:Ljava/lang/String;
 
-    .line 2144
+    .line 2169
     iget-object v0, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mPreferences:Ljp/co/sony/mc/camera/setting/CameraProPreferences;
 
     sget-object v1, Ljp/co/sony/mc/camera/setting/CommonSettings;->RTMP_STREAM_KEY:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
@@ -8950,12 +9388,12 @@
     :cond_35
     if-nez p1, :cond_36
 
-    .line 2146
+    .line 2171
     iget-object v0, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mYoutubeStreamUrl:Ljava/lang/String;
 
     if-nez v0, :cond_37
 
-    .line 2147
+    .line 2172
     :cond_36
     invoke-static {}, Ljp/co/sony/mc/camera/configuration/parameters/YoutubeStreamUrl;->getDefaultValue()Ljava/lang/String;
 
@@ -8963,7 +9401,7 @@
 
     iput-object v0, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mYoutubeStreamUrl:Ljava/lang/String;
 
-    .line 2148
+    .line 2173
     iget-object v0, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mPreferences:Ljp/co/sony/mc/camera/setting/CameraProPreferences;
 
     sget-object v1, Ljp/co/sony/mc/camera/setting/CommonSettings;->YOUTUBE_STREAM_URL:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
@@ -8975,12 +9413,12 @@
     :cond_37
     if-nez p1, :cond_38
 
-    .line 2150
+    .line 2175
     iget-object v0, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mYoutubeStreamKey:Ljava/lang/String;
 
     if-nez v0, :cond_39
 
-    .line 2151
+    .line 2176
     :cond_38
     invoke-static {}, Ljp/co/sony/mc/camera/configuration/parameters/YoutubeStreamKey;->getDefaultValue()Ljava/lang/String;
 
@@ -8988,7 +9426,7 @@
 
     iput-object v0, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mYoutubeStreamKey:Ljava/lang/String;
 
-    .line 2152
+    .line 2177
     iget-object v0, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mPreferences:Ljp/co/sony/mc/camera/setting/CameraProPreferences;
 
     sget-object v1, Ljp/co/sony/mc/camera/setting/CommonSettings;->YOUTUBE_STREAM_KEY:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
@@ -9000,12 +9438,12 @@
     :cond_39
     if-nez p1, :cond_3a
 
-    .line 2154
+    .line 2179
     iget-object v0, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mYoutubeStreamIdKey:Ljava/lang/String;
 
     if-nez v0, :cond_3b
 
-    .line 2155
+    .line 2180
     :cond_3a
     invoke-static {}, Ljp/co/sony/mc/camera/configuration/parameters/YouTubeStreamIdKey;->getDefaultValue()Ljava/lang/String;
 
@@ -9013,7 +9451,7 @@
 
     iput-object v0, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mYoutubeStreamIdKey:Ljava/lang/String;
 
-    .line 2156
+    .line 2181
     iget-object v0, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mPreferences:Ljp/co/sony/mc/camera/setting/CameraProPreferences;
 
     sget-object v1, Ljp/co/sony/mc/camera/setting/CommonSettings;->YOUTUBE_STREAM_ID_KEY:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
@@ -9025,12 +9463,12 @@
     :cond_3b
     if-nez p1, :cond_3c
 
-    .line 2158
+    .line 2183
     iget-object v0, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mYoutubeLiveChatIdKey:Ljava/lang/String;
 
     if-nez v0, :cond_3d
 
-    .line 2159
+    .line 2184
     :cond_3c
     invoke-static {}, Ljp/co/sony/mc/camera/configuration/parameters/YouTubeLiveChatIdKey;->getDefaultValue()Ljava/lang/String;
 
@@ -9038,7 +9476,7 @@
 
     iput-object v0, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mYoutubeLiveChatIdKey:Ljava/lang/String;
 
-    .line 2160
+    .line 2185
     iget-object v0, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mPreferences:Ljp/co/sony/mc/camera/setting/CameraProPreferences;
 
     sget-object v1, Ljp/co/sony/mc/camera/setting/CommonSettings;->YOUTUBE_LIVE_CHAT_ID_KEY:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
@@ -9050,12 +9488,12 @@
     :cond_3d
     if-nez p1, :cond_3e
 
-    .line 2162
+    .line 2187
     iget-object v0, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mYoutubeLiveId:Ljava/lang/String;
 
     if-nez v0, :cond_3f
 
-    .line 2163
+    .line 2188
     :cond_3e
     invoke-static {}, Ljp/co/sony/mc/camera/configuration/parameters/YoutubeLiveId;->getDefaultValue()Ljava/lang/String;
 
@@ -9063,7 +9501,7 @@
 
     iput-object v0, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mYoutubeLiveId:Ljava/lang/String;
 
-    .line 2164
+    .line 2189
     iget-object v0, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mPreferences:Ljp/co/sony/mc/camera/setting/CameraProPreferences;
 
     sget-object v1, Ljp/co/sony/mc/camera/setting/CommonSettings;->YOUTUBE_LIVE_ID:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
@@ -9075,12 +9513,12 @@
     :cond_3f
     if-nez p1, :cond_40
 
-    .line 2166
+    .line 2191
     iget-object v0, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mYoutubeAccount:Ljava/lang/String;
 
     if-nez v0, :cond_41
 
-    .line 2167
+    .line 2192
     :cond_40
     invoke-static {}, Ljp/co/sony/mc/camera/configuration/parameters/YoutubeAccount;->getDefaultValue()Ljava/lang/String;
 
@@ -9088,7 +9526,7 @@
 
     iput-object v0, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mYoutubeAccount:Ljava/lang/String;
 
-    .line 2168
+    .line 2193
     iget-object v0, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mPreferences:Ljp/co/sony/mc/camera/setting/CameraProPreferences;
 
     sget-object v1, Ljp/co/sony/mc/camera/setting/CommonSettings;->YOUTUBE_ACCOUNT:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
@@ -9100,12 +9538,12 @@
     :cond_41
     if-nez p1, :cond_42
 
-    .line 2170
+    .line 2195
     iget-object v0, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mYoutubeLiveEvent:Ljava/lang/String;
 
     if-nez v0, :cond_43
 
-    .line 2171
+    .line 2196
     :cond_42
     invoke-static {}, Ljp/co/sony/mc/camera/configuration/parameters/YoutubeLiveEvent;->getDefaultValue()Ljava/lang/String;
 
@@ -9113,7 +9551,7 @@
 
     iput-object v0, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mYoutubeLiveEvent:Ljava/lang/String;
 
-    .line 2172
+    .line 2197
     iget-object v0, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mPreferences:Ljp/co/sony/mc/camera/setting/CameraProPreferences;
 
     sget-object v1, Ljp/co/sony/mc/camera/setting/CommonSettings;->YOUTUBE_LIVE_EVENT:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
@@ -9125,12 +9563,12 @@
     :cond_43
     if-nez p1, :cond_44
 
-    .line 2174
+    .line 2199
     iget-object v0, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mYoutubeAuthorizationState:Ljava/lang/String;
 
     if-nez v0, :cond_45
 
-    .line 2175
+    .line 2200
     :cond_44
     invoke-static {}, Ljp/co/sony/mc/camera/configuration/parameters/YoutubeAuthorizationState;->getDefaultValue()Ljava/lang/String;
 
@@ -9138,7 +9576,7 @@
 
     iput-object v0, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mYoutubeAuthorizationState:Ljava/lang/String;
 
-    .line 2176
+    .line 2201
     iget-object v0, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mPreferences:Ljp/co/sony/mc/camera/setting/CameraProPreferences;
 
     sget-object v1, Ljp/co/sony/mc/camera/setting/CommonSettings;->YOUTUBE_AUTHORIZATION_STATE:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
@@ -9150,12 +9588,12 @@
     :cond_45
     if-nez p1, :cond_46
 
-    .line 2178
+    .line 2203
     iget-object v0, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mFacebookAccount:Ljava/lang/String;
 
     if-nez v0, :cond_47
 
-    .line 2179
+    .line 2204
     :cond_46
     invoke-static {}, Ljp/co/sony/mc/camera/configuration/parameters/FacebookAccount;->getDefaultValue()Ljava/lang/String;
 
@@ -9163,7 +9601,7 @@
 
     iput-object v0, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mFacebookAccount:Ljava/lang/String;
 
-    .line 2180
+    .line 2205
     iget-object v0, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mPreferences:Ljp/co/sony/mc/camera/setting/CameraProPreferences;
 
     sget-object v1, Ljp/co/sony/mc/camera/setting/CommonSettings;->FACEBOOK_ACCOUNT:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
@@ -9175,12 +9613,12 @@
     :cond_47
     if-nez p1, :cond_48
 
-    .line 2182
+    .line 2207
     iget-object v0, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mFacebookLiveVideoId:Ljava/lang/String;
 
     if-nez v0, :cond_49
 
-    .line 2183
+    .line 2208
     :cond_48
     invoke-static {}, Ljp/co/sony/mc/camera/configuration/parameters/FacebookLiveVideoId;->getDefaultValue()Ljava/lang/String;
 
@@ -9188,7 +9626,7 @@
 
     iput-object v0, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mFacebookLiveVideoId:Ljava/lang/String;
 
-    .line 2184
+    .line 2209
     iget-object v0, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mPreferences:Ljp/co/sony/mc/camera/setting/CameraProPreferences;
 
     sget-object v1, Ljp/co/sony/mc/camera/setting/CommonSettings;->FACEBOOK_LIVE_VIDEO_ID:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
@@ -9200,12 +9638,12 @@
     :cond_49
     if-nez p1, :cond_4a
 
-    .line 2186
+    .line 2211
     iget-object v0, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mFacebookLiveSelect:Ljava/lang/String;
 
     if-nez v0, :cond_4b
 
-    .line 2187
+    .line 2212
     :cond_4a
     invoke-static {}, Ljp/co/sony/mc/camera/configuration/parameters/FacebookLiveSelect;->getDefaultValue()Ljava/lang/String;
 
@@ -9213,7 +9651,7 @@
 
     iput-object v0, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mFacebookLiveSelect:Ljava/lang/String;
 
-    .line 2188
+    .line 2213
     iget-object v0, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mPreferences:Ljp/co/sony/mc/camera/setting/CameraProPreferences;
 
     sget-object v1, Ljp/co/sony/mc/camera/setting/CommonSettings;->FACEBOOK_LIVE_SELECT:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
@@ -9225,12 +9663,12 @@
     :cond_4b
     if-nez p1, :cond_4c
 
-    .line 2190
+    .line 2215
     iget-object v0, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mFacebookLiveType:Ljp/co/sony/mc/camera/configuration/parameters/FacebookLiveType;
 
     if-nez v0, :cond_4d
 
-    .line 2191
+    .line 2216
     :cond_4c
     invoke-static {}, Ljp/co/sony/mc/camera/configuration/parameters/FacebookLiveType;->getDefaultValue()Ljp/co/sony/mc/camera/configuration/parameters/FacebookLiveType;
 
@@ -9238,7 +9676,7 @@
 
     iput-object v0, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mFacebookLiveType:Ljp/co/sony/mc/camera/configuration/parameters/FacebookLiveType;
 
-    .line 2192
+    .line 2217
     iget-object v0, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mPreferences:Ljp/co/sony/mc/camera/setting/CameraProPreferences;
 
     sget-object v1, Ljp/co/sony/mc/camera/setting/CommonSettings;->FACEBOOK_LIVE_TYPE:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
@@ -9250,12 +9688,12 @@
     :cond_4d
     if-nez p1, :cond_4e
 
-    .line 2194
+    .line 2219
     iget-object v0, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mFacebookGroupId:Ljava/lang/String;
 
     if-nez v0, :cond_4f
 
-    .line 2195
+    .line 2220
     :cond_4e
     invoke-static {}, Ljp/co/sony/mc/camera/configuration/parameters/FacebookGroupId;->getDefaultValue()Ljava/lang/String;
 
@@ -9263,7 +9701,7 @@
 
     iput-object v0, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mFacebookGroupId:Ljava/lang/String;
 
-    .line 2196
+    .line 2221
     iget-object v0, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mPreferences:Ljp/co/sony/mc/camera/setting/CameraProPreferences;
 
     sget-object v1, Ljp/co/sony/mc/camera/setting/CommonSettings;->FACEBOOK_GROUP_ID:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
@@ -9275,12 +9713,12 @@
     :cond_4f
     if-nez p1, :cond_50
 
-    .line 2198
+    .line 2223
     iget-object v0, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mNetworkUsage:Ljp/co/sony/mc/camera/configuration/parameters/NetworkUsage;
 
     if-nez v0, :cond_51
 
-    .line 2199
+    .line 2224
     :cond_50
     invoke-static {}, Ljp/co/sony/mc/camera/configuration/parameters/NetworkUsage;->getDefaultValue()Ljp/co/sony/mc/camera/configuration/parameters/NetworkUsage;
 
@@ -9288,7 +9726,7 @@
 
     iput-object v0, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mNetworkUsage:Ljp/co/sony/mc/camera/configuration/parameters/NetworkUsage;
 
-    .line 2200
+    .line 2225
     iget-object v0, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mPreferences:Ljp/co/sony/mc/camera/setting/CameraProPreferences;
 
     sget-object v1, Ljp/co/sony/mc/camera/setting/CommonSettings;->NETWORK_USAGE:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
@@ -9300,12 +9738,12 @@
     :cond_51
     if-nez p1, :cond_52
 
-    .line 2202
+    .line 2227
     iget-object v0, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mStreamingAudioMute:Ljp/co/sony/mc/camera/configuration/parameters/StreamingAudioMute;
 
     if-nez v0, :cond_53
 
-    .line 2203
+    .line 2228
     :cond_52
     invoke-static {}, Ljp/co/sony/mc/camera/configuration/parameters/StreamingAudioMute;->getDefaultValue()Ljp/co/sony/mc/camera/configuration/parameters/StreamingAudioMute;
 
@@ -9313,7 +9751,7 @@
 
     iput-object v0, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mStreamingAudioMute:Ljp/co/sony/mc/camera/configuration/parameters/StreamingAudioMute;
 
-    .line 2204
+    .line 2229
     iget-object v0, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mPreferences:Ljp/co/sony/mc/camera/setting/CameraProPreferences;
 
     sget-object v1, Ljp/co/sony/mc/camera/setting/CommonSettings;->STREAMING_AUDIO_MUTE:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
@@ -9325,18 +9763,18 @@
     :cond_53
     if-nez p1, :cond_54
 
-    .line 2206
+    .line 2231
     iget-object v0, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mLastProPhotoCapturingMode:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
     if-nez v0, :cond_55
 
-    .line 2207
+    .line 2232
     :cond_54
     sget-object v0, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->PHOTO_PRO_P:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
     iput-object v0, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mLastProPhotoCapturingMode:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
-    .line 2208
+    .line 2233
     iget-object v0, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mPreferences:Ljp/co/sony/mc/camera/setting/CameraProPreferences;
 
     sget-object v1, Ljp/co/sony/mc/camera/setting/CommonSettings;->LAST_PRO_CAPTURING_MODE:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
@@ -9348,34 +9786,61 @@
     :cond_55
     if-nez p1, :cond_56
 
-    .line 2210
-    iget-object p1, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mLastProVideoCapturingMode:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
+    .line 2235
+    iget-object v0, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mLastProVideoCapturingMode:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
-    if-nez p1, :cond_57
+    if-nez v0, :cond_57
 
-    .line 2211
+    .line 2236
     :cond_56
-    sget-object p1, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->VIDEO_PRO_P:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
+    sget-object v0, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->VIDEO_PRO_P:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
-    iput-object p1, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mLastProVideoCapturingMode:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
+    iput-object v0, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mLastProVideoCapturingMode:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
-    .line 2212
-    iget-object p1, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mPreferences:Ljp/co/sony/mc/camera/setting/CameraProPreferences;
+    .line 2237
+    iget-object v0, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mPreferences:Ljp/co/sony/mc/camera/setting/CameraProPreferences;
 
-    sget-object v0, Ljp/co/sony/mc/camera/setting/CommonSettings;->LAST_PRO_VIDEO_CAPTURING_MODE:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
+    sget-object v1, Ljp/co/sony/mc/camera/setting/CommonSettings;->LAST_PRO_VIDEO_CAPTURING_MODE:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
 
-    iget-object p0, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mLastProVideoCapturingMode:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
+    iget-object v2, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mLastProVideoCapturingMode:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
-    invoke-virtual {p1, v0, p0}, Ljp/co/sony/mc/camera/setting/CameraProPreferences;->set(Ljp/co/sony/mc/camera/setting/SettingKey$Key;Ljava/lang/Object;)V
+    invoke-virtual {v0, v1, v2}, Ljp/co/sony/mc/camera/setting/CameraProPreferences;->set(Ljp/co/sony/mc/camera/setting/SettingKey$Key;Ljava/lang/Object;)V
 
     :cond_57
+    if-nez p1, :cond_58
+
+    .line 2239
+    iget-object p1, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mModeCustomExtensionData:Ljp/co/sony/mc/camera/configuration/parameters/ModeCustomExtensionData;
+
+    if-nez p1, :cond_59
+
+    .line 2240
+    :cond_58
+    sget-object p1, Ljp/co/sony/mc/camera/setting/CommonSettings;->MODE_CUSTOM_EXTENSION_DATA:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
+
+    invoke-virtual {p0, p1}, Ljp/co/sony/mc/camera/setting/CommonSettings;->getDefaultValue(Ljp/co/sony/mc/camera/setting/SettingKey$Key;)Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, Ljp/co/sony/mc/camera/configuration/parameters/ModeCustomExtensionData;
+
+    iput-object v0, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mModeCustomExtensionData:Ljp/co/sony/mc/camera/configuration/parameters/ModeCustomExtensionData;
+
+    .line 2241
+    iget-object v0, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mPreferences:Ljp/co/sony/mc/camera/setting/CameraProPreferences;
+
+    iget-object p0, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mModeCustomExtensionData:Ljp/co/sony/mc/camera/configuration/parameters/ModeCustomExtensionData;
+
+    invoke-virtual {v0, p1, p0}, Ljp/co/sony/mc/camera/setting/CameraProPreferences;->set(Ljp/co/sony/mc/camera/setting/SettingKey$Key;Ljava/lang/Object;)V
+
+    :cond_59
     return-void
 .end method
 
 .method setDispFlip(Ljp/co/sony/mc/camera/configuration/parameters/DisplayFlip;)Z
     .locals 2
 
-    .line 2319
+    .line 2348
     iget-object v0, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mDisplayFlip:Ljp/co/sony/mc/camera/configuration/parameters/DisplayFlip;
 
     if-eq v0, p1, :cond_0
@@ -9390,10 +9855,10 @@
     :goto_0
     if-eqz v0, :cond_1
 
-    .line 2321
+    .line 2350
     iput-object p1, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mDisplayFlip:Ljp/co/sony/mc/camera/configuration/parameters/DisplayFlip;
 
-    .line 2322
+    .line 2351
     iget-object p0, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mPreferences:Ljp/co/sony/mc/camera/setting/CameraProPreferences;
 
     sget-object v1, Ljp/co/sony/mc/camera/setting/CommonSettings;->DISP_FLIP:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
@@ -9407,7 +9872,7 @@
 .method setFingerPrint(Ljava/lang/String;)V
     .locals 1
 
-    .line 2268
+    .line 2297
     iget-object v0, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mFingerPrint:Ljava/lang/String;
 
     if-eqz v0, :cond_0
@@ -9418,11 +9883,11 @@
 
     if-nez v0, :cond_1
 
-    .line 2270
+    .line 2299
     :cond_0
     iput-object p1, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mFingerPrint:Ljava/lang/String;
 
-    .line 2271
+    .line 2300
     iget-object p0, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mPreferences:Ljp/co/sony/mc/camera/setting/CameraProPreferences;
 
     sget-object v0, Ljp/co/sony/mc/camera/setting/CommonSettings;->FINGER_PRINT:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
@@ -9436,7 +9901,7 @@
 .method setLastBackVideoFps(Ljp/co/sony/mc/camera/configuration/parameters/LastBackVideoFps;)Z
     .locals 2
 
-    .line 2336
+    .line 2365
     iget-object v0, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mLastBackVideoFps:Ljp/co/sony/mc/camera/configuration/parameters/LastBackVideoFps;
 
     if-eq v0, p1, :cond_0
@@ -9451,10 +9916,10 @@
     :goto_0
     if-eqz v0, :cond_1
 
-    .line 2338
+    .line 2367
     iput-object p1, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mLastBackVideoFps:Ljp/co/sony/mc/camera/configuration/parameters/LastBackVideoFps;
 
-    .line 2339
+    .line 2368
     iget-object p0, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mPreferences:Ljp/co/sony/mc/camera/setting/CameraProPreferences;
 
     sget-object v1, Ljp/co/sony/mc/camera/setting/CommonSettings;->LAST_BACK_VIDEO_FPS:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
@@ -9468,7 +9933,7 @@
 .method setLevelCalibration(Ljava/lang/Float;)Z
     .locals 2
 
-    .line 2288
+    .line 2317
     iget-object v0, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mCalibration:Ljava/lang/Float;
 
     if-eqz v0, :cond_1
@@ -9493,10 +9958,10 @@
     :goto_1
     if-eqz v0, :cond_2
 
-    .line 2290
+    .line 2319
     iput-object p1, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mCalibration:Ljava/lang/Float;
 
-    .line 2291
+    .line 2320
     iget-object p0, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mPreferences:Ljp/co/sony/mc/camera/setting/CameraProPreferences;
 
     sget-object v1, Ljp/co/sony/mc/camera/setting/CommonSettings;->LEVEL_CALIBRATION_OFFSET:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
@@ -9519,24 +9984,24 @@
         }
     .end annotation
 
-    .line 2227
+    .line 2256
     iget-object v0, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mCapturingMode:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
-    .line 2228
+    .line 2257
     iget-object v1, p1, Landroid/util/Pair;->first:Ljava/lang/Object;
 
     check-cast v1, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
     iput-object v1, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mCapturingMode:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
-    .line 2229
+    .line 2258
     invoke-virtual {v1}, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->isMemoryRecall()Z
 
     move-result v1
 
     if-nez v1, :cond_0
 
-    .line 2230
+    .line 2259
     iget-object p1, p1, Landroid/util/Pair;->second:Ljava/lang/Object;
 
     check-cast p1, Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;
@@ -9545,7 +10010,7 @@
 
     goto :goto_0
 
-    .line 2232
+    .line 2261
     :cond_0
     iget-object v1, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mCameraId:Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;
 
@@ -9561,7 +10026,7 @@
 
     if-eqz v0, :cond_2
 
-    .line 2234
+    .line 2263
     :cond_1
     iget-object v0, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mCapturingMode:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
@@ -9571,7 +10036,7 @@
 
     iput-object v0, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mCameraId:Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;
 
-    .line 2236
+    .line 2265
     :cond_2
     iget-object p1, p1, Landroid/util/Pair;->second:Ljava/lang/Object;
 
@@ -9586,12 +10051,12 @@
 .method setSettingVersion(Ljava/lang/Integer;)V
     .locals 2
 
-    .line 2252
+    .line 2281
     iget-object v0, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mSettingVersionCode:Ljava/lang/Integer;
 
     if-eqz v0, :cond_0
 
-    .line 2253
+    .line 2282
     invoke-virtual {v0}, Ljava/lang/Integer;->intValue()I
 
     move-result v0
@@ -9602,11 +10067,11 @@
 
     if-eq v0, v1, :cond_1
 
-    .line 2255
+    .line 2284
     :cond_0
     iput-object p1, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mSettingVersionCode:Ljava/lang/Integer;
 
-    .line 2256
+    .line 2285
     iget-object p0, p0, Ljp/co/sony/mc/camera/setting/CommonSettings;->mPreferences:Ljp/co/sony/mc/camera/setting/CameraProPreferences;
 
     sget-object v0, Ljp/co/sony/mc/camera/setting/CommonSettings;->SETTING_VERSION:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;

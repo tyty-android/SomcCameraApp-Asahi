@@ -34,7 +34,7 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/SourceDebugExtension;
-    value = "SMAP\nJobSupport.kt\nKotlin\n*S Kotlin\n*F\n+ 1 JobSupport.kt\nkotlinx/coroutines/JobSupport$children$1\n+ 2 LockFreeLinkedList.kt\nkotlinx/coroutines/internal/LockFreeLinkedListHead\n*L\n1#1,1479:1\n645#2,6:1480\n*S KotlinDebug\n*F\n+ 1 JobSupport.kt\nkotlinx/coroutines/JobSupport$children$1\n*L\n954#1:1480,6\n*E\n"
+    value = "SMAP\nJobSupport.kt\nKotlin\n*S Kotlin\n*F\n+ 1 JobSupport.kt\nkotlinx/coroutines/JobSupport$children$1\n+ 2 LockFreeLinkedList.kt\nkotlinx/coroutines/internal/LockFreeLinkedListHead\n*L\n1#1,1454:1\n341#2,6:1455\n*S KotlinDebug\n*F\n+ 1 JobSupport.kt\nkotlinx/coroutines/JobSupport$children$1\n*L\n958#1:1455,6\n*E\n"
 .end annotation
 
 .annotation runtime Lkotlin/Metadata;
@@ -50,7 +50,7 @@
     k = 0x3
     mv = {
         0x1,
-        0x6,
+        0x8,
         0x0
     }
     xi = 0x30
@@ -65,8 +65,8 @@
         0x1
     }
     l = {
-        0x3b8,
-        0x3ba
+        0x3bc,
+        0x3be
     }
     m = "invokeSuspend"
     n = {
@@ -199,7 +199,7 @@
 
     move-result-object v0
 
-    .line 950
+    .line 954
     iget v1, p0, Lkotlinx/coroutines/JobSupport$children$1;->label:I
 
     const/4 v2, 0x2
@@ -228,7 +228,6 @@
 
     goto :goto_1
 
-    .line 957
     :cond_0
     new-instance p0, Ljava/lang/IllegalStateException;
 
@@ -238,7 +237,6 @@
 
     throw p0
 
-    .line 950
     :cond_1
     invoke-static {p1}, Lkotlin/ResultKt;->throwOnFailure(Ljava/lang/Object;)V
 
@@ -251,14 +249,14 @@
 
     check-cast p1, Lkotlin/sequences/SequenceScope;
 
-    .line 951
+    .line 955
     iget-object v1, p0, Lkotlinx/coroutines/JobSupport$children$1;->this$0:Lkotlinx/coroutines/JobSupport;
 
     invoke-virtual {v1}, Lkotlinx/coroutines/JobSupport;->getState$kotlinx_coroutines_core()Ljava/lang/Object;
 
     move-result-object v1
 
-    .line 952
+    .line 956
     instance-of v4, v1, Lkotlinx/coroutines/ChildHandleNode;
 
     if-eqz v4, :cond_3
@@ -281,7 +279,7 @@
 
     return-object v0
 
-    .line 953
+    .line 957
     :cond_3
     instance-of v3, v1, Lkotlinx/coroutines/Incomplete;
 
@@ -295,13 +293,17 @@
 
     if-eqz v1, :cond_5
 
-    .line 954
+    .line 958
     check-cast v1, Lkotlinx/coroutines/internal/LockFreeLinkedListHead;
 
-    .line 1480
+    .line 1455
     invoke-virtual {v1}, Lkotlinx/coroutines/internal/LockFreeLinkedListHead;->getNext()Ljava/lang/Object;
 
     move-result-object v3
+
+    const-string v4, "null cannot be cast to non-null type kotlinx.coroutines.internal.LockFreeLinkedListNode{ kotlinx.coroutines.internal.LockFreeLinkedListKt.Node }"
+
+    invoke-static {v3, v4}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;Ljava/lang/String;)V
 
     check-cast v3, Lkotlinx/coroutines/internal/LockFreeLinkedListNode;
 
@@ -313,7 +315,7 @@
 
     move-object v1, v5
 
-    .line 1481
+    .line 1456
     :goto_0
     invoke-static {v1, v3}, Lkotlin/jvm/internal/Intrinsics;->areEqual(Ljava/lang/Object;Ljava/lang/Object;)Z
 
@@ -321,7 +323,7 @@
 
     if-nez p1, :cond_5
 
-    .line 1482
+    .line 1457
     instance-of p1, v1, Lkotlinx/coroutines/ChildHandleNode;
 
     if-eqz p1, :cond_4
@@ -330,7 +332,7 @@
 
     check-cast p1, Lkotlinx/coroutines/ChildHandleNode;
 
-    .line 954
+    .line 958
     iget-object p1, p1, Lkotlinx/coroutines/ChildHandleNode;->childJob:Lkotlinx/coroutines/ChildJob;
 
     iput-object v4, p0, Lkotlinx/coroutines/JobSupport$children$1;->L$0:Ljava/lang/Object;
@@ -349,7 +351,7 @@
 
     return-object v0
 
-    .line 1483
+    .line 1458
     :cond_4
     :goto_1
     invoke-virtual {v1}, Lkotlinx/coroutines/internal/LockFreeLinkedListNode;->getNextNode()Lkotlinx/coroutines/internal/LockFreeLinkedListNode;
@@ -358,7 +360,7 @@
 
     goto :goto_0
 
-    .line 957
+    .line 961
     :cond_5
     :goto_2
     sget-object p0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;

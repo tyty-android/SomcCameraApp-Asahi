@@ -14,7 +14,7 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/SourceDebugExtension;
-    value = "SMAP\nAndroidFontListTypeface.android.kt\nKotlin\n*S Kotlin\n*F\n+ 1 AndroidFontListTypeface.android.kt\nandroidx/compose/ui/text/platform/AndroidFontListTypeface\n+ 2 TempListUtils.kt\nandroidx/compose/ui/text/TempListUtilsKt\n+ 3 ListUtils.kt\nandroidx/compose/ui/util/ListUtilsKt\n*L\n1#1,173:1\n35#2,3:174\n38#2,2:181\n40#2:184\n56#2,4:196\n60#2,3:204\n63#2:208\n33#3,4:177\n38#3:183\n151#3,3:185\n33#3,4:188\n154#3,2:192\n38#3:194\n156#3:195\n33#3,4:200\n38#3:207\n33#3,6:209\n*S KotlinDebug\n*F\n+ 1 AndroidFontListTypeface.android.kt\nandroidx/compose/ui/text/platform/AndroidFontListTypeface\n*L\n66#1:174,3\n66#1:181,2\n66#1:184\n71#1:196,4\n71#1:204,3\n71#1:208\n66#1:177,4\n66#1:183\n69#1:185,3\n69#1:188,4\n69#1:192,2\n69#1:194\n69#1:195\n71#1:200,4\n71#1:207\n79#1:209,6\n*E\n"
+    value = "SMAP\nAndroidFontListTypeface.android.kt\nKotlin\n*S Kotlin\n*F\n+ 1 AndroidFontListTypeface.android.kt\nandroidx/compose/ui/text/platform/AndroidFontListTypeface\n+ 2 ListUtils.kt\nandroidx/compose/ui/util/ListUtilsKt\n+ 3 fake.kt\nkotlin/jvm/internal/FakeKt\n*L\n1#1,174:1\n235#2,3:175\n33#2,4:178\n238#2,2:182\n38#2:184\n240#2:185\n151#2,3:186\n33#2,4:189\n154#2,2:193\n38#2:195\n156#2:196\n461#2,4:197\n33#2,4:201\n465#2,3:205\n38#2:208\n468#2:209\n33#2,6:211\n1#3:210\n*S KotlinDebug\n*F\n+ 1 AndroidFontListTypeface.android.kt\nandroidx/compose/ui/text/platform/AndroidFontListTypeface\n*L\n66#1:175,3\n66#1:178,4\n66#1:182,2\n66#1:184\n66#1:185\n69#1:186,3\n69#1:189,4\n69#1:193,2\n69#1:195\n69#1:196\n71#1:197,4\n71#1:201,4\n71#1:205,3\n71#1:208\n71#1:209\n76#1:211,6\n*E\n"
 .end annotation
 
 .annotation runtime Lkotlin/Deprecated;
@@ -23,7 +23,7 @@
 
 .annotation runtime Lkotlin/Metadata;
     d1 = {
-        "\u0000N\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010 \n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0006\n\u0002\u0010$\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0004\n\u0002\u0018\u0002\n\u0002\u0008\u0004\u0008\u0001\u0018\u0000 \u001f2\u00020\u0001:\u0001\u001fB@\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\u0006\u0010\u0004\u001a\u00020\u0005\u0012\u001c\u0008\u0002\u0010\u0006\u001a\u0016\u0012\u0010\u0012\u000e\u0012\u0004\u0012\u00020\t\u0012\u0004\u0012\u00020\n0\u0008\u0018\u00010\u0007\u0012\u0008\u0008\u0002\u0010\u000b\u001a\u00020\u000c\u00f8\u0001\u0000\u00a2\u0006\u0002\u0010\rJ-\u0010\u0018\u001a\u00020\u00172\u0006\u0010\u0019\u001a\u00020\t2\u0006\u0010\u001a\u001a\u00020\n2\u0006\u0010\u001b\u001a\u00020\u001cH\u0016\u00f8\u0001\u0001\u00f8\u0001\u0000\u00a2\u0006\u0004\u0008\u001d\u0010\u001eR\u0014\u0010\u0002\u001a\u00020\u000eX\u0096\u0004\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\u000f\u0010\u0010R\u0013\u0010\u000b\u001a\u00020\u000c\u00a2\u0006\n\n\u0002\u0008\u0013\u001a\u0004\u0008\u0011\u0010\u0012R\u001a\u0010\u0014\u001a\u000e\u0012\u0004\u0012\u00020\u0016\u0012\u0004\u0012\u00020\u00170\u0015X\u0082\u0004\u00a2\u0006\u0002\n\u0000\u0082\u0002\u000b\n\u0002\u0008\u0019\n\u0005\u0008\u00a1\u001e0\u0001\u00a8\u0006 "
+        "\u0000N\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010 \n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0006\n\u0002\u0010$\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0004\n\u0002\u0018\u0002\n\u0002\u0008\u0004\u0008\u0001\u0018\u0000 \u001f2\u00020\u0001:\u0001\u001fB=\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\u0006\u0010\u0004\u001a\u00020\u0005\u0012\u001c\u0008\u0002\u0010\u0006\u001a\u0016\u0012\u0010\u0012\u000e\u0012\u0004\u0012\u00020\t\u0012\u0004\u0012\u00020\n0\u0008\u0018\u00010\u0007\u0012\u0008\u0008\u0002\u0010\u000b\u001a\u00020\u000c\u00a2\u0006\u0002\u0010\rJ*\u0010\u0018\u001a\u00020\u00172\u0006\u0010\u0019\u001a\u00020\t2\u0006\u0010\u001a\u001a\u00020\n2\u0006\u0010\u001b\u001a\u00020\u001cH\u0016\u00f8\u0001\u0000\u00a2\u0006\u0004\u0008\u001d\u0010\u001eR\u0014\u0010\u0002\u001a\u00020\u000eX\u0096\u0004\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\u000f\u0010\u0010R\u0013\u0010\u000b\u001a\u00020\u000c\u00a2\u0006\n\n\u0002\u0008\u0013\u001a\u0004\u0008\u0011\u0010\u0012R\u001a\u0010\u0014\u001a\u000e\u0012\u0004\u0012\u00020\u0016\u0012\u0004\u0012\u00020\u00170\u0015X\u0082\u0004\u00a2\u0006\u0002\n\u0000\u0082\u0002\u0007\n\u0005\u0008\u00a1\u001e0\u0001\u00a8\u0006 "
     }
     d2 = {
         "Landroidx/compose/ui/text/platform/AndroidFontListTypeface;",
@@ -71,6 +71,8 @@
 
 
 # static fields
+.field public static final $stable:I
+
 .field private static final Companion:Landroidx/compose/ui/text/platform/AndroidFontListTypeface$Companion;
 
 .field private static final fontMatcher:Landroidx/compose/ui/text/font/FontMatcher;
@@ -105,6 +107,10 @@
 
     sput-object v0, Landroidx/compose/ui/text/platform/AndroidFontListTypeface;->Companion:Landroidx/compose/ui/text/platform/AndroidFontListTypeface$Companion;
 
+    const/16 v0, 0x8
+
+    sput v0, Landroidx/compose/ui/text/platform/AndroidFontListTypeface;->$stable:I
+
     .line 61
     new-instance v0, Landroidx/compose/ui/text/font/FontMatcher;
 
@@ -132,18 +138,6 @@
         }
     .end annotation
 
-    const-string v0, "fontFamily"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string v0, "context"
-
-    invoke-static {p2, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string v0, "fontMatcher"
-
-    invoke-static {p4, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
     .line 51
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -155,7 +149,7 @@
 
     move-result-object p4
 
-    .line 175
+    .line 176
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-interface {p4}, Ljava/util/List;->size()I
@@ -164,7 +158,7 @@
 
     invoke-direct {v0, v1}, Ljava/util/ArrayList;-><init>(I)V
 
-    .line 178
+    .line 179
     invoke-interface {p4}, Ljava/util/List;->size()I
 
     move-result v1
@@ -176,12 +170,12 @@
     :goto_0
     if-ge v3, v1, :cond_1
 
-    .line 179
+    .line 180
     invoke-interface {p4, v3}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
     move-result-object v4
 
-    .line 181
+    .line 182
     move-object v5, v4
 
     check-cast v5, Landroidx/compose/ui/text/font/Font;
@@ -203,7 +197,7 @@
 
     if-eqz v5, :cond_0
 
-    .line 181
+    .line 182
     move-object v5, v0
 
     check-cast v5, Ljava/util/Collection;
@@ -215,13 +209,13 @@
 
     goto :goto_0
 
-    .line 184
+    .line 185
     :cond_1
     check-cast v0, Ljava/util/List;
 
     if-eqz p3, :cond_5
 
-    .line 186
+    .line 187
     new-instance p4, Ljava/util/ArrayList;
 
     invoke-interface {p3}, Ljava/util/List;->size()I
@@ -230,7 +224,7 @@
 
     invoke-direct {p4, v1}, Ljava/util/ArrayList;-><init>(I)V
 
-    .line 189
+    .line 190
     invoke-interface {p3}, Ljava/util/List;->size()I
 
     move-result v1
@@ -240,12 +234,12 @@
     :goto_1
     if-ge v3, v1, :cond_2
 
-    .line 190
+    .line 191
     invoke-interface {p3, v3}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
     move-result-object v4
 
-    .line 192
+    .line 193
     move-object v5, p4
 
     check-cast v5, Ljava/util/Collection;
@@ -282,25 +276,25 @@
 
     check-cast v4, Landroidx/compose/ui/text/font/Font;
 
-    .line 192
+    .line 193
     invoke-interface {v5, v4}, Ljava/util/Collection;->add(Ljava/lang/Object;)Z
 
     add-int/lit8 v3, v3, 0x1
 
     goto :goto_1
 
-    .line 195
+    .line 196
     :cond_2
     check-cast p4, Ljava/util/List;
 
     .line 71
-    invoke-static {p4}, Landroidx/compose/ui/text/TempListUtilsKt;->fastFilterNotNull(Ljava/util/List;)Ljava/util/List;
+    invoke-static {p4}, Landroidx/compose/ui/util/ListUtilsKt;->fastFilterNotNull(Ljava/util/List;)Ljava/util/List;
 
     move-result-object p3
 
     if-eqz p3, :cond_5
 
-    .line 197
+    .line 198
     new-instance p4, Ljava/util/HashSet;
 
     invoke-interface {p3}, Ljava/util/List;->size()I
@@ -309,7 +303,7 @@
 
     invoke-direct {p4, v1}, Ljava/util/HashSet;-><init>(I)V
 
-    .line 198
+    .line 199
     new-instance v1, Ljava/util/ArrayList;
 
     invoke-interface {p3}, Ljava/util/List;->size()I
@@ -318,7 +312,7 @@
 
     invoke-direct {v1, v3}, Ljava/util/ArrayList;-><init>(I)V
 
-    .line 201
+    .line 202
     invoke-interface {p3}, Ljava/util/List;->size()I
 
     move-result v3
@@ -328,17 +322,17 @@
     :goto_2
     if-ge v4, v3, :cond_4
 
-    .line 202
+    .line 203
     invoke-interface {p3, v4}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
     move-result-object v5
 
-    .line 204
+    .line 205
     move-object v6, v5
 
     check-cast v6, Landroidx/compose/ui/text/font/Font;
 
-    .line 205
+    .line 206
     invoke-virtual {p4, v6}, Ljava/util/HashSet;->add(Ljava/lang/Object;)Z
 
     move-result v6
@@ -356,7 +350,7 @@
 
     goto :goto_2
 
-    .line 208
+    .line 209
     :cond_4
     check-cast v1, Ljava/util/List;
 
@@ -373,22 +367,28 @@
     :cond_6
     move-object v0, v1
 
-    .line 74
+    .line 73
     :goto_4
-    invoke-interface {v0}, Ljava/util/List;->isEmpty()Z
+    move-object p3, v0
+
+    check-cast p3, Ljava/util/Collection;
+
+    invoke-interface {p3}, Ljava/util/Collection;->isEmpty()Z
 
     move-result p3
 
-    if-nez p3, :cond_8
+    xor-int/lit8 p3, p3, 0x1
 
-    .line 77
+    if-eqz p3, :cond_8
+
+    .line 75
     new-instance p3, Ljava/util/LinkedHashMap;
 
     invoke-direct {p3}, Ljava/util/LinkedHashMap;-><init>()V
 
     check-cast p3, Ljava/util/Map;
 
-    .line 210
+    .line 212
     invoke-interface {v0}, Ljava/util/List;->size()I
 
     move-result p4
@@ -396,15 +396,15 @@
     :goto_5
     if-ge v2, p4, :cond_7
 
-    .line 211
+    .line 213
     invoke-interface {v0, v2}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
     move-result-object v1
 
-    .line 212
+    .line 214
     check-cast v1, Landroidx/compose/ui/text/font/Font;
 
-    .line 81
+    .line 78
     :try_start_0
     sget-object v3, Landroidx/compose/ui/text/platform/AndroidTypefaceCache;->INSTANCE:Landroidx/compose/ui/text/platform/AndroidTypefaceCache;
 
@@ -420,7 +420,7 @@
 
     goto :goto_5
 
-    .line 83
+    .line 80
     :catch_0
     new-instance p0, Ljava/lang/IllegalStateException;
 
@@ -442,22 +442,26 @@
 
     throw p0
 
-    .line 87
+    .line 84
     :cond_7
     iput-object p3, p0, Landroidx/compose/ui/text/platform/AndroidFontListTypeface;->loadedTypefaces:Ljava/util/Map;
 
-    .line 90
+    .line 87
     check-cast p1, Landroidx/compose/ui/text/font/FontFamily;
 
     iput-object p1, p0, Landroidx/compose/ui/text/platform/AndroidFontListTypeface;->fontFamily:Landroidx/compose/ui/text/font/FontFamily;
 
     return-void
 
-    .line 75
+    .line 73
     :cond_8
     new-instance p0, Ljava/lang/IllegalStateException;
 
     const-string p1, "Could not match font"
+
+    invoke-virtual {p1}, Ljava/lang/Object;->toString()Ljava/lang/String;
+
+    move-result-object p1
 
     invoke-direct {p0, p1}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
 
@@ -502,7 +506,7 @@
 .method public getFontFamily()Landroidx/compose/ui/text/font/FontFamily;
     .locals 0
 
-    .line 90
+    .line 87
     iget-object p0, p0, Landroidx/compose/ui/text/platform/AndroidFontListTypeface;->fontFamily:Landroidx/compose/ui/text/font/FontFamily;
 
     return-object p0
@@ -520,13 +524,10 @@
 .method public getNativeTypeface-PYhJU0U(Landroidx/compose/ui/text/font/FontWeight;II)Landroid/graphics/Typeface;
     .locals 3
 
-    const-string v0, "fontWeight"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 97
+    .line 94
     iget-object v0, p0, Landroidx/compose/ui/text/platform/AndroidFontListTypeface;->fontMatcher$1:Landroidx/compose/ui/text/font/FontMatcher;
 
+    .line 95
     new-instance v1, Ljava/util/ArrayList;
 
     iget-object v2, p0, Landroidx/compose/ui/text/platform/AndroidFontListTypeface;->loadedTypefaces:Ljava/util/Map;
@@ -545,7 +546,7 @@
 
     move-result-object v0
 
-    .line 98
+    .line 96
     invoke-static {v0}, Lkotlin/collections/CollectionsKt;->firstOrNull(Ljava/util/List;)Ljava/lang/Object;
 
     move-result-object v0
@@ -565,7 +566,7 @@
 
     if-eqz p0, :cond_0
 
-    .line 101
+    .line 102
     invoke-static {p3, p0, v0, p1, p2}, Landroidx/compose/ui/text/font/FontSynthesis_androidKt;->synthesizeTypeface-FxwP2eA(ILjava/lang/Object;Landroidx/compose/ui/text/font/Font;Landroidx/compose/ui/text/font/FontWeight;I)Ljava/lang/Object;
 
     move-result-object p0
@@ -580,23 +581,27 @@
 
     .line 100
     :cond_0
-    new-instance p0, Ljava/lang/IllegalArgumentException;
+    new-instance p0, Ljava/lang/IllegalStateException;
 
-    const-string p1, "Required value was null."
+    const-string p1, "Could not load typeface"
 
     invoke-virtual {p1}, Ljava/lang/Object;->toString()Ljava/lang/String;
 
     move-result-object p1
 
-    invoke-direct {p0, p1}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
+    invoke-direct {p0, p1}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
 
     throw p0
 
-    .line 98
+    .line 97
     :cond_1
     new-instance p0, Ljava/lang/IllegalStateException;
 
     const-string p1, "Could not load font"
+
+    invoke-virtual {p1}, Ljava/lang/Object;->toString()Ljava/lang/String;
+
+    move-result-object p1
 
     invoke-direct {p0, p1}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
 

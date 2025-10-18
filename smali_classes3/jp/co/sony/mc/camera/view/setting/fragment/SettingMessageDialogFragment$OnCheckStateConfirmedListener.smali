@@ -42,18 +42,22 @@
 
 # virtual methods
 .method public onCheckedStateConfirmed(Z)V
-    .locals 1
+    .locals 3
 
     .line 260
     sget-boolean v0, Ljp/co/sony/mc/camera/util/CamLog;->DEBUG:Z
 
     if-eqz v0, :cond_0
 
-    const-string v0, "OnCheckStateConfirmedListener onCheckedStateConfirmed()"
+    const/4 v0, 0x1
 
-    filled-new-array {v0}, [Ljava/lang/String;
+    new-array v0, v0, [Ljava/lang/String;
 
-    move-result-object v0
+    const/4 v1, 0x0
+
+    const-string v2, "OnCheckStateConfirmedListener onCheckedStateConfirmed()"
+
+    aput-object v2, v0, v1
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 

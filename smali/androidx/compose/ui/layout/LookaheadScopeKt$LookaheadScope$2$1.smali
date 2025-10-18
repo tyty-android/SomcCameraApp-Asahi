@@ -78,7 +78,7 @@
 .method public bridge synthetic invoke(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
 
-    .line 116
+    .line 54
     check-cast p1, Landroidx/compose/ui/node/LayoutNode;
 
     invoke-virtual {p0, p1}, Landroidx/compose/ui/layout/LookaheadScopeKt$LookaheadScope$2$1;->invoke(Landroidx/compose/ui/node/LayoutNode;)V
@@ -91,13 +91,9 @@
 .method public final invoke(Landroidx/compose/ui/node/LayoutNode;)V
     .locals 0
 
-    const-string p0, "$this$init"
-
-    invoke-static {p1, p0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
     const/4 p0, 0x1
 
-    .line 116
+    .line 54
     invoke-virtual {p1, p0}, Landroidx/compose/ui/node/LayoutNode;->setVirtualLookaheadRoot$ui_release(Z)V
 
     return-void

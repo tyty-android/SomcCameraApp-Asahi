@@ -96,14 +96,6 @@
 .method public final invoke(Ljava/lang/String;Landroidx/compose/ui/Modifier$Element;)Ljava/lang/String;
     .locals 0
 
-    const-string p0, "acc"
-
-    invoke-static {p1, p0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string p0, "element"
-
-    invoke-static {p2, p0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
     .line 413
     move-object p0, p1
 

@@ -618,7 +618,13 @@
     .line 667
     new-array v9, v9, [B
 
-    fill-array-data v9, :array_0
+    aput-byte v5, v9, v5
+
+    aput-byte v5, v9, v7
+
+    const/16 v16, 0x2
+
+    aput-byte v5, v9, v16
 
     add-int/lit8 v16, v0, -0x1
 
@@ -774,15 +780,6 @@
     invoke-virtual {v0}, Ljava/nio/ByteBuffer;->rewind()Ljava/nio/Buffer;
 
     return-object v0
-
-    nop
-
-    :array_0
-    .array-data 1
-        0x0t
-        0x0t
-        0x0t
-    .end array-data
 .end method
 
 .method private getVendorTagParams(Landroid/hardware/camera2/CameraCharacteristics;Landroid/hardware/camera2/CaptureResult;)V

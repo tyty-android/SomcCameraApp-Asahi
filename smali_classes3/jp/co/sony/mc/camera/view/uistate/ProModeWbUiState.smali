@@ -4,45 +4,19 @@
 
 
 # annotations
-.annotation system Ldalvik/annotation/SourceDebugExtension;
-    value = "SMAP\nProModeWbUiState.kt\nKotlin\n*S Kotlin\n*F\n+ 1 ProModeWbUiState.kt\njp/co/sony/mc/camera/view/uistate/ProModeWbUiState\n+ 2 ArrayIntrinsics.kt\nkotlin/ArrayIntrinsicsKt\n*L\n1#1,149:1\n26#2:150\n*S KotlinDebug\n*F\n+ 1 ProModeWbUiState.kt\njp/co/sony/mc/camera/view/uistate/ProModeWbUiState\n*L\n38#1:150\n*E\n"
-.end annotation
-
 .annotation runtime Lkotlin/Metadata;
     d1 = {
-        "\u0000h\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0002\u0010\u0007\n\u0002\u0008\u000b\n\u0002\u0010\u0015\n\u0002\u0008\u0008\n\u0002\u0018\u0002\n\u0002\u0010\u000b\n\u0002\u0008\u0003\n\u0002\u0018\u0002\n\u0002\u0008\u0005\n\u0002\u0018\u0002\n\u0002\u0008\u0003\n\u0002\u0018\u0002\n\u0002\u0008\u0003\n\u0002\u0018\u0002\n\u0002\u0008\n\n\u0002\u0010\u0011\n\u0002\u0010\u0008\n\u0002\u0008\u0002\n\u0002\u0010\u0002\n\u0002\u0008\u000c\n\u0002\u0010\u000e\n\u0002\u0008\u0003\u0008\u0007\u0018\u00002\u00020\u0001B\u0005\u00a2\u0006\u0002\u0010\u0002J\u0006\u0010;\u001a\u00020<J\u0006\u0010=\u001a\u00020<J\u0015\u0010>\u001a\u0004\u0018\u00010<2\u0006\u0010?\u001a\u00020%\u00a2\u0006\u0002\u0010@J\r\u0010A\u001a\u0004\u0018\u00010<\u00a2\u0006\u0002\u0010BJ\r\u0010C\u001a\u0004\u0018\u00010<\u00a2\u0006\u0002\u0010BJ;\u0010D\u001a\u00020<2\u0006\u0010E\u001a\u0002092\u0008\u0010F\u001a\u0004\u0018\u00010\u00112\u0008\u0010G\u001a\u0004\u0018\u00010\u00052\u0008\u0010H\u001a\u0004\u0018\u00010\u00052\u0008\u0010?\u001a\u0004\u0018\u00010I\u00a2\u0006\u0002\u0010JJ\r\u0010K\u001a\u0004\u0018\u00010<\u00a2\u0006\u0002\u0010BR<\u0010\u0006\u001a\u000e\u0012\u0004\u0012\u00020\u0005\u0012\u0004\u0012\u00020\u00050\u00042\u0012\u0010\u0003\u001a\u000e\u0012\u0004\u0012\u00020\u0005\u0012\u0004\u0012\u00020\u00050\u0004@FX\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\u0008\u0007\u0010\u0008\"\u0004\u0008\t\u0010\nR\u0014\u0010\u000b\u001a\u00020\u00058BX\u0082\u0004\u00a2\u0006\u0006\u001a\u0004\u0008\u000c\u0010\rR\u0014\u0010\u000e\u001a\u00020\u00058BX\u0082\u0004\u00a2\u0006\u0006\u001a\u0004\u0008\u000f\u0010\rR\u001c\u0010\u0010\u001a\n \u0012*\u0004\u0018\u00010\u00110\u00118BX\u0082\u0004\u00a2\u0006\u0006\u001a\u0004\u0008\u0013\u0010\u0014R\u0014\u0010\u0015\u001a\u00020\u00058BX\u0082\u0004\u00a2\u0006\u0006\u001a\u0004\u0008\u0016\u0010\rR\u0011\u0010\u0017\u001a\u00020\u00058F\u00a2\u0006\u0006\u001a\u0004\u0008\u0018\u0010\rR\u0017\u0010\u0019\u001a\u0008\u0012\u0004\u0012\u00020\u001b0\u001a\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\u001c\u0010\u001dR\u001c\u0010\u001e\u001a\u0004\u0018\u00010\u001fX\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\u0008 \u0010!\"\u0004\u0008\"\u0010#R\u0011\u0010$\u001a\u00020%8F\u00a2\u0006\u0006\u001a\u0004\u0008&\u0010\'R\u0011\u0010(\u001a\u00020)\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008*\u0010+R7\u0010,\u001a(\u0012$\u0012\"\u0012\u0004\u0012\u00020\u0005\u0012\u0004\u0012\u00020\u0005 \u0012*\u0010\u0012\u0004\u0012\u00020\u0005\u0012\u0004\u0012\u00020\u0005\u0018\u00010\u00040\u00040-\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008.\u0010/R\u001a\u00100\u001a\u00020\u0005X\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\u00081\u0010\r\"\u0004\u00082\u00103R\u001a\u00104\u001a\u00020\u0005X\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\u00085\u0010\r\"\u0004\u00086\u00103R\u0016\u00107\u001a\u0008\u0012\u0004\u0012\u00020908X\u0082\u000e\u00a2\u0006\u0004\n\u0002\u0010:\u00a8\u0006L"
+        "\u0000d\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\u0008\u0003\n\u0002\u0018\u0002\n\u0002\u0008\u0003\n\u0002\u0018\u0002\n\u0002\u0008\u0005\n\u0002\u0018\u0002\n\u0002\u0008\u0003\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0010\u0007\n\u0002\u0008\u0012\n\u0002\u0010\u0011\n\u0002\u0010\u0008\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0002\u0010\u000b\n\u0002\u0008\u000b\n\u0002\u0010\u0015\n\u0002\u0008\u0003\n\u0002\u0010\u0002\n\u0002\u0008\u0005\n\u0002\u0010\u000e\n\u0002\u0008\n\u0008\u0007\u0018\u00002\u00020\u0001B\t\u0008\u0007\u00a2\u0006\u0004\u0008\u0002\u0010\u0003J;\u0010<\u001a\u00020=2\u0006\u0010>\u001a\u00020)2\u0008\u0010?\u001a\u0004\u0018\u0001092\u0008\u0010@\u001a\u0004\u0018\u00010\u00152\u0008\u0010A\u001a\u0004\u0018\u00010\u00152\u0008\u0010B\u001a\u0004\u0018\u00010C\u00a2\u0006\u0002\u0010DJ\u0006\u0010E\u001a\u00020=J\u0006\u0010F\u001a\u00020=J\r\u0010G\u001a\u0004\u0018\u00010=\u00a2\u0006\u0002\u0010HJ\r\u0010I\u001a\u0004\u0018\u00010=\u00a2\u0006\u0002\u0010HJ\r\u0010J\u001a\u0004\u0018\u00010=\u00a2\u0006\u0002\u0010HJ\u0015\u0010K\u001a\u0004\u0018\u00010=2\u0006\u0010B\u001a\u00020\u000f\u00a2\u0006\u0002\u0010LR\u0011\u0010\u0004\u001a\u00020\u0005\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\u0006\u0010\u0007R\u001c\u0010\u0008\u001a\u0004\u0018\u00010\tX\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\u0008\n\u0010\u000b\"\u0004\u0008\u000c\u0010\rR\u0011\u0010\u000e\u001a\u00020\u000f8F\u00a2\u0006\u0006\u001a\u0004\u0008\u0010\u0010\u0011R7\u0010\u0012\u001a(\u0012$\u0012\"\u0012\u0004\u0012\u00020\u0015\u0012\u0004\u0012\u00020\u0015 \u0016*\u0010\u0012\u0004\u0012\u00020\u0015\u0012\u0004\u0012\u00020\u0015\u0018\u00010\u00140\u00140\u0013\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\u0017\u0010\u0018R<\u0010\u001a\u001a\u000e\u0012\u0004\u0012\u00020\u0015\u0012\u0004\u0012\u00020\u00150\u00142\u0012\u0010\u0019\u001a\u000e\u0012\u0004\u0012\u00020\u0015\u0012\u0004\u0012\u00020\u00150\u0014@FX\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\u0008\u001b\u0010\u001c\"\u0004\u0008\u001d\u0010\u001eR\u001a\u0010\u001f\u001a\u00020\u0015X\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\u0008 \u0010!\"\u0004\u0008\"\u0010#R\u001a\u0010$\u001a\u00020\u0015X\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\u0008%\u0010!\"\u0004\u0008&\u0010#R\u0016\u0010\'\u001a\u0008\u0012\u0004\u0012\u00020)0(X\u0082\u000e\u00a2\u0006\u0004\n\u0002\u0010*R\u0017\u0010+\u001a\u0008\u0012\u0004\u0012\u00020-0,\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008.\u0010/R\u0011\u00100\u001a\u00020\u00158F\u00a2\u0006\u0006\u001a\u0004\u00081\u0010!R\u0014\u00102\u001a\u00020\u00158BX\u0082\u0004\u00a2\u0006\u0006\u001a\u0004\u00083\u0010!R\u0014\u00104\u001a\u00020\u00158BX\u0082\u0004\u00a2\u0006\u0006\u001a\u0004\u00085\u0010!R\u0014\u00106\u001a\u00020\u00158BX\u0082\u0004\u00a2\u0006\u0006\u001a\u0004\u00087\u0010!R\u001c\u00108\u001a\n \u0016*\u0004\u0018\u000109098BX\u0082\u0004\u00a2\u0006\u0006\u001a\u0004\u0008:\u0010;\u00a8\u0006M"
     }
     d2 = {
         "Ljp/co/sony/mc/camera/view/uistate/ProModeWbUiState;",
         "",
+        "<init>",
         "()V",
-        "value",
-        "Lkotlin/Pair;",
-        "",
-        "_tempAbGm",
-        "get_tempAbGm",
-        "()Lkotlin/Pair;",
-        "set_tempAbGm",
-        "(Lkotlin/Pair;)V",
-        "currentAb",
-        "getCurrentAb",
-        "()F",
-        "currentCustomGm",
-        "getCurrentCustomGm",
-        "currentCustomRatio",
-        "",
-        "kotlin.jvm.PlatformType",
-        "getCurrentCustomRatio",
-        "()[I",
-        "currentGm",
-        "getCurrentGm",
-        "currentTemperature",
-        "getCurrentTemperature",
-        "onCustomFinished",
-        "Ljp/co/sony/mc/camera/view/viewmodel/LiveEvent;",
-        "",
-        "getOnCustomFinished",
-        "()Ljp/co/sony/mc/camera/view/viewmodel/LiveEvent;",
+        "settings",
+        "Ljp/co/sony/mc/camera/setting/CameraProSetting;",
+        "getSettings",
+        "()Ljp/co/sony/mc/camera/setting/CameraProSetting;",
         "operator",
         "Ljp/co/sony/mc/camera/view/CameraOperator;",
         "getOperator",
@@ -53,16 +27,22 @@
         "Ljp/co/sony/mc/camera/configuration/parameters/WhiteBalance;",
         "getSelectedWhiteBalance",
         "()Ljp/co/sony/mc/camera/configuration/parameters/WhiteBalance;",
-        "settings",
-        "Ljp/co/sony/mc/camera/setting/CameraProSetting;",
-        "getSettings",
-        "()Ljp/co/sony/mc/camera/setting/CameraProSetting;",
         "tempAbGm",
         "Landroidx/lifecycle/MutableLiveData;",
+        "Lkotlin/Pair;",
+        "",
+        "kotlin.jvm.PlatformType",
         "getTempAbGm",
         "()Landroidx/lifecycle/MutableLiveData;",
+        "value",
+        "_tempAbGm",
+        "get_tempAbGm",
+        "()Lkotlin/Pair;",
+        "set_tempAbGm",
+        "(Lkotlin/Pair;)V",
         "tempCustomGm",
         "getTempCustomGm",
+        "()F",
         "setTempCustomGm",
         "(F)V",
         "tempCustomTemperature",
@@ -72,29 +52,46 @@
         "",
         "",
         "[Ljava/lang/Integer;",
-        "applyTempValue",
+        "onCustomFinished",
+        "Ljp/co/sony/mc/camera/view/viewmodel/LiveEvent;",
         "",
-        "assignTempValueToCurrent",
-        "changeWhiteBalance",
-        "whiteBalance",
-        "(Ljp/co/sony/mc/camera/configuration/parameters/WhiteBalance;)Lkotlin/Unit;",
-        "fetchCustomWb",
-        "()Lkotlin/Unit;",
-        "finishCustomWb",
+        "getOnCustomFinished",
+        "()Ljp/co/sony/mc/camera/view/viewmodel/LiveEvent;",
+        "currentTemperature",
+        "getCurrentTemperature",
+        "currentAb",
+        "getCurrentAb",
+        "currentGm",
+        "getCurrentGm",
+        "currentCustomGm",
+        "getCurrentCustomGm",
+        "currentCustomRatio",
+        "",
+        "getCurrentCustomRatio",
+        "()[I",
         "onWbCustomFinished",
+        "",
         "result",
         "ratio",
         "temperature",
         "gm",
+        "whiteBalance",
         "",
         "(I[ILjava/lang/Float;Ljava/lang/Float;Ljava/lang/String;)V",
+        "assignTempValueToCurrent",
+        "applyTempValue",
         "prepareFetchCustomWb",
+        "()Lkotlin/Unit;",
+        "fetchCustomWb",
+        "finishCustomWb",
+        "changeWhiteBalance",
+        "(Ljp/co/sony/mc/camera/configuration/parameters/WhiteBalance;)Lkotlin/Unit;",
         "SomcCamera_release"
     }
     k = 0x1
     mv = {
-        0x1,
-        0x9,
+        0x2,
+        0x0,
         0x0
     }
     xi = 0x30
@@ -200,10 +197,9 @@
 
     const/4 v0, 0x0
 
-    .line 150
+    .line 38
     new-array v0, v0, [Ljava/lang/Integer;
 
-    .line 38
     iput-object v0, p0, Ljp/co/sony/mc/camera/view/uistate/ProModeWbUiState;->tempWbRatio:[Ljava/lang/Integer;
 
     .line 40

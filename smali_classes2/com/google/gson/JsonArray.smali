@@ -33,10 +33,10 @@
 .method public constructor <init>()V
     .locals 1
 
-    .line 45
+    .line 47
     invoke-direct {p0}, Lcom/google/gson/JsonElement;-><init>()V
 
-    .line 46
+    .line 48
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
@@ -49,10 +49,10 @@
 .method public constructor <init>(I)V
     .locals 1
 
-    .line 58
+    .line 59
     invoke-direct {p0}, Lcom/google/gson/JsonElement;-><init>()V
 
-    .line 59
+    .line 60
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0, p1}, Ljava/util/ArrayList;-><init>(I)V
@@ -65,7 +65,7 @@
 .method private getAsSingleElement()Lcom/google/gson/JsonElement;
     .locals 3
 
-    .line 232
+    .line 236
     iget-object v0, p0, Lcom/google/gson/JsonArray;->elements:Ljava/util/ArrayList;
 
     invoke-virtual {v0}, Ljava/util/ArrayList;->size()I
@@ -76,7 +76,7 @@
 
     if-ne v0, v1, :cond_0
 
-    .line 234
+    .line 238
     iget-object p0, p0, Lcom/google/gson/JsonArray;->elements:Ljava/util/ArrayList;
 
     const/4 v0, 0x0
@@ -89,7 +89,7 @@
 
     return-object p0
 
-    .line 236
+    .line 240
     :cond_0
     new-instance p0, Ljava/lang/IllegalStateException;
 
@@ -119,10 +119,10 @@
 
     if-nez p1, :cond_0
 
-    .line 126
+    .line 127
     sget-object p1, Lcom/google/gson/JsonNull;->INSTANCE:Lcom/google/gson/JsonNull;
 
-    .line 128
+    .line 129
     :cond_0
     iget-object p0, p0, Lcom/google/gson/JsonArray;->elements:Ljava/util/ArrayList;
 
@@ -134,7 +134,7 @@
 .method public add(Ljava/lang/Boolean;)V
     .locals 1
 
-    .line 86
+    .line 87
     iget-object p0, p0, Lcom/google/gson/JsonArray;->elements:Ljava/util/ArrayList;
 
     if-nez p1, :cond_0
@@ -159,7 +159,7 @@
 .method public add(Ljava/lang/Character;)V
     .locals 1
 
-    .line 96
+    .line 97
     iget-object p0, p0, Lcom/google/gson/JsonArray;->elements:Ljava/util/ArrayList;
 
     if-nez p1, :cond_0
@@ -184,7 +184,7 @@
 .method public add(Ljava/lang/Number;)V
     .locals 1
 
-    .line 106
+    .line 107
     iget-object p0, p0, Lcom/google/gson/JsonArray;->elements:Ljava/util/ArrayList;
 
     if-nez p1, :cond_0
@@ -209,7 +209,7 @@
 .method public add(Ljava/lang/String;)V
     .locals 1
 
-    .line 116
+    .line 117
     iget-object p0, p0, Lcom/google/gson/JsonArray;->elements:Ljava/util/ArrayList;
 
     if-nez p1, :cond_0
@@ -234,7 +234,7 @@
 .method public addAll(Lcom/google/gson/JsonArray;)V
     .locals 0
 
-    .line 137
+    .line 138
     iget-object p0, p0, Lcom/google/gson/JsonArray;->elements:Ljava/util/ArrayList;
 
     iget-object p1, p1, Lcom/google/gson/JsonArray;->elements:Ljava/util/ArrayList;
@@ -255,7 +255,7 @@
         }
     .end annotation
 
-    .line 412
+    .line 416
     new-instance v0, Lcom/google/gson/internal/NonNullElementWrapperList;
 
     iget-object p0, p0, Lcom/google/gson/JsonArray;->elements:Ljava/util/ArrayList;
@@ -268,7 +268,7 @@
 .method public contains(Lcom/google/gson/JsonElement;)Z
     .locals 0
 
-    .line 186
+    .line 190
     iget-object p0, p0, Lcom/google/gson/JsonArray;->elements:Ljava/util/ArrayList;
 
     invoke-virtual {p0, p1}, Ljava/util/ArrayList;->contains(Ljava/lang/Object;)Z
@@ -281,7 +281,7 @@
 .method public deepCopy()Lcom/google/gson/JsonArray;
     .locals 2
 
-    .line 69
+    .line 70
     iget-object v0, p0, Lcom/google/gson/JsonArray;->elements:Ljava/util/ArrayList;
 
     invoke-virtual {v0}, Ljava/util/ArrayList;->isEmpty()Z
@@ -290,7 +290,7 @@
 
     if-nez v0, :cond_1
 
-    .line 70
+    .line 71
     new-instance v0, Lcom/google/gson/JsonArray;
 
     iget-object v1, p0, Lcom/google/gson/JsonArray;->elements:Ljava/util/ArrayList;
@@ -301,7 +301,7 @@
 
     invoke-direct {v0, v1}, Lcom/google/gson/JsonArray;-><init>(I)V
 
-    .line 71
+    .line 72
     iget-object p0, p0, Lcom/google/gson/JsonArray;->elements:Ljava/util/ArrayList;
 
     invoke-virtual {p0}, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;
@@ -321,7 +321,7 @@
 
     check-cast v1, Lcom/google/gson/JsonElement;
 
-    .line 72
+    .line 73
     invoke-virtual {v1}, Lcom/google/gson/JsonElement;->deepCopy()Lcom/google/gson/JsonElement;
 
     move-result-object v1
@@ -333,7 +333,7 @@
     :cond_0
     return-object v0
 
-    .line 76
+    .line 77
     :cond_1
     new-instance p0, Lcom/google/gson/JsonArray;
 
@@ -345,7 +345,7 @@
 .method public bridge synthetic deepCopy()Lcom/google/gson/JsonElement;
     .locals 0
 
-    .line 38
+    .line 42
     invoke-virtual {p0}, Lcom/google/gson/JsonArray;->deepCopy()Lcom/google/gson/JsonArray;
 
     move-result-object p0
@@ -358,7 +358,7 @@
 
     if-eq p1, p0, :cond_1
 
-    .line 422
+    .line 425
     instance-of v0, p1, Lcom/google/gson/JsonArray;
 
     if-eqz v0, :cond_0
@@ -393,7 +393,7 @@
 .method public get(I)Lcom/google/gson/JsonElement;
     .locals 0
 
-    .line 228
+    .line 232
     iget-object p0, p0, Lcom/google/gson/JsonArray;->elements:Ljava/util/ArrayList;
 
     invoke-virtual {p0, p1}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
@@ -408,7 +408,7 @@
 .method public getAsBigDecimal()Ljava/math/BigDecimal;
     .locals 0
 
-    .line 289
+    .line 293
     invoke-direct {p0}, Lcom/google/gson/JsonArray;->getAsSingleElement()Lcom/google/gson/JsonElement;
 
     move-result-object p0
@@ -423,7 +423,7 @@
 .method public getAsBigInteger()Ljava/math/BigInteger;
     .locals 0
 
-    .line 303
+    .line 307
     invoke-direct {p0}, Lcom/google/gson/JsonArray;->getAsSingleElement()Lcom/google/gson/JsonElement;
 
     move-result-object p0
@@ -438,7 +438,7 @@
 .method public getAsBoolean()Z
     .locals 0
 
-    .line 397
+    .line 401
     invoke-direct {p0}, Lcom/google/gson/JsonArray;->getAsSingleElement()Lcom/google/gson/JsonElement;
 
     move-result-object p0
@@ -453,7 +453,7 @@
 .method public getAsByte()B
     .locals 0
 
-    .line 355
+    .line 359
     invoke-direct {p0}, Lcom/google/gson/JsonArray;->getAsSingleElement()Lcom/google/gson/JsonElement;
 
     move-result-object p0
@@ -470,7 +470,7 @@
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
-    .line 371
+    .line 375
     invoke-direct {p0}, Lcom/google/gson/JsonArray;->getAsSingleElement()Lcom/google/gson/JsonElement;
 
     move-result-object p0
@@ -485,7 +485,7 @@
 .method public getAsDouble()D
     .locals 2
 
-    .line 275
+    .line 279
     invoke-direct {p0}, Lcom/google/gson/JsonArray;->getAsSingleElement()Lcom/google/gson/JsonElement;
 
     move-result-object p0
@@ -500,7 +500,7 @@
 .method public getAsFloat()F
     .locals 0
 
-    .line 316
+    .line 320
     invoke-direct {p0}, Lcom/google/gson/JsonArray;->getAsSingleElement()Lcom/google/gson/JsonElement;
 
     move-result-object p0
@@ -515,7 +515,7 @@
 .method public getAsInt()I
     .locals 0
 
-    .line 342
+    .line 346
     invoke-direct {p0}, Lcom/google/gson/JsonArray;->getAsSingleElement()Lcom/google/gson/JsonElement;
 
     move-result-object p0
@@ -530,7 +530,7 @@
 .method public getAsLong()J
     .locals 2
 
-    .line 329
+    .line 333
     invoke-direct {p0}, Lcom/google/gson/JsonArray;->getAsSingleElement()Lcom/google/gson/JsonElement;
 
     move-result-object p0
@@ -545,7 +545,7 @@
 .method public getAsNumber()Ljava/lang/Number;
     .locals 0
 
-    .line 249
+    .line 253
     invoke-direct {p0}, Lcom/google/gson/JsonArray;->getAsSingleElement()Lcom/google/gson/JsonElement;
 
     move-result-object p0
@@ -560,7 +560,7 @@
 .method public getAsShort()S
     .locals 0
 
-    .line 384
+    .line 388
     invoke-direct {p0}, Lcom/google/gson/JsonArray;->getAsSingleElement()Lcom/google/gson/JsonElement;
 
     move-result-object p0
@@ -575,7 +575,7 @@
 .method public getAsString()Ljava/lang/String;
     .locals 0
 
-    .line 262
+    .line 266
     invoke-direct {p0}, Lcom/google/gson/JsonArray;->getAsSingleElement()Lcom/google/gson/JsonElement;
 
     move-result-object p0
@@ -590,7 +590,7 @@
 .method public hashCode()I
     .locals 0
 
-    .line 431
+    .line 434
     iget-object p0, p0, Lcom/google/gson/JsonArray;->elements:Ljava/util/ArrayList;
 
     invoke-virtual {p0}, Ljava/util/ArrayList;->hashCode()I
@@ -603,7 +603,7 @@
 .method public isEmpty()Z
     .locals 0
 
-    .line 205
+    .line 209
     iget-object p0, p0, Lcom/google/gson/JsonArray;->elements:Ljava/util/ArrayList;
 
     invoke-virtual {p0}, Ljava/util/ArrayList;->isEmpty()Z
@@ -624,7 +624,7 @@
         }
     .end annotation
 
-    .line 216
+    .line 220
     iget-object p0, p0, Lcom/google/gson/JsonArray;->elements:Ljava/util/ArrayList;
 
     invoke-virtual {p0}, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;
@@ -637,7 +637,7 @@
 .method public remove(I)Lcom/google/gson/JsonElement;
     .locals 0
 
-    .line 175
+    .line 179
     iget-object p0, p0, Lcom/google/gson/JsonArray;->elements:Ljava/util/ArrayList;
 
     invoke-virtual {p0, p1}, Ljava/util/ArrayList;->remove(I)Ljava/lang/Object;
@@ -652,7 +652,7 @@
 .method public remove(Lcom/google/gson/JsonElement;)Z
     .locals 0
 
-    .line 161
+    .line 164
     iget-object p0, p0, Lcom/google/gson/JsonArray;->elements:Ljava/util/ArrayList;
 
     invoke-virtual {p0, p1}, Ljava/util/ArrayList;->remove(Ljava/lang/Object;)Z
@@ -665,7 +665,7 @@
 .method public set(ILcom/google/gson/JsonElement;)Lcom/google/gson/JsonElement;
     .locals 0
 
-    .line 149
+    .line 151
     iget-object p0, p0, Lcom/google/gson/JsonArray;->elements:Ljava/util/ArrayList;
 
     if-nez p2, :cond_0
@@ -685,7 +685,7 @@
 .method public size()I
     .locals 0
 
-    .line 195
+    .line 199
     iget-object p0, p0, Lcom/google/gson/JsonArray;->elements:Ljava/util/ArrayList;
 
     invoke-virtual {p0}, Ljava/util/ArrayList;->size()I

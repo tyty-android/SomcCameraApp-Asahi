@@ -12,7 +12,7 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0x8
+    accessFlags = 0xa
     name = "ScoredComparator"
 .end annotation
 
@@ -20,10 +20,8 @@
     value = {
         "Ljava/lang/Object;",
         "Ljava/util/Comparator<",
-        "Ljava/util/Map$Entry<",
-        "Ljava/lang/Integer;",
-        "Ljava/lang/Double;",
-        ">;>;"
+        "Lcom/google/android/material/color/utilities/Score$ScoredHCT;",
+        ">;"
     }
 .end annotation
 
@@ -32,7 +30,7 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 177
+    .line 178
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -40,55 +38,32 @@
 
 
 # virtual methods
-.method public bridge synthetic compare(Ljava/lang/Object;Ljava/lang/Object;)I
-    .locals 0
+.method public compare(Lcom/google/android/material/color/utilities/Score$ScoredHCT;Lcom/google/android/material/color/utilities/Score$ScoredHCT;)I
+    .locals 2
 
-    .line 176
-    check-cast p1, Ljava/util/Map$Entry;
+    .line 182
+    iget-wide v0, p2, Lcom/google/android/material/color/utilities/Score$ScoredHCT;->score:D
 
-    check-cast p2, Ljava/util/Map$Entry;
+    iget-wide p0, p1, Lcom/google/android/material/color/utilities/Score$ScoredHCT;->score:D
 
-    invoke-virtual {p0, p1, p2}, Lcom/google/android/material/color/utilities/Score$ScoredComparator;->compare(Ljava/util/Map$Entry;Ljava/util/Map$Entry;)I
+    invoke-static {v0, v1, p0, p1}, Ljava/lang/Double;->compare(DD)I
 
     move-result p0
 
     return p0
 .end method
 
-.method public compare(Ljava/util/Map$Entry;Ljava/util/Map$Entry;)I
+.method public bridge synthetic compare(Ljava/lang/Object;Ljava/lang/Object;)I
     .locals 0
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(",
-            "Ljava/util/Map$Entry<",
-            "Ljava/lang/Integer;",
-            "Ljava/lang/Double;",
-            ">;",
-            "Ljava/util/Map$Entry<",
-            "Ljava/lang/Integer;",
-            "Ljava/lang/Double;",
-            ">;)I"
-        }
-    .end annotation
 
-    .line 181
-    invoke-interface {p1}, Ljava/util/Map$Entry;->getValue()Ljava/lang/Object;
+    .line 177
+    check-cast p1, Lcom/google/android/material/color/utilities/Score$ScoredHCT;
 
-    move-result-object p0
+    check-cast p2, Lcom/google/android/material/color/utilities/Score$ScoredHCT;
 
-    check-cast p0, Ljava/lang/Double;
-
-    invoke-interface {p2}, Ljava/util/Map$Entry;->getValue()Ljava/lang/Object;
-
-    move-result-object p1
-
-    check-cast p1, Ljava/lang/Double;
-
-    invoke-virtual {p0, p1}, Ljava/lang/Double;->compareTo(Ljava/lang/Double;)I
+    invoke-virtual {p0, p1, p2}, Lcom/google/android/material/color/utilities/Score$ScoredComparator;->compare(Lcom/google/android/material/color/utilities/Score$ScoredHCT;Lcom/google/android/material/color/utilities/Score$ScoredHCT;)I
 
     move-result p0
-
-    neg-int p0, p0
 
     return p0
 .end method

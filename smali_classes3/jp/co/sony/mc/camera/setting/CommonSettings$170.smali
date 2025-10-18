@@ -21,7 +21,7 @@
 .method constructor <init>()V
     .locals 0
 
-    .line 1619
+    .line 1625
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -42,8 +42,8 @@
         }
     .end annotation
 
-    .line 1623
-    invoke-static {}, Ljp/co/sony/mc/camera/configuration/parameters/StreamingPrivacyPolicy;->getDefaultValue()Ljp/co/sony/mc/camera/configuration/parameters/StreamingPrivacyPolicy;
+    .line 1629
+    invoke-static {}, Ljp/co/sony/mc/camera/configuration/parameters/StreamingNotesOnUse;->getDefaultValue()Ljp/co/sony/mc/camera/configuration/parameters/StreamingNotesOnUse;
 
     move-result-object p0
 

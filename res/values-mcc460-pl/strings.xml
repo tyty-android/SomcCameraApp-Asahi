@@ -19,5 +19,4 @@ Włącz WLAN w USTAWIENIACH."</string>
     <string name="camera_strings_runtime_permission_rationale_network_cta_txt">"Ta aplikacja korzysta z sieci WLAN i z sieci komórkowej w celu przesyłania do internetu danych użytkownika (zarejestrowanych zdjęć i filmów, danych głosowych, informacji o koncie w ramach używanych usług).
 Mogą być naliczane opłaty za transmisję danych zależnie od umowy z operatorem sieci lub z dostawcą usług internetowych."</string>
     <string name="camera_strings_streaming_error_wifi_disconnected_txt">Brak połączenia WLAN</string>
-    <string name="mv_wireless_network_txt">Uż. dan. w sieci WLAN i kom.</string>
 </resources>

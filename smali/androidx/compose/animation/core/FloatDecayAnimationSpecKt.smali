@@ -35,7 +35,7 @@
 
 # direct methods
 .method public static final createAnimation(Landroidx/compose/animation/core/FloatDecayAnimationSpec;FF)Landroidx/compose/animation/core/Animation;
-    .locals 1
+    .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -48,11 +48,7 @@
         }
     .end annotation
 
-    const-string v0, "<this>"
-
-    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 171
+    .line 172
     invoke-static {p0, p1, p2}, Landroidx/compose/animation/core/AnimationKt;->DecayAnimation(Landroidx/compose/animation/core/FloatDecayAnimationSpec;FF)Landroidx/compose/animation/core/DecayAnimation;
 
     move-result-object p0
@@ -71,7 +67,7 @@
 
     const/4 p2, 0x0
 
-    .line 167
+    .line 168
     :cond_0
     invoke-static {p0, p1, p2}, Landroidx/compose/animation/core/FloatDecayAnimationSpecKt;->createAnimation(Landroidx/compose/animation/core/FloatDecayAnimationSpec;FF)Landroidx/compose/animation/core/Animation;
 

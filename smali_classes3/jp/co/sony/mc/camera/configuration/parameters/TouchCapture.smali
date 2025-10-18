@@ -73,7 +73,7 @@
 
     const/4 v3, -0x1
 
-    const v4, 0x7f1103bf
+    const v4, 0x7f1103f4
 
     move-object v0, v7
 
@@ -115,7 +115,7 @@
 
     const/4 v4, -0x1
 
-    const v5, 0x7f1103be
+    const v5, 0x7f1103f3
 
     move-object v1, v0
 

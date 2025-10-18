@@ -65,7 +65,7 @@
     .line 17
     new-instance v0, Ljp/co/sony/mc/camera/configuration/parameters/VolumeKey;
 
-    const v1, 0x7f110467
+    const v1, 0x7f1104a1
 
     const-string v2, "ZOOM"
 
@@ -82,7 +82,7 @@
 
     const/4 v1, 0x1
 
-    const v2, 0x7f110466
+    const v2, 0x7f1104a0
 
     const-string v3, "VOLUME"
 
@@ -95,7 +95,7 @@
 
     const/4 v1, 0x2
 
-    const v2, 0x7f110464
+    const v2, 0x7f11049e
 
     const-string v3, "HW_CAMERA_KEY"
 
@@ -108,7 +108,7 @@
 
     const/4 v1, 0x3
 
-    const v2, 0x7f1103be
+    const v2, 0x7f1103f3
 
     const-string v3, "OFF"
 

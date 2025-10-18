@@ -6,11 +6,12 @@
 # annotations
 .annotation runtime Lkotlin/Metadata;
     d1 = {
-        "\u0000\u0018\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\u0008\u0002\n\u0002\u0010\u0008\n\u0000\n\u0002\u0010\t\n\u0000\u0008\u00c7\u0002\u0018\u00002\u00020\u0001B\u0007\u0008\u0002\u00a2\u0006\u0002\u0010\u0002J\u000e\u0010\u0003\u001a\u00020\u00042\u0006\u0010\u0005\u001a\u00020\u0006\u00a8\u0006\u0007"
+        "\u0000\u0018\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\u0008\u0003\n\u0002\u0010\u0008\n\u0000\n\u0002\u0010\t\n\u0000\u0008\u00c7\u0002\u0018\u00002\u00020\u0001B\t\u0008\u0003\u00a2\u0006\u0004\u0008\u0002\u0010\u0003J\u000e\u0010\u0004\u001a\u00020\u00052\u0006\u0010\u0006\u001a\u00020\u0007\u00a8\u0006\u0008"
     }
     d2 = {
         "Ljp/co/sony/mc/camera/rtmp/YouTubeLiveStreamingChatColorPicker;",
         "",
+        "<init>",
         "()V",
         "getChatTextColor",
         "",
@@ -20,8 +21,8 @@
     }
     k = 0x1
     mv = {
-        0x1,
-        0x9,
+        0x2,
+        0x0,
         0x0
     }
     xi = 0x30
@@ -67,7 +68,7 @@
 
     if-nez p0, :cond_0
 
-    const p0, 0x7f06010a
+    const p0, 0x7f060101
 
     goto :goto_0
 
@@ -78,7 +79,7 @@
 
     if-nez p0, :cond_1
 
-    const p0, 0x7f06010b
+    const p0, 0x7f060102
 
     goto :goto_0
 
@@ -89,7 +90,7 @@
 
     if-nez p0, :cond_2
 
-    const p0, 0x7f06010c
+    const p0, 0x7f060103
 
     goto :goto_0
 
@@ -100,7 +101,7 @@
 
     if-nez p0, :cond_3
 
-    const p0, 0x7f06010d
+    const p0, 0x7f060104
 
     goto :goto_0
 
@@ -111,7 +112,7 @@
 
     if-nez p0, :cond_4
 
-    const p0, 0x7f06010e
+    const p0, 0x7f060105
 
     goto :goto_0
 
@@ -122,12 +123,12 @@
 
     if-nez p0, :cond_5
 
-    const p0, 0x7f06010f
+    const p0, 0x7f060106
 
     goto :goto_0
 
     :cond_5
-    const p0, 0x7f060110
+    const p0, 0x7f060107
 
     :goto_0
     return p0

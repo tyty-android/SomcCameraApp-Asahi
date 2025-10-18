@@ -42,7 +42,7 @@
 .method private static synthetic $values()[Ljp/co/sony/mc/camera/device/CaptureResultNotifier$WbCustomStatus;
     .locals 4
 
-    .line 708
+    .line 715
     sget-object v0, Ljp/co/sony/mc/camera/device/CaptureResultNotifier$WbCustomStatus;->INACTIVE:Ljp/co/sony/mc/camera/device/CaptureResultNotifier$WbCustomStatus;
 
     sget-object v1, Ljp/co/sony/mc/camera/device/CaptureResultNotifier$WbCustomStatus;->SEARCHING:Ljp/co/sony/mc/camera/device/CaptureResultNotifier$WbCustomStatus;
@@ -61,7 +61,7 @@
 .method static constructor <clinit>()V
     .locals 3
 
-    .line 709
+    .line 716
     new-instance v0, Ljp/co/sony/mc/camera/device/CaptureResultNotifier$WbCustomStatus;
 
     const-string v1, "INACTIVE"
@@ -72,7 +72,7 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/device/CaptureResultNotifier$WbCustomStatus;->INACTIVE:Ljp/co/sony/mc/camera/device/CaptureResultNotifier$WbCustomStatus;
 
-    .line 710
+    .line 717
     new-instance v0, Ljp/co/sony/mc/camera/device/CaptureResultNotifier$WbCustomStatus;
 
     const-string v1, "SEARCHING"
@@ -83,7 +83,7 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/device/CaptureResultNotifier$WbCustomStatus;->SEARCHING:Ljp/co/sony/mc/camera/device/CaptureResultNotifier$WbCustomStatus;
 
-    .line 711
+    .line 718
     new-instance v0, Ljp/co/sony/mc/camera/device/CaptureResultNotifier$WbCustomStatus;
 
     const-string v1, "CONVERGED"
@@ -94,7 +94,7 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/device/CaptureResultNotifier$WbCustomStatus;->CONVERGED:Ljp/co/sony/mc/camera/device/CaptureResultNotifier$WbCustomStatus;
 
-    .line 712
+    .line 719
     new-instance v0, Ljp/co/sony/mc/camera/device/CaptureResultNotifier$WbCustomStatus;
 
     const-string v1, "FAILED"
@@ -105,7 +105,7 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/device/CaptureResultNotifier$WbCustomStatus;->FAILED:Ljp/co/sony/mc/camera/device/CaptureResultNotifier$WbCustomStatus;
 
-    .line 708
+    .line 715
     invoke-static {}, Ljp/co/sony/mc/camera/device/CaptureResultNotifier$WbCustomStatus;->$values()[Ljp/co/sony/mc/camera/device/CaptureResultNotifier$WbCustomStatus;
 
     move-result-object v0
@@ -123,10 +123,10 @@
         }
     .end annotation
 
-    .line 716
+    .line 723
     invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
-    .line 717
+    .line 724
     iput p3, p0, Ljp/co/sony/mc/camera/device/CaptureResultNotifier$WbCustomStatus;->mStatus:I
 
     return-void
@@ -135,12 +135,12 @@
 .method public static getStatus(I)Ljp/co/sony/mc/camera/device/CaptureResultNotifier$WbCustomStatus;
     .locals 4
 
-    .line 725
+    .line 732
     invoke-static {}, Ljp/co/sony/mc/camera/device/CaptureResultNotifier$WbCustomStatus;->values()[Ljp/co/sony/mc/camera/device/CaptureResultNotifier$WbCustomStatus;
 
     move-result-object v0
 
-    .line 726
+    .line 733
     array-length v1, v0
 
     const/4 v2, 0x0
@@ -150,14 +150,14 @@
 
     aget-object v3, v0, v2
 
-    .line 727
+    .line 734
     invoke-virtual {v3}, Ljp/co/sony/mc/camera/device/CaptureResultNotifier$WbCustomStatus;->getWbCustomStatus()I
 
     move-result v3
 
     if-ne v3, p0, :cond_0
 
-    .line 728
+    .line 735
     aget-object p0, v0, p0
 
     return-object p0
@@ -176,7 +176,7 @@
 .method public static valueOf(Ljava/lang/String;)Ljp/co/sony/mc/camera/device/CaptureResultNotifier$WbCustomStatus;
     .locals 1
 
-    .line 708
+    .line 715
     const-class v0, Ljp/co/sony/mc/camera/device/CaptureResultNotifier$WbCustomStatus;
 
     invoke-static {v0, p0}, Ljava/lang/Enum;->valueOf(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
@@ -191,7 +191,7 @@
 .method public static values()[Ljp/co/sony/mc/camera/device/CaptureResultNotifier$WbCustomStatus;
     .locals 1
 
-    .line 708
+    .line 715
     sget-object v0, Ljp/co/sony/mc/camera/device/CaptureResultNotifier$WbCustomStatus;->$VALUES:[Ljp/co/sony/mc/camera/device/CaptureResultNotifier$WbCustomStatus;
 
     invoke-virtual {v0}, [Ljp/co/sony/mc/camera/device/CaptureResultNotifier$WbCustomStatus;->clone()Ljava/lang/Object;
@@ -208,7 +208,7 @@
 .method public getWbCustomStatus()I
     .locals 0
 
-    .line 721
+    .line 728
     iget p0, p0, Ljp/co/sony/mc/camera/device/CaptureResultNotifier$WbCustomStatus;->mStatus:I
 
     return p0

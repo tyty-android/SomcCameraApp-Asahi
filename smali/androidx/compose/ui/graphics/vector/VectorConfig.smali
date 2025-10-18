@@ -39,7 +39,7 @@
 .method public static synthetic access$getOrDefault$jd(Landroidx/compose/ui/graphics/vector/VectorConfig;Landroidx/compose/ui/graphics/vector/VectorProperty;Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
 
-    .line 313
+    .line 298
     invoke-super {p0, p1, p2}, Landroidx/compose/ui/graphics/vector/VectorConfig;->getOrDefault(Landroidx/compose/ui/graphics/vector/VectorProperty;Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p0
@@ -60,10 +60,6 @@
             "TT;>;TT;)TT;"
         }
     .end annotation
-
-    const-string p0, "property"
-
-    invoke-static {p1, p0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
     return-object p2
 .end method

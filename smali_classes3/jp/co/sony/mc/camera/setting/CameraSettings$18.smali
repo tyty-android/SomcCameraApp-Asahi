@@ -21,7 +21,7 @@
 .method constructor <init>()V
     .locals 0
 
-    .line 682
+    .line 736
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -42,11 +42,11 @@
         }
     .end annotation
 
-    .line 686
+    .line 740
     check-cast p1, Ljp/co/sony/mc/camera/setting/CameraSettings;
 
-    .line 687
-    invoke-static {p1}, Ljp/co/sony/mc/camera/setting/CameraSettings;->-$$Nest$mgetMetering(Ljp/co/sony/mc/camera/setting/CameraSettings;)Ljp/co/sony/mc/camera/configuration/parameters/Metering;
+    .line 741
+    invoke-static {p1}, Ljp/co/sony/mc/camera/setting/CameraSettings;->-$$Nest$mgetIso(Ljp/co/sony/mc/camera/setting/CameraSettings;)Ljp/co/sony/mc/camera/configuration/parameters/Iso;
 
     move-result-object p0
 

@@ -48,8 +48,6 @@
 
 
 # instance fields
-.field final synthetic $$dirty:I
-
 .field final synthetic $content:Lkotlin/jvm/functions/Function2;
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -66,7 +64,7 @@
 
 
 # direct methods
-.method constructor <init>(JLkotlin/jvm/functions/Function2;I)V
+.method constructor <init>(JLkotlin/jvm/functions/Function2;)V
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -77,15 +75,13 @@
             "-",
             "Ljava/lang/Integer;",
             "Lkotlin/Unit;",
-            ">;I)V"
+            ">;)V"
         }
     .end annotation
 
     iput-wide p1, p0, Landroidx/compose/material/FloatingActionButtonKt$FloatingActionButton$3;->$contentColor:J
 
     iput-object p3, p0, Landroidx/compose/material/FloatingActionButtonKt$FloatingActionButton$3;->$content:Lkotlin/jvm/functions/Function2;
-
-    iput p4, p0, Landroidx/compose/material/FloatingActionButtonKt$FloatingActionButton$3;->$$dirty:I
 
     const/4 p1, 0x2
 
@@ -99,7 +95,7 @@
 .method public bridge synthetic invoke(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
 
-    .line 100
+    .line 98
     check-cast p1, Landroidx/compose/runtime/Composer;
 
     check-cast p2, Ljava/lang/Number;
@@ -118,7 +114,7 @@
 .method public final invoke(Landroidx/compose/runtime/Composer;I)V
     .locals 3
 
-    const-string v0, "C100@4656L392:FloatingActionButton.kt#jmzs0o"
+    const-string v0, "C98@4556L392:FloatingActionButton.kt#jmzs0o"
 
     invoke-static {p1, v0}, Landroidx/compose/runtime/ComposerKt;->sourceInformation(Landroidx/compose/runtime/Composer;Ljava/lang/String;)V
 
@@ -128,7 +124,7 @@
 
     if-ne v0, v1, :cond_1
 
-    .line 101
+    .line 99
     invoke-interface {p1}, Landroidx/compose/runtime/Composer;->getSkipping()Z
 
     move-result v0
@@ -137,13 +133,13 @@
 
     goto :goto_0
 
-    .line 109
+    .line 107
     :cond_0
     invoke-interface {p1}, Landroidx/compose/runtime/Composer;->skipToGroupEnd()V
 
     goto :goto_1
 
-    .line 101
+    .line 99
     :cond_1
     :goto_0
     invoke-static {}, Landroidx/compose/runtime/ComposerKt;->isTraceInProgress()Z
@@ -154,7 +150,7 @@
 
     const/4 v0, -0x1
 
-    const-string v1, "androidx.compose.material.FloatingActionButton.<anonymous> (FloatingActionButton.kt:99)"
+    const-string v1, "androidx.compose.material.FloatingActionButton.<anonymous> (FloatingActionButton.kt:98)"
 
     const v2, 0x7597a2b7
 
@@ -179,33 +175,27 @@
 
     move-result-object p2
 
-    const/4 v0, 0x1
+    new-instance v0, Landroidx/compose/material/FloatingActionButtonKt$FloatingActionButton$3$1;
 
-    new-array v1, v0, [Landroidx/compose/runtime/ProvidedValue;
+    iget-object p0, p0, Landroidx/compose/material/FloatingActionButtonKt$FloatingActionButton$3;->$content:Lkotlin/jvm/functions/Function2;
 
-    const/4 v2, 0x0
-
-    aput-object p2, v1, v2
-
-    new-instance p2, Landroidx/compose/material/FloatingActionButtonKt$FloatingActionButton$3$1;
-
-    iget-object v2, p0, Landroidx/compose/material/FloatingActionButtonKt$FloatingActionButton$3;->$content:Lkotlin/jvm/functions/Function2;
-
-    iget p0, p0, Landroidx/compose/material/FloatingActionButtonKt$FloatingActionButton$3;->$$dirty:I
-
-    invoke-direct {p2, v2, p0}, Landroidx/compose/material/FloatingActionButtonKt$FloatingActionButton$3$1;-><init>(Lkotlin/jvm/functions/Function2;I)V
+    invoke-direct {v0, p0}, Landroidx/compose/material/FloatingActionButtonKt$FloatingActionButton$3$1;-><init>(Lkotlin/jvm/functions/Function2;)V
 
     const p0, 0x6f544777
 
-    invoke-static {p1, p0, v0, p2}, Landroidx/compose/runtime/internal/ComposableLambdaKt;->composableLambda(Landroidx/compose/runtime/Composer;IZLjava/lang/Object;)Landroidx/compose/runtime/internal/ComposableLambda;
+    const/4 v1, 0x1
+
+    invoke-static {p1, p0, v1, v0}, Landroidx/compose/runtime/internal/ComposableLambdaKt;->composableLambda(Landroidx/compose/runtime/Composer;IZLjava/lang/Object;)Landroidx/compose/runtime/internal/ComposableLambda;
 
     move-result-object p0
 
     check-cast p0, Lkotlin/jvm/functions/Function2;
 
-    const/16 p2, 0x38
+    sget v0, Landroidx/compose/runtime/ProvidedValue;->$stable:I
 
-    invoke-static {v1, p0, p1, p2}, Landroidx/compose/runtime/CompositionLocalKt;->CompositionLocalProvider([Landroidx/compose/runtime/ProvidedValue;Lkotlin/jvm/functions/Function2;Landroidx/compose/runtime/Composer;I)V
+    or-int/lit8 v0, v0, 0x30
+
+    invoke-static {p2, p0, p1, v0}, Landroidx/compose/runtime/CompositionLocalKt;->CompositionLocalProvider(Landroidx/compose/runtime/ProvidedValue;Lkotlin/jvm/functions/Function2;Landroidx/compose/runtime/Composer;I)V
 
     invoke-static {}, Landroidx/compose/runtime/ComposerKt;->isTraceInProgress()Z
 

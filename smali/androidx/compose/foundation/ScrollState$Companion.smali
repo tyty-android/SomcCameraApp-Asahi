@@ -42,7 +42,7 @@
 .method private constructor <init>()V
     .locals 0
 
-    .line 190
+    .line 195
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -69,7 +69,7 @@
         }
     .end annotation
 
-    .line 194
+    .line 199
     invoke-static {}, Landroidx/compose/foundation/ScrollState;->access$getSaver$cp()Landroidx/compose/runtime/saveable/Saver;
 
     move-result-object p0

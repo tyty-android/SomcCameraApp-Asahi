@@ -97,7 +97,7 @@
 .end method
 
 .method public final invoke(Landroidx/compose/runtime/saveable/SaverScope;Landroidx/compose/foundation/text/TextFieldScrollerPosition;)Ljava/util/List;
-    .locals 2
+    .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -110,30 +110,14 @@
         }
     .end annotation
 
-    const-string p0, "$this$listSaver"
-
-    invoke-static {p1, p0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string p0, "it"
-
-    invoke-static {p2, p0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const/4 p0, 0x2
-
     .line 360
-    new-array p0, p0, [Ljava/lang/Object;
-
     invoke-virtual {p2}, Landroidx/compose/foundation/text/TextFieldScrollerPosition;->getOffset()F
 
-    move-result p1
+    move-result p0
 
-    invoke-static {p1}, Ljava/lang/Float;->valueOf(F)Ljava/lang/Float;
+    invoke-static {p0}, Ljava/lang/Float;->valueOf(F)Ljava/lang/Float;
 
-    move-result-object p1
-
-    const/4 v0, 0x0
-
-    aput-object p1, p0, v0
+    move-result-object p0
 
     invoke-virtual {p2}, Landroidx/compose/foundation/text/TextFieldScrollerPosition;->getOrientation()Landroidx/compose/foundation/gestures/Orientation;
 
@@ -141,18 +125,23 @@
 
     sget-object p2, Landroidx/compose/foundation/gestures/Orientation;->Vertical:Landroidx/compose/foundation/gestures/Orientation;
 
-    const/4 v1, 0x1
-
     if-ne p1, p2, :cond_0
 
-    move v0, v1
+    const/4 p1, 0x1
+
+    goto :goto_0
 
     :cond_0
-    invoke-static {v0}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
+    const/4 p1, 0x0
+
+    :goto_0
+    invoke-static {p1}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
     move-result-object p1
 
-    aput-object p1, p0, v1
+    filled-new-array {p0, p1}, [Ljava/lang/Object;
+
+    move-result-object p0
 
     invoke-static {p0}, Lkotlin/collections/CollectionsKt;->listOf([Ljava/lang/Object;)Ljava/util/List;
 

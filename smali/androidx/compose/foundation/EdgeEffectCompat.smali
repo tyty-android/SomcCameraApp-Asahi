@@ -1,6 +1,6 @@
 .class public final Landroidx/compose/foundation/EdgeEffectCompat;
 .super Ljava/lang/Object;
-.source "EdgeEffectCompat.kt"
+.source "EdgeEffectCompat.android.kt"
 
 
 # annotations
@@ -44,6 +44,8 @@
 
 
 # static fields
+.field public static final $stable:I
+
 .field public static final INSTANCE:Landroidx/compose/foundation/EdgeEffectCompat;
 
 
@@ -74,10 +76,6 @@
 .method public final create(Landroid/content/Context;Landroid/util/AttributeSet;)Landroid/widget/EdgeEffect;
     .locals 0
 
-    const-string p0, "context"
-
-    invoke-static {p1, p0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
     .line 33
     sget-object p0, Landroidx/compose/foundation/Api31Impl;->INSTANCE:Landroidx/compose/foundation/Api31Impl;
 
@@ -90,10 +88,6 @@
 
 .method public final getDistanceCompat(Landroid/widget/EdgeEffect;)F
     .locals 0
-
-    const-string p0, "<this>"
-
-    invoke-static {p1, p0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 73
     sget-object p0, Landroidx/compose/foundation/Api31Impl;->INSTANCE:Landroidx/compose/foundation/Api31Impl;
@@ -108,10 +102,6 @@
 .method public final onAbsorbCompat(Landroid/widget/EdgeEffect;I)V
     .locals 0
 
-    const-string p0, "<this>"
-
-    invoke-static {p1, p0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
     .line 52
     invoke-virtual {p1, p2}, Landroid/widget/EdgeEffect;->onAbsorb(I)V
 
@@ -120,10 +110,6 @@
 
 .method public final onPullDistanceCompat(Landroid/widget/EdgeEffect;FF)F
     .locals 0
-
-    const-string p0, "<this>"
-
-    invoke-static {p1, p0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 44
     sget-object p0, Landroidx/compose/foundation/Api31Impl;->INSTANCE:Landroidx/compose/foundation/Api31Impl;
@@ -137,10 +123,6 @@
 
 .method public final onReleaseWithOppositeDelta(Landroid/widget/EdgeEffect;F)V
     .locals 0
-
-    const-string p0, "<this>"
-
-    invoke-static {p1, p0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 63
     instance-of p0, p1, Landroidx/compose/foundation/GlowEdgeEffectCompat;

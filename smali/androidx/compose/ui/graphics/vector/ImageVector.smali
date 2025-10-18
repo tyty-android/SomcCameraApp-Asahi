@@ -13,7 +13,7 @@
 
 .annotation runtime Lkotlin/Metadata;
     d1 = {
-        "\u0000B\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0010\u000e\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0010\u0007\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000b\n\u0002\u0008\u0016\n\u0002\u0010\u0008\n\u0002\u0008\u0003\u0008\u0007\u0018\u0000 *2\u00020\u0001:\u0002)*BR\u0008\u0000\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\u0006\u0010\u0004\u001a\u00020\u0005\u0012\u0006\u0010\u0006\u001a\u00020\u0005\u0012\u0006\u0010\u0007\u001a\u00020\u0008\u0012\u0006\u0010\t\u001a\u00020\u0008\u0012\u0006\u0010\n\u001a\u00020\u000b\u0012\u0006\u0010\u000c\u001a\u00020\r\u0012\u0006\u0010\u000e\u001a\u00020\u000f\u0012\u0006\u0010\u0010\u001a\u00020\u0011\u00f8\u0001\u0000\u00a2\u0006\u0002\u0010\u0012J\u0013\u0010%\u001a\u00020\u00112\u0008\u0010&\u001a\u0004\u0018\u00010\u0001H\u0096\u0002J\u0008\u0010\'\u001a\u00020(H\u0016R\u0011\u0010\u0010\u001a\u00020\u0011\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\u0013\u0010\u0014R\u001c\u0010\u0006\u001a\u00020\u0005\u00f8\u0001\u0000\u00f8\u0001\u0001\u00f8\u0001\u0002\u00a2\u0006\n\n\u0002\u0010\u0017\u001a\u0004\u0008\u0015\u0010\u0016R\u001c\u0010\u0004\u001a\u00020\u0005\u00f8\u0001\u0000\u00f8\u0001\u0001\u00f8\u0001\u0002\u00a2\u0006\n\n\u0002\u0010\u0017\u001a\u0004\u0008\u0018\u0010\u0016R\u0011\u0010\u0002\u001a\u00020\u0003\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\u0019\u0010\u001aR\u0011\u0010\n\u001a\u00020\u000b\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\u001b\u0010\u001cR\u001c\u0010\u000e\u001a\u00020\u000f\u00f8\u0001\u0000\u00f8\u0001\u0001\u00f8\u0001\u0002\u00a2\u0006\n\n\u0002\u0010\u001f\u001a\u0004\u0008\u001d\u0010\u001eR\u001c\u0010\u000c\u001a\u00020\r\u00f8\u0001\u0000\u00f8\u0001\u0001\u00f8\u0001\u0002\u00a2\u0006\n\n\u0002\u0010\"\u001a\u0004\u0008 \u0010!R\u0011\u0010\t\u001a\u00020\u0008\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008#\u0010\u0016R\u0011\u0010\u0007\u001a\u00020\u0008\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008$\u0010\u0016\u0082\u0002\u000f\n\u0002\u0008\u0019\n\u0005\u0008\u00a1\u001e0\u0001\n\u0002\u0008!\u00a8\u0006+"
+        "\u0000@\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0010\u000e\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0010\u0007\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000b\n\u0000\n\u0002\u0010\u0008\n\u0002\u0008\u001a\u0008\u0007\u0018\u0000 ,2\u00020\u0001:\u0002+,BY\u0008\u0000\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\u0006\u0010\u0004\u001a\u00020\u0005\u0012\u0006\u0010\u0006\u001a\u00020\u0005\u0012\u0006\u0010\u0007\u001a\u00020\u0008\u0012\u0006\u0010\t\u001a\u00020\u0008\u0012\u0006\u0010\n\u001a\u00020\u000b\u0012\u0006\u0010\u000c\u001a\u00020\r\u0012\u0006\u0010\u000e\u001a\u00020\u000f\u0012\u0006\u0010\u0010\u001a\u00020\u0011\u0012\u0008\u0008\u0002\u0010\u0012\u001a\u00020\u0013\u00a2\u0006\u0002\u0010\u0014J\u0013\u0010(\u001a\u00020\u00112\u0008\u0010)\u001a\u0004\u0018\u00010\u0001H\u0096\u0002J\u0008\u0010*\u001a\u00020\u0013H\u0016R\u0011\u0010\u0010\u001a\u00020\u0011\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\u0015\u0010\u0016R\u0019\u0010\u0006\u001a\u00020\u0005\u00f8\u0001\u0000\u00f8\u0001\u0001\u00a2\u0006\n\n\u0002\u0010\u0019\u001a\u0004\u0008\u0017\u0010\u0018R\u0019\u0010\u0004\u001a\u00020\u0005\u00f8\u0001\u0000\u00f8\u0001\u0001\u00a2\u0006\n\n\u0002\u0010\u0019\u001a\u0004\u0008\u001a\u0010\u0018R\u0014\u0010\u0012\u001a\u00020\u0013X\u0080\u0004\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\u001b\u0010\u001cR\u0011\u0010\u0002\u001a\u00020\u0003\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\u001d\u0010\u001eR\u0011\u0010\n\u001a\u00020\u000b\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\u001f\u0010 R\u0019\u0010\u000e\u001a\u00020\u000f\u00f8\u0001\u0000\u00f8\u0001\u0001\u00a2\u0006\n\n\u0002\u0010\"\u001a\u0004\u0008!\u0010\u001cR\u0019\u0010\u000c\u001a\u00020\r\u00f8\u0001\u0000\u00f8\u0001\u0001\u00a2\u0006\n\n\u0002\u0010%\u001a\u0004\u0008#\u0010$R\u0011\u0010\t\u001a\u00020\u0008\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008&\u0010\u0018R\u0011\u0010\u0007\u001a\u00020\u0008\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\'\u0010\u0018\u0082\u0002\u000b\n\u0005\u0008\u00a1\u001e0\u0001\n\u0002\u0008!\u00a8\u0006-"
     }
     d2 = {
         "Landroidx/compose/ui/graphics/vector/ImageVector;",
@@ -34,19 +34,22 @@
         "Landroidx/compose/ui/graphics/BlendMode;",
         "autoMirror",
         "",
-        "(Ljava/lang/String;FFFFLandroidx/compose/ui/graphics/vector/VectorGroup;JIZLkotlin/jvm/internal/DefaultConstructorMarker;)V",
+        "genId",
+        "",
+        "(Ljava/lang/String;FFFFLandroidx/compose/ui/graphics/vector/VectorGroup;JIZILkotlin/jvm/internal/DefaultConstructorMarker;)V",
         "getAutoMirror",
         "()Z",
         "getDefaultHeight-D9Ej5fM",
         "()F",
         "F",
         "getDefaultWidth-D9Ej5fM",
+        "getGenId$ui_release",
+        "()I",
         "getName",
         "()Ljava/lang/String;",
         "getRoot",
         "()Landroidx/compose/ui/graphics/vector/VectorGroup;",
         "getTintBlendMode-0nO6VwU",
-        "()I",
         "I",
         "getTintColor-0d7_KjU",
         "()J",
@@ -56,7 +59,6 @@
         "equals",
         "other",
         "hashCode",
-        "",
         "Builder",
         "Companion",
         "ui_release"
@@ -76,6 +78,8 @@
 
 .field public static final Companion:Landroidx/compose/ui/graphics/vector/ImageVector$Companion;
 
+.field private static imageVectorCount:I
+
 
 # instance fields
 .field private final autoMirror:Z
@@ -83,6 +87,8 @@
 .field private final defaultHeight:F
 
 .field private final defaultWidth:F
+
+.field private final genId:I
 
 .field private final name:Ljava/lang/String;
 
@@ -112,16 +118,8 @@
     return-void
 .end method
 
-.method private constructor <init>(Ljava/lang/String;FFFFLandroidx/compose/ui/graphics/vector/VectorGroup;JIZ)V
-    .locals 1
-
-    const-string v0, "name"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string v0, "root"
-
-    invoke-static {p6, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+.method private constructor <init>(Ljava/lang/String;FFFFLandroidx/compose/ui/graphics/vector/VectorGroup;JIZI)V
+    .locals 0
 
     .line 32
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -153,13 +151,86 @@
     .line 80
     iput-boolean p10, p0, Landroidx/compose/ui/graphics/vector/ImageVector;->autoMirror:Z
 
+    .line 86
+    iput p11, p0, Landroidx/compose/ui/graphics/vector/ImageVector;->genId:I
+
     return-void
 .end method
 
-.method public synthetic constructor <init>(Ljava/lang/String;FFFFLandroidx/compose/ui/graphics/vector/VectorGroup;JIZLkotlin/jvm/internal/DefaultConstructorMarker;)V
+.method public synthetic constructor <init>(Ljava/lang/String;FFFFLandroidx/compose/ui/graphics/vector/VectorGroup;JIZIILkotlin/jvm/internal/DefaultConstructorMarker;)V
+    .locals 14
+
+    move/from16 v0, p12
+
+    and-int/lit16 v0, v0, 0x200
+
+    if-eqz v0, :cond_0
+
+    .line 86
+    sget-object v0, Landroidx/compose/ui/graphics/vector/ImageVector;->Companion:Landroidx/compose/ui/graphics/vector/ImageVector$Companion;
+
+    invoke-virtual {v0}, Landroidx/compose/ui/graphics/vector/ImageVector$Companion;->generateImageVectorId$ui_release()I
+
+    move-result v0
+
+    move v12, v0
+
+    goto :goto_0
+
+    :cond_0
+    move/from16 v12, p11
+
+    :goto_0
+    const/4 v13, 0x0
+
+    move-object v1, p0
+
+    move-object v2, p1
+
+    move/from16 v3, p2
+
+    move/from16 v4, p3
+
+    move/from16 v5, p4
+
+    move/from16 v6, p5
+
+    move-object/from16 v7, p6
+
+    move-wide/from16 v8, p7
+
+    move/from16 v10, p9
+
+    move/from16 v11, p10
+
+    .line 33
+    invoke-direct/range {v1 .. v13}, Landroidx/compose/ui/graphics/vector/ImageVector;-><init>(Ljava/lang/String;FFFFLandroidx/compose/ui/graphics/vector/VectorGroup;JIZILkotlin/jvm/internal/DefaultConstructorMarker;)V
+
+    return-void
+.end method
+
+.method public synthetic constructor <init>(Ljava/lang/String;FFFFLandroidx/compose/ui/graphics/vector/VectorGroup;JIZILkotlin/jvm/internal/DefaultConstructorMarker;)V
     .locals 0
 
-    invoke-direct/range {p0 .. p10}, Landroidx/compose/ui/graphics/vector/ImageVector;-><init>(Ljava/lang/String;FFFFLandroidx/compose/ui/graphics/vector/VectorGroup;JIZ)V
+    invoke-direct/range {p0 .. p11}, Landroidx/compose/ui/graphics/vector/ImageVector;-><init>(Ljava/lang/String;FFFFLandroidx/compose/ui/graphics/vector/VectorGroup;JIZI)V
+
+    return-void
+.end method
+
+.method public static final synthetic access$getImageVectorCount$cp()I
+    .locals 1
+
+    .line 32
+    sget v0, Landroidx/compose/ui/graphics/vector/ImageVector;->imageVectorCount:I
+
+    return v0
+.end method
+
+.method public static final synthetic access$setImageVectorCount$cp(I)V
+    .locals 0
+
+    .line 32
+    sput p0, Landroidx/compose/ui/graphics/vector/ImageVector;->imageVectorCount:I
 
     return-void
 .end method
@@ -175,7 +246,7 @@
 
     return v0
 
-    .line 411
+    .line 422
     :cond_0
     instance-of v1, p1, Landroidx/compose/ui/graphics/vector/ImageVector;
 
@@ -185,7 +256,7 @@
 
     return v2
 
-    .line 413
+    .line 424
     :cond_1
     iget-object v1, p0, Landroidx/compose/ui/graphics/vector/ImageVector;->name:Ljava/lang/String;
 
@@ -201,7 +272,7 @@
 
     return v2
 
-    .line 414
+    .line 425
     :cond_2
     iget v1, p0, Landroidx/compose/ui/graphics/vector/ImageVector;->defaultWidth:F
 
@@ -215,7 +286,7 @@
 
     return v2
 
-    .line 415
+    .line 426
     :cond_3
     iget v1, p0, Landroidx/compose/ui/graphics/vector/ImageVector;->defaultHeight:F
 
@@ -229,7 +300,7 @@
 
     return v2
 
-    .line 416
+    .line 427
     :cond_4
     iget v1, p0, Landroidx/compose/ui/graphics/vector/ImageVector;->viewportWidth:F
 
@@ -239,7 +310,7 @@
 
     if-nez v1, :cond_9
 
-    .line 417
+    .line 428
     iget v1, p0, Landroidx/compose/ui/graphics/vector/ImageVector;->viewportHeight:F
 
     iget v3, p1, Landroidx/compose/ui/graphics/vector/ImageVector;->viewportHeight:F
@@ -248,7 +319,7 @@
 
     if-nez v1, :cond_9
 
-    .line 418
+    .line 429
     iget-object v1, p0, Landroidx/compose/ui/graphics/vector/ImageVector;->root:Landroidx/compose/ui/graphics/vector/VectorGroup;
 
     iget-object v3, p1, Landroidx/compose/ui/graphics/vector/ImageVector;->root:Landroidx/compose/ui/graphics/vector/VectorGroup;
@@ -261,7 +332,7 @@
 
     return v2
 
-    .line 419
+    .line 430
     :cond_5
     iget-wide v3, p0, Landroidx/compose/ui/graphics/vector/ImageVector;->tintColor:J
 
@@ -275,7 +346,7 @@
 
     return v2
 
-    .line 420
+    .line 431
     :cond_6
     iget v1, p0, Landroidx/compose/ui/graphics/vector/ImageVector;->tintBlendMode:I
 
@@ -289,7 +360,7 @@
 
     return v2
 
-    .line 421
+    .line 432
     :cond_7
     iget-boolean p0, p0, Landroidx/compose/ui/graphics/vector/ImageVector;->autoMirror:Z
 
@@ -329,6 +400,15 @@
 
     .line 43
     iget p0, p0, Landroidx/compose/ui/graphics/vector/ImageVector;->defaultWidth:F
+
+    return p0
+.end method
+
+.method public final getGenId$ui_release()I
+    .locals 0
+
+    .line 86
+    iget p0, p0, Landroidx/compose/ui/graphics/vector/ImageVector;->genId:I
 
     return p0
 .end method
@@ -390,7 +470,7 @@
 .method public hashCode()I
     .locals 3
 
-    .line 426
+    .line 437
     iget-object v0, p0, Landroidx/compose/ui/graphics/vector/ImageVector;->name:Ljava/lang/String;
 
     invoke-virtual {v0}, Ljava/lang/String;->hashCode()I
@@ -399,7 +479,7 @@
 
     mul-int/lit8 v0, v0, 0x1f
 
-    .line 427
+    .line 438
     iget v1, p0, Landroidx/compose/ui/graphics/vector/ImageVector;->defaultWidth:F
 
     invoke-static {v1}, Landroidx/compose/ui/unit/Dp;->hashCode-impl(F)I
@@ -410,7 +490,7 @@
 
     mul-int/lit8 v0, v0, 0x1f
 
-    .line 428
+    .line 439
     iget v1, p0, Landroidx/compose/ui/graphics/vector/ImageVector;->defaultHeight:F
 
     invoke-static {v1}, Landroidx/compose/ui/unit/Dp;->hashCode-impl(F)I
@@ -421,7 +501,7 @@
 
     mul-int/lit8 v0, v0, 0x1f
 
-    .line 429
+    .line 440
     iget v1, p0, Landroidx/compose/ui/graphics/vector/ImageVector;->viewportWidth:F
 
     invoke-static {v1}, Ljava/lang/Float;->hashCode(F)I
@@ -432,7 +512,7 @@
 
     mul-int/lit8 v0, v0, 0x1f
 
-    .line 430
+    .line 441
     iget v1, p0, Landroidx/compose/ui/graphics/vector/ImageVector;->viewportHeight:F
 
     invoke-static {v1}, Ljava/lang/Float;->hashCode(F)I
@@ -443,7 +523,7 @@
 
     mul-int/lit8 v0, v0, 0x1f
 
-    .line 431
+    .line 442
     iget-object v1, p0, Landroidx/compose/ui/graphics/vector/ImageVector;->root:Landroidx/compose/ui/graphics/vector/VectorGroup;
 
     invoke-virtual {v1}, Landroidx/compose/ui/graphics/vector/VectorGroup;->hashCode()I
@@ -454,7 +534,7 @@
 
     mul-int/lit8 v0, v0, 0x1f
 
-    .line 432
+    .line 443
     iget-wide v1, p0, Landroidx/compose/ui/graphics/vector/ImageVector;->tintColor:J
 
     invoke-static {v1, v2}, Landroidx/compose/ui/graphics/Color;->hashCode-impl(J)I
@@ -465,7 +545,7 @@
 
     mul-int/lit8 v0, v0, 0x1f
 
-    .line 433
+    .line 444
     iget v1, p0, Landroidx/compose/ui/graphics/vector/ImageVector;->tintBlendMode:I
 
     invoke-static {v1}, Landroidx/compose/ui/graphics/BlendMode;->hashCode-impl(I)I
@@ -476,7 +556,7 @@
 
     mul-int/lit8 v0, v0, 0x1f
 
-    .line 434
+    .line 445
     iget-boolean p0, p0, Landroidx/compose/ui/graphics/vector/ImageVector;->autoMirror:Z
 
     invoke-static {p0}, Ljava/lang/Boolean;->hashCode(Z)I

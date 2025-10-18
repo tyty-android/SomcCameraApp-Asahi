@@ -52,19 +52,15 @@
 
 # direct methods
 .method public constructor <init>(Landroidx/compose/ui/Alignment;Z)V
-    .locals 1
+    .locals 0
 
-    const-string v0, "alignment"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 298
+    .line 307
     invoke-direct {p0}, Landroidx/compose/ui/Modifier$Node;-><init>()V
 
-    .line 296
+    .line 305
     iput-object p1, p0, Landroidx/compose/foundation/layout/BoxChildDataNode;->alignment:Landroidx/compose/ui/Alignment;
 
-    .line 297
+    .line 306
     iput-boolean p2, p0, Landroidx/compose/foundation/layout/BoxChildDataNode;->matchParentSize:Z
 
     return-void
@@ -75,7 +71,7 @@
 .method public final getAlignment()Landroidx/compose/ui/Alignment;
     .locals 0
 
-    .line 296
+    .line 305
     iget-object p0, p0, Landroidx/compose/foundation/layout/BoxChildDataNode;->alignment:Landroidx/compose/ui/Alignment;
 
     return-object p0
@@ -84,7 +80,7 @@
 .method public final getMatchParentSize()Z
     .locals 0
 
-    .line 297
+    .line 306
     iget-boolean p0, p0, Landroidx/compose/foundation/layout/BoxChildDataNode;->matchParentSize:Z
 
     return p0
@@ -93,17 +89,13 @@
 .method public modifyParentData(Landroidx/compose/ui/unit/Density;Ljava/lang/Object;)Landroidx/compose/foundation/layout/BoxChildDataNode;
     .locals 0
 
-    const-string p2, "<this>"
-
-    invoke-static {p1, p2}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
     return-object p0
 .end method
 
 .method public bridge synthetic modifyParentData(Landroidx/compose/ui/unit/Density;Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
 
-    .line 295
+    .line 304
     invoke-virtual {p0, p1, p2}, Landroidx/compose/foundation/layout/BoxChildDataNode;->modifyParentData(Landroidx/compose/ui/unit/Density;Ljava/lang/Object;)Landroidx/compose/foundation/layout/BoxChildDataNode;
 
     move-result-object p0
@@ -112,13 +104,9 @@
 .end method
 
 .method public final setAlignment(Landroidx/compose/ui/Alignment;)V
-    .locals 1
+    .locals 0
 
-    const-string v0, "<set-?>"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 296
+    .line 305
     iput-object p1, p0, Landroidx/compose/foundation/layout/BoxChildDataNode;->alignment:Landroidx/compose/ui/Alignment;
 
     return-void
@@ -127,7 +115,7 @@
 .method public final setMatchParentSize(Z)V
     .locals 0
 
-    .line 297
+    .line 306
     iput-boolean p1, p0, Landroidx/compose/foundation/layout/BoxChildDataNode;->matchParentSize:Z
 
     return-void

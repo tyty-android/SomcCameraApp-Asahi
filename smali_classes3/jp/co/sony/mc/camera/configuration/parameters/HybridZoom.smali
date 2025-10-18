@@ -128,49 +128,62 @@
 .method public static getDefaultValue()Ljp/co/sony/mc/camera/configuration/parameters/HybridZoom;
     .locals 1
 
-    .line 135
+    .line 137
     sget-object v0, Ljp/co/sony/mc/camera/configuration/parameters/HybridZoom;->OFF:Ljp/co/sony/mc/camera/configuration/parameters/HybridZoom;
 
     return-object v0
 .end method
 
-.method public static getOptions(Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;Ljp/co/sony/mc/camera/configuration/parameters/VideoMfHdr;Z)[Ljp/co/sony/mc/camera/configuration/parameters/HybridZoom;
+.method public static getOptions(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;Ljp/co/sony/mc/camera/configuration/parameters/VideoMfHdr;Z)[Ljp/co/sony/mc/camera/configuration/parameters/HybridZoom;
     .locals 2
 
-    .line 123
+    .line 124
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
-    .line 124
+    .line 125
     invoke-static {}, Ljp/co/sony/mc/camera/util/capability/PlatformCapability;->isPrepared()Z
 
     move-result v1
 
     if-eqz v1, :cond_0
 
-    .line 125
-    invoke-static {p0}, Ljp/co/sony/mc/camera/util/capability/PlatformCapability;->isHybridZoomSupported(Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;)Z
-
-    move-result p0
-
-    if-eqz p0, :cond_0
-
     .line 126
-    invoke-virtual {p1}, Ljp/co/sony/mc/camera/configuration/parameters/VideoMfHdr;->getBooleanValue()Z
+    invoke-static {p1}, Ljp/co/sony/mc/camera/util/capability/PlatformCapability;->isHybridZoomSupported(Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;)Z
+
+    move-result p1
+
+    if-eqz p1, :cond_0
+
+    .line 127
+    invoke-virtual {p2}, Ljp/co/sony/mc/camera/configuration/parameters/VideoMfHdr;->getBooleanValue()Z
+
+    move-result p1
+
+    if-nez p1, :cond_0
+
+    if-nez p3, :cond_0
+
+    invoke-virtual {p0}, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->isAutoFraming()Z
+
+    move-result p1
+
+    if-nez p1, :cond_0
+
+    .line 128
+    invoke-virtual {p0}, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->isGimbal()Z
 
     move-result p0
 
     if-nez p0, :cond_0
 
-    if-nez p2, :cond_0
-
-    .line 127
+    .line 129
     sget-object p0, Ljp/co/sony/mc/camera/configuration/parameters/HybridZoom;->AUTO:Ljp/co/sony/mc/camera/configuration/parameters/HybridZoom;
 
     invoke-interface {v0, p0}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    .line 130
+    .line 132
     :cond_0
     sget-object p0, Ljp/co/sony/mc/camera/configuration/parameters/HybridZoom;->OFF:Ljp/co/sony/mc/camera/configuration/parameters/HybridZoom;
 
@@ -178,7 +191,7 @@
 
     const/4 p0, 0x0
 
-    .line 131
+    .line 133
     new-array p0, p0, [Ljp/co/sony/mc/camera/configuration/parameters/HybridZoom;
 
     invoke-interface {v0, p0}, Ljava/util/List;->toArray([Ljava/lang/Object;)[Ljava/lang/Object;

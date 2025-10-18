@@ -392,7 +392,7 @@
 .end method
 
 .method initializeBackgroundDrawable(Landroid/content/res/ColorStateList;Landroid/graphics/PorterDuff$Mode;Landroid/content/res/ColorStateList;I)V
-    .locals 3
+    .locals 2
 
     .line 64
     invoke-virtual {p0}, Lcom/google/android/material/floatingactionbutton/FloatingActionButtonImplLollipop;->createShapeDrawable()Lcom/google/android/material/shape/MaterialShapeDrawable;
@@ -439,14 +439,22 @@
     .line 74
     new-instance p1, Landroid/graphics/drawable/LayerDrawable;
 
-    iget-object p4, p0, Lcom/google/android/material/floatingactionbutton/FloatingActionButtonImplLollipop;->borderDrawable:Lcom/google/android/material/floatingactionbutton/BorderDrawable;
+    const/4 p4, 0x2
+
+    new-array p4, p4, [Landroid/graphics/drawable/Drawable;
+
+    iget-object v0, p0, Lcom/google/android/material/floatingactionbutton/FloatingActionButtonImplLollipop;->borderDrawable:Lcom/google/android/material/floatingactionbutton/BorderDrawable;
 
     .line 75
-    invoke-static {p4}, Landroidx/core/util/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-static {v0}, Landroidx/core/util/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
-    move-result-object p4
+    move-result-object v0
 
-    check-cast p4, Landroid/graphics/drawable/Drawable;
+    check-cast v0, Landroid/graphics/drawable/Drawable;
+
+    const/4 v1, 0x0
+
+    aput-object v0, p4, v1
 
     iget-object v0, p0, Lcom/google/android/material/floatingactionbutton/FloatingActionButtonImplLollipop;->shapeDrawable:Lcom/google/android/material/shape/MaterialShapeDrawable;
 
@@ -456,19 +464,11 @@
 
     check-cast v0, Landroid/graphics/drawable/Drawable;
 
-    const/4 v1, 0x2
+    const/4 v1, 0x1
 
-    new-array v1, v1, [Landroid/graphics/drawable/Drawable;
+    aput-object v0, p4, v1
 
-    const/4 v2, 0x0
-
-    aput-object p4, v1, v2
-
-    const/4 p4, 0x1
-
-    aput-object v0, v1, p4
-
-    invoke-direct {p1, v1}, Landroid/graphics/drawable/LayerDrawable;-><init>([Landroid/graphics/drawable/Drawable;)V
+    invoke-direct {p1, p4}, Landroid/graphics/drawable/LayerDrawable;-><init>([Landroid/graphics/drawable/Drawable;)V
 
     goto :goto_0
 

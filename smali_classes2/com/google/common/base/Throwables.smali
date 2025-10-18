@@ -240,17 +240,17 @@
     .line 503
     new-array v0, v0, [Ljava/lang/Class;
 
-    const-class v1, Ljava/lang/Throwable;
+    const/4 v1, 0x0
 
-    const/4 v2, 0x0
+    const-class v2, Ljava/lang/Throwable;
 
-    aput-object v1, v0, v2
+    aput-object v2, v0, v1
 
-    sget-object v1, Ljava/lang/Integer;->TYPE:Ljava/lang/Class;
+    const/4 v1, 0x1
 
-    const/4 v2, 0x1
+    sget-object v2, Ljava/lang/Integer;->TYPE:Ljava/lang/Class;
 
-    aput-object v1, v0, v2
+    aput-object v2, v0, v1
 
     const-string v1, "getStackTraceElement"
 
@@ -410,7 +410,7 @@
 .end method
 
 .method private static getSizeMethod()Ljava/lang/reflect/Method;
-    .locals 6
+    .locals 5
     .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
     .end annotation
 
@@ -422,15 +422,15 @@
 
     const/4 v2, 0x1
 
-    new-array v3, v2, [Ljava/lang/Class;
+    new-array v2, v2, [Ljava/lang/Class;
 
-    const-class v4, Ljava/lang/Throwable;
+    const-class v3, Ljava/lang/Throwable;
 
-    const/4 v5, 0x0
+    const/4 v4, 0x0
 
-    aput-object v4, v3, v5
+    aput-object v3, v2, v4
 
-    invoke-static {v1, v3}, Lcom/google/common/base/Throwables;->getJlaMethod(Ljava/lang/String;[Ljava/lang/Class;)Ljava/lang/reflect/Method;
+    invoke-static {v1, v2}, Lcom/google/common/base/Throwables;->getJlaMethod(Ljava/lang/String;[Ljava/lang/Class;)Ljava/lang/reflect/Method;
 
     move-result-object v1
 
@@ -442,17 +442,17 @@
     :cond_0
     invoke-static {}, Lcom/google/common/base/Throwables;->getJLA()Ljava/lang/Object;
 
+    move-result-object v2
+
+    new-instance v3, Ljava/lang/Throwable;
+
+    invoke-direct {v3}, Ljava/lang/Throwable;-><init>()V
+
+    filled-new-array {v3}, [Ljava/lang/Object;
+
     move-result-object v3
 
-    new-array v2, v2, [Ljava/lang/Object;
-
-    new-instance v4, Ljava/lang/Throwable;
-
-    invoke-direct {v4}, Ljava/lang/Throwable;-><init>()V
-
-    aput-object v4, v2, v5
-
-    invoke-virtual {v1, v3, v2}, Ljava/lang/reflect/Method;->invoke(Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v1, v2, v3}, Ljava/lang/reflect/Method;->invoke(Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;
     :try_end_0
     .catch Ljava/lang/UnsupportedOperationException; {:try_start_0 .. :try_end_0} :catch_0
     .catch Ljava/lang/IllegalAccessException; {:try_start_0 .. :try_end_0} :catch_0

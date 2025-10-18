@@ -26,7 +26,7 @@
 
 # direct methods
 .method public static all(Landroidx/compose/ui/modifier/ModifierLocalProvider;Lkotlin/jvm/functions/Function1;)Z
-    .locals 1
+    .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<T:",
@@ -44,10 +44,6 @@
 
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
-
-    const-string v0, "predicate"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 35
     invoke-static {p0, p1}, Landroidx/compose/ui/modifier/ModifierLocalProvider;->access$all$jd(Landroidx/compose/ui/modifier/ModifierLocalProvider;Lkotlin/jvm/functions/Function1;)Z
@@ -58,7 +54,7 @@
 .end method
 
 .method public static any(Landroidx/compose/ui/modifier/ModifierLocalProvider;Lkotlin/jvm/functions/Function1;)Z
-    .locals 1
+    .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<T:",
@@ -77,10 +73,6 @@
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
-    const-string v0, "predicate"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
     .line 35
     invoke-static {p0, p1}, Landroidx/compose/ui/modifier/ModifierLocalProvider;->access$any$jd(Landroidx/compose/ui/modifier/ModifierLocalProvider;Lkotlin/jvm/functions/Function1;)Z
 
@@ -90,7 +82,7 @@
 .end method
 
 .method public static foldIn(Landroidx/compose/ui/modifier/ModifierLocalProvider;Ljava/lang/Object;Lkotlin/jvm/functions/Function2;)Ljava/lang/Object;
-    .locals 1
+    .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<T:",
@@ -110,10 +102,6 @@
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
-    const-string v0, "operation"
-
-    invoke-static {p2, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
     .line 35
     invoke-static {p0, p1, p2}, Landroidx/compose/ui/modifier/ModifierLocalProvider;->access$foldIn$jd(Landroidx/compose/ui/modifier/ModifierLocalProvider;Ljava/lang/Object;Lkotlin/jvm/functions/Function2;)Ljava/lang/Object;
 
@@ -123,7 +111,7 @@
 .end method
 
 .method public static foldOut(Landroidx/compose/ui/modifier/ModifierLocalProvider;Ljava/lang/Object;Lkotlin/jvm/functions/Function2;)Ljava/lang/Object;
-    .locals 1
+    .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<T:",
@@ -143,10 +131,6 @@
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
-    const-string v0, "operation"
-
-    invoke-static {p2, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
     .line 35
     invoke-static {p0, p1, p2}, Landroidx/compose/ui/modifier/ModifierLocalProvider;->access$foldOut$jd(Landroidx/compose/ui/modifier/ModifierLocalProvider;Ljava/lang/Object;Lkotlin/jvm/functions/Function2;)Ljava/lang/Object;
 
@@ -156,7 +140,7 @@
 .end method
 
 .method public static then(Landroidx/compose/ui/modifier/ModifierLocalProvider;Landroidx/compose/ui/Modifier;)Landroidx/compose/ui/Modifier;
-    .locals 1
+    .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<T:",
@@ -172,10 +156,6 @@
 
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
-
-    const-string v0, "other"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 35
     invoke-static {p0, p1}, Landroidx/compose/ui/modifier/ModifierLocalProvider;->access$then$jd(Landroidx/compose/ui/modifier/ModifierLocalProvider;Landroidx/compose/ui/Modifier;)Landroidx/compose/ui/Modifier;

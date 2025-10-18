@@ -48,8 +48,6 @@
 
 
 # instance fields
-.field final synthetic $$dirty:I
-
 .field final synthetic $content:Lkotlin/jvm/functions/Function2;
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -68,7 +66,7 @@
 
 
 # direct methods
-.method constructor <init>(JLjava/lang/Float;Lkotlin/jvm/functions/Function2;I)V
+.method constructor <init>(JLjava/lang/Float;Lkotlin/jvm/functions/Function2;)V
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -80,7 +78,7 @@
             "-",
             "Ljava/lang/Integer;",
             "Lkotlin/Unit;",
-            ">;I)V"
+            ">;)V"
         }
     .end annotation
 
@@ -89,8 +87,6 @@
     iput-object p3, p0, Landroidx/compose/material/TextFieldImplKt$Decoration$colorAndEmphasis$1;->$contentAlpha:Ljava/lang/Float;
 
     iput-object p4, p0, Landroidx/compose/material/TextFieldImplKt$Decoration$colorAndEmphasis$1;->$content:Lkotlin/jvm/functions/Function2;
-
-    iput p5, p0, Landroidx/compose/material/TextFieldImplKt$Decoration$colorAndEmphasis$1;->$$dirty:I
 
     const/4 p1, 0x2
 
@@ -104,7 +100,7 @@
 .method public bridge synthetic invoke(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
 
-    .line 240
+    .line 225
     check-cast p1, Landroidx/compose/runtime/Composer;
 
     check-cast p2, Ljava/lang/Number;
@@ -121,9 +117,9 @@
 .end method
 
 .method public final invoke(Landroidx/compose/runtime/Composer;I)V
-    .locals 9
+    .locals 5
 
-    const-string v0, "C240@9912L476:TextFieldImpl.kt#jmzs0o"
+    const-string v0, "C225@9160L476:TextFieldImpl.kt#jmzs0o"
 
     invoke-static {p1, v0}, Landroidx/compose/runtime/ComposerKt;->sourceInformation(Landroidx/compose/runtime/Composer;Ljava/lang/String;)V
 
@@ -133,7 +129,7 @@
 
     if-ne v0, v1, :cond_1
 
-    .line 241
+    .line 226
     invoke-interface {p1}, Landroidx/compose/runtime/Composer;->getSkipping()Z
 
     move-result v0
@@ -142,13 +138,13 @@
 
     goto :goto_0
 
-    .line 253
+    .line 238
     :cond_0
     invoke-interface {p1}, Landroidx/compose/runtime/Composer;->skipToGroupEnd()V
 
     goto :goto_1
 
-    .line 241
+    .line 226
     :cond_1
     :goto_0
     invoke-static {}, Landroidx/compose/runtime/ComposerKt;->isTraceInProgress()Z
@@ -159,7 +155,7 @@
 
     const/4 v0, -0x1
 
-    const-string v1, "androidx.compose.material.Decoration.<anonymous> (TextFieldImpl.kt:239)"
+    const-string v1, "androidx.compose.material.Decoration.<anonymous> (TextFieldImpl.kt:225)"
 
     const v2, 0x1d7c49ae
 
@@ -180,39 +176,31 @@
 
     move-result-object p2
 
-    const/4 v0, 0x1
+    new-instance v0, Landroidx/compose/material/TextFieldImplKt$Decoration$colorAndEmphasis$1$1;
 
-    new-array v1, v0, [Landroidx/compose/runtime/ProvidedValue;
+    iget-object v1, p0, Landroidx/compose/material/TextFieldImplKt$Decoration$colorAndEmphasis$1;->$contentAlpha:Ljava/lang/Float;
 
-    const/4 v2, 0x0
+    iget-object v2, p0, Landroidx/compose/material/TextFieldImplKt$Decoration$colorAndEmphasis$1;->$content:Lkotlin/jvm/functions/Function2;
 
-    aput-object p2, v1, v2
+    iget-wide v3, p0, Landroidx/compose/material/TextFieldImplKt$Decoration$colorAndEmphasis$1;->$contentColor:J
 
-    new-instance p2, Landroidx/compose/material/TextFieldImplKt$Decoration$colorAndEmphasis$1$1;
-
-    iget-object v4, p0, Landroidx/compose/material/TextFieldImplKt$Decoration$colorAndEmphasis$1;->$contentAlpha:Ljava/lang/Float;
-
-    iget-object v5, p0, Landroidx/compose/material/TextFieldImplKt$Decoration$colorAndEmphasis$1;->$content:Lkotlin/jvm/functions/Function2;
-
-    iget v6, p0, Landroidx/compose/material/TextFieldImplKt$Decoration$colorAndEmphasis$1;->$$dirty:I
-
-    iget-wide v7, p0, Landroidx/compose/material/TextFieldImplKt$Decoration$colorAndEmphasis$1;->$contentColor:J
-
-    move-object v3, p2
-
-    invoke-direct/range {v3 .. v8}, Landroidx/compose/material/TextFieldImplKt$Decoration$colorAndEmphasis$1$1;-><init>(Ljava/lang/Float;Lkotlin/jvm/functions/Function2;IJ)V
+    invoke-direct {v0, v1, v2, v3, v4}, Landroidx/compose/material/TextFieldImplKt$Decoration$colorAndEmphasis$1$1;-><init>(Ljava/lang/Float;Lkotlin/jvm/functions/Function2;J)V
 
     const p0, -0x437bd312
 
-    invoke-static {p1, p0, v0, p2}, Landroidx/compose/runtime/internal/ComposableLambdaKt;->composableLambda(Landroidx/compose/runtime/Composer;IZLjava/lang/Object;)Landroidx/compose/runtime/internal/ComposableLambda;
+    const/4 v1, 0x1
+
+    invoke-static {p1, p0, v1, v0}, Landroidx/compose/runtime/internal/ComposableLambdaKt;->composableLambda(Landroidx/compose/runtime/Composer;IZLjava/lang/Object;)Landroidx/compose/runtime/internal/ComposableLambda;
 
     move-result-object p0
 
     check-cast p0, Lkotlin/jvm/functions/Function2;
 
-    const/16 p2, 0x38
+    sget v0, Landroidx/compose/runtime/ProvidedValue;->$stable:I
 
-    invoke-static {v1, p0, p1, p2}, Landroidx/compose/runtime/CompositionLocalKt;->CompositionLocalProvider([Landroidx/compose/runtime/ProvidedValue;Lkotlin/jvm/functions/Function2;Landroidx/compose/runtime/Composer;I)V
+    or-int/lit8 v0, v0, 0x30
+
+    invoke-static {p2, p0, p1, v0}, Landroidx/compose/runtime/CompositionLocalKt;->CompositionLocalProvider(Landroidx/compose/runtime/ProvidedValue;Lkotlin/jvm/functions/Function2;Landroidx/compose/runtime/Composer;I)V
 
     invoke-static {}, Landroidx/compose/runtime/ComposerKt;->isTraceInProgress()Z
 

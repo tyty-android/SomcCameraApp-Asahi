@@ -67,7 +67,7 @@
 .method public final invoke()Ljava/lang/Integer;
     .locals 0
 
-    .line 102
+    .line 108
     iget-object p0, p0, Landroidx/compose/foundation/pager/LazyLayoutPagerKt$Pager$pagerItemProvider$1$1;->$state:Landroidx/compose/foundation/pager/PagerState;
 
     invoke-virtual {p0}, Landroidx/compose/foundation/pager/PagerState;->getPageCount()I
@@ -84,7 +84,7 @@
 .method public bridge synthetic invoke()Ljava/lang/Object;
     .locals 0
 
-    .line 102
+    .line 108
     invoke-virtual {p0}, Landroidx/compose/foundation/pager/LazyLayoutPagerKt$Pager$pagerItemProvider$1$1;->invoke()Ljava/lang/Integer;
 
     move-result-object p0

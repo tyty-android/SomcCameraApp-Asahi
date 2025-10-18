@@ -31,6 +31,8 @@
 
 
 # static fields
+.field public static final $stable:I
+
 .field private static final ALIGN_LEFT_FRAMEWORK:Landroid/text/Layout$Alignment;
 
 .field private static final ALIGN_RIGHT_FRAMEWORK:Landroid/text/Layout$Alignment;
@@ -48,18 +50,18 @@
 
     sput-object v0, Landroidx/compose/ui/text/android/TextAlignmentAdapter;->INSTANCE:Landroidx/compose/ui/text/android/TextAlignmentAdapter;
 
-    .line 852
+    .line 850
     invoke-static {}, Landroid/text/Layout$Alignment;->values()[Landroid/text/Layout$Alignment;
 
     move-result-object v0
 
-    .line 853
+    .line 851
     sget-object v1, Landroid/text/Layout$Alignment;->ALIGN_NORMAL:Landroid/text/Layout$Alignment;
 
-    .line 854
+    .line 852
     sget-object v2, Landroid/text/Layout$Alignment;->ALIGN_NORMAL:Landroid/text/Layout$Alignment;
 
-    .line 855
+    .line 853
     array-length v3, v0
 
     const/4 v4, 0x0
@@ -69,7 +71,7 @@
 
     aget-object v5, v0, v4
 
-    .line 856
+    .line 854
     invoke-virtual {v5}, Landroid/text/Layout$Alignment;->name()Ljava/lang/String;
 
     move-result-object v6
@@ -86,7 +88,7 @@
 
     goto :goto_1
 
-    .line 861
+    .line 859
     :cond_0
     invoke-virtual {v5}, Landroid/text/Layout$Alignment;->name()Ljava/lang/String;
 
@@ -108,11 +110,11 @@
 
     goto :goto_0
 
-    .line 867
+    .line 865
     :cond_2
     sput-object v1, Landroidx/compose/ui/text/android/TextAlignmentAdapter;->ALIGN_LEFT_FRAMEWORK:Landroid/text/Layout$Alignment;
 
-    .line 868
+    .line 866
     sput-object v2, Landroidx/compose/ui/text/android/TextAlignmentAdapter;->ALIGN_RIGHT_FRAMEWORK:Landroid/text/Layout$Alignment;
 
     return-void
@@ -121,7 +123,7 @@
 .method private constructor <init>()V
     .locals 0
 
-    .line 846
+    .line 844
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -150,36 +152,36 @@
 
     if-eq p1, p0, :cond_0
 
-    .line 878
+    .line 876
     sget-object p0, Landroid/text/Layout$Alignment;->ALIGN_NORMAL:Landroid/text/Layout$Alignment;
 
     goto :goto_0
 
-    .line 874
+    .line 872
     :cond_0
     sget-object p0, Landroidx/compose/ui/text/android/TextAlignmentAdapter;->ALIGN_RIGHT_FRAMEWORK:Landroid/text/Layout$Alignment;
 
     goto :goto_0
 
-    .line 873
+    .line 871
     :cond_1
     sget-object p0, Landroidx/compose/ui/text/android/TextAlignmentAdapter;->ALIGN_LEFT_FRAMEWORK:Landroid/text/Layout$Alignment;
 
     goto :goto_0
 
-    .line 875
+    .line 873
     :cond_2
     sget-object p0, Landroid/text/Layout$Alignment;->ALIGN_CENTER:Landroid/text/Layout$Alignment;
 
     goto :goto_0
 
-    .line 876
+    .line 874
     :cond_3
     sget-object p0, Landroid/text/Layout$Alignment;->ALIGN_OPPOSITE:Landroid/text/Layout$Alignment;
 
     goto :goto_0
 
-    .line 877
+    .line 875
     :cond_4
     sget-object p0, Landroid/text/Layout$Alignment;->ALIGN_NORMAL:Landroid/text/Layout$Alignment;
 

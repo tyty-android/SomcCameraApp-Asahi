@@ -60,8 +60,8 @@
         0x1
     }
     l = {
-        0x904,
-        0x908
+        0x907,
+        0x90b
     }
     m = "invokeSuspend"
     n = {
@@ -227,7 +227,7 @@
 
     move-result-object v0
 
-    .line 2307
+    .line 2310
     iget v1, p0, Lkotlin/sequences/SequencesKt___SequencesKt$runningFold$1;->label:I
 
     const/4 v2, 0x2
@@ -284,7 +284,7 @@
 
     check-cast v1, Lkotlin/sequences/SequenceScope;
 
-    .line 2308
+    .line 2311
     iget-object p1, p0, Lkotlin/sequences/SequencesKt___SequencesKt$runningFold$1;->$initial:Ljava/lang/Object;
 
     move-object v4, p0
@@ -303,12 +303,12 @@
 
     return-object v0
 
-    .line 2309
+    .line 2312
     :cond_4
     :goto_0
     iget-object p1, p0, Lkotlin/sequences/SequencesKt___SequencesKt$runningFold$1;->$initial:Ljava/lang/Object;
 
-    .line 2310
+    .line 2313
     iget-object v3, p0, Lkotlin/sequences/SequencesKt___SequencesKt$runningFold$1;->$this_runningFold:Lkotlin/sequences/Sequence;
 
     invoke-interface {v3}, Lkotlin/sequences/Sequence;->iterator()Ljava/util/Iterator;
@@ -330,14 +330,14 @@
 
     move-result-object v3
 
-    .line 2311
+    .line 2314
     iget-object v5, p0, Lkotlin/sequences/SequencesKt___SequencesKt$runningFold$1;->$operation:Lkotlin/jvm/functions/Function2;
 
     invoke-interface {v5, p1, v3}, Lkotlin/jvm/functions/Function2;->invoke(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v3
 
-    .line 2312
+    .line 2315
     move-object p1, p0
 
     check-cast p1, Lkotlin/coroutines/Continuation;
@@ -358,7 +358,7 @@
 
     return-object v0
 
-    .line 2314
+    .line 2317
     :cond_5
     sget-object p0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
 

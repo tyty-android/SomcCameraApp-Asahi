@@ -22,7 +22,7 @@
 .method static constructor <clinit>()V
     .locals 3
 
-    .line 263
+    .line 268
     invoke-static {}, Ljp/co/sony/mc/camera/view/setting/settingitem/SettingLayoutType;->values()[Ljp/co/sony/mc/camera/view/setting/settingitem/SettingLayoutType;
 
     move-result-object v0

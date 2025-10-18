@@ -29,7 +29,7 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/SourceDebugExtension;
-    value = "SMAP\nLazyLayout.kt\nKotlin\n*S Kotlin\n*F\n+ 1 LazyLayout.kt\nandroidx/compose/foundation/lazy/layout/LazyLayoutKt$LazyLayout$3\n+ 2 Composables.kt\nandroidx/compose/runtime/ComposablesKt\n+ 3 Composer.kt\nandroidx/compose/runtime/ComposerKt\n*L\n1#1,138:1\n25#2:139\n25#2:146\n50#2:153\n49#2:154\n1097#3,6:140\n1097#3,6:147\n1097#3,6:155\n*S KotlinDebug\n*F\n+ 1 LazyLayout.kt\nandroidx/compose/foundation/lazy/layout/LazyLayoutKt$LazyLayout$3\n*L\n62#1:139\n65#1:146\n79#1:153\n79#1:154\n62#1:140,6\n65#1:147,6\n79#1:155,6\n*E\n"
+    value = "SMAP\nLazyLayout.kt\nKotlin\n*S Kotlin\n*F\n+ 1 LazyLayout.kt\nandroidx/compose/foundation/lazy/layout/LazyLayoutKt$LazyLayout$3\n+ 2 Composables.kt\nandroidx/compose/runtime/ComposablesKt\n+ 3 Composer.kt\nandroidx/compose/runtime/ComposerKt\n*L\n1#1,158:1\n25#2:159\n25#2:166\n50#2:173\n49#2:174\n1116#3,6:160\n1116#3,6:167\n1116#3,6:175\n*S KotlinDebug\n*F\n+ 1 LazyLayout.kt\nandroidx/compose/foundation/lazy/layout/LazyLayoutKt$LazyLayout$3\n*L\n82#1:159\n85#1:166\n99#1:173\n99#1:174\n82#1:160,6\n85#1:167,6\n99#1:175,6\n*E\n"
 .end annotation
 
 .annotation runtime Lkotlin/Metadata;
@@ -55,8 +55,6 @@
 
 
 # instance fields
-.field final synthetic $$dirty:I
-
 .field final synthetic $currentItemProvider:Landroidx/compose/runtime/State;
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -86,7 +84,7 @@
 
 
 # direct methods
-.method constructor <init>(Landroidx/compose/foundation/lazy/layout/LazyLayoutPrefetchState;Landroidx/compose/ui/Modifier;Lkotlin/jvm/functions/Function2;ILandroidx/compose/runtime/State;)V
+.method constructor <init>(Landroidx/compose/foundation/lazy/layout/LazyLayoutPrefetchState;Landroidx/compose/ui/Modifier;Lkotlin/jvm/functions/Function2;Landroidx/compose/runtime/State;)V
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -100,7 +98,7 @@
             "Landroidx/compose/ui/unit/Constraints;",
             "+",
             "Landroidx/compose/ui/layout/MeasureResult;",
-            ">;I",
+            ">;",
             "Landroidx/compose/runtime/State<",
             "+",
             "Lkotlin/jvm/functions/Function0<",
@@ -116,9 +114,7 @@
 
     iput-object p3, p0, Landroidx/compose/foundation/lazy/layout/LazyLayoutKt$LazyLayout$3;->$measurePolicy:Lkotlin/jvm/functions/Function2;
 
-    iput p4, p0, Landroidx/compose/foundation/lazy/layout/LazyLayoutKt$LazyLayout$3;->$$dirty:I
-
-    iput-object p5, p0, Landroidx/compose/foundation/lazy/layout/LazyLayoutKt$LazyLayout$3;->$currentItemProvider:Landroidx/compose/runtime/State;
+    iput-object p4, p0, Landroidx/compose/foundation/lazy/layout/LazyLayoutKt$LazyLayout$3;->$currentItemProvider:Landroidx/compose/runtime/State;
 
     const/4 p1, 0x3
 
@@ -132,7 +128,7 @@
 .method public bridge synthetic invoke(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
 
-    .line 61
+    .line 81
     check-cast p1, Landroidx/compose/runtime/saveable/SaveableStateHolder;
 
     check-cast p2, Landroidx/compose/runtime/Composer;
@@ -153,11 +149,7 @@
 .method public final invoke(Landroidx/compose/runtime/saveable/SaveableStateHolder;Landroidx/compose/runtime/Composer;I)V
     .locals 9
 
-    const-string v0, "saveableStateHolder"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string v0, "C61@2415L114,64@2566L101,78@2956L392,75@2869L489:LazyLayout.kt#wow0x6"
+    const-string v0, "C81@3347L114,84@3498L101,98@3888L392,95@3801L489:LazyLayout.kt#wow0x6"
 
     invoke-static {p2, v0}, Landroidx/compose/runtime/ComposerKt;->sourceInformation(Landroidx/compose/runtime/Composer;Ljava/lang/String;)V
 
@@ -169,11 +161,11 @@
 
     const/4 v0, -0x1
 
-    const-string v1, "androidx.compose.foundation.lazy.layout.LazyLayout.<anonymous> (LazyLayout.kt:60)"
+    const-string v1, "androidx.compose.foundation.lazy.layout.LazyLayout.<anonymous> (LazyLayout.kt:81)"
 
     const v2, -0x58c04be3
 
-    .line 62
+    .line 82
     invoke-static {v2, p3, v0, v1}, Landroidx/compose/runtime/ComposerKt;->traceEventStart(IIILjava/lang/String;)V
 
     :cond_0
@@ -187,12 +179,12 @@
 
     invoke-static {p2, v1}, Landroidx/compose/runtime/ComposerKt;->sourceInformation(Landroidx/compose/runtime/Composer;Ljava/lang/String;)V
 
-    .line 140
+    .line 160
     invoke-interface {p2}, Landroidx/compose/runtime/Composer;->rememberedValue()Ljava/lang/Object;
 
     move-result-object v2
 
-    .line 141
+    .line 161
     sget-object v3, Landroidx/compose/runtime/Composer;->Companion:Landroidx/compose/runtime/Composer$Companion;
 
     invoke-virtual {v3}, Landroidx/compose/runtime/Composer$Companion;->getEmpty()Ljava/lang/Object;
@@ -201,7 +193,7 @@
 
     if-ne v2, v3, :cond_1
 
-    .line 63
+    .line 83
     new-instance v2, Landroidx/compose/foundation/lazy/layout/LazyLayoutItemContentFactory;
 
     new-instance v3, Landroidx/compose/foundation/lazy/layout/LazyLayoutKt$LazyLayout$3$itemContentFactory$1$1;
@@ -212,27 +204,27 @@
 
     invoke-direct {v2, p1, v3}, Landroidx/compose/foundation/lazy/layout/LazyLayoutItemContentFactory;-><init>(Landroidx/compose/runtime/saveable/SaveableStateHolder;Lkotlin/jvm/functions/Function0;)V
 
-    .line 143
+    .line 163
     invoke-interface {p2, v2}, Landroidx/compose/runtime/Composer;->updateRememberedValue(Ljava/lang/Object;)V
 
-    .line 139
+    .line 159
     :cond_1
     invoke-interface {p2}, Landroidx/compose/runtime/Composer;->endReplaceableGroup()V
 
-    .line 62
+    .line 82
     check-cast v2, Landroidx/compose/foundation/lazy/layout/LazyLayoutItemContentFactory;
 
-    .line 65
+    .line 85
     invoke-interface {p2, v0}, Landroidx/compose/runtime/Composer;->startReplaceableGroup(I)V
 
     invoke-static {p2, v1}, Landroidx/compose/runtime/ComposerKt;->sourceInformation(Landroidx/compose/runtime/Composer;Ljava/lang/String;)V
 
-    .line 147
+    .line 167
     invoke-interface {p2}, Landroidx/compose/runtime/Composer;->rememberedValue()Ljava/lang/Object;
 
     move-result-object p1
 
-    .line 148
+    .line 168
     sget-object p3, Landroidx/compose/runtime/Composer;->Companion:Landroidx/compose/runtime/Composer$Companion;
 
     invoke-virtual {p3}, Landroidx/compose/runtime/Composer$Companion;->getEmpty()Ljava/lang/Object;
@@ -241,7 +233,7 @@
 
     if-ne p1, p3, :cond_2
 
-    .line 66
+    .line 86
     new-instance p1, Landroidx/compose/ui/layout/SubcomposeLayoutState;
 
     new-instance p3, Landroidx/compose/foundation/lazy/layout/LazyLayoutItemReusePolicy;
@@ -252,26 +244,26 @@
 
     invoke-direct {p1, p3}, Landroidx/compose/ui/layout/SubcomposeLayoutState;-><init>(Landroidx/compose/ui/layout/SubcomposeSlotReusePolicy;)V
 
-    .line 150
+    .line 170
     invoke-interface {p2, p1}, Landroidx/compose/runtime/Composer;->updateRememberedValue(Ljava/lang/Object;)V
 
-    .line 146
+    .line 166
     :cond_2
     invoke-interface {p2}, Landroidx/compose/runtime/Composer;->endReplaceableGroup()V
 
-    .line 65
+    .line 85
     move-object v3, p1
 
     check-cast v3, Landroidx/compose/ui/layout/SubcomposeLayoutState;
 
-    .line 68
+    .line 88
     iget-object p1, p0, Landroidx/compose/foundation/lazy/layout/LazyLayoutKt$LazyLayout$3;->$prefetchState:Landroidx/compose/foundation/lazy/layout/LazyLayoutPrefetchState;
 
-    const p3, -0x5ad377be
+    const p3, -0x5ad3741a
 
     invoke-interface {p2, p3}, Landroidx/compose/runtime/Composer;->startReplaceableGroup(I)V
 
-    const-string p3, "*68@2709L140"
+    const-string p3, "*88@3641L140"
 
     invoke-static {p2, p3}, Landroidx/compose/runtime/ComposerKt;->sourceInformation(Landroidx/compose/runtime/Composer;Ljava/lang/String;)V
 
@@ -282,105 +274,91 @@
     :cond_3
     iget-object p1, p0, Landroidx/compose/foundation/lazy/layout/LazyLayoutKt$LazyLayout$3;->$prefetchState:Landroidx/compose/foundation/lazy/layout/LazyLayoutPrefetchState;
 
-    iget p3, p0, Landroidx/compose/foundation/lazy/layout/LazyLayoutKt$LazyLayout$3;->$$dirty:I
+    .line 92
+    sget p3, Landroidx/compose/ui/layout/SubcomposeLayoutState;->$stable:I
 
-    shr-int/lit8 p3, p3, 0x6
-
-    and-int/lit8 p3, p3, 0xe
+    shl-int/lit8 p3, p3, 0x6
 
     or-int/lit8 p3, p3, 0x40
 
-    .line 72
-    sget v0, Landroidx/compose/ui/layout/SubcomposeLayoutState;->$stable:I
-
-    shl-int/lit8 v0, v0, 0x6
-
-    or-int/2addr p3, v0
-
-    .line 69
+    .line 89
     invoke-static {p1, v2, v3, p2, p3}, Landroidx/compose/foundation/lazy/layout/LazyLayoutPrefetcher_androidKt;->LazyLayoutPrefetcher(Landroidx/compose/foundation/lazy/layout/LazyLayoutPrefetchState;Landroidx/compose/foundation/lazy/layout/LazyLayoutItemContentFactory;Landroidx/compose/ui/layout/SubcomposeLayoutState;Landroidx/compose/runtime/Composer;I)V
 
-    .line 68
+    .line 88
     sget-object p1, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
 
     :goto_0
     invoke-interface {p2}, Landroidx/compose/runtime/Composer;->endReplaceableGroup()V
 
-    .line 78
+    .line 98
     iget-object v4, p0, Landroidx/compose/foundation/lazy/layout/LazyLayoutKt$LazyLayout$3;->$modifier:Landroidx/compose/ui/Modifier;
 
-    .line 79
-    iget-object p1, p0, Landroidx/compose/foundation/lazy/layout/LazyLayoutKt$LazyLayout$3;->$measurePolicy:Lkotlin/jvm/functions/Function2;
+    .line 99
+    iget-object p0, p0, Landroidx/compose/foundation/lazy/layout/LazyLayoutKt$LazyLayout$3;->$measurePolicy:Lkotlin/jvm/functions/Function2;
 
-    const p3, 0x1e7b2b64
+    const p1, 0x1e7b2b64
 
-    invoke-interface {p2, p3}, Landroidx/compose/runtime/Composer;->startReplaceableGroup(I)V
+    invoke-interface {p2, p1}, Landroidx/compose/runtime/Composer;->startReplaceableGroup(I)V
 
-    const-string p3, "CC(remember)P(1,2):Composables.kt#9igjgp"
+    const-string p1, "CC(remember)P(1,2):Composables.kt#9igjgp"
 
-    invoke-static {p2, p3}, Landroidx/compose/runtime/ComposerKt;->sourceInformation(Landroidx/compose/runtime/Composer;Ljava/lang/String;)V
+    invoke-static {p2, p1}, Landroidx/compose/runtime/ComposerKt;->sourceInformation(Landroidx/compose/runtime/Composer;Ljava/lang/String;)V
 
-    .line 153
+    .line 173
     invoke-interface {p2, v2}, Landroidx/compose/runtime/Composer;->changed(Ljava/lang/Object;)Z
+
+    move-result p1
+
+    invoke-interface {p2, p0}, Landroidx/compose/runtime/Composer;->changed(Ljava/lang/Object;)Z
 
     move-result p3
 
-    invoke-interface {p2, p1}, Landroidx/compose/runtime/Composer;->changed(Ljava/lang/Object;)Z
+    or-int/2addr p1, p3
 
-    move-result v0
-
-    or-int/2addr p3, v0
-
-    .line 155
+    .line 175
     invoke-interface {p2}, Landroidx/compose/runtime/Composer;->rememberedValue()Ljava/lang/Object;
-
-    move-result-object v0
-
-    if-nez p3, :cond_4
-
-    .line 156
-    sget-object p3, Landroidx/compose/runtime/Composer;->Companion:Landroidx/compose/runtime/Composer$Companion;
-
-    invoke-virtual {p3}, Landroidx/compose/runtime/Composer$Companion;->getEmpty()Ljava/lang/Object;
 
     move-result-object p3
 
-    if-ne v0, p3, :cond_5
+    if-nez p1, :cond_4
 
-    .line 80
+    .line 176
+    sget-object p1, Landroidx/compose/runtime/Composer;->Companion:Landroidx/compose/runtime/Composer$Companion;
+
+    invoke-virtual {p1}, Landroidx/compose/runtime/Composer$Companion;->getEmpty()Ljava/lang/Object;
+
+    move-result-object p1
+
+    if-ne p3, p1, :cond_5
+
+    .line 100
     :cond_4
-    new-instance p3, Landroidx/compose/foundation/lazy/layout/LazyLayoutKt$LazyLayout$3$2$1;
+    new-instance p1, Landroidx/compose/foundation/lazy/layout/LazyLayoutKt$LazyLayout$3$2$1;
 
-    invoke-direct {p3, v2, p1}, Landroidx/compose/foundation/lazy/layout/LazyLayoutKt$LazyLayout$3$2$1;-><init>(Landroidx/compose/foundation/lazy/layout/LazyLayoutItemContentFactory;Lkotlin/jvm/functions/Function2;)V
+    invoke-direct {p1, v2, p0}, Landroidx/compose/foundation/lazy/layout/LazyLayoutKt$LazyLayout$3$2$1;-><init>(Landroidx/compose/foundation/lazy/layout/LazyLayoutItemContentFactory;Lkotlin/jvm/functions/Function2;)V
 
-    move-object v0, p3
+    move-object p3, p1
 
-    check-cast v0, Lkotlin/jvm/functions/Function2;
+    check-cast p3, Lkotlin/jvm/functions/Function2;
 
-    .line 158
-    invoke-interface {p2, v0}, Landroidx/compose/runtime/Composer;->updateRememberedValue(Ljava/lang/Object;)V
+    .line 178
+    invoke-interface {p2, p3}, Landroidx/compose/runtime/Composer;->updateRememberedValue(Ljava/lang/Object;)V
 
-    .line 154
+    .line 174
     :cond_5
     invoke-interface {p2}, Landroidx/compose/runtime/Composer;->endReplaceableGroup()V
 
-    move-object v5, v0
+    move-object v5, p3
 
     check-cast v5, Lkotlin/jvm/functions/Function2;
 
-    sget p1, Landroidx/compose/ui/layout/SubcomposeLayoutState;->$stable:I
-
-    iget p0, p0, Landroidx/compose/foundation/lazy/layout/LazyLayoutKt$LazyLayout$3;->$$dirty:I
-
-    and-int/lit8 p0, p0, 0x70
-
-    or-int v7, p1, p0
+    sget v7, Landroidx/compose/ui/layout/SubcomposeLayoutState;->$stable:I
 
     const/4 v8, 0x0
 
     move-object v6, p2
 
-    .line 76
+    .line 96
     invoke-static/range {v3 .. v8}, Landroidx/compose/ui/layout/SubcomposeLayoutKt;->SubcomposeLayout(Landroidx/compose/ui/layout/SubcomposeLayoutState;Landroidx/compose/ui/Modifier;Lkotlin/jvm/functions/Function2;Landroidx/compose/runtime/Composer;II)V
 
     invoke-static {}, Landroidx/compose/runtime/ComposerKt;->isTraceInProgress()Z

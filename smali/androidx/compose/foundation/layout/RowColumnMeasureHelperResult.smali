@@ -40,6 +40,10 @@
 .end annotation
 
 
+# static fields
+.field public static final $stable:I = 0x8
+
+
 # instance fields
 .field private final beforeCrossAxisAlignmentLine:I
 
@@ -55,32 +59,34 @@
 
 
 # direct methods
+.method static constructor <clinit>()V
+    .locals 0
+
+    return-void
+.end method
+
 .method public constructor <init>(IIIII[I)V
-    .locals 1
+    .locals 0
 
-    const-string v0, "mainAxisPositions"
-
-    invoke-static {p6, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 36
+    .line 35
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 37
+    .line 36
     iput p1, p0, Landroidx/compose/foundation/layout/RowColumnMeasureHelperResult;->crossAxisSize:I
 
-    .line 38
+    .line 37
     iput p2, p0, Landroidx/compose/foundation/layout/RowColumnMeasureHelperResult;->mainAxisSize:I
 
-    .line 39
+    .line 38
     iput p3, p0, Landroidx/compose/foundation/layout/RowColumnMeasureHelperResult;->startIndex:I
 
-    .line 40
+    .line 39
     iput p4, p0, Landroidx/compose/foundation/layout/RowColumnMeasureHelperResult;->endIndex:I
 
-    .line 41
+    .line 40
     iput p5, p0, Landroidx/compose/foundation/layout/RowColumnMeasureHelperResult;->beforeCrossAxisAlignmentLine:I
 
-    .line 42
+    .line 41
     iput-object p6, p0, Landroidx/compose/foundation/layout/RowColumnMeasureHelperResult;->mainAxisPositions:[I
 
     return-void
@@ -91,7 +97,7 @@
 .method public final getBeforeCrossAxisAlignmentLine()I
     .locals 0
 
-    .line 41
+    .line 40
     iget p0, p0, Landroidx/compose/foundation/layout/RowColumnMeasureHelperResult;->beforeCrossAxisAlignmentLine:I
 
     return p0
@@ -100,7 +106,7 @@
 .method public final getCrossAxisSize()I
     .locals 0
 
-    .line 37
+    .line 36
     iget p0, p0, Landroidx/compose/foundation/layout/RowColumnMeasureHelperResult;->crossAxisSize:I
 
     return p0
@@ -109,7 +115,7 @@
 .method public final getEndIndex()I
     .locals 0
 
-    .line 40
+    .line 39
     iget p0, p0, Landroidx/compose/foundation/layout/RowColumnMeasureHelperResult;->endIndex:I
 
     return p0
@@ -118,7 +124,7 @@
 .method public final getMainAxisPositions()[I
     .locals 0
 
-    .line 42
+    .line 41
     iget-object p0, p0, Landroidx/compose/foundation/layout/RowColumnMeasureHelperResult;->mainAxisPositions:[I
 
     return-object p0
@@ -127,7 +133,7 @@
 .method public final getMainAxisSize()I
     .locals 0
 
-    .line 38
+    .line 37
     iget p0, p0, Landroidx/compose/foundation/layout/RowColumnMeasureHelperResult;->mainAxisSize:I
 
     return p0
@@ -136,7 +142,7 @@
 .method public final getStartIndex()I
     .locals 0
 
-    .line 39
+    .line 38
     iget p0, p0, Landroidx/compose/foundation/layout/RowColumnMeasureHelperResult;->startIndex:I
 
     return p0

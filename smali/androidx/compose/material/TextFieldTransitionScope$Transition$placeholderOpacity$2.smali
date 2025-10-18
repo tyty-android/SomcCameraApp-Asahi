@@ -99,10 +99,6 @@
         }
     .end annotation
 
-    const-string p0, "$this$animateFloat"
-
-    invoke-static {p1, p0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
     const p0, -0x405ece8d
 
     invoke-interface {p2, p0}, Landroidx/compose/runtime/Composer;->startReplaceableGroup(I)V
@@ -115,9 +111,9 @@
 
     const/4 v0, -0x1
 
-    const-string v1, "androidx.compose.material.TextFieldTransitionScope.Transition.<anonymous> (TextFieldImpl.kt:293)"
+    const-string v1, "androidx.compose.material.TextFieldTransitionScope.Transition.<anonymous> (TextFieldImpl.kt:286)"
 
-    .line 295
+    .line 287
     invoke-static {p0, p3, v0, v1}, Landroidx/compose/runtime/ComposerKt;->traceEventStart(IIILjava/lang/String;)V
 
     :cond_0
@@ -135,7 +131,7 @@
 
     if-eqz p0, :cond_1
 
-    .line 298
+    .line 290
     invoke-static {}, Landroidx/compose/animation/core/EasingKt;->getLinearEasing()Landroidx/compose/animation/core/Easing;
 
     move-result-object p0
@@ -144,7 +140,7 @@
 
     const/4 v1, 0x0
 
-    .line 296
+    .line 288
     invoke-static {p3, v1, p0, p1, v0}, Landroidx/compose/animation/core/AnimationSpecKt;->tween$default(IILandroidx/compose/animation/core/Easing;ILjava/lang/Object;)Landroidx/compose/animation/core/TweenSpec;
 
     move-result-object p0
@@ -153,7 +149,7 @@
 
     goto :goto_1
 
-    .line 300
+    .line 292
     :cond_1
     sget-object p0, Landroidx/compose/material/InputPhase;->UnfocusedEmpty:Landroidx/compose/material/InputPhase;
 
@@ -165,7 +161,7 @@
 
     if-nez p0, :cond_3
 
-    .line 301
+    .line 293
     sget-object p0, Landroidx/compose/material/InputPhase;->UnfocusedNotEmpty:Landroidx/compose/material/InputPhase;
 
     sget-object v1, Landroidx/compose/material/InputPhase;->UnfocusedEmpty:Landroidx/compose/material/InputPhase;
@@ -183,7 +179,7 @@
 
     const/4 p1, 0x0
 
-    .line 309
+    .line 301
     invoke-static {p1, p1, v0, p0, v0}, Landroidx/compose/animation/core/AnimationSpecKt;->spring$default(FFLjava/lang/Object;ILjava/lang/Object;)Landroidx/compose/animation/core/SpringSpec;
 
     move-result-object p0
@@ -196,19 +192,19 @@
     :goto_0
     const/16 p0, 0x53
 
-    .line 306
+    .line 298
     invoke-static {}, Landroidx/compose/animation/core/EasingKt;->getLinearEasing()Landroidx/compose/animation/core/Easing;
 
     move-result-object p1
 
-    .line 303
+    .line 295
     invoke-static {p0, p3, p1}, Landroidx/compose/animation/core/AnimationSpecKt;->tween(IILandroidx/compose/animation/core/Easing;)Landroidx/compose/animation/core/TweenSpec;
 
     move-result-object p0
 
     check-cast p0, Landroidx/compose/animation/core/FiniteAnimationSpec;
 
-    .line 295
+    .line 287
     :goto_1
     invoke-static {}, Landroidx/compose/runtime/ComposerKt;->isTraceInProgress()Z
 
@@ -227,7 +223,7 @@
 .method public bridge synthetic invoke(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
 
-    .line 292
+    .line 284
     check-cast p1, Landroidx/compose/animation/core/Transition$Segment;
 
     check-cast p2, Landroidx/compose/runtime/Composer;

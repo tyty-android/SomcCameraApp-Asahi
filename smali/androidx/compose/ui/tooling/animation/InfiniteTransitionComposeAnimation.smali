@@ -1,6 +1,6 @@
 .class public final Landroidx/compose/ui/tooling/animation/InfiniteTransitionComposeAnimation;
 .super Ljava/lang/Object;
-.source "InfiniteTransitionComposeAnimation.kt"
+.source "InfiniteTransitionComposeAnimation.android.kt"
 
 # interfaces
 .implements Landroidx/compose/animation/tooling/ComposeAnimation;
@@ -14,7 +14,7 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/SourceDebugExtension;
-    value = "SMAP\nInfiniteTransitionComposeAnimation.kt\nKotlin\n*S Kotlin\n*F\n+ 1 InfiniteTransitionComposeAnimation.kt\nandroidx/compose/ui/tooling/animation/InfiniteTransitionComposeAnimation\n+ 2 _Arrays.kt\nkotlin/collections/ArraysKt___ArraysKt\n*L\n1#1,68:1\n12744#2,2:69\n*S KotlinDebug\n*F\n+ 1 InfiniteTransitionComposeAnimation.kt\nandroidx/compose/ui/tooling/animation/InfiniteTransitionComposeAnimation\n*L\n51#1:69,2\n*E\n"
+    value = "SMAP\nInfiniteTransitionComposeAnimation.android.kt\nKotlin\n*S Kotlin\n*F\n+ 1 InfiniteTransitionComposeAnimation.android.kt\nandroidx/compose/ui/tooling/animation/InfiniteTransitionComposeAnimation\n+ 2 _Arrays.kt\nkotlin/collections/ArraysKt___ArraysKt\n*L\n1#1,69:1\n12744#2,2:70\n*S KotlinDebug\n*F\n+ 1 InfiniteTransitionComposeAnimation.android.kt\nandroidx/compose/ui/tooling/animation/InfiniteTransitionComposeAnimation\n*L\n51#1:70,2\n*E\n"
 .end annotation
 
 .annotation runtime Lkotlin/Metadata;
@@ -62,6 +62,8 @@
 
 
 # static fields
+.field public static final $stable:I
+
 .field public static final Companion:Landroidx/compose/ui/tooling/animation/InfiniteTransitionComposeAnimation$Companion;
 
 .field private static apiAvailable:Z
@@ -107,12 +109,16 @@
 
     sput-object v0, Landroidx/compose/ui/tooling/animation/InfiniteTransitionComposeAnimation;->Companion:Landroidx/compose/ui/tooling/animation/InfiniteTransitionComposeAnimation$Companion;
 
+    const/16 v0, 0x8
+
+    sput v0, Landroidx/compose/ui/tooling/animation/InfiniteTransitionComposeAnimation;->$stable:I
+
     .line 51
     invoke-static {}, Landroidx/compose/animation/tooling/ComposeAnimationType;->values()[Landroidx/compose/animation/tooling/ComposeAnimationType;
 
     move-result-object v0
 
-    .line 69
+    .line 70
     array-length v1, v0
 
     const/4 v2, 0x0

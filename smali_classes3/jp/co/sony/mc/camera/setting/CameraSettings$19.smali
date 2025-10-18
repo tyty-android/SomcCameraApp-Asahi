@@ -21,7 +21,7 @@
 .method constructor <init>()V
     .locals 0
 
-    .line 691
+    .line 744
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -42,11 +42,11 @@
         }
     .end annotation
 
-    .line 695
+    .line 748
     check-cast p1, Ljp/co/sony/mc/camera/setting/CameraSettings;
 
-    .line 696
-    invoke-static {p1}, Ljp/co/sony/mc/camera/setting/CameraSettings;->-$$Nest$mgetMultiFrameNrMode(Ljp/co/sony/mc/camera/setting/CameraSettings;)Ljp/co/sony/mc/camera/configuration/parameters/MultiFrameNrMode;
+    .line 749
+    invoke-static {p1}, Ljp/co/sony/mc/camera/setting/CameraSettings;->-$$Nest$mgetMetering(Ljp/co/sony/mc/camera/setting/CameraSettings;)Ljp/co/sony/mc/camera/configuration/parameters/Metering;
 
     move-result-object p0
 

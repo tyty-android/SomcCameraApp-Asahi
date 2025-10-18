@@ -24,12 +24,13 @@
 
 .annotation runtime Lkotlin/Metadata;
     d1 = {
-        "\u0000\u0010\n\u0002\u0018\u0002\n\u0002\u0010\u0010\n\u0002\u0018\u0002\n\u0002\u0008\u0008\u0008\u0086\u0081\u0002\u0018\u0000 \t2\u0008\u0012\u0004\u0012\u00020\u00000\u00012\u00020\u0002:\u0001\tB\u0007\u0008\u0002\u00a2\u0006\u0002\u0010\u0003j\u0002\u0008\u0004j\u0002\u0008\u0005j\u0002\u0008\u0006j\u0002\u0008\u0007j\u0002\u0008\u0008\u00a8\u0006\n"
+        "\u0000\u0010\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0010\u0010\n\u0002\u0008\t\u0008\u0086\u0081\u0002\u0018\u0000 \n2\u00020\u00012\u0008\u0012\u0004\u0012\u00020\u00000\u0002:\u0001\nB\t\u0008\u0002\u00a2\u0006\u0004\u0008\u0003\u0010\u0004j\u0002\u0008\u0005j\u0002\u0008\u0006j\u0002\u0008\u0007j\u0002\u0008\u0008j\u0002\u0008\t\u00a8\u0006\u000b"
     }
     d2 = {
         "Ljp/co/sony/mc/camera/idd/value/IddVideoQuality;",
-        "",
         "Ljp/co/sony/mc/camera/idd/value/IddSettingValue;",
+        "",
+        "<init>",
         "(Ljava/lang/String;I)V",
         "QUALITY_LOW",
         "QUALITY_HIGH",
@@ -41,8 +42,8 @@
     }
     k = 0x1
     mv = {
-        0x1,
-        0x9,
+        0x2,
+        0x0,
         0x0
     }
     xi = 0x30
@@ -91,7 +92,7 @@
 .method static constructor <clinit>()V
     .locals 3
 
-    .line 495
+    .line 530
     new-instance v0, Ljp/co/sony/mc/camera/idd/value/IddVideoQuality;
 
     const-string v1, "QUALITY_LOW"
@@ -102,7 +103,7 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/idd/value/IddVideoQuality;->QUALITY_LOW:Ljp/co/sony/mc/camera/idd/value/IddVideoQuality;
 
-    .line 496
+    .line 531
     new-instance v0, Ljp/co/sony/mc/camera/idd/value/IddVideoQuality;
 
     const-string v1, "QUALITY_HIGH"
@@ -113,7 +114,7 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/idd/value/IddVideoQuality;->QUALITY_HIGH:Ljp/co/sony/mc/camera/idd/value/IddVideoQuality;
 
-    .line 497
+    .line 532
     new-instance v0, Ljp/co/sony/mc/camera/idd/value/IddVideoQuality;
 
     const-string v1, "QUALITY_480P"
@@ -124,7 +125,7 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/idd/value/IddVideoQuality;->QUALITY_480P:Ljp/co/sony/mc/camera/idd/value/IddVideoQuality;
 
-    .line 498
+    .line 533
     new-instance v0, Ljp/co/sony/mc/camera/idd/value/IddVideoQuality;
 
     const-string v1, "QUALITY_720P"
@@ -135,7 +136,7 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/idd/value/IddVideoQuality;->QUALITY_720P:Ljp/co/sony/mc/camera/idd/value/IddVideoQuality;
 
-    .line 499
+    .line 534
     new-instance v0, Ljp/co/sony/mc/camera/idd/value/IddVideoQuality;
 
     const-string v1, "QUALITY_1080P"
@@ -179,7 +180,7 @@
         }
     .end annotation
 
-    .line 494
+    .line 529
     invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
     return-void
@@ -210,6 +211,7 @@
 
     move-result-object p0
 
+    .line 546
     check-cast p0, Ljp/co/sony/mc/camera/idd/value/IddVideoQuality;
 
     return-object p0
@@ -220,10 +222,11 @@
 
     sget-object v0, Ljp/co/sony/mc/camera/idd/value/IddVideoQuality;->$VALUES:[Ljp/co/sony/mc/camera/idd/value/IddVideoQuality;
 
-    invoke-virtual {v0}, [Ljava/lang/Object;->clone()Ljava/lang/Object;
+    invoke-virtual {v0}, Ljava/lang/Object;->clone()Ljava/lang/Object;
 
     move-result-object v0
 
+    .line 546
     check-cast v0, [Ljp/co/sony/mc/camera/idd/value/IddVideoQuality;
 
     return-object v0

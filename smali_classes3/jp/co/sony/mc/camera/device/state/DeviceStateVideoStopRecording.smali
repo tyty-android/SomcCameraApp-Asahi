@@ -191,6 +191,21 @@
     return-void
 .end method
 
+.method public varargs handleOnRecordingStopped(Ljp/co/sony/mc/camera/device/state/DeviceStateContext;[Ljava/lang/Object;)V
+    .locals 0
+
+    .line 208
+    iget-boolean p2, p0, Ljp/co/sony/mc/camera/device/state/DeviceStateVideoStopRecording;->mIsClose:Z
+
+    if-nez p2, :cond_0
+
+    .line 209
+    invoke-virtual {p0, p1}, Ljp/co/sony/mc/camera/device/state/DeviceStateVideoStopRecording;->flushRecording(Ljp/co/sony/mc/camera/device/state/DeviceStateContext;)V
+
+    :cond_0
+    return-void
+.end method
+
 .method public varargs handleOnTakePictureDone(Ljp/co/sony/mc/camera/device/state/DeviceStateContext;[Ljava/lang/Object;)V
     .locals 2
 
@@ -283,11 +298,15 @@
 
     if-eqz p0, :cond_0
 
-    const-string p0, "FaceDetection is already stopped."
+    const/4 p0, 0x1
 
-    filled-new-array {p0}, [Ljava/lang/String;
+    new-array p0, p0, [Ljava/lang/String;
 
-    move-result-object p0
+    const/4 p1, 0x0
+
+    const-string p2, "FaceDetection is already stopped."
+
+    aput-object p2, p0, p1
 
     invoke-static {p0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 

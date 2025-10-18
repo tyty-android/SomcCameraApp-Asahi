@@ -11,7 +11,7 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/SourceDebugExtension;
-    value = "SMAP\nSemanticsProperties.kt\nKotlin\n*S Kotlin\n*F\n+ 1 SemanticsProperties.kt\nandroidx/compose/ui/semantics/ProgressBarRangeInfo\n+ 2 fake.kt\nkotlin/jvm/internal/FakeKt\n*L\n1#1,1291:1\n1#2:1292\n*E\n"
+    value = "SMAP\nSemanticsProperties.kt\nKotlin\n*S Kotlin\n*F\n+ 1 SemanticsProperties.kt\nandroidx/compose/ui/semantics/ProgressBarRangeInfo\n+ 2 fake.kt\nkotlin/jvm/internal/FakeKt\n*L\n1#1,1469:1\n1#2:1470\n*E\n"
 .end annotation
 
 .annotation runtime Lkotlin/Metadata;
@@ -89,7 +89,7 @@
 
     sput-object v0, Landroidx/compose/ui/semantics/ProgressBarRangeInfo;->Companion:Landroidx/compose/ui/semantics/ProgressBarRangeInfo$Companion;
 
-    .line 526
+    .line 615
     new-instance v0, Landroidx/compose/ui/semantics/ProgressBarRangeInfo;
 
     const/4 v1, 0x0
@@ -116,7 +116,7 @@
 .end method
 
 .method public constructor <init>(FLkotlin/ranges/ClosedFloatingPointRange;I)V
-    .locals 1
+    .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(F",
@@ -126,23 +126,19 @@
         }
     .end annotation
 
-    const-string v0, "range"
-
-    invoke-static {p2, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 512
+    .line 601
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 513
+    .line 602
     iput p1, p0, Landroidx/compose/ui/semantics/ProgressBarRangeInfo;->current:F
 
-    .line 514
+    .line 603
     iput-object p2, p0, Landroidx/compose/ui/semantics/ProgressBarRangeInfo;->range:Lkotlin/ranges/ClosedFloatingPointRange;
 
-    .line 516
+    .line 605
     iput p3, p0, Landroidx/compose/ui/semantics/ProgressBarRangeInfo;->steps:I
 
-    .line 519
+    .line 608
     invoke-static {p1}, Ljava/lang/Float;->isNaN(F)Z
 
     move-result p0
@@ -176,7 +172,7 @@
 
     const/4 p3, 0x0
 
-    .line 512
+    .line 601
     :cond_0
     invoke-direct {p0, p1, p2, p3}, Landroidx/compose/ui/semantics/ProgressBarRangeInfo;-><init>(FLkotlin/ranges/ClosedFloatingPointRange;I)V
 
@@ -186,7 +182,7 @@
 .method public static final synthetic access$getIndeterminate$cp()Landroidx/compose/ui/semantics/ProgressBarRangeInfo;
     .locals 1
 
-    .line 512
+    .line 601
     sget-object v0, Landroidx/compose/ui/semantics/ProgressBarRangeInfo;->Indeterminate:Landroidx/compose/ui/semantics/ProgressBarRangeInfo;
 
     return-object v0
@@ -203,7 +199,7 @@
 
     return v0
 
-    .line 531
+    .line 620
     :cond_0
     instance-of v1, p1, Landroidx/compose/ui/semantics/ProgressBarRangeInfo;
 
@@ -213,7 +209,7 @@
 
     return v2
 
-    .line 533
+    .line 622
     :cond_1
     iget v1, p0, Landroidx/compose/ui/semantics/ProgressBarRangeInfo;->current:F
 
@@ -225,7 +221,7 @@
 
     if-nez v1, :cond_4
 
-    .line 534
+    .line 623
     iget-object v1, p0, Landroidx/compose/ui/semantics/ProgressBarRangeInfo;->range:Lkotlin/ranges/ClosedFloatingPointRange;
 
     iget-object v3, p1, Landroidx/compose/ui/semantics/ProgressBarRangeInfo;->range:Lkotlin/ranges/ClosedFloatingPointRange;
@@ -238,7 +234,7 @@
 
     return v2
 
-    .line 535
+    .line 624
     :cond_2
     iget p0, p0, Landroidx/compose/ui/semantics/ProgressBarRangeInfo;->steps:I
 
@@ -258,7 +254,7 @@
 .method public final getCurrent()F
     .locals 0
 
-    .line 513
+    .line 602
     iget p0, p0, Landroidx/compose/ui/semantics/ProgressBarRangeInfo;->current:F
 
     return p0
@@ -275,7 +271,7 @@
         }
     .end annotation
 
-    .line 514
+    .line 603
     iget-object p0, p0, Landroidx/compose/ui/semantics/ProgressBarRangeInfo;->range:Lkotlin/ranges/ClosedFloatingPointRange;
 
     return-object p0
@@ -284,7 +280,7 @@
 .method public final getSteps()I
     .locals 0
 
-    .line 516
+    .line 605
     iget p0, p0, Landroidx/compose/ui/semantics/ProgressBarRangeInfo;->steps:I
 
     return p0
@@ -293,7 +289,7 @@
 .method public hashCode()I
     .locals 2
 
-    .line 541
+    .line 630
     iget v0, p0, Landroidx/compose/ui/semantics/ProgressBarRangeInfo;->current:F
 
     invoke-static {v0}, Ljava/lang/Float;->hashCode(F)I
@@ -302,7 +298,7 @@
 
     mul-int/lit8 v0, v0, 0x1f
 
-    .line 542
+    .line 631
     iget-object v1, p0, Landroidx/compose/ui/semantics/ProgressBarRangeInfo;->range:Lkotlin/ranges/ClosedFloatingPointRange;
 
     invoke-virtual {v1}, Ljava/lang/Object;->hashCode()I
@@ -313,7 +309,7 @@
 
     mul-int/lit8 v0, v0, 0x1f
 
-    .line 543
+    .line 632
     iget p0, p0, Landroidx/compose/ui/semantics/ProgressBarRangeInfo;->steps:I
 
     add-int/2addr v0, p0
@@ -324,7 +320,7 @@
 .method public toString()Ljava/lang/String;
     .locals 2
 
-    .line 548
+    .line 637
     new-instance v0, Ljava/lang/StringBuilder;
 
     const-string v1, "ProgressBarRangeInfo(current="

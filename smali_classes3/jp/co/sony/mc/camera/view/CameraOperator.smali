@@ -4,6 +4,9 @@
 
 
 # virtual methods
+.method public abstract canObjectTracking()Z
+.end method
+
 .method public abstract canSetLens()Z
 .end method
 
@@ -109,6 +112,9 @@
 .method public abstract requestTouchFocus(Landroid/graphics/Point;)V
 .end method
 
+.method public abstract requestUpdateAudioDevice()V
+.end method
+
 .method public abstract resumeRecording()V
 .end method
 
@@ -189,7 +195,13 @@
 .method public abstract startHandDetection()V
 .end method
 
+.method public abstract startMonitorAutoFramingState()V
+.end method
+
 .method public abstract startMonitorFallbackState()V
+.end method
+
+.method public abstract startMonitorFramingAssistCroppedPosition()V
 .end method
 
 .method public abstract startMonitorLowLightState()V
@@ -213,7 +225,13 @@
 .method public abstract stopHandDetection()V
 .end method
 
+.method public abstract stopMonitorAutoFramingState()V
+.end method
+
 .method public abstract stopMonitorFallbackState()V
+.end method
+
+.method public abstract stopMonitorFramingAssistCroppedPosition()V
 .end method
 
 .method public abstract stopMonitorLowLightState()V

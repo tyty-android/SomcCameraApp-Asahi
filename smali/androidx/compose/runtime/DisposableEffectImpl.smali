@@ -54,7 +54,7 @@
 
 # direct methods
 .method public constructor <init>(Lkotlin/jvm/functions/Function1;)V
-    .locals 1
+    .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -67,14 +67,10 @@
         }
     .end annotation
 
-    const-string v0, "effect"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 76
+    .line 77
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 77
+    .line 78
     iput-object p1, p0, Landroidx/compose/runtime/DisposableEffectImpl;->effect:Lkotlin/jvm/functions/Function1;
 
     return-void
@@ -91,7 +87,7 @@
 .method public onForgotten()V
     .locals 1
 
-    .line 86
+    .line 87
     iget-object v0, p0, Landroidx/compose/runtime/DisposableEffectImpl;->onDispose:Landroidx/compose/runtime/DisposableEffectResult;
 
     if-eqz v0, :cond_0
@@ -101,7 +97,7 @@
     :cond_0
     const/4 v0, 0x0
 
-    .line 87
+    .line 88
     iput-object v0, p0, Landroidx/compose/runtime/DisposableEffectImpl;->onDispose:Landroidx/compose/runtime/DisposableEffectResult;
 
     return-void
@@ -110,7 +106,7 @@
 .method public onRemembered()V
     .locals 2
 
-    .line 82
+    .line 83
     iget-object v0, p0, Landroidx/compose/runtime/DisposableEffectImpl;->effect:Lkotlin/jvm/functions/Function1;
 
     invoke-static {}, Landroidx/compose/runtime/EffectsKt;->access$getInternalDisposableEffectScope$p()Landroidx/compose/runtime/DisposableEffectScope;

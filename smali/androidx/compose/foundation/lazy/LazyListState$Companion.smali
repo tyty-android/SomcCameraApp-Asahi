@@ -42,7 +42,7 @@
 .method private constructor <init>()V
     .locals 0
 
-    .line 412
+    .line 524
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -69,7 +69,7 @@
         }
     .end annotation
 
-    .line 416
+    .line 528
     invoke-static {}, Landroidx/compose/foundation/lazy/LazyListState;->access$getSaver$cp()Landroidx/compose/runtime/saveable/Saver;
 
     move-result-object p0

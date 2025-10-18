@@ -100,11 +100,7 @@
 .end method
 
 .method public final invoke(Landroid/view/View;)V
-    .locals 1
-
-    const-string/jumbo v0, "view"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+    .locals 0
 
     .line 183
     iget-object p0, p0, Landroidx/compose/ui/viewinterop/AndroidViewBindingKt$AndroidViewBinding$6$1$1;->$reset:Lkotlin/jvm/functions/Function1;

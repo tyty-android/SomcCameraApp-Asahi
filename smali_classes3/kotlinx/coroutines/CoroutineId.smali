@@ -57,7 +57,7 @@
     k = 0x1
     mv = {
         0x1,
-        0x6,
+        0x8,
         0x0
     }
     xi = 0x30
@@ -90,14 +90,14 @@
 .method public constructor <init>(J)V
     .locals 1
 
-    .line 250
+    .line 289
     sget-object v0, Lkotlinx/coroutines/CoroutineId;->Key:Lkotlinx/coroutines/CoroutineId$Key;
 
     check-cast v0, Lkotlin/coroutines/CoroutineContext$Key;
 
     invoke-direct {p0, v0}, Lkotlin/coroutines/AbstractCoroutineContextElement;-><init>(Lkotlin/coroutines/CoroutineContext$Key;)V
 
-    .line 249
+    .line 288
     iput-wide p1, p0, Lkotlinx/coroutines/CoroutineId;->id:J
 
     return-void
@@ -178,7 +178,7 @@
 .method public final getId()J
     .locals 2
 
-    .line 249
+    .line 288
     iget-wide v0, p0, Lkotlinx/coroutines/CoroutineId;->id:J
 
     return-wide v0
@@ -199,7 +199,7 @@
 .method public bridge synthetic restoreThreadContext(Lkotlin/coroutines/CoroutineContext;Ljava/lang/Object;)V
     .locals 0
 
-    .line 247
+    .line 284
     check-cast p2, Ljava/lang/String;
 
     invoke-virtual {p0, p1, p2}, Lkotlinx/coroutines/CoroutineId;->restoreThreadContext(Lkotlin/coroutines/CoroutineContext;Ljava/lang/String;)V
@@ -210,7 +210,7 @@
 .method public restoreThreadContext(Lkotlin/coroutines/CoroutineContext;Ljava/lang/String;)V
     .locals 0
 
-    .line 271
+    .line 311
     invoke-static {}, Ljava/lang/Thread;->currentThread()Ljava/lang/Thread;
 
     move-result-object p0
@@ -223,7 +223,7 @@
 .method public toString()Ljava/lang/String;
     .locals 3
 
-    .line 252
+    .line 292
     new-instance v0, Ljava/lang/StringBuilder;
 
     const-string v1, "CoroutineId("
@@ -252,7 +252,7 @@
 .method public bridge synthetic updateThreadContext(Lkotlin/coroutines/CoroutineContext;)Ljava/lang/Object;
     .locals 0
 
-    .line 247
+    .line 284
     invoke-virtual {p0, p1}, Lkotlinx/coroutines/CoroutineId;->updateThreadContext(Lkotlin/coroutines/CoroutineContext;)Ljava/lang/String;
 
     move-result-object p0
@@ -263,7 +263,7 @@
 .method public updateThreadContext(Lkotlin/coroutines/CoroutineContext;)Ljava/lang/String;
     .locals 8
 
-    .line 255
+    .line 295
     sget-object v0, Lkotlinx/coroutines/CoroutineName;->Key:Lkotlinx/coroutines/CoroutineName$Key;
 
     check-cast v0, Lkotlin/coroutines/CoroutineContext$Key;
@@ -285,18 +285,18 @@
     :cond_0
     const-string p1, "coroutine"
 
-    .line 256
+    .line 296
     :cond_1
     invoke-static {}, Ljava/lang/Thread;->currentThread()Ljava/lang/Thread;
 
     move-result-object v0
 
-    .line 257
+    .line 297
     invoke-virtual {v0}, Ljava/lang/Thread;->getName()Ljava/lang/String;
 
     move-result-object v1
 
-    .line 258
+    .line 298
     move-object v2, v1
 
     check-cast v2, Ljava/lang/CharSequence;
@@ -317,12 +317,12 @@
 
     if-gez v2, :cond_2
 
-    .line 259
+    .line 299
     invoke-virtual {v1}, Ljava/lang/String;->length()I
 
     move-result v2
 
-    .line 260
+    .line 300
     :cond_2
     invoke-virtual {p1}, Ljava/lang/String;->length()I
 
@@ -338,7 +338,7 @@
 
     const/4 v3, 0x0
 
-    .line 261
+    .line 301
     invoke-virtual {v1, v3, v2}, Ljava/lang/String;->substring(II)Ljava/lang/String;
 
     move-result-object v2
@@ -349,25 +349,25 @@
 
     invoke-virtual {v4, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 262
+    .line 302
     const-string v2, " @"
 
     invoke-virtual {v4, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 263
+    .line 303
     invoke-virtual {v4, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     const/16 p1, 0x23
 
-    .line 264
+    .line 304
     invoke-virtual {v4, p1}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
 
-    .line 265
+    .line 305
     iget-wide p0, p0, Lkotlinx/coroutines/CoroutineId;->id:J
 
     invoke-virtual {v4, p0, p1}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
 
-    .line 260
+    .line 300
     invoke-virtual {v4}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object p0

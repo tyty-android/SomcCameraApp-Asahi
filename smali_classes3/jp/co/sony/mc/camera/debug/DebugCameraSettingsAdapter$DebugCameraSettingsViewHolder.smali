@@ -15,13 +15,14 @@
 
 .annotation runtime Lkotlin/Metadata;
     d1 = {
-        "\u0000$\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\u0008\u0007\u0018\u00002\u00020\u0001B\r\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u00a2\u0006\u0002\u0010\u0004J\u0016\u0010\u0005\u001a\u00020\u00062\u0006\u0010\u0007\u001a\u00020\u00082\u0006\u0010\t\u001a\u00020\n\u00a8\u0006\u000b"
+        "\u0000$\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0003\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\u0008\u0007\u0018\u00002\u00020\u0001B\u000f\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u00a2\u0006\u0004\u0008\u0004\u0010\u0005J\u0016\u0010\u0006\u001a\u00020\u00072\u0006\u0010\u0008\u001a\u00020\t2\u0006\u0010\n\u001a\u00020\u000b\u00a8\u0006\u000c"
     }
     d2 = {
         "Ljp/co/sony/mc/camera/debug/DebugCameraSettingsAdapter$DebugCameraSettingsViewHolder;",
         "Landroidx/recyclerview/widget/RecyclerView$ViewHolder;",
         "itemView",
         "Landroid/view/View;",
+        "<init>",
         "(Landroid/view/View;)V",
         "bindData",
         "",
@@ -33,8 +34,8 @@
     }
     k = 0x1
     mv = {
-        0x1,
-        0x9,
+        0x2,
+        0x0,
         0x0
     }
     xi = 0x30
@@ -79,9 +80,9 @@
     invoke-static {p2, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 106
-    iget-object v0, p0, Ljp/co/sony/mc/camera/debug/DebugCameraSettingsAdapter$DebugCameraSettingsViewHolder;->itemView:Landroid/view/View;
+    iget-object v0, p0, Landroidx/recyclerview/widget/RecyclerView$ViewHolder;->itemView:Landroid/view/View;
 
-    const v1, 0x7f090424
+    const v1, 0x7f090414
 
     invoke-virtual {v0, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -90,9 +91,9 @@
     check-cast v0, Landroid/widget/TextView;
 
     .line 107
-    iget-object v1, p0, Ljp/co/sony/mc/camera/debug/DebugCameraSettingsAdapter$DebugCameraSettingsViewHolder;->itemView:Landroid/view/View;
+    iget-object v1, p0, Landroidx/recyclerview/widget/RecyclerView$ViewHolder;->itemView:Landroid/view/View;
 
-    const v2, 0x7f090423
+    const v2, 0x7f090413
 
     invoke-virtual {v1, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -101,9 +102,9 @@
     check-cast v1, Landroid/widget/TextView;
 
     .line 108
-    iget-object v2, p0, Ljp/co/sony/mc/camera/debug/DebugCameraSettingsAdapter$DebugCameraSettingsViewHolder;->itemView:Landroid/view/View;
+    iget-object v2, p0, Landroidx/recyclerview/widget/RecyclerView$ViewHolder;->itemView:Landroid/view/View;
 
-    const v3, 0x7f090425
+    const v3, 0x7f090415
 
     invoke-virtual {v2, v3}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -145,7 +146,7 @@
 
     move-result-object p0
 
-    const p2, 0x7f1104d5
+    const p2, 0x7f110509
 
     .line 118
     invoke-virtual {v1, p2}, Landroid/widget/TextView;->setText(I)V
@@ -155,14 +156,12 @@
 
     if-ne p0, p2, :cond_0
 
-    const p0, 0x7f11030f
+    const p0, 0x7f110340
 
     .line 121
     invoke-virtual {p1, p0}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
-    move-result-object p0
-
-    check-cast p0, Ljava/lang/CharSequence;
+    move-result-object v8
 
     goto :goto_0
 
@@ -172,14 +171,12 @@
 
     if-ne p0, p2, :cond_1
 
-    const p0, 0x7f110312
+    const p0, 0x7f110343
 
     .line 124
     invoke-virtual {p1, p0}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
-    move-result-object p0
-
-    check-cast p0, Ljava/lang/CharSequence;
+    move-result-object v8
 
     goto :goto_0
 
@@ -189,14 +186,12 @@
 
     if-ne p0, p2, :cond_2
 
-    const p0, 0x7f11030c
+    const p0, 0x7f11033d
 
     .line 127
     invoke-virtual {p1, p0}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
-    move-result-object p0
-
-    check-cast p0, Ljava/lang/CharSequence;
+    move-result-object v8
 
     goto :goto_0
 
@@ -209,13 +204,11 @@
     move-result-object v8
 
     :cond_3
-    move-object p0, v8
-
-    check-cast p0, Ljava/lang/CharSequence;
+    :goto_0
+    check-cast v8, Ljava/lang/CharSequence;
 
     .line 119
-    :goto_0
-    invoke-virtual {v0, p0}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
+    invoke-virtual {v0, v8}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
     return-void
 
@@ -234,7 +227,7 @@
 
     move-result-object p0
 
-    const p2, 0x7f1102cc
+    const p2, 0x7f1102f1
 
     .line 140
     invoke-virtual {v1, p2}, Landroid/widget/TextView;->setText(I)V
@@ -244,14 +237,12 @@
 
     if-ne p0, p2, :cond_5
 
-    const p0, 0x7f1102c1
+    const p0, 0x7f1102e5
 
     .line 143
     invoke-virtual {p1, p0}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
-    move-result-object p0
-
-    check-cast p0, Ljava/lang/CharSequence;
+    move-result-object v8
 
     goto :goto_1
 
@@ -261,14 +252,12 @@
 
     if-ne p0, p2, :cond_6
 
-    const p0, 0x7f1102bf
+    const p0, 0x7f1102e3
 
     .line 146
     invoke-virtual {p1, p0}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
-    move-result-object p0
-
-    check-cast p0, Ljava/lang/CharSequence;
+    move-result-object v8
 
     goto :goto_1
 
@@ -278,14 +267,12 @@
 
     if-ne p0, p2, :cond_7
 
-    const p0, 0x7f1102be
+    const p0, 0x7f1102e2
 
     .line 149
     invoke-virtual {p1, p0}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
-    move-result-object p0
-
-    check-cast p0, Ljava/lang/CharSequence;
+    move-result-object v8
 
     goto :goto_1
 
@@ -298,13 +285,11 @@
     move-result-object v8
 
     :cond_8
-    move-object p0, v8
-
-    check-cast p0, Ljava/lang/CharSequence;
+    :goto_1
+    check-cast v8, Ljava/lang/CharSequence;
 
     .line 141
-    :goto_1
-    invoke-virtual {v0, p0}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
+    invoke-virtual {v0, v8}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
     return-void
 
@@ -323,7 +308,7 @@
 
     move-result-object p0
 
-    const p1, 0x7f1101c7
+    const p1, 0x7f1101ca
 
     .line 161
     invoke-virtual {v1, p1}, Landroid/widget/TextView;->setText(I)V
@@ -448,7 +433,7 @@
     if-nez p2, :cond_f
 
     .line 187
-    iget-object p0, p0, Ljp/co/sony/mc/camera/debug/DebugCameraSettingsAdapter$DebugCameraSettingsViewHolder;->itemView:Landroid/view/View;
+    iget-object p0, p0, Landroidx/recyclerview/widget/RecyclerView$ViewHolder;->itemView:Landroid/view/View;
 
     invoke-virtual {p0, v4}, Landroid/view/View;->setClickable(Z)V
 

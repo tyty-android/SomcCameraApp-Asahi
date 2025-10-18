@@ -202,10 +202,6 @@
 
     move-result-object p0
 
-    const-string p2, "innerContext.baseContext"
-
-    invoke-static {p0, p2}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
-
     goto :goto_0
 
     :cond_2
@@ -234,10 +230,6 @@
             ">;"
         }
     .end annotation
-
-    const-string p0, "fullyDrawnReporterOwner"
-
-    invoke-static {p1, p0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 115
     sget-object p0, Landroidx/activity/compose/LocalFullyDrawnReporterOwner;->LocalFullyDrawnReporterOwner:Landroidx/compose/runtime/ProvidableCompositionLocal;

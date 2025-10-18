@@ -25,7 +25,7 @@
 .method private constructor <init>(Ljp/co/sony/mc/camera/util/SpiritLevelMonitor;)V
     .locals 0
 
-    .line 92
+    .line 93
     iput-object p1, p0, Ljp/co/sony/mc/camera/util/SpiritLevelMonitor$PoseRotationListenerImpl;->this$0:Ljp/co/sony/mc/camera/util/SpiritLevelMonitor;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -46,30 +46,52 @@
 .method public onPoseRotationResultChanged(Ljp/co/sony/mc/camera/device/CaptureResultNotifier$PoseRotationResult;Ljava/lang/String;)V
     .locals 5
 
-    if-eqz p1, :cond_1
+    if-eqz p1, :cond_2
 
-    .line 98
+    .line 99
     invoke-static {p2}, Ljp/co/sony/mc/camera/util/capability/PlatformCapability;->getCameraOrientation(Ljava/lang/String;)I
+
+    move-result v0
+
+    int-to-float v0, v0
+
+    .line 100
+    sget-object v1, Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;->FRONT:Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;
+
+    invoke-virtual {v1}, Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;->getCameraInfo()Ljp/co/sony/mc/camera/device/CameraInfo;
+
+    move-result-object v1
+
+    invoke-virtual {v1}, Ljp/co/sony/mc/camera/device/CameraInfo;->getLensCameraId()Ljava/lang/String;
+
+    move-result-object v1
+
+    invoke-virtual {v1, p2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result p2
 
-    int-to-float p2, p2
+    if-eqz p2, :cond_0
 
-    .line 99
+    const/high16 p2, 0x43340000    # 180.0f
+
+    sub-float/2addr v0, p2
+
+    .line 104
+    :cond_0
     invoke-virtual {p1}, Ljp/co/sony/mc/camera/device/CaptureResultNotifier$PoseRotationResult;->getPoseRotation()[F
 
     move-result-object p1
 
-    const/4 v0, 0x3
+    const/4 p2, 0x3
 
-    .line 100
-    aget v0, p1, v0
+    .line 105
+    aget p2, p1, p2
 
     const/4 v1, 0x2
 
     aget v1, p1, v1
 
-    mul-float v2, v0, v1
+    mul-float v2, p2, v1
 
     const/4 v3, 0x0
 
@@ -87,63 +109,63 @@
 
     mul-float/2addr v2, v4
 
-    mul-float/2addr v0, v0
+    mul-float/2addr p2, p2
 
     mul-float/2addr v3, v3
 
-    add-float/2addr v0, v3
+    add-float/2addr p2, v3
 
     mul-float/2addr p1, p1
 
-    sub-float/2addr v0, p1
+    sub-float/2addr p2, p1
 
     mul-float/2addr v1, v1
 
-    sub-float/2addr v0, v1
+    sub-float/2addr p2, v1
 
-    div-float/2addr v2, v0
+    div-float/2addr v2, p2
 
-    float-to-double v0, v2
+    float-to-double p1, v2
 
-    .line 106
-    invoke-static {v0, v1}, Ljava/lang/Math;->atan(D)D
+    .line 111
+    invoke-static {p1, p2}, Ljava/lang/Math;->atan(D)D
 
-    move-result-wide v0
+    move-result-wide p1
 
-    const-wide v2, 0x4066800000000000L    # 180.0
+    const-wide v1, 0x4066800000000000L    # 180.0
 
-    mul-double/2addr v0, v2
+    mul-double/2addr p1, v1
 
-    const-wide v2, 0x400921fb54442d18L    # Math.PI
+    const-wide v1, 0x400921fb54442d18L    # Math.PI
 
-    div-double/2addr v0, v2
+    div-double/2addr p1, v1
 
-    double-to-float p1, v0
+    double-to-float p1, p1
 
-    const/4 v0, 0x0
+    const/4 p2, 0x0
 
-    cmpl-float v0, p1, v0
+    cmpl-float p2, p1, p2
 
-    if-ltz v0, :cond_0
+    if-ltz p2, :cond_1
 
-    .line 108
+    .line 113
     iget-object p0, p0, Ljp/co/sony/mc/camera/util/SpiritLevelMonitor$PoseRotationListenerImpl;->this$0:Ljp/co/sony/mc/camera/util/SpiritLevelMonitor;
 
-    sub-float/2addr p1, p2
+    sub-float/2addr p1, v0
 
     invoke-static {p0, p1}, Ljp/co/sony/mc/camera/util/SpiritLevelMonitor;->-$$Nest$fputmPoseRotationRoll(Ljp/co/sony/mc/camera/util/SpiritLevelMonitor;F)V
 
     goto :goto_0
 
-    .line 110
-    :cond_0
+    .line 115
+    :cond_1
     iget-object p0, p0, Ljp/co/sony/mc/camera/util/SpiritLevelMonitor$PoseRotationListenerImpl;->this$0:Ljp/co/sony/mc/camera/util/SpiritLevelMonitor;
 
-    add-float/2addr p1, p2
+    add-float/2addr p1, v0
 
     invoke-static {p0, p1}, Ljp/co/sony/mc/camera/util/SpiritLevelMonitor;->-$$Nest$fputmPoseRotationRoll(Ljp/co/sony/mc/camera/util/SpiritLevelMonitor;F)V
 
-    :cond_1
+    :cond_2
     :goto_0
     return-void
 .end method

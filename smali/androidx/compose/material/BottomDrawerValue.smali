@@ -65,7 +65,7 @@
 .method static constructor <clinit>()V
     .locals 3
 
-    .line 97
+    .line 96
     new-instance v0, Landroidx/compose/material/BottomDrawerValue;
 
     const-string v1, "Closed"
@@ -76,7 +76,7 @@
 
     sput-object v0, Landroidx/compose/material/BottomDrawerValue;->Closed:Landroidx/compose/material/BottomDrawerValue;
 
-    .line 102
+    .line 101
     new-instance v0, Landroidx/compose/material/BottomDrawerValue;
 
     const-string v1, "Open"
@@ -87,7 +87,7 @@
 
     sput-object v0, Landroidx/compose/material/BottomDrawerValue;->Open:Landroidx/compose/material/BottomDrawerValue;
 
-    .line 107
+    .line 106
     new-instance v0, Landroidx/compose/material/BottomDrawerValue;
 
     const-string v1, "Expanded"
@@ -115,7 +115,7 @@
         }
     .end annotation
 
-    .line 92
+    .line 91
     invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
     return-void

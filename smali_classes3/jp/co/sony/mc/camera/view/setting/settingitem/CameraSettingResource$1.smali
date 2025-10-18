@@ -28,7 +28,7 @@
 .method static constructor <clinit>()V
     .locals 13
 
-    .line 615
+    .line 651
     invoke-static {}, Ljp/co/sony/mc/camera/configuration/parameters/AspectRatio;->values()[Ljp/co/sony/mc/camera/configuration/parameters/AspectRatio;
 
     move-result-object v0
@@ -116,7 +116,7 @@
     :try_end_4
     .catch Ljava/lang/NoSuchFieldError; {:try_start_4 .. :try_end_4} :catch_4
 
-    .line 541
+    .line 575
     :catch_4
     invoke-static {}, Ljp/co/sony/mc/camera/configuration/parameters/WhiteBalance;->values()[Ljp/co/sony/mc/camera/configuration/parameters/WhiteBalance;
 
@@ -167,7 +167,7 @@
     :try_end_7
     .catch Ljava/lang/NoSuchFieldError; {:try_start_7 .. :try_end_7} :catch_7
 
-    .line 297
+    .line 310
     :catch_7
     invoke-static {}, Ljp/co/sony/mc/camera/configuration/parameters/DriveMode;->values()[Ljp/co/sony/mc/camera/configuration/parameters/DriveMode;
 
@@ -342,7 +342,7 @@
     :try_end_12
     .catch Ljava/lang/NoSuchFieldError; {:try_start_12 .. :try_end_12} :catch_12
 
-    .line 188
+    .line 201
     :catch_12
     invoke-static {}, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->values()[Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 

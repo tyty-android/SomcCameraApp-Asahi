@@ -42,7 +42,7 @@
 
     iget-object p0, p0, Ljp/co/sony/mc/camera/device/FocusRegionChecker$$ExternalSyntheticLambda0;->f$2:[Landroid/hardware/camera2/params/MeteringRectangle;
 
-    invoke-static {v0, v1, p0}, Ljp/co/sony/mc/camera/device/FocusRegionChecker;->$r8$lambda$2IeEtTztDcAZlWU1GhcvCuDRWpo(Ljp/co/sony/mc/camera/device/FocusRegionChecker;Z[Landroid/hardware/camera2/params/MeteringRectangle;)V
+    invoke-static {v0, v1, p0}, Ljp/co/sony/mc/camera/device/FocusRegionChecker;->$r8$lambda$0a-oX5wEXOCu2_LYmLAVf5r1ga4(Ljp/co/sony/mc/camera/device/FocusRegionChecker;Z[Landroid/hardware/camera2/params/MeteringRectangle;)V
 
     return-void
 .end method

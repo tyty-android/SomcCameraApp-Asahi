@@ -25,7 +25,7 @@
 .method constructor <init>(Ljp/co/sony/mc/camera/CameraActivity;)V
     .locals 0
 
-    .line 438
+    .line 442
     iput-object p1, p0, Ljp/co/sony/mc/camera/CameraActivity$2;->this$0:Ljp/co/sony/mc/camera/CameraActivity;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -36,34 +36,38 @@
 
 # virtual methods
 .method public onBatteryLevelChanged(I)V
-    .locals 2
+    .locals 3
 
-    .line 466
+    .line 470
     sget-boolean v0, Ljp/co/sony/mc/camera/util/CamLog;->VERBOSE:Z
 
     if-eqz v0, :cond_0
 
-    new-instance v0, Ljava/lang/StringBuilder;
+    const/4 v0, 0x1
 
-    const-string v1, "onBatteryLevelChanged : "
+    new-array v0, v0, [Ljava/lang/String;
 
-    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+    new-instance v1, Ljava/lang/StringBuilder;
 
-    invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+    const-string v2, "onBatteryLevelChanged : "
 
-    move-result-object v0
+    invoke-direct {v1, v2}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-virtual {v1, p1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
-    move-result-object v0
+    move-result-object v1
 
-    filled-new-array {v0}, [Ljava/lang/String;
+    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    move-result-object v0
+    move-result-object v1
+
+    const/4 v2, 0x0
+
+    aput-object v1, v0, v2
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
-    .line 467
+    .line 471
     :cond_0
     iget-object v0, p0, Ljp/co/sony/mc/camera/CameraActivity$2;->this$0:Ljp/co/sony/mc/camera/CameraActivity;
 
@@ -73,7 +77,7 @@
 
     invoke-virtual {v0, p1}, Ljp/co/sony/mc/camera/SystemEventNotifierImpl;->notifyBatteryLevelChanged(I)V
 
-    .line 468
+    .line 472
     iget-object p0, p0, Ljp/co/sony/mc/camera/CameraActivity$2;->this$0:Ljp/co/sony/mc/camera/CameraActivity;
 
     iget-object p0, p0, Ljp/co/sony/mc/camera/CameraActivity;->mStateMachine:Ljp/co/sony/mc/camera/controller/StateMachine;
@@ -96,7 +100,7 @@
 .method public onLowBatteryRestored()V
     .locals 1
 
-    .line 442
+    .line 446
     iget-object p0, p0, Ljp/co/sony/mc/camera/CameraActivity$2;->this$0:Ljp/co/sony/mc/camera/CameraActivity;
 
     invoke-static {p0}, Ljp/co/sony/mc/camera/CameraActivity;->-$$Nest$fgetmSystemEventNotifier(Ljp/co/sony/mc/camera/CameraActivity;)Ljp/co/sony/mc/camera/SystemEventNotifierImpl;
@@ -113,7 +117,7 @@
 .method public onReachBatteryLimit(Z)V
     .locals 2
 
-    .line 455
+    .line 459
     iget-object p1, p0, Ljp/co/sony/mc/camera/CameraActivity$2;->this$0:Ljp/co/sony/mc/camera/CameraActivity;
 
     invoke-static {p1}, Ljp/co/sony/mc/camera/CameraActivity;->-$$Nest$fgetmSystemEventNotifier(Ljp/co/sony/mc/camera/CameraActivity;)Ljp/co/sony/mc/camera/SystemEventNotifierImpl;
@@ -124,14 +128,14 @@
 
     invoke-virtual {p1, v0}, Ljp/co/sony/mc/camera/SystemEventNotifierImpl;->notifyBatteryStateChanged(Ljp/co/sony/mc/camera/SystemEventNotifier$BatteryStatus;)V
 
-    .line 457
+    .line 461
     iget-object p1, p0, Ljp/co/sony/mc/camera/CameraActivity$2;->this$0:Ljp/co/sony/mc/camera/CameraActivity;
 
     iget-object p1, p1, Ljp/co/sony/mc/camera/CameraActivity;->mStateMachine:Ljp/co/sony/mc/camera/controller/StateMachine;
 
     if-eqz p1, :cond_0
 
-    .line 458
+    .line 462
     iget-object p1, p0, Ljp/co/sony/mc/camera/CameraActivity$2;->this$0:Ljp/co/sony/mc/camera/CameraActivity;
 
     iget-object p1, p1, Ljp/co/sony/mc/camera/CameraActivity;->mStateMachine:Ljp/co/sony/mc/camera/controller/StateMachine;
@@ -144,7 +148,7 @@
 
     invoke-virtual {p1, v0, v1}, Ljp/co/sony/mc/camera/controller/StateMachine;->sendEvent(Ljp/co/sony/mc/camera/controller/StateMachine$TransitterEvent;[Ljava/lang/Object;)V
 
-    .line 461
+    .line 465
     :cond_0
     iget-object p0, p0, Ljp/co/sony/mc/camera/CameraActivity$2;->this$0:Ljp/co/sony/mc/camera/CameraActivity;
 
@@ -156,7 +160,7 @@
 .method public onReachLowBattery()V
     .locals 2
 
-    .line 448
+    .line 452
     iget-object v0, p0, Ljp/co/sony/mc/camera/CameraActivity$2;->this$0:Ljp/co/sony/mc/camera/CameraActivity;
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/CameraActivity;->-$$Nest$fgetmSystemEventNotifier(Ljp/co/sony/mc/camera/CameraActivity;)Ljp/co/sony/mc/camera/SystemEventNotifierImpl;
@@ -167,7 +171,7 @@
 
     invoke-virtual {v0, v1}, Ljp/co/sony/mc/camera/SystemEventNotifierImpl;->notifyBatteryStateChanged(Ljp/co/sony/mc/camera/SystemEventNotifier$BatteryStatus;)V
 
-    .line 450
+    .line 454
     iget-object p0, p0, Ljp/co/sony/mc/camera/CameraActivity$2;->this$0:Ljp/co/sony/mc/camera/CameraActivity;
 
     iget-object p0, p0, Ljp/co/sony/mc/camera/CameraActivity;->mStateMachine:Ljp/co/sony/mc/camera/controller/StateMachine;

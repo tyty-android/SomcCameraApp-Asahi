@@ -17,7 +17,7 @@
     k = 0x3
     mv = {
         0x1,
-        0x6,
+        0x8,
         0x0
     }
     xi = 0x30
@@ -32,7 +32,7 @@
         message = "Since 1.2.0, binary compatibility with versions <= 1.1.x"
     .end annotation
 
-    .line 426
+    .line 441
     check-cast p0, Lkotlinx/coroutines/Job;
 
     invoke-static {p0}, Lkotlinx/coroutines/Job$DefaultImpls;->cancel(Lkotlinx/coroutines/Job;)V
@@ -56,7 +56,7 @@
         }
     .end annotation
 
-    .line 426
+    .line 441
     check-cast p0, Lkotlinx/coroutines/Job;
 
     invoke-static {p0, p1, p2}, Lkotlinx/coroutines/Job$DefaultImpls;->fold(Lkotlinx/coroutines/Job;Ljava/lang/Object;Lkotlin/jvm/functions/Function2;)Ljava/lang/Object;
@@ -79,7 +79,7 @@
         }
     .end annotation
 
-    .line 426
+    .line 441
     check-cast p0, Lkotlinx/coroutines/Job;
 
     invoke-static {p0, p1}, Lkotlinx/coroutines/Job$DefaultImpls;->get(Lkotlinx/coroutines/Job;Lkotlin/coroutines/CoroutineContext$Key;)Lkotlin/coroutines/CoroutineContext$Element;
@@ -101,7 +101,7 @@
         }
     .end annotation
 
-    .line 426
+    .line 441
     check-cast p0, Lkotlinx/coroutines/Job;
 
     invoke-static {p0, p1}, Lkotlinx/coroutines/Job$DefaultImpls;->minusKey(Lkotlinx/coroutines/Job;Lkotlin/coroutines/CoroutineContext$Key;)Lkotlin/coroutines/CoroutineContext;
@@ -114,7 +114,7 @@
 .method public static plus(Lkotlinx/coroutines/ParentJob;Lkotlin/coroutines/CoroutineContext;)Lkotlin/coroutines/CoroutineContext;
     .locals 0
 
-    .line 426
+    .line 441
     check-cast p0, Lkotlinx/coroutines/Job;
 
     invoke-static {p0, p1}, Lkotlinx/coroutines/Job$DefaultImpls;->plus(Lkotlinx/coroutines/Job;Lkotlin/coroutines/CoroutineContext;)Lkotlin/coroutines/CoroutineContext;
@@ -131,7 +131,7 @@
         message = "Operator \'+\' on two Job objects is meaningless. Job is a coroutine context element and `+` is a set-sum operator for coroutine contexts. The job to the right of `+` just replaces the job the left of `+`."
     .end annotation
 
-    .line 426
+    .line 441
     check-cast p0, Lkotlinx/coroutines/Job;
 
     invoke-static {p0, p1}, Lkotlinx/coroutines/Job$DefaultImpls;->plus(Lkotlinx/coroutines/Job;Lkotlinx/coroutines/Job;)Lkotlinx/coroutines/Job;

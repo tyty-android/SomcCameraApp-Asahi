@@ -105,7 +105,7 @@
     .line 88
     invoke-static {p2}, Ljp/co/sony/mc/camera/rtmp/ShareLiveUrlResultReceiver;->setSIsWaitingForResult(Z)V
 
-    const p2, 0x7f1100ee
+    const p2, 0x7f1100ef
 
     .line 90
     invoke-virtual {p1, p2}, Landroid/content/Context;->getText(I)Ljava/lang/CharSequence;
@@ -156,7 +156,7 @@
 
     move-result-object p0
 
-    const p1, 0x7f0702a2
+    const p1, 0x7f0702d6
 
     .line 138
     invoke-virtual {p0, p1}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
@@ -227,7 +227,7 @@
     goto :goto_0
 
     :cond_0
-    const v0, 0x7f0c0054
+    const v0, 0x7f0c0053
 
     .line 61
     invoke-virtual {p5, v0, v1}, Landroid/view/LayoutInflater;->inflate(ILandroid/view/ViewGroup;)Landroid/view/View;
@@ -254,7 +254,7 @@
     invoke-virtual {p2, v0}, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Builder;->setTitle(I)Landroid/app/AlertDialog$Builder;
 
     :cond_1
-    const v0, 0x7f0902f9
+    const v0, 0x7f0902ed
 
     .line 66
     invoke-virtual {p5, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
@@ -270,7 +270,7 @@
 
     if-ne v1, v2, :cond_2
 
-    const v0, 0x7f09042a
+    const v0, 0x7f09041a
 
     .line 69
     invoke-virtual {p5, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
@@ -302,7 +302,7 @@
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
-    const v0, 0x7f090429
+    const v0, 0x7f090419
 
     .line 72
     invoke-virtual {p5, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
@@ -318,7 +318,7 @@
 
     invoke-virtual {v0, v1}, Landroid/widget/ImageButton;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
-    const v0, 0x7f090348
+    const v0, 0x7f090347
 
     .line 94
     invoke-virtual {p5, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
@@ -386,7 +386,7 @@
 
     move-result-object v2
 
-    const v3, 0x7f11010c
+    const v3, 0x7f11010d
 
     .line 109
     invoke-virtual {v2, v3}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
@@ -414,7 +414,7 @@
 
     move-result-object v2
 
-    const v3, 0x7f0702f6
+    const v3, 0x7f070327
 
     invoke-virtual {v2, v3}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 

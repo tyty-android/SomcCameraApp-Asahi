@@ -9,24 +9,20 @@
 # annotations
 .annotation runtime Lkotlin/Metadata;
     d1 = {
-        "\u00002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0005\n\u0002\u0018\u0002\n\u0002\u0008\u0005\n\u0002\u0018\u0002\n\u0002\u0008\u0005\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0005\u0008\u0000\u0018\u00002\u00020\u0001B\u0005\u00a2\u0006\u0002\u0010\u0002J\u001d\u0010\u0015\u001a\u00020\u00162\u0006\u0010\u0017\u001a\u00020\u0018H\u0016\u00f8\u0001\u0000\u00f8\u0001\u0001\u00a2\u0006\u0004\u0008\u0019\u0010\u001aJ\u001b\u0010\u001b\u001a\u00020\u00162\u0006\u0010\u0017\u001a\u00020\u0018\u00f8\u0001\u0000\u00f8\u0001\u0001\u00a2\u0006\u0004\u0008\u001c\u0010\u001aR\u001a\u0010\u0003\u001a\u00020\u0004X\u0086.\u00a2\u0006\u000e\n\u0000\u001a\u0004\u0008\u0005\u0010\u0006\"\u0004\u0008\u0007\u0010\u0008R\u001c\u0010\t\u001a\u0004\u0018\u00010\nX\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\u0008\u000b\u0010\u000c\"\u0004\u0008\r\u0010\u000eR\u001a\u0010\u000f\u001a\u00020\u0010X\u0086.\u00a2\u0006\u000e\n\u0000\u001a\u0004\u0008\u0011\u0010\u0012\"\u0004\u0008\u0013\u0010\u0014\u0082\u0002\u000b\n\u0005\u0008\u00a1\u001e0\u0001\n\u0002\u0008\u0019\u00a8\u0006\u001d"
+        "\u00000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0005\n\u0002\u0018\u0002\n\u0002\u0008\u0005\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0005\u0008\u0000\u0018\u00002\u00020\u0001B\u000f\u0012\u0008\u0010\u0002\u001a\u0004\u0018\u00010\u0003\u00a2\u0006\u0002\u0010\u0004J\u001a\u0010\u0011\u001a\u00020\u00122\u0006\u0010\u0013\u001a\u00020\u0014H\u0016\u00f8\u0001\u0000\u00a2\u0006\u0004\u0008\u0015\u0010\u0016J\u0018\u0010\u0017\u001a\u00020\u00122\u0006\u0010\u0013\u001a\u00020\u0014\u00f8\u0001\u0000\u00a2\u0006\u0004\u0008\u0018\u0010\u0016R\u001a\u0010\u0005\u001a\u00020\u0006X\u0086.\u00a2\u0006\u000e\n\u0000\u001a\u0004\u0008\u0007\u0010\u0008\"\u0004\u0008\t\u0010\nR\u001a\u0010\u000b\u001a\u00020\u000cX\u0086.\u00a2\u0006\u000e\n\u0000\u001a\u0004\u0008\r\u0010\u000e\"\u0004\u0008\u000f\u0010\u0010R\u0010\u0010\u0002\u001a\u0004\u0018\u00010\u0003X\u0082\u0004\u00a2\u0006\u0002\n\u0000\u0082\u0002\u0007\n\u0005\u0008\u00a1\u001e0\u0001\u00a8\u0006\u0019"
     }
     d2 = {
         "Landroidx/compose/foundation/text/KeyboardActionRunner;",
         "Landroidx/compose/foundation/text/KeyboardActionScope;",
-        "()V",
+        "keyboardController",
+        "Landroidx/compose/ui/platform/SoftwareKeyboardController;",
+        "(Landroidx/compose/ui/platform/SoftwareKeyboardController;)V",
         "focusManager",
         "Landroidx/compose/ui/focus/FocusManager;",
         "getFocusManager",
         "()Landroidx/compose/ui/focus/FocusManager;",
         "setFocusManager",
         "(Landroidx/compose/ui/focus/FocusManager;)V",
-        "inputSession",
-        "Landroidx/compose/ui/text/input/TextInputSession;",
-        "getInputSession",
-        "()Landroidx/compose/ui/text/input/TextInputSession;",
-        "setInputSession",
-        "(Landroidx/compose/ui/text/input/TextInputSession;)V",
         "keyboardActions",
         "Landroidx/compose/foundation/text/KeyboardActions;",
         "getKeyboardActions",
@@ -53,20 +49,33 @@
 .end annotation
 
 
+# static fields
+.field public static final $stable:I = 0x8
+
+
 # instance fields
 .field public focusManager:Landroidx/compose/ui/focus/FocusManager;
 
-.field private inputSession:Landroidx/compose/ui/text/input/TextInputSession;
-
 .field public keyboardActions:Landroidx/compose/foundation/text/KeyboardActions;
+
+.field private final keyboardController:Landroidx/compose/ui/platform/SoftwareKeyboardController;
 
 
 # direct methods
-.method public constructor <init>()V
+.method static constructor <clinit>()V
+    .locals 0
+
+    return-void
+.end method
+
+.method public constructor <init>(Landroidx/compose/ui/platform/SoftwareKeyboardController;)V
     .locals 0
 
     .line 35
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 36
+    iput-object p1, p0, Landroidx/compose/foundation/text/KeyboardActionRunner;->keyboardController:Landroidx/compose/ui/platform/SoftwareKeyboardController;
 
     return-void
 .end method
@@ -76,7 +85,7 @@
 .method public defaultKeyboardAction-KlQnJC8(I)V
     .locals 1
 
-    .line 76
+    .line 72
     sget-object v0, Landroidx/compose/ui/text/input/ImeAction;->Companion:Landroidx/compose/ui/text/input/ImeAction$Companion;
 
     invoke-virtual {v0}, Landroidx/compose/ui/text/input/ImeAction$Companion;->getNext-eUduSuo()I
@@ -101,9 +110,9 @@
 
     invoke-interface {p0, p1}, Landroidx/compose/ui/focus/FocusManager;->moveFocus-3ESFkO8(I)Z
 
-    goto/16 :goto_0
+    goto/16 :goto_3
 
-    .line 77
+    .line 73
     :cond_0
     sget-object v0, Landroidx/compose/ui/text/input/ImeAction;->Companion:Landroidx/compose/ui/text/input/ImeAction$Companion;
 
@@ -129,9 +138,9 @@
 
     invoke-interface {p0, p1}, Landroidx/compose/ui/focus/FocusManager;->moveFocus-3ESFkO8(I)Z
 
-    goto :goto_0
+    goto :goto_3
 
-    .line 78
+    .line 74
     :cond_1
     sget-object v0, Landroidx/compose/ui/text/input/ImeAction;->Companion:Landroidx/compose/ui/text/input/ImeAction$Companion;
 
@@ -145,15 +154,15 @@
 
     if-eqz v0, :cond_2
 
-    iget-object p0, p0, Landroidx/compose/foundation/text/KeyboardActionRunner;->inputSession:Landroidx/compose/ui/text/input/TextInputSession;
+    iget-object p0, p0, Landroidx/compose/foundation/text/KeyboardActionRunner;->keyboardController:Landroidx/compose/ui/platform/SoftwareKeyboardController;
 
     if-eqz p0, :cond_7
 
-    invoke-virtual {p0}, Landroidx/compose/ui/text/input/TextInputSession;->hideSoftwareKeyboard()Z
+    invoke-interface {p0}, Landroidx/compose/ui/platform/SoftwareKeyboardController;->hide()V
 
-    goto :goto_0
+    goto :goto_3
 
-    .line 81
+    .line 77
     :cond_2
     sget-object p0, Landroidx/compose/ui/text/input/ImeAction;->Companion:Landroidx/compose/ui/text/input/ImeAction$Companion;
 
@@ -165,7 +174,11 @@
 
     move-result p0
 
+    const/4 v0, 0x1
+
     if-eqz p0, :cond_3
+
+    move p0, v0
 
     goto :goto_0
 
@@ -180,9 +193,12 @@
 
     move-result p0
 
+    :goto_0
     if-eqz p0, :cond_4
 
-    goto :goto_0
+    move p0, v0
+
+    goto :goto_1
 
     :cond_4
     sget-object p0, Landroidx/compose/ui/text/input/ImeAction;->Companion:Landroidx/compose/ui/text/input/ImeAction$Companion;
@@ -195,9 +211,10 @@
 
     move-result p0
 
+    :goto_1
     if-eqz p0, :cond_5
 
-    goto :goto_0
+    goto :goto_2
 
     :cond_5
     sget-object p0, Landroidx/compose/ui/text/input/ImeAction;->Companion:Landroidx/compose/ui/text/input/ImeAction$Companion;
@@ -208,11 +225,12 @@
 
     invoke-static {p1, p0}, Landroidx/compose/ui/text/input/ImeAction;->equals-impl0(II)Z
 
-    move-result p0
+    move-result v0
 
-    if-eqz p0, :cond_6
+    :goto_2
+    if-eqz v0, :cond_6
 
-    goto :goto_0
+    goto :goto_3
 
     :cond_6
     sget-object p0, Landroidx/compose/ui/text/input/ImeAction;->Companion:Landroidx/compose/ui/text/input/ImeAction$Companion;
@@ -224,14 +242,14 @@
     invoke-static {p1, p0}, Landroidx/compose/ui/text/input/ImeAction;->equals-impl0(II)Z
 
     :cond_7
-    :goto_0
+    :goto_3
     return-void
 .end method
 
 .method public final getFocusManager()Landroidx/compose/ui/focus/FocusManager;
     .locals 0
 
-    .line 45
+    .line 47
     iget-object p0, p0, Landroidx/compose/foundation/text/KeyboardActionRunner;->focusManager:Landroidx/compose/ui/focus/FocusManager;
 
     if-eqz p0, :cond_0
@@ -248,19 +266,10 @@
     return-object p0
 .end method
 
-.method public final getInputSession()Landroidx/compose/ui/text/input/TextInputSession;
-    .locals 0
-
-    .line 51
-    iget-object p0, p0, Landroidx/compose/foundation/text/KeyboardActionRunner;->inputSession:Landroidx/compose/ui/text/input/TextInputSession;
-
-    return-object p0
-.end method
-
 .method public final getKeyboardActions()Landroidx/compose/foundation/text/KeyboardActions;
     .locals 0
 
-    .line 40
+    .line 42
     iget-object p0, p0, Landroidx/compose/foundation/text/KeyboardActionRunner;->keyboardActions:Landroidx/compose/foundation/text/KeyboardActions;
 
     if-eqz p0, :cond_0
@@ -280,7 +289,7 @@
 .method public final runAction-KlQnJC8(I)V
     .locals 2
 
-    .line 59
+    .line 55
     sget-object v0, Landroidx/compose/ui/text/input/ImeAction;->Companion:Landroidx/compose/ui/text/input/ImeAction$Companion;
 
     invoke-virtual {v0}, Landroidx/compose/ui/text/input/ImeAction$Companion;->getDone-eUduSuo()I
@@ -305,7 +314,7 @@
 
     goto/16 :goto_1
 
-    .line 60
+    .line 56
     :cond_0
     sget-object v0, Landroidx/compose/ui/text/input/ImeAction;->Companion:Landroidx/compose/ui/text/input/ImeAction$Companion;
 
@@ -329,7 +338,7 @@
 
     goto/16 :goto_1
 
-    .line 61
+    .line 57
     :cond_1
     sget-object v0, Landroidx/compose/ui/text/input/ImeAction;->Companion:Landroidx/compose/ui/text/input/ImeAction$Companion;
 
@@ -353,7 +362,7 @@
 
     goto :goto_1
 
-    .line 62
+    .line 58
     :cond_2
     sget-object v0, Landroidx/compose/ui/text/input/ImeAction;->Companion:Landroidx/compose/ui/text/input/ImeAction$Companion;
 
@@ -377,7 +386,7 @@
 
     goto :goto_1
 
-    .line 63
+    .line 59
     :cond_3
     sget-object v0, Landroidx/compose/ui/text/input/ImeAction;->Companion:Landroidx/compose/ui/text/input/ImeAction$Companion;
 
@@ -401,7 +410,7 @@
 
     goto :goto_1
 
-    .line 64
+    .line 60
     :cond_4
     sget-object v0, Landroidx/compose/ui/text/input/ImeAction;->Companion:Landroidx/compose/ui/text/input/ImeAction$Companion;
 
@@ -425,7 +434,7 @@
 
     goto :goto_1
 
-    .line 65
+    .line 61
     :cond_5
     sget-object v0, Landroidx/compose/ui/text/input/ImeAction;->Companion:Landroidx/compose/ui/text/input/ImeAction$Companion;
 
@@ -438,6 +447,8 @@
     move-result v0
 
     if-eqz v0, :cond_6
+
+    const/4 v0, 0x1
 
     goto :goto_0
 
@@ -452,15 +463,15 @@
 
     move-result v0
 
+    :goto_0
     if-eqz v0, :cond_9
 
-    :goto_0
     move-object v0, v1
 
     :goto_1
     if-eqz v0, :cond_7
 
-    .line 68
+    .line 64
     invoke-interface {v0, p0}, Lkotlin/jvm/functions/Function1;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
 
     sget-object v1, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
@@ -473,11 +484,11 @@
     :cond_8
     return-void
 
-    .line 65
+    .line 61
     :cond_9
     new-instance p0, Ljava/lang/IllegalStateException;
 
-    .line 66
+    .line 62
     const-string p1, "invalid ImeAction"
 
     invoke-virtual {p1}, Ljava/lang/Object;->toString()Ljava/lang/String;
@@ -490,35 +501,18 @@
 .end method
 
 .method public final setFocusManager(Landroidx/compose/ui/focus/FocusManager;)V
-    .locals 1
+    .locals 0
 
-    const-string v0, "<set-?>"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 45
+    .line 47
     iput-object p1, p0, Landroidx/compose/foundation/text/KeyboardActionRunner;->focusManager:Landroidx/compose/ui/focus/FocusManager;
 
     return-void
 .end method
 
-.method public final setInputSession(Landroidx/compose/ui/text/input/TextInputSession;)V
+.method public final setKeyboardActions(Landroidx/compose/foundation/text/KeyboardActions;)V
     .locals 0
 
-    .line 51
-    iput-object p1, p0, Landroidx/compose/foundation/text/KeyboardActionRunner;->inputSession:Landroidx/compose/ui/text/input/TextInputSession;
-
-    return-void
-.end method
-
-.method public final setKeyboardActions(Landroidx/compose/foundation/text/KeyboardActions;)V
-    .locals 1
-
-    const-string v0, "<set-?>"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 40
+    .line 42
     iput-object p1, p0, Landroidx/compose/foundation/text/KeyboardActionRunner;->keyboardActions:Landroidx/compose/foundation/text/KeyboardActions;
 
     return-void

@@ -1,6 +1,6 @@
 .class final Landroidx/compose/foundation/AndroidEdgeEffectOverscrollEffect$onNewSize$1;
 .super Lkotlin/jvm/internal/Lambda;
-.source "AndroidOverscroll.kt"
+.source "AndroidOverscroll.android.kt"
 
 # interfaces
 .implements Lkotlin/jvm/functions/Function1;
@@ -70,7 +70,7 @@
 .method public bridge synthetic invoke(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 2
 
-    .line 291
+    .line 295
     check-cast p1, Landroidx/compose/ui/unit/IntSize;
 
     invoke-virtual {p1}, Landroidx/compose/ui/unit/IntSize;->unbox-impl()J
@@ -87,7 +87,7 @@
 .method public final invoke-ozmzZPI(J)V
     .locals 4
 
-    .line 292
+    .line 296
     invoke-static {p1, p2}, Landroidx/compose/ui/unit/IntSizeKt;->toSize-ozmzZPI(J)J
 
     move-result-wide v0
@@ -104,7 +104,7 @@
 
     xor-int/lit8 v0, v0, 0x1
 
-    .line 293
+    .line 297
     iget-object v1, p0, Landroidx/compose/foundation/AndroidEdgeEffectOverscrollEffect$onNewSize$1;->this$0:Landroidx/compose/foundation/AndroidEdgeEffectOverscrollEffect;
 
     invoke-static {p1, p2}, Landroidx/compose/ui/unit/IntSizeKt;->toSize-ozmzZPI(J)J
@@ -115,7 +115,7 @@
 
     if-eqz v0, :cond_0
 
-    .line 295
+    .line 299
     iget-object v1, p0, Landroidx/compose/foundation/AndroidEdgeEffectOverscrollEffect$onNewSize$1;->this$0:Landroidx/compose/foundation/AndroidEdgeEffectOverscrollEffect;
 
     invoke-static {v1}, Landroidx/compose/foundation/AndroidEdgeEffectOverscrollEffect;->access$getTopEffect$p(Landroidx/compose/foundation/AndroidEdgeEffectOverscrollEffect;)Landroid/widget/EdgeEffect;
@@ -132,7 +132,7 @@
 
     invoke-virtual {v1, v2, v3}, Landroid/widget/EdgeEffect;->setSize(II)V
 
-    .line 296
+    .line 300
     iget-object v1, p0, Landroidx/compose/foundation/AndroidEdgeEffectOverscrollEffect$onNewSize$1;->this$0:Landroidx/compose/foundation/AndroidEdgeEffectOverscrollEffect;
 
     invoke-static {v1}, Landroidx/compose/foundation/AndroidEdgeEffectOverscrollEffect;->access$getBottomEffect$p(Landroidx/compose/foundation/AndroidEdgeEffectOverscrollEffect;)Landroid/widget/EdgeEffect;
@@ -149,7 +149,7 @@
 
     invoke-virtual {v1, v2, v3}, Landroid/widget/EdgeEffect;->setSize(II)V
 
-    .line 297
+    .line 301
     iget-object v1, p0, Landroidx/compose/foundation/AndroidEdgeEffectOverscrollEffect$onNewSize$1;->this$0:Landroidx/compose/foundation/AndroidEdgeEffectOverscrollEffect;
 
     invoke-static {v1}, Landroidx/compose/foundation/AndroidEdgeEffectOverscrollEffect;->access$getLeftEffect$p(Landroidx/compose/foundation/AndroidEdgeEffectOverscrollEffect;)Landroid/widget/EdgeEffect;
@@ -166,7 +166,7 @@
 
     invoke-virtual {v1, v2, v3}, Landroid/widget/EdgeEffect;->setSize(II)V
 
-    .line 298
+    .line 302
     iget-object v1, p0, Landroidx/compose/foundation/AndroidEdgeEffectOverscrollEffect$onNewSize$1;->this$0:Landroidx/compose/foundation/AndroidEdgeEffectOverscrollEffect;
 
     invoke-static {v1}, Landroidx/compose/foundation/AndroidEdgeEffectOverscrollEffect;->access$getRightEffect$p(Landroidx/compose/foundation/AndroidEdgeEffectOverscrollEffect;)Landroid/widget/EdgeEffect;
@@ -183,7 +183,7 @@
 
     invoke-virtual {v1, v2, v3}, Landroid/widget/EdgeEffect;->setSize(II)V
 
-    .line 300
+    .line 304
     iget-object v1, p0, Landroidx/compose/foundation/AndroidEdgeEffectOverscrollEffect$onNewSize$1;->this$0:Landroidx/compose/foundation/AndroidEdgeEffectOverscrollEffect;
 
     invoke-static {v1}, Landroidx/compose/foundation/AndroidEdgeEffectOverscrollEffect;->access$getTopEffectNegation$p(Landroidx/compose/foundation/AndroidEdgeEffectOverscrollEffect;)Landroid/widget/EdgeEffect;
@@ -200,7 +200,7 @@
 
     invoke-virtual {v1, v2, v3}, Landroid/widget/EdgeEffect;->setSize(II)V
 
-    .line 301
+    .line 305
     iget-object v1, p0, Landroidx/compose/foundation/AndroidEdgeEffectOverscrollEffect$onNewSize$1;->this$0:Landroidx/compose/foundation/AndroidEdgeEffectOverscrollEffect;
 
     invoke-static {v1}, Landroidx/compose/foundation/AndroidEdgeEffectOverscrollEffect;->access$getBottomEffectNegation$p(Landroidx/compose/foundation/AndroidEdgeEffectOverscrollEffect;)Landroid/widget/EdgeEffect;
@@ -217,7 +217,7 @@
 
     invoke-virtual {v1, v2, v3}, Landroid/widget/EdgeEffect;->setSize(II)V
 
-    .line 302
+    .line 306
     iget-object v1, p0, Landroidx/compose/foundation/AndroidEdgeEffectOverscrollEffect$onNewSize$1;->this$0:Landroidx/compose/foundation/AndroidEdgeEffectOverscrollEffect;
 
     invoke-static {v1}, Landroidx/compose/foundation/AndroidEdgeEffectOverscrollEffect;->access$getLeftEffectNegation$p(Landroidx/compose/foundation/AndroidEdgeEffectOverscrollEffect;)Landroid/widget/EdgeEffect;
@@ -234,7 +234,7 @@
 
     invoke-virtual {v1, v2, v3}, Landroid/widget/EdgeEffect;->setSize(II)V
 
-    .line 303
+    .line 307
     iget-object v1, p0, Landroidx/compose/foundation/AndroidEdgeEffectOverscrollEffect$onNewSize$1;->this$0:Landroidx/compose/foundation/AndroidEdgeEffectOverscrollEffect;
 
     invoke-static {v1}, Landroidx/compose/foundation/AndroidEdgeEffectOverscrollEffect;->access$getRightEffectNegation$p(Landroidx/compose/foundation/AndroidEdgeEffectOverscrollEffect;)Landroid/widget/EdgeEffect;
@@ -254,12 +254,12 @@
     :cond_0
     if-eqz v0, :cond_1
 
-    .line 306
+    .line 310
     iget-object p1, p0, Landroidx/compose/foundation/AndroidEdgeEffectOverscrollEffect$onNewSize$1;->this$0:Landroidx/compose/foundation/AndroidEdgeEffectOverscrollEffect;
 
     invoke-static {p1}, Landroidx/compose/foundation/AndroidEdgeEffectOverscrollEffect;->access$invalidateOverscroll(Landroidx/compose/foundation/AndroidEdgeEffectOverscrollEffect;)V
 
-    .line 307
+    .line 311
     iget-object p0, p0, Landroidx/compose/foundation/AndroidEdgeEffectOverscrollEffect$onNewSize$1;->this$0:Landroidx/compose/foundation/AndroidEdgeEffectOverscrollEffect;
 
     invoke-static {p0}, Landroidx/compose/foundation/AndroidEdgeEffectOverscrollEffect;->access$animateToRelease(Landroidx/compose/foundation/AndroidEdgeEffectOverscrollEffect;)V

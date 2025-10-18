@@ -3,7 +3,7 @@
 .source "D8$$SyntheticClass"
 
 # interfaces
-.implements Lkotlin/jvm/functions/Function2;
+.implements Lkotlin/jvm/functions/Function3;
 
 
 # direct methods
@@ -18,7 +18,7 @@
 
 
 # virtual methods
-.method public final invoke(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+.method public final invoke(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
 
     .line 0
@@ -26,7 +26,9 @@
 
     check-cast p2, Ljava/lang/Boolean;
 
-    invoke-static {p1, p2}, Ljp/co/sony/mc/camera/view/FragmentController;->$r8$lambda$5Sp4bU2CD2pmnE1cO8-a78wEaXo(Ljava/lang/Object;Ljava/lang/Object;)Landroid/util/Pair;
+    check-cast p3, Ljava/lang/Boolean;
+
+    invoke-static {p1, p2, p3}, Ljp/co/sony/mc/camera/view/FragmentController;->$r8$lambda$4ivMzaCm429R4eIY6LjZHoXV7GE(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Lkotlin/Triple;
 
     move-result-object p0
 

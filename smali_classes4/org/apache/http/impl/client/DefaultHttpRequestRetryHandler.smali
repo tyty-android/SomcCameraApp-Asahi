@@ -32,7 +32,7 @@
 .method static constructor <clinit>()V
     .locals 1
 
-    .line 59
+    .line 60
     new-instance v0, Lorg/apache/http/impl/client/DefaultHttpRequestRetryHandler;
 
     invoke-direct {v0}, Lorg/apache/http/impl/client/DefaultHttpRequestRetryHandler;-><init>()V
@@ -58,34 +58,40 @@
 .method public constructor <init>(IZ)V
     .locals 3
 
-    const/4 v0, 0x4
+    const/4 v0, 0x5
 
-    .line 104
+    .line 103
     new-array v0, v0, [Ljava/lang/Class;
 
-    const-class v1, Ljava/io/InterruptedIOException;
+    const/4 v1, 0x0
 
-    const/4 v2, 0x0
+    const-class v2, Ljava/io/InterruptedIOException;
 
-    aput-object v1, v0, v2
+    aput-object v2, v0, v1
 
-    const-class v1, Ljava/net/UnknownHostException;
+    const/4 v1, 0x1
 
-    const/4 v2, 0x1
+    const-class v2, Ljava/net/UnknownHostException;
 
-    aput-object v1, v0, v2
+    aput-object v2, v0, v1
 
-    const-class v1, Ljava/net/ConnectException;
+    const/4 v1, 0x2
 
-    const/4 v2, 0x2
+    const-class v2, Ljava/net/ConnectException;
 
-    aput-object v1, v0, v2
+    aput-object v2, v0, v1
 
-    const-class v1, Ljavax/net/ssl/SSLException;
+    const/4 v1, 0x3
 
-    const/4 v2, 0x3
+    const-class v2, Ljava/net/NoRouteToHostException;
 
-    aput-object v1, v0, v2
+    aput-object v2, v0, v1
+
+    const/4 v1, 0x4
+
+    const-class v2, Ljavax/net/ssl/SSLException;
+
+    aput-object v2, v0, v1
 
     invoke-static {v0}, Ljava/util/Arrays;->asList([Ljava/lang/Object;)Ljava/util/List;
 
@@ -109,48 +115,25 @@
         }
     .end annotation
 
-    .line 81
+    .line 82
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 82
+    .line 83
     iput p1, p0, Lorg/apache/http/impl/client/DefaultHttpRequestRetryHandler;->retryCount:I
 
-    .line 83
+    .line 84
     iput-boolean p2, p0, Lorg/apache/http/impl/client/DefaultHttpRequestRetryHandler;->requestSentRetryEnabled:Z
 
-    .line 84
+    .line 85
     new-instance p1, Ljava/util/HashSet;
 
     invoke-direct {p1}, Ljava/util/HashSet;-><init>()V
 
     iput-object p1, p0, Lorg/apache/http/impl/client/DefaultHttpRequestRetryHandler;->nonRetriableClasses:Ljava/util/Set;
 
-    .line 85
-    invoke-interface {p3}, Ljava/util/Collection;->iterator()Ljava/util/Iterator;
-
-    move-result-object p1
-
-    :goto_0
-    invoke-interface {p1}, Ljava/util/Iterator;->hasNext()Z
-
-    move-result p2
-
-    if-eqz p2, :cond_0
-
-    invoke-interface {p1}, Ljava/util/Iterator;->next()Ljava/lang/Object;
-
-    move-result-object p2
-
-    check-cast p2, Ljava/lang/Class;
-
     .line 86
-    iget-object p3, p0, Lorg/apache/http/impl/client/DefaultHttpRequestRetryHandler;->nonRetriableClasses:Ljava/util/Set;
+    invoke-interface {p1, p3}, Ljava/util/Set;->addAll(Ljava/util/Collection;)Z
 
-    invoke-interface {p3, p2}, Ljava/util/Set;->add(Ljava/lang/Object;)Z
-
-    goto :goto_0
-
-    :cond_0
     return-void
 .end method
 

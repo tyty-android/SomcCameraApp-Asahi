@@ -79,14 +79,14 @@
 .method public final invoke(Ljava/lang/Object;)Landroidx/compose/ui/text/style/TextGeometricTransform;
     .locals 2
 
-    const-string p0, "it"
+    .line 297
+    const-string p0, "null cannot be cast to non-null type kotlin.collections.List<kotlin.Float>"
 
-    invoke-static {p1, p0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, p0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 276
     check-cast p1, Ljava/util/List;
 
-    .line 277
+    .line 298
     new-instance p0, Landroidx/compose/ui/text/style/TextGeometricTransform;
 
     const/4 v0, 0x0
@@ -121,7 +121,7 @@
 .method public bridge synthetic invoke(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
 
-    .line 272
+    .line 293
     invoke-virtual {p0, p1}, Landroidx/compose/ui/text/SaversKt$TextGeometricTransformSaver$2;->invoke(Ljava/lang/Object;)Landroidx/compose/ui/text/style/TextGeometricTransform;
 
     move-result-object p0

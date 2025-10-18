@@ -4,5 +4,5 @@
     <FrameLayout android:id="@id/image_background" android:layout_width="@dimen/settings_list_category_background_land" android:layout_height="fill_parent">
         <ImageView android:layout_gravity="center" android:id="@id/category_image" android:layout_width="@dimen/settings_list_category_icon_land" android:layout_height="@dimen/settings_list_category_icon_land" />
     </FrameLayout>
-    <TextView android:textAppearance="@style/TextAppearance.PhotoPro.Setting.Menu.Category" android:gravity="center_vertical" android:id="@id/category_name" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginStart="@dimen/settings_list_item_margin" android:layout_marginEnd="@dimen/settings_list_item_margin" />
+    <TextView android:gravity="center_vertical" android:id="@id/category_name" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginStart="@dimen/settings_list_item_margin" android:layout_marginEnd="@dimen/settings_list_item_margin" style="@style/TextAppearance.PhotoPro.Setting.Menu.Category" />
 </LinearLayout>

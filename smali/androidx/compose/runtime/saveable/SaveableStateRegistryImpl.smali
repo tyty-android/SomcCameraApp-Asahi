@@ -90,7 +90,7 @@
 
 # direct methods
 .method public constructor <init>(Ljava/util/Map;Lkotlin/jvm/functions/Function1;)V
-    .locals 1
+    .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -107,10 +107,6 @@
             ">;)V"
         }
     .end annotation
-
-    const-string v0, "canBeSaved"
-
-    invoke-static {p2, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 93
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -161,11 +157,7 @@
 
 # virtual methods
 .method public canBeSaved(Ljava/lang/Object;)Z
-    .locals 1
-
-    const-string/jumbo v0, "value"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+    .locals 0
 
     .line 102
     iget-object p0, p0, Landroidx/compose/runtime/saveable/SaveableStateRegistryImpl;->canBeSaved:Lkotlin/jvm/functions/Function1;
@@ -185,10 +177,6 @@
 
 .method public consumeRestored(Ljava/lang/String;)Ljava/lang/Object;
     .locals 3
-
-    const-string v0, "key"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 105
     iget-object v0, p0, Landroidx/compose/runtime/saveable/SaveableStateRegistryImpl;->restored:Ljava/util/Map;
@@ -317,7 +305,7 @@
 
     move-result v4
 
-    const-string v5, "Check failed."
+    const-string v5, "item can\'t be saved"
 
     const/4 v6, 0x0
 
@@ -449,14 +437,6 @@
             "Landroidx/compose/runtime/saveable/SaveableStateRegistry$Entry;"
         }
     .end annotation
-
-    const-string v0, "key"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string/jumbo v0, "valueProvider"
-
-    invoke-static {p2, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 117
     move-object v0, p1

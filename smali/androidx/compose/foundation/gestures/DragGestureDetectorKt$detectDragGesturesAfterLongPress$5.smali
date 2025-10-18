@@ -31,7 +31,7 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/SourceDebugExtension;
-    value = "SMAP\nDragGestureDetector.kt\nKotlin\n*S Kotlin\n*F\n+ 1 DragGestureDetector.kt\nandroidx/compose/foundation/gestures/DragGestureDetectorKt$detectDragGesturesAfterLongPress$5\n+ 2 ListUtils.kt\nandroidx/compose/ui/util/ListUtilsKt\n*L\n1#1,873:1\n33#2,6:874\n*S KotlinDebug\n*F\n+ 1 DragGestureDetector.kt\nandroidx/compose/foundation/gestures/DragGestureDetectorKt$detectDragGesturesAfterLongPress$5\n*L\n247#1:874,6\n*E\n"
+    value = "SMAP\nDragGestureDetector.kt\nKotlin\n*S Kotlin\n*F\n+ 1 DragGestureDetector.kt\nandroidx/compose/foundation/gestures/DragGestureDetectorKt$detectDragGesturesAfterLongPress$5\n+ 2 ListUtils.kt\nandroidx/compose/ui/util/ListUtilsKt\n*L\n1#1,875:1\n33#2,6:876\n*S KotlinDebug\n*F\n+ 1 DragGestureDetector.kt\nandroidx/compose/foundation/gestures/DragGestureDetectorKt$detectDragGesturesAfterLongPress$5\n*L\n246#1:876,6\n*E\n"
 .end annotation
 
 .annotation runtime Lkotlin/Metadata;
@@ -61,9 +61,9 @@
         0x2
     }
     l = {
+        0xea,
         0xeb,
-        0xec,
-        0xf1
+        0xf0
     }
     m = "invokeSuspend"
     n = {
@@ -263,7 +263,7 @@
 
     move-result-object v0
 
-    .line 233
+    .line 232
     iget v1, p0, Landroidx/compose/foundation/gestures/DragGestureDetectorKt$detectDragGesturesAfterLongPress$5;->label:I
 
     const/4 v2, 0x3
@@ -333,7 +333,7 @@
 
     check-cast v1, Landroidx/compose/ui/input/pointer/AwaitPointerEventScope;
 
-    .line 235
+    .line 234
     :try_start_3
     move-object v8, p0
 
@@ -361,12 +361,12 @@
 
     return-object v0
 
-    .line 233
+    .line 232
     :cond_4
     :goto_0
     check-cast p1, Landroidx/compose/ui/input/pointer/PointerInputChange;
 
-    .line 236
+    .line 235
     invoke-virtual {p1}, Landroidx/compose/ui/input/pointer/PointerInputChange;->getId-J3iCeTQ()J
 
     move-result-wide v4
@@ -387,14 +387,14 @@
 
     return-object v0
 
-    .line 233
+    .line 232
     :cond_5
     :goto_1
     check-cast p1, Landroidx/compose/ui/input/pointer/PointerInputChange;
 
     if-eqz p1, :cond_a
 
-    .line 238
+    .line 237
     iget-object v3, p0, Landroidx/compose/foundation/gestures/DragGestureDetectorKt$detectDragGesturesAfterLongPress$5;->$onDragStart:Lkotlin/jvm/functions/Function1;
 
     invoke-virtual {p1}, Landroidx/compose/ui/input/pointer/PointerInputChange;->getPosition-F1C5BW0()J
@@ -407,7 +407,7 @@
 
     invoke-interface {v3, v4}, Lkotlin/jvm/functions/Function1;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 241
+    .line 240
     invoke-virtual {p1}, Landroidx/compose/ui/input/pointer/PointerInputChange;->getId-J3iCeTQ()J
 
     move-result-wide v3
@@ -448,7 +448,7 @@
 
     if-eqz p1, :cond_9
 
-    .line 247
+    .line 246
     invoke-interface {v0}, Landroidx/compose/ui/input/pointer/AwaitPointerEventScope;->getCurrentEvent()Landroidx/compose/ui/input/pointer/PointerEvent;
 
     move-result-object p1
@@ -457,7 +457,7 @@
 
     move-result-object p1
 
-    .line 875
+    .line 877
     invoke-interface {p1}, Ljava/util/List;->size()I
 
     move-result v0
@@ -467,15 +467,15 @@
     :goto_3
     if-ge v1, v0, :cond_8
 
-    .line 876
+    .line 878
     invoke-interface {p1, v1}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
     move-result-object v2
 
-    .line 877
+    .line 879
     check-cast v2, Landroidx/compose/ui/input/pointer/PointerInputChange;
 
-    .line 248
+    .line 247
     invoke-static {v2}, Landroidx/compose/ui/input/pointer/PointerEventKt;->changedToUp(Landroidx/compose/ui/input/pointer/PointerInputChange;)Z
 
     move-result v3
@@ -489,7 +489,7 @@
 
     goto :goto_3
 
-    .line 250
+    .line 249
     :cond_8
     iget-object p1, p0, Landroidx/compose/foundation/gestures/DragGestureDetectorKt$detectDragGesturesAfterLongPress$5;->$onDragEnd:Lkotlin/jvm/functions/Function0;
 
@@ -497,7 +497,7 @@
 
     goto :goto_4
 
-    .line 252
+    .line 251
     :cond_9
     iget-object p1, p0, Landroidx/compose/foundation/gestures/DragGestureDetectorKt$detectDragGesturesAfterLongPress$5;->$onDragCancel:Lkotlin/jvm/functions/Function0;
 
@@ -505,7 +505,7 @@
     :try_end_3
     .catch Ljava/util/concurrent/CancellationException; {:try_start_3 .. :try_end_3} :catch_0
 
-    .line 259
+    .line 258
     :cond_a
     :goto_4
     sget-object p0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
@@ -515,11 +515,11 @@
     :catch_0
     move-exception p1
 
-    .line 256
+    .line 255
     iget-object p0, p0, Landroidx/compose/foundation/gestures/DragGestureDetectorKt$detectDragGesturesAfterLongPress$5;->$onDragCancel:Lkotlin/jvm/functions/Function0;
 
     invoke-interface {p0}, Lkotlin/jvm/functions/Function0;->invoke()Ljava/lang/Object;
 
-    .line 257
+    .line 256
     throw p1
 .end method

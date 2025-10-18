@@ -56,7 +56,7 @@
 
     const v0, 0x101009f
 
-    .line 93
+    .line 98
     filled-new-array {v0}, [I
 
     move-result-object v0
@@ -65,14 +65,14 @@
 
     const v0, 0x10100a0
 
-    .line 94
+    .line 99
     filled-new-array {v0}, [I
 
     move-result-object v0
 
     sput-object v0, Lcom/google/android/material/card/MaterialCardView;->CHECKED_STATE_SET:[I
 
-    .line 95
+    .line 100
     sget v0, Lcom/google/android/material/R$attr;->state_dragged:I
 
     filled-new-array {v0}, [I
@@ -81,7 +81,7 @@
 
     sput-object v0, Lcom/google/android/material/card/MaterialCardView;->DRAGGED_STATE_SET:[I
 
-    .line 97
+    .line 102
     sget v0, Lcom/google/android/material/R$style;->Widget_MaterialComponents_CardView:I
 
     sput v0, Lcom/google/android/material/card/MaterialCardView;->DEF_STYLE_RES:I
@@ -94,7 +94,7 @@
 
     const/4 v0, 0x0
 
-    .line 156
+    .line 161
     invoke-direct {p0, p1, v0}, Lcom/google/android/material/card/MaterialCardView;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
     return-void
@@ -103,7 +103,7 @@
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 1
 
-    .line 160
+    .line 165
     sget v0, Lcom/google/android/material/R$attr;->materialCardViewStyle:I
 
     invoke-direct {p0, p1, p2, v0}, Lcom/google/android/material/card/MaterialCardView;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
@@ -114,7 +114,7 @@
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
     .locals 7
 
-    .line 164
+    .line 169
     sget v6, Lcom/google/android/material/card/MaterialCardView;->DEF_STYLE_RES:I
 
     invoke-static {p1, p2, p3, v6}, Lcom/google/android/material/theme/overlay/MaterialThemeOverlay;->wrap(Landroid/content/Context;Landroid/util/AttributeSet;II)Landroid/content/Context;
@@ -125,23 +125,23 @@
 
     const/4 p1, 0x0
 
-    .line 151
+    .line 156
     iput-boolean p1, p0, Lcom/google/android/material/card/MaterialCardView;->checked:Z
 
-    .line 152
+    .line 157
     iput-boolean p1, p0, Lcom/google/android/material/card/MaterialCardView;->dragged:Z
 
     const/4 v0, 0x1
 
-    .line 165
+    .line 170
     iput-boolean v0, p0, Lcom/google/android/material/card/MaterialCardView;->isParentCardViewDoneInitializing:Z
 
-    .line 167
+    .line 172
     invoke-virtual {p0}, Lcom/google/android/material/card/MaterialCardView;->getContext()Landroid/content/Context;
 
     move-result-object v0
 
-    .line 169
+    .line 174
     sget-object v2, Lcom/google/android/material/R$styleable;->MaterialCardView:[I
 
     new-array v5, p1, [I
@@ -152,52 +152,52 @@
 
     move v4, v6
 
-    .line 170
+    .line 175
     invoke-static/range {v0 .. v5}, Lcom/google/android/material/internal/ThemeEnforcement;->obtainStyledAttributes(Landroid/content/Context;Landroid/util/AttributeSet;[III[I)Landroid/content/res/TypedArray;
 
     move-result-object p1
 
-    .line 174
+    .line 179
     new-instance v0, Lcom/google/android/material/card/MaterialCardViewHelper;
 
     invoke-direct {v0, p0, p2, p3, v6}, Lcom/google/android/material/card/MaterialCardViewHelper;-><init>(Lcom/google/android/material/card/MaterialCardView;Landroid/util/AttributeSet;II)V
 
     iput-object v0, p0, Lcom/google/android/material/card/MaterialCardView;->cardViewHelper:Lcom/google/android/material/card/MaterialCardViewHelper;
 
-    .line 175
+    .line 180
     invoke-super {p0}, Landroidx/cardview/widget/CardView;->getCardBackgroundColor()Landroid/content/res/ColorStateList;
 
     move-result-object p2
 
     invoke-virtual {v0, p2}, Lcom/google/android/material/card/MaterialCardViewHelper;->setCardBackgroundColor(Landroid/content/res/ColorStateList;)V
 
-    .line 177
+    .line 182
     invoke-super {p0}, Landroidx/cardview/widget/CardView;->getContentPaddingLeft()I
 
     move-result p2
 
-    .line 178
+    .line 183
     invoke-super {p0}, Landroidx/cardview/widget/CardView;->getContentPaddingTop()I
 
     move-result p3
 
-    .line 179
+    .line 184
     invoke-super {p0}, Landroidx/cardview/widget/CardView;->getContentPaddingRight()I
 
     move-result v1
 
-    .line 180
+    .line 185
     invoke-super {p0}, Landroidx/cardview/widget/CardView;->getContentPaddingBottom()I
 
     move-result p0
 
-    .line 176
+    .line 181
     invoke-virtual {v0, p2, p3, v1, p0}, Lcom/google/android/material/card/MaterialCardViewHelper;->setUserContentPadding(IIII)V
 
-    .line 183
+    .line 188
     invoke-virtual {v0, p1}, Lcom/google/android/material/card/MaterialCardViewHelper;->loadFromAttributes(Landroid/content/res/TypedArray;)V
 
-    .line 185
+    .line 190
     invoke-virtual {p1}, Landroid/content/res/TypedArray;->recycle()V
 
     return-void
@@ -206,7 +206,7 @@
 .method static synthetic access$001(Lcom/google/android/material/card/MaterialCardView;)F
     .locals 0
 
-    .line 80
+    .line 85
     invoke-super {p0}, Landroidx/cardview/widget/CardView;->getRadius()F
 
     move-result p0
@@ -217,7 +217,7 @@
 .method private forceRippleRedrawIfNeeded()V
     .locals 0
 
-    .line 681
+    .line 687
     iget-object p0, p0, Lcom/google/android/material/card/MaterialCardView;->cardViewHelper:Lcom/google/android/material/card/MaterialCardViewHelper;
 
     invoke-virtual {p0}, Lcom/google/android/material/card/MaterialCardViewHelper;->forceRippleRedraw()V
@@ -228,12 +228,12 @@
 .method private getBoundsAsRectF()Landroid/graphics/RectF;
     .locals 1
 
-    .line 655
+    .line 661
     new-instance v0, Landroid/graphics/RectF;
 
     invoke-direct {v0}, Landroid/graphics/RectF;-><init>()V
 
-    .line 656
+    .line 662
     iget-object p0, p0, Lcom/google/android/material/card/MaterialCardView;->cardViewHelper:Lcom/google/android/material/card/MaterialCardViewHelper;
 
     invoke-virtual {p0}, Lcom/google/android/material/card/MaterialCardViewHelper;->getBackground()Lcom/google/android/material/shape/MaterialShapeDrawable;
@@ -254,7 +254,7 @@
 .method public getCardBackgroundColor()Landroid/content/res/ColorStateList;
     .locals 0
 
-    .line 336
+    .line 341
     iget-object p0, p0, Lcom/google/android/material/card/MaterialCardView;->cardViewHelper:Lcom/google/android/material/card/MaterialCardViewHelper;
 
     invoke-virtual {p0}, Lcom/google/android/material/card/MaterialCardViewHelper;->getCardBackgroundColor()Landroid/content/res/ColorStateList;
@@ -267,7 +267,7 @@
 .method public getCardForegroundColor()Landroid/content/res/ColorStateList;
     .locals 0
 
-    .line 358
+    .line 363
     iget-object p0, p0, Lcom/google/android/material/card/MaterialCardView;->cardViewHelper:Lcom/google/android/material/card/MaterialCardViewHelper;
 
     invoke-virtual {p0}, Lcom/google/android/material/card/MaterialCardViewHelper;->getCardForegroundColor()Landroid/content/res/ColorStateList;
@@ -280,7 +280,7 @@
 .method getCardViewRadius()F
     .locals 0
 
-    .line 270
+    .line 275
     invoke-static {p0}, Lcom/google/android/material/card/MaterialCardView;->access$001(Lcom/google/android/material/card/MaterialCardView;)F
 
     move-result p0
@@ -291,7 +291,7 @@
 .method public getCheckedIcon()Landroid/graphics/drawable/Drawable;
     .locals 0
 
-    .line 559
+    .line 565
     iget-object p0, p0, Lcom/google/android/material/card/MaterialCardView;->cardViewHelper:Lcom/google/android/material/card/MaterialCardViewHelper;
 
     invoke-virtual {p0}, Lcom/google/android/material/card/MaterialCardViewHelper;->getCheckedIcon()Landroid/graphics/drawable/Drawable;
@@ -304,7 +304,7 @@
 .method public getCheckedIconGravity()I
     .locals 0
 
-    .line 694
+    .line 700
     iget-object p0, p0, Lcom/google/android/material/card/MaterialCardView;->cardViewHelper:Lcom/google/android/material/card/MaterialCardViewHelper;
 
     invoke-virtual {p0}, Lcom/google/android/material/card/MaterialCardViewHelper;->getCheckedIconGravity()I
@@ -317,7 +317,7 @@
 .method public getCheckedIconMargin()I
     .locals 0
 
-    .line 633
+    .line 639
     iget-object p0, p0, Lcom/google/android/material/card/MaterialCardView;->cardViewHelper:Lcom/google/android/material/card/MaterialCardViewHelper;
 
     invoke-virtual {p0}, Lcom/google/android/material/card/MaterialCardViewHelper;->getCheckedIconMargin()I
@@ -330,7 +330,7 @@
 .method public getCheckedIconSize()I
     .locals 0
 
-    .line 606
+    .line 612
     iget-object p0, p0, Lcom/google/android/material/card/MaterialCardView;->cardViewHelper:Lcom/google/android/material/card/MaterialCardViewHelper;
 
     invoke-virtual {p0}, Lcom/google/android/material/card/MaterialCardViewHelper;->getCheckedIconSize()I
@@ -343,7 +343,7 @@
 .method public getCheckedIconTint()Landroid/content/res/ColorStateList;
     .locals 0
 
-    .line 590
+    .line 596
     iget-object p0, p0, Lcom/google/android/material/card/MaterialCardView;->cardViewHelper:Lcom/google/android/material/card/MaterialCardViewHelper;
 
     invoke-virtual {p0}, Lcom/google/android/material/card/MaterialCardViewHelper;->getCheckedIconTint()Landroid/content/res/ColorStateList;
@@ -356,7 +356,7 @@
 .method public getContentPaddingBottom()I
     .locals 0
 
-    .line 320
+    .line 325
     iget-object p0, p0, Lcom/google/android/material/card/MaterialCardView;->cardViewHelper:Lcom/google/android/material/card/MaterialCardViewHelper;
 
     invoke-virtual {p0}, Lcom/google/android/material/card/MaterialCardViewHelper;->getUserContentPadding()Landroid/graphics/Rect;
@@ -371,7 +371,7 @@
 .method public getContentPaddingLeft()I
     .locals 0
 
-    .line 305
+    .line 310
     iget-object p0, p0, Lcom/google/android/material/card/MaterialCardView;->cardViewHelper:Lcom/google/android/material/card/MaterialCardViewHelper;
 
     invoke-virtual {p0}, Lcom/google/android/material/card/MaterialCardViewHelper;->getUserContentPadding()Landroid/graphics/Rect;
@@ -386,7 +386,7 @@
 .method public getContentPaddingRight()I
     .locals 0
 
-    .line 315
+    .line 320
     iget-object p0, p0, Lcom/google/android/material/card/MaterialCardView;->cardViewHelper:Lcom/google/android/material/card/MaterialCardViewHelper;
 
     invoke-virtual {p0}, Lcom/google/android/material/card/MaterialCardViewHelper;->getUserContentPadding()Landroid/graphics/Rect;
@@ -401,7 +401,7 @@
 .method public getContentPaddingTop()I
     .locals 0
 
-    .line 310
+    .line 315
     iget-object p0, p0, Lcom/google/android/material/card/MaterialCardView;->cardViewHelper:Lcom/google/android/material/card/MaterialCardViewHelper;
 
     invoke-virtual {p0}, Lcom/google/android/material/card/MaterialCardViewHelper;->getUserContentPadding()Landroid/graphics/Rect;
@@ -416,7 +416,7 @@
 .method public getProgress()F
     .locals 0
 
-    .line 291
+    .line 296
     iget-object p0, p0, Lcom/google/android/material/card/MaterialCardView;->cardViewHelper:Lcom/google/android/material/card/MaterialCardViewHelper;
 
     invoke-virtual {p0}, Lcom/google/android/material/card/MaterialCardViewHelper;->getProgress()F
@@ -429,7 +429,7 @@
 .method public getRadius()F
     .locals 0
 
-    .line 266
+    .line 271
     iget-object p0, p0, Lcom/google/android/material/card/MaterialCardView;->cardViewHelper:Lcom/google/android/material/card/MaterialCardViewHelper;
 
     invoke-virtual {p0}, Lcom/google/android/material/card/MaterialCardViewHelper;->getCornerRadius()F
@@ -442,7 +442,7 @@
 .method public getRippleColor()Landroid/content/res/ColorStateList;
     .locals 0
 
-    .line 548
+    .line 554
     iget-object p0, p0, Lcom/google/android/material/card/MaterialCardView;->cardViewHelper:Lcom/google/android/material/card/MaterialCardViewHelper;
 
     invoke-virtual {p0}, Lcom/google/android/material/card/MaterialCardViewHelper;->getRippleColor()Landroid/content/res/ColorStateList;
@@ -455,7 +455,7 @@
 .method public getShapeAppearanceModel()Lcom/google/android/material/shape/ShapeAppearanceModel;
     .locals 0
 
-    .line 676
+    .line 682
     iget-object p0, p0, Lcom/google/android/material/card/MaterialCardView;->cardViewHelper:Lcom/google/android/material/card/MaterialCardViewHelper;
 
     invoke-virtual {p0}, Lcom/google/android/material/card/MaterialCardViewHelper;->getShapeAppearanceModel()Lcom/google/android/material/shape/ShapeAppearanceModel;
@@ -470,7 +470,7 @@
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
-    .line 233
+    .line 238
     iget-object p0, p0, Lcom/google/android/material/card/MaterialCardView;->cardViewHelper:Lcom/google/android/material/card/MaterialCardViewHelper;
 
     invoke-virtual {p0}, Lcom/google/android/material/card/MaterialCardViewHelper;->getStrokeColor()I
@@ -483,7 +483,7 @@
 .method public getStrokeColorStateList()Landroid/content/res/ColorStateList;
     .locals 0
 
-    .line 239
+    .line 244
     iget-object p0, p0, Lcom/google/android/material/card/MaterialCardView;->cardViewHelper:Lcom/google/android/material/card/MaterialCardViewHelper;
 
     invoke-virtual {p0}, Lcom/google/android/material/card/MaterialCardViewHelper;->getStrokeColorStateList()Landroid/content/res/ColorStateList;
@@ -496,7 +496,7 @@
 .method public getStrokeWidth()I
     .locals 0
 
-    .line 255
+    .line 260
     iget-object p0, p0, Lcom/google/android/material/card/MaterialCardView;->cardViewHelper:Lcom/google/android/material/card/MaterialCardViewHelper;
 
     invoke-virtual {p0}, Lcom/google/android/material/card/MaterialCardViewHelper;->getStrokeWidth()I
@@ -509,7 +509,7 @@
 .method public isCheckable()Z
     .locals 0
 
-    .line 461
+    .line 467
     iget-object p0, p0, Lcom/google/android/material/card/MaterialCardView;->cardViewHelper:Lcom/google/android/material/card/MaterialCardViewHelper;
 
     if-eqz p0, :cond_0
@@ -534,7 +534,7 @@
 .method public isChecked()Z
     .locals 0
 
-    .line 426
+    .line 432
     iget-boolean p0, p0, Lcom/google/android/material/card/MaterialCardView;->checked:Z
 
     return p0
@@ -543,7 +543,7 @@
 .method public isDragged()Z
     .locals 0
 
-    .line 451
+    .line 457
     iget-boolean p0, p0, Lcom/google/android/material/card/MaterialCardView;->dragged:Z
 
     return p0
@@ -552,10 +552,15 @@
 .method protected onAttachedToWindow()V
     .locals 1
 
-    .line 371
+    .line 376
     invoke-super {p0}, Landroidx/cardview/widget/CardView;->onAttachedToWindow()V
 
-    .line 373
+    .line 378
+    iget-object v0, p0, Lcom/google/android/material/card/MaterialCardView;->cardViewHelper:Lcom/google/android/material/card/MaterialCardViewHelper;
+
+    invoke-virtual {v0}, Lcom/google/android/material/card/MaterialCardViewHelper;->updateClickable()V
+
+    .line 379
     iget-object v0, p0, Lcom/google/android/material/card/MaterialCardView;->cardViewHelper:Lcom/google/android/material/card/MaterialCardViewHelper;
 
     invoke-virtual {v0}, Lcom/google/android/material/card/MaterialCardViewHelper;->getBackground()Lcom/google/android/material/shape/MaterialShapeDrawable;
@@ -572,24 +577,24 @@
 
     add-int/lit8 p1, p1, 0x3
 
-    .line 489
+    .line 495
     invoke-super {p0, p1}, Landroidx/cardview/widget/CardView;->onCreateDrawableState(I)[I
 
     move-result-object p1
 
-    .line 490
+    .line 496
     invoke-virtual {p0}, Lcom/google/android/material/card/MaterialCardView;->isCheckable()Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
-    .line 491
+    .line 497
     sget-object v0, Lcom/google/android/material/card/MaterialCardView;->CHECKABLE_STATE_SET:[I
 
     invoke-static {p1, v0}, Lcom/google/android/material/card/MaterialCardView;->mergeDrawableStates([I[I)[I
 
-    .line 494
+    .line 500
     :cond_0
     invoke-virtual {p0}, Lcom/google/android/material/card/MaterialCardView;->isChecked()Z
 
@@ -597,12 +602,12 @@
 
     if-eqz v0, :cond_1
 
-    .line 495
+    .line 501
     sget-object v0, Lcom/google/android/material/card/MaterialCardView;->CHECKED_STATE_SET:[I
 
     invoke-static {p1, v0}, Lcom/google/android/material/card/MaterialCardView;->mergeDrawableStates([I[I)[I
 
-    .line 498
+    .line 504
     :cond_1
     invoke-virtual {p0}, Lcom/google/android/material/card/MaterialCardView;->isDragged()Z
 
@@ -610,7 +615,7 @@
 
     if-eqz p0, :cond_2
 
-    .line 499
+    .line 505
     sget-object p0, Lcom/google/android/material/card/MaterialCardView;->DRAGGED_STATE_SET:[I
 
     invoke-static {p1, p0}, Lcom/google/android/material/card/MaterialCardView;->mergeDrawableStates([I[I)[I
@@ -622,15 +627,15 @@
 .method public onInitializeAccessibilityEvent(Landroid/view/accessibility/AccessibilityEvent;)V
     .locals 1
 
-    .line 199
+    .line 204
     invoke-super {p0, p1}, Landroidx/cardview/widget/CardView;->onInitializeAccessibilityEvent(Landroid/view/accessibility/AccessibilityEvent;)V
 
-    .line 200
+    .line 205
     const-string v0, "androidx.cardview.widget.CardView"
 
     invoke-virtual {p1, v0}, Landroid/view/accessibility/AccessibilityEvent;->setClassName(Ljava/lang/CharSequence;)V
 
-    .line 201
+    .line 206
     invoke-virtual {p0}, Lcom/google/android/material/card/MaterialCardView;->isChecked()Z
 
     move-result p0
@@ -643,29 +648,29 @@
 .method public onInitializeAccessibilityNodeInfo(Landroid/view/accessibility/AccessibilityNodeInfo;)V
     .locals 1
 
-    .line 190
+    .line 195
     invoke-super {p0, p1}, Landroidx/cardview/widget/CardView;->onInitializeAccessibilityNodeInfo(Landroid/view/accessibility/AccessibilityNodeInfo;)V
 
-    .line 191
+    .line 196
     const-string v0, "androidx.cardview.widget.CardView"
 
     invoke-virtual {p1, v0}, Landroid/view/accessibility/AccessibilityNodeInfo;->setClassName(Ljava/lang/CharSequence;)V
 
-    .line 192
+    .line 197
     invoke-virtual {p0}, Lcom/google/android/material/card/MaterialCardView;->isCheckable()Z
 
     move-result v0
 
     invoke-virtual {p1, v0}, Landroid/view/accessibility/AccessibilityNodeInfo;->setCheckable(Z)V
 
-    .line 193
+    .line 198
     invoke-virtual {p0}, Lcom/google/android/material/card/MaterialCardView;->isClickable()Z
 
     move-result v0
 
     invoke-virtual {p1, v0}, Landroid/view/accessibility/AccessibilityNodeInfo;->setClickable(Z)V
 
-    .line 194
+    .line 199
     invoke-virtual {p0}, Lcom/google/android/material/card/MaterialCardView;->isChecked()Z
 
     move-result p0
@@ -678,10 +683,10 @@
 .method protected onMeasure(II)V
     .locals 0
 
-    .line 206
+    .line 211
     invoke-super {p0, p1, p2}, Landroidx/cardview/widget/CardView;->onMeasure(II)V
 
-    .line 207
+    .line 212
     iget-object p1, p0, Lcom/google/android/material/card/MaterialCardView;->cardViewHelper:Lcom/google/android/material/card/MaterialCardViewHelper;
 
     invoke-virtual {p0}, Lcom/google/android/material/card/MaterialCardView;->getMeasuredWidth()I
@@ -700,7 +705,7 @@
 .method setAncestorContentPadding(IIII)V
     .locals 0
 
-    .line 300
+    .line 305
     invoke-super {p0, p1, p2, p3, p4}, Landroidx/cardview/widget/CardView;->setContentPadding(IIII)V
 
     return-void
@@ -709,7 +714,7 @@
 .method public setBackground(Landroid/graphics/drawable/Drawable;)V
     .locals 0
 
-    .line 404
+    .line 410
     invoke-virtual {p0, p1}, Lcom/google/android/material/card/MaterialCardView;->setBackgroundDrawable(Landroid/graphics/drawable/Drawable;)V
 
     return-void
@@ -718,12 +723,12 @@
 .method public setBackgroundDrawable(Landroid/graphics/drawable/Drawable;)V
     .locals 2
 
-    .line 409
+    .line 415
     iget-boolean v0, p0, Lcom/google/android/material/card/MaterialCardView;->isParentCardViewDoneInitializing:Z
 
     if-eqz v0, :cond_1
 
-    .line 410
+    .line 416
     iget-object v0, p0, Lcom/google/android/material/card/MaterialCardView;->cardViewHelper:Lcom/google/android/material/card/MaterialCardViewHelper;
 
     invoke-virtual {v0}, Lcom/google/android/material/card/MaterialCardViewHelper;->isBackgroundOverwritten()Z
@@ -732,21 +737,21 @@
 
     if-nez v0, :cond_0
 
-    .line 411
+    .line 417
     const-string v0, "MaterialCardView"
 
     const-string v1, "Setting a custom background is not supported."
 
     invoke-static {v0, v1}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 412
+    .line 418
     iget-object v0, p0, Lcom/google/android/material/card/MaterialCardView;->cardViewHelper:Lcom/google/android/material/card/MaterialCardViewHelper;
 
     const/4 v1, 0x1
 
     invoke-virtual {v0, v1}, Lcom/google/android/material/card/MaterialCardViewHelper;->setBackgroundOverwritten(Z)V
 
-    .line 414
+    .line 420
     :cond_0
     invoke-super {p0, p1}, Landroidx/cardview/widget/CardView;->setBackgroundDrawable(Landroid/graphics/drawable/Drawable;)V
 
@@ -757,7 +762,7 @@
 .method setBackgroundInternal(Landroid/graphics/drawable/Drawable;)V
     .locals 0
 
-    .line 421
+    .line 427
     invoke-super {p0, p1}, Landroidx/cardview/widget/CardView;->setBackgroundDrawable(Landroid/graphics/drawable/Drawable;)V
 
     return-void
@@ -766,7 +771,7 @@
 .method public setCardBackgroundColor(I)V
     .locals 0
 
-    .line 325
+    .line 330
     iget-object p0, p0, Lcom/google/android/material/card/MaterialCardView;->cardViewHelper:Lcom/google/android/material/card/MaterialCardViewHelper;
 
     invoke-static {p1}, Landroid/content/res/ColorStateList;->valueOf(I)Landroid/content/res/ColorStateList;
@@ -781,7 +786,7 @@
 .method public setCardBackgroundColor(Landroid/content/res/ColorStateList;)V
     .locals 0
 
-    .line 330
+    .line 335
     iget-object p0, p0, Lcom/google/android/material/card/MaterialCardView;->cardViewHelper:Lcom/google/android/material/card/MaterialCardViewHelper;
 
     invoke-virtual {p0, p1}, Lcom/google/android/material/card/MaterialCardViewHelper;->setCardBackgroundColor(Landroid/content/res/ColorStateList;)V
@@ -792,10 +797,10 @@
 .method public setCardElevation(F)V
     .locals 0
 
-    .line 378
+    .line 384
     invoke-super {p0, p1}, Landroidx/cardview/widget/CardView;->setCardElevation(F)V
 
-    .line 379
+    .line 385
     iget-object p0, p0, Lcom/google/android/material/card/MaterialCardView;->cardViewHelper:Lcom/google/android/material/card/MaterialCardViewHelper;
 
     invoke-virtual {p0}, Lcom/google/android/material/card/MaterialCardViewHelper;->updateElevation()V
@@ -806,7 +811,7 @@
 .method public setCardForegroundColor(Landroid/content/res/ColorStateList;)V
     .locals 0
 
-    .line 347
+    .line 352
     iget-object p0, p0, Lcom/google/android/material/card/MaterialCardView;->cardViewHelper:Lcom/google/android/material/card/MaterialCardViewHelper;
 
     invoke-virtual {p0, p1}, Lcom/google/android/material/card/MaterialCardViewHelper;->setCardForegroundColor(Landroid/content/res/ColorStateList;)V
@@ -817,7 +822,7 @@
 .method public setCheckable(Z)V
     .locals 0
 
-    .line 471
+    .line 477
     iget-object p0, p0, Lcom/google/android/material/card/MaterialCardView;->cardViewHelper:Lcom/google/android/material/card/MaterialCardViewHelper;
 
     invoke-virtual {p0, p1}, Lcom/google/android/material/card/MaterialCardViewHelper;->setCheckable(Z)V
@@ -828,12 +833,12 @@
 .method public setChecked(Z)V
     .locals 1
 
-    .line 431
+    .line 437
     iget-boolean v0, p0, Lcom/google/android/material/card/MaterialCardView;->checked:Z
 
     if-eq v0, p1, :cond_0
 
-    .line 432
+    .line 438
     invoke-virtual {p0}, Lcom/google/android/material/card/MaterialCardView;->toggle()V
 
     :cond_0
@@ -843,7 +848,7 @@
 .method public setCheckedIcon(Landroid/graphics/drawable/Drawable;)V
     .locals 0
 
-    .line 579
+    .line 585
     iget-object p0, p0, Lcom/google/android/material/card/MaterialCardView;->cardViewHelper:Lcom/google/android/material/card/MaterialCardViewHelper;
 
     invoke-virtual {p0, p1}, Lcom/google/android/material/card/MaterialCardViewHelper;->setCheckedIcon(Landroid/graphics/drawable/Drawable;)V
@@ -854,7 +859,7 @@
 .method public setCheckedIconGravity(I)V
     .locals 1
 
-    .line 705
+    .line 711
     iget-object v0, p0, Lcom/google/android/material/card/MaterialCardView;->cardViewHelper:Lcom/google/android/material/card/MaterialCardViewHelper;
 
     invoke-virtual {v0}, Lcom/google/android/material/card/MaterialCardViewHelper;->getCheckedIconGravity()I
@@ -863,7 +868,7 @@
 
     if-eq v0, p1, :cond_0
 
-    .line 706
+    .line 712
     iget-object p0, p0, Lcom/google/android/material/card/MaterialCardView;->cardViewHelper:Lcom/google/android/material/card/MaterialCardViewHelper;
 
     invoke-virtual {p0, p1}, Lcom/google/android/material/card/MaterialCardViewHelper;->setCheckedIconGravity(I)V
@@ -875,7 +880,7 @@
 .method public setCheckedIconMargin(I)V
     .locals 0
 
-    .line 637
+    .line 643
     iget-object p0, p0, Lcom/google/android/material/card/MaterialCardView;->cardViewHelper:Lcom/google/android/material/card/MaterialCardViewHelper;
 
     invoke-virtual {p0, p1}, Lcom/google/android/material/card/MaterialCardViewHelper;->setCheckedIconMargin(I)V
@@ -890,10 +895,10 @@
 
     if-eq p1, v0, :cond_0
 
-    .line 648
+    .line 654
     iget-object v0, p0, Lcom/google/android/material/card/MaterialCardView;->cardViewHelper:Lcom/google/android/material/card/MaterialCardViewHelper;
 
-    .line 649
+    .line 655
     invoke-virtual {p0}, Lcom/google/android/material/card/MaterialCardView;->getResources()Landroid/content/res/Resources;
 
     move-result-object p0
@@ -902,7 +907,7 @@
 
     move-result p0
 
-    .line 648
+    .line 654
     invoke-virtual {v0, p0}, Lcom/google/android/material/card/MaterialCardViewHelper;->setCheckedIconMargin(I)V
 
     :cond_0
@@ -912,7 +917,7 @@
 .method public setCheckedIconResource(I)V
     .locals 1
 
-    .line 569
+    .line 575
     iget-object v0, p0, Lcom/google/android/material/card/MaterialCardView;->cardViewHelper:Lcom/google/android/material/card/MaterialCardViewHelper;
 
     invoke-virtual {p0}, Lcom/google/android/material/card/MaterialCardView;->getContext()Landroid/content/Context;
@@ -931,7 +936,7 @@
 .method public setCheckedIconSize(I)V
     .locals 0
 
-    .line 616
+    .line 622
     iget-object p0, p0, Lcom/google/android/material/card/MaterialCardView;->cardViewHelper:Lcom/google/android/material/card/MaterialCardViewHelper;
 
     invoke-virtual {p0, p1}, Lcom/google/android/material/card/MaterialCardViewHelper;->setCheckedIconSize(I)V
@@ -944,7 +949,7 @@
 
     if-eqz p1, :cond_0
 
-    .line 627
+    .line 633
     iget-object v0, p0, Lcom/google/android/material/card/MaterialCardView;->cardViewHelper:Lcom/google/android/material/card/MaterialCardViewHelper;
 
     invoke-virtual {p0}, Lcom/google/android/material/card/MaterialCardView;->getResources()Landroid/content/res/Resources;
@@ -964,7 +969,7 @@
 .method public setCheckedIconTint(Landroid/content/res/ColorStateList;)V
     .locals 0
 
-    .line 601
+    .line 607
     iget-object p0, p0, Lcom/google/android/material/card/MaterialCardView;->cardViewHelper:Lcom/google/android/material/card/MaterialCardViewHelper;
 
     invoke-virtual {p0, p1}, Lcom/google/android/material/card/MaterialCardViewHelper;->setCheckedIconTint(Landroid/content/res/ColorStateList;)V
@@ -975,15 +980,15 @@
 .method public setClickable(Z)V
     .locals 0
 
-    .line 363
+    .line 368
     invoke-super {p0, p1}, Landroidx/cardview/widget/CardView;->setClickable(Z)V
 
-    .line 364
+    .line 369
     iget-object p0, p0, Lcom/google/android/material/card/MaterialCardView;->cardViewHelper:Lcom/google/android/material/card/MaterialCardViewHelper;
 
     if-eqz p0, :cond_0
 
-    .line 365
+    .line 370
     invoke-virtual {p0}, Lcom/google/android/material/card/MaterialCardViewHelper;->updateClickable()V
 
     :cond_0
@@ -993,7 +998,7 @@
 .method public setContentPadding(IIII)V
     .locals 0
 
-    .line 296
+    .line 301
     iget-object p0, p0, Lcom/google/android/material/card/MaterialCardView;->cardViewHelper:Lcom/google/android/material/card/MaterialCardViewHelper;
 
     invoke-virtual {p0, p1, p2, p3, p4}, Lcom/google/android/material/card/MaterialCardViewHelper;->setUserContentPadding(IIII)V
@@ -1004,21 +1009,21 @@
 .method public setDragged(Z)V
     .locals 1
 
-    .line 442
+    .line 448
     iget-boolean v0, p0, Lcom/google/android/material/card/MaterialCardView;->dragged:Z
 
     if-eq v0, p1, :cond_0
 
-    .line 443
+    .line 449
     iput-boolean p1, p0, Lcom/google/android/material/card/MaterialCardView;->dragged:Z
 
-    .line 444
+    .line 450
     invoke-virtual {p0}, Lcom/google/android/material/card/MaterialCardView;->refreshDrawableState()V
 
-    .line 445
+    .line 451
     invoke-direct {p0}, Lcom/google/android/material/card/MaterialCardView;->forceRippleRedrawIfNeeded()V
 
-    .line 446
+    .line 452
     invoke-virtual {p0}, Lcom/google/android/material/card/MaterialCardView;->invalidate()V
 
     :cond_0
@@ -1028,10 +1033,10 @@
 .method public setMaxCardElevation(F)V
     .locals 0
 
-    .line 384
+    .line 390
     invoke-super {p0, p1}, Landroidx/cardview/widget/CardView;->setMaxCardElevation(F)V
 
-    .line 385
+    .line 391
     iget-object p0, p0, Lcom/google/android/material/card/MaterialCardView;->cardViewHelper:Lcom/google/android/material/card/MaterialCardViewHelper;
 
     invoke-virtual {p0}, Lcom/google/android/material/card/MaterialCardViewHelper;->updateInsets()V
@@ -1042,7 +1047,7 @@
 .method public setOnCheckedChangeListener(Lcom/google/android/material/card/MaterialCardView$OnCheckedChangeListener;)V
     .locals 0
 
-    .line 511
+    .line 517
     iput-object p1, p0, Lcom/google/android/material/card/MaterialCardView;->onCheckedChangeListener:Lcom/google/android/material/card/MaterialCardView$OnCheckedChangeListener;
 
     return-void
@@ -1051,15 +1056,15 @@
 .method public setPreventCornerOverlap(Z)V
     .locals 0
 
-    .line 397
+    .line 403
     invoke-super {p0, p1}, Landroidx/cardview/widget/CardView;->setPreventCornerOverlap(Z)V
 
-    .line 398
+    .line 404
     iget-object p1, p0, Lcom/google/android/material/card/MaterialCardView;->cardViewHelper:Lcom/google/android/material/card/MaterialCardViewHelper;
 
     invoke-virtual {p1}, Lcom/google/android/material/card/MaterialCardViewHelper;->updateInsets()V
 
-    .line 399
+    .line 405
     iget-object p0, p0, Lcom/google/android/material/card/MaterialCardView;->cardViewHelper:Lcom/google/android/material/card/MaterialCardViewHelper;
 
     invoke-virtual {p0}, Lcom/google/android/material/card/MaterialCardViewHelper;->updateContentPadding()V
@@ -1070,7 +1075,7 @@
 .method public setProgress(F)V
     .locals 0
 
-    .line 280
+    .line 285
     iget-object p0, p0, Lcom/google/android/material/card/MaterialCardView;->cardViewHelper:Lcom/google/android/material/card/MaterialCardViewHelper;
 
     invoke-virtual {p0, p1}, Lcom/google/android/material/card/MaterialCardViewHelper;->setProgress(F)V
@@ -1081,10 +1086,10 @@
 .method public setRadius(F)V
     .locals 0
 
-    .line 260
+    .line 265
     invoke-super {p0, p1}, Landroidx/cardview/widget/CardView;->setRadius(F)V
 
-    .line 261
+    .line 266
     iget-object p0, p0, Lcom/google/android/material/card/MaterialCardView;->cardViewHelper:Lcom/google/android/material/card/MaterialCardViewHelper;
 
     invoke-virtual {p0, p1}, Lcom/google/android/material/card/MaterialCardViewHelper;->setCornerRadius(F)V
@@ -1095,7 +1100,7 @@
 .method public setRippleColor(Landroid/content/res/ColorStateList;)V
     .locals 0
 
-    .line 523
+    .line 529
     iget-object p0, p0, Lcom/google/android/material/card/MaterialCardView;->cardViewHelper:Lcom/google/android/material/card/MaterialCardViewHelper;
 
     invoke-virtual {p0, p1}, Lcom/google/android/material/card/MaterialCardViewHelper;->setRippleColor(Landroid/content/res/ColorStateList;)V
@@ -1106,10 +1111,10 @@
 .method public setRippleColorResource(I)V
     .locals 1
 
-    .line 535
+    .line 541
     iget-object v0, p0, Lcom/google/android/material/card/MaterialCardView;->cardViewHelper:Lcom/google/android/material/card/MaterialCardViewHelper;
 
-    .line 536
+    .line 542
     invoke-virtual {p0}, Lcom/google/android/material/card/MaterialCardView;->getContext()Landroid/content/Context;
 
     move-result-object p0
@@ -1118,7 +1123,7 @@
 
     move-result-object p0
 
-    .line 535
+    .line 541
     invoke-virtual {v0, p0}, Lcom/google/android/material/card/MaterialCardViewHelper;->setRippleColor(Landroid/content/res/ColorStateList;)V
 
     return-void
@@ -1127,7 +1132,7 @@
 .method public setShapeAppearanceModel(Lcom/google/android/material/shape/ShapeAppearanceModel;)V
     .locals 1
 
-    .line 663
+    .line 669
     invoke-direct {p0}, Lcom/google/android/material/card/MaterialCardView;->getBoundsAsRectF()Landroid/graphics/RectF;
 
     move-result-object v0
@@ -1138,7 +1143,7 @@
 
     invoke-virtual {p0, v0}, Lcom/google/android/material/card/MaterialCardView;->setClipToOutline(Z)V
 
-    .line 665
+    .line 671
     iget-object p0, p0, Lcom/google/android/material/card/MaterialCardView;->cardViewHelper:Lcom/google/android/material/card/MaterialCardViewHelper;
 
     invoke-virtual {p0, p1}, Lcom/google/android/material/card/MaterialCardViewHelper;->setShapeAppearanceModel(Lcom/google/android/material/shape/ShapeAppearanceModel;)V
@@ -1149,7 +1154,7 @@
 .method public setStrokeColor(I)V
     .locals 0
 
-    .line 216
+    .line 221
     invoke-static {p1}, Landroid/content/res/ColorStateList;->valueOf(I)Landroid/content/res/ColorStateList;
 
     move-result-object p1
@@ -1162,12 +1167,12 @@
 .method public setStrokeColor(Landroid/content/res/ColorStateList;)V
     .locals 1
 
-    .line 225
+    .line 230
     iget-object v0, p0, Lcom/google/android/material/card/MaterialCardView;->cardViewHelper:Lcom/google/android/material/card/MaterialCardViewHelper;
 
     invoke-virtual {v0, p1}, Lcom/google/android/material/card/MaterialCardViewHelper;->setStrokeColor(Landroid/content/res/ColorStateList;)V
 
-    .line 226
+    .line 231
     invoke-virtual {p0}, Lcom/google/android/material/card/MaterialCardView;->invalidate()V
 
     return-void
@@ -1176,12 +1181,12 @@
 .method public setStrokeWidth(I)V
     .locals 1
 
-    .line 248
+    .line 253
     iget-object v0, p0, Lcom/google/android/material/card/MaterialCardView;->cardViewHelper:Lcom/google/android/material/card/MaterialCardViewHelper;
 
     invoke-virtual {v0, p1}, Lcom/google/android/material/card/MaterialCardViewHelper;->setStrokeWidth(I)V
 
-    .line 249
+    .line 254
     invoke-virtual {p0}, Lcom/google/android/material/card/MaterialCardView;->invalidate()V
 
     return-void
@@ -1190,15 +1195,15 @@
 .method public setUseCompatPadding(Z)V
     .locals 0
 
-    .line 390
+    .line 396
     invoke-super {p0, p1}, Landroidx/cardview/widget/CardView;->setUseCompatPadding(Z)V
 
-    .line 391
+    .line 397
     iget-object p1, p0, Lcom/google/android/material/card/MaterialCardView;->cardViewHelper:Lcom/google/android/material/card/MaterialCardViewHelper;
 
     invoke-virtual {p1}, Lcom/google/android/material/card/MaterialCardViewHelper;->updateInsets()V
 
-    .line 392
+    .line 398
     iget-object p0, p0, Lcom/google/android/material/card/MaterialCardView;->cardViewHelper:Lcom/google/android/material/card/MaterialCardViewHelper;
 
     invoke-virtual {p0}, Lcom/google/android/material/card/MaterialCardViewHelper;->updateContentPadding()V
@@ -1209,7 +1214,7 @@
 .method public toggle()V
     .locals 3
 
-    .line 476
+    .line 482
     invoke-virtual {p0}, Lcom/google/android/material/card/MaterialCardView;->isCheckable()Z
 
     move-result v0
@@ -1222,7 +1227,7 @@
 
     if-eqz v0, :cond_0
 
-    .line 477
+    .line 483
     iget-boolean v0, p0, Lcom/google/android/material/card/MaterialCardView;->checked:Z
 
     const/4 v1, 0x1
@@ -1231,25 +1236,25 @@
 
     iput-boolean v0, p0, Lcom/google/android/material/card/MaterialCardView;->checked:Z
 
-    .line 478
+    .line 484
     invoke-virtual {p0}, Lcom/google/android/material/card/MaterialCardView;->refreshDrawableState()V
 
-    .line 479
+    .line 485
     invoke-direct {p0}, Lcom/google/android/material/card/MaterialCardView;->forceRippleRedrawIfNeeded()V
 
-    .line 480
+    .line 486
     iget-object v0, p0, Lcom/google/android/material/card/MaterialCardView;->cardViewHelper:Lcom/google/android/material/card/MaterialCardViewHelper;
 
     iget-boolean v2, p0, Lcom/google/android/material/card/MaterialCardView;->checked:Z
 
     invoke-virtual {v0, v2, v1}, Lcom/google/android/material/card/MaterialCardViewHelper;->setChecked(ZZ)V
 
-    .line 481
+    .line 487
     iget-object v0, p0, Lcom/google/android/material/card/MaterialCardView;->onCheckedChangeListener:Lcom/google/android/material/card/MaterialCardView$OnCheckedChangeListener;
 
     if-eqz v0, :cond_0
 
-    .line 482
+    .line 488
     iget-boolean v1, p0, Lcom/google/android/material/card/MaterialCardView;->checked:Z
 
     invoke-interface {v0, p0, v1}, Lcom/google/android/material/card/MaterialCardView$OnCheckedChangeListener;->onCheckedChanged(Lcom/google/android/material/card/MaterialCardView;Z)V

@@ -179,7 +179,7 @@
 
     move-result-object v0
 
-    .line 65535
+    .line 49
     iget v1, p0, Landroidx/compose/foundation/text/TextFieldCursorKt$cursor$1$1;->label:I
 
     const/4 v2, 0x1

@@ -21,7 +21,7 @@
 
 .annotation runtime Lkotlin/Metadata;
     d1 = {
-        "\u0000\"\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0010\u0008\n\u0002\u0008\u0003\n\u0002\u0010\u000b\n\u0002\u0008\u0006\n\u0002\u0010\u000e\n\u0002\u0008\u0004\u0008\u0087@\u0018\u0000 \u00112\u00020\u0001:\u0001\u0011B\u0014\u0008\u0000\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u00f8\u0001\u0000\u00a2\u0006\u0004\u0008\u0004\u0010\u0005J\u001a\u0010\u0006\u001a\u00020\u00072\u0008\u0010\u0008\u001a\u0004\u0018\u00010\u0001H\u00d6\u0003\u00a2\u0006\u0004\u0008\t\u0010\nJ\u0010\u0010\u000b\u001a\u00020\u0003H\u00d6\u0001\u00a2\u0006\u0004\u0008\u000c\u0010\u0005J\u000f\u0010\r\u001a\u00020\u000eH\u0016\u00a2\u0006\u0004\u0008\u000f\u0010\u0010R\u000e\u0010\u0002\u001a\u00020\u0003X\u0080\u0004\u00a2\u0006\u0002\n\u0000\u0088\u0001\u0002\u0092\u0001\u00020\u0003\u00f8\u0001\u0000\u0082\u0002\u0004\n\u0002\u0008\u0019\u00a8\u0006\u0012"
+        "\u0000\"\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0010\u0008\n\u0002\u0008\u0003\n\u0002\u0010\u000b\n\u0002\u0008\u0006\n\u0002\u0010\u000e\n\u0002\u0008\u0004\u0008\u0087@\u0018\u0000 \u00112\u00020\u0001:\u0001\u0011B\u0011\u0008\u0000\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u00a2\u0006\u0004\u0008\u0004\u0010\u0005J\u001a\u0010\u0006\u001a\u00020\u00072\u0008\u0010\u0008\u001a\u0004\u0018\u00010\u0001H\u00d6\u0003\u00a2\u0006\u0004\u0008\t\u0010\nJ\u0010\u0010\u000b\u001a\u00020\u0003H\u00d6\u0001\u00a2\u0006\u0004\u0008\u000c\u0010\u0005J\u000f\u0010\r\u001a\u00020\u000eH\u0016\u00a2\u0006\u0004\u0008\u000f\u0010\u0010R\u000e\u0010\u0002\u001a\u00020\u0003X\u0080\u0004\u00a2\u0006\u0002\n\u0000\u0088\u0001\u0002\u0092\u0001\u00020\u0003\u00a8\u0006\u0012"
     }
     d2 = {
         "Landroidx/compose/ui/text/style/LineBreak$Strategy;",
@@ -66,6 +66,8 @@
 
 .field private static final Simple:I
 
+.field private static final Unspecified:I
+
 
 # instance fields
 .field private final value:I
@@ -85,7 +87,7 @@
 
     const/4 v0, 0x1
 
-    .line 180
+    .line 197
     invoke-static {v0}, Landroidx/compose/ui/text/style/LineBreak$Strategy;->constructor-impl(I)I
 
     move-result v0
@@ -94,7 +96,7 @@
 
     const/4 v0, 0x2
 
-    .line 195
+    .line 212
     invoke-static {v0}, Landroidx/compose/ui/text/style/LineBreak$Strategy;->constructor-impl(I)I
 
     move-result v0
@@ -103,12 +105,21 @@
 
     const/4 v0, 0x3
 
-    .line 208
+    .line 225
     invoke-static {v0}, Landroidx/compose/ui/text/style/LineBreak$Strategy;->constructor-impl(I)I
 
     move-result v0
 
     sput v0, Landroidx/compose/ui/text/style/LineBreak$Strategy;->Balanced:I
+
+    const/4 v0, 0x0
+
+    .line 231
+    invoke-static {v0}, Landroidx/compose/ui/text/style/LineBreak$Strategy;->constructor-impl(I)I
+
+    move-result v0
+
+    sput v0, Landroidx/compose/ui/text/style/LineBreak$Strategy;->Unspecified:I
 
     return-void
 .end method
@@ -116,7 +127,7 @@
 .method private synthetic constructor <init>(I)V
     .locals 0
 
-    .line 165
+    .line 182
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     iput p1, p0, Landroidx/compose/ui/text/style/LineBreak$Strategy;->value:I
@@ -127,7 +138,7 @@
 .method public static final synthetic access$getBalanced$cp()I
     .locals 1
 
-    .line 164
+    .line 181
     sget v0, Landroidx/compose/ui/text/style/LineBreak$Strategy;->Balanced:I
 
     return v0
@@ -136,7 +147,7 @@
 .method public static final synthetic access$getHighQuality$cp()I
     .locals 1
 
-    .line 164
+    .line 181
     sget v0, Landroidx/compose/ui/text/style/LineBreak$Strategy;->HighQuality:I
 
     return v0
@@ -145,8 +156,17 @@
 .method public static final synthetic access$getSimple$cp()I
     .locals 1
 
-    .line 164
+    .line 181
     sget v0, Landroidx/compose/ui/text/style/LineBreak$Strategy;->Simple:I
+
+    return v0
+.end method
+
+.method public static final synthetic access$getUnspecified$cp()I
+    .locals 1
+
+    .line 181
+    sget v0, Landroidx/compose/ui/text/style/LineBreak$Strategy;->Unspecified:I
 
     return v0
 .end method
@@ -224,7 +244,7 @@
 .method public static toString-impl(I)Ljava/lang/String;
     .locals 1
 
-    .line 212
+    .line 235
     sget v0, Landroidx/compose/ui/text/style/LineBreak$Strategy;->Simple:I
 
     invoke-static {p0, v0}, Landroidx/compose/ui/text/style/LineBreak$Strategy;->equals-impl0(II)Z
@@ -237,7 +257,7 @@
 
     goto :goto_0
 
-    .line 213
+    .line 236
     :cond_0
     sget v0, Landroidx/compose/ui/text/style/LineBreak$Strategy;->HighQuality:I
 
@@ -251,22 +271,36 @@
 
     goto :goto_0
 
-    .line 214
+    .line 237
     :cond_1
     sget v0, Landroidx/compose/ui/text/style/LineBreak$Strategy;->Balanced:I
 
     invoke-static {p0, v0}, Landroidx/compose/ui/text/style/LineBreak$Strategy;->equals-impl0(II)Z
 
-    move-result p0
+    move-result v0
 
-    if-eqz p0, :cond_2
+    if-eqz v0, :cond_2
 
     const-string p0, "Strategy.Balanced"
 
     goto :goto_0
 
-    .line 215
+    .line 238
     :cond_2
+    sget v0, Landroidx/compose/ui/text/style/LineBreak$Strategy;->Unspecified:I
+
+    invoke-static {p0, v0}, Landroidx/compose/ui/text/style/LineBreak$Strategy;->equals-impl0(II)Z
+
+    move-result p0
+
+    if-eqz p0, :cond_3
+
+    const-string p0, "Strategy.Unspecified"
+
+    goto :goto_0
+
+    .line 239
+    :cond_3
     const-string p0, "Invalid"
 
     :goto_0
@@ -302,7 +336,7 @@
 .method public toString()Ljava/lang/String;
     .locals 0
 
-    .line 211
+    .line 234
     iget p0, p0, Landroidx/compose/ui/text/style/LineBreak$Strategy;->value:I
 
     invoke-static {p0}, Landroidx/compose/ui/text/style/LineBreak$Strategy;->toString-impl(I)Ljava/lang/String;

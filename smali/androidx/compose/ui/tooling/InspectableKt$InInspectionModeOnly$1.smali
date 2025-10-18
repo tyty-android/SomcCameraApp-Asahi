@@ -1,6 +1,6 @@
 .class final Landroidx/compose/ui/tooling/InspectableKt$InInspectionModeOnly$1;
 .super Lkotlin/jvm/internal/Lambda;
-.source "Inspectable.kt"
+.source "Inspectable.android.kt"
 
 # interfaces
 .implements Lkotlin/jvm/functions/Function2;

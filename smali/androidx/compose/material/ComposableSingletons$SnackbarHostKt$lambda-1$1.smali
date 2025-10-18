@@ -82,7 +82,7 @@
 .method public bridge synthetic invoke(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
 
-    .line 154
+    .line 157
     check-cast p1, Landroidx/compose/material/SnackbarData;
 
     check-cast p2, Landroidx/compose/runtime/Composer;
@@ -103,21 +103,17 @@
 .method public final invoke(Landroidx/compose/material/SnackbarData;Landroidx/compose/runtime/Composer;I)V
     .locals 14
 
-    move-object v0, p1
-
     move-object/from16 v11, p2
 
-    const-string v1, "it"
+    const-string v0, "C156@6457L12:SnackbarHost.kt#jmzs0o"
 
-    invoke-static {p1, v1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v11, v0}, Landroidx/compose/runtime/ComposerKt;->sourceInformation(Landroidx/compose/runtime/Composer;Ljava/lang/String;)V
 
-    const-string v1, "C153@6325L12:SnackbarHost.kt#jmzs0o"
+    and-int/lit8 v0, p3, 0xe
 
-    invoke-static {v11, v1}, Landroidx/compose/runtime/ComposerKt;->sourceInformation(Landroidx/compose/runtime/Composer;Ljava/lang/String;)V
+    if-nez v0, :cond_1
 
-    and-int/lit8 v1, p3, 0xe
-
-    if-nez v1, :cond_1
+    move-object v0, p1
 
     invoke-interface {v11, p1}, Landroidx/compose/runtime/Composer;->changed(Ljava/lang/Object;)Z
 
@@ -138,6 +134,8 @@
     goto :goto_1
 
     :cond_1
+    move-object v0, p1
+
     move/from16 v1, p3
 
     :goto_1
@@ -147,7 +145,7 @@
 
     if-ne v2, v3, :cond_3
 
-    .line 154
+    .line 157
     invoke-interface/range {p2 .. p2}, Landroidx/compose/runtime/Composer;->getSkipping()Z
 
     move-result v2
@@ -171,7 +169,7 @@
 
     const/4 v2, -0x1
 
-    const-string v3, "androidx.compose.material.ComposableSingletons$SnackbarHostKt.lambda-1.<anonymous> (SnackbarHost.kt:153)"
+    const-string v3, "androidx.compose.material.ComposableSingletons$SnackbarHostKt.lambda-1.<anonymous> (SnackbarHost.kt:156)"
 
     const v4, 0x3b67813e
 

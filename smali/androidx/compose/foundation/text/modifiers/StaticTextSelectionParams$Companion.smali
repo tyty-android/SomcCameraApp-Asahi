@@ -41,7 +41,7 @@
 .method private constructor <init>()V
     .locals 0
 
-    .line 48
+    .line 43
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -60,7 +60,7 @@
 .method public final getEmpty()Landroidx/compose/foundation/text/modifiers/StaticTextSelectionParams;
     .locals 0
 
-    .line 49
+    .line 44
     invoke-static {}, Landroidx/compose/foundation/text/modifiers/StaticTextSelectionParams;->access$getEmpty$cp()Landroidx/compose/foundation/text/modifiers/StaticTextSelectionParams;
 
     move-result-object p0

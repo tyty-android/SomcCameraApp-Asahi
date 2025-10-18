@@ -99,7 +99,7 @@
     .line 24
     new-instance v0, Ljp/co/sony/mc/camera/configuration/parameters/Ev;
 
-    const v1, 0x7f1101ef
+    const v1, 0x7f1101f2
 
     const/high16 v2, -0x40000000    # -2.0f
 
@@ -114,7 +114,7 @@
     .line 27
     new-instance v0, Ljp/co/sony/mc/camera/configuration/parameters/Ev;
 
-    const v1, 0x7f1101ee
+    const v1, 0x7f1101f1
 
     const v2, -0x402aaaab
 
@@ -129,7 +129,7 @@
     .line 30
     new-instance v0, Ljp/co/sony/mc/camera/configuration/parameters/Ev;
 
-    const v1, 0x7f1101ed
+    const v1, 0x7f1101f0
 
     const v2, -0x40555555
 
@@ -144,7 +144,7 @@
     .line 33
     new-instance v0, Ljp/co/sony/mc/camera/configuration/parameters/Ev;
 
-    const v1, 0x7f1101ec
+    const v1, 0x7f1101ef
 
     const/high16 v2, -0x40800000    # -1.0f
 
@@ -159,7 +159,7 @@
     .line 36
     new-instance v0, Ljp/co/sony/mc/camera/configuration/parameters/Ev;
 
-    const v1, 0x7f1101eb
+    const v1, 0x7f1101ee
 
     const v2, -0x40d55555
 
@@ -174,7 +174,7 @@
     .line 39
     new-instance v0, Ljp/co/sony/mc/camera/configuration/parameters/Ev;
 
-    const v1, 0x7f1101ea
+    const v1, 0x7f1101ed
 
     const v2, -0x41555555
 
@@ -189,7 +189,7 @@
     .line 42
     new-instance v0, Ljp/co/sony/mc/camera/configuration/parameters/Ev;
 
-    const v1, 0x7f1101f6
+    const v1, 0x7f1101f9
 
     const/4 v2, 0x0
 
@@ -204,7 +204,7 @@
     .line 45
     new-instance v0, Ljp/co/sony/mc/camera/configuration/parameters/Ev;
 
-    const v1, 0x7f1101f0
+    const v1, 0x7f1101f3
 
     const v2, 0x3eaaaaab
 
@@ -219,7 +219,7 @@
     .line 48
     new-instance v0, Ljp/co/sony/mc/camera/configuration/parameters/Ev;
 
-    const v1, 0x7f1101f1
+    const v1, 0x7f1101f4
 
     const v2, 0x3f2aaaab
 
@@ -234,7 +234,7 @@
     .line 51
     new-instance v0, Ljp/co/sony/mc/camera/configuration/parameters/Ev;
 
-    const v1, 0x7f1101f2
+    const v1, 0x7f1101f5
 
     const/high16 v2, 0x3f800000    # 1.0f
 
@@ -249,7 +249,7 @@
     .line 54
     new-instance v0, Ljp/co/sony/mc/camera/configuration/parameters/Ev;
 
-    const v1, 0x7f1101f3
+    const v1, 0x7f1101f6
 
     const v2, 0x3faaaaab
 
@@ -264,7 +264,7 @@
     .line 57
     new-instance v0, Ljp/co/sony/mc/camera/configuration/parameters/Ev;
 
-    const v1, 0x7f1101f4
+    const v1, 0x7f1101f7
 
     const v2, 0x3fd55555
 
@@ -279,7 +279,7 @@
     .line 60
     new-instance v0, Ljp/co/sony/mc/camera/configuration/parameters/Ev;
 
-    const v1, 0x7f1101f5
+    const v1, 0x7f1101f8
 
     const/high16 v2, 0x40000000    # 2.0f
 

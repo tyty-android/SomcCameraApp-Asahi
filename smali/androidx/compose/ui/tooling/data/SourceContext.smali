@@ -1,6 +1,6 @@
 .class public interface abstract Landroidx/compose/ui/tooling/data/SourceContext;
 .super Ljava/lang/Object;
-.source "SlotTree.kt"
+.source "SlotTree.jvm.kt"
 
 
 # annotations

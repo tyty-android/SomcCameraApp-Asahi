@@ -23,12 +23,12 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/SourceDebugExtension;
-    value = "SMAP\nSlotTable.kt\nKotlin\n*S Kotlin\n*F\n+ 1 SlotTable.kt\nandroidx/compose/runtime/DataIterator\n+ 2 fake.kt\nkotlin/jvm/internal/FakeKt\n*L\n1#1,3471:1\n1#2:3472\n*E\n"
+    value = "SMAP\nSlotTable.kt\nKotlin\n*S Kotlin\n*F\n+ 1 SlotTable.kt\nandroidx/compose/runtime/DataIterator\n+ 2 fake.kt\nkotlin/jvm/internal/FakeKt\n*L\n1#1,3745:1\n1#2:3746\n*E\n"
 .end annotation
 
 .annotation runtime Lkotlin/Metadata;
     d1 = {
-        "\u0000(\n\u0002\u0018\u0002\n\u0002\u0010\u001c\n\u0002\u0010\u0000\n\u0002\u0010(\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0008\n\u0002\u0008\u000e\n\u0002\u0010\u000b\n\u0002\u0008\u0003\u0008\u0002\u0018\u00002\n\u0012\u0006\u0012\u0004\u0018\u00010\u00020\u00012\n\u0012\u0006\u0012\u0004\u0018\u00010\u00020\u0003B\u0015\u0012\u0006\u0010\u0004\u001a\u00020\u0005\u0012\u0006\u0010\u0006\u001a\u00020\u0007\u00a2\u0006\u0002\u0010\u0008J\t\u0010\u0015\u001a\u00020\u0016H\u0096\u0002J\u0011\u0010\u0017\u001a\n\u0012\u0006\u0012\u0004\u0018\u00010\u00020\u0003H\u0096\u0002J\u000b\u0010\u0018\u001a\u0004\u0018\u00010\u0002H\u0096\u0002R\u0011\u0010\t\u001a\u00020\u0007\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\n\u0010\u000bR\u0011\u0010\u0006\u001a\u00020\u0007\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\u000c\u0010\u000bR\u001a\u0010\r\u001a\u00020\u0007X\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\u0008\u000e\u0010\u000b\"\u0004\u0008\u000f\u0010\u0010R\u0011\u0010\u0011\u001a\u00020\u0007\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\u0012\u0010\u000bR\u0011\u0010\u0004\u001a\u00020\u0005\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\u0013\u0010\u0014\u00a8\u0006\u0019"
+        "\u0000(\n\u0002\u0018\u0002\n\u0002\u0010\u001c\n\u0002\u0010\u0000\n\u0002\u0010(\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0008\n\u0002\u0008\r\n\u0002\u0010\u000b\n\u0002\u0008\u0003\u0008\u0002\u0018\u00002\n\u0012\u0006\u0012\u0004\u0018\u00010\u00020\u00012\n\u0012\u0006\u0012\u0004\u0018\u00010\u00020\u0003B\u0015\u0012\u0006\u0010\u0004\u001a\u00020\u0005\u0012\u0006\u0010\u0006\u001a\u00020\u0007\u00a2\u0006\u0002\u0010\u0008J\t\u0010\u0014\u001a\u00020\u0015H\u0096\u0002J\u0011\u0010\u0016\u001a\n\u0012\u0006\u0012\u0004\u0018\u00010\u00020\u0003H\u0096\u0002J\u000b\u0010\u0017\u001a\u0004\u0018\u00010\u0002H\u0096\u0002R\u0011\u0010\t\u001a\u00020\u0007\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\n\u0010\u000bR\u001a\u0010\u000c\u001a\u00020\u0007X\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\u0008\r\u0010\u000b\"\u0004\u0008\u000e\u0010\u000fR\u0011\u0010\u0010\u001a\u00020\u0007\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\u0011\u0010\u000bR\u0011\u0010\u0004\u001a\u00020\u0005\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\u0012\u0010\u0013\u00a8\u0006\u0018"
     }
     d2 = {
         "Landroidx/compose/runtime/DataIterator;",
@@ -43,7 +43,6 @@
         "end",
         "getEnd",
         "()I",
-        "getGroup",
         "index",
         "getIndex",
         "setIndex",
@@ -71,8 +70,6 @@
 # instance fields
 .field private final end:I
 
-.field private final group:I
-
 .field private index:I
 
 .field private final start:I
@@ -82,22 +79,15 @@
 
 # direct methods
 .method public constructor <init>(Landroidx/compose/runtime/SlotTable;I)V
-    .locals 3
+    .locals 2
 
-    const-string/jumbo v0, "table"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 3114
+    .line 3363
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 3115
+    .line 3364
     iput-object p1, p0, Landroidx/compose/runtime/DataIterator;->table:Landroidx/compose/runtime/SlotTable;
 
-    .line 3116
-    iput p2, p0, Landroidx/compose/runtime/DataIterator;->group:I
-
-    .line 3118
+    .line 3367
     invoke-virtual {p1}, Landroidx/compose/runtime/SlotTable;->getGroups()[I
 
     move-result-object v0
@@ -108,21 +98,19 @@
 
     iput v0, p0, Landroidx/compose/runtime/DataIterator;->start:I
 
-    add-int/lit8 v1, p2, 0x1
+    add-int/lit8 p2, p2, 0x1
 
-    .line 3119
+    .line 3368
     invoke-virtual {p1}, Landroidx/compose/runtime/SlotTable;->getGroupsSize()I
 
-    move-result v2
+    move-result v1
 
-    if-ge v1, v2, :cond_0
+    if-ge p2, v1, :cond_0
 
-    .line 3120
+    .line 3369
     invoke-virtual {p1}, Landroidx/compose/runtime/SlotTable;->getGroups()[I
 
     move-result-object p1
-
-    add-int/lit8 p2, p2, 0x1
 
     invoke-static {p1, p2}, Landroidx/compose/runtime/SlotTableKt;->access$dataAnchor([II)I
 
@@ -135,11 +123,11 @@
 
     move-result p1
 
-    .line 3119
+    .line 3368
     :goto_0
     iput p1, p0, Landroidx/compose/runtime/DataIterator;->end:I
 
-    .line 3121
+    .line 3370
     iput v0, p0, Landroidx/compose/runtime/DataIterator;->index:I
 
     return-void
@@ -150,17 +138,8 @@
 .method public final getEnd()I
     .locals 0
 
-    .line 3119
+    .line 3368
     iget p0, p0, Landroidx/compose/runtime/DataIterator;->end:I
-
-    return p0
-.end method
-
-.method public final getGroup()I
-    .locals 0
-
-    .line 3116
-    iget p0, p0, Landroidx/compose/runtime/DataIterator;->group:I
 
     return p0
 .end method
@@ -168,7 +147,7 @@
 .method public final getIndex()I
     .locals 0
 
-    .line 3121
+    .line 3370
     iget p0, p0, Landroidx/compose/runtime/DataIterator;->index:I
 
     return p0
@@ -177,7 +156,7 @@
 .method public final getStart()I
     .locals 0
 
-    .line 3118
+    .line 3367
     iget p0, p0, Landroidx/compose/runtime/DataIterator;->start:I
 
     return p0
@@ -186,7 +165,7 @@
 .method public final getTable()Landroidx/compose/runtime/SlotTable;
     .locals 0
 
-    .line 3115
+    .line 3364
     iget-object p0, p0, Landroidx/compose/runtime/DataIterator;->table:Landroidx/compose/runtime/SlotTable;
 
     return-object p0
@@ -195,7 +174,7 @@
 .method public hasNext()Z
     .locals 1
 
-    .line 3123
+    .line 3372
     iget v0, p0, Landroidx/compose/runtime/DataIterator;->index:I
 
     iget p0, p0, Landroidx/compose/runtime/DataIterator;->end:I
@@ -224,7 +203,7 @@
         }
     .end annotation
 
-    .line 3122
+    .line 3371
     check-cast p0, Ljava/util/Iterator;
 
     return-object p0
@@ -233,7 +212,7 @@
 .method public next()Ljava/lang/Object;
     .locals 2
 
-    .line 3125
+    .line 3374
     iget v0, p0, Landroidx/compose/runtime/DataIterator;->index:I
 
     if-ltz v0, :cond_0
@@ -248,7 +227,7 @@
 
     if-ge v0, v1, :cond_0
 
-    .line 3126
+    .line 3375
     iget-object v0, p0, Landroidx/compose/runtime/DataIterator;->table:Landroidx/compose/runtime/SlotTable;
 
     invoke-virtual {v0}, Landroidx/compose/runtime/SlotTable;->getSlots()[Ljava/lang/Object;
@@ -264,7 +243,7 @@
     :cond_0
     const/4 v0, 0x0
 
-    .line 3128
+    .line 3377
     :goto_0
     iget v1, p0, Landroidx/compose/runtime/DataIterator;->index:I
 
@@ -290,7 +269,7 @@
 .method public final setIndex(I)V
     .locals 0
 
-    .line 3121
+    .line 3370
     iput p1, p0, Landroidx/compose/runtime/DataIterator;->index:I
 
     return-void

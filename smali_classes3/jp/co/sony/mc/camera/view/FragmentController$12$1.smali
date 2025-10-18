@@ -32,7 +32,7 @@
         }
     .end annotation
 
-    .line 2932
+    .line 3075
     iput-object p1, p0, Ljp/co/sony/mc/camera/view/FragmentController$12$1;->this$1:Ljp/co/sony/mc/camera/view/FragmentController$12;
 
     iput-object p2, p0, Ljp/co/sony/mc/camera/view/FragmentController$12$1;->val$channelName:Ljava/lang/String;
@@ -47,7 +47,7 @@
 .method public run()V
     .locals 2
 
-    .line 2935
+    .line 3078
     invoke-static {}, Ljp/co/sony/mc/camera/setting/CameraProSetting;->getInstance()Ljp/co/sony/mc/camera/setting/CameraProSetting;
 
     move-result-object v0

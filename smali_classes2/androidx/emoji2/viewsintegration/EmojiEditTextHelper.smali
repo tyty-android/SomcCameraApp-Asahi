@@ -68,7 +68,7 @@
 .method public getEmojiReplaceStrategy()I
     .locals 0
 
-    .line 202
+    .line 204
     iget p0, p0, Landroidx/emoji2/viewsintegration/EmojiEditTextHelper;->mEmojiReplaceStrategy:I
 
     return p0
@@ -99,7 +99,7 @@
 .method public isEnabled()Z
     .locals 0
 
-    .line 212
+    .line 214
     iget-object p0, p0, Landroidx/emoji2/viewsintegration/EmojiEditTextHelper;->mHelper:Landroidx/emoji2/viewsintegration/EmojiEditTextHelper$HelperInternal;
 
     invoke-virtual {p0}, Landroidx/emoji2/viewsintegration/EmojiEditTextHelper$HelperInternal;->isEnabled()Z
@@ -132,10 +132,10 @@
 .method public setEmojiReplaceStrategy(I)V
     .locals 0
 
-    .line 188
+    .line 189
     iput p1, p0, Landroidx/emoji2/viewsintegration/EmojiEditTextHelper;->mEmojiReplaceStrategy:I
 
-    .line 189
+    .line 190
     iget-object p0, p0, Landroidx/emoji2/viewsintegration/EmojiEditTextHelper;->mHelper:Landroidx/emoji2/viewsintegration/EmojiEditTextHelper$HelperInternal;
 
     invoke-virtual {p0, p1}, Landroidx/emoji2/viewsintegration/EmojiEditTextHelper$HelperInternal;->setEmojiReplaceStrategy(I)V
@@ -146,7 +146,7 @@
 .method public setEnabled(Z)V
     .locals 0
 
-    .line 225
+    .line 227
     iget-object p0, p0, Landroidx/emoji2/viewsintegration/EmojiEditTextHelper;->mHelper:Landroidx/emoji2/viewsintegration/EmojiEditTextHelper$HelperInternal;
 
     invoke-virtual {p0, p1}, Landroidx/emoji2/viewsintegration/EmojiEditTextHelper$HelperInternal;->setEnabled(Z)V

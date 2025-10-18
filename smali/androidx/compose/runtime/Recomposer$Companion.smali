@@ -14,7 +14,7 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/SourceDebugExtension;
-    value = "SMAP\nRecomposer.kt\nKotlin\n*S Kotlin\n*F\n+ 1 Recomposer.kt\nandroidx/compose/runtime/Recomposer$Companion\n+ 2 _Collections.kt\nkotlin/collections/CollectionsKt___CollectionsKt\n+ 3 ListUtils.kt\nandroidx/compose/runtime/snapshots/ListUtilsKt\n+ 4 fake.kt\nkotlin/jvm/internal/FakeKt\n*L\n1#1,1502:1\n1360#2:1503\n1446#2,5:1504\n1855#2,2:1509\n1855#2,2:1523\n1855#2,2:1525\n1603#2,9:1527\n1855#2:1536\n1856#2:1538\n1612#2:1539\n1603#2,9:1540\n1855#2:1549\n1856#2:1551\n1612#2:1552\n33#3,6:1511\n33#3,6:1517\n1#4:1537\n1#4:1550\n*S KotlinDebug\n*F\n+ 1 Recomposer.kt\nandroidx/compose/runtime/Recomposer$Companion\n*L\n1379#1:1503\n1379#1:1504,5\n1387#1:1509,2\n1396#1:1523,2\n1403#1:1525,2\n1417#1:1527,9\n1417#1:1536\n1417#1:1538\n1417#1:1539\n1422#1:1540,9\n1422#1:1549\n1422#1:1551\n1422#1:1552\n1393#1:1511,6\n1394#1:1517,6\n1417#1:1537\n1422#1:1550\n*E\n"
+    value = "SMAP\nRecomposer.kt\nKotlin\n*S Kotlin\n*F\n+ 1 Recomposer.kt\nandroidx/compose/runtime/Recomposer$Companion\n+ 2 _Collections.kt\nkotlin/collections/CollectionsKt___CollectionsKt\n+ 3 ListUtils.kt\nandroidx/compose/runtime/snapshots/ListUtilsKt\n+ 4 fake.kt\nkotlin/jvm/internal/FakeKt\n*L\n1#1,1564:1\n1360#2:1565\n1446#2,5:1566\n1855#2,2:1571\n1855#2,2:1585\n1855#2,2:1587\n1603#2,9:1589\n1855#2:1598\n1856#2:1600\n1612#2:1601\n1603#2,9:1602\n1855#2:1611\n1856#2:1613\n1612#2:1614\n33#3,6:1573\n33#3,6:1579\n1#4:1599\n1#4:1612\n*S KotlinDebug\n*F\n+ 1 Recomposer.kt\nandroidx/compose/runtime/Recomposer$Companion\n*L\n1440#1:1565\n1440#1:1566,5\n1448#1:1571,2\n1457#1:1585,2\n1464#1:1587,2\n1478#1:1589,9\n1478#1:1598\n1478#1:1600\n1478#1:1601\n1483#1:1602,9\n1483#1:1611\n1483#1:1613\n1483#1:1614\n1454#1:1573,6\n1455#1:1579,6\n1478#1:1599\n1483#1:1612\n*E\n"
 .end annotation
 
 .annotation runtime Lkotlin/Metadata;
@@ -79,7 +79,7 @@
 .method private constructor <init>()V
     .locals 0
 
-    .line 1339
+    .line 1400
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -96,7 +96,7 @@
 .method public static final synthetic access$addRunning(Landroidx/compose/runtime/Recomposer$Companion;Landroidx/compose/runtime/Recomposer$RecomposerInfoImpl;)V
     .locals 0
 
-    .line 1339
+    .line 1400
     invoke-direct {p0, p1}, Landroidx/compose/runtime/Recomposer$Companion;->addRunning(Landroidx/compose/runtime/Recomposer$RecomposerInfoImpl;)V
 
     return-void
@@ -105,7 +105,7 @@
 .method public static final synthetic access$removeRunning(Landroidx/compose/runtime/Recomposer$Companion;Landroidx/compose/runtime/Recomposer$RecomposerInfoImpl;)V
     .locals 0
 
-    .line 1339
+    .line 1400
     invoke-direct {p0, p1}, Landroidx/compose/runtime/Recomposer$Companion;->removeRunning(Landroidx/compose/runtime/Recomposer$RecomposerInfoImpl;)V
 
     return-void
@@ -114,7 +114,7 @@
 .method private final addRunning(Landroidx/compose/runtime/Recomposer$RecomposerInfoImpl;)V
     .locals 2
 
-    .line 1361
+    .line 1422
     :cond_0
     invoke-static {}, Landroidx/compose/runtime/Recomposer;->access$get_runningRecomposers$cp()Lkotlinx/coroutines/flow/MutableStateFlow;
 
@@ -126,14 +126,14 @@
 
     check-cast p0, Landroidx/compose/runtime/external/kotlinx/collections/immutable/PersistentSet;
 
-    .line 1362
+    .line 1423
     invoke-interface {p0, p1}, Landroidx/compose/runtime/external/kotlinx/collections/immutable/PersistentSet;->add(Ljava/lang/Object;)Landroidx/compose/runtime/external/kotlinx/collections/immutable/PersistentSet;
 
     move-result-object v0
 
     if-eq p0, v0, :cond_1
 
-    .line 1363
+    .line 1424
     invoke-static {}, Landroidx/compose/runtime/Recomposer;->access$get_runningRecomposers$cp()Lkotlinx/coroutines/flow/MutableStateFlow;
 
     move-result-object v1
@@ -151,7 +151,7 @@
 .method private final removeRunning(Landroidx/compose/runtime/Recomposer$RecomposerInfoImpl;)V
     .locals 2
 
-    .line 1369
+    .line 1430
     :cond_0
     invoke-static {}, Landroidx/compose/runtime/Recomposer;->access$get_runningRecomposers$cp()Lkotlinx/coroutines/flow/MutableStateFlow;
 
@@ -163,14 +163,14 @@
 
     check-cast p0, Landroidx/compose/runtime/external/kotlinx/collections/immutable/PersistentSet;
 
-    .line 1370
+    .line 1431
     invoke-interface {p0, p1}, Landroidx/compose/runtime/external/kotlinx/collections/immutable/PersistentSet;->remove(Ljava/lang/Object;)Landroidx/compose/runtime/external/kotlinx/collections/immutable/PersistentSet;
 
     move-result-object v0
 
     if-eq p0, v0, :cond_1
 
-    .line 1371
+    .line 1432
     invoke-static {}, Landroidx/compose/runtime/Recomposer;->access$get_runningRecomposers$cp()Lkotlinx/coroutines/flow/MutableStateFlow;
 
     move-result-object v1
@@ -190,7 +190,7 @@
 .method public final clearErrors$runtime_release()V
     .locals 2
 
-    .line 1422
+    .line 1483
     invoke-static {}, Landroidx/compose/runtime/Recomposer;->access$get_runningRecomposers$cp()Lkotlinx/coroutines/flow/MutableStateFlow;
 
     move-result-object p0
@@ -201,14 +201,14 @@
 
     check-cast p0, Ljava/lang/Iterable;
 
-    .line 1540
+    .line 1602
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
     check-cast v0, Ljava/util/Collection;
 
-    .line 1549
+    .line 1611
     invoke-interface {p0}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
 
     move-result-object p0
@@ -225,22 +225,22 @@
 
     move-result-object v1
 
-    .line 1548
+    .line 1610
     check-cast v1, Landroidx/compose/runtime/Recomposer$RecomposerInfoImpl;
 
-    .line 1423
+    .line 1484
     invoke-virtual {v1}, Landroidx/compose/runtime/Recomposer$RecomposerInfoImpl;->resetErrorState()Landroidx/compose/runtime/Recomposer$RecomposerErrorState;
 
     move-result-object v1
 
     if-eqz v1, :cond_0
 
-    .line 1548
+    .line 1610
     invoke-interface {v0, v1}, Ljava/util/Collection;->add(Ljava/lang/Object;)Z
 
     goto :goto_0
 
-    .line 1552
+    .line 1614
     :cond_1
     check-cast v0, Ljava/util/List;
 
@@ -258,7 +258,7 @@
         }
     .end annotation
 
-    .line 1417
+    .line 1478
     invoke-static {}, Landroidx/compose/runtime/Recomposer;->access$get_runningRecomposers$cp()Lkotlinx/coroutines/flow/MutableStateFlow;
 
     move-result-object p0
@@ -269,14 +269,14 @@
 
     check-cast p0, Ljava/lang/Iterable;
 
-    .line 1527
+    .line 1589
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
     check-cast v0, Ljava/util/Collection;
 
-    .line 1536
+    .line 1598
     invoke-interface {p0}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
 
     move-result-object p0
@@ -293,22 +293,22 @@
 
     move-result-object v1
 
-    .line 1535
+    .line 1597
     check-cast v1, Landroidx/compose/runtime/Recomposer$RecomposerInfoImpl;
 
-    .line 1418
+    .line 1479
     invoke-virtual {v1}, Landroidx/compose/runtime/Recomposer$RecomposerInfoImpl;->getCurrentError()Landroidx/compose/runtime/RecomposerErrorInfo;
 
     move-result-object v1
 
     if-eqz v1, :cond_0
 
-    .line 1535
+    .line 1597
     invoke-interface {v0, v1}, Ljava/util/Collection;->add(Ljava/lang/Object;)Z
 
     goto :goto_0
 
-    .line 1539
+    .line 1601
     :cond_1
     check-cast v0, Ljava/util/List;
 
@@ -327,7 +327,7 @@
         }
     .end annotation
 
-    .line 1353
+    .line 1414
     invoke-static {}, Landroidx/compose/runtime/Recomposer;->access$get_runningRecomposers$cp()Lkotlinx/coroutines/flow/MutableStateFlow;
 
     move-result-object p0
@@ -340,7 +340,7 @@
 .method public final invalidateGroupsWithKey$runtime_release(I)V
     .locals 2
 
-    .line 1402
+    .line 1463
     invoke-static {}, Landroidx/compose/runtime/Recomposer;->access$get_hotReloadEnabled$cp()Ljava/util/concurrent/atomic/AtomicReference;
 
     move-result-object p0
@@ -353,7 +353,7 @@
 
     invoke-virtual {p0, v0}, Ljava/util/concurrent/atomic/AtomicReference;->set(Ljava/lang/Object;)V
 
-    .line 1403
+    .line 1464
     invoke-static {}, Landroidx/compose/runtime/Recomposer;->access$get_runningRecomposers$cp()Lkotlinx/coroutines/flow/MutableStateFlow;
 
     move-result-object p0
@@ -364,7 +364,7 @@
 
     check-cast p0, Ljava/lang/Iterable;
 
-    .line 1525
+    .line 1587
     invoke-interface {p0}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
 
     move-result-object p0
@@ -382,7 +382,7 @@
 
     check-cast v0, Landroidx/compose/runtime/Recomposer$RecomposerInfoImpl;
 
-    .line 1404
+    .line 1465
     invoke-virtual {v0}, Landroidx/compose/runtime/Recomposer$RecomposerInfoImpl;->getCurrentError()Landroidx/compose/runtime/RecomposerErrorInfo;
 
     move-result-object v1
@@ -397,14 +397,14 @@
 
     goto :goto_0
 
-    .line 1408
+    .line 1469
     :cond_0
     invoke-virtual {v0}, Landroidx/compose/runtime/Recomposer$RecomposerInfoImpl;->resetErrorState()Landroidx/compose/runtime/Recomposer$RecomposerErrorState;
 
-    .line 1410
+    .line 1471
     invoke-virtual {v0, p1}, Landroidx/compose/runtime/Recomposer$RecomposerInfoImpl;->invalidateGroupsWithKey(I)V
 
-    .line 1412
+    .line 1473
     invoke-virtual {v0}, Landroidx/compose/runtime/Recomposer$RecomposerInfoImpl;->retryFailedCompositions()V
 
     goto :goto_0
@@ -416,11 +416,7 @@
 .method public final loadStateAndComposeForHotReload$runtime_release(Ljava/lang/Object;)V
     .locals 3
 
-    const-string/jumbo p0, "token"
-
-    invoke-static {p1, p0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 1385
+    .line 1446
     invoke-static {}, Landroidx/compose/runtime/Recomposer;->access$get_hotReloadEnabled$cp()Ljava/util/concurrent/atomic/AtomicReference;
 
     move-result-object p0
@@ -433,7 +429,7 @@
 
     invoke-virtual {p0, v0}, Ljava/util/concurrent/atomic/AtomicReference;->set(Ljava/lang/Object;)V
 
-    .line 1387
+    .line 1448
     invoke-static {}, Landroidx/compose/runtime/Recomposer;->access$get_runningRecomposers$cp()Lkotlinx/coroutines/flow/MutableStateFlow;
 
     move-result-object p0
@@ -444,7 +440,7 @@
 
     check-cast p0, Ljava/lang/Iterable;
 
-    .line 1509
+    .line 1571
     invoke-interface {p0}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
 
     move-result-object p0
@@ -462,16 +458,20 @@
 
     check-cast v0, Landroidx/compose/runtime/Recomposer$RecomposerInfoImpl;
 
-    .line 1388
+    .line 1449
     invoke-virtual {v0}, Landroidx/compose/runtime/Recomposer$RecomposerInfoImpl;->resetErrorState()Landroidx/compose/runtime/Recomposer$RecomposerErrorState;
 
     goto :goto_0
 
-    .line 1392
+    .line 1453
     :cond_0
+    const-string p0, "null cannot be cast to non-null type kotlin.collections.List<androidx.compose.runtime.Recomposer.HotReloadable>"
+
+    invoke-static {p1, p0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;Ljava/lang/String;)V
+
     check-cast p1, Ljava/util/List;
 
-    .line 1512
+    .line 1574
     invoke-interface {p1}, Ljava/util/List;->size()I
 
     move-result p0
@@ -483,22 +483,22 @@
     :goto_1
     if-ge v1, p0, :cond_1
 
-    .line 1513
+    .line 1575
     invoke-interface {p1, v1}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
     move-result-object v2
 
-    .line 1514
+    .line 1576
     check-cast v2, Landroidx/compose/runtime/Recomposer$HotReloadable;
 
-    .line 1393
+    .line 1454
     invoke-virtual {v2}, Landroidx/compose/runtime/Recomposer$HotReloadable;->resetContent()V
 
     add-int/lit8 v1, v1, 0x1
 
     goto :goto_1
 
-    .line 1518
+    .line 1580
     :cond_1
     invoke-interface {p1}, Ljava/util/List;->size()I
 
@@ -507,22 +507,22 @@
     :goto_2
     if-ge v0, p0, :cond_2
 
-    .line 1519
+    .line 1581
     invoke-interface {p1, v0}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
     move-result-object v1
 
-    .line 1520
+    .line 1582
     check-cast v1, Landroidx/compose/runtime/Recomposer$HotReloadable;
 
-    .line 1394
+    .line 1455
     invoke-virtual {v1}, Landroidx/compose/runtime/Recomposer$HotReloadable;->recompose()V
 
     add-int/lit8 v0, v0, 0x1
 
     goto :goto_2
 
-    .line 1396
+    .line 1457
     :cond_2
     invoke-static {}, Landroidx/compose/runtime/Recomposer;->access$get_runningRecomposers$cp()Lkotlinx/coroutines/flow/MutableStateFlow;
 
@@ -534,7 +534,7 @@
 
     check-cast p0, Ljava/lang/Iterable;
 
-    .line 1523
+    .line 1585
     invoke-interface {p0}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
 
     move-result-object p0
@@ -552,7 +552,7 @@
 
     check-cast p1, Landroidx/compose/runtime/Recomposer$RecomposerInfoImpl;
 
-    .line 1397
+    .line 1458
     invoke-virtual {p1}, Landroidx/compose/runtime/Recomposer$RecomposerInfoImpl;->retryFailedCompositions()V
 
     goto :goto_3
@@ -564,7 +564,7 @@
 .method public final saveStateAndDisposeForHotReload$runtime_release()Ljava/lang/Object;
     .locals 2
 
-    .line 1378
+    .line 1439
     invoke-static {}, Landroidx/compose/runtime/Recomposer;->access$get_hotReloadEnabled$cp()Ljava/util/concurrent/atomic/AtomicReference;
 
     move-result-object p0
@@ -577,7 +577,7 @@
 
     invoke-virtual {p0, v0}, Ljava/util/concurrent/atomic/AtomicReference;->set(Ljava/lang/Object;)V
 
-    .line 1379
+    .line 1440
     invoke-static {}, Landroidx/compose/runtime/Recomposer;->access$get_runningRecomposers$cp()Lkotlinx/coroutines/flow/MutableStateFlow;
 
     move-result-object p0
@@ -588,14 +588,14 @@
 
     check-cast p0, Ljava/lang/Iterable;
 
-    .line 1503
+    .line 1565
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
     check-cast v0, Ljava/util/Collection;
 
-    .line 1504
+    .line 1566
     invoke-interface {p0}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
 
     move-result-object p0
@@ -611,23 +611,23 @@
 
     move-result-object v1
 
-    .line 1505
+    .line 1567
     check-cast v1, Landroidx/compose/runtime/Recomposer$RecomposerInfoImpl;
 
-    .line 1379
+    .line 1440
     invoke-virtual {v1}, Landroidx/compose/runtime/Recomposer$RecomposerInfoImpl;->saveStateAndDisposeForHotReload()Ljava/util/List;
 
     move-result-object v1
 
-    .line 1505
+    .line 1567
     check-cast v1, Ljava/lang/Iterable;
 
-    .line 1506
+    .line 1568
     invoke-static {v0, v1}, Lkotlin/collections/CollectionsKt;->addAll(Ljava/util/Collection;Ljava/lang/Iterable;)Z
 
     goto :goto_0
 
-    .line 1508
+    .line 1570
     :cond_0
     check-cast v0, Ljava/util/List;
 
@@ -637,7 +637,7 @@
 .method public final setHotReloadEnabled$runtime_release(Z)V
     .locals 0
 
-    .line 1356
+    .line 1417
     invoke-static {}, Landroidx/compose/runtime/Recomposer;->access$get_hotReloadEnabled$cp()Ljava/util/concurrent/atomic/AtomicReference;
 
     move-result-object p0

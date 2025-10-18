@@ -76,7 +76,7 @@
 .method public final invoke()Landroidx/compose/material/Typography;
     .locals 18
 
-    .line 306
+    .line 326
     new-instance v17, Landroidx/compose/material/Typography;
 
     move-object/from16 v0, v17
@@ -121,7 +121,7 @@
 .method public bridge synthetic invoke()Ljava/lang/Object;
     .locals 0
 
-    .line 306
+    .line 326
     invoke-virtual {p0}, Landroidx/compose/material/TypographyKt$LocalTypography$1;->invoke()Landroidx/compose/material/Typography;
 
     move-result-object p0

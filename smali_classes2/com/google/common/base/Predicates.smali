@@ -190,7 +190,7 @@
 .end method
 
 .method private static asList(Lcom/google/common/base/Predicate;Lcom/google/common/base/Predicate;)Ljava/util/List;
-    .locals 0
+    .locals 2
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<T:",
@@ -206,12 +206,20 @@
         }
     .end annotation
 
+    const/4 v0, 0x2
+
     .line 689
-    filled-new-array {p0, p1}, [Lcom/google/common/base/Predicate;
+    new-array v0, v0, [Lcom/google/common/base/Predicate;
 
-    move-result-object p0
+    const/4 v1, 0x0
 
-    invoke-static {p0}, Ljava/util/Arrays;->asList([Ljava/lang/Object;)Ljava/util/List;
+    aput-object p0, v0, v1
+
+    const/4 p0, 0x1
+
+    aput-object p1, v0, p0
+
+    invoke-static {v0}, Ljava/util/Arrays;->asList([Ljava/lang/Object;)Ljava/util/List;
 
     move-result-object p0
 

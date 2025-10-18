@@ -40,7 +40,7 @@
 .method private static synthetic $values()[Ljp/co/sony/mc/camera/device/CameraParameterConverter$ProductShowcaseMode;
     .locals 2
 
-    .line 800
+    .line 851
     sget-object v0, Ljp/co/sony/mc/camera/device/CameraParameterConverter$ProductShowcaseMode;->ON:Ljp/co/sony/mc/camera/device/CameraParameterConverter$ProductShowcaseMode;
 
     sget-object v1, Ljp/co/sony/mc/camera/device/CameraParameterConverter$ProductShowcaseMode;->OFF:Ljp/co/sony/mc/camera/device/CameraParameterConverter$ProductShowcaseMode;
@@ -55,7 +55,7 @@
 .method static constructor <clinit>()V
     .locals 5
 
-    .line 801
+    .line 852
     new-instance v0, Ljp/co/sony/mc/camera/device/CameraParameterConverter$ProductShowcaseMode;
 
     const-string v1, "ON"
@@ -70,7 +70,7 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/device/CameraParameterConverter$ProductShowcaseMode;->ON:Ljp/co/sony/mc/camera/device/CameraParameterConverter$ProductShowcaseMode;
 
-    .line 803
+    .line 854
     new-instance v0, Ljp/co/sony/mc/camera/device/CameraParameterConverter$ProductShowcaseMode;
 
     const-string v1, "OFF"
@@ -81,7 +81,7 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/device/CameraParameterConverter$ProductShowcaseMode;->OFF:Ljp/co/sony/mc/camera/device/CameraParameterConverter$ProductShowcaseMode;
 
-    .line 800
+    .line 851
     invoke-static {}, Ljp/co/sony/mc/camera/device/CameraParameterConverter$ProductShowcaseMode;->$values()[Ljp/co/sony/mc/camera/device/CameraParameterConverter$ProductShowcaseMode;
 
     move-result-object v0
@@ -101,13 +101,13 @@
         }
     .end annotation
 
-    .line 809
+    .line 860
     invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
-    .line 810
+    .line 861
     iput-object p3, p0, Ljp/co/sony/mc/camera/device/CameraParameterConverter$ProductShowcaseMode;->mApi1Value:Ljava/lang/String;
 
-    .line 811
+    .line 862
     iput p4, p0, Ljp/co/sony/mc/camera/device/CameraParameterConverter$ProductShowcaseMode;->mApi2Value:I
 
     return-void
@@ -116,7 +116,7 @@
 .method static getApi2Value(Ljava/lang/String;)I
     .locals 6
 
-    .line 815
+    .line 866
     invoke-static {}, Ljp/co/sony/mc/camera/device/CameraParameterConverter$ProductShowcaseMode;->values()[Ljp/co/sony/mc/camera/device/CameraParameterConverter$ProductShowcaseMode;
 
     move-result-object v0
@@ -132,7 +132,7 @@
 
     aget-object v4, v0, v3
 
-    .line 816
+    .line 867
     iget-object v5, v4, Ljp/co/sony/mc/camera/device/CameraParameterConverter$ProductShowcaseMode;->mApi1Value:Ljava/lang/String;
 
     invoke-virtual {v5, p0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
@@ -141,7 +141,7 @@
 
     if-eqz v5, :cond_0
 
-    .line 817
+    .line 868
     iget p0, v4, Ljp/co/sony/mc/camera/device/CameraParameterConverter$ProductShowcaseMode;->mApi2Value:I
 
     return p0
@@ -158,7 +158,7 @@
 .method public static valueOf(Ljava/lang/String;)Ljp/co/sony/mc/camera/device/CameraParameterConverter$ProductShowcaseMode;
     .locals 1
 
-    .line 800
+    .line 851
     const-class v0, Ljp/co/sony/mc/camera/device/CameraParameterConverter$ProductShowcaseMode;
 
     invoke-static {v0, p0}, Ljava/lang/Enum;->valueOf(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
@@ -173,7 +173,7 @@
 .method public static values()[Ljp/co/sony/mc/camera/device/CameraParameterConverter$ProductShowcaseMode;
     .locals 1
 
-    .line 800
+    .line 851
     sget-object v0, Ljp/co/sony/mc/camera/device/CameraParameterConverter$ProductShowcaseMode;->$VALUES:[Ljp/co/sony/mc/camera/device/CameraParameterConverter$ProductShowcaseMode;
 
     invoke-virtual {v0}, [Ljp/co/sony/mc/camera/device/CameraParameterConverter$ProductShowcaseMode;->clone()Ljava/lang/Object;

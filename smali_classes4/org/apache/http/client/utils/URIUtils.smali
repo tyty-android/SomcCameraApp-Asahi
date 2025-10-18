@@ -327,9 +327,6 @@
 
     return-object v2
 
-    :catch_1
-    return-object v0
-
     .line 455
     :cond_4
     new-instance v0, Lorg/apache/http/HttpHost;
@@ -348,6 +345,7 @@
 
     invoke-direct {v0, v1, v2, p0}, Lorg/apache/http/HttpHost;-><init>(Ljava/lang/String;ILjava/lang/String;)V
 
+    :catch_1
     :cond_5
     return-object v0
 .end method
@@ -831,7 +829,7 @@
 .end method
 
 .method public static rewriteURI(Ljava/net/URI;)Ljava/net/URI;
-    .locals 3
+    .locals 4
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/net/URISyntaxException;
@@ -882,12 +880,16 @@
 
     if-eqz p0, :cond_2
 
+    const/4 p0, 0x1
+
     .line 270
-    const-string p0, ""
+    new-array p0, p0, [Ljava/lang/String;
 
-    filled-new-array {p0}, [Ljava/lang/String;
+    const/4 v2, 0x0
 
-    move-result-object p0
+    const-string v3, ""
+
+    aput-object v3, p0, v2
 
     invoke-virtual {v0, p0}, Lorg/apache/http/client/utils/URIBuilder;->setPathSegments([Ljava/lang/String;)Lorg/apache/http/client/utils/URIBuilder;
 
@@ -1137,12 +1139,16 @@
 
     if-eqz p0, :cond_6
 
+    const/4 p0, 0x1
+
     .line 233
-    const-string p0, ""
+    new-array p0, p0, [Ljava/lang/String;
 
-    filled-new-array {p0}, [Ljava/lang/String;
+    const/4 p1, 0x0
 
-    move-result-object p0
+    const-string p2, ""
+
+    aput-object p2, p0, p1
 
     invoke-virtual {v0, p0}, Lorg/apache/http/client/utils/URIBuilder;->setPathSegments([Ljava/lang/String;)Lorg/apache/http/client/utils/URIBuilder;
 

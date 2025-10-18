@@ -3,8 +3,8 @@
 .source "FragmentCommonOperationCaptureButtonBindingImpl.java"
 
 # interfaces
-.implements Ljp/co/sony/mc/camera/generated/callback/OnClickListener$Listener;
 .implements Ljp/co/sony/mc/camera/generated/callback/OnReleaseListener$Listener;
+.implements Ljp/co/sony/mc/camera/generated/callback/OnClickListener$Listener;
 .implements Ljp/co/sony/mc/camera/generated/callback/OnPressListener$Listener;
 
 
@@ -15,27 +15,27 @@
 
 
 # instance fields
-.field private final mCallback39:Landroid/view/View$OnClickListener;
+.field private final mCallback10:Ljp/co/sony/mc/camera/view/widget/PushImageButton$OnPressListener;
 
-.field private final mCallback40:Landroid/view/View$OnClickListener;
+.field private final mCallback11:Ljp/co/sony/mc/camera/view/widget/PushImageButton$OnReleaseListener;
 
-.field private final mCallback41:Ljp/co/sony/mc/camera/view/widget/PushImageButton$OnPressListener;
+.field private final mCallback12:Landroid/view/View$OnClickListener;
 
-.field private final mCallback42:Ljp/co/sony/mc/camera/view/widget/PushImageButton$OnReleaseListener;
+.field private final mCallback13:Landroid/view/View$OnClickListener;
 
-.field private final mCallback43:Landroid/view/View$OnClickListener;
+.field private final mCallback14:Ljp/co/sony/mc/camera/view/widget/PushImageButton$OnPressListener;
 
-.field private final mCallback44:Landroid/view/View$OnClickListener;
+.field private final mCallback15:Ljp/co/sony/mc/camera/view/widget/PushImageButton$OnReleaseListener;
 
-.field private final mCallback45:Ljp/co/sony/mc/camera/view/widget/PushImageButton$OnPressListener;
+.field private final mCallback16:Landroid/view/View$OnClickListener;
 
-.field private final mCallback46:Ljp/co/sony/mc/camera/view/widget/PushImageButton$OnReleaseListener;
+.field private final mCallback17:Ljp/co/sony/mc/camera/view/widget/PushImageButton$OnPressListener;
 
-.field private final mCallback47:Landroid/view/View$OnClickListener;
+.field private final mCallback18:Ljp/co/sony/mc/camera/view/widget/PushImageButton$OnReleaseListener;
 
-.field private final mCallback48:Ljp/co/sony/mc/camera/view/widget/PushImageButton$OnPressListener;
+.field private final mCallback8:Landroid/view/View$OnClickListener;
 
-.field private final mCallback49:Ljp/co/sony/mc/camera/view/widget/PushImageButton$OnReleaseListener;
+.field private final mCallback9:Landroid/view/View$OnClickListener;
 
 .field private mDirtyFlags:J
 
@@ -140,15 +140,13 @@
 
     move/from16 v3, v17
 
-    move v12, v10
-
     move-object/from16 v10, v16
 
     invoke-direct/range {v0 .. v10}, Ljp/co/sony/mc/camera/databinding/FragmentCommonOperationCaptureButtonBinding;-><init>(Ljava/lang/Object;Landroid/view/View;ILandroidx/constraintlayout/widget/ConstraintLayout;Ljp/co/sony/mc/camera/view/widget/PushImageButton;Ljp/co/sony/mc/camera/view/widget/PushImageButton;Ljp/co/sony/mc/camera/view/widget/CaptureButton;Landroid/widget/ImageView;Ljp/co/sony/mc/camera/view/widget/CaptureButton;Ljp/co/sony/mc/camera/view/widget/PushImageButton;)V
 
     const-wide/16 v0, -0x1
 
-    .line 818
+    .line 806
     iput-wide v0, v11, Ljp/co/sony/mc/camera/databinding/FragmentCommonOperationCaptureButtonBindingImpl;->mDirtyFlags:J
 
     .line 59
@@ -194,95 +192,95 @@
     invoke-virtual {v11, v0}, Ljp/co/sony/mc/camera/databinding/FragmentCommonOperationCaptureButtonBindingImpl;->setRootTag(Landroid/view/View;)V
 
     .line 68
-    new-instance v0, Ljp/co/sony/mc/camera/generated/callback/OnClickListener;
-
-    invoke-direct {v0, v11, v12}, Ljp/co/sony/mc/camera/generated/callback/OnClickListener;-><init>(Ljp/co/sony/mc/camera/generated/callback/OnClickListener$Listener;I)V
-
-    iput-object v0, v11, Ljp/co/sony/mc/camera/databinding/FragmentCommonOperationCaptureButtonBindingImpl;->mCallback39:Landroid/view/View$OnClickListener;
-
-    .line 69
-    new-instance v0, Ljp/co/sony/mc/camera/generated/callback/OnClickListener;
-
-    const/16 v1, 0x9
-
-    invoke-direct {v0, v11, v1}, Ljp/co/sony/mc/camera/generated/callback/OnClickListener;-><init>(Ljp/co/sony/mc/camera/generated/callback/OnClickListener$Listener;I)V
-
-    iput-object v0, v11, Ljp/co/sony/mc/camera/databinding/FragmentCommonOperationCaptureButtonBindingImpl;->mCallback47:Landroid/view/View$OnClickListener;
-
-    .line 70
-    new-instance v0, Ljp/co/sony/mc/camera/generated/callback/OnClickListener;
-
-    invoke-direct {v0, v11, v13}, Ljp/co/sony/mc/camera/generated/callback/OnClickListener;-><init>(Ljp/co/sony/mc/camera/generated/callback/OnClickListener$Listener;I)V
-
-    iput-object v0, v11, Ljp/co/sony/mc/camera/databinding/FragmentCommonOperationCaptureButtonBindingImpl;->mCallback43:Landroid/view/View$OnClickListener;
-
-    .line 71
-    new-instance v0, Ljp/co/sony/mc/camera/generated/callback/OnReleaseListener;
-
-    invoke-direct {v0, v11, v15}, Ljp/co/sony/mc/camera/generated/callback/OnReleaseListener;-><init>(Ljp/co/sony/mc/camera/generated/callback/OnReleaseListener$Listener;I)V
-
-    iput-object v0, v11, Ljp/co/sony/mc/camera/databinding/FragmentCommonOperationCaptureButtonBindingImpl;->mCallback42:Ljp/co/sony/mc/camera/view/widget/PushImageButton$OnReleaseListener;
-
-    .line 72
-    new-instance v0, Ljp/co/sony/mc/camera/generated/callback/OnPressListener;
-
-    const/16 v1, 0xa
-
-    invoke-direct {v0, v11, v1}, Ljp/co/sony/mc/camera/generated/callback/OnPressListener;-><init>(Ljp/co/sony/mc/camera/generated/callback/OnPressListener$Listener;I)V
-
-    iput-object v0, v11, Ljp/co/sony/mc/camera/databinding/FragmentCommonOperationCaptureButtonBindingImpl;->mCallback48:Ljp/co/sony/mc/camera/view/widget/PushImageButton$OnPressListener;
-
-    .line 73
-    new-instance v0, Ljp/co/sony/mc/camera/generated/callback/OnClickListener;
-
-    invoke-direct {v0, v11, v14}, Ljp/co/sony/mc/camera/generated/callback/OnClickListener;-><init>(Ljp/co/sony/mc/camera/generated/callback/OnClickListener$Listener;I)V
-
-    iput-object v0, v11, Ljp/co/sony/mc/camera/databinding/FragmentCommonOperationCaptureButtonBindingImpl;->mCallback44:Landroid/view/View$OnClickListener;
-
-    .line 74
-    new-instance v0, Ljp/co/sony/mc/camera/generated/callback/OnReleaseListener;
-
-    const/16 v1, 0xb
-
-    invoke-direct {v0, v11, v1}, Ljp/co/sony/mc/camera/generated/callback/OnReleaseListener;-><init>(Ljp/co/sony/mc/camera/generated/callback/OnReleaseListener$Listener;I)V
-
-    iput-object v0, v11, Ljp/co/sony/mc/camera/databinding/FragmentCommonOperationCaptureButtonBindingImpl;->mCallback49:Ljp/co/sony/mc/camera/view/widget/PushImageButton$OnReleaseListener;
-
-    .line 75
-    new-instance v0, Ljp/co/sony/mc/camera/generated/callback/OnPressListener;
-
-    const/4 v1, 0x7
-
-    invoke-direct {v0, v11, v1}, Ljp/co/sony/mc/camera/generated/callback/OnPressListener;-><init>(Ljp/co/sony/mc/camera/generated/callback/OnPressListener$Listener;I)V
-
-    iput-object v0, v11, Ljp/co/sony/mc/camera/databinding/FragmentCommonOperationCaptureButtonBindingImpl;->mCallback45:Ljp/co/sony/mc/camera/view/widget/PushImageButton$OnPressListener;
-
-    .line 76
-    new-instance v0, Ljp/co/sony/mc/camera/generated/callback/OnClickListener;
-
-    const/4 v1, 0x2
-
-    invoke-direct {v0, v11, v1}, Ljp/co/sony/mc/camera/generated/callback/OnClickListener;-><init>(Ljp/co/sony/mc/camera/generated/callback/OnClickListener$Listener;I)V
-
-    iput-object v0, v11, Ljp/co/sony/mc/camera/databinding/FragmentCommonOperationCaptureButtonBindingImpl;->mCallback40:Landroid/view/View$OnClickListener;
-
-    .line 77
     new-instance v0, Ljp/co/sony/mc/camera/generated/callback/OnReleaseListener;
 
     const/16 v1, 0x8
 
     invoke-direct {v0, v11, v1}, Ljp/co/sony/mc/camera/generated/callback/OnReleaseListener;-><init>(Ljp/co/sony/mc/camera/generated/callback/OnReleaseListener$Listener;I)V
 
-    iput-object v0, v11, Ljp/co/sony/mc/camera/databinding/FragmentCommonOperationCaptureButtonBindingImpl;->mCallback46:Ljp/co/sony/mc/camera/view/widget/PushImageButton$OnReleaseListener;
+    iput-object v0, v11, Ljp/co/sony/mc/camera/databinding/FragmentCommonOperationCaptureButtonBindingImpl;->mCallback15:Ljp/co/sony/mc/camera/view/widget/PushImageButton$OnReleaseListener;
 
-    .line 78
+    .line 69
+    new-instance v0, Ljp/co/sony/mc/camera/generated/callback/OnReleaseListener;
+
+    invoke-direct {v0, v11, v15}, Ljp/co/sony/mc/camera/generated/callback/OnReleaseListener;-><init>(Ljp/co/sony/mc/camera/generated/callback/OnReleaseListener$Listener;I)V
+
+    iput-object v0, v11, Ljp/co/sony/mc/camera/databinding/FragmentCommonOperationCaptureButtonBindingImpl;->mCallback11:Ljp/co/sony/mc/camera/view/widget/PushImageButton$OnReleaseListener;
+
+    .line 70
+    new-instance v0, Ljp/co/sony/mc/camera/generated/callback/OnClickListener;
+
+    const/16 v1, 0x9
+
+    invoke-direct {v0, v11, v1}, Ljp/co/sony/mc/camera/generated/callback/OnClickListener;-><init>(Ljp/co/sony/mc/camera/generated/callback/OnClickListener$Listener;I)V
+
+    iput-object v0, v11, Ljp/co/sony/mc/camera/databinding/FragmentCommonOperationCaptureButtonBindingImpl;->mCallback16:Landroid/view/View$OnClickListener;
+
+    .line 71
+    new-instance v0, Ljp/co/sony/mc/camera/generated/callback/OnClickListener;
+
+    invoke-direct {v0, v11, v13}, Ljp/co/sony/mc/camera/generated/callback/OnClickListener;-><init>(Ljp/co/sony/mc/camera/generated/callback/OnClickListener$Listener;I)V
+
+    iput-object v0, v11, Ljp/co/sony/mc/camera/databinding/FragmentCommonOperationCaptureButtonBindingImpl;->mCallback12:Landroid/view/View$OnClickListener;
+
+    .line 72
+    new-instance v0, Ljp/co/sony/mc/camera/generated/callback/OnClickListener;
+
+    invoke-direct {v0, v11, v12}, Ljp/co/sony/mc/camera/generated/callback/OnClickListener;-><init>(Ljp/co/sony/mc/camera/generated/callback/OnClickListener$Listener;I)V
+
+    iput-object v0, v11, Ljp/co/sony/mc/camera/databinding/FragmentCommonOperationCaptureButtonBindingImpl;->mCallback9:Landroid/view/View$OnClickListener;
+
+    .line 73
+    new-instance v0, Ljp/co/sony/mc/camera/generated/callback/OnPressListener;
+
+    const/16 v1, 0xa
+
+    invoke-direct {v0, v11, v1}, Ljp/co/sony/mc/camera/generated/callback/OnPressListener;-><init>(Ljp/co/sony/mc/camera/generated/callback/OnPressListener$Listener;I)V
+
+    iput-object v0, v11, Ljp/co/sony/mc/camera/databinding/FragmentCommonOperationCaptureButtonBindingImpl;->mCallback17:Ljp/co/sony/mc/camera/view/widget/PushImageButton$OnPressListener;
+
+    .line 74
+    new-instance v0, Ljp/co/sony/mc/camera/generated/callback/OnClickListener;
+
+    invoke-direct {v0, v11, v14}, Ljp/co/sony/mc/camera/generated/callback/OnClickListener;-><init>(Ljp/co/sony/mc/camera/generated/callback/OnClickListener$Listener;I)V
+
+    iput-object v0, v11, Ljp/co/sony/mc/camera/databinding/FragmentCommonOperationCaptureButtonBindingImpl;->mCallback13:Landroid/view/View$OnClickListener;
+
+    .line 75
+    new-instance v0, Ljp/co/sony/mc/camera/generated/callback/OnClickListener;
+
+    const/4 v1, 0x1
+
+    invoke-direct {v0, v11, v1}, Ljp/co/sony/mc/camera/generated/callback/OnClickListener;-><init>(Ljp/co/sony/mc/camera/generated/callback/OnClickListener$Listener;I)V
+
+    iput-object v0, v11, Ljp/co/sony/mc/camera/databinding/FragmentCommonOperationCaptureButtonBindingImpl;->mCallback8:Landroid/view/View$OnClickListener;
+
+    .line 76
+    new-instance v0, Ljp/co/sony/mc/camera/generated/callback/OnPressListener;
+
+    const/4 v1, 0x7
+
+    invoke-direct {v0, v11, v1}, Ljp/co/sony/mc/camera/generated/callback/OnPressListener;-><init>(Ljp/co/sony/mc/camera/generated/callback/OnPressListener$Listener;I)V
+
+    iput-object v0, v11, Ljp/co/sony/mc/camera/databinding/FragmentCommonOperationCaptureButtonBindingImpl;->mCallback14:Ljp/co/sony/mc/camera/view/widget/PushImageButton$OnPressListener;
+
+    .line 77
     new-instance v0, Ljp/co/sony/mc/camera/generated/callback/OnPressListener;
 
     const/4 v1, 0x3
 
     invoke-direct {v0, v11, v1}, Ljp/co/sony/mc/camera/generated/callback/OnPressListener;-><init>(Ljp/co/sony/mc/camera/generated/callback/OnPressListener$Listener;I)V
 
-    iput-object v0, v11, Ljp/co/sony/mc/camera/databinding/FragmentCommonOperationCaptureButtonBindingImpl;->mCallback41:Ljp/co/sony/mc/camera/view/widget/PushImageButton$OnPressListener;
+    iput-object v0, v11, Ljp/co/sony/mc/camera/databinding/FragmentCommonOperationCaptureButtonBindingImpl;->mCallback10:Ljp/co/sony/mc/camera/view/widget/PushImageButton$OnPressListener;
+
+    .line 78
+    new-instance v0, Ljp/co/sony/mc/camera/generated/callback/OnReleaseListener;
+
+    const/16 v1, 0xb
+
+    invoke-direct {v0, v11, v1}, Ljp/co/sony/mc/camera/generated/callback/OnReleaseListener;-><init>(Ljp/co/sony/mc/camera/generated/callback/OnReleaseListener$Listener;I)V
+
+    iput-object v0, v11, Ljp/co/sony/mc/camera/databinding/FragmentCommonOperationCaptureButtonBindingImpl;->mCallback18:Ljp/co/sony/mc/camera/view/widget/PushImageButton$OnReleaseListener;
 
     .line 79
     invoke-virtual/range {p0 .. p0}, Ljp/co/sony/mc/camera/databinding/FragmentCommonOperationCaptureButtonBindingImpl;->invalidateAll()V
@@ -303,10 +301,10 @@
 
     if-nez p2, :cond_0
 
-    .line 230
+    .line 218
     monitor-enter p0
 
-    .line 231
+    .line 219
     :try_start_0
     iget-wide p1, p0, Ljp/co/sony/mc/camera/databinding/FragmentCommonOperationCaptureButtonBindingImpl;->mDirtyFlags:J
 
@@ -316,7 +314,7 @@
 
     iput-wide p1, p0, Ljp/co/sony/mc/camera/databinding/FragmentCommonOperationCaptureButtonBindingImpl;->mDirtyFlags:J
 
-    .line 232
+    .line 220
     monitor-exit p0
 
     const/4 p0, 0x1
@@ -351,10 +349,10 @@
 
     if-nez p2, :cond_0
 
-    .line 266
+    .line 254
     monitor-enter p0
 
-    .line 267
+    .line 255
     :try_start_0
     iget-wide p1, p0, Ljp/co/sony/mc/camera/databinding/FragmentCommonOperationCaptureButtonBindingImpl;->mDirtyFlags:J
 
@@ -364,7 +362,7 @@
 
     iput-wide p1, p0, Ljp/co/sony/mc/camera/databinding/FragmentCommonOperationCaptureButtonBindingImpl;->mDirtyFlags:J
 
-    .line 268
+    .line 256
     monitor-exit p0
 
     const/4 p0, 0x1
@@ -399,10 +397,10 @@
 
     if-nez p2, :cond_0
 
-    .line 203
+    .line 191
     monitor-enter p0
 
-    .line 204
+    .line 192
     :try_start_0
     iget-wide p1, p0, Ljp/co/sony/mc/camera/databinding/FragmentCommonOperationCaptureButtonBindingImpl;->mDirtyFlags:J
 
@@ -412,7 +410,7 @@
 
     iput-wide p1, p0, Ljp/co/sony/mc/camera/databinding/FragmentCommonOperationCaptureButtonBindingImpl;->mDirtyFlags:J
 
-    .line 205
+    .line 193
     monitor-exit p0
 
     const/4 p0, 0x1
@@ -447,10 +445,10 @@
 
     if-nez p2, :cond_0
 
-    .line 257
+    .line 245
     monitor-enter p0
 
-    .line 258
+    .line 246
     :try_start_0
     iget-wide p1, p0, Ljp/co/sony/mc/camera/databinding/FragmentCommonOperationCaptureButtonBindingImpl;->mDirtyFlags:J
 
@@ -460,7 +458,7 @@
 
     iput-wide p1, p0, Ljp/co/sony/mc/camera/databinding/FragmentCommonOperationCaptureButtonBindingImpl;->mDirtyFlags:J
 
-    .line 259
+    .line 247
     monitor-exit p0
 
     const/4 p0, 0x1
@@ -495,10 +493,10 @@
 
     if-nez p2, :cond_0
 
-    .line 239
+    .line 227
     monitor-enter p0
 
-    .line 240
+    .line 228
     :try_start_0
     iget-wide p1, p0, Ljp/co/sony/mc/camera/databinding/FragmentCommonOperationCaptureButtonBindingImpl;->mDirtyFlags:J
 
@@ -508,7 +506,7 @@
 
     iput-wide p1, p0, Ljp/co/sony/mc/camera/databinding/FragmentCommonOperationCaptureButtonBindingImpl;->mDirtyFlags:J
 
-    .line 241
+    .line 229
     monitor-exit p0
 
     const/4 p0, 0x1
@@ -543,10 +541,10 @@
 
     if-nez p2, :cond_0
 
-    .line 221
+    .line 209
     monitor-enter p0
 
-    .line 222
+    .line 210
     :try_start_0
     iget-wide p1, p0, Ljp/co/sony/mc/camera/databinding/FragmentCommonOperationCaptureButtonBindingImpl;->mDirtyFlags:J
 
@@ -556,7 +554,7 @@
 
     iput-wide p1, p0, Ljp/co/sony/mc/camera/databinding/FragmentCommonOperationCaptureButtonBindingImpl;->mDirtyFlags:J
 
-    .line 223
+    .line 211
     monitor-exit p0
 
     const/4 p0, 0x1
@@ -591,10 +589,10 @@
 
     if-nez p2, :cond_0
 
-    .line 248
+    .line 236
     monitor-enter p0
 
-    .line 249
+    .line 237
     :try_start_0
     iget-wide p1, p0, Ljp/co/sony/mc/camera/databinding/FragmentCommonOperationCaptureButtonBindingImpl;->mDirtyFlags:J
 
@@ -604,7 +602,7 @@
 
     iput-wide p1, p0, Ljp/co/sony/mc/camera/databinding/FragmentCommonOperationCaptureButtonBindingImpl;->mDirtyFlags:J
 
-    .line 250
+    .line 238
     monitor-exit p0
 
     const/4 p0, 0x1
@@ -639,10 +637,10 @@
 
     if-nez p2, :cond_0
 
-    .line 212
+    .line 200
     monitor-enter p0
 
-    .line 213
+    .line 201
     :try_start_0
     iget-wide p1, p0, Ljp/co/sony/mc/camera/databinding/FragmentCommonOperationCaptureButtonBindingImpl;->mDirtyFlags:J
 
@@ -652,7 +650,7 @@
 
     iput-wide p1, p0, Ljp/co/sony/mc/camera/databinding/FragmentCommonOperationCaptureButtonBindingImpl;->mDirtyFlags:J
 
-    .line 214
+    .line 202
     monitor-exit p0
 
     const/4 p0, 0x1
@@ -701,57 +699,57 @@
 
     goto :goto_0
 
-    .line 640
+    .line 666
     :cond_0
     iget-object p0, p0, Ljp/co/sony/mc/camera/databinding/FragmentCommonOperationCaptureButtonBindingImpl;->mCaptureControlUiState:Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState;
 
     if-eqz p0, :cond_5
 
-    .line 650
+    .line 676
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState;->execRecording()V
 
     goto :goto_0
 
-    .line 674
+    .line 717
     :cond_1
     iget-object p0, p0, Ljp/co/sony/mc/camera/databinding/FragmentCommonOperationCaptureButtonBindingImpl;->mCaptureControlUiState:Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState;
 
     if-eqz p0, :cond_5
 
-    .line 684
+    .line 727
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState;->execRecording()V
 
     goto :goto_0
 
-    .line 657
+    .line 683
     :cond_2
     iget-object p0, p0, Ljp/co/sony/mc/camera/databinding/FragmentCommonOperationCaptureButtonBindingImpl;->mCaptureControlUiState:Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState;
 
     if-eqz p0, :cond_5
 
-    .line 667
+    .line 693
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState;->onClickSelfTimerButton()V
 
     goto :goto_0
 
-    .line 691
+    .line 700
     :cond_3
     iget-object p0, p0, Ljp/co/sony/mc/camera/databinding/FragmentCommonOperationCaptureButtonBindingImpl;->mCaptureControlUiState:Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState;
 
     if-eqz p0, :cond_5
 
-    .line 701
+    .line 710
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState;->execShortContinuousShooting()V
 
     goto :goto_0
 
-    .line 623
+    .line 734
     :cond_4
     iget-object p0, p0, Ljp/co/sony/mc/camera/databinding/FragmentCommonOperationCaptureButtonBindingImpl;->mCaptureControlUiState:Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState;
 
     if-eqz p0, :cond_5
 
-    .line 633
+    .line 744
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState;->onClickSingleShootingButton()V
 
     :cond_5
@@ -776,35 +774,35 @@
 
     goto :goto_0
 
-    .line 767
+    .line 755
     :cond_0
     iget-object p0, p0, Ljp/co/sony/mc/camera/databinding/FragmentCommonOperationCaptureButtonBindingImpl;->mCaptureControlUiState:Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState;
 
     if-eqz p0, :cond_3
 
-    .line 777
+    .line 765
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState;->holdRecording()V
 
     goto :goto_0
 
-    .line 784
+    .line 772
     :cond_1
     iget-object p0, p0, Ljp/co/sony/mc/camera/databinding/FragmentCommonOperationCaptureButtonBindingImpl;->mCaptureControlUiState:Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState;
 
     if-eqz p0, :cond_3
 
-    .line 794
+    .line 782
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState;->holdRecording()V
 
     goto :goto_0
 
-    .line 801
+    .line 789
     :cond_2
     iget-object p0, p0, Ljp/co/sony/mc/camera/databinding/FragmentCommonOperationCaptureButtonBindingImpl;->mCaptureControlUiState:Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState;
 
     if-eqz p0, :cond_3
 
-    .line 811
+    .line 799
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState;->holdContinuousShooting()V
 
     :cond_3
@@ -829,35 +827,35 @@
 
     goto :goto_0
 
-    .line 729
+    .line 645
     :cond_0
     iget-object p0, p0, Ljp/co/sony/mc/camera/databinding/FragmentCommonOperationCaptureButtonBindingImpl;->mCaptureControlUiState:Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState;
 
     if-eqz p0, :cond_3
 
-    .line 739
+    .line 655
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState;->releaseRecording()V
 
     goto :goto_0
 
-    .line 746
+    .line 611
     :cond_1
     iget-object p0, p0, Ljp/co/sony/mc/camera/databinding/FragmentCommonOperationCaptureButtonBindingImpl;->mCaptureControlUiState:Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState;
 
     if-eqz p0, :cond_3
 
-    .line 756
+    .line 621
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState;->releaseRecording()V
 
     goto :goto_0
 
-    .line 712
+    .line 628
     :cond_2
     iget-object p0, p0, Ljp/co/sony/mc/camera/databinding/FragmentCommonOperationCaptureButtonBindingImpl;->mCaptureControlUiState:Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState;
 
     if-eqz p0, :cond_3
 
-    .line 722
+    .line 638
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState;->releaseContinuousShooting()V
 
     :cond_3
@@ -870,33 +868,33 @@
 
     move-object/from16 v1, p0
 
-    .line 277
+    .line 265
     monitor-enter p0
 
-    .line 278
+    .line 266
     :try_start_0
     iget-wide v2, v1, Ljp/co/sony/mc/camera/databinding/FragmentCommonOperationCaptureButtonBindingImpl;->mDirtyFlags:J
 
     const-wide/16 v4, 0x0
 
-    .line 279
+    .line 267
     iput-wide v4, v1, Ljp/co/sony/mc/camera/databinding/FragmentCommonOperationCaptureButtonBindingImpl;->mDirtyFlags:J
 
-    .line 280
+    .line 268
     monitor-exit p0
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 281
+    .line 269
     iget-object v0, v1, Ljp/co/sony/mc/camera/databinding/FragmentCommonOperationCaptureButtonBindingImpl;->mOrientationViewModel:Ljp/co/sony/mc/camera/view/viewmodel/OrientationViewModel;
 
-    .line 296
+    .line 284
     iget-object v6, v1, Ljp/co/sony/mc/camera/databinding/FragmentCommonOperationCaptureButtonBindingImpl;->mCaptureControlUiState:Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState;
 
-    .line 312
+    .line 300
     iget-object v7, v1, Ljp/co/sony/mc/camera/databinding/FragmentCommonOperationCaptureButtonBindingImpl;->mCameraSettingsModel:Ljp/co/sony/mc/camera/view/viewmodel/CameraSettingsModel;
 
-    const-wide/32 v8, 0x20102
+    const-wide/32 v8, 0x8102
 
     and-long v10, v2, v8
 
@@ -908,7 +906,7 @@
 
     if-eqz v0, :cond_0
 
-    .line 323
+    .line 311
     invoke-virtual {v0}, Ljp/co/sony/mc/camera/view/viewmodel/OrientationViewModel;->getLayoutOrientation()Landroidx/lifecycle/LiveData;
 
     move-result-object v0
@@ -918,13 +916,13 @@
     :cond_0
     const/4 v0, 0x0
 
-    .line 325
+    .line 313
     :goto_0
     invoke-virtual {v1, v11, v0}, Ljp/co/sony/mc/camera/databinding/FragmentCommonOperationCaptureButtonBindingImpl;->updateLiveDataRegistration(ILandroidx/lifecycle/LiveData;)Z
 
     if-eqz v0, :cond_1
 
-    .line 330
+    .line 318
     invoke-virtual {v0}, Landroidx/lifecycle/LiveData;->getValue()Ljava/lang/Object;
 
     move-result-object v0
@@ -937,25 +935,25 @@
     const/4 v0, 0x0
 
     :goto_1
-    const-wide/32 v13, 0x320fd
+    const-wide/32 v13, 0xc4fd
 
     and-long/2addr v13, v2
 
     cmp-long v10, v13, v4
 
-    const-wide/32 v13, 0x22040
+    const-wide/32 v13, 0x8440
 
-    const-wide/32 v15, 0x22020
+    const-wide/32 v15, 0x8420
 
-    const-wide/32 v17, 0x11000000
+    const-wide/32 v17, 0x4400000
 
-    const-wide/32 v19, 0x22001
+    const-wide/32 v19, 0x8401
 
-    const-wide/32 v21, 0x40000
+    const-wide/32 v21, 0x10000
 
-    const-wide/32 v23, 0x32090
+    const-wide/32 v23, 0xc490
 
-    const-wide/32 v25, 0x3200c
+    const-wide/32 v25, 0xc40c
 
     const/4 v11, 0x0
 
@@ -971,7 +969,7 @@
 
     if-eqz v6, :cond_2
 
-    .line 340
+    .line 328
     invoke-virtual {v6}, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState;->getCaptureButtonAlpha()Landroidx/lifecycle/LiveData;
 
     move-result-object v27
@@ -983,13 +981,13 @@
     :cond_2
     const/4 v12, 0x0
 
-    .line 342
+    .line 330
     :goto_2
     invoke-virtual {v1, v11, v12}, Ljp/co/sony/mc/camera/databinding/FragmentCommonOperationCaptureButtonBindingImpl;->updateLiveDataRegistration(ILandroidx/lifecycle/LiveData;)Z
 
     if-eqz v12, :cond_3
 
-    .line 347
+    .line 335
     invoke-virtual {v12}, Landroidx/lifecycle/LiveData;->getValue()Ljava/lang/Object;
 
     move-result-object v12
@@ -1001,7 +999,7 @@
     :cond_3
     const/4 v12, 0x0
 
-    .line 352
+    .line 340
     :goto_3
     invoke-static {v12}, Landroidx/databinding/ViewDataBinding;->safeUnbox(Ljava/lang/Boolean;)Z
 
@@ -1011,12 +1009,12 @@
 
     if-eqz v12, :cond_4
 
-    const-wide/32 v29, 0x800000
+    const-wide/32 v29, 0x200000
 
     goto :goto_4
 
     :cond_4
-    const-wide/32 v29, 0x400000
+    const-wide/32 v29, 0x100000
 
     :goto_4
     or-long v2, v2, v29
@@ -1043,7 +1041,7 @@
 
     if-eqz v6, :cond_8
 
-    .line 370
+    .line 358
     invoke-virtual {v6}, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState;->getSelfTimerButtonState()Landroidx/lifecycle/MutableLiveData;
 
     move-result-object v12
@@ -1056,12 +1054,12 @@
     :goto_6
     const/4 v11, 0x2
 
-    .line 372
+    .line 360
     invoke-virtual {v1, v11, v12}, Ljp/co/sony/mc/camera/databinding/FragmentCommonOperationCaptureButtonBindingImpl;->updateLiveDataRegistration(ILandroidx/lifecycle/LiveData;)Z
 
     if-eqz v12, :cond_9
 
-    .line 377
+    .line 365
     invoke-virtual {v12}, Landroidx/lifecycle/MutableLiveData;->getValue()Ljava/lang/Object;
 
     move-result-object v11
@@ -1073,7 +1071,7 @@
     :cond_9
     const/4 v11, 0x0
 
-    .line 382
+    .line 370
     :goto_7
     instance-of v12, v11, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState$ControlState$Disable;
 
@@ -1081,7 +1079,7 @@
 
     if-eqz v12, :cond_a
 
-    const-wide/32 v30, 0x80000
+    const-wide/32 v30, 0x20000
 
     or-long v2, v2, v30
 
@@ -1107,7 +1105,7 @@
 
     if-eqz v6, :cond_d
 
-    .line 396
+    .line 384
     invoke-virtual {v6}, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState;->getRecordingButtonState()Landroidx/lifecycle/MutableLiveData;
 
     move-result-object v30
@@ -1122,12 +1120,12 @@
     :goto_9
     const/4 v9, 0x4
 
-    .line 398
+    .line 386
     invoke-virtual {v1, v9, v8}, Ljp/co/sony/mc/camera/databinding/FragmentCommonOperationCaptureButtonBindingImpl;->updateLiveDataRegistration(ILandroidx/lifecycle/LiveData;)Z
 
     if-eqz v8, :cond_e
 
-    .line 403
+    .line 391
     invoke-virtual {v8}, Landroidx/lifecycle/MutableLiveData;->getValue()Ljava/lang/Object;
 
     move-result-object v8
@@ -1139,7 +1137,7 @@
     :cond_e
     const/4 v8, 0x0
 
-    .line 408
+    .line 396
     :goto_a
     instance-of v8, v8, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState$ControlState$Disable;
 
@@ -1147,7 +1145,7 @@
 
     if-eqz v8, :cond_f
 
-    const-wide/32 v9, 0x22000000
+    const-wide/32 v9, 0x8800000
 
     or-long/2addr v2, v9
 
@@ -1171,7 +1169,7 @@
 
     if-eqz v6, :cond_12
 
-    .line 424
+    .line 412
     invoke-virtual {v6}, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState;->getSingleShootingButtonState()Landroidx/lifecycle/MutableLiveData;
 
     move-result-object v9
@@ -1184,12 +1182,12 @@
     :goto_c
     const/4 v10, 0x5
 
-    .line 426
+    .line 414
     invoke-virtual {v1, v10, v9}, Ljp/co/sony/mc/camera/databinding/FragmentCommonOperationCaptureButtonBindingImpl;->updateLiveDataRegistration(ILandroidx/lifecycle/LiveData;)Z
 
     if-eqz v9, :cond_13
 
-    .line 431
+    .line 419
     invoke-virtual {v9}, Landroidx/lifecycle/MutableLiveData;->getValue()Ljava/lang/Object;
 
     move-result-object v9
@@ -1201,7 +1199,7 @@
     :cond_13
     const/4 v9, 0x0
 
-    .line 436
+    .line 424
     :goto_d
     instance-of v9, v9, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState$ControlState$Disable;
 
@@ -1219,7 +1217,7 @@
 
     if-eqz v6, :cond_15
 
-    .line 442
+    .line 430
     invoke-virtual {v6}, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState;->getContinuousShootingButtonState()Landroidx/lifecycle/MutableLiveData;
 
     move-result-object v6
@@ -1232,12 +1230,12 @@
     :goto_f
     const/4 v10, 0x6
 
-    .line 444
+    .line 432
     invoke-virtual {v1, v10, v6}, Ljp/co/sony/mc/camera/databinding/FragmentCommonOperationCaptureButtonBindingImpl;->updateLiveDataRegistration(ILandroidx/lifecycle/LiveData;)Z
 
     if-eqz v6, :cond_16
 
-    .line 449
+    .line 437
     invoke-virtual {v6}, Landroidx/lifecycle/MutableLiveData;->getValue()Ljava/lang/Object;
 
     move-result-object v6
@@ -1249,7 +1247,7 @@
     :cond_16
     const/4 v6, 0x0
 
-    .line 454
+    .line 442
     :goto_10
     instance-of v6, v6, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState$ControlState$Disable;
 
@@ -1284,7 +1282,7 @@
 
     if-eqz v21, :cond_19
 
-    .line 462
+    .line 450
     instance-of v15, v11, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState$ControlState$SelfTimer$Counting;
 
     goto :goto_12
@@ -1301,7 +1299,7 @@
 
     if-eqz v7, :cond_1a
 
-    .line 470
+    .line 458
     invoke-virtual {v7}, Ljp/co/sony/mc/camera/view/viewmodel/CameraSettingsModel;->isStreaming()Landroidx/lifecycle/LiveData;
 
     move-result-object v16
@@ -1316,12 +1314,12 @@
     :goto_13
     const/4 v14, 0x7
 
-    .line 472
+    .line 460
     invoke-virtual {v1, v14, v13}, Ljp/co/sony/mc/camera/databinding/FragmentCommonOperationCaptureButtonBindingImpl;->updateLiveDataRegistration(ILandroidx/lifecycle/LiveData;)Z
 
     if-eqz v13, :cond_1b
 
-    .line 477
+    .line 465
     invoke-virtual {v13}, Landroidx/lifecycle/LiveData;->getValue()Ljava/lang/Object;
 
     move-result-object v13
@@ -1333,13 +1331,13 @@
     :cond_1b
     const/4 v13, 0x0
 
-    .line 482
+    .line 470
     :goto_14
     invoke-static {v13}, Landroidx/databinding/ViewDataBinding;->safeUnbox(Ljava/lang/Boolean;)Z
 
     move-result v13
 
-    const-wide/32 v32, 0x1000000
+    const-wide/32 v32, 0x400000
 
     and-long v32, v2, v32
 
@@ -1362,7 +1360,7 @@
 
     cmp-long v18, v32, v4
 
-    const-wide/32 v32, 0x100000
+    const-wide/32 v32, 0x40000
 
     if-eqz v18, :cond_20
 
@@ -1375,7 +1373,7 @@
 
     if-eqz v15, :cond_1f
 
-    const-wide/32 v34, 0x200000
+    const-wide/32 v34, 0x80000
 
     or-long v2, v2, v34
 
@@ -1421,7 +1419,7 @@
 
     if-eqz v8, :cond_25
 
-    .line 516
+    .line 504
     instance-of v8, v11, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState$ControlState$SelfTimer$Capturing;
 
     goto :goto_18
@@ -1434,7 +1432,7 @@
 
     cmp-long v11, v32, v4
 
-    const-wide/32 v32, 0x4000000
+    const-wide/32 v32, 0x1000000
 
     if-eqz v11, :cond_28
 
@@ -1447,7 +1445,7 @@
 
     if-eqz v8, :cond_27
 
-    const-wide/32 v34, 0x8000000
+    const-wide/32 v34, 0x2000000
 
     or-long v2, v2, v34
 
@@ -1471,7 +1469,7 @@
 
     if-eqz v7, :cond_2a
 
-    .line 540
+    .line 528
     invoke-virtual {v7}, Ljp/co/sony/mc/camera/view/viewmodel/CameraSettingsModel;->getCapturingMode()Landroidx/lifecycle/LiveData;
 
     move-result-object v7
@@ -1484,12 +1482,12 @@
     :goto_1a
     const/4 v11, 0x3
 
-    .line 542
+    .line 530
     invoke-virtual {v1, v11, v7}, Ljp/co/sony/mc/camera/databinding/FragmentCommonOperationCaptureButtonBindingImpl;->updateLiveDataRegistration(ILandroidx/lifecycle/LiveData;)Z
 
     if-eqz v7, :cond_2b
 
-    .line 547
+    .line 535
     invoke-virtual {v7}, Landroidx/lifecycle/LiveData;->getValue()Ljava/lang/Object;
 
     move-result-object v7
@@ -1504,7 +1502,7 @@
     :goto_1b
     if-eqz v7, :cond_2c
 
-    .line 553
+    .line 541
     invoke-virtual {v7}, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->isQuickRecord()Z
 
     move-result v7
@@ -1538,13 +1536,13 @@
 
     if-eqz v8, :cond_2f
 
-    .line 566
+    .line 554
     iget-object v8, v1, Ljp/co/sony/mc/camera/databinding/FragmentCommonOperationCaptureButtonBindingImpl;->captureRoot:Landroidx/constraintlayout/widget/ConstraintLayout;
 
     invoke-static {v8, v10}, Ljp/co/sony/mc/camera/view/viewbinder/BindingAdapters;->setAlpha(Landroid/view/View;F)V
 
     :cond_2f
-    const-wide/32 v18, 0x20000
+    const-wide/32 v18, 0x8000
 
     and-long v18, v2, v18
 
@@ -1552,85 +1550,85 @@
 
     if-eqz v8, :cond_30
 
-    .line 571
+    .line 559
     iget-object v8, v1, Ljp/co/sony/mc/camera/databinding/FragmentCommonOperationCaptureButtonBindingImpl;->continuousShooting:Ljp/co/sony/mc/camera/view/widget/PushImageButton;
 
-    iget-object v10, v1, Ljp/co/sony/mc/camera/databinding/FragmentCommonOperationCaptureButtonBindingImpl;->mCallback40:Landroid/view/View$OnClickListener;
+    iget-object v10, v1, Ljp/co/sony/mc/camera/databinding/FragmentCommonOperationCaptureButtonBindingImpl;->mCallback9:Landroid/view/View$OnClickListener;
 
     invoke-virtual {v8, v10}, Ljp/co/sony/mc/camera/view/widget/PushImageButton;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
-    .line 572
+    .line 560
     iget-object v8, v1, Ljp/co/sony/mc/camera/databinding/FragmentCommonOperationCaptureButtonBindingImpl;->continuousShooting:Ljp/co/sony/mc/camera/view/widget/PushImageButton;
 
-    iget-object v10, v1, Ljp/co/sony/mc/camera/databinding/FragmentCommonOperationCaptureButtonBindingImpl;->mCallback41:Ljp/co/sony/mc/camera/view/widget/PushImageButton$OnPressListener;
+    iget-object v10, v1, Ljp/co/sony/mc/camera/databinding/FragmentCommonOperationCaptureButtonBindingImpl;->mCallback10:Ljp/co/sony/mc/camera/view/widget/PushImageButton$OnPressListener;
 
     invoke-static {v8, v10}, Ljp/co/sony/mc/camera/view/viewbinder/BindingAdapters;->setOnPressListener(Ljp/co/sony/mc/camera/view/widget/PushImageButton;Ljp/co/sony/mc/camera/view/widget/PushImageButton$OnPressListener;)V
 
-    .line 573
+    .line 561
     iget-object v8, v1, Ljp/co/sony/mc/camera/databinding/FragmentCommonOperationCaptureButtonBindingImpl;->continuousShooting:Ljp/co/sony/mc/camera/view/widget/PushImageButton;
 
-    iget-object v10, v1, Ljp/co/sony/mc/camera/databinding/FragmentCommonOperationCaptureButtonBindingImpl;->mCallback42:Ljp/co/sony/mc/camera/view/widget/PushImageButton$OnReleaseListener;
+    iget-object v10, v1, Ljp/co/sony/mc/camera/databinding/FragmentCommonOperationCaptureButtonBindingImpl;->mCallback11:Ljp/co/sony/mc/camera/view/widget/PushImageButton$OnReleaseListener;
 
     invoke-static {v8, v10}, Ljp/co/sony/mc/camera/view/viewbinder/BindingAdapters;->setOnReleaseListener(Ljp/co/sony/mc/camera/view/widget/PushImageButton;Ljp/co/sony/mc/camera/view/widget/PushImageButton$OnReleaseListener;)V
 
-    .line 574
+    .line 562
     iget-object v8, v1, Ljp/co/sony/mc/camera/databinding/FragmentCommonOperationCaptureButtonBindingImpl;->recording:Ljp/co/sony/mc/camera/view/widget/PushImageButton;
 
-    iget-object v10, v1, Ljp/co/sony/mc/camera/databinding/FragmentCommonOperationCaptureButtonBindingImpl;->mCallback44:Landroid/view/View$OnClickListener;
+    iget-object v10, v1, Ljp/co/sony/mc/camera/databinding/FragmentCommonOperationCaptureButtonBindingImpl;->mCallback13:Landroid/view/View$OnClickListener;
 
     invoke-virtual {v8, v10}, Ljp/co/sony/mc/camera/view/widget/PushImageButton;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
-    .line 575
+    .line 563
     iget-object v8, v1, Ljp/co/sony/mc/camera/databinding/FragmentCommonOperationCaptureButtonBindingImpl;->recording:Ljp/co/sony/mc/camera/view/widget/PushImageButton;
 
-    iget-object v10, v1, Ljp/co/sony/mc/camera/databinding/FragmentCommonOperationCaptureButtonBindingImpl;->mCallback45:Ljp/co/sony/mc/camera/view/widget/PushImageButton$OnPressListener;
+    iget-object v10, v1, Ljp/co/sony/mc/camera/databinding/FragmentCommonOperationCaptureButtonBindingImpl;->mCallback14:Ljp/co/sony/mc/camera/view/widget/PushImageButton$OnPressListener;
 
     invoke-static {v8, v10}, Ljp/co/sony/mc/camera/view/viewbinder/BindingAdapters;->setOnPressListener(Ljp/co/sony/mc/camera/view/widget/PushImageButton;Ljp/co/sony/mc/camera/view/widget/PushImageButton$OnPressListener;)V
 
-    .line 576
+    .line 564
     iget-object v8, v1, Ljp/co/sony/mc/camera/databinding/FragmentCommonOperationCaptureButtonBindingImpl;->recording:Ljp/co/sony/mc/camera/view/widget/PushImageButton;
 
-    iget-object v10, v1, Ljp/co/sony/mc/camera/databinding/FragmentCommonOperationCaptureButtonBindingImpl;->mCallback46:Ljp/co/sony/mc/camera/view/widget/PushImageButton$OnReleaseListener;
+    iget-object v10, v1, Ljp/co/sony/mc/camera/databinding/FragmentCommonOperationCaptureButtonBindingImpl;->mCallback15:Ljp/co/sony/mc/camera/view/widget/PushImageButton$OnReleaseListener;
 
     invoke-static {v8, v10}, Ljp/co/sony/mc/camera/view/viewbinder/BindingAdapters;->setOnReleaseListener(Ljp/co/sony/mc/camera/view/widget/PushImageButton;Ljp/co/sony/mc/camera/view/widget/PushImageButton$OnReleaseListener;)V
 
-    .line 577
+    .line 565
     iget-object v8, v1, Ljp/co/sony/mc/camera/databinding/FragmentCommonOperationCaptureButtonBindingImpl;->selfTimer:Ljp/co/sony/mc/camera/view/widget/CaptureButton;
 
-    iget-object v10, v1, Ljp/co/sony/mc/camera/databinding/FragmentCommonOperationCaptureButtonBindingImpl;->mCallback43:Landroid/view/View$OnClickListener;
+    iget-object v10, v1, Ljp/co/sony/mc/camera/databinding/FragmentCommonOperationCaptureButtonBindingImpl;->mCallback12:Landroid/view/View$OnClickListener;
 
     invoke-virtual {v8, v10}, Ljp/co/sony/mc/camera/view/widget/CaptureButton;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
-    .line 578
+    .line 566
     iget-object v8, v1, Ljp/co/sony/mc/camera/databinding/FragmentCommonOperationCaptureButtonBindingImpl;->singleShooting:Ljp/co/sony/mc/camera/view/widget/CaptureButton;
 
-    iget-object v10, v1, Ljp/co/sony/mc/camera/databinding/FragmentCommonOperationCaptureButtonBindingImpl;->mCallback39:Landroid/view/View$OnClickListener;
+    iget-object v10, v1, Ljp/co/sony/mc/camera/databinding/FragmentCommonOperationCaptureButtonBindingImpl;->mCallback8:Landroid/view/View$OnClickListener;
 
     invoke-virtual {v8, v10}, Ljp/co/sony/mc/camera/view/widget/CaptureButton;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
-    .line 579
+    .line 567
     iget-object v8, v1, Ljp/co/sony/mc/camera/databinding/FragmentCommonOperationCaptureButtonBindingImpl;->streaming:Ljp/co/sony/mc/camera/view/widget/PushImageButton;
 
-    iget-object v10, v1, Ljp/co/sony/mc/camera/databinding/FragmentCommonOperationCaptureButtonBindingImpl;->mCallback47:Landroid/view/View$OnClickListener;
+    iget-object v10, v1, Ljp/co/sony/mc/camera/databinding/FragmentCommonOperationCaptureButtonBindingImpl;->mCallback16:Landroid/view/View$OnClickListener;
 
     invoke-virtual {v8, v10}, Ljp/co/sony/mc/camera/view/widget/PushImageButton;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
-    .line 580
+    .line 568
     iget-object v8, v1, Ljp/co/sony/mc/camera/databinding/FragmentCommonOperationCaptureButtonBindingImpl;->streaming:Ljp/co/sony/mc/camera/view/widget/PushImageButton;
 
-    iget-object v10, v1, Ljp/co/sony/mc/camera/databinding/FragmentCommonOperationCaptureButtonBindingImpl;->mCallback48:Ljp/co/sony/mc/camera/view/widget/PushImageButton$OnPressListener;
+    iget-object v10, v1, Ljp/co/sony/mc/camera/databinding/FragmentCommonOperationCaptureButtonBindingImpl;->mCallback17:Ljp/co/sony/mc/camera/view/widget/PushImageButton$OnPressListener;
 
     invoke-static {v8, v10}, Ljp/co/sony/mc/camera/view/viewbinder/BindingAdapters;->setOnPressListener(Ljp/co/sony/mc/camera/view/widget/PushImageButton;Ljp/co/sony/mc/camera/view/widget/PushImageButton$OnPressListener;)V
 
-    .line 581
+    .line 569
     iget-object v8, v1, Ljp/co/sony/mc/camera/databinding/FragmentCommonOperationCaptureButtonBindingImpl;->streaming:Ljp/co/sony/mc/camera/view/widget/PushImageButton;
 
-    iget-object v10, v1, Ljp/co/sony/mc/camera/databinding/FragmentCommonOperationCaptureButtonBindingImpl;->mCallback49:Ljp/co/sony/mc/camera/view/widget/PushImageButton$OnReleaseListener;
+    iget-object v10, v1, Ljp/co/sony/mc/camera/databinding/FragmentCommonOperationCaptureButtonBindingImpl;->mCallback18:Ljp/co/sony/mc/camera/view/widget/PushImageButton$OnReleaseListener;
 
     invoke-static {v8, v10}, Ljp/co/sony/mc/camera/view/viewbinder/BindingAdapters;->setOnReleaseListener(Ljp/co/sony/mc/camera/view/widget/PushImageButton;Ljp/co/sony/mc/camera/view/widget/PushImageButton$OnReleaseListener;)V
 
     :cond_30
-    const-wide/32 v15, 0x22040
+    const-wide/32 v15, 0x8440
 
     and-long/2addr v15, v2
 
@@ -1638,7 +1636,7 @@
 
     if-eqz v8, :cond_31
 
-    .line 586
+    .line 574
     iget-object v8, v1, Ljp/co/sony/mc/camera/databinding/FragmentCommonOperationCaptureButtonBindingImpl;->continuousShooting:Ljp/co/sony/mc/camera/view/widget/PushImageButton;
 
     invoke-static {v8, v6}, Ljp/co/sony/mc/camera/view/viewbinder/BindingAdapters;->setGone(Landroid/view/View;Z)V
@@ -1650,18 +1648,18 @@
 
     if-eqz v6, :cond_32
 
-    .line 591
+    .line 579
     iget-object v6, v1, Ljp/co/sony/mc/camera/databinding/FragmentCommonOperationCaptureButtonBindingImpl;->recording:Ljp/co/sony/mc/camera/view/widget/PushImageButton;
 
     invoke-static {v6, v13}, Ljp/co/sony/mc/camera/view/viewbinder/BindingAdapters;->setGone(Landroid/view/View;Z)V
 
-    .line 592
+    .line 580
     iget-object v6, v1, Ljp/co/sony/mc/camera/databinding/FragmentCommonOperationCaptureButtonBindingImpl;->streaming:Ljp/co/sony/mc/camera/view/widget/PushImageButton;
 
     invoke-static {v6, v14}, Ljp/co/sony/mc/camera/view/viewbinder/BindingAdapters;->setGone(Landroid/view/View;Z)V
 
     :cond_32
-    const-wide/32 v13, 0x22004
+    const-wide/32 v13, 0x8404
 
     and-long/2addr v13, v2
 
@@ -1669,13 +1667,13 @@
 
     if-eqz v6, :cond_33
 
-    .line 597
+    .line 585
     iget-object v6, v1, Ljp/co/sony/mc/camera/databinding/FragmentCommonOperationCaptureButtonBindingImpl;->selfTimer:Ljp/co/sony/mc/camera/view/widget/CaptureButton;
 
     invoke-static {v6, v12}, Ljp/co/sony/mc/camera/view/viewbinder/BindingAdapters;->setGone(Landroid/view/View;Z)V
 
     :cond_33
-    const-wide/32 v12, 0x20102
+    const-wide/32 v12, 0x8102
 
     and-long/2addr v12, v2
 
@@ -1683,12 +1681,12 @@
 
     if-eqz v6, :cond_34
 
-    .line 602
+    .line 590
     iget-object v6, v1, Ljp/co/sony/mc/camera/databinding/FragmentCommonOperationCaptureButtonBindingImpl;->selfTimerButtonTime:Landroid/widget/ImageView;
 
     invoke-static {v6, v0}, Ljp/co/sony/mc/camera/view/viewbinder/BindingAdapters;->setOrientation(Landroid/view/View;Ljp/co/sony/mc/camera/view/orientation/LayoutOrientation;)V
 
-    .line 603
+    .line 591
     iget-object v6, v1, Ljp/co/sony/mc/camera/databinding/FragmentCommonOperationCaptureButtonBindingImpl;->streaming:Ljp/co/sony/mc/camera/view/widget/PushImageButton;
 
     invoke-static {v6, v0}, Ljp/co/sony/mc/camera/view/viewbinder/BindingAdapters;->setOrientation(Landroid/view/View;Ljp/co/sony/mc/camera/view/orientation/LayoutOrientation;)V
@@ -1696,13 +1694,13 @@
     :cond_34
     if-eqz v11, :cond_35
 
-    .line 608
+    .line 596
     iget-object v0, v1, Ljp/co/sony/mc/camera/databinding/FragmentCommonOperationCaptureButtonBindingImpl;->selfTimerButtonTime:Landroid/widget/ImageView;
 
     invoke-static {v0, v7}, Ljp/co/sony/mc/camera/view/viewbinder/BindingAdapters;->setGone(Landroid/view/View;Z)V
 
     :cond_35
-    const-wide/32 v6, 0x22020
+    const-wide/32 v6, 0x8420
 
     and-long/2addr v2, v6
 
@@ -1710,7 +1708,7 @@
 
     if-eqz v0, :cond_36
 
-    .line 613
+    .line 601
     iget-object v0, v1, Ljp/co/sony/mc/camera/databinding/FragmentCommonOperationCaptureButtonBindingImpl;->singleShooting:Ljp/co/sony/mc/camera/view/widget/CaptureButton;
 
     invoke-static {v0, v9}, Ljp/co/sony/mc/camera/view/viewbinder/BindingAdapters;->setGone(Landroid/view/View;Z)V
@@ -1721,7 +1719,7 @@
     :catchall_0
     move-exception v0
 
-    .line 280
+    .line 268
     :try_start_1
     monitor-exit p0
     :try_end_1
@@ -1777,7 +1775,7 @@
     .line 84
     monitor-enter p0
 
-    const-wide/32 v0, 0x20000
+    const-wide/32 v0, 0x8000
 
     .line 85
     :try_start_0
@@ -1814,7 +1812,7 @@
 
     return p0
 
-    .line 197
+    .line 185
     :pswitch_0
     check-cast p2, Landroidx/lifecycle/LiveData;
 
@@ -1824,7 +1822,7 @@
 
     return p0
 
-    .line 195
+    .line 183
     :pswitch_1
     check-cast p2, Landroidx/lifecycle/MutableLiveData;
 
@@ -1834,7 +1832,7 @@
 
     return p0
 
-    .line 193
+    .line 181
     :pswitch_2
     check-cast p2, Landroidx/lifecycle/MutableLiveData;
 
@@ -1844,7 +1842,7 @@
 
     return p0
 
-    .line 191
+    .line 179
     :pswitch_3
     check-cast p2, Landroidx/lifecycle/MutableLiveData;
 
@@ -1854,7 +1852,7 @@
 
     return p0
 
-    .line 189
+    .line 177
     :pswitch_4
     check-cast p2, Landroidx/lifecycle/LiveData;
 
@@ -1864,7 +1862,7 @@
 
     return p0
 
-    .line 187
+    .line 175
     :pswitch_5
     check-cast p2, Landroidx/lifecycle/MutableLiveData;
 
@@ -1874,7 +1872,7 @@
 
     return p0
 
-    .line 185
+    .line 173
     :pswitch_6
     check-cast p2, Landroidx/lifecycle/LiveData;
 
@@ -1884,7 +1882,7 @@
 
     return p0
 
-    .line 183
+    .line 171
     :pswitch_7
     check-cast p2, Landroidx/lifecycle/LiveData;
 
@@ -1909,45 +1907,36 @@
     .end packed-switch
 .end method
 
-.method public setBasicModeCommonUiState(Ljp/co/sony/mc/camera/view/uistate/BasicModeCommonUiState;)V
-    .locals 0
-
-    .line 151
-    iput-object p1, p0, Ljp/co/sony/mc/camera/databinding/FragmentCommonOperationCaptureButtonBindingImpl;->mBasicModeCommonUiState:Ljp/co/sony/mc/camera/view/uistate/BasicModeCommonUiState;
-
-    return-void
-.end method
-
 .method public setCameraSettingsModel(Ljp/co/sony/mc/camera/view/viewmodel/CameraSettingsModel;)V
     .locals 4
 
-    .line 171
+    .line 159
     iput-object p1, p0, Ljp/co/sony/mc/camera/databinding/FragmentCommonOperationCaptureButtonBindingImpl;->mCameraSettingsModel:Ljp/co/sony/mc/camera/view/viewmodel/CameraSettingsModel;
 
-    .line 172
+    .line 160
     monitor-enter p0
 
-    .line 173
+    .line 161
     :try_start_0
     iget-wide v0, p0, Ljp/co/sony/mc/camera/databinding/FragmentCommonOperationCaptureButtonBindingImpl;->mDirtyFlags:J
 
-    const-wide/32 v2, 0x10000
+    const-wide/16 v2, 0x4000
 
     or-long/2addr v0, v2
 
     iput-wide v0, p0, Ljp/co/sony/mc/camera/databinding/FragmentCommonOperationCaptureButtonBindingImpl;->mDirtyFlags:J
 
-    .line 174
+    .line 162
     monitor-exit p0
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    const/4 p1, 0x7
+    const/16 p1, 0x8
 
-    .line 175
+    .line 163
     invoke-virtual {p0, p1}, Ljp/co/sony/mc/camera/databinding/FragmentCommonOperationCaptureButtonBindingImpl;->notifyPropertyChanged(I)V
 
-    .line 176
+    .line 164
     invoke-super {p0}, Ljp/co/sony/mc/camera/databinding/FragmentCommonOperationCaptureButtonBinding;->requestRebind()V
 
     return-void
@@ -1955,7 +1944,7 @@
     :catchall_0
     move-exception p1
 
-    .line 174
+    .line 162
     :try_start_1
     monitor-exit p0
     :try_end_1
@@ -1967,7 +1956,7 @@
 .method public setCameraStatusModel(Ljp/co/sony/mc/camera/view/viewmodel/CameraStatusModel;)V
     .locals 0
 
-    .line 165
+    .line 150
     iput-object p1, p0, Ljp/co/sony/mc/camera/databinding/FragmentCommonOperationCaptureButtonBindingImpl;->mCameraStatusModel:Ljp/co/sony/mc/camera/view/viewmodel/CameraStatusModel;
 
     return-void
@@ -1976,33 +1965,33 @@
 .method public setCaptureControlUiState(Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState;)V
     .locals 4
 
-    .line 157
+    .line 142
     iput-object p1, p0, Ljp/co/sony/mc/camera/databinding/FragmentCommonOperationCaptureButtonBindingImpl;->mCaptureControlUiState:Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState;
 
-    .line 158
+    .line 143
     monitor-enter p0
 
-    .line 159
+    .line 144
     :try_start_0
     iget-wide v0, p0, Ljp/co/sony/mc/camera/databinding/FragmentCommonOperationCaptureButtonBindingImpl;->mDirtyFlags:J
 
-    const-wide/16 v2, 0x2000
+    const-wide/16 v2, 0x400
 
     or-long/2addr v0, v2
 
     iput-wide v0, p0, Ljp/co/sony/mc/camera/databinding/FragmentCommonOperationCaptureButtonBindingImpl;->mDirtyFlags:J
 
-    .line 160
+    .line 145
     monitor-exit p0
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    const/16 p1, 0x9
+    const/16 p1, 0xa
 
-    .line 161
+    .line 146
     invoke-virtual {p0, p1}, Ljp/co/sony/mc/camera/databinding/FragmentCommonOperationCaptureButtonBindingImpl;->notifyPropertyChanged(I)V
 
-    .line 162
+    .line 147
     invoke-super {p0}, Ljp/co/sony/mc/camera/databinding/FragmentCommonOperationCaptureButtonBinding;->requestRebind()V
 
     return-void
@@ -2010,7 +1999,7 @@
     :catchall_0
     move-exception p1
 
-    .line 160
+    .line 145
     :try_start_1
     monitor-exit p0
     :try_end_1
@@ -2022,8 +2011,17 @@
 .method public setMessageUiState(Ljp/co/sony/mc/camera/view/uistate/MessageUiState;)V
     .locals 0
 
-    .line 168
+    .line 156
     iput-object p1, p0, Ljp/co/sony/mc/camera/databinding/FragmentCommonOperationCaptureButtonBindingImpl;->mMessageUiState:Ljp/co/sony/mc/camera/view/uistate/MessageUiState;
+
+    return-void
+.end method
+
+.method public setModeDialUiState(Ljp/co/sony/mc/camera/view/uistate/ModeDialUiState;)V
+    .locals 0
+
+    .line 153
+    iput-object p1, p0, Ljp/co/sony/mc/camera/databinding/FragmentCommonOperationCaptureButtonBindingImpl;->mModeDialUiState:Ljp/co/sony/mc/camera/view/uistate/ModeDialUiState;
 
     return-void
 .end method
@@ -2031,13 +2029,13 @@
 .method public setOrientationViewModel(Ljp/co/sony/mc/camera/view/viewmodel/OrientationViewModel;)V
     .locals 4
 
-    .line 137
+    .line 131
     iput-object p1, p0, Ljp/co/sony/mc/camera/databinding/FragmentCommonOperationCaptureButtonBindingImpl;->mOrientationViewModel:Ljp/co/sony/mc/camera/view/viewmodel/OrientationViewModel;
 
-    .line 138
+    .line 132
     monitor-enter p0
 
-    .line 139
+    .line 133
     :try_start_0
     iget-wide v0, p0, Ljp/co/sony/mc/camera/databinding/FragmentCommonOperationCaptureButtonBindingImpl;->mDirtyFlags:J
 
@@ -2047,17 +2045,17 @@
 
     iput-wide v0, p0, Ljp/co/sony/mc/camera/databinding/FragmentCommonOperationCaptureButtonBindingImpl;->mDirtyFlags:J
 
-    .line 140
+    .line 134
     monitor-exit p0
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    const/16 p1, 0x13
+    const/16 p1, 0x16
 
-    .line 141
+    .line 135
     invoke-virtual {p0, p1}, Ljp/co/sony/mc/camera/databinding/FragmentCommonOperationCaptureButtonBindingImpl;->notifyPropertyChanged(I)V
 
-    .line 142
+    .line 136
     invoke-super {p0}, Ljp/co/sony/mc/camera/databinding/FragmentCommonOperationCaptureButtonBinding;->requestRebind()V
 
     return-void
@@ -2065,7 +2063,7 @@
     :catchall_0
     move-exception p1
 
-    .line 140
+    .line 134
     :try_start_1
     monitor-exit p0
     :try_end_1
@@ -2074,28 +2072,10 @@
     throw p1
 .end method
 
-.method public setProModeBottomPaneUiState(Ljp/co/sony/mc/camera/view/uistate/ProModeBottomPaneUiState;)V
-    .locals 0
-
-    .line 148
-    iput-object p1, p0, Ljp/co/sony/mc/camera/databinding/FragmentCommonOperationCaptureButtonBindingImpl;->mProModeBottomPaneUiState:Ljp/co/sony/mc/camera/view/uistate/ProModeBottomPaneUiState;
-
-    return-void
-.end method
-
-.method public setProModeCommonUiState(Ljp/co/sony/mc/camera/view/uistate/ProModeCommonUiState;)V
-    .locals 0
-
-    .line 154
-    iput-object p1, p0, Ljp/co/sony/mc/camera/databinding/FragmentCommonOperationCaptureButtonBindingImpl;->mProModeCommonUiState:Ljp/co/sony/mc/camera/view/uistate/ProModeCommonUiState;
-
-    return-void
-.end method
-
 .method public setSystemStatusModel(Ljp/co/sony/mc/camera/view/viewmodel/SystemStatusModel;)V
     .locals 0
 
-    .line 145
+    .line 139
     iput-object p1, p0, Ljp/co/sony/mc/camera/databinding/FragmentCommonOperationCaptureButtonBindingImpl;->mSystemStatusModel:Ljp/co/sony/mc/camera/view/viewmodel/SystemStatusModel;
 
     return-void
@@ -2104,7 +2084,7 @@
 .method public setVariable(ILjava/lang/Object;)Z
     .locals 1
 
-    const/16 v0, 0x13
+    const/16 v0, 0x16
 
     if-ne v0, p1, :cond_0
 
@@ -2116,7 +2096,7 @@
     goto :goto_0
 
     :cond_0
-    const/16 v0, 0x1f
+    const/16 v0, 0x21
 
     if-ne v0, p1, :cond_1
 
@@ -2128,26 +2108,26 @@
     goto :goto_0
 
     :cond_1
-    const/16 v0, 0x14
+    const/16 v0, 0xa
 
     if-ne v0, p1, :cond_2
 
     .line 110
-    check-cast p2, Ljp/co/sony/mc/camera/view/uistate/ProModeBottomPaneUiState;
+    check-cast p2, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState;
 
-    invoke-virtual {p0, p2}, Ljp/co/sony/mc/camera/databinding/FragmentCommonOperationCaptureButtonBindingImpl;->setProModeBottomPaneUiState(Ljp/co/sony/mc/camera/view/uistate/ProModeBottomPaneUiState;)V
+    invoke-virtual {p0, p2}, Ljp/co/sony/mc/camera/databinding/FragmentCommonOperationCaptureButtonBindingImpl;->setCaptureControlUiState(Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState;)V
 
     goto :goto_0
 
     :cond_2
-    const/4 v0, 0x3
+    const/16 v0, 0x9
 
     if-ne v0, p1, :cond_3
 
     .line 113
-    check-cast p2, Ljp/co/sony/mc/camera/view/uistate/BasicModeCommonUiState;
+    check-cast p2, Ljp/co/sony/mc/camera/view/viewmodel/CameraStatusModel;
 
-    invoke-virtual {p0, p2}, Ljp/co/sony/mc/camera/databinding/FragmentCommonOperationCaptureButtonBindingImpl;->setBasicModeCommonUiState(Ljp/co/sony/mc/camera/view/uistate/BasicModeCommonUiState;)V
+    invoke-virtual {p0, p2}, Ljp/co/sony/mc/camera/databinding/FragmentCommonOperationCaptureButtonBindingImpl;->setCameraStatusModel(Ljp/co/sony/mc/camera/view/viewmodel/CameraStatusModel;)V
 
     goto :goto_0
 
@@ -2157,21 +2137,21 @@
     if-ne v0, p1, :cond_4
 
     .line 116
-    check-cast p2, Ljp/co/sony/mc/camera/view/uistate/ProModeCommonUiState;
+    check-cast p2, Ljp/co/sony/mc/camera/view/uistate/ModeDialUiState;
 
-    invoke-virtual {p0, p2}, Ljp/co/sony/mc/camera/databinding/FragmentCommonOperationCaptureButtonBindingImpl;->setProModeCommonUiState(Ljp/co/sony/mc/camera/view/uistate/ProModeCommonUiState;)V
+    invoke-virtual {p0, p2}, Ljp/co/sony/mc/camera/databinding/FragmentCommonOperationCaptureButtonBindingImpl;->setModeDialUiState(Ljp/co/sony/mc/camera/view/uistate/ModeDialUiState;)V
 
     goto :goto_0
 
     :cond_4
-    const/16 v0, 0x9
+    const/16 v0, 0x13
 
     if-ne v0, p1, :cond_5
 
     .line 119
-    check-cast p2, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState;
+    check-cast p2, Ljp/co/sony/mc/camera/view/uistate/MessageUiState;
 
-    invoke-virtual {p0, p2}, Ljp/co/sony/mc/camera/databinding/FragmentCommonOperationCaptureButtonBindingImpl;->setCaptureControlUiState(Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState;)V
+    invoke-virtual {p0, p2}, Ljp/co/sony/mc/camera/databinding/FragmentCommonOperationCaptureButtonBindingImpl;->setMessageUiState(Ljp/co/sony/mc/camera/view/uistate/MessageUiState;)V
 
     goto :goto_0
 
@@ -2181,30 +2161,6 @@
     if-ne v0, p1, :cond_6
 
     .line 122
-    check-cast p2, Ljp/co/sony/mc/camera/view/viewmodel/CameraStatusModel;
-
-    invoke-virtual {p0, p2}, Ljp/co/sony/mc/camera/databinding/FragmentCommonOperationCaptureButtonBindingImpl;->setCameraStatusModel(Ljp/co/sony/mc/camera/view/viewmodel/CameraStatusModel;)V
-
-    goto :goto_0
-
-    :cond_6
-    const/16 v0, 0x11
-
-    if-ne v0, p1, :cond_7
-
-    .line 125
-    check-cast p2, Ljp/co/sony/mc/camera/view/uistate/MessageUiState;
-
-    invoke-virtual {p0, p2}, Ljp/co/sony/mc/camera/databinding/FragmentCommonOperationCaptureButtonBindingImpl;->setMessageUiState(Ljp/co/sony/mc/camera/view/uistate/MessageUiState;)V
-
-    goto :goto_0
-
-    :cond_7
-    const/4 v0, 0x7
-
-    if-ne v0, p1, :cond_8
-
-    .line 128
     check-cast p2, Ljp/co/sony/mc/camera/view/viewmodel/CameraSettingsModel;
 
     invoke-virtual {p0, p2}, Ljp/co/sony/mc/camera/databinding/FragmentCommonOperationCaptureButtonBindingImpl;->setCameraSettingsModel(Ljp/co/sony/mc/camera/view/viewmodel/CameraSettingsModel;)V
@@ -2214,7 +2170,7 @@
 
     goto :goto_1
 
-    :cond_8
+    :cond_6
     const/4 p0, 0x0
 
     :goto_1

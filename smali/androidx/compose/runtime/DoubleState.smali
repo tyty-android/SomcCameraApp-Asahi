@@ -52,7 +52,7 @@
 .method public static synthetic access$getValue$jd(Landroidx/compose/runtime/DoubleState;)D
     .locals 2
 
-    .line 62
+    .line 63
     invoke-super {p0}, Landroidx/compose/runtime/DoubleState;->getValue()Ljava/lang/Double;
 
     move-result-object p0
@@ -72,7 +72,7 @@
 .method public getValue()Ljava/lang/Double;
     .locals 2
 
-    .line 67
+    .line 68
     invoke-interface {p0}, Landroidx/compose/runtime/DoubleState;->getDoubleValue()D
 
     move-result-wide v0
@@ -87,7 +87,7 @@
 .method public bridge synthetic getValue()Ljava/lang/Object;
     .locals 0
 
-    .line 62
+    .line 63
     invoke-interface {p0}, Landroidx/compose/runtime/DoubleState;->getValue()Ljava/lang/Double;
 
     move-result-object p0

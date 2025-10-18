@@ -712,7 +712,7 @@
 .end method
 
 .method public static setAttributes(Landroid/view/View;Ljava/util/HashMap;)V
-    .locals 12
+    .locals 11
     .annotation system Ldalvik/annotation/MethodParameters;
         accessFlags = {
             0x0,
@@ -825,26 +825,26 @@
     :pswitch_0
     new-array v8, v10, [Ljava/lang/Class;
 
-    sget-object v11, Ljava/lang/Float;->TYPE:Ljava/lang/Class;
+    sget-object v10, Ljava/lang/Float;->TYPE:Ljava/lang/Class;
 
-    aput-object v11, v8, v9
+    aput-object v10, v8, v9
 
     invoke-virtual {v3, v7, v8}, Ljava/lang/Class;->getMethod(Ljava/lang/String;[Ljava/lang/Class;)Ljava/lang/reflect/Method;
 
     move-result-object v8
 
     .line 366
-    new-array v10, v10, [Ljava/lang/Object;
-
     iget v6, v6, Landroidx/constraintlayout/widget/ConstraintAttribute;->mFloatValue:F
 
     invoke-static {v6}, Ljava/lang/Float;->valueOf(F)Ljava/lang/Float;
 
     move-result-object v6
 
-    aput-object v6, v10, v9
+    filled-new-array {v6}, [Ljava/lang/Object;
 
-    invoke-virtual {v8, p0, v10}, Ljava/lang/reflect/Method;->invoke(Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;
+    move-result-object v6
+
+    invoke-virtual {v8, p0, v6}, Ljava/lang/reflect/Method;->invoke(Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;
 
     goto :goto_0
 
@@ -852,26 +852,26 @@
     :pswitch_1
     new-array v8, v10, [Ljava/lang/Class;
 
-    sget-object v11, Ljava/lang/Float;->TYPE:Ljava/lang/Class;
+    sget-object v10, Ljava/lang/Float;->TYPE:Ljava/lang/Class;
 
-    aput-object v11, v8, v9
+    aput-object v10, v8, v9
 
     invoke-virtual {v3, v7, v8}, Ljava/lang/Class;->getMethod(Ljava/lang/String;[Ljava/lang/Class;)Ljava/lang/reflect/Method;
 
     move-result-object v8
 
     .line 344
-    new-array v10, v10, [Ljava/lang/Object;
-
     iget v6, v6, Landroidx/constraintlayout/widget/ConstraintAttribute;->mFloatValue:F
 
     invoke-static {v6}, Ljava/lang/Float;->valueOf(F)Ljava/lang/Float;
 
     move-result-object v6
 
-    aput-object v6, v10, v9
+    filled-new-array {v6}, [Ljava/lang/Object;
 
-    invoke-virtual {v8, p0, v10}, Ljava/lang/reflect/Method;->invoke(Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;
+    move-result-object v6
+
+    invoke-virtual {v8, p0, v6}, Ljava/lang/reflect/Method;->invoke(Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;
 
     goto :goto_0
 
@@ -879,26 +879,26 @@
     :pswitch_2
     new-array v8, v10, [Ljava/lang/Class;
 
-    sget-object v11, Ljava/lang/Integer;->TYPE:Ljava/lang/Class;
+    sget-object v10, Ljava/lang/Integer;->TYPE:Ljava/lang/Class;
 
-    aput-object v11, v8, v9
+    aput-object v10, v8, v9
 
     invoke-virtual {v3, v7, v8}, Ljava/lang/Class;->getMethod(Ljava/lang/String;[Ljava/lang/Class;)Ljava/lang/reflect/Method;
 
     move-result-object v8
 
     .line 340
-    new-array v10, v10, [Ljava/lang/Object;
-
     iget v6, v6, Landroidx/constraintlayout/widget/ConstraintAttribute;->mIntegerValue:I
 
     invoke-static {v6}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object v6
 
-    aput-object v6, v10, v9
+    filled-new-array {v6}, [Ljava/lang/Object;
 
-    invoke-virtual {v8, p0, v10}, Ljava/lang/reflect/Method;->invoke(Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;
+    move-result-object v6
+
+    invoke-virtual {v8, p0, v6}, Ljava/lang/reflect/Method;->invoke(Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;
 
     goto :goto_0
 
@@ -937,26 +937,26 @@
     :pswitch_4
     new-array v8, v10, [Ljava/lang/Class;
 
-    sget-object v11, Ljava/lang/Integer;->TYPE:Ljava/lang/Class;
+    sget-object v10, Ljava/lang/Integer;->TYPE:Ljava/lang/Class;
 
-    aput-object v11, v8, v9
+    aput-object v10, v8, v9
 
     invoke-virtual {v3, v7, v8}, Ljava/lang/Class;->getMethod(Ljava/lang/String;[Ljava/lang/Class;)Ljava/lang/reflect/Method;
 
     move-result-object v8
 
     .line 354
-    new-array v10, v10, [Ljava/lang/Object;
-
     iget v6, v6, Landroidx/constraintlayout/widget/ConstraintAttribute;->mColorValue:I
 
     invoke-static {v6}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object v6
 
-    aput-object v6, v10, v9
+    filled-new-array {v6}, [Ljava/lang/Object;
 
-    invoke-virtual {v8, p0, v10}, Ljava/lang/reflect/Method;->invoke(Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;
+    move-result-object v6
+
+    invoke-virtual {v8, p0, v6}, Ljava/lang/reflect/Method;->invoke(Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;
 
     goto/16 :goto_0
 
@@ -964,22 +964,22 @@
     :pswitch_5
     new-array v8, v10, [Ljava/lang/Class;
 
-    const-class v11, Ljava/lang/CharSequence;
+    const-class v10, Ljava/lang/CharSequence;
 
-    aput-object v11, v8, v9
+    aput-object v10, v8, v9
 
     invoke-virtual {v3, v7, v8}, Ljava/lang/Class;->getMethod(Ljava/lang/String;[Ljava/lang/Class;)Ljava/lang/reflect/Method;
 
     move-result-object v8
 
     .line 358
-    new-array v10, v10, [Ljava/lang/Object;
-
     iget-object v6, v6, Landroidx/constraintlayout/widget/ConstraintAttribute;->mStringValue:Ljava/lang/String;
 
-    aput-object v6, v10, v9
+    filled-new-array {v6}, [Ljava/lang/Object;
 
-    invoke-virtual {v8, p0, v10}, Ljava/lang/reflect/Method;->invoke(Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;
+    move-result-object v6
+
+    invoke-virtual {v8, p0, v6}, Ljava/lang/reflect/Method;->invoke(Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;
 
     goto/16 :goto_0
 
@@ -987,26 +987,26 @@
     :pswitch_6
     new-array v8, v10, [Ljava/lang/Class;
 
-    sget-object v11, Ljava/lang/Boolean;->TYPE:Ljava/lang/Class;
+    sget-object v10, Ljava/lang/Boolean;->TYPE:Ljava/lang/Class;
 
-    aput-object v11, v8, v9
+    aput-object v10, v8, v9
 
     invoke-virtual {v3, v7, v8}, Ljava/lang/Class;->getMethod(Ljava/lang/String;[Ljava/lang/Class;)Ljava/lang/reflect/Method;
 
     move-result-object v8
 
     .line 362
-    new-array v10, v10, [Ljava/lang/Object;
-
     iget-boolean v6, v6, Landroidx/constraintlayout/widget/ConstraintAttribute;->mBooleanValue:Z
 
     invoke-static {v6}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
     move-result-object v6
 
-    aput-object v6, v10, v9
+    filled-new-array {v6}, [Ljava/lang/Object;
 
-    invoke-virtual {v8, p0, v10}, Ljava/lang/reflect/Method;->invoke(Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;
+    move-result-object v6
+
+    invoke-virtual {v8, p0, v6}, Ljava/lang/reflect/Method;->invoke(Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;
 
     goto/16 :goto_0
 
@@ -1014,26 +1014,26 @@
     :pswitch_7
     new-array v8, v10, [Ljava/lang/Class;
 
-    sget-object v11, Ljava/lang/Integer;->TYPE:Ljava/lang/Class;
+    sget-object v10, Ljava/lang/Integer;->TYPE:Ljava/lang/Class;
 
-    aput-object v11, v8, v9
+    aput-object v10, v8, v9
 
     invoke-virtual {v3, v7, v8}, Ljava/lang/Class;->getMethod(Ljava/lang/String;[Ljava/lang/Class;)Ljava/lang/reflect/Method;
 
     move-result-object v8
 
     .line 370
-    new-array v10, v10, [Ljava/lang/Object;
-
     iget v6, v6, Landroidx/constraintlayout/widget/ConstraintAttribute;->mIntegerValue:I
 
     invoke-static {v6}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object v6
 
-    aput-object v6, v10, v9
+    filled-new-array {v6}, [Ljava/lang/Object;
 
-    invoke-virtual {v8, p0, v10}, Ljava/lang/reflect/Method;->invoke(Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;
+    move-result-object v6
+
+    invoke-virtual {v8, p0, v6}, Ljava/lang/reflect/Method;->invoke(Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;
     :try_end_0
     .catch Ljava/lang/NoSuchMethodException; {:try_start_0 .. :try_end_0} :catch_2
     .catch Ljava/lang/IllegalAccessException; {:try_start_0 .. :try_end_0} :catch_1
@@ -1200,7 +1200,7 @@
 
 # virtual methods
 .method public applyCustom(Landroid/view/View;)V
-    .locals 10
+    .locals 9
     .annotation system Ldalvik/annotation/MethodParameters;
         accessFlags = {
             0x0
@@ -1274,26 +1274,26 @@
     :pswitch_0
     new-array v6, v8, [Ljava/lang/Class;
 
-    sget-object v9, Ljava/lang/Float;->TYPE:Ljava/lang/Class;
+    sget-object v8, Ljava/lang/Float;->TYPE:Ljava/lang/Class;
 
-    aput-object v9, v6, v7
+    aput-object v8, v6, v7
 
     invoke-virtual {v3, v5, v6}, Ljava/lang/Class;->getMethod(Ljava/lang/String;[Ljava/lang/Class;)Ljava/lang/reflect/Method;
 
     move-result-object v6
 
     .line 425
-    new-array v8, v8, [Ljava/lang/Object;
-
     iget p0, p0, Landroidx/constraintlayout/widget/ConstraintAttribute;->mFloatValue:F
 
     invoke-static {p0}, Ljava/lang/Float;->valueOf(F)Ljava/lang/Float;
 
     move-result-object p0
 
-    aput-object p0, v8, v7
+    filled-new-array {p0}, [Ljava/lang/Object;
 
-    invoke-virtual {v6, p1, v8}, Ljava/lang/reflect/Method;->invoke(Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;
+    move-result-object p0
+
+    invoke-virtual {v6, p1, p0}, Ljava/lang/reflect/Method;->invoke(Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;
 
     goto/16 :goto_1
 
@@ -1301,26 +1301,26 @@
     :pswitch_1
     new-array v6, v8, [Ljava/lang/Class;
 
-    sget-object v9, Ljava/lang/Float;->TYPE:Ljava/lang/Class;
+    sget-object v8, Ljava/lang/Float;->TYPE:Ljava/lang/Class;
 
-    aput-object v9, v6, v7
+    aput-object v8, v6, v7
 
     invoke-virtual {v3, v5, v6}, Ljava/lang/Class;->getMethod(Ljava/lang/String;[Ljava/lang/Class;)Ljava/lang/reflect/Method;
 
     move-result-object v6
 
     .line 403
-    new-array v8, v8, [Ljava/lang/Object;
-
     iget p0, p0, Landroidx/constraintlayout/widget/ConstraintAttribute;->mFloatValue:F
 
     invoke-static {p0}, Ljava/lang/Float;->valueOf(F)Ljava/lang/Float;
 
     move-result-object p0
 
-    aput-object p0, v8, v7
+    filled-new-array {p0}, [Ljava/lang/Object;
 
-    invoke-virtual {v6, p1, v8}, Ljava/lang/reflect/Method;->invoke(Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;
+    move-result-object p0
+
+    invoke-virtual {v6, p1, p0}, Ljava/lang/reflect/Method;->invoke(Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;
 
     goto/16 :goto_1
 
@@ -1359,26 +1359,26 @@
     :pswitch_3
     new-array v6, v8, [Ljava/lang/Class;
 
-    sget-object v9, Ljava/lang/Integer;->TYPE:Ljava/lang/Class;
+    sget-object v8, Ljava/lang/Integer;->TYPE:Ljava/lang/Class;
 
-    aput-object v9, v6, v7
+    aput-object v8, v6, v7
 
     invoke-virtual {v3, v5, v6}, Ljava/lang/Class;->getMethod(Ljava/lang/String;[Ljava/lang/Class;)Ljava/lang/reflect/Method;
 
     move-result-object v6
 
     .line 413
-    new-array v8, v8, [Ljava/lang/Object;
-
     iget p0, p0, Landroidx/constraintlayout/widget/ConstraintAttribute;->mColorValue:I
 
     invoke-static {p0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object p0
 
-    aput-object p0, v8, v7
+    filled-new-array {p0}, [Ljava/lang/Object;
 
-    invoke-virtual {v6, p1, v8}, Ljava/lang/reflect/Method;->invoke(Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;
+    move-result-object p0
+
+    invoke-virtual {v6, p1, p0}, Ljava/lang/reflect/Method;->invoke(Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;
 
     goto/16 :goto_1
 
@@ -1386,22 +1386,22 @@
     :pswitch_4
     new-array v6, v8, [Ljava/lang/Class;
 
-    const-class v9, Ljava/lang/CharSequence;
+    const-class v8, Ljava/lang/CharSequence;
 
-    aput-object v9, v6, v7
+    aput-object v8, v6, v7
 
     invoke-virtual {v3, v5, v6}, Ljava/lang/Class;->getMethod(Ljava/lang/String;[Ljava/lang/Class;)Ljava/lang/reflect/Method;
 
     move-result-object v6
 
     .line 417
-    new-array v8, v8, [Ljava/lang/Object;
-
     iget-object p0, p0, Landroidx/constraintlayout/widget/ConstraintAttribute;->mStringValue:Ljava/lang/String;
 
-    aput-object p0, v8, v7
+    filled-new-array {p0}, [Ljava/lang/Object;
 
-    invoke-virtual {v6, p1, v8}, Ljava/lang/reflect/Method;->invoke(Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;
+    move-result-object p0
+
+    invoke-virtual {v6, p1, p0}, Ljava/lang/reflect/Method;->invoke(Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;
 
     goto/16 :goto_1
 
@@ -1409,26 +1409,26 @@
     :pswitch_5
     new-array v6, v8, [Ljava/lang/Class;
 
-    sget-object v9, Ljava/lang/Boolean;->TYPE:Ljava/lang/Class;
+    sget-object v8, Ljava/lang/Boolean;->TYPE:Ljava/lang/Class;
 
-    aput-object v9, v6, v7
+    aput-object v8, v6, v7
 
     invoke-virtual {v3, v5, v6}, Ljava/lang/Class;->getMethod(Ljava/lang/String;[Ljava/lang/Class;)Ljava/lang/reflect/Method;
 
     move-result-object v6
 
     .line 421
-    new-array v8, v8, [Ljava/lang/Object;
-
     iget-boolean p0, p0, Landroidx/constraintlayout/widget/ConstraintAttribute;->mBooleanValue:Z
 
     invoke-static {p0}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
     move-result-object p0
 
-    aput-object p0, v8, v7
+    filled-new-array {p0}, [Ljava/lang/Object;
 
-    invoke-virtual {v6, p1, v8}, Ljava/lang/reflect/Method;->invoke(Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;
+    move-result-object p0
+
+    invoke-virtual {v6, p1, p0}, Ljava/lang/reflect/Method;->invoke(Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;
 
     goto/16 :goto_1
 
@@ -1436,26 +1436,26 @@
     :pswitch_6
     new-array v6, v8, [Ljava/lang/Class;
 
-    sget-object v9, Ljava/lang/Integer;->TYPE:Ljava/lang/Class;
+    sget-object v8, Ljava/lang/Integer;->TYPE:Ljava/lang/Class;
 
-    aput-object v9, v6, v7
+    aput-object v8, v6, v7
 
     invoke-virtual {v3, v5, v6}, Ljava/lang/Class;->getMethod(Ljava/lang/String;[Ljava/lang/Class;)Ljava/lang/reflect/Method;
 
     move-result-object v6
 
     .line 399
-    new-array v8, v8, [Ljava/lang/Object;
-
     iget p0, p0, Landroidx/constraintlayout/widget/ConstraintAttribute;->mIntegerValue:I
 
     invoke-static {p0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object p0
 
-    aput-object p0, v8, v7
+    filled-new-array {p0}, [Ljava/lang/Object;
 
-    invoke-virtual {v6, p1, v8}, Ljava/lang/reflect/Method;->invoke(Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;
+    move-result-object p0
+
+    invoke-virtual {v6, p1, p0}, Ljava/lang/reflect/Method;->invoke(Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;
     :try_end_0
     .catch Ljava/lang/NoSuchMethodException; {:try_start_0 .. :try_end_0} :catch_2
     .catch Ljava/lang/IllegalAccessException; {:try_start_0 .. :try_end_0} :catch_1

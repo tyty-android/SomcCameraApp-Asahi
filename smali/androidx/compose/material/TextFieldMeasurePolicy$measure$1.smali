@@ -116,7 +116,7 @@
 .method public bridge synthetic invoke(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
 
-    .line 628
+    .line 632
     check-cast p1, Landroidx/compose/ui/layout/Placeable$PlacementScope;
 
     invoke-virtual {p0, p1}, Landroidx/compose/material/TextFieldMeasurePolicy$measure$1;->invoke(Landroidx/compose/ui/layout/Placeable$PlacementScope;)V
@@ -127,134 +127,140 @@
 .end method
 
 .method public final invoke(Landroidx/compose/ui/layout/Placeable$PlacementScope;)V
-    .locals 15
+    .locals 26
 
-    move-object v0, p0
+    move-object/from16 v0, p0
 
-    const-string v1, "$this$layout"
-
-    move-object/from16 v2, p1
-
-    invoke-static {v2, v1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 629
+    .line 633
     iget-object v1, v0, Landroidx/compose/material/TextFieldMeasurePolicy$measure$1;->$labelPlaceable:Landroidx/compose/ui/layout/Placeable;
 
     if-eqz v1, :cond_0
 
-    .line 631
+    .line 635
     iget v1, v0, Landroidx/compose/material/TextFieldMeasurePolicy$measure$1;->$topPaddingValue:I
 
-    iget v3, v0, Landroidx/compose/material/TextFieldMeasurePolicy$measure$1;->$lastBaseline:I
+    iget v2, v0, Landroidx/compose/material/TextFieldMeasurePolicy$measure$1;->$lastBaseline:I
 
-    sub-int/2addr v1, v3
+    sub-int/2addr v1, v2
 
-    const/4 v3, 0x0
+    const/4 v2, 0x0
 
-    invoke-static {v1, v3}, Lkotlin/ranges/RangesKt;->coerceAtLeast(II)I
+    invoke-static {v1, v2}, Lkotlin/ranges/RangesKt;->coerceAtLeast(II)I
 
-    move-result v11
-
-    .line 633
-    iget v3, v0, Landroidx/compose/material/TextFieldMeasurePolicy$measure$1;->$width:I
-
-    .line 634
-    iget v4, v0, Landroidx/compose/material/TextFieldMeasurePolicy$measure$1;->$height:I
-
-    .line 635
-    iget-object v5, v0, Landroidx/compose/material/TextFieldMeasurePolicy$measure$1;->$textFieldPlaceable:Landroidx/compose/ui/layout/Placeable;
-
-    .line 636
-    iget-object v6, v0, Landroidx/compose/material/TextFieldMeasurePolicy$measure$1;->$labelPlaceable:Landroidx/compose/ui/layout/Placeable;
+    move-result v12
 
     .line 637
-    iget-object v7, v0, Landroidx/compose/material/TextFieldMeasurePolicy$measure$1;->$placeholderPlaceable:Landroidx/compose/ui/layout/Placeable;
+    iget v4, v0, Landroidx/compose/material/TextFieldMeasurePolicy$measure$1;->$width:I
 
     .line 638
-    iget-object v8, v0, Landroidx/compose/material/TextFieldMeasurePolicy$measure$1;->$leadingPlaceable:Landroidx/compose/ui/layout/Placeable;
+    iget v5, v0, Landroidx/compose/material/TextFieldMeasurePolicy$measure$1;->$height:I
 
     .line 639
-    iget-object v9, v0, Landroidx/compose/material/TextFieldMeasurePolicy$measure$1;->$trailingPlaceable:Landroidx/compose/ui/layout/Placeable;
+    iget-object v6, v0, Landroidx/compose/material/TextFieldMeasurePolicy$measure$1;->$textFieldPlaceable:Landroidx/compose/ui/layout/Placeable;
 
     .line 640
+    iget-object v7, v0, Landroidx/compose/material/TextFieldMeasurePolicy$measure$1;->$labelPlaceable:Landroidx/compose/ui/layout/Placeable;
+
+    .line 641
+    iget-object v8, v0, Landroidx/compose/material/TextFieldMeasurePolicy$measure$1;->$placeholderPlaceable:Landroidx/compose/ui/layout/Placeable;
+
+    .line 642
+    iget-object v9, v0, Landroidx/compose/material/TextFieldMeasurePolicy$measure$1;->$leadingPlaceable:Landroidx/compose/ui/layout/Placeable;
+
+    .line 643
+    iget-object v10, v0, Landroidx/compose/material/TextFieldMeasurePolicy$measure$1;->$trailingPlaceable:Landroidx/compose/ui/layout/Placeable;
+
+    .line 644
     iget-object v1, v0, Landroidx/compose/material/TextFieldMeasurePolicy$measure$1;->this$0:Landroidx/compose/material/TextFieldMeasurePolicy;
 
     invoke-static {v1}, Landroidx/compose/material/TextFieldMeasurePolicy;->access$getSingleLine$p(Landroidx/compose/material/TextFieldMeasurePolicy;)Z
 
-    move-result v10
+    move-result v11
 
-    .line 642
+    .line 646
     iget v1, v0, Landroidx/compose/material/TextFieldMeasurePolicy$measure$1;->$effectiveLabelBaseline:I
 
-    iget v12, v0, Landroidx/compose/material/TextFieldMeasurePolicy$measure$1;->$topPadding:I
+    iget v2, v0, Landroidx/compose/material/TextFieldMeasurePolicy$measure$1;->$topPadding:I
 
-    add-int/2addr v12, v1
+    add-int v13, v1, v2
 
-    .line 643
+    .line 647
     iget-object v1, v0, Landroidx/compose/material/TextFieldMeasurePolicy$measure$1;->this$0:Landroidx/compose/material/TextFieldMeasurePolicy;
 
     invoke-static {v1}, Landroidx/compose/material/TextFieldMeasurePolicy;->access$getAnimationProgress$p(Landroidx/compose/material/TextFieldMeasurePolicy;)F
 
-    move-result v13
+    move-result v14
 
-    .line 644
+    .line 648
     iget-object v0, v0, Landroidx/compose/material/TextFieldMeasurePolicy$measure$1;->$this_measure:Landroidx/compose/ui/layout/MeasureScope;
 
     invoke-interface {v0}, Landroidx/compose/ui/layout/MeasureScope;->getDensity()F
 
-    move-result v14
+    move-result v15
 
-    move-object/from16 v2, p1
+    move-object/from16 v3, p1
 
-    .line 632
-    invoke-static/range {v2 .. v14}, Landroidx/compose/material/TextFieldKt;->access$placeWithLabel(Landroidx/compose/ui/layout/Placeable$PlacementScope;IILandroidx/compose/ui/layout/Placeable;Landroidx/compose/ui/layout/Placeable;Landroidx/compose/ui/layout/Placeable;Landroidx/compose/ui/layout/Placeable;Landroidx/compose/ui/layout/Placeable;ZIIFF)V
+    .line 636
+    invoke-static/range {v3 .. v15}, Landroidx/compose/material/TextFieldKt;->access$placeWithLabel(Landroidx/compose/ui/layout/Placeable$PlacementScope;IILandroidx/compose/ui/layout/Placeable;Landroidx/compose/ui/layout/Placeable;Landroidx/compose/ui/layout/Placeable;Landroidx/compose/ui/layout/Placeable;Landroidx/compose/ui/layout/Placeable;ZIIFF)V
 
     goto :goto_0
 
-    .line 648
-    :cond_0
-    iget v3, v0, Landroidx/compose/material/TextFieldMeasurePolicy$measure$1;->$width:I
-
-    .line 649
-    iget v4, v0, Landroidx/compose/material/TextFieldMeasurePolicy$measure$1;->$height:I
-
-    .line 650
-    iget-object v5, v0, Landroidx/compose/material/TextFieldMeasurePolicy$measure$1;->$textFieldPlaceable:Landroidx/compose/ui/layout/Placeable;
-
-    .line 651
-    iget-object v6, v0, Landroidx/compose/material/TextFieldMeasurePolicy$measure$1;->$placeholderPlaceable:Landroidx/compose/ui/layout/Placeable;
-
     .line 652
-    iget-object v7, v0, Landroidx/compose/material/TextFieldMeasurePolicy$measure$1;->$leadingPlaceable:Landroidx/compose/ui/layout/Placeable;
+    :cond_0
+    iget v1, v0, Landroidx/compose/material/TextFieldMeasurePolicy$measure$1;->$width:I
 
     .line 653
-    iget-object v8, v0, Landroidx/compose/material/TextFieldMeasurePolicy$measure$1;->$trailingPlaceable:Landroidx/compose/ui/layout/Placeable;
+    iget v2, v0, Landroidx/compose/material/TextFieldMeasurePolicy$measure$1;->$height:I
 
     .line 654
-    iget-object v1, v0, Landroidx/compose/material/TextFieldMeasurePolicy$measure$1;->this$0:Landroidx/compose/material/TextFieldMeasurePolicy;
-
-    invoke-static {v1}, Landroidx/compose/material/TextFieldMeasurePolicy;->access$getSingleLine$p(Landroidx/compose/material/TextFieldMeasurePolicy;)Z
-
-    move-result v9
+    iget-object v3, v0, Landroidx/compose/material/TextFieldMeasurePolicy$measure$1;->$textFieldPlaceable:Landroidx/compose/ui/layout/Placeable;
 
     .line 655
-    iget-object v1, v0, Landroidx/compose/material/TextFieldMeasurePolicy$measure$1;->$this_measure:Landroidx/compose/ui/layout/MeasureScope;
-
-    invoke-interface {v1}, Landroidx/compose/ui/layout/MeasureScope;->getDensity()F
-
-    move-result v10
+    iget-object v4, v0, Landroidx/compose/material/TextFieldMeasurePolicy$measure$1;->$placeholderPlaceable:Landroidx/compose/ui/layout/Placeable;
 
     .line 656
+    iget-object v5, v0, Landroidx/compose/material/TextFieldMeasurePolicy$measure$1;->$leadingPlaceable:Landroidx/compose/ui/layout/Placeable;
+
+    .line 657
+    iget-object v6, v0, Landroidx/compose/material/TextFieldMeasurePolicy$measure$1;->$trailingPlaceable:Landroidx/compose/ui/layout/Placeable;
+
+    .line 658
+    iget-object v7, v0, Landroidx/compose/material/TextFieldMeasurePolicy$measure$1;->this$0:Landroidx/compose/material/TextFieldMeasurePolicy;
+
+    invoke-static {v7}, Landroidx/compose/material/TextFieldMeasurePolicy;->access$getSingleLine$p(Landroidx/compose/material/TextFieldMeasurePolicy;)Z
+
+    move-result v23
+
+    .line 659
+    iget-object v7, v0, Landroidx/compose/material/TextFieldMeasurePolicy$measure$1;->$this_measure:Landroidx/compose/ui/layout/MeasureScope;
+
+    invoke-interface {v7}, Landroidx/compose/ui/layout/MeasureScope;->getDensity()F
+
+    move-result v24
+
+    .line 660
     iget-object v0, v0, Landroidx/compose/material/TextFieldMeasurePolicy$measure$1;->this$0:Landroidx/compose/material/TextFieldMeasurePolicy;
 
     invoke-static {v0}, Landroidx/compose/material/TextFieldMeasurePolicy;->access$getPaddingValues$p(Landroidx/compose/material/TextFieldMeasurePolicy;)Landroidx/compose/foundation/layout/PaddingValues;
 
-    move-result-object v11
+    move-result-object v25
 
-    move-object/from16 v2, p1
+    move-object/from16 v16, p1
 
-    .line 647
-    invoke-static/range {v2 .. v11}, Landroidx/compose/material/TextFieldKt;->access$placeWithoutLabel(Landroidx/compose/ui/layout/Placeable$PlacementScope;IILandroidx/compose/ui/layout/Placeable;Landroidx/compose/ui/layout/Placeable;Landroidx/compose/ui/layout/Placeable;Landroidx/compose/ui/layout/Placeable;ZFLandroidx/compose/foundation/layout/PaddingValues;)V
+    move/from16 v17, v1
+
+    move/from16 v18, v2
+
+    move-object/from16 v19, v3
+
+    move-object/from16 v20, v4
+
+    move-object/from16 v21, v5
+
+    move-object/from16 v22, v6
+
+    .line 651
+    invoke-static/range {v16 .. v25}, Landroidx/compose/material/TextFieldKt;->access$placeWithoutLabel(Landroidx/compose/ui/layout/Placeable$PlacementScope;IILandroidx/compose/ui/layout/Placeable;Landroidx/compose/ui/layout/Placeable;Landroidx/compose/ui/layout/Placeable;Landroidx/compose/ui/layout/Placeable;ZFLandroidx/compose/foundation/layout/PaddingValues;)V
 
     :goto_0
     return-void

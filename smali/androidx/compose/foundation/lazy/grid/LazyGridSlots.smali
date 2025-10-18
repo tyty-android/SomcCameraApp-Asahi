@@ -30,6 +30,10 @@
 .end annotation
 
 
+# static fields
+.field public static final $stable:I = 0x8
+
+
 # instance fields
 .field private final positions:[I
 
@@ -37,24 +41,22 @@
 
 
 # direct methods
+.method static constructor <clinit>()V
+    .locals 0
+
+    return-void
+.end method
+
 .method public constructor <init>([I[I)V
-    .locals 1
+    .locals 0
 
-    const-string/jumbo v0, "sizes"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string v0, "positions"
-
-    invoke-static {p2, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 150
+    .line 142
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 151
+    .line 143
     iput-object p1, p0, Landroidx/compose/foundation/lazy/grid/LazyGridSlots;->sizes:[I
 
-    .line 152
+    .line 144
     iput-object p2, p0, Landroidx/compose/foundation/lazy/grid/LazyGridSlots;->positions:[I
 
     return-void
@@ -65,7 +67,7 @@
 .method public final getPositions()[I
     .locals 0
 
-    .line 152
+    .line 144
     iget-object p0, p0, Landroidx/compose/foundation/lazy/grid/LazyGridSlots;->positions:[I
 
     return-object p0
@@ -74,7 +76,7 @@
 .method public final getSizes()[I
     .locals 0
 
-    .line 151
+    .line 143
     iget-object p0, p0, Landroidx/compose/foundation/lazy/grid/LazyGridSlots;->sizes:[I
 
     return-object p0

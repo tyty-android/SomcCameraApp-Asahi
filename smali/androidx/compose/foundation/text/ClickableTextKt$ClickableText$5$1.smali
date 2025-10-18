@@ -103,7 +103,7 @@
 .method public bridge synthetic invoke(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
 
-    .line 184
+    .line 187
     check-cast p1, Landroidx/compose/ui/text/TextLayoutResult;
 
     invoke-virtual {p0, p1}, Landroidx/compose/foundation/text/ClickableTextKt$ClickableText$5$1;->invoke(Landroidx/compose/ui/text/TextLayoutResult;)V
@@ -116,16 +116,12 @@
 .method public final invoke(Landroidx/compose/ui/text/TextLayoutResult;)V
     .locals 1
 
-    const-string v0, "it"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 185
+    .line 188
     iget-object v0, p0, Landroidx/compose/foundation/text/ClickableTextKt$ClickableText$5$1;->$layoutResult:Landroidx/compose/runtime/MutableState;
 
     invoke-interface {v0, p1}, Landroidx/compose/runtime/MutableState;->setValue(Ljava/lang/Object;)V
 
-    .line 186
+    .line 189
     iget-object p0, p0, Landroidx/compose/foundation/text/ClickableTextKt$ClickableText$5$1;->$onTextLayout:Lkotlin/jvm/functions/Function1;
 
     invoke-interface {p0, p1}, Lkotlin/jvm/functions/Function1;->invoke(Ljava/lang/Object;)Ljava/lang/Object;

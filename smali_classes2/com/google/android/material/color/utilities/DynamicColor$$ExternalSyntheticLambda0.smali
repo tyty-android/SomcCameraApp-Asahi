@@ -7,17 +7,17 @@
 
 
 # instance fields
-.field public final synthetic f$0:I
+.field public final synthetic f$0:Lcom/google/android/material/color/utilities/TonalPalette;
 
 
 # direct methods
-.method public synthetic constructor <init>(I)V
+.method public synthetic constructor <init>(Lcom/google/android/material/color/utilities/TonalPalette;)V
     .locals 0
 
     .line 0
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    iput p1, p0, Lcom/google/android/material/color/utilities/DynamicColor$$ExternalSyntheticLambda0;->f$0:I
+    iput-object p1, p0, Lcom/google/android/material/color/utilities/DynamicColor$$ExternalSyntheticLambda0;->f$0:Lcom/google/android/material/color/utilities/TonalPalette;
 
     return-void
 .end method
@@ -28,11 +28,11 @@
     .locals 0
 
     .line 0
-    iget p0, p0, Lcom/google/android/material/color/utilities/DynamicColor$$ExternalSyntheticLambda0;->f$0:I
+    iget-object p0, p0, Lcom/google/android/material/color/utilities/DynamicColor$$ExternalSyntheticLambda0;->f$0:Lcom/google/android/material/color/utilities/TonalPalette;
 
     check-cast p1, Lcom/google/android/material/color/utilities/DynamicScheme;
 
-    invoke-static {p0, p1}, Lcom/google/android/material/color/utilities/DynamicColor;->lambda$fromArgb$3(ILcom/google/android/material/color/utilities/DynamicScheme;)Lcom/google/android/material/color/utilities/TonalPalette;
+    invoke-static {p0, p1}, Lcom/google/android/material/color/utilities/DynamicColor;->lambda$fromArgb$0(Lcom/google/android/material/color/utilities/TonalPalette;Lcom/google/android/material/color/utilities/DynamicScheme;)Lcom/google/android/material/color/utilities/TonalPalette;
 
     move-result-object p0
 

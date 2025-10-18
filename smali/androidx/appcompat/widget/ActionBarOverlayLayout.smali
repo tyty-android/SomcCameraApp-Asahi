@@ -1144,6 +1144,8 @@
 
     move-result v1
 
+    const/4 v2, 0x1
+
     if-nez v1, :cond_0
 
     .line 383
@@ -1151,15 +1153,15 @@
 
     iput-object v0, p0, Landroidx/appcompat/widget/ActionBarOverlayLayout;->mLastBaseInnerInsets:Landroidx/core/view/WindowInsetsCompat;
 
-    const/4 v0, 0x1
+    move v0, v2
 
     .line 385
     :cond_0
     iget-object v1, p0, Landroidx/appcompat/widget/ActionBarOverlayLayout;->mLastBaseContentInsets:Landroid/graphics/Rect;
 
-    iget-object v2, p0, Landroidx/appcompat/widget/ActionBarOverlayLayout;->mBaseContentInsets:Landroid/graphics/Rect;
+    iget-object v3, p0, Landroidx/appcompat/widget/ActionBarOverlayLayout;->mBaseContentInsets:Landroid/graphics/Rect;
 
-    invoke-virtual {v1, v2}, Landroid/graphics/Rect;->equals(Ljava/lang/Object;)Z
+    invoke-virtual {v1, v3}, Landroid/graphics/Rect;->equals(Ljava/lang/Object;)Z
 
     move-result v1
 
@@ -1175,10 +1177,12 @@
     goto :goto_0
 
     :cond_1
-    if-eqz v0, :cond_2
+    move v2, v0
+
+    :goto_0
+    if-eqz v2, :cond_2
 
     .line 391
-    :goto_0
     invoke-virtual {p0}, Landroidx/appcompat/widget/ActionBarOverlayLayout;->requestLayout()V
 
     .line 398

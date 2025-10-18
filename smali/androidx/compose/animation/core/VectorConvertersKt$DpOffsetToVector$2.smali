@@ -27,7 +27,7 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/SourceDebugExtension;
-    value = "SMAP\nVectorConverters.kt\nKotlin\n*S Kotlin\n*F\n+ 1 VectorConverters.kt\nandroidx/compose/animation/core/VectorConvertersKt$DpOffsetToVector$2\n+ 2 Dp.kt\nandroidx/compose/ui/unit/DpKt\n*L\n1#1,195:1\n174#2:196\n*S KotlinDebug\n*F\n+ 1 VectorConverters.kt\nandroidx/compose/animation/core/VectorConvertersKt$DpOffsetToVector$2\n*L\n145#1:196\n*E\n"
+    value = "SMAP\nVectorConverters.kt\nKotlin\n*S Kotlin\n*F\n+ 1 VectorConverters.kt\nandroidx/compose/animation/core/VectorConvertersKt$DpOffsetToVector$2\n+ 2 Dp.kt\nandroidx/compose/ui/unit/DpKt\n*L\n1#1,196:1\n174#2:197\n*S KotlinDebug\n*F\n+ 1 VectorConverters.kt\nandroidx/compose/animation/core/VectorConvertersKt$DpOffsetToVector$2\n*L\n145#1:197\n*E\n"
 .end annotation
 
 .annotation runtime Lkotlin/Metadata;
@@ -101,16 +101,12 @@
 .method public final invoke-gVRvYmI(Landroidx/compose/animation/core/AnimationVector2D;)J
     .locals 0
 
-    const-string p0, "it"
-
-    invoke-static {p1, p0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
     .line 145
     invoke-virtual {p1}, Landroidx/compose/animation/core/AnimationVector2D;->getV1()F
 
     move-result p0
 
-    .line 196
+    .line 197
     invoke-static {p0}, Landroidx/compose/ui/unit/Dp;->constructor-impl(F)F
 
     move-result p0
@@ -120,7 +116,7 @@
 
     move-result p1
 
-    .line 196
+    .line 197
     invoke-static {p1}, Landroidx/compose/ui/unit/Dp;->constructor-impl(F)F
 
     move-result p1

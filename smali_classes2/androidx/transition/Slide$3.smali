@@ -20,7 +20,7 @@
 
     const/4 v0, 0x0
 
-    .line 116
+    .line 113
     invoke-direct {p0, v0}, Landroidx/transition/Slide$CalculateSlideVertical;-><init>(Landroidx/transition/Slide$1;)V
 
     return-void
@@ -31,7 +31,7 @@
 .method public getGoneY(Landroid/view/ViewGroup;Landroid/view/View;)F
     .locals 0
 
-    .line 119
+    .line 116
     invoke-virtual {p2}, Landroid/view/View;->getTranslationY()F
 
     move-result p0

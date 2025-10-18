@@ -28,7 +28,7 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/SourceDebugExtension;
-    value = "SMAP\nSubcomposeLayout.kt\nKotlin\n*S Kotlin\n*F\n+ 1 SubcomposeLayout.kt\nandroidx/compose/ui/layout/LayoutNodeSubcompositionsState$subcompose$3$1$1\n+ 2 Composables.kt\nandroidx/compose/runtime/ComposablesKt\n*L\n1#1,1063:1\n169#2,9:1064\n*S KotlinDebug\n*F\n+ 1 SubcomposeLayout.kt\nandroidx/compose/ui/layout/LayoutNodeSubcompositionsState$subcompose$3$1$1\n*L\n702#1:1064,9\n*E\n"
+    value = "SMAP\nSubcomposeLayout.kt\nKotlin\n*S Kotlin\n*F\n+ 1 SubcomposeLayout.kt\nandroidx/compose/ui/layout/LayoutNodeSubcompositionsState$subcompose$3$1$1\n+ 2 Composables.kt\nandroidx/compose/runtime/ComposablesKt\n*L\n1#1,987:1\n169#2,9:988\n*S KotlinDebug\n*F\n+ 1 SubcomposeLayout.kt\nandroidx/compose/ui/layout/LayoutNodeSubcompositionsState$subcompose$3$1$1\n*L\n478#1:988,9\n*E\n"
 .end annotation
 
 .annotation runtime Lkotlin/Metadata;
@@ -100,7 +100,7 @@
 .method public bridge synthetic invoke(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
 
-    .line 701
+    .line 477
     check-cast p1, Landroidx/compose/runtime/Composer;
 
     check-cast p2, Ljava/lang/Number;
@@ -119,7 +119,7 @@
 .method public final invoke(Landroidx/compose/runtime/Composer;I)V
     .locals 3
 
-    const-string v0, "C701@32613L46:SubcomposeLayout.kt#80mrfh"
+    const-string v0, "C477@20610L46:SubcomposeLayout.kt#80mrfh"
 
     invoke-static {p1, v0}, Landroidx/compose/runtime/ComposerKt;->sourceInformation(Landroidx/compose/runtime/Composer;Ljava/lang/String;)V
 
@@ -129,7 +129,7 @@
 
     if-ne v0, v1, :cond_1
 
-    .line 702
+    .line 478
     invoke-interface {p1}, Landroidx/compose/runtime/Composer;->getSkipping()Z
 
     move-result v0
@@ -153,9 +153,9 @@
 
     const/4 v0, -0x1
 
-    const-string v1, "androidx.compose.ui.layout.LayoutNodeSubcompositionsState.subcompose.<anonymous>.<anonymous>.<anonymous> (SubcomposeLayout.kt:700)"
+    const-string v1, "androidx.compose.ui.layout.LayoutNodeSubcompositionsState.subcompose.<anonymous>.<anonymous>.<anonymous> (SubcomposeLayout.kt:477)"
 
-    const v2, -0x2132aea
+    const v2, -0x68551fe9
 
     invoke-static {v2, p2, v0, v1}, Landroidx/compose/runtime/ComposerKt;->traceEventStart(IIILjava/lang/String;)V
 
@@ -170,14 +170,14 @@
 
     const/16 v0, 0xcf
 
-    .line 1064
+    .line 988
     invoke-static {p2}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
     move-result-object v1
 
     invoke-interface {p1, v0, v1}, Landroidx/compose/runtime/Composer;->startReusableGroup(ILjava/lang/Object;)V
 
-    .line 1065
+    .line 989
     invoke-interface {p1, p2}, Landroidx/compose/runtime/Composer;->changed(Z)Z
 
     move-result v0
@@ -186,7 +186,7 @@
 
     const/4 p2, 0x0
 
-    .line 1067
+    .line 991
     invoke-static {p2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object p2
@@ -195,15 +195,15 @@
 
     goto :goto_1
 
-    .line 1069
+    .line 993
     :cond_3
     invoke-interface {p1, v0}, Landroidx/compose/runtime/Composer;->deactivateToEndGroup(Z)V
 
-    .line 1071
+    .line 995
     :goto_1
     invoke-interface {p1}, Landroidx/compose/runtime/Composer;->endReusableGroup()V
 
-    .line 1072
+    .line 996
     invoke-static {}, Landroidx/compose/runtime/ComposerKt;->isTraceInProgress()Z
 
     move-result p0

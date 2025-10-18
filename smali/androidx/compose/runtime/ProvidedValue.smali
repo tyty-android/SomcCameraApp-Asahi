@@ -79,7 +79,7 @@
 .end method
 
 .method public constructor <init>(Landroidx/compose/runtime/CompositionLocal;Ljava/lang/Object;Z)V
-    .locals 1
+    .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -88,20 +88,16 @@
         }
     .end annotation
 
-    const-string v0, "compositionLocal"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 293
+    .line 291
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 294
+    .line 292
     iput-object p1, p0, Landroidx/compose/runtime/ProvidedValue;->compositionLocal:Landroidx/compose/runtime/CompositionLocal;
 
-    .line 295
+    .line 293
     iput-object p2, p0, Landroidx/compose/runtime/ProvidedValue;->value:Ljava/lang/Object;
 
-    .line 296
+    .line 294
     iput-boolean p3, p0, Landroidx/compose/runtime/ProvidedValue;->canOverride:Z
 
     return-void
@@ -112,7 +108,7 @@
 .method public final getCanOverride()Z
     .locals 0
 
-    .line 296
+    .line 294
     iget-boolean p0, p0, Landroidx/compose/runtime/ProvidedValue;->canOverride:Z
 
     return p0
@@ -128,7 +124,7 @@
         }
     .end annotation
 
-    .line 294
+    .line 292
     iget-object p0, p0, Landroidx/compose/runtime/ProvidedValue;->compositionLocal:Landroidx/compose/runtime/CompositionLocal;
 
     return-object p0
@@ -142,7 +138,7 @@
         }
     .end annotation
 
-    .line 295
+    .line 293
     iget-object p0, p0, Landroidx/compose/runtime/ProvidedValue;->value:Ljava/lang/Object;
 
     return-object p0

@@ -29,7 +29,7 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/SourceDebugExtension;
-    value = "SMAP\nRecomposer.kt\nKotlin\n*S Kotlin\n*F\n+ 1 Recomposer.kt\nandroidx/compose/runtime/Recomposer$runFrameLoop$2\n+ 2 Trace.kt\nandroidx/compose/runtime/TraceKt\n+ 3 ActualJvm.jvm.kt\nandroidx/compose/runtime/ActualJvm_jvmKt\n+ 4 ListUtils.kt\nandroidx/compose/runtime/snapshots/ListUtilsKt\n*L\n1#1,1502:1\n46#2,5:1503\n46#2,3:1508\n50#2:1537\n70#3:1511\n70#3:1536\n33#4,6:1512\n33#4,6:1518\n33#4,6:1524\n33#4,6:1530\n*S KotlinDebug\n*F\n+ 1 Recomposer.kt\nandroidx/compose/runtime/Recomposer$runFrameLoop$2\n*L\n833#1:1503,5\n843#1:1508,3\n843#1:1537\n848#1:1511\n881#1:1536\n849#1:1512,6\n851#1:1518,6\n859#1:1524,6\n874#1:1530,6\n*E\n"
+    value = "SMAP\nRecomposer.kt\nKotlin\n*S Kotlin\n*F\n+ 1 Recomposer.kt\nandroidx/compose/runtime/Recomposer$runFrameLoop$2\n+ 2 Trace.kt\nandroidx/compose/runtime/TraceKt\n+ 3 ActualJvm.jvm.kt\nandroidx/compose/runtime/ActualJvm_jvmKt\n+ 4 ListUtils.kt\nandroidx/compose/runtime/snapshots/ListUtilsKt\n*L\n1#1,1564:1\n46#2,5:1565\n46#2,3:1570\n50#2:1599\n82#3:1573\n82#3:1598\n33#4,6:1574\n33#4,6:1580\n33#4,6:1586\n33#4,6:1592\n*S KotlinDebug\n*F\n+ 1 Recomposer.kt\nandroidx/compose/runtime/Recomposer$runFrameLoop$2\n*L\n882#1:1565,5\n892#1:1570,3\n892#1:1599\n897#1:1573\n930#1:1598\n898#1:1574,6\n900#1:1580,6\n908#1:1586,6\n923#1:1592,6\n*E\n"
 .end annotation
 
 .annotation runtime Lkotlin/Metadata;
@@ -118,7 +118,7 @@
 .method public bridge synthetic invoke(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 2
 
-    .line 829
+    .line 878
     check-cast p1, Ljava/lang/Number;
 
     invoke-virtual {p1}, Ljava/lang/Number;->longValue()J
@@ -143,7 +143,7 @@
         }
     .end annotation
 
-    .line 832
+    .line 881
     iget-object v0, p0, Landroidx/compose/runtime/Recomposer$runFrameLoop$2;->this$0:Landroidx/compose/runtime/Recomposer;
 
     invoke-static {v0}, Landroidx/compose/runtime/Recomposer;->access$getHasBroadcastFrameClockAwaiters(Landroidx/compose/runtime/Recomposer;)Z
@@ -152,19 +152,19 @@
 
     if-eqz v0, :cond_0
 
-    .line 833
+    .line 882
     const-string v0, "Recomposer:animation"
 
     iget-object v1, p0, Landroidx/compose/runtime/Recomposer$runFrameLoop$2;->this$0:Landroidx/compose/runtime/Recomposer;
 
-    .line 1503
+    .line 1565
     sget-object v2, Landroidx/compose/runtime/Trace;->INSTANCE:Landroidx/compose/runtime/Trace;
 
     invoke-virtual {v2, v0}, Landroidx/compose/runtime/Trace;->beginSection(Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object v0
 
-    .line 836
+    .line 885
     :try_start_0
     invoke-static {v1}, Landroidx/compose/runtime/Recomposer;->access$getBroadcastFrameClock$p(Landroidx/compose/runtime/Recomposer;)Landroidx/compose/runtime/BroadcastFrameClock;
 
@@ -172,17 +172,17 @@
 
     invoke-virtual {v1, p1, p2}, Landroidx/compose/runtime/BroadcastFrameClock;->sendFrame(J)V
 
-    .line 839
+    .line 888
     sget-object p1, Landroidx/compose/runtime/snapshots/Snapshot;->Companion:Landroidx/compose/runtime/snapshots/Snapshot$Companion;
 
     invoke-virtual {p1}, Landroidx/compose/runtime/snapshots/Snapshot$Companion;->sendApplyNotifications()V
 
-    .line 840
+    .line 889
     sget-object p1, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 1507
+    .line 1569
     sget-object p1, Landroidx/compose/runtime/Trace;->INSTANCE:Landroidx/compose/runtime/Trace;
 
     invoke-virtual {p1, v0}, Landroidx/compose/runtime/Trace;->endSection(Ljava/lang/Object;)V
@@ -198,7 +198,7 @@
 
     throw p0
 
-    .line 843
+    .line 892
     :cond_0
     :goto_0
     const-string p1, "Recomposer:recompose"
@@ -211,34 +211,34 @@
 
     iget-object p0, p0, Landroidx/compose/runtime/Recomposer$runFrameLoop$2;->$frameSignal:Landroidx/compose/runtime/ProduceFrameSignal;
 
-    .line 1508
+    .line 1570
     sget-object v2, Landroidx/compose/runtime/Trace;->INSTANCE:Landroidx/compose/runtime/Trace;
 
     invoke-virtual {v2, p1}, Landroidx/compose/runtime/Trace;->beginSection(Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object p1
 
-    .line 847
+    .line 896
     :try_start_1
     invoke-static {p2}, Landroidx/compose/runtime/Recomposer;->access$recordComposerModifications(Landroidx/compose/runtime/Recomposer;)Z
 
-    .line 848
+    .line 897
     invoke-static {p2}, Landroidx/compose/runtime/Recomposer;->access$getStateLock$p(Landroidx/compose/runtime/Recomposer;)Ljava/lang/Object;
 
     move-result-object v2
 
-    .line 1511
+    .line 1573
     monitor-enter v2
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_5
 
-    .line 849
+    .line 898
     :try_start_2
     invoke-static {p2}, Landroidx/compose/runtime/Recomposer;->access$getCompositionsAwaitingApply$p(Landroidx/compose/runtime/Recomposer;)Ljava/util/List;
 
     move-result-object v3
 
-    .line 1513
+    .line 1575
     invoke-interface {v3}, Ljava/util/List;->size()I
 
     move-result v4
@@ -250,15 +250,15 @@
     :goto_1
     if-ge v6, v4, :cond_1
 
-    .line 1514
+    .line 1576
     invoke-interface {v3, v6}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
     move-result-object v7
 
-    .line 1515
+    .line 1577
     check-cast v7, Landroidx/compose/runtime/ControlledComposition;
 
-    .line 849
+    .line 898
     move-object v8, v1
 
     check-cast v8, Ljava/util/Collection;
@@ -269,7 +269,7 @@
 
     goto :goto_1
 
-    .line 850
+    .line 899
     :cond_1
     invoke-static {p2}, Landroidx/compose/runtime/Recomposer;->access$getCompositionsAwaitingApply$p(Landroidx/compose/runtime/Recomposer;)Ljava/util/List;
 
@@ -277,12 +277,12 @@
 
     invoke-interface {v3}, Ljava/util/List;->clear()V
 
-    .line 851
+    .line 900
     invoke-static {p2}, Landroidx/compose/runtime/Recomposer;->access$getCompositionInvalidations$p(Landroidx/compose/runtime/Recomposer;)Ljava/util/List;
 
     move-result-object v3
 
-    .line 1519
+    .line 1581
     invoke-interface {v3}, Ljava/util/List;->size()I
 
     move-result v4
@@ -292,15 +292,15 @@
     :goto_2
     if-ge v6, v4, :cond_2
 
-    .line 1520
+    .line 1582
     invoke-interface {v3, v6}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
     move-result-object v7
 
-    .line 1521
+    .line 1583
     check-cast v7, Landroidx/compose/runtime/ControlledComposition;
 
-    .line 851
+    .line 900
     move-object v8, v0
 
     check-cast v8, Ljava/util/Collection;
@@ -311,7 +311,7 @@
 
     goto :goto_2
 
-    .line 852
+    .line 901
     :cond_2
     invoke-static {p2}, Landroidx/compose/runtime/Recomposer;->access$getCompositionInvalidations$p(Landroidx/compose/runtime/Recomposer;)Ljava/util/List;
 
@@ -319,26 +319,26 @@
 
     invoke-interface {v3}, Ljava/util/List;->clear()V
 
-    .line 853
+    .line 902
     invoke-virtual {p0}, Landroidx/compose/runtime/ProduceFrameSignal;->takeFrameRequestLocked()V
 
-    .line 854
+    .line 903
     sget-object p0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
     :try_end_2
     .catchall {:try_start_2 .. :try_end_2} :catchall_4
 
-    .line 1511
+    .line 1573
     :try_start_3
     monitor-exit v2
 
-    .line 857
+    .line 906
     new-instance p0, Landroidx/compose/runtime/collection/IdentityArraySet;
 
     invoke-direct {p0}, Landroidx/compose/runtime/collection/IdentityArraySet;-><init>()V
     :try_end_3
     .catchall {:try_start_3 .. :try_end_3} :catchall_5
 
-    .line 1525
+    .line 1587
     :try_start_4
     invoke-interface {v0}, Ljava/util/List;->size()I
 
@@ -349,22 +349,22 @@
     :goto_3
     if-ge v3, v2, :cond_4
 
-    .line 1526
+    .line 1588
     invoke-interface {v0, v3}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
     move-result-object v4
 
-    .line 1527
+    .line 1589
     check-cast v4, Landroidx/compose/runtime/ControlledComposition;
 
-    .line 860
+    .line 909
     invoke-static {p2, v4, p0}, Landroidx/compose/runtime/Recomposer;->access$performRecompose(Landroidx/compose/runtime/Recomposer;Landroidx/compose/runtime/ControlledComposition;Landroidx/compose/runtime/collection/IdentityArraySet;)Landroidx/compose/runtime/ControlledComposition;
 
     move-result-object v4
 
     if-eqz v4, :cond_3
 
-    .line 861
+    .line 910
     move-object v6, v1
 
     check-cast v6, Ljava/util/Collection;
@@ -378,12 +378,12 @@
 
     goto :goto_3
 
-    .line 865
+    .line 914
     :cond_4
     :try_start_5
     invoke-interface {v0}, Ljava/util/List;->clear()V
 
-    .line 870
+    .line 919
     move-object p0, v1
 
     check-cast p0, Ljava/util/Collection;
@@ -408,7 +408,7 @@
     :try_end_5
     .catchall {:try_start_5 .. :try_end_5} :catchall_5
 
-    .line 1531
+    .line 1593
     :cond_5
     :try_start_6
     invoke-interface {v1}, Ljava/util/List;->size()I
@@ -418,15 +418,15 @@
     :goto_4
     if-ge v5, p0, :cond_6
 
-    .line 1532
+    .line 1594
     invoke-interface {v1, v5}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
     move-result-object v0
 
-    .line 1533
+    .line 1595
     check-cast v0, Landroidx/compose/runtime/ControlledComposition;
 
-    .line 875
+    .line 924
     invoke-interface {v0}, Landroidx/compose/runtime/ControlledComposition;->applyChanges()V
     :try_end_6
     .catchall {:try_start_6 .. :try_end_6} :catchall_2
@@ -435,22 +435,22 @@
 
     goto :goto_4
 
-    .line 878
+    .line 927
     :cond_6
     :try_start_7
     invoke-interface {v1}, Ljava/util/List;->clear()V
 
-    .line 881
+    .line 930
     invoke-static {p2}, Landroidx/compose/runtime/Recomposer;->access$getStateLock$p(Landroidx/compose/runtime/Recomposer;)Ljava/lang/Object;
 
     move-result-object p0
 
-    .line 1536
+    .line 1598
     monitor-enter p0
     :try_end_7
     .catchall {:try_start_7 .. :try_end_7} :catchall_5
 
-    .line 882
+    .line 931
     :try_start_8
     invoke-static {p2}, Landroidx/compose/runtime/Recomposer;->access$deriveStateLocked(Landroidx/compose/runtime/Recomposer;)Lkotlinx/coroutines/CancellableContinuation;
 
@@ -458,13 +458,13 @@
     :try_end_8
     .catchall {:try_start_8 .. :try_end_8} :catchall_1
 
-    .line 1536
+    .line 1598
     :try_start_9
     monitor-exit p0
     :try_end_9
     .catchall {:try_start_9 .. :try_end_9} :catchall_5
 
-    .line 1537
+    .line 1599
     sget-object p0, Landroidx/compose/runtime/Trace;->INSTANCE:Landroidx/compose/runtime/Trace;
 
     invoke-virtual {p0, p1}, Landroidx/compose/runtime/Trace;->endSection(Ljava/lang/Object;)V
@@ -474,7 +474,7 @@
     :catchall_1
     move-exception p2
 
-    .line 1536
+    .line 1598
     :try_start_a
     monitor-exit p0
 
@@ -483,7 +483,7 @@
     :catchall_2
     move-exception p0
 
-    .line 878
+    .line 927
     invoke-interface {v1}, Ljava/util/List;->clear()V
 
     throw p0
@@ -491,7 +491,7 @@
     :catchall_3
     move-exception p0
 
-    .line 865
+    .line 914
     invoke-interface {v0}, Ljava/util/List;->clear()V
 
     throw p0
@@ -499,7 +499,7 @@
     :catchall_4
     move-exception p0
 
-    .line 1511
+    .line 1573
     monitor-exit v2
 
     throw p0
@@ -509,7 +509,7 @@
     :catchall_5
     move-exception p0
 
-    .line 1537
+    .line 1599
     sget-object p2, Landroidx/compose/runtime/Trace;->INSTANCE:Landroidx/compose/runtime/Trace;
 
     invoke-virtual {p2, p1}, Landroidx/compose/runtime/Trace;->endSection(Ljava/lang/Object;)V

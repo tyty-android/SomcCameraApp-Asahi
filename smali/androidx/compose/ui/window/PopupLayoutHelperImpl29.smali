@@ -35,7 +35,7 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 794
+    .line 828
     invoke-direct {p0}, Landroidx/compose/ui/window/PopupLayoutHelperImpl;-><init>()V
 
     return-void
@@ -44,27 +44,23 @@
 
 # virtual methods
 .method public setGestureExclusionRects(Landroid/view/View;II)V
-    .locals 1
+    .locals 2
 
-    const-string p0, "composeView"
+    const/4 p0, 0x1
 
-    invoke-static {p1, p0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+    .line 831
+    new-array p0, p0, [Landroid/graphics/Rect;
 
-    .line 797
-    new-instance p0, Landroid/graphics/Rect;
+    new-instance v0, Landroid/graphics/Rect;
 
-    const/4 v0, 0x0
+    const/4 v1, 0x0
 
-    invoke-direct {p0, v0, v0, p2, p3}, Landroid/graphics/Rect;-><init>(IIII)V
+    invoke-direct {v0, v1, v1, p2, p3}, Landroid/graphics/Rect;-><init>(IIII)V
 
-    const/4 p2, 0x1
+    aput-object v0, p0, v1
 
-    new-array p2, p2, [Landroid/graphics/Rect;
-
-    aput-object p0, p2, v0
-
-    .line 796
-    invoke-static {p2}, Lkotlin/collections/CollectionsKt;->mutableListOf([Ljava/lang/Object;)Ljava/util/List;
+    .line 830
+    invoke-static {p0}, Lkotlin/collections/CollectionsKt;->mutableListOf([Ljava/lang/Object;)Ljava/util/List;
 
     move-result-object p0
 

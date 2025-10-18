@@ -27,7 +27,7 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/SourceDebugExtension;
-    value = "SMAP\nLazyDsl.kt\nKotlin\n*S Kotlin\n*F\n+ 1 LazyDsl.kt\nandroidx/compose/foundation/lazy/LazyDslKt$items$2\n*L\n1#1,423:1\n*E\n"
+    value = "SMAP\nLazyDsl.kt\nKotlin\n*S Kotlin\n*F\n+ 1 LazyDsl.kt\nandroidx/compose/foundation/lazy/LazyDslKt$items$2\n*L\n1#1,426:1\n*E\n"
 .end annotation
 
 .annotation runtime Lkotlin/Metadata;
@@ -105,7 +105,7 @@
 .method public final invoke(I)Ljava/lang/Object;
     .locals 1
 
-    .line 143
+    .line 146
     iget-object v0, p0, Landroidx/compose/foundation/lazy/LazyDslKt$items$2;->$key:Lkotlin/jvm/functions/Function1;
 
     iget-object p0, p0, Landroidx/compose/foundation/lazy/LazyDslKt$items$2;->$items:Ljava/util/List;
@@ -124,7 +124,7 @@
 .method public bridge synthetic invoke(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
 
-    .line 141
+    .line 144
     check-cast p1, Ljava/lang/Number;
 
     invoke-virtual {p1}, Ljava/lang/Number;->intValue()I

@@ -31,6 +31,8 @@
 
 
 # static fields
+.field public static final $stable:I
+
 .field public static final INSTANCE:Landroidx/compose/runtime/Trace;
 
 
@@ -60,10 +62,6 @@
 # virtual methods
 .method public final beginSection(Ljava/lang/String;)Ljava/lang/Object;
     .locals 0
-
-    const-string p0, "name"
-
-    invoke-static {p1, p0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 31
     invoke-static {p1}, Landroid/os/Trace;->beginSection(Ljava/lang/String;)V

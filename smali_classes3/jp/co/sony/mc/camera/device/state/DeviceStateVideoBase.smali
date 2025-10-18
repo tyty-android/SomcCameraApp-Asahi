@@ -17,84 +17,49 @@
 .method constructor <init>(Ljava/lang/String;)V
     .locals 0
 
-    .line 79
+    .line 82
     invoke-direct {p0, p1}, Ljp/co/sony/mc/camera/device/state/DeviceState;-><init>(Ljava/lang/String;)V
 
     return-void
 .end method
 
-.method private flushRecording(Ljp/co/sony/mc/camera/device/state/DeviceStateContext;)V
-    .locals 2
-
-    .line 981
-    invoke-virtual {p1}, Ljp/co/sony/mc/camera/device/state/DeviceStateContext;->getCameraParameters()Ljp/co/sony/mc/camera/device/CameraParameters;
-
-    move-result-object v0
-
-    if-eqz v0, :cond_0
-
-    .line 983
-    invoke-virtual {v0}, Ljp/co/sony/mc/camera/device/CameraParameters;->getVideoStabilizer()Ljava/lang/String;
-
-    move-result-object v0
-
-    .line 984
-    sget-object v1, Ljp/co/sony/mc/camera/configuration/parameters/VideoStabilizer;->INTELLIGENT_ACTIVE:Ljp/co/sony/mc/camera/configuration/parameters/VideoStabilizer;
-
-    invoke-virtual {v1}, Ljp/co/sony/mc/camera/configuration/parameters/VideoStabilizer;->getValue()Ljava/lang/String;
-
-    move-result-object v1
-
-    invoke-virtual {v1, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    move-result v0
-
-    if-eqz v0, :cond_0
-
-    const/4 v0, 0x2
-
-    const/4 v1, 0x1
-
-    .line 985
-    invoke-virtual {p0, p1, v0, v1}, Ljp/co/sony/mc/camera/device/state/DeviceStateVideoBase;->setIntelligentActiveTrigger(Ljp/co/sony/mc/camera/device/state/DeviceStateContext;IZ)V
-
-    :cond_0
-    return-void
-.end method
-
 .method private setOneShotRequest(Ljp/co/sony/mc/camera/device/state/DeviceStateContext;Ljp/co/sony/mc/camera/device/CaptureRequestHolder;Ljp/co/sony/mc/camera/device/SnapshotRequest;ILandroid/media/ImageReader;Z)V
-    .locals 19
+    .locals 17
 
     move-object/from16 v1, p1
 
     move-object/from16 v2, p3
 
-    .line 580
+    .line 587
     const-string v3, "Failed:"
 
-    const-string/jumbo v0, "setOneShotRequest Process [IN]"
+    const/4 v4, 0x1
 
-    filled-new-array {v0}, [Ljava/lang/String;
+    new-array v0, v4, [Ljava/lang/String;
 
-    move-result-object v0
+    const-string/jumbo v5, "setOneShotRequest Process [IN]"
+
+    const/4 v6, 0x0
+
+    aput-object v5, v0, v6
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
-    .line 582
+    .line 589
     invoke-virtual/range {p1 .. p1}, Ljp/co/sony/mc/camera/device/state/DeviceStateContext;->getApplicationContext()Landroid/content/Context;
 
-    move-result-object v4
+    move-result-object v5
 
-    .line 583
+    .line 590
     invoke-virtual/range {p1 .. p1}, Ljp/co/sony/mc/camera/device/state/DeviceStateContext;->getCameraInfo()Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CameraDeviceInfo;
 
     move-result-object v0
 
     invoke-virtual {v0}, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CameraDeviceInfo;->getCameraDevice()Landroid/hardware/camera2/CameraDevice;
 
-    move-result-object v5
+    move-result-object v7
 
-    .line 584
+    .line 591
     invoke-virtual/range {p1 .. p1}, Ljp/co/sony/mc/camera/device/state/DeviceStateContext;->getCameraInfo()Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CameraDeviceInfo;
 
     move-result-object v0
@@ -103,121 +68,125 @@
 
     move-result-object v0
 
-    .line 585
+    .line 592
     invoke-virtual/range {p1 .. p1}, Ljp/co/sony/mc/camera/device/state/DeviceStateContext;->getCameraInfo()Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CameraDeviceInfo;
 
-    move-result-object v6
+    move-result-object v8
 
-    invoke-virtual {v6}, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CameraDeviceInfo;->getCameraId()Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;
+    invoke-virtual {v8}, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CameraDeviceInfo;->getCameraId()Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;
 
-    move-result-object v6
+    move-result-object v8
 
-    .line 586
+    .line 593
     invoke-virtual/range {p1 .. p1}, Ljp/co/sony/mc/camera/device/state/DeviceStateContext;->getCaptureSessionInfo()Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CaptureSessionInfo;
 
-    move-result-object v7
-
-    .line 587
-    invoke-virtual/range {p1 .. p1}, Ljp/co/sony/mc/camera/device/state/DeviceStateContext;->getSurfaceInfo()Ljp/co/sony/mc/camera/device/state/DeviceStateContext$SurfaceInfo;
-
-    move-result-object v8
-
-    invoke-virtual {v8}, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$SurfaceInfo;->getPreviewSurface()Landroid/view/Surface;
-
-    move-result-object v8
-
-    .line 588
-    invoke-virtual/range {p1 .. p1}, Ljp/co/sony/mc/camera/device/state/DeviceStateContext;->getSurfaceInfo()Ljp/co/sony/mc/camera/device/state/DeviceStateContext$SurfaceInfo;
-
     move-result-object v9
 
-    invoke-virtual {v9}, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$SurfaceInfo;->getRecordingSurface()Landroid/view/Surface;
-
-    move-result-object v9
-
-    .line 589
-    invoke-virtual/range {p5 .. p5}, Landroid/media/ImageReader;->getSurface()Landroid/view/Surface;
+    .line 594
+    invoke-virtual/range {p1 .. p1}, Ljp/co/sony/mc/camera/device/state/DeviceStateContext;->getSurfaceInfo()Ljp/co/sony/mc/camera/device/state/DeviceStateContext$SurfaceInfo;
 
     move-result-object v10
 
-    .line 594
-    invoke-virtual/range {p1 .. p1}, Ljp/co/sony/mc/camera/device/state/DeviceStateContext;->getDeviceHandler()Ljp/co/sony/mc/camera/device/CameraDeviceHandler$CameraDeviceHandlerInquirer;
+    invoke-virtual {v10}, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$SurfaceInfo;->getPreviewSurface()Landroid/view/Surface;
+
+    move-result-object v10
+
+    .line 596
+    invoke-virtual/range {p1 .. p1}, Ljp/co/sony/mc/camera/device/state/DeviceStateContext;->getSurfaceInfo()Ljp/co/sony/mc/camera/device/state/DeviceStateContext$SurfaceInfo;
 
     move-result-object v11
 
-    .line 595
-    invoke-virtual/range {p2 .. p2}, Ljp/co/sony/mc/camera/device/CaptureRequestHolder;->copy()Ljp/co/sony/mc/camera/device/CaptureRequestHolder;
+    invoke-virtual {v11}, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$SurfaceInfo;->getRecordingSurfaces()Ljava/util/Map;
+
+    move-result-object v11
+
+    .line 597
+    invoke-virtual/range {p5 .. p5}, Landroid/media/ImageReader;->getSurface()Landroid/view/Surface;
 
     move-result-object v12
 
-    .line 597
-    invoke-virtual/range {p1 .. p1}, Ljp/co/sony/mc/camera/device/state/DeviceStateContext;->getCameraParameters()Ljp/co/sony/mc/camera/device/CameraParameters;
+    .line 602
+    invoke-virtual/range {p1 .. p1}, Ljp/co/sony/mc/camera/device/state/DeviceStateContext;->getDeviceHandler()Ljp/co/sony/mc/camera/device/CameraDeviceHandler$CameraDeviceHandlerInquirer;
 
     move-result-object v13
 
-    if-nez v13, :cond_0
+    .line 603
+    invoke-virtual/range {p2 .. p2}, Ljp/co/sony/mc/camera/device/CaptureRequestHolder;->copy()Ljp/co/sony/mc/camera/device/CaptureRequestHolder;
 
-    .line 599
-    const-string v0, "CameraParameter is null."
+    move-result-object v14
 
-    filled-new-array {v0}, [Ljava/lang/String;
+    .line 605
+    invoke-virtual/range {p1 .. p1}, Ljp/co/sony/mc/camera/device/state/DeviceStateContext;->getCameraParameters()Ljp/co/sony/mc/camera/device/CameraParameters;
 
-    move-result-object v0
+    move-result-object v15
+
+    if-nez v15, :cond_0
+
+    .line 607
+    new-array v0, v4, [Ljava/lang/String;
+
+    const-string v1, "CameraParameter is null."
+
+    aput-object v1, v0, v6
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/util/CamLog;->w([Ljava/lang/String;)V
 
     return-void
 
-    .line 603
+    .line 611
     :cond_0
-    invoke-virtual {v13}, Ljp/co/sony/mc/camera/device/CameraParameters;->getVideoSize()Ljp/co/sony/mc/camera/configuration/parameters/VideoSize;
+    invoke-virtual {v15}, Ljp/co/sony/mc/camera/device/CameraParameters;->getVideoSize()Ljp/co/sony/mc/camera/configuration/parameters/VideoSize;
 
-    .line 604
-    invoke-virtual {v13}, Ljp/co/sony/mc/camera/device/CameraParameters;->getVideoHdr()Ljp/co/sony/mc/camera/configuration/parameters/VideoHdr;
+    .line 612
+    invoke-virtual {v15}, Ljp/co/sony/mc/camera/device/CameraParameters;->getVideoHdr()Ljp/co/sony/mc/camera/configuration/parameters/VideoHdr;
 
-    .line 605
-    invoke-virtual {v13}, Ljp/co/sony/mc/camera/device/CameraParameters;->isSlowMotion()Z
+    .line 613
+    invoke-virtual {v15}, Ljp/co/sony/mc/camera/device/CameraParameters;->isSlowMotion()Z
 
-    .line 607
-    iget-object v14, v7, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CaptureSessionInfo;->outputConfiguration:Landroid/hardware/camera2/params/OutputConfiguration;
+    .line 615
+    iget-object v6, v9, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CaptureSessionInfo;->outputConfiguration:Landroid/hardware/camera2/params/OutputConfiguration;
 
-    const/4 v15, 0x1
+    if-eqz v6, :cond_2
 
-    if-eqz v14, :cond_2
+    .line 616
+    iget-object v6, v9, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CaptureSessionInfo;->outputConfiguration:Landroid/hardware/camera2/params/OutputConfiguration;
 
-    .line 608
-    iget-object v14, v7, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CaptureSessionInfo;->outputConfiguration:Landroid/hardware/camera2/params/OutputConfiguration;
+    invoke-virtual {v6, v10}, Landroid/hardware/camera2/params/OutputConfiguration;->addSurface(Landroid/view/Surface;)V
 
-    invoke-virtual {v14, v8}, Landroid/hardware/camera2/params/OutputConfiguration;->addSurface(Landroid/view/Surface;)V
-
-    .line 610
+    .line 618
     :try_start_0
-    iget-object v14, v7, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CaptureSessionInfo;->captureSession:Landroid/hardware/camera2/CameraCaptureSession;
+    iget-object v6, v9, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CaptureSessionInfo;->captureSession:Landroid/hardware/camera2/CameraCaptureSession;
     :try_end_0
-    .catch Landroid/hardware/camera2/CameraAccessException; {:try_start_0 .. :try_end_0} :catch_2
-    .catch Ljava/lang/IllegalStateException; {:try_start_0 .. :try_end_0} :catch_1
+    .catch Landroid/hardware/camera2/CameraAccessException; {:try_start_0 .. :try_end_0} :catch_3
+    .catch Ljava/lang/IllegalStateException; {:try_start_0 .. :try_end_0} :catch_2
 
-    move-object/from16 v16, v11
+    move-object/from16 p5, v13
+
+    const/4 v4, 0x1
 
     :try_start_1
-    new-array v11, v15, [Landroid/hardware/camera2/params/OutputConfiguration;
-
-    iget-object v15, v7, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CaptureSessionInfo;->outputConfiguration:Landroid/hardware/camera2/params/OutputConfiguration;
-
-    const/16 v18, 0x0
-
-    aput-object v15, v11, v18
-
-    .line 611
-    invoke-static {v11}, Ljava/util/Arrays;->asList([Ljava/lang/Object;)Ljava/util/List;
-
-    move-result-object v11
-
-    .line 610
-    invoke-virtual {v14, v11}, Landroid/hardware/camera2/CameraCaptureSession;->finalizeOutputConfigurations(Ljava/util/List;)V
+    new-array v13, v4, [Landroid/hardware/camera2/params/OutputConfiguration;
     :try_end_1
-    .catch Landroid/hardware/camera2/CameraAccessException; {:try_start_1 .. :try_end_1} :catch_2
+    .catch Landroid/hardware/camera2/CameraAccessException; {:try_start_1 .. :try_end_1} :catch_1
     .catch Ljava/lang/IllegalStateException; {:try_start_1 .. :try_end_1} :catch_0
+
+    :try_start_2
+    iget-object v4, v9, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CaptureSessionInfo;->outputConfiguration:Landroid/hardware/camera2/params/OutputConfiguration;
+
+    const/16 v16, 0x0
+
+    aput-object v4, v13, v16
+
+    .line 619
+    invoke-static {v13}, Ljava/util/Arrays;->asList([Ljava/lang/Object;)Ljava/util/List;
+
+    move-result-object v4
+
+    .line 618
+    invoke-virtual {v6, v4}, Landroid/hardware/camera2/CameraCaptureSession;->finalizeOutputConfigurations(Ljava/util/List;)V
+    :try_end_2
+    .catch Landroid/hardware/camera2/CameraAccessException; {:try_start_2 .. :try_end_2} :catch_3
+    .catch Ljava/lang/IllegalStateException; {:try_start_2 .. :try_end_2} :catch_0
 
     goto :goto_1
 
@@ -227,53 +196,63 @@
     goto :goto_0
 
     :catch_1
-    move-exception v0
-
-    move-object/from16 v16, v11
-
-    .line 621
-    :goto_0
-    invoke-virtual/range {p1 .. p1}, Ljp/co/sony/mc/camera/device/state/DeviceStateContext;->getCameraErrorStatus()Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CameraErrorStatus;
-
-    move-result-object v11
-
-    invoke-virtual {v11}, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CameraErrorStatus;->isErrorCaused()Z
-
-    move-result v11
-
-    if-eqz v11, :cond_1
-
-    .line 622
-    const-string v11, "finalizeOutputConfigurations failed. "
-
-    invoke-static {v11, v0}, Ljp/co/sony/mc/camera/util/CamLog;->e(Ljava/lang/String;Ljava/lang/Throwable;)V
-
-    :goto_1
-    const/4 v11, 0x0
-
-    .line 627
-    iput-object v11, v7, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CaptureSessionInfo;->outputConfiguration:Landroid/hardware/camera2/params/OutputConfiguration;
+    move v2, v4
 
     goto :goto_2
 
-    .line 624
+    :catch_2
+    move-exception v0
+
+    move-object/from16 p5, v13
+
+    .line 629
+    :goto_0
+    invoke-virtual/range {p1 .. p1}, Ljp/co/sony/mc/camera/device/state/DeviceStateContext;->getCameraErrorStatus()Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CameraErrorStatus;
+
+    move-result-object v4
+
+    invoke-virtual {v4}, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CameraErrorStatus;->isErrorCaused()Z
+
+    move-result v4
+
+    if-eqz v4, :cond_1
+
+    .line 630
+    const-string v4, "finalizeOutputConfigurations failed. "
+
+    invoke-static {v4, v0}, Ljp/co/sony/mc/camera/util/CamLog;->e(Ljava/lang/String;Ljava/lang/Throwable;)V
+
+    :goto_1
+    const/4 v4, 0x0
+
+    .line 635
+    iput-object v4, v9, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CaptureSessionInfo;->outputConfiguration:Landroid/hardware/camera2/params/OutputConfiguration;
+
+    goto :goto_3
+
+    .line 632
     :cond_1
     throw v0
 
-    .line 613
-    :catch_2
-    const-string v2, "finalizeOutputConfigurations failed."
+    :catch_3
+    const/4 v2, 0x1
 
-    filled-new-array {v2}, [Ljava/lang/String;
+    .line 621
+    :goto_2
+    new-array v2, v2, [Ljava/lang/String;
 
-    move-result-object v2
+    const-string v3, "finalizeOutputConfigurations failed."
+
+    const/4 v4, 0x0
+
+    aput-object v3, v2, v4
 
     invoke-static {v2}, Ljp/co/sony/mc/camera/util/CamLog;->e([Ljava/lang/String;)V
 
-    .line 615
+    .line 623
     invoke-direct/range {p0 .. p1}, Ljp/co/sony/mc/camera/device/state/DeviceStateVideoBase;->stopOnCameraError(Ljp/co/sony/mc/camera/device/state/DeviceStateContext;)V
 
-    .line 617
+    .line 625
     sget-object v2, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$ErrorCode;->ERROR_ON_CAMERA_ERROR:Ljp/co/sony/mc/camera/device/CameraDeviceHandler$ErrorCode;
 
     move-object/from16 v3, p0
@@ -283,311 +262,359 @@
     return-void
 
     :cond_2
-    move-object/from16 v16, v11
-
-    :goto_2
-    const/4 v0, 0x3
-
-    const/4 v11, 0x2
-
-    if-eqz v9, :cond_3
-
-    .line 632
-    new-array v14, v0, [Landroid/view/Surface;
-
-    const/4 v15, 0x0
-
-    aput-object v8, v14, v15
-
-    const/16 v17, 0x1
-
-    aput-object v9, v14, v17
-
-    aput-object v10, v14, v11
-
-    goto :goto_3
-
-    :cond_3
-    const/4 v15, 0x0
-
-    const/16 v17, 0x1
-
-    .line 635
-    new-array v14, v11, [Landroid/view/Surface;
-
-    aput-object v8, v14, v15
-
-    aput-object v10, v14, v17
+    move-object/from16 p5, v13
 
     .line 639
     :goto_3
-    sget-object v10, Landroid/hardware/camera2/CaptureRequest;->CONTROL_AE_TARGET_FPS_RANGE:Landroid/hardware/camera2/CaptureRequest$Key;
+    invoke-interface {v11}, Ljava/util/Map;->isEmpty()Z
 
-    .line 641
-    invoke-virtual {v13}, Ljp/co/sony/mc/camera/device/CameraParameters;->getCaptureFps()Ljp/co/sony/mc/camera/configuration/parameters/CaptureFps;
+    move-result v0
 
-    move-result-object v15
-
-    invoke-virtual {v15}, Ljp/co/sony/mc/camera/configuration/parameters/CaptureFps;->getFpsIntValue()I
-
-    move-result v15
+    if-nez v0, :cond_3
 
     .line 640
-    invoke-static {v15}, Ljp/co/sony/mc/camera/device/FpsProvider;->getFpsRangeForVideoRecording(I)Landroid/util/Range;
+    new-instance v0, Ljava/util/ArrayList;
 
-    move-result-object v15
+    invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
-    .line 639
-    invoke-virtual {v12, v10, v15}, Ljp/co/sony/mc/camera/device/CaptureRequestHolder;->set(Landroid/hardware/camera2/CaptureRequest$Key;Ljava/lang/Object;)V
+    .line 641
+    invoke-interface {v0, v10}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    if-eqz v2, :cond_4
+    .line 642
+    invoke-interface {v11}, Ljava/util/Map;->values()Ljava/util/Collection;
 
-    move/from16 v10, p6
+    move-result-object v4
 
-    .line 646
-    invoke-virtual {v1, v2, v10}, Ljp/co/sony/mc/camera/device/state/DeviceStateContext;->createCaptureProcessAdapter(Ljp/co/sony/mc/camera/device/SnapshotRequest;Z)Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CaptureProcessAdapter;
+    invoke-interface {v0, v4}, Ljava/util/List;->addAll(Ljava/util/Collection;)Z
 
-    move-result-object v2
+    .line 643
+    invoke-interface {v0, v12}, Ljava/util/List;->add(Ljava/lang/Object;)Z
+
+    const/4 v4, 0x0
+
+    .line 644
+    new-array v6, v4, [Landroid/view/Surface;
+
+    invoke-interface {v0, v6}, Ljava/util/List;->toArray([Ljava/lang/Object;)[Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, [Landroid/view/Surface;
 
     goto :goto_4
 
-    :cond_4
-    const/4 v2, 0x0
+    :cond_3
+    const/4 v4, 0x0
 
-    .line 649
+    const/4 v0, 0x2
+
+    .line 646
+    new-array v0, v0, [Landroid/view/Surface;
+
+    aput-object v10, v0, v4
+
+    const/4 v4, 0x1
+
+    aput-object v12, v0, v4
+
+    .line 648
     :goto_4
-    new-instance v10, Ljava/util/ArrayList;
-
-    invoke-direct {v10}, Ljava/util/ArrayList;-><init>()V
-
-    move/from16 v15, p4
+    sget-object v4, Landroid/hardware/camera2/CaptureRequest;->CONTROL_AE_TARGET_FPS_RANGE:Landroid/hardware/camera2/CaptureRequest$Key;
 
     .line 650
-    invoke-virtual {v12, v5, v2, v15, v14}, Ljp/co/sony/mc/camera/device/CaptureRequestHolder;->createCaptureRequest(Landroid/hardware/camera2/CameraDevice;Ljava/lang/Object;I[Landroid/view/Surface;)Landroid/hardware/camera2/CaptureRequest;
+    invoke-virtual {v15}, Ljp/co/sony/mc/camera/device/CameraParameters;->getCaptureFps()Ljp/co/sony/mc/camera/configuration/parameters/CaptureFps;
 
-    move-result-object v14
+    move-result-object v6
 
-    if-nez v14, :cond_5
+    invoke-virtual {v6}, Ljp/co/sony/mc/camera/configuration/parameters/CaptureFps;->getFpsIntValue()I
 
-    .line 656
-    const-string v0, "CaptureRequest cannot be created."
+    move-result v6
 
-    filled-new-array {v0}, [Ljava/lang/String;
+    .line 649
+    invoke-static {v6}, Ljp/co/sony/mc/camera/device/FpsProvider;->getFpsRangeForVideoRecording(I)Landroid/util/Range;
+
+    move-result-object v6
+
+    .line 648
+    invoke-virtual {v14, v4, v6}, Ljp/co/sony/mc/camera/device/CaptureRequestHolder;->set(Landroid/hardware/camera2/CaptureRequest$Key;Ljava/lang/Object;)V
+
+    if-eqz v2, :cond_4
+
+    move/from16 v4, p6
+
+    .line 655
+    invoke-virtual {v1, v2, v4}, Ljp/co/sony/mc/camera/device/state/DeviceStateContext;->createCaptureProcessAdapter(Ljp/co/sony/mc/camera/device/SnapshotRequest;Z)Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CaptureProcessAdapter;
+
+    move-result-object v4
+
+    goto :goto_5
+
+    :cond_4
+    const/4 v4, 0x0
+
+    .line 658
+    :goto_5
+    new-instance v2, Ljava/util/ArrayList;
+
+    invoke-direct {v2}, Ljava/util/ArrayList;-><init>()V
+
+    move/from16 v6, p4
+
+    .line 659
+    invoke-virtual {v14, v7, v4, v6, v0}, Ljp/co/sony/mc/camera/device/CaptureRequestHolder;->createCaptureRequest(Landroid/hardware/camera2/CameraDevice;Ljava/lang/Object;I[Landroid/view/Surface;)Landroid/hardware/camera2/CaptureRequest;
 
     move-result-object v0
+
+    if-nez v0, :cond_5
+
+    const/4 v6, 0x1
+
+    .line 665
+    new-array v0, v6, [Ljava/lang/String;
+
+    const-string v1, "CaptureRequest cannot be created."
+
+    const/4 v2, 0x0
+
+    aput-object v1, v0, v2
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
     return-void
 
-    .line 659
+    .line 668
     :cond_5
-    invoke-virtual {v10, v14}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+    invoke-virtual {v2, v0}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
-    if-eqz v9, :cond_7
+    .line 670
+    invoke-interface {v11}, Ljava/util/Map;->isEmpty()Z
 
-    .line 661
-    invoke-virtual {v13}, Ljp/co/sony/mc/camera/device/CameraParameters;->getCaptureFps()Ljp/co/sony/mc/camera/configuration/parameters/CaptureFps;
+    move-result v0
 
-    move-result-object v13
+    if-nez v0, :cond_7
 
-    sget-object v14, Ljp/co/sony/mc/camera/configuration/parameters/CaptureFps;->CAPTURE_FPS_60:Ljp/co/sony/mc/camera/configuration/parameters/CaptureFps;
+    invoke-virtual {v15}, Ljp/co/sony/mc/camera/device/CameraParameters;->getCaptureFps()Ljp/co/sony/mc/camera/configuration/parameters/CaptureFps;
 
-    if-ne v13, v14, :cond_7
+    move-result-object v0
 
-    .line 662
-    new-array v11, v11, [Landroid/view/Surface;
+    sget-object v6, Ljp/co/sony/mc/camera/configuration/parameters/CaptureFps;->CAPTURE_FPS_60:Ljp/co/sony/mc/camera/configuration/parameters/CaptureFps;
 
-    const/4 v13, 0x0
+    if-ne v0, v6, :cond_7
 
-    aput-object v8, v11, v13
+    .line 671
+    new-instance v0, Ljava/util/ArrayList;
 
-    const/4 v8, 0x1
+    invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
-    aput-object v9, v11, v8
+    .line 672
+    invoke-interface {v0, v10}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    .line 663
+    .line 673
+    invoke-interface {v11}, Ljava/util/Map;->values()Ljava/util/Collection;
+
+    move-result-object v6
+
+    invoke-interface {v0, v6}, Ljava/util/List;->addAll(Ljava/util/Collection;)Z
+
+    const/4 v6, 0x0
+
+    .line 674
+    new-array v10, v6, [Landroid/view/Surface;
+
+    invoke-interface {v0, v10}, Ljava/util/List;->toArray([Ljava/lang/Object;)[Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, [Landroid/view/Surface;
+
+    .line 675
     invoke-virtual/range {p1 .. p1}, Ljp/co/sony/mc/camera/device/state/DeviceStateContext;->copyCaptureRequestHolder()Ljp/co/sony/mc/camera/device/CaptureRequestHolder;
 
-    move-result-object v8
+    move-result-object v6
 
-    .line 664
-    sget-object v9, Landroid/hardware/camera2/CaptureRequest;->CONTROL_AE_TARGET_FPS_RANGE:Landroid/hardware/camera2/CaptureRequest$Key;
+    .line 676
+    sget-object v10, Landroid/hardware/camera2/CaptureRequest;->CONTROL_AE_TARGET_FPS_RANGE:Landroid/hardware/camera2/CaptureRequest$Key;
 
-    const/16 v13, 0x3c
+    const/16 v11, 0x3c
 
-    .line 665
-    invoke-static {v13}, Ljp/co/sony/mc/camera/device/FpsProvider;->getFpsRangeForVideoRecording(I)Landroid/util/Range;
+    .line 677
+    invoke-static {v11}, Ljp/co/sony/mc/camera/device/FpsProvider;->getFpsRangeForVideoRecording(I)Landroid/util/Range;
 
-    move-result-object v13
+    move-result-object v11
 
-    .line 664
-    invoke-virtual {v8, v9, v13}, Ljp/co/sony/mc/camera/device/CaptureRequestHolder;->set(Landroid/hardware/camera2/CaptureRequest$Key;Ljava/lang/Object;)V
+    .line 676
+    invoke-virtual {v6, v10, v11}, Ljp/co/sony/mc/camera/device/CaptureRequestHolder;->set(Landroid/hardware/camera2/CaptureRequest$Key;Ljava/lang/Object;)V
 
-    const/4 v9, 0x0
+    const/4 v10, 0x3
 
-    .line 668
-    invoke-virtual {v8, v5, v9, v0, v11}, Ljp/co/sony/mc/camera/device/CaptureRequestHolder;->createCaptureRequest(Landroid/hardware/camera2/CameraDevice;Ljava/lang/Object;I[Landroid/view/Surface;)Landroid/hardware/camera2/CaptureRequest;
+    const/4 v11, 0x0
+
+    .line 680
+    invoke-virtual {v6, v7, v11, v10, v0}, Ljp/co/sony/mc/camera/device/CaptureRequestHolder;->createCaptureRequest(Landroid/hardware/camera2/CameraDevice;Ljava/lang/Object;I[Landroid/view/Surface;)Landroid/hardware/camera2/CaptureRequest;
 
     move-result-object v0
 
     if-nez v0, :cond_6
 
-    .line 674
-    const-string v0, "captureRequestForRecord cannot be created."
+    const/4 v6, 0x1
 
-    filled-new-array {v0}, [Ljava/lang/String;
+    .line 686
+    new-array v0, v6, [Ljava/lang/String;
 
-    move-result-object v0
+    const-string v1, "captureRequestForRecord cannot be created."
+
+    const/4 v2, 0x0
+
+    aput-object v1, v0, v2
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
     return-void
 
-    .line 677
+    .line 689
     :cond_6
-    invoke-virtual {v10, v0}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+    invoke-virtual {v2, v0}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
-    .line 681
+    .line 693
     :cond_7
-    :try_start_2
+    :try_start_3
     new-instance v0, Ljp/co/sony/mc/camera/status/EachCameraStatusPublisher;
 
-    invoke-direct {v0, v4, v6}, Ljp/co/sony/mc/camera/status/EachCameraStatusPublisher;-><init>(Landroid/content/Context;Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;)V
+    invoke-direct {v0, v5, v8}, Ljp/co/sony/mc/camera/status/EachCameraStatusPublisher;-><init>(Landroid/content/Context;Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;)V
 
-    new-instance v4, Ljp/co/sony/mc/camera/status/eachcamera/DeviceStatus;
+    new-instance v5, Ljp/co/sony/mc/camera/status/eachcamera/DeviceStatus;
 
-    sget-object v5, Ljp/co/sony/mc/camera/status/eachcamera/DeviceStatus$Value;->PICTURE_TAKING_DURING_VIDEO_RECORDING:Ljp/co/sony/mc/camera/status/eachcamera/DeviceStatus$Value;
+    sget-object v6, Ljp/co/sony/mc/camera/status/eachcamera/DeviceStatus$Value;->PICTURE_TAKING_DURING_VIDEO_RECORDING:Ljp/co/sony/mc/camera/status/eachcamera/DeviceStatus$Value;
 
-    invoke-direct {v4, v5}, Ljp/co/sony/mc/camera/status/eachcamera/DeviceStatus;-><init>(Ljp/co/sony/mc/camera/status/eachcamera/DeviceStatus$Value;)V
+    invoke-direct {v5, v6}, Ljp/co/sony/mc/camera/status/eachcamera/DeviceStatus;-><init>(Ljp/co/sony/mc/camera/status/eachcamera/DeviceStatus$Value;)V
 
-    .line 682
-    invoke-virtual {v0, v4}, Ljp/co/sony/mc/camera/status/EachCameraStatusPublisher;->put(Ljp/co/sony/mc/camera/status/CameraStatusValue;)Ljp/co/sony/mc/camera/status/CameraStatusPublisher;
+    .line 694
+    invoke-virtual {v0, v5}, Ljp/co/sony/mc/camera/status/EachCameraStatusPublisher;->put(Ljp/co/sony/mc/camera/status/CameraStatusValue;)Ljp/co/sony/mc/camera/status/CameraStatusPublisher;
 
     move-result-object v0
 
-    .line 684
+    .line 695
     invoke-virtual {v0}, Ljp/co/sony/mc/camera/status/CameraStatusPublisher;->publish()V
 
-    .line 686
+    .line 697
     sget-boolean v0, Ljp/co/sony/mc/camera/util/CamLog;->DEBUG:Z
 
     if-eqz v0, :cond_8
 
-    const/4 v4, 0x1
+    const/4 v5, 0x1
 
-    new-array v0, v4, [Ljava/lang/String;
+    new-array v0, v5, [Ljava/lang/String;
 
-    const-string v4, "capture()"
+    const-string v5, "capture()"
 
-    const/4 v5, 0x0
+    const/4 v6, 0x0
 
-    aput-object v4, v0, v5
+    aput-object v5, v0, v6
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
-    .line 690
+    .line 701
     :cond_8
-    invoke-virtual {v10}, Ljava/util/ArrayList;->size()I
+    invoke-virtual {v2}, Ljava/util/ArrayList;->size()I
 
     move-result v0
 
-    const/4 v4, 0x1
+    const/4 v5, 0x1
 
-    if-ne v0, v4, :cond_9
+    if-ne v0, v5, :cond_9
 
-    .line 691
-    iget-object v0, v7, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CaptureSessionInfo;->captureSession:Landroid/hardware/camera2/CameraCaptureSession;
+    .line 702
+    iget-object v0, v9, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CaptureSessionInfo;->captureSession:Landroid/hardware/camera2/CameraCaptureSession;
 
-    const/4 v4, 0x0
+    const/4 v5, 0x0
 
-    .line 692
-    invoke-virtual {v10, v4}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
+    .line 703
+    invoke-virtual {v2, v5}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
+
+    move-result-object v6
+
+    check-cast v6, Landroid/hardware/camera2/CaptureRequest;
+
+    .line 704
+    invoke-virtual/range {p1 .. p1}, Ljp/co/sony/mc/camera/device/state/DeviceStateContext;->getCaptureSessionCallbackExecutor()Ljava/util/concurrent/ExecutorService;
 
     move-result-object v5
 
-    check-cast v5, Landroid/hardware/camera2/CaptureRequest;
+    .line 705
+    invoke-virtual/range {p1 .. p1}, Ljp/co/sony/mc/camera/device/state/DeviceStateContext;->getCaptureSessionCallback()Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CaptureSessionCallback;
 
-    .line 693
+    move-result-object v7
+
+    .line 702
+    invoke-virtual {v0, v6, v5, v7}, Landroid/hardware/camera2/CameraCaptureSession;->captureSingleRequest(Landroid/hardware/camera2/CaptureRequest;Ljava/util/concurrent/Executor;Landroid/hardware/camera2/CameraCaptureSession$CaptureCallback;)I
+
+    move-result v0
+
+    goto :goto_6
+
+    .line 707
+    :cond_9
+    iget-object v0, v9, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CaptureSessionInfo;->captureSession:Landroid/hardware/camera2/CameraCaptureSession;
+
+    .line 709
     invoke-virtual/range {p1 .. p1}, Ljp/co/sony/mc/camera/device/state/DeviceStateContext;->getCaptureSessionCallbackExecutor()Ljava/util/concurrent/ExecutorService;
 
-    move-result-object v4
+    move-result-object v5
 
-    .line 694
+    .line 710
     invoke-virtual/range {p1 .. p1}, Ljp/co/sony/mc/camera/device/state/DeviceStateContext;->getCaptureSessionCallback()Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CaptureSessionCallback;
 
     move-result-object v6
 
-    .line 691
-    invoke-virtual {v0, v5, v4, v6}, Landroid/hardware/camera2/CameraCaptureSession;->captureSingleRequest(Landroid/hardware/camera2/CaptureRequest;Ljava/util/concurrent/Executor;Landroid/hardware/camera2/CameraCaptureSession$CaptureCallback;)I
-
-    move-result v0
-
-    goto :goto_5
-
-    .line 696
-    :cond_9
-    iget-object v0, v7, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CaptureSessionInfo;->captureSession:Landroid/hardware/camera2/CameraCaptureSession;
-
-    .line 698
-    invoke-virtual/range {p1 .. p1}, Ljp/co/sony/mc/camera/device/state/DeviceStateContext;->getCaptureSessionCallbackExecutor()Ljava/util/concurrent/ExecutorService;
-
-    move-result-object v4
-
-    .line 699
-    invoke-virtual/range {p1 .. p1}, Ljp/co/sony/mc/camera/device/state/DeviceStateContext;->getCaptureSessionCallback()Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CaptureSessionCallback;
-
-    move-result-object v5
-
-    .line 696
-    invoke-virtual {v0, v10, v4, v5}, Landroid/hardware/camera2/CameraCaptureSession;->captureBurstRequests(Ljava/util/List;Ljava/util/concurrent/Executor;Landroid/hardware/camera2/CameraCaptureSession$CaptureCallback;)I
-
-    move-result v0
-
-    :goto_5
-    if-eqz v2, :cond_a
-
-    const/4 v4, 0x1
-
-    .line 703
-    invoke-virtual {v1, v0, v2, v4}, Ljp/co/sony/mc/camera/device/state/DeviceStateContext;->onCaptureProcessStart(ILjp/co/sony/mc/camera/device/state/DeviceStateContext$CaptureProcessAdapter;I)V
-
-    .line 706
-    :cond_a
-    invoke-virtual {v1, v12}, Ljp/co/sony/mc/camera/device/state/DeviceStateContext;->validateParameter(Ljp/co/sony/mc/camera/device/CaptureRequestHolder;)V
-
     .line 707
+    invoke-virtual {v0, v2, v5, v6}, Landroid/hardware/camera2/CameraCaptureSession;->captureBurstRequests(Ljava/util/List;Ljava/util/concurrent/Executor;Landroid/hardware/camera2/CameraCaptureSession$CaptureCallback;)I
+
+    move-result v0
+
+    :goto_6
+    if-eqz v4, :cond_a
+
+    const/4 v5, 0x1
+
+    .line 714
+    invoke-virtual {v1, v0, v4, v5}, Ljp/co/sony/mc/camera/device/state/DeviceStateContext;->onCaptureProcessStart(ILjp/co/sony/mc/camera/device/state/DeviceStateContext$CaptureProcessAdapter;I)V
+
+    .line 717
+    :cond_a
+    invoke-virtual {v1, v14}, Ljp/co/sony/mc/camera/device/state/DeviceStateContext;->validateParameter(Ljp/co/sony/mc/camera/device/CaptureRequestHolder;)V
+
+    .line 718
     sget-boolean v0, Ljp/co/sony/mc/camera/util/CamLog;->DEBUG:Z
 
-    if-eqz v0, :cond_e
+    if-eqz v0, :cond_c
 
     const/4 v0, 0x0
 
-    .line 711
-    :goto_6
-    invoke-virtual {v10}, Ljava/util/ArrayList;->size()I
+    .line 722
+    :goto_7
+    invoke-virtual {v2}, Ljava/util/ArrayList;->size()I
 
-    move-result v2
+    move-result v4
 
-    if-ge v0, v2, :cond_e
+    if-ge v0, v4, :cond_c
 
-    const/4 v2, 0x1
+    const/4 v4, 0x1
 
-    .line 712
-    new-array v4, v2, [Ljava/lang/String;
+    .line 723
+    new-array v5, v4, [Ljava/lang/String;
 
-    new-instance v5, Ljava/lang/StringBuilder;
+    new-instance v4, Ljava/lang/StringBuilder;
 
-    invoke-direct {v5}, Ljava/lang/StringBuilder;-><init>()V
+    invoke-direct {v4}, Ljava/lang/StringBuilder;-><init>()V
 
     const-string/jumbo v6, "updateCaptureRequest templateType : "
 
-    invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v4, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    move-result-object v5
+    move-result-object v4
 
-    .line 713
-    invoke-virtual {v10, v0}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
+    .line 724
+    invoke-virtual {v2, v0}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
 
     move-result-object v6
 
@@ -599,42 +626,42 @@
 
     move-result-object v6
 
-    invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+    invoke-virtual {v4, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
-    move-result-object v5
+    move-result-object v4
 
-    invoke-virtual {v5}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-virtual {v4}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    move-result-object v5
+    move-result-object v4
 
     const/4 v6, 0x0
 
-    aput-object v5, v4, v6
+    aput-object v4, v5, v6
 
-    .line 712
-    invoke-static {v4}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
+    .line 723
+    invoke-static {v5}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
-    .line 714
-    invoke-virtual {v10, v0}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
+    .line 725
+    invoke-virtual {v2, v0}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
 
     move-result-object v4
 
     check-cast v4, Landroid/hardware/camera2/CaptureRequest;
 
     invoke-virtual {v1, v4}, Ljp/co/sony/mc/camera/device/state/DeviceStateContext;->updateCaptureRequestDumper(Landroid/hardware/camera2/CaptureRequest;)V
-    :try_end_2
-    .catch Landroid/hardware/camera2/CameraAccessException; {:try_start_2 .. :try_end_2} :catch_5
-    .catch Ljava/lang/IllegalArgumentException; {:try_start_2 .. :try_end_2} :catch_4
-    .catch Ljava/lang/IllegalStateException; {:try_start_2 .. :try_end_2} :catch_3
+    :try_end_3
+    .catch Landroid/hardware/camera2/CameraAccessException; {:try_start_3 .. :try_end_3} :catch_6
+    .catch Ljava/lang/IllegalArgumentException; {:try_start_3 .. :try_end_3} :catch_5
+    .catch Ljava/lang/IllegalStateException; {:try_start_3 .. :try_end_3} :catch_4
 
     add-int/lit8 v0, v0, 0x1
 
-    goto :goto_6
+    goto :goto_7
 
-    :catch_3
+    :catch_4
     move-exception v0
 
-    .line 733
+    .line 744
     invoke-virtual/range {p1 .. p1}, Ljp/co/sony/mc/camera/device/state/DeviceStateContext;->getCameraErrorStatus()Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CameraErrorStatus;
 
     move-result-object v1
@@ -645,34 +672,38 @@
 
     if-eqz v1, :cond_b
 
-    .line 734
+    .line 745
     invoke-static {v3, v0}, Ljp/co/sony/mc/camera/util/CamLog;->w(Ljava/lang/String;Ljava/lang/Throwable;)V
 
     goto :goto_8
 
-    .line 736
+    .line 747
     :cond_b
     throw v0
-
-    :catch_4
-    move-exception v0
-
-    .line 731
-    invoke-static {v3, v0}, Ljp/co/sony/mc/camera/util/CamLog;->w(Ljava/lang/String;Ljava/lang/Throwable;)V
-
-    goto :goto_8
 
     :catch_5
     move-exception v0
 
-    .line 718
-    invoke-virtual/range {v16 .. v16}, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$CameraDeviceHandlerInquirer;->isIgnoreCameraError()Z
+    .line 742
+    invoke-static {v3, v0}, Ljp/co/sony/mc/camera/util/CamLog;->w(Ljava/lang/String;Ljava/lang/Throwable;)V
+
+    :cond_c
+    :goto_8
+    const/4 v1, 0x1
+
+    goto :goto_a
+
+    :catch_6
+    move-exception v0
+
+    .line 729
+    invoke-virtual/range {p5 .. p5}, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$CameraDeviceHandlerInquirer;->isIgnoreCameraError()Z
 
     move-result v2
 
-    if-nez v2, :cond_d
+    if-nez v2, :cond_e
 
-    .line 719
+    .line 730
     invoke-virtual/range {p1 .. p1}, Ljp/co/sony/mc/camera/device/state/DeviceStateContext;->getCameraErrorStatus()Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CameraErrorStatus;
 
     move-result-object v1
@@ -681,12 +712,12 @@
 
     move-result v1
 
-    if-eqz v1, :cond_c
+    if-eqz v1, :cond_d
 
-    goto :goto_7
+    goto :goto_9
 
-    .line 722
-    :cond_c
+    .line 733
+    :cond_d
     new-instance v1, Ljava/lang/RuntimeException;
 
     new-instance v2, Ljava/lang/StringBuilder;
@@ -695,7 +726,7 @@
 
     invoke-direct {v2, v3}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
-    .line 723
+    .line 734
     invoke-virtual {v0}, Landroid/hardware/camera2/CameraAccessException;->getReason()I
 
     move-result v0
@@ -712,19 +743,22 @@
 
     throw v1
 
-    .line 720
-    :cond_d
-    :goto_7
+    .line 731
+    :cond_e
+    :goto_9
     invoke-static {v3, v0}, Ljp/co/sony/mc/camera/util/CamLog;->w(Ljava/lang/String;Ljava/lang/Throwable;)V
 
-    .line 740
-    :cond_e
-    :goto_8
-    const-string/jumbo v0, "setOneShotRequest Process [OUT]"
+    goto :goto_8
 
-    filled-new-array {v0}, [Ljava/lang/String;
+    .line 751
+    :goto_a
+    new-array v0, v1, [Ljava/lang/String;
 
-    move-result-object v0
+    const-string/jumbo v1, "setOneShotRequest Process [OUT]"
+
+    const/4 v2, 0x0
+
+    aput-object v1, v0, v2
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
@@ -732,9 +766,9 @@
 .end method
 
 .method private stopOnCameraError(Ljp/co/sony/mc/camera/device/state/DeviceStateContext;)V
-    .locals 1
+    .locals 2
 
-    .line 827
+    .line 839
     :try_start_0
     invoke-virtual {p1}, Ljp/co/sony/mc/camera/device/state/DeviceStateContext;->getVideoRecorder()Ljp/co/sony/mc/camera/recorder/RecorderController;
 
@@ -749,19 +783,23 @@
     :catch_0
     move-exception p0
 
-    .line 829
-    new-instance p1, Ljava/lang/StringBuilder;
+    const/4 p1, 0x1
 
-    const-string v0, "Stop recording by Camera error fail."
+    .line 841
+    new-array p1, p1, [Ljava/lang/String;
 
-    invoke-direct {p1, v0}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+    new-instance v0, Ljava/lang/StringBuilder;
 
-    .line 830
+    const-string v1, "Stop recording by Camera error fail."
+
+    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+
+    .line 842
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/recorder/RecorderException;->getMessage()Ljava/lang/String;
 
     move-result-object p0
 
-    invoke-virtual {p1, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v0, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object p0
 
@@ -769,12 +807,12 @@
 
     move-result-object p0
 
-    filled-new-array {p0}, [Ljava/lang/String;
+    const/4 v0, 0x0
 
-    move-result-object p0
+    aput-object p0, p1, v0
 
-    .line 829
-    invoke-static {p0}, Ljp/co/sony/mc/camera/util/CamLog;->e([Ljava/lang/String;)V
+    .line 841
+    invoke-static {p1}, Ljp/co/sony/mc/camera/util/CamLog;->e([Ljava/lang/String;)V
 
     :goto_0
     return-void
@@ -787,23 +825,23 @@
 
     return-void
 
-    .line 1187
+    .line 1204
     :cond_0
     invoke-virtual {p2}, Ljp/co/sony/mc/camera/device/CameraParameters;->getCameraId()Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;
 
     move-result-object p0
 
-    .line 1188
+    .line 1205
     new-instance v0, Ljp/co/sony/mc/camera/status/EachCameraStatusPublisher;
 
-    .line 1189
+    .line 1206
     invoke-virtual {p1}, Ljp/co/sony/mc/camera/device/state/DeviceStateContext;->getApplicationContext()Landroid/content/Context;
 
     move-result-object v1
 
     invoke-direct {v0, v1, p0}, Ljp/co/sony/mc/camera/status/EachCameraStatusPublisher;-><init>(Landroid/content/Context;Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;)V
 
-    .line 1191
+    .line 1208
     new-instance p0, Ljp/co/sony/mc/camera/status/eachcamera/DeviceStatus;
 
     sget-object v1, Ljp/co/sony/mc/camera/status/eachcamera/DeviceStatus$Value;->VIDEO_PREVIEW:Ljp/co/sony/mc/camera/status/eachcamera/DeviceStatus$Value;
@@ -812,23 +850,23 @@
 
     invoke-virtual {v0, p0}, Ljp/co/sony/mc/camera/status/EachCameraStatusPublisher;->put(Ljp/co/sony/mc/camera/status/CameraStatusValue;)Ljp/co/sony/mc/camera/status/CameraStatusPublisher;
 
-    .line 1193
+    .line 1210
     new-instance p0, Ljp/co/sony/mc/camera/status/eachcamera/PreviewResolution;
 
-    .line 1194
+    .line 1211
     invoke-virtual {p2}, Ljp/co/sony/mc/camera/device/CameraParameters;->getPreviewSize()Landroid/graphics/Rect;
 
     move-result-object v1
 
     invoke-direct {p0, v1}, Ljp/co/sony/mc/camera/status/eachcamera/PreviewResolution;-><init>(Landroid/graphics/Rect;)V
 
-    .line 1193
+    .line 1210
     invoke-virtual {v0, p0}, Ljp/co/sony/mc/camera/status/EachCameraStatusPublisher;->put(Ljp/co/sony/mc/camera/status/CameraStatusValue;)Ljp/co/sony/mc/camera/status/CameraStatusPublisher;
 
-    .line 1195
+    .line 1212
     new-instance p0, Ljp/co/sony/mc/camera/status/eachcamera/PreviewMaxFps;
 
-    .line 1196
+    .line 1213
     invoke-virtual {p2}, Ljp/co/sony/mc/camera/device/CameraParameters;->getCameraId()Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;
 
     move-result-object v1
@@ -839,10 +877,10 @@
 
     invoke-direct {p0, v1}, Ljp/co/sony/mc/camera/status/eachcamera/PreviewMaxFps;-><init>(I)V
 
-    .line 1195
+    .line 1212
     invoke-virtual {v0, p0}, Ljp/co/sony/mc/camera/status/EachCameraStatusPublisher;->put(Ljp/co/sony/mc/camera/status/CameraStatusValue;)Ljp/co/sony/mc/camera/status/CameraStatusPublisher;
 
-    .line 1197
+    .line 1214
     new-instance p0, Ljp/co/sony/mc/camera/status/eachcamera/PictureResolution;
 
     sget-object v1, Ljp/co/sony/mc/camera/status/eachcamera/PictureResolution;->DEFAULT_VALUE:Landroid/graphics/Rect;
@@ -851,10 +889,10 @@
 
     invoke-virtual {v0, p0}, Ljp/co/sony/mc/camera/status/EachCameraStatusPublisher;->put(Ljp/co/sony/mc/camera/status/CameraStatusValue;)Ljp/co/sony/mc/camera/status/CameraStatusPublisher;
 
-    .line 1200
+    .line 1217
     new-instance p0, Ljp/co/sony/mc/camera/status/eachcamera/PhotoLight;
 
-    .line 1201
+    .line 1218
     invoke-virtual {p2}, Ljp/co/sony/mc/camera/device/CameraParameters;->getFlashMode()Ljava/lang/String;
 
     move-result-object v1
@@ -867,22 +905,22 @@
 
     if-eqz v1, :cond_1
 
-    .line 1203
+    .line 1220
     sget-object v1, Ljp/co/sony/mc/camera/status/eachcamera/PhotoLight$Value;->ON:Ljp/co/sony/mc/camera/status/eachcamera/PhotoLight$Value;
 
     goto :goto_0
 
-    .line 1205
+    .line 1222
     :cond_1
     sget-object v1, Ljp/co/sony/mc/camera/status/eachcamera/PhotoLight$Value;->OFF:Ljp/co/sony/mc/camera/status/eachcamera/PhotoLight$Value;
 
     :goto_0
     invoke-direct {p0, v1}, Ljp/co/sony/mc/camera/status/eachcamera/PhotoLight;-><init>(Ljp/co/sony/mc/camera/status/eachcamera/PhotoLight$Value;)V
 
-    .line 1200
+    .line 1217
     invoke-virtual {v0, p0}, Ljp/co/sony/mc/camera/status/EachCameraStatusPublisher;->put(Ljp/co/sony/mc/camera/status/CameraStatusValue;)Ljp/co/sony/mc/camera/status/CameraStatusPublisher;
 
-    .line 1207
+    .line 1224
     invoke-virtual {p1}, Ljp/co/sony/mc/camera/device/state/DeviceStateContext;->getCaptureRequestHolder()Ljp/co/sony/mc/camera/device/CaptureRequestHolder;
 
     move-result-object p0
@@ -903,7 +941,7 @@
 
     if-ne p0, v1, :cond_2
 
-    .line 1210
+    .line 1227
     sget-object p0, Ljp/co/sony/mc/camera/status/eachcamera/SceneRecognition$Value;->ON:Ljp/co/sony/mc/camera/status/eachcamera/SceneRecognition$Value;
 
     goto :goto_1
@@ -911,7 +949,7 @@
     :cond_2
     sget-object p0, Ljp/co/sony/mc/camera/status/eachcamera/SceneRecognition$Value;->OFF:Ljp/co/sony/mc/camera/status/eachcamera/SceneRecognition$Value;
 
-    .line 1211
+    .line 1228
     :goto_1
     new-instance v2, Ljp/co/sony/mc/camera/status/eachcamera/SceneRecognition;
 
@@ -919,7 +957,7 @@
 
     invoke-virtual {v0, v2}, Ljp/co/sony/mc/camera/status/EachCameraStatusPublisher;->put(Ljp/co/sony/mc/camera/status/CameraStatusValue;)Ljp/co/sony/mc/camera/status/CameraStatusPublisher;
 
-    .line 1213
+    .line 1230
     invoke-virtual {p1}, Ljp/co/sony/mc/camera/device/state/DeviceStateContext;->getCaptureRequestHolder()Ljp/co/sony/mc/camera/device/CaptureRequestHolder;
 
     move-result-object p0
@@ -936,7 +974,7 @@
 
     move-result p0
 
-    .line 1215
+    .line 1232
     new-instance v2, Ljp/co/sony/mc/camera/status/eachcamera/FaceIdentification;
 
     sget-object v3, Ljp/co/sony/mc/camera/status/eachcamera/FaceIdentification$Value;->OFF:Ljp/co/sony/mc/camera/status/eachcamera/FaceIdentification$Value;
@@ -951,7 +989,7 @@
 
     if-ne p0, v1, :cond_3
 
-    .line 1221
+    .line 1238
     sget-object p0, Ljp/co/sony/mc/camera/status/eachcamera/FaceDetection$Value;->ON:Ljp/co/sony/mc/camera/status/eachcamera/FaceDetection$Value;
 
     goto :goto_2
@@ -962,13 +1000,13 @@
     :goto_2
     invoke-direct {v3, p0}, Ljp/co/sony/mc/camera/status/eachcamera/FaceDetection;-><init>(Ljp/co/sony/mc/camera/status/eachcamera/FaceDetection$Value;)V
 
-    .line 1219
+    .line 1236
     invoke-virtual {v2, v3}, Ljp/co/sony/mc/camera/status/CameraStatusPublisher;->put(Ljp/co/sony/mc/camera/status/CameraStatusValue;)Ljp/co/sony/mc/camera/status/CameraStatusPublisher;
 
-    .line 1223
+    .line 1240
     new-instance p0, Ljp/co/sony/mc/camera/status/eachcamera/Bokeh;
 
-    .line 1224
+    .line 1241
     invoke-virtual {p2}, Ljp/co/sony/mc/camera/device/CameraParameters;->getBokehMode()Ljava/lang/String;
 
     move-result-object v2
@@ -981,29 +1019,29 @@
 
     if-eqz v2, :cond_4
 
-    .line 1225
+    .line 1242
     sget-object v2, Ljp/co/sony/mc/camera/status/eachcamera/Bokeh$Value;->ON:Ljp/co/sony/mc/camera/status/eachcamera/Bokeh$Value;
 
     goto :goto_3
 
-    .line 1226
+    .line 1243
     :cond_4
     sget-object v2, Ljp/co/sony/mc/camera/status/eachcamera/Bokeh$Value;->OFF:Ljp/co/sony/mc/camera/status/eachcamera/Bokeh$Value;
 
     :goto_3
     invoke-direct {p0, v2}, Ljp/co/sony/mc/camera/status/eachcamera/Bokeh;-><init>(Ljp/co/sony/mc/camera/status/eachcamera/Bokeh$Value;)V
 
-    .line 1223
+    .line 1240
     invoke-virtual {v0, p0}, Ljp/co/sony/mc/camera/status/EachCameraStatusPublisher;->put(Ljp/co/sony/mc/camera/status/CameraStatusValue;)Ljp/co/sony/mc/camera/status/CameraStatusPublisher;
 
-    .line 1228
+    .line 1245
     invoke-virtual {p2}, Ljp/co/sony/mc/camera/device/CameraParameters;->isSlowMotion()Z
 
     move-result p0
 
     if-eqz p0, :cond_5
 
-    .line 1229
+    .line 1246
     new-instance p0, Ljp/co/sony/mc/camera/status/eachcamera/VideoResolution;
 
     invoke-virtual {p2}, Ljp/co/sony/mc/camera/device/CameraParameters;->getVideoSize()Ljp/co/sony/mc/camera/configuration/parameters/VideoSize;
@@ -1022,7 +1060,7 @@
 
     new-instance v2, Ljp/co/sony/mc/camera/status/eachcamera/VideoRecordingFps;
 
-    .line 1230
+    .line 1247
     invoke-virtual {p2}, Ljp/co/sony/mc/camera/device/CameraParameters;->getCaptureFps()Ljp/co/sony/mc/camera/configuration/parameters/CaptureFps;
 
     move-result-object v3
@@ -1037,12 +1075,12 @@
 
     move-result-object p0
 
-    .line 1232
+    .line 1249
     invoke-virtual {p2}, Ljp/co/sony/mc/camera/device/CameraParameters;->getVideoStabilizer()Ljava/lang/String;
 
     move-result-object v2
 
-    .line 1231
+    .line 1248
     invoke-static {v2}, Ljp/co/sony/mc/camera/status/eachcamera/VideoStabilizerStatus;->fromCameraParameter(Ljava/lang/String;)Ljp/co/sony/mc/camera/status/eachcamera/VideoStabilizerStatus;
 
     move-result-object v2
@@ -1057,12 +1095,12 @@
 
     invoke-direct {v2, v3}, Ljp/co/sony/mc/camera/status/eachcamera/SlowMotion;-><init>(Ljp/co/sony/mc/camera/status/eachcamera/SlowMotion$Value;)V
 
-    .line 1233
+    .line 1250
     invoke-virtual {p0, v2}, Ljp/co/sony/mc/camera/status/CameraStatusPublisher;->put(Ljp/co/sony/mc/camera/status/CameraStatusValue;)Ljp/co/sony/mc/camera/status/CameraStatusPublisher;
 
     goto :goto_4
 
-    .line 1235
+    .line 1252
     :cond_5
     new-instance p0, Ljp/co/sony/mc/camera/status/eachcamera/VideoResolution;
 
@@ -1082,7 +1120,7 @@
 
     new-instance v2, Ljp/co/sony/mc/camera/status/eachcamera/VideoRecordingFps;
 
-    .line 1236
+    .line 1253
     invoke-virtual {p2}, Ljp/co/sony/mc/camera/device/CameraParameters;->getCaptureFps()Ljp/co/sony/mc/camera/configuration/parameters/CaptureFps;
 
     move-result-object v3
@@ -1099,7 +1137,7 @@
 
     new-instance v2, Ljp/co/sony/mc/camera/status/eachcamera/VideoStreamingFps;
 
-    .line 1237
+    .line 1254
     invoke-virtual {p2}, Ljp/co/sony/mc/camera/device/CameraParameters;->getCaptureFps()Ljp/co/sony/mc/camera/configuration/parameters/CaptureFps;
 
     move-result-object v3
@@ -1114,12 +1152,12 @@
 
     move-result-object p0
 
-    .line 1239
+    .line 1256
     invoke-virtual {p2}, Ljp/co/sony/mc/camera/device/CameraParameters;->getVideoStabilizer()Ljava/lang/String;
 
     move-result-object v2
 
-    .line 1238
+    .line 1255
     invoke-static {v2}, Ljp/co/sony/mc/camera/status/eachcamera/VideoStabilizerStatus;->fromCameraParameter(Ljava/lang/String;)Ljp/co/sony/mc/camera/status/eachcamera/VideoStabilizerStatus;
 
     move-result-object v2
@@ -1134,10 +1172,10 @@
 
     invoke-direct {v2, v3}, Ljp/co/sony/mc/camera/status/eachcamera/SlowMotion;-><init>(Ljp/co/sony/mc/camera/status/eachcamera/SlowMotion$Value;)V
 
-    .line 1240
+    .line 1257
     invoke-virtual {p0, v2}, Ljp/co/sony/mc/camera/status/CameraStatusPublisher;->put(Ljp/co/sony/mc/camera/status/CameraStatusValue;)Ljp/co/sony/mc/camera/status/CameraStatusPublisher;
 
-    .line 1243
+    .line 1260
     :goto_4
     new-instance p0, Ljp/co/sony/mc/camera/status/eachcamera/Hdr;
 
@@ -1153,7 +1191,7 @@
 
     invoke-virtual {v0, p0}, Ljp/co/sony/mc/camera/status/EachCameraStatusPublisher;->put(Ljp/co/sony/mc/camera/status/CameraStatusValue;)Ljp/co/sony/mc/camera/status/CameraStatusPublisher;
 
-    .line 1244
+    .line 1261
     invoke-virtual {p2}, Ljp/co/sony/mc/camera/device/CameraParameters;->getVideoMfHdrMode()Ljava/lang/String;
 
     move-result-object p0
@@ -1164,7 +1202,7 @@
 
     invoke-virtual {v0, p0}, Ljp/co/sony/mc/camera/status/EachCameraStatusPublisher;->put(Ljp/co/sony/mc/camera/status/CameraStatusValue;)Ljp/co/sony/mc/camera/status/CameraStatusPublisher;
 
-    .line 1245
+    .line 1262
     invoke-virtual {p2}, Ljp/co/sony/mc/camera/device/CameraParameters;->getUiOrientation()I
 
     move-result p0
@@ -1175,7 +1213,7 @@
 
     invoke-virtual {v0, p0}, Ljp/co/sony/mc/camera/status/EachCameraStatusPublisher;->put(Ljp/co/sony/mc/camera/status/CameraStatusValue;)Ljp/co/sony/mc/camera/status/CameraStatusPublisher;
 
-    .line 1247
+    .line 1264
     invoke-virtual {p1}, Ljp/co/sony/mc/camera/device/state/DeviceStateContext;->getCaptureRequestHolder()Ljp/co/sony/mc/camera/device/CaptureRequestHolder;
 
     move-result-object p0
@@ -1203,14 +1241,14 @@
     :cond_6
     const/4 v1, 0x0
 
-    .line 1252
+    .line 1269
     :cond_7
     :goto_5
     new-instance p0, Ljp/co/sony/mc/camera/status/eachcamera/EyeDetection;
 
     if-eqz v1, :cond_8
 
-    .line 1253
+    .line 1270
     sget-object p1, Ljp/co/sony/mc/camera/status/eachcamera/EyeDetection$Value;->ON:Ljp/co/sony/mc/camera/status/eachcamera/EyeDetection$Value;
 
     goto :goto_6
@@ -1221,10 +1259,10 @@
     :goto_6
     invoke-direct {p0, p1}, Ljp/co/sony/mc/camera/status/eachcamera/EyeDetection;-><init>(Ljp/co/sony/mc/camera/status/eachcamera/EyeDetection$Value;)V
 
-    .line 1252
+    .line 1269
     invoke-virtual {v0, p0}, Ljp/co/sony/mc/camera/status/EachCameraStatusPublisher;->put(Ljp/co/sony/mc/camera/status/CameraStatusValue;)Ljp/co/sony/mc/camera/status/CameraStatusPublisher;
 
-    .line 1254
+    .line 1271
     invoke-virtual {p2}, Ljp/co/sony/mc/camera/device/CameraParameters;->getHybridZoom()Ljava/lang/String;
 
     move-result-object p0
@@ -1235,7 +1273,7 @@
 
     invoke-virtual {v0, p0}, Ljp/co/sony/mc/camera/status/EachCameraStatusPublisher;->put(Ljp/co/sony/mc/camera/status/CameraStatusValue;)Ljp/co/sony/mc/camera/status/CameraStatusPublisher;
 
-    .line 1255
+    .line 1272
     invoke-virtual {p2}, Ljp/co/sony/mc/camera/device/CameraParameters;->getVideoQuality()Ljp/co/sony/mc/camera/configuration/parameters/VideoQuality;
 
     move-result-object p0
@@ -1246,7 +1284,7 @@
 
     invoke-virtual {v0, p0}, Ljp/co/sony/mc/camera/status/EachCameraStatusPublisher;->put(Ljp/co/sony/mc/camera/status/CameraStatusValue;)Ljp/co/sony/mc/camera/status/CameraStatusPublisher;
 
-    .line 1256
+    .line 1273
     invoke-virtual {v0}, Ljp/co/sony/mc/camera/status/EachCameraStatusPublisher;->publish()V
 
     return-void
@@ -1257,50 +1295,50 @@
 .method protected cancelPrepareSnapshot(Ljp/co/sony/mc/camera/device/state/DeviceStateContext;)V
     .locals 3
 
-    .line 1299
+    .line 1328
     invoke-virtual {p1}, Ljp/co/sony/mc/camera/device/state/DeviceStateContext;->copyCaptureRequestHolder()Ljp/co/sony/mc/camera/device/CaptureRequestHolder;
 
     move-result-object v0
 
-    .line 1300
+    .line 1329
     sget-object v1, Landroid/hardware/camera2/CaptureRequest;->CONTROL_AF_TRIGGER:Landroid/hardware/camera2/CaptureRequest$Key;
 
     const/4 v2, 0x2
 
-    .line 1301
+    .line 1330
     invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object v2
 
-    .line 1300
+    .line 1329
     invoke-virtual {v0, v1, v2}, Ljp/co/sony/mc/camera/device/CaptureRequestHolder;->set(Landroid/hardware/camera2/CaptureRequest$Key;Ljava/lang/Object;)V
 
-    .line 1302
+    .line 1331
     sget-object v1, Landroid/hardware/camera2/CaptureRequest;->CONTROL_AE_PRECAPTURE_TRIGGER:Landroid/hardware/camera2/CaptureRequest$Key;
 
     invoke-virtual {v0, v1, v2}, Ljp/co/sony/mc/camera/device/CaptureRequestHolder;->set(Landroid/hardware/camera2/CaptureRequest$Key;Ljava/lang/Object;)V
 
-    .line 1304
+    .line 1333
     invoke-virtual {p1}, Ljp/co/sony/mc/camera/device/state/DeviceStateContext;->isAvailableReqSnapshotPrepare()Z
 
     move-result v1
 
     if-eqz v1, :cond_0
 
-    .line 1305
+    .line 1334
     sget-object v1, Lcom/sonymobile/camera/device/SomcCaptureRequestKeys;->SONYMOBILE_CONTROL_SNAPSHOT_PREPARE:Landroid/hardware/camera2/CaptureRequest$Key;
 
     const/4 v2, 0x1
 
-    .line 1306
+    .line 1335
     invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object v2
 
-    .line 1305
+    .line 1334
     invoke-virtual {v0, v1, v2}, Ljp/co/sony/mc/camera/device/CaptureRequestHolder;->set(Landroid/hardware/camera2/CaptureRequest$Key;Ljava/lang/Object;)V
 
-    .line 1308
+    .line 1337
     :cond_0
     sget-object v1, Lcom/sonymobile/camera/device/SomcCaptureRequestKeys;->SONYMOBILE_CONTROL_SNAPSHOT_PREPARE:Landroid/hardware/camera2/CaptureRequest$Key;
 
@@ -1314,7 +1352,7 @@
 
     const/4 v0, 0x0
 
-    .line 156
+    .line 159
     aget-object v0, p2, v0
 
     check-cast v0, Ljava/lang/Integer;
@@ -1325,7 +1363,7 @@
 
     const/4 v1, 0x1
 
-    .line 157
+    .line 160
     aget-object p2, p2, v1
 
     check-cast p2, Ljava/lang/Integer;
@@ -1334,7 +1372,7 @@
 
     move-result p2
 
-    .line 159
+    .line 162
     invoke-virtual {p1}, Ljp/co/sony/mc/camera/device/state/DeviceStateContext;->getCameraInfo()Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CameraDeviceInfo;
 
     move-result-object v2
@@ -1343,17 +1381,17 @@
 
     move-result-object v2
 
-    .line 160
+    .line 163
     invoke-virtual {p1}, Ljp/co/sony/mc/camera/device/state/DeviceStateContext;->copyCaptureRequestHolder()Ljp/co/sony/mc/camera/device/CaptureRequestHolder;
 
     move-result-object v3
 
-    .line 162
+    .line 165
     invoke-virtual {p0, v2, v0, p2}, Ljp/co/sony/mc/camera/device/state/DeviceStateVideoBase;->get1x1RectOnActiveArrayCoordinate(Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;II)Landroid/graphics/Rect;
 
     move-result-object p2
 
-    .line 163
+    .line 166
     iget v0, p2, Landroid/graphics/Rect;->left:I
 
     iget v2, p2, Landroid/graphics/Rect;->top:I
@@ -1366,25 +1404,25 @@
 
     move-result-object p2
 
-    .line 165
+    .line 168
     sget-object v0, Lcom/sonymobile/camera/device/SomcCaptureRequestKeys;->SONYMOBILE_STATISTICS_FACE_SELECT_TRIGGER:Landroid/hardware/camera2/CaptureRequest$Key;
 
-    .line 166
+    .line 169
     invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object v1
 
-    .line 165
+    .line 168
     invoke-virtual {v3, v0, v1}, Ljp/co/sony/mc/camera/device/CaptureRequestHolder;->set(Landroid/hardware/camera2/CaptureRequest$Key;Ljava/lang/Object;)V
 
-    .line 167
+    .line 170
     sget-object v0, Lcom/sonymobile/camera/device/SomcCaptureRequestKeys;->SONYMOBILE_STATISTICS_FACE_SELECT_TRIGGER_AREA:Landroid/hardware/camera2/CaptureRequest$Key;
 
     invoke-virtual {v3, v0, p2}, Ljp/co/sony/mc/camera/device/CaptureRequestHolder;->set(Landroid/hardware/camera2/CaptureRequest$Key;Ljava/lang/Object;)V
 
     const/4 p2, 0x0
 
-    .line 169
+    .line 172
     invoke-virtual {p0, p1, v3, p2}, Ljp/co/sony/mc/camera/device/state/DeviceStateVideoBase;->setOneTimeRequest(Ljp/co/sony/mc/camera/device/state/DeviceStateContext;Ljp/co/sony/mc/camera/device/CaptureRequestHolder;Ljava/lang/Object;)V
 
     return-void
@@ -1393,12 +1431,12 @@
 .method protected doCapture(Ljp/co/sony/mc/camera/device/state/DeviceStateContext;I)V
     .locals 10
 
-    .line 338
+    .line 344
     invoke-virtual {p1}, Ljp/co/sony/mc/camera/device/state/DeviceStateContext;->getApplicationContext()Landroid/content/Context;
 
     move-result-object v0
 
-    .line 339
+    .line 345
     invoke-virtual {p1}, Ljp/co/sony/mc/camera/device/state/DeviceStateContext;->getCameraInfo()Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CameraDeviceInfo;
 
     move-result-object v1
@@ -1407,37 +1445,37 @@
 
     move-result-object v1
 
-    .line 340
+    .line 346
     invoke-virtual {p1}, Ljp/co/sony/mc/camera/device/state/DeviceStateContext;->getSnapshotRequestInfo()Ljp/co/sony/mc/camera/device/state/DeviceStateContext$SnapshotRequestInfo;
 
     move-result-object v2
 
     invoke-virtual {v2}, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$SnapshotRequestInfo;->pollSnapshotRequest()Ljp/co/sony/mc/camera/device/SnapshotRequest;
 
-    move-result-object v2
+    move-result-object v6
 
-    .line 341
+    .line 347
     invoke-virtual {p1}, Ljp/co/sony/mc/camera/device/state/DeviceStateContext;->getSnapshotRequestInfo()Ljp/co/sony/mc/camera/device/state/DeviceStateContext$SnapshotRequestInfo;
 
-    move-result-object v3
+    move-result-object v2
 
-    iget-boolean v9, v3, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$SnapshotRequestInfo;->isManualFocus:Z
+    iget-boolean v9, v2, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$SnapshotRequestInfo;->isManualFocus:Z
 
-    .line 342
+    .line 348
     invoke-virtual {p1}, Ljp/co/sony/mc/camera/device/state/DeviceStateContext;->getCaptureSessionInfo()Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CaptureSessionInfo;
 
-    move-result-object v3
+    move-result-object v2
 
-    iget-object v8, v3, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CaptureSessionInfo;->jpegCaptureImageReader:Landroid/media/ImageReader;
+    iget-object v8, v2, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CaptureSessionInfo;->jpegCaptureImageReader:Landroid/media/ImageReader;
 
-    .line 344
+    .line 350
     invoke-virtual {p1}, Ljp/co/sony/mc/camera/device/state/DeviceStateContext;->copyCaptureRequestHolder()Ljp/co/sony/mc/camera/device/CaptureRequestHolder;
 
     move-result-object v5
 
-    const/4 v3, 0x4
+    const/4 v2, 0x4
 
-    if-ne p2, v3, :cond_1
+    if-ne p2, v2, :cond_0
 
     const/4 v7, 0x4
 
@@ -1445,77 +1483,117 @@
 
     move-object v4, p1
 
-    move-object v6, v2
-
-    .line 347
+    .line 353
     invoke-direct/range {v3 .. v9}, Ljp/co/sony/mc/camera/device/state/DeviceStateVideoBase;->setOneShotRequest(Ljp/co/sony/mc/camera/device/state/DeviceStateContext;Ljp/co/sony/mc/camera/device/CaptureRequestHolder;Ljp/co/sony/mc/camera/device/SnapshotRequest;ILandroid/media/ImageReader;Z)V
 
-    .line 349
+    .line 355
     new-instance p0, Ljp/co/sony/mc/camera/status/EachCameraStatusPublisher;
 
     invoke-direct {p0, v0, v1}, Ljp/co/sony/mc/camera/status/EachCameraStatusPublisher;-><init>(Landroid/content/Context;Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;)V
 
     new-instance p1, Ljp/co/sony/mc/camera/status/eachcamera/DeviceStatus;
 
-    .line 351
-    iget-object p2, v2, Ljp/co/sony/mc/camera/device/SnapshotRequest;->fileType:Ljp/co/sony/mc/camera/storage/SavingTaskManager$SavedFileType;
-
-    sget-object v0, Ljp/co/sony/mc/camera/storage/SavingTaskManager$SavedFileType;->PHOTO_DURING_REC:Ljp/co/sony/mc/camera/storage/SavingTaskManager$SavedFileType;
-
-    if-ne p2, v0, :cond_0
-
-    .line 352
     sget-object p2, Ljp/co/sony/mc/camera/status/eachcamera/DeviceStatus$Value;->PICTURE_TAKING_DURING_VIDEO_RECORDING:Ljp/co/sony/mc/camera/status/eachcamera/DeviceStatus$Value;
 
-    goto :goto_0
-
-    .line 353
-    :cond_0
-    sget-object p2, Ljp/co/sony/mc/camera/status/eachcamera/DeviceStatus$Value;->PICTURE_TAKING:Ljp/co/sony/mc/camera/status/eachcamera/DeviceStatus$Value;
-
-    :goto_0
     invoke-direct {p1, p2}, Ljp/co/sony/mc/camera/status/eachcamera/DeviceStatus;-><init>(Ljp/co/sony/mc/camera/status/eachcamera/DeviceStatus$Value;)V
 
-    .line 350
+    .line 356
     invoke-virtual {p0, p1}, Ljp/co/sony/mc/camera/status/EachCameraStatusPublisher;->put(Ljp/co/sony/mc/camera/status/CameraStatusValue;)Ljp/co/sony/mc/camera/status/CameraStatusPublisher;
 
     move-result-object p0
 
-    .line 354
+    .line 357
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/status/CameraStatusPublisher;->publish()V
 
     return-void
 
-    .line 356
-    :cond_1
-    new-instance p0, Ljava/lang/StringBuilder;
+    :cond_0
+    const/4 p0, 0x1
 
-    const-string p1, "Invalid request param. snapshot template:"
+    .line 359
+    new-array p0, p0, [Ljava/lang/String;
 
-    invoke-direct {p0, p1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+    new-instance p1, Ljava/lang/StringBuilder;
 
-    invoke-virtual {p0, p2}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+    const-string v0, "Invalid request param. snapshot template:"
 
-    move-result-object p0
+    invoke-direct {p1, v0}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
-    invoke-virtual {p0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-virtual {p1, p2}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
-    move-result-object p0
+    move-result-object p1
 
-    filled-new-array {p0}, [Ljava/lang/String;
+    invoke-virtual {p1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    move-result-object p0
+    move-result-object p1
+
+    const/4 p2, 0x0
+
+    aput-object p1, p0, p2
 
     invoke-static {p0}, Ljp/co/sony/mc/camera/util/CamLog;->w([Ljava/lang/String;)V
 
     return-void
 .end method
 
+.method protected flushRecording(Ljp/co/sony/mc/camera/device/state/DeviceStateContext;)V
+    .locals 2
+
+    .line 997
+    invoke-virtual {p1}, Ljp/co/sony/mc/camera/device/state/DeviceStateContext;->getCameraParameters()Ljp/co/sony/mc/camera/device/CameraParameters;
+
+    move-result-object v0
+
+    if-eqz v0, :cond_1
+
+    .line 999
+    invoke-virtual {v0}, Ljp/co/sony/mc/camera/device/CameraParameters;->getVideoStabilizer()Ljava/lang/String;
+
+    move-result-object v0
+
+    .line 1000
+    sget-object v1, Ljp/co/sony/mc/camera/configuration/parameters/VideoStabilizer;->INTELLIGENT_ACTIVE:Ljp/co/sony/mc/camera/configuration/parameters/VideoStabilizer;
+
+    invoke-virtual {v1}, Ljp/co/sony/mc/camera/configuration/parameters/VideoStabilizer;->getValue()Ljava/lang/String;
+
+    move-result-object v1
+
+    invoke-virtual {v1, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v1
+
+    if-nez v1, :cond_0
+
+    sget-object v1, Ljp/co/sony/mc/camera/configuration/parameters/VideoStabilizer;->ACTION_MODE:Ljp/co/sony/mc/camera/configuration/parameters/VideoStabilizer;
+
+    .line 1001
+    invoke-virtual {v1}, Ljp/co/sony/mc/camera/configuration/parameters/VideoStabilizer;->getValue()Ljava/lang/String;
+
+    move-result-object v1
+
+    invoke-virtual {v1, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_1
+
+    :cond_0
+    const/4 v0, 0x2
+
+    const/4 v1, 0x1
+
+    .line 1002
+    invoke-virtual {p0, p1, v0, v1}, Ljp/co/sony/mc/camera/device/state/DeviceStateVideoBase;->setIntelligentActiveTrigger(Ljp/co/sony/mc/camera/device/state/DeviceStateContext;IZ)V
+
+    :cond_1
+    return-void
+.end method
+
 .method public varargs handleOnRecordingStopped(Ljp/co/sony/mc/camera/device/state/DeviceStateContext;[Ljava/lang/Object;)V
     .locals 0
 
-    .line 1269
-    invoke-direct {p0, p1}, Ljp/co/sony/mc/camera/device/state/DeviceStateVideoBase;->flushRecording(Ljp/co/sony/mc/camera/device/state/DeviceStateContext;)V
+    .line 1286
+    invoke-virtual {p0, p1}, Ljp/co/sony/mc/camera/device/state/DeviceStateVideoBase;->flushRecording(Ljp/co/sony/mc/camera/device/state/DeviceStateContext;)V
 
     return-void
 .end method
@@ -1523,28 +1601,28 @@
 .method public varargs handlePrepareSnapshotCanceled(Ljp/co/sony/mc/camera/device/state/DeviceStateContext;[Ljava/lang/Object;)V
     .locals 0
 
-    .line 1285
+    .line 1314
     invoke-virtual {p1}, Ljp/co/sony/mc/camera/device/state/DeviceStateContext;->getCameraParameters()Ljp/co/sony/mc/camera/device/CameraParameters;
 
     move-result-object p0
 
     if-eqz p0, :cond_0
 
-    .line 1286
+    .line 1315
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/device/CameraParameters;->isQuickRecord()Z
 
     move-result p0
 
     if-eqz p0, :cond_0
 
-    .line 1287
+    .line 1316
     invoke-virtual {p1}, Ljp/co/sony/mc/camera/device/state/DeviceStateContext;->removePrepareSnapshotCancelChecker()Z
 
     move-result p0
 
     if-eqz p0, :cond_0
 
-    .line 1288
+    .line 1317
     invoke-virtual {p1}, Ljp/co/sony/mc/camera/device/state/DeviceStateContext;->getCameraDeviceHandlerCallback()Ljp/co/sony/mc/camera/device/state/IDeviceStateMachineCallback;
 
     move-result-object p0
@@ -1555,10 +1633,10 @@
     return-void
 .end method
 
-.method public varargs handleSetUserSoundSetting(Ljp/co/sony/mc/camera/device/state/DeviceStateContext;[Ljava/lang/Object;)V
+.method public varargs handleSetStopRecordingVibration(Ljp/co/sony/mc/camera/device/state/DeviceStateContext;[Ljava/lang/Object;)V
     .locals 0
 
-    .line 1277
+    .line 1306
     invoke-virtual {p1}, Ljp/co/sony/mc/camera/device/state/DeviceStateContext;->getVideoRecorder()Ljp/co/sony/mc/camera/recorder/RecorderController;
 
     move-result-object p0
@@ -1567,7 +1645,7 @@
 
     const/4 p1, 0x0
 
-    .line 1279
+    .line 1308
     aget-object p1, p2, p1
 
     check-cast p1, Ljava/lang/Boolean;
@@ -1576,7 +1654,35 @@
 
     move-result p1
 
-    .line 1280
+    .line 1309
+    invoke-interface {p0, p1}, Ljp/co/sony/mc/camera/recorder/RecorderController;->setStopVibration(Z)V
+
+    :cond_0
+    return-void
+.end method
+
+.method public varargs handleSetUserSoundSetting(Ljp/co/sony/mc/camera/device/state/DeviceStateContext;[Ljava/lang/Object;)V
+    .locals 0
+
+    .line 1294
+    invoke-virtual {p1}, Ljp/co/sony/mc/camera/device/state/DeviceStateContext;->getVideoRecorder()Ljp/co/sony/mc/camera/recorder/RecorderController;
+
+    move-result-object p0
+
+    if-eqz p0, :cond_0
+
+    const/4 p1, 0x0
+
+    .line 1296
+    aget-object p1, p2, p1
+
+    check-cast p1, Ljava/lang/Boolean;
+
+    invoke-virtual {p1}, Ljava/lang/Boolean;->booleanValue()Z
+
+    move-result p1
+
+    .line 1297
     invoke-interface {p0, p1}, Ljp/co/sony/mc/camera/recorder/RecorderController;->setUserSoundSetting(Z)V
 
     :cond_0
@@ -1586,7 +1692,7 @@
 .method public varargs handleStartHistogramMonitoring(Ljp/co/sony/mc/camera/device/state/DeviceStateContext;[Ljava/lang/Object;)V
     .locals 0
 
-    .line 135
+    .line 138
     invoke-virtual {p1}, Ljp/co/sony/mc/camera/device/state/DeviceStateContext;->getCameraInfo()Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CameraDeviceInfo;
 
     move-result-object p0
@@ -1601,29 +1707,33 @@
 
     if-eqz p0, :cond_0
 
-    .line 136
+    .line 139
     invoke-virtual {p1}, Ljp/co/sony/mc/camera/device/state/DeviceStateContext;->setHistogramResultChecker()Z
 
     move-result p0
 
     if-nez p0, :cond_1
 
-    .line 137
+    .line 140
     sget-boolean p0, Ljp/co/sony/mc/camera/util/CamLog;->DEBUG:Z
 
     if-eqz p0, :cond_1
 
-    const-string p0, "Histogram monitor is already running."
+    const/4 p0, 0x1
 
-    filled-new-array {p0}, [Ljava/lang/String;
+    new-array p0, p0, [Ljava/lang/String;
 
-    move-result-object p0
+    const/4 p1, 0x0
+
+    const-string p2, "Histogram monitor is already running."
+
+    aput-object p2, p0, p1
 
     invoke-static {p0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
     goto :goto_0
 
-    .line 140
+    .line 143
     :cond_0
     invoke-virtual {p1}, Ljp/co/sony/mc/camera/device/state/DeviceStateContext;->removeHistogramResultChecker()Z
 
@@ -1635,7 +1745,7 @@
 .method public varargs handleStopHistogramMonitoring(Ljp/co/sony/mc/camera/device/state/DeviceStateContext;[Ljava/lang/Object;)V
     .locals 0
 
-    .line 146
+    .line 149
     invoke-virtual {p1}, Ljp/co/sony/mc/camera/device/state/DeviceStateContext;->removeHistogramResultChecker()Z
 
     return-void
@@ -1644,7 +1754,7 @@
 .method public varargs handleUpdateRequest(Ljp/co/sony/mc/camera/device/state/DeviceStateContext;[Ljava/lang/Object;)V
     .locals 0
 
-    .line 1261
+    .line 1278
     invoke-virtual {p0, p1}, Ljp/co/sony/mc/camera/device/state/DeviceStateVideoBase;->repeatingRequest(Ljp/co/sony/mc/camera/device/state/DeviceStateContext;)V
 
     return-void
@@ -1653,14 +1763,14 @@
 .method protected hasSnapshotRequest(Ljp/co/sony/mc/camera/device/state/DeviceStateContext;)Z
     .locals 0
 
-    .line 994
+    .line 1011
     invoke-virtual {p1}, Ljp/co/sony/mc/camera/device/state/DeviceStateContext;->getSnapshotRequestInfo()Ljp/co/sony/mc/camera/device/state/DeviceStateContext$SnapshotRequestInfo;
 
     move-result-object p0
 
     if-eqz p0, :cond_0
 
-    .line 996
+    .line 1013
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$SnapshotRequestInfo;->hasSnapshotRequest()Z
 
     move-result p0
@@ -1686,24 +1796,28 @@
 
     const-string/jumbo v0, "setRepeatingBurst() requestNum:"
 
-    .line 1002
+    .line 1019
     sget-boolean v1, Ljp/co/sony/mc/camera/util/CamLog;->DEBUG:Z
+
+    const/4 v2, 0x1
+
+    const/4 v3, 0x0
 
     if-eqz v1, :cond_0
 
-    const-string v1, "repeatingRequest process [IN]"
+    new-array v1, v2, [Ljava/lang/String;
 
-    filled-new-array {v1}, [Ljava/lang/String;
+    const-string v4, "repeatingRequest process [IN]"
 
-    move-result-object v1
+    aput-object v4, v1, v3
 
     invoke-static {v1}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
-    .line 1004
+    .line 1021
     :cond_0
     invoke-virtual {p1}, Ljp/co/sony/mc/camera/device/state/DeviceStateContext;->dumpFramedropProfiler()V
 
-    .line 1006
+    .line 1023
     invoke-virtual {p1}, Ljp/co/sony/mc/camera/device/state/DeviceStateContext;->getSurfaceInfo()Ljp/co/sony/mc/camera/device/state/DeviceStateContext$SurfaceInfo;
 
     move-result-object v1
@@ -1714,117 +1828,113 @@
 
     if-nez v1, :cond_2
 
-    .line 1008
+    .line 1025
     sget-boolean p0, Ljp/co/sony/mc/camera/util/CamLog;->DEBUG:Z
 
     if-eqz p0, :cond_1
 
-    const-string p0, "Preview surface is not created, so the request is refused."
+    new-array p0, v2, [Ljava/lang/String;
 
-    filled-new-array {p0}, [Ljava/lang/String;
+    const-string p1, "Preview surface is not created, so the request is refused."
 
-    move-result-object p0
+    aput-object p1, p0, v3
 
     invoke-static {p0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
     :cond_1
     return-void
 
-    .line 1012
+    .line 1029
     :cond_2
     invoke-virtual {v1}, Landroid/view/Surface;->isValid()Z
 
-    move-result v2
+    move-result v4
 
-    const-string v3, "Preview surface is not valid, so the request is refused."
+    const-string v5, "Preview surface is not valid, so the request is refused."
 
-    if-nez v2, :cond_4
+    if-nez v4, :cond_4
 
-    .line 1013
+    .line 1030
     sget-boolean p0, Ljp/co/sony/mc/camera/util/CamLog;->DEBUG:Z
 
     if-eqz p0, :cond_3
 
-    filled-new-array {v3}, [Ljava/lang/String;
+    new-array p0, v2, [Ljava/lang/String;
 
-    move-result-object p0
+    aput-object v5, p0, v3
 
     invoke-static {p0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
     :cond_3
     return-void
 
-    .line 1019
+    .line 1036
     :cond_4
     invoke-virtual {p1}, Ljp/co/sony/mc/camera/device/state/DeviceStateContext;->getCaptureSessionInfo()Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CaptureSessionInfo;
 
-    move-result-object v2
+    move-result-object v4
 
-    iget-object v2, v2, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CaptureSessionInfo;->captureSession:Landroid/hardware/camera2/CameraCaptureSession;
+    iget-object v4, v4, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CaptureSessionInfo;->captureSession:Landroid/hardware/camera2/CameraCaptureSession;
 
-    if-nez v2, :cond_5
+    if-nez v4, :cond_5
 
-    .line 1021
-    const-string p0, "CaptureSession is not set. need to create capture session."
+    .line 1038
+    new-array p0, v2, [Ljava/lang/String;
 
-    filled-new-array {p0}, [Ljava/lang/String;
+    const-string p1, "CaptureSession is not set. need to create capture session."
 
-    move-result-object p0
+    aput-object p1, p0, v3
 
     invoke-static {p0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
     return-void
 
-    .line 1025
+    .line 1042
     :cond_5
     invoke-virtual {p1}, Ljp/co/sony/mc/camera/device/state/DeviceStateContext;->getCameraInfo()Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CameraDeviceInfo;
 
-    move-result-object v4
+    move-result-object v6
 
-    invoke-virtual {v4}, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CameraDeviceInfo;->getSessionId()Ljp/co/sony/mc/camera/device/CameraDeviceHandler$CameraSessionId;
+    invoke-virtual {v6}, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CameraDeviceInfo;->getSessionId()Ljp/co/sony/mc/camera/device/CameraDeviceHandler$CameraSessionId;
 
-    move-result-object v4
+    move-result-object v6
 
-    .line 1026
+    .line 1043
     invoke-virtual {p1}, Ljp/co/sony/mc/camera/device/state/DeviceStateContext;->getCameraParameters()Ljp/co/sony/mc/camera/device/CameraParameters;
 
-    move-result-object v5
+    move-result-object v7
 
-    if-nez v5, :cond_7
+    if-nez v7, :cond_7
 
-    .line 1028
+    .line 1045
     sget-boolean p0, Ljp/co/sony/mc/camera/util/CamLog;->DEBUG:Z
 
     if-eqz p0, :cond_6
 
-    .line 1029
-    const-string p0, "This session has been closed, so this request was refused."
+    .line 1046
+    new-array p0, v2, [Ljava/lang/String;
 
-    filled-new-array {p0}, [Ljava/lang/String;
+    const-string p1, "This session has been closed, so this request was refused."
 
-    move-result-object p0
+    aput-object p1, p0, v3
 
     invoke-static {p0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
     :cond_6
     return-void
 
-    .line 1032
+    .line 1049
     :cond_7
     invoke-virtual {p1}, Ljp/co/sony/mc/camera/device/state/DeviceStateContext;->getCaptureSessionInfo()Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CaptureSessionInfo;
 
-    move-result-object v6
+    move-result-object v8
 
-    iget-object v6, v6, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CaptureSessionInfo;->outputConfiguration:Landroid/hardware/camera2/params/OutputConfiguration;
+    iget-object v8, v8, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CaptureSessionInfo;->outputConfiguration:Landroid/hardware/camera2/params/OutputConfiguration;
 
-    const/4 v7, 0x1
+    if-eqz v8, :cond_c
 
-    const/4 v8, 0x0
-
-    if-eqz v6, :cond_c
-
-    .line 1035
-    invoke-virtual {v5}, Ljp/co/sony/mc/camera/device/CameraParameters;->getCaptureFps()Ljp/co/sony/mc/camera/configuration/parameters/CaptureFps;
+    .line 1052
+    invoke-virtual {v7}, Ljp/co/sony/mc/camera/device/CameraParameters;->getCaptureFps()Ljp/co/sony/mc/camera/configuration/parameters/CaptureFps;
 
     move-result-object v9
 
@@ -1838,44 +1948,36 @@
 
     if-nez v9, :cond_b
 
-    .line 1038
+    .line 1055
     :try_start_0
-    invoke-virtual {v6, v1}, Landroid/hardware/camera2/params/OutputConfiguration;->addSurface(Landroid/view/Surface;)V
+    invoke-virtual {v8, v1}, Landroid/hardware/camera2/params/OutputConfiguration;->addSurface(Landroid/view/Surface;)V
     :try_end_0
     .catch Ljava/lang/IllegalArgumentException; {:try_start_0 .. :try_end_0} :catch_3
 
-    .line 1049
+    .line 1066
     :try_start_1
-    new-array v9, v7, [Landroid/hardware/camera2/params/OutputConfiguration;
+    new-array v9, v2, [Landroid/hardware/camera2/params/OutputConfiguration;
 
-    aput-object v6, v9, v8
+    aput-object v8, v9, v3
 
-    .line 1050
+    .line 1067
     invoke-static {v9}, Ljava/util/Arrays;->asList([Ljava/lang/Object;)Ljava/util/List;
 
-    move-result-object v6
+    move-result-object v8
 
-    .line 1049
-    invoke-virtual {v2, v6}, Landroid/hardware/camera2/CameraCaptureSession;->finalizeOutputConfigurations(Ljava/util/List;)V
+    .line 1066
+    invoke-virtual {v4, v8}, Landroid/hardware/camera2/CameraCaptureSession;->finalizeOutputConfigurations(Ljava/util/List;)V
     :try_end_1
     .catch Landroid/hardware/camera2/CameraAccessException; {:try_start_1 .. :try_end_1} :catch_2
     .catch Ljava/lang/IllegalArgumentException; {:try_start_1 .. :try_end_1} :catch_1
     .catch Ljava/lang/IllegalStateException; {:try_start_1 .. :try_end_1} :catch_0
 
-    goto :goto_2
-
-    :catch_0
-    move-exception v6
-
     goto :goto_0
 
-    :catch_1
-    move-exception p0
+    :catch_0
+    move-exception v8
 
-    goto :goto_1
-
-    .line 1064
-    :goto_0
+    .line 1081
     invoke-virtual {p1}, Ljp/co/sony/mc/camera/device/state/DeviceStateContext;->getCameraErrorStatus()Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CameraErrorStatus;
 
     move-result-object v9
@@ -1886,120 +1988,122 @@
 
     if-eqz v9, :cond_8
 
-    .line 1065
+    .line 1082
     const-string v9, "finalizeOutputConfigurations failed: "
 
-    invoke-static {v9, v6}, Ljp/co/sony/mc/camera/util/CamLog;->e(Ljava/lang/String;Ljava/lang/Throwable;)V
+    invoke-static {v9, v8}, Ljp/co/sony/mc/camera/util/CamLog;->e(Ljava/lang/String;Ljava/lang/Throwable;)V
 
-    goto :goto_2
+    goto :goto_0
 
-    .line 1067
+    .line 1084
     :cond_8
-    throw v6
+    throw v8
 
-    .line 1057
-    :goto_1
+    :catch_1
+    move-exception p0
+
+    .line 1074
     invoke-virtual {v1}, Landroid/view/Surface;->isValid()Z
 
     move-result p1
 
     if-nez p1, :cond_9
 
-    .line 1058
-    filled-new-array {v3}, [Ljava/lang/String;
+    .line 1075
+    new-array p0, v2, [Ljava/lang/String;
 
-    move-result-object p0
+    aput-object v5, p0, v3
 
     invoke-static {p0}, Ljp/co/sony/mc/camera/util/CamLog;->w([Ljava/lang/String;)V
 
     return-void
 
-    .line 1061
+    .line 1078
     :cond_9
     throw p0
 
-    .line 1052
+    .line 1069
     :catch_2
-    const-string v0, "finalizeOutputConfigurations failed."
+    new-array v0, v2, [Ljava/lang/String;
 
-    filled-new-array {v0}, [Ljava/lang/String;
+    const-string v1, "finalizeOutputConfigurations failed."
 
-    move-result-object v0
+    aput-object v1, v0, v3
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/util/CamLog;->e([Ljava/lang/String;)V
 
-    .line 1053
+    .line 1070
     sget-object v0, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$ErrorCode;->ERROR_ON_CAMERA_OPEN:Ljp/co/sony/mc/camera/device/CameraDeviceHandler$ErrorCode;
 
-    invoke-virtual {p0, p1, v4, v0}, Ljp/co/sony/mc/camera/device/state/DeviceStateVideoBase;->sendNotifyOtherError(Ljp/co/sony/mc/camera/device/state/DeviceStateContext;Ljp/co/sony/mc/camera/device/CameraDeviceHandler$CameraSessionId;Ljp/co/sony/mc/camera/device/CameraDeviceHandler$ErrorCode;)V
+    invoke-virtual {p0, p1, v6, v0}, Ljp/co/sony/mc/camera/device/state/DeviceStateVideoBase;->sendNotifyOtherError(Ljp/co/sony/mc/camera/device/state/DeviceStateContext;Ljp/co/sony/mc/camera/device/CameraDeviceHandler$CameraSessionId;Ljp/co/sony/mc/camera/device/CameraDeviceHandler$ErrorCode;)V
 
     return-void
 
     :catch_3
     move-exception p0
 
-    .line 1040
+    .line 1057
     invoke-virtual {v1}, Landroid/view/Surface;->isValid()Z
 
     move-result p1
 
     if-nez p1, :cond_a
 
-    .line 1041
-    filled-new-array {v3}, [Ljava/lang/String;
+    .line 1058
+    new-array p0, v2, [Ljava/lang/String;
 
-    move-result-object p0
+    aput-object v5, p0, v3
 
     invoke-static {p0}, Ljp/co/sony/mc/camera/util/CamLog;->w([Ljava/lang/String;)V
 
     return-void
 
-    .line 1044
+    .line 1061
     :cond_a
     throw p0
 
-    .line 1071
+    .line 1088
     :cond_b
-    :goto_2
+    :goto_0
     invoke-virtual {p1}, Ljp/co/sony/mc/camera/device/state/DeviceStateContext;->getCaptureSessionInfo()Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CaptureSessionInfo;
 
-    move-result-object v6
+    move-result-object v8
 
     const/4 v9, 0x0
 
-    iput-object v9, v6, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CaptureSessionInfo;->outputConfiguration:Landroid/hardware/camera2/params/OutputConfiguration;
+    iput-object v9, v8, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CaptureSessionInfo;->outputConfiguration:Landroid/hardware/camera2/params/OutputConfiguration;
 
-    .line 1074
+    .line 1091
     :cond_c
-    new-instance v6, Ljava/util/ArrayList;
+    new-instance v8, Ljava/util/ArrayList;
 
-    invoke-direct {v6}, Ljava/util/ArrayList;-><init>()V
+    invoke-direct {v8}, Ljava/util/ArrayList;-><init>()V
 
-    .line 1076
-    new-array v9, v7, [Landroid/view/Surface;
+    .line 1093
+    new-array v9, v2, [Landroid/view/Surface;
 
-    aput-object v1, v9, v8
+    aput-object v1, v9, v3
 
-    invoke-virtual {p1, v7, v9}, Ljp/co/sony/mc/camera/device/state/DeviceStateContext;->createCaptureRequestHolder(I[Landroid/view/Surface;)Landroid/hardware/camera2/CaptureRequest;
+    invoke-virtual {p1, v2, v9}, Ljp/co/sony/mc/camera/device/state/DeviceStateContext;->createCaptureRequestHolder(I[Landroid/view/Surface;)Landroid/hardware/camera2/CaptureRequest;
 
     move-result-object v9
 
     if-nez v9, :cond_d
 
-    .line 1079
-    const-string p0, "SetRepeatingRequestTask : CaptureRequest cannot be created. mCaptureSurface is null."
+    .line 1096
+    new-array p0, v2, [Ljava/lang/String;
 
-    filled-new-array {p0}, [Ljava/lang/String;
+    const-string p1, "SetRepeatingRequestTask : CaptureRequest cannot be created. mCaptureSurface is null."
 
-    move-result-object p0
+    aput-object p1, p0, v3
 
     invoke-static {p0}, Ljp/co/sony/mc/camera/util/CamLog;->e([Ljava/lang/String;)V
 
     return-void
 
-    .line 1085
+    .line 1102
     :cond_d
-    invoke-virtual {v5}, Ljp/co/sony/mc/camera/device/CameraParameters;->getCaptureFps()Ljp/co/sony/mc/camera/configuration/parameters/CaptureFps;
+    invoke-virtual {v7}, Ljp/co/sony/mc/camera/device/CameraParameters;->getCaptureFps()Ljp/co/sony/mc/camera/configuration/parameters/CaptureFps;
 
     move-result-object v10
 
@@ -2013,115 +2117,115 @@
 
     if-eqz v10, :cond_f
 
-    .line 1087
+    .line 1104
     :try_start_2
-    move-object v10, v2
+    move-object v10, v4
 
     check-cast v10, Landroid/hardware/camera2/CameraConstrainedHighSpeedCaptureSession;
 
-    .line 1089
+    .line 1106
     invoke-virtual {v10, v9}, Landroid/hardware/camera2/CameraConstrainedHighSpeedCaptureSession;->createHighSpeedRequestList(Landroid/hardware/camera2/CaptureRequest;)Ljava/util/List;
 
     move-result-object v9
 
-    .line 1094
-    invoke-interface {v9, v8}, Ljava/util/List;->get(I)Ljava/lang/Object;
+    .line 1111
+    invoke-interface {v9, v3}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
     move-result-object v9
 
     check-cast v9, Landroid/hardware/camera2/CaptureRequest;
 
-    invoke-interface {v6, v9}, Ljava/util/List;->add(Ljava/lang/Object;)Z
+    invoke-interface {v8, v9}, Ljava/util/List;->add(Ljava/lang/Object;)Z
     :try_end_2
     .catch Landroid/hardware/camera2/CameraAccessException; {:try_start_2 .. :try_end_2} :catch_5
     .catch Ljava/lang/IllegalArgumentException; {:try_start_2 .. :try_end_2} :catch_4
 
-    goto :goto_3
+    goto :goto_1
 
     :catch_4
     move-exception v9
 
-    .line 1099
+    .line 1116
     invoke-virtual {v1}, Landroid/view/Surface;->isValid()Z
 
     move-result v10
 
     if-nez v10, :cond_e
 
-    .line 1100
-    const-string v9, "SetRepeatingRequestTask : Preview surface is not valid, so the request is refused."
+    .line 1117
+    new-array v9, v2, [Ljava/lang/String;
 
-    filled-new-array {v9}, [Ljava/lang/String;
+    const-string v10, "SetRepeatingRequestTask : Preview surface is not valid, so the request is refused."
 
-    move-result-object v9
+    aput-object v10, v9, v3
 
     invoke-static {v9}, Ljp/co/sony/mc/camera/util/CamLog;->w([Ljava/lang/String;)V
 
-    goto :goto_3
+    goto :goto_1
 
-    .line 1103
+    .line 1120
     :cond_e
     throw v9
 
     :catch_5
     move-exception v9
 
-    .line 1096
+    .line 1113
     const-string v10, "SetRepeatingRequestTask : Failed to create high speed Request list."
 
     invoke-static {v10, v9}, Ljp/co/sony/mc/camera/util/CamLog;->e(Ljava/lang/String;Ljava/lang/Throwable;)V
 
-    goto :goto_3
+    goto :goto_1
 
-    .line 1107
+    .line 1124
     :cond_f
-    invoke-interface {v6, v9}, Ljava/util/List;->add(Ljava/lang/Object;)Z
+    invoke-interface {v8, v9}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    .line 1110
-    :goto_3
+    .line 1127
+    :goto_1
     invoke-virtual {v1}, Landroid/view/Surface;->isValid()Z
 
     move-result v9
 
     if-nez v9, :cond_11
 
-    .line 1111
+    .line 1128
     sget-boolean p0, Ljp/co/sony/mc/camera/util/CamLog;->DEBUG:Z
 
     if-eqz p0, :cond_10
 
-    filled-new-array {v3}, [Ljava/lang/String;
+    new-array p0, v2, [Ljava/lang/String;
 
-    move-result-object p0
+    aput-object v5, p0, v3
 
     invoke-static {p0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
     :cond_10
     return-void
 
-    .line 1115
+    .line 1132
     :cond_11
-    sget-object v3, Ljp/co/sony/mc/camera/util/PerfLog;->SET_REPEATING_BURST_REQUEST:Ljp/co/sony/mc/camera/util/PerfLog;
+    sget-object v5, Ljp/co/sony/mc/camera/util/PerfLog;->SET_REPEATING_BURST_REQUEST:Ljp/co/sony/mc/camera/util/PerfLog;
 
-    invoke-virtual {v3}, Ljp/co/sony/mc/camera/util/PerfLog;->begin()V
+    invoke-virtual {v5}, Ljp/co/sony/mc/camera/util/PerfLog;->begin()V
 
-    .line 1117
+    .line 1134
     :try_start_3
-    sget-boolean v3, Ljp/co/sony/mc/camera/util/CamLog;->DEBUG:Z
+    sget-boolean v5, Ljp/co/sony/mc/camera/util/CamLog;->DEBUG:Z
 
-    if-eqz v3, :cond_12
+    if-eqz v5, :cond_12
 
-    new-array v3, v7, [Ljava/lang/String;
+    new-array v5, v2, [Ljava/lang/String;
 
-    new-instance v7, Ljava/lang/StringBuilder;
+    new-instance v9, Ljava/lang/StringBuilder;
 
-    invoke-direct {v7, v0}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+    invoke-direct {v9, v0}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
-    invoke-interface {v6}, Ljava/util/List;->size()I
+    invoke-interface {v8}, Ljava/util/List;->size()I
 
     move-result v0
 
-    invoke-virtual {v7, v0}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+    invoke-virtual {v9, v0}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
     move-result-object v0
 
@@ -2129,38 +2233,38 @@
 
     move-result-object v0
 
-    aput-object v0, v3, v8
+    aput-object v0, v5, v3
 
-    invoke-static {v3}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
+    invoke-static {v5}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
-    .line 1119
+    .line 1136
     :cond_12
     invoke-virtual {p1}, Ljp/co/sony/mc/camera/device/state/DeviceStateContext;->getCaptureSessionCallbackExecutor()Ljava/util/concurrent/ExecutorService;
 
     move-result-object v0
 
-    .line 1120
+    .line 1137
     invoke-virtual {p1}, Ljp/co/sony/mc/camera/device/state/DeviceStateContext;->getCaptureSessionCallback()Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CaptureSessionCallback;
 
-    move-result-object v3
+    move-result-object v5
 
-    .line 1118
-    invoke-virtual {v2, v6, v0, v3}, Landroid/hardware/camera2/CameraCaptureSession;->setRepeatingBurstRequests(Ljava/util/List;Ljava/util/concurrent/Executor;Landroid/hardware/camera2/CameraCaptureSession$CaptureCallback;)I
+    .line 1135
+    invoke-virtual {v4, v8, v0, v5}, Landroid/hardware/camera2/CameraCaptureSession;->setRepeatingBurstRequests(Ljava/util/List;Ljava/util/concurrent/Executor;Landroid/hardware/camera2/CameraCaptureSession$CaptureCallback;)I
 
-    .line 1121
+    .line 1138
     invoke-virtual {p1}, Ljp/co/sony/mc/camera/device/state/DeviceStateContext;->getCaptureRequestHolder()Ljp/co/sony/mc/camera/device/CaptureRequestHolder;
 
     move-result-object v0
 
     invoke-virtual {p1, v0}, Ljp/co/sony/mc/camera/device/state/DeviceStateContext;->validateParameter(Ljp/co/sony/mc/camera/device/CaptureRequestHolder;)V
 
-    .line 1122
+    .line 1139
     sget-boolean v0, Ljp/co/sony/mc/camera/util/CamLog;->DEBUG:Z
 
     if-eqz v0, :cond_13
 
-    .line 1123
-    invoke-interface {v6, v8}, Ljava/util/List;->get(I)Ljava/lang/Object;
+    .line 1140
+    invoke-interface {v8, v3}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
     move-result-object v0
 
@@ -2168,7 +2272,7 @@
 
     invoke-virtual {p1, v0}, Ljp/co/sony/mc/camera/device/state/DeviceStateContext;->updateCaptureRequestDumper(Landroid/hardware/camera2/CaptureRequest;)V
 
-    .line 1125
+    .line 1142
     :cond_13
     invoke-virtual {p1}, Ljp/co/sony/mc/camera/device/state/DeviceStateContext;->isSwitchLensDuringStreaming()Z
 
@@ -2176,19 +2280,19 @@
 
     if-nez v0, :cond_19
 
-    .line 1126
-    invoke-direct {p0, p1, v5}, Ljp/co/sony/mc/camera/device/state/DeviceStateVideoBase;->updateCameraStatus(Ljp/co/sony/mc/camera/device/state/DeviceStateContext;Ljp/co/sony/mc/camera/device/CameraParameters;)V
+    .line 1143
+    invoke-direct {p0, p1, v7}, Ljp/co/sony/mc/camera/device/state/DeviceStateVideoBase;->updateCameraStatus(Ljp/co/sony/mc/camera/device/state/DeviceStateContext;Ljp/co/sony/mc/camera/device/CameraParameters;)V
     :try_end_3
     .catch Landroid/hardware/camera2/CameraAccessException; {:try_start_3 .. :try_end_3} :catch_8
     .catch Ljava/lang/IllegalArgumentException; {:try_start_3 .. :try_end_3} :catch_7
     .catch Ljava/lang/IllegalStateException; {:try_start_3 .. :try_end_3} :catch_6
 
-    goto/16 :goto_5
+    goto/16 :goto_3
 
     :catch_6
     move-exception p0
 
-    .line 1154
+    .line 1171
     invoke-virtual {p1}, Ljp/co/sony/mc/camera/device/state/DeviceStateContext;->getCameraErrorStatus()Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CameraErrorStatus;
 
     move-result-object p1
@@ -2199,55 +2303,55 @@
 
     if-eqz p1, :cond_14
 
-    .line 1155
+    .line 1172
     const-string p1, "Failed in setRepeatingRequest: "
 
     invoke-static {p1, p0}, Ljp/co/sony/mc/camera/util/CamLog;->e(Ljava/lang/String;Ljava/lang/Throwable;)V
 
-    goto/16 :goto_5
+    goto/16 :goto_3
 
-    .line 1157
+    .line 1174
     :cond_14
     throw p0
 
     :catch_7
     move-exception p0
 
-    .line 1152
+    .line 1169
     const-string p1, "Failed in setRepeatingRequest."
 
     invoke-static {p1, p0}, Ljp/co/sony/mc/camera/util/CamLog;->w(Ljava/lang/String;Ljava/lang/Throwable;)V
 
-    goto :goto_5
+    goto :goto_3
 
     :catch_8
     move-exception v0
 
-    .line 1129
+    .line 1146
     invoke-virtual {p1}, Ljp/co/sony/mc/camera/device/state/DeviceStateContext;->getDeviceHandler()Ljp/co/sony/mc/camera/device/CameraDeviceHandler$CameraDeviceHandlerInquirer;
 
-    move-result-object v2
+    move-result-object v4
 
-    invoke-virtual {v2}, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$CameraDeviceHandlerInquirer;->isIgnoreCameraError()Z
+    invoke-virtual {v4}, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$CameraDeviceHandlerInquirer;->isIgnoreCameraError()Z
 
-    move-result v2
+    move-result v4
 
-    if-nez v2, :cond_18
+    if-nez v4, :cond_18
 
-    .line 1130
+    .line 1147
     invoke-virtual {p1}, Ljp/co/sony/mc/camera/device/state/DeviceStateContext;->getCameraErrorStatus()Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CameraErrorStatus;
 
-    move-result-object v2
+    move-result-object v4
 
-    invoke-virtual {v2}, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CameraErrorStatus;->isErrorCaused()Z
+    invoke-virtual {v4}, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CameraErrorStatus;->isErrorCaused()Z
 
-    move-result v2
+    move-result v4
 
-    if-eqz v2, :cond_15
+    if-eqz v4, :cond_15
 
-    goto :goto_4
+    goto :goto_2
 
-    .line 1132
+    .line 1149
     :cond_15
     invoke-virtual {v1}, Landroid/view/Surface;->isValid()Z
 
@@ -2255,40 +2359,42 @@
 
     if-nez v1, :cond_16
 
-    .line 1133
-    const-string/jumbo p0, "setRepeatingRequest : mPreviewSurface is invalid.(after performing set repeating request)"
+    .line 1150
+    new-array p0, v2, [Ljava/lang/String;
 
-    filled-new-array {p0}, [Ljava/lang/String;
+    const-string/jumbo p1, "setRepeatingRequest : mPreviewSurface is invalid.(after performing set repeating request)"
 
-    move-result-object p0
+    aput-object p1, p0, v3
 
     invoke-static {p0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
-    goto :goto_5
+    goto :goto_3
 
-    .line 1135
+    .line 1152
     :cond_16
     invoke-virtual {v0}, Landroid/hardware/camera2/CameraAccessException;->getReason()I
 
     move-result v1
 
-    const/4 v2, 0x3
+    const/4 v4, 0x3
 
-    if-ne v1, v2, :cond_17
+    if-ne v1, v4, :cond_17
 
-    .line 1136
-    new-instance v1, Ljava/lang/StringBuilder;
+    .line 1153
+    new-array v1, v2, [Ljava/lang/String;
 
-    const-string v2, "Failed in setRepeatingRequest  by CameraAccessException. Reason:"
+    new-instance v4, Ljava/lang/StringBuilder;
 
-    invoke-direct {v1, v2}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+    const-string v5, "Failed in setRepeatingRequest  by CameraAccessException. Reason:"
 
-    .line 1137
+    invoke-direct {v4, v5}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+
+    .line 1154
     invoke-virtual {v0}, Landroid/hardware/camera2/CameraAccessException;->getReason()I
 
     move-result v0
 
-    invoke-virtual {v1, v0}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+    invoke-virtual {v4, v0}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
     move-result-object v0
 
@@ -2296,21 +2402,19 @@
 
     move-result-object v0
 
-    filled-new-array {v0}, [Ljava/lang/String;
+    aput-object v0, v1, v3
 
-    move-result-object v0
+    .line 1153
+    invoke-static {v1}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
-    .line 1136
-    invoke-static {v0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
-
-    .line 1138
+    .line 1155
     sget-object v0, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$ErrorCode;->ERROR_ON_CAMERA_OPEN:Ljp/co/sony/mc/camera/device/CameraDeviceHandler$ErrorCode;
 
-    invoke-virtual {p0, p1, v4, v0}, Ljp/co/sony/mc/camera/device/state/DeviceStateVideoBase;->sendNotifyOtherError(Ljp/co/sony/mc/camera/device/state/DeviceStateContext;Ljp/co/sony/mc/camera/device/CameraDeviceHandler$CameraSessionId;Ljp/co/sony/mc/camera/device/CameraDeviceHandler$ErrorCode;)V
+    invoke-virtual {p0, p1, v6, v0}, Ljp/co/sony/mc/camera/device/state/DeviceStateVideoBase;->sendNotifyOtherError(Ljp/co/sony/mc/camera/device/state/DeviceStateContext;Ljp/co/sony/mc/camera/device/CameraDeviceHandler$CameraSessionId;Ljp/co/sony/mc/camera/device/CameraDeviceHandler$ErrorCode;)V
 
-    goto :goto_5
+    goto :goto_3
 
-    .line 1141
+    .line 1158
     :cond_17
     new-instance p0, Ljava/lang/RuntimeException;
 
@@ -2320,7 +2424,7 @@
 
     invoke-direct {p1, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
-    .line 1144
+    .line 1161
     invoke-virtual {v0}, Landroid/hardware/camera2/CameraAccessException;->getReason()I
 
     move-result v0
@@ -2337,30 +2441,30 @@
 
     throw p0
 
-    .line 1131
+    .line 1148
     :cond_18
-    :goto_4
+    :goto_2
     const-string p0, "Failed in setRepeatingRequest"
 
     invoke-static {p0, v0}, Ljp/co/sony/mc/camera/util/CamLog;->w(Ljava/lang/String;Ljava/lang/Throwable;)V
 
-    .line 1161
+    .line 1178
     :cond_19
-    :goto_5
+    :goto_3
     sget-object p0, Ljp/co/sony/mc/camera/util/PerfLog;->SET_REPEATING_BURST_REQUEST:Ljp/co/sony/mc/camera/util/PerfLog;
 
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/util/PerfLog;->end()V
 
-    .line 1162
+    .line 1179
     sget-boolean p0, Ljp/co/sony/mc/camera/util/CamLog;->DEBUG:Z
 
     if-eqz p0, :cond_1a
 
-    const-string p0, "repeatingRequest process [OUT]"
+    new-array p0, v2, [Ljava/lang/String;
 
-    filled-new-array {p0}, [Ljava/lang/String;
+    const-string p1, "repeatingRequest process [OUT]"
 
-    move-result-object p0
+    aput-object p1, p0, v3
 
     invoke-static {p0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
@@ -2373,7 +2477,7 @@
 
     const/4 v0, 0x0
 
-    .line 180
+    .line 183
     invoke-virtual {p0, p1, p2, v0}, Ljp/co/sony/mc/camera/device/state/DeviceStateVideoBase;->repeatingRequestForRecording(Ljp/co/sony/mc/camera/device/state/DeviceStateContext;ZZ)V
 
     return-void
@@ -2388,12 +2492,12 @@
 
     const-string v3, "T1 setRepeatingBurst uptimeMillis:"
 
-    .line 193
+    .line 196
     invoke-virtual/range {p1 .. p1}, Ljp/co/sony/mc/camera/device/state/DeviceStateContext;->copyCaptureRequestHolder()Ljp/co/sony/mc/camera/device/CaptureRequestHolder;
 
     move-result-object v4
 
-    .line 194
+    .line 197
     invoke-virtual/range {p1 .. p1}, Ljp/co/sony/mc/camera/device/state/DeviceStateContext;->getCameraInfo()Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CameraDeviceInfo;
 
     move-result-object v0
@@ -2402,141 +2506,156 @@
 
     move-result-object v5
 
-    .line 195
+    .line 198
     invoke-virtual/range {p1 .. p1}, Ljp/co/sony/mc/camera/device/state/DeviceStateContext;->getCameraParameters()Ljp/co/sony/mc/camera/device/CameraParameters;
 
     move-result-object v0
 
+    const/4 v6, 0x1
+
+    const/4 v7, 0x0
+
     if-nez v0, :cond_0
 
-    .line 197
-    const-string v0, "CameraParameter is null."
+    .line 200
+    new-array v0, v6, [Ljava/lang/String;
 
-    filled-new-array {v0}, [Ljava/lang/String;
+    const-string v1, "CameraParameter is null."
 
-    move-result-object v0
+    aput-object v1, v0, v7
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/util/CamLog;->w([Ljava/lang/String;)V
 
     return-void
 
-    .line 203
+    .line 206
     :cond_0
     invoke-virtual {v0}, Ljp/co/sony/mc/camera/device/CameraParameters;->getCaptureFps()Ljp/co/sony/mc/camera/configuration/parameters/CaptureFps;
 
-    move-result-object v6
-
-    invoke-virtual {v6}, Ljp/co/sony/mc/camera/configuration/parameters/CaptureFps;->getFpsIntValue()I
-
-    move-result v6
-
-    .line 202
-    invoke-virtual {v1, v6, v2}, Ljp/co/sony/mc/camera/device/state/DeviceStateContext;->getFramedropProfiler(IZ)Ljp/co/sony/mc/camera/device/FramedropProfiler;
-
-    move-result-object v6
-
-    .line 206
-    invoke-virtual/range {p1 .. p1}, Ljp/co/sony/mc/camera/device/state/DeviceStateContext;->getSurfaceInfo()Ljp/co/sony/mc/camera/device/state/DeviceStateContext$SurfaceInfo;
-
-    move-result-object v7
-
-    invoke-virtual {v7}, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$SurfaceInfo;->getPreviewSurface()Landroid/view/Surface;
-
-    move-result-object v7
-
-    .line 207
-    invoke-virtual/range {p1 .. p1}, Ljp/co/sony/mc/camera/device/state/DeviceStateContext;->getSurfaceInfo()Ljp/co/sony/mc/camera/device/state/DeviceStateContext$SurfaceInfo;
-
     move-result-object v8
 
-    invoke-virtual {v8}, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$SurfaceInfo;->getRecordingSurface()Landroid/view/Surface;
+    invoke-virtual {v8}, Ljp/co/sony/mc/camera/configuration/parameters/CaptureFps;->getFpsIntValue()I
+
+    move-result v8
+
+    .line 205
+    invoke-virtual {v1, v8, v2}, Ljp/co/sony/mc/camera/device/state/DeviceStateContext;->getFramedropProfiler(IZ)Ljp/co/sony/mc/camera/device/FramedropProfiler;
 
     move-result-object v8
-
-    const/4 v9, 0x2
 
     .line 209
-    new-array v10, v9, [Landroid/view/Surface;
+    invoke-virtual/range {p1 .. p1}, Ljp/co/sony/mc/camera/device/state/DeviceStateContext;->getSurfaceInfo()Ljp/co/sony/mc/camera/device/state/DeviceStateContext$SurfaceInfo;
 
-    const/4 v11, 0x0
+    move-result-object v9
 
-    aput-object v7, v10, v11
+    invoke-virtual {v9}, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$SurfaceInfo;->getPreviewSurface()Landroid/view/Surface;
 
-    const/4 v12, 0x1
-
-    aput-object v8, v10, v12
+    move-result-object v9
 
     .line 211
-    sget-object v13, Landroid/hardware/camera2/CaptureRequest;->CONTROL_AE_TARGET_FPS_RANGE:Landroid/hardware/camera2/CaptureRequest$Key;
-
-    .line 212
-    invoke-virtual {v0}, Ljp/co/sony/mc/camera/device/CameraParameters;->getCaptureFps()Ljp/co/sony/mc/camera/configuration/parameters/CaptureFps;
-
-    move-result-object v14
-
-    invoke-virtual {v14}, Ljp/co/sony/mc/camera/configuration/parameters/CaptureFps;->getFpsIntValue()I
-
-    move-result v14
-
-    invoke-static {v14}, Ljp/co/sony/mc/camera/device/FpsProvider;->getFpsRangeForVideoRecording(I)Landroid/util/Range;
-
-    move-result-object v14
-
-    .line 211
-    invoke-virtual {v4, v13, v14}, Ljp/co/sony/mc/camera/device/CaptureRequestHolder;->set(Landroid/hardware/camera2/CaptureRequest$Key;Ljava/lang/Object;)V
-
-    .line 214
-    invoke-virtual/range {p1 .. p1}, Ljp/co/sony/mc/camera/device/state/DeviceStateContext;->getCameraInfo()Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CameraDeviceInfo;
-
-    move-result-object v13
-
-    invoke-virtual {v13}, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CameraDeviceInfo;->getCameraDevice()Landroid/hardware/camera2/CameraDevice;
-
-    move-result-object v13
-
-    const/4 v14, 0x0
-
-    const/4 v15, 0x3
-
-    .line 217
-    invoke-virtual {v4, v13, v14, v15, v10}, Ljp/co/sony/mc/camera/device/CaptureRequestHolder;->createCaptureRequest(Landroid/hardware/camera2/CameraDevice;Ljava/lang/Object;I[Landroid/view/Surface;)Landroid/hardware/camera2/CaptureRequest;
+    invoke-virtual/range {p1 .. p1}, Ljp/co/sony/mc/camera/device/state/DeviceStateContext;->getSurfaceInfo()Ljp/co/sony/mc/camera/device/state/DeviceStateContext$SurfaceInfo;
 
     move-result-object v10
 
-    .line 223
-    invoke-virtual/range {p1 .. p1}, Ljp/co/sony/mc/camera/device/state/DeviceStateContext;->isPoseRotationRunning()Z
+    invoke-virtual {v10}, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$SurfaceInfo;->getRecordingSurfaces()Ljava/util/Map;
+
+    move-result-object v10
+
+    .line 212
+    new-instance v11, Ljava/util/ArrayList;
+
+    invoke-direct {v11}, Ljava/util/ArrayList;-><init>()V
+
+    .line 213
+    invoke-interface {v11, v9}, Ljava/util/List;->add(Ljava/lang/Object;)Z
+
+    .line 214
+    invoke-interface {v10}, Ljava/util/Map;->values()Ljava/util/Collection;
+
+    move-result-object v12
+
+    invoke-interface {v11, v12}, Ljava/util/List;->addAll(Ljava/util/Collection;)Z
+
+    .line 215
+    new-array v12, v7, [Landroid/view/Surface;
+
+    invoke-interface {v11, v12}, Ljava/util/List;->toArray([Ljava/lang/Object;)[Ljava/lang/Object;
+
+    move-result-object v11
+
+    check-cast v11, [Landroid/view/Surface;
+
+    .line 217
+    sget-object v12, Landroid/hardware/camera2/CaptureRequest;->CONTROL_AE_TARGET_FPS_RANGE:Landroid/hardware/camera2/CaptureRequest$Key;
+
+    .line 218
+    invoke-virtual {v0}, Ljp/co/sony/mc/camera/device/CameraParameters;->getCaptureFps()Ljp/co/sony/mc/camera/configuration/parameters/CaptureFps;
+
+    move-result-object v13
+
+    invoke-virtual {v13}, Ljp/co/sony/mc/camera/configuration/parameters/CaptureFps;->getFpsIntValue()I
 
     move-result v13
 
-    if-eqz v13, :cond_1
-
-    .line 224
-    invoke-virtual/range {p1 .. p1}, Ljp/co/sony/mc/camera/device/state/DeviceStateContext;->getPoseRotationResultChecker()Ljp/co/sony/mc/camera/device/PoseRotationResultChecker;
+    invoke-static {v13}, Ljp/co/sony/mc/camera/device/FpsProvider;->getFpsRangeForVideoRecording(I)Landroid/util/Range;
 
     move-result-object v13
+
+    .line 217
+    invoke-virtual {v4, v12, v13}, Ljp/co/sony/mc/camera/device/CaptureRequestHolder;->set(Landroid/hardware/camera2/CaptureRequest$Key;Ljava/lang/Object;)V
+
+    .line 220
+    invoke-virtual/range {p1 .. p1}, Ljp/co/sony/mc/camera/device/state/DeviceStateContext;->getCameraInfo()Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CameraDeviceInfo;
+
+    move-result-object v12
+
+    invoke-virtual {v12}, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CameraDeviceInfo;->getCameraDevice()Landroid/hardware/camera2/CameraDevice;
+
+    move-result-object v12
+
+    const/4 v13, 0x0
+
+    const/4 v14, 0x3
+
+    .line 223
+    invoke-virtual {v4, v12, v13, v14, v11}, Ljp/co/sony/mc/camera/device/CaptureRequestHolder;->createCaptureRequest(Landroid/hardware/camera2/CameraDevice;Ljava/lang/Object;I[Landroid/view/Surface;)Landroid/hardware/camera2/CaptureRequest;
+
+    move-result-object v11
+
+    .line 229
+    invoke-virtual/range {p1 .. p1}, Ljp/co/sony/mc/camera/device/state/DeviceStateContext;->isPoseRotationRunning()Z
+
+    move-result v12
+
+    if-eqz v12, :cond_1
+
+    .line 230
+    invoke-virtual/range {p1 .. p1}, Ljp/co/sony/mc/camera/device/state/DeviceStateContext;->getPoseRotationResultChecker()Ljp/co/sony/mc/camera/device/PoseRotationResultChecker;
+
+    move-result-object v12
 
     invoke-virtual/range {p1 .. p1}, Ljp/co/sony/mc/camera/device/state/DeviceStateContext;->getCaptureResultHolder()Ljp/co/sony/mc/camera/device/CaptureResultHolder;
 
     move-result-object v15
 
-    invoke-virtual {v13, v14, v15}, Ljp/co/sony/mc/camera/device/PoseRotationResultChecker;->checkOnCompleted(Landroid/hardware/camera2/CaptureRequest;Ljp/co/sony/mc/camera/device/CaptureResultHolder;)V
+    invoke-virtual {v12, v13, v15}, Ljp/co/sony/mc/camera/device/PoseRotationResultChecker;->checkOnCompleted(Landroid/hardware/camera2/CaptureRequest;Ljp/co/sony/mc/camera/device/CaptureResultHolder;)V
 
     :cond_1
-    if-nez v10, :cond_2
+    if-nez v11, :cond_2
 
-    .line 228
-    const-string v0, "SetRecordingRequestTask : CaptureRequest cannot be created. mCaptureSurface is not null."
+    .line 234
+    new-array v0, v6, [Ljava/lang/String;
 
-    filled-new-array {v0}, [Ljava/lang/String;
+    const-string v2, "SetRecordingRequestTask : CaptureRequest cannot be created. mCaptureSurface is not null."
 
-    move-result-object v0
+    aput-object v2, v0, v7
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/util/CamLog;->e([Ljava/lang/String;)V
 
-    .line 231
+    .line 237
     invoke-virtual/range {p1 .. p1}, Ljp/co/sony/mc/camera/device/state/DeviceStateContext;->releaseRecorder()V
 
-    .line 232
+    .line 238
     invoke-virtual/range {p1 .. p1}, Ljp/co/sony/mc/camera/device/state/DeviceStateContext;->getCameraDeviceHandlerCallback()Ljp/co/sony/mc/camera/device/state/IDeviceStateMachineCallback;
 
     move-result-object v0
@@ -2545,33 +2664,33 @@
 
     return-void
 
-    .line 236
+    .line 242
     :cond_2
-    new-instance v13, Ljava/util/ArrayList;
+    new-instance v12, Ljava/util/ArrayList;
 
-    invoke-direct {v13}, Ljava/util/ArrayList;-><init>()V
+    invoke-direct {v12}, Ljava/util/ArrayList;-><init>()V
 
-    .line 237
+    .line 243
     invoke-virtual/range {p1 .. p1}, Ljp/co/sony/mc/camera/device/state/DeviceStateContext;->getCaptureSessionInfo()Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CaptureSessionInfo;
 
-    move-result-object v14
+    move-result-object v13
 
-    iget-object v14, v14, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CaptureSessionInfo;->captureSession:Landroid/hardware/camera2/CameraCaptureSession;
+    iget-object v13, v13, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CaptureSessionInfo;->captureSession:Landroid/hardware/camera2/CameraCaptureSession;
 
-    if-nez v14, :cond_3
+    if-nez v13, :cond_3
 
-    .line 239
-    const-string v0, "CaptureSession is not set. need to create capture session."
+    .line 245
+    new-array v0, v6, [Ljava/lang/String;
 
-    filled-new-array {v0}, [Ljava/lang/String;
+    const-string v1, "CaptureSession is not set. need to create capture session."
 
-    move-result-object v0
+    aput-object v1, v0, v7
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
     return-void
 
-    .line 243
+    .line 249
     :cond_3
     sget-object v15, Ljp/co/sony/mc/camera/device/state/DeviceStateVideoBase$1;->$SwitchMap$jp$co$sony$mc$camera$configuration$parameters$CaptureFps:[I
 
@@ -2585,67 +2704,69 @@
 
     aget v0, v15, v0
 
-    if-eq v0, v12, :cond_5
+    if-eq v0, v6, :cond_5
 
-    if-eq v0, v9, :cond_4
+    const/4 v15, 0x2
+
+    if-eq v0, v15, :cond_4
+
+    .line 283
+    new-array v0, v6, [Ljava/lang/String;
+
+    const-string v15, "default : ([P,V])"
+
+    aput-object v15, v0, v7
+
+    invoke-static {v0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
+
+    .line 285
+    invoke-interface {v12, v11}, Ljava/util/List;->add(Ljava/lang/Object;)Z
+
+    goto :goto_0
+
+    .line 275
+    :cond_4
+    new-array v0, v6, [Ljava/lang/String;
+
+    const-string v15, "60FPS : ([P,V],[P,V])"
+
+    aput-object v15, v0, v7
+
+    invoke-static {v0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
     .line 277
-    const-string v0, "default : ([P,V])"
+    invoke-interface {v12, v11}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    filled-new-array {v0}, [Ljava/lang/String;
-
-    move-result-object v0
-
-    invoke-static {v0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
-
-    .line 279
-    invoke-interface {v13, v10}, Ljava/util/List;->add(Ljava/lang/Object;)Z
+    .line 278
+    invoke-interface {v12, v11}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
     goto :goto_0
 
-    .line 269
-    :cond_4
-    const-string v0, "60FPS : ([P,V],[P,V])"
-
-    filled-new-array {v0}, [Ljava/lang/String;
-
-    move-result-object v0
-
-    invoke-static {v0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
-
-    .line 271
-    invoke-interface {v13, v10}, Ljava/util/List;->add(Ljava/lang/Object;)Z
-
-    .line 272
-    invoke-interface {v13, v10}, Ljava/util/List;->add(Ljava/lang/Object;)Z
-
-    goto :goto_0
-
-    .line 245
+    .line 251
     :cond_5
     sget-boolean v0, Ljp/co/sony/mc/camera/util/CamLog;->DEBUG:Z
 
     if-eqz v0, :cond_6
 
-    const-string v0, "120FPS : ([P,V],V,V,V)"
+    new-array v0, v6, [Ljava/lang/String;
 
-    filled-new-array {v0}, [Ljava/lang/String;
+    const-string v15, "120FPS : ([P,V],V,V,V)"
 
-    move-result-object v0
+    aput-object v15, v0, v7
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
-    .line 249
+    .line 255
     :cond_6
     :try_start_0
-    move-object v0, v14
+    move-object v0, v13
 
     check-cast v0, Landroid/hardware/camera2/CameraConstrainedHighSpeedCaptureSession;
 
-    .line 250
-    invoke-virtual {v0, v10}, Landroid/hardware/camera2/CameraConstrainedHighSpeedCaptureSession;->createHighSpeedRequestList(Landroid/hardware/camera2/CaptureRequest;)Ljava/util/List;
+    .line 256
+    invoke-virtual {v0, v11}, Landroid/hardware/camera2/CameraConstrainedHighSpeedCaptureSession;->createHighSpeedRequestList(Landroid/hardware/camera2/CaptureRequest;)Ljava/util/List;
 
-    move-result-object v13
+    move-result-object v12
     :try_end_0
     .catch Landroid/hardware/camera2/CameraAccessException; {:try_start_0 .. :try_end_0} :catch_4
     .catch Ljava/lang/IllegalArgumentException; {:try_start_0 .. :try_end_0} :catch_0
@@ -2655,86 +2776,77 @@
     :catch_0
     move-exception v0
 
-    .line 258
-    invoke-virtual {v7}, Landroid/view/Surface;->isValid()Z
+    .line 264
+    invoke-virtual {v9}, Landroid/view/Surface;->isValid()Z
 
-    move-result v9
+    move-result v11
 
-    if-nez v9, :cond_11
+    if-nez v11, :cond_11
 
-    .line 259
-    const-string v0, "SetRepeatingRequestTask : Preview surface is not valid, so the request is refused."
+    .line 265
+    new-array v0, v6, [Ljava/lang/String;
 
-    filled-new-array {v0}, [Ljava/lang/String;
+    const-string v11, "SetRepeatingRequestTask : Preview surface is not valid, so the request is refused."
 
-    move-result-object v0
+    aput-object v11, v0, v7
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/util/CamLog;->w([Ljava/lang/String;)V
 
-    .line 285
+    .line 291
     :goto_0
     :try_start_1
     sget-boolean v0, Ljp/co/sony/mc/camera/util/CamLog;->VERBOSE:Z
 
     if-eqz v0, :cond_7
 
-    new-array v0, v12, [Ljava/lang/String;
+    new-array v0, v6, [Ljava/lang/String;
 
-    new-instance v9, Ljava/lang/StringBuilder;
+    new-instance v11, Ljava/lang/StringBuilder;
 
-    invoke-direct {v9, v3}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
-
-    move-object v10, v13
+    invoke-direct {v11, v3}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
     invoke-static {}, Landroid/os/SystemClock;->uptimeMillis()J
 
-    move-result-wide v12
+    move-result-wide v14
 
-    invoke-virtual {v9, v12, v13}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
+    invoke-virtual {v11, v14, v15}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
 
-    move-result-object v9
+    move-result-object v11
 
-    invoke-virtual {v9}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-virtual {v11}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    move-result-object v9
+    move-result-object v11
 
-    aput-object v9, v0, v11
+    aput-object v11, v0, v7
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
-    goto :goto_1
-
+    .line 293
     :cond_7
-    move-object v10, v13
-
-    .line 287
-    :goto_1
     invoke-virtual/range {p1 .. p1}, Ljp/co/sony/mc/camera/device/state/DeviceStateContext;->getCaptureSessionCallbackExecutor()Ljava/util/concurrent/ExecutorService;
 
     move-result-object v0
 
-    move/from16 v3, p3
+    move/from16 v11, p3
 
-    const/4 v9, 0x1
-
-    .line 288
-    invoke-virtual {v1, v9, v2, v3, v6}, Ljp/co/sony/mc/camera/device/state/DeviceStateContext;->getCaptureSessionCallback(ZZZLjp/co/sony/mc/camera/device/FramedropProfiler;)Landroid/hardware/camera2/CameraCaptureSession$CaptureCallback;
+    .line 294
+    invoke-virtual {v1, v6, v2, v11, v8}, Ljp/co/sony/mc/camera/device/state/DeviceStateContext;->getCaptureSessionCallback(ZZZLjp/co/sony/mc/camera/device/FramedropProfiler;)Landroid/hardware/camera2/CameraCaptureSession$CaptureCallback;
 
     move-result-object v2
 
-    .line 286
-    invoke-virtual {v14, v10, v0, v2}, Landroid/hardware/camera2/CameraCaptureSession;->setRepeatingBurstRequests(Ljava/util/List;Ljava/util/concurrent/Executor;Landroid/hardware/camera2/CameraCaptureSession$CaptureCallback;)I
+    .line 292
+    invoke-virtual {v13, v12, v0, v2}, Landroid/hardware/camera2/CameraCaptureSession;->setRepeatingBurstRequests(Ljava/util/List;Ljava/util/concurrent/Executor;Landroid/hardware/camera2/CameraCaptureSession$CaptureCallback;)I
 
-    .line 290
+    .line 296
     invoke-virtual {v1, v4}, Ljp/co/sony/mc/camera/device/state/DeviceStateContext;->validateParameter(Ljp/co/sony/mc/camera/device/CaptureRequestHolder;)V
 
-    .line 291
+    .line 297
     sget-boolean v0, Ljp/co/sony/mc/camera/util/CamLog;->DEBUG:Z
 
     if-eqz v0, :cond_10
 
-    .line 292
-    invoke-interface {v10, v11}, Ljava/util/List;->get(I)Ljava/lang/Object;
+    .line 298
+    invoke-interface {v12, v7}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
     move-result-object v0
 
@@ -2746,12 +2858,12 @@
     .catch Ljava/lang/IllegalArgumentException; {:try_start_1 .. :try_end_1} :catch_2
     .catch Ljava/lang/IllegalStateException; {:try_start_1 .. :try_end_1} :catch_1
 
-    goto/16 :goto_3
+    goto/16 :goto_2
 
     :catch_1
     move-exception v0
 
-    .line 323
+    .line 329
     invoke-virtual/range {p1 .. p1}, Ljp/co/sony/mc/camera/device/state/DeviceStateContext;->getCameraErrorStatus()Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CameraErrorStatus;
 
     move-result-object v1
@@ -2762,41 +2874,41 @@
 
     if-eqz v1, :cond_8
 
-    .line 324
+    .line 330
     const-string v1, "Failed in setRepeatingRequest: "
 
     invoke-static {v1, v0}, Ljp/co/sony/mc/camera/util/CamLog;->e(Ljava/lang/String;Ljava/lang/Throwable;)V
 
-    goto/16 :goto_3
+    goto/16 :goto_2
 
-    .line 326
+    .line 332
     :cond_8
     throw v0
 
     :catch_2
     move-exception v0
 
-    .line 319
+    .line 325
     invoke-virtual/range {p1 .. p1}, Ljp/co/sony/mc/camera/device/state/DeviceStateContext;->releaseRecorder()V
 
-    .line 320
+    .line 326
     invoke-virtual/range {p1 .. p1}, Ljp/co/sony/mc/camera/device/state/DeviceStateContext;->getCameraDeviceHandlerCallback()Ljp/co/sony/mc/camera/device/state/IDeviceStateMachineCallback;
 
     move-result-object v1
 
     invoke-interface {v1}, Ljp/co/sony/mc/camera/device/state/IDeviceStateMachineCallback;->onStartRecordingFailed()V
 
-    .line 321
+    .line 327
     const-string v1, "Failed in setRepeatingRequest."
 
     invoke-static {v1, v0}, Ljp/co/sony/mc/camera/util/CamLog;->w(Ljava/lang/String;Ljava/lang/Throwable;)V
 
-    goto/16 :goto_3
+    goto/16 :goto_2
 
     :catch_3
     move-exception v0
 
-    .line 295
+    .line 301
     invoke-virtual/range {p1 .. p1}, Ljp/co/sony/mc/camera/device/state/DeviceStateContext;->getDeviceHandler()Ljp/co/sony/mc/camera/device/CameraDeviceHandler$CameraDeviceHandlerInquirer;
 
     move-result-object v2
@@ -2805,11 +2917,11 @@
 
     move-result v2
 
-    const-string v3, "Failed in setRepeatingRequest"
+    const-string v4, "Failed in setRepeatingRequest"
 
     if-nez v2, :cond_9
 
-    .line 296
+    .line 302
     invoke-virtual/range {p1 .. p1}, Ljp/co/sony/mc/camera/device/state/DeviceStateContext;->getCameraErrorStatus()Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CameraErrorStatus;
 
     move-result-object v2
@@ -2820,11 +2932,11 @@
 
     if-eqz v2, :cond_a
 
-    .line 297
+    .line 303
     :cond_9
-    invoke-static {v3, v0}, Ljp/co/sony/mc/camera/util/CamLog;->w(Ljava/lang/String;Ljava/lang/Throwable;)V
+    invoke-static {v4, v0}, Ljp/co/sony/mc/camera/util/CamLog;->w(Ljava/lang/String;Ljava/lang/Throwable;)V
 
-    .line 299
+    .line 305
     :cond_a
     invoke-virtual/range {p1 .. p1}, Ljp/co/sony/mc/camera/device/state/DeviceStateContext;->getCameraErrorStatus()Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CameraErrorStatus;
 
@@ -2836,50 +2948,58 @@
 
     if-eqz v2, :cond_b
 
-    .line 300
-    invoke-static {v3, v0}, Ljp/co/sony/mc/camera/util/CamLog;->w(Ljava/lang/String;Ljava/lang/Throwable;)V
+    .line 306
+    invoke-static {v4, v0}, Ljp/co/sony/mc/camera/util/CamLog;->w(Ljava/lang/String;Ljava/lang/Throwable;)V
 
-    goto :goto_2
+    goto :goto_1
 
-    .line 301
+    .line 307
     :cond_b
-    invoke-virtual {v7}, Landroid/view/Surface;->isValid()Z
+    invoke-virtual {v9}, Landroid/view/Surface;->isValid()Z
 
     move-result v2
 
     if-nez v2, :cond_c
 
-    .line 302
-    const-string/jumbo v0, "setRepeatingRequest : mPreviewSurface is invalid.(after performing set repeating request)"
+    .line 308
+    new-array v0, v6, [Ljava/lang/String;
 
-    filled-new-array {v0}, [Ljava/lang/String;
+    const-string/jumbo v2, "setRepeatingRequest : mPreviewSurface is invalid.(after performing set repeating request)"
 
-    move-result-object v0
+    aput-object v2, v0, v7
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
-    goto :goto_2
+    goto :goto_1
 
-    .line 304
+    .line 310
     :cond_c
-    invoke-virtual {v8}, Landroid/view/Surface;->isValid()Z
+    sget-object v2, Ljp/co/sony/mc/camera/recorder/RecorderParameters$VideoTrackId;->VIDEO_TRACK_1:Ljp/co/sony/mc/camera/recorder/RecorderParameters$VideoTrackId;
+
+    invoke-interface {v10, v2}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object v2
+
+    check-cast v2, Landroid/view/Surface;
+
+    invoke-virtual {v2}, Landroid/view/Surface;->isValid()Z
 
     move-result v2
 
     if-nez v2, :cond_d
 
-    .line 305
-    const-string/jumbo v0, "setRepeatingRequest : recordingSSurface is invalid.(after performing set repeating request)"
+    .line 311
+    new-array v0, v6, [Ljava/lang/String;
 
-    filled-new-array {v0}, [Ljava/lang/String;
+    const-string/jumbo v2, "setRepeatingRequest : recordingSSurface is invalid.(after performing set repeating request)"
 
-    move-result-object v0
+    aput-object v2, v0, v7
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
-    goto :goto_2
+    goto :goto_1
 
-    .line 307
+    .line 313
     :cond_d
     invoke-virtual {v0}, Landroid/hardware/camera2/CameraAccessException;->getReason()I
 
@@ -2889,19 +3009,21 @@
 
     if-ne v2, v3, :cond_f
 
-    .line 308
-    new-instance v2, Ljava/lang/StringBuilder;
+    .line 314
+    new-array v2, v6, [Ljava/lang/String;
 
-    const-string v3, "Failed in setRepeatingRequest  by CameraAccessException. Reason:"
+    new-instance v3, Ljava/lang/StringBuilder;
 
-    invoke-direct {v2, v3}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+    const-string v4, "Failed in setRepeatingRequest  by CameraAccessException. Reason:"
 
-    .line 309
+    invoke-direct {v3, v4}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+
+    .line 315
     invoke-virtual {v0}, Landroid/hardware/camera2/CameraAccessException;->getReason()I
 
     move-result v0
 
-    invoke-virtual {v2, v0}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+    invoke-virtual {v3, v0}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
     move-result-object v0
 
@@ -2909,24 +3031,22 @@
 
     move-result-object v0
 
-    filled-new-array {v0}, [Ljava/lang/String;
+    aput-object v0, v2, v7
 
-    move-result-object v0
+    .line 314
+    invoke-static {v2}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
-    .line 308
-    invoke-static {v0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
-
-    .line 310
+    .line 316
     invoke-virtual/range {p0 .. p0}, Ljp/co/sony/mc/camera/device/state/DeviceStateVideoBase;->isRecording()Z
 
     move-result v0
 
     if-eqz v0, :cond_e
 
-    .line 311
+    .line 317
     invoke-direct/range {p0 .. p1}, Ljp/co/sony/mc/camera/device/state/DeviceStateVideoBase;->stopOnCameraError(Ljp/co/sony/mc/camera/device/state/DeviceStateContext;)V
 
-    .line 313
+    .line 319
     :cond_e
     sget-object v0, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$ErrorCode;->ERROR_ON_CAMERA_ERROR:Ljp/co/sony/mc/camera/device/CameraDeviceHandler$ErrorCode;
 
@@ -2934,12 +3054,12 @@
 
     invoke-virtual {v2, v1, v5, v0}, Ljp/co/sony/mc/camera/device/state/DeviceStateVideoBase;->sendNotifyOtherError(Ljp/co/sony/mc/camera/device/state/DeviceStateContext;Ljp/co/sony/mc/camera/device/CameraDeviceHandler$CameraSessionId;Ljp/co/sony/mc/camera/device/CameraDeviceHandler$ErrorCode;)V
 
-    .line 316
+    .line 322
     :cond_f
-    :goto_2
+    :goto_1
     invoke-virtual/range {p1 .. p1}, Ljp/co/sony/mc/camera/device/state/DeviceStateContext;->releaseRecorder()V
 
-    .line 317
+    .line 323
     invoke-virtual/range {p1 .. p1}, Ljp/co/sony/mc/camera/device/state/DeviceStateContext;->getCameraDeviceHandlerCallback()Ljp/co/sony/mc/camera/device/state/IDeviceStateMachineCallback;
 
     move-result-object v0
@@ -2947,25 +3067,25 @@
     invoke-interface {v0}, Ljp/co/sony/mc/camera/device/state/IDeviceStateMachineCallback;->onStartRecordingFailed()V
 
     :cond_10
-    :goto_3
+    :goto_2
     return-void
 
-    .line 262
+    .line 268
     :cond_11
     throw v0
 
     :catch_4
     move-exception v0
 
-    .line 252
+    .line 258
     const-string v2, "SetRecordingRequestTask: Failed to create high speed Request list."
 
     invoke-static {v2, v0}, Ljp/co/sony/mc/camera/util/CamLog;->e(Ljava/lang/String;Ljava/lang/Throwable;)V
 
-    .line 254
+    .line 260
     invoke-virtual/range {p1 .. p1}, Ljp/co/sony/mc/camera/device/state/DeviceStateContext;->releaseRecorder()V
 
-    .line 255
+    .line 261
     invoke-virtual/range {p1 .. p1}, Ljp/co/sony/mc/camera/device/state/DeviceStateContext;->getCameraDeviceHandlerCallback()Ljp/co/sony/mc/camera/device/state/IDeviceStateMachineCallback;
 
     move-result-object v0
@@ -2987,7 +3107,7 @@
     :cond_0
     const/4 p0, 0x0
 
-    .line 872
+    .line 884
     :goto_0
     :try_start_0
     invoke-virtual {p1, p0}, Landroid/hardware/camera2/CameraDevice;->setCameraAudioRestriction(I)V
@@ -2999,7 +3119,7 @@
     :catch_0
     move-exception p0
 
-    .line 876
+    .line 888
     const-string p1, "Failed in setCameraAudioRestriction."
 
     invoke-static {p1, p0}, Ljp/co/sony/mc/camera/util/CamLog;->e(Ljava/lang/String;Ljava/lang/Throwable;)V
@@ -3011,79 +3131,79 @@
 .method protected setIntelligentActiveTrigger(Ljp/co/sony/mc/camera/device/state/DeviceStateContext;IZ)V
     .locals 9
 
-    const/4 p0, 0x2
+    const/4 p0, 0x0
 
-    const/4 v0, 0x0
+    const/4 v0, 0x1
 
-    const/4 v1, 0x1
+    if-ne p2, v0, :cond_0
 
-    if-ne p2, v1, :cond_0
+    .line 899
+    new-array v1, v0, [Ljava/lang/String;
 
-    .line 887
     const-string/jumbo v2, "start"
 
-    filled-new-array {v2}, [Ljava/lang/String;
+    aput-object v2, v1, p0
 
-    move-result-object v2
+    invoke-static {v1}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
-    invoke-static {v2}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
-
-    .line 888
-    sput-boolean v0, Ljp/co/sony/mc/camera/device/state/DeviceStateVideoBase;->mIntelligentActiveFlushRequested:Z
+    .line 900
+    sput-boolean p0, Ljp/co/sony/mc/camera/device/state/DeviceStateVideoBase;->mIntelligentActiveFlushRequested:Z
 
     goto :goto_0
 
     :cond_0
-    if-ne p2, p0, :cond_2
+    const/4 v1, 0x2
 
-    .line 890
+    if-ne p2, v1, :cond_2
+
+    .line 902
+    new-array v1, v0, [Ljava/lang/String;
+
     const-string v2, "flush"
 
-    filled-new-array {v2}, [Ljava/lang/String;
+    aput-object v2, v1, p0
 
-    move-result-object v2
+    invoke-static {v1}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
-    invoke-static {v2}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
+    .line 903
+    sget-boolean v1, Ljp/co/sony/mc/camera/device/state/DeviceStateVideoBase;->mIntelligentActiveFlushRequested:Z
 
-    .line 891
-    sget-boolean v2, Ljp/co/sony/mc/camera/device/state/DeviceStateVideoBase;->mIntelligentActiveFlushRequested:Z
+    if-eqz v1, :cond_1
 
-    if-eqz v2, :cond_1
+    .line 904
+    new-array p1, v0, [Ljava/lang/String;
 
-    .line 892
-    const-string p0, "already flush"
+    const-string p2, "already flush"
 
-    filled-new-array {p0}, [Ljava/lang/String;
+    aput-object p2, p1, p0
 
-    move-result-object p0
-
-    invoke-static {p0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
+    invoke-static {p1}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
     return-void
 
-    .line 895
+    .line 907
     :cond_1
-    sput-boolean v1, Ljp/co/sony/mc/camera/device/state/DeviceStateVideoBase;->mIntelligentActiveFlushRequested:Z
+    sput-boolean v0, Ljp/co/sony/mc/camera/device/state/DeviceStateVideoBase;->mIntelligentActiveFlushRequested:Z
 
-    .line 898
+    .line 910
     :cond_2
     :goto_0
     invoke-virtual {p1}, Ljp/co/sony/mc/camera/device/state/DeviceStateContext;->copyCaptureRequestHolder()Ljp/co/sony/mc/camera/device/CaptureRequestHolder;
 
-    move-result-object v2
+    move-result-object v1
 
-    .line 899
-    sget-object v3, Lcom/sonymobile/camera/device/SomcCaptureRequestKeys;->SONYMOBILE_CONTROL_INTELLIGENT_ACTIVE_TRIGGER:Landroid/hardware/camera2/CaptureRequest$Key;
+    .line 911
+    sget-object v2, Lcom/sonymobile/camera/device/SomcCaptureRequestKeys;->SONYMOBILE_CONTROL_INTELLIGENT_ACTIVE_TRIGGER:Landroid/hardware/camera2/CaptureRequest$Key;
 
-    .line 900
+    .line 912
     invoke-static {p2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object p2
 
-    .line 899
-    invoke-virtual {v2, v3, p2}, Ljp/co/sony/mc/camera/device/CaptureRequestHolder;->set(Landroid/hardware/camera2/CaptureRequest$Key;Ljava/lang/Object;)V
+    .line 911
+    invoke-virtual {v1, v2, p2}, Ljp/co/sony/mc/camera/device/CaptureRequestHolder;->set(Landroid/hardware/camera2/CaptureRequest$Key;Ljava/lang/Object;)V
 
-    .line 902
+    .line 914
     invoke-virtual {p1}, Ljp/co/sony/mc/camera/device/state/DeviceStateContext;->getCameraInfo()Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CameraDeviceInfo;
 
     move-result-object p2
@@ -3092,153 +3212,179 @@
 
     move-result-object p2
 
-    .line 903
+    .line 915
     invoke-virtual {p1}, Ljp/co/sony/mc/camera/device/state/DeviceStateContext;->getCaptureSessionInfo()Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CaptureSessionInfo;
 
-    move-result-object v3
+    move-result-object v2
 
-    if-eqz v3, :cond_d
+    if-eqz v2, :cond_d
 
-    .line 905
-    iget-object v4, v3, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CaptureSessionInfo;->captureSession:Landroid/hardware/camera2/CameraCaptureSession;
+    .line 917
+    iget-object v3, v2, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CaptureSessionInfo;->captureSession:Landroid/hardware/camera2/CameraCaptureSession;
 
-    if-nez v4, :cond_3
+    if-nez v3, :cond_3
 
     goto/16 :goto_4
 
-    .line 910
+    .line 922
     :cond_3
     invoke-virtual {p1}, Ljp/co/sony/mc/camera/device/state/DeviceStateContext;->getSurfaceInfo()Ljp/co/sony/mc/camera/device/state/DeviceStateContext$SurfaceInfo;
 
-    move-result-object v4
+    move-result-object v3
 
-    invoke-virtual {v4}, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$SurfaceInfo;->getPreviewSurface()Landroid/view/Surface;
+    invoke-virtual {v3}, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$SurfaceInfo;->getPreviewSurface()Landroid/view/Surface;
 
-    move-result-object v4
+    move-result-object v3
 
-    .line 911
+    .line 924
     invoke-virtual {p1}, Ljp/co/sony/mc/camera/device/state/DeviceStateContext;->getSurfaceInfo()Ljp/co/sony/mc/camera/device/state/DeviceStateContext$SurfaceInfo;
 
-    move-result-object v5
+    move-result-object v4
 
-    invoke-virtual {v5}, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$SurfaceInfo;->getRecordingSurface()Landroid/view/Surface;
+    invoke-virtual {v4}, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$SurfaceInfo;->getRecordingSurfaces()Ljava/util/Map;
 
-    move-result-object v5
+    move-result-object v4
 
-    .line 912
+    .line 925
     invoke-virtual {p1}, Ljp/co/sony/mc/camera/device/state/DeviceStateContext;->getDeviceHandler()Ljp/co/sony/mc/camera/device/CameraDeviceHandler$CameraDeviceHandlerInquirer;
 
-    move-result-object v6
+    move-result-object v5
 
-    const/4 v7, 0x3
+    const/4 v6, 0x3
 
-    const/4 v8, 0x0
+    const/4 v7, 0x0
 
     if-eqz p3, :cond_4
 
-    .line 916
-    const-string p0, "Video surface only."
+    .line 929
+    new-array p3, v0, [Ljava/lang/String;
 
-    filled-new-array {p0}, [Ljava/lang/String;
+    const-string v8, "Video surface only."
 
-    move-result-object p0
-
-    invoke-static {p0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
-
-    .line 917
-    new-array p0, v1, [Landroid/view/Surface;
-
-    aput-object v5, p0, v0
-
-    invoke-virtual {v2, p2, v8, v7, p0}, Ljp/co/sony/mc/camera/device/CaptureRequestHolder;->createCaptureRequest(Landroid/hardware/camera2/CameraDevice;Ljava/lang/Object;I[Landroid/view/Surface;)Landroid/hardware/camera2/CaptureRequest;
-
-    move-result-object p0
-
-    goto :goto_1
-
-    .line 923
-    :cond_4
-    new-array p0, p0, [Landroid/view/Surface;
-
-    aput-object v4, p0, v0
-
-    aput-object v5, p0, v1
-
-    .line 924
-    sget-boolean p3, Ljp/co/sony/mc/camera/util/CamLog;->DEBUG:Z
-
-    if-eqz p3, :cond_5
-
-    const-string p3, "Preview surface is valid."
-
-    filled-new-array {p3}, [Ljava/lang/String;
-
-    move-result-object p3
+    aput-object v8, p3, p0
 
     invoke-static {p3}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
-    .line 925
-    :cond_5
-    invoke-virtual {v2, p2, v8, v7, p0}, Ljp/co/sony/mc/camera/device/CaptureRequestHolder;->createCaptureRequest(Landroid/hardware/camera2/CameraDevice;Ljava/lang/Object;I[Landroid/view/Surface;)Landroid/hardware/camera2/CaptureRequest;
-
-    move-result-object p0
-
-    :goto_1
-    if-nez p0, :cond_6
-
-    .line 933
-    const-string p0, "SetOneTimeRequestTask : CaptureRequest cannot be created."
-
-    filled-new-array {p0}, [Ljava/lang/String;
-
-    move-result-object p0
-
-    invoke-static {p0}, Ljp/co/sony/mc/camera/util/CamLog;->e([Ljava/lang/String;)V
-
-    return-void
-
-    .line 939
-    :cond_6
-    :try_start_0
-    sget-boolean p2, Ljp/co/sony/mc/camera/util/CamLog;->DEBUG:Z
-
-    if-eqz p2, :cond_7
-
-    new-array p2, v1, [Ljava/lang/String;
-
-    const-string p3, "capture()"
-
-    aput-object p3, p2, v0
-
-    invoke-static {p2}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
-
-    .line 941
-    :cond_7
-    iget-object p2, v3, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CaptureSessionInfo;->captureSession:Landroid/hardware/camera2/CameraCaptureSession;
-
-    .line 943
-    invoke-virtual {p1}, Ljp/co/sony/mc/camera/device/state/DeviceStateContext;->getCaptureSessionCallbackExecutor()Ljava/util/concurrent/ExecutorService;
+    .line 934
+    invoke-interface {v4}, Ljava/util/Map;->values()Ljava/util/Collection;
 
     move-result-object p3
 
-    .line 944
-    invoke-virtual {p1}, Ljp/co/sony/mc/camera/device/state/DeviceStateContext;->getCaptureSessionCallback()Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CaptureSessionCallback;
+    new-array v4, p0, [Landroid/view/Surface;
 
-    move-result-object v0
+    invoke-interface {p3, v4}, Ljava/util/Collection;->toArray([Ljava/lang/Object;)[Ljava/lang/Object;
+
+    move-result-object p3
+
+    check-cast p3, [Landroid/view/Surface;
+
+    .line 930
+    invoke-virtual {v1, p2, v7, v6, p3}, Ljp/co/sony/mc/camera/device/CaptureRequestHolder;->createCaptureRequest(Landroid/hardware/camera2/CameraDevice;Ljava/lang/Object;I[Landroid/view/Surface;)Landroid/hardware/camera2/CaptureRequest;
+
+    move-result-object p2
+
+    goto :goto_1
+
+    .line 936
+    :cond_4
+    new-instance p3, Ljava/util/ArrayList;
+
+    invoke-direct {p3}, Ljava/util/ArrayList;-><init>()V
+
+    .line 937
+    invoke-interface {p3, v3}, Ljava/util/List;->add(Ljava/lang/Object;)Z
+
+    .line 938
+    invoke-interface {v4}, Ljava/util/Map;->values()Ljava/util/Collection;
+
+    move-result-object v4
+
+    invoke-interface {p3, v4}, Ljava/util/List;->addAll(Ljava/util/Collection;)Z
+
+    .line 939
+    new-array v4, p0, [Landroid/view/Surface;
+
+    invoke-interface {p3, v4}, Ljava/util/List;->toArray([Ljava/lang/Object;)[Ljava/lang/Object;
+
+    move-result-object p3
+
+    check-cast p3, [Landroid/view/Surface;
+
+    .line 940
+    sget-boolean v4, Ljp/co/sony/mc/camera/util/CamLog;->DEBUG:Z
+
+    if-eqz v4, :cond_5
+
+    new-array v4, v0, [Ljava/lang/String;
+
+    const-string v8, "Preview surface is valid."
+
+    aput-object v8, v4, p0
+
+    invoke-static {v4}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
     .line 941
-    invoke-virtual {p2, p0, p3, v0}, Landroid/hardware/camera2/CameraCaptureSession;->captureSingleRequest(Landroid/hardware/camera2/CaptureRequest;Ljava/util/concurrent/Executor;Landroid/hardware/camera2/CameraCaptureSession$CaptureCallback;)I
+    :cond_5
+    invoke-virtual {v1, p2, v7, v6, p3}, Ljp/co/sony/mc/camera/device/CaptureRequestHolder;->createCaptureRequest(Landroid/hardware/camera2/CameraDevice;Ljava/lang/Object;I[Landroid/view/Surface;)Landroid/hardware/camera2/CaptureRequest;
 
-    .line 945
-    invoke-virtual {p1, v2}, Ljp/co/sony/mc/camera/device/state/DeviceStateContext;->validateParameter(Ljp/co/sony/mc/camera/device/CaptureRequestHolder;)V
+    move-result-object p2
 
-    .line 947
-    sget-boolean p2, Ljp/co/sony/mc/camera/util/CamLog;->DEBUG:Z
+    :goto_1
+    if-nez p2, :cond_6
 
-    if-eqz p2, :cond_c
+    .line 949
+    new-array p1, v0, [Ljava/lang/String;
 
-    .line 948
-    invoke-virtual {p1, p0}, Ljp/co/sony/mc/camera/device/state/DeviceStateContext;->updateCaptureRequestDumper(Landroid/hardware/camera2/CaptureRequest;)V
+    const-string p2, "SetOneTimeRequestTask : CaptureRequest cannot be created."
+
+    aput-object p2, p1, p0
+
+    invoke-static {p1}, Ljp/co/sony/mc/camera/util/CamLog;->e([Ljava/lang/String;)V
+
+    return-void
+
+    .line 955
+    :cond_6
+    :try_start_0
+    sget-boolean p3, Ljp/co/sony/mc/camera/util/CamLog;->DEBUG:Z
+
+    if-eqz p3, :cond_7
+
+    new-array p3, v0, [Ljava/lang/String;
+
+    const-string v4, "capture()"
+
+    aput-object v4, p3, p0
+
+    invoke-static {p3}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
+
+    .line 957
+    :cond_7
+    iget-object p3, v2, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CaptureSessionInfo;->captureSession:Landroid/hardware/camera2/CameraCaptureSession;
+
+    .line 959
+    invoke-virtual {p1}, Ljp/co/sony/mc/camera/device/state/DeviceStateContext;->getCaptureSessionCallbackExecutor()Ljava/util/concurrent/ExecutorService;
+
+    move-result-object v2
+
+    .line 960
+    invoke-virtual {p1}, Ljp/co/sony/mc/camera/device/state/DeviceStateContext;->getCaptureSessionCallback()Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CaptureSessionCallback;
+
+    move-result-object v4
+
+    .line 957
+    invoke-virtual {p3, p2, v2, v4}, Landroid/hardware/camera2/CameraCaptureSession;->captureSingleRequest(Landroid/hardware/camera2/CaptureRequest;Ljava/util/concurrent/Executor;Landroid/hardware/camera2/CameraCaptureSession$CaptureCallback;)I
+
+    .line 961
+    invoke-virtual {p1, v1}, Ljp/co/sony/mc/camera/device/state/DeviceStateContext;->validateParameter(Ljp/co/sony/mc/camera/device/CaptureRequestHolder;)V
+
+    .line 963
+    sget-boolean p3, Ljp/co/sony/mc/camera/util/CamLog;->DEBUG:Z
+
+    if-eqz p3, :cond_c
+
+    .line 964
+    invoke-virtual {p1, p2}, Ljp/co/sony/mc/camera/device/state/DeviceStateContext;->updateCaptureRequestDumper(Landroid/hardware/camera2/CaptureRequest;)V
     :try_end_0
     .catch Landroid/hardware/camera2/CameraAccessException; {:try_start_0 .. :try_end_0} :catch_2
     .catch Ljava/lang/IllegalArgumentException; {:try_start_0 .. :try_end_0} :catch_1
@@ -3249,7 +3395,7 @@
     :catch_0
     move-exception p0
 
-    .line 971
+    .line 987
     invoke-virtual {p1}, Ljp/co/sony/mc/camera/device/state/DeviceStateContext;->getCameraErrorStatus()Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CameraErrorStatus;
 
     move-result-object p1
@@ -3260,21 +3406,21 @@
 
     if-eqz p1, :cond_8
 
-    .line 972
+    .line 988
     const-string p1, "Failed in SetOneTimeRequestTask: "
 
     invoke-static {p1, p0}, Ljp/co/sony/mc/camera/util/CamLog;->e(Ljava/lang/String;Ljava/lang/Throwable;)V
 
     goto :goto_3
 
-    .line 974
+    .line 990
     :cond_8
     throw p0
 
     :catch_1
     move-exception p0
 
-    .line 969
+    .line 985
     const-string p1, "Failed in SetOneTimeRequestTask."
 
     invoke-static {p1, p0}, Ljp/co/sony/mc/camera/util/CamLog;->w(Ljava/lang/String;Ljava/lang/Throwable;)V
@@ -3282,16 +3428,16 @@
     goto :goto_3
 
     :catch_2
-    move-exception p0
+    move-exception p2
 
-    .line 951
-    invoke-virtual {v6}, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$CameraDeviceHandlerInquirer;->isIgnoreCameraError()Z
+    .line 967
+    invoke-virtual {v5}, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$CameraDeviceHandlerInquirer;->isIgnoreCameraError()Z
 
-    move-result p2
+    move-result p3
 
-    if-nez p2, :cond_b
+    if-nez p3, :cond_b
 
-    .line 952
+    .line 968
     invoke-virtual {p1}, Ljp/co/sony/mc/camera/device/state/DeviceStateContext;->getCameraErrorStatus()Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CameraErrorStatus;
 
     move-result-object p1
@@ -3304,73 +3450,73 @@
 
     goto :goto_2
 
-    .line 954
+    .line 970
     :cond_9
-    invoke-virtual {v4}, Landroid/view/Surface;->isValid()Z
+    invoke-virtual {v3}, Landroid/view/Surface;->isValid()Z
 
     move-result p1
 
     if-nez p1, :cond_a
 
-    .line 955
-    const-string p0, "SetOneTimeRequestTask : mPreviewSurface is invalid.(after performing capture)"
+    .line 971
+    new-array p1, v0, [Ljava/lang/String;
 
-    filled-new-array {p0}, [Ljava/lang/String;
+    const-string p2, "SetOneTimeRequestTask : mPreviewSurface is invalid.(after performing capture)"
 
-    move-result-object p0
+    aput-object p2, p1, p0
 
-    invoke-static {p0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
+    invoke-static {p1}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
     goto :goto_3
 
-    .line 958
+    .line 974
     :cond_a
-    new-instance p1, Ljava/lang/RuntimeException;
+    new-instance p0, Ljava/lang/RuntimeException;
 
-    new-instance p2, Ljava/lang/StringBuilder;
+    new-instance p1, Ljava/lang/StringBuilder;
 
     const-string p3, "Failed in SetOneTimeRequestTask by CameraAccessException. Reason:"
 
-    invoke-direct {p2, p3}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+    invoke-direct {p1, p3}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
-    .line 961
-    invoke-virtual {p0}, Landroid/hardware/camera2/CameraAccessException;->getReason()I
+    .line 977
+    invoke-virtual {p2}, Landroid/hardware/camera2/CameraAccessException;->getReason()I
 
-    move-result p0
+    move-result p2
 
-    invoke-virtual {p2, p0}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+    invoke-virtual {p1, p2}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
-    move-result-object p0
+    move-result-object p1
 
-    invoke-virtual {p0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-virtual {p1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    move-result-object p0
+    move-result-object p1
 
-    invoke-direct {p1, p0}, Ljava/lang/RuntimeException;-><init>(Ljava/lang/String;)V
+    invoke-direct {p0, p1}, Ljava/lang/RuntimeException;-><init>(Ljava/lang/String;)V
 
-    throw p1
+    throw p0
 
-    .line 953
+    .line 969
     :cond_b
     :goto_2
-    const-string p1, "Failed in SetOneTimeRequestTask"
+    const-string p0, "Failed in SetOneTimeRequestTask"
 
-    invoke-static {p1, p0}, Ljp/co/sony/mc/camera/util/CamLog;->w(Ljava/lang/String;Ljava/lang/Throwable;)V
+    invoke-static {p0, p2}, Ljp/co/sony/mc/camera/util/CamLog;->w(Ljava/lang/String;Ljava/lang/Throwable;)V
 
     :cond_c
     :goto_3
     return-void
 
-    .line 906
+    .line 918
     :cond_d
     :goto_4
-    const-string p0, "CaptureSessionInfo or CaptureSession is null"
+    new-array p1, v0, [Ljava/lang/String;
 
-    filled-new-array {p0}, [Ljava/lang/String;
+    const-string p2, "CaptureSessionInfo or CaptureSession is null"
 
-    move-result-object p0
+    aput-object p2, p1, p0
 
-    invoke-static {p0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
+    invoke-static {p1}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
     return-void
 .end method
@@ -3384,30 +3530,34 @@
 
     const-string v3, "T3 capture() uptimeMillis:"
 
-    .line 378
-    const-string/jumbo v0, "setOneTimeRequest Process [IN]"
+    const/4 v4, 0x1
 
-    filled-new-array {v0}, [Ljava/lang/String;
+    .line 381
+    new-array v0, v4, [Ljava/lang/String;
 
-    move-result-object v0
+    const-string/jumbo v5, "setOneTimeRequest Process [IN]"
+
+    const/4 v6, 0x0
+
+    aput-object v5, v0, v6
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
-    .line 381
+    .line 384
     invoke-virtual/range {p1 .. p1}, Ljp/co/sony/mc/camera/device/state/DeviceStateContext;->getApplicationContext()Landroid/content/Context;
 
-    move-result-object v4
+    move-result-object v5
 
-    .line 382
+    .line 385
     invoke-virtual/range {p1 .. p1}, Ljp/co/sony/mc/camera/device/state/DeviceStateContext;->getCameraInfo()Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CameraDeviceInfo;
 
     move-result-object v0
 
     invoke-virtual {v0}, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CameraDeviceInfo;->getCameraDevice()Landroid/hardware/camera2/CameraDevice;
 
-    move-result-object v5
+    move-result-object v7
 
-    .line 383
+    .line 386
     invoke-virtual/range {p1 .. p1}, Ljp/co/sony/mc/camera/device/state/DeviceStateContext;->getCameraInfo()Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CameraDeviceInfo;
 
     move-result-object v0
@@ -3416,286 +3566,317 @@
 
     move-result-object v0
 
-    .line 384
+    .line 387
     invoke-virtual/range {p1 .. p1}, Ljp/co/sony/mc/camera/device/state/DeviceStateContext;->getCameraInfo()Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CameraDeviceInfo;
 
-    move-result-object v6
-
-    invoke-virtual {v6}, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CameraDeviceInfo;->getCameraId()Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;
-
-    move-result-object v6
-
-    .line 385
-    invoke-virtual/range {p1 .. p1}, Ljp/co/sony/mc/camera/device/state/DeviceStateContext;->getCaptureSessionInfo()Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CaptureSessionInfo;
-
-    move-result-object v7
-
-    .line 386
-    invoke-virtual/range {p1 .. p1}, Ljp/co/sony/mc/camera/device/state/DeviceStateContext;->getSurfaceInfo()Ljp/co/sony/mc/camera/device/state/DeviceStateContext$SurfaceInfo;
-
     move-result-object v8
 
-    invoke-virtual {v8}, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$SurfaceInfo;->getPreviewSurface()Landroid/view/Surface;
+    invoke-virtual {v8}, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CameraDeviceInfo;->getCameraId()Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;
 
     move-result-object v8
-
-    .line 387
-    invoke-virtual/range {p1 .. p1}, Ljp/co/sony/mc/camera/device/state/DeviceStateContext;->getSurfaceInfo()Ljp/co/sony/mc/camera/device/state/DeviceStateContext$SurfaceInfo;
-
-    move-result-object v9
-
-    invoke-virtual {v9}, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$SurfaceInfo;->getRecordingSurface()Landroid/view/Surface;
-
-    move-result-object v9
 
     .line 388
-    invoke-virtual/range {p1 .. p1}, Ljp/co/sony/mc/camera/device/state/DeviceStateContext;->getDeviceHandler()Ljp/co/sony/mc/camera/device/CameraDeviceHandler$CameraDeviceHandlerInquirer;
+    invoke-virtual/range {p1 .. p1}, Ljp/co/sony/mc/camera/device/state/DeviceStateContext;->getCaptureSessionInfo()Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CaptureSessionInfo;
+
+    move-result-object v9
+
+    .line 389
+    invoke-virtual/range {p1 .. p1}, Ljp/co/sony/mc/camera/device/state/DeviceStateContext;->getSurfaceInfo()Ljp/co/sony/mc/camera/device/state/DeviceStateContext$SurfaceInfo;
 
     move-result-object v10
 
-    .line 389
-    invoke-virtual/range {p2 .. p2}, Ljp/co/sony/mc/camera/device/CaptureRequestHolder;->copy()Ljp/co/sony/mc/camera/device/CaptureRequestHolder;
+    invoke-virtual {v10}, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$SurfaceInfo;->getPreviewSurface()Landroid/view/Surface;
+
+    move-result-object v10
+
+    .line 391
+    invoke-virtual/range {p1 .. p1}, Ljp/co/sony/mc/camera/device/state/DeviceStateContext;->getSurfaceInfo()Ljp/co/sony/mc/camera/device/state/DeviceStateContext$SurfaceInfo;
 
     move-result-object v11
 
-    .line 391
-    invoke-virtual/range {p1 .. p1}, Ljp/co/sony/mc/camera/device/state/DeviceStateContext;->getCameraParameters()Ljp/co/sony/mc/camera/device/CameraParameters;
+    invoke-virtual {v11}, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$SurfaceInfo;->getRecordingSurfaces()Ljava/util/Map;
+
+    move-result-object v11
+
+    .line 392
+    invoke-virtual/range {p1 .. p1}, Ljp/co/sony/mc/camera/device/state/DeviceStateContext;->getDeviceHandler()Ljp/co/sony/mc/camera/device/CameraDeviceHandler$CameraDeviceHandlerInquirer;
 
     move-result-object v12
 
-    if-nez v12, :cond_0
-
     .line 393
-    const-string v0, "CameraParameter is null."
+    invoke-virtual/range {p2 .. p2}, Ljp/co/sony/mc/camera/device/CaptureRequestHolder;->copy()Ljp/co/sony/mc/camera/device/CaptureRequestHolder;
 
-    filled-new-array {v0}, [Ljava/lang/String;
+    move-result-object v13
 
-    move-result-object v0
+    .line 395
+    invoke-virtual/range {p1 .. p1}, Ljp/co/sony/mc/camera/device/state/DeviceStateContext;->getCameraParameters()Ljp/co/sony/mc/camera/device/CameraParameters;
+
+    move-result-object v14
+
+    if-nez v14, :cond_0
+
+    .line 397
+    new-array v0, v4, [Ljava/lang/String;
+
+    const-string v1, "CameraParameter is null."
+
+    aput-object v1, v0, v6
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/util/CamLog;->w([Ljava/lang/String;)V
 
     return-void
 
     :cond_0
-    if-nez v8, :cond_1
+    if-nez v10, :cond_1
 
-    .line 398
-    const-string v0, "mPreviewSurface is null."
+    .line 402
+    new-array v0, v4, [Ljava/lang/String;
 
-    filled-new-array {v0}, [Ljava/lang/String;
+    const-string v1, "mPreviewSurface is null."
 
-    move-result-object v0
+    aput-object v1, v0, v6
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
     return-void
 
-    .line 401
+    .line 405
     :cond_1
-    invoke-virtual {v8}, Landroid/view/Surface;->isValid()Z
+    invoke-virtual {v10}, Landroid/view/Surface;->isValid()Z
 
-    move-result v13
+    move-result v15
 
-    if-nez v13, :cond_2
+    if-nez v15, :cond_2
 
-    .line 402
-    const-string v0, "mPreviewSurface is invalid.(before creating capture request)"
+    .line 406
+    new-array v0, v4, [Ljava/lang/String;
 
-    filled-new-array {v0}, [Ljava/lang/String;
+    const-string v1, "mPreviewSurface is invalid.(before creating capture request)"
 
-    move-result-object v0
+    aput-object v1, v0, v6
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
     return-void
 
     :cond_2
-    if-eqz v7, :cond_17
+    if-eqz v9, :cond_17
 
-    .line 407
-    iget-object v13, v7, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CaptureSessionInfo;->captureSession:Landroid/hardware/camera2/CameraCaptureSession;
+    .line 411
+    iget-object v15, v9, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CaptureSessionInfo;->captureSession:Landroid/hardware/camera2/CameraCaptureSession;
 
-    if-nez v13, :cond_3
+    if-nez v15, :cond_3
 
-    goto/16 :goto_8
-
-    .line 412
-    :cond_3
-    iget-object v13, v7, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CaptureSessionInfo;->outputConfiguration:Landroid/hardware/camera2/params/OutputConfiguration;
-
-    const/4 v14, 0x1
-
-    if-eqz v13, :cond_6
-
-    iget-object v13, v7, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CaptureSessionInfo;->outputConfiguration:Landroid/hardware/camera2/params/OutputConfiguration;
-
-    .line 413
-    invoke-virtual {v13}, Landroid/hardware/camera2/params/OutputConfiguration;->getSurface()Landroid/view/Surface;
-
-    move-result-object v13
-
-    if-nez v13, :cond_6
-
-    .line 414
-    iget-object v13, v7, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CaptureSessionInfo;->outputConfiguration:Landroid/hardware/camera2/params/OutputConfiguration;
-
-    invoke-virtual {v13, v8}, Landroid/hardware/camera2/params/OutputConfiguration;->addSurface(Landroid/view/Surface;)V
+    goto/16 :goto_a
 
     .line 416
+    :cond_3
+    iget-object v15, v9, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CaptureSessionInfo;->outputConfiguration:Landroid/hardware/camera2/params/OutputConfiguration;
+
+    if-eqz v15, :cond_6
+
+    iget-object v15, v9, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CaptureSessionInfo;->outputConfiguration:Landroid/hardware/camera2/params/OutputConfiguration;
+
+    .line 417
+    invoke-virtual {v15}, Landroid/hardware/camera2/params/OutputConfiguration;->getSurface()Landroid/view/Surface;
+
+    move-result-object v15
+
+    if-nez v15, :cond_6
+
+    .line 418
+    iget-object v15, v9, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CaptureSessionInfo;->outputConfiguration:Landroid/hardware/camera2/params/OutputConfiguration;
+
+    invoke-virtual {v15, v10}, Landroid/hardware/camera2/params/OutputConfiguration;->addSurface(Landroid/view/Surface;)V
+
+    .line 420
     :try_start_0
-    iget-object v13, v7, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CaptureSessionInfo;->captureSession:Landroid/hardware/camera2/CameraCaptureSession;
+    iget-object v15, v9, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CaptureSessionInfo;->captureSession:Landroid/hardware/camera2/CameraCaptureSession;
 
-    new-array v15, v14, [Landroid/hardware/camera2/params/OutputConfiguration;
+    new-array v6, v4, [Landroid/hardware/camera2/params/OutputConfiguration;
+    :try_end_0
+    .catch Landroid/hardware/camera2/CameraAccessException; {:try_start_0 .. :try_end_0} :catch_2
+    .catch Ljava/lang/IllegalStateException; {:try_start_0 .. :try_end_0} :catch_1
 
-    iget-object v14, v7, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CaptureSessionInfo;->outputConfiguration:Landroid/hardware/camera2/params/OutputConfiguration;
+    :try_start_1
+    iget-object v4, v9, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CaptureSessionInfo;->outputConfiguration:Landroid/hardware/camera2/params/OutputConfiguration;
 
     const/16 v16, 0x0
 
-    aput-object v14, v15, v16
+    aput-object v4, v6, v16
 
-    .line 417
-    invoke-static {v15}, Ljava/util/Arrays;->asList([Ljava/lang/Object;)Ljava/util/List;
+    .line 421
+    invoke-static {v6}, Ljava/util/Arrays;->asList([Ljava/lang/Object;)Ljava/util/List;
 
-    move-result-object v14
+    move-result-object v4
 
-    .line 416
-    invoke-virtual {v13, v14}, Landroid/hardware/camera2/CameraCaptureSession;->finalizeOutputConfigurations(Ljava/util/List;)V
-    :try_end_0
-    .catch Landroid/hardware/camera2/CameraAccessException; {:try_start_0 .. :try_end_0} :catch_1
-    .catch Ljava/lang/IllegalStateException; {:try_start_0 .. :try_end_0} :catch_0
+    .line 420
+    invoke-virtual {v15, v4}, Landroid/hardware/camera2/CameraCaptureSession;->finalizeOutputConfigurations(Ljava/util/List;)V
+    :try_end_1
+    .catch Landroid/hardware/camera2/CameraAccessException; {:try_start_1 .. :try_end_1} :catch_0
+    .catch Ljava/lang/IllegalStateException; {:try_start_1 .. :try_end_1} :catch_1
 
     goto :goto_0
 
     :catch_0
-    move-exception v0
-
-    .line 427
-    invoke-virtual/range {p1 .. p1}, Ljp/co/sony/mc/camera/device/state/DeviceStateContext;->getCameraErrorStatus()Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CameraErrorStatus;
-
-    move-result-object v13
-
-    invoke-virtual {v13}, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CameraErrorStatus;->isErrorCaused()Z
-
-    move-result v13
-
-    if-eqz v13, :cond_4
-
-    .line 428
-    const-string v13, "finalizeOutputConfigurations failed. "
-
-    invoke-static {v13, v0}, Ljp/co/sony/mc/camera/util/CamLog;->e(Ljava/lang/String;Ljava/lang/Throwable;)V
-
-    :goto_0
-    const/4 v13, 0x0
-
-    .line 433
-    iput-object v13, v7, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CaptureSessionInfo;->outputConfiguration:Landroid/hardware/camera2/params/OutputConfiguration;
+    const/4 v2, 0x1
 
     goto :goto_1
 
-    .line 430
+    :catch_1
+    move-exception v0
+
+    .line 431
+    invoke-virtual/range {p1 .. p1}, Ljp/co/sony/mc/camera/device/state/DeviceStateContext;->getCameraErrorStatus()Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CameraErrorStatus;
+
+    move-result-object v4
+
+    invoke-virtual {v4}, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CameraErrorStatus;->isErrorCaused()Z
+
+    move-result v4
+
+    if-eqz v4, :cond_4
+
+    .line 432
+    const-string v4, "finalizeOutputConfigurations failed. "
+
+    invoke-static {v4, v0}, Ljp/co/sony/mc/camera/util/CamLog;->e(Ljava/lang/String;Ljava/lang/Throwable;)V
+
+    :goto_0
+    const/4 v4, 0x0
+
+    .line 437
+    iput-object v4, v9, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CaptureSessionInfo;->outputConfiguration:Landroid/hardware/camera2/params/OutputConfiguration;
+
+    goto :goto_2
+
+    .line 434
     :cond_4
     throw v0
 
-    .line 419
-    :catch_1
-    const-string v2, "finalizeOutputConfigurations failed."
+    :catch_2
+    move v2, v4
 
-    filled-new-array {v2}, [Ljava/lang/String;
+    .line 423
+    :goto_1
+    new-array v2, v2, [Ljava/lang/String;
 
-    move-result-object v2
+    const-string v3, "finalizeOutputConfigurations failed."
+
+    const/4 v4, 0x0
+
+    aput-object v3, v2, v4
 
     invoke-static {v2}, Ljp/co/sony/mc/camera/util/CamLog;->e([Ljava/lang/String;)V
 
-    .line 420
+    .line 424
     invoke-virtual/range {p0 .. p0}, Ljp/co/sony/mc/camera/device/state/DeviceStateVideoBase;->isRecording()Z
 
     move-result v2
 
     if-eqz v2, :cond_5
 
-    .line 421
+    .line 425
     invoke-direct/range {p0 .. p1}, Ljp/co/sony/mc/camera/device/state/DeviceStateVideoBase;->stopOnCameraError(Ljp/co/sony/mc/camera/device/state/DeviceStateContext;)V
 
-    .line 423
+    .line 427
     :cond_5
     sget-object v2, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$ErrorCode;->ERROR_ON_CAMERA_ERROR:Ljp/co/sony/mc/camera/device/CameraDeviceHandler$ErrorCode;
 
-    move-object/from16 v13, p0
+    move-object/from16 v4, p0
 
-    invoke-virtual {v13, v1, v0, v2}, Ljp/co/sony/mc/camera/device/state/DeviceStateVideoBase;->sendNotifyOtherError(Ljp/co/sony/mc/camera/device/state/DeviceStateContext;Ljp/co/sony/mc/camera/device/CameraDeviceHandler$CameraSessionId;Ljp/co/sony/mc/camera/device/CameraDeviceHandler$ErrorCode;)V
+    invoke-virtual {v4, v1, v0, v2}, Ljp/co/sony/mc/camera/device/state/DeviceStateVideoBase;->sendNotifyOtherError(Ljp/co/sony/mc/camera/device/state/DeviceStateContext;Ljp/co/sony/mc/camera/device/CameraDeviceHandler$CameraSessionId;Ljp/co/sony/mc/camera/device/CameraDeviceHandler$ErrorCode;)V
 
     return-void
 
     :cond_6
-    :goto_1
-    move-object/from16 v13, p0
+    :goto_2
+    move-object/from16 v4, p0
 
-    .line 437
+    .line 441
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
-    .line 438
+    .line 442
     invoke-virtual/range {p0 .. p0}, Ljp/co/sony/mc/camera/device/state/DeviceStateVideoBase;->isRecording()Z
 
-    move-result v13
+    move-result v4
 
-    const-string v14, "CaptureRequest cannot be created."
+    const-string v6, "CaptureRequest cannot be created."
 
-    if-nez v13, :cond_8
+    if-nez v4, :cond_8
 
-    const/4 v13, 0x1
+    const/4 v4, 0x1
 
-    .line 439
-    new-array v9, v13, [Landroid/view/Surface;
+    .line 443
+    new-array v11, v4, [Landroid/view/Surface;
 
     const/4 v15, 0x0
 
-    aput-object v8, v9, v15
+    aput-object v10, v11, v15
 
-    invoke-virtual {v11, v5, v2, v13, v9}, Ljp/co/sony/mc/camera/device/CaptureRequestHolder;->createCaptureRequest(Landroid/hardware/camera2/CameraDevice;Ljava/lang/Object;I[Landroid/view/Surface;)Landroid/hardware/camera2/CaptureRequest;
+    invoke-virtual {v13, v7, v2, v4, v11}, Ljp/co/sony/mc/camera/device/CaptureRequestHolder;->createCaptureRequest(Landroid/hardware/camera2/CameraDevice;Ljava/lang/Object;I[Landroid/view/Surface;)Landroid/hardware/camera2/CaptureRequest;
 
-    move-result-object v5
+    move-result-object v7
 
-    if-nez v5, :cond_7
+    if-nez v7, :cond_7
 
-    .line 445
-    filled-new-array {v14}, [Ljava/lang/String;
+    .line 449
+    new-array v0, v4, [Ljava/lang/String;
 
-    move-result-object v0
+    aput-object v6, v0, v15
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
     return-void
 
-    .line 448
+    .line 452
     :cond_7
-    invoke-virtual {v0, v5}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+    invoke-virtual {v0, v7}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
-    move-object/from16 v17, v10
+    move-object/from16 v17, v12
 
-    goto :goto_2
+    const/4 v6, 0x1
+
+    move-object v12, v7
+
+    move v7, v15
+
+    goto :goto_3
 
     :cond_8
     const/4 v15, 0x0
 
-    const/4 v13, 0x2
+    .line 454
+    new-instance v4, Ljava/util/ArrayList;
 
-    .line 450
-    new-array v13, v13, [Landroid/view/Surface;
+    invoke-direct {v4}, Ljava/util/ArrayList;-><init>()V
 
-    aput-object v8, v13, v15
+    .line 455
+    invoke-interface {v4, v10}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    const/4 v15, 0x1
+    .line 456
+    invoke-interface {v11}, Ljava/util/Map;->values()Ljava/util/Collection;
 
-    aput-object v9, v13, v15
+    move-result-object v11
 
-    .line 451
-    sget-object v9, Landroid/hardware/camera2/CaptureRequest;->CONTROL_AE_TARGET_FPS_RANGE:Landroid/hardware/camera2/CaptureRequest$Key;
+    invoke-interface {v4, v11}, Ljava/util/List;->addAll(Ljava/util/Collection;)Z
 
-    .line 453
-    invoke-virtual {v12}, Ljp/co/sony/mc/camera/device/CameraParameters;->getCaptureFps()Ljp/co/sony/mc/camera/configuration/parameters/CaptureFps;
+    .line 457
+    new-array v11, v15, [Landroid/view/Surface;
+
+    invoke-interface {v4, v11}, Ljava/util/List;->toArray([Ljava/lang/Object;)[Ljava/lang/Object;
+
+    move-result-object v4
+
+    check-cast v4, [Landroid/view/Surface;
+
+    .line 458
+    sget-object v11, Landroid/hardware/camera2/CaptureRequest;->CONTROL_AE_TARGET_FPS_RANGE:Landroid/hardware/camera2/CaptureRequest$Key;
+
+    .line 460
+    invoke-virtual {v14}, Ljp/co/sony/mc/camera/device/CameraParameters;->getCaptureFps()Ljp/co/sony/mc/camera/configuration/parameters/CaptureFps;
 
     move-result-object v15
 
@@ -3703,133 +3884,147 @@
 
     move-result v15
 
-    .line 452
+    .line 459
     invoke-static {v15}, Ljp/co/sony/mc/camera/device/FpsProvider;->getFpsRangeForVideoRecording(I)Landroid/util/Range;
 
     move-result-object v15
 
-    .line 451
-    invoke-virtual {v11, v9, v15}, Ljp/co/sony/mc/camera/device/CaptureRequestHolder;->set(Landroid/hardware/camera2/CaptureRequest$Key;Ljava/lang/Object;)V
+    .line 458
+    invoke-virtual {v13, v11, v15}, Ljp/co/sony/mc/camera/device/CaptureRequestHolder;->set(Landroid/hardware/camera2/CaptureRequest$Key;Ljava/lang/Object;)V
 
-    const/4 v9, 0x3
+    const/4 v11, 0x3
 
-    move-object/from16 v17, v10
+    move-object/from16 v17, v12
 
     const/4 v15, 0x0
 
-    .line 454
-    invoke-virtual {v11, v5, v15, v9, v13}, Ljp/co/sony/mc/camera/device/CaptureRequestHolder;->createCaptureRequest(Landroid/hardware/camera2/CameraDevice;Ljava/lang/Object;I[Landroid/view/Surface;)Landroid/hardware/camera2/CaptureRequest;
+    .line 461
+    invoke-virtual {v13, v7, v15, v11, v4}, Ljp/co/sony/mc/camera/device/CaptureRequestHolder;->createCaptureRequest(Landroid/hardware/camera2/CameraDevice;Ljava/lang/Object;I[Landroid/view/Surface;)Landroid/hardware/camera2/CaptureRequest;
 
-    move-result-object v10
+    move-result-object v12
 
-    if-nez v10, :cond_9
+    if-nez v12, :cond_9
 
-    .line 460
-    filled-new-array {v14}, [Ljava/lang/String;
+    const/4 v15, 0x1
 
-    move-result-object v0
+    .line 467
+    new-array v0, v15, [Ljava/lang/String;
+
+    const/4 v1, 0x0
+
+    aput-object v6, v0, v1
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
     return-void
 
-    .line 463
+    .line 470
     :cond_9
-    invoke-virtual {v0, v10}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+    invoke-virtual {v0, v12}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
-    .line 465
-    invoke-virtual {v12}, Ljp/co/sony/mc/camera/device/CameraParameters;->getCaptureFps()Ljp/co/sony/mc/camera/configuration/parameters/CaptureFps;
+    .line 472
+    invoke-virtual {v14}, Ljp/co/sony/mc/camera/device/CameraParameters;->getCaptureFps()Ljp/co/sony/mc/camera/configuration/parameters/CaptureFps;
 
-    move-result-object v12
+    move-result-object v6
 
     sget-object v14, Ljp/co/sony/mc/camera/configuration/parameters/CaptureFps;->CAPTURE_FPS_60:Ljp/co/sony/mc/camera/configuration/parameters/CaptureFps;
 
-    if-ne v12, v14, :cond_b
+    if-ne v6, v14, :cond_b
 
-    .line 466
+    .line 473
     invoke-virtual/range {p1 .. p1}, Ljp/co/sony/mc/camera/device/state/DeviceStateContext;->copyCaptureRequestHolder()Ljp/co/sony/mc/camera/device/CaptureRequestHolder;
 
-    move-result-object v12
+    move-result-object v6
 
-    .line 467
+    .line 474
     sget-object v14, Landroid/hardware/camera2/CaptureRequest;->CONTROL_AE_TARGET_FPS_RANGE:Landroid/hardware/camera2/CaptureRequest$Key;
 
     const/16 v15, 0x3c
 
-    .line 468
+    .line 475
     invoke-static {v15}, Ljp/co/sony/mc/camera/device/FpsProvider;->getFpsRangeForVideoRecording(I)Landroid/util/Range;
 
     move-result-object v15
 
-    .line 467
-    invoke-virtual {v12, v14, v15}, Ljp/co/sony/mc/camera/device/CaptureRequestHolder;->set(Landroid/hardware/camera2/CaptureRequest$Key;Ljava/lang/Object;)V
+    .line 474
+    invoke-virtual {v6, v14, v15}, Ljp/co/sony/mc/camera/device/CaptureRequestHolder;->set(Landroid/hardware/camera2/CaptureRequest$Key;Ljava/lang/Object;)V
 
     const/4 v14, 0x0
 
-    .line 471
-    invoke-virtual {v12, v5, v14, v9, v13}, Ljp/co/sony/mc/camera/device/CaptureRequestHolder;->createCaptureRequest(Landroid/hardware/camera2/CameraDevice;Ljava/lang/Object;I[Landroid/view/Surface;)Landroid/hardware/camera2/CaptureRequest;
+    .line 478
+    invoke-virtual {v6, v7, v14, v11, v4}, Ljp/co/sony/mc/camera/device/CaptureRequestHolder;->createCaptureRequest(Landroid/hardware/camera2/CameraDevice;Ljava/lang/Object;I[Landroid/view/Surface;)Landroid/hardware/camera2/CaptureRequest;
 
-    move-result-object v5
+    move-result-object v4
 
-    if-nez v5, :cond_a
+    if-nez v4, :cond_a
 
-    .line 477
-    const-string v0, "captureRequestForRecord cannot be created."
-
-    filled-new-array {v0}, [Ljava/lang/String;
-
-    move-result-object v0
-
-    invoke-static {v0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
-
-    return-void
-
-    .line 480
-    :cond_a
-    invoke-virtual {v0, v5}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
-
-    :cond_b
-    move-object v5, v10
+    const/4 v6, 0x1
 
     .line 484
-    :goto_2
-    invoke-virtual {v8}, Landroid/view/Surface;->isValid()Z
+    new-array v0, v6, [Ljava/lang/String;
 
-    move-result v9
+    const-string v1, "captureRequestForRecord cannot be created."
 
-    if-nez v9, :cond_c
+    const/4 v7, 0x0
 
-    .line 485
-    const-string v0, "mPreviewSurface is invalid. (before performing capture)"
-
-    filled-new-array {v0}, [Ljava/lang/String;
-
-    move-result-object v0
+    aput-object v1, v0, v7
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
     return-void
 
-    .line 490
+    :cond_a
+    const/4 v6, 0x1
+
+    const/4 v7, 0x0
+
+    .line 487
+    invoke-virtual {v0, v4}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+
+    goto :goto_3
+
+    :cond_b
+    const/4 v6, 0x1
+
+    const/4 v7, 0x0
+
+    .line 491
+    :goto_3
+    invoke-virtual {v10}, Landroid/view/Surface;->isValid()Z
+
+    move-result v4
+
+    if-nez v4, :cond_c
+
+    .line 492
+    new-array v0, v6, [Ljava/lang/String;
+
+    const-string v1, "mPreviewSurface is invalid. (before performing capture)"
+
+    aput-object v1, v0, v7
+
+    invoke-static {v0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
+
+    return-void
+
+    .line 497
     :cond_c
-    :try_start_1
-    sget-boolean v9, Ljp/co/sony/mc/camera/util/CamLog;->VERBOSE:Z
+    :try_start_2
+    sget-boolean v4, Ljp/co/sony/mc/camera/util/CamLog;->VERBOSE:Z
 
-    if-eqz v9, :cond_d
+    if-eqz v4, :cond_d
 
-    const/4 v9, 0x1
+    new-array v4, v6, [Ljava/lang/String;
 
-    new-array v10, v9, [Ljava/lang/String;
+    new-instance v6, Ljava/lang/StringBuilder;
 
-    new-instance v9, Ljava/lang/StringBuilder;
-
-    invoke-direct {v9, v3}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+    invoke-direct {v6, v3}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
     invoke-static {}, Landroid/os/SystemClock;->uptimeMillis()J
 
-    move-result-wide v12
+    move-result-wide v14
 
-    invoke-virtual {v9, v12, v13}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
+    invoke-virtual {v6, v14, v15}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
 
     move-result-object v3
 
@@ -3837,178 +4032,178 @@
 
     move-result-object v3
 
-    const/4 v9, 0x0
+    const/4 v6, 0x0
 
-    aput-object v3, v10, v9
+    aput-object v3, v4, v6
 
-    invoke-static {v10}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
+    invoke-static {v4}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
-    .line 491
+    .line 498
     :cond_d
-    iget-object v3, v7, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CaptureSessionInfo;->captureSession:Landroid/hardware/camera2/CameraCaptureSession;
+    iget-object v3, v9, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CaptureSessionInfo;->captureSession:Landroid/hardware/camera2/CameraCaptureSession;
 
     instance-of v3, v3, Landroid/hardware/camera2/CameraConstrainedHighSpeedCaptureSession;
 
     if-eqz v3, :cond_e
 
-    .line 492
-    iget-object v3, v7, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CaptureSessionInfo;->captureSession:Landroid/hardware/camera2/CameraCaptureSession;
+    .line 499
+    iget-object v3, v9, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CaptureSessionInfo;->captureSession:Landroid/hardware/camera2/CameraCaptureSession;
 
     check-cast v3, Landroid/hardware/camera2/CameraConstrainedHighSpeedCaptureSession;
 
-    .line 494
-    invoke-virtual {v3, v5}, Landroid/hardware/camera2/CameraConstrainedHighSpeedCaptureSession;->createHighSpeedRequestList(Landroid/hardware/camera2/CaptureRequest;)Ljava/util/List;
+    .line 501
+    invoke-virtual {v3, v12}, Landroid/hardware/camera2/CameraConstrainedHighSpeedCaptureSession;->createHighSpeedRequestList(Landroid/hardware/camera2/CaptureRequest;)Ljava/util/List;
 
     move-result-object v3
 
-    .line 495
-    iget-object v5, v7, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CaptureSessionInfo;->captureSession:Landroid/hardware/camera2/CameraCaptureSession;
+    .line 502
+    iget-object v4, v9, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CaptureSessionInfo;->captureSession:Landroid/hardware/camera2/CameraCaptureSession;
 
-    .line 497
+    .line 504
     invoke-virtual/range {p1 .. p1}, Ljp/co/sony/mc/camera/device/state/DeviceStateContext;->getCaptureSessionCallbackExecutor()Ljava/util/concurrent/ExecutorService;
+
+    move-result-object v6
+
+    .line 505
+    invoke-virtual/range {p1 .. p1}, Ljp/co/sony/mc/camera/device/state/DeviceStateContext;->getCaptureSessionCallback()Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CaptureSessionCallback;
 
     move-result-object v7
 
-    .line 498
-    invoke-virtual/range {p1 .. p1}, Ljp/co/sony/mc/camera/device/state/DeviceStateContext;->getCaptureSessionCallback()Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CaptureSessionCallback;
+    .line 502
+    invoke-virtual {v4, v3, v6, v7}, Landroid/hardware/camera2/CameraCaptureSession;->captureBurstRequests(Ljava/util/List;Ljava/util/concurrent/Executor;Landroid/hardware/camera2/CameraCaptureSession$CaptureCallback;)I
 
-    move-result-object v9
+    goto :goto_4
 
-    .line 495
-    invoke-virtual {v5, v3, v7, v9}, Landroid/hardware/camera2/CameraCaptureSession;->captureBurstRequests(Ljava/util/List;Ljava/util/concurrent/Executor;Landroid/hardware/camera2/CameraCaptureSession$CaptureCallback;)I
-
-    goto :goto_3
-
-    .line 500
+    .line 507
     :cond_e
     invoke-virtual {v0}, Ljava/util/ArrayList;->size()I
 
     move-result v3
 
-    const/4 v5, 0x1
+    const/4 v4, 0x1
 
-    if-ne v3, v5, :cond_f
-
-    .line 501
-    iget-object v3, v7, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CaptureSessionInfo;->captureSession:Landroid/hardware/camera2/CameraCaptureSession;
-
-    const/4 v5, 0x0
-
-    .line 502
-    invoke-virtual {v0, v5}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
-
-    move-result-object v7
-
-    check-cast v7, Landroid/hardware/camera2/CaptureRequest;
-
-    .line 503
-    invoke-virtual/range {p1 .. p1}, Ljp/co/sony/mc/camera/device/state/DeviceStateContext;->getCaptureSessionCallbackExecutor()Ljava/util/concurrent/ExecutorService;
-
-    move-result-object v5
-
-    .line 504
-    invoke-virtual/range {p1 .. p1}, Ljp/co/sony/mc/camera/device/state/DeviceStateContext;->getCaptureSessionCallback()Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CaptureSessionCallback;
-
-    move-result-object v9
-
-    .line 501
-    invoke-virtual {v3, v7, v5, v9}, Landroid/hardware/camera2/CameraCaptureSession;->captureSingleRequest(Landroid/hardware/camera2/CaptureRequest;Ljava/util/concurrent/Executor;Landroid/hardware/camera2/CameraCaptureSession$CaptureCallback;)I
-
-    goto :goto_3
-
-    .line 506
-    :cond_f
-    iget-object v3, v7, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CaptureSessionInfo;->captureSession:Landroid/hardware/camera2/CameraCaptureSession;
+    if-ne v3, v4, :cond_f
 
     .line 508
-    invoke-virtual/range {p1 .. p1}, Ljp/co/sony/mc/camera/device/state/DeviceStateContext;->getCaptureSessionCallbackExecutor()Ljava/util/concurrent/ExecutorService;
+    iget-object v3, v9, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CaptureSessionInfo;->captureSession:Landroid/hardware/camera2/CameraCaptureSession;
 
-    move-result-object v5
+    const/4 v4, 0x0
 
     .line 509
+    invoke-virtual {v0, v4}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
+
+    move-result-object v6
+
+    check-cast v6, Landroid/hardware/camera2/CaptureRequest;
+
+    .line 510
+    invoke-virtual/range {p1 .. p1}, Ljp/co/sony/mc/camera/device/state/DeviceStateContext;->getCaptureSessionCallbackExecutor()Ljava/util/concurrent/ExecutorService;
+
+    move-result-object v4
+
+    .line 511
     invoke-virtual/range {p1 .. p1}, Ljp/co/sony/mc/camera/device/state/DeviceStateContext;->getCaptureSessionCallback()Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CaptureSessionCallback;
 
     move-result-object v7
 
-    .line 506
-    invoke-virtual {v3, v0, v5, v7}, Landroid/hardware/camera2/CameraCaptureSession;->captureBurstRequests(Ljava/util/List;Ljava/util/concurrent/Executor;Landroid/hardware/camera2/CameraCaptureSession$CaptureCallback;)I
+    .line 508
+    invoke-virtual {v3, v6, v4, v7}, Landroid/hardware/camera2/CameraCaptureSession;->captureSingleRequest(Landroid/hardware/camera2/CaptureRequest;Ljava/util/concurrent/Executor;Landroid/hardware/camera2/CameraCaptureSession$CaptureCallback;)I
 
-    .line 512
-    :goto_3
-    invoke-virtual {v1, v11}, Ljp/co/sony/mc/camera/device/state/DeviceStateContext;->validateParameter(Ljp/co/sony/mc/camera/device/CaptureRequestHolder;)V
+    goto :goto_4
 
     .line 513
+    :cond_f
+    iget-object v3, v9, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CaptureSessionInfo;->captureSession:Landroid/hardware/camera2/CameraCaptureSession;
+
+    .line 515
+    invoke-virtual/range {p1 .. p1}, Ljp/co/sony/mc/camera/device/state/DeviceStateContext;->getCaptureSessionCallbackExecutor()Ljava/util/concurrent/ExecutorService;
+
+    move-result-object v4
+
+    .line 516
+    invoke-virtual/range {p1 .. p1}, Ljp/co/sony/mc/camera/device/state/DeviceStateContext;->getCaptureSessionCallback()Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CaptureSessionCallback;
+
+    move-result-object v6
+
+    .line 513
+    invoke-virtual {v3, v0, v4, v6}, Landroid/hardware/camera2/CameraCaptureSession;->captureBurstRequests(Ljava/util/List;Ljava/util/concurrent/Executor;Landroid/hardware/camera2/CameraCaptureSession$CaptureCallback;)I
+
+    .line 519
+    :goto_4
+    invoke-virtual {v1, v13}, Ljp/co/sony/mc/camera/device/state/DeviceStateContext;->validateParameter(Ljp/co/sony/mc/camera/device/CaptureRequestHolder;)V
+
+    .line 520
     sget-boolean v3, Ljp/co/sony/mc/camera/util/CamLog;->DEBUG:Z
 
     if-eqz v3, :cond_10
 
     const/4 v3, 0x0
 
-    .line 514
-    :goto_4
+    .line 521
+    :goto_5
     invoke-virtual {v0}, Ljava/util/ArrayList;->size()I
 
-    move-result v5
+    move-result v4
 
-    if-ge v3, v5, :cond_10
+    if-ge v3, v4, :cond_10
 
-    const/4 v5, 0x1
+    const/4 v4, 0x1
 
-    .line 515
-    new-array v7, v5, [Ljava/lang/String;
+    .line 522
+    new-array v6, v4, [Ljava/lang/String;
 
-    new-instance v5, Ljava/lang/StringBuilder;
+    new-instance v4, Ljava/lang/StringBuilder;
 
-    invoke-direct {v5}, Ljava/lang/StringBuilder;-><init>()V
+    invoke-direct {v4}, Ljava/lang/StringBuilder;-><init>()V
 
-    const-string/jumbo v9, "updateCaptureRequest templateType : "
+    const-string/jumbo v7, "updateCaptureRequest templateType : "
 
-    invoke-virtual {v5, v9}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v4, v7}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    move-result-object v5
+    move-result-object v4
 
-    .line 516
+    .line 523
     invoke-virtual {v0, v3}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
 
-    move-result-object v9
+    move-result-object v7
 
-    check-cast v9, Landroid/hardware/camera2/CaptureRequest;
+    check-cast v7, Landroid/hardware/camera2/CaptureRequest;
 
-    sget-object v10, Landroid/hardware/camera2/CaptureRequest;->CONTROL_CAPTURE_INTENT:Landroid/hardware/camera2/CaptureRequest$Key;
+    sget-object v9, Landroid/hardware/camera2/CaptureRequest;->CONTROL_CAPTURE_INTENT:Landroid/hardware/camera2/CaptureRequest$Key;
 
-    invoke-virtual {v9, v10}, Landroid/hardware/camera2/CaptureRequest;->get(Landroid/hardware/camera2/CaptureRequest$Key;)Ljava/lang/Object;
+    invoke-virtual {v7, v9}, Landroid/hardware/camera2/CaptureRequest;->get(Landroid/hardware/camera2/CaptureRequest$Key;)Ljava/lang/Object;
 
-    move-result-object v9
+    move-result-object v7
 
-    invoke-virtual {v5, v9}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+    invoke-virtual {v4, v7}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
-    move-result-object v5
+    move-result-object v4
 
-    invoke-virtual {v5}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-virtual {v4}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    move-result-object v5
+    move-result-object v4
 
-    const/4 v9, 0x0
+    const/4 v7, 0x0
 
-    aput-object v5, v7, v9
+    aput-object v4, v6, v7
 
-    .line 515
-    invoke-static {v7}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
+    .line 522
+    invoke-static {v6}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
-    .line 517
+    .line 524
     invoke-virtual {v0, v3}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
 
-    move-result-object v5
+    move-result-object v4
 
-    check-cast v5, Landroid/hardware/camera2/CaptureRequest;
+    check-cast v4, Landroid/hardware/camera2/CaptureRequest;
 
-    invoke-virtual {v1, v5}, Ljp/co/sony/mc/camera/device/state/DeviceStateContext;->updateCaptureRequestDumper(Landroid/hardware/camera2/CaptureRequest;)V
+    invoke-virtual {v1, v4}, Ljp/co/sony/mc/camera/device/state/DeviceStateContext;->updateCaptureRequestDumper(Landroid/hardware/camera2/CaptureRequest;)V
 
     add-int/lit8 v3, v3, 0x1
 
-    goto :goto_4
+    goto :goto_5
 
-    .line 521
+    .line 528
     :cond_10
     sget-object v0, Lcom/sonymobile/camera/device/SomcCaptureRequestKeys;->SONYMOBILE_STATISTICS_OBJECT_SELECT_TRIGGER:Landroid/hardware/camera2/CaptureRequest$Key;
 
@@ -4016,13 +4211,13 @@
 
     move-result v0
 
-    if-eqz v0, :cond_16
+    if-eqz v0, :cond_13
 
-    .line 523
+    .line 530
     sget-object v0, Lcom/sonymobile/camera/device/SomcCaptureRequestKeys;->SONYMOBILE_STATISTICS_OBJECT_SELECT_TRIGGER:Landroid/hardware/camera2/CaptureRequest$Key;
 
-    .line 522
-    invoke-virtual {v11, v0}, Ljp/co/sony/mc/camera/device/CaptureRequestHolder;->get(Landroid/hardware/camera2/CaptureRequest$Key;)Ljava/lang/Object;
+    .line 529
+    invoke-virtual {v13, v0}, Ljp/co/sony/mc/camera/device/CaptureRequestHolder;->get(Landroid/hardware/camera2/CaptureRequest$Key;)Ljava/lang/Object;
 
     move-result-object v0
 
@@ -4036,42 +4231,42 @@
 
     if-ne v0, v2, :cond_11
 
-    .line 526
+    .line 533
     sget-object v0, Ljp/co/sony/mc/camera/status/eachcamera/ObjectTracking$Value;->ON:Ljp/co/sony/mc/camera/status/eachcamera/ObjectTracking$Value;
 
-    goto :goto_5
+    goto :goto_6
 
     :cond_11
     sget-object v0, Ljp/co/sony/mc/camera/status/eachcamera/ObjectTracking$Value;->OFF:Ljp/co/sony/mc/camera/status/eachcamera/ObjectTracking$Value;
 
-    .line 528
-    :goto_5
+    .line 535
+    :goto_6
     new-instance v2, Ljp/co/sony/mc/camera/status/EachCameraStatusPublisher;
 
-    invoke-direct {v2, v4, v6}, Ljp/co/sony/mc/camera/status/EachCameraStatusPublisher;-><init>(Landroid/content/Context;Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;)V
+    invoke-direct {v2, v5, v8}, Ljp/co/sony/mc/camera/status/EachCameraStatusPublisher;-><init>(Landroid/content/Context;Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;)V
 
     new-instance v3, Ljp/co/sony/mc/camera/status/eachcamera/ObjectTracking;
 
     invoke-direct {v3, v0}, Ljp/co/sony/mc/camera/status/eachcamera/ObjectTracking;-><init>(Ljp/co/sony/mc/camera/status/eachcamera/ObjectTracking$Value;)V
 
-    .line 529
+    .line 536
     invoke-virtual {v2, v3}, Ljp/co/sony/mc/camera/status/EachCameraStatusPublisher;->put(Ljp/co/sony/mc/camera/status/CameraStatusValue;)Ljp/co/sony/mc/camera/status/CameraStatusPublisher;
 
     move-result-object v0
 
-    .line 530
+    .line 537
     invoke-virtual {v0}, Ljp/co/sony/mc/camera/status/CameraStatusPublisher;->publish()V
-    :try_end_1
-    .catch Landroid/hardware/camera2/CameraAccessException; {:try_start_1 .. :try_end_1} :catch_4
-    .catch Ljava/lang/IllegalArgumentException; {:try_start_1 .. :try_end_1} :catch_3
-    .catch Ljava/lang/IllegalStateException; {:try_start_1 .. :try_end_1} :catch_2
+    :try_end_2
+    .catch Landroid/hardware/camera2/CameraAccessException; {:try_start_2 .. :try_end_2} :catch_5
+    .catch Ljava/lang/IllegalArgumentException; {:try_start_2 .. :try_end_2} :catch_4
+    .catch Ljava/lang/IllegalStateException; {:try_start_2 .. :try_end_2} :catch_3
 
     goto :goto_7
 
-    :catch_2
+    :catch_3
     move-exception v0
 
-    .line 552
+    .line 559
     invoke-virtual/range {p1 .. p1}, Ljp/co/sony/mc/camera/device/state/DeviceStateContext;->getCameraErrorStatus()Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CameraErrorStatus;
 
     move-result-object v1
@@ -4082,38 +4277,42 @@
 
     if-eqz v1, :cond_12
 
-    .line 553
+    .line 560
     const-string v1, "Failed in SetOneTimeRequestTask: "
 
     invoke-static {v1, v0}, Ljp/co/sony/mc/camera/util/CamLog;->e(Ljava/lang/String;Ljava/lang/Throwable;)V
 
     goto :goto_7
 
-    .line 555
+    .line 562
     :cond_12
     throw v0
-
-    :catch_3
-    move-exception v0
-
-    .line 550
-    const-string v1, "Failed in SetOneTimeRequestTask."
-
-    invoke-static {v1, v0}, Ljp/co/sony/mc/camera/util/CamLog;->w(Ljava/lang/String;Ljava/lang/Throwable;)V
-
-    goto :goto_7
 
     :catch_4
     move-exception v0
 
-    .line 533
+    .line 557
+    const-string v1, "Failed in SetOneTimeRequestTask."
+
+    invoke-static {v1, v0}, Ljp/co/sony/mc/camera/util/CamLog;->w(Ljava/lang/String;Ljava/lang/Throwable;)V
+
+    :cond_13
+    :goto_7
+    const/4 v1, 0x1
+
+    goto :goto_9
+
+    :catch_5
+    move-exception v0
+
+    .line 540
     invoke-virtual/range {v17 .. v17}, Ljp/co/sony/mc/camera/device/CameraDeviceHandler$CameraDeviceHandlerInquirer;->isIgnoreCameraError()Z
 
     move-result v2
 
-    if-nez v2, :cond_15
+    if-nez v2, :cond_16
 
-    .line 534
+    .line 541
     invoke-virtual/range {p1 .. p1}, Ljp/co/sony/mc/camera/device/state/DeviceStateContext;->getCameraErrorStatus()Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CameraErrorStatus;
 
     move-result-object v1
@@ -4122,31 +4321,35 @@
 
     move-result v1
 
-    if-eqz v1, :cond_13
+    if-eqz v1, :cond_14
 
-    goto :goto_6
+    goto :goto_8
 
-    .line 536
-    :cond_13
-    invoke-virtual {v8}, Landroid/view/Surface;->isValid()Z
+    .line 543
+    :cond_14
+    invoke-virtual {v10}, Landroid/view/Surface;->isValid()Z
 
     move-result v1
 
-    if-nez v1, :cond_14
+    if-nez v1, :cond_15
 
-    .line 537
-    const-string v0, "mPreviewSurface is invalid. (after performing capture)"
+    const/4 v1, 0x1
 
-    filled-new-array {v0}, [Ljava/lang/String;
+    .line 544
+    new-array v0, v1, [Ljava/lang/String;
 
-    move-result-object v0
+    const-string v1, "mPreviewSurface is invalid. (after performing capture)"
+
+    const/4 v2, 0x0
+
+    aput-object v1, v0, v2
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
     goto :goto_7
 
-    .line 539
-    :cond_14
+    .line 546
+    :cond_15
     new-instance v1, Ljava/lang/RuntimeException;
 
     new-instance v2, Ljava/lang/StringBuilder;
@@ -4155,7 +4358,7 @@
 
     invoke-direct {v2, v3}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
-    .line 542
+    .line 549
     invoke-virtual {v0}, Landroid/hardware/camera2/CameraAccessException;->getReason()I
 
     move-result v0
@@ -4172,34 +4375,41 @@
 
     throw v1
 
-    .line 535
-    :cond_15
-    :goto_6
+    .line 542
+    :cond_16
+    :goto_8
     const-string v1, "Failed in SetOneTimeRequestTask"
 
     invoke-static {v1, v0}, Ljp/co/sony/mc/camera/util/CamLog;->w(Ljava/lang/String;Ljava/lang/Throwable;)V
 
-    .line 559
-    :cond_16
-    :goto_7
-    const-string/jumbo v0, "setOneTimeRequest Process [OUT]"
+    goto :goto_7
 
-    filled-new-array {v0}, [Ljava/lang/String;
+    .line 566
+    :goto_9
+    new-array v0, v1, [Ljava/lang/String;
 
-    move-result-object v0
+    const-string/jumbo v1, "setOneTimeRequest Process [OUT]"
+
+    const/4 v2, 0x0
+
+    aput-object v1, v0, v2
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
     return-void
 
-    .line 408
     :cond_17
-    :goto_8
-    const-string v0, "CaptureSessionInfo or CaptureSession is null"
+    :goto_a
+    move v1, v4
 
-    filled-new-array {v0}, [Ljava/lang/String;
+    move v2, v6
 
-    move-result-object v0
+    .line 412
+    new-array v0, v1, [Ljava/lang/String;
+
+    const-string v1, "CaptureSessionInfo or CaptureSession is null"
+
+    aput-object v1, v0, v2
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
@@ -4209,14 +4419,14 @@
 .method protected setRepeatingRequestFlushRecording(Ljp/co/sony/mc/camera/device/state/DeviceStateContext;)V
     .locals 11
 
-    .line 752
+    .line 763
     const-string/jumbo v0, "setRepeatingRequest : mRecordingSurface is invalid.(after performing set repeating request)"
 
     invoke-virtual {p1}, Ljp/co/sony/mc/camera/device/state/DeviceStateContext;->copyCaptureRequestHolder()Ljp/co/sony/mc/camera/device/CaptureRequestHolder;
 
     move-result-object v1
 
-    .line 753
+    .line 764
     invoke-virtual {p1}, Ljp/co/sony/mc/camera/device/state/DeviceStateContext;->getCameraInfo()Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CameraDeviceInfo;
 
     move-result-object v2
@@ -4225,118 +4435,127 @@
 
     move-result-object v2
 
-    .line 754
+    .line 766
     invoke-virtual {p1}, Ljp/co/sony/mc/camera/device/state/DeviceStateContext;->getSurfaceInfo()Ljp/co/sony/mc/camera/device/state/DeviceStateContext$SurfaceInfo;
 
     move-result-object v3
 
-    invoke-virtual {v3}, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$SurfaceInfo;->getRecordingSurface()Landroid/view/Surface;
+    invoke-virtual {v3}, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$SurfaceInfo;->getRecordingSurfaces()Ljava/util/Map;
 
     move-result-object v3
 
-    .line 755
+    .line 767
     invoke-virtual {p1}, Ljp/co/sony/mc/camera/device/state/DeviceStateContext;->getCaptureSessionInfo()Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CaptureSessionInfo;
 
     move-result-object v4
 
     iget-object v4, v4, Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CaptureSessionInfo;->captureSession:Landroid/hardware/camera2/CameraCaptureSession;
 
+    const/4 v5, 0x1
+
+    const/4 v6, 0x0
+
     if-nez v4, :cond_0
 
-    .line 757
-    const-string p0, "CaptureSession is not set. need to create capture session."
+    .line 769
+    new-array p0, v5, [Ljava/lang/String;
 
-    filled-new-array {p0}, [Ljava/lang/String;
+    const-string p1, "CaptureSession is not set. need to create capture session."
 
-    move-result-object p0
+    aput-object p1, p0, v6
 
     invoke-static {p0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
     return-void
 
     :cond_0
-    const/4 v5, 0x2
+    const/4 v7, 0x2
 
-    const/4 v6, 0x1
+    .line 773
+    invoke-virtual {p0, p1, v7, v5}, Ljp/co/sony/mc/camera/device/state/DeviceStateVideoBase;->setIntelligentActiveTrigger(Ljp/co/sony/mc/camera/device/state/DeviceStateContext;IZ)V
 
-    .line 761
-    invoke-virtual {p0, p1, v5, v6}, Ljp/co/sony/mc/camera/device/state/DeviceStateVideoBase;->setIntelligentActiveTrigger(Ljp/co/sony/mc/camera/device/state/DeviceStateContext;IZ)V
+    .line 778
+    new-instance v7, Ljava/util/ArrayList;
 
-    .line 766
-    new-instance v5, Ljava/util/ArrayList;
+    invoke-direct {v7}, Ljava/util/ArrayList;-><init>()V
 
-    invoke-direct {v5}, Ljava/util/ArrayList;-><init>()V
+    .line 783
+    invoke-interface {v3}, Ljava/util/Map;->values()Ljava/util/Collection;
 
-    .line 767
-    new-array v7, v6, [Landroid/view/Surface;
+    move-result-object v8
 
-    const/4 v8, 0x0
+    new-array v9, v6, [Landroid/view/Surface;
 
-    aput-object v3, v7, v8
+    invoke-interface {v8, v9}, Ljava/util/Collection;->toArray([Ljava/lang/Object;)[Ljava/lang/Object;
+
+    move-result-object v8
+
+    check-cast v8, [Landroid/view/Surface;
 
     const/4 v9, 0x0
 
     const/4 v10, 0x3
 
-    invoke-virtual {v1, v2, v9, v10, v7}, Ljp/co/sony/mc/camera/device/CaptureRequestHolder;->createCaptureRequest(Landroid/hardware/camera2/CameraDevice;Ljava/lang/Object;I[Landroid/view/Surface;)Landroid/hardware/camera2/CaptureRequest;
+    .line 779
+    invoke-virtual {v1, v2, v9, v10, v8}, Ljp/co/sony/mc/camera/device/CaptureRequestHolder;->createCaptureRequest(Landroid/hardware/camera2/CameraDevice;Ljava/lang/Object;I[Landroid/view/Surface;)Landroid/hardware/camera2/CaptureRequest;
 
     move-result-object v2
 
     if-nez v2, :cond_1
 
-    .line 773
-    const-string/jumbo p0, "setRepeatingRequestFlushRecording : CaptureRequest cannot be created."
+    .line 785
+    new-array p0, v5, [Ljava/lang/String;
 
-    filled-new-array {p0}, [Ljava/lang/String;
+    const-string/jumbo p1, "setRepeatingRequestFlushRecording : CaptureRequest cannot be created."
 
-    move-result-object p0
+    aput-object p1, p0, v6
 
     invoke-static {p0}, Ljp/co/sony/mc/camera/util/CamLog;->e([Ljava/lang/String;)V
 
     return-void
 
-    .line 776
+    .line 788
     :cond_1
-    invoke-interface {v5, v2}, Ljava/util/List;->add(Ljava/lang/Object;)Z
+    invoke-interface {v7, v2}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    .line 779
+    .line 791
     :try_start_0
     sget-boolean v2, Ljp/co/sony/mc/camera/util/CamLog;->DEBUG:Z
 
     if-eqz v2, :cond_2
 
-    new-array v2, v6, [Ljava/lang/String;
+    new-array v2, v5, [Ljava/lang/String;
 
-    const-string/jumbo v6, "setRepeatingBurstRequests for iAct: ([V])"
+    const-string/jumbo v8, "setRepeatingBurstRequests for iAct: ([V])"
 
-    aput-object v6, v2, v8
+    aput-object v8, v2, v6
 
     invoke-static {v2}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
-    .line 783
+    .line 795
     :cond_2
     invoke-virtual {p1}, Ljp/co/sony/mc/camera/device/state/DeviceStateContext;->getCaptureSessionCallbackExecutor()Ljava/util/concurrent/ExecutorService;
 
     move-result-object v2
 
-    .line 784
+    .line 796
     invoke-virtual {p1}, Ljp/co/sony/mc/camera/device/state/DeviceStateContext;->getCaptureSessionCallback()Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CaptureSessionCallback;
 
-    move-result-object v6
+    move-result-object v8
 
-    .line 781
-    invoke-virtual {v4, v5, v2, v6}, Landroid/hardware/camera2/CameraCaptureSession;->setRepeatingBurstRequests(Ljava/util/List;Ljava/util/concurrent/Executor;Landroid/hardware/camera2/CameraCaptureSession$CaptureCallback;)I
+    .line 793
+    invoke-virtual {v4, v7, v2, v8}, Landroid/hardware/camera2/CameraCaptureSession;->setRepeatingBurstRequests(Ljava/util/List;Ljava/util/concurrent/Executor;Landroid/hardware/camera2/CameraCaptureSession$CaptureCallback;)I
 
-    .line 785
+    .line 797
     invoke-virtual {p1, v1}, Ljp/co/sony/mc/camera/device/state/DeviceStateContext;->validateParameter(Ljp/co/sony/mc/camera/device/CaptureRequestHolder;)V
 
-    .line 786
+    .line 798
     sget-boolean v1, Ljp/co/sony/mc/camera/util/CamLog;->DEBUG:Z
 
     if-eqz v1, :cond_7
 
-    .line 787
-    invoke-interface {v5, v8}, Ljava/util/List;->get(I)Ljava/lang/Object;
+    .line 799
+    invoke-interface {v7, v6}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
     move-result-object v1
 
@@ -4353,7 +4572,7 @@
     :catch_0
     move-exception p0
 
-    .line 813
+    .line 825
     invoke-virtual {p1}, Ljp/co/sony/mc/camera/device/state/DeviceStateContext;->getCameraErrorStatus()Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CameraErrorStatus;
 
     move-result-object p1
@@ -4364,43 +4583,51 @@
 
     if-eqz p1, :cond_3
 
-    .line 814
+    .line 826
     const-string p1, "Failed in setRepeatingRequest: "
 
     invoke-static {p1, p0}, Ljp/co/sony/mc/camera/util/CamLog;->e(Ljava/lang/String;Ljava/lang/Throwable;)V
 
     goto :goto_2
 
-    .line 816
+    .line 828
     :cond_3
     throw p0
 
     :catch_1
     move-exception p0
 
-    .line 805
-    invoke-virtual {v3}, Landroid/view/Surface;->isValid()Z
+    .line 817
+    sget-object v1, Ljp/co/sony/mc/camera/recorder/RecorderParameters$VideoTrackId;->VIDEO_TRACK_1:Ljp/co/sony/mc/camera/recorder/RecorderParameters$VideoTrackId;
+
+    invoke-interface {v3, v1}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object v1
+
+    check-cast v1, Landroid/view/Surface;
+
+    invoke-virtual {v1}, Landroid/view/Surface;->isValid()Z
 
     move-result v1
 
     if-nez v1, :cond_4
 
-    .line 806
-    filled-new-array {v0}, [Ljava/lang/String;
+    .line 818
+    new-array p0, v5, [Ljava/lang/String;
 
-    move-result-object p0
+    aput-object v0, p0, v6
 
     invoke-static {p0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
     goto :goto_0
 
-    .line 809
+    .line 821
     :cond_4
     const-string v0, "Failed in setRepeatingRequest."
 
     invoke-static {v0, p0}, Ljp/co/sony/mc/camera/util/CamLog;->d(Ljava/lang/String;Ljava/lang/Throwable;)V
 
-    .line 811
+    .line 823
     :goto_0
     invoke-virtual {p1}, Ljp/co/sony/mc/camera/device/state/DeviceStateContext;->getCameraDeviceHandlerCallback()Ljp/co/sony/mc/camera/device/state/IDeviceStateMachineCallback;
 
@@ -4413,23 +4640,31 @@
     :catch_2
     move-exception v1
 
-    .line 794
-    invoke-virtual {v3}, Landroid/view/Surface;->isValid()Z
+    .line 806
+    sget-object v2, Ljp/co/sony/mc/camera/recorder/RecorderParameters$VideoTrackId;->VIDEO_TRACK_1:Ljp/co/sony/mc/camera/recorder/RecorderParameters$VideoTrackId;
+
+    invoke-interface {v3, v2}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object v2
+
+    check-cast v2, Landroid/view/Surface;
+
+    invoke-virtual {v2}, Landroid/view/Surface;->isValid()Z
 
     move-result v2
 
     if-nez v2, :cond_5
 
-    .line 795
-    filled-new-array {v0}, [Ljava/lang/String;
+    .line 807
+    new-array p0, v5, [Ljava/lang/String;
 
-    move-result-object p0
+    aput-object v0, p0, v6
 
     invoke-static {p0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
     goto :goto_1
 
-    .line 797
+    .line 809
     :cond_5
     invoke-virtual {v1}, Landroid/hardware/camera2/CameraAccessException;->getReason()I
 
@@ -4437,34 +4672,34 @@
 
     if-ne v0, v10, :cond_6
 
-    .line 798
-    new-instance v0, Ljava/lang/StringBuilder;
+    .line 810
+    new-array v0, v5, [Ljava/lang/String;
 
-    const-string v2, "Failed in setRepeatingRequest  by CameraAccessException. Reason:"
+    new-instance v2, Ljava/lang/StringBuilder;
 
-    invoke-direct {v0, v2}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+    const-string v3, "Failed in setRepeatingRequest  by CameraAccessException. Reason:"
 
-    .line 799
+    invoke-direct {v2, v3}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+
+    .line 811
     invoke-virtual {v1}, Landroid/hardware/camera2/CameraAccessException;->getReason()I
 
     move-result v1
 
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+    invoke-virtual {v2, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
-    move-result-object v0
+    move-result-object v1
 
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    move-result-object v0
+    move-result-object v1
 
-    filled-new-array {v0}, [Ljava/lang/String;
+    aput-object v1, v0, v6
 
-    move-result-object v0
-
-    .line 798
+    .line 810
     invoke-static {v0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
-    .line 800
+    .line 812
     invoke-virtual {p1}, Ljp/co/sony/mc/camera/device/state/DeviceStateContext;->getCameraInfo()Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CameraDeviceInfo;
 
     move-result-object v0
@@ -4477,7 +4712,7 @@
 
     invoke-virtual {p0, p1, v0, v1}, Ljp/co/sony/mc/camera/device/state/DeviceStateVideoBase;->sendNotifyOtherError(Ljp/co/sony/mc/camera/device/state/DeviceStateContext;Ljp/co/sony/mc/camera/device/CameraDeviceHandler$CameraSessionId;Ljp/co/sony/mc/camera/device/CameraDeviceHandler$ErrorCode;)V
 
-    .line 803
+    .line 815
     :cond_6
     :goto_1
     invoke-virtual {p1}, Ljp/co/sony/mc/camera/device/state/DeviceStateContext;->getCameraDeviceHandlerCallback()Ljp/co/sony/mc/camera/device/state/IDeviceStateMachineCallback;
@@ -4496,7 +4731,7 @@
 
     const/4 v0, 0x0
 
-    .line 89
+    .line 92
     aget-object v0, p2, v0
 
     check-cast v0, Ljava/lang/Integer;
@@ -4507,7 +4742,7 @@
 
     const/4 v1, 0x1
 
-    .line 90
+    .line 93
     aget-object v2, p2, v1
 
     check-cast v2, Ljava/lang/Integer;
@@ -4518,7 +4753,7 @@
 
     const/4 v3, 0x2
 
-    .line 91
+    .line 94
     aget-object p2, p2, v3
 
     check-cast p2, Ljava/lang/Long;
@@ -4527,7 +4762,7 @@
 
     move-result-wide v3
 
-    .line 93
+    .line 96
     invoke-virtual {p1}, Ljp/co/sony/mc/camera/device/state/DeviceStateContext;->getCameraInfo()Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CameraDeviceInfo;
 
     move-result-object p2
@@ -4536,31 +4771,31 @@
 
     move-result-object p2
 
-    .line 94
+    .line 97
     invoke-virtual {p1}, Ljp/co/sony/mc/camera/device/state/DeviceStateContext;->copyCaptureRequestHolder()Ljp/co/sony/mc/camera/device/CaptureRequestHolder;
 
     move-result-object v5
 
-    .line 96
+    .line 99
     invoke-virtual {p1}, Ljp/co/sony/mc/camera/device/state/DeviceStateContext;->setObjectTrackingResultChecker()Z
 
-    .line 98
+    .line 101
     invoke-virtual {p0, p2, v0, v2}, Ljp/co/sony/mc/camera/device/state/DeviceStateVideoBase;->get1x1RectOnActiveArrayCoordinate(Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;II)Landroid/graphics/Rect;
 
     move-result-object p2
 
-    .line 99
+    .line 102
     sget-object v0, Lcom/sonymobile/camera/device/SomcCaptureRequestKeys;->SONYMOBILE_STATISTICS_OBJECT_SELECT_TRIGGER:Landroid/hardware/camera2/CaptureRequest$Key;
 
-    .line 101
+    .line 104
     invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object v1
 
-    .line 99
+    .line 102
     invoke-virtual {v5, v0, v1}, Ljp/co/sony/mc/camera/device/CaptureRequestHolder;->set(Landroid/hardware/camera2/CaptureRequest$Key;Ljava/lang/Object;)V
 
-    .line 102
+    .line 105
     sget-object v0, Lcom/sonymobile/camera/device/SomcCaptureRequestKeys;->SONYMOBILE_STATISTICS_OBJECT_SELECT_TRIGGER_AREA:Landroid/hardware/camera2/CaptureRequest$Key;
 
     iget v1, p2, Landroid/graphics/Rect;->left:I
@@ -4579,7 +4814,7 @@
 
     invoke-virtual {v5, v0, p2}, Ljp/co/sony/mc/camera/device/CaptureRequestHolder;->set(Landroid/hardware/camera2/CaptureRequest$Key;Ljava/lang/Object;)V
 
-    .line 109
+    .line 112
     sget-object p2, Lcom/sonymobile/camera/device/SomcCaptureRequestKeys;->SONYMOBILE_STATISTICS_OBJECT_SELECT_TRIGGER:Landroid/hardware/camera2/CaptureRequest$Key;
 
     invoke-virtual {p0, p1, v5, p2}, Ljp/co/sony/mc/camera/device/state/DeviceStateVideoBase;->setOneTimeRequest(Ljp/co/sony/mc/camera/device/state/DeviceStateContext;Ljp/co/sony/mc/camera/device/CaptureRequestHolder;Ljava/lang/Object;)V
@@ -4590,7 +4825,7 @@
 .method protected stopAudioRecording(Ljp/co/sony/mc/camera/device/state/DeviceStateContext;)V
     .locals 0
 
-    .line 839
+    .line 851
     invoke-virtual {p1}, Ljp/co/sony/mc/camera/device/state/DeviceStateContext;->getVideoRecorder()Ljp/co/sony/mc/camera/recorder/RecorderController;
 
     move-result-object p0
@@ -4603,49 +4838,53 @@
 .method protected varargs stopObjectTracking(Ljp/co/sony/mc/camera/device/state/DeviceStateContext;[Ljava/lang/Object;)V
     .locals 2
 
-    .line 120
+    .line 123
     invoke-virtual {p1}, Ljp/co/sony/mc/camera/device/state/DeviceStateContext;->removeObjectTrackingResultChecker()Z
 
     move-result p2
 
     if-nez p2, :cond_1
 
-    .line 121
+    .line 124
     sget-boolean p0, Ljp/co/sony/mc/camera/util/CamLog;->DEBUG:Z
 
     if-eqz p0, :cond_0
 
-    const-string p0, "ObjectTracking is already stopped."
+    const/4 p0, 0x1
 
-    filled-new-array {p0}, [Ljava/lang/String;
+    new-array p0, p0, [Ljava/lang/String;
 
-    move-result-object p0
+    const/4 p1, 0x0
+
+    const-string p2, "ObjectTracking is already stopped."
+
+    aput-object p2, p0, p1
 
     invoke-static {p0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
     :cond_0
     return-void
 
-    .line 125
+    .line 128
     :cond_1
     invoke-virtual {p1}, Ljp/co/sony/mc/camera/device/state/DeviceStateContext;->copyCaptureRequestHolder()Ljp/co/sony/mc/camera/device/CaptureRequestHolder;
 
     move-result-object p2
 
-    .line 126
+    .line 129
     sget-object v0, Lcom/sonymobile/camera/device/SomcCaptureRequestKeys;->SONYMOBILE_STATISTICS_OBJECT_SELECT_TRIGGER:Landroid/hardware/camera2/CaptureRequest$Key;
 
     const/4 v1, 0x2
 
-    .line 128
+    .line 131
     invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object v1
 
-    .line 126
+    .line 129
     invoke-virtual {p2, v0, v1}, Ljp/co/sony/mc/camera/device/CaptureRequestHolder;->set(Landroid/hardware/camera2/CaptureRequest$Key;Ljava/lang/Object;)V
 
-    .line 129
+    .line 132
     sget-object v0, Lcom/sonymobile/camera/device/SomcCaptureRequestKeys;->SONYMOBILE_STATISTICS_OBJECT_SELECT_TRIGGER:Landroid/hardware/camera2/CaptureRequest$Key;
 
     invoke-virtual {p0, p1, p2, v0}, Ljp/co/sony/mc/camera/device/state/DeviceStateVideoBase;->setOneTimeRequest(Ljp/co/sony/mc/camera/device/state/DeviceStateContext;Ljp/co/sony/mc/camera/device/CaptureRequestHolder;Ljava/lang/Object;)V
@@ -4654,110 +4893,110 @@
 .end method
 
 .method protected stopRecorder(Ljp/co/sony/mc/camera/device/state/DeviceStateContext;)V
-    .locals 4
+    .locals 6
 
-    .line 848
+    .line 860
     invoke-virtual {p1}, Ljp/co/sony/mc/camera/device/state/DeviceStateContext;->getVideoRecorder()Ljp/co/sony/mc/camera/recorder/RecorderController;
 
     move-result-object v0
 
+    const/4 v1, 0x1
+
+    const/4 v2, 0x0
+
     if-nez v0, :cond_1
 
-    .line 850
+    .line 862
     sget-boolean p0, Ljp/co/sony/mc/camera/util/CamLog;->DEBUG:Z
 
     if-eqz p0, :cond_0
 
-    const-string p0, "Recorder doesn\'t exists, so this request is refused."
+    new-array p0, v1, [Ljava/lang/String;
 
-    filled-new-array {p0}, [Ljava/lang/String;
+    const-string p1, "Recorder doesn\'t exists, so this request is refused."
 
-    move-result-object p0
+    aput-object p1, p0, v2
 
     invoke-static {p0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
     :cond_0
     return-void
 
-    .line 855
+    .line 867
     :cond_1
-    sget-boolean v1, Ljp/co/sony/mc/camera/util/CamLog;->DEBUG:Z
+    sget-boolean v3, Ljp/co/sony/mc/camera/util/CamLog;->DEBUG:Z
 
-    if-eqz v1, :cond_2
+    if-eqz v3, :cond_2
 
-    new-instance v1, Ljava/lang/StringBuilder;
+    new-array v3, v1, [Ljava/lang/String;
 
-    const-string v2, "invoked recording:"
+    new-instance v4, Ljava/lang/StringBuilder;
 
-    invoke-direct {v1, v2}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+    const-string v5, "invoked recording:"
+
+    invoke-direct {v4, v5}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
     invoke-interface {v0}, Ljp/co/sony/mc/camera/recorder/RecorderController;->isRecording()Z
 
-    move-result v2
+    move-result v5
 
-    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
+    invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
 
-    move-result-object v1
+    move-result-object v4
 
-    const-string v2, " paused:"
+    const-string v5, " paused:"
 
-    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    move-result-object v1
+    move-result-object v4
 
-    .line 856
+    .line 868
     invoke-interface {v0}, Ljp/co/sony/mc/camera/recorder/RecorderController;->isPaused()Z
 
-    move-result v2
+    move-result v5
 
-    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
+    invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
 
-    move-result-object v1
+    move-result-object v4
 
-    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-virtual {v4}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    move-result-object v1
+    move-result-object v4
 
-    filled-new-array {v1}, [Ljava/lang/String;
+    aput-object v4, v3, v2
 
-    move-result-object v1
+    .line 867
+    invoke-static {v3}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
-    .line 855
-    invoke-static {v1}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
-
-    .line 858
+    .line 870
     :cond_2
     invoke-interface {v0}, Ljp/co/sony/mc/camera/recorder/RecorderController;->isRecording()Z
 
-    move-result v1
+    move-result v3
 
-    if-nez v1, :cond_3
+    if-nez v3, :cond_3
 
     invoke-interface {v0}, Ljp/co/sony/mc/camera/recorder/RecorderController;->isPaused()Z
 
-    move-result v1
+    move-result v3
 
-    if-eqz v1, :cond_4
+    if-eqz v3, :cond_4
 
+    .line 872
     :cond_3
-    const/4 v1, 0x1
-
-    .line 860
     :try_start_0
     new-array v1, v1, [Ljava/lang/String;
 
-    const-string v2, "invoke Recorder.stop."
+    const-string v3, "invoke Recorder.stop."
 
-    const/4 v3, 0x0
-
-    aput-object v2, v1, v3
+    aput-object v3, v1, v2
 
     invoke-static {v1}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
-    .line 861
+    .line 873
     invoke-interface {v0}, Ljp/co/sony/mc/camera/recorder/RecorderController;->stop()V
 
-    .line 862
+    .line 874
     invoke-virtual {p1}, Ljp/co/sony/mc/camera/device/state/DeviceStateContext;->getCameraInfo()Ljp/co/sony/mc/camera/device/state/DeviceStateContext$CameraDeviceInfo;
 
     move-result-object p1
@@ -4766,14 +5005,14 @@
 
     move-result-object p1
 
-    invoke-virtual {p0, p1, v3}, Ljp/co/sony/mc/camera/device/state/DeviceStateVideoBase;->setCameraAudioRestriction(Landroid/hardware/camera2/CameraDevice;Z)V
+    invoke-virtual {p0, p1, v2}, Ljp/co/sony/mc/camera/device/state/DeviceStateVideoBase;->setCameraAudioRestriction(Landroid/hardware/camera2/CameraDevice;Z)V
     :try_end_0
     .catch Ljp/co/sony/mc/camera/recorder/RecorderException; {:try_start_0 .. :try_end_0} :catch_0
 
     :cond_4
     return-void
 
-    .line 864
+    .line 876
     :catch_0
     new-instance p0, Ljava/lang/RuntimeException;
 

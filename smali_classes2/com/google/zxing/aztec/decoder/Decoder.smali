@@ -29,328 +29,746 @@
 
 # direct methods
 .method static constructor <clinit>()V
-    .locals 33
+    .locals 25
+
+    const/16 v0, 0x20
 
     .line 46
-    const-string v30, "CTRL_DL"
+    new-array v1, v0, [Ljava/lang/String;
 
-    const-string v31, "CTRL_BS"
+    const/4 v2, 0x0
 
-    const-string v0, "CTRL_PS"
+    const-string v3, "CTRL_PS"
 
-    const-string v1, " "
+    aput-object v3, v1, v2
 
-    const-string v2, "A"
+    const/4 v4, 0x1
 
-    const-string v3, "B"
+    const-string v5, " "
 
-    const-string v4, "C"
+    aput-object v5, v1, v4
 
-    const-string v5, "D"
+    const-string v6, "A"
+
+    const/4 v7, 0x2
+
+    aput-object v6, v1, v7
+
+    const-string v6, "B"
+
+    const/4 v8, 0x3
+
+    aput-object v6, v1, v8
+
+    const-string v6, "C"
+
+    const/4 v9, 0x4
+
+    aput-object v6, v1, v9
+
+    const-string v6, "D"
+
+    const/4 v10, 0x5
+
+    aput-object v6, v1, v10
 
     const-string v6, "E"
 
-    const-string v7, "F"
+    const/4 v11, 0x6
 
-    const-string v8, "G"
+    aput-object v6, v1, v11
 
-    const-string v9, "H"
+    const-string v6, "F"
 
-    const-string v10, "I"
+    const/4 v12, 0x7
 
-    const-string v11, "J"
+    aput-object v6, v1, v12
 
-    const-string v12, "K"
+    const-string v6, "G"
 
-    const-string v13, "L"
+    const/16 v13, 0x8
 
-    const-string v14, "M"
+    aput-object v6, v1, v13
 
-    const-string v15, "N"
+    const-string v6, "H"
 
-    const-string v16, "O"
+    const/16 v14, 0x9
 
-    const-string v17, "P"
+    aput-object v6, v1, v14
 
-    const-string v18, "Q"
+    const-string v6, "I"
 
-    const-string v19, "R"
+    const/16 v15, 0xa
 
-    const-string v20, "S"
+    aput-object v6, v1, v15
 
-    const-string v21, "T"
+    const-string v6, "J"
 
-    const-string v22, "U"
+    const/16 v16, 0xb
 
-    const-string v23, "V"
+    aput-object v6, v1, v16
+
+    const-string v6, "K"
+
+    const/16 v17, 0xc
+
+    aput-object v6, v1, v17
+
+    const-string v6, "L"
+
+    const/16 v18, 0xd
+
+    aput-object v6, v1, v18
+
+    const-string v6, "M"
+
+    const/16 v19, 0xe
+
+    aput-object v6, v1, v19
+
+    const-string v6, "N"
+
+    const/16 v20, 0xf
+
+    aput-object v6, v1, v20
+
+    const-string v6, "O"
+
+    const/16 v15, 0x10
+
+    aput-object v6, v1, v15
+
+    const-string v6, "P"
+
+    const/16 v22, 0x11
+
+    aput-object v6, v1, v22
+
+    const-string v6, "Q"
+
+    const/16 v23, 0x12
+
+    aput-object v6, v1, v23
+
+    const/16 v6, 0x13
+
+    const-string v24, "R"
+
+    aput-object v24, v1, v6
+
+    const/16 v6, 0x14
+
+    const-string v24, "S"
+
+    aput-object v24, v1, v6
+
+    const/16 v6, 0x15
+
+    const-string v24, "T"
+
+    aput-object v24, v1, v6
+
+    const/16 v6, 0x16
+
+    const-string v24, "U"
+
+    aput-object v24, v1, v6
+
+    const/16 v6, 0x17
+
+    const-string v24, "V"
+
+    aput-object v24, v1, v6
+
+    const/16 v6, 0x18
 
     const-string v24, "W"
 
-    const-string v25, "X"
+    aput-object v24, v1, v6
 
-    const-string v26, "Y"
+    const/16 v6, 0x19
 
-    const-string v27, "Z"
+    const-string v24, "X"
 
-    const-string v28, "CTRL_LL"
+    aput-object v24, v1, v6
 
-    const-string v29, "CTRL_ML"
+    const/16 v6, 0x1a
 
-    filled-new-array/range {v0 .. v31}, [Ljava/lang/String;
+    const-string v24, "Y"
 
-    move-result-object v0
+    aput-object v24, v1, v6
 
-    sput-object v0, Lcom/google/zxing/aztec/decoder/Decoder;->UPPER_TABLE:[Ljava/lang/String;
+    const/16 v6, 0x1b
+
+    const-string v24, "Z"
+
+    aput-object v24, v1, v6
+
+    const/16 v6, 0x1c
+
+    const-string v24, "CTRL_LL"
+
+    aput-object v24, v1, v6
+
+    const/16 v6, 0x1d
+
+    const-string v24, "CTRL_ML"
+
+    aput-object v24, v1, v6
+
+    const/16 v6, 0x1e
+
+    const-string v24, "CTRL_DL"
+
+    aput-object v24, v1, v6
+
+    const/16 v6, 0x1f
+
+    const-string v24, "CTRL_BS"
+
+    aput-object v24, v1, v6
+
+    sput-object v1, Lcom/google/zxing/aztec/decoder/Decoder;->UPPER_TABLE:[Ljava/lang/String;
 
     .line 51
-    const-string v31, "CTRL_DL"
+    new-array v1, v0, [Ljava/lang/String;
 
-    const-string v32, "CTRL_BS"
+    aput-object v3, v1, v2
 
-    const-string v1, "CTRL_PS"
+    aput-object v5, v1, v4
 
-    const-string v2, " "
+    const-string v6, "a"
 
-    const-string v3, "a"
+    aput-object v6, v1, v7
 
-    const-string v4, "b"
+    const-string v6, "b"
 
-    const-string v5, "c"
+    aput-object v6, v1, v8
+
+    const-string v6, "c"
+
+    aput-object v6, v1, v9
 
     const-string v6, "d"
 
-    const-string v7, "e"
+    aput-object v6, v1, v10
 
-    const-string v8, "f"
+    const-string v6, "e"
 
-    const-string v9, "g"
+    aput-object v6, v1, v11
 
-    const-string v10, "h"
+    const-string v6, "f"
 
-    const-string v11, "i"
+    aput-object v6, v1, v12
 
-    const-string v12, "j"
+    const-string v6, "g"
 
-    const-string v13, "k"
+    aput-object v6, v1, v13
 
-    const-string v14, "l"
+    const-string v6, "h"
 
-    const-string v15, "m"
+    aput-object v6, v1, v14
 
-    const-string v16, "n"
+    const-string v6, "i"
 
-    const-string v17, "o"
+    const/16 v21, 0xa
 
-    const-string v18, "p"
+    aput-object v6, v1, v21
 
-    const-string v19, "q"
+    const-string v6, "j"
 
-    const-string v20, "r"
+    aput-object v6, v1, v16
 
-    const-string v21, "s"
+    const-string v6, "k"
 
-    const-string v22, "t"
+    aput-object v6, v1, v17
 
-    const-string v23, "u"
+    const-string v6, "l"
+
+    aput-object v6, v1, v18
+
+    const-string v6, "m"
+
+    aput-object v6, v1, v19
+
+    const-string v6, "n"
+
+    aput-object v6, v1, v20
+
+    const-string v6, "o"
+
+    aput-object v6, v1, v15
+
+    const-string v6, "p"
+
+    aput-object v6, v1, v22
+
+    const-string v6, "q"
+
+    aput-object v6, v1, v23
+
+    const/16 v6, 0x13
+
+    const-string v24, "r"
+
+    aput-object v24, v1, v6
+
+    const/16 v6, 0x14
+
+    const-string v24, "s"
+
+    aput-object v24, v1, v6
+
+    const/16 v6, 0x15
+
+    const-string v24, "t"
+
+    aput-object v24, v1, v6
+
+    const/16 v6, 0x16
+
+    const-string v24, "u"
+
+    aput-object v24, v1, v6
+
+    const/16 v6, 0x17
 
     const-string v24, "v"
 
-    const-string v25, "w"
+    aput-object v24, v1, v6
 
-    const-string v26, "x"
+    const/16 v6, 0x18
 
-    const-string v27, "y"
+    const-string v24, "w"
 
-    const-string v28, "z"
+    aput-object v24, v1, v6
 
-    const-string v29, "CTRL_US"
+    const/16 v6, 0x19
 
-    const-string v30, "CTRL_ML"
+    const-string v24, "x"
 
-    filled-new-array/range {v1 .. v32}, [Ljava/lang/String;
+    aput-object v24, v1, v6
 
-    move-result-object v0
+    const/16 v6, 0x1a
 
-    sput-object v0, Lcom/google/zxing/aztec/decoder/Decoder;->LOWER_TABLE:[Ljava/lang/String;
+    const-string v24, "y"
+
+    aput-object v24, v1, v6
+
+    const/16 v6, 0x1b
+
+    const-string v24, "z"
+
+    aput-object v24, v1, v6
+
+    const/16 v6, 0x1c
+
+    const-string v24, "CTRL_US"
+
+    aput-object v24, v1, v6
+
+    const/16 v6, 0x1d
+
+    const-string v24, "CTRL_ML"
+
+    aput-object v24, v1, v6
+
+    const/16 v6, 0x1e
+
+    const-string v24, "CTRL_DL"
+
+    aput-object v24, v1, v6
+
+    const/16 v6, 0x1f
+
+    const-string v24, "CTRL_BS"
+
+    aput-object v24, v1, v6
+
+    sput-object v1, Lcom/google/zxing/aztec/decoder/Decoder;->LOWER_TABLE:[Ljava/lang/String;
 
     .line 56
-    const-string v31, "CTRL_PL"
+    new-array v1, v0, [Ljava/lang/String;
 
-    const-string v32, "CTRL_BS"
+    aput-object v3, v1, v2
 
-    const-string v1, "CTRL_PS"
+    aput-object v5, v1, v4
 
-    const-string v2, " "
+    const-string v6, "\u0001"
 
-    const-string v3, "\u0001"
+    aput-object v6, v1, v7
 
-    const-string v4, "\u0002"
+    const-string v6, "\u0002"
 
-    const-string v5, "\u0003"
+    aput-object v6, v1, v8
+
+    const-string v6, "\u0003"
+
+    aput-object v6, v1, v9
 
     const-string v6, "\u0004"
 
-    const-string v7, "\u0005"
+    aput-object v6, v1, v10
 
-    const-string v8, "\u0006"
+    const-string v6, "\u0005"
 
-    const-string v9, "\u0007"
+    aput-object v6, v1, v11
 
-    const-string v10, "\u0008"
+    const-string v6, "\u0006"
 
-    const-string v11, "\t"
+    aput-object v6, v1, v12
 
-    const-string v12, "\n"
+    const-string v6, "\u0007"
 
-    const-string v13, "\u000b"
+    aput-object v6, v1, v13
 
-    const-string v14, "\u000c"
+    const-string v6, "\u0008"
 
-    const-string v15, "\r"
+    aput-object v6, v1, v14
 
-    const-string v16, "\u001b"
+    const-string v6, "\t"
 
-    const-string v17, "\u001c"
+    const/16 v21, 0xa
 
-    const-string v18, "\u001d"
+    aput-object v6, v1, v21
 
-    const-string v19, "\u001e"
+    const-string v6, "\n"
 
-    const-string v20, "\u001f"
+    aput-object v6, v1, v16
 
-    const-string v21, "@"
+    const-string v6, "\u000b"
 
-    const-string v22, "\\"
+    aput-object v6, v1, v17
 
-    const-string v23, "^"
+    const-string v6, "\u000c"
+
+    aput-object v6, v1, v18
+
+    const-string v6, "\r"
+
+    aput-object v6, v1, v19
+
+    const-string v6, "\u001b"
+
+    aput-object v6, v1, v20
+
+    const-string v6, "\u001c"
+
+    aput-object v6, v1, v15
+
+    const-string v6, "\u001d"
+
+    aput-object v6, v1, v22
+
+    const-string v6, "\u001e"
+
+    aput-object v6, v1, v23
+
+    const/16 v6, 0x13
+
+    const-string v24, "\u001f"
+
+    aput-object v24, v1, v6
+
+    const/16 v6, 0x14
+
+    const-string v24, "@"
+
+    aput-object v24, v1, v6
+
+    const/16 v6, 0x15
+
+    const-string v24, "\\"
+
+    aput-object v24, v1, v6
+
+    const/16 v6, 0x16
+
+    const-string v24, "^"
+
+    aput-object v24, v1, v6
+
+    const/16 v6, 0x17
 
     const-string v24, "_"
 
-    const-string v25, "`"
+    aput-object v24, v1, v6
 
-    const-string v26, "|"
+    const/16 v6, 0x18
 
-    const-string v27, "~"
+    const-string v24, "`"
 
-    const-string v28, "\u007f"
+    aput-object v24, v1, v6
 
-    const-string v29, "CTRL_LL"
+    const/16 v6, 0x19
 
-    const-string v30, "CTRL_UL"
+    const-string v24, "|"
 
-    filled-new-array/range {v1 .. v32}, [Ljava/lang/String;
+    aput-object v24, v1, v6
 
-    move-result-object v0
+    const/16 v6, 0x1a
 
-    sput-object v0, Lcom/google/zxing/aztec/decoder/Decoder;->MIXED_TABLE:[Ljava/lang/String;
+    const-string v24, "~"
+
+    aput-object v24, v1, v6
+
+    const/16 v6, 0x1b
+
+    const-string v24, "\u007f"
+
+    aput-object v24, v1, v6
+
+    const/16 v6, 0x1c
+
+    const-string v24, "CTRL_LL"
+
+    aput-object v24, v1, v6
+
+    const/16 v6, 0x1d
+
+    const-string v24, "CTRL_UL"
+
+    aput-object v24, v1, v6
+
+    const/16 v6, 0x1e
+
+    const-string v24, "CTRL_PL"
+
+    aput-object v24, v1, v6
+
+    const/16 v6, 0x1f
+
+    const-string v24, "CTRL_BS"
+
+    aput-object v24, v1, v6
+
+    sput-object v1, Lcom/google/zxing/aztec/decoder/Decoder;->MIXED_TABLE:[Ljava/lang/String;
 
     .line 62
-    const-string v31, "}"
-
-    const-string v32, "CTRL_UL"
+    new-array v0, v0, [Ljava/lang/String;
 
     const-string v1, ""
 
-    const-string v2, "\r"
+    aput-object v1, v0, v2
 
-    const-string v3, "\r\n"
+    const-string v1, "\r"
 
-    const-string v4, ". "
+    aput-object v1, v0, v4
 
-    const-string v5, ", "
+    const-string v1, "\r\n"
 
-    const-string v6, ": "
+    aput-object v1, v0, v7
 
-    const-string v7, "!"
+    const-string v1, ". "
 
-    const-string v8, "\""
+    aput-object v1, v0, v8
 
-    const-string v9, "#"
+    const-string v1, ", "
 
-    const-string v10, "$"
+    aput-object v1, v0, v9
 
-    const-string v11, "%"
+    const-string v1, ": "
 
-    const-string v12, "&"
+    aput-object v1, v0, v10
 
-    const-string v13, "\'"
+    const-string v1, "!"
 
-    const-string v14, "("
+    aput-object v1, v0, v11
 
-    const-string v15, ")"
+    const-string v1, "\""
 
-    const-string v16, "*"
+    aput-object v1, v0, v12
 
-    const-string v17, "+"
+    const-string v1, "#"
 
-    const-string v18, ","
+    aput-object v1, v0, v13
 
-    const-string v19, "-"
+    const-string v1, "$"
 
-    const-string v20, "."
+    aput-object v1, v0, v14
 
-    const-string v21, "/"
+    const-string v1, "%"
 
-    const-string v22, ":"
+    const/16 v6, 0xa
 
-    const-string v23, ";"
+    aput-object v1, v0, v6
 
-    const-string v24, "<"
+    const-string v1, "&"
 
-    const-string v25, "="
+    aput-object v1, v0, v16
 
-    const-string v26, ">"
+    const-string v1, "\'"
 
-    const-string v27, "?"
+    aput-object v1, v0, v17
 
-    const-string v28, "["
+    const-string v1, "("
 
-    const-string v29, "]"
+    aput-object v1, v0, v18
 
-    const-string v30, "{"
+    const-string v1, ")"
 
-    filled-new-array/range {v1 .. v32}, [Ljava/lang/String;
+    aput-object v1, v0, v19
 
-    move-result-object v0
+    const-string v1, "*"
+
+    aput-object v1, v0, v20
+
+    const-string v1, "+"
+
+    aput-object v1, v0, v15
+
+    const-string v1, ","
+
+    aput-object v1, v0, v22
+
+    const-string v1, "-"
+
+    aput-object v1, v0, v23
+
+    const/16 v1, 0x13
+
+    const-string v6, "."
+
+    aput-object v6, v0, v1
+
+    const/16 v1, 0x14
+
+    const-string v6, "/"
+
+    aput-object v6, v0, v1
+
+    const/16 v1, 0x15
+
+    const-string v6, ":"
+
+    aput-object v6, v0, v1
+
+    const/16 v1, 0x16
+
+    const-string v6, ";"
+
+    aput-object v6, v0, v1
+
+    const/16 v1, 0x17
+
+    const-string v6, "<"
+
+    aput-object v6, v0, v1
+
+    const/16 v1, 0x18
+
+    const-string v6, "="
+
+    aput-object v6, v0, v1
+
+    const/16 v1, 0x19
+
+    const-string v6, ">"
+
+    aput-object v6, v0, v1
+
+    const/16 v1, 0x1a
+
+    const-string v6, "?"
+
+    aput-object v6, v0, v1
+
+    const/16 v1, 0x1b
+
+    const-string v6, "["
+
+    aput-object v6, v0, v1
+
+    const/16 v1, 0x1c
+
+    const-string v6, "]"
+
+    aput-object v6, v0, v1
+
+    const/16 v1, 0x1d
+
+    const-string v6, "{"
+
+    aput-object v6, v0, v1
+
+    const/16 v1, 0x1e
+
+    const-string v6, "}"
+
+    aput-object v6, v0, v1
+
+    const/16 v1, 0x1f
+
+    const-string v6, "CTRL_UL"
+
+    aput-object v6, v0, v1
 
     sput-object v0, Lcom/google/zxing/aztec/decoder/Decoder;->PUNCT_TABLE:[Ljava/lang/String;
 
     .line 67
-    const-string v15, "CTRL_UL"
+    new-array v0, v15, [Ljava/lang/String;
 
-    const-string v16, "CTRL_US"
+    aput-object v3, v0, v2
 
-    const-string v1, "CTRL_PS"
+    aput-object v5, v0, v4
 
-    const-string v2, " "
+    const-string v1, "0"
 
-    const-string v3, "0"
+    aput-object v1, v0, v7
 
-    const-string v4, "1"
+    const-string v1, "1"
 
-    const-string v5, "2"
+    aput-object v1, v0, v8
 
-    const-string v6, "3"
+    const-string v1, "2"
 
-    const-string v7, "4"
+    aput-object v1, v0, v9
 
-    const-string v8, "5"
+    const-string v1, "3"
 
-    const-string v9, "6"
+    aput-object v1, v0, v10
 
-    const-string v10, "7"
+    const-string v1, "4"
 
-    const-string v11, "8"
+    aput-object v1, v0, v11
 
-    const-string v12, "9"
+    const-string v1, "5"
 
-    const-string v13, ","
+    aput-object v1, v0, v12
 
-    const-string v14, "."
+    const-string v1, "6"
 
-    filled-new-array/range {v1 .. v16}, [Ljava/lang/String;
+    aput-object v1, v0, v13
 
-    move-result-object v0
+    const-string v1, "7"
+
+    aput-object v1, v0, v14
+
+    const-string v1, "8"
+
+    const/16 v2, 0xa
+
+    aput-object v1, v0, v2
+
+    const-string v1, "9"
+
+    aput-object v1, v0, v16
+
+    const-string v1, ","
+
+    aput-object v1, v0, v17
+
+    const-string v1, "."
+
+    aput-object v1, v0, v18
+
+    const-string v1, "CTRL_UL"
+
+    aput-object v1, v0, v19
+
+    const-string v1, "CTRL_US"
+
+    aput-object v1, v0, v20
 
     sput-object v0, Lcom/google/zxing/aztec/decoder/Decoder;->DIGIT_TABLE:[Ljava/lang/String;
 

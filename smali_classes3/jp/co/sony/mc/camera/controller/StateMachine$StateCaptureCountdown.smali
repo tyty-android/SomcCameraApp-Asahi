@@ -32,20 +32,20 @@
 .method private constructor <init>(Ljp/co/sony/mc/camera/controller/StateMachine;)V
     .locals 1
 
-    .line 3252
+    .line 3279
     iput-object p1, p0, Ljp/co/sony/mc/camera/controller/StateMachine$StateCaptureCountdown;->this$0:Ljp/co/sony/mc/camera/controller/StateMachine;
 
     const/4 v0, 0x0
 
-    .line 3253
+    .line 3280
     invoke-direct {p0, p1, v0}, Ljp/co/sony/mc/camera/controller/StateMachine$StatePhotoReady;-><init>(Ljp/co/sony/mc/camera/controller/StateMachine;Z)V
 
-    .line 3254
+    .line 3281
     sget-object p1, Ljp/co/sony/mc/camera/controller/StateMachine$CaptureState;->STATE_CAPTURE_COUNTDOWN:Ljp/co/sony/mc/camera/controller/StateMachine$CaptureState;
 
     iput-object p1, p0, Ljp/co/sony/mc/camera/controller/StateMachine$StateCaptureCountdown;->mCaptureState:Ljp/co/sony/mc/camera/controller/StateMachine$CaptureState;
 
-    .line 3255
+    .line 3282
     new-instance p1, Ljp/co/sony/mc/camera/controller/StateMachine$StateCaptureCountdown$LedLightImpl;
 
     const/4 v0, 0x0
@@ -68,35 +68,35 @@
 .method private recoverFlash()V
     .locals 2
 
-    .line 3259
+    .line 3286
     invoke-static {}, Ljp/co/sony/mc/camera/setting/CameraProSetting;->getInstance()Ljp/co/sony/mc/camera/setting/CameraProSetting;
 
     move-result-object v0
 
     sget-object v1, Ljp/co/sony/mc/camera/setting/CommonSettings;->CAMERA_ID:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
 
-    .line 3260
+    .line 3287
     invoke-virtual {v0, v1}, Ljp/co/sony/mc/camera/setting/CameraProSetting;->get(Ljp/co/sony/mc/camera/setting/SettingKey$Key;)Ljava/lang/Object;
 
     move-result-object v0
 
     check-cast v0, Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;
 
-    .line 3261
+    .line 3288
     invoke-virtual {v0}, Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;->isFront()Z
 
     move-result v0
 
     if-nez v0, :cond_0
 
-    .line 3262
+    .line 3289
     iget-object p0, p0, Ljp/co/sony/mc/camera/controller/StateMachine$StateCaptureCountdown;->this$0:Ljp/co/sony/mc/camera/controller/StateMachine;
 
     invoke-static {p0}, Ljp/co/sony/mc/camera/controller/StateMachine;->-$$Nest$fgetmCameraDeviceHandler(Ljp/co/sony/mc/camera/controller/StateMachine;)Ljp/co/sony/mc/camera/device/CameraDeviceHandler;
 
     move-result-object p0
 
-    .line 3263
+    .line 3290
     invoke-static {}, Ljp/co/sony/mc/camera/setting/CameraProSetting;->getInstance()Ljp/co/sony/mc/camera/setting/CameraProSetting;
 
     move-result-object v0
@@ -109,7 +109,7 @@
 
     check-cast v0, Ljp/co/sony/mc/camera/configuration/parameters/Flash;
 
-    .line 3262
+    .line 3289
     invoke-virtual {p0, v0}, Ljp/co/sony/mc/camera/device/CameraDeviceHandler;->setFlashModeAndCommit(Ljp/co/sony/mc/camera/configuration/parameters/Flash;)V
 
     :cond_0
@@ -127,12 +127,12 @@
 .method public exit()V
     .locals 1
 
-    .line 3275
+    .line 3302
     iget-object v0, p0, Ljp/co/sony/mc/camera/controller/StateMachine$StateCaptureCountdown;->this$0:Ljp/co/sony/mc/camera/controller/StateMachine;
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/controller/StateMachine;->-$$Nest$mstopPlaySound(Ljp/co/sony/mc/camera/controller/StateMachine;)V
 
-    .line 3276
+    .line 3303
     iget-object p0, p0, Ljp/co/sony/mc/camera/controller/StateMachine$StateCaptureCountdown;->mFeedback:Ljp/co/sony/mc/camera/controller/selftimerfeedback/SelfTimerFeedback;
 
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/controller/selftimerfeedback/SelfTimerFeedback;->stop()V
@@ -143,12 +143,12 @@
 .method public varargs handleCapture([Ljava/lang/Object;)V
     .locals 9
 
-    .line 3292
+    .line 3319
     invoke-direct {p0}, Ljp/co/sony/mc/camera/controller/StateMachine$StateCaptureCountdown;->recoverFlash()V
 
     const/4 v0, 0x2
 
-    .line 3293
+    .line 3320
     aget-object v0, p1, v0
 
     check-cast v0, Ljava/lang/Boolean;
@@ -157,7 +157,7 @@
 
     move-result v0
 
-    .line 3294
+    .line 3321
     iget-object v1, p0, Ljp/co/sony/mc/camera/controller/StateMachine$StateCaptureCountdown;->this$0:Ljp/co/sony/mc/camera/controller/StateMachine;
 
     invoke-static {v1}, Ljp/co/sony/mc/camera/controller/StateMachine;->-$$Nest$fgetmAutoFocusCallback(Ljp/co/sony/mc/camera/controller/StateMachine;)Ljp/co/sony/mc/camera/CameraAccessor$AutoFocusCallback;
@@ -170,7 +170,7 @@
 
     if-eqz v0, :cond_1
 
-    .line 3295
+    .line 3322
     const-class v0, Ljp/co/sony/mc/camera/CameraAccessor$RequestCaptureParam;
 
     const/4 v1, 0x0
@@ -187,7 +187,7 @@
 
     const/4 v0, 0x1
 
-    .line 3297
+    .line 3324
     const-class v3, Ljp/co/sony/mc/camera/CameraAccessor$CaptureCallback;
 
     invoke-static {p1, v0, v3, v2}, Ljp/co/sony/mc/camera/controller/StateMachine;->-$$Nest$smgetEventParam([Ljava/lang/Object;ILjava/lang/Class;Ljava/lang/Object;)Ljava/lang/Object;
@@ -204,7 +204,7 @@
 
     goto :goto_0
 
-    .line 3302
+    .line 3329
     :cond_0
     iget-object p1, p0, Ljp/co/sony/mc/camera/controller/StateMachine$StateCaptureCountdown;->this$0:Ljp/co/sony/mc/camera/controller/StateMachine;
 
@@ -240,12 +240,12 @@
 .method public varargs handleCaptureReady([Ljava/lang/Object;)V
     .locals 3
 
-    .line 3282
+    .line 3309
     invoke-direct {p0}, Ljp/co/sony/mc/camera/controller/StateMachine$StateCaptureCountdown;->recoverFlash()V
 
     const/4 v0, 0x1
 
-    .line 3283
+    .line 3310
     aget-object v0, p1, v0
 
     check-cast v0, Ljava/lang/Boolean;
@@ -254,7 +254,7 @@
 
     move-result v0
 
-    .line 3284
+    .line 3311
     iget-object v1, p0, Ljp/co/sony/mc/camera/controller/StateMachine$StateCaptureCountdown;->this$0:Ljp/co/sony/mc/camera/controller/StateMachine;
 
     const/4 v2, 0x0
@@ -269,7 +269,7 @@
 
     if-eqz v0, :cond_0
 
-    .line 3286
+    .line 3313
     iget-object v0, p0, Ljp/co/sony/mc/camera/controller/StateMachine$StateCaptureCountdown;->this$0:Ljp/co/sony/mc/camera/controller/StateMachine;
 
     new-instance v1, Ljp/co/sony/mc/camera/controller/StateMachine$StatePhotoAfSearch;
@@ -301,7 +301,7 @@
 .method public varargs handleOnHeatedOverCoolingUltraLow([Ljava/lang/Object;)V
     .locals 0
 
-    .line 3386
+    .line 3413
     iget-object p0, p0, Ljp/co/sony/mc/camera/controller/StateMachine$StateCaptureCountdown;->this$0:Ljp/co/sony/mc/camera/controller/StateMachine;
 
     invoke-static {p0}, Ljp/co/sony/mc/camera/controller/StateMachine;->-$$Nest$mnotifyCoolingUltraLow(Ljp/co/sony/mc/camera/controller/StateMachine;)V
@@ -312,10 +312,10 @@
 .method public varargs handlePause([Ljava/lang/Object;)V
     .locals 0
 
-    .line 3319
+    .line 3346
     invoke-direct {p0}, Ljp/co/sony/mc/camera/controller/StateMachine$StateCaptureCountdown;->recoverFlash()V
 
-    .line 3320
+    .line 3347
     invoke-super {p0, p1}, Ljp/co/sony/mc/camera/controller/StateMachine$StatePhotoReady;->handlePause([Ljava/lang/Object;)V
 
     return-void
@@ -324,10 +324,10 @@
 .method public varargs handleSelfTimerCancel([Ljava/lang/Object;)V
     .locals 0
 
-    .line 3380
+    .line 3407
     invoke-direct {p0}, Ljp/co/sony/mc/camera/controller/StateMachine$StateCaptureCountdown;->recoverFlash()V
 
-    .line 3381
+    .line 3408
     iget-object p0, p0, Ljp/co/sony/mc/camera/controller/StateMachine$StateCaptureCountdown;->this$0:Ljp/co/sony/mc/camera/controller/StateMachine;
 
     invoke-static {p0}, Ljp/co/sony/mc/camera/controller/StateMachine;->-$$Nest$mchangeToStandby(Ljp/co/sony/mc/camera/controller/StateMachine;)V
@@ -354,89 +354,91 @@
 .end method
 
 .method public varargs handleStorageError([Ljava/lang/Object;)V
-    .locals 3
+    .locals 6
 
-    .line 3325
+    .line 3352
     sget-boolean v0, Ljp/co/sony/mc/camera/util/CamLog;->DEBUG:Z
-
-    if-eqz v0, :cond_0
-
-    new-instance v0, Ljava/lang/StringBuilder;
-
-    const-string v1, "invoke checkSaveDestinationCanBeChange:"
-
-    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
-
-    iget-object v1, p0, Ljp/co/sony/mc/camera/controller/StateMachine$StateCaptureCountdown;->this$0:Ljp/co/sony/mc/camera/controller/StateMachine;
-
-    .line 3326
-    invoke-static {v1}, Ljp/co/sony/mc/camera/controller/StateMachine;->-$$Nest$mgetCurrentStorage(Ljp/co/sony/mc/camera/controller/StateMachine;)Ljp/co/sony/mc/camera/storage/Storage$StorageType;
-
-    move-result-object v2
-
-    invoke-static {v1, v2}, Ljp/co/sony/mc/camera/controller/StateMachine;->-$$Nest$mcheckSaveDestinationCanBeChange(Ljp/co/sony/mc/camera/controller/StateMachine;Ljp/co/sony/mc/camera/storage/Storage$StorageType;)Z
-
-    move-result v1
-
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
-
-    move-result-object v0
-
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v0
-
-    filled-new-array {v0}, [Ljava/lang/String;
-
-    move-result-object v0
-
-    .line 3325
-    invoke-static {v0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
-
-    :cond_0
-    const/4 v0, 0x0
-
-    .line 3327
-    aget-object v0, p1, v0
-
-    check-cast v0, Ljp/co/sony/mc/camera/storage/Storage$StorageType;
 
     const/4 v1, 0x1
 
-    .line 3328
-    aget-object v1, p1, v1
+    const/4 v2, 0x0
 
-    check-cast v1, Ljp/co/sony/mc/camera/storage/Storage$StorageState;
+    if-eqz v0, :cond_0
 
-    .line 3330
-    sget-object v2, Ljp/co/sony/mc/camera/storage/Storage$StorageState;->CORRUPT:Ljp/co/sony/mc/camera/storage/Storage$StorageState;
+    new-array v0, v1, [Ljava/lang/String;
 
-    if-ne v1, v2, :cond_2
+    new-instance v3, Ljava/lang/StringBuilder;
 
-    .line 3337
-    new-instance v1, Ljava/lang/StringBuilder;
+    const-string v4, "invoke checkSaveDestinationCanBeChange:"
 
-    const-string v2, "Storage corruption : type = "
+    invoke-direct {v3, v4}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
-    invoke-direct {v1, v2}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+    iget-object v4, p0, Ljp/co/sony/mc/camera/controller/StateMachine$StateCaptureCountdown;->this$0:Ljp/co/sony/mc/camera/controller/StateMachine;
 
-    invoke-virtual {v1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+    .line 3353
+    invoke-static {v4}, Ljp/co/sony/mc/camera/controller/StateMachine;->-$$Nest$mgetCurrentStorage(Ljp/co/sony/mc/camera/controller/StateMachine;)Ljp/co/sony/mc/camera/storage/Storage$StorageType;
+
+    move-result-object v5
+
+    invoke-static {v4, v5}, Ljp/co/sony/mc/camera/controller/StateMachine;->-$$Nest$mcheckSaveDestinationCanBeChange(Ljp/co/sony/mc/camera/controller/StateMachine;Ljp/co/sony/mc/camera/storage/Storage$StorageType;)Z
+
+    move-result v4
+
+    invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
+
+    move-result-object v3
+
+    invoke-virtual {v3}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v3
+
+    aput-object v3, v0, v2
+
+    .line 3352
+    invoke-static {v0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
+
+    .line 3354
+    :cond_0
+    aget-object v0, p1, v2
+
+    check-cast v0, Ljp/co/sony/mc/camera/storage/Storage$StorageType;
+
+    .line 3355
+    aget-object v3, p1, v1
+
+    check-cast v3, Ljp/co/sony/mc/camera/storage/Storage$StorageState;
+
+    .line 3357
+    sget-object v4, Ljp/co/sony/mc/camera/storage/Storage$StorageState;->CORRUPT:Ljp/co/sony/mc/camera/storage/Storage$StorageState;
+
+    if-ne v3, v4, :cond_2
+
+    .line 3364
+    new-array v1, v1, [Ljava/lang/String;
+
+    new-instance v3, Ljava/lang/StringBuilder;
+
+    const-string v4, "Storage corruption : type = "
+
+    invoke-direct {v3, v4}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+
+    invoke-virtual {v3, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
     move-result-object v0
 
-    const-string v1, ", state = "
+    const-string v3, ", state = "
 
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v0, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v0
 
-    iget-object v1, p0, Ljp/co/sony/mc/camera/controller/StateMachine$StateCaptureCountdown;->this$0:Ljp/co/sony/mc/camera/controller/StateMachine;
+    iget-object v3, p0, Ljp/co/sony/mc/camera/controller/StateMachine$StateCaptureCountdown;->this$0:Ljp/co/sony/mc/camera/controller/StateMachine;
 
-    invoke-static {v1}, Ljp/co/sony/mc/camera/controller/StateMachine;->-$$Nest$fgetmCurrentState(Ljp/co/sony/mc/camera/controller/StateMachine;)Ljp/co/sony/mc/camera/controller/StateMachine$State;
+    invoke-static {v3}, Ljp/co/sony/mc/camera/controller/StateMachine;->-$$Nest$fgetmCurrentState(Ljp/co/sony/mc/camera/controller/StateMachine;)Ljp/co/sony/mc/camera/controller/StateMachine$State;
 
-    move-result-object v1
+    move-result-object v3
 
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+    invoke-virtual {v0, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
     move-result-object v0
 
@@ -444,13 +446,11 @@
 
     move-result-object v0
 
-    filled-new-array {v0}, [Ljava/lang/String;
+    aput-object v0, v1, v2
 
-    move-result-object v0
+    invoke-static {v1}, Ljp/co/sony/mc/camera/util/CamLog;->w([Ljava/lang/String;)V
 
-    invoke-static {v0}, Ljp/co/sony/mc/camera/util/CamLog;->w([Ljava/lang/String;)V
-
-    .line 3338
+    .line 3365
     sget-boolean v0, Ljp/co/sony/mc/camera/util/CamLog;->DEBUG:Z
 
     if-nez v0, :cond_1
@@ -464,12 +464,12 @@
 
     throw p0
 
-    .line 3341
+    .line 3368
     :cond_2
     :goto_0
     invoke-direct {p0}, Ljp/co/sony/mc/camera/controller/StateMachine$StateCaptureCountdown;->recoverFlash()V
 
-    .line 3342
+    .line 3369
     iget-object v0, p0, Ljp/co/sony/mc/camera/controller/StateMachine$StateCaptureCountdown;->this$0:Ljp/co/sony/mc/camera/controller/StateMachine;
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/controller/StateMachine;->-$$Nest$fgetmStorage(Ljp/co/sony/mc/camera/controller/StateMachine;)Ljp/co/sony/mc/camera/storage/Storage;
@@ -484,7 +484,7 @@
 
     iget-object v0, p0, Ljp/co/sony/mc/camera/controller/StateMachine$StateCaptureCountdown;->this$0:Ljp/co/sony/mc/camera/controller/StateMachine;
 
-    .line 3343
+    .line 3370
     invoke-static {v0}, Ljp/co/sony/mc/camera/controller/StateMachine;->-$$Nest$mgetCurrentStorage(Ljp/co/sony/mc/camera/controller/StateMachine;)Ljp/co/sony/mc/camera/storage/Storage$StorageType;
 
     move-result-object v1
@@ -495,7 +495,7 @@
 
     if-nez v0, :cond_3
 
-    .line 3344
+    .line 3371
     iget-object v0, p0, Ljp/co/sony/mc/camera/controller/StateMachine$StateCaptureCountdown;->this$0:Ljp/co/sony/mc/camera/controller/StateMachine;
 
     new-instance v1, Ljp/co/sony/mc/camera/controller/StateMachine$StateWarning;
@@ -510,7 +510,7 @@
 
     goto :goto_1
 
-    .line 3346
+    .line 3373
     :cond_3
     iget-object p0, p0, Ljp/co/sony/mc/camera/controller/StateMachine$StateCaptureCountdown;->this$0:Ljp/co/sony/mc/camera/controller/StateMachine;
 

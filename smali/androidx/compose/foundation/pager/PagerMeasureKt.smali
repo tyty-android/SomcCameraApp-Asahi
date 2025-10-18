@@ -5,21 +5,32 @@
 
 # annotations
 .annotation system Ldalvik/annotation/SourceDebugExtension;
-    value = "SMAP\nPagerMeasure.kt\nKotlin\n*S Kotlin\n*F\n+ 1 PagerMeasure.kt\nandroidx/compose/foundation/pager/PagerMeasureKt\n+ 2 ListUtils.kt\nandroidx/compose/ui/util/ListUtilsKt\n+ 3 TempListUtils.kt\nandroidx/compose/foundation/TempListUtilsKt\n+ 4 fake.kt\nkotlin/jvm/internal/FakeKt\n*L\n1#1,581:1\n578#1,4:582\n33#2,6:586\n33#2,6:592\n33#2,6:598\n33#2,4:607\n38#2:613\n171#2,13:615\n33#2,6:628\n33#2,6:634\n33#2,6:641\n33#2,6:647\n33#2,6:653\n36#3,3:604\n39#3,2:611\n41#3:614\n1#4:640\n*S KotlinDebug\n*F\n+ 1 PagerMeasure.kt\nandroidx/compose/foundation/pager/PagerMeasureKt\n*L\n65#1:582,4\n174#1:586,6\n302#1:592,6\n328#1:598,6\n368#1:607,4\n368#1:613\n373#1:615,13\n427#1:628,6\n452#1:634,6\n554#1:641,6\n561#1:647,6\n567#1:653,6\n368#1:604,3\n368#1:611,2\n368#1:614\n*E\n"
+    value = "SMAP\nPagerMeasure.kt\nKotlin\n*S Kotlin\n*F\n+ 1 PagerMeasure.kt\nandroidx/compose/foundation/pager/PagerMeasureKt\n+ 2 fake.kt\nkotlin/jvm/internal/FakeKt\n+ 3 ListUtils.kt\nandroidx/compose/ui/util/ListUtilsKt\n*L\n1#1,631:1\n627#1,4:633\n627#1,4:660\n1#2:632\n33#3,6:637\n33#3,6:643\n235#3,3:649\n33#3,4:652\n238#3,2:656\n38#3:658\n240#3:659\n33#3,6:664\n33#3,6:670\n171#3,13:676\n33#3,6:689\n33#3,6:695\n33#3,6:701\n*S KotlinDebug\n*F\n+ 1 PagerMeasure.kt\nandroidx/compose/foundation/pager/PagerMeasureKt\n*L\n66#1:633,4\n402#1:660,4\n312#1:637,6\n338#1:643,6\n378#1:649,3\n378#1:652,4\n378#1:656,2\n378#1:658\n378#1:659\n449#1:664,6\n474#1:670,6\n493#1:676,13\n600#1:689,6\n607#1:695,6\n613#1:701,6\n*E\n"
 .end annotation
 
 .annotation runtime Lkotlin/Metadata;
     d1 = {
-        "\u0000\u0098\u0001\n\u0000\n\u0002\u0010\u000b\n\u0000\n\u0002\u0010 \n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0008\n\u0002\u0008\u0004\n\u0002\u0018\u0002\n\u0002\u0008\u0003\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0010\u000e\n\u0000\n\u0002\u0010!\n\u0002\u0018\u0002\n\u0002\u0008\t\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0004\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0003\n\u0002\u0018\u0002\n\u0002\u0008\u0007\n\u0002\u0010\u0007\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0003\u001aH\u0010\u0002\u001a\u0008\u0012\u0004\u0012\u00020\u00040\u00032\u0006\u0010\u0005\u001a\u00020\u00062\u0006\u0010\u0007\u001a\u00020\u00062\u0006\u0010\u0008\u001a\u00020\u00062\u000c\u0010\t\u001a\u0008\u0012\u0004\u0012\u00020\u00060\u00032\u0012\u0010\n\u001a\u000e\u0012\u0004\u0012\u00020\u0006\u0012\u0004\u0012\u00020\u00040\u000bH\u0002\u001a@\u0010\u000c\u001a\u0008\u0012\u0004\u0012\u00020\u00040\u00032\u0006\u0010\r\u001a\u00020\u00062\u0006\u0010\u0008\u001a\u00020\u00062\u000c\u0010\t\u001a\u0008\u0012\u0004\u0012\u00020\u00060\u00032\u0012\u0010\n\u001a\u000e\u0012\u0004\u0012\u00020\u0006\u0012\u0004\u0012\u00020\u00040\u000bH\u0002\u001a\u0017\u0010\u000e\u001a\u00020\u000f2\u000c\u0010\u0010\u001a\u0008\u0012\u0004\u0012\u00020\u00120\u0011H\u0082\u0008\u001a\u008c\u0001\u0010\u0013\u001a\u0008\u0012\u0004\u0012\u00020\u00040\u0014*\u00020\u00152\u000c\u0010\u0016\u001a\u0008\u0012\u0004\u0012\u00020\u00040\u00032\u000c\u0010\u0017\u001a\u0008\u0012\u0004\u0012\u00020\u00040\u00032\u000c\u0010\u0018\u001a\u0008\u0012\u0004\u0012\u00020\u00040\u00032\u0006\u0010\u0019\u001a\u00020\u00062\u0006\u0010\u001a\u001a\u00020\u00062\u0006\u0010\u001b\u001a\u00020\u00062\u0006\u0010\u001c\u001a\u00020\u00062\u0006\u0010\u001d\u001a\u00020\u00062\u0006\u0010\u001e\u001a\u00020\u001f2\u0006\u0010 \u001a\u00020\u00012\u0006\u0010!\u001a\u00020\"2\u0006\u0010#\u001a\u00020\u00062\u0006\u0010$\u001a\u00020\u0006H\u0002\u001am\u0010\n\u001a\u00020\u0004*\u00020\u00152\u0006\u0010%\u001a\u00020\u00062\u0006\u0010&\u001a\u00020\'2\u0006\u0010(\u001a\u00020)2\u0006\u0010*\u001a\u00020+2\u0006\u0010\u001e\u001a\u00020\u001f2\u0008\u0010,\u001a\u0004\u0018\u00010-2\u0008\u0010.\u001a\u0004\u0018\u00010/2\u0006\u00100\u001a\u0002012\u0006\u0010 \u001a\u00020\u00012\u0006\u0010$\u001a\u00020\u0006H\u0002\u00f8\u0001\u0000\u00f8\u0001\u0001\u00a2\u0006\u0004\u00082\u00103\u001a\u00e4\u0001\u00104\u001a\u000205*\u00020\u00152\u0006\u00106\u001a\u00020\u00062\u0006\u0010(\u001a\u00020)2\u0006\u00107\u001a\u00020\u00062\u0006\u00108\u001a\u00020\u00062\u0006\u00109\u001a\u00020\u00062\u0006\u0010#\u001a\u00020\u00062\u0006\u0010:\u001a\u00020\u00062\u0006\u0010;\u001a\u00020\u00062\u0006\u0010<\u001a\u00020=2\u0006\u0010>\u001a\u00020\'2\u0006\u0010\u001e\u001a\u00020\u001f2\u0008\u0010.\u001a\u0004\u0018\u00010/2\u0008\u0010,\u001a\u0004\u0018\u00010-2\u0006\u0010 \u001a\u00020\u00012\u0006\u0010*\u001a\u00020+2\u0006\u0010$\u001a\u00020\u00062\u0006\u0010\u0008\u001a\u00020\u00062\u000c\u0010\t\u001a\u0008\u0012\u0004\u0012\u00020\u00060\u00032/\u0010?\u001a+\u0012\u0004\u0012\u00020\u0006\u0012\u0004\u0012\u00020\u0006\u0012\u0015\u0012\u0013\u0012\u0004\u0012\u00020A\u0012\u0004\u0012\u00020\u000f0\u000b\u00a2\u0006\u0002\u0008B\u0012\u0004\u0012\u00020C0@H\u0000\u00f8\u0001\u0000\u00f8\u0001\u0001\u00a2\u0006\u0004\u0008D\u0010E\"\u000e\u0010\u0000\u001a\u00020\u0001X\u0082T\u00a2\u0006\u0002\n\u0000\u0082\u0002\u000b\n\u0005\u0008\u00a1\u001e0\u0001\n\u0002\u0008\u0019\u00a8\u0006F"
+        "\u0000\u00a8\u0001\n\u0000\n\u0002\u0010\u000b\n\u0000\n\u0002\u0010\u0007\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0008\n\u0000\n\u0002\u0010 \n\u0002\u0008\u0004\n\u0002\u0018\u0002\n\u0002\u0008\u0006\n\u0002\u0018\u0002\n\u0002\u0008\u0003\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0010\u000e\n\u0000\n\u0002\u0010!\n\u0002\u0018\u0002\n\u0002\u0008\t\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0004\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0003\n\u0002\u0018\u0002\n\u0002\u0008\u0006\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0003\u001a@\u0010\u0005\u001a\u0004\u0018\u00010\u00062\u0006\u0010\u0007\u001a\u00020\u00082\u000c\u0010\t\u001a\u0008\u0012\u0004\u0012\u00020\u00060\n2\u0006\u0010\u000b\u001a\u00020\u00082\u0006\u0010\u000c\u001a\u00020\u00082\u0006\u0010\r\u001a\u00020\u00082\u0006\u0010\u000e\u001a\u00020\u000fH\u0002\u001aH\u0010\u0010\u001a\u0008\u0012\u0004\u0012\u00020\u00060\n2\u0006\u0010\u0011\u001a\u00020\u00082\u0006\u0010\u0012\u001a\u00020\u00082\u0006\u0010\u0013\u001a\u00020\u00082\u000c\u0010\u0014\u001a\u0008\u0012\u0004\u0012\u00020\u00080\n2\u0012\u0010\u0015\u001a\u000e\u0012\u0004\u0012\u00020\u0008\u0012\u0004\u0012\u00020\u00060\u0016H\u0002\u001a@\u0010\u0017\u001a\u0008\u0012\u0004\u0012\u00020\u00060\n2\u0006\u0010\u0018\u001a\u00020\u00082\u0006\u0010\u0013\u001a\u00020\u00082\u000c\u0010\u0014\u001a\u0008\u0012\u0004\u0012\u00020\u00080\n2\u0012\u0010\u0015\u001a\u000e\u0012\u0004\u0012\u00020\u0008\u0012\u0004\u0012\u00020\u00060\u0016H\u0002\u001a\u0017\u0010\u0019\u001a\u00020\u001a2\u000c\u0010\u001b\u001a\u0008\u0012\u0004\u0012\u00020\u001d0\u001cH\u0082\u0008\u001a\u008c\u0001\u0010\u001e\u001a\u0008\u0012\u0004\u0012\u00020\u00060\u001f*\u00020 2\u000c\u0010!\u001a\u0008\u0012\u0004\u0012\u00020\u00060\n2\u000c\u0010\"\u001a\u0008\u0012\u0004\u0012\u00020\u00060\n2\u000c\u0010#\u001a\u0008\u0012\u0004\u0012\u00020\u00060\n2\u0006\u0010$\u001a\u00020\u00082\u0006\u0010%\u001a\u00020\u00082\u0006\u0010&\u001a\u00020\u00082\u0006\u0010\'\u001a\u00020\u00082\u0006\u0010(\u001a\u00020\u00082\u0006\u0010)\u001a\u00020*2\u0006\u0010+\u001a\u00020\u00012\u0006\u0010,\u001a\u00020-2\u0006\u0010.\u001a\u00020\u00082\u0006\u0010/\u001a\u00020\u0008H\u0002\u001aj\u0010\u0015\u001a\u00020\u0006*\u00020 2\u0006\u00100\u001a\u00020\u00082\u0006\u00101\u001a\u0002022\u0006\u00103\u001a\u0002042\u0006\u00105\u001a\u0002062\u0006\u0010)\u001a\u00020*2\u0008\u00107\u001a\u0004\u0018\u0001082\u0008\u00109\u001a\u0004\u0018\u00010:2\u0006\u0010;\u001a\u00020<2\u0006\u0010+\u001a\u00020\u00012\u0006\u0010/\u001a\u00020\u0008H\u0002\u00f8\u0001\u0000\u00a2\u0006\u0004\u0008=\u0010>\u001a\u00e9\u0001\u0010?\u001a\u00020@*\u00020 2\u0006\u0010A\u001a\u00020\u00082\u0006\u00103\u001a\u0002042\u0006\u0010B\u001a\u00020\u00082\u0006\u0010\u000b\u001a\u00020\u00082\u0006\u0010\u000c\u001a\u00020\u00082\u0006\u0010.\u001a\u00020\u00082\u0006\u0010C\u001a\u00020\u00082\u0006\u0010D\u001a\u00020\u00082\u0006\u0010E\u001a\u0002022\u0006\u0010)\u001a\u00020*2\u0008\u00109\u001a\u0004\u0018\u00010:2\u0008\u00107\u001a\u0004\u0018\u0001082\u0006\u0010+\u001a\u00020\u00012\u0006\u00105\u001a\u0002062\u0006\u0010/\u001a\u00020\u00082\u0006\u0010\u0013\u001a\u00020\u00082\u000c\u0010\u0014\u001a\u0008\u0012\u0004\u0012\u00020\u00080\n2\u0006\u0010\u000e\u001a\u00020\u000f2\u0006\u0010F\u001a\u00020G2/\u0010H\u001a+\u0012\u0004\u0012\u00020\u0008\u0012\u0004\u0012\u00020\u0008\u0012\u0015\u0012\u0013\u0012\u0004\u0012\u00020J\u0012\u0004\u0012\u00020\u001a0\u0016\u00a2\u0006\u0002\u0008K\u0012\u0004\u0012\u00020L0IH\u0000\u00f8\u0001\u0000\u00a2\u0006\u0004\u0008M\u0010N\"\u000e\u0010\u0000\u001a\u00020\u0001X\u0082T\u00a2\u0006\u0002\n\u0000\"\u000e\u0010\u0002\u001a\u00020\u0003X\u0080T\u00a2\u0006\u0002\n\u0000\"\u000e\u0010\u0004\u001a\u00020\u0003X\u0080T\u00a2\u0006\u0002\n\u0000\u0082\u0002\u0007\n\u0005\u0008\u00a1\u001e0\u0001\u00a8\u0006O"
     }
     d2 = {
         "DEBUG",
         "",
-        "createPagesAfterList",
+        "MaxPageOffset",
         "",
+        "MinPageOffset",
+        "calculateNewCurrentPage",
         "Landroidx/compose/foundation/pager/MeasuredPage;",
-        "currentLastPage",
+        "viewportSize",
         "",
+        "visiblePagesInfo",
+        "",
+        "beforeContentPadding",
+        "afterContentPadding",
+        "itemSize",
+        "snapPositionInLayout",
+        "Landroidx/compose/foundation/gestures/snapping/SnapPositionInLayout;",
+        "createPagesAfterList",
+        "currentLastPage",
         "pagesCount",
         "beyondBoundsPageCount",
         "pinnedPages",
@@ -69,20 +80,18 @@
         "Landroidx/compose/foundation/pager/PagerMeasureResult;",
         "pageCount",
         "mainAxisAvailableSize",
-        "beforeContentPadding",
-        "afterContentPadding",
-        "firstVisiblePage",
-        "firstVisiblePageOffset",
-        "scrollToBeConsumed",
-        "",
+        "currentPage",
+        "currentPageOffset",
         "constraints",
+        "placementScopeInvalidator",
+        "Landroidx/compose/foundation/lazy/layout/ObservableScopeInvalidator;",
         "layout",
         "Lkotlin/Function3;",
         "Landroidx/compose/ui/layout/Placeable$PlacementScope;",
         "Lkotlin/ExtensionFunctionType;",
         "Landroidx/compose/ui/layout/MeasureResult;",
-        "measurePager-ntgEbfI",
-        "(Landroidx/compose/foundation/lazy/layout/LazyLayoutMeasureScope;ILandroidx/compose/foundation/pager/PagerLazyLayoutItemProvider;IIIIIIFJLandroidx/compose/foundation/gestures/Orientation;Landroidx/compose/ui/Alignment$Vertical;Landroidx/compose/ui/Alignment$Horizontal;ZJIILjava/util/List;Lkotlin/jvm/functions/Function3;)Landroidx/compose/foundation/pager/PagerMeasureResult;",
+        "measurePager-_JDW0YA",
+        "(Landroidx/compose/foundation/lazy/layout/LazyLayoutMeasureScope;ILandroidx/compose/foundation/pager/PagerLazyLayoutItemProvider;IIIIIIJLandroidx/compose/foundation/gestures/Orientation;Landroidx/compose/ui/Alignment$Vertical;Landroidx/compose/ui/Alignment$Horizontal;ZJIILjava/util/List;Landroidx/compose/foundation/gestures/snapping/SnapPositionInLayout;Landroidx/compose/runtime/MutableState;Lkotlin/jvm/functions/Function3;)Landroidx/compose/foundation/pager/PagerMeasureResult;",
         "foundation_release"
     }
     k = 0x2
@@ -98,6 +107,10 @@
 # static fields
 .field private static final DEBUG:Z = false
 
+.field public static final MaxPageOffset:F = 0.5f
+
+.field public static final MinPageOffset:F = -0.5f
+
 
 # direct methods
 .method public static final synthetic access$getAndMeasure-SGf7dI0(Landroidx/compose/foundation/lazy/layout/LazyLayoutMeasureScope;IJLandroidx/compose/foundation/pager/PagerLazyLayoutItemProvider;JLandroidx/compose/foundation/gestures/Orientation;Landroidx/compose/ui/Alignment$Horizontal;Landroidx/compose/ui/Alignment$Vertical;Landroidx/compose/ui/unit/LayoutDirection;ZI)Landroidx/compose/foundation/pager/MeasuredPage;
@@ -109,6 +122,156 @@
     move-result-object p0
 
     return-object p0
+.end method
+
+.method private static final calculateNewCurrentPage(ILjava/util/List;IIILandroidx/compose/foundation/gestures/snapping/SnapPositionInLayout;)Landroidx/compose/foundation/pager/MeasuredPage;
+    .locals 14
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(I",
+            "Ljava/util/List<",
+            "Landroidx/compose/foundation/pager/MeasuredPage;",
+            ">;III",
+            "Landroidx/compose/foundation/gestures/snapping/SnapPositionInLayout;",
+            ")",
+            "Landroidx/compose/foundation/pager/MeasuredPage;"
+        }
+    .end annotation
+
+    move-object v0, p1
+
+    .line 677
+    invoke-interface {p1}, Ljava/util/List;->isEmpty()Z
+
+    move-result v1
+
+    if-eqz v1, :cond_0
+
+    const/4 v0, 0x0
+
+    goto :goto_1
+
+    :cond_0
+    const/4 v1, 0x0
+
+    .line 678
+    invoke-interface {p1, v1}, Ljava/util/List;->get(I)Ljava/lang/Object;
+
+    move-result-object v1
+
+    .line 679
+    move-object v2, v1
+
+    check-cast v2, Landroidx/compose/foundation/pager/MeasuredPage;
+
+    .line 500
+    invoke-virtual {v2}, Landroidx/compose/foundation/pager/MeasuredPage;->getOffset()I
+
+    move-result v7
+
+    .line 501
+    invoke-virtual {v2}, Landroidx/compose/foundation/pager/MeasuredPage;->getIndex()I
+
+    move-result v8
+
+    move v3, p0
+
+    move/from16 v4, p2
+
+    move/from16 v5, p3
+
+    move/from16 v6, p4
+
+    move-object/from16 v9, p5
+
+    .line 495
+    invoke-static/range {v3 .. v9}, Landroidx/compose/foundation/gestures/snapping/SnapPositionInLayoutKt;->calculateDistanceToDesiredSnapPosition(IIIIIILandroidx/compose/foundation/gestures/snapping/SnapPositionInLayout;)F
+
+    move-result v2
+
+    invoke-static {v2}, Ljava/lang/Math;->abs(F)F
+
+    move-result v2
+
+    neg-float v2, v2
+
+    .line 680
+    invoke-static {p1}, Lkotlin/collections/CollectionsKt;->getLastIndex(Ljava/util/List;)I
+
+    move-result v3
+
+    const/4 v4, 0x1
+
+    if-gt v4, v3, :cond_2
+
+    .line 681
+    :goto_0
+    invoke-interface {p1, v4}, Ljava/util/List;->get(I)Ljava/lang/Object;
+
+    move-result-object v5
+
+    .line 682
+    move-object v6, v5
+
+    check-cast v6, Landroidx/compose/foundation/pager/MeasuredPage;
+
+    .line 500
+    invoke-virtual {v6}, Landroidx/compose/foundation/pager/MeasuredPage;->getOffset()I
+
+    move-result v11
+
+    .line 501
+    invoke-virtual {v6}, Landroidx/compose/foundation/pager/MeasuredPage;->getIndex()I
+
+    move-result v12
+
+    move v7, p0
+
+    move/from16 v8, p2
+
+    move/from16 v9, p3
+
+    move/from16 v10, p4
+
+    move-object/from16 v13, p5
+
+    .line 495
+    invoke-static/range {v7 .. v13}, Landroidx/compose/foundation/gestures/snapping/SnapPositionInLayoutKt;->calculateDistanceToDesiredSnapPosition(IIIIIILandroidx/compose/foundation/gestures/snapping/SnapPositionInLayout;)F
+
+    move-result v6
+
+    invoke-static {v6}, Ljava/lang/Math;->abs(F)F
+
+    move-result v6
+
+    neg-float v6, v6
+
+    .line 683
+    invoke-static {v2, v6}, Ljava/lang/Float;->compare(FF)I
+
+    move-result v7
+
+    if-gez v7, :cond_1
+
+    move-object v1, v5
+
+    move v2, v6
+
+    :cond_1
+    if-eq v4, v3, :cond_2
+
+    add-int/lit8 v4, v4, 0x1
+
+    goto :goto_0
+
+    :cond_2
+    move-object v0, v1
+
+    .line 688
+    :goto_1
+    check-cast v0, Landroidx/compose/foundation/pager/MeasuredPage;
+
+    return-object v0
 .end method
 
 .method private static final calculatePagesOffsets(Landroidx/compose/foundation/lazy/layout/LazyLayoutMeasureScope;Ljava/util/List;Ljava/util/List;Ljava/util/List;IIIIILandroidx/compose/foundation/gestures/Orientation;ZLandroidx/compose/ui/unit/Density;II)Ljava/util/List;
@@ -142,267 +305,281 @@
 
     move/from16 v2, p5
 
-    move-object/from16 v3, p9
+    move/from16 v3, p8
 
-    move/from16 v4, p10
+    move-object/from16 v4, p9
 
-    move/from16 v5, p13
+    move/from16 v5, p10
 
-    add-int v6, v5, p12
+    move/from16 v6, p12
 
-    .line 509
-    sget-object v7, Landroidx/compose/foundation/gestures/Orientation;->Vertical:Landroidx/compose/foundation/gestures/Orientation;
+    add-int v7, p13, v6
 
-    if-ne v3, v7, :cond_0
+    .line 555
+    sget-object v8, Landroidx/compose/foundation/gestures/Orientation;->Vertical:Landroidx/compose/foundation/gestures/Orientation;
 
-    move/from16 v7, p7
+    if-ne v4, v8, :cond_0
 
-    move v13, v2
+    move/from16 v8, p7
+
+    move v14, v2
 
     goto :goto_0
 
     :cond_0
-    move/from16 v7, p7
+    move/from16 v8, p7
 
-    move v13, v1
+    move v14, v1
 
-    .line 510
+    .line 556
     :goto_0
-    invoke-static {v13, v7}, Ljava/lang/Math;->min(II)I
+    invoke-static {v14, v8}, Ljava/lang/Math;->min(II)I
 
-    move-result v7
+    move-result v8
 
-    const/4 v8, 0x0
+    const/4 v9, 0x0
 
-    move/from16 v9, p6
+    move/from16 v10, p6
 
-    if-ge v9, v7, :cond_1
+    if-ge v10, v8, :cond_1
 
-    const/4 v7, 0x1
+    const/4 v8, 0x1
 
     goto :goto_1
 
     :cond_1
-    move v7, v8
+    move v8, v9
 
     :goto_1
-    if-eqz v7, :cond_3
+    if-eqz v8, :cond_3
 
-    if-nez p8, :cond_2
+    if-nez v3, :cond_2
 
     goto :goto_2
 
-    .line 512
+    .line 558
     :cond_2
-    new-instance v0, Ljava/lang/IllegalStateException;
+    new-instance v0, Ljava/lang/StringBuilder;
 
-    const-string v1, "Check failed."
+    const-string v1, "non-zero pagesScrollOffset="
 
-    invoke-virtual {v1}, Ljava/lang/Object;->toString()Ljava/lang/String;
+    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
-    move-result-object v1
+    invoke-virtual {v0, v3}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
-    invoke-direct {v0, v1}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
+    move-result-object v0
 
-    throw v0
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    .line 515
+    move-result-object v0
+
+    new-instance v1, Ljava/lang/IllegalStateException;
+
+    invoke-virtual {v0}, Ljava/lang/Object;->toString()Ljava/lang/String;
+
+    move-result-object v0
+
+    invoke-direct {v1, v0}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
+
+    throw v1
+
+    .line 561
     :cond_3
     :goto_2
-    new-instance v14, Ljava/util/ArrayList;
+    new-instance v15, Ljava/util/ArrayList;
 
     invoke-interface/range {p1 .. p1}, Ljava/util/List;->size()I
 
-    move-result v9
+    move-result v10
 
     invoke-interface/range {p2 .. p2}, Ljava/util/List;->size()I
 
-    move-result v10
+    move-result v11
 
-    add-int/2addr v9, v10
+    add-int/2addr v10, v11
 
     invoke-interface/range {p3 .. p3}, Ljava/util/List;->size()I
 
-    move-result v10
+    move-result v11
 
-    add-int/2addr v9, v10
+    add-int/2addr v10, v11
 
-    invoke-direct {v14, v9}, Ljava/util/ArrayList;-><init>(I)V
+    invoke-direct {v15, v10}, Ljava/util/ArrayList;-><init>(I)V
 
-    if-eqz v7, :cond_c
+    if-eqz v8, :cond_c
 
-    .line 518
+    .line 564
     invoke-interface/range {p2 .. p2}, Ljava/util/List;->isEmpty()Z
 
-    move-result v6
+    move-result v3
 
-    if-eqz v6, :cond_b
+    if-eqz v3, :cond_b
 
     invoke-interface/range {p3 .. p3}, Ljava/util/List;->isEmpty()Z
 
-    move-result v6
+    move-result v3
 
-    if-eqz v6, :cond_b
+    if-eqz v3, :cond_b
 
-    .line 520
+    .line 566
     invoke-interface/range {p1 .. p1}, Ljava/util/List;->size()I
 
-    move-result v6
+    move-result v3
 
-    .line 524
-    new-array v10, v6, [I
+    .line 570
+    new-array v11, v3, [I
 
-    move v7, v8
+    move v7, v9
 
     :goto_3
-    if-ge v7, v6, :cond_4
+    if-ge v7, v3, :cond_4
 
-    aput v5, v10, v7
+    aput p13, v11, v7
 
     add-int/lit8 v7, v7, 0x1
 
     goto :goto_3
 
-    .line 525
+    .line 571
     :cond_4
-    new-array v15, v6, [I
+    new-array v7, v3, [I
 
-    move v7, v8
+    move v8, v9
 
     :goto_4
-    if-ge v7, v6, :cond_5
+    if-ge v8, v3, :cond_5
 
-    aput v8, v15, v7
+    aput v9, v7, v8
 
-    add-int/lit8 v7, v7, 0x1
+    add-int/lit8 v8, v8, 0x1
 
     goto :goto_4
 
-    .line 527
+    .line 573
     :cond_5
-    sget-object v7, Landroidx/compose/foundation/layout/Arrangement$Absolute;->INSTANCE:Landroidx/compose/foundation/layout/Arrangement$Absolute;
+    sget-object v8, Landroidx/compose/foundation/layout/Arrangement$Absolute;->INSTANCE:Landroidx/compose/foundation/layout/Arrangement$Absolute;
 
-    move-object/from16 v8, p0
+    move-object/from16 v9, p0
 
-    invoke-interface {v8, v5}, Landroidx/compose/foundation/lazy/layout/LazyLayoutMeasureScope;->toDp-u2uoSUM(I)F
+    invoke-interface {v9, v6}, Landroidx/compose/foundation/lazy/layout/LazyLayoutMeasureScope;->toDp-u2uoSUM(I)F
 
-    move-result v5
+    move-result v6
 
-    invoke-virtual {v7, v5}, Landroidx/compose/foundation/layout/Arrangement$Absolute;->spacedBy-0680j_4(F)Landroidx/compose/foundation/layout/Arrangement$HorizontalOrVertical;
+    invoke-virtual {v8, v6}, Landroidx/compose/foundation/layout/Arrangement$Absolute;->spacedBy-0680j_4(F)Landroidx/compose/foundation/layout/Arrangement$HorizontalOrVertical;
 
-    move-result-object v7
+    move-result-object v8
 
-    .line 528
-    sget-object v5, Landroidx/compose/foundation/gestures/Orientation;->Vertical:Landroidx/compose/foundation/gestures/Orientation;
+    .line 574
+    sget-object v6, Landroidx/compose/foundation/gestures/Orientation;->Vertical:Landroidx/compose/foundation/gestures/Orientation;
 
-    if-ne v3, v5, :cond_6
+    if-ne v4, v6, :cond_6
 
-    move-object/from16 v3, p11
+    move-object/from16 v4, p11
 
-    .line 529
-    invoke-interface {v7, v3, v13, v10, v15}, Landroidx/compose/foundation/layout/Arrangement$HorizontalOrVertical;->arrange(Landroidx/compose/ui/unit/Density;I[I[I)V
+    .line 575
+    invoke-interface {v8, v4, v14, v11, v7}, Landroidx/compose/foundation/layout/Arrangement$HorizontalOrVertical;->arrange(Landroidx/compose/ui/unit/Density;I[I[I)V
 
     goto :goto_5
 
     :cond_6
-    move-object/from16 v3, p11
+    move-object/from16 v4, p11
 
-    .line 533
-    sget-object v11, Landroidx/compose/ui/unit/LayoutDirection;->Ltr:Landroidx/compose/ui/unit/LayoutDirection;
+    .line 579
+    sget-object v12, Landroidx/compose/ui/unit/LayoutDirection;->Ltr:Landroidx/compose/ui/unit/LayoutDirection;
 
-    move-object/from16 v8, p11
+    move-object/from16 v9, p11
 
-    move v9, v13
+    move v10, v14
 
-    move-object v12, v15
+    move-object v13, v7
 
-    invoke-interface/range {v7 .. v12}, Landroidx/compose/foundation/layout/Arrangement$HorizontalOrVertical;->arrange(Landroidx/compose/ui/unit/Density;I[ILandroidx/compose/ui/unit/LayoutDirection;[I)V
+    invoke-interface/range {v8 .. v13}, Landroidx/compose/foundation/layout/Arrangement$HorizontalOrVertical;->arrange(Landroidx/compose/ui/unit/Density;I[ILandroidx/compose/ui/unit/LayoutDirection;[I)V
 
-    .line 538
+    .line 584
     :goto_5
-    invoke-static {v15}, Lkotlin/collections/ArraysKt;->getIndices([I)Lkotlin/ranges/IntRange;
+    invoke-static {v7}, Lkotlin/collections/ArraysKt;->getIndices([I)Lkotlin/ranges/IntRange;
 
-    move-result-object v3
+    move-result-object v4
 
-    check-cast v3, Lkotlin/ranges/IntProgression;
+    check-cast v4, Lkotlin/ranges/IntProgression;
 
-    if-nez v4, :cond_7
+    if-nez v5, :cond_7
 
     goto :goto_6
 
     :cond_7
-    invoke-static {v3}, Lkotlin/ranges/RangesKt;->reversed(Lkotlin/ranges/IntProgression;)Lkotlin/ranges/IntProgression;
+    invoke-static {v4}, Lkotlin/ranges/RangesKt;->reversed(Lkotlin/ranges/IntProgression;)Lkotlin/ranges/IntProgression;
 
-    move-result-object v3
+    move-result-object v4
 
-    .line 539
+    .line 585
     :goto_6
-    invoke-virtual {v3}, Lkotlin/ranges/IntProgression;->getFirst()I
+    invoke-virtual {v4}, Lkotlin/ranges/IntProgression;->getFirst()I
 
-    move-result v5
+    move-result v6
 
-    invoke-virtual {v3}, Lkotlin/ranges/IntProgression;->getLast()I
+    invoke-virtual {v4}, Lkotlin/ranges/IntProgression;->getLast()I
 
-    move-result v7
+    move-result v8
 
-    invoke-virtual {v3}, Lkotlin/ranges/IntProgression;->getStep()I
+    invoke-virtual {v4}, Lkotlin/ranges/IntProgression;->getStep()I
 
-    move-result v3
+    move-result v4
 
-    if-lez v3, :cond_8
+    if-lez v4, :cond_8
 
-    if-le v5, v7, :cond_9
+    if-le v6, v8, :cond_9
 
     :cond_8
-    if-gez v3, :cond_f
+    if-gez v4, :cond_f
 
-    if-gt v7, v5, :cond_f
+    if-gt v8, v6, :cond_f
 
-    .line 540
+    .line 586
     :cond_9
     :goto_7
-    aget v8, v15, v5
+    aget v9, v7, v6
 
-    .line 542
-    invoke-static {v5, v4, v6}, Landroidx/compose/foundation/pager/PagerMeasureKt;->calculatePagesOffsets$reverseAware(IZI)I
-
-    move-result v9
-
-    invoke-interface {v0, v9}, Ljava/util/List;->get(I)Ljava/lang/Object;
-
-    move-result-object v9
-
-    check-cast v9, Landroidx/compose/foundation/pager/MeasuredPage;
-
-    if-eqz v4, :cond_a
-
-    sub-int v8, v13, v8
-
-    .line 545
-    invoke-virtual {v9}, Landroidx/compose/foundation/pager/MeasuredPage;->getSize()I
+    .line 588
+    invoke-static {v6, v5, v3}, Landroidx/compose/foundation/pager/PagerMeasureKt;->calculatePagesOffsets$reverseAware(IZI)I
 
     move-result v10
 
-    sub-int/2addr v8, v10
+    invoke-interface {v0, v10}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
-    .line 549
+    move-result-object v10
+
+    check-cast v10, Landroidx/compose/foundation/pager/MeasuredPage;
+
+    if-eqz v5, :cond_a
+
+    sub-int v9, v14, v9
+
+    .line 591
+    invoke-virtual {v10}, Landroidx/compose/foundation/pager/MeasuredPage;->getSize()I
+
+    move-result v11
+
+    sub-int/2addr v9, v11
+
+    .line 595
     :cond_a
-    invoke-virtual {v9, v8, v1, v2}, Landroidx/compose/foundation/pager/MeasuredPage;->position(III)V
+    invoke-virtual {v10, v9, v1, v2}, Landroidx/compose/foundation/pager/MeasuredPage;->position(III)V
 
-    .line 550
-    invoke-virtual {v14, v9}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+    .line 596
+    invoke-virtual {v15, v10}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
-    if-eq v5, v7, :cond_f
+    if-eq v6, v8, :cond_f
 
-    add-int/2addr v5, v3
+    add-int/2addr v6, v4
 
     goto :goto_7
 
-    .line 518
+    .line 564
     :cond_b
     new-instance v0, Ljava/lang/IllegalArgumentException;
 
-    const-string v1, "Failed requirement."
+    const-string v1, "No extra pages"
 
     invoke-virtual {v1}, Ljava/lang/Object;->toString()Ljava/lang/String;
 
@@ -412,110 +589,108 @@
 
     throw v0
 
-    .line 642
+    .line 690
     :cond_c
     invoke-interface/range {p2 .. p2}, Ljava/util/List;->size()I
 
-    move-result v3
+    move-result v4
 
-    move/from16 v5, p8
+    move v6, v3
 
-    move v4, v8
+    move v5, v9
 
     :goto_8
-    if-ge v4, v3, :cond_d
+    if-ge v5, v4, :cond_d
 
-    move-object/from16 v7, p2
+    move-object/from16 v8, p2
 
-    .line 643
-    invoke-interface {v7, v4}, Ljava/util/List;->get(I)Ljava/lang/Object;
+    .line 691
+    invoke-interface {v8, v5}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
-    move-result-object v9
+    move-result-object v10
 
-    .line 644
-    check-cast v9, Landroidx/compose/foundation/pager/MeasuredPage;
+    .line 692
+    check-cast v10, Landroidx/compose/foundation/pager/MeasuredPage;
 
-    sub-int/2addr v5, v6
+    sub-int/2addr v6, v7
 
-    .line 556
-    invoke-virtual {v9, v5, v1, v2}, Landroidx/compose/foundation/pager/MeasuredPage;->position(III)V
+    .line 602
+    invoke-virtual {v10, v6, v1, v2}, Landroidx/compose/foundation/pager/MeasuredPage;->position(III)V
 
-    .line 557
-    invoke-virtual {v14, v9}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+    .line 603
+    invoke-virtual {v15, v10}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
-    add-int/lit8 v4, v4, 0x1
+    add-int/lit8 v5, v5, 0x1
 
     goto :goto_8
 
-    .line 648
+    .line 696
     :cond_d
     invoke-interface/range {p1 .. p1}, Ljava/util/List;->size()I
 
-    move-result v3
+    move-result v4
 
-    move/from16 v4, p8
-
-    move v5, v8
+    move v5, v9
 
     :goto_9
-    if-ge v5, v3, :cond_e
+    if-ge v5, v4, :cond_e
 
-    .line 649
+    .line 697
     invoke-interface {v0, v5}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
-    move-result-object v7
+    move-result-object v6
 
-    .line 650
-    check-cast v7, Landroidx/compose/foundation/pager/MeasuredPage;
+    .line 698
+    check-cast v6, Landroidx/compose/foundation/pager/MeasuredPage;
 
-    .line 562
-    invoke-virtual {v7, v4, v1, v2}, Landroidx/compose/foundation/pager/MeasuredPage;->position(III)V
+    .line 608
+    invoke-virtual {v6, v3, v1, v2}, Landroidx/compose/foundation/pager/MeasuredPage;->position(III)V
 
-    .line 563
-    invoke-virtual {v14, v7}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+    .line 609
+    invoke-virtual {v15, v6}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
-    add-int/2addr v4, v6
+    add-int/2addr v3, v7
 
     add-int/lit8 v5, v5, 0x1
 
     goto :goto_9
 
-    .line 654
+    .line 702
     :cond_e
     invoke-interface/range {p3 .. p3}, Ljava/util/List;->size()I
 
     move-result v0
 
     :goto_a
-    if-ge v8, v0, :cond_f
+    if-ge v9, v0, :cond_f
 
-    move-object/from16 v3, p3
+    move-object/from16 v4, p3
 
-    .line 655
-    invoke-interface {v3, v8}, Ljava/util/List;->get(I)Ljava/lang/Object;
+    .line 703
+    invoke-interface {v4, v9}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
     move-result-object v5
 
-    .line 656
+    .line 704
     check-cast v5, Landroidx/compose/foundation/pager/MeasuredPage;
 
-    .line 568
-    invoke-virtual {v5, v4, v1, v2}, Landroidx/compose/foundation/pager/MeasuredPage;->position(III)V
+    .line 614
+    invoke-virtual {v5, v3, v1, v2}, Landroidx/compose/foundation/pager/MeasuredPage;->position(III)V
 
-    .line 569
-    invoke-virtual {v14, v5}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+    .line 615
+    invoke-virtual {v15, v5}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
-    add-int/2addr v4, v6
+    add-int/2addr v3, v7
 
-    add-int/lit8 v8, v8, 0x1
+    add-int/lit8 v9, v9, 0x1
 
     goto :goto_a
 
-    .line 573
+    .line 619
     :cond_f
-    check-cast v14, Ljava/util/List;
+    check-cast v15, Ljava/util/List;
 
-    return-object v14
+    return-object v15
 .end method
 
 .method private static final calculatePagesOffsets$reverseAware(IZI)I
@@ -557,7 +732,7 @@
 
     add-int/lit8 v0, p1, -0x1
 
-    .line 420
+    .line 442
     invoke-static {p2, v0}, Ljava/lang/Math;->min(II)I
 
     move-result p2
@@ -571,14 +746,14 @@
     :goto_0
     if-nez v0, :cond_0
 
-    .line 423
+    .line 445
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
     check-cast v0, Ljava/util/List;
 
-    .line 424
+    .line 446
     :cond_0
     invoke-static {p0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -596,7 +771,7 @@
 
     goto :goto_0
 
-    .line 629
+    .line 665
     :cond_1
     invoke-interface {p3}, Ljava/util/List;->size()I
 
@@ -607,12 +782,12 @@
     :goto_1
     if-ge v1, p0, :cond_4
 
-    .line 630
+    .line 666
     invoke-interface {p3, v1}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
     move-result-object v2
 
-    .line 631
+    .line 667
     check-cast v2, Ljava/lang/Number;
 
     invoke-virtual {v2}, Ljava/lang/Number;->intValue()I
@@ -627,14 +802,14 @@
 
     if-nez v0, :cond_2
 
-    .line 429
+    .line 451
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
     check-cast v0, Ljava/util/List;
 
-    .line 430
+    .line 452
     :cond_2
     invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -654,7 +829,7 @@
     :cond_4
     if-nez v0, :cond_5
 
-    .line 434
+    .line 456
     invoke-static {}, Lkotlin/collections/CollectionsKt;->emptyList()Ljava/util/List;
 
     move-result-object v0
@@ -686,7 +861,7 @@
 
     const/4 v0, 0x0
 
-    .line 445
+    .line 467
     invoke-static {v0, p1}, Ljava/lang/Math;->max(II)I
 
     move-result p1
@@ -700,14 +875,14 @@
     :goto_0
     if-nez v1, :cond_0
 
-    .line 448
+    .line 470
     new-instance v1, Ljava/util/ArrayList;
 
     invoke-direct {v1}, Ljava/util/ArrayList;-><init>()V
 
     check-cast v1, Ljava/util/List;
 
-    .line 449
+    .line 471
     :cond_0
     invoke-static {p0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -725,7 +900,7 @@
 
     goto :goto_0
 
-    .line 635
+    .line 671
     :cond_1
     invoke-interface {p2}, Ljava/util/List;->size()I
 
@@ -734,12 +909,12 @@
     :goto_1
     if-ge v0, p0, :cond_4
 
-    .line 636
+    .line 672
     invoke-interface {p2, v0}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
     move-result-object v2
 
-    .line 637
+    .line 673
     check-cast v2, Ljava/lang/Number;
 
     invoke-virtual {v2}, Ljava/lang/Number;->intValue()I
@@ -750,14 +925,14 @@
 
     if-nez v1, :cond_2
 
-    .line 454
+    .line 476
     new-instance v1, Ljava/util/ArrayList;
 
     invoke-direct {v1}, Ljava/util/ArrayList;-><init>()V
 
     check-cast v1, Ljava/util/List;
 
-    .line 455
+    .line 477
     :cond_2
     invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -777,7 +952,7 @@
     :cond_4
     if-nez v1, :cond_5
 
-    .line 459
+    .line 481
     invoke-static {}, Lkotlin/collections/CollectionsKt;->emptyList()Ljava/util/List;
 
     move-result-object v1
@@ -807,17 +982,17 @@
 
     move-object/from16 v0, p4
 
-    .line 475
+    .line 521
     invoke-virtual {v0, p1}, Landroidx/compose/foundation/pager/PagerLazyLayoutItemProvider;->getKey(I)Ljava/lang/Object;
 
     move-result-object v6
 
-    .line 476
+    .line 522
     invoke-interface/range {p0 .. p3}, Landroidx/compose/foundation/lazy/layout/LazyLayoutMeasureScope;->measure-0kLqBqw(IJ)Ljava/util/List;
 
     move-result-object v3
 
-    .line 478
+    .line 524
     new-instance v13, Landroidx/compose/foundation/pager/MeasuredPage;
 
     const/4 v12, 0x0
@@ -843,21 +1018,25 @@
     return-object v13
 .end method
 
-.method public static final measurePager-ntgEbfI(Landroidx/compose/foundation/lazy/layout/LazyLayoutMeasureScope;ILandroidx/compose/foundation/pager/PagerLazyLayoutItemProvider;IIIIIIFJLandroidx/compose/foundation/gestures/Orientation;Landroidx/compose/ui/Alignment$Vertical;Landroidx/compose/ui/Alignment$Horizontal;ZJIILjava/util/List;Lkotlin/jvm/functions/Function3;)Landroidx/compose/foundation/pager/PagerMeasureResult;
-    .locals 30
+.method public static final measurePager-_JDW0YA(Landroidx/compose/foundation/lazy/layout/LazyLayoutMeasureScope;ILandroidx/compose/foundation/pager/PagerLazyLayoutItemProvider;IIIIIIJLandroidx/compose/foundation/gestures/Orientation;Landroidx/compose/ui/Alignment$Vertical;Landroidx/compose/ui/Alignment$Horizontal;ZJIILjava/util/List;Landroidx/compose/foundation/gestures/snapping/SnapPositionInLayout;Landroidx/compose/runtime/MutableState;Lkotlin/jvm/functions/Function3;)Landroidx/compose/foundation/pager/PagerMeasureResult;
+    .locals 36
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
             "Landroidx/compose/foundation/lazy/layout/LazyLayoutMeasureScope;",
             "I",
             "Landroidx/compose/foundation/pager/PagerLazyLayoutItemProvider;",
-            "IIIIIIFJ",
+            "IIIIIIJ",
             "Landroidx/compose/foundation/gestures/Orientation;",
             "Landroidx/compose/ui/Alignment$Vertical;",
             "Landroidx/compose/ui/Alignment$Horizontal;",
             "ZJII",
             "Ljava/util/List<",
             "Ljava/lang/Integer;",
+            ">;",
+            "Landroidx/compose/foundation/gestures/snapping/SnapPositionInLayout;",
+            "Landroidx/compose/runtime/MutableState<",
+            "Lkotlin/Unit;",
             ">;",
             "Lkotlin/jvm/functions/Function3<",
             "-",
@@ -876,75 +1055,50 @@
         }
     .end annotation
 
-    move-object/from16 v13, p0
-
-    move/from16 v14, p1
+    move/from16 v0, p1
 
     move/from16 v15, p3
 
-    move/from16 v12, p4
+    move/from16 v14, p4
 
-    move-wide/from16 v10, p10
+    move-wide/from16 v1, p9
 
-    move-object/from16 v9, p12
+    move-object/from16 v13, p11
 
-    move/from16 v8, p19
+    move/from16 v12, p18
 
-    move-object/from16 v7, p20
+    move-object/from16 v3, p19
 
-    move-object/from16 v5, p21
+    move-object/from16 v11, p22
 
-    const-string v0, "$this$measurePager"
+    if-ltz v14, :cond_24
 
-    invoke-static {v13, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+    if-ltz p5, :cond_23
 
-    const-string v0, "pagerItemProvider"
+    add-int v4, p17, p6
 
-    move-object/from16 v6, p2
+    const/4 v10, 0x0
 
-    invoke-static {v6, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+    .line 65
+    invoke-static {v4, v10}, Lkotlin/ranges/RangesKt;->coerceAtLeast(II)I
 
-    const-string v0, "orientation"
+    move-result v9
 
-    invoke-static {v9, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+    if-gtz v0, :cond_0
 
-    const-string v0, "pinnedPages"
-
-    invoke-static {v7, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string v0, "layout"
-
-    invoke-static {v5, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 62
-    const-string v16, "Failed requirement."
-
-    if-ltz v12, :cond_26
-
-    if-ltz p5, :cond_25
-
-    add-int v0, p18, p6
-
-    const/4 v4, 0x0
-
-    .line 64
-    invoke-static {v0, v4}, Lkotlin/ranges/RangesKt;->coerceAtLeast(II)I
-
-    move-result v2
-
-    if-gtz v14, :cond_0
-
-    .line 68
+    .line 72
     invoke-static {}, Lkotlin/collections/CollectionsKt;->emptyList()Ljava/util/List;
 
-    move-result-object v1
+    move-result-object v17
 
-    neg-int v7, v12
+    neg-int v0, v14
 
-    add-int v8, v15, p5
+    move/from16 v22, v0
 
-    .line 76
-    invoke-static/range {p10 .. p11}, Landroidx/compose/ui/unit/Constraints;->getMinWidth-impl(J)I
+    add-int v23, v15, p5
+
+    .line 79
+    invoke-static/range {p9 .. p10}, Landroidx/compose/ui/unit/Constraints;->getMinWidth-impl(J)I
 
     move-result v0
 
@@ -952,1115 +1106,889 @@
 
     move-result-object v0
 
-    invoke-static/range {p10 .. p11}, Landroidx/compose/ui/unit/Constraints;->getMinHeight-impl(J)I
+    invoke-static/range {p9 .. p10}, Landroidx/compose/ui/unit/Constraints;->getMinHeight-impl(J)I
 
-    move-result v2
+    move-result v1
 
-    invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+    invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
-    move-result-object v2
+    move-result-object v1
 
-    sget-object v3, Landroidx/compose/foundation/pager/PagerMeasureKt$measurePager$2;->INSTANCE:Landroidx/compose/foundation/pager/PagerMeasureKt$measurePager$2;
+    sget-object v2, Landroidx/compose/foundation/pager/PagerMeasureKt$measurePager$4;->INSTANCE:Landroidx/compose/foundation/pager/PagerMeasureKt$measurePager$4;
 
-    invoke-interface {v5, v0, v2, v3}, Lkotlin/jvm/functions/Function3;->invoke(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-interface {v11, v0, v1, v2}, Lkotlin/jvm/functions/Function3;->invoke(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v0
 
-    move-object v15, v0
+    move-object/from16 v31, v0
 
-    check-cast v15, Landroidx/compose/ui/layout/MeasureResult;
+    check-cast v31, Landroidx/compose/ui/layout/MeasureResult;
 
-    .line 67
-    new-instance v16, Landroidx/compose/foundation/pager/PagerMeasureResult;
+    .line 71
+    new-instance v0, Landroidx/compose/foundation/pager/PagerMeasureResult;
 
-    const/4 v13, 0x0
+    move-object/from16 v16, v0
 
-    const/4 v14, 0x0
+    const/16 v30, 0x0
 
-    const/4 v2, 0x0
+    const/16 v32, 0x0
 
-    const/4 v10, 0x0
+    const/16 v24, 0x0
 
-    const/4 v11, 0x0
+    const/16 v26, 0x0
 
-    const/4 v12, 0x0
+    const/16 v27, 0x0
 
-    const/16 v17, 0x0
+    const/16 v28, 0x0
 
-    move-object/from16 v0, v16
+    const/16 v29, 0x0
 
-    move/from16 v3, p18
+    move/from16 v18, p17
 
-    move/from16 v4, p6
+    move/from16 v19, p6
 
-    move/from16 v5, p5
+    move/from16 v20, p5
 
-    move-object/from16 v6, p12
+    move-object/from16 v21, p11
 
-    move v9, v10
+    move/from16 v25, p18
 
-    move v10, v11
+    invoke-direct/range {v16 .. v32}, Landroidx/compose/foundation/pager/PagerMeasureResult;-><init>(Ljava/util/List;IIILandroidx/compose/foundation/gestures/Orientation;IIZILandroidx/compose/foundation/pager/MeasuredPage;Landroidx/compose/foundation/pager/MeasuredPage;FIZLandroidx/compose/ui/layout/MeasureResult;Z)V
 
-    move-object v11, v12
+    return-object v0
 
-    move-object/from16 v12, v17
-
-    invoke-direct/range {v0 .. v15}, Landroidx/compose/foundation/pager/PagerMeasureResult;-><init>(Ljava/util/List;IIIILandroidx/compose/foundation/gestures/Orientation;IIZFLandroidx/compose/foundation/pager/MeasuredPage;Landroidx/compose/foundation/pager/PageInfo;IZLandroidx/compose/ui/layout/MeasureResult;)V
-
-    return-object v16
-
-    .line 87
+    .line 92
     :cond_0
-    sget-object v0, Landroidx/compose/foundation/gestures/Orientation;->Vertical:Landroidx/compose/foundation/gestures/Orientation;
+    sget-object v4, Landroidx/compose/foundation/gestures/Orientation;->Vertical:Landroidx/compose/foundation/gestures/Orientation;
 
-    if-ne v9, v0, :cond_1
+    if-ne v13, v4, :cond_1
 
-    .line 88
-    invoke-static/range {p10 .. p11}, Landroidx/compose/ui/unit/Constraints;->getMaxWidth-impl(J)I
+    .line 93
+    invoke-static/range {p9 .. p10}, Landroidx/compose/ui/unit/Constraints;->getMaxWidth-impl(J)I
 
-    move-result v0
+    move-result v4
 
-    move/from16 v18, v0
+    move/from16 v17, v4
 
     goto :goto_0
 
     :cond_1
-    move/from16 v18, p18
+    move/from16 v17, p17
 
-    .line 92
+    .line 97
     :goto_0
-    sget-object v0, Landroidx/compose/foundation/gestures/Orientation;->Vertical:Landroidx/compose/foundation/gestures/Orientation;
+    sget-object v4, Landroidx/compose/foundation/gestures/Orientation;->Vertical:Landroidx/compose/foundation/gestures/Orientation;
 
-    if-eq v9, v0, :cond_2
+    if-eq v13, v4, :cond_2
 
-    .line 93
-    invoke-static/range {p10 .. p11}, Landroidx/compose/ui/unit/Constraints;->getMaxHeight-impl(J)I
+    .line 98
+    invoke-static/range {p9 .. p10}, Landroidx/compose/ui/unit/Constraints;->getMaxHeight-impl(J)I
 
-    move-result v0
+    move-result v4
 
-    move/from16 v20, v0
+    move/from16 v19, v4
 
     goto :goto_1
 
     :cond_2
-    move/from16 v20, p18
+    move/from16 v19, p17
 
     :goto_1
-    const/16 v21, 0x5
+    const/16 v20, 0x5
 
-    const/16 v22, 0x0
+    const/16 v21, 0x0
 
-    const/16 v17, 0x0
+    const/16 v16, 0x0
 
-    const/16 v19, 0x0
+    const/16 v18, 0x0
 
-    .line 86
-    invoke-static/range {v17 .. v22}, Landroidx/compose/ui/unit/ConstraintsKt;->Constraints$default(IIIIILjava/lang/Object;)J
+    .line 91
+    invoke-static/range {v16 .. v21}, Landroidx/compose/ui/unit/ConstraintsKt;->Constraints$default(IIIIILjava/lang/Object;)J
 
-    move-result-wide v17
+    move-result-wide v4
 
-    move/from16 v0, p7
+    move/from16 v6, p7
 
-    if-lt v0, v14, :cond_3
+    move/from16 v7, p8
 
-    add-int/lit8 v0, v14, -0x1
+    :goto_2
+    if-lez v6, :cond_3
 
-    move v1, v4
+    if-lez v7, :cond_3
+
+    add-int/lit8 v6, v6, -0x1
+
+    sub-int/2addr v7, v9
 
     goto :goto_2
 
     :cond_3
-    move/from16 v1, p8
+    mul-int/lit8 v7, v7, -0x1
 
-    .line 109
-    :goto_2
-    invoke-static/range {p9 .. p9}, Lkotlin/math/MathKt;->roundToInt(F)I
+    if-lt v6, v0, :cond_4
 
-    move-result v3
+    add-int/lit8 v6, v0, -0x1
 
-    sub-int/2addr v1, v3
+    move v7, v10
 
-    if-nez v0, :cond_4
-
-    if-gez v1, :cond_4
-
-    add-int/2addr v3, v1
-
-    move/from16 v19, v3
-
-    move v1, v4
-
-    goto :goto_3
-
+    .line 127
     :cond_4
-    move/from16 v19, v3
+    new-instance v8, Lkotlin/collections/ArrayDeque;
 
-    .line 122
-    :goto_3
-    new-instance v3, Lkotlin/collections/ArrayDeque;
+    invoke-direct {v8}, Lkotlin/collections/ArrayDeque;-><init>()V
 
-    invoke-direct {v3}, Lkotlin/collections/ArrayDeque;-><init>()V
-
-    neg-int v13, v12
+    neg-int v10, v14
 
     if-gez p6, :cond_5
 
-    move/from16 v20, p6
+    move/from16 v16, p6
 
-    goto :goto_4
+    move/from16 p7, v6
+
+    goto :goto_3
 
     :cond_5
-    move/from16 v20, v4
+    move/from16 p7, v6
+
+    const/16 v16, 0x0
+
+    :goto_3
+    add-int v6, v10, v16
+
+    add-int/2addr v7, v6
+
+    move/from16 v30, v10
+
+    const/4 v11, 0x0
+
+    move v10, v7
+
+    move/from16 v7, p7
 
     :goto_4
-    add-int v14, v13, v20
+    if-gez v10, :cond_6
 
-    add-int/2addr v1, v14
+    if-lez v7, :cond_6
 
-    move/from16 v20, v13
-
-    move v13, v4
-
-    :goto_5
-    if-gez v1, :cond_6
-
-    if-lez v0, :cond_6
-
-    add-int/lit8 v21, v0, -0x1
-
-    .line 149
-    invoke-interface/range {p0 .. p0}, Landroidx/compose/foundation/lazy/layout/LazyLayoutMeasureScope;->getLayoutDirection()Landroidx/compose/ui/unit/LayoutDirection;
-
-    move-result-object v22
-
-    move-object/from16 v0, p0
-
-    move v15, v1
-
-    move/from16 v1, v21
-
-    move/from16 p8, v2
-
-    move/from16 p7, v14
-
-    move-object v14, v3
-
-    move-wide/from16 v2, v17
-
-    move/from16 v23, v15
-
-    move v15, v4
-
-    move-object/from16 v4, p2
-
-    move-wide/from16 v5, p16
-
-    move-object/from16 v7, p12
-
-    move-object/from16 v8, p14
-
-    move-object/from16 v9, p13
-
-    move-object/from16 v10, v22
-
-    move/from16 v11, p15
-
-    move/from16 v12, p18
-
-    .line 141
-    invoke-static/range {v0 .. v12}, Landroidx/compose/foundation/pager/PagerMeasureKt;->getAndMeasure-SGf7dI0(Landroidx/compose/foundation/lazy/layout/LazyLayoutMeasureScope;IJLandroidx/compose/foundation/pager/PagerLazyLayoutItemProvider;JLandroidx/compose/foundation/gestures/Orientation;Landroidx/compose/ui/Alignment$Horizontal;Landroidx/compose/ui/Alignment$Vertical;Landroidx/compose/ui/unit/LayoutDirection;ZI)Landroidx/compose/foundation/pager/MeasuredPage;
-
-    move-result-object v0
-
-    .line 153
-    invoke-virtual {v14, v15, v0}, Lkotlin/collections/ArrayDeque;->add(ILjava/lang/Object;)V
+    add-int/lit8 v7, v7, -0x1
 
     .line 154
-    invoke-virtual {v0}, Landroidx/compose/foundation/pager/MeasuredPage;->getCrossAxisSize()I
+    invoke-interface/range {p0 .. p0}, Landroidx/compose/foundation/lazy/layout/LazyLayoutMeasureScope;->getLayoutDirection()Landroidx/compose/ui/unit/LayoutDirection;
 
-    move-result v0
+    move-result-object v26
 
-    invoke-static {v13, v0}, Ljava/lang/Math;->max(II)I
+    move-object/from16 v16, p0
 
-    move-result v13
+    move/from16 v17, v7
 
-    add-int v1, v23, p8
+    move-wide/from16 v18, v4
 
-    move-object/from16 v6, p2
+    move-object/from16 v20, p2
 
-    move/from16 v12, p4
+    move-wide/from16 v21, p15
 
-    move/from16 v2, p8
+    move-object/from16 v23, p11
 
-    move-wide/from16 v10, p10
+    move-object/from16 v24, p13
 
-    move-object/from16 v9, p12
+    move-object/from16 v25, p12
 
-    move/from16 v8, p19
+    move/from16 v27, p14
 
-    move-object/from16 v7, p20
+    move/from16 v28, p17
 
-    move-object/from16 v5, p21
+    move/from16 p7, v7
 
-    move-object v3, v14
-
-    move v4, v15
-
-    move/from16 v0, v21
-
-    move/from16 v15, p3
-
-    move/from16 v14, p7
-
-    goto :goto_5
-
-    :cond_6
-    move/from16 p8, v2
-
-    move v15, v4
-
-    move/from16 p7, v14
-
-    move-object v14, v3
-
-    move v2, v1
-
-    move/from16 v1, p7
-
-    if-ge v2, v1, :cond_7
-
-    add-int v19, v19, v2
-
-    move v2, v1
-
-    :cond_7
-    sub-int/2addr v2, v1
-
-    move/from16 v12, p3
-
-    add-int v11, v12, p5
-
-    .line 170
-    invoke-static {v11, v15}, Lkotlin/ranges/RangesKt;->coerceAtLeast(II)I
-
-    move-result v10
-
-    neg-int v3, v2
-
-    .line 174
-    move-object v9, v14
-
-    check-cast v9, Ljava/util/List;
-
-    .line 587
-    invoke-interface {v9}, Ljava/util/List;->size()I
-
-    move-result v4
-
-    move v6, v0
-
-    move v5, v15
-
-    :goto_6
-    if-ge v5, v4, :cond_8
-
-    .line 588
-    invoke-interface {v9, v5}, Ljava/util/List;->get(I)Ljava/lang/Object;
+    .line 146
+    invoke-static/range {v16 .. v28}, Landroidx/compose/foundation/pager/PagerMeasureKt;->getAndMeasure-SGf7dI0(Landroidx/compose/foundation/lazy/layout/LazyLayoutMeasureScope;IJLandroidx/compose/foundation/pager/PagerLazyLayoutItemProvider;JLandroidx/compose/foundation/gestures/Orientation;Landroidx/compose/ui/Alignment$Horizontal;Landroidx/compose/ui/Alignment$Vertical;Landroidx/compose/ui/unit/LayoutDirection;ZI)Landroidx/compose/foundation/pager/MeasuredPage;
 
     move-result-object v7
 
-    .line 589
-    check-cast v7, Landroidx/compose/foundation/pager/MeasuredPage;
+    const/4 v1, 0x0
 
-    add-int/lit8 v6, v6, 0x1
+    .line 158
+    invoke-virtual {v8, v1, v7}, Lkotlin/collections/ArrayDeque;->add(ILjava/lang/Object;)V
 
-    add-int v3, v3, p8
-
-    add-int/lit8 v5, v5, 0x1
-
-    goto :goto_6
-
-    :cond_8
-    move v4, v1
-
-    move/from16 v21, v2
-
-    move v8, v3
-
-    move v7, v6
-
-    move v5, v13
-
-    move/from16 v6, p1
-
-    move v13, v0
-
-    :goto_7
-    if-ge v7, v6, :cond_d
-
-    if-lt v8, v10, :cond_a
-
-    if-lez v8, :cond_a
-
-    .line 185
-    invoke-virtual {v14}, Lkotlin/collections/ArrayDeque;->isEmpty()Z
-
-    move-result v0
-
-    if-eqz v0, :cond_9
-
-    goto :goto_8
-
-    :cond_9
-    move v2, v5
-
-    move-object/from16 v27, v9
-
-    move/from16 v22, v11
-
-    move v15, v12
-
-    move/from16 p7, v13
-
-    move-object v11, v14
-
-    move v14, v6
-
-    move v12, v7
-
-    move v13, v8
-
-    goto/16 :goto_a
-
-    .line 195
-    :cond_a
-    :goto_8
-    invoke-interface/range {p0 .. p0}, Landroidx/compose/foundation/lazy/layout/LazyLayoutMeasureScope;->getLayoutDirection()Landroidx/compose/ui/unit/LayoutDirection;
-
-    move-result-object v22
-
-    move-object/from16 v0, p0
-
-    move v1, v7
-
-    move-wide/from16 v2, v17
-
-    move v15, v4
-
-    move-object/from16 v4, p2
-
-    move/from16 p7, v13
-
-    move-object/from16 v24, v14
-
-    move v13, v5
-
-    move v14, v6
-
-    move-wide/from16 v5, p16
-
-    move/from16 v25, v13
-
-    move v13, v7
-
-    move-object/from16 v7, p12
-
-    move/from16 v26, v13
-
-    move v13, v8
-
-    move-object/from16 v8, p14
-
-    move-object/from16 v27, v9
-
-    move-object/from16 v9, p13
-
-    move/from16 v28, v10
-
-    move-object/from16 v10, v22
-
-    move/from16 v22, v11
-
-    move/from16 v11, p15
-
-    move/from16 v12, p18
-
-    .line 187
-    invoke-static/range {v0 .. v12}, Landroidx/compose/foundation/pager/PagerMeasureKt;->getAndMeasure-SGf7dI0(Landroidx/compose/foundation/lazy/layout/LazyLayoutMeasureScope;IJLandroidx/compose/foundation/pager/PagerLazyLayoutItemProvider;JLandroidx/compose/foundation/gestures/Orientation;Landroidx/compose/ui/Alignment$Horizontal;Landroidx/compose/ui/Alignment$Vertical;Landroidx/compose/ui/unit/LayoutDirection;ZI)Landroidx/compose/foundation/pager/MeasuredPage;
-
-    move-result-object v0
-
-    add-int v8, v13, p8
-
-    if-gt v8, v15, :cond_b
-
-    add-int/lit8 v1, v14, -0x1
-
-    move/from16 v12, v26
-
-    if-eq v12, v1, :cond_c
-
-    add-int/lit8 v7, v12, 0x1
-
-    sub-int v21, v21, p8
-
-    move v13, v7
-
-    move-object/from16 v11, v24
-
-    move/from16 v5, v25
-
-    goto :goto_9
-
-    :cond_b
-    move/from16 v12, v26
-
-    .line 206
-    :cond_c
-    invoke-virtual {v0}, Landroidx/compose/foundation/pager/MeasuredPage;->getCrossAxisSize()I
+    .line 159
+    invoke-virtual {v7}, Landroidx/compose/foundation/pager/MeasuredPage;->getCrossAxisSize()I
 
     move-result v1
 
-    move/from16 v2, v25
+    invoke-static {v11, v1}, Ljava/lang/Math;->max(II)I
 
-    invoke-static {v2, v1}, Ljava/lang/Math;->max(II)I
+    move-result v11
 
-    move-result v1
+    add-int/2addr v10, v9
 
-    move-object/from16 v11, v24
+    move/from16 v7, p7
 
-    .line 207
-    invoke-virtual {v11, v0}, Lkotlin/collections/ArrayDeque;->add(Ljava/lang/Object;)Z
+    move-wide/from16 v1, p9
 
-    move/from16 v13, p7
+    goto :goto_4
 
-    move v5, v1
+    :cond_6
+    if-ge v10, v6, :cond_7
 
-    :goto_9
-    add-int/lit8 v7, v12, 0x1
+    move v10, v6
 
-    move/from16 v12, p3
+    :cond_7
+    sub-int/2addr v10, v6
 
-    move v6, v14
+    add-int v2, v15, p5
 
-    move v4, v15
-
-    move-object/from16 v9, v27
-
-    move/from16 v10, v28
-
-    const/4 v15, 0x0
-
-    move-object v14, v11
-
-    move/from16 v11, v22
-
-    goto/16 :goto_7
-
-    :cond_d
-    move v2, v5
-
-    move v12, v7
-
-    move-object/from16 v27, v9
-
-    move/from16 v22, v11
-
-    move/from16 p7, v13
-
-    move-object v11, v14
-
-    move v14, v6
-
-    move v13, v8
-
-    move/from16 v15, p3
-
-    :goto_a
-    if-ge v13, v15, :cond_10
-
-    sub-int v24, v15, v13
-
-    sub-int v21, v21, v24
-
-    add-int v13, v13, v24
-
-    move/from16 v8, p4
-
-    move/from16 v0, p7
-
-    move v9, v2
-
-    move/from16 v10, v21
-
-    :goto_b
-    if-ge v10, v8, :cond_e
-
-    if-lez v0, :cond_e
-
-    add-int/lit8 v21, v0, -0x1
-
-    .line 231
-    invoke-interface/range {p0 .. p0}, Landroidx/compose/foundation/lazy/layout/LazyLayoutMeasureScope;->getLayoutDirection()Landroidx/compose/ui/unit/LayoutDirection;
-
-    move-result-object v25
-
-    move-object/from16 v0, p0
-
-    move/from16 v1, v21
-
-    move-wide/from16 v2, v17
-
-    move-object/from16 v4, p2
-
-    move-wide/from16 v5, p16
-
-    move-object/from16 v7, p12
-
-    move-object/from16 v8, p14
-
-    move v15, v9
-
-    move-object/from16 v9, p13
-
-    move/from16 v26, v10
-
-    move-object/from16 v10, v25
-
-    move-object v14, v11
-
-    move/from16 v11, p15
-
-    move/from16 v25, v12
-
-    move/from16 v12, p18
-
-    .line 223
-    invoke-static/range {v0 .. v12}, Landroidx/compose/foundation/pager/PagerMeasureKt;->getAndMeasure-SGf7dI0(Landroidx/compose/foundation/lazy/layout/LazyLayoutMeasureScope;IJLandroidx/compose/foundation/pager/PagerLazyLayoutItemProvider;JLandroidx/compose/foundation/gestures/Orientation;Landroidx/compose/ui/Alignment$Horizontal;Landroidx/compose/ui/Alignment$Vertical;Landroidx/compose/ui/unit/LayoutDirection;ZI)Landroidx/compose/foundation/pager/MeasuredPage;
-
-    move-result-object v0
+    move/from16 p7, v7
 
     const/4 v1, 0x0
 
-    .line 235
-    invoke-virtual {v14, v1, v0}, Lkotlin/collections/ArrayDeque;->add(ILjava/lang/Object;)V
+    .line 172
+    invoke-static {v2, v1}, Lkotlin/ranges/RangesKt;->coerceAtLeast(II)I
 
-    .line 236
-    invoke-virtual {v0}, Landroidx/compose/foundation/pager/MeasuredPage;->getCrossAxisSize()I
+    move-result v7
 
-    move-result v0
+    neg-int v1, v10
 
-    invoke-static {v15, v0}, Ljava/lang/Math;->max(II)I
+    move/from16 v17, p7
 
-    move-result v9
+    move/from16 p8, v2
 
-    add-int v10, v26, p8
+    move/from16 v18, v10
 
-    move/from16 v15, p3
+    const/16 v16, 0x0
 
-    move/from16 v8, p4
+    move v2, v1
 
-    move-object v11, v14
+    const/4 v1, 0x0
 
-    move/from16 v0, v21
+    .line 183
+    :goto_5
+    invoke-virtual {v8}, Lkotlin/collections/ArrayDeque;->size()I
 
-    move/from16 v12, v25
+    move-result v10
 
-    move/from16 v14, p1
+    const/16 v31, 0x1
 
-    goto :goto_b
+    if-ge v1, v10, :cond_9
 
-    :cond_e
-    move v15, v9
+    if-lt v2, v7, :cond_8
 
-    move/from16 v26, v10
+    .line 186
+    invoke-virtual {v8, v1}, Lkotlin/collections/ArrayDeque;->remove(I)Ljava/lang/Object;
 
-    move-object v14, v11
+    move/from16 v16, v31
 
-    move/from16 v25, v12
+    goto :goto_5
 
-    add-int v19, v19, v24
+    :cond_8
+    add-int/lit8 v17, v17, 0x1
 
-    if-gez v26, :cond_f
+    add-int/2addr v2, v9
 
-    add-int v19, v19, v26
+    add-int/lit8 v1, v1, 0x1
 
-    add-int v8, v13, v26
+    goto :goto_5
 
-    move v12, v0
+    :cond_9
+    move/from16 v32, v16
 
-    move v13, v8
+    move/from16 v10, v17
 
-    move/from16 v0, v19
+    move/from16 v1, v18
 
-    const/4 v4, 0x0
+    :goto_6
+    if-ge v10, v0, :cond_d
 
-    goto :goto_c
+    if-lt v2, v7, :cond_a
 
-    :cond_f
-    move v12, v0
+    if-lez v2, :cond_a
 
-    move/from16 v0, v19
+    .line 201
+    invoke-virtual {v8}, Lkotlin/collections/ArrayDeque;->isEmpty()Z
 
-    move/from16 v4, v26
+    move-result v16
 
-    goto :goto_c
+    if-eqz v16, :cond_d
 
-    :cond_10
-    move-object v14, v11
+    .line 211
+    :cond_a
+    invoke-interface/range {p0 .. p0}, Landroidx/compose/foundation/lazy/layout/LazyLayoutMeasureScope;->getLayoutDirection()Landroidx/compose/ui/unit/LayoutDirection;
 
-    move/from16 v25, v12
+    move-result-object v26
 
-    move/from16 v12, p7
+    move-object/from16 v16, p0
 
-    move v15, v2
+    move/from16 v17, v10
 
-    move/from16 v0, v19
+    move-wide/from16 v18, v4
 
-    move/from16 v4, v21
+    move-object/from16 v20, p2
 
-    .line 252
-    :goto_c
-    invoke-static/range {p9 .. p9}, Lkotlin/math/MathKt;->roundToInt(F)I
+    move-wide/from16 v21, p15
 
-    move-result v1
+    move-object/from16 v23, p11
 
-    invoke-static {v1}, Lkotlin/math/MathKt;->getSign(I)I
+    move-object/from16 v24, p13
 
-    move-result v1
+    move-object/from16 v25, p12
 
-    invoke-static {v0}, Lkotlin/math/MathKt;->getSign(I)I
+    move/from16 v27, p14
 
-    move-result v2
+    move/from16 v28, p17
 
-    if-ne v1, v2, :cond_11
+    move/from16 v33, v7
 
-    .line 253
-    invoke-static/range {p9 .. p9}, Lkotlin/math/MathKt;->roundToInt(F)I
+    .line 203
+    invoke-static/range {v16 .. v28}, Landroidx/compose/foundation/pager/PagerMeasureKt;->getAndMeasure-SGf7dI0(Landroidx/compose/foundation/lazy/layout/LazyLayoutMeasureScope;IJLandroidx/compose/foundation/pager/PagerLazyLayoutItemProvider;JLandroidx/compose/foundation/gestures/Orientation;Landroidx/compose/ui/Alignment$Horizontal;Landroidx/compose/ui/Alignment$Vertical;Landroidx/compose/ui/unit/LayoutDirection;ZI)Landroidx/compose/foundation/pager/MeasuredPage;
 
-    move-result v1
+    move-result-object v7
 
-    invoke-static {v1}, Ljava/lang/Math;->abs(I)I
+    add-int/lit8 v13, v0, -0x1
 
-    move-result v1
+    if-ne v10, v13, :cond_b
 
-    invoke-static {v0}, Ljava/lang/Math;->abs(I)I
+    move/from16 v16, p17
 
-    move-result v2
+    goto :goto_7
 
-    if-lt v1, v2, :cond_11
+    :cond_b
+    move/from16 v16, v9
 
-    int-to-float v0, v0
+    :goto_7
+    add-int v2, v2, v16
 
-    move/from16 v19, v0
+    if-gt v2, v6, :cond_c
 
-    goto :goto_d
+    if-eq v10, v13, :cond_c
 
-    :cond_11
-    move/from16 v19, p9
+    add-int/lit8 v7, v10, 0x1
 
-    :goto_d
-    if-ltz v4, :cond_24
+    sub-int/2addr v1, v9
 
-    neg-int v11, v4
+    move/from16 v32, v31
 
-    .line 263
-    invoke-virtual {v14}, Lkotlin/collections/ArrayDeque;->first()Ljava/lang/Object;
+    goto :goto_8
 
-    move-result-object v0
+    .line 229
+    :cond_c
+    invoke-virtual {v7}, Landroidx/compose/foundation/pager/MeasuredPage;->getCrossAxisSize()I
 
-    check-cast v0, Landroidx/compose/foundation/pager/MeasuredPage;
+    move-result v13
 
-    if-gtz p4, :cond_13
+    invoke-static {v11, v13}, Ljava/lang/Math;->max(II)I
 
-    if-gez p6, :cond_12
+    move-result v11
 
-    goto :goto_e
+    .line 230
+    invoke-virtual {v8, v7}, Lkotlin/collections/ArrayDeque;->add(Ljava/lang/Object;)Z
 
-    :cond_12
-    move-object v10, v0
+    move/from16 v7, p7
 
-    move/from16 v16, v4
+    :goto_8
+    add-int/lit8 v10, v10, 0x1
 
-    goto :goto_10
+    move-object/from16 v13, p11
 
-    .line 268
-    :cond_13
-    :goto_e
-    invoke-virtual {v14}, Lkotlin/collections/ArrayDeque;->size()I
+    move/from16 p7, v7
 
-    move-result v1
+    move/from16 v7, v33
 
-    move v2, v4
+    goto :goto_6
 
-    const/4 v4, 0x0
+    :cond_d
+    if-ge v2, v15, :cond_f
 
-    :goto_f
-    if-ge v4, v1, :cond_14
+    sub-int v6, v15, v2
 
-    if-eqz v2, :cond_14
+    sub-int/2addr v1, v6
 
-    move/from16 v3, p8
-
-    if-gt v3, v2, :cond_14
-
-    .line 271
-    invoke-static/range {v27 .. v27}, Lkotlin/collections/CollectionsKt;->getLastIndex(Ljava/util/List;)I
-
-    move-result v5
-
-    if-eq v4, v5, :cond_14
-
-    sub-int/2addr v2, v3
-
-    add-int/lit8 v4, v4, 0x1
-
-    .line 274
-    invoke-virtual {v14, v4}, Lkotlin/collections/ArrayDeque;->get(I)Ljava/lang/Object;
-
-    move-result-object v0
-
-    check-cast v0, Landroidx/compose/foundation/pager/MeasuredPage;
-
-    move/from16 p8, v3
-
-    goto :goto_f
-
-    :cond_14
-    move-object v10, v0
-
-    move/from16 v16, v2
-
-    .line 282
-    :goto_10
-    new-instance v21, Landroidx/compose/foundation/pager/PagerMeasureKt$measurePager$extraPagesBefore$1;
-
-    move-object/from16 v0, v21
-
-    move-object/from16 v1, p0
-
-    move-wide/from16 v2, v17
-
-    move-object/from16 v4, p2
-
-    move-wide/from16 v5, p16
-
-    move-object/from16 v7, p12
-
-    move-object/from16 v8, p14
-
-    move-object/from16 v9, p13
-
-    move/from16 p7, v15
-
-    move-object v15, v10
-
-    move/from16 v10, p15
-
-    move/from16 v24, v11
-
-    move/from16 v11, p18
-
-    invoke-direct/range {v0 .. v11}, Landroidx/compose/foundation/pager/PagerMeasureKt$measurePager$extraPagesBefore$1;-><init>(Landroidx/compose/foundation/lazy/layout/LazyLayoutMeasureScope;JLandroidx/compose/foundation/pager/PagerLazyLayoutItemProvider;JLandroidx/compose/foundation/gestures/Orientation;Landroidx/compose/ui/Alignment$Horizontal;Landroidx/compose/ui/Alignment$Vertical;ZI)V
-
-    move-object/from16 v0, v21
-
-    check-cast v0, Lkotlin/jvm/functions/Function1;
-
-    move/from16 v11, p19
-
-    move-object/from16 v10, p20
-
-    invoke-static {v12, v11, v10, v0}, Landroidx/compose/foundation/pager/PagerMeasureKt;->createPagesBeforeList(IILjava/util/List;Lkotlin/jvm/functions/Function1;)Ljava/util/List;
-
-    move-result-object v12
-
-    .line 593
-    invoke-interface {v12}, Ljava/util/List;->size()I
-
-    move-result v0
-
-    move/from16 v9, p7
-
-    const/4 v4, 0x0
-
-    :goto_11
-    if-ge v4, v0, :cond_15
-
-    .line 594
-    invoke-interface {v12, v4}, Ljava/util/List;->get(I)Ljava/lang/Object;
-
-    move-result-object v1
-
-    .line 595
-    check-cast v1, Landroidx/compose/foundation/pager/MeasuredPage;
-
-    .line 303
-    invoke-virtual {v1}, Landroidx/compose/foundation/pager/MeasuredPage;->getCrossAxisSize()I
-
-    move-result v1
-
-    invoke-static {v9, v1}, Ljava/lang/Math;->max(II)I
-
-    move-result v9
-
-    add-int/lit8 v4, v4, 0x1
-
-    goto :goto_11
-
-    .line 308
-    :cond_15
-    invoke-virtual {v14}, Lkotlin/collections/ArrayDeque;->last()Ljava/lang/Object;
-
-    move-result-object v0
-
-    check-cast v0, Landroidx/compose/foundation/pager/MeasuredPage;
-
-    invoke-virtual {v0}, Landroidx/compose/foundation/pager/MeasuredPage;->getIndex()I
-
-    move-result v8
-
-    .line 307
-    new-instance v21, Landroidx/compose/foundation/pager/PagerMeasureKt$measurePager$extraPagesAfter$1;
-
-    move-object/from16 v0, v21
-
-    move-object/from16 v1, p0
-
-    move-wide/from16 v2, v17
-
-    move-object/from16 v4, p2
-
-    move-wide/from16 v5, p16
-
-    move-object/from16 v7, p12
-
-    move-object/from16 v17, v14
-
-    move v14, v8
-
-    move-object/from16 v8, p14
-
-    move/from16 v18, v9
-
-    move-object/from16 v9, p13
-
-    move/from16 p7, v13
-
-    move-object v13, v10
-
-    move/from16 v10, p15
-
-    move-object/from16 p8, v12
-
-    move v12, v11
-
-    move/from16 v11, p18
-
-    invoke-direct/range {v0 .. v11}, Landroidx/compose/foundation/pager/PagerMeasureKt$measurePager$extraPagesAfter$1;-><init>(Landroidx/compose/foundation/lazy/layout/LazyLayoutMeasureScope;JLandroidx/compose/foundation/pager/PagerLazyLayoutItemProvider;JLandroidx/compose/foundation/gestures/Orientation;Landroidx/compose/ui/Alignment$Horizontal;Landroidx/compose/ui/Alignment$Vertical;ZI)V
-
-    move-object/from16 v0, v21
-
-    check-cast v0, Lkotlin/jvm/functions/Function1;
-
-    move/from16 v11, p1
-
-    invoke-static {v14, v11, v12, v13, v0}, Landroidx/compose/foundation/pager/PagerMeasureKt;->createPagesAfterList(IIILjava/util/List;Lkotlin/jvm/functions/Function1;)Ljava/util/List;
-
-    move-result-object v3
-
-    .line 599
-    invoke-interface {v3}, Ljava/util/List;->size()I
-
-    move-result v0
-
-    move/from16 v9, v18
-
-    const/4 v4, 0x0
-
-    :goto_12
-    if-ge v4, v0, :cond_16
-
-    .line 600
-    invoke-interface {v3, v4}, Ljava/util/List;->get(I)Ljava/lang/Object;
-
-    move-result-object v1
-
-    .line 601
-    check-cast v1, Landroidx/compose/foundation/pager/MeasuredPage;
-
-    .line 329
-    invoke-virtual {v1}, Landroidx/compose/foundation/pager/MeasuredPage;->getCrossAxisSize()I
-
-    move-result v1
-
-    invoke-static {v9, v1}, Ljava/lang/Math;->max(II)I
-
-    move-result v9
-
-    add-int/lit8 v4, v4, 0x1
-
-    goto :goto_12
-
-    .line 332
-    :cond_16
-    invoke-virtual/range {v17 .. v17}, Lkotlin/collections/ArrayDeque;->first()Ljava/lang/Object;
-
-    move-result-object v0
-
-    invoke-static {v15, v0}, Lkotlin/jvm/internal/Intrinsics;->areEqual(Ljava/lang/Object;Ljava/lang/Object;)Z
-
-    move-result v0
-
-    if-eqz v0, :cond_17
-
-    .line 333
-    invoke-interface/range {p8 .. p8}, Ljava/util/List;->isEmpty()Z
-
-    move-result v0
-
-    if-eqz v0, :cond_17
-
-    .line 334
-    invoke-interface {v3}, Ljava/util/List;->isEmpty()Z
-
-    move-result v0
-
-    if-eqz v0, :cond_17
-
-    const/16 v18, 0x1
-
-    goto :goto_13
-
-    :cond_17
-    const/16 v18, 0x0
-
-    .line 338
-    :goto_13
-    sget-object v0, Landroidx/compose/foundation/gestures/Orientation;->Vertical:Landroidx/compose/foundation/gestures/Orientation;
-
-    move-object/from16 v13, p12
-
-    if-ne v13, v0, :cond_18
-
-    move-wide/from16 v0, p10
-
-    move v2, v9
-
-    goto :goto_14
-
-    :cond_18
-    move/from16 v2, p7
-
-    move-wide/from16 v0, p10
-
-    .line 337
-    :goto_14
-    invoke-static {v0, v1, v2}, Landroidx/compose/ui/unit/ConstraintsKt;->constrainWidth-K40F9xA(JI)I
-
-    move-result v21
-
-    .line 346
-    sget-object v2, Landroidx/compose/foundation/gestures/Orientation;->Vertical:Landroidx/compose/foundation/gestures/Orientation;
-
-    if-ne v13, v2, :cond_19
-
-    move/from16 v9, p7
-
-    .line 345
-    :cond_19
-    invoke-static {v0, v1, v9}, Landroidx/compose/ui/unit/ConstraintsKt;->constrainHeight-K40F9xA(JI)I
-
-    move-result v26
-
-    .line 363
-    move-object/from16 v28, p0
-
-    check-cast v28, Landroidx/compose/ui/unit/Density;
-
-    move-object/from16 v0, p0
-
-    move-object/from16 v1, v27
-
-    move-object/from16 v2, p8
-
-    move/from16 v4, v21
-
-    move/from16 v5, v26
+    add-int/2addr v2, v6
 
     move/from16 v6, p7
 
-    move/from16 v7, p3
+    :goto_9
+    if-ge v1, v14, :cond_e
 
-    move/from16 v8, v24
+    if-lez v6, :cond_e
 
-    move-object/from16 v9, p12
+    add-int/lit8 v6, v6, -0x1
 
-    move/from16 v10, p15
+    .line 254
+    invoke-interface/range {p0 .. p0}, Landroidx/compose/foundation/lazy/layout/LazyLayoutMeasureScope;->getLayoutDirection()Landroidx/compose/ui/unit/LayoutDirection;
 
-    move v12, v11
+    move-result-object v26
 
-    move-object/from16 v11, v28
+    move-object/from16 v16, p0
 
-    move/from16 v12, p6
+    move/from16 v17, v6
 
-    move/from16 v29, p7
+    move-wide/from16 v18, v4
 
-    move-object v14, v13
+    move-object/from16 v20, p2
 
-    move-object/from16 v24, v15
+    move-wide/from16 v21, p15
 
-    move/from16 v15, v25
+    move-object/from16 v23, p11
 
-    move/from16 v13, p18
+    move-object/from16 v24, p13
 
-    .line 352
-    invoke-static/range {v0 .. v13}, Landroidx/compose/foundation/pager/PagerMeasureKt;->calculatePagesOffsets(Landroidx/compose/foundation/lazy/layout/LazyLayoutMeasureScope;Ljava/util/List;Ljava/util/List;Ljava/util/List;IIIIILandroidx/compose/foundation/gestures/Orientation;ZLandroidx/compose/ui/unit/Density;II)Ljava/util/List;
+    move-object/from16 v25, p12
 
-    move-result-object v8
+    move/from16 v27, p14
 
-    if-eqz v18, :cond_1a
+    move/from16 v28, p17
 
-    move-object v9, v8
+    .line 246
+    invoke-static/range {v16 .. v28}, Landroidx/compose/foundation/pager/PagerMeasureKt;->getAndMeasure-SGf7dI0(Landroidx/compose/foundation/lazy/layout/LazyLayoutMeasureScope;IJLandroidx/compose/foundation/pager/PagerLazyLayoutItemProvider;JLandroidx/compose/foundation/gestures/Orientation;Landroidx/compose/ui/Alignment$Horizontal;Landroidx/compose/ui/Alignment$Vertical;Landroidx/compose/ui/unit/LayoutDirection;ZI)Landroidx/compose/foundation/pager/MeasuredPage;
 
-    goto :goto_16
+    move-result-object v7
 
-    .line 605
-    :cond_1a
-    new-instance v0, Ljava/util/ArrayList;
+    const/4 v13, 0x0
 
-    invoke-interface {v8}, Ljava/util/List;->size()I
+    .line 258
+    invoke-virtual {v8, v13, v7}, Lkotlin/collections/ArrayDeque;->add(ILjava/lang/Object;)V
+
+    .line 259
+    invoke-virtual {v7}, Landroidx/compose/foundation/pager/MeasuredPage;->getCrossAxisSize()I
+
+    move-result v7
+
+    invoke-static {v11, v7}, Ljava/lang/Math;->max(II)I
+
+    move-result v11
+
+    add-int/2addr v1, v9
+
+    goto :goto_9
+
+    :cond_e
+    const/4 v13, 0x0
+
+    if-gez v1, :cond_10
+
+    add-int/2addr v2, v1
+
+    move v1, v13
+
+    goto :goto_a
+
+    :cond_f
+    const/4 v13, 0x0
+
+    move/from16 v6, p7
+
+    :cond_10
+    :goto_a
+    move/from16 v35, v11
+
+    move v11, v2
+
+    move/from16 v2, v35
+
+    if-ltz v1, :cond_22
+
+    neg-int v7, v1
+
+    .line 273
+    invoke-virtual {v8}, Lkotlin/collections/ArrayDeque;->first()Ljava/lang/Object;
+
+    move-result-object v16
+
+    check-cast v16, Landroidx/compose/foundation/pager/MeasuredPage;
+
+    if-gtz v14, :cond_12
+
+    if-gez p6, :cond_11
+
+    goto :goto_c
+
+    :cond_11
+    move/from16 v33, v1
+
+    move/from16 p7, v2
+
+    move/from16 v28, v7
+
+    :goto_b
+    move-object/from16 v13, v16
+
+    goto :goto_e
+
+    .line 278
+    :cond_12
+    :goto_c
+    invoke-virtual {v8}, Lkotlin/collections/ArrayDeque;->size()I
+
+    move-result v13
+
+    move/from16 p7, v2
+
+    move v2, v1
+
+    const/4 v1, 0x0
+
+    :goto_d
+    if-ge v1, v13, :cond_13
+
+    if-eqz v2, :cond_13
+
+    if-gt v9, v2, :cond_13
+
+    .line 281
+    move-object/from16 v17, v8
+
+    check-cast v17, Ljava/util/List;
+
+    move/from16 v28, v7
+
+    invoke-static/range {v17 .. v17}, Lkotlin/collections/CollectionsKt;->getLastIndex(Ljava/util/List;)I
+
+    move-result v7
+
+    if-eq v1, v7, :cond_14
+
+    sub-int/2addr v2, v9
+
+    add-int/lit8 v1, v1, 0x1
+
+    .line 284
+    invoke-virtual {v8, v1}, Lkotlin/collections/ArrayDeque;->get(I)Ljava/lang/Object;
+
+    move-result-object v7
+
+    move-object/from16 v16, v7
+
+    check-cast v16, Landroidx/compose/foundation/pager/MeasuredPage;
+
+    move/from16 v7, v28
+
+    goto :goto_d
+
+    :cond_13
+    move/from16 v28, v7
+
+    :cond_14
+    move/from16 v33, v2
+
+    goto :goto_b
+
+    .line 292
+    :goto_e
+    new-instance v1, Landroidx/compose/foundation/pager/PagerMeasureKt$measurePager$extraPagesBefore$1;
+
+    move-object/from16 v16, v1
+
+    move-object/from16 v17, p0
+
+    move-wide/from16 v18, v4
+
+    move-object/from16 v20, p2
+
+    move-wide/from16 v21, p15
+
+    move-object/from16 v23, p11
+
+    move-object/from16 v24, p13
+
+    move-object/from16 v25, p12
+
+    move/from16 v26, p14
+
+    move/from16 v27, p17
+
+    invoke-direct/range {v16 .. v27}, Landroidx/compose/foundation/pager/PagerMeasureKt$measurePager$extraPagesBefore$1;-><init>(Landroidx/compose/foundation/lazy/layout/LazyLayoutMeasureScope;JLandroidx/compose/foundation/pager/PagerLazyLayoutItemProvider;JLandroidx/compose/foundation/gestures/Orientation;Landroidx/compose/ui/Alignment$Horizontal;Landroidx/compose/ui/Alignment$Vertical;ZI)V
+
+    check-cast v1, Lkotlin/jvm/functions/Function1;
+
+    invoke-static {v6, v12, v3, v1}, Landroidx/compose/foundation/pager/PagerMeasureKt;->createPagesBeforeList(IILjava/util/List;Lkotlin/jvm/functions/Function1;)Ljava/util/List;
+
+    move-result-object v6
+
+    .line 638
+    invoke-interface {v6}, Ljava/util/List;->size()I
 
     move-result v1
 
-    invoke-direct {v0, v1}, Ljava/util/ArrayList;-><init>(I)V
+    move/from16 v7, p7
 
-    .line 608
-    invoke-interface {v8}, Ljava/util/List;->size()I
+    const/4 v2, 0x0
+
+    :goto_f
+    if-ge v2, v1, :cond_15
+
+    .line 639
+    invoke-interface {v6, v2}, Ljava/util/List;->get(I)Ljava/lang/Object;
+
+    move-result-object v16
+
+    .line 640
+    check-cast v16, Landroidx/compose/foundation/pager/MeasuredPage;
+
+    move/from16 p7, v1
+
+    .line 313
+    invoke-virtual/range {v16 .. v16}, Landroidx/compose/foundation/pager/MeasuredPage;->getCrossAxisSize()I
 
     move-result v1
 
-    const/4 v4, 0x0
+    invoke-static {v7, v1}, Ljava/lang/Math;->max(II)I
 
-    :goto_15
-    if-ge v4, v1, :cond_1c
+    move-result v7
 
-    .line 609
-    invoke-interface {v8, v4}, Ljava/util/List;->get(I)Ljava/lang/Object;
+    add-int/lit8 v2, v2, 0x1
 
-    move-result-object v2
+    move/from16 v1, p7
 
-    .line 611
-    move-object v3, v2
+    goto :goto_f
 
+    .line 318
+    :cond_15
+    invoke-virtual {v8}, Lkotlin/collections/ArrayDeque;->last()Ljava/lang/Object;
+
+    move-result-object v1
+
+    check-cast v1, Landroidx/compose/foundation/pager/MeasuredPage;
+
+    invoke-virtual {v1}, Landroidx/compose/foundation/pager/MeasuredPage;->getIndex()I
+
+    move-result v1
+
+    .line 317
+    new-instance v2, Landroidx/compose/foundation/pager/PagerMeasureKt$measurePager$extraPagesAfter$1;
+
+    move-object/from16 v16, v2
+
+    move-object/from16 v17, p0
+
+    move-wide/from16 v18, v4
+
+    move-object/from16 v20, p2
+
+    move-wide/from16 v21, p15
+
+    move-object/from16 v23, p11
+
+    move-object/from16 v24, p13
+
+    move-object/from16 v25, p12
+
+    move/from16 v26, p14
+
+    move/from16 v27, p17
+
+    invoke-direct/range {v16 .. v27}, Landroidx/compose/foundation/pager/PagerMeasureKt$measurePager$extraPagesAfter$1;-><init>(Landroidx/compose/foundation/lazy/layout/LazyLayoutMeasureScope;JLandroidx/compose/foundation/pager/PagerLazyLayoutItemProvider;JLandroidx/compose/foundation/gestures/Orientation;Landroidx/compose/ui/Alignment$Horizontal;Landroidx/compose/ui/Alignment$Vertical;ZI)V
+
+    check-cast v2, Lkotlin/jvm/functions/Function1;
+
+    invoke-static {v1, v0, v12, v3, v2}, Landroidx/compose/foundation/pager/PagerMeasureKt;->createPagesAfterList(IIILjava/util/List;Lkotlin/jvm/functions/Function1;)Ljava/util/List;
+
+    move-result-object v4
+
+    .line 644
+    invoke-interface {v4}, Ljava/util/List;->size()I
+
+    move-result v1
+
+    const/4 v2, 0x0
+
+    :goto_10
+    if-ge v2, v1, :cond_16
+
+    .line 645
+    invoke-interface {v4, v2}, Ljava/util/List;->get(I)Ljava/lang/Object;
+
+    move-result-object v3
+
+    .line 646
     check-cast v3, Landroidx/compose/foundation/pager/MeasuredPage;
 
-    .line 369
-    invoke-virtual {v3}, Landroidx/compose/foundation/pager/MeasuredPage;->getIndex()I
+    .line 339
+    invoke-virtual {v3}, Landroidx/compose/foundation/pager/MeasuredPage;->getCrossAxisSize()I
+
+    move-result v3
+
+    invoke-static {v7, v3}, Ljava/lang/Math;->max(II)I
+
+    move-result v7
+
+    add-int/lit8 v2, v2, 0x1
+
+    goto :goto_10
+
+    .line 342
+    :cond_16
+    invoke-virtual {v8}, Lkotlin/collections/ArrayDeque;->first()Ljava/lang/Object;
+
+    move-result-object v1
+
+    invoke-static {v13, v1}, Lkotlin/jvm/internal/Intrinsics;->areEqual(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    move-result v1
+
+    if-eqz v1, :cond_17
+
+    .line 343
+    invoke-interface {v6}, Ljava/util/List;->isEmpty()Z
+
+    move-result v1
+
+    if-eqz v1, :cond_17
+
+    .line 344
+    invoke-interface {v4}, Ljava/util/List;->isEmpty()Z
+
+    move-result v1
+
+    if-eqz v1, :cond_17
+
+    move/from16 v16, v31
+
+    goto :goto_11
+
+    :cond_17
+    const/16 v16, 0x0
+
+    .line 348
+    :goto_11
+    sget-object v1, Landroidx/compose/foundation/gestures/Orientation;->Vertical:Landroidx/compose/foundation/gestures/Orientation;
+
+    move-object/from16 v5, p11
+
+    if-ne v5, v1, :cond_18
+
+    move-wide/from16 v1, p9
+
+    move v3, v7
+
+    goto :goto_12
+
+    :cond_18
+    move-wide/from16 v1, p9
+
+    move v3, v11
+
+    .line 347
+    :goto_12
+    invoke-static {v1, v2, v3}, Landroidx/compose/ui/unit/ConstraintsKt;->constrainWidth-K40F9xA(JI)I
+
+    move-result v17
+
+    .line 356
+    sget-object v3, Landroidx/compose/foundation/gestures/Orientation;->Vertical:Landroidx/compose/foundation/gestures/Orientation;
+
+    if-ne v5, v3, :cond_19
+
+    move v7, v11
+
+    .line 355
+    :cond_19
+    invoke-static {v1, v2, v7}, Landroidx/compose/ui/unit/ConstraintsKt;->constrainHeight-K40F9xA(JI)I
+
+    move-result v18
+
+    .line 363
+    move-object v2, v8
+
+    check-cast v2, Ljava/util/List;
+
+    .line 373
+    move-object/from16 v19, p0
+
+    check-cast v19, Landroidx/compose/ui/unit/Density;
+
+    move-object/from16 v1, p0
+
+    move/from16 v20, p8
+
+    move-object v3, v6
+
+    move/from16 v5, v17
+
+    move/from16 v6, v18
+
+    move/from16 v21, v28
+
+    move v7, v11
+
+    move-object/from16 v22, v8
+
+    move/from16 v8, p3
+
+    move/from16 p0, v9
+
+    move/from16 v9, v21
+
+    move v15, v10
+
+    move/from16 v23, v30
+
+    const/16 v21, 0x0
+
+    move-object/from16 v10, p11
+
+    move-object/from16 v0, p22
+
+    move/from16 v34, v11
+
+    move/from16 v11, p14
+
+    move-object/from16 v12, v19
+
+    move-object/from16 v24, v13
+
+    move/from16 v19, v15
+
+    move-object/from16 v15, p11
+
+    move/from16 v13, p6
+
+    move/from16 v14, p17
+
+    .line 362
+    invoke-static/range {v1 .. v14}, Landroidx/compose/foundation/pager/PagerMeasureKt;->calculatePagesOffsets(Landroidx/compose/foundation/lazy/layout/LazyLayoutMeasureScope;Ljava/util/List;Ljava/util/List;Ljava/util/List;IIIIILandroidx/compose/foundation/gestures/Orientation;ZLandroidx/compose/ui/unit/Density;II)Ljava/util/List;
+
+    move-result-object v7
+
+    if-eqz v16, :cond_1a
+
+    move-object v8, v7
+
+    goto :goto_14
+
+    .line 650
+    :cond_1a
+    new-instance v1, Ljava/util/ArrayList;
+
+    invoke-interface {v7}, Ljava/util/List;->size()I
+
+    move-result v2
+
+    invoke-direct {v1, v2}, Ljava/util/ArrayList;-><init>(I)V
+
+    .line 653
+    invoke-interface {v7}, Ljava/util/List;->size()I
+
+    move-result v2
+
+    move/from16 v10, v21
+
+    :goto_13
+    if-ge v10, v2, :cond_1c
+
+    .line 654
+    invoke-interface {v7, v10}, Ljava/util/List;->get(I)Ljava/lang/Object;
+
+    move-result-object v3
+
+    .line 656
+    move-object v4, v3
+
+    check-cast v4, Landroidx/compose/foundation/pager/MeasuredPage;
+
+    .line 379
+    invoke-virtual {v4}, Landroidx/compose/foundation/pager/MeasuredPage;->getIndex()I
 
     move-result v5
 
-    invoke-virtual/range {v17 .. v17}, Lkotlin/collections/ArrayDeque;->first()Ljava/lang/Object;
+    invoke-virtual/range {v22 .. v22}, Lkotlin/collections/ArrayDeque;->first()Ljava/lang/Object;
 
     move-result-object v6
 
@@ -2072,11 +2000,11 @@
 
     if-lt v5, v6, :cond_1b
 
-    invoke-virtual {v3}, Landroidx/compose/foundation/pager/MeasuredPage;->getIndex()I
+    invoke-virtual {v4}, Landroidx/compose/foundation/pager/MeasuredPage;->getIndex()I
 
-    move-result v3
+    move-result v4
 
-    invoke-virtual/range {v17 .. v17}, Lkotlin/collections/ArrayDeque;->last()Ljava/lang/Object;
+    invoke-virtual/range {v22 .. v22}, Lkotlin/collections/ArrayDeque;->last()Ljava/lang/Object;
 
     move-result-object v5
 
@@ -2086,301 +2014,202 @@
 
     move-result v5
 
-    if-gt v3, v5, :cond_1b
+    if-gt v4, v5, :cond_1b
 
-    .line 611
-    move-object v3, v0
+    .line 656
+    move-object v4, v1
 
-    check-cast v3, Ljava/util/Collection;
+    check-cast v4, Ljava/util/Collection;
 
-    invoke-interface {v3, v2}, Ljava/util/Collection;->add(Ljava/lang/Object;)Z
+    invoke-interface {v4, v3}, Ljava/util/Collection;->add(Ljava/lang/Object;)Z
 
     :cond_1b
-    add-int/lit8 v4, v4, 0x1
+    add-int/lit8 v10, v10, 0x1
+
+    goto :goto_13
+
+    .line 659
+    :cond_1c
+    check-cast v1, Ljava/util/List;
+
+    move-object v8, v1
+
+    .line 384
+    :goto_14
+    sget-object v1, Landroidx/compose/foundation/gestures/Orientation;->Vertical:Landroidx/compose/foundation/gestures/Orientation;
+
+    if-ne v15, v1, :cond_1d
+
+    move/from16 v1, v18
 
     goto :goto_15
 
-    .line 614
-    :cond_1c
-    check-cast v0, Ljava/util/List;
+    :cond_1d
+    move/from16 v1, v17
 
-    move-object v9, v0
+    :goto_15
+    move-object v2, v8
 
-    .line 371
+    move/from16 v3, p4
+
+    move/from16 v4, p5
+
+    move/from16 v5, p0
+
+    move-object/from16 v6, p20
+
+    .line 383
+    invoke-static/range {v1 .. v6}, Landroidx/compose/foundation/pager/PagerMeasureKt;->calculateNewCurrentPage(ILjava/util/List;IIILandroidx/compose/foundation/gestures/snapping/SnapPositionInLayout;)Landroidx/compose/foundation/pager/MeasuredPage;
+
+    move-result-object v11
+
+    if-eqz v11, :cond_1e
+
+    .line 392
+    invoke-virtual {v11}, Landroidx/compose/foundation/pager/MeasuredPage;->getOffset()I
+
+    move-result v10
+
+    move/from16 v1, p0
+
+    goto :goto_16
+
+    :cond_1e
+    move/from16 v1, p0
+
+    move/from16 v10, v21
+
     :goto_16
-    sget-object v0, Landroidx/compose/foundation/gestures/Orientation;->Vertical:Landroidx/compose/foundation/gestures/Orientation;
+    if-nez v1, :cond_1f
 
-    if-ne v14, v0, :cond_1d
-
-    move/from16 v10, v26
+    const/4 v1, 0x0
 
     goto :goto_17
 
-    :cond_1d
-    move/from16 v10, v21
+    :cond_1f
+    int-to-float v2, v10
 
-    .line 616
-    :goto_17
-    invoke-interface {v9}, Ljava/util/List;->isEmpty()Z
+    neg-float v2, v2
 
-    move-result v0
+    int-to-float v1, v1
 
-    if-eqz v0, :cond_1e
+    div-float/2addr v2, v1
 
-    const/4 v0, 0x0
+    const/high16 v1, -0x41000000    # -0.5f
 
-    const/16 v23, 0x1
+    const/high16 v3, 0x3f000000    # 0.5f
 
-    goto/16 :goto_19
-
-    :cond_1e
-    const/4 v11, 0x0
-
-    .line 617
-    invoke-interface {v9, v11}, Ljava/util/List;->get(I)Ljava/lang/Object;
-
-    move-result-object v12
-
-    .line 618
-    move-object v0, v12
-
-    check-cast v0, Landroidx/compose/foundation/pager/MeasuredPage;
-
-    .line 380
-    invoke-virtual {v0}, Landroidx/compose/foundation/pager/MeasuredPage;->getOffset()I
-
-    move-result v5
-
-    .line 381
-    invoke-virtual {v0}, Landroidx/compose/foundation/pager/MeasuredPage;->getIndex()I
-
-    move-result v6
-
-    .line 382
-    invoke-static {}, Landroidx/compose/foundation/pager/PagerStateKt;->getSnapAlignmentStartToStart()Landroidx/compose/foundation/gestures/snapping/SnapPositionInLayout;
-
-    move-result-object v7
-
-    move-object/from16 v0, v28
-
-    move v1, v10
-
-    move/from16 v2, p4
-
-    move/from16 v3, p5
-
-    move/from16 v4, p18
-
-    .line 375
-    invoke-static/range {v0 .. v7}, Landroidx/compose/foundation/gestures/snapping/SnapPositionInLayoutKt;->calculateDistanceToDesiredSnapPosition(Landroidx/compose/ui/unit/Density;IIIIIILandroidx/compose/foundation/gestures/snapping/SnapPositionInLayout;)F
-
-    move-result v0
-
-    invoke-static {v0}, Ljava/lang/Math;->abs(F)F
-
-    move-result v0
-
-    neg-float v0, v0
-
-    .line 619
-    invoke-static {v9}, Lkotlin/collections/CollectionsKt;->getLastIndex(Ljava/util/List;)I
-
-    move-result v13
-
-    const/4 v7, 0x1
-
-    if-gt v7, v13, :cond_21
-
-    move v6, v7
-
-    move-object/from16 v17, v12
-
-    move v12, v0
-
-    .line 620
-    :goto_18
-    invoke-interface {v9, v6}, Ljava/util/List;->get(I)Ljava/lang/Object;
-
-    move-result-object v18
-
-    .line 621
-    move-object/from16 v0, v18
-
-    check-cast v0, Landroidx/compose/foundation/pager/MeasuredPage;
-
-    .line 380
-    invoke-virtual {v0}, Landroidx/compose/foundation/pager/MeasuredPage;->getOffset()I
-
-    move-result v5
-
-    .line 381
-    invoke-virtual {v0}, Landroidx/compose/foundation/pager/MeasuredPage;->getIndex()I
-
-    move-result v23
-
-    .line 382
-    invoke-static {}, Landroidx/compose/foundation/pager/PagerStateKt;->getSnapAlignmentStartToStart()Landroidx/compose/foundation/gestures/snapping/SnapPositionInLayout;
-
-    move-result-object v25
-
-    move-object/from16 v0, v28
-
-    move v1, v10
-
-    move/from16 v2, p4
-
-    move/from16 v3, p5
-
-    move/from16 v4, p18
-
-    move v11, v6
-
-    move/from16 v6, v23
-
-    move/from16 v23, v7
-
-    move-object/from16 v7, v25
-
-    .line 375
-    invoke-static/range {v0 .. v7}, Landroidx/compose/foundation/gestures/snapping/SnapPositionInLayoutKt;->calculateDistanceToDesiredSnapPosition(Landroidx/compose/ui/unit/Density;IIIIIILandroidx/compose/foundation/gestures/snapping/SnapPositionInLayout;)F
-
-    move-result v0
-
-    invoke-static {v0}, Ljava/lang/Math;->abs(F)F
-
-    move-result v0
-
-    neg-float v0, v0
-
-    .line 622
-    invoke-static {v12, v0}, Ljava/lang/Float;->compare(FF)I
+    .line 397
+    invoke-static {v2, v1, v3}, Lkotlin/ranges/RangesKt;->coerceIn(FFF)F
 
     move-result v1
 
-    if-gez v1, :cond_1f
+    :goto_17
+    move v12, v1
 
-    move v12, v0
+    .line 409
+    invoke-static/range {v17 .. v17}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
-    move-object/from16 v17, v18
+    move-result-object v1
 
-    :cond_1f
-    if-eq v11, v13, :cond_20
+    invoke-static/range {v18 .. v18}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
-    add-int/lit8 v6, v11, 0x1
+    move-result-object v2
 
-    move/from16 v7, v23
+    new-instance v3, Landroidx/compose/foundation/pager/PagerMeasureKt$measurePager$9;
 
-    const/4 v11, 0x0
+    move-object/from16 v4, p21
+
+    invoke-direct {v3, v7, v4}, Landroidx/compose/foundation/pager/PagerMeasureKt$measurePager$9;-><init>(Ljava/util/List;Landroidx/compose/runtime/MutableState;)V
+
+    invoke-interface {v0, v1, v2, v3}, Lkotlin/jvm/functions/Function3;->invoke(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object v0
+
+    move-object/from16 v16, v0
+
+    check-cast v16, Landroidx/compose/ui/layout/MeasureResult;
+
+    move/from16 v0, p1
+
+    move/from16 v10, v19
+
+    if-lt v10, v0, :cond_21
+
+    move/from16 v0, p3
+
+    move/from16 v2, v34
+
+    if-le v2, v0, :cond_20
 
     goto :goto_18
 
     :cond_20
-    move-object/from16 v0, v17
+    move/from16 v14, v21
 
     goto :goto_19
 
     :cond_21
-    move/from16 v23, v7
+    :goto_18
+    move/from16 v14, v31
 
-    move-object v0, v12
-
-    .line 373
+    .line 406
     :goto_19
-    check-cast v0, Landroidx/compose/foundation/pager/MeasuredPage;
+    new-instance v17, Landroidx/compose/foundation/pager/PagerMeasureResult;
 
-    .line 392
-    invoke-static/range {v21 .. v21}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+    move-object/from16 v0, v17
 
-    move-result-object v1
+    move-object v1, v8
 
-    invoke-static/range {v26 .. v26}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+    move/from16 v2, p17
 
-    move-result-object v2
+    move/from16 v3, p6
 
-    new-instance v3, Landroidx/compose/foundation/pager/PagerMeasureKt$measurePager$6;
+    move/from16 v4, p5
 
-    invoke-direct {v3, v8}, Landroidx/compose/foundation/pager/PagerMeasureKt$measurePager$6;-><init>(Ljava/util/List;)V
+    move-object/from16 v5, p11
 
-    move-object/from16 v4, p21
-
-    invoke-interface {v4, v1, v2, v3}, Lkotlin/jvm/functions/Function3;->invoke(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
-
-    move-result-object v1
-
-    move-object/from16 v17, v1
-
-    check-cast v17, Landroidx/compose/ui/layout/MeasureResult;
-
-    move/from16 v2, p1
-
-    if-lt v15, v2, :cond_23
-
-    move/from16 v1, p3
-
-    move/from16 v13, v29
-
-    if-le v13, v1, :cond_22
-
-    goto :goto_1a
-
-    :cond_22
-    const/16 v27, 0x0
-
-    goto :goto_1b
-
-    :cond_23
-    :goto_1a
-    move/from16 v27, v23
-
-    .line 387
-    :goto_1b
-    new-instance v18, Landroidx/compose/foundation/pager/PagerMeasureResult;
-
-    .line 390
-    move-object v12, v0
-
-    check-cast v12, Landroidx/compose/foundation/pager/PageInfo;
-
-    move-object/from16 v0, v18
-
-    move-object v1, v9
-
-    move/from16 v2, p1
-
-    move/from16 v3, p18
-
-    move/from16 v4, p6
-
-    move/from16 v5, p5
-
-    move-object/from16 v6, p12
+    move/from16 v6, v23
 
     move/from16 v7, v20
 
-    move/from16 v8, v22
+    move/from16 v8, p14
 
-    move/from16 v9, p15
+    move/from16 v9, p18
 
-    move/from16 v10, v19
+    move-object/from16 v10, v24
 
-    move-object/from16 v11, v24
+    move/from16 v13, v33
 
-    move/from16 v13, v16
+    move-object/from16 v15, v16
 
-    move/from16 v14, v27
+    move/from16 v16, v32
 
-    move-object/from16 v15, v17
+    invoke-direct/range {v0 .. v16}, Landroidx/compose/foundation/pager/PagerMeasureResult;-><init>(Ljava/util/List;IIILandroidx/compose/foundation/gestures/Orientation;IIZILandroidx/compose/foundation/pager/MeasuredPage;Landroidx/compose/foundation/pager/MeasuredPage;FIZLandroidx/compose/ui/layout/MeasureResult;Z)V
 
-    .line 387
-    invoke-direct/range {v0 .. v15}, Landroidx/compose/foundation/pager/PagerMeasureResult;-><init>(Ljava/util/List;IIIILandroidx/compose/foundation/gestures/Orientation;IIZFLandroidx/compose/foundation/pager/MeasuredPage;Landroidx/compose/foundation/pager/PageInfo;IZLandroidx/compose/ui/layout/MeasureResult;)V
+    return-object v17
 
-    return-object v18
-
-    .line 261
-    :cond_24
+    .line 271
+    :cond_22
     new-instance v0, Ljava/lang/IllegalArgumentException;
 
-    invoke-virtual/range {v16 .. v16}, Ljava/lang/Object;->toString()Ljava/lang/String;
+    const-string v1, "invalid currentFirstPageScrollOffset"
+
+    invoke-virtual {v1}, Ljava/lang/Object;->toString()Ljava/lang/String;
+
+    move-result-object v1
+
+    invoke-direct {v0, v1}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
+
+    throw v0
+
+    .line 64
+    :cond_23
+    new-instance v0, Ljava/lang/IllegalArgumentException;
+
+    const-string v1, "negative afterContentPadding"
+
+    invoke-virtual {v1}, Ljava/lang/Object;->toString()Ljava/lang/String;
 
     move-result-object v1
 
@@ -2389,22 +2218,12 @@
     throw v0
 
     .line 63
-    :cond_25
+    :cond_24
     new-instance v0, Ljava/lang/IllegalArgumentException;
 
-    invoke-virtual/range {v16 .. v16}, Ljava/lang/Object;->toString()Ljava/lang/String;
+    const-string v1, "negative beforeContentPadding"
 
-    move-result-object v1
-
-    invoke-direct {v0, v1}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
-
-    throw v0
-
-    .line 62
-    :cond_26
-    new-instance v0, Ljava/lang/IllegalArgumentException;
-
-    invoke-virtual/range {v16 .. v16}, Ljava/lang/Object;->toString()Ljava/lang/String;
+    invoke-virtual {v1}, Ljava/lang/Object;->toString()Ljava/lang/String;
 
     move-result-object v1
 

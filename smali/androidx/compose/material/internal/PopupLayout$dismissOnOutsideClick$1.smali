@@ -1,6 +1,6 @@
 .class final Landroidx/compose/material/internal/PopupLayout$dismissOnOutsideClick$1;
 .super Lkotlin/jvm/internal/Lambda;
-.source "ExposedDropdownMenuPopup.kt"
+.source "ExposedDropdownMenuPopup.android.kt"
 
 # interfaces
 .implements Lkotlin/jvm/functions/Function2;
@@ -97,10 +97,6 @@
 
 .method public final invoke-KMgbckE(Landroidx/compose/ui/geometry/Offset;Landroidx/compose/ui/unit/IntRect;)Ljava/lang/Boolean;
     .locals 2
-
-    const-string p0, "bounds"
-
-    invoke-static {p2, p0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
     const/4 p0, 0x0
 

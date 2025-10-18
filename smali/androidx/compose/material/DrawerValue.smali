@@ -60,7 +60,7 @@
 .method static constructor <clinit>()V
     .locals 3
 
-    .line 81
+    .line 80
     new-instance v0, Landroidx/compose/material/DrawerValue;
 
     const-string v1, "Closed"
@@ -71,7 +71,7 @@
 
     sput-object v0, Landroidx/compose/material/DrawerValue;->Closed:Landroidx/compose/material/DrawerValue;
 
-    .line 86
+    .line 85
     new-instance v0, Landroidx/compose/material/DrawerValue;
 
     const-string v1, "Open"
@@ -99,7 +99,7 @@
         }
     .end annotation
 
-    .line 77
+    .line 76
     invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
     return-void

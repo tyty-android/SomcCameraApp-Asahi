@@ -38,6 +38,8 @@
 
 .field protected static final MSG_FLUSH_OUTPUT_BUFFERS:I = 0x6e
 
+.field protected static final MSG_FRAME_END:I = 0xe
+
 .field protected static final MSG_HANDLE_INPUT_BUFFER:I = 0x66
 
 .field protected static final MSG_PAUSE:I = 0x5
@@ -114,10 +116,6 @@
 
 .field protected mMuxerState:Lcom/sonymobile/android/media/internal/Track$MuxerState;
 
-.field protected mMuxerTrackIndex:I
-
-.field protected mMuxerWrapper:Lcom/sonymobile/android/media/internal/MediaMuxerWrapper;
-
 .field protected mOperatingRate:I
 
 .field protected mPauseLatch:Ljava/util/concurrent/CountDownLatch;
@@ -134,31 +132,26 @@
 
     const v0, 0x1e8480
 
-    .line 86
+    .line 88
     iput v0, p0, Lcom/sonymobile/android/media/internal/Track;->mEncodingBitRate:I
 
     const/4 v0, 0x0
 
-    .line 88
+    .line 90
     iput v0, p0, Lcom/sonymobile/android/media/internal/Track;->mOperatingRate:I
 
-    .line 90
+    .line 92
     iput v0, p0, Lcom/sonymobile/android/media/internal/Track;->mCaptureRate:I
 
     const/16 v0, 0x1e
 
-    .line 92
+    .line 94
     iput v0, p0, Lcom/sonymobile/android/media/internal/Track;->mFrameRate:I
 
-    .line 102
+    .line 104
     sget-object v0, Lcom/sonymobile/android/media/internal/Track$MuxerState;->IDLE:Lcom/sonymobile/android/media/internal/Track$MuxerState;
 
     iput-object v0, p0, Lcom/sonymobile/android/media/internal/Track;->mMuxerState:Lcom/sonymobile/android/media/internal/Track$MuxerState;
-
-    const/4 v0, -0x1
-
-    .line 108
-    iput v0, p0, Lcom/sonymobile/android/media/internal/Track;->mMuxerTrackIndex:I
 
     return-void
 .end method
@@ -168,7 +161,7 @@
 .method protected checkFormat(Landroid/media/MediaCodecList;Landroid/media/MediaFormat;Ljava/lang/String;)Z
     .locals 5
 
-    .line 294
+    .line 288
     invoke-virtual {p1}, Landroid/media/MediaCodecList;->getCodecInfos()[Landroid/media/MediaCodecInfo;
 
     move-result-object p0
@@ -179,7 +172,7 @@
 
     move v1, v0
 
-    .line 296
+    .line 290
     :goto_0
     array-length v2, p0
 
@@ -187,7 +180,7 @@
 
     if-nez v1, :cond_2
 
-    .line 297
+    .line 291
     aget-object v2, p0, v0
 
     invoke-virtual {v2}, Landroid/media/MediaCodecInfo;->getSupportedTypes()[Ljava/lang/String;
@@ -196,7 +189,7 @@
 
     move v3, p1
 
-    .line 298
+    .line 292
     :goto_1
     array-length v4, v2
 
@@ -204,7 +197,7 @@
 
     if-nez v1, :cond_1
 
-    .line 299
+    .line 293
     aget-object v4, v2, v3
 
     invoke-virtual {v4, p3}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
@@ -213,15 +206,15 @@
 
     if-eqz v4, :cond_0
 
-    .line 300
+    .line 294
     aget-object v1, p0, v0
 
-    .line 301
+    .line 295
     invoke-virtual {v1, p3}, Landroid/media/MediaCodecInfo;->getCapabilitiesForType(Ljava/lang/String;)Landroid/media/MediaCodecInfo$CodecCapabilities;
 
     move-result-object v1
 
-    .line 302
+    .line 296
     invoke-virtual {v1, p2}, Landroid/media/MediaCodecInfo$CodecCapabilities;->isFormatSupported(Landroid/media/MediaFormat;)Z
 
     move-result v1
@@ -267,7 +260,7 @@
 .method protected isMuxerStarted()Z
     .locals 1
 
-    .line 270
+    .line 264
     iget-object p0, p0, Lcom/sonymobile/android/media/internal/Track;->mMuxerState:Lcom/sonymobile/android/media/internal/Track$MuxerState;
 
     sget-object v0, Lcom/sonymobile/android/media/internal/Track$MuxerState;->STARTED:Lcom/sonymobile/android/media/internal/Track$MuxerState;
@@ -288,15 +281,15 @@
 .method public pause(Ljava/util/concurrent/CountDownLatch;Z)V
     .locals 1
 
-    .line 161
+    .line 159
     iput-object p1, p0, Lcom/sonymobile/android/media/internal/Track;->mPauseLatch:Ljava/util/concurrent/CountDownLatch;
 
     const/4 p1, 0x0
 
-    .line 162
+    .line 160
     iput-boolean p1, p0, Lcom/sonymobile/android/media/internal/Track;->mIsPauseLatchDown:Z
 
-    .line 163
+    .line 161
     iget-object p1, p0, Lcom/sonymobile/android/media/internal/Track;->mMuxerState:Lcom/sonymobile/android/media/internal/Track$MuxerState;
 
     sget-object v0, Lcom/sonymobile/android/media/internal/Track$MuxerState;->IDLE:Lcom/sonymobile/android/media/internal/Track$MuxerState;
@@ -305,17 +298,17 @@
 
     if-nez p2, :cond_0
 
-    .line 166
+    .line 164
     iget-object p1, p0, Lcom/sonymobile/android/media/internal/Track;->mPauseLatch:Ljava/util/concurrent/CountDownLatch;
 
     invoke-virtual {p1}, Ljava/util/concurrent/CountDownLatch;->countDown()V
 
     const/4 p1, 0x1
 
-    .line 167
+    .line 165
     iput-boolean p1, p0, Lcom/sonymobile/android/media/internal/Track;->mIsPauseLatchDown:Z
 
-    .line 169
+    .line 167
     :cond_0
     iget-object p0, p0, Lcom/sonymobile/android/media/internal/Track;->mEventHandler:Lcom/sonymobile/android/media/internal/Track$EventHandler;
 
@@ -333,7 +326,7 @@
 .method public prepare()V
     .locals 2
 
-    .line 178
+    .line 176
     iget-object v0, p0, Lcom/sonymobile/android/media/internal/Track;->mHandlerHelper:Lcom/sonymobile/android/media/internal/HandlerHelper;
 
     iget-object p0, p0, Lcom/sonymobile/android/media/internal/Track;->mEventHandler:Lcom/sonymobile/android/media/internal/Track$EventHandler;
@@ -352,7 +345,7 @@
 .method public release()V
     .locals 3
 
-    .line 201
+    .line 199
     iget-object v0, p0, Lcom/sonymobile/android/media/internal/Track;->mHandlerHelper:Lcom/sonymobile/android/media/internal/HandlerHelper;
 
     iget-object v1, p0, Lcom/sonymobile/android/media/internal/Track;->mEventHandler:Lcom/sonymobile/android/media/internal/Track$EventHandler;
@@ -365,7 +358,7 @@
 
     invoke-virtual {v0, v1}, Lcom/sonymobile/android/media/internal/HandlerHelper;->sendMessageAndAwaitResponse(Landroid/os/Message;)Ljava/lang/Object;
 
-    .line 202
+    .line 200
     iget-object p0, p0, Lcom/sonymobile/android/media/internal/Track;->mHandlerHelper:Lcom/sonymobile/android/media/internal/HandlerHelper;
 
     invoke-virtual {p0}, Lcom/sonymobile/android/media/internal/HandlerHelper;->releaseAllLocks()V
@@ -376,7 +369,7 @@
 .method public reset()V
     .locals 2
 
-    .line 216
+    .line 214
     iget-object v0, p0, Lcom/sonymobile/android/media/internal/Track;->mHandlerHelper:Lcom/sonymobile/android/media/internal/HandlerHelper;
 
     iget-object p0, p0, Lcom/sonymobile/android/media/internal/Track;->mEventHandler:Lcom/sonymobile/android/media/internal/Track$EventHandler;
@@ -395,7 +388,7 @@
 .method public resume(Ljava/util/concurrent/CountDownLatch;)V
     .locals 1
 
-    .line 209
+    .line 207
     iget-object p0, p0, Lcom/sonymobile/android/media/internal/Track;->mEventHandler:Lcom/sonymobile/android/media/internal/Track$EventHandler;
 
     const/4 v0, 0x6
@@ -412,7 +405,7 @@
 .method protected sendProgressTimeUs(ILandroid/media/MediaCodec$BufferInfo;)V
     .locals 4
 
-    .line 254
+    .line 248
     iget-wide v0, p2, Landroid/media/MediaCodec$BufferInfo;->presentationTimeUs:J
 
     iget-wide v2, p0, Lcom/sonymobile/android/media/internal/Track;->mLastProgressTimeUs:J
@@ -427,7 +420,7 @@
 
     shl-int/lit8 p1, p1, 0x1c
 
-    .line 257
+    .line 251
     iget-wide v0, p2, Landroid/media/MediaCodec$BufferInfo;->presentationTimeUs:J
 
     iget-wide v2, p0, Lcom/sonymobile/android/media/internal/Track;->mLastProgressTimeUs:J
@@ -438,7 +431,7 @@
 
     div-long/2addr v0, v2
 
-    .line 259
+    .line 253
     iget-object p0, p0, Lcom/sonymobile/android/media/internal/Track;->mMediaRecordercallback:Landroid/os/Handler;
 
     or-int/lit16 p1, p1, 0x3e9
@@ -451,7 +444,7 @@
 
     move-result-object p0
 
-    .line 261
+    .line 255
     invoke-virtual {p0}, Landroid/os/Message;->sendToTarget()V
 
     :cond_0
@@ -461,7 +454,7 @@
 .method public setCaptureRate(I)V
     .locals 0
 
-    .line 148
+    .line 146
     iput p1, p0, Lcom/sonymobile/android/media/internal/Track;->mCaptureRate:I
 
     return-void
@@ -470,7 +463,7 @@
 .method public setClock(Lcom/sonymobile/android/media/internal/ClockInterface;)V
     .locals 0
 
-    .line 156
+    .line 154
     iput-object p1, p0, Lcom/sonymobile/android/media/internal/Track;->mClock:Lcom/sonymobile/android/media/internal/ClockInterface;
 
     return-void
@@ -479,7 +472,7 @@
 .method public setEncodingBitrate(I)V
     .locals 0
 
-    .line 137
+    .line 135
     iput p1, p0, Lcom/sonymobile/android/media/internal/Track;->mEncodingBitRate:I
 
     return-void
@@ -488,17 +481,8 @@
 .method public setFrameRate(I)V
     .locals 0
 
-    .line 152
+    .line 150
     iput p1, p0, Lcom/sonymobile/android/media/internal/Track;->mFrameRate:I
-
-    return-void
-.end method
-
-.method public setMediaMuxer(Lcom/sonymobile/android/media/internal/MediaMuxerWrapper;)V
-    .locals 0
-
-    .line 222
-    iput-object p1, p0, Lcom/sonymobile/android/media/internal/Track;->mMuxerWrapper:Lcom/sonymobile/android/media/internal/MediaMuxerWrapper;
 
     return-void
 .end method
@@ -506,7 +490,7 @@
 .method public setMediaMuxerStarted()V
     .locals 1
 
-    .line 233
+    .line 227
     sget-object v0, Lcom/sonymobile/android/media/internal/Track$MuxerState;->STARTED:Lcom/sonymobile/android/media/internal/Track$MuxerState;
 
     iput-object v0, p0, Lcom/sonymobile/android/media/internal/Track;->mMuxerState:Lcom/sonymobile/android/media/internal/Track$MuxerState;
@@ -517,7 +501,7 @@
 .method public setMediaMuxerStopped()V
     .locals 1
 
-    .line 250
+    .line 244
     sget-object v0, Lcom/sonymobile/android/media/internal/Track$MuxerState;->STOPPED:Lcom/sonymobile/android/media/internal/Track$MuxerState;
 
     iput-object v0, p0, Lcom/sonymobile/android/media/internal/Track;->mMuxerState:Lcom/sonymobile/android/media/internal/Track$MuxerState;
@@ -528,7 +512,7 @@
 .method public setOperatingRate(I)V
     .locals 0
 
-    .line 144
+    .line 142
     iput p1, p0, Lcom/sonymobile/android/media/internal/Track;->mOperatingRate:I
 
     return-void
@@ -537,7 +521,7 @@
 .method public start()V
     .locals 3
 
-    .line 185
+    .line 183
     iget-object v0, p0, Lcom/sonymobile/android/media/internal/Track;->mHandlerHelper:Lcom/sonymobile/android/media/internal/HandlerHelper;
 
     iget-object v1, p0, Lcom/sonymobile/android/media/internal/Track;->mEventHandler:Lcom/sonymobile/android/media/internal/Track$EventHandler;
@@ -552,7 +536,7 @@
 
     const-wide/16 v0, 0x0
 
-    .line 187
+    .line 185
     iput-wide v0, p0, Lcom/sonymobile/android/media/internal/Track;->mLastProgressTimeUs:J
 
     return-void
@@ -561,7 +545,7 @@
 .method public stop()V
     .locals 2
 
-    .line 194
+    .line 192
     iget-object v0, p0, Lcom/sonymobile/android/media/internal/Track;->mHandlerHelper:Lcom/sonymobile/android/media/internal/HandlerHelper;
 
     iget-object p0, p0, Lcom/sonymobile/android/media/internal/Track;->mEventHandler:Lcom/sonymobile/android/media/internal/Track$EventHandler;

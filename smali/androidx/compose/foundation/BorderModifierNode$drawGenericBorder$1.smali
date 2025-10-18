@@ -72,7 +72,7 @@
 .method public bridge synthetic invoke(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
 
-    .line 219
+    .line 223
     check-cast p1, Landroidx/compose/ui/graphics/drawscope/ContentDrawScope;
 
     invoke-virtual {p0, p1}, Landroidx/compose/foundation/BorderModifierNode$drawGenericBorder$1;->invoke(Landroidx/compose/ui/graphics/drawscope/ContentDrawScope;)V
@@ -83,31 +83,29 @@
 .end method
 
 .method public final invoke(Landroidx/compose/ui/graphics/drawscope/ContentDrawScope;)V
-    .locals 10
+    .locals 9
 
-    const-string v0, "$this$onDrawWithContent"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 220
+    .line 224
     invoke-interface {p1}, Landroidx/compose/ui/graphics/drawscope/ContentDrawScope;->drawContent()V
 
-    .line 221
-    move-object v1, p1
+    .line 225
+    move-object v0, p1
 
-    check-cast v1, Landroidx/compose/ui/graphics/drawscope/DrawScope;
+    check-cast v0, Landroidx/compose/ui/graphics/drawscope/DrawScope;
 
     iget-object p1, p0, Landroidx/compose/foundation/BorderModifierNode$drawGenericBorder$1;->$outline:Landroidx/compose/ui/graphics/Outline$Generic;
 
     invoke-virtual {p1}, Landroidx/compose/ui/graphics/Outline$Generic;->getPath()Landroidx/compose/ui/graphics/Path;
 
-    move-result-object v2
+    move-result-object v1
 
-    iget-object v3, p0, Landroidx/compose/foundation/BorderModifierNode$drawGenericBorder$1;->$brush:Landroidx/compose/ui/graphics/Brush;
+    iget-object v2, p0, Landroidx/compose/foundation/BorderModifierNode$drawGenericBorder$1;->$brush:Landroidx/compose/ui/graphics/Brush;
 
-    const/16 v8, 0x3c
+    const/16 v7, 0x3c
 
-    const/4 v9, 0x0
+    const/4 v8, 0x0
+
+    const/4 v3, 0x0
 
     const/4 v4, 0x0
 
@@ -115,9 +113,7 @@
 
     const/4 v6, 0x0
 
-    const/4 v7, 0x0
-
-    invoke-static/range {v1 .. v9}, Landroidx/compose/ui/graphics/drawscope/DrawScope;->drawPath-GBMwjPU$default(Landroidx/compose/ui/graphics/drawscope/DrawScope;Landroidx/compose/ui/graphics/Path;Landroidx/compose/ui/graphics/Brush;FLandroidx/compose/ui/graphics/drawscope/DrawStyle;Landroidx/compose/ui/graphics/ColorFilter;IILjava/lang/Object;)V
+    invoke-static/range {v0 .. v8}, Landroidx/compose/ui/graphics/drawscope/DrawScope;->drawPath-GBMwjPU$default(Landroidx/compose/ui/graphics/drawscope/DrawScope;Landroidx/compose/ui/graphics/Path;Landroidx/compose/ui/graphics/Brush;FLandroidx/compose/ui/graphics/drawscope/DrawStyle;Landroidx/compose/ui/graphics/ColorFilter;IILjava/lang/Object;)V
 
     return-void
 .end method

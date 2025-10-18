@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Ljp/co/sony/mc/camera/view/uistate/LevelMeterUiState;-><init>(Ljp/co/sony/mc/camera/view/viewmodel/CameraSettingsModel;Ljp/co/sony/mc/camera/view/viewmodel/CameraStatusModel;Ljp/co/sony/mc/camera/view/uistate/ProModeCommonUiState;Ljp/co/sony/mc/camera/view/viewmodel/SystemStatusModel;Ljp/co/sony/mc/camera/view/uistate/ModeDialUiState;)V
+    value = Ljp/co/sony/mc/camera/view/uistate/LevelMeterUiState;-><init>(Ljp/co/sony/mc/camera/view/viewmodel/CameraSettingsModel;Ljp/co/sony/mc/camera/view/viewmodel/CameraStatusModel;Ljp/co/sony/mc/camera/view/uistate/ProModeCommonUiState;Ljp/co/sony/mc/camera/view/viewmodel/SystemStatusModel;Ljp/co/sony/mc/camera/view/uistate/ModeDialUiState;Ljp/co/sony/mc/camera/view/uistate/BasicModeCommonUiState;)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -33,8 +33,8 @@
     }
     k = 0x1
     mv = {
-        0x1,
-        0x9,
+        0x2,
+        0x0,
         0x0
     }
     xi = 0x30
@@ -51,7 +51,7 @@
 
     iput-object p1, p0, Ljp/co/sony/mc/camera/view/uistate/LevelMeterUiState$poseRotationFetcher$1;->this$0:Ljp/co/sony/mc/camera/view/uistate/LevelMeterUiState;
 
-    .line 54
+    .line 56
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -62,7 +62,7 @@
 .method public setPoseRotationListener(Ljp/co/sony/mc/camera/CameraStatusNotifier$PoseRotationResultListener;)V
     .locals 0
 
-    .line 56
+    .line 58
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/uistate/LevelMeterUiState$poseRotationFetcher$1;->this$0:Ljp/co/sony/mc/camera/view/uistate/LevelMeterUiState;
 
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/view/uistate/LevelMeterUiState;->getOperator()Ljp/co/sony/mc/camera/view/CameraOperator;
@@ -80,7 +80,7 @@
 .method public startMonitorPoseRotation()V
     .locals 0
 
-    .line 60
+    .line 62
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/uistate/LevelMeterUiState$poseRotationFetcher$1;->this$0:Ljp/co/sony/mc/camera/view/uistate/LevelMeterUiState;
 
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/view/uistate/LevelMeterUiState;->getOperator()Ljp/co/sony/mc/camera/view/CameraOperator;
@@ -98,7 +98,7 @@
 .method public stopMonitorPoseRotation()V
     .locals 0
 
-    .line 64
+    .line 66
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/uistate/LevelMeterUiState$poseRotationFetcher$1;->this$0:Ljp/co/sony/mc/camera/view/uistate/LevelMeterUiState;
 
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/view/uistate/LevelMeterUiState;->getOperator()Ljp/co/sony/mc/camera/view/CameraOperator;

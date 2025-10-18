@@ -34,7 +34,7 @@
 
     const/4 v0, 0x1
 
-    .line 239
+    .line 244
     invoke-direct {p0, v0}, Landroidx/emoji2/text/MetadataRepo$Node;-><init>(I)V
 
     return-void
@@ -43,10 +43,10 @@
 .method constructor <init>(I)V
     .locals 1
 
-    .line 243
+    .line 248
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 244
+    .line 249
     new-instance v0, Landroid/util/SparseArray;
 
     invoke-direct {v0, p1}, Landroid/util/SparseArray;-><init>(I)V
@@ -61,7 +61,7 @@
 .method get(I)Landroidx/emoji2/text/MetadataRepo$Node;
     .locals 0
 
-    .line 248
+    .line 253
     iget-object p0, p0, Landroidx/emoji2/text/MetadataRepo$Node;->mChildren:Landroid/util/SparseArray;
 
     if-nez p0, :cond_0
@@ -84,7 +84,7 @@
 .method final getData()Landroidx/emoji2/text/TypefaceEmojiRasterizer;
     .locals 0
 
-    .line 252
+    .line 257
     iget-object p0, p0, Landroidx/emoji2/text/MetadataRepo$Node;->mData:Landroidx/emoji2/text/TypefaceEmojiRasterizer;
 
     return-object p0
@@ -93,7 +93,7 @@
 .method put(Landroidx/emoji2/text/TypefaceEmojiRasterizer;II)V
     .locals 2
 
-    .line 257
+    .line 262
     invoke-virtual {p1, p2}, Landroidx/emoji2/text/TypefaceEmojiRasterizer;->getCodepointAt(I)I
 
     move-result v0
@@ -104,12 +104,12 @@
 
     if-nez v0, :cond_0
 
-    .line 259
+    .line 264
     new-instance v0, Landroidx/emoji2/text/MetadataRepo$Node;
 
     invoke-direct {v0}, Landroidx/emoji2/text/MetadataRepo$Node;-><init>()V
 
-    .line 260
+    .line 265
     iget-object p0, p0, Landroidx/emoji2/text/MetadataRepo$Node;->mChildren:Landroid/util/SparseArray;
 
     invoke-virtual {p1, p2}, Landroidx/emoji2/text/TypefaceEmojiRasterizer;->getCodepointAt(I)I
@@ -123,12 +123,12 @@
 
     add-int/lit8 p2, p2, 0x1
 
-    .line 264
+    .line 269
     invoke-virtual {v0, p1, p2, p3}, Landroidx/emoji2/text/MetadataRepo$Node;->put(Landroidx/emoji2/text/TypefaceEmojiRasterizer;II)V
 
     goto :goto_0
 
-    .line 266
+    .line 271
     :cond_1
     iput-object p1, v0, Landroidx/emoji2/text/MetadataRepo$Node;->mData:Landroidx/emoji2/text/TypefaceEmojiRasterizer;
 

@@ -84,7 +84,7 @@
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 522
+    .line 552
     invoke-direct {p0, p1}, Lkotlin/collections/builders/MapBuilder$Itr;-><init>(Lkotlin/collections/builders/MapBuilder;)V
 
     return-void
@@ -95,7 +95,7 @@
 .method public bridge synthetic next()Ljava/lang/Object;
     .locals 0
 
-    .line 522
+    .line 552
     invoke-virtual {p0}, Lkotlin/collections/builders/MapBuilder$EntriesItr;->next()Lkotlin/collections/builders/MapBuilder$EntryRef;
 
     move-result-object p0
@@ -113,7 +113,10 @@
         }
     .end annotation
 
-    .line 525
+    .line 555
+    invoke-virtual {p0}, Lkotlin/collections/builders/MapBuilder$EntriesItr;->checkForComodification$kotlin_stdlib()V
+
+    .line 556
     invoke-virtual {p0}, Lkotlin/collections/builders/MapBuilder$EntriesItr;->getIndex$kotlin_stdlib()I
 
     move-result v0
@@ -128,7 +131,7 @@
 
     if-ge v0, v1, :cond_0
 
-    .line 526
+    .line 557
     invoke-virtual {p0}, Lkotlin/collections/builders/MapBuilder$EntriesItr;->getIndex$kotlin_stdlib()I
 
     move-result v0
@@ -139,7 +142,7 @@
 
     invoke-virtual {p0, v0}, Lkotlin/collections/builders/MapBuilder$EntriesItr;->setLastIndex$kotlin_stdlib(I)V
 
-    .line 527
+    .line 558
     new-instance v0, Lkotlin/collections/builders/MapBuilder$EntryRef;
 
     invoke-virtual {p0}, Lkotlin/collections/builders/MapBuilder$EntriesItr;->getMap$kotlin_stdlib()Lkotlin/collections/builders/MapBuilder;
@@ -152,12 +155,12 @@
 
     invoke-direct {v0, v1, v2}, Lkotlin/collections/builders/MapBuilder$EntryRef;-><init>(Lkotlin/collections/builders/MapBuilder;I)V
 
-    .line 528
+    .line 559
     invoke-virtual {p0}, Lkotlin/collections/builders/MapBuilder$EntriesItr;->initNext$kotlin_stdlib()V
 
     return-object v0
 
-    .line 525
+    .line 556
     :cond_0
     new-instance p0, Ljava/util/NoSuchElementException;
 
@@ -173,7 +176,7 @@
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 541
+    .line 572
     invoke-virtual {p0}, Lkotlin/collections/builders/MapBuilder$EntriesItr;->getIndex$kotlin_stdlib()I
 
     move-result v0
@@ -188,7 +191,7 @@
 
     if-ge v0, v1, :cond_2
 
-    .line 542
+    .line 573
     invoke-virtual {p0}, Lkotlin/collections/builders/MapBuilder$EntriesItr;->getIndex$kotlin_stdlib()I
 
     move-result v0
@@ -199,7 +202,7 @@
 
     invoke-virtual {p0, v0}, Lkotlin/collections/builders/MapBuilder$EntriesItr;->setLastIndex$kotlin_stdlib(I)V
 
-    .line 543
+    .line 574
     invoke-virtual {p0}, Lkotlin/collections/builders/MapBuilder$EntriesItr;->getMap$kotlin_stdlib()Lkotlin/collections/builders/MapBuilder;
 
     move-result-object v0
@@ -214,18 +217,14 @@
 
     aget-object v0, v0, v1
 
-    .line 544
+    .line 575
     invoke-virtual {p0}, Lkotlin/collections/builders/MapBuilder$EntriesItr;->getMap$kotlin_stdlib()Lkotlin/collections/builders/MapBuilder;
 
     move-result-object v1
 
-    invoke-static {v0, v1}, Lkotlin/jvm/internal/Intrinsics;->areEqual(Ljava/lang/Object;Ljava/lang/Object;)Z
-
-    move-result v1
-
     const-string v2, "(this Map)"
 
-    if-eqz v1, :cond_0
+    if-ne v0, v1, :cond_0
 
     invoke-virtual {p1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -237,10 +236,10 @@
     :goto_0
     const/16 v0, 0x3d
 
-    .line 545
+    .line 576
     invoke-virtual {p1, v0}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
 
-    .line 546
+    .line 577
     invoke-virtual {p0}, Lkotlin/collections/builders/MapBuilder$EntriesItr;->getMap$kotlin_stdlib()Lkotlin/collections/builders/MapBuilder;
 
     move-result-object v0
@@ -257,16 +256,12 @@
 
     aget-object v0, v0, v1
 
-    .line 547
+    .line 578
     invoke-virtual {p0}, Lkotlin/collections/builders/MapBuilder$EntriesItr;->getMap$kotlin_stdlib()Lkotlin/collections/builders/MapBuilder;
 
     move-result-object v1
 
-    invoke-static {v0, v1}, Lkotlin/jvm/internal/Intrinsics;->areEqual(Ljava/lang/Object;Ljava/lang/Object;)Z
-
-    move-result v1
-
-    if-eqz v1, :cond_1
+    if-ne v0, v1, :cond_1
 
     invoke-virtual {p1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -275,13 +270,13 @@
     :cond_1
     invoke-virtual {p1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
-    .line 548
+    .line 579
     :goto_1
     invoke-virtual {p0}, Lkotlin/collections/builders/MapBuilder$EntriesItr;->initNext$kotlin_stdlib()V
 
     return-void
 
-    .line 541
+    .line 572
     :cond_2
     new-instance p0, Ljava/util/NoSuchElementException;
 
@@ -293,7 +288,7 @@
 .method public final nextHashCode$kotlin_stdlib()I
     .locals 4
 
-    .line 533
+    .line 564
     invoke-virtual {p0}, Lkotlin/collections/builders/MapBuilder$EntriesItr;->getIndex$kotlin_stdlib()I
 
     move-result v0
@@ -308,7 +303,7 @@
 
     if-ge v0, v1, :cond_2
 
-    .line 534
+    .line 565
     invoke-virtual {p0}, Lkotlin/collections/builders/MapBuilder$EntriesItr;->getIndex$kotlin_stdlib()I
 
     move-result v0
@@ -319,7 +314,7 @@
 
     invoke-virtual {p0, v0}, Lkotlin/collections/builders/MapBuilder$EntriesItr;->setLastIndex$kotlin_stdlib(I)V
 
-    .line 535
+    .line 566
     invoke-virtual {p0}, Lkotlin/collections/builders/MapBuilder$EntriesItr;->getMap$kotlin_stdlib()Lkotlin/collections/builders/MapBuilder;
 
     move-result-object v0
@@ -373,12 +368,12 @@
     :cond_1
     xor-int/2addr v0, v1
 
-    .line 536
+    .line 567
     invoke-virtual {p0}, Lkotlin/collections/builders/MapBuilder$EntriesItr;->initNext$kotlin_stdlib()V
 
     return v0
 
-    .line 533
+    .line 564
     :cond_2
     new-instance p0, Ljava/util/NoSuchElementException;
 

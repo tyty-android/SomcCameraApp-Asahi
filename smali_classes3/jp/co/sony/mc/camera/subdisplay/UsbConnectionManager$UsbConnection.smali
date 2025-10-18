@@ -15,7 +15,7 @@
 
 .annotation runtime Lkotlin/Metadata;
     d1 = {
-        "\u0000\\\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0010\u0008\n\u0000\n\u0002\u0010\u000e\n\u0002\u0008\u0002\n\u0002\u0010\t\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0003\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000b\n\u0002\u0008\u0004\n\u0002\u0010\u0002\n\u0002\u0008\u0004\n\u0002\u0010\u0012\n\u0002\u0008\u0007\u0008\u0082\u0004\u0018\u00002\u00020\u0001B\u0015\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\u0006\u0010\u0004\u001a\u00020\u0005\u00a2\u0006\u0002\u0010\u0006J\u0006\u0010\u001d\u001a\u00020\u001eJ\u0006\u0010\u001f\u001a\u00020\u0019J\u0011\u0010 \u001a\u00020\u001eH\u0082@\u00f8\u0001\u0000\u00a2\u0006\u0002\u0010!J\u0008\u0010\"\u001a\u00020#H\u0002J\u0010\u0010$\u001a\u00020\u001e2\u0006\u0010%\u001a\u00020\nH\u0002J\u0006\u0010&\u001a\u00020\u001eJ\u0006\u0010\'\u001a\u00020\u001eJ\u0006\u0010(\u001a\u00020\u001eJ\u0006\u0010)\u001a\u00020\u001eR\u000e\u0010\u0007\u001a\u00020\u0008X\u0082D\u00a2\u0006\u0002\n\u0000R\u000e\u0010\t\u001a\u00020\nX\u0082D\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u000b\u001a\u00020\nX\u0082D\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u000c\u001a\u00020\rX\u0082D\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u000e\u001a\u00020\u0008X\u0082D\u00a2\u0006\u0002\n\u0000R\u0010\u0010\u000f\u001a\u0004\u0018\u00010\u0010X\u0082\u000e\u00a2\u0006\u0002\n\u0000R\u0010\u0010\u0011\u001a\u0004\u0018\u00010\u0010X\u0082\u000e\u00a2\u0006\u0002\n\u0000R\u0010\u0010\u0012\u001a\u0004\u0018\u00010\u0010X\u0082\u000e\u00a2\u0006\u0002\n\u0000R\u0010\u0010\u0013\u001a\u0004\u0018\u00010\u0014X\u0082\u000e\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u0015\u001a\u00020\u0005X\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u0010\u0010\u0016\u001a\u0004\u0018\u00010\u0017X\u0082\u000e\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u0018\u001a\u00020\u0019X\u0082\u000e\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u001a\u001a\u00020\u0019X\u0082\u000e\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u001b\u001a\u00020\nX\u0082\u000e\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u001c\u001a\u00020\u0003X\u0082\u0004\u00a2\u0006\u0002\n\u0000\u0082\u0002\u0004\n\u0002\u0008\u0019\u00a8\u0006*"
+        "\u0000X\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0003\n\u0002\u0010\u0008\n\u0000\n\u0002\u0010\t\n\u0002\u0008\u0002\n\u0002\u0010\u000e\n\u0002\u0008\u0004\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0003\n\u0002\u0010\u000b\n\u0002\u0008\u0004\n\u0002\u0010\u0002\n\u0002\u0008\t\n\u0002\u0010\u0012\n\u0000\u0008\u0082\u0004\u0018\u00002\u00020\u0001B\u0017\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\u0006\u0010\u0004\u001a\u00020\u0005\u00a2\u0006\u0004\u0008\u0006\u0010\u0007J\u0006\u0010\u001e\u001a\u00020\u001bJ\u0006\u0010\u001f\u001a\u00020 J\u0006\u0010!\u001a\u00020 J\u0006\u0010\"\u001a\u00020 J\u0006\u0010#\u001a\u00020 J\u0006\u0010$\u001a\u00020 J\u000e\u0010%\u001a\u00020 H\u0082@\u00a2\u0006\u0002\u0010&J\u0010\u0010\'\u001a\u00020 2\u0006\u0010(\u001a\u00020\u000eH\u0002J\u0008\u0010)\u001a\u00020*H\u0002R\u000e\u0010\u0008\u001a\u00020\tX\u0082D\u00a2\u0006\u0002\n\u0000R\u000e\u0010\n\u001a\u00020\u000bX\u0082D\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u000c\u001a\u00020\tX\u0082D\u00a2\u0006\u0002\n\u0000R\u000e\u0010\r\u001a\u00020\u000eX\u0082D\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u000f\u001a\u00020\u000eX\u0082D\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u0010\u001a\u00020\u0003X\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u0011\u001a\u00020\u0005X\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u0010\u0010\u0012\u001a\u0004\u0018\u00010\u0013X\u0082\u000e\u00a2\u0006\u0002\n\u0000R\u0010\u0010\u0014\u001a\u0004\u0018\u00010\u0015X\u0082\u000e\u00a2\u0006\u0002\n\u0000R\u0010\u0010\u0016\u001a\u0004\u0018\u00010\u0017X\u0082\u000e\u00a2\u0006\u0002\n\u0000R\u0010\u0010\u0018\u001a\u0004\u0018\u00010\u0017X\u0082\u000e\u00a2\u0006\u0002\n\u0000R\u0010\u0010\u0019\u001a\u0004\u0018\u00010\u0017X\u0082\u000e\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u001a\u001a\u00020\u001bX\u0082\u000e\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u001c\u001a\u00020\u001bX\u0082\u000e\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u001d\u001a\u00020\u000eX\u0082\u000e\u00a2\u0006\u0002\n\u0000\u00a8\u0006+"
     }
     d2 = {
         "Ljp/co/sony/mc/camera/subdisplay/UsbConnectionManager$UsbConnection;",
@@ -24,48 +24,49 @@
         "Landroid/hardware/usb/UsbManager;",
         "device",
         "Landroid/hardware/usb/UsbDevice;",
+        "<init>",
         "(Ljp/co/sony/mc/camera/subdisplay/UsbConnectionManager;Landroid/hardware/usb/UsbManager;Landroid/hardware/usb/UsbDevice;)V",
-        "BULKTRANSFER_TIMEOUT",
+        "INTERFACE_NUM",
         "",
+        "DELAY_SEND_SHOW_DATA",
+        "",
+        "BULKTRANSFER_TIMEOUT",
         "COMMAND_SHOW",
         "",
         "COMMAND_STOP",
-        "DELAY_SEND_SHOW_DATA",
-        "",
-        "INTERFACE_NUM",
-        "endpointIn",
-        "Landroid/hardware/usb/UsbEndpoint;",
-        "endpointInterruptIn",
-        "endpointOut",
+        "mUsbManager",
+        "mDevice",
         "mConnection",
         "Landroid/hardware/usb/UsbDeviceConnection;",
-        "mDevice",
         "mInterface",
         "Landroid/hardware/usb/UsbInterface;",
-        "mIsPolling",
-        "",
+        "endpointIn",
+        "Landroid/hardware/usb/UsbEndpoint;",
+        "endpointOut",
+        "endpointInterruptIn",
         "mIsStarted",
-        "mSendingCommand",
-        "mUsbManager",
-        "disconnect",
         "",
+        "mIsPolling",
+        "mSendingCommand",
         "isReady",
+        "startReceiveData",
+        "",
+        "stopReceiveData",
+        "startPolling",
+        "stopPolling",
+        "disconnect",
         "polling",
         "(Lkotlin/coroutines/Continuation;)Ljava/lang/Object;",
-        "receiveDataBulk",
-        "",
         "sendDataBulk",
         "command",
-        "startPolling",
-        "startReceiveData",
-        "stopPolling",
-        "stopReceiveData",
+        "receiveDataBulk",
+        "",
         "SomcCamera_release"
     }
     k = 0x1
     mv = {
-        0x1,
-        0x9,
+        0x2,
+        0x0,
         0x0
     }
     xi = 0x30
@@ -108,7 +109,7 @@
 
 # direct methods
 .method public constructor <init>(Ljp/co/sony/mc/camera/subdisplay/UsbConnectionManager;Landroid/hardware/usb/UsbManager;Landroid/hardware/usb/UsbDevice;)V
-    .locals 3
+    .locals 6
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -163,25 +164,29 @@
     .line 335
     sget-boolean p1, Ljp/co/sony/mc/camera/util/CamLog;->DEBUG:Z
 
+    const/4 v0, 0x0
+
+    const/4 v1, 0x1
+
     if-eqz p1, :cond_0
 
-    new-instance p1, Ljava/lang/StringBuilder;
+    new-array p1, v1, [Ljava/lang/String;
 
-    const-string v0, "onStart:"
+    new-instance v2, Ljava/lang/StringBuilder;
 
-    invoke-direct {p1, v0}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+    const-string v3, "onStart:"
 
-    invoke-virtual {p1, p3}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+    invoke-direct {v2, v3}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
-    move-result-object p1
+    invoke-virtual {v2, p3}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {p1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    move-result-object v2
 
-    move-result-object p1
+    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    filled-new-array {p1}, [Ljava/lang/String;
+    move-result-object v2
 
-    move-result-object p1
+    aput-object v2, p1, v0
 
     invoke-static {p1}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
@@ -194,11 +199,11 @@
     if-nez p1, :cond_1
 
     .line 338
-    const-string p0, "No device permission."
+    new-array p0, v1, [Ljava/lang/String;
 
-    filled-new-array {p0}, [Ljava/lang/String;
+    const-string p1, "No device permission."
 
-    move-result-object p0
+    aput-object p1, p0, v0
 
     invoke-static {p0}, Ljp/co/sony/mc/camera/util/CamLog;->e([Ljava/lang/String;)V
 
@@ -230,7 +235,7 @@
 
     move-result p1
 
-    const/4 p2, 0x0
+    move p2, v0
 
     :goto_0
     if-ge p2, p1, :cond_6
@@ -245,52 +250,52 @@
     move-result-object p3
 
     .line 346
-    sget-boolean v0, Ljp/co/sony/mc/camera/util/CamLog;->DEBUG:Z
+    sget-boolean v2, Ljp/co/sony/mc/camera/util/CamLog;->DEBUG:Z
 
-    if-eqz v0, :cond_2
+    if-eqz v2, :cond_2
+
+    new-array v2, v1, [Ljava/lang/String;
 
     invoke-virtual {p3}, Landroid/hardware/usb/UsbEndpoint;->getType()I
 
-    move-result v0
+    move-result v3
 
-    new-instance v1, Ljava/lang/StringBuilder;
+    new-instance v4, Ljava/lang/StringBuilder;
 
-    const-string/jumbo v2, "type="
+    const-string/jumbo v5, "type="
 
-    invoke-direct {v1, v2}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+    invoke-direct {v4, v5}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
-    invoke-virtual {v1, v0}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+    invoke-virtual {v4, v3}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
-    move-result-object v0
+    move-result-object v3
 
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-virtual {v3}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    move-result-object v0
+    move-result-object v3
 
-    filled-new-array {v0}, [Ljava/lang/String;
+    aput-object v3, v2, v0
 
-    move-result-object v0
-
-    invoke-static {v0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
+    invoke-static {v2}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
     .line 347
     :cond_2
     invoke-virtual {p3}, Landroid/hardware/usb/UsbEndpoint;->getType()I
 
-    move-result v0
+    move-result v2
 
-    const/4 v1, 0x2
+    const/4 v3, 0x2
 
-    const/16 v2, 0x80
+    const/16 v4, 0x80
 
-    if-ne v0, v1, :cond_4
+    if-ne v2, v3, :cond_4
 
     .line 348
     invoke-virtual {p3}, Landroid/hardware/usb/UsbEndpoint;->getDirection()I
 
-    move-result v0
+    move-result v2
 
-    if-ne v0, v2, :cond_3
+    if-ne v2, v4, :cond_3
 
     .line 349
     iput-object p3, p0, Ljp/co/sony/mc/camera/subdisplay/UsbConnectionManager$UsbConnection;->endpointIn:Landroid/hardware/usb/UsbEndpoint;
@@ -301,9 +306,9 @@
     :cond_3
     invoke-virtual {p3}, Landroid/hardware/usb/UsbEndpoint;->getDirection()I
 
-    move-result v0
+    move-result v2
 
-    if-nez v0, :cond_5
+    if-nez v2, :cond_5
 
     .line 351
     iput-object p3, p0, Ljp/co/sony/mc/camera/subdisplay/UsbConnectionManager$UsbConnection;->endpointOut:Landroid/hardware/usb/UsbEndpoint;
@@ -314,18 +319,18 @@
     :cond_4
     invoke-virtual {p3}, Landroid/hardware/usb/UsbEndpoint;->getType()I
 
-    move-result v0
+    move-result v2
 
-    const/4 v1, 0x3
+    const/4 v3, 0x3
 
-    if-ne v0, v1, :cond_5
+    if-ne v2, v3, :cond_5
 
     .line 354
     invoke-virtual {p3}, Landroid/hardware/usb/UsbEndpoint;->getDirection()I
 
-    move-result v0
+    move-result v2
 
-    if-ne v0, v2, :cond_5
+    if-ne v2, v4, :cond_5
 
     .line 355
     iput-object p3, p0, Ljp/co/sony/mc/camera/subdisplay/UsbConnectionManager$UsbConnection;->endpointInterruptIn:Landroid/hardware/usb/UsbEndpoint;
@@ -356,20 +361,18 @@
 
     iget-object p0, p0, Ljp/co/sony/mc/camera/subdisplay/UsbConnectionManager$UsbConnection;->mInterface:Landroid/hardware/usb/UsbInterface;
 
-    const/4 p2, 0x1
-
-    invoke-virtual {p1, p0, p2}, Landroid/hardware/usb/UsbDeviceConnection;->claimInterface(Landroid/hardware/usb/UsbInterface;Z)Z
+    invoke-virtual {p1, p0, v1}, Landroid/hardware/usb/UsbDeviceConnection;->claimInterface(Landroid/hardware/usb/UsbInterface;Z)Z
 
     goto :goto_3
 
     .line 360
     :cond_8
     :goto_2
-    const-string p0, "Device has not IN/OUT Endpoint."
+    new-array p0, v1, [Ljava/lang/String;
 
-    filled-new-array {p0}, [Ljava/lang/String;
+    const-string p1, "Device has not IN/OUT Endpoint."
 
-    move-result-object p0
+    aput-object p1, p0, v0
 
     invoke-static {p0}, Ljp/co/sony/mc/camera/util/CamLog;->e([Ljava/lang/String;)V
 
@@ -520,18 +523,22 @@
 .end method
 
 .method private final receiveDataBulk()[B
-    .locals 6
+    .locals 8
 
     .line 457
     sget-boolean v0, Ljp/co/sony/mc/camera/util/CamLog;->DEBUG:Z
 
+    const/4 v1, 0x1
+
+    const/4 v2, 0x0
+
     if-eqz v0, :cond_0
 
-    const-string v0, "receiveDataBulk"
+    new-array v0, v1, [Ljava/lang/String;
 
-    filled-new-array {v0}, [Ljava/lang/String;
+    const-string v3, "receiveDataBulk"
 
-    move-result-object v0
+    aput-object v3, v0, v2
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
@@ -545,107 +552,109 @@
 
     move-result v0
 
-    new-array v1, v0, [B
+    new-array v3, v0, [B
 
     .line 462
     :cond_1
-    iget-boolean v2, p0, Ljp/co/sony/mc/camera/subdisplay/UsbConnectionManager$UsbConnection;->mIsStarted:Z
+    iget-boolean v4, p0, Ljp/co/sony/mc/camera/subdisplay/UsbConnectionManager$UsbConnection;->mIsStarted:Z
 
-    const/4 v3, 0x0
-
-    if-nez v2, :cond_2
+    if-nez v4, :cond_2
 
     .line 463
-    new-array p0, v3, [B
+    new-array p0, v2, [B
 
     return-object p0
 
     .line 465
     :cond_2
-    sget-boolean v2, Ljp/co/sony/mc/camera/util/CamLog;->DEBUG:Z
+    sget-boolean v4, Ljp/co/sony/mc/camera/util/CamLog;->DEBUG:Z
 
-    if-eqz v2, :cond_3
+    if-eqz v4, :cond_3
 
-    const-string v2, "receiveDataBulk do"
+    new-array v4, v1, [Ljava/lang/String;
 
-    filled-new-array {v2}, [Ljava/lang/String;
+    const-string v5, "receiveDataBulk do"
 
-    move-result-object v2
+    aput-object v5, v4, v2
 
-    invoke-static {v2}, Ljp/co/sony/mc/camera/util/CamLog;->v([Ljava/lang/String;)V
+    invoke-static {v4}, Ljp/co/sony/mc/camera/util/CamLog;->v([Ljava/lang/String;)V
 
     .line 466
     :cond_3
-    iget-object v2, p0, Ljp/co/sony/mc/camera/subdisplay/UsbConnectionManager$UsbConnection;->mConnection:Landroid/hardware/usb/UsbDeviceConnection;
+    iget-object v4, p0, Ljp/co/sony/mc/camera/subdisplay/UsbConnectionManager$UsbConnection;->mConnection:Landroid/hardware/usb/UsbDeviceConnection;
 
-    if-eqz v2, :cond_4
+    if-eqz v4, :cond_4
 
     .line 467
-    iget-object v4, p0, Ljp/co/sony/mc/camera/subdisplay/UsbConnectionManager$UsbConnection;->endpointIn:Landroid/hardware/usb/UsbEndpoint;
+    iget-object v5, p0, Ljp/co/sony/mc/camera/subdisplay/UsbConnectionManager$UsbConnection;->endpointIn:Landroid/hardware/usb/UsbEndpoint;
 
-    iget v5, p0, Ljp/co/sony/mc/camera/subdisplay/UsbConnectionManager$UsbConnection;->BULKTRANSFER_TIMEOUT:I
+    iget v6, p0, Ljp/co/sony/mc/camera/subdisplay/UsbConnectionManager$UsbConnection;->BULKTRANSFER_TIMEOUT:I
 
     .line 466
-    invoke-virtual {v2, v4, v1, v0, v5}, Landroid/hardware/usb/UsbDeviceConnection;->bulkTransfer(Landroid/hardware/usb/UsbEndpoint;[BII)I
+    invoke-virtual {v4, v5, v3, v0, v6}, Landroid/hardware/usb/UsbDeviceConnection;->bulkTransfer(Landroid/hardware/usb/UsbEndpoint;[BII)I
 
-    move-result v2
+    move-result v4
 
     goto :goto_0
 
     :cond_4
-    const/4 v2, -0x1
+    const/4 v4, -0x1
 
     .line 468
     :goto_0
-    sget-boolean v4, Ljp/co/sony/mc/camera/util/CamLog;->DEBUG:Z
+    sget-boolean v5, Ljp/co/sony/mc/camera/util/CamLog;->DEBUG:Z
 
-    if-eqz v4, :cond_5
+    if-eqz v5, :cond_5
 
-    new-instance v4, Ljava/lang/StringBuilder;
+    new-array v5, v1, [Ljava/lang/String;
 
-    const-string v5, "receiveDataBulk length : "
+    new-instance v6, Ljava/lang/StringBuilder;
 
-    invoke-direct {v4, v5}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+    const-string v7, "receiveDataBulk length : "
 
-    invoke-virtual {v4, v2}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+    invoke-direct {v6, v7}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
-    move-result-object v4
+    invoke-virtual {v6, v4}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v4}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    move-result-object v6
 
-    move-result-object v4
+    invoke-virtual {v6}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    filled-new-array {v4}, [Ljava/lang/String;
+    move-result-object v6
 
-    move-result-object v4
+    aput-object v6, v5, v2
 
-    invoke-static {v4}, Ljp/co/sony/mc/camera/util/CamLog;->v([Ljava/lang/String;)V
+    invoke-static {v5}, Ljp/co/sony/mc/camera/util/CamLog;->v([Ljava/lang/String;)V
 
     :cond_5
-    if-lez v2, :cond_1
+    if-lez v4, :cond_1
 
     .line 471
-    new-array p0, v2, [B
+    new-array p0, v4, [B
 
     .line 472
-    invoke-static {v1, v3, p0, v3, v2}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
+    invoke-static {v3, v2, p0, v2, v4}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
 
     return-object p0
 .end method
 
 .method private final sendDataBulk(Ljava/lang/String;)V
-    .locals 3
+    .locals 5
 
     .line 448
     sget-boolean v0, Ljp/co/sony/mc/camera/util/CamLog;->DEBUG:Z
 
+    const/4 v1, 0x0
+
+    const/4 v2, 0x1
+
     if-eqz v0, :cond_0
 
-    const-string v0, "sendDataBulk"
+    new-array v0, v2, [Ljava/lang/String;
 
-    filled-new-array {v0}, [Ljava/lang/String;
+    const-string v3, "sendDataBulk"
 
-    move-result-object v0
+    aput-object v3, v0, v1
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
@@ -657,7 +666,7 @@
 
     move-result-object p1
 
-    const-string/jumbo v0, "this as java.lang.String).getBytes(charset)"
+    const-string v0, "getBytes(...)"
 
     invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
 
@@ -667,14 +676,14 @@
     if-eqz v0, :cond_1
 
     .line 452
-    iget-object v1, p0, Ljp/co/sony/mc/camera/subdisplay/UsbConnectionManager$UsbConnection;->endpointOut:Landroid/hardware/usb/UsbEndpoint;
+    iget-object v3, p0, Ljp/co/sony/mc/camera/subdisplay/UsbConnectionManager$UsbConnection;->endpointOut:Landroid/hardware/usb/UsbEndpoint;
 
-    array-length v2, p1
+    array-length v4, p1
 
     iget p0, p0, Ljp/co/sony/mc/camera/subdisplay/UsbConnectionManager$UsbConnection;->BULKTRANSFER_TIMEOUT:I
 
     .line 451
-    invoke-virtual {v0, v1, p1, v2, p0}, Landroid/hardware/usb/UsbDeviceConnection;->bulkTransfer(Landroid/hardware/usb/UsbEndpoint;[BII)I
+    invoke-virtual {v0, v3, p1, v4, p0}, Landroid/hardware/usb/UsbDeviceConnection;->bulkTransfer(Landroid/hardware/usb/UsbEndpoint;[BII)I
 
     move-result p0
 
@@ -689,13 +698,15 @@
 
     if-eqz p1, :cond_2
 
-    new-instance p1, Ljava/lang/StringBuilder;
+    new-array p1, v2, [Ljava/lang/String;
 
-    const-string v0, "sendDataBulk res:"
+    new-instance v0, Ljava/lang/StringBuilder;
 
-    invoke-direct {p1, v0}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+    const-string v2, "sendDataBulk res:"
 
-    invoke-virtual {p1, p0}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+    invoke-direct {v0, v2}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+
+    invoke-virtual {v0, p0}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
     move-result-object p0
 
@@ -703,11 +714,9 @@
 
     move-result-object p0
 
-    filled-new-array {p0}, [Ljava/lang/String;
+    aput-object p0, p1, v1
 
-    move-result-object p0
-
-    invoke-static {p0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
+    invoke-static {p1}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
     :cond_2
     return-void
@@ -716,32 +725,36 @@
 
 # virtual methods
 .method public final disconnect()V
-    .locals 3
+    .locals 4
 
     .line 434
     sget-boolean v0, Ljp/co/sony/mc/camera/util/CamLog;->DEBUG:Z
 
     if-eqz v0, :cond_0
 
-    iget-object v0, p0, Ljp/co/sony/mc/camera/subdisplay/UsbConnectionManager$UsbConnection;->mDevice:Landroid/hardware/usb/UsbDevice;
+    const/4 v0, 0x1
 
-    new-instance v1, Ljava/lang/StringBuilder;
+    new-array v0, v0, [Ljava/lang/String;
 
-    const-string v2, "onDetach:"
+    iget-object v1, p0, Ljp/co/sony/mc/camera/subdisplay/UsbConnectionManager$UsbConnection;->mDevice:Landroid/hardware/usb/UsbDevice;
 
-    invoke-direct {v1, v2}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+    new-instance v2, Ljava/lang/StringBuilder;
 
-    invoke-virtual {v1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+    const-string v3, "onDetach:"
 
-    move-result-object v0
+    invoke-direct {v2, v3}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-virtual {v2, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
-    move-result-object v0
+    move-result-object v1
 
-    filled-new-array {v0}, [Ljava/lang/String;
+    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    move-result-object v0
+    move-result-object v1
+
+    const/4 v2, 0x0
+
+    aput-object v1, v0, v2
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
@@ -796,21 +809,23 @@
     .line 409
     sget-boolean v0, Ljp/co/sony/mc/camera/util/CamLog;->DEBUG:Z
 
+    const/4 v1, 0x1
+
     if-eqz v0, :cond_0
 
-    const-string v0, "invoke"
+    new-array v0, v1, [Ljava/lang/String;
 
-    filled-new-array {v0}, [Ljava/lang/String;
+    const/4 v2, 0x0
 
-    move-result-object v0
+    const-string v3, "invoke"
+
+    aput-object v3, v0, v2
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
-    :cond_0
-    const/4 v0, 0x1
-
     .line 410
-    iput-boolean v0, p0, Ljp/co/sony/mc/camera/subdisplay/UsbConnectionManager$UsbConnection;->mIsPolling:Z
+    :cond_0
+    iput-boolean v1, p0, Ljp/co/sony/mc/camera/subdisplay/UsbConnectionManager$UsbConnection;->mIsPolling:Z
 
     .line 411
     iget-object v0, p0, Ljp/co/sony/mc/camera/subdisplay/UsbConnectionManager$UsbConnection;->COMMAND_SHOW:Ljava/lang/String;
@@ -851,21 +866,23 @@
     .line 380
     sget-boolean v0, Ljp/co/sony/mc/camera/util/CamLog;->DEBUG:Z
 
+    const/4 v1, 0x1
+
     if-eqz v0, :cond_0
 
-    const-string v0, "invoke"
+    new-array v0, v1, [Ljava/lang/String;
 
-    filled-new-array {v0}, [Ljava/lang/String;
+    const/4 v2, 0x0
 
-    move-result-object v0
+    const-string v3, "invoke"
+
+    aput-object v3, v0, v2
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
-    :cond_0
-    const/4 v0, 0x1
-
     .line 381
-    iput-boolean v0, p0, Ljp/co/sony/mc/camera/subdisplay/UsbConnectionManager$UsbConnection;->mIsStarted:Z
+    :cond_0
+    iput-boolean v1, p0, Ljp/co/sony/mc/camera/subdisplay/UsbConnectionManager$UsbConnection;->mIsStarted:Z
 
     .line 382
     iget-object v0, p0, Ljp/co/sony/mc/camera/subdisplay/UsbConnectionManager$UsbConnection;->this$0:Ljp/co/sony/mc/camera/subdisplay/UsbConnectionManager;
@@ -898,26 +915,28 @@
 .end method
 
 .method public final stopPolling()V
-    .locals 1
+    .locals 4
 
     .line 423
     sget-boolean v0, Ljp/co/sony/mc/camera/util/CamLog;->DEBUG:Z
 
+    const/4 v1, 0x1
+
+    const/4 v2, 0x0
+
     if-eqz v0, :cond_0
 
-    const-string v0, "invoke"
+    new-array v0, v1, [Ljava/lang/String;
 
-    filled-new-array {v0}, [Ljava/lang/String;
+    const-string v3, "invoke"
 
-    move-result-object v0
+    aput-object v3, v0, v2
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
-    :cond_0
-    const/4 v0, 0x0
-
     .line 424
-    iput-boolean v0, p0, Ljp/co/sony/mc/camera/subdisplay/UsbConnectionManager$UsbConnection;->mIsPolling:Z
+    :cond_0
+    iput-boolean v2, p0, Ljp/co/sony/mc/camera/subdisplay/UsbConnectionManager$UsbConnection;->mIsPolling:Z
 
     .line 425
     iget-object v0, p0, Ljp/co/sony/mc/camera/subdisplay/UsbConnectionManager$UsbConnection;->COMMAND_STOP:Ljava/lang/String;
@@ -929,11 +948,11 @@
 
     if-eqz v0, :cond_1
 
-    iget-object v0, p0, Ljp/co/sony/mc/camera/subdisplay/UsbConnectionManager$UsbConnection;->mSendingCommand:Ljava/lang/String;
+    new-array v0, v1, [Ljava/lang/String;
 
-    filled-new-array {v0}, [Ljava/lang/String;
+    iget-object v1, p0, Ljp/co/sony/mc/camera/subdisplay/UsbConnectionManager$UsbConnection;->mSendingCommand:Ljava/lang/String;
 
-    move-result-object v0
+    aput-object v1, v0, v2
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
@@ -947,26 +966,28 @@
 .end method
 
 .method public final stopReceiveData()V
-    .locals 1
+    .locals 3
 
     .line 401
     sget-boolean v0, Ljp/co/sony/mc/camera/util/CamLog;->DEBUG:Z
 
+    const/4 v1, 0x0
+
     if-eqz v0, :cond_0
 
-    const-string v0, "invoke"
+    const/4 v0, 0x1
 
-    filled-new-array {v0}, [Ljava/lang/String;
+    new-array v0, v0, [Ljava/lang/String;
 
-    move-result-object v0
+    const-string v2, "invoke"
+
+    aput-object v2, v0, v1
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
-    :cond_0
-    const/4 v0, 0x0
-
     .line 402
-    iput-boolean v0, p0, Ljp/co/sony/mc/camera/subdisplay/UsbConnectionManager$UsbConnection;->mIsStarted:Z
+    :cond_0
+    iput-boolean v1, p0, Ljp/co/sony/mc/camera/subdisplay/UsbConnectionManager$UsbConnection;->mIsStarted:Z
 
     return-void
 .end method

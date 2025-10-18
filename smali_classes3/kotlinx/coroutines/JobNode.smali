@@ -40,7 +40,7 @@
     k = 0x1
     mv = {
         0x1,
-        0x6,
+        0x8,
         0x0
     }
     xi = 0x30
@@ -55,7 +55,7 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 1351
+    .line 1344
     invoke-direct {p0}, Lkotlinx/coroutines/CompletionHandlerBase;-><init>()V
 
     return-void
@@ -66,7 +66,7 @@
 .method public dispose()V
     .locals 1
 
-    .line 1358
+    .line 1351
     invoke-virtual {p0}, Lkotlinx/coroutines/JobNode;->getJob()Lkotlinx/coroutines/JobSupport;
 
     move-result-object v0
@@ -79,7 +79,7 @@
 .method public final getJob()Lkotlinx/coroutines/JobSupport;
     .locals 0
 
-    .line 1355
+    .line 1348
     iget-object p0, p0, Lkotlinx/coroutines/JobNode;->job:Lkotlinx/coroutines/JobSupport;
 
     if-eqz p0, :cond_0
@@ -115,7 +115,7 @@
 .method public final setJob(Lkotlinx/coroutines/JobSupport;)V
     .locals 0
 
-    .line 1355
+    .line 1348
     iput-object p1, p0, Lkotlinx/coroutines/JobNode;->job:Lkotlinx/coroutines/JobSupport;
 
     return-void
@@ -124,7 +124,7 @@
 .method public toString()Ljava/lang/String;
     .locals 2
 
-    .line 1359
+    .line 1352
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V

@@ -1805,10 +1805,14 @@
 
     if-eqz v6, :cond_3
 
-    .line 764
-    filled-new-array {p2}, [Ljava/lang/String;
+    const/4 p1, 0x1
 
-    move-result-object v0
+    .line 764
+    new-array v0, p1, [Ljava/lang/String;
+
+    const/4 p1, 0x0
+
+    aput-object p2, v0, p1
 
     goto :goto_0
 

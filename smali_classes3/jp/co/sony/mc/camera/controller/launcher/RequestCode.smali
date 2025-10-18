@@ -32,8 +32,6 @@
 
 .field public static final REQUEST_SPIRIT_LEVEL_CALIBRATION:I = 0x18
 
-.field public static final REQUEST_VIDEO_PLAYER:I = 0x21
-
 .field public static final REQUEST_WIFI_SETTINGS:I = 0x17
 
 .field public static final REQUEST_YOUTUBE_AUTH:I = 0x22

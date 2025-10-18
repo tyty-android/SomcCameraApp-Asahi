@@ -84,7 +84,7 @@
 .method public bridge synthetic invoke(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
 
-    .line 599
+    .line 577
     invoke-virtual {p0, p1}, Landroidx/compose/animation/AnimatedContentTransitionScopeImpl$SizeModifier$measure$size$2;->invoke-YEO4UFw(Ljava/lang/Object;)J
 
     move-result-wide p0
@@ -104,7 +104,7 @@
         }
     .end annotation
 
-    .line 607
+    .line 584
     iget-object p0, p0, Landroidx/compose/animation/AnimatedContentTransitionScopeImpl$SizeModifier$measure$size$2;->this$0:Landroidx/compose/animation/AnimatedContentTransitionScopeImpl;
 
     invoke-virtual {p0}, Landroidx/compose/animation/AnimatedContentTransitionScopeImpl;->getTargetSizeMap$animation_release()Ljava/util/Map;

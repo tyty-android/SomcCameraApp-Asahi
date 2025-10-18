@@ -70,16 +70,16 @@
 .method public final invoke()Landroidx/compose/foundation/lazy/LazyListState;
     .locals 2
 
-    .line 63
+    .line 80
     new-instance v0, Landroidx/compose/foundation/lazy/LazyListState;
 
-    .line 64
+    .line 81
     iget v1, p0, Landroidx/compose/foundation/lazy/LazyListStateKt$rememberLazyListState$1$1;->$initialFirstVisibleItemIndex:I
 
-    .line 65
+    .line 82
     iget p0, p0, Landroidx/compose/foundation/lazy/LazyListStateKt$rememberLazyListState$1$1;->$initialFirstVisibleItemScrollOffset:I
 
-    .line 63
+    .line 80
     invoke-direct {v0, v1, p0}, Landroidx/compose/foundation/lazy/LazyListState;-><init>(II)V
 
     return-object v0
@@ -88,7 +88,7 @@
 .method public bridge synthetic invoke()Ljava/lang/Object;
     .locals 0
 
-    .line 62
+    .line 79
     invoke-virtual {p0}, Landroidx/compose/foundation/lazy/LazyListStateKt$rememberLazyListState$1$1;->invoke()Landroidx/compose/foundation/lazy/LazyListState;
 
     move-result-object p0

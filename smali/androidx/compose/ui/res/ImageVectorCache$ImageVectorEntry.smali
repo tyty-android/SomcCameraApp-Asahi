@@ -68,11 +68,7 @@
 .end method
 
 .method public constructor <init>(Landroidx/compose/ui/graphics/vector/ImageVector;I)V
-    .locals 1
-
-    const-string v0, "imageVector"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+    .locals 0
 
     .line 124
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -130,10 +126,6 @@
 
 .method public final copy(Landroidx/compose/ui/graphics/vector/ImageVector;I)Landroidx/compose/ui/res/ImageVectorCache$ImageVectorEntry;
     .locals 0
-
-    const-string p0, "imageVector"
-
-    invoke-static {p1, p0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
     new-instance p0, Landroidx/compose/ui/res/ImageVectorCache$ImageVectorEntry;
 

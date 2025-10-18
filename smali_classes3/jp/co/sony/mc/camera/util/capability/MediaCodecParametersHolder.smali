@@ -44,7 +44,7 @@
 
     const/4 v0, 0x1
 
-    if-eqz p0, :cond_3
+    if-eqz p0, :cond_4
 
     .line 106
     invoke-interface {p0}, Ljava/util/List;->isEmpty()Z
@@ -53,7 +53,7 @@
 
     if-eqz v1, :cond_0
 
-    goto :goto_2
+    goto :goto_1
 
     :cond_0
     const/16 v1, 0x1000
@@ -69,10 +69,7 @@
 
     if-eqz v2, :cond_1
 
-    :goto_0
-    move v0, v1
-
-    goto :goto_1
+    goto :goto_0
 
     :cond_1
     const/4 v1, 0x2
@@ -90,41 +87,48 @@
 
     goto :goto_0
 
-    .line 118
     :cond_2
-    :goto_1
+    move v1, v0
+
+    .line 118
+    :goto_0
     sget-boolean p0, Ljp/co/sony/mc/camera/util/CamLog;->DEBUG:Z
 
     if-eqz p0, :cond_3
 
     .line 119
-    new-instance p0, Ljava/lang/StringBuilder;
+    new-array p0, v0, [Ljava/lang/String;
 
-    const-string v1, "decideVideoHdrProfile: Profile Found: "
+    new-instance v0, Ljava/lang/StringBuilder;
 
-    invoke-direct {p0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+    const-string v2, "decideVideoHdrProfile: Profile Found: "
 
-    invoke-virtual {p0, v0}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+    invoke-direct {v0, v2}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
-    move-result-object p0
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
-    invoke-virtual {p0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    move-result-object v0
 
-    move-result-object p0
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    filled-new-array {p0}, [Ljava/lang/String;
+    move-result-object v0
 
-    move-result-object p0
+    const/4 v2, 0x0
+
+    aput-object v0, p0, v2
 
     invoke-static {p0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
     :cond_3
-    :goto_2
+    return v1
+
+    :cond_4
+    :goto_1
     return v0
 .end method
 
 .method private findEncoderCodec(Ljava/lang/String;)Landroid/media/MediaCodecInfo;
-    .locals 8
+    .locals 9
 
     .line 153
     new-instance p0, Landroid/media/MediaCodecList;
@@ -138,47 +142,47 @@
 
     move-result-object p0
 
-    array-length v0, p0
+    array-length v1, p0
 
-    const/4 v1, 0x0
+    const/4 v2, 0x0
 
-    move v2, v1
+    move v3, v2
 
     :goto_0
-    if-ge v2, v0, :cond_4
+    if-ge v3, v1, :cond_4
 
-    aget-object v3, p0, v2
+    aget-object v4, p0, v3
 
     .line 155
-    invoke-virtual {v3}, Landroid/media/MediaCodecInfo;->isEncoder()Z
+    invoke-virtual {v4}, Landroid/media/MediaCodecInfo;->isEncoder()Z
 
-    move-result v4
+    move-result v5
 
-    if-nez v4, :cond_0
+    if-nez v5, :cond_0
 
     goto :goto_2
 
     .line 159
     :cond_0
-    invoke-virtual {v3}, Landroid/media/MediaCodecInfo;->getSupportedTypes()[Ljava/lang/String;
+    invoke-virtual {v4}, Landroid/media/MediaCodecInfo;->getSupportedTypes()[Ljava/lang/String;
 
-    move-result-object v4
+    move-result-object v5
 
-    array-length v5, v4
+    array-length v6, v5
 
-    move v6, v1
+    move v7, v2
 
     :goto_1
-    if-ge v6, v5, :cond_3
+    if-ge v7, v6, :cond_3
 
-    aget-object v7, v4, v6
+    aget-object v8, v5, v7
 
     .line 160
-    invoke-virtual {p1, v7}, Ljava/lang/String;->equalsIgnoreCase(Ljava/lang/String;)Z
+    invoke-virtual {p1, v8}, Ljava/lang/String;->equalsIgnoreCase(Ljava/lang/String;)Z
 
-    move-result v7
+    move-result v8
 
-    if-eqz v7, :cond_2
+    if-eqz v8, :cond_2
 
     .line 161
     sget-boolean p0, Ljp/co/sony/mc/camera/util/CamLog;->DEBUG:Z
@@ -186,75 +190,75 @@
     if-eqz p0, :cond_1
 
     .line 162
-    new-instance p0, Ljava/lang/StringBuilder;
+    new-array p0, v0, [Ljava/lang/String;
 
-    const-string v0, "findEncoderCodec: found info for "
+    new-instance v0, Ljava/lang/StringBuilder;
 
-    invoke-direct {p0, v0}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+    const-string v1, "findEncoderCodec: found info for "
 
-    invoke-virtual {p0, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
-    move-result-object p0
-
-    const-string p1, ": name = "
-
-    invoke-virtual {p0, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object p0
-
-    .line 164
-    invoke-virtual {v3}, Landroid/media/MediaCodecInfo;->getName()Ljava/lang/String;
+    invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object p1
 
-    invoke-virtual {p0, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    const-string v0, ": name = "
 
-    move-result-object p0
+    invoke-virtual {p1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {p0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    move-result-object p1
 
-    move-result-object p0
+    .line 164
+    invoke-virtual {v4}, Landroid/media/MediaCodecInfo;->getName()Ljava/lang/String;
 
-    filled-new-array {p0}, [Ljava/lang/String;
+    move-result-object v0
 
-    move-result-object p0
+    invoke-virtual {p1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object p1
+
+    invoke-virtual {p1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object p1
+
+    aput-object p1, p0, v2
 
     .line 162
     invoke-static {p0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
     :cond_1
-    return-object v3
+    return-object v4
 
     :cond_2
-    add-int/lit8 v6, v6, 0x1
+    add-int/lit8 v7, v7, 0x1
 
     goto :goto_1
 
     :cond_3
     :goto_2
-    add-int/lit8 v2, v2, 0x1
+    add-int/lit8 v3, v3, 0x1
 
     goto :goto_0
 
     .line 170
     :cond_4
-    new-instance p0, Ljava/lang/StringBuilder;
+    new-array p0, v0, [Ljava/lang/String;
 
-    const-string v0, "Not found CodecInfo for: "
+    new-instance v0, Ljava/lang/StringBuilder;
 
-    invoke-direct {p0, v0}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+    const-string v1, "Not found CodecInfo for: "
 
-    invoke-virtual {p0, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
-    move-result-object p0
+    invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {p0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    move-result-object p1
 
-    move-result-object p0
+    invoke-virtual {p1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    filled-new-array {p0}, [Ljava/lang/String;
+    move-result-object p1
 
-    move-result-object p0
+    aput-object p1, p0, v2
 
     invoke-static {p0}, Ljp/co/sony/mc/camera/util/CamLog;->i([Ljava/lang/String;)V
 
@@ -264,19 +268,23 @@
 .end method
 
 .method private getParameters()Landroid/os/Bundle;
-    .locals 1
+    .locals 3
 
     .line 94
     iget-object v0, p0, Ljp/co/sony/mc/camera/util/capability/MediaCodecParametersHolder;->mParameters:Landroid/os/Bundle;
 
     if-nez v0, :cond_0
 
+    const/4 v0, 0x1
+
     .line 96
-    const-string v0, "get parameters but not prepared it."
+    new-array v0, v0, [Ljava/lang/String;
 
-    filled-new-array {v0}, [Ljava/lang/String;
+    const/4 v1, 0x0
 
-    move-result-object v0
+    const-string v2, "get parameters but not prepared it."
+
+    aput-object v2, v0, v1
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/util/CamLog;->w([Ljava/lang/String;)V
 
@@ -291,7 +299,7 @@
 .end method
 
 .method private getSupportedEncoderProfiles(Ljava/lang/String;)Ljava/util/List;
-    .locals 4
+    .locals 6
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -313,26 +321,30 @@
 
     move-result-object p0
 
+    const/4 v1, 0x0
+
+    const/4 v2, 0x1
+
     if-nez p0, :cond_0
 
     .line 129
-    new-instance p0, Ljava/lang/StringBuilder;
+    new-array p0, v2, [Ljava/lang/String;
 
-    const-string v1, "codec is not found: type = "
+    new-instance v2, Ljava/lang/StringBuilder;
 
-    invoke-direct {p0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+    const-string v3, "codec is not found: type = "
 
-    invoke-virtual {p0, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-direct {v2, v3}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
-    move-result-object p0
+    invoke-virtual {v2, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {p0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    move-result-object p1
 
-    move-result-object p0
+    invoke-virtual {p1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    filled-new-array {p0}, [Ljava/lang/String;
+    move-result-object p1
 
-    move-result-object p0
+    aput-object p1, p0, v1
 
     invoke-static {p0}, Ljp/co/sony/mc/camera/util/CamLog;->e([Ljava/lang/String;)V
 
@@ -342,25 +354,27 @@
     :cond_0
     invoke-virtual {p0, p1}, Landroid/media/MediaCodecInfo;->getCapabilitiesForType(Ljava/lang/String;)Landroid/media/MediaCodecInfo$CodecCapabilities;
 
-    move-result-object v1
+    move-result-object v3
 
     .line 133
-    const-string v2, ", codec = "
+    const-string v4, ", codec = "
 
-    if-nez v1, :cond_1
+    if-nez v3, :cond_1
 
     .line 134
-    new-instance v1, Ljava/lang/StringBuilder;
+    new-array v2, v2, [Ljava/lang/String;
 
-    const-string v3, "capabilities is not found: type = "
+    new-instance v3, Ljava/lang/StringBuilder;
 
-    invoke-direct {v1, v3}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+    const-string v5, "capabilities is not found: type = "
 
-    invoke-virtual {v1, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-direct {v3, v5}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+
+    invoke-virtual {v3, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object p1
 
-    invoke-virtual {p1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {p1, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object p1
 
@@ -377,33 +391,33 @@
 
     move-result-object p0
 
-    filled-new-array {p0}, [Ljava/lang/String;
-
-    move-result-object p0
+    aput-object p0, v2, v1
 
     .line 134
-    invoke-static {p0}, Ljp/co/sony/mc/camera/util/CamLog;->e([Ljava/lang/String;)V
+    invoke-static {v2}, Ljp/co/sony/mc/camera/util/CamLog;->e([Ljava/lang/String;)V
 
     return-object v0
 
     .line 139
     :cond_1
-    iget-object v3, v1, Landroid/media/MediaCodecInfo$CodecCapabilities;->profileLevels:[Landroid/media/MediaCodecInfo$CodecProfileLevel;
+    iget-object v5, v3, Landroid/media/MediaCodecInfo$CodecCapabilities;->profileLevels:[Landroid/media/MediaCodecInfo$CodecProfileLevel;
 
-    if-nez v3, :cond_2
+    if-nez v5, :cond_2
 
     .line 140
-    new-instance v1, Ljava/lang/StringBuilder;
+    new-array v2, v2, [Ljava/lang/String;
 
-    const-string v3, "profileLevel is not found: type = "
+    new-instance v3, Ljava/lang/StringBuilder;
 
-    invoke-direct {v1, v3}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+    const-string v5, "profileLevel is not found: type = "
 
-    invoke-virtual {v1, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-direct {v3, v5}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+
+    invoke-virtual {v3, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object p1
 
-    invoke-virtual {p1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {p1, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object p1
 
@@ -420,22 +434,18 @@
 
     move-result-object p0
 
-    filled-new-array {p0}, [Ljava/lang/String;
-
-    move-result-object p0
+    aput-object p0, v2, v1
 
     .line 140
-    invoke-static {p0}, Ljp/co/sony/mc/camera/util/CamLog;->e([Ljava/lang/String;)V
+    invoke-static {v2}, Ljp/co/sony/mc/camera/util/CamLog;->e([Ljava/lang/String;)V
 
     return-object v0
 
     .line 145
     :cond_2
-    iget-object p0, v1, Landroid/media/MediaCodecInfo$CodecCapabilities;->profileLevels:[Landroid/media/MediaCodecInfo$CodecProfileLevel;
+    iget-object p0, v3, Landroid/media/MediaCodecInfo$CodecCapabilities;->profileLevels:[Landroid/media/MediaCodecInfo$CodecProfileLevel;
 
     array-length p1, p0
-
-    const/4 v1, 0x0
 
     :goto_0
     if-ge v1, p1, :cond_3
@@ -487,10 +497,14 @@
 .end method
 
 .method public prepare()V
-    .locals 2
+    .locals 4
 
     .line 64
     iget-object v0, p0, Ljp/co/sony/mc/camera/util/capability/MediaCodecParametersHolder;->mParameters:Landroid/os/Bundle;
+
+    const/4 v1, 0x0
+
+    const/4 v2, 0x1
 
     if-nez v0, :cond_1
 
@@ -500,11 +514,11 @@
     if-eqz v0, :cond_0
 
     .line 66
-    const-string v0, "prepare parameters from media codec: E"
+    new-array v0, v2, [Ljava/lang/String;
 
-    filled-new-array {v0}, [Ljava/lang/String;
+    const-string v3, "prepare parameters from media codec: E"
 
-    move-result-object v0
+    aput-object v3, v0, v1
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
@@ -517,17 +531,17 @@
     iput-object v0, p0, Ljp/co/sony/mc/camera/util/capability/MediaCodecParametersHolder;->mParameters:Landroid/os/Bundle;
 
     .line 71
-    sget-object v1, Ljp/co/sony/mc/camera/util/capability/MediaCodecParametersHolder$Key;->HDR_VIDEO_RECORDING_PROFILE:Ljp/co/sony/mc/camera/util/capability/MediaCodecParametersHolder$Key;
+    sget-object v3, Ljp/co/sony/mc/camera/util/capability/MediaCodecParametersHolder$Key;->HDR_VIDEO_RECORDING_PROFILE:Ljp/co/sony/mc/camera/util/capability/MediaCodecParametersHolder$Key;
 
-    invoke-virtual {v1}, Ljp/co/sony/mc/camera/util/capability/MediaCodecParametersHolder$Key;->name()Ljava/lang/String;
+    invoke-virtual {v3}, Ljp/co/sony/mc/camera/util/capability/MediaCodecParametersHolder$Key;->name()Ljava/lang/String;
 
-    move-result-object v1
+    move-result-object v3
 
     invoke-direct {p0}, Ljp/co/sony/mc/camera/util/capability/MediaCodecParametersHolder;->decideVideoHdrProfile()I
 
     move-result p0
 
-    invoke-virtual {v0, v1, p0}, Landroid/os/Bundle;->putInt(Ljava/lang/String;I)V
+    invoke-virtual {v0, v3, p0}, Landroid/os/Bundle;->putInt(Ljava/lang/String;I)V
 
     .line 72
     sget-boolean p0, Ljp/co/sony/mc/camera/util/CamLog;->DEBUG:Z
@@ -535,11 +549,11 @@
     if-eqz p0, :cond_2
 
     .line 73
-    const-string p0, "prepare parameters from media codec: X"
+    new-array p0, v2, [Ljava/lang/String;
 
-    filled-new-array {p0}, [Ljava/lang/String;
+    const-string v0, "prepare parameters from media codec: X"
 
-    move-result-object p0
+    aput-object v0, p0, v1
 
     invoke-static {p0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
@@ -551,11 +565,11 @@
 
     if-eqz p0, :cond_2
 
-    const-string p0, "already prepared"
+    new-array p0, v2, [Ljava/lang/String;
 
-    filled-new-array {p0}, [Ljava/lang/String;
+    const-string v0, "already prepared"
 
-    move-result-object p0
+    aput-object v0, p0, v1
 
     invoke-static {p0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 

@@ -70,16 +70,16 @@
 .method public final invoke()Landroidx/compose/foundation/lazy/grid/LazyGridState;
     .locals 2
 
-    .line 66
+    .line 70
     new-instance v0, Landroidx/compose/foundation/lazy/grid/LazyGridState;
 
-    .line 67
+    .line 71
     iget v1, p0, Landroidx/compose/foundation/lazy/grid/LazyGridStateKt$rememberLazyGridState$1$1;->$initialFirstVisibleItemIndex:I
 
-    .line 68
+    .line 72
     iget p0, p0, Landroidx/compose/foundation/lazy/grid/LazyGridStateKt$rememberLazyGridState$1$1;->$initialFirstVisibleItemScrollOffset:I
 
-    .line 66
+    .line 70
     invoke-direct {v0, v1, p0}, Landroidx/compose/foundation/lazy/grid/LazyGridState;-><init>(II)V
 
     return-object v0
@@ -88,7 +88,7 @@
 .method public bridge synthetic invoke()Ljava/lang/Object;
     .locals 0
 
-    .line 65
+    .line 69
     invoke-virtual {p0}, Landroidx/compose/foundation/lazy/grid/LazyGridStateKt$rememberLazyGridState$1$1;->invoke()Landroidx/compose/foundation/lazy/grid/LazyGridState;
 
     move-result-object p0

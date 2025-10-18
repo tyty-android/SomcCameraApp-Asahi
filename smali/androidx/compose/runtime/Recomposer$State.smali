@@ -89,7 +89,7 @@
 .method static constructor <clinit>()V
     .locals 3
 
-    .line 156
+    .line 159
     new-instance v0, Landroidx/compose/runtime/Recomposer$State;
 
     const-string v1, "ShutDown"
@@ -100,7 +100,7 @@
 
     sput-object v0, Landroidx/compose/runtime/Recomposer$State;->ShutDown:Landroidx/compose/runtime/Recomposer$State;
 
-    .line 163
+    .line 166
     new-instance v0, Landroidx/compose/runtime/Recomposer$State;
 
     const-string v1, "ShuttingDown"
@@ -111,7 +111,7 @@
 
     sput-object v0, Landroidx/compose/runtime/Recomposer$State;->ShuttingDown:Landroidx/compose/runtime/Recomposer$State;
 
-    .line 170
+    .line 173
     new-instance v0, Landroidx/compose/runtime/Recomposer$State;
 
     const-string v1, "Inactive"
@@ -122,7 +122,7 @@
 
     sput-object v0, Landroidx/compose/runtime/Recomposer$State;->Inactive:Landroidx/compose/runtime/Recomposer$State;
 
-    .line 177
+    .line 180
     new-instance v0, Landroidx/compose/runtime/Recomposer$State;
 
     const-string v1, "InactivePendingWork"
@@ -133,7 +133,7 @@
 
     sput-object v0, Landroidx/compose/runtime/Recomposer$State;->InactivePendingWork:Landroidx/compose/runtime/Recomposer$State;
 
-    .line 183
+    .line 186
     new-instance v0, Landroidx/compose/runtime/Recomposer$State;
 
     const-string v1, "Idle"
@@ -144,7 +144,7 @@
 
     sput-object v0, Landroidx/compose/runtime/Recomposer$State;->Idle:Landroidx/compose/runtime/Recomposer$State;
 
-    .line 193
+    .line 196
     new-instance v0, Landroidx/compose/runtime/Recomposer$State;
 
     const-string v1, "PendingWork"
@@ -172,7 +172,7 @@
         }
     .end annotation
 
-    .line 151
+    .line 154
     invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
     return-void

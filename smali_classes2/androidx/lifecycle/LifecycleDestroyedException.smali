@@ -13,7 +13,7 @@
         "Ljava/util/concurrent/CancellationException;",
         "Lkotlinx/coroutines/CancellationException;",
         "()V",
-        "lifecycle-runtime-ktx_release"
+        "lifecycle-runtime_release"
     }
     k = 0x1
     mv = {
@@ -27,10 +27,12 @@
 
 # direct methods
 .method public constructor <init>()V
-    .locals 0
+    .locals 1
 
-    .line 31
-    invoke-direct {p0}, Ljava/util/concurrent/CancellationException;-><init>()V
+    const/4 v0, 0x0
+
+    .line 32
+    invoke-direct {p0, v0}, Ljava/util/concurrent/CancellationException;-><init>(Ljava/lang/String;)V
 
     return-void
 .end method

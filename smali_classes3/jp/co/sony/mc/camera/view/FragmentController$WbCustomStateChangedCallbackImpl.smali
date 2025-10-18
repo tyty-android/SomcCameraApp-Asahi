@@ -25,10 +25,10 @@
 .method constructor <init>(Ljp/co/sony/mc/camera/view/FragmentController;)V
     .locals 0
 
-    .line 8139
+    .line 8415
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 8140
+    .line 8416
     iput-object p1, p0, Ljp/co/sony/mc/camera/view/FragmentController$WbCustomStateChangedCallbackImpl;->mController:Ljp/co/sony/mc/camera/view/FragmentController;
 
     return-void
@@ -39,7 +39,7 @@
 .method public onWbCustomStateChanged(Ljp/co/sony/mc/camera/device/CaptureResultNotifier$WbCustomStatus;[IFFLjava/lang/String;)V
     .locals 6
 
-    .line 8146
+    .line 8422
     invoke-static {}, Ljp/co/sony/mc/camera/setting/CameraProSetting;->getInstance()Ljp/co/sony/mc/camera/setting/CameraProSetting;
 
     move-result-object v0
@@ -48,12 +48,12 @@
 
     move-result-object v0
 
-    .line 8147
+    .line 8423
     invoke-static {v0, p4}, Ljp/co/sony/mc/camera/configuration/parameters/WhiteBalance;->constrainCustomGmFloatValue(Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;F)F
 
     move-result p4
 
-    .line 8148
+    .line 8424
     sget-object v0, Ljp/co/sony/mc/camera/view/FragmentController$26;->$SwitchMap$jp$co$sony$mc$camera$device$CaptureResultNotifier$WbCustomStatus:[I
 
     invoke-virtual {p1}, Ljp/co/sony/mc/camera/device/CaptureResultNotifier$WbCustomStatus;->ordinal()I
@@ -72,7 +72,7 @@
 
     goto/16 :goto_1
 
-    .line 8181
+    .line 8457
     :cond_0
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/FragmentController$WbCustomStateChangedCallbackImpl;->mController:Ljp/co/sony/mc/camera/view/FragmentController;
 
@@ -80,7 +80,7 @@
 
     move-result-object v0
 
-    .line 8182
+    .line 8458
     invoke-static {p3}, Ljava/lang/Float;->valueOf(F)Ljava/lang/Float;
 
     move-result-object v3
@@ -95,12 +95,12 @@
 
     move-object v5, p5
 
-    .line 8181
+    .line 8457
     invoke-interface/range {v0 .. v5}, Ljp/co/sony/mc/camera/view/CameraEventListener;->onWbCustomFinished(I[ILjava/lang/Float;Ljava/lang/Float;Ljava/lang/String;)V
 
     goto/16 :goto_1
 
-    .line 8151
+    .line 8427
     :cond_1
     sget-object p1, Ljp/co/sony/mc/camera/configuration/parameters/WhiteBalance;->CUSTOM1:Ljp/co/sony/mc/camera/configuration/parameters/WhiteBalance;
 
@@ -114,12 +114,12 @@
 
     if-eqz p1, :cond_2
 
-    .line 8152
+    .line 8428
     sget-object p1, Ljp/co/sony/mc/camera/configuration/parameters/WhiteBalance;->CUSTOM1:Ljp/co/sony/mc/camera/configuration/parameters/WhiteBalance;
 
     goto :goto_0
 
-    .line 8153
+    .line 8429
     :cond_2
     sget-object p1, Ljp/co/sony/mc/camera/configuration/parameters/WhiteBalance;->CUSTOM2:Ljp/co/sony/mc/camera/configuration/parameters/WhiteBalance;
 
@@ -133,27 +133,27 @@
 
     if-eqz p1, :cond_3
 
-    .line 8154
+    .line 8430
     sget-object p1, Ljp/co/sony/mc/camera/configuration/parameters/WhiteBalance;->CUSTOM2:Ljp/co/sony/mc/camera/configuration/parameters/WhiteBalance;
 
     goto :goto_0
 
-    .line 8156
+    .line 8432
     :cond_3
     sget-object p1, Ljp/co/sony/mc/camera/configuration/parameters/WhiteBalance;->CUSTOM3:Ljp/co/sony/mc/camera/configuration/parameters/WhiteBalance;
 
-    .line 8158
+    .line 8434
     :goto_0
     invoke-static {}, Ljp/co/sony/mc/camera/setting/CameraProSetting;->getInstance()Ljp/co/sony/mc/camera/setting/CameraProSetting;
 
     move-result-object v1
 
-    .line 8159
+    .line 8435
     new-instance v2, Ljp/co/sony/mc/camera/configuration/parameters/WbExtensionData;
 
     sget-object v3, Ljp/co/sony/mc/camera/setting/CameraSettings;->WB_EXTENSION_DATA:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
 
-    .line 8160
+    .line 8436
     invoke-virtual {v1, v3}, Ljp/co/sony/mc/camera/setting/CameraProSetting;->get(Ljp/co/sony/mc/camera/setting/SettingKey$Key;)Ljava/lang/Object;
 
     move-result-object v3
@@ -162,14 +162,14 @@
 
     invoke-direct {v2, v3}, Ljp/co/sony/mc/camera/configuration/parameters/WbExtensionData;-><init>(Ljp/co/sony/mc/camera/configuration/parameters/WbExtensionData;)V
 
-    .line 8161
+    .line 8437
     invoke-virtual {p1}, Ljp/co/sony/mc/camera/configuration/parameters/WhiteBalance;->getValue()Ljava/lang/String;
 
     move-result-object v3
 
     invoke-virtual {v2, v3, p2}, Ljp/co/sony/mc/camera/configuration/parameters/WbExtensionData;->setCustomRatio(Ljava/lang/String;[I)V
 
-    .line 8162
+    .line 8438
     sget-object v3, Ljp/co/sony/mc/camera/configuration/parameters/WhiteBalance;->INITIAL_AB_GM_VALUE:[F
 
     invoke-virtual {v3}, [F->clone()Ljava/lang/Object;
@@ -178,36 +178,36 @@
 
     check-cast v3, [F
 
-    .line 8163
+    .line 8439
     aput p4, v3, v0
 
-    .line 8164
+    .line 8440
     invoke-virtual {p1}, Ljp/co/sony/mc/camera/configuration/parameters/WhiteBalance;->getValue()Ljava/lang/String;
 
     move-result-object v0
 
     invoke-virtual {v2, v0, v3}, Ljp/co/sony/mc/camera/configuration/parameters/WbExtensionData;->setAbGmValue(Ljava/lang/String;[F)V
 
-    .line 8165
+    .line 8441
     invoke-virtual {p1}, Ljp/co/sony/mc/camera/configuration/parameters/WhiteBalance;->getValue()Ljava/lang/String;
 
     move-result-object v0
 
     invoke-virtual {v2, v0, p3}, Ljp/co/sony/mc/camera/configuration/parameters/WbExtensionData;->setTemperature(Ljava/lang/String;F)V
 
-    .line 8166
+    .line 8442
     invoke-virtual {p1}, Ljp/co/sony/mc/camera/configuration/parameters/WhiteBalance;->getValue()Ljava/lang/String;
 
     move-result-object v0
 
     invoke-virtual {v2, v0, p4}, Ljp/co/sony/mc/camera/configuration/parameters/WbExtensionData;->setCustomGm(Ljava/lang/String;F)V
 
-    .line 8168
+    .line 8444
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
-    .line 8169
+    .line 8445
     sget-object v3, Ljp/co/sony/mc/camera/setting/CameraSettings;->WHITE_BALANCE:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
 
     invoke-static {v3, p1}, Landroid/util/Pair;->create(Ljava/lang/Object;Ljava/lang/Object;)Landroid/util/Pair;
@@ -216,7 +216,7 @@
 
     invoke-interface {v0, p1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    .line 8170
+    .line 8446
     sget-object p1, Ljp/co/sony/mc/camera/setting/CameraSettings;->WB_EXTENSION_DATA:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
 
     invoke-static {p1, v2}, Landroid/util/Pair;->create(Ljava/lang/Object;Ljava/lang/Object;)Landroid/util/Pair;
@@ -225,17 +225,17 @@
 
     invoke-interface {v0, p1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    .line 8171
+    .line 8447
     invoke-virtual {v1, v0}, Ljp/co/sony/mc/camera/setting/CameraProSetting;->createCameraSettingsHolder(Ljava/util/List;)Ljp/co/sony/mc/camera/setting/CameraSettingsHolder;
 
     move-result-object p1
 
-    .line 8173
+    .line 8449
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
-    .line 8174
+    .line 8450
     sget-object v1, Ljp/co/sony/mc/camera/setting/CameraSettings;->WHITE_BALANCE:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
 
     invoke-virtual {v1}, Ljp/co/sony/mc/camera/setting/CameraSettings$Key;->getName()Ljava/lang/String;
@@ -244,7 +244,7 @@
 
     invoke-interface {v0, v1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    .line 8175
+    .line 8451
     iget-object v1, p0, Ljp/co/sony/mc/camera/view/FragmentController$WbCustomStateChangedCallbackImpl;->mController:Ljp/co/sony/mc/camera/view/FragmentController;
 
     invoke-static {v1}, Ljp/co/sony/mc/camera/view/FragmentController;->-$$Nest$fgetmCameraAccessor(Ljp/co/sony/mc/camera/view/FragmentController;)Ljp/co/sony/mc/camera/CameraAccessor;
@@ -253,7 +253,7 @@
 
     invoke-interface {v1}, Ljp/co/sony/mc/camera/CameraAccessor;->stopWbCustom()V
 
-    .line 8176
+    .line 8452
     iget-object v1, p0, Ljp/co/sony/mc/camera/view/FragmentController$WbCustomStateChangedCallbackImpl;->mController:Ljp/co/sony/mc/camera/view/FragmentController;
 
     invoke-static {v1}, Ljp/co/sony/mc/camera/view/FragmentController;->-$$Nest$fgetmCameraAccessor(Ljp/co/sony/mc/camera/view/FragmentController;)Ljp/co/sony/mc/camera/CameraAccessor;
@@ -264,14 +264,14 @@
 
     invoke-interface {v1, v0, p1, v2}, Ljp/co/sony/mc/camera/CameraAccessor;->applyChangedSetting(Ljava/util/List;Ljp/co/sony/mc/camera/setting/CameraSettingsHolder;Ljp/co/sony/mc/camera/CameraAccessor$PreviewCallback;)V
 
-    .line 8177
+    .line 8453
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/FragmentController$WbCustomStateChangedCallbackImpl;->mController:Ljp/co/sony/mc/camera/view/FragmentController;
 
     invoke-static {p0}, Ljp/co/sony/mc/camera/view/FragmentController;->-$$Nest$fgetmCameraEventNotifier(Ljp/co/sony/mc/camera/view/FragmentController;)Ljp/co/sony/mc/camera/view/CameraEventListener;
 
     move-result-object v0
 
-    .line 8178
+    .line 8454
     invoke-static {p3}, Ljava/lang/Float;->valueOf(F)Ljava/lang/Float;
 
     move-result-object v3
@@ -286,7 +286,7 @@
 
     move-object v5, p5
 
-    .line 8177
+    .line 8453
     invoke-interface/range {v0 .. v5}, Ljp/co/sony/mc/camera/view/CameraEventListener;->onWbCustomFinished(I[ILjava/lang/Float;Ljava/lang/Float;Ljava/lang/String;)V
 
     :goto_1

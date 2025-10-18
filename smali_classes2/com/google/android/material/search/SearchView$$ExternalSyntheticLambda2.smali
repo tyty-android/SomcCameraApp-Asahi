@@ -3,7 +3,7 @@
 .source "D8$$SyntheticClass"
 
 # interfaces
-.implements Lcom/google/android/material/internal/ViewUtils$OnApplyWindowInsetsListener;
+.implements Ljava/lang/Runnable;
 
 
 # instance fields
@@ -24,15 +24,13 @@
 
 
 # virtual methods
-.method public final onApplyWindowInsets(Landroid/view/View;Landroidx/core/view/WindowInsetsCompat;Lcom/google/android/material/internal/ViewUtils$RelativePadding;)Landroidx/core/view/WindowInsetsCompat;
+.method public final run()V
     .locals 0
 
     .line 0
     iget-object p0, p0, Lcom/google/android/material/search/SearchView$$ExternalSyntheticLambda2;->f$0:Lcom/google/android/material/search/SearchView;
 
-    invoke-virtual {p0, p1, p2, p3}, Lcom/google/android/material/search/SearchView;->lambda$setUpToolbarInsetListener$4$com-google-android-material-search-SearchView(Landroid/view/View;Landroidx/core/view/WindowInsetsCompat;Lcom/google/android/material/internal/ViewUtils$RelativePadding;)Landroidx/core/view/WindowInsetsCompat;
+    invoke-virtual {p0}, Lcom/google/android/material/search/SearchView;->lambda$requestFocusAndShowKeyboard$8$com-google-android-material-search-SearchView()V
 
-    move-result-object p0
-
-    return-object p0
+    return-void
 .end method

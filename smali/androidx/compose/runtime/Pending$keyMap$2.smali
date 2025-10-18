@@ -74,7 +74,7 @@
 .method public bridge synthetic invoke()Ljava/lang/Object;
     .locals 0
 
-    .line 126
+    .line 124
     invoke-virtual {p0}, Landroidx/compose/runtime/Pending$keyMap$2;->invoke()Ljava/util/HashMap;
 
     move-result-object p0
@@ -95,14 +95,14 @@
         }
     .end annotation
 
-    .line 127
+    .line 125
     invoke-static {}, Landroidx/compose/runtime/ComposerKt;->access$multiMap()Ljava/util/HashMap;
 
     move-result-object v0
 
     iget-object p0, p0, Landroidx/compose/runtime/Pending$keyMap$2;->this$0:Landroidx/compose/runtime/Pending;
 
-    .line 128
+    .line 126
     invoke-virtual {p0}, Landroidx/compose/runtime/Pending;->getKeyInfos()Ljava/util/List;
 
     move-result-object v1
@@ -116,7 +116,7 @@
     :goto_0
     if-ge v2, v1, :cond_0
 
-    .line 129
+    .line 127
     invoke-virtual {p0}, Landroidx/compose/runtime/Pending;->getKeyInfos()Ljava/util/List;
 
     move-result-object v3
@@ -127,7 +127,7 @@
 
     check-cast v3, Landroidx/compose/runtime/KeyInfo;
 
-    .line 131
+    .line 129
     invoke-static {v3}, Landroidx/compose/runtime/ComposerKt;->access$getJoinedKey(Landroidx/compose/runtime/KeyInfo;)Ljava/lang/Object;
 
     move-result-object v4

@@ -36,38 +36,38 @@
 .method public constructor <init>(Landroid/content/Context;Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;Ljp/co/sony/mc/camera/setting/CameraProSetting;Ljp/co/sony/mc/camera/storage/Storage;ZLjp/co/sony/mc/camera/view/setting/ContextualSettingList$Group;)V
     .locals 0
 
-    .line 77
+    .line 78
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 78
+    .line 79
     iput-object p1, p0, Ljp/co/sony/mc/camera/view/setting/settingitem/CameraSettingItemBuilder;->mContext:Landroid/content/Context;
 
-    .line 79
+    .line 80
     iput-object p2, p0, Ljp/co/sony/mc/camera/view/setting/settingitem/CameraSettingItemBuilder;->mCapturingMode:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
-    .line 80
+    .line 81
     iput-object p3, p0, Ljp/co/sony/mc/camera/view/setting/settingitem/CameraSettingItemBuilder;->mCameraId:Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;
 
-    .line 81
+    .line 82
     iput-object p5, p0, Ljp/co/sony/mc/camera/view/setting/settingitem/CameraSettingItemBuilder;->mStorage:Ljp/co/sony/mc/camera/storage/Storage;
 
-    .line 82
+    .line 83
     iput-boolean p6, p0, Ljp/co/sony/mc/camera/view/setting/settingitem/CameraSettingItemBuilder;->mIsOneShot:Z
 
-    .line 83
+    .line 84
     iput-object p4, p0, Ljp/co/sony/mc/camera/view/setting/settingitem/CameraSettingItemBuilder;->mSetting:Ljp/co/sony/mc/camera/setting/CameraProSetting;
 
-    .line 85
+    .line 86
     new-instance p1, Ljp/co/sony/mc/camera/setting/SettingAppearanceChecker;
 
     invoke-direct {p1, p4}, Ljp/co/sony/mc/camera/setting/SettingAppearanceChecker;-><init>(Ljp/co/sony/mc/camera/setting/CameraProSetting;)V
 
     iput-object p1, p0, Ljp/co/sony/mc/camera/view/setting/settingitem/CameraSettingItemBuilder;->mAppearanceChecker:Ljp/co/sony/mc/camera/setting/SettingAppearanceChecker;
 
-    .line 87
+    .line 88
     iput-object p7, p0, Ljp/co/sony/mc/camera/view/setting/settingitem/CameraSettingItemBuilder;->mSettingGroup:Ljp/co/sony/mc/camera/view/setting/ContextualSettingList$Group;
 
-    .line 89
+    .line 90
     new-instance p1, Ljp/co/sony/mc/camera/parameter/dependency/DependencyGuideResolver;
 
     invoke-direct {p1}, Ljp/co/sony/mc/camera/parameter/dependency/DependencyGuideResolver;-><init>()V
@@ -90,7 +90,7 @@
 
     if-eqz p1, :cond_1
 
-    .line 158
+    .line 159
     invoke-interface {p1}, Ljava/util/List;->iterator()Ljava/util/Iterator;
 
     move-result-object p0
@@ -108,12 +108,12 @@
 
     check-cast p1, Ljp/co/sony/mc/camera/view/setting/settingitem/CameraSettingItem$CameraSettingValueItem;
 
-    .line 159
+    .line 160
     invoke-virtual {p1}, Ljp/co/sony/mc/camera/view/setting/settingitem/CameraSettingItem$CameraSettingValueItem;->getDependencyGuideList()Ljava/util/List;
 
     move-result-object p1
 
-    .line 160
+    .line 161
     invoke-interface {p1}, Ljava/util/List;->size()I
 
     move-result p1
@@ -134,12 +134,12 @@
 .method private generateCategoryItem(I)Ljp/co/sony/mc/camera/view/setting/settingitem/CameraSettingCategoryItem;
     .locals 7
 
-    .line 111
+    .line 112
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
-    .line 113
+    .line 114
     iget-object v1, p0, Ljp/co/sony/mc/camera/view/setting/settingitem/CameraSettingItemBuilder;->mSettingGroup:Ljp/co/sony/mc/camera/view/setting/ContextualSettingList$Group;
 
     iget-object v1, v1, Ljp/co/sony/mc/camera/view/setting/ContextualSettingList$Group;->categories:[Ljp/co/sony/mc/camera/view/setting/ContextualSettingList$Category;
@@ -157,19 +157,19 @@
 
     aget-object v4, v1, v3
 
-    .line 114
+    .line 115
     iget-object v5, p0, Ljp/co/sony/mc/camera/view/setting/settingitem/CameraSettingItemBuilder;->mAppearanceChecker:Ljp/co/sony/mc/camera/setting/SettingAppearanceChecker;
 
     invoke-virtual {v5, v4}, Ljp/co/sony/mc/camera/setting/SettingAppearanceChecker;->checkKey(Ljp/co/sony/mc/camera/setting/SettingKey$Key;)Ljp/co/sony/mc/camera/setting/SettingAppearance;
 
     move-result-object v5
 
-    .line 116
+    .line 117
     sget-object v6, Ljp/co/sony/mc/camera/setting/SettingAppearance;->INVISIBLE:Ljp/co/sony/mc/camera/setting/SettingAppearance;
 
     if-eq v5, v6, :cond_0
 
-    .line 117
+    .line 118
     iget-object v6, p0, Ljp/co/sony/mc/camera/view/setting/settingitem/CameraSettingItemBuilder;->mStorage:Ljp/co/sony/mc/camera/storage/Storage;
 
     invoke-virtual {p0, v4, v5, v6}, Ljp/co/sony/mc/camera/view/setting/settingitem/CameraSettingItemBuilder;->generateKeyItem(Ljp/co/sony/mc/camera/setting/SettingKey$Key;Ljp/co/sony/mc/camera/setting/SettingAppearance;Ljp/co/sony/mc/camera/storage/Storage;)Ljp/co/sony/mc/camera/view/setting/settingitem/CameraSettingItem;
@@ -183,7 +183,7 @@
 
     goto :goto_0
 
-    .line 121
+    .line 122
     :cond_1
     new-instance v1, Ljp/co/sony/mc/camera/view/setting/settingitem/CameraSettingCategoryItem;
 
@@ -193,7 +193,7 @@
 
     aget-object v2, v2, p1
 
-    .line 122
+    .line 123
     invoke-virtual {v2}, Ljp/co/sony/mc/camera/view/setting/ContextualSettingList$Category;->getDrawableResource()I
 
     move-result v2
@@ -204,7 +204,7 @@
 
     aget-object v3, v3, p1
 
-    .line 123
+    .line 124
     invoke-virtual {v3}, Ljp/co/sony/mc/camera/view/setting/ContextualSettingList$Category;->getTitleString()Ljava/lang/String;
 
     move-result-object v3
@@ -215,7 +215,7 @@
 
     aget-object p0, p0, p1
 
-    .line 124
+    .line 125
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/view/setting/ContextualSettingList$Category;->getBackgroundColor()I
 
     move-result p0
@@ -243,12 +243,12 @@
 
     move-object/from16 v1, p1
 
-    .line 319
+    .line 324
     new-instance v2, Ljava/util/ArrayList;
 
     invoke-direct {v2}, Ljava/util/ArrayList;-><init>()V
 
-    .line 320
+    .line 325
     iget-object v3, v0, Ljp/co/sony/mc/camera/view/setting/settingitem/CameraSettingItemBuilder;->mSetting:Ljp/co/sony/mc/camera/setting/CameraProSetting;
 
     invoke-virtual {v3, v1}, Ljp/co/sony/mc/camera/setting/CameraProSetting;->get(Ljp/co/sony/mc/camera/setting/SettingKey$Key;)Ljava/lang/Object;
@@ -257,14 +257,14 @@
 
     check-cast v3, Ljp/co/sony/mc/camera/configuration/parameters/UserSettingValue;
 
-    .line 322
+    .line 327
     iget-object v4, v0, Ljp/co/sony/mc/camera/view/setting/settingitem/CameraSettingItemBuilder;->mCapturingMode:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
     invoke-virtual {v4}, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->getLayoutMode()Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
     move-result-object v4
 
-    .line 323
+    .line 328
     iget-object v5, v0, Ljp/co/sony/mc/camera/view/setting/settingitem/CameraSettingItemBuilder;->mSetting:Ljp/co/sony/mc/camera/setting/CameraProSetting;
 
     invoke-virtual {v5, v1}, Ljp/co/sony/mc/camera/setting/CameraProSetting;->getOptions(Ljp/co/sony/mc/camera/setting/SettingKey$Key;)[Ljava/lang/Object;
@@ -279,13 +279,13 @@
 
     return-object v2
 
-    .line 328
+    .line 333
     :cond_0
     sget-object v5, Ljp/co/sony/mc/camera/setting/CommonSettings;->GEOTAG:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
 
     if-ne v1, v5, :cond_1
 
-    .line 330
+    .line 335
     move-object v5, v3
 
     check-cast v5, Ljp/co/sony/mc/camera/configuration/parameters/Geotag;
@@ -298,16 +298,16 @@
 
     if-nez v5, :cond_1
 
-    .line 332
+    .line 337
     sget-object v3, Ljp/co/sony/mc/camera/configuration/parameters/Geotag;->OFF:Ljp/co/sony/mc/camera/configuration/parameters/Geotag;
 
-    .line 336
+    .line 341
     :cond_1
     sget-object v5, Ljp/co/sony/mc/camera/setting/CameraSettings;->HDR:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
 
     if-ne v1, v5, :cond_2
 
-    .line 337
+    .line 342
     iget-object v5, v0, Ljp/co/sony/mc/camera/view/setting/settingitem/CameraSettingItemBuilder;->mSetting:Ljp/co/sony/mc/camera/setting/CameraProSetting;
 
     sget-object v6, Ljp/co/sony/mc/camera/setting/CommonSettings;->CAPTURING_MODE:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
@@ -318,17 +318,17 @@
 
     check-cast v5, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
-    .line 338
+    .line 343
     invoke-virtual {v5}, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->isAutoPhotoMode()Z
 
     move-result v5
 
     if-eqz v5, :cond_2
 
-    .line 339
+    .line 344
     sget-object v3, Ljp/co/sony/mc/camera/configuration/parameters/Hdr;->AUTO:Ljp/co/sony/mc/camera/configuration/parameters/Hdr;
 
-    .line 343
+    .line 348
     :cond_2
     array-length v12, v11
 
@@ -354,13 +354,13 @@
     :cond_3
     move v6, v13
 
-    .line 347
+    .line 352
     :goto_1
     sget-object v7, Ljp/co/sony/mc/camera/setting/CommonSettings;->SAVE_DESTINATION:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
 
     if-ne v1, v7, :cond_4
 
-    .line 348
+    .line 353
     iget-object v7, v0, Ljp/co/sony/mc/camera/view/setting/settingitem/CameraSettingItemBuilder;->mAppearanceChecker:Ljp/co/sony/mc/camera/setting/SettingAppearanceChecker;
 
     filled-new-array/range {p2 .. p2}, [Ljava/lang/Object;
@@ -373,7 +373,7 @@
 
     goto :goto_2
 
-    .line 350
+    .line 355
     :cond_4
     iget-object v7, v0, Ljp/co/sony/mc/camera/view/setting/settingitem/CameraSettingItemBuilder;->mAppearanceChecker:Ljp/co/sony/mc/camera/setting/SettingAppearanceChecker;
 
@@ -386,20 +386,20 @@
     :goto_2
     move-object v10, v7
 
-    .line 353
+    .line 358
     sget-object v7, Ljp/co/sony/mc/camera/setting/SettingAppearance;->INVISIBLE:Ljp/co/sony/mc/camera/setting/SettingAppearance;
 
     if-ne v10, v7, :cond_5
 
     goto/16 :goto_8
 
-    .line 358
+    .line 363
     :cond_5
     instance-of v7, v15, Ljp/co/sony/mc/camera/configuration/parameters/UserSettingBooleanValue;
 
     if-eqz v7, :cond_6
 
-    .line 359
+    .line 364
     move-object v7, v15
 
     check-cast v7, Ljp/co/sony/mc/camera/configuration/parameters/UserSettingBooleanValue;
@@ -417,7 +417,7 @@
     :cond_6
     move v9, v13
 
-    .line 362
+    .line 367
     :goto_3
     instance-of v5, v15, Ljp/co/sony/mc/camera/configuration/parameters/PrivacyPolicy;
 
@@ -425,20 +425,20 @@
 
     move v6, v13
 
-    .line 366
+    .line 371
     :cond_7
     instance-of v5, v15, Ljp/co/sony/mc/camera/configuration/parameters/DispCustom;
 
     if-eqz v5, :cond_9
 
-    .line 368
+    .line 373
     invoke-virtual {v4}, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->isProVideo()Z
 
     move-result v5
 
     if-eqz v5, :cond_8
 
-    .line 369
+    .line 374
     iget-object v5, v0, Ljp/co/sony/mc/camera/view/setting/settingitem/CameraSettingItemBuilder;->mSetting:Ljp/co/sony/mc/camera/setting/CameraProSetting;
 
     sget-object v6, Ljp/co/sony/mc/camera/setting/CommonSettings;->PRO_VIDEO_DISP_CUSTOM_EXTENSION_DATA:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
@@ -451,7 +451,7 @@
 
     goto :goto_4
 
-    .line 372
+    .line 377
     :cond_8
     iget-object v5, v0, Ljp/co/sony/mc/camera/view/setting/settingitem/CameraSettingItemBuilder;->mSetting:Ljp/co/sony/mc/camera/setting/CameraProSetting;
 
@@ -463,7 +463,7 @@
 
     check-cast v5, Ljp/co/sony/mc/camera/configuration/parameters/DispCustomExtensionData;
 
-    .line 375
+    .line 380
     :goto_4
     move-object v6, v15
 
@@ -476,19 +476,19 @@
     :cond_9
     move v8, v6
 
-    .line 379
+    .line 384
     instance-of v5, v15, Ljp/co/sony/mc/camera/configuration/parameters/AspectRatio;
 
     if-eqz v5, :cond_a
 
-    .line 380
+    .line 385
     iget-object v5, v0, Ljp/co/sony/mc/camera/view/setting/settingitem/CameraSettingItemBuilder;->mSetting:Ljp/co/sony/mc/camera/setting/CameraProSetting;
 
     invoke-virtual {v5}, Ljp/co/sony/mc/camera/setting/CameraProSetting;->getCurrentCameraId()Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;
 
     move-result-object v5
 
-    .line 381
+    .line 386
     move-object v6, v15
 
     check-cast v6, Ljp/co/sony/mc/camera/configuration/parameters/AspectRatio;
@@ -497,23 +497,28 @@
 
     move-result-object v5
 
-    .line 382
+    .line 387
     invoke-virtual {v5}, Ljp/co/sony/mc/camera/configuration/parameters/Resolution;->getTextId()I
 
     move-result v5
 
+    .line 386
+    invoke-direct {v0, v5}, Ljp/co/sony/mc/camera/view/setting/settingitem/CameraSettingItemBuilder;->getString(I)Ljava/lang/String;
+
+    move-result-object v5
+
     :goto_5
-    move v7, v5
+    move-object v7, v5
 
     goto :goto_6
 
-    .line 383
+    .line 388
     :cond_a
     instance-of v5, v15, Ljp/co/sony/mc/camera/configuration/parameters/ColorToneProfile;
 
     if-eqz v5, :cond_c
 
-    .line 384
+    .line 389
     iget-object v5, v0, Ljp/co/sony/mc/camera/view/setting/settingitem/CameraSettingItemBuilder;->mCapturingMode:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
     invoke-virtual {v5}, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->isPro()Z
@@ -522,52 +527,103 @@
 
     if-eqz v5, :cond_b
 
-    .line 385
+    sget-object v5, Ljp/co/sony/mc/camera/configuration/parameters/ColorToneProfile;->S_CINETONE:Ljp/co/sony/mc/camera/configuration/parameters/ColorToneProfile;
+
+    if-eq v15, v5, :cond_b
+
+    .line 390
+    new-instance v5, Ljava/lang/StringBuilder;
+
+    invoke-direct {v5}, Ljava/lang/StringBuilder;-><init>()V
+
+    invoke-interface {v15}, Ljp/co/sony/mc/camera/configuration/parameters/UserSettingValue;->getShortTextId()I
+
+    move-result v6
+
+    invoke-direct {v0, v6}, Ljp/co/sony/mc/camera/view/setting/settingitem/CameraSettingItemBuilder;->getString(I)Ljava/lang/String;
+
+    move-result-object v6
+
+    invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v5
+
+    const v6, 0x7f11005e
+
+    .line 392
+    invoke-direct {v0, v6}, Ljp/co/sony/mc/camera/view/setting/settingitem/CameraSettingItemBuilder;->getString(I)Ljava/lang/String;
+
+    move-result-object v6
+
+    .line 393
+    invoke-interface {v15}, Ljp/co/sony/mc/camera/configuration/parameters/UserSettingValue;->getTextId()I
+
+    move-result v7
+
+    invoke-direct {v0, v7}, Ljp/co/sony/mc/camera/view/setting/settingitem/CameraSettingItemBuilder;->getString(I)Ljava/lang/String;
+
+    move-result-object v7
+
+    filled-new-array {v7}, [Ljava/lang/Object;
+
+    move-result-object v7
+
+    .line 391
+    invoke-static {v6, v7}, Ljava/lang/String;->format(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
+
+    move-result-object v6
+
+    invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v5
+
+    invoke-virtual {v5}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v5
+
+    goto :goto_5
+
+    .line 395
+    :cond_b
     invoke-interface {v15}, Ljp/co/sony/mc/camera/configuration/parameters/UserSettingValue;->getShortTextId()I
 
     move-result v5
 
-    goto :goto_5
+    invoke-direct {v0, v5}, Ljp/co/sony/mc/camera/view/setting/settingitem/CameraSettingItemBuilder;->getString(I)Ljava/lang/String;
 
-    .line 387
-    :cond_b
-    invoke-interface {v15}, Ljp/co/sony/mc/camera/configuration/parameters/UserSettingValue;->getTextId()I
-
-    move-result v5
+    move-result-object v5
 
     goto :goto_5
 
-    .line 390
+    .line 398
     :cond_c
     invoke-interface {v15}, Ljp/co/sony/mc/camera/configuration/parameters/UserSettingValue;->getTextId()I
 
     move-result v5
 
+    invoke-direct {v0, v5}, Ljp/co/sony/mc/camera/view/setting/settingitem/CameraSettingItemBuilder;->getString(I)Ljava/lang/String;
+
+    move-result-object v5
+
     goto :goto_5
 
-    .line 393
+    .line 401
     :goto_6
     new-instance v6, Ljava/lang/StringBuilder;
 
     invoke-direct {v6}, Ljava/lang/StringBuilder;-><init>()V
 
-    .line 394
-    invoke-interface {v15}, Ljp/co/sony/mc/camera/configuration/parameters/UserSettingValue;->getTextId()I
+    .line 402
+    invoke-virtual {v7}, Ljava/lang/String;->isEmpty()Z
 
     move-result v5
 
-    const/4 v13, -0x1
+    if-nez v5, :cond_d
 
-    if-eq v5, v13, :cond_d
+    .line 403
+    invoke-virtual {v6, v7}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 395
-    invoke-direct {v0, v7}, Ljp/co/sony/mc/camera/view/setting/settingitem/CameraSettingItemBuilder;->getString(I)Ljava/lang/String;
-
-    move-result-object v5
-
-    invoke-virtual {v6, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 398
+    .line 406
     :cond_d
     iget-object v5, v0, Ljp/co/sony/mc/camera/view/setting/settingitem/CameraSettingItemBuilder;->mDependencyGuideResolver:Ljp/co/sony/mc/camera/parameter/dependency/DependencyGuideResolver;
 
@@ -587,7 +643,7 @@
 
     move-object v6, v13
 
-    move v13, v7
+    move-object v13, v7
 
     move-object v7, v4
 
@@ -605,49 +661,49 @@
 
     move-object v10, v15
 
-    .line 399
+    .line 407
     invoke-virtual/range {v5 .. v10}, Ljp/co/sony/mc/camera/parameter/dependency/DependencyGuideResolver;->getDependencyGuideList(Ljp/co/sony/mc/camera/setting/CameraProSetting;Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;ZLjp/co/sony/mc/camera/configuration/parameters/UserSettingValue;)Ljava/util/ArrayList;
 
     move-result-object v5
 
-    .line 402
+    .line 410
     new-instance v6, Ljp/co/sony/mc/camera/view/setting/settingitem/CameraSettingItemBuilder$UserSettingValueItemBuilder;
 
     const/4 v7, 0x0
 
     invoke-direct {v6, v7}, Ljp/co/sony/mc/camera/view/setting/settingitem/CameraSettingItemBuilder$UserSettingValueItemBuilder;-><init>(Ljp/co/sony/mc/camera/view/setting/settingitem/CameraSettingItemBuilder$UserSettingValueItemBuilder-IA;)V
 
-    .line 403
+    .line 411
     invoke-virtual {v6, v15}, Ljp/co/sony/mc/camera/view/setting/settingitem/CameraSettingItemBuilder$UserSettingValueItemBuilder;->setUserSettingValue(Ljp/co/sony/mc/camera/configuration/parameters/UserSettingValue;)Ljp/co/sony/mc/camera/view/setting/settingitem/CameraSettingItemBuilder$UserSettingValueItemBuilder;
 
     move-result-object v6
 
-    .line 404
-    invoke-virtual {v6, v13}, Ljp/co/sony/mc/camera/view/setting/settingitem/CameraSettingItemBuilder$UserSettingValueItemBuilder;->setNameResId(I)Ljp/co/sony/mc/camera/view/setting/settingitem/CameraSettingItemBuilder$UserSettingValueItemBuilder;
+    .line 412
+    invoke-virtual {v6, v13}, Ljp/co/sony/mc/camera/view/setting/settingitem/CameraSettingItemBuilder$UserSettingValueItemBuilder;->setNameString(Ljava/lang/String;)Ljp/co/sony/mc/camera/view/setting/settingitem/CameraSettingItemBuilder$UserSettingValueItemBuilder;
 
     move-result-object v6
 
-    .line 405
+    .line 413
     invoke-virtual {v6, v4}, Ljp/co/sony/mc/camera/view/setting/settingitem/CameraSettingItemBuilder$UserSettingValueItemBuilder;->setIsSelected(Z)Ljp/co/sony/mc/camera/view/setting/settingitem/CameraSettingItemBuilder$UserSettingValueItemBuilder;
 
     move-result-object v4
 
-    .line 406
+    .line 414
     invoke-virtual {v4, v12}, Ljp/co/sony/mc/camera/view/setting/settingitem/CameraSettingItemBuilder$UserSettingValueItemBuilder;->setAppearance(Ljp/co/sony/mc/camera/setting/SettingAppearance;)Ljp/co/sony/mc/camera/view/setting/settingitem/CameraSettingItemBuilder$UserSettingValueItemBuilder;
 
     move-result-object v4
 
-    .line 407
+    .line 415
     invoke-virtual {v4, v3}, Ljp/co/sony/mc/camera/view/setting/settingitem/CameraSettingItemBuilder$UserSettingValueItemBuilder;->setIsOffValue(Z)Ljp/co/sony/mc/camera/view/setting/settingitem/CameraSettingItemBuilder$UserSettingValueItemBuilder;
 
     move-result-object v3
 
-    .line 408
+    .line 416
     invoke-virtual {v3, v5}, Ljp/co/sony/mc/camera/view/setting/settingitem/CameraSettingItemBuilder$UserSettingValueItemBuilder;->setDependencyGuideList(Ljava/util/ArrayList;)Ljp/co/sony/mc/camera/view/setting/settingitem/CameraSettingItemBuilder$UserSettingValueItemBuilder;
 
     move-result-object v3
 
-    .line 409
+    .line 417
     invoke-interface {v15}, Ljp/co/sony/mc/camera/configuration/parameters/UserSettingValue;->isCurrentValueVisible()Z
 
     move-result v4
@@ -656,7 +712,7 @@
 
     move-result-object v3
 
-    .line 411
+    .line 419
     invoke-static {v1, v15}, Ljp/co/sony/mc/camera/view/setting/settingitem/CameraSettingResource;->getSubDescriptionResId(Ljp/co/sony/mc/camera/setting/SettingKey$Key;Ljp/co/sony/mc/camera/configuration/parameters/UserSettingValue;)I
 
     move-result v4
@@ -665,7 +721,7 @@
 
     if-eq v4, v5, :cond_e
 
-    .line 413
+    .line 421
     invoke-direct {v0, v4}, Ljp/co/sony/mc/camera/view/setting/settingitem/CameraSettingItemBuilder;->getString(I)Ljava/lang/String;
 
     move-result-object v5
@@ -674,17 +730,17 @@
 
     const/16 v5, 0x20
 
-    .line 414
+    .line 422
     invoke-virtual {v11, v5}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
 
-    .line 415
+    .line 423
     invoke-direct {v0, v4}, Ljp/co/sony/mc/camera/view/setting/settingitem/CameraSettingItemBuilder;->getString(I)Ljava/lang/String;
 
     move-result-object v4
 
     invoke-virtual {v11, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 417
+    .line 425
     :cond_e
     invoke-virtual {v11}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
@@ -692,7 +748,7 @@
 
     invoke-virtual {v3, v4}, Ljp/co/sony/mc/camera/view/setting/settingitem/CameraSettingItemBuilder$UserSettingValueItemBuilder;->setAdditionalTextForAccessibility(Ljava/lang/String;)Ljp/co/sony/mc/camera/view/setting/settingitem/CameraSettingItemBuilder$UserSettingValueItemBuilder;
 
-    .line 419
+    .line 427
     invoke-static {v3}, Ljp/co/sony/mc/camera/view/setting/settingitem/CameraSettingItemBuilder$UserSettingValueItemBuilder;->-$$Nest$fgetmSubDescriptionText(Ljp/co/sony/mc/camera/view/setting/settingitem/CameraSettingItemBuilder$UserSettingValueItemBuilder;)Ljava/lang/String;
 
     move-result-object v4
@@ -703,20 +759,20 @@
 
     if-nez v4, :cond_f
 
-    .line 420
+    .line 428
     sget-object v4, Ljp/co/sony/mc/camera/view/setting/settingitem/CameraSettingItem$CameraSettingValueItem$ItemType;->VALUE_DESCRIPTION:Ljp/co/sony/mc/camera/view/setting/settingitem/CameraSettingItem$CameraSettingValueItem$ItemType;
 
     invoke-virtual {v3, v4}, Ljp/co/sony/mc/camera/view/setting/settingitem/CameraSettingItemBuilder$UserSettingValueItemBuilder;->setItemType(Ljp/co/sony/mc/camera/view/setting/settingitem/CameraSettingItem$CameraSettingValueItem$ItemType;)Ljp/co/sony/mc/camera/view/setting/settingitem/CameraSettingItemBuilder$UserSettingValueItemBuilder;
 
     goto :goto_7
 
-    .line 423
+    .line 431
     :cond_f
     sget-object v4, Ljp/co/sony/mc/camera/view/setting/settingitem/CameraSettingItem$CameraSettingValueItem$ItemType;->VALUE:Ljp/co/sony/mc/camera/view/setting/settingitem/CameraSettingItem$CameraSettingValueItem$ItemType;
 
     invoke-virtual {v3, v4}, Ljp/co/sony/mc/camera/view/setting/settingitem/CameraSettingItemBuilder$UserSettingValueItemBuilder;->setItemType(Ljp/co/sony/mc/camera/view/setting/settingitem/CameraSettingItem$CameraSettingValueItem$ItemType;)Ljp/co/sony/mc/camera/view/setting/settingitem/CameraSettingItemBuilder$UserSettingValueItemBuilder;
 
-    .line 427
+    .line 435
     :goto_7
     invoke-virtual {v3}, Ljp/co/sony/mc/camera/view/setting/settingitem/CameraSettingItemBuilder$UserSettingValueItemBuilder;->build()Ljp/co/sony/mc/camera/view/setting/settingitem/CameraSettingItem$CameraSettingValueItem;
 
@@ -767,14 +823,14 @@
         }
     .end annotation
 
-    .line 460
+    .line 470
     invoke-interface {p1}, Ljava/util/List;->isEmpty()Z
 
     move-result p0
 
     if-nez p0, :cond_3
 
-    .line 463
+    .line 473
     invoke-interface {p1}, Ljava/util/List;->iterator()Ljava/util/Iterator;
 
     move-result-object p0
@@ -792,7 +848,7 @@
 
     check-cast p1, Ljp/co/sony/mc/camera/view/setting/settingitem/CameraSettingItem$CameraSettingValueItem;
 
-    .line 464
+    .line 474
     invoke-virtual {p1}, Ljp/co/sony/mc/camera/view/setting/settingitem/CameraSettingItem$CameraSettingValueItem;->isSelected()Z
 
     move-result v0
@@ -801,18 +857,22 @@
 
     return-object p1
 
-    .line 468
+    .line 478
     :cond_1
     sget-boolean p0, Ljp/co/sony/mc/camera/util/CamLog;->VERBOSE:Z
 
     if-eqz p0, :cond_2
 
-    .line 469
-    const-string p0, "The specified list doesn\'t have a selected item."
+    const/4 p0, 0x1
 
-    filled-new-array {p0}, [Ljava/lang/String;
+    .line 479
+    new-array p0, p0, [Ljava/lang/String;
 
-    move-result-object p0
+    const/4 p1, 0x0
+
+    const-string v0, "The specified list doesn\'t have a selected item."
+
+    aput-object v0, p0, p1
 
     invoke-static {p0}, Ljp/co/sony/mc/camera/util/CamLog;->e([Ljava/lang/String;)V
 
@@ -821,7 +881,7 @@
 
     return-object p0
 
-    .line 461
+    .line 471
     :cond_3
     new-instance p0, Ljava/lang/IllegalArgumentException;
 
@@ -833,9 +893,19 @@
 .end method
 
 .method private getString(I)Ljava/lang/String;
-    .locals 0
+    .locals 1
 
-    .line 434
+    const/4 v0, -0x1
+
+    if-ne p1, v0, :cond_0
+
+    .line 443
+    const-string p0, ""
+
+    goto :goto_0
+
+    .line 444
+    :cond_0
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/setting/settingitem/CameraSettingItemBuilder;->mContext:Landroid/content/Context;
 
     invoke-virtual {p0}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
@@ -846,32 +916,20 @@
 
     move-result-object p0
 
+    :goto_0
     return-object p0
 .end method
 
 .method private getString(II)Ljava/lang/String;
-    .locals 1
+    .locals 0
 
-    .line 438
-    iget-object v0, p0, Ljp/co/sony/mc/camera/view/setting/settingitem/CameraSettingItemBuilder;->mContext:Landroid/content/Context;
-
-    .line 439
-    invoke-virtual {v0}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
-
-    move-result-object v0
-
-    invoke-virtual {v0, p1}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
+    .line 449
+    invoke-direct {p0, p1}, Ljp/co/sony/mc/camera/view/setting/settingitem/CameraSettingItemBuilder;->getString(I)Ljava/lang/String;
 
     move-result-object p1
 
-    iget-object p0, p0, Ljp/co/sony/mc/camera/view/setting/settingitem/CameraSettingItemBuilder;->mContext:Landroid/content/Context;
-
-    .line 440
-    invoke-virtual {p0}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
-
-    move-result-object p0
-
-    invoke-virtual {p0, p2}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
+    .line 450
+    invoke-direct {p0, p2}, Ljp/co/sony/mc/camera/view/setting/settingitem/CameraSettingItemBuilder;->getString(I)Ljava/lang/String;
 
     move-result-object p0
 
@@ -879,7 +937,7 @@
 
     move-result-object p0
 
-    .line 438
+    .line 448
     invoke-static {p1, p0}, Ljava/lang/String;->format(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
 
     move-result-object p0
@@ -888,39 +946,20 @@
 .end method
 
 .method private getString(III)Ljava/lang/String;
-    .locals 1
+    .locals 0
 
-    .line 445
-    iget-object v0, p0, Ljp/co/sony/mc/camera/view/setting/settingitem/CameraSettingItemBuilder;->mContext:Landroid/content/Context;
-
-    .line 446
-    invoke-virtual {v0}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
-
-    move-result-object v0
-
-    invoke-virtual {v0, p1}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
+    .line 456
+    invoke-direct {p0, p1}, Ljp/co/sony/mc/camera/view/setting/settingitem/CameraSettingItemBuilder;->getString(I)Ljava/lang/String;
 
     move-result-object p1
 
-    iget-object v0, p0, Ljp/co/sony/mc/camera/view/setting/settingitem/CameraSettingItemBuilder;->mContext:Landroid/content/Context;
-
-    .line 447
-    invoke-virtual {v0}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
-
-    move-result-object v0
-
-    invoke-virtual {v0, p2}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
+    .line 457
+    invoke-direct {p0, p2}, Ljp/co/sony/mc/camera/view/setting/settingitem/CameraSettingItemBuilder;->getString(I)Ljava/lang/String;
 
     move-result-object p2
 
-    iget-object p0, p0, Ljp/co/sony/mc/camera/view/setting/settingitem/CameraSettingItemBuilder;->mContext:Landroid/content/Context;
-
-    .line 448
-    invoke-virtual {p0}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
-
-    move-result-object p0
-
-    invoke-virtual {p0, p3}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
+    .line 458
+    invoke-direct {p0, p3}, Ljp/co/sony/mc/camera/view/setting/settingitem/CameraSettingItemBuilder;->getString(I)Ljava/lang/String;
 
     move-result-object p0
 
@@ -928,7 +967,7 @@
 
     move-result-object p0
 
-    .line 445
+    .line 455
     invoke-static {p1, p0}, Ljava/lang/String;->format(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
 
     move-result-object p0
@@ -949,14 +988,14 @@
         }
     .end annotation
 
-    .line 98
+    .line 99
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
     const/4 v1, 0x0
 
-    .line 100
+    .line 101
     :goto_0
     iget-object v2, p0, Ljp/co/sony/mc/camera/view/setting/settingitem/CameraSettingItemBuilder;->mSettingGroup:Ljp/co/sony/mc/camera/view/setting/ContextualSettingList$Group;
 
@@ -966,7 +1005,7 @@
 
     if-ge v1, v2, :cond_2
 
-    .line 101
+    .line 102
     iget-object v2, p0, Ljp/co/sony/mc/camera/view/setting/settingitem/CameraSettingItemBuilder;->mSettingGroup:Ljp/co/sony/mc/camera/view/setting/ContextualSettingList$Group;
 
     iget-object v2, v2, Ljp/co/sony/mc/camera/view/setting/ContextualSettingList$Group;->categories:[Ljp/co/sony/mc/camera/view/setting/ContextualSettingList$Category;
@@ -981,7 +1020,7 @@
 
     if-nez v1, :cond_1
 
-    .line 102
+    .line 103
     :cond_0
     invoke-direct {p0, v1}, Ljp/co/sony/mc/camera/view/setting/settingitem/CameraSettingItemBuilder;->generateCategoryItem(I)Ljp/co/sony/mc/camera/view/setting/settingitem/CameraSettingCategoryItem;
 
@@ -999,26 +1038,26 @@
 .end method
 
 .method public generateKeyItem(Ljp/co/sony/mc/camera/setting/SettingKey$Key;Ljp/co/sony/mc/camera/setting/SettingAppearance;Ljp/co/sony/mc/camera/storage/Storage;)Ljp/co/sony/mc/camera/view/setting/settingitem/CameraSettingItem;
-    .locals 10
+    .locals 11
 
-    .line 181
+    .line 182
     invoke-direct {p0, p1, p3}, Ljp/co/sony/mc/camera/view/setting/settingitem/CameraSettingItemBuilder;->generateChildrenSettingItem(Ljp/co/sony/mc/camera/setting/SettingKey$Key;Ljp/co/sony/mc/camera/storage/Storage;)Ljava/util/List;
 
     move-result-object p3
 
-    .line 182
+    .line 183
     invoke-direct {p0, p3}, Ljp/co/sony/mc/camera/view/setting/settingitem/CameraSettingItemBuilder;->getSelectedSettingItem(Ljava/util/List;)Ljp/co/sony/mc/camera/view/setting/settingitem/CameraSettingItem$CameraSettingValueItem;
 
     move-result-object v0
 
-    .line 183
+    .line 184
     iget-object v1, p0, Ljp/co/sony/mc/camera/view/setting/settingitem/CameraSettingItemBuilder;->mAppearanceChecker:Ljp/co/sony/mc/camera/setting/SettingAppearanceChecker;
 
     invoke-virtual {v1, p1}, Ljp/co/sony/mc/camera/setting/SettingAppearanceChecker;->getKeyRestrictionDialogId(Ljp/co/sony/mc/camera/setting/SettingKey$Key;)Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
 
     move-result-object v1
 
-    .line 185
+    .line 186
     sget-object v2, Ljp/co/sony/mc/camera/setting/SettingAppearance;->ENABLED:Ljp/co/sony/mc/camera/setting/SettingAppearance;
 
     const/4 v3, 0x1
@@ -1032,11 +1071,11 @@
     :cond_0
     const/4 v2, 0x0
 
-    .line 187
+    .line 188
     :goto_0
     iget-object v4, p0, Ljp/co/sony/mc/camera/view/setting/settingitem/CameraSettingItemBuilder;->mCapturingMode:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
-    .line 188
+    .line 189
     invoke-virtual {v4}, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->getLayoutMode()Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
     move-result-object v4
@@ -1049,7 +1088,7 @@
 
     if-eq v4, v5, :cond_1
 
-    .line 190
+    .line 191
     invoke-direct {p0, p3}, Ljp/co/sony/mc/camera/view/setting/settingitem/CameraSettingItemBuilder;->checkDependencyGuideList(Ljava/util/List;)Z
 
     move-result v6
@@ -1058,13 +1097,13 @@
 
     move v4, v5
 
-    .line 194
+    .line 195
     :cond_1
     new-instance v6, Ljava/lang/StringBuilder;
 
     invoke-direct {v6}, Ljava/lang/StringBuilder;-><init>()V
 
-    .line 195
+    .line 196
     invoke-static {p1}, Ljp/co/sony/mc/camera/view/setting/settingitem/CameraSettingResource;->getTitleTextId(Ljp/co/sony/mc/camera/setting/SettingKey$Key;)I
 
     move-result v7
@@ -1075,17 +1114,17 @@
 
     invoke-virtual {v6, v7}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 198
+    .line 199
     invoke-static {p1}, Ljp/co/sony/mc/camera/view/setting/settingitem/CameraSettingResource;->getTitleTextId(Ljp/co/sony/mc/camera/setting/SettingKey$Key;)I
 
     move-result v7
 
-    .line 199
+    .line 200
     const-string v8, ""
 
     if-eq v7, v5, :cond_8
 
-    .line 200
+    .line 201
     sget-object v5, Ljp/co/sony/mc/camera/setting/CommonSettings;->DISP_CUSTOM:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
 
     if-eq p1, v5, :cond_5
@@ -1096,13 +1135,13 @@
 
     goto :goto_1
 
-    .line 210
+    .line 211
     :cond_2
     sget-object v5, Ljp/co/sony/mc/camera/setting/CameraSettings;->COLOR_TONE_PROFILE:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
 
     if-ne p1, v5, :cond_4
 
-    .line 211
+    .line 212
     iget-object v5, p0, Ljp/co/sony/mc/camera/view/setting/settingitem/CameraSettingItemBuilder;->mCapturingMode:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
     invoke-virtual {v5}, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->isProVideo()Z
@@ -1111,20 +1150,20 @@
 
     if-eqz v5, :cond_3
 
-    const v5, 0x7f110175
+    const v5, 0x7f110178
 
-    const v7, 0x7f110233
+    const v7, 0x7f110237
 
-    const v9, 0x7f1102e0
+    const v9, 0x7f11030d
 
-    .line 212
+    .line 213
     invoke-direct {p0, v9, v5, v7}, Ljp/co/sony/mc/camera/view/setting/settingitem/CameraSettingItemBuilder;->getString(III)Ljava/lang/String;
 
     move-result-object v5
 
     goto :goto_2
 
-    .line 218
+    .line 219
     :cond_3
     invoke-direct {p0, v7}, Ljp/co/sony/mc/camera/view/setting/settingitem/CameraSettingItemBuilder;->getString(I)Ljava/lang/String;
 
@@ -1132,7 +1171,7 @@
 
     goto :goto_2
 
-    .line 221
+    .line 222
     :cond_4
     invoke-direct {p0, v7}, Ljp/co/sony/mc/camera/view/setting/settingitem/CameraSettingItemBuilder;->getString(I)Ljava/lang/String;
 
@@ -1140,7 +1179,7 @@
 
     goto :goto_2
 
-    .line 201
+    .line 202
     :cond_5
     :goto_1
     iget-object v5, p0, Ljp/co/sony/mc/camera/view/setting/settingitem/CameraSettingItemBuilder;->mCapturingMode:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
@@ -1151,16 +1190,16 @@
 
     if-eqz v5, :cond_6
 
-    const v5, 0x7f1102ee
+    const v5, 0x7f11031b
 
-    .line 202
+    .line 203
     invoke-direct {p0, v5, v7}, Ljp/co/sony/mc/camera/view/setting/settingitem/CameraSettingItemBuilder;->getString(II)Ljava/lang/String;
 
     move-result-object v5
 
     goto :goto_2
 
-    .line 204
+    .line 205
     :cond_6
     iget-object v5, p0, Ljp/co/sony/mc/camera/view/setting/settingitem/CameraSettingItemBuilder;->mCapturingMode:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
@@ -1170,16 +1209,16 @@
 
     if-eqz v5, :cond_7
 
-    const v5, 0x7f1102f0
+    const v5, 0x7f11031d
 
-    .line 205
+    .line 206
     invoke-direct {p0, v5, v7}, Ljp/co/sony/mc/camera/view/setting/settingitem/CameraSettingItemBuilder;->getString(II)Ljava/lang/String;
 
     move-result-object v5
 
     goto :goto_2
 
-    .line 208
+    .line 209
     :cond_7
     invoke-direct {p0, v7}, Ljp/co/sony/mc/camera/view/setting/settingitem/CameraSettingItemBuilder;->getString(I)Ljava/lang/String;
 
@@ -1195,14 +1234,14 @@
 
     if-nez v0, :cond_9
 
-    .line 227
+    .line 228
     const-string v0, " "
 
     invoke-virtual {v6, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     goto/16 :goto_5
 
-    .line 229
+    .line 230
     :cond_9
     invoke-virtual {v0}, Ljp/co/sony/mc/camera/view/setting/settingitem/CameraSettingItem$CameraSettingValueItem;->isVisible()Z
 
@@ -1210,12 +1249,12 @@
 
     if-eqz v9, :cond_10
 
-    .line 230
+    .line 231
     sget-object v8, Ljp/co/sony/mc/camera/setting/CameraSettings;->MIC:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
 
     if-ne p1, v8, :cond_a
 
-    .line 231
+    .line 232
     invoke-static {}, Ljp/co/sony/mc/camera/recorder/AudioDeviceManager;->getInstance()Ljp/co/sony/mc/camera/recorder/AudioDeviceManager;
 
     move-result-object v8
@@ -1226,16 +1265,16 @@
 
     if-eqz v8, :cond_a
 
-    const v8, 0x7f110307
+    const v8, 0x7f110334
 
-    .line 232
+    .line 233
     invoke-direct {p0, v8}, Ljp/co/sony/mc/camera/view/setting/settingitem/CameraSettingItemBuilder;->getString(I)Ljava/lang/String;
 
     move-result-object v8
 
     goto :goto_3
 
-    .line 233
+    .line 234
     :cond_a
     sget-object v8, Ljp/co/sony/mc/camera/setting/CameraSettings;->TOUCH_INTENTION:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
 
@@ -1245,16 +1284,16 @@
 
     if-eq p2, v8, :cond_b
 
-    const v8, 0x7f110374
+    const v8, 0x7f1103a7
 
-    .line 235
+    .line 236
     invoke-direct {p0, v8}, Ljp/co/sony/mc/camera/view/setting/settingitem/CameraSettingItemBuilder;->getString(I)Ljava/lang/String;
 
     move-result-object v8
 
     goto :goto_3
 
-    .line 236
+    .line 237
     :cond_b
     sget-object v8, Ljp/co/sony/mc/camera/setting/CameraSettings;->COLOR_TONE_PROFILE:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
 
@@ -1264,36 +1303,77 @@
 
     if-eq p2, v8, :cond_c
 
-    .line 238
+    .line 239
+    new-instance v8, Ljava/lang/StringBuilder;
+
+    invoke-direct {v8}, Ljava/lang/StringBuilder;-><init>()V
+
     invoke-static {}, Ljp/co/sony/mc/camera/configuration/parameters/ColorToneProfile;->getDefaultValue()Ljp/co/sony/mc/camera/configuration/parameters/ColorToneProfile;
+
+    move-result-object v9
+
+    invoke-virtual {v9}, Ljp/co/sony/mc/camera/configuration/parameters/ColorToneProfile;->getShortTextId()I
+
+    move-result v9
+
+    invoke-direct {p0, v9}, Ljp/co/sony/mc/camera/view/setting/settingitem/CameraSettingItemBuilder;->getString(I)Ljava/lang/String;
+
+    move-result-object v9
+
+    invoke-virtual {v8, v9}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v8
 
-    invoke-virtual {v8}, Ljp/co/sony/mc/camera/configuration/parameters/ColorToneProfile;->getShortTextId()I
+    const v9, 0x7f11005e
 
-    move-result v8
+    .line 241
+    invoke-direct {p0, v9}, Ljp/co/sony/mc/camera/view/setting/settingitem/CameraSettingItemBuilder;->getString(I)Ljava/lang/String;
 
-    invoke-direct {p0, v8}, Ljp/co/sony/mc/camera/view/setting/settingitem/CameraSettingItemBuilder;->getString(I)Ljava/lang/String;
+    move-result-object v9
+
+    .line 242
+    invoke-static {}, Ljp/co/sony/mc/camera/configuration/parameters/ColorToneProfile;->getDefaultValue()Ljp/co/sony/mc/camera/configuration/parameters/ColorToneProfile;
+
+    move-result-object v10
+
+    invoke-virtual {v10}, Ljp/co/sony/mc/camera/configuration/parameters/ColorToneProfile;->getTextId()I
+
+    move-result v10
+
+    invoke-direct {p0, v10}, Ljp/co/sony/mc/camera/view/setting/settingitem/CameraSettingItemBuilder;->getString(I)Ljava/lang/String;
+
+    move-result-object v10
+
+    filled-new-array {v10}, [Ljava/lang/Object;
+
+    move-result-object v10
+
+    .line 240
+    invoke-static {v9, v10}, Ljava/lang/String;->format(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
+
+    move-result-object v9
+
+    invoke-virtual {v8, v9}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v8
+
+    invoke-virtual {v8}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object v8
 
     goto :goto_3
 
-    .line 240
+    .line 245
     :cond_c
-    invoke-virtual {v0}, Ljp/co/sony/mc/camera/view/setting/settingitem/CameraSettingItem$CameraSettingValueItem;->getNameResId()I
-
-    move-result v8
-
-    invoke-direct {p0, v8}, Ljp/co/sony/mc/camera/view/setting/settingitem/CameraSettingItemBuilder;->getString(I)Ljava/lang/String;
+    invoke-virtual {v0}, Ljp/co/sony/mc/camera/view/setting/settingitem/CameraSettingItem$CameraSettingValueItem;->getNameString()Ljava/lang/String;
 
     move-result-object v8
 
-    .line 242
+    .line 247
     :goto_3
     invoke-virtual {v6, v7}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
 
-    .line 243
+    .line 248
     sget-object v9, Ljp/co/sony/mc/camera/setting/CameraSettings;->PHOTO_LIGHT:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
 
     if-eq p1, v9, :cond_e
@@ -1304,13 +1384,13 @@
 
     goto :goto_4
 
-    .line 252
+    .line 257
     :cond_d
     invoke-virtual {v6, v8}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     goto :goto_5
 
-    .line 244
+    .line 249
     :cond_e
     :goto_4
     invoke-virtual {v0}, Ljp/co/sony/mc/camera/view/setting/settingitem/CameraSettingItem$CameraSettingValueItem;->isOffValue()Z
@@ -1319,55 +1399,55 @@
 
     if-nez v0, :cond_f
 
-    const v0, 0x7f1103bf
+    const v0, 0x7f1103f4
 
-    .line 246
+    .line 251
     invoke-direct {p0, v0}, Ljp/co/sony/mc/camera/view/setting/settingitem/CameraSettingItemBuilder;->getString(I)Ljava/lang/String;
 
     move-result-object v0
 
-    .line 245
+    .line 250
     invoke-virtual {v6, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     goto :goto_5
 
     :cond_f
-    const v0, 0x7f1103be
+    const v0, 0x7f1103f3
 
-    .line 249
+    .line 254
     invoke-direct {p0, v0}, Ljp/co/sony/mc/camera/view/setting/settingitem/CameraSettingItemBuilder;->getString(I)Ljava/lang/String;
 
     move-result-object v0
 
-    .line 248
+    .line 253
     invoke-virtual {v6, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 255
+    .line 260
     :cond_10
     :goto_5
     sget-object v0, Ljp/co/sony/mc/camera/setting/SettingAppearance;->ENABLED:Ljp/co/sony/mc/camera/setting/SettingAppearance;
 
     if-eq p2, v0, :cond_11
 
-    .line 256
+    .line 261
     invoke-virtual {v6, v7}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
 
-    const p2, 0x7f1100d6
+    const p2, 0x7f1100d7
 
-    .line 258
+    .line 263
     invoke-direct {p0, p2}, Ljp/co/sony/mc/camera/view/setting/settingitem/CameraSettingItemBuilder;->getString(I)Ljava/lang/String;
 
     move-result-object p2
 
     invoke-virtual {v6, p2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 261
+    .line 266
     :cond_11
     invoke-static {p1}, Ljp/co/sony/mc/camera/view/setting/settingitem/SettingLayoutType;->get(Ljp/co/sony/mc/camera/setting/SettingKey$Key;)Ljp/co/sony/mc/camera/view/setting/settingitem/SettingLayoutType;
 
     move-result-object p2
 
-    .line 263
+    .line 268
     sget-object v0, Ljp/co/sony/mc/camera/view/setting/settingitem/CameraSettingItemBuilder$1;->$SwitchMap$jp$co$sony$mc$camera$view$setting$settingitem$SettingLayoutType:[I
 
     invoke-virtual {p2}, Ljp/co/sony/mc/camera/view/setting/settingitem/SettingLayoutType;->ordinal()I
@@ -1388,7 +1468,7 @@
 
     goto :goto_6
 
-    .line 269
+    .line 274
     :cond_12
     sget-object v0, Ljp/co/sony/mc/camera/setting/CommonSettings;->DISP_CUSTOM:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
 
@@ -1400,7 +1480,7 @@
 
     move v3, v7
 
-    .line 280
+    .line 285
     :cond_13
     :goto_6
     new-instance v0, Ljp/co/sony/mc/camera/view/setting/settingitem/CameraSettingItemBuilder$UserSettingKeyItemBuilder;
@@ -1409,12 +1489,12 @@
 
     invoke-direct {v0, v7}, Ljp/co/sony/mc/camera/view/setting/settingitem/CameraSettingItemBuilder$UserSettingKeyItemBuilder;-><init>(Ljp/co/sony/mc/camera/view/setting/settingitem/CameraSettingItemBuilder$UserSettingKeyItemBuilder-IA;)V
 
-    .line 281
+    .line 286
     invoke-virtual {v0, p1}, Ljp/co/sony/mc/camera/view/setting/settingitem/CameraSettingItemBuilder$UserSettingKeyItemBuilder;->setUserSettingKey(Ljp/co/sony/mc/camera/setting/SettingKey$Key;)Ljp/co/sony/mc/camera/view/setting/settingitem/CameraSettingItemBuilder$UserSettingKeyItemBuilder;
 
     move-result-object v0
 
-    .line 282
+    .line 287
     invoke-static {p1}, Ljp/co/sony/mc/camera/view/setting/settingitem/CameraSettingResource;->getSubCategoryTitleId(Ljp/co/sony/mc/camera/setting/SettingKey$Key;)I
 
     move-result v7
@@ -1423,17 +1503,17 @@
 
     move-result-object v0
 
-    .line 283
+    .line 288
     invoke-virtual {v0, v5}, Ljp/co/sony/mc/camera/view/setting/settingitem/CameraSettingItemBuilder$UserSettingKeyItemBuilder;->setTitleText(Ljava/lang/String;)Ljp/co/sony/mc/camera/view/setting/settingitem/CameraSettingItemBuilder$UserSettingKeyItemBuilder;
 
     move-result-object v0
 
-    .line 284
+    .line 289
     invoke-virtual {v0, v8}, Ljp/co/sony/mc/camera/view/setting/settingitem/CameraSettingItemBuilder$UserSettingKeyItemBuilder;->setValueText(Ljava/lang/String;)Ljp/co/sony/mc/camera/view/setting/settingitem/CameraSettingItemBuilder$UserSettingKeyItemBuilder;
 
     move-result-object v0
 
-    .line 285
+    .line 290
     invoke-virtual {v6}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object v5
@@ -1442,12 +1522,12 @@
 
     move-result-object v0
 
-    .line 286
+    .line 291
     invoke-virtual {v0, p2}, Ljp/co/sony/mc/camera/view/setting/settingitem/CameraSettingItemBuilder$UserSettingKeyItemBuilder;->setSettingLayoutType(Ljp/co/sony/mc/camera/view/setting/settingitem/SettingLayoutType;)Ljp/co/sony/mc/camera/view/setting/settingitem/CameraSettingItemBuilder$UserSettingKeyItemBuilder;
 
     move-result-object p2
 
-    .line 287
+    .line 292
     invoke-static {p1}, Ljp/co/sony/mc/camera/view/setting/settingitem/CameraSettingResource;->getDescriptionResIdList(Ljp/co/sony/mc/camera/setting/SettingKey$Key;)Ljava/util/List;
 
     move-result-object v0
@@ -1456,7 +1536,7 @@
 
     move-result-object p2
 
-    .line 288
+    .line 293
     invoke-static {p1}, Ljp/co/sony/mc/camera/view/setting/settingitem/CameraSettingResource;->getSubDescriptionResIdList(Ljp/co/sony/mc/camera/setting/SettingKey$Key;)Ljava/util/List;
 
     move-result-object v0
@@ -1465,7 +1545,7 @@
 
     move-result-object p2
 
-    .line 289
+    .line 294
     invoke-static {v4}, Ljp/co/sony/mc/camera/view/setting/settingitem/CameraSettingResource;->isExclusiveInformationId(I)Z
 
     move-result v0
@@ -1474,22 +1554,22 @@
 
     move-result-object p2
 
-    .line 290
+    .line 295
     invoke-virtual {p2, v4}, Ljp/co/sony/mc/camera/view/setting/settingitem/CameraSettingItemBuilder$UserSettingKeyItemBuilder;->setInformationResId(I)Ljp/co/sony/mc/camera/view/setting/settingitem/CameraSettingItemBuilder$UserSettingKeyItemBuilder;
 
     move-result-object p2
 
-    .line 291
+    .line 296
     invoke-virtual {p2, v2}, Ljp/co/sony/mc/camera/view/setting/settingitem/CameraSettingItemBuilder$UserSettingKeyItemBuilder;->setIsRestricted(Z)Ljp/co/sony/mc/camera/view/setting/settingitem/CameraSettingItemBuilder$UserSettingKeyItemBuilder;
 
     move-result-object p2
 
-    .line 292
+    .line 297
     invoke-virtual {p2, v1}, Ljp/co/sony/mc/camera/view/setting/settingitem/CameraSettingItemBuilder$UserSettingKeyItemBuilder;->setRestrictMessageDialogId(Ljp/co/sony/mc/camera/view/messagedialog/DialogId;)Ljp/co/sony/mc/camera/view/setting/settingitem/CameraSettingItemBuilder$UserSettingKeyItemBuilder;
 
     move-result-object p2
 
-    .line 293
+    .line 298
     invoke-static {p1}, Ljp/co/sony/mc/camera/view/setting/settingitem/CameraSettingResource;->getImageResId(Ljp/co/sony/mc/camera/setting/SettingKey$Key;)I
 
     move-result v0
@@ -1498,12 +1578,12 @@
 
     move-result-object p2
 
-    .line 294
+    .line 299
     invoke-virtual {p2, v3}, Ljp/co/sony/mc/camera/view/setting/settingitem/CameraSettingItemBuilder$UserSettingKeyItemBuilder;->setChoiceMode(I)Ljp/co/sony/mc/camera/view/setting/settingitem/CameraSettingItemBuilder$UserSettingKeyItemBuilder;
 
     move-result-object p2
 
-    .line 302
+    .line 307
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/setting/settingitem/CameraSettingItemBuilder;->mSetting:Ljp/co/sony/mc/camera/setting/CameraProSetting;
 
     invoke-virtual {p0, p1}, Ljp/co/sony/mc/camera/setting/CameraProSetting;->getOptions(Ljp/co/sony/mc/camera/setting/SettingKey$Key;)[Ljava/lang/Object;
@@ -1512,15 +1592,15 @@
 
     if-eqz p0, :cond_14
 
-    .line 303
+    .line 308
     array-length p0, p0
 
     if-lez p0, :cond_14
 
-    .line 304
+    .line 309
     invoke-virtual {p2, p3}, Ljp/co/sony/mc/camera/view/setting/settingitem/CameraSettingItemBuilder$UserSettingKeyItemBuilder;->setOptions(Ljava/util/List;)Ljp/co/sony/mc/camera/view/setting/settingitem/CameraSettingItemBuilder$UserSettingKeyItemBuilder;
 
-    .line 307
+    .line 312
     :cond_14
     invoke-virtual {p2}, Ljp/co/sony/mc/camera/view/setting/settingitem/CameraSettingItemBuilder$UserSettingKeyItemBuilder;->build()Ljp/co/sony/mc/camera/view/setting/settingitem/CameraSettingItem;
 

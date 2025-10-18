@@ -48,8 +48,6 @@
 
 
 # instance fields
-.field final synthetic $$dirty:I
-
 .field final synthetic $action:Lkotlin/jvm/functions/Function2;
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -78,7 +76,7 @@
 
 
 # direct methods
-.method constructor <init>(Lkotlin/jvm/functions/Function2;Lkotlin/jvm/functions/Function2;IZ)V
+.method constructor <init>(Lkotlin/jvm/functions/Function2;Lkotlin/jvm/functions/Function2;Z)V
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -96,7 +94,7 @@
             "-",
             "Ljava/lang/Integer;",
             "Lkotlin/Unit;",
-            ">;IZ)V"
+            ">;Z)V"
         }
     .end annotation
 
@@ -104,9 +102,7 @@
 
     iput-object p2, p0, Landroidx/compose/material/SnackbarKt$Snackbar$1;->$content:Lkotlin/jvm/functions/Function2;
 
-    iput p3, p0, Landroidx/compose/material/SnackbarKt$Snackbar$1;->$$dirty:I
-
-    iput-boolean p4, p0, Landroidx/compose/material/SnackbarKt$Snackbar$1;->$actionOnNewLine:Z
+    iput-boolean p3, p0, Landroidx/compose/material/SnackbarKt$Snackbar$1;->$actionOnNewLine:Z
 
     const/4 p1, 0x2
 
@@ -120,7 +116,7 @@
 .method public bridge synthetic invoke(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
 
-    .line 97
+    .line 98
     check-cast p1, Landroidx/compose/runtime/Composer;
 
     check-cast p2, Ljava/lang/Number;
@@ -137,9 +133,9 @@
 .end method
 
 .method public final invoke(Landroidx/compose/runtime/Composer;I)V
-    .locals 5
+    .locals 3
 
-    const-string v0, "C97@4400L4,97@4335L448:Snackbar.kt#jmzs0o"
+    const-string v0, "C98@4442L4,98@4377L448:Snackbar.kt#jmzs0o"
 
     invoke-static {p1, v0}, Landroidx/compose/runtime/ComposerKt;->sourceInformation(Landroidx/compose/runtime/Composer;Ljava/lang/String;)V
 
@@ -149,7 +145,7 @@
 
     if-ne v0, v1, :cond_1
 
-    .line 98
+    .line 99
     invoke-interface {p1}, Landroidx/compose/runtime/Composer;->getSkipping()Z
 
     move-result v0
@@ -158,13 +154,13 @@
 
     goto :goto_0
 
-    .line 107
+    .line 108
     :cond_0
     invoke-interface {p1}, Landroidx/compose/runtime/Composer;->skipToGroupEnd()V
 
     goto :goto_1
 
-    .line 98
+    .line 99
     :cond_1
     :goto_0
     invoke-static {}, Landroidx/compose/runtime/ComposerKt;->isTraceInProgress()Z
@@ -175,7 +171,7 @@
 
     const/4 v0, -0x1
 
-    const-string v1, "androidx.compose.material.Snackbar.<anonymous> (Snackbar.kt:96)"
+    const-string v1, "androidx.compose.material.Snackbar.<anonymous> (Snackbar.kt:98)"
 
     const v2, -0x7c3ab304
 
@@ -202,37 +198,31 @@
 
     move-result-object p2
 
-    const/4 v0, 0x1
+    new-instance v0, Landroidx/compose/material/SnackbarKt$Snackbar$1$1;
 
-    new-array v1, v0, [Landroidx/compose/runtime/ProvidedValue;
+    iget-object v1, p0, Landroidx/compose/material/SnackbarKt$Snackbar$1;->$action:Lkotlin/jvm/functions/Function2;
 
-    const/4 v2, 0x0
-
-    aput-object p2, v1, v2
-
-    new-instance p2, Landroidx/compose/material/SnackbarKt$Snackbar$1$1;
-
-    iget-object v2, p0, Landroidx/compose/material/SnackbarKt$Snackbar$1;->$action:Lkotlin/jvm/functions/Function2;
-
-    iget-object v3, p0, Landroidx/compose/material/SnackbarKt$Snackbar$1;->$content:Lkotlin/jvm/functions/Function2;
-
-    iget v4, p0, Landroidx/compose/material/SnackbarKt$Snackbar$1;->$$dirty:I
+    iget-object v2, p0, Landroidx/compose/material/SnackbarKt$Snackbar$1;->$content:Lkotlin/jvm/functions/Function2;
 
     iget-boolean p0, p0, Landroidx/compose/material/SnackbarKt$Snackbar$1;->$actionOnNewLine:Z
 
-    invoke-direct {p2, v2, v3, v4, p0}, Landroidx/compose/material/SnackbarKt$Snackbar$1$1;-><init>(Lkotlin/jvm/functions/Function2;Lkotlin/jvm/functions/Function2;IZ)V
+    invoke-direct {v0, v1, v2, p0}, Landroidx/compose/material/SnackbarKt$Snackbar$1$1;-><init>(Lkotlin/jvm/functions/Function2;Lkotlin/jvm/functions/Function2;Z)V
 
     const p0, 0x739851bc
 
-    invoke-static {p1, p0, v0, p2}, Landroidx/compose/runtime/internal/ComposableLambdaKt;->composableLambda(Landroidx/compose/runtime/Composer;IZLjava/lang/Object;)Landroidx/compose/runtime/internal/ComposableLambda;
+    const/4 v1, 0x1
+
+    invoke-static {p1, p0, v1, v0}, Landroidx/compose/runtime/internal/ComposableLambdaKt;->composableLambda(Landroidx/compose/runtime/Composer;IZLjava/lang/Object;)Landroidx/compose/runtime/internal/ComposableLambda;
 
     move-result-object p0
 
     check-cast p0, Lkotlin/jvm/functions/Function2;
 
-    const/16 p2, 0x38
+    sget v0, Landroidx/compose/runtime/ProvidedValue;->$stable:I
 
-    invoke-static {v1, p0, p1, p2}, Landroidx/compose/runtime/CompositionLocalKt;->CompositionLocalProvider([Landroidx/compose/runtime/ProvidedValue;Lkotlin/jvm/functions/Function2;Landroidx/compose/runtime/Composer;I)V
+    or-int/lit8 v0, v0, 0x30
+
+    invoke-static {p2, p0, p1, v0}, Landroidx/compose/runtime/CompositionLocalKt;->CompositionLocalProvider(Landroidx/compose/runtime/ProvidedValue;Lkotlin/jvm/functions/Function2;Landroidx/compose/runtime/Composer;I)V
 
     invoke-static {}, Landroidx/compose/runtime/ComposerKt;->isTraceInProgress()Z
 

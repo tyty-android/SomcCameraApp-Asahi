@@ -31,7 +31,7 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/SourceDebugExtension;
-    value = "SMAP\nPagerState.kt\nKotlin\n*S Kotlin\n*F\n+ 1 PagerState.kt\nandroidx/compose/foundation/pager/PagerState$scrollToPage$2\n+ 2 PagerState.kt\nandroidx/compose/foundation/pager/PagerStateKt\n*L\n1#1,684:1\n681#2,4:685\n*S KotlinDebug\n*F\n+ 1 PagerState.kt\nandroidx/compose/foundation/pager/PagerState$scrollToPage$2\n*L\n420#1:685,4\n*E\n"
+    value = "SMAP\nPagerState.kt\nKotlin\n*S Kotlin\n*F\n+ 1 PagerState.kt\nandroidx/compose/foundation/pager/PagerState$scrollToPage$2\n+ 2 PagerState.kt\nandroidx/compose/foundation/pager/PagerStateKt\n*L\n1#1,787:1\n772#2,4:788\n*S KotlinDebug\n*F\n+ 1 PagerState.kt\nandroidx/compose/foundation/pager/PagerState$scrollToPage$2\n*L\n437#1:788,4\n*E\n"
 .end annotation
 
 .annotation runtime Lkotlin/Metadata;
@@ -57,7 +57,7 @@
     f = "PagerState.kt"
     i = {}
     l = {
-        0x1a5
+        0x1b6
     }
     m = "invokeSuspend"
     n = {}
@@ -184,7 +184,7 @@
 
     move-result-object v0
 
-    .line 419
+    .line 436
     iget v1, p0, Landroidx/compose/foundation/pager/PagerState$scrollToPage$2;->label:I
 
     const/4 v2, 0x1
@@ -209,10 +209,10 @@
     :cond_1
     invoke-static {p1}, Lkotlin/ResultKt;->throwOnFailure(Ljava/lang/Object;)V
 
-    .line 420
+    .line 437
     iget-object p1, p0, Landroidx/compose/foundation/pager/PagerState$scrollToPage$2;->this$0:Landroidx/compose/foundation/pager/PagerState;
 
-    .line 421
+    .line 438
     move-object v1, p0
 
     check-cast v1, Lkotlin/coroutines/Continuation;
@@ -227,7 +227,7 @@
 
     return-object v0
 
-    .line 422
+    .line 439
     :cond_2
     :goto_0
     iget p1, p0, Landroidx/compose/foundation/pager/PagerState$scrollToPage$2;->$pageOffsetFraction:F
@@ -254,9 +254,9 @@
     move v2, v4
 
     :goto_1
-    if-eqz v2, :cond_5
+    if-eqz v2, :cond_4
 
-    .line 425
+    .line 442
     iget-object p1, p0, Landroidx/compose/foundation/pager/PagerState$scrollToPage$2;->this$0:Landroidx/compose/foundation/pager/PagerState;
 
     iget v0, p0, Landroidx/compose/foundation/pager/PagerState$scrollToPage$2;->$page:I
@@ -265,52 +265,20 @@
 
     move-result p1
 
-    .line 426
+    .line 443
     iget-object v0, p0, Landroidx/compose/foundation/pager/PagerState$scrollToPage$2;->this$0:Landroidx/compose/foundation/pager/PagerState;
 
-    invoke-static {v0}, Landroidx/compose/foundation/pager/PagerState;->access$getScrollPosition$p(Landroidx/compose/foundation/pager/PagerState;)Landroidx/compose/foundation/pager/PagerScrollPosition;
+    iget p0, p0, Landroidx/compose/foundation/pager/PagerState$scrollToPage$2;->$pageOffsetFraction:F
 
-    move-result-object v0
+    invoke-virtual {v0, p1, p0}, Landroidx/compose/foundation/pager/PagerState;->snapToItem$foundation_release(IF)V
 
-    .line 428
-    iget-object v1, p0, Landroidx/compose/foundation/pager/PagerState$scrollToPage$2;->this$0:Landroidx/compose/foundation/pager/PagerState;
-
-    invoke-static {v1}, Landroidx/compose/foundation/pager/PagerState;->access$getPageAvailableSpace(Landroidx/compose/foundation/pager/PagerState;)I
-
-    move-result v1
-
-    int-to-float v1, v1
-
-    iget v2, p0, Landroidx/compose/foundation/pager/PagerState$scrollToPage$2;->$pageOffsetFraction:F
-
-    mul-float/2addr v1, v2
-
-    invoke-static {v1}, Lkotlin/math/MathKt;->roundToInt(F)I
-
-    move-result v1
-
-    .line 426
-    invoke-virtual {v0, p1, v1}, Landroidx/compose/foundation/pager/PagerScrollPosition;->requestPosition(II)V
-
-    .line 430
-    iget-object p0, p0, Landroidx/compose/foundation/pager/PagerState$scrollToPage$2;->this$0:Landroidx/compose/foundation/pager/PagerState;
-
-    invoke-virtual {p0}, Landroidx/compose/foundation/pager/PagerState;->getRemeasurement$foundation_release()Landroidx/compose/ui/layout/Remeasurement;
-
-    move-result-object p0
-
-    if-eqz p0, :cond_4
-
-    invoke-interface {p0}, Landroidx/compose/ui/layout/Remeasurement;->forceRemeasure()V
-
-    .line 431
-    :cond_4
+    .line 444
     sget-object p0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
 
     return-object p0
 
-    .line 423
-    :cond_5
+    .line 440
+    :cond_4
     new-instance p0, Ljava/lang/StringBuilder;
 
     const-string v0, "pageOffsetFraction "
@@ -331,7 +299,7 @@
 
     move-result-object p0
 
-    .line 422
+    .line 439
     new-instance p1, Ljava/lang/IllegalArgumentException;
 
     invoke-virtual {p0}, Ljava/lang/Object;->toString()Ljava/lang/String;

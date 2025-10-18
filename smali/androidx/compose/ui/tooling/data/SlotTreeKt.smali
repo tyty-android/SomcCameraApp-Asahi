@@ -1,11 +1,11 @@
 .class public final Landroidx/compose/ui/tooling/data/SlotTreeKt;
 .super Ljava/lang/Object;
-.source "SlotTree.kt"
+.source "SlotTree.jvm.kt"
 
 
 # annotations
 .annotation system Ldalvik/annotation/SourceDebugExtension;
-    value = "SMAP\nSlotTree.kt\nKotlin\n*S Kotlin\n*F\n+ 1 SlotTree.kt\nandroidx/compose/ui/tooling/data/SlotTreeKt\n+ 2 fake.kt\nkotlin/jvm/internal/FakeKt\n+ 3 _Collections.kt\nkotlin/collections/CollectionsKt___CollectionsKt\n+ 4 Maps.kt\nkotlin/collections/MapsKt__MapsKt\n+ 5 _Arrays.kt\nkotlin/collections/ArraysKt___ArraysKt\n*L\n1#1,875:1\n1#2:876\n1549#3:877\n1620#3,3:878\n2661#3,7:881\n288#3,2:895\n1045#3:900\n361#4,7:888\n3792#5:897\n4307#5,2:898\n1282#5,2:901\n*S KotlinDebug\n*F\n+ 1 SlotTree.kt\nandroidx/compose/ui/tooling/data/SlotTreeKt\n*L\n526#1:877\n526#1:878,3\n526#1:881,7\n794#1:895,2\n815#1:900\n746#1:888,7\n811#1:897\n811#1:898,2\n869#1:901,2\n*E\n"
+    value = "SMAP\nSlotTree.jvm.kt\nKotlin\n*S Kotlin\n*F\n+ 1 SlotTree.jvm.kt\nandroidx/compose/ui/tooling/data/SlotTreeKt\n+ 2 fake.kt\nkotlin/jvm/internal/FakeKt\n+ 3 _Collections.kt\nkotlin/collections/CollectionsKt___CollectionsKt\n+ 4 Maps.kt\nkotlin/collections/MapsKt__MapsKt\n+ 5 _Arrays.kt\nkotlin/collections/ArraysKt___ArraysKt\n*L\n1#1,878:1\n1#2:879\n1549#3:880\n1620#3,3:881\n2661#3,7:884\n288#3,2:898\n1045#3:903\n361#4,7:891\n3792#5:900\n4307#5,2:901\n1282#5,2:904\n*S KotlinDebug\n*F\n+ 1 SlotTree.jvm.kt\nandroidx/compose/ui/tooling/data/SlotTreeKt\n*L\n528#1:880\n528#1:881,3\n528#1:884,7\n797#1:898,2\n818#1:903\n749#1:891,7\n814#1:900\n814#1:901,2\n872#1:904,2\n*E\n"
 .end annotation
 
 .annotation runtime Lkotlin/Metadata;
@@ -141,7 +141,7 @@
 .method static constructor <clinit>()V
     .locals 2
 
-    .line 189
+    .line 191
     new-instance v0, Landroidx/compose/ui/unit/IntRect;
 
     const/4 v1, 0x0
@@ -150,7 +150,7 @@
 
     sput-object v0, Landroidx/compose/ui/tooling/data/SlotTreeKt;->emptyBox:Landroidx/compose/ui/unit/IntRect;
 
-    .line 191
+    .line 193
     new-instance v0, Lkotlin/text/Regex;
 
     const-string v1, "(\\d+)|([,])|([*])|([:])|L|(P\\([^)]*\\))|(C(\\(([^)]*)\\))?)|@"
@@ -159,7 +159,7 @@
 
     sput-object v0, Landroidx/compose/ui/tooling/data/SlotTreeKt;->tokenizer:Lkotlin/text/Regex;
 
-    .line 254
+    .line 256
     new-instance v0, Lkotlin/text/Regex;
 
     const-string v1, "(\\d+)|,|[!P()]|:([^,!)]+)"
@@ -206,18 +206,12 @@
         }
     .end annotation
 
-    .line 869
+    .line 872
     invoke-virtual {p0}, Ljava/lang/Class;->getDeclaredFields()[Ljava/lang/reflect/Field;
 
     move-result-object p0
 
-    const-string v0, "declaredFields"
-
-    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
-
-    check-cast p0, [Ljava/lang/Object;
-
-    .line 901
+    .line 904
     array-length v0, p0
 
     const/4 v1, 0x0
@@ -229,12 +223,8 @@
 
     aget-object v3, p0, v1
 
-    move-object v4, v3
-
-    check-cast v4, Ljava/lang/reflect/Field;
-
-    .line 870
-    invoke-virtual {v4}, Ljava/lang/reflect/Field;->getName()Ljava/lang/String;
+    .line 873
+    invoke-virtual {v3}, Ljava/lang/reflect/Field;->getName()Ljava/lang/String;
 
     move-result-object v4
 
@@ -254,15 +244,12 @@
     :cond_1
     move-object v3, v2
 
-    .line 869
     :goto_1
-    check-cast v3, Ljava/lang/reflect/Field;
-
     if-eqz v3, :cond_2
 
     const/4 p0, 0x1
 
-    .line 871
+    .line 874
     invoke-virtual {v3, p0}, Ljava/lang/reflect/Field;->setAccessible(Z)V
 
     move-object v2, v3
@@ -274,11 +261,7 @@
 .method public static final asTree(Landroidx/compose/runtime/tooling/CompositionData;)Landroidx/compose/ui/tooling/data/Group;
     .locals 1
 
-    const-string v0, "<this>"
-
-    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 758
+    .line 761
     invoke-interface {p0}, Landroidx/compose/runtime/tooling/CompositionData;->getCompositionGroups()Ljava/lang/Iterable;
 
     move-result-object p0
@@ -299,7 +282,7 @@
 
     if-nez p0, :cond_1
 
-    .line 759
+    .line 762
     :cond_0
     sget-object p0, Landroidx/compose/ui/tooling/data/EmptyGroup;->INSTANCE:Landroidx/compose/ui/tooling/data/EmptyGroup;
 
@@ -310,56 +293,41 @@
 .end method
 
 .method private static final boundsOfLayoutNode(Landroidx/compose/ui/layout/LayoutInfo;)Landroidx/compose/ui/unit/IntRect;
-    .locals 4
+    .locals 5
 
-    .line 558
-    invoke-interface {p0}, Landroidx/compose/ui/layout/LayoutInfo;->isAttached()Z
-
-    move-result v0
-
-    if-nez v0, :cond_0
-
-    .line 559
-    new-instance v0, Landroidx/compose/ui/unit/IntRect;
-
-    .line 562
-    invoke-interface {p0}, Landroidx/compose/ui/layout/LayoutInfo;->getWidth()I
-
-    move-result v1
-
-    .line 563
-    invoke-interface {p0}, Landroidx/compose/ui/layout/LayoutInfo;->getHeight()I
-
-    move-result p0
-
-    const/4 v2, 0x0
-
-    .line 559
-    invoke-direct {v0, v2, v2, v1, p0}, Landroidx/compose/ui/unit/IntRect;-><init>(IIII)V
-
-    return-object v0
-
-    .line 566
-    :cond_0
+    .line 560
     invoke-interface {p0}, Landroidx/compose/ui/layout/LayoutInfo;->getCoordinates()Landroidx/compose/ui/layout/LayoutCoordinates;
 
     move-result-object v0
 
+    .line 561
+    invoke-interface {p0}, Landroidx/compose/ui/layout/LayoutInfo;->isAttached()Z
+
+    move-result v1
+
+    if-eqz v1, :cond_1
+
+    invoke-interface {v0}, Landroidx/compose/ui/layout/LayoutCoordinates;->isAttached()Z
+
+    move-result v1
+
+    if-nez v1, :cond_0
+
+    goto :goto_0
+
+    .line 569
+    :cond_0
     invoke-static {v0}, Landroidx/compose/ui/layout/LayoutCoordinatesKt;->positionInWindow(Landroidx/compose/ui/layout/LayoutCoordinates;)J
 
-    move-result-wide v0
+    move-result-wide v1
 
-    .line 567
-    invoke-interface {p0}, Landroidx/compose/ui/layout/LayoutInfo;->getCoordinates()Landroidx/compose/ui/layout/LayoutCoordinates;
+    .line 570
+    invoke-interface {v0}, Landroidx/compose/ui/layout/LayoutCoordinates;->getSize-YbymL2g()J
 
-    move-result-object p0
+    move-result-wide v3
 
-    invoke-interface {p0}, Landroidx/compose/ui/layout/LayoutCoordinates;->getSize-YbymL2g()J
-
-    move-result-wide v2
-
-    .line 568
-    invoke-static {v0, v1}, Landroidx/compose/ui/geometry/Offset;->getX-impl(J)F
+    .line 571
+    invoke-static {v1, v2}, Landroidx/compose/ui/geometry/Offset;->getX-impl(J)F
 
     move-result p0
 
@@ -367,8 +335,8 @@
 
     move-result p0
 
-    .line 569
-    invoke-static {v0, v1}, Landroidx/compose/ui/geometry/Offset;->getY-impl(J)F
+    .line 572
+    invoke-static {v1, v2}, Landroidx/compose/ui/geometry/Offset;->getY-impl(J)F
 
     move-result v0
 
@@ -376,32 +344,54 @@
 
     move-result v0
 
-    .line 570
-    invoke-static {v2, v3}, Landroidx/compose/ui/unit/IntSize;->getWidth-impl(J)I
+    .line 573
+    invoke-static {v3, v4}, Landroidx/compose/ui/unit/IntSize;->getWidth-impl(J)I
 
     move-result v1
 
     add-int/2addr v1, p0
 
-    .line 571
-    invoke-static {v2, v3}, Landroidx/compose/ui/unit/IntSize;->getHeight-impl(J)I
+    .line 574
+    invoke-static {v3, v4}, Landroidx/compose/ui/unit/IntSize;->getHeight-impl(J)I
 
     move-result v2
 
     add-int/2addr v2, v0
 
-    .line 572
+    .line 575
     new-instance v3, Landroidx/compose/ui/unit/IntRect;
 
     invoke-direct {v3, p0, v0, v1, v2}, Landroidx/compose/ui/unit/IntRect;-><init>(IIII)V
 
     return-object v3
+
+    .line 562
+    :cond_1
+    :goto_0
+    new-instance v0, Landroidx/compose/ui/unit/IntRect;
+
+    .line 565
+    invoke-interface {p0}, Landroidx/compose/ui/layout/LayoutInfo;->getWidth()I
+
+    move-result v1
+
+    .line 566
+    invoke-interface {p0}, Landroidx/compose/ui/layout/LayoutInfo;->getHeight()I
+
+    move-result p0
+
+    const/4 v2, 0x0
+
+    .line 562
+    invoke-direct {v0, v2, v2, v1, p0}, Landroidx/compose/ui/unit/IntRect;-><init>(IIII)V
+
+    return-object v0
 .end method
 
 .method private static final callName(Lkotlin/text/MatchResult;)Ljava/lang/String;
     .locals 1
 
-    .line 200
+    .line 202
     invoke-interface {p0}, Lkotlin/text/MatchResult;->getGroupValues()Ljava/util/List;
 
     move-result-object p0
@@ -434,134 +424,149 @@
         }
     .end annotation
 
-    .line 793
-    const-string v0, "it.name"
+    .line 796
+    move-object/from16 v0, p0
 
-    move-object/from16 v1, p0
+    check-cast v0, Ljava/util/Collection;
 
-    check-cast v1, Ljava/util/Collection;
+    invoke-interface {v0}, Ljava/util/Collection;->isEmpty()Z
 
-    invoke-interface {v1}, Ljava/util/Collection;->isEmpty()Z
+    move-result v0
 
-    move-result v1
+    const/4 v1, 0x1
 
-    const/4 v2, 0x1
+    xor-int/2addr v0, v1
 
-    xor-int/2addr v1, v2
+    if-eqz v0, :cond_10
 
-    if-eqz v1, :cond_10
+    .line 797
+    move-object/from16 v0, p0
 
-    .line 794
-    move-object/from16 v1, p0
+    check-cast v0, Ljava/lang/Iterable;
 
-    check-cast v1, Ljava/lang/Iterable;
+    .line 898
+    invoke-interface {v0}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
 
-    .line 895
-    invoke-interface {v1}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
-
-    move-result-object v1
+    move-result-object v0
 
     :cond_0
-    invoke-interface {v1}, Ljava/util/Iterator;->hasNext()Z
+    invoke-interface {v0}, Ljava/util/Iterator;->hasNext()Z
 
-    move-result v3
+    move-result v2
 
-    const/4 v4, 0x2
+    const/4 v3, 0x2
+
+    const/4 v4, 0x0
 
     const/4 v5, 0x0
 
-    const/4 v6, 0x0
+    if-eqz v2, :cond_1
 
-    if-eqz v3, :cond_1
+    invoke-interface {v0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
-    invoke-interface {v1}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+    move-result-object v2
 
-    move-result-object v3
+    if-eqz v2, :cond_0
 
-    if-eqz v3, :cond_0
+    .line 798
+    invoke-virtual {v2}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
-    .line 795
-    invoke-virtual {v3}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    move-result-object v6
 
-    move-result-object v7
+    invoke-virtual {v6}, Ljava/lang/Class;->getName()Ljava/lang/String;
 
-    invoke-virtual {v7}, Ljava/lang/Class;->getName()Ljava/lang/String;
+    move-result-object v6
 
-    move-result-object v7
+    const-string v7, ".RecomposeScopeImpl"
 
-    const-string v8, "it.javaClass.name"
+    invoke-static {v6, v7, v5, v3, v4}, Lkotlin/text/StringsKt;->endsWith$default(Ljava/lang/String;Ljava/lang/String;ZILjava/lang/Object;)Z
 
-    invoke-static {v7, v8}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
+    move-result v6
 
-    const-string v8, ".RecomposeScopeImpl"
-
-    invoke-static {v7, v8, v6, v4, v5}, Lkotlin/text/StringsKt;->endsWith$default(Ljava/lang/String;Ljava/lang/String;ZILjava/lang/Object;)Z
-
-    move-result v7
-
-    if-eqz v7, :cond_0
+    if-eqz v6, :cond_0
 
     goto :goto_0
 
     :cond_1
-    move-object v3, v5
+    move-object v2, v4
 
     :goto_0
-    if-eqz v3, :cond_10
+    if-eqz v2, :cond_10
 
-    .line 799
+    .line 802
     :try_start_0
-    invoke-virtual {v3}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    invoke-virtual {v2}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
-    move-result-object v1
+    move-result-object v0
 
-    const-string v7, "block"
+    const-string v6, "block"
 
-    invoke-static {v1, v7}, Landroidx/compose/ui/tooling/data/SlotTreeKt;->accessibleField(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/reflect/Field;
+    invoke-static {v0, v6}, Landroidx/compose/ui/tooling/data/SlotTreeKt;->accessibleField(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/reflect/Field;
 
-    move-result-object v1
+    move-result-object v0
 
-    if-eqz v1, :cond_10
-
-    .line 801
-    invoke-virtual {v1, v3}, Ljava/lang/reflect/Field;->get(Ljava/lang/Object;)Ljava/lang/Object;
-
-    move-result-object v1
-
-    if-eqz v1, :cond_10
-
-    .line 803
-    invoke-virtual {v1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
-
-    move-result-object v3
+    if-eqz v0, :cond_10
 
     .line 804
-    const-string v7, "$$default"
+    invoke-virtual {v0, v2}, Ljava/lang/reflect/Field;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
-    invoke-static {v3, v7}, Landroidx/compose/ui/tooling/data/SlotTreeKt;->accessibleField(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/reflect/Field;
+    move-result-object v0
+
+    if-eqz v0, :cond_10
+
+    .line 806
+    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    move-result-object v2
+
+    .line 807
+    const-string v6, "$$default"
+
+    invoke-static {v2, v6}, Landroidx/compose/ui/tooling/data/SlotTreeKt;->accessibleField(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/reflect/Field;
+
+    move-result-object v6
+
+    .line 808
+    const-string v7, "$$changed"
+
+    invoke-static {v2, v7}, Landroidx/compose/ui/tooling/data/SlotTreeKt;->accessibleField(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/reflect/Field;
 
     move-result-object v7
-
-    .line 805
-    const-string v8, "$$changed"
-
-    invoke-static {v3, v8}, Landroidx/compose/ui/tooling/data/SlotTreeKt;->accessibleField(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/reflect/Field;
-
-    move-result-object v8
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 807
-    const-string v9, "null cannot be cast to non-null type kotlin.Int"
+    .line 810
+    const-string v8, "null cannot be cast to non-null type kotlin.Int"
 
-    if-eqz v7, :cond_2
+    if-eqz v6, :cond_2
 
     :try_start_1
-    invoke-virtual {v7, v1}, Ljava/lang/reflect/Field;->get(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v6, v0}, Ljava/lang/reflect/Field;->get(Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object v6
+
+    invoke-static {v6, v8}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;Ljava/lang/String;)V
+
+    check-cast v6, Ljava/lang/Integer;
+
+    invoke-virtual {v6}, Ljava/lang/Integer;->intValue()I
+
+    move-result v6
+
+    goto :goto_1
+
+    :cond_2
+    move v6, v5
+
+    :goto_1
+    if-eqz v7, :cond_3
+
+    .line 812
+    invoke-virtual {v7, v0}, Ljava/lang/reflect/Field;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v7
 
-    invoke-static {v7, v9}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v7, v8}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;Ljava/lang/String;)V
 
     check-cast v7, Ljava/lang/Integer;
 
@@ -569,146 +574,109 @@
 
     move-result v7
 
-    goto :goto_1
-
-    :cond_2
-    move v7, v6
-
-    :goto_1
-    if-eqz v8, :cond_3
-
-    .line 809
-    invoke-virtual {v8, v1}, Ljava/lang/reflect/Field;->get(Ljava/lang/Object;)Ljava/lang/Object;
-
-    move-result-object v8
-
-    invoke-static {v8, v9}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;Ljava/lang/String;)V
-
-    check-cast v8, Ljava/lang/Integer;
-
-    invoke-virtual {v8}, Ljava/lang/Integer;->intValue()I
-
-    move-result v8
-
     goto :goto_2
 
     :cond_3
-    move v8, v6
-
-    .line 810
-    :goto_2
-    invoke-virtual {v3}, Ljava/lang/Class;->getDeclaredFields()[Ljava/lang/reflect/Field;
-
-    move-result-object v3
-
-    const-string v9, "blockClass.declaredFields"
-
-    invoke-static {v3, v9}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
-
-    check-cast v3, [Ljava/lang/Object;
-
-    .line 897
-    new-instance v9, Ljava/util/ArrayList;
-
-    invoke-direct {v9}, Ljava/util/ArrayList;-><init>()V
-
-    check-cast v9, Ljava/util/Collection;
-
-    .line 898
-    array-length v10, v3
-
-    move v11, v6
-
-    :goto_3
-    if-ge v11, v10, :cond_5
-
-    aget-object v12, v3, v11
-
-    move-object v13, v12
-
-    check-cast v13, Ljava/lang/reflect/Field;
-
-    .line 812
-    invoke-virtual {v13}, Ljava/lang/reflect/Field;->getName()Ljava/lang/String;
-
-    move-result-object v14
-
-    invoke-static {v14, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string v15, "$"
-
-    invoke-static {v14, v15, v6, v4, v5}, Lkotlin/text/StringsKt;->startsWith$default(Ljava/lang/String;Ljava/lang/String;ZILjava/lang/Object;)Z
-
-    move-result v14
-
-    if-eqz v14, :cond_4
+    move v7, v5
 
     .line 813
-    invoke-virtual {v13}, Ljava/lang/reflect/Field;->getName()Ljava/lang/String;
+    :goto_2
+    invoke-virtual {v2}, Ljava/lang/Class;->getDeclaredFields()[Ljava/lang/reflect/Field;
 
-    move-result-object v14
+    move-result-object v2
 
-    invoke-static {v14, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
+    .line 900
+    new-instance v8, Ljava/util/ArrayList;
 
-    const-string v15, "$$"
+    invoke-direct {v8}, Ljava/util/ArrayList;-><init>()V
 
-    invoke-static {v14, v15, v6, v4, v5}, Lkotlin/text/StringsKt;->startsWith$default(Ljava/lang/String;Ljava/lang/String;ZILjava/lang/Object;)Z
+    check-cast v8, Ljava/util/Collection;
 
-    move-result v14
+    .line 901
+    array-length v9, v2
 
-    if-nez v14, :cond_4
+    move v10, v5
 
-    .line 814
-    invoke-virtual {v13}, Ljava/lang/reflect/Field;->getName()Ljava/lang/String;
+    :goto_3
+    if-ge v10, v9, :cond_5
 
-    move-result-object v13
+    aget-object v11, v2, v10
 
-    invoke-static {v13, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
+    .line 815
+    invoke-virtual {v11}, Ljava/lang/reflect/Field;->getName()Ljava/lang/String;
 
-    const-string v14, "$jacoco"
+    move-result-object v12
 
-    invoke-static {v13, v14, v6, v4, v5}, Lkotlin/text/StringsKt;->startsWith$default(Ljava/lang/String;Ljava/lang/String;ZILjava/lang/Object;)Z
+    const-string v13, "$"
 
-    move-result v13
+    invoke-static {v12, v13, v5, v3, v4}, Lkotlin/text/StringsKt;->startsWith$default(Ljava/lang/String;Ljava/lang/String;ZILjava/lang/Object;)Z
 
-    if-nez v13, :cond_4
+    move-result v12
 
-    .line 898
-    invoke-interface {v9, v12}, Ljava/util/Collection;->add(Ljava/lang/Object;)Z
+    if-eqz v12, :cond_4
+
+    .line 816
+    invoke-virtual {v11}, Ljava/lang/reflect/Field;->getName()Ljava/lang/String;
+
+    move-result-object v12
+
+    const-string v13, "$$"
+
+    invoke-static {v12, v13, v5, v3, v4}, Lkotlin/text/StringsKt;->startsWith$default(Ljava/lang/String;Ljava/lang/String;ZILjava/lang/Object;)Z
+
+    move-result v12
+
+    if-nez v12, :cond_4
+
+    .line 817
+    invoke-virtual {v11}, Ljava/lang/reflect/Field;->getName()Ljava/lang/String;
+
+    move-result-object v12
+
+    const-string v13, "$jacoco"
+
+    invoke-static {v12, v13, v5, v3, v4}, Lkotlin/text/StringsKt;->startsWith$default(Ljava/lang/String;Ljava/lang/String;ZILjava/lang/Object;)Z
+
+    move-result v12
+
+    if-nez v12, :cond_4
+
+    .line 901
+    invoke-interface {v8, v11}, Ljava/util/Collection;->add(Ljava/lang/Object;)Z
 
     :cond_4
-    add-int/lit8 v11, v11, 0x1
+    add-int/lit8 v10, v10, 0x1
 
     goto :goto_3
 
-    .line 899
+    .line 902
     :cond_5
-    check-cast v9, Ljava/util/List;
-
-    .line 897
-    check-cast v9, Ljava/lang/Iterable;
+    check-cast v8, Ljava/util/List;
 
     .line 900
-    new-instance v0, Landroidx/compose/ui/tooling/data/SlotTreeKt$extractParameterInfo$$inlined$sortedBy$1;
+    check-cast v8, Ljava/lang/Iterable;
 
-    invoke-direct {v0}, Landroidx/compose/ui/tooling/data/SlotTreeKt$extractParameterInfo$$inlined$sortedBy$1;-><init>()V
+    .line 903
+    new-instance v2, Landroidx/compose/ui/tooling/data/SlotTreeKt$extractParameterInfo$$inlined$sortedBy$1;
 
-    check-cast v0, Ljava/util/Comparator;
+    invoke-direct {v2}, Landroidx/compose/ui/tooling/data/SlotTreeKt$extractParameterInfo$$inlined$sortedBy$1;-><init>()V
 
-    invoke-static {v9, v0}, Lkotlin/collections/CollectionsKt;->sortedWith(Ljava/lang/Iterable;Ljava/util/Comparator;)Ljava/util/List;
+    check-cast v2, Ljava/util/Comparator;
 
-    move-result-object v0
+    invoke-static {v8, v2}, Lkotlin/collections/CollectionsKt;->sortedWith(Ljava/lang/Iterable;Ljava/util/Comparator;)Ljava/util/List;
 
-    .line 816
-    new-instance v3, Ljava/util/ArrayList;
+    move-result-object v2
 
-    invoke-direct {v3}, Ljava/util/ArrayList;-><init>()V
+    .line 819
+    new-instance v8, Ljava/util/ArrayList;
 
-    check-cast v3, Ljava/util/List;
+    invoke-direct {v8}, Ljava/util/ArrayList;-><init>()V
+
+    check-cast v8, Ljava/util/List;
 
     if-eqz p1, :cond_6
 
-    .line 817
+    .line 820
     invoke-virtual/range {p1 .. p1}, Landroidx/compose/ui/tooling/data/SourceInformationContext;->getParameters()Ljava/util/List;
 
     move-result-object v9
@@ -720,25 +688,25 @@
 
     move-result-object v9
 
-    .line 818
+    .line 821
     :cond_7
-    invoke-interface {v0}, Ljava/util/List;->size()I
+    invoke-interface {v2}, Ljava/util/List;->size()I
 
     move-result v10
 
-    move v11, v6
+    move v11, v5
 
     :goto_4
     if-ge v11, v10, :cond_f
 
-    .line 819
+    .line 822
     invoke-interface {v9}, Ljava/util/List;->size()I
 
     move-result v12
 
     if-ge v11, v12, :cond_8
 
-    .line 820
+    .line 823
     invoke-interface {v9, v11}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
     move-result-object v12
@@ -750,114 +718,110 @@
     :cond_8
     new-instance v12, Landroidx/compose/ui/tooling/data/Parameter;
 
-    invoke-direct {v12, v11, v5, v4, v5}, Landroidx/compose/ui/tooling/data/Parameter;-><init>(ILjava/lang/String;ILkotlin/jvm/internal/DefaultConstructorMarker;)V
+    invoke-direct {v12, v11, v4, v3, v4}, Landroidx/compose/ui/tooling/data/Parameter;-><init>(ILjava/lang/String;ILkotlin/jvm/internal/DefaultConstructorMarker;)V
 
-    .line 821
+    .line 824
     :goto_5
     invoke-virtual {v12}, Landroidx/compose/ui/tooling/data/Parameter;->getSortedIndex()I
 
     move-result v13
 
-    invoke-interface {v0}, Ljava/util/List;->size()I
+    invoke-interface {v2}, Ljava/util/List;->size()I
 
     move-result v14
 
     if-ge v13, v14, :cond_e
 
-    .line 822
+    .line 825
     invoke-virtual {v12}, Landroidx/compose/ui/tooling/data/Parameter;->getSortedIndex()I
 
     move-result v13
 
-    invoke-interface {v0, v13}, Ljava/util/List;->get(I)Ljava/lang/Object;
+    invoke-interface {v2, v13}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
     move-result-object v13
 
     check-cast v13, Ljava/lang/reflect/Field;
 
-    .line 823
-    invoke-virtual {v13, v2}, Ljava/lang/reflect/Field;->setAccessible(Z)V
+    .line 826
+    invoke-virtual {v13, v1}, Ljava/lang/reflect/Field;->setAccessible(Z)V
 
-    .line 824
-    invoke-virtual {v13, v1}, Ljava/lang/reflect/Field;->get(Ljava/lang/Object;)Ljava/lang/Object;
+    .line 827
+    invoke-virtual {v13, v0}, Ljava/lang/reflect/Field;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v16
 
-    shl-int v14, v2, v11
+    shl-int v14, v1, v11
 
-    and-int/2addr v14, v7
+    and-int/2addr v14, v6
 
     if-eqz v14, :cond_9
 
-    move/from16 v17, v2
+    move/from16 v17, v1
 
     goto :goto_6
 
     :cond_9
-    move/from16 v17, v6
+    move/from16 v17, v5
 
     :goto_6
     mul-int/lit8 v14, v11, 0x3
 
-    add-int/2addr v14, v2
+    add-int/2addr v14, v1
 
     const/4 v15, 0x7
 
     shl-int/2addr v15, v14
 
-    and-int/2addr v15, v8
+    and-int/2addr v15, v7
 
     shr-int v14, v15, v14
 
     and-int/lit8 v15, v14, 0x3
 
-    const/4 v4, 0x3
+    const/4 v3, 0x3
 
-    if-ne v15, v4, :cond_a
+    if-ne v15, v3, :cond_a
 
-    move/from16 v18, v2
+    move/from16 v18, v1
 
     goto :goto_7
 
     :cond_a
-    move/from16 v18, v6
+    move/from16 v18, v5
 
     :goto_7
     if-nez v15, :cond_b
 
-    move v4, v2
+    move v3, v1
 
     goto :goto_8
 
     :cond_b
-    move v4, v6
+    move v3, v5
 
     :goto_8
     and-int/lit8 v14, v14, 0x4
 
     if-nez v14, :cond_c
 
-    move/from16 v21, v2
+    move/from16 v21, v1
 
     goto :goto_9
 
     :cond_c
-    move/from16 v21, v6
+    move/from16 v21, v5
 
-    .line 834
+    .line 837
     :goto_9
     new-instance v15, Landroidx/compose/ui/tooling/data/ParameterInformation;
 
-    .line 835
+    .line 838
     invoke-virtual {v13}, Ljava/lang/reflect/Field;->getName()Ljava/lang/String;
 
     move-result-object v13
 
-    const-string v14, "field.name"
-
-    invoke-static {v13, v14}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
-
-    invoke-virtual {v13, v2}, Ljava/lang/String;->substring(I)Ljava/lang/String;
+    invoke-virtual {v13, v1}, Ljava/lang/String;->substring(I)Ljava/lang/String;
 
     move-result-object v13
 
@@ -865,18 +829,18 @@
 
     invoke-static {v13, v14}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
 
-    if-eqz v4, :cond_d
+    if-eqz v3, :cond_d
 
     if-nez v17, :cond_d
 
-    move/from16 v19, v2
+    move/from16 v19, v1
 
     goto :goto_a
 
     :cond_d
-    move/from16 v19, v6
+    move/from16 v19, v5
 
-    .line 840
+    .line 843
     :goto_a
     invoke-virtual {v12}, Landroidx/compose/ui/tooling/data/Parameter;->getInlineClass()Ljava/lang/String;
 
@@ -884,29 +848,29 @@
 
     move-object v14, v15
 
-    move-object v4, v15
+    move-object v3, v15
 
     move-object v15, v13
 
-    .line 834
+    .line 837
     invoke-direct/range {v14 .. v21}, Landroidx/compose/ui/tooling/data/ParameterInformation;-><init>(Ljava/lang/String;Ljava/lang/Object;ZZZLjava/lang/String;Z)V
 
-    .line 833
-    invoke-interface {v3, v4}, Ljava/util/List;->add(Ljava/lang/Object;)Z
+    .line 836
+    invoke-interface {v8, v3}, Ljava/util/List;->add(Ljava/lang/Object;)Z
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
     :cond_e
     add-int/lit8 v11, v11, 0x1
 
-    const/4 v4, 0x2
+    const/4 v3, 0x2
 
     goto/16 :goto_4
 
     :cond_f
-    return-object v3
+    return-object v8
 
-    .line 852
+    .line 855
     :catchall_0
     :cond_10
     invoke-static {}, Lkotlin/collections/CollectionsKt;->emptyList()Ljava/util/List;
@@ -930,11 +894,7 @@
         }
     .end annotation
 
-    const-string v0, "<this>"
-
-    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 744
+    .line 747
     invoke-interface {p0}, Landroidx/compose/runtime/tooling/CompositionGroup;->getSourceInfo()Ljava/lang/String;
 
     move-result-object v0
@@ -954,35 +914,35 @@
 
     if-nez p1, :cond_1
 
-    .line 745
+    .line 748
     invoke-static {v0, v2, v1, v2}, Landroidx/compose/ui/tooling/data/SlotTreeKt;->sourceInformationContextOf$default(Ljava/lang/String;Landroidx/compose/ui/tooling/data/SourceInformationContext;ILjava/lang/Object;)Landroidx/compose/ui/tooling/data/SourceInformationContext;
 
     move-result-object v2
 
     goto :goto_0
 
-    .line 746
+    .line 749
     :cond_1
     invoke-virtual {p1}, Landroidx/compose/ui/tooling/data/ContextCache;->getContexts$ui_tooling_data_release()Ljava/util/Map;
 
     move-result-object p1
 
-    .line 888
+    .line 891
     invoke-interface {p1, v0}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v3
 
     if-nez v3, :cond_2
 
-    .line 746
+    .line 749
     invoke-static {v0, v2, v1, v2}, Landroidx/compose/ui/tooling/data/SlotTreeKt;->sourceInformationContextOf$default(Ljava/lang/String;Landroidx/compose/ui/tooling/data/SourceInformationContext;ILjava/lang/Object;)Landroidx/compose/ui/tooling/data/SourceInformationContext;
 
     move-result-object v3
 
-    .line 891
+    .line 894
     invoke-interface {p1, v0, v3}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 746
+    .line 749
     :cond_2
     instance-of p1, v3, Landroidx/compose/ui/tooling/data/SourceInformationContext;
 
@@ -992,7 +952,7 @@
 
     check-cast v2, Landroidx/compose/ui/tooling/data/SourceInformationContext;
 
-    .line 748
+    .line 751
     :cond_3
     :goto_0
     new-instance p1, Ljava/util/ArrayList;
@@ -1001,7 +961,7 @@
 
     check-cast p1, Ljava/util/List;
 
-    .line 749
+    .line 752
     move-object v0, p1
 
     check-cast v0, Ljava/util/Collection;
@@ -1012,7 +972,7 @@
 
     invoke-static {v0, p0}, Lkotlin/collections/CollectionsKt;->addAll(Ljava/util/Collection;Ljava/lang/Iterable;)Z
 
-    .line 750
+    .line 753
     invoke-static {p1, v2}, Landroidx/compose/ui/tooling/data/SlotTreeKt;->extractParameterInfo(Ljava/util/List;Landroidx/compose/ui/tooling/data/SourceInformationContext;)Ljava/util/List;
 
     move-result-object p0
@@ -1029,7 +989,7 @@
 
     const/4 p1, 0x0
 
-    .line 743
+    .line 746
     :cond_0
     invoke-static {p0, p1}, Landroidx/compose/ui/tooling/data/SlotTreeKt;->findParameters(Landroidx/compose/runtime/tooling/CompositionGroup;Landroidx/compose/ui/tooling/data/ContextCache;)Ljava/util/List;
 
@@ -1041,7 +1001,7 @@
 .method public static final getEmptyBox()Landroidx/compose/ui/unit/IntRect;
     .locals 1
 
-    .line 189
+    .line 191
     sget-object v0, Landroidx/compose/ui/tooling/data/SlotTreeKt;->emptyBox:Landroidx/compose/ui/unit/IntRect;
 
     return-object v0
@@ -1050,12 +1010,12 @@
 .method private static final getGroup(Landroidx/compose/runtime/tooling/CompositionGroup;Landroidx/compose/ui/tooling/data/SourceInformationContext;)Landroidx/compose/ui/tooling/data/Group;
     .locals 12
 
-    .line 506
+    .line 508
     invoke-interface {p0}, Landroidx/compose/runtime/tooling/CompositionGroup;->getKey()Ljava/lang/Object;
 
     move-result-object v1
 
-    .line 507
+    .line 509
     invoke-interface {p0}, Landroidx/compose/runtime/tooling/CompositionGroup;->getSourceInfo()Ljava/lang/String;
 
     move-result-object v0
@@ -1073,27 +1033,27 @@
     :cond_0
     move-object v0, v2
 
-    .line 508
+    .line 510
     :goto_0
     invoke-interface {p0}, Landroidx/compose/runtime/tooling/CompositionGroup;->getNode()Ljava/lang/Object;
 
     move-result-object v3
 
-    .line 509
+    .line 511
     new-instance v4, Ljava/util/ArrayList;
 
     invoke-direct {v4}, Ljava/util/ArrayList;-><init>()V
 
     check-cast v4, Ljava/util/List;
 
-    .line 510
+    .line 512
     new-instance v5, Ljava/util/ArrayList;
 
     invoke-direct {v5}, Ljava/util/ArrayList;-><init>()V
 
     check-cast v5, Ljava/util/List;
 
-    .line 511
+    .line 513
     move-object v7, v4
 
     check-cast v7, Ljava/util/Collection;
@@ -1104,7 +1064,7 @@
 
     invoke-static {v7, v6}, Lkotlin/collections/CollectionsKt;->addAll(Ljava/util/Collection;Ljava/lang/Iterable;)Z
 
-    .line 512
+    .line 514
     invoke-interface {p0}, Landroidx/compose/runtime/tooling/CompositionGroup;->getCompositionGroups()Ljava/lang/Iterable;
 
     move-result-object v6
@@ -1126,7 +1086,7 @@
 
     check-cast v8, Landroidx/compose/runtime/tooling/CompositionGroup;
 
-    .line 513
+    .line 515
     invoke-static {v8, v0}, Landroidx/compose/ui/tooling/data/SlotTreeKt;->getGroup(Landroidx/compose/runtime/tooling/CompositionGroup;Landroidx/compose/ui/tooling/data/SourceInformationContext;)Landroidx/compose/ui/tooling/data/Group;
 
     move-result-object v8
@@ -1135,13 +1095,13 @@
 
     goto :goto_1
 
-    .line 515
+    .line 517
     :cond_1
     instance-of v6, v3, Landroidx/compose/ui/layout/LayoutInfo;
 
     if-eqz v6, :cond_2
 
-    .line 516
+    .line 518
     move-object v8, v3
 
     check-cast v8, Landroidx/compose/ui/layout/LayoutInfo;
@@ -1152,7 +1112,7 @@
 
     goto :goto_2
 
-    .line 518
+    .line 520
     :cond_2
     invoke-static {}, Lkotlin/collections/CollectionsKt;->emptyList()Ljava/util/List;
 
@@ -1161,7 +1121,7 @@
     :goto_2
     if-eqz v6, :cond_3
 
-    .line 523
+    .line 525
     move-object v6, v3
 
     check-cast v6, Landroidx/compose/ui/layout/LayoutInfo;
@@ -1172,7 +1132,7 @@
 
     goto :goto_5
 
-    .line 525
+    .line 527
     :cond_3
     invoke-interface {v5}, Ljava/util/List;->isEmpty()Z
 
@@ -1184,13 +1144,13 @@
 
     goto :goto_5
 
-    .line 526
+    .line 528
     :cond_4
     move-object v6, v5
 
     check-cast v6, Ljava/lang/Iterable;
 
-    .line 877
+    .line 880
     new-instance v9, Ljava/util/ArrayList;
 
     const/16 v10, 0xa
@@ -1203,7 +1163,7 @@
 
     check-cast v9, Ljava/util/Collection;
 
-    .line 878
+    .line 881
     invoke-interface {v6}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
 
     move-result-object v6
@@ -1219,44 +1179,44 @@
 
     move-result-object v10
 
-    .line 879
+    .line 882
     check-cast v10, Landroidx/compose/ui/tooling/data/Group;
 
-    .line 526
+    .line 528
     invoke-virtual {v10}, Landroidx/compose/ui/tooling/data/Group;->getBox()Landroidx/compose/ui/unit/IntRect;
 
     move-result-object v10
 
-    .line 879
+    .line 882
     invoke-interface {v9, v10}, Ljava/util/Collection;->add(Ljava/lang/Object;)Z
 
     goto :goto_3
 
-    .line 880
+    .line 883
     :cond_5
     check-cast v9, Ljava/util/List;
 
-    .line 877
+    .line 880
     check-cast v9, Ljava/lang/Iterable;
 
-    .line 881
+    .line 884
     invoke-interface {v9}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
 
     move-result-object v6
 
-    .line 882
+    .line 885
     invoke-interface {v6}, Ljava/util/Iterator;->hasNext()Z
 
     move-result v9
 
     if-eqz v9, :cond_f
 
-    .line 883
+    .line 886
     invoke-interface {v6}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
     move-result-object v9
 
-    .line 884
+    .line 887
     :goto_4
     invoke-interface {v6}, Ljava/util/Iterator;->hasNext()Z
 
@@ -1264,7 +1224,7 @@
 
     if-eqz v10, :cond_6
 
-    .line 885
+    .line 888
     invoke-interface {v6}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
     move-result-object v10
@@ -1273,14 +1233,14 @@
 
     check-cast v9, Landroidx/compose/ui/unit/IntRect;
 
-    .line 526
+    .line 528
     invoke-static {v10, v9}, Landroidx/compose/ui/tooling/data/SlotTreeKt;->union(Landroidx/compose/ui/unit/IntRect;Landroidx/compose/ui/unit/IntRect;)Landroidx/compose/ui/unit/IntRect;
 
     move-result-object v9
 
     goto :goto_4
 
-    .line 887
+    .line 890
     :cond_6
     check-cast v9, Landroidx/compose/ui/unit/IntRect;
 
@@ -1291,7 +1251,7 @@
 
     if-eqz v0, :cond_7
 
-    .line 529
+    .line 531
     invoke-virtual {v0}, Landroidx/compose/ui/tooling/data/SourceInformationContext;->isCall()Z
 
     move-result v10
@@ -1312,10 +1272,10 @@
     :goto_6
     if-eqz v3, :cond_8
 
-    .line 530
+    .line 532
     new-instance p0, Landroidx/compose/ui/tooling/data/NodeGroup;
 
-    .line 536
+    .line 538
     move-object p1, v5
 
     check-cast p1, Ljava/util/Collection;
@@ -1332,20 +1292,20 @@
 
     move-object v6, p1
 
-    .line 530
+    .line 532
     invoke-direct/range {v0 .. v6}, Landroidx/compose/ui/tooling/data/NodeGroup;-><init>(Ljava/lang/Object;Ljava/lang/Object;Landroidx/compose/ui/unit/IntRect;Ljava/util/Collection;Ljava/util/List;Ljava/util/Collection;)V
 
     check-cast p0, Landroidx/compose/ui/tooling/data/Group;
 
     goto/16 :goto_c
 
-    .line 538
+    .line 540
     :cond_8
     new-instance v10, Landroidx/compose/ui/tooling/data/CallGroup;
 
     if-eqz v0, :cond_9
 
-    .line 540
+    .line 542
     invoke-virtual {v0}, Landroidx/compose/ui/tooling/data/SourceInformationContext;->getName()Ljava/lang/String;
 
     move-result-object v3
@@ -1358,7 +1318,7 @@
     :goto_7
     if-eqz v0, :cond_a
 
-    .line 543
+    .line 545
     invoke-virtual {v0}, Landroidx/compose/ui/tooling/data/SourceInformationContext;->getName()Ljava/lang/String;
 
     move-result-object v8
@@ -1381,7 +1341,7 @@
 
     goto :goto_9
 
-    .line 544
+    .line 546
     :cond_b
     invoke-virtual {v6}, Landroidx/compose/ui/unit/IntRect;->getBottom()I
 
@@ -1407,7 +1367,7 @@
 
     if-lez v8, :cond_d
 
-    .line 546
+    .line 548
     :cond_c
     invoke-interface {p0}, Landroidx/compose/runtime/tooling/CompositionGroup;->getIdentity()Ljava/lang/Object;
 
@@ -1419,13 +1379,13 @@
     :goto_9
     move-object p0, v2
 
-    .line 550
+    .line 552
     :goto_a
     invoke-static {v4, v0}, Landroidx/compose/ui/tooling/data/SlotTreeKt;->extractParameterInfo(Ljava/util/List;Landroidx/compose/ui/tooling/data/SourceInformationContext;)Ljava/util/List;
 
     move-result-object v8
 
-    .line 552
+    .line 554
     move-object v11, v5
 
     check-cast v11, Ljava/util/Collection;
@@ -1434,7 +1394,7 @@
 
     if-eqz v0, :cond_e
 
-    .line 553
+    .line 555
     invoke-virtual {v0}, Landroidx/compose/ui/tooling/data/SourceInformationContext;->isInline()Z
 
     move-result v0
@@ -1461,7 +1421,7 @@
 
     move-object v8, v11
 
-    .line 538
+    .line 540
     invoke-direct/range {v0 .. v9}, Landroidx/compose/ui/tooling/data/CallGroup;-><init>(Ljava/lang/Object;Ljava/lang/String;Landroidx/compose/ui/unit/IntRect;Landroidx/compose/ui/tooling/data/SourceLocation;Ljava/lang/Object;Ljava/util/List;Ljava/util/Collection;Ljava/util/Collection;Z)V
 
     move-object p0, v10
@@ -1471,7 +1431,7 @@
     :goto_c
     return-object p0
 
-    .line 882
+    .line 885
     :cond_f
     new-instance p0, Ljava/lang/UnsupportedOperationException;
 
@@ -1483,13 +1443,9 @@
 .end method
 
 .method public static final getPosition(Landroidx/compose/ui/tooling/data/Group;)Ljava/lang/String;
-    .locals 1
+    .locals 0
 
-    const-string v0, "<this>"
-
-    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 867
+    .line 870
     invoke-virtual {p0}, Landroidx/compose/ui/tooling/data/Group;->getKey()Ljava/lang/Object;
 
     move-result-object p0
@@ -1510,7 +1466,7 @@
 .method private static final getText(Lkotlin/text/MatchResult;)Ljava/lang/String;
     .locals 1
 
-    .line 195
+    .line 197
     invoke-interface {p0}, Lkotlin/text/MatchResult;->getGroupValues()Ljava/util/List;
 
     move-result-object p0
@@ -1529,7 +1485,7 @@
 .method private static final isANumber(Lkotlin/text/MatchResult;)Z
     .locals 1
 
-    .line 255
+    .line 257
     invoke-interface {p0}, Lkotlin/text/MatchResult;->getGroups()Lkotlin/text/MatchGroupCollection;
 
     move-result-object p0
@@ -1554,7 +1510,7 @@
 .method private static final isCallWithName(Lkotlin/text/MatchResult;)Z
     .locals 1
 
-    .line 199
+    .line 201
     invoke-interface {p0}, Lkotlin/text/MatchResult;->getGroups()Lkotlin/text/MatchGroupCollection;
 
     move-result-object p0
@@ -1581,7 +1537,7 @@
 .method private static final isChar(Lkotlin/text/MatchResult;Ljava/lang/String;)Z
     .locals 0
 
-    .line 196
+    .line 198
     invoke-static {p0}, Landroidx/compose/ui/tooling/data/SlotTreeKt;->getText(Lkotlin/text/MatchResult;)Ljava/lang/String;
 
     move-result-object p0
@@ -1596,7 +1552,7 @@
 .method private static final isClassName(Lkotlin/text/MatchResult;)Z
     .locals 1
 
-    .line 256
+    .line 258
     invoke-interface {p0}, Lkotlin/text/MatchResult;->getGroups()Lkotlin/text/MatchGroupCollection;
 
     move-result-object p0
@@ -1623,7 +1579,7 @@
 .method private static final isFileName(Lkotlin/text/MatchResult;)Z
     .locals 1
 
-    .line 197
+    .line 199
     invoke-interface {p0}, Lkotlin/text/MatchResult;->getGroups()Lkotlin/text/MatchGroupCollection;
 
     move-result-object p0
@@ -1650,7 +1606,7 @@
 .method private static final isNumber(Lkotlin/text/MatchResult;)Z
     .locals 1
 
-    .line 193
+    .line 195
     invoke-interface {p0}, Lkotlin/text/MatchResult;->getGroups()Lkotlin/text/MatchGroupCollection;
 
     move-result-object p0
@@ -1675,7 +1631,7 @@
 .method private static final isParameterInformation(Lkotlin/text/MatchResult;)Z
     .locals 1
 
-    .line 198
+    .line 200
     invoke-interface {p0}, Lkotlin/text/MatchResult;->getGroups()Lkotlin/text/MatchGroupCollection;
 
     move-result-object p0
@@ -1702,7 +1658,7 @@
 .method private static final keyPosition(Ljava/lang/Object;)Ljava/lang/String;
     .locals 1
 
-    .line 774
+    .line 777
     instance-of v0, p0, Ljava/lang/String;
 
     if-eqz v0, :cond_0
@@ -1711,13 +1667,13 @@
 
     goto :goto_0
 
-    .line 775
+    .line 778
     :cond_0
     instance-of v0, p0, Landroidx/compose/ui/tooling/data/JoinedKey;
 
     if-eqz v0, :cond_2
 
-    .line 776
+    .line 779
     check-cast p0, Landroidx/compose/ui/tooling/data/JoinedKey;
 
     invoke-virtual {p0}, Landroidx/compose/ui/tooling/data/JoinedKey;->getLeft()Ljava/lang/Object;
@@ -1730,7 +1686,7 @@
 
     if-nez v0, :cond_1
 
-    .line 777
+    .line 780
     invoke-virtual {p0}, Landroidx/compose/ui/tooling/data/JoinedKey;->getRight()Ljava/lang/Object;
 
     move-result-object p0
@@ -1774,19 +1730,7 @@
         }
     .end annotation
 
-    const-string v0, "<this>"
-
-    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string v0, "factory"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string v0, "cache"
-
-    invoke-static {p2, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 732
+    .line 735
     invoke-interface {p0}, Landroidx/compose/runtime/tooling/CompositionData;->getCompositionGroups()Ljava/lang/Iterable;
 
     move-result-object p0
@@ -1803,7 +1747,7 @@
 
     return-object p0
 
-    .line 733
+    .line 736
     :cond_0
     new-instance v0, Landroidx/compose/ui/tooling/data/CompositionCallStack;
 
@@ -1813,7 +1757,7 @@
 
     invoke-direct {v0, p1, p2}, Landroidx/compose/ui/tooling/data/CompositionCallStack;-><init>(Lkotlin/jvm/functions/Function3;Ljava/util/Map;)V
 
-    .line 734
+    .line 737
     new-instance p1, Ljava/util/ArrayList;
 
     invoke-direct {p1}, Ljava/util/ArrayList;-><init>()V
@@ -1822,10 +1766,10 @@
 
     const/4 p2, 0x0
 
-    .line 735
+    .line 738
     invoke-virtual {v0, p0, p2, p1}, Landroidx/compose/ui/tooling/data/CompositionCallStack;->convert(Landroidx/compose/runtime/tooling/CompositionGroup;ILjava/util/List;)Landroidx/compose/ui/unit/IntRect;
 
-    .line 736
+    .line 739
     invoke-static {p1}, Lkotlin/collections/CollectionsKt;->firstOrNull(Ljava/util/List;)Ljava/lang/Object;
 
     move-result-object p0
@@ -1840,12 +1784,12 @@
 
     if-eqz p3, :cond_0
 
-    .line 730
+    .line 733
     new-instance p2, Landroidx/compose/ui/tooling/data/ContextCache;
 
     invoke-direct {p2}, Landroidx/compose/ui/tooling/data/ContextCache;-><init>()V
 
-    .line 728
+    .line 731
     :cond_0
     invoke-static {p0, p1, p2}, Landroidx/compose/ui/tooling/data/SlotTreeKt;->mapTree(Landroidx/compose/runtime/tooling/CompositionData;Lkotlin/jvm/functions/Function3;Landroidx/compose/ui/tooling/data/ContextCache;)Ljava/lang/Object;
 
@@ -1857,7 +1801,7 @@
 .method private static final number(Lkotlin/text/MatchResult;)I
     .locals 1
 
-    .line 194
+    .line 196
     invoke-interface {p0}, Lkotlin/text/MatchResult;->getGroupValues()Ljava/util/List;
 
     move-result-object p0
@@ -1890,7 +1834,7 @@
         }
     .end annotation
 
-    .line 290
+    .line 292
     const-string v0, ")"
 
     new-instance v1, Lkotlin/jvm/internal/Ref$ObjectRef;
@@ -1913,10 +1857,16 @@
 
     iput-object p0, v1, Lkotlin/jvm/internal/Ref$ObjectRef;->element:Ljava/lang/Object;
 
-    .line 291
+    const/4 p0, 0x4
+
+    .line 293
+    new-array p0, p0, [Ljava/lang/Integer;
+
     invoke-static {v3}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
-    move-result-object p0
+    move-result-object v2
+
+    aput-object v2, p0, v3
 
     const/4 v2, 0x1
 
@@ -1924,33 +1874,27 @@
 
     move-result-object v6
 
+    aput-object v6, p0, v2
+
     invoke-static {v4}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v6
+
+    aput-object v6, p0, v4
+
+    const/4 v6, 0x3
+
+    invoke-static {v6}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object v7
 
-    const/4 v8, 0x3
+    aput-object v7, p0, v6
 
-    invoke-static {v8}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
-
-    move-result-object v9
-
-    const/4 v10, 0x4
-
-    new-array v10, v10, [Ljava/lang/Integer;
-
-    aput-object p0, v10, v3
-
-    aput-object v6, v10, v2
-
-    aput-object v7, v10, v4
-
-    aput-object v9, v10, v8
-
-    invoke-static {v10}, Lkotlin/collections/CollectionsKt;->mutableListOf([Ljava/lang/Object;)Ljava/util/List;
+    invoke-static {p0}, Lkotlin/collections/CollectionsKt;->mutableListOf([Ljava/lang/Object;)Ljava/util/List;
 
     move-result-object p0
 
-    .line 292
+    .line 294
     new-instance v6, Lkotlin/jvm/internal/Ref$IntRef;
 
     invoke-direct {v6}, Lkotlin/jvm/internal/Ref$IntRef;-><init>()V
@@ -1963,25 +1907,25 @@
 
     iput v7, v6, Lkotlin/jvm/internal/Ref$IntRef;->element:I
 
-    .line 293
+    .line 295
     new-instance v2, Ljava/util/ArrayList;
 
     invoke-direct {v2}, Ljava/util/ArrayList;-><init>()V
 
     check-cast v2, Ljava/util/List;
 
-    .line 344
+    .line 346
     :try_start_0
     const-string v7, "P"
 
     invoke-static {v1, v7}, Landroidx/compose/ui/tooling/data/SlotTreeKt;->parseParameters$expect(Lkotlin/jvm/internal/Ref$ObjectRef;Ljava/lang/String;)V
 
-    .line 345
+    .line 347
     const-string v7, "("
 
     invoke-static {v1, v7}, Landroidx/compose/ui/tooling/data/SlotTreeKt;->parseParameters$expect(Lkotlin/jvm/internal/Ref$ObjectRef;Ljava/lang/String;)V
 
-    .line 346
+    .line 348
     :cond_0
     :goto_0
     invoke-static {v1, v0}, Landroidx/compose/ui/tooling/data/SlotTreeKt;->parseParameters$isChar(Lkotlin/jvm/internal/Ref$ObjectRef;Ljava/lang/String;)Z
@@ -1990,7 +1934,7 @@
 
     if-nez v7, :cond_4
 
-    .line 348
+    .line 350
     const-string v7, "!"
 
     invoke-static {v1, v7}, Landroidx/compose/ui/tooling/data/SlotTreeKt;->parseParameters$isChar(Lkotlin/jvm/internal/Ref$ObjectRef;Ljava/lang/String;)Z
@@ -1999,15 +1943,15 @@
 
     if-eqz v7, :cond_1
 
-    .line 350
+    .line 352
     invoke-static {v1}, Landroidx/compose/ui/tooling/data/SlotTreeKt;->parseParameters$next(Lkotlin/jvm/internal/Ref$ObjectRef;)Lkotlin/text/MatchResult;
 
-    .line 351
+    .line 353
     invoke-static {v1}, Landroidx/compose/ui/tooling/data/SlotTreeKt;->parseParameters$expectNumber(Lkotlin/jvm/internal/Ref$ObjectRef;)I
 
     move-result v7
 
-    .line 352
+    .line 354
     invoke-interface {v2}, Ljava/util/List;->size()I
 
     move-result v8
@@ -2021,7 +1965,7 @@
     :goto_1
     if-ge v8, v7, :cond_0
 
-    .line 354
+    .line 356
     new-instance v9, Landroidx/compose/ui/tooling/data/Parameter;
 
     invoke-static {p0}, Lkotlin/collections/CollectionsKt;->first(Ljava/util/List;)Ljava/lang/Object;
@@ -2038,14 +1982,14 @@
 
     invoke-interface {v2, v9}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    .line 355
+    .line 357
     invoke-interface {p0, v3}, Ljava/util/List;->remove(I)Ljava/lang/Object;
 
     add-int/lit8 v8, v8, 0x1
 
     goto :goto_1
 
-    .line 358
+    .line 360
     :cond_1
     const-string v7, ","
 
@@ -2059,20 +2003,20 @@
 
     goto :goto_0
 
-    .line 360
+    .line 362
     :cond_2
     invoke-static {v1}, Landroidx/compose/ui/tooling/data/SlotTreeKt;->parseParameters$expectNumber(Lkotlin/jvm/internal/Ref$ObjectRef;)I
 
     move-result v7
 
-    .line 361
+    .line 363
     invoke-static {v1}, Landroidx/compose/ui/tooling/data/SlotTreeKt;->parseParameters$isClassName(Lkotlin/jvm/internal/Ref$ObjectRef;)Z
 
     move-result v8
 
     if-eqz v8, :cond_3
 
-    .line 362
+    .line 364
     invoke-static {v1}, Landroidx/compose/ui/tooling/data/SlotTreeKt;->parseParameters$expectClassName(Lkotlin/jvm/internal/Ref$ObjectRef;)Ljava/lang/String;
 
     move-result-object v8
@@ -2082,7 +2026,7 @@
     :cond_3
     move-object v8, v5
 
-    .line 364
+    .line 366
     :goto_2
     new-instance v9, Landroidx/compose/ui/tooling/data/Parameter;
 
@@ -2090,10 +2034,10 @@
 
     invoke-interface {v2, v9}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    .line 365
+    .line 367
     invoke-static {v6, p0, v7}, Landroidx/compose/ui/tooling/data/SlotTreeKt;->parseParameters$ensureIndexes(Lkotlin/jvm/internal/Ref$IntRef;Ljava/util/List;I)V
 
-    .line 366
+    .line 368
     invoke-static {v7}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object v7
@@ -2102,11 +2046,11 @@
 
     goto :goto_0
 
-    .line 370
+    .line 372
     :cond_4
     invoke-static {v1, v0}, Landroidx/compose/ui/tooling/data/SlotTreeKt;->parseParameters$expect(Lkotlin/jvm/internal/Ref$ObjectRef;Ljava/lang/String;)V
 
-    .line 373
+    .line 375
     :goto_3
     invoke-interface {p0}, Ljava/util/List;->size()I
 
@@ -2114,7 +2058,7 @@
 
     if-lez v0, :cond_5
 
-    .line 374
+    .line 376
     new-instance v0, Landroidx/compose/ui/tooling/data/Parameter;
 
     invoke-static {p0}, Lkotlin/collections/CollectionsKt;->first(Ljava/util/List;)Ljava/lang/Object;
@@ -2131,7 +2075,7 @@
 
     invoke-interface {v2, v0}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    .line 375
+    .line 377
     invoke-interface {p0, v3}, Ljava/util/List;->remove(I)Ljava/lang/Object;
     :try_end_0
     .catch Landroidx/compose/ui/tooling/data/ParseError; {:try_start_0 .. :try_end_0} :catch_1
@@ -2142,7 +2086,7 @@
     :cond_5
     return-object v2
 
-    .line 381
+    .line 383
     :catch_0
     invoke-static {}, Lkotlin/collections/CollectionsKt;->emptyList()Ljava/util/List;
 
@@ -2150,7 +2094,7 @@
 
     return-object p0
 
-    .line 379
+    .line 381
     :catch_1
     invoke-static {}, Lkotlin/collections/CollectionsKt;->emptyList()Ljava/util/List;
 
@@ -2171,7 +2115,7 @@
         }
     .end annotation
 
-    .line 332
+    .line 334
     iget v0, p0, Lkotlin/jvm/internal/Ref$IntRef;->element:I
 
     sub-int/2addr p2, v0
@@ -2190,7 +2134,7 @@
     :goto_0
     if-ge v0, p2, :cond_1
 
-    .line 337
+    .line 339
     iget v1, p0, Lkotlin/jvm/internal/Ref$IntRef;->element:I
 
     add-int/2addr v1, v0
@@ -2207,7 +2151,7 @@
 
     goto :goto_0
 
-    .line 339
+    .line 341
     :cond_1
     iget p1, p0, Lkotlin/jvm/internal/Ref$IntRef;->element:I
 
@@ -2232,14 +2176,14 @@
         }
     .end annotation
 
-    .line 316
+    .line 318
     iget-object v0, p0, Lkotlin/jvm/internal/Ref$ObjectRef;->element:Ljava/lang/Object;
 
     check-cast v0, Lkotlin/text/MatchResult;
 
     if-eqz v0, :cond_0
 
-    .line 317
+    .line 319
     invoke-static {v0}, Landroidx/compose/ui/tooling/data/SlotTreeKt;->getText(Lkotlin/text/MatchResult;)Ljava/lang/String;
 
     move-result-object v0
@@ -2250,12 +2194,12 @@
 
     if-eqz p1, :cond_0
 
-    .line 318
+    .line 320
     invoke-static {p0}, Landroidx/compose/ui/tooling/data/SlotTreeKt;->parseParameters$next(Lkotlin/jvm/internal/Ref$ObjectRef;)Lkotlin/text/MatchResult;
 
     return-void
 
-    .line 317
+    .line 319
     :cond_0
     new-instance p0, Landroidx/compose/ui/tooling/data/ParseError;
 
@@ -2276,31 +2220,31 @@
         }
     .end annotation
 
-    .line 307
+    .line 309
     iget-object v0, p0, Lkotlin/jvm/internal/Ref$ObjectRef;->element:Ljava/lang/Object;
 
     check-cast v0, Lkotlin/text/MatchResult;
 
     if-eqz v0, :cond_0
 
-    .line 308
+    .line 310
     invoke-static {v0}, Landroidx/compose/ui/tooling/data/SlotTreeKt;->isClassName(Lkotlin/text/MatchResult;)Z
 
     move-result v1
 
     if-eqz v1, :cond_0
 
-    .line 309
+    .line 311
     invoke-static {p0}, Landroidx/compose/ui/tooling/data/SlotTreeKt;->parseParameters$next(Lkotlin/jvm/internal/Ref$ObjectRef;)Lkotlin/text/MatchResult;
 
-    .line 310
+    .line 312
     invoke-static {v0}, Landroidx/compose/ui/tooling/data/SlotTreeKt;->getText(Lkotlin/text/MatchResult;)Ljava/lang/String;
 
     move-result-object p0
 
     const/4 v0, 0x1
 
-    .line 311
+    .line 313
     invoke-virtual {p0, v0}, Ljava/lang/String;->substring(I)Ljava/lang/String;
 
     move-result-object p0
@@ -2309,7 +2253,7 @@
 
     invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 312
+    .line 314
     const-string v0, "c#"
 
     const-string v1, "androidx.compose."
@@ -2320,7 +2264,7 @@
 
     return-object p0
 
-    .line 308
+    .line 310
     :cond_0
     new-instance p0, Landroidx/compose/ui/tooling/data/ParseError;
 
@@ -2340,24 +2284,24 @@
         }
     .end annotation
 
-    .line 300
+    .line 302
     iget-object v0, p0, Lkotlin/jvm/internal/Ref$ObjectRef;->element:Ljava/lang/Object;
 
     check-cast v0, Lkotlin/text/MatchResult;
 
     if-eqz v0, :cond_0
 
-    .line 301
+    .line 303
     invoke-static {v0}, Landroidx/compose/ui/tooling/data/SlotTreeKt;->isANumber(Lkotlin/text/MatchResult;)Z
 
     move-result v1
 
     if-eqz v1, :cond_0
 
-    .line 302
+    .line 304
     invoke-static {p0}, Landroidx/compose/ui/tooling/data/SlotTreeKt;->parseParameters$next(Lkotlin/jvm/internal/Ref$ObjectRef;)Lkotlin/text/MatchResult;
 
-    .line 303
+    .line 305
     invoke-static {v0}, Landroidx/compose/ui/tooling/data/SlotTreeKt;->getText(Lkotlin/text/MatchResult;)Ljava/lang/String;
 
     move-result-object p0
@@ -2368,7 +2312,7 @@
 
     return p0
 
-    .line 301
+    .line 303
     :cond_0
     new-instance p0, Landroidx/compose/ui/tooling/data/ParseError;
 
@@ -2390,14 +2334,14 @@
         }
     .end annotation
 
-    .line 322
+    .line 324
     iget-object p0, p0, Lkotlin/jvm/internal/Ref$ObjectRef;->element:Ljava/lang/Object;
 
     check-cast p0, Lkotlin/text/MatchResult;
 
     if-eqz p0, :cond_1
 
-    .line 323
+    .line 325
     invoke-static {p0}, Landroidx/compose/ui/tooling/data/SlotTreeKt;->getText(Lkotlin/text/MatchResult;)Ljava/lang/String;
 
     move-result-object p0
@@ -2434,14 +2378,14 @@
         }
     .end annotation
 
-    .line 327
+    .line 329
     iget-object p0, p0, Lkotlin/jvm/internal/Ref$ObjectRef;->element:Ljava/lang/Object;
 
     check-cast p0, Lkotlin/text/MatchResult;
 
     if-eqz p0, :cond_0
 
-    .line 328
+    .line 330
     invoke-static {p0}, Landroidx/compose/ui/tooling/data/SlotTreeKt;->isClassName(Lkotlin/text/MatchResult;)Z
 
     move-result p0
@@ -2471,7 +2415,7 @@
         }
     .end annotation
 
-    .line 295
+    .line 297
     iget-object v0, p0, Lkotlin/jvm/internal/Ref$ObjectRef;->element:Ljava/lang/Object;
 
     check-cast v0, Lkotlin/text/MatchResult;
@@ -2484,7 +2428,7 @@
 
     iput-object v0, p0, Lkotlin/jvm/internal/Ref$ObjectRef;->element:Ljava/lang/Object;
 
-    .line 296
+    .line 298
     :cond_0
     iget-object p0, p0, Lkotlin/jvm/internal/Ref$ObjectRef;->element:Ljava/lang/Object;
 
@@ -2496,7 +2440,7 @@
 .method private static final parseToInt(Ljava/lang/String;)I
     .locals 0
 
-    .line 267
+    .line 269
     :try_start_0
     invoke-static {p0}, Ljava/lang/Integer;->parseInt(Ljava/lang/String;)I
 
@@ -2506,7 +2450,7 @@
 
     return p0
 
-    .line 269
+    .line 271
     :catch_0
     new-instance p0, Landroidx/compose/ui/tooling/data/ParseError;
 
@@ -2518,7 +2462,7 @@
 .method private static final parseToInt(Ljava/lang/String;I)I
     .locals 0
 
-    .line 274
+    .line 276
     :try_start_0
     invoke-static {p1}, Lkotlin/text/CharsKt;->checkRadix(I)I
 
@@ -2532,7 +2476,7 @@
 
     return p0
 
-    .line 276
+    .line 278
     :catch_0
     new-instance p0, Landroidx/compose/ui/tooling/data/ParseError;
 
@@ -2550,7 +2494,7 @@
 
     const/4 v2, 0x0
 
-    .line 874
+    .line 877
     invoke-static {p0, p1, v2, v0, v1}, Lkotlin/text/StringsKt;->startsWith$default(Ljava/lang/String;Ljava/lang/String;ZILjava/lang/Object;)Z
 
     move-result v0
@@ -2594,7 +2538,7 @@
 
     move-object/from16 v0, p0
 
-    .line 390
+    .line 392
     new-instance v1, Lkotlin/jvm/internal/Ref$ObjectRef;
 
     invoke-direct {v1}, Lkotlin/jvm/internal/Ref$ObjectRef;-><init>()V
@@ -2617,7 +2561,7 @@
 
     iput-object v2, v1, Lkotlin/jvm/internal/Ref$ObjectRef;->element:Ljava/lang/Object;
 
-    .line 432
+    .line 434
     new-instance v2, Ljava/util/ArrayList;
 
     invoke-direct {v2}, Ljava/util/ArrayList;-><init>()V
@@ -2638,20 +2582,20 @@
 
     move-object v13, v8
 
-    .line 440
+    .line 442
     :cond_0
     iget-object v3, v1, Lkotlin/jvm/internal/Ref$ObjectRef;->element:Ljava/lang/Object;
 
     if-eqz v3, :cond_b
 
-    .line 441
+    .line 443
     iget-object v3, v1, Lkotlin/jvm/internal/Ref$ObjectRef;->element:Ljava/lang/Object;
 
     invoke-static {v3}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;)V
 
     check-cast v3, Lkotlin/text/MatchResult;
 
-    .line 443
+    .line 445
     invoke-static {v3}, Landroidx/compose/ui/tooling/data/SlotTreeKt;->isNumber(Lkotlin/text/MatchResult;)Z
 
     move-result v5
@@ -2668,7 +2612,7 @@
 
     goto/16 :goto_1
 
-    .line 446
+    .line 448
     :cond_1
     const-string v5, "C"
 
@@ -2684,7 +2628,7 @@
 
     move v15, v7
 
-    .line 450
+    .line 452
     :cond_2
     invoke-static {v1}, Landroidx/compose/ui/tooling/data/SlotTreeKt;->sourceInformationContextOf$next$4(Lkotlin/jvm/internal/Ref$ObjectRef;)Lkotlin/text/MatchResult;
 
@@ -2693,7 +2637,7 @@
 
     goto/16 :goto_2
 
-    .line 452
+    .line 454
     :cond_3
     invoke-static {v3}, Landroidx/compose/ui/tooling/data/SlotTreeKt;->isCallWithName(Lkotlin/text/MatchResult;)Z
 
@@ -2705,18 +2649,18 @@
 
     move v15, v7
 
-    .line 456
+    .line 458
     :cond_4
     invoke-static {v3}, Landroidx/compose/ui/tooling/data/SlotTreeKt;->callName(Lkotlin/text/MatchResult;)Ljava/lang/String;
 
     move-result-object v8
 
-    .line 457
+    .line 459
     invoke-static {v1}, Landroidx/compose/ui/tooling/data/SlotTreeKt;->sourceInformationContextOf$next$4(Lkotlin/jvm/internal/Ref$ObjectRef;)Lkotlin/text/MatchResult;
 
     goto :goto_0
 
-    .line 459
+    .line 461
     :cond_5
     invoke-static {v3}, Landroidx/compose/ui/tooling/data/SlotTreeKt;->isParameterInformation(Lkotlin/text/MatchResult;)Z
 
@@ -2724,7 +2668,7 @@
 
     if-eqz v5, :cond_6
 
-    .line 460
+    .line 462
     invoke-static {v3}, Landroidx/compose/ui/tooling/data/SlotTreeKt;->getText(Lkotlin/text/MatchResult;)Ljava/lang/String;
 
     move-result-object v5
@@ -2733,12 +2677,12 @@
 
     move-result-object v13
 
-    .line 461
+    .line 463
     invoke-static {v1}, Landroidx/compose/ui/tooling/data/SlotTreeKt;->sourceInformationContextOf$next$4(Lkotlin/jvm/internal/Ref$ObjectRef;)Lkotlin/text/MatchResult;
 
     goto :goto_2
 
-    .line 463
+    .line 465
     :cond_6
     const-string v5, "*"
 
@@ -2748,17 +2692,17 @@
 
     if-eqz v5, :cond_7
 
-    .line 464
+    .line 466
     invoke-interface {v11}, Ljava/util/List;->size()I
 
     move-result v12
 
-    .line 465
+    .line 467
     invoke-static {v1}, Landroidx/compose/ui/tooling/data/SlotTreeKt;->sourceInformationContextOf$next$4(Lkotlin/jvm/internal/Ref$ObjectRef;)Lkotlin/text/MatchResult;
 
     goto :goto_2
 
-    .line 467
+    .line 469
     :cond_7
     const-string v5, ","
 
@@ -2772,7 +2716,7 @@
 
     goto :goto_2
 
-    .line 468
+    .line 470
     :cond_8
     invoke-static {v3}, Landroidx/compose/ui/tooling/data/SlotTreeKt;->isFileName(Lkotlin/text/MatchResult;)Z
 
@@ -2780,7 +2724,7 @@
 
     if-eqz v1, :cond_b
 
-    .line 469
+    .line 471
     invoke-interface {v3}, Lkotlin/text/MatchResult;->getRange()Lkotlin/ranges/IntRange;
 
     move-result-object v1
@@ -2799,7 +2743,7 @@
 
     invoke-static {v0, v1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 470
+    .line 472
     const-string v1, "#"
 
     const-string v3, ""
@@ -2808,7 +2752,7 @@
 
     move-result-object v1
 
-    .line 471
+    .line 473
     move-object v3, v1
 
     check-cast v3, Ljava/lang/CharSequence;
@@ -2819,7 +2763,7 @@
 
     if-lez v3, :cond_c
 
-    .line 474
+    .line 476
     invoke-virtual {v0}, Ljava/lang/String;->length()I
 
     move-result v3
@@ -2842,7 +2786,7 @@
 
     const/16 v3, 0x24
 
-    .line 476
+    .line 478
     :try_start_0
     invoke-static {v1, v3}, Landroidx/compose/ui/tooling/data/SlotTreeKt;->parseToInt(Ljava/lang/String;I)I
 
@@ -2852,7 +2796,7 @@
 
     goto :goto_3
 
-    .line 444
+    .line 446
     :cond_9
     :goto_1
     invoke-static {v1}, Landroidx/compose/ui/tooling/data/SlotTreeKt;->sourceInformationContextOf$parseLocation(Lkotlin/jvm/internal/Ref$ObjectRef;)Landroidx/compose/ui/tooling/data/SourceLocationInfo;
@@ -2863,7 +2807,7 @@
 
     invoke-interface {v11, v5}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    .line 485
+    .line 487
     :cond_a
     :goto_2
     iget-object v5, v1, Lkotlin/jvm/internal/Ref$ObjectRef;->element:Ljava/lang/Object;
@@ -2879,7 +2823,7 @@
     :cond_b
     move-object v0, v6
 
-    .line 489
+    .line 491
     :catch_0
     :cond_c
     :goto_3
@@ -2889,7 +2833,7 @@
 
     if-eqz p1, :cond_d
 
-    .line 491
+    .line 493
     invoke-virtual/range {p1 .. p1}, Landroidx/compose/ui/tooling/data/SourceInformationContext;->getSourceFile()Ljava/lang/String;
 
     move-result-object v6
@@ -2910,7 +2854,7 @@
     :cond_f
     if-eqz p1, :cond_10
 
-    .line 492
+    .line 494
     invoke-virtual/range {p1 .. p1}, Landroidx/compose/ui/tooling/data/SourceInformationContext;->getPackageHash()I
 
     move-result v0
@@ -2926,7 +2870,7 @@
     :goto_6
     move-object v7, v1
 
-    .line 489
+    .line 491
     invoke-direct/range {v7 .. v15}, Landroidx/compose/ui/tooling/data/SourceInformationContext;-><init>(Ljava/lang/String;Ljava/lang/String;ILjava/util/List;ILjava/util/List;ZZ)V
 
     return-object v1
@@ -2941,7 +2885,7 @@
 
     const/4 p1, 0x0
 
-    .line 386
+    .line 388
     :cond_0
     invoke-static {p0, p1}, Landroidx/compose/ui/tooling/data/SlotTreeKt;->sourceInformationContextOf(Ljava/lang/String;Landroidx/compose/ui/tooling/data/SourceInformationContext;)Landroidx/compose/ui/tooling/data/SourceInformationContext;
 
@@ -2962,7 +2906,7 @@
         }
     .end annotation
 
-    .line 393
+    .line 395
     iget-object v0, p0, Lkotlin/jvm/internal/Ref$ObjectRef;->element:Ljava/lang/Object;
 
     check-cast v0, Lkotlin/text/MatchResult;
@@ -2975,7 +2919,7 @@
 
     iput-object v0, p0, Lkotlin/jvm/internal/Ref$ObjectRef;->element:Ljava/lang/Object;
 
-    .line 394
+    .line 396
     :cond_0
     iget-object p0, p0, Lkotlin/jvm/internal/Ref$ObjectRef;->element:Ljava/lang/Object;
 
@@ -2998,7 +2942,7 @@
 
     const/4 v0, 0x0
 
-    .line 403
+    .line 405
     :try_start_0
     iget-object v1, p0, Lkotlin/jvm/internal/Ref$ObjectRef;->element:Ljava/lang/Object;
 
@@ -3006,14 +2950,14 @@
 
     if-eqz v1, :cond_0
 
-    .line 404
+    .line 406
     invoke-static {v1}, Landroidx/compose/ui/tooling/data/SlotTreeKt;->isNumber(Lkotlin/text/MatchResult;)Z
 
     move-result v2
 
     if-eqz v2, :cond_0
 
-    .line 406
+    .line 408
     invoke-static {v1}, Landroidx/compose/ui/tooling/data/SlotTreeKt;->number(Lkotlin/text/MatchResult;)I
 
     move-result v1
@@ -3024,7 +2968,7 @@
 
     move-result-object v1
 
-    .line 407
+    .line 409
     invoke-static {p0}, Landroidx/compose/ui/tooling/data/SlotTreeKt;->sourceInformationContextOf$next$4(Lkotlin/jvm/internal/Ref$ObjectRef;)Lkotlin/text/MatchResult;
 
     move-result-object v2
@@ -3043,7 +2987,7 @@
     :goto_0
     if-eqz v1, :cond_6
 
-    .line 409
+    .line 411
     const-string v3, "@"
 
     invoke-static {v1, v3}, Landroidx/compose/ui/tooling/data/SlotTreeKt;->isChar(Lkotlin/text/MatchResult;Ljava/lang/String;)Z
@@ -3052,14 +2996,14 @@
 
     if-eqz v1, :cond_6
 
-    .line 411
+    .line 413
     invoke-static {p0}, Landroidx/compose/ui/tooling/data/SlotTreeKt;->sourceInformationContextOf$next$4(Lkotlin/jvm/internal/Ref$ObjectRef;)Lkotlin/text/MatchResult;
 
     move-result-object v1
 
     if-eqz v1, :cond_5
 
-    .line 412
+    .line 414
     invoke-static {v1}, Landroidx/compose/ui/tooling/data/SlotTreeKt;->isNumber(Lkotlin/text/MatchResult;)Z
 
     move-result v3
@@ -3068,7 +3012,7 @@
 
     goto :goto_2
 
-    .line 415
+    .line 417
     :cond_1
     invoke-static {v1}, Landroidx/compose/ui/tooling/data/SlotTreeKt;->number(Lkotlin/text/MatchResult;)I
 
@@ -3078,14 +3022,14 @@
 
     move-result-object v1
 
-    .line 416
+    .line 418
     invoke-static {p0}, Landroidx/compose/ui/tooling/data/SlotTreeKt;->sourceInformationContextOf$next$4(Lkotlin/jvm/internal/Ref$ObjectRef;)Lkotlin/text/MatchResult;
 
     move-result-object v3
 
     if-eqz v3, :cond_4
 
-    .line 417
+    .line 419
     const-string v4, "L"
 
     invoke-static {v3, v4}, Landroidx/compose/ui/tooling/data/SlotTreeKt;->isChar(Lkotlin/text/MatchResult;Ljava/lang/String;)Z
@@ -3094,14 +3038,14 @@
 
     if-eqz v3, :cond_4
 
-    .line 418
+    .line 420
     invoke-static {p0}, Landroidx/compose/ui/tooling/data/SlotTreeKt;->sourceInformationContextOf$next$4(Lkotlin/jvm/internal/Ref$ObjectRef;)Lkotlin/text/MatchResult;
 
     move-result-object p0
 
     if-eqz p0, :cond_3
 
-    .line 419
+    .line 421
     invoke-static {p0}, Landroidx/compose/ui/tooling/data/SlotTreeKt;->isNumber(Lkotlin/text/MatchResult;)Z
 
     move-result v3
@@ -3110,7 +3054,7 @@
 
     goto :goto_1
 
-    .line 422
+    .line 424
     :cond_2
     invoke-static {p0}, Landroidx/compose/ui/tooling/data/SlotTreeKt;->number(Lkotlin/text/MatchResult;)I
 
@@ -3147,7 +3091,7 @@
 
     if-eqz p0, :cond_7
 
-    .line 426
+    .line 428
     new-instance v3, Landroidx/compose/ui/tooling/data/SourceLocationInfo;
 
     invoke-direct {v3, v2, v1, p0}, Landroidx/compose/ui/tooling/data/SourceLocationInfo;-><init>(Ljava/lang/Integer;Ljava/lang/Integer;Ljava/lang/Integer;)V
@@ -3164,15 +3108,7 @@
 .method public static final union(Landroidx/compose/ui/unit/IntRect;Landroidx/compose/ui/unit/IntRect;)Landroidx/compose/ui/unit/IntRect;
     .locals 4
 
-    const-string v0, "<this>"
-
-    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string v0, "other"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 762
+    .line 765
     sget-object v0, Landroidx/compose/ui/tooling/data/SlotTreeKt;->emptyBox:Landroidx/compose/ui/unit/IntRect;
 
     invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->areEqual(Ljava/lang/Object;Ljava/lang/Object;)Z
@@ -3192,7 +3128,7 @@
 
     return-object p0
 
-    .line 765
+    .line 768
     :cond_1
     invoke-virtual {p0}, Landroidx/compose/ui/unit/IntRect;->getLeft()I
 
@@ -3206,7 +3142,7 @@
 
     move-result v0
 
-    .line 766
+    .line 769
     invoke-virtual {p0}, Landroidx/compose/ui/unit/IntRect;->getTop()I
 
     move-result v1
@@ -3219,7 +3155,7 @@
 
     move-result v1
 
-    .line 767
+    .line 770
     invoke-virtual {p0}, Landroidx/compose/ui/unit/IntRect;->getBottom()I
 
     move-result v2
@@ -3232,7 +3168,7 @@
 
     move-result v2
 
-    .line 768
+    .line 771
     invoke-virtual {p0}, Landroidx/compose/ui/unit/IntRect;->getRight()I
 
     move-result p0
@@ -3245,7 +3181,7 @@
 
     move-result p0
 
-    .line 764
+    .line 767
     new-instance p1, Landroidx/compose/ui/unit/IntRect;
 
     invoke-direct {p1, v0, v1, p0, v2}, Landroidx/compose/ui/unit/IntRect;-><init>(IIII)V

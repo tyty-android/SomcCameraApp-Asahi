@@ -29,7 +29,7 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/SourceDebugExtension;
-    value = "SMAP\nSlider.kt\nKotlin\n*S Kotlin\n*F\n+ 1 Slider.kt\nandroidx/compose/material/SliderKt$sliderTapModifier$2\n+ 2 Effects.kt\nandroidx/compose/runtime/EffectsKt\n+ 3 Composables.kt\nandroidx/compose/runtime/ComposablesKt\n+ 4 Composer.kt\nandroidx/compose/runtime/ComposerKt\n+ 5 Effects.kt\nandroidx/compose/runtime/EffectsKt$rememberCoroutineScope$1\n*L\n1#1,1190:1\n486#2,4:1191\n490#2,2:1199\n494#2:1205\n25#3:1195\n1097#4,3:1196\n1100#4,3:1202\n486#5:1201\n*S KotlinDebug\n*F\n+ 1 Slider.kt\nandroidx/compose/material/SliderKt$sliderTapModifier$2\n*L\n908#1:1191,4\n908#1:1199,2\n908#1:1205\n908#1:1195\n908#1:1196,3\n908#1:1202,3\n908#1:1201\n*E\n"
+    value = "SMAP\nSlider.kt\nKotlin\n*S Kotlin\n*F\n+ 1 Slider.kt\nandroidx/compose/material/SliderKt$sliderTapModifier$2\n+ 2 Effects.kt\nandroidx/compose/runtime/EffectsKt\n+ 3 Composables.kt\nandroidx/compose/runtime/ComposablesKt\n+ 4 Composer.kt\nandroidx/compose/runtime/ComposerKt\n+ 5 Effects.kt\nandroidx/compose/runtime/EffectsKt$rememberCoroutineScope$1\n*L\n1#1,1195:1\n487#2,4:1196\n491#2,2:1204\n495#2:1210\n25#3:1200\n1116#4,3:1201\n1119#4,3:1207\n487#5:1206\n*S KotlinDebug\n*F\n+ 1 Slider.kt\nandroidx/compose/material/SliderKt$sliderTapModifier$2\n*L\n912#1:1196,4\n912#1:1204,2\n912#1:1210\n912#1:1200\n912#1:1201,3\n912#1:1207,3\n912#1:1206\n*E\n"
 .end annotation
 
 .annotation runtime Lkotlin/Metadata;
@@ -149,15 +149,11 @@
 .method public final invoke(Landroidx/compose/ui/Modifier;Landroidx/compose/runtime/Composer;I)Landroidx/compose/ui/Modifier;
     .locals 10
 
-    const-string v0, "$this$composed"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
     const v0, 0x73f1d65a
 
     invoke-interface {p2, v0}, Landroidx/compose/runtime/Composer;->startReplaceableGroup(I)V
 
-    const-string v1, "C907@35754L24:Slider.kt#jmzs0o"
+    const-string v1, "C911@35912L24:Slider.kt#jmzs0o"
 
     invoke-static {p2, v1}, Landroidx/compose/runtime/ComposerKt;->sourceInformation(Landroidx/compose/runtime/Composer;Ljava/lang/String;)V
 
@@ -169,9 +165,9 @@
 
     const/4 v1, -0x1
 
-    const-string v2, "androidx.compose.material.sliderTapModifier.<anonymous> (Slider.kt:905)"
+    const-string v2, "androidx.compose.material.sliderTapModifier.<anonymous> (Slider.kt:910)"
 
-    .line 907
+    .line 911
     invoke-static {v0, p3, v1, v2}, Landroidx/compose/runtime/ComposerKt;->traceEventStart(IIILjava/lang/String;)V
 
     :cond_0
@@ -181,28 +177,28 @@
 
     const p3, 0x2e20b340
 
-    .line 908
+    .line 912
     invoke-interface {p2, p3}, Landroidx/compose/runtime/Composer;->startReplaceableGroup(I)V
 
-    const-string p3, "CC(rememberCoroutineScope)488@20446L144:Effects.kt#9igjgp"
+    const-string p3, "CC(rememberCoroutineScope)489@20472L144:Effects.kt#9igjgp"
 
     invoke-static {p2, p3}, Landroidx/compose/runtime/ComposerKt;->sourceInformation(Landroidx/compose/runtime/Composer;Ljava/lang/String;)V
 
     const p3, -0x1d58f75c
 
-    .line 1194
+    .line 1199
     invoke-interface {p2, p3}, Landroidx/compose/runtime/Composer;->startReplaceableGroup(I)V
 
     const-string p3, "CC(remember):Composables.kt#9igjgp"
 
     invoke-static {p2, p3}, Landroidx/compose/runtime/ComposerKt;->sourceInformation(Landroidx/compose/runtime/Composer;Ljava/lang/String;)V
 
-    .line 1196
+    .line 1201
     invoke-interface {p2}, Landroidx/compose/runtime/Composer;->rememberedValue()Ljava/lang/Object;
 
     move-result-object p3
 
-    .line 1197
+    .line 1202
     sget-object v0, Landroidx/compose/runtime/Composer;->Companion:Landroidx/compose/runtime/Composer$Companion;
 
     invoke-virtual {v0}, Landroidx/compose/runtime/Composer$Companion;->getEmpty()Ljava/lang/Object;
@@ -211,41 +207,41 @@
 
     if-ne p3, v0, :cond_1
 
-    .line 1201
+    .line 1206
     sget-object p3, Lkotlin/coroutines/EmptyCoroutineContext;->INSTANCE:Lkotlin/coroutines/EmptyCoroutineContext;
 
-    .line 1200
+    .line 1205
     check-cast p3, Lkotlin/coroutines/CoroutineContext;
 
     invoke-static {p3, p2}, Landroidx/compose/runtime/EffectsKt;->createCompositionCoroutineScope(Lkotlin/coroutines/CoroutineContext;Landroidx/compose/runtime/Composer;)Lkotlinx/coroutines/CoroutineScope;
 
     move-result-object p3
 
-    .line 1199
+    .line 1204
     new-instance v0, Landroidx/compose/runtime/CompositionScopedCoroutineScopeCanceller;
 
     invoke-direct {v0, p3}, Landroidx/compose/runtime/CompositionScopedCoroutineScopeCanceller;-><init>(Lkotlinx/coroutines/CoroutineScope;)V
 
-    .line 1202
+    .line 1207
     invoke-interface {p2, v0}, Landroidx/compose/runtime/Composer;->updateRememberedValue(Ljava/lang/Object;)V
 
     move-object p3, v0
 
-    .line 1195
+    .line 1200
     :cond_1
     invoke-interface {p2}, Landroidx/compose/runtime/Composer;->endReplaceableGroup()V
 
-    .line 1194
+    .line 1199
     check-cast p3, Landroidx/compose/runtime/CompositionScopedCoroutineScopeCanceller;
 
-    .line 1205
+    .line 1210
     invoke-virtual {p3}, Landroidx/compose/runtime/CompositionScopedCoroutineScopeCanceller;->getCoroutineScope()Lkotlinx/coroutines/CoroutineScope;
 
     move-result-object v5
 
     invoke-interface {p2}, Landroidx/compose/runtime/Composer;->endReplaceableGroup()V
 
-    .line 909
+    .line 913
     iget-object p3, p0, Landroidx/compose/material/SliderKt$sliderTapModifier$2;->$draggableState:Landroidx/compose/foundation/gestures/DraggableState;
 
     iget-object v0, p0, Landroidx/compose/material/SliderKt$sliderTapModifier$2;->$interactionSource:Landroidx/compose/foundation/interaction/MutableInteractionSource;
@@ -292,7 +288,7 @@
 
     move-result-object p1
 
-    .line 907
+    .line 911
     :cond_2
     invoke-static {}, Landroidx/compose/runtime/ComposerKt;->isTraceInProgress()Z
 
@@ -311,7 +307,7 @@
 .method public bridge synthetic invoke(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
 
-    .line 905
+    .line 909
     check-cast p1, Landroidx/compose/ui/Modifier;
 
     check-cast p2, Landroidx/compose/runtime/Composer;

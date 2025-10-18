@@ -67,7 +67,7 @@
 .method public final invoke()Ljava/lang/Boolean;
     .locals 0
 
-    .line 308
+    .line 315
     iget-object p0, p0, Landroidx/compose/material/SnackbarHostKt$FadeInFadeOutWithScale$1$1$1$1;->$key:Landroidx/compose/material/SnackbarData;
 
     invoke-interface {p0}, Landroidx/compose/material/SnackbarData;->dismiss()V
@@ -84,7 +84,7 @@
 .method public bridge synthetic invoke()Ljava/lang/Object;
     .locals 0
 
-    .line 308
+    .line 315
     invoke-virtual {p0}, Landroidx/compose/material/SnackbarHostKt$FadeInFadeOutWithScale$1$1$1$1;->invoke()Ljava/lang/Boolean;
 
     move-result-object p0

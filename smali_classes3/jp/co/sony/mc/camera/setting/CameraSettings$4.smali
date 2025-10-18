@@ -21,7 +21,7 @@
 .method constructor <init>()V
     .locals 0
 
-    .line 561
+    .line 615
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -42,10 +42,10 @@
         }
     .end annotation
 
-    .line 565
+    .line 619
     check-cast p1, Ljp/co/sony/mc/camera/setting/CameraSettings;
 
-    .line 566
+    .line 620
     invoke-static {p1}, Ljp/co/sony/mc/camera/setting/CameraSettings;->-$$Nest$mgetDistortionCorrection(Ljp/co/sony/mc/camera/setting/CameraSettings;)Ljp/co/sony/mc/camera/configuration/parameters/DistortionCorrection;
 
     move-result-object p0

@@ -16,8 +16,8 @@
 .annotation runtime Lkotlin/Metadata;
     k = 0x3
     mv = {
-        0x1,
-        0x9,
+        0x2,
+        0x0,
         0x0
     }
     xi = 0x30
@@ -981,7 +981,7 @@
 
     :catch_42
     :try_start_43
-    sget-object v10, Ljp/co/sony/mc/camera/idd/value/IddSettingKey;->SHARPEN_FACES:Ljp/co/sony/mc/camera/idd/value/IddSettingKey;
+    sget-object v10, Ljp/co/sony/mc/camera/idd/value/IddSettingKey;->AFR_SHORTCUT:Ljp/co/sony/mc/camera/idd/value/IddSettingKey;
 
     invoke-virtual {v10}, Ljp/co/sony/mc/camera/idd/value/IddSettingKey;->ordinal()I
 
@@ -995,7 +995,7 @@
 
     :catch_43
     :try_start_44
-    sget-object v10, Ljp/co/sony/mc/camera/idd/value/IddSettingKey;->VIDEO_BACKLIGHT_COLLECTION:Ljp/co/sony/mc/camera/idd/value/IddSettingKey;
+    sget-object v10, Ljp/co/sony/mc/camera/idd/value/IddSettingKey;->FRAMING_ASSIST:Ljp/co/sony/mc/camera/idd/value/IddSettingKey;
 
     invoke-virtual {v10}, Ljp/co/sony/mc/camera/idd/value/IddSettingKey;->ordinal()I
 
@@ -1008,6 +1008,104 @@
     .catch Ljava/lang/NoSuchFieldError; {:try_start_44 .. :try_end_44} :catch_44
 
     :catch_44
+    :try_start_45
+    sget-object v10, Ljp/co/sony/mc/camera/idd/value/IddSettingKey;->FRAMING_ASSIST_METHOD:Ljp/co/sony/mc/camera/idd/value/IddSettingKey;
+
+    invoke-virtual {v10}, Ljp/co/sony/mc/camera/idd/value/IddSettingKey;->ordinal()I
+
+    move-result v10
+
+    const/16 v11, 0x46
+
+    aput v11, v0, v10
+    :try_end_45
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_45 .. :try_end_45} :catch_45
+
+    :catch_45
+    :try_start_46
+    sget-object v10, Ljp/co/sony/mc/camera/idd/value/IddSettingKey;->LEVEL_METER:Ljp/co/sony/mc/camera/idd/value/IddSettingKey;
+
+    invoke-virtual {v10}, Ljp/co/sony/mc/camera/idd/value/IddSettingKey;->ordinal()I
+
+    move-result v10
+
+    const/16 v11, 0x47
+
+    aput v11, v0, v10
+    :try_end_46
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_46 .. :try_end_46} :catch_46
+
+    :catch_46
+    :try_start_47
+    sget-object v10, Ljp/co/sony/mc/camera/idd/value/IddSettingKey;->SAVE_FULL_SCREEN_VIDEO:Ljp/co/sony/mc/camera/idd/value/IddSettingKey;
+
+    invoke-virtual {v10}, Ljp/co/sony/mc/camera/idd/value/IddSettingKey;->ordinal()I
+
+    move-result v10
+
+    const/16 v11, 0x48
+
+    aput v11, v0, v10
+    :try_end_47
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_47 .. :try_end_47} :catch_47
+
+    :catch_47
+    :try_start_48
+    sget-object v10, Ljp/co/sony/mc/camera/idd/value/IddSettingKey;->ULTRA_HDR:Ljp/co/sony/mc/camera/idd/value/IddSettingKey;
+
+    invoke-virtual {v10}, Ljp/co/sony/mc/camera/idd/value/IddSettingKey;->ordinal()I
+
+    move-result v10
+
+    const/16 v11, 0x49
+
+    aput v11, v0, v10
+    :try_end_48
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_48 .. :try_end_48} :catch_48
+
+    :catch_48
+    :try_start_49
+    sget-object v10, Ljp/co/sony/mc/camera/idd/value/IddSettingKey;->VOLUME_DISTORTION_CORRECTION:Ljp/co/sony/mc/camera/idd/value/IddSettingKey;
+
+    invoke-virtual {v10}, Ljp/co/sony/mc/camera/idd/value/IddSettingKey;->ordinal()I
+
+    move-result v10
+
+    const/16 v11, 0x4a
+
+    aput v11, v0, v10
+    :try_end_49
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_49 .. :try_end_49} :catch_49
+
+    :catch_49
+    :try_start_4a
+    sget-object v10, Ljp/co/sony/mc/camera/idd/value/IddSettingKey;->SHARPEN_FACES:Ljp/co/sony/mc/camera/idd/value/IddSettingKey;
+
+    invoke-virtual {v10}, Ljp/co/sony/mc/camera/idd/value/IddSettingKey;->ordinal()I
+
+    move-result v10
+
+    const/16 v11, 0x4b
+
+    aput v11, v0, v10
+    :try_end_4a
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_4a .. :try_end_4a} :catch_4a
+
+    :catch_4a
+    :try_start_4b
+    sget-object v10, Ljp/co/sony/mc/camera/idd/value/IddSettingKey;->VIDEO_BACKLIGHT_COLLECTION:Ljp/co/sony/mc/camera/idd/value/IddSettingKey;
+
+    invoke-virtual {v10}, Ljp/co/sony/mc/camera/idd/value/IddSettingKey;->ordinal()I
+
+    move-result v10
+
+    const/16 v11, 0x4c
+
+    aput v11, v0, v10
+    :try_end_4b
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_4b .. :try_end_4b} :catch_4b
+
+    :catch_4b
     sput-object v0, Ljp/co/sony/mc/camera/idd/event/IddSettingEvent$WhenMappings;->$EnumSwitchMapping$0:[I
 
     invoke-static {}, Ljp/co/sony/mc/camera/idd/value/IddUserControl;->values()[Ljp/co/sony/mc/camera/idd/value/IddUserControl;
@@ -1018,7 +1116,7 @@
 
     new-array v0, v0, [I
 
-    :try_start_45
+    :try_start_4c
     sget-object v10, Ljp/co/sony/mc/camera/idd/value/IddUserControl;->FUNCTION:Ljp/co/sony/mc/camera/idd/value/IddUserControl;
 
     invoke-virtual {v10}, Ljp/co/sony/mc/camera/idd/value/IddUserControl;->ordinal()I
@@ -1026,11 +1124,11 @@
     move-result v10
 
     aput v1, v0, v10
-    :try_end_45
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_45 .. :try_end_45} :catch_45
+    :try_end_4c
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_4c .. :try_end_4c} :catch_4c
 
-    :catch_45
-    :try_start_46
+    :catch_4c
+    :try_start_4d
     sget-object v1, Ljp/co/sony/mc/camera/idd/value/IddUserControl;->DIAL_1:Ljp/co/sony/mc/camera/idd/value/IddUserControl;
 
     invoke-virtual {v1}, Ljp/co/sony/mc/camera/idd/value/IddUserControl;->ordinal()I
@@ -1038,11 +1136,11 @@
     move-result v1
 
     aput v2, v0, v1
-    :try_end_46
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_46 .. :try_end_46} :catch_46
+    :try_end_4d
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_4d .. :try_end_4d} :catch_4d
 
-    :catch_46
-    :try_start_47
+    :catch_4d
+    :try_start_4e
     sget-object v1, Ljp/co/sony/mc/camera/idd/value/IddUserControl;->MENU:Ljp/co/sony/mc/camera/idd/value/IddUserControl;
 
     invoke-virtual {v1}, Ljp/co/sony/mc/camera/idd/value/IddUserControl;->ordinal()I
@@ -1050,11 +1148,11 @@
     move-result v1
 
     aput v3, v0, v1
-    :try_end_47
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_47 .. :try_end_47} :catch_47
+    :try_end_4e
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_4e .. :try_end_4e} :catch_4e
 
-    :catch_47
-    :try_start_48
+    :catch_4e
+    :try_start_4f
     sget-object v1, Ljp/co/sony/mc/camera/idd/value/IddUserControl;->PULL_DOWN_MENU:Ljp/co/sony/mc/camera/idd/value/IddUserControl;
 
     invoke-virtual {v1}, Ljp/co/sony/mc/camera/idd/value/IddUserControl;->ordinal()I
@@ -1062,11 +1160,11 @@
     move-result v1
 
     aput v4, v0, v1
-    :try_end_48
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_48 .. :try_end_48} :catch_48
+    :try_end_4f
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_4f .. :try_end_4f} :catch_4f
 
-    :catch_48
-    :try_start_49
+    :catch_4f
+    :try_start_50
     sget-object v1, Ljp/co/sony/mc/camera/idd/value/IddUserControl;->HEADER:Ljp/co/sony/mc/camera/idd/value/IddUserControl;
 
     invoke-virtual {v1}, Ljp/co/sony/mc/camera/idd/value/IddUserControl;->ordinal()I
@@ -1074,11 +1172,11 @@
     move-result v1
 
     aput v5, v0, v1
-    :try_end_49
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_49 .. :try_end_49} :catch_49
+    :try_end_50
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_50 .. :try_end_50} :catch_50
 
-    :catch_49
-    :try_start_4a
+    :catch_50
+    :try_start_51
     sget-object v1, Ljp/co/sony/mc/camera/idd/value/IddUserControl;->PREVIEW:Ljp/co/sony/mc/camera/idd/value/IddUserControl;
 
     invoke-virtual {v1}, Ljp/co/sony/mc/camera/idd/value/IddUserControl;->ordinal()I
@@ -1086,11 +1184,11 @@
     move-result v1
 
     aput v6, v0, v1
-    :try_end_4a
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_4a .. :try_end_4a} :catch_4a
+    :try_end_51
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_51 .. :try_end_51} :catch_51
 
-    :catch_4a
-    :try_start_4b
+    :catch_51
+    :try_start_52
     sget-object v1, Ljp/co/sony/mc/camera/idd/value/IddUserControl;->VOLUME_KEY:Ljp/co/sony/mc/camera/idd/value/IddUserControl;
 
     invoke-virtual {v1}, Ljp/co/sony/mc/camera/idd/value/IddUserControl;->ordinal()I
@@ -1098,11 +1196,11 @@
     move-result v1
 
     aput v7, v0, v1
-    :try_end_4b
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_4b .. :try_end_4b} :catch_4b
+    :try_end_52
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_52 .. :try_end_52} :catch_52
 
-    :catch_4b
-    :try_start_4c
+    :catch_52
+    :try_start_53
     sget-object v1, Ljp/co/sony/mc/camera/idd/value/IddUserControl;->PINCH_IN_OUT:Ljp/co/sony/mc/camera/idd/value/IddUserControl;
 
     invoke-virtual {v1}, Ljp/co/sony/mc/camera/idd/value/IddUserControl;->ordinal()I
@@ -1110,11 +1208,11 @@
     move-result v1
 
     aput v8, v0, v1
-    :try_end_4c
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_4c .. :try_end_4c} :catch_4c
+    :try_end_53
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_53 .. :try_end_53} :catch_53
 
-    :catch_4c
-    :try_start_4d
+    :catch_53
+    :try_start_54
     sget-object v1, Ljp/co/sony/mc/camera/idd/value/IddUserControl;->ZOOM_SLIDER:Ljp/co/sony/mc/camera/idd/value/IddUserControl;
 
     invoke-virtual {v1}, Ljp/co/sony/mc/camera/idd/value/IddUserControl;->ordinal()I
@@ -1122,10 +1220,10 @@
     move-result v1
 
     aput v9, v0, v1
-    :try_end_4d
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_4d .. :try_end_4d} :catch_4d
+    :try_end_54
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_54 .. :try_end_54} :catch_54
 
-    :catch_4d
+    :catch_54
     sput-object v0, Ljp/co/sony/mc/camera/idd/event/IddSettingEvent$WhenMappings;->$EnumSwitchMapping$1:[I
 
     return-void

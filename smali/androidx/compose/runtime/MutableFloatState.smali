@@ -58,7 +58,7 @@
 .method public static synthetic access$getValue$jd(Landroidx/compose/runtime/MutableFloatState;)F
     .locals 0
 
-    .line 87
+    .line 88
     invoke-super {p0}, Landroidx/compose/runtime/MutableFloatState;->getValue()Ljava/lang/Float;
 
     move-result-object p0
@@ -73,7 +73,7 @@
 .method public static synthetic access$setValue$jd(Landroidx/compose/runtime/MutableFloatState;F)V
     .locals 0
 
-    .line 87
+    .line 88
     invoke-super {p0, p1}, Landroidx/compose/runtime/MutableFloatState;->setValue(F)V
 
     return-void
@@ -87,7 +87,7 @@
 .method public getValue()Ljava/lang/Float;
     .locals 0
 
-    .line 93
+    .line 94
     invoke-interface {p0}, Landroidx/compose/runtime/MutableFloatState;->getFloatValue()F
 
     move-result p0
@@ -102,7 +102,7 @@
 .method public bridge synthetic getValue()Ljava/lang/Object;
     .locals 0
 
-    .line 87
+    .line 88
     invoke-interface {p0}, Landroidx/compose/runtime/MutableFloatState;->getValue()Ljava/lang/Float;
 
     move-result-object p0
@@ -116,7 +116,7 @@
 .method public setValue(F)V
     .locals 0
 
-    .line 94
+    .line 95
     invoke-interface {p0, p1}, Landroidx/compose/runtime/MutableFloatState;->setFloatValue(F)V
 
     return-void
@@ -125,7 +125,7 @@
 .method public bridge synthetic setValue(Ljava/lang/Object;)V
     .locals 0
 
-    .line 87
+    .line 88
     check-cast p1, Ljava/lang/Number;
 
     invoke-virtual {p1}, Ljava/lang/Number;->floatValue()F

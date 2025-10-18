@@ -116,7 +116,7 @@
 .end method
 
 .method public static concat(Ljava/lang/Iterable;Ljava/lang/Iterable;)Lcom/google/common/collect/FluentIterable;
-    .locals 2
+    .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<T:",
@@ -131,20 +131,12 @@
         }
     .end annotation
 
-    const/4 v0, 0x2
-
     .line 194
-    new-array v0, v0, [Ljava/lang/Iterable;
+    filled-new-array {p0, p1}, [Ljava/lang/Iterable;
 
-    const/4 v1, 0x0
+    move-result-object p0
 
-    aput-object p0, v0, v1
-
-    const/4 p0, 0x1
-
-    aput-object p1, v0, p0
-
-    invoke-static {v0}, Lcom/google/common/collect/FluentIterable;->concatNoDefensiveCopy([Ljava/lang/Iterable;)Lcom/google/common/collect/FluentIterable;
+    invoke-static {p0}, Lcom/google/common/collect/FluentIterable;->concatNoDefensiveCopy([Ljava/lang/Iterable;)Lcom/google/common/collect/FluentIterable;
 
     move-result-object p0
 
@@ -152,7 +144,7 @@
 .end method
 
 .method public static concat(Ljava/lang/Iterable;Ljava/lang/Iterable;Ljava/lang/Iterable;)Lcom/google/common/collect/FluentIterable;
-    .locals 2
+    .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<T:",
@@ -169,24 +161,12 @@
         }
     .end annotation
 
-    const/4 v0, 0x3
-
     .line 213
-    new-array v0, v0, [Ljava/lang/Iterable;
+    filled-new-array {p0, p1, p2}, [Ljava/lang/Iterable;
 
-    const/4 v1, 0x0
+    move-result-object p0
 
-    aput-object p0, v0, v1
-
-    const/4 p0, 0x1
-
-    aput-object p1, v0, p0
-
-    const/4 p0, 0x2
-
-    aput-object p2, v0, p0
-
-    invoke-static {v0}, Lcom/google/common/collect/FluentIterable;->concatNoDefensiveCopy([Ljava/lang/Iterable;)Lcom/google/common/collect/FluentIterable;
+    invoke-static {p0}, Lcom/google/common/collect/FluentIterable;->concatNoDefensiveCopy([Ljava/lang/Iterable;)Lcom/google/common/collect/FluentIterable;
 
     move-result-object p0
 
@@ -194,7 +174,7 @@
 .end method
 
 .method public static concat(Ljava/lang/Iterable;Ljava/lang/Iterable;Ljava/lang/Iterable;Ljava/lang/Iterable;)Lcom/google/common/collect/FluentIterable;
-    .locals 2
+    .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<T:",
@@ -213,28 +193,12 @@
         }
     .end annotation
 
-    const/4 v0, 0x4
-
     .line 236
-    new-array v0, v0, [Ljava/lang/Iterable;
+    filled-new-array {p0, p1, p2, p3}, [Ljava/lang/Iterable;
 
-    const/4 v1, 0x0
+    move-result-object p0
 
-    aput-object p0, v0, v1
-
-    const/4 p0, 0x1
-
-    aput-object p1, v0, p0
-
-    const/4 p0, 0x2
-
-    aput-object p2, v0, p0
-
-    const/4 p0, 0x3
-
-    aput-object p3, v0, p0
-
-    invoke-static {v0}, Lcom/google/common/collect/FluentIterable;->concatNoDefensiveCopy([Ljava/lang/Iterable;)Lcom/google/common/collect/FluentIterable;
+    invoke-static {p0}, Lcom/google/common/collect/FluentIterable;->concatNoDefensiveCopy([Ljava/lang/Iterable;)Lcom/google/common/collect/FluentIterable;
 
     move-result-object p0
 

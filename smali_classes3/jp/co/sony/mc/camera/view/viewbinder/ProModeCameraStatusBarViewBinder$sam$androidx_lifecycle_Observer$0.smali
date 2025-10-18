@@ -20,8 +20,8 @@
 .annotation runtime Lkotlin/Metadata;
     k = 0x3
     mv = {
-        0x1,
-        0x9,
+        0x2,
+        0x0,
         0x0
     }
     xi = 0x30
@@ -62,7 +62,9 @@
 
     if-eqz v0, :cond_0
 
-    invoke-virtual {p0}, Ljp/co/sony/mc/camera/view/viewbinder/ProModeCameraStatusBarViewBinder$sam$androidx_lifecycle_Observer$0;->getFunctionDelegate()Lkotlin/Function;
+    check-cast p0, Lkotlin/jvm/internal/FunctionAdapter;
+
+    invoke-interface {p0}, Lkotlin/jvm/internal/FunctionAdapter;->getFunctionDelegate()Lkotlin/Function;
 
     move-result-object p0
 
@@ -100,7 +102,9 @@
 .method public final hashCode()I
     .locals 0
 
-    invoke-virtual {p0}, Ljp/co/sony/mc/camera/view/viewbinder/ProModeCameraStatusBarViewBinder$sam$androidx_lifecycle_Observer$0;->getFunctionDelegate()Lkotlin/Function;
+    check-cast p0, Lkotlin/jvm/internal/FunctionAdapter;
+
+    invoke-interface {p0}, Lkotlin/jvm/internal/FunctionAdapter;->getFunctionDelegate()Lkotlin/Function;
 
     move-result-object p0
 

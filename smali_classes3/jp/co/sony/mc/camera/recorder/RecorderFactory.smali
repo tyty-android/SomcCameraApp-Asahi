@@ -65,7 +65,36 @@
     .line 69
     invoke-virtual {v0, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
-    move-result v5
+    move-result v0
+
+    if-nez v0, :cond_1
+
+    invoke-static {p3}, Ljp/co/sony/mc/camera/recorder/RecorderFactory$Parameters;->-$$Nest$fgetmVideoStabilizer(Ljp/co/sony/mc/camera/recorder/RecorderFactory$Parameters;)Ljava/lang/String;
+
+    move-result-object v0
+
+    const-string v1, "action_mode"
+
+    .line 70
+    invoke-virtual {v0, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_0
+
+    goto :goto_0
+
+    :cond_0
+    const/4 v0, 0x0
+
+    goto :goto_1
+
+    :cond_1
+    :goto_0
+    const/4 v0, 0x1
+
+    :goto_1
+    move v5, v0
 
     invoke-static {p3}, Ljp/co/sony/mc/camera/recorder/RecorderFactory$Parameters;->-$$Nest$fgetmIsShutterSoundOn(Ljp/co/sony/mc/camera/recorder/RecorderFactory$Parameters;)Z
 
@@ -98,7 +127,7 @@
 .end method
 
 .method private static createDefault(Landroid/content/Context;Ljp/co/sony/mc/camera/recorder/utility/Accessor;Ljp/co/sony/mc/camera/recorder/RecorderController$RecorderListener;Landroid/os/Handler;IZZZZZ)Ljp/co/sony/mc/camera/recorder/RecorderController;
-    .locals 17
+    .locals 16
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -113,99 +142,89 @@
         }
     .end annotation
 
+    move/from16 v13, p5
+
+    const/4 v0, 0x1
+
     .line 94
-    new-instance v0, Ljava/lang/StringBuilder;
+    new-array v0, v0, [Ljava/lang/String;
 
-    const-string v1, "Create recorder : VanillaCameraRecorderController progress-interval:"
+    new-instance v1, Ljava/lang/StringBuilder;
 
-    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+    const-string v2, "Create recorder : VanillaCameraRecorderController progress-interval:"
 
-    move/from16 v1, p4
+    invoke-direct {v1, v2}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+    move/from16 v8, p4
 
-    move-result-object v0
+    invoke-virtual {v1, v8}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    move-result-object v1
 
     const-string v2, " intelligent-active:"
 
-    invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    move-result-object v0
+    move-result-object v1
 
-    move/from16 v15, p5
+    invoke-virtual {v1, v13}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v0, v15}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
-
-    move-result-object v0
+    move-result-object v1
 
     const-string v2, " shutter-sound:"
 
-    invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    move-result-object v0
+    move-result-object v1
 
-    move/from16 v14, p6
+    move/from16 v12, p6
 
-    invoke-virtual {v0, v14}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
+    invoke-virtual {v1, v12}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
 
-    move-result-object v0
+    move-result-object v1
 
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    move-result-object v0
+    move-result-object v1
 
-    filled-new-array {v0}, [Ljava/lang/String;
+    const/4 v2, 0x0
 
-    move-result-object v0
+    aput-object v1, v0, v2
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
     .line 101
-    new-instance v0, Ljp/co/sony/mc/camera/recorder/defaultrecorder/VanillaCameraRecorderController;
+    new-instance v15, Ljp/co/sony/mc/camera/recorder/defaultrecorder/VanillaCameraRecorderController;
 
-    new-instance v8, Ljp/co/sony/mc/camera/recorder/defaultrecorder/DefaultRecorder;
+    new-instance v3, Ljp/co/sony/mc/camera/recorder/defaultrecorder/DefaultRecorder;
 
-    const/4 v3, 0x2
+    const/4 v0, 0x2
 
-    move-object v2, v8
+    move/from16 v14, p7
 
-    move/from16 v4, p5
+    move/from16 v1, p8
 
-    move-object/from16 v5, p0
+    invoke-direct {v3, v0, v13, v14, v1}, Ljp/co/sony/mc/camera/recorder/defaultrecorder/DefaultRecorder;-><init>(IZZZ)V
 
-    move/from16 v6, p7
+    sget-wide v5, Ljp/co/sony/mc/camera/recorder/RecorderFactory;->MIN_VIDEO_DURATION_MILLIS:J
 
-    move/from16 v7, p8
-
-    invoke-direct/range {v2 .. v7}, Ljp/co/sony/mc/camera/recorder/defaultrecorder/DefaultRecorder;-><init>(IZLandroid/content/Context;ZZ)V
-
-    sget-wide v9, Ljp/co/sony/mc/camera/recorder/RecorderFactory;->MIN_VIDEO_DURATION_MILLIS:J
+    const/4 v9, 0x1
 
     const/4 v11, 0x1
 
-    const/4 v13, 0x1
+    move-object v0, v15
 
-    move-object v2, v0
+    move-object/from16 v1, p0
 
-    move-object/from16 v3, p0
+    move-object/from16 v2, p1
 
-    move-object/from16 v4, p1
+    move-object/from16 v4, p2
 
-    move-object v5, v8
+    move-object/from16 v7, p3
 
-    move-object/from16 v6, p2
+    move/from16 v10, p9
 
-    move-wide v7, v9
+    invoke-direct/range {v0 .. v14}, Ljp/co/sony/mc/camera/recorder/defaultrecorder/VanillaCameraRecorderController;-><init>(Landroid/content/Context;Ljp/co/sony/mc/camera/recorder/utility/Accessor;Ljp/co/sony/mc/camera/recorder/RecorderInterface;Ljp/co/sony/mc/camera/recorder/RecorderController$RecorderListener;JLandroid/os/Handler;IZZZZZZ)V
 
-    move-object/from16 v9, p3
-
-    move/from16 v10, p4
-
-    move/from16 v12, p9
-
-    move/from16 v16, p7
-
-    invoke-direct/range {v2 .. v16}, Ljp/co/sony/mc/camera/recorder/defaultrecorder/VanillaCameraRecorderController;-><init>(Landroid/content/Context;Ljp/co/sony/mc/camera/recorder/utility/Accessor;Ljp/co/sony/mc/camera/recorder/RecorderInterface;Ljp/co/sony/mc/camera/recorder/RecorderController$RecorderListener;JLandroid/os/Handler;IZZZZZZ)V
-
-    return-object v0
+    return-object v15
 .end method

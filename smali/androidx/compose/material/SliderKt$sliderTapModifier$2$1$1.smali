@@ -56,7 +56,7 @@
     f = "Slider.kt"
     i = {}
     l = {
-        0x393
+        0x397
     }
     m = "invokeSuspend"
     n = {}
@@ -203,7 +203,7 @@
 
     move-result-object v0
 
-    .line 65535
+    .line 915
     iget v1, p0, Landroidx/compose/material/SliderKt$sliderTapModifier$2$1$1;->label:I
 
     const/4 v2, 0x1
@@ -237,7 +237,7 @@
 
     iget-wide v3, p0, Landroidx/compose/material/SliderKt$sliderTapModifier$2$1$1;->J$0:J
 
-    .line 912
+    .line 916
     iget-boolean v1, p0, Landroidx/compose/material/SliderKt$sliderTapModifier$2$1$1;->$isRtl:Z
 
     if-eqz v1, :cond_2
@@ -257,7 +257,7 @@
 
     move-result v1
 
-    .line 913
+    .line 917
     :goto_0
     iget-object v3, p0, Landroidx/compose/material/SliderKt$sliderTapModifier$2$1$1;->$pressOffset:Landroidx/compose/runtime/MutableState;
 
@@ -281,7 +281,7 @@
 
     invoke-interface {v3, v1}, Landroidx/compose/runtime/MutableState;->setValue(Ljava/lang/Object;)V
 
-    .line 915
+    .line 919
     :try_start_1
     move-object v1, p0
 
@@ -299,7 +299,7 @@
 
     return-object v0
 
-    .line 917
+    .line 921
     :catch_0
     iget-object p0, p0, Landroidx/compose/material/SliderKt$sliderTapModifier$2$1$1;->$pressOffset:Landroidx/compose/runtime/MutableState;
 
@@ -311,7 +311,7 @@
 
     invoke-interface {p0, p1}, Landroidx/compose/runtime/MutableState;->setValue(Ljava/lang/Object;)V
 
-    .line 919
+    .line 923
     :cond_3
     :goto_1
     sget-object p0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;

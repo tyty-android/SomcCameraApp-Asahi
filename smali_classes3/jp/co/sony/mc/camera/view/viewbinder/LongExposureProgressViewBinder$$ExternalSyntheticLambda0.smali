@@ -3,7 +3,7 @@
 .source "D8$$SyntheticClass"
 
 # interfaces
-.implements Ljp/co/sony/mc/camera/view/feedback/CaptureProgressCircleView$AnimationProgressListener;
+.implements Lkotlin/jvm/functions/Function1;
 
 
 # instance fields
@@ -24,13 +24,17 @@
 
 
 # virtual methods
-.method public final onProgressUpdate(J)V
+.method public final invoke(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
 
     .line 0
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/viewbinder/LongExposureProgressViewBinder$$ExternalSyntheticLambda0;->f$0:Ljp/co/sony/mc/camera/view/viewbinder/LongExposureProgressViewBinder;
 
-    invoke-static {p0, p1, p2}, Ljp/co/sony/mc/camera/view/viewbinder/LongExposureProgressViewBinder;->$r8$lambda$7CqB60YMaviORXji_EJ9IpJOOo0(Ljp/co/sony/mc/camera/view/viewbinder/LongExposureProgressViewBinder;J)V
+    check-cast p1, Ljava/lang/Integer;
 
-    return-void
+    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/view/viewbinder/LongExposureProgressViewBinder;->$r8$lambda$YeoNVcZukbGSa4nrm6Iwa-Ym84k(Ljp/co/sony/mc/camera/view/viewbinder/LongExposureProgressViewBinder;Ljava/lang/Integer;)Lkotlin/Unit;
+
+    move-result-object p0
+
+    return-object p0
 .end method

@@ -26,7 +26,7 @@
 .method constructor <init>(Ljava/lang/Class;)V
     .locals 0
 
-    .line 51
+    .line 84
     invoke-direct {p0, p1}, Lcom/google/gson/internal/bind/DefaultDateTypeAdapter$DateType;-><init>(Ljava/lang/Class;)V
 
     return-void

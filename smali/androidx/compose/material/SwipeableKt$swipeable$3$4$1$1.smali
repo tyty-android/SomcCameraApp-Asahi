@@ -54,7 +54,7 @@
     f = "Swipeable.kt"
     i = {}
     l = {
-        0x268
+        0x271
     }
     m = "invokeSuspend"
     n = {}
@@ -182,7 +182,7 @@
 
     move-result-object v0
 
-    .line 65535
+    .line 625
     iget v1, p0, Landroidx/compose/material/SwipeableKt$swipeable$3$4$1$1;->label:I
 
     const/4 v2, 0x1
@@ -207,7 +207,6 @@
     :cond_1
     invoke-static {p1}, Lkotlin/ResultKt;->throwOnFailure(Ljava/lang/Object;)V
 
-    .line 616
     iget-object p1, p0, Landroidx/compose/material/SwipeableKt$swipeable$3$4$1$1;->$state:Landroidx/compose/material/SwipeableState;
 
     iget v1, p0, Landroidx/compose/material/SwipeableKt$swipeable$3$4$1$1;->$velocity:F

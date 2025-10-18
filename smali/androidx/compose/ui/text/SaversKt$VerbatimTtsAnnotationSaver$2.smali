@@ -27,7 +27,7 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/SourceDebugExtension;
-    value = "SMAP\nSavers.kt\nKotlin\n*S Kotlin\n*F\n+ 1 Savers.kt\nandroidx/compose/ui/text/SaversKt$VerbatimTtsAnnotationSaver$2\n+ 2 Savers.kt\nandroidx/compose/ui/text/SaversKt\n+ 3 fake.kt\nkotlin/jvm/internal/FakeKt\n*L\n1#1,421:1\n70#2:422\n1#3:423\n*S KotlinDebug\n*F\n+ 1 Savers.kt\nandroidx/compose/ui/text/SaversKt$VerbatimTtsAnnotationSaver$2\n*L\n192#1:422\n192#1:423\n*E\n"
+    value = "SMAP\nSavers.kt\nKotlin\n*S Kotlin\n*F\n+ 1 Savers.kt\nandroidx/compose/ui/text/SaversKt$VerbatimTtsAnnotationSaver$2\n+ 2 Savers.kt\nandroidx/compose/ui/text/SaversKt\n+ 3 fake.kt\nkotlin/jvm/internal/FakeKt\n*L\n1#1,454:1\n91#2:455\n1#3:456\n*S KotlinDebug\n*F\n+ 1 Savers.kt\nandroidx/compose/ui/text/SaversKt$VerbatimTtsAnnotationSaver$2\n*L\n213#1:455\n213#1:456\n*E\n"
 .end annotation
 
 .annotation runtime Lkotlin/Metadata;
@@ -83,17 +83,23 @@
 .method public final invoke(Ljava/lang/Object;)Landroidx/compose/ui/text/VerbatimTtsAnnotation;
     .locals 0
 
-    const-string p0, "it"
-
-    invoke-static {p1, p0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 192
+    .line 213
     new-instance p0, Landroidx/compose/ui/text/VerbatimTtsAnnotation;
 
-    .line 422
+    if-eqz p1, :cond_0
+
+    .line 455
     check-cast p1, Ljava/lang/String;
 
-    .line 192
+    goto :goto_0
+
+    :cond_0
+    const/4 p1, 0x0
+
+    :goto_0
+    invoke-static {p1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;)V
+
+    .line 213
     invoke-direct {p0, p1}, Landroidx/compose/ui/text/VerbatimTtsAnnotation;-><init>(Ljava/lang/String;)V
 
     return-object p0
@@ -102,7 +108,7 @@
 .method public bridge synthetic invoke(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
 
-    .line 190
+    .line 211
     invoke-virtual {p0, p1}, Landroidx/compose/ui/text/SaversKt$VerbatimTtsAnnotationSaver$2;->invoke(Ljava/lang/Object;)Landroidx/compose/ui/text/VerbatimTtsAnnotation;
 
     move-result-object p0

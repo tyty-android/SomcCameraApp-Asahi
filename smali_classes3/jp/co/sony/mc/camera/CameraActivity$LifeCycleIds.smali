@@ -50,7 +50,7 @@
 .method private static synthetic $values()[Ljp/co/sony/mc/camera/CameraActivity$LifeCycleIds;
     .locals 7
 
-    .line 305
+    .line 309
     sget-object v0, Ljp/co/sony/mc/camera/CameraActivity$LifeCycleIds;->ON_CREATE:Ljp/co/sony/mc/camera/CameraActivity$LifeCycleIds;
 
     sget-object v1, Ljp/co/sony/mc/camera/CameraActivity$LifeCycleIds;->ON_START:Ljp/co/sony/mc/camera/CameraActivity$LifeCycleIds;
@@ -83,7 +83,7 @@
 .method static constructor <clinit>()V
     .locals 5
 
-    .line 306
+    .line 310
     new-instance v0, Ljp/co/sony/mc/camera/CameraActivity$LifeCycleIds;
 
     sget-object v1, Ljp/co/sony/mc/camera/util/MeasurePerformance$PerformanceIds;->ON_CREATE:Ljp/co/sony/mc/camera/util/MeasurePerformance$PerformanceIds;
@@ -98,7 +98,7 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/CameraActivity$LifeCycleIds;->ON_CREATE:Ljp/co/sony/mc/camera/CameraActivity$LifeCycleIds;
 
-    .line 309
+    .line 313
     new-instance v0, Ljp/co/sony/mc/camera/CameraActivity$LifeCycleIds;
 
     sget-object v1, Ljp/co/sony/mc/camera/util/MeasurePerformance$PerformanceIds;->ON_START:Ljp/co/sony/mc/camera/util/MeasurePerformance$PerformanceIds;
@@ -113,7 +113,7 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/CameraActivity$LifeCycleIds;->ON_START:Ljp/co/sony/mc/camera/CameraActivity$LifeCycleIds;
 
-    .line 312
+    .line 316
     new-instance v0, Ljp/co/sony/mc/camera/CameraActivity$LifeCycleIds;
 
     sget-object v1, Ljp/co/sony/mc/camera/util/MeasurePerformance$PerformanceIds;->ON_RESTART:Ljp/co/sony/mc/camera/util/MeasurePerformance$PerformanceIds;
@@ -128,7 +128,7 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/CameraActivity$LifeCycleIds;->ON_RESTART:Ljp/co/sony/mc/camera/CameraActivity$LifeCycleIds;
 
-    .line 315
+    .line 319
     new-instance v0, Ljp/co/sony/mc/camera/CameraActivity$LifeCycleIds;
 
     sget-object v1, Ljp/co/sony/mc/camera/util/MeasurePerformance$PerformanceIds;->ON_RESUME:Ljp/co/sony/mc/camera/util/MeasurePerformance$PerformanceIds;
@@ -143,7 +143,7 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/CameraActivity$LifeCycleIds;->ON_RESUME:Ljp/co/sony/mc/camera/CameraActivity$LifeCycleIds;
 
-    .line 318
+    .line 322
     new-instance v0, Ljp/co/sony/mc/camera/CameraActivity$LifeCycleIds;
 
     sget-object v1, Ljp/co/sony/mc/camera/util/MeasurePerformance$PerformanceIds;->ON_PAUSE:Ljp/co/sony/mc/camera/util/MeasurePerformance$PerformanceIds;
@@ -158,7 +158,7 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/CameraActivity$LifeCycleIds;->ON_PAUSE:Ljp/co/sony/mc/camera/CameraActivity$LifeCycleIds;
 
-    .line 321
+    .line 325
     new-instance v0, Ljp/co/sony/mc/camera/CameraActivity$LifeCycleIds;
 
     sget-object v1, Ljp/co/sony/mc/camera/util/MeasurePerformance$PerformanceIds;->ON_STOP:Ljp/co/sony/mc/camera/util/MeasurePerformance$PerformanceIds;
@@ -173,7 +173,7 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/CameraActivity$LifeCycleIds;->ON_STOP:Ljp/co/sony/mc/camera/CameraActivity$LifeCycleIds;
 
-    .line 324
+    .line 328
     new-instance v0, Ljp/co/sony/mc/camera/CameraActivity$LifeCycleIds;
 
     sget-object v1, Ljp/co/sony/mc/camera/util/MeasurePerformance$PerformanceIds;->ON_DESTROY:Ljp/co/sony/mc/camera/util/MeasurePerformance$PerformanceIds;
@@ -188,7 +188,7 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/CameraActivity$LifeCycleIds;->ON_DESTROY:Ljp/co/sony/mc/camera/CameraActivity$LifeCycleIds;
 
-    .line 305
+    .line 309
     invoke-static {}, Ljp/co/sony/mc/camera/CameraActivity$LifeCycleIds;->$values()[Ljp/co/sony/mc/camera/CameraActivity$LifeCycleIds;
 
     move-result-object v0
@@ -209,13 +209,13 @@
         }
     .end annotation
 
-    .line 334
+    .line 338
     invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
-    .line 335
+    .line 339
     iput-object p3, p0, Ljp/co/sony/mc/camera/CameraActivity$LifeCycleIds;->mPerformanceIds:Ljp/co/sony/mc/camera/util/MeasurePerformance$PerformanceIds;
 
-    .line 336
+    .line 340
     iput-object p4, p0, Ljp/co/sony/mc/camera/CameraActivity$LifeCycleIds;->mLog:Ljava/lang/String;
 
     return-void
@@ -224,7 +224,7 @@
 .method public static valueOf(Ljava/lang/String;)Ljp/co/sony/mc/camera/CameraActivity$LifeCycleIds;
     .locals 1
 
-    .line 305
+    .line 309
     const-class v0, Ljp/co/sony/mc/camera/CameraActivity$LifeCycleIds;
 
     invoke-static {v0, p0}, Ljava/lang/Enum;->valueOf(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
@@ -239,7 +239,7 @@
 .method public static values()[Ljp/co/sony/mc/camera/CameraActivity$LifeCycleIds;
     .locals 1
 
-    .line 305
+    .line 309
     sget-object v0, Ljp/co/sony/mc/camera/CameraActivity$LifeCycleIds;->$VALUES:[Ljp/co/sony/mc/camera/CameraActivity$LifeCycleIds;
 
     invoke-virtual {v0}, [Ljp/co/sony/mc/camera/CameraActivity$LifeCycleIds;->clone()Ljava/lang/Object;
@@ -256,7 +256,7 @@
 .method public toString()Ljava/lang/String;
     .locals 0
 
-    .line 341
+    .line 345
     iget-object p0, p0, Ljp/co/sony/mc/camera/CameraActivity$LifeCycleIds;->mLog:Ljava/lang/String;
 
     return-object p0

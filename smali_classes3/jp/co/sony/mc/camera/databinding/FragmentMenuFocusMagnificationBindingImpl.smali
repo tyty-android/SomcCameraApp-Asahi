@@ -24,21 +24,21 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/databinding/FragmentMenuFocusMagnificationBindingImpl;->sViewsWithIds:Landroid/util/SparseIntArray;
 
-    const v1, 0x7f0904d0
+    const v1, 0x7f0904bd
 
     const/4 v2, 0x2
 
     .line 17
     invoke-virtual {v0, v1, v2}, Landroid/util/SparseIntArray;->put(II)V
 
-    const v1, 0x7f090162
+    const v1, 0x7f090161
 
     const/4 v2, 0x3
 
     .line 18
     invoke-virtual {v0, v1, v2}, Landroid/util/SparseIntArray;->put(II)V
 
-    const v1, 0x7f0901f5
+    const v1, 0x7f0901f2
 
     const/4 v2, 0x4
 
@@ -407,7 +407,7 @@
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    const/16 p1, 0xb
+    const/16 p1, 0xc
 
     .line 80
     invoke-virtual {p0, p1}, Ljp/co/sony/mc/camera/databinding/FragmentMenuFocusMagnificationBindingImpl;->notifyPropertyChanged(I)V
@@ -432,7 +432,7 @@
 .method public setVariable(ILjava/lang/Object;)Z
     .locals 1
 
-    const/16 v0, 0xb
+    const/16 v0, 0xc
 
     if-ne v0, p1, :cond_0
 

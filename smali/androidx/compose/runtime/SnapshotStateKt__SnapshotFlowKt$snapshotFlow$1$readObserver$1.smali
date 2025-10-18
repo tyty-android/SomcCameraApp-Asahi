@@ -26,6 +26,10 @@
     }
 .end annotation
 
+.annotation system Ldalvik/annotation/SourceDebugExtension;
+    value = "SMAP\nSnapshotFlow.kt\nKotlin\n*S Kotlin\n*F\n+ 1 SnapshotFlow.kt\nandroidx/compose/runtime/SnapshotStateKt__SnapshotFlowKt$snapshotFlow$1$readObserver$1\n+ 2 StateObjectImpl.kt\nandroidx/compose/runtime/snapshots/ReaderKind$Companion\n*L\n1#1,181:1\n52#2:182\n*S KotlinDebug\n*F\n+ 1 SnapshotFlow.kt\nandroidx/compose/runtime/SnapshotStateKt__SnapshotFlowKt$snapshotFlow$1$readObserver$1\n*L\n116#1:182\n*E\n"
+.end annotation
+
 .annotation runtime Lkotlin/Metadata;
     d1 = {
         "\u0000\u0010\n\u0000\n\u0002\u0010\u0002\n\u0002\u0008\u0002\n\u0002\u0010\u0000\n\u0000\u0010\u0000\u001a\u00020\u0001\"\u0004\u0008\u0000\u0010\u00022\u0006\u0010\u0003\u001a\u00020\u0004H\n\u00a2\u0006\u0002\u0008\u0005"
@@ -49,10 +53,10 @@
 
 
 # instance fields
-.field final synthetic $readSet:Ljava/util/Set;
+.field final synthetic $readSet:Landroidx/collection/MutableScatterSet;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Ljava/util/Set<",
+            "Landroidx/collection/MutableScatterSet<",
             "Ljava/lang/Object;",
             ">;"
         }
@@ -61,18 +65,18 @@
 
 
 # direct methods
-.method constructor <init>(Ljava/util/Set;)V
+.method constructor <init>(Landroidx/collection/MutableScatterSet;)V
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Ljava/util/Set<",
+            "Landroidx/collection/MutableScatterSet<",
             "Ljava/lang/Object;",
             ">;)V"
         }
     .end annotation
 
-    iput-object p1, p0, Landroidx/compose/runtime/SnapshotStateKt__SnapshotFlowKt$snapshotFlow$1$readObserver$1;->$readSet:Ljava/util/Set;
+    iput-object p1, p0, Landroidx/compose/runtime/SnapshotStateKt__SnapshotFlowKt$snapshotFlow$1$readObserver$1;->$readSet:Landroidx/collection/MutableScatterSet;
 
     const/4 p1, 0x1
 
@@ -95,16 +99,35 @@
 .end method
 
 .method public final invoke(Ljava/lang/Object;)V
-    .locals 1
+    .locals 2
 
-    const-string v0, "it"
+    .line 115
+    instance-of v0, p1, Landroidx/compose/runtime/snapshots/StateObjectImpl;
 
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+    if-eqz v0, :cond_0
 
-    .line 114
-    iget-object p0, p0, Landroidx/compose/runtime/SnapshotStateKt__SnapshotFlowKt$snapshotFlow$1$readObserver$1;->$readSet:Ljava/util/Set;
+    .line 116
+    move-object v0, p1
 
-    invoke-interface {p0, p1}, Ljava/util/Set;->add(Ljava/lang/Object;)Z
+    check-cast v0, Landroidx/compose/runtime/snapshots/StateObjectImpl;
+
+    sget-object v1, Landroidx/compose/runtime/snapshots/ReaderKind;->Companion:Landroidx/compose/runtime/snapshots/ReaderKind$Companion;
+
+    const/4 v1, 0x4
+
+    .line 182
+    invoke-static {v1}, Landroidx/compose/runtime/snapshots/ReaderKind;->constructor-impl(I)I
+
+    move-result v1
+
+    .line 116
+    invoke-virtual {v0, v1}, Landroidx/compose/runtime/snapshots/StateObjectImpl;->recordReadIn-h_f27i8$runtime_release(I)V
+
+    .line 118
+    :cond_0
+    iget-object p0, p0, Landroidx/compose/runtime/SnapshotStateKt__SnapshotFlowKt$snapshotFlow$1$readObserver$1;->$readSet:Landroidx/collection/MutableScatterSet;
+
+    invoke-virtual {p0, p1}, Landroidx/collection/MutableScatterSet;->add(Ljava/lang/Object;)Z
 
     return-void
 .end method

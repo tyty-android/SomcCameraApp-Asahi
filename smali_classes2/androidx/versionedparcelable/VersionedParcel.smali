@@ -553,11 +553,11 @@
 
     aput-object p1, v1, v2
 
-    const-class v2, Landroidx/versionedparcelable/VersionedParcel;
+    const/4 v2, 0x1
 
-    const/4 v3, 0x1
+    const-class v3, Landroidx/versionedparcelable/VersionedParcel;
 
-    aput-object v2, v1, v3
+    aput-object v3, v1, v2
 
     const-string v2, "write"
 

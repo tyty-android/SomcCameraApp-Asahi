@@ -36,7 +36,7 @@
 .method private static synthetic $values()[Ljp/co/sony/mc/camera/view/FragmentController$YouTubeAuthThreadState;
     .locals 3
 
-    .line 500
+    .line 512
     sget-object v0, Ljp/co/sony/mc/camera/view/FragmentController$YouTubeAuthThreadState;->IDLE:Ljp/co/sony/mc/camera/view/FragmentController$YouTubeAuthThreadState;
 
     sget-object v1, Ljp/co/sony/mc/camera/view/FragmentController$YouTubeAuthThreadState;->RUNNING:Ljp/co/sony/mc/camera/view/FragmentController$YouTubeAuthThreadState;
@@ -53,7 +53,7 @@
 .method static constructor <clinit>()V
     .locals 3
 
-    .line 501
+    .line 513
     new-instance v0, Ljp/co/sony/mc/camera/view/FragmentController$YouTubeAuthThreadState;
 
     const-string v1, "IDLE"
@@ -64,7 +64,7 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/view/FragmentController$YouTubeAuthThreadState;->IDLE:Ljp/co/sony/mc/camera/view/FragmentController$YouTubeAuthThreadState;
 
-    .line 502
+    .line 514
     new-instance v0, Ljp/co/sony/mc/camera/view/FragmentController$YouTubeAuthThreadState;
 
     const-string v1, "RUNNING"
@@ -75,7 +75,7 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/view/FragmentController$YouTubeAuthThreadState;->RUNNING:Ljp/co/sony/mc/camera/view/FragmentController$YouTubeAuthThreadState;
 
-    .line 503
+    .line 515
     new-instance v0, Ljp/co/sony/mc/camera/view/FragmentController$YouTubeAuthThreadState;
 
     const-string v1, "POOLING"
@@ -86,7 +86,7 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/view/FragmentController$YouTubeAuthThreadState;->POOLING:Ljp/co/sony/mc/camera/view/FragmentController$YouTubeAuthThreadState;
 
-    .line 500
+    .line 512
     invoke-static {}, Ljp/co/sony/mc/camera/view/FragmentController$YouTubeAuthThreadState;->$values()[Ljp/co/sony/mc/camera/view/FragmentController$YouTubeAuthThreadState;
 
     move-result-object v0
@@ -104,7 +104,7 @@
         }
     .end annotation
 
-    .line 500
+    .line 512
     invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
     return-void
@@ -113,7 +113,7 @@
 .method public static valueOf(Ljava/lang/String;)Ljp/co/sony/mc/camera/view/FragmentController$YouTubeAuthThreadState;
     .locals 1
 
-    .line 500
+    .line 512
     const-class v0, Ljp/co/sony/mc/camera/view/FragmentController$YouTubeAuthThreadState;
 
     invoke-static {v0, p0}, Ljava/lang/Enum;->valueOf(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
@@ -128,7 +128,7 @@
 .method public static values()[Ljp/co/sony/mc/camera/view/FragmentController$YouTubeAuthThreadState;
     .locals 1
 
-    .line 500
+    .line 512
     sget-object v0, Ljp/co/sony/mc/camera/view/FragmentController$YouTubeAuthThreadState;->$VALUES:[Ljp/co/sony/mc/camera/view/FragmentController$YouTubeAuthThreadState;
 
     invoke-virtual {v0}, [Ljp/co/sony/mc/camera/view/FragmentController$YouTubeAuthThreadState;->clone()Ljava/lang/Object;

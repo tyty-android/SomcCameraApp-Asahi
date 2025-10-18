@@ -29,7 +29,7 @@
 
 
 # static fields
-.field private static final DefaultIncludeFontPadding:Z = true
+.field private static final DefaultIncludeFontPadding:Z = false
 
 .field private static final DefaultPlatformTextStyle:Landroidx/compose/ui/text/PlatformTextStyle;
 
@@ -41,7 +41,7 @@
     .line 24
     new-instance v0, Landroidx/compose/ui/text/PlatformTextStyle;
 
-    const/4 v1, 0x1
+    const/4 v1, 0x0
 
     invoke-direct {v0, v1}, Landroidx/compose/ui/text/PlatformTextStyle;-><init>(Z)V
 

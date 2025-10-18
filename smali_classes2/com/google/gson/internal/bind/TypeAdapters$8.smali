@@ -26,7 +26,7 @@
 .method constructor <init>()V
     .locals 0
 
-    .line 266
+    .line 294
     invoke-direct {p0}, Lcom/google/gson/TypeAdapter;-><init>()V
 
     return-void
@@ -42,7 +42,7 @@
         }
     .end annotation
 
-    .line 266
+    .line 294
     invoke-virtual {p0, p1}, Lcom/google/gson/internal/bind/TypeAdapters$8;->read(Lcom/google/gson/stream/JsonReader;)Ljava/util/concurrent/atomic/AtomicInteger;
 
     move-result-object p0
@@ -58,7 +58,7 @@
         }
     .end annotation
 
-    .line 269
+    .line 298
     :try_start_0
     new-instance p0, Ljava/util/concurrent/atomic/AtomicInteger;
 
@@ -75,7 +75,7 @@
     :catch_0
     move-exception p0
 
-    .line 271
+    .line 300
     new-instance p1, Lcom/google/gson/JsonSyntaxException;
 
     invoke-direct {p1, p0}, Lcom/google/gson/JsonSyntaxException;-><init>(Ljava/lang/Throwable;)V
@@ -91,7 +91,7 @@
         }
     .end annotation
 
-    .line 266
+    .line 294
     check-cast p2, Ljava/util/concurrent/atomic/AtomicInteger;
 
     invoke-virtual {p0, p1, p2}, Lcom/google/gson/internal/bind/TypeAdapters$8;->write(Lcom/google/gson/stream/JsonWriter;Ljava/util/concurrent/atomic/AtomicInteger;)V
@@ -107,7 +107,7 @@
         }
     .end annotation
 
-    .line 275
+    .line 306
     invoke-virtual {p2}, Ljava/util/concurrent/atomic/AtomicInteger;->get()I
 
     move-result p0

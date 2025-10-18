@@ -80,7 +80,7 @@
 .method public bridge synthetic invoke(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 2
 
-    .line 41
+    .line 40
     check-cast p1, Landroidx/compose/ui/geometry/Offset;
 
     invoke-virtual {p1}, Landroidx/compose/ui/geometry/Offset;->unbox-impl()J
@@ -97,14 +97,14 @@
 .method public final invoke-k-4lQ0M(J)Landroidx/compose/animation/core/AnimationVector2D;
     .locals 1
 
-    .line 43
+    .line 42
     invoke-static {p1, p2}, Landroidx/compose/ui/geometry/OffsetKt;->isSpecified-k-4lQ0M(J)Z
 
     move-result p0
 
     if-eqz p0, :cond_0
 
-    .line 44
+    .line 43
     new-instance p0, Landroidx/compose/animation/core/AnimationVector2D;
 
     invoke-static {p1, p2}, Landroidx/compose/ui/geometry/Offset;->getX-impl(J)F
@@ -119,7 +119,7 @@
 
     goto :goto_0
 
-    .line 46
+    .line 45
     :cond_0
     invoke-static {}, Landroidx/compose/foundation/text/selection/SelectionMagnifierKt;->access$getUnspecifiedAnimationVector2D$p()Landroidx/compose/animation/core/AnimationVector2D;
 

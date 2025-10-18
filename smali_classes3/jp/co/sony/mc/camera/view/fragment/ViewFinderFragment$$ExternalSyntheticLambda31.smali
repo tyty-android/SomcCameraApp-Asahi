@@ -30,9 +30,9 @@
     .line 0
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/fragment/ViewFinderFragment$$ExternalSyntheticLambda31;->f$0:Ljp/co/sony/mc/camera/view/fragment/ViewFinderFragment;
 
-    check-cast p1, Ljava/lang/Float;
+    check-cast p1, Lkotlin/Triple;
 
-    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/view/fragment/ViewFinderFragment;->$r8$lambda$UkNkBqvUQKkmtuavAfT_101T-lw(Ljp/co/sony/mc/camera/view/fragment/ViewFinderFragment;Ljava/lang/Float;)V
+    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/view/fragment/ViewFinderFragment;->$r8$lambda$k0YhRvXvbGWuTcibooKE57YpqsI(Ljp/co/sony/mc/camera/view/fragment/ViewFinderFragment;Lkotlin/Triple;)V
 
     return-void
 .end method

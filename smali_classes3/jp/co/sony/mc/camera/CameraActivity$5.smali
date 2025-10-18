@@ -34,7 +34,7 @@
 .method constructor <init>(Ljp/co/sony/mc/camera/CameraActivity;)V
     .locals 0
 
-    .line 605
+    .line 611
     iput-object p1, p0, Ljp/co/sony/mc/camera/CameraActivity$5;->this$0:Ljp/co/sony/mc/camera/CameraActivity;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -47,7 +47,7 @@
 .method public bridge synthetic onChanged(Ljava/lang/Object;)V
     .locals 0
 
-    .line 605
+    .line 611
     check-cast p1, Ljp/co/sony/mc/camera/view/orientation/LayoutOrientation;
 
     invoke-virtual {p0, p1}, Ljp/co/sony/mc/camera/CameraActivity$5;->onChanged(Ljp/co/sony/mc/camera/view/orientation/LayoutOrientation;)V
@@ -58,7 +58,7 @@
 .method public onChanged(Ljp/co/sony/mc/camera/view/orientation/LayoutOrientation;)V
     .locals 0
 
-    .line 608
+    .line 614
     iget-object p1, p0, Ljp/co/sony/mc/camera/CameraActivity$5;->this$0:Ljp/co/sony/mc/camera/CameraActivity;
 
     invoke-static {p1}, Ljp/co/sony/mc/camera/CameraActivity;->-$$Nest$fgetmFragmentController(Ljp/co/sony/mc/camera/CameraActivity;)Ljp/co/sony/mc/camera/view/FragmentController;
@@ -67,7 +67,7 @@
 
     if-eqz p1, :cond_0
 
-    .line 609
+    .line 615
     iget-object p0, p0, Ljp/co/sony/mc/camera/CameraActivity$5;->this$0:Ljp/co/sony/mc/camera/CameraActivity;
 
     invoke-static {p0}, Ljp/co/sony/mc/camera/CameraActivity;->-$$Nest$fgetmFragmentController(Ljp/co/sony/mc/camera/CameraActivity;)Ljp/co/sony/mc/camera/view/FragmentController;

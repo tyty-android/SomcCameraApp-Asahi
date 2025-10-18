@@ -48,8 +48,6 @@
 
 
 # instance fields
-.field final synthetic $$dirty:I
-
 .field final synthetic $title:Lkotlin/jvm/functions/Function2;
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -64,7 +62,7 @@
 
 
 # direct methods
-.method constructor <init>(Lkotlin/jvm/functions/Function2;I)V
+.method constructor <init>(Lkotlin/jvm/functions/Function2;)V
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -75,13 +73,11 @@
             "-",
             "Ljava/lang/Integer;",
             "Lkotlin/Unit;",
-            ">;I)V"
+            ">;)V"
         }
     .end annotation
 
     iput-object p1, p0, Landroidx/compose/material/AppBarKt$TopAppBar$1$2$1;->$title:Lkotlin/jvm/functions/Function2;
-
-    iput p2, p0, Landroidx/compose/material/AppBarKt$TopAppBar$1$2$1;->$$dirty:I
 
     const/4 p1, 0x2
 
@@ -95,7 +91,7 @@
 .method public bridge synthetic invoke(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
 
-    .line 109
+    .line 121
     check-cast p1, Landroidx/compose/runtime/Composer;
 
     check-cast p2, Ljava/lang/Number;
@@ -114,7 +110,7 @@
 .method public final invoke(Landroidx/compose/runtime/Composer;I)V
     .locals 3
 
-    const-string v0, "C110@4890L4,109@4804L145:AppBar.kt#jmzs0o"
+    const-string v0, "C122@5421L4,121@5335L145:AppBar.kt#jmzs0o"
 
     invoke-static {p1, v0}, Landroidx/compose/runtime/ComposerKt;->sourceInformation(Landroidx/compose/runtime/Composer;Ljava/lang/String;)V
 
@@ -124,7 +120,7 @@
 
     if-ne v0, v1, :cond_1
 
-    .line 110
+    .line 122
     invoke-interface {p1}, Landroidx/compose/runtime/Composer;->getSkipping()Z
 
     move-result v0
@@ -133,13 +129,13 @@
 
     goto :goto_0
 
-    .line 113
+    .line 125
     :cond_0
     invoke-interface {p1}, Landroidx/compose/runtime/Composer;->skipToGroupEnd()V
 
     goto :goto_1
 
-    .line 110
+    .line 122
     :cond_1
     :goto_0
     invoke-static {}, Landroidx/compose/runtime/ComposerKt;->isTraceInProgress()Z
@@ -150,13 +146,13 @@
 
     const/4 v0, -0x1
 
-    const-string v1, "androidx.compose.material.TopAppBar.<anonymous>.<anonymous>.<anonymous> (AppBar.kt:108)"
+    const-string v1, "androidx.compose.material.TopAppBar.<anonymous>.<anonymous>.<anonymous> (AppBar.kt:121)"
 
-    const v2, -0x787deb73
+    const v2, -0x629753a4
 
     invoke-static {v2, p2, v0, v1}, Landroidx/compose/runtime/ComposerKt;->traceEventStart(IIILjava/lang/String;)V
 
-    .line 111
+    .line 123
     :cond_2
     invoke-static {}, Landroidx/compose/material/ContentAlphaKt;->getLocalContentAlpha()Landroidx/compose/runtime/ProvidableCompositionLocal;
 
@@ -178,27 +174,13 @@
 
     move-result-object p2
 
-    const/4 v0, 0x1
+    .line 124
+    iget-object p0, p0, Landroidx/compose/material/AppBarKt$TopAppBar$1$2$1;->$title:Lkotlin/jvm/functions/Function2;
 
-    new-array v0, v0, [Landroidx/compose/runtime/ProvidedValue;
+    sget v0, Landroidx/compose/runtime/ProvidedValue;->$stable:I
 
-    const/4 v1, 0x0
-
-    aput-object p2, v0, v1
-
-    .line 112
-    iget-object p2, p0, Landroidx/compose/material/AppBarKt$TopAppBar$1$2$1;->$title:Lkotlin/jvm/functions/Function2;
-
-    iget p0, p0, Landroidx/compose/material/AppBarKt$TopAppBar$1$2$1;->$$dirty:I
-
-    shl-int/lit8 p0, p0, 0x3
-
-    and-int/lit8 p0, p0, 0x70
-
-    or-int/lit8 p0, p0, 0x8
-
-    .line 110
-    invoke-static {v0, p2, p1, p0}, Landroidx/compose/runtime/CompositionLocalKt;->CompositionLocalProvider([Landroidx/compose/runtime/ProvidedValue;Lkotlin/jvm/functions/Function2;Landroidx/compose/runtime/Composer;I)V
+    .line 122
+    invoke-static {p2, p0, p1, v0}, Landroidx/compose/runtime/CompositionLocalKt;->CompositionLocalProvider(Landroidx/compose/runtime/ProvidedValue;Lkotlin/jvm/functions/Function2;Landroidx/compose/runtime/Composer;I)V
 
     invoke-static {}, Landroidx/compose/runtime/ComposerKt;->isTraceInProgress()Z
 

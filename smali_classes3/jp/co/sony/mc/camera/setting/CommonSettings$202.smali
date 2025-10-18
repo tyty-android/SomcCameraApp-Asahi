@@ -21,7 +21,7 @@
 .method constructor <init>()V
     .locals 0
 
-    .line 1845
+    .line 1851
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -42,8 +42,10 @@
         }
     .end annotation
 
-    .line 1849
-    sget-object p0, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->PHOTO_PRO_P:Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
+    .line 1855
+    invoke-static {}, Ljp/co/sony/mc/camera/configuration/parameters/NetworkUsage;->getDefaultValue()Ljp/co/sony/mc/camera/configuration/parameters/NetworkUsage;
+
+    move-result-object p0
 
     return-object p0
 .end method

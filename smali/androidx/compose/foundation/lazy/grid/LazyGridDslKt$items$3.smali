@@ -28,7 +28,7 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/SourceDebugExtension;
-    value = "SMAP\nLazyGridDsl.kt\nKotlin\n*S Kotlin\n*F\n+ 1 LazyGridDsl.kt\nandroidx/compose/foundation/lazy/grid/LazyGridDslKt$items$3\n*L\n1#1,557:1\n*E\n"
+    value = "SMAP\nLazyGridDsl.kt\nKotlin\n*S Kotlin\n*F\n+ 1 LazyGridDsl.kt\nandroidx/compose/foundation/lazy/grid/LazyGridDslKt$items$3\n*L\n1#1,563:1\n*E\n"
 .end annotation
 
 .annotation runtime Lkotlin/Metadata;
@@ -111,7 +111,7 @@
 .method public bridge synthetic invoke(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
 
-    .line 450
+    .line 456
     check-cast p1, Landroidx/compose/foundation/lazy/grid/LazyGridItemSpanScope;
 
     check-cast p2, Ljava/lang/Number;
@@ -134,11 +134,7 @@
 .method public final invoke-_-orMbw(Landroidx/compose/foundation/lazy/grid/LazyGridItemSpanScope;I)J
     .locals 1
 
-    const-string v0, "$this$null"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 453
+    .line 459
     iget-object v0, p0, Landroidx/compose/foundation/lazy/grid/LazyGridDslKt$items$3;->$span:Lkotlin/jvm/functions/Function2;
 
     iget-object p0, p0, Landroidx/compose/foundation/lazy/grid/LazyGridDslKt$items$3;->$items:Ljava/util/List;

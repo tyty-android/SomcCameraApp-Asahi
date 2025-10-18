@@ -9,8 +9,8 @@
 # annotations
 .annotation system Ldalvik/annotation/MemberClasses;
     value = {
-        Lkotlinx/coroutines/CoroutineExceptionHandler$Key;,
-        Lkotlinx/coroutines/CoroutineExceptionHandler$DefaultImpls;
+        Lkotlinx/coroutines/CoroutineExceptionHandler$DefaultImpls;,
+        Lkotlinx/coroutines/CoroutineExceptionHandler$Key;
     }
 .end annotation
 
@@ -33,7 +33,7 @@
     k = 0x1
     mv = {
         0x1,
-        0x6,
+        0x8,
         0x0
     }
     xi = 0x30

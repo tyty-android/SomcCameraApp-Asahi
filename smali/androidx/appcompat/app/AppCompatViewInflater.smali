@@ -54,75 +54,81 @@
 
 # direct methods
 .method static constructor <clinit>()V
-    .locals 3
+    .locals 5
 
     const/4 v0, 0x2
 
     .line 75
-    new-array v0, v0, [Ljava/lang/Class;
+    new-array v1, v0, [Ljava/lang/Class;
 
-    const-class v1, Landroid/content/Context;
+    const-class v2, Landroid/content/Context;
 
-    const/4 v2, 0x0
+    const/4 v3, 0x0
 
-    aput-object v1, v0, v2
+    aput-object v2, v1, v3
 
-    const-class v1, Landroid/util/AttributeSet;
+    const-class v2, Landroid/util/AttributeSet;
 
-    const/4 v2, 0x1
+    const/4 v4, 0x1
 
-    aput-object v1, v0, v2
+    aput-object v2, v1, v4
 
-    sput-object v0, Landroidx/appcompat/app/AppCompatViewInflater;->sConstructorSignature:[Ljava/lang/Class;
+    sput-object v1, Landroidx/appcompat/app/AppCompatViewInflater;->sConstructorSignature:[Ljava/lang/Class;
 
-    const v0, 0x101026f
+    const v1, 0x101026f
 
     .line 77
-    filled-new-array {v0}, [I
+    filled-new-array {v1}, [I
 
-    move-result-object v0
+    move-result-object v1
 
-    sput-object v0, Landroidx/appcompat/app/AppCompatViewInflater;->sOnClickAttrs:[I
+    sput-object v1, Landroidx/appcompat/app/AppCompatViewInflater;->sOnClickAttrs:[I
 
-    const v0, 0x1010580
+    const v1, 0x1010580
 
     .line 78
-    filled-new-array {v0}, [I
+    filled-new-array {v1}, [I
 
-    move-result-object v0
+    move-result-object v1
 
-    sput-object v0, Landroidx/appcompat/app/AppCompatViewInflater;->sAccessibilityHeading:[I
+    sput-object v1, Landroidx/appcompat/app/AppCompatViewInflater;->sAccessibilityHeading:[I
 
-    const v0, 0x101057c
+    const v1, 0x101057c
 
     .line 80
-    filled-new-array {v0}, [I
+    filled-new-array {v1}, [I
 
-    move-result-object v0
+    move-result-object v1
 
-    sput-object v0, Landroidx/appcompat/app/AppCompatViewInflater;->sAccessibilityPaneTitle:[I
+    sput-object v1, Landroidx/appcompat/app/AppCompatViewInflater;->sAccessibilityPaneTitle:[I
 
-    const v0, 0x1010574
+    const v1, 0x1010574
 
     .line 82
-    filled-new-array {v0}, [I
+    filled-new-array {v1}, [I
 
-    move-result-object v0
+    move-result-object v1
 
-    sput-object v0, Landroidx/appcompat/app/AppCompatViewInflater;->sScreenReaderFocusable:[I
+    sput-object v1, Landroidx/appcompat/app/AppCompatViewInflater;->sScreenReaderFocusable:[I
+
+    const/4 v1, 0x3
 
     .line 85
-    const-string v0, "android.view."
-
-    const-string v1, "android.webkit."
+    new-array v1, v1, [Ljava/lang/String;
 
     const-string v2, "android.widget."
 
-    filled-new-array {v2, v0, v1}, [Ljava/lang/String;
+    aput-object v2, v1, v3
 
-    move-result-object v0
+    const-string v2, "android.view."
 
-    sput-object v0, Landroidx/appcompat/app/AppCompatViewInflater;->sClassPrefixList:[Ljava/lang/String;
+    aput-object v2, v1, v4
+
+    const-string v2, "android.webkit."
+
+    aput-object v2, v1, v0
+
+    sput-object v1, Landroidx/appcompat/app/AppCompatViewInflater;->sClassPrefixList:[Ljava/lang/String;
 
     .line 93
     new-instance v0, Landroidx/collection/SimpleArrayMap;

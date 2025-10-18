@@ -27,13 +27,13 @@
 .method private constructor <init>(Ljava/util/concurrent/CountDownLatch;Ljp/co/sony/mc/camera/util/capability/PlatformCapability$OnPlatformCapabilityPreparedCallback;)V
     .locals 0
 
-    .line 272
+    .line 276
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 273
+    .line 277
     iput-object p1, p0, Ljp/co/sony/mc/camera/util/capability/PlatformCapability$PrepareTask;->mLatch:Ljava/util/concurrent/CountDownLatch;
 
-    .line 274
+    .line 278
     iput-object p2, p0, Ljp/co/sony/mc/camera/util/capability/PlatformCapability$PrepareTask;->mCallback:Ljp/co/sony/mc/camera/util/capability/PlatformCapability$OnPlatformCapabilityPreparedCallback;
 
     return-void
@@ -52,7 +52,7 @@
 .method public run()V
     .locals 2
 
-    .line 280
+    .line 284
     invoke-static {}, Ljp/co/sony/mc/camera/CameraApplication;->getContext()Landroid/content/Context;
 
     move-result-object v0
@@ -61,14 +61,14 @@
 
     move-result-object v1
 
-    .line 279
+    .line 283
     invoke-static {v0, v1}, Ljp/co/sony/mc/camera/util/PermissionsUtil;->arePermissionsGranted(Landroid/content/Context;[Ljava/lang/String;)Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
-    .line 281
+    .line 285
     iget-object v0, p0, Ljp/co/sony/mc/camera/util/capability/PlatformCapability$PrepareTask;->mLatch:Ljava/util/concurrent/CountDownLatch;
 
     iget-object p0, p0, Ljp/co/sony/mc/camera/util/capability/PlatformCapability$PrepareTask;->mCallback:Ljp/co/sony/mc/camera/util/capability/PlatformCapability$OnPlatformCapabilityPreparedCallback;
@@ -77,7 +77,7 @@
 
     goto :goto_0
 
-    .line 283
+    .line 287
     :cond_0
     invoke-static {}, Ljp/co/sony/mc/camera/util/capability/PlatformCapability;->-$$Nest$sfgetsPrepareStateLock()Ljava/lang/Object;
 
@@ -85,13 +85,13 @@
 
     monitor-enter p0
 
-    .line 284
+    .line 288
     :try_start_0
     sget-object v0, Ljp/co/sony/mc/camera/util/capability/PlatformCapability$PrepareState;->PERMISSION_DENIED:Ljp/co/sony/mc/camera/util/capability/PlatformCapability$PrepareState;
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/util/capability/PlatformCapability;->-$$Nest$sfputsPrepareState(Ljp/co/sony/mc/camera/util/capability/PlatformCapability$PrepareState;)V
 
-    .line 285
+    .line 289
     monitor-exit p0
 
     :goto_0

@@ -44,7 +44,7 @@
 
     move-result-object p0
 
-    const p1, 0x7f0702a2
+    const p1, 0x7f0702d6
 
     .line 548
     invoke-virtual {p0, p1}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
@@ -189,20 +189,24 @@
 .end method
 
 .method private getPermissionGroupLabel(Ljava/lang/String;Landroid/content/Context;)Ljava/lang/String;
-    .locals 3
+    .locals 5
 
     const-string p0, "getPermissionGroupLabel label :"
 
     .line 560
     sget-boolean v0, Ljp/co/sony/mc/camera/util/CamLog;->VERBOSE:Z
 
+    const/4 v1, 0x0
+
+    const/4 v2, 0x1
+
     if-eqz v0, :cond_0
 
-    const-string v0, "getPermissionGroupLabel() start"
+    new-array v0, v2, [Ljava/lang/String;
 
-    filled-new-array {v0}, [Ljava/lang/String;
+    const-string v3, "getPermissionGroupLabel() start"
 
-    move-result-object v0
+    aput-object v3, v0, v1
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
@@ -214,32 +218,32 @@
     :try_start_0
     invoke-virtual {p2}, Landroid/content/Context;->getPackageManager()Landroid/content/pm/PackageManager;
 
-    move-result-object v1
+    move-result-object v3
 
-    const/16 v2, 0x80
+    const/16 v4, 0x80
 
     .line 565
-    invoke-virtual {v1, p1, v2}, Landroid/content/pm/PackageManager;->getPermissionGroupInfo(Ljava/lang/String;I)Landroid/content/pm/PermissionGroupInfo;
+    invoke-virtual {v3, p1, v4}, Landroid/content/pm/PackageManager;->getPermissionGroupInfo(Ljava/lang/String;I)Landroid/content/pm/PermissionGroupInfo;
 
-    move-result-object v1
+    move-result-object v3
 
-    if-eqz v1, :cond_1
+    if-eqz v3, :cond_1
 
     .line 567
     invoke-virtual {p2}, Landroid/content/Context;->getPackageManager()Landroid/content/pm/PackageManager;
 
     move-result-object p2
 
-    invoke-virtual {v1, p2}, Landroid/content/pm/PermissionGroupInfo;->loadLabel(Landroid/content/pm/PackageManager;)Ljava/lang/CharSequence;
+    invoke-virtual {v3, p2}, Landroid/content/pm/PermissionGroupInfo;->loadLabel(Landroid/content/pm/PackageManager;)Ljava/lang/CharSequence;
 
     move-result-object p2
 
     .line 568
     invoke-static {p2}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
-    move-result v1
+    move-result v3
 
-    if-nez v1, :cond_1
+    if-nez v3, :cond_1
 
     .line 569
     invoke-interface {p2}, Ljava/lang/CharSequence;->toString()Ljava/lang/String;
@@ -251,15 +255,13 @@
 
     if-eqz p2, :cond_1
 
-    const/4 p2, 0x1
+    new-array p2, v2, [Ljava/lang/String;
 
-    new-array p2, p2, [Ljava/lang/String;
+    new-instance v3, Ljava/lang/StringBuilder;
 
-    new-instance v1, Ljava/lang/StringBuilder;
+    invoke-direct {v3, p0}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
-    invoke-direct {v1, p0}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
-
-    invoke-virtual {v1, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v3, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object p0
 
@@ -267,9 +269,7 @@
 
     move-result-object p0
 
-    const/4 p1, 0x0
-
-    aput-object p0, p2, p1
+    aput-object p0, p2, v1
 
     invoke-static {p2}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
     :try_end_0
@@ -281,13 +281,15 @@
     move-exception p0
 
     .line 575
-    new-instance p1, Ljava/lang/StringBuilder;
+    new-array p1, v2, [Ljava/lang/String;
 
-    const-string p2, "getPermissionGroupLabel(): "
+    new-instance p2, Ljava/lang/StringBuilder;
 
-    invoke-direct {p1, p2}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+    const-string v3, "getPermissionGroupLabel(): "
 
-    invoke-virtual {p1, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+    invoke-direct {p2, v3}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+
+    invoke-virtual {p2, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
     move-result-object p0
 
@@ -295,11 +297,9 @@
 
     move-result-object p0
 
-    filled-new-array {p0}, [Ljava/lang/String;
+    aput-object p0, p1, v1
 
-    move-result-object p0
-
-    invoke-static {p0}, Ljp/co/sony/mc/camera/util/CamLog;->e([Ljava/lang/String;)V
+    invoke-static {p1}, Ljp/co/sony/mc/camera/util/CamLog;->e([Ljava/lang/String;)V
 
     .line 578
     :cond_1
@@ -308,11 +308,11 @@
 
     if-eqz p0, :cond_2
 
-    const-string p0, "getPermissionGroupLabel() end"
+    new-array p0, v2, [Ljava/lang/String;
 
-    filled-new-array {p0}, [Ljava/lang/String;
+    const-string p1, "getPermissionGroupLabel() end"
 
-    move-result-object p0
+    aput-object p1, p0, v1
 
     invoke-static {p0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
@@ -405,7 +405,7 @@
     .line 192
     invoke-static {v0}, Ljp/co/sony/mc/camera/rtmp/ShareLiveUrlResultReceiver;->setSIsWaitingForResult(Z)V
 
-    const v0, 0x7f1100ee
+    const v0, 0x7f1100ef
 
     .line 194
     invoke-virtual {p0, v0}, Landroid/content/Context;->getText(I)Ljava/lang/CharSequence;
@@ -782,7 +782,7 @@
 
     invoke-direct {v8}, Ljava/lang/StringBuilder;-><init>()V
 
-    const v9, 0x7f11039d
+    const v9, 0x7f1103d1
 
     invoke-virtual {v1, v9}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -811,7 +811,7 @@
 
     move-result-object v8
 
-    const v9, 0x7f1103a5
+    const v9, 0x7f1103d9
 
     .line 102
     invoke-virtual {v1, v9}, Landroid/content/Context;->getString(I)Ljava/lang/String;
@@ -826,7 +826,7 @@
 
     move-result-object v8
 
-    const v9, 0x7f11039e
+    const v9, 0x7f1103d2
 
     .line 106
     invoke-virtual {v1, v9}, Landroid/content/Context;->getString(I)Ljava/lang/String;
@@ -855,7 +855,7 @@
 
     move-result v8
 
-    const v9, 0x7f09010b
+    const v9, 0x7f090107
 
     const/4 v12, 0x1
 
@@ -879,7 +879,7 @@
 
     iput-object v6, v0, Ljp/co/sony/mc/camera/view/messagedialog/SettingMessageDialogBuilder;->mCheckBoxView:Landroid/view/View;
 
-    const v8, 0x7f090225
+    const v8, 0x7f090222
 
     .line 119
     invoke-virtual {v6, v8}, Landroid/view/View;->findViewById(I)Landroid/view/View;
@@ -1010,7 +1010,7 @@
 
     if-ne v4, v5, :cond_8
 
-    const v4, 0x7f0c004d
+    const v4, 0x7f0c004c
 
     .line 162
     invoke-virtual {v6, v4, v14}, Landroid/view/LayoutInflater;->inflate(ILandroid/view/ViewGroup;)Landroid/view/View;
@@ -1037,14 +1037,14 @@
 
     move-result-object v4
 
-    const v5, 0x7f0c0056
+    const v5, 0x7f0c0055
 
     .line 168
     invoke-virtual {v4, v5, v14}, Landroid/view/LayoutInflater;->inflate(ILandroid/view/ViewGroup;)Landroid/view/View;
 
     move-result-object v4
 
-    const v5, 0x7f09042a
+    const v5, 0x7f09041a
 
     .line 170
     invoke-virtual {v4, v5}, Landroid/view/View;->findViewById(I)Landroid/view/View;
@@ -1079,7 +1079,7 @@
     invoke-virtual {v5, v8}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
     :cond_9
-    const v5, 0x7f090429
+    const v5, 0x7f090419
 
     .line 176
     invoke-virtual {v4, v5}, Landroid/view/View;->findViewById(I)Landroid/view/View;
@@ -1098,7 +1098,7 @@
     invoke-virtual {v5, v8}, Landroid/widget/ImageButton;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     :cond_a
-    const v5, 0x7f090348
+    const v5, 0x7f090347
 
     .line 199
     invoke-virtual {v4, v5}, Landroid/view/View;->findViewById(I)Landroid/view/View;
@@ -1127,11 +1127,11 @@
 
     sget-object v4, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->ACCESSIBILITY_COMPLIANCE:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
 
-    const v5, 0x7f0902f9
+    const v5, 0x7f0902ed
 
     if-ne v3, v4, :cond_c
 
-    const v3, 0x7f0c0054
+    const v3, 0x7f0c0053
 
     .line 212
     invoke-virtual {v6, v3, v14}, Landroid/view/LayoutInflater;->inflate(ILandroid/view/ViewGroup;)Landroid/view/View;
@@ -1167,7 +1167,7 @@
 
     move-result-object v13
 
-    const v15, 0x7f110098
+    const v15, 0x7f110092
 
     invoke-virtual {v13, v15}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -1177,7 +1177,7 @@
 
     move-result-object v13
 
-    const v15, 0x7f11008c
+    const v15, 0x7f110085
 
     .line 216
     invoke-virtual {v8, v15, v13}, Landroid/content/res/Resources;->getString(I[Ljava/lang/Object;)Ljava/lang/String;
@@ -1239,7 +1239,7 @@
 
     invoke-direct {v3}, Ljava/lang/StringBuilder;-><init>()V
 
-    const v4, 0x7f110183
+    const v4, 0x7f110186
 
     invoke-virtual {v1, v4}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -1253,7 +1253,7 @@
 
     move-result-object v3
 
-    const v4, 0x7f11010b
+    const v4, 0x7f11010c
 
     .line 232
     invoke-virtual {v1, v4}, Landroid/content/Context;->getString(I)Ljava/lang/String;
@@ -1298,7 +1298,7 @@
     invoke-virtual {v7, v3}, Landroid/app/AlertDialog$Builder;->setTitle(I)Landroid/app/AlertDialog$Builder;
 
     :cond_e
-    const v3, 0x7f0c004a
+    const v3, 0x7f0c0049
 
     .line 240
     invoke-virtual {v6, v3, v14}, Landroid/view/LayoutInflater;->inflate(ILandroid/view/ViewGroup;)Landroid/view/View;
@@ -1322,7 +1322,7 @@
 
     invoke-virtual {v4, v8}, Landroid/widget/TextView;->setOnKeyListener(Landroid/view/View$OnKeyListener;)V
 
-    const v8, 0x7f1101a1
+    const v8, 0x7f1101a4
 
     .line 256
     invoke-virtual {v1, v8}, Landroid/content/Context;->getString(I)Ljava/lang/String;
@@ -1355,7 +1355,7 @@
 
     move-result-object v8
 
-    const v9, 0x7f1101a0
+    const v9, 0x7f1101a3
 
     invoke-virtual {v1, v9}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -1381,7 +1381,7 @@
 
     sget-object v4, Ljp/co/sony/mc/camera/view/messagedialog/DialogId;->PRIVACY_POLICY:Ljp/co/sony/mc/camera/view/messagedialog/DialogId;
 
-    const v8, 0x7f090056
+    const v8, 0x7f090052
 
     const v9, 0x7f0c0035
 
@@ -1418,7 +1418,7 @@
 
     if-ne v10, v11, :cond_10
 
-    const v10, 0x7f110069
+    const v10, 0x7f11005f
 
     .line 272
     invoke-virtual {v1, v10}, Landroid/content/Context;->getString(I)Ljava/lang/String;
@@ -1428,7 +1428,7 @@
     goto :goto_1
 
     :cond_10
-    const v10, 0x7f110181
+    const v10, 0x7f110184
 
     .line 274
     invoke-virtual {v1, v10}, Landroid/content/Context;->getString(I)Ljava/lang/String;
@@ -1464,7 +1464,7 @@
 
     move-result-object v10
 
-    const v11, 0x7f1101c3
+    const v11, 0x7f1101c6
 
     invoke-virtual {v1, v11}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -1541,7 +1541,7 @@
 
     invoke-virtual {v4, v6}, Landroid/widget/TextView;->setOnKeyListener(Landroid/view/View$OnKeyListener;)V
 
-    const v6, 0x7f1101a9
+    const v6, 0x7f1101ac
 
     .line 302
     invoke-virtual {v1, v6}, Landroid/content/Context;->getString(I)Ljava/lang/String;
@@ -1574,7 +1574,7 @@
 
     move-result-object v6
 
-    const v8, 0x7f1101bd
+    const v8, 0x7f1101c0
 
     .line 309
     invoke-virtual {v1, v8}, Landroid/content/Context;->getString(I)Ljava/lang/String;
@@ -1585,14 +1585,14 @@
 
     move-result-object v10
 
-    const v11, 0x7f110268
+    const v11, 0x7f11028c
 
     .line 306
     invoke-virtual {v1, v11, v10}, Landroid/content/Context;->getString(I[Ljava/lang/Object;)Ljava/lang/String;
 
     move-result-object v10
 
-    const v11, 0x7f11032b
+    const v11, 0x7f11035d
 
     .line 312
     invoke-virtual {v1, v11}, Landroid/content/Context;->getString(I)Ljava/lang/String;
@@ -1603,7 +1603,7 @@
 
     move-result-object v11
 
-    const v13, 0x7f110266
+    const v13, 0x7f11028a
 
     .line 310
     invoke-virtual {v1, v13, v11}, Landroid/content/Context;->getString(I[Ljava/lang/Object;)Ljava/lang/String;
@@ -1619,7 +1619,7 @@
 
     move-result-object v8
 
-    const v13, 0x7f1104a5
+    const v13, 0x7f1104df
 
     .line 314
     invoke-virtual {v1, v13, v8}, Landroid/content/Context;->getString(I[Ljava/lang/Object;)Ljava/lang/String;
@@ -1635,7 +1635,7 @@
 
     move-result-object v6
 
-    const v13, 0x7f1101ae
+    const v13, 0x7f1101b1
 
     filled-new-array {v10, v11, v8}, [Ljava/lang/Object;
 
@@ -1670,7 +1670,7 @@
 
     move-result-object v6
 
-    const v8, 0x7f1101a8
+    const v8, 0x7f1101ab
 
     .line 327
     invoke-virtual {v1, v8}, Landroid/content/Context;->getString(I)Ljava/lang/String;
@@ -1681,7 +1681,7 @@
 
     move-result-object v8
 
-    const v10, 0x7f110267
+    const v10, 0x7f11028b
 
     .line 325
     invoke-virtual {v1, v10, v8}, Landroid/content/Context;->getString(I[Ljava/lang/Object;)Ljava/lang/String;
@@ -1697,7 +1697,7 @@
 
     move-result-object v6
 
-    const v10, 0x7f1101ac
+    const v10, 0x7f1101af
 
     filled-new-array {v8}, [Ljava/lang/Object;
 
@@ -1742,7 +1742,7 @@
 
     move-result-object v6
 
-    const v8, 0x7f1101aa
+    const v8, 0x7f1101ad
 
     invoke-virtual {v1, v8}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -1786,14 +1786,14 @@
 
     move-result-object v3
 
-    const v4, 0x7f0c0055
+    const v4, 0x7f0c0054
 
     .line 358
     invoke-virtual {v3, v4, v14}, Landroid/view/LayoutInflater;->inflate(ILandroid/view/ViewGroup;)Landroid/view/View;
 
     move-result-object v3
 
-    const v4, 0x7f09010b
+    const v4, 0x7f090107
 
     .line 359
     invoke-virtual {v3, v4}, Landroid/view/View;->findViewById(I)Landroid/view/View;
@@ -1807,7 +1807,7 @@
     .line 360
     invoke-virtual {v4, v6}, Landroid/widget/CheckBox;->setVisibility(I)V
 
-    const v4, 0x7f090244
+    const v4, 0x7f090241
 
     .line 361
     invoke-virtual {v3, v4}, Landroid/view/View;->findViewById(I)Landroid/view/View;
@@ -1832,7 +1832,7 @@
 
     invoke-virtual {v4, v8}, Landroid/widget/ImageView;->setImageDrawable(Landroid/graphics/drawable/Drawable;)V
 
-    const v4, 0x7f0904c6
+    const v4, 0x7f0904b5
 
     .line 364
     invoke-virtual {v3, v4}, Landroid/view/View;->findViewById(I)Landroid/view/View;

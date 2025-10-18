@@ -71,7 +71,7 @@
 .method private constructor <init>()V
     .locals 0
 
-    .line 64
+    .line 83
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -82,15 +82,7 @@
 .method public compare(Landroidx/compose/ui/node/LayoutNode;Landroidx/compose/ui/node/LayoutNode;)I
     .locals 1
 
-    const-string p0, "a"
-
-    invoke-static {p1, p0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string p0, "b"
-
-    invoke-static {p2, p0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 66
+    .line 85
     invoke-virtual {p2}, Landroidx/compose/ui/node/LayoutNode;->getDepth$ui_release()I
 
     move-result p0
@@ -107,7 +99,7 @@
 
     return p0
 
-    .line 70
+    .line 89
     :cond_0
     invoke-virtual {p1}, Landroidx/compose/ui/node/LayoutNode;->hashCode()I
 
@@ -127,7 +119,7 @@
 .method public bridge synthetic compare(Ljava/lang/Object;Ljava/lang/Object;)I
     .locals 0
 
-    .line 64
+    .line 83
     check-cast p1, Landroidx/compose/ui/node/LayoutNode;
 
     check-cast p2, Landroidx/compose/ui/node/LayoutNode;

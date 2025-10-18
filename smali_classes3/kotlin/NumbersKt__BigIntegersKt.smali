@@ -72,7 +72,7 @@
 
     move-result-object p0
 
-    const-string/jumbo p1, "this.and(other)"
+    const-string p1, "and(...)"
 
     invoke-static {p0, p1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
 
@@ -93,7 +93,7 @@
 
     move-result-object p0
 
-    const-string/jumbo v0, "this.subtract(BigInteger.ONE)"
+    const-string/jumbo v0, "subtract(...)"
 
     invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
 
@@ -116,7 +116,7 @@
 
     move-result-object p0
 
-    const-string/jumbo p1, "this.divide(other)"
+    const-string p1, "divide(...)"
 
     invoke-static {p0, p1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
 
@@ -137,7 +137,7 @@
 
     move-result-object p0
 
-    const-string/jumbo v0, "this.add(BigInteger.ONE)"
+    const-string v0, "add(...)"
 
     invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
 
@@ -156,7 +156,7 @@
 
     move-result-object p0
 
-    const-string/jumbo v0, "this.not()"
+    const-string v0, "not(...)"
 
     invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
 
@@ -179,7 +179,7 @@
 
     move-result-object p0
 
-    const-string/jumbo p1, "this.subtract(other)"
+    const-string/jumbo p1, "subtract(...)"
 
     invoke-static {p0, p1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
 
@@ -202,7 +202,7 @@
 
     move-result-object p0
 
-    const-string/jumbo p1, "this.or(other)"
+    const-string p1, "or(...)"
 
     invoke-static {p0, p1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
 
@@ -225,7 +225,7 @@
 
     move-result-object p0
 
-    const-string/jumbo p1, "this.add(other)"
+    const-string p1, "add(...)"
 
     invoke-static {p0, p1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
 
@@ -248,7 +248,7 @@
 
     move-result-object p0
 
-    const-string/jumbo p1, "this.remainder(other)"
+    const-string p1, "remainder(...)"
 
     invoke-static {p0, p1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
 
@@ -267,7 +267,7 @@
 
     move-result-object p0
 
-    const-string/jumbo p1, "this.shiftLeft(n)"
+    const-string/jumbo p1, "shiftLeft(...)"
 
     invoke-static {p0, p1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
 
@@ -286,7 +286,7 @@
 
     move-result-object p0
 
-    const-string/jumbo p1, "this.shiftRight(n)"
+    const-string/jumbo p1, "shiftRight(...)"
 
     invoke-static {p0, p1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
 
@@ -309,7 +309,7 @@
 
     move-result-object p0
 
-    const-string/jumbo p1, "this.multiply(other)"
+    const-string p1, "multiply(...)"
 
     invoke-static {p0, p1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
 
@@ -398,7 +398,7 @@
 
     move-result-object p0
 
-    const-string/jumbo v0, "valueOf(this.toLong())"
+    const-string/jumbo v0, "valueOf(...)"
 
     invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
 
@@ -413,7 +413,7 @@
 
     move-result-object p0
 
-    const-string/jumbo p1, "valueOf(this)"
+    const-string/jumbo p1, "valueOf(...)"
 
     invoke-static {p0, p1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
 
@@ -432,7 +432,7 @@
 
     move-result-object p0
 
-    const-string/jumbo v0, "this.negate()"
+    const-string v0, "negate(...)"
 
     invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
 
@@ -455,7 +455,7 @@
 
     move-result-object p0
 
-    const-string/jumbo p1, "this.xor(other)"
+    const-string/jumbo p1, "xor(...)"
 
     invoke-static {p0, p1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
 

@@ -51,7 +51,7 @@
 .end method
 
 .method public static append(Ljava/lang/CharSequence;Ljava/io/File;Ljava/nio/charset/Charset;)V
-    .locals 1
+    .locals 3
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -61,12 +61,16 @@
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
+    const/4 v0, 0x1
+
     .line 362
-    sget-object v0, Lcom/google/common/io/FileWriteMode;->APPEND:Lcom/google/common/io/FileWriteMode;
+    new-array v0, v0, [Lcom/google/common/io/FileWriteMode;
 
-    filled-new-array {v0}, [Lcom/google/common/io/FileWriteMode;
+    const/4 v1, 0x0
 
-    move-result-object v0
+    sget-object v2, Lcom/google/common/io/FileWriteMode;->APPEND:Lcom/google/common/io/FileWriteMode;
+
+    aput-object v2, v0, v1
 
     invoke-static {p1, p2, v0}, Lcom/google/common/io/Files;->asCharSink(Ljava/io/File;Ljava/nio/charset/Charset;[Lcom/google/common/io/FileWriteMode;)Lcom/google/common/io/CharSink;
 

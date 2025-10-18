@@ -53,7 +53,7 @@
     f = "AndroidViewHolder.android.kt"
     i = {}
     l = {
-        0x21c
+        0x242
     }
     m = "invokeSuspend"
     n = {}
@@ -174,7 +174,7 @@
 
     move-result-object v0
 
-    .line 539
+    .line 577
     iget v1, p0, Landroidx/compose/ui/viewinterop/AndroidViewHolder$onNestedPreFling$1;->label:I
 
     const/4 v2, 0x1
@@ -199,7 +199,7 @@
     :cond_1
     invoke-static {p1}, Lkotlin/ResultKt;->throwOnFailure(Ljava/lang/Object;)V
 
-    .line 540
+    .line 578
     iget-object p1, p0, Landroidx/compose/ui/viewinterop/AndroidViewHolder$onNestedPreFling$1;->this$0:Landroidx/compose/ui/viewinterop/AndroidViewHolder;
 
     invoke-static {p1}, Landroidx/compose/ui/viewinterop/AndroidViewHolder;->access$getDispatcher$p(Landroidx/compose/ui/viewinterop/AndroidViewHolder;)Landroidx/compose/ui/input/nestedscroll/NestedScrollDispatcher;
@@ -222,7 +222,7 @@
 
     return-object v0
 
-    .line 541
+    .line 579
     :cond_2
     :goto_0
     sget-object p0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;

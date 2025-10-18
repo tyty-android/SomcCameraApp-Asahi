@@ -737,7 +737,7 @@
     sput v1, Ljp/co/sony/mc/camera/view/WhiteBalancePaletteLayout;->Y_STEP_NUM:I
 
     :goto_0
-    const v0, 0x7f090521
+    const v0, 0x7f090508
 
     .line 94
     invoke-virtual {p0, v0}, Ljp/co/sony/mc/camera/view/WhiteBalancePaletteLayout;->findViewById(I)Landroid/view/View;
@@ -746,7 +746,7 @@
 
     iput-object v0, p0, Ljp/co/sony/mc/camera/view/WhiteBalancePaletteLayout;->mThumb:Landroid/view/View;
 
-    const v0, 0x7f090520
+    const v0, 0x7f090507
 
     .line 95
     invoke-virtual {p0, v0}, Ljp/co/sony/mc/camera/view/WhiteBalancePaletteLayout;->findViewById(I)Landroid/view/View;
@@ -762,7 +762,7 @@
 
     invoke-virtual {v0, v1}, Landroid/view/View;->setOnTouchListener(Landroid/view/View$OnTouchListener;)V
 
-    const v0, 0x7f09051a
+    const v0, 0x7f090501
 
     .line 120
     invoke-virtual {p0, v0}, Ljp/co/sony/mc/camera/view/WhiteBalancePaletteLayout;->findViewById(I)Landroid/view/View;
@@ -775,7 +775,7 @@
 
     invoke-virtual {v0, v1}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
-    const v0, 0x7f090519
+    const v0, 0x7f090500
 
     .line 128
     invoke-virtual {p0, v0}, Ljp/co/sony/mc/camera/view/WhiteBalancePaletteLayout;->findViewById(I)Landroid/view/View;
@@ -788,7 +788,7 @@
 
     invoke-virtual {v0, v1}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
-    const v0, 0x7f09051b
+    const v0, 0x7f090502
 
     .line 136
     invoke-virtual {p0, v0}, Ljp/co/sony/mc/camera/view/WhiteBalancePaletteLayout;->findViewById(I)Landroid/view/View;
@@ -801,7 +801,7 @@
 
     invoke-virtual {v0, v1}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
-    const v0, 0x7f090518
+    const v0, 0x7f0904ff
 
     .line 144
     invoke-virtual {p0, v0}, Ljp/co/sony/mc/camera/view/WhiteBalancePaletteLayout;->findViewById(I)Landroid/view/View;

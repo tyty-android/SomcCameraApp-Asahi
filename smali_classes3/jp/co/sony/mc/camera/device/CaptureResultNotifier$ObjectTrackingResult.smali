@@ -24,13 +24,13 @@
 .method protected constructor <init>(Landroid/graphics/Rect;Z)V
     .locals 0
 
-    .line 553
+    .line 560
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 554
+    .line 561
     iput-object p1, p0, Ljp/co/sony/mc/camera/device/CaptureResultNotifier$ObjectTrackingResult;->mRectOfTrackedObject:Landroid/graphics/Rect;
 
-    .line 555
+    .line 562
     iput-boolean p2, p0, Ljp/co/sony/mc/camera/device/CaptureResultNotifier$ObjectTrackingResult;->mIsLost:Z
 
     return-void

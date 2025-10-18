@@ -20,7 +20,7 @@
 
     const/4 v0, 0x0
 
-    .line 39
+    .line 40
     invoke-direct {p0, p1, p2, v0}, Lcom/google/gson/ToNumberPolicy;-><init>(Ljava/lang/String;ILcom/google/gson/ToNumberPolicy$1;)V
 
     return-void
@@ -36,7 +36,7 @@
         }
     .end annotation
 
-    .line 41
+    .line 43
     invoke-virtual {p1}, Lcom/google/gson/stream/JsonReader;->nextDouble()D
 
     move-result-wide p0
@@ -56,7 +56,7 @@
         }
     .end annotation
 
-    .line 39
+    .line 40
     invoke-virtual {p0, p1}, Lcom/google/gson/ToNumberPolicy$1;->readNumber(Lcom/google/gson/stream/JsonReader;)Ljava/lang/Double;
 
     move-result-object p0

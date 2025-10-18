@@ -12,7 +12,7 @@
 
 .annotation runtime Lkotlin/Metadata;
     d1 = {
-        "\u0000 \n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0010\u0002\n\u0002\u0008\u0003\u0008\u0007\u0018\u0000 \n2\u00020\u0001:\u0001\nB\u0019\u0012\u0008\u0010\u0002\u001a\u0004\u0018\u00010\u0003\u0012\u0008\u0010\u0004\u001a\u0004\u0018\u00010\u0005\u00a2\u0006\u0002\u0010\u0006J\u0012\u0010\u0007\u001a\u00020\u00082\u0008\u0010\u0002\u001a\u0004\u0018\u00010\u0003H\u0014J\u0008\u0010\t\u001a\u00020\u0008H\u0014\u00a8\u0006\u000b"
+        "\u0000 \n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0003\n\u0002\u0010\u0002\n\u0002\u0008\u0003\u0008\u0007\u0018\u0000 \u000b2\u00020\u0001:\u0001\u000bB\u001b\u0012\u0008\u0010\u0002\u001a\u0004\u0018\u00010\u0003\u0012\u0008\u0010\u0004\u001a\u0004\u0018\u00010\u0005\u00a2\u0006\u0004\u0008\u0006\u0010\u0007J\u0012\u0010\u0008\u001a\u00020\t2\u0008\u0010\u0002\u001a\u0004\u0018\u00010\u0003H\u0014J\u0008\u0010\n\u001a\u00020\tH\u0014\u00a8\u0006\u000c"
     }
     d2 = {
         "Ljp/co/sony/mc/camera/view/ExternalDisplaySelfTimerCountDownCircleView;",
@@ -21,6 +21,7 @@
         "Landroid/content/Context;",
         "attrs",
         "Landroid/util/AttributeSet;",
+        "<init>",
         "(Landroid/content/Context;Landroid/util/AttributeSet;)V",
         "init",
         "",
@@ -30,8 +31,8 @@
     }
     k = 0x1
     mv = {
-        0x1,
-        0x9,
+        0x2,
+        0x0,
         0x0
     }
     xi = 0x30
@@ -83,39 +84,39 @@
 
     invoke-direct {p1}, Landroid/graphics/Paint;-><init>()V
 
-    iput-object p1, p0, Ljp/co/sony/mc/camera/view/ExternalDisplaySelfTimerCountDownCircleView;->mPaint:Landroid/graphics/Paint;
+    iput-object p1, p0, Ljp/co/sony/mc/camera/view/SelfTimerCountDownCircleView;->mPaint:Landroid/graphics/Paint;
 
     .line 24
-    iget-object p1, p0, Ljp/co/sony/mc/camera/view/ExternalDisplaySelfTimerCountDownCircleView;->mPaint:Landroid/graphics/Paint;
+    iget-object p1, p0, Ljp/co/sony/mc/camera/view/SelfTimerCountDownCircleView;->mPaint:Landroid/graphics/Paint;
 
     sget-object v0, Landroid/graphics/Paint$Style;->STROKE:Landroid/graphics/Paint$Style;
 
     invoke-virtual {p1, v0}, Landroid/graphics/Paint;->setStyle(Landroid/graphics/Paint$Style;)V
 
     .line 25
-    iget-object p1, p0, Ljp/co/sony/mc/camera/view/ExternalDisplaySelfTimerCountDownCircleView;->mPaint:Landroid/graphics/Paint;
+    iget-object p1, p0, Ljp/co/sony/mc/camera/view/SelfTimerCountDownCircleView;->mPaint:Landroid/graphics/Paint;
 
-    iget v0, p0, Ljp/co/sony/mc/camera/view/ExternalDisplaySelfTimerCountDownCircleView;->mCountdownCircleStrokeWidth:I
+    iget v0, p0, Ljp/co/sony/mc/camera/view/SelfTimerCountDownCircleView;->mCountdownCircleStrokeWidth:I
 
     int-to-float v0, v0
 
     invoke-virtual {p1, v0}, Landroid/graphics/Paint;->setStrokeWidth(F)V
 
     .line 26
-    iget-object p1, p0, Ljp/co/sony/mc/camera/view/ExternalDisplaySelfTimerCountDownCircleView;->mPaint:Landroid/graphics/Paint;
+    iget-object p1, p0, Ljp/co/sony/mc/camera/view/SelfTimerCountDownCircleView;->mPaint:Landroid/graphics/Paint;
 
     const/4 v0, 0x1
 
     invoke-virtual {p1, v0}, Landroid/graphics/Paint;->setAntiAlias(Z)V
 
     .line 27
-    iget-object p1, p0, Ljp/co/sony/mc/camera/view/ExternalDisplaySelfTimerCountDownCircleView;->mPaint:Landroid/graphics/Paint;
+    iget-object p1, p0, Ljp/co/sony/mc/camera/view/SelfTimerCountDownCircleView;->mPaint:Landroid/graphics/Paint;
 
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/view/ExternalDisplaySelfTimerCountDownCircleView;->getResources()Landroid/content/res/Resources;
 
     move-result-object p0
 
-    const v0, 0x7f0600f1
+    const v0, 0x7f0600e6
 
     const/4 v1, 0x0
 
@@ -136,7 +137,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f07030c
+    const v1, 0x7f07033d
 
     invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
@@ -144,7 +145,7 @@
 
     div-int/lit8 v0, v0, 0x2
 
-    iput v0, p0, Ljp/co/sony/mc/camera/view/ExternalDisplaySelfTimerCountDownCircleView;->mCountdownCircleRadius:I
+    iput v0, p0, Ljp/co/sony/mc/camera/view/SelfTimerCountDownCircleView;->mCountdownCircleRadius:I
 
     .line 33
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/view/ExternalDisplaySelfTimerCountDownCircleView;->getResources()Landroid/content/res/Resources;
@@ -160,7 +161,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f07030a
+    const v2, 0x7f07033b
 
     .line 35
     invoke-virtual {v1, v2}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
@@ -172,7 +173,7 @@
     .line 33
     div-int/lit8 v0, v0, 0x2
 
-    iput v0, p0, Ljp/co/sony/mc/camera/view/ExternalDisplaySelfTimerCountDownCircleView;->mCountdownCircleStrokeWidth:I
+    iput v0, p0, Ljp/co/sony/mc/camera/view/SelfTimerCountDownCircleView;->mCountdownCircleStrokeWidth:I
 
     return-void
 .end method

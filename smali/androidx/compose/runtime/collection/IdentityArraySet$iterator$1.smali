@@ -81,7 +81,7 @@
 
     iput-object p1, p0, Landroidx/compose/runtime/collection/IdentityArraySet$iterator$1;->this$0:Landroidx/compose/runtime/collection/IdentityArraySet;
 
-    .line 372
+    .line 384
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -92,7 +92,7 @@
 .method public final getIndex()I
     .locals 0
 
-    .line 373
+    .line 385
     iget p0, p0, Landroidx/compose/runtime/collection/IdentityArraySet$iterator$1;->index:I
 
     return p0
@@ -101,7 +101,7 @@
 .method public hasNext()Z
     .locals 1
 
-    .line 374
+    .line 386
     iget v0, p0, Landroidx/compose/runtime/collection/IdentityArraySet$iterator$1;->index:I
 
     iget-object p0, p0, Landroidx/compose/runtime/collection/IdentityArraySet$iterator$1;->this$0:Landroidx/compose/runtime/collection/IdentityArraySet;
@@ -131,7 +131,7 @@
         }
     .end annotation
 
-    .line 375
+    .line 387
     iget-object v0, p0, Landroidx/compose/runtime/collection/IdentityArraySet$iterator$1;->this$0:Landroidx/compose/runtime/collection/IdentityArraySet;
 
     invoke-virtual {v0}, Landroidx/compose/runtime/collection/IdentityArraySet;->getValues()[Ljava/lang/Object;
@@ -168,7 +168,7 @@
 .method public final setIndex(I)V
     .locals 0
 
-    .line 373
+    .line 385
     iput p1, p0, Landroidx/compose/runtime/collection/IdentityArraySet$iterator$1;->index:I
 
     return-void

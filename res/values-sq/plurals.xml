@@ -4,20 +4,4 @@
         <item quantity="other">%d njoftime të reja</item>
         <item quantity="one">%d njoftim i ri</item>
     </plurals>
-    <plurals name="mv_minute_remaining_txt">
-        <item quantity="other">%1$d minuta të mbetura</item>
-        <item quantity="one">1 minutë e mbetur</item>
-    </plurals>
-    <plurals name="mv_minute_txt">
-        <item quantity="other">%1$d minuta</item>
-        <item quantity="one">1 minutë</item>
-    </plurals>
-    <plurals name="mv_second_remaining_txt">
-        <item quantity="other">%1$d sekonda të mbetura</item>
-        <item quantity="one">1 sekondë e mbetur</item>
-    </plurals>
-    <plurals name="mv_second_txt">
-        <item quantity="other">%1$d sekonda</item>
-        <item quantity="one">1 sekondë</item>
-    </plurals>
 </resources>

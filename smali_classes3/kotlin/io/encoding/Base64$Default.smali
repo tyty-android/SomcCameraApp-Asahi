@@ -59,7 +59,7 @@
 
     const/4 v1, 0x0
 
-    .line 529
+    .line 527
     invoke-direct {p0, v0, v0, v1}, Lkotlin/io/encoding/Base64;-><init>(ZZLkotlin/jvm/internal/DefaultConstructorMarker;)V
 
     return-void
@@ -78,7 +78,7 @@
 .method public final getMime()Lkotlin/io/encoding/Base64;
     .locals 0
 
-    .line 565
+    .line 563
     invoke-static {}, Lkotlin/io/encoding/Base64;->access$getMime$cp()Lkotlin/io/encoding/Base64;
 
     move-result-object p0
@@ -89,7 +89,7 @@
 .method public final getMimeLineSeparatorSymbols$kotlin_stdlib()[B
     .locals 0
 
-    .line 541
+    .line 539
     invoke-static {}, Lkotlin/io/encoding/Base64;->access$getMimeLineSeparatorSymbols$cp()[B
 
     move-result-object p0
@@ -100,7 +100,7 @@
 .method public final getUrlSafe()Lkotlin/io/encoding/Base64;
     .locals 0
 
-    .line 553
+    .line 551
     invoke-static {}, Lkotlin/io/encoding/Base64;->access$getUrlSafe$cp()Lkotlin/io/encoding/Base64;
 
     move-result-object p0

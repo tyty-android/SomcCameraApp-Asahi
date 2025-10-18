@@ -246,7 +246,7 @@
     .line 44
     new-instance p2, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Builder;
 
-    const v0, 0x7f1202a9
+    const v0, 0x7f1202ab
 
     invoke-direct {p2, p1, v0}, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Builder;-><init>(Landroid/content/Context;I)V
 
@@ -262,7 +262,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f0c0050
+    const v1, 0x7f0c004f
 
     const/4 v2, 0x0
 
@@ -290,7 +290,7 @@
     invoke-virtual {p2, p0}, Ljp/co/sony/mc/camera/view/rotatableview/RotatableDialog$Builder;->setTitle(I)Landroid/app/AlertDialog$Builder;
 
     :cond_0
-    const p0, 0x7f090047
+    const p0, 0x7f090046
 
     .line 58
     invoke-virtual {v0, p0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
@@ -299,7 +299,7 @@
 
     check-cast p0, Landroid/widget/TextView;
 
-    const v1, 0x7f090048
+    const v1, 0x7f090047
 
     .line 59
     invoke-virtual {v0, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
@@ -308,7 +308,7 @@
 
     check-cast v1, Landroid/widget/TextView;
 
-    const v2, 0x7f090049
+    const v2, 0x7f090048
 
     .line 60
     invoke-virtual {v0, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
@@ -317,7 +317,7 @@
 
     check-cast v2, Landroid/widget/TextView;
 
-    const v3, 0x7f1101af
+    const v3, 0x7f1101b2
 
     .line 62
     invoke-virtual {p1, v3}, Landroid/content/Context;->getString(I)Ljava/lang/String;
@@ -329,7 +329,7 @@
 
     invoke-direct {v4}, Ljava/lang/StringBuilder;-><init>()V
 
-    const v5, 0x7f1101b3
+    const v5, 0x7f1101b6
 
     invoke-virtual {p1, v5}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -371,7 +371,7 @@
 
     invoke-direct {v6}, Ljava/lang/StringBuilder;-><init>()V
 
-    const v7, 0x7f1101b6
+    const v7, 0x7f1101b9
 
     invoke-virtual {p1, v7}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 

@@ -42,7 +42,7 @@
 
     sput-object v0, Lkotlin/text/SystemProperties;->INSTANCE:Lkotlin/text/SystemProperties;
 
-    .line 203
+    .line 243
     const-string v0, "line.separator"
 
     invoke-static {v0}, Ljava/lang/System;->getProperty(Ljava/lang/String;)Ljava/lang/String;
@@ -59,7 +59,7 @@
 .method private constructor <init>()V
     .locals 0
 
-    .line 200
+    .line 240
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void

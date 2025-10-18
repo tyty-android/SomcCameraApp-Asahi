@@ -29,22 +29,25 @@
     i = {
         0x0,
         0x0,
-        0x0
+        0x0,
+        0x1
     }
     l = {
-        0x1f6,
-        0x1f7
+        0x23a,
+        0x23f
     }
     m = "scroll$suspendImpl"
     n = {
         "$this",
         "scrollPriority",
-        "block"
+        "block",
+        "$this"
     }
     s = {
         "L$0",
         "L$1",
-        "L$2"
+        "L$2",
+        "L$0"
     }
 .end annotation
 

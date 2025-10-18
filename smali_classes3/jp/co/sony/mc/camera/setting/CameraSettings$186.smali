@@ -21,7 +21,7 @@
 .method constructor <init>()V
     .locals 0
 
-    .line 2091
+    .line 2134
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -42,10 +42,10 @@
         }
     .end annotation
 
-    .line 2095
+    .line 2138
     check-cast p1, Ljp/co/sony/mc/camera/setting/CameraSettings;
 
-    .line 2096
+    .line 2139
     invoke-static {p1}, Ljp/co/sony/mc/camera/setting/CameraSettings;->-$$Nest$fgetmCapturingMode(Ljp/co/sony/mc/camera/setting/CameraSettings;)Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
 
     move-result-object p0
@@ -54,8 +54,7 @@
 
     move-result-object p1
 
-    .line 2097
-    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/configuration/parameters/SuperResolutionZoom;->getOptions(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;)[Ljp/co/sony/mc/camera/configuration/parameters/SuperResolutionZoom;
+    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/configuration/parameters/VideoHdr;->getOptions(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;)[Ljp/co/sony/mc/camera/configuration/parameters/VideoHdr;
 
     move-result-object p0
 

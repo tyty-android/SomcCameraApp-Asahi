@@ -66,15 +66,6 @@
     return-void
 .end method
 
-.method public static final synthetic access$getReceiver$p(Landroidx/compose/material/pullrefresh/PullRefreshKt$pullRefresh$2$2;)Ljava/lang/Object;
-    .locals 0
-
-    .line 52
-    iget-object p0, p0, Landroidx/compose/material/pullrefresh/PullRefreshKt$pullRefresh$2$2;->receiver:Ljava/lang/Object;
-
-    return-object p0
-.end method
-
 
 # virtual methods
 .method public final invoke(FLkotlin/coroutines/Continuation;)Ljava/lang/Object;
@@ -91,9 +82,7 @@
     .end annotation
 
     .line 52
-    invoke-static {p0}, Landroidx/compose/material/pullrefresh/PullRefreshKt$pullRefresh$2$2;->access$getReceiver$p(Landroidx/compose/material/pullrefresh/PullRefreshKt$pullRefresh$2$2;)Ljava/lang/Object;
-
-    move-result-object p0
+    iget-object p0, p0, Landroidx/compose/material/pullrefresh/PullRefreshKt$pullRefresh$2$2;->receiver:Ljava/lang/Object;
 
     check-cast p0, Landroidx/compose/material/pullrefresh/PullRefreshState;
 

@@ -220,30 +220,9 @@
 .end method
 
 .method private static desiredVersion()[B
-    .locals 3
+    .locals 1
 
-    .line 378
-    sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
-
-    const/16 v1, 0x22
-
-    const/4 v2, 0x0
-
-    if-le v0, v1, :cond_0
-
-    return-object v2
-
-    .line 383
-    :cond_0
-    sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
-
-    if-eq v0, v1, :cond_1
-
-    return-object v2
-
-    .line 402
-    :cond_1
-    sget-object v0, Landroidx/profileinstaller/ProfileVersion;->V015_S:[B
+    const/4 v0, 0x0
 
     return-object v0
 .end method
@@ -475,29 +454,9 @@
 .end method
 
 .method private static requiresMetadata()Z
-    .locals 3
+    .locals 1
 
-    .line 411
-    sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
-
-    const/16 v1, 0x22
-
-    const/4 v2, 0x0
-
-    if-le v0, v1, :cond_0
-
-    return v2
-
-    .line 416
-    :cond_0
-    sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
-
-    if-eq v0, v1, :cond_1
-
-    return v2
-
-    :cond_1
-    const/4 v0, 0x1
+    const/4 v0, 0x0
 
     return v0
 .end method

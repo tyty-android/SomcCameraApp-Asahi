@@ -21,7 +21,7 @@
 .method constructor <init>()V
     .locals 0
 
-    .line 37
+    .line 36
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -62,6 +62,7 @@
 
     check-cast p2, Ljava/lang/Class;
 
+    .line 41
     invoke-virtual {p2}, Ljava/lang/Class;->isArray()Z
 
     move-result p2
@@ -73,13 +74,13 @@
 
     return-object p0
 
-    .line 44
+    .line 45
     :cond_1
     invoke-static {p0}, Lcom/google/gson/internal/$Gson$Types;->getArrayComponentType(Ljava/lang/reflect/Type;)Ljava/lang/reflect/Type;
 
     move-result-object p0
 
-    .line 45
+    .line 46
     invoke-static {p0}, Lcom/google/gson/reflect/TypeToken;->get(Ljava/lang/reflect/Type;)Lcom/google/gson/reflect/TypeToken;
 
     move-result-object p2
@@ -88,10 +89,10 @@
 
     move-result-object p2
 
-    .line 48
+    .line 49
     new-instance v0, Lcom/google/gson/internal/bind/ArrayTypeAdapter;
 
-    .line 49
+    .line 51
     invoke-static {p0}, Lcom/google/gson/internal/$Gson$Types;->getRawType(Ljava/lang/reflect/Type;)Ljava/lang/Class;
 
     move-result-object p0

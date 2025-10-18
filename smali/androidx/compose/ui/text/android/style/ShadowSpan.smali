@@ -6,7 +6,7 @@
 # annotations
 .annotation runtime Lkotlin/Metadata;
     d1 = {
-        "\u0000$\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0008\n\u0000\n\u0002\u0010\u0007\n\u0002\u0008\n\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\u0008\u0001\u0018\u00002\u00020\u0001B%\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\u0006\u0010\u0004\u001a\u00020\u0005\u0012\u0006\u0010\u0006\u001a\u00020\u0005\u0012\u0006\u0010\u0007\u001a\u00020\u0005\u00a2\u0006\u0002\u0010\u0008J\u0010\u0010\u000f\u001a\u00020\u00102\u0006\u0010\u0011\u001a\u00020\u0012H\u0016R\u0011\u0010\u0002\u001a\u00020\u0003\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\t\u0010\nR\u0011\u0010\u0004\u001a\u00020\u0005\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\u000b\u0010\u000cR\u0011\u0010\u0006\u001a\u00020\u0005\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\r\u0010\u000cR\u0011\u0010\u0007\u001a\u00020\u0005\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\u000e\u0010\u000c\u00a8\u0006\u0013"
+        "\u0000$\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0008\n\u0000\n\u0002\u0010\u0007\n\u0002\u0008\n\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\u0008\u0000\u0018\u00002\u00020\u0001B%\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\u0006\u0010\u0004\u001a\u00020\u0005\u0012\u0006\u0010\u0006\u001a\u00020\u0005\u0012\u0006\u0010\u0007\u001a\u00020\u0005\u00a2\u0006\u0002\u0010\u0008J\u0010\u0010\u000f\u001a\u00020\u00102\u0006\u0010\u0011\u001a\u00020\u0012H\u0016R\u0011\u0010\u0002\u001a\u00020\u0003\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\t\u0010\nR\u0011\u0010\u0004\u001a\u00020\u0005\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\u000b\u0010\u000cR\u0011\u0010\u0006\u001a\u00020\u0005\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\r\u0010\u000cR\u0011\u0010\u0007\u001a\u00020\u0005\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\u000e\u0010\u000c\u00a8\u0006\u0013"
     }
     d2 = {
         "Landroidx/compose/ui/text/android/style/ShadowSpan;",
@@ -40,6 +40,10 @@
 .end annotation
 
 
+# static fields
+.field public static final $stable:I
+
+
 # instance fields
 .field private final color:I
 
@@ -51,22 +55,28 @@
 
 
 # direct methods
+.method static constructor <clinit>()V
+    .locals 0
+
+    return-void
+.end method
+
 .method public constructor <init>(IFFF)V
     .locals 0
 
-    .line 33
+    .line 30
     invoke-direct {p0}, Landroid/text/style/CharacterStyle;-><init>()V
 
-    .line 29
+    .line 26
     iput p1, p0, Landroidx/compose/ui/text/android/style/ShadowSpan;->color:I
 
-    .line 30
+    .line 27
     iput p2, p0, Landroidx/compose/ui/text/android/style/ShadowSpan;->offsetX:F
 
-    .line 31
+    .line 28
     iput p3, p0, Landroidx/compose/ui/text/android/style/ShadowSpan;->offsetY:F
 
-    .line 32
+    .line 29
     iput p4, p0, Landroidx/compose/ui/text/android/style/ShadowSpan;->radius:F
 
     return-void
@@ -77,7 +87,7 @@
 .method public final getColor()I
     .locals 0
 
-    .line 29
+    .line 26
     iget p0, p0, Landroidx/compose/ui/text/android/style/ShadowSpan;->color:I
 
     return p0
@@ -86,7 +96,7 @@
 .method public final getOffsetX()F
     .locals 0
 
-    .line 30
+    .line 27
     iget p0, p0, Landroidx/compose/ui/text/android/style/ShadowSpan;->offsetX:F
 
     return p0
@@ -95,7 +105,7 @@
 .method public final getOffsetY()F
     .locals 0
 
-    .line 31
+    .line 28
     iget p0, p0, Landroidx/compose/ui/text/android/style/ShadowSpan;->offsetY:F
 
     return p0
@@ -104,7 +114,7 @@
 .method public final getRadius()F
     .locals 0
 
-    .line 32
+    .line 29
     iget p0, p0, Landroidx/compose/ui/text/android/style/ShadowSpan;->radius:F
 
     return p0
@@ -113,11 +123,7 @@
 .method public updateDrawState(Landroid/text/TextPaint;)V
     .locals 3
 
-    const-string/jumbo v0, "tp"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 35
+    .line 32
     iget v0, p0, Landroidx/compose/ui/text/android/style/ShadowSpan;->radius:F
 
     iget v1, p0, Landroidx/compose/ui/text/android/style/ShadowSpan;->offsetX:F

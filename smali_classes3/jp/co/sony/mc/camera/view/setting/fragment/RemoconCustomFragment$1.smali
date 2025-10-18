@@ -22,7 +22,7 @@
 .method constructor <init>(Ljp/co/sony/mc/camera/view/setting/fragment/RemoconCustomFragment;)V
     .locals 0
 
-    .line 92
+    .line 94
     iput-object p1, p0, Ljp/co/sony/mc/camera/view/setting/fragment/RemoconCustomFragment$1;->this$0:Ljp/co/sony/mc/camera/view/setting/fragment/RemoconCustomFragment;
 
     invoke-direct {p0}, Landroid/content/BroadcastReceiver;-><init>()V
@@ -35,12 +35,12 @@
 .method public onReceive(Landroid/content/Context;Landroid/content/Intent;)V
     .locals 2
 
-    .line 96
+    .line 98
     invoke-virtual {p2}, Landroid/content/Intent;->getAction()Ljava/lang/String;
 
     move-result-object p1
 
-    .line 97
+    .line 99
     const-string v0, "android.bluetooth.adapter.extra.STATE"
 
     const/4 v1, 0x0
@@ -49,7 +49,7 @@
 
     move-result p2
 
-    .line 98
+    .line 100
     const-string v0, "android.bluetooth.adapter.action.STATE_CHANGED"
 
     invoke-virtual {v0, p1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
@@ -62,7 +62,7 @@
 
     if-ne p1, p2, :cond_0
 
-    .line 100
+    .line 102
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/setting/fragment/RemoconCustomFragment$1;->this$0:Ljp/co/sony/mc/camera/view/setting/fragment/RemoconCustomFragment;
 
     invoke-static {p0}, Ljp/co/sony/mc/camera/view/setting/fragment/RemoconCustomFragment;->-$$Nest$fgetmRemoconMenuActivity(Ljp/co/sony/mc/camera/view/setting/fragment/RemoconCustomFragment;)Ljp/co/sony/mc/camera/RemoconMenuActivity;

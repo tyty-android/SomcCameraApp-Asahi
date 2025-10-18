@@ -25,7 +25,7 @@
 .method constructor <init>(Ljp/co/sony/mc/camera/view/setting/fragment/CameraSettingsFragment;)V
     .locals 0
 
-    .line 162
+    .line 166
     iput-object p1, p0, Ljp/co/sony/mc/camera/view/setting/fragment/CameraSettingsFragment$4;->this$0:Ljp/co/sony/mc/camera/view/setting/fragment/CameraSettingsFragment;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -51,7 +51,7 @@
 
     const/16 p0, 0x8
 
-    .line 167
+    .line 171
     invoke-virtual {p2, p0}, Landroid/view/View;->sendAccessibilityEvent(I)V
 
     :cond_0

@@ -13,6 +13,10 @@
     }
 .end annotation
 
+.annotation runtime Lkotlin/Deprecated;
+    message = "Material\'s Swipeable has been replaced by Foundation\'s AnchoredDraggable APIs. Please see developer.android.com for an overview of the changes and a migration guide."
+.end annotation
+
 .annotation runtime Lkotlin/Metadata;
     d1 = {
         "\u0000*\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0000\n\u0002\u0008\u0003\n\u0002\u0010\u0007\n\u0002\u0008\u0008\n\u0002\u0010\u000b\n\u0002\u0008\u0002\n\u0002\u0010\u0008\n\u0000\n\u0002\u0010\u000e\n\u0000\u0008\u0007\u0018\u0000*\u0004\u0008\u0000\u0010\u00012\u00020\u0002B\u001d\u0012\u0006\u0010\u0003\u001a\u00028\u0000\u0012\u0006\u0010\u0004\u001a\u00028\u0000\u0012\u0006\u0010\u0005\u001a\u00020\u0006\u00a2\u0006\u0002\u0010\u0007J\u0013\u0010\u000e\u001a\u00020\u000f2\u0008\u0010\u0010\u001a\u0004\u0018\u00010\u0002H\u0096\u0002J\u0008\u0010\u0011\u001a\u00020\u0012H\u0016J\u0008\u0010\u0013\u001a\u00020\u0014H\u0016R\u0011\u0010\u0005\u001a\u00020\u0006\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\u0008\u0010\tR\u0013\u0010\u0003\u001a\u00028\u0000\u00a2\u0006\n\n\u0002\u0010\u000c\u001a\u0004\u0008\n\u0010\u000bR\u0013\u0010\u0004\u001a\u00028\u0000\u00a2\u0006\n\n\u0002\u0010\u000c\u001a\u0004\u0008\r\u0010\u000b\u00a8\u0006\u0015"
@@ -90,16 +94,16 @@
         }
     .end annotation
 
-    .line 428
+    .line 433
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 431
+    .line 437
     iput-object p1, p0, Landroidx/compose/material/SwipeProgress;->from:Ljava/lang/Object;
 
-    .line 432
+    .line 438
     iput-object p2, p0, Landroidx/compose/material/SwipeProgress;->to:Ljava/lang/Object;
 
-    .line 434
+    .line 440
     iput p3, p0, Landroidx/compose/material/SwipeProgress;->fraction:F
 
     return-void
@@ -116,7 +120,7 @@
 
     return v0
 
-    .line 438
+    .line 444
     :cond_0
     instance-of v1, p1, Landroidx/compose/material/SwipeProgress;
 
@@ -126,7 +130,7 @@
 
     return v2
 
-    .line 440
+    .line 446
     :cond_1
     iget-object v1, p0, Landroidx/compose/material/SwipeProgress;->from:Ljava/lang/Object;
 
@@ -142,7 +146,7 @@
 
     return v2
 
-    .line 441
+    .line 447
     :cond_2
     iget-object v1, p0, Landroidx/compose/material/SwipeProgress;->to:Ljava/lang/Object;
 
@@ -156,7 +160,7 @@
 
     return v2
 
-    .line 442
+    .line 448
     :cond_3
     iget p0, p0, Landroidx/compose/material/SwipeProgress;->fraction:F
 
@@ -175,7 +179,7 @@
 .method public final getFraction()F
     .locals 0
 
-    .line 434
+    .line 440
     iget p0, p0, Landroidx/compose/material/SwipeProgress;->fraction:F
 
     return p0
@@ -189,7 +193,7 @@
         }
     .end annotation
 
-    .line 431
+    .line 437
     iget-object p0, p0, Landroidx/compose/material/SwipeProgress;->from:Ljava/lang/Object;
 
     return-object p0
@@ -203,7 +207,7 @@
         }
     .end annotation
 
-    .line 432
+    .line 438
     iget-object p0, p0, Landroidx/compose/material/SwipeProgress;->to:Ljava/lang/Object;
 
     return-object p0
@@ -212,7 +216,7 @@
 .method public hashCode()I
     .locals 3
 
-    .line 448
+    .line 454
     iget-object v0, p0, Landroidx/compose/material/SwipeProgress;->from:Ljava/lang/Object;
 
     const/4 v1, 0x0
@@ -231,7 +235,7 @@
     :goto_0
     mul-int/lit8 v0, v0, 0x1f
 
-    .line 449
+    .line 455
     iget-object v2, p0, Landroidx/compose/material/SwipeProgress;->to:Ljava/lang/Object;
 
     if-eqz v2, :cond_1
@@ -245,7 +249,7 @@
 
     mul-int/lit8 v0, v0, 0x1f
 
-    .line 450
+    .line 456
     iget p0, p0, Landroidx/compose/material/SwipeProgress;->fraction:F
 
     invoke-static {p0}, Ljava/lang/Float;->hashCode(F)I
@@ -260,7 +264,7 @@
 .method public toString()Ljava/lang/String;
     .locals 2
 
-    .line 455
+    .line 461
     new-instance v0, Ljava/lang/StringBuilder;
 
     const-string v1, "SwipeProgress(from="

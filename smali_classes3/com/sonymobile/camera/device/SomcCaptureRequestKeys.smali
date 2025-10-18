@@ -112,6 +112,26 @@
     .end annotation
 .end field
 
+.field public static final SONYMOBILE_CONTROL_AUTO_FRAMING_ORIENTATION:Landroid/hardware/camera2/CaptureRequest$Key;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Landroid/hardware/camera2/CaptureRequest$Key<",
+            "Ljava/lang/Integer;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field public static final SONYMOBILE_CONTROL_AUTO_FRAMING_SIZE:Landroid/hardware/camera2/CaptureRequest$Key;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Landroid/hardware/camera2/CaptureRequest$Key<",
+            "Ljava/lang/Float;",
+            ">;"
+        }
+    .end annotation
+.end field
+
 .field public static final SONYMOBILE_CONTROL_AWB_COLOR_COMPENSATION_AB:Landroid/hardware/camera2/CaptureRequest$Key;
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -205,6 +225,26 @@
         value = {
             "Landroid/hardware/camera2/CaptureRequest$Key<",
             "Ljava/lang/Float;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field public static final SONYMOBILE_CONTROL_FRAMING_ASSIST_OBJECT_POSITION_MODE:Landroid/hardware/camera2/CaptureRequest$Key;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Landroid/hardware/camera2/CaptureRequest$Key<",
+            "Ljava/lang/Integer;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field public static final SONYMOBILE_CONTROL_FRAMING_MODE:Landroid/hardware/camera2/CaptureRequest$Key;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Landroid/hardware/camera2/CaptureRequest$Key<",
+            "Ljava/lang/Integer;",
             ">;"
         }
     .end annotation
@@ -462,6 +502,16 @@
 .end field
 
 .field public static final SONYMOBILE_CONTROL_VIDEO_STREAM_LUT_MODE:Landroid/hardware/camera2/CaptureRequest$Key;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Landroid/hardware/camera2/CaptureRequest$Key<",
+            "Ljava/lang/Integer;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field public static final SONYMOBILE_CONTROL_VOLUME_DISTORTION_CORRECTION_MODE:Landroid/hardware/camera2/CaptureRequest$Key;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Landroid/hardware/camera2/CaptureRequest$Key<",
@@ -1200,636 +1250,696 @@
 
     sput-object v0, Lcom/sonymobile/camera/device/SomcCaptureRequestKeys;->SONYMOBILE_CONTROL_MULTI_FRAME_NR_MODE:Landroid/hardware/camera2/CaptureRequest$Key;
 
-    .line 953
+    .line 969
     const-string v0, "com.sonymobile.control.videoStabilizationMode"
 
     sget-object v3, Ljava/lang/Integer;->TYPE:Ljava/lang/Class;
 
-    .line 954
+    .line 970
     invoke-static {v0, v3}, Lcom/sonymobile/camera/device/SomcCaptureRequestKeys;->keyConstructor(Ljava/lang/String;Ljava/lang/Class;)Landroid/hardware/camera2/CaptureRequest$Key;
 
     move-result-object v0
 
     sput-object v0, Lcom/sonymobile/camera/device/SomcCaptureRequestKeys;->SONYMOBILE_CONTROL_VIDEO_STABILIZATION_MODE:Landroid/hardware/camera2/CaptureRequest$Key;
 
-    .line 979
+    .line 995
     const-string v0, "com.sonymobile.control.intelligentActiveTrigger"
 
     sget-object v3, Ljava/lang/Integer;->TYPE:Ljava/lang/Class;
 
-    .line 980
+    .line 996
     invoke-static {v0, v3}, Lcom/sonymobile/camera/device/SomcCaptureRequestKeys;->keyConstructor(Ljava/lang/String;Ljava/lang/Class;)Landroid/hardware/camera2/CaptureRequest$Key;
 
     move-result-object v0
 
     sput-object v0, Lcom/sonymobile/camera/device/SomcCaptureRequestKeys;->SONYMOBILE_CONTROL_INTELLIGENT_ACTIVE_TRIGGER:Landroid/hardware/camera2/CaptureRequest$Key;
 
-    .line 1001
+    .line 1017
     const-string v0, "com.sonymobile.control.highQualitySnapshotMode"
 
     sget-object v3, Ljava/lang/Integer;->TYPE:Ljava/lang/Class;
 
-    .line 1002
+    .line 1018
     invoke-static {v0, v3}, Lcom/sonymobile/camera/device/SomcCaptureRequestKeys;->keyConstructor(Ljava/lang/String;Ljava/lang/Class;)Landroid/hardware/camera2/CaptureRequest$Key;
 
     move-result-object v0
 
     sput-object v0, Lcom/sonymobile/camera/device/SomcCaptureRequestKeys;->SONYMOBILE_CONTROL_HIGH_QUALITY_SNAPSHOT_MODE:Landroid/hardware/camera2/CaptureRequest$Key;
 
-    .line 1018
+    .line 1034
     const-string v0, "com.sonymobile.control.vagueControlMode"
 
     sget-object v3, Ljava/lang/Integer;->TYPE:Ljava/lang/Class;
 
-    .line 1019
+    .line 1035
     invoke-static {v0, v3}, Lcom/sonymobile/camera/device/SomcCaptureRequestKeys;->keyConstructor(Ljava/lang/String;Ljava/lang/Class;)Landroid/hardware/camera2/CaptureRequest$Key;
 
     move-result-object v0
 
     sput-object v0, Lcom/sonymobile/camera/device/SomcCaptureRequestKeys;->SONYMOBILE_CONTROL_VAGUE_CONTROL_MODE:Landroid/hardware/camera2/CaptureRequest$Key;
 
-    .line 1037
+    .line 1053
     const-string v0, "com.sonymobile.control.superSlowMode"
 
     sget-object v3, Ljava/lang/Integer;->TYPE:Ljava/lang/Class;
 
-    .line 1038
+    .line 1054
     invoke-static {v0, v3}, Lcom/sonymobile/camera/device/SomcCaptureRequestKeys;->keyConstructor(Ljava/lang/String;Ljava/lang/Class;)Landroid/hardware/camera2/CaptureRequest$Key;
 
     move-result-object v0
 
     sput-object v0, Lcom/sonymobile/camera/device/SomcCaptureRequestKeys;->SONYMOBILE_CONTROL_SUPER_SLOW_MODE:Landroid/hardware/camera2/CaptureRequest$Key;
 
-    .line 1091
+    .line 1107
     const-string v0, "com.sonymobile.control.colorToneProfile"
 
     sget-object v3, Ljava/lang/Integer;->TYPE:Ljava/lang/Class;
 
-    .line 1092
+    .line 1108
     invoke-static {v0, v3}, Lcom/sonymobile/camera/device/SomcCaptureRequestKeys;->keyConstructor(Ljava/lang/String;Ljava/lang/Class;)Landroid/hardware/camera2/CaptureRequest$Key;
 
     move-result-object v0
 
     sput-object v0, Lcom/sonymobile/camera/device/SomcCaptureRequestKeys;->SONYMOBILE_CONTROL_COLOR_TONE_PROFILE:Landroid/hardware/camera2/CaptureRequest$Key;
 
-    .line 1132
+    .line 1148
     const-string v0, "com.sonymobile.control.cinemaProfile"
 
     sget-object v3, Ljava/lang/Integer;->TYPE:Ljava/lang/Class;
 
-    .line 1133
+    .line 1149
     invoke-static {v0, v3}, Lcom/sonymobile/camera/device/SomcCaptureRequestKeys;->keyConstructor(Ljava/lang/String;Ljava/lang/Class;)Landroid/hardware/camera2/CaptureRequest$Key;
 
     move-result-object v0
 
     sput-object v0, Lcom/sonymobile/camera/device/SomcCaptureRequestKeys;->SONYMOBILE_CONTROL_CINEMA_PROFILE:Landroid/hardware/camera2/CaptureRequest$Key;
 
-    .line 1171
+    .line 1187
     const-string v0, "com.sonymobile.control.wbMode"
 
     sget-object v3, Ljava/lang/Integer;->TYPE:Ljava/lang/Class;
 
-    .line 1172
+    .line 1188
     invoke-static {v0, v3}, Lcom/sonymobile/camera/device/SomcCaptureRequestKeys;->keyConstructor(Ljava/lang/String;Ljava/lang/Class;)Landroid/hardware/camera2/CaptureRequest$Key;
 
     move-result-object v0
 
     sput-object v0, Lcom/sonymobile/camera/device/SomcCaptureRequestKeys;->SONYMOBILE_CONTROL_WB_MODE:Landroid/hardware/camera2/CaptureRequest$Key;
 
-    .line 1189
+    .line 1205
     const-string v0, "com.sonymobile.control.wbCustomTrigger"
 
     sget-object v3, Ljava/lang/Integer;->TYPE:Ljava/lang/Class;
 
-    .line 1190
+    .line 1206
     invoke-static {v0, v3}, Lcom/sonymobile/camera/device/SomcCaptureRequestKeys;->keyConstructor(Ljava/lang/String;Ljava/lang/Class;)Landroid/hardware/camera2/CaptureRequest$Key;
 
     move-result-object v0
 
     sput-object v0, Lcom/sonymobile/camera/device/SomcCaptureRequestKeys;->SONYMOBILE_CONTROL_WB_CUSTOM_TRIGGER:Landroid/hardware/camera2/CaptureRequest$Key;
 
-    .line 1209
+    .line 1225
     const-string v0, "com.sonymobile.control.snapshotPrepare"
 
     sget-object v3, Ljava/lang/Integer;->TYPE:Ljava/lang/Class;
 
-    .line 1210
+    .line 1226
     invoke-static {v0, v3}, Lcom/sonymobile/camera/device/SomcCaptureRequestKeys;->keyConstructor(Ljava/lang/String;Ljava/lang/Class;)Landroid/hardware/camera2/CaptureRequest$Key;
 
     move-result-object v0
 
     sput-object v0, Lcom/sonymobile/camera/device/SomcCaptureRequestKeys;->SONYMOBILE_CONTROL_SNAPSHOT_PREPARE:Landroid/hardware/camera2/CaptureRequest$Key;
 
-    .line 1230
+    .line 1246
     const-string v0, "com.sonymobile.control.prepareBurstTrigger"
 
     sget-object v3, Ljava/lang/Integer;->TYPE:Ljava/lang/Class;
 
-    .line 1231
+    .line 1247
     invoke-static {v0, v3}, Lcom/sonymobile/camera/device/SomcCaptureRequestKeys;->keyConstructor(Ljava/lang/String;Ljava/lang/Class;)Landroid/hardware/camera2/CaptureRequest$Key;
 
     move-result-object v0
 
     sput-object v0, Lcom/sonymobile/camera/device/SomcCaptureRequestKeys;->SONYMOBILE_CONTROL_PREPARE_BURST_TRIGGER:Landroid/hardware/camera2/CaptureRequest$Key;
 
-    .line 1253
+    .line 1269
     const-string v0, "com.sonymobile.control.targetBurstFrameRate"
 
     sget-object v3, Ljava/lang/Integer;->TYPE:Ljava/lang/Class;
 
-    .line 1254
+    .line 1270
     invoke-static {v0, v3}, Lcom/sonymobile/camera/device/SomcCaptureRequestKeys;->keyConstructor(Ljava/lang/String;Ljava/lang/Class;)Landroid/hardware/camera2/CaptureRequest$Key;
 
     move-result-object v0
 
     sput-object v0, Lcom/sonymobile/camera/device/SomcCaptureRequestKeys;->SONYMOBILE_CONTROL_TARGET_BURST_FRAME_RATE:Landroid/hardware/camera2/CaptureRequest$Key;
 
-    .line 1284
+    .line 1300
     const-string v0, "com.sonymobile.control.yuvFrameDrawMode"
 
     sget-object v3, Ljava/lang/Integer;->TYPE:Ljava/lang/Class;
 
-    .line 1285
+    .line 1301
     invoke-static {v0, v3}, Lcom/sonymobile/camera/device/SomcCaptureRequestKeys;->keyConstructor(Ljava/lang/String;Ljava/lang/Class;)Landroid/hardware/camera2/CaptureRequest$Key;
 
     move-result-object v0
 
     sput-object v0, Lcom/sonymobile/camera/device/SomcCaptureRequestKeys;->SONYMOBILE_CONTROL_YUV_FRAME_DRAW_MODE:Landroid/hardware/camera2/CaptureRequest$Key;
 
-    .line 1304
+    .line 1320
     const-string v0, "com.sonymobile.control.yuvFrameDrawOrientation"
 
     sget-object v3, Ljava/lang/Integer;->TYPE:Ljava/lang/Class;
 
-    .line 1305
+    .line 1321
     invoke-static {v0, v3}, Lcom/sonymobile/camera/device/SomcCaptureRequestKeys;->keyConstructor(Ljava/lang/String;Ljava/lang/Class;)Landroid/hardware/camera2/CaptureRequest$Key;
 
     move-result-object v0
 
     sput-object v0, Lcom/sonymobile/camera/device/SomcCaptureRequestKeys;->SONYMOBILE_CONTROL_YUV_FRAME_DRAW_ORIENTATION:Landroid/hardware/camera2/CaptureRequest$Key;
 
-    .line 1351
+    .line 1367
     const-string v0, "com.sonymobile.control.usecase"
 
     sget-object v3, Ljava/lang/Integer;->TYPE:Ljava/lang/Class;
 
-    .line 1352
+    .line 1368
     invoke-static {v0, v3}, Lcom/sonymobile/camera/device/SomcCaptureRequestKeys;->keyConstructor(Ljava/lang/String;Ljava/lang/Class;)Landroid/hardware/camera2/CaptureRequest$Key;
 
     move-result-object v0
 
     sput-object v0, Lcom/sonymobile/camera/device/SomcCaptureRequestKeys;->SONYMOBILE_CONTROL_USECASE:Landroid/hardware/camera2/CaptureRequest$Key;
 
-    .line 1373
+    .line 1389
     const-string v0, "com.sonymobile.control.videoMultiFrameHdrMode"
 
     sget-object v3, Ljava/lang/Integer;->TYPE:Ljava/lang/Class;
 
-    .line 1374
+    .line 1390
     invoke-static {v0, v3}, Lcom/sonymobile/camera/device/SomcCaptureRequestKeys;->keyConstructor(Ljava/lang/String;Ljava/lang/Class;)Landroid/hardware/camera2/CaptureRequest$Key;
 
     move-result-object v0
 
     sput-object v0, Lcom/sonymobile/camera/device/SomcCaptureRequestKeys;->SONYMOBILE_CONTROL_VIDEO_MULTI_FRAME_HDR_MODE:Landroid/hardware/camera2/CaptureRequest$Key;
 
-    .line 1481
+    .line 1497
     const-string v0, "com.sonymobile.control.videoSensitivitySmoothingMode"
 
     sget-object v3, Ljava/lang/Integer;->TYPE:Ljava/lang/Class;
 
-    .line 1482
+    .line 1498
     invoke-static {v0, v3}, Lcom/sonymobile/camera/device/SomcCaptureRequestKeys;->keyConstructor(Ljava/lang/String;Ljava/lang/Class;)Landroid/hardware/camera2/CaptureRequest$Key;
 
     move-result-object v0
 
     sput-object v0, Lcom/sonymobile/camera/device/SomcCaptureRequestKeys;->SONYMOBILE_CONTROL_VIDEO_SENSITIVITY_SMOOTHING_MODE:Landroid/hardware/camera2/CaptureRequest$Key;
 
-    .line 1511
+    .line 1527
     const-string v0, "com.sonymobile.control.afSpeed"
 
     sget-object v3, Ljava/lang/Integer;->TYPE:Ljava/lang/Class;
 
-    .line 1512
+    .line 1528
     invoke-static {v0, v3}, Lcom/sonymobile/camera/device/SomcCaptureRequestKeys;->keyConstructor(Ljava/lang/String;Ljava/lang/Class;)Landroid/hardware/camera2/CaptureRequest$Key;
 
     move-result-object v0
 
     sput-object v0, Lcom/sonymobile/camera/device/SomcCaptureRequestKeys;->SONYMOBILE_CONTROL_AF_SPEED:Landroid/hardware/camera2/CaptureRequest$Key;
 
-    .line 1532
+    .line 1548
     const-string v0, "com.sonymobile.control.productReviewMode"
 
     sget-object v3, Ljava/lang/Integer;->TYPE:Ljava/lang/Class;
 
-    .line 1533
+    .line 1549
     invoke-static {v0, v3}, Lcom/sonymobile/camera/device/SomcCaptureRequestKeys;->keyConstructor(Ljava/lang/String;Ljava/lang/Class;)Landroid/hardware/camera2/CaptureRequest$Key;
 
     move-result-object v0
 
     sput-object v0, Lcom/sonymobile/camera/device/SomcCaptureRequestKeys;->SONYMOBILE_CONTROL_PRODUCT_REVIEW_MODE:Landroid/hardware/camera2/CaptureRequest$Key;
 
-    .line 1561
+    .line 1582
     const-string v0, "com.sonymobile.control.lowLightShotMode"
 
     sget-object v3, Ljava/lang/Integer;->TYPE:Ljava/lang/Class;
 
-    .line 1562
+    .line 1583
     invoke-static {v0, v3}, Lcom/sonymobile/camera/device/SomcCaptureRequestKeys;->keyConstructor(Ljava/lang/String;Ljava/lang/Class;)Landroid/hardware/camera2/CaptureRequest$Key;
 
     move-result-object v0
 
     sput-object v0, Lcom/sonymobile/camera/device/SomcCaptureRequestKeys;->SONYMOBILE_CONTROL_LOW_LIGHT_SHOT_MODE:Landroid/hardware/camera2/CaptureRequest$Key;
 
-    .line 1591
+    .line 1612
     const-string v0, "com.sonymobile.control.fps"
 
     sget-object v3, Ljava/lang/Float;->TYPE:Ljava/lang/Class;
 
-    .line 1592
+    .line 1613
     invoke-static {v0, v3}, Lcom/sonymobile/camera/device/SomcCaptureRequestKeys;->keyConstructor(Ljava/lang/String;Ljava/lang/Class;)Landroid/hardware/camera2/CaptureRequest$Key;
 
     move-result-object v0
 
     sput-object v0, Lcom/sonymobile/camera/device/SomcCaptureRequestKeys;->SONYMOBILE_CONTROL_FPS:Landroid/hardware/camera2/CaptureRequest$Key;
 
-    .line 1602
+    .line 1623
     const-string v0, "com.sonymobile.control.bokehStrength"
 
     sget-object v3, Ljava/lang/Float;->TYPE:Ljava/lang/Class;
 
-    .line 1603
+    .line 1624
     invoke-static {v0, v3}, Lcom/sonymobile/camera/device/SomcCaptureRequestKeys;->keyConstructor(Ljava/lang/String;Ljava/lang/Class;)Landroid/hardware/camera2/CaptureRequest$Key;
 
     move-result-object v0
 
     sput-object v0, Lcom/sonymobile/camera/device/SomcCaptureRequestKeys;->SONYMOBILE_CONTROL_BOKEH_STRENGTH:Landroid/hardware/camera2/CaptureRequest$Key;
 
-    .line 1625
+    .line 1646
     const-string v0, "com.sonymobile.control.hybridZoomMode"
 
     sget-object v3, Ljava/lang/Integer;->TYPE:Ljava/lang/Class;
 
-    .line 1626
+    .line 1647
     invoke-static {v0, v3}, Lcom/sonymobile/camera/device/SomcCaptureRequestKeys;->keyConstructor(Ljava/lang/String;Ljava/lang/Class;)Landroid/hardware/camera2/CaptureRequest$Key;
 
     move-result-object v0
 
     sput-object v0, Lcom/sonymobile/camera/device/SomcCaptureRequestKeys;->SONYMOBILE_CONTROL_HYBRID_ZOOM_MODE:Landroid/hardware/camera2/CaptureRequest$Key;
 
-    .line 1644
+    .line 1665
     const-string v0, "com.sonymobile.control.previewStreamLutMode"
 
     sget-object v3, Ljava/lang/Integer;->TYPE:Ljava/lang/Class;
 
-    .line 1645
+    .line 1666
     invoke-static {v0, v3}, Lcom/sonymobile/camera/device/SomcCaptureRequestKeys;->keyConstructor(Ljava/lang/String;Ljava/lang/Class;)Landroid/hardware/camera2/CaptureRequest$Key;
 
     move-result-object v0
 
     sput-object v0, Lcom/sonymobile/camera/device/SomcCaptureRequestKeys;->SONYMOBILE_CONTROL_PREVIEW_STREAM_LUT_MODE:Landroid/hardware/camera2/CaptureRequest$Key;
 
-    .line 1662
+    .line 1683
     const-string v0, "com.sonymobile.control.videoStreamLutMode"
 
     sget-object v3, Ljava/lang/Integer;->TYPE:Ljava/lang/Class;
 
-    .line 1663
+    .line 1684
     invoke-static {v0, v3}, Lcom/sonymobile/camera/device/SomcCaptureRequestKeys;->keyConstructor(Ljava/lang/String;Ljava/lang/Class;)Landroid/hardware/camera2/CaptureRequest$Key;
 
     move-result-object v0
 
     sput-object v0, Lcom/sonymobile/camera/device/SomcCaptureRequestKeys;->SONYMOBILE_CONTROL_VIDEO_STREAM_LUT_MODE:Landroid/hardware/camera2/CaptureRequest$Key;
 
-    .line 1677
+    .line 1698
     const-string v0, "com.sonymobile.control.previewStreamLutData"
 
-    .line 1678
+    .line 1699
     invoke-static {v0, v2}, Lcom/sonymobile/camera/device/SomcCaptureRequestKeys;->keyConstructor(Ljava/lang/String;Ljava/lang/Class;)Landroid/hardware/camera2/CaptureRequest$Key;
 
     move-result-object v0
 
     sput-object v0, Lcom/sonymobile/camera/device/SomcCaptureRequestKeys;->SONYMOBILE_CONTROL_PREVIEW_STREAM_LUT_DATA:Landroid/hardware/camera2/CaptureRequest$Key;
 
-    .line 1691
+    .line 1712
     const-string v0, "com.sonymobile.control.videoStreamLutData"
 
-    .line 1692
+    .line 1713
     invoke-static {v0, v2}, Lcom/sonymobile/camera/device/SomcCaptureRequestKeys;->keyConstructor(Ljava/lang/String;Ljava/lang/Class;)Landroid/hardware/camera2/CaptureRequest$Key;
 
     move-result-object v0
 
     sput-object v0, Lcom/sonymobile/camera/device/SomcCaptureRequestKeys;->SONYMOBILE_CONTROL_VIDEO_STREAM_LUT_DATA:Landroid/hardware/camera2/CaptureRequest$Key;
 
-    .line 1705
+    .line 1726
     const-string v0, "com.sonymobile.control.videoOrientation"
 
     sget-object v2, Ljava/lang/Integer;->TYPE:Ljava/lang/Class;
 
-    .line 1706
+    .line 1727
     invoke-static {v0, v2}, Lcom/sonymobile/camera/device/SomcCaptureRequestKeys;->keyConstructor(Ljava/lang/String;Ljava/lang/Class;)Landroid/hardware/camera2/CaptureRequest$Key;
 
     move-result-object v0
 
     sput-object v0, Lcom/sonymobile/camera/device/SomcCaptureRequestKeys;->SONYMOBILE_CONTROL_VIDEO_ORIENTATION:Landroid/hardware/camera2/CaptureRequest$Key;
 
-    .line 1740
+    .line 1762
     const-string v0, "com.sonymobile.control.variableFpsVideoMode"
 
     sget-object v2, Ljava/lang/Integer;->TYPE:Ljava/lang/Class;
 
-    .line 1741
+    .line 1763
     invoke-static {v0, v2}, Lcom/sonymobile/camera/device/SomcCaptureRequestKeys;->keyConstructor(Ljava/lang/String;Ljava/lang/Class;)Landroid/hardware/camera2/CaptureRequest$Key;
 
     move-result-object v0
 
     sput-object v0, Lcom/sonymobile/camera/device/SomcCaptureRequestKeys;->SONYMOBILE_CONTROL_VARIABLE_FPS_VIDEO_MODE:Landroid/hardware/camera2/CaptureRequest$Key;
 
-    .line 1776
+    .line 1786
+    const-string v0, "com.sonymobile.control.framingMode"
+
+    sget-object v2, Ljava/lang/Integer;->TYPE:Ljava/lang/Class;
+
+    .line 1787
+    invoke-static {v0, v2}, Lcom/sonymobile/camera/device/SomcCaptureRequestKeys;->keyConstructor(Ljava/lang/String;Ljava/lang/Class;)Landroid/hardware/camera2/CaptureRequest$Key;
+
+    move-result-object v0
+
+    sput-object v0, Lcom/sonymobile/camera/device/SomcCaptureRequestKeys;->SONYMOBILE_CONTROL_FRAMING_MODE:Landroid/hardware/camera2/CaptureRequest$Key;
+
+    .line 1802
+    const-string v0, "com.sonymobile.control.autoFramingSize"
+
+    sget-object v2, Ljava/lang/Float;->TYPE:Ljava/lang/Class;
+
+    .line 1803
+    invoke-static {v0, v2}, Lcom/sonymobile/camera/device/SomcCaptureRequestKeys;->keyConstructor(Ljava/lang/String;Ljava/lang/Class;)Landroid/hardware/camera2/CaptureRequest$Key;
+
+    move-result-object v0
+
+    sput-object v0, Lcom/sonymobile/camera/device/SomcCaptureRequestKeys;->SONYMOBILE_CONTROL_AUTO_FRAMING_SIZE:Landroid/hardware/camera2/CaptureRequest$Key;
+
+    .line 1821
+    const-string v0, "com.sonymobile.control.autoFramingOrientation"
+
+    sget-object v2, Ljava/lang/Integer;->TYPE:Ljava/lang/Class;
+
+    .line 1822
+    invoke-static {v0, v2}, Lcom/sonymobile/camera/device/SomcCaptureRequestKeys;->keyConstructor(Ljava/lang/String;Ljava/lang/Class;)Landroid/hardware/camera2/CaptureRequest$Key;
+
+    move-result-object v0
+
+    sput-object v0, Lcom/sonymobile/camera/device/SomcCaptureRequestKeys;->SONYMOBILE_CONTROL_AUTO_FRAMING_ORIENTATION:Landroid/hardware/camera2/CaptureRequest$Key;
+
+    .line 1841
+    const-string v0, "com.sonymobile.control.framingAssistObjectPositionMode"
+
+    sget-object v2, Ljava/lang/Integer;->TYPE:Ljava/lang/Class;
+
+    .line 1842
+    invoke-static {v0, v2}, Lcom/sonymobile/camera/device/SomcCaptureRequestKeys;->keyConstructor(Ljava/lang/String;Ljava/lang/Class;)Landroid/hardware/camera2/CaptureRequest$Key;
+
+    move-result-object v0
+
+    sput-object v0, Lcom/sonymobile/camera/device/SomcCaptureRequestKeys;->SONYMOBILE_CONTROL_FRAMING_ASSIST_OBJECT_POSITION_MODE:Landroid/hardware/camera2/CaptureRequest$Key;
+
+    .line 1868
+    const-string v0, "com.sonymobile.control.volumeDistortionCorrectionMode"
+
+    sget-object v2, Ljava/lang/Integer;->TYPE:Ljava/lang/Class;
+
+    .line 1869
+    invoke-static {v0, v2}, Lcom/sonymobile/camera/device/SomcCaptureRequestKeys;->keyConstructor(Ljava/lang/String;Ljava/lang/Class;)Landroid/hardware/camera2/CaptureRequest$Key;
+
+    move-result-object v0
+
+    sput-object v0, Lcom/sonymobile/camera/device/SomcCaptureRequestKeys;->SONYMOBILE_CONTROL_VOLUME_DISTORTION_CORRECTION_MODE:Landroid/hardware/camera2/CaptureRequest$Key;
+
+    .line 1904
     const-string v0, "com.sonymobile.scaler.focusMagnificationRatio"
 
     sget-object v2, Ljava/lang/Float;->TYPE:Ljava/lang/Class;
 
-    .line 1777
+    .line 1905
     invoke-static {v0, v2}, Lcom/sonymobile/camera/device/SomcCaptureRequestKeys;->keyConstructor(Ljava/lang/String;Ljava/lang/Class;)Landroid/hardware/camera2/CaptureRequest$Key;
 
     move-result-object v0
 
     sput-object v0, Lcom/sonymobile/camera/device/SomcCaptureRequestKeys;->SONYMOBILE_SCALER_FOCUS_MAGNIFICATION_RATIO:Landroid/hardware/camera2/CaptureRequest$Key;
 
-    .line 1811
+    .line 1939
     const-string v0, "com.sonymobile.scaler.focusMagnificationSize"
 
-    .line 1812
+    .line 1940
     invoke-static {v0, v1}, Lcom/sonymobile/camera/device/SomcCaptureRequestKeys;->keyConstructor(Ljava/lang/String;Ljava/lang/Class;)Landroid/hardware/camera2/CaptureRequest$Key;
 
     move-result-object v0
 
     sput-object v0, Lcom/sonymobile/camera/device/SomcCaptureRequestKeys;->SONYMOBILE_SCALER_FOCUS_MAGNIFICATION_SIZE:Landroid/hardware/camera2/CaptureRequest$Key;
 
-    .line 1833
+    .line 1961
     const-string v0, "com.sonymobile.scaler.focusMagnificationPosition"
 
-    .line 1834
+    .line 1962
     invoke-static {v0, v1}, Lcom/sonymobile/camera/device/SomcCaptureRequestKeys;->keyConstructor(Ljava/lang/String;Ljava/lang/Class;)Landroid/hardware/camera2/CaptureRequest$Key;
 
     move-result-object v0
 
     sput-object v0, Lcom/sonymobile/camera/device/SomcCaptureRequestKeys;->SONYMOBILE_SCALER_FOCUS_MAGNIFICATION_POSITION:Landroid/hardware/camera2/CaptureRequest$Key;
 
-    .line 1867
+    .line 1995
     const-string v0, "com.sonymobile.scaler.superResolutionZoomMode"
 
     sget-object v2, Ljava/lang/Integer;->TYPE:Ljava/lang/Class;
 
-    .line 1868
+    .line 1996
     invoke-static {v0, v2}, Lcom/sonymobile/camera/device/SomcCaptureRequestKeys;->keyConstructor(Ljava/lang/String;Ljava/lang/Class;)Landroid/hardware/camera2/CaptureRequest$Key;
 
     move-result-object v0
 
     sput-object v0, Lcom/sonymobile/camera/device/SomcCaptureRequestKeys;->SONYMOBILE_SCALER_SUPER_RESOLUTION_ZOOM_MODE:Landroid/hardware/camera2/CaptureRequest$Key;
 
-    .line 1990
+    .line 2118
     const-string v0, "com.sonymobile.sensor.sensitivityHint"
 
     sget-object v2, Ljava/lang/Integer;->TYPE:Ljava/lang/Class;
 
-    .line 1991
+    .line 2119
     invoke-static {v0, v2}, Lcom/sonymobile/camera/device/SomcCaptureRequestKeys;->keyConstructor(Ljava/lang/String;Ljava/lang/Class;)Landroid/hardware/camera2/CaptureRequest$Key;
 
     move-result-object v0
 
     sput-object v0, Lcom/sonymobile/camera/device/SomcCaptureRequestKeys;->SONYMOBILE_SENSOR_SENSITIVITY_HINT:Landroid/hardware/camera2/CaptureRequest$Key;
 
-    .line 2094
+    .line 2222
     const-string v0, "com.sonymobile.sensor.exposureTimeHint"
 
     sget-object v2, Ljava/lang/Long;->TYPE:Ljava/lang/Class;
 
-    .line 2095
+    .line 2223
     invoke-static {v0, v2}, Lcom/sonymobile/camera/device/SomcCaptureRequestKeys;->keyConstructor(Ljava/lang/String;Ljava/lang/Class;)Landroid/hardware/camera2/CaptureRequest$Key;
 
     move-result-object v0
 
     sput-object v0, Lcom/sonymobile/camera/device/SomcCaptureRequestKeys;->SONYMOBILE_SENSOR_EXPOSURE_TIME_HINT:Landroid/hardware/camera2/CaptureRequest$Key;
 
-    .line 2114
+    .line 2242
     const-string v0, "com.sonymobile.lens.focalLength"
 
     sget-object v2, Ljava/lang/Float;->TYPE:Ljava/lang/Class;
 
-    .line 2115
+    .line 2243
     invoke-static {v0, v2}, Lcom/sonymobile/camera/device/SomcCaptureRequestKeys;->keyConstructor(Ljava/lang/String;Ljava/lang/Class;)Landroid/hardware/camera2/CaptureRequest$Key;
 
     move-result-object v0
 
     sput-object v0, Lcom/sonymobile/camera/device/SomcCaptureRequestKeys;->SONYMOBILE_LENS_FOCAL_LENGTH:Landroid/hardware/camera2/CaptureRequest$Key;
 
-    .line 2142
+    .line 2270
     const-string v0, "com.sonymobile.lens.closeUpMode"
 
     sget-object v2, Ljava/lang/Integer;->TYPE:Ljava/lang/Class;
 
-    .line 2143
+    .line 2271
     invoke-static {v0, v2}, Lcom/sonymobile/camera/device/SomcCaptureRequestKeys;->keyConstructor(Ljava/lang/String;Ljava/lang/Class;)Landroid/hardware/camera2/CaptureRequest$Key;
 
     move-result-object v0
 
     sput-object v0, Lcom/sonymobile/camera/device/SomcCaptureRequestKeys;->SONYMOBILE_LENS_CLOSE_UP_MODE:Landroid/hardware/camera2/CaptureRequest$Key;
 
-    .line 2164
+    .line 2292
     const-string v0, "com.sonymobile.dualCamera.targetStreamSource"
 
     sget-object v2, Ljava/lang/Integer;->TYPE:Ljava/lang/Class;
 
-    .line 2165
+    .line 2293
     invoke-static {v0, v2}, Lcom/sonymobile/camera/device/SomcCaptureRequestKeys;->keyConstructor(Ljava/lang/String;Ljava/lang/Class;)Landroid/hardware/camera2/CaptureRequest$Key;
 
     move-result-object v0
 
     sput-object v0, Lcom/sonymobile/camera/device/SomcCaptureRequestKeys;->SONYMOBILE_DUAL_CAMERA_TARGET_STREAM_SOURCE:Landroid/hardware/camera2/CaptureRequest$Key;
 
-    .line 2180
+    .line 2308
     const-string v0, "com.sonymobile.dualCamera.subCropRegion"
 
     const-class v2, Landroid/graphics/Rect;
 
-    .line 2181
+    .line 2309
     invoke-static {v0, v2}, Lcom/sonymobile/camera/device/SomcCaptureRequestKeys;->keyConstructor(Ljava/lang/String;Ljava/lang/Class;)Landroid/hardware/camera2/CaptureRequest$Key;
 
     move-result-object v0
 
     sput-object v0, Lcom/sonymobile/camera/device/SomcCaptureRequestKeys;->SONYMOBILE_DUAL_CAMERA_SUB_CROP_REGION:Landroid/hardware/camera2/CaptureRequest$Key;
 
-    .line 2201
+    .line 2329
     const-string v0, "com.sonymobile.logicalMultiCamera.mode"
 
     sget-object v2, Ljava/lang/Integer;->TYPE:Ljava/lang/Class;
 
-    .line 2202
+    .line 2330
     invoke-static {v0, v2}, Lcom/sonymobile/camera/device/SomcCaptureRequestKeys;->keyConstructor(Ljava/lang/String;Ljava/lang/Class;)Landroid/hardware/camera2/CaptureRequest$Key;
 
     move-result-object v0
 
     sput-object v0, Lcom/sonymobile/camera/device/SomcCaptureRequestKeys;->SONYMOBILE_LOGICAL_MULTI_CAMERA_MODE:Landroid/hardware/camera2/CaptureRequest$Key;
 
-    .line 2216
+    .line 2344
     const-string v0, "com.sonymobile.logicalMultiCamera.bokehStrength"
 
     sget-object v2, Ljava/lang/Float;->TYPE:Ljava/lang/Class;
 
-    .line 2217
+    .line 2345
     invoke-static {v0, v2}, Lcom/sonymobile/camera/device/SomcCaptureRequestKeys;->keyConstructor(Ljava/lang/String;Ljava/lang/Class;)Landroid/hardware/camera2/CaptureRequest$Key;
 
     move-result-object v0
 
     sput-object v0, Lcom/sonymobile/camera/device/SomcCaptureRequestKeys;->SONYMOBILE_LOGICAL_MULTI_CAMERA_BOKEH_STRENGTH:Landroid/hardware/camera2/CaptureRequest$Key;
 
-    .line 2240
+    .line 2368
     const-string v0, "com.sonymobile.logicalMultiCamera.fallbackMode"
 
     sget-object v2, Ljava/lang/Integer;->TYPE:Ljava/lang/Class;
 
-    .line 2241
+    .line 2369
     invoke-static {v0, v2}, Lcom/sonymobile/camera/device/SomcCaptureRequestKeys;->keyConstructor(Ljava/lang/String;Ljava/lang/Class;)Landroid/hardware/camera2/CaptureRequest$Key;
 
     move-result-object v0
 
     sput-object v0, Lcom/sonymobile/camera/device/SomcCaptureRequestKeys;->SONYMOBILE_LOGICAL_MULTI_CAMERA_FALLBACK_MODE:Landroid/hardware/camera2/CaptureRequest$Key;
 
-    .line 2255
+    .line 2383
     const-string v0, "com.sonymobile.colorCorrection.wbRatio"
 
-    .line 2256
+    .line 2384
     invoke-static {v0, v1}, Lcom/sonymobile/camera/device/SomcCaptureRequestKeys;->keyConstructor(Ljava/lang/String;Ljava/lang/Class;)Landroid/hardware/camera2/CaptureRequest$Key;
 
     move-result-object v0
 
     sput-object v0, Lcom/sonymobile/camera/device/SomcCaptureRequestKeys;->SONYMOBILE_COLOR_CORRECTION_WB_RATIO:Landroid/hardware/camera2/CaptureRequest$Key;
 
-    .line 2272
+    .line 2400
     const-string v0, "com.sonymobile.colorCorrection.wbTemperature"
 
     sget-object v2, Ljava/lang/Float;->TYPE:Ljava/lang/Class;
 
-    .line 2273
+    .line 2401
     invoke-static {v0, v2}, Lcom/sonymobile/camera/device/SomcCaptureRequestKeys;->keyConstructor(Ljava/lang/String;Ljava/lang/Class;)Landroid/hardware/camera2/CaptureRequest$Key;
 
     move-result-object v0
 
     sput-object v0, Lcom/sonymobile/camera/device/SomcCaptureRequestKeys;->SONYMOBILE_COLOR_CORRECTION_WB_TEMPERATURE:Landroid/hardware/camera2/CaptureRequest$Key;
 
-    .line 2284
+    .line 2412
     const-string v0, "com.sonymobile.external.manualDataSpace"
 
     sget-object v2, Ljava/lang/Integer;->TYPE:Ljava/lang/Class;
 
-    .line 2285
+    .line 2413
     invoke-static {v0, v2}, Lcom/sonymobile/camera/device/SomcCaptureRequestKeys;->keyConstructor(Ljava/lang/String;Ljava/lang/Class;)Landroid/hardware/camera2/CaptureRequest$Key;
 
     move-result-object v0
 
     sput-object v0, Lcom/sonymobile/camera/device/SomcCaptureRequestKeys;->SONYMOBILE_EXTERNAL_MANUAL_DATA_SPACE:Landroid/hardware/camera2/CaptureRequest$Key;
 
-    .line 2298
+    .line 2426
     const-string v0, "com.sonymobile.depth.frameDuration"
 
     sget-object v2, Ljava/lang/Long;->TYPE:Ljava/lang/Class;
 
-    .line 2299
+    .line 2427
     invoke-static {v0, v2}, Lcom/sonymobile/camera/device/SomcCaptureRequestKeys;->keyConstructor(Ljava/lang/String;Ljava/lang/Class;)Landroid/hardware/camera2/CaptureRequest$Key;
 
     move-result-object v0
 
     sput-object v0, Lcom/sonymobile/camera/device/SomcCaptureRequestKeys;->SONYMOBILE_DEPTH_FRAME_DURATION:Landroid/hardware/camera2/CaptureRequest$Key;
 
-    .line 2312
+    .line 2440
     const-string v0, "com.sonymobile.depth.exposureTime"
 
     sget-object v2, Ljava/lang/Long;->TYPE:Ljava/lang/Class;
 
-    .line 2313
+    .line 2441
     invoke-static {v0, v2}, Lcom/sonymobile/camera/device/SomcCaptureRequestKeys;->keyConstructor(Ljava/lang/String;Ljava/lang/Class;)Landroid/hardware/camera2/CaptureRequest$Key;
 
     move-result-object v0
 
     sput-object v0, Lcom/sonymobile/camera/device/SomcCaptureRequestKeys;->SONYMOBILE_DEPTH_EXPOSURE_TIME:Landroid/hardware/camera2/CaptureRequest$Key;
 
-    .line 2325
+    .line 2453
     const-string v0, "com.sonymobile.depth.slaveControl"
 
     sget-object v2, Ljava/lang/Boolean;->TYPE:Ljava/lang/Class;
 
-    .line 2326
+    .line 2454
     invoke-static {v0, v2}, Lcom/sonymobile/camera/device/SomcCaptureRequestKeys;->keyConstructor(Ljava/lang/String;Ljava/lang/Class;)Landroid/hardware/camera2/CaptureRequest$Key;
 
     move-result-object v0
 
     sput-object v0, Lcom/sonymobile/camera/device/SomcCaptureRequestKeys;->SONYMOBILE_DEPTH_SLAVE_CONTROL:Landroid/hardware/camera2/CaptureRequest$Key;
 
-    .line 2384
+    .line 2512
     const-string v0, "com.sonymobile.depth.mode"
 
     sget-object v2, Ljava/lang/Integer;->TYPE:Ljava/lang/Class;
 
-    .line 2385
+    .line 2513
     invoke-static {v0, v2}, Lcom/sonymobile/camera/device/SomcCaptureRequestKeys;->keyConstructor(Ljava/lang/String;Ljava/lang/Class;)Landroid/hardware/camera2/CaptureRequest$Key;
 
     move-result-object v0
 
     sput-object v0, Lcom/sonymobile/camera/device/SomcCaptureRequestKeys;->SONYMOBILE_DEPTH_MODE:Landroid/hardware/camera2/CaptureRequest$Key;
 
-    .line 2397
+    .line 2525
     const-string v0, "com.sonymobile.request.shutterTimestamp"
 
     sget-object v2, Ljava/lang/Long;->TYPE:Ljava/lang/Class;
 
-    .line 2398
+    .line 2526
     invoke-static {v0, v2}, Lcom/sonymobile/camera/device/SomcCaptureRequestKeys;->keyConstructor(Ljava/lang/String;Ljava/lang/Class;)Landroid/hardware/camera2/CaptureRequest$Key;
 
     move-result-object v0
 
     sput-object v0, Lcom/sonymobile/camera/device/SomcCaptureRequestKeys;->SONYMOBILE_REQUEST_SHUTTER_TIMESTAMP:Landroid/hardware/camera2/CaptureRequest$Key;
 
-    .line 2425
+    .line 2559
     const-string v0, "com.sonymobile.calibration.mode"
 
     sget-object v2, Ljava/lang/Integer;->TYPE:Ljava/lang/Class;
 
-    .line 2426
+    .line 2560
     invoke-static {v0, v2}, Lcom/sonymobile/camera/device/SomcCaptureRequestKeys;->keyConstructor(Ljava/lang/String;Ljava/lang/Class;)Landroid/hardware/camera2/CaptureRequest$Key;
 
     move-result-object v0
 
     sput-object v0, Lcom/sonymobile/camera/device/SomcCaptureRequestKeys;->SONYMOBILE_CALIBRATION_MODE:Landroid/hardware/camera2/CaptureRequest$Key;
 
-    .line 2471
+    .line 2605
     const-string v0, "com.sonymobile.calibration.commandTrigger"
 
     sget-object v2, Ljava/lang/Integer;->TYPE:Ljava/lang/Class;
 
-    .line 2472
+    .line 2606
     invoke-static {v0, v2}, Lcom/sonymobile/camera/device/SomcCaptureRequestKeys;->keyConstructor(Ljava/lang/String;Ljava/lang/Class;)Landroid/hardware/camera2/CaptureRequest$Key;
 
     move-result-object v0
 
     sput-object v0, Lcom/sonymobile/camera/device/SomcCaptureRequestKeys;->SONYMOBILE_CALIBRATION_COMMAND_TRIGGER:Landroid/hardware/camera2/CaptureRequest$Key;
 
-    .line 2484
+    .line 2618
     const-string v0, "com.sonymobile.calibration.param"
 
     sget-object v2, Ljava/lang/Integer;->TYPE:Ljava/lang/Class;
 
-    .line 2485
+    .line 2619
     invoke-static {v0, v2}, Lcom/sonymobile/camera/device/SomcCaptureRequestKeys;->keyConstructor(Ljava/lang/String;Ljava/lang/Class;)Landroid/hardware/camera2/CaptureRequest$Key;
 
     move-result-object v0
 
     sput-object v0, Lcom/sonymobile/camera/device/SomcCaptureRequestKeys;->SONYMOBILE_CALIBRATION_PARAM:Landroid/hardware/camera2/CaptureRequest$Key;
 
-    .line 2500
+    .line 2634
     const-string v0, "com.sonymobile.calibration.additionalParam"
 
-    .line 2501
+    .line 2635
     invoke-static {v0, v1}, Lcom/sonymobile/camera/device/SomcCaptureRequestKeys;->keyConstructor(Ljava/lang/String;Ljava/lang/Class;)Landroid/hardware/camera2/CaptureRequest$Key;
 
     move-result-object v0

@@ -21,7 +21,7 @@
 .method constructor <init>()V
     .locals 0
 
-    .line 1427
+    .line 1433
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -42,8 +42,8 @@
         }
     .end annotation
 
-    .line 1431
-    invoke-static {}, Ljp/co/sony/mc/camera/configuration/parameters/FacebookLiveVideoId;->values()[Ljp/co/sony/mc/camera/configuration/parameters/FacebookLiveVideoId;
+    .line 1437
+    invoke-static {}, Ljp/co/sony/mc/camera/configuration/parameters/YoutubeAuthorizationState;->values()[Ljp/co/sony/mc/camera/configuration/parameters/YoutubeAuthorizationState;
 
     move-result-object p0
 

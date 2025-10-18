@@ -68,10 +68,6 @@
 .method public createFromParcel(Landroid/os/Parcel;)Landroidx/compose/foundation/lazy/layout/DefaultLazyKey;
     .locals 0
 
-    const-string p0, "parcel"
-
-    invoke-static {p1, p0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
     .line 43
     new-instance p0, Landroidx/compose/foundation/lazy/layout/DefaultLazyKey;
 

@@ -21,7 +21,7 @@
 .method constructor <init>()V
     .locals 0
 
-    .line 1141
+    .line 1195
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -42,11 +42,11 @@
         }
     .end annotation
 
-    .line 1145
+    .line 1199
     check-cast p1, Ljp/co/sony/mc/camera/setting/CameraSettings;
 
-    .line 1146
-    invoke-static {p1}, Ljp/co/sony/mc/camera/setting/CameraSettings;->-$$Nest$mgetFunctionCustomExtensionData(Ljp/co/sony/mc/camera/setting/CameraSettings;)Ljp/co/sony/mc/camera/configuration/parameters/FunctionCustomExtensionData;
+    .line 1200
+    invoke-static {p1}, Ljp/co/sony/mc/camera/setting/CameraSettings;->-$$Nest$mgetBasicModeFocusDisplay(Ljp/co/sony/mc/camera/setting/CameraSettings;)Ljp/co/sony/mc/camera/configuration/parameters/BasicModeFocusDisplay;
 
     move-result-object p0
 

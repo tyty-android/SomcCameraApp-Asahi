@@ -5,7 +5,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/SourceDebugExtension;
-    value = "SMAP\nMultiParagraphIntrinsics.kt\nKotlin\n*S Kotlin\n*F\n+ 1 MultiParagraphIntrinsics.kt\nandroidx/compose/ui/text/MultiParagraphIntrinsicsKt\n+ 2 TempListUtils.kt\nandroidx/compose/ui/text/TempListUtilsKt\n+ 3 ListUtils.kt\nandroidx/compose/ui/util/ListUtilsKt\n*L\n1#1,152:1\n35#2,3:153\n38#2,2:160\n40#2:163\n33#3,4:156\n38#3:162\n151#3,5:164\n38#3:169\n156#3:170\n*S KotlinDebug\n*F\n+ 1 MultiParagraphIntrinsics.kt\nandroidx/compose/ui/text/MultiParagraphIntrinsicsKt\n*L\n141#1:153,3\n141#1:160,2\n141#1:163\n141#1:156,4\n141#1:162\n141#1:164,5\n141#1:169\n141#1:170\n*E\n"
+    value = "SMAP\nMultiParagraphIntrinsics.kt\nKotlin\n*S Kotlin\n*F\n+ 1 MultiParagraphIntrinsics.kt\nandroidx/compose/ui/text/MultiParagraphIntrinsicsKt\n+ 2 ListUtils.kt\nandroidx/compose/ui/util/ListUtilsKt\n*L\n1#1,154:1\n235#2,3:155\n33#2,4:158\n238#2,2:162\n38#2:164\n240#2:165\n151#2,3:166\n33#2,4:169\n154#2,2:173\n38#2:175\n156#2:176\n*S KotlinDebug\n*F\n+ 1 MultiParagraphIntrinsics.kt\nandroidx/compose/ui/text/MultiParagraphIntrinsicsKt\n*L\n142#1:155,3\n142#1:158,4\n142#1:162,2\n142#1:164\n142#1:165\n142#1:166,3\n142#1:169,4\n142#1:173,2\n142#1:175\n142#1:176\n*E\n"
 .end annotation
 
 .annotation runtime Lkotlin/Metadata;
@@ -60,7 +60,7 @@
         }
     .end annotation
 
-    .line 154
+    .line 156
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-interface {p0}, Ljava/util/List;->size()I
@@ -69,7 +69,7 @@
 
     invoke-direct {v0, v1}, Ljava/util/ArrayList;-><init>(I)V
 
-    .line 157
+    .line 159
     invoke-interface {p0}, Ljava/util/List;->size()I
 
     move-result v1
@@ -81,17 +81,17 @@
     :goto_0
     if-ge v3, v1, :cond_1
 
-    .line 158
+    .line 160
     invoke-interface {p0, v3}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
     move-result-object v4
 
-    .line 160
+    .line 162
     move-object v5, v4
 
     check-cast v5, Landroidx/compose/ui/text/AnnotatedString$Range;
 
-    .line 141
+    .line 142
     invoke-virtual {v5}, Landroidx/compose/ui/text/AnnotatedString$Range;->getStart()I
 
     move-result v6
@@ -106,7 +106,7 @@
 
     if-eqz v5, :cond_0
 
-    .line 160
+    .line 162
     move-object v5, v0
 
     check-cast v5, Ljava/util/Collection;
@@ -118,11 +118,11 @@
 
     goto :goto_0
 
-    .line 163
+    .line 165
     :cond_1
     check-cast v0, Ljava/util/List;
 
-    .line 165
+    .line 167
     new-instance p0, Ljava/util/ArrayList;
 
     invoke-interface {v0}, Ljava/util/List;->size()I
@@ -131,7 +131,7 @@
 
     invoke-direct {p0, v1}, Ljava/util/ArrayList;-><init>(I)V
 
-    .line 157
+    .line 170
     invoke-interface {v0}, Ljava/util/List;->size()I
 
     move-result v1
@@ -139,19 +139,19 @@
     :goto_1
     if-ge v2, v1, :cond_3
 
-    .line 158
+    .line 171
     invoke-interface {v0, v2}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
     move-result-object v3
 
-    .line 167
+    .line 173
     move-object v4, p0
 
     check-cast v4, Ljava/util/Collection;
 
     check-cast v3, Landroidx/compose/ui/text/AnnotatedString$Range;
 
-    .line 142
+    .line 143
     invoke-virtual {v3}, Landroidx/compose/ui/text/AnnotatedString$Range;->getStart()I
 
     move-result v5
@@ -164,7 +164,7 @@
 
     if-gt v5, p2, :cond_2
 
-    .line 145
+    .line 146
     new-instance v5, Landroidx/compose/ui/text/AnnotatedString$Range;
 
     invoke-virtual {v3}, Landroidx/compose/ui/text/AnnotatedString$Range;->getItem()Ljava/lang/Object;
@@ -185,14 +185,14 @@
 
     invoke-direct {v5, v6, v7, v3}, Landroidx/compose/ui/text/AnnotatedString$Range;-><init>(Ljava/lang/Object;II)V
 
-    .line 167
+    .line 173
     invoke-interface {v4, v5}, Ljava/util/Collection;->add(Ljava/lang/Object;)Z
 
     add-int/lit8 v2, v2, 0x1
 
     goto :goto_1
 
-    .line 142
+    .line 143
     :cond_2
     new-instance p0, Ljava/lang/IllegalArgumentException;
 
@@ -206,7 +206,7 @@
 
     throw p0
 
-    .line 170
+    .line 176
     :cond_3
     check-cast p0, Ljava/util/List;
 

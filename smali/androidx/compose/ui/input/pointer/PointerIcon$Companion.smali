@@ -65,28 +65,28 @@
 
     sput-object v0, Landroidx/compose/ui/input/pointer/PointerIcon$Companion;->$$INSTANCE:Landroidx/compose/ui/input/pointer/PointerIcon$Companion;
 
-    .line 49
+    .line 47
     invoke-static {}, Landroidx/compose/ui/input/pointer/PointerIcon_androidKt;->getPointerIconDefault()Landroidx/compose/ui/input/pointer/PointerIcon;
 
     move-result-object v0
 
     sput-object v0, Landroidx/compose/ui/input/pointer/PointerIcon$Companion;->Default:Landroidx/compose/ui/input/pointer/PointerIcon;
 
-    .line 52
+    .line 50
     invoke-static {}, Landroidx/compose/ui/input/pointer/PointerIcon_androidKt;->getPointerIconCrosshair()Landroidx/compose/ui/input/pointer/PointerIcon;
 
     move-result-object v0
 
     sput-object v0, Landroidx/compose/ui/input/pointer/PointerIcon$Companion;->Crosshair:Landroidx/compose/ui/input/pointer/PointerIcon;
 
-    .line 55
+    .line 53
     invoke-static {}, Landroidx/compose/ui/input/pointer/PointerIcon_androidKt;->getPointerIconText()Landroidx/compose/ui/input/pointer/PointerIcon;
 
     move-result-object v0
 
     sput-object v0, Landroidx/compose/ui/input/pointer/PointerIcon$Companion;->Text:Landroidx/compose/ui/input/pointer/PointerIcon;
 
-    .line 58
+    .line 56
     invoke-static {}, Landroidx/compose/ui/input/pointer/PointerIcon_androidKt;->getPointerIconHand()Landroidx/compose/ui/input/pointer/PointerIcon;
 
     move-result-object v0
@@ -99,7 +99,7 @@
 .method private constructor <init>()V
     .locals 0
 
-    .line 46
+    .line 44
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -110,7 +110,7 @@
 .method public final getCrosshair()Landroidx/compose/ui/input/pointer/PointerIcon;
     .locals 0
 
-    .line 52
+    .line 50
     sget-object p0, Landroidx/compose/ui/input/pointer/PointerIcon$Companion;->Crosshair:Landroidx/compose/ui/input/pointer/PointerIcon;
 
     return-object p0
@@ -119,7 +119,7 @@
 .method public final getDefault()Landroidx/compose/ui/input/pointer/PointerIcon;
     .locals 0
 
-    .line 49
+    .line 47
     sget-object p0, Landroidx/compose/ui/input/pointer/PointerIcon$Companion;->Default:Landroidx/compose/ui/input/pointer/PointerIcon;
 
     return-object p0
@@ -128,7 +128,7 @@
 .method public final getHand()Landroidx/compose/ui/input/pointer/PointerIcon;
     .locals 0
 
-    .line 58
+    .line 56
     sget-object p0, Landroidx/compose/ui/input/pointer/PointerIcon$Companion;->Hand:Landroidx/compose/ui/input/pointer/PointerIcon;
 
     return-object p0
@@ -137,7 +137,7 @@
 .method public final getText()Landroidx/compose/ui/input/pointer/PointerIcon;
     .locals 0
 
-    .line 55
+    .line 53
     sget-object p0, Landroidx/compose/ui/input/pointer/PointerIcon$Companion;->Text:Landroidx/compose/ui/input/pointer/PointerIcon;
 
     return-object p0

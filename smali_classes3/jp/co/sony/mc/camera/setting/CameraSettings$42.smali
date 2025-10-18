@@ -21,7 +21,7 @@
 .method constructor <init>()V
     .locals 0
 
-    .line 891
+    .line 945
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -42,11 +42,11 @@
         }
     .end annotation
 
-    .line 895
+    .line 949
     check-cast p1, Ljp/co/sony/mc/camera/setting/CameraSettings;
 
-    .line 896
-    invoke-static {p1}, Ljp/co/sony/mc/camera/setting/CameraSettings;->-$$Nest$mgetPreAutoFocus(Ljp/co/sony/mc/camera/setting/CameraSettings;)Ljp/co/sony/mc/camera/configuration/parameters/PreAutoFocus;
+    .line 950
+    invoke-static {p1}, Ljp/co/sony/mc/camera/setting/CameraSettings;->-$$Nest$mgetAutoExposureLock(Ljp/co/sony/mc/camera/setting/CameraSettings;)Ljp/co/sony/mc/camera/configuration/parameters/AutoExposureLock;
 
     move-result-object p0
 

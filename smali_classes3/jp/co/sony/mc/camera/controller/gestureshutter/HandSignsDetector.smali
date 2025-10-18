@@ -304,12 +304,16 @@
 
     if-eqz p0, :cond_2
 
+    const/4 p0, 0x1
+
     .line 335
-    const-string p0, "detection posted"
+    new-array p0, p0, [Ljava/lang/String;
 
-    filled-new-array {p0}, [Ljava/lang/String;
+    const/4 p1, 0x0
 
-    move-result-object p0
+    const-string p2, "detection posted"
+
+    aput-object p2, p0, p1
 
     invoke-static {p0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
@@ -329,7 +333,7 @@
 .end method
 
 .method private postGetFrame()V
-    .locals 3
+    .locals 4
 
     .line 317
     iget-object v0, p0, Ljp/co/sony/mc/camera/controller/gestureshutter/HandSignsDetector;->mFpsLimiter:Ljp/co/sony/mc/camera/controller/gestureshutter/HandSignsDetector$FpsLimiter;
@@ -354,24 +358,28 @@
 
     if-eqz p0, :cond_0
 
+    const/4 p0, 0x1
+
     .line 320
-    new-instance p0, Ljava/lang/StringBuilder;
+    new-array p0, p0, [Ljava/lang/String;
 
-    const-string v2, "Get frame posted with delay: "
+    new-instance v2, Ljava/lang/StringBuilder;
 
-    invoke-direct {p0, v2}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+    const-string v3, "Get frame posted with delay: "
 
-    invoke-virtual {p0, v0, v1}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
+    invoke-direct {v2, v3}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
-    move-result-object p0
+    invoke-virtual {v2, v0, v1}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
 
-    invoke-virtual {p0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    move-result-object v0
 
-    move-result-object p0
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    filled-new-array {p0}, [Ljava/lang/String;
+    move-result-object v0
 
-    move-result-object p0
+    const/4 v1, 0x0
+
+    aput-object v0, p0, v1
 
     invoke-static {p0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
@@ -465,7 +473,7 @@
 .end method
 
 .method public setLayoutOrientation(Ljp/co/sony/mc/camera/OrientationService$LayoutOrientation;)V
-    .locals 2
+    .locals 4
 
     .line 277
     sget-object v0, Ljp/co/sony/mc/camera/controller/gestureshutter/HandSignsDetector$3;->$SwitchMap$jp$co$sony$mc$camera$OrientationService$LayoutOrientation:[I
@@ -476,21 +484,23 @@
 
     aget v0, v0, v1
 
-    const/4 v1, 0x1
+    const/4 v1, 0x0
 
-    if-eq v0, v1, :cond_3
+    const/4 v2, 0x1
 
-    const/4 v1, 0x2
+    if-eq v0, v2, :cond_3
 
-    if-eq v0, v1, :cond_2
+    const/4 v3, 0x2
 
-    const/4 v1, 0x3
+    if-eq v0, v3, :cond_2
 
-    if-eq v0, v1, :cond_1
+    const/4 v3, 0x3
 
-    const/4 v1, 0x4
+    if-eq v0, v3, :cond_1
 
-    if-ne v0, v1, :cond_0
+    const/4 v3, 0x4
+
+    if-ne v0, v3, :cond_0
 
     const/16 p1, 0xb4
 
@@ -529,11 +539,9 @@
 
     goto :goto_0
 
-    :cond_2
-    const/4 p1, 0x0
-
     .line 282
-    iput p1, p0, Ljp/co/sony/mc/camera/controller/gestureshutter/HandSignsDetector;->mRoll:I
+    :cond_2
+    iput v1, p0, Ljp/co/sony/mc/camera/controller/gestureshutter/HandSignsDetector;->mRoll:I
 
     goto :goto_0
 
@@ -550,15 +558,17 @@
     if-eqz p1, :cond_4
 
     .line 294
-    new-instance p1, Ljava/lang/StringBuilder;
+    new-array p1, v2, [Ljava/lang/String;
 
-    const-string v0, "Rotation updated to:"
+    new-instance v0, Ljava/lang/StringBuilder;
 
-    invoke-direct {p1, v0}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+    const-string v2, "Rotation updated to:"
+
+    invoke-direct {v0, v2}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
     iget p0, p0, Ljp/co/sony/mc/camera/controller/gestureshutter/HandSignsDetector;->mRoll:I
 
-    invoke-virtual {p1, p0}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+    invoke-virtual {v0, p0}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
     move-result-object p0
 
@@ -566,11 +576,9 @@
 
     move-result-object p0
 
-    filled-new-array {p0}, [Ljava/lang/String;
+    aput-object p0, p1, v1
 
-    move-result-object p0
-
-    invoke-static {p0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
+    invoke-static {p1}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
     :cond_4
     return-void

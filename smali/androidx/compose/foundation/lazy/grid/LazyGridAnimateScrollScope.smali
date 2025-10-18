@@ -3,28 +3,24 @@
 .source "LazyGridAnimateScrollScope.kt"
 
 # interfaces
-.implements Landroidx/compose/foundation/lazy/layout/LazyAnimateScrollScope;
+.implements Landroidx/compose/foundation/lazy/layout/LazyLayoutAnimateScrollScope;
 
 
 # annotations
 .annotation system Ldalvik/annotation/SourceDebugExtension;
-    value = "SMAP\nLazyGridAnimateScrollScope.kt\nKotlin\n*S Kotlin\n*F\n+ 1 LazyGridAnimateScrollScope.kt\nandroidx/compose/foundation/lazy/grid/LazyGridAnimateScrollScope\n+ 2 ListUtils.kt\nandroidx/compose/ui/util/ListUtilsKt\n*L\n1#1,122:1\n116#2,2:123\n33#2,6:125\n118#2:131\n*S KotlinDebug\n*F\n+ 1 LazyGridAnimateScrollScope.kt\nandroidx/compose/foundation/lazy/grid/LazyGridAnimateScrollScope\n*L\n42#1:123,2\n42#1:125,6\n42#1:131\n*E\n"
+    value = "SMAP\nLazyGridAnimateScrollScope.kt\nKotlin\n*S Kotlin\n*F\n+ 1 LazyGridAnimateScrollScope.kt\nandroidx/compose/foundation/lazy/grid/LazyGridAnimateScrollScope\n+ 2 ListUtils.kt\nandroidx/compose/ui/util/ListUtilsKt\n*L\n1#1,121:1\n116#2,2:122\n33#2,6:124\n118#2:130\n*S KotlinDebug\n*F\n+ 1 LazyGridAnimateScrollScope.kt\nandroidx/compose/foundation/lazy/grid/LazyGridAnimateScrollScope\n*L\n45#1:122,2\n45#1:124,6\n45#1:130\n*E\n"
 .end annotation
 
 .annotation runtime Lkotlin/Metadata;
     d1 = {
-        "\u0000T\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0003\n\u0002\u0010\u0008\n\u0002\u0008\u000c\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000b\n\u0000\n\u0002\u0010\u0007\n\u0002\u0008\u0005\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0004\u0008\u0000\u0018\u00002\u00020\u0001B\r\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u00a2\u0006\u0002\u0010\u0004J\u0018\u0010\u0015\u001a\u00020\n2\u0006\u0010\u0016\u001a\u00020\u00172\u0006\u0010\u0018\u001a\u00020\u0019H\u0002J\u0018\u0010\u001a\u001a\u00020\u001b2\u0006\u0010\u001c\u001a\u00020\n2\u0006\u0010\u001d\u001a\u00020\nH\u0016J\u0017\u0010\u001e\u001a\u0004\u0018\u00010\n2\u0006\u0010\u001c\u001a\u00020\nH\u0016\u00a2\u0006\u0002\u0010\u001fJ:\u0010 \u001a\u00020!2\'\u0010\"\u001a#\u0008\u0001\u0012\u0004\u0012\u00020$\u0012\n\u0012\u0008\u0012\u0004\u0012\u00020!0%\u0012\u0006\u0012\u0004\u0018\u00010&0#\u00a2\u0006\u0002\u0008\'H\u0096@\u00f8\u0001\u0000\u00a2\u0006\u0002\u0010(J\u001c\u0010)\u001a\u00020!*\u00020$2\u0006\u0010\u001c\u001a\u00020\n2\u0006\u0010*\u001a\u00020\nH\u0016R\u0014\u0010\u0005\u001a\u00020\u00068VX\u0096\u0004\u00a2\u0006\u0006\u001a\u0004\u0008\u0007\u0010\u0008R\u0014\u0010\t\u001a\u00020\n8VX\u0096\u0004\u00a2\u0006\u0006\u001a\u0004\u0008\u000b\u0010\u000cR\u0014\u0010\r\u001a\u00020\n8VX\u0096\u0004\u00a2\u0006\u0006\u001a\u0004\u0008\u000e\u0010\u000cR\u0014\u0010\u000f\u001a\u00020\n8VX\u0096\u0004\u00a2\u0006\u0006\u001a\u0004\u0008\u0010\u0010\u000cR\u0014\u0010\u0011\u001a\u00020\n8VX\u0096\u0004\u00a2\u0006\u0006\u001a\u0004\u0008\u0012\u0010\u000cR\u0014\u0010\u0013\u001a\u00020\n8VX\u0096\u0004\u00a2\u0006\u0006\u001a\u0004\u0008\u0014\u0010\u000cR\u000e\u0010\u0002\u001a\u00020\u0003X\u0082\u0004\u00a2\u0006\u0002\n\u0000\u0082\u0002\u0004\n\u0002\u0008\u0019\u00a8\u0006+"
+        "\u0000N\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0010\u0008\n\u0002\u0008\u000b\n\u0002\u0010\u0007\n\u0002\u0008\u0004\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000b\n\u0002\u0008\u0003\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0004\u0008\u0000\u0018\u00002\u00020\u0001B\r\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u00a2\u0006\u0002\u0010\u0004J\u0018\u0010\u0011\u001a\u00020\u00122\u0006\u0010\u0013\u001a\u00020\u00062\u0006\u0010\u0014\u001a\u00020\u0006H\u0016J\u0018\u0010\u0015\u001a\u00020\u00062\u0006\u0010\u0016\u001a\u00020\u00172\u0006\u0010\u0018\u001a\u00020\u0019H\u0002J\u0010\u0010\u001a\u001a\u00020\u00062\u0006\u0010\u001b\u001a\u00020\u0006H\u0016J7\u0010\u001c\u001a\u00020\u001d2\'\u0010\u001e\u001a#\u0008\u0001\u0012\u0004\u0012\u00020 \u0012\n\u0012\u0008\u0012\u0004\u0012\u00020\u001d0!\u0012\u0006\u0012\u0004\u0018\u00010\"0\u001f\u00a2\u0006\u0002\u0008#H\u0096@\u00a2\u0006\u0002\u0010$J\u001c\u0010%\u001a\u00020\u001d*\u00020 2\u0006\u0010\u001b\u001a\u00020\u00062\u0006\u0010&\u001a\u00020\u0006H\u0016R\u0014\u0010\u0005\u001a\u00020\u00068VX\u0096\u0004\u00a2\u0006\u0006\u001a\u0004\u0008\u0007\u0010\u0008R\u0014\u0010\t\u001a\u00020\u00068VX\u0096\u0004\u00a2\u0006\u0006\u001a\u0004\u0008\n\u0010\u0008R\u0014\u0010\u000b\u001a\u00020\u00068VX\u0096\u0004\u00a2\u0006\u0006\u001a\u0004\u0008\u000c\u0010\u0008R\u0014\u0010\r\u001a\u00020\u00068VX\u0096\u0004\u00a2\u0006\u0006\u001a\u0004\u0008\u000e\u0010\u0008R\u000e\u0010\u0002\u001a\u00020\u0003X\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u0014\u0010\u000f\u001a\u00020\u00068VX\u0096\u0004\u00a2\u0006\u0006\u001a\u0004\u0008\u0010\u0010\u0008\u00a8\u0006\'"
     }
     d2 = {
         "Landroidx/compose/foundation/lazy/grid/LazyGridAnimateScrollScope;",
-        "Landroidx/compose/foundation/lazy/layout/LazyAnimateScrollScope;",
+        "Landroidx/compose/foundation/lazy/layout/LazyLayoutAnimateScrollScope;",
         "state",
         "Landroidx/compose/foundation/lazy/grid/LazyGridState;",
         "(Landroidx/compose/foundation/lazy/grid/LazyGridState;)V",
-        "density",
-        "Landroidx/compose/ui/unit/Density;",
-        "getDensity",
-        "()Landroidx/compose/ui/unit/Density;",
         "firstVisibleItemIndex",
         "",
         "getFirstVisibleItemIndex",
@@ -35,19 +31,19 @@
         "getItemCount",
         "lastVisibleItemIndex",
         "getLastVisibleItemIndex",
-        "numOfItemsForTeleport",
-        "getNumOfItemsForTeleport",
+        "visibleItemsAverageSize",
+        "getVisibleItemsAverageSize",
+        "calculateDistanceTo",
+        "",
+        "targetIndex",
+        "targetItemOffset",
         "calculateLineAverageMainAxisSize",
         "layoutInfo",
         "Landroidx/compose/foundation/lazy/grid/LazyGridLayoutInfo;",
         "isVertical",
         "",
-        "expectedDistanceTo",
-        "",
+        "getVisibleItemScrollOffset",
         "index",
-        "targetScrollOffset",
-        "getTargetItemOffset",
-        "(I)Ljava/lang/Integer;",
         "scroll",
         "",
         "block",
@@ -71,22 +67,28 @@
 .end annotation
 
 
+# static fields
+.field public static final $stable:I
+
+
 # instance fields
 .field private final state:Landroidx/compose/foundation/lazy/grid/LazyGridState;
 
 
 # direct methods
+.method static constructor <clinit>()V
+    .locals 0
+
+    return-void
+.end method
+
 .method public constructor <init>(Landroidx/compose/foundation/lazy/grid/LazyGridState;)V
-    .locals 1
-
-    const-string/jumbo v0, "state"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+    .locals 0
 
     .line 26
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 27
+    .line 28
     iput-object p1, p0, Landroidx/compose/foundation/lazy/grid/LazyGridAnimateScrollScope;->state:Landroidx/compose/foundation/lazy/grid/LazyGridState;
 
     return-void
@@ -95,12 +97,12 @@
 .method private final calculateLineAverageMainAxisSize(Landroidx/compose/foundation/lazy/grid/LazyGridLayoutInfo;Z)I
     .locals 9
 
-    .line 79
+    .line 77
     invoke-interface {p1}, Landroidx/compose/foundation/lazy/grid/LazyGridLayoutInfo;->getVisibleItemsInfo()Ljava/util/List;
 
     move-result-object p0
 
-    .line 80
+    .line 78
     new-instance v0, Landroidx/compose/foundation/lazy/grid/LazyGridAnimateScrollScope$calculateLineAverageMainAxisSize$lineOf$1;
 
     invoke-direct {v0, p2, p0}, Landroidx/compose/foundation/lazy/grid/LazyGridAnimateScrollScope$calculateLineAverageMainAxisSize$lineOf$1;-><init>(ZLjava/util/List;)V
@@ -115,7 +117,7 @@
 
     move v4, v3
 
-    .line 88
+    .line 86
     :goto_0
     invoke-interface {p0}, Ljava/util/List;->size()I
 
@@ -123,7 +125,7 @@
 
     if-ge v2, v5, :cond_3
 
-    .line 89
+    .line 87
     invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object v5
@@ -149,7 +151,7 @@
     :cond_0
     move v6, v1
 
-    .line 98
+    .line 96
     :goto_1
     invoke-interface {p0}, Ljava/util/List;->size()I
 
@@ -175,7 +177,7 @@
 
     if-eqz p2, :cond_1
 
-    .line 102
+    .line 100
     invoke-interface {p0, v2}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
     move-result-object v7
@@ -192,7 +194,7 @@
 
     goto :goto_2
 
-    .line 104
+    .line 102
     :cond_1
     invoke-interface {p0, v2}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
@@ -224,7 +226,7 @@
 
     goto :goto_0
 
-    .line 116
+    .line 114
     :cond_3
     div-int/2addr v3, v4
 
@@ -239,32 +241,18 @@
 
 
 # virtual methods
-.method public expectedDistanceTo(II)F
+.method public calculateDistanceTo(II)F
     .locals 5
 
-    .line 57
+    .line 60
     iget-object v0, p0, Landroidx/compose/foundation/lazy/grid/LazyGridAnimateScrollScope;->state:Landroidx/compose/foundation/lazy/grid/LazyGridState;
 
     invoke-virtual {v0}, Landroidx/compose/foundation/lazy/grid/LazyGridState;->getSlotsPerLine$foundation_release()I
 
     move-result v0
 
-    .line 59
-    iget-object v1, p0, Landroidx/compose/foundation/lazy/grid/LazyGridAnimateScrollScope;->state:Landroidx/compose/foundation/lazy/grid/LazyGridState;
-
-    invoke-virtual {v1}, Landroidx/compose/foundation/lazy/grid/LazyGridState;->getLayoutInfo()Landroidx/compose/foundation/lazy/grid/LazyGridLayoutInfo;
-
-    move-result-object v1
-
-    .line 60
-    iget-object v2, p0, Landroidx/compose/foundation/lazy/grid/LazyGridAnimateScrollScope;->state:Landroidx/compose/foundation/lazy/grid/LazyGridState;
-
-    invoke-virtual {v2}, Landroidx/compose/foundation/lazy/grid/LazyGridState;->isVertical$foundation_release()Z
-
-    move-result v2
-
-    .line 58
-    invoke-direct {p0, v1, v2}, Landroidx/compose/foundation/lazy/grid/LazyGridAnimateScrollScope;->calculateLineAverageMainAxisSize(Landroidx/compose/foundation/lazy/grid/LazyGridLayoutInfo;Z)I
+    .line 61
+    invoke-virtual {p0}, Landroidx/compose/foundation/lazy/grid/LazyGridAnimateScrollScope;->getVisibleItemsAverageSize()I
 
     move-result v1
 
@@ -337,19 +325,6 @@
     sub-float/2addr p1, p0
 
     return p1
-.end method
-
-.method public getDensity()Landroidx/compose/ui/unit/Density;
-    .locals 0
-
-    .line 29
-    iget-object p0, p0, Landroidx/compose/foundation/lazy/grid/LazyGridAnimateScrollScope;->state:Landroidx/compose/foundation/lazy/grid/LazyGridState;
-
-    invoke-virtual {p0}, Landroidx/compose/foundation/lazy/grid/LazyGridState;->getDensity$foundation_release()Landroidx/compose/ui/unit/Density;
-
-    move-result-object p0
-
-    return-object p0
 .end method
 
 .method public getFirstVisibleItemIndex()I
@@ -430,25 +405,10 @@
     return p0
 .end method
 
-.method public getNumOfItemsForTeleport()I
-    .locals 0
-
-    .line 73
-    iget-object p0, p0, Landroidx/compose/foundation/lazy/grid/LazyGridAnimateScrollScope;->state:Landroidx/compose/foundation/lazy/grid/LazyGridState;
-
-    invoke-virtual {p0}, Landroidx/compose/foundation/lazy/grid/LazyGridState;->getSlotsPerLine$foundation_release()I
-
-    move-result p0
-
-    mul-int/lit8 p0, p0, 0x64
-
-    return p0
-.end method
-
-.method public getTargetItemOffset(I)Ljava/lang/Integer;
+.method public getVisibleItemScrollOffset(I)I
     .locals 6
 
-    .line 41
+    .line 44
     iget-object v0, p0, Landroidx/compose/foundation/lazy/grid/LazyGridAnimateScrollScope;->state:Landroidx/compose/foundation/lazy/grid/LazyGridState;
 
     invoke-virtual {v0}, Landroidx/compose/foundation/lazy/grid/LazyGridState;->getLayoutInfo()Landroidx/compose/foundation/lazy/grid/LazyGridLayoutInfo;
@@ -459,29 +419,29 @@
 
     move-result-object v0
 
-    .line 126
+    .line 125
     invoke-interface {v0}, Ljava/util/List;->size()I
 
     move-result v1
 
     const/4 v2, 0x0
 
+    move v3, v2
+
     :goto_0
-    const/4 v3, 0x0
+    if-ge v3, v1, :cond_1
 
-    if-ge v2, v1, :cond_1
-
-    .line 127
-    invoke-interface {v0, v2}, Ljava/util/List;->get(I)Ljava/lang/Object;
+    .line 126
+    invoke-interface {v0, v3}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
     move-result-object v4
 
-    .line 124
+    .line 123
     move-object v5, v4
 
     check-cast v5, Landroidx/compose/foundation/lazy/grid/LazyGridItemInfo;
 
-    .line 43
+    .line 46
     invoke-interface {v5}, Landroidx/compose/foundation/lazy/grid/LazyGridItemInfo;->getIndex()I
 
     move-result v5
@@ -491,20 +451,20 @@
     goto :goto_1
 
     :cond_0
-    add-int/lit8 v2, v2, 0x1
+    add-int/lit8 v3, v3, 0x1
 
     goto :goto_0
 
     :cond_1
-    move-object v4, v3
+    const/4 v4, 0x0
 
-    .line 42
+    .line 45
     :goto_1
     check-cast v4, Landroidx/compose/foundation/lazy/grid/LazyGridItemInfo;
 
     if-eqz v4, :cond_3
 
-    .line 45
+    .line 48
     iget-object p0, p0, Landroidx/compose/foundation/lazy/grid/LazyGridAnimateScrollScope;->state:Landroidx/compose/foundation/lazy/grid/LazyGridState;
 
     invoke-virtual {p0}, Landroidx/compose/foundation/lazy/grid/LazyGridState;->isVertical$foundation_release()Z
@@ -513,7 +473,7 @@
 
     if-eqz p0, :cond_2
 
-    .line 46
+    .line 49
     invoke-interface {v4}, Landroidx/compose/foundation/lazy/grid/LazyGridItemInfo;->getOffset-nOcc-ac()J
 
     move-result-wide p0
@@ -524,7 +484,7 @@
 
     goto :goto_2
 
-    .line 48
+    .line 51
     :cond_2
     invoke-interface {v4}, Landroidx/compose/foundation/lazy/grid/LazyGridItemInfo;->getOffset-nOcc-ac()J
 
@@ -534,14 +494,34 @@
 
     move-result p0
 
-    .line 45
     :goto_2
-    invoke-static {p0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
-
-    move-result-object v3
+    move v2, p0
 
     :cond_3
-    return-object v3
+    return v2
+.end method
+
+.method public getVisibleItemsAverageSize()I
+    .locals 2
+
+    .line 41
+    iget-object v0, p0, Landroidx/compose/foundation/lazy/grid/LazyGridAnimateScrollScope;->state:Landroidx/compose/foundation/lazy/grid/LazyGridState;
+
+    invoke-virtual {v0}, Landroidx/compose/foundation/lazy/grid/LazyGridState;->getLayoutInfo()Landroidx/compose/foundation/lazy/grid/LazyGridLayoutInfo;
+
+    move-result-object v0
+
+    iget-object v1, p0, Landroidx/compose/foundation/lazy/grid/LazyGridAnimateScrollScope;->state:Landroidx/compose/foundation/lazy/grid/LazyGridState;
+
+    invoke-virtual {v1}, Landroidx/compose/foundation/lazy/grid/LazyGridState;->isVertical$foundation_release()Z
+
+    move-result v1
+
+    invoke-direct {p0, v0, v1}, Landroidx/compose/foundation/lazy/grid/LazyGridAnimateScrollScope;->calculateLineAverageMainAxisSize(Landroidx/compose/foundation/lazy/grid/LazyGridLayoutInfo;Z)I
+
+    move-result p0
+
+    return p0
 .end method
 
 .method public scroll(Lkotlin/jvm/functions/Function2;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
@@ -567,7 +547,7 @@
         }
     .end annotation
 
-    .line 120
+    .line 118
     iget-object p0, p0, Landroidx/compose/foundation/lazy/grid/LazyGridAnimateScrollScope;->state:Landroidx/compose/foundation/lazy/grid/LazyGridState;
 
     move-object v0, p0
@@ -603,13 +583,9 @@
 .end method
 
 .method public snapToItem(Landroidx/compose/foundation/gestures/ScrollScope;II)V
-    .locals 1
+    .locals 0
 
-    const-string v0, "<this>"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 53
+    .line 56
     iget-object p0, p0, Landroidx/compose/foundation/lazy/grid/LazyGridAnimateScrollScope;->state:Landroidx/compose/foundation/lazy/grid/LazyGridState;
 
     invoke-virtual {p0, p2, p3}, Landroidx/compose/foundation/lazy/grid/LazyGridState;->snapToItemIndexInternal$foundation_release(II)V

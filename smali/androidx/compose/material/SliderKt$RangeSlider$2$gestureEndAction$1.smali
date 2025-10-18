@@ -165,7 +165,7 @@
 .method public bridge synthetic invoke(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
 
-    .line 351
+    .line 354
     check-cast p1, Ljava/lang/Boolean;
 
     invoke-virtual {p1}, Ljava/lang/Boolean;->booleanValue()Z
@@ -184,7 +184,7 @@
 
     if-eqz p1, :cond_0
 
-    .line 352
+    .line 355
     iget-object v0, p0, Landroidx/compose/material/SliderKt$RangeSlider$2$gestureEndAction$1;->$rawOffsetStart:Landroidx/compose/runtime/MutableFloatState;
 
     goto :goto_0
@@ -197,7 +197,7 @@
 
     move-result v2
 
-    .line 354
+    .line 357
     iget-object v0, p0, Landroidx/compose/material/SliderKt$RangeSlider$2$gestureEndAction$1;->$tickFractions:Ljava/util/List;
 
     iget-object v1, p0, Landroidx/compose/material/SliderKt$RangeSlider$2$gestureEndAction$1;->$minPx:Lkotlin/jvm/internal/Ref$FloatRef;
@@ -216,7 +216,7 @@
 
     if-nez v0, :cond_2
 
-    .line 356
+    .line 359
     iget-object p0, p0, Landroidx/compose/material/SliderKt$RangeSlider$2$gestureEndAction$1;->$onValueChangeFinished:Lkotlin/jvm/functions/Function0;
 
     if-eqz p0, :cond_1
@@ -226,7 +226,7 @@
     :cond_1
     return-void
 
-    .line 360
+    .line 363
     :cond_2
     iget-object v0, p0, Landroidx/compose/material/SliderKt$RangeSlider$2$gestureEndAction$1;->$scope:Lkotlinx/coroutines/CoroutineScope;
 

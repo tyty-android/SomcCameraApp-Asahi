@@ -18,15 +18,15 @@
     d2 = {
         "Ljp/co/sony/mc/camera/view/widget/IZoomRuler;",
         "",
-        "max",
-        "",
-        "getMax",
-        "()I",
-        "setMax",
-        "(I)V",
         "min",
+        "",
         "getMin",
+        "()I",
         "setMin",
+        "(I)V",
+        "max",
+        "getMax",
+        "setMax",
         "progress",
         "getProgress",
         "setProgress",
@@ -39,14 +39,14 @@
         "Ljp/co/sony/mc/camera/view/widget/IZoomRuler$Label;",
         "clearHighlightTrack",
         "clearLabel",
-        "HighlightTrack",
         "Label",
+        "HighlightTrack",
         "SomcCamera_release"
     }
     k = 0x1
     mv = {
-        0x1,
-        0x9,
+        0x2,
+        0x0,
         0x0
     }
     xi = 0x30

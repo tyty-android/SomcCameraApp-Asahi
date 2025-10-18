@@ -47,14 +47,6 @@
         }
     .end annotation
 
-    const-string p1, "<this>"
-
-    invoke-static {p0, p1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string p1, "property"
-
-    invoke-static {p2, p1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
     .line 75
     invoke-interface {p0}, Landroidx/compose/runtime/IntState;->getIntValue()I
 
@@ -85,14 +77,6 @@
             "*>;I)V"
         }
     .end annotation
-
-    const-string p1, "<this>"
-
-    invoke-static {p0, p1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string p1, "property"
-
-    invoke-static {p2, p1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 108
     invoke-interface {p0, p3}, Landroidx/compose/runtime/MutableIntState;->setIntValue(I)V

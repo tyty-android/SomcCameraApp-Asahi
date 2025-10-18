@@ -27,7 +27,7 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/SourceDebugExtension;
-    value = "SMAP\nSwipeable.kt\nKotlin\n*S Kotlin\n*F\n+ 1 Swipeable.kt\nandroidx/compose/material/SwipeableKt$swipeable$1\n+ 2 Dp.kt\nandroidx/compose/ui/unit/DpKt\n*L\n1#1,890:1\n154#2:891\n*S KotlinDebug\n*F\n+ 1 Swipeable.kt\nandroidx/compose/material/SwipeableKt$swipeable$1\n*L\n570#1:891\n*E\n"
+    value = "SMAP\nSwipeable.kt\nKotlin\n*S Kotlin\n*F\n+ 1 Swipeable.kt\nandroidx/compose/material/SwipeableKt$swipeable$1\n+ 2 Dp.kt\nandroidx/compose/ui/unit/DpKt\n*L\n1#1,908:1\n154#2:909\n*S KotlinDebug\n*F\n+ 1 Swipeable.kt\nandroidx/compose/material/SwipeableKt$swipeable$1\n*L\n579#1:909\n*E\n"
 .end annotation
 
 .annotation runtime Lkotlin/Metadata;
@@ -91,21 +91,21 @@
         }
     .end annotation
 
-    .line 570
+    .line 579
     new-instance p0, Landroidx/compose/material/FixedThreshold;
 
     const/16 p1, 0x38
 
     int-to-float p1, p1
 
-    .line 891
+    .line 909
     invoke-static {p1}, Landroidx/compose/ui/unit/Dp;->constructor-impl(F)F
 
     move-result p1
 
     const/4 p2, 0x0
 
-    .line 570
+    .line 579
     invoke-direct {p0, p1, p2}, Landroidx/compose/material/FixedThreshold;-><init>(FLkotlin/jvm/internal/DefaultConstructorMarker;)V
 
     return-object p0
@@ -114,7 +114,7 @@
 .method public bridge synthetic invoke(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
 
-    .line 570
+    .line 579
     invoke-virtual {p0, p1, p2}, Landroidx/compose/material/SwipeableKt$swipeable$1;->invoke(Ljava/lang/Object;Ljava/lang/Object;)Landroidx/compose/material/FixedThreshold;
 
     move-result-object p0

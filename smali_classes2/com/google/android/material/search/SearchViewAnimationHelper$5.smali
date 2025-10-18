@@ -24,7 +24,7 @@
 .method constructor <init>(Lcom/google/android/material/search/SearchViewAnimationHelper;Z)V
     .locals 0
 
-    .line 270
+    .line 292
     iput-object p1, p0, Lcom/google/android/material/search/SearchViewAnimationHelper$5;->this$0:Lcom/google/android/material/search/SearchViewAnimationHelper;
 
     iput-boolean p2, p0, Lcom/google/android/material/search/SearchViewAnimationHelper$5;->val$show:Z
@@ -39,7 +39,7 @@
 .method public onAnimationEnd(Landroid/animation/Animator;)V
     .locals 1
 
-    .line 278
+    .line 300
     iget-object p1, p0, Lcom/google/android/material/search/SearchViewAnimationHelper$5;->this$0:Lcom/google/android/material/search/SearchViewAnimationHelper;
 
     iget-boolean v0, p0, Lcom/google/android/material/search/SearchViewAnimationHelper$5;->val$show:Z
@@ -56,12 +56,7 @@
     :goto_0
     invoke-static {p1, v0}, Lcom/google/android/material/search/SearchViewAnimationHelper;->access$200(Lcom/google/android/material/search/SearchViewAnimationHelper;F)V
 
-    .line 279
-    iget-boolean p1, p0, Lcom/google/android/material/search/SearchViewAnimationHelper$5;->val$show:Z
-
-    if-eqz p1, :cond_1
-
-    .line 282
+    .line 303
     iget-object p0, p0, Lcom/google/android/material/search/SearchViewAnimationHelper$5;->this$0:Lcom/google/android/material/search/SearchViewAnimationHelper;
 
     invoke-static {p0}, Lcom/google/android/material/search/SearchViewAnimationHelper;->access$100(Lcom/google/android/material/search/SearchViewAnimationHelper;)Lcom/google/android/material/internal/ClippableRoundedCornerLayout;
@@ -70,14 +65,13 @@
 
     invoke-virtual {p0}, Lcom/google/android/material/internal/ClippableRoundedCornerLayout;->resetClipBoundsAndCornerRadius()V
 
-    :cond_1
     return-void
 .end method
 
 .method public onAnimationStart(Landroid/animation/Animator;)V
     .locals 0
 
-    .line 273
+    .line 295
     iget-object p1, p0, Lcom/google/android/material/search/SearchViewAnimationHelper$5;->this$0:Lcom/google/android/material/search/SearchViewAnimationHelper;
 
     iget-boolean p0, p0, Lcom/google/android/material/search/SearchViewAnimationHelper$5;->val$show:Z

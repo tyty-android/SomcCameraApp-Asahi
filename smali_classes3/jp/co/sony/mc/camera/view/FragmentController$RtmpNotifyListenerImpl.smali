@@ -22,10 +22,18 @@
 
 
 # direct methods
+.method public static synthetic $r8$lambda$Qckc9IXSKBQsFwLM3nPFUJtkIGw(Ljp/co/sony/mc/camera/view/FragmentController$RtmpNotifyListenerImpl;)V
+    .locals 0
+
+    invoke-direct {p0}, Ljp/co/sony/mc/camera/view/FragmentController$RtmpNotifyListenerImpl;->lambda$onConnectionFailed$0()V
+
+    return-void
+.end method
+
 .method private constructor <init>(Ljp/co/sony/mc/camera/view/FragmentController;)V
     .locals 0
 
-    .line 5089
+    .line 5265
     iput-object p1, p0, Ljp/co/sony/mc/camera/view/FragmentController$RtmpNotifyListenerImpl;->this$0:Ljp/co/sony/mc/camera/view/FragmentController;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -41,12 +49,23 @@
     return-void
 .end method
 
+.method private synthetic lambda$onConnectionFailed$0()V
+    .locals 0
+
+    .line 5292
+    iget-object p0, p0, Ljp/co/sony/mc/camera/view/FragmentController$RtmpNotifyListenerImpl;->this$0:Ljp/co/sony/mc/camera/view/FragmentController;
+
+    invoke-virtual {p0}, Ljp/co/sony/mc/camera/view/FragmentController;->stopRecording()V
+
+    return-void
+.end method
+
 
 # virtual methods
 .method public onConnectionFailed(Ljava/lang/String;)V
     .locals 1
 
-    .line 5104
+    .line 5280
     iget-object p1, p0, Ljp/co/sony/mc/camera/view/FragmentController$RtmpNotifyListenerImpl;->this$0:Ljp/co/sony/mc/camera/view/FragmentController;
 
     invoke-static {p1}, Ljp/co/sony/mc/camera/view/FragmentController;->-$$Nest$fgetmOnConnectionFailedEnable(Ljp/co/sony/mc/camera/view/FragmentController;)Z
@@ -57,7 +76,7 @@
 
     if-ne p1, v0, :cond_0
 
-    .line 5105
+    .line 5281
     iget-object p1, p0, Ljp/co/sony/mc/camera/view/FragmentController$RtmpNotifyListenerImpl;->this$0:Ljp/co/sony/mc/camera/view/FragmentController;
 
     invoke-static {p1}, Ljp/co/sony/mc/camera/view/FragmentController;->-$$Nest$fgetmActivity(Ljp/co/sony/mc/camera/view/FragmentController;)Ljp/co/sony/mc/camera/CameraActivity;
@@ -70,22 +89,35 @@
 
     invoke-virtual {p1, v0}, Ljp/co/sony/mc/camera/CameraActivity;->runOnUiThread(Ljava/lang/Runnable;)V
 
-    .line 5111
-    iget-object p0, p0, Ljp/co/sony/mc/camera/view/FragmentController$RtmpNotifyListenerImpl;->this$0:Ljp/co/sony/mc/camera/view/FragmentController;
+    .line 5287
+    iget-object p1, p0, Ljp/co/sony/mc/camera/view/FragmentController$RtmpNotifyListenerImpl;->this$0:Ljp/co/sony/mc/camera/view/FragmentController;
 
-    const/4 p1, 0x0
+    const/4 v0, 0x0
 
-    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/view/FragmentController;->-$$Nest$fputmOnConnectionFailedEnable(Ljp/co/sony/mc/camera/view/FragmentController;Z)V
+    invoke-static {p1, v0}, Ljp/co/sony/mc/camera/view/FragmentController;->-$$Nest$fputmOnConnectionFailedEnable(Ljp/co/sony/mc/camera/view/FragmentController;Z)V
 
     goto :goto_0
 
-    .line 5113
+    .line 5289
     :cond_0
-    iget-object p0, p0, Ljp/co/sony/mc/camera/view/FragmentController$RtmpNotifyListenerImpl;->this$0:Ljp/co/sony/mc/camera/view/FragmentController;
+    iget-object p1, p0, Ljp/co/sony/mc/camera/view/FragmentController$RtmpNotifyListenerImpl;->this$0:Ljp/co/sony/mc/camera/view/FragmentController;
 
-    invoke-static {p0, v0}, Ljp/co/sony/mc/camera/view/FragmentController;->-$$Nest$fputmOnDisconnectedEnable(Ljp/co/sony/mc/camera/view/FragmentController;Z)V
+    invoke-static {p1, v0}, Ljp/co/sony/mc/camera/view/FragmentController;->-$$Nest$fputmOnDisconnectedEnable(Ljp/co/sony/mc/camera/view/FragmentController;Z)V
 
+    .line 5292
     :goto_0
+    iget-object p1, p0, Ljp/co/sony/mc/camera/view/FragmentController$RtmpNotifyListenerImpl;->this$0:Ljp/co/sony/mc/camera/view/FragmentController;
+
+    invoke-static {p1}, Ljp/co/sony/mc/camera/view/FragmentController;->-$$Nest$fgetmActivity(Ljp/co/sony/mc/camera/view/FragmentController;)Ljp/co/sony/mc/camera/CameraActivity;
+
+    move-result-object p1
+
+    new-instance v0, Ljp/co/sony/mc/camera/view/FragmentController$RtmpNotifyListenerImpl$$ExternalSyntheticLambda0;
+
+    invoke-direct {v0, p0}, Ljp/co/sony/mc/camera/view/FragmentController$RtmpNotifyListenerImpl$$ExternalSyntheticLambda0;-><init>(Ljp/co/sony/mc/camera/view/FragmentController$RtmpNotifyListenerImpl;)V
+
+    invoke-virtual {p1, v0}, Ljp/co/sony/mc/camera/CameraActivity;->runOnUiThread(Ljava/lang/Runnable;)V
+
     return-void
 .end method
 
@@ -98,7 +130,7 @@
 .method public onConnectionSuccess()V
     .locals 1
 
-    .line 5098
+    .line 5274
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/FragmentController$RtmpNotifyListenerImpl;->this$0:Ljp/co/sony/mc/camera/view/FragmentController;
 
     const/4 v0, 0x0
@@ -111,7 +143,7 @@
 .method public onDisconnected()V
     .locals 2
 
-    .line 5132
+    .line 5310
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/FragmentController$RtmpNotifyListenerImpl;->this$0:Ljp/co/sony/mc/camera/view/FragmentController;
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/view/FragmentController;->-$$Nest$fgetmOnDisconnectedEnable(Ljp/co/sony/mc/camera/view/FragmentController;)Z
@@ -122,7 +154,7 @@
 
     if-ne v0, v1, :cond_0
 
-    .line 5133
+    .line 5311
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/FragmentController$RtmpNotifyListenerImpl;->this$0:Ljp/co/sony/mc/camera/view/FragmentController;
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/view/FragmentController;->-$$Nest$fgetmActivity(Ljp/co/sony/mc/camera/view/FragmentController;)Ljp/co/sony/mc/camera/CameraActivity;
@@ -135,7 +167,7 @@
 
     invoke-virtual {v0, v1}, Ljp/co/sony/mc/camera/CameraActivity;->runOnUiThread(Ljava/lang/Runnable;)V
 
-    .line 5139
+    .line 5317
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/FragmentController$RtmpNotifyListenerImpl;->this$0:Ljp/co/sony/mc/camera/view/FragmentController;
 
     const/4 v0, 0x0
@@ -149,7 +181,7 @@
 .method public onUpdateBitrate(J)V
     .locals 2
 
-    .line 5119
+    .line 5297
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/FragmentController$RtmpNotifyListenerImpl;->this$0:Ljp/co/sony/mc/camera/view/FragmentController;
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/view/FragmentController;->-$$Nest$fgetmActivity(Ljp/co/sony/mc/camera/view/FragmentController;)Ljp/co/sony/mc/camera/CameraActivity;

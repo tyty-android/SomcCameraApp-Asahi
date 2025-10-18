@@ -21,7 +21,7 @@
 .method constructor <init>()V
     .locals 0
 
-    .line 1273
+    .line 1330
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -46,13 +46,13 @@
         }
     .end annotation
 
-    .line 1277
+    .line 1334
     check-cast p1, Ljp/co/sony/mc/camera/setting/CameraSettings;
 
-    .line 1278
-    check-cast p3, Ljp/co/sony/mc/camera/configuration/parameters/Hdr;
+    .line 1335
+    check-cast p3, Ljp/co/sony/mc/camera/configuration/parameters/SelfTimer;
 
-    invoke-static {p1, p3}, Ljp/co/sony/mc/camera/setting/CameraSettings;->-$$Nest$msetHdr(Ljp/co/sony/mc/camera/setting/CameraSettings;Ljp/co/sony/mc/camera/configuration/parameters/Hdr;)Z
+    invoke-static {p1, p3}, Ljp/co/sony/mc/camera/setting/CameraSettings;->-$$Nest$msetSelfTimer(Ljp/co/sony/mc/camera/setting/CameraSettings;Ljp/co/sony/mc/camera/configuration/parameters/SelfTimer;)Z
 
     move-result p0
 

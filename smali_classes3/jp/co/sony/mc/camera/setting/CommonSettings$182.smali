@@ -21,7 +21,7 @@
 .method constructor <init>()V
     .locals 0
 
-    .line 1705
+    .line 1711
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -42,8 +42,8 @@
         }
     .end annotation
 
-    .line 1709
-    invoke-static {}, Ljp/co/sony/mc/camera/configuration/parameters/DisplayFlip;->getDefaultValue()Ljp/co/sony/mc/camera/configuration/parameters/DisplayFlip;
+    .line 1715
+    invoke-static {}, Ljp/co/sony/mc/camera/configuration/parameters/HapticFeedback;->getDefaultValue()Ljp/co/sony/mc/camera/configuration/parameters/HapticFeedback;
 
     move-result-object p0
 

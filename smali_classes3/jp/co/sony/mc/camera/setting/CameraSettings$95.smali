@@ -21,7 +21,7 @@
 .method constructor <init>()V
     .locals 0
 
-    .line 1321
+    .line 1378
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -46,13 +46,13 @@
         }
     .end annotation
 
-    .line 1325
+    .line 1382
     check-cast p1, Ljp/co/sony/mc/camera/setting/CameraSettings;
 
-    .line 1326
-    check-cast p3, Ljp/co/sony/mc/camera/configuration/parameters/HandShutter;
+    .line 1383
+    check-cast p3, Ljava/lang/Float;
 
-    invoke-static {p1, p3}, Ljp/co/sony/mc/camera/setting/CameraSettings;->-$$Nest$msetHandShutter(Ljp/co/sony/mc/camera/setting/CameraSettings;Ljp/co/sony/mc/camera/configuration/parameters/HandShutter;)Z
+    invoke-static {p1, p3}, Ljp/co/sony/mc/camera/setting/CameraSettings;->-$$Nest$msetFocusMagnificationRatio(Ljp/co/sony/mc/camera/setting/CameraSettings;Ljava/lang/Float;)Z
 
     move-result p0
 

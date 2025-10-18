@@ -67,7 +67,7 @@
 .method public final invoke()Ljava/lang/Boolean;
     .locals 0
 
-    .line 161
+    .line 166
     iget-object p0, p0, Landroidx/compose/foundation/ScrollState$canScrollBackward$2;->this$0:Landroidx/compose/foundation/ScrollState;
 
     invoke-virtual {p0}, Landroidx/compose/foundation/ScrollState;->getValue()I
@@ -94,7 +94,7 @@
 .method public bridge synthetic invoke()Ljava/lang/Object;
     .locals 0
 
-    .line 161
+    .line 166
     invoke-virtual {p0}, Landroidx/compose/foundation/ScrollState$canScrollBackward$2;->invoke()Ljava/lang/Boolean;
 
     move-result-object p0

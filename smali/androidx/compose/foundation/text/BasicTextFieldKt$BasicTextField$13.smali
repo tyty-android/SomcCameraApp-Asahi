@@ -69,7 +69,7 @@
 .method public bridge synthetic invoke(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
 
-    .line 366
+    .line 375
     check-cast p1, Landroidx/compose/ui/text/TextLayoutResult;
 
     invoke-virtual {p0, p1}, Landroidx/compose/foundation/text/BasicTextFieldKt$BasicTextField$13;->invoke(Landroidx/compose/ui/text/TextLayoutResult;)V
@@ -81,10 +81,6 @@
 
 .method public final invoke(Landroidx/compose/ui/text/TextLayoutResult;)V
     .locals 0
-
-    const-string p0, "it"
-
-    invoke-static {p1, p0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
     return-void
 .end method

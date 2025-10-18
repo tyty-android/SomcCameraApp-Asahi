@@ -1,6 +1,6 @@
 .class public final Landroidx/compose/ui/tooling/animation/AnimationSearch$AnimateContentSizeSearch;
 .super Landroidx/compose/ui/tooling/animation/AnimationSearch$Search;
-.source "AnimationSearch.kt"
+.source "AnimationSearch.android.kt"
 
 
 # annotations
@@ -22,12 +22,12 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/SourceDebugExtension;
-    value = "SMAP\nAnimationSearch.kt\nKotlin\n*S Kotlin\n*F\n+ 1 AnimationSearch.kt\nandroidx/compose/ui/tooling/animation/AnimationSearch$AnimateContentSizeSearch\n+ 2 _Collections.kt\nkotlin/collections/CollectionsKt___CollectionsKt\n+ 3 fake.kt\nkotlin/jvm/internal/FakeKt\n*L\n1#1,340:1\n766#2:341\n857#2,2:342\n1603#2,9:344\n1855#2:353\n288#2,2:354\n1856#2:357\n1612#2:358\n1#3:356\n*S KotlinDebug\n*F\n+ 1 AnimationSearch.kt\nandroidx/compose/ui/tooling/animation/AnimationSearch$AnimateContentSizeSearch\n*L\n292#1:341\n292#1:342,2\n293#1:344,9\n293#1:353\n295#1:354,2\n293#1:357\n293#1:358\n293#1:356\n*E\n"
+    value = "SMAP\nAnimationSearch.android.kt\nKotlin\n*S Kotlin\n*F\n+ 1 AnimationSearch.android.kt\nandroidx/compose/ui/tooling/animation/AnimationSearch$AnimateContentSizeSearch\n+ 2 _Collections.kt\nkotlin/collections/CollectionsKt___CollectionsKt\n*L\n1#1,457:1\n1747#2,3:458\n766#2:461\n857#2,2:462\n1855#2:464\n1855#2,2:465\n1856#2:467\n*S KotlinDebug\n*F\n+ 1 AnimationSearch.android.kt\nandroidx/compose/ui/tooling/animation/AnimationSearch$AnimateContentSizeSearch\n*L\n360#1:458,3\n370#1:461\n370#1:462,2\n372#1:464\n373#1:465,2\n372#1:467\n*E\n"
 .end annotation
 
 .annotation runtime Lkotlin/Metadata;
     d1 = {
-        "\u0000$\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0018\u0002\n\u0002\u0010\u0002\n\u0002\u0008\u0003\n\u0002\u0010\u001e\n\u0002\u0018\u0002\n\u0000\u0008\u0007\u0018\u00002\u0008\u0012\u0004\u0012\u00020\u00020\u0001B\u0019\u0012\u0012\u0010\u0003\u001a\u000e\u0012\u0004\u0012\u00020\u0002\u0012\u0004\u0012\u00020\u00050\u0004\u00a2\u0006\u0002\u0010\u0006J\u0016\u0010\u0007\u001a\u00020\u00052\u000c\u0010\u0008\u001a\u0008\u0012\u0004\u0012\u00020\n0\tH\u0016\u00a8\u0006\u000b"
+        "\u0000,\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0018\u0002\n\u0002\u0010\u0002\n\u0002\u0008\u0003\n\u0002\u0010\u001e\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000b\n\u0002\u0008\u0002\u0008\u0007\u0018\u00002\u0008\u0012\u0004\u0012\u00020\u00020\u0001B\u0019\u0012\u0012\u0010\u0003\u001a\u000e\u0012\u0004\u0012\u00020\u0002\u0012\u0004\u0012\u00020\u00050\u0004\u00a2\u0006\u0002\u0010\u0006J\u0016\u0010\u0007\u001a\u00020\u00052\u000c\u0010\u0008\u001a\u0008\u0012\u0004\u0012\u00020\n0\tH\u0016J\u0010\u0010\u000b\u001a\u00020\u000c2\u0006\u0010\r\u001a\u00020\nH\u0016\u00a8\u0006\u000e"
     }
     d2 = {
         "Landroidx/compose/ui/tooling/animation/AnimationSearch$AnimateContentSizeSearch;",
@@ -38,9 +38,12 @@
         "",
         "(Lkotlin/jvm/functions/Function1;)V",
         "addAnimations",
-        "groupsWithLocation",
+        "groups",
         "",
         "Landroidx/compose/ui/tooling/data/Group;",
+        "hasAnimation",
+        "",
+        "group",
         "ui-tooling_release"
     }
     k = 0x1
@@ -65,7 +68,7 @@
 .end method
 
 .method public constructor <init>(Lkotlin/jvm/functions/Function1;)V
-    .locals 1
+    .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -76,11 +79,7 @@
         }
     .end annotation
 
-    const-string/jumbo v0, "trackAnimation"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 290
+    .line 357
     invoke-direct {p0, p1}, Landroidx/compose/ui/tooling/animation/AnimationSearch$Search;-><init>(Lkotlin/jvm/functions/Function1;)V
 
     return-void
@@ -89,7 +88,7 @@
 
 # virtual methods
 .method public addAnimations(Ljava/util/Collection;)V
-    .locals 5
+    .locals 3
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -100,25 +99,17 @@
         }
     .end annotation
 
-    const-string v0, "groupsWithLocation"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 292
-    invoke-virtual {p0}, Landroidx/compose/ui/tooling/animation/AnimationSearch$AnimateContentSizeSearch;->getAnimations()Ljava/util/Set;
-
-    move-result-object p0
-
+    .line 370
     check-cast p1, Ljava/lang/Iterable;
 
-    .line 341
+    .line 461
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
     check-cast v0, Ljava/util/Collection;
 
-    .line 342
+    .line 462
     invoke-interface {p1}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
 
     move-result-object p1
@@ -139,131 +130,178 @@
 
     check-cast v2, Landroidx/compose/ui/tooling/data/Group;
 
-    .line 292
-    invoke-virtual {v2}, Landroidx/compose/ui/tooling/data/Group;->getName()Ljava/lang/String;
+    .line 371
+    invoke-virtual {v2}, Landroidx/compose/ui/tooling/data/Group;->getModifierInfo()Ljava/util/List;
 
     move-result-object v2
 
-    const-string v3, "remember"
+    check-cast v2, Ljava/util/Collection;
 
-    invoke-static {v2, v3}, Lkotlin/jvm/internal/Intrinsics;->areEqual(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-interface {v2}, Ljava/util/Collection;->isEmpty()Z
 
     move-result v2
 
+    xor-int/lit8 v2, v2, 0x1
+
     if-eqz v2, :cond_0
 
-    .line 342
+    .line 462
     invoke-interface {v0, v1}, Ljava/util/Collection;->add(Ljava/lang/Object;)Z
 
     goto :goto_0
 
-    .line 343
+    .line 463
     :cond_1
     check-cast v0, Ljava/util/List;
 
-    .line 341
+    .line 461
     check-cast v0, Ljava/lang/Iterable;
 
-    .line 344
-    new-instance p1, Ljava/util/ArrayList;
+    .line 464
+    invoke-interface {v0}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
 
-    invoke-direct {p1}, Ljava/util/ArrayList;-><init>()V
+    move-result-object p1
 
-    check-cast p1, Ljava/util/Collection;
+    :cond_2
+    invoke-interface {p1}, Ljava/util/Iterator;->hasNext()Z
 
-    .line 353
+    move-result v0
+
+    if-eqz v0, :cond_3
+
+    invoke-interface {p1}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, Landroidx/compose/ui/tooling/data/Group;
+
+    .line 373
+    invoke-virtual {v0}, Landroidx/compose/ui/tooling/data/Group;->getModifierInfo()Ljava/util/List;
+
+    move-result-object v0
+
+    check-cast v0, Ljava/lang/Iterable;
+
+    .line 465
     invoke-interface {v0}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
 
     move-result-object v0
 
-    :cond_2
     :goto_1
     invoke-interface {v0}, Ljava/util/Iterator;->hasNext()Z
 
     move-result v1
 
-    if-eqz v1, :cond_6
+    if-eqz v1, :cond_2
 
     invoke-interface {v0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
     move-result-object v1
 
-    .line 352
-    check-cast v1, Landroidx/compose/ui/tooling/data/Group;
+    check-cast v1, Landroidx/compose/ui/layout/ModifierInfo;
 
-    .line 295
-    invoke-virtual {v1}, Landroidx/compose/ui/tooling/data/Group;->getData()Ljava/util/Collection;
-
-    move-result-object v1
-
-    check-cast v1, Ljava/lang/Iterable;
-
-    .line 354
-    invoke-interface {v1}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
+    .line 374
+    invoke-virtual {v1}, Landroidx/compose/ui/layout/ModifierInfo;->getModifier()Landroidx/compose/ui/Modifier;
 
     move-result-object v1
 
-    :cond_3
-    invoke-interface {v1}, Ljava/util/Iterator;->hasNext()Z
+    new-instance v2, Landroidx/compose/ui/tooling/animation/AnimationSearch$AnimateContentSizeSearch$addAnimations$2$1$1;
 
-    move-result v2
+    invoke-direct {v2, p0}, Landroidx/compose/ui/tooling/animation/AnimationSearch$AnimateContentSizeSearch$addAnimations$2$1$1;-><init>(Landroidx/compose/ui/tooling/animation/AnimationSearch$AnimateContentSizeSearch;)V
 
-    const/4 v3, 0x0
+    check-cast v2, Lkotlin/jvm/functions/Function1;
 
-    if-eqz v2, :cond_5
-
-    invoke-interface {v1}, Ljava/util/Iterator;->next()Ljava/lang/Object;
-
-    move-result-object v2
-
-    if-eqz v2, :cond_4
-
-    .line 296
-    invoke-virtual {v2}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
-
-    move-result-object v4
-
-    if-eqz v4, :cond_4
-
-    invoke-virtual {v4}, Ljava/lang/Class;->getName()Ljava/lang/String;
-
-    move-result-object v3
-
-    :cond_4
-    const-string v4, "androidx.compose.animation.SizeAnimationModifier"
-
-    invoke-static {v3, v4}, Lkotlin/jvm/internal/Intrinsics;->areEqual(Ljava/lang/Object;Ljava/lang/Object;)Z
-
-    move-result v3
-
-    if-eqz v3, :cond_3
-
-    move-object v3, v2
-
-    :cond_5
-    if-eqz v3, :cond_2
-
-    .line 352
-    invoke-interface {p1, v3}, Ljava/util/Collection;->add(Ljava/lang/Object;)Z
+    invoke-interface {v1, v2}, Landroidx/compose/ui/Modifier;->any(Lkotlin/jvm/functions/Function1;)Z
 
     goto :goto_1
 
-    .line 358
-    :cond_6
-    check-cast p1, Ljava/util/List;
+    :cond_3
+    return-void
+.end method
 
-    .line 344
-    check-cast p1, Ljava/lang/Iterable;
+.method public hasAnimation(Landroidx/compose/ui/tooling/data/Group;)Z
+    .locals 2
 
-    .line 298
-    invoke-static {p1}, Lkotlin/collections/CollectionsKt;->toSet(Ljava/lang/Iterable;)Ljava/util/Set;
+    .line 360
+    invoke-virtual {p1}, Landroidx/compose/ui/tooling/data/Group;->getModifierInfo()Ljava/util/List;
 
-    move-result-object p1
+    move-result-object p0
+
+    check-cast p0, Ljava/util/Collection;
+
+    invoke-interface {p0}, Ljava/util/Collection;->isEmpty()Z
+
+    move-result p0
+
+    const/4 v0, 0x1
+
+    xor-int/2addr p0, v0
+
+    if-eqz p0, :cond_2
+
+    invoke-virtual {p1}, Landroidx/compose/ui/tooling/data/Group;->getModifierInfo()Ljava/util/List;
+
+    move-result-object p0
+
+    check-cast p0, Ljava/lang/Iterable;
+
+    .line 458
+    instance-of p1, p0, Ljava/util/Collection;
+
+    if-eqz p1, :cond_0
+
+    move-object p1, p0
 
     check-cast p1, Ljava/util/Collection;
 
-    .line 292
-    invoke-interface {p0, p1}, Ljava/util/Set;->addAll(Ljava/util/Collection;)Z
+    invoke-interface {p1}, Ljava/util/Collection;->isEmpty()Z
 
-    return-void
+    move-result p1
+
+    if-eqz p1, :cond_0
+
+    goto :goto_0
+
+    .line 459
+    :cond_0
+    invoke-interface {p0}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
+
+    move-result-object p0
+
+    :cond_1
+    invoke-interface {p0}, Ljava/util/Iterator;->hasNext()Z
+
+    move-result p1
+
+    if-eqz p1, :cond_2
+
+    invoke-interface {p0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+
+    move-result-object p1
+
+    check-cast p1, Landroidx/compose/ui/layout/ModifierInfo;
+
+    .line 361
+    invoke-virtual {p1}, Landroidx/compose/ui/layout/ModifierInfo;->getModifier()Landroidx/compose/ui/Modifier;
+
+    move-result-object p1
+
+    sget-object v1, Landroidx/compose/ui/tooling/animation/AnimationSearch$AnimateContentSizeSearch$hasAnimation$1$1;->INSTANCE:Landroidx/compose/ui/tooling/animation/AnimationSearch$AnimateContentSizeSearch$hasAnimation$1$1;
+
+    check-cast v1, Lkotlin/jvm/functions/Function1;
+
+    invoke-interface {p1, v1}, Landroidx/compose/ui/Modifier;->any(Lkotlin/jvm/functions/Function1;)Z
+
+    move-result p1
+
+    if-eqz p1, :cond_1
+
+    goto :goto_1
+
+    :cond_2
+    :goto_0
+    const/4 v0, 0x0
+
+    :goto_1
+    return v0
 .end method

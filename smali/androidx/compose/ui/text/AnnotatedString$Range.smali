@@ -23,7 +23,7 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/SourceDebugExtension;
-    value = "SMAP\nAnnotatedString.kt\nKotlin\n*S Kotlin\n*F\n+ 1 AnnotatedString.kt\nandroidx/compose/ui/text/AnnotatedString$Range\n+ 2 fake.kt\nkotlin/jvm/internal/FakeKt\n*L\n1#1,1126:1\n1#2:1127\n*E\n"
+    value = "SMAP\nAnnotatedString.kt\nKotlin\n*S Kotlin\n*F\n+ 1 AnnotatedString.kt\nandroidx/compose/ui/text/AnnotatedString$Range\n+ 2 fake.kt\nkotlin/jvm/internal/FakeKt\n*L\n1#1,1128:1\n1#2:1129\n*E\n"
 .end annotation
 
 .annotation runtime Lkotlin/Metadata;
@@ -108,7 +108,7 @@
         }
     .end annotation
 
-    .line 252
+    .line 253
     const-string v0, ""
 
     invoke-direct {p0, p1, p2, p3, v0}, Landroidx/compose/ui/text/AnnotatedString$Range;-><init>(Ljava/lang/Object;IILjava/lang/String;)V
@@ -117,7 +117,7 @@
 .end method
 
 .method public constructor <init>(Ljava/lang/Object;IILjava/lang/String;)V
-    .locals 1
+    .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TT;II",
@@ -126,14 +126,10 @@
         }
     .end annotation
 
-    const-string/jumbo v0, "tag"
-
-    invoke-static {p4, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 250
+    .line 251
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 251
+    .line 252
     iput-object p1, p0, Landroidx/compose/ui/text/AnnotatedString$Range;->item:Ljava/lang/Object;
 
     iput p2, p0, Landroidx/compose/ui/text/AnnotatedString$Range;->start:I
@@ -146,7 +142,7 @@
 
     return-void
 
-    .line 255
+    .line 256
     :cond_0
     new-instance p0, Ljava/lang/IllegalArgumentException;
 
@@ -250,10 +246,6 @@
         }
     .end annotation
 
-    const-string/jumbo p0, "tag"
-
-    invoke-static {p4, p0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
     new-instance p0, Landroidx/compose/ui/text/AnnotatedString$Range;
 
     invoke-direct {p0, p1, p2, p3, p4}, Landroidx/compose/ui/text/AnnotatedString$Range;-><init>(Ljava/lang/Object;IILjava/lang/String;)V
@@ -332,7 +324,7 @@
 .method public final getEnd()I
     .locals 0
 
-    .line 251
+    .line 252
     iget p0, p0, Landroidx/compose/ui/text/AnnotatedString$Range;->end:I
 
     return p0
@@ -346,7 +338,7 @@
         }
     .end annotation
 
-    .line 251
+    .line 252
     iget-object p0, p0, Landroidx/compose/ui/text/AnnotatedString$Range;->item:Ljava/lang/Object;
 
     return-object p0
@@ -355,7 +347,7 @@
 .method public final getStart()I
     .locals 0
 
-    .line 251
+    .line 252
     iget p0, p0, Landroidx/compose/ui/text/AnnotatedString$Range;->start:I
 
     return p0
@@ -364,7 +356,7 @@
 .method public final getTag()Ljava/lang/String;
     .locals 0
 
-    .line 251
+    .line 252
     iget-object p0, p0, Landroidx/compose/ui/text/AnnotatedString$Range;->tag:Ljava/lang/String;
 
     return-object p0

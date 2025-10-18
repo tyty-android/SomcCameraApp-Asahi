@@ -61,7 +61,7 @@
 .method private constructor <init>()V
     .locals 0
 
-    .line 296
+    .line 309
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -72,7 +72,7 @@
 .method public final getEnableExtraAssertions()Z
     .locals 0
 
-    .line 301
+    .line 314
     sget-boolean p0, Landroidx/compose/ui/node/Owner$Companion;->enableExtraAssertions:Z
 
     return p0
@@ -81,7 +81,7 @@
 .method public final setEnableExtraAssertions(Z)V
     .locals 0
 
-    .line 301
+    .line 314
     sput-boolean p1, Landroidx/compose/ui/node/Owner$Companion;->enableExtraAssertions:Z
 
     return-void

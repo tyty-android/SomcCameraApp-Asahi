@@ -41,7 +41,7 @@
 
     const/4 v0, 0x0
 
-    .line 911
+    .line 957
     invoke-direct {p0, p1, v0}, Lio/grpc/Context$Key;-><init>(Ljava/lang/String;Ljava/lang/Object;)V
 
     return-void
@@ -57,10 +57,10 @@
         }
     .end annotation
 
-    .line 914
+    .line 960
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 915
+    .line 961
     const-string v0, "name"
 
     invoke-static {p1, v0}, Lio/grpc/Context;->checkNotNull(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
@@ -71,7 +71,7 @@
 
     iput-object p1, p0, Lio/grpc/Context$Key;->name:Ljava/lang/String;
 
-    .line 916
+    .line 962
     iput-object p2, p0, Lio/grpc/Context$Key;->defaultValue:Ljava/lang/Object;
 
     return-void
@@ -87,7 +87,7 @@
         }
     .end annotation
 
-    .line 924
+    .line 969
     invoke-static {}, Lio/grpc/Context;->current()Lio/grpc/Context;
 
     move-result-object v0
@@ -109,14 +109,16 @@
         }
     .end annotation
 
-    .line 932
-    invoke-virtual {p1, p0}, Lio/grpc/Context;->lookup(Lio/grpc/Context$Key;)Ljava/lang/Object;
+    .line 977
+    iget-object p1, p1, Lio/grpc/Context;->keyValueEntries:Lio/grpc/PersistentHashArrayMappedTrie$Node;
+
+    invoke-static {p1, p0}, Lio/grpc/PersistentHashArrayMappedTrie;->get(Lio/grpc/PersistentHashArrayMappedTrie$Node;Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p1
 
     if-nez p1, :cond_0
 
-    .line 933
+    .line 978
     iget-object p1, p0, Lio/grpc/Context$Key;->defaultValue:Ljava/lang/Object;
 
     :cond_0
@@ -126,7 +128,7 @@
 .method public toString()Ljava/lang/String;
     .locals 0
 
-    .line 938
+    .line 983
     iget-object p0, p0, Lio/grpc/Context$Key;->name:Ljava/lang/String;
 
     return-object p0

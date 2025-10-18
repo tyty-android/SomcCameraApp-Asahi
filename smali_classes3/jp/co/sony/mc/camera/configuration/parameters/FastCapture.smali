@@ -73,7 +73,7 @@
 
     const/4 v3, -0x1
 
-    const v4, 0x7f1102ba
+    const v4, 0x7f1102de
 
     const/4 v5, 0x1
 
@@ -96,7 +96,7 @@
 
     const/4 v12, -0x1
 
-    const v13, 0x7f1103be
+    const v13, 0x7f1103f3
 
     const/4 v14, 0x0
 

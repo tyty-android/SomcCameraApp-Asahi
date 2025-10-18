@@ -1,6 +1,6 @@
 .class public final Landroidx/lifecycle/ReportFragment$Companion;
 .super Ljava/lang/Object;
-.source "ReportFragment.kt"
+.source "ReportFragment.android.kt"
 
 
 # annotations
@@ -53,7 +53,7 @@
 .method private constructor <init>()V
     .locals 0
 
-    .line 161
+    .line 159
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -90,12 +90,12 @@
 
     invoke-static {p2, p0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 185
+    .line 183
     instance-of p0, p1, Landroidx/lifecycle/LifecycleRegistryOwner;
 
     if-eqz p0, :cond_0
 
-    .line 186
+    .line 184
     check-cast p1, Landroidx/lifecycle/LifecycleRegistryOwner;
 
     invoke-interface {p1}, Landroidx/lifecycle/LifecycleRegistryOwner;->getLifecycle()Landroidx/lifecycle/LifecycleRegistry;
@@ -106,25 +106,25 @@
 
     return-void
 
-    .line 189
+    .line 187
     :cond_0
     instance-of p0, p1, Landroidx/lifecycle/LifecycleOwner;
 
     if-eqz p0, :cond_1
 
-    .line 190
+    .line 188
     check-cast p1, Landroidx/lifecycle/LifecycleOwner;
 
     invoke-interface {p1}, Landroidx/lifecycle/LifecycleOwner;->getLifecycle()Landroidx/lifecycle/Lifecycle;
 
     move-result-object p0
 
-    .line 191
+    .line 189
     instance-of p1, p0, Landroidx/lifecycle/LifecycleRegistry;
 
     if-eqz p1, :cond_1
 
-    .line 192
+    .line 190
     check-cast p0, Landroidx/lifecycle/LifecycleRegistry;
 
     invoke-virtual {p0, p2}, Landroidx/lifecycle/LifecycleRegistry;->handleLifecycleEvent(Landroidx/lifecycle/Lifecycle$Event;)V
@@ -140,15 +140,15 @@
 
     invoke-static {p1, p0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 201
+    .line 199
     invoke-virtual {p1}, Landroid/app/Activity;->getFragmentManager()Landroid/app/FragmentManager;
 
     move-result-object p0
 
-    .line 202
+    .line 200
     const-string p1, "androidx.lifecycle.LifecycleDispatcher.report_fragment_tag"
 
-    .line 201
+    .line 199
     invoke-virtual {p0, p1}, Landroid/app/FragmentManager;->findFragmentByTag(Ljava/lang/String;)Landroid/app/Fragment;
 
     move-result-object p0
@@ -171,17 +171,17 @@
 
     invoke-static {p1, p0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 169
+    .line 167
     sget-object p0, Landroidx/lifecycle/ReportFragment$LifecycleCallbacks;->Companion:Landroidx/lifecycle/ReportFragment$LifecycleCallbacks$Companion;
 
     invoke-virtual {p0, p1}, Landroidx/lifecycle/ReportFragment$LifecycleCallbacks$Companion;->registerIn(Landroid/app/Activity;)V
 
-    .line 175
+    .line 173
     invoke-virtual {p1}, Landroid/app/Activity;->getFragmentManager()Landroid/app/FragmentManager;
 
     move-result-object p0
 
-    .line 176
+    .line 174
     const-string p1, "androidx.lifecycle.LifecycleDispatcher.report_fragment_tag"
 
     invoke-virtual {p0, p1}, Landroid/app/FragmentManager;->findFragmentByTag(Ljava/lang/String;)Landroid/app/Fragment;
@@ -190,7 +190,7 @@
 
     if-nez v0, :cond_0
 
-    .line 177
+    .line 175
     invoke-virtual {p0}, Landroid/app/FragmentManager;->beginTransaction()Landroid/app/FragmentTransaction;
 
     move-result-object v0
@@ -207,7 +207,7 @@
 
     invoke-virtual {p1}, Landroid/app/FragmentTransaction;->commit()I
 
-    .line 179
+    .line 177
     invoke-virtual {p0}, Landroid/app/FragmentManager;->executePendingTransactions()Z
 
     :cond_0

@@ -51,15 +51,15 @@
 .method constructor <init>()V
     .locals 1
 
-    .line 671
+    .line 761
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     const/high16 v0, 0x3f800000    # 1.0f
 
-    .line 672
+    .line 762
     iput v0, p0, Landroidx/compose/foundation/pager/PagerStateKt$UnitDensity$1;->density:F
 
-    .line 673
+    .line 763
     iput v0, p0, Landroidx/compose/foundation/pager/PagerStateKt$UnitDensity$1;->fontScale:F
 
     return-void
@@ -70,7 +70,7 @@
 .method public getDensity()F
     .locals 0
 
-    .line 672
+    .line 762
     iget p0, p0, Landroidx/compose/foundation/pager/PagerStateKt$UnitDensity$1;->density:F
 
     return p0
@@ -79,7 +79,7 @@
 .method public getFontScale()F
     .locals 0
 
-    .line 673
+    .line 763
     iget p0, p0, Landroidx/compose/foundation/pager/PagerStateKt$UnitDensity$1;->fontScale:F
 
     return p0

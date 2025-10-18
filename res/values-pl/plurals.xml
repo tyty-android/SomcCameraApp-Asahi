@@ -6,20 +6,4 @@
         <item quantity="few">%d nowe powiadomienia</item>
         <item quantity="many">%d nowych powiadomień</item>
     </plurals>
-    <plurals name="mv_minute_remaining_txt">
-        <item quantity="other">Pozostało %1$d min</item>
-        <item quantity="one">Pozostała 1 min</item>
-    </plurals>
-    <plurals name="mv_minute_txt">
-        <item quantity="other">%1$d min</item>
-        <item quantity="one">1 min</item>
-    </plurals>
-    <plurals name="mv_second_remaining_txt">
-        <item quantity="other">Pozostało %1$d s</item>
-        <item quantity="one">Pozostała 1 s</item>
-    </plurals>
-    <plurals name="mv_second_txt">
-        <item quantity="other">%1$d sek.</item>
-        <item quantity="one">1 s</item>
-    </plurals>
 </resources>

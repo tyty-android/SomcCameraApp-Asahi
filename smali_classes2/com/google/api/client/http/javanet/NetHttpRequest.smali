@@ -61,7 +61,7 @@
 
     const/4 p0, 0x0
 
-    .line 161
+    .line 164
     :try_start_0
     invoke-virtual {p1}, Ljava/net/HttpURLConnection;->getResponseCode()I
 
@@ -86,12 +86,12 @@
         }
     .end annotation
 
-    .line 170
+    .line 173
     iget v0, p0, Lcom/google/api/client/http/javanet/NetHttpRequest;->writeTimeout:I
 
     if-nez v0, :cond_0
 
-    .line 171
+    .line 174
     invoke-virtual {p0}, Lcom/google/api/client/http/javanet/NetHttpRequest;->getStreamingContent()Lcom/google/api/client/util/StreamingContent;
 
     move-result-object p0
@@ -100,23 +100,23 @@
 
     goto :goto_0
 
-    .line 174
+    .line 177
     :cond_0
     invoke-virtual {p0}, Lcom/google/api/client/http/javanet/NetHttpRequest;->getStreamingContent()Lcom/google/api/client/util/StreamingContent;
 
     move-result-object v0
 
-    .line 175
+    .line 178
     new-instance v1, Lcom/google/api/client/http/javanet/NetHttpRequest$1;
 
     invoke-direct {v1, p0, p1, p2, v0}, Lcom/google/api/client/http/javanet/NetHttpRequest$1;-><init>(Lcom/google/api/client/http/javanet/NetHttpRequest;Lcom/google/api/client/http/javanet/NetHttpRequest$OutputWriter;Ljava/io/OutputStream;Lcom/google/api/client/util/StreamingContent;)V
 
-    .line 184
+    .line 187
     invoke-static {}, Ljava/util/concurrent/Executors;->newSingleThreadExecutor()Ljava/util/concurrent/ExecutorService;
 
     move-result-object p1
 
-    .line 185
+    .line 188
     new-instance p2, Ljava/util/concurrent/FutureTask;
 
     invoke-direct {p2, v1}, Ljava/util/concurrent/FutureTask;-><init>(Ljava/util/concurrent/Callable;)V
@@ -127,10 +127,10 @@
 
     move-result-object p2
 
-    .line 186
+    .line 189
     invoke-interface {p1}, Ljava/util/concurrent/ExecutorService;->shutdown()V
 
-    .line 189
+    .line 192
     :try_start_0
     iget p0, p0, Lcom/google/api/client/http/javanet/NetHttpRequest;->writeTimeout:I
 
@@ -144,14 +144,14 @@
     .catch Ljava/util/concurrent/ExecutionException; {:try_start_0 .. :try_end_0} :catch_1
     .catch Ljava/util/concurrent/TimeoutException; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 197
+    .line 200
     invoke-interface {p1}, Ljava/util/concurrent/ExecutorService;->isTerminated()Z
 
     move-result p0
 
     if-nez p0, :cond_1
 
-    .line 198
+    .line 201
     invoke-interface {p1}, Ljava/util/concurrent/ExecutorService;->shutdown()V
 
     :cond_1
@@ -161,7 +161,7 @@
     :catch_0
     move-exception p0
 
-    .line 195
+    .line 198
     new-instance p1, Ljava/io/IOException;
 
     const-string p2, "Socket write timed out"
@@ -173,7 +173,7 @@
     :catch_1
     move-exception p0
 
-    .line 193
+    .line 196
     new-instance p1, Ljava/io/IOException;
 
     const-string p2, "Exception in socket write"
@@ -185,7 +185,7 @@
     :catch_2
     move-exception p0
 
-    .line 191
+    .line 194
     new-instance p1, Ljava/io/IOException;
 
     const-string p2, "Socket write interrupted"
@@ -242,6 +242,10 @@
 
     move-result-object v1
 
+    const-wide/16 v2, 0x0
+
+    const/4 v4, 0x1
+
     if-eqz v1, :cond_8
 
     .line 92
@@ -252,9 +256,9 @@
     if-eqz v1, :cond_0
 
     .line 94
-    const-string v2, "Content-Type"
+    const-string v5, "Content-Type"
 
-    invoke-virtual {p0, v2, v1}, Lcom/google/api/client/http/javanet/NetHttpRequest;->addHeader(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-virtual {p0, v5, v1}, Lcom/google/api/client/http/javanet/NetHttpRequest;->addHeader(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 96
     :cond_0
@@ -265,103 +269,102 @@
     if-eqz v1, :cond_1
 
     .line 98
-    const-string v2, "Content-Encoding"
+    const-string v5, "Content-Encoding"
 
-    invoke-virtual {p0, v2, v1}, Lcom/google/api/client/http/javanet/NetHttpRequest;->addHeader(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-virtual {p0, v5, v1}, Lcom/google/api/client/http/javanet/NetHttpRequest;->addHeader(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 100
     :cond_1
     invoke-virtual {p0}, Lcom/google/api/client/http/javanet/NetHttpRequest;->getContentLength()J
 
-    move-result-wide v1
+    move-result-wide v5
 
-    const-wide/16 v3, 0x0
+    cmp-long v1, v5, v2
 
-    cmp-long v3, v1, v3
-
-    if-ltz v3, :cond_2
+    if-ltz v1, :cond_2
 
     .line 102
-    const-string v4, "Content-Length"
+    const-string v2, "Content-Length"
 
-    invoke-static {v1, v2}, Ljava/lang/Long;->toString(J)Ljava/lang/String;
+    invoke-static {v5, v6}, Ljava/lang/Long;->toString(J)Ljava/lang/String;
 
-    move-result-object v5
+    move-result-object v3
 
-    invoke-virtual {v0, v4, v5}, Ljava/net/HttpURLConnection;->setRequestProperty(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-virtual {v0, v2, v3}, Ljava/net/HttpURLConnection;->setRequestProperty(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 104
     :cond_2
     invoke-virtual {v0}, Ljava/net/HttpURLConnection;->getRequestMethod()Ljava/lang/String;
 
-    move-result-object v4
+    move-result-object v2
 
     .line 105
-    const-string v5, "POST"
+    const-string v3, "POST"
 
-    invoke-virtual {v5, v4}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+    invoke-virtual {v3, v2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
-    move-result v5
+    move-result v3
 
-    const/4 v6, 0x0
+    const/4 v7, 0x0
 
-    const/4 v7, 0x1
+    if-nez v3, :cond_5
 
-    if-nez v5, :cond_5
+    const-string v3, "PUT"
 
-    const-string v5, "PUT"
+    invoke-virtual {v3, v2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
-    invoke-virtual {v5, v4}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+    move-result v3
 
-    move-result v5
+    if-eqz v3, :cond_3
 
-    if-eqz v5, :cond_3
+    goto :goto_1
+
+    :cond_3
+    if-nez v1, :cond_4
 
     goto :goto_0
 
-    :cond_3
-    if-nez v3, :cond_4
-
-    move v6, v7
+    :cond_4
+    move v4, v7
 
     .line 141
-    :cond_4
+    :goto_0
     const-string p0, "%s with non-zero content length is not supported"
 
-    filled-new-array {v4}, [Ljava/lang/Object;
+    filled-new-array {v2}, [Ljava/lang/Object;
 
     move-result-object p1
 
-    invoke-static {v6, p0, p1}, Lcom/google/api/client/util/Preconditions;->checkArgument(ZLjava/lang/String;[Ljava/lang/Object;)V
+    invoke-static {v4, p0, p1}, Lcom/google/api/client/util/Preconditions;->checkArgument(ZLjava/lang/String;[Ljava/lang/Object;)V
 
-    goto :goto_3
+    goto :goto_4
 
     .line 106
     :cond_5
-    :goto_0
-    invoke-virtual {v0, v7}, Ljava/net/HttpURLConnection;->setDoOutput(Z)V
+    :goto_1
+    invoke-virtual {v0, v4}, Ljava/net/HttpURLConnection;->setDoOutput(Z)V
 
-    if-ltz v3, :cond_6
+    if-ltz v1, :cond_6
 
-    const-wide/32 v3, 0x7fffffff
+    const-wide/32 v1, 0x7fffffff
 
-    cmp-long v3, v1, v3
+    cmp-long v1, v5, v1
 
-    if-gtz v3, :cond_6
+    if-gtz v1, :cond_6
 
-    long-to-int v1, v1
+    long-to-int v1, v5
 
     .line 109
     invoke-virtual {v0, v1}, Ljava/net/HttpURLConnection;->setFixedLengthStreamingMode(I)V
 
-    goto :goto_1
+    goto :goto_2
 
     .line 111
     :cond_6
-    invoke-virtual {v0, v6}, Ljava/net/HttpURLConnection;->setChunkedStreamingMode(I)V
+    invoke-virtual {v0, v7}, Ljava/net/HttpURLConnection;->setChunkedStreamingMode(I)V
 
     .line 113
-    :goto_1
+    :goto_2
     invoke-virtual {v0}, Ljava/net/HttpURLConnection;->getOutputStream()Ljava/io/OutputStream;
 
     move-result-object v1
@@ -376,12 +379,12 @@
     .line 128
     invoke-virtual {v1}, Ljava/io/OutputStream;->close()V
 
-    goto :goto_3
+    goto :goto_4
 
     :catchall_0
     move-exception p0
 
-    goto :goto_2
+    goto :goto_3
 
     :catch_0
     move-exception p1
@@ -402,7 +405,7 @@
     :try_end_2
     .catch Ljava/io/IOException; {:try_start_2 .. :try_end_2} :catch_2
 
-    goto :goto_3
+    goto :goto_4
 
     .line 124
     :cond_7
@@ -412,7 +415,7 @@
     .catchall {:try_start_3 .. :try_end_3} :catchall_0
 
     .line 128
-    :goto_2
+    :goto_3
     :try_start_4
     invoke-virtual {v1}, Ljava/io/OutputStream;->close()V
     :try_end_4
@@ -422,14 +425,34 @@
     :catch_1
     throw p0
 
-    .line 148
-    :catch_2
+    .line 144
     :cond_8
-    :goto_3
+    const-string p0, "DELETE"
+
+    invoke-virtual {v0}, Ljava/net/HttpURLConnection;->getRequestMethod()Ljava/lang/String;
+
+    move-result-object p1
+
+    invoke-virtual {p0, p1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result p0
+
+    if-eqz p0, :cond_9
+
+    .line 145
+    invoke-virtual {v0, v4}, Ljava/net/HttpURLConnection;->setDoOutput(Z)V
+
+    .line 146
+    invoke-virtual {v0, v2, v3}, Ljava/net/HttpURLConnection;->setFixedLengthStreamingMode(J)V
+
+    .line 151
+    :catch_2
+    :cond_9
+    :goto_4
     :try_start_5
     invoke-virtual {v0}, Ljava/net/HttpURLConnection;->connect()V
 
-    .line 149
+    .line 152
     new-instance p0, Lcom/google/api/client/http/javanet/NetHttpResponse;
 
     invoke-direct {p0, v0}, Lcom/google/api/client/http/javanet/NetHttpResponse;-><init>(Ljava/net/HttpURLConnection;)V
@@ -441,10 +464,10 @@
     :catchall_1
     move-exception p0
 
-    .line 154
+    .line 157
     invoke-virtual {v0}, Ljava/net/HttpURLConnection;->disconnect()V
 
-    .line 156
+    .line 159
     throw p0
 .end method
 

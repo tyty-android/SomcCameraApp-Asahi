@@ -57,26 +57,18 @@
 .end method
 
 .method public constructor <init>(Landroidx/compose/ui/Modifier;Landroidx/compose/ui/layout/LayoutCoordinates;Ljava/lang/Object;)V
-    .locals 1
+    .locals 0
 
-    const-string v0, "modifier"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string v0, "coordinates"
-
-    invoke-static {p2, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 90
+    .line 97
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 91
+    .line 98
     iput-object p1, p0, Landroidx/compose/ui/layout/ModifierInfo;->modifier:Landroidx/compose/ui/Modifier;
 
-    .line 92
+    .line 99
     iput-object p2, p0, Landroidx/compose/ui/layout/ModifierInfo;->coordinates:Landroidx/compose/ui/layout/LayoutCoordinates;
 
-    .line 93
+    .line 100
     iput-object p3, p0, Landroidx/compose/ui/layout/ModifierInfo;->extra:Ljava/lang/Object;
 
     return-void
@@ -91,7 +83,7 @@
 
     const/4 p3, 0x0
 
-    .line 90
+    .line 97
     :cond_0
     invoke-direct {p0, p1, p2, p3}, Landroidx/compose/ui/layout/ModifierInfo;-><init>(Landroidx/compose/ui/Modifier;Landroidx/compose/ui/layout/LayoutCoordinates;Ljava/lang/Object;)V
 
@@ -103,7 +95,7 @@
 .method public final getCoordinates()Landroidx/compose/ui/layout/LayoutCoordinates;
     .locals 0
 
-    .line 92
+    .line 99
     iget-object p0, p0, Landroidx/compose/ui/layout/ModifierInfo;->coordinates:Landroidx/compose/ui/layout/LayoutCoordinates;
 
     return-object p0
@@ -112,7 +104,7 @@
 .method public final getExtra()Ljava/lang/Object;
     .locals 0
 
-    .line 93
+    .line 100
     iget-object p0, p0, Landroidx/compose/ui/layout/ModifierInfo;->extra:Ljava/lang/Object;
 
     return-object p0
@@ -121,7 +113,7 @@
 .method public final getModifier()Landroidx/compose/ui/Modifier;
     .locals 0
 
-    .line 91
+    .line 98
     iget-object p0, p0, Landroidx/compose/ui/layout/ModifierInfo;->modifier:Landroidx/compose/ui/Modifier;
 
     return-object p0
@@ -130,7 +122,7 @@
 .method public toString()Ljava/lang/String;
     .locals 3
 
-    .line 96
+    .line 103
     new-instance v0, Ljava/lang/StringBuilder;
 
     const-string v1, "ModifierInfo("

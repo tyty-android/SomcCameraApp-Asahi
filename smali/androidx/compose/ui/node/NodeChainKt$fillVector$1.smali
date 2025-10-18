@@ -33,7 +33,7 @@
     d2 = {
         "<anonymous>",
         "",
-        "it",
+        "element",
         "Landroidx/compose/ui/Modifier$Element;",
         "invoke",
         "(Landroidx/compose/ui/Modifier$Element;)Ljava/lang/Boolean;"
@@ -84,20 +84,16 @@
 
 # virtual methods
 .method public final invoke(Landroidx/compose/ui/Modifier$Element;)Ljava/lang/Boolean;
-    .locals 1
+    .locals 0
 
-    const-string v0, "it"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 825
+    .line 843
     iget-object p0, p0, Landroidx/compose/ui/node/NodeChainKt$fillVector$1;->$result:Landroidx/compose/runtime/collection/MutableVector;
 
     invoke-virtual {p0, p1}, Landroidx/compose/runtime/collection/MutableVector;->add(Ljava/lang/Object;)Z
 
     const/4 p0, 0x1
 
-    .line 826
+    .line 844
     invoke-static {p0}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
     move-result-object p0
@@ -108,7 +104,7 @@
 .method public bridge synthetic invoke(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
 
-    .line 824
+    .line 845
     check-cast p1, Landroidx/compose/ui/Modifier$Element;
 
     invoke-virtual {p0, p1}, Landroidx/compose/ui/node/NodeChainKt$fillVector$1;->invoke(Landroidx/compose/ui/Modifier$Element;)Ljava/lang/Boolean;

@@ -14,82 +14,84 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/SourceDebugExtension;
-    value = "SMAP\nWifiConnectionHelper.kt\nKotlin\n*S Kotlin\n*F\n+ 1 WifiConnectionHelper.kt\njp/co/sony/mc/camera/qrdetection/WifiConnectionHelper$Companion\n+ 2 Strings.kt\nkotlin/text/StringsKt__StringsKt\n+ 3 ArraysJVM.kt\nkotlin/collections/ArraysKt__ArraysJVMKt\n*L\n1#1,279:1\n107#2:280\n79#2,22:281\n37#3,2:303\n*S KotlinDebug\n*F\n+ 1 WifiConnectionHelper.kt\njp/co/sony/mc/camera/qrdetection/WifiConnectionHelper$Companion\n*L\n218#1:280\n218#1:281,22\n230#1:303,2\n*E\n"
+    value = "SMAP\nWifiConnectionHelper.kt\nKotlin\n*S Kotlin\n*F\n+ 1 WifiConnectionHelper.kt\njp/co/sony/mc/camera/qrdetection/WifiConnectionHelper$Companion\n+ 2 Strings.kt\nkotlin/text/StringsKt__StringsKt\n+ 3 ArraysJVM.kt\nkotlin/collections/ArraysKt__ArraysJVMKt\n*L\n1#1,279:1\n108#2:280\n80#2,22:281\n37#3,2:303\n*S KotlinDebug\n*F\n+ 1 WifiConnectionHelper.kt\njp/co/sony/mc/camera/qrdetection/WifiConnectionHelper$Companion\n*L\n218#1:280\n218#1:281,22\n230#1:303,2\n*E\n"
 .end annotation
 
 .annotation runtime Lkotlin/Metadata;
     d1 = {
-        "\u0000d\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0010\u000c\n\u0000\n\u0002\u0010\u000e\n\u0002\u0008\u000c\n\u0002\u0010\u000b\n\u0002\u0008\u0004\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0004\n\u0002\u0010\u0008\n\u0000\n\u0002\u0010\r\n\u0002\u0008\u0006\n\u0002\u0010\u0011\n\u0002\u0008\u0008\n\u0002\u0018\u0002\n\u0002\u0008\u0003\n\u0002\u0010\u0002\n\u0002\u0008\u0004\u0008\u0086\u0003\u0018\u00002\u00020\u0001B\u0007\u0008\u0002\u00a2\u0006\u0002\u0010\u0002J\u0010\u0010\u001a\u001a\u00020\u000b2\u0006\u0010\u001b\u001a\u00020\u000bH\u0002J\u0010\u0010\u001c\u001a\u00020\u001d2\u0006\u0010\u001e\u001a\u00020\u001fH\u0002J\u0010\u0010 \u001a\u00020\u001d2\u0006\u0010\u001e\u001a\u00020\u001fH\u0007J\u0010\u0010!\u001a\u00020\u001d2\u0006\u0010\u001e\u001a\u00020\u001fH\u0007J\u0010\u0010\"\u001a\u00020\u001d2\u0006\u0010\u001e\u001a\u00020\u001fH\u0007J\u0018\u0010#\u001a\u00020$2\u0006\u0010%\u001a\u00020&2\u0006\u0010\'\u001a\u00020$H\u0002J\u0010\u0010(\u001a\u00020\u00182\u0006\u0010)\u001a\u00020\u000bH\u0002J\u0010\u0010*\u001a\u00020\u00182\u0006\u0010+\u001a\u00020\u000bH\u0002J5\u0010,\u001a\n\u0012\u0004\u0012\u00020\u000b\u0018\u00010-2\u0006\u0010.\u001a\u00020\u000b2\u0006\u0010/\u001a\u00020\u000b2\u0006\u00100\u001a\u00020\t2\u0006\u00101\u001a\u00020\u0018H\u0002\u00a2\u0006\u0002\u00102J*\u00103\u001a\u0004\u0018\u00010\u000b2\u0006\u0010.\u001a\u00020\u000b2\u0006\u0010/\u001a\u00020\u000b2\u0006\u00100\u001a\u00020\t2\u0006\u00101\u001a\u00020\u0018H\u0002J\u0018\u00104\u001a\u00020\u001f2\u0006\u00105\u001a\u0002062\u0006\u0010/\u001a\u00020\u000bH\u0007J\u0010\u00107\u001a\u00020\u001f2\u0006\u00108\u001a\u00020\u000bH\u0007J\u0010\u00109\u001a\u00020:2\u0006\u0010;\u001a\u00020\u0018H\u0007J\u0010\u0010<\u001a\u00020\u000b2\u0006\u0010=\u001a\u00020\u000bH\u0002R\u000e\u0010\u0003\u001a\u00020\u0004X\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u0016\u0010\u0005\u001a\n \u0007*\u0004\u0018\u00010\u00060\u0006X\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u0008\u001a\u00020\tX\u0082T\u00a2\u0006\u0002\n\u0000R\u000e\u0010\n\u001a\u00020\u000bX\u0082D\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u000c\u001a\u00020\u000bX\u0086T\u00a2\u0006\u0002\n\u0000R\u000e\u0010\r\u001a\u00020\u000bX\u0086T\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u000e\u001a\u00020\tX\u0086T\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u000f\u001a\u00020\u000bX\u0086T\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u0010\u001a\u00020\u000bX\u0086T\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u0011\u001a\u00020\u000bX\u0086T\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u0012\u001a\u00020\u000bX\u0086T\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u0013\u001a\u00020\u000bX\u0086T\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u0014\u001a\u00020\u000bX\u0086T\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u0015\u001a\u00020\u000bX\u0086T\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u0016\u001a\u00020\u000bX\u0086T\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u0017\u001a\u00020\u0018X\u0082\u000e\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u0019\u001a\u00020\u0018X\u0082\u000e\u00a2\u0006\u0002\n\u0000\u00a8\u0006>"
+        "\u0000d\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\u0008\u0003\n\u0002\u0010\u000e\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\r\n\u0002\u0010\u000c\n\u0002\u0008\u0002\n\u0002\u0010\u000b\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0004\n\u0002\u0018\u0002\n\u0002\u0008\u0004\n\u0002\u0010\u0002\n\u0002\u0008\u000b\n\u0002\u0010\u0011\n\u0002\u0008\u0002\n\u0002\u0010\u0008\n\u0000\n\u0002\u0010\r\n\u0002\u0008\u0006\u0008\u0086\u0003\u0018\u00002\u00020\u0001B\t\u0008\u0002\u00a2\u0006\u0004\u0008\u0002\u0010\u0003J\u0010\u0010\u001c\u001a\u00020\u001d2\u0006\u0010\u001e\u001a\u00020\u001fH\u0007J\u0010\u0010 \u001a\u00020\u001d2\u0006\u0010\u001e\u001a\u00020\u001fH\u0007J\u0010\u0010!\u001a\u00020\u001d2\u0006\u0010\u001e\u001a\u00020\u001fH\u0007J\u0018\u0010\"\u001a\u00020\u001f2\u0006\u0010#\u001a\u00020$2\u0006\u0010%\u001a\u00020\u0005H\u0007J\u0010\u0010&\u001a\u00020\u001f2\u0006\u0010\'\u001a\u00020\u0005H\u0007J\u0010\u0010(\u001a\u00020)2\u0006\u0010*\u001a\u00020\u001aH\u0007J\u0010\u0010+\u001a\u00020\u001a2\u0006\u0010,\u001a\u00020\u0005H\u0002J\u0010\u0010-\u001a\u00020\u001a2\u0006\u0010.\u001a\u00020\u0005H\u0002J\u0010\u0010/\u001a\u00020\u001d2\u0006\u0010\u001e\u001a\u00020\u001fH\u0002J*\u00100\u001a\u0004\u0018\u00010\u00052\u0006\u00101\u001a\u00020\u00052\u0006\u0010%\u001a\u00020\u00052\u0006\u00102\u001a\u00020\u00172\u0006\u00103\u001a\u00020\u001aH\u0002J5\u00104\u001a\n\u0012\u0004\u0012\u00020\u0005\u0018\u0001052\u0006\u00101\u001a\u00020\u00052\u0006\u0010%\u001a\u00020\u00052\u0006\u00102\u001a\u00020\u00172\u0006\u00103\u001a\u00020\u001aH\u0002\u00a2\u0006\u0002\u00106J\u0018\u00107\u001a\u0002082\u0006\u00109\u001a\u00020:2\u0006\u0010;\u001a\u000208H\u0002J\u0010\u0010<\u001a\u00020\u00052\u0006\u0010=\u001a\u00020\u0005H\u0002J\u0010\u0010>\u001a\u00020\u00052\u0006\u0010?\u001a\u00020\u0005H\u0002R\u000e\u0010\u0004\u001a\u00020\u0005X\u0082D\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u0006\u001a\u00020\u0007X\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u0018\u0010\u0008\u001a\n \n*\u0004\u0018\u00010\t0\tX\u0082\u0004\u00a2\u0006\u0004\n\u0002\u0010\u000bR\u000e\u0010\u000c\u001a\u00020\u0005X\u0086T\u00a2\u0006\u0002\n\u0000R\u000e\u0010\r\u001a\u00020\u0005X\u0086T\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u000e\u001a\u00020\u0005X\u0086T\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u000f\u001a\u00020\u0005X\u0086T\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u0010\u001a\u00020\u0005X\u0086T\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u0011\u001a\u00020\u0005X\u0086T\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u0012\u001a\u00020\u0005X\u0086T\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u0013\u001a\u00020\u0005X\u0086T\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u0014\u001a\u00020\u0005X\u0086T\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u0015\u001a\u00020\u0005X\u0086T\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u0016\u001a\u00020\u0017X\u0086T\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u0018\u001a\u00020\u0017X\u0082T\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u0019\u001a\u00020\u001aX\u0082\u000e\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u001b\u001a\u00020\u001aX\u0082\u000e\u00a2\u0006\u0002\n\u0000\u00a8\u0006@"
     }
     d2 = {
         "Ljp/co/sony/mc/camera/qrdetection/WifiConnectionHelper$Companion;",
         "",
+        "<init>",
         "()V",
+        "SYMBOL_QUOTATION",
+        "",
         "HEX_DIGITS",
         "Lkotlin/text/Regex;",
         "HEX_DIGITS_64",
         "Ljava/util/regex/Pattern;",
         "kotlin.jvm.PlatformType",
-        "SYMBOL_BACKSLASH",
-        "",
-        "SYMBOL_QUOTATION",
-        "",
-        "WIFI_RESULT_HIDDEN_FIELD",
-        "WIFI_RESULT_PASSWORD_FIELD",
-        "WIFI_RESULT_SEPARATOR",
-        "WIFI_RESULT_SSID_FIELD",
+        "Ljava/util/regex/Pattern;",
         "WIFI_RESULT_TITLE_FIELD",
+        "WIFI_RESULT_SSID_FIELD",
+        "WIFI_RESULT_PASSWORD_FIELD",
         "WIFI_RESULT_TYPE_FIELD",
+        "WIFI_RESULT_HIDDEN_FIELD",
         "WIFI_RESULT_TYPE_NOPASS",
-        "WIFI_RESULT_TYPE_SAE",
-        "WIFI_RESULT_TYPE_WEP",
         "WIFI_RESULT_TYPE_WPA",
         "WIFI_RESULT_TYPE_WPA2",
+        "WIFI_RESULT_TYPE_WEP",
+        "WIFI_RESULT_TYPE_SAE",
+        "WIFI_RESULT_SEPARATOR",
+        "",
+        "SYMBOL_BACKSLASH",
         "mIsGmsMatterSupportChecked",
         "",
         "mIsGmsMatterSupported",
-        "addQuotationIfNeeded",
-        "input",
-        "changeNetworkCommon",
+        "changeNetworkUnEncrypted",
         "Landroid/net/wifi/WifiConfiguration;",
         "result",
         "Ljp/co/sony/mc/camera/qrdetection/QrDetectionResult$ParsedResult;",
-        "changeNetworkUnEncrypted",
         "changeNetworkWEP",
         "changeNetworkWPA",
-        "countPrecedingBackslashes",
-        "",
-        "s",
-        "",
-        "pos",
-        "isBasicallyValidURL",
-        "url",
-        "isMatterQrCode",
-        "value",
-        "matchPrefixedField",
-        "",
-        "prefix",
-        "rawText",
-        "endChar",
-        "trim",
-        "(Ljava/lang/String;Ljava/lang/String;CZ)[Ljava/lang/String;",
-        "matchSinglePrefixedField",
         "parseResult",
         "context",
         "Landroid/content/Context;",
+        "rawText",
         "parseWifiResult",
         "rawRes",
         "setGmsMatterSupportChecked",
         "",
         "isGmsMatterSupportChecked",
+        "isBasicallyValidURL",
+        "url",
+        "isMatterQrCode",
+        "value",
+        "changeNetworkCommon",
+        "matchSinglePrefixedField",
+        "prefix",
+        "endChar",
+        "trim",
+        "matchPrefixedField",
+        "",
+        "(Ljava/lang/String;Ljava/lang/String;CZ)[Ljava/lang/String;",
+        "countPrecedingBackslashes",
+        "",
+        "s",
+        "",
+        "pos",
         "unescapeBackslash",
         "escaped",
+        "addQuotationIfNeeded",
+        "input",
         "SomcCamera_release"
     }
     k = 0x1
     mv = {
-        0x1,
-        0x9,
+        0x2,
+        0x0,
         0x0
     }
     xi = 0x30
@@ -476,7 +478,7 @@
 
     move-result-object v7
 
-    const-string/jumbo v10, "this as java.lang.String\u2026ing(startIndex, endIndex)"
+    const-string/jumbo v10, "substring(...)"
 
     invoke-static {v7, v10}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
 
@@ -701,7 +703,7 @@
 
     move-result-object v2
 
-    const-string/jumbo v3, "this as java.lang.String).toCharArray()"
+    const-string/jumbo v3, "toCharArray(...)"
 
     invoke-static {v2, v3}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
 
@@ -1028,7 +1030,7 @@
 
     move-result-object v0
 
-    const-string/jumbo v4, "this as java.lang.String).toUpperCase(Locale.ROOT)"
+    const-string/jumbo v4, "toUpperCase(...)"
 
     invoke-static {v0, v4}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
 
@@ -1337,7 +1339,7 @@
 
     move-result-object p1
 
-    const-string/jumbo p2, "this as java.lang.String).substring(startIndex)"
+    const-string/jumbo p2, "substring(...)"
 
     invoke-static {p1, p2}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
 
@@ -1381,7 +1383,7 @@
 
     move-result-object v1
 
-    const-string/jumbo v2, "this as java.lang.String).substring(startIndex)"
+    const-string/jumbo v2, "substring(...)"
 
     invoke-static {v1, v2}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
 

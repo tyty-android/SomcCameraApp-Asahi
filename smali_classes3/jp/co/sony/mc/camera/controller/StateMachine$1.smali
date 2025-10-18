@@ -25,7 +25,7 @@
 .method constructor <init>(Ljp/co/sony/mc/camera/controller/StateMachine;)V
     .locals 0
 
-    .line 467
+    .line 464
     iput-object p1, p0, Ljp/co/sony/mc/camera/controller/StateMachine$1;->this$0:Ljp/co/sony/mc/camera/controller/StateMachine;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -38,7 +38,7 @@
 .method public onDetectResult(Ljava/lang/String;)V
     .locals 2
 
-    .line 475
+    .line 472
     iget-object v0, p0, Ljp/co/sony/mc/camera/controller/StateMachine$1;->this$0:Ljp/co/sony/mc/camera/controller/StateMachine;
 
     invoke-virtual {v0}, Ljp/co/sony/mc/camera/controller/StateMachine;->getCurrentCapturingMode()Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
@@ -59,7 +59,7 @@
 
     move-result-object v0
 
-    .line 476
+    .line 473
     invoke-virtual {v0}, Ljp/co/sony/mc/camera/controller/StateMachine$State;->getCaptureState()Ljp/co/sony/mc/camera/controller/StateMachine$CaptureState;
 
     move-result-object v0
@@ -68,7 +68,7 @@
 
     if-ne v0, v1, :cond_0
 
-    .line 477
+    .line 474
     iget-object p0, p0, Ljp/co/sony/mc/camera/controller/StateMachine$1;->this$0:Ljp/co/sony/mc/camera/controller/StateMachine;
 
     invoke-static {p0}, Ljp/co/sony/mc/camera/controller/StateMachine;->-$$Nest$fgetmCameraStatusNotifier(Ljp/co/sony/mc/camera/controller/StateMachine;)Ljp/co/sony/mc/camera/CameraStatusNotifierImpl;

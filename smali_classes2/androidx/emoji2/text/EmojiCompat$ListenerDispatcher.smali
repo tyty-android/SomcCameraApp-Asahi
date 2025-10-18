@@ -35,22 +35,26 @@
 
 # direct methods
 .method constructor <init>(Landroidx/emoji2/text/EmojiCompat$InitCallback;I)V
-    .locals 1
+    .locals 2
 
-    .line 1590
-    const-string v0, "initCallback cannot be null"
+    const/4 v0, 0x1
 
-    invoke-static {p1, v0}, Landroidx/core/util/Preconditions;->checkNotNull(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    .line 1595
+    new-array v0, v0, [Landroidx/emoji2/text/EmojiCompat$InitCallback;
+
+    const-string v1, "initCallback cannot be null"
+
+    invoke-static {p1, v1}, Landroidx/core/util/Preconditions;->checkNotNull(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p1
 
     check-cast p1, Landroidx/emoji2/text/EmojiCompat$InitCallback;
 
-    filled-new-array {p1}, [Landroidx/emoji2/text/EmojiCompat$InitCallback;
+    const/4 v1, 0x0
 
-    move-result-object p1
+    aput-object p1, v0, v1
 
-    invoke-static {p1}, Ljava/util/Arrays;->asList([Ljava/lang/Object;)Ljava/util/List;
+    invoke-static {v0}, Ljava/util/Arrays;->asList([Ljava/lang/Object;)Ljava/util/List;
 
     move-result-object p1
 
@@ -74,7 +78,7 @@
 
     const/4 v0, 0x0
 
-    .line 1596
+    .line 1601
     invoke-direct {p0, p1, p2, v0}, Landroidx/emoji2/text/EmojiCompat$ListenerDispatcher;-><init>(Ljava/util/Collection;ILjava/lang/Throwable;)V
 
     return-void
@@ -93,25 +97,25 @@
         }
     .end annotation
 
-    .line 1601
+    .line 1606
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 1602
+    .line 1607
     const-string v0, "initCallbacks cannot be null"
 
     invoke-static {p1, v0}, Landroidx/core/util/Preconditions;->checkNotNull(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 1603
+    .line 1608
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0, p1}, Ljava/util/ArrayList;-><init>(Ljava/util/Collection;)V
 
     iput-object v0, p0, Landroidx/emoji2/text/EmojiCompat$ListenerDispatcher;->mInitCallbacks:Ljava/util/List;
 
-    .line 1604
+    .line 1609
     iput p2, p0, Landroidx/emoji2/text/EmojiCompat$ListenerDispatcher;->mLoadState:I
 
-    .line 1605
+    .line 1610
     iput-object p3, p0, Landroidx/emoji2/text/EmojiCompat$ListenerDispatcher;->mThrowable:Ljava/lang/Throwable;
 
     return-void
@@ -122,14 +126,14 @@
 .method public run()V
     .locals 4
 
-    .line 1610
+    .line 1615
     iget-object v0, p0, Landroidx/emoji2/text/EmojiCompat$ListenerDispatcher;->mInitCallbacks:Ljava/util/List;
 
     invoke-interface {v0}, Ljava/util/List;->size()I
 
     move-result v0
 
-    .line 1611
+    .line 1616
     iget v1, p0, Landroidx/emoji2/text/EmojiCompat$ListenerDispatcher;->mLoadState:I
 
     const/4 v2, 0x1
@@ -141,7 +145,7 @@
     :goto_0
     if-ge v3, v0, :cond_1
 
-    .line 1620
+    .line 1625
     iget-object v1, p0, Landroidx/emoji2/text/EmojiCompat$ListenerDispatcher;->mInitCallbacks:Ljava/util/List;
 
     invoke-interface {v1, v3}, Ljava/util/List;->get(I)Ljava/lang/Object;
@@ -162,7 +166,7 @@
     :goto_1
     if-ge v3, v0, :cond_1
 
-    .line 1614
+    .line 1619
     iget-object v1, p0, Landroidx/emoji2/text/EmojiCompat$ListenerDispatcher;->mInitCallbacks:Ljava/util/List;
 
     invoke-interface {v1, v3}, Ljava/util/List;->get(I)Ljava/lang/Object;

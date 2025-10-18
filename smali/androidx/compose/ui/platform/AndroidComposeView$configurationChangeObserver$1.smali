@@ -79,7 +79,7 @@
 .method public bridge synthetic invoke(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
 
-    .line 259
+    .line 295
     check-cast p1, Landroid/content/res/Configuration;
 
     invoke-virtual {p0, p1}, Landroidx/compose/ui/platform/AndroidComposeView$configurationChangeObserver$1;->invoke(Landroid/content/res/Configuration;)V
@@ -91,10 +91,6 @@
 
 .method public final invoke(Landroid/content/res/Configuration;)V
     .locals 0
-
-    const-string p0, "it"
-
-    invoke-static {p1, p0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
     return-void
 .end method

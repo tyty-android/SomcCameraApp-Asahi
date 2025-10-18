@@ -26,7 +26,7 @@
 .method constructor <init>()V
     .locals 0
 
-    .line 688
+    .line 781
     invoke-direct {p0}, Lcom/google/gson/TypeAdapter;-><init>()V
 
     return-void
@@ -42,7 +42,7 @@
         }
     .end annotation
 
-    .line 688
+    .line 781
     invoke-virtual {p0, p1}, Lcom/google/gson/internal/bind/TypeAdapters$27;->read(Lcom/google/gson/stream/JsonReader;)Ljava/util/Locale;
 
     move-result-object p0
@@ -58,7 +58,7 @@
         }
     .end annotation
 
-    .line 691
+    .line 784
     invoke-virtual {p1}, Lcom/google/gson/stream/JsonReader;->peek()Lcom/google/gson/stream/JsonToken;
 
     move-result-object p0
@@ -69,32 +69,32 @@
 
     if-ne p0, v0, :cond_0
 
-    .line 692
+    .line 785
     invoke-virtual {p1}, Lcom/google/gson/stream/JsonReader;->nextNull()V
 
     return-object v1
 
-    .line 695
+    .line 788
     :cond_0
     invoke-virtual {p1}, Lcom/google/gson/stream/JsonReader;->nextString()Ljava/lang/String;
 
     move-result-object p0
 
-    .line 696
+    .line 789
     new-instance p1, Ljava/util/StringTokenizer;
 
     const-string v0, "_"
 
     invoke-direct {p1, p0, v0}, Ljava/util/StringTokenizer;-><init>(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 700
+    .line 793
     invoke-virtual {p1}, Ljava/util/StringTokenizer;->hasMoreElements()Z
 
     move-result p0
 
     if-eqz p0, :cond_1
 
-    .line 701
+    .line 794
     invoke-virtual {p1}, Ljava/util/StringTokenizer;->nextToken()Ljava/lang/String;
 
     move-result-object p0
@@ -104,7 +104,7 @@
     :cond_1
     move-object p0, v1
 
-    .line 703
+    .line 796
     :goto_0
     invoke-virtual {p1}, Ljava/util/StringTokenizer;->hasMoreElements()Z
 
@@ -112,7 +112,7 @@
 
     if-eqz v0, :cond_2
 
-    .line 704
+    .line 797
     invoke-virtual {p1}, Ljava/util/StringTokenizer;->nextToken()Ljava/lang/String;
 
     move-result-object v0
@@ -122,7 +122,7 @@
     :cond_2
     move-object v0, v1
 
-    .line 706
+    .line 799
     :goto_1
     invoke-virtual {p1}, Ljava/util/StringTokenizer;->hasMoreElements()Z
 
@@ -130,7 +130,7 @@
 
     if-eqz v2, :cond_3
 
-    .line 707
+    .line 800
     invoke-virtual {p1}, Ljava/util/StringTokenizer;->nextToken()Ljava/lang/String;
 
     move-result-object v1
@@ -140,7 +140,7 @@
 
     if-nez v1, :cond_4
 
-    .line 710
+    .line 803
     new-instance p1, Ljava/util/Locale;
 
     invoke-direct {p1, p0}, Ljava/util/Locale;-><init>(Ljava/lang/String;)V
@@ -150,14 +150,14 @@
     :cond_4
     if-nez v1, :cond_5
 
-    .line 712
+    .line 805
     new-instance p1, Ljava/util/Locale;
 
     invoke-direct {p1, p0, v0}, Ljava/util/Locale;-><init>(Ljava/lang/String;Ljava/lang/String;)V
 
     return-object p1
 
-    .line 714
+    .line 807
     :cond_5
     new-instance p1, Ljava/util/Locale;
 
@@ -174,7 +174,7 @@
         }
     .end annotation
 
-    .line 688
+    .line 781
     check-cast p2, Ljava/util/Locale;
 
     invoke-virtual {p0, p1, p2}, Lcom/google/gson/internal/bind/TypeAdapters$27;->write(Lcom/google/gson/stream/JsonWriter;Ljava/util/Locale;)V
@@ -196,7 +196,7 @@
 
     goto :goto_0
 
-    .line 719
+    .line 813
     :cond_0
     invoke-virtual {p2}, Ljava/util/Locale;->toString()Ljava/lang/String;
 

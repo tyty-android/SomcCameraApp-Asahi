@@ -29,7 +29,7 @@
     k = 0x1
     mv = {
         0x1,
-        0x6,
+        0x8,
         0x0
     }
     xi = 0x30
@@ -44,7 +44,7 @@
 .method public constructor <init>(Z)V
     .locals 0
 
-    .line 1310
+    .line 1303
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     iput-boolean p1, p0, Lkotlinx/coroutines/Empty;->isActive:Z
@@ -65,7 +65,7 @@
 .method public isActive()Z
     .locals 0
 
-    .line 1310
+    .line 1303
     iget-boolean p0, p0, Lkotlinx/coroutines/Empty;->isActive:Z
 
     return p0
@@ -74,7 +74,7 @@
 .method public toString()Ljava/lang/String;
     .locals 2
 
-    .line 1312
+    .line 1305
     new-instance v0, Ljava/lang/StringBuilder;
 
     const-string v1, "Empty{"

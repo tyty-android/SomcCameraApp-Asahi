@@ -31,7 +31,7 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/SourceDebugExtension;
-    value = "SMAP\nAbstractList.kt\nKotlin\n*S Kotlin\n*F\n+ 1 AbstractList.kt\nkotlin/collections/AbstractList\n+ 2 _Collections.kt\nkotlin/collections/CollectionsKt___CollectionsKt\n*L\n1#1,157:1\n350#2,7:158\n378#2,7:165\n*S KotlinDebug\n*F\n+ 1 AbstractList.kt\nkotlin/collections/AbstractList\n*L\n27#1:158,7\n29#1:165,7\n*E\n"
+    value = "SMAP\nAbstractList.kt\nKotlin\n*S Kotlin\n*F\n+ 1 AbstractList.kt\nkotlin/collections/AbstractList\n+ 2 _Collections.kt\nkotlin/collections/CollectionsKt___CollectionsKt\n*L\n1#1,170:1\n360#2,7:171\n388#2,7:178\n*S KotlinDebug\n*F\n+ 1 AbstractList.kt\nkotlin/collections/AbstractList\n*L\n27#1:171,7\n29#1:178,7\n*E\n"
 .end annotation
 
 .annotation runtime Lkotlin/Metadata;
@@ -85,6 +85,8 @@
 
 # static fields
 .field public static final Companion:Lkotlin/collections/AbstractList$Companion;
+
+.field private static final maxArraySize:I = 0x7ffffff7
 
 
 # direct methods
@@ -220,7 +222,7 @@
     .line 27
     check-cast p0, Ljava/util/List;
 
-    .line 159
+    .line 172
     invoke-interface {p0}, Ljava/util/List;->iterator()Ljava/util/Iterator;
 
     move-result-object p0
@@ -290,7 +292,7 @@
     .line 29
     check-cast p0, Ljava/util/List;
 
-    .line 165
+    .line 178
     invoke-interface {p0}, Ljava/util/List;->size()I
 
     move-result v0
@@ -299,7 +301,7 @@
 
     move-result-object p0
 
-    .line 166
+    .line 179
     :cond_0
     invoke-interface {p0}, Ljava/util/ListIterator;->hasPrevious()Z
 
@@ -307,7 +309,7 @@
 
     if-eqz v0, :cond_1
 
-    .line 167
+    .line 180
     invoke-interface {p0}, Ljava/util/ListIterator;->previous()Ljava/lang/Object;
 
     move-result-object v0
@@ -319,7 +321,7 @@
 
     if-eqz v0, :cond_0
 
-    .line 168
+    .line 181
     invoke-interface {p0}, Ljava/util/ListIterator;->nextIndex()I
 
     move-result p0

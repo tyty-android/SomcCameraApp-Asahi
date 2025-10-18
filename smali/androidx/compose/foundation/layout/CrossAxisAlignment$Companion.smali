@@ -61,7 +61,7 @@
 .method private constructor <init>()V
     .locals 0
 
-    .line 175
+    .line 176
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -98,11 +98,7 @@
 .method public final AlignmentLine(Landroidx/compose/ui/layout/AlignmentLine;)Landroidx/compose/foundation/layout/CrossAxisAlignment;
     .locals 1
 
-    const-string p0, "alignmentLine"
-
-    invoke-static {p1, p0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 200
+    .line 201
     new-instance p0, Landroidx/compose/foundation/layout/CrossAxisAlignment$AlignmentLineCrossAxisAlignment;
 
     new-instance v0, Landroidx/compose/foundation/layout/AlignmentLineProvider$Value;
@@ -121,11 +117,7 @@
 .method public final Relative$foundation_layout_release(Landroidx/compose/foundation/layout/AlignmentLineProvider;)Landroidx/compose/foundation/layout/CrossAxisAlignment;
     .locals 0
 
-    const-string p0, "alignmentLineProvider"
-
-    invoke-static {p1, p0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 207
+    .line 208
     new-instance p0, Landroidx/compose/foundation/layout/CrossAxisAlignment$AlignmentLineCrossAxisAlignment;
 
     invoke-direct {p0, p1}, Landroidx/compose/foundation/layout/CrossAxisAlignment$AlignmentLineCrossAxisAlignment;-><init>(Landroidx/compose/foundation/layout/AlignmentLineProvider;)V
@@ -138,7 +130,7 @@
 .method public final getCenter()Landroidx/compose/foundation/layout/CrossAxisAlignment;
     .locals 0
 
-    .line 180
+    .line 181
     invoke-static {}, Landroidx/compose/foundation/layout/CrossAxisAlignment;->access$getCenter$cp()Landroidx/compose/foundation/layout/CrossAxisAlignment;
 
     move-result-object p0
@@ -149,7 +141,7 @@
 .method public final getEnd()Landroidx/compose/foundation/layout/CrossAxisAlignment;
     .locals 0
 
-    .line 194
+    .line 195
     invoke-static {}, Landroidx/compose/foundation/layout/CrossAxisAlignment;->access$getEnd$cp()Landroidx/compose/foundation/layout/CrossAxisAlignment;
 
     move-result-object p0
@@ -160,7 +152,7 @@
 .method public final getStart()Landroidx/compose/foundation/layout/CrossAxisAlignment;
     .locals 0
 
-    .line 187
+    .line 188
     invoke-static {}, Landroidx/compose/foundation/layout/CrossAxisAlignment;->access$getStart$cp()Landroidx/compose/foundation/layout/CrossAxisAlignment;
 
     move-result-object p0
@@ -171,11 +163,7 @@
 .method public final horizontal$foundation_layout_release(Landroidx/compose/ui/Alignment$Horizontal;)Landroidx/compose/foundation/layout/CrossAxisAlignment;
     .locals 0
 
-    const-string p0, "horizontal"
-
-    invoke-static {p1, p0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 219
+    .line 220
     new-instance p0, Landroidx/compose/foundation/layout/CrossAxisAlignment$HorizontalCrossAxisAlignment;
 
     invoke-direct {p0, p1}, Landroidx/compose/foundation/layout/CrossAxisAlignment$HorizontalCrossAxisAlignment;-><init>(Landroidx/compose/ui/Alignment$Horizontal;)V
@@ -188,11 +176,7 @@
 .method public final vertical$foundation_layout_release(Landroidx/compose/ui/Alignment$Vertical;)Landroidx/compose/foundation/layout/CrossAxisAlignment;
     .locals 0
 
-    const-string/jumbo p0, "vertical"
-
-    invoke-static {p1, p0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 213
+    .line 214
     new-instance p0, Landroidx/compose/foundation/layout/CrossAxisAlignment$VerticalCrossAxisAlignment;
 
     invoke-direct {p0, p1}, Landroidx/compose/foundation/layout/CrossAxisAlignment$VerticalCrossAxisAlignment;-><init>(Landroidx/compose/ui/Alignment$Vertical;)V

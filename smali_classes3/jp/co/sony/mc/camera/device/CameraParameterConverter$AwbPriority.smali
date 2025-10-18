@@ -18,25 +18,27 @@
 .method constructor <init>()V
     .locals 0
 
-    .line 604
+    .line 655
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
 .end method
 
 .method static getApi2Value(Ljava/lang/String;)Ljava/lang/Integer;
-    .locals 3
+    .locals 4
 
-    .line 607
+    .line 658
     invoke-virtual {p0}, Ljava/lang/String;->hashCode()I
 
     invoke-virtual {p0}, Ljava/lang/String;->hashCode()I
 
     move-result v0
 
-    const/4 v1, 0x0
+    const/4 v1, 0x1
 
-    const/4 v2, -0x1
+    const/4 v2, 0x0
+
+    const/4 v3, -0x1
 
     sparse-switch v0, :sswitch_data_0
 
@@ -54,7 +56,7 @@
     goto :goto_0
 
     :cond_0
-    const/4 v2, 0x2
+    const/4 v3, 0x2
 
     goto :goto_0
 
@@ -70,7 +72,7 @@
     goto :goto_0
 
     :cond_1
-    const/4 v2, 0x1
+    move v3, v1
 
     goto :goto_0
 
@@ -86,31 +88,31 @@
     goto :goto_0
 
     :cond_2
-    move v2, v1
+    move v3, v2
 
     :goto_0
-    packed-switch v2, :pswitch_data_0
+    packed-switch v3, :pswitch_data_0
 
-    .line 619
-    new-instance p0, Ljava/lang/StringBuilder;
+    .line 670
+    new-array p0, v1, [Ljava/lang/String;
 
-    const-string v0, "Invalid value of "
+    new-instance v0, Ljava/lang/StringBuilder;
 
-    invoke-direct {p0, v0}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+    const-string v1, "Invalid value of "
 
-    sget-object v0, Lcom/sonymobile/camera/device/SomcCaptureRequestKeys;->SONYMOBILE_CONTROL_WB_MODE:Landroid/hardware/camera2/CaptureRequest$Key;
+    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
-    invoke-virtual {p0, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+    sget-object v1, Lcom/sonymobile/camera/device/SomcCaptureRequestKeys;->SONYMOBILE_CONTROL_WB_MODE:Landroid/hardware/camera2/CaptureRequest$Key;
 
-    move-result-object p0
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {p0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    move-result-object v0
 
-    move-result-object p0
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    filled-new-array {p0}, [Ljava/lang/String;
+    move-result-object v0
 
-    move-result-object p0
+    aput-object v0, p0, v2
 
     invoke-static {p0}, Ljp/co/sony/mc/camera/util/CamLog;->w([Ljava/lang/String;)V
 
@@ -118,9 +120,9 @@
 
     goto :goto_1
 
-    .line 609
+    .line 660
     :pswitch_0
-    invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+    invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object p0
 
@@ -129,7 +131,7 @@
     :pswitch_1
     const/4 p0, 0x4
 
-    .line 616
+    .line 667
     invoke-static {p0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object p0
@@ -139,15 +141,13 @@
     :pswitch_2
     const/4 p0, 0x3
 
-    .line 613
+    .line 664
     invoke-static {p0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object p0
 
     :goto_1
     return-object p0
-
-    nop
 
     :sswitch_data_0
     .sparse-switch

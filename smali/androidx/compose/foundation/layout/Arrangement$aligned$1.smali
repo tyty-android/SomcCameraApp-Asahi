@@ -72,10 +72,6 @@
 .method public final invoke(ILandroidx/compose/ui/unit/LayoutDirection;)Ljava/lang/Integer;
     .locals 1
 
-    const-string v0, "layoutDirection"
-
-    invoke-static {p2, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
     .line 356
     iget-object p0, p0, Landroidx/compose/foundation/layout/Arrangement$aligned$1;->$alignment:Landroidx/compose/ui/Alignment$Horizontal;
 

@@ -25,7 +25,7 @@
 .method constructor <init>(Ljp/co/sony/mc/camera/controller/StateMachine;)V
     .locals 0
 
-    .line 8506
+    .line 8331
     iput-object p1, p0, Ljp/co/sony/mc/camera/controller/StateMachine$6;->this$0:Ljp/co/sony/mc/camera/controller/StateMachine;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -38,7 +38,7 @@
 .method public onDetected(Ljp/co/sony/mc/camera/controller/gestureshutter/HandSignsDetectorInterface$DetectResultInterface;II)V
     .locals 2
 
-    .line 8511
+    .line 8336
     invoke-interface {p1}, Ljp/co/sony/mc/camera/controller/gestureshutter/HandSignsDetectorInterface$DetectResultInterface;->getStatus()Ljp/co/sony/mc/camera/controller/gestureshutter/HandSignsDetectorInterface$DetectResultInterface$HandStatus;
 
     move-result-object v0
@@ -47,33 +47,37 @@
 
     if-ne v0, v1, :cond_1
 
-    .line 8513
+    .line 8338
     new-instance v0, Ljp/co/sony/mc/camera/CameraStatusNotifier$HandDetectionResult;
 
-    .line 8514
+    .line 8339
     invoke-interface {p1}, Ljp/co/sony/mc/camera/controller/gestureshutter/HandSignsDetectorInterface$DetectResultInterface;->getArea()Landroid/graphics/Rect;
 
     move-result-object v1
 
     invoke-direct {v0, v1, p2, p3}, Ljp/co/sony/mc/camera/CameraStatusNotifier$HandDetectionResult;-><init>(Landroid/graphics/Rect;II)V
 
-    .line 8515
+    .line 8340
     sget-boolean p2, Ljp/co/sony/mc/camera/util/CamLog;->VERBOSE:Z
 
     if-eqz p2, :cond_0
 
-    .line 8516
-    new-instance p2, Ljava/lang/StringBuilder;
+    const/4 p2, 0x1
 
-    const-string p3, "HandSigns was detected, Area:"
+    .line 8341
+    new-array p2, p2, [Ljava/lang/String;
 
-    invoke-direct {p2, p3}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+    new-instance p3, Ljava/lang/StringBuilder;
+
+    const-string v1, "HandSigns was detected, Area:"
+
+    invoke-direct {p3, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
     invoke-interface {p1}, Ljp/co/sony/mc/camera/controller/gestureshutter/HandSignsDetectorInterface$DetectResultInterface;->getArea()Landroid/graphics/Rect;
 
     move-result-object p1
 
-    invoke-virtual {p2, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+    invoke-virtual {p3, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
     move-result-object p1
 
@@ -81,13 +85,13 @@
 
     move-result-object p1
 
-    filled-new-array {p1}, [Ljava/lang/String;
+    const/4 p3, 0x0
 
-    move-result-object p1
+    aput-object p1, p2, p3
 
-    invoke-static {p1}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
+    invoke-static {p2}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
-    .line 8518
+    .line 8343
     :cond_0
     iget-object p0, p0, Ljp/co/sony/mc/camera/controller/StateMachine$6;->this$0:Ljp/co/sony/mc/camera/controller/StateMachine;
 

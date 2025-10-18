@@ -33,7 +33,7 @@
 .method constructor <init>(Ljava/lang/reflect/Type;)V
     .locals 0
 
-    .line 163
+    .line 186
     iput-object p1, p0, Lcom/google/gson/internal/ConstructorConstructor$5;->val$type:Ljava/lang/reflect/Type;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -51,7 +51,7 @@
         }
     .end annotation
 
-    .line 165
+    .line 189
     iget-object v0, p0, Lcom/google/gson/internal/ConstructorConstructor$5;->val$type:Ljava/lang/reflect/Type;
 
     instance-of v1, v0, Ljava/lang/reflect/ParameterizedType;
@@ -60,7 +60,7 @@
 
     if-eqz v1, :cond_1
 
-    .line 166
+    .line 190
     check-cast v0, Ljava/lang/reflect/ParameterizedType;
 
     invoke-interface {v0}, Ljava/lang/reflect/ParameterizedType;->getActualTypeArguments()[Ljava/lang/reflect/Type;
@@ -71,12 +71,12 @@
 
     aget-object v0, v0, v1
 
-    .line 167
+    .line 191
     instance-of v1, v0, Ljava/lang/Class;
 
     if-eqz v1, :cond_0
 
-    .line 169
+    .line 193
     check-cast v0, Ljava/lang/Class;
 
     invoke-static {v0}, Ljava/util/EnumSet;->noneOf(Ljava/lang/Class;)Ljava/util/EnumSet;
@@ -85,7 +85,7 @@
 
     return-object p0
 
-    .line 172
+    .line 196
     :cond_0
     new-instance v0, Lcom/google/gson/JsonIOException;
 
@@ -111,7 +111,7 @@
 
     throw v0
 
-    .line 175
+    .line 199
     :cond_1
     new-instance v0, Lcom/google/gson/JsonIOException;
 

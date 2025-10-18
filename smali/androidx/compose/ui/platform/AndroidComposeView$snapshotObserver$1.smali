@@ -76,13 +76,9 @@
 .end method
 
 .method private static final invoke$lambda$0(Lkotlin/jvm/functions/Function0;)V
-    .locals 1
+    .locals 0
 
-    const-string v0, "$tmp0"
-
-    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 282
+    .line 318
     invoke-interface {p0}, Lkotlin/jvm/functions/Function0;->invoke()Ljava/lang/Object;
 
     return-void
@@ -93,7 +89,7 @@
 .method public bridge synthetic invoke(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
 
-    .line 278
+    .line 314
     check-cast p1, Lkotlin/jvm/functions/Function0;
 
     invoke-virtual {p0, p1}, Landroidx/compose/ui/platform/AndroidComposeView$snapshotObserver$1;->invoke(Lkotlin/jvm/functions/Function0;)V
@@ -114,11 +110,7 @@
         }
     .end annotation
 
-    const-string v0, "command"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 279
+    .line 315
     iget-object v0, p0, Landroidx/compose/ui/platform/AndroidComposeView$snapshotObserver$1;->this$0:Landroidx/compose/ui/platform/AndroidComposeView;
 
     invoke-virtual {v0}, Landroidx/compose/ui/platform/AndroidComposeView;->getHandler()Landroid/os/Handler;
@@ -143,12 +135,12 @@
 
     if-ne v0, v1, :cond_1
 
-    .line 280
+    .line 316
     invoke-interface {p1}, Lkotlin/jvm/functions/Function0;->invoke()Ljava/lang/Object;
 
     goto :goto_1
 
-    .line 282
+    .line 318
     :cond_1
     iget-object p0, p0, Landroidx/compose/ui/platform/AndroidComposeView$snapshotObserver$1;->this$0:Landroidx/compose/ui/platform/AndroidComposeView;
 

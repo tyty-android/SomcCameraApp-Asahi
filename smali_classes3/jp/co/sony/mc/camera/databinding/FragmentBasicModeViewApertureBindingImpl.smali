@@ -13,7 +13,7 @@
 
 
 # instance fields
-.field private final mCallback62:Landroid/view/View$OnClickListener;
+.field private final mCallback67:Landroid/view/View$OnClickListener;
 
 .field private mDirtyFlags:J
 
@@ -80,7 +80,7 @@
 
     invoke-direct {p1, p0, p2}, Ljp/co/sony/mc/camera/generated/callback/OnClickListener;-><init>(Ljp/co/sony/mc/camera/generated/callback/OnClickListener$Listener;I)V
 
-    iput-object p1, p0, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeViewApertureBindingImpl;->mCallback62:Landroid/view/View$OnClickListener;
+    iput-object p1, p0, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeViewApertureBindingImpl;->mCallback67:Landroid/view/View$OnClickListener;
 
     .line 37
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeViewApertureBindingImpl;->invalidateAll()V
@@ -736,7 +736,7 @@
     .line 314
     iget-object v2, v1, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeViewApertureBindingImpl;->apertureButton:Landroid/widget/Button;
 
-    iget-object v1, v1, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeViewApertureBindingImpl;->mCallback62:Landroid/view/View$OnClickListener;
+    iget-object v1, v1, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeViewApertureBindingImpl;->mCallback67:Landroid/view/View$OnClickListener;
 
     invoke-static {v2, v1, v0}, Landroidx/databinding/adapters/ViewBindingAdapter;->setOnClick(Landroid/view/View;Landroid/view/View$OnClickListener;Z)V
 
@@ -976,7 +976,7 @@
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    const/16 p1, 0x8
+    const/16 p1, 0x9
 
     .line 86
     invoke-virtual {p0, p1}, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeViewApertureBindingImpl;->notifyPropertyChanged(I)V
@@ -1013,7 +1013,7 @@
     goto :goto_0
 
     :cond_0
-    const/16 v1, 0x8
+    const/16 v1, 0x9
 
     if-ne v1, p1, :cond_1
 

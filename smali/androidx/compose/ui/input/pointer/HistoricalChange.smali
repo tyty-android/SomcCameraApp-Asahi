@@ -6,7 +6,7 @@
 # annotations
 .annotation runtime Lkotlin/Metadata;
     d1 = {
-        "\u0000\u001e\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0010\t\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0006\n\u0002\u0010\u000e\n\u0000\u0008\u0007\u0018\u00002\u00020\u0001B\u0018\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\u0006\u0010\u0004\u001a\u00020\u0005\u00f8\u0001\u0000\u00a2\u0006\u0002\u0010\u0006J\u0008\u0010\u000b\u001a\u00020\u000cH\u0016R\u001c\u0010\u0004\u001a\u00020\u0005\u00f8\u0001\u0000\u00f8\u0001\u0001\u00f8\u0001\u0002\u00a2\u0006\n\n\u0002\u0010\t\u001a\u0004\u0008\u0007\u0010\u0008R\u0011\u0010\u0002\u001a\u00020\u0003\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\n\u0010\u0008\u0082\u0002\u000f\n\u0002\u0008\u0019\n\u0005\u0008\u00a1\u001e0\u0001\n\u0002\u0008!\u00a8\u0006\r"
+        "\u0000\u001e\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0010\t\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\n\n\u0002\u0010\u000e\n\u0000\u0008\u0007\u0018\u00002\u00020\u0001B\u001f\u0008\u0010\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\u0006\u0010\u0004\u001a\u00020\u0005\u0012\u0006\u0010\u0006\u001a\u00020\u0005\u00a2\u0006\u0002\u0010\u0007B\u0015\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\u0006\u0010\u0004\u001a\u00020\u0005\u00a2\u0006\u0002\u0010\u0008J\u0008\u0010\u000f\u001a\u00020\u0010H\u0016R&\u0010\u0006\u001a\u00020\u00052\u0006\u0010\t\u001a\u00020\u0005@BX\u0080\u000e\u00f8\u0001\u0000\u00f8\u0001\u0001\u00a2\u0006\n\n\u0002\u0010\u000c\u001a\u0004\u0008\n\u0010\u000bR\u0019\u0010\u0004\u001a\u00020\u0005\u00f8\u0001\u0000\u00f8\u0001\u0001\u00a2\u0006\n\n\u0002\u0010\u000c\u001a\u0004\u0008\r\u0010\u000bR\u0011\u0010\u0002\u001a\u00020\u0003\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\u000e\u0010\u000b\u0082\u0002\u000b\n\u0005\u0008\u00a1\u001e0\u0001\n\u0002\u0008!\u00a8\u0006\u0011"
     }
     d2 = {
         "Landroidx/compose/ui/input/pointer/HistoricalChange;",
@@ -15,10 +15,14 @@
         "",
         "position",
         "Landroidx/compose/ui/geometry/Offset;",
+        "originalEventPosition",
+        "(JJJLkotlin/jvm/internal/DefaultConstructorMarker;)V",
         "(JJLkotlin/jvm/internal/DefaultConstructorMarker;)V",
-        "getPosition-F1C5BW0",
+        "<set-?>",
+        "getOriginalEventPosition-F1C5BW0$ui_release",
         "()J",
         "J",
+        "getPosition-F1C5BW0",
         "getUptimeMillis",
         "toString",
         "",
@@ -39,6 +43,8 @@
 
 
 # instance fields
+.field private originalEventPosition:J
+
 .field private final position:J
 
 .field private final uptimeMillis:J
@@ -54,14 +60,51 @@
 .method private constructor <init>(JJ)V
     .locals 0
 
-    .line 811
+    .line 821
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 814
+    .line 824
     iput-wide p1, p0, Landroidx/compose/ui/input/pointer/HistoricalChange;->uptimeMillis:J
 
-    .line 815
+    .line 825
     iput-wide p3, p0, Landroidx/compose/ui/input/pointer/HistoricalChange;->position:J
+
+    .line 827
+    sget-object p1, Landroidx/compose/ui/geometry/Offset;->Companion:Landroidx/compose/ui/geometry/Offset$Companion;
+
+    invoke-virtual {p1}, Landroidx/compose/ui/geometry/Offset$Companion;->getZero-F1C5BW0()J
+
+    move-result-wide p1
+
+    iput-wide p1, p0, Landroidx/compose/ui/input/pointer/HistoricalChange;->originalEventPosition:J
+
+    return-void
+.end method
+
+.method private constructor <init>(JJJ)V
+    .locals 6
+
+    const/4 v5, 0x0
+
+    move-object v0, p0
+
+    move-wide v1, p1
+
+    move-wide v3, p3
+
+    .line 834
+    invoke-direct/range {v0 .. v5}, Landroidx/compose/ui/input/pointer/HistoricalChange;-><init>(JJLkotlin/jvm/internal/DefaultConstructorMarker;)V
+
+    .line 835
+    iput-wide p5, p0, Landroidx/compose/ui/input/pointer/HistoricalChange;->originalEventPosition:J
+
+    return-void
+.end method
+
+.method public synthetic constructor <init>(JJJLkotlin/jvm/internal/DefaultConstructorMarker;)V
+    .locals 0
+
+    invoke-direct/range {p0 .. p6}, Landroidx/compose/ui/input/pointer/HistoricalChange;-><init>(JJJ)V
 
     return-void
 .end method
@@ -76,10 +119,19 @@
 
 
 # virtual methods
+.method public final getOriginalEventPosition-F1C5BW0$ui_release()J
+    .locals 2
+
+    .line 827
+    iget-wide v0, p0, Landroidx/compose/ui/input/pointer/HistoricalChange;->originalEventPosition:J
+
+    return-wide v0
+.end method
+
 .method public final getPosition-F1C5BW0()J
     .locals 2
 
-    .line 815
+    .line 825
     iget-wide v0, p0, Landroidx/compose/ui/input/pointer/HistoricalChange;->position:J
 
     return-wide v0
@@ -88,7 +140,7 @@
 .method public final getUptimeMillis()J
     .locals 2
 
-    .line 814
+    .line 824
     iget-wide v0, p0, Landroidx/compose/ui/input/pointer/HistoricalChange;->uptimeMillis:J
 
     return-wide v0
@@ -97,7 +149,7 @@
 .method public toString()Ljava/lang/String;
     .locals 3
 
-    .line 818
+    .line 839
     new-instance v0, Ljava/lang/StringBuilder;
 
     const-string v1, "HistoricalChange(uptimeMillis="
@@ -116,10 +168,10 @@
 
     move-result-object v0
 
-    .line 819
+    .line 840
     iget-wide v1, p0, Landroidx/compose/ui/input/pointer/HistoricalChange;->position:J
 
-    .line 818
+    .line 839
     invoke-static {v1, v2}, Landroidx/compose/ui/geometry/Offset;->toString-impl(J)Ljava/lang/String;
 
     move-result-object p0

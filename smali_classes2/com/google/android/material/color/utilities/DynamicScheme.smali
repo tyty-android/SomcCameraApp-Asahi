@@ -85,12 +85,12 @@
 .method public static getRotatedHue(Lcom/google/android/material/color/utilities/Hct;[D[D)D
     .locals 8
 
-    .line 70
+    .line 80
     invoke-virtual {p0}, Lcom/google/android/material/color/utilities/Hct;->getHue()D
 
     move-result-wide v0
 
-    .line 71
+    .line 81
     array-length p0, p2
 
     const/4 v2, 0x1
@@ -99,7 +99,7 @@
 
     if-ne p0, v2, :cond_0
 
-    .line 72
+    .line 82
     aget-wide p0, p2, v3
 
     add-double/2addr v0, p0
@@ -110,7 +110,7 @@
 
     return-wide p0
 
-    .line 74
+    .line 84
     :cond_0
     array-length p0, p1
 
@@ -119,12 +119,12 @@
 
     if-gt v3, v2, :cond_2
 
-    .line 76
+    .line 86
     aget-wide v4, p1, v3
 
     add-int/lit8 v2, v3, 0x1
 
-    .line 77
+    .line 87
     aget-wide v6, p1, v2
 
     cmpg-double v4, v4, v0
@@ -135,7 +135,7 @@
 
     if-gez v4, :cond_1
 
-    .line 79
+    .line 89
     aget-wide p0, p2, v3
 
     add-double/2addr v0, p0

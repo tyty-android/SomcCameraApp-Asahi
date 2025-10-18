@@ -5,7 +5,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/SourceDebugExtension;
-    value = "SMAP\nEffects.kt\nKotlin\n*S Kotlin\n*F\n+ 1 Effects.kt\nandroidx/compose/runtime/LeftCompositionCancellationException\n+ 2 ArrayIntrinsics.kt\nkotlin/ArrayIntrinsicsKt\n*L\n1#1,496:1\n26#2:497\n*S KotlinDebug\n*F\n+ 1 Effects.kt\nandroidx/compose/runtime/LeftCompositionCancellationException\n*L\n394#1:497\n*E\n"
+    value = "SMAP\nEffects.kt\nKotlin\n*S Kotlin\n*F\n+ 1 Effects.kt\nandroidx/compose/runtime/LeftCompositionCancellationException\n+ 2 ArrayIntrinsics.kt\nkotlin/ArrayIntrinsicsKt\n*L\n1#1,497:1\n26#2:498\n*S KotlinDebug\n*F\n+ 1 Effects.kt\nandroidx/compose/runtime/LeftCompositionCancellationException\n*L\n395#1:498\n*E\n"
 .end annotation
 
 .annotation runtime Lkotlin/Metadata;
@@ -35,10 +35,10 @@
 .method public constructor <init>()V
     .locals 1
 
-    .line 390
+    .line 391
     const-string v0, "The coroutine scope left the composition"
 
-    .line 389
+    .line 390
     invoke-direct {p0, v0}, Ljava/util/concurrent/CancellationException;-><init>(Ljava/lang/String;)V
 
     return-void
@@ -51,13 +51,13 @@
 
     const/4 v0, 0x0
 
-    .line 497
+    .line 498
     new-array v0, v0, [Ljava/lang/StackTraceElement;
 
-    .line 394
+    .line 395
     invoke-virtual {p0, v0}, Landroidx/compose/runtime/LeftCompositionCancellationException;->setStackTrace([Ljava/lang/StackTraceElement;)V
 
-    .line 395
+    .line 396
     check-cast p0, Ljava/lang/Throwable;
 
     return-object p0

@@ -61,7 +61,7 @@
     .line 21
     new-instance v0, Ljp/co/sony/mc/camera/configuration/parameters/PeakingColor;
 
-    const v1, 0x7f110327
+    const v1, 0x7f110359
 
     const-string v2, "on_white"
 
@@ -76,7 +76,7 @@
     .line 24
     new-instance v0, Ljp/co/sony/mc/camera/configuration/parameters/PeakingColor;
 
-    const v1, 0x7f110325
+    const v1, 0x7f110357
 
     const-string v2, "on_red"
 
@@ -91,7 +91,7 @@
     .line 27
     new-instance v0, Ljp/co/sony/mc/camera/configuration/parameters/PeakingColor;
 
-    const v1, 0x7f110328
+    const v1, 0x7f11035a
 
     const-string v2, "on_yellow"
 
@@ -106,7 +106,7 @@
     .line 30
     new-instance v0, Ljp/co/sony/mc/camera/configuration/parameters/PeakingColor;
 
-    const v1, 0x7f110324
+    const v1, 0x7f110356
 
     const-string v2, "on_blue"
 

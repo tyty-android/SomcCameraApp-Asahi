@@ -20,7 +20,7 @@
 
 .annotation runtime Lkotlin/Metadata;
     d1 = {
-        "\u0000<\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0002\u0010\u0007\n\u0000\n\u0002\u0018\u0002\n\u0002\u0010\u000b\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0005\n\u0002\u0018\u0002\n\u0002\u0008\u0005\n\u0002\u0010\u0002\n\u0002\u0008\u0004\u0008\u0007\u0018\u0000 \u001a2\u0008\u0012\u0004\u0012\u00020\u00020\u0001:\u0001\u001aB=\u0012\u0006\u0010\u0003\u001a\u00020\u0002\u0012\u000e\u0008\u0002\u0010\u0004\u001a\u0008\u0012\u0004\u0012\u00020\u00060\u0005\u0012\u0014\u0008\u0002\u0010\u0007\u001a\u000e\u0012\u0004\u0012\u00020\u0002\u0012\u0004\u0012\u00020\t0\u0008\u0012\u0008\u0008\u0002\u0010\n\u001a\u00020\u000b\u00a2\u0006\u0002\u0010\u000cJ\u0011\u0010\u0016\u001a\u00020\u0017H\u0086@\u00f8\u0001\u0000\u00a2\u0006\u0002\u0010\u0018J\u0011\u0010\u0019\u001a\u00020\u0017H\u0086@\u00f8\u0001\u0000\u00a2\u0006\u0002\u0010\u0018R\u0011\u0010\r\u001a\u00020\t8F\u00a2\u0006\u0006\u001a\u0004\u0008\r\u0010\u000eR\u0011\u0010\u000f\u001a\u00020\t8F\u00a2\u0006\u0006\u001a\u0004\u0008\u000f\u0010\u000eR\u0014\u0010\u0010\u001a\u00020\u0011X\u0080\u0004\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\u0012\u0010\u0013R\u0011\u0010\n\u001a\u00020\u000b\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\u0014\u0010\u0015\u0082\u0002\u0004\n\u0002\u0008\u0019\u00a8\u0006\u001b"
+        "\u0000<\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0002\u0010\u0007\n\u0000\n\u0002\u0018\u0002\n\u0002\u0010\u000b\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0005\n\u0002\u0018\u0002\n\u0002\u0008\u0005\n\u0002\u0010\u0002\n\u0002\u0008\u0004\u0008\u0007\u0018\u0000 \u001a2\u0008\u0012\u0004\u0012\u00020\u00020\u0001:\u0001\u001aB=\u0012\u0006\u0010\u0003\u001a\u00020\u0002\u0012\u000e\u0008\u0002\u0010\u0004\u001a\u0008\u0012\u0004\u0012\u00020\u00060\u0005\u0012\u0014\u0008\u0002\u0010\u0007\u001a\u000e\u0012\u0004\u0012\u00020\u0002\u0012\u0004\u0012\u00020\t0\u0008\u0012\u0008\u0008\u0002\u0010\n\u001a\u00020\u000b\u00a2\u0006\u0002\u0010\u000cJ\u000e\u0010\u0016\u001a\u00020\u0017H\u0086@\u00a2\u0006\u0002\u0010\u0018J\u000e\u0010\u0019\u001a\u00020\u0017H\u0086@\u00a2\u0006\u0002\u0010\u0018R\u0011\u0010\r\u001a\u00020\t8F\u00a2\u0006\u0006\u001a\u0004\u0008\r\u0010\u000eR\u0011\u0010\u000f\u001a\u00020\t8F\u00a2\u0006\u0006\u001a\u0004\u0008\u000f\u0010\u000eR\u0014\u0010\u0010\u001a\u00020\u0011X\u0080\u0004\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\u0012\u0010\u0013R\u0011\u0010\n\u001a\u00020\u000b\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\u0014\u0010\u0015\u00a8\u0006\u001b"
     }
     d2 = {
         "Landroidx/compose/material/BackdropScaffoldState;",
@@ -90,7 +90,7 @@
 .end method
 
 .method public constructor <init>(Landroidx/compose/material/BackdropValue;Landroidx/compose/animation/core/AnimationSpec;Lkotlin/jvm/functions/Function1;Landroidx/compose/material/SnackbarHostState;)V
-    .locals 1
+    .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -108,29 +108,13 @@
         }
     .end annotation
 
-    const-string v0, "initialValue"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string v0, "animationSpec"
-
-    invoke-static {p2, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string v0, "confirmStateChange"
-
-    invoke-static {p3, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string/jumbo v0, "snackbarHostState"
-
-    invoke-static {p4, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 99
+    .line 101
     invoke-direct {p0, p1, p2, p3}, Landroidx/compose/material/SwipeableState;-><init>(Ljava/lang/Object;Landroidx/compose/animation/core/AnimationSpec;Lkotlin/jvm/functions/Function1;)V
 
-    .line 98
+    .line 100
     iput-object p4, p0, Landroidx/compose/material/BackdropScaffoldState;->snackbarHostState:Landroidx/compose/material/SnackbarHostState;
 
-    .line 134
+    .line 136
     move-object p1, p0
 
     check-cast p1, Landroidx/compose/material/SwipeableState;
@@ -151,7 +135,7 @@
 
     if-eqz p6, :cond_0
 
-    .line 96
+    .line 98
     sget-object p2, Landroidx/compose/material/SwipeableDefaults;->INSTANCE:Landroidx/compose/material/SwipeableDefaults;
 
     invoke-virtual {p2}, Landroidx/compose/material/SwipeableDefaults;->getAnimationSpec()Landroidx/compose/animation/core/SpringSpec;
@@ -165,7 +149,7 @@
 
     if-eqz p6, :cond_1
 
-    .line 97
+    .line 99
     sget-object p3, Landroidx/compose/material/BackdropScaffoldState$1;->INSTANCE:Landroidx/compose/material/BackdropScaffoldState$1;
 
     check-cast p3, Lkotlin/jvm/functions/Function1;
@@ -175,12 +159,12 @@
 
     if-eqz p5, :cond_2
 
-    .line 98
+    .line 100
     new-instance p4, Landroidx/compose/material/SnackbarHostState;
 
     invoke-direct {p4}, Landroidx/compose/material/SnackbarHostState;-><init>()V
 
-    .line 94
+    .line 96
     :cond_2
     invoke-direct {p0, p1, p2, p3, p4}, Landroidx/compose/material/BackdropScaffoldState;-><init>(Landroidx/compose/material/BackdropValue;Landroidx/compose/animation/core/AnimationSpec;Lkotlin/jvm/functions/Function1;Landroidx/compose/material/SnackbarHostState;)V
 
@@ -202,7 +186,7 @@
         }
     .end annotation
 
-    .line 132
+    .line 134
     move-object v0, p0
 
     check-cast v0, Landroidx/compose/material/SwipeableState;
@@ -238,7 +222,7 @@
 .method public final getNestedScrollConnection$material_release()Landroidx/compose/ui/input/nestedscroll/NestedScrollConnection;
     .locals 0
 
-    .line 134
+    .line 136
     iget-object p0, p0, Landroidx/compose/material/BackdropScaffoldState;->nestedScrollConnection:Landroidx/compose/ui/input/nestedscroll/NestedScrollConnection;
 
     return-object p0
@@ -247,7 +231,7 @@
 .method public final getSnackbarHostState()Landroidx/compose/material/SnackbarHostState;
     .locals 0
 
-    .line 98
+    .line 100
     iget-object p0, p0, Landroidx/compose/material/BackdropScaffoldState;->snackbarHostState:Landroidx/compose/material/SnackbarHostState;
 
     return-object p0
@@ -256,7 +240,7 @@
 .method public final isConcealed()Z
     .locals 1
 
-    .line 114
+    .line 116
     invoke-virtual {p0}, Landroidx/compose/material/BackdropScaffoldState;->getCurrentValue()Ljava/lang/Object;
 
     move-result-object p0
@@ -279,7 +263,7 @@
 .method public final isRevealed()Z
     .locals 1
 
-    .line 108
+    .line 110
     invoke-virtual {p0}, Landroidx/compose/material/BackdropScaffoldState;->getCurrentValue()Ljava/lang/Object;
 
     move-result-object p0
@@ -312,7 +296,7 @@
         }
     .end annotation
 
-    .line 123
+    .line 125
     move-object v0, p0
 
     check-cast v0, Landroidx/compose/material/SwipeableState;

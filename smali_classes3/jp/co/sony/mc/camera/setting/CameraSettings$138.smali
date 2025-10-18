@@ -21,7 +21,7 @@
 .method constructor <init>()V
     .locals 0
 
-    .line 1665
+    .line 1723
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -46,13 +46,13 @@
         }
     .end annotation
 
-    .line 1669
+    .line 1727
     check-cast p1, Ljp/co/sony/mc/camera/setting/CameraSettings;
 
-    .line 1670
-    check-cast p3, Ljp/co/sony/mc/camera/configuration/parameters/FallbackMode;
+    .line 1728
+    check-cast p3, Ljp/co/sony/mc/camera/configuration/parameters/Aperture;
 
-    invoke-static {p1, p3}, Ljp/co/sony/mc/camera/setting/CameraSettings;->-$$Nest$msetFallbackMode(Ljp/co/sony/mc/camera/setting/CameraSettings;Ljp/co/sony/mc/camera/configuration/parameters/FallbackMode;)Z
+    invoke-static {p1, p3}, Ljp/co/sony/mc/camera/setting/CameraSettings;->-$$Nest$msetAperture(Ljp/co/sony/mc/camera/setting/CameraSettings;Ljp/co/sony/mc/camera/configuration/parameters/Aperture;)Z
 
     move-result p0
 

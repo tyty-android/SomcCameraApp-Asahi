@@ -56,14 +56,14 @@
 .method private constructor <init>(Ljp/co/sony/mc/camera/view/setting/fragment/RemoconPairFragment;)V
     .locals 0
 
-    .line 282
+    .line 286
     iput-object p1, p0, Ljp/co/sony/mc/camera/view/setting/fragment/RemoconPairFragment$PairTimeoutTimer;->this$0:Ljp/co/sony/mc/camera/view/setting/fragment/RemoconPairFragment;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     const/4 p1, 0x0
 
-    .line 285
+    .line 289
     iput-boolean p1, p0, Ljp/co/sony/mc/camera/view/setting/fragment/RemoconPairFragment$PairTimeoutTimer;->mIsTimeoutTimerEnabled:Z
 
     return-void
@@ -80,18 +80,18 @@
 .method private restart()V
     .locals 1
 
-    .line 288
+    .line 292
     iget-boolean v0, p0, Ljp/co/sony/mc/camera/view/setting/fragment/RemoconPairFragment$PairTimeoutTimer;->mIsTimeoutTimerEnabled:Z
 
     if-nez v0, :cond_0
 
     return-void
 
-    .line 292
+    .line 296
     :cond_0
     invoke-direct {p0}, Ljp/co/sony/mc/camera/view/setting/fragment/RemoconPairFragment$PairTimeoutTimer;->stop()V
 
-    .line 293
+    .line 297
     invoke-direct {p0}, Ljp/co/sony/mc/camera/view/setting/fragment/RemoconPairFragment$PairTimeoutTimer;->start()V
 
     return-void
@@ -100,19 +100,19 @@
 .method private start()V
     .locals 4
 
-    .line 308
+    .line 312
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/setting/fragment/RemoconPairFragment$PairTimeoutTimer;->mTimer:Ljava/util/Timer;
 
     if-nez v0, :cond_0
 
-    .line 309
+    .line 313
     new-instance v0, Ljava/util/Timer;
 
     invoke-direct {v0}, Ljava/util/Timer;-><init>()V
 
     iput-object v0, p0, Ljp/co/sony/mc/camera/view/setting/fragment/RemoconPairFragment$PairTimeoutTimer;->mTimer:Ljava/util/Timer;
 
-    .line 310
+    .line 314
     new-instance v1, Ljp/co/sony/mc/camera/view/setting/fragment/RemoconPairFragment$PairTimeoutTimer$TimeoutTask;
 
     const/4 v2, 0x0
@@ -125,10 +125,10 @@
 
     const/4 v0, 0x1
 
-    .line 311
+    .line 315
     iput-boolean v0, p0, Ljp/co/sony/mc/camera/view/setting/fragment/RemoconPairFragment$PairTimeoutTimer;->mIsTimeoutTimerEnabled:Z
 
-    .line 312
+    .line 316
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/setting/fragment/RemoconPairFragment$PairTimeoutTimer;->this$0:Ljp/co/sony/mc/camera/view/setting/fragment/RemoconPairFragment;
 
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/view/setting/fragment/RemoconPairFragment;->getActivity()Landroidx/fragment/app/FragmentActivity;
@@ -150,30 +150,30 @@
 .method private stop()V
     .locals 1
 
-    .line 297
+    .line 301
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/setting/fragment/RemoconPairFragment$PairTimeoutTimer;->mTimer:Ljava/util/Timer;
 
     if-eqz v0, :cond_0
 
-    .line 298
+    .line 302
     invoke-virtual {v0}, Ljava/util/Timer;->cancel()V
 
-    .line 299
+    .line 303
     iget-object v0, p0, Ljp/co/sony/mc/camera/view/setting/fragment/RemoconPairFragment$PairTimeoutTimer;->mTimer:Ljava/util/Timer;
 
     invoke-virtual {v0}, Ljava/util/Timer;->purge()I
 
     const/4 v0, 0x0
 
-    .line 300
+    .line 304
     iput-object v0, p0, Ljp/co/sony/mc/camera/view/setting/fragment/RemoconPairFragment$PairTimeoutTimer;->mTimer:Ljava/util/Timer;
 
     const/4 v0, 0x0
 
-    .line 301
+    .line 305
     iput-boolean v0, p0, Ljp/co/sony/mc/camera/view/setting/fragment/RemoconPairFragment$PairTimeoutTimer;->mIsTimeoutTimerEnabled:Z
 
-    .line 302
+    .line 306
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/setting/fragment/RemoconPairFragment$PairTimeoutTimer;->this$0:Ljp/co/sony/mc/camera/view/setting/fragment/RemoconPairFragment;
 
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/view/setting/fragment/RemoconPairFragment;->getActivity()Landroidx/fragment/app/FragmentActivity;

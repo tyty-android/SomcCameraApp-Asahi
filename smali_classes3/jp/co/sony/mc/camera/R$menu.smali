@@ -16,8 +16,6 @@
 # static fields
 .field public static final debug_fragment_actionbar:I = 0x7f0e0000
 
-.field public static final player:I = 0x7f0e0001
-
 
 # direct methods
 .method private constructor <init>()V

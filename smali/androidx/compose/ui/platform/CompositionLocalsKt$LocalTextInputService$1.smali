@@ -84,7 +84,7 @@
 .method public bridge synthetic invoke()Ljava/lang/Object;
     .locals 0
 
-    .line 138
+    .line 137
     invoke-virtual {p0}, Landroidx/compose/ui/platform/CompositionLocalsKt$LocalTextInputService$1;->invoke()Landroidx/compose/ui/text/input/TextInputService;
 
     move-result-object p0

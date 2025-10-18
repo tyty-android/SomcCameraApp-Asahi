@@ -12,7 +12,7 @@
 
 .annotation runtime Lkotlin/Metadata;
     d1 = {
-        "\u0000\"\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0010\u0008\n\u0002\u0008\u0003\n\u0002\u0010\u000b\n\u0002\u0008\u0006\n\u0002\u0010\u000e\n\u0002\u0008\u0004\u0008\u0087@\u0018\u0000 \u00112\u00020\u0001:\u0001\u0011B\u0014\u0008\u0002\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u00f8\u0001\u0000\u00a2\u0006\u0004\u0008\u0004\u0010\u0005J\u001a\u0010\u0006\u001a\u00020\u00072\u0008\u0010\u0008\u001a\u0004\u0018\u00010\u0001H\u00d6\u0003\u00a2\u0006\u0004\u0008\t\u0010\nJ\u0010\u0010\u000b\u001a\u00020\u0003H\u00d6\u0001\u00a2\u0006\u0004\u0008\u000c\u0010\u0005J\u000f\u0010\r\u001a\u00020\u000eH\u0016\u00a2\u0006\u0004\u0008\u000f\u0010\u0010R\u000e\u0010\u0002\u001a\u00020\u0003X\u0082\u0004\u00a2\u0006\u0002\n\u0000\u0088\u0001\u0002\u0092\u0001\u00020\u0003\u00f8\u0001\u0000\u0082\u0002\u0004\n\u0002\u0008\u0019\u00a8\u0006\u0012"
+        "\u0000\"\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0010\u0008\n\u0002\u0008\u0003\n\u0002\u0010\u000b\n\u0002\u0008\u0006\n\u0002\u0010\u000e\n\u0002\u0008\u0004\u0008\u0087@\u0018\u0000 \u00112\u00020\u0001:\u0001\u0011B\u0011\u0008\u0002\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u00a2\u0006\u0004\u0008\u0004\u0010\u0005J\u001a\u0010\u0006\u001a\u00020\u00072\u0008\u0010\u0008\u001a\u0004\u0018\u00010\u0001H\u00d6\u0003\u00a2\u0006\u0004\u0008\t\u0010\nJ\u0010\u0010\u000b\u001a\u00020\u0003H\u00d6\u0001\u00a2\u0006\u0004\u0008\u000c\u0010\u0005J\u000f\u0010\r\u001a\u00020\u000eH\u0016\u00a2\u0006\u0004\u0008\u000f\u0010\u0010R\u000e\u0010\u0002\u001a\u00020\u0003X\u0082\u0004\u00a2\u0006\u0002\n\u0000\u0088\u0001\u0002\u0092\u0001\u00020\u0003\u00a8\u0006\u0012"
     }
     d2 = {
         "Landroidx/compose/ui/semantics/Role;",
@@ -84,7 +84,7 @@
 
     const/4 v0, 0x0
 
-    .line 619
+    .line 708
     invoke-static {v0}, Landroidx/compose/ui/semantics/Role;->constructor-impl(I)I
 
     move-result v0
@@ -93,7 +93,7 @@
 
     const/4 v0, 0x1
 
-    .line 627
+    .line 716
     invoke-static {v0}, Landroidx/compose/ui/semantics/Role;->constructor-impl(I)I
 
     move-result v0
@@ -102,7 +102,7 @@
 
     const/4 v0, 0x2
 
-    .line 635
+    .line 724
     invoke-static {v0}, Landroidx/compose/ui/semantics/Role;->constructor-impl(I)I
 
     move-result v0
@@ -111,7 +111,7 @@
 
     const/4 v0, 0x3
 
-    .line 642
+    .line 731
     invoke-static {v0}, Landroidx/compose/ui/semantics/Role;->constructor-impl(I)I
 
     move-result v0
@@ -120,7 +120,7 @@
 
     const/4 v0, 0x4
 
-    .line 650
+    .line 739
     invoke-static {v0}, Landroidx/compose/ui/semantics/Role;->constructor-impl(I)I
 
     move-result v0
@@ -129,7 +129,7 @@
 
     const/4 v0, 0x5
 
-    .line 656
+    .line 745
     invoke-static {v0}, Landroidx/compose/ui/semantics/Role;->constructor-impl(I)I
 
     move-result v0
@@ -138,7 +138,7 @@
 
     const/4 v0, 0x6
 
-    .line 663
+    .line 752
     invoke-static {v0}, Landroidx/compose/ui/semantics/Role;->constructor-impl(I)I
 
     move-result v0
@@ -151,7 +151,7 @@
 .method private synthetic constructor <init>(I)V
     .locals 0
 
-    .line 613
+    .line 702
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     iput p1, p0, Landroidx/compose/ui/semantics/Role;->value:I
@@ -162,7 +162,7 @@
 .method public static final synthetic access$getButton$cp()I
     .locals 1
 
-    .line 611
+    .line 700
     sget v0, Landroidx/compose/ui/semantics/Role;->Button:I
 
     return v0
@@ -171,7 +171,7 @@
 .method public static final synthetic access$getCheckbox$cp()I
     .locals 1
 
-    .line 611
+    .line 700
     sget v0, Landroidx/compose/ui/semantics/Role;->Checkbox:I
 
     return v0
@@ -180,7 +180,7 @@
 .method public static final synthetic access$getDropdownList$cp()I
     .locals 1
 
-    .line 611
+    .line 700
     sget v0, Landroidx/compose/ui/semantics/Role;->DropdownList:I
 
     return v0
@@ -189,7 +189,7 @@
 .method public static final synthetic access$getImage$cp()I
     .locals 1
 
-    .line 611
+    .line 700
     sget v0, Landroidx/compose/ui/semantics/Role;->Image:I
 
     return v0
@@ -198,7 +198,7 @@
 .method public static final synthetic access$getRadioButton$cp()I
     .locals 1
 
-    .line 611
+    .line 700
     sget v0, Landroidx/compose/ui/semantics/Role;->RadioButton:I
 
     return v0
@@ -207,7 +207,7 @@
 .method public static final synthetic access$getSwitch$cp()I
     .locals 1
 
-    .line 611
+    .line 700
     sget v0, Landroidx/compose/ui/semantics/Role;->Switch:I
 
     return v0
@@ -216,7 +216,7 @@
 .method public static final synthetic access$getTab$cp()I
     .locals 1
 
-    .line 611
+    .line 700
     sget v0, Landroidx/compose/ui/semantics/Role;->Tab:I
 
     return v0
@@ -295,7 +295,7 @@
 .method public static toString-impl(I)Ljava/lang/String;
     .locals 1
 
-    .line 667
+    .line 756
     sget v0, Landroidx/compose/ui/semantics/Role;->Button:I
 
     invoke-static {p0, v0}, Landroidx/compose/ui/semantics/Role;->equals-impl0(II)Z
@@ -308,7 +308,7 @@
 
     goto :goto_0
 
-    .line 668
+    .line 757
     :cond_0
     sget v0, Landroidx/compose/ui/semantics/Role;->Checkbox:I
 
@@ -322,7 +322,7 @@
 
     goto :goto_0
 
-    .line 669
+    .line 758
     :cond_1
     sget v0, Landroidx/compose/ui/semantics/Role;->Switch:I
 
@@ -336,7 +336,7 @@
 
     goto :goto_0
 
-    .line 670
+    .line 759
     :cond_2
     sget v0, Landroidx/compose/ui/semantics/Role;->RadioButton:I
 
@@ -350,7 +350,7 @@
 
     goto :goto_0
 
-    .line 671
+    .line 760
     :cond_3
     sget v0, Landroidx/compose/ui/semantics/Role;->Tab:I
 
@@ -364,7 +364,7 @@
 
     goto :goto_0
 
-    .line 672
+    .line 761
     :cond_4
     sget v0, Landroidx/compose/ui/semantics/Role;->Image:I
 
@@ -378,7 +378,7 @@
 
     goto :goto_0
 
-    .line 673
+    .line 762
     :cond_5
     sget v0, Landroidx/compose/ui/semantics/Role;->DropdownList:I
 
@@ -392,7 +392,7 @@
 
     goto :goto_0
 
-    .line 674
+    .line 763
     :cond_6
     const-string p0, "Unknown"
 
@@ -429,7 +429,7 @@
 .method public toString()Ljava/lang/String;
     .locals 0
 
-    .line 666
+    .line 755
     iget p0, p0, Landroidx/compose/ui/semantics/Role;->value:I
 
     invoke-static {p0}, Landroidx/compose/ui/semantics/Role;->toString-impl(I)Ljava/lang/String;

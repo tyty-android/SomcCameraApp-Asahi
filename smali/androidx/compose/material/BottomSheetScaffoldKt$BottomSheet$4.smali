@@ -48,9 +48,8 @@
         value = {
             "Lkotlin/jvm/functions/Function1<",
             "Landroidx/compose/ui/unit/IntSize;",
-            "Ljava/util/Map<",
+            "Landroidx/compose/material/DraggableAnchors<",
             "Landroidx/compose/material/BottomSheetValue;",
-            "Ljava/lang/Float;",
             ">;>;"
         }
     .end annotation
@@ -96,9 +95,8 @@
             "-",
             "Landroidx/compose/ui/unit/IntSize;",
             "+",
-            "Ljava/util/Map<",
+            "Landroidx/compose/material/DraggableAnchors<",
             "Landroidx/compose/material/BottomSheetValue;",
-            "Ljava/lang/Float;",
             ">;>;",
             "Landroidx/compose/ui/graphics/Shape;",
             "FJJ",

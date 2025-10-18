@@ -21,7 +21,7 @@
 .method constructor <init>()V
     .locals 0
 
-    .line 1586
+    .line 1643
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -46,13 +46,13 @@
         }
     .end annotation
 
-    .line 1590
+    .line 1647
     check-cast p1, Ljp/co/sony/mc/camera/setting/CameraSettings;
 
-    .line 1591
-    check-cast p3, Ljp/co/sony/mc/camera/configuration/parameters/Aperture;
+    .line 1648
+    check-cast p3, Ljava/lang/Integer;
 
-    invoke-static {p1, p3}, Ljp/co/sony/mc/camera/setting/CameraSettings;->-$$Nest$msetAperture(Ljp/co/sony/mc/camera/setting/CameraSettings;Ljp/co/sony/mc/camera/configuration/parameters/Aperture;)Z
+    invoke-virtual {p1, p3}, Ljp/co/sony/mc/camera/setting/CameraSettings;->setBrightness(Ljava/lang/Integer;)Z
 
     move-result p0
 

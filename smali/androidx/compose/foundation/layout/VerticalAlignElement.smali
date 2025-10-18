@@ -49,22 +49,28 @@
 .end annotation
 
 
+# static fields
+.field public static final $stable:I
+
+
 # instance fields
 .field private final alignment:Landroidx/compose/ui/Alignment$Vertical;
 
 
 # direct methods
+.method static constructor <clinit>()V
+    .locals 0
+
+    return-void
+.end method
+
 .method public constructor <init>(Landroidx/compose/ui/Alignment$Vertical;)V
-    .locals 1
+    .locals 0
 
-    const-string v0, "alignment"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 789
+    .line 792
     invoke-direct {p0}, Landroidx/compose/ui/node/ModifierNodeElement;-><init>()V
 
-    .line 788
+    .line 791
     iput-object p1, p0, Landroidx/compose/foundation/layout/VerticalAlignElement;->alignment:Landroidx/compose/ui/Alignment$Vertical;
 
     return-void
@@ -75,7 +81,7 @@
 .method public create()Landroidx/compose/foundation/layout/VerticalAlignNode;
     .locals 1
 
-    .line 791
+    .line 794
     new-instance v0, Landroidx/compose/foundation/layout/VerticalAlignNode;
 
     iget-object p0, p0, Landroidx/compose/foundation/layout/VerticalAlignElement;->alignment:Landroidx/compose/ui/Alignment$Vertical;
@@ -88,7 +94,7 @@
 .method public bridge synthetic create()Landroidx/compose/ui/Modifier$Node;
     .locals 0
 
-    .line 787
+    .line 790
     invoke-virtual {p0}, Landroidx/compose/foundation/layout/VerticalAlignElement;->create()Landroidx/compose/foundation/layout/VerticalAlignNode;
 
     move-result-object p0
@@ -107,7 +113,7 @@
 
     return p0
 
-    .line 807
+    .line 810
     :cond_0
     instance-of v0, p1, Landroidx/compose/foundation/layout/VerticalAlignElement;
 
@@ -127,7 +133,7 @@
 
     return p0
 
-    .line 808
+    .line 811
     :cond_2
     iget-object p0, p0, Landroidx/compose/foundation/layout/VerticalAlignElement;->alignment:Landroidx/compose/ui/Alignment$Vertical;
 
@@ -143,7 +149,7 @@
 .method public final getAlignment()Landroidx/compose/ui/Alignment$Vertical;
     .locals 0
 
-    .line 788
+    .line 791
     iget-object p0, p0, Landroidx/compose/foundation/layout/VerticalAlignElement;->alignment:Landroidx/compose/ui/Alignment$Vertical;
 
     return-object p0
@@ -152,7 +158,7 @@
 .method public hashCode()I
     .locals 0
 
-    .line 803
+    .line 806
     iget-object p0, p0, Landroidx/compose/foundation/layout/VerticalAlignElement;->alignment:Landroidx/compose/ui/Alignment$Vertical;
 
     invoke-virtual {p0}, Ljava/lang/Object;->hashCode()I
@@ -165,16 +171,12 @@
 .method public inspectableProperties(Landroidx/compose/ui/platform/InspectorInfo;)V
     .locals 1
 
-    const-string v0, "<this>"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 799
+    .line 802
     const-string v0, "align"
 
     invoke-virtual {p1, v0}, Landroidx/compose/ui/platform/InspectorInfo;->setName(Ljava/lang/String;)V
 
-    .line 800
+    .line 803
     iget-object p0, p0, Landroidx/compose/foundation/layout/VerticalAlignElement;->alignment:Landroidx/compose/ui/Alignment$Vertical;
 
     invoke-virtual {p1, p0}, Landroidx/compose/ui/platform/InspectorInfo;->setValue(Ljava/lang/Object;)V
@@ -183,13 +185,9 @@
 .end method
 
 .method public update(Landroidx/compose/foundation/layout/VerticalAlignNode;)V
-    .locals 1
+    .locals 0
 
-    const-string v0, "node"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 795
+    .line 798
     iget-object p0, p0, Landroidx/compose/foundation/layout/VerticalAlignElement;->alignment:Landroidx/compose/ui/Alignment$Vertical;
 
     invoke-virtual {p1, p0}, Landroidx/compose/foundation/layout/VerticalAlignNode;->setVertical(Landroidx/compose/ui/Alignment$Vertical;)V
@@ -200,7 +198,7 @@
 .method public bridge synthetic update(Landroidx/compose/ui/Modifier$Node;)V
     .locals 0
 
-    .line 787
+    .line 790
     check-cast p1, Landroidx/compose/foundation/layout/VerticalAlignNode;
 
     invoke-virtual {p0, p1}, Landroidx/compose/foundation/layout/VerticalAlignElement;->update(Landroidx/compose/foundation/layout/VerticalAlignNode;)V

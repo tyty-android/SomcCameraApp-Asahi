@@ -3,34 +3,36 @@
 .source "D8$$SyntheticClass"
 
 # interfaces
-.implements Landroid/view/View$OnClickListener;
+.implements Lkotlin/jvm/functions/Function0;
 
 
 # instance fields
-.field public final synthetic f$0:Ljp/co/sony/mc/camera/view/viewbinder/ProModeDialBindingHelper;
+.field public final synthetic f$0:Ljp/co/sony/mc/camera/databinding/FragmentBasicModeViewDialValueBinding;
 
 
 # direct methods
-.method public synthetic constructor <init>(Ljp/co/sony/mc/camera/view/viewbinder/ProModeDialBindingHelper;)V
+.method public synthetic constructor <init>(Ljp/co/sony/mc/camera/databinding/FragmentBasicModeViewDialValueBinding;)V
     .locals 0
 
     .line 0
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    iput-object p1, p0, Ljp/co/sony/mc/camera/view/viewbinder/ProModeDialBindingHelper$$ExternalSyntheticLambda0;->f$0:Ljp/co/sony/mc/camera/view/viewbinder/ProModeDialBindingHelper;
+    iput-object p1, p0, Ljp/co/sony/mc/camera/view/viewbinder/ProModeDialBindingHelper$$ExternalSyntheticLambda0;->f$0:Ljp/co/sony/mc/camera/databinding/FragmentBasicModeViewDialValueBinding;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final onClick(Landroid/view/View;)V
+.method public final invoke()Ljava/lang/Object;
     .locals 0
 
     .line 0
-    iget-object p0, p0, Ljp/co/sony/mc/camera/view/viewbinder/ProModeDialBindingHelper$$ExternalSyntheticLambda0;->f$0:Ljp/co/sony/mc/camera/view/viewbinder/ProModeDialBindingHelper;
+    iget-object p0, p0, Ljp/co/sony/mc/camera/view/viewbinder/ProModeDialBindingHelper$$ExternalSyntheticLambda0;->f$0:Ljp/co/sony/mc/camera/databinding/FragmentBasicModeViewDialValueBinding;
 
-    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/view/viewbinder/ProModeDialBindingHelper;->lambda$1$lambda$0(Ljp/co/sony/mc/camera/view/viewbinder/ProModeDialBindingHelper;Landroid/view/View;)V
+    invoke-static {p0}, Ljp/co/sony/mc/camera/view/viewbinder/ProModeDialBindingHelper;->$r8$lambda$gBCtEXaOtYxZ3V9UfX1L4Mmq3x0(Ljp/co/sony/mc/camera/databinding/FragmentBasicModeViewDialValueBinding;)Lkotlin/Unit;
 
-    return-void
+    move-result-object p0
+
+    return-object p0
 .end method

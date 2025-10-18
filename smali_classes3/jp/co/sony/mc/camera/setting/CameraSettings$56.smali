@@ -21,7 +21,7 @@
 .method constructor <init>()V
     .locals 0
 
-    .line 1008
+    .line 1062
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -42,11 +42,11 @@
         }
     .end annotation
 
-    .line 1012
+    .line 1066
     check-cast p1, Ljp/co/sony/mc/camera/setting/CameraSettings;
 
-    .line 1013
-    invoke-static {p1}, Ljp/co/sony/mc/camera/setting/CameraSettings;->-$$Nest$mgetPhotoLight(Ljp/co/sony/mc/camera/setting/CameraSettings;)Ljp/co/sony/mc/camera/configuration/parameters/PhotoLight;
+    .line 1067
+    invoke-static {p1}, Ljp/co/sony/mc/camera/setting/CameraSettings;->-$$Nest$mgetUiOrientation(Ljp/co/sony/mc/camera/setting/CameraSettings;)Ljava/lang/Integer;
 
     move-result-object p0
 

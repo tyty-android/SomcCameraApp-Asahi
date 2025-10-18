@@ -13,20 +13,21 @@
 
 .annotation runtime Lkotlin/Metadata;
     d1 = {
-        "\u0000,\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0010\u0008\n\u0002\u0008\u0007\u0008\u0007\u0018\u0000 \u00112\u00020\u0001:\u0002\u0011\u0012B\u0005\u00a2\u0006\u0002\u0010\u0002J\u0014\u0010\u0005\u001a\u0004\u0018\u00010\u00062\u0008\u0010\u0007\u001a\u0004\u0018\u00010\u0008H\u0016J\u0008\u0010\t\u001a\u00020\nH\u0016J\"\u0010\u000b\u001a\u00020\u000c2\u0008\u0010\u0007\u001a\u0004\u0018\u00010\u00082\u0006\u0010\r\u001a\u00020\u000c2\u0006\u0010\u000e\u001a\u00020\u000cH\u0016J\u0008\u0010\u000f\u001a\u00020\nH\u0002J\u0008\u0010\u0010\u001a\u00020\nH\u0002R\u0010\u0010\u0003\u001a\u0004\u0018\u00010\u0004X\u0082\u000e\u00a2\u0006\u0002\n\u0000\u00a8\u0006\u0013"
+        "\u0000,\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0003\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0008\n\u0002\u0008\u0007\u0008\u0007\u0018\u0000 \u00122\u00020\u0001:\u0002\u0012\u0013B\t\u0008\u0007\u00a2\u0006\u0004\u0008\u0002\u0010\u0003J\u0008\u0010\u0006\u001a\u00020\u0007H\u0016J\u0014\u0010\u0008\u001a\u0004\u0018\u00010\t2\u0008\u0010\n\u001a\u0004\u0018\u00010\u000bH\u0016J\"\u0010\u000c\u001a\u00020\r2\u0008\u0010\n\u001a\u0004\u0018\u00010\u000b2\u0006\u0010\u000e\u001a\u00020\r2\u0006\u0010\u000f\u001a\u00020\rH\u0016J\u0008\u0010\u0010\u001a\u00020\u0007H\u0002J\u0008\u0010\u0011\u001a\u00020\u0007H\u0002R\u0010\u0010\u0004\u001a\u0004\u0018\u00010\u0005X\u0082\u000e\u00a2\u0006\u0002\n\u0000\u00a8\u0006\u0014"
     }
     d2 = {
         "Ljp/co/sony/mc/camera/service/SavingService;",
         "Landroid/app/Service;",
+        "<init>",
         "()V",
         "selfTimer",
         "Ljava/util/Timer;",
+        "onDestroy",
+        "",
         "onBind",
         "Landroid/os/IBinder;",
         "intent",
         "Landroid/content/Intent;",
-        "onDestroy",
-        "",
         "onStartCommand",
         "",
         "flags",
@@ -39,8 +40,8 @@
     }
     k = 0x1
     mv = {
-        0x1,
-        0x9,
+        0x2,
+        0x0,
         0x0
     }
     xi = 0x30
@@ -216,7 +217,7 @@
 
     check-cast p1, Landroid/app/NotificationManager;
 
-    const p2, 0x7f110320
+    const p2, 0x7f110352
 
     .line 39
     invoke-virtual {p0, p2}, Ljp/co/sony/mc/camera/service/SavingService;->getString(I)Ljava/lang/String;
@@ -227,7 +228,7 @@
 
     invoke-static {p2, p3}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
 
-    const v0, 0x7f11031f
+    const v0, 0x7f110351
 
     .line 41
     invoke-virtual {p0, v0}, Ljp/co/sony/mc/camera/service/SavingService;->getString(I)Ljava/lang/String;
@@ -270,7 +271,7 @@
 
     invoke-direct {p1, p2, p3}, Landroid/app/Notification$Builder;-><init>(Landroid/content/Context;Ljava/lang/String;)V
 
-    const p2, 0x7f110322
+    const p2, 0x7f110354
 
     .line 54
     invoke-virtual {p0, p2}, Ljp/co/sony/mc/camera/service/SavingService;->getString(I)Ljava/lang/String;
@@ -281,7 +282,7 @@
 
     invoke-virtual {p1, p2}, Landroid/app/Notification$Builder;->setContentTitle(Ljava/lang/CharSequence;)Landroid/app/Notification$Builder;
 
-    const p2, 0x7f110321
+    const p2, 0x7f110353
 
     .line 56
     invoke-virtual {p0, p2}, Ljp/co/sony/mc/camera/service/SavingService;->getString(I)Ljava/lang/String;
@@ -292,7 +293,7 @@
 
     invoke-virtual {p1, p2}, Landroid/app/Notification$Builder;->setContentText(Ljava/lang/CharSequence;)Landroid/app/Notification$Builder;
 
-    const p2, 0x7f080260
+    const p2, 0x7f080277
 
     .line 58
     invoke-virtual {p1, p2}, Landroid/app/Notification$Builder;->setSmallIcon(I)Landroid/app/Notification$Builder;

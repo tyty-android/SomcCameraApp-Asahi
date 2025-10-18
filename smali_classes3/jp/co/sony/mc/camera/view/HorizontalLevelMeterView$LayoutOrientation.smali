@@ -40,7 +40,7 @@
 .method private static synthetic $values()[Ljp/co/sony/mc/camera/view/HorizontalLevelMeterView$LayoutOrientation;
     .locals 5
 
-    .line 67
+    .line 82
     sget-object v0, Ljp/co/sony/mc/camera/view/HorizontalLevelMeterView$LayoutOrientation;->Unknown:Ljp/co/sony/mc/camera/view/HorizontalLevelMeterView$LayoutOrientation;
 
     sget-object v1, Ljp/co/sony/mc/camera/view/HorizontalLevelMeterView$LayoutOrientation;->Portrait:Ljp/co/sony/mc/camera/view/HorizontalLevelMeterView$LayoutOrientation;
@@ -61,7 +61,7 @@
 .method static constructor <clinit>()V
     .locals 3
 
-    .line 68
+    .line 83
     new-instance v0, Ljp/co/sony/mc/camera/view/HorizontalLevelMeterView$LayoutOrientation;
 
     const-string v1, "Unknown"
@@ -72,7 +72,7 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/view/HorizontalLevelMeterView$LayoutOrientation;->Unknown:Ljp/co/sony/mc/camera/view/HorizontalLevelMeterView$LayoutOrientation;
 
-    .line 69
+    .line 84
     new-instance v0, Ljp/co/sony/mc/camera/view/HorizontalLevelMeterView$LayoutOrientation;
 
     const-string v1, "Portrait"
@@ -83,7 +83,7 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/view/HorizontalLevelMeterView$LayoutOrientation;->Portrait:Ljp/co/sony/mc/camera/view/HorizontalLevelMeterView$LayoutOrientation;
 
-    .line 70
+    .line 85
     new-instance v0, Ljp/co/sony/mc/camera/view/HorizontalLevelMeterView$LayoutOrientation;
 
     const-string v1, "Landscape"
@@ -94,7 +94,7 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/view/HorizontalLevelMeterView$LayoutOrientation;->Landscape:Ljp/co/sony/mc/camera/view/HorizontalLevelMeterView$LayoutOrientation;
 
-    .line 71
+    .line 86
     new-instance v0, Ljp/co/sony/mc/camera/view/HorizontalLevelMeterView$LayoutOrientation;
 
     const-string v1, "ReversePortrait"
@@ -105,7 +105,7 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/view/HorizontalLevelMeterView$LayoutOrientation;->ReversePortrait:Ljp/co/sony/mc/camera/view/HorizontalLevelMeterView$LayoutOrientation;
 
-    .line 72
+    .line 87
     new-instance v0, Ljp/co/sony/mc/camera/view/HorizontalLevelMeterView$LayoutOrientation;
 
     const-string v1, "ReverseLandscape"
@@ -116,7 +116,7 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/view/HorizontalLevelMeterView$LayoutOrientation;->ReverseLandscape:Ljp/co/sony/mc/camera/view/HorizontalLevelMeterView$LayoutOrientation;
 
-    .line 67
+    .line 82
     invoke-static {}, Ljp/co/sony/mc/camera/view/HorizontalLevelMeterView$LayoutOrientation;->$values()[Ljp/co/sony/mc/camera/view/HorizontalLevelMeterView$LayoutOrientation;
 
     move-result-object v0
@@ -134,7 +134,7 @@
         }
     .end annotation
 
-    .line 67
+    .line 82
     invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
     return-void
@@ -143,7 +143,7 @@
 .method public static valueOf(Ljava/lang/String;)Ljp/co/sony/mc/camera/view/HorizontalLevelMeterView$LayoutOrientation;
     .locals 1
 
-    .line 67
+    .line 82
     const-class v0, Ljp/co/sony/mc/camera/view/HorizontalLevelMeterView$LayoutOrientation;
 
     invoke-static {v0, p0}, Ljava/lang/Enum;->valueOf(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
@@ -158,7 +158,7 @@
 .method public static values()[Ljp/co/sony/mc/camera/view/HorizontalLevelMeterView$LayoutOrientation;
     .locals 1
 
-    .line 67
+    .line 82
     sget-object v0, Ljp/co/sony/mc/camera/view/HorizontalLevelMeterView$LayoutOrientation;->$VALUES:[Ljp/co/sony/mc/camera/view/HorizontalLevelMeterView$LayoutOrientation;
 
     invoke-virtual {v0}, [Ljp/co/sony/mc/camera/view/HorizontalLevelMeterView$LayoutOrientation;->clone()Ljava/lang/Object;

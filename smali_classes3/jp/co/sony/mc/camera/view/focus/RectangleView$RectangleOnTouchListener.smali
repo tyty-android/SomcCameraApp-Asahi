@@ -20,21 +20,21 @@
     d2 = {
         "Ljp/co/sony/mc/camera/view/focus/RectangleView$RectangleOnTouchListener;",
         "",
-        "onRectTouchCancel",
+        "onRectTouchDown",
         "",
         "v",
         "Landroid/view/View;",
         "event",
         "Landroid/view/MotionEvent;",
-        "onRectTouchDown",
-        "onRectTouchLongPress",
         "onRectTouchUp",
+        "onRectTouchCancel",
+        "onRectTouchLongPress",
         "SomcCamera_release"
     }
     k = 0x1
     mv = {
-        0x1,
-        0x9,
+        0x2,
+        0x0,
         0x0
     }
     xi = 0x30

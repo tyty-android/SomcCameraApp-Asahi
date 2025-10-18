@@ -24,7 +24,7 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/databinding/VideoQualitySettingOptionItemBindingImpl;->sViewsWithIds:Landroid/util/SparseIntArray;
 
-    const v1, 0x7f09032d
+    const v1, 0x7f09032c
 
     const/4 v2, 0x1
 

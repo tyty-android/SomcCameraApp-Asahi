@@ -70,36 +70,84 @@
 
 # direct methods
 .method static constructor <clinit>()V
-    .locals 12
+    .locals 3
+
+    const/16 v0, 0xc
 
     .line 389
-    const-string/jumbo v10, "triggerReceiver"
+    new-array v0, v0, [Ljava/lang/String;
 
-    const-string v11, "CROSS"
+    const/4 v1, 0x0
 
-    const-string/jumbo v0, "viewTransitionOnCross"
+    const-string/jumbo v2, "viewTransitionOnCross"
 
-    const-string/jumbo v1, "viewTransitionOnPositiveCross"
+    aput-object v2, v0, v1
+
+    const/4 v1, 0x1
+
+    const-string/jumbo v2, "viewTransitionOnPositiveCross"
+
+    aput-object v2, v0, v1
+
+    const/4 v1, 0x2
 
     const-string/jumbo v2, "viewTransitionOnNegativeCross"
 
-    const-string v3, "postLayout"
+    aput-object v2, v0, v1
 
-    const-string/jumbo v4, "triggerSlack"
+    const/4 v1, 0x3
 
-    const-string/jumbo v5, "triggerCollisionView"
+    const-string v2, "postLayout"
 
-    const-string/jumbo v6, "triggerCollisionId"
+    aput-object v2, v0, v1
 
-    const-string/jumbo v7, "triggerID"
+    const/4 v1, 0x4
 
-    const-string v8, "positiveCross"
+    const-string/jumbo v2, "triggerSlack"
 
-    const-string v9, "negativeCross"
+    aput-object v2, v0, v1
 
-    filled-new-array/range {v0 .. v11}, [Ljava/lang/String;
+    const/4 v1, 0x5
 
-    move-result-object v0
+    const-string/jumbo v2, "triggerCollisionView"
+
+    aput-object v2, v0, v1
+
+    const/4 v1, 0x6
+
+    const-string/jumbo v2, "triggerCollisionId"
+
+    aput-object v2, v0, v1
+
+    const/4 v1, 0x7
+
+    const-string/jumbo v2, "triggerID"
+
+    aput-object v2, v0, v1
+
+    const/16 v1, 0x8
+
+    const-string v2, "positiveCross"
+
+    aput-object v2, v0, v1
+
+    const/16 v1, 0x9
+
+    const-string v2, "negativeCross"
+
+    aput-object v2, v0, v1
+
+    const/16 v1, 0xa
+
+    const-string/jumbo v2, "triggerReceiver"
+
+    aput-object v2, v0, v1
+
+    const/16 v1, 0xb
+
+    const-string v2, "CROSS"
+
+    aput-object v2, v0, v1
 
     sput-object v0, Landroidx/constraintlayout/core/motion/utils/TypedValues$TriggerType;->KEY_WORDS:[Ljava/lang/String;
 

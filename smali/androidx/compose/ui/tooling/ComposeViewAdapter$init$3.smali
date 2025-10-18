@@ -1,6 +1,6 @@
 .class final Landroidx/compose/ui/tooling/ComposeViewAdapter$init$3;
 .super Lkotlin/jvm/internal/Lambda;
-.source "ComposeViewAdapter.kt"
+.source "ComposeViewAdapter.android.kt"
 
 # interfaces
 .implements Lkotlin/jvm/functions/Function2;
@@ -126,7 +126,7 @@
 .method public bridge synthetic invoke(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
 
-    .line 499
+    .line 494
     check-cast p1, Landroidx/compose/runtime/Composer;
 
     check-cast p2, Ljava/lang/Number;
@@ -145,7 +145,7 @@
 .method public final invoke(Landroidx/compose/runtime/Composer;I)V
     .locals 9
 
-    const-string v0, "C499@19077L20,501@19111L2532:ComposeViewAdapter.kt#hevd2p"
+    const-string v0, "C494@19095L20,496@19129L2532:ComposeViewAdapter.android.kt#hevd2p"
 
     invoke-static {p1, v0}, Landroidx/compose/runtime/ComposerKt;->sourceInformation(Landroidx/compose/runtime/Composer;Ljava/lang/String;)V
 
@@ -155,7 +155,7 @@
 
     if-ne v0, v1, :cond_1
 
-    .line 500
+    .line 495
     invoke-interface {p1}, Landroidx/compose/runtime/Composer;->getSkipping()Z
 
     move-result v0
@@ -164,13 +164,13 @@
 
     goto :goto_0
 
-    .line 545
+    .line 540
     :cond_0
     invoke-interface {p1}, Landroidx/compose/runtime/Composer;->skipToGroupEnd()V
 
     goto :goto_1
 
-    .line 500
+    .line 495
     :cond_1
     :goto_0
     invoke-static {}, Landroidx/compose/runtime/ComposerKt;->isTraceInProgress()Z
@@ -181,9 +181,9 @@
 
     const/4 v0, -0x1
 
-    const-string v1, "androidx.compose.ui.tooling.ComposeViewAdapter.init.<anonymous> (ComposeViewAdapter.kt:498)"
+    const-string v1, "androidx.compose.ui.tooling.ComposeViewAdapter.init.<anonymous> (ComposeViewAdapter.android.kt:494)"
 
-    const v2, -0x65993ed1
+    const v2, -0x79f738f2    # -2.5725E-35f
 
     invoke-static {v2, p2, v0, v1}, Landroidx/compose/runtime/ComposerKt;->traceEventStart(IIILjava/lang/String;)V
 
@@ -194,7 +194,7 @@
 
     invoke-static {p2, p1, v0}, Landroidx/compose/runtime/EffectsKt;->SideEffect(Lkotlin/jvm/functions/Function0;Landroidx/compose/runtime/Composer;I)V
 
-    .line 502
+    .line 497
     iget-object p2, p0, Landroidx/compose/ui/tooling/ComposeViewAdapter$init$3;->this$0:Landroidx/compose/ui/tooling/ComposeViewAdapter;
 
     new-instance v8, Landroidx/compose/ui/tooling/ComposeViewAdapter$init$3$1;
@@ -215,7 +215,7 @@
 
     invoke-direct/range {v0 .. v7}, Landroidx/compose/ui/tooling/ComposeViewAdapter$init$3$1;-><init>(JLandroidx/compose/ui/tooling/ComposeViewAdapter;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Class;I)V
 
-    const p0, 0x7388e4a2
+    const p0, 0x1315c781
 
     const/4 v0, 0x1
 

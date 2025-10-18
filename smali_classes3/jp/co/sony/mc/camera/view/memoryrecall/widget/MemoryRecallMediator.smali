@@ -6,7 +6,7 @@
 # annotations
 .annotation runtime Lkotlin/Metadata;
     d1 = {
-        "\u0000=\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0008\u0005\n\u0002\u0018\u0002\n\u0002\u0010\u0008\n\u0002\u0010\u0002\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0005\n\u0002\u0018\u0002\n\u0000*\u0001\u0008\u0008\u0007\u0018\u00002\u00020\u0001B\u0015\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\u0006\u0010\u0004\u001a\u00020\u0005\u00a2\u0006\u0002\u0010\u0006J\u0006\u0010\u0014\u001a\u00020\u000fJ\u0006\u0010\u0015\u001a\u00020\u0000J\u000e\u0010\u0016\u001a\u00020\u000f2\u0006\u0010\u0017\u001a\u00020\u0018R\u0010\u0010\u0007\u001a\u00020\u0008X\u0082\u0004\u00a2\u0006\u0004\n\u0002\u0010\tR\u0011\u0010\u0004\u001a\u00020\u0005\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\n\u0010\u000bR\u001a\u0010\u000c\u001a\u000e\u0012\u0004\u0012\u00020\u000e\u0012\u0004\u0012\u00020\u000f0\rX\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u0010\u001a\u00020\u000eX\u0082\u000e\u00a2\u0006\u0002\n\u0000R\u0016\u0010\u0011\u001a\n \u0013*\u0004\u0018\u00010\u00120\u0012X\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u0002\u001a\u00020\u0003X\u0082\u0004\u00a2\u0006\u0002\n\u0000\u00a8\u0006\u0019"
+        "\u0000A\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0005\n\u0002\u0018\u0002\n\u0002\u0008\u0003\n\u0002\u0010\u0008\n\u0000\n\u0002\u0008\u0003\n\u0002\u0018\u0002\n\u0002\u0010\u0002\n\u0002\u0008\u0003\n\u0002\u0018\u0002\n\u0002\u0008\u0002*\u0001\u0011\u0008\u0007\u0018\u00002\u00020\u0001B\u0017\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\u0006\u0010\u0004\u001a\u00020\u0005\u00a2\u0006\u0004\u0008\u0006\u0010\u0007J\u0006\u0010\u0016\u001a\u00020\u0000J\u000e\u0010\u0017\u001a\u00020\u00152\u0006\u0010\u0018\u001a\u00020\u0019J\u0006\u0010\u001a\u001a\u00020\u0015R\u000e\u0010\u0002\u001a\u00020\u0003X\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u0011\u0010\u0004\u001a\u00020\u0005\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\u0008\u0010\tR\u0018\u0010\n\u001a\n \u000c*\u0004\u0018\u00010\u000b0\u000bX\u0082\u0004\u00a2\u0006\u0004\n\u0002\u0010\rR\u000e\u0010\u000e\u001a\u00020\u000fX\u0082\u000e\u00a2\u0006\u0002\n\u0000R\u0010\u0010\u0010\u001a\u00020\u0011X\u0082\u0004\u00a2\u0006\u0004\n\u0002\u0010\u0012R\u001a\u0010\u0013\u001a\u000e\u0012\u0004\u0012\u00020\u000f\u0012\u0004\u0012\u00020\u00150\u0014X\u0082\u0004\u00a2\u0006\u0002\n\u0000\u00a8\u0006\u001b"
     }
     d2 = {
         "Ljp/co/sony/mc/camera/view/memoryrecall/widget/MemoryRecallMediator;",
@@ -15,31 +15,33 @@
         "Landroidx/viewpager2/widget/ViewPager2;",
         "picker",
         "Ljp/co/sony/mc/camera/view/memoryrecall/widget/MemoryRecallPicker;",
+        "<init>",
         "(Landroidx/viewpager2/widget/ViewPager2;Ljp/co/sony/mc/camera/view/memoryrecall/widget/MemoryRecallPicker;)V",
-        "pagerListener",
-        "jp/co/sony/mc/camera/view/memoryrecall/widget/MemoryRecallMediator$pagerListener$1",
-        "Ljp/co/sony/mc/camera/view/memoryrecall/widget/MemoryRecallMediator$pagerListener$1;",
         "getPicker",
         "()Ljp/co/sony/mc/camera/view/memoryrecall/widget/MemoryRecallPicker;",
-        "pickerListener",
-        "Lkotlin/Function1;",
-        "",
-        "",
-        "position",
         "setting",
         "Ljp/co/sony/mc/camera/setting/CameraProSetting;",
         "kotlin.jvm.PlatformType",
-        "applyMemoryRecallData",
+        "Ljp/co/sony/mc/camera/setting/CameraProSetting;",
+        "position",
+        "",
+        "pagerListener",
+        "jp/co/sony/mc/camera/view/memoryrecall/widget/MemoryRecallMediator$pagerListener$1",
+        "Ljp/co/sony/mc/camera/view/memoryrecall/widget/MemoryRecallMediator$pagerListener$1;",
+        "pickerListener",
+        "Lkotlin/Function1;",
+        "",
         "bind",
         "updateMemoryRecallData",
         "holder",
         "Ljp/co/sony/mc/camera/setting/CameraSettingsHolder;",
+        "applyMemoryRecallData",
         "SomcCamera_release"
     }
     k = 0x1
     mv = {
-        0x1,
-        0x9,
+        0x2,
+        0x0,
         0x0
     }
     xi = 0x30
@@ -74,6 +76,16 @@
 
 
 # direct methods
+.method public static synthetic $r8$lambda$LYBZS9nX9MSbgDUgs4UgTYigHeQ(Ljp/co/sony/mc/camera/view/memoryrecall/widget/MemoryRecallMediator;I)Lkotlin/Unit;
+    .locals 0
+
+    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/view/memoryrecall/widget/MemoryRecallMediator;->pickerListener$lambda$0(Ljp/co/sony/mc/camera/view/memoryrecall/widget/MemoryRecallMediator;I)Lkotlin/Unit;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
 .method static constructor <clinit>()V
     .locals 0
 
@@ -118,11 +130,9 @@
     iput-object p1, p0, Ljp/co/sony/mc/camera/view/memoryrecall/widget/MemoryRecallMediator;->pagerListener:Ljp/co/sony/mc/camera/view/memoryrecall/widget/MemoryRecallMediator$pagerListener$1;
 
     .line 38
-    new-instance p1, Ljp/co/sony/mc/camera/view/memoryrecall/widget/MemoryRecallMediator$pickerListener$1;
+    new-instance p1, Ljp/co/sony/mc/camera/view/memoryrecall/widget/MemoryRecallMediator$$ExternalSyntheticLambda0;
 
-    invoke-direct {p1, p0}, Ljp/co/sony/mc/camera/view/memoryrecall/widget/MemoryRecallMediator$pickerListener$1;-><init>(Ljp/co/sony/mc/camera/view/memoryrecall/widget/MemoryRecallMediator;)V
-
-    check-cast p1, Lkotlin/jvm/functions/Function1;
+    invoke-direct {p1, p0}, Ljp/co/sony/mc/camera/view/memoryrecall/widget/MemoryRecallMediator$$ExternalSyntheticLambda0;-><init>(Ljp/co/sony/mc/camera/view/memoryrecall/widget/MemoryRecallMediator;)V
 
     iput-object p1, p0, Ljp/co/sony/mc/camera/view/memoryrecall/widget/MemoryRecallMediator;->pickerListener:Lkotlin/jvm/functions/Function1;
 
@@ -138,15 +148,6 @@
     return p0
 .end method
 
-.method public static final synthetic access$getViewPager2$p(Ljp/co/sony/mc/camera/view/memoryrecall/widget/MemoryRecallMediator;)Landroidx/viewpager2/widget/ViewPager2;
-    .locals 0
-
-    .line 18
-    iget-object p0, p0, Ljp/co/sony/mc/camera/view/memoryrecall/widget/MemoryRecallMediator;->viewPager2:Landroidx/viewpager2/widget/ViewPager2;
-
-    return-object p0
-.end method
-
 .method public static final synthetic access$setPosition$p(Ljp/co/sony/mc/camera/view/memoryrecall/widget/MemoryRecallMediator;I)V
     .locals 0
 
@@ -154,6 +155,46 @@
     iput p1, p0, Ljp/co/sony/mc/camera/view/memoryrecall/widget/MemoryRecallMediator;->position:I
 
     return-void
+.end method
+
+.method private static final pickerListener$lambda$0(Ljp/co/sony/mc/camera/view/memoryrecall/widget/MemoryRecallMediator;I)Lkotlin/Unit;
+    .locals 1
+
+    const-string/jumbo v0, "this$0"
+
+    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+
+    if-ltz p1, :cond_0
+
+    .line 39
+    invoke-static {}, Ljp/co/sony/mc/camera/configuration/parameters/MrMode;->values()[Ljp/co/sony/mc/camera/configuration/parameters/MrMode;
+
+    move-result-object v0
+
+    array-length v0, v0
+
+    if-ge p1, v0, :cond_0
+
+    .line 40
+    iget v0, p0, Ljp/co/sony/mc/camera/view/memoryrecall/widget/MemoryRecallMediator;->position:I
+
+    if-eq p1, v0, :cond_0
+
+    .line 42
+    iput p1, p0, Ljp/co/sony/mc/camera/view/memoryrecall/widget/MemoryRecallMediator;->position:I
+
+    .line 43
+    iget-object p0, p0, Ljp/co/sony/mc/camera/view/memoryrecall/widget/MemoryRecallMediator;->viewPager2:Landroidx/viewpager2/widget/ViewPager2;
+
+    const/4 v0, 0x0
+
+    invoke-virtual {p0, p1, v0}, Landroidx/viewpager2/widget/ViewPager2;->setCurrentItem(IZ)V
+
+    .line 45
+    :cond_0
+    sget-object p0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
+
+    return-object p0
 .end method
 
 

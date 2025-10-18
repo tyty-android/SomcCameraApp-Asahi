@@ -81,16 +81,12 @@
 .method public final invoke(Landroidx/compose/runtime/saveable/SaverScope;Landroidx/compose/ui/text/ParagraphStyle;)Ljava/lang/Object;
     .locals 3
 
-    const-string p0, "$this$Saver"
+    .line 225
+    invoke-virtual {p2}, Landroidx/compose/ui/text/ParagraphStyle;->getTextAlign-e0LSkKk()I
 
-    invoke-static {p1, p0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+    move-result p0
 
-    const-string p0, "it"
-
-    invoke-static {p2, p0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 204
-    invoke-virtual {p2}, Landroidx/compose/ui/text/ParagraphStyle;->getTextAlign-buA522U()Landroidx/compose/ui/text/style/TextAlign;
+    invoke-static {p0}, Landroidx/compose/ui/text/style/TextAlign;->box-impl(I)Landroidx/compose/ui/text/style/TextAlign;
 
     move-result-object p0
 
@@ -98,8 +94,12 @@
 
     move-result-object p0
 
-    .line 205
-    invoke-virtual {p2}, Landroidx/compose/ui/text/ParagraphStyle;->getTextDirection-mmuk1to()Landroidx/compose/ui/text/style/TextDirection;
+    .line 226
+    invoke-virtual {p2}, Landroidx/compose/ui/text/ParagraphStyle;->getTextDirection-s_7X-co()I
+
+    move-result v0
+
+    invoke-static {v0}, Landroidx/compose/ui/text/style/TextDirection;->box-impl(I)Landroidx/compose/ui/text/style/TextDirection;
 
     move-result-object v0
 
@@ -107,7 +107,7 @@
 
     move-result-object v0
 
-    .line 206
+    .line 227
     invoke-virtual {p2}, Landroidx/compose/ui/text/ParagraphStyle;->getLineHeight-XSAIIZE()J
 
     move-result-wide v1
@@ -126,7 +126,7 @@
 
     move-result-object v1
 
-    .line 207
+    .line 228
     invoke-virtual {p2}, Landroidx/compose/ui/text/ParagraphStyle;->getTextIndent()Landroidx/compose/ui/text/style/TextIndent;
 
     move-result-object p2
@@ -145,7 +145,7 @@
 
     move-result-object p0
 
-    .line 203
+    .line 224
     invoke-static {p0}, Lkotlin/collections/CollectionsKt;->arrayListOf([Ljava/lang/Object;)Ljava/util/ArrayList;
 
     move-result-object p0
@@ -156,7 +156,7 @@
 .method public bridge synthetic invoke(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
 
-    .line 201
+    .line 222
     check-cast p1, Landroidx/compose/runtime/saveable/SaverScope;
 
     check-cast p2, Landroidx/compose/ui/text/ParagraphStyle;

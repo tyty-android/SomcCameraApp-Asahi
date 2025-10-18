@@ -25,10 +25,10 @@
 .method constructor <init>(Ljp/co/sony/mc/camera/view/FragmentController;)V
     .locals 0
 
-    .line 7703
+    .line 7955
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 7704
+    .line 7956
     iput-object p1, p0, Ljp/co/sony/mc/camera/view/FragmentController$LowLightStateListenerImpl;->mController:Ljp/co/sony/mc/camera/view/FragmentController;
 
     return-void
@@ -39,7 +39,7 @@
 .method public onLowLightStateChanged(Z)V
     .locals 0
 
-    .line 7709
+    .line 7961
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/FragmentController$LowLightStateListenerImpl;->mController:Ljp/co/sony/mc/camera/view/FragmentController;
 
     invoke-static {p0}, Ljp/co/sony/mc/camera/view/FragmentController;->-$$Nest$fgetmCameraEventNotifier(Ljp/co/sony/mc/camera/view/FragmentController;)Ljp/co/sony/mc/camera/view/CameraEventListener;
@@ -48,7 +48,7 @@
 
     invoke-interface {p0, p1}, Ljp/co/sony/mc/camera/view/CameraEventListener;->onLowLightStateChanged(Z)V
 
-    .line 7710
+    .line 7962
     sget-object p0, Ljp/co/sony/mc/camera/idd/event/IddPhotoEvent;->Context:Ljp/co/sony/mc/camera/idd/event/IddPhotoEvent$Context;
 
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/idd/event/IddPhotoEvent$Context;->getEnv()Ljp/co/sony/mc/camera/idd/value/IddEnvironment;

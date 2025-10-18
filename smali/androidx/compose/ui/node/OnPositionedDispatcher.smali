@@ -11,20 +11,23 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/SourceDebugExtension;
-    value = "SMAP\nOnPositionedDispatcher.kt\nKotlin\n*S Kotlin\n*F\n+ 1 OnPositionedDispatcher.kt\nandroidx/compose/ui/node/OnPositionedDispatcher\n+ 2 MutableVector.kt\nandroidx/compose/runtime/collection/MutableVectorKt\n+ 3 MutableVector.kt\nandroidx/compose/runtime/collection/MutableVector\n+ 4 LayoutNode.kt\nandroidx/compose/ui/node/LayoutNode\n*L\n1#1,75:1\n1182#2:76\n1161#2,2:77\n728#3,2:79\n728#3,2:81\n492#3,11:83\n460#3,11:95\n197#4:94\n*S KotlinDebug\n*F\n+ 1 OnPositionedDispatcher.kt\nandroidx/compose/ui/node/OnPositionedDispatcher\n*L\n26#1:76\n26#1:77,2\n31#1:79,2\n37#1:81,2\n44#1:83,11\n58#1:95,11\n58#1:94\n*E\n"
+    value = "SMAP\nOnPositionedDispatcher.kt\nKotlin\n*S Kotlin\n*F\n+ 1 OnPositionedDispatcher.kt\nandroidx/compose/ui/node/OnPositionedDispatcher\n+ 2 MutableVector.kt\nandroidx/compose/runtime/collection/MutableVectorKt\n+ 3 MutableVector.kt\nandroidx/compose/runtime/collection/MutableVector\n+ 4 LayoutNode.kt\nandroidx/compose/ui/node/LayoutNode\n*L\n1#1,94:1\n1208#2:95\n1187#2,2:96\n728#3,2:98\n728#3,2:100\n523#3:102\n460#3,11:104\n197#4:103\n*S KotlinDebug\n*F\n+ 1 OnPositionedDispatcher.kt\nandroidx/compose/ui/node/OnPositionedDispatcher\n*L\n26#1:95\n26#1:96,2\n32#1:98,2\n38#1:100,2\n57#1:102\n75#1:104,11\n75#1:103\n*E\n"
 .end annotation
 
 .annotation runtime Lkotlin/Metadata;
     d1 = {
-        "\u0000&\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0002\n\u0002\u0008\u0003\n\u0002\u0010\u000b\n\u0002\u0008\u0006\u0008\u0000\u0018\u0000 \u00102\u00020\u0001:\u0001\u0010B\u0005\u00a2\u0006\u0002\u0010\u0002J\u0006\u0010\u0006\u001a\u00020\u0007J\u0010\u0010\u0008\u001a\u00020\u00072\u0006\u0010\t\u001a\u00020\u0005H\u0002J\u0006\u0010\n\u001a\u00020\u000bJ\u000e\u0010\u000c\u001a\u00020\u00072\u0006\u0010\r\u001a\u00020\u0005J\u000e\u0010\u000e\u001a\u00020\u00072\u0006\u0010\u000f\u001a\u00020\u0005R\u0014\u0010\u0003\u001a\u0008\u0012\u0004\u0012\u00020\u00050\u0004X\u0082\u0004\u00a2\u0006\u0002\n\u0000\u00a8\u0006\u0011"
+        "\u0000.\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\u0008\u0002\n\u0002\u0010\u0011\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0002\n\u0002\u0008\u0003\n\u0002\u0010\u000b\n\u0002\u0008\u0006\u0008\u0000\u0018\u0000 \u00132\u00020\u0001:\u0001\u0013B\u0005\u00a2\u0006\u0002\u0010\u0002J\u0006\u0010\t\u001a\u00020\nJ\u0010\u0010\u000b\u001a\u00020\n2\u0006\u0010\u000c\u001a\u00020\u0005H\u0002J\u0006\u0010\r\u001a\u00020\u000eJ\u000e\u0010\u000f\u001a\u00020\n2\u0006\u0010\u0010\u001a\u00020\u0005J\u000e\u0010\u0011\u001a\u00020\n2\u0006\u0010\u0012\u001a\u00020\u0005R\u001a\u0010\u0003\u001a\u000c\u0012\u0006\u0012\u0004\u0018\u00010\u0005\u0018\u00010\u0004X\u0082\u000e\u00a2\u0006\u0004\n\u0002\u0010\u0006R\u0014\u0010\u0007\u001a\u0008\u0012\u0004\u0012\u00020\u00050\u0008X\u0082\u0004\u00a2\u0006\u0002\n\u0000\u00a8\u0006\u0014"
     }
     d2 = {
         "Landroidx/compose/ui/node/OnPositionedDispatcher;",
         "",
         "()V",
+        "cachedNodes",
+        "",
+        "Landroidx/compose/ui/node/LayoutNode;",
+        "[Landroidx/compose/ui/node/LayoutNode;",
         "layoutNodes",
         "Landroidx/compose/runtime/collection/MutableVector;",
-        "Landroidx/compose/ui/node/LayoutNode;",
         "dispatch",
         "",
         "dispatchHierarchy",
@@ -49,10 +52,16 @@
 
 
 # static fields
+.field public static final $stable:I
+
 .field public static final Companion:Landroidx/compose/ui/node/OnPositionedDispatcher$Companion;
+
+.field private static final MinArraySize:I = 0x10
 
 
 # instance fields
+.field private cachedNodes:[Landroidx/compose/ui/node/LayoutNode;
+
 .field private final layoutNodes:Landroidx/compose/runtime/collection/MutableVector;
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -76,6 +85,10 @@
 
     sput-object v0, Landroidx/compose/ui/node/OnPositionedDispatcher;->Companion:Landroidx/compose/ui/node/OnPositionedDispatcher$Companion;
 
+    const/16 v0, 0x8
+
+    sput v0, Landroidx/compose/ui/node/OnPositionedDispatcher;->$stable:I
+
     return-void
 .end method
 
@@ -85,7 +98,7 @@
     .line 25
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 78
+    .line 97
     new-instance v0, Landroidx/compose/runtime/collection/MutableVector;
 
     const/16 v1, 0x10
@@ -105,38 +118,38 @@
 .method private final dispatchHierarchy(Landroidx/compose/ui/node/LayoutNode;)V
     .locals 3
 
-    .line 55
+    .line 72
     invoke-virtual {p1}, Landroidx/compose/ui/node/LayoutNode;->dispatchOnPositionedCallbacks$ui_release()V
 
     const/4 v0, 0x0
 
-    .line 56
+    .line 73
     invoke-virtual {p1, v0}, Landroidx/compose/ui/node/LayoutNode;->setNeedsOnPositionedDispatch$ui_release(Z)V
 
-    .line 94
+    .line 103
     invoke-virtual {p1}, Landroidx/compose/ui/node/LayoutNode;->get_children$ui_release()Landroidx/compose/runtime/collection/MutableVector;
 
     move-result-object p1
 
-    .line 96
+    .line 105
     invoke-virtual {p1}, Landroidx/compose/runtime/collection/MutableVector;->getSize()I
 
     move-result v1
 
     if-lez v1, :cond_1
 
-    .line 99
+    .line 108
     invoke-virtual {p1}, Landroidx/compose/runtime/collection/MutableVector;->getContent()[Ljava/lang/Object;
 
     move-result-object p1
 
-    .line 101
+    .line 110
     :cond_0
     aget-object v2, p1, v0
 
     check-cast v2, Landroidx/compose/ui/node/LayoutNode;
 
-    .line 59
+    .line 76
     invoke-direct {p0, v2}, Landroidx/compose/ui/node/OnPositionedDispatcher;->dispatchHierarchy(Landroidx/compose/ui/node/LayoutNode;)V
 
     add-int/lit8 v0, v0, 0x1
@@ -152,7 +165,7 @@
 .method public final dispatch()V
     .locals 4
 
-    .line 43
+    .line 44
     iget-object v0, p0, Landroidx/compose/ui/node/OnPositionedDispatcher;->layoutNodes:Landroidx/compose/runtime/collection/MutableVector;
 
     sget-object v1, Landroidx/compose/ui/node/OnPositionedDispatcher$Companion$DepthComparator;->INSTANCE:Landroidx/compose/ui/node/OnPositionedDispatcher$Companion$DepthComparator;
@@ -161,49 +174,102 @@
 
     invoke-virtual {v0, v1}, Landroidx/compose/runtime/collection/MutableVector;->sortWith(Ljava/util/Comparator;)V
 
-    .line 44
+    .line 46
     iget-object v0, p0, Landroidx/compose/ui/node/OnPositionedDispatcher;->layoutNodes:Landroidx/compose/runtime/collection/MutableVector;
 
-    .line 84
     invoke-virtual {v0}, Landroidx/compose/runtime/collection/MutableVector;->getSize()I
+
+    move-result v0
+
+    .line 47
+    iget-object v1, p0, Landroidx/compose/ui/node/OnPositionedDispatcher;->cachedNodes:[Landroidx/compose/ui/node/LayoutNode;
+
+    if-eqz v1, :cond_0
+
+    .line 48
+    array-length v2, v1
+
+    if-ge v2, v0, :cond_1
+
+    .line 49
+    :cond_0
+    iget-object v1, p0, Landroidx/compose/ui/node/OnPositionedDispatcher;->layoutNodes:Landroidx/compose/runtime/collection/MutableVector;
+
+    invoke-virtual {v1}, Landroidx/compose/runtime/collection/MutableVector;->getSize()I
 
     move-result v1
 
-    if-lez v1, :cond_2
+    const/16 v2, 0x10
 
-    add-int/lit8 v1, v1, -0x1
+    invoke-static {v2, v1}, Ljava/lang/Math;->max(II)I
 
-    .line 87
-    invoke-virtual {v0}, Landroidx/compose/runtime/collection/MutableVector;->getContent()[Ljava/lang/Object;
+    move-result v1
 
-    move-result-object v0
+    new-array v1, v1, [Landroidx/compose/ui/node/LayoutNode;
 
-    .line 89
-    :cond_0
-    aget-object v2, v0, v1
+    :cond_1
+    const/4 v2, 0x0
 
-    check-cast v2, Landroidx/compose/ui/node/LayoutNode;
+    .line 53
+    iput-object v2, p0, Landroidx/compose/ui/node/OnPositionedDispatcher;->cachedNodes:[Landroidx/compose/ui/node/LayoutNode;
 
-    .line 45
+    const/4 v2, 0x0
+
+    :goto_0
+    if-ge v2, v0, :cond_2
+
+    .line 57
+    iget-object v3, p0, Landroidx/compose/ui/node/OnPositionedDispatcher;->layoutNodes:Landroidx/compose/runtime/collection/MutableVector;
+
+    .line 102
+    invoke-virtual {v3}, Landroidx/compose/runtime/collection/MutableVector;->getContent()[Ljava/lang/Object;
+
+    move-result-object v3
+
+    aget-object v3, v3, v2
+
+    aput-object v3, v1, v2
+
+    add-int/lit8 v2, v2, 0x1
+
+    goto :goto_0
+
+    .line 59
+    :cond_2
+    iget-object v2, p0, Landroidx/compose/ui/node/OnPositionedDispatcher;->layoutNodes:Landroidx/compose/runtime/collection/MutableVector;
+
+    invoke-virtual {v2}, Landroidx/compose/runtime/collection/MutableVector;->clear()V
+
+    add-int/lit8 v0, v0, -0x1
+
+    :goto_1
+    const/4 v2, -0x1
+
+    if-ge v2, v0, :cond_4
+
+    .line 61
+    aget-object v2, v1, v0
+
+    invoke-static {v2}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;)V
+
+    .line 62
     invoke-virtual {v2}, Landroidx/compose/ui/node/LayoutNode;->getNeedsOnPositionedDispatch$ui_release()Z
 
     move-result v3
 
-    if-eqz v3, :cond_1
+    if-eqz v3, :cond_3
 
-    .line 46
+    .line 63
     invoke-direct {p0, v2}, Landroidx/compose/ui/node/OnPositionedDispatcher;->dispatchHierarchy(Landroidx/compose/ui/node/LayoutNode;)V
 
-    :cond_1
-    add-int/lit8 v1, v1, -0x1
+    :cond_3
+    add-int/lit8 v0, v0, -0x1
 
-    if-gez v1, :cond_0
+    goto :goto_1
 
-    .line 49
-    :cond_2
-    iget-object p0, p0, Landroidx/compose/ui/node/OnPositionedDispatcher;->layoutNodes:Landroidx/compose/runtime/collection/MutableVector;
-
-    invoke-virtual {p0}, Landroidx/compose/runtime/collection/MutableVector;->clear()V
+    .line 66
+    :cond_4
+    iput-object v1, p0, Landroidx/compose/ui/node/OnPositionedDispatcher;->cachedNodes:[Landroidx/compose/ui/node/LayoutNode;
 
     return-void
 .end method
@@ -211,7 +277,7 @@
 .method public final isNotEmpty()Z
     .locals 0
 
-    .line 28
+    .line 29
     iget-object p0, p0, Landroidx/compose/ui/node/OnPositionedDispatcher;->layoutNodes:Landroidx/compose/runtime/collection/MutableVector;
 
     invoke-virtual {p0}, Landroidx/compose/runtime/collection/MutableVector;->isNotEmpty()Z
@@ -222,21 +288,17 @@
 .end method
 
 .method public final onNodePositioned(Landroidx/compose/ui/node/LayoutNode;)V
-    .locals 1
+    .locals 0
 
-    const-string v0, "node"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 31
+    .line 32
     iget-object p0, p0, Landroidx/compose/ui/node/OnPositionedDispatcher;->layoutNodes:Landroidx/compose/runtime/collection/MutableVector;
 
-    .line 79
+    .line 98
     invoke-virtual {p0, p1}, Landroidx/compose/runtime/collection/MutableVector;->add(Ljava/lang/Object;)Z
 
     const/4 p0, 0x1
 
-    .line 32
+    .line 33
     invoke-virtual {p1, p0}, Landroidx/compose/ui/node/LayoutNode;->setNeedsOnPositionedDispatch$ui_release(Z)V
 
     return-void
@@ -245,24 +307,20 @@
 .method public final onRootNodePositioned(Landroidx/compose/ui/node/LayoutNode;)V
     .locals 1
 
-    const-string v0, "rootNode"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 36
+    .line 37
     iget-object v0, p0, Landroidx/compose/ui/node/OnPositionedDispatcher;->layoutNodes:Landroidx/compose/runtime/collection/MutableVector;
 
     invoke-virtual {v0}, Landroidx/compose/runtime/collection/MutableVector;->clear()V
 
-    .line 37
+    .line 38
     iget-object p0, p0, Landroidx/compose/ui/node/OnPositionedDispatcher;->layoutNodes:Landroidx/compose/runtime/collection/MutableVector;
 
-    .line 81
+    .line 100
     invoke-virtual {p0, p1}, Landroidx/compose/runtime/collection/MutableVector;->add(Ljava/lang/Object;)Z
 
     const/4 p0, 0x1
 
-    .line 38
+    .line 39
     invoke-virtual {p1, p0}, Landroidx/compose/ui/node/LayoutNode;->setNeedsOnPositionedDispatch$ui_release(Z)V
 
     return-void

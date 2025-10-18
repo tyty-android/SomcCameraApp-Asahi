@@ -24,42 +24,42 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeSeamlessBindingImpl;->sViewsWithIds:Landroid/util/SparseIntArray;
 
-    const v1, 0x7f0900a3
+    const v1, 0x7f0900a4
 
     const/4 v2, 0x4
 
     .line 17
     invoke-virtual {v0, v1, v2}, Landroid/util/SparseIntArray;->put(II)V
 
-    const v1, 0x7f09029e
+    const v1, 0x7f09029a
 
     const/4 v2, 0x5
 
     .line 18
     invoke-virtual {v0, v1, v2}, Landroid/util/SparseIntArray;->put(II)V
 
-    const v1, 0x7f0903ee
+    const v1, 0x7f0903ed
 
     const/4 v2, 0x6
 
     .line 19
     invoke-virtual {v0, v1, v2}, Landroid/util/SparseIntArray;->put(II)V
 
-    const v1, 0x7f0903e9
+    const v1, 0x7f0903e8
 
     const/4 v2, 0x7
 
     .line 20
     invoke-virtual {v0, v1, v2}, Landroid/util/SparseIntArray;->put(II)V
 
-    const v1, 0x7f0903ea
+    const v1, 0x7f0903e9
 
     const/16 v2, 0x8
 
     .line 21
     invoke-virtual {v0, v1, v2}, Landroid/util/SparseIntArray;->put(II)V
 
-    const v1, 0x7f090293
+    const v1, 0x7f09028e
 
     const/16 v2, 0x9
 
@@ -186,7 +186,7 @@
 
     const-wide/16 v0, -0x1
 
-    .line 253
+    .line 259
     iput-wide v0, v14, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeSeamlessBindingImpl;->mDirtyFlags:J
 
     .line 46
@@ -235,10 +235,10 @@
 
     if-nez p2, :cond_0
 
-    .line 147
+    .line 153
     monitor-enter p0
 
-    .line 148
+    .line 154
     :try_start_0
     iget-wide p1, p0, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeSeamlessBindingImpl;->mDirtyFlags:J
 
@@ -248,7 +248,7 @@
 
     iput-wide p1, p0, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeSeamlessBindingImpl;->mDirtyFlags:J
 
-    .line 149
+    .line 155
     monitor-exit p0
 
     const/4 p0, 0x1
@@ -283,10 +283,10 @@
 
     if-nez p2, :cond_0
 
-    .line 156
+    .line 162
     monitor-enter p0
 
-    .line 157
+    .line 163
     :try_start_0
     iget-wide p1, p0, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeSeamlessBindingImpl;->mDirtyFlags:J
 
@@ -296,7 +296,7 @@
 
     iput-wide p1, p0, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeSeamlessBindingImpl;->mDirtyFlags:J
 
-    .line 158
+    .line 164
     monitor-exit p0
 
     const/4 p0, 0x1
@@ -323,30 +323,30 @@
 .method protected executeBindings()V
     .locals 15
 
-    .line 167
+    .line 173
     monitor-enter p0
 
-    .line 168
+    .line 174
     :try_start_0
     iget-wide v0, p0, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeSeamlessBindingImpl;->mDirtyFlags:J
 
     const-wide/16 v2, 0x0
 
-    .line 169
+    .line 175
     iput-wide v2, p0, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeSeamlessBindingImpl;->mDirtyFlags:J
 
-    .line 170
+    .line 176
     monitor-exit p0
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 171
+    .line 177
     iget-object v4, p0, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeSeamlessBindingImpl;->mSinglelensModel:Ljp/co/sony/mc/camera/view/uistate/SingleLensViewModel;
 
-    .line 175
+    .line 181
     iget-object v5, p0, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeSeamlessBindingImpl;->mLensUiState:Ljp/co/sony/mc/camera/view/uistate/LensUiState;
 
-    const-wide/16 v6, 0x20a
+    const-wide/16 v6, 0x40a
 
     and-long v8, v0, v6
 
@@ -360,7 +360,7 @@
 
     if-eqz v4, :cond_0
 
-    .line 187
+    .line 193
     invoke-virtual {v4}, Ljp/co/sony/mc/camera/view/uistate/SingleLensViewModel;->getSelected()Landroidx/lifecycle/LiveData;
 
     move-result-object v4
@@ -373,12 +373,12 @@
     :goto_0
     const/4 v8, 0x1
 
-    .line 189
+    .line 195
     invoke-virtual {p0, v8, v4}, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeSeamlessBindingImpl;->updateLiveDataRegistration(ILandroidx/lifecycle/LiveData;)Z
 
     if-eqz v4, :cond_1
 
-    .line 194
+    .line 200
     invoke-virtual {v4}, Landroidx/lifecycle/LiveData;->getValue()Ljava/lang/Object;
 
     move-result-object v4
@@ -390,7 +390,7 @@
     :cond_1
     move-object v4, v10
 
-    .line 199
+    .line 205
     :goto_1
     invoke-static {v4}, Landroidx/databinding/ViewDataBinding;->safeUnbox(Ljava/lang/Boolean;)Z
 
@@ -402,7 +402,7 @@
     move v4, v9
 
     :goto_2
-    const-wide/16 v11, 0x211
+    const-wide/16 v11, 0x411
 
     and-long v13, v0, v11
 
@@ -412,7 +412,7 @@
 
     if-eqz v5, :cond_3
 
-    .line 207
+    .line 213
     invoke-virtual {v5}, Ljp/co/sony/mc/camera/view/uistate/LensUiState;->getZoomEnabled()Landroidx/lifecycle/LiveData;
 
     move-result-object v5
@@ -422,13 +422,13 @@
     :cond_3
     move-object v5, v10
 
-    .line 209
+    .line 215
     :goto_3
     invoke-virtual {p0, v9, v5}, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeSeamlessBindingImpl;->updateLiveDataRegistration(ILandroidx/lifecycle/LiveData;)Z
 
     if-eqz v5, :cond_4
 
-    .line 214
+    .line 220
     invoke-virtual {v5}, Landroidx/lifecycle/LiveData;->getValue()Ljava/lang/Object;
 
     move-result-object v5
@@ -437,7 +437,7 @@
 
     check-cast v10, Ljava/lang/Boolean;
 
-    .line 219
+    .line 225
     :cond_4
     invoke-static {v10}, Landroidx/databinding/ViewDataBinding;->safeUnbox(Ljava/lang/Boolean;)Z
 
@@ -447,12 +447,12 @@
 
     if-eqz v9, :cond_5
 
-    const-wide/16 v13, 0x800
+    const-wide/16 v13, 0x1000
 
     goto :goto_4
 
     :cond_5
-    const-wide/16 v13, 0x400
+    const-wide/16 v13, 0x800
 
     :goto_4
     or-long/2addr v0, v13
@@ -479,22 +479,22 @@
 
     if-eqz v8, :cond_9
 
-    .line 237
+    .line 243
     iget-object v8, p0, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeSeamlessBindingImpl;->controlView:Landroid/view/View;
 
     invoke-static {v8, v9}, Ljp/co/sony/mc/camera/view/viewbinder/BindingAdapters;->setEnabled(Landroid/view/View;Z)V
 
-    .line 238
+    .line 244
     iget-object v8, p0, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeSeamlessBindingImpl;->mainCircle:Landroid/view/View;
 
     invoke-static {v8, v9}, Ljp/co/sony/mc/camera/view/viewbinder/BindingAdapters;->setEnabled(Landroid/view/View;Z)V
 
-    .line 239
+    .line 245
     iget-object v8, p0, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeSeamlessBindingImpl;->mainLabel:Landroid/widget/TextView;
 
     invoke-static {v8, v9}, Ljp/co/sony/mc/camera/view/viewbinder/BindingAdapters;->setEnabled(Landroid/view/View;Z)V
 
-    .line 240
+    .line 246
     iget-object v8, p0, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeSeamlessBindingImpl;->rootContainer:Landroid/widget/FrameLayout;
 
     invoke-static {v8, v5}, Ljp/co/sony/mc/camera/view/viewbinder/BindingAdapters;->setAlpha(Landroid/view/View;F)V
@@ -506,17 +506,17 @@
 
     if-eqz v0, :cond_a
 
-    .line 245
+    .line 251
     iget-object v0, p0, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeSeamlessBindingImpl;->mainCircle:Landroid/view/View;
 
     invoke-static {v0, v4}, Ljp/co/sony/mc/camera/view/viewbinder/BindingAdapters;->setActivated(Landroid/view/View;Z)V
 
-    .line 246
+    .line 252
     iget-object v0, p0, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeSeamlessBindingImpl;->mainLabel:Landroid/widget/TextView;
 
     invoke-static {v0, v4}, Ljp/co/sony/mc/camera/view/viewbinder/BindingAdapters;->setActivated(Landroid/view/View;Z)V
 
-    .line 247
+    .line 253
     iget-object p0, p0, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeSeamlessBindingImpl;->mainLabel:Landroid/widget/TextView;
 
     invoke-static {p0, v4}, Ljp/co/sony/mc/camera/view/viewbinder/BindingAdapters;->setTextBold(Landroid/widget/TextView;Z)V
@@ -527,7 +527,7 @@
     :catchall_0
     move-exception v0
 
-    .line 170
+    .line 176
     :try_start_1
     monitor-exit p0
     :try_end_1
@@ -583,7 +583,7 @@
     .line 57
     monitor-enter p0
 
-    const-wide/16 v0, 0x200
+    const-wide/16 v0, 0x400
 
     .line 58
     :try_start_0
@@ -624,7 +624,7 @@
 
     return p0
 
-    .line 141
+    .line 147
     :cond_0
     check-cast p2, Landroidx/lifecycle/LiveData;
 
@@ -634,7 +634,7 @@
 
     return p0
 
-    .line 139
+    .line 145
     :cond_1
     check-cast p2, Landroidx/lifecycle/LiveData;
 
@@ -648,7 +648,7 @@
 .method public setBasicModeCommonUiState(Ljp/co/sony/mc/camera/view/uistate/BasicModeCommonUiState;)V
     .locals 0
 
-    .line 123
+    .line 126
     iput-object p1, p0, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeSeamlessBindingImpl;->mBasicModeCommonUiState:Ljp/co/sony/mc/camera/view/uistate/BasicModeCommonUiState;
 
     return-void
@@ -657,7 +657,7 @@
 .method public setBasicModeTopPaneUiState(Ljp/co/sony/mc/camera/view/uistate/BasicModeTopPaneUiState;)V
     .locals 0
 
-    .line 126
+    .line 129
     iput-object p1, p0, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeSeamlessBindingImpl;->mBasicModeTopPaneUiState:Ljp/co/sony/mc/camera/view/uistate/BasicModeTopPaneUiState;
 
     return-void
@@ -666,7 +666,7 @@
 .method public setCameraSettingsModel(Ljp/co/sony/mc/camera/view/viewmodel/CameraSettingsModel;)V
     .locals 0
 
-    .line 129
+    .line 132
     iput-object p1, p0, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeSeamlessBindingImpl;->mCameraSettingsModel:Ljp/co/sony/mc/camera/view/viewmodel/CameraSettingsModel;
 
     return-void
@@ -675,8 +675,17 @@
 .method public setCameraStatusModel(Ljp/co/sony/mc/camera/view/viewmodel/CameraStatusModel;)V
     .locals 0
 
-    .line 132
+    .line 138
     iput-object p1, p0, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeSeamlessBindingImpl;->mCameraStatusModel:Ljp/co/sony/mc/camera/view/viewmodel/CameraStatusModel;
+
+    return-void
+.end method
+
+.method public setCaptureControlUiState(Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState;)V
+    .locals 0
+
+    .line 135
+    iput-object p1, p0, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeSeamlessBindingImpl;->mCaptureControlUiState:Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState;
 
     return-void
 .end method
@@ -684,13 +693,13 @@
 .method public setLensUiState(Ljp/co/sony/mc/camera/view/uistate/LensUiState;)V
     .locals 4
 
-    .line 115
+    .line 118
     iput-object p1, p0, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeSeamlessBindingImpl;->mLensUiState:Ljp/co/sony/mc/camera/view/uistate/LensUiState;
 
-    .line 116
+    .line 119
     monitor-enter p0
 
-    .line 117
+    .line 120
     :try_start_0
     iget-wide v0, p0, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeSeamlessBindingImpl;->mDirtyFlags:J
 
@@ -700,17 +709,17 @@
 
     iput-wide v0, p0, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeSeamlessBindingImpl;->mDirtyFlags:J
 
-    .line 118
+    .line 121
     monitor-exit p0
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    const/16 p1, 0xf
+    const/16 p1, 0x11
 
-    .line 119
+    .line 122
     invoke-virtual {p0, p1}, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeSeamlessBindingImpl;->notifyPropertyChanged(I)V
 
-    .line 120
+    .line 123
     invoke-super {p0}, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeSeamlessBinding;->requestRebind()V
 
     return-void
@@ -718,7 +727,7 @@
     :catchall_0
     move-exception p1
 
-    .line 118
+    .line 121
     :try_start_1
     monitor-exit p0
     :try_end_1
@@ -730,7 +739,7 @@
 .method public setOrientationViewModel(Ljp/co/sony/mc/camera/view/viewmodel/OrientationViewModel;)V
     .locals 0
 
-    .line 104
+    .line 107
     iput-object p1, p0, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeSeamlessBindingImpl;->mOrientationViewModel:Ljp/co/sony/mc/camera/view/viewmodel/OrientationViewModel;
 
     return-void
@@ -739,13 +748,13 @@
 .method public setSinglelensModel(Ljp/co/sony/mc/camera/view/uistate/SingleLensViewModel;)V
     .locals 4
 
-    .line 107
+    .line 110
     iput-object p1, p0, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeSeamlessBindingImpl;->mSinglelensModel:Ljp/co/sony/mc/camera/view/uistate/SingleLensViewModel;
 
-    .line 108
+    .line 111
     monitor-enter p0
 
-    .line 109
+    .line 112
     :try_start_0
     iget-wide v0, p0, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeSeamlessBindingImpl;->mDirtyFlags:J
 
@@ -755,17 +764,17 @@
 
     iput-wide v0, p0, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeSeamlessBindingImpl;->mDirtyFlags:J
 
-    .line 110
+    .line 113
     monitor-exit p0
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    const/16 p1, 0x1d
+    const/16 p1, 0x1f
 
-    .line 111
+    .line 114
     invoke-virtual {p0, p1}, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeSeamlessBindingImpl;->notifyPropertyChanged(I)V
 
-    .line 112
+    .line 115
     invoke-super {p0}, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeSeamlessBinding;->requestRebind()V
 
     return-void
@@ -773,7 +782,7 @@
     :catchall_0
     move-exception p1
 
-    .line 110
+    .line 113
     :try_start_1
     monitor-exit p0
     :try_end_1
@@ -785,7 +794,7 @@
 .method public setVariable(ILjava/lang/Object;)Z
     .locals 1
 
-    const/16 v0, 0x13
+    const/16 v0, 0x16
 
     if-ne v0, p1, :cond_0
 
@@ -797,7 +806,7 @@
     goto :goto_0
 
     :cond_0
-    const/16 v0, 0x1d
+    const/16 v0, 0x1f
 
     if-ne v0, p1, :cond_1
 
@@ -809,7 +818,7 @@
     goto :goto_0
 
     :cond_1
-    const/16 v0, 0xf
+    const/16 v0, 0x11
 
     if-ne v0, p1, :cond_2
 
@@ -821,7 +830,7 @@
     goto :goto_0
 
     :cond_2
-    const/4 v0, 0x3
+    const/4 v0, 0x4
 
     if-ne v0, p1, :cond_3
 
@@ -833,7 +842,7 @@
     goto :goto_0
 
     :cond_3
-    const/4 v0, 0x5
+    const/4 v0, 0x6
 
     if-ne v0, p1, :cond_4
 
@@ -845,7 +854,7 @@
     goto :goto_0
 
     :cond_4
-    const/4 v0, 0x7
+    const/16 v0, 0x8
 
     if-ne v0, p1, :cond_5
 
@@ -857,11 +866,23 @@
     goto :goto_0
 
     :cond_5
-    const/16 v0, 0x8
+    const/16 v0, 0xa
 
     if-ne v0, p1, :cond_6
 
     .line 95
+    check-cast p2, Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState;
+
+    invoke-virtual {p0, p2}, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeSeamlessBindingImpl;->setCaptureControlUiState(Ljp/co/sony/mc/camera/view/uistate/CaptureControlUiState;)V
+
+    goto :goto_0
+
+    :cond_6
+    const/16 v0, 0x9
+
+    if-ne v0, p1, :cond_7
+
+    .line 98
     check-cast p2, Ljp/co/sony/mc/camera/view/viewmodel/CameraStatusModel;
 
     invoke-virtual {p0, p2}, Ljp/co/sony/mc/camera/databinding/FragmentBasicModeSeamlessBindingImpl;->setCameraStatusModel(Ljp/co/sony/mc/camera/view/viewmodel/CameraStatusModel;)V
@@ -871,7 +892,7 @@
 
     goto :goto_1
 
-    :cond_6
+    :cond_7
     const/4 p0, 0x0
 
     :goto_1

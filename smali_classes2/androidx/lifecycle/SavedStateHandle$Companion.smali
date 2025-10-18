@@ -52,7 +52,7 @@
 .method private constructor <init>()V
     .locals 0
 
-    .line 358
+    .line 399
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -77,14 +77,14 @@
 
     if-nez p2, :cond_0
 
-    .line 368
+    .line 409
     new-instance p0, Landroidx/lifecycle/SavedStateHandle;
 
     invoke-direct {p0}, Landroidx/lifecycle/SavedStateHandle;-><init>()V
 
     goto :goto_1
 
-    .line 370
+    .line 411
     :cond_0
     new-instance p0, Ljava/util/HashMap;
 
@@ -92,7 +92,7 @@
 
     check-cast p0, Ljava/util/Map;
 
-    .line 371
+    .line 412
     invoke-virtual {p2}, Landroid/os/Bundle;->keySet()Ljava/util/Set;
 
     move-result-object p1
@@ -114,7 +114,7 @@
 
     check-cast v0, Ljava/lang/String;
 
-    .line 372
+    .line 413
     const-string v1, "key"
 
     invoke-static {v0, v1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
@@ -127,7 +127,7 @@
 
     goto :goto_0
 
-    .line 374
+    .line 415
     :cond_1
     new-instance p1, Landroidx/lifecycle/SavedStateHandle;
 
@@ -138,15 +138,26 @@
     :goto_1
     return-object p0
 
-    .line 381
+    .line 422
     :cond_2
+    const-class p0, Landroidx/lifecycle/SavedStateHandle;
+
+    invoke-virtual {p0}, Ljava/lang/Class;->getClassLoader()Ljava/lang/ClassLoader;
+
+    move-result-object p0
+
+    invoke-static {p0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;)V
+
+    invoke-virtual {p1, p0}, Landroid/os/Bundle;->setClassLoader(Ljava/lang/ClassLoader;)V
+
+    .line 423
     const-string p0, "keys"
 
     invoke-virtual {p1, p0}, Landroid/os/Bundle;->getParcelableArrayList(Ljava/lang/String;)Ljava/util/ArrayList;
 
     move-result-object p0
 
-    .line 382
+    .line 424
     const-string p2, "values"
 
     invoke-virtual {p1, p2}, Landroid/os/Bundle;->getParcelableArrayList(Ljava/lang/String;)Ljava/util/ArrayList;
@@ -157,7 +168,7 @@
 
     if-eqz p1, :cond_4
 
-    .line 383
+    .line 425
     invoke-virtual {p0}, Ljava/util/ArrayList;->size()I
 
     move-result p2
@@ -168,14 +179,14 @@
 
     if-ne p2, v0, :cond_4
 
-    .line 386
+    .line 428
     new-instance p2, Ljava/util/LinkedHashMap;
 
     invoke-direct {p2}, Ljava/util/LinkedHashMap;-><init>()V
 
     check-cast p2, Ljava/util/Map;
 
-    .line 387
+    .line 429
     invoke-virtual {p0}, Ljava/util/ArrayList;->size()I
 
     move-result v0
@@ -185,7 +196,7 @@
     :goto_2
     if-ge v1, v0, :cond_3
 
-    .line 388
+    .line 430
     invoke-virtual {p0, v1}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
 
     move-result-object v2
@@ -206,7 +217,7 @@
 
     goto :goto_2
 
-    .line 390
+    .line 432
     :cond_3
     new-instance p0, Landroidx/lifecycle/SavedStateHandle;
 
@@ -214,7 +225,7 @@
 
     return-object p0
 
-    .line 383
+    .line 425
     :cond_4
     new-instance p0, Ljava/lang/IllegalStateException;
 
@@ -238,7 +249,7 @@
 
     return p0
 
-    .line 401
+    .line 440
     :cond_0
     invoke-static {}, Landroidx/lifecycle/SavedStateHandle;->access$getACCEPTABLE_CLASSES$cp()[Ljava/lang/Class;
 
@@ -255,7 +266,7 @@
 
     aget-object v4, v0, v3
 
-    .line 402
+    .line 441
     invoke-static {v4}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;)V
 
     invoke-virtual {v4, p1}, Ljava/lang/Class;->isInstance(Ljava/lang/Object;)Z

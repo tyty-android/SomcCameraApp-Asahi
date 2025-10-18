@@ -28,7 +28,7 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/SourceDebugExtension;
-    value = "SMAP\nTabRow.kt\nKotlin\n*S Kotlin\n*F\n+ 1 TabRow.kt\nandroidx/compose/material/TabRowKt$TabRow$2\n+ 2 Composables.kt\nandroidx/compose/runtime/ComposablesKt\n+ 3 Composer.kt\nandroidx/compose/runtime/ComposerKt\n*L\n1#1,517:1\n67#2,3:518\n66#2:521\n1097#3,6:522\n*S KotlinDebug\n*F\n+ 1 TabRow.kt\nandroidx/compose/material/TabRowKt$TabRow$2\n*L\n151#1:518,3\n151#1:521\n151#1:522,6\n*E\n"
+    value = "SMAP\nTabRow.kt\nKotlin\n*S Kotlin\n*F\n+ 1 TabRow.kt\nandroidx/compose/material/TabRowKt$TabRow$2\n+ 2 Composer.kt\nandroidx/compose/runtime/ComposerKt\n*L\n1#1,521:1\n1116#2,6:522\n*S KotlinDebug\n*F\n+ 1 TabRow.kt\nandroidx/compose/material/TabRowKt$TabRow$2\n*L\n155#1:522,6\n*E\n"
 .end annotation
 
 .annotation runtime Lkotlin/Metadata;
@@ -52,8 +52,6 @@
 
 
 # instance fields
-.field final synthetic $$dirty:I
-
 .field final synthetic $divider:Lkotlin/jvm/functions/Function2;
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -95,7 +93,7 @@
 
 
 # direct methods
-.method constructor <init>(Lkotlin/jvm/functions/Function2;Lkotlin/jvm/functions/Function2;Lkotlin/jvm/functions/Function3;I)V
+.method constructor <init>(Lkotlin/jvm/functions/Function2;Lkotlin/jvm/functions/Function2;Lkotlin/jvm/functions/Function3;)V
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -123,7 +121,7 @@
             "-",
             "Ljava/lang/Integer;",
             "Lkotlin/Unit;",
-            ">;I)V"
+            ">;)V"
         }
     .end annotation
 
@@ -132,8 +130,6 @@
     iput-object p2, p0, Landroidx/compose/material/TabRowKt$TabRow$2;->$divider:Lkotlin/jvm/functions/Function2;
 
     iput-object p3, p0, Landroidx/compose/material/TabRowKt$TabRow$2;->$indicator:Lkotlin/jvm/functions/Function3;
-
-    iput p4, p0, Landroidx/compose/material/TabRowKt$TabRow$2;->$$dirty:I
 
     const/4 p1, 0x2
 
@@ -147,7 +143,7 @@
 .method public bridge synthetic invoke(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
 
-    .line 150
+    .line 154
     check-cast p1, Landroidx/compose/runtime/Composer;
 
     check-cast p2, Ljava/lang/Number;
@@ -164,9 +160,9 @@
 .end method
 
 .method public final invoke(Landroidx/compose/runtime/Composer;I)V
-    .locals 5
+    .locals 4
 
-    const-string v0, "C150@7189L1315,150@7147L1357:TabRow.kt#jmzs0o"
+    const-string v0, "C154@7324L1371:TabRow.kt#jmzs0o"
 
     invoke-static {p1, v0}, Landroidx/compose/runtime/ComposerKt;->sourceInformation(Landroidx/compose/runtime/Composer;Ljava/lang/String;)V
 
@@ -176,7 +172,7 @@
 
     if-ne v0, v1, :cond_1
 
-    .line 151
+    .line 155
     invoke-interface {p1}, Landroidx/compose/runtime/Composer;->getSkipping()Z
 
     move-result v0
@@ -185,13 +181,13 @@
 
     goto :goto_0
 
-    .line 182
+    .line 186
     :cond_0
     invoke-interface {p1}, Landroidx/compose/runtime/Composer;->skipToGroupEnd()V
 
     goto :goto_1
 
-    .line 151
+    .line 155
     :cond_1
     :goto_0
     invoke-static {}, Landroidx/compose/runtime/ComposerKt;->isTraceInProgress()Z
@@ -202,7 +198,7 @@
 
     const/4 v0, -0x1
 
-    const-string v1, "androidx.compose.material.TabRow.<anonymous> (TabRow.kt:149)"
+    const-string v1, "androidx.compose.material.TabRow.<anonymous> (TabRow.kt:154)"
 
     const v2, -0x74eddfbd
 
@@ -223,82 +219,78 @@
 
     move-result-object p2
 
+    const v0, 0x161936db
+
+    invoke-interface {p1, v0}, Landroidx/compose/runtime/Composer;->startReplaceableGroup(I)V
+
     iget-object v0, p0, Landroidx/compose/material/TabRowKt$TabRow$2;->$tabs:Lkotlin/jvm/functions/Function2;
+
+    invoke-interface {p1, v0}, Landroidx/compose/runtime/Composer;->changedInstance(Ljava/lang/Object;)Z
+
+    move-result v0
 
     iget-object v1, p0, Landroidx/compose/material/TabRowKt$TabRow$2;->$divider:Lkotlin/jvm/functions/Function2;
 
-    iget-object v2, p0, Landroidx/compose/material/TabRowKt$TabRow$2;->$indicator:Lkotlin/jvm/functions/Function3;
+    invoke-interface {p1, v1}, Landroidx/compose/runtime/Composer;->changedInstance(Ljava/lang/Object;)Z
 
-    iget p0, p0, Landroidx/compose/material/TabRowKt$TabRow$2;->$$dirty:I
+    move-result v1
 
-    const v3, 0x607fb4c4
+    or-int/2addr v0, v1
 
-    invoke-interface {p1, v3}, Landroidx/compose/runtime/Composer;->startReplaceableGroup(I)V
+    iget-object v1, p0, Landroidx/compose/material/TabRowKt$TabRow$2;->$indicator:Lkotlin/jvm/functions/Function3;
 
-    const-string v3, "CC(remember)P(1,2,3):Composables.kt#9igjgp"
+    invoke-interface {p1, v1}, Landroidx/compose/runtime/Composer;->changedInstance(Ljava/lang/Object;)Z
 
-    invoke-static {p1, v3}, Landroidx/compose/runtime/ComposerKt;->sourceInformation(Landroidx/compose/runtime/Composer;Ljava/lang/String;)V
+    move-result v1
 
-    .line 518
-    invoke-interface {p1, v0}, Landroidx/compose/runtime/Composer;->changed(Ljava/lang/Object;)Z
+    or-int/2addr v0, v1
 
-    move-result v3
+    iget-object v1, p0, Landroidx/compose/material/TabRowKt$TabRow$2;->$tabs:Lkotlin/jvm/functions/Function2;
 
-    .line 519
-    invoke-interface {p1, v1}, Landroidx/compose/runtime/Composer;->changed(Ljava/lang/Object;)Z
+    iget-object v2, p0, Landroidx/compose/material/TabRowKt$TabRow$2;->$divider:Lkotlin/jvm/functions/Function2;
 
-    move-result v4
-
-    or-int/2addr v3, v4
-
-    .line 520
-    invoke-interface {p1, v2}, Landroidx/compose/runtime/Composer;->changed(Ljava/lang/Object;)Z
-
-    move-result v4
-
-    or-int/2addr v3, v4
+    iget-object p0, p0, Landroidx/compose/material/TabRowKt$TabRow$2;->$indicator:Lkotlin/jvm/functions/Function3;
 
     .line 522
     invoke-interface {p1}, Landroidx/compose/runtime/Composer;->rememberedValue()Ljava/lang/Object;
 
-    move-result-object v4
-
-    if-nez v3, :cond_3
-
-    .line 523
-    sget-object v3, Landroidx/compose/runtime/Composer;->Companion:Landroidx/compose/runtime/Composer$Companion;
-
-    invoke-virtual {v3}, Landroidx/compose/runtime/Composer$Companion;->getEmpty()Ljava/lang/Object;
-
     move-result-object v3
 
-    if-ne v4, v3, :cond_4
+    if-nez v0, :cond_3
 
-    .line 151
+    .line 523
+    sget-object v0, Landroidx/compose/runtime/Composer;->Companion:Landroidx/compose/runtime/Composer$Companion;
+
+    invoke-virtual {v0}, Landroidx/compose/runtime/Composer$Companion;->getEmpty()Ljava/lang/Object;
+
+    move-result-object v0
+
+    if-ne v3, v0, :cond_4
+
+    .line 155
     :cond_3
-    new-instance v3, Landroidx/compose/material/TabRowKt$TabRow$2$1$1;
+    new-instance v0, Landroidx/compose/material/TabRowKt$TabRow$2$1$1;
 
-    invoke-direct {v3, v0, v1, v2, p0}, Landroidx/compose/material/TabRowKt$TabRow$2$1$1;-><init>(Lkotlin/jvm/functions/Function2;Lkotlin/jvm/functions/Function2;Lkotlin/jvm/functions/Function3;I)V
+    invoke-direct {v0, v1, v2, p0}, Landroidx/compose/material/TabRowKt$TabRow$2$1$1;-><init>(Lkotlin/jvm/functions/Function2;Lkotlin/jvm/functions/Function2;Lkotlin/jvm/functions/Function3;)V
 
-    move-object v4, v3
+    move-object v3, v0
 
-    check-cast v4, Lkotlin/jvm/functions/Function2;
+    check-cast v3, Lkotlin/jvm/functions/Function2;
 
     .line 525
-    invoke-interface {p1, v4}, Landroidx/compose/runtime/Composer;->updateRememberedValue(Ljava/lang/Object;)V
+    invoke-interface {p1, v3}, Landroidx/compose/runtime/Composer;->updateRememberedValue(Ljava/lang/Object;)V
 
-    .line 521
+    .line 155
     :cond_4
-    invoke-interface {p1}, Landroidx/compose/runtime/Composer;->endReplaceableGroup()V
+    check-cast v3, Lkotlin/jvm/functions/Function2;
 
-    check-cast v4, Lkotlin/jvm/functions/Function2;
+    invoke-interface {p1}, Landroidx/compose/runtime/Composer;->endReplaceableGroup()V
 
     const/4 p0, 0x6
 
     const/4 v0, 0x0
 
-    .line 151
-    invoke-static {p2, v4, p1, p0, v0}, Landroidx/compose/ui/layout/SubcomposeLayoutKt;->SubcomposeLayout(Landroidx/compose/ui/Modifier;Lkotlin/jvm/functions/Function2;Landroidx/compose/runtime/Composer;II)V
+    invoke-static {p2, v3, p1, p0, v0}, Landroidx/compose/ui/layout/SubcomposeLayoutKt;->SubcomposeLayout(Landroidx/compose/ui/Modifier;Lkotlin/jvm/functions/Function2;Landroidx/compose/runtime/Composer;II)V
 
     invoke-static {}, Landroidx/compose/runtime/ComposerKt;->isTraceInProgress()Z
 

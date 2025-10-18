@@ -30,7 +30,7 @@
 .method constructor <init>()V
     .locals 0
 
-    .line 924
+    .line 933
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -41,7 +41,7 @@
 .method public createFromParcel(Landroid/os/Parcel;)Lcom/google/android/material/checkbox/MaterialCheckBox$SavedState;
     .locals 1
 
-    .line 927
+    .line 936
     new-instance p0, Lcom/google/android/material/checkbox/MaterialCheckBox$SavedState;
 
     const/4 v0, 0x0
@@ -54,7 +54,7 @@
 .method public bridge synthetic createFromParcel(Landroid/os/Parcel;)Ljava/lang/Object;
     .locals 0
 
-    .line 924
+    .line 933
     invoke-virtual {p0, p1}, Lcom/google/android/material/checkbox/MaterialCheckBox$SavedState$1;->createFromParcel(Landroid/os/Parcel;)Lcom/google/android/material/checkbox/MaterialCheckBox$SavedState;
 
     move-result-object p0
@@ -65,7 +65,7 @@
 .method public newArray(I)[Lcom/google/android/material/checkbox/MaterialCheckBox$SavedState;
     .locals 0
 
-    .line 932
+    .line 941
     new-array p0, p1, [Lcom/google/android/material/checkbox/MaterialCheckBox$SavedState;
 
     return-object p0
@@ -74,7 +74,7 @@
 .method public bridge synthetic newArray(I)[Ljava/lang/Object;
     .locals 0
 
-    .line 924
+    .line 933
     invoke-virtual {p0, p1}, Lcom/google/android/material/checkbox/MaterialCheckBox$SavedState$1;->newArray(I)[Lcom/google/android/material/checkbox/MaterialCheckBox$SavedState;
 
     move-result-object p0

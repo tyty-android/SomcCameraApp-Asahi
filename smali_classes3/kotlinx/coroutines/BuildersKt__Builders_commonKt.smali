@@ -5,7 +5,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/SourceDebugExtension;
-    value = "SMAP\nBuilders.common.kt\nKotlin\n*S Kotlin\n*F\n+ 1 Builders.common.kt\nkotlinx/coroutines/BuildersKt__Builders_commonKt\n+ 2 CoroutineContext.kt\nkotlinx/coroutines/CoroutineContextKt\n*L\n1#1,272:1\n95#2,5:273\n*S KotlinDebug\n*F\n+ 1 Builders.common.kt\nkotlinx/coroutines/BuildersKt__Builders_commonKt\n*L\n168#1:273,5\n*E\n"
+    value = "SMAP\nBuilders.common.kt\nKotlin\n*S Kotlin\n*F\n+ 1 Builders.common.kt\nkotlinx/coroutines/BuildersKt__Builders_commonKt\n+ 2 CoroutineContext.kt\nkotlinx/coroutines/CoroutineContextKt\n*L\n1#1,273:1\n95#2,5:274\n*S KotlinDebug\n*F\n+ 1 Builders.common.kt\nkotlinx/coroutines/BuildersKt__Builders_commonKt\n*L\n166#1:274,5\n*E\n"
 .end annotation
 
 .annotation runtime Lkotlin/Metadata;
@@ -45,7 +45,7 @@
     k = 0x5
     mv = {
         0x1,
-        0x6,
+        0x8,
         0x0
     }
     xi = 0x30
@@ -175,7 +175,7 @@
         }
     .end annotation
 
-    .line 187
+    .line 185
     check-cast p0, Lkotlin/coroutines/CoroutineContext;
 
     invoke-static {p0, p1, p2}, Lkotlinx/coroutines/BuildersKt;->withContext(Lkotlin/coroutines/CoroutineContext;Lkotlin/jvm/functions/Function2;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
@@ -207,7 +207,7 @@
         }
     .end annotation
 
-    .line 187
+    .line 185
     check-cast p0, Lkotlin/coroutines/CoroutineContext;
 
     const/4 v0, 0x0
@@ -337,34 +337,34 @@
         }
     .end annotation
 
-    .line 153
+    .line 151
     invoke-interface {p2}, Lkotlin/coroutines/Continuation;->getContext()Lkotlin/coroutines/CoroutineContext;
 
     move-result-object v0
 
-    .line 155
+    .line 153
     invoke-static {v0, p0}, Lkotlinx/coroutines/CoroutineContextKt;->newCoroutineContext(Lkotlin/coroutines/CoroutineContext;Lkotlin/coroutines/CoroutineContext;)Lkotlin/coroutines/CoroutineContext;
 
     move-result-object p0
 
-    .line 157
+    .line 155
     invoke-static {p0}, Lkotlinx/coroutines/JobKt;->ensureActive(Lkotlin/coroutines/CoroutineContext;)V
 
     if-ne p0, v0, :cond_0
 
-    .line 160
+    .line 158
     new-instance v0, Lkotlinx/coroutines/internal/ScopeCoroutine;
 
     invoke-direct {v0, p0, p2}, Lkotlinx/coroutines/internal/ScopeCoroutine;-><init>(Lkotlin/coroutines/CoroutineContext;Lkotlin/coroutines/Continuation;)V
 
-    .line 161
+    .line 159
     invoke-static {v0, v0, p1}, Lkotlinx/coroutines/intrinsics/UndispatchedKt;->startUndispatchedOrReturn(Lkotlinx/coroutines/internal/ScopeCoroutine;Ljava/lang/Object;Lkotlin/jvm/functions/Function2;)Ljava/lang/Object;
 
     move-result-object p0
 
     goto :goto_0
 
-    .line 165
+    .line 163
     :cond_0
     sget-object v1, Lkotlin/coroutines/ContinuationInterceptor;->Key:Lkotlin/coroutines/ContinuationInterceptor$Key;
 
@@ -388,19 +388,24 @@
 
     if-eqz v0, :cond_1
 
-    .line 166
+    .line 164
     new-instance v0, Lkotlinx/coroutines/UndispatchedCoroutine;
 
     invoke-direct {v0, p0, p2}, Lkotlinx/coroutines/UndispatchedCoroutine;-><init>(Lkotlin/coroutines/CoroutineContext;Lkotlin/coroutines/Continuation;)V
 
+    .line 166
+    invoke-virtual {v0}, Lkotlinx/coroutines/UndispatchedCoroutine;->getContext()Lkotlin/coroutines/CoroutineContext;
+
+    move-result-object p0
+
     const/4 v1, 0x0
 
-    .line 273
+    .line 274
     invoke-static {p0, v1}, Lkotlinx/coroutines/internal/ThreadContextKt;->updateThreadContext(Lkotlin/coroutines/CoroutineContext;Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v1
 
-    .line 169
+    .line 167
     :try_start_0
     move-object v2, v0
 
@@ -412,7 +417,7 @@
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 277
+    .line 278
     invoke-static {p0, v1}, Lkotlinx/coroutines/internal/ThreadContextKt;->restoreThreadContext(Lkotlin/coroutines/CoroutineContext;Ljava/lang/Object;)V
 
     move-object p0, p1
@@ -426,13 +431,13 @@
 
     throw p1
 
-    .line 173
+    .line 171
     :cond_1
     new-instance v0, Lkotlinx/coroutines/DispatchedCoroutine;
 
     invoke-direct {v0, p0, p2}, Lkotlinx/coroutines/DispatchedCoroutine;-><init>(Lkotlin/coroutines/CoroutineContext;Lkotlin/coroutines/Continuation;)V
 
-    .line 174
+    .line 172
     move-object v4, v0
 
     check-cast v4, Lkotlin/coroutines/Continuation;
@@ -449,12 +454,12 @@
 
     invoke-static/range {v2 .. v7}, Lkotlinx/coroutines/intrinsics/CancellableKt;->startCoroutineCancellable$default(Lkotlin/jvm/functions/Function2;Ljava/lang/Object;Lkotlin/coroutines/Continuation;Lkotlin/jvm/functions/Function1;ILjava/lang/Object;)V
 
-    .line 175
-    invoke-virtual {v0}, Lkotlinx/coroutines/DispatchedCoroutine;->getResult()Ljava/lang/Object;
+    .line 173
+    invoke-virtual {v0}, Lkotlinx/coroutines/DispatchedCoroutine;->getResult$kotlinx_coroutines_core()Ljava/lang/Object;
 
     move-result-object p0
 
-    .line 151
+    .line 149
     :goto_0
     invoke-static {}, Lkotlin/coroutines/intrinsics/IntrinsicsKt;->getCOROUTINE_SUSPENDED()Ljava/lang/Object;
 

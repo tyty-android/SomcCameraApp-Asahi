@@ -20,7 +20,7 @@
 
 .annotation runtime Lkotlin/Metadata;
     d1 = {
-        "\u0000H\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0008\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u000b\n\u0002\u0010\u000b\n\u0000\n\u0002\u0010\u0000\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\u0008\u0007\u0018\u0000*\u0004\u0008\u0000\u0010\u00012\u0008\u0012\u0004\u0012\u0002H\u00010\u0002B\'\u0008\u0017\u0012\u0006\u0010\u0003\u001a\u00020\u0004\u0012\u000c\u0010\u0005\u001a\u0008\u0012\u0004\u0012\u00028\u00000\u0006\u0012\u0008\u0008\u0002\u0010\u0007\u001a\u00020\u0008\u00a2\u0006\u0002\u0010\tB2\u0012\u0006\u0010\u0003\u001a\u00020\u0004\u0012\u000c\u0010\u0005\u001a\u0008\u0012\u0004\u0012\u00028\u00000\u0006\u0012\u0008\u0008\u0002\u0010\u0007\u001a\u00020\u0008\u0012\u0008\u0008\u0002\u0010\n\u001a\u00020\u000b\u00f8\u0001\u0000\u00a2\u0006\u0002\u0010\u000cJ\u0013\u0010\u0016\u001a\u00020\u00172\u0008\u0010\u0018\u001a\u0004\u0018\u00010\u0019H\u0096\u0002J\u0008\u0010\u001a\u001a\u00020\u0004H\u0016J,\u0010\u001b\u001a\u0008\u0012\u0004\u0012\u0002H\u001d0\u001c\"\u0008\u0008\u0001\u0010\u001d*\u00020\u001e2\u0012\u0010\u001f\u001a\u000e\u0012\u0004\u0012\u00028\u0000\u0012\u0004\u0012\u0002H\u001d0 H\u0016R\u0017\u0010\u0005\u001a\u0008\u0012\u0004\u0012\u00028\u00000\u0006\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\r\u0010\u000eR\u001c\u0010\n\u001a\u00020\u000b\u00f8\u0001\u0000\u00f8\u0001\u0001\u00f8\u0001\u0002\u00a2\u0006\n\n\u0002\u0010\u0011\u001a\u0004\u0008\u000f\u0010\u0010R\u0011\u0010\u0003\u001a\u00020\u0004\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\u0012\u0010\u0013R\u0011\u0010\u0007\u001a\u00020\u0008\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\u0014\u0010\u0015\u0082\u0002\u000f\n\u0002\u0008\u0019\n\u0005\u0008\u00a1\u001e0\u0001\n\u0002\u0008!\u00a8\u0006!"
+        "\u0000H\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0008\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u000b\n\u0002\u0010\u000b\n\u0000\n\u0002\u0010\u0000\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\u0008\u0007\u0018\u0000*\u0004\u0008\u0000\u0010\u00012\u0008\u0012\u0004\u0012\u0002H\u00010\u0002B\'\u0008\u0017\u0012\u0006\u0010\u0003\u001a\u00020\u0004\u0012\u000c\u0010\u0005\u001a\u0008\u0012\u0004\u0012\u00028\u00000\u0006\u0012\u0008\u0008\u0002\u0010\u0007\u001a\u00020\u0008\u00a2\u0006\u0002\u0010\tB/\u0012\u0006\u0010\u0003\u001a\u00020\u0004\u0012\u000c\u0010\u0005\u001a\u0008\u0012\u0004\u0012\u00028\u00000\u0006\u0012\u0008\u0008\u0002\u0010\u0007\u001a\u00020\u0008\u0012\u0008\u0008\u0002\u0010\n\u001a\u00020\u000b\u00a2\u0006\u0002\u0010\u000cJ\u0013\u0010\u0016\u001a\u00020\u00172\u0008\u0010\u0018\u001a\u0004\u0018\u00010\u0019H\u0096\u0002J\u0008\u0010\u001a\u001a\u00020\u0004H\u0016J,\u0010\u001b\u001a\u0008\u0012\u0004\u0012\u0002H\u001d0\u001c\"\u0008\u0008\u0001\u0010\u001d*\u00020\u001e2\u0012\u0010\u001f\u001a\u000e\u0012\u0004\u0012\u00028\u0000\u0012\u0004\u0012\u0002H\u001d0 H\u0016R\u0017\u0010\u0005\u001a\u0008\u0012\u0004\u0012\u00028\u00000\u0006\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\r\u0010\u000eR\u0019\u0010\n\u001a\u00020\u000b\u00f8\u0001\u0000\u00f8\u0001\u0001\u00a2\u0006\n\n\u0002\u0010\u0011\u001a\u0004\u0008\u000f\u0010\u0010R\u0011\u0010\u0003\u001a\u00020\u0004\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\u0012\u0010\u0013R\u0011\u0010\u0007\u001a\u00020\u0008\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\u0014\u0010\u0015\u0082\u0002\u000b\n\u0005\u0008\u00a1\u001e0\u0001\n\u0002\u0008!\u00a8\u0006!"
     }
     d2 = {
         "Landroidx/compose/animation/core/RepeatableSpec;",
@@ -103,21 +103,13 @@
         message = "This constructor has been deprecated"
     .end annotation
 
-    const-string v0, "animation"
-
-    invoke-static {p2, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string v0, "repeatMode"
-
-    invoke-static {p3, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
     const/4 v0, 0x2
 
     const/4 v1, 0x0
 
     const/4 v2, 0x0
 
-    .line 269
+    .line 274
     invoke-static {v2, v2, v0, v1}, Landroidx/compose/animation/core/StartOffset;->constructor-impl$default(IIILkotlin/jvm/internal/DefaultConstructorMarker;)J
 
     move-result-wide v7
@@ -144,10 +136,10 @@
 
     if-eqz p4, :cond_0
 
-    .line 268
+    .line 273
     sget-object p3, Landroidx/compose/animation/core/RepeatMode;->Restart:Landroidx/compose/animation/core/RepeatMode;
 
-    .line 265
+    .line 270
     :cond_0
     invoke-direct {p0, p1, p2, p3}, Landroidx/compose/animation/core/RepeatableSpec;-><init>(ILandroidx/compose/animation/core/DurationBasedAnimationSpec;Landroidx/compose/animation/core/RepeatMode;)V
 
@@ -155,7 +147,7 @@
 .end method
 
 .method private constructor <init>(ILandroidx/compose/animation/core/DurationBasedAnimationSpec;Landroidx/compose/animation/core/RepeatMode;J)V
-    .locals 1
+    .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(I",
@@ -166,27 +158,19 @@
         }
     .end annotation
 
-    const-string v0, "animation"
-
-    invoke-static {p2, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string v0, "repeatMode"
-
-    invoke-static {p3, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 253
+    .line 258
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 255
+    .line 260
     iput p1, p0, Landroidx/compose/animation/core/RepeatableSpec;->iterations:I
 
-    .line 256
+    .line 261
     iput-object p2, p0, Landroidx/compose/animation/core/RepeatableSpec;->animation:Landroidx/compose/animation/core/DurationBasedAnimationSpec;
 
-    .line 257
+    .line 262
     iput-object p3, p0, Landroidx/compose/animation/core/RepeatableSpec;->repeatMode:Landroidx/compose/animation/core/RepeatMode;
 
-    .line 258
+    .line 263
     iput-wide p4, p0, Landroidx/compose/animation/core/RepeatableSpec;->initialStartOffset:J
 
     return-void
@@ -199,7 +183,7 @@
 
     if-eqz p7, :cond_0
 
-    .line 257
+    .line 262
     sget-object p3, Landroidx/compose/animation/core/RepeatMode;->Restart:Landroidx/compose/animation/core/RepeatMode;
 
     :cond_0
@@ -215,7 +199,7 @@
 
     const/4 p5, 0x0
 
-    .line 258
+    .line 263
     invoke-static {p5, p5, p3, p4}, Landroidx/compose/animation/core/StartOffset;->constructor-impl$default(IIILkotlin/jvm/internal/DefaultConstructorMarker;)J
 
     move-result-wide p4
@@ -231,7 +215,7 @@
 
     move-object v2, p2
 
-    .line 254
+    .line 259
     invoke-direct/range {v0 .. v6}, Landroidx/compose/animation/core/RepeatableSpec;-><init>(ILandroidx/compose/animation/core/DurationBasedAnimationSpec;Landroidx/compose/animation/core/RepeatMode;JLkotlin/jvm/internal/DefaultConstructorMarker;)V
 
     return-void
@@ -250,14 +234,14 @@
 .method public equals(Ljava/lang/Object;)Z
     .locals 4
 
-    .line 280
+    .line 285
     instance-of v0, p1, Landroidx/compose/animation/core/RepeatableSpec;
 
     const/4 v1, 0x0
 
     if-eqz v0, :cond_0
 
-    .line 281
+    .line 286
     check-cast p1, Landroidx/compose/animation/core/RepeatableSpec;
 
     iget v0, p1, Landroidx/compose/animation/core/RepeatableSpec;->iterations:I
@@ -266,7 +250,7 @@
 
     if-ne v0, v2, :cond_0
 
-    .line 282
+    .line 287
     iget-object v0, p1, Landroidx/compose/animation/core/RepeatableSpec;->animation:Landroidx/compose/animation/core/DurationBasedAnimationSpec;
 
     iget-object v2, p0, Landroidx/compose/animation/core/RepeatableSpec;->animation:Landroidx/compose/animation/core/DurationBasedAnimationSpec;
@@ -277,14 +261,14 @@
 
     if-eqz v0, :cond_0
 
-    .line 283
+    .line 288
     iget-object v0, p1, Landroidx/compose/animation/core/RepeatableSpec;->repeatMode:Landroidx/compose/animation/core/RepeatMode;
 
     iget-object v2, p0, Landroidx/compose/animation/core/RepeatableSpec;->repeatMode:Landroidx/compose/animation/core/RepeatMode;
 
     if-ne v0, v2, :cond_0
 
-    .line 284
+    .line 289
     iget-wide v2, p1, Landroidx/compose/animation/core/RepeatableSpec;->initialStartOffset:J
 
     iget-wide p0, p0, Landroidx/compose/animation/core/RepeatableSpec;->initialStartOffset:J
@@ -311,7 +295,7 @@
         }
     .end annotation
 
-    .line 256
+    .line 261
     iget-object p0, p0, Landroidx/compose/animation/core/RepeatableSpec;->animation:Landroidx/compose/animation/core/DurationBasedAnimationSpec;
 
     return-object p0
@@ -320,7 +304,7 @@
 .method public final getInitialStartOffset-Rmkjzm4()J
     .locals 2
 
-    .line 258
+    .line 263
     iget-wide v0, p0, Landroidx/compose/animation/core/RepeatableSpec;->initialStartOffset:J
 
     return-wide v0
@@ -329,7 +313,7 @@
 .method public final getIterations()I
     .locals 0
 
-    .line 255
+    .line 260
     iget p0, p0, Landroidx/compose/animation/core/RepeatableSpec;->iterations:I
 
     return p0
@@ -338,7 +322,7 @@
 .method public final getRepeatMode()Landroidx/compose/animation/core/RepeatMode;
     .locals 0
 
-    .line 257
+    .line 262
     iget-object p0, p0, Landroidx/compose/animation/core/RepeatableSpec;->repeatMode:Landroidx/compose/animation/core/RepeatMode;
 
     return-object p0
@@ -347,7 +331,7 @@
 .method public hashCode()I
     .locals 3
 
-    .line 290
+    .line 295
     iget v0, p0, Landroidx/compose/animation/core/RepeatableSpec;->iterations:I
 
     mul-int/lit8 v0, v0, 0x1f
@@ -372,7 +356,7 @@
 
     mul-int/lit8 v0, v0, 0x1f
 
-    .line 291
+    .line 296
     iget-wide v1, p0, Landroidx/compose/animation/core/RepeatableSpec;->initialStartOffset:J
 
     invoke-static {v1, v2}, Landroidx/compose/animation/core/StartOffset;->hashCode-impl(J)I
@@ -387,7 +371,7 @@
 .method public bridge synthetic vectorize(Landroidx/compose/animation/core/TwoWayConverter;)Landroidx/compose/animation/core/VectorizedAnimationSpec;
     .locals 0
 
-    .line 253
+    .line 258
     invoke-virtual {p0, p1}, Landroidx/compose/animation/core/RepeatableSpec;->vectorize(Landroidx/compose/animation/core/TwoWayConverter;)Landroidx/compose/animation/core/VectorizedFiniteAnimationSpec;
 
     move-result-object p0
@@ -411,34 +395,30 @@
         }
     .end annotation
 
-    const-string v0, "converter"
+    .line 279
+    new-instance v7, Landroidx/compose/animation/core/VectorizedRepeatableSpec;
 
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+    .line 280
+    iget v1, p0, Landroidx/compose/animation/core/RepeatableSpec;->iterations:I
 
-    .line 274
-    new-instance v0, Landroidx/compose/animation/core/VectorizedRepeatableSpec;
+    iget-object v0, p0, Landroidx/compose/animation/core/RepeatableSpec;->animation:Landroidx/compose/animation/core/DurationBasedAnimationSpec;
 
-    .line 275
-    iget v2, p0, Landroidx/compose/animation/core/RepeatableSpec;->iterations:I
+    invoke-interface {v0, p1}, Landroidx/compose/animation/core/DurationBasedAnimationSpec;->vectorize(Landroidx/compose/animation/core/TwoWayConverter;)Landroidx/compose/animation/core/VectorizedDurationBasedAnimationSpec;
 
-    iget-object v1, p0, Landroidx/compose/animation/core/RepeatableSpec;->animation:Landroidx/compose/animation/core/DurationBasedAnimationSpec;
+    move-result-object v2
 
-    invoke-interface {v1, p1}, Landroidx/compose/animation/core/DurationBasedAnimationSpec;->vectorize(Landroidx/compose/animation/core/TwoWayConverter;)Landroidx/compose/animation/core/VectorizedDurationBasedAnimationSpec;
+    iget-object v3, p0, Landroidx/compose/animation/core/RepeatableSpec;->repeatMode:Landroidx/compose/animation/core/RepeatMode;
 
-    move-result-object v3
+    iget-wide v4, p0, Landroidx/compose/animation/core/RepeatableSpec;->initialStartOffset:J
 
-    iget-object v4, p0, Landroidx/compose/animation/core/RepeatableSpec;->repeatMode:Landroidx/compose/animation/core/RepeatMode;
+    const/4 v6, 0x0
 
-    iget-wide v5, p0, Landroidx/compose/animation/core/RepeatableSpec;->initialStartOffset:J
+    move-object v0, v7
 
-    const/4 v7, 0x0
+    .line 279
+    invoke-direct/range {v0 .. v6}, Landroidx/compose/animation/core/VectorizedRepeatableSpec;-><init>(ILandroidx/compose/animation/core/VectorizedDurationBasedAnimationSpec;Landroidx/compose/animation/core/RepeatMode;JLkotlin/jvm/internal/DefaultConstructorMarker;)V
 
-    move-object v1, v0
+    check-cast v7, Landroidx/compose/animation/core/VectorizedFiniteAnimationSpec;
 
-    .line 274
-    invoke-direct/range {v1 .. v7}, Landroidx/compose/animation/core/VectorizedRepeatableSpec;-><init>(ILandroidx/compose/animation/core/VectorizedDurationBasedAnimationSpec;Landroidx/compose/animation/core/RepeatMode;JLkotlin/jvm/internal/DefaultConstructorMarker;)V
-
-    check-cast v0, Landroidx/compose/animation/core/VectorizedFiniteAnimationSpec;
-
-    return-object v0
+    return-object v7
 .end method

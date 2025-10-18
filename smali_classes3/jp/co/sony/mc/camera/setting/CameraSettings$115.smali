@@ -21,7 +21,7 @@
 .method constructor <init>()V
     .locals 0
 
-    .line 1482
+    .line 1539
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -46,13 +46,13 @@
         }
     .end annotation
 
-    .line 1486
+    .line 1543
     check-cast p1, Ljp/co/sony/mc/camera/setting/CameraSettings;
 
-    .line 1487
-    check-cast p3, Ljp/co/sony/mc/camera/configuration/parameters/AwbPriority;
+    .line 1544
+    check-cast p3, Ljp/co/sony/mc/camera/configuration/parameters/ExtendFps;
 
-    invoke-static {p1, p3}, Ljp/co/sony/mc/camera/setting/CameraSettings;->-$$Nest$msetAwbPriority(Ljp/co/sony/mc/camera/setting/CameraSettings;Ljp/co/sony/mc/camera/configuration/parameters/AwbPriority;)Z
+    invoke-static {p1, p3}, Ljp/co/sony/mc/camera/setting/CameraSettings;->-$$Nest$msetExtendFps(Ljp/co/sony/mc/camera/setting/CameraSettings;Ljp/co/sony/mc/camera/configuration/parameters/ExtendFps;)Z
 
     move-result p0
 

@@ -45,6 +45,8 @@
 
 
 # static fields
+.field public static final $stable:I
+
 .field public static final INSTANCE:Landroidx/compose/runtime/external/kotlinx/collections/immutable/internal/ListImplementation;
 
 
@@ -260,14 +262,6 @@
     .annotation runtime Lkotlin/jvm/JvmStatic;
     .end annotation
 
-    const-string v0, "c"
-
-    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string v0, "other"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
     .line 47
     invoke-interface {p0}, Ljava/util/Collection;->size()I
 
@@ -337,10 +331,6 @@
 
     .annotation runtime Lkotlin/jvm/JvmStatic;
     .end annotation
-
-    const-string v0, "c"
-
-    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 39
     invoke-interface {p0}, Ljava/util/Collection;->iterator()Ljava/util/Iterator;

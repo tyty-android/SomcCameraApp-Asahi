@@ -22,62 +22,134 @@
 .method constructor <init>(Lcom/sonymobile/android/media/internal/AudioTrack;Landroid/os/Looper;)V
     .locals 0
 
-    .line 932
+    .line 958
     iput-object p1, p0, Lcom/sonymobile/android/media/internal/AudioTrack$CodecHandler;->this$0:Lcom/sonymobile/android/media/internal/AudioTrack;
 
-    .line 933
+    .line 959
     invoke-direct {p0, p2}, Landroid/os/Handler;-><init>(Landroid/os/Looper;)V
 
     return-void
 .end method
 
 .method private addTrack()V
-    .locals 3
+    .locals 4
 
-    .line 981
+    .line 1007
     iget-object v0, p0, Lcom/sonymobile/android/media/internal/AudioTrack$CodecHandler;->this$0:Lcom/sonymobile/android/media/internal/AudioTrack;
 
     iget-boolean v0, v0, Lcom/sonymobile/android/media/internal/AudioTrack;->mIsStreamingMode:Z
 
     if-eqz v0, :cond_0
 
-    .line 982
-    iget-object p0, p0, Lcom/sonymobile/android/media/internal/AudioTrack$CodecHandler;->this$0:Lcom/sonymobile/android/media/internal/AudioTrack;
-
-    const/4 v0, 0x2
-
-    iput v0, p0, Lcom/sonymobile/android/media/internal/AudioTrack;->mMuxerTrackIndex:I
-
-    goto :goto_0
-
-    .line 983
-    :cond_0
+    .line 1008
     iget-object v0, p0, Lcom/sonymobile/android/media/internal/AudioTrack$CodecHandler;->this$0:Lcom/sonymobile/android/media/internal/AudioTrack;
 
-    iget v0, v0, Lcom/sonymobile/android/media/internal/AudioTrack;->mMuxerTrackIndex:I
+    invoke-static {v0}, Lcom/sonymobile/android/media/internal/AudioTrack;->-$$Nest$fgetmMuxerTrackIndexes(Lcom/sonymobile/android/media/internal/AudioTrack;)Ljava/util/Map;
 
-    if-gez v0, :cond_1
+    move-result-object v0
 
-    .line 985
-    iget-object v0, p0, Lcom/sonymobile/android/media/internal/AudioTrack$CodecHandler;->this$0:Lcom/sonymobile/android/media/internal/AudioTrack;
+    sget-object v1, Ljp/co/sony/mc/camera/recorder/RecorderParameters$VideoTrackId;->VIDEO_TRACK_1:Ljp/co/sony/mc/camera/recorder/RecorderParameters$VideoTrackId;
 
-    iget-object v1, v0, Lcom/sonymobile/android/media/internal/AudioTrack;->mMuxerWrapper:Lcom/sonymobile/android/media/internal/MediaMuxerWrapper;
+    const/4 v2, 0x2
 
-    iget-object v2, p0, Lcom/sonymobile/android/media/internal/AudioTrack$CodecHandler;->this$0:Lcom/sonymobile/android/media/internal/AudioTrack;
-
-    iget-object v2, v2, Lcom/sonymobile/android/media/internal/AudioTrack;->mEncoder:Landroid/media/MediaCodec;
-
-    invoke-virtual {v2}, Landroid/media/MediaCodec;->getOutputFormat()Landroid/media/MediaFormat;
+    .line 1009
+    invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object v2
 
-    invoke-virtual {v1, v2}, Lcom/sonymobile/android/media/internal/MediaMuxerWrapper;->addTrack(Landroid/media/MediaFormat;)I
+    .line 1008
+    invoke-interface {v0, v1, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    goto :goto_1
+
+    .line 1011
+    :cond_0
+    iget-object v0, p0, Lcom/sonymobile/android/media/internal/AudioTrack$CodecHandler;->this$0:Lcom/sonymobile/android/media/internal/AudioTrack;
+
+    invoke-static {v0}, Lcom/sonymobile/android/media/internal/AudioTrack;->-$$Nest$fgetmMuxerWrappers(Lcom/sonymobile/android/media/internal/AudioTrack;)Ljava/util/Map;
+
+    move-result-object v0
+
+    invoke-interface {v0}, Ljava/util/Map;->keySet()Ljava/util/Set;
+
+    move-result-object v0
+
+    invoke-interface {v0}, Ljava/util/Set;->iterator()Ljava/util/Iterator;
+
+    move-result-object v0
+
+    :cond_1
+    :goto_0
+    invoke-interface {v0}, Ljava/util/Iterator;->hasNext()Z
 
     move-result v1
 
-    iput v1, v0, Lcom/sonymobile/android/media/internal/AudioTrack;->mMuxerTrackIndex:I
+    if-eqz v1, :cond_2
 
-    .line 987
+    invoke-interface {v0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+
+    move-result-object v1
+
+    check-cast v1, Ljp/co/sony/mc/camera/recorder/RecorderParameters$VideoTrackId;
+
+    .line 1012
+    iget-object v2, p0, Lcom/sonymobile/android/media/internal/AudioTrack$CodecHandler;->this$0:Lcom/sonymobile/android/media/internal/AudioTrack;
+
+    invoke-static {v2}, Lcom/sonymobile/android/media/internal/AudioTrack;->-$$Nest$fgetmMuxerTrackIndexes(Lcom/sonymobile/android/media/internal/AudioTrack;)Ljava/util/Map;
+
+    move-result-object v2
+
+    invoke-interface {v2, v1}, Ljava/util/Map;->containsKey(Ljava/lang/Object;)Z
+
+    move-result v2
+
+    if-nez v2, :cond_1
+
+    .line 1014
+    iget-object v2, p0, Lcom/sonymobile/android/media/internal/AudioTrack$CodecHandler;->this$0:Lcom/sonymobile/android/media/internal/AudioTrack;
+
+    invoke-static {v2}, Lcom/sonymobile/android/media/internal/AudioTrack;->-$$Nest$fgetmMuxerWrappers(Lcom/sonymobile/android/media/internal/AudioTrack;)Ljava/util/Map;
+
+    move-result-object v2
+
+    invoke-interface {v2, v1}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object v2
+
+    check-cast v2, Lcom/sonymobile/android/media/internal/MediaMuxerWrapper;
+
+    iget-object v3, p0, Lcom/sonymobile/android/media/internal/AudioTrack$CodecHandler;->this$0:Lcom/sonymobile/android/media/internal/AudioTrack;
+
+    iget-object v3, v3, Lcom/sonymobile/android/media/internal/AudioTrack;->mEncoder:Landroid/media/MediaCodec;
+
+    .line 1015
+    invoke-virtual {v3}, Landroid/media/MediaCodec;->getOutputFormat()Landroid/media/MediaFormat;
+
+    move-result-object v3
+
+    .line 1014
+    invoke-virtual {v2, v3}, Lcom/sonymobile/android/media/internal/MediaMuxerWrapper;->addTrack(Landroid/media/MediaFormat;)I
+
+    move-result v2
+
+    .line 1016
+    iget-object v3, p0, Lcom/sonymobile/android/media/internal/AudioTrack$CodecHandler;->this$0:Lcom/sonymobile/android/media/internal/AudioTrack;
+
+    invoke-static {v3}, Lcom/sonymobile/android/media/internal/AudioTrack;->-$$Nest$fgetmMuxerTrackIndexes(Lcom/sonymobile/android/media/internal/AudioTrack;)Ljava/util/Map;
+
+    move-result-object v3
+
+    invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v2
+
+    invoke-interface {v3, v1, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    goto :goto_0
+
+    .line 1021
+    :cond_2
+    :goto_1
     iget-object p0, p0, Lcom/sonymobile/android/media/internal/AudioTrack$CodecHandler;->this$0:Lcom/sonymobile/android/media/internal/AudioTrack;
 
     invoke-static {p0}, Lcom/sonymobile/android/media/internal/AudioTrack;->-$$Nest$fgetmCallback(Lcom/sonymobile/android/media/internal/AudioTrack;)Landroid/os/Handler;
@@ -94,11 +166,9 @@
 
     move-result-object p0
 
-    .line 988
+    .line 1022
     invoke-virtual {p0}, Landroid/os/Message;->sendToTarget()V
 
-    :cond_1
-    :goto_0
     return-void
 .end method
 
@@ -110,7 +180,7 @@
         }
     .end annotation
 
-    .line 948
+    .line 974
     iget-object v0, p0, Lcom/sonymobile/android/media/internal/AudioTrack$CodecHandler;->this$0:Lcom/sonymobile/android/media/internal/AudioTrack;
 
     invoke-static {v0}, Lcom/sonymobile/android/media/internal/AudioTrack;->-$$Nest$fgetmFirstCodecFrame(Lcom/sonymobile/android/media/internal/AudioTrack;)Z
@@ -123,7 +193,7 @@
 
     if-eqz v0, :cond_1
 
-    .line 949
+    .line 975
     iget v0, p2, Landroid/media/MediaCodec$BufferInfo;->flags:I
 
     const/4 v3, 0x2
@@ -139,18 +209,18 @@
     :cond_0
     move v0, v2
 
-    .line 951
+    .line 977
     :goto_0
     invoke-direct {p0}, Lcom/sonymobile/android/media/internal/AudioTrack$CodecHandler;->addTrack()V
 
-    .line 952
+    .line 978
     iget-object v3, p0, Lcom/sonymobile/android/media/internal/AudioTrack$CodecHandler;->this$0:Lcom/sonymobile/android/media/internal/AudioTrack;
 
     invoke-static {v3, v2}, Lcom/sonymobile/android/media/internal/AudioTrack;->-$$Nest$fputmFirstCodecFrame(Lcom/sonymobile/android/media/internal/AudioTrack;Z)V
 
     if-eqz v0, :cond_1
 
-    .line 957
+    .line 983
     iget-object p0, p0, Lcom/sonymobile/android/media/internal/AudioTrack$CodecHandler;->this$0:Lcom/sonymobile/android/media/internal/AudioTrack;
 
     iget-object p0, p0, Lcom/sonymobile/android/media/internal/AudioTrack;->mEncoder:Landroid/media/MediaCodec;
@@ -159,13 +229,13 @@
 
     return-void
 
-    .line 962
+    .line 988
     :cond_1
     new-instance v0, Lcom/sonymobile/android/media/internal/Track$EncodedBuffer;
 
     invoke-direct {v0, p1, p2}, Lcom/sonymobile/android/media/internal/Track$EncodedBuffer;-><init>(ILandroid/media/MediaCodec$BufferInfo;)V
 
-    .line 964
+    .line 990
     iget-object p2, p0, Lcom/sonymobile/android/media/internal/AudioTrack$CodecHandler;->this$0:Lcom/sonymobile/android/media/internal/AudioTrack;
 
     iget-object p2, p2, Lcom/sonymobile/android/media/internal/AudioTrack;->mEncoder:Landroid/media/MediaCodec;
@@ -176,7 +246,7 @@
 
     if-eqz p2, :cond_2
 
-    .line 967
+    .line 993
     invoke-virtual {p2}, Ljava/nio/ByteBuffer;->limit()I
 
     move-result v3
@@ -187,18 +257,18 @@
 
     iput-object v3, v0, Lcom/sonymobile/android/media/internal/Track$EncodedBuffer;->byteBuffer:Ljava/nio/ByteBuffer;
 
-    .line 968
+    .line 994
     invoke-virtual {p2}, Ljava/nio/ByteBuffer;->rewind()Ljava/nio/Buffer;
 
-    .line 969
+    .line 995
     iget-object v3, v0, Lcom/sonymobile/android/media/internal/Track$EncodedBuffer;->byteBuffer:Ljava/nio/ByteBuffer;
 
     invoke-virtual {v3, p2}, Ljava/nio/ByteBuffer;->put(Ljava/nio/ByteBuffer;)Ljava/nio/ByteBuffer;
 
-    .line 970
+    .line 996
     iput-boolean v1, v0, Lcom/sonymobile/android/media/internal/Track$EncodedBuffer;->containsCopiedBuffer:Z
 
-    .line 976
+    .line 1002
     :cond_2
     iget-object p2, p0, Lcom/sonymobile/android/media/internal/AudioTrack$CodecHandler;->this$0:Lcom/sonymobile/android/media/internal/AudioTrack;
 
@@ -206,7 +276,7 @@
 
     invoke-virtual {p2, p1, v2}, Landroid/media/MediaCodec;->releaseOutputBuffer(IZ)V
 
-    .line 977
+    .line 1003
     iget-object p0, p0, Lcom/sonymobile/android/media/internal/AudioTrack$CodecHandler;->this$0:Lcom/sonymobile/android/media/internal/AudioTrack;
 
     iget-object p0, p0, Lcom/sonymobile/android/media/internal/AudioTrack;->mBufferList:Ljava/util/concurrent/LinkedBlockingDeque;
@@ -221,7 +291,7 @@
 .method public handleMessage(Landroid/os/Message;)V
     .locals 2
 
-    .line 994
+    .line 1027
     iget v0, p1, Landroid/os/Message;->what:I
 
     const/16 v1, 0x69
@@ -230,7 +300,7 @@
 
     goto :goto_0
 
-    .line 997
+    .line 1030
     :cond_0
     :try_start_0
     iget v0, p1, Landroid/os/Message;->arg1:I

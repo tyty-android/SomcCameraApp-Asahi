@@ -1,6 +1,6 @@
 .class public final Landroidx/compose/ui/tooling/data/ContextCache;
 .super Ljava/lang/Object;
-.source "SlotTree.kt"
+.source "SlotTree.jvm.kt"
 
 
 # annotations
@@ -58,10 +58,10 @@
 .method public constructor <init>()V
     .locals 1
 
-    .line 666
+    .line 669
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 675
+    .line 678
     new-instance v0, Ljava/util/LinkedHashMap;
 
     invoke-direct {v0}, Ljava/util/LinkedHashMap;-><init>()V
@@ -78,7 +78,7 @@
 .method public final clear()V
     .locals 0
 
-    .line 672
+    .line 675
     iget-object p0, p0, Landroidx/compose/ui/tooling/data/ContextCache;->contexts:Ljava/util/Map;
 
     invoke-interface {p0}, Ljava/util/Map;->clear()V
@@ -98,7 +98,7 @@
         }
     .end annotation
 
-    .line 675
+    .line 678
     iget-object p0, p0, Landroidx/compose/ui/tooling/data/ContextCache;->contexts:Ljava/util/Map;
 
     return-object p0

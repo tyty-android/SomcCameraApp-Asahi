@@ -73,11 +73,7 @@
 .method public final invoke(Landroidx/compose/ui/layout/IntrinsicMeasurable;II)Ljava/lang/Integer;
     .locals 0
 
-    const-string p3, "$this$intrinsicCrossAxisSize"
-
-    invoke-static {p1, p3}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 535
+    .line 536
     iget-object p0, p0, Landroidx/compose/foundation/layout/FlowLayoutKt$intrinsicCrossAxisSize$2;->$crossAxisSizes:[I
 
     aget p0, p0, p2
@@ -92,7 +88,7 @@
 .method public bridge synthetic invoke(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
 
-    .line 532
+    .line 533
     check-cast p1, Landroidx/compose/ui/layout/IntrinsicMeasurable;
 
     check-cast p2, Ljava/lang/Number;

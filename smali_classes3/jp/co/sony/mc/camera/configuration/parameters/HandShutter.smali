@@ -59,7 +59,7 @@
 
     const/4 v2, 0x0
 
-    const v3, 0x7f1103bf
+    const v3, 0x7f1103f4
 
     const/4 v4, 0x1
 
@@ -72,7 +72,7 @@
 
     const-string v1, "OFF"
 
-    const v3, 0x7f1103be
+    const v3, 0x7f1103f3
 
     invoke-direct {v0, v1, v4, v3, v2}, Ljp/co/sony/mc/camera/configuration/parameters/HandShutter;-><init>(Ljava/lang/String;IIZ)V
 

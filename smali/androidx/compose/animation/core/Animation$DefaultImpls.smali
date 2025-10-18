@@ -42,7 +42,7 @@
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
-    .line 84
+    .line 83
     invoke-static {p0, p1, p2}, Landroidx/compose/animation/core/Animation;->access$isFinishedFromNanos$jd(Landroidx/compose/animation/core/Animation;J)Z
 
     move-result p0

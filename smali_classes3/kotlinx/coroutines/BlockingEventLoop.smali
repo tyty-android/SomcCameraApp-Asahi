@@ -21,7 +21,7 @@
     k = 0x1
     mv = {
         0x1,
-        0x6,
+        0x8,
         0x0
     }
     xi = 0x30
@@ -36,10 +36,10 @@
 .method public constructor <init>(Ljava/lang/Thread;)V
     .locals 0
 
-    .line 23
+    .line 27
     invoke-direct {p0}, Lkotlinx/coroutines/EventLoopImplBase;-><init>()V
 
-    .line 22
+    .line 26
     iput-object p1, p0, Lkotlinx/coroutines/BlockingEventLoop;->thread:Ljava/lang/Thread;
 
     return-void
@@ -50,7 +50,7 @@
 .method protected getThread()Ljava/lang/Thread;
     .locals 0
 
-    .line 22
+    .line 26
     iget-object p0, p0, Lkotlinx/coroutines/BlockingEventLoop;->thread:Ljava/lang/Thread;
 
     return-object p0

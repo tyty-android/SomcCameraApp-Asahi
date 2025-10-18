@@ -22,7 +22,7 @@
 .method private constructor <init>(Ljp/co/sony/mc/camera/CameraSettingsActivity;)V
     .locals 0
 
-    .line 1457
+    .line 1460
     iput-object p1, p0, Ljp/co/sony/mc/camera/CameraSettingsActivity$ScreenOffReceiver;->this$0:Ljp/co/sony/mc/camera/CameraSettingsActivity;
 
     invoke-direct {p0}, Ljp/co/sony/mc/camera/ScreenOffReceiverBase;-><init>()V
@@ -41,36 +41,38 @@
 
 # virtual methods
 .method public onScreenOff()V
-    .locals 2
+    .locals 3
 
-    .line 1460
+    .line 1463
     sget-boolean v0, Ljp/co/sony/mc/camera/util/CamLog;->DEBUG:Z
-
-    if-eqz v0, :cond_0
-
-    .line 1461
-    const-string v0, "invoked"
-
-    filled-new-array {v0}, [Ljava/lang/String;
-
-    move-result-object v0
-
-    invoke-static {v0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
-
-    .line 1464
-    :cond_0
-    iget-object v0, p0, Ljp/co/sony/mc/camera/CameraSettingsActivity$ScreenOffReceiver;->this$0:Ljp/co/sony/mc/camera/CameraSettingsActivity;
 
     const/4 v1, 0x0
 
+    if-eqz v0, :cond_0
+
+    const/4 v0, 0x1
+
+    .line 1464
+    new-array v0, v0, [Ljava/lang/String;
+
+    const-string v2, "invoked"
+
+    aput-object v2, v0, v1
+
+    invoke-static {v0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
+
+    .line 1467
+    :cond_0
+    iget-object v0, p0, Ljp/co/sony/mc/camera/CameraSettingsActivity$ScreenOffReceiver;->this$0:Ljp/co/sony/mc/camera/CameraSettingsActivity;
+
     invoke-virtual {v0, v1}, Ljp/co/sony/mc/camera/CameraSettingsActivity;->setShowWhenLocked(Z)V
 
-    .line 1465
+    .line 1468
     iget-object v0, p0, Ljp/co/sony/mc/camera/CameraSettingsActivity$ScreenOffReceiver;->this$0:Ljp/co/sony/mc/camera/CameraSettingsActivity;
 
     invoke-virtual {v0, v1}, Ljp/co/sony/mc/camera/CameraSettingsActivity;->setTurnScreenOn(Z)V
 
-    .line 1467
+    .line 1470
     iget-object v0, p0, Ljp/co/sony/mc/camera/CameraSettingsActivity$ScreenOffReceiver;->this$0:Ljp/co/sony/mc/camera/CameraSettingsActivity;
 
     invoke-virtual {v0}, Ljp/co/sony/mc/camera/CameraSettingsActivity;->shouldNotRemainRecentTask()Z
@@ -79,21 +81,21 @@
 
     if-eqz v0, :cond_1
 
-    .line 1469
+    .line 1472
     iget-object v0, p0, Ljp/co/sony/mc/camera/CameraSettingsActivity$ScreenOffReceiver;->this$0:Ljp/co/sony/mc/camera/CameraSettingsActivity;
 
     const/16 v1, 0xc
 
     invoke-virtual {v0, v1}, Ljp/co/sony/mc/camera/CameraSettingsActivity;->finishActivity(I)V
 
-    .line 1470
+    .line 1473
     iget-object v0, p0, Ljp/co/sony/mc/camera/CameraSettingsActivity$ScreenOffReceiver;->this$0:Ljp/co/sony/mc/camera/CameraSettingsActivity;
 
     const/16 v1, 0xd
 
     invoke-virtual {v0, v1}, Ljp/co/sony/mc/camera/CameraSettingsActivity;->finishActivity(I)V
 
-    .line 1473
+    .line 1476
     :cond_1
     iget-object v0, p0, Ljp/co/sony/mc/camera/CameraSettingsActivity$ScreenOffReceiver;->this$0:Ljp/co/sony/mc/camera/CameraSettingsActivity;
 
@@ -113,7 +115,7 @@
 
     goto :goto_0
 
-    .line 1479
+    .line 1482
     :cond_2
     iget-object v0, p0, Ljp/co/sony/mc/camera/CameraSettingsActivity$ScreenOffReceiver;->this$0:Ljp/co/sony/mc/camera/CameraSettingsActivity;
 
@@ -131,7 +133,7 @@
 
     if-eqz v0, :cond_4
 
-    .line 1480
+    .line 1483
     :cond_3
     iget-object p0, p0, Ljp/co/sony/mc/camera/CameraSettingsActivity$ScreenOffReceiver;->this$0:Ljp/co/sony/mc/camera/CameraSettingsActivity;
 

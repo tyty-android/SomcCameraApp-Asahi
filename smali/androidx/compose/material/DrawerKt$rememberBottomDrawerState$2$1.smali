@@ -95,7 +95,7 @@
 .method public final invoke()Landroidx/compose/material/BottomDrawerState;
     .locals 2
 
-    .line 475
+    .line 469
     iget-object v0, p0, Landroidx/compose/material/DrawerKt$rememberBottomDrawerState$2$1;->$initialValue:Landroidx/compose/material/BottomDrawerValue;
 
     iget-object v1, p0, Landroidx/compose/material/DrawerKt$rememberBottomDrawerState$2$1;->$density:Landroidx/compose/ui/unit/Density;
@@ -112,7 +112,7 @@
 .method public bridge synthetic invoke()Ljava/lang/Object;
     .locals 0
 
-    .line 474
+    .line 468
     invoke-virtual {p0}, Landroidx/compose/material/DrawerKt$rememberBottomDrawerState$2$1;->invoke()Landroidx/compose/material/BottomDrawerState;
 
     move-result-object p0

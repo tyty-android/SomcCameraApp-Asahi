@@ -157,11 +157,11 @@
 
     .line 431
     :catch_0
-    const-string v0, "StartTask interrupted"
+    new-array v0, v6, [Ljava/lang/String;
 
-    filled-new-array {v0}, [Ljava/lang/String;
+    const-string v1, "StartTask interrupted"
 
-    move-result-object v0
+    aput-object v1, v0, v5
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/util/CamLog;->w([Ljava/lang/String;)V
 

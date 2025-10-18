@@ -11,12 +11,12 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/SourceDebugExtension;
-    value = "SMAP\nFocusRequester.kt\nKotlin\n*S Kotlin\n*F\n+ 1 FocusRequester.kt\nandroidx/compose/ui/focus/FocusRequester\n+ 2 MutableVector.kt\nandroidx/compose/runtime/collection/MutableVectorKt\n+ 3 fake.kt\nkotlin/jvm/internal/FakeKt\n+ 4 MutableVector.kt\nandroidx/compose/runtime/collection/MutableVector\n+ 5 NodeKind.kt\nandroidx/compose/ui/node/Nodes\n+ 6 DelegatableNode.kt\nandroidx/compose/ui/node/DelegatableNodeKt\n+ 7 Modifier.kt\nandroidx/compose/ui/Modifier$Node\n+ 8 DelegatingNode.kt\nandroidx/compose/ui/node/DelegatingNode\n*L\n1#1,211:1\n196#1:215\n197#1,4:217\n201#1:228\n202#1,5:258\n207#1:304\n208#1:309\n1182#2:212\n1161#2,2:213\n1182#2:233\n1161#2,2:234\n1182#2:345\n1161#2,2:346\n1#3:216\n1#3:310\n1#3:343\n460#4,7:221\n48#4:243\n467#4,4:305\n460#4,11:311\n460#4,11:322\n460#4,7:333\n48#4:355\n467#4,4:411\n90#5:229\n90#5:340\n276#6:230\n133#6,2:231\n135#6,7:236\n142#6,9:244\n383#6,5:253\n388#6:263\n393#6,2:265\n395#6,17:270\n412#6,8:290\n151#6,6:298\n276#6:341\n133#6:342\n134#6:344\n135#6,7:348\n142#6,9:356\n383#6,6:365\n393#6,2:372\n395#6,17:377\n412#6,8:397\n151#6,6:405\n261#7:264\n261#7:371\n234#8,3:267\n237#8,3:287\n234#8,3:374\n237#8,3:394\n*S KotlinDebug\n*F\n+ 1 FocusRequester.kt\nandroidx/compose/ui/focus/FocusRequester\n*L\n69#1:215\n69#1:217,4\n69#1:228\n69#1:258,5\n69#1:304\n69#1:309\n53#1:212\n53#1:213,2\n69#1:233\n69#1:234,2\n201#1:345\n201#1:346,2\n69#1:216\n201#1:343\n69#1:221,7\n69#1:243\n69#1:305,4\n98#1:311,11\n122#1:322,11\n200#1:333,7\n201#1:355\n200#1:411,4\n69#1:229\n201#1:340\n69#1:230\n69#1:231,2\n69#1:236,7\n69#1:244,9\n69#1:253,5\n69#1:263\n69#1:265,2\n69#1:270,17\n69#1:290,8\n69#1:298,6\n201#1:341\n201#1:342\n201#1:344\n201#1:348,7\n201#1:356,9\n201#1:365,6\n201#1:372,2\n201#1:377,17\n201#1:397,8\n201#1:405,6\n69#1:264\n201#1:371\n69#1:267,3\n69#1:287,3\n201#1:374,3\n201#1:394,3\n*E\n"
+    value = "SMAP\nFocusRequester.kt\nKotlin\n*S Kotlin\n*F\n+ 1 FocusRequester.kt\nandroidx/compose/ui/focus/FocusRequester\n+ 2 MutableVector.kt\nandroidx/compose/runtime/collection/MutableVectorKt\n+ 3 fake.kt\nkotlin/jvm/internal/FakeKt\n+ 4 MutableVector.kt\nandroidx/compose/runtime/collection/MutableVector\n+ 5 NodeKind.kt\nandroidx/compose/ui/node/Nodes\n+ 6 DelegatableNode.kt\nandroidx/compose/ui/node/DelegatableNodeKt\n+ 7 Modifier.kt\nandroidx/compose/ui/Modifier$Node\n+ 8 DelegatingNode.kt\nandroidx/compose/ui/node/DelegatingNode\n*L\n1#1,252:1\n237#1:256\n238#1,4:258\n242#1:269\n243#1,5:299\n248#1:345\n249#1:350\n1208#2:253\n1187#2,2:254\n1208#2:274\n1187#2,2:275\n1208#2:408\n1187#2,2:409\n1#3:257\n1#3:351\n1#3:406\n460#4,7:262\n48#4:284\n467#4,4:346\n460#4,11:352\n460#4,11:363\n460#4,11:374\n460#4,11:385\n460#4,7:396\n48#4:418\n467#4,4:474\n90#5:270\n90#5:403\n276#6:271\n133#6,2:272\n135#6,7:277\n142#6,9:285\n385#6,5:294\n390#6:304\n395#6,2:306\n397#6,17:311\n414#6,8:331\n151#6,6:339\n276#6:404\n133#6:405\n134#6:407\n135#6,7:411\n142#6,9:419\n385#6,6:428\n395#6,2:435\n397#6,17:440\n414#6,8:460\n151#6,6:468\n261#7:305\n261#7:434\n234#8,3:308\n237#8,3:328\n234#8,3:437\n237#8,3:457\n*S KotlinDebug\n*F\n+ 1 FocusRequester.kt\nandroidx/compose/ui/focus/FocusRequester\n*L\n71#1:256\n71#1:258,4\n71#1:269\n71#1:299,5\n71#1:345\n71#1:350\n55#1:253\n55#1:254,2\n71#1:274\n71#1:275,2\n242#1:408\n242#1:409,2\n71#1:257\n242#1:406\n71#1:262,7\n71#1:284\n71#1:346,4\n100#1:352,11\n124#1:363,11\n145#1:374,11\n165#1:385,11\n241#1:396,7\n242#1:418\n241#1:474,4\n71#1:270\n242#1:403\n71#1:271\n71#1:272,2\n71#1:277,7\n71#1:285,9\n71#1:294,5\n71#1:304\n71#1:306,2\n71#1:311,17\n71#1:331,8\n71#1:339,6\n242#1:404\n242#1:405\n242#1:407\n242#1:411,7\n242#1:419,9\n242#1:428,6\n242#1:435,2\n242#1:440,17\n242#1:460,8\n242#1:468,6\n71#1:305\n242#1:434\n71#1:308,3\n71#1:328,3\n242#1:437,3\n242#1:457,3\n*E\n"
 .end annotation
 
 .annotation runtime Lkotlin/Metadata;
     d1 = {
-        "\u00004\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0003\n\u0002\u0010\u000b\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0004\n\u0002\u0010\u0002\n\u0002\u0008\u0002\u0008\u0007\u0018\u0000 \u00132\u00020\u0001:\u0001\u0013B\u0005\u00a2\u0006\u0002\u0010\u0002J\u0006\u0010\u0008\u001a\u00020\tJ\u001d\u0010\n\u001a\u00020\t2\u0012\u0010\u000b\u001a\u000e\u0012\u0004\u0012\u00020\r\u0012\u0004\u0012\u00020\t0\u000cH\u0083\u0008J\r\u0010\u000e\u001a\u00020\tH\u0000\u00a2\u0006\u0002\u0008\u000fJ\u0006\u0010\u0010\u001a\u00020\tJ\u0006\u0010\u0011\u001a\u00020\u0012R\u001a\u0010\u0003\u001a\u0008\u0012\u0004\u0012\u00020\u00050\u0004X\u0080\u0004\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\u0006\u0010\u0007\u00a8\u0006\u0014"
+        "\u00004\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0003\n\u0002\u0010\u000b\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0004\n\u0002\u0010\u0002\n\u0002\u0008\u0004\u0008\u0007\u0018\u0000 \u00152\u00020\u0001:\u0001\u0015B\u0005\u00a2\u0006\u0002\u0010\u0002J\u0006\u0010\u0008\u001a\u00020\tJ\u001d\u0010\n\u001a\u00020\t2\u0012\u0010\u000b\u001a\u000e\u0012\u0004\u0012\u00020\r\u0012\u0004\u0012\u00020\t0\u000cH\u0083\u0008J\r\u0010\u000e\u001a\u00020\tH\u0000\u00a2\u0006\u0002\u0008\u000fJ\u0006\u0010\u0010\u001a\u00020\tJ\u0006\u0010\u0011\u001a\u00020\u0012J\u0008\u0010\u0013\u001a\u00020\tH\u0007J\u0008\u0010\u0014\u001a\u00020\tH\u0007R\u001a\u0010\u0003\u001a\u0008\u0012\u0004\u0012\u00020\u00050\u0004X\u0080\u0004\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\u0006\u0010\u0007\u00a8\u0006\u0016"
     }
     d2 = {
         "Landroidx/compose/ui/focus/FocusRequester;",
@@ -38,6 +38,8 @@
         "freeFocus",
         "requestFocus",
         "",
+        "restoreFocusedChild",
+        "saveFocusedChild",
         "Companion",
         "ui_release"
     }
@@ -85,14 +87,14 @@
 
     sput-object v0, Landroidx/compose/ui/focus/FocusRequester;->Companion:Landroidx/compose/ui/focus/FocusRequester$Companion;
 
-    .line 136
+    .line 177
     new-instance v0, Landroidx/compose/ui/focus/FocusRequester;
 
     invoke-direct {v0}, Landroidx/compose/ui/focus/FocusRequester;-><init>()V
 
     sput-object v0, Landroidx/compose/ui/focus/FocusRequester;->Default:Landroidx/compose/ui/focus/FocusRequester;
 
-    .line 148
+    .line 189
     new-instance v0, Landroidx/compose/ui/focus/FocusRequester;
 
     invoke-direct {v0}, Landroidx/compose/ui/focus/FocusRequester;-><init>()V
@@ -105,10 +107,10 @@
 .method public constructor <init>()V
     .locals 3
 
-    .line 50
+    .line 52
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 214
+    .line 255
     new-instance v0, Landroidx/compose/runtime/collection/MutableVector;
 
     const/16 v1, 0x10
@@ -119,7 +121,7 @@
 
     invoke-direct {v0, v1, v2}, Landroidx/compose/runtime/collection/MutableVector;-><init>([Ljava/lang/Object;I)V
 
-    .line 53
+    .line 55
     iput-object v0, p0, Landroidx/compose/ui/focus/FocusRequester;->focusRequesterNodes:Landroidx/compose/runtime/collection/MutableVector;
 
     return-void
@@ -128,7 +130,7 @@
 .method public static final synthetic access$getCancel$cp()Landroidx/compose/ui/focus/FocusRequester;
     .locals 1
 
-    .line 50
+    .line 52
     sget-object v0, Landroidx/compose/ui/focus/FocusRequester;->Cancel:Landroidx/compose/ui/focus/FocusRequester;
 
     return-object v0
@@ -137,7 +139,7 @@
 .method public static final synthetic access$getDefault$cp()Landroidx/compose/ui/focus/FocusRequester;
     .locals 1
 
-    .line 50
+    .line 52
     sget-object v0, Landroidx/compose/ui/focus/FocusRequester;->Default:Landroidx/compose/ui/focus/FocusRequester;
 
     return-object v0
@@ -156,7 +158,7 @@
         }
     .end annotation
 
-    .line 196
+    .line 237
     sget-object v0, Landroidx/compose/ui/focus/FocusRequester;->Companion:Landroidx/compose/ui/focus/FocusRequester$Companion;
 
     invoke-virtual {v0}, Landroidx/compose/ui/focus/FocusRequester$Companion;->getDefault()Landroidx/compose/ui/focus/FocusRequester;
@@ -167,14 +169,14 @@
 
     if-eq p0, v1, :cond_12
 
-    .line 197
+    .line 238
     invoke-virtual {v0}, Landroidx/compose/ui/focus/FocusRequester$Companion;->getCancel()Landroidx/compose/ui/focus/FocusRequester;
 
     move-result-object v0
 
     if-eq p0, v0, :cond_11
 
-    .line 198
+    .line 239
     iget-object v0, p0, Landroidx/compose/ui/focus/FocusRequester;->focusRequesterNodes:Landroidx/compose/runtime/collection/MutableVector;
 
     invoke-virtual {v0}, Landroidx/compose/runtime/collection/MutableVector;->isNotEmpty()Z
@@ -183,10 +185,10 @@
 
     if-eqz v0, :cond_10
 
-    .line 200
+    .line 241
     iget-object p0, p0, Landroidx/compose/ui/focus/FocusRequester;->focusRequesterNodes:Landroidx/compose/runtime/collection/MutableVector;
 
-    .line 334
+    .line 397
     invoke-virtual {p0}, Landroidx/compose/runtime/collection/MutableVector;->getSize()I
 
     move-result v0
@@ -195,7 +197,7 @@
 
     if-lez v0, :cond_f
 
-    .line 337
+    .line 400
     invoke-virtual {p0}, Landroidx/compose/runtime/collection/MutableVector;->getContent()[Ljava/lang/Object;
 
     move-result-object p0
@@ -204,23 +206,23 @@
 
     move v3, v2
 
-    .line 339
+    .line 402
     :cond_0
     aget-object v4, p0, v2
 
     check-cast v4, Landroidx/compose/ui/focus/FocusRequesterModifierNode;
 
-    .line 201
+    .line 242
     check-cast v4, Landroidx/compose/ui/node/DelegatableNode;
 
     const/16 v5, 0x400
 
-    .line 340
+    .line 403
     invoke-static {v5}, Landroidx/compose/ui/node/NodeKind;->constructor-impl(I)I
 
     move-result v5
 
-    .line 342
+    .line 405
     invoke-interface {v4}, Landroidx/compose/ui/node/DelegatableNode;->getNode()Landroidx/compose/ui/Modifier$Node;
 
     move-result-object v6
@@ -231,7 +233,7 @@
 
     if-eqz v6, :cond_e
 
-    .line 347
+    .line 410
     new-instance v6, Landroidx/compose/runtime/collection/MutableVector;
 
     const/16 v7, 0x10
@@ -240,7 +242,7 @@
 
     invoke-direct {v6, v8, v1}, Landroidx/compose/runtime/collection/MutableVector;-><init>([Ljava/lang/Object;I)V
 
-    .line 348
+    .line 411
     invoke-interface {v4}, Landroidx/compose/ui/node/DelegatableNode;->getNode()Landroidx/compose/ui/Modifier$Node;
 
     move-result-object v8
@@ -251,7 +253,7 @@
 
     if-nez v8, :cond_1
 
-    .line 350
+    .line 413
     invoke-interface {v4}, Landroidx/compose/ui/node/DelegatableNode;->getNode()Landroidx/compose/ui/Modifier$Node;
 
     move-result-object v4
@@ -260,11 +262,11 @@
 
     goto :goto_0
 
-    .line 352
+    .line 415
     :cond_1
     invoke-virtual {v6, v8}, Landroidx/compose/runtime/collection/MutableVector;->add(Ljava/lang/Object;)Z
 
-    .line 353
+    .line 416
     :cond_2
     :goto_0
     invoke-virtual {v6}, Landroidx/compose/runtime/collection/MutableVector;->isNotEmpty()Z
@@ -273,7 +275,7 @@
 
     if-eqz v4, :cond_d
 
-    .line 355
+    .line 418
     invoke-virtual {v6}, Landroidx/compose/runtime/collection/MutableVector;->getSize()I
 
     move-result v4
@@ -282,14 +284,14 @@
 
     sub-int/2addr v4, v8
 
-    .line 354
+    .line 417
     invoke-virtual {v6, v4}, Landroidx/compose/runtime/collection/MutableVector;->removeAt(I)Ljava/lang/Object;
 
     move-result-object v4
 
     check-cast v4, Landroidx/compose/ui/Modifier$Node;
 
-    .line 356
+    .line 419
     invoke-virtual {v4}, Landroidx/compose/ui/Modifier$Node;->getAggregateChildKindSet$ui_release()I
 
     move-result v9
@@ -298,7 +300,7 @@
 
     if-nez v9, :cond_3
 
-    .line 357
+    .line 420
     invoke-static {v6, v4}, Landroidx/compose/ui/node/DelegatableNodeKt;->access$addLayoutNodeChildren(Landroidx/compose/runtime/collection/MutableVector;Landroidx/compose/ui/Modifier$Node;)V
 
     goto :goto_0
@@ -307,7 +309,7 @@
     :goto_1
     if-eqz v4, :cond_2
 
-    .line 363
+    .line 426
     invoke-virtual {v4}, Landroidx/compose/ui/Modifier$Node;->getKindSet$ui_release()I
 
     move-result v9
@@ -323,15 +325,15 @@
     :goto_2
     if-eqz v4, :cond_2
 
-    .line 368
+    .line 431
     instance-of v11, v4, Landroidx/compose/ui/focus/FocusTargetNode;
 
     if-eqz v11, :cond_4
 
-    .line 369
+    .line 432
     check-cast v4, Landroidx/compose/ui/focus/FocusTargetNode;
 
-    .line 202
+    .line 243
     invoke-interface {p1, v4}, Lkotlin/jvm/functions/Function1;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v4
@@ -348,7 +350,7 @@
 
     goto :goto_5
 
-    .line 371
+    .line 434
     :cond_4
     invoke-virtual {v4}, Landroidx/compose/ui/Modifier$Node;->getKindSet$ui_release()I
 
@@ -358,17 +360,17 @@
 
     if-eqz v11, :cond_b
 
-    .line 370
+    .line 433
     instance-of v11, v4, Landroidx/compose/ui/node/DelegatingNode;
 
     if-eqz v11, :cond_b
 
-    .line 373
+    .line 436
     move-object v11, v4
 
     check-cast v11, Landroidx/compose/ui/node/DelegatingNode;
 
-    .line 374
+    .line 437
     invoke-virtual {v11}, Landroidx/compose/ui/node/DelegatingNode;->getDelegate$ui_release()Landroidx/compose/ui/Modifier$Node;
 
     move-result-object v11
@@ -378,7 +380,7 @@
     :goto_3
     if-eqz v11, :cond_a
 
-    .line 371
+    .line 434
     invoke-virtual {v11}, Landroidx/compose/ui/Modifier$Node;->getKindSet$ui_release()I
 
     move-result v13
@@ -398,7 +400,7 @@
     :cond_5
     if-nez v10, :cond_6
 
-    .line 347
+    .line 410
     new-instance v10, Landroidx/compose/runtime/collection/MutableVector;
 
     new-array v13, v7, [Landroidx/compose/ui/Modifier$Node;
@@ -410,7 +412,7 @@
 
     if-eqz v10, :cond_7
 
-    .line 387
+    .line 450
     invoke-virtual {v10, v4}, Landroidx/compose/runtime/collection/MutableVector;->add(Ljava/lang/Object;)Z
 
     :cond_7
@@ -419,10 +421,10 @@
     :cond_8
     if-eqz v10, :cond_9
 
-    .line 390
+    .line 453
     invoke-virtual {v10, v11}, Landroidx/compose/runtime/collection/MutableVector;->add(Ljava/lang/Object;)Z
 
-    .line 394
+    .line 457
     :cond_9
     :goto_4
     invoke-virtual {v11}, Landroidx/compose/ui/Modifier$Node;->getChild$ui_release()Landroidx/compose/ui/Modifier$Node;
@@ -436,7 +438,7 @@
 
     goto :goto_2
 
-    .line 402
+    .line 465
     :cond_b
     invoke-static {v10}, Landroidx/compose/ui/node/DelegatableNodeKt;->access$pop(Landroidx/compose/runtime/collection/MutableVector;)Landroidx/compose/ui/Modifier$Node;
 
@@ -444,7 +446,7 @@
 
     goto :goto_2
 
-    .line 407
+    .line 470
     :cond_c
     invoke-virtual {v4}, Landroidx/compose/ui/Modifier$Node;->getChild$ui_release()Landroidx/compose/ui/Modifier$Node;
 
@@ -462,7 +464,7 @@
 
     goto :goto_6
 
-    .line 342
+    .line 405
     :cond_e
     new-instance p0, Ljava/lang/IllegalStateException;
 
@@ -480,7 +482,7 @@
     :goto_6
     return v1
 
-    .line 198
+    .line 239
     :cond_10
     new-instance p0, Ljava/lang/IllegalStateException;
 
@@ -494,7 +496,7 @@
 
     throw p0
 
-    .line 197
+    .line 238
     :cond_11
     new-instance p0, Ljava/lang/IllegalStateException;
 
@@ -506,7 +508,7 @@
 
     throw p0
 
-    .line 196
+    .line 237
     :cond_12
     new-instance p0, Ljava/lang/IllegalStateException;
 
@@ -524,7 +526,7 @@
 .method public final captureFocus()Z
     .locals 4
 
-    .line 97
+    .line 99
     iget-object v0, p0, Landroidx/compose/ui/focus/FocusRequester;->focusRequesterNodes:Landroidx/compose/runtime/collection/MutableVector;
 
     invoke-virtual {v0}, Landroidx/compose/runtime/collection/MutableVector;->isNotEmpty()Z
@@ -533,10 +535,10 @@
 
     if-eqz v0, :cond_3
 
-    .line 98
+    .line 100
     iget-object p0, p0, Landroidx/compose/ui/focus/FocusRequester;->focusRequesterNodes:Landroidx/compose/runtime/collection/MutableVector;
 
-    .line 312
+    .line 353
     invoke-virtual {p0}, Landroidx/compose/runtime/collection/MutableVector;->getSize()I
 
     move-result v0
@@ -545,20 +547,20 @@
 
     if-lez v0, :cond_2
 
-    .line 315
+    .line 356
     invoke-virtual {p0}, Landroidx/compose/runtime/collection/MutableVector;->getContent()[Ljava/lang/Object;
 
     move-result-object p0
 
     move v2, v1
 
-    .line 317
+    .line 358
     :cond_0
     aget-object v3, p0, v2
 
     check-cast v3, Landroidx/compose/ui/focus/FocusRequesterModifierNode;
 
-    .line 99
+    .line 101
     invoke-static {v3}, Landroidx/compose/ui/focus/FocusRequesterModifierNodeKt;->captureFocus(Landroidx/compose/ui/focus/FocusRequesterModifierNode;)Z
 
     move-result v3
@@ -577,7 +579,7 @@
     :cond_2
     return v1
 
-    .line 97
+    .line 99
     :cond_3
     new-instance p0, Ljava/lang/IllegalStateException;
 
@@ -595,7 +597,7 @@
 .method public final focus$ui_release()Z
     .locals 14
 
-    .line 215
+    .line 256
     sget-object v0, Landroidx/compose/ui/focus/FocusRequester;->Companion:Landroidx/compose/ui/focus/FocusRequester$Companion;
 
     invoke-virtual {v0}, Landroidx/compose/ui/focus/FocusRequester$Companion;->getDefault()Landroidx/compose/ui/focus/FocusRequester;
@@ -604,37 +606,37 @@
 
     const-string v2, "\n    Please check whether the focusRequester is FocusRequester.Cancel or FocusRequester.Default\n    before invoking any functions on the focusRequester.\n"
 
-    if-eq p0, v1, :cond_13
+    if-eq p0, v1, :cond_14
 
-    .line 217
+    .line 258
     invoke-virtual {v0}, Landroidx/compose/ui/focus/FocusRequester$Companion;->getCancel()Landroidx/compose/ui/focus/FocusRequester;
 
     move-result-object v0
 
-    if-eq p0, v0, :cond_12
+    if-eq p0, v0, :cond_13
 
-    .line 218
+    .line 259
     iget-object v0, p0, Landroidx/compose/ui/focus/FocusRequester;->focusRequesterNodes:Landroidx/compose/runtime/collection/MutableVector;
 
     invoke-virtual {v0}, Landroidx/compose/runtime/collection/MutableVector;->isNotEmpty()Z
 
     move-result v0
 
-    if-eqz v0, :cond_11
+    if-eqz v0, :cond_12
 
-    .line 220
+    .line 261
     iget-object p0, p0, Landroidx/compose/ui/focus/FocusRequester;->focusRequesterNodes:Landroidx/compose/runtime/collection/MutableVector;
 
-    .line 222
+    .line 263
     invoke-virtual {p0}, Landroidx/compose/runtime/collection/MutableVector;->getSize()I
 
     move-result v0
 
     const/4 v1, 0x0
 
-    if-lez v0, :cond_10
+    if-lez v0, :cond_11
 
-    .line 225
+    .line 266
     invoke-virtual {p0}, Landroidx/compose/runtime/collection/MutableVector;->getContent()[Ljava/lang/Object;
 
     move-result-object p0
@@ -643,23 +645,23 @@
 
     move v3, v2
 
-    .line 227
+    .line 268
     :cond_0
     aget-object v4, p0, v2
 
     check-cast v4, Landroidx/compose/ui/focus/FocusRequesterModifierNode;
 
-    .line 228
+    .line 269
     check-cast v4, Landroidx/compose/ui/node/DelegatableNode;
 
     const/16 v5, 0x400
 
-    .line 229
+    .line 270
     invoke-static {v5}, Landroidx/compose/ui/node/NodeKind;->constructor-impl(I)I
 
     move-result v5
 
-    .line 231
+    .line 272
     invoke-interface {v4}, Landroidx/compose/ui/node/DelegatableNode;->getNode()Landroidx/compose/ui/Modifier$Node;
 
     move-result-object v6
@@ -668,9 +670,9 @@
 
     move-result v6
 
-    if-eqz v6, :cond_f
+    if-eqz v6, :cond_10
 
-    .line 235
+    .line 276
     new-instance v6, Landroidx/compose/runtime/collection/MutableVector;
 
     const/16 v7, 0x10
@@ -679,7 +681,7 @@
 
     invoke-direct {v6, v8, v1}, Landroidx/compose/runtime/collection/MutableVector;-><init>([Ljava/lang/Object;I)V
 
-    .line 236
+    .line 277
     invoke-interface {v4}, Landroidx/compose/ui/node/DelegatableNode;->getNode()Landroidx/compose/ui/Modifier$Node;
 
     move-result-object v8
@@ -690,7 +692,7 @@
 
     if-nez v8, :cond_1
 
-    .line 238
+    .line 279
     invoke-interface {v4}, Landroidx/compose/ui/node/DelegatableNode;->getNode()Landroidx/compose/ui/Modifier$Node;
 
     move-result-object v4
@@ -699,20 +701,20 @@
 
     goto :goto_0
 
-    .line 240
+    .line 281
     :cond_1
     invoke-virtual {v6, v8}, Landroidx/compose/runtime/collection/MutableVector;->add(Ljava/lang/Object;)Z
 
-    .line 241
+    .line 282
     :cond_2
     :goto_0
     invoke-virtual {v6}, Landroidx/compose/runtime/collection/MutableVector;->isNotEmpty()Z
 
     move-result v4
 
-    if-eqz v4, :cond_e
+    if-eqz v4, :cond_f
 
-    .line 243
+    .line 284
     invoke-virtual {v6}, Landroidx/compose/runtime/collection/MutableVector;->getSize()I
 
     move-result v4
@@ -721,14 +723,14 @@
 
     sub-int/2addr v4, v8
 
-    .line 242
+    .line 283
     invoke-virtual {v6, v4}, Landroidx/compose/runtime/collection/MutableVector;->removeAt(I)Ljava/lang/Object;
 
     move-result-object v4
 
     check-cast v4, Landroidx/compose/ui/Modifier$Node;
 
-    .line 244
+    .line 285
     invoke-virtual {v4}, Landroidx/compose/ui/Modifier$Node;->getAggregateChildKindSet$ui_release()I
 
     move-result v9
@@ -737,7 +739,7 @@
 
     if-nez v9, :cond_3
 
-    .line 245
+    .line 286
     invoke-static {v6, v4}, Landroidx/compose/ui/node/DelegatableNodeKt;->access$addLayoutNodeChildren(Landroidx/compose/runtime/collection/MutableVector;Landroidx/compose/ui/Modifier$Node;)V
 
     goto :goto_0
@@ -746,14 +748,14 @@
     :goto_1
     if-eqz v4, :cond_2
 
-    .line 251
+    .line 292
     invoke-virtual {v4}, Landroidx/compose/ui/Modifier$Node;->getKindSet$ui_release()I
 
     move-result v9
 
     and-int/2addr v9, v5
 
-    if-eqz v9, :cond_d
+    if-eqz v9, :cond_e
 
     const/4 v9, 0x0
 
@@ -762,34 +764,34 @@
     :goto_2
     if-eqz v4, :cond_2
 
-    .line 256
+    .line 297
     instance-of v11, v4, Landroidx/compose/ui/focus/FocusTargetNode;
 
     if-eqz v11, :cond_5
 
-    .line 257
+    .line 298
     check-cast v4, Landroidx/compose/ui/focus/FocusTargetNode;
 
-    .line 70
+    .line 72
     invoke-virtual {v4}, Landroidx/compose/ui/focus/FocusTargetNode;->fetchFocusProperties$ui_release()Landroidx/compose/ui/focus/FocusProperties;
 
     move-result-object v11
 
-    .line 71
+    .line 73
     invoke-interface {v11}, Landroidx/compose/ui/focus/FocusProperties;->getCanFocus()Z
 
     move-result v11
 
     if-eqz v11, :cond_4
 
-    .line 72
+    .line 74
     invoke-static {v4}, Landroidx/compose/ui/focus/FocusTransactionsKt;->requestFocus(Landroidx/compose/ui/focus/FocusTargetNode;)Z
 
     move-result v4
 
     goto :goto_3
 
-    .line 74
+    .line 76
     :cond_4
     sget-object v11, Landroidx/compose/ui/focus/FocusDirection;->Companion:Landroidx/compose/ui/focus/FocusDirection$Companion;
 
@@ -806,13 +808,13 @@
     move-result v4
 
     :goto_3
-    if-eqz v4, :cond_c
+    if-eqz v4, :cond_d
 
     move v3, v8
 
-    goto :goto_6
+    goto :goto_7
 
-    .line 264
+    .line 305
     :cond_5
     invoke-virtual {v4}, Landroidx/compose/ui/Modifier$Node;->getKindSet$ui_release()I
 
@@ -820,19 +822,19 @@
 
     and-int/2addr v11, v5
 
-    if-eqz v11, :cond_c
+    if-eqz v11, :cond_d
 
-    .line 263
+    .line 304
     instance-of v11, v4, Landroidx/compose/ui/node/DelegatingNode;
 
-    if-eqz v11, :cond_c
+    if-eqz v11, :cond_d
 
-    .line 266
+    .line 307
     move-object v11, v4
 
     check-cast v11, Landroidx/compose/ui/node/DelegatingNode;
 
-    .line 267
+    .line 308
     invoke-virtual {v11}, Landroidx/compose/ui/node/DelegatingNode;->getDelegate$ui_release()Landroidx/compose/ui/Modifier$Node;
 
     move-result-object v11
@@ -840,94 +842,104 @@
     move v12, v1
 
     :goto_4
-    if-eqz v11, :cond_b
+    if-eqz v11, :cond_c
 
-    .line 264
+    .line 305
     invoke-virtual {v11}, Landroidx/compose/ui/Modifier$Node;->getKindSet$ui_release()I
 
     move-result v13
 
     and-int/2addr v13, v5
 
-    if-eqz v13, :cond_a
+    if-eqz v13, :cond_6
 
-    add-int/lit8 v12, v12, 0x1
-
-    if-ne v12, v8, :cond_6
-
-    move-object v4, v11
+    move v13, v8
 
     goto :goto_5
 
     :cond_6
-    if-nez v10, :cond_7
+    move v13, v1
 
-    .line 235
+    :goto_5
+    if-eqz v13, :cond_b
+
+    add-int/lit8 v12, v12, 0x1
+
+    if-ne v12, v8, :cond_7
+
+    move-object v4, v11
+
+    goto :goto_6
+
+    :cond_7
+    if-nez v10, :cond_8
+
+    .line 276
     new-instance v10, Landroidx/compose/runtime/collection/MutableVector;
 
     new-array v13, v7, [Landroidx/compose/ui/Modifier$Node;
 
     invoke-direct {v10, v13, v1}, Landroidx/compose/runtime/collection/MutableVector;-><init>([Ljava/lang/Object;I)V
 
-    :cond_7
-    if-eqz v4, :cond_9
+    :cond_8
+    if-eqz v4, :cond_a
 
-    if-eqz v10, :cond_8
+    if-eqz v10, :cond_9
 
-    .line 280
+    .line 321
     invoke-virtual {v10, v4}, Landroidx/compose/runtime/collection/MutableVector;->add(Ljava/lang/Object;)Z
 
-    :cond_8
+    :cond_9
     move-object v4, v9
 
-    :cond_9
-    if-eqz v10, :cond_a
+    :cond_a
+    if-eqz v10, :cond_b
 
-    .line 283
+    .line 324
     invoke-virtual {v10, v11}, Landroidx/compose/runtime/collection/MutableVector;->add(Ljava/lang/Object;)Z
 
-    .line 287
-    :cond_a
-    :goto_5
+    .line 328
+    :cond_b
+    :goto_6
     invoke-virtual {v11}, Landroidx/compose/ui/Modifier$Node;->getChild$ui_release()Landroidx/compose/ui/Modifier$Node;
 
     move-result-object v11
 
     goto :goto_4
 
-    :cond_b
-    if-ne v12, v8, :cond_c
+    :cond_c
+    if-ne v12, v8, :cond_d
 
     goto :goto_2
 
-    .line 295
-    :cond_c
+    .line 336
+    :cond_d
     invoke-static {v10}, Landroidx/compose/ui/node/DelegatableNodeKt;->access$pop(Landroidx/compose/runtime/collection/MutableVector;)Landroidx/compose/ui/Modifier$Node;
 
     move-result-object v4
 
     goto :goto_2
 
-    .line 300
-    :cond_d
+    .line 341
+    :cond_e
     invoke-virtual {v4}, Landroidx/compose/ui/Modifier$Node;->getChild$ui_release()Landroidx/compose/ui/Modifier$Node;
 
     move-result-object v4
 
-    goto :goto_1
+    goto/16 :goto_1
 
-    :cond_e
-    :goto_6
+    :cond_f
+    :goto_7
     add-int/lit8 v2, v2, 0x1
 
     if-lt v2, v0, :cond_0
 
     move v1, v3
 
-    goto :goto_7
+    goto :goto_8
 
-    .line 231
-    :cond_f
+    .line 272
+    :cond_10
     new-instance p0, Ljava/lang/IllegalStateException;
 
     const-string/jumbo v0, "visitChildren called on an unattached node"
@@ -940,12 +952,12 @@
 
     throw p0
 
-    :cond_10
-    :goto_7
+    :cond_11
+    :goto_8
     return v1
 
-    .line 218
-    :cond_11
+    .line 259
+    :cond_12
     new-instance p0, Ljava/lang/IllegalStateException;
 
     const-string v0, "\n   FocusRequester is not initialized. Here are some possible fixes:\n\n   1. Remember the FocusRequester: val focusRequester = remember { FocusRequester() }\n   2. Did you forget to add a Modifier.focusRequester() ?\n   3. Are you attempting to request focus during composition? Focus requests should be made in\n   response to some event. Eg Modifier.clickable { focusRequester.requestFocus() }\n"
@@ -958,8 +970,8 @@
 
     throw p0
 
-    .line 217
-    :cond_12
+    .line 258
+    :cond_13
     new-instance p0, Ljava/lang/IllegalStateException;
 
     invoke-virtual {v2}, Ljava/lang/Object;->toString()Ljava/lang/String;
@@ -970,8 +982,8 @@
 
     throw p0
 
-    .line 215
-    :cond_13
+    .line 256
+    :cond_14
     new-instance p0, Ljava/lang/IllegalStateException;
 
     invoke-virtual {v2}, Ljava/lang/Object;->toString()Ljava/lang/String;
@@ -986,7 +998,7 @@
 .method public final freeFocus()Z
     .locals 4
 
-    .line 121
+    .line 123
     iget-object v0, p0, Landroidx/compose/ui/focus/FocusRequester;->focusRequesterNodes:Landroidx/compose/runtime/collection/MutableVector;
 
     invoke-virtual {v0}, Landroidx/compose/runtime/collection/MutableVector;->isNotEmpty()Z
@@ -995,10 +1007,10 @@
 
     if-eqz v0, :cond_3
 
-    .line 122
+    .line 124
     iget-object p0, p0, Landroidx/compose/ui/focus/FocusRequester;->focusRequesterNodes:Landroidx/compose/runtime/collection/MutableVector;
 
-    .line 323
+    .line 364
     invoke-virtual {p0}, Landroidx/compose/runtime/collection/MutableVector;->getSize()I
 
     move-result v0
@@ -1007,20 +1019,20 @@
 
     if-lez v0, :cond_2
 
-    .line 326
+    .line 367
     invoke-virtual {p0}, Landroidx/compose/runtime/collection/MutableVector;->getContent()[Ljava/lang/Object;
 
     move-result-object p0
 
     move v2, v1
 
-    .line 328
+    .line 369
     :cond_0
     aget-object v3, p0, v2
 
     check-cast v3, Landroidx/compose/ui/focus/FocusRequesterModifierNode;
 
-    .line 123
+    .line 125
     invoke-static {v3}, Landroidx/compose/ui/focus/FocusRequesterModifierNodeKt;->freeFocus(Landroidx/compose/ui/focus/FocusRequesterModifierNode;)Z
 
     move-result v3
@@ -1039,7 +1051,7 @@
     :cond_2
     return v1
 
-    .line 121
+    .line 123
     :cond_3
     new-instance p0, Ljava/lang/IllegalStateException;
 
@@ -1065,7 +1077,7 @@
         }
     .end annotation
 
-    .line 53
+    .line 55
     iget-object p0, p0, Landroidx/compose/ui/focus/FocusRequester;->focusRequesterNodes:Landroidx/compose/runtime/collection/MutableVector;
 
     return-object p0
@@ -1074,8 +1086,163 @@
 .method public final requestFocus()V
     .locals 0
 
-    .line 63
+    .line 65
     invoke-virtual {p0}, Landroidx/compose/ui/focus/FocusRequester;->focus$ui_release()Z
 
     return-void
+.end method
+
+.method public final restoreFocusedChild()Z
+    .locals 5
+
+    .line 163
+    iget-object v0, p0, Landroidx/compose/ui/focus/FocusRequester;->focusRequesterNodes:Landroidx/compose/runtime/collection/MutableVector;
+
+    invoke-virtual {v0}, Landroidx/compose/runtime/collection/MutableVector;->isNotEmpty()Z
+
+    move-result v0
+
+    if-eqz v0, :cond_4
+
+    .line 165
+    iget-object p0, p0, Landroidx/compose/ui/focus/FocusRequester;->focusRequesterNodes:Landroidx/compose/runtime/collection/MutableVector;
+
+    .line 386
+    invoke-virtual {p0}, Landroidx/compose/runtime/collection/MutableVector;->getSize()I
+
+    move-result v0
+
+    const/4 v1, 0x0
+
+    if-lez v0, :cond_3
+
+    .line 389
+    invoke-virtual {p0}, Landroidx/compose/runtime/collection/MutableVector;->getContent()[Ljava/lang/Object;
+
+    move-result-object p0
+
+    move v2, v1
+
+    move v3, v2
+
+    .line 391
+    :cond_0
+    aget-object v4, p0, v2
+
+    check-cast v4, Landroidx/compose/ui/focus/FocusRequesterModifierNode;
+
+    .line 166
+    invoke-static {v4}, Landroidx/compose/ui/focus/FocusRequesterModifierNodeKt;->restoreFocusedChild(Landroidx/compose/ui/focus/FocusRequesterModifierNode;)Z
+
+    move-result v4
+
+    if-nez v4, :cond_2
+
+    if-eqz v3, :cond_1
+
+    goto :goto_0
+
+    :cond_1
+    move v3, v1
+
+    goto :goto_1
+
+    :cond_2
+    :goto_0
+    const/4 v3, 0x1
+
+    :goto_1
+    add-int/lit8 v2, v2, 0x1
+
+    if-lt v2, v0, :cond_0
+
+    move v1, v3
+
+    :cond_3
+    return v1
+
+    .line 163
+    :cond_4
+    new-instance p0, Ljava/lang/IllegalStateException;
+
+    const-string v0, "\n   FocusRequester is not initialized. Here are some possible fixes:\n\n   1. Remember the FocusRequester: val focusRequester = remember { FocusRequester() }\n   2. Did you forget to add a Modifier.focusRequester() ?\n   3. Are you attempting to request focus during composition? Focus requests should be made in\n   response to some event. Eg Modifier.clickable { focusRequester.requestFocus() }\n"
+
+    invoke-virtual {v0}, Ljava/lang/Object;->toString()Ljava/lang/String;
+
+    move-result-object v0
+
+    invoke-direct {p0, v0}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
+
+    throw p0
+.end method
+
+.method public final saveFocusedChild()Z
+    .locals 4
+
+    .line 144
+    iget-object v0, p0, Landroidx/compose/ui/focus/FocusRequester;->focusRequesterNodes:Landroidx/compose/runtime/collection/MutableVector;
+
+    invoke-virtual {v0}, Landroidx/compose/runtime/collection/MutableVector;->isNotEmpty()Z
+
+    move-result v0
+
+    if-eqz v0, :cond_3
+
+    .line 145
+    iget-object p0, p0, Landroidx/compose/ui/focus/FocusRequester;->focusRequesterNodes:Landroidx/compose/runtime/collection/MutableVector;
+
+    .line 375
+    invoke-virtual {p0}, Landroidx/compose/runtime/collection/MutableVector;->getSize()I
+
+    move-result v0
+
+    const/4 v1, 0x0
+
+    if-lez v0, :cond_2
+
+    .line 378
+    invoke-virtual {p0}, Landroidx/compose/runtime/collection/MutableVector;->getContent()[Ljava/lang/Object;
+
+    move-result-object p0
+
+    move v2, v1
+
+    .line 380
+    :cond_0
+    aget-object v3, p0, v2
+
+    check-cast v3, Landroidx/compose/ui/focus/FocusRequesterModifierNode;
+
+    .line 146
+    invoke-static {v3}, Landroidx/compose/ui/focus/FocusRequesterModifierNodeKt;->saveFocusedChild(Landroidx/compose/ui/focus/FocusRequesterModifierNode;)Z
+
+    move-result v3
+
+    if-eqz v3, :cond_1
+
+    const/4 p0, 0x1
+
+    return p0
+
+    :cond_1
+    add-int/lit8 v2, v2, 0x1
+
+    if-lt v2, v0, :cond_0
+
+    :cond_2
+    return v1
+
+    .line 144
+    :cond_3
+    new-instance p0, Ljava/lang/IllegalStateException;
+
+    const-string v0, "\n   FocusRequester is not initialized. Here are some possible fixes:\n\n   1. Remember the FocusRequester: val focusRequester = remember { FocusRequester() }\n   2. Did you forget to add a Modifier.focusRequester() ?\n   3. Are you attempting to request focus during composition? Focus requests should be made in\n   response to some event. Eg Modifier.clickable { focusRequester.requestFocus() }\n"
+
+    invoke-virtual {v0}, Ljava/lang/Object;->toString()Ljava/lang/String;
+
+    move-result-object v0
+
+    invoke-direct {p0, v0}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
+
+    throw p0
 .end method

@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Landroidx/compose/ui/graphics/vector/VectorPainter;-><init>()V
+    value = Landroidx/compose/ui/graphics/vector/VectorPainter;-><init>(Landroidx/compose/ui/graphics/vector/GroupComponent;)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -66,7 +66,7 @@
 .method public bridge synthetic invoke()Ljava/lang/Object;
     .locals 0
 
-    .line 192
+    .line 215
     invoke-virtual {p0}, Landroidx/compose/ui/graphics/vector/VectorPainter$vector$1$1;->invoke()V
 
     sget-object p0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
@@ -75,14 +75,34 @@
 .end method
 
 .method public final invoke()V
-    .locals 1
+    .locals 2
 
-    .line 193
+    .line 216
+    iget-object v0, p0, Landroidx/compose/ui/graphics/vector/VectorPainter$vector$1$1;->this$0:Landroidx/compose/ui/graphics/vector/VectorPainter;
+
+    invoke-static {v0}, Landroidx/compose/ui/graphics/vector/VectorPainter;->access$getDrawCount$p(Landroidx/compose/ui/graphics/vector/VectorPainter;)I
+
+    move-result v0
+
+    iget-object v1, p0, Landroidx/compose/ui/graphics/vector/VectorPainter$vector$1$1;->this$0:Landroidx/compose/ui/graphics/vector/VectorPainter;
+
+    invoke-static {v1}, Landroidx/compose/ui/graphics/vector/VectorPainter;->access$getInvalidateCount(Landroidx/compose/ui/graphics/vector/VectorPainter;)I
+
+    move-result v1
+
+    if-ne v0, v1, :cond_0
+
+    .line 217
     iget-object p0, p0, Landroidx/compose/ui/graphics/vector/VectorPainter$vector$1$1;->this$0:Landroidx/compose/ui/graphics/vector/VectorPainter;
 
-    const/4 v0, 0x1
+    invoke-static {p0}, Landroidx/compose/ui/graphics/vector/VectorPainter;->access$getInvalidateCount(Landroidx/compose/ui/graphics/vector/VectorPainter;)I
 
-    invoke-static {p0, v0}, Landroidx/compose/ui/graphics/vector/VectorPainter;->access$setDirty(Landroidx/compose/ui/graphics/vector/VectorPainter;Z)V
+    move-result v0
 
+    add-int/lit8 v0, v0, 0x1
+
+    invoke-static {p0, v0}, Landroidx/compose/ui/graphics/vector/VectorPainter;->access$setInvalidateCount(Landroidx/compose/ui/graphics/vector/VectorPainter;I)V
+
+    :cond_0
     return-void
 .end method

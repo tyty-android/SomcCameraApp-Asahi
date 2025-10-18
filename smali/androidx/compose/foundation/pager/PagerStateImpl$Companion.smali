@@ -42,7 +42,7 @@
 .method private constructor <init>()V
     .locals 0
 
-    .line 136
+    .line 102
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -69,7 +69,7 @@
         }
     .end annotation
 
-    .line 140
+    .line 106
     invoke-static {}, Landroidx/compose/foundation/pager/PagerStateImpl;->access$getSaver$cp()Landroidx/compose/runtime/saveable/Saver;
 
     move-result-object p0

@@ -5,17 +5,19 @@
 
 # annotations
 .annotation system Ldalvik/annotation/SourceDebugExtension;
-    value = "SMAP\nVectorPainter.kt\nKotlin\n*S Kotlin\n*F\n+ 1 VectorPainter.kt\nandroidx/compose/ui/graphics/vector/VectorPainter\n+ 2 SnapshotState.kt\nandroidx/compose/runtime/SnapshotStateKt__SnapshotStateKt\n+ 3 VectorPainter.kt\nandroidx/compose/ui/graphics/vector/VectorPainterKt\n+ 4 DrawScope.kt\nandroidx/compose/ui/graphics/drawscope/DrawScopeKt\n*L\n1#1,420:1\n81#2:421\n107#2,2:422\n81#2:424\n107#2,2:425\n81#2:427\n107#2,2:428\n281#3:430\n282#3:448\n173#4,6:431\n261#4,11:437\n*S KotlinDebug\n*F\n+ 1 VectorPainter.kt\nandroidx/compose/ui/graphics/vector/VectorPainter\n*L\n178#1:421\n178#1:422,2\n180#1:424\n180#1:425,2\n219#1:427\n219#1:428,2\n255#1:430\n255#1:448\n255#1:431,6\n255#1:437,11\n*E\n"
+    value = "SMAP\nVectorPainter.kt\nKotlin\n*S Kotlin\n*F\n+ 1 VectorPainter.kt\nandroidx/compose/ui/graphics/vector/VectorPainter\n+ 2 SnapshotState.kt\nandroidx/compose/runtime/SnapshotStateKt__SnapshotStateKt\n+ 3 SnapshotIntState.kt\nandroidx/compose/runtime/SnapshotIntStateKt__SnapshotIntStateKt\n+ 4 VectorPainter.kt\nandroidx/compose/ui/graphics/vector/VectorPainterKt\n+ 5 DrawScope.kt\nandroidx/compose/ui/graphics/drawscope/DrawScopeKt\n*L\n1#1,516:1\n81#2:517\n107#2,2:518\n81#2:520\n107#2,2:521\n75#3:523\n108#3,2:524\n266#4:526\n267#4:544\n174#5,6:527\n262#5,11:533\n*S KotlinDebug\n*F\n+ 1 VectorPainter.kt\nandroidx/compose/ui/graphics/vector/VectorPainter\n*L\n189#1:517\n189#1:518,2\n191#1:520\n191#1:521,2\n228#1:523\n228#1:524,2\n242#1:526\n242#1:544\n242#1:527,6\n242#1:533,11\n*E\n"
 .end annotation
 
 .annotation runtime Lkotlin/Metadata;
     d1 = {
-        "\u0000b\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0010\u000b\n\u0002\u0008\u0008\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0007\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0007\n\u0002\u0018\u0002\n\u0002\u0008\u000b\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0010\u000e\n\u0002\u0008\u0003\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0008\n\u0002\u0018\u0002\n\u0002\u0008\u0003\n\u0002\u0018\u0002\n\u0000\u0008\u0007\u0018\u00002\u00020\u0001B\u0007\u0008\u0000\u00a2\u0006\u0002\u0010\u0002Jd\u0010&\u001a\u00020\'2\u0006\u0010(\u001a\u00020)2\u0006\u0010*\u001a\u00020\u000f2\u0006\u0010+\u001a\u00020\u000f2;\u0010,\u001a7\u0012\u0013\u0012\u00110\u000f\u00a2\u0006\u000c\u0008.\u0012\u0008\u0008(\u0012\u0004\u0008\u0008(*\u0012\u0013\u0012\u00110\u000f\u00a2\u0006\u000c\u0008.\u0012\u0008\u0008(\u0012\u0004\u0008\u0008(+\u0012\u0004\u0012\u00020\'0-\u00a2\u0006\u0002\u0008/H\u0001\u00a2\u0006\u0004\u00080\u00101J\u0010\u00102\u001a\u00020\u00042\u0006\u00103\u001a\u00020\u000fH\u0014J\u0012\u00104\u001a\u00020\u00042\u0008\u00105\u001a\u0004\u0018\u00010\u0011H\u0014JR\u00106\u001a\u00020\r2\u0006\u00107\u001a\u0002082;\u00109\u001a7\u0012\u0013\u0012\u00110\u000f\u00a2\u0006\u000c\u0008.\u0012\u0008\u0008(\u0012\u0004\u0008\u0008(*\u0012\u0013\u0012\u00110\u000f\u00a2\u0006\u000c\u0008.\u0012\u0008\u0008(\u0012\u0004\u0008\u0008(+\u0012\u0004\u0012\u00020\'0-\u00a2\u0006\u0002\u0008/H\u0002\u00a2\u0006\u0002\u0010:J\u000c\u0010;\u001a\u00020\'*\u00020<H\u0014R+\u0010\u0005\u001a\u00020\u00042\u0006\u0010\u0003\u001a\u00020\u00048@@@X\u0080\u008e\u0002\u00a2\u0006\u0012\n\u0004\u0008\n\u0010\u000b\u001a\u0004\u0008\u0006\u0010\u0007\"\u0004\u0008\u0008\u0010\tR\u0010\u0010\u000c\u001a\u0004\u0018\u00010\rX\u0082\u000e\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u000e\u001a\u00020\u000fX\u0082\u000e\u00a2\u0006\u0002\n\u0000R\u0010\u0010\u0010\u001a\u0004\u0018\u00010\u0011X\u0082\u000e\u00a2\u0006\u0002\n\u0000R(\u0010\u0013\u001a\u0004\u0018\u00010\u00112\u0008\u0010\u0012\u001a\u0004\u0018\u00010\u00118@@@X\u0080\u000e\u00a2\u0006\u000c\u001a\u0004\u0008\u0014\u0010\u0015\"\u0004\u0008\u0016\u0010\u0017R\u001d\u0010\u0018\u001a\u00020\u00198VX\u0096\u0004\u00f8\u0001\u0000\u00f8\u0001\u0001\u00f8\u0001\u0002\u00a2\u0006\u0006\u001a\u0004\u0008\u001a\u0010\u001bR+\u0010\u001c\u001a\u00020\u00042\u0006\u0010\u0003\u001a\u00020\u00048B@BX\u0082\u008e\u0002\u00a2\u0006\u0012\n\u0004\u0008\u001e\u0010\u000b\u001a\u0004\u0008\u001c\u0010\u0007\"\u0004\u0008\u001d\u0010\tR4\u0010\u001f\u001a\u00020\u00192\u0006\u0010\u0003\u001a\u00020\u00198@@@X\u0080\u008e\u0002\u00f8\u0001\u0000\u00f8\u0001\u0001\u00f8\u0001\u0002\u00a2\u0006\u0012\n\u0004\u0008#\u0010\u000b\u001a\u0004\u0008 \u0010\u001b\"\u0004\u0008!\u0010\"R\u000e\u0010$\u001a\u00020%X\u0082\u0004\u00a2\u0006\u0002\n\u0000\u0082\u0002\u000f\n\u0002\u0008\u0019\n\u0005\u0008\u00a1\u001e0\u0001\n\u0002\u0008!\u00a8\u0006="
+        "\u0000`\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0010\u000b\n\u0002\u0008\u0008\n\u0002\u0018\u0002\n\u0002\u0008\u0003\n\u0002\u0018\u0002\n\u0002\u0008\u0005\n\u0002\u0010\u0007\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0008\n\u0002\u0008\u0007\n\u0002\u0018\u0002\n\u0002\u0008\u0008\n\u0002\u0010\u000e\n\u0002\u0008\u000b\n\u0002\u0018\u0002\n\u0002\u0008\n\n\u0002\u0010\u0002\n\u0002\u0018\u0002\n\u0000\u0008\u0007\u0018\u00002\u00020\u0001B\u0011\u0008\u0000\u0012\u0008\u0008\u0002\u0010\u0002\u001a\u00020\u0003\u00a2\u0006\u0002\u0010\u0004J\u0010\u0010@\u001a\u00020\u00062\u0006\u0010A\u001a\u00020\u0019H\u0014J\u0012\u0010B\u001a\u00020\u00062\u0008\u0010C\u001a\u0004\u0018\u00010\u001bH\u0014J\u000c\u0010D\u001a\u00020E*\u00020FH\u0014R+\u0010\u0007\u001a\u00020\u00062\u0006\u0010\u0005\u001a\u00020\u00068@@@X\u0080\u008e\u0002\u00a2\u0006\u0012\n\u0004\u0008\u000c\u0010\r\u001a\u0004\u0008\u0008\u0010\t\"\u0004\u0008\n\u0010\u000bR\u001a\u0010\u000e\u001a\u00020\u000f8@X\u0080\u0004\u00f8\u0001\u0000\u00f8\u0001\u0001\u00a2\u0006\u0006\u001a\u0004\u0008\u0010\u0010\u0011R\u001c\u0010\u0012\u001a\u0004\u0018\u00010\u0013X\u0080\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\u0008\u0014\u0010\u0015\"\u0004\u0008\u0016\u0010\u0017R\u000e\u0010\u0018\u001a\u00020\u0019X\u0082\u000e\u00a2\u0006\u0002\n\u0000R\u0010\u0010\u001a\u001a\u0004\u0018\u00010\u001bX\u0082\u000e\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u001c\u001a\u00020\u001dX\u0082\u000e\u00a2\u0006\u0002\n\u0000R(\u0010\u001f\u001a\u0004\u0018\u00010\u001b2\u0008\u0010\u001e\u001a\u0004\u0018\u00010\u001b8@@@X\u0080\u000e\u00a2\u0006\u000c\u001a\u0004\u0008 \u0010!\"\u0004\u0008\"\u0010#R\u001a\u0010$\u001a\u00020%8VX\u0096\u0004\u00f8\u0001\u0000\u00f8\u0001\u0001\u00a2\u0006\u0006\u001a\u0004\u0008&\u0010\'R+\u0010(\u001a\u00020\u001d2\u0006\u0010\u0005\u001a\u00020\u001d8B@BX\u0082\u008e\u0002\u00a2\u0006\u0012\n\u0004\u0008,\u0010-\u001a\u0004\u0008)\u0010\u0011\"\u0004\u0008*\u0010+R$\u0010/\u001a\u00020.2\u0006\u0010\u001e\u001a\u00020.8@@@X\u0080\u000e\u00a2\u0006\u000c\u001a\u0004\u00080\u00101\"\u0004\u00082\u00103R1\u00104\u001a\u00020%2\u0006\u0010\u0005\u001a\u00020%8@@@X\u0080\u008e\u0002\u00f8\u0001\u0000\u00f8\u0001\u0001\u00a2\u0006\u0012\n\u0004\u00088\u0010\r\u001a\u0004\u00085\u0010\'\"\u0004\u00086\u00107R\u0014\u00109\u001a\u00020:X\u0080\u0004\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008;\u0010<R*\u0010=\u001a\u00020%2\u0006\u0010\u001e\u001a\u00020%8@@@X\u0080\u000e\u00f8\u0001\u0000\u00f8\u0001\u0001\u00a2\u0006\u000c\u001a\u0004\u0008>\u0010\'\"\u0004\u0008?\u00107\u0082\u0002\u000b\n\u0005\u0008\u00a1\u001e0\u0001\n\u0002\u0008!\u00a8\u0006G"
     }
     d2 = {
         "Landroidx/compose/ui/graphics/vector/VectorPainter;",
         "Landroidx/compose/ui/graphics/painter/Painter;",
-        "()V",
+        "root",
+        "Landroidx/compose/ui/graphics/vector/GroupComponent;",
+        "(Landroidx/compose/ui/graphics/vector/GroupComponent;)V",
         "<set-?>",
         "",
         "autoMirror",
@@ -25,12 +27,22 @@
         "(Z)V",
         "autoMirror$delegate",
         "Landroidx/compose/runtime/MutableState;",
+        "bitmapConfig",
+        "Landroidx/compose/ui/graphics/ImageBitmapConfig;",
+        "getBitmapConfig-_sVssgQ$ui_release",
+        "()I",
         "composition",
         "Landroidx/compose/runtime/Composition;",
+        "getComposition$ui_release",
+        "()Landroidx/compose/runtime/Composition;",
+        "setComposition$ui_release",
+        "(Landroidx/compose/runtime/Composition;)V",
         "currentAlpha",
         "",
         "currentColorFilter",
         "Landroidx/compose/ui/graphics/ColorFilter;",
+        "drawCount",
+        "",
         "value",
         "intrinsicColorFilter",
         "getIntrinsicColorFilter$ui_release",
@@ -41,9 +53,18 @@
         "Landroidx/compose/ui/geometry/Size;",
         "getIntrinsicSize-NH-jbRc",
         "()J",
-        "isDirty",
-        "setDirty",
-        "isDirty$delegate",
+        "invalidateCount",
+        "getInvalidateCount",
+        "setInvalidateCount",
+        "(I)V",
+        "invalidateCount$delegate",
+        "Landroidx/compose/runtime/MutableIntState;",
+        "",
+        "name",
+        "getName$ui_release",
+        "()Ljava/lang/String;",
+        "setName$ui_release",
+        "(Ljava/lang/String;)V",
         "size",
         "getSize-NH-jbRc$ui_release",
         "setSize-uvyYCjk$ui_release",
@@ -51,28 +72,17 @@
         "size$delegate",
         "vector",
         "Landroidx/compose/ui/graphics/vector/VectorComponent;",
-        "RenderVector",
-        "",
-        "name",
-        "",
-        "viewportWidth",
-        "viewportHeight",
-        "content",
-        "Lkotlin/Function2;",
-        "Lkotlin/ParameterName;",
-        "Landroidx/compose/runtime/Composable;",
-        "RenderVector$ui_release",
-        "(Ljava/lang/String;FFLkotlin/jvm/functions/Function4;Landroidx/compose/runtime/Composer;I)V",
+        "getVector$ui_release",
+        "()Landroidx/compose/ui/graphics/vector/VectorComponent;",
+        "viewportSize",
+        "getViewportSize-NH-jbRc$ui_release",
+        "setViewportSize-uvyYCjk$ui_release",
         "applyAlpha",
         "alpha",
         "applyColorFilter",
         "colorFilter",
-        "composeVector",
-        "parent",
-        "Landroidx/compose/runtime/CompositionContext;",
-        "composable",
-        "(Landroidx/compose/runtime/CompositionContext;Lkotlin/jvm/functions/Function4;)Landroidx/compose/runtime/Composition;",
         "onDraw",
+        "",
         "Landroidx/compose/ui/graphics/drawscope/DrawScope;",
         "ui_release"
     }
@@ -99,7 +109,9 @@
 
 .field private currentColorFilter:Landroidx/compose/ui/graphics/ColorFilter;
 
-.field private final isDirty$delegate:Landroidx/compose/runtime/MutableState;
+.field private drawCount:I
+
+.field private final invalidateCount$delegate:Landroidx/compose/runtime/MutableIntState;
 
 .field private final size$delegate:Landroidx/compose/runtime/MutableState;
 
@@ -114,12 +126,24 @@
 .end method
 
 .method public constructor <init>()V
+    .locals 2
+
+    const/4 v0, 0x0
+
+    const/4 v1, 0x1
+
+    invoke-direct {p0, v0, v1, v0}, Landroidx/compose/ui/graphics/vector/VectorPainter;-><init>(Landroidx/compose/ui/graphics/vector/GroupComponent;ILkotlin/jvm/internal/DefaultConstructorMarker;)V
+
+    return-void
+.end method
+
+.method public constructor <init>(Landroidx/compose/ui/graphics/vector/GroupComponent;)V
     .locals 4
 
-    .line 176
+    .line 187
     invoke-direct {p0}, Landroidx/compose/ui/graphics/painter/Painter;-><init>()V
 
-    .line 178
+    .line 189
     sget-object v0, Landroidx/compose/ui/geometry/Size;->Companion:Landroidx/compose/ui/geometry/Size$Companion;
 
     invoke-virtual {v0}, Landroidx/compose/ui/geometry/Size$Companion;->getZero-NH-jbRc()J
@@ -142,329 +166,135 @@
 
     const/4 v0, 0x0
 
-    .line 180
+    .line 191
     invoke-static {v0}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
-    move-result-object v0
+    move-result-object v3
 
-    invoke-static {v0, v1, v2, v1}, Landroidx/compose/runtime/SnapshotStateKt;->mutableStateOf$default(Ljava/lang/Object;Landroidx/compose/runtime/SnapshotMutationPolicy;ILjava/lang/Object;)Landroidx/compose/runtime/MutableState;
-
-    move-result-object v0
-
-    iput-object v0, p0, Landroidx/compose/ui/graphics/vector/VectorPainter;->autoMirror$delegate:Landroidx/compose/runtime/MutableState;
-
-    .line 191
-    new-instance v0, Landroidx/compose/ui/graphics/vector/VectorComponent;
-
-    invoke-direct {v0}, Landroidx/compose/ui/graphics/vector/VectorComponent;-><init>()V
-
-    .line 192
-    new-instance v3, Landroidx/compose/ui/graphics/vector/VectorPainter$vector$1$1;
-
-    invoke-direct {v3, p0}, Landroidx/compose/ui/graphics/vector/VectorPainter$vector$1$1;-><init>(Landroidx/compose/ui/graphics/vector/VectorPainter;)V
-
-    check-cast v3, Lkotlin/jvm/functions/Function0;
-
-    invoke-virtual {v0, v3}, Landroidx/compose/ui/graphics/vector/VectorComponent;->setInvalidateCallback$ui_release(Lkotlin/jvm/functions/Function0;)V
-
-    .line 191
-    iput-object v0, p0, Landroidx/compose/ui/graphics/vector/VectorPainter;->vector:Landroidx/compose/ui/graphics/vector/VectorComponent;
-
-    const/4 v0, 0x1
-
-    .line 219
-    invoke-static {v0}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
-
-    move-result-object v0
-
-    invoke-static {v0, v1, v2, v1}, Landroidx/compose/runtime/SnapshotStateKt;->mutableStateOf$default(Ljava/lang/Object;Landroidx/compose/runtime/SnapshotMutationPolicy;ILjava/lang/Object;)Landroidx/compose/runtime/MutableState;
-
-    move-result-object v0
-
-    iput-object v0, p0, Landroidx/compose/ui/graphics/vector/VectorPainter;->isDirty$delegate:Landroidx/compose/runtime/MutableState;
-
-    const/high16 v0, 0x3f800000    # 1.0f
-
-    .line 245
-    iput v0, p0, Landroidx/compose/ui/graphics/vector/VectorPainter;->currentAlpha:F
-
-    return-void
-.end method
-
-.method public static final synthetic access$getVector$p(Landroidx/compose/ui/graphics/vector/VectorPainter;)Landroidx/compose/ui/graphics/vector/VectorComponent;
-    .locals 0
-
-    .line 176
-    iget-object p0, p0, Landroidx/compose/ui/graphics/vector/VectorPainter;->vector:Landroidx/compose/ui/graphics/vector/VectorComponent;
-
-    return-object p0
-.end method
-
-.method public static final synthetic access$setDirty(Landroidx/compose/ui/graphics/vector/VectorPainter;Z)V
-    .locals 0
-
-    .line 176
-    invoke-direct {p0, p1}, Landroidx/compose/ui/graphics/vector/VectorPainter;->setDirty(Z)V
-
-    return-void
-.end method
-
-.method private final composeVector(Landroidx/compose/runtime/CompositionContext;Lkotlin/jvm/functions/Function4;)Landroidx/compose/runtime/Composition;
-    .locals 2
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(",
-            "Landroidx/compose/runtime/CompositionContext;",
-            "Lkotlin/jvm/functions/Function4<",
-            "-",
-            "Ljava/lang/Float;",
-            "-",
-            "Ljava/lang/Float;",
-            "-",
-            "Landroidx/compose/runtime/Composer;",
-            "-",
-            "Ljava/lang/Integer;",
-            "Lkotlin/Unit;",
-            ">;)",
-            "Landroidx/compose/runtime/Composition;"
-        }
-    .end annotation
-
-    .line 203
-    iget-object v0, p0, Landroidx/compose/ui/graphics/vector/VectorPainter;->composition:Landroidx/compose/runtime/Composition;
-
-    if-eqz v0, :cond_0
-
-    .line 204
-    invoke-interface {v0}, Landroidx/compose/runtime/Composition;->isDisposed()Z
-
-    move-result v1
-
-    if-eqz v1, :cond_1
-
-    .line 206
-    :cond_0
-    new-instance v0, Landroidx/compose/ui/graphics/vector/VectorApplier;
-
-    iget-object v1, p0, Landroidx/compose/ui/graphics/vector/VectorPainter;->vector:Landroidx/compose/ui/graphics/vector/VectorComponent;
-
-    invoke-virtual {v1}, Landroidx/compose/ui/graphics/vector/VectorComponent;->getRoot()Landroidx/compose/ui/graphics/vector/GroupComponent;
+    invoke-static {v3, v1, v2, v1}, Landroidx/compose/runtime/SnapshotStateKt;->mutableStateOf$default(Ljava/lang/Object;Landroidx/compose/runtime/SnapshotMutationPolicy;ILjava/lang/Object;)Landroidx/compose/runtime/MutableState;
 
     move-result-object v1
 
-    check-cast v1, Landroidx/compose/ui/graphics/vector/VNode;
+    iput-object v1, p0, Landroidx/compose/ui/graphics/vector/VectorPainter;->autoMirror$delegate:Landroidx/compose/runtime/MutableState;
 
-    invoke-direct {v0, v1}, Landroidx/compose/ui/graphics/vector/VectorApplier;-><init>(Landroidx/compose/ui/graphics/vector/VNode;)V
+    .line 214
+    new-instance v1, Landroidx/compose/ui/graphics/vector/VectorComponent;
 
-    check-cast v0, Landroidx/compose/runtime/Applier;
+    invoke-direct {v1, p1}, Landroidx/compose/ui/graphics/vector/VectorComponent;-><init>(Landroidx/compose/ui/graphics/vector/GroupComponent;)V
 
-    .line 205
-    invoke-static {v0, p1}, Landroidx/compose/runtime/CompositionKt;->Composition(Landroidx/compose/runtime/Applier;Landroidx/compose/runtime/CompositionContext;)Landroidx/compose/runtime/Composition;
+    .line 215
+    new-instance p1, Landroidx/compose/ui/graphics/vector/VectorPainter$vector$1$1;
 
-    move-result-object v0
+    invoke-direct {p1, p0}, Landroidx/compose/ui/graphics/vector/VectorPainter$vector$1$1;-><init>(Landroidx/compose/ui/graphics/vector/VectorPainter;)V
 
-    .line 212
-    :cond_1
-    iput-object v0, p0, Landroidx/compose/ui/graphics/vector/VectorPainter;->composition:Landroidx/compose/runtime/Composition;
+    check-cast p1, Lkotlin/jvm/functions/Function0;
 
-    .line 213
-    new-instance p1, Landroidx/compose/ui/graphics/vector/VectorPainter$composeVector$1;
+    invoke-virtual {v1, p1}, Landroidx/compose/ui/graphics/vector/VectorComponent;->setInvalidateCallback$ui_release(Lkotlin/jvm/functions/Function0;)V
 
-    invoke-direct {p1, p2, p0}, Landroidx/compose/ui/graphics/vector/VectorPainter$composeVector$1;-><init>(Lkotlin/jvm/functions/Function4;Landroidx/compose/ui/graphics/vector/VectorPainter;)V
+    .line 214
+    iput-object v1, p0, Landroidx/compose/ui/graphics/vector/VectorPainter;->vector:Landroidx/compose/ui/graphics/vector/VectorComponent;
 
-    const p0, -0x723b937d
+    .line 228
+    invoke-static {v0}, Landroidx/compose/runtime/SnapshotIntStateKt;->mutableIntStateOf(I)Landroidx/compose/runtime/MutableIntState;
 
-    const/4 p2, 0x1
+    move-result-object p1
 
-    invoke-static {p0, p2, p1}, Landroidx/compose/runtime/internal/ComposableLambdaKt;->composableLambdaInstance(IZLjava/lang/Object;)Landroidx/compose/runtime/internal/ComposableLambda;
+    iput-object p1, p0, Landroidx/compose/ui/graphics/vector/VectorPainter;->invalidateCount$delegate:Landroidx/compose/runtime/MutableIntState;
 
-    move-result-object p0
+    const/high16 p1, 0x3f800000    # 1.0f
 
-    check-cast p0, Lkotlin/jvm/functions/Function2;
+    .line 230
+    iput p1, p0, Landroidx/compose/ui/graphics/vector/VectorPainter;->currentAlpha:F
 
-    invoke-interface {v0, p0}, Landroidx/compose/runtime/Composition;->setContent(Lkotlin/jvm/functions/Function2;)V
+    const/4 p1, -0x1
 
-    return-object v0
+    .line 236
+    iput p1, p0, Landroidx/compose/ui/graphics/vector/VectorPainter;->drawCount:I
+
+    return-void
 .end method
 
-.method private final isDirty()Z
+.method public synthetic constructor <init>(Landroidx/compose/ui/graphics/vector/GroupComponent;ILkotlin/jvm/internal/DefaultConstructorMarker;)V
     .locals 0
 
-    .line 219
-    iget-object p0, p0, Landroidx/compose/ui/graphics/vector/VectorPainter;->isDirty$delegate:Landroidx/compose/runtime/MutableState;
+    and-int/lit8 p2, p2, 0x1
 
-    check-cast p0, Landroidx/compose/runtime/State;
+    if-eqz p2, :cond_0
 
-    .line 427
-    invoke-interface {p0}, Landroidx/compose/runtime/State;->getValue()Ljava/lang/Object;
+    .line 187
+    new-instance p1, Landroidx/compose/ui/graphics/vector/GroupComponent;
 
-    move-result-object p0
+    invoke-direct {p1}, Landroidx/compose/ui/graphics/vector/GroupComponent;-><init>()V
 
-    check-cast p0, Ljava/lang/Boolean;
+    :cond_0
+    invoke-direct {p0, p1}, Landroidx/compose/ui/graphics/vector/VectorPainter;-><init>(Landroidx/compose/ui/graphics/vector/GroupComponent;)V
 
-    invoke-virtual {p0}, Ljava/lang/Boolean;->booleanValue()Z
+    return-void
+.end method
+
+.method public static final synthetic access$getDrawCount$p(Landroidx/compose/ui/graphics/vector/VectorPainter;)I
+    .locals 0
+
+    .line 187
+    iget p0, p0, Landroidx/compose/ui/graphics/vector/VectorPainter;->drawCount:I
+
+    return p0
+.end method
+
+.method public static final synthetic access$getInvalidateCount(Landroidx/compose/ui/graphics/vector/VectorPainter;)I
+    .locals 0
+
+    .line 187
+    invoke-direct {p0}, Landroidx/compose/ui/graphics/vector/VectorPainter;->getInvalidateCount()I
 
     move-result p0
 
     return p0
 .end method
 
-.method private final setDirty(Z)V
+.method public static final synthetic access$setInvalidateCount(Landroidx/compose/ui/graphics/vector/VectorPainter;I)V
     .locals 0
 
-    .line 219
-    iget-object p0, p0, Landroidx/compose/ui/graphics/vector/VectorPainter;->isDirty$delegate:Landroidx/compose/runtime/MutableState;
+    .line 187
+    invoke-direct {p0, p1}, Landroidx/compose/ui/graphics/vector/VectorPainter;->setInvalidateCount(I)V
 
-    invoke-static {p1}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
+    return-void
+.end method
 
-    move-result-object p1
+.method private final getInvalidateCount()I
+    .locals 0
 
-    .line 428
-    invoke-interface {p0, p1}, Landroidx/compose/runtime/MutableState;->setValue(Ljava/lang/Object;)V
+    .line 228
+    iget-object p0, p0, Landroidx/compose/ui/graphics/vector/VectorPainter;->invalidateCount$delegate:Landroidx/compose/runtime/MutableIntState;
+
+    check-cast p0, Landroidx/compose/runtime/IntState;
+
+    .line 523
+    invoke-interface {p0}, Landroidx/compose/runtime/IntState;->getIntValue()I
+
+    move-result p0
+
+    return p0
+.end method
+
+.method private final setInvalidateCount(I)V
+    .locals 0
+
+    .line 228
+    iget-object p0, p0, Landroidx/compose/ui/graphics/vector/VectorPainter;->invalidateCount$delegate:Landroidx/compose/runtime/MutableIntState;
+
+    .line 524
+    invoke-interface {p0, p1}, Landroidx/compose/runtime/MutableIntState;->setIntValue(I)V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final RenderVector$ui_release(Ljava/lang/String;FFLkotlin/jvm/functions/Function4;Landroidx/compose/runtime/Composer;I)V
-    .locals 8
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(",
-            "Ljava/lang/String;",
-            "FF",
-            "Lkotlin/jvm/functions/Function4<",
-            "-",
-            "Ljava/lang/Float;",
-            "-",
-            "Ljava/lang/Float;",
-            "-",
-            "Landroidx/compose/runtime/Composer;",
-            "-",
-            "Ljava/lang/Integer;",
-            "Lkotlin/Unit;",
-            ">;",
-            "Landroidx/compose/runtime/Composer;",
-            "I)V"
-        }
-    .end annotation
-
-    const-string v0, "name"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string v0, "content"
-
-    invoke-static {p4, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const v0, 0x4b64c23f    # 1.4991935E7f
-
-    .line 227
-    invoke-interface {p5, v0}, Landroidx/compose/runtime/Composer;->startRestartGroup(I)Landroidx/compose/runtime/Composer;
-
-    move-result-object p5
-
-    const-string v1, "C(RenderVector)P(1,3,2)233@8813L28,237@8882L117:VectorPainter.kt#huu6hf"
-
-    invoke-static {p5, v1}, Landroidx/compose/runtime/ComposerKt;->sourceInformation(Landroidx/compose/runtime/Composer;Ljava/lang/String;)V
-
-    invoke-static {}, Landroidx/compose/runtime/ComposerKt;->isTraceInProgress()Z
-
-    move-result v1
-
-    if-eqz v1, :cond_0
-
-    const/4 v1, -0x1
-
-    const-string v2, "androidx.compose.ui.graphics.vector.VectorPainter.RenderVector (VectorPainter.kt:221)"
-
-    invoke-static {v0, p6, v1, v2}, Landroidx/compose/runtime/ComposerKt;->traceEventStart(IIILjava/lang/String;)V
-
-    .line 228
-    :cond_0
-    iget-object v0, p0, Landroidx/compose/ui/graphics/vector/VectorPainter;->vector:Landroidx/compose/ui/graphics/vector/VectorComponent;
-
-    .line 229
-    invoke-virtual {v0, p1}, Landroidx/compose/ui/graphics/vector/VectorComponent;->setName(Ljava/lang/String;)V
-
-    .line 230
-    invoke-virtual {v0, p2}, Landroidx/compose/ui/graphics/vector/VectorComponent;->setViewportWidth(F)V
-
-    .line 231
-    invoke-virtual {v0, p3}, Landroidx/compose/ui/graphics/vector/VectorComponent;->setViewportHeight(F)V
-
-    const/4 v0, 0x0
-
-    .line 234
-    invoke-static {p5, v0}, Landroidx/compose/runtime/ComposablesKt;->rememberCompositionContext(Landroidx/compose/runtime/Composer;I)Landroidx/compose/runtime/CompositionContext;
-
-    move-result-object v0
-
-    .line 233
-    invoke-direct {p0, v0, p4}, Landroidx/compose/ui/graphics/vector/VectorPainter;->composeVector(Landroidx/compose/runtime/CompositionContext;Lkotlin/jvm/functions/Function4;)Landroidx/compose/runtime/Composition;
-
-    move-result-object v0
-
-    .line 238
-    new-instance v1, Landroidx/compose/ui/graphics/vector/VectorPainter$RenderVector$2;
-
-    invoke-direct {v1, v0}, Landroidx/compose/ui/graphics/vector/VectorPainter$RenderVector$2;-><init>(Landroidx/compose/runtime/Composition;)V
-
-    check-cast v1, Lkotlin/jvm/functions/Function1;
-
-    const/16 v2, 0x8
-
-    invoke-static {v0, v1, p5, v2}, Landroidx/compose/runtime/EffectsKt;->DisposableEffect(Ljava/lang/Object;Lkotlin/jvm/functions/Function1;Landroidx/compose/runtime/Composer;I)V
-
-    invoke-static {}, Landroidx/compose/runtime/ComposerKt;->isTraceInProgress()Z
-
-    move-result v0
-
-    if-eqz v0, :cond_1
-
-    invoke-static {}, Landroidx/compose/runtime/ComposerKt;->traceEventEnd()V
-
-    :cond_1
-    invoke-interface {p5}, Landroidx/compose/runtime/Composer;->endRestartGroup()Landroidx/compose/runtime/ScopeUpdateScope;
-
-    move-result-object p5
-
-    if-nez p5, :cond_2
-
-    goto :goto_0
-
-    :cond_2
-    new-instance v7, Landroidx/compose/ui/graphics/vector/VectorPainter$RenderVector$3;
-
-    move-object v0, v7
-
-    move-object v1, p0
-
-    move-object v2, p1
-
-    move v3, p2
-
-    move v4, p3
-
-    move-object v5, p4
-
-    move v6, p6
-
-    invoke-direct/range {v0 .. v6}, Landroidx/compose/ui/graphics/vector/VectorPainter$RenderVector$3;-><init>(Landroidx/compose/ui/graphics/vector/VectorPainter;Ljava/lang/String;FFLkotlin/jvm/functions/Function4;I)V
-
-    check-cast v7, Lkotlin/jvm/functions/Function2;
-
-    invoke-interface {p5, v7}, Landroidx/compose/runtime/ScopeUpdateScope;->updateScope(Lkotlin/jvm/functions/Function2;)V
-
-    :goto_0
-    return-void
-.end method
-
 .method protected applyAlpha(F)Z
     .locals 0
 
-    .line 270
+    .line 255
     iput p1, p0, Landroidx/compose/ui/graphics/vector/VectorPainter;->currentAlpha:F
 
     const/4 p0, 0x1
@@ -475,7 +305,7 @@
 .method protected applyColorFilter(Landroidx/compose/ui/graphics/ColorFilter;)Z
     .locals 0
 
-    .line 275
+    .line 260
     iput-object p1, p0, Landroidx/compose/ui/graphics/vector/VectorPainter;->currentColorFilter:Landroidx/compose/ui/graphics/ColorFilter;
 
     const/4 p0, 0x1
@@ -486,12 +316,12 @@
 .method public final getAutoMirror$ui_release()Z
     .locals 0
 
-    .line 180
+    .line 191
     iget-object p0, p0, Landroidx/compose/ui/graphics/vector/VectorPainter;->autoMirror$delegate:Landroidx/compose/runtime/MutableState;
 
     check-cast p0, Landroidx/compose/runtime/State;
 
-    .line 424
+    .line 520
     invoke-interface {p0}, Landroidx/compose/runtime/State;->getValue()Ljava/lang/Object;
 
     move-result-object p0
@@ -505,10 +335,32 @@
     return p0
 .end method
 
+.method public final getBitmapConfig-_sVssgQ$ui_release()I
+    .locals 0
+
+    .line 223
+    iget-object p0, p0, Landroidx/compose/ui/graphics/vector/VectorPainter;->vector:Landroidx/compose/ui/graphics/vector/VectorComponent;
+
+    invoke-virtual {p0}, Landroidx/compose/ui/graphics/vector/VectorComponent;->getCacheBitmapConfig-_sVssgQ$ui_release()I
+
+    move-result p0
+
+    return p0
+.end method
+
+.method public final getComposition$ui_release()Landroidx/compose/runtime/Composition;
+    .locals 0
+
+    .line 225
+    iget-object p0, p0, Landroidx/compose/ui/graphics/vector/VectorPainter;->composition:Landroidx/compose/runtime/Composition;
+
+    return-object p0
+.end method
+
 .method public final getIntrinsicColorFilter$ui_release()Landroidx/compose/ui/graphics/ColorFilter;
     .locals 0
 
-    .line 186
+    .line 197
     iget-object p0, p0, Landroidx/compose/ui/graphics/vector/VectorPainter;->vector:Landroidx/compose/ui/graphics/vector/VectorComponent;
 
     invoke-virtual {p0}, Landroidx/compose/ui/graphics/vector/VectorComponent;->getIntrinsicColorFilter$ui_release()Landroidx/compose/ui/graphics/ColorFilter;
@@ -521,7 +373,7 @@
 .method public getIntrinsicSize-NH-jbRc()J
     .locals 2
 
-    .line 249
+    .line 234
     invoke-virtual {p0}, Landroidx/compose/ui/graphics/vector/VectorPainter;->getSize-NH-jbRc$ui_release()J
 
     move-result-wide v0
@@ -529,15 +381,28 @@
     return-wide v0
 .end method
 
+.method public final getName$ui_release()Ljava/lang/String;
+    .locals 0
+
+    .line 209
+    iget-object p0, p0, Landroidx/compose/ui/graphics/vector/VectorPainter;->vector:Landroidx/compose/ui/graphics/vector/VectorComponent;
+
+    invoke-virtual {p0}, Landroidx/compose/ui/graphics/vector/VectorComponent;->getName()Ljava/lang/String;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
 .method public final getSize-NH-jbRc$ui_release()J
     .locals 2
 
-    .line 178
+    .line 189
     iget-object p0, p0, Landroidx/compose/ui/graphics/vector/VectorPainter;->size$delegate:Landroidx/compose/runtime/MutableState;
 
     check-cast p0, Landroidx/compose/runtime/State;
 
-    .line 421
+    .line 517
     invoke-interface {p0}, Landroidx/compose/runtime/State;->getValue()Ljava/lang/Object;
 
     move-result-object p0
@@ -551,17 +416,35 @@
     return-wide v0
 .end method
 
+.method public final getVector$ui_release()Landroidx/compose/ui/graphics/vector/VectorComponent;
+    .locals 0
+
+    .line 214
+    iget-object p0, p0, Landroidx/compose/ui/graphics/vector/VectorPainter;->vector:Landroidx/compose/ui/graphics/vector/VectorComponent;
+
+    return-object p0
+.end method
+
+.method public final getViewportSize-NH-jbRc$ui_release()J
+    .locals 2
+
+    .line 203
+    iget-object p0, p0, Landroidx/compose/ui/graphics/vector/VectorPainter;->vector:Landroidx/compose/ui/graphics/vector/VectorComponent;
+
+    invoke-virtual {p0}, Landroidx/compose/ui/graphics/vector/VectorComponent;->getViewportSize-NH-jbRc$ui_release()J
+
+    move-result-wide v0
+
+    return-wide v0
+.end method
+
 .method protected onDraw(Landroidx/compose/ui/graphics/drawscope/DrawScope;)V
     .locals 10
 
-    const-string v0, "<this>"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 252
+    .line 239
     iget-object v0, p0, Landroidx/compose/ui/graphics/vector/VectorPainter;->vector:Landroidx/compose/ui/graphics/vector/VectorComponent;
 
-    .line 253
+    .line 240
     iget-object v1, p0, Landroidx/compose/ui/graphics/vector/VectorPainter;->currentColorFilter:Landroidx/compose/ui/graphics/ColorFilter;
 
     if-nez v1, :cond_0
@@ -570,7 +453,7 @@
 
     move-result-object v1
 
-    .line 254
+    .line 241
     :cond_0
     invoke-virtual {p0}, Landroidx/compose/ui/graphics/vector/VectorPainter;->getAutoMirror$ui_release()Z
 
@@ -586,29 +469,29 @@
 
     if-ne v2, v3, :cond_1
 
-    .line 434
+    .line 530
     invoke-interface {p1}, Landroidx/compose/ui/graphics/drawscope/DrawScope;->getCenter-F1C5BW0()J
 
     move-result-wide v2
 
-    .line 437
+    .line 533
     invoke-interface {p1}, Landroidx/compose/ui/graphics/drawscope/DrawScope;->getDrawContext()Landroidx/compose/ui/graphics/drawscope/DrawContext;
 
     move-result-object v4
 
-    .line 441
+    .line 537
     invoke-interface {v4}, Landroidx/compose/ui/graphics/drawscope/DrawContext;->getSize-NH-jbRc()J
 
     move-result-wide v5
 
-    .line 442
+    .line 538
     invoke-interface {v4}, Landroidx/compose/ui/graphics/drawscope/DrawContext;->getCanvas()Landroidx/compose/ui/graphics/Canvas;
 
     move-result-object v7
 
     invoke-interface {v7}, Landroidx/compose/ui/graphics/Canvas;->save()V
 
-    .line 443
+    .line 539
     invoke-interface {v4}, Landroidx/compose/ui/graphics/drawscope/DrawContext;->getTransform()Landroidx/compose/ui/graphics/drawscope/DrawTransform;
 
     move-result-object v7
@@ -617,61 +500,64 @@
 
     const/high16 v9, 0x3f800000    # 1.0f
 
-    .line 436
+    .line 532
     invoke-interface {v7, v8, v9, v2, v3}, Landroidx/compose/ui/graphics/drawscope/DrawTransform;->scale-0AR0LA0(FFJ)V
 
-    .line 256
+    .line 243
     iget v2, p0, Landroidx/compose/ui/graphics/vector/VectorPainter;->currentAlpha:F
 
     invoke-virtual {v0, p1, v2, v1}, Landroidx/compose/ui/graphics/vector/VectorComponent;->draw(Landroidx/compose/ui/graphics/drawscope/DrawScope;FLandroidx/compose/ui/graphics/ColorFilter;)V
 
-    .line 445
+    .line 541
     invoke-interface {v4}, Landroidx/compose/ui/graphics/drawscope/DrawContext;->getCanvas()Landroidx/compose/ui/graphics/Canvas;
 
     move-result-object p1
 
     invoke-interface {p1}, Landroidx/compose/ui/graphics/Canvas;->restore()V
 
-    .line 446
+    .line 542
     invoke-interface {v4, v5, v6}, Landroidx/compose/ui/graphics/drawscope/DrawContext;->setSize-uvyYCjk(J)V
 
     goto :goto_0
 
-    .line 259
+    .line 246
     :cond_1
     iget v2, p0, Landroidx/compose/ui/graphics/vector/VectorPainter;->currentAlpha:F
 
     invoke-virtual {v0, p1, v2, v1}, Landroidx/compose/ui/graphics/vector/VectorComponent;->draw(Landroidx/compose/ui/graphics/drawscope/DrawScope;FLandroidx/compose/ui/graphics/ColorFilter;)V
 
-    .line 264
+    .line 251
     :goto_0
-    invoke-direct {p0}, Landroidx/compose/ui/graphics/vector/VectorPainter;->isDirty()Z
+    invoke-direct {p0}, Landroidx/compose/ui/graphics/vector/VectorPainter;->getInvalidateCount()I
 
     move-result p1
 
-    if-eqz p1, :cond_2
+    iput p1, p0, Landroidx/compose/ui/graphics/vector/VectorPainter;->drawCount:I
 
-    const/4 p1, 0x0
-
-    .line 265
-    invoke-direct {p0, p1}, Landroidx/compose/ui/graphics/vector/VectorPainter;->setDirty(Z)V
-
-    :cond_2
     return-void
 .end method
 
 .method public final setAutoMirror$ui_release(Z)V
     .locals 0
 
-    .line 180
+    .line 191
     iget-object p0, p0, Landroidx/compose/ui/graphics/vector/VectorPainter;->autoMirror$delegate:Landroidx/compose/runtime/MutableState;
 
     invoke-static {p1}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
     move-result-object p1
 
-    .line 425
+    .line 521
     invoke-interface {p0, p1}, Landroidx/compose/runtime/MutableState;->setValue(Ljava/lang/Object;)V
+
+    return-void
+.end method
+
+.method public final setComposition$ui_release(Landroidx/compose/runtime/Composition;)V
+    .locals 0
+
+    .line 225
+    iput-object p1, p0, Landroidx/compose/ui/graphics/vector/VectorPainter;->composition:Landroidx/compose/runtime/Composition;
 
     return-void
 .end method
@@ -679,7 +565,7 @@
 .method public final setIntrinsicColorFilter$ui_release(Landroidx/compose/ui/graphics/ColorFilter;)V
     .locals 0
 
-    .line 188
+    .line 199
     iget-object p0, p0, Landroidx/compose/ui/graphics/vector/VectorPainter;->vector:Landroidx/compose/ui/graphics/vector/VectorComponent;
 
     invoke-virtual {p0, p1}, Landroidx/compose/ui/graphics/vector/VectorComponent;->setIntrinsicColorFilter$ui_release(Landroidx/compose/ui/graphics/ColorFilter;)V
@@ -687,18 +573,40 @@
     return-void
 .end method
 
+.method public final setName$ui_release(Ljava/lang/String;)V
+    .locals 0
+
+    .line 211
+    iget-object p0, p0, Landroidx/compose/ui/graphics/vector/VectorPainter;->vector:Landroidx/compose/ui/graphics/vector/VectorComponent;
+
+    invoke-virtual {p0, p1}, Landroidx/compose/ui/graphics/vector/VectorComponent;->setName(Ljava/lang/String;)V
+
+    return-void
+.end method
+
 .method public final setSize-uvyYCjk$ui_release(J)V
     .locals 0
 
-    .line 178
+    .line 189
     iget-object p0, p0, Landroidx/compose/ui/graphics/vector/VectorPainter;->size$delegate:Landroidx/compose/runtime/MutableState;
 
     invoke-static {p1, p2}, Landroidx/compose/ui/geometry/Size;->box-impl(J)Landroidx/compose/ui/geometry/Size;
 
     move-result-object p1
 
-    .line 422
+    .line 518
     invoke-interface {p0, p1}, Landroidx/compose/runtime/MutableState;->setValue(Ljava/lang/Object;)V
+
+    return-void
+.end method
+
+.method public final setViewportSize-uvyYCjk$ui_release(J)V
+    .locals 0
+
+    .line 205
+    iget-object p0, p0, Landroidx/compose/ui/graphics/vector/VectorPainter;->vector:Landroidx/compose/ui/graphics/vector/VectorComponent;
+
+    invoke-virtual {p0, p1, p2}, Landroidx/compose/ui/graphics/vector/VectorComponent;->setViewportSize-uvyYCjk$ui_release(J)V
 
     return-void
 .end method

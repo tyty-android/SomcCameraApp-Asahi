@@ -109,23 +109,19 @@
 .method public final invoke(Landroidx/compose/material/BackdropValue;)Landroidx/compose/material/BackdropScaffoldState;
     .locals 3
 
-    const-string v0, "it"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 147
+    .line 149
     new-instance v0, Landroidx/compose/material/BackdropScaffoldState;
 
-    .line 149
+    .line 151
     iget-object v1, p0, Landroidx/compose/material/BackdropScaffoldState$Companion$Saver$2;->$animationSpec:Landroidx/compose/animation/core/AnimationSpec;
 
-    .line 150
+    .line 152
     iget-object v2, p0, Landroidx/compose/material/BackdropScaffoldState$Companion$Saver$2;->$confirmStateChange:Lkotlin/jvm/functions/Function1;
 
-    .line 151
+    .line 153
     iget-object p0, p0, Landroidx/compose/material/BackdropScaffoldState$Companion$Saver$2;->$snackbarHostState:Landroidx/compose/material/SnackbarHostState;
 
-    .line 147
+    .line 149
     invoke-direct {v0, p1, v1, v2, p0}, Landroidx/compose/material/BackdropScaffoldState;-><init>(Landroidx/compose/material/BackdropValue;Landroidx/compose/animation/core/AnimationSpec;Lkotlin/jvm/functions/Function1;Landroidx/compose/material/SnackbarHostState;)V
 
     return-object v0
@@ -134,7 +130,7 @@
 .method public bridge synthetic invoke(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
 
-    .line 144
+    .line 146
     check-cast p1, Landroidx/compose/material/BackdropValue;
 
     invoke-virtual {p0, p1}, Landroidx/compose/material/BackdropScaffoldState$Companion$Saver$2;->invoke(Landroidx/compose/material/BackdropValue;)Landroidx/compose/material/BackdropScaffoldState;

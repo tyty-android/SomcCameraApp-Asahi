@@ -76,7 +76,7 @@
 .method public final invoke()Landroidx/compose/ui/platform/UriHandler;
     .locals 0
 
-    .line 166
+    .line 158
     const-string p0, "LocalUriHandler"
 
     invoke-static {p0}, Landroidx/compose/ui/platform/CompositionLocalsKt;->access$noLocalProvidedFor(Ljava/lang/String;)Ljava/lang/Void;
@@ -91,7 +91,7 @@
 .method public bridge synthetic invoke()Ljava/lang/Object;
     .locals 0
 
-    .line 165
+    .line 157
     invoke-virtual {p0}, Landroidx/compose/ui/platform/CompositionLocalsKt$LocalUriHandler$1;->invoke()Landroidx/compose/ui/platform/UriHandler;
 
     move-result-object p0

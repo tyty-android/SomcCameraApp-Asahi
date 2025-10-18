@@ -53,7 +53,7 @@
     f = "Drawer.kt"
     i = {}
     l = {
-        0x2b9
+        0x2b4
     }
     m = "invokeSuspend"
     n = {}
@@ -167,7 +167,7 @@
 
     move-result-object v0
 
-    .line 65535
+    .line 692
     iget v1, p0, Landroidx/compose/material/DrawerKt$BottomDrawer$2$1$1$1;->label:I
 
     const/4 v2, 0x1
@@ -192,7 +192,6 @@
     :cond_1
     invoke-static {p1}, Lkotlin/ResultKt;->throwOnFailure(Ljava/lang/Object;)V
 
-    .line 697
     iget-object p1, p0, Landroidx/compose/material/DrawerKt$BottomDrawer$2$1$1$1;->$drawerState:Landroidx/compose/material/BottomDrawerState;
 
     move-object v1, p0

@@ -106,6 +106,9 @@
 .method public abstract requestStopHistogramMonitoring()V
 .end method
 
+.method public abstract requestUpdateAudioDevice()V
+.end method
+
 .method public abstract restartPreviewSession(Ljp/co/sony/mc/camera/setting/CameraSettingsHolder;Ljp/co/sony/mc/camera/CameraAccessor$PreviewCallback;)V
 .end method
 
@@ -122,6 +125,9 @@
 .end method
 
 .method public abstract setAutoFlashListener(Ljp/co/sony/mc/camera/CameraStatusNotifier$AutoFlashListener;)V
+.end method
+
+.method public abstract setAutoFramingObjectTrackingListener(Ljp/co/sony/mc/camera/CameraStatusNotifier$AutoFramingObjectTrackingListener;)V
 .end method
 
 .method public abstract setAutoHdrListener(Ljp/co/sony/mc/camera/CameraStatusNotifier$AutoHdrListener;)V
@@ -154,6 +160,9 @@
 .method public abstract setFocusPosition(Landroid/graphics/Rect;ZZLjp/co/sony/mc/camera/configuration/parameters/Metering;Ljp/co/sony/mc/camera/configuration/parameters/FocusArea;Ljp/co/sony/mc/camera/CameraAccessor$AutoFocusCallback;)V
 .end method
 
+.method public abstract setFramingAssistCroppedPositionListener(Ljp/co/sony/mc/camera/CameraStatusNotifier$FramingAssistCroppedPositionListener;)V
+.end method
+
 .method public abstract setHandShutterDetectionListener(Ljp/co/sony/mc/camera/CameraStatusNotifier$HandShutterDetectionListener;)V
 .end method
 
@@ -172,7 +181,15 @@
 .method public abstract setQrDetectListener(Ljp/co/sony/mc/camera/CameraStatusNotifier$QrCodeDetectListener;)V
 .end method
 
-.method public abstract setRecordingProfile(Ljp/co/sony/mc/camera/recorder/RecordingProfile;)V
+.method public abstract setRecordingProfiles(Ljava/util/List;)V
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Ljava/util/List<",
+            "Ljp/co/sony/mc/camera/recorder/RecordingProfile;",
+            ">;)V"
+        }
+    .end annotation
 .end method
 
 .method public abstract setRecordingProgressListener(Ljp/co/sony/mc/camera/CameraStatusNotifier$RecordingProgressListener;)V
@@ -208,7 +225,13 @@
 .method public abstract startHandDetection()V
 .end method
 
+.method public abstract startMonitorAutoFramingState()V
+.end method
+
 .method public abstract startMonitorFallbackState()V
+.end method
+
+.method public abstract startMonitorFramingAssistCroppedPosition()V
 .end method
 
 .method public abstract startMonitorLowLightState()V
@@ -223,7 +246,15 @@
 .method public abstract startQrScan()V
 .end method
 
-.method public abstract startRecording(Ljp/co/sony/mc/camera/CameraAccessor$RequestRecordingParam;)V
+.method public abstract startRecording(Ljava/util/List;)V
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Ljava/util/List<",
+            "Ljp/co/sony/mc/camera/CameraAccessor$RequestRecordingParam;",
+            ">;)V"
+        }
+    .end annotation
 .end method
 
 .method public abstract startWbCustom(Ljp/co/sony/mc/camera/CameraAccessor$WbCustomStateChangedCallback;)V
@@ -241,7 +272,13 @@
 .method public abstract stopHandDetection()V
 .end method
 
+.method public abstract stopMonitorAutoFramingState()V
+.end method
+
 .method public abstract stopMonitorFallbackState()V
+.end method
+
+.method public abstract stopMonitorFramingAssistCroppedPosition()V
 .end method
 
 .method public abstract stopMonitorLowLightState()V

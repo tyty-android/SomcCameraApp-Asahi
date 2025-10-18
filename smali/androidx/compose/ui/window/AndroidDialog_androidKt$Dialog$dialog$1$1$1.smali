@@ -149,7 +149,7 @@
 
     const/4 v0, -0x1
 
-    const-string v1, "androidx.compose.ui.window.Dialog.<anonymous>.<anonymous>.<anonymous> (AndroidDialog.android.kt:170)"
+    const-string v1, "androidx.compose.ui.window.Dialog.<anonymous>.<anonymous>.<anonymous> (AndroidDialog.android.kt:173)"
 
     const v2, 0x1d1a4619
 

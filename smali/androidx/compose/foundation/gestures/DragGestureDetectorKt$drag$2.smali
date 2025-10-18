@@ -14,7 +14,7 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/SourceDebugExtension;
-    value = "SMAP\nDragGestureDetector.kt\nKotlin\n*S Kotlin\n*F\n+ 1 DragGestureDetector.kt\nandroidx/compose/foundation/gestures/DragGestureDetectorKt$drag$2\n*L\n1#1,873:1\n*E\n"
+    value = "SMAP\nDragGestureDetector.kt\nKotlin\n*S Kotlin\n*F\n+ 1 DragGestureDetector.kt\nandroidx/compose/foundation/gestures/DragGestureDetectorKt$drag$2\n*L\n1#1,875:1\n*E\n"
 .end annotation
 
 .annotation runtime Lkotlin/Metadata;
@@ -39,13 +39,13 @@
         0x0
     }
     l = {
-        0x36c
+        0x36e
     }
     m = "drag-VnAYq1g"
     n = {
         "$this$drag_u2dVnAYq1g",
         "onDrag",
-        "motionFromChange",
+        "hasDragged",
         "motionConsumed",
         "$this$awaitDragOrUp_u2djO51t88$iv",
         "pointer$iv"

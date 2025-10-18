@@ -1,6 +1,6 @@
 .class final Landroidx/compose/foundation/AndroidEdgeEffectOverscrollEffect$effectModifier$1$1;
 .super Lkotlin/coroutines/jvm/internal/RestrictedSuspendLambda;
-.source "AndroidOverscroll.kt"
+.source "AndroidOverscroll.android.kt"
 
 # interfaces
 .implements Lkotlin/jvm/functions/Function2;
@@ -31,7 +31,7 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/SourceDebugExtension;
-    value = "SMAP\nAndroidOverscroll.kt\nKotlin\n*S Kotlin\n*F\n+ 1 AndroidOverscroll.kt\nandroidx/compose/foundation/AndroidEdgeEffectOverscrollEffect$effectModifier$1$1\n+ 2 TempListUtils.kt\nandroidx/compose/foundation/TempListUtilsKt\n+ 3 ListUtils.kt\nandroidx/compose/ui/util/ListUtilsKt\n*L\n1#1,589:1\n36#2,3:590\n39#2,2:597\n41#2:600\n33#3,4:593\n38#3:599\n116#3,2:601\n33#3,6:603\n118#3:609\n*S KotlinDebug\n*F\n+ 1 AndroidOverscroll.kt\nandroidx/compose/foundation/AndroidEdgeEffectOverscrollEffect$effectModifier$1$1\n*L\n321#1:590,3\n321#1:597,2\n321#1:600\n321#1:593,4\n321#1:599\n325#1:601,2\n325#1:603,6\n325#1:609\n*E\n"
+    value = "SMAP\nAndroidOverscroll.android.kt\nKotlin\n*S Kotlin\n*F\n+ 1 AndroidOverscroll.android.kt\nandroidx/compose/foundation/AndroidEdgeEffectOverscrollEffect$effectModifier$1$1\n+ 2 ListUtils.kt\nandroidx/compose/ui/util/ListUtilsKt\n*L\n1#1,595:1\n235#2,3:596\n33#2,4:599\n238#2,2:603\n38#2:605\n240#2:606\n116#2,2:607\n33#2,6:609\n118#2:615\n*S KotlinDebug\n*F\n+ 1 AndroidOverscroll.android.kt\nandroidx/compose/foundation/AndroidEdgeEffectOverscrollEffect$effectModifier$1$1\n*L\n325#1:596,3\n325#1:599,4\n325#1:603,2\n325#1:605\n325#1:606\n329#1:607,2\n329#1:609,6\n329#1:615\n*E\n"
 .end annotation
 
 .annotation runtime Lkotlin/Metadata;
@@ -54,14 +54,14 @@
 
 .annotation runtime Lkotlin/coroutines/jvm/internal/DebugMetadata;
     c = "androidx.compose.foundation.AndroidEdgeEffectOverscrollEffect$effectModifier$1$1"
-    f = "AndroidOverscroll.kt"
+    f = "AndroidOverscroll.android.kt"
     i = {
         0x0,
         0x1
     }
     l = {
-        0x13d,
-        0x141
+        0x141,
+        0x145
     }
     m = "invokeSuspend"
     n = {
@@ -185,7 +185,7 @@
 
     move-result-object v0
 
-    .line 316
+    .line 320
     iget v1, p0, Landroidx/compose/foundation/AndroidEdgeEffectOverscrollEffect$effectModifier$1$1;->label:I
 
     const/4 v2, 0x2
@@ -235,7 +235,7 @@
 
     check-cast v1, Landroidx/compose/ui/input/pointer/AwaitPointerEventScope;
 
-    .line 317
+    .line 321
     move-object v8, p0
 
     check-cast v8, Lkotlin/coroutines/Continuation;
@@ -262,12 +262,12 @@
 
     return-object v0
 
-    .line 316
+    .line 320
     :cond_3
     :goto_0
     check-cast p1, Landroidx/compose/ui/input/pointer/PointerInputChange;
 
-    .line 318
+    .line 322
     iget-object v5, p0, Landroidx/compose/foundation/AndroidEdgeEffectOverscrollEffect$effectModifier$1$1;->this$0:Landroidx/compose/foundation/AndroidEdgeEffectOverscrollEffect;
 
     invoke-virtual {p1}, Landroidx/compose/ui/input/pointer/PointerInputChange;->getId-J3iCeTQ()J
@@ -280,7 +280,7 @@
 
     invoke-static {v5, v6}, Landroidx/compose/foundation/AndroidEdgeEffectOverscrollEffect;->access$setPointerId$p(Landroidx/compose/foundation/AndroidEdgeEffectOverscrollEffect;Landroidx/compose/ui/input/pointer/PointerId;)V
 
-    .line 319
+    .line 323
     iget-object v5, p0, Landroidx/compose/foundation/AndroidEdgeEffectOverscrollEffect$effectModifier$1$1;->this$0:Landroidx/compose/foundation/AndroidEdgeEffectOverscrollEffect;
 
     invoke-virtual {p1}, Landroidx/compose/ui/input/pointer/PointerInputChange;->getPosition-F1C5BW0()J
@@ -293,7 +293,7 @@
 
     invoke-static {v5, p1}, Landroidx/compose/foundation/AndroidEdgeEffectOverscrollEffect;->access$setPointerPosition$p(Landroidx/compose/foundation/AndroidEdgeEffectOverscrollEffect;Landroidx/compose/ui/geometry/Offset;)V
 
-    .line 321
+    .line 325
     :cond_4
     move-object p1, p0
 
@@ -319,7 +319,7 @@
 
     move-result-object p1
 
-    .line 591
+    .line 597
     new-instance v5, Ljava/util/ArrayList;
 
     invoke-interface {p1}, Ljava/util/List;->size()I
@@ -328,7 +328,7 @@
 
     invoke-direct {v5, v6}, Ljava/util/ArrayList;-><init>(I)V
 
-    .line 594
+    .line 600
     invoke-interface {p1}, Ljava/util/List;->size()I
 
     move-result v6
@@ -340,24 +340,24 @@
     :goto_2
     if-ge v8, v6, :cond_7
 
-    .line 595
+    .line 601
     invoke-interface {p1, v8}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
     move-result-object v9
 
-    .line 597
+    .line 603
     move-object v10, v9
 
     check-cast v10, Landroidx/compose/ui/input/pointer/PointerInputChange;
 
-    .line 321
+    .line 325
     invoke-virtual {v10}, Landroidx/compose/ui/input/pointer/PointerInputChange;->getPressed()Z
 
     move-result v10
 
     if-eqz v10, :cond_6
 
-    .line 597
+    .line 603
     move-object v10, v5
 
     check-cast v10, Ljava/util/Collection;
@@ -369,14 +369,14 @@
 
     goto :goto_2
 
-    .line 600
+    .line 606
     :cond_7
     check-cast v5, Ljava/util/List;
 
-    .line 325
+    .line 329
     iget-object p1, p0, Landroidx/compose/foundation/AndroidEdgeEffectOverscrollEffect$effectModifier$1$1;->this$0:Landroidx/compose/foundation/AndroidEdgeEffectOverscrollEffect;
 
-    .line 604
+    .line 610
     invoke-interface {v5}, Ljava/util/List;->size()I
 
     move-result v6
@@ -384,17 +384,17 @@
     :goto_3
     if-ge v7, v6, :cond_9
 
-    .line 605
+    .line 611
     invoke-interface {v5, v7}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
     move-result-object v8
 
-    .line 602
+    .line 608
     move-object v9, v8
 
     check-cast v9, Landroidx/compose/ui/input/pointer/PointerInputChange;
 
-    .line 325
+    .line 329
     invoke-virtual {v9}, Landroidx/compose/ui/input/pointer/PointerInputChange;->getId-J3iCeTQ()J
 
     move-result-wide v9
@@ -435,7 +435,7 @@
     :cond_a
     if-eqz v8, :cond_b
 
-    .line 328
+    .line 332
     iget-object p1, p0, Landroidx/compose/foundation/AndroidEdgeEffectOverscrollEffect$effectModifier$1$1;->this$0:Landroidx/compose/foundation/AndroidEdgeEffectOverscrollEffect;
 
     invoke-virtual {v8}, Landroidx/compose/ui/input/pointer/PointerInputChange;->getId-J3iCeTQ()J
@@ -448,7 +448,7 @@
 
     invoke-static {p1, v6}, Landroidx/compose/foundation/AndroidEdgeEffectOverscrollEffect;->access$setPointerId$p(Landroidx/compose/foundation/AndroidEdgeEffectOverscrollEffect;Landroidx/compose/ui/input/pointer/PointerId;)V
 
-    .line 329
+    .line 333
     iget-object p1, p0, Landroidx/compose/foundation/AndroidEdgeEffectOverscrollEffect$effectModifier$1$1;->this$0:Landroidx/compose/foundation/AndroidEdgeEffectOverscrollEffect;
 
     invoke-virtual {v8}, Landroidx/compose/ui/input/pointer/PointerInputChange;->getPosition-F1C5BW0()J
@@ -461,7 +461,7 @@
 
     invoke-static {p1, v6}, Landroidx/compose/foundation/AndroidEdgeEffectOverscrollEffect;->access$setPointerPosition$p(Landroidx/compose/foundation/AndroidEdgeEffectOverscrollEffect;Landroidx/compose/ui/geometry/Offset;)V
 
-    .line 331
+    .line 335
     :cond_b
     check-cast v5, Ljava/util/Collection;
 
@@ -473,12 +473,12 @@
 
     if-nez p1, :cond_4
 
-    .line 332
+    .line 336
     iget-object p0, p0, Landroidx/compose/foundation/AndroidEdgeEffectOverscrollEffect$effectModifier$1$1;->this$0:Landroidx/compose/foundation/AndroidEdgeEffectOverscrollEffect;
 
     invoke-static {p0, v3}, Landroidx/compose/foundation/AndroidEdgeEffectOverscrollEffect;->access$setPointerId$p(Landroidx/compose/foundation/AndroidEdgeEffectOverscrollEffect;Landroidx/compose/ui/input/pointer/PointerId;)V
 
-    .line 335
+    .line 339
     sget-object p0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
 
     return-object p0

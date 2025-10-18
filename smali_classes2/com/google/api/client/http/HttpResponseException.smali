@@ -16,6 +16,8 @@
 
 
 # instance fields
+.field private final attemptCount:I
+
 .field private final content:Ljava/lang/String;
 
 .field private final transient headers:Lcom/google/api/client/http/HttpHeaders;
@@ -29,7 +31,7 @@
 .method public constructor <init>(Lcom/google/api/client/http/HttpResponse;)V
     .locals 1
 
-    .line 63
+    .line 66
     new-instance v0, Lcom/google/api/client/http/HttpResponseException$Builder;
 
     invoke-direct {v0, p1}, Lcom/google/api/client/http/HttpResponseException$Builder;-><init>(Lcom/google/api/client/http/HttpResponse;)V
@@ -42,30 +44,35 @@
 .method protected constructor <init>(Lcom/google/api/client/http/HttpResponseException$Builder;)V
     .locals 1
 
-    .line 71
+    .line 74
     iget-object v0, p1, Lcom/google/api/client/http/HttpResponseException$Builder;->message:Ljava/lang/String;
 
     invoke-direct {p0, v0}, Ljava/io/IOException;-><init>(Ljava/lang/String;)V
 
-    .line 72
+    .line 75
     iget v0, p1, Lcom/google/api/client/http/HttpResponseException$Builder;->statusCode:I
 
     iput v0, p0, Lcom/google/api/client/http/HttpResponseException;->statusCode:I
 
-    .line 73
+    .line 76
     iget-object v0, p1, Lcom/google/api/client/http/HttpResponseException$Builder;->statusMessage:Ljava/lang/String;
 
     iput-object v0, p0, Lcom/google/api/client/http/HttpResponseException;->statusMessage:Ljava/lang/String;
 
-    .line 74
+    .line 77
     iget-object v0, p1, Lcom/google/api/client/http/HttpResponseException$Builder;->headers:Lcom/google/api/client/http/HttpHeaders;
 
     iput-object v0, p0, Lcom/google/api/client/http/HttpResponseException;->headers:Lcom/google/api/client/http/HttpHeaders;
 
-    .line 75
-    iget-object p1, p1, Lcom/google/api/client/http/HttpResponseException$Builder;->content:Ljava/lang/String;
+    .line 78
+    iget-object v0, p1, Lcom/google/api/client/http/HttpResponseException$Builder;->content:Ljava/lang/String;
 
-    iput-object p1, p0, Lcom/google/api/client/http/HttpResponseException;->content:Ljava/lang/String;
+    iput-object v0, p0, Lcom/google/api/client/http/HttpResponseException;->content:Ljava/lang/String;
+
+    .line 79
+    iget p1, p1, Lcom/google/api/client/http/HttpResponseException$Builder;->attemptCount:I
+
+    iput p1, p0, Lcom/google/api/client/http/HttpResponseException;->attemptCount:I
 
     return-void
 .end method
@@ -73,22 +80,22 @@
 .method public static computeMessageBuffer(Lcom/google/api/client/http/HttpResponse;)Ljava/lang/StringBuilder;
     .locals 4
 
-    .line 275
+    .line 303
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
 
-    .line 276
+    .line 304
     invoke-virtual {p0}, Lcom/google/api/client/http/HttpResponse;->getStatusCode()I
 
     move-result v1
 
     if-eqz v1, :cond_0
 
-    .line 278
+    .line 306
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
-    .line 280
+    .line 308
     :cond_0
     invoke-virtual {p0}, Lcom/google/api/client/http/HttpResponse;->getStatusMessage()Ljava/lang/String;
 
@@ -100,14 +107,14 @@
 
     if-eqz v1, :cond_1
 
-    .line 283
+    .line 311
     invoke-virtual {v0, v3}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
 
-    .line 285
+    .line 313
     :cond_1
     invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 287
+    .line 315
     :cond_2
     invoke-virtual {p0}, Lcom/google/api/client/http/HttpResponse;->getRequest()Lcom/google/api/client/http/HttpRequest;
 
@@ -115,7 +122,7 @@
 
     if-eqz p0, :cond_5
 
-    .line 289
+    .line 317
     invoke-virtual {v0}, Ljava/lang/StringBuilder;->length()I
 
     move-result v1
@@ -124,10 +131,10 @@
 
     const/16 v1, 0xa
 
-    .line 290
+    .line 318
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
 
-    .line 292
+    .line 320
     :cond_3
     invoke-virtual {p0}, Lcom/google/api/client/http/HttpRequest;->getRequestMethod()Ljava/lang/String;
 
@@ -135,14 +142,14 @@
 
     if-eqz v1, :cond_4
 
-    .line 294
+    .line 322
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v1
 
     invoke-virtual {v1, v3}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
 
-    .line 296
+    .line 324
     :cond_4
     invoke-virtual {p0}, Lcom/google/api/client/http/HttpRequest;->getUrl()Lcom/google/api/client/http/GenericUrl;
 
@@ -156,10 +163,19 @@
 
 
 # virtual methods
+.method public final getAttemptCount()I
+    .locals 0
+
+    .line 134
+    iget p0, p0, Lcom/google/api/client/http/HttpResponseException;->attemptCount:I
+
+    return p0
+.end method
+
 .method public final getContent()Ljava/lang/String;
     .locals 0
 
-    .line 121
+    .line 125
     iget-object p0, p0, Lcom/google/api/client/http/HttpResponseException;->content:Ljava/lang/String;
 
     return-object p0
@@ -168,7 +184,7 @@
 .method public getHeaders()Lcom/google/api/client/http/HttpHeaders;
     .locals 0
 
-    .line 112
+    .line 116
     iget-object p0, p0, Lcom/google/api/client/http/HttpResponseException;->headers:Lcom/google/api/client/http/HttpHeaders;
 
     return-object p0
@@ -177,7 +193,7 @@
 .method public final getStatusCode()I
     .locals 0
 
-    .line 94
+    .line 98
     iget p0, p0, Lcom/google/api/client/http/HttpResponseException;->statusCode:I
 
     return p0
@@ -186,7 +202,7 @@
 .method public final getStatusMessage()Ljava/lang/String;
     .locals 0
 
-    .line 103
+    .line 107
     iget-object p0, p0, Lcom/google/api/client/http/HttpResponseException;->statusMessage:Ljava/lang/String;
 
     return-object p0
@@ -195,7 +211,7 @@
 .method public final isSuccessStatusCode()Z
     .locals 0
 
-    .line 85
+    .line 89
     iget p0, p0, Lcom/google/api/client/http/HttpResponseException;->statusCode:I
 
     invoke-static {p0}, Lcom/google/api/client/http/HttpStatusCodes;->isSuccess(I)Z

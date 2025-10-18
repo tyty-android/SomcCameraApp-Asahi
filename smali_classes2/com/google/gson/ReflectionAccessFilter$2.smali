@@ -21,7 +21,7 @@
 .method constructor <init>()V
     .locals 0
 
-    .line 130
+    .line 144
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -40,22 +40,31 @@
         }
     .end annotation
 
-    .line 132
+    .line 147
     invoke-static {p1}, Lcom/google/gson/internal/ReflectionAccessFilterHelper;->isJavaType(Ljava/lang/Class;)Z
 
     move-result p0
 
     if-eqz p0, :cond_0
 
-    .line 133
+    .line 148
     sget-object p0, Lcom/google/gson/ReflectionAccessFilter$FilterResult;->BLOCK_ALL:Lcom/google/gson/ReflectionAccessFilter$FilterResult;
 
     goto :goto_0
 
-    .line 134
+    .line 149
     :cond_0
     sget-object p0, Lcom/google/gson/ReflectionAccessFilter$FilterResult;->INDECISIVE:Lcom/google/gson/ReflectionAccessFilter$FilterResult;
 
     :goto_0
+    return-object p0
+.end method
+
+.method public toString()Ljava/lang/String;
+    .locals 0
+
+    .line 154
+    const-string p0, "ReflectionAccessFilter#BLOCK_ALL_JAVA"
+
     return-object p0
 .end method

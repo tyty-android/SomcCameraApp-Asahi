@@ -1,6 +1,6 @@
 .class public interface abstract Landroidx/compose/ui/text/platform/EmojiCompatStatusDelegate;
 .super Ljava/lang/Object;
-.source "EmojiCompatStatus.kt"
+.source "EmojiCompatStatus.android.kt"
 
 
 # annotations

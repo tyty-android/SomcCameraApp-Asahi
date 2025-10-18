@@ -91,30 +91,22 @@
 
 # direct methods
 .method public constructor <init>(Landroid/content/Context;Landroid/view/Window;)V
-    .locals 7
+    .locals 6
 
-    const-string v0, "context"
+    const/4 v4, 0x6
 
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+    const/4 v5, 0x0
 
-    const-string/jumbo v0, "window"
-
-    invoke-static {p2, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const/4 v5, 0x6
-
-    const/4 v6, 0x0
+    const/4 v2, 0x0
 
     const/4 v3, 0x0
 
-    const/4 v4, 0x0
+    move-object v0, p0
 
-    move-object v1, p0
-
-    move-object v2, p1
+    move-object v1, p1
 
     .line 214
-    invoke-direct/range {v1 .. v6}, Landroidx/compose/ui/platform/AbstractComposeView;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;IILkotlin/jvm/internal/DefaultConstructorMarker;)V
+    invoke-direct/range {v0 .. v5}, Landroidx/compose/ui/platform/AbstractComposeView;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;IILkotlin/jvm/internal/DefaultConstructorMarker;)V
 
     .line 213
     iput-object p2, p0, Landroidx/compose/ui/window/DialogLayout;->window:Landroid/view/Window;
@@ -334,11 +326,8 @@
 
     move-result-object p1
 
-    if-nez p1, :cond_2
+    if-eqz p1, :cond_2
 
-    goto :goto_0
-
-    :cond_2
     new-instance v0, Landroidx/compose/ui/window/DialogLayout$Content$4;
 
     invoke-direct {v0, p0, p2}, Landroidx/compose/ui/window/DialogLayout$Content$4;-><init>(Landroidx/compose/ui/window/DialogLayout;I)V
@@ -347,7 +336,7 @@
 
     invoke-interface {p1, v0}, Landroidx/compose/runtime/ScopeUpdateScope;->updateScope(Lkotlin/jvm/functions/Function2;)V
 
-    :goto_0
+    :cond_2
     return-void
 .end method
 
@@ -462,7 +451,7 @@
 .end method
 
 .method public final setContent(Landroidx/compose/runtime/CompositionContext;Lkotlin/jvm/functions/Function2;)V
-    .locals 1
+    .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -476,14 +465,6 @@
             ">;)V"
         }
     .end annotation
-
-    const-string v0, "parent"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string v0, "content"
-
-    invoke-static {p2, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 224
     invoke-virtual {p0, p1}, Landroidx/compose/ui/window/DialogLayout;->setParentCompositionContext(Landroidx/compose/runtime/CompositionContext;)V

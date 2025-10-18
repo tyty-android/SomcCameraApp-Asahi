@@ -17,12 +17,13 @@
 
 .annotation runtime Lkotlin/Metadata;
     d1 = {
-        "\u0000J\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0003\n\u0002\u0010\u0002\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0003\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0008\n\u0000\n\u0002\u0010\u000b\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0005\u0008\u0007\u0018\u0000 \u001c2\u00020\u00012\u00020\u0002:\u0002\u001c\u001dB\u0005\u00a2\u0006\u0002\u0010\u0003J\u0008\u0010\n\u001a\u00020\u000bH\u0016J\u0012\u0010\u000c\u001a\u00020\u000b2\u0008\u0010\r\u001a\u0004\u0018\u00010\u000eH\u0014J\u0008\u0010\u000f\u001a\u00020\u000bH\u0014J\u0018\u0010\u0010\u001a\u00020\u000b2\u0006\u0010\u0011\u001a\u00020\u00122\u0006\u0010\u0013\u001a\u00020\u0014H\u0016J\u0018\u0010\u0015\u001a\u00020\u00162\u0006\u0010\u0017\u001a\u00020\u00142\u0006\u0010\u0018\u001a\u00020\u0019H\u0016J\u0008\u0010\u001a\u001a\u00020\u000bH\u0014J\u0008\u0010\u001b\u001a\u00020\u000bH\u0002R\u0014\u0010\u0004\u001a\u0008\u0018\u00010\u0005R\u00020\u0000X\u0082\u000e\u00a2\u0006\u0002\n\u0000R\u0014\u0010\u0006\u001a\u00020\u00078BX\u0082\u0004\u00a2\u0006\u0006\u001a\u0004\u0008\u0008\u0010\t\u00a8\u0006\u001e"
+        "\u0000H\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0003\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0003\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0005\n\u0002\u0010\u000b\n\u0000\n\u0002\u0010\u0008\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0004\u0008\u0007\u0018\u0000 \u001d2\u00020\u00012\u00020\u0002:\u0002\u001d\u001eB\t\u0008\u0007\u00a2\u0006\u0004\u0008\u0003\u0010\u0004J\u0012\u0010\u000b\u001a\u00020\u000c2\u0008\u0010\r\u001a\u0004\u0018\u00010\u000eH\u0014J\u0008\u0010\u000f\u001a\u00020\u000cH\u0014J\u0008\u0010\u0010\u001a\u00020\u000cH\u0014J\u0008\u0010\u0011\u001a\u00020\u000cH\u0002J\u0008\u0010\u0012\u001a\u00020\u000cH\u0016J\u0018\u0010\u0013\u001a\u00020\u00142\u0006\u0010\u0015\u001a\u00020\u00162\u0006\u0010\u0017\u001a\u00020\u0018H\u0016J\u0018\u0010\u0019\u001a\u00020\u000c2\u0006\u0010\u001a\u001a\u00020\u001b2\u0006\u0010\u001c\u001a\u00020\u0016H\u0016R\u0014\u0010\u0005\u001a\u0008\u0018\u00010\u0006R\u00020\u0000X\u0082\u000e\u00a2\u0006\u0002\n\u0000R\u0014\u0010\u0007\u001a\u00020\u00088BX\u0082\u0004\u00a2\u0006\u0006\u001a\u0004\u0008\t\u0010\n\u00a8\u0006\u001f"
     }
     d2 = {
         "Ljp/co/sony/mc/camera/MemoryRecallActivity;",
         "Landroidx/appcompat/app/AppCompatActivity;",
         "Ljp/co/sony/mc/camera/view/setting/fragment/SettingMessageDialogFragment$OnMessageDialogDismissListener;",
+        "<init>",
         "()V",
         "mScreenOffReceiver",
         "Ljp/co/sony/mc/camera/MemoryRecallActivity$ScreenOffReceiver;",
@@ -30,32 +31,32 @@
         "Ljp/co/sony/mc/camera/view/memoryrecall/viewmodel/MemoryRecallViewModel;",
         "getMrViewModel",
         "()Ljp/co/sony/mc/camera/view/memoryrecall/viewmodel/MemoryRecallViewModel;",
-        "onBackPressed",
-        "",
         "onCreate",
+        "",
         "savedInstanceState",
         "Landroid/os/Bundle;",
+        "onResume",
         "onDestroy",
+        "setupFragment",
+        "onBackPressed",
+        "onKeyDown",
+        "",
+        "keyCode",
+        "",
+        "event",
+        "Landroid/view/KeyEvent;",
         "onDismiss",
         "request",
         "Ljp/co/sony/mc/camera/view/messagedialog/MessageDialogRequest;",
         "what",
-        "",
-        "onKeyDown",
-        "",
-        "keyCode",
-        "event",
-        "Landroid/view/KeyEvent;",
-        "onResume",
-        "setupFragment",
         "Companion",
         "ScreenOffReceiver",
         "SomcCamera_release"
     }
     k = 0x1
     mv = {
-        0x1,
-        0x9,
+        0x2,
+        0x0,
         0x0
     }
     xi = 0x30
@@ -75,6 +76,16 @@
 
 
 # direct methods
+.method public static synthetic $r8$lambda$VovyNvN_9pPhh5iFScpJsB6PpmA(Ljp/co/sony/mc/camera/MemoryRecallActivity;Landroid/view/ViewGroup$MarginLayoutParams;)Lkotlin/Unit;
+    .locals 0
+
+    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/MemoryRecallActivity;->onCreate$lambda$0(Ljp/co/sony/mc/camera/MemoryRecallActivity;Landroid/view/ViewGroup$MarginLayoutParams;)Lkotlin/Unit;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
 .method static constructor <clinit>()V
     .locals 2
 
@@ -123,6 +134,35 @@
     return-object p0
 .end method
 
+.method private static final onCreate$lambda$0(Ljp/co/sony/mc/camera/MemoryRecallActivity;Landroid/view/ViewGroup$MarginLayoutParams;)Lkotlin/Unit;
+    .locals 1
+
+    const-string/jumbo v0, "this$0"
+
+    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+
+    const-string v0, "$this$adjustMargin"
+
+    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 55
+    check-cast p0, Landroid/content/Context;
+
+    .line 54
+    invoke-static {p0}, Ljp/co/sony/mc/camera/view/LayoutDependencyResolver;->getNavigationBarMargin(Landroid/content/Context;)I
+
+    move-result p0
+
+    mul-int/lit8 p0, p0, 0x2
+
+    iput p0, p1, Landroid/view/ViewGroup$MarginLayoutParams;->bottomMargin:I
+
+    .line 60
+    sget-object p0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
+
+    return-object p0
+.end method
+
 .method private final setupFragment()V
     .locals 3
 
@@ -152,9 +192,9 @@
 
     check-cast v1, Landroidx/fragment/app/Fragment;
 
+    .line 101
     const-class v2, Ljp/co/sony/mc/camera/view/memoryrecall/fragment/MemoryRecallFragment;
 
-    .line 101
     const-string v2, "MemoryRecallFragment"
 
     .line 100
@@ -170,18 +210,22 @@
 
 # virtual methods
 .method public onBackPressed()V
-    .locals 2
+    .locals 4
 
     .line 109
     sget-boolean v0, Ljp/co/sony/mc/camera/util/CamLog;->DEBUG:Z
 
+    const/4 v1, 0x0
+
+    const/4 v2, 0x1
+
     if-eqz v0, :cond_0
 
-    const-string v0, "onBackPressed E"
+    new-array v0, v2, [Ljava/lang/String;
 
-    filled-new-array {v0}, [Ljava/lang/String;
+    const-string v3, "onBackPressed E"
 
-    move-result-object v0
+    aput-object v3, v0, v1
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
@@ -191,9 +235,9 @@
 
     invoke-direct {v0}, Landroid/content/Intent;-><init>()V
 
-    const/4 v1, -0x1
+    const/4 v3, -0x1
 
-    invoke-virtual {p0, v1, v0}, Ljp/co/sony/mc/camera/MemoryRecallActivity;->setResult(ILandroid/content/Intent;)V
+    invoke-virtual {p0, v3, v0}, Ljp/co/sony/mc/camera/MemoryRecallActivity;->setResult(ILandroid/content/Intent;)V
 
     .line 112
     invoke-super {p0}, Landroidx/appcompat/app/AppCompatActivity;->onBackPressed()V
@@ -203,11 +247,11 @@
 
     if-eqz p0, :cond_1
 
-    const-string p0, "onBackPressed X"
+    new-array p0, v2, [Ljava/lang/String;
 
-    filled-new-array {p0}, [Ljava/lang/String;
+    const-string v0, "onBackPressed X"
 
-    move-result-object p0
+    aput-object v0, p0, v1
 
     invoke-static {p0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
@@ -216,18 +260,22 @@
 .end method
 
 .method protected onCreate(Landroid/os/Bundle;)V
-    .locals 5
+    .locals 6
 
     .line 43
     sget-boolean v0, Ljp/co/sony/mc/camera/util/CamLog;->DEBUG:Z
 
+    const/4 v1, 0x1
+
+    const/4 v2, 0x0
+
     if-eqz v0, :cond_0
 
-    const-string v0, "onCreate E"
+    new-array v0, v1, [Ljava/lang/String;
 
-    filled-new-array {v0}, [Ljava/lang/String;
+    const-string v3, "onCreate E"
 
-    move-result-object v0
+    aput-object v3, v0, v2
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
@@ -277,13 +325,11 @@
 
     if-eqz v0, :cond_2
 
-    new-instance v1, Ljp/co/sony/mc/camera/MemoryRecallActivity$onCreate$1;
+    new-instance v3, Ljp/co/sony/mc/camera/MemoryRecallActivity$$ExternalSyntheticLambda0;
 
-    invoke-direct {v1, p0}, Ljp/co/sony/mc/camera/MemoryRecallActivity$onCreate$1;-><init>(Ljp/co/sony/mc/camera/MemoryRecallActivity;)V
+    invoke-direct {v3, p0}, Ljp/co/sony/mc/camera/MemoryRecallActivity$$ExternalSyntheticLambda0;-><init>(Ljp/co/sony/mc/camera/MemoryRecallActivity;)V
 
-    check-cast v1, Lkotlin/jvm/functions/Function1;
-
-    invoke-static {v0, v1}, Ljp/co/sony/mc/camera/util/ViewExtensionsKt;->adjustMargin(Landroid/view/View;Lkotlin/jvm/functions/Function1;)V
+    invoke-static {v0, v3}, Ljp/co/sony/mc/camera/util/ViewExtensionsKt;->adjustMargin(Landroid/view/View;Lkotlin/jvm/functions/Function1;)V
 
     .line 63
     :cond_2
@@ -291,9 +337,7 @@
 
     invoke-direct {v0}, Landroid/content/Intent;-><init>()V
 
-    const/4 v1, 0x0
-
-    invoke-virtual {p0, v1, v0}, Ljp/co/sony/mc/camera/MemoryRecallActivity;->setResult(ILandroid/content/Intent;)V
+    invoke-virtual {p0, v2, v0}, Ljp/co/sony/mc/camera/MemoryRecallActivity;->setResult(ILandroid/content/Intent;)V
 
     .line 65
     invoke-static {}, Ljp/co/sony/mc/camera/setting/CameraProSetting;->getInstance()Ljp/co/sony/mc/camera/setting/CameraProSetting;
@@ -301,25 +345,25 @@
     move-result-object v0
 
     .line 66
-    new-instance v2, Landroid/util/Pair;
+    new-instance v3, Landroid/util/Pair;
 
-    sget-object v3, Ljp/co/sony/mc/camera/setting/CommonSettings;->CAPTURING_MODE:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
+    sget-object v4, Ljp/co/sony/mc/camera/setting/CommonSettings;->CAPTURING_MODE:Ljp/co/sony/mc/camera/setting/CommonSettings$Key;
 
-    check-cast v3, Ljp/co/sony/mc/camera/setting/SettingKey$Key;
+    check-cast v4, Ljp/co/sony/mc/camera/setting/SettingKey$Key;
 
-    invoke-virtual {v0, v3}, Ljp/co/sony/mc/camera/setting/CameraProSetting;->get(Ljp/co/sony/mc/camera/setting/SettingKey$Key;)Ljava/lang/Object;
+    invoke-virtual {v0, v4}, Ljp/co/sony/mc/camera/setting/CameraProSetting;->get(Ljp/co/sony/mc/camera/setting/SettingKey$Key;)Ljava/lang/Object;
 
-    move-result-object v3
+    move-result-object v4
 
     .line 67
     invoke-virtual {v0}, Ljp/co/sony/mc/camera/setting/CameraProSetting;->getCurrentCameraId()Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;
 
-    move-result-object v4
+    move-result-object v5
 
     .line 66
-    invoke-direct {v2, v3, v4}, Landroid/util/Pair;-><init>(Ljava/lang/Object;Ljava/lang/Object;)V
+    invoke-direct {v3, v4, v5}, Landroid/util/Pair;-><init>(Ljava/lang/Object;Ljava/lang/Object;)V
 
-    invoke-virtual {v0, v2}, Ljp/co/sony/mc/camera/setting/CameraProSetting;->prepareCameraSetting(Landroid/util/Pair;)Ljp/co/sony/mc/camera/setting/CameraSettingsHolder;
+    invoke-virtual {v0, v3}, Ljp/co/sony/mc/camera/setting/CameraProSetting;->prepareCameraSetting(Landroid/util/Pair;)Ljp/co/sony/mc/camera/setting/CameraSettingsHolder;
 
     .line 69
     invoke-static {p1}, Ljp/co/sony/mc/camera/util/ActivityExtensionsKt;->isActivityPortrait(Landroid/content/Context;)Z
@@ -342,9 +386,9 @@
 
     move-result-object v0
 
-    const-string v2, "isSaveMemoryRecall"
+    const-string v3, "isSaveMemoryRecall"
 
-    invoke-virtual {v0, v2, v1}, Landroid/content/Intent;->getBooleanExtra(Ljava/lang/String;Z)Z
+    invoke-virtual {v0, v3, v2}, Landroid/content/Intent;->getBooleanExtra(Ljava/lang/String;Z)Z
 
     move-result v0
 
@@ -365,11 +409,11 @@
 
     if-eqz p0, :cond_3
 
-    const-string p0, "onCreate X"
+    new-array p0, v1, [Ljava/lang/String;
 
-    filled-new-array {p0}, [Ljava/lang/String;
+    const-string p1, "onCreate X"
 
-    move-result-object p0
+    aput-object p1, p0, v2
 
     invoke-static {p0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
@@ -416,9 +460,9 @@
 
     move-result-object p0
 
+    .line 144
     const-class v0, Ljp/co/sony/mc/camera/view/memoryrecall/fragment/MemoryRecallFragment;
 
-    .line 144
     const-string v0, "MemoryRecallFragment"
 
     .line 143

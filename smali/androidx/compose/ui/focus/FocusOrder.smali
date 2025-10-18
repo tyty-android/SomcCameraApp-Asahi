@@ -89,11 +89,7 @@
 .end method
 
 .method public constructor <init>(Landroidx/compose/ui/focus/FocusProperties;)V
-    .locals 1
-
-    const-string v0, "focusProperties"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+    .locals 0
 
     .line 45
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -211,11 +207,7 @@
 .end method
 
 .method public final setDown(Landroidx/compose/ui/focus/FocusRequester;)V
-    .locals 1
-
-    const-string v0, "down"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+    .locals 0
 
     .line 91
     iget-object p0, p0, Landroidx/compose/ui/focus/FocusOrder;->focusProperties:Landroidx/compose/ui/focus/FocusProperties;
@@ -226,11 +218,7 @@
 .end method
 
 .method public final setEnd(Landroidx/compose/ui/focus/FocusRequester;)V
-    .locals 1
-
-    const-string v0, "end"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+    .locals 0
 
     .line 137
     iget-object p0, p0, Landroidx/compose/ui/focus/FocusOrder;->focusProperties:Landroidx/compose/ui/focus/FocusProperties;
@@ -241,11 +229,7 @@
 .end method
 
 .method public final setLeft(Landroidx/compose/ui/focus/FocusRequester;)V
-    .locals 1
-
-    const-string v0, "left"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+    .locals 0
 
     .line 102
     iget-object p0, p0, Landroidx/compose/ui/focus/FocusOrder;->focusProperties:Landroidx/compose/ui/focus/FocusProperties;
@@ -256,11 +240,7 @@
 .end method
 
 .method public final setNext(Landroidx/compose/ui/focus/FocusRequester;)V
-    .locals 1
-
-    const-string v0, "next"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+    .locals 0
 
     .line 58
     iget-object p0, p0, Landroidx/compose/ui/focus/FocusOrder;->focusProperties:Landroidx/compose/ui/focus/FocusProperties;
@@ -271,11 +251,7 @@
 .end method
 
 .method public final setPrevious(Landroidx/compose/ui/focus/FocusRequester;)V
-    .locals 1
-
-    const-string v0, "previous"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+    .locals 0
 
     .line 69
     iget-object p0, p0, Landroidx/compose/ui/focus/FocusOrder;->focusProperties:Landroidx/compose/ui/focus/FocusProperties;
@@ -286,11 +262,7 @@
 .end method
 
 .method public final setRight(Landroidx/compose/ui/focus/FocusRequester;)V
-    .locals 1
-
-    const-string v0, "right"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+    .locals 0
 
     .line 113
     iget-object p0, p0, Landroidx/compose/ui/focus/FocusOrder;->focusProperties:Landroidx/compose/ui/focus/FocusProperties;
@@ -301,11 +273,7 @@
 .end method
 
 .method public final setStart(Landroidx/compose/ui/focus/FocusRequester;)V
-    .locals 1
-
-    const-string/jumbo v0, "start"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+    .locals 0
 
     .line 125
     iget-object p0, p0, Landroidx/compose/ui/focus/FocusOrder;->focusProperties:Landroidx/compose/ui/focus/FocusProperties;
@@ -316,11 +284,7 @@
 .end method
 
 .method public final setUp(Landroidx/compose/ui/focus/FocusRequester;)V
-    .locals 1
-
-    const-string/jumbo v0, "up"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+    .locals 0
 
     .line 80
     iget-object p0, p0, Landroidx/compose/ui/focus/FocusOrder;->focusProperties:Landroidx/compose/ui/focus/FocusProperties;

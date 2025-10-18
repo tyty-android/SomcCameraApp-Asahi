@@ -79,7 +79,7 @@
 .method public bridge synthetic invoke(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
 
-    .line 433
+    .line 437
     check-cast p1, Landroidx/compose/ui/node/BackwardsCompatNode;
 
     invoke-virtual {p0, p1}, Landroidx/compose/ui/node/BackwardsCompatNodeKt$onDrawCacheReadsChanged$1;->invoke(Landroidx/compose/ui/node/BackwardsCompatNode;)V
@@ -92,11 +92,7 @@
 .method public final invoke(Landroidx/compose/ui/node/BackwardsCompatNode;)V
     .locals 0
 
-    const-string p0, "it"
-
-    invoke-static {p1, p0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 434
+    .line 438
     invoke-virtual {p1}, Landroidx/compose/ui/node/BackwardsCompatNode;->onDrawCacheReadsChanged$ui_release()V
 
     return-void

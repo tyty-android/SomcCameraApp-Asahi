@@ -1,6 +1,6 @@
 .class public final Landroidx/compose/ui/text/platform/DefaultImpl$getFontLoadState$initCallback$1;
 .super Landroidx/emoji2/text/EmojiCompat$InitCallback;
-.source "EmojiCompatStatus.kt"
+.source "EmojiCompatStatus.android.kt"
 
 
 # annotations
@@ -83,7 +83,7 @@
     .line 103
     iget-object p0, p0, Landroidx/compose/ui/text/platform/DefaultImpl$getFontLoadState$initCallback$1;->this$0:Landroidx/compose/ui/text/platform/DefaultImpl;
 
-    invoke-static {}, Landroidx/compose/ui/text/platform/EmojiCompatStatusKt;->access$getFalsey$p()Landroidx/compose/ui/text/platform/ImmutableBool;
+    invoke-static {}, Landroidx/compose/ui/text/platform/EmojiCompatStatus_androidKt;->access$getFalsey$p()Landroidx/compose/ui/text/platform/ImmutableBool;
 
     move-result-object p1
 

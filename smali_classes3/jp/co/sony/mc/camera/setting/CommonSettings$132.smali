@@ -21,7 +21,7 @@
 .method constructor <init>()V
     .locals 0
 
-    .line 1343
+    .line 1349
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -42,8 +42,8 @@
         }
     .end annotation
 
-    .line 1347
-    invoke-static {}, Ljp/co/sony/mc/camera/configuration/parameters/StreamingConnectMode;->getOptions()[Ljp/co/sony/mc/camera/configuration/parameters/StreamingConnectMode;
+    .line 1353
+    invoke-static {}, Ljp/co/sony/mc/camera/configuration/parameters/EnduranceMode;->values()[Ljp/co/sony/mc/camera/configuration/parameters/EnduranceMode;
 
     move-result-object p0
 

@@ -32,6 +32,8 @@
 
 .field public static final enum FOURK_STORAGE_EXPLANATORY_FOR_VIDEOSIZE:Ljp/co/sony/mc/camera/setting/MessageType;
 
+.field public static final enum GIMBAL_INTRODUCTION:Ljp/co/sony/mc/camera/setting/MessageType;
+
 .field public static final enum NO_MESSAGE:Ljp/co/sony/mc/camera/setting/MessageType;
 
 .field public static final enum PHOTOS_TAKEN_IN_PRO_MODE:Ljp/co/sony/mc/camera/setting/MessageType;
@@ -76,6 +78,10 @@
 
 .field public static final enum VIDEOS_TAKEN_IN_PRO_MODE:Ljp/co/sony/mc/camera/setting/MessageType;
 
+.field public static final enum VIDEO_AUTO_FRAMING_MODE_FIRST_IN_DIALOG:Ljp/co/sony/mc/camera/setting/MessageType;
+
+.field public static final enum VIDEO_GIMBAL_MODE_FIRST_IN_DIALOG:Ljp/co/sony/mc/camera/setting/MessageType;
+
 .field public static final enum VIDEO_HDR_CAUTION:Ljp/co/sony/mc/camera/setting/MessageType;
 
 
@@ -87,7 +93,7 @@
 
 # direct methods
 .method private static synthetic $values()[Ljp/co/sony/mc/camera/setting/MessageType;
-    .locals 31
+    .locals 34
 
     .line 9
     sget-object v0, Ljp/co/sony/mc/camera/setting/MessageType;->NO_MESSAGE:Ljp/co/sony/mc/camera/setting/MessageType;
@@ -144,15 +150,21 @@
 
     sget-object v26, Ljp/co/sony/mc/camera/setting/MessageType;->PRO_VIDEO_MODE_FIRST_IN_DIALOG:Ljp/co/sony/mc/camera/setting/MessageType;
 
-    sget-object v27, Ljp/co/sony/mc/camera/setting/MessageType;->SHUTTER_SPEED_FOCUS_GUIDE:Ljp/co/sony/mc/camera/setting/MessageType;
+    sget-object v27, Ljp/co/sony/mc/camera/setting/MessageType;->VIDEO_AUTO_FRAMING_MODE_FIRST_IN_DIALOG:Ljp/co/sony/mc/camera/setting/MessageType;
 
-    sget-object v28, Ljp/co/sony/mc/camera/setting/MessageType;->PHOTOS_TAKEN_IN_PRO_MODE:Ljp/co/sony/mc/camera/setting/MessageType;
+    sget-object v28, Ljp/co/sony/mc/camera/setting/MessageType;->VIDEO_GIMBAL_MODE_FIRST_IN_DIALOG:Ljp/co/sony/mc/camera/setting/MessageType;
 
-    sget-object v29, Ljp/co/sony/mc/camera/setting/MessageType;->VIDEOS_TAKEN_IN_PRO_MODE:Ljp/co/sony/mc/camera/setting/MessageType;
+    sget-object v29, Ljp/co/sony/mc/camera/setting/MessageType;->SHUTTER_SPEED_FOCUS_GUIDE:Ljp/co/sony/mc/camera/setting/MessageType;
 
-    sget-object v30, Ljp/co/sony/mc/camera/setting/MessageType;->FOCUS_MAGNIFICATION_INSTRUCTION:Ljp/co/sony/mc/camera/setting/MessageType;
+    sget-object v30, Ljp/co/sony/mc/camera/setting/MessageType;->PHOTOS_TAKEN_IN_PRO_MODE:Ljp/co/sony/mc/camera/setting/MessageType;
 
-    filled-new-array/range {v0 .. v30}, [Ljp/co/sony/mc/camera/setting/MessageType;
+    sget-object v31, Ljp/co/sony/mc/camera/setting/MessageType;->VIDEOS_TAKEN_IN_PRO_MODE:Ljp/co/sony/mc/camera/setting/MessageType;
+
+    sget-object v32, Ljp/co/sony/mc/camera/setting/MessageType;->FOCUS_MAGNIFICATION_INSTRUCTION:Ljp/co/sony/mc/camera/setting/MessageType;
+
+    sget-object v33, Ljp/co/sony/mc/camera/setting/MessageType;->GIMBAL_INTRODUCTION:Ljp/co/sony/mc/camera/setting/MessageType;
+
+    filled-new-array/range {v0 .. v33}, [Ljp/co/sony/mc/camera/setting/MessageType;
 
     move-result-object v0
 
@@ -407,7 +419,7 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/setting/MessageType;->RECOMMENDED_SETTINGS_NOTIFICATION:Ljp/co/sony/mc/camera/setting/MessageType;
 
-    .line 113
+    .line 114
     new-instance v0, Ljp/co/sony/mc/camera/setting/MessageType;
 
     const/16 v1, 0x13
@@ -420,7 +432,7 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/setting/MessageType;->RECOMMENDED_SETTINGS_NOTIFICATION_COOLING_MODE:Ljp/co/sony/mc/camera/setting/MessageType;
 
-    .line 118
+    .line 120
     new-instance v0, Ljp/co/sony/mc/camera/setting/MessageType;
 
     const/16 v1, 0x14
@@ -433,7 +445,7 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/setting/MessageType;->STREAMING_PERMISSIONS:Ljp/co/sony/mc/camera/setting/MessageType;
 
-    .line 123
+    .line 125
     new-instance v0, Ljp/co/sony/mc/camera/setting/MessageType;
 
     const/16 v1, 0x15
@@ -446,7 +458,7 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/setting/MessageType;->STREAMING_NOTES_ON_USE_CHECK:Ljp/co/sony/mc/camera/setting/MessageType;
 
-    .line 128
+    .line 130
     new-instance v0, Ljp/co/sony/mc/camera/setting/MessageType;
 
     const/16 v1, 0x16
@@ -459,7 +471,7 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/setting/MessageType;->STREAMING_PRIVACY_POLICY_CHECK:Ljp/co/sony/mc/camera/setting/MessageType;
 
-    .line 134
+    .line 136
     new-instance v0, Ljp/co/sony/mc/camera/setting/MessageType;
 
     const/16 v1, 0x17
@@ -472,7 +484,7 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/setting/MessageType;->TOUCH_AND_OBJECT_TRACKING_OPERATION_NOTES:Ljp/co/sony/mc/camera/setting/MessageType;
 
-    .line 139
+    .line 141
     new-instance v0, Ljp/co/sony/mc/camera/setting/MessageType;
 
     const/16 v1, 0x18
@@ -485,7 +497,7 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/setting/MessageType;->QUICK_RECORD_OPERATION_NOTES:Ljp/co/sony/mc/camera/setting/MessageType;
 
-    .line 144
+    .line 146
     new-instance v0, Ljp/co/sony/mc/camera/setting/MessageType;
 
     const/16 v1, 0x19
@@ -498,7 +510,7 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/setting/MessageType;->PRO_PHOTO_MODE_FIRST_IN_DIALOG:Ljp/co/sony/mc/camera/setting/MessageType;
 
-    .line 149
+    .line 151
     new-instance v0, Ljp/co/sony/mc/camera/setting/MessageType;
 
     const/16 v1, 0x1a
@@ -511,10 +523,36 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/setting/MessageType;->PRO_VIDEO_MODE_FIRST_IN_DIALOG:Ljp/co/sony/mc/camera/setting/MessageType;
 
-    .line 154
+    .line 156
     new-instance v0, Ljp/co/sony/mc/camera/setting/MessageType;
 
     const/16 v1, 0x1b
+
+    const-string v2, "do-not-show-again-video-auto-framing-mode-first-in-dialog"
+
+    const-string v4, "VIDEO_AUTO_FRAMING_MODE_FIRST_IN_DIALOG"
+
+    invoke-direct {v0, v4, v1, v2, v3}, Ljp/co/sony/mc/camera/setting/MessageType;-><init>(Ljava/lang/String;ILjava/lang/String;Z)V
+
+    sput-object v0, Ljp/co/sony/mc/camera/setting/MessageType;->VIDEO_AUTO_FRAMING_MODE_FIRST_IN_DIALOG:Ljp/co/sony/mc/camera/setting/MessageType;
+
+    .line 162
+    new-instance v0, Ljp/co/sony/mc/camera/setting/MessageType;
+
+    const/16 v1, 0x1c
+
+    const-string v2, "do-not-show-again-video-gimbal-mode-first-in-dialog"
+
+    const-string v4, "VIDEO_GIMBAL_MODE_FIRST_IN_DIALOG"
+
+    invoke-direct {v0, v4, v1, v2, v3}, Ljp/co/sony/mc/camera/setting/MessageType;-><init>(Ljava/lang/String;ILjava/lang/String;Z)V
+
+    sput-object v0, Ljp/co/sony/mc/camera/setting/MessageType;->VIDEO_GIMBAL_MODE_FIRST_IN_DIALOG:Ljp/co/sony/mc/camera/setting/MessageType;
+
+    .line 168
+    new-instance v0, Ljp/co/sony/mc/camera/setting/MessageType;
+
+    const/16 v1, 0x1d
 
     const-string v2, "do-not-show-again-adjust-ss-focus-setting-guide"
 
@@ -524,10 +562,10 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/setting/MessageType;->SHUTTER_SPEED_FOCUS_GUIDE:Ljp/co/sony/mc/camera/setting/MessageType;
 
-    .line 159
+    .line 173
     new-instance v0, Ljp/co/sony/mc/camera/setting/MessageType;
 
-    const/16 v1, 0x1c
+    const/16 v1, 0x1e
 
     const-string v2, "photos_taken_in_pro_mode"
 
@@ -537,10 +575,10 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/setting/MessageType;->PHOTOS_TAKEN_IN_PRO_MODE:Ljp/co/sony/mc/camera/setting/MessageType;
 
-    .line 164
+    .line 178
     new-instance v0, Ljp/co/sony/mc/camera/setting/MessageType;
 
-    const/16 v1, 0x1d
+    const/16 v1, 0x1f
 
     const-string/jumbo v2, "videos_taken_in_pro_mode"
 
@@ -550,10 +588,10 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/setting/MessageType;->VIDEOS_TAKEN_IN_PRO_MODE:Ljp/co/sony/mc/camera/setting/MessageType;
 
-    .line 169
+    .line 183
     new-instance v0, Ljp/co/sony/mc/camera/setting/MessageType;
 
-    const/16 v1, 0x1e
+    const/16 v1, 0x20
 
     const-string v2, "focus-magnification-instruction"
 
@@ -562,6 +600,19 @@
     invoke-direct {v0, v4, v1, v2, v3}, Ljp/co/sony/mc/camera/setting/MessageType;-><init>(Ljava/lang/String;ILjava/lang/String;Z)V
 
     sput-object v0, Ljp/co/sony/mc/camera/setting/MessageType;->FOCUS_MAGNIFICATION_INSTRUCTION:Ljp/co/sony/mc/camera/setting/MessageType;
+
+    .line 188
+    new-instance v0, Ljp/co/sony/mc/camera/setting/MessageType;
+
+    const/16 v1, 0x21
+
+    const-string v2, "do-not-show-again-gimbal-introduction"
+
+    const-string v4, "GIMBAL_INTRODUCTION"
+
+    invoke-direct {v0, v4, v1, v2, v3}, Ljp/co/sony/mc/camera/setting/MessageType;-><init>(Ljava/lang/String;ILjava/lang/String;Z)V
+
+    sput-object v0, Ljp/co/sony/mc/camera/setting/MessageType;->GIMBAL_INTRODUCTION:Ljp/co/sony/mc/camera/setting/MessageType;
 
     .line 9
     invoke-static {}, Ljp/co/sony/mc/camera/setting/MessageType;->$values()[Ljp/co/sony/mc/camera/setting/MessageType;
@@ -583,13 +634,13 @@
         }
     .end annotation
 
-    .line 172
+    .line 191
     invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
-    .line 173
+    .line 192
     iput-object p3, p0, Ljp/co/sony/mc/camera/setting/MessageType;->mKey:Ljava/lang/String;
 
-    .line 174
+    .line 193
     iput-boolean p4, p0, Ljp/co/sony/mc/camera/setting/MessageType;->mIsPrefix:Z
 
     return-void
@@ -630,7 +681,7 @@
 .method getKey()Ljava/lang/String;
     .locals 0
 
-    .line 178
+    .line 197
     iget-object p0, p0, Ljp/co/sony/mc/camera/setting/MessageType;->mKey:Ljava/lang/String;
 
     return-object p0
@@ -639,7 +690,7 @@
 .method isPrefix()Z
     .locals 0
 
-    .line 182
+    .line 201
     iget-boolean p0, p0, Ljp/co/sony/mc/camera/setting/MessageType;->mIsPrefix:Z
 
     return p0

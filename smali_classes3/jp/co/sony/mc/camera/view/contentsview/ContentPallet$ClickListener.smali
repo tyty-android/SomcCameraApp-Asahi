@@ -101,7 +101,7 @@
     .line 316
     iget-object p0, p0, Ljp/co/sony/mc/camera/view/contentsview/ContentPallet$ClickListener;->this$0:Ljp/co/sony/mc/camera/view/contentsview/ContentPallet;
 
-    const p1, 0x7f090139
+    const p1, 0x7f09013b
 
     invoke-virtual {p0, p1}, Ljp/co/sony/mc/camera/view/contentsview/ContentPallet;->findViewById(I)Landroid/view/View;
 

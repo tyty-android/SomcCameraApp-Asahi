@@ -52,17 +52,20 @@
     c = "androidx.compose.foundation.gestures.DefaultFlingBehavior$performFling$2"
     f = "Scrollable.kt"
     i = {
+        0x0,
         0x0
     }
     l = {
-        0x25b
+        0x3c5
     }
     m = "invokeSuspend"
     n = {
-        "velocityLeft"
+        "velocityLeft",
+        "animationState"
     }
     s = {
-        "L$0"
+        "L$0",
+        "L$1"
     }
 .end annotation
 
@@ -73,6 +76,8 @@
 .field final synthetic $this_performFling:Landroidx/compose/foundation/gestures/ScrollScope;
 
 .field L$0:Ljava/lang/Object;
+
+.field L$1:Ljava/lang/Object;
 
 .field label:I
 
@@ -190,7 +195,7 @@
 
     move-result-object v1
 
-    .line 596
+    .line 956
     iget v2, v0, Landroidx/compose/foundation/gestures/DefaultFlingBehavior$performFling$2;->label:I
 
     const/4 v3, 0x1
@@ -199,11 +204,18 @@
 
     if-ne v2, v3, :cond_0
 
+    iget-object v1, v0, Landroidx/compose/foundation/gestures/DefaultFlingBehavior$performFling$2;->L$1:Ljava/lang/Object;
+
+    check-cast v1, Landroidx/compose/animation/core/AnimationState;
+
     iget-object v0, v0, Landroidx/compose/foundation/gestures/DefaultFlingBehavior$performFling$2;->L$0:Ljava/lang/Object;
 
     check-cast v0, Lkotlin/jvm/internal/Ref$FloatRef;
 
+    :try_start_0
     invoke-static/range {p1 .. p1}, Lkotlin/ResultKt;->throwOnFailure(Ljava/lang/Object;)V
+    :try_end_0
+    .catch Ljava/util/concurrent/CancellationException; {:try_start_0 .. :try_end_0} :catch_1
 
     goto :goto_0
 
@@ -219,7 +231,7 @@
     :cond_1
     invoke-static/range {p1 .. p1}, Lkotlin/ResultKt;->throwOnFailure(Ljava/lang/Object;)V
 
-    .line 597
+    .line 957
     iget v2, v0, Landroidx/compose/foundation/gestures/DefaultFlingBehavior$performFling$2;->$initialVelocity:F
 
     invoke-static {v2}, Ljava/lang/Math;->abs(F)F
@@ -232,7 +244,7 @@
 
     if-lez v2, :cond_3
 
-    .line 598
+    .line 958
     new-instance v2, Lkotlin/jvm/internal/Ref$FloatRef;
 
     invoke-direct {v2}, Lkotlin/jvm/internal/Ref$FloatRef;-><init>()V
@@ -241,12 +253,12 @@
 
     iput v4, v2, Lkotlin/jvm/internal/Ref$FloatRef;->element:F
 
-    .line 599
+    .line 959
     new-instance v4, Lkotlin/jvm/internal/Ref$FloatRef;
 
     invoke-direct {v4}, Lkotlin/jvm/internal/Ref$FloatRef;-><init>()V
 
-    .line 602
+    .line 962
     iget v6, v0, Landroidx/compose/foundation/gestures/DefaultFlingBehavior$performFling$2;->$initialVelocity:F
 
     const/16 v12, 0x1c
@@ -261,27 +273,28 @@
 
     const/4 v11, 0x0
 
-    .line 600
+    .line 960
     invoke-static/range {v5 .. v13}, Landroidx/compose/animation/core/AnimationStateKt;->AnimationState$default(FFJJZILjava/lang/Object;)Landroidx/compose/animation/core/AnimationState;
 
-    move-result-object v14
+    move-result-object v5
 
-    .line 603
-    iget-object v5, v0, Landroidx/compose/foundation/gestures/DefaultFlingBehavior$performFling$2;->this$0:Landroidx/compose/foundation/gestures/DefaultFlingBehavior;
+    .line 965
+    :try_start_1
+    iget-object v6, v0, Landroidx/compose/foundation/gestures/DefaultFlingBehavior$performFling$2;->this$0:Landroidx/compose/foundation/gestures/DefaultFlingBehavior;
 
-    invoke-static {v5}, Landroidx/compose/foundation/gestures/DefaultFlingBehavior;->access$getFlingDecay$p(Landroidx/compose/foundation/gestures/DefaultFlingBehavior;)Landroidx/compose/animation/core/DecayAnimationSpec;
+    invoke-virtual {v6}, Landroidx/compose/foundation/gestures/DefaultFlingBehavior;->getFlingDecay()Landroidx/compose/animation/core/DecayAnimationSpec;
 
     move-result-object v15
 
-    new-instance v5, Landroidx/compose/foundation/gestures/DefaultFlingBehavior$performFling$2$1;
+    new-instance v6, Landroidx/compose/foundation/gestures/DefaultFlingBehavior$performFling$2$1;
 
-    iget-object v6, v0, Landroidx/compose/foundation/gestures/DefaultFlingBehavior$performFling$2;->$this_performFling:Landroidx/compose/foundation/gestures/ScrollScope;
+    iget-object v7, v0, Landroidx/compose/foundation/gestures/DefaultFlingBehavior$performFling$2;->$this_performFling:Landroidx/compose/foundation/gestures/ScrollScope;
 
-    iget-object v7, v0, Landroidx/compose/foundation/gestures/DefaultFlingBehavior$performFling$2;->this$0:Landroidx/compose/foundation/gestures/DefaultFlingBehavior;
+    iget-object v8, v0, Landroidx/compose/foundation/gestures/DefaultFlingBehavior$performFling$2;->this$0:Landroidx/compose/foundation/gestures/DefaultFlingBehavior;
 
-    invoke-direct {v5, v4, v6, v2, v7}, Landroidx/compose/foundation/gestures/DefaultFlingBehavior$performFling$2$1;-><init>(Lkotlin/jvm/internal/Ref$FloatRef;Landroidx/compose/foundation/gestures/ScrollScope;Lkotlin/jvm/internal/Ref$FloatRef;Landroidx/compose/foundation/gestures/DefaultFlingBehavior;)V
+    invoke-direct {v6, v4, v7, v2, v8}, Landroidx/compose/foundation/gestures/DefaultFlingBehavior$performFling$2$1;-><init>(Lkotlin/jvm/internal/Ref$FloatRef;Landroidx/compose/foundation/gestures/ScrollScope;Lkotlin/jvm/internal/Ref$FloatRef;Landroidx/compose/foundation/gestures/DefaultFlingBehavior;)V
 
-    move-object/from16 v17, v5
+    move-object/from16 v17, v6
 
     check-cast v17, Lkotlin/jvm/functions/Function1;
 
@@ -291,6 +304,8 @@
 
     iput-object v2, v0, Landroidx/compose/foundation/gestures/DefaultFlingBehavior$performFling$2;->L$0:Ljava/lang/Object;
 
+    iput-object v5, v0, Landroidx/compose/foundation/gestures/DefaultFlingBehavior$performFling$2;->L$1:Ljava/lang/Object;
+
     iput v3, v0, Landroidx/compose/foundation/gestures/DefaultFlingBehavior$performFling$2;->label:I
 
     const/16 v16, 0x0
@@ -299,9 +314,13 @@
 
     const/16 v20, 0x0
 
+    move-object v14, v5
+
     invoke-static/range {v14 .. v20}, Landroidx/compose/animation/core/SuspendAnimationKt;->animateDecay$default(Landroidx/compose/animation/core/AnimationState;Landroidx/compose/animation/core/DecayAnimationSpec;ZLkotlin/jvm/functions/Function1;Lkotlin/coroutines/Continuation;ILjava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v0
+    :try_end_1
+    .catch Ljava/util/concurrent/CancellationException; {:try_start_1 .. :try_end_1} :catch_0
 
     if-ne v0, v1, :cond_2
 
@@ -310,13 +329,34 @@
     :cond_2
     move-object v0, v2
 
-    .line 612
+    goto :goto_0
+
+    :catch_0
+    move-object v0, v2
+
+    move-object v1, v5
+
+    .line 975
+    :catch_1
+    invoke-virtual {v1}, Landroidx/compose/animation/core/AnimationState;->getVelocity()Ljava/lang/Object;
+
+    move-result-object v1
+
+    check-cast v1, Ljava/lang/Number;
+
+    invoke-virtual {v1}, Ljava/lang/Number;->floatValue()F
+
+    move-result v1
+
+    iput v1, v0, Lkotlin/jvm/internal/Ref$FloatRef;->element:F
+
+    .line 977
     :goto_0
     iget v0, v0, Lkotlin/jvm/internal/Ref$FloatRef;->element:F
 
     goto :goto_1
 
-    .line 614
+    .line 979
     :cond_3
     iget v0, v0, Landroidx/compose/foundation/gestures/DefaultFlingBehavior$performFling$2;->$initialVelocity:F
 

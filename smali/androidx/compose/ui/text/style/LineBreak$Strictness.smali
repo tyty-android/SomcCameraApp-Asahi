@@ -21,7 +21,7 @@
 
 .annotation runtime Lkotlin/Metadata;
     d1 = {
-        "\u0000\"\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0010\u0008\n\u0002\u0008\u0003\n\u0002\u0010\u000b\n\u0002\u0008\u0006\n\u0002\u0010\u000e\n\u0002\u0008\u0004\u0008\u0087@\u0018\u0000 \u00112\u00020\u0001:\u0001\u0011B\u0014\u0008\u0000\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u00f8\u0001\u0000\u00a2\u0006\u0004\u0008\u0004\u0010\u0005J\u001a\u0010\u0006\u001a\u00020\u00072\u0008\u0010\u0008\u001a\u0004\u0018\u00010\u0001H\u00d6\u0003\u00a2\u0006\u0004\u0008\t\u0010\nJ\u0010\u0010\u000b\u001a\u00020\u0003H\u00d6\u0001\u00a2\u0006\u0004\u0008\u000c\u0010\u0005J\u000f\u0010\r\u001a\u00020\u000eH\u0016\u00a2\u0006\u0004\u0008\u000f\u0010\u0010R\u000e\u0010\u0002\u001a\u00020\u0003X\u0080\u0004\u00a2\u0006\u0002\n\u0000\u0088\u0001\u0002\u0092\u0001\u00020\u0003\u00f8\u0001\u0000\u0082\u0002\u0004\n\u0002\u0008\u0019\u00a8\u0006\u0012"
+        "\u0000\"\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0010\u0008\n\u0002\u0008\u0003\n\u0002\u0010\u000b\n\u0002\u0008\u0006\n\u0002\u0010\u000e\n\u0002\u0008\u0004\u0008\u0087@\u0018\u0000 \u00112\u00020\u0001:\u0001\u0011B\u0011\u0008\u0000\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u00a2\u0006\u0004\u0008\u0004\u0010\u0005J\u001a\u0010\u0006\u001a\u00020\u00072\u0008\u0010\u0008\u001a\u0004\u0018\u00010\u0001H\u00d6\u0003\u00a2\u0006\u0004\u0008\t\u0010\nJ\u0010\u0010\u000b\u001a\u00020\u0003H\u00d6\u0001\u00a2\u0006\u0004\u0008\u000c\u0010\u0005J\u000f\u0010\r\u001a\u00020\u000eH\u0016\u00a2\u0006\u0004\u0008\u000f\u0010\u0010R\u000e\u0010\u0002\u001a\u00020\u0003X\u0080\u0004\u00a2\u0006\u0002\n\u0000\u0088\u0001\u0002\u0092\u0001\u00020\u0003\u00a8\u0006\u0012"
     }
     d2 = {
         "Landroidx/compose/ui/text/style/LineBreak$Strictness;",
@@ -68,6 +68,8 @@
 
 .field private static final Strict:I
 
+.field private static final Unspecified:I
+
 
 # instance fields
 .field private final value:I
@@ -87,7 +89,7 @@
 
     const/4 v0, 0x1
 
-    .line 229
+    .line 253
     invoke-static {v0}, Landroidx/compose/ui/text/style/LineBreak$Strictness;->constructor-impl(I)I
 
     move-result v0
@@ -96,7 +98,7 @@
 
     const/4 v0, 0x2
 
-    .line 236
+    .line 260
     invoke-static {v0}, Landroidx/compose/ui/text/style/LineBreak$Strictness;->constructor-impl(I)I
 
     move-result v0
@@ -105,7 +107,7 @@
 
     const/4 v0, 0x3
 
-    .line 244
+    .line 268
     invoke-static {v0}, Landroidx/compose/ui/text/style/LineBreak$Strictness;->constructor-impl(I)I
 
     move-result v0
@@ -114,12 +116,21 @@
 
     const/4 v0, 0x4
 
-    .line 252
+    .line 276
     invoke-static {v0}, Landroidx/compose/ui/text/style/LineBreak$Strictness;->constructor-impl(I)I
 
     move-result v0
 
     sput v0, Landroidx/compose/ui/text/style/LineBreak$Strictness;->Strict:I
+
+    const/4 v0, 0x0
+
+    .line 282
+    invoke-static {v0}, Landroidx/compose/ui/text/style/LineBreak$Strictness;->constructor-impl(I)I
+
+    move-result v0
+
+    sput v0, Landroidx/compose/ui/text/style/LineBreak$Strictness;->Unspecified:I
 
     return-void
 .end method
@@ -127,7 +138,7 @@
 .method private synthetic constructor <init>(I)V
     .locals 0
 
-    .line 224
+    .line 248
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     iput p1, p0, Landroidx/compose/ui/text/style/LineBreak$Strictness;->value:I
@@ -138,7 +149,7 @@
 .method public static final synthetic access$getDefault$cp()I
     .locals 1
 
-    .line 223
+    .line 247
     sget v0, Landroidx/compose/ui/text/style/LineBreak$Strictness;->Default:I
 
     return v0
@@ -147,7 +158,7 @@
 .method public static final synthetic access$getLoose$cp()I
     .locals 1
 
-    .line 223
+    .line 247
     sget v0, Landroidx/compose/ui/text/style/LineBreak$Strictness;->Loose:I
 
     return v0
@@ -156,7 +167,7 @@
 .method public static final synthetic access$getNormal$cp()I
     .locals 1
 
-    .line 223
+    .line 247
     sget v0, Landroidx/compose/ui/text/style/LineBreak$Strictness;->Normal:I
 
     return v0
@@ -165,8 +176,17 @@
 .method public static final synthetic access$getStrict$cp()I
     .locals 1
 
-    .line 223
+    .line 247
     sget v0, Landroidx/compose/ui/text/style/LineBreak$Strictness;->Strict:I
+
+    return v0
+.end method
+
+.method public static final synthetic access$getUnspecified$cp()I
+    .locals 1
+
+    .line 247
+    sget v0, Landroidx/compose/ui/text/style/LineBreak$Strictness;->Unspecified:I
 
     return v0
 .end method
@@ -244,7 +264,7 @@
 .method public static toString-impl(I)Ljava/lang/String;
     .locals 1
 
-    .line 256
+    .line 286
     sget v0, Landroidx/compose/ui/text/style/LineBreak$Strictness;->Default:I
 
     invoke-static {p0, v0}, Landroidx/compose/ui/text/style/LineBreak$Strictness;->equals-impl0(II)Z
@@ -257,7 +277,7 @@
 
     goto :goto_0
 
-    .line 257
+    .line 287
     :cond_0
     sget v0, Landroidx/compose/ui/text/style/LineBreak$Strictness;->Loose:I
 
@@ -271,7 +291,7 @@
 
     goto :goto_0
 
-    .line 258
+    .line 288
     :cond_1
     sget v0, Landroidx/compose/ui/text/style/LineBreak$Strictness;->Normal:I
 
@@ -285,22 +305,36 @@
 
     goto :goto_0
 
-    .line 259
+    .line 289
     :cond_2
     sget v0, Landroidx/compose/ui/text/style/LineBreak$Strictness;->Strict:I
 
     invoke-static {p0, v0}, Landroidx/compose/ui/text/style/LineBreak$Strictness;->equals-impl0(II)Z
 
-    move-result p0
+    move-result v0
 
-    if-eqz p0, :cond_3
+    if-eqz v0, :cond_3
 
     const-string p0, "Strictness.Strict"
 
     goto :goto_0
 
-    .line 260
+    .line 290
     :cond_3
+    sget v0, Landroidx/compose/ui/text/style/LineBreak$Strictness;->Unspecified:I
+
+    invoke-static {p0, v0}, Landroidx/compose/ui/text/style/LineBreak$Strictness;->equals-impl0(II)Z
+
+    move-result p0
+
+    if-eqz p0, :cond_4
+
+    const-string p0, "Strictness.Unspecified"
+
+    goto :goto_0
+
+    .line 291
+    :cond_4
     const-string p0, "Invalid"
 
     :goto_0
@@ -336,7 +370,7 @@
 .method public toString()Ljava/lang/String;
     .locals 0
 
-    .line 255
+    .line 285
     iget p0, p0, Landroidx/compose/ui/text/style/LineBreak$Strictness;->value:I
 
     invoke-static {p0}, Landroidx/compose/ui/text/style/LineBreak$Strictness;->toString-impl(I)Ljava/lang/String;

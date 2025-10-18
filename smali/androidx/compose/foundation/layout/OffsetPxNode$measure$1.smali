@@ -87,22 +87,20 @@
 .end method
 
 .method public final invoke(Landroidx/compose/ui/layout/Placeable$PlacementScope;)V
-    .locals 10
+    .locals 20
 
-    const-string v1, "$this$layout"
-
-    invoke-static {p1, v1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+    move-object/from16 v0, p0
 
     .line 247
-    iget-object v1, p0, Landroidx/compose/foundation/layout/OffsetPxNode$measure$1;->this$0:Landroidx/compose/foundation/layout/OffsetPxNode;
+    iget-object v1, v0, Landroidx/compose/foundation/layout/OffsetPxNode$measure$1;->this$0:Landroidx/compose/foundation/layout/OffsetPxNode;
 
     invoke-virtual {v1}, Landroidx/compose/foundation/layout/OffsetPxNode;->getOffset()Lkotlin/jvm/functions/Function1;
 
     move-result-object v1
 
-    iget-object v3, p0, Landroidx/compose/foundation/layout/OffsetPxNode$measure$1;->$this_measure:Landroidx/compose/ui/layout/MeasureScope;
+    iget-object v2, v0, Landroidx/compose/foundation/layout/OffsetPxNode$measure$1;->$this_measure:Landroidx/compose/ui/layout/MeasureScope;
 
-    invoke-interface {v1, v3}, Lkotlin/jvm/functions/Function1;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-interface {v1, v2}, Lkotlin/jvm/functions/Function1;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v1
 
@@ -110,73 +108,65 @@
 
     invoke-virtual {v1}, Landroidx/compose/ui/unit/IntOffset;->unbox-impl()J
 
-    move-result-wide v3
+    move-result-wide v1
 
     .line 248
-    iget-object v1, p0, Landroidx/compose/foundation/layout/OffsetPxNode$measure$1;->this$0:Landroidx/compose/foundation/layout/OffsetPxNode;
+    iget-object v3, v0, Landroidx/compose/foundation/layout/OffsetPxNode$measure$1;->this$0:Landroidx/compose/foundation/layout/OffsetPxNode;
 
-    invoke-virtual {v1}, Landroidx/compose/foundation/layout/OffsetPxNode;->getRtlAware()Z
+    invoke-virtual {v3}, Landroidx/compose/foundation/layout/OffsetPxNode;->getRtlAware()Z
 
-    move-result v1
+    move-result v3
 
-    if-eqz v1, :cond_0
+    if-eqz v3, :cond_0
 
     .line 249
-    iget-object v0, p0, Landroidx/compose/foundation/layout/OffsetPxNode$measure$1;->$placeable:Landroidx/compose/ui/layout/Placeable;
+    iget-object v5, v0, Landroidx/compose/foundation/layout/OffsetPxNode$measure$1;->$placeable:Landroidx/compose/ui/layout/Placeable;
 
-    invoke-static {v3, v4}, Landroidx/compose/ui/unit/IntOffset;->getX-impl(J)I
+    invoke-static {v1, v2}, Landroidx/compose/ui/unit/IntOffset;->getX-impl(J)I
 
-    move-result v1
+    move-result v6
 
-    invoke-static {v3, v4}, Landroidx/compose/ui/unit/IntOffset;->getY-impl(J)I
+    invoke-static {v1, v2}, Landroidx/compose/ui/unit/IntOffset;->getY-impl(J)I
 
-    move-result v5
+    move-result v7
 
-    const/16 v8, 0xc
+    const/16 v10, 0xc
+
+    const/4 v11, 0x0
+
+    const/4 v8, 0x0
 
     const/4 v9, 0x0
 
-    const/4 v6, 0x0
+    move-object/from16 v4, p1
 
-    const/4 v7, 0x0
-
-    move-object v2, p1
-
-    move-object v3, v0
-
-    move v4, v1
-
-    invoke-static/range {v2 .. v9}, Landroidx/compose/ui/layout/Placeable$PlacementScope;->placeRelativeWithLayer$default(Landroidx/compose/ui/layout/Placeable$PlacementScope;Landroidx/compose/ui/layout/Placeable;IIFLkotlin/jvm/functions/Function1;ILjava/lang/Object;)V
+    invoke-static/range {v4 .. v11}, Landroidx/compose/ui/layout/Placeable$PlacementScope;->placeRelativeWithLayer$default(Landroidx/compose/ui/layout/Placeable$PlacementScope;Landroidx/compose/ui/layout/Placeable;IIFLkotlin/jvm/functions/Function1;ILjava/lang/Object;)V
 
     goto :goto_0
 
     .line 251
     :cond_0
-    iget-object v0, p0, Landroidx/compose/foundation/layout/OffsetPxNode$measure$1;->$placeable:Landroidx/compose/ui/layout/Placeable;
+    iget-object v13, v0, Landroidx/compose/foundation/layout/OffsetPxNode$measure$1;->$placeable:Landroidx/compose/ui/layout/Placeable;
 
-    invoke-static {v3, v4}, Landroidx/compose/ui/unit/IntOffset;->getX-impl(J)I
+    invoke-static {v1, v2}, Landroidx/compose/ui/unit/IntOffset;->getX-impl(J)I
 
-    move-result v1
+    move-result v14
 
-    invoke-static {v3, v4}, Landroidx/compose/ui/unit/IntOffset;->getY-impl(J)I
+    invoke-static {v1, v2}, Landroidx/compose/ui/unit/IntOffset;->getY-impl(J)I
 
-    move-result v5
+    move-result v15
 
-    const/16 v8, 0xc
+    const/16 v18, 0xc
 
-    const/4 v9, 0x0
+    const/16 v19, 0x0
 
-    const/4 v6, 0x0
+    const/16 v16, 0x0
 
-    const/4 v7, 0x0
+    const/16 v17, 0x0
 
-    move-object v2, p1
+    move-object/from16 v12, p1
 
-    move-object v3, v0
-
-    move v4, v1
-
-    invoke-static/range {v2 .. v9}, Landroidx/compose/ui/layout/Placeable$PlacementScope;->placeWithLayer$default(Landroidx/compose/ui/layout/Placeable$PlacementScope;Landroidx/compose/ui/layout/Placeable;IIFLkotlin/jvm/functions/Function1;ILjava/lang/Object;)V
+    invoke-static/range {v12 .. v19}, Landroidx/compose/ui/layout/Placeable$PlacementScope;->placeWithLayer$default(Landroidx/compose/ui/layout/Placeable$PlacementScope;Landroidx/compose/ui/layout/Placeable;IIFLkotlin/jvm/functions/Function1;ILjava/lang/Object;)V
 
     :goto_0
     return-void

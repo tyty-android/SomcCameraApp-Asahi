@@ -3,7 +3,7 @@
 .source "CameraSettings.java"
 
 # interfaces
-.implements Ljp/co/sony/mc/camera/setting/SettingsBase$GetOptionsCommand;
+.implements Ljp/co/sony/mc/camera/setting/SettingsBase$SetCommand;
 
 
 # annotations
@@ -21,7 +21,7 @@
 .method constructor <init>()V
     .locals 0
 
-    .line 1754
+    .line 1802
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -29,7 +29,7 @@
 
 
 # virtual methods
-.method public getOptions(Ljp/co/sony/mc/camera/setting/SettingsBase;Ljp/co/sony/mc/camera/setting/SettingKey$Key;)[Ljava/lang/Object;
+.method public setValue(Ljp/co/sony/mc/camera/setting/SettingsBase;Ljp/co/sony/mc/camera/setting/SettingKey$Key;Ljava/lang/Object;Ljava/util/Map;)Z
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -38,19 +38,23 @@
             ">(",
             "Ljp/co/sony/mc/camera/setting/SettingsBase;",
             "Ljp/co/sony/mc/camera/setting/SettingKey$Key<",
-            "TT;>;)[TT;"
+            "TT;>;TT;",
+            "Ljava/util/Map<",
+            "Ljp/co/sony/mc/camera/setting/CameraProSettingChangedListener;",
+            "Landroid/os/Handler;",
+            ">;)Z"
         }
     .end annotation
 
-    .line 1758
+    .line 1806
     check-cast p1, Ljp/co/sony/mc/camera/setting/CameraSettings;
 
-    .line 1759
-    invoke-static {}, Ljp/co/sony/mc/camera/configuration/parameters/SelfTimer;->getOptions()[Ljp/co/sony/mc/camera/configuration/parameters/SelfTimer;
+    .line 1807
+    check-cast p3, Ljp/co/sony/mc/camera/configuration/parameters/FallbackMode;
 
-    move-result-object p0
+    invoke-static {p1, p3}, Ljp/co/sony/mc/camera/setting/CameraSettings;->-$$Nest$msetFallbackMode(Ljp/co/sony/mc/camera/setting/CameraSettings;Ljp/co/sony/mc/camera/configuration/parameters/FallbackMode;)Z
 
-    check-cast p0, [Ljava/lang/Object;
+    move-result p0
 
-    return-object p0
+    return p0
 .end method

@@ -29,17 +29,17 @@
         "jp/co/sony/mc/camera/view/setting/streamingquicksetting/VideoQualityItemAdapter$Companion$diffCallback$1",
         "Landroidx/recyclerview/widget/DiffUtil$ItemCallback;",
         "Ljp/co/sony/mc/camera/view/setting/streamingquicksetting/VideoQualityItemAdapter$VideoQualityItem;",
-        "areContentsTheSame",
+        "areItemsTheSame",
         "",
         "oldItem",
         "newItem",
-        "areItemsTheSame",
+        "areContentsTheSame",
         "SomcCamera_release"
     }
     k = 0x1
     mv = {
-        0x1,
-        0x9,
+        0x2,
+        0x0,
         0x0
     }
     xi = 0x30

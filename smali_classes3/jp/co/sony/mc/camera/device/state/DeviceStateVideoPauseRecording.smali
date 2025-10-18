@@ -89,56 +89,58 @@
     invoke-virtual {p1}, Ljp/co/sony/mc/camera/device/state/DeviceStateContext;->cancelCaptureRequest()V
 
     :cond_0
-    const/4 p1, 0x0
-
     if-nez p2, :cond_1
 
     .line 63
-    new-instance p2, Ljp/co/sony/mc/camera/device/state/DeviceStateVideoStopRecording;
+    new-instance p1, Ljp/co/sony/mc/camera/device/state/DeviceStateVideoStopRecording;
 
-    invoke-direct {p2, p1, v0}, Ljp/co/sony/mc/camera/device/state/DeviceStateVideoStopRecording;-><init>(ZZ)V
+    iget-boolean p2, p0, Ljp/co/sony/mc/camera/device/state/DeviceStateVideoPauseRecording;->mIsNeedFlush:Z
 
-    invoke-virtual {p0, p2}, Ljp/co/sony/mc/camera/device/state/DeviceStateVideoPauseRecording;->setNextState(Ljp/co/sony/mc/camera/device/state/DeviceState;)V
+    invoke-direct {p1, p2, v0}, Ljp/co/sony/mc/camera/device/state/DeviceStateVideoStopRecording;-><init>(ZZ)V
+
+    invoke-virtual {p0, p1}, Ljp/co/sony/mc/camera/device/state/DeviceStateVideoPauseRecording;->setNextState(Ljp/co/sony/mc/camera/device/state/DeviceState;)V
 
     goto :goto_0
 
     .line 65
     :cond_1
-    new-instance v0, Ljp/co/sony/mc/camera/device/state/DeviceStateCameraClosing;
+    new-instance p1, Ljp/co/sony/mc/camera/device/state/DeviceStateCameraClosing;
 
-    invoke-direct {v0, p1, p2}, Ljp/co/sony/mc/camera/device/state/DeviceStateCameraClosing;-><init>(ZZ)V
+    const/4 v0, 0x0
 
-    invoke-virtual {p0, v0}, Ljp/co/sony/mc/camera/device/state/DeviceStateVideoPauseRecording;->setNextState(Ljp/co/sony/mc/camera/device/state/DeviceState;)V
+    invoke-direct {p1, v0, p2}, Ljp/co/sony/mc/camera/device/state/DeviceStateCameraClosing;-><init>(ZZ)V
+
+    invoke-virtual {p0, p1}, Ljp/co/sony/mc/camera/device/state/DeviceStateVideoPauseRecording;->setNextState(Ljp/co/sony/mc/camera/device/state/DeviceState;)V
 
     :goto_0
     return-void
 .end method
 
 .method public varargs handleCapture(Ljp/co/sony/mc/camera/device/state/DeviceStateContext;[Ljava/lang/Object;)V
-    .locals 3
+    .locals 5
 
     const/4 v0, 0x0
 
     .line 74
-    aget-object v0, p2, v0
+    aget-object v1, p2, v0
 
-    check-cast v0, Ljp/co/sony/mc/camera/device/SnapshotRequest;
+    check-cast v1, Ljp/co/sony/mc/camera/device/SnapshotRequest;
 
-    const/4 v1, 0x1
+    const/4 v2, 0x1
 
     .line 75
-    aget-object v1, p2, v1
+    aget-object v3, p2, v2
 
-    check-cast v1, Ljava/lang/Boolean;
+    check-cast v3, Ljava/lang/Boolean;
 
-    invoke-virtual {v1}, Ljava/lang/Boolean;->booleanValue()Z
+    invoke-virtual {v3}, Ljava/lang/Boolean;->booleanValue()Z
 
-    move-result v1
+    move-result v3
 
-    const/4 v2, 0x2
+    const/4 v4, 0x2
 
     .line 76
-    aget-object p2, p2, v2
+    aget-object p2, p2, v4
 
     check-cast p2, Ljava/lang/Integer;
 
@@ -147,12 +149,12 @@
     move-result p2
 
     .line 78
-    invoke-virtual {p1, v0, v1, p2}, Ljp/co/sony/mc/camera/device/state/DeviceStateContext;->setSavingSnapshotRequestInfo(Ljp/co/sony/mc/camera/device/SnapshotRequest;ZI)V
+    invoke-virtual {p1, v1, v3, p2}, Ljp/co/sony/mc/camera/device/state/DeviceStateContext;->setSavingSnapshotRequestInfo(Ljp/co/sony/mc/camera/device/SnapshotRequest;ZI)V
 
     .line 80
-    iget-boolean v0, p0, Ljp/co/sony/mc/camera/device/state/DeviceStateVideoPauseRecording;->mIsCaptureReady:Z
+    iget-boolean v1, p0, Ljp/co/sony/mc/camera/device/state/DeviceStateVideoPauseRecording;->mIsCaptureReady:Z
 
-    if-eqz v0, :cond_0
+    if-eqz v1, :cond_0
 
     .line 81
     invoke-virtual {p0, p1, p2}, Ljp/co/sony/mc/camera/device/state/DeviceStateVideoPauseRecording;->doCapture(Ljp/co/sony/mc/camera/device/state/DeviceStateContext;I)V
@@ -161,11 +163,11 @@
 
     .line 89
     :cond_0
-    const-string p0, "delay until ready to shoot."
+    new-array p0, v2, [Ljava/lang/String;
 
-    filled-new-array {p0}, [Ljava/lang/String;
+    const-string p1, "delay until ready to shoot."
 
-    move-result-object p0
+    aput-object p1, p0, v0
 
     invoke-static {p0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
@@ -212,23 +214,25 @@
 .end method
 
 .method public varargs handleOnCaptureCompleted(Ljp/co/sony/mc/camera/device/state/DeviceStateContext;[Ljava/lang/Object;)V
-    .locals 1
+    .locals 3
 
     .line 247
     iget-boolean p2, p0, Ljp/co/sony/mc/camera/device/state/DeviceStateVideoPauseRecording;->mIsCaptureReady:Z
 
     if-nez p2, :cond_1
 
-    .line 248
-    const-string p2, "ready to shoot."
-
-    filled-new-array {p2}, [Ljava/lang/String;
-
-    move-result-object p2
-
-    invoke-static {p2}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
-
     const/4 p2, 0x1
+
+    .line 248
+    new-array v0, p2, [Ljava/lang/String;
+
+    const-string v1, "ready to shoot."
+
+    const/4 v2, 0x0
+
+    aput-object v1, v0, v2
+
+    invoke-static {v0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
     .line 249
     iput-boolean p2, p0, Ljp/co/sony/mc/camera/device/state/DeviceStateVideoPauseRecording;->mIsCaptureReady:Z
@@ -263,9 +267,7 @@
 
     iget-boolean p2, p0, Ljp/co/sony/mc/camera/device/state/DeviceStateVideoPauseRecording;->mIsNeedFlush:Z
 
-    const/4 v0, 0x0
-
-    invoke-direct {p1, p2, v0}, Ljp/co/sony/mc/camera/device/state/DeviceStateVideoStopRecording;-><init>(ZZ)V
+    invoke-direct {p1, p2, v2}, Ljp/co/sony/mc/camera/device/state/DeviceStateVideoStopRecording;-><init>(ZZ)V
 
     invoke-virtual {p0, p1}, Ljp/co/sony/mc/camera/device/state/DeviceStateVideoPauseRecording;->setNextState(Ljp/co/sony/mc/camera/device/state/DeviceState;)V
 
@@ -510,11 +512,15 @@
 
     if-eqz p0, :cond_0
 
-    const-string p0, "FaceDetection is already stopped."
+    const/4 p0, 0x1
 
-    filled-new-array {p0}, [Ljava/lang/String;
+    new-array p0, p0, [Ljava/lang/String;
 
-    move-result-object p0
+    const/4 p1, 0x0
+
+    const-string p2, "FaceDetection is already stopped."
+
+    aput-object p2, p0, p1
 
     invoke-static {p0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 

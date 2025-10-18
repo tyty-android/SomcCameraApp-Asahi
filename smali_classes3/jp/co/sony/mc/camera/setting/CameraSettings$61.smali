@@ -21,7 +21,7 @@
 .method constructor <init>()V
     .locals 0
 
-    .line 1048
+    .line 1102
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -42,11 +42,11 @@
         }
     .end annotation
 
-    .line 1052
+    .line 1106
     check-cast p1, Ljp/co/sony/mc/camera/setting/CameraSettings;
 
-    .line 1053
-    invoke-static {p1}, Ljp/co/sony/mc/camera/setting/CameraSettings;->-$$Nest$mgetPeakingColor(Ljp/co/sony/mc/camera/setting/CameraSettings;)Ljp/co/sony/mc/camera/configuration/parameters/PeakingColor;
+    .line 1107
+    invoke-static {p1}, Ljp/co/sony/mc/camera/setting/CameraSettings;->-$$Nest$mgetApplyPeaking(Ljp/co/sony/mc/camera/setting/CameraSettings;)Ljp/co/sony/mc/camera/configuration/parameters/Peaking;
 
     move-result-object p0
 

@@ -15,7 +15,7 @@
 
 .annotation runtime Lkotlin/Metadata;
     d1 = {
-        "\u0000F\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0003\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0002\n\u0002\u0008\u0004\n\u0002\u0018\u0002\n\u0000\u0008\u0007\u0018\u00002\u00020\u0001B%\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\u0006\u0010\u0004\u001a\u00020\u0005\u0012\u0006\u0010\u0006\u001a\u00020\u0007\u0012\u0006\u0010\u0008\u001a\u00020\t\u00a2\u0006\u0002\u0010\nJ\u0010\u0010\u0013\u001a\u00020\u00142\u0006\u0010\u0015\u001a\u00020\u000eH\u0016J\u0010\u0010\u0016\u001a\u00020\u00142\u0006\u0010\u0015\u001a\u00020\u000eH\u0016J\u0010\u0010\u0017\u001a\u00020\u00142\u0006\u0010\u0018\u001a\u00020\u0019H\u0002R\u000e\u0010\u0002\u001a\u00020\u0003X\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u0008\u001a\u00020\tX\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u000b\u001a\u00020\u000cX\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u0006\u001a\u00020\u0007X\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u0014\u0010\r\u001a\u00020\u000e8BX\u0082\u0004\u00a2\u0006\u0006\u001a\u0004\u0008\u000f\u0010\u0010R\u000e\u0010\u0011\u001a\u00020\u0012X\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u0004\u001a\u00020\u0005X\u0082\u0004\u00a2\u0006\u0002\n\u0000\u00a8\u0006\u001a"
+        "\u0000H\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0003\n\u0002\u0018\u0002\n\u0002\u0008\u0003\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0002\n\u0002\u0008\u0003\n\u0002\u0018\u0002\n\u0002\u0008\u0002\u0008\u0007\u0018\u00002\u00020\u0001B\'\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\u0006\u0010\u0004\u001a\u00020\u0005\u0012\u0006\u0010\u0006\u001a\u00020\u0007\u0012\u0006\u0010\u0008\u001a\u00020\t\u00a2\u0006\u0004\u0008\n\u0010\u000bJ\u0010\u0010\u0014\u001a\u00020\u00152\u0006\u0010\u0016\u001a\u00020\rH\u0016J\u0010\u0010\u0017\u001a\u00020\u00152\u0006\u0010\u0018\u001a\u00020\u0019H\u0002J\u0010\u0010\u001a\u001a\u00020\u00152\u0006\u0010\u0016\u001a\u00020\rH\u0016R\u000e\u0010\u0002\u001a\u00020\u0003X\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u0004\u001a\u00020\u0005X\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u0006\u001a\u00020\u0007X\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u0008\u001a\u00020\tX\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u0014\u0010\u000c\u001a\u00020\r8BX\u0082\u0004\u00a2\u0006\u0006\u001a\u0004\u0008\u000e\u0010\u000fR\u000e\u0010\u0010\u001a\u00020\u0011X\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u0012\u001a\u00020\u0013X\u0082\u0004\u00a2\u0006\u0002\n\u0000\u00a8\u0006\u001b"
     }
     d2 = {
         "Ljp/co/sony/mc/camera/view/viewbinder/ProModeFocusZoomContainerViewBinder;",
@@ -28,28 +28,29 @@
         "Ljp/co/sony/mc/camera/view/uistate/LensUiState;",
         "cameraSettingsModel",
         "Ljp/co/sony/mc/camera/view/viewmodel/CameraSettingsModel;",
+        "<init>",
         "(Ljp/co/sony/mc/camera/databinding/ProModeFocusZoomContainerBinding;Ljp/co/sony/mc/camera/view/uistate/ProModeCommonUiState;Ljp/co/sony/mc/camera/view/uistate/LensUiState;Ljp/co/sony/mc/camera/view/viewmodel/CameraSettingsModel;)V",
-        "focusLayoutChangeListener",
-        "Landroid/view/View$OnLayoutChangeListener;",
         "lifecycleOwner",
         "Landroidx/lifecycle/LifecycleOwner;",
         "getLifecycleOwner",
         "()Landroidx/lifecycle/LifecycleOwner;",
         "orientationVm",
         "Ljp/co/sony/mc/camera/view/viewmodel/OrientationViewModel;",
+        "focusLayoutChangeListener",
+        "Landroid/view/View$OnLayoutChangeListener;",
         "onCreate",
         "",
         "owner",
-        "onDestroy",
         "rotateFocusContainer",
         "layoutOrientation",
         "Ljp/co/sony/mc/camera/view/orientation/LayoutOrientation;",
+        "onDestroy",
         "SomcCamera_release"
     }
     k = 0x1
     mv = {
-        0x1,
-        0x9,
+        0x2,
+        0x0,
         0x0
     }
     xi = 0x30
@@ -75,6 +76,26 @@
 
 
 # direct methods
+.method public static synthetic $r8$lambda$8L_pyDdTsxMWo0TALozhMLCd1Ls(Ljp/co/sony/mc/camera/view/viewbinder/ProModeFocusZoomContainerViewBinder;Ljava/lang/Boolean;)Lkotlin/Unit;
+    .locals 0
+
+    invoke-static {p0, p1}, Ljp/co/sony/mc/camera/view/viewbinder/ProModeFocusZoomContainerViewBinder;->onCreate$lambda$4(Ljp/co/sony/mc/camera/view/viewbinder/ProModeFocusZoomContainerViewBinder;Ljava/lang/Boolean;)Lkotlin/Unit;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method public static synthetic $r8$lambda$IEhC-zMF-02LMSF2YyUORFh7tbw(ZZZZLjava/lang/Boolean;)Z
+    .locals 0
+
+    invoke-static {p0, p1, p2, p3, p4}, Ljp/co/sony/mc/camera/view/viewbinder/ProModeFocusZoomContainerViewBinder;->onCreate$lambda$3(ZZZZLjava/lang/Boolean;)Z
+
+    move-result p0
+
+    return p0
+.end method
+
 .method public static synthetic $r8$lambda$NyPTNVaIFhZw1OBfnMkIWH1n0Yo(Ljp/co/sony/mc/camera/view/viewbinder/ProModeFocusZoomContainerViewBinder;Landroid/view/View;IIIIIIII)V
     .locals 0
 
@@ -155,15 +176,6 @@
     return-void
 .end method
 
-.method public static final synthetic access$getBinding$p(Ljp/co/sony/mc/camera/view/viewbinder/ProModeFocusZoomContainerViewBinder;)Ljp/co/sony/mc/camera/databinding/ProModeFocusZoomContainerBinding;
-    .locals 0
-
-    .line 20
-    iget-object p0, p0, Ljp/co/sony/mc/camera/view/viewbinder/ProModeFocusZoomContainerViewBinder;->binding:Ljp/co/sony/mc/camera/databinding/ProModeFocusZoomContainerBinding;
-
-    return-object p0
-.end method
-
 .method private static final focusLayoutChangeListener$lambda$1(Ljp/co/sony/mc/camera/view/viewbinder/ProModeFocusZoomContainerViewBinder;Landroid/view/View;IIIIIIII)V
     .locals 0
 
@@ -204,6 +216,70 @@
     move-result-object p0
 
     invoke-static {p0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;)V
+
+    return-object p0
+.end method
+
+.method private static final onCreate$lambda$3(ZZZZLjava/lang/Boolean;)Z
+    .locals 0
+
+    if-eqz p0, :cond_1
+
+    if-nez p1, :cond_0
+
+    if-eqz p2, :cond_1
+
+    if-nez p3, :cond_1
+
+    .line 60
+    invoke-virtual {p4}, Ljava/lang/Boolean;->booleanValue()Z
+
+    move-result p0
+
+    if-nez p0, :cond_1
+
+    :cond_0
+    const/4 p0, 0x1
+
+    goto :goto_0
+
+    :cond_1
+    const/4 p0, 0x0
+
+    :goto_0
+    return p0
+.end method
+
+.method private static final onCreate$lambda$4(Ljp/co/sony/mc/camera/view/viewbinder/ProModeFocusZoomContainerViewBinder;Ljava/lang/Boolean;)Lkotlin/Unit;
+    .locals 1
+
+    const-string/jumbo v0, "this$0"
+
+    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 62
+    iget-object p0, p0, Ljp/co/sony/mc/camera/view/viewbinder/ProModeFocusZoomContainerViewBinder;->binding:Ljp/co/sony/mc/camera/databinding/ProModeFocusZoomContainerBinding;
+
+    iget-object p0, p0, Ljp/co/sony/mc/camera/databinding/ProModeFocusZoomContainerBinding;->focusMagBtn:Landroid/widget/ImageButton;
+
+    invoke-virtual {p1}, Ljava/lang/Boolean;->booleanValue()Z
+
+    move-result p1
+
+    if-eqz p1, :cond_0
+
+    const/4 p1, 0x0
+
+    goto :goto_0
+
+    :cond_0
+    const/16 p1, 0x8
+
+    :goto_0
+    invoke-virtual {p0, p1}, Landroid/widget/ImageButton;->setVisibility(I)V
+
+    .line 63
+    sget-object p0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
 
     return-object p0
 .end method
@@ -256,7 +332,6 @@
 
     goto :goto_0
 
-    .line 80
     :cond_0
     new-instance p0, Lkotlin/NoWhenBranchMatchedException;
 
@@ -333,7 +408,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f1102e3
+    const v1, 0x7f110310
 
     invoke-virtual {v0, v1}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -348,7 +423,7 @@
 
     move-result-object v2
 
-    const v3, 0x7f1102e2
+    const v3, 0x7f11030f
 
     invoke-virtual {v2, v3}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -369,7 +444,7 @@
 
     move-result-object v0
 
-    const-string v2, "format(format, *args)"
+    const-string v2, "format(...)"
 
     invoke-static {v0, v2}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
 
@@ -385,7 +460,7 @@
 
     move-result-object v0
 
-    const v5, 0x7f110106
+    const v5, 0x7f110107
 
     invoke-virtual {v0, v5}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -463,13 +538,11 @@
 
     check-cast v6, Landroidx/lifecycle/LiveData;
 
+    new-instance v7, Ljp/co/sony/mc/camera/view/viewbinder/ProModeFocusZoomContainerViewBinder$$ExternalSyntheticLambda1;
+
+    invoke-direct {v7}, Ljp/co/sony/mc/camera/view/viewbinder/ProModeFocusZoomContainerViewBinder$$ExternalSyntheticLambda1;-><init>()V
+
     .line 52
-    sget-object p1, Ljp/co/sony/mc/camera/view/viewbinder/ProModeFocusZoomContainerViewBinder$onCreate$2;->INSTANCE:Ljp/co/sony/mc/camera/view/viewbinder/ProModeFocusZoomContainerViewBinder$onCreate$2;
-
-    move-object v7, p1
-
-    check-cast v7, Lkotlin/jvm/functions/Function5;
-
     invoke-virtual/range {v1 .. v7}, Ljp/co/sony/mc/camera/view/viewmodel/LiveDataMediators;->notNulls(Landroidx/lifecycle/LiveData;Landroidx/lifecycle/LiveData;Landroidx/lifecycle/LiveData;Landroidx/lifecycle/LiveData;Landroidx/lifecycle/LiveData;Lkotlin/jvm/functions/Function5;)Landroidx/lifecycle/LiveData;
 
     move-result-object p1
@@ -479,11 +552,9 @@
 
     move-result-object v0
 
-    new-instance v1, Ljp/co/sony/mc/camera/view/viewbinder/ProModeFocusZoomContainerViewBinder$onCreate$3;
+    new-instance v1, Ljp/co/sony/mc/camera/view/viewbinder/ProModeFocusZoomContainerViewBinder$$ExternalSyntheticLambda2;
 
-    invoke-direct {v1, p0}, Ljp/co/sony/mc/camera/view/viewbinder/ProModeFocusZoomContainerViewBinder$onCreate$3;-><init>(Ljp/co/sony/mc/camera/view/viewbinder/ProModeFocusZoomContainerViewBinder;)V
-
-    check-cast v1, Lkotlin/jvm/functions/Function1;
+    invoke-direct {v1, p0}, Ljp/co/sony/mc/camera/view/viewbinder/ProModeFocusZoomContainerViewBinder$$ExternalSyntheticLambda2;-><init>(Ljp/co/sony/mc/camera/view/viewbinder/ProModeFocusZoomContainerViewBinder;)V
 
     new-instance v2, Ljp/co/sony/mc/camera/view/viewbinder/ProModeFocusZoomContainerViewBinder$sam$androidx_lifecycle_Observer$0;
 

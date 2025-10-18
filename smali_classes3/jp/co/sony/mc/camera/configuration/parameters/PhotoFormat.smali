@@ -26,7 +26,7 @@
 
 .field public static final enum RAW_JPEG:Ljp/co/sony/mc/camera/configuration/parameters/PhotoFormat;
 
-.field private static final sParameterTextId:I = 0x7f11023a
+.field private static final sParameterTextId:I = 0x7f11023e
 
 
 # instance fields
@@ -59,9 +59,9 @@
     .line 21
     new-instance v0, Ljp/co/sony/mc/camera/configuration/parameters/PhotoFormat;
 
-    const v1, 0x7f080171
+    const v1, 0x7f080176
 
-    const v2, 0x7f110237
+    const v2, 0x7f11023b
 
     const-string v3, "JPEG"
 
@@ -74,9 +74,9 @@
     .line 24
     new-instance v0, Ljp/co/sony/mc/camera/configuration/parameters/PhotoFormat;
 
-    const v1, 0x7f080174
+    const v1, 0x7f080179
 
-    const v2, 0x7f110239
+    const v2, 0x7f11023d
 
     const-string v3, "RAW"
 
@@ -89,9 +89,9 @@
     .line 27
     new-instance v0, Ljp/co/sony/mc/camera/configuration/parameters/PhotoFormat;
 
-    const v1, 0x7f080176
+    const v1, 0x7f08017b
 
-    const v2, 0x7f110238
+    const v2, 0x7f11023c
 
     const-string v3, "RAW_JPEG"
 

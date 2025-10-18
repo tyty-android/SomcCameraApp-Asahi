@@ -111,7 +111,7 @@
 .end method
 
 .method public constructor <init>()V
-    .locals 6
+    .locals 4
 
     .line 155
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -130,36 +130,24 @@
 
     iput-object v1, p0, Lcom/google/common/base/FinalizableReferenceQueue;->frqRef:Ljava/lang/ref/PhantomReference;
 
-    const/4 v2, 0x0
-
     .line 161
     :try_start_0
-    sget-object v3, Lcom/google/common/base/FinalizableReferenceQueue;->startFinalizer:Ljava/lang/reflect/Method;
+    sget-object v2, Lcom/google/common/base/FinalizableReferenceQueue;->startFinalizer:Ljava/lang/reflect/Method;
 
-    const/4 v4, 0x3
+    const-class v3, Lcom/google/common/base/FinalizableReference;
 
-    new-array v4, v4, [Ljava/lang/Object;
+    filled-new-array {v3, v0, v1}, [Ljava/lang/Object;
 
-    const-class v5, Lcom/google/common/base/FinalizableReference;
+    move-result-object v0
 
-    aput-object v5, v4, v2
+    const/4 v1, 0x0
 
-    const/4 v5, 0x1
-
-    aput-object v0, v4, v5
-
-    const/4 v0, 0x2
-
-    aput-object v1, v4, v0
-
-    const/4 v0, 0x0
-
-    invoke-virtual {v3, v0, v4}, Ljava/lang/reflect/Method;->invoke(Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v2, v1, v0}, Ljava/lang/reflect/Method;->invoke(Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;
     :try_end_0
     .catch Ljava/lang/IllegalAccessException; {:try_start_0 .. :try_end_0} :catch_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    move v2, v5
+    const/4 v0, 0x1
 
     goto :goto_0
 
@@ -169,15 +157,17 @@
     .line 166
     sget-object v1, Lcom/google/common/base/FinalizableReferenceQueue;->logger:Ljava/util/logging/Logger;
 
-    sget-object v3, Ljava/util/logging/Level;->INFO:Ljava/util/logging/Level;
+    sget-object v2, Ljava/util/logging/Level;->INFO:Ljava/util/logging/Level;
 
-    const-string v4, "Failed to start reference finalizer thread. Reference cleanup will only occur when new references are created."
+    const-string v3, "Failed to start reference finalizer thread. Reference cleanup will only occur when new references are created."
 
-    invoke-virtual {v1, v3, v4, v0}, Ljava/util/logging/Logger;->log(Ljava/util/logging/Level;Ljava/lang/String;Ljava/lang/Throwable;)V
+    invoke-virtual {v1, v2, v3, v0}, Ljava/util/logging/Logger;->log(Ljava/util/logging/Level;Ljava/lang/String;Ljava/lang/Throwable;)V
+
+    const/4 v0, 0x0
 
     .line 173
     :goto_0
-    iput-boolean v2, p0, Lcom/google/common/base/FinalizableReferenceQueue;->threadStarted:Z
+    iput-boolean v0, p0, Lcom/google/common/base/FinalizableReferenceQueue;->threadStarted:Z
 
     return-void
 

@@ -36,5 +36,8 @@
         }
     .end annotation
 
+    .line 250
+    invoke-virtual {p0, p1}, Landroid/view/contentcapture/ContentCaptureSession;->notifyViewsAppeared(Ljava/util/List;)V
+
     return-void
 .end method

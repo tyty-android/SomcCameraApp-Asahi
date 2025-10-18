@@ -25,7 +25,7 @@
 .method constructor <init>(Lcom/google/android/material/internal/NavigationMenuPresenter;)V
     .locals 0
 
-    .line 487
+    .line 503
     iput-object p1, p0, Lcom/google/android/material/internal/NavigationMenuPresenter$1;->this$0:Lcom/google/android/material/internal/NavigationMenuPresenter;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -38,22 +38,22 @@
 .method public onClick(Landroid/view/View;)V
     .locals 4
 
-    .line 491
+    .line 507
     check-cast p1, Lcom/google/android/material/internal/NavigationMenuItemView;
 
-    .line 492
+    .line 508
     iget-object v0, p0, Lcom/google/android/material/internal/NavigationMenuPresenter$1;->this$0:Lcom/google/android/material/internal/NavigationMenuPresenter;
 
     const/4 v1, 0x1
 
     invoke-virtual {v0, v1}, Lcom/google/android/material/internal/NavigationMenuPresenter;->setUpdateSuspended(Z)V
 
-    .line 493
+    .line 509
     invoke-virtual {p1}, Lcom/google/android/material/internal/NavigationMenuItemView;->getItemData()Landroidx/appcompat/view/menu/MenuItemImpl;
 
     move-result-object p1
 
-    .line 494
+    .line 510
     iget-object v0, p0, Lcom/google/android/material/internal/NavigationMenuPresenter$1;->this$0:Lcom/google/android/material/internal/NavigationMenuPresenter;
 
     iget-object v0, v0, Lcom/google/android/material/internal/NavigationMenuPresenter;->menu:Landroidx/appcompat/view/menu/MenuBuilder;
@@ -68,7 +68,7 @@
 
     if-eqz p1, :cond_0
 
-    .line 496
+    .line 512
     invoke-virtual {p1}, Landroidx/appcompat/view/menu/MenuItemImpl;->isCheckable()Z
 
     move-result v2
@@ -77,7 +77,7 @@
 
     if-eqz v0, :cond_0
 
-    .line 497
+    .line 513
     iget-object v0, p0, Lcom/google/android/material/internal/NavigationMenuPresenter$1;->this$0:Lcom/google/android/material/internal/NavigationMenuPresenter;
 
     iget-object v0, v0, Lcom/google/android/material/internal/NavigationMenuPresenter;->adapter:Lcom/google/android/material/internal/NavigationMenuPresenter$NavigationMenuAdapter;
@@ -89,7 +89,7 @@
     :cond_0
     move v1, v3
 
-    .line 500
+    .line 516
     :goto_0
     iget-object p1, p0, Lcom/google/android/material/internal/NavigationMenuPresenter$1;->this$0:Lcom/google/android/material/internal/NavigationMenuPresenter;
 
@@ -97,7 +97,7 @@
 
     if-eqz v1, :cond_1
 
-    .line 502
+    .line 518
     iget-object p0, p0, Lcom/google/android/material/internal/NavigationMenuPresenter$1;->this$0:Lcom/google/android/material/internal/NavigationMenuPresenter;
 
     invoke-virtual {p0, v3}, Lcom/google/android/material/internal/NavigationMenuPresenter;->updateMenuView(Z)V

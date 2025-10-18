@@ -35,6 +35,10 @@
 .end annotation
 
 
+# static fields
+.field public static final $stable:I
+
+
 # instance fields
 .field private final crossAxisTotalSize:I
 
@@ -52,8 +56,18 @@
 
 
 # direct methods
-.method public constructor <init>(IILandroidx/compose/runtime/collection/MutableVector;)V
+.method static constructor <clinit>()V
     .locals 1
+
+    sget v0, Landroidx/compose/runtime/collection/MutableVector;->$stable:I
+
+    sput v0, Landroidx/compose/foundation/layout/FlowResult;->$stable:I
+
+    return-void
+.end method
+
+.method public constructor <init>(IILandroidx/compose/runtime/collection/MutableVector;)V
+    .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(II",
@@ -63,20 +77,16 @@
         }
     .end annotation
 
-    const-string v0, "items"
-
-    invoke-static {p3, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 751
+    .line 752
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 752
+    .line 753
     iput p1, p0, Landroidx/compose/foundation/layout/FlowResult;->mainAxisTotalSize:I
 
-    .line 753
+    .line 754
     iput p2, p0, Landroidx/compose/foundation/layout/FlowResult;->crossAxisTotalSize:I
 
-    .line 754
+    .line 755
     iput-object p3, p0, Landroidx/compose/foundation/layout/FlowResult;->items:Landroidx/compose/runtime/collection/MutableVector;
 
     return-void
@@ -87,7 +97,7 @@
 .method public final getCrossAxisTotalSize()I
     .locals 0
 
-    .line 753
+    .line 754
     iget p0, p0, Landroidx/compose/foundation/layout/FlowResult;->crossAxisTotalSize:I
 
     return p0
@@ -104,7 +114,7 @@
         }
     .end annotation
 
-    .line 754
+    .line 755
     iget-object p0, p0, Landroidx/compose/foundation/layout/FlowResult;->items:Landroidx/compose/runtime/collection/MutableVector;
 
     return-object p0
@@ -113,7 +123,7 @@
 .method public final getMainAxisTotalSize()I
     .locals 0
 
-    .line 752
+    .line 753
     iget p0, p0, Landroidx/compose/foundation/layout/FlowResult;->mainAxisTotalSize:I
 
     return p0

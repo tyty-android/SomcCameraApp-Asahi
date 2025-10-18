@@ -21,7 +21,7 @@
 .method constructor <init>()V
     .locals 0
 
-    .line 387
+    .line 390
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -42,10 +42,10 @@
         }
     .end annotation
 
-    .line 391
+    .line 394
     check-cast p1, Ljp/co/sony/mc/camera/setting/CommonSettings;
 
-    .line 392
+    .line 395
     invoke-static {p1}, Ljp/co/sony/mc/camera/setting/CommonSettings;->-$$Nest$mgetGridLine(Ljp/co/sony/mc/camera/setting/CommonSettings;)Ljp/co/sony/mc/camera/configuration/parameters/GridLine;
 
     move-result-object p0

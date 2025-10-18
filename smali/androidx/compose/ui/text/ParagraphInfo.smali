@@ -6,7 +6,7 @@
 # annotations
 .annotation runtime Lkotlin/Metadata;
     d1 = {
-        "\u0000F\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0008\n\u0002\u0008\u0004\n\u0002\u0010\u0007\n\u0002\u0008\u001d\n\u0002\u0010\u000b\n\u0002\u0008\u0003\n\u0002\u0010\u000e\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0006\n\u0002\u0018\u0002\n\u0002\u0008\u0005\u0008\u0080\u0008\u0018\u00002\u00020\u0001BE\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\u0006\u0010\u0004\u001a\u00020\u0005\u0012\u0006\u0010\u0006\u001a\u00020\u0005\u0012\u0008\u0008\u0002\u0010\u0007\u001a\u00020\u0005\u0012\u0008\u0008\u0002\u0010\u0008\u001a\u00020\u0005\u0012\u0008\u0008\u0002\u0010\t\u001a\u00020\n\u0012\u0008\u0008\u0002\u0010\u000b\u001a\u00020\n\u00a2\u0006\u0002\u0010\u000cJ\t\u0010\u001f\u001a\u00020\u0003H\u00c6\u0003J\t\u0010 \u001a\u00020\u0005H\u00c6\u0003J\t\u0010!\u001a\u00020\u0005H\u00c6\u0003J\t\u0010\"\u001a\u00020\u0005H\u00c6\u0003J\t\u0010#\u001a\u00020\u0005H\u00c6\u0003J\t\u0010$\u001a\u00020\nH\u00c6\u0003J\t\u0010%\u001a\u00020\nH\u00c6\u0003JO\u0010&\u001a\u00020\u00002\u0008\u0008\u0002\u0010\u0002\u001a\u00020\u00032\u0008\u0008\u0002\u0010\u0004\u001a\u00020\u00052\u0008\u0008\u0002\u0010\u0006\u001a\u00020\u00052\u0008\u0008\u0002\u0010\u0007\u001a\u00020\u00052\u0008\u0008\u0002\u0010\u0008\u001a\u00020\u00052\u0008\u0008\u0002\u0010\t\u001a\u00020\n2\u0008\u0008\u0002\u0010\u000b\u001a\u00020\nH\u00c6\u0001J\u0013\u0010\'\u001a\u00020(2\u0008\u0010)\u001a\u0004\u0018\u00010\u0001H\u00d6\u0003J\t\u0010*\u001a\u00020\u0005H\u00d6\u0001J\t\u0010+\u001a\u00020,H\u00d6\u0001J\n\u0010-\u001a\u00020.*\u00020.J\n\u0010-\u001a\u00020/*\u00020/J\u0017\u0010-\u001a\u000200*\u000200\u00f8\u0001\u0000\u00f8\u0001\u0001\u00a2\u0006\u0004\u00081\u00102J\n\u00103\u001a\u00020\u0005*\u00020\u0005J\n\u00104\u001a\u00020\u0005*\u00020\u0005J\n\u00105\u001a\u00020\n*\u00020\nJ\u0017\u00106\u001a\u000207*\u000207\u00f8\u0001\u0000\u00f8\u0001\u0001\u00a2\u0006\u0004\u00088\u00102J\n\u00109\u001a\u00020\u0005*\u00020\u0005J\n\u0010:\u001a\u00020\u0005*\u00020\u0005J\n\u0010;\u001a\u00020\n*\u00020\nR\u001a\u0010\u000b\u001a\u00020\nX\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\u0008\r\u0010\u000e\"\u0004\u0008\u000f\u0010\u0010R\u0011\u0010\u0006\u001a\u00020\u0005\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\u0011\u0010\u0012R\u001a\u0010\u0008\u001a\u00020\u0005X\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\u0008\u0013\u0010\u0012\"\u0004\u0008\u0014\u0010\u0015R\u0011\u0010\u0016\u001a\u00020\u00058F\u00a2\u0006\u0006\u001a\u0004\u0008\u0017\u0010\u0012R\u0011\u0010\u0002\u001a\u00020\u0003\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\u0018\u0010\u0019R\u0011\u0010\u0004\u001a\u00020\u0005\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\u001a\u0010\u0012R\u001a\u0010\u0007\u001a\u00020\u0005X\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\u0008\u001b\u0010\u0012\"\u0004\u0008\u001c\u0010\u0015R\u001a\u0010\t\u001a\u00020\nX\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\u0008\u001d\u0010\u000e\"\u0004\u0008\u001e\u0010\u0010\u0082\u0002\u000b\n\u0005\u0008\u00a1\u001e0\u0001\n\u0002\u0008\u0019\u00a8\u0006<"
+        "\u0000F\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0008\n\u0002\u0008\u0004\n\u0002\u0010\u0007\n\u0002\u0008\u001d\n\u0002\u0010\u000b\n\u0002\u0008\u0003\n\u0002\u0010\u000e\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0006\n\u0002\u0018\u0002\n\u0002\u0008\u0005\u0008\u0080\u0008\u0018\u00002\u00020\u0001BE\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\u0006\u0010\u0004\u001a\u00020\u0005\u0012\u0006\u0010\u0006\u001a\u00020\u0005\u0012\u0008\u0008\u0002\u0010\u0007\u001a\u00020\u0005\u0012\u0008\u0008\u0002\u0010\u0008\u001a\u00020\u0005\u0012\u0008\u0008\u0002\u0010\t\u001a\u00020\n\u0012\u0008\u0008\u0002\u0010\u000b\u001a\u00020\n\u00a2\u0006\u0002\u0010\u000cJ\t\u0010\u001f\u001a\u00020\u0003H\u00c6\u0003J\t\u0010 \u001a\u00020\u0005H\u00c6\u0003J\t\u0010!\u001a\u00020\u0005H\u00c6\u0003J\t\u0010\"\u001a\u00020\u0005H\u00c6\u0003J\t\u0010#\u001a\u00020\u0005H\u00c6\u0003J\t\u0010$\u001a\u00020\nH\u00c6\u0003J\t\u0010%\u001a\u00020\nH\u00c6\u0003JO\u0010&\u001a\u00020\u00002\u0008\u0008\u0002\u0010\u0002\u001a\u00020\u00032\u0008\u0008\u0002\u0010\u0004\u001a\u00020\u00052\u0008\u0008\u0002\u0010\u0006\u001a\u00020\u00052\u0008\u0008\u0002\u0010\u0007\u001a\u00020\u00052\u0008\u0008\u0002\u0010\u0008\u001a\u00020\u00052\u0008\u0008\u0002\u0010\t\u001a\u00020\n2\u0008\u0008\u0002\u0010\u000b\u001a\u00020\nH\u00c6\u0001J\u0013\u0010\'\u001a\u00020(2\u0008\u0010)\u001a\u0004\u0018\u00010\u0001H\u00d6\u0003J\t\u0010*\u001a\u00020\u0005H\u00d6\u0001J\t\u0010+\u001a\u00020,H\u00d6\u0001J\n\u0010-\u001a\u00020.*\u00020.J\n\u0010-\u001a\u00020/*\u00020/J\u0014\u0010-\u001a\u000200*\u000200\u00f8\u0001\u0000\u00a2\u0006\u0004\u00081\u00102J\n\u00103\u001a\u00020\u0005*\u00020\u0005J\n\u00104\u001a\u00020\u0005*\u00020\u0005J\n\u00105\u001a\u00020\n*\u00020\nJ\u0014\u00106\u001a\u000207*\u000207\u00f8\u0001\u0000\u00a2\u0006\u0004\u00088\u00102J\n\u00109\u001a\u00020\u0005*\u00020\u0005J\n\u0010:\u001a\u00020\u0005*\u00020\u0005J\n\u0010;\u001a\u00020\n*\u00020\nR\u001a\u0010\u000b\u001a\u00020\nX\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\u0008\r\u0010\u000e\"\u0004\u0008\u000f\u0010\u0010R\u0011\u0010\u0006\u001a\u00020\u0005\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\u0011\u0010\u0012R\u001a\u0010\u0008\u001a\u00020\u0005X\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\u0008\u0013\u0010\u0012\"\u0004\u0008\u0014\u0010\u0015R\u0011\u0010\u0016\u001a\u00020\u00058F\u00a2\u0006\u0006\u001a\u0004\u0008\u0017\u0010\u0012R\u0011\u0010\u0002\u001a\u00020\u0003\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\u0018\u0010\u0019R\u0011\u0010\u0004\u001a\u00020\u0005\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\u001a\u0010\u0012R\u001a\u0010\u0007\u001a\u00020\u0005X\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\u0008\u001b\u0010\u0012\"\u0004\u0008\u001c\u0010\u0015R\u001a\u0010\t\u001a\u00020\nX\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\u0008\u001d\u0010\u000e\"\u0004\u0008\u001e\u0010\u0010\u0082\u0002\u0007\n\u0005\u0008\u00a1\u001e0\u0001\u00a8\u0006<"
     }
     d2 = {
         "Landroidx/compose/ui/text/ParagraphInfo;",
@@ -81,6 +81,10 @@
 .end annotation
 
 
+# static fields
+.field public static final $stable:I = 0x8
+
+
 # instance fields
 .field private bottom:F
 
@@ -98,35 +102,37 @@
 
 
 # direct methods
+.method static constructor <clinit>()V
+    .locals 0
+
+    return-void
+.end method
+
 .method public constructor <init>(Landroidx/compose/ui/text/Paragraph;IIIIFF)V
-    .locals 1
+    .locals 0
 
-    const-string v0, "paragraph"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 885
+    .line 957
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 886
+    .line 958
     iput-object p1, p0, Landroidx/compose/ui/text/ParagraphInfo;->paragraph:Landroidx/compose/ui/text/Paragraph;
 
-    .line 887
+    .line 959
     iput p2, p0, Landroidx/compose/ui/text/ParagraphInfo;->startIndex:I
 
-    .line 888
+    .line 960
     iput p3, p0, Landroidx/compose/ui/text/ParagraphInfo;->endIndex:I
 
-    .line 889
+    .line 961
     iput p4, p0, Landroidx/compose/ui/text/ParagraphInfo;->startLineIndex:I
 
-    .line 890
+    .line 962
     iput p5, p0, Landroidx/compose/ui/text/ParagraphInfo;->endLineIndex:I
 
-    .line 891
+    .line 963
     iput p6, p0, Landroidx/compose/ui/text/ParagraphInfo;->top:F
 
-    .line 892
+    .line 964
     iput p7, p0, Landroidx/compose/ui/text/ParagraphInfo;->bottom:F
 
     return-void
@@ -195,7 +201,7 @@
 
     move v5, p3
 
-    .line 885
+    .line 957
     invoke-direct/range {v2 .. v9}, Landroidx/compose/ui/text/ParagraphInfo;-><init>(Landroidx/compose/ui/text/Paragraph;IIIIFF)V
 
     return-void
@@ -349,10 +355,6 @@
 .method public final copy(Landroidx/compose/ui/text/Paragraph;IIIIFF)Landroidx/compose/ui/text/ParagraphInfo;
     .locals 8
 
-    const-string p0, "paragraph"
-
-    invoke-static {p1, p0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
     new-instance p0, Landroidx/compose/ui/text/ParagraphInfo;
 
     move-object v0, p0
@@ -478,7 +480,7 @@
 .method public final getBottom()F
     .locals 0
 
-    .line 892
+    .line 964
     iget p0, p0, Landroidx/compose/ui/text/ParagraphInfo;->bottom:F
 
     return p0
@@ -487,7 +489,7 @@
 .method public final getEndIndex()I
     .locals 0
 
-    .line 888
+    .line 960
     iget p0, p0, Landroidx/compose/ui/text/ParagraphInfo;->endIndex:I
 
     return p0
@@ -496,7 +498,7 @@
 .method public final getEndLineIndex()I
     .locals 0
 
-    .line 890
+    .line 962
     iget p0, p0, Landroidx/compose/ui/text/ParagraphInfo;->endLineIndex:I
 
     return p0
@@ -505,7 +507,7 @@
 .method public final getLength()I
     .locals 1
 
-    .line 899
+    .line 971
     iget v0, p0, Landroidx/compose/ui/text/ParagraphInfo;->endIndex:I
 
     iget p0, p0, Landroidx/compose/ui/text/ParagraphInfo;->startIndex:I
@@ -518,7 +520,7 @@
 .method public final getParagraph()Landroidx/compose/ui/text/Paragraph;
     .locals 0
 
-    .line 886
+    .line 958
     iget-object p0, p0, Landroidx/compose/ui/text/ParagraphInfo;->paragraph:Landroidx/compose/ui/text/Paragraph;
 
     return-object p0
@@ -527,7 +529,7 @@
 .method public final getStartIndex()I
     .locals 0
 
-    .line 887
+    .line 959
     iget p0, p0, Landroidx/compose/ui/text/ParagraphInfo;->startIndex:I
 
     return p0
@@ -536,7 +538,7 @@
 .method public final getStartLineIndex()I
     .locals 0
 
-    .line 889
+    .line 961
     iget p0, p0, Landroidx/compose/ui/text/ParagraphInfo;->startLineIndex:I
 
     return p0
@@ -545,7 +547,7 @@
 .method public final getTop()F
     .locals 0
 
-    .line 891
+    .line 963
     iget p0, p0, Landroidx/compose/ui/text/ParagraphInfo;->top:F
 
     return p0
@@ -626,7 +628,7 @@
 .method public final setBottom(F)V
     .locals 0
 
-    .line 892
+    .line 964
     iput p1, p0, Landroidx/compose/ui/text/ParagraphInfo;->bottom:F
 
     return-void
@@ -635,7 +637,7 @@
 .method public final setEndLineIndex(I)V
     .locals 0
 
-    .line 890
+    .line 962
     iput p1, p0, Landroidx/compose/ui/text/ParagraphInfo;->endLineIndex:I
 
     return-void
@@ -644,7 +646,7 @@
 .method public final setStartLineIndex(I)V
     .locals 0
 
-    .line 889
+    .line 961
     iput p1, p0, Landroidx/compose/ui/text/ParagraphInfo;->startLineIndex:I
 
     return-void
@@ -653,7 +655,7 @@
 .method public final setTop(F)V
     .locals 0
 
-    .line 891
+    .line 963
     iput p1, p0, Landroidx/compose/ui/text/ParagraphInfo;->top:F
 
     return-void
@@ -662,13 +664,9 @@
 .method public final toGlobal(Landroidx/compose/ui/geometry/Rect;)Landroidx/compose/ui/geometry/Rect;
     .locals 2
 
-    const-string v0, "<this>"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
     const/4 v0, 0x0
 
-    .line 961
+    .line 1033
     iget p0, p0, Landroidx/compose/ui/text/ParagraphInfo;->top:F
 
     invoke-static {v0, p0}, Landroidx/compose/ui/geometry/OffsetKt;->Offset(FF)J
@@ -685,13 +683,9 @@
 .method public final toGlobal(Landroidx/compose/ui/graphics/Path;)Landroidx/compose/ui/graphics/Path;
     .locals 2
 
-    const-string v0, "<this>"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
     const/4 v0, 0x0
 
-    .line 971
+    .line 1043
     iget p0, p0, Landroidx/compose/ui/text/ParagraphInfo;->top:F
 
     invoke-static {v0, p0}, Landroidx/compose/ui/geometry/OffsetKt;->Offset(FF)J
@@ -706,7 +700,7 @@
 .method public final toGlobal-GEjPoXI(J)J
     .locals 1
 
-    .line 980
+    .line 1052
     invoke-static {p1, p2}, Landroidx/compose/ui/text/TextRange;->getStart-impl(J)I
 
     move-result v0
@@ -733,7 +727,7 @@
 .method public final toGlobalIndex(I)I
     .locals 0
 
-    .line 912
+    .line 984
     iget p0, p0, Landroidx/compose/ui/text/ParagraphInfo;->startIndex:I
 
     add-int/2addr p1, p0
@@ -744,7 +738,7 @@
 .method public final toGlobalLineIndex(I)I
     .locals 0
 
-    .line 929
+    .line 1001
     iget p0, p0, Landroidx/compose/ui/text/ParagraphInfo;->startLineIndex:I
 
     add-int/2addr p1, p0
@@ -755,7 +749,7 @@
 .method public final toGlobalYPosition(F)F
     .locals 0
 
-    .line 937
+    .line 1009
     iget p0, p0, Landroidx/compose/ui/text/ParagraphInfo;->top:F
 
     add-float/2addr p1, p0
@@ -766,7 +760,7 @@
 .method public final toLocal-MK-Hz9U(J)J
     .locals 1
 
-    .line 953
+    .line 1025
     invoke-static {p1, p2}, Landroidx/compose/ui/geometry/Offset;->getX-impl(J)F
 
     move-result v0
@@ -789,7 +783,7 @@
 .method public final toLocalIndex(I)I
     .locals 2
 
-    .line 905
+    .line 977
     iget v0, p0, Landroidx/compose/ui/text/ParagraphInfo;->startIndex:I
 
     iget v1, p0, Landroidx/compose/ui/text/ParagraphInfo;->endIndex:I
@@ -808,7 +802,7 @@
 .method public final toLocalLineIndex(I)I
     .locals 0
 
-    .line 921
+    .line 993
     iget p0, p0, Landroidx/compose/ui/text/ParagraphInfo;->startLineIndex:I
 
     sub-int/2addr p1, p0
@@ -819,7 +813,7 @@
 .method public final toLocalYPosition(F)F
     .locals 0
 
-    .line 945
+    .line 1017
     iget p0, p0, Landroidx/compose/ui/text/ParagraphInfo;->top:F
 
     sub-float/2addr p1, p0

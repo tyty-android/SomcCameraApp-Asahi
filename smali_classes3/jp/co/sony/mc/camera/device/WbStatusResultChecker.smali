@@ -42,18 +42,22 @@
 
 # virtual methods
 .method public checkOnCompleted(Landroid/hardware/camera2/CaptureRequest;Ljp/co/sony/mc/camera/device/CaptureResultHolder;)V
-    .locals 6
+    .locals 8
 
     .line 36
     sget-boolean p1, Ljp/co/sony/mc/camera/util/CamLog;->VERBOSE:Z
 
+    const/4 v0, 0x0
+
+    const/4 v1, 0x1
+
     if-eqz p1, :cond_0
 
-    const-string p1, "check() E"
+    new-array p1, v1, [Ljava/lang/String;
 
-    filled-new-array {p1}, [Ljava/lang/String;
+    const-string v2, "check() E"
 
-    move-result-object p1
+    aput-object v2, p1, v0
 
     invoke-static {p1}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
@@ -66,16 +70,16 @@
 
     move-result-object p1
 
-    move-object v2, p1
+    move-object v4, p1
 
-    check-cast v2, Ljava/lang/Integer;
+    check-cast v4, Ljava/lang/Integer;
 
-    if-eqz v2, :cond_2
+    if-eqz v4, :cond_2
 
     .line 40
     iget-object p1, p0, Ljp/co/sony/mc/camera/device/WbStatusResultChecker;->mStatus:Ljava/lang/Integer;
 
-    invoke-virtual {v2, p1}, Ljava/lang/Integer;->equals(Ljava/lang/Object;)Z
+    invoke-virtual {v4, p1}, Ljava/lang/Integer;->equals(Ljava/lang/Object;)Z
 
     move-result p1
 
@@ -86,11 +90,11 @@
 
     if-eqz p0, :cond_1
 
-    const-string p0, "same to previous value of CONTROL_WB_CUSTOM_STATE"
+    new-array p0, v1, [Ljava/lang/String;
 
-    filled-new-array {p0}, [Ljava/lang/String;
+    const-string p1, "same to previous value of CONTROL_WB_CUSTOM_STATE"
 
-    move-result-object p0
+    aput-object p1, p0, v0
 
     invoke-static {p0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
 
@@ -99,7 +103,7 @@
 
     .line 44
     :cond_2
-    iput-object v2, p0, Ljp/co/sony/mc/camera/device/WbStatusResultChecker;->mStatus:Ljava/lang/Integer;
+    iput-object v4, p0, Ljp/co/sony/mc/camera/device/WbStatusResultChecker;->mStatus:Ljava/lang/Integer;
 
     .line 45
     sget-object p1, Lcom/sonymobile/camera/device/SomcCaptureResultKeys;->SONYMOBILE_CONTROL_WB_CUSTOM_RATIO:Landroid/hardware/camera2/CaptureResult$Key;
@@ -109,16 +113,16 @@
 
     move-result-object p1
 
-    move-object v3, p1
+    move-object v5, p1
 
-    check-cast v3, [I
+    check-cast v5, [I
 
     .line 49
     iget-boolean p1, p0, Ljp/co/sony/mc/camera/device/WbStatusResultChecker;->mIsTemperatureSupported:Z
 
-    const/4 v0, 0x0
+    const/4 v2, 0x0
 
-    const v1, 0x45abe000    # 5500.0f
+    const v3, 0x45abe000    # 5500.0f
 
     if-eqz p1, :cond_4
 
@@ -137,39 +141,35 @@
     .line 52
     array-length p2, p1
 
-    const/4 v4, 0x2
+    const/4 v6, 0x2
 
-    if-ge p2, v4, :cond_3
+    if-ge p2, v6, :cond_3
 
     goto :goto_0
 
-    :cond_3
-    const/4 p2, 0x0
-
     .line 56
-    aget v1, p1, p2
-
-    const/4 p2, 0x1
+    :cond_3
+    aget v3, p1, v0
 
     .line 57
-    aget v0, p1, p2
+    aget v2, p1, v1
 
     :cond_4
     :goto_0
-    move v5, v0
+    move v7, v2
 
-    move v4, v1
+    move v6, v3
 
     .line 64
     iget-object p1, p0, Ljp/co/sony/mc/camera/device/WbStatusResultChecker;->mHandler:Landroid/os/Handler;
 
     new-instance p2, Ljp/co/sony/mc/camera/device/WbStatusResultChecker$1;
 
-    move-object v0, p2
+    move-object v2, p2
 
-    move-object v1, p0
+    move-object v3, p0
 
-    invoke-direct/range {v0 .. v5}, Ljp/co/sony/mc/camera/device/WbStatusResultChecker$1;-><init>(Ljp/co/sony/mc/camera/device/WbStatusResultChecker;Ljava/lang/Integer;[IFF)V
+    invoke-direct/range {v2 .. v7}, Ljp/co/sony/mc/camera/device/WbStatusResultChecker$1;-><init>(Ljp/co/sony/mc/camera/device/WbStatusResultChecker;Ljava/lang/Integer;[IFF)V
 
     invoke-virtual {p1, p2}, Landroid/os/Handler;->post(Ljava/lang/Runnable;)Z
 

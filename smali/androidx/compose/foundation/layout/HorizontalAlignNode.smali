@@ -38,22 +38,28 @@
 .end annotation
 
 
+# static fields
+.field public static final $stable:I = 0x8
+
+
 # instance fields
 .field private horizontal:Landroidx/compose/ui/Alignment$Horizontal;
 
 
 # direct methods
+.method static constructor <clinit>()V
+    .locals 0
+
+    return-void
+.end method
+
 .method public constructor <init>(Landroidx/compose/ui/Alignment$Horizontal;)V
-    .locals 1
+    .locals 0
 
-    const-string v0, "horizontal"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 779
+    .line 782
     invoke-direct {p0}, Landroidx/compose/ui/Modifier$Node;-><init>()V
 
-    .line 778
+    .line 781
     iput-object p1, p0, Landroidx/compose/foundation/layout/HorizontalAlignNode;->horizontal:Landroidx/compose/ui/Alignment$Horizontal;
 
     return-void
@@ -64,7 +70,7 @@
 .method public final getHorizontal()Landroidx/compose/ui/Alignment$Horizontal;
     .locals 0
 
-    .line 778
+    .line 781
     iget-object p0, p0, Landroidx/compose/foundation/layout/HorizontalAlignNode;->horizontal:Landroidx/compose/ui/Alignment$Horizontal;
 
     return-object p0
@@ -73,11 +79,7 @@
 .method public modifyParentData(Landroidx/compose/ui/unit/Density;Ljava/lang/Object;)Landroidx/compose/foundation/layout/RowColumnParentData;
     .locals 6
 
-    const-string v0, "<this>"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 781
+    .line 784
     instance-of p1, p2, Landroidx/compose/foundation/layout/RowColumnParentData;
 
     if-eqz p1, :cond_0
@@ -108,7 +110,7 @@
 
     invoke-direct/range {v0 .. v5}, Landroidx/compose/foundation/layout/RowColumnParentData;-><init>(FZLandroidx/compose/foundation/layout/CrossAxisAlignment;ILkotlin/jvm/internal/DefaultConstructorMarker;)V
 
-    .line 782
+    .line 785
     :cond_1
     sget-object p1, Landroidx/compose/foundation/layout/CrossAxisAlignment;->Companion:Landroidx/compose/foundation/layout/CrossAxisAlignment$Companion;
 
@@ -126,7 +128,7 @@
 .method public bridge synthetic modifyParentData(Landroidx/compose/ui/unit/Density;Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
 
-    .line 777
+    .line 780
     invoke-virtual {p0, p1, p2}, Landroidx/compose/foundation/layout/HorizontalAlignNode;->modifyParentData(Landroidx/compose/ui/unit/Density;Ljava/lang/Object;)Landroidx/compose/foundation/layout/RowColumnParentData;
 
     move-result-object p0
@@ -135,13 +137,9 @@
 .end method
 
 .method public final setHorizontal(Landroidx/compose/ui/Alignment$Horizontal;)V
-    .locals 1
+    .locals 0
 
-    const-string v0, "<set-?>"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 778
+    .line 781
     iput-object p1, p0, Landroidx/compose/foundation/layout/HorizontalAlignNode;->horizontal:Landroidx/compose/ui/Alignment$Horizontal;
 
     return-void

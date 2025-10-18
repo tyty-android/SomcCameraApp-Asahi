@@ -25,7 +25,7 @@
 .method private constructor <init>(Ljp/co/sony/mc/camera/CameraActivity;)V
     .locals 0
 
-    .line 2538
+    .line 2597
     iput-object p1, p0, Ljp/co/sony/mc/camera/CameraActivity$AutoPowerOffListenerImpl;->this$0:Ljp/co/sony/mc/camera/CameraActivity;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -46,7 +46,7 @@
 .method public onAutoPowerOff(Ljava/lang/Object;)V
     .locals 5
 
-    .line 2548
+    .line 2607
     iget-object v0, p0, Ljp/co/sony/mc/camera/CameraActivity$AutoPowerOffListenerImpl;->this$0:Ljp/co/sony/mc/camera/CameraActivity;
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/CameraActivity;->-$$Nest$fgetmFragmentController(Ljp/co/sony/mc/camera/CameraActivity;)Ljp/co/sony/mc/camera/view/FragmentController;
@@ -63,7 +63,7 @@
 
     if-eqz v0, :cond_0
 
-    .line 2549
+    .line 2608
     iget-object v0, p0, Ljp/co/sony/mc/camera/CameraActivity$AutoPowerOffListenerImpl;->this$0:Ljp/co/sony/mc/camera/CameraActivity;
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/CameraActivity;->-$$Nest$fgetmFragmentController(Ljp/co/sony/mc/camera/CameraActivity;)Ljp/co/sony/mc/camera/view/FragmentController;
@@ -72,7 +72,7 @@
 
     invoke-virtual {v0}, Ljp/co/sony/mc/camera/view/FragmentController;->hideAutoPowerOffHintText()V
 
-    .line 2553
+    .line 2612
     :cond_0
     invoke-static {}, Ljp/co/sony/mc/camera/CameraActivity$AutoPowerOffType;->values()[Ljp/co/sony/mc/camera/CameraActivity$AutoPowerOffType;
 
@@ -87,7 +87,7 @@
 
     aget-object v3, v0, v2
 
-    .line 2554
+    .line 2613
     invoke-virtual {v3}, Ljp/co/sony/mc/camera/CameraActivity$AutoPowerOffType;->getReason()Ljava/lang/String;
 
     move-result-object v4
@@ -98,7 +98,7 @@
 
     if-eqz v4, :cond_1
 
-    .line 2555
+    .line 2614
     invoke-virtual {v3}, Ljp/co/sony/mc/camera/CameraActivity$AutoPowerOffType;->getAction()Ljp/co/sony/mc/camera/research/parameters/Event$AutoPowerOffAction;
 
     goto :goto_1
@@ -108,7 +108,7 @@
 
     goto :goto_0
 
-    .line 2559
+    .line 2618
     :cond_2
     :goto_1
     iget-object p0, p0, Ljp/co/sony/mc/camera/CameraActivity$AutoPowerOffListenerImpl;->this$0:Ljp/co/sony/mc/camera/CameraActivity;
@@ -121,7 +121,7 @@
 .method public onAutoPowerOffWarning()V
     .locals 1
 
-    .line 2541
+    .line 2600
     iget-object v0, p0, Ljp/co/sony/mc/camera/CameraActivity$AutoPowerOffListenerImpl;->this$0:Ljp/co/sony/mc/camera/CameraActivity;
 
     invoke-static {v0}, Ljp/co/sony/mc/camera/CameraActivity;->-$$Nest$fgetmFragmentController(Ljp/co/sony/mc/camera/CameraActivity;)Ljp/co/sony/mc/camera/view/FragmentController;
@@ -138,7 +138,7 @@
 
     if-nez v0, :cond_0
 
-    .line 2542
+    .line 2601
     iget-object p0, p0, Ljp/co/sony/mc/camera/CameraActivity$AutoPowerOffListenerImpl;->this$0:Ljp/co/sony/mc/camera/CameraActivity;
 
     invoke-static {p0}, Ljp/co/sony/mc/camera/CameraActivity;->-$$Nest$fgetmFragmentController(Ljp/co/sony/mc/camera/CameraActivity;)Ljp/co/sony/mc/camera/view/FragmentController;

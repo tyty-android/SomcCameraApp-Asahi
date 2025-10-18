@@ -2,6 +2,14 @@
 .super Ljava/lang/Object;
 
 
+# annotations
+.annotation system Ldalvik/annotation/MemberClasses;
+    value = {
+        Landroidx/compose/foundation/R$string;
+    }
+.end annotation
+
+
 # direct methods
 .method private constructor <init>()V
     .locals 0

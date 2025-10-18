@@ -117,10 +117,6 @@
         }
     .end annotation
 
-    const-string v0, "$this$animate"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
-
     .line 82
     iget-object p0, p0, Landroidx/compose/animation/core/SuspendAnimationKt$animateDecay$2;->$block:Lkotlin/jvm/functions/Function2;
 

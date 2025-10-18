@@ -16,6 +16,8 @@
 
 .field public static final MEDIA_TYPE_3GP_MIME:Ljava/lang/String; = "video/3gpp"
 
+.field public static final MEDIA_TYPE_AUTO_FRAME_MPEG4_EXT:Ljava/lang/String; = "_framing.mp4"
+
 .field public static final MEDIA_TYPE_DNG_EXT:Ljava/lang/String; = ".DNG"
 
 .field public static final MEDIA_TYPE_DNG_MIME:Ljava/lang/String; = "image/x-adobe-dng"
@@ -59,7 +61,7 @@
 .method static constructor <clinit>()V
     .locals 4
 
-    .line 24
+    .line 23
     const-string v0, "content://media/external/extended_images/media"
 
     invoke-static {v0}, Landroid/net/Uri;->parse(Ljava/lang/String;)Landroid/net/Uri;
@@ -68,7 +70,7 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/mediasaving/MediaSavingConstants;->EXTENDED_PHOTO_STORAGE_URI:Landroid/net/Uri;
 
-    .line 27
+    .line 26
     const-string v0, "content://media/external/extended_video/media"
 
     invoke-static {v0}, Landroid/net/Uri;->parse(Ljava/lang/String;)Landroid/net/Uri;
@@ -77,7 +79,7 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/mediasaving/MediaSavingConstants;->EXTENDED_VIDEO_STORAGE_URI:Landroid/net/Uri;
 
-    .line 30
+    .line 29
     const-string v0, "content://media/external/images/media"
 
     invoke-static {v0}, Landroid/net/Uri;->parse(Ljava/lang/String;)Landroid/net/Uri;
@@ -86,17 +88,17 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/mediasaving/MediaSavingConstants;->STANDARD_PHOTO_STORAGE_URI:Landroid/net/Uri;
 
-    .line 33
+    .line 32
     sget-object v0, Landroid/provider/MediaStore$Images$Thumbnails;->EXTERNAL_CONTENT_URI:Landroid/net/Uri;
 
     sput-object v0, Ljp/co/sony/mc/camera/mediasaving/MediaSavingConstants;->PHOTO_THUMBNAIL_URI:Landroid/net/Uri;
 
-    .line 35
+    .line 34
     sget-object v0, Landroid/provider/MediaStore$Video$Thumbnails;->EXTERNAL_CONTENT_URI:Landroid/net/Uri;
 
     sput-object v0, Ljp/co/sony/mc/camera/mediasaving/MediaSavingConstants;->VIDEO_THUMBNAIL_URI:Landroid/net/Uri;
 
-    .line 38
+    .line 37
     new-instance v0, Ljava/lang/StringBuilder;
 
     const-string v1, "XPERIA"
@@ -121,7 +123,7 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/mediasaving/MediaSavingConstants;->BURST_DIR_NAME:Ljava/lang/String;
 
-    .line 41
+    .line 40
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
@@ -144,7 +146,7 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/mediasaving/MediaSavingConstants;->TIMESHIFT_DIR_NAME:Ljava/lang/String;
 
-    .line 44
+    .line 43
     new-instance v2, Ljava/lang/StringBuilder;
 
     invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
@@ -177,7 +179,7 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/mediasaving/MediaSavingConstants;->TIMESHIFT_RELATIVE_ROOT_DIR_NAME:Ljava/lang/String;
 
-    .line 51
+    .line 50
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
@@ -218,7 +220,7 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 21
+    .line 20
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void

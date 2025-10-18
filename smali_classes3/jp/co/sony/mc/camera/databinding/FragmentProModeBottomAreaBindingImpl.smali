@@ -13,11 +13,11 @@
 
 
 # instance fields
-.field private final mCallback63:Landroid/view/View$OnClickListener;
+.field private final mCallback68:Landroid/view/View$OnClickListener;
 
-.field private final mCallback64:Landroid/view/View$OnClickListener;
+.field private final mCallback69:Landroid/view/View$OnClickListener;
 
-.field private final mCallback65:Landroid/view/View$OnClickListener;
+.field private final mCallback70:Landroid/view/View$OnClickListener;
 
 .field private mDirtyFlags:J
 
@@ -39,12 +39,16 @@
 
     sput-object v0, Ljp/co/sony/mc/camera/databinding/FragmentProModeBottomAreaBindingImpl;->sIncludes:Landroidx/databinding/ViewDataBinding$IncludedLayouts;
 
+    const/4 v1, 0x1
+
     .line 16
-    const-string v1, "fragment_common_operation_capture_button"
+    new-array v1, v1, [Ljava/lang/String;
 
-    filled-new-array {v1}, [Ljava/lang/String;
+    const-string v2, "fragment_common_operation_capture_button"
 
-    move-result-object v1
+    const/4 v3, 0x0
+
+    aput-object v2, v1, v3
 
     const/4 v2, 0x5
 
@@ -52,15 +56,13 @@
 
     move-result-object v2
 
-    const v3, 0x7f0c0080
+    const v4, 0x7f0c0080
 
-    filled-new-array {v3}, [I
+    filled-new-array {v4}, [I
 
-    move-result-object v3
+    move-result-object v4
 
-    const/4 v4, 0x0
-
-    invoke-virtual {v0, v4, v1, v2, v3}, Landroidx/databinding/ViewDataBinding$IncludedLayouts;->setIncludes(I[Ljava/lang/String;[I[I)V
+    invoke-virtual {v0, v3, v1, v2, v4}, Landroidx/databinding/ViewDataBinding$IncludedLayouts;->setIncludes(I[Ljava/lang/String;[I[I)V
 
     const/4 v0, 0x0
 
@@ -192,23 +194,23 @@
     .line 58
     new-instance p1, Ljp/co/sony/mc/camera/generated/callback/OnClickListener;
 
-    invoke-direct {p1, p0, v9}, Ljp/co/sony/mc/camera/generated/callback/OnClickListener;-><init>(Ljp/co/sony/mc/camera/generated/callback/OnClickListener$Listener;I)V
+    invoke-direct {p1, p0, v10}, Ljp/co/sony/mc/camera/generated/callback/OnClickListener;-><init>(Ljp/co/sony/mc/camera/generated/callback/OnClickListener$Listener;I)V
 
-    iput-object p1, p0, Ljp/co/sony/mc/camera/databinding/FragmentProModeBottomAreaBindingImpl;->mCallback65:Landroid/view/View$OnClickListener;
+    iput-object p1, p0, Ljp/co/sony/mc/camera/databinding/FragmentProModeBottomAreaBindingImpl;->mCallback69:Landroid/view/View$OnClickListener;
 
     .line 59
     new-instance p1, Ljp/co/sony/mc/camera/generated/callback/OnClickListener;
 
-    invoke-direct {p1, p0, v10}, Ljp/co/sony/mc/camera/generated/callback/OnClickListener;-><init>(Ljp/co/sony/mc/camera/generated/callback/OnClickListener$Listener;I)V
+    invoke-direct {p1, p0, v9}, Ljp/co/sony/mc/camera/generated/callback/OnClickListener;-><init>(Ljp/co/sony/mc/camera/generated/callback/OnClickListener$Listener;I)V
 
-    iput-object p1, p0, Ljp/co/sony/mc/camera/databinding/FragmentProModeBottomAreaBindingImpl;->mCallback64:Landroid/view/View$OnClickListener;
+    iput-object p1, p0, Ljp/co/sony/mc/camera/databinding/FragmentProModeBottomAreaBindingImpl;->mCallback70:Landroid/view/View$OnClickListener;
 
     .line 60
     new-instance p1, Ljp/co/sony/mc/camera/generated/callback/OnClickListener;
 
     invoke-direct {p1, p0, v0}, Ljp/co/sony/mc/camera/generated/callback/OnClickListener;-><init>(Ljp/co/sony/mc/camera/generated/callback/OnClickListener$Listener;I)V
 
-    iput-object p1, p0, Ljp/co/sony/mc/camera/databinding/FragmentProModeBottomAreaBindingImpl;->mCallback63:Landroid/view/View$OnClickListener;
+    iput-object p1, p0, Ljp/co/sony/mc/camera/databinding/FragmentProModeBottomAreaBindingImpl;->mCallback68:Landroid/view/View$OnClickListener;
 
     .line 61
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/databinding/FragmentProModeBottomAreaBindingImpl;->invalidateAll()V
@@ -563,24 +565,24 @@
 
     goto :goto_0
 
-    .line 410
+    .line 427
     :cond_0
     iget-object p0, p0, Ljp/co/sony/mc/camera/databinding/FragmentProModeBottomAreaBindingImpl;->mProModeCommonUiState:Ljp/co/sony/mc/camera/view/uistate/ProModeCommonUiState;
 
     if-eqz p0, :cond_3
 
-    .line 420
+    .line 437
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/view/uistate/ProModeCommonUiState;->closeAllSubmenu()V
 
     goto :goto_0
 
-    .line 429
+    .line 412
     :cond_1
     iget-object p0, p0, Ljp/co/sony/mc/camera/databinding/FragmentProModeBottomAreaBindingImpl;->mProModeBottomPaneUiState:Ljp/co/sony/mc/camera/view/uistate/ProModeBottomPaneUiState;
 
     if-eqz p0, :cond_3
 
-    .line 437
+    .line 420
     invoke-virtual {p0}, Ljp/co/sony/mc/camera/view/uistate/ProModeBottomPaneUiState;->onDispButtonClicked()V
 
     goto :goto_0
@@ -983,21 +985,21 @@
     .line 370
     iget-object v0, v1, Ljp/co/sony/mc/camera/databinding/FragmentProModeBottomAreaBindingImpl;->disp:Ljp/co/sony/mc/camera/view/widget/OutlineTextView;
 
-    iget-object v8, v1, Ljp/co/sony/mc/camera/databinding/FragmentProModeBottomAreaBindingImpl;->mCallback64:Landroid/view/View$OnClickListener;
+    iget-object v8, v1, Ljp/co/sony/mc/camera/databinding/FragmentProModeBottomAreaBindingImpl;->mCallback69:Landroid/view/View$OnClickListener;
 
     invoke-virtual {v0, v8}, Ljp/co/sony/mc/camera/view/widget/OutlineTextView;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     .line 371
     iget-object v0, v1, Ljp/co/sony/mc/camera/databinding/FragmentProModeBottomAreaBindingImpl;->fnButton:Landroid/widget/ToggleButton;
 
-    iget-object v8, v1, Ljp/co/sony/mc/camera/databinding/FragmentProModeBottomAreaBindingImpl;->mCallback63:Landroid/view/View$OnClickListener;
+    iget-object v8, v1, Ljp/co/sony/mc/camera/databinding/FragmentProModeBottomAreaBindingImpl;->mCallback68:Landroid/view/View$OnClickListener;
 
     invoke-virtual {v0, v8}, Landroid/widget/ToggleButton;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     .line 372
     iget-object v0, v1, Ljp/co/sony/mc/camera/databinding/FragmentProModeBottomAreaBindingImpl;->mboundView4:Landroid/view/View;
 
-    iget-object v8, v1, Ljp/co/sony/mc/camera/databinding/FragmentProModeBottomAreaBindingImpl;->mCallback65:Landroid/view/View$OnClickListener;
+    iget-object v8, v1, Ljp/co/sony/mc/camera/databinding/FragmentProModeBottomAreaBindingImpl;->mCallback70:Landroid/view/View$OnClickListener;
 
     invoke-virtual {v0, v8}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
@@ -1316,7 +1318,7 @@
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    const/16 p1, 0x13
+    const/16 p1, 0x16
 
     .line 109
     invoke-virtual {p0, p1}, Ljp/co/sony/mc/camera/databinding/FragmentProModeBottomAreaBindingImpl;->notifyPropertyChanged(I)V
@@ -1362,7 +1364,7 @@
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    const/16 p1, 0x14
+    const/16 p1, 0x17
 
     .line 117
     invoke-virtual {p0, p1}, Ljp/co/sony/mc/camera/databinding/FragmentProModeBottomAreaBindingImpl;->notifyPropertyChanged(I)V
@@ -1408,7 +1410,7 @@
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    const/16 p1, 0x15
+    const/16 p1, 0x18
 
     .line 125
     invoke-virtual {p0, p1}, Ljp/co/sony/mc/camera/databinding/FragmentProModeBottomAreaBindingImpl;->notifyPropertyChanged(I)V
@@ -1433,7 +1435,7 @@
 .method public setVariable(ILjava/lang/Object;)Z
     .locals 1
 
-    const/16 v0, 0x13
+    const/16 v0, 0x16
 
     if-ne v0, p1, :cond_0
 
@@ -1445,7 +1447,7 @@
     goto :goto_0
 
     :cond_0
-    const/16 v0, 0x14
+    const/16 v0, 0x17
 
     if-ne v0, p1, :cond_1
 
@@ -1457,7 +1459,7 @@
     goto :goto_0
 
     :cond_1
-    const/16 v0, 0x15
+    const/16 v0, 0x18
 
     if-ne v0, p1, :cond_2
 

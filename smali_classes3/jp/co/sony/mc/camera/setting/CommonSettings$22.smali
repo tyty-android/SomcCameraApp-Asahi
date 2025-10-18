@@ -21,7 +21,7 @@
 .method constructor <init>()V
     .locals 0
 
-    .line 492
+    .line 495
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -42,10 +42,10 @@
         }
     .end annotation
 
-    .line 495
+    .line 498
     check-cast p1, Ljp/co/sony/mc/camera/setting/CommonSettings;
 
-    .line 496
+    .line 499
     invoke-virtual {p1}, Ljp/co/sony/mc/camera/setting/CommonSettings;->getLevelCalibration()Ljava/lang/Float;
 
     move-result-object p0

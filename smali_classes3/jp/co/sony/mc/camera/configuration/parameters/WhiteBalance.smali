@@ -121,7 +121,7 @@
     .line 29
     new-instance v6, Ljp/co/sony/mc/camera/configuration/parameters/WhiteBalance;
 
-    const v4, 0x7f11046c
+    const v4, 0x7f1104a6
 
     const-string v5, "auto"
 
@@ -129,7 +129,7 @@
 
     const/4 v2, 0x0
 
-    const v3, 0x7f080304
+    const v3, 0x7f08031b
 
     move-object v0, v6
 
@@ -140,7 +140,7 @@
     .line 33
     new-instance v0, Ljp/co/sony/mc/camera/configuration/parameters/WhiteBalance;
 
-    const v11, 0x7f110471
+    const v11, 0x7f1104ab
 
     const-string v12, "cloudy-daylight"
 
@@ -148,7 +148,7 @@
 
     const/4 v9, 0x1
 
-    const v10, 0x7f080307
+    const v10, 0x7f08031e
 
     move-object v7, v0
 
@@ -159,7 +159,7 @@
     .line 37
     new-instance v0, Ljp/co/sony/mc/camera/configuration/parameters/WhiteBalance;
 
-    const v5, 0x7f110479
+    const v5, 0x7f1104b3
 
     const-string v6, "daylight"
 
@@ -167,7 +167,7 @@
 
     const/4 v3, 0x2
 
-    const v4, 0x7f080314
+    const v4, 0x7f08032b
 
     move-object v1, v0
 
@@ -178,7 +178,7 @@
     .line 41
     new-instance v0, Ljp/co/sony/mc/camera/configuration/parameters/WhiteBalance;
 
-    const v11, 0x7f11047a
+    const v11, 0x7f1104b4
 
     const-string v12, "fluorescent"
 
@@ -186,7 +186,7 @@
 
     const/4 v9, 0x3
 
-    const v10, 0x7f080317
+    const v10, 0x7f08032e
 
     move-object v7, v0
 
@@ -197,7 +197,7 @@
     .line 45
     new-instance v0, Ljp/co/sony/mc/camera/configuration/parameters/WhiteBalance;
 
-    const v5, 0x7f11047b
+    const v5, 0x7f1104b5
 
     const-string v6, "incandescent"
 
@@ -205,7 +205,7 @@
 
     const/4 v3, 0x4
 
-    const v4, 0x7f08031a
+    const v4, 0x7f080331
 
     move-object v1, v0
 
@@ -216,7 +216,7 @@
     .line 49
     new-instance v0, Ljp/co/sony/mc/camera/configuration/parameters/WhiteBalance;
 
-    const v11, 0x7f11047c
+    const v11, 0x7f1104b6
 
     const-string/jumbo v12, "shade"
 
@@ -224,7 +224,7 @@
 
     const/4 v9, 0x5
 
-    const v10, 0x7f08031d
+    const v10, 0x7f080334
 
     move-object v7, v0
 
@@ -235,7 +235,7 @@
     .line 53
     new-instance v0, Ljp/co/sony/mc/camera/configuration/parameters/WhiteBalance;
 
-    const v5, 0x7f11047d
+    const v5, 0x7f1104b7
 
     const-string/jumbo v6, "temperature1"
 
@@ -243,7 +243,7 @@
 
     const/4 v3, 0x6
 
-    const v4, 0x7f080326
+    const v4, 0x7f08033d
 
     move-object v1, v0
 
@@ -254,7 +254,7 @@
     .line 57
     new-instance v0, Ljp/co/sony/mc/camera/configuration/parameters/WhiteBalance;
 
-    const v11, 0x7f11047e
+    const v11, 0x7f1104b8
 
     const-string/jumbo v12, "temperature2"
 
@@ -262,7 +262,7 @@
 
     const/4 v9, 0x7
 
-    const v10, 0x7f080327
+    const v10, 0x7f08033e
 
     move-object v7, v0
 
@@ -273,7 +273,7 @@
     .line 61
     new-instance v0, Ljp/co/sony/mc/camera/configuration/parameters/WhiteBalance;
 
-    const v5, 0x7f11047f
+    const v5, 0x7f1104b9
 
     const-string/jumbo v6, "temperature3"
 
@@ -281,7 +281,7 @@
 
     const/16 v3, 0x8
 
-    const v4, 0x7f080328
+    const v4, 0x7f08033f
 
     move-object v1, v0
 
@@ -292,7 +292,7 @@
     .line 65
     new-instance v0, Ljp/co/sony/mc/camera/configuration/parameters/WhiteBalance;
 
-    const v11, 0x7f110472
+    const v11, 0x7f1104ac
 
     const-string v12, "custom1"
 
@@ -300,7 +300,7 @@
 
     const/16 v9, 0x9
 
-    const v10, 0x7f08030a
+    const v10, 0x7f080321
 
     move-object v7, v0
 
@@ -311,7 +311,7 @@
     .line 69
     new-instance v0, Ljp/co/sony/mc/camera/configuration/parameters/WhiteBalance;
 
-    const v5, 0x7f110473
+    const v5, 0x7f1104ad
 
     const-string v6, "custom2"
 
@@ -319,7 +319,7 @@
 
     const/16 v3, 0xa
 
-    const v4, 0x7f08030d
+    const v4, 0x7f080324
 
     move-object v1, v0
 
@@ -330,7 +330,7 @@
     .line 73
     new-instance v0, Ljp/co/sony/mc/camera/configuration/parameters/WhiteBalance;
 
-    const v11, 0x7f110474
+    const v11, 0x7f1104ae
 
     const-string v12, "custom3"
 
@@ -338,7 +338,7 @@
 
     const/16 v9, 0xb
 
-    const v10, 0x7f080310
+    const v10, 0x7f080327
 
     move-object v7, v0
 
@@ -873,7 +873,7 @@
 .method public static getTemperatureDescriptionText(Landroid/content/Context;Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;F)Ljava/lang/String;
     .locals 1
 
-    const v0, 0x7f11008b
+    const v0, 0x7f110084
 
     .line 309
     invoke-static {p0, p1, p2, v0}, Ljp/co/sony/mc/camera/configuration/parameters/WhiteBalance;->getTemperatureText(Landroid/content/Context;Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;FI)Ljava/lang/String;
@@ -886,7 +886,7 @@
 .method public static getTemperatureDisplayText(Landroid/content/Context;Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;F)Ljava/lang/String;
     .locals 1
 
-    const v0, 0x7f110157
+    const v0, 0x7f11015a
 
     .line 298
     invoke-static {p0, p1, p2, v0}, Ljp/co/sony/mc/camera/configuration/parameters/WhiteBalance;->getTemperatureText(Landroid/content/Context;Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;FI)Ljava/lang/String;
